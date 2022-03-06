@@ -1,0 +1,14 @@
+__pycache__
+.coverage*
+.DS_Store
+.env
+/.act
+/.clwb
+/.vscode
+/*.egg-info
+/bazel-*
+/build
+/coverage.xml
+/dist
+/node_modules
+/package-lock.json
