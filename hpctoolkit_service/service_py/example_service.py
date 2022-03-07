@@ -123,21 +123,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             working_directory, benchmark, self.timeout_sec
         )
 
-        self.runtime = runtime.Profiler(self.benchmark.run_cmd, self.timeout_sec)
-        
-        self.perf = perf.Profiler(self.benchmark.run_cmd, self.timeout_sec)
-        
-        self.hpctoolkit = hpctoolkit.Profiler(
-            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
-        )
-        
-        self.programl = programl.Profiler(
-            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
-        )
-        
-        self.programl_hpctoolkit = programl_hpctoolkit.Profiler(
-            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
-        )
+        self.profiler = None
 
     def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
         """Handle a session parameter send by the frontend.
@@ -187,22 +173,47 @@ class HPCToolkitCompilationSession(CompilationSession):
     def get_observation(self, observation_space: ObservationSpace) -> Observation:
         logging.info("Computing observation from space %s", observation_space.name)
 
-        if observation_space.name == "runtime":
-            return self.runtime.get_observation()
+        if self.profiler == None or observation_space.name != self.profiler.name :
+            if observation_space.name == "runtime":
+                self.profiler = runtime.Profiler(observation_space.name, 
+                                                 self.benchmark.run_cmd, 
+                                                 self.timeout_sec)
 
-        if observation_space.name == "perf":
-            return self.perf.get_observation()
+            if observation_space.name == "perf":
+                self.profiler = perf.Profiler(observation_space.name, 
+                                              self.benchmark.run_cmd, 
+                                              self.timeout_sec)
+                
+            elif observation_space.name == "hpctoolkit":
+                self.profiler = hpctoolkit.Profiler(observation_space.name, 
+                                                    self.benchmark.run_cmd, 
+                                                    self.timeout_sec, 
+                                                    self.benchmark.llvm_path)
 
-        elif observation_space.name == "hpctoolkit":
-            return self.hpctoolkit.get_observation()
+            elif observation_space.name == "programl":
+                self.profiler = programl.Profiler(observation_space.name, 
+                                                  self.benchmark.run_cmd, 
+                                                  self.timeout_sec, 
+                                                  self.benchmark.llvm_path)
 
-        elif observation_space.name == "programl":
-            return self.programl.get_observation()
+            elif observation_space.name == "programl_hpctoolkit":
+                self.profiler = programl_hpctoolkit.Profiler(observation_space.name, 
+                                                             self.benchmark.run_cmd, 
+                                                             self.timeout_sec, 
+                                                             self.benchmark.llvm_path)
+            else:
+                raise KeyError(observation_space.name)
 
-        elif observation_space.name == "programl_hpctoolkit":
-            return self.programl_hpctoolkit.get_observation()
-        else:
-            raise KeyError(observation_space.name)
+
+        return self.profiler.get_observation()
+
+        
+        
+
+        
+
+        
+        
 
 
 if __name__ == "__main__":

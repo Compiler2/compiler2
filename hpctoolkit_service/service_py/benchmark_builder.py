@@ -151,7 +151,6 @@ class BenchmarkBuilder:
             run_command(cmd, timeout=timeout_sec)
 
     def apply_action(self, opt: str, save_state: bool):
-        pdb.set_trace()
         compile_ll = deepcopy(self.compile_ll)
         compile_ll["opt"].insert(1, opt)
 
