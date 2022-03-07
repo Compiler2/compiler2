@@ -31,7 +31,6 @@ from compiler_gym.service.proto import (
     ScalarRangeList,
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
-from compiler_gym.util.commands import run_command
 
 
 import utils
@@ -107,7 +106,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         working_directory: Path,
         action_space: ActionSpace,
         benchmark: Benchmark,  # TODO: Dejan use Benchmark rather than hardcoding benchmark path here!
-        timeout_sec: float = 3.0,
+        timeout_sec: float = 5.0,
     ):
         super().__init__(working_directory, action_space, benchmark)
         logging.info("Started a compilation session for %s", benchmark.uri)

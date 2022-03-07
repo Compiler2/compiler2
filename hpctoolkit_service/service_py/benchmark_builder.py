@@ -18,8 +18,8 @@ import utils
 
 import compiler_gym.third_party.llvm as llvm
 from compiler_gym.service.proto import Benchmark
-from compiler_gym.util.commands import Popen, run_command
-
+# from compiler_gym.util.commands import Popen, run_command
+from utils import run_command
 
 ## Build benchmarks
 class BenchmarkBuilder:
@@ -108,6 +108,7 @@ class BenchmarkBuilder:
             timeout=self.timeout_sec,
         )
 
+
     def print_header_ll(self):
         with open(self.llvm_path, "r") as f:
             for i in range(2):
@@ -187,7 +188,7 @@ class BenchmarkBuilder:
 
         return action_had_effect
 
-    def check_if_terminate(self):            
+    def check_if_terminate(self):      
         run_command(
             self.run_cmd,
             timeout=self.timeout_sec,

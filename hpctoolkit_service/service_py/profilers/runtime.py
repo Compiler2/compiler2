@@ -1,7 +1,6 @@
 import numpy as np
 import pdb
 from typing import Dict, List, Optional, Tuple
-from compiler_gym.util.commands import run_command
 
 from compiler_gym.service.proto import (
     Observation,
