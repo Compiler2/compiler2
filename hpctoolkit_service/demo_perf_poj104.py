@@ -69,10 +69,12 @@ def main():
             print("bench>>>>>>>>>> ", bench)
             try:
                 env.reset(benchmark=bench)
+                env.send_param("save_state", "0")
+
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
             
-
+            pdb.set_trace()
             for i in range(2):
                 print("Main: step = ", i)
                 try:

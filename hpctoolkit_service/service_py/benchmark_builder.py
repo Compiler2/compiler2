@@ -26,7 +26,6 @@ class BenchmarkBuilder:
     def __init__(self, working_directory: Path, benchmark: Benchmark, timeout_sec: float):
         # pdb.set_trace()
         # print('\nBenchmark: ', benchmark.uri)
-
         self.timeout_sec = timeout_sec
         self.clang = str(llvm.clang_path())
         self.llvm_dis = str(llvm.llvm_dis_path())
@@ -76,7 +75,7 @@ class BenchmarkBuilder:
 
         # pdb.set_trace()
         self.execute_pre_run_cmd()
-        self.apply_action("-O0")
+        self.apply_action(opt="-O0", save_state=True)
         self.check_if_terminate()
 
     def save_to_ll(self, benchmark: Benchmark):
@@ -151,12 +150,10 @@ class BenchmarkBuilder:
             # Execute the command with no redirection
             run_command(cmd, timeout=timeout_sec)
 
-    def apply_action(self, opt: str):
+    def apply_action(self, opt: str, save_state: bool):
+        pdb.set_trace()
         compile_ll = deepcopy(self.compile_ll)
         compile_ll["opt"].insert(1, opt)
-
-        # utils.print_list(compile_ll.values())
-        # pdb.set_trace()
 
         for cmd in compile_ll.values():
             run_command(
@@ -165,12 +162,12 @@ class BenchmarkBuilder:
             )
     
         self.is_action_effective = self.action_had_effect()
-        # pdb.set_trace()
-        # update current llvm_file
-        run_command(
-            ['mv', self.llvm_new_path, self.llvm_path],
-            timeout=self.timeout_sec,
-        )
+
+        if save_state:
+            run_command(
+                ['mv', self.llvm_new_path, self.llvm_path],
+                timeout=self.timeout_sec,
+            )
 
 
     def action_had_effect(self)-> Boolean:

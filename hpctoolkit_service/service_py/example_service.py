@@ -29,6 +29,7 @@ from compiler_gym.service.proto import (
     ScalarLimit,
     ScalarRange,
     ScalarRangeList,
+    SendSessionParameterReply,
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
@@ -105,8 +106,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         self,
         working_directory: Path,
         action_space: ActionSpace,
-        benchmark: Benchmark,  # TODO: Dejan use Benchmark rather than hardcoding benchmark path here!
-        timeout_sec: float = 5.0,
+        benchmark: Benchmark,
     ):
         super().__init__(working_directory, action_space, benchmark)
         logging.info("Started a compilation session for %s", benchmark.uri)
@@ -116,27 +116,47 @@ class HPCToolkitCompilationSession(CompilationSession):
         print("\n", str(working_directory), "\n")
         pdb.set_trace()
 
-        self.timeout_sec = timeout_sec
+        self.save_state = False
+        self.timeout_sec = 5.0
 
         self.benchmark = benchmark_builder.BenchmarkBuilder(
-            working_directory, benchmark, timeout_sec
+            working_directory, benchmark, self.timeout_sec
         )
 
-        self.runtime = runtime.Profiler(self.benchmark.run_cmd, timeout_sec)
+        self.runtime = runtime.Profiler(self.benchmark.run_cmd, self.timeout_sec)
         
-        self.perf = perf.Profiler(self.benchmark.run_cmd, timeout_sec)
+        self.perf = perf.Profiler(self.benchmark.run_cmd, self.timeout_sec)
         
         self.hpctoolkit = hpctoolkit.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
+            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
         )
         
         self.programl = programl.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
+            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
         )
         
         self.programl_hpctoolkit = programl_hpctoolkit.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
+            self.benchmark.run_cmd, self.timeout_sec, self.benchmark.llvm_path
         )
+
+    def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
+        """Handle a session parameter send by the frontend.
+        Session parameters provide a method to send ad-hoc key-value messages to
+        a compilation session through the :meth:`env.send_session_parameter()
+        <compiler_gym.envs.CompilerEnv.send_session_parameter>` method. It us up
+        to the client/service to agree on a common schema for encoding and
+        decoding these parameters.
+        Implementing this method is optional.
+        :param key: The parameter key.
+        :param value: The parameter value.
+        :return: A string response message if the parameter was understood. Else
+            :code:`None` to indicate that the message could not be interpretted.
+        """
+        if key == "save_state":
+            self.save_state = False if value == "0" else True
+        else:
+            print("handle_session_parameter Unsuported key:", key)
+        return ""
 
     def apply_action(self, action: Action) -> Tuple[bool, Optional[ActionSpace], bool]:
 
@@ -157,8 +177,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             opt,
         )
 
-        self.benchmark.apply_action(opt)
-
+        self.benchmark.apply_action(opt=opt, save_state=self.save_state)
         action_had_no_effect = not self.benchmark.is_action_effective
 
         end_of_session = False
