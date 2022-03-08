@@ -29,6 +29,7 @@ from compiler_gym.service.proto import (
     ScalarLimit,
     ScalarRange,
     ScalarRangeList,
+    Int64List
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 from compiler_gym.util.commands import run_command
@@ -100,6 +101,15 @@ class HPCToolkitCompilationSession(CompilationSession):
                 min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
             ),
         ),
+        ObservationSpace(
+            name="IsRunnable",
+            scalar_int64_range=ScalarRange(min=ScalarLimit(value=0), max=ScalarLimit(value=1)),
+            deterministic=True,
+            platform_dependent=True,
+            default_value=Observation(
+                scalar_int64=1,
+            ),
+        ),
     ]
 
     def __init__(
@@ -115,7 +125,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         os.chdir(str(working_directory))
         print("\n", str(working_directory), "\n")
-        pdb.set_trace()
+        # pdb.set_trace()
 
         self.timeout_sec = timeout_sec
 
@@ -183,6 +193,15 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         elif observation_space.name == "programl_hpctoolkit":
             return self.programl_hpctoolkit.get_observation()
+
+        elif observation_space.name == "IsRunnable":
+            # llvm_autotuners check whether the benchmark is runnable by
+            # using IsRunnable observation space.
+            # For now, assume that all benchmarks are runnable.
+            return Observation(
+                scalar_int64=1,
+            )
+
         else:
             raise KeyError(observation_space.name)
 
