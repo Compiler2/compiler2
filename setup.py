@@ -33,6 +33,6 @@ setuptools.setup(
     zip_safe=False,
 )
 
-# Install by using this command.
+# vi3: Install by using this command.
 # python -m pip install .
 # According to this: https://stackoverflow.com/questions/66125129/unknownextra-error-when-installing-via-setup-py-but-not-via-pip
