@@ -43,6 +43,8 @@ class OptimizationTarget(str, Enum):
             benchmark = env.make_benchmark(Path(benchmark[len("file:///") :]))
 
         env.benchmark = benchmark
+        # FIXME vi3: Change of the benchmark should be followed by the env.reset()
+        env.reset()
 
         if self.value == OptimizationTarget.CODESIZE:
             env.reward_space = "IrInstructionCountOz"
