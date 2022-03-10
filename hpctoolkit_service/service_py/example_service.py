@@ -205,6 +205,12 @@ class HPCToolkitCompilationSession(CompilationSession):
         else:
             raise KeyError(observation_space.name)
 
+    def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
+        if key == "hpctoolkit.apply_baseline_optimizations":
+            # Apply -O3 optimization, considered as a baseline optimization.
+            self.benchmark.apply_action(value)
+            return "Succeeded"
+
 
 if __name__ == "__main__":
     create_and_run_compiler_gym_service(HPCToolkitCompilationSession)

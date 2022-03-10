@@ -188,6 +188,24 @@ class OptimizationTarget(str, Enum):
                 return speedup
 
         if self.value == OptimizationTarget.PERF:
-            return 1
+            import pickle
+            # Implemented similar to the Runtime OptimizationTarget.RUNTIME
+            with _RUNTIME_LOCK:
+                with compiler_gym.make("perf-v0", benchmark=env.benchmark) as new_env:
+                    new_env.reset()
+                    new_env.apply(env.state)
+                    # Find perf observation for the state determined by the auto tuner.
+                    perf_observation_dict = pickle.loads(new_env.observation.perf())
+                    perf_cycles = float(perf_observation_dict['cycles'])
+
+                    new_env.reset()
+                    new_env.send_param("hpctoolkit.apply_baseline_optimizations", "-O3")
+                    # Find perf observation for the -O3 baseline optimization.
+                    o3_perf_dict = pickle.loads(new_env.observation.perf())
+                    o3_cycles = float(o3_perf_dict['cycles'])
+
+                    # Speedup defined as the ration of o3_cycles divided by perf_cycles.
+                    speedup = o3_cycles / perf_cycles
+                    return speedup
 
         assert False, f"Unknown OptimizationTarget: {self.value}"
