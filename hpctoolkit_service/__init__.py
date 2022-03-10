@@ -1,11 +1,6 @@
 """This module defines and registers the example gym environments."""
-import subprocess
 from pathlib import Path
-from typing import Iterable
 
-from compiler_gym.datasets import Benchmark, Dataset
-from compiler_gym.spaces import Reward
-from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 
 HPCTOOLKIT_PY_SERVICE_BINARY: Path = runfiles_path(
@@ -16,123 +11,79 @@ BENCHMARKS_PATH: Path = runfiles_path(
     "examples/hpctoolkit_service/benchmarks/cpu-benchmarks"
 )
 
-
 HPCTOOLKIT_HEADER: Path = runfiles_path(
     "/home/dx4/tools/CompilerGym/compiler_gym/third_party/hpctoolkit/header.h"
 )
 
-import pdb
+from compiler_gym.envs.compiler_env import CompilerEnv
+from compiler_gym.spaces import Commandline
+from typing import cast, List
 
 
-class RuntimeReward(Reward):
-    """An example reward that uses changes in the "runtime" observation value
-    to compute incremental reward.
+class HPCToolkitCompilerEnv(CompilerEnv):
+    """
+    The below functions are copied from LlvmEnv
     """
 
-    def __init__(self):
-        super().__init__(
-            id="runtime",
-            observation_spaces=["runtime"],
-            default_value=0,
-            default_negates_returns=True,
-            deterministic=False,
-            platform_dependent=True,
-        )
-        #     self.baseline_runtime = 0
+    def commandline(  # pylint: disable=arguments-differ
+            self, textformat: bool = False
+    ) -> str:
+        """Returns an LLVM :code:`opt` command line invocation for the current
+        environment state.
 
-        # def reset(self, benchmark: str, observation_view):
-        #     del benchmark  # unused
-        #     self.baseline_runtime = observation_view["runtime"]
+        :param textformat: Whether to generate a command line that processes
+            text-format LLVM-IR or bitcode (the default).
+        :returns: A command line string.
+        """
 
-        # def update(self, action, observations, observation_view):
-        #     del action
-        #     del observation_view
-        #     return float(self.baseline_runtime - observations[0]) / self.baseline_runtime
-        self.previous_runtime = None
-
-    def reset(self, benchmark: str, observation_view):
-        del benchmark  # unused
-        self.previous_runtime = None
-
-    def update(self, action, observations, observation_view):
-        del action
-        del observation_view
-        pdb.set_trace()
-
-        if self.previous_runtime is None:
-            self.previous_runtime = observations[0]
-        reward = float(self.previous_runtime - observations[0])
-        self.previous_runtime = observations[0]
-        return reward
-
-
-class HPCToolkitReward(Reward):
-    """An example reward that uses changes in the "runtime" observation value
-    to compute incremental reward.
-    """
-
-    def __init__(self):
-        super().__init__(
-            id="hpctoolkit",
-            observation_spaces=["hpctoolkit"],
-            default_value=0,
-            default_negates_returns=True,
-            deterministic=False,
-            platform_dependent=True,
-        )
-        self.previous_runtime = None
-
-    def reset(self, benchmark: str, observation_view):
-        del benchmark  # unused
-        self.previous_runtime = None
-
-    def update(self, action, observations, observation_view):
-        del action
-        del observation_view
-        pdb.set_trace()
-
-        if self.previous_runtime is None:
-            self.previous_runtime = observations[0]
-        reward = float(self.previous_runtime - observations[0])
-        self.previous_runtime = observations[0]
-        return reward
-
-
-class HPCToolkitDataset(Dataset):
-    def __init__(self, *args, **kwargs):
-        super().__init__(
-            name="benchmark://hpctoolkit-cpu-v0",
-            license="MIT",
-            description="HPCToolkit cpu dataset",
-            site_data_base=site_data_path("example_dataset"),
-        )
-        self._benchmarks = {
-            "benchmark://hpctoolkit-cpu-v0/offsets1": Benchmark.from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/offsets1",
-                self.preprocess(BENCHMARKS_PATH / "offsets1.c"),
-            ),
-            "benchmark://hpctoolkit-cpu-v0/conv2d": Benchmark.from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/conv2d",
-                self.preprocess(BENCHMARKS_PATH / "conv2d.c"),
-            ),
-        }
-
-    def benchmark_uris(self) -> Iterable[str]:
-        yield from self._benchmarks.keys()
-
-    def benchmark(self, uri: str) -> Benchmark:
-        if uri in self._benchmarks:
-            return self._benchmarks[uri]
+        command = cast(Commandline, self.action_space).commandline(self.actions)
+        if textformat:
+            return f"opt {command} input.ll -S -o output.ll"
         else:
-            raise LookupError("Unknown program name")
+            return f"opt {command} input.bc -o output.bc"
+
+    def commandline_to_actions(self, commandline: str) -> List[int]:
+        """Returns a list of actions from the given command line.
+
+        :param commandline: A command line invocation, as generated by
+            :meth:`env.commandline() <compiler_gym.envs.LlvmEnv.commandline>`.
+        :return: A list of actions.
+        :raises ValueError: In case the command line string is malformed.
+        """
+        # Strip the decorative elements that LlvmEnv.commandline() adds.
+        if not commandline.startswith("opt "):
+            raise ValueError(f"Invalid commandline: `{commandline}`")
+        if commandline.endswith(" input.ll -S -o output.ll"):
+            commandline = commandline[len("opt "): -len(" input.ll -S -o output.ll")]
+        elif commandline.endswith(" input.bc -o output.bc"):
+            commandline = commandline[len("opt "): -len(" input.bc -o output.bc")]
+        else:
+            raise ValueError(f"Invalid commandline: `{commandline}`")
+        return self.action_space.from_commandline(commandline)
 
 
-# register(
-#     id="hpctoolkit-llvm",
-#     entry_point="compiler_gym.envs:CompilerEnv",
-#     kwargs={
-#         "service": HPCTOOLKIT_PY_SERVICE_BINARY,
-#         "rewards": [RuntimeReward(), HPCToolkitReward()],
-#         "datasets": [HPCToolkitDataset()],
-#     },
-# )
+from compiler_gym.util.registration import register
+from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
+from hpctoolkit_service.agent_py.rewards import perf_reward
+from compiler_gym.envs.llvm.datasets import CBenchDataset
+from compiler_gym.util.runfiles_path import site_data_path
+
+# register perf session
+register(
+    id="perf-v0",
+    # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
+    entry_point=HPCToolkitCompilerEnv,
+    kwargs={
+        "service": HPCTOOLKIT_PY_SERVICE_BINARY,
+        "rewards": [perf_reward.Reward()],
+        "datasets": [
+            CBenchDataset(site_data_path("llvm-v0")),
+        ],
+    },
+)
+
+
+def make(id: str, **kwargs):
+    """Equivalent to :code:`compiler_gym.make()`."""
+    import compiler_gym
+    return compiler_gym.make(id, **kwargs)
