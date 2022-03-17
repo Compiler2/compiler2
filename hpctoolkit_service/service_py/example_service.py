@@ -211,6 +211,13 @@ class HPCToolkitCompilationSession(CompilationSession):
             self.benchmark.apply_action(value)
             return "Succeeded"
 
+    def fork(self):
+        # There is a problem with forking.
+        from copy import deepcopy
+        # FIXME vi3: I don't know what is the proper way to fork a session.
+        new_fork = deepcopy(self)
+        return new_fork
+
 
 if __name__ == "__main__":
     create_and_run_compiler_gym_service(HPCToolkitCompilationSession)

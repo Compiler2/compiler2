@@ -16,6 +16,8 @@ def greedy(env, search_time_seconds: int, **kwargs) -> None:
     """
 
     def eval_action(env, action: int):
+        # FIXME vi3: After forking, Compilation session could not be found.
+        #   I'm not sure what is the proper way to implement forking logic.
         with env.fork() as fkd:
             return (fkd.step(action)[1], action)
 

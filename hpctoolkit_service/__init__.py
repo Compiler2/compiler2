@@ -17,7 +17,9 @@ HPCTOOLKIT_HEADER: Path = runfiles_path(
 
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline
-from typing import cast, List
+from typing import cast, List, Union
+import os
+import shutil
 
 
 class HPCToolkitCompilerEnv(CompilerEnv):
@@ -61,6 +63,25 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             raise ValueError(f"Invalid commandline: `{commandline}`")
         return self.action_space.from_commandline(commandline)
 
+    # def fork(self):
+    #     ret = super().fork()
+    #     return ret
+
+    def write_bitcode(self, path: Union[Path, str]) -> Path:
+        """Write the current program state to a bitcode file.
+
+        :param path: The path of the file to write.
+        :return: The input :code:`path` argument.
+        """
+        path = Path(path).expanduser()
+        # FIXME vi3: We don't support this observation spaces.
+        #   I guess we could just return the pickled content of the bitcode file
+        tmp_path = self.observation["BitcodeFile"]
+        try:
+            shutil.copyfile(tmp_path, path)
+        finally:
+            os.unlink(tmp_path)
+        return path
 
 from compiler_gym.util.registration import register
 from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
