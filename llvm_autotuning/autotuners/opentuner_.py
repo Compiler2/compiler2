@@ -124,8 +124,9 @@ class LlvmOptFlagsTuner(MeasurementInterface):
         self.env.write_bitcode(self.unoptimized_path)
         self.env.write_bitcode(self.tmp_optimized_path)
 
-        self.cost_o0 = self.env.observation["IrInstructionCountO0"]
-        self.cost_oz = self.env.observation["IrInstructionCountOz"]
+        # FIXME vi3: After removing this, open tuner does something for perf observation space.
+        # self.cost_o0 = self.env.observation["IrInstructionCountO0"]
+        # self.cost_oz = self.env.observation["IrInstructionCountOz"]
 
         self.flags_limit = self.env.action_space.n * max_copies_of_pass
         self.run_count = 0
