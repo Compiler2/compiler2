@@ -76,7 +76,13 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         path = Path(path).expanduser()
         # FIXME vi3: We don't support this observation spaces.
         #   I guess we could just return the pickled content of the bitcode file
+        print("hack1: What is this: ", self.observation)
         tmp_path = self.observation["BitcodeFile"]
+        print("hack2: tmp_path", tmp_path)
+        print("hack3: path", path)
+        parts = tmp_path.split("benchmark.bc")
+        dir_path = parts[0]
+        print("hack4: directory content: ", os.listdir(dir_path))
         try:
             shutil.copyfile(tmp_path, path)
         finally:

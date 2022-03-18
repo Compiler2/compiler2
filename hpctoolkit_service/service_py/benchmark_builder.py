@@ -15,10 +15,15 @@ from typing import List, Optional, Tuple
 from xmlrpc.client import Boolean
 
 import utils
+import pickle
 
 import compiler_gym.third_party.llvm as llvm
 from compiler_gym.service.proto import Benchmark
 from compiler_gym.util.commands import Popen, run_command
+
+from compiler_gym.service.proto import (
+    Observation,
+)
 
 
 ## Build benchmarks
@@ -55,13 +60,14 @@ class BenchmarkBuilder:
             ],  # "-nostartfiles"
             "save": [self.llvm_dis, "-o", self.llvm_new_path, self.bc_path],
         }
-        
-        
+
         self.pre_run_cmd = []
         self.run_cmd = [self.exe_path]
         self.is_action_effective = False
 
         self.prepare_benchmark(benchmark)
+
+        self.last_opt_action = None
 
     def prepare_benchmark(self, benchmark: Benchmark):
         self.save_to_ll(benchmark)
@@ -153,6 +159,8 @@ class BenchmarkBuilder:
     def apply_action(self, opt: str):
         compile_ll = deepcopy(self.compile_ll)
         compile_ll["opt"].insert(1, opt)
+        self.last_opt_action = opt
+        print("hackkk:", self.last_opt_action)
 
         # utils.print_list(compile_ll.values())
         # pdb.set_trace()
@@ -171,8 +179,7 @@ class BenchmarkBuilder:
             timeout=self.timeout_sec,
         )
 
-
-    def action_had_effect(self)-> Boolean:
+    def action_had_effect(self) -> Boolean:
         # compare the IR files to check if the action had an effect
         try:
             subprocess.check_call(
@@ -181,18 +188,18 @@ class BenchmarkBuilder:
                 stderr=subprocess.DEVNULL,
                 timeout=self.timeout_sec,
             )
-            action_had_effect = False   # cmp return 0 (same files)
+            action_had_effect = False  # cmp return 0 (same files)
         except subprocess.CalledProcessError:
-            action_had_effect = True    # cmp return 1 (different files)
+            action_had_effect = True  # cmp return 1 (different files)
 
         return action_had_effect
 
-    def check_if_terminate(self):            
+    def check_if_terminate(self):
         run_command(
             self.run_cmd,
             timeout=self.timeout_sec,
         )
-        
+
     # Prepare build, pre_run and run commands
     def prepare_build_cmd(self, build_cmd):
         """
@@ -258,3 +265,15 @@ class BenchmarkBuilder:
             # Replace ./a.out with the exe_path
             run_cmd[0] = self.exe_path
             self.run_cmd = run_cmd
+
+    def bitcode_file_path(self) -> Observation:
+        # This function should return the path of the .bc file.
+        # Since .ll is always present and .bc might not be, compile it .ll to .bc file,
+        # and then return the bc_path.
+        print("hack5: This is the current ")
+        # FIXME: I guess memoizing the last action and applying it again would
+        #  produce expected .bc file.
+        if self.last_opt_action is None:
+            self.last_opt_action = "-O0"
+        self.apply_action(self.last_opt_action)
+        return Observation(string_value=self.bc_path)

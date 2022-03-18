@@ -110,6 +110,12 @@ class HPCToolkitCompilationSession(CompilationSession):
                 scalar_int64=1,
             ),
         ),
+        ObservationSpace(
+            name="BitcodeFile",
+            string_size_range=ScalarRange(
+                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            ),
+        ),
     ]
 
     def __init__(
@@ -134,17 +140,17 @@ class HPCToolkitCompilationSession(CompilationSession):
         )
 
         self.runtime = runtime.Profiler(self.benchmark.run_cmd, timeout_sec)
-        
+
         self.perf = perf.Profiler(self.benchmark.run_cmd, timeout_sec)
-        
+
         self.hpctoolkit = hpctoolkit.Profiler(
             self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
         )
-        
+
         self.programl = programl.Profiler(
             self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
         )
-        
+
         self.programl_hpctoolkit = programl_hpctoolkit.Profiler(
             self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
         )
@@ -201,6 +207,9 @@ class HPCToolkitCompilationSession(CompilationSession):
             return Observation(
                 scalar_int64=1,
             )
+
+        elif observation_space.name == "BitcodeFile":
+            return self.benchmark.bitcode_file_path()
 
         else:
             raise KeyError(observation_space.name)
