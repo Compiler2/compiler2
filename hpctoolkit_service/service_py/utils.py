@@ -3,23 +3,49 @@ import subprocess
 import signal
 
 from signal import Signals
+from turtle import pos
 from typing import List, Optional, Tuple
 
-from compiler_gym.util.commands import Popen, run_command
+from signal import Signals
+from subprocess import Popen, run
+from typing import List
 
 
+def run_command(cmd: List[str], timeout: int):
+        
+    if '<' in cmd:
+        pos_less = cmd.index('<')
+        assert pos_less + 1 < len(cmd)
+        stdin = open(cmd[ pos_less + 1  ])
+        cmd_exe = cmd[:pos_less]
+    else:
+        stdin = None
+        cmd_exe = cmd
 
-class timeout:
-    def __init__(self, seconds=1, error_message='Timeout'):
-        self.seconds = seconds
-        self.error_message = error_message
-    def handle_timeout(self, signum, frame):
-        raise TimeoutError(self.error_message)
-    def __enter__(self):
-        signal.signal(signal.SIGALRM, self.handle_timeout)
-        signal.alarm(self.seconds)
-    def __exit__(self, type, value, traceback):
-        signal.alarm(0)
+        
+    with Popen(
+        cmd_exe, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True
+    ) as process:
+        if stdin:
+            process.stdin.write(stdin.read())
+        stdout, stderr = process.communicate(timeout=timeout)
+        print("ERRORCODE:", process.returncode, "cmd:", cmd)
+
+        if process.returncode not in [0, 101]:
+            returncode = process.returncode
+            try:
+                # Try and decode the name of a signal. Signal returncodes
+                # are negative.
+                returncode = f"{returncode} ({Signals(abs(returncode)).name})"
+            except ValueError:
+                pass
+            raise OSError(
+                f"Compilation job failed with returncode {returncode}\n"
+                f"Command: {' '.join(cmd)}\n"
+                f"Stderr: {stderr.strip()}"
+            )
+    return stdout
+
 
 
 def run_command_stdout_redirect(cmd: List[str], timeout: int, output_file):

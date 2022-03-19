@@ -29,10 +29,10 @@ from compiler_gym.service.proto import (
     ScalarLimit,
     ScalarRange,
     ScalarRangeList,
-    Int64List
+    Int64List,
+    SendSessionParameterReply,
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
-from compiler_gym.util.commands import run_command
 
 
 import utils
@@ -122,8 +122,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         self,
         working_directory: Path,
         action_space: ActionSpace,
-        benchmark: Benchmark,  # TODO: Dejan use Benchmark rather than hardcoding benchmark path here!
-        timeout_sec: float = 3.0,
+        benchmark: Benchmark,
     ):
         super().__init__(working_directory, action_space, benchmark)
         logging.info("Started a compilation session for %s", benchmark.uri)
@@ -133,27 +132,33 @@ class HPCToolkitCompilationSession(CompilationSession):
         print("\n", str(working_directory), "\n")
         # pdb.set_trace()
 
-        self.timeout_sec = timeout_sec
+        self.save_state = False
+        self.timeout_sec = 5.0
 
         self.benchmark = benchmark_builder.BenchmarkBuilder(
-            working_directory, benchmark, timeout_sec
+            working_directory, benchmark, self.timeout_sec
         )
 
-        self.runtime = runtime.Profiler(self.benchmark.run_cmd, timeout_sec)
+        self.profiler = None
 
-        self.perf = perf.Profiler(self.benchmark.run_cmd, timeout_sec)
-
-        self.hpctoolkit = hpctoolkit.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
-        )
-
-        self.programl = programl.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
-        )
-
-        self.programl_hpctoolkit = programl_hpctoolkit.Profiler(
-            self.benchmark.run_cmd, timeout_sec, self.benchmark.llvm_path
-        )
+    def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
+        """Handle a session parameter send by the frontend.
+        Session parameters provide a method to send ad-hoc key-value messages to
+        a compilation session through the :meth:`env.send_session_parameter()
+        <compiler_gym.envs.CompilerEnv.send_session_parameter>` method. It us up
+        to the client/service to agree on a common schema for encoding and
+        decoding these parameters.
+        Implementing this method is optional.
+        :param key: The parameter key.
+        :param value: The parameter value.
+        :return: A string response message if the parameter was understood. Else
+            :code:`None` to indicate that the message could not be interpretted.
+        """
+        if key == "save_state":
+            self.save_state = False if value == "0" else True
+        else:
+            print("handle_session_parameter Unsuported key:", key)
+        return ""
 
     def apply_action(self, action: Action) -> Tuple[bool, Optional[ActionSpace], bool]:
 
@@ -174,8 +179,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             opt,
         )
 
-        self.benchmark.apply_action(opt)
-
+        self.benchmark.apply_action(opt=opt, save_state=self.save_state)
         action_had_no_effect = not self.benchmark.is_action_effective
 
         end_of_session = False
@@ -185,34 +189,53 @@ class HPCToolkitCompilationSession(CompilationSession):
     def get_observation(self, observation_space: ObservationSpace) -> Observation:
         logging.info("Computing observation from space %s", observation_space.name)
 
-        if observation_space.name == "runtime":
-            return self.runtime.get_observation()
+        if self.profiler == None or observation_space.name != self.profiler.name :
+            if observation_space.name == "runtime":
+                self.profiler = runtime.Profiler(observation_space.name, 
+                                                 self.benchmark.run_cmd, 
+                                                 self.timeout_sec)
 
-        if observation_space.name == "perf":
-            return self.perf.get_observation()
+            if observation_space.name == "perf":
+                self.profiler = perf.Profiler(observation_space.name, 
+                                              self.benchmark.run_cmd, 
+                                              self.timeout_sec)
+                
+            elif observation_space.name == "hpctoolkit":
+                self.profiler = hpctoolkit.Profiler(observation_space.name, 
+                                                    self.benchmark.run_cmd, 
+                                                    self.timeout_sec, 
+                                                    self.benchmark.llvm_path)
 
-        elif observation_space.name == "hpctoolkit":
-            return self.hpctoolkit.get_observation()
+            elif observation_space.name == "programl":
+                self.profiler = programl.Profiler(observation_space.name, 
+                                                  self.benchmark.run_cmd, 
+                                                  self.timeout_sec, 
+                                                  self.benchmark.llvm_path)
 
-        elif observation_space.name == "programl":
-            return self.programl.get_observation()
+            elif observation_space.name == "programl_hpctoolkit":
+                self.profiler = programl_hpctoolkit.Profiler(observation_space.name, 
+                                                             self.benchmark.run_cmd, 
+                                                             self.timeout_sec, 
+                                                             self.benchmark.llvm_path)
 
-        elif observation_space.name == "programl_hpctoolkit":
-            return self.programl_hpctoolkit.get_observation()
+            elif observation_space.name == "IsRunnable":
+                # llvm_autotuners check whether the benchmark is runnable by
+                # using IsRunnable observation space.
+                # For now, assume that all benchmarks are runnable.
+                return Observation(
+                    scalar_int64=1,
+                )
 
-        elif observation_space.name == "IsRunnable":
-            # llvm_autotuners check whether the benchmark is runnable by
-            # using IsRunnable observation space.
-            # For now, assume that all benchmarks are runnable.
-            return Observation(
-                scalar_int64=1,
-            )
+            elif observation_space.name == "BitcodeFile":
+                return self.benchmark.bitcode_file_path()
 
-        elif observation_space.name == "BitcodeFile":
-            return self.benchmark.bitcode_file_path()
 
-        else:
-            raise KeyError(observation_space.name)
+            else:
+                raise KeyError(observation_space.name)
+
+
+        return self.profiler.get_observation()
+        
 
     def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
         if key == "hpctoolkit.apply_baseline_optimizations":
