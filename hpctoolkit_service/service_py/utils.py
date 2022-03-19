@@ -29,7 +29,7 @@ def run_command(cmd: List[str], timeout: int):
         if stdin:
             process.stdin.write(stdin.read())
         stdout, stderr = process.communicate(timeout=timeout)
-        print("ERRORCODE:", process.returncode, "cmd:", cmd)
+        # print("ERRORCODE:", process.returncode, "cmd:", cmd)
 
         if process.returncode not in [0, 101]:
             returncode = process.returncode
