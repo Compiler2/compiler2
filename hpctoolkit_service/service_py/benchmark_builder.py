@@ -265,7 +265,7 @@ class BenchmarkBuilder:
             run_cmd[0] = self.exe_path
             self.run_cmd = run_cmd
 
-    def bitcode_file_path(self) -> Observation:
+    def bitcode_file_path(self, save_state) -> Observation:
         # This function should return the path of the .bc file.
         # Since .ll is always present and .bc might not be, compile it .ll to .bc file,
         # and then return the bc_path.
@@ -274,5 +274,5 @@ class BenchmarkBuilder:
         #  produce expected .bc file.
         if self.last_opt_action is None:
             self.last_opt_action = "-O0"
-        self.apply_action(self.last_opt_action)
+        self.apply_action(self.last_opt_action, save_state=save_state)
         return Observation(string_value=self.bc_path)

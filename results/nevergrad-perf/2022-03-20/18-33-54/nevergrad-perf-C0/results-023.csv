@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://poj104-v0/2/5,1.4610341129408422,11.157217264175415,opt -add-discriminators -inferattrs input.bc -o output.bc

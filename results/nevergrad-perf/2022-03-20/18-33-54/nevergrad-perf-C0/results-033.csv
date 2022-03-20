@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://poj104-v0/1/13,1.1225746458921684,10.541259765625,opt -mergeicmps -infer-address-spaces input.bc -o output.bc

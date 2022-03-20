@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://poj104-v0/1/17,0.7601605052257515,10.524060487747192,opt -loop-deletion -loop-instsimplify input.bc -o output.bc

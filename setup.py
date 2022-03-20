@@ -23,6 +23,7 @@ setuptools.setup(
     license="MIT",
     install_requires=requirements,
     packages=[
+        "hpctoolkit_service",
         "llvm_autotuning",
         "llvm_autotuning.autotuners",
         # "llvm_rl",

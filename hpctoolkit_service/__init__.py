@@ -92,7 +92,20 @@ class HPCToolkitCompilerEnv(CompilerEnv):
 from compiler_gym.util.registration import register
 from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
 from hpctoolkit_service.agent_py.rewards import perf_reward
-from compiler_gym.envs.llvm.datasets import CBenchDataset
+from compiler_gym.envs.llvm.datasets import (
+    AnghaBenchDataset,
+    BlasDataset,
+    CBenchDataset,
+    CBenchLegacyDataset,
+    CBenchLegacyDataset2,
+    CHStoneDataset,
+    CsmithDataset,
+    NPBDataset,
+)
+
+from hpctoolkit_service.agent_py.datasets import hpctoolkit_dataset
+from hpctoolkit_service.agent_py.datasets import poj104_dataset
+
 from compiler_gym.util.runfiles_path import site_data_path
 
 # register perf session
@@ -105,6 +118,9 @@ register(
         "rewards": [perf_reward.Reward()],
         "datasets": [
             CBenchDataset(site_data_path("llvm-v0")),
+            CsmithDataset(site_data_path("llvm-v0")),
+            hpctoolkit_dataset.Dataset(),
+            poj104_dataset.Dataset(),
         ],
     },
 )

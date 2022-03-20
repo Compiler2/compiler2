@@ -142,23 +142,26 @@ class HPCToolkitCompilationSession(CompilationSession):
         self.profiler = None
 
     def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
-        """Handle a session parameter send by the frontend.
-        Session parameters provide a method to send ad-hoc key-value messages to
-        a compilation session through the :meth:`env.send_session_parameter()
-        <compiler_gym.envs.CompilerEnv.send_session_parameter>` method. It us up
-        to the client/service to agree on a common schema for encoding and
-        decoding these parameters.
-        Implementing this method is optional.
-        :param key: The parameter key.
-        :param value: The parameter value.
-        :return: A string response message if the parameter was understood. Else
-            :code:`None` to indicate that the message could not be interpretted.
-        """
         if key == "save_state":
             self.save_state = False if value == "0" else True
+            return "Succeeded"
+        elif key == "hpctoolkit.apply_baseline_optimizations":
+            self.benchmark.apply_action(value, self.save_state)
+            return "Succeeded"
+            
         else:
             print("handle_session_parameter Unsuported key:", key)
-        return ""
+            return ""
+
+
+
+    def fork(self):
+        # There is a problem with forking.
+        from copy import deepcopy
+        # FIXME vi3: I don't know what is the proper way to fork a session.
+        new_fork = deepcopy(self)
+        return new_fork
+
 
     def apply_action(self, action: Action) -> Tuple[bool, Optional[ActionSpace], bool]:
 
@@ -227,7 +230,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                 )
 
             elif observation_space.name == "BitcodeFile":
-                return self.benchmark.bitcode_file_path()
+                return self.benchmark.bitcode_file_path(self.save_state)
 
 
             else:
@@ -235,20 +238,6 @@ class HPCToolkitCompilationSession(CompilationSession):
 
 
         return self.profiler.get_observation()
-        
-
-    def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
-        if key == "hpctoolkit.apply_baseline_optimizations":
-            # Apply -O3 optimization, considered as a baseline optimization.
-            self.benchmark.apply_action(value)
-            return "Succeeded"
-
-    def fork(self):
-        # There is a problem with forking.
-        from copy import deepcopy
-        # FIXME vi3: I don't know what is the proper way to fork a session.
-        new_fork = deepcopy(self)
-        return new_fork
 
 
 if __name__ == "__main__":

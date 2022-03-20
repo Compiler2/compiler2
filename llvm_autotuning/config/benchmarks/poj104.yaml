@@ -1,0 +1,12 @@
+---
+# TODO: How to add user benchmark without specifying uris
+# benchmarks:
+#     - dataset: benchmark://poj104-v0
+#       max_benchmarks: 5
+
+benchmarks:
+    - uris:
+          - benchmark://poj104-v0/1/13
+          - benchmark://poj104-v0/1/17
+          - benchmark://poj104-v0/2/5
+          - benchmark://poj104-v0/2/11

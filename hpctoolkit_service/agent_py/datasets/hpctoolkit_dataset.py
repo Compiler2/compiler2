@@ -7,7 +7,6 @@ import subprocess
 from pathlib import Path
 import pdb
 import sys
-sys.path.insert(0, Path(__file__).parent.parent.parent.resolve())
 import utils
 
 from . import benchmark_from_file_contents

@@ -11,6 +11,7 @@ Example usage:
 
 """
 import random
+import pdb
 
 import humanize
 from absl import app, flags
@@ -106,6 +107,7 @@ def main(argv):
     logging.basicConfig(level=logging.CRITICAL, force=True)
 
     register_perf_session()
+    pdb.set_trace()
 
     # with gym.make("perf-v0") as env:
     with env_from_flags(benchmark=benchmark_from_flags()) as env:

@@ -1,0 +1,11 @@
+---
+# benchmarks:
+#     - dataset: benchmark://hpctoolkit-cpu-v0
+#       max_benchmarks: 3
+
+benchmarks:
+    - uris:
+          - benchmark://hpctoolkit-cpu-v0/conv2d
+          - benchmark://hpctoolkit-cpu-v0/offsets1
+          - benchmark://hpctoolkit-cpu-v0/nanosleep
+          - benchmark://hpctoolkit-cpu-v0/simple_pow

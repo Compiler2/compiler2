@@ -15,6 +15,7 @@ import compiler_gym
 from compiler_gym.datasets import Benchmark
 from compiler_gym.envs import LlvmEnv
 from compiler_gym.wrappers import RuntimePointEstimateReward
+import pdb
 
 logger = logging.getLogger(__name__)
 
@@ -125,6 +126,7 @@ class OptimizationTarget(str, Enum):
             # Implemented similar to the Runtime OptimizationTarget.RUNTIME
             with _RUNTIME_LOCK:
                 with compiler_gym.make("perf-v0", benchmark=env.benchmark) as new_env:
+                    # pdb.set_trace()
                     new_env.reset()
                     new_env.apply(env.state)
                     # Find perf observation for the state determined by the auto tuner.
@@ -132,6 +134,7 @@ class OptimizationTarget(str, Enum):
                     perf_cycles = float(perf_observation_dict['cycles'])
 
                     new_env.reset()
+                    new_env.send_param("save_state", "1")
                     new_env.send_param("hpctoolkit.apply_baseline_optimizations", "-O3")
                     # Find perf observation for the -O3 baseline optimization.
                     o3_perf_dict = pickle.loads(new_env.observation.perf())

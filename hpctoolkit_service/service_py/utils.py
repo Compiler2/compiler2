@@ -27,7 +27,12 @@ def run_command(cmd: List[str], timeout: int):
         cmd_exe, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True
     ) as process:
         if stdin:
-            process.stdin.write(stdin.read())
+            stdin.seek(0)
+            try:
+                process.stdin.write(stdin.read()) # BUG: Broken Pipe
+            except BrokenPipeError:
+                pass
+            
         stdout, stderr = process.communicate(timeout=timeout)
         # print("ERRORCODE:", process.returncode, "cmd:", cmd)
 
