@@ -6,7 +6,7 @@ import pdb
 from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
-    Observation,
+    Event,
 )
 
 
@@ -37,14 +37,14 @@ class Profiler:
         ]  # TODO: Use this from hatchat dataframe
 
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:
         g_hatchet = self.hpctoolkit.hatchet_get_graph()
         g_programl = self.programl.programl_get_graph(self.llvm_path)
         g_programl = self.programl_add_features(
             g_programl, g_hatchet, self.features_hatchet
         )
         pickled = pickle.dumps(g_programl)
-        return Observation(binary_value=pickled)
+        return Event(binary_value=pickled)
 
     def programl_get_graph(self, ll_path: str) -> pg.ProgramGraph:
 

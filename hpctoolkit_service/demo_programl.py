@@ -20,7 +20,6 @@ from typing import Iterable
 import gym
 
 from compiler_gym.datasets import Benchmark, Dataset, BenchmarkUri
-from compiler_gym.envs.llvm.llvm_benchmark import get_system_includes
 from compiler_gym.spaces import Reward
 from compiler_gym.third_party import llvm
 from compiler_gym.util.logging import init_logging

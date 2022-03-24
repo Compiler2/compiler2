@@ -30,7 +30,6 @@ from compiler_gym.envs.llvm.datasets import (
     CsmithDataset,
     NPBDataset,
 )
-from compiler_gym.envs.llvm.llvm_benchmark import get_system_includes
 from compiler_gym.spaces import Reward
 from compiler_gym.third_party import llvm
 from compiler_gym.util.logging import init_logging
@@ -177,7 +176,7 @@ def main():
                 perf_dict = pickle.loads(observation[0])
                 print(perf_dict)
 
-                pdb.set_trace()
+                # pdb.set_trace()
                 if done:
                     env.reset()
             inc += 1

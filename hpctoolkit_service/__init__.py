@@ -90,7 +90,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         return path
 
 from compiler_gym.util.registration import register
-from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
+from utils import HPCTOOLKIT_PY_SERVICE_BINARY
 from hpctoolkit_service.agent_py.rewards import perf_reward
 from compiler_gym.envs.llvm.datasets import (
     AnghaBenchDataset,

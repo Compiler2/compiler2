@@ -6,7 +6,7 @@ import hatchet as ht
 import pandas as pd
 import utils
 
-from compiler_gym.service.proto import Observation
+from compiler_gym.service.proto import Event
 # from compiler_gym.util.commands import run_command
 from utils import run_command
 
@@ -23,10 +23,10 @@ class Profiler:
             "REALTIME@100",
         ]
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:
         g_hatchet = self.hatchet_get_graph()
         pickled = pickle.dumps(g_hatchet)
-        return Observation(binary_value=pickled)
+        return Event(binary_value=pickled)
 
     def hatchet_get_graph(self) -> ht.GraphFrame:
         events_list = []
