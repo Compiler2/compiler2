@@ -29,6 +29,7 @@ from compiler_gym.service.proto import (
     SendSessionParameterReply,
     ByteSequenceSpace,
     Int64Range,
+    CommandlineSpace
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 

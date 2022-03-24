@@ -16,16 +16,25 @@ HPCTOOLKIT_HEADER: Path = runfiles_path(
 )
 
 from compiler_gym.envs.compiler_env import CompilerEnv
-from compiler_gym.spaces import Commandline
+from compiler_gym.spaces import Commandline, CommandlineFlag
 from typing import cast, List, Union
 import os
 import shutil
+import gym
 
 
 class HPCToolkitCompilerEnv(CompilerEnv):
     """
     The below functions are copied from LlvmEnv
     """
+
+    def get_command_line_flags_from_named_discrete_space(self):
+        commandline_flags = [CommandlineFlag(f, f, f) for f in self.action_space.names]
+        return commandline_flags
+
+    def create_commandline_space(self):
+        return Commandline(self.get_command_line_flags_from_named_discrete_space(),
+                           self.action_space.name)
 
     def commandline(  # pylint: disable=arguments-differ
             self, textformat: bool = False
@@ -37,8 +46,13 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             text-format LLVM-IR or bitcode (the default).
         :returns: A command line string.
         """
-
-        command = cast(Commandline, self.action_space).commandline(self.actions)
+        # For some reason, action space won't be changed to CommandlineSpace.
+        # We're manually creating Commandline object.
+        # This was the previous implementation that doesn't work.
+        # command = cast(Commandline, self.action_space).commandline(self.actions)
+        command = self.create_commandline_space()
+        # print(cast(Commandline, self.action_space))
+        command = command.commandline(self.actions)
         if textformat:
             return f"opt {command} input.ll -S -o output.ll"
         else:
@@ -61,7 +75,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             commandline = commandline[len("opt "): -len(" input.bc -o output.bc")]
         else:
             raise ValueError(f"Invalid commandline: `{commandline}`")
-        return self.action_space.from_commandline(commandline)
+        return self.create_commandline_space().from_commandline(commandline)
 
     # def fork(self):
     #     ret = super().fork()
@@ -76,18 +90,13 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         path = Path(path).expanduser()
         # FIXME vi3: We don't support this observation spaces.
         #   I guess we could just return the pickled content of the bitcode file
-        print("hack1: What is this: ", self.observation)
         tmp_path = self.observation["BitcodeFile"]
-        print("hack2: tmp_path", tmp_path)
-        print("hack3: path", path)
-        parts = tmp_path.split("benchmark.bc")
-        dir_path = parts[0]
-        print("hack4: directory content: ", os.listdir(dir_path))
         try:
             shutil.copyfile(tmp_path, path)
         finally:
             os.unlink(tmp_path)
         return path
+
 
 from compiler_gym.util.registration import register
 from utils import HPCTOOLKIT_PY_SERVICE_BINARY
