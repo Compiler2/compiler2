@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/conv2d,0.997278233657432,14.096888065338135,opt -sancov -div-rem-pairs input.bc -o output.bc

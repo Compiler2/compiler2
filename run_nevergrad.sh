@@ -13,10 +13,10 @@ python -m llvm_autotuning.tune -m \
     outputs=$OUTPUT \
     experiment="$AUTOTUNER-${TARGET}" \
     autotuner="$AUTOTUNER" \
+    benchmarks=hpctoolkit \
     autotuner.optimization_target="$TARGET" \
     autotuner.search_time_seconds=10 \
-    autotuner.algorithm_config.episode_length=2
-
+    autotuner.algorithm_config.episode_length=2    
 
 
 

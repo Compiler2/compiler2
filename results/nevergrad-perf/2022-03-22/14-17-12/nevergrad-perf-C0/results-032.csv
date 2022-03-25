@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/simple_pow,1.0570621988138587,10.615960121154785,opt -strip-dead-prototypes -add-discriminators input.bc -o output.bc

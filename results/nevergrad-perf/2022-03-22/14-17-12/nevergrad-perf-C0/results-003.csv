@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,1.0344760186889919,10.768137693405151,opt -libcalls-shrinkwrap -guard-widening input.bc -o output.bc

@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,1.0199324574291544,10.932771921157837,opt -alignment-from-assumptions -sroa input.bc -o output.bc

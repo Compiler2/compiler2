@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,0.9534788914777818,10.959875583648682,opt -coro-split -loop-reroll input.bc -o output.bc

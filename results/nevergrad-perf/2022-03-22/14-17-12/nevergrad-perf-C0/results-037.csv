@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/conv2d,1.0022970507280498,14.106406927108765,opt -alignment-from-assumptions -sroa input.bc -o output.bc

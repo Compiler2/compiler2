@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/conv2d,1.0034444528281312,14.070908308029175,opt -lower-guard-intrinsic -loop-data-prefetch input.bc -o output.bc

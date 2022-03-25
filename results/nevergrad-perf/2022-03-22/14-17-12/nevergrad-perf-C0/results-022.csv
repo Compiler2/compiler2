@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/offsets1,1.002853339602725,12.399661302566528,opt -add-discriminators -add-discriminators input.bc -o output.bc

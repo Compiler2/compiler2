@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,0.8620101229426854,10.663185119628906,opt -loop-predication -sccp input.bc -o output.bc

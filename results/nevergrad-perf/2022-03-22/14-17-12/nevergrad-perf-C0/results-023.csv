@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,0.9155818577726518,10.887936115264893,opt -inject-tli-mappings -float2int input.bc -o output.bc

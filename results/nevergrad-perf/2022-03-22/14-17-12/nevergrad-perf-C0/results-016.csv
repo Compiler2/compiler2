@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/simple_pow,1.341531911832386,10.847389698028564,opt -functionattrs -loop-reroll input.bc -o output.bc

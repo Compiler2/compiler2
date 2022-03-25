@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/offsets1,1.0001060864725675,12.446699857711792,opt -deadargelim -lower-constant-intrinsics input.bc -o output.bc

@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/offsets1,1.000524474126715,12.475752353668213,opt -alignment-from-assumptions -sroa input.bc -o output.bc

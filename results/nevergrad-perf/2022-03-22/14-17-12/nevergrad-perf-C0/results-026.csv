@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/offsets1,1.0017910298720394,12.548971891403198,opt -strip -loop-rotate input.bc -o output.bc

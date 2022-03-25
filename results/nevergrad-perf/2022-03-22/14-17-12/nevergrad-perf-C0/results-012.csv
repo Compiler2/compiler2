@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/simple_pow,1.1532353617595403,10.792956352233887,opt -break-crit-edges -newgvn input.bc -o output.bc

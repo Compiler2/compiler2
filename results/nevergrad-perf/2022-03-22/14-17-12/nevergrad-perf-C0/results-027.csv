@@ -1,0 +1,2 @@
+benchmark,reward,walltime,commandline
+benchmark://hpctoolkit-cpu-v0/nanosleep,1.1441315471132094,10.80972146987915,opt -gvn-hoist -aggressive-instcombine input.bc -o output.bc
