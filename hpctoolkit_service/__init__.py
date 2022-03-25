@@ -17,10 +17,21 @@ HPCTOOLKIT_HEADER: Path = runfiles_path(
 
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline, CommandlineFlag
-from typing import cast, List, Union
+from typing import cast, List, Union, Optional
 import os
 import shutil
-import gym
+from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
+
+
+def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
+    # Copied from CompilerGym and adapted.
+    return Commandline(
+        items=[
+            CommandlineFlag(name=name, flag=name, description="")
+            for name in message.space.named_discrete.name
+        ],
+        name=None,
+    )
 
 
 class HPCToolkitCompilerEnv(CompilerEnv):
@@ -28,13 +39,17 @@ class HPCToolkitCompilerEnv(CompilerEnv):
     The below functions are copied from LlvmEnv
     """
 
-    def get_command_line_flags_from_named_discrete_space(self):
-        commandline_flags = [CommandlineFlag(f, f, f) for f in self.action_space.names]
-        return commandline_flags
-
-    def create_commandline_space(self):
-        return Commandline(self.get_command_line_flags_from_named_discrete_space(),
-                           self.action_space.name)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if len(self.service.action_spaces) != 1:
+            raise Exception("Vladimir: Not supporting more than one")
+        # Vladimir: I need to force conversion to CommandlineSpace
+        self.action_spaces = [
+            convert_commandline_space_message(self.service.action_spaces[0])
+        ]
+        # Vladimir: Force action_space initialization
+        # Without this it might not work
+        self.action_space = ""
 
     def commandline(  # pylint: disable=arguments-differ
             self, textformat: bool = False
@@ -49,10 +64,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         # For some reason, action space won't be changed to CommandlineSpace.
         # We're manually creating Commandline object.
         # This was the previous implementation that doesn't work.
-        # command = cast(Commandline, self.action_space).commandline(self.actions)
-        command = self.create_commandline_space()
-        # print(cast(Commandline, self.action_space))
-        command = command.commandline(self.actions)
+        command = cast(Commandline, self.action_space).commandline(self.actions)
         if textformat:
             return f"opt {command} input.ll -S -o output.ll"
         else:
@@ -75,7 +87,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             commandline = commandline[len("opt "): -len(" input.bc -o output.bc")]
         else:
             raise ValueError(f"Invalid commandline: `{commandline}`")
-        return self.create_commandline_space().from_commandline(commandline)
+        return self.action_space.from_commandline(commandline)
 
     # def fork(self):
     #     ret = super().fork()

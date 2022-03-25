@@ -29,7 +29,8 @@ from compiler_gym.service.proto import (
     SendSessionParameterReply,
     ByteSequenceSpace,
     Int64Range,
-    CommandlineSpace
+    CommandlineSpace,
+    StringSpace
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
@@ -111,12 +112,15 @@ class HPCToolkitCompilationSession(CompilationSession):
         #         scalar_int64=1,
         #     ),
         # ),
-        # ObservationSpace(
-        #     name="BitcodeFile",
-        #     string_size_range=ScalarRange(
-        #         min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-        #     ),
-        # ),
+        ObservationSpace(
+            name="BitcodeFile",
+            space=Space(
+                string_value=StringSpace(length_range=Int64Range(min=0))
+            )
+            # string_size_range=ScalarRange(
+            #     min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            # ),
+        ),
     ]
 
     def __init__(

@@ -269,7 +269,6 @@ class BenchmarkBuilder:
         # This function should return the path of the .bc file.
         # Since .ll is always present and .bc might not be, compile it .ll to .bc file,
         # and then return the bc_path.
-        print("hack5: This is the current ")
         # FIXME: I guess memoizing the last action and applying it again would
         #  produce expected .bc file.
         if self.last_opt_action is None:
