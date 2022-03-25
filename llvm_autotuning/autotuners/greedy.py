@@ -19,11 +19,7 @@ def greedy(env, search_time_seconds: int, **kwargs) -> None:
         # FIXME vi3: After forking, Compilation session could not be found.
         #   I'm not sure what is the proper way to implement forking logic.
         with env.fork() as fkd:
-            print("hack444: ",)
-            print(fkd.state)
             fkd.reset()
-            print("hack555: ")
-            print(fkd.state)
             res = fkd.step(action)
             print("hack333: Here is the res", res)
             return (res[1], action)

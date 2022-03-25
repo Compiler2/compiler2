@@ -17,8 +17,6 @@ from pydantic import BaseModel, Field
 from compiler_gym import CompilerEnvStateWriter
 from compiler_gym.util.executor import Executor
 
-import pdb
-
 logger = logging.getLogger(__name__)
 
 
