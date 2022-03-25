@@ -140,6 +140,7 @@ register(
         "datasets": [
             CBenchDataset(site_data_path("llvm-v0")),
             CsmithDataset(site_data_path("llvm-v0")),
+            CHStoneDataset(site_data_path("llvm-v0")),
             hpctoolkit_dataset.Dataset(),
             poj104_dataset.Dataset(),
         ],
