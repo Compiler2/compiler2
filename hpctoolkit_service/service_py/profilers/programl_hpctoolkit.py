@@ -7,6 +7,7 @@ from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
     Event,
+    ByteTensor
 )
 
 
@@ -22,8 +23,8 @@ class Profiler:
         self.run_cmd = run_cmd
         self.timeout_sec = timeout_sec
         self.llvm_path = src_path
-        self.hpctoolkit = hpctoolkit.Profiler(run_cmd, timeout_sec, src_path)
-        self.programl = programl.Profiler(run_cmd, timeout_sec, src_path)
+        self.hpctoolkit = hpctoolkit.Profiler(name, run_cmd, timeout_sec, src_path)
+        self.programl = programl.Profiler(name, run_cmd, timeout_sec, src_path)
 
         # TODO: Get rid of this
         # List of metrics collected from observation space
@@ -44,7 +45,8 @@ class Profiler:
             g_programl, g_hatchet, self.features_hatchet
         )
         pickled = pickle.dumps(g_programl)
-        return Event(binary_value=pickled)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+
 
     def programl_get_graph(self, ll_path: str) -> pg.ProgramGraph:
 

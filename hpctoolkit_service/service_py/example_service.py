@@ -28,6 +28,7 @@ from compiler_gym.service.proto import (
     DoubleRange,
     SendSessionParameterReply,
     ByteSequenceSpace,
+    BytesSequenceSpace,
     Int64Range,
     CommandlineSpace,
     StringSpace
@@ -76,33 +77,30 @@ class HPCToolkitCompilationSession(CompilationSession):
                 double_value=0,
             ),
         ),
-
         ObservationSpace(
             name="perf",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
+        ),        
+        ObservationSpace(
+            name="hpctoolkit",
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
         ),
-
-        #
-        # ObservationSpace(
-        #     name="hpctoolkit",
-        #     binary_size_range=ScalarRange(
-        #         min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-        #     ),
-        # ),
-        # ObservationSpace(
-        #     name="programl",
-        #     binary_size_range=ScalarRange(
-        #         min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-        #     ),
-        # ),
-        # ObservationSpace(
-        #     name="programl_hpctoolkit",
-        #     binary_size_range=ScalarRange(
-        #         min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-        #     ),
-        # ),
+        ObservationSpace(
+            name="programl",
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
+        ),
+        ObservationSpace(
+            name="programl_hpctoolkit",
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
+        ),
         # ObservationSpace(
         #     name="IsRunnable",
         #     scalar_int64_range=ScalarRange(min=ScalarLimit(value=0), max=ScalarLimit(value=1)),
@@ -124,10 +122,10 @@ class HPCToolkitCompilationSession(CompilationSession):
     ]
 
     def __init__(
-            self,
-            working_directory: Path,
-            action_space: ActionSpace,
-            benchmark: Benchmark,
+        self,
+        working_directory: Path,
+        action_space: ActionSpace,
+        benchmark: Benchmark,
     ):
         super().__init__(working_directory, action_space, benchmark)
         logging.info("Started a compilation session for %s", benchmark.uri)
@@ -201,7 +199,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                  self.benchmark.run_cmd,
                                                  self.timeout_sec)
 
-            if observation_space.name == "perf":
+            elif observation_space.name == "perf":
                 self.profiler = perf.Profiler(observation_space.name,
                                               self.benchmark.run_cmd,
                                               self.timeout_sec)

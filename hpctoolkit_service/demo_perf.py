@@ -176,7 +176,7 @@ def main():
                 perf_dict = pickle.loads(observation[0])
                 print(perf_dict)
 
-                # pdb.set_trace()
+                pdb.set_trace()
                 if done:
                     env.reset()
             inc += 1

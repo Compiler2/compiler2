@@ -16,7 +16,7 @@ class Profiler:
 
     def get_observation(self) -> Event:
         avg_exec_time = self.runtime_get_average()
-        return Event(scalar_double=avg_exec_time)
+        return Event(double_value=avg_exec_time)
 
 
     def runtime_get_average(self) -> float:

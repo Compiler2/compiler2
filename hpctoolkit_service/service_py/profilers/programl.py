@@ -6,6 +6,7 @@ from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
     Event,
+    ByteTensor
 )
 
 
@@ -20,7 +21,7 @@ class Profiler:
     def get_observation(self) -> Event:
         g_programl = self.programl_get_graph(self.llvm_path)
         pickled = pickle.dumps(g_programl)
-        return Event(binary_value=pickled)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
 
 
     def programl_get_graph(self, ll_path: str) -> pg.ProgramGraph:
