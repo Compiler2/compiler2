@@ -3,7 +3,7 @@ import subprocess
 import signal
 
 from signal import Signals
-from turtle import pos
+# from turtle import pos
 from typing import List, Optional, Tuple
 
 from signal import Signals

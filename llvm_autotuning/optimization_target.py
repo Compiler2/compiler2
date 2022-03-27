@@ -15,7 +15,6 @@ import compiler_gym
 from compiler_gym.datasets import Benchmark
 from compiler_gym.envs import LlvmEnv
 from compiler_gym.wrappers import RuntimePointEstimateReward
-import pdb
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +45,7 @@ class OptimizationTarget(str, Enum):
         # TODO(cummins): This does not work with custom benchmarks, as the URI
         # will not be known to the new environment.
         if str(benchmark).startswith("file:///"):
-            benchmark = env.make_benchmark(Path(benchmark[len("file:///"):]))
+            benchmark = env.make_benchmark(Path(benchmark[len("file:///") :]))
 
         env.benchmark = benchmark
         # FIXME vi3: Change of the benchmark should be followed by the env.reset()
@@ -78,7 +77,7 @@ class OptimizationTarget(str, Enum):
         actions = list(env.actions)
         env.reset()
         for i in range(1, 5 + 1):
-            _, _, done, info = env.step(actions)
+            _, _, done, info = env.multistep(actions)
             if not done:
                 break
             logger.warning(

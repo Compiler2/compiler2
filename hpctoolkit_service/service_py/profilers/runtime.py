@@ -3,7 +3,7 @@ import pdb
 from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
-    Observation,
+    Event,
 )
 
 
@@ -14,9 +14,9 @@ class Profiler:
         self.timeout_sec = timeout_sec
 
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:
         avg_exec_time = self.runtime_get_average()
-        return Observation(scalar_double=avg_exec_time)
+        return Event(double_value=avg_exec_time)
 
 
     def runtime_get_average(self) -> float:

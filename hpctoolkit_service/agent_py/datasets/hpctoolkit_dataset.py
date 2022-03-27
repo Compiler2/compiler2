@@ -1,4 +1,3 @@
-from compiler_gym.envs.llvm.llvm_benchmark import get_system_includes
 from compiler_gym.datasets import Benchmark, BenchmarkUri, Dataset
 from compiler_gym.util.runfiles_path import site_data_path
 from compiler_gym.third_party import llvm
@@ -9,6 +8,7 @@ import pdb
 import sys
 import utils
 
+from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
@@ -82,7 +82,7 @@ class Dataset(Dataset):
             str(utils.HPCTOOLKIT_HEADER.parent),
             src,
         ]
-        for directory in get_system_includes():
+        for directory in get_system_library_flags():
             cmd += ["-isystem", str(directory)]
         return subprocess.check_output(
             cmd,

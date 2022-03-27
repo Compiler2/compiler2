@@ -1,7 +1,7 @@
 ---
 defaults:
     - autotuner: random
-    - benchmarks: poj104
+    - benchmarks: cbench
 executor:
     # One of: {local, slurm, debug, noop}.
     type: local

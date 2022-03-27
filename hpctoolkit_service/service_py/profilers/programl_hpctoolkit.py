@@ -6,7 +6,8 @@ import pdb
 from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
-    Observation,
+    Event,
+    ByteTensor
 )
 
 
@@ -22,8 +23,8 @@ class Profiler:
         self.run_cmd = run_cmd
         self.timeout_sec = timeout_sec
         self.llvm_path = src_path
-        self.hpctoolkit = hpctoolkit.Profiler(run_cmd, timeout_sec, src_path)
-        self.programl = programl.Profiler(run_cmd, timeout_sec, src_path)
+        self.hpctoolkit = hpctoolkit.Profiler(name, run_cmd, timeout_sec, src_path)
+        self.programl = programl.Profiler(name, run_cmd, timeout_sec, src_path)
 
         # TODO: Get rid of this
         # List of metrics collected from observation space
@@ -37,14 +38,15 @@ class Profiler:
         ]  # TODO: Use this from hatchat dataframe
 
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:
         g_hatchet = self.hpctoolkit.hatchet_get_graph()
         g_programl = self.programl.programl_get_graph(self.llvm_path)
         g_programl = self.programl_add_features(
             g_programl, g_hatchet, self.features_hatchet
         )
         pickled = pickle.dumps(g_programl)
-        return Observation(binary_value=pickled)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+
 
     def programl_get_graph(self, ll_path: str) -> pg.ProgramGraph:
 

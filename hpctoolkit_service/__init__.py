@@ -16,16 +16,40 @@ HPCTOOLKIT_HEADER: Path = runfiles_path(
 )
 
 from compiler_gym.envs.compiler_env import CompilerEnv
-from compiler_gym.spaces import Commandline
-from typing import cast, List, Union
+from compiler_gym.spaces import Commandline, CommandlineFlag
+from typing import cast, List, Union, Optional
 import os
 import shutil
+from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
+
+
+def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
+    # Copied from CompilerGym and adapted.
+    return Commandline(
+        items=[
+            CommandlineFlag(name=name, flag=name, description="")
+            for name in message.space.named_discrete.name
+        ],
+        name=None,
+    )
 
 
 class HPCToolkitCompilerEnv(CompilerEnv):
     """
     The below functions are copied from LlvmEnv
     """
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if len(self.service.action_spaces) != 1:
+            raise Exception("Vladimir: Not supporting more than one")
+        # Vladimir: I need to force conversion to CommandlineSpace
+        self.action_spaces = [
+            convert_commandline_space_message(self.service.action_spaces[0])
+        ]
+        # Vladimir: Force action_space initialization
+        # Without this it might not work
+        self.action_space = ""
 
     def commandline(  # pylint: disable=arguments-differ
             self, textformat: bool = False
@@ -37,7 +61,9 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             text-format LLVM-IR or bitcode (the default).
         :returns: A command line string.
         """
-
+        # For some reason, action space won't be changed to CommandlineSpace.
+        # We're manually creating Commandline object.
+        # This was the previous implementation that doesn't work.
         command = cast(Commandline, self.action_space).commandline(self.actions)
         if textformat:
             return f"opt {command} input.ll -S -o output.ll"
@@ -76,21 +102,16 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         path = Path(path).expanduser()
         # FIXME vi3: We don't support this observation spaces.
         #   I guess we could just return the pickled content of the bitcode file
-        print("hack1: What is this: ", self.observation)
         tmp_path = self.observation["BitcodeFile"]
-        print("hack2: tmp_path", tmp_path)
-        print("hack3: path", path)
-        parts = tmp_path.split("benchmark.bc")
-        dir_path = parts[0]
-        print("hack4: directory content: ", os.listdir(dir_path))
         try:
             shutil.copyfile(tmp_path, path)
         finally:
             os.unlink(tmp_path)
         return path
 
+
 from compiler_gym.util.registration import register
-from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
+from utils import HPCTOOLKIT_PY_SERVICE_BINARY
 from hpctoolkit_service.agent_py.rewards import perf_reward
 from compiler_gym.envs.llvm.datasets import (
     AnghaBenchDataset,
@@ -119,6 +140,7 @@ register(
         "datasets": [
             CBenchDataset(site_data_path("llvm-v0")),
             CsmithDataset(site_data_path("llvm-v0")),
+            CHStoneDataset(site_data_path("llvm-v0")),
             hpctoolkit_dataset.Dataset(),
             poj104_dataset.Dataset(),
         ],
