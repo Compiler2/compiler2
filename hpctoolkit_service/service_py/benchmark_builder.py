@@ -21,7 +21,7 @@ import compiler_gym.third_party.llvm as llvm
 from compiler_gym.service.proto import Benchmark
 
 from compiler_gym.service.proto import (
-    Observation,
+    Event,
 )
 
 # from compiler_gym.util.commands import Popen, run_command
@@ -265,14 +265,13 @@ class BenchmarkBuilder:
             run_cmd[0] = self.exe_path
             self.run_cmd = run_cmd
 
-    def bitcode_file_path(self, save_state) -> Observation:
+    def bitcode_file_path(self, save_state) -> Event:
         # This function should return the path of the .bc file.
         # Since .ll is always present and .bc might not be, compile it .ll to .bc file,
         # and then return the bc_path.
-        print("hack5: This is the current ")
         # FIXME: I guess memoizing the last action and applying it again would
         #  produce expected .bc file.
         if self.last_opt_action is None:
             self.last_opt_action = "-O0"
         self.apply_action(self.last_opt_action, save_state=save_state)
-        return Observation(string_value=self.bc_path)
+        return Event(string_value=self.bc_path)

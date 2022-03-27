@@ -6,7 +6,7 @@ import hatchet as ht
 import pandas as pd
 import utils
 
-from compiler_gym.service.proto import Observation
+from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
 from utils import run_command
 
@@ -15,6 +15,7 @@ class Profiler:
         self.name = name
         self.run_cmd = run_cmd
         self.timeout_sec = timeout_sec
+        pdb.set_trace()
         self.exe_path = run_cmd[0]
         self.llvm_path = src_path
         self.exe_struct_path = self.exe_path + ".hpcstruct"
@@ -23,10 +24,10 @@ class Profiler:
             "REALTIME@100",
         ]
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:        
         g_hatchet = self.hatchet_get_graph()
         pickled = pickle.dumps(g_hatchet)
-        return Observation(binary_value=pickled)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
 
     def hatchet_get_graph(self) -> ht.GraphFrame:
         events_list = []

@@ -5,7 +5,7 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 import utils
 
-from compiler_gym.service.proto import Observation
+from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
 from utils import run_command
 
@@ -38,10 +38,10 @@ class Profiler:
             # 'iTLB-loads',
         ]
 
-    def get_observation(self) -> Observation:
+    def get_observation(self) -> Event:
         perf_dict = self.perf_get_dict()
         pickled = pickle.dumps(perf_dict)
-        return Observation(binary_value=pickled)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
 
     def perf_get_dict(self) -> Dict:
 

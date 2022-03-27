@@ -19,4 +19,9 @@ HPCTOOLKIT_HEADER: Path = Path(
 HPCTOOLKIT_PY_SERVICE_BINARY: Path = Path(
     hpctoolkit_service_path / "service_py/example_service.py"
 )
+print("What is the path", HPCTOOLKIT_PY_SERVICE_BINARY)
+print("Is that file: ", HPCTOOLKIT_PY_SERVICE_BINARY.is_file())
+assert HPCTOOLKIT_PY_SERVICE_BINARY.is_file()
+
+
 assert HPCTOOLKIT_PY_SERVICE_BINARY.is_file(), "Service script not found"

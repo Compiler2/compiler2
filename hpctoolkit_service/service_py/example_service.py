@@ -19,27 +19,28 @@ import compiler_gym.third_party.llvm as llvm
 from compiler_gym import site_data_path
 from compiler_gym.service import CompilationSession
 from compiler_gym.service.proto import (
-    Action,
     ActionSpace,
     Benchmark,
-    ChoiceSpace,
+    Space,
     NamedDiscreteSpace,
-    Observation,
+    Event,
     ObservationSpace,
-    ScalarLimit,
-    ScalarRange,
-    ScalarRangeList,
-    Int64List,
+    DoubleRange,
     SendSessionParameterReply,
+    ByteSequenceSpace,
+    BytesSequenceSpace,
+    Int64Range,
+    CommandlineSpace,
+    StringSpace
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
-
 
 import utils
 import signal
 import sys
 
 import gym
+
 
 class HPCToolkitCompilationSession(CompilationSession):
     """Represents an instance of an interactive compilation session."""
@@ -51,17 +52,14 @@ class HPCToolkitCompilationSession(CompilationSession):
     action_spaces = [
         ActionSpace(
             name="llvm-hpctoolkit",
-            choice=[
-                ChoiceSpace(
-                    name="hpctoolkit-optimization_choice",
-                    named_discrete_space=NamedDiscreteSpace(
-                        # Use all flags from the llvm_env.
-                        value=llvm_env.action_space.flags,
-                        # Interpret NamedDiscrete as CommandLine.
-                        is_commandline=True
-                    )
+            space=Space(
+                named_discrete=NamedDiscreteSpace(
+                    # Use all flags from the llvm_env.
+                    name=llvm_env.action_space.flags,
+                    # Interpret NamedDiscrete as CommandLine.
+                    # is_commandline=True
                 )
-            ],
+            )
         ),
     ]
 
@@ -70,51 +68,56 @@ class HPCToolkitCompilationSession(CompilationSession):
     observation_spaces = [
         ObservationSpace(
             name="runtime",
-            scalar_double_range=ScalarRange(min=ScalarLimit(value=0)),
+            space=Space(
+                double_value=DoubleRange(min=0),
+            ),
             deterministic=False,
             platform_dependent=True,
-            default_value=Observation(
-                scalar_double=0,
+            default_observation=Event(
+                double_value=0,
             ),
         ),
         ObservationSpace(
             name="perf",
-            binary_size_range=ScalarRange(
-                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
-        ),
+        ),        
         ObservationSpace(
             name="hpctoolkit",
-            binary_size_range=ScalarRange(
-                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
             name="programl",
-            binary_size_range=ScalarRange(
-                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
             name="programl_hpctoolkit",
-            binary_size_range=ScalarRange(
-                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
-        ObservationSpace(
-            name="IsRunnable",
-            scalar_int64_range=ScalarRange(min=ScalarLimit(value=0), max=ScalarLimit(value=1)),
-            deterministic=True,
-            platform_dependent=True,
-            default_value=Observation(
-                scalar_int64=1,
-            ),
-        ),
+        # ObservationSpace(
+        #     name="IsRunnable",
+        #     scalar_int64_range=ScalarRange(min=ScalarLimit(value=0), max=ScalarLimit(value=1)),
+        #     deterministic=True,
+        #     platform_dependent=True,
+        #     default_value=Event(
+        #         scalar_int64=1,
+        #     ),
+        # ),
         ObservationSpace(
             name="BitcodeFile",
-            string_size_range=ScalarRange(
-                min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-            ),
+            space=Space(
+                string_value=StringSpace(length_range=Int64Range(min=0))
+            )
+            # string_size_range=ScalarRange(
+            #     min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
+            # ),
         ),
     ]
 
@@ -148,12 +151,10 @@ class HPCToolkitCompilationSession(CompilationSession):
         elif key == "hpctoolkit.apply_baseline_optimizations":
             self.benchmark.apply_action(value, self.save_state)
             return "Succeeded"
-            
+
         else:
             print("handle_session_parameter Unsuported key:", key)
             return ""
-
-
 
     def fork(self):
         # There is a problem with forking.
@@ -162,20 +163,20 @@ class HPCToolkitCompilationSession(CompilationSession):
         new_fork = deepcopy(self)
         return new_fork
 
+    def apply_action(self, action: Event) -> Tuple[bool, Optional[ActionSpace], bool]:
 
-    def apply_action(self, action: Action) -> Tuple[bool, Optional[ActionSpace], bool]:
+        num_choices = len(self.action_spaces[0].space.named_discrete.name)
 
-        num_choices = len(self.action_spaces[0].choice[0].named_discrete_space.value)
+        # Vladimir: I guess choosing multiple actions at once is not possible anymore.
+        # if len(action.int64_value) != 1:
+        #     raise ValueError("Invalid choice count")
 
-        if len(action.choice) != 1:
-            raise ValueError("Invalid choice count")
-
-        choice_index = action.choice[0].named_discrete_value_index
+        choice_index = action.int64_value
         if choice_index < 0 or choice_index >= num_choices:
             raise ValueError("Out-of-range")
 
         # Compile benchmark with given optimization
-        opt = self._action_space.choice[0].named_discrete_space.value[choice_index]
+        opt = self._action_space.space.named_discrete.name[choice_index]
         logging.info(
             "Applying action %d, equivalent command-line arguments: '%s'",
             choice_index,
@@ -189,43 +190,43 @@ class HPCToolkitCompilationSession(CompilationSession):
         new_action_space = None
         return (end_of_session, new_action_space, action_had_no_effect)
 
-    def get_observation(self, observation_space: ObservationSpace) -> Observation:
+    def get_observation(self, observation_space: ObservationSpace) -> Event:
         logging.info("Computing observation from space %s", observation_space.name)
 
-        if self.profiler == None or observation_space.name != self.profiler.name :
+        if self.profiler == None or observation_space.name != self.profiler.name:
             if observation_space.name == "runtime":
-                self.profiler = runtime.Profiler(observation_space.name, 
-                                                 self.benchmark.run_cmd, 
+                self.profiler = runtime.Profiler(observation_space.name,
+                                                 self.benchmark.run_cmd,
                                                  self.timeout_sec)
 
-            if observation_space.name == "perf":
-                self.profiler = perf.Profiler(observation_space.name, 
-                                              self.benchmark.run_cmd, 
+            elif observation_space.name == "perf":
+                self.profiler = perf.Profiler(observation_space.name,
+                                              self.benchmark.run_cmd,
                                               self.timeout_sec)
-                
+
             elif observation_space.name == "hpctoolkit":
-                self.profiler = hpctoolkit.Profiler(observation_space.name, 
-                                                    self.benchmark.run_cmd, 
-                                                    self.timeout_sec, 
+                self.profiler = hpctoolkit.Profiler(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
             elif observation_space.name == "programl":
-                self.profiler = programl.Profiler(observation_space.name, 
-                                                  self.benchmark.run_cmd, 
-                                                  self.timeout_sec, 
+                self.profiler = programl.Profiler(observation_space.name,
+                                                  self.benchmark.run_cmd,
+                                                  self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
             elif observation_space.name == "programl_hpctoolkit":
-                self.profiler = programl_hpctoolkit.Profiler(observation_space.name, 
-                                                             self.benchmark.run_cmd, 
-                                                             self.timeout_sec, 
+                self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
+                                                             self.benchmark.run_cmd,
+                                                             self.timeout_sec,
                                                              self.benchmark.llvm_path)
 
             elif observation_space.name == "IsRunnable":
                 # llvm_autotuners check whether the benchmark is runnable by
                 # using IsRunnable observation space.
                 # For now, assume that all benchmarks are runnable.
-                return Observation(
+                return Event(
                     scalar_int64=1,
                 )
 
@@ -235,7 +236,6 @@ class HPCToolkitCompilationSession(CompilationSession):
 
             else:
                 raise KeyError(observation_space.name)
-
 
         return self.profiler.get_observation()
 
