@@ -4,6 +4,8 @@ from typing import Dict, List, Optional, Tuple
 
 from compiler_gym.service.proto import (
     Event,
+    DoubleTensor,
+    DoubleBox
 )
 
 
@@ -13,13 +15,14 @@ class Profiler:
         self.run_cmd = run_cmd
         self.timeout_sec = timeout_sec
 
-
     def get_observation(self) -> Event:
         avg_exec_time = self.runtime_get_average()
-        return Event(double_value=avg_exec_time)
+        # return Event(double_value=avg_exec_time)
+        return Event(double_tensor=avg_exec_time)
+        # return Event(double_=avg_exec_time)
 
 
-    def runtime_get_average(self) -> float:
+    def runtime_get_average(self) -> DoubleTensor:
         # TODO: add documentation that benchmarks need print out execution time
         # Running 5 times and taking the average of middle 3
         exec_times = []
@@ -46,4 +49,9 @@ class Profiler:
 
         exec_times = np.sort(exec_times)
         avg_exec_time = np.mean(exec_times[1:4])
-        return avg_exec_time
+        return DoubleTensor(shape=[1], value=[avg_exec_time])
+        # return DoubleBox(
+        #     low=DoubleTensor(value=[1], shape=[1]),
+        #     high=DoubleTensor(value=[1], shape=[1]),
+        # )
+        # return avg_exec_time

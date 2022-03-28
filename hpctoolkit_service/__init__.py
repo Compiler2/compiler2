@@ -112,7 +112,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
 
 from compiler_gym.util.registration import register
 from utils import HPCTOOLKIT_PY_SERVICE_BINARY
-from hpctoolkit_service.agent_py.rewards import perf_reward
+from hpctoolkit_service.agent_py.rewards import perf_reward, runtime_reward
 from compiler_gym.envs.llvm.datasets import (
     AnghaBenchDataset,
     BlasDataset,
@@ -136,7 +136,10 @@ register(
     entry_point=HPCToolkitCompilerEnv,
     kwargs={
         "service": HPCTOOLKIT_PY_SERVICE_BINARY,
-        "rewards": [perf_reward.Reward()],
+        "rewards": [
+            perf_reward.Reward(),
+            runtime_reward.Reward()
+        ],
         "datasets": [
             CBenchDataset(site_data_path("llvm-v0")),
             CsmithDataset(site_data_path("llvm-v0")),

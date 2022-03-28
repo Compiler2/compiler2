@@ -22,8 +22,8 @@ def make_env() -> compiler_gym.envs.CompilerEnv:
     # )
     env = hpctoolkit_service.make(
         "perf-v0",
-        observation_space="perf",
-        reward_space="perf"
+        observation_space="runtime",
+        reward_space="runtime"
     )
     # Here we constrain the action space of the environment to use only a
     # handful of command line flags from the full set. We do this to speed up
@@ -66,16 +66,16 @@ with make_env() as env:
 
 with make_env() as env:
     # The two datasets we will be using:
-    csmith = env.datasets["generator://csmith-v0/"]
+    cbench = env.datasets["hpctoolkit-cpu-v0"]
     chstone = env.datasets["chstone-v0"]
 
     # Each dataset has a `benchmarks()` method that returns an iterator over the
     # benchmarks within the dataset. Here we will use iterator sliceing to grab a
     # handful of benchmarks for training and validation.
-    train_benchmarks = list(islice(csmith.benchmarks(), 55))
-    train_benchmarks, val_benchmarks = train_benchmarks[:50], train_benchmarks[50:]
+    train_benchmarks = list(islice(cbench.benchmarks(), 4))
+    train_benchmarks, val_benchmarks = train_benchmarks[:2], train_benchmarks[2:]
     # We will use the entire chstone-v0 dataset for testing.
-    test_benchmarks = list(chstone.benchmarks())
+    test_benchmarks = list(islice(cbench.benchmarks(), 2))
 
 print("Number of benchmarks for training:", len(train_benchmarks))
 print("Number of benchmarks for validation:", len(val_benchmarks))
@@ -114,7 +114,7 @@ analysis = tune.run(
     PPOTrainer,
     checkpoint_at_end=True,
     stop={
-        "episodes_total": 500,
+        "episodes_total": 5,
     },
     config={
         "seed": 0xCC,
