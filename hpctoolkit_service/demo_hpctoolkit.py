@@ -58,7 +58,8 @@ def main():
         for bench in env.datasets["benchmark://hpctoolkit-cpu-v0"]:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", bench)
             try:                
-                env.reset(benchmark=bench)                
+                env.reset(benchmark=bench)   
+                env.send_param("timeout_sec", "1")             
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
                 continue

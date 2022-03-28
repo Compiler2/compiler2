@@ -40,7 +40,7 @@ import signal
 import sys
 
 import gym
-
+import action_spaces
 
 class HPCToolkitCompilationSession(CompilationSession):
     """Represents an instance of an interactive compilation session."""
@@ -58,6 +58,22 @@ class HPCToolkitCompilationSession(CompilationSession):
                     name=llvm_env.action_space.flags,
                     # Interpret NamedDiscrete as CommandLine.
                     # is_commandline=True
+                )
+            )
+        ),
+        ActionSpace(
+            name="llvm-rlagent",
+            space=Space(
+                named_discrete=NamedDiscreteSpace(                    
+                    name=action_spaces.llvm_rlagent,
+                )
+            )
+        ),
+        ActionSpace(
+            name="llvm-autophase",
+            space=Space(
+                named_discrete=NamedDiscreteSpace(
+                    name=action_spaces.llvm_autophase,
                 )
             )
         ),
