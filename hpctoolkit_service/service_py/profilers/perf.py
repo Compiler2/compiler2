@@ -7,7 +7,7 @@ import utils
 
 from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
-from utils import run_command
+from hpctoolkit_service.service_py.utils import run_command, print_list
 
 class Profiler:
     def __init__(self, name, run_cmd, timeout_sec, src_path=None):
@@ -60,7 +60,7 @@ class Profiler:
         )
 
         # print("\nPerf get_observations: ")
-        # utils.print_list(perf_cmd)
+        # print_list(perf_cmd)
 
         stdout = run_command(
             perf_cmd,

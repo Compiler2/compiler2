@@ -6,17 +6,14 @@ import subprocess
 from pathlib import Path
 import pdb
 import sys
-import utils
+import hpctoolkit_service.utils
 
 from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
 
-# BENCHMARKS_PATH: Path = runfiles_path("examples/hpctoolkit_service/benchmarks")
-BENCHMARKS_PATH: Path = Path(
-    utils.hpctoolkit_service_path / "benchmarks/cpu-benchmarks"
-)
+BENCHMARKS_PATH = hpctoolkit_service.utils.user_data_path("cpu-benchmarks")
 
 
 class Dataset(Dataset):
@@ -79,7 +76,7 @@ class Dataset(Dataset):
             "-o",
             "-",
             "-I",
-            str(utils.HPCTOOLKIT_HEADER.parent),
+            str(hpctoolkit_service.utils.user_data_path("utils")),
             src,
         ]
         for directory in get_system_library_flags():

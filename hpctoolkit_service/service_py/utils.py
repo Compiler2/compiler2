@@ -12,7 +12,6 @@ from typing import List
 
 
 def run_command(cmd: List[str], timeout: int):
-        
     if '<' in cmd:
         pos_less = cmd.index('<')
         assert pos_less + 1 < len(cmd)
