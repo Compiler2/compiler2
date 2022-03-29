@@ -5,11 +5,11 @@
 load("@rules_python//python:defs.bzl", "py_library", "py_test")
 
 py_library(
-    name = "hpctoolkit_service",
+    name = "compiler2_service",
     srcs = ["__init__.py"],
     data = [
-        "//examples/hpctoolkit_service/benchmarks/cpu-benchmarks",
-        "//examples/hpctoolkit_service/service_py:hpctoolkit-service-py",
+        "//examples/compiler2_service/benchmarks/cpu-benchmarks",
+        "//examples/compiler2_service/service_py:hpctoolkit-service-py",
     ],
     visibility = ["//visibility:public"],
     deps = [
@@ -22,7 +22,7 @@ py_test(
     name = "env_tests",
     srcs = ["env_tests.py"],
     deps = [
-        ":hpctoolkit_service",
+        ":compiler2_service",
         "//compiler_gym",
         "//tests:test_main",
     ],
@@ -32,7 +32,7 @@ py_binary(
     name = "example",
     srcs = ["example.py"],
     deps = [
-        ":hpctoolkit_service",
+        ":compiler2_service",
         "//compiler_gym",
     ],
 )

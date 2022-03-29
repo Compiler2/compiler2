@@ -5,7 +5,7 @@
 """This script demonstrates how the example services defined in this directory
 can be used as gym environments. Usage:
 
-    $ bazel run -c opt //examples/hpctoolkit_service:demo
+    $ bazel run -c opt //examples/compiler2_service:demo
 """
 import logging
 
@@ -13,7 +13,7 @@ import gym
 
 # To use the example services we simply need to import the module which
 # registers the environments.
-import examples.hpctoolkit_service  # noqa Register environments
+import examples.compiler2_service  # noqa Register environments
 
 
 def main():

@@ -1,7 +1,7 @@
 import numpy as np
 import pdb
 from typing import Dict, List, Optional, Tuple
-from hpctoolkit_service.service_py.utils import run_command_stdout_redirect
+from compiler2_service.service_py.utils import run_command_stdout_redirect
 
 from compiler_gym.service.proto import (
     Event,

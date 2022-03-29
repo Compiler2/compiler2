@@ -5,7 +5,7 @@
 """This script demonstrates how the Python example service without needing
 to use the bazel build system. Usage:
 
-    $ python hpctoolkit_service/demo_without_bazel.py
+    $ python compiler2_service/demo_without_bazel.py
 
 It is equivalent in behavior to the demo.py script in this directory.
 """
@@ -18,7 +18,6 @@ from pathlib import Path
 from typing import Iterable
 
 import gym
-import hatchet as ht
 
 from compiler_gym.datasets import Benchmark, Dataset, BenchmarkUri
 from compiler_gym.spaces import Reward
@@ -27,10 +26,9 @@ from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
-import hpctoolkit_service.utils
+import compiler2_service.paths
 
-
-from agent_py.rewards import runtime_reward
+from agent_py.rewards import programl_reward
 from agent_py.datasets import hpctoolkit_dataset
 
 
@@ -39,8 +37,8 @@ def register_env():
         id="hpctoolkit-llvm-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
-            "service": hpctoolkit_service.utils.HPCTOOLKIT_PY_SERVICE_BINARY,
-            "rewards": [ runtime_reward.Reward()],
+            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
+            "rewards": [ programl_reward.Reward()],
             "datasets": [hpctoolkit_dataset.Dataset()],
         },
     )
@@ -59,23 +57,24 @@ def main():
             # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
         except ServiceError:
             print("AGENT: Timeout Error Reset")
-                
+
         for i in range(2):
             print("Main: step = ", i)
             try:
                 observation, reward, done, info = env.step(
                     action=env.action_space.sample(),
-                    observations=["runtime"],
-                    rewards=["runtime"],
+                    observations=["programl"],
+                    rewards=["programl"],
                 )
             except ServiceError:
                 print("AGENT: Timeout Error Step")
-                continue
-
+                continue      
+                  
             print(reward)
-            print(observation)
             print(info)
-        
+            g = pickle.loads(observation[0])
+            print(g.nodes())
+            
 
             pdb.set_trace()
             if done:

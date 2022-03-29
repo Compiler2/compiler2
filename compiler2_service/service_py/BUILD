@@ -8,7 +8,7 @@ py_binary(
     name = "hpctoolkit-service-py",
     srcs = ["example_service.py"],
     # data = [
-    #     "//examples/hpctoolkit_service/loop_unroller",
+    #     "//examples/compiler2_service/loop_unroller",
     # ],
     main = "example_service.py",
     visibility = ["//visibility:public"],

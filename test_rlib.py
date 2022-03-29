@@ -7,7 +7,7 @@ from compiler_gym.wrappers import ConstrainedCommandline, TimeLimit
 from ray import tune
 from itertools import islice
 from compiler_gym.wrappers import CycleOverBenchmarks
-import hpctoolkit_service
+import compiler2_service
 
 def make_env() -> compiler_gym.envs.CompilerEnv:
     """Make the reinforcement learning environment for this experiment."""
@@ -20,7 +20,7 @@ def make_env() -> compiler_gym.envs.CompilerEnv:
     #     observation_space="Autophase",
     #     reward_space="IrInstructionCountOz",
     # )
-    env = hpctoolkit_service.make(
+    env = compiler2_service.make(
         "perf-v0",
         observation_space="runtime",
         reward_space="runtime"

@@ -14,7 +14,7 @@ from signal import Signals
 from typing import List, Optional, Tuple
 from xmlrpc.client import Boolean
 
-import hpctoolkit_service.utils
+import compiler2_service.paths
 import pickle
 
 import compiler_gym.third_party.llvm as llvm
@@ -25,7 +25,7 @@ from compiler_gym.service.proto import (
 )
 
 # from compiler_gym.util.commands import Popen, run_command
-from hpctoolkit_service.service_py.utils import run_command, proto_buff_container_to_list, print_list, run_command_stdout_redirect
+from compiler2_service.service_py.utils import run_command, proto_buff_container_to_list, print_list, run_command_stdout_redirect
 
 ## Build benchmarks
 class BenchmarkBuilder:

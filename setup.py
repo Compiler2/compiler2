@@ -6,8 +6,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import distutils.util
-
 import setuptools
+import os
 
 version = "0.2.3"
 
@@ -23,15 +23,15 @@ setuptools.setup(
     license="MIT",
     install_requires=requirements,
     packages=[
-        "hpctoolkit_service",
-        "hpctoolkit_service.service_py",
-        "hpctoolkit_service.agent_py",
-        "hpctoolkit_service.agent_py.datasets",
-        "hpctoolkit_service.agent_py.rewards",
-        "hpctoolkit_service.benchmarks",
-        "hpctoolkit_service.benchmarks.cpu-benchmarks",
-        "hpctoolkit_service.benchmarks.poj104",
-        "hpctoolkit_service.benchmarks.poj104_small",
+        "compiler2_service",
+        "compiler2_service.service_py",
+        "compiler2_service.agent_py",
+        "compiler2_service.agent_py.datasets",
+        "compiler2_service.agent_py.rewards",
+        "compiler2_service.benchmarks",
+        "compiler2_service.benchmarks.cpu-benchmarks",
+        "compiler2_service.benchmarks.poj104",
+        "compiler2_service.benchmarks.poj104_small",
         "llvm_autotuning",
         "llvm_autotuning.autotuners",
         # "llvm_rl",
@@ -45,3 +45,10 @@ setuptools.setup(
 # vi3: Install by using this command.
 # python -m pip install .
 # According to this: https://stackoverflow.com/questions/66125129/unknownextra-error-when-installing-via-setup-py-but-not-via-pip
+
+
+###############################################################
+# Set up root directory
+###############################################################
+print("\nSet root directory: \n\nexport COMPILER2_ROOT=%s"%os.getcwd())
+print("\n")

@@ -8,7 +8,7 @@ AUTOTUNER=nevergrad
 TARGET=perf
 
 
-export PYTHONPATH=$PWD/hpctoolkit_service:$PYTHONPATH;\
+export PYTHONPATH=$PWD/compiler2_service:$PYTHONPATH;\
 python -m llvm_autotuning.tune -m \
     outputs=$OUTPUT \
     experiment="$AUTOTUNER-${TARGET}" \
