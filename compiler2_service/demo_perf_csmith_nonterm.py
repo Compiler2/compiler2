@@ -5,7 +5,7 @@
 """This script demonstrates how the Python example service without needing
 to use the bazel build system. Usage:
 
-    $ python hpctoolkit_service/demo_without_bazel.py
+    $ python compiler2_service/demo_without_bazel.py
 
 It is equivalent in behavior to the demo.py script in this directory.
 """
@@ -40,7 +40,7 @@ from compiler_gym.third_party import llvm
 from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
-import hpctoolkit_service.utils
+import compiler2_service.paths
 
 
 from agent_py.rewards import perf_reward
@@ -51,7 +51,7 @@ def register_env():
         id="perf-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
-            "service": hpctoolkit_service.utils.HPCTOOLKIT_PY_SERVICE_BINARY,
+            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.Reward()],
             "datasets": [CsmithDataset(site_data_path("llvm-v0"), sort_order=0)],
         },

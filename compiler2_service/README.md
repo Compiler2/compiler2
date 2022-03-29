@@ -36,13 +36,13 @@ environments.
 Run the demo script using:
 
 ```sh
-$ bazel run -c opt //examples/hpctoolkit_service:demo
+$ bazel run -c opt //examples/compiler2_service:demo
 ```
 
 Run the unit tests using:
 
 ```sh
-$ bazel test //examples/hpctoolkit_service/...
+$ bazel test //examples/compiler2_service/...
 ```
 
 ### Using the python service without bazel
@@ -53,5 +53,5 @@ CompilerGym repository, run:
 
 ```sh
 $ cd examples
-$ python3 hpctoolkit_service/demo_without_bazel.py
+$ python3 compiler2_service/demo_without_bazel.py
 ```

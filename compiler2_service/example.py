@@ -2,8 +2,8 @@ import compiler_gym
 import examples.example_unrolling_service as unrolling_service  # noqa Register environments.
 
 env = compiler_gym.make(
-    "hpctoolkit_service-py-v0",
-    benchmark="hpctoolkit_service-v0/vecSet1",
+    "compiler2_service-py-v0",
+    benchmark="compiler2_service-v0/vecSet1",
     observation_space="features",
     reward_space="runtime",
 )

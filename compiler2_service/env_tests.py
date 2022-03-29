@@ -13,7 +13,7 @@ import numpy as np
 import pytest
 from flaky import flaky
 
-import examples.hpctoolkit_service as example
+import examples.compiler2_service as example
 from compiler_gym.envs import CompilerEnv
 from compiler_gym.service import SessionNotFound
 from compiler_gym.spaces import Box, NamedDiscrete, Scalar, Sequence

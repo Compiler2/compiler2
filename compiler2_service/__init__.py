@@ -3,27 +3,13 @@ from pathlib import Path
 
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 
-# HPCTOOLKIT_PY_SERVICE_BINARY: Path = runfiles_path(
-#     "examples/hpctoolkit_service/service_py/compiler_gym-example-service-py"
-# )
-
-# BENCHMARKS_PATH: Path = runfiles_path(
-#     "examples/hpctoolkit_service/benchmarks/cpu-benchmarks"
-# )
-
-# HPCTOOLKIT_HEADER: Path = runfiles_path(
-#     "/home/dx4/tools/CompilerGym/compiler_gym/third_party/hpctoolkit/header.h"
-# )
-import pdb
-# pdb.set_trace()
 
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline, CommandlineFlag
+from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
 from typing import cast, List, Union, Optional
 import os
 import shutil
-from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
-
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
     # Copied from CompilerGym and adapted.
@@ -113,8 +99,8 @@ class HPCToolkitCompilerEnv(CompilerEnv):
 
 
 from compiler_gym.util.registration import register
-from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
-from hpctoolkit_service.agent_py.rewards import perf_reward, runtime_reward
+from compiler2_service.paths import COMPILER2_SERVICE_PY
+from compiler2_service.agent_py.rewards import perf_reward, runtime_reward
 from compiler_gym.envs.llvm.datasets import (
     AnghaBenchDataset,
     BlasDataset,
@@ -126,8 +112,8 @@ from compiler_gym.envs.llvm.datasets import (
     NPBDataset,
 )
 
-from hpctoolkit_service.agent_py.datasets import hpctoolkit_dataset
-from hpctoolkit_service.agent_py.datasets import poj104_dataset
+from compiler2_service.agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import poj104_dataset
 
 from compiler_gym.util.runfiles_path import site_data_path
 
@@ -137,7 +123,7 @@ register(
     # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
     entry_point=HPCToolkitCompilerEnv,
     kwargs={
-        "service": HPCTOOLKIT_PY_SERVICE_BINARY,
+        "service": COMPILER2_SERVICE_PY,
         "rewards": [
             perf_reward.Reward(),
             runtime_reward.Reward()
@@ -147,7 +133,7 @@ register(
             CsmithDataset(site_data_path("llvm-v0")),
             CHStoneDataset(site_data_path("llvm-v0")),
             hpctoolkit_dataset.Dataset(),
-            # poj104_dataset.Dataset(),
+            poj104_dataset.Dataset(),
         ],
     },
 )

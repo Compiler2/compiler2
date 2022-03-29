@@ -27,7 +27,7 @@ def test_run_brute_force_smoke_test():
 
 
 import sys
-sys.path.insert(1, '/home/dx4/tools/CompilerGym/examples/hpctoolkit_service/tests')
+sys.path.insert(1, '/home/dx4/tools/CompilerGym/examples/compiler2_service/tests')
 
 import demo_perf_csmith as perf
 

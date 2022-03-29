@@ -6,22 +6,23 @@ import subprocess
 from pathlib import Path
 import pdb
 import sys
-import hpctoolkit_service.utils
+import os
+import compiler2_service.paths
 
 from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
 
-BENCHMARKS_PATH = hpctoolkit_service.utils.user_data_path("cpu-benchmarks")
-
+BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
+INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104/input"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):
         super().__init__(
-            name="benchmark://hpctoolkit-cpu-v0",
+            name="benchmark://poj104-v0",
             license="MIT",
-            description="HPCToolkit cpu dataset",
+            description="POJ104 - dataset of 50k student code on 104 problems",
             site_data_base=site_data_path("example_dataset"),
         )
 
@@ -35,34 +36,26 @@ class Dataset(Dataset):
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
-                        argument=["./a.out"],
+                        argument=["./a.out", "<", str(INPUT_PATH / "in.txt")],
                         timeout_seconds=300,
                         infile=["a.out"],
                     )
                 )
 
-        self._benchmarks = {
-            "benchmark://hpctoolkit-cpu-v0/conv2d": benchmark_from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/conv2d",
-                self.preprocess(BENCHMARKS_PATH /"conv2d.c"),
-                benchmark_config
-            ),
-            "benchmark://hpctoolkit-cpu-v0/offsets1": benchmark_from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/offsets1",
-                self.preprocess(BENCHMARKS_PATH / "offsets1.c"),
-                benchmark_config
-            ),
-            "benchmark://hpctoolkit-cpu-v0/nanosleep": benchmark_from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/nanosleep",
-                self.preprocess(BENCHMARKS_PATH / "nanosleep.c"),
-                benchmark_config
-            ),
-            "benchmark://hpctoolkit-cpu-v0/simple_pow": benchmark_from_file_contents(
-                "benchmark://hpctoolkit-cpu-v0/simple_pow",
-                self.preprocess(BENCHMARKS_PATH / "simple_pow.c"),
-                benchmark_config
-            ),
-        }
+        self._benchmarks = {}
+        benchmark_prefix = "benchmark://poj104-v0"
+
+        for i in os.listdir(BENCHMARKS_PATH):
+            benchmark_path = BENCHMARKS_PATH/str(i)
+            example_files = os.listdir(benchmark_path)
+            for example_filename in example_files:
+                example_uri = benchmark_prefix + '/' + str(i) + '/' + example_filename.rstrip('.c')
+                self._benchmarks[example_uri] = \
+                    benchmark_from_file_contents(
+                        example_uri,
+                        self.preprocess(benchmark_path / example_filename),
+                        benchmark_config
+                    )            
 
     @staticmethod
     def preprocess(src: Path) -> bytes:
@@ -76,7 +69,7 @@ class Dataset(Dataset):
             "-o",
             "-",
             "-I",
-            str(hpctoolkit_service.utils.user_data_path("utils")),
+            str(compiler2_service.paths.BENCHMARKS_PATH/"utils"),
             src,
         ]
         for directory in get_system_library_flags():
