@@ -15,7 +15,7 @@ with open("requirements.txt") as f:
     requirements = [ln.split("#")[0].rstrip() for ln in f.readlines()]
 
 setuptools.setup(
-    name="compiler_gym_examples",
+    name="compiler_gym_compiler2",
     version=version,
     description="Example code for CompilerGym",
     author="Facebook AI Research",
