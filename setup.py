@@ -9,7 +9,7 @@ import distutils.util
 
 import setuptools
 
-version = "0.2.2"
+version = "0.2.3"
 
 with open("requirements.txt") as f:
     requirements = [ln.split("#")[0].rstrip() for ln in f.readlines()]
@@ -24,6 +24,14 @@ setuptools.setup(
     install_requires=requirements,
     packages=[
         "hpctoolkit_service",
+        "hpctoolkit_service.service_py",
+        "hpctoolkit_service.agent_py",
+        "hpctoolkit_service.agent_py.datasets",
+        "hpctoolkit_service.agent_py.rewards",
+        "hpctoolkit_service.benchmarks",
+        "hpctoolkit_service.benchmarks.cpu-benchmarks",
+        "hpctoolkit_service.benchmarks.poj104",
+        "hpctoolkit_service.benchmarks.poj104_small",
         "llvm_autotuning",
         "llvm_autotuning.autotuners",
         # "llvm_rl",

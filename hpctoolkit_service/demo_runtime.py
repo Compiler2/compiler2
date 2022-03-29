@@ -27,7 +27,7 @@ from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
-import utils
+import hpctoolkit_service.utils
 
 
 from agent_py.rewards import runtime_reward
@@ -39,7 +39,7 @@ def register_env():
         id="hpctoolkit-llvm-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
-            "service": utils.HPCTOOLKIT_PY_SERVICE_BINARY,
+            "service": hpctoolkit_service.utils.HPCTOOLKIT_PY_SERVICE_BINARY,
             "rewards": [ runtime_reward.Reward()],
             "datasets": [hpctoolkit_dataset.Dataset()],
         },

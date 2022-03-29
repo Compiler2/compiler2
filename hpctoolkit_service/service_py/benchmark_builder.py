@@ -14,7 +14,7 @@ from signal import Signals
 from typing import List, Optional, Tuple
 from xmlrpc.client import Boolean
 
-import utils
+import hpctoolkit_service.utils
 import pickle
 
 import compiler_gym.third_party.llvm as llvm
@@ -25,13 +25,11 @@ from compiler_gym.service.proto import (
 )
 
 # from compiler_gym.util.commands import Popen, run_command
-from utils import run_command
-
+from hpctoolkit_service.service_py.utils import run_command, proto_buff_container_to_list, print_list, run_command_stdout_redirect
 
 ## Build benchmarks
 class BenchmarkBuilder:
     def __init__(self, working_directory: Path, benchmark: Benchmark, timeout_sec: float):
-        # pdb.set_trace()
         # print('\nBenchmark: ', benchmark.uri)
         self.timeout_sec = timeout_sec
         self.clang = str(llvm.clang_path())
@@ -75,13 +73,12 @@ class BenchmarkBuilder:
         self.print_header_ll()
         self.set_build_run_cmd(benchmark)
         print("\n compile: ")
-        utils.print_list(list(self.compile_ll.values()))
+        print_list(list(self.compile_ll.values()))
         print("\n pre_run_cmd: ")
-        utils.print_list(self.pre_run_cmd)
+        print_list(self.pre_run_cmd)
         print("\n run_cmd: ")
-        utils.print_list(self.run_cmd)
+        print_list(self.run_cmd)
 
-        # pdb.set_trace()
         self.execute_pre_run_cmd()
         self.apply_action(opt="-O0", save_state=True)
         self.check_if_terminate()
@@ -153,7 +150,7 @@ class BenchmarkBuilder:
             with open(file_path, "w") as f:
                 # Remove the stdout redirection from the cmd.
                 cmd = cmd[:-1]
-                utils.run_command_stdout_redirect(cmd, timeout=timeout_sec, output_file=f)
+                run_command_stdout_redirect(cmd, timeout=timeout_sec, output_file=f)
         else:
             # Execute the command with no redirection
             run_command(cmd, timeout=timeout_sec)
@@ -213,7 +210,7 @@ class BenchmarkBuilder:
         Only argument list with the following form: ["$CC", "$IN", "-lm"] is processed.
         """
         # pdb.set_trace()
-        compile_cmd = utils.proto_buff_container_to_list(build_cmd.argument)
+        compile_cmd = proto_buff_container_to_list(build_cmd.argument)
         if compile_cmd:
             # Just for the debugging purposes.
             assert compile_cmd[0] == "$CC"
@@ -239,7 +236,7 @@ class BenchmarkBuilder:
         Only argument is considered for now.
         """
         for cmd in pre_run_cmd:
-            pre_run_cmd_list = utils.proto_buff_container_to_list(cmd.argument)
+            pre_run_cmd_list = proto_buff_container_to_list(cmd.argument)
             if pre_run_cmd_list:
                 # append pre_run_cmd list to the pre_run_cmd
                 self.pre_run_cmd.append(pre_run_cmd_list)
@@ -257,7 +254,7 @@ class BenchmarkBuilder:
         }
         Only argument is considered for now.
         """
-        run_cmd = utils.proto_buff_container_to_list(run_cmd.argument)
+        run_cmd = proto_buff_container_to_list(run_cmd.argument)
         if run_cmd:
             # Just for the debugging purposes.
             assert run_cmd[0] == "./a.out"

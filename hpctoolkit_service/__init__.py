@@ -3,17 +3,19 @@ from pathlib import Path
 
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 
-HPCTOOLKIT_PY_SERVICE_BINARY: Path = runfiles_path(
-    "examples/hpctoolkit_service/service_py/compiler_gym-example-service-py"
-)
+# HPCTOOLKIT_PY_SERVICE_BINARY: Path = runfiles_path(
+#     "examples/hpctoolkit_service/service_py/compiler_gym-example-service-py"
+# )
 
-BENCHMARKS_PATH: Path = runfiles_path(
-    "examples/hpctoolkit_service/benchmarks/cpu-benchmarks"
-)
+# BENCHMARKS_PATH: Path = runfiles_path(
+#     "examples/hpctoolkit_service/benchmarks/cpu-benchmarks"
+# )
 
-HPCTOOLKIT_HEADER: Path = runfiles_path(
-    "/home/dx4/tools/CompilerGym/compiler_gym/third_party/hpctoolkit/header.h"
-)
+# HPCTOOLKIT_HEADER: Path = runfiles_path(
+#     "/home/dx4/tools/CompilerGym/compiler_gym/third_party/hpctoolkit/header.h"
+# )
+import pdb
+# pdb.set_trace()
 
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline, CommandlineFlag
@@ -111,7 +113,7 @@ class HPCToolkitCompilerEnv(CompilerEnv):
 
 
 from compiler_gym.util.registration import register
-from utils import HPCTOOLKIT_PY_SERVICE_BINARY
+from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
 from hpctoolkit_service.agent_py.rewards import perf_reward, runtime_reward
 from compiler_gym.envs.llvm.datasets import (
     AnghaBenchDataset,
@@ -145,7 +147,7 @@ register(
             CsmithDataset(site_data_path("llvm-v0")),
             CHStoneDataset(site_data_path("llvm-v0")),
             hpctoolkit_dataset.Dataset(),
-            poj104_dataset.Dataset(),
+            # poj104_dataset.Dataset(),
         ],
     },
 )
