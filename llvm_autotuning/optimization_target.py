@@ -39,8 +39,8 @@ class OptimizationTarget(str, Enum):
 
     def make_env(self, benchmark: Union[str, Benchmark]) -> LlvmEnv:
         # env: LlvmEnv = compiler_gym.make("llvm-v0")
-        import hpctoolkit_service
-        env = hpctoolkit_service.make("perf-v0")
+        import compiler2_service
+        env = compiler2_service.make("perf-v0")
 
         # TODO(cummins): This does not work with custom benchmarks, as the URI
         # will not be known to the new environment.
