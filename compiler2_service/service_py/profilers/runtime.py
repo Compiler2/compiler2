@@ -1,7 +1,7 @@
 import numpy as np
 import pdb
-from typing import Dict, List, Optional, Tuple
-from compiler2_service.service_py.utils import run_command_stdout_redirect
+from compiler2_service.service_py.utils import run_command_get_stderr
+import re
 
 from compiler_gym.service.proto import (
     Event,
@@ -28,28 +28,24 @@ class Profiler:
         # Running 5 times and taking the average of middle 3
         exec_times = []
         
-        with open('/dev/null', 'w') as f:
+        with open('tmp', 'w') as f:
 
             for _ in range(5):
-                # stdout = benchmark_builder.run_command_stdout_redirect(
-                #     ['time'] + self.benchmark.run_cmd,
-                #     timeout=self.timeout_sec,
-                #     output_file=f
-                # )
-                # print(stdout)
-                exec_time = 1 # TODO: Figure out how to parse time to int and to direct output to /dev/null
-
+                stderr = run_command_get_stderr(
+                    ['time', '-p'] + self.run_cmd,
+                    timeout=self.timeout_sec,
+                )
+                print(stderr)
                 try:
-                    exec_times.append(exec_time)
+                    realtime_str = re.findall('real [\d|.]+', stderr)[0].lstrip('real ')
+                    exec_times.append(float(realtime_str))
                 except ValueError:
                     raise ValueError(
-                        f"Error in parsing execution time from output of command\n"
-                        f"Please ensure that the source code of the benchmark measures execution time and prints to stdout\n"
-                        f"Stdout of the program: {stdout}"
+                        f"Error in getting time from stderr of command\n"                        
+                        f"Stderr of the program: {stderr}"
                     )
 
-        exec_times = np.sort(exec_times)
-        avg_exec_time = np.mean(exec_times[1:4])
+        avg_exec_time = np.mean(exec_times)
         return DoubleTensor(shape=[1], value=[avg_exec_time])
         # return DoubleBox(
         #     low=DoubleTensor(value=[1], shape=[1]),
