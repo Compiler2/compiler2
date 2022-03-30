@@ -73,7 +73,30 @@ def run_command_stdout_redirect(cmd: List[str], timeout: int, output_file):
                 f"Command: {' '.join(cmd)}\n"
                 f"Stderr: {stderr.strip()}"
             )
+    return stderr
 
+def run_command_get_stderr(cmd: List[str], timeout: int):
+    with Popen(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        universal_newlines=True,
+    ) as process:
+        stdout, stderr = process.communicate(timeout=timeout)
+        if process.returncode:
+            returncode = process.returncode
+            try:
+                # Try and decode the name of a signal. Signal returncodes
+                # are negative.
+                returncode = f"{returncode} ({Signals(abs(returncode)).name})"
+            except ValueError:
+                pass
+            raise OSError(
+                f"Compilation job failed with returncode {returncode}\n"
+                f"Command: {' '.join(cmd)}\n"
+                f"Stderr: {stderr.strip()}"
+            )
+    return stderr
 
 def proto_buff_container_to_list(container):
     # Copy proto buff container to python list.
