@@ -143,7 +143,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         os.chdir(str(working_directory))
         print("\n", str(working_directory), "\n")
-        pdb.set_trace()
+        # pdb.set_trace()
 
         self.save_state = False
         self.timeout_sec = 5.0
