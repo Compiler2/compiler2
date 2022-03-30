@@ -9,6 +9,7 @@ from itertools import islice
 from compiler_gym.wrappers import CycleOverBenchmarks
 import hpctoolkit_service
 
+
 def make_env() -> compiler_gym.envs.CompilerEnv:
     """Make the reinforcement learning environment for this experiment."""
     # We will use LLVM as our base environment. Here we specify the observation
@@ -57,6 +58,38 @@ def make_env() -> compiler_gym.envs.CompilerEnv:
     return env
 
 
+def find_runnable_cbench_benchmarks(env):
+    """
+    Generator of runnable cbench benchmarks.
+    """
+    runnable = {"benchmark://cbench-v1/bitcount",
+                "benchmark://cbench-v1/blowfish",
+                "benchmark://cbench-v1/bzip2",
+                "benchmark://cbench-v1/crc32",
+                "benchmark://cbench-v1/dijkstra",
+                # "benchmark://cbench-v1/ghostscript",
+                "benchmark://cbench-v1/gsm",
+                # "benchmark://cbench-v1/ispell",
+                "benchmark://cbench-v1/jpeg-c",
+                "benchmark://cbench-v1/jpeg-d",
+                # "benchmark://cbench-v1/lame",
+                "benchmark://cbench-v1/patricia",
+                "benchmark://cbench-v1/qsort",
+                # "benchmark://cbench-v1/rijndael",
+                "benchmark://cbench-v1/sha",
+                "benchmark://cbench-v1/stringsearch",
+                "benchmark://cbench-v1/stringsearch2",
+                "benchmark://cbench-v1/susan",
+                "benchmark://cbench-v1/tiff2bw",
+                "benchmark://cbench-v1/tiff2rgba",
+                "benchmark://cbench-v1/tiffdither",
+                "benchmark://cbench-v1/tiffmedian"}
+    cbench = env.datasets["cbench-v1"].benchmarks()
+    for b in cbench:
+        if str(b.uri) in runnable:
+            yield b
+
+
 # Let's create an environment and print a few attributes just to check that we
 # have everything set up the way that we would like.
 with make_env() as env:
@@ -66,30 +99,38 @@ with make_env() as env:
 
 with make_env() as env:
     # The two datasets we will be using:
-    cbench = env.datasets["hpctoolkit-cpu-v0"]
+    # cbench = env.datasets["cbench-v1"]
+    cbench = find_runnable_cbench_benchmarks(env)
     chstone = env.datasets["chstone-v0"]
 
     # Each dataset has a `benchmarks()` method that returns an iterator over the
     # benchmarks within the dataset. Here we will use iterator sliceing to grab a
     # handful of benchmarks for training and validation.
-    train_benchmarks = list(islice(cbench.benchmarks(), 4))
+    # train_benchmarks = list(islice(cbench.benchmarks(), 1, 4))
+    train_benchmarks = list(islice(cbench, 4))
     train_benchmarks, val_benchmarks = train_benchmarks[:2], train_benchmarks[2:]
     # We will use the entire chstone-v0 dataset for testing.
-    test_benchmarks = list(islice(cbench.benchmarks(), 2))
+    test_benchmarks = list(islice(chstone.benchmarks(), 2))
 
 print("Number of benchmarks for training:", len(train_benchmarks))
 print("Number of benchmarks for validation:", len(val_benchmarks))
 print("Number of benchmarks for testing:", len(test_benchmarks))
+
 
 def make_training_env(*args) -> compiler_gym.envs.CompilerEnv:
     """Make a reinforcement learning environment that cycles over the
     set of training benchmarks in use.
     """
     del args  # Unused env_config argument passed by ray
-    return CycleOverBenchmarks(make_env(), train_benchmarks)
+    env = make_env()
+    # For some reason, sending train_benchmark defined as global variable causes
+    # a problem with _thread.lock. Instead instantiate train_benchmarks here.
+    train_benchmarks = list(islice(find_runnable_cbench_benchmarks(env), 4))
+    train_benchmarks = train_benchmarks[:2]
+    # hpct = env.datasets["hpctoolkit-cpu-v0"]
+    # train_benchmarks = list(islice(hpct.benchmarks(), 2))
+    return CycleOverBenchmarks(env, train_benchmarks)
 
-
-# tune.register_env("compiler_gym", make_training_env)
 
 # Lets cycle through a few calls to reset() to demonstrate that this environment
 # selects a new benchmark for each episode.
@@ -106,6 +147,7 @@ if ray.is_initialized():
     ray.shutdown()
 ray.init(include_dashboard=False, ignore_reinit_error=True)
 
+print("hack000")
 tune.register_env("compiler_gym", make_training_env)
 
 print("hack111:")
@@ -154,6 +196,7 @@ print("hack444:")
 agent.restore(checkpoint)
 print("hack555:")
 
+
 # Lets define a helper function to make it easy to evaluate the agent's
 # performance on a set of benchmarks.
 
@@ -172,9 +215,11 @@ def run_agent_on_benchmarks(benchmarks):
     return rewards
 
 
+print("hack-validation")
 # Evaluate agent performance on the validation set.
 val_rewards = run_agent_on_benchmarks(val_benchmarks)
 
+print("hack-test")
 # Evaluate agent performance on the holdout test set.
 test_rewards = run_agent_on_benchmarks(test_benchmarks)
 
@@ -196,4 +241,3 @@ fig.set_size_inches(13, 3)
 plot_results(val_benchmarks, val_rewards, "val", ax1)
 plot_results(test_benchmarks, test_rewards, "test", ax2)
 plt.show()
-
