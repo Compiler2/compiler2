@@ -80,8 +80,8 @@ def run_random_walk(env: CompilerEnv, step_count: int) -> None:
 
 def register_perf_session():
     from compiler_gym.util.registration import register
-    from hpctoolkit_service.utils import HPCTOOLKIT_PY_SERVICE_BINARY
-    from hpctoolkit_service.agent_py.rewards import perf_reward
+    from compiler2_service.paths import COMPILER2_SERVICE_PY
+    from compiler2_service.agent_py.rewards import perf_reward
     from compiler_gym.envs.llvm.datasets import CBenchDataset
     from compiler_gym.util.runfiles_path import site_data_path
 
@@ -89,7 +89,7 @@ def register_perf_session():
         id="perf-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
-            "service": HPCTOOLKIT_PY_SERVICE_BINARY,
+            "service": COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.Reward()],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
