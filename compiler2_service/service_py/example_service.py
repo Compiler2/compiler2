@@ -34,7 +34,8 @@ from compiler_gym.service.proto import (
     StringSpace,
     DoubleSequenceSpace,
     DoubleBox,
-    DoubleTensor
+    DoubleTensor,
+    FloatRange
 )
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
@@ -72,13 +73,9 @@ class HPCToolkitCompilationSession(CompilationSession):
         ObservationSpace(
             name="runtime",
             space=Space(
-                # double_value=DoubleRange(min=0),
-                # double_sequence=DoubleSequenceSpace(
-                #     length_range=Int64Range(min=1, max=1), scalar_range=DoubleRange(min=0, max=10000)
-                # )
                 double_box=DoubleBox(
-                    low=DoubleTensor(shape=[1], value=[0.5]),
-                    high=DoubleTensor(shape=[1], value=[2.5]),
+                    low = DoubleTensor(shape = [1], value=[0]),
+                    high = DoubleTensor(shape = [1], value=[float("inf")]),
                 )
             ),
             deterministic=False,
@@ -87,6 +84,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                 double_value=0,
             ),
         ),
+
         ObservationSpace(
             name="perf",
             space=Space(
