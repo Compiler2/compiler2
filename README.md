@@ -8,6 +8,8 @@ compiler parameters for CPU optimization
 First run setup script for compiling python files into packages, and setting root directory COMPILER2_ROOT to current path.
 ```
 python setup.py install
+# Assuming that you're in the `compiler2` root directory, type the following: 
+export COMPILER2_ROOT=$PWD
 ```
 
 # PoC: Dynamic Features in Compiler Gym
