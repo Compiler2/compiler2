@@ -38,7 +38,7 @@ def register_env():
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [ programl_reward.Reward()],
+            "rewards": [ programl_reward.RewardPickle()],
             "datasets": [hpctoolkit_dataset.Dataset()],
         },
     )

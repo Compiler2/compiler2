@@ -22,8 +22,8 @@ def make_env() -> compiler_gym.envs.CompilerEnv:
     # )
     env = compiler2_service.make(
         "perf-v0",
-        observation_space="runtime",
-        reward_space="runtime"
+        observation_space="runtime_tensor",
+        reward_space="runtime_tensor"
     )
     # Here we constrain the action space of the environment to use only a
     # handful of command line flags from the full set. We do this to speed up

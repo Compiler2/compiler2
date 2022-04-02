@@ -1,0 +1,11 @@
+---
+id: perf-v0
+max_episode_steps: 5
+observation_space: runtime
+reward_space: runtime
+# wrappers:
+#     - wrapper: AutophaseActionSpace
+#     - wrapper: AutophaseNormalizedFeatures
+#     - wrapper: ClampedReward
+#       args:
+#           leakiness_factor: 0.001

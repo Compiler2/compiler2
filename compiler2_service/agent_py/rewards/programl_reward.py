@@ -3,7 +3,7 @@ import pickle
 
 
 
-class Reward(Reward):
+class RewardPickle(Reward):
     """An example reward that uses changes in the "programl" observation value
     to compute incremental reward.
     """

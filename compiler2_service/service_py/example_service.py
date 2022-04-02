@@ -70,8 +70,11 @@ class HPCToolkitCompilationSession(CompilationSession):
     # A list of observation spaces supported by this service. Each of these
     # ObservationSpace protos describes an observation space.
     observation_spaces = [
+        #####################################################################################################
+        # DoubleTensor Observation Spaces
+        #####################################################################################################        
         ObservationSpace(
-            name="runtime",
+            name="runtime_tensor",
             space=Space(
                 double_box=DoubleBox(
                     low = DoubleTensor(shape = [1], value=[0]),
@@ -84,7 +87,36 @@ class HPCToolkitCompilationSession(CompilationSession):
                 double_value=0,
             ),
         ),
+        ObservationSpace(
+            name="perf_tensor",
+            space=Space(
+                double_box=DoubleBox(
+                    low = DoubleTensor(shape = [1, 2], value=[0, 0]),
+                    high = DoubleTensor(shape = [1, 2], value=[float("inf"), float("inf")]),
+                )
+            ),
+            deterministic=False,
+            platform_dependent=True,
+            default_observation=Event(
+                double_tensor=DoubleTensor(shape = [1, 2], value=[0, 0]),
+            ),
+        ),
 
+
+        #####################################################################################################
+        # ByteSequenceSpace Observation Spaces
+        #####################################################################################################
+        ObservationSpace(
+            name="runtime",
+            space=Space(
+                double_value=DoubleRange(min=0),
+            ),
+            deterministic=False,
+            platform_dependent=True,
+            default_observation=Event(
+                double_value=0,
+            ),
+        ),       
         ObservationSpace(
             name="perf",
             space=Space(
@@ -200,10 +232,16 @@ class HPCToolkitCompilationSession(CompilationSession):
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
         logging.info("Computing observation from space %s", observation_space.name)
-
+        # pdb.set_trace()
         if self.profiler == None or observation_space.name != self.profiler.name:
+            print(observation_space.name)
             if observation_space.name == "runtime":
                 self.profiler = runtime.Profiler(observation_space.name,
+                                                 self.benchmark.run_cmd,
+                                                 self.timeout_sec)
+
+            elif observation_space.name == "runtime_tensor":
+                self.profiler = runtime.ProfilerTensor(observation_space.name,
                                                  self.benchmark.run_cmd,
                                                  self.timeout_sec)
 
@@ -211,6 +249,12 @@ class HPCToolkitCompilationSession(CompilationSession):
                 self.profiler = perf.Profiler(observation_space.name,
                                               self.benchmark.run_cmd,
                                               self.timeout_sec)
+
+            elif observation_space.name == "perf_tensor":
+                self.profiler = perf.ProfilerTensor(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec)                                              
+                                
 
             elif observation_space.name == "hpctoolkit":
                 self.profiler = hpctoolkit.Profiler(observation_space.name,

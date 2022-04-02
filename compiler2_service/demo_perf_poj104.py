@@ -16,7 +16,7 @@ import pickle
 import subprocess
 from pathlib import Path
 from typing import Iterable
-
+import numpy as np
 import gym
 
 from compiler_gym.datasets import Benchmark, BenchmarkUri, Dataset
@@ -48,7 +48,7 @@ def register_env():
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [perf_reward.Reward()],
+            "rewards": [perf_reward.RewardTensor()],
             "datasets": [
                 poj104_dataset.Dataset()            
             ],
@@ -79,8 +79,8 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observations=["perf"],
-                        rewards=["perf"],
+                        observations=["perf_tensor"],
+                        rewards=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
@@ -89,9 +89,14 @@ def main():
                 print(reward)
                 # print(observation)
                 print(info)
-                perf_dict = pickle.loads(observation[0])
-                print(perf_dict)
 
+                if type(observation[0]) == np.ndarray:
+                    print(observation[0])
+                else:
+                    perf_dict = pickle.loads(observation[0])
+                    print(perf_dict)                    
+                
+                
                 pdb.set_trace()
                 if done:
                     env.reset()
