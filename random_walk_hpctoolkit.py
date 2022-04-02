@@ -90,7 +90,7 @@ def register_perf_session():
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
             "service": COMPILER2_SERVICE_PY,
-            "rewards": [perf_reward.Reward()],
+            "rewards": [perf_reward.RewardPickle()],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
             ],

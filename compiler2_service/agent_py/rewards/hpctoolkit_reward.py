@@ -3,7 +3,7 @@ import pickle
 import pdb
 
 
-class Reward(Reward):
+class RewardPickle(Reward):
     """An example reward that uses changes in the "runtime" observation value
     to compute incremental reward.
     """

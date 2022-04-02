@@ -5,7 +5,7 @@ from typing import Dict, List, Optional, Tuple
 import pandas as pd
 import utils
 
-from compiler_gym.service.proto import Event, ByteTensor
+from compiler_gym.service.proto import Event, ByteTensor, DoubleTensor
 # from compiler_gym.util.commands import run_command
 from compiler2_service.service_py.utils import run_command, print_list
 
@@ -17,7 +17,7 @@ class Profiler:
         # TODO: Figure out how to collect all in multiple runs
         self.metrics_list = [
             "cycles",  # Reward
-            # 'branches',
+            'branches',
             # 'branch-misses',
             # 'cache-misses',
             # 'cache-references',
@@ -85,3 +85,11 @@ class Profiler:
         df = df[df["counter_value"] != "<not supported>"][df["event_name"].notnull()]
 
         return dict(zip(df["event_name"], df["counter_value"]))
+
+
+class ProfilerTensor(Profiler):
+    def get_observation(self) -> Event:
+        perf_dict = self.perf_get_dict()
+        perf_vec = [ float(x) for x in perf_dict.values() ]
+        tensor = DoubleTensor(shape = [ 1, len(perf_vec)], value=perf_vec)
+        return Event(double_tensor=tensor)
