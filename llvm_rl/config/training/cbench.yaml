@@ -1,0 +1,36 @@
+---
+timeout_hours: 168
+episodes: 1
+# The set of runnable cBench benchmarks. Enumerated using:
+#
+#     >>> import compiler_gym
+#     >>> env = compiler_gym.make("llvm-v0")
+#     >>> for benchmark in env.datasets["benchmark://cbench-v1"]:
+#     ...     env.reset(benchmark)
+#     ...     if env.observation.IsRunnable():
+#     ...         print(benchmark)
+#
+
+benchmarks:
+    - dataset: benchmark://cbench-v1
+      max_benchmarks: 1
+      benchmarks_start_at: 1 # offset the test + validation sets
+
+validation:
+    benchmarks:
+        - dataset: benchmark://cbench-v1
+          max_benchmarks: 1
+          benchmarks_start_at: 5 # offset the test + validation sets
+
+
+# benchmarks:
+#     - dataset: benchmark://cbench-v1
+#     - uris:
+#           - benchmark://cbench-v1/bitcount
+
+
+# validation:
+#     benchmarks:
+#     - dataset: benchmark://cbench-v1
+#     - uris:
+#           - benchmark://cbench-v1/bitcount
