@@ -124,10 +124,67 @@ class Environment(BaseModel):
 
     @root_validator
     def rllib_id_default_value(cls, values):
-        pdb.set_trace()
         values["rllib_id"] = values["rllib_id"] or values["id"]
         return values
 
     class Config:
         validate_assignment = True
         arbitrary_types_allowed = True
+
+
+import compiler_gym
+from compiler_gym.wrappers import CycleOverBenchmarks
+from compiler_gym.wrappers import ConstrainedCommandline, TimeLimit 
+import compiler2_service
+from itertools import islice
+
+
+class MyEnvironment(Environment):
+    
+    def make_env(self) -> compiler_gym.envs.CompilerEnv:
+        """Make a reinforcement learning environment that cycles over the
+        set of training benchmarks in use.
+        """
+
+        def make_env_core() -> compiler_gym.envs.CompilerEnv:
+            import pdb
+            # pdb.set_trace()
+            env = compiler2_service.make(
+                "perf-v0",
+                observation_space="perf_tensor",
+                reward_space="perf_tensor"
+            )
+            
+            env = ConstrainedCommandline(env, flags=[
+                "-break-crit-edges",
+                "-early-cse-memssa",
+                "-gvn-hoist",
+                "-gvn",
+                "-instcombine",
+                "-instsimplify",
+                "-jump-threading",
+                "-loop-reduce",
+                "-loop-rotate",
+                "-loop-versioning",
+                "-mem2reg",
+                "-newgvn",
+                "-reg2mem",
+                "-simplifycfg",
+                "-sroa",
+            ])
+            env = TimeLimit(env, max_episode_steps=5)
+            return env
+
+
+        # del args  # Unused env_config argument passed by ray
+         
+        env = make_env_core()
+        return env
+        cpu_bench = env.datasets["hpctoolkit-cpu-v0"]
+        chstone = env.datasets["chstone-v0"]
+        train_benchmarks = list(islice(cpu_bench.benchmarks(), 4))
+        train_benchmarks, val_benchmarks = train_benchmarks[:2], train_benchmarks[2:]
+        test_benchmarks = list(islice(cpu_bench.benchmarks(), 2))
+
+        return CycleOverBenchmarks(env, train_benchmarks)
+               

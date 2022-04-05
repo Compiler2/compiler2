@@ -1,12 +1,12 @@
 ---
 timeout_hours: 168
-episodes: 100000
+episodes: 1
 benchmarks:
     - dataset: generator://csmith-v0
-      max_benchmarks: 100000
+      max_benchmarks: 2
       benchmarks_start_at: 100 # offset the test + validation sets
 validation:
     benchmarks:
         - dataset: generator://csmith-v0
-          max_benchmarks: 50
+          max_benchmarks: 2
           benchmarks_start_at: 50 # offset the test set

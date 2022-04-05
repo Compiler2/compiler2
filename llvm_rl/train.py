@@ -42,6 +42,8 @@ def main(config: DictConfig) -> None:
         sys.exit(1)
 
     model.train()
+    import pdb
+    pdb.set_trace()
     model.test()
 
 

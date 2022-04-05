@@ -45,17 +45,17 @@ class Dataset(Dataset):
         self._benchmarks = {}
         benchmark_prefix = "benchmark://poj104-v0"
 
-        for i in os.listdir(BENCHMARKS_PATH):
-            benchmark_path = BENCHMARKS_PATH/str(i)
-            example_files = os.listdir(benchmark_path)
-            for example_filename in example_files:
-                example_uri = benchmark_prefix + '/' + str(i) + '/' + example_filename.rstrip('.c')
-                self._benchmarks[example_uri] = \
-                    benchmark_from_file_contents(
-                        example_uri,
-                        self.preprocess(benchmark_path / example_filename),
-                        benchmark_config
-                    )            
+        example_files = os.listdir(BENCHMARKS_PATH)
+        for example_filename in example_files:
+            example_uri = benchmark_prefix + '/' + example_filename.rstrip('.c')
+            self._benchmarks[example_uri] = \
+                benchmark_from_file_contents(
+                    example_uri,
+                    self.preprocess(BENCHMARKS_PATH / example_filename),
+                    benchmark_config
+                ) 
+
+
 
     @staticmethod
     def preprocess(src: Path) -> bytes:

@@ -5,7 +5,9 @@
 import json
 import logging
 from datetime import datetime
+from operator import mod
 from pathlib import Path
+from pyexpat import model
 from typing import Any, Dict, Iterable, List, Optional
 
 import pandas as pd
@@ -19,10 +21,12 @@ from compiler_gym.util.shell_format import indent, plural
 from compiler_gym.util.statistics import geometric_mean
 
 from .agent import Agent
-from .environment import Environment
+from .environment import MyEnvironment as Environment
+# from .environment import Environment as Environment
 from .inference_result import InferenceResult
 from .testing import Testing
 from .training import Training
+import pdb
 
 logger = logging.getLogger(__name__)
 
@@ -111,6 +115,8 @@ class Model(BaseModel):
         ) as executor:
             for i in range(self.num_replicas):
                 executor.submit(train_job, model=self, seed=self.seed + i, replica_id=i)
+                # train_job(model=self, seed=0, replica_id=0)
+
 
     def test_checkpoints(
         self, metric: str = "evaluation/episode_reward_mean"
@@ -439,84 +445,21 @@ def train_job(model: Model, seed: int, replica_id: int) -> None:
     )
 
     logger.info("Registered RLlib environment %s", model.environment.rllib_id)
-   
 
-    def make_env() -> compiler_gym.envs.CompilerEnv:
-        env = compiler2_service.make(
-            "perf-v0",
-            observation_space="runtime",
-            reward_space="runtime"
-        )
-        
-        env = ConstrainedCommandline(env, flags=[
-            "-break-crit-edges",
-            "-early-cse-memssa",
-            "-gvn-hoist",
-            "-gvn",
-            "-instcombine",
-            "-instsimplify",
-            "-jump-threading",
-            "-loop-reduce",
-            "-loop-rotate",
-            "-loop-versioning",
-            "-mem2reg",
-            "-newgvn",
-            "-reg2mem",
-            "-simplifycfg",
-            "-sroa",
-        ])
-        env = TimeLimit(env, max_episode_steps=5)
-        return env
-    
-
-
-    from itertools import islice
-
-    def make_training_env(*args) -> compiler_gym.envs.CompilerEnv:
-        """Make a reinforcement learning environment that cycles over the
-        set of training benchmarks in use.
-        """
-        del args  # Unused env_config argument passed by ray
-
-        env = make_env()
-        
-        cpu_bench = env.datasets["hpctoolkit-cpu-v0"]
-        chstone = env.datasets["chstone-v0"]
-        train_benchmarks = list(islice(cpu_bench.benchmarks(), 4))
-        train_benchmarks, val_benchmarks = train_benchmarks[:2], train_benchmarks[2:]
-        test_benchmarks = list(islice(cpu_bench.benchmarks(), 2))
-
-        return CycleOverBenchmarks(make_env(), train_benchmarks)
-        
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    # def make_env(env_config: Dict[str, Any]):
-    #     """Construct a training or validation environment."""
-    #     env = model.environment.make_env()
-    #     if "type" not in env_config:
-    #         raise KeyError(f"No type in dict: {env_config}")
-    #     if env_config["type"] == "training":
-    #         return model.training.wrap_env(env)
-    #     elif env_config["type"] == "validation":
-    #         return model.training.validation.wrap_env(env)
-    #     raise ValueError(f"Unknown environment type: {env_config['type']}")
-
+    def make_env(env_config: Dict[str, Any]):
+        """Construct a training or validation environment."""
+        env = model.environment.make_env()
+        if "type" not in env_config:
+            raise KeyError(f"No type in dict: {env_config}")
+        if env_config["type"] == "training":
+            return model.training.wrap_env(env)
+        elif env_config["type"] == "validation":
+            return model.training.validation.wrap_env(env)
+        raise ValueError(f"Unknown environment type: {env_config['type']}")
 
     tune.register_env(
         model.environment.rllib_id,
-        # make_env,
-        make_training_env
+        make_env,
     )
 
     def trial_name_creator(trial):
