@@ -12,22 +12,29 @@ runs_per_benchmark: 1
 #     ...         print(benchmark)
 #
 benchmarks:
-    - uris:
-          - benchmark://cbench-v1/bitcount
-          - benchmark://cbench-v1/blowfish
-          - benchmark://cbench-v1/bzip2
-          - benchmark://cbench-v1/crc32
-          - benchmark://cbench-v1/dijkstra
-          - benchmark://cbench-v1/gsm
-          - benchmark://cbench-v1/jpeg-c
-          - benchmark://cbench-v1/jpeg-d
-          - benchmark://cbench-v1/patricia
-          - benchmark://cbench-v1/qsort
-          - benchmark://cbench-v1/sha
-          - benchmark://cbench-v1/stringsearch
-          - benchmark://cbench-v1/stringsearch2
-          - benchmark://cbench-v1/susan
-          - benchmark://cbench-v1/tiff2bw
-          - benchmark://cbench-v1/tiff2rgba
-          - benchmark://cbench-v1/tiffdither
-          - benchmark://cbench-v1/tiffmedian
+    - dataset: benchmark://cbench-v1
+      max_benchmarks: 1
+      benchmarks_start_at: 1 # offset the test + validation sets
+
+
+
+    # - dataset: benchmark://cbench-v1
+    # - uris:
+    #       - benchmark://cbench-v1/bitcount
+        #   - benchmark://cbench-v1/blowfish
+        #   - benchmark://cbench-v1/bzip2
+        #   - benchmark://cbench-v1/crc32
+        #   - benchmark://cbench-v1/dijkstra
+        #   - benchmark://cbench-v1/gsm
+        #   - benchmark://cbench-v1/jpeg-c
+        #   - benchmark://cbench-v1/jpeg-d
+        #   - benchmark://cbench-v1/patricia
+        #   - benchmark://cbench-v1/qsort
+        #   - benchmark://cbench-v1/sha
+        #   - benchmark://cbench-v1/stringsearch
+        #   - benchmark://cbench-v1/stringsearch2
+        #   - benchmark://cbench-v1/susan
+        #   - benchmark://cbench-v1/tiff2bw
+        #   - benchmark://cbench-v1/tiff2rgba
+        #   - benchmark://cbench-v1/tiffdither
+        #   - benchmark://cbench-v1/tiffmedian
