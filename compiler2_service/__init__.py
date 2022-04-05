@@ -126,7 +126,7 @@ register(
         "service": COMPILER2_SERVICE_PY,
         "rewards": [
             perf_reward.RewardTensor(),
-            # runtime_reward.RewardTensor()
+            runtime_reward.RewardTensor()
         ],
         "datasets": [
             CBenchDataset(site_data_path("llvm-v0")),

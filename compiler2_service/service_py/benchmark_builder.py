@@ -48,8 +48,8 @@ class BenchmarkBuilder:
         self.exe_path = str(self.working_dir / "benchmark.exe")
 
         self.compile_ll = {
-            # 'opt':  [self.opt, "--debugify", "-o", self.bc_path, self.llvm_path],
-            "opt": [self.opt, "-o", self.bc_path, self.llvm_path],
+            'opt':  [self.opt, "--debugify", "-o", self.bc_path, self.llvm_path],
+            # "opt": [self.opt, "-o", self.bc_path, self.llvm_path],
             "cmp": [
                 self.clang,
                 self.bc_path,
