@@ -1,0 +1,18 @@
+---
+timeout_hours: 1
+episodes: 1
+
+benchmarks:
+    - dataset: benchmark://poj104-v0
+    - uris:
+          - benchmark://poj104-v0/1_13
+          - benchmark://poj104-v0/1_17
+          - benchmark://poj104-v0/2_5
+          - benchmark://poj104-v0/2_11
+
+validation:
+    benchmarks:
+    - dataset: benchmark://poj104-v0
+    - uris:
+          - benchmark://poj104-v0/1_13
+          - benchmark://poj104-v0/1_17

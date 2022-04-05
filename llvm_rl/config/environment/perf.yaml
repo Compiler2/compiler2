@@ -1,8 +1,8 @@
 ---
 id: perf-v0
 max_episode_steps: 5
-observation_space: runtime
-reward_space: runtime
+observation_space: runtime_tensor
+reward_space: runtime_tensor
 # wrappers:
 #     - wrapper: AutophaseActionSpace
 #     - wrapper: AutophaseNormalizedFeatures
