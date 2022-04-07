@@ -15,7 +15,7 @@ from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
 
 BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
-INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104/input"
+INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/input"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):

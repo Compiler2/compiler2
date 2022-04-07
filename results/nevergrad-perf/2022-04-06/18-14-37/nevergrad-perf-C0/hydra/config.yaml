@@ -1,0 +1,20 @@
+autotuner:
+  algorithm: nevergrad
+  optimization_target: perf
+  search_time_seconds: 10
+  algorithm_config:
+    episode_length: 2
+    optimizer: DiscreteLenglerOnePlusOne
+benchmarks:
+  benchmarks:
+  - uris:
+    - benchmark://hpctoolkit-cpu-v0/conv2d
+    - benchmark://hpctoolkit-cpu-v0/offsets1
+    - benchmark://hpctoolkit-cpu-v0/nanosleep
+    - benchmark://hpctoolkit-cpu-v0/simple_pow
+executor:
+  type: local
+  cpus: -1
+outputs: results
+experiment: nevergrad-perf
+num_replicas: 10
