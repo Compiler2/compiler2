@@ -38,9 +38,9 @@ from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
 import compiler2_service.paths
 
-
 from agent_py.rewards import perf_reward
 from agent_py.datasets import hpctoolkit_dataset
+
 
 def register_env():
     register(
@@ -65,10 +65,14 @@ def register_env():
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    register_env()
+    # register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("perf-v0") as env:
+    with compiler2_service.make(
+            "perf-v0",
+            observation_space="perf_tensor",
+            reward_space="perf_tensor"
+    ) as env:
 
         # env.reset(benchmark="benchmark://cbench-v1/qsort")
 
@@ -150,33 +154,37 @@ def main():
             "benchmark://chstone-v0/sha",
         ]
 
+        benchmark_to_process = [
+            # "benchmark://hpctoolkit-cpu-v0/simple_pow",
+            # "benchmark://hpctoolkit-cpu-v0/offsets1",
+            # "benchmark://hpctoolkit-cpu-v0/conv2d",
+            "benchmark://hpctoolkit-cpu-v0/nanosleep",
+        ]
+
         inc = 0
         for bench in benchmark_to_process:
             try:
                 env.reset(benchmark=bench)
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
-            
 
             for i in range(2):
                 print("Main: step = ", i)
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observations=["perf"],
-                        rewards=["perf"],
+                        observations=["perf_tensor"],
+                        rewards=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
                     continue
 
                 print(reward)
-                # print(observation)
                 print(info)
-                perf_dict = pickle.loads(observation[0])
-                print(perf_dict)
+                print(observation)
 
-                pdb.set_trace()
+                # pdb.set_trace()
                 if done:
                     env.reset()
             inc += 1

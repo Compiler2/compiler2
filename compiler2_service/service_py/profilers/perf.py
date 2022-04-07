@@ -18,9 +18,9 @@ class Profiler:
             [
                 'cpu-cycles',                
                 'duration_time',
-                'task-clock',        
-                'instructions',
-                'bpf-output',
+                # 'task-clock',
+                # 'instructions',
+                # 'bpf-output',
             ],
             [
                 'alignment-faults',
@@ -86,6 +86,7 @@ class Profiler:
                 timeout=self.timeout_sec,
             )
             # pdb.set_trace()
+            break
 
         return self.perf_parse_to_dict(metric_file_names)
 
