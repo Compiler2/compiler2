@@ -66,6 +66,9 @@ class HPCToolkitCompilationSession(CompilationSession):
             )
         ),
     ]
+    blacklisted_actions = [
+        "-insert-gcov-profiling"
+    ]
 
     # A list of observation spaces supported by this service. Each of these
     # ObservationSpace protos describes an observation space.
@@ -87,18 +90,18 @@ class HPCToolkitCompilationSession(CompilationSession):
                 double_value=0,
             ),
         ),
-        ObservationSpace(
+        ObservationSpace( # Note: Be CAREFUL with dimensions, they need to be exactly the same like in perf.py
             name="perf_tensor",
             space=Space(
                 double_box=DoubleBox(
-                    low = DoubleTensor(shape = [1, 2], value=[0, 0]),
-                    high = DoubleTensor(shape = [1, 2], value=[float("inf"), float("inf")]),
+                    low = DoubleTensor(shape = [1, 28], value=[0] * 28),
+                    high = DoubleTensor(shape = [1, 28], value=[float("inf")] * 28),
                 )
             ),
             deterministic=False,
             platform_dependent=True,
             default_observation=Event(
-                double_tensor=DoubleTensor(shape = [1, 2], value=[0, 0]),
+                double_tensor=DoubleTensor(shape = [1, 28], value=[0] * 28),
             ),
         ),
 
@@ -188,7 +191,8 @@ class HPCToolkitCompilationSession(CompilationSession):
         if key == "save_state":
             self.save_state = False if value == "0" else True
             return "Succeeded"
-        elif key == "hpctoolkit.apply_baseline_optimizations":
+        elif key == "apply_baseline_optimizations":                        
+            self.benchmark.reset_actions()
             self.benchmark.apply_action(value, self.save_state)
             return "Succeeded"
 
@@ -217,14 +221,18 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         # Compile benchmark with given optimization
         opt = self._action_space.space.named_discrete.name[choice_index]
-        logging.info(
-            "Applying action %d, equivalent command-line arguments: '%s'",
-            choice_index,
-            opt,
-        )
+        if opt in self.blacklisted_actions:
+            print("Info: action %s is blacklisted"%self.blacklisted_actions)
+            action_had_no_effect = True
+        else:
+            logging.info(
+                "Applying action %d, equivalent command-line arguments: '%s'",
+                choice_index,
+                opt,
+            )
 
-        self.benchmark.apply_action(opt=opt, save_state=self.save_state)
-        action_had_no_effect = not self.benchmark.is_action_effective
+            self.benchmark.apply_action(opt=opt, save_state=self.save_state)
+            action_had_no_effect = not self.benchmark.is_action_effective
 
         end_of_session = False
         new_action_space = None

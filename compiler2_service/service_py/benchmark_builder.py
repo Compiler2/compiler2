@@ -40,6 +40,7 @@ class BenchmarkBuilder:
 
         self.working_dir = working_directory
         self.llvm_path = str(self.working_dir / "benchmark.ll")
+        self.llvm_path_base = str(self.working_dir / "benchmark_base.ll")
         self.llvm_new_path = str(self.working_dir / "benchmark_new.ll")
         self.llvm_before_path = str(self.working_dir / "benchmark.previous.ll")
         self.bc_path = str(self.working_dir / "benchmark.bc")
@@ -111,7 +112,12 @@ class BenchmarkBuilder:
             compile_to_ll,
             timeout=self.timeout_sec,
         )
-
+        # Save baseline implementation
+        run_command(
+            ['cp', self.llvm_path, self.llvm_path_base],
+            timeout=self.timeout_sec,
+        )
+    
 
     def print_header_ll(self):
         with open(self.llvm_path, "r") as f:
@@ -155,9 +161,18 @@ class BenchmarkBuilder:
             # Execute the command with no redirection
             run_command(cmd, timeout=timeout_sec)
 
+
+    def reset_actions(self, ) -> None:
+        run_command(
+            ['cp', self.llvm_path_base, self.llvm_path],
+            timeout=self.timeout_sec,
+        )
+
+
     def apply_action(self, opt: str, save_state: bool):
-        compile_ll = deepcopy(self.compile_ll)
-        compile_ll["opt"].insert(1, opt)
+        # opt format "-opt1 -opt2 ..."
+        compile_ll = deepcopy(self.compile_ll)        
+        compile_ll["opt"][1:1] = opt.split()
         self.last_opt_action = opt
         print("hackkk:", self.last_opt_action)
 
@@ -272,3 +287,4 @@ class BenchmarkBuilder:
             self.last_opt_action = "-O0"
         self.apply_action(self.last_opt_action, save_state=save_state)
         return Event(string_value=self.bc_path)
+

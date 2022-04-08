@@ -134,7 +134,7 @@ class OptimizationTarget(str, Enum):
 
                     new_env.reset()
                     new_env.send_param("save_state", "1")
-                    new_env.send_param("hpctoolkit.apply_baseline_optimizations", "-O3")
+                    new_env.send_param("apply_baseline_optimizations", "-O3")
                     # Find perf observation for the -O3 baseline optimization.
                     o3_perf_dict = pickle.loads(new_env.observation.perf())
                     o3_cycles = float(o3_perf_dict['cycles'])

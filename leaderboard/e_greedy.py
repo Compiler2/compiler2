@@ -2,7 +2,11 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-"""ϵ-greedy policy for LLVM codesize."""
+"""ϵ-greedy policy for LLVM codesize.
+python e_greedy.py --test_dataset=benchmark://poj104-v0 --max_benchmarks=2  --n=1 --epsilon=0 --leaderboard_results=results_e0.csv --nproc 1
+
+"""
+
 import logging
 import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -11,7 +15,8 @@ from typing import NamedTuple
 from absl import flags
 
 from compiler_gym.envs import CompilerEnv, LlvmEnv
-from compiler_gym.leaderboard.llvm_instcount import eval_llvm_instcount_policy
+from core.llvm_instcount import eval_llvm_instcount_policy
+# from core.perf_runtime import eval_llvm_instcount_policy
 
 flags.DEFINE_float(
     "epsilon", 0, "The ratio of patience to the size of the action space. "
@@ -26,7 +31,7 @@ class RewardAction(NamedTuple):
     reward: float
     action: int
 
-
+import pdb
 def select_best_action(env: CompilerEnv, executor: ThreadPoolExecutor) -> RewardAction:
     """Determine the best action by trying all possible options and ranking them."""
 

@@ -11,7 +11,7 @@ from subprocess import Popen, run
 from typing import List
 
 
-def run_command(cmd: List[str], timeout: int):
+def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
     if '<' in cmd:
         pos_less = cmd.index('<')
         assert pos_less + 1 < len(cmd)
@@ -23,7 +23,7 @@ def run_command(cmd: List[str], timeout: int):
 
         
     with Popen(
-        cmd_exe, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True
+        cmd_exe, stdin=subprocess.PIPE, stdout=stdout, stderr=stderr, universal_newlines=True
     ) as process:
         if stdin:
             stdin.seek(0)
@@ -31,11 +31,11 @@ def run_command(cmd: List[str], timeout: int):
                 process.stdin.write(stdin.read()) # BUG: Broken Pipe
             except BrokenPipeError:
                 pass
-            
+        
         stdout, stderr = process.communicate(timeout=timeout)
         # print("ERRORCODE:", process.returncode, "cmd:", cmd)
 
-        if process.returncode not in [0, 101]:
+        if process.returncode:
             returncode = process.returncode
             try:
                 # Try and decode the name of a signal. Signal returncodes
@@ -46,7 +46,7 @@ def run_command(cmd: List[str], timeout: int):
             raise OSError(
                 f"Compilation job failed with returncode {returncode}\n"
                 f"Command: {' '.join(cmd)}\n"
-                f"Stderr: {stderr.strip()}"
+                f"Stderr: {stderr}"
             )
     return stdout
 
