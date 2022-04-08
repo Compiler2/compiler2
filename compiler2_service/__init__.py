@@ -112,8 +112,12 @@ from compiler_gym.envs.llvm.datasets import (
     NPBDataset,
 )
 
-from compiler2_service.agent_py.datasets import hpctoolkit_dataset
-from compiler2_service.agent_py.datasets import poj104_dataset
+from compiler2_service.agent_py.datasets import (
+    hpctoolkit_dataset, 
+    poj104_dataset, 
+    poj104_dataset_small,
+)
+
 
 from compiler_gym.util.runfiles_path import site_data_path
 
@@ -135,7 +139,8 @@ def register_env():
                 CsmithDataset(site_data_path("llvm-v0")),
                 CHStoneDataset(site_data_path("llvm-v0")),
                 hpctoolkit_dataset.Dataset(),
-                poj104_dataset.Dataset(),
+                # poj104_dataset.Dataset(),
+                poj104_dataset_small.Dataset()
             ],
         },
     )

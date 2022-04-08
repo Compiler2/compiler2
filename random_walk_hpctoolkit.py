@@ -14,7 +14,11 @@ import random
 import pdb
 import uuid
 import os
-from compiler2_service.agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import (
+    hpctoolkit_dataset,
+    poj104_dataset,
+    poj104_dataset_small,
+)
 
 import humanize
 from absl import app, flags
@@ -197,7 +201,9 @@ def register_perf_session():
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
-                hpctoolkit_dataset.Dataset()    
+                hpctoolkit_dataset.Dataset(),
+                # poj104_dataset.Dataset(),    
+                poj104_dataset_small.Dataset(),    
             ],
         },
     )
@@ -237,7 +243,6 @@ def main(argv):
 
         with open(log_path, "w") as csv:
             csv.write("BenchmarkName, State, Action, PrevActions, Reward\n")            
-
 
             for bench in env.datasets[FLAGS.data_set]:
                 
