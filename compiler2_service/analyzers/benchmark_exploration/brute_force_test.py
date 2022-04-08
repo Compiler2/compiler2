@@ -44,7 +44,7 @@ def test_run_brute_force_perf():
         
         # for bench in env.datasets["generator://csmith-v0"]:
         run_brute_force(
-            make_env=lambda: gym.make("perf-v0"),
+            make_env=lambda: gym.make("compiler2-v0"),
             action_names=["-sroa", "-mem2reg"],
             episode_length=2,
             outdir=outdir,
