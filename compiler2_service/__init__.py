@@ -117,29 +117,33 @@ from compiler2_service.agent_py.datasets import poj104_dataset
 
 from compiler_gym.util.runfiles_path import site_data_path
 
-# register perf session
-register(
-    id="perf-v0",
-    # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
-    entry_point=HPCToolkitCompilerEnv,
-    kwargs={
-        "service": COMPILER2_SERVICE_PY,
-        "rewards": [
-            perf_reward.RewardTensor(),
-            runtime_reward.RewardTensor()
-        ],
-        "datasets": [
-            CBenchDataset(site_data_path("llvm-v0")),
-            CsmithDataset(site_data_path("llvm-v0")),
-            CHStoneDataset(site_data_path("llvm-v0")),
-            hpctoolkit_dataset.Dataset(),
-            poj104_dataset.Dataset(),
-        ],
-    },
-)
 
+# register perf session
+def register_env():
+    register(
+        id="perf-v0",
+        # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
+        entry_point=HPCToolkitCompilerEnv,
+        kwargs={
+            "service": COMPILER2_SERVICE_PY,
+            "rewards": [
+                perf_reward.RewardTensor(),
+                # runtime_reward.RewardTensor()
+            ],
+            "datasets": [
+                CBenchDataset(site_data_path("llvm-v0")),
+                CsmithDataset(site_data_path("llvm-v0")),
+                CHStoneDataset(site_data_path("llvm-v0")),
+                hpctoolkit_dataset.Dataset(),
+                poj104_dataset.Dataset(),
+            ],
+        },
+    )
+
+register_env()
 
 def make(id: str, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""
     import compiler_gym
+    register_env()
     return compiler_gym.make(id, **kwargs)

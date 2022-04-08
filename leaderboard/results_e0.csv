@@ -1,0 +1,33 @@
+benchmark,reward,walltime,commandline
+benchmark://cbench-v1/adpcm,0.9748603351955308,6.227823972702026,opt -sroa -simplifycfg -early-cse -jump-threading -gvn-hoist input.bc -o output.bc
+benchmark://cbench-v1/bitcount,1.0132743362831858,12.316202163696289,opt -mem2reg -instcombine -simplifycfg -newgvn -sroa -instcombine -elim-avail-extern -tailcallelim input.bc -o output.bc
+generator://csmith-v0/0,1.0219487439736106,28.650502681732178,opt -instcombine -sroa -inline -ipsccp -instcombine -simplifycfg -instcombine -loop-deletion -gvn -loop-rotate -dse -instcombine -newgvn -simplifycfg -ipsccp -globalopt -instcombine input.bc -o output.bc
+generator://csmith-v0/1,1.1152790484903934,19.12913489341736,opt -instcombine -mem2reg -ipsccp -simplifycfg -instcombine -globalopt -gvn -loop-rotate -jump-threading -newgvn -loop-deletion -simplifycfg -instcombine input.bc -o output.bc
+generator://csmith-v0/0,0.0,32.512858629226685,opt  input.bc -o output.bc
+generator://csmith-v0/0,0.0,0.013244867324829102,opt  input.bc -o output.bc
+generator://csmith-v0/1,0.0,0.012526512145996094,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.013135910034179688,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_13,0.0,0.012930154800415039,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.013118505477905273,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_13,0.0,0.011478662490844727,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.012889385223388672,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_13,0.0,0.010890960693359375,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.013065576553344727,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_13,0.0,0.011451005935668945,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.010977506637573242,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_13,0.0,0.010514020919799805,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.010337114334106445,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.012790918350219727,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.01361083984375,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.013462066650390625,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.012794256210327148,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.012200355529785156,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_79,0.0,0.011545181274414062,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.013468027114868164,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_79,0.0,0.010854959487915039,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.01325225830078125,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_79,0.0,0.011033296585083008,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.012694597244262695,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_79,0.0,0.012253284454345703,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_17,0.0,0.01201486587524414,opt  input.bc -o output.bc
+benchmark://poj104-v0/1_79,0.0,0.011566638946533203,opt  input.bc -o output.bc

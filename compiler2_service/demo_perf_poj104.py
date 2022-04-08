@@ -69,6 +69,7 @@ def main():
             try:
                 env.reset(benchmark=bench)
                 env.send_param("save_state", "0")
+                env.send_param("apply_baseline_optimizations", "-O3 -reg2mem")
 
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
