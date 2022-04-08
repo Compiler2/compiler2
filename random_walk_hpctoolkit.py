@@ -60,7 +60,7 @@ class RandomWalker:
 
     def format_log(self, observation: list, action: str, reward: float):
         return [ self.cur_bench, 
-                 self.list2str(observation[0].flat[:]), 
+                 self.list2str(observation), 
                  action, 
                  self.list2str(self.prev_actions), 
                  str(reward)]
