@@ -125,7 +125,7 @@ from compiler_gym.util.runfiles_path import site_data_path
 # register perf session
 def register_env():
     register(
-        id="perf-v0",
+        id="compiler2-v0",
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
         entry_point=HPCToolkitCompilerEnv,
         kwargs={

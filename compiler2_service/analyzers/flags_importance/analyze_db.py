@@ -60,6 +60,10 @@ def flag_analysis(csv_path):
 
         if not pd.isna(row["PrevActions"]):
             last_action = row["PrevActions"].split()[-1]
+
+            if last_action not in action_importance:                
+                action_importance[last_action] = Action(last_action)
+            
             action_importance[last_action].helper_reward = last_action_factor * reward
 
             if reward > last_action_diff:
