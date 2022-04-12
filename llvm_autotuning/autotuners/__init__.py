@@ -91,7 +91,7 @@ class Autotuner(BaseModel):
             dir=transient_cache_path("."), prefix="autotune-"
         ) as tmpdir:
             with temporary_working_directory(Path(tmpdir)):
-                # with capture_output():
+                with capture_output():
                     with Timer() as timer:
                         self.autotune(env, seed=seed, **self.autotune_kwargs)
 
