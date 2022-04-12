@@ -15,8 +15,9 @@ class Profiler:
         self.run_cmd = run_cmd
         self.timeout_sec = timeout_sec
         self.metric_groups = [
-            [
-                'cpu-cycles',                
+            [   'cpu-cycles',
+            ],
+            [                                
                 'duration_time',
                 'task-clock',        
                 'instructions',

@@ -186,6 +186,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         )
 
         self.profiler = None
+        self.prev_observation = None
 
     def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
         if key == "save_state":
@@ -240,7 +241,10 @@ class HPCToolkitCompilationSession(CompilationSession):
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
         logging.info("Computing observation from space %s", observation_space.name)
-        # pdb.set_trace()
+        if not self.benchmark.is_action_effective:
+            print("get_observation: ACTION NOT EFFECTIVE RETURN >>>>>>>>>> ")
+            return self.prev_observation
+
         if self.profiler == None or observation_space.name != self.profiler.name:
             print(observation_space.name)
             if observation_space.name == "runtime":
@@ -297,7 +301,8 @@ class HPCToolkitCompilationSession(CompilationSession):
             else:
                 raise KeyError(observation_space.name)
 
-        return self.profiler.get_observation()
+        self.prev_observation = self.profiler.get_observation()
+        return self.prev_observation
 
 
 if __name__ == "__main__":

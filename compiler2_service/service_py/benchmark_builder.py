@@ -63,7 +63,7 @@ class BenchmarkBuilder:
 
         self.pre_run_cmd = []
         self.run_cmd = [self.exe_path]
-        self.is_action_effective = False
+        self.is_action_effective = True
 
         self.prepare_benchmark(benchmark)
 
