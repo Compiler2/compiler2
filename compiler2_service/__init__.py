@@ -3,13 +3,14 @@ from pathlib import Path
 
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 
-
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline, CommandlineFlag
 from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
+from compiler_gym.wrappers import CompilerEnvWrapper
 from typing import cast, List, Union, Optional
 import os
 import shutil
+
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
     # Copied from CompilerGym and adapted.
@@ -98,6 +99,86 @@ class HPCToolkitCompilerEnv(CompilerEnv):
         return path
 
 
+class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
+    def __init__(self, env):
+        super().__init__(env)
+        self.log_list = []
+        self.log_path = self.create_log_dir(self.env.spec.id)
+
+    def step(  # pylint: disable=arguments-differ
+            self,
+            action,
+            observation_spaces=None,
+            reward_spaces=None,
+            observations=None,
+            rewards=None,
+    ):
+        benchmark_uri = str(self.env.benchmark.uri)
+        action_str = self.env.action_space.names[action]
+        observation, reward, done, info = super().step(action, observation_spaces=observation_spaces,
+                                                       reward_spaces=reward_spaces, observations=observations,
+                                                       rewards=rewards)
+        self.log_list.append(
+            self.format_log(
+                benchmark_uri,
+                observation[0].flat[:] if observation else "None",
+                action_str,
+                reward[0] if not isinstance(reward, float) else reward
+            )
+        )
+        return observation, reward, done, info
+
+    def close(self):
+        # Dump current content of the log_list to a file.
+        self.log_to_file()
+        super().close()
+
+    def __del__(self):
+        # In case someone forgot to call close for the env.
+        self.log_to_file()
+
+    @staticmethod
+    def create_log_dir(env_name):
+        from datetime import datetime
+
+        root = os.getenv('COMPILER2_ROOT')
+        assert root
+        timestamp = datetime.now().strftime("%Y-%m-%d/%H-%M-%S")
+        log_dir = "/".join([root, "results", "random-" + env_name, timestamp, str(os.getpid())])
+        os.makedirs(log_dir)
+        return log_dir
+
+    @staticmethod
+    def list2str(l):
+        return " ".join([str(x) for x in l])
+
+    @staticmethod
+    def format_log(benchmark_uri: str, observation: list, action: str, reward: float):
+        obs_str = HPCToolkitCompilerEnvLoggingWrapper.list2str(observation)
+        # prev_act_str = HPCToolkitCompilerEnvLoggingWrapper.list2str()
+        prev_act_str = "Unknown-for-now"
+        return [benchmark_uri,
+                obs_str,
+                action,
+                prev_act_str,
+                str(reward)]
+
+    def prepare_header(self):
+        with open(self.log_path + "/results.csv", "w") as csv:
+            csv.write("BenchmarkName, State, Action, PrevActions, Reward\n")
+
+    def log_to_file(self):
+        # No need to dump empty log_list
+        if not self.log_list:
+            return
+        with open(self.log_path + "/results.csv", "a") as csv:
+            for line in self.log_list:
+                csv.write(",".join(line) + "\n")
+
+        # Clear the content
+        self.log_list.clear()
+
+
 from compiler_gym.util.registration import register
 from compiler2_service.paths import COMPILER2_SERVICE_PY
 from compiler2_service.agent_py.rewards import perf_reward, runtime_reward
@@ -113,11 +194,10 @@ from compiler_gym.envs.llvm.datasets import (
 )
 
 from compiler2_service.agent_py.datasets import (
-    hpctoolkit_dataset, 
-    poj104_dataset, 
+    hpctoolkit_dataset,
+    poj104_dataset,
     poj104_dataset_small,
 )
-
 
 from compiler_gym.util.runfiles_path import site_data_path
 
@@ -145,10 +225,16 @@ def register_env():
         },
     )
 
+
 register_env()
+
 
 def make(id: str, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""
     import compiler_gym
     register_env()
     return compiler_gym.make(id, **kwargs)
+
+
+def make_log_env(id, **kwargs):
+    return HPCToolkitCompilerEnvLoggingWrapper(make(id, **kwargs))
