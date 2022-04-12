@@ -25,7 +25,8 @@ class OptimizationTarget(str, Enum):
     CODESIZE = "codesize"
     BINSIZE = "binsize"
     RUNTIME = "runtime"
-    PERF = "perf"
+    PERF = "perf",
+    PERF_LOG = "perf-log"
 
     @property
     def optimization_space_enum_name(self) -> str:
@@ -57,14 +58,16 @@ class OptimizationTarget(str, Enum):
             env.reward_space = "ObjectTextSizeOz"
         elif self.value == OptimizationTarget.RUNTIME:
             env = RuntimePointEstimateReward(env, warmup_count=0, runtime_count=3)
-        elif self.value == OptimizationTarget.PERF:
-            env.reward_space = "perf"
+        elif self.value == OptimizationTarget.PERF or self.value == OptimizationTarget.PERF_LOG:
+            env.reward_space = "perf_tensor"
         else:
             assert False, f"Unknown OptimizationTarget: {self.value}"
 
         # Wrap the env to ignore errors during search.
         env = JustKeepGoingEnv(env)
-
+        if self.value == OptimizationTarget.PERF_LOG:
+            # Wrapper for logging.
+            env = compiler2_service.HPCToolkitCompilerEnvLoggingWrapper(env)
         return env
 
     def final_reward(self, env: LlvmEnv, runtime_count: int = 30) -> float:
@@ -120,7 +123,7 @@ class OptimizationTarget(str, Enum):
 
                 return speedup
 
-        if self.value == OptimizationTarget.PERF:
+        if self.value == OptimizationTarget.PERF or self.value == OptimizationTarget.PERF_LOG:
             import pickle
             # Implemented similar to the Runtime OptimizationTarget.RUNTIME
             with _RUNTIME_LOCK:
@@ -129,15 +132,15 @@ class OptimizationTarget(str, Enum):
                     new_env.reset()
                     new_env.apply(env.state)
                     # Find perf observation for the state determined by the auto tuner.
-                    perf_observation_dict = pickle.loads(new_env.observation.perf())
-                    perf_cycles = float(perf_observation_dict['cycles'])
+                    perf_observation_tensor = new_env.observation.perf()
+                    perf_cycles = perf_observation_tensor[0]
 
                     new_env.reset()
                     new_env.send_param("save_state", "1")
                     new_env.send_param("apply_baseline_optimizations", "-O3")
                     # Find perf observation for the -O3 baseline optimization.
-                    o3_perf_dict = pickle.loads(new_env.observation.perf())
-                    o3_cycles = float(o3_perf_dict['cycles'])
+                    o3_perf_tensor = new_env.observation.perf()
+                    o3_cycles = o3_perf_tensor[0]
 
                     # Speedup defined as the ration of o3_cycles divided by perf_cycles.
                     speedup = o3_cycles / perf_cycles
