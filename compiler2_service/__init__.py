@@ -113,7 +113,6 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
             observations=None,
             rewards=None,
     ):
-        print("Before step", self.env.state)
         benchmark_uri = str(self.env.benchmark.uri)
         action_str = self.env.action_space.names[action]
         observation, reward, done, info = super().step(action, observation_spaces=observation_spaces,
@@ -122,12 +121,11 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         self.log_list.append(
             self.format_log(
                 benchmark_uri,
-                observation[0].flat[:],
+                observation[0].flat[:] if observation else "None",
                 action_str,
-                reward[0]
+                reward[0] if not isinstance(reward, float) else reward
             )
         )
-        print("**** Command: ", self.env.commandline())
         return observation, reward, done, info
 
     def close(self):
@@ -146,7 +144,7 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         root = os.getenv('COMPILER2_ROOT')
         assert root
         timestamp = datetime.now().strftime("%Y-%m-%d/%H-%M-%S")
-        log_dir = "/".join([root, "results", "random-" + env_name, timestamp])
+        log_dir = "/".join([root, "results", "random-" + env_name, timestamp, str(os.getpid())])
         os.makedirs(log_dir)
         return log_dir
 
