@@ -246,7 +246,7 @@ def eval_llvm_instcount_policy(policy: Policy) -> None:
 
     def register_env():
         register(
-            id="perf-v0",
+            id="compiler2-v0",
             entry_point="compiler_gym.envs:CompilerEnv",
             kwargs={
                 "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
@@ -270,7 +270,7 @@ def eval_llvm_instcount_policy(policy: Policy) -> None:
         #     reward_space="IrInstructionCountOz",
         # )
         env = compiler2_service.make(
-            "perf-v0",
+            "compiler2-v0",
             observation_space="perf_tensor",
             reward_space="perf_tensor"
         )

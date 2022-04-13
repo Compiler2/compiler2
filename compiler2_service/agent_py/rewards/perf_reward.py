@@ -13,22 +13,22 @@ class RewardPickle(Reward):
             deterministic=False,
             platform_dependent=True,
         )
-        self.baseline_cycles = 0
+        self.prev_cycles = 0
 
     def reset(self, benchmark: str, observation_view):
         del benchmark  # unused
         perf_dict = pickle.loads(observation_view["perf"])
-        self.baseline_cycles = int(perf_dict["cycles"])
-        # print("Reward Perf: reset reward = ", self.baseline_cycles)
+        self.prev_cycles = int(perf_dict["cycles"])
+        # print("Reward Perf: reset reward = ", self.prev_cycles)
 
     def update(self, action, observations, observation_view):
         perf_dict = pickle.loads(observations[0])
         new_cycles = int(perf_dict["cycles"])
 
         # print("Reward Perf: update reward = ", new_cycles)
-
-        return float(self.baseline_cycles - new_cycles) / self.baseline_cycles
-
+        reward = float(self.prev_cycles - new_cycles) / self.prev_cycles
+        self.prev_cycles = new_cycles
+        return reward
 
 
 class RewardTensor(Reward):
@@ -41,15 +41,17 @@ class RewardTensor(Reward):
             deterministic=False,
             platform_dependent=True,
         )
-        self.baseline_cycles = 0
+        self.prev_cycles = 0
 
     def reset(self, benchmark: str, observation_view):
         del benchmark  # unused
-        self.baseline_cycles = observation_view["perf_tensor"].flat[0]
-        # print("Reward Perf: reset reward = ", self.baseline_cycles)
+        self.prev_cycles = observation_view["perf_tensor"].flat[0]
+        print("Reward Perf: reset reward = ", self.prev_cycles)
 
     def update(self, action, observations, observation_view):
         new_cycles = observation_view["perf_tensor"].flat[0]
 
-        # print("Reward Perf: update reward = ", new_cycles)
-        return float(self.baseline_cycles - new_cycles) / self.baseline_cycles
+        print("Reward Perf: update reward = ", new_cycles)
+        reward = float(self.prev_cycles - new_cycles) / self.prev_cycles
+        self.prev_cycles = new_cycles
+        return reward

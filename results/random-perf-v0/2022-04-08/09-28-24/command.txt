@@ -1,0 +1,1 @@
+python random_walk_hpctoolkit.py --env=compiler2-v0 --walk_count=10 --step_count=20   --data_set=benchmark://poj104-v0 --reward=perf_tensor --observation=perf_tensor

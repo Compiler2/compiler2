@@ -78,7 +78,7 @@ def main(argv):
 
     register_perf_session()
 
-    with compiler2_service.make("compiler2-v0") as env:
+    with compiler2_service.make_log_env("compiler2-v0") as env:
         walker = RandomWalker(env=env, 
                               dataset_uri = FLAGS.data_set,
                               observation=FLAGS.observation,

@@ -10,6 +10,7 @@ from compiler_gym.wrappers import CompilerEnvWrapper
 from typing import cast, List, Union, Optional
 import os
 import shutil
+import sys
 
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
@@ -98,34 +99,50 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             os.unlink(tmp_path)
         return path
 
+import pdb
 
 class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
     def __init__(self, env):
         super().__init__(env)
         self.log_list = []
         self.log_path = self.create_log_dir(self.env.spec.id)
+        self.prepare_header(self.log_path)
+        self.prev_observation = None
+
+    def multistep(
+        self,
+        **kwargs
+    ):
+        ret_multistep = super().multistep(**kwargs)
+        self.prev_observation = ret_multistep[0]
+        return ret_multistep
+
+    # def observation(self, observation):
+    #     return np.concatenate((observation, self.histogram)).astype(
+    #         self.env.observation_space.dtype
+    #     )
+
 
     def step(  # pylint: disable=arguments-differ
             self,
             action,
-            observation_spaces=None,
-            reward_spaces=None,
-            observations=None,
-            rewards=None,
+            **kwargs
     ):
-        benchmark_uri = str(self.env.benchmark.uri)
-        action_str = self.env.action_space.names[action]
-        observation, reward, done, info = super().step(action, observation_spaces=observation_spaces,
-                                                       reward_spaces=reward_spaces, observations=observations,
-                                                       rewards=rewards)
-        self.log_list.append(
-            self.format_log(
-                benchmark_uri,
-                observation[0].flat[:] if observation else "None",
-                action_str,
-                reward[0] if not isinstance(reward, float) else reward
+        observation, reward, done, info = super().step(action, **kwargs)
+
+        if observation:                                                       
+            self.log_list.append(
+                self.format_log(
+                    benchmark_uri=str(self.env.benchmark.uri),
+                    prev_observation=self.prev_observation[0].flat[:] if observation else "None",
+                    observation=observation[0].flat[:] if observation else "None",
+                    action=self.env.action_space.names[action],
+                    prev_actions=self.env.commandline(),
+                    reward=reward[0] if not isinstance(reward, float) else reward
+                )
             )
-        )
+            self.prev_observation = observation
+            
         return observation, reward, done, info
 
     def close(self):
@@ -146,6 +163,12 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         timestamp = datetime.now().strftime("%Y-%m-%d/%H-%M-%S")
         log_dir = "/".join([root, "results", "random-" + env_name, timestamp, str(os.getpid())])
         os.makedirs(log_dir)
+
+        # Put executed command to the log 
+        with open(log_dir + "/command.txt", "w") as txt:
+            txt.write(" ".join(sys.argv))
+
+
         return log_dir
 
     @staticmethod
@@ -153,19 +176,26 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         return " ".join([str(x) for x in l])
 
     @staticmethod
-    def format_log(benchmark_uri: str, observation: list, action: str, reward: float):
+    def format_log(
+        benchmark_uri: str, 
+        prev_observation: list, 
+        observation: list, 
+        action: str, 
+        prev_actions: str, 
+        reward: float
+        ):
         obs_str = HPCToolkitCompilerEnvLoggingWrapper.list2str(observation)
-        # prev_act_str = HPCToolkitCompilerEnvLoggingWrapper.list2str()
-        prev_act_str = "Unknown-for-now"
+        prev_obs_str =  HPCToolkitCompilerEnvLoggingWrapper.list2str(prev_observation)
         return [benchmark_uri,
+                prev_obs_str,
                 obs_str,
                 action,
-                prev_act_str,
+                prev_actions,
                 str(reward)]
 
-    def prepare_header(self):
-        with open(self.log_path + "/results.csv", "w") as csv:
-            csv.write("BenchmarkName, State, Action, PrevActions, Reward\n")
+    def prepare_header(self, log_path):
+        with open(log_path + "/results.csv", "w") as csv:
+            csv.write("BenchmarkName, PrevState, State, Action, PrevActions, Reward\n")
 
     def log_to_file(self):
         # No need to dump empty log_list
@@ -175,6 +205,7 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
             for line in self.log_list:
                 csv.write(",".join(line) + "\n")
 
+        print("\nResults written to: ", self.log_path + "/results.csv\n")
         # Clear the content
         self.log_list.clear()
 

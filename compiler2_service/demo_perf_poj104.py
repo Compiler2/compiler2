@@ -40,17 +40,17 @@ import compiler2_service.paths
 
 
 from agent_py.rewards import perf_reward
-from agent_py.datasets import poj104_dataset
+from agent_py.datasets import poj104_dataset_small
 
 def register_env():
     register(
-        id="perf-v0",
+        id="compiler2-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
-                poj104_dataset.Dataset()            
+                poj104_dataset_small.Dataset()            
             ],
         },
     )
@@ -62,14 +62,21 @@ def main():
     register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("perf-v0") as env:
+    with gym.make("compiler2-v0") as env:
         inc = 0
-        for bench in env.datasets["benchmark://poj104-v0"]:
+        for bench in env.datasets["benchmark://poj104-small-v0"]:
             print("bench>>>>>>>>>> ", bench)
             try:
+                base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
+
                 env.reset(benchmark=bench)
+
                 env.send_param("save_state", "0")
-                env.send_param("apply_baseline_optimizations", "-O3 -reg2mem")
+                observation, reward, done, info = env.multistep(
+                    actions=[env.action_space.from_string(a) for a in base_actions],
+                    observation_spaces=["perf_tensor"],
+                    reward_spaces=["perf_tensor"],
+                    )
 
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
@@ -80,8 +87,8 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observations=["perf_tensor"],
-                        rewards=["perf_tensor"],
+                        observation_spaces=["perf_tensor"],
+                        reward_spaces=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")

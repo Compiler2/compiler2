@@ -15,18 +15,21 @@ class RewardScalar(Reward):
             deterministic=False,
             platform_dependent=True,
         )
-        self.baseline_runtime = 0
+        self.prev_runtime = 0
 
     def reset(self, benchmark: str, observation_view):
         print("Reward Runtime: reset")
         del benchmark  # unused
-        self.baseline_runtime = observation_view["runtime"]
+        self.prev_runtime = observation_view["runtime"]
 
     def update(self, action, observations, observation_view):
         print("Reward Runtime: update")
         del action
         del observation_view
-        return float(self.baseline_runtime - observations[0]) / self.baseline_runtime
+        new_runtime = observations[0]
+        reward = float(self.prev_runtime - new_runtime) / self.prev_runtime
+        self.prev_runtime = new_runtime
+        return reward
 
 
 class RewardTensor(Reward):
@@ -43,16 +46,20 @@ class RewardTensor(Reward):
             deterministic=False,
             platform_dependent=True,
         )
-        self.baseline_runtime = 0
+        self.prev_runtime = 0
 
     def reset(self, benchmark: str, observation_view):
         print("Reward Runtime: reset")
         del benchmark  # unused
-        self.baseline_runtime = observation_view["runtime_tensor"]
+        self.prev_runtime = observation_view["runtime_tensor"]
 
     def update(self, action, observations, observation_view):
         print("Reward Runtime: update")
         del action
         del observation_view
-        return float(self.baseline_runtime - observations[0]) / self.baseline_runtime
+        
+        new_runtime = observations[0]
+        reward = float(self.prev_runtime - new_runtime) / self.prev_runtime
+        self.prev_runtime = new_runtime        
+        return reward
 

@@ -62,8 +62,8 @@ class RandomWalker(Walker):
             with Timer() as step_time:
                 observation, reward, done, info = self.env.step(
                 action_index, 
-                observations=[self.observation],
-                rewards=[self.reward]
+                observation_spaces=[self.observation],
+                reward_spaces=[self.reward]
                 )
             
                 log_list.append(self.format_log(

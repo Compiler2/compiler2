@@ -17,14 +17,14 @@ class RewardPickle(Reward):
             deterministic=False,
             platform_dependent=True,
         )
-        self.baseline_ins_count = 0
+        self.prev_inscnt = 0
 
     def reset(self, benchmark: str, observation_view):
         print("Reward Programl: reset")
         del benchmark  # unused
         unpickled_cct = observation_view["programl"]
         g = pickle.loads(unpickled_cct)
-        self.baseline_ins_count = sum( [ 1 for _, x in g.nodes.data() if x['type'] == 1 ])
+        self.prev_inscnt = sum( [ 1 for _, x in g.nodes.data() if x['type'] == 1 ])
 
     def update(self, action, observations, observation_view):
         print("Reward Programl: update")
@@ -32,4 +32,7 @@ class RewardPickle(Reward):
         del observation_view
         g = pickle.loads(observations[0])
         new_ins_count = sum( [ 1 for _, x in g.nodes.data() if x['type'] == 1 ])
-        return float(self.baseline_ins_count - new_ins_count) / self.baseline_ins_count
+        
+        reward = float(self.prev_inscnt - new_ins_count) / self.prev_inscnt
+        self.prev_inscnt = new_ins_count        
+        return reward
