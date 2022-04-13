@@ -28,7 +28,6 @@ class experienceDataset(Dataset):
         if experience.shape[0] > experience_size:
             warnings.warn("Warning: experience greater than allowed size, dropping some data")
         self.experience = experience.head(experience_size)
-        self.experience_size = experience_size
     def __getitem__(self, i):
         # return S,A,R,S'
         return self.experience['State'].iloc[i].to(device),self.experience['Action'].iloc[i].to(device),self.experience['Reward'].iloc[i].to(device),self.experience['State_'].iloc[i].to(device),
@@ -36,8 +35,8 @@ class experienceDataset(Dataset):
         return self.experience.shape[0]
     def update_experience(self,new_experience):
         for exp in new_experience:
-          self.experience[:-1] = self.experience[1:]
-          self.experience[-1] = exp
+            self.experience[:-1] = self.experience[1:]
+            self.experience[-1] = exp
           
 with open(FLAGS.hyperparameters) as json_file:
     experience_size = json_file['experience_size']
@@ -49,8 +48,12 @@ with open(FLAGS.hyperparameters) as json_file:
     epsilon_decay = json_file['epsilon_decay']
     num_epochs = json_file['num_epochs']
     
-df = pd.read_csv(FLAGS.initial_dataset)
-experience = experienceDataset(df)
+
+if initial_dataset is None:
+    pass
+else:
+    df = pd.read_csv(FLAGS.initial_dataset)
+experience = experienceDataset(df,experience_size)
 dataLoad = DataLoader(experience,batch_size=batch_size,shuffle=True)
 
 if FLAGS.model_path is None:
@@ -110,6 +113,8 @@ def collect_experience():
                     env.reset()
     dataLoad = DataLoader(experience,batch_size=batch_size,shuffle=True)
 
+while len(experience) < experience_size:
+    collect_experience()
 for epoch in range(num_epochs):
     if FLAGS.online:
         collect_experience()
