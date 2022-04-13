@@ -1,14 +1,9 @@
 import os
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import torch.nn.functional as F
-from torch.utils.data import DataLoader, Dataset
 import random
 import numpy as np
-import pandas as pd
-from tqdm import tqdm
-from matplotlib import pyplot as plt
 
 
 device = 'cuda'
@@ -45,10 +40,10 @@ class Q_net(nn.Module):
         return self.l7(x)
 
 
-    def get_action(self, state,network,epsilon):
+    def get_action(self, state,epsilon):
         p = random.random()
         if p > epsilon:
             with torch.no_grad():
-                return torch.max(network(state),1).indices[0].item()
+                return torch.max(self.forward(state),1).indices[0].item()
         else:
             return random.randint(0,124)
