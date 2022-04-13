@@ -80,7 +80,7 @@ class Model:
         self.model.eval()
 
     def predict(self, observation):
-        next_action = 0
+        next_action = self.model.get_action(observation,0)
 
         return next_action
 
