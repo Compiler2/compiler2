@@ -28,6 +28,8 @@ setuptools.setup(
         "compiler2_service.agent_py",
         "compiler2_service.agent_py.datasets",
         "compiler2_service.agent_py.rewards",
+        "compiler2_service.analyzers",        
+        "compiler2_service.analyzers.dataset_exploration",
         "compiler2_service.benchmarks",
         "compiler2_service.benchmarks.cpu-benchmarks",
         # "compiler2_service.benchmarks.poj104_test",

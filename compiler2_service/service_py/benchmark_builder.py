@@ -174,7 +174,6 @@ class BenchmarkBuilder:
         compile_ll = deepcopy(self.compile_ll)        
         compile_ll["opt"][1:1] = opt.split()
         self.last_opt_action = opt
-        print("hackkk:", self.last_opt_action)
 
         for cmd in compile_ll.values():
             run_command(
@@ -182,7 +181,7 @@ class BenchmarkBuilder:
                 timeout=self.timeout_sec,
             )
     
-        self.is_action_effective = self.action_had_effect()
+        self.is_action_effective = self.is_action_effective or self.action_had_effect()
 
         if save_state:
             run_command(

@@ -45,7 +45,7 @@ from agent_py.datasets import hpctoolkit_dataset
 
 def register_env():
     register(
-        id="perf-v0",
+        id="compiler2-v0",
         entry_point="compiler_gym.envs:CompilerEnv",
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
@@ -85,7 +85,7 @@ def main():
     ]
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("perf-v0") as env:
+    with gym.make("compiler2-v0") as env:
 
         for bench in env.datasets["benchmark://poj104-v1"]:
 
@@ -100,8 +100,8 @@ def main():
             # try:
             #     observation, reward, done, info = env.step(
             #         action=env.action_space.sample(),
-            #         observations=["perf"],
-            #         rewards=["perf"],
+            #         observation_spaces=["perf"],
+            #         reward_spaces=["perf"],
             #     )
             # except ServiceError:
             #     print("AGENT: Timeout Error Step")

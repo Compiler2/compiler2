@@ -48,8 +48,9 @@ class Action():
 def flag_analysis(csv_path):
     last_action_factor = 0.2
     last_action_diff = 0.1
-    columns = ["BenchmarkName", "State", "Action", "PrevActions", "Reward"]
+    columns = ["BenchmarkName", "PrevState", "State", "Action", "PrevActions", "Reward"]
     df = pd.read_csv(csv_path, names=columns, header=1)
+    df['PrevActions'] = df['PrevActions'].apply(lambda x: x.split()[1:-3] if x != np.nan else [])
     action_importance = {key: Action(key) for key in df["Action"].unique()} # Format Reward, PrevReward
 
 
@@ -58,8 +59,8 @@ def flag_analysis(csv_path):
         reward = row["Reward"]
         action_importance[cur_action].personal_reward += reward
 
-        if not pd.isna(row["PrevActions"]):
-            last_action = row["PrevActions"].split()[-1]
+        if len(row["PrevActions"]) > 2:
+            last_action = row["PrevActions"][-2]
 
             if last_action not in action_importance:                
                 action_importance[last_action] = Action(last_action)

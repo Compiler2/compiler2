@@ -50,7 +50,7 @@ def main():
     init_logging(level=logging.DEBUG)
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_log_env("perf-v0") as env:
+    with compiler2_service.make_log_env("compiler2-v0") as env:
 
         benchmark_to_process = [
             "benchmark://cbench-v1/bitcount",
@@ -62,6 +62,15 @@ def main():
         for bench in benchmark_to_process:
             try:
                 env.reset(benchmark=bench)
+                observation, reward, done, info = env.multistep(
+                        actions=[0, 1, 3],
+                        observation_spaces=["perf_tensor"],
+                        reward_spaces=["perf_tensor"],
+                        )                
+                print(observation)
+                print(reward)
+                print(done)
+                print(info)                
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
             
@@ -71,8 +80,8 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observations=["perf_tensor"],
-                        rewards=["perf_tensor"],
+                        observation_spaces=["perf_tensor"],
+                        reward_spaces=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")

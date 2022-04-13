@@ -41,7 +41,7 @@ class OptimizationTarget(str, Enum):
     def make_env(self, benchmark: Union[str, Benchmark]) -> LlvmEnv:
         # env: LlvmEnv = compiler_gym.make("llvm-v0")
         import compiler2_service
-        env = compiler2_service.make("perf-v0")
+        env = compiler2_service.make("compiler2-v0")
 
         # TODO(cummins): This does not work with custom benchmarks, as the URI
         # will not be known to the new environment.
@@ -112,7 +112,7 @@ class OptimizationTarget(str, Enum):
                     assert len(final_runtimes) == runtime_count
 
                     new_env.reset()
-                    new_env.send_param("llvm.apply_baseline_optimizations", "-O3")
+                    # new_env.send_param("llvm.apply_baseline_optimizations", "-O3")
                     o3_runtimes = new_env.observation.Runtime()
                     assert len(o3_runtimes) == runtime_count
 
@@ -127,7 +127,7 @@ class OptimizationTarget(str, Enum):
             import pickle
             # Implemented similar to the Runtime OptimizationTarget.RUNTIME
             with _RUNTIME_LOCK:
-                with compiler_gym.make("perf-v0", benchmark=env.benchmark) as new_env:
+                with compiler_gym.make("compiler2-v0", benchmark=env.benchmark) as new_env:
                     # pdb.set_trace()
                     new_env.reset()
                     new_env.apply(env.state)
@@ -137,7 +137,8 @@ class OptimizationTarget(str, Enum):
 
                     new_env.reset()
                     new_env.send_param("save_state", "1")
-                    new_env.send_param("apply_baseline_optimizations", "-O3")
+                    # new_env.send_param("apply_baseline_optimizations", "-O3")
+                    
                     # Find perf observation for the -O3 baseline optimization.
                     o3_perf_tensor = new_env.observation.perf()
                     o3_cycles = o3_perf_tensor[0]

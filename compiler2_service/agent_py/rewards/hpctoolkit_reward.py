@@ -20,7 +20,7 @@ class RewardPickle(Reward):
         )
 
         self.baseline_cct = None
-        self.baseline_runtime = 0
+        self.prev_runtime = 0
 
     def reset(self, benchmark: str, observation_view):
         print("Reward HPCToolkit: reset")
@@ -28,7 +28,7 @@ class RewardPickle(Reward):
         unpickled_cct = observation_view["hpctoolkit"]
         gf = pickle.loads(unpickled_cct)
         self.baseline_cct = gf
-        self.baseline_runtime = gf.dataframe[self.reward_metric][0]
+        self.prev_runtime = gf.dataframe[self.reward_metric][0]
 
     def update(self, action, observations, observation_view):
         print("Reward HPCToolkit: update")
@@ -37,5 +37,7 @@ class RewardPickle(Reward):
 
         gf = pickle.loads(observations[0])
         new_runtime = gf.dataframe[self.reward_metric][0]
-        return float(self.baseline_runtime - new_runtime) / self.baseline_runtime
+        reward = float(self.prev_runtime - new_runtime) / self.prev_runtime
+        self.prev_runtime = new_runtime
+        return self.prev_runtime
 

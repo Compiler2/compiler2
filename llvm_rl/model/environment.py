@@ -150,7 +150,7 @@ class MyEnvironment(Environment):
             import pdb
             # pdb.set_trace()
             env = compiler2_service.make(
-                "perf-v0",
+                "compiler2-v0",
                 observation_space="perf_tensor",
                 reward_space="perf_tensor"
             )

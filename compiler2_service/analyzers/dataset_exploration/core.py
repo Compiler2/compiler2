@@ -57,21 +57,24 @@ class Walker:
     # API Function 
     ####################################################################
     def run(self):
-        log_path = self.create_log_dir(self.env.spec.id)
+        for bench in self.env.datasets[self.dataset_uri]:                
+            self.explore_benchmark(bench)
 
-        # Put executed command to the log 
-        with open(log_path + "/command.txt", "w") as txt:
-            txt.write(" ".join(sys.argv))
+        # log_path = self.create_log_dir(self.env.spec.id)
 
-        # Put experiment data to the log 
-        with open(log_path + "/results.csv", "w") as csv:
-            csv.write("BenchmarkName, State, Action, PrevActions, Reward\n")            
+        # # Put executed command to the log 
+        # with open(log_path + "/command.txt", "w") as txt:
+        #     txt.write(" ".join(sys.argv))
 
-            for bench in self.env.datasets[self.dataset_uri]:                
-                log_list = self.explore_benchmark(bench)                
-                csv.writelines(log_list)    
+        # # Put experiment data to the log 
+        # with open(log_path + "/results.csv", "w") as csv:
+        #     csv.write("BenchmarkName, State, Action, PrevActions, Reward\n")            
+
+        #     for bench in self.env.datasets[self.dataset_uri]:                
+        #         log_list = self.explore_benchmark(bench)                
+        #         csv.writelines(log_list)    
         
-        print("Log is saved here: ", log_path)
+        # print("Log is saved here: ", log_path)
 
 
     def explore_benchmark(self, bench: str) -> None:
@@ -86,14 +89,20 @@ class Walker:
         rewards = []
             
         with Timer() as episode_time:
-            self.env.reset(bench)
             self.bench_uri = str(bench)       
-            self.env.send_param("save_state", "1")
 
             for self.walk_num in range(1, self.walk_count + 1):
                 base_opt_num = random.randrange(self.max_base_opt)
                 baseline_opt = random.sample(self.env.action_space.flags, k=base_opt_num)
-                self.env.send_param("apply_baseline_optimizations", " ".join(baseline_opt))
+                # self.env.send_param("apply_baseline_optimizations", " ".join(baseline_opt))
+                self.env.reset(bench)
+                self.env.send_param("save_state", "1")
+
+                self.env.multistep(
+                    actions=[self.env.action_space.from_string(a) for a in baseline_opt],
+                    observation_spaces=[self.observation],
+                    reward_spaces=[self.reward]
+                    )
 
                 new_log_list = self.walk(self.step_count, baseline_opt)
                 if new_log_list == None:

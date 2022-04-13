@@ -1,5 +1,5 @@
 ---
-id: perf-v0
+id: compiler2-v0
 max_episode_steps: 5
 observation_space: runtime_tensor
 reward_space: runtime_tensor

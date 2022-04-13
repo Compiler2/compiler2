@@ -192,24 +192,12 @@ class HPCToolkitCompilationSession(CompilationSession):
         if key == "save_state":
             self.save_state = False if value == "0" else True
             return "Succeeded"
-        elif key == "apply_baseline_optimizations":                        
-            self.benchmark.reset_actions()
-            self.benchmark.apply_action(value, self.save_state)
-            return "Succeeded"
-
         else:
             print("handle_session_parameter Unsuported key:", key)
             return ""
 
-    def fork(self):
-        # There is a problem with forking.
-        from copy import deepcopy
-        # FIXME vi3: I don't know what is the proper way to fork a session.
-        new_fork = deepcopy(self)
-        return new_fork
 
     def apply_action(self, action: Event) -> Tuple[bool, Optional[ActionSpace], bool]:
-
         num_choices = len(self.action_spaces[0].space.named_discrete.name)
 
         # Vladimir: I guess choosing multiple actions at once is not possible anymore.
@@ -233,16 +221,18 @@ class HPCToolkitCompilationSession(CompilationSession):
             )
 
             self.benchmark.apply_action(opt=opt, save_state=self.save_state)
-            action_had_no_effect = not self.benchmark.is_action_effective
+            action_had_no_effect = not self.benchmark.is_action_effective            
+
+        print(f"\naction_had_no_effect ({opt}) = {action_had_no_effect}\n")
 
         end_of_session = False
         new_action_space = None
         return (end_of_session, new_action_space, action_had_no_effect)
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
-        logging.info("Computing observation from space %s", observation_space.name)
-        if not self.benchmark.is_action_effective:
-            print("get_observation: ACTION NOT EFFECTIVE RETURN >>>>>>>>>> ")
+        logging.info("Computing observation from space %s", observation_space.name)   
+        if not self.benchmark.is_action_effective:            
+            print("get_observation: Fast return prev_observation ")
             return self.prev_observation
 
         if self.profiler == None or observation_space.name != self.profiler.name:
@@ -301,8 +291,17 @@ class HPCToolkitCompilationSession(CompilationSession):
             else:
                 raise KeyError(observation_space.name)
 
+        self.benchmark.is_action_effective = False # This is necessary! (multi)step call get_obs, apply_act...apply_act get_obs
         self.prev_observation = self.profiler.get_observation()
         return self.prev_observation
+
+
+    def fork(self):
+        # There is a problem with forking.
+        from copy import deepcopy
+        # FIXME vi3: I don't know what is the proper way to fork a session.
+        new_fork = deepcopy(self)
+        return new_fork
 
 
 if __name__ == "__main__":

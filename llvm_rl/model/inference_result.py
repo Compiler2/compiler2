@@ -90,7 +90,7 @@ class InferenceResult(BaseModel):
                     len(runtimes_init) == runtimes_count
                 ), f"{len(runtimes_init)} != {runtimes_count}"
 
-                env.send_param("llvm.apply_baseline_optimizations", "-O3")
+                # env.send_param("llvm.apply_baseline_optimizations", "-O3")
                 env.unwrapped.observation["Runtime"]  # warmup
                 runtimes_o3 = env.unwrapped.observation["Runtime"].tolist()
                 assert (

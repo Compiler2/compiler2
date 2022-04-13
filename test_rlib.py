@@ -21,7 +21,7 @@ def make_env() -> compiler_gym.envs.CompilerEnv:
     #     reward_space="IrInstructionCountOz",
     # )
     env = compiler2_service.make(
-        "perf-v0",
+        "compiler2-v0",
         observation_space="runtime_tensor",
         reward_space="runtime_tensor"
     )
