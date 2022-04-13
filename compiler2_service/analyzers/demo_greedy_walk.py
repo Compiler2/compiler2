@@ -42,8 +42,9 @@ from compiler_gym.util.timer import Timer
 
 from joblib import Parallel, delayed
 
-flags.DEFINE_integer("walk_count", 10, "The maximum number of walks.")
-flags.DEFINE_integer("step_count", 20, "The maximum number of steps.")
+flags.DEFINE_integer("seek_count", 10, "The number seek steps before you decide.")
+flags.DEFINE_integer("walk_count", 10, "The number of walks.")
+flags.DEFINE_integer("step_count", 20, "The number of steps.")
 flags.DEFINE_string("data_set", "benchmark://poj104-v0", "Data set.")
 
 FLAGS = flags.FLAGS
@@ -60,21 +61,21 @@ def register_perf_session():
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
-                hpctoolkit_dataset.Dataset(),
-                # poj104_dataset.Dataset(),    
+                # hpctoolkit_dataset.Dataset(),
+                poj104_dataset.Dataset(),    
                 poj104_dataset_small.Dataset(),    
             ],
         },
     )
 
 
-
+import logging
 def main(argv):
     """Main entry point."""
     assert len(argv) == 1, f"Unrecognized flags: {argv[1:]}"
     # This two lines try to suppress logging to stdout.
-    import logging
     logging.basicConfig(level=logging.CRITICAL, force=True)
+    # logging.basicConfig(stream=sys.stdout, level=logging.DEBUG, force=True)
 
     register_perf_session()
 
@@ -84,7 +85,8 @@ def main(argv):
                               observation=FLAGS.observation,
                               reward=FLAGS.reward,
                               walk_count=max(1, FLAGS.walk_count),
-                              step_count=max(1, FLAGS.step_count),                               
+                              step_count=max(1, FLAGS.step_count),   
+                              seek_count=max(0, FLAGS.seek_count)
                               )
 
 
