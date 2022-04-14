@@ -38,7 +38,7 @@ from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
 import compiler2_service.paths
-from compiler2_service import HPCToolkitCompilerEnvLoggingWrapper
+from compiler2_service import HPCToolkitCompilerEnvWrapper
 
 
 from agent_py.rewards import perf_reward
@@ -50,7 +50,7 @@ def main():
     init_logging(level=logging.DEBUG)
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_log_env("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
 
         benchmark_to_process = [
             "benchmark://cbench-v1/bitcount",
