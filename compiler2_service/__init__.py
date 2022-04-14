@@ -199,7 +199,7 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
 
     def prepare_header(self, log_path):
         with open(log_path + "/results.csv", "w") as csv:
-            csv.write("BenchmarkName, PrevState, State, Action, PrevActions, Reward\n")
+            csv.write("BenchmarkName,State,NextState,Action,CommandLine,Reward\n")
 
     def log_to_file(self):
         # No need to dump empty log_list
