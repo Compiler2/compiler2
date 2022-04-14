@@ -112,18 +112,46 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         signal.signal(signal.SIGINT, self.log_to_file)
 
 
+    def step(  # pylint: disable=arguments-differ
+        self,
+        action,
+        seek = False,
+        observation_spaces = None,
+        reward_spaces = None,
+        observations = None,
+        rewards = None,
+    ):
+        if observations is not None:
+            logging.warn(
+                "Argument `observations` of CompilerEnv.step has been "
+                "renamed `observation_spaces`. Please update your code",
+                category=DeprecationWarning,
+            )
+            observation_spaces = observations
+        if rewards is not None:
+            logging.warn(
+                "Argument `rewards` of CompilerEnv.step has been renamed "
+                "`reward_spaces`. Please update your code",
+                category=DeprecationWarning,
+            )
+            reward_spaces = rewards
+        return self.multistep(  actions=[action], 
+                                seek=seek, 
+                                observation_spaces=observation_spaces, 
+                                reward_spaces=reward_spaces)
+
+
     def multistep(
         self,
         actions,
+        seek=False,
         observation_spaces=None,
         reward_spaces=None,
         **kwargs
     ):
         logging.info("*******  **************** Apply multi-step ***********************")
-        
 
         observation, reward, done, info = super().multistep(actions, observation_spaces, reward_spaces, **kwargs)
-    
         # Log only when you have 1 action 
         if len(actions) == 1 and observation:     
             # Log only if you have previous_observation
@@ -141,6 +169,8 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
 
             self.prev_observation = observation[0]
 
+        if seek:
+            self.env.actions = self.env.actions[:-len(actions)]
 
         return observation, reward, done, info
 
