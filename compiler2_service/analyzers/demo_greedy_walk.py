@@ -80,7 +80,8 @@ def main(argv):
 
     register_perf_session()
 
-    with compiler2_service.make_log_env("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+
         walker = GreedyWalker(env=env, 
                               dataset_uri = FLAGS.data_set,
                               observation=FLAGS.observation,

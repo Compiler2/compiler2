@@ -5,7 +5,7 @@
 """This script demonstrates how the Python example service without needing
 to use the bazel build system. Usage:
 
-    $ python compiler2_service/demo_without_bazel.py
+    $ python predict_sequence.py --model_path=./notebooks/deep_q.pt --flag_count=4
 
 It is equivalent in behavior to the demo.py script in this directory.
 """
@@ -54,8 +54,8 @@ from absl import app, flags
 
 
 flags.DEFINE_string("model_path", "", "path to the model (.pt)")
-flags.DEFINE_integer("flag_count", 20, "The maximum number of steps.")
-flags.DEFINE_string("data_set", "benchmark://poj104-v0", "Data set.")
+flags.DEFINE_integer("flag_count", 10, "The maximum number of steps.")
+# flags.DEFINE_string("data_set", "benchmark://poj104-small-v0", "Data set.")
 
 FLAGS = flags.FLAGS
 
@@ -100,9 +100,8 @@ def main(argv):
     # Use debug verbosity to print out extra logging information.
     logging.basicConfig(level=logging.CRITICAL, force=True)
     register_env()
-
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0") as env:
         model = Model(env.action_spaces[0])
         inc = 0
         for bench in env.datasets["benchmark://poj104-small-v0"]:
@@ -134,11 +133,12 @@ def main(argv):
 
                     for i, next_action in enumerate(best_actions):
                         observation, reward, done, info = env.step(
+                            seek=True,
                             action=next_action,
                             observation_spaces=["perf_tensor"],
                             reward_spaces=["perf_tensor"],
                         )
-                        env.actions.pop()
+                        # env.actions.pop()
 
                         if info.get('action_had_no_effect'):
                             continue

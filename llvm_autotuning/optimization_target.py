@@ -67,7 +67,7 @@ class OptimizationTarget(str, Enum):
         env = JustKeepGoingEnv(env)
         if self.value == OptimizationTarget.PERF_LOG:
             # Wrapper for logging.
-            env = compiler2_service.HPCToolkitCompilerEnvLoggingWrapper(env)
+            env = compiler2_service.HPCToolkitCompilerEnvWrapper(env)
         return env
 
     def final_reward(self, env: LlvmEnv, runtime_count: int = 30) -> float:

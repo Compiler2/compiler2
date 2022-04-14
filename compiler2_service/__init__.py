@@ -13,6 +13,8 @@ import shutil
 import sys
 import logging
 import signal
+import pdb
+
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
     # Copied from CompilerGym and adapted.
@@ -100,14 +102,12 @@ class HPCToolkitCompilerEnv(CompilerEnv):
             os.unlink(tmp_path)
         return path
 
-import pdb
 
-class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
-    def __init__(self, env):
+class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
+    def __init__(self, env, logging=False):
         super().__init__(env)
+        self.logging = logging
         self.log_list = []
-        self.log_path = self.create_log_dir(self.env.spec.id)
-        self.prepare_header(self.log_path)
         self.prev_observation = None
         signal.signal(signal.SIGINT, self.log_to_file)
 
@@ -153,7 +153,7 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
 
         observation, reward, done, info = super().multistep(actions, observation_spaces, reward_spaces, **kwargs)
         # Log only when you have 1 action 
-        if len(actions) == 1 and observation:     
+        if self.logging and len(actions) == 1 and observation:     
             # Log only if you have previous_observation
             if type(self.prev_observation) != type(None):    
                 self.log_list.append(
@@ -218,8 +218,8 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         prev_actions: str, 
         reward: float
         ):
-        prev_obs_str =  HPCToolkitCompilerEnvLoggingWrapper.list2str(prev_observation)
-        obs_str = HPCToolkitCompilerEnvLoggingWrapper.list2str(observation)
+        prev_obs_str =  HPCToolkitCompilerEnvWrapper.list2str(prev_observation)
+        obs_str = HPCToolkitCompilerEnvWrapper.list2str(observation)
         return [benchmark_uri,
                 prev_obs_str,
                 obs_str,
@@ -227,19 +227,18 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
                 prev_actions,
                 str(reward)]
 
-    def prepare_header(self, log_path):
-        with open(log_path + "/results.csv", "w") as csv:
-            csv.write("BenchmarkName,State,NextState,Action,CommandLine,Reward\n")
 
     def log_to_file(self):
-        # No need to dump empty log_list
-        if not self.log_list:
+        if len(self.log_list) == 0:
             return
-        with open(self.log_path + "/results.csv", "a") as csv:
+
+        log_path = self.create_log_dir(self.env.spec.id)
+        with open(log_path + "/results.csv", "w") as csv:
+            csv.write("BenchmarkName,State,NextState,Action,CommandLine,Reward\n")
             for line in self.log_list:
                 csv.write(",".join(line) + "\n")
 
-        print("\nResults written to: ", self.log_path + "/results.csv\n")
+        print("\nResults written to: ", log_path + "/results.csv\n")
         # Clear the content
         self.log_list.clear()
 
@@ -297,5 +296,7 @@ def make(id: str, **kwargs):
     return compiler_gym.make(id, **kwargs)
 
 
-def make_log_env(id, **kwargs):
-    return HPCToolkitCompilerEnvLoggingWrapper(make(id, **kwargs))
+def make_env(id, logging=False, **kwargs):
+    return HPCToolkitCompilerEnvWrapper(make(id, **kwargs), logging=logging)
+
+
