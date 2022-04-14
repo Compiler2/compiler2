@@ -58,16 +58,15 @@ class GreedyWalker(Walker):
                 with Timer() as step_time:
                     observation, reward, done, info = self.env.step(
                         action_index, 
+                        seek=True,
                         observation_spaces=[self.observation],
                         reward_spaces=[self.reward]
                     )
-                
                     rewards[action_index] = reward[0]
 
                     if done:
                         logging.critical("Episode ended by environment")
                         break
-
 
             best_action_index = max(rewards, key=rewards.get)
             self.env.send_param("save_state", "1")
