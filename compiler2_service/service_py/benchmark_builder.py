@@ -30,7 +30,6 @@ from compiler2_service.service_py.utils import run_command, proto_buff_container
 ## Build benchmarks
 class BenchmarkBuilder:
     def __init__(self, working_directory: Path, benchmark: Benchmark, timeout_sec: float):
-        # print('\nBenchmark: ', benchmark.uri)
         self.timeout_sec = timeout_sec
         self.clang = str(llvm.clang_path())
         self.llvm_dis = str(llvm.llvm_dis_path())
@@ -73,11 +72,11 @@ class BenchmarkBuilder:
         self.save_to_ll(benchmark)
         self.print_header_ll()
         self.set_build_run_cmd(benchmark)
-        print("\n compile: ")
+        logging.info("\n compile: ")
         print_list(list(self.compile_ll.values()))
-        print("\n pre_run_cmd: ")
+        logging.info("\n pre_run_cmd: ")
         print_list(self.pre_run_cmd)
-        print("\n run_cmd: ")
+        logging.info("\n run_cmd: ")
         print_list(self.run_cmd)
 
         self.execute_pre_run_cmd()
@@ -124,7 +123,7 @@ class BenchmarkBuilder:
             for i in range(2):
                 s = f.readline()
 
-            print(s)
+            logging.info(s)
 
     def set_build_run_cmd(self, benchmark):
 

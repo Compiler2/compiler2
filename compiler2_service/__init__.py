@@ -11,7 +11,8 @@ from typing import cast, List, Union, Optional
 import os
 import shutil
 import sys
-
+import logging
+import signal
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
     # Copied from CompilerGym and adapted.
@@ -108,42 +109,45 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         self.log_path = self.create_log_dir(self.env.spec.id)
         self.prepare_header(self.log_path)
         self.prev_observation = None
+        signal.signal(signal.SIGINT, self.log_to_file)
+
 
     def multistep(
         self,
+        actions,
+        observation_spaces=None,
+        reward_spaces=None,
         **kwargs
     ):
-        ret_multistep = super().multistep(**kwargs)
-        self.prev_observation = ret_multistep[0]
-        return ret_multistep
+        logging.info("*******  **************** Apply multi-step ***********************")
+        
+
+        observation, reward, done, info = super().multistep(actions, observation_spaces, reward_spaces, **kwargs)
+    
+        # Log only when you have 1 action 
+        if len(actions) == 1 and observation:     
+            # Log only if you have previous_observation
+            if type(self.prev_observation) != type(None):    
+                self.log_list.append(
+                    self.format_log(
+                        benchmark_uri=str(self.env.benchmark.uri),
+                        prev_observation=self.prev_observation[0].flat[:],
+                        observation=observation[0].flat[:],
+                        action=self.env.action_space.names[actions[0]],
+                        prev_actions=self.env.commandline(),
+                        reward=reward[0] if not isinstance(reward, float) else reward
+                    )
+                )
+
+            self.prev_observation = observation[0]
+
+
+        return observation, reward, done, info
 
     # def observation(self, observation):
     #     return np.concatenate((observation, self.histogram)).astype(
     #         self.env.observation_space.dtype
     #     )
-
-
-    def step(  # pylint: disable=arguments-differ
-            self,
-            action,
-            **kwargs
-    ):
-        observation, reward, done, info = super().step(action, **kwargs)
-
-        if observation:                                                       
-            self.log_list.append(
-                self.format_log(
-                    benchmark_uri=str(self.env.benchmark.uri),
-                    prev_observation=self.prev_observation[0].flat[:] if observation else "None",
-                    observation=observation[0].flat[:] if observation else "None",
-                    action=self.env.action_space.names[action],
-                    prev_actions=self.env.commandline(),
-                    reward=reward[0] if not isinstance(reward, float) else reward
-                )
-            )
-            self.prev_observation = observation
-            
-        return observation, reward, done, info
 
     def close(self):
         # Dump current content of the log_list to a file.
@@ -184,8 +188,8 @@ class HPCToolkitCompilerEnvLoggingWrapper(CompilerEnvWrapper):
         prev_actions: str, 
         reward: float
         ):
-        obs_str = HPCToolkitCompilerEnvLoggingWrapper.list2str(observation)
         prev_obs_str =  HPCToolkitCompilerEnvLoggingWrapper.list2str(prev_observation)
+        obs_str = HPCToolkitCompilerEnvLoggingWrapper.list2str(observation)
         return [benchmark_uri,
                 prev_obs_str,
                 obs_str,
@@ -250,20 +254,16 @@ def register_env():
                 CsmithDataset(site_data_path("llvm-v0")),
                 CHStoneDataset(site_data_path("llvm-v0")),
                 hpctoolkit_dataset.Dataset(),
-                # poj104_dataset.Dataset(),
+                poj104_dataset.Dataset(),
                 poj104_dataset_small.Dataset()
             ],
         },
     )
-
-
 register_env()
-
 
 def make(id: str, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""
     import compiler_gym
-    register_env()
     return compiler_gym.make(id, **kwargs)
 
 

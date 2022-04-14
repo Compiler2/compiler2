@@ -12,6 +12,8 @@ import compiler2_service.paths
 from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
+from compiler_gym.util.decorators import memoized_property
+
 
 BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
 INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/input"
@@ -24,7 +26,7 @@ class Dataset(Dataset):
             description="POJ104 - dataset of 50k student code on 104 problems",
             site_data_base=site_data_path("example_dataset"),
         )
-
+ 
         benchmark_config = BenchmarkDynamicConfig(
                     build_cmd=Command(
                         # $CC is replaced with clang command,
@@ -54,7 +56,12 @@ class Dataset(Dataset):
                     benchmark_config
                 ) 
 
+    @property
+    def size(self) -> int:
+        return len(self._benchmarks)
 
+    def __len__(self) -> int:
+        return self.size
 
     @staticmethod
     def preprocess(src: Path) -> bytes:

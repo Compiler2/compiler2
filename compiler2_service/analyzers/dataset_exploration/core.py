@@ -59,7 +59,8 @@ class Walker:
     # API Function 
     ####################################################################
     def run(self):
-        for bench in tqdm(self.env.datasets[self.dataset_uri]):
+        data_set = self.env.datasets[self.dataset_uri]
+        for bench in tqdm(data_set, total=len(data_set)):
             self.explore_benchmark(bench)
 
     def explore_benchmark(self, bench: str) -> None:
@@ -76,10 +77,9 @@ class Walker:
         with Timer() as episode_time:
             self.bench_uri = str(bench)       
 
-            for self.walk_num in tqdm(range(1, self.walk_count + 1)):            
+            for self.walk_num in range(1, self.walk_count + 1):
                 base_opt_num = random.randrange(self.max_base_opt)
                 baseline_opt = random.sample(self.env.action_space.flags, k=base_opt_num)
-                # self.env.send_param("apply_baseline_optimizations", " ".join(baseline_opt))
                 self.env.reset(bench)
                 self.env.send_param("save_state", "1")
 

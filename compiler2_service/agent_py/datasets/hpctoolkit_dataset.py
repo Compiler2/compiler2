@@ -64,6 +64,13 @@ class Dataset(Dataset):
             ),
         }
 
+    @property
+    def size(self) -> int:
+        return len(self._benchmarks)
+
+    def __len__(self) -> int:
+        return self.size
+        
     @staticmethod
     def preprocess(src: Path) -> bytes:
         """Front a C source through the compiler frontend."""

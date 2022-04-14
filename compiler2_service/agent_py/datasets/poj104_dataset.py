@@ -13,7 +13,6 @@ from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
-
 BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_training/code"
 INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_training/input"
 
@@ -46,7 +45,8 @@ class Dataset(Dataset):
         benchmark_prefix = "benchmark://poj104-v0"
 
         example_files = os.listdir(BENCHMARKS_PATH)
-        for example_filename in example_files:
+        for i, example_filename in enumerate(example_files):
+            if i == 10: break
             example_uri = benchmark_prefix + '/' + example_filename.rstrip('.c')
             self._benchmarks[example_uri] = \
                 benchmark_from_file_contents(
@@ -56,7 +56,13 @@ class Dataset(Dataset):
                 ) 
 
 
+    @property
+    def size(self) -> int:
+        return len(self._benchmarks)
 
+    def __len__(self) -> int:
+        return self.size
+        
     @staticmethod
     def preprocess(src: Path) -> bytes:
         """Front a C source through the compiler frontend."""

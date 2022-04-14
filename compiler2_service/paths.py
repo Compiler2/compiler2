@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 import subprocess
 from typing import Iterable
+import logging
 
 import subprocess
 import pdb
@@ -27,6 +28,6 @@ COMPILER2_SERVICE_PY: Path = Path(
     COMPILER2_ROOT / "compiler2_service/service_py/example_service.py"
 )
 
-print("What is the path", COMPILER2_SERVICE_PY)
-print("Is that file: ", COMPILER2_SERVICE_PY.is_file())
+logging.info("What is the path", COMPILER2_SERVICE_PY)
+logging.info("Is that file: ", COMPILER2_SERVICE_PY.is_file())
 assert COMPILER2_SERVICE_PY.is_file(), "Service script not found"
