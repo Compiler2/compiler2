@@ -10,6 +10,7 @@ Example usage:
     $ python demo_random_walk.py --walk_count=2 --step_count=4 --data_set=benchmark://poj104-small-v0 --reward=perf_tensor --observation=perf_tensor
 
 """
+from importlib.metadata import entry_points
 import random
 import pdb
 import uuid
@@ -49,13 +50,13 @@ flags.DEFINE_string("data_set", "benchmark://poj104-v0", "Data set.")
 
 FLAGS = flags.FLAGS
 
-
+import compiler2_service
 
 
 def register_perf_session():
     register(
         id="compiler2-v0",
-        entry_point="compiler_gym.envs:CompilerEnv",
+        entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],

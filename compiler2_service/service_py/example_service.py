@@ -171,11 +171,11 @@ class HPCToolkitCompilationSession(CompilationSession):
         benchmark: Benchmark,
     ):
         super().__init__(working_directory, action_space, benchmark)
-        logging.info("Started a compilation session for %s", benchmark.uri)
+        logging.info(f"Started a compilation session for {benchmark.uri}")
         self._action_space = action_space
 
         os.chdir(str(working_directory))
-        print("\n", str(working_directory), "\n")
+        logging.info(f"\n\nWorking_dir = {str(working_directory)}\n")
         # pdb.set_trace()
 
         self.save_state = False
@@ -193,7 +193,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             self.save_state = False if value == "0" else True
             return "Succeeded"
         else:
-            print("handle_session_parameter Unsuported key:", key)
+            logging.critical("handle_session_parameter Unsuported key:", key)
             return ""
 
 
@@ -211,32 +211,29 @@ class HPCToolkitCompilationSession(CompilationSession):
         # Compile benchmark with given optimization
         opt = self._action_space.space.named_discrete.name[choice_index]
         if opt in self.blacklisted_actions:
-            print("Info: action %s is blacklisted"%self.blacklisted_actions)
+            logging.info(f"Info: action {self.blacklisted_actions} is blacklisted")
             action_had_no_effect = True
         else:
             logging.info(
-                "Applying action %d, equivalent command-line arguments: '%s'",
-                choice_index,
-                opt,
+                f"Applying action {choice_index}, equivalent command-line arguments: '{opt}'"
             )
 
             self.benchmark.apply_action(opt=opt, save_state=self.save_state)
             action_had_no_effect = not self.benchmark.is_action_effective            
 
-        print(f"\naction_had_no_effect ({opt}) = {action_had_no_effect}\n")
+        logging.info(f"\naction_had_no_effect ({opt}) = {action_had_no_effect}\n")
 
         end_of_session = False
         new_action_space = None
         return (end_of_session, new_action_space, action_had_no_effect)
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
-        logging.info("Computing observation from space %s", observation_space.name)   
+        logging.info(f"Computing observation from space {observation_space.name}")  
         if not self.benchmark.is_action_effective:            
-            print("get_observation: Fast return prev_observation ")
+            logging.info(f"get_observation: Fast return prev_observation {self.prev_observation}")
             return self.prev_observation
 
         if self.profiler == None or observation_space.name != self.profiler.name:
-            print(observation_space.name)
             if observation_space.name == "runtime":
                 self.profiler = runtime.Profiler(observation_space.name,
                                                  self.benchmark.run_cmd,
@@ -293,6 +290,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         self.benchmark.is_action_effective = False # This is necessary! (multi)step call get_obs, apply_act...apply_act get_obs
         self.prev_observation = self.profiler.get_observation()
+        logging.info(f"get_observation: Slow return prev_observation {self.prev_observation}")
         return self.prev_observation
 
 

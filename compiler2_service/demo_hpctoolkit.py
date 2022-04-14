@@ -27,21 +27,16 @@ from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
-import compiler2_service.paths
+import compiler2_service
 
 from agent_py.rewards import hpctoolkit_reward
 from agent_py.datasets import hpctoolkit_dataset
 
 
-# import sys
-# for x in sys.path:
-#     print(x)
-# pdb.set_trace()
-
 def register_env():
     register(
         id="hpctoolkit-llvm-v0",
-        entry_point="compiler_gym.envs:CompilerEnv",
+        entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [hpctoolkit_reward.RewardPickle()],

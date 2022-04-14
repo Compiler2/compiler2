@@ -36,7 +36,7 @@ from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
-import compiler2_service.paths
+import compiler2_service
 
 
 from agent_py.rewards import perf_reward
@@ -45,7 +45,7 @@ from agent_py.datasets import poj104_dataset_small
 def register_env():
     register(
         id="compiler2-v0",
-        entry_point="compiler_gym.envs:CompilerEnv",
+        entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],
@@ -68,7 +68,7 @@ def main():
             print("bench>>>>>>>>>> ", bench)
             try:
                 base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
-
+                pdb.set_trace()
                 env.reset(benchmark=bench)
 
                 env.send_param("save_state", "0")

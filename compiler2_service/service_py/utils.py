@@ -9,7 +9,7 @@ from typing import List, Optional, Tuple
 from signal import Signals
 from subprocess import Popen, run
 from typing import List
-
+import logging
 
 def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
     if '<' in cmd:
@@ -33,7 +33,7 @@ def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=sub
                 pass
         
         stdout, stderr = process.communicate(timeout=timeout)
-        # print("ERRORCODE:", process.returncode, "cmd:", cmd)
+        # logging.info("ERRORCODE:", process.returncode, "cmd:", cmd)
 
         if process.returncode:
             returncode = process.returncode
@@ -115,11 +115,11 @@ def print_list(cmd):
         d = depth(cmd)
 
     if d == 1:
-        print(*cmd)
+        logging.info(" ".join(cmd))
     elif d == 2:
         for x in cmd:
-            print(*x, sep=" ")
+            logging.info(" ".join(x))
     else:
-        print(cmd)
+        logging.info(cmd)
 
-    print("\n")
+    logging.info("\n")

@@ -54,7 +54,7 @@ FLAGS = flags.FLAGS
 def register_perf_session():
     register(
         id="compiler2-v0",
-        entry_point="compiler_gym.envs:CompilerEnv",
+        entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],

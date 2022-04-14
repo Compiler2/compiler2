@@ -9,13 +9,17 @@ to use the bazel build system. Usage:
 
 It is equivalent in behavior to the demo.py script in this directory.
 """
+from importlib.metadata import entry_points
 import logging
 import os
 import pdb
 import pickle
 import subprocess
+import random
 from pathlib import Path
 from typing import Iterable
+
+from zmq import device
 import numpy as np
 import gym
 
@@ -36,11 +40,13 @@ from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
+import compiler2_service
 import compiler2_service.paths
 
 
-from agent_py.rewards import perf_reward
-from agent_py.datasets import poj104_dataset_small
+from compiler2_service.agent_py.rewards import perf_reward
+from compiler2_service.agent_py.datasets import poj104_dataset_small
+
 
 import torch
 
@@ -57,7 +63,7 @@ FLAGS = flags.FLAGS
 def register_env():
     register(
         id="compiler2-v0",
-        entry_point="compiler_gym.envs:CompilerEnv",
+        entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],
@@ -70,66 +76,113 @@ def register_env():
 
 
 class Model:
-    def __init__(self):
+    def __init__(self, action_space):
         # device = torch.device("cuda")
         # model = Q_net(*args, **kwargs)
         # model.load_state_dict(torch.load(FLAGS.model_path))
         # model.to(device)
-
+        self.action_space = action_space
         self.model = torch.jit.load(FLAGS.model_path)
         self.model.eval()
 
-    def predict(self, observation):
-        next_action = self.model.get_action(observation,0)
+    def predict_actions(self, state)-> list:
+        state = torch.tensor(state).to('cuda').float()
+        with torch.no_grad():
+            pred = self.model.forward(state)
+            logging.info(f'prediction:\n{torch.sort(pred, descending=True)}\n')
+            return torch.sort(pred, descending=True).indices[0].tolist()
 
-        return next_action
+            return self.action_space.sample()
 
 
-def main():
-
-    model = Model()
+def main(argv):
+    
     # Use debug verbosity to print out extra logging information.
-    init_logging(level=logging.DEBUG)
+    logging.basicConfig(level=logging.CRITICAL, force=True)
     register_env()
 
     # Create the environment using the regular gym.make(...) interface.
     with gym.make("compiler2-v0") as env:
+        model = Model(env.action_spaces[0])
         inc = 0
         for bench in env.datasets["benchmark://poj104-small-v0"]:
-            print("bench>>>>>>>>>> ", bench)
+            logging.critical(f"bench>>>>>>>>>> {bench}")
             try:
 
                 env.reset(benchmark=bench)
-                env.send_param("save_state", "0")
+                env.send_param("save_state", "1")
+
+                base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
+                observation, reward, done, info = env.multistep(
+                    actions=[env.action_space.from_string(a) for a in base_actions],
+                    observation_spaces=["perf_tensor"],
+                    reward_spaces=["perf_tensor"],
+                    )            
 
             except ServiceError:
-                print("AGENT: Timeout Error Reset")
+                logging.critical("AGENT: Timeout Error Reset")
             
-            pdb.set_trace()
-            for i in range(FLAGS.flag_count):
-                print("Main: step = ", i)
-                try:
+            observation = env.observation["perf_tensor"]
+            cycles_base = observation[0].flat[0] 
+            cycles_final = 0
 
-                    next_action = model.predict()
-                
+            for i in range(FLAGS.flag_count):
+                try:
+                    best_actions = model.predict_actions(observation)
+                    env.send_param("save_state", "0")
+                    chosen_action = None
+
+                    for i, next_action in enumerate(best_actions):
+                        observation, reward, done, info = env.step(
+                            action=next_action,
+                            observation_spaces=["perf_tensor"],
+                            reward_spaces=["perf_tensor"],
+                        )
+                        env.actions.pop()
+
+                        if info.get('action_had_no_effect'):
+                            continue
+                        else:
+                            logging.critical(f">>>>>>>>>>>>{i}. Chosen Action = {next_action} , Reward = {reward}")
+                            chosen_action = next_action
+                            break
+
+
+
+                    if chosen_action == None:
+                        logging.critical("PROBLEM: No action is effective")
+                        break
+                    
+                    env.send_param("save_state", "1")
                     observation, reward, done, info = env.step(
-                        action=next_action,
+                        action=chosen_action,
                         observation_spaces=["perf_tensor"],
                         reward_spaces=["perf_tensor"],
                     )
+                    observation = observation[0]
+
+                    
                 except ServiceError:
-                    print("AGENT: Timeout Error Step")
+                    logging.critical("AGENT: Timeout Error Step")
                     continue
 
-                print(observation)
-                print(reward)
-                print(done)
-                print(info)
-
+                # logging.info(observation)
+                # logging.info(reward)
+                # logging.info(done)
+                # logging.info(info)
+                cycles_final = observation[0].flat[0] 
                 if done:
                     env.reset()
+            logging.critical(f'-------------------------------------------------------------------')
+            logging.critical(f'cycles_base = {cycles_base} cycles_final= {cycles_final}')
+            logging.critical(f'Final reward = {float(cycles_base - cycles_final) / cycles_base}')
+            logging.critical(f"Final cmd: {env.commandline()}")            
+            logging.critical(f'-------------------------------------------------------------------')
+            
             inc += 1
-        print("I run %d benchmarks." % inc)
+
+
+        logging.info(f"I run {inc} benchmarks.")
 
 
 
