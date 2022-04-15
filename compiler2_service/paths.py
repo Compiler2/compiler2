@@ -28,6 +28,6 @@ COMPILER2_SERVICE_PY: Path = Path(
     COMPILER2_ROOT / "compiler2_service/service_py/example_service.py"
 )
 
-logging.info("What is the path", COMPILER2_SERVICE_PY)
-logging.info("Is that file: ", COMPILER2_SERVICE_PY.is_file())
+logging.info(f"What is the path {COMPILER2_SERVICE_PY}")
+logging.info(f"Is that file: {COMPILER2_SERVICE_PY.is_file()}")
 assert COMPILER2_SERVICE_PY.is_file(), "Service script not found"
