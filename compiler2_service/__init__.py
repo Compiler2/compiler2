@@ -109,8 +109,13 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
         self.logging = logging
         self.log_list = []
         self.prev_observation = None
-        signal.signal(signal.SIGINT, self.log_to_file)
-
+        try:
+            signal.signal(signal.SIGINT, self.log_to_file)
+        except Exception:
+            print("Problem while registering the CTRL+C event")
+            # FIXME: See what to do when multiple threads are running within the same process.
+            import traceback
+            traceback.print_exc()
 
     def step(  # pylint: disable=arguments-differ
         self,
