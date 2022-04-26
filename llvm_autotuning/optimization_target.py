@@ -67,7 +67,7 @@ class OptimizationTarget(str, Enum):
         env = JustKeepGoingEnv(env)
         if self.value == OptimizationTarget.PERF_LOG:
             # Wrapper for logging.
-            env = compiler2_service.HPCToolkitCompilerEnvWrapper(env)
+            env = compiler2_service.HPCToolkitCompilerEnvWrapper(env, logging=True)
         return env
 
     def final_reward(self, env: LlvmEnv, runtime_count: int = 30) -> float:
@@ -133,7 +133,7 @@ class OptimizationTarget(str, Enum):
                     new_env.apply(env.state)
                     # Find perf observation for the state determined by the auto tuner.
                     perf_observation_tensor = new_env.observation.perf()
-                    perf_cycles = perf_observation_tensor[0]
+                    perf_cycles = perf_observation_tensor[0][0]
 
                     new_env.reset()
                     new_env.send_param("save_state", "1")
@@ -141,7 +141,7 @@ class OptimizationTarget(str, Enum):
                     
                     # Find perf observation for the -O3 baseline optimization.
                     o3_perf_tensor = new_env.observation.perf()
-                    o3_cycles = o3_perf_tensor[0]
+                    o3_cycles = o3_perf_tensor[0][0]
 
                     # Speedup defined as the ration of o3_cycles divided by perf_cycles.
                     speedup = o3_cycles / perf_cycles
