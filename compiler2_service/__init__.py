@@ -13,7 +13,10 @@ import shutil
 import sys
 import logging
 import signal
+import pickle
 import pdb
+import pandas as pd
+import copy
 
 
 def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
@@ -164,15 +167,15 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
                 self.log_list.append(
                     self.format_log(
                         benchmark_uri=str(self.env.benchmark.uri),
-                        prev_observation=self.prev_observation[0].flat[:],
-                        observation=observation[0].flat[:],
+                        observation_name = observation_spaces[0],
+                        prev_observation=self.prev_observation[0],
+                        observation=observation[0],                        
                         action=self.env.action_space.names[actions[0]],
                         prev_actions=self.env.commandline(),
-                        reward=reward[0] if not isinstance(reward, float) else reward
+                        reward=reward[0] if not isinstance(reward, float) else reward,                        
                     )
                 )
-
-            self.prev_observation = observation[0]
+            self.prev_observation = copy.deepcopy(observation)
 
         if seek:
             self.env.actions = self.env.actions[:-len(actions)]
@@ -217,20 +220,33 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
     @staticmethod
     def format_log(
         benchmark_uri: str, 
-        prev_observation: list, 
-        observation: list, 
+        observation_name: str,
+        prev_observation, 
+        observation, 
         action: str, 
         prev_actions: str, 
-        reward: float
+        reward: float,        
         ):
-        prev_obs_str =  HPCToolkitCompilerEnvWrapper.list2str(prev_observation)
-        obs_str = HPCToolkitCompilerEnvWrapper.list2str(observation)
+        
+        if observation_name.endswith("tensor"):
+            # prev_obs_str =  HPCToolkitCompilerEnvWrapper.list2str(prev_observation.flat[:])
+            # obs_str = HPCToolkitCompilerEnvWrapper.list2str(observation.flat[:])
+            prev_observation = prev_observation.flat[:]
+            observation = observation.flat[:]
+        elif observation_name.endswith("pickle"):
+            prev_observation =  pickle.loads(prev_observation)
+            observation = pickle.loads(observation)
+
+        else:
+            logging.critical(f"FormatLog doesn't recognize Observation Type: {observation_name}")
+            exit(1)
+
         return [benchmark_uri,
-                prev_obs_str,
-                obs_str,
+                prev_observation,
+                observation,
                 action,
                 prev_actions,
-                str(reward)]
+                reward]
 
 
     def log_to_file(self):
@@ -238,14 +254,20 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
             return
 
         log_path = self.create_log_dir(self.env.spec.id)
-        with open(log_path + "/results.csv", "w") as csv:
-            csv.write("BenchmarkName,State,NextState,Action,CommandLine,Reward\n")
-            for line in self.log_list:
-                csv.write(",".join(line) + "\n")
 
-        print("\nResults written to: ", log_path + "/results.csv\n")
+        columns = ["BenchmarkName", "State", "NextState", "Action", "CommandLine", "Reward"]
+        df = pd.DataFrame(self.log_list, columns=columns) 
+        df.head()
+
+        with open(log_path + '/results.pkl', 'wb') as f:
+            pickle.dump(df, f)
+        
+        print("\nResults written to: ", log_path + "/results.pkl\n")
         # Clear the content
         self.log_list.clear()
+
+
+
 
 
 from compiler_gym.util.registration import register
@@ -293,7 +315,7 @@ def register_env():
             ],
         },
     )
-register_env()
+# register_env()
 
 def make(id: str, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""

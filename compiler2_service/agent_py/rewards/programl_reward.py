@@ -4,14 +4,14 @@ import pickle
 
 
 class RewardPickle(Reward):
-    """An example reward that uses changes in the "programl" observation value
+    """An example reward that uses changes in the "programl_pickle" observation value
     to compute incremental reward.
     """
 
     def __init__(self):
         super().__init__(
-            id="programl",
-            observation_spaces=["programl"],
+            id="programl_pickle",
+            observation_spaces=["programl_pickle"],
             default_value=0,
             default_negates_returns=True,
             deterministic=False,
@@ -22,7 +22,7 @@ class RewardPickle(Reward):
     def reset(self, benchmark: str, observation_view):
         print("Reward Programl: reset")
         del benchmark  # unused
-        unpickled_cct = observation_view["programl"]
+        unpickled_cct = observation_view["programl_pickle"]
         g = pickle.loads(unpickled_cct)
         self.prev_inscnt = sum( [ 1 for _, x in g.nodes.data() if x['type'] == 1 ])
 

@@ -80,8 +80,8 @@ def main():
             try:
                 observation, reward, done, info = env.step(
                     action=3,#env.action_space.sample(),
-                    observation_spaces=["programl_hpctoolkit"],
-                    reward_spaces=["programl_hpctoolkit"],
+                    observation_spaces=["programl_hpctoolkit_pickle"],
+                    reward_spaces=["programl_hpctoolkit_pickle"],
                 )
             except ServiceError:
                 print("AGENT: Timeout Error Step")

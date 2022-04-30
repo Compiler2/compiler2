@@ -34,7 +34,7 @@ from agent_py.datasets import hpctoolkit_dataset
 
 def register_env():
     register(
-        id="hpctoolkit-llvm-v0",
+        id="compiler2-v0",
         entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
@@ -50,7 +50,8 @@ def main():
     register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("hpctoolkit-llvm-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+
         try:
             # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
             env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
@@ -63,8 +64,8 @@ def main():
             try:
                 observation, reward, done, info = env.step(
                     action=env.action_space.sample(),
-                    observation_spaces=["programl"],
-                    reward_spaces=["programl"],
+                    observation_spaces=["programl_pickle"],
+                    reward_spaces=["programl_pickle"],
                 )
             except ServiceError:
                 print("AGENT: Timeout Error Step")
