@@ -62,13 +62,14 @@ def main():
     register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("compiler2-v0") as env:
+    # with gym.make("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+
         inc = 0
         for bench in env.datasets["benchmark://poj104-small-v0"]:
             print("bench>>>>>>>>>> ", bench)
             try:
                 base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
-                pdb.set_trace()
                 env.reset(benchmark=bench)
 
                 env.send_param("save_state", "0")
@@ -81,7 +82,6 @@ def main():
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
             
-            pdb.set_trace()
             for i in range(2):
                 print("Main: step = ", i)
                 try:

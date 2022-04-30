@@ -7,8 +7,8 @@ import pickle
 class RewardPickle(Reward):
     def __init__(self):
         super().__init__(
-            id="perf",
-            observation_spaces=["perf"],
+            id="perf_pickle",
+            observation_spaces=["perf_pickle"],
             default_value=0,
             default_negates_returns=True,
             deterministic=False,
@@ -18,7 +18,7 @@ class RewardPickle(Reward):
 
     def reset(self, benchmark: str, observation_view):
         del benchmark  # unused
-        perf_dict = pickle.loads(observation_view["perf"])
+        perf_dict = pickle.loads(observation_view["perf_pickle"])
         self.prev_cycles = int(perf_dict["cycles"])
         logging.info(f"Reward Perf: reset reward = {self.prev_cycles}")
 

@@ -11,8 +11,8 @@ class RewardPickle(Reward):
 
     def __init__(self):
         super().__init__(
-            id="hpctoolkit",
-            observation_spaces=["hpctoolkit"],
+            id="hpctoolkit_pickle",
+            observation_spaces=["hpctoolkit_pickle"],
             default_value=0,
             default_negates_returns=True,
             deterministic=False,
@@ -25,7 +25,7 @@ class RewardPickle(Reward):
     def reset(self, benchmark: str, observation_view):
         print("Reward HPCToolkit: reset")
         del benchmark  # unused
-        unpickled_cct = observation_view["hpctoolkit"]
+        unpickled_cct = observation_view["hpctoolkit_pickle"]
         gf = pickle.loads(unpickled_cct)
         self.baseline_cct = gf
         self.prev_runtime = gf.dataframe[self.reward_metric][0]

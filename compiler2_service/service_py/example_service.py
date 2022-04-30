@@ -109,37 +109,37 @@ class HPCToolkitCompilationSession(CompilationSession):
         #####################################################################################################
         # ByteSequenceSpace Observation Spaces
         #####################################################################################################
+        # ObservationSpace(
+        #     name="runtime",
+        #     space=Space(
+        #         double_value=DoubleRange(min=0),
+        #     ),
+        #     deterministic=False,
+        #     platform_dependent=True,
+        #     default_observation=Event(
+        #         double_value=0,
+        #     ),
+        # ),       
         ObservationSpace(
-            name="runtime",
-            space=Space(
-                double_value=DoubleRange(min=0),
-            ),
-            deterministic=False,
-            platform_dependent=True,
-            default_observation=Event(
-                double_value=0,
-            ),
-        ),       
-        ObservationSpace(
-            name="perf",
+            name="perf_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),        
         ObservationSpace(
-            name="hpctoolkit",
+            name="hpctoolkit_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
-            name="programl",
+            name="programl_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
-            name="programl_hpctoolkit",
+            name="programl_hpctoolkit_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
@@ -244,7 +244,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                  self.benchmark.run_cmd,
                                                  self.timeout_sec)
 
-            elif observation_space.name == "perf":
+            elif observation_space.name == "perf_pickle":
                 self.profiler = perf.Profiler(observation_space.name,
                                               self.benchmark.run_cmd,
                                               self.timeout_sec)
@@ -255,19 +255,19 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec)                                              
                                 
 
-            elif observation_space.name == "hpctoolkit":
+            elif observation_space.name == "hpctoolkit_pickle":
                 self.profiler = hpctoolkit.Profiler(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl":
+            elif observation_space.name == "programl_pickle":
                 self.profiler = programl.Profiler(observation_space.name,
                                                   self.benchmark.run_cmd,
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_hpctoolkit":
+            elif observation_space.name == "programl_hpctoolkit_pickle":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
                                                              self.timeout_sec,
