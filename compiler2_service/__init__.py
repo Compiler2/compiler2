@@ -289,6 +289,7 @@ from compiler2_service.agent_py.datasets import (
     hpctoolkit_dataset,
     poj104_dataset,
     poj104_dataset_small,
+    fbgemm_dataset
 )
 
 from compiler_gym.util.runfiles_path import site_data_path
@@ -312,7 +313,8 @@ def register_env():
                 CHStoneDataset(site_data_path("llvm-v0")),
                 hpctoolkit_dataset.Dataset(),
                 poj104_dataset.Dataset(),
-                poj104_dataset_small.Dataset()
+                poj104_dataset_small.Dataset(),
+                fbgemm_dataset.Dataset()
             ],
         },
     )

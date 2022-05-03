@@ -98,7 +98,7 @@ class BenchmarkBuilder:
                 f.write(benchmark.program.contents)
 
             compile_to_ll = [
-                self.clang,
+                "clang++",
                 "-o",
                 self.llvm_path,
                 "-S",
@@ -226,10 +226,11 @@ class BenchmarkBuilder:
         compile_cmd = proto_buff_container_to_list(build_cmd.argument)
         if compile_cmd:
             # Just for the debugging purposes.
-            assert compile_cmd[0] == "$CC"
+            assert compile_cmd[0] == "$CC" or compile_cmd[0] == "$CXX"
             assert compile_cmd[1] == "$IN"
             # Replace $CC with the llvm_clang.
-            compile_cmd[0] = self.clang
+            #compile_cmd[0] = self.clang
+            compile_cmd[0] = "clang++"
             # Replace $IN with path to the .bc files
             compile_cmd[1] = self.bc_path
             # Append the output file of the compile command.

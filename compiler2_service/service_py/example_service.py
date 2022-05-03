@@ -179,7 +179,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         # pdb.set_trace()
 
         self.save_state = False
-        self.timeout_sec = 5.0
+        self.timeout_sec = 30.0
 
         self.benchmark = benchmark_builder.BenchmarkBuilder(
             working_directory, benchmark, self.timeout_sec
