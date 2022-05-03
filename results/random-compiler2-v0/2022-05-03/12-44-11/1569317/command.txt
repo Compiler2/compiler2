@@ -1,0 +1,1 @@
+demo_greedy_walk.py --env=compiler2-v0 --walk_count=10 --step_count=10 --seek_count=10 --data_set=benchmark://poj104-v0 --reward=perf_tensor --observation=perf_tensor,programl_pickle

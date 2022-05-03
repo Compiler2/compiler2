@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,0.9630833098409634,10.54642629623413,opt -reassociate -div-rem-pairs input.bc -o output.bc

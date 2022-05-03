@@ -28,9 +28,8 @@ from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
-from agent_py.rewards import programl_reward
+from agent_py.rewards import programl_reward, perf_reward
 from agent_py.datasets import hpctoolkit_dataset
-
 
 def register_env():
     register(
@@ -38,7 +37,7 @@ def register_env():
         entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [ programl_reward.RewardPickle()],
+            "rewards": [ perf_reward.RewardTensor(), programl_reward.RewardPickle()],
             "datasets": [hpctoolkit_dataset.Dataset()],
         },
     )
@@ -64,9 +63,11 @@ def main():
             try:
                 observation, reward, done, info = env.step(
                     action=env.action_space.sample(),
-                    observation_spaces=["programl_pickle"],
-                    reward_spaces=["programl_pickle"],
+                    observation_spaces=["programl_pickle", "perf_tensor"],
+                    reward_spaces=["perf_tensor"],
+                    seek=False
                 )
+                
             except ServiceError:
                 print("AGENT: Timeout Error Step")
                 continue      

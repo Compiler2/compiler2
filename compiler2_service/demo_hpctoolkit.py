@@ -35,7 +35,7 @@ from agent_py.datasets import hpctoolkit_dataset
 
 def register_env():
     register(
-        id="hpctoolkit-llvm-v0",
+        id="compiler2-v0",
         entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
@@ -53,7 +53,8 @@ def main():
     reward_metric = hpctoolkit_reward.RewardPickle.reward_metric
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("hpctoolkit-llvm-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=False) as env:
+
         print("Make hpctoolkit")
         for bench in env.datasets["benchmark://hpctoolkit-cpu-v0"]:
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", bench)

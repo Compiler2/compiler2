@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/nanosleep,1.0291749144985811,10.77932333946228,opt -strip-dead-prototypes -add-discriminators input.bc -o output.bc

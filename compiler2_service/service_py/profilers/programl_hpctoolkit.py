@@ -28,13 +28,12 @@ class Profiler:
 
         # TODO: Get rid of this
         # List of metrics collected from observation space
-        self.features_hpcrun = [
-            "-e",
-            "REALTIME@100",
-        ]  # TODO: Use this in hpcrun command
+
         self.features_hatchet = [
-            "REALTIME (sec) (I)",
-            "REALTIME (sec) (E)",
+            # "REALTIME (sec) (I)",
+            # "REALTIME (sec) (E)",
+            "cycles (I)",
+            "cycles (E)",
         ]  # TODO: Use this from hatchat dataframe
 
 

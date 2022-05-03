@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/conv2d,0.9996296035904394,14.123222351074219,opt -ipsccp -loop-sink input.bc -o output.bc

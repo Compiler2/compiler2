@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/2/5,0.8313126663486886,11.435889959335327,opt -deadargelim -infer-address-spaces input.bc -o output.bc

@@ -40,8 +40,8 @@ class Walker:
         # Initialization 
         ####################################################################
         self.env = env
-        self.observation=observation
-        self.reward=reward
+        self.observation = observation.split(',')
+        self.reward = reward.split(',')
         self.walk_count = walk_count
         self.step_count = step_count        
         self.max_base_opt = max_base_opt
@@ -85,8 +85,8 @@ class Walker:
 
                 self.env.multistep(
                     actions=[self.env.action_space.from_string(a) for a in baseline_opt],
-                    observation_spaces=[self.observation],
-                    reward_spaces=[self.reward]
+                    observation_spaces=self.observation,
+                    reward_spaces=self.reward
                     )
 
                 self.walk(self.step_count, baseline_opt)

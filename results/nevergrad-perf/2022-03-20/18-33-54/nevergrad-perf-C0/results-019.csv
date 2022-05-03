@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/2/5,1.0455044253280608,10.987952470779419,opt -reassociate -lower-matrix-intrinsics input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/nanosleep,0.8640516085365831,11.249621152877808,opt -elim-avail-extern -lcssa input.bc -o output.bc

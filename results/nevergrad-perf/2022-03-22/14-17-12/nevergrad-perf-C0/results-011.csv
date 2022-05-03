@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/nanosleep,1.067327555844543,10.67626667022705,opt -lower-guard-intrinsic -constprop input.bc -o output.bc

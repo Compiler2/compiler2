@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/17,0.737992856508402,11.28398847579956,opt -alignment-from-assumptions -sroa input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,0.9350434369552387,10.70407485961914,opt -sroa -indvars input.bc -o output.bc

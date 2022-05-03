@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/offsets1,1.000264596694029,12.609221935272217,opt -redundant-dbg-inst-elim -div-rem-pairs input.bc -o output.bc

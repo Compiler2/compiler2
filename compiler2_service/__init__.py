@@ -163,13 +163,14 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
         # Log only when you have 1 action 
         if self.logging and len(actions) == 1 and observation:     
             # Log only if you have previous_observation
-            if type(self.prev_observation) != type(None):    
+            if type(self.prev_observation) != type(None) and info.get('action_had_no_effect') == False:
+                logging.critical(f"Action = {actions[0]}, No_effect = {info.get('action_had_no_effect')}, reward = {reward[0]}")
                 self.log_list.append(
                     self.format_log(
                         benchmark_uri=str(self.env.benchmark.uri),
-                        observation_name = observation_spaces[0],
-                        prev_observation=self.prev_observation[0],
-                        observation=observation[0],                        
+                        observation_names = observation_spaces,
+                        prev_observation=self.prev_observation,
+                        observation=observation,                        
                         action=self.env.action_space.names[actions[0]],
                         prev_actions=self.env.commandline(),
                         reward=reward[0] if not isinstance(reward, float) else reward,                        
@@ -220,30 +221,31 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
     @staticmethod
     def format_log(
         benchmark_uri: str, 
-        observation_name: str,
-        prev_observation, 
-        observation, 
+        observation_names: list,
+        prev_observation: list, 
+        observation: list, 
         action: str, 
         prev_actions: str, 
         reward: float,        
         ):
         
-        if observation_name.endswith("tensor"):
-            # prev_obs_str =  HPCToolkitCompilerEnvWrapper.list2str(prev_observation.flat[:])
-            # obs_str = HPCToolkitCompilerEnvWrapper.list2str(observation.flat[:])
-            prev_observation = prev_observation.flat[:]
-            observation = observation.flat[:]
-        elif observation_name.endswith("pickle"):
-            prev_observation =  pickle.loads(prev_observation)
-            observation = pickle.loads(observation)
+        prev_obs_ret = []
+        obs_ret = []
+        for i, obs_name in enumerate(observation_names):
+            if obs_name.endswith("tensor"):
+                prev_obs_ret.append(prev_observation[i].flat[:])
+                obs_ret.append(observation[i].flat[:])
+            elif obs_name.endswith("pickle"):
+                prev_obs_ret.append(pickle.loads(prev_observation[i]))
+                obs_ret.append(pickle.loads(observation[i]))
 
-        else:
-            logging.critical(f"FormatLog doesn't recognize Observation Type: {observation_name}")
-            exit(1)
+            else:
+                logging.critical(f"FormatLog doesn't recognize Observation Type: {obs_name}")
+                exit(1)
 
         return [benchmark_uri,
-                prev_observation,
-                observation,
+                prev_obs_ret,
+                obs_ret,
                 action,
                 prev_actions,
                 reward]
@@ -258,7 +260,6 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
         columns = ["BenchmarkName", "State", "NextState", "Action", "CommandLine", "Reward"]
         df = pd.DataFrame(self.log_list, columns=columns) 
         df.head()
-
         with open(log_path + '/results.pkl', 'wb') as f:
             pickle.dump(df, f)
         

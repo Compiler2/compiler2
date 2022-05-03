@@ -1,11 +1,15 @@
 ---
 defaults:
-    - agent: ppo
-    - environment: perf #autophase-with-history
-    - training: poj104
-    - testing: hpctoolkit_dataset
-    # - training: cbench
-    # - testing: cbench
+    - agent: ppo        
+    - environment: autophase-with-history
+    - training: cbench
+    - testing: cbench
+
+    # - agent: ppo        
+    # - environment: perf
+    # - training: poj104
+    # - testing: hpctoolkit_dataset    
+    
 executor:
     # One of: {local, slurm, debug, noop}.
     type: local

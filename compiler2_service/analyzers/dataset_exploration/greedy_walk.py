@@ -59,8 +59,8 @@ class GreedyWalker(Walker):
                     observation, reward, done, info = self.env.step(
                         action_index, 
                         seek=True,
-                        observation_spaces=[self.observation],
-                        reward_spaces=[self.reward]
+                        observation_spaces=self.observation,
+                        reward_spaces=self.reward
                     )
                     rewards[action_index] = reward[0]
 

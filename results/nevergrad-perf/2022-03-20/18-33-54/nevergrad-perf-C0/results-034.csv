@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/17,0.9771566808182992,10.985733985900879,opt -coro-split -loop-reroll input.bc -o output.bc

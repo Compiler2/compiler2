@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/13,0.9271934639246561,11.360281467437744,opt -early-cse -loop-distribute input.bc -o output.bc

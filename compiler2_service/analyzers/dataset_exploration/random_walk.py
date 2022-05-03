@@ -28,23 +28,15 @@ class RandomWalker(Walker):
         max_base_opt: int = 30 # CLANG -O3 has ~150 passes
         ):
 
-        ####################################################################
-        # Initialization 
-        ####################################################################
-        self.env = env
-        self.observation=observation
-        self.reward=reward
-        self.walk_count = walk_count
-        self.step_count = step_count        
-        self.max_base_opt = max_base_opt
+        Walker.__init__(self, 
+                        env=env,
+                        dataset_uri=dataset_uri,
+                        observation=observation,
+                        reward=reward,
+                        walk_count=walk_count,
+                        step_count=step_count,
+                        max_base_opt=max_base_opt)
 
-        # Internal parameters
-        self.dataset_uri = dataset_uri
-        self.bench_uri = ""
-        self.walk_num = 0
-        self.step_num = 0
-        self.prev_actions = []
-        self.log_list = []
     ####################################################################
     # Overwrite functions
     ####################################################################
@@ -61,8 +53,8 @@ class RandomWalker(Walker):
             with Timer() as step_time:
                 observation, reward, done, info = self.env.step(
                 action_index, 
-                observation_spaces=[self.observation],
-                reward_spaces=[self.reward]
+                observation_spaces=self.observation,
+                reward_spaces=self.reward
                 )
             
 

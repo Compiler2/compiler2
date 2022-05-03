@@ -25,7 +25,7 @@ class OptimizationTarget(str, Enum):
     CODESIZE = "codesize"
     BINSIZE = "binsize"
     RUNTIME = "runtime"
-    PERF = "perf",
+    PERF = "perf_pickle",
     PERF_LOG = "perf-log"
 
     @property
@@ -35,7 +35,7 @@ class OptimizationTarget(str, Enum):
             OptimizationTarget.BINSIZE: "ObjectTextSizeBytes",
             OptimizationTarget.RUNTIME: "Runtime",
             # register our reward spaces
-            OptimizationTarget.PERF: "perf",
+            OptimizationTarget.PERF: "perf_pickle",
         }[self.value]
 
     def make_env(self, benchmark: Union[str, Benchmark]) -> LlvmEnv:

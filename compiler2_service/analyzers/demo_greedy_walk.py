@@ -27,7 +27,7 @@ from compiler2_service.analyzers.dataset_exploration.greedy_walk import GreedyWa
 import compiler2_service
 from compiler_gym.util.registration import register
 from compiler2_service.paths import COMPILER2_SERVICE_PY
-from compiler2_service.agent_py.rewards import perf_reward
+from compiler2_service.agent_py.rewards import perf_reward, programl_reward, programl_hpctoolkit_reward
 from compiler_gym.envs.llvm.datasets import CBenchDataset
 from compiler_gym.util.runfiles_path import site_data_path
 
@@ -59,7 +59,11 @@ def register_perf_session():
         entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": COMPILER2_SERVICE_PY,
-            "rewards": [perf_reward.RewardTensor()],
+            "rewards": [
+                perf_reward.RewardTensor(), # Can be only 1 at the time
+                programl_reward.RewardPickle(),
+                # programl_hpctoolkit_reward.RewardPickle()
+                ],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
                 # hpctoolkit_dataset.Dataset(),
@@ -81,11 +85,10 @@ def main(argv):
     register_perf_session()
 
     with compiler2_service.make_env("compiler2-v0", logging=True) as env:
-
         walker = GreedyWalker(env=env, 
                               dataset_uri = FLAGS.data_set,
                               observation=FLAGS.observation,
-                              reward=FLAGS.reward,
+                              reward=FLAGS.reward,  
                               walk_count=max(1, FLAGS.walk_count),
                               step_count=max(1, FLAGS.step_count),   
                               seek_count=max(0, FLAGS.seek_count)

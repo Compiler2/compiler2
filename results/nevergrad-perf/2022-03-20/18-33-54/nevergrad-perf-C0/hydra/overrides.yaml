@@ -1,6 +1,0 @@
-- outputs=results
-- experiment=nevergrad-perf
-- autotuner=nevergrad
-- autotuner.optimization_target=perf
-- autotuner.search_time_seconds=10
-- autotuner.algorithm_config.episode_length=2

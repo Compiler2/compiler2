@@ -62,7 +62,7 @@ class BenchmarkBuilder:
 
         self.pre_run_cmd = []
         self.run_cmd = [self.exe_path]
-        self.is_action_effective = True
+        self.is_action_effective = None
 
         self.prepare_benchmark(benchmark)
 
@@ -180,7 +180,7 @@ class BenchmarkBuilder:
                 timeout=self.timeout_sec,
             )
     
-        self.is_action_effective = self.is_action_effective or self.action_had_effect()
+        self.is_action_effective = self.action_had_effect()
 
         if save_state:
             run_command(

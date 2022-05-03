@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/2/5,0.6399543915886617,10.802778244018555,opt -mergeicmps -irce input.bc -o output.bc

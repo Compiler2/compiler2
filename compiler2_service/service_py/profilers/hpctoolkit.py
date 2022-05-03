@@ -20,7 +20,8 @@ class Profiler:
         self.exe_struct_path = self.exe_path + ".hpcstruct"
 
         self.metrics_list = [
-            "REALTIME@100",
+            # "REALTIME@10",
+            "cycles"
         ]
 
     def get_observation(self) -> Event:        
@@ -64,16 +65,20 @@ class Profiler:
         ]
         print("HPCToolkit get observation:")
         print_list(hpctoolkit_cmd)
+        print('1++++++++++')
         for cmd in hpctoolkit_cmd:
             run_command(
                 cmd,
                 timeout=self.timeout_sec,
             )
-
+        print('2++++++++++')            
         g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
+        print('3++++++++++')            
 
         if self.llvm_path:
             self.addInstStrToDataframe(g_hatchet, self.llvm_path)
+
+        print('4++++++++++')            
 
         return g_hatchet
 

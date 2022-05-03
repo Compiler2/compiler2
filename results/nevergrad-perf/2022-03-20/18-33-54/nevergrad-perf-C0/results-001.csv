@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/13,1.1054432961442076,10.72691297531128,opt -slsr -early-cse-memssa input.bc -o output.bc

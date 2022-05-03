@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/13,1.1398891754195453,10.501482248306274,opt -rewrite-statepoints-for-gc -inject-tli-mappings input.bc -o output.bc

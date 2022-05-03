@@ -186,7 +186,8 @@ class HPCToolkitCompilationSession(CompilationSession):
         )
 
         self.profiler = None
-        self.prev_observation = None
+        self.prev_observation = {}
+
 
     def handle_session_parameter(self, key: str, value: str) -> Optional[str]:
         if key == "save_state":
@@ -223,15 +224,20 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         logging.info(f"\naction_had_no_effect ({opt}) = {action_had_no_effect}\n")
 
+        if action_had_no_effect == False:
+            self.prev_observation = {} # Clear cache if action had an effect
+
         end_of_session = False
         new_action_space = None
         return (end_of_session, new_action_space, action_had_no_effect)
 
+
     def get_observation(self, observation_space: ObservationSpace) -> Event:
         logging.info(f"Computing observation from space {observation_space.name}")  
-        if not self.benchmark.is_action_effective:            
+
+        if observation_space.name in self.prev_observation:            
             logging.info(f"get_observation: Fast return prev_observation {self.prev_observation}")
-            return self.prev_observation
+            return self.prev_observation[observation_space.name]
 
         if self.profiler == None or observation_space.name != self.profiler.name:
             if observation_space.name == "runtime":
@@ -288,10 +294,10 @@ class HPCToolkitCompilationSession(CompilationSession):
             else:
                 raise KeyError(observation_space.name)
 
-        self.benchmark.is_action_effective = False # This is necessary! (multi)step call get_obs, apply_act...apply_act get_obs
-        self.prev_observation = self.profiler.get_observation()
+        self.prev_observation[observation_space.name] = self.profiler.get_observation()
+
         logging.info(f"get_observation: Slow return prev_observation {self.prev_observation}")
-        return self.prev_observation
+        return self.prev_observation[observation_space.name]
 
 
     def fork(self):

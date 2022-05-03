@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/offsets1,0.9983337989749369,12.71873927116394,opt -tailcallelim -sccp input.bc -o output.bc

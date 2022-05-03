@@ -1,6 +1,6 @@
 from compiler_gym.spaces import Reward
 import pickle
-
+import pdb
 
 
 class RewardPickle(Reward):
@@ -20,14 +20,12 @@ class RewardPickle(Reward):
         self.prev_inscnt = 0
 
     def reset(self, benchmark: str, observation_view):
-        print("Reward Programl: reset")
         del benchmark  # unused
-        unpickled_cct = observation_view["programl_pickle"]
-        g = pickle.loads(unpickled_cct)
+        unpickled_g = observation_view["programl_pickle"]
+        g = pickle.loads(unpickled_g)
         self.prev_inscnt = sum( [ 1 for _, x in g.nodes.data() if x['type'] == 1 ])
 
     def update(self, action, observations, observation_view):
-        print("Reward Programl: update")
         del action
         del observation_view
         g = pickle.loads(observations[0])

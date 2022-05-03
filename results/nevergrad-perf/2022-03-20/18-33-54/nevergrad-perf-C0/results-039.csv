@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/2/5,0.8754225504161565,10.81314992904663,opt -insert-gcov-profiling -correlated-propagation input.bc -o output.bc

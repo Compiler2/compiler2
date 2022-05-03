@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/17,1.0327420426990066,1.8080427646636963,opt  input.bc -o output.bc

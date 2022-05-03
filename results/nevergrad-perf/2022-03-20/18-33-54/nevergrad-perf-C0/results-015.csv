@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/2/5,1.104918810256327,11.277655601501465,opt -elim-avail-extern -alignment-from-assumptions input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,1.2148907903354456,10.766729354858398,opt -nary-reassociate -instnamer input.bc -o output.bc

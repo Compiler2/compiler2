@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/13,1.105573448442298,10.743118047714233,opt -loop-sink -loop-versioning input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/nanosleep,0.8359110413833566,11.127881050109863,opt -lowerinvoke -instsimplify input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/conv2d,1.0069079732866486,14.082424402236938,opt -add-discriminators -add-discriminators input.bc -o output.bc

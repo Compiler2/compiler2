@@ -1,4 +1,0 @@
-- outputs=results
-- experiment=greedy-perf
-- autotuner=greedy
-- autotuner.optimization_target=perf

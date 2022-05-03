@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/13,1.0833466906122704,10.817232847213745,opt -simple-loop-unswitch -simple-loop-unswitch input.bc -o output.bc

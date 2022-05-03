@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,0.8764464794059076,10.585628747940063,opt -add-discriminators -name-anon-globals input.bc -o output.bc

@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://poj104-v0/1/17,0.9605000701054339,10.717499017715454,opt -sccp -globaldce input.bc -o output.bc

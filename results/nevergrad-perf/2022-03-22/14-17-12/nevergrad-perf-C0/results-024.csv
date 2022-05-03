@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,0.9419096682470415,10.621495962142944,opt -redundant-dbg-inst-elim -simple-loop-unswitch input.bc -o output.bc

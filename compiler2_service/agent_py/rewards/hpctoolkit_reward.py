@@ -7,7 +7,7 @@ class RewardPickle(Reward):
     """An example reward that uses changes in the "runtime" observation value
     to compute incremental reward.
     """
-    reward_metric = "REALTIME (sec) (I)"  # "time (inc)"
+    reward_metric = "cycles (I)"  # "time (inc)"
 
     def __init__(self):
         super().__init__(

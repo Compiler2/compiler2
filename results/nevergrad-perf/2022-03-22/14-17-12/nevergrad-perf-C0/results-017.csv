@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/conv2d,1.000332372978203,14.115933418273926,opt -sink -lower-expect input.bc -o output.bc

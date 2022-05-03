@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/simple_pow,1.0023676133068982,10.866351842880249,opt -ipsccp -loop-sink input.bc -o output.bc

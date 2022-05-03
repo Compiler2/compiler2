@@ -1,2 +1,0 @@
-benchmark,reward,walltime,commandline
-benchmark://hpctoolkit-cpu-v0/conv2d,0.99827958240032,14.391663074493408,opt -partially-inline-libcalls -sink input.bc -o output.bc
