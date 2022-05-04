@@ -175,7 +175,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         self._action_space = action_space
 
         os.chdir(str(working_directory))
-        logging.info(f"\n\nWorking_dir = {str(working_directory)}\n")
+        logging.critical(f"\n\nWorking_dir = {str(working_directory)}\n")
         # pdb.set_trace()
 
         self.save_state = False

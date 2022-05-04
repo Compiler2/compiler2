@@ -60,9 +60,9 @@ def register_perf_session():
         kwargs={
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
-                perf_reward.RewardTensor(), # Can be only 1 at the time
+                perf_reward.RewardTensor(), 
                 programl_reward.RewardPickle(),
-                # programl_hpctoolkit_reward.RewardPickle()
+                programl_hpctoolkit_reward.RewardPickle()
                 ],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),

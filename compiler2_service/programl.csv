@@ -1,0 +1,181 @@
+block,function,text,type,dynamic,full_text
+0,0,[external],0,"[2527.0, 0.0]",
+0,0,alloca,0,"[3636.0, 1818.0]","['%3 = alloca i32, align 4, !dbg !40']"
+0,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %3, metadata !11, metadata !DIExpression()), !dbg !40']"
+0,0,alloca,0,"[0, 0]","['%4 = alloca i32, align 4, !dbg !41']"
+0,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %4, metadata !13, metadata !DIExpression()), !dbg !41']"
+0,0,alloca,0,"[0, 0]","['%5 = alloca i32, align 4, !dbg !42']"
+0,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %5, metadata !14, metadata !DIExpression()), !dbg !42']"
+0,0,alloca,0,"[0, 0]","['%6 = alloca i32, align 4, !dbg !43']"
+0,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %6, metadata !15, metadata !DIExpression()), !dbg !43']"
+0,0,store,0,"[0, 0]","['store i32 %0, i32* %3, align 4, !dbg !44']"
+0,0,i32*,1,,['i32* %3']
+0,0,store,0,"[0, 0]","['store i32 %1, i32* %4, align 4, !dbg !45']"
+0,0,i32*,1,,['i32* %4']
+0,0,store,0,"[0, 0]","['store i32 0, i32* %6, align 4, !dbg !46']"
+0,0,i32*,1,,['i32* %6']
+0,0,load,0,"[1818.0, 1818.0]","['%7 = load i32, i32* %3, align 4, !dbg !47']"
+0,0,i32*,1,,['i32* %3']
+0,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %7, metadata !16, metadata !DIExpression()), !dbg !47']"
+0,0,store,0,"[0, 0]","['store i32 %7, i32* %5, align 4, !dbg !48']"
+0,0,i32,1,,['i32 %7']
+0,0,i32*,1,,['i32* %5']
+0,0,br,0,"[0, 0]","['br label %8, !dbg !49']"
+1,0,load,0,"[1818.0, 0.0]","['%9 = load i32, i32* %5, align 4, !dbg !50']"
+1,0,i32*,1,,['i32* %5']
+1,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %9, metadata !18, metadata !DIExpression()), !dbg !50']"
+1,0,load,0,"[0, 0]","['%10 = load i32, i32* %5, align 4, !dbg !51']"
+1,0,i32*,1,,['i32* %5']
+1,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %10, metadata !19, metadata !DIExpression()), !dbg !51']"
+1,0,mul,0,"[0, 0]","['%11 = mul nsw i32 %9, %10, !dbg !52']"
+1,0,i32,1,,['i32 %9']
+1,0,i32,1,,['i32 %10']
+1,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %11, metadata !20, metadata !DIExpression()), !dbg !52']"
+1,0,load,0,"[0, 0]","['%12 = load i32, i32* %4, align 4, !dbg !53']"
+1,0,i32*,1,,['i32* %4']
+1,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %12, metadata !21, metadata !DIExpression()), !dbg !53']"
+1,0,icmp,0,"[0, 0]","['%13 = icmp sle i32 %11, %12, !dbg !54']"
+1,0,i32,1,,['i32 %11']
+1,0,i32,1,,['i32 %12']
+1,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i1 %13, metadata !22, metadata !DIExpression()), !dbg !54']"
+1,0,br,0,"[0, 0]","['br i1 %13, label %14, label %33, !dbg !55']"
+1,0,i1,1,,['i1 %13']
+2,0,load,0,"[0, 0]","['%15 = load i32, i32* %4, align 4, !dbg !56']"
+2,0,i32*,1,,['i32* %4']
+2,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %15, metadata !24, metadata !DIExpression()), !dbg !56']"
+2,0,load,0,"[0, 0]","['%16 = load i32, i32* %5, align 4, !dbg !57']"
+2,0,i32*,1,,['i32* %5']
+2,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %16, metadata !25, metadata !DIExpression()), !dbg !57']"
+2,0,srem,0,"[0, 0]","['%17 = srem i32 %15, %16, !dbg !58']"
+2,0,i32,1,,['i32 %15']
+2,0,i32,1,,['i32 %16']
+2,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %17, metadata !26, metadata !DIExpression()), !dbg !58']"
+2,0,icmp,0,"[0, 0]","['%18 = icmp eq i32 %17, 0, !dbg !59']"
+2,0,i32,1,,['i32 %17']
+2,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i1 %18, metadata !27, metadata !DIExpression()), !dbg !59']"
+2,0,br,0,"[0, 0]","['br i1 %18, label %19, label %29, !dbg !60']"
+2,0,i1,1,,['i1 %18']
+3,0,load,0,"[0, 0]","['%20 = load i32, i32* %6, align 4, !dbg !61']"
+3,0,i32*,1,,['i32* %6']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %20, metadata !28, metadata !DIExpression()), !dbg !61']"
+3,0,add,0,"[0, 0]","['%21 = add nsw i32 %20, 1, !dbg !62']"
+3,0,i32,1,,['i32 %20']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %21, metadata !29, metadata !DIExpression()), !dbg !62']"
+3,0,store,0,"[0, 0]","['store i32 %21, i32* %6, align 4, !dbg !63']"
+3,0,i32,1,,['i32 %21']
+3,0,i32*,1,,['i32* %6']
+3,0,load,0,"[2527.0, 0.0]","['%22 = load i32, i32* %5, align 4, !dbg !64']"
+3,0,i32*,1,,['i32* %5']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %22, metadata !30, metadata !DIExpression()), !dbg !64']"
+3,0,load,0,"[0, 0]","['%23 = load i32, i32* %4, align 4, !dbg !65']"
+3,0,i32*,1,,['i32* %4']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %23, metadata !31, metadata !DIExpression()), !dbg !65']"
+3,0,load,0,"[0, 0]","['%24 = load i32, i32* %5, align 4, !dbg !66']"
+3,0,i32*,1,,['i32* %5']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %24, metadata !32, metadata !DIExpression()), !dbg !66']"
+3,0,sdiv,0,"[0, 0]","['%25 = sdiv i32 %23, %24, !dbg !67']"
+3,0,i32,1,,['i32 %23']
+3,0,i32,1,,['i32 %24']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %25, metadata !33, metadata !DIExpression()), !dbg !67']"
+3,0,call,0,"[0, 0]","['%26 = call i32 @fun(i32 %22, i32 %25), !dbg !68']"
+3,0,i32,1,,['i32 %22']
+3,0,i32,1,,['i32 %25']
+3,0,call,0,"[1818.0, 0.0]","['call void @llvm.dbg.value(metadata i32 %26, metadata !34, metadata !DIExpression()), !dbg !68']"
+3,0,load,0,"[0, 0]","['%27 = load i32, i32* %6, align 4, !dbg !69']"
+3,0,i32*,1,,['i32* %6']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %27, metadata !35, metadata !DIExpression()), !dbg !69']"
+3,0,add,0,"[0, 0]","['%28 = add nsw i32 %27, %26, !dbg !70']"
+3,0,i32,1,,['i32 %27']
+3,0,i32,1,,['i32 %26']
+3,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %28, metadata !36, metadata !DIExpression()), !dbg !70']"
+3,0,store,0,"[0, 0]","['store i32 %28, i32* %6, align 4, !dbg !71']"
+3,0,i32,1,,['i32 %28']
+3,0,i32*,1,,['i32* %6']
+3,0,br,0,"[0, 0]","['br label %29, !dbg !72']"
+4,0,br,0,"[0, 0]","['br label %30, !dbg !73']"
+5,0,load,0,"[0, 0]","['%31 = load i32, i32* %5, align 4, !dbg !74']"
+5,0,i32*,1,,['i32* %5']
+5,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %31, metadata !37, metadata !DIExpression()), !dbg !74']"
+5,0,add,0,"[0, 0]","['%32 = add nsw i32 %31, 1, !dbg !75']"
+5,0,i32,1,,['i32 %31']
+5,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %32, metadata !38, metadata !DIExpression()), !dbg !75']"
+5,0,store,0,"[0, 0]","['store i32 %32, i32* %5, align 4, !dbg !76']"
+5,0,i32,1,,['i32 %32']
+5,0,i32*,1,,['i32* %5']
+5,0,br,0,"[0, 0]","['br label %8, !dbg !77']"
+6,0,load,0,"[0, 0]","['%34 = load i32, i32* %6, align 4, !dbg !78']"
+6,0,i32*,1,,['i32* %6']
+6,0,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %34, metadata !39, metadata !DIExpression()), !dbg !78']"
+6,0,ret,0,"[0, 0]","['ret i32 %34, !dbg !79']"
+6,0,i32,1,,['i32 %34']
+7,0,i32,1,,['i32 %0']
+7,0,i32,1,,['i32 %1']
+7,1,alloca,0,"[0, 0]","['%1 = alloca i32, align 4, !dbg !30']"
+7,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %1, metadata !82, metadata !DIExpression()), !dbg !98']"
+7,1,alloca,0,"[0, 0]","['%2 = alloca i32, align 4, !dbg !31']"
+7,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %2, metadata !83, metadata !DIExpression()), !dbg !99']"
+7,1,alloca,0,"[0, 0]","['%3 = alloca i32, align 4, !dbg !32']"
+7,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %3, metadata !84, metadata !DIExpression()), !dbg !100']"
+7,1,alloca,0,"[0, 0]","['%4 = alloca i32, align 4, !dbg !33']"
+7,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32* %4, metadata !85, metadata !DIExpression()), !dbg !101']"
+7,1,store,0,"[0, 0]","['store i32 0, i32* %1, align 4, !dbg !34']"
+7,1,i32*,1,,['i32* %1']
+7,1,call,0,"[0, 0]","['%5 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0), i32* %2), !dbg !35']"
+7,1,i32*,1,,['i32* %2']
+7,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %5, metadata !86, metadata !DIExpression()), !dbg !103']"
+7,1,br,0,"[0, 0]","['br label %6, !dbg !36']"
+8,1,load,0,"[0, 0]","['%7 = load i32, i32* %2, align 4, !dbg !37']"
+8,1,i32*,1,,['i32* %2']
+8,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %7, metadata !87, metadata !DIExpression()), !dbg !105']"
+8,1,icmp,0,"[0, 0]","['%8 = icmp sgt i32 %7, 0, !dbg !38']"
+8,1,i32,1,,['i32 %7']
+8,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i1 %8, metadata !88, metadata !DIExpression()), !dbg !106']"
+8,1,br,0,"[0, 0]","['br i1 %8, label %9, label %19, !dbg !39']"
+8,1,i1,1,,['i1 %8']
+9,1,load,0,"[0, 0]","['%10 = load i32, i32* %2, align 4, !dbg !40']"
+9,1,i32*,1,,['i32* %2']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %10, metadata !89, metadata !DIExpression()), !dbg !108']"
+9,1,add,0,"[0, 0]","['%11 = add nsw i32 %10, -1, !dbg !41']"
+9,1,i32,1,,['i32 %10']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %11, metadata !90, metadata !DIExpression()), !dbg !109']"
+9,1,store,0,"[0, 0]","['store i32 %11, i32* %2, align 4, !dbg !42']"
+9,1,i32,1,,['i32 %11']
+9,1,i32*,1,,['i32* %2']
+9,1,call,0,"[0, 0]","['%12 = call i32 (i8*, ...) @scanf(i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0), i32* %3), !dbg !43']"
+9,1,i32*,1,,['i32* %3']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %12, metadata !91, metadata !DIExpression()), !dbg !111']"
+9,1,store,0,"[0, 0]","['store i32 1, i32* %4, align 4, !dbg !44']"
+9,1,i32*,1,,['i32* %4']
+9,1,load,0,"[0, 0]","['%13 = load i32, i32* %3, align 4, !dbg !45']"
+9,1,i32*,1,,['i32* %3']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %13, metadata !92, metadata !DIExpression()), !dbg !113']"
+9,1,call,0,"[0, 0]","['%14 = call i32 @fun(i32 2, i32 %13), !dbg !46']"
+9,1,i32,1,,['i32 %13']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %14, metadata !93, metadata !DIExpression()), !dbg !114']"
+9,1,load,0,"[0, 0]","['%15 = load i32, i32* %4, align 4, !dbg !47']"
+9,1,i32*,1,,['i32* %4']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %15, metadata !94, metadata !DIExpression()), !dbg !115']"
+9,1,add,0,"[0, 0]","['%16 = add nsw i32 %15, %14, !dbg !48']"
+9,1,i32,1,,['i32 %15']
+9,1,i32,1,,['i32 %14']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %16, metadata !95, metadata !DIExpression()), !dbg !116']"
+9,1,store,0,"[0, 0]","['store i32 %16, i32* %4, align 4, !dbg !49']"
+9,1,i32,1,,['i32 %16']
+9,1,i32*,1,,['i32* %4']
+9,1,load,0,"[0, 0]","['%17 = load i32, i32* %4, align 4, !dbg !50']"
+9,1,i32*,1,,['i32* %4']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %17, metadata !96, metadata !DIExpression()), !dbg !118']"
+9,1,call,0,"[0, 0]","['%18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0), i32 %17), !dbg !51']"
+9,1,i32,1,,['i32 %17']
+9,1,call,0,"[0, 0]","['call void @llvm.dbg.value(metadata i32 %18, metadata !97, metadata !DIExpression()), !dbg !119']"
+9,1,br,0,"[0, 0]","['br label %6, !dbg !52']"
+10,1,ret,0,"[0, 0]","['ret i32 0, !dbg !53']"
+0,2,; undefined function,0,,['']
+0,3,; undefined function,0,,['']
+0,4,; undefined function,0,,['']
+11,0,i32,2,,['i32 0']
+11,0,i32,2,,['i32 2']
+11,0,i32,2,,['i32 1']
+11,0,i32,2,,['i32 -1']
+11,0,i8*,2,,"['i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0)']"
+11,0,i8*,2,,"['i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0)']"

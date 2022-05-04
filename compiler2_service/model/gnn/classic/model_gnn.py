@@ -17,7 +17,7 @@ class GNNEncoder(nn.Module):
         n_steps=1,
         n_etypes=3,
         n_message_passes=0,
-        reward_dim=1,
+        action_size=124,
         gnn_type="GatedGraphConv",
         heads=None,
         feat_drop=0.0,
@@ -30,7 +30,7 @@ class GNNEncoder(nn.Module):
         self.n_steps = n_steps
         self.n_etypes = n_etypes
         self.n_message_passes = n_message_passes
-        self.reward_dim = reward_dim
+        self.action_size = action_size
         self.gnn_type = gnn_type
         self.heads = heads
         self.feat_drop = feat_drop
@@ -57,19 +57,21 @@ class GNNEncoder(nn.Module):
         else:
             raise NotImplementedError("")
 
-        self.reward_predictor = nn.Sequential(
+        self.action_predictor = nn.Sequential(
             nn.Linear(embed_dim, self.node_hidden_size),
             nn.ReLU(),
-            nn.Linear(self.node_hidden_size, self.reward_dim),
+            nn.Linear(self.node_hidden_size, self.action_size),
         )
 
         self.mse_loss = nn.MSELoss()
 
     def forward(self, g):
+        # pdb.set_trace()
         with g.local_scope():
             self.featurize_nodes(g)
 
-            res = g.ndata["feat"]
+            res = g.ndata["feat"]            
+
             if self.concat_intermediate:
                 intermediate = [dgl.mean_nodes(g, "feat")]
             if self.gnn_type == "GatedGraphConv":
@@ -84,8 +86,8 @@ class GNNEncoder(nn.Module):
                 graph_agg = torch.cat(intermediate, axis=1)
             else:
                 graph_agg = dgl.mean_nodes(g, "feat")
-        res = self.reward_predictor(graph_agg)
-        return res, graph_agg
+        action_tensor = self.action_predictor(graph_agg)
+        return action_tensor
 
     def get_loss(self, g, labels, eps=0.0):
         """
@@ -106,7 +108,7 @@ class GNNEncoder(nn.Module):
         )
 
     def featurize_nodes(self, g):
-        # This is very CompilerGym specific, can be rewritten for other tasks
+        # This is very Co,A),1)mpilerGym specific, can be rewritten for other tasks
         features = []
         if self.use_node_embedding:
             features.append(self.node_embedding(g.ndata["text_idx"]))
