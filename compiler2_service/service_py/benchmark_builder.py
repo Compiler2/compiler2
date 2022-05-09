@@ -27,11 +27,30 @@ from compiler_gym.service.proto import (
 # from compiler_gym.util.commands import Popen, run_command
 from compiler2_service.service_py.utils import run_command, proto_buff_container_to_list, print_list, run_command_stdout_redirect
 
+
+def clang_plus_plus_path():
+    global _CLANG_PLUS_PLUS_PATH
+
+    path_to_llvm = llvm.download_llvm_files()
+    _CLANG_PLUS_PLUS_PATH = str(path_to_llvm / "bin/clang++")
+    return _CLANG_PLUS_PLUS_PATH
+
 ## Build benchmarks
 class BenchmarkBuilder:
     def __init__(self, working_directory: Path, benchmark: Benchmark, timeout_sec: float):
         self.timeout_sec = timeout_sec
-        self.clang = str(llvm.clang_path())
+
+        compile_cmd = proto_buff_container_to_list(benchmark.dynamic_config.build_cmd.argument)
+        if compile_cmd[0] == "$CC":
+            self.clang = str(llvm.clang_path())
+        elif compile_cmd[0] == "$CXX":
+            # Keren: Unfortunately, compiler_gym.third_party.llvm does not come with clang++.
+            # I am not sure why clang++ is not built by its default settings.
+            # So hack here to use clang++ installed by the local system.
+            self.clang = "clang++"
+        else:
+            assert("Unsupported compiler ", compile_cmd[0])
+
         self.llvm_dis = str(llvm.llvm_dis_path())
         self.llc = str(llvm.llc_path())
         self.llvm_diff = str(llvm.llvm_diff_path())
@@ -98,7 +117,7 @@ class BenchmarkBuilder:
                 f.write(benchmark.program.contents)
 
             compile_to_ll = [
-                "clang++",
+                self.clang,
                 "-o",
                 self.llvm_path,
                 "-S",
@@ -230,7 +249,7 @@ class BenchmarkBuilder:
             assert compile_cmd[1] == "$IN"
             # Replace $CC with the llvm_clang.
             #compile_cmd[0] = self.clang
-            compile_cmd[0] = "clang++"
+            compile_cmd[0] = self.clang
             # Replace $IN with path to the .bc files
             compile_cmd[1] = self.bc_path
             # Append the output file of the compile command.

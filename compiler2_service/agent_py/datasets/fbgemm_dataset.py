@@ -123,9 +123,6 @@ class Dataset(Dataset):
             str(BENCHMARKS_PATH/"include"),
             src,
         ]
-        print(cmd)
-        #for directory in get_system_library_flags():
-        #    cmd += ["-isystem", str(directory)]
         return subprocess.check_output(
             cmd,
             timeout=300,
