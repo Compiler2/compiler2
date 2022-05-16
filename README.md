@@ -37,3 +37,20 @@ python -m llvm_autotuning.tune -m \
 
 See [official Compiler Gym repository](https://github.com/facebookresearch/CompilerGym/tree/development/examples/llvm_autotuning) 
 for more information.
+
+
+## Install FBGEMM
+```
+cd compiler2_service/benchmarks
+git submodule add https://github.com/Compiler2/FBGEMM.git or
+<!-- git clone --recursive https://github.com/Compiler2/FBGEMM.git -->
+cd FBGEMM
+git checkout compiler_gym
+# if you are updating an existing checkout
+git submodule sync
+git submodule update --init --recursive
+mkdir build && cd build
+cmake -DCMAKE_INSTALL_PREFIX:PATH=$PWD/../install ..
+make -j
+make -j install
+```

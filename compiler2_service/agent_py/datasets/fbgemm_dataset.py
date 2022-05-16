@@ -13,7 +13,7 @@ from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
-BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"fbgemm"
+BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"FBGEMM"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):

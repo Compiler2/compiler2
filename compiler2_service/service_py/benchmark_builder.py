@@ -43,18 +43,22 @@ class BenchmarkBuilder:
         compile_cmd = proto_buff_container_to_list(benchmark.dynamic_config.build_cmd.argument)
         if compile_cmd[0] == "$CC":
             self.clang = str(llvm.clang_path())
+            self.llvm_dis = str(llvm.llvm_dis_path())
+            self.llc = str(llvm.llc_path())
+            self.llvm_diff = str(llvm.llvm_diff_path())
+            self.opt = str(llvm.opt_path())
         elif compile_cmd[0] == "$CXX":
             # Keren: Unfortunately, compiler_gym.third_party.llvm does not come with clang++.
             # I am not sure why clang++ is not built by its default settings.
             # So hack here to use clang++ installed by the local system.
             self.clang = "clang++"
+            self.llvm_dis = "llvm-dis"
+            self.llc = "llc"
+            self.llvm_diff = "llvm-diff"
+            self.opt = "opt"
         else:
-            assert("Unsupported compiler ", compile_cmd[0])
+            assert compile_cmd[0], "Unsupported compiler "
 
-        self.llvm_dis = str(llvm.llvm_dis_path())
-        self.llc = str(llvm.llc_path())
-        self.llvm_diff = str(llvm.llvm_diff_path())
-        self.opt = str(llvm.opt_path())
 
         self.working_dir = working_directory
         self.llvm_path = str(self.working_dir / "benchmark.ll")

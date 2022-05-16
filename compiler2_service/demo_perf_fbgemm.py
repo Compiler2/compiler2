@@ -11,7 +11,7 @@ It is equivalent in behavior to the demo.py script in this directory.
 """
 import logging
 import os
-#import pdb
+import pdb
 import pickle
 import subprocess
 from pathlib import Path
@@ -62,9 +62,11 @@ def main():
     register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=False) as env:
+
         inc = 0
         for bench in env.datasets["benchmark://fbgemm-v0"]:
+            pdb.set_trace()
             print("bench>>>>>>>>>> ", bench)
             try:
                 base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]

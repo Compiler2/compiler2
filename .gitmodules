@@ -1,0 +1,3 @@
+[submodule "compiler2_service/benchmarks/FBGEMM"]
+	path = compiler2_service/benchmarks/FBGEMM
+	url = https://github.com/pytorch/FBGEMM.git
