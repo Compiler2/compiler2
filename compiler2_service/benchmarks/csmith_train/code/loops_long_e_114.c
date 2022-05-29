@@ -1,0 +1,48 @@
+// Options:   --no-checksum --quiet --concise --max-block-depth 5 --max-array-dim 3 --max-array-len-per-dim 100 --max-expr-complexity 12
+#include "csmith.h"
+
+volatile uint64_t csmith_sink_ = 0;
+
+static long __undefined;
+
+
+
+static volatile int32_t g_2 = 0xCB13638EL;
+static volatile int32_t g_3 = 0x4C3C69AEL;
+static int32_t g_4[2][92][1] = {{{0xCCCDDD1DL},{0x77201043L},{(-9L)},{0x36D06583L},{0x8E01AFECL},{0xF6C218E9L},{0x477AE271L},{0xF6C218E9L},{0x8E01AFECL},{0x36D06583L},{(-9L)},{0x77201043L},{0xCCCDDD1DL},{0L},{0x7AEBB1BBL},{0xF8E3BF11L},{0x34B0B4EFL},{0xDAFBBD0AL},{0x084BC9C3L},{0x8F985589L},{1L},{0L},{(-1L)},{7L},{0xB6182EACL},{0L},{0xB6182EACL},{7L},{(-1L)},{0L},{1L},{0x8F985589L},{0x084BC9C3L},{0xDAFBBD0AL},{0x34B0B4EFL},{0xF8E3BF11L},{0x7AEBB1BBL},{0L},{0xCCCDDD1DL},{0x77201043L},{(-9L)},{0x36D06583L},{0x8E01AFECL},{0xF6C218E9L},{0x477AE271L},{0xF6C218E9L},{0xCCCDDD1DL},{0x3BE41B0CL},{(-1L)},{0L},{0x084BC9C3L},{0xF8E3BF11L},{0xB6182EACL},{(-10L)},{0L},{0xF6C218E9L},{0x34B0B4EFL},{0L},{0x477AE271L},{0xC5165352L},{(-1L)},{0x8F985589L},{0x76EC7516L},{2L},{0x76EC7516L},{0x8F985589L},{(-1L)},{0xC5165352L},{0x477AE271L},{0L},{0x34B0B4EFL},{0xF6C218E9L},{0L},{(-10L)},{0xB6182EACL},{0xF8E3BF11L},{0x084BC9C3L},{0L},{(-1L)},{0x3BE41B0CL},{0xCCCDDD1DL},{0x0B168F92L},{1L},{0x0B168F92L},{0xCCCDDD1DL},{0x3BE41B0CL},{(-1L)},{0L},{0x084BC9C3L},{0xF8E3BF11L},{0xB6182EACL},{(-10L)}},{{0L},{0xF6C218E9L},{0x34B0B4EFL},{0L},{0x477AE271L},{0xC5165352L},{(-1L)},{0x8F985589L},{0x76EC7516L},{2L},{0x76EC7516L},{0x8F985589L},{(-1L)},{0xC5165352L},{0x477AE271L},{0L},{0x34B0B4EFL},{0xF6C218E9L},{0L},{(-10L)},{0xB6182EACL},{0xF8E3BF11L},{0x084BC9C3L},{0L},{(-1L)},{0x3BE41B0CL},{0xCCCDDD1DL},{0x0B168F92L},{1L},{0x0B168F92L},{0xCCCDDD1DL},{0x3BE41B0CL},{(-1L)},{0L},{0x084BC9C3L},{0xF8E3BF11L},{0xB6182EACL},{(-10L)},{0L},{0xF6C218E9L},{0x34B0B4EFL},{0L},{0x477AE271L},{0xC5165352L},{(-1L)},{0x8F985589L},{0x76EC7516L},{2L},{0x76EC7516L},{0x8F985589L},{(-1L)},{0xC5165352L},{0x477AE271L},{0L},{0x34B0B4EFL},{0xF6C218E9L},{0L},{(-10L)},{0xB6182EACL},{0xF8E3BF11L},{0x084BC9C3L},{0L},{(-1L)},{0x3BE41B0CL},{0xCCCDDD1DL},{0x0B168F92L},{1L},{0x0B168F92L},{0xCCCDDD1DL},{0x3BE41B0CL},{(-1L)},{0L},{0x084BC9C3L},{0xF8E3BF11L},{0xB6182EACL},{(-10L)},{0L},{0xF6C218E9L},{0x34B0B4EFL},{0L},{0x477AE271L},{0xC5165352L},{(-1L)},{0x8F985589L},{0x76EC7516L},{2L},{0x76EC7516L},{0x8F985589L},{(-1L)},{0xC5165352L},{0x477AE271L},{0L}}};
+static int32_t * volatile g_8 = (void*)0;
+static int32_t * volatile g_9 = (void*)0;
+static int32_t * volatile g_10 = (void*)0;
+static int32_t * volatile g_11 = &g_4[0][5][0];
+
+
+
+static int32_t  func_1(void);
+
+
+
+
+static int32_t  func_1(void)
+{ 
+    uint32_t l_7[57] = {0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0UL,0xF77D900DL,0xF77D900DL,0UL};
+    int i;
+    for (g_4[0][5][0] = 0; (g_4[0][5][0] != 0); g_4[0][5][0] = safe_add_func_uint64_t_u_u(g_4[0][5][0], 9))
+    { 
+        if (g_2)
+            break;
+    }
+    (*g_11) = l_7[28];
+    return l_7[28];
+}
+
+
+
+
+
+int main (int argc, char* argv[])
+{
+for(int UNIQUE_ITER_1 = 0; UNIQUE_ITER_1 < 10; UNIQUE_ITER_1++){
+    func_1();
+}
+    return 0;
+}
