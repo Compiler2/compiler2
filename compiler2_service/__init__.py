@@ -1,11 +1,12 @@
 """This module defines and registers the example gym environments."""
+from importlib.metadata import entry_points
 from pathlib import Path
 
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 
 from compiler_gym.envs.compiler_env import CompilerEnv
 from compiler_gym.spaces import Commandline, CommandlineFlag
-from compiler_gym.service.proto import Space, proto_to_action_space, CommandlineSpace
+from compiler_gym.service.proto import CommandlineSpace
 from compiler_gym.wrappers import CompilerEnvWrapper
 from typing import cast, List, Union, Optional
 import os
@@ -19,7 +20,7 @@ import pandas as pd
 import copy
 
 
-def convert_commandline_space_message(message: CommandlineSpace) -> Commandline:
+def convert_commandline_space_message(message) -> Commandline:
     # Copied from CompilerGym and adapted.
     return Commandline(
         items=[
@@ -301,11 +302,12 @@ def register_env():
         id="compiler2-v0",
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
         entry_point=HPCToolkitCompilerEnv,
+        # entry_point="compiler_gym.service.client_service_compiler_env:ClientServiceCompilerEnv",
         kwargs={
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
                 perf_reward.RewardTensor(),
-                # runtime_reward.RewardTensor()
+                runtime_reward.RewardTensor()
             ],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),

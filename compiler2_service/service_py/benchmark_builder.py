@@ -35,9 +35,15 @@ def clang_plus_plus_path():
     _CLANG_PLUS_PLUS_PATH = str(path_to_llvm / "bin/clang++")
     return _CLANG_PLUS_PLUS_PATH
 
+
+
 ## Build benchmarks
 class BenchmarkBuilder:
-    def __init__(self, working_directory: Path, benchmark: Benchmark, timeout_sec: float):
+    def __init__(self, 
+        working_directory: Path, 
+        benchmark: Benchmark, 
+        action_space,
+        timeout_sec: float, ):
         self.timeout_sec = timeout_sec
 
         compile_cmd = proto_buff_container_to_list(benchmark.dynamic_config.build_cmd.argument)
@@ -59,12 +65,12 @@ class BenchmarkBuilder:
         else:
             assert compile_cmd[0], "Unsupported compiler "
 
-
+        self.action_space = action_space
         self.working_dir = working_directory
         self.llvm_path = str(self.working_dir / "benchmark.ll")
         self.llvm_path_base = str(self.working_dir / "benchmark_base.ll")
-        self.llvm_new_path = str(self.working_dir / "benchmark_new.ll")
-        self.llvm_before_path = str(self.working_dir / "benchmark.previous.ll")
+        self.llvm_path_new = str(self.working_dir / "benchmark_new.ll")
+        self.llvm_path_checkpoint = str(self.working_dir / "benchmark_previous.ll")
         self.bc_path = str(self.working_dir / "benchmark.bc")
         # vi3: Used only if the benchmark is downloaded in .bc format.
         self.bc_download_path = str(self.working_dir / "benchmark-downloaded.bc")
@@ -80,7 +86,7 @@ class BenchmarkBuilder:
                 self.exe_path,
                 # "-lm",
             ],  # "-nostartfiles"
-            "save": [self.llvm_dis, "-o", self.llvm_new_path, self.bc_path],
+            "save": [self.llvm_dis, "-o", self.llvm_path_new, self.bc_path],
         }
 
         self.pre_run_cmd = []
@@ -90,6 +96,22 @@ class BenchmarkBuilder:
         self.prepare_benchmark(benchmark)
 
         self.last_opt_action = None
+
+    def get_available_actions(self):
+        return self.action_space.space.named_discrete.name
+    
+    def save_checkpoint(self):
+        run_command(
+            ['cp', self.llvm_path, self.llvm_path_checkpoint],
+            timeout=self.timeout_sec,
+        )
+
+    def restore_checkpoint(self):
+        run_command(
+            ['mv', self.llvm_path_checkpoint, self.llvm_path],
+            timeout=self.timeout_sec,
+        )
+
 
     def prepare_benchmark(self, benchmark: Benchmark):
         self.save_to_ll(benchmark)
@@ -207,7 +229,7 @@ class BenchmarkBuilder:
 
         if save_state:
             run_command(
-                ['mv', self.llvm_new_path, self.llvm_path],
+                ['mv', self.llvm_path_new, self.llvm_path],
                 timeout=self.timeout_sec,
             )
 
@@ -215,7 +237,7 @@ class BenchmarkBuilder:
         # compare the IR files to check if the action had an effect
         try:
             subprocess.check_call(
-                ['cmp', '--silent', self.llvm_path, self.llvm_new_path],
+                ['cmp', '--silent', self.llvm_path, self.llvm_path_new],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
                 timeout=self.timeout_sec,
