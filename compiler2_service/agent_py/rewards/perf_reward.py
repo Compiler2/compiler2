@@ -19,12 +19,12 @@ class RewardPickle(Reward):
     def reset(self, benchmark: str, observation_view):
         del benchmark  # unused
         perf_dict = pickle.loads(observation_view["perf_pickle"])
-        self.prev_cycles = int(perf_dict["cycles"])
+        self.prev_cycles = int(perf_dict["cpu-cycles"])
         logging.info(f"Reward Perf: reset reward = {self.prev_cycles}")
 
     def update(self, action, observations, observation_view):
         perf_dict = pickle.loads(observations[0])
-        new_cycles = int(perf_dict["cycles"])
+        new_cycles = int(perf_dict["cpu-cycles"])
 
         logging.info(f"Reward Perf: update reward = {new_cycles}")
         reward = float(self.prev_cycles - new_cycles) / self.prev_cycles

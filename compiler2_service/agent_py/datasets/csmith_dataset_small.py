@@ -9,24 +9,21 @@ import sys
 import os
 import compiler2_service.paths
 
-# from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
+from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
-from compiler_gym.util.decorators import memoized_property
 
-
-BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
-INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/input"
+BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"csmith_small/code"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):
         super().__init__(
-            name="benchmark://poj104-small-v0",
+            name="benchmark://csmith-small-v0",
             license="MIT",
-            description="POJ104 - dataset of 50k student code on 104 problems",
+            description="CSmith generated codes 8 groups - branches loops_short loops_long dense_blas_int dense_blas_float sparse_blas_int sparse_blas_float default",
             site_data_base=site_data_path("example_dataset"),
         )
- 
+
         benchmark_config = BenchmarkDynamicConfig(
                     build_cmd=Command(
                         # $CC is replaced with clang command,
@@ -37,17 +34,18 @@ class Dataset(Dataset):
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
-                        argument=["./a.out", "<", str(INPUT_PATH / "in.txt")],
+                        argument=["./a.out"],
                         timeout_seconds=300,
                         infile=["a.out"],
                     )
                 )
 
         self._benchmarks = {}
-        benchmark_prefix = "benchmark://poj104-small-v0"
+        benchmark_prefix = "benchmark://csmith-small-v0"
 
         example_files = os.listdir(BENCHMARKS_PATH)
-        for example_filename in example_files:
+        for i, example_filename in enumerate(example_files):
+            if i == 100: break
             example_uri = benchmark_prefix + '/' + example_filename.rstrip('.c')
             self._benchmarks[example_uri] = \
                 benchmark_from_file_contents(
@@ -56,13 +54,14 @@ class Dataset(Dataset):
                     benchmark_config
                 ) 
 
+
     @property
     def size(self) -> int:
         return len(self._benchmarks)
 
     def __len__(self) -> int:
         return self.size
-
+        
     @staticmethod
     def preprocess(src: Path) -> bytes:
         """Front a C source through the compiler frontend."""
@@ -70,16 +69,16 @@ class Dataset(Dataset):
         # this pre-processing, or do it on the service side, once support for
         # multi-file benchmarks lands.
         cmd = [
-            'clang',
+            str(llvm.clang_path()),
             "-E",
             "-o",
             "-",
-            "-I",
-            str(compiler2_service.paths.BENCHMARKS_PATH/"utils"),
+            # "-I",
+            # str(compiler2_service.paths.BENCHMARKS_PATH/"utils"),
             src,
         ]
-        # for directory in get_system_library_flags():
-        #     cmd += ["-isystem", str(directory)]
+        for directory in get_system_library_flags():
+            cmd += ["-isystem", str(directory)]
         return subprocess.check_output(
             cmd,
             timeout=300,

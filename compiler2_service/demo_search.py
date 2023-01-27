@@ -27,12 +27,12 @@ from compiler_gym.util.registration import register
 from compiler_gym.service.connection import ServiceError
 import compiler2_service
 from agent_py.rewards import runtime_reward
-from agent_py.datasets import hpctoolkit_dataset
+from agent_py.datasets import poj104_dataset_small
 
 
 flags.DEFINE_integer("bench_count", 2, "The number of benchmarks.")
 flags.DEFINE_integer("search_depth", 1, "How deep you go in search before you decide.")
-flags.DEFINE_integer("search_width", 1000, "The number action you expand every level of the search.")
+flags.DEFINE_integer("search_width", 10, "The number action you expand every level of the search.")
 flags.DEFINE_integer("walk_count", 5, "The number of walks.")
 flags.DEFINE_integer("step_count", 6, "The number of steps.")
 flags.DEFINE_string("data_set", "benchmark://poj104-small-v0", "Data set.")
@@ -48,7 +48,7 @@ def register_env():
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [runtime_reward.RewardTensor()],
             "datasets": [
-                hpctoolkit_dataset.Dataset()            
+                poj104_dataset_small.Dataset()            
             ],
         },
     )
@@ -68,8 +68,9 @@ def main(argv):
             print("bench>>>>>>>>>> ", bench)
             try:
                 env.reset(benchmark=bench)
+                breakpoint()
                 env.send_param("search", f"{FLAGS.walk_count}, {FLAGS.step_count}, {FLAGS.search_depth}, {FLAGS.search_width}")
-
+                breakpoint()
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
             

@@ -9,7 +9,7 @@ import sys
 import os
 import compiler2_service.paths
 
-from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
+# from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 

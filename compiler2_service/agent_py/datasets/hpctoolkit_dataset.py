@@ -8,7 +8,7 @@ import pdb
 import sys
 import compiler2_service.paths
 
-from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
+# from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
@@ -78,7 +78,7 @@ class Dataset(Dataset):
         # this pre-processing, or do it on the service side, once support for
         # multi-file benchmarks lands.
         cmd = [
-            str(llvm.clang_path()),
+            'clang',
             "-E",
             "-o",
             "-",
@@ -86,8 +86,8 @@ class Dataset(Dataset):
             str(compiler2_service.paths.BENCHMARKS_PATH/"utils"),
             src,
         ]
-        for directory in get_system_library_flags():
-            cmd += ["-isystem", str(directory)]
+        # for directory in get_system_library_flags():
+        #     cmd += ["-isystem", str(directory)]
         return subprocess.check_output(
             cmd,
             timeout=300,

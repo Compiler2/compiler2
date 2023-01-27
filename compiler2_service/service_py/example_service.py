@@ -12,8 +12,9 @@ import pdb
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-import benchmark_builder
+import benchmark_builder, search
 from profilers import hpctoolkit, perf, programl, programl_hpctoolkit, runtime
+import json
 
 import compiler_gym.third_party.llvm as llvm
 from compiler_gym import site_data_path
@@ -176,14 +177,18 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         os.chdir(str(working_directory))
         logging.critical(f"\n\nWorking_dir = {str(working_directory)}\n")
-        # pdb.set_trace()
+        breakpoint()
 
         self.save_state = False
         self.timeout_sec = 30.0
 
         self.benchmark = benchmark_builder.BenchmarkBuilder(
-            working_directory, benchmark, self.timeout_sec
+            working_directory=working_directory, 
+            benchmark=benchmark,
+            action_space=action_space, 
+            timeout_sec=self.timeout_sec
         )
+        self.benchmark_search = search.BenchmarkSearch(benchmark=self.benchmark)
 
         self.profiler = None
         self.prev_observation = {}
@@ -193,6 +198,31 @@ class HPCToolkitCompilationSession(CompilationSession):
         if key == "save_state":
             self.save_state = False if value == "0" else True
             return "Succeeded"
+        elif key == "search": # value = "walk_count, step_count, search_depth, search_width"
+            walk_count, step_count, search_depth, search_width = value.split(',')
+
+            # import cProfile
+            # import cProfile, pstats
+            # profiler = cProfile.Profile()
+            # breakpoint()
+            # profiler.enable()
+            breakpoint()
+
+            reward_actions = self.benchmark_search.search(
+                int(walk_count), 
+                int(step_count),
+                search_depth=int(search_depth), 
+                search_width=int(search_width),
+            )
+
+            # profiler.disable()
+        
+            # stats = pstats.Stats(profiler).sort_stats('cumtime')
+            # stats.print_stats()
+            # breakpoint()
+
+            return json.dumps(reward_actions)
+
         else:
             logging.critical("handle_session_parameter Unsuported key:", key)
             return ""
@@ -200,10 +230,6 @@ class HPCToolkitCompilationSession(CompilationSession):
 
     def apply_action(self, action: Event) -> Tuple[bool, Optional[ActionSpace], bool]:
         num_choices = len(self.action_spaces[0].space.named_discrete.name)
-
-        # Vladimir: I guess choosing multiple actions at once is not possible anymore.
-        # if len(action.int64_value) != 1:
-        #     raise ValueError("Invalid choice count")
 
         choice_index = action.int64_value
         if choice_index < 0 or choice_index >= num_choices:
@@ -234,7 +260,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
     def get_observation(self, observation_space: ObservationSpace) -> Event:
         logging.info(f"Computing observation from space {observation_space.name}")  
-
+        # breakpoint()
         if observation_space.name in self.prev_observation:            
             logging.info(f"get_observation: Fast return prev_observation {self.prev_observation}")
             return self.prev_observation[observation_space.name]

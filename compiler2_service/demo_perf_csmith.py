@@ -13,51 +13,36 @@ import logging
 import os
 import pdb
 import pickle
-import re
 import subprocess
-from math import isnan
 from pathlib import Path
 from typing import Iterable
-from compiler_gym.service.connection import ServiceError
-
+import numpy as np
 import gym
 
-import compiler_gym
-
 from compiler_gym.datasets import Benchmark, BenchmarkUri, Dataset
-from compiler_gym.envs.llvm.datasets import (
-    AnghaBenchDataset,
-    BlasDataset,
-    CBenchDataset,
-    CBenchLegacyDataset,
-    CBenchLegacyDataset2,
-    CHStoneDataset,
-    CsmithDataset,
-    NPBDataset,
-)
+
 from compiler_gym.spaces import Reward
 from compiler_gym.third_party import llvm
 from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
 from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
-
-reward_metric = "REALTIME (sec) (I)"  # "time (inc)"
-import pathlib 
+from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
+
 from agent_py.rewards import perf_reward
-
-
+from agent_py.datasets import csmith_dataset_small
 
 def register_env():
-    # Register the environment for use with gym.make(...).
     register(
         id="compiler2-v0",
         entry_point=compiler2_service.HPCToolkitCompilerEnv,
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [perf_reward.RewardPickle()],
-            "datasets": [CsmithDataset(site_data_path("llvm-v0"), sort_order=0)],
+            "rewards": [perf_reward.RewardTensor()],
+            "datasets": [
+                csmith_dataset_small.Dataset()            
+            ],
         },
     )
 
@@ -67,94 +52,54 @@ def main():
     init_logging(level=logging.DEBUG)
     register_env()
 
-    blacklisted = [
-        "generator://csmith-v0/20",
-        "generator://csmith-v0/22",
-        "generator://csmith-v0/60",
-        "generator://csmith-v0/66",
-        "generator://csmith-v0/73",
-        "generator://csmith-v0/81",
-        "generator://csmith-v0/88",
-        "generator://csmith-v0/112",
-        "generator://csmith-v0/114",
-        "generator://csmith-v0/118",
-        "generator://csmith-v0/123",
-        "generator://csmith-v0/124",
-        "generator://csmith-v0/126",
-        "generator://csmith-v0/134",
-        "generator://csmith-v0/137",
-        "generator://csmith-v0/145",
-        "generator://csmith-v0/146",
-        "generator://csmith-v0/148",
-        "generator://csmith-v0/162",
-        "generator://csmith-v0/163",
-        "generator://csmith-v0/165",
-        "generator://csmith-v0/169",
-        "generator://csmith-v0/191",
-        "generator://csmith-v0/195",
-        "generator://csmith-v0/197",
-        "generator://csmith-v0/203",
-        "generator://csmith-v0/206",
-        "generator://csmith-v0/207",
-        "generator://csmith-v0/218",
-        "generator://csmith-v0/247",
-        "generator://csmith-v0/280",
-        "generator://csmith-v0/292",
-        "generator://csmith-v0/295",
-        "generator://csmith-v0/298",
-        "generator://csmith-v0/305",
-    ]
-    last_blacklisted = int(blacklisted[-1].split("/")[-1])
-
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("compiler2-v0") as env:
+    # with gym.make("compiler2-v0") as env:
+    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+
         inc = 0
-        for bench in env.datasets["generator://csmith-v0"]:
-            # for i in range(last_blacklisted, 10000):
-            # bench = 'generator://csmith-v0/' + str(i)
-            inc += 1
-
-            if bench in blacklisted:
-                continue
-
+        for bench in env.datasets["benchmark://csmith-small-v0"]:
+            print("bench>>>>>>>>>> ", bench)
             try:
+                base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
                 env.reset(benchmark=bench)
-                # env.send_param("timeout_sec", "1")
+
+                env.send_param("save_state", "0")
+                observation, reward, done, info = env.multistep(
+                    actions=[env.action_space.from_string(a) for a in base_actions],
+                    observation_spaces=["perf_tensor"],
+                    reward_spaces=["perf_tensor"],
+                    )
+
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
-                continue
-
-
-            print("********************* Train on ", bench, "*********************")
-            for i in range(1):
+            
+            for i in range(2):
                 print("Main: step = ", i)
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observation_spaces=["perf_pickle"],
-                        reward_spaces=["perf_pickle"],
+                        observation_spaces=["perf_tensor"],
+                        reward_spaces=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
                     continue
-                    
 
                 print(reward)
                 # print(observation)
                 print(info)
-                perf_dict = pickle.loads(observation[0])
-                print(perf_dict)
 
-                # pdb.set_trace()
-
-                if isnan(reward[0]):
-                    print(bench, " Failed with Nan reward")
-                    return
-
-                if done:                    
-                    continue
-
-
+                if type(observation[0]) == np.ndarray:
+                    print(observation[0])
+                else:
+                    perf_dict = pickle.loads(observation[0])
+                    print(perf_dict)                    
+                
+                
+                pdb.set_trace()
+                if done:
+                    env.reset()
+            inc += 1
         print("I run %d benchmarks." % inc)
 
 

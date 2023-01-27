@@ -72,10 +72,10 @@ def main():
 
         try:
             # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
+            env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
             # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
             
-            env.reset(benchmark="benchmark://poj104-small-v0/1_17")
+            # env.reset(benchmark="benchmark://poj104-small-v0/1_17") # Doesn't last long enough so cycles == 0 (maybe scanf problem as well)
             pdb.set_trace()
             # env.reset(benchmark="benchmark://cbench-v1/qsort")
         except ServiceError:

@@ -25,6 +25,7 @@ class RewardPickle(Reward):
         unpickled_cct = observation_view["programl_hpctoolkit_pickle"]
         g = pickle.loads(unpickled_cct)
         self.prev_runtime = g.nodes[0]["features"]["dynamic"][0]
+        breakpoint()
 
     def update(self, action, observations, observation_view):
         print("Reward ProgramlHPCToolkit: update")
