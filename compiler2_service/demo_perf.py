@@ -42,129 +42,49 @@ import compiler2_service
 from agent_py.rewards import perf_reward
 from agent_py.datasets import hpctoolkit_dataset
 
-def register_env():
-    register(
-        id="compiler2-v0",
-        entry_point=compiler2_service.HPCToolkitCompilerEnv,
-        kwargs={
-            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [perf_reward.RewardPickle()],
-            "datasets": [
-                hpctoolkit_dataset.Dataset(),
-                CBenchDataset(site_data_path("llvm-v0")),
-                CsmithDataset(site_data_path("llvm-v0"), sort_order=0),
-                NPBDataset(site_data_path("llvm-v0"), sort_order=0),
-                BlasDataset(site_data_path("llvm-v0"), sort_order=0),
-                AnghaBenchDataset(site_data_path("llvm-v0"), sort_order=0),
-                CHStoneDataset(site_data_path("llvm-v0"), sort_order=0),
-            ],
-        },
-    )
+# def register_env():
+#     register(
+#         id="compiler2-v0",
+#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
+#         kwargs={
+#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
+#             "rewards": [perf_reward.RewardPickle()],
+#             "datasets": [
+#                 hpctoolkit_dataset.Dataset(),
+#                 CBenchDataset(site_data_path("llvm-v0")),
+#                 CsmithDataset(site_data_path("llvm-v0"), sort_order=0),
+#                 NPBDataset(site_data_path("llvm-v0"), sort_order=0),
+#                 BlasDataset(site_data_path("llvm-v0"), sort_order=0),
+#                 AnghaBenchDataset(site_data_path("llvm-v0"), sort_order=0),
+#                 CHStoneDataset(site_data_path("llvm-v0"), sort_order=0),
+#             ],
+#         },
+#     )
 
 
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    register_env()
-
+    # register_env()
+    inc = 0
+    
     # Create the environment using the regular gym.make(...) interface.
-    with gym.make("compiler2-v0") as env:
-
-        # env.reset(benchmark="benchmark://cbench-v1/qsort")
-
-        benchmark_to_process = [
-            # from benchmarks directory
-            "benchmark://hpctoolkit-cpu-v0/simple_pow",
-            # "benchmark://hpctoolkit-cpu-v0/offsets1",
-            "benchmark://hpctoolkit-cpu-v0/conv2d",
-            # "benchmark://hpctoolkit-cpu-v0/nanosleep",
-            # cbench-v1
-            "benchmark://cbench-v1/bitcount",
-            "benchmark://cbench-v1/qsort",
-            "benchmark://cbench-v1/blowfish",
-            "benchmark://cbench-v1/bzip2",
-            "benchmark://cbench-v1/crc32",
-            "benchmark://cbench-v1/dijkstra",
-            # "benchmark://cbench-v1/gsm",                # FIXME: ValueError: 'utf-8' codec can't decode byte 0xcb in position 2: invalid continuation byte
-            "benchmark://cbench-v1/jpeg-c",
-            "benchmark://cbench-v1/jpeg-d",
-            "benchmark://cbench-v1/patricia",
-            "benchmark://cbench-v1/sha",
-            "benchmark://cbench-v1/stringsearch",
-            "benchmark://cbench-v1/susan",
-            "benchmark://cbench-v1/tiff2bw",
-            "benchmark://cbench-v1/tiff2rgba",
-            "benchmark://cbench-v1/tiffdither",
-            "benchmark://cbench-v1/tiffmedian",
-            # csmith
-            "generator://csmith-v0/0",
-            "generator://csmith-v0/1",
-            "generator://csmith-v0/2",
-            # ...
-            # The number represents the seed which needs to be less than or equal to UINT_MAX = (2 ** 32) - 1
-            "generator://csmith-v0/23",
-            "generator://csmith-v0/33",
-            "generator://csmith-v0/1123",
-            # ===========================
-            # npb
-            # "benchmark://npb-v0/3"
-            # warning: overriding the module target triple with x86_64-unknown-linux-gnu [-Woverride-module]
-            # 1 warning generated.
-            # /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function `_start':
-            # (.text+0x24): undefined reference to `main'
-            # clang-12: error: linker command failed with exit code 1 (use -v to see invocation
-            # ====================================
-            #
-            # ====================================
-            # "benchmark://blas-v0/1",
-            # blas
-            # /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function `_start':
-            # (.text+0x24): undefined reference to `main'
-            # /tmp/benchmark-21b6f1.o: In function `dtbsv_':
-            # /home/shoshijak/Documents/blas_ir/BLAS-3.8.0/dtbsv.f:230: undefined reference to `lsame_'
-            # /home/shoshijak/Documents/blas_ir/BLAS-3.8.0/dtbsv.f:230: undefined reference to `lsame_'
-            # /home/shoshijak/Documents/blas_ir/BLAS-3.8.0/dtbsv.f:232: undefined reference to `lsame_'
-            # /home/shoshijak/Documents/blas_ir/BLAS-3.8.0/dtbsv.f:232: undefined reference to `lsame_'
-            # /home/shoshijak/Documents/blas_ir/BLAS-3.8.0/dtbsv.f:232: undefined reference to `lsame_'
-            # ====================================
-            # ====================================
-            # Maybe we could access to the .c code directly.
-            # "benchmark://anghabench-v1/8cc/extr_buffer.c_buf_append"
-            # /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function `_start':
-            # (.text+0x24): undefined reference to `main'
-            # /tmp/benchmark-downloaded-36dcc2.o: In function `buf_append':
-            # extr_buffer.c_buf_append.c:(.text+0x3e): undefined reference to `buf_write'
-            # ====================================
-            # chstone seems to work (.c is present)
-            "benchmark://chstone-v0/adpcm",
-            "benchmark://chstone-v0/aes",
-            "benchmark://chstone-v0/blowfish",
-            "benchmark://chstone-v0/dfadd",
-            "benchmark://chstone-v0/dfdiv",
-            "benchmark://chstone-v0/dfmul",
-            "benchmark://chstone-v0/dfsin",
-            "benchmark://chstone-v0/gsm",
-            "benchmark://chstone-v0/jpeg",
-            "benchmark://chstone-v0/mips",
-            "benchmark://chstone-v0/motion",
-            "benchmark://chstone-v0/sha",
-        ]
-
-        inc = 0
-        for bench in benchmark_to_process:
+    with compiler2_service.make(id="compiler2-v0", datasets=['poj104_small']) as env:
+        
+        breakpoint()
+        for bench in env.datasets.benchmarks():
             try:
                 env.reset(benchmark=bench)
             except ServiceError:
                 print("AGENT: Timeout Error Reset")
             
-
             for i in range(2):
                 print("Main: step = ", i)
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observation_spaces=["perf_pickle"],
-                        reward_spaces=["perf_pickle"],
+                        observation_spaces=["perf_tensor"],
+                        reward_spaces=["perf_tensor"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
@@ -173,10 +93,10 @@ def main():
                 print(reward)
                 # print(observation)
                 print(info)
-                perf_dict = pickle.loads(observation[0])
+                perf_dict = observation[0]
                 print(perf_dict)
 
-                pdb.set_trace()
+                breakpoint()
                 if done:
                     env.reset()
             inc += 1

@@ -177,7 +177,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         os.chdir(str(working_directory))
         logging.critical(f"\n\nWorking_dir = {str(working_directory)}\n")
-        breakpoint()
+        # breakpoint()
 
         self.save_state = False
         self.timeout_sec = 30.0

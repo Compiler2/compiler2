@@ -1,0 +1,80 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.9
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.10
+    start_time: 1675555284.408459
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 30
+      - 55
+      2:
+      - 1
+      - 2
+      - 3
+      - 30
+      - 55
+      3:
+      - 13
+      - 14
+      - 16
+      - 23
+      4: 3.8.10
+      5: 0.13.9
+      8:
+      - 6
+      - 9
+env:
+  desc: null
+  value: compiler_gym
+explore:
+  desc: null
+  value: true
+framework:
+  desc: null
+  value: torch
+gamma:
+  desc: null
+  value: 0.95
+log_level:
+  desc: null
+  value: ERROR
+lr:
+  desc: null
+  value: 1.0e-06
+model:
+  desc: null
+  value:
+    fcnet_hiddens:
+    - 1000
+    - 1000
+    - 1000
+    - 1000
+    - 1000
+    - 1000
+    - 1000
+    - 1000
+    vf_share_layers: true
+num_gpus:
+  desc: null
+  value: 1
+num_workers:
+  desc: null
+  value: 47
+observation_space:
+  desc: null
+  value: loops_tensor
+rollout_fragment_length:
+  desc: null
+  value: 10
+train_batch_size:
+  desc: null
+  value: 790

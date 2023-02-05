@@ -93,13 +93,13 @@ def make_training_env(*args) -> compiler_gym.envs.CompilerEnv:
 
 # Lets cycle through a few calls to reset() to demonstrate that this environment
 # selects a new benchmark for each episode.
-with make_training_env() as env:
-    env.reset()
-    print(env.benchmark)
-    env.reset()
-    print(env.benchmark)
-    env.reset()
-    print(env.benchmark)
+# with make_training_env() as env:
+#     env.reset()
+#     print(env.benchmark)
+#     env.reset()
+#     print(env.benchmark)
+#     env.reset()
+#     print(env.benchmark)
 
 # (Re)Start the ray runtime.
 if ray.is_initialized():
@@ -151,6 +151,7 @@ checkpoint = analysis.get_best_checkpoint(
     trial=analysis.trials[0]
 )
 print("hack444:")
+pdb.set_trace()
 agent.restore(checkpoint)
 print("hack555:")
 

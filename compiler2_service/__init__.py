@@ -288,16 +288,16 @@ from compiler_gym.envs.llvm.datasets import (
 
 from compiler2_service.agent_py.datasets import (
     hpctoolkit_dataset,
-    poj104_dataset,
-    poj104_dataset_small,
-    fbgemm_dataset
+    poj104,
+    fbgemm_dataset,
+    poj104_small
 )
 
 from compiler_gym.util.runfiles_path import site_data_path
-
+import importlib
 
 # register perf session
-def register_env():
+def register_env(datasets):
     register(
         id="compiler2-v0",
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
@@ -307,23 +307,37 @@ def register_env():
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
                 perf_reward.RewardTensor(),
-                runtime_reward.RewardTensor()
+                # runtime_reward.RewardTensor()
             ],
             "datasets": [
-                CBenchDataset(site_data_path("llvm-v0")),
-                CsmithDataset(site_data_path("llvm-v0")),
-                CHStoneDataset(site_data_path("llvm-v0")),
-                hpctoolkit_dataset.Dataset(),
-                poj104_dataset.Dataset(),
-                poj104_dataset_small.Dataset(),
-                fbgemm_dataset.Dataset()
+            #     CBenchDataset(site_data_path("llvm-v0")),
+            #     CsmithDataset(site_data_path("llvm-v0")),
+            #     CHStoneDataset(site_data_path("llvm-v0")),
+            #     hpctoolkit_dataset.Dataset(),
+            #     poj104.Dataset(),
+            #     poj104_small.Dataset(),
+            #     fbgemm_dataset.Dataset()
+                importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset() for dataset in datasets 
             ],
         },
     )
 # register_env()
 
-def make(id: str, **kwargs):
+def set_globals(datasets, max_episode_steps):
+    global datasets_global, max_episode_steps_global
+    datasets_global, max_episode_steps_global = datasets, max_episode_steps
+
+def get_globals():
+    global datasets_global, max_episode_steps_global
+    return datasets_global, max_episode_steps_global
+    
+
+
+def make(id: str, datasets, **kwargs):
     """Equivalent to :code:`compiler_gym.make()`."""
+    if len(datasets):
+        register_env(datasets=datasets)
+
     import compiler_gym
     return compiler_gym.make(id, **kwargs)
 

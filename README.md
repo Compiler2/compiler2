@@ -1,7 +1,6 @@
 # Welcome to Compiler2
 
-This tool uses CompilerGym reinforcement learning framework to train neural network for finding optimal 
-compiler parameters for CPU optimization
+This tool uses CompilerGym reinforcement learning framework to train neural network for finding performant compiler parameters for CPU optimization
 
 # Start
 
