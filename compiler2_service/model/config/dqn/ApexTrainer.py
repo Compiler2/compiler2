@@ -7,7 +7,7 @@ def get_config(sweep=False):
     return {
         "log_level": "ERROR",
         "env": "compiler_gym", 
-        "observation_space": "loops_tensor",
+        "observation_space": "perf_tensor",
         "framework": 'torch',
         "model": {
             "vf_share_layers": True,

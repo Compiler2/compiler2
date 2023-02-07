@@ -1,1 +1,0 @@
-{"log_level": "ERROR", "env": "compiler_gym", "observation_space": "loops_tensor", "framework": "torch", "model": {"vf_share_layers": true, "fcnet_hiddens": [100, 100, 100, 100]}, "num_gpus": 1, "num_workers": 47, "rollout_fragment_length": 10, "train_batch_size": 470, "explore": false, "gamma": 0.95, "lr": 1e-06}

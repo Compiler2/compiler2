@@ -1,7 +1,7 @@
 from tokenize import Double
 import numpy as np
 import pdb
-from compiler2_service.service_py.utils import run_command_get_stderr
+from compiler2_service.service_py.utils import run_command, run_command_get_stderr
 import re
 
 from compiler_gym.service.proto import (

@@ -31,7 +31,7 @@ class Evaluator:
         self.my_artifacts = Path(tempfile.mkdtemp()) # Dir to download and upload files. Has start, end subdirectories
 
 
-    def evaluate(self, env, agent, benchmarks: list, observation: str):
+    def evaluate(self, env, agent, benchmarks: list, profiler: str, csv_file: str):
         """ Run run and plot searches on benchmarks
 
         Args:
@@ -41,15 +41,18 @@ class Evaluator:
         """
         
         self.df = pd.DataFrame()
-        breakpoint()
         for benchmark in tqdm(sorted(benchmarks)):
-            df_single = self.evaluate_single_benchmark(env, agent, benchmark, observation)
-            self.df_rtime = pd.concat([self.df, df_single], axis=0)
+            df_single = self.evaluate_single_benchmark(env, agent, benchmark, profiler + '_tensor')
+            self.df = pd.concat([self.df, df_single], axis=0)
+
+
+        self.df.to_csv(csv_file)
+        self.plot_actions(csv_file)
 
         return self.df
         
 
-    def evaluate_single_benchmark(self, env, agent, benchmark, observation):
+    def  evaluate_single_benchmark(self, env, agent, benchmark, observation):
         """ Run set of searches on single benchmark
 
         Args:
@@ -62,9 +65,14 @@ class Evaluator:
         """
         print(benchmark)
         benchmark_name = str(benchmark).split('/')[-1]
-        results = {'benchmark': benchmark_name}
+        results = {'benchmark': [benchmark_name]}
         env.reset(benchmark=benchmark)
-        results['actions'], results['run_time'], results['compile_time'] = self.rllib_search(env, agent, observation)
+        results['O3_cycles'], results['O3_compile_time'] = [float(x) for x in env.send_param("eval_O3", "").split(',')]
+        env.reset(benchmark=benchmark)
+        results['actions'], results['cycles'], results['compile_time'] = self.rllib_search(env, agent, observation)
+        
+        
+
         return pd.DataFrame.from_dict(results)
 
     def save(self, path):
@@ -150,48 +158,39 @@ class Evaluator:
         axs.tick_params(labelrotation=0)
 
 
-    def plot_actions(self, path):
-        if type(self.df_gflops) == None: 
+    def plot_actions(self, csv_path):
+        df = pd.read_csv(csv_path)
+        if type(df) == None: 
             return
 
-        bench_column, search_columns = self.df_gflops.columns[0], self.df_gflops.columns[1:]
+        plot_path = csv_path.rstrip('.csv') + '.png'
 
-        # for best_idx in range(len(df_gflops_final)): #df_gflops_final[search_columns].idxmax():
-        for index in range(len(self.df_gflops)):
-            gflops_row = self.df_gflops.iloc[index]
-            time_row = self.df_time.iloc[index]
+        for i, row in df.iterrows():
+            benchmark = row['benchmark']
+            actions_list = row['actions'].split(',')
+            cycles_list = [ float(x) for x in row['cycles'].split(',')]
+            compile_list = [ float(x) for x in row['compile_time'].split(',')] 
 
-            fig, axs = plt.subplots(2, 1)
-            
-            for i, search in enumerate(search_columns): 
-                x_data = np.arange(0, 2 * self.steps, 1) + 0.05 * i  # to show overlaping points
-                axs[0].plot(x_data[:len(gflops_row[search])], gflops_row[search], marker = '.', label = search)      
-                axs[1].plot(x_data[:len(time_row[search])], time_row[search], marker = '.', label = search)
+            plt.plot(compile_list, cycles_list, marker='o', label=benchmark)
+
+            for i, (x, y) in enumerate(zip(compile_list, cycles_list)):
+                plt.annotate(actions_list[i], # this is the text
+                    (x, y), # these are the coordinates to position the label
+                    textcoords="offset points", # how to position the text
+                    xytext=(0,10), # distance from text to points (x,y)
+                    fontsize=8,
+                    ha='center') # horizontal alignment can be left, right or center
 
 
-            fig.suptitle(f'Gain per action', fontsize=16)
-            axs[0].legend(title='Searches',loc='center left', bbox_to_anchor=(1, 0.5))
-            axs[0].set_xticks(range(self.steps + 1))
-            axs[0].set_ylabel('GFLOPS')
-            axs[0].grid(b=True, which='major', axis='y')
-
-            axs[1].set_xlabel('steps')
-            axs[1].set_xticks(range(self.steps + 1))
-            axs[1].set_ylabel('seconds')
-            axs[1].set_yscale('log')
-            axs[1].grid(b=True, which='major', axis='y', linestyle='-')
-            axs[1].grid(b=True, which='minor', axis='y', linestyle='--')
-            
-            plt.gca().yaxis.set_major_locator(plt.LogLocator(base=10, numticks=10))
-            plt.gca().yaxis.set_minor_locator(plt.LogLocator(base=10, subs='all', numticks=100))
-
-            fig.savefig(f'{path}_{gflops_row[bench_column]}_actions.png', bbox_inches = 'tight')
-            print(f'\n{path}_{gflops_row[bench_column]}_actions.png\n')
+            plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
         
+        plt.xlabel('compile_time')
+        plt.ylabel('cycles')
+        plt.savefig(plot_path, bbox_inches = 'tight')
+
+
 
     def send_to_wandb(self, wandb_run_id, wandb_dict=None, path=None):
-        if wandb_run_id == 'dummy': 
-            return
 
         trial_id = wandb_run_id.split('/')[2] # format username/project_name/trial_id
 
@@ -244,31 +243,32 @@ class Evaluator:
         search_time = time.time() - start
         if res != None:
             search_table = json.loads(res)
-            actions, action_gflops, action_times = search_table #list(zip(*search_table)) # unzip search table
+            actions, action_cycles, action_compile_time = search_table #list(zip(*search_table)) # unzip search table
             # gflops = self.move_and_eval(env, actions_str=actions)
         else:
-            actions, action_gflops, action_times = ["failed"], base_gflops, [search_time]
+            actions, action_cycles, action_compile_time = ["failed"], base_gflops, [search_time]
 
-        return actions, action_gflops, action_times #gflops, search_time, actions
+        return actions, action_cycles, action_compile_time #gflops, search_time, actions
 
 
     def rllib_search(self, env, agent, observation):
-        breakpoint()
-        actions, action_gflops, action_times = [], [], []
+        actions, action_cycles, action_compile_time = [], [], []
         start_time = time.time()
-        feature_vector = env.observation[observation]
+        obs = env.observation[observation]
 
         for i in range(self.steps):
-            feature_vector = torch.Tensor(feature_vector).unsqueeze(0)
+            feature_vector = torch.Tensor(obs).unsqueeze(0)
             a_id = agent.compute_action(feature_vector)
+            obs, reward, done, info = env.step(a_id)
+
             action = env.action_space.to_string(a_id)
             actions.append(action)
-            action_gflops.append(float(env.observation[self.reward]))
-            action_times.append(time.time() - start_time)
-            env.step(a_id)
-            feature_vector = env.observation[observation]
+            action_cycles.append(env.observation['perf_cycles'])
+            action_compile_time.append(time.time() - start_time)
 
-        return actions, action_gflops, action_times
+        return ', '.join(actions), ', '.join(str(x) for x in action_cycles), ', '.join(str(x) for x in action_compile_time)
+
+
 
     def move_and_eval(self, env, actions_str):
         actions_ids = [ env.action_space.from_string(a) for a in actions_str ]

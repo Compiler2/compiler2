@@ -63,14 +63,14 @@ class Profiler:
         pickled = pickle.dumps(perf_dict)
         return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
 
-    def perf_get_dict(self) -> Dict:
+    def perf_get_dict(self, num_metric_groups=10000000) -> Dict:
 
         # perf stat -o metric_out.csv -d -d -d -x ',' ./benchmark.exe 1125000
         # perf stat -d -d -d -x ',' ./benchmark.exe 1125000 # much faster        
         metric_file_names = []
         events_list = []
 
-        for i, metrics in enumerate(self.metric_groups):
+        for i, metrics in enumerate(self.metric_groups[:num_metric_groups]):
             events_list = ["-e", ",".join(metrics)]
 
             metric_file_name = "metrics_%s.csv"%str(i)
@@ -86,7 +86,6 @@ class Profiler:
                 perf_cmd,
                 timeout=self.timeout_sec,
             )
-            # pdb.set_trace()
 
         return self.perf_parse_to_dict(metric_file_names)
 
@@ -112,7 +111,12 @@ class Profiler:
 class ProfilerTensor(Profiler):
     def get_observation(self) -> Event:
         perf_dict = self.perf_get_dict()
-        # pdb.set_trace()
         perf_vec = [ float(x) for x in perf_dict.values() ]
         tensor = DoubleTensor(shape = [ 1, len(perf_vec)], value=perf_vec)
         return Event(double_tensor=tensor)
+
+
+class CycleProfiler(Profiler):
+    def get_observation(self) -> Event:
+        perf_dict = self.perf_get_dict(num_metric_groups=1)
+        return Event(double_value=float(perf_dict['cpu-cycles']))

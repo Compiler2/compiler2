@@ -124,6 +124,7 @@ class RLlibTrainer:
 
         self.max_episode_steps = steps
         self.trainer_name = trainer
+        self.profiler = profiler
         self.algorithm, trainer = trainer.split('.') # expected: algorithm.trainer
         self.trainer = getattr(importlib.import_module(f'ray.rllib.agents.{self.algorithm}'), trainer)
         self.config = importlib.import_module(f"compiler2_service.model.config.{self.algorithm}.{trainer}").get_config(sweep_count)
@@ -136,9 +137,10 @@ class RLlibTrainer:
         self.wandb_project_name = self.wandb_project_url.split('/')[1]
         self.env = make_env()
         self.reward = list(self.env.reward.spaces.keys())[0]
-        my_artifacts = Path(f'{COMPILER2_ROOT}/results/perf/{time.strftime("%Y%m%d-%H%M%S")}') #Path(tempfile.mkdtemp()) # Dir to download and upload files. Has start, end subdirectories
-        self.my_artifacts_start = my_artifacts/'start'
-        self.my_artifacts_end = my_artifacts/'end'
+        self.my_artifacts = Path(f'{COMPILER2_ROOT}/results/perf/{time.strftime("%Y%m%d-%H%M%S")}') #Path(tempfile.mkdtemp()) # Dir to download and upload files. Has start, end subdirectories
+        self.my_artifacts_start = self.my_artifacts/'start'
+        self.my_artifacts_end = self.my_artifacts/'end'
+        self.my_artifacts_results = self.my_artifacts/'results'
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.slurm = slurm
         self.wandb_key_path = wandb_key_path
@@ -359,18 +361,17 @@ class RLlibTrainer:
 
 
     def evaluate(self, agent, wandb_overwrite=False):
+        self.my_artifacts_results.mkdir(parents=True)
+        self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_train_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_train.csv')
+        self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_test_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_test.csv')
+        
 
-        df_train = self.evaluator.evaluate(self.env, agent, self.wandb_dict['eval_train_benchmarks'], 'perf_tensor')
-        self.evaluator.save(path=self.my_artifacts_end/"train")
-
-        df_val = self.evaluator.evaluate(self.env, agent, self.wandb_dict['eval_test_benchmarks'], 'perf_tensor')
-        self.evaluator.save(path=self.my_artifacts_end/"test")
     
-        self.wandb_update_df(df_train, prefix='train_')
-        self.wandb_update_df(df_val, prefix='test_')
-        if wandb_overwrite:
-            self.evaluator.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)
-        print(f'Saved at: {self.my_artifacts_end}')
+        # self.wandb_update_df(df_train, prefix='train_')
+        # self.wandb_update_df(df_val, prefix='test_')
+        # if wandb_overwrite:
+        #     self.evaluator.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)
+        # print(f'Saved at: {self.my_artifacts_end}')
 
 
     # def wandb_update_df(self, res_dict, prefix):

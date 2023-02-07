@@ -14,4 +14,4 @@ __pycache__
 /package-lock.json
 .idea/
 wandb_key.txt
-
+results/*

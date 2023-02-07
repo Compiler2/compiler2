@@ -43,6 +43,7 @@ from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 import utils
 import signal
 import sys
+import time
 
 import gym
 
@@ -77,20 +78,21 @@ class HPCToolkitCompilationSession(CompilationSession):
         #####################################################################################################
         # DoubleTensor Observation Spaces
         #####################################################################################################        
-        ObservationSpace(
-            name="runtime_tensor",
-            space=Space(
-                double_box=DoubleBox(
-                    low = DoubleTensor(shape = [1], value=[0]),
-                    high = DoubleTensor(shape = [1], value=[float("inf")]),
-                )
-            ),
-            deterministic=False,
-            platform_dependent=True,
-            default_observation=Event(
-                double_value=0,
-            ),
-        ),
+        # ObservationSpace(
+        #     name="runtime_tensor",
+        #     space=Space(
+        #         double_box=DoubleBox(
+        #             low = DoubleTensor(shape = [1], value=[0]),
+        #             high = DoubleTensor(shape = [1], value=[float("inf")]),
+        #         )
+        #     ),
+        #     deterministic=False,
+        #     platform_dependent=True,
+        #     default_observation=Event(
+        #         double_value=0,
+        #     ),
+        # ),
+
         ObservationSpace( # Note: Be CAREFUL with dimensions, they need to be exactly the same like in perf.py
             name="perf_tensor",
             space=Space(
@@ -103,6 +105,18 @@ class HPCToolkitCompilationSession(CompilationSession):
             platform_dependent=True,
             default_observation=Event(
                 double_tensor=DoubleTensor(shape = [1, 28], value=[0] * 28),
+            ),
+        ),
+
+        ObservationSpace(
+            name="perf_cycles",
+            space=Space(
+                double_value=DoubleRange(min=0),
+            ),
+            deterministic=False,
+            platform_dependent=True,
+            default_observation=Event(
+                double_value=0            
             ),
         ),
 
@@ -198,6 +212,17 @@ class HPCToolkitCompilationSession(CompilationSession):
         if key == "save_state":
             self.save_state = False if value == "0" else True
             return "Succeeded"
+        elif key == "eval_O3": # value = "walk_count, step_count, search_depth, search_width"
+            start = time.time()
+            self.benchmark.compile_O3()
+            compile_time = time.time() - start
+
+            cycles = perf.CycleProfiler('perf_cycles',
+                                    self.benchmark.run_cmd,
+                                    self.timeout_sec).get_observation().double_value
+
+            return f'{cycles}, {compile_time}'
+
         elif key == "search": # value = "walk_count, step_count, search_depth, search_width"
             walk_count, step_count, search_depth, search_width = value.split(',')
 
@@ -285,7 +310,12 @@ class HPCToolkitCompilationSession(CompilationSession):
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              
-                                
+
+            elif observation_space.name == "perf_cycles":
+                self.profiler = perf.CycleProfiler(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec)                                              
+
 
             elif observation_space.name == "hpctoolkit_pickle":
                 self.profiler = hpctoolkit.Profiler(observation_space.name,

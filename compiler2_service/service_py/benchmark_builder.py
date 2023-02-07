@@ -212,6 +212,12 @@ class BenchmarkBuilder:
             timeout=self.timeout_sec,
         )
 
+    def compile_O3(self):
+        run_command(
+            ['clang', '-O3', self.llvm_path, '-o', self.exe_path],
+            timeout=self.timeout_sec,
+        )
+
 
     def apply_action(self, opt: str, save_state: bool):
         # opt format "-opt1 -opt2 ..."
