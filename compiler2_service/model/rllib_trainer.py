@@ -14,7 +14,7 @@ For CLI options:
 $ python custom_env.py --help
 
 Reproduce results from wandb:
-$ python rllib_agent.py --iter=0 --dataset=mm64_256_16_range  --wandb_url=dejang/loop_tool_agent_split/61e41_00000 --trainer=dqn.ApexTrainer  --eval_size=25 --eval_time=60
+$ python rllib_agent.py --iter=0 --dataset=poj104_small  --wandb_url=dejang/loop_tool_agent_split/61e41_00000 --trainer=dqn.ApexTrainer  --eval_size=25 --eval_time=60
 """
 import argparse
 import ast
@@ -64,38 +64,28 @@ import wandb
 
 import tempfile
 # Run this with: 
-# python rllib_agent.py --iter=2 --dataset=mm64_256_16_range
-# python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
+# python rllib_agent.py --iter=2 --dataset=poj104_small
+# python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=poj104_small --sweep  --steps=3
 # python
-
-
-
-# datasets_global = ['poj104_small']
-# max_episode_steps = 10
-
 
 
 torch, nn = try_import_torch()
 import ray.rllib.agents.trainer_template
 
 
-# global datasets_global, max_episode_steps_global
-
 
 def make_env():
     """Make the reinforcement learning environment for this experiment."""
-    global datasets_global, max_episode_steps_global
-    # print(datasets_global, max_episode_steps_global)
-    datasets_global, max_episode_steps_global = ['poj104_small'], 10 #compiler2_service.get_globals()
+    # print(os.environ["dataset"], os.environ["steps"])
 
     env = compiler2_service.make(
         "compiler2-v0",
-        datasets=datasets_global,
+        datasets=[os.environ["dataset"]],
         observation_space="perf_tensor",
         reward_space="perf_tensor",
     )
 
-    env = TimeLimit(env, max_episode_steps=max_episode_steps_global) # <<<< Must be here
+    env = TimeLimit(env, max_episode_steps=int(os.environ["steps"])) # <<<< Must be here
     return env
 
 
@@ -118,9 +108,9 @@ class RLlibTrainer:
         self.ray_start(slurm)
         self.wandb_dict = {}
 
-        global datasets_global, max_episode_steps_global
-        # datasets_global = [ dataset ]
-        # max_episode_steps_global = steps
+        # os.environ["dataset"] = dataset
+        # os.environ["steps"] = str(steps)
+
 
         self.max_episode_steps = steps
         self.trainer_name = trainer
@@ -150,12 +140,10 @@ class RLlibTrainer:
         self.test_benchmarks = []
         self.checkpoint_start = None
         self.analysis = None
+        self.trial_id = None
         self.evaluator = Evaluator(steps=steps, reward=self.reward, timeout=eval_time)
         self.init()
     
-    def __del__(self):
-        # ray.shutdown()
-        pass
 
 
     def init(self):
@@ -171,6 +159,7 @@ class RLlibTrainer:
         benchmarks = [str(b) for b in dataset.benchmarks()]
         random.shuffle(benchmarks)
         benchmarks = benchmarks[:self.size]
+        self.wandb_dict['profiler'] = self.profiler
         self.wandb_dict['dataset'] = dataset.name
         self.wandb_dict['max_episode_steps'] = self.max_episode_steps
         
@@ -212,10 +201,6 @@ class RLlibTrainer:
             ray.init(address=ray_address, _node_ip_address=head_node_ip, _redis_password=redis_password)    
         else:
             ray.init(local_mode=False, ignore_reinit_error=True)
-
-
-    # def make_env(self):
-    #     return make_env()
 
 
     def load_model(self, wandb_url):
@@ -284,8 +269,7 @@ class RLlibTrainer:
                 )
             ],
         )
-        print("hhh2______________________")
-        breakpoint()
+        print("tune.run done______________________")
 
         if len(analysis.trials):
             trial = analysis.trials[0]
@@ -306,6 +290,7 @@ class RLlibTrainer:
         self.agent.restore(checkpoint_path_str)
 
         if trial_id:
+            self.trial_id = trial_id
             self.wandb_save_agent(trial_id, trial_config, Path(checkpoint_path_str))
 
         return self.agent
@@ -331,13 +316,12 @@ class RLlibTrainer:
     def send_to_wandb(self, wandb_run_id, wandb_dict=None, path=None):
         trial_id = wandb_run_id.split('/')[2] # format username/project_name/trial_id
 
-        wandb_dict['group_id'] = trial_id.split('_')[0]
-        wandb_dict['run_id'] = trial_id
-
         api = wandb.Api()
         wandb_run = api.run(wandb_run_id) # trial_id
 
         if wandb_dict: # Upload wandb dict
+            wandb_dict['group_id'] = trial_id.split('_')[0]
+            wandb_dict['run_id'] = trial_id
             for key, value in wandb_dict.items(): 
                 wandb_run.summary[key] = value
             wandb_run.summary.update()
@@ -361,22 +345,14 @@ class RLlibTrainer:
 
 
     def evaluate(self, agent, wandb_overwrite=False):
-        self.my_artifacts_results.mkdir(parents=True)
-        self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_train_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_train.csv')
-        self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_test_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_test.csv')
         
+        self.my_artifacts_results.mkdir(parents=True)
+        self.wandb_dict[f'final_performance_train'] = self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_train_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_train.csv')
+        self.wandb_dict[f'final_performance_test'] = self.evaluator.evaluate(env=self.env, agent=agent, benchmarks=self.wandb_dict['eval_test_benchmarks'], profiler=self.profiler, csv_file=f'{self.my_artifacts_results}/{self.profiler}_test.csv')
+        
+        breakpoint()
+        if self.trial_id:
+            self.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{self.trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_results)
 
     
-        # self.wandb_update_df(df_train, prefix='train_')
-        # self.wandb_update_df(df_val, prefix='test_')
-        # if wandb_overwrite:
-        #     self.evaluator.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)
-        # print(f'Saved at: {self.my_artifacts_end}')
-
-
-    # def wandb_update_df(self, res_dict, prefix):
-    #     self.wandb_dict[f'{prefix}final_performance'] = float(np.mean(res_dict['gflops']['loop_tune_ln'].str[-1] / res_dict['gflops']['greedy1_ln'].str[-1]))
-    #     self.wandb_dict[f'{prefix}avg_search_base_speedup'] = float(np.mean(res_dict['gflops']['greedy1_ln'].str[-1] / res_dict['gflops']['base'].str[-1]))
-    #     self.wandb_dict[f'{prefix}avg_network_base_speedup'] = float(np.mean(res_dict['gflops']['loop_tune_ln'].str[-1] / res_dict['gflops']['base'].str[-1]))
-    #     self.wandb_dict[f'{prefix}search_actions_num'] = float(np.mean(res_dict['actions']['greedy1_ln'].str.len()))
-    #     self.wandb_dict[f'{prefix}network_actions_num'] = float(np.mean(res_dict['actions']['loop_tune_ln'].str.len()))
+        print(f'Saved at: {self.my_artifacts_results}')

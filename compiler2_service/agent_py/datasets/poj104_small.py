@@ -21,7 +21,7 @@ INPUT_PATH: Path = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/input"
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):
         super().__init__(
-            name="benchmark://poj104-small-v0",
+            name="benchmark://poj104_small-v0",
             license="MIT",
             description="POJ104 - dataset of 50k student code on 104 problems",
             site_data_base=site_data_path("example_dataset"),
@@ -44,7 +44,7 @@ class Dataset(Dataset):
                 )
 
         self._benchmarks = {}
-        benchmark_prefix = "benchmark://poj104-small-v0"
+        benchmark_prefix = "benchmark://poj104_small-v0"
 
         example_files = os.listdir(BENCHMARKS_PATH)
         for example_filename in example_files:

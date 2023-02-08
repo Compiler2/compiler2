@@ -37,6 +37,7 @@ import pandas as pd
 from copy import deepcopy
 import yaml
 
+import ray
 
 import compiler2_service
 from compiler2_service.model.evaluator import Evaluator
@@ -49,7 +50,7 @@ from os.path import exists
 
 import tempfile
 # Run this with: 
-# python rllib_agent.py --iter=2 --dataset=mm64_256_16_range
+# python compiler2_service/model/train.py --dataset=poj104-small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
 # python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
 # python
 
@@ -131,6 +132,9 @@ if __name__ == '__main__':
 
     init_logging(level=logging.CRITICAL)
 
+    os.environ["dataset"] = args.dataset
+    os.environ["steps"] = str(args.steps)
+
     trainer = RLlibTrainer(
         profiler=args.profiler,
         trainer=args.trainer, 
@@ -156,4 +160,5 @@ if __name__ == '__main__':
     # Implement evaluate
     trainer.evaluate(agent)
     
+    ray.shutdown()
     print("Return from train!")
