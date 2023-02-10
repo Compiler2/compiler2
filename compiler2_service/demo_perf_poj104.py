@@ -40,7 +40,7 @@ import compiler2_service
 
 
 from agent_py.rewards import perf_reward
-from agent_py.datasets import poj104_dataset_small
+from compiler2_service.agent_py.datasets import poj104_small
 
 def register_env():
     register(
@@ -50,7 +50,7 @@ def register_env():
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
-                poj104_dataset_small.Dataset()            
+                poj104_small.Dataset()            
             ],
         },
     )

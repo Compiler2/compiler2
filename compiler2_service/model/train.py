@@ -50,7 +50,7 @@ from os.path import exists
 
 import tempfile
 # Run this with: 
-# python compiler2_service/model/train.py --dataset=poj104-small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
+# python compiler2_service/model/train.py --dataset=poj104_small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
 # python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
 # python
 

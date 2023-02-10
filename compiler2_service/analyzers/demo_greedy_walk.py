@@ -19,8 +19,8 @@ import sys
 
 from compiler2_service.agent_py.datasets import (
     hpctoolkit_dataset,
-    poj104_dataset,
-    poj104_dataset_small,
+    poj104,
+    poj104_small,
 )
 from compiler2_service.analyzers.dataset_exploration.greedy_walk import GreedyWalker
 
@@ -67,8 +67,8 @@ def register_perf_session():
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
                 # hpctoolkit_dataset.Dataset(),
-                poj104_dataset.Dataset(),    
-                poj104_dataset_small.Dataset(),    
+                poj104.Dataset(),    
+                poj104_small.Dataset(),    
             ],
         },
     )

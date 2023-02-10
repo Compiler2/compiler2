@@ -33,27 +33,27 @@ from agent_py.rewards import hpctoolkit_reward
 from agent_py.datasets import hpctoolkit_dataset
 
 
-def register_env():
-    register(
-        id="compiler2-v0",
-        entry_point=compiler2_service.HPCToolkitCompilerEnv,
-        kwargs={
-            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [hpctoolkit_reward.RewardPickle()],
-            "datasets": [hpctoolkit_dataset.Dataset()],
-        },
-    )
+# def register_env():
+#     register(
+#         id="compiler2-v0",
+#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
+#         kwargs={
+#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
+#             "rewards": [hpctoolkit_reward.RewardPickle()],
+#             "datasets": [hpctoolkit_dataset.Dataset()],
+#         },
+#     )
 
 
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    register_env()
+    # register_env()
 
     reward_metric = hpctoolkit_reward.RewardPickle.reward_metric
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_env("compiler2-v0", logging=False) as env:
+    with compiler2_service.make_env("compiler2-v0", datasets=['hpctoolkit_dataset'], logging=False) as env:
 
         print("Make hpctoolkit")
         for bench in env.datasets["benchmark://hpctoolkit-cpu-v0"]:
@@ -71,12 +71,13 @@ def main():
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
                         observation_spaces=["hpctoolkit_pickle"],
-                        reward_spaces=["hpctoolkit_pickle"],
+                        # reward_spaces=["perf_reward"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
                     continue
-                            
+                
+                breakpoint()
                 print(reward)
                 print(info)
                 gf = pickle.loads(observation[0])
