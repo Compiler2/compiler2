@@ -22,7 +22,7 @@ class GraphormerEncoder(FairseqEncoder):
         parser.add_argument(
             "--num_classes",
             type=int,
-            default=4,
+            default=10,
             help="encoder embedding dimension",
         )
         parser.add_argument(
@@ -161,55 +161,82 @@ class GraphormerEncoder(FairseqEncoder):
         return parser.parse_args()
 
 
-    def __init__(self):
+    def __init__(self,
+            num_classes,
+            max_nodes=50,
+            num_in_degree=512,
+            num_out_degree=512,
+            num_edges=1536,
+            num_spatial=512,
+            num_edge_dis=128,
+            edge_type='single_hop',
+            multi_hop_max_dist=5,
+            encoder_layers=12,
+            encoder_embed_dim=768,
+            encoder_ffn_embed_dim=768,
+            encoder_attention_heads=32,
+            dropout=0.0,
+            attention_dropout=0.1,
+            act_dropout=0.1,
+            encoder_normalize_before=True,
+            pre_layernorm=False,
+            apply_graphormer_init=True,
+            activation_fn='gelu',
+            share_encoder_input_output_embed=False,
+            encoder_lerned_pos=False,
+            no_token_positional_embeddings=False,
+            max_positions=512,
+            remove_head=False,
+    ):
         super().__init__(dictionary=None)
-        args = self.parse_args()
+        # args = self.parse_args()
 
-
-        self.max_nodes = args.max_nodes
+        self.max_nodes = max_nodes
 
         self.graph_encoder = GraphormerGraphEncoder(
             # < for graphormer
-            num_atoms=args.max_nodes,
-            num_in_degree=args.num_in_degree,
-            num_out_degree=args.num_out_degree,
-            num_edges=args.num_edges,
-            num_spatial=args.num_spatial,
-            num_edge_dis=args.num_edge_dis,
-            edge_type=args.edge_type,
-            multi_hop_max_dist=args.multi_hop_max_dist,
+            num_atoms=max_nodes,
+            num_in_degree=num_in_degree,
+            num_out_degree=num_out_degree,
+            num_edges=num_edges,
+            num_spatial=num_spatial,
+            num_edge_dis=num_edge_dis,
+            edge_type=edge_type,
+            multi_hop_max_dist=multi_hop_max_dist,
             # >
-            num_encoder_layers=args.encoder_layers,
-            embedding_dim=args.encoder_embed_dim,
-            ffn_embedding_dim=args.encoder_ffn_embed_dim,
-            num_attention_heads=args.encoder_attention_heads,
-            dropout=args.dropout,
-            attention_dropout=args.attention_dropout,
-            activation_dropout=args.act_dropout,
-            encoder_normalize_before=args.encoder_normalize_before,
-            pre_layernorm=args.pre_layernorm,
-            apply_graphormer_init=args.apply_graphormer_init,
-            activation_fn=args.activation_fn,
+            num_encoder_layers=encoder_layers,
+            embedding_dim=encoder_embed_dim,
+            ffn_embedding_dim=encoder_ffn_embed_dim,
+            num_attention_heads=encoder_attention_heads,
+            dropout=dropout,
+            attention_dropout=attention_dropout,
+            activation_dropout=act_dropout,
+            encoder_normalize_before=encoder_normalize_before,
+            pre_layernorm=pre_layernorm,
+            apply_graphormer_init=apply_graphormer_init,
+            activation_fn=activation_fn,
         )
-        if getattr(args, "apply_graphormer_init", False):
+        self.num_classes = num_classes
+        
+        if apply_graphormer_init:
             self.apply(init_graphormer_params)
 
-        self.share_input_output_embed = args.share_encoder_input_output_embed
+        self.share_input_output_embed = share_encoder_input_output_embed
         self.embed_out = None
         self.lm_output_learned_bias = None
 
-        # Remove head is set to true during fine-tuning
-        self.load_softmax = not getattr(args, "remove_head", False)
+        # # Remove head is set to true during fine-tuning
+        self.load_softmax = not remove_head
 
         self.masked_lm_pooler = nn.Linear(
-            args.encoder_embed_dim, args.encoder_embed_dim
+            encoder_embed_dim, encoder_embed_dim
         )
 
         self.lm_head_transform_weight = nn.Linear(
-            args.encoder_embed_dim, args.encoder_embed_dim
+            encoder_embed_dim, encoder_embed_dim
         )
-        self.activation_fn = utils.get_activation_fn(args.activation_fn)
-        self.layer_norm = LayerNorm(args.encoder_embed_dim)
+        self.activation_fn = utils.get_activation_fn(activation_fn)
+        self.layer_norm = LayerNorm(encoder_embed_dim)
 
         self.lm_output_learned_bias = None
         if self.load_softmax:
@@ -217,7 +244,7 @@ class GraphormerEncoder(FairseqEncoder):
 
             if not self.share_input_output_embed:
                 self.embed_out = nn.Linear(
-                    args.encoder_embed_dim, args.num_classes, bias=False
+                    encoder_embed_dim, num_classes, bias=False
                 )
             else:
                 raise NotImplementedError

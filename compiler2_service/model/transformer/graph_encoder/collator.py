@@ -63,7 +63,7 @@ def pad_3d_unsqueeze(x, padlen1, padlen2, padlen3):
     return x.unsqueeze(0)
 
 
-def collator(items, max_node=512, multi_hop_max_dist=20, spatial_pos_max=20):
+def collator(items, max_node=512, multi_hop_max_dist=20, spatial_pos_max=20, device='cpu'):
     items = [item for item in items if item is not None and item.x.size(0) <= max_node]
     items = [
         (
@@ -112,13 +112,13 @@ def collator(items, max_node=512, multi_hop_max_dist=20, spatial_pos_max=20):
     in_degree = torch.cat([pad_1d_unsqueeze(i, max_node_num) for i in in_degrees])
 
     return dict(
-        idx=torch.LongTensor(idxs),
-        attn_bias=attn_bias,
-        attn_edge_type=attn_edge_type,
-        spatial_pos=spatial_pos,
-        in_degree=in_degree,
-        out_degree=in_degree,  # for undirected graph
-        x=x,
-        edge_input=edge_input,
-        y=y,
+        idx=torch.LongTensor(idxs).to(device),
+        attn_bias=attn_bias.to(device),
+        attn_edge_type=attn_edge_type.to(device),
+        spatial_pos=spatial_pos.to(device),
+        in_degree=in_degree.to(device),
+        out_degree=in_degree.to(device),  # for undirected graph
+        x=x.to(device),
+        edge_input=edge_input.to(device),
+        y=y.to(device),
     )

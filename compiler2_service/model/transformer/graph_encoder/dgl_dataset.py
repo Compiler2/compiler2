@@ -47,7 +47,9 @@ class GraphormerDGLDataset(Dataset):
         else:
             self.dataset = dataset
 
-        # breakpoint()
+        self.num_classes = torch.max(self.labels) + 1
+
+        breakpoint()
         num_data = len(self.dataset)
         self.seed = seed
         if train_idx is None:
@@ -75,7 +77,7 @@ class GraphormerDGLDataset(Dataset):
             G.ndata['x'] = torch.ones((4, 3)) # set nodes features
             
             dataset.append(G)
-            labels.append([0, 0, 1, 0])
+            labels.append([4, 2, 1, 2]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
         
         return dataset, torch.tensor(labels)
 
@@ -196,9 +198,10 @@ class GraphormerDGLDataset(Dataset):
             if self.__indices__ is not None:
                 idx = self.__indices__[idx]
             graph = self.dataset[idx]
-            y = self.labels[idx]
+            # y must be one hot
+            y_onehot = torch.nn.functional.one_hot(self.labels[idx][0], num_classes=self.num_classes) # predict first opt in label
 
-            item = self.__preprocess_dgl_graph(graph, y, idx)
+            item = self.__preprocess_dgl_graph(graph, y_onehot, idx)
             # breakpoint()
             return item
         else:
@@ -207,9 +210,11 @@ class GraphormerDGLDataset(Dataset):
     def __len__(self) -> int:
         return len(self.dataset) if self.__indices__ is None else len(self.__indices__)
 
-    def collate(self):
-        x = [ self.__getitem__(i) for i in range(len(self.dataset)) ]
-        return {'x':collator(x), 'y':self.labels}
+    def collate(self, size=None, device='cpu'):
+        if size == None:
+            size = len(self.dataset)
+        x = [ self.__getitem__(i) for i in range(size) ]
+        return {'x':collator(x, device=device), 'y':torch.tensor(self.labels[:size]).to(device)}
 
 
 
