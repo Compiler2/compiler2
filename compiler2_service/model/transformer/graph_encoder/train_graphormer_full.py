@@ -1,4 +1,4 @@
-# Initial version of the code is copied from https://towardsdatascience.com/a-detailed-guide-to-pytorchs-nn-transformer-module-c80afbc9ffb1
+# python ./compiler2_service/model/transformer/graph_encoder/train_graphormer_full.py
 
 
 import torch
@@ -9,9 +9,8 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # from graphormer import GraphormerEncoder
-from dgl_dataset import GraphormerDGLDataset
+from dgl_dataset import GraphormerDGLDataset, SOS_token, EOS_token
 from graphormer_graph_encoder import GraphormerGraphEncoder
-
 
 import torch
 import torch.nn as nn
@@ -189,74 +188,6 @@ class Transformer(nn.Module):
         return (matrix == pad_token)
 
 
-def generate_random_data(n):
-    SOS_token = np.array([2])
-    EOS_token = np.array([3])
-    length = 4
-
-    data = []
-
-    # 1,1,1,1,1,1 -> 1,1,1,1,1
-    for i in range(n // 3):
-        X = np.concatenate((SOS_token, np.ones(length), EOS_token))
-        y = np.concatenate((SOS_token, np.ones(length), EOS_token))
-        data.append([X, y])
-
-    # 0,0,0,0 -> 0,0,0,0
-    for i in range(n // 3):
-        X = np.concatenate((SOS_token, np.zeros(length), EOS_token))
-        y = np.concatenate((SOS_token, np.zeros(length), EOS_token))
-        data.append([X, y])
-
-    # 1,0,1,0 -> 1,0,1,0,1
-    for i in range(n // 3):
-        X = np.zeros(length)
-        start = random.randint(0, 1)
-
-        X[start::2] = 1
-
-        y = np.zeros(length)
-        if X[-1] == 0:
-            y[::2] = 1
-        else:
-            y[1::2] = 1
-
-        X = np.concatenate((SOS_token, X, EOS_token))
-        y = np.concatenate((SOS_token, y, EOS_token))
-
-        data.append([X, y])
-
-    np.random.shuffle(data)
-
-    return data
-
-
-def batchify_data(data, batch_size=10, padding=False, padding_token=-1):
-    batches = []
-    for idx in range(0, len(data), batch_size):
-        # We make sure we dont get the last bit if its not batch_size size
-        if idx + batch_size < len(data):
-            # Here you would need to get the max length of the batch,
-            # and normalize the length with the PAD token.
-            if padding:
-                max_batch_length = 0
-
-                # Get longest sentence in batch
-                for seq in data[idx : idx + batch_size]:
-                    if len(seq) > max_batch_length:
-                        max_batch_length = len(seq)
-
-                # Append X padding tokens until it reaches the max length
-                for seq_idx in range(batch_size):
-                    remaining_length = max_bath_length - len(data[idx + seq_idx])
-                    data[idx + seq_idx] += [padding_token] * remaining_length
-
-            batches.append(np.array(data[idx : idx + batch_size]).astype(np.int64))
-
-    print(f"{len(batches)} batches of size {batch_size}")
-
-    return batches
-
 
 def train_loop(model, opt, loss_fn, dataloader):
     model.train()
@@ -274,7 +205,7 @@ def train_loop(model, opt, loss_fn, dataloader):
     pred = model(graphs=dataloader['x'], tgt=y_input, tgt_mask=tgt_mask)
 
     # Permute pred to have batch size first again
-    pred = pred.permute(1, 2, 0)    
+    pred = pred.permute(1, 2, 0)    # Cross-entropy input(N, C, d1) target(N, d1)
     loss = loss_fn(pred, y_expected)
 
     opt.zero_grad()
@@ -334,43 +265,27 @@ def fit(model, opt, loss_fn, train_dataloader, val_dataloader, epochs):
         
     return train_loss_list, validation_loss_list
 
-def predict(model, collated_data, max_length=15, SOS_token=2, EOS_token=3):
+
+def predict(model, graphs, max_length=15):
     model.eval()
-    graphs = collated_data['x']
-    y_input = collated_data['y']
 
+    num_examples = graphs['idx'].size(0)
+    y_input = torch.full((num_examples, 1), SOS_token, dtype=torch.long, device=device)
 
-    sequence_length = y_input.size(1)
-    tgt_mask = model.get_tgt_mask(sequence_length).to(device)
+    for _ in range(max_length):
+        sequence_length = y_input.size(1)
+        tgt_mask = model.get_tgt_mask(sequence_length).to(device)
 
+        pred = model(graphs, y_input, tgt_mask)
+        pred = pred.permute(1, 0, 2).argmax(2)
 
-    pred = model(graphs, y_input, tgt_mask)
+        # Concatenate previous input with predicted best word
+        y_input = torch.cat((y_input, pred[:, -1:]), dim=1)
 
-    for x, y in zip(pred, collated_data['y']): print(x, ' -> ', y)
+    eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
+    y_input =  torch.cat((y_input, eos), dim=1)
 
-
-    # TODO: Figure this out...
-    breakpoint()
-    for x, y in zip(graphs, y_input):
-        for _ in range(max_length):
-            # Get source mask
-            tgt_mask = model.get_tgt_mask(y.size(1)).to(device)
-            
-            # pred = model(x, y, tgt_mask)
-            
-            next_item = pred.topk(1)[1].view(-1)[-1].item() # num with highest probability
-            next_item = torch.tensor([[next_item]], device=device)
-
-            breakpoint()
-
-            # Concatenate previous input with predicted best word
-            y_input = torch.cat((y, next_item), dim=1)
-
-            # Stop if model predicts end of sentence
-            if next_item.view(-1).item() == EOS_token:
-                break
-
-    return y_input.view(-1).tolist()
+    return [ x[:x.index(EOS_token)+1] for x in  y_input.tolist() ]
 
 
 
@@ -379,8 +294,6 @@ if __name__ == "__main__":
 
     dgl_dataset = GraphormerDGLDataset()
 
-
-    # breakpoint()
     model = Transformer(
         num_classes=dgl_dataset.num_classes,
         num_tokens=20, 
@@ -401,7 +314,7 @@ if __name__ == "__main__":
         loss_fn,
         train_dataloader=dgl_dataset.collate(device=device), 
         val_dataloader=None, 
-        epochs=10,
+        epochs=500,
     )
 
     plt.plot(train_loss_list, label = "Train loss")
@@ -413,6 +326,12 @@ if __name__ == "__main__":
     plt.savefig(Path(__file__).parent/'result.png')
 
 
+    collated_data = dgl_dataset.collate(size=6, device=device)
+    y_predicted = predict(model, collated_data['x'])
+
+    for y_pred, y in zip(y_predicted, collated_data['y']):
+        print(f'y_pred: {y_pred} -> y: {y.tolist()}')
+
+
     breakpoint()
-    collated_data = dgl_dataset.collate(size=2, device=device)
-    predict(model, collated_data)
+    print('Done.')

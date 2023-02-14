@@ -291,6 +291,7 @@ def predict(model, input_sequence, max_length=15, SOS_token=2, EOS_token=3):
     num_tokens = len(input_sequence[0])
 
     for _ in range(max_length):
+        breakpoint()
         # Get source mask
         tgt_mask = model.get_tgt_mask(y_input.size(1)).to(device)
         

@@ -23,6 +23,9 @@ import algos
 from copy import copy
 
 
+SOS_token = 0
+EOS_token = 1
+
 
 @torch.jit.script
 def convert_to_single_emb(x, offset: int = 512):
@@ -77,7 +80,7 @@ class GraphormerDGLDataset(Dataset):
             G.ndata['x'] = torch.ones((num_nodes, 3)) # set nodes features
             
             dataset.append(G)
-            labels.append([4, 2, 1, 2, 2, 3]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
+            labels.append([SOS_token, 2, 3, 10, 3, EOS_token]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
         
         return dataset, torch.tensor(labels)
 
