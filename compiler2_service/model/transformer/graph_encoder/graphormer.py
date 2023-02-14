@@ -217,7 +217,7 @@ class GraphormerEncoder(FairseqEncoder):
             activation_fn=activation_fn,
         )
         self.num_classes = num_classes
-        
+
         if apply_graphormer_init:
             self.apply(init_graphormer_params)
 
@@ -259,7 +259,7 @@ class GraphormerEncoder(FairseqEncoder):
             batched_data,
             perturb=perturb,
         )
-
+        breakpoint()
         x = inner_states[-1].transpose(0, 1)
 
         # project masked tokens only

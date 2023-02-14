@@ -49,7 +49,6 @@ class GraphormerDGLDataset(Dataset):
 
         self.num_classes = torch.max(self.labels) + 1
 
-        breakpoint()
         num_data = len(self.dataset)
         self.seed = seed
         if train_idx is None:
@@ -71,13 +70,14 @@ class GraphormerDGLDataset(Dataset):
         dataset = []
         labels = []
         for i in range(num):
-            src_ids = torch.tensor([2, 3])
-            dst_ids = torch.tensor([1, 2])
+            src_ids = torch.tensor([2, 3, 8, 19])
+            dst_ids = torch.tensor([1, 2, 4, 19])
             G = dgl.graph((src_ids, dst_ids))
-            G.ndata['x'] = torch.ones((4, 3)) # set nodes features
+            num_nodes = len(G.nodes())
+            G.ndata['x'] = torch.ones((num_nodes, 3)) # set nodes features
             
             dataset.append(G)
-            labels.append([4, 2, 1, 2]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
+            labels.append([4, 2, 1, 2, 2, 3]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
         
         return dataset, torch.tensor(labels)
 
@@ -214,7 +214,7 @@ class GraphormerDGLDataset(Dataset):
         if size == None:
             size = len(self.dataset)
         x = [ self.__getitem__(i) for i in range(size) ]
-        return {'x':collator(x, device=device), 'y':torch.tensor(self.labels[:size]).to(device)}
+        return {'x':collator(x, device=device), 'y':self.labels[:size].clone().detach().to(device)}
 
 
 

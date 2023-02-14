@@ -73,6 +73,7 @@ class GraphormerGraphEncoder(nn.Module):
         q_noise: float = 0.0,
         qn_block_size: int = 8,
     ) -> None:
+        # breakpoint()
 
         super().__init__()
         self.dropout_module = FairseqDropout(
