@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 from graphormer import GraphormerEncoder
-
+from dgl_dataset import GraphormerDGLDataset, EOS_token
 
 
 def train_loop(model, opt, loss_fn, dataloader):
@@ -17,9 +17,11 @@ def train_loop(model, opt, loss_fn, dataloader):
     total_loss = 0
         
     logits = model(dataloader['x'])
-    logits = logits[:, 0, :]
-
-    labels = dataloader['y'][:, 0].to('cuda')
+    # breakpoint()
+    num_token = dataloader['y'].size(1)
+    logits = logits[:, :num_token, :]
+    logits = logits.permute(0, 2, 1) 
+    labels = dataloader['y']
 
     lname = loss_fn._get_name()
     if lname == 'CrossEntropyLoss':
@@ -55,15 +57,21 @@ def fit(model, opt, loss_fn, train_dataloader, val_dataloader=None, epochs=4):
         
     return train_loss_list, validation_loss_list
 
-def predict(collated_data):
-    logits = model(collated_data['x'])
-    logits = logits[:, 0, :]
+def predict(model, graphs, max_len=15):
+    num_examples = graphs['idx'].size(0)
 
-    for x, y in zip(logits, collated_data['y']): print(x, ' -> ', y)
+    logits = model(graphs)
+    logits = logits[:, :max_len, :]
+    y_pred = logits.permute(0, 2, 1).argmax(2)
+
+    eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
+    y_pred =  torch.cat((y_pred, eos), dim=1)
+
+    return [ x[:x.index(EOS_token)+1] for x in  y_pred.tolist() ]
+
+    
 
 
-
-from dgl_dataset import GraphormerDGLDataset
 
 if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -71,7 +79,6 @@ if __name__ == "__main__":
     # breakpoint()
     dgl_dataset = GraphormerDGLDataset()
 
-    breakpoint()
     model = GraphormerEncoder(
         num_classes=dgl_dataset.num_classes
     ).to(device=device)
@@ -79,9 +86,15 @@ if __name__ == "__main__":
 
     opt = torch.optim.SGD(model.parameters(), lr=0.01)
     loss_fn = nn.CrossEntropyLoss()
-    loss_fn = nn.L1Loss(reduction="sum")
+    # loss_fn = nn.L1Loss(reduction="sum")
 
-    train_loss_list, validation_loss_list = fit(model=model, opt=opt, loss_fn=loss_fn, epochs=100, train_dataloader=dgl_dataset.collate(device=device))
+    train_loss_list, validation_loss_list = fit(
+        model=model, 
+        opt=opt, 
+        loss_fn=loss_fn, 
+        epochs=500, 
+        train_dataloader=dgl_dataset.collate(device=device)
+    )
 
     plt.plot(train_loss_list, label = "Train loss")
     plt.plot(validation_loss_list, label = "Validation loss")
@@ -94,5 +107,7 @@ if __name__ == "__main__":
 
     # breakpoint()
     collated_data = dgl_dataset.collate(size=2, device=device)
-    predict(collated_data)
-    
+    y_predicted = predict(model, collated_data['x'])
+
+    for y_pred, y in zip(y_predicted, collated_data['y']):
+        print(f'y_pred: {y_pred} -> y: {y.tolist()}')

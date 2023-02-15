@@ -72,15 +72,20 @@ class GraphormerDGLDataset(Dataset):
     def random_dataset(self, num):
         dataset = []
         labels = []
+
+
+        data = [
+            [dgl.graph((torch.tensor([2, 3, 8, 19]), torch.tensor([1, 2, 4, 19]))), [SOS_token, 2, 3, 10, 3, EOS_token]],
+            [dgl.graph((torch.tensor([0, 1, 2, 3,]), torch.tensor([1, 2, 3, 4]))), [SOS_token, 5, 4, 3, 2, EOS_token]],
+        ]
+
         for i in range(num):
-            src_ids = torch.tensor([2, 3, 8, 19])
-            dst_ids = torch.tensor([1, 2, 4, 19])
-            G = dgl.graph((src_ids, dst_ids))
+            G, seq = data[i % len(data)]
             num_nodes = len(G.nodes())
             G.ndata['x'] = torch.ones((num_nodes, 3)) # set nodes features
             
             dataset.append(G)
-            labels.append([SOS_token, 2, 3, 10, 3, EOS_token]) # 4 LLVM opts, if graph_encoder predict label[0], elif graphormer_full predict one by one
+            labels.append(seq)
         
         return dataset, torch.tensor(labels)
 

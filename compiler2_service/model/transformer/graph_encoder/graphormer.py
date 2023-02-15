@@ -15,6 +15,137 @@ from graphormer_graph_encoder import GraphormerGraphEncoder, init_graphormer_par
 
 
 class GraphormerEncoder(FairseqEncoder):
+    def __init__(self,
+            num_classes,
+            max_nodes=50,
+            num_in_degree=512,
+            num_out_degree=512,
+            num_edges=1536,
+            num_spatial=512,
+            num_edge_dis=128,
+            edge_type='single_hop',
+            multi_hop_max_dist=5,
+            encoder_layers=12,
+            encoder_embed_dim=768,
+            encoder_ffn_embed_dim=768,
+            encoder_attention_heads=32,
+            dropout=0.0,
+            attention_dropout=0.1,
+            act_dropout=0.1,
+            encoder_normalize_before=True,
+            pre_layernorm=False,
+            apply_graphormer_init=True,
+            activation_fn='gelu',
+            share_encoder_input_output_embed=False,
+            encoder_lerned_pos=False,
+            no_token_positional_embeddings=False,
+            max_positions=512,
+            remove_head=False,
+    ):
+        super().__init__(dictionary=None)
+        # args = self.parse_args()
+
+        self.max_nodes = max_nodes
+
+        self.graph_encoder = GraphormerGraphEncoder(
+            # < for graphormer
+            num_atoms=max_nodes,
+            num_in_degree=num_in_degree,
+            num_out_degree=num_out_degree,
+            num_edges=num_edges,
+            num_spatial=num_spatial,
+            num_edge_dis=num_edge_dis,
+            edge_type=edge_type,
+            multi_hop_max_dist=multi_hop_max_dist,
+            # >
+            num_encoder_layers=encoder_layers,
+            embedding_dim=encoder_embed_dim,
+            ffn_embedding_dim=encoder_ffn_embed_dim,
+            num_attention_heads=encoder_attention_heads,
+            dropout=dropout,
+            attention_dropout=attention_dropout,
+            activation_dropout=act_dropout,
+            encoder_normalize_before=encoder_normalize_before,
+            pre_layernorm=pre_layernorm,
+            apply_graphormer_init=apply_graphormer_init,
+            activation_fn=activation_fn,
+        )
+        self.num_classes = num_classes
+
+        if apply_graphormer_init:
+            self.apply(init_graphormer_params)
+
+        self.share_input_output_embed = share_encoder_input_output_embed
+        self.embed_out = None
+        self.lm_output_learned_bias = None
+
+        # # Remove head is set to true during fine-tuning
+        self.load_softmax = not remove_head
+
+        self.masked_lm_pooler = nn.Linear(
+            encoder_embed_dim, encoder_embed_dim
+        )
+
+        self.lm_head_transform_weight = nn.Linear(
+            encoder_embed_dim, encoder_embed_dim
+        )
+        self.activation_fn = utils.get_activation_fn(activation_fn)
+        self.layer_norm = LayerNorm(encoder_embed_dim)
+
+        self.lm_output_learned_bias = None
+        if self.load_softmax:
+            self.lm_output_learned_bias = nn.Parameter(torch.zeros(1))
+
+            if not self.share_input_output_embed:
+                self.embed_out = nn.Linear(
+                    encoder_embed_dim, num_classes, bias=False
+                )
+            else:
+                raise NotImplementedError
+
+    def reset_output_layer_parameters(self):
+        self.lm_output_learned_bias = nn.Parameter(torch.zeros(1))
+        if self.embed_out is not None:
+            self.embed_out.reset_parameters()
+
+    def forward(self, batched_data, perturb=None, masked_tokens=None, **unused):
+        inner_states, graph_rep = self.graph_encoder(
+            batched_data,
+            perturb=perturb,
+        )
+
+        x = inner_states[-1].transpose(0, 1)
+        
+        # project masked tokens only
+        if masked_tokens is not None:
+            raise NotImplementedError
+
+        x = self.layer_norm(self.activation_fn(self.lm_head_transform_weight(x)))
+
+        # project back to size of vocabulary
+        if self.share_input_output_embed and hasattr(
+            self.graph_encoder.embed_tokens, "weight"
+        ):
+            x = F.linear(x, self.graph_encoder.embed_tokens.weight)
+        elif self.embed_out is not None:
+            x = self.embed_out(x)
+        if self.lm_output_learned_bias is not None:
+            x = x + self.lm_output_learned_bias
+
+        return x
+
+    def max_nodes(self):
+        """Maximum output length supported by the encoder."""
+        return self.max_nodes
+
+    def upgrade_state_dict_named(self, state_dict, name):
+        if not self.load_softmax:
+            for k in list(state_dict.keys()):
+                if "embed_out.weight" in k or "lm_output_learned_bias" in k:
+                    del state_dict[k]
+        return state_dict
+    
+
     def parse_args(self):
         parser = argparse.ArgumentParser()
         """Add model-specific arguments to the parser."""
@@ -159,134 +290,3 @@ class GraphormerEncoder(FairseqEncoder):
         )
 
         return parser.parse_args()
-
-
-    def __init__(self,
-            num_classes,
-            max_nodes=50,
-            num_in_degree=512,
-            num_out_degree=512,
-            num_edges=1536,
-            num_spatial=512,
-            num_edge_dis=128,
-            edge_type='single_hop',
-            multi_hop_max_dist=5,
-            encoder_layers=12,
-            encoder_embed_dim=768,
-            encoder_ffn_embed_dim=768,
-            encoder_attention_heads=32,
-            dropout=0.0,
-            attention_dropout=0.1,
-            act_dropout=0.1,
-            encoder_normalize_before=True,
-            pre_layernorm=False,
-            apply_graphormer_init=True,
-            activation_fn='gelu',
-            share_encoder_input_output_embed=False,
-            encoder_lerned_pos=False,
-            no_token_positional_embeddings=False,
-            max_positions=512,
-            remove_head=False,
-    ):
-        super().__init__(dictionary=None)
-        # args = self.parse_args()
-
-        self.max_nodes = max_nodes
-
-        self.graph_encoder = GraphormerGraphEncoder(
-            # < for graphormer
-            num_atoms=max_nodes,
-            num_in_degree=num_in_degree,
-            num_out_degree=num_out_degree,
-            num_edges=num_edges,
-            num_spatial=num_spatial,
-            num_edge_dis=num_edge_dis,
-            edge_type=edge_type,
-            multi_hop_max_dist=multi_hop_max_dist,
-            # >
-            num_encoder_layers=encoder_layers,
-            embedding_dim=encoder_embed_dim,
-            ffn_embedding_dim=encoder_ffn_embed_dim,
-            num_attention_heads=encoder_attention_heads,
-            dropout=dropout,
-            attention_dropout=attention_dropout,
-            activation_dropout=act_dropout,
-            encoder_normalize_before=encoder_normalize_before,
-            pre_layernorm=pre_layernorm,
-            apply_graphormer_init=apply_graphormer_init,
-            activation_fn=activation_fn,
-        )
-        self.num_classes = num_classes
-
-        if apply_graphormer_init:
-            self.apply(init_graphormer_params)
-
-        self.share_input_output_embed = share_encoder_input_output_embed
-        self.embed_out = None
-        self.lm_output_learned_bias = None
-
-        # # Remove head is set to true during fine-tuning
-        self.load_softmax = not remove_head
-
-        self.masked_lm_pooler = nn.Linear(
-            encoder_embed_dim, encoder_embed_dim
-        )
-
-        self.lm_head_transform_weight = nn.Linear(
-            encoder_embed_dim, encoder_embed_dim
-        )
-        self.activation_fn = utils.get_activation_fn(activation_fn)
-        self.layer_norm = LayerNorm(encoder_embed_dim)
-
-        self.lm_output_learned_bias = None
-        if self.load_softmax:
-            self.lm_output_learned_bias = nn.Parameter(torch.zeros(1))
-
-            if not self.share_input_output_embed:
-                self.embed_out = nn.Linear(
-                    encoder_embed_dim, num_classes, bias=False
-                )
-            else:
-                raise NotImplementedError
-
-    def reset_output_layer_parameters(self):
-        self.lm_output_learned_bias = nn.Parameter(torch.zeros(1))
-        if self.embed_out is not None:
-            self.embed_out.reset_parameters()
-
-    def forward(self, batched_data, perturb=None, masked_tokens=None, **unused):
-        inner_states, graph_rep = self.graph_encoder(
-            batched_data,
-            perturb=perturb,
-        )
-        breakpoint()
-        x = inner_states[-1].transpose(0, 1)
-
-        # project masked tokens only
-        if masked_tokens is not None:
-            raise NotImplementedError
-
-        x = self.layer_norm(self.activation_fn(self.lm_head_transform_weight(x)))
-
-        # project back to size of vocabulary
-        if self.share_input_output_embed and hasattr(
-            self.graph_encoder.embed_tokens, "weight"
-        ):
-            x = F.linear(x, self.graph_encoder.embed_tokens.weight)
-        elif self.embed_out is not None:
-            x = self.embed_out(x)
-        if self.lm_output_learned_bias is not None:
-            x = x + self.lm_output_learned_bias
-
-        return x
-
-    def max_nodes(self):
-        """Maximum output length supported by the encoder."""
-        return self.max_nodes
-
-    def upgrade_state_dict_named(self, state_dict, name):
-        if not self.load_softmax:
-            for k in list(state_dict.keys()):
-                if "embed_out.weight" in k or "lm_output_learned_bias" in k:
-                    del state_dict[k]
-        return state_dict
