@@ -8,6 +8,11 @@
 import distutils.util
 import setuptools
 import os
+from pathlib import Path
+from distutils.core import setup, Extension
+from Cython.Build import cythonize
+import numpy
+
 
 version = "0.2.3"
 
@@ -39,6 +44,8 @@ setuptools.setup(
         "compiler2_service.model.config.impala",
         "compiler2_service.model.config.ppo",
         "compiler2_service.model.perf",
+        "compiler2_service.model.transformer",
+        "compiler2_service.model.transformer.graph_encoder",
 
         # "compiler2_service.benchmarks.poj104_test",
         # "compiler2_service.benchmarks.poj104_training",
@@ -48,6 +55,8 @@ setuptools.setup(
         "llvm_rl",
         "llvm_rl.model",
     ],
+    include_dirs=[numpy.get_include()],
+    ext_modules=cythonize(f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos.pyx"),
     python_requires=">=3.8",
     platforms=[distutils.util.get_platform()],
     zip_safe=False,

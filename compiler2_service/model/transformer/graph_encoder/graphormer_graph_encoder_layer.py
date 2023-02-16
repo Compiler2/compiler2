@@ -15,7 +15,7 @@ from fairseq.modules import LayerNorm
 from fairseq.modules.fairseq_dropout import FairseqDropout
 from fairseq.modules.quant_noise import quant_noise
 
-from multihead_attention import MultiheadAttention
+from compiler2_service.model.transformer.graph_encoder.multihead_attention import MultiheadAttention
 
 
 class GraphormerGraphEncoderLayer(nn.Module):

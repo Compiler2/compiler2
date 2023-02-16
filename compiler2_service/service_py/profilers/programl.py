@@ -29,6 +29,10 @@ class Profiler:
         with open(ll_path, "r") as f:
             code_str = f.read().rstrip()
             g_programl = pg.from_llvm_ir(code_str)
-            g_programl = pg.to_networkx(g_programl)
+            # breakpoint()
+            # g_nx = pg.to_networkx(g_programl)
+            g_dgl = pg.to_dgl(g_programl)
+            # breakpoint()
+            # dot = pg.to_dot(g_programl)
 
-        return g_programl
+        return g_dgl

@@ -17,7 +17,7 @@ import os
 import sys
 
 from compiler2_service.agent_py.datasets import (
-    hpctoolkit_dataset,
+    hpctoolkit_cpu,
     poj104,
     poj104_small,
 )
@@ -60,7 +60,7 @@ def register_perf_session():
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
                 CBenchDataset(site_data_path("llvm-v0")),
-                hpctoolkit_dataset.Dataset(),
+                hpctoolkit_cpu.Dataset(),
                 # poj104.Dataset(),    
                 poj104_small.Dataset(),    
             ],

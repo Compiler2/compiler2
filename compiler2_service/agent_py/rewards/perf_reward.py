@@ -7,7 +7,7 @@ import pickle
 class RewardPickle(Reward):
     def __init__(self):
         super().__init__(
-            id="perf_pickle",
+            name="perf_pickle",
             observation_spaces=["perf_pickle"],
             default_value=0,
             default_negates_returns=True,
@@ -35,7 +35,7 @@ class RewardPickle(Reward):
 class RewardTensor(Reward):
     def __init__(self):
         super().__init__(
-            id="perf_tensor",
+            name="perf_tensor",
             observation_spaces=["perf_tensor"],
             default_value=0,
             default_negates_returns=True,

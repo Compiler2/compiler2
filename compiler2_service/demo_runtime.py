@@ -31,7 +31,7 @@ import compiler2_service
 
 
 from agent_py.rewards import runtime_reward
-from agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import hpctoolkit_cpu
 
 
 def register_env():
@@ -41,7 +41,7 @@ def register_env():
         kwargs={
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [ runtime_reward.RewardScalar()],
-            "datasets": [hpctoolkit_dataset.Dataset()],
+            "datasets": [hpctoolkit_cpu.Dataset()],
         },
     )
 

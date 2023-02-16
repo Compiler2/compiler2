@@ -40,7 +40,7 @@ import compiler2_service
 
 
 from agent_py.rewards import perf_reward
-from agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import hpctoolkit_cpu
 
 # def register_env():
 #     register(

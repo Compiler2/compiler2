@@ -10,30 +10,25 @@ to use the bazel build system. Usage:
 It is equivalent in behavior to the demo.py script in this directory.
 """
 import logging
-import os
-import pdb
 import pickle
-import subprocess
 from pathlib import Path
-from typing import Iterable
 
-import gym
 import hatchet as ht
 import pandas as pd
+import torch
+import torch.nn as nn
 
-from compiler_gym.datasets import Benchmark, Dataset, BenchmarkUri
-from compiler_gym.envs.llvm.datasets import (
-    CBenchDataset,
-    CBenchLegacyDataset,
-    CBenchLegacyDataset2,
-)
-from compiler_gym.spaces import Reward
-from compiler_gym.third_party import llvm
+import matplotlib.pyplot as plt
+
+
 from compiler_gym.util.logging import init_logging
-from compiler_gym.util.registration import register
-from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
 import compiler2_service
+
+
+from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
+from compiler2_service.model.transformer.graphormer_encoder import GraphormerEncoder
+from compiler2_service.model.transformer.graphormer_transformer import GraphormerTransformer
 
 pd.set_option("display.max_columns", None)
 
@@ -41,74 +36,96 @@ collected_metrics = ["REALTIME (sec) (I)", "REALTIME (sec) (E)"]
 
 
 
-
-from agent_py.rewards import programl_hpctoolkit_reward
-from agent_py.datasets import hpctoolkit_dataset, poj104_dataset_small
-
-
-def register_env():
-    register(
-        id="compiler2-v0",
-        entry_point=compiler2_service.HPCToolkitCompilerEnv,
-        kwargs={
-            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [programl_hpctoolkit_reward.RewardPickle()],
-            "datasets": [
-                hpctoolkit_dataset.Dataset(), 
-                poj104_dataset_small.Dataset(), 
-                CBenchLegacyDataset2(site_data_path("llvm-v0"))],
-        },
-    )
-
-
 def main():
     # Use debug verbosity to print out extra logging information.
-    init_logging(level=logging.DEBUG)
-    register_env()
+    init_logging(level=logging.CRITICAL)
+    dataset = {'graphs':[], 'labels':[]}
 
     # Create the environment using the regular gym.make(...) interface.
     # with gym.make("hpctoolkit-llvm-v0") as env:
-    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+    with compiler2_service.make("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
 
-        try:
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
-            env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
-            
-            # env.reset(benchmark="benchmark://poj104-small-v0/1_17") # Doesn't last long enough so cycles == 0 (maybe scanf problem as well)
-            pdb.set_trace()
-            # env.reset(benchmark="benchmark://cbench-v1/qsort")
-        except ServiceError:
-            print("AGENT: Timeout Error Reset")
-
-        for i in range(2):
-            print("Main: step = ", i)
+        for benchmark in env.datasets.benchmarks():
             try:
-                observation, reward, done, info = env.step(
-                    action=121,#env.action_space.sample(),
-                    observation_spaces=["programl_hpctoolkit_pickle"],
-                    reward_spaces=["programl_hpctoolkit_pickle"],
-                )
+                env.reset(benchmark=benchmark)
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
+                
             except ServiceError:
-                print("AGENT: Timeout Error Step")
-                continue       
-                 
-            print(reward)
-            print(info)
-            g = pickle.loads(observation[0])
-            g_df = pd.DataFrame.from_dict(dict(g.nodes(data=True)), orient="index")
-            f_df = pd.DataFrame.from_dict(dict(g_df["features"]), orient="index")
+                print("AGENT: Timeout Error Reset")
 
-            df = pd.concat([g_df, f_df], axis=1)
-            df.drop("features", axis=1, inplace=True)
 
-            print(df[["full_text", "dynamic"]])
-            df.to_csv( os.getcwd() + "/programl.csv", index=False)
+            actions = []
+            for i in range(2):
+                print("Main: step = ", i)
+                try:
+                    action = 76
+                    while action in [23, 46, 76, 71, 99, 107, 120]:
+                        action = env.action_space.sample() 
+                    actions.append(action)
+                    print(f'{actions[-1]}-----------------------------------------------------')
 
-            pdb.set_trace()
-            if done:
-                env.reset()
+                    observation, reward, done, info = env.step(
+                        action=actions[-1],
+                        observation_spaces=["programl_hpctoolkit_pickle"],
+                        reward_spaces=["perf_tensor"],
+                    )
+                except :
+                    print("AGENT: Timeout Error Step")
+                    continue       
+                
+                print(reward)
+                g = pickle.loads(observation[0])
+                # print(g)
+                # print(g.ndata['x'])
 
+                dataset["graphs"].append(g)
+                dataset["labels"].append(actions)
+
+        
+    breakpoint()
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    # breakpoint()
+    dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
+
+    model = GraphormerEncoder(
+        num_classes=dgl_dataset.num_classes
+    ).to(device=device)
+
+
+    opt = torch.optim.SGD(model.parameters(), lr=0.01)
+    loss_fn = nn.CrossEntropyLoss()
+    # loss_fn = nn.L1Loss(reduction="sum")
+
+
+    train_loss_list, validation_loss_list = model.fit(
+        opt=opt, 
+        loss_fn=loss_fn, 
+        epochs=500, 
+        train_dataloader=dgl_dataset.get_train(),
+        valid_dataloader=dgl_dataset.get_valid()
+    )
+
+    plt.plot(train_loss_list, label = "Train loss")
+    plt.plot(validation_loss_list, label = "Validation loss")
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
+    plt.title('Loss vs Epoch')
+    plt.legend()
+    plt.savefig(Path(__file__).parent/'result.png')
+
+
+    # breakpoint()
+    test_data = dgl_dataset.get_test()
+    y_predicted = model.predict(test_data['x'])
+
+    for y_pred, y in zip(y_predicted, test_data['y']):
+        print(f'y_pred: {y_pred} -> y: {y.tolist()}')
+
+            
 
 if __name__ == "__main__":
     main()

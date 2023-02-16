@@ -17,39 +17,34 @@ import subprocess
 from pathlib import Path
 from typing import Iterable
 
-import gym
 
-from compiler_gym.datasets import Benchmark, Dataset, BenchmarkUri
-from compiler_gym.spaces import Reward
-from compiler_gym.third_party import llvm
 from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
-from compiler_gym.util.runfiles_path import runfiles_path, site_data_path
 from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
 from agent_py.rewards import programl_reward, perf_reward
-from agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import hpctoolkit_cpu
 
-def register_env():
-    register(
-        id="compiler2-v0",
-        entry_point=compiler2_service.HPCToolkitCompilerEnv,
-        kwargs={
-            "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-            "rewards": [ perf_reward.RewardTensor(), programl_reward.RewardPickle()],
-            "datasets": [hpctoolkit_dataset.Dataset()],
-        },
-    )
+# def register_env():
+#     register(
+#         id="compiler2-v0",
+#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
+#         kwargs={
+#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
+#             "rewards": [ perf_reward.RewardTensor(), programl_reward.RewardPickle()],
+#             "datasets": [hpctoolkit_dataset.Dataset()],
+#         },
+#     )
 
 
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    register_env()
+    # register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_env("compiler2-v0", logging=True) as env:
+    with compiler2_service.make("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
 
         try:
             # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
@@ -65,7 +60,6 @@ def main():
                     action=env.action_space.sample(),
                     observation_spaces=["programl_pickle", "perf_tensor"],
                     reward_spaces=["perf_tensor"],
-                    seek=False
                 )
                 
             except ServiceError:

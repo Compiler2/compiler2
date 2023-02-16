@@ -18,7 +18,7 @@ import os
 import sys
 
 from compiler2_service.agent_py.datasets import (
-    hpctoolkit_dataset,
+    hpctoolkit_cpu,
     poj104,
     poj104_small,
 )

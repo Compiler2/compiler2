@@ -10,7 +10,7 @@ class RewardPickle(Reward):
 
     def __init__(self):
         super().__init__(
-            id="programl_pickle",
+            name="programl_pickle",
             observation_spaces=["programl_pickle"],
             default_value=0,
             default_negates_returns=True,

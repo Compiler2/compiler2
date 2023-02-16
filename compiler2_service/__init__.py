@@ -287,7 +287,7 @@ from compiler_gym.envs.llvm.datasets import (
 )
 
 from compiler2_service.agent_py.datasets import (
-    hpctoolkit_dataset,
+    hpctoolkit_cpu,
     poj104,
     fbgemm_dataset,
     poj104_small
@@ -301,8 +301,8 @@ def register_env(datasets):
     register(
         id="compiler2-v0",
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
-        entry_point=HPCToolkitCompilerEnv,
-        # entry_point="compiler_gym.service.client_service_compiler_env:ClientServiceCompilerEnv",
+        # entry_point=HPCToolkitCompilerEnv,
+        entry_point="compiler_gym.service.client_service_compiler_env:ClientServiceCompilerEnv",
         kwargs={
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
@@ -342,7 +342,7 @@ def make(id: str, datasets, **kwargs):
     return compiler_gym.make(id, **kwargs)
 
 
-def make_env(id, logging=False, **kwargs):
-    return HPCToolkitCompilerEnvWrapper(make(id, **kwargs), logging=logging)
+def make_env(id, datasets, logging=False, **kwargs):
+    return HPCToolkitCompilerEnvWrapper(make(id, datasets, **kwargs), logging=logging)
 
 

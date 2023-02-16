@@ -1,3 +1,4 @@
+import torch
 import hatchet as ht
 import pandas as pd
 import programl as pg
@@ -65,49 +66,18 @@ class Profiler:
 
         # The node 0 carries the information about <program root>
         hatchet_root = df[df["name"] == "<program root>"]
-        g_programl.nodes[0]["features"] = {
-            "dynamic": [sum(hatchet_root[fn]) for fn in feature_names]
-        }
 
-        ins_line = 1
-        for n_id in list(g_programl.nodes())[1:]:
-            node = g_programl.nodes[n_id]
+        num_nodes = len(g_programl.nodes())
+        g_programl.ndata['x'] = torch.zeros((num_nodes, len(feature_names))) # set nodes features
 
-            if node["type"] == 0 and "features" in node and node["features"]["full_text"][0] != '':  # instruction
-                hatchet_row = df[
-                    df["line"] == ins_line
-                ]  # if there is multiple sum them
+        # breakpoint()
+        for n_id in set(df["line"].tolist()):
+            hatchet_row = df[df["line"] == n_id]  # if there is multiple sum them
 
-                # print(ins_line, node["features"]["full_text"][0]) # Important for debug
-                if node["features"]["full_text"][0] == '':
-                    pdb.set_trace()
+            if hatchet_row['llvm_ins'][0] in ['', 'dummy']: continue
 
-                ins_line += 1
+            if not hatchet_row.empty:
+                g_programl.ndata['x'][n_id] = torch.tensor([sum(hatchet_row[fn]) for fn in feature_names])
 
-                if hatchet_row.empty == True:
-                    node["features"]["dynamic"] = [0] * len(feature_names)
-                else:
-                    node["features"]["dynamic"] = [
-                        sum(hatchet_row[fn]) for fn in feature_names
-                    ]
-
-                    # Assert with pdb.set_trace()
-                    if hatchet_row["llvm_ins"][0].split('!')[0] != node["features"]["full_text"][0].split('!')[0]:
-                        print("\n", "ERROR: hatchat llvm_ins different from programl llvm_ins", "\n")
-                        print(hatchet_row["llvm_ins"], node["features"]["full_text"][0])
-
-                        # Debug save files
-                        g_df = pd.DataFrame.from_dict(dict(g_programl.nodes(data=True)), orient="index")
-                        f_df = pd.DataFrame.from_dict(dict(g_df["features"]), orient="index")
-
-                        g_df = pd.concat([g_df, f_df], axis=1)
-                        g_df.drop("features", axis=1, inplace=True)
-                        g_df.to_csv("programl.csv", index=False)
-                        df.to_csv("hatchet.csv", index=False)
-                        pdb.set_trace()
-
-                        print(df[["full_text", "dynamic"]])
-
-                # print(node['features']['dynamic'])
 
         return g_programl        

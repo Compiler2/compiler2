@@ -30,7 +30,7 @@ from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
 from agent_py.rewards import hpctoolkit_reward
-from agent_py.datasets import hpctoolkit_dataset
+from compiler2_service.agent_py.datasets import hpctoolkit_cpu
 
 
 # def register_env():

@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # from graphormer import GraphormerEncoder
-from dgl_dataset import GraphormerDGLDataset, SOS_token, EOS_token
-from graphormer_graph_encoder import GraphormerGraphEncoder
+from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
+from compiler2_service.model.transformer.graph_encoder.graphormer_graph_encoder import GraphormerGraphEncoder
 
 import torch
 import torch.nn as nn
@@ -51,7 +51,7 @@ class PositionalEncoding(nn.Module):
         return self.dropout(token_embedding + self.pos_encoding[:token_embedding.size(0), :])
 
 
-class Transformer(nn.Module):
+class GraphormerTransformer(nn.Module):
     """
     Model from "A detailed guide to Pytorch's nn.Transformer() module.", by
     Daniel Melchor: https://medium.com/p/c80afbc9ffb1/
@@ -188,113 +188,90 @@ class Transformer(nn.Module):
         return (matrix == pad_token)
 
 
+    '''
+    Train model
+    '''
 
-def train_loop(model, opt, loss_fn, dataloader):
-    model.train()
-    total_loss = 0
-    
-    y_input = dataloader['y'][:,:-1]
-    y_expected = dataloader['y'][:,1:]
-
-
-    # Get mask to mask out the next words
-    sequence_length = y_input.size(1)
-    tgt_mask = model.get_tgt_mask(sequence_length).to(device)
-    
-    # Standard training except we pass in y_input and tgt_mask
-    pred = model(graphs=dataloader['x'], tgt=y_input, tgt_mask=tgt_mask)
-
-    # Permute pred to have batch size first again
-    pred = pred.permute(1, 2, 0)    # Cross-entropy input(N, C, d1) target(N, d1)
-    loss = loss_fn(pred, y_expected)
-
-    opt.zero_grad()
-    loss.backward()
-    opt.step()
-
-    total_loss += loss.detach().item()
+    def fit(self, opt, loss_fn, train_dataloader, val_dataloader, epochs):
+        # Used for plotting later on
+        train_loss_list, validation_loss_list = [], []
         
-    return total_loss / len(dataloader)
-
-
-# def validation_loop(model, loss_fn, dataloader):
-#     model.eval()
-#     total_loss = 0
-    
-#     with torch.no_grad():
-#         for batch in dataloader:
-#             X, y = batch[:, 0], batch[:, 1]
-#             X, y = torch.tensor(X, dtype=torch.long, device=device), torch.tensor(y, dtype=torch.long, device=device)
-
-#             # Now we shift the tgt by one so with the <SOS> we predict the token at pos 1
-#             y_input = y[:,:-1]
-#             y_expected = y[:,1:]
+        print("Training and validating model")
+        for epoch in range(epochs):
+            print("-"*25, f"Epoch {epoch + 1}","-"*25)
             
-#             # Get mask to mask out the next words
-#             sequence_length = y_input.size(1)
-#             tgt_mask = model.get_tgt_mask(sequence_length).to(device)
-
-#             # Standard training except we pass in y_input and src_mask
-#             pred = model(X, y_input, tgt_mask)
-
-#             # Permute pred to have batch size first again
-#             pred = pred.permute(1, 2, 0)      
-#             loss = loss_fn(pred, y_expected)
-#             total_loss += loss.detach().item()
-        
-#     return total_loss / len(dataloader)
+            train_loss = self.train_loop(opt, loss_fn, train_dataloader)
+            train_loss_list += [train_loss]
+            
+            validation_loss = self.train_loop(opt, loss_fn, val_dataloader, backprop=False)
+            validation_loss_list += [validation_loss]
+            
+            print(f"Training loss: {train_loss:.4f}")
+            print(f"Validation loss: {validation_loss:.4f}")
+            print()
+            
+        return train_loss_list, validation_loss_list
 
 
-def fit(model, opt, loss_fn, train_dataloader, val_dataloader, epochs):
-    # Used for plotting later on
-    train_loss_list, validation_loss_list = [], []
-    
-    print("Training and validating model")
-    for epoch in range(epochs):
-        print("-"*25, f"Epoch {epoch + 1}","-"*25)
-        
-        train_loss = train_loop(model, opt, loss_fn, train_dataloader)
-        train_loss_list += [train_loss]
-        
-        # validation_loss = validation_loop(model, loss_fn, val_dataloader)
-        # validation_loss_list += [validation_loss]
-        
-        print(f"Training loss: {train_loss:.4f}")
-        # print(f"Validation loss: {validation_loss:.4f}")
-        print()
-        
-    return train_loss_list, validation_loss_list
+    def train_loop(self, opt, loss_fn, dataloader, backprop=True):
+        if backprop: self.train()
+        else: self.eval()
+
+        total_loss = 0
+        y_input = dataloader['y'][:,:-1]
+        y_expected = dataloader['y'][:,1:]
 
 
-def predict(model, graphs, max_length=15):
-    model.eval()
-
-    num_examples = graphs['idx'].size(0)
-    y_input = torch.full((num_examples, 1), SOS_token, dtype=torch.long, device=device)
-
-    for _ in range(max_length):
+        # Get mask to mask out the next words
         sequence_length = y_input.size(1)
-        tgt_mask = model.get_tgt_mask(sequence_length).to(device)
+        tgt_mask = self.get_tgt_mask(sequence_length).to(device)
+        
+        # Standard training except we pass in y_input and tgt_mask
+        pred = self(graphs=dataloader['x'], tgt=y_input, tgt_mask=tgt_mask)
 
-        pred = model(graphs, y_input, tgt_mask)
-        pred = pred.permute(1, 0, 2).argmax(2)
+        # Permute pred to have batch size first again
+        pred = pred.permute(1, 2, 0)    # Cross-entropy input(N, C, d1) target(N, d1)
+        loss = loss_fn(pred, y_expected)
 
-        # Concatenate previous input with predicted best word
-        y_input = torch.cat((y_input, pred[:, -1:]), dim=1)
+        if backprop:
+            opt.zero_grad()
+            loss.backward()
+            opt.step()
 
-    eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
-    y_input =  torch.cat((y_input, eos), dim=1)
+        total_loss += loss.detach().item()
+            
+        return total_loss / len(dataloader)
 
-    return [ x[:x.index(EOS_token)+1] for x in  y_input.tolist() ]
+
+    def predict(self, graphs, SOS_token=0, EOS_token=1, max_length=15):
+        self.eval()
+
+        num_examples = graphs['idx'].size(0)
+        y_input = torch.full((num_examples, 1), SOS_token, dtype=torch.long, device=device)
+
+        for _ in range(max_length):
+            sequence_length = y_input.size(1)
+            tgt_mask = self.get_tgt_mask(sequence_length).to(device)
+
+            pred = self(graphs, y_input, tgt_mask)
+            pred = pred.permute(1, 0, 2).argmax(2)
+
+            # Concatenate previous input with predicted best word
+            y_input = torch.cat((y_input, pred[:, -1:]), dim=1)
+
+        eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
+        y_input =  torch.cat((y_input, eos), dim=1)
+
+        return [ x[:x.index(EOS_token)+1] for x in  y_input.tolist() ]
 
 
 
 if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    dgl_dataset = GraphormerDGLDataset()
+    dgl_dataset = GraphormerDGLDataset(device=device)
 
-    model = Transformer(
+    model = GraphormerTransformer(
         num_classes=dgl_dataset.num_classes,
         num_tokens=20, 
         dim_model=8, 
@@ -308,12 +285,11 @@ if __name__ == "__main__":
     loss_fn = nn.CrossEntropyLoss()
     # loss_fn = nn.L1Loss(reduction="sum")
 
-    train_loss_list, validation_loss_list = fit(
-        model, 
+    train_loss_list, validation_loss_list = model.fit(
         opt, 
         loss_fn,
-        train_dataloader=dgl_dataset.collate(device=device), 
-        val_dataloader=None, 
+        train_dataloader=dgl_dataset.get_train(), 
+        val_dataloader=dgl_dataset.get_valid(), 
         epochs=500,
     )
 
@@ -326,10 +302,10 @@ if __name__ == "__main__":
     plt.savefig(Path(__file__).parent/'result.png')
 
 
-    collated_data = dgl_dataset.collate(size=6, device=device)
-    y_predicted = predict(model, collated_data['x'])
+    test_data = dgl_dataset.get_test()
+    y_predicted = model.predict(test_data['x'])
 
-    for y_pred, y in zip(y_predicted, collated_data['y']):
+    for y_pred, y in zip(y_predicted, test_data['y']):
         print(f'y_pred: {y_pred} -> y: {y.tolist()}')
 
 

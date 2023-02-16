@@ -13,9 +13,9 @@ import torch.nn as nn
 from fairseq.modules import FairseqDropout, LayerDropModuleList, LayerNorm
 from fairseq.modules.quant_noise import quant_noise as apply_quant_noise_
 
-from multihead_attention import MultiheadAttention
-from graphormer_layers import GraphNodeFeature, GraphAttnBias
-from graphormer_graph_encoder_layer import GraphormerGraphEncoderLayer
+from compiler2_service.model.transformer.graph_encoder.multihead_attention import MultiheadAttention
+from compiler2_service.model.transformer.graph_encoder.graphormer_layers import GraphNodeFeature, GraphAttnBias
+from compiler2_service.model.transformer.graph_encoder.graphormer_graph_encoder_layer import GraphormerGraphEncoderLayer
 
 
 def init_graphormer_params(module):
