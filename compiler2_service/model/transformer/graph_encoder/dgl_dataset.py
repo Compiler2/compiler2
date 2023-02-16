@@ -94,8 +94,8 @@ def pad_3d_unsqueeze(x, padlen1, padlen2, padlen3):
     return x.unsqueeze(0)
 
 
-def collator(items, max_node=512, multi_hop_max_dist=20, spatial_pos_max=20, device='cpu'):
-    items = [item for item in items if item is not None and item.x.size(0) <= max_node]
+def collator(items, multi_hop_max_dist=20, spatial_pos_max=20, device='cpu'):
+    # items = [item for item in items if item is not None and item.x.size(0) <= max_node]
     items = [
         (
             item.idx,
@@ -218,14 +218,22 @@ class GraphormerDGLDataset(Dataset):
         if size == None:
             size = len(dataset)
 
-        # breakpoint()
-        xy = [ dataset[i] for i in range(size) ]
+        xy = self.remove_large_graphs(dataset, max_node=512)[:size]
         x, y = zip(*xy)
+
         y = torch.stack(y)
         return {'x':collator(x, device=self.device), 'y':y.clone().detach().to(self.device)}
 
+    def remove_large_graphs(self, dataset, max_node=512):
+        items = []
+        for i in range(len(dataset)):
+            x, y = dataset[i]
+            if x['x'].size(0) <= max_node:
+                items.append([x, y])
+        
+        return items
+
     def __getitem__(self, idx):
-        # breakpoint()
         if isinstance(idx, int):
             if self.__indices__ is not None:
                 idx = self.__indices__[idx]
@@ -355,12 +363,12 @@ class GraphormerDGLDataset(Dataset):
         ]
 
         for G in graphs:
-            G.ndata['x'] = torch.ones((len(G.nodes()), 3)) # set nodes features
+            G.ndata['x'] = torch.ones((len(G.nodes()), 2)) # set nodes features
 
         graphs *= 10
         labels *= 10
 
-        return graphs, labels
+        return graphs[:num], labels[:num]
 
 
 if __name__ == '__main__':

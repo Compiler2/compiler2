@@ -56,14 +56,14 @@ def main():
                 print("AGENT: Timeout Error Reset")
 
 
-            actions = []
+            actions = [0]
             for i in range(2):
                 print("Main: step = ", i)
                 try:
                     action = 76
-                    while action in [23, 46, 76, 71, 99, 107, 120]:
+                    while action in [23, 31, 45, 46, 76, 70, 71, 99, 107, 120]:
                         action = env.action_space.sample() 
-                    actions.append(action)
+                    actions.append(action + 2) # + 2 for start/end token
                     print(f'{actions[-1]}-----------------------------------------------------')
 
                     observation, reward, done, info = env.step(
@@ -83,6 +83,7 @@ def main():
                 dataset["graphs"].append(g)
                 dataset["labels"].append(actions)
 
+            actions.append(1)
         
     breakpoint()
 
@@ -92,7 +93,7 @@ def main():
     dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
 
     model = GraphormerEncoder(
-        num_classes=dgl_dataset.num_classes
+        num_classes=dgl_dataset.num_classes,
     ).to(device=device)
 
 

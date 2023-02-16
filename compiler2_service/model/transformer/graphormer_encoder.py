@@ -180,13 +180,13 @@ class GraphormerEncoder(FairseqEncoder):
         total_loss = 0
             
         logits = self(dataloader['x'])
-        breakpoint()
+
         num_token = dataloader['y'].size(1)
         logits = logits[:, :num_token, :]
         logits = logits.permute(0, 2, 1) 
         labels = dataloader['y']
 
-        breakpoint()
+        # breakpoint()
         lname = loss_fn._get_name()
         if lname == 'CrossEntropyLoss':
             loss = loss_fn(logits, labels)
@@ -205,7 +205,7 @@ class GraphormerEncoder(FairseqEncoder):
         return total_loss / len(dataloader)
 
 
-    def predict(self, graphs, EOS_token=1, max_len=15):
+    def predict(self, graphs, SOS_token=0, EOS_token=1, max_len=15):
         device = next(self.parameters()).device
 
         self.eval()
@@ -218,7 +218,7 @@ class GraphormerEncoder(FairseqEncoder):
         eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
         y_pred =  torch.cat((y_pred, eos), dim=1)
 
-        return [ x[:x.index(EOS_token)+1] for x in  y_pred.tolist() ]
+        return [ [SOS_token] + x[:x.index(EOS_token)+1] for x in  y_pred.tolist() ]
 
 
 
