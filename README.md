@@ -61,3 +61,24 @@ make -j install
 ```
 conda env create -f environment.yml
 ```
+
+pip install setuptools==59.5.0
+pip install fairseq
+pip install llnl-hatchet
+pip install -U "ray[default,rllib]"
+pip install -U compiler_gym
+pip install matplotlib
+pip install torch==1.9.1+cu111 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+
+
+
+# To try:
+
+```
+python  compiler2_service/model/transformer/graphormer_transformer.py
+
+python  compiler2_service/model/transformer/graphormer_encoder.py
+
+python compiler2_service/demo_programl_hpctoolkit.py
+
+```
