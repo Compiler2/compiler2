@@ -53,3 +53,11 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=$PWD/../install ..
 make -j
 make -j install
 ```
+
+
+
+# Install environment
+
+```
+conda env create -f environment.yml
+```
