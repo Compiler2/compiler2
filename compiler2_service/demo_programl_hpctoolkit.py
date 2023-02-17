@@ -9,6 +9,7 @@ to use the bazel build system. Usage:
 
 It is equivalent in behavior to the demo.py script in this directory.
 """
+import argparse
 import logging
 import pickle
 from pathlib import Path
@@ -35,8 +36,35 @@ pd.set_option("display.max_columns", None)
 collected_metrics = ["REALTIME (sec) (I)", "REALTIME (sec) (E)"]
 
 
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    '--arch', type=str, default='transformer', help='Architecture transformer or encoder.'
+)
+parser.add_argument(
+    "--dim_emb", type=int, default=64, help="Embedding dimension."
+)
+parser.add_argument(
+    "--heads", type=int, default=2, help="Number of heads."
+)
+parser.add_argument(
+    "--encoder_layers", type=int, default=3, help="Number of encoder layers."
+)
+parser.add_argument(
+    "--decoder_layers", type=int, default=3, help="Number of decoder layers."
+)
+parser.add_argument(
+    "--dropout", type=float, default=0.1, help="Dropout."
+)
+parser.add_argument(
+    "--epochs", type=int, default=500, help="Number of decoder layers."
+)
+
 
 def main():
+    args = parser.parse_args()
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.CRITICAL)
     dataset = {'graphs':[], 'labels':[]}
@@ -61,20 +89,23 @@ def main():
                 print("Main: step = ", i)
                 try:
                     action = 76
-                    while action in [23, 31, 45, 46, 76, 70, 71, 99, 107, 120]:
+                    while action in [9, 13, 23, 31, 45, 46, 62, 65, 76, 70, 71, 99, 102, 106, 107, 120]:
                         action = env.action_space.sample() 
-                    actions.append(action + 2) # + 2 for start/end token
-                    print(f'{actions[-1]}-----------------------------------------------------')
+
+                    print(f'{action}-----------------------------------------------------')
 
                     observation, reward, done, info = env.step(
-                        action=actions[-1],
+                        action=action,
                         observation_spaces=["programl_hpctoolkit_pickle"],
                         reward_spaces=["perf_tensor"],
                     )
-                except :
+                except:
                     print("AGENT: Timeout Error Step")
+                    breakpoint()
+                    traceback.print_exc()
                     continue       
                 
+                actions.append(action + 2) # + 2 for start/end token
                 print(reward)
                 g = pickle.loads(observation[0])
                 # print(g)
@@ -85,29 +116,43 @@ def main():
 
             actions.append(1)
         
-    breakpoint()
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-
-    # breakpoint()
     dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
+    # with open('dgl.pkl', 'rb') as handle: dgl_dataset = pickle.load(handle)    
+    
+    train_data = dgl_dataset.get_train()
+    valid_data = dgl_dataset.get_valid()
+    
+    # with open('dgl.pkl', 'wb') as handle: pickle.dump(dgl_dataset, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-    model = GraphormerEncoder(
-        num_classes=dgl_dataset.num_classes,
-    ).to(device=device)
 
+    if args.arch == 'encoder':
+        model = GraphormerEncoder(
+            num_classes=dgl_dataset.num_classes,
+        ).to(device=device)
+    elif args.arch == 'transformer':
+        model = GraphormerTransformer(
+            num_nodes=dgl_dataset.max_nodes,
+            num_classes=dgl_dataset.num_classes,
+            dim_model=args.dim_emb, 
+            num_heads=args.heads, 
+            num_encoder_layers=args.encoder_layers, 
+            num_decoder_layers=args.decoder_layers, 
+            dropout_p=args.dropout
+        ).to(device)
+    else:
+        print('Argument arch must be transformer or encoder')
+        exit(1)
 
     opt = torch.optim.SGD(model.parameters(), lr=0.01)
     loss_fn = nn.CrossEntropyLoss()
-    # loss_fn = nn.L1Loss(reduction="sum")
-
 
     train_loss_list, validation_loss_list = model.fit(
         opt=opt, 
         loss_fn=loss_fn, 
-        epochs=500, 
-        train_dataloader=dgl_dataset.get_train(),
-        valid_dataloader=dgl_dataset.get_valid()
+        epochs=args.epochs, 
+        train_dataloader=train_data,
+        valid_dataloader=valid_data,
     )
 
     plt.plot(train_loss_list, label = "Train loss")
@@ -119,14 +164,20 @@ def main():
     plt.savefig(Path(__file__).parent/'result.png')
 
 
-    # breakpoint()
-    test_data = dgl_dataset.get_test()
-    y_predicted = model.predict(test_data['x'])
+    def predict(dataset):
+        y_predicted = model.predict(dataset['x'])
 
-    for y_pred, y in zip(y_predicted, test_data['y']):
-        print(f'y_pred: {y_pred} -> y: {y.tolist()}')
+        for y_pred, y in zip(y_predicted, dataset['y']):
+            print(f'y_pred: {y_pred} -> y: {y.tolist()}')
 
-            
+    print('Train data-----------------------------------------------------')
+    predict(train_data)
+
+    print('Validation data------------------------------------------------')
+    predict(valid_data)
+    
+    print('Test data------------------------------------------------------')
+    predict(dgl_dataset.get_test())            
 
 if __name__ == "__main__":
     main()

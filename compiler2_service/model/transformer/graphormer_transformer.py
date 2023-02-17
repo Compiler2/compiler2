@@ -59,8 +59,8 @@ class GraphormerTransformer(nn.Module):
     # Constructor
     def __init__(
         self,
+        num_nodes,
         num_classes,
-        num_tokens,
         dim_model,
         num_heads,
         num_encoder_layers,
@@ -78,34 +78,20 @@ class GraphormerTransformer(nn.Module):
             dim_model=dim_model, dropout_p=dropout_p, max_len=5000
         )
 
-        self.embedding = nn.Embedding(num_tokens, dim_model)
-        # self.transformer = nn.Transformer(
-        #     d_model=dim_model,
-        #     nhead=num_heads,
-        #     num_encoder_layers=num_encoder_layers,
-        #     num_decoder_layers=num_decoder_layers,
-        #     dropout=dropout_p,
-        # )
+        self.embedding = nn.Embedding(num_classes, dim_model)
 
 
         encoder_layer = nn.TransformerEncoderLayer(d_model=dim_model, nhead=num_heads, dropout=dropout_p)
         encoder_norm = nn.LayerNorm(dim_model)
         self.encoder0 = nn.TransformerEncoder(encoder_layer, num_encoder_layers, encoder_norm)
         
-        # self.encoder = GraphormerEncoder(
-        #     num_classes=num_classes,
-        #     encoder_embed_dim=dim_model,
-        #     encoder_attention_heads=num_heads,
-        #     encoder_layers=num_encoder_layers,
-        #     dropout=dropout_p,
-        # ).to(device=device)
 
         self.encoder = GraphormerGraphEncoder(
                     # < for graphormer
-                    num_atoms=56,
-                    num_in_degree=7,
-                    num_out_degree=6,
-                    num_edges=512,
+                    num_atoms=num_nodes,
+                    num_in_degree=num_nodes,
+                    num_out_degree=num_nodes,
+                    num_edges=num_nodes * 3,
                     num_spatial=512,
                     num_edge_dis=128,
                     edge_type='single_hop',
@@ -133,7 +119,7 @@ class GraphormerTransformer(nn.Module):
 
 
 
-        self.out = nn.Linear(dim_model, num_tokens)
+        self.out = nn.Linear(dim_model, num_classes)
         
     def forward(self, graphs, tgt, tgt_mask=None, tgt_pad_mask=None):
         # Src size must be (batch_size, src sequence length)
@@ -150,9 +136,6 @@ class GraphormerTransformer(nn.Module):
 
         # src = src.permute(1,0,2)
         tgt = tgt.permute(1,0,2)
-
-
-        # memory0 = self.encoder0(src, mask=src_pad_mask)
 
         inner_states, graph_rep = self.encoder(graphs)
         
@@ -192,7 +175,7 @@ class GraphormerTransformer(nn.Module):
     Train model
     '''
 
-    def fit(self, opt, loss_fn, train_dataloader, val_dataloader, epochs):
+    def fit(self, opt, loss_fn, train_dataloader, valid_dataloader, epochs):
         # Used for plotting later on
         train_loss_list, validation_loss_list = [], []
         
@@ -203,7 +186,7 @@ class GraphormerTransformer(nn.Module):
             train_loss = self.train_loop(opt, loss_fn, train_dataloader)
             train_loss_list += [train_loss]
             
-            validation_loss = self.train_loop(opt, loss_fn, val_dataloader, backprop=False)
+            validation_loss = self.train_loop(opt, loss_fn, valid_dataloader, backprop=False)
             validation_loss_list += [validation_loss]
             
             print(f"Training loss: {train_loss:.4f}")
@@ -216,6 +199,7 @@ class GraphormerTransformer(nn.Module):
     def train_loop(self, opt, loss_fn, dataloader, backprop=True):
         if backprop: self.train()
         else: self.eval()
+        device = next(self.parameters()).device
 
         total_loss = 0
         y_input = dataloader['y'][:,:-1]
@@ -245,6 +229,7 @@ class GraphormerTransformer(nn.Module):
 
     def predict(self, graphs, SOS_token=0, EOS_token=1, max_length=15):
         self.eval()
+        device = next(self.parameters()).device
 
         num_examples = graphs['idx'].size(0)
         y_input = torch.full((num_examples, 1), SOS_token, dtype=torch.long, device=device)
@@ -272,8 +257,8 @@ if __name__ == "__main__":
     dgl_dataset = GraphormerDGLDataset(device=device)
 
     model = GraphormerTransformer(
-        num_classes=dgl_dataset.num_classes,
-        num_tokens=20, 
+        num_nodes=dgl_dataset.num_classes,
+        num_classes=dgl_dataset.num_classes, 
         dim_model=8, 
         num_heads=2, 
         num_encoder_layers=3, 
@@ -289,7 +274,7 @@ if __name__ == "__main__":
         opt, 
         loss_fn,
         train_dataloader=dgl_dataset.get_train(), 
-        val_dataloader=dgl_dataset.get_valid(), 
+        valid_dataloader=dgl_dataset.get_valid(), 
         epochs=500,
     )
 

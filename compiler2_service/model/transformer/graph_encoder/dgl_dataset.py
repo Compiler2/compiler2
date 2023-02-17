@@ -172,9 +172,12 @@ class GraphormerDGLDataset(Dataset):
             self.graphs, self.labels = graphs, labels
         
         self.labels = torch.tensor(self.labels, device=device)
+        self.tokens = self.labels.size(1)
+
 
         self.device = device
-        self.num_classes = torch.max(self.labels) + 1
+        self.num_classes = torch.max(self.labels).item() + 1
+        self.max_nodes = max([g.num_nodes() for g in self.graphs]) 
 
         num_data = len(self.graphs)
         self.seed = seed

@@ -31,12 +31,12 @@ class Dataset(Dataset):
                         # $IN is replaced with benchmark path
                         # Following are linking flags (only one in this case).
                         argument=["$CC", "$IN", "-lm"],
-                        timeout_seconds=60,
+                        timeout_seconds=5, #60,
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
                         argument=["./a.out"],
-                        timeout_seconds=300,
+                        timeout_seconds=5,#300,
                         infile=["a.out"],
                     )
                 )
@@ -90,7 +90,7 @@ class Dataset(Dataset):
         #     cmd += ["-isystem", str(directory)]
         return subprocess.check_output(
             cmd,
-            timeout=300,
+            timeout=5,#300,
         )
 
     def benchmark_uris(self) -> Iterable[str]:
