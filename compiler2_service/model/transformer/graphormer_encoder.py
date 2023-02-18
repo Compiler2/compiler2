@@ -218,7 +218,7 @@ class GraphormerEncoder(FairseqEncoder):
         eos = torch.full((num_examples, 1), EOS_token, dtype=torch.long, device=device)
         y_pred =  torch.cat((y_pred, eos), dim=1)
 
-        return [ [SOS_token] + x[:x.index(EOS_token)+1] for x in  y_pred.tolist() ]
+        return [ x[:x.index(EOS_token)+1] for x in  y_pred.tolist() ]
 
 
 

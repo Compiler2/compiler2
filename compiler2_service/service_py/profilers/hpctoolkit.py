@@ -5,6 +5,8 @@ from typing import Dict, List, Optional, Tuple
 import hatchet as ht
 import pandas as pd
 import utils
+import dgl
+import torch
 
 from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
@@ -102,3 +104,33 @@ class Profiler:
                     # print(len(inst_list), str(line)) # Important for Debug
                     inst_list.append(str(line[2:-1]))  # strip '  ' and '\n' at the end
         return inst_list
+
+    def hatchet_to_dgl(self, gf):
+        edges = []
+        features = {}
+
+        nodes_to_expand = gf.to_literal()
+        while nodes_to_expand:
+            node = nodes_to_expand.pop(0)        
+            node_id = node['metrics']['_hatchet_nid']
+            features[node_id] = [ v for k, v in node['metrics'].items() if k != '_hatchet_nid']
+
+            if 'children' in node:
+                for child in node['children']:
+                    nodes_to_expand.append(child)
+                    child_id = child['metrics']['_hatchet_nid']
+                    edges.append([node_id, child_id])
+
+        x, y = zip(*edges)
+        g_dgl = dgl.graph((x, y))
+        g_dgl.ndata['x'] = torch.tensor([features[k] for k in sorted(features)]) # set nodes features
+        return g_dgl
+
+
+
+class ProfilerDGL(Profiler):
+    def get_observation(self) -> Event:        
+        g_hatchet = self.hatchet_get_graph()
+        dgl_graph = self.hatchet_to_dgl(g_hatchet)
+        pickled = pickle.dumps(dgl_graph)
+        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))

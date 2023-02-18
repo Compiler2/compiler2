@@ -30,30 +30,22 @@ from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
 from agent_py.rewards import hpctoolkit_reward
-from compiler2_service.agent_py.datasets import hpctoolkit_cpu
 
 
-# def register_env():
-#     register(
-#         id="compiler2-v0",
-#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
-#         kwargs={
-#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-#             "rewards": [hpctoolkit_reward.RewardPickle()],
-#             "datasets": [hpctoolkit_dataset.Dataset()],
-#         },
-#     )
+import dgl
+import torch
+
 
 
 def main():
     # Use debug verbosity to print out extra logging information.
     init_logging(level=logging.DEBUG)
-    # register_env()
 
     reward_metric = hpctoolkit_reward.RewardPickle.reward_metric
+    observation_spaces = 'hpctoolkit_dgl_pickle' # 'hpctoolkit_pickle'
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_env("compiler2-v0", datasets=['hpctoolkit_dataset'], logging=False) as env:
+    with compiler2_service.make_env("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
 
         print("Make hpctoolkit")
         for bench in env.datasets["benchmark://hpctoolkit-cpu-v0"]:
@@ -70,21 +62,27 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observation_spaces=["hpctoolkit_pickle"],
+                        observation_spaces=[observation_spaces],
                         # reward_spaces=["perf_reward"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")
                     continue
                 
-                breakpoint()
                 print(reward)
                 print(info)
-                gf = pickle.loads(observation[0])
-                print(gf.tree(metric_column=reward_metric))
-                print(gf.dataframe[[reward_metric, "line", "llvm_ins"]])
 
-                pdb.set_trace()
+                if observation_spaces == 'hpctoolkit_pickle':
+                    gf = pickle.loads(observation[0])
+                    print(gf.tree(metric_column=reward_metric))
+                    print(gf.dataframe[[reward_metric, "line", "llvm_ins"]])
+                else:
+                    dgl = pickle.loads(observation[0])
+                    print(dgl)
+
+                breakpoint()
+
+
                 if done:
                     env.reset()
 

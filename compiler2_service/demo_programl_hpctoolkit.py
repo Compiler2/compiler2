@@ -72,7 +72,7 @@ def main():
     # Create the environment using the regular gym.make(...) interface.
     # with gym.make("hpctoolkit-llvm-v0") as env:
     with compiler2_service.make("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
-
+        breakpoint()
         for benchmark in env.datasets.benchmarks():
             try:
                 env.reset(benchmark=benchmark)
@@ -101,8 +101,6 @@ def main():
                     )
                 except:
                     print("AGENT: Timeout Error Step")
-                    breakpoint()
-                    traceback.print_exc()
                     continue       
                 
                 actions.append(action + 2) # + 2 for start/end token

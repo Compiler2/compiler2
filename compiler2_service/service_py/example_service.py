@@ -148,6 +148,12 @@ class HPCToolkitCompilationSession(CompilationSession):
             ),
         ),
         ObservationSpace(
+            name="hpctoolkit_dgl_pickle",
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
+        ),        
+        ObservationSpace(
             name="programl_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
@@ -319,6 +325,12 @@ class HPCToolkitCompilationSession(CompilationSession):
 
             elif observation_space.name == "hpctoolkit_pickle":
                 self.profiler = hpctoolkit.Profiler(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec,
+                                                    self.benchmark.llvm_path)
+            
+            elif observation_space.name == "hpctoolkit_dgl_pickle":
+                self.profiler = hpctoolkit.ProfilerDGL(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
