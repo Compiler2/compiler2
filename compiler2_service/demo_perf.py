@@ -83,8 +83,8 @@ def main():
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
-                        observation_spaces=["perf_tensor"],
-                        reward_spaces=["perf_tensor"],
+                        observation_spaces=["perf"],
+                        reward_spaces=["perf"],
                     )
                 except ServiceError:
                     print("AGENT: Timeout Error Step")

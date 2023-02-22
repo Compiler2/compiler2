@@ -45,7 +45,7 @@ import compiler2_service.paths
 
 
 from compiler2_service.agent_py.rewards import perf_reward
-from compiler2_service.agent_py.datasets import poj104_dataset_small
+from compiler2_service.agent_py.datasets import poj104_small
 
 
 import torch
@@ -68,7 +68,7 @@ def register_env():
             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
             "rewards": [perf_reward.RewardTensor()],
             "datasets": [
-                poj104_dataset_small.Dataset()            
+                poj104_small.Dataset()            
             ],
         },
     )
@@ -114,14 +114,14 @@ def main(argv):
                 base_actions = ["-always-inline", "-jump-threading","-reg2mem", "-div-rem-pairs", "-early-cse-memssa", "-early-cse",]
                 observation, reward, done, info = env.multistep(
                     actions=[env.action_space.from_string(a) for a in base_actions],
-                    observation_spaces=["perf_tensor"],
-                    reward_spaces=["perf_tensor"],
+                    observation_spaces=["perf"],
+                    reward_spaces=["perf"],
                     )            
 
             except ServiceError:
                 logging.critical("AGENT: Timeout Error Reset")
             
-            observation = env.observation["perf_tensor"]
+            observation = env.observation["perf"]
             cycles_base = observation[0].flat[0] 
             cycles_final = 0
 
@@ -135,8 +135,8 @@ def main(argv):
                         observation, reward, done, info = env.step(
                             seek=True,
                             action=next_action,
-                            observation_spaces=["perf_tensor"],
-                            reward_spaces=["perf_tensor"],
+                            observation_spaces=["perf"],
+                            reward_spaces=["perf"],
                         )
                         # env.actions.pop()
 
@@ -156,8 +156,8 @@ def main(argv):
                     env.send_param("save_state", "1")
                     observation, reward, done, info = env.step(
                         action=chosen_action,
-                        observation_spaces=["perf_tensor"],
-                        reward_spaces=["perf_tensor"],
+                        observation_spaces=["perf"],
+                        reward_spaces=["perf"],
                     )
                     observation = observation[0]
 

@@ -7,7 +7,7 @@
 Example usage:
 
     # Run a random walk on cBench example program using perf runtime reward.
-    $ python demo_random_walk.py --walk_count=2 --step_count=4 --data_set=benchmark://poj104-small-v0 --reward=perf_tensor --observation=perf_tensor
+    $ python demo_random_walk.py --walk_count=2 --step_count=4 --data_set=benchmark://poj104-small-v0 --reward=perf --observation=perf
 
 """
 import random

@@ -22,7 +22,7 @@ class Evaluator:
     #############################################################
     # Public
     #############################################################
-    def __init__(self, steps=10, reward='perf_tensor', timeout=10, debug=False):
+    def __init__(self, steps=10, reward='perf', timeout=10, debug=False):
         self.steps = steps
         self.reward = reward
         self.timeout = timeout

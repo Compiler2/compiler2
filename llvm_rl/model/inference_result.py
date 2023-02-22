@@ -7,9 +7,9 @@ from typing import List
 
 import numpy as np
 from pydantic import BaseModel, validator
-from ray.rllib.agents.dqn import ApexTrainer, R2D2Trainer  # noqa
-from ray.rllib.agents.impala import ImpalaTrainer  # noqa
-from ray.rllib.agents.ppo import PPOTrainer  # noqa
+# from ray.rllib.algorithms.dqn import ApexTrainer, R2D2Trainer  # noqa
+# from ray.rllib.algorithms.impala import ImpalaTrainer  # noqa
+# from ray.rllib.algorithms.ppo import PPOTrainer  # noqa
 
 from compiler_gym.datasets import BenchmarkUri
 from compiler_gym.envs import CompilerEnv

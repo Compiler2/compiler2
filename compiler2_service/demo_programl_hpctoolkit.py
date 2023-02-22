@@ -97,7 +97,7 @@ def main():
                     observation, reward, done, info = env.step(
                         action=action,
                         observation_spaces=["programl_hpctoolkit_pickle"],
-                        reward_spaces=["perf_tensor"],
+                        reward_spaces=["perf"],
                     )
                 except:
                     print("AGENT: Timeout Error Step")

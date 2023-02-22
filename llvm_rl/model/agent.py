@@ -12,11 +12,11 @@ from pydantic import BaseModel, Field, validator
 # Ignore import deprecation warnings from ray.
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-from ray.rllib.agents.a3c import A2CTrainer  # noqa
-from ray.rllib.agents.a3c import A3CTrainer  # noqa
-from ray.rllib.agents.dqn import ApexTrainer, R2D2Trainer  # noqa
-from ray.rllib.agents.impala import ImpalaTrainer  # noqa
-from ray.rllib.agents.ppo import PPOTrainer  # noqa
+# from ray.rllib.algorithms.a3c import A2CTrainer  # noqa
+# from ray.rllib.algorithms.a3c import A3CTrainer  # noqa
+# from ray.rllib.algorithms.dqn import ApexTrainer, R2D2Trainer  # noqa
+# from ray.rllib.algorithms.impala import ImpalaTrainer  # noqa
+# from ray.rllib.algorithms.ppo import PPOTrainer  # noqa
 
 from .environment import Environment  # noqa: E402
 

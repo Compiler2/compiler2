@@ -59,7 +59,7 @@ class OptimizationTarget(str, Enum):
         elif self.value == OptimizationTarget.RUNTIME:
             env = RuntimePointEstimateReward(env, warmup_count=0, runtime_count=3)
         elif self.value == OptimizationTarget.PERF or self.value == OptimizationTarget.PERF_LOG:
-            env.reward_space = "perf_tensor"
+            env.reward_space = "perf"
         else:
             assert False, f"Unknown OptimizationTarget: {self.value}"
 

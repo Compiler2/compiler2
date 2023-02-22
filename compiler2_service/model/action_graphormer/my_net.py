@@ -3,6 +3,7 @@ from ray.rllib.models.torch.torch_modelv2 import TorchModelV2
 from ray.rllib.models.torch.fcnet import FullyConnectedNetwork as TorchFC
 from ray.rllib.utils.framework import try_import_torch
 
+from compiler2_service.model.transformer.graphormer_transformer import GraphormerTransformer
 
 torch, nn = try_import_torch()
 
@@ -10,6 +11,18 @@ class TorchCustomModel(TorchModelV2, nn.Module):
     """Example of a PyTorch custom model that just delegates to a fc-net."""
 
     def __init__(self, obs_space, action_space, num_outputs, model_config, name):
+
+        # breakpoint()
+        self.graphormer_transformer = GraphormerTransformer(                    
+            num_nodes=800,
+            num_classes=150,
+            dim_model=64,
+            num_heads=8,
+            num_encoder_layers=3,
+            num_decoder_layers=3,
+            dropout_p=0.1,
+        )
+
         TorchModelV2.__init__(
             self, obs_space, action_space, num_outputs, model_config, name
         )

@@ -1,13 +1,13 @@
 import ray
 import os
 
-def get_config(sweep=False):
+def get_config(profiler, sweep=False):
     hiddens_layers = [10, 15]
     hiddens_width = [500, 1000]
     return {
         "log_level": "ERROR",
         "env": "compiler_gym", 
-        "observation_space": "perf_tensor",
+        "observation_space": profiler,
         "framework": 'torch',
         "model": {
             "vf_share_layers": True,

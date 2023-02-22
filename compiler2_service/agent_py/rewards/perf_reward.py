@@ -35,8 +35,8 @@ class RewardPickle(Reward):
 class RewardTensor(Reward):
     def __init__(self):
         super().__init__(
-            name="perf_tensor",
-            observation_spaces=["perf_tensor"],
+            name="perf",
+            observation_spaces=["perf"],
             default_value=0,
             default_negates_returns=True,
             deterministic=False,
@@ -46,11 +46,11 @@ class RewardTensor(Reward):
 
     def reset(self, benchmark: str, observation_view):
         del benchmark  # unused
-        self.prev_cycles = observation_view["perf_tensor"].flat[0]
+        self.prev_cycles = observation_view["perf"].flat[0]
         logging.info(f"Reward Perf: reset reward = {self.prev_cycles}")
 
     def update(self, action, observations, observation_view):
-        new_cycles = observation_view["perf_tensor"].flat[0]
+        new_cycles = observation_view["perf"].flat[0]
 
         # print("Reward Perf: update reward = ", new_cycles)
         logging.info(f"REWARD: PrevCycles = {self.prev_cycles}\tNewCycles = {new_cycles}\n")

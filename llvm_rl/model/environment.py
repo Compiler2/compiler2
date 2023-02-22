@@ -151,8 +151,8 @@ class MyEnvironment(Environment):
             # pdb.set_trace()
             env = compiler2_service.make(
                 "compiler2-v0",
-                observation_space="perf_tensor",
-                reward_space="perf_tensor"
+                observation_space="perf",
+                reward_space="perf"
             )
             
             env = ConstrainedCommandline(env, flags=[

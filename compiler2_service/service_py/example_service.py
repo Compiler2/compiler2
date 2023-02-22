@@ -94,7 +94,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         # ),
 
         ObservationSpace( # Note: Be CAREFUL with dimensions, they need to be exactly the same like in perf.py
-            name="perf_tensor",
+            name="perf",
             space=Space(
                 double_box=DoubleBox(
                     low = DoubleTensor(shape = [1, 28], value=[0] * 28),
@@ -142,25 +142,25 @@ class HPCToolkitCompilationSession(CompilationSession):
             ),
         ),        
         ObservationSpace(
-            name="hpctoolkit_pickle",
+            name="hpctoolkit_hatchet",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
-            name="hpctoolkit_dgl_pickle",
+            name="hpctoolkit",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),        
         ObservationSpace(
-            name="programl_pickle",
+            name="programl",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
-            name="programl_hpctoolkit_pickle",
+            name="programl_hpctoolkit",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
@@ -237,7 +237,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             # profiler = cProfile.Profile()
             # breakpoint()
             # profiler.enable()
-            breakpoint()
+            # breakpoint()
 
             reward_actions = self.benchmark_search.search(
                 int(walk_count), 
@@ -312,7 +312,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                               self.benchmark.run_cmd,
                                               self.timeout_sec)
 
-            elif observation_space.name == "perf_tensor":
+            elif observation_space.name == "perf":
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              
@@ -323,25 +323,25 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec)                                              
 
 
-            elif observation_space.name == "hpctoolkit_pickle":
+            elif observation_space.name == "hpctoolkit_hatchet":
                 self.profiler = hpctoolkit.Profiler(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
             
-            elif observation_space.name == "hpctoolkit_dgl_pickle":
+            elif observation_space.name == "hpctoolkit":
                 self.profiler = hpctoolkit.ProfilerDGL(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_pickle":
+            elif observation_space.name == "programl":
                 self.profiler = programl.Profiler(observation_space.name,
                                                   self.benchmark.run_cmd,
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_hpctoolkit_pickle":
+            elif observation_space.name == "programl_hpctoolkit":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
                                                              self.timeout_sec,

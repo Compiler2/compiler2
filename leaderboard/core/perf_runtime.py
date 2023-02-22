@@ -132,7 +132,7 @@ class _EvalPolicyWorker(Thread):
                 ), "Policy changed environment benchmark"
                 assert self.env.reward_space, "Policy unset environment reward space"
                 assert (
-                    self.env.reward_space.id == "perf_tensor"
+                    self.env.reward_space.id == "perf"
                 ), "Policy changed environment reward space"
 
                 # Override walltime in the generated state.
@@ -242,7 +242,7 @@ def eval_llvm_instcount_policy(policy: Policy) -> None:
 
     import compiler2_service
     from compiler2_service.agent_py.rewards import perf_reward
-    from compiler2_service.agent_py.datasets import poj104_dataset
+    from compiler2_service.agent_py.datasets import poj104
 
     def register_env():
         register(
@@ -252,7 +252,7 @@ def eval_llvm_instcount_policy(policy: Policy) -> None:
                 "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
                 "rewards": [perf_reward.RewardTensor()],
                 "datasets": [
-                    poj104_dataset.Dataset(),
+                    poj104.Dataset(),
                     CsmithDataset(site_data_path("llvm-v0"), sort_order=0)            
                 ],
             },
@@ -271,8 +271,8 @@ def eval_llvm_instcount_policy(policy: Policy) -> None:
         # )
         env = compiler2_service.make(
             "compiler2-v0",
-            observation_space="perf_tensor",
-            reward_space="perf_tensor"
+            observation_space="perf",
+            reward_space="perf"
         )
         # Here we constrain the action space of the environment to use only a
         # handful of command line flags from the full set. We do this to speed up

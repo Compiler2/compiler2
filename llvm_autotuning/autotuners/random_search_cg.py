@@ -70,8 +70,8 @@ class RandomAgentWorker(Thread):
             self,
             make_env: Callable[[], CompilerEnv],
             patience: int,
-            observation_spaces=["perf_tensor"],
-            reward_spaces=["perf_tensor"]
+            observation_spaces=["perf"],
+            reward_spaces=["perf"]
     ):
         super().__init__()
         self._make_env = make_env
@@ -304,8 +304,8 @@ def random_search(
 
 
 def replay_actions(env: CompilerEnv, action_names: List[str], outdir: Path,
-                   observation_spaces=["perf_tensor"],
-                   reward_spaces=["perf_tensor"]):
+                   observation_spaces=["perf"],
+                   reward_spaces=["perf"]):
     logs_path = outdir / logs.BEST_ACTIONS_PROGRESS_NAME
     start_time = time()
 

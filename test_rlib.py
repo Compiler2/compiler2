@@ -2,7 +2,7 @@
 import compiler_gym
 import ray
 
-from ray.rllib.agents.ppo import PPOTrainer
+from ray.rllib.algorithms.ppo import PPOTrainer
 from compiler_gym.wrappers import ConstrainedCommandline, TimeLimit
 from ray import tune
 from itertools import islice

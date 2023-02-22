@@ -37,7 +37,6 @@ import yaml
 
 import ray
 from ray import tune
-from ray.rllib.env.env_context import EnvContext
 from ray.rllib.models import ModelCatalog
 from ray.rllib.utils.framework import try_import_torch
 from ray.rllib.utils.test_utils import check_learning_achieved
@@ -53,7 +52,7 @@ import compiler2_service
 from compiler2_service.model.evaluator import Evaluator
 
 
-import torch
+# import torch
 import importlib
 import time
 
@@ -70,7 +69,7 @@ import tempfile
 
 
 torch, nn = try_import_torch()
-import ray.rllib.agents.trainer_template
+# import ray.rllib.algorithms.trainer_template
 
 
 
@@ -81,8 +80,8 @@ def make_env():
     env = compiler2_service.make(
         "compiler2-v0",
         datasets=[os.environ["dataset"]],
-        observation_space="perf_tensor",
-        reward_space="perf_tensor",
+        observation_space=os.environ["obs_space"],#"perf",
+        reward_space="perf",
     )
 
     env = TimeLimit(env, max_episode_steps=int(os.environ["steps"])) # <<<< Must be here
@@ -116,16 +115,20 @@ class RLlibTrainer:
         self.trainer_name = trainer
         self.profiler = profiler
         self.algorithm, trainer = trainer.split('.') # expected: algorithm.trainer
-        self.trainer = getattr(importlib.import_module(f'ray.rllib.agents.{self.algorithm}'), trainer)
-        self.config = importlib.import_module(f"compiler2_service.model.config.{self.algorithm}.{trainer}").get_config(sweep_count)
+        self.trainer = getattr(importlib.import_module(f'ray.rllib.algorithms.{self.algorithm}'), trainer)
+        self.config = importlib.import_module(f"compiler2_service.model.config.{self.algorithm}.{trainer}").get_config(profiler, sweep_count)
         self.dataset = dataset
         self.size = size
         self.eval_size = eval_size
-        self.network = getattr(importlib.import_module(f"compiler2_service.model.{profiler}.my_net"), network)
+        network_arch = 'action_graphormer' if profiler in ['programl', 'programl_hpctoolkit', 'hpctoolkit'] else 'mlp'
+        self.network = getattr(importlib.import_module(f"compiler2_service.model.{network_arch}.my_net"), network)
         self.wandb_dict['network'] = network
         self.wandb_project_url = str(os.environ['WANDB_PROJECT_URL']) # format username/project_name
         self.wandb_project_name = self.wandb_project_url.split('/')[1]
         self.env = make_env()
+        breakpoint()
+        ray.rllib.utils.check_env(self.env)
+
         self.reward = list(self.env.reward.spaces.keys())[0]
         self.my_artifacts = Path(f'{COMPILER2_ROOT}/results/perf/{time.strftime("%Y%m%d-%H%M%S")}') #Path(tempfile.mkdtemp()) # Dir to download and upload files. Has start, end subdirectories
         self.my_artifacts_start = self.my_artifacts/'start'

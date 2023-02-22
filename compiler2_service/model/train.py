@@ -59,10 +59,10 @@ import tempfile
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    '--profiler', type=str, default='perf', help='Profiler for creating representation.'
+    '--profiler', type=str, choices=['perf', 'hpctoolkit', 'programl', 'programl_hpctoolkit'], default='perf', help='Profiler for creating representation.'
 )
 parser.add_argument(
-    '--trainer', type=str, default='dqn.ApexTrainer', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
+    '--trainer', type=str, choices=['apex_dqn.ApexDQN', 'dqn.DQN', 'ppo.PPO', 'impala.Impala'], default='apex_dqn.ApexDQN', help='The RLlib-registered trainer to use. Store config in rllib/config directory.'
 )
 parser.add_argument(
     "--wandb_url",  type=str, nargs='?', default='', help="Wandb uri to load policy network."
@@ -132,6 +132,7 @@ if __name__ == '__main__':
 
     init_logging(level=logging.CRITICAL)
 
+    os.environ["obs_space"] = args.profiler
     os.environ["dataset"] = args.dataset
     os.environ["steps"] = str(args.steps)
 
