@@ -57,7 +57,7 @@ setuptools.setup(
         "llvm_rl.model",
     ],
     include_dirs=[numpy.get_include()],
-    ext_modules=cythonize(f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos.pyx"),
+    ext_modules=cythonize(f"{Path(__file__).parent}/compiler2_service/model/transformer/graph_encoder/algos_c2.pyx"),
     python_requires=">=3.8",
     platforms=[distutils.util.get_platform()],
     zip_safe=False,

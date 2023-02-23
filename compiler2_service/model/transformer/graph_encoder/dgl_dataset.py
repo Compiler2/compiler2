@@ -19,7 +19,9 @@ from compiler2_service.paths import COMPILER2_ROOT
 import pyximport
 pyximport.install(setup_args={"include_dirs": np.get_include()})
 
-import algos
+# FIXME: Current fix - adapt depending on when you are running the code
+import graph_encoder.algos_c2 as algos
+#import model.transformer.graph_encoder.algos_c2 as algos
 from copy import copy
 
 
