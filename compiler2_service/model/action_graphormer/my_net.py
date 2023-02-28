@@ -56,19 +56,27 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         # print( '1____________________________', {k: v.shape for k, v in sorted(input_dict['obs'].items())} )
         batch_size = input_dict['obs'].shape[0]
 
-        print(batch_size)
+        print(batch_size, input_dict.keys())
+        # if 'prev_actions' in input_dict.keys():
+        #     breakpoint()
+
         # breakpoint()
         if not input_dict['obs'].any():
+            print('DEFAULT INPUT *******************')
             input_obs_dict = self.get_default_input(batch_size)
         else:
-            # breakpoint()
-            aa = np.array(input_dict['obs'].numpy(), dtype=np.int32).flatten()
-            size = aa[-1]
-            graph = pickle.loads(aa[:size].astype(np.int8))
+            print('REAL INPUT *******************')
+            pickle_tensor = np.array(input_dict['obs'].numpy(), dtype=np.int32)
 
-            dgl_dataset = GraphormerDGLDataset(graphs=[graph], train_idx=np.arange(1), device='cpu')
+            graphs = np.apply_along_axis(
+                lambda row: pickle.loads(row[:row[-1]].astype(np.int8)), 
+                axis=1, 
+                arr=pickle_tensor
+            )
+
+            dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(1), device='cpu')
             input_obs_dict = dgl_dataset.get_train()['x']
-
+            
 
         actions = torch.tensor([[0, 1, 3, 4, 5]], device='cpu')
         self.device = next(self.parameters()).device
@@ -77,10 +85,12 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         sequence_length = actions.size(1)
         tgt_mask = self.torch_sub_model.get_tgt_mask(sequence_length).to(self.device)
         tgt = actions.to(self.device)
-        
+        for k, v in sorted(input_obs_dict.items()): 
+            input_obs_dict[k] = v.to(self.device)
 
         # Standard training except we pass in y_input and tgt_mask
         fc_out = self.torch_sub_model(graphs=input_obs_dict, tgt=tgt, tgt_mask=tgt_mask)
+        # breakpoint()
 
         fc_out = fc_out[0, :, :] # take just first token
         fc_out = fc_out.expand(batch_size, -1)
