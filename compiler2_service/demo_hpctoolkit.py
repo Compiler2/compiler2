@@ -67,7 +67,7 @@ def main():
 
     dataset = {'graphs':[], 'labels':[]}
 
-    observation_spaces = 'hpctoolkit_dgl_pickle' # 'hpctoolkit_pickle'
+    observation_spaces = 'hpctoolkit' # 'hpctoolkit_pickle'
 
     # Create the environment using the regular gym.make(...) interface.
     with compiler2_service.make_env("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:

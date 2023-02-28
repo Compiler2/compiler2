@@ -43,10 +43,18 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
     def forward(self, input_dict, state, seq_lens):
         input_dict["obs"] = input_dict["obs"].float()
+        # breakpoint()
+        # if input_dict['obs'].count_nonzero() == 0:
+        #     print('DUMMY ######################################################')
+        # else:
+        #     print('NOT DUMMY +++++++++++++++++++++++++++++++')
+        #     # breakpoint()
+
         fc_out, _ = self.torch_sub_model(input_dict, state, seq_lens)
         return fc_out, []
 
     def value_function(self):
+        breakpoint()
         return torch.reshape(self.torch_sub_model.value_function(), [-1])
 
 

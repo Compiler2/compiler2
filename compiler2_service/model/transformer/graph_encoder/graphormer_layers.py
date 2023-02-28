@@ -45,6 +45,7 @@ class GraphNodeFeature(nn.Module):
         self.apply(lambda module: init_params(module, n_layers=n_layers))
 
     def forward(self, batched_data):
+        # breakpoint()
         x, in_degree, out_degree = (
             batched_data["x"],
             batched_data["in_degree"],
@@ -65,7 +66,7 @@ class GraphNodeFeature(nn.Module):
         )
 
         graph_token_feature = self.graph_token.weight.unsqueeze(0).repeat(n_graph, 1, 1)
-
+        # breakpoint()
         graph_node_feature = torch.cat([graph_token_feature, node_feature], dim=1)
 
         return graph_node_feature

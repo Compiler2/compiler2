@@ -120,3 +120,8 @@ class CycleProfiler(Profiler):
     def get_observation(self) -> Event:
         perf_dict = self.perf_get_dict(num_metric_groups=1)
         return Event(double_value=float(perf_dict['cpu-cycles']))
+
+class ProfilerDict(Profiler):
+    def get_observation(self) -> Event:
+        perf_dict = self.perf_get_dict()
+        return Event(event_dict=perf_dict)

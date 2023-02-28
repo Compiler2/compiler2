@@ -238,7 +238,7 @@ if __name__ == "__main__":
     loss_fn = nn.CrossEntropyLoss()
     # loss_fn = nn.L1Loss(reduction="sum")
 
-    # breakpoint()
+    breakpoint()
     train_loss_list, validation_loss_list = model.fit(
         opt=opt, 
         loss_fn=loss_fn, 

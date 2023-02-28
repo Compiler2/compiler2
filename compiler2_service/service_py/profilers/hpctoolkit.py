@@ -7,6 +7,7 @@ import pandas as pd
 import utils
 import dgl
 import torch
+import numpy as np
 
 from compiler_gym.service.proto import Event, ByteTensor
 # from compiler_gym.util.commands import run_command
@@ -73,26 +74,34 @@ class Profiler:
                 cmd,
                 timeout=self.timeout_sec,
             )
-        print('2++++++++++')            
-        g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
+        print('2++++++++++')          
+        try:  
+            g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
+        except:
+            breakpoint()
+            return None
+
         print('3++++++++++')            
 
         if self.llvm_path:
             self.addInstStrToDataframe(g_hatchet, self.llvm_path)
 
-        print('4++++++++++')            
-
+        print('4++++++++++')     
         return g_hatchet
 
     def addInstStrToDataframe(self, g_hatchet: ht.GraphFrame, ll_path: str) -> None:
 
         inst_list = self.extractInstStr(ll_path)
+        # g_hatchet.dataframe.reset_index(inplace=True)
 
-        g_hatchet.dataframe["llvm_ins"] = ""
+        g_hatchet.dataframe["llvm_ins"] = ''
+        pd.set_option('mode.chained_assignment', None)
 
         for i, inst_idx in enumerate(g_hatchet.dataframe["line"]):
             if inst_idx < len(inst_list):
-                g_hatchet.dataframe["llvm_ins"][i] = inst_list[inst_idx]
+                # I tried to do 'g_hatchet.dataframe.at[i, "llvm_ins"] = inst_list[inst_idx]'  but this doesn't work since there is no index, If I reset index .to_literal() doesn't work.
+                g_hatchet.dataframe["llvm_ins"][i] = inst_list[inst_idx] 
+
 
     def extractInstStr(self, ll_path: str) -> list:
         inst_list = []
@@ -106,6 +115,9 @@ class Profiler:
         return inst_list
 
     def hatchet_to_dgl(self, gf):
+        if gf == None:
+            return dgl.graph(([1], [1]))
+
         edges = []
         features = {}
 
@@ -124,6 +136,7 @@ class Profiler:
         x, y = zip(*edges)
         g_dgl = dgl.graph((x, y))
         g_dgl.ndata['x'] = torch.tensor([features[k] for k in sorted(features)]) # set nodes features
+        # g_dgl.ndata['x'] = np.array([features[k] for k in sorted(features)]) # set nodes features
         return g_dgl
 
 
@@ -134,3 +147,13 @@ class ProfilerDGL(Profiler):
         dgl_graph = self.hatchet_to_dgl(g_hatchet)
         pickled = pickle.dumps(dgl_graph)
         return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+
+from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
+
+class ProfilerDGLDict(Profiler):
+    def get_observation(self) -> Event:        
+        g_hatchet = self.hatchet_get_graph()
+        dgl_graph = self.hatchet_to_dgl(g_hatchet)
+        pickled = pickle.dumps(dgl_graph)
+        return Event(event_dict=DictEvent(shape=[len(pickled)], value=pickled))
+    

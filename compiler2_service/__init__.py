@@ -275,16 +275,8 @@ class HPCToolkitCompilerEnvWrapper(CompilerEnvWrapper):
 from compiler_gym.util.registration import register
 from compiler2_service.paths import COMPILER2_SERVICE_PY
 from compiler2_service.agent_py.rewards import perf_reward, runtime_reward
-from compiler_gym.envs.llvm.datasets import (
-    AnghaBenchDataset,
-    BlasDataset,
-    CBenchDataset,
-    CBenchLegacyDataset,
-    CBenchLegacyDataset2,
-    CHStoneDataset,
-    CsmithDataset,
-    NPBDataset,
-)
+from compiler_gym.spaces import Dict as DictSpace
+from compiler_gym.spaces import Scalar, Sequence
 
 from compiler2_service.agent_py.datasets import (
     hpctoolkit_cpu,
@@ -295,6 +287,61 @@ from compiler2_service.agent_py.datasets import (
 
 from compiler_gym.util.runfiles_path import site_data_path
 import importlib
+import numpy as np
+import torch
+from functools import lru_cache
+from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
+
+@lru_cache(maxsize=1)
+def get_default_input(batch_size=32):
+    return {
+    'attn_bias': torch.ones((batch_size, 382, 382), dtype=torch.int64, device='cpu'), #dtype=torch.float32), 
+    'attn_edge_type': torch.ones((batch_size, 381, 381, 1), dtype=torch.int64, device='cpu'), 
+    'edge_input': torch.ones((batch_size, 381, 381, 20, 1), dtype=torch.int64, device='cpu'), 
+    'idx': torch.ones((batch_size), dtype=torch.int64, device='cpu'), 
+    'in_degree': torch.ones((batch_size, 381), dtype=torch.int64, device='cpu'), 
+    'out_degree': torch.ones((batch_size, 381), dtype=torch.int64, device='cpu'), 
+    'spatial_pos': torch.ones((batch_size, 381, 381), dtype=torch.int64, device='cpu'), 
+    'x': torch.ones((batch_size, 381, 1), dtype=torch.int64, device='cpu'), 
+    'y': torch.ones((2, 1), dtype=torch.int64, device='cpu'),
+}
+
+
+max_pickle_size = int(80e3)
+
+def pickle_to_dict(base_observation):
+    # obs = pickle.loads(base_observation)
+    # f"{key}": np.zeros((1, 4))
+    # for key in ['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
+
+    if type(base_observation) != type(None):
+        
+        orig_size = len(base_observation)
+
+        if max_pickle_size < orig_size:
+            breakpoint()
+        padded = np.append(base_observation, np.zeros(max_pickle_size - orig_size))
+        padded[-1] = orig_size
+        print('_________', type(base_observation), base_observation.shape, base_observation.dtype)
+        return padded
+        graph = pickle.loads(base_observation)
+        dgl_dataset = GraphormerDGLDataset(graphs=[graph], train_idx=np.arange(1), device='cpu')
+
+        dd = {}
+        for k, v in dgl_dataset.get_train()['x'].items():#dgl_dataset[0][0].to_dict().items():
+            dd[k] = v.cpu().numpy().astype(np.int64) if type(v) == torch.Tensor else np.array([[v]])
+            # dd[k] = v if type(v) == torch.Tensor else torch.tensor([v])#np.array([[v]])
+
+
+        print( '0____________________________', {k: v.shape for k, v in sorted(dd.items())} )
+        breakpoint()
+        return get_default_input(1)
+        return dd
+
+    # return {
+    #     f"{key}": torch.ones((1, 4))
+    #     for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']
+    # }
 
 # register perf session
 def register_env(datasets):
@@ -303,21 +350,48 @@ def register_env(datasets):
         # Vladimir: llvm auto tuners need this class. AFAIK, for dumping the opt flags combination.
         # entry_point=HPCToolkitCompilerEnv,
         entry_point="compiler_gym.service.client_service_compiler_env:ClientServiceCompilerEnv",
-        kwargs={
+        kwargs={    # check ClientServiceCompilerEnv for possible arguments
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
                 perf_reward.RewardTensor(),
                 # runtime_reward.RewardTensor()
             ],
             "datasets": [
-            #     CBenchDataset(site_data_path("llvm-v0")),
-            #     CsmithDataset(site_data_path("llvm-v0")),
-            #     CHStoneDataset(site_data_path("llvm-v0")),
-            #     hpctoolkit_dataset.Dataset(),
-            #     poj104.Dataset(),
-            #     poj104_small.Dataset(),
-            #     fbgemm_dataset.Dataset()
                 importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset() for dataset in datasets 
+            ],
+            "derived_observation_spaces": [
+                {
+                    "id": "hpctoolkit",
+                    "base_id": "hpctoolkit_pickle",
+                    "space": DictSpace(
+                        {
+                            f"{key}": Sequence(
+                                name=key, size_range=(0, None), dtype=torch.Tensor, shape=max_pickle_size #get_default_input(1)[key].shape #np.ndarray
+                            )
+                            for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']#['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
+                        },
+                        name="hpctoolkit",
+                    ),
+                    "translate": lambda base_observation: pickle_to_dict(base_observation),
+                },
+                {
+                    "id": "programl",
+                    "base_id": "programl_pickle",
+                    "space": Sequence(
+                                name='pickled', size_range=(0, None), dtype=np.int32, shape=[max_pickle_size] #get_default_input(1)[key].shape #np.ndarray
+                    ),
+                    # "space": DictSpace(
+                    #     {
+                    #         f"{key}": Sequence(
+                    #             name=key, size_range=(0, None), dtype=torch.Tensor, shape=get_default_input(1)[key].shape #np.ndarray
+                    #         )
+                    #         for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']#['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
+                    #     },
+                    #     name="programl",
+                    # ),
+                    # "default_value": np.array([]),
+                    "translate": lambda base_observation: pickle_to_dict(base_observation),
+                },
             ],
         },
     )

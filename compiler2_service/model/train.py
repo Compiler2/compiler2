@@ -14,7 +14,8 @@ For CLI options:
 $ python custom_env.py --help
 
 Reproduce results from wandb:
-$ python rllib_agent.py --iter=0 --dataset=mm64_256_16_range  --wandb_url=dejang/loop_tool_agent_split/61e41_00000 --trainer=dqn.ApexTrainer  --eval_size=25 --eval_time=60
+python compiler2_service/model/train.py --dataset=poj104_small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
+python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
 """
 import argparse
 import ast
@@ -49,10 +50,7 @@ from compiler2_service.paths import COMPILER2_ROOT
 from os.path import exists
 
 import tempfile
-# Run this with: 
-# python compiler2_service/model/train.py --dataset=poj104_small --steps=2 --wandb_url=dejang/compiler2/40200_00000 --iter=0
-# python launcher/slurm_launch.py --app=rllib_agent.py --time=300:00 -nc=80 -ng=2 --iter=5000 --dataset=mm64_256_16_range --sweep  --steps=3
-# python
+
 
 
 
@@ -80,7 +78,7 @@ parser.add_argument(
     help="Run on slurm."
 )
 parser.add_argument(
-    "--iter", type=int, default=2, help="Number of iterations to train."
+    "--iter", type=int, default=1, help="Number of iterations to train."
 )
 
 parser.add_argument(
@@ -112,10 +110,7 @@ parser.add_argument(
 )
 
 parser.add_argument(
-    "--local-mode",
-    default=False,
-    action="store_true",
-    help="Init Ray in local mode for easier debugging.",
+    "--ray-mode", type=str, choices=['local', 'non-local', 'slurm'], default='local', help="Init Ray in local, non-local, slurm  mode."
 )
 
 
@@ -145,7 +140,8 @@ if __name__ == '__main__':
         eval_size=args.eval_size,
         network=args.network, 
         sweep_count=args.sweep, 
-        eval_time=args.eval_time
+        eval_time=args.eval_time,
+        ray_mode=args.ray_mode,
     )
 
     if args.wandb_url:

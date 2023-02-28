@@ -127,6 +127,8 @@ class GraphormerTransformer(nn.Module):
 
         # Embedding + positional encoding - Out size = (batch_size, sequence length, dim_model)
         # src = self.embedding(src) * math.sqrt(self.dim_model)
+        
+        # breakpoint()
         tgt = self.embedding(tgt) * math.sqrt(self.dim_model)
         # src = self.positional_encoder(src)
         tgt = self.positional_encoder(tgt)
@@ -209,7 +211,7 @@ class GraphormerTransformer(nn.Module):
         # Get mask to mask out the next words
         sequence_length = y_input.size(1)
         tgt_mask = self.get_tgt_mask(sequence_length).to(device)
-        
+        # breakpoint()
         # Standard training except we pass in y_input and tgt_mask
         pred = self(graphs=dataloader['x'], tgt=y_input, tgt_mask=tgt_mask)
 
@@ -255,7 +257,7 @@ if __name__ == "__main__":
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
     dgl_dataset = GraphormerDGLDataset(device=device)
-
+    breakpoint()
     model = GraphormerTransformer(
         num_nodes=dgl_dataset.num_classes,
         num_classes=dgl_dataset.num_classes, 

@@ -1,0 +1,37 @@
+I0223 15:56:57.235041 140057295799296 create_and_run_compiler_gym_service.py:118] Service /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d listening on 42697, PID = 1558657
+I0223 15:56:57.338031 140051870627584 compiler_gym_service.py:105] GetSpaces()
+I0223 15:57:07.273907 140051870627584 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://poj104_small-v0/1_17), 1 active sessions
+I0223 15:57:07.274837 140051870627584 benchmark_cache.py:76] Cached benchmark benchmark://poj104_small-v0/1_17. Cache size = 707 bytes, 1 items
+I0223 15:57:07.275281 140051870627584 compiler_gym_service.py:114] StartSession(id=0, benchmark=benchmark://poj104_small-v0/1_17), 1 active sessions
+I0223 15:57:07.275397 140051870627584 example_service.py:199] Started a compilation session for benchmark://poj104_small-v0/1_17
+E0223 15:57:07.275475 140051870627584 example_service.py:203] CRITICAL - 
+
+Working_dir = /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d
+
+I0223 15:57:07.342266 140051870627584 benchmark_builder.py:171] source_filename = "/dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.c"
+
+I0223 15:57:07.342576 140051870627584 benchmark_builder.py:120] 
+ compile: 
+I0223 15:57:07.342648 140051870627584 utils.py:121] /home/dx4/.local/share/compiler_gym/llvm-v0/bin/opt --debugify -o /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.bc /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.ll
+I0223 15:57:07.342694 140051870627584 utils.py:121] /home/dx4/.local/share/compiler_gym/llvm-v0/bin/clang /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.bc -lm -o /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe
+I0223 15:57:07.342731 140051870627584 utils.py:121] /home/dx4/.local/share/compiler_gym/llvm-v0/bin/llvm-dis -o /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark_new.ll /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.bc
+I0223 15:57:07.342767 140051870627584 utils.py:125] 
+
+I0223 15:57:07.342801 140051870627584 benchmark_builder.py:122] 
+ pre_run_cmd: 
+I0223 15:57:07.342836 140051870627584 utils.py:123] []
+I0223 15:57:07.342872 140051870627584 utils.py:125] 
+
+I0223 15:57:07.342906 140051870627584 benchmark_builder.py:124] 
+ run_cmd: 
+I0223 15:57:07.342943 140051870627584 utils.py:118] /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe < /home/dx4/tools/compiler2/compiler2_service/benchmarks/poj104_small/input/in.txt
+I0223 15:57:07.342979 140051870627584 utils.py:125] 
+
+I0223 15:57:07.605940 140051870627584 example_service.py:297] Computing observation from space hpctoolkit_pickle
+I0223 15:57:07.606219 140051870627584 utils.py:121] rm -rf /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe.hpcstruct m db
+I0223 15:57:07.606268 140051870627584 utils.py:121] hpcrun -o m -t -e cycles /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe < /home/dx4/tools/compiler2/compiler2_service/benchmarks/poj104_small/input/in.txt
+I0223 15:57:07.606309 140051870627584 utils.py:121] hpcstruct -o /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe.hpcstruct /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe
+I0223 15:57:07.606346 140051870627584 utils.py:121] hpcprof-mpi -o db --metric-db yes -S /dev/shm/compiler_gym_dx4/s/0223T155654-691657-972d/benchmark.exe.hpcstruct m
+I0223 15:57:07.606382 140051870627584 utils.py:125] 
+
+W0223 15:57:12.641906 140051870627584 worker.py:1646] Failed to set SIGTERM handler, processes mightnot be cleaned up properly on exit.

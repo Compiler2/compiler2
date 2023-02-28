@@ -103,8 +103,8 @@ def make_env():
 
 
 class RLlibTrainer:
-    def __init__(self, profiler, trainer, dataset, steps, size, eval_size, network, sweep_count, eval_time, slurm=False, wandb_key_path=str(COMPILER2_ROOT) + "/wandb_key.txt") -> None:        
-        self.ray_start(slurm)
+    def __init__(self, profiler, trainer, dataset, steps, size, eval_size, network, sweep_count, eval_time, ray_mode='local', wandb_key_path=str(COMPILER2_ROOT) + "/wandb_key.txt") -> None:        
+        self.ray_start(ray_mode)
         self.wandb_dict = {}
 
         # os.environ["dataset"] = dataset
@@ -120,14 +120,14 @@ class RLlibTrainer:
         self.dataset = dataset
         self.size = size
         self.eval_size = eval_size
-        network_arch = 'action_graphormer' if profiler in ['programl', 'programl_hpctoolkit', 'hpctoolkit'] else 'mlp'
+        network_arch = 'action_graphormer' if any([profiler.startswith(xx) for xx in ['programl', 'programl_hpctoolkit', 'hpctoolkit']]) else 'mlp'
         self.network = getattr(importlib.import_module(f"compiler2_service.model.{network_arch}.my_net"), network)
         self.wandb_dict['network'] = network
         self.wandb_project_url = str(os.environ['WANDB_PROJECT_URL']) # format username/project_name
         self.wandb_project_name = self.wandb_project_url.split('/')[1]
         self.env = make_env()
-        breakpoint()
-        ray.rllib.utils.check_env(self.env)
+        # breakpoint()
+        # ray.rllib.utils.check_env(self.env)
 
         self.reward = list(self.env.reward.spaces.keys())[0]
         self.my_artifacts = Path(f'{COMPILER2_ROOT}/results/perf/{time.strftime("%Y%m%d-%H%M%S")}') #Path(tempfile.mkdtemp()) # Dir to download and upload files. Has start, end subdirectories
@@ -135,7 +135,6 @@ class RLlibTrainer:
         self.my_artifacts_end = self.my_artifacts/'end'
         self.my_artifacts_results = self.my_artifacts/'results'
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        self.slurm = slurm
         self.wandb_key_path = wandb_key_path
         self.checkpoint_path = None
         self.policy_model = None
@@ -193,18 +192,21 @@ class RLlibTrainer:
         tune.register_env("compiler_gym", make_training_env)
 
 
-    def ray_start(self, slurm):
+    def ray_start(self, ray_mode):
         if ray.is_initialized(): ray.shutdown()
         
-        if slurm:
+        if ray_mode == 'slurm':
             ray_address = os.environ["RAY_ADDRESS"] if "RAY_ADDRESS" in os.environ else "auto"
             head_node_ip = os.environ["HEAD_NODE_IP"] if "HEAD_NODE_IP" in os.environ else "127.0.0.1"
             redis_password = os.environ["REDIS_PASSWORD"] if "REDIS_PASSWORD" in os.environ else "5241590000000000"
             print('SLURM options: ', ray_address, head_node_ip, redis_password)
             ray.init(address=ray_address, _node_ip_address=head_node_ip, _redis_password=redis_password)    
-        else:
+        elif ray_mode == 'local':
+            ray.init(local_mode=True, ignore_reinit_error=True)
+        elif ray_mode == 'non-local':
             ray.init(local_mode=False, ignore_reinit_error=True)
-
+        else:
+            print('Ray mode must be: slurm, local, non-local')
 
     def load_model(self, wandb_url):
         try:
@@ -279,6 +281,7 @@ class RLlibTrainer:
         else: 
             breakpoint()
 
+        breakpoint()
         return self.get_agent(trial_config=trial.config, checkpoint_path_str=str(trial.checkpoint.value), trial_id=trial.trial_id) # .value -> .dir_or_data for ray 2.1
 
 

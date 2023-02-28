@@ -16,6 +16,7 @@ import benchmark_builder, search
 from profilers import hpctoolkit, perf, programl, programl_hpctoolkit, runtime
 import json
 
+import compiler_gym
 import compiler_gym.third_party.llvm as llvm
 from compiler_gym import site_data_path
 from compiler_gym.service import CompilationSession
@@ -30,6 +31,7 @@ from compiler_gym.service.proto import (
     SendSessionParameterReply,
     ByteSequenceSpace,
     BytesSequenceSpace,
+    DictSpace,
     Int64Range,
     CommandlineSpace,
     StringSpace,
@@ -38,6 +40,8 @@ from compiler_gym.service.proto import (
     DoubleTensor,
     FloatRange
 )
+from compiler_gym.spaces import Scalar
+
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
 import utils
@@ -148,19 +152,19 @@ class HPCToolkitCompilationSession(CompilationSession):
             ),
         ),
         ObservationSpace(
-            name="hpctoolkit",
-            space=Space(
-                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
-            ),
-        ),        
-        ObservationSpace(
-            name="programl",
+            name="hpctoolkit_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
         ),
         ObservationSpace(
-            name="programl_hpctoolkit",
+            name="programl_pickle",
+            space=Space(
+                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
+        ),
+        ObservationSpace(
+            name="programl_hpctoolkit_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
@@ -316,6 +320,12 @@ class HPCToolkitCompilationSession(CompilationSession):
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              
+            
+            elif observation_space.name == "perf_dict":
+                self.profiler = perf.ProfilerDict(observation_space.name,
+                                                    self.benchmark.run_cmd,
+                                                    self.timeout_sec)                                              
+            
 
             elif observation_space.name == "perf_cycles":
                 self.profiler = perf.CycleProfiler(observation_space.name,
@@ -329,19 +339,19 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
             
-            elif observation_space.name == "hpctoolkit":
+            elif observation_space.name == "hpctoolkit_pickle":
                 self.profiler = hpctoolkit.ProfilerDGL(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl":
+            elif observation_space.name == "programl_pickle":
                 self.profiler = programl.Profiler(observation_space.name,
                                                   self.benchmark.run_cmd,
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_hpctoolkit":
+            elif observation_space.name == "programl_hpctoolkit_pickle":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
                                                              self.timeout_sec,

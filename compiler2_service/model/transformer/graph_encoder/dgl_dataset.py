@@ -167,7 +167,10 @@ class GraphormerDGLDataset(Dataset):
         test_idx=None,
     ):
         if graphs is None:
-            self.graphs, self.labels = self.random_dataset(8)
+            self.graphs, self.labels = self.random_dataset(32)
+        elif labels is None:
+            self.graphs = graphs
+            self.labels = [[0, 0]] * len(graphs)
         else:
             self.graphs, self.labels = graphs, labels
         
@@ -222,8 +225,11 @@ class GraphormerDGLDataset(Dataset):
             size = len(dataset)
 
         xy = self.remove_large_graphs(dataset, max_node=512)[:size]
-        x, y = zip(*xy)
-
+        try:
+            x, y = zip(*xy)
+        except:
+            breakpoint()
+            
         y = torch.stack(y)
         return {'x':collator(x, device=self.device), 'y':y.clone().detach().to(self.device)}
 
@@ -368,8 +374,8 @@ class GraphormerDGLDataset(Dataset):
         for G in graphs:
             G.ndata['x'] = torch.ones((len(G.nodes()), 2)) # set nodes features
 
-        graphs *= 10
-        labels *= 10
+        graphs *= 20
+        labels *= 20
 
         return graphs[:num], labels[:num]
 

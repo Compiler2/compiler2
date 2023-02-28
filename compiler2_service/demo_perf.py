@@ -39,28 +39,6 @@ from compiler_gym.service.connection import ServiceError
 import compiler2_service
 
 
-from agent_py.rewards import perf_reward
-from compiler2_service.agent_py.datasets import hpctoolkit_cpu
-
-# def register_env():
-#     register(
-#         id="compiler2-v0",
-#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
-#         kwargs={
-#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-#             "rewards": [perf_reward.RewardPickle()],
-#             "datasets": [
-#                 hpctoolkit_dataset.Dataset(),
-#                 CBenchDataset(site_data_path("llvm-v0")),
-#                 CsmithDataset(site_data_path("llvm-v0"), sort_order=0),
-#                 NPBDataset(site_data_path("llvm-v0"), sort_order=0),
-#                 BlasDataset(site_data_path("llvm-v0"), sort_order=0),
-#                 AnghaBenchDataset(site_data_path("llvm-v0"), sort_order=0),
-#                 CHStoneDataset(site_data_path("llvm-v0"), sort_order=0),
-#             ],
-#         },
-#     )
-
 
 def main():
     # Use debug verbosity to print out extra logging information.
@@ -85,8 +63,10 @@ def main():
                         action=env.action_space.sample(),
                         observation_spaces=["perf"],
                         reward_spaces=["perf"],
+                        # timeout=5,
                     )
                 except ServiceError:
+                    breakpoint()
                     print("AGENT: Timeout Error Step")
                     continue
 
