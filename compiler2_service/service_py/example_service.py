@@ -65,7 +65,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             space=Space(
                 named_discrete=NamedDiscreteSpace(
                     # Use all flags from the llvm_env.
-                    name=llvm_env.action_space.flags,
+                    name=llvm_env.action_space.flags[:2],
                     # Interpret NamedDiscrete as CommandLine.
                     # is_commandline=True
                 )
@@ -73,6 +73,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         ),
     ]
     blacklisted_actions = [
+        # 'start',
         "-insert-gcov-profiling"
     ]
 
@@ -276,7 +277,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             logging.info(f"Info: action {self.blacklisted_actions} is blacklisted")
             action_had_no_effect = True
         else:
-            logging.info(
+            print(
                 f"Applying action {choice_index}, equivalent command-line arguments: '{opt}'"
             )
 

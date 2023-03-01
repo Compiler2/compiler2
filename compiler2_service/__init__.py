@@ -322,7 +322,7 @@ def pickle_to_dict(base_observation):
             breakpoint()
         padded = np.append(base_observation, np.zeros(max_pickle_size - orig_size))
         padded[-1] = orig_size
-        print('_________', type(base_observation), base_observation.shape, base_observation.dtype)
+        # print('_________', type(base_observation), base_observation.shape, base_observation.dtype)
         return padded
         graph = pickle.loads(base_observation)
         dgl_dataset = GraphormerDGLDataset(graphs=[graph], train_idx=np.arange(1), device='cpu')

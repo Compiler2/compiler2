@@ -5,7 +5,7 @@ def get_config(profiler, sweep=False):
     hiddens_layers = [10, 15]
     hiddens_width = [500, 1000]
     num_workers = int(ray.cluster_resources()['CPU']  - 10)
-    rollout_fragment_length = 3
+    rollout_fragment_length = 5
     return {
         "log_level": "CRITICAL",
         "env": "compiler_gym", 
@@ -17,6 +17,7 @@ def get_config(profiler, sweep=False):
             # '_disable_action_flattening': True,
             'custom_model': 'my_model',
             "custom_model_config": {'a': 4},
+            "attention_use_n_prev_actions": 5,
             # "custom_action_dist": None,
             # "vf_share_layers": True,
             # "fcnet_hiddens": ray.tune.choice([ [w] * l for w in hiddens_width for l in hiddens_layers ]) if sweep else [100] * 4,

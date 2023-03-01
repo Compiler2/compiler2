@@ -8,6 +8,8 @@ from compiler2_service.model.transformer.graphormer_transformer import Graphorme
 import numpy as np
 import pickle
 
+from ray.rllib.policy.view_requirement import ViewRequirement
+
 
 torch, nn = try_import_torch()
 
@@ -37,7 +39,25 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             dropout_p=0.1,
         )#.to(self.device)
 
+        self.use_n_prev_actions = model_config["attention_use_n_prev_actions"]
+        print(self.use_n_prev_actions)
+        self.action_dim = 0
 
+        # Add prev-action/reward nodes to input to LSTM.
+        if self.use_n_prev_actions:
+            self.num_outputs += self.use_n_prev_actions * self.action_dim
+
+        if self.use_n_prev_actions:
+            self.view_requirements['prev_actions'] = ViewRequirement(
+                'actions',
+                space=self.action_space,
+                shift="-{}:-1".format(self.use_n_prev_actions),
+            )
+
+        self.prev_actions_num = -1
+
+    def get_default_actions(self, batch_size=32):
+        return torch.zeros((batch_size, 1), dtype=torch.int64)
 
     def get_default_input(self, batch_size=32):
         return {
@@ -53,20 +73,21 @@ class TorchCustomModel(TorchModelV2, nn.Module):
     }
 
     def forward(self, input_dict, state, seq_lens):
+        self.device = next(self.parameters()).device
+
         # print( '1____________________________', {k: v.shape for k, v in sorted(input_dict['obs'].items())} )
         batch_size = input_dict['obs'].shape[0]
-
-        print(batch_size, input_dict.keys())
-        # if 'prev_actions' in input_dict.keys():
-        #     breakpoint()
+        # print(self.device)
+        # print(batch_size, input_dict.keys(), f"Prev_actions: {input_dict['prev_actions'] if  'prev_actions' in input_dict else ''}")
 
         # breakpoint()
         if not input_dict['obs'].any():
-            print('DEFAULT INPUT *******************')
+            # print('DEFAULT INPUT *******************')
             input_obs_dict = self.get_default_input(batch_size)
         else:
-            print('REAL INPUT *******************')
+            # print('REAL INPUT *******************')
             pickle_tensor = np.array(input_dict['obs'].numpy(), dtype=np.int32)
+            # if batch_size > 1: breakpoint()
 
             graphs = np.apply_along_axis(
                 lambda row: pickle.loads(row[:row[-1]].astype(np.int8)), 
@@ -74,13 +95,23 @@ class TorchCustomModel(TorchModelV2, nn.Module):
                 arr=pickle_tensor
             )
 
-            dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(1), device='cpu')
+            dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(batch_size), device=self.device)
             input_obs_dict = dgl_dataset.get_train()['x']
             
+        
+        if 'prev_actions' in input_dict:
+            # Skip the first time, and rstrip self.prev_actions_num + 1 actions
+            if self.prev_actions_num == -1:
+                actions = self.get_default_actions(batch_size)
+            else:
+                actions = input_dict['prev_actions'] [:,-(self.prev_actions_num + 1):] + 1 # put offset for Start token
+            self.prev_actions_num += 1
+        else: 
+            actions = self.get_default_actions(batch_size)
+            self.prev_actions_num = -1
 
-        actions = torch.tensor([[0, 1, 3, 4, 5]], device='cpu')
-        self.device = next(self.parameters()).device
-        print(self.device)
+
+        # print(self.prev_actions_num, actions)
 
         sequence_length = actions.size(1)
         tgt_mask = self.torch_sub_model.get_tgt_mask(sequence_length).to(self.device)
@@ -90,16 +121,9 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
         # Standard training except we pass in y_input and tgt_mask
         fc_out = self.torch_sub_model(graphs=input_obs_dict, tgt=tgt, tgt_mask=tgt_mask)
-        # breakpoint()
 
         fc_out = fc_out[0, :, :] # take just first token
         fc_out = fc_out.expand(batch_size, -1)
-        # print('2_______________________________________________________________________________________________________________')
-
-        # input_dict["obs"] = input_dict["obs"].float()
-
-        # fc_out, _ = self.torch_sub_model(input_dict, state, seq_lens)
-        # breakpoint()
         
         return fc_out, []
 
