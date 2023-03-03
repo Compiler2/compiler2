@@ -62,7 +62,7 @@ def main():
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
                         observation_spaces=["perf"],
-                        reward_spaces=["perf"],
+                        reward_spaces=["perf_cycles"],
                         # timeout=5,
                     )
                 except ServiceError:

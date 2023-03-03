@@ -118,39 +118,44 @@ class GraphormerTransformer(nn.Module):
         self.decoder = nn.TransformerDecoder(decoder_layer, num_decoder_layers, decoder_norm)
 
 
+        self.transformer_out = None
+        self.value_model = nn.Sequential(nn.Linear(in_features=dim_model, out_features=1))
 
         self.out = nn.Linear(dim_model, num_classes)
         
     def forward(self, graphs, tgt, tgt_mask=None, tgt_pad_mask=None):
-        # Src size must be (batch_size, src sequence length)
         # Tgt size must be (batch_size, tgt sequence length)
 
-        # Embedding + positional encoding - Out size = (batch_size, sequence length, dim_model)
-        # src = self.embedding(src) * math.sqrt(self.dim_model)
-        
-        # breakpoint()
-        tgt = self.embedding(tgt) * math.sqrt(self.dim_model)
-        # src = self.positional_encoder(src)
+        try:        
+            tgt = self.embedding(tgt) * math.sqrt(self.dim_model)
+        except:
+            breakpoint()
+
         tgt = self.positional_encoder(tgt)
         
         # We could use the parameter batch_first=True, but our KDL version doesn't support it yet, so we permute
         # to obtain size (sequence length, batch_size, dim_model),
-
-        # src = src.permute(1,0,2)
         tgt = tgt.permute(1,0,2)
 
         inner_states, graph_rep = self.encoder(graphs)
         
         memory = inner_states[-1]
-        transformer_out = self.decoder(tgt, memory, tgt_mask=tgt_mask)
+        self.transformer_out = self.decoder(tgt, memory, tgt_mask=tgt_mask)
         
         # # Transformer blocks - Out size = (sequence length, batch_size, num_tokens)
         # transformer_out = self.transformer(src, tgt, tgt_mask=tgt_mask, src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=tgt_pad_mask)
         
-        out = self.out(transformer_out)
+        out = self.out(self.transformer_out)
         
         return out
       
+    def value_function(self):
+        assert self.transformer_out is not None, "must call forward() first"
+        val_out = self.value_model(self.transformer_out[0, :, :]).squeeze(1)  # take just first token 
+        return torch.reshape(val_out, [-1])
+
+
+
     def get_tgt_mask(self, size) -> torch.tensor:
         # Generates a squeare matrix where the each row allows one word more to be seen
         mask = torch.tril(torch.ones(size, size) == 1) # Lower triangular matrix

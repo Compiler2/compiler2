@@ -81,7 +81,7 @@ def make_env():
         "compiler2-v0",
         datasets=[os.environ["dataset"]],
         observation_space=os.environ["obs_space"],#"perf",
-        reward_space="perf",
+        reward_space="perf_cycles",
     )
 
     env = TimeLimit(env, max_episode_steps=int(os.environ["steps"])) # <<<< Must be here
@@ -204,7 +204,7 @@ class RLlibTrainer:
         elif ray_mode == 'local':
             ray.init(local_mode=True, ignore_reinit_error=True)
         elif ray_mode == 'non-local':
-            ray.init(local_mode=False, ignore_reinit_error=True)
+            ray.init(local_mode=False, num_gpus=1, object_store_memory=100 * 1024 * 1024, ignore_reinit_error=True)
         else:
             print('Ray mode must be: slurm, local, non-local')
 
@@ -260,11 +260,12 @@ class RLlibTrainer:
             restore=self.checkpoint_path,
             metric="episode_reward_mean", # "final_performance",
             mode="max",
-            reuse_actors=False,
-            checkpoint_freq=10,
+            # checkpoint_freq=10,
             checkpoint_at_end=True,
             num_samples=max(1, sweep_count),
-            stop={'training_iteration': train_iter, 'episode_reward_mean': stop_reward},   
+            stop={'training_iteration': train_iter, 'episode_reward_mean': stop_reward, 'timesteps_total': 1},   
+            fail_fast=True,
+            reuse_actors=True,
             callbacks=[
                 # MyCallback(self),
                 WandbLoggerCallback(

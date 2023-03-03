@@ -324,24 +324,7 @@ def pickle_to_dict(base_observation):
         padded[-1] = orig_size
         # print('_________', type(base_observation), base_observation.shape, base_observation.dtype)
         return padded
-        graph = pickle.loads(base_observation)
-        dgl_dataset = GraphormerDGLDataset(graphs=[graph], train_idx=np.arange(1), device='cpu')
 
-        dd = {}
-        for k, v in dgl_dataset.get_train()['x'].items():#dgl_dataset[0][0].to_dict().items():
-            dd[k] = v.cpu().numpy().astype(np.int64) if type(v) == torch.Tensor else np.array([[v]])
-            # dd[k] = v if type(v) == torch.Tensor else torch.tensor([v])#np.array([[v]])
-
-
-        print( '0____________________________', {k: v.shape for k, v in sorted(dd.items())} )
-        breakpoint()
-        return get_default_input(1)
-        return dd
-
-    # return {
-    #     f"{key}": torch.ones((1, 4))
-    #     for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']
-    # }
 
 # register perf session
 def register_env(datasets):
@@ -353,7 +336,7 @@ def register_env(datasets):
         kwargs={    # check ClientServiceCompilerEnv for possible arguments
             "service": COMPILER2_SERVICE_PY,
             "rewards": [
-                perf_reward.RewardTensor(),
+                perf_reward.RewardCycles(),
                 # runtime_reward.RewardTensor()
             ],
             "datasets": [
@@ -380,16 +363,6 @@ def register_env(datasets):
                     "space": Sequence(
                                 name='pickled', size_range=(0, None), dtype=np.int32, shape=[max_pickle_size] #get_default_input(1)[key].shape #np.ndarray
                     ),
-                    # "space": DictSpace(
-                    #     {
-                    #         f"{key}": Sequence(
-                    #             name=key, size_range=(0, None), dtype=torch.Tensor, shape=get_default_input(1)[key].shape #np.ndarray
-                    #         )
-                    #         for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']#['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
-                    #     },
-                    #     name="programl",
-                    # ),
-                    # "default_value": np.array([]),
                     "translate": lambda base_observation: pickle_to_dict(base_observation),
                 },
             ],

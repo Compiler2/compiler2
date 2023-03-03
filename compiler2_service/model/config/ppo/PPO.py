@@ -4,8 +4,8 @@ import os
 def get_config(profiler, sweep=False):
     hiddens_layers = [10, 15]
     hiddens_width = [500, 1000]
-    num_workers = int(ray.cluster_resources()['CPU']  - 10)
-    rollout_fragment_length = 3
+    num_workers = int(ray.cluster_resources()['CPU']  - 10) // 2
+    rollout_fragment_length = 10
     return {
         "log_level": "CRITICAL",
         "env": "compiler_gym", 
@@ -17,6 +17,7 @@ def get_config(profiler, sweep=False):
             # '_disable_action_flattening': True,
             'custom_model': 'my_model',
             "custom_model_config": {'a': 4},
+            "attention_use_n_prev_actions": 5,
             # "custom_action_dist": None,
             # "vf_share_layers": True,
             # "fcnet_hiddens": ray.tune.choice([ [w] * l for w in hiddens_width for l in hiddens_layers ]) if sweep else [100] * 4,
@@ -32,6 +33,8 @@ def get_config(profiler, sweep=False):
         'num_workers': num_workers,
         "rollout_fragment_length": rollout_fragment_length, 
         "train_batch_size": num_workers * rollout_fragment_length, # train_batch_size == num_workers * rollout_fragment_length
+        "sgd_minibatch_size": num_workers * rollout_fragment_length,
+        "num_sgd_iter":30,
         "explore": True,
         "gamma": ray.tune.uniform(0.9, 0.99) if sweep else 0.95,
         "lr": ray.tune.uniform(1e-6, 1e-8) if sweep else 1e-6,        

@@ -27,11 +27,10 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         #     obs_space, action_space, num_outputs, model_config, name
         # )
 
-        
         # self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.torch_sub_model = GraphormerTransformer(                    
             num_nodes=800,
-            num_classes=256,
+            num_classes=action_space.n, # we are adding 'start' action
             dim_model=64,
             num_heads=8,
             num_encoder_layers=1,
@@ -39,8 +38,9 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             dropout_p=0.1,
         )#.to(self.device)
 
+        self.fc_out = None
         self.use_n_prev_actions = model_config["attention_use_n_prev_actions"]
-        print(self.use_n_prev_actions)
+        # print(self.use_n_prev_actions)
         self.action_dim = 0
 
         # Add prev-action/reward nodes to input to LSTM.
@@ -86,7 +86,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             input_obs_dict = self.get_default_input(batch_size)
         else:
             # print('REAL INPUT *******************')
-            pickle_tensor = np.array(input_dict['obs'].numpy(), dtype=np.int32)
+            pickle_tensor = np.array(input_dict['obs'].cpu().numpy(), dtype=np.int32)
             # if batch_size > 1: breakpoint()
 
             graphs = np.apply_along_axis(
@@ -104,7 +104,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             if self.prev_actions_num == -1:
                 actions = self.get_default_actions(batch_size)
             else:
-                actions = input_dict['prev_actions'] [:,-(self.prev_actions_num + 1):] + 1 # put offset for Start token
+                actions = input_dict['prev_actions'] [:,-(self.prev_actions_num + 1):] # put offset for Start token
             self.prev_actions_num += 1
         else: 
             actions = self.get_default_actions(batch_size)
@@ -128,10 +128,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         return fc_out, []
 
     def value_function(self):
-        breakpoint()
-        return torch.zeros([31])
-        return torch.reshape(self.torch_sub_model_default.value_function(), [-1])
-
+        return self.torch_sub_model.value_function()
 
 
 # from gym.spaces import Dict

@@ -65,7 +65,7 @@ class HPCToolkitCompilationSession(CompilationSession):
             space=Space(
                 named_discrete=NamedDiscreteSpace(
                     # Use all flags from the llvm_env.
-                    name=llvm_env.action_space.flags[:2],
+                    name=['start'] + llvm_env.action_space.flags[:2],
                     # Interpret NamedDiscrete as CommandLine.
                     # is_commandline=True
                 )
@@ -73,7 +73,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         ),
     ]
     blacklisted_actions = [
-        # 'start',
+        'start',
         "-insert-gcov-profiling"
     ]
 
@@ -269,6 +269,7 @@ class HPCToolkitCompilationSession(CompilationSession):
 
         choice_index = action.int64_value
         if choice_index < 0 or choice_index >= num_choices:
+            breakpoint()
             raise ValueError("Out-of-range")
 
         # Compile benchmark with given optimization
