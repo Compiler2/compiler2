@@ -209,14 +209,16 @@ class RLlibTrainer:
             print('Ray mode must be: slurm, local, non-local')
 
     def load_model(self, wandb_url):
+        breakpoint()
         try:
             api = wandb.Api()
             wandb_run = api.run(wandb_url)
             self.wandb_dict['wandb_start'] = wandb_url
             self.checkpoint_start = wandb_run.summary
             self.checkpoint_path = f"{self.my_artifacts_start}/{self.checkpoint_start['checkpoint']}"
-            self.config['model']['fcnet_hiddens'] = [self.checkpoint_start['layers_width']] * self.checkpoint_start['layers_num']
-
+            if 'layers_width' in self.checkpoint_start:
+                self.config['model']['fcnet_hiddens'] = [self.checkpoint_start['layers_width']] * self.checkpoint_start['layers_num']
+            
             for f in wandb_run.files(): 
                 if f.name.startswith('checkpoint'):
                     f.download(root=self.my_artifacts_start, replace=True)
@@ -283,16 +285,20 @@ class RLlibTrainer:
             breakpoint()
 
         breakpoint()
-        return self.get_agent(trial_config=trial.config, checkpoint_path_str=str(trial.checkpoint.value), trial_id=trial.trial_id) # .value -> .dir_or_data for ray 2.1
+        return self.get_agent(trial_config=trial.config, checkpoint_path_str=str(trial.checkpoint.dir_or_data), trial_id=trial.trial_id) # .value -> .dir_or_data for ray 2.1
 
 
     def get_agent(self, trial_config, checkpoint_path_str, trial_id=None):
                 
         trial_config["explore"] = False
-        self.agent = self.trainer(
-            env="compiler_gym",
-            config=trial_config
-        )
+        breakpoint()
+        self.agent = self.trainer.get_default_config() \
+                        .from_dict(trial_config) \
+                        .build(env='compiler_gym')
+        # self.agent = self.trainer( 
+        #     env="compiler_gym",
+        #     config=trial_config
+        # )
 
         self.agent.restore(checkpoint_path_str)
 
@@ -308,13 +314,13 @@ class RLlibTrainer:
             self.wandb_dict['layers_num'] = len(config['model']['fcnet_hiddens'])
             self.wandb_dict['layers_width'] = config['model']['fcnet_hiddens'][0]
         
-        self.wandb_dict['checkpoint'] = os.path.relpath(checkpoint_path, checkpoint_path.parent.parent)
+        self.wandb_dict['checkpoint'] = os.path.relpath(checkpoint_path, checkpoint_path.parent)#.parent)
 
         # Save policy and checkpoint for wandb
-        policy_path = self.my_artifacts_end/trial_id/'policy_model.pt'
-        os.makedirs(policy_path.parent)
-        my_artifacts_checkpoint_dir = self.my_artifacts_end/trial_id/checkpoint_path.parent.name
-        shutil.copytree(checkpoint_path.parent, my_artifacts_checkpoint_dir)
+        policy_path = self.my_artifacts_end/trial_id#/'policy_model.pt'
+        os.makedirs(policy_path)#.parent)
+        my_artifacts_checkpoint_dir = self.my_artifacts_end/trial_id/checkpoint_path.name # parent.
+        shutil.copytree(checkpoint_path, my_artifacts_checkpoint_dir)
         with open(my_artifacts_checkpoint_dir/'config.json', "w") as f: json.dump(config, f)
 
         self.send_to_wandb(wandb_run_id=f'{self.wandb_project_url}/{trial_id}', wandb_dict=self.wandb_dict, path=self.my_artifacts_end/trial_id)

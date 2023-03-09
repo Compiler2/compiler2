@@ -41,7 +41,7 @@ class Evaluator:
         
         self.df = pd.DataFrame()
         for benchmark in tqdm(sorted(benchmarks)):
-            df_single = self.evaluate_single_benchmark(env, agent, benchmark, profiler + '_tensor')
+            df_single = self.evaluate_single_benchmark(env, agent, benchmark, profiler) #+ '_tensor')
             self.df = pd.concat([self.df, df_single], axis=0)
 
         self.df.to_csv(csv_file)
@@ -110,8 +110,8 @@ class Evaluator:
         obs = env.observation[observation]
 
         for i in range(self.steps):
-            feature_vector = torch.Tensor(obs).unsqueeze(0)
-            a_id = agent.compute_action(feature_vector)
+            # feature_vector = torch.Tensor(obs).unsqueeze(0)
+            a_id = agent.compute_single_action(obs)
             obs, reward, done, info = env.step(a_id)
 
             action = env.action_space.to_string(a_id)

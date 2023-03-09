@@ -12,7 +12,7 @@ from typing import List
 import logging
 
 
-MAX_PICKLE_SIZE = int(80e3)
+MAX_PICKLE_SIZE = int(40e3)
 
 
 
