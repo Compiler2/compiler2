@@ -140,20 +140,13 @@ class Profiler:
         return g_dgl
 
 
+from compiler2_service.service_py.utils import to_int64_tensor
 
 class ProfilerDGL(Profiler):
     def get_observation(self) -> Event:        
         g_hatchet = self.hatchet_get_graph()
         dgl_graph = self.hatchet_to_dgl(g_hatchet)
-        pickled = pickle.dumps(dgl_graph)
-        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
-
-from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
-
-class ProfilerDGLDict(Profiler):
-    def get_observation(self) -> Event:        
-        g_hatchet = self.hatchet_get_graph()
-        dgl_graph = self.hatchet_to_dgl(g_hatchet)
-        pickled = pickle.dumps(dgl_graph)
-        return Event(event_dict=DictEvent(shape=[len(pickled)], value=pickled))
+        # pickled = pickle.dumps(dgl_graph)
+        # return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+        return Event(int64_tensor=to_int64_tensor(dgl_graph))
     

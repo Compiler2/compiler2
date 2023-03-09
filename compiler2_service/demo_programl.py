@@ -26,17 +26,9 @@ import compiler2_service
 
 from agent_py.rewards import programl_reward, perf_reward
 from compiler2_service.agent_py.datasets import hpctoolkit_cpu
+from compiler2_service.service_py.utils import from_int64_tensor
 
-# def register_env():
-#     register(
-#         id="compiler2-v0",
-#         entry_point=compiler2_service.HPCToolkitCompilerEnv,
-#         kwargs={
-#             "service": compiler2_service.paths.COMPILER2_SERVICE_PY,
-#             "rewards": [ perf_reward.RewardTensor(), programl_reward.RewardPickle()],
-#             "datasets": [hpctoolkit_dataset.Dataset()],
-#         },
-#     )
+
 
 
 def main():
@@ -70,9 +62,7 @@ def main():
             print(reward)
             print(info)
             breakpoint()
-            aa = observation[0][0]
-            bb = aa[:aa[-1]].astype(np.int8)
-            g = pickle.loads(bb)
+            g = from_int64_tensor(observation[0])
             print(g.nodes())
             
 

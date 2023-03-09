@@ -175,8 +175,10 @@ class GraphormerDGLDataset(Dataset):
             self.graphs, self.labels = graphs, labels
         
         self.labels = torch.tensor(self.labels, device=device)
-        self.tokens = self.labels.size(1)
-
+        try:
+            self.tokens = self.labels.size(1)
+        except:
+            breakpoint()
 
         self.device = device
         self.num_classes = torch.max(self.labels).item() + 1

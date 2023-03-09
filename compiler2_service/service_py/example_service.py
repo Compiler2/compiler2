@@ -46,7 +46,7 @@ from compiler_gym.spaces import Scalar
 
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
-from compiler2_service.service_py.utils import MAX_PICKLE_SIZE
+from compiler2_service.service_py.utils import MAX_PICKLE64_SIZE
 import signal
 import sys
 import time
@@ -147,6 +147,20 @@ class HPCToolkitCompilationSession(CompilationSession):
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
+        ),
+        ObservationSpace(
+            name="hpctoolkit",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
+            ),
         ),        
         ObservationSpace(
             name="hpctoolkit_hatchet",
@@ -170,14 +184,28 @@ class HPCToolkitCompilationSession(CompilationSession):
             name="programl",
             space=Space(
                 int64_box=Int64Box(
-                    low = Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[-sys.maxsize] * MAX_PICKLE_SIZE),
-                    high = Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[sys.maxsize] * MAX_PICKLE_SIZE),
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
                 )
             ),
             deterministic=True,
             platform_dependent=False,
             default_observation=Event(
-                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[0] * MAX_PICKLE_SIZE),
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
+            ),
+        ),
+        ObservationSpace(
+            name="programl_hpctoolkit",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[-sys.maxsize] * MAX_PICKLE64_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[sys.maxsize] * MAX_PICKLE64_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
             ),
         ),
         ObservationSpace(
@@ -357,7 +385,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
             
-            elif observation_space.name == "hpctoolkit_pickle":
+            elif observation_space.name == "hpctoolkit": #_pickle":
                 self.profiler = hpctoolkit.ProfilerDGL(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
@@ -369,7 +397,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_hpctoolkit_pickle":
+            elif observation_space.name == "programl_hpctoolkit": #_pickle":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
                                                              self.timeout_sec,

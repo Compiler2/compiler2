@@ -30,6 +30,8 @@ import compiler2_service
 from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
 from compiler2_service.model.transformer.graphormer_encoder import GraphormerEncoder
 from compiler2_service.model.transformer.graphormer_transformer import GraphormerTransformer
+from compiler2_service.service_py.utils import from_int64_tensor
+
 
 pd.set_option("display.max_columns", None)
 
@@ -88,16 +90,16 @@ def main():
             for i in range(2):
                 print("Main: step = ", i)
                 try:
-                    action = 76
-                    while action in [9, 13, 23, 31, 45, 46, 62, 65, 76, 70, 71, 99, 102, 106, 107, 120]:
+                    action = 9
+                    while action in [0, 9, 13, 23, 31, 45, 46, 62, 65, 76, 70, 71, 99, 102, 106, 107, 120]:
                         action = env.action_space.sample() 
 
                     print(f'{action}-----------------------------------------------------')
 
                     observation, reward, done, info = env.step(
                         action=action,
-                        observation_spaces=["programl_hpctoolkit_pickle"],
-                        reward_spaces=["perf"],
+                        observation_spaces=["programl_hpctoolkit"],
+                        reward_spaces=["perf_cycles"],
                     )
                 except:
                     print("AGENT: Timeout Error Step")
@@ -105,9 +107,10 @@ def main():
                 
                 actions.append(action + 2) # + 2 for start/end token
                 print(reward)
-                g = pickle.loads(observation[0])
-                # print(g)
-                # print(g.ndata['x'])
+
+                g = from_int64_tensor(observation[0])
+                print(g)
+
 
                 dataset["graphs"].append(g)
                 dataset["labels"].append(actions)
@@ -116,13 +119,10 @@ def main():
         
 
     dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
-    # with open('dgl.pkl', 'rb') as handle: dgl_dataset = pickle.load(handle)    
     
     train_data = dgl_dataset.get_train()
     valid_data = dgl_dataset.get_valid()
     
-    # with open('dgl.pkl', 'wb') as handle: pickle.dump(dgl_dataset, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
 
     if args.arch == 'encoder':
         model = GraphormerEncoder(

@@ -209,7 +209,6 @@ class RLlibTrainer:
             print('Ray mode must be: slurm, local, non-local')
 
     def load_model(self, wandb_url):
-        breakpoint()
         try:
             api = wandb.Api()
             wandb_run = api.run(wandb_url)
@@ -284,14 +283,12 @@ class RLlibTrainer:
         else: 
             breakpoint()
 
-        breakpoint()
         return self.get_agent(trial_config=trial.config, checkpoint_path_str=str(trial.checkpoint.dir_or_data), trial_id=trial.trial_id) # .value -> .dir_or_data for ray 2.1
 
 
     def get_agent(self, trial_config, checkpoint_path_str, trial_id=None):
                 
         trial_config["explore"] = False
-        breakpoint()
         self.agent = self.trainer.get_default_config() \
                         .from_dict(trial_config) \
                         .build(env='compiler_gym')

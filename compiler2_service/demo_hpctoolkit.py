@@ -26,6 +26,7 @@ from compiler2_service.model.transformer.graph_encoder.dgl_dataset import Grapho
 from compiler2_service.model.transformer.graphormer_encoder import GraphormerEncoder
 from compiler2_service.model.transformer.graphormer_transformer import GraphormerTransformer
 from compiler2_service.agent_py.rewards import hpctoolkit_reward
+from compiler2_service.service_py.utils import from_int64_tensor
 
 
 
@@ -105,6 +106,10 @@ def main():
                     gf = pickle.loads(observation[0])
                     print(gf.tree(metric_column=reward_metric))
                     print(gf.dataframe[[reward_metric, "line", "llvm_ins"]])
+                elif observation_spaces == 'hpctoolkit':
+                    dgl = from_int64_tensor(observation[0])
+                    print(dgl)
+
                 else:
                     dgl = pickle.loads(observation[0])
                     print(dgl)

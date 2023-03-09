@@ -10,10 +10,36 @@ from signal import Signals
 from subprocess import Popen, run
 from typing import List
 import logging
+import numpy as np
+import pickle
+
+from compiler_gym.service.proto import (
+    Int64Tensor
+)
+
+MAX_PICKLE64_SIZE = int(5e3)
+MAX_PICKLE8_SIZE = MAX_PICKLE64_SIZE * 8
 
 
-MAX_PICKLE_SIZE = int(40e3)
+def to_int64_tensor(object):
+    pickled = pickle.dumps(object)
+    base_observation = np.frombuffer(pickled, dtype=np.int8)
+    assert(type(base_observation) != type(None))
+    
+    orig_size = len(base_observation)
+    if MAX_PICKLE8_SIZE < orig_size:
+        breakpoint()
+    padded = np.append(base_observation, np.zeros(MAX_PICKLE8_SIZE - orig_size, dtype=np.int8))
+    padded.dtype = np.int64 # shrink to int64 form
+    padded[-1] = orig_size
+    return Int64Tensor(shape = [ 1, MAX_PICKLE64_SIZE], value=padded)
 
+
+def from_int64_tensor(int64_tensor):
+    tensor = int64_tensor.flatten()
+    size = tensor[-1]
+    tensor.dtype = np.int8
+    return pickle.loads(tensor[:size])
 
 
 def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=subprocess.PIPE):

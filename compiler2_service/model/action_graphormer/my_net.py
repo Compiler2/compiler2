@@ -5,6 +5,8 @@ from ray.rllib.utils.framework import try_import_torch
 
 from compiler2_service.model.transformer.graph_encoder.dgl_dataset import GraphormerDGLDataset
 from compiler2_service.model.transformer.graphormer_transformer import GraphormerTransformer
+from compiler2_service.service_py.utils import from_int64_tensor
+
 import numpy as np
 import pickle
 
@@ -86,14 +88,13 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             input_obs_dict = self.get_default_input(batch_size)
         else:
             # print('REAL INPUT *******************')
-            # breakpoint()
-            pickle_tensor = np.array(input_dict['obs'].cpu().numpy(), dtype=np.int32)[:,0,:]
+            int64_tensor = np.array(input_dict['obs'].cpu().numpy(), dtype=np.int64)[:,0,:]
             # if batch_size > 1: breakpoint()
 
             graphs = np.apply_along_axis(
-                lambda row: pickle.loads(row[:row[-1]].astype(np.int8)), 
+                lambda row: from_int64_tensor(row), #pickle.loads(row[:row[-1]].astype(np.int8)), 
                 axis=1, 
-                arr=pickle_tensor
+                arr=int64_tensor
             )
 
             dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(batch_size), device=self.device)

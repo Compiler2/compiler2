@@ -11,7 +11,7 @@ from compiler_gym.service.proto import (
     ByteTensor
 )
 
-
+from compiler2_service.service_py.utils import to_int64_tensor
 from profilers import (
     hpctoolkit,
     programl
@@ -44,8 +44,9 @@ class Profiler:
         g_programl = self.programl_add_features(
             g_programl, g_hatchet, self.features_hatchet
         )
-        pickled = pickle.dumps(g_programl)
-        return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+        # pickled = pickle.dumps(g_programl)
+        # return Event(byte_tensor=ByteTensor(shape=[len(pickled)], value=pickled))
+        return Event(int64_tensor=to_int64_tensor(g_programl))
 
 
     def programl_get_graph(self, ll_path: str) -> pg.ProgramGraph:
