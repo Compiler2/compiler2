@@ -82,3 +82,17 @@ python  compiler2_service/model/transformer/graphormer_encoder.py
 python compiler2_service/demo_programl_hpctoolkit.py
 
 ```
+
+
+# Overrinding `scanf` and `printf` for poj4 benchamrks.
+
+Since the poj4 benchmarks depends on the `scanf` and `printf`, we could prelod custom wrappers for
+the functions that will avoid systemd calls, so we could measure more representable resuts.
+To do this, preload the following .so object that overrides `stdio.h`:
+
+```sh
+# Replace program executable with the corresponding poj4 executable
+LD_PRELOAD="$COMPILER2_ROOT/external/poj4-preloader/bin/stdio-wrapper.so" <program-executable-to-run> 
+```
+
+
