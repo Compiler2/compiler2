@@ -313,7 +313,7 @@ def pickle_to_dict(base_observation):
     # obs = pickle.loads(base_observation)
     # f"{key}": np.zeros((1, 4))
     # for key in ['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
-
+    breakpoint()
     if type(base_observation) != type(None):
         
         orig_size = len(base_observation)
@@ -342,30 +342,30 @@ def register_env(datasets):
             "datasets": [
                 importlib.import_module(f"compiler2_service.agent_py.datasets.{dataset}").Dataset() for dataset in datasets 
             ],
-            "derived_observation_spaces": [
-                {
-                    "id": "hpctoolkit",
-                    "base_id": "hpctoolkit_pickle",
-                    "space": DictSpace(
-                        {
-                            f"{key}": Sequence(
-                                name=key, size_range=(0, None), dtype=torch.Tensor, shape=max_pickle_size #get_default_input(1)[key].shape #np.ndarray
-                            )
-                            for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']#['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
-                        },
-                        name="hpctoolkit",
-                    ),
-                    "translate": lambda base_observation: pickle_to_dict(base_observation),
-                },
-                {
-                    "id": "programl",
-                    "base_id": "programl_pickle",
-                    "space": Sequence(
-                                name='pickled', size_range=(0, None), dtype=np.int32, shape=[max_pickle_size] #get_default_input(1)[key].shape #np.ndarray
-                    ),
-                    "translate": lambda base_observation: pickle_to_dict(base_observation),
-                },
-            ],
+        #     "derived_observation_spaces": [
+        #         {
+        #             "id": "hpctoolkit",
+        #             "base_id": "hpctoolkit_pickle",
+        #             "space": DictSpace(
+        #                 {
+        #                     f"{key}": Sequence(
+        #                         name=key, size_range=(0, None), dtype=torch.Tensor, shape=max_pickle_size #get_default_input(1)[key].shape #np.ndarray
+        #                     )
+        #                     for key in ['attn_bias', 'attn_edge_type', 'edge_input', 'idx', 'in_degree', 'out_degree', 'spatial_pos', 'x', 'y']#['x', 'y', 'adj', 'attn_bias', 'attn_edge_type', 'spatial_pos', 'in_degree', 'out_degree', 'edge_input', 'idx']
+        #                 },
+        #                 name="hpctoolkit",
+        #             ),
+        #             "translate": lambda base_observation: pickle_to_dict(base_observation),
+        #         },
+        #         {
+        #             "id": "programl_1",
+        #             "base_id": "programl_pickle",
+        #             "space": Sequence(
+        #                         name='pickled', size_range=(0, None), dtype=np.int32, shape=[max_pickle_size] #get_default_input(1)[key].shape #np.ndarray
+        #             ),
+        #             "translate": lambda base_observation: pickle_to_dict(base_observation),
+        #         },
+        #     ],
         },
     )
 # register_env()

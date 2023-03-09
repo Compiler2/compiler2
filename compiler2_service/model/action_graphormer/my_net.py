@@ -86,7 +86,8 @@ class TorchCustomModel(TorchModelV2, nn.Module):
             input_obs_dict = self.get_default_input(batch_size)
         else:
             # print('REAL INPUT *******************')
-            pickle_tensor = np.array(input_dict['obs'].cpu().numpy(), dtype=np.int32)
+            # breakpoint()
+            pickle_tensor = np.array(input_dict['obs'].cpu().numpy(), dtype=np.int32)[:,0,:]
             # if batch_size > 1: breakpoint()
 
             graphs = np.apply_along_axis(
@@ -97,7 +98,6 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
             dgl_dataset = GraphormerDGLDataset(graphs=graphs, train_idx=np.arange(batch_size), device=self.device)
             input_obs_dict = dgl_dataset.get_train()['x']
-            
         
         if 'prev_actions' in input_dict:
             # Skip the first time, and rstrip self.prev_actions_num + 1 actions

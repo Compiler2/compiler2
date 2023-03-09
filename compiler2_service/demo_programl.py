@@ -17,6 +17,7 @@ import subprocess
 from pathlib import Path
 from typing import Iterable
 
+import numpy as np
 
 from compiler_gym.util.logging import init_logging
 from compiler_gym.util.registration import register
@@ -58,8 +59,8 @@ def main():
             try:
                 observation, reward, done, info = env.step(
                     action=env.action_space.sample(),
-                    observation_spaces=["programl_pickle", "perf"],
-                    reward_spaces=["perf"],
+                    observation_spaces=["programl"],
+                    reward_spaces=["perf_cycles"],
                 )
                 
             except ServiceError:
@@ -68,7 +69,10 @@ def main():
                   
             print(reward)
             print(info)
-            g = pickle.loads(observation[0])
+            breakpoint()
+            aa = observation[0][0]
+            bb = aa[:aa[-1]].astype(np.int8)
+            g = pickle.loads(bb)
             print(g.nodes())
             
 

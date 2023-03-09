@@ -11,6 +11,11 @@ from subprocess import Popen, run
 from typing import List
 import logging
 
+
+MAX_PICKLE_SIZE = int(80e3)
+
+
+
 def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
     if '<' in cmd:
         pos_less = cmd.index('<')

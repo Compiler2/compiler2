@@ -32,7 +32,9 @@ from compiler_gym.service.proto import (
     ByteSequenceSpace,
     BytesSequenceSpace,
     DictSpace,
+    Int64Box,
     Int64Range,
+    Int64Tensor,
     CommandlineSpace,
     StringSpace,
     DoubleSequenceSpace,
@@ -44,7 +46,7 @@ from compiler_gym.spaces import Scalar
 
 from compiler_gym.service.runtime import create_and_run_compiler_gym_service
 
-import utils
+from compiler2_service.service_py.utils import MAX_PICKLE_SIZE
 import signal
 import sys
 import time
@@ -162,6 +164,20 @@ class HPCToolkitCompilationSession(CompilationSession):
             name="programl_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
+            ),
+        ),
+        ObservationSpace(
+            name="programl",
+            space=Space(
+                int64_box=Int64Box(
+                    low = Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[-sys.maxsize] * MAX_PICKLE_SIZE),
+                    high = Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[sys.maxsize] * MAX_PICKLE_SIZE),
+                )
+            ),
+            deterministic=True,
+            platform_dependent=False,
+            default_observation=Event(
+                int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE_SIZE], value=[0] * MAX_PICKLE_SIZE),
             ),
         ),
         ObservationSpace(
@@ -347,7 +363,7 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_pickle":
+            elif observation_space.name == "programl":# "programl_pickle":
                 self.profiler = programl.Profiler(observation_space.name,
                                                   self.benchmark.run_cmd,
                                                   self.timeout_sec,
