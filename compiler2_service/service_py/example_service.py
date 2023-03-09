@@ -85,20 +85,6 @@ class HPCToolkitCompilationSession(CompilationSession):
         #####################################################################################################
         # DoubleTensor Observation Spaces
         #####################################################################################################        
-        # ObservationSpace(
-        #     name="runtime_tensor",
-        #     space=Space(
-        #         double_box=DoubleBox(
-        #             low = DoubleTensor(shape = [1], value=[0]),
-        #             high = DoubleTensor(shape = [1], value=[float("inf")]),
-        #         )
-        #     ),
-        #     deterministic=False,
-        #     platform_dependent=True,
-        #     default_observation=Event(
-        #         double_value=0,
-        #     ),
-        # ),
 
         ObservationSpace( # Note: Be CAREFUL with dimensions, they need to be exactly the same like in perf.py
             name="perf",
@@ -131,23 +117,7 @@ class HPCToolkitCompilationSession(CompilationSession):
         #####################################################################################################
         # ByteSequenceSpace Observation Spaces
         #####################################################################################################
-        # ObservationSpace(
-        #     name="runtime",
-        #     space=Space(
-        #         double_value=DoubleRange(min=0),
-        #     ),
-        #     deterministic=False,
-        #     platform_dependent=True,
-        #     default_observation=Event(
-        #         double_value=0,
-        #     ),
-        # ),       
-        ObservationSpace(
-            name="perf_pickle",
-            space=Space(
-                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
-            ),
-        ),
+      
         ObservationSpace(
             name="hpctoolkit",
             space=Space(
@@ -164,18 +134,6 @@ class HPCToolkitCompilationSession(CompilationSession):
         ),        
         ObservationSpace(
             name="hpctoolkit_hatchet",
-            space=Space(
-                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
-            ),
-        ),
-        ObservationSpace(
-            name="hpctoolkit_pickle",
-            space=Space(
-                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
-            ),
-        ),
-        ObservationSpace(
-            name="programl_pickle",
             space=Space(
                 byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
             ),
@@ -207,30 +165,6 @@ class HPCToolkitCompilationSession(CompilationSession):
             default_observation=Event(
                 int64_tensor=Int64Tensor(shape = [1, MAX_PICKLE64_SIZE], value=[0] * MAX_PICKLE64_SIZE),
             ),
-        ),
-        ObservationSpace(
-            name="programl_hpctoolkit_pickle",
-            space=Space(
-                byte_sequence=ByteSequenceSpace(length_range=Int64Range(min=0)),
-            ),
-        ),
-        # ObservationSpace(
-        #     name="IsRunnable",
-        #     scalar_int64_range=ScalarRange(min=ScalarLimit(value=0), max=ScalarLimit(value=1)),
-        #     deterministic=True,
-        #     platform_dependent=True,
-        #     default_value=Event(
-        #         scalar_int64=1,
-        #     ),
-        # ),
-        ObservationSpace(
-            name="BitcodeFile",
-            space=Space(
-                string_value=StringSpace(length_range=Int64Range(min=0))
-            )
-            # string_size_range=ScalarRange(
-            #     min=ScalarLimit(value=0), max=ScalarLimit(value=1e5)
-            # ),
         ),
     ]
 
@@ -347,31 +281,11 @@ class HPCToolkitCompilationSession(CompilationSession):
             return self.prev_observation[observation_space.name]
 
         if self.profiler == None or observation_space.name != self.profiler.name:
-            if observation_space.name == "runtime":
-                self.profiler = runtime.Profiler(observation_space.name,
-                                                 self.benchmark.run_cmd,
-                                                 self.timeout_sec)
-
-            elif observation_space.name == "runtime_tensor":
-                self.profiler = runtime.ProfilerTensor(observation_space.name,
-                                                 self.benchmark.run_cmd,
-                                                 self.timeout_sec)
-
-            elif observation_space.name == "perf_pickle":
-                self.profiler = perf.Profiler(observation_space.name,
-                                              self.benchmark.run_cmd,
-                                              self.timeout_sec)
-
-            elif observation_space.name == "perf":
+            if observation_space.name == "perf":
                 self.profiler = perf.ProfilerTensor(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec)                                              
-            
-            elif observation_space.name == "perf_dict":
-                self.profiler = perf.ProfilerDict(observation_space.name,
-                                                    self.benchmark.run_cmd,
-                                                    self.timeout_sec)                                              
-            
+                        
 
             elif observation_space.name == "perf_cycles":
                 self.profiler = perf.CycleProfiler(observation_space.name,
@@ -385,35 +299,26 @@ class HPCToolkitCompilationSession(CompilationSession):
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
             
-            elif observation_space.name == "hpctoolkit": #_pickle":
+            elif observation_space.name == "hpctoolkit":
                 self.profiler = hpctoolkit.ProfilerDGL(observation_space.name,
                                                     self.benchmark.run_cmd,
                                                     self.timeout_sec,
                                                     self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl":# "programl_pickle":
+            elif observation_space.name == "programl":
                 self.profiler = programl.Profiler(observation_space.name,
                                                   self.benchmark.run_cmd,
                                                   self.timeout_sec,
                                                   self.benchmark.llvm_path)
 
-            elif observation_space.name == "programl_hpctoolkit": #_pickle":
+            elif observation_space.name == "programl_hpctoolkit":
                 self.profiler = programl_hpctoolkit.Profiler(observation_space.name,
                                                              self.benchmark.run_cmd,
                                                              self.timeout_sec,
                                                              self.benchmark.llvm_path)
 
-            elif observation_space.name == "IsRunnable":
-                # llvm_autotuners check whether the benchmark is runnable by
-                # using IsRunnable observation space.
-                # For now, assume that all benchmarks are runnable.
-                return Event(
-                    scalar_int64=1,
-                )
-
             elif observation_space.name == "BitcodeFile":
                 return self.benchmark.bitcode_file_path(self.save_state)
-
 
             else:
                 raise KeyError(observation_space.name)
