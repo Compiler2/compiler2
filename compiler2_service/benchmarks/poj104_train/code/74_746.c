@@ -1,3 +1,5 @@
+#include <header.h>
+
 int A(int k)
 {
 	int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cf(int a,int b)
 {   int i,s;              
     if(b==0)

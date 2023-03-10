@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sz[100][100];
 int main(){
 	int k,ROW,COL,row,col,time=0,m=0;
@@ -38,7 +40,7 @@ int main(){
 			if(m==1) break;
 			printf("%d\n",sz[row][k]);
 			time++;
- //           printf("time=%d\n",time);
+ 
 			if(time==COL*ROW){
 					m=1;
 					break;

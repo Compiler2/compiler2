@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    char zf[800],dc[300][20];
    gets(zf);

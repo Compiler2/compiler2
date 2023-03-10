@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m ,a[100],b[100];
 
 void  sort(int c[],int s)

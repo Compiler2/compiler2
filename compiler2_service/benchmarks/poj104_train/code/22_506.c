@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,a[300],amount=0;
@@ -10,7 +12,7 @@ int main()
 			break;
 	}
 	
-	////
+	
 	int sum=0;
 	if(amount==1)
 	{
@@ -28,7 +30,7 @@ int main()
 			printf("No");
 		}
 		else 
-		{//??????
+		{
 			int sum=0;
 			int j,cache;
 			a[amount]=10000000;
@@ -44,7 +46,7 @@ int main()
 					}
 				}
 			}
-			///?????
+			
 			for(j=amount-1;j>0;j--)
 			{
 				if(a[j]==a[j-1])

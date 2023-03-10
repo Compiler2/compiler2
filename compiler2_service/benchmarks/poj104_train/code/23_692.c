@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fanzhuan(char * a, int begin, int end);
 void fanzhuan(char * a, int begin, int end)
 {

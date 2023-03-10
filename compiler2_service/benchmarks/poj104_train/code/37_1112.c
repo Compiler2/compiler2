@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,flag,bigflag=0;
@@ -16,12 +18,12 @@ int main()
 			if(s[i]==s[j])
 			   {
 				   flag=1;
-			   }//over our search
+			   }
 			for(j=len-1;j!=i;j--)
 			if(s[i]==s[j])
 			   {
 				   flag=1;
-			   }//over our search
+			   }
 
             if(flag==0) 
 			{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int l;
 struct stu
 {int num;

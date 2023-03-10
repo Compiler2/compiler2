@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -15,7 +17,7 @@ main()
     {
      p = (n - m + i) % n;
      printf("%d", a[p]);
-     //printf("|%d|", n - m + i);
+     
      if(i != n) printf(" ");
 }
 }

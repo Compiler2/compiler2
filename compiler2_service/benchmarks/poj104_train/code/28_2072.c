@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[3001];
 int len;
 

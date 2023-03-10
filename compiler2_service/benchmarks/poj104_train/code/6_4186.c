@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,y,n,s,j,h,a,k,b,sz[100][100],jieguo[100],sum;
     scanf("%d",&n);

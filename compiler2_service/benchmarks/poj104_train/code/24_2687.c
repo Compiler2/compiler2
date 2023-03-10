@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int max(int a[],int n);
 	int min(int a[],int n);

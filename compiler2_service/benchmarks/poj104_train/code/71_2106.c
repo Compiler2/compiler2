@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,year,yue1,yue2,i,j,t,sum;

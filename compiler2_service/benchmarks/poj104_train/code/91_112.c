@@ -1,3 +1,5 @@
+#include <header.h>
+
 void friend1(char p[],int n);
 int main()
 {

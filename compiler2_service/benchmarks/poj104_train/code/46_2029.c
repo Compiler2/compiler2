@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int row,col,i,j,time=0,n,a[100][100],max;
 	scanf("%d %d",&row,&col);

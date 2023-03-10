@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[8][8];
 int main()
 {

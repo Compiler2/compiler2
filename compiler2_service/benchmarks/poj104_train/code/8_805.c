@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s(int m);
 int p(int m,int i,int a[100]);
 void e(int i,int c[100],int d[100],int m,int n);

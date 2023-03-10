@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 main()
@@ -14,7 +16,7 @@ len=strlen(a);
 for(i=0;i<=len-1;i++)
                    {
                    b[i]=a[i]-'0';
-                   //printf("%d",b[i]);
+                   
                    }
 for(i=0;i<=len-1;i++)
                    {

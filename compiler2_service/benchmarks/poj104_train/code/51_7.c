@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {  int n,i,j,m,t,max;
     char mem[1000];

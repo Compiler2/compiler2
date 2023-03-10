@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int chrtoint(char ch)
 {
@@ -29,16 +31,16 @@ int main()
 	scanf("%d %s %d", &a, str, &b);
 	int len=0, i;
 	while (str[len]>0)
-		len++; //???????
+		len++; 
 
-	//a??->10??
+	
 	num=0;
 	for (i=0;i<len;i++)
 	{
 		num=num*a+chrtoint(str[i]);
 	}
 
-	//10??->b??
+	
 	str[0]='0';
 	len=0;
 	while (num>0)
@@ -47,9 +49,9 @@ int main()
 		len++;
 		num/=b;
 	}
-	if (len==0) len++; //??0???
+	if (len==0) len++; 
 
-	//????
+	
 	for (i=len-1;i>=0;i--)
 		putchar(str[i]);
 

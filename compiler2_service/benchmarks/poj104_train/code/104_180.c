@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int x, y, x_[100], y_[100], i=0, j=0, count_x=0, count_y=0;

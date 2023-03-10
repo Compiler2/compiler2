@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,num[1000],m,a[1000][26],k,sum[26],max=0,b;

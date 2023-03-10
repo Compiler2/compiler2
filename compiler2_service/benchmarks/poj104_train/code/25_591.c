@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,k,n,m,t,cf[100]={0};
     int jinwei=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,min,max,c=0,j, qs[50000],zd[50000];
 	double g;

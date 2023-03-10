@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,l;
     char a[200],b[200],r[200]={' '};

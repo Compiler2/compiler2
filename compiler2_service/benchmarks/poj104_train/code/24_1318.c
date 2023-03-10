@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char str[1000],*p,*q,*max_index,*min_index;

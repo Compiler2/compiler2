@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int a,b,i,j,l,k;
@@ -6,28 +8,28 @@ int main(int argc, char* argv[])
 	
 	scanf("%d %s %d",&a,s,&b);
 	l=strlen(s);
-	//printf("%d\n",l);
+	
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(s[i]>=97&&s[i]<=122)
 			s[i]=s[i]-32;
 	}
-//	printf("%s\n",s);
+
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(s[i]>=65&&s[i]<=90)
 		{
-			k=s[i]-55;//printf("%d\n",k);
+			k=s[i]-55;
 		}
 		else
 		{
-			k=s[i]-48;//printf("=%d\n",k);
+			k=s[i]-48;
 		}
 		for(j=0;j<l-i-1;j++)
 		{
-			k=k*a;//printf("%d\n",k);
+			k=k*a;
 		}
-	//	printf("+%d\n",k);
+	
 		sum=sum+k;
 	}
 	for(i=50;i>=0;i--)

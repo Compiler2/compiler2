@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	int year,mon,day;
 	scanf("%d%d%d",&year,&mon,&day);
 	int pass=0;
-	//????
+	
     int AC[5]={0,1,2,3,5};
 	if(year<=4)
 	{
@@ -22,7 +24,7 @@ int main()
 		pass=pass+5*(((year-1)%400)/100)+5*(((year-1)%100)/4)+AC[(year-1)%4];
 	}
 	int i;
-	//????
+	
 	int month[13]={0,3,0,3,2,3,2,3,3,2,3,2,3};
 	for(i=1;i<mon;i++)
 	{
@@ -36,7 +38,7 @@ int main()
 	{	
 		pass=pass+1;
 	}
-	//????
+	
 	for(i=1;i<=day;i++)
 	{
 		pass=pass+1;

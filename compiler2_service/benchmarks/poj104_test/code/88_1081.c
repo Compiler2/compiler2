@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char x){
 	if(x>47&&x<58){return 1;}
 	return 0;}

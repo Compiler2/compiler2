@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int i,j,n,s=0;
@@ -14,12 +16,12 @@ int main(){
 
             if(('a'<=name&&name<='z') ||( 'A'<=name&&name<='Z') || name=='_' || ('1'<=name && name<='9' )||'0'==name)
             {    s+=0;
-         //        printf("0");
+         
          }
             else
             {
                 s+=1;
-         //       printf("1");
+         
             }
             name=getchar();
         }while(name!='\n');

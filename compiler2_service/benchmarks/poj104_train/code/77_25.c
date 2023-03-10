@@ -1,3 +1,5 @@
+#include <header.h>
+
 /*????*/
 void doit(char a[],int n)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char namef(int a,int b,int c,int n)
 {
 	int i;

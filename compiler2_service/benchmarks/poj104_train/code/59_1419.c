@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[200][200] = {0};
 int b[200][200] = {0};

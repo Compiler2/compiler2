@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int ans[10000], a[100];
 

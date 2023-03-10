@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	
 	double	n,age,a=0,b=0,c=0,d=0;
@@ -18,7 +20,7 @@ int main(){
 printf("19-35: %.2lf%%\n",100*b/n);
 printf("36-60: %.2lf%%\n",100*c/n);
 printf("60??: %.2lf%%\n",100*d/n);
-//scanf("%lf",&age);
+
 	return 0;
 }
 		

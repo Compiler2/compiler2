@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int islegal(char seq[],int size)

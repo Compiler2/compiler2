@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fxs(int x)
 { 
   int i;

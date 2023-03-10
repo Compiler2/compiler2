@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
      int n,k=1,i;
@@ -13,9 +15,9 @@ int main()
      {
                         printf("%d",a[i]);
      }
-     //int q;
-     //scanf("%d",&q);
-     //printf("%d",q);
+     
+     
+     
      return 0;
    
 }

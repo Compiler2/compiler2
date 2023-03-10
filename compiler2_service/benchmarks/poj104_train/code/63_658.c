@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     long  int a[100][100];

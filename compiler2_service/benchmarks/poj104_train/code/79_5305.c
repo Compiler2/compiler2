@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bianhao(int m,int n);
 int main(){
 	int i,a,t;

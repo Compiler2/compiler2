@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int zai(int m,int n);
 	int a[5][5];

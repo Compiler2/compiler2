@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int shuzu[5][5];
 	int e[5];

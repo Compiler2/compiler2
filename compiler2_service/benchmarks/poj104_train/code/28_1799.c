@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char a[1000000];
 int main()

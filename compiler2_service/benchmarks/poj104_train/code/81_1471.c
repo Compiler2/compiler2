@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int change(int a[5][5],int x,int y);
@@ -10,7 +12,7 @@ int main(int argc, char* argv[])
 		for(j=0;j<5;j++){
 			scanf("%d",&a[i][j]);
 		}
-	scanf("%d%d",&n,&m);//????
+	scanf("%d%d",&n,&m);
 	
 
 		
@@ -20,9 +22,9 @@ int main(int argc, char* argv[])
 			if(j!=4)
 				printf("%d ",a[i][j]);
 			else
-				printf("%d",a[i][j]);//??????????
+				printf("%d",a[i][j]);
 		}
-		printf("\n");//????
+		printf("\n");
 		}
 	}else 
 		printf("error\n");
@@ -30,7 +32,7 @@ int main(int argc, char* argv[])
 	
 }
 
-int change(int a[5][5],int x,int y)//???????????????
+int change(int a[5][5],int x,int y)
 {
 	int k,temp;
 	if(x>=0&&x<5&&y>=0&&y<5){

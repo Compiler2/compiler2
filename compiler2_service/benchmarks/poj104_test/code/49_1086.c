@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	static char str[501];

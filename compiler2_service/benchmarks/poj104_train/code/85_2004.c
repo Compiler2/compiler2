@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     #define NUM 100
     char z[20][NUM];

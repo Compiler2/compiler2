@@ -1,3 +1,5 @@
+#include <header.h>
+
 int q[100],w[100],m,n,i,j,k,v,y=0;
 void a(),b(),c(),d();
 main()

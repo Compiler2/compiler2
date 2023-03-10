@@ -1,3 +1,5 @@
+#include <header.h>
+
 void turn(char *a)
 {
  char b[10][20],c[20]="";

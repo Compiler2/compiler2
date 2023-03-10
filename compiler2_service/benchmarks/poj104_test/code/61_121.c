@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shulie(int n);
 int main()
 {

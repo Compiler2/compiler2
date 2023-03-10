@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,m,n,h,l,re;
     int jz[5][5];
@@ -7,11 +9,11 @@ int main(){
         scanf("%d",&jz[h][l]);
         }
     }
-    //for(h=0;h<5;h++){
-            //for(l=0;l<5;l++){
-                //printf("%d ",jz[h][l]);
-            //}
-    //}
+    
+            
+                
+            
+    
     scanf("%d %d",&n,&m);
     if(n>-1&&n<5&&m>-1&&m<5){
         re=1;
@@ -19,7 +21,7 @@ int main(){
     else{
         re=0;
     }
-    //printf("%d\n ",re);
+    
     if(re==0){
         printf("error");
     }

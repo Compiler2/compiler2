@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ch[10005];
@@ -38,7 +40,7 @@ int main()
 			zd=i;
 		}
 	}
-	//printf("??%d ????%d ??%d ????%d\n",max,zd,min,zx);
+	
 	zd1=zd;
 	for(zd=zd;zd<zd1+max;zd++)
 		printf("%c",ch[zd]);

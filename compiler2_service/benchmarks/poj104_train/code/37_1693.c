@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,t,n,a[100000];
@@ -5,7 +7,7 @@ int main()
 	scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		//gets(str);
+		
 		scanf("%s",str);
 		n=strlen(str);
 		for(j=0;j<n;j++)a[j]=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int huan(int n,int m)
 {

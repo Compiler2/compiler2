@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	  char zfc[102];
       char ip[2][50];	  
@@ -16,9 +18,9 @@ int main(){
            k=0;
 		}
 	  }	  
-	  //printf("%s %s",ip[0],ip[1]);
+	  
 	  int len1 = strlen(ip[1]),len2 = strlen(ip[0]);
-      //printf("%d %d",len1,len2);
+      
 	  int w;
 for(i=0,j=0;i<len1;i++){
         if (ip[1][i]==ip[0][j]){

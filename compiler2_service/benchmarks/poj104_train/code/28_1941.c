@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main(){
     char a[1000];
     gets(a);
     int f;
     int b;
     int d=0;
-    //int f=1;
+    
     int c[300];
     int e[300];
     f=strlen(a);
@@ -17,7 +19,7 @@ int main(){
                               i--;}
                               
                               }
-  //  printf("%s",a);
+  
      b=f;
     for(int i=0;i<=b-1;i++){
            if(a[i]==' '){

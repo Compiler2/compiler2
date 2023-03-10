@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fx(int n)
 {
 	int a[10],i,j,k;

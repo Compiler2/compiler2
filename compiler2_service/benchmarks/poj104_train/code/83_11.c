@@ -1,3 +1,5 @@
+#include <header.h>
+
 float GPA;
 gpa(int m,int a)
 {

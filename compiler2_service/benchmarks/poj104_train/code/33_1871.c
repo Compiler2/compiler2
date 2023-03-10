@@ -1,3 +1,5 @@
+#include <header.h>
+
 int len[10000];
 char str[10000][10000];
 int main()

@@ -1,7 +1,9 @@
+#include <header.h>
+
 
 int main()
 {
-    int i,i1,d,sum=0;                 //d??????????d?2?3?4?5?6???
+    int i,i1,d,sum=0;                 
     int pl[500]={0};
     int sl[500]={0};
     char s[500];

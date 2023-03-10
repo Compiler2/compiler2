@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i=0,h[100],l[100],t[101]={-1,0},len[100],j=0;

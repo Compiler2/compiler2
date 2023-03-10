@@ -1,3 +1,5 @@
+#include <header.h>
+
 void deal(char s[])
 {
 	int i,j,p=0;

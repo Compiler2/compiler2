@@ -1,3 +1,5 @@
+#include <header.h>
+
 char  sen[200];
 char m[200];
 char c[200];

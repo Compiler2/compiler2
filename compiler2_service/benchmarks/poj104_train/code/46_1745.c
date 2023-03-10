@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,det[100][100],ROW,COL,row1,row2,col1,col2,count=0;
@@ -15,7 +17,7 @@ int main()
 		for(i=col1;i<=col2;i++){
 			printf("%d\n",det[row1][i]);
 			count++;
-		} //verforward
+		} 
 		
 		if(count==ROW*COL){
 			break;
@@ -23,7 +25,7 @@ int main()
 		for(j=(row1+1);j<=row2;j++){
 			printf("%d\n",det[j][col2]);
 			count++;
-		} //hordown
+		} 
 		
 		if(count==ROW*COL){
 			break;
@@ -31,7 +33,7 @@ int main()
 		for(i=col2-1;i>=col1;i--){
 			printf("%d\n",det[row2][i]);
 			count++;
-		} //verbackward
+		} 
 		
 		if(count==ROW*COL){
 			break;
@@ -39,7 +41,7 @@ int main()
 		for(j=(row2-1);j>=(row1+1);j--){
 			printf("%d\n",det[j][col1]);
 			count++;
-		} //horup
+		} 
 
 		col1++;
 		col2--;

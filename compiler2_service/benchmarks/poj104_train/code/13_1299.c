@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hs(int a);
 int main(){
 	int n,b[20002],i,j,pd,js;

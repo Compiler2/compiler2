@@ -1,14 +1,16 @@
+#include <header.h>
+
 
 
 int main()
 { 
    
-    char str[100][100];//ID
+    char str[100][100];
 
     int  s1[100],sz[100],t[100];
     int n,i,p,k;
 
-   scanf("%d",&n);//???
+   scanf("%d",&n);
 
     
      int j=0;
@@ -17,22 +19,22 @@ int main()
    
      for(i=0;i<n;i++)
 	 {  
-		 scanf("%s %d",str[i],&sz[i]);//id
+		 scanf("%s %d",str[i],&sz[i]);
  
      
-                     if(sz[i]>=60)//panduannianling
+                     if(sz[i]>=60)
                      {
-                            t[j]=i;//cunrulingyishuzu
+                            t[j]=i;
                            s1[j]=sz[i]; 
                            j++;    
-					 }//gongyou 'j' ren
+					 }
 	 }
 	
-            for(k=1;k<=j;k++)//paixu
+            for(k=1;k<=j;k++)
                      {
                                       for(p=0;p<j-k;p++)
                                       {
-                                                        if(s1[p]<s1[p+1])//congdadaoxiao
+                                                        if(s1[p]<s1[p+1])
                                                         {
                                                                          int e,f;
                                                                          e=s1[p+1];

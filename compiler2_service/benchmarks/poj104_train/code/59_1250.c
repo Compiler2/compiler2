@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	char c[102][102]={' '};
 	int i,j,n,m,r=0,k=1;

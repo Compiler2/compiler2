@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
        char a[20][100],b[20][100];

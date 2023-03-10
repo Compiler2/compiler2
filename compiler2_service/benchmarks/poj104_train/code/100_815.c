@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void main()
 {
@@ -15,7 +17,7 @@ void main()
     j=0;
     for(i=0;i<strlen(str);i++)
 	{
-        if(str[i]>=97 && str[i]<=122)//???????
+        if(str[i]>=97 && str[i]<=122)
 		{
 
 
@@ -27,11 +29,11 @@ void main()
 	}
     if(j==0)
 		printf("No");
-	//??stemp??????????????
+	
    for(i=0;i<strlen(stemp);i++)
 	   itemp[i]=0;
 
-   //???stemp??????
+   
 
    for(i=1;i<=strlen(stemp);i++)
 	   for(j=0;j<strlen(stemp)-i;j++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {	unsigned int n,i,j,a[300],b[300];float av=0,m,mm=0;
 	scanf("%d",&n);

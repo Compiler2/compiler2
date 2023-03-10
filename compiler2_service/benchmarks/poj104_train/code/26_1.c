@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char input[101],res[101],last;

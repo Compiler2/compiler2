@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str1[150],str2[50],str3[50];
 char *p1=str1,*p2=str2,*p3=str3;
 

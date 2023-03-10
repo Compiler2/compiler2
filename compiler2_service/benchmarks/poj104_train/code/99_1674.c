@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i;
@@ -20,7 +22,7 @@ int main()
 		if(a>=61)
 			D+=1;
 	}
-	//printf("%lf %lf %lf %lf",A,B,C,D);
+	
 	e=A/n*100;f=B/n*100;g=C/n*100;h=D/n*100;
 	printf("1-18: %.2lf%%\n",e);
 	printf("19-35: %.2lf%%\n",f);

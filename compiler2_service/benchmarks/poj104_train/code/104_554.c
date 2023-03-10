@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(int a[10000])
 {
 	int i;

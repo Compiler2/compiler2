@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fa(int a[][101],int n)
 {
     if(n==1) return 0;

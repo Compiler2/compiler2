@@ -1,3 +1,5 @@
+#include <header.h>
+
 int DiJiTian(int year,  int month,  int day);
 int isRunNian(int   year);
 void swap(int *a,  int *b);
@@ -53,7 +55,7 @@ int isRunNian(int year){
 int DiJiTian(int year, int month, int day)
 {
         int  result = 0,  i;
-        for( i = 1;  i < month;  i++){ 	//step1
+        for( i = 1;  i < month;  i++){ 	
 	if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
 	        result += 31;	
 	 else  if (i == 4 || i ==6 || i == 9 || i==11)
@@ -65,7 +67,7 @@ int DiJiTian(int year, int month, int day)
 		result += 28;
 	}
        }
-       result += day;         //step2
+       result += day;         
        return  result;	
 }
 void swap(int *a, int *b)

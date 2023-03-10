@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m=0,i,numa[1000],num,n;

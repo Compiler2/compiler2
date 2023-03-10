@@ -1,3 +1,5 @@
+#include <header.h>
+
 int N,input[26],i,j,k,ans[26],Max;
 int cons(int i){
    int a=0;

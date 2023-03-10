@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int flag=1,i,n,m,j;
 	char str[256],sub[256],rep[256];

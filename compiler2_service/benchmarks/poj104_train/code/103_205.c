@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char x[1001],z[1001]; 
@@ -8,7 +10,7 @@ main()
           z[i]='\0';
           }
       scanf("%s",x);
-      //printf("%c\n",xz[0]);
+      
       for (i=0;x[i]!='\0';i++)
       {
           if (x[i]>='a'&&x[i]<='z')

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[501][5];
 char a[501];
 int main(int argc, char* argv[])
@@ -8,7 +10,7 @@ int main(int argc, char* argv[])
 	int max=0;
 	scanf("%d\n",&n);
 	gets(a);
-	//puts(a);
+	
     m=strlen(a);
 	for(i=0;i<=m-n;i++)
 	{

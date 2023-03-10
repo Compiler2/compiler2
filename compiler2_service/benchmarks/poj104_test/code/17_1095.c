@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(char str[])
 {
 	int n,i;

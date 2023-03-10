@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int N,**p,i,j,sum,m,n,l;

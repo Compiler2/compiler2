@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[9][9],row,line;
 int check(int M,int N)
 {

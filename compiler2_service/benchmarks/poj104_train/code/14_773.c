@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct stu{
 	long int num[100000];

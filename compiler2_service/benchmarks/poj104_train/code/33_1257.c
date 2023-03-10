@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[9999][256];
 	int n;

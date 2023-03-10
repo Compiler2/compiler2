@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {int zu[100][100];
  int n,a,b,c,d;

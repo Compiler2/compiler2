@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int an[500];
 	int n,i,max=1,point=1;

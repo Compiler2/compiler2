@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct Aw{
 	char na[20];
 	int ft,ct,tn,sum;

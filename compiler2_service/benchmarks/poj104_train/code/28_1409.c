@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[6000];
 	gets(zfc);

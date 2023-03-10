@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int *t,i,j,n,is[10000];
 	char a[81];

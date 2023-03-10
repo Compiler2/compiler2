@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char n[40],y[40],z[40];

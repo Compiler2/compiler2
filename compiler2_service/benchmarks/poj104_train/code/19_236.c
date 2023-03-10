@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[150],from[150],to[150],a[50];

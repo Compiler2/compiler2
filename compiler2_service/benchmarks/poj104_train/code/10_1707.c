@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int fff(int a[],int k);

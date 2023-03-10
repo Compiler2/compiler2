@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(const void*a,const void *b)
 {
     int* p1=(int *)a;
@@ -19,9 +21,9 @@ int main()
             
             qsort(a,n,sizeof(a[0]),cmp);
             qsort(b,n,sizeof(b[0]),cmp);
-            //for(int i=0;i<n;i++)
-           // printf("%d ",a[i]);
-           // printf("\n\n");
+            
+           
+           
             int sum=0;
             int i=0,j=0,p=n-1,q=n-1;
             while(i<=p&&j<=q)

@@ -1,6 +1,8 @@
+#include <header.h>
+
 
 int t=0;
-int mini(int k,int i)//“a?&#710;&#160;&#733;”–o?÷÷?÷?&#174;?¨?&#8250;?è“&#8482;&#171;&#219;k?&#219;”&#8260;i
+int mini(int k,int i)
 {
 	if(k==1)t=t+1;
 	for(;i<=k;i++)

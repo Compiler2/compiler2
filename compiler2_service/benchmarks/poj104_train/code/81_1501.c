@@ -1,3 +1,5 @@
+#include <header.h>
+
 int q(int a,int b);
 void main()
 {

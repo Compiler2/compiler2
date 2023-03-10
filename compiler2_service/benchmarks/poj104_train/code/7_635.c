@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    char string[257],substring[257],replacement[257];
    gets(string);

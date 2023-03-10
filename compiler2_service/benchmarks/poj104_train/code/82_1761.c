@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a,b,n,hours1=0,hours2=0,max,i=1;

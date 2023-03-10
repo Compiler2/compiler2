@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,y[200],m1,m2,i;

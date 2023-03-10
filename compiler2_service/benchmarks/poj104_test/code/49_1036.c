@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char *p)
 {  
    int l = strlen(p); 

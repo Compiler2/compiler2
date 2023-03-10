@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     float std,rate,sign;
     int i,l1,l2;

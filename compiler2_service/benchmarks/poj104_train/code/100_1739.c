@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int cd=0, i, a;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int order(int n,int a[]){
 	int i,j,k;
 	for(i=0;i<n;i++)

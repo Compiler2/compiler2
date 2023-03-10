@@ -1,11 +1,13 @@
+#include <header.h>
+
 int s[1000][1000];
 int main()
 {
-//printf("bbb\n");
+
 	int a=1,b=1,j,i,n,m,first=0;
 	int c=0,d=0;
 	scanf("%d",&n);
-//printf("bbb%d\n",n);
+
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)

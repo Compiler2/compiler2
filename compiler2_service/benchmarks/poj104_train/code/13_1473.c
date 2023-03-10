@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int sz1[20000],sz2[20000],i,j,n,k;

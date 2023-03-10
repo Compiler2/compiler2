@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,j,k;
     int zong[100],you[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char str1[100],word1[100],word2[100];

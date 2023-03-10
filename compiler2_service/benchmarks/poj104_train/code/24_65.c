@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[50][20],(*p)[20],*p1,*p2;

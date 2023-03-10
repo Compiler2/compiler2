@@ -1,5 +1,7 @@
-// 1.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
+
+
+
 int num[26]={0};
 int main()
 {

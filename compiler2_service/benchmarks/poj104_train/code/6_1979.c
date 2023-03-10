@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int s,m,n,i,j,k,sum=0;

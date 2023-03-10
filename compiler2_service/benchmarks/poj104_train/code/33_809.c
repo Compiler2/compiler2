@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
      char d[260];
   int i=0,j=0,n;

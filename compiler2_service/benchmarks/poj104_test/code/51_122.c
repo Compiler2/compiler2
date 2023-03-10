@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	char s[600];
 	int len;
@@ -43,7 +45,7 @@ int main() {
 				printf("%c", s[j]);
 			}
 			printf("\n");
-			//printf("%s\n", s.substr(idx[i], n));
+			
 		}
 	}
 	return 0;

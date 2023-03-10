@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pd(char c[],int i);
 int main()
 {

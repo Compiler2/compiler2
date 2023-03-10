@@ -1,3 +1,5 @@
+#include <header.h>
+
 int indent(char zfc[81]);
 int main(int argc, char* argv[])
 {   int n,s,i;

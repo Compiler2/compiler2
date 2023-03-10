@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,sum,young=0,mid=0,old=0,oldest=0;
 	double ap,mp,op,oep;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fx(int n)
 {
     int t=0;
@@ -25,6 +27,6 @@ int main()
                      scanf("%d",&t);
     printf("\n%d",ab(t));
     }
-   // getch();
+   
     return 0;
 }

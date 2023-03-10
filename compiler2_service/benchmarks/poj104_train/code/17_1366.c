@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int main()
 {
     char c[101];
-    int len,a[101];//0???????1??2?
+    int len,a[101];
     int i,j;
     while(gets(c)!=0)
     {

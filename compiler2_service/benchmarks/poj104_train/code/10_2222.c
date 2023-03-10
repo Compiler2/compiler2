@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int a[256][256],b[256],i,j,n;
@@ -12,9 +14,9 @@ main()
 		{
 			if (b[i]<=b[j]) a[i][j]=1;
 			else a[i][j]=0;
-//			printf("[%d][%d]%d ",i,j,a[i][j]);
+
 		}
-//		printf("\n");
+
 	}
 	b[1]=0;
 	j=1;
@@ -25,7 +27,7 @@ main()
 			if (a[i][j]==1) 
 			{
 				a[i][j]=1+b[j];
-//			printf("a[%d][%d]%d ",i,j,a[i][j]);
+
 			}
 		}
 		j++;

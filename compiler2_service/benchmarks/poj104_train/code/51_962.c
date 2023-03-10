@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,l,i,j,f[1000],tm,tn,tt;
 char c[1000];
 int st(int s,int t)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,r,i,p,q;
     int high[100];

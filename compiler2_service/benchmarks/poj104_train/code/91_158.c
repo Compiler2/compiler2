@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hh(char stu1,char stu2)
 {
 	int a1,a2;

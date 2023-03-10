@@ -1,3 +1,5 @@
+#include <header.h>
+
 char input[150], output[150];
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[6000],f[300][20];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void adds(char *a, char *b);
 void addc(char *a, char c);
 int main()
@@ -39,7 +41,7 @@ int main()
 }
 
 
-void adds(char *a, char *b)   //????b???a???
+void adds(char *a, char *b)   
 {
 	int len_a=strlen(a);
 	int len_b=strlen(b);
@@ -48,7 +50,7 @@ void adds(char *a, char *b)   //????b???a???
 	*(a+len_a+len_b)='\0';
 }
 
-void addc(char *a, char c)	  //???c???a???
+void addc(char *a, char c)	  
 {
 	int len_a=strlen(a);
 	*(a+len_a)=c; 

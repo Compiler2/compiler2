@@ -1,3 +1,5 @@
+#include <header.h>
+
 int transfer(int i)
 	{
 		int b=0,t,r;

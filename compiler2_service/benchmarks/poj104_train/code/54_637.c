@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jisuan(int n,int k,int b,long int a,int *p)
 {
 	long int sum=0;
@@ -32,7 +34,7 @@ int main()
 				continue;
 			if((s-k)%n==0)
 				break;
-				//printf("%d\n",s);
+				
 		}
 		printf("%d\n",s);
 	}

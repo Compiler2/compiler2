@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,area[9][9]={0},area1[9][9]={0};

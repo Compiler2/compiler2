@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char number[10000];
     gets(number);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],b[50];
 void read(int a[],int b[])
 {

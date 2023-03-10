@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	unsigned long int year;
 	unsigned int month,day;
 	unsigned long int x;
-	int a,c,d,e,f,y;   //*c??????  d??????  x????*//
+	int a,c,d,e,f,y;   
 	scanf("%d %d %d",&year,&month,&day);
 	a=(year%4==0&&year%100!=0)||year%400==0;
     if(year==1000000000&&month==10&&day==12)

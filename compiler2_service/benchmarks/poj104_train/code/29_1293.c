@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int fz[100],fm[100];
 	int m;

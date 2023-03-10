@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void input(int a[][100],int x,int y)
 {

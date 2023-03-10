@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,c,j,k,num[100],n,timess=0;

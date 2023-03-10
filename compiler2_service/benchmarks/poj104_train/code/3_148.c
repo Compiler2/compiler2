@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,k,i,j,flag =1,first = 0;
 	int num[1000]={0},sub=0;

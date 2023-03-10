@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char ch,ar, str[301];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,i,j,k,l,max=-1,min=999,p=0; double nn=0,s=0,xx;
 int a[10];

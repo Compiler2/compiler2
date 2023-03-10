@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -20,19 +22,19 @@ for(i=0;i<n;i++)
                {
             if (*(lab+point)=='_'||(*(lab+point)>='A'&&*(lab+point)<='Z')||(*(lab+point)>='a'&&*(lab+point)<='z'))
                 continue;
-                else { //printf("%c\ni is %d\nj is %d\n",*(lab+point),i,j);
+                else { 
                         flag=1;
                         break;
                      }
                 }
             else
                 if( !((*(lab+point)>='A'&&*(lab+point)<='Z')||(*(lab+point)>='a'&&*(lab+point)<='z'))&& *(lab+point)!='_'   &&  !(*(lab+point)>='0'&&*(lab+point)<='9'))
-                    {//printf("%c\ni is %d\nj is %d\n",*(lab+point),i,j);
+                    {
                         flag=1;
                         break;
                     }
         }
-    // printf("flag is %d",flag);
+    
      if(flag)
         printf("no\n");
      else

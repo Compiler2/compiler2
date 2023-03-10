@@ -1,3 +1,5 @@
+#include <header.h>
+
 int divide(int a,int b)
 {
     int i,r;

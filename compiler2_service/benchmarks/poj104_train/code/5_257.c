@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char DNA1[501],DNA2[501];
 	double rate;

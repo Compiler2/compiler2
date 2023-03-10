@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char m[350],n[350];

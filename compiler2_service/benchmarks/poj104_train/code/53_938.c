@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mark[300];
 int main(){
 	int n,i,sz[300];

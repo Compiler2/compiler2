@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int n,i,cqa[200],cqb[200],a,b;
   a=0;

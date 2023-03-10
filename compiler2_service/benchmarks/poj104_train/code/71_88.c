@@ -1,3 +1,5 @@
+#include <header.h>
+
 int min(int m1,int m2)
 {
     if(m1<m2)

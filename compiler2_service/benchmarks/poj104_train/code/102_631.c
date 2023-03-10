@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,q=-1,p=-1;
 	double sh[100],fe[120],me[120],t,min1,min2;

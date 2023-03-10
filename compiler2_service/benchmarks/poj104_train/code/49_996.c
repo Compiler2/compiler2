@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char s[502],int m)
 {   
 	char s1[502];

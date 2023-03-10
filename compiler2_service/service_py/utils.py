@@ -39,8 +39,12 @@ def from_int64_tensor(int64_tensor):
     tensor = int64_tensor.flatten()
     size = tensor[-1]
     tensor.dtype = np.int8
-    return pickle.loads(tensor[:size])
 
+    try:
+        aa = pickle.loads(tensor[:size])
+    except:
+        breakpoint()
+    return aa
 
 def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=subprocess.PIPE):
     if '<' in cmd:
@@ -64,7 +68,7 @@ def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=sub
                 pass
         
         stdout, stderr = process.communicate(timeout=timeout)
-        # logging.info("ERRORCODE:", process.returncode, "cmd:", cmd)
+        print("ERRORCODE:", process.returncode, "cmd:", cmd)
 
         if process.returncode:
             returncode = process.returncode
@@ -79,6 +83,7 @@ def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=sub
                 f"Command: {' '.join(cmd)}\n"
                 f"Stderr: {stderr}"
             )
+    print(stdout)
     return stdout
 
 

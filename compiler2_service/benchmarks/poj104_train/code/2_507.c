@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int i,j,k,l,m,n,g[26]={0},s[26][1000]={0};

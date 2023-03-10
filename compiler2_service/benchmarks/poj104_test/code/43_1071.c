@@ -1,9 +1,11 @@
+#include <header.h>
+
 
 int main()
 {
     int m,i,j,k,mod,h=1;
     scanf("%d",&m);
-    //????
+    
     for(i=3;i<=m/2;i=i+2) {
                           for(j=2;j<i;j=j+1){
                           mod=i%j;

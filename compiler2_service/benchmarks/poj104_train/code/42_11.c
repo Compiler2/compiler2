@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    long n,i,j,a[100000],k,x=0;

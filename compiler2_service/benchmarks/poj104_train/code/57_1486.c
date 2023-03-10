@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char s[100],t[100][100];int n,i,j,l[100];

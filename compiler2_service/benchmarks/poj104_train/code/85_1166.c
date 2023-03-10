@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,j,panduan=1;

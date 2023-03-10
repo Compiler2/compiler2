@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct scholar
 {
 	char name[20];

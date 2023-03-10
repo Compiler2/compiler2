@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pd(char *m)
 {
 	if(*m>='0'&&*m<='9') return(1);

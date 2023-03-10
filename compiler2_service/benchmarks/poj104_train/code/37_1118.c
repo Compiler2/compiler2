@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 int t,sum[26],i,min,j,b,c;

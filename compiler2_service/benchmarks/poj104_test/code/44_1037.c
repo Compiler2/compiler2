@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int num)
 {   int a[11],i,j,flag,n;
     if (num==0) return 0;

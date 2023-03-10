@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -69,7 +71,7 @@ int main()
 			}
 		}
 	}
-	//printf("%s\n",c);
+	
 	int count = 0;
 	for ( k = 0 ; k <= max ; k++ )
 	{
@@ -83,7 +85,7 @@ int main()
 		{
 			printf("%c",c[k]);
 		}
-		//printf("%d\n",k);
+		
 	}
 	printf("\n");
 	return 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 double fei(int n);
 int main(){
 	int i,m,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int n,a[300],d[300],i=0,*p;

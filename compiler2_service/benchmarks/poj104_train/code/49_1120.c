@@ -1,15 +1,17 @@
+#include <header.h>
+
 int main()
 {
 	char str[500]={0},result[500]={0};
 	int i,j,sum,p,len,x;
 	scanf("%s",str);
 	len=strlen(str);
-	for(i=1;i<=len;i++){//??
-		for(j=0;j<=len-i;j++){//??
+	for(i=1;i<=len;i++){
+		for(j=0;j<=len-i;j++){
 			x=-1;
 			for(p=0;p<500;p++)
 				result[p]='\0';
-			for(p=j;p<i+j;p++){//??
+			for(p=j;p<i+j;p++){
 				x++;
 				result[x]=str[p];
 			}

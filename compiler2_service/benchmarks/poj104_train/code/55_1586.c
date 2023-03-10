@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(char m);
 char trans(int n);
 int main()

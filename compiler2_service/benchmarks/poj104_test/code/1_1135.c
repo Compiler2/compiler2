@@ -1,3 +1,5 @@
+#include <header.h>
+
 int make(int x,int t)
 {
 	int ans=0,i;

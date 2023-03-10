@@ -37,38 +37,40 @@ def main():
     # register_env()
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
-
-        try:
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
-            env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
-            # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
-        except ServiceError:
-            print("AGENT: Timeout Error Reset")
-
-        for i in range(2):
-            print("Main: step = ", i)
+    with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
+        for benchmark in env.datasets.benchmarks():
             try:
-                observation, reward, done, info = env.step(
-                    action=env.action_space.sample(),
-                    observation_spaces=["programl"],
-                    reward_spaces=["perf_cycles"],
-                )
-                
+                breakpoint()
+                env.reset(benchmark=benchmark)
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
+                # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
             except ServiceError:
-                print("AGENT: Timeout Error Step")
-                continue      
-                  
-            print(reward)
-            print(info)
-            breakpoint()
-            g = from_int64_tensor(observation[0])
-            print(g.nodes())
-            
+                print("AGENT: Timeout Error Reset")
 
-            pdb.set_trace()
-            if done:
-                env.reset()
+            for i in range(2):
+                print("Main: step = ", i)
+                try:
+                    observation, reward, done, info = env.step(
+                        action=env.action_space.sample(),
+                        observation_spaces=["programl"],
+                        reward_spaces=["perf_cycles"],
+                    )
+                    
+                except ServiceError:
+                    print("AGENT: Timeout Error Step")
+                    continue      
+                    
+                print(reward)
+                print(info)
+                breakpoint()
+                g = from_int64_tensor(observation[0])
+                print(g.nodes())
+                
+
+                pdb.set_trace()
+                if done:
+                    env.reset()
 
 
 if __name__ == "__main__":

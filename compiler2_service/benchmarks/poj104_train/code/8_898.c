@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void take(int x[1000],int l);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int *x,int n)
 {
 	int *p,temp,*i,*j,m=(n-1)/2;

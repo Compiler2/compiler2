@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 
@@ -8,7 +10,7 @@ main()
          {scanf("%s",p[i]);
          l[i]=strlen(p[i]);}
       for (i=0;i<n;i++)
-          {if (flg)                    //shouwei 0  
+          {if (flg)                    
               if ((s+l[i]+1)<=80)
                  {printf(" %s",p[i]);
                  s=s+l[i]+1;}

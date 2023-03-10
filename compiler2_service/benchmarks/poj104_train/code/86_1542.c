@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	int n,m,sum,t,shen,d;
 	int ci[100];

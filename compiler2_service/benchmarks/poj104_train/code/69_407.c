@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char str1[252],str2[252],str3[253];

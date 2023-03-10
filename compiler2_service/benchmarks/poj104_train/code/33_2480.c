@@ -1,3 +1,5 @@
+#include <header.h>
+
 char b(char f);
 int main(){
    char s[256];

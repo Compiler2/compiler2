@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main(int argc, char* argv[])
@@ -10,12 +12,12 @@ int main(int argc, char* argv[])
     al=strlen (a);
 	bl=strlen (b);
 tmp1='0';tmp2='0';tmp3='0';tmp='0';
-	//if (a[al-2]=='7')
-		//{al=al;
-//printf ("%d\n",al);
+	
+		
 
-	//else
-		//al=al-1;
+
+	
+		
 	
 	for (i=al-1,j=bl-1,k=0;i>=0||j>=0;i--,j--,k++)
 	{
@@ -81,7 +83,7 @@ tmp1='0';tmp2='0';tmp3='0';tmp='0';
 		else 
 			break;
 	}
-//	printf ("%d%d",p,cl);
+
 	if (cl==1&&c[0]=='0')
 		puts(c);
 	else{
@@ -90,7 +92,7 @@ tmp1='0';tmp2='0';tmp3='0';tmp='0';
 	d[cl-p]='\0';
 	puts (d);
 	}
-	//printf ("%d %d %d \n",al,bl,cl);
+	
 	
 	return 0;
 }

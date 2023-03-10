@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void sssss(char *);
 int main(void)

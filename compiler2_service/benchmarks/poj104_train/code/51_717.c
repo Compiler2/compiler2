@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,len,i,t,r,cout[500]={0},max,j;

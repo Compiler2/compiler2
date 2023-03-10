@@ -1,3 +1,5 @@
+#include <header.h>
+
 int scan()
 {
 	int m;

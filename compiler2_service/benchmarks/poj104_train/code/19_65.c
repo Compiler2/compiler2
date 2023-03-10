@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ( )
 {
 	char sen[1000]="\0";char word_1[101]="\0";char word_2[101]="\0";char word_1_1[101]="\0";

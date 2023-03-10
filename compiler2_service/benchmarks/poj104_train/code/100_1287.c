@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,n,a[30]={0},k=0;
 char str[1000],*q;
 int main(){
@@ -19,6 +21,6 @@ int main(){
         if(a[i]!=0)
             printf("%c=%d\n",97+i,a[i]);
     }
-//scanf("%d",&i);
+
 return 0;
 }

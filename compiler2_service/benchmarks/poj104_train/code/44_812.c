@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pow(int x,int y)
 {
 int i,sum=1;

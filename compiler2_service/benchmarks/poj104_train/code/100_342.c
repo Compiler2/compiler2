@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
 {
 	int i,len,sumtimes=0,times[26];

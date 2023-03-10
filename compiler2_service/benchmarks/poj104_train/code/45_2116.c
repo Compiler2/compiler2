@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char z[100];
 	char q[50],p[50];
@@ -6,7 +8,7 @@ int main(){
 	gets(z); 
    
    
-//	for(i=0;z[i]!='')
+
 
 	n=strlen(z);
 	

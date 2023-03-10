@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -9,10 +11,10 @@ int main()
 	{
 		a[i]=(char *)malloc(sizeof(char)*100);
 		scanf("%s",a[i]);
-		//gets(a[i]);
+		
 	}
-	//for(i=0;i<n;i++)
-		//puts(a[i]);
+	
+		
 	int flag=1;
 	for(i=0;i<n;i++)
 	{

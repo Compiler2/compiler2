@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int m,n=0,y=0;
@@ -26,7 +28,7 @@ y=n*3+1;
 printf("%d*3+1=%d\n",n,y);
 n=y;
 }
-//printf("%d\n",y);
+
 }
 }
 return 0;

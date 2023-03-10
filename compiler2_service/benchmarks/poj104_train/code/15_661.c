@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,i,cur,s=0,sq,starow,stacol,endrow,endcol;

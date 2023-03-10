@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int *input(int n),*a,*b,*c,n1,n2;

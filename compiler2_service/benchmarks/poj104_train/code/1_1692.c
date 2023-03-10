@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,t,cnt;
 void f(int left,int last){
 	if(left<last) {if(left==1) cnt++;return;}

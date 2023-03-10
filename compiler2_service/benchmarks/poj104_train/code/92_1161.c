@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check (int n,int *a,int *b)
 {
     int i,j,x,y,*k;

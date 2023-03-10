@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {int t,i,n;
 	char a[110],*p=a;

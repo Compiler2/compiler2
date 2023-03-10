@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char a[90],b[90];
  gets(a);

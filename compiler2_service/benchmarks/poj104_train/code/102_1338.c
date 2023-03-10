@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -44,7 +46,7 @@ main()
         }
        }
     }
-  // printf("%d %d %d\n",c,d,n);
+  
    
     for(e=0;e<=c-1;e++)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int a[4],z,q,s,l,i,j,m,n;
@@ -166,7 +168,7 @@ int main()
        }
     }
   }
-  //getchar();
- // getchar();
+  
+ 
   return 0;
 }

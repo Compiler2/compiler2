@@ -1,3 +1,5 @@
+#include <header.h>
+
 double fun(int m)
 {
 int g;

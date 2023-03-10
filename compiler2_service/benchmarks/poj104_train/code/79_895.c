@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
   int m=1,n,i,j,k,r=0,T;
@@ -16,14 +18,14 @@ main()
                {j=j+1;}
              T=(T+1)%m;
            }
-         monkey[(T-1+m)%m]=0;//printf(" %d",T-1);
+         monkey[(T-1+m)%m]=0;
        }
      for(i=0;i<m;i++)
         {
           if(monkey[i])
             {
              printf("%d\n",i+1);
-             //break;
+             
              }
 
         }

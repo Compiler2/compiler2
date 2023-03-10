@@ -1,3 +1,5 @@
+#include <header.h>
+
 int due(int high[22][22],int i,int j)
 {
 	int z=1;

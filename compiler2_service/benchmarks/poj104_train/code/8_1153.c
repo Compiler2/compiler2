@@ -1,3 +1,5 @@
+#include <header.h>
+
 void changeplace(int n,int a[])
 {
 	int i,j,x;

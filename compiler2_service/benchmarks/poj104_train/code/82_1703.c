@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,x,y,i,t,total,max,a[100],b[100],c[100];

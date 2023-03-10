@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void right_shift_one(int* a,int n);
 void right_shift_array(int* a,int n,int m);

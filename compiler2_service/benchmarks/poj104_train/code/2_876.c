@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct Books
 {
@@ -17,24 +19,24 @@ int main()
 	for(i=0;i<n;i++)
 	{
 		scanf("%d %s",&a[i].num,a[i].author);
-	}//??a[];
+	}
 	for(i=0;i<n;i++)
 	{
 		for(j=0;;j++)
 		{
 			if(a[i].author[j]>=65 && a[i].author[j]<=90)
 			{
-				x=a[i].author[j];//x:65-90
+				x=a[i].author[j];
 				b[x-65]++;
 			}else{
 				break;
 			}
 		}
-	}//?????
-//	for(i=0;i<26;i++)
-//	{
-//		printf("%d\n",b[i]);
-//	}
+	}
+
+
+
+
 	for(i=0;i<26;i++)
 	{
 		if(b[i]>max)

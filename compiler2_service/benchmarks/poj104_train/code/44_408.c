@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int num){
 	int i,b,k,a=1000,x=0;
 	for(i=10;a>0;i=10*i,x++){

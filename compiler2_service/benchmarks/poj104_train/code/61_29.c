@@ -1,3 +1,5 @@
+#include <header.h>
+
 int value(int a){
 	int p=1,q=1,i,result;
 	if(a>=3){

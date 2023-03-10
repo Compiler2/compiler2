@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,l,max[5],min[5],sz[5][5],sum=0,big[5];

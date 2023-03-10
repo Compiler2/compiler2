@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	int sz[300];
@@ -13,7 +15,7 @@ int main(){
 		for(j=0;j<w;j++){
 			if(sz[i]==nsz[j]){
 				flag=1;
-			//	break;
+			
 			}
 		}
 		if(flag==0){

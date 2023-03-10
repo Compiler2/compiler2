@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   char a[201],b[201];
@@ -7,7 +9,7 @@ int main()
   scanf("%d",&mark);
   while(mark--){
   scanf("%s%s",a,b);
-  //???????
+  
   memset(a1,0,sizeof(a1));
   memset(b1,0,sizeof(b1));
   memset(c1,0,sizeof(c1));

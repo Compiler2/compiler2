@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s[110],a[110],b[110];
 	gets(s);

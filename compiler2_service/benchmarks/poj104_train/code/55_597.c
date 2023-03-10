@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[50],ans[50];
 int main()
 {

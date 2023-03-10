@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a,b,c,n,m,r,i,j,k;
@@ -7,7 +9,7 @@ main()
       int num[102];
       
       for(i=0;i<LEN;i++)
-        num[i]=numm[i]-'0';//printf("%d  ",num[i]);
+        num[i]=numm[i]-'0';
    if(LEN>2)
     {
       if(num[0]*10+num[1]>=13)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[301],i,n,max,second=-1;

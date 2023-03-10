@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
 {
 char ori[101],temp[4],res[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
  int n,a[20000],j,temp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char sen[300]={0}, word[50][50]={0}, ax[50], in[50];

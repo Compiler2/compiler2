@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,a,b,cout=0,r=0,sz[100]={0};

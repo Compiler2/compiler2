@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 unsigned int  year,month,date,a,b;

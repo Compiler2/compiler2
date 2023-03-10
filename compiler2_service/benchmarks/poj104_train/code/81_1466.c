@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huanhang(int sz[5][5],int x,int y)
 {
 	int k,t,i;

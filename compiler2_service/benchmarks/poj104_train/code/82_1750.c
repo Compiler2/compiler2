@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int xy[2],ok[100];

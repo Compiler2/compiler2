@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int an[100][100],i,j,n,s,a,b,flag=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,x,y,vTian[1000],vQi[1000],cnt,t;

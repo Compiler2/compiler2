@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int N, int min)
 {
 	int s=1, i;

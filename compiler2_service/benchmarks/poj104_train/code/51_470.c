@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
-	int n,i,j,k,a[500]={0},max,len,m;  //a????
-	char s[502],c[500][10],b[10]; //c????n?????
+	int n,i,j,k,a[500]={0},max,len,m;  
+	char s[502],c[500][10],b[10]; 
 	scanf("%d",&n);
 	scanf("%s",s);
 	len=strlen(s);

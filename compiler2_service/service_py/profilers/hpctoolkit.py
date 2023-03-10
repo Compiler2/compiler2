@@ -70,10 +70,16 @@ class Profiler:
         print_list(hpctoolkit_cmd)
         print('1++++++++++')
         for cmd in hpctoolkit_cmd:
-            run_command(
-                cmd,
-                timeout=self.timeout_sec,
-            )
+            try:
+                run_command(
+                    cmd,
+                    timeout=self.timeout_sec,
+                )
+            except:
+                run_command( # BUG: sometimes hpcrun fails for the first time, but terminates well when repeated 
+                    cmd,
+                    timeout=self.timeout_sec,
+                )
         print('2++++++++++')          
         try:  
             g_hatchet = ht.GraphFrame.from_hpctoolkit("db")

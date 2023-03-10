@@ -1,25 +1,27 @@
+#include <header.h>
+
 int main()
 {
     int i=0,flag=0;
     char buffer[10000];
-    gets(buffer);//however gets is dangerous
+    gets(buffer);
     
 while(buffer[i])
     {
-        if(flag) // spaced
+        if(flag) 
         {
             if(buffer[i]!=' ')
             {
                 printf("%c",buffer[i]);
-                flag=0;//reset flag
+                flag=0;
             }
         }
-        else if(!flag) //not spaced
+        else if(!flag) 
         {
  
            printf("%c",buffer[i]);
             if(buffer[i]==' ')
-                flag=1;//set flag
+                flag=1;
         }
         i++;
     }

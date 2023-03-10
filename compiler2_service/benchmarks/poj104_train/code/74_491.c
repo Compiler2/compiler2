@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fs(int m){
     int i;
     if(m==1||m==2) {

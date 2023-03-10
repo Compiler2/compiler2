@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(int n,int y[])
 {
 	int i,j,t,k;

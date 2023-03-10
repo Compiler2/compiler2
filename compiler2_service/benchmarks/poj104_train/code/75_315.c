@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int qiumax(int s[1005],int n);

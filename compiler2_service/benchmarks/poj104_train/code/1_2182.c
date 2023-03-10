@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int fen(int m,int k)
 {

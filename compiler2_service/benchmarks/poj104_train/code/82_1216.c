@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	int n,t=0,s=0;
 	int sz[100]={0},xueya[100][2];

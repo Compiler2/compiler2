@@ -1,3 +1,5 @@
+#include <header.h>
+
 char input[1000][256],output[1000][256];
 int main()
 {

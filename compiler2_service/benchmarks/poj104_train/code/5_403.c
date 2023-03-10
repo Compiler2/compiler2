@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main(){
 char a[51],b[51];
 int i,j=0,k;
 double n,t;
 scanf("%lf",&n);
-scanf("%s",a);//gets(a);
-scanf("%s",b);//gets(b);
+scanf("%s",a);
+scanf("%s",b);
 if(strlen(a)!=strlen(b)){printf("error");}
 else{
 	for(i=0;a[i]!='\0';i++){

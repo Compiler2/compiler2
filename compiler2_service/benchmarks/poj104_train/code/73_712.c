@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int i,j,c=0;
@@ -8,7 +10,7 @@ main()
     {
         scanf("%d",&a[i][j]);
     }
-    //??i??????????result[5][5]?
+    
     for (i=0;i<5;i++)
     {
         tempj=0;
@@ -21,7 +23,7 @@ main()
         }
         result[i][tempj]=1;
     }
-    //??j??????
+    
     for (j=0;j<5;j++)
     {
         tempi=0;

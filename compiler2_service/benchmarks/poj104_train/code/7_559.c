@@ -1,5 +1,7 @@
-//#include<stdlib.h>
-//#include<math.h>
+#include <header.h>
+
+
+
 int main()
 {
 	char s1[257],s2[257],s3[257];

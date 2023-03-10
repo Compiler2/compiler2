@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num;
 char right(char c)
 { char ch;

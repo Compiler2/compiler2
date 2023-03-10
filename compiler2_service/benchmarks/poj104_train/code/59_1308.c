@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int all,i,p,day,o,count;
 	char name[101][101],prename[101][101];

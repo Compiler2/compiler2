@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s1[101],s2[101]={'\0'},*p1=s1,*p2=s2;

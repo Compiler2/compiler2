@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int x[1001],int i,int n)
 {
      int k;int j;

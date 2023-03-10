@@ -1,3 +1,5 @@
+#include <header.h>
+
 int exchange(int [][5],int n,int m);
 int main(int argc, char* argv[])
 {

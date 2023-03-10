@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char w1[256],w2[256];

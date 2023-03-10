@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int fg(int k,int m)
 {

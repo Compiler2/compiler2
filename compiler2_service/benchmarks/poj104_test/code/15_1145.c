@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,u[1000][1000],i,j,chang=0,bian=0,sum;

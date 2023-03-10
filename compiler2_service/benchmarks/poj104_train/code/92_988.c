@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,a[1000],b[1000],i,j,t,m;
@@ -18,7 +20,7 @@ int main()
 		m=0;
 		for(;n>0;n--)
 		{
-			//1 
+			
 		    if(a[0]>b[0])
 		    {
 			    m++;
@@ -28,18 +30,18 @@ int main()
 				    b[i]=b[i+1];
 			        } 
 		        }
-		    //2
+		    
 		    else if(a[0]<b[0])
 		    {			
     			m--;
     			for(i=0;i<n-1;i++)b[i]=b[i+1];
         	    }
-    		//3
+    		
     		else if(a[0]==b[0]&&a[n-1]>b[n-1])
     		{
     			m++;
     		    }
-    		//4
+    		
     		else if(a[0]==b[0]&&a[n-1]<=b[n-1])
     		{
     			if(a[n-1]<b[0])m--;

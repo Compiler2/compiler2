@@ -1,3 +1,5 @@
+#include <header.h>
+
 main ()
 {int x1,x2,y1,y2;
 int i,j,k;
@@ -22,7 +24,7 @@ for(j=0;j<y2;j++)
 {c[i][j]=0;
 for(k=0;k<y1;k++)
 {c[i][j]=c[i][j]+(a[i][k])*(b[k][j]);
-//printf("%d %d %d\n",i,j,c[i][j]);
+
 }
 }
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int s[50];
 float l[50];
@@ -5,7 +7,7 @@ char str[10];
 
 int main()
 {
-	//freopen("data.txt","r",stdin);
+	
 	int n,i,j;
 	float t;
 	int tp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char change(char c){
     if('A'<=c&&c<='Z')return c-'A'+'a';
     return c;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[22]={0,1,1};
 int fibo(int n){
 	if(n==1||n==2)return 1;

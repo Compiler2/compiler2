@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[101],*p,inversed[101],*q,*r;

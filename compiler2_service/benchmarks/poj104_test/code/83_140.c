@@ -1,3 +1,5 @@
+#include <header.h>
+
 float mgpa(int y)
 {
 	int gpa;

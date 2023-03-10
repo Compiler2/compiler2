@@ -1,3 +1,5 @@
+#include <header.h>
+
 main() 
 {
        int n;
@@ -19,7 +21,7 @@ main()
                            {
                            c[m]=b[i][m];
                            }
-                           //c[m]=0;
+                           
                            for(j=i+1;j<len-n+1;j++)
                            {
                                                    char d[n+1];
@@ -27,7 +29,7 @@ main()
                                                    {
                                                    d[k]=b[j][k];
                                                    }
-                                                   //d[k]=0;
+                                                   
                                                    if(strcmp(c,d)==0)
                                                    num[i]++;
                            }

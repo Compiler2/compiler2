@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int k,m,n,a[100][100],i1,i2,i3,j,total;
@@ -13,7 +15,7 @@ int main()
 			{
 				scanf(" %d",&a[i2][i3]);
 			}
-		}//input
+		}
 
 		if(m==1&&n==1)
 		{

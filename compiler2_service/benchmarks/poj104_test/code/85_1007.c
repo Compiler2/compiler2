@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char *zfc)
 {
 	char *p;

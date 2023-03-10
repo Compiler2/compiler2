@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bb(int n,int b[300]){
 	 int i=0,j=0,k;
 	 for(i=0;i<n-1;i++)

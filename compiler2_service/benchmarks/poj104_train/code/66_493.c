@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(int x);
 int main (){
 	int n,b,c;

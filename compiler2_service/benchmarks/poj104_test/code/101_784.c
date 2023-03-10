@@ -1,18 +1,20 @@
-//Patricia.Xiao
-//??
+#include <header.h>
+
+
+
 int main()
 {
-	int a,b,c,A,B,C,aw,bw,cw;  //????????????????????????
-	int i,j,t;                                   //???????????
-	char m[3]={'A','B','C'},p;     //????????????
-	int n[3];                            //????????
-	for(a=1;a<=3;a++)      //????
+	int a,b,c,A,B,C,aw,bw,cw;  
+	int i,j,t;                                   
+	char m[3]={'A','B','C'},p;     
+	int n[3];                            
+	for(a=1;a<=3;a++)      
 	{
 		for(b=1;b<=3;b++)
 		{
 			for(c=1;c<=3;c++)
 			{
-				aw=((b>a)+(c==a));    //????????
+				aw=((b>a)+(c==a));    
 				bw=((a>b)+(a>c));
 				cw=((c>b)+(b>a));
 				if(((a>b)&&(aw<bw))||((b>a)&&(bw<aw))||((b==a)&&(bw==aw)))
@@ -21,7 +23,7 @@ int main()
 					{
 						if(((a>c)&&(aw<cw))||((c>a)&&(cw<aw))||((c==a)&&(cw==aw)))
 						{
-							A=a;B=b;C=c; //????????
+							A=a;B=b;C=c; 
                                                         break;break;break;
 						}
 					}
@@ -29,8 +31,8 @@ int main()
 			}
 		}
 	}
-	n[0]=A;n[1]=B;n[2]=C;                //???????
-	for(i=2;i>0;i--)                            //???????????
+	n[0]=A;n[1]=B;n[2]=C;                
+	for(i=2;i>0;i--)                            
 	{
 		for(j=0;j<i;j++)
 		{
@@ -42,6 +44,6 @@ int main()
 			}
 		}
 	}
-	printf("%c%c%c",m[0],m[1],m[2]);   //?????
+	printf("%c%c%c",m[0],m[1],m[2]);   
 	return 0;
 }

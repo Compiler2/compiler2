@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,j,a[12]={100},b[12]={100};

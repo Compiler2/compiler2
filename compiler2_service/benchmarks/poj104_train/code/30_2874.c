@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n)
 {
 	int m1,m2,flag=0;

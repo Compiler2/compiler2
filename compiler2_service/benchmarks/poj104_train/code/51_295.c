@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[510],mark[6];

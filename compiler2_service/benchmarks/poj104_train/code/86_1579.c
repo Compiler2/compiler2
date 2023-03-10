@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,over,j,i,m,zongshu,jieshu,a,k;
 	int leiji[60];

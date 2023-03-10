@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jis(int x, int y, int a[5][5]);
 void main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int year,int month,int day)
 {
     int x;

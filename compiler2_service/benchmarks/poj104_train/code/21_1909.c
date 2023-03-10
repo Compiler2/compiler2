@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 
-	//freopen("in.txt", "r", stdin);
+	
 
 	int a[300];
 	int n,i,j,k,l,m;

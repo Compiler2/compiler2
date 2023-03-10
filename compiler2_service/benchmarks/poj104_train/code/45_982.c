@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int i,lenw,lens,a=100,j;

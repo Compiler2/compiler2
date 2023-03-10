@@ -1,3 +1,5 @@
+#include <header.h>
+
 int l1,l2,a1[50],a2[50],a3[100];
 void f1(int a1[],int a2[])
 {

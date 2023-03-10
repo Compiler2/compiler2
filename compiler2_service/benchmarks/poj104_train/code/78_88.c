@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[4]={20,40,10,50},i,j,t1,max;

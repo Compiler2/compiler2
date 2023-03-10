@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s1[10000],s2[10000],s[10000];
 int Len(char *s)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char an[1000][256];
 	int n,i,j,bn[1000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,n,m,j,k,nx,f,ix,flag;
@@ -28,7 +30,7 @@ int main()
                 k++;
                 ix=ix/10;
             }
-            f=0;//printf("%d\n",k);
+            f=0;
             for (j=0;j<k/2+1;j++)
             {
                 if (s[j]!=s[k-j-1])

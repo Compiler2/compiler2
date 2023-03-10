@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n;
@@ -12,7 +14,7 @@ int main()
          for( j=0;j<len;j++ )
          {
               temp[ch[j]-97]++;
-             // cout<<temp[ch[j]-97]     <<endl;
+             
          }
         /* for( int i=0;i<26;i++ )
          {

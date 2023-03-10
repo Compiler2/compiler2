@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,m,i,j,t,k,num[510]={0},max,sum=0;

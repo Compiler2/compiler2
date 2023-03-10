@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a, max, sec=-1, i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -15,7 +17,7 @@ for(i=0;i<256;i++)
 		{
 			k=1;break;}
 	}
-	//printf("%d",k);
+	
 	if(k==0)
 	{	for(j=0;j<i;j++)
 			printf("%c",a[j]);
@@ -33,7 +35,7 @@ for(i=0;i<256;i++)
 			printf("%c",a[j]);
 	
 	}
-//	printf("\n");
+
 	return 0;
 }
 	

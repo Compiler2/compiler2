@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sort(int a[],int n)
 {
 	int t,i,j;
@@ -35,7 +37,7 @@ int main()
 		}
 		
 		x=a[0];
-		for(i=0;i<n;i++)//????????????
+		for(i=0;i<n;i++)
 		{
 			if(a[i]!=x||b[i]!=x)
 				break;
@@ -48,7 +50,7 @@ int main()
 		
 		
 		}
-		sort(a,n);//???a?b??
+		sort(a,n);
 		sort(b,n);
 
 		for(i=n-1;i>=0;i--)

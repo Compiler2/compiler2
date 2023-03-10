@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {float a[101]={0},gpa,sumjidian=0,sumxuefen=0;
  int i,n,b[101],c[101];

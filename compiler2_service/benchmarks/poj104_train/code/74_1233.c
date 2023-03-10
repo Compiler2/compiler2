@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pan(int n)
 {
     int i;

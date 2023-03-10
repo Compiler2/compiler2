@@ -1,3 +1,5 @@
+#include <header.h>
+
 int time[200];
 char word[400];
 int len;

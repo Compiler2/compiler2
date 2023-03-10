@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int m,int (*p)[5])
 {
 	int t,i;

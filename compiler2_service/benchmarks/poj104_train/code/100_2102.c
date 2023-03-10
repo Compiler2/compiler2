@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[300],b[100];
 	int flag=0,i,k,len,c[52]={0};

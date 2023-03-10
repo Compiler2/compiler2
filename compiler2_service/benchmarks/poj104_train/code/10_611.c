@@ -1,4 +1,6 @@
-//?? - ????-??????????? 
+#include <header.h>
+
+
  
 
 int main()
@@ -16,7 +18,7 @@ int main()
     getchar();
        
 }
-int num(int n,int*p)//???????? 
+int num(int n,int*p)
 {
     int i,j,tem=0,a=0;
     int *max=(int*)malloc(sizeof(int)*n);

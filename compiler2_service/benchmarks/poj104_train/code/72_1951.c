@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int N=1000;
 int m,n;

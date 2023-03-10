@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,time[52]={0},k=0;
 	char zfc[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sz[100][100];
 int main(){
 	int n,m,i,j,k,a1,a2,b1,b2;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int f_1(int);
 int f_2(int,int);

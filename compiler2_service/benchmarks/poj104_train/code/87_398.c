@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,a,b,c,d,e,f,j,k;
    for(;;){scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);

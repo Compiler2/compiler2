@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[1001],c;

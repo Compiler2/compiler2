@@ -1,3 +1,5 @@
+#include <header.h>
+
 int xa[300],xb[300],xx[300];
 char a[300],b[300];
 int main(){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char name[100];
 double s[100];
 int num[1000][1000];

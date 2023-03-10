@@ -1,3 +1,5 @@
+#include <header.h>
+
 int decomposition(int m,int k){
     int res=1;
     for(int i=k;i*i<=m;i++){

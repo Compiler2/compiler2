@@ -1,3 +1,5 @@
+#include <header.h>
+
 int S(int x)
 {
     int i=2,a=0;

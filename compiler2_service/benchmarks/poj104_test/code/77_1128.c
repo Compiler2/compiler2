@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char a[],int n,char x,char y)
 {
      int i,j,k=1;

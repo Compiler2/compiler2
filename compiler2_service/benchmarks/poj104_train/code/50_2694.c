@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int date(int month);
 int daycount(int month);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct book
 {
        int num;
@@ -15,7 +17,7 @@ int main()
     }
     for(i=0;i<m;i++)
     {
-                    //scanf("%d %s",&b[i].num,&b[i].au);
+                    
                     for(j=0;;j++)
                     {
                                  c=b[i].au[j];

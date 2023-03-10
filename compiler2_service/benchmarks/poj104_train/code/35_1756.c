@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sz[8][8];
 	int r,l;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int getday(int year,int month);

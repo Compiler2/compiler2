@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -16,7 +18,7 @@ int main()
 			secondmax=a[n];
 		}
 		if(c=='\n')
-			break;						//continue????????????????break????
+			break;						
 	}
 	if(secondmax==0)
 		printf("No\n");

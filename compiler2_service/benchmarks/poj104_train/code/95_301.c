@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char A[81]={0},B[81]={0};
@@ -20,7 +22,7 @@ int main()
 			B[i]=B[i]-32;
 		}
 	}
-	//printf("%s %s",A,B);
+	
 	if(strlen(A)<strlen(B))
 		t=strlen(A);
 	else

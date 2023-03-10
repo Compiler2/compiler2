@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hw(int m)
 {
 	int s = 0;

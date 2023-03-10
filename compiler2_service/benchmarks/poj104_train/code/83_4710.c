@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,F=0,i;

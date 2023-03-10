@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char s[500],c,*max,*min,*p;

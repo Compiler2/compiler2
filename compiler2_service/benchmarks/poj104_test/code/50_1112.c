@@ -1,3 +1,5 @@
+#include <header.h>
+
 int w,mon,ord;
 int main()
 {

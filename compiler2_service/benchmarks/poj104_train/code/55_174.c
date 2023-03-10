@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -22,7 +24,7 @@ int main()
 	{while(sum>0)
 	{w[q]=sum%b;
 	sum=sum/b;
-	q++;}//*
+	q++;}
 	for(i=0;i<q;i++)
 	{r[q-1-i]=zhuan[w[i]];
 	}

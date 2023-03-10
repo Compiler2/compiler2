@@ -1,3 +1,5 @@
+#include <header.h>
+
  main()
 {
     char str1[1000];
@@ -29,7 +31,7 @@
     
      printf("\n");
      c=str1[i+1];
-   //  if(c<10) printf("%c\n",c);
+   
 	  printf("%d\n",c-48);
     }
     return 0;

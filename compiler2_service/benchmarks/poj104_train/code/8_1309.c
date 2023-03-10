@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n1;int n2;int i;int a[100]={0};int b[100]={0};int c[200]={0};
 void scanfing(/*n1,n2,i,a[100],b[100]*/)
 {

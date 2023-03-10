@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
 char zfc[300],i;
 scanf("%s",zfc);
 int k=strlen(zfc);
 int x=0;
-// printf("%d",k);
+
 for(i='A';i<='Z';i++)
 {
 int m=0;

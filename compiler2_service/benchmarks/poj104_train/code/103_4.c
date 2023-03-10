@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -20,7 +22,7 @@ main()
             printf("(%c,%d)",c,x);
             i=j;
       }
-      //puts(s);
+      
       printf("\n");
       getchar();
       getchar();

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int convert_1(char a){
    if (a >= '0' && a<= '9') return a - '0';
    if (a >= 'a' && a<= 'z') return a - 'a' + 10;

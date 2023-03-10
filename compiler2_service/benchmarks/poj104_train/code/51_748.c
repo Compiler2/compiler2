@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int count[500],m=0,al;
@@ -11,13 +13,13 @@ main()
 	al=strlen(a);
 	for(i=0;i<=al-n;i++)
 	{
-		//?????b 
+		
 		for(j=0;j<n;j++)
 		{
 			b[j]=a[i+j];
 		}
 		b[n+i]='\0';
-		//??c??? 
+		
 		for(k=i;k<=al-n;k++)
 		{
 			for(j=0;j<n;j++)
@@ -29,13 +31,13 @@ main()
 			count[i]++;
 		}
 	}
-	//?????
+	
 	for(i=0;i<al-n;i++)
 	{
 		if(count[m]<count[i])
 		m=i;
 	}
-	//?? 
+	
 	if(count[m]==1)
 	printf("NO");
 	else

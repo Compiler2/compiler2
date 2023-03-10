@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct xue
 {
 	int ID;

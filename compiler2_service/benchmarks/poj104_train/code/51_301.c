@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main(){
 	char a[500];
 	int n,max=0;

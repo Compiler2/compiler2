@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 int m,n,counta,countb,x,y;
 double result;

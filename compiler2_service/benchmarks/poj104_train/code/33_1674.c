@@ -1,3 +1,5 @@
+#include <header.h>
+
 char st[1000][256];
 int n,i,l,j;
 int main()

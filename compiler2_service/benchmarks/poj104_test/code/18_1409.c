@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,array[101][101],sum[101]={0},k;
 void cut(int m)
 {

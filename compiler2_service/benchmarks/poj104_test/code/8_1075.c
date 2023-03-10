@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[233],b[233];
 int n,m,i,j,z;
 void shuru(int p)

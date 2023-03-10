@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct std
 {
 	char name[20];

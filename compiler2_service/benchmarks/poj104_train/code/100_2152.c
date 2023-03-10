@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,sum[30]={0},tot[30]={0},x=0;

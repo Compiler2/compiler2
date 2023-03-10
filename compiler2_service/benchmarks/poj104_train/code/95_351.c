@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int i;
@@ -30,15 +32,15 @@ int main(int argc, char* argv[])
 	/*
 		if(strcmp(s1,s2)==0){
 			printf("=");
-//			break;
+
 		}
 		if(strcmp(s1,s2)<0){
 			printf("<");
-//			break;
+
 		}
 		if(strcmp(s1,s2)>0){
 			printf(">");
-//			break;
+
 
 	}
 	

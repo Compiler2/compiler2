@@ -1,4 +1,6 @@
-//#include <string.h>
+#include <header.h>
+
+
 char * strrev(char * a){
      char *end;
 	 char *beg = a ;
@@ -46,6 +48,6 @@ int main()
 	for(;p>=a; p--)
 		printf("%d",(int)*p);
 	printf("\n");
-	//scanf("%s",a);
+	
 	return 0; 
 }

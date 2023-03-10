@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char a[266],s[22],z[22];
 gets(a);

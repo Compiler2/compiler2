@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k,p,t=0,n,a[500],b[500],temp;
 
 char str[1000],c1,c2;
@@ -8,7 +10,7 @@ void f(int j){
         if((str[i]==c1)&&(str[i+j]==c2)){
             a[t]=i;
             b[t]=i+j;
-            //printf("%d %d\n",i,i+j);
+            
             t++;
             str[i]=' ';
             str[i+j]=' ';

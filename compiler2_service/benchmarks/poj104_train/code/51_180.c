@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	char c[505]={0},str[505][6]={'\0'};

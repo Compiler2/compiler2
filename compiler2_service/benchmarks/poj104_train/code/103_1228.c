@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -18,7 +20,7 @@ for(i=0;i<len;i++)
 {
                   if(s[i]-'Z'>0)
                   s[i]=s[i]+'A'-'a';
-                  //printf("%c",s[i]);
+                  
                   
 }
 
@@ -32,7 +34,7 @@ else
  {       
  for(i=1,j=0;i<len;i++)    
     {
-                          if(k==s[i])//||k==(s[i]+'A'-'a')||k==(s[i]-'A'+'a'))
+                          if(k==s[i])
                           a[j]++;
                           else
                           {

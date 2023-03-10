@@ -1,3 +1,5 @@
+#include <header.h>
+
 void guiling(int a[100][100],int n)
 {
 	int i,j,min;

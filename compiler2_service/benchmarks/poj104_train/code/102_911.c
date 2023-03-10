@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k,p;
 	double sg,ns[50],nv[50],e;

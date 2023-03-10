@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char input[10000][300];
 	char output[10000][300];

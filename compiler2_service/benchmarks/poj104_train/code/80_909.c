@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[13][32],b[373],i,j,k,y1,m1,d1,y2,m2,d2,q,x1,x2,q1,q2,fuhao;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j;
@@ -6,7 +8,7 @@ int main()
 	int *a=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",a+i);//a[i]====*a+i;
+		scanf("%d",a+i);
 	}
 	int t,t1;
 	for(j=0;j<m;j++)

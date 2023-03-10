@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 char t[150],x[150];
 char *pt=t,*px=x;

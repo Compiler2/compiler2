@@ -1,3 +1,5 @@
+#include <header.h>
+
 char investigate(char a[])
 {
 	int i,j,k,n;

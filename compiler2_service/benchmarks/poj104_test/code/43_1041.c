@@ -1,3 +1,5 @@
+#include <header.h>
+
 int IsPrime(int a)
 {
 	int i,flag=0;

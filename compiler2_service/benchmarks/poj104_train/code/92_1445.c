@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
     int n,y,z,i,s,t,u,j,k,l,m,win,lose,money;
     int a[1001],b[1001];
-//    scanf("%d",&k);
-//  for(j=1;j<=k;j++)
+
+
   for(;;)
   {
     scanf("%d",&n);
@@ -16,7 +18,7 @@ if(n==0) break;
     {
          scanf("%d",&b[l]);
     } 
-//??????
+
     if(n>=2)
     {
          for(y=0;y<=n-2;y++)
@@ -38,7 +40,7 @@ if(n==0) break;
               }
          }
     }
-//??????
+
     win=0;
     lose=0;
     if(n>=2)

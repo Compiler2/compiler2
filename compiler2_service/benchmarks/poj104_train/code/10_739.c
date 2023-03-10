@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct missile
 {
     int num;
@@ -9,16 +11,16 @@ int main()
 {
     int i=0,j=0,sum=0,max=0;
     scanf("%d",&sum);
-    //a=(struct missile*)malloc(sum*sizeof(struct missile));
-    for(i=0;i<=sum-1;i++)       //read in
+    
+    for(i=0;i<=sum-1;i++)       
     {
         scanf("%d",&a[i].high);
     }
-    for(i=sum-1;i>=0;i--)       //find num
+    for(i=sum-1;i>=0;i--)       
     {
         f(i,sum);
     }
-    for(i=0;i<=sum-1;i++)       //find max
+    for(i=0;i<=sum-1;i++)       
     {
         if(a[i].num>max){max=a[i].num;}
     }
@@ -26,7 +28,7 @@ int main()
 }
 void f(int n,int sum)
 {
-    int i=0,t=1;//a[n].num???1?
+    int i=0,t=1;
     if(n==sum-1)
     {a[n].num=1;}
     else
@@ -37,7 +39,7 @@ void f(int n,int sum)
             if(a[n].high>=a[i].high)
             {
                 if(a[i].num+1>a[n].num)
-                {a[n].num=a[i].num+1;}      //??????  .XXX
+                {a[n].num=a[i].num+1;}      
             }
         }
     }

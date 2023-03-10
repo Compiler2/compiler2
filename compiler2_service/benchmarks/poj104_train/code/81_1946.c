@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(int m,int n) {
 	if (m<5&&n<5) {
 		return 1;

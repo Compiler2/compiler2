@@ -1,4 +1,6 @@
-//?????
+#include <header.h>
+
+
 char main()
 {
 	int i,n,j,f[1000],l[1000];

@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	int n;
 	int i,j,k;
-	//int ftianji,ltianji;
-	//int fqiwang,lqiwang;
+	
+	
 	int tianji[1000];
 	int qiwang[1000];
 	int temptianji,tempqiwang;
@@ -45,42 +47,42 @@ int main()
 	int tlast = n - 1;
 	int kstart = 0;
 	int klast = n - 1;
-	int cnt = 0;//???
-  for(i = 0;i < n;i++)//????????????   
+	int cnt = 0;
+  for(i = 0;i < n;i++)
   {   
-   if(tianji[tstart]>qiwang[kstart])//tstart????????????????tianji???????   
+   if(tianji[tstart]>qiwang[kstart])
    {   
     cnt++;   
     tstart++;   
     kstart++;   
     continue;   
    }   
-   if(tianji[tstart]<qiwang[kstart])//tianji????tianji???????????   
+   if(tianji[tstart]<qiwang[kstart])
    {   
     cnt--;   
     kstart++;   
     tlast--;   
     continue;   
    }   
-   if(tianji[tstart] == qiwang[kstart])//??????   
+   if(tianji[tstart] == qiwang[kstart])
    {   
-    if(tianji[tlast] < qiwang[klast])//tianji?????????????????????   
+    if(tianji[tlast] < qiwang[klast])
     {   
      tlast--;   
      kstart++;   
      cnt--;   
      continue;   
     }   
-    if(tianji[tlast] > qiwang[klast])//tianji?????????????????   
+    if(tianji[tlast] > qiwang[klast])
     {   
      tlast--;   
      klast--;   
      cnt++;   
      continue;   
     }   
-    if(tianji[tlast] == qiwang[klast])//?????? ???tianji?????????   
+    if(tianji[tlast] == qiwang[klast])
     {   
-     if(tianji[tlast] < qiwang[kstart])//??tianji??????????cnt?1   
+     if(tianji[tlast] < qiwang[kstart])
       cnt--;   
      kstart++;   
      tlast--;   

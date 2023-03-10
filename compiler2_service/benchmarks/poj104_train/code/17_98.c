@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char zfc[105];
@@ -5,7 +7,7 @@ int main()
     char present[105];
     while(scanf("%s",zfc)>0)
     {
-        //scanf("%s",zfc);
+        
         strcpy(sign,zfc);
         strcpy(present,zfc);
         int left=0,right=0;

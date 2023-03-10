@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int tumour[256][256],n,i,j,x1=-1,y1,x2=-1,y2,s;

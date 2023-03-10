@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[101][10]={0},p[101][10]={0},q[101][10]={0};

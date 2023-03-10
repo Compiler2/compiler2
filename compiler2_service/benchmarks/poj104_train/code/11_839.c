@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isrunnian(int year)
 {
 	if(year%400==0)

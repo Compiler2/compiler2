@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[100];
@@ -18,8 +20,8 @@ int main()
 			break;
 		}
 	}
-	//for(i=0;i<=j;i++)
-		//printf("%d\n",j);
+	
+		
     for(i=j;i>0;i--)
 	{
 		for(k=b[i-1]+1;k<b[i];k++)

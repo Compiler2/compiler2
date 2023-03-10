@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int d,day,row,list,n,sum;
     char A[102][102];

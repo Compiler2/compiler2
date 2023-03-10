@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void paixu(int a[],int n)
 {
@@ -14,7 +16,7 @@ void paixu(int a[],int n)
 
                }
                }
-               }//for(i=0;i<n;i++)printf("%d ",a[i]);printf("\n");
+               }
                
  }
 long int most(int a[],int b[],int n)

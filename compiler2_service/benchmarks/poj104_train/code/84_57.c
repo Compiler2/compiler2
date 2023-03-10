@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	signed int n,num[1000],i,out[2];

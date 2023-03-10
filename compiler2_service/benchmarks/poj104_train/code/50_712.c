@@ -1,3 +1,5 @@
+#include <header.h>
+
 int nn(int x);
 int main(){
 	int h[12],i,y,r=0;

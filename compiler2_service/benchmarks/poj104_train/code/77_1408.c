@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[101];
 int n=0;
 void f(int m,char a,char b)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char c[501]={'\0'},ch[501][6]={{'\0'}};

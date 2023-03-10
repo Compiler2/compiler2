@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dp[100];
 int main(void)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int r[13],p[13];
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int es[6],cc[6],i,A,B,C,D,E;

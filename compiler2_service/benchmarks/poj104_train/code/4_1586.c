@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int *p1,int *p2,int m,int n)
 {
     do{printf("%d\n",*p2);p2+=n-1;}

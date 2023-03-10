@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char dc[10000];
 	gets(dc);

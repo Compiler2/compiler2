@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,math,chinese,std_num;

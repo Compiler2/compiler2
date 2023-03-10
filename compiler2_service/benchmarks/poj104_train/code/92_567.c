@@ -1,4 +1,6 @@
-void array(int *a,int n)          //array larger-less
+#include <header.h>
+
+void array(int *a,int n)          
 {
      
      int i,j,t;

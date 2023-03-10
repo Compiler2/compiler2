@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int m){
 	if(n>=5||m>=5||m<0||n<0){
 		return 0;

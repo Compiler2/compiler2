@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int an[5][5],*q=an[0],i,n,m;

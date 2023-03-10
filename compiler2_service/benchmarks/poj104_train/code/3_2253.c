@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int q,int t,int b[])
 {
 	int i,j;

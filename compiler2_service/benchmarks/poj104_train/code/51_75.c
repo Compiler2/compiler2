@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[500];
 	char ng[500][500];

@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,l,k,p,q;
 	char c[500],temp[500]={0};
 	gets(c);
 	l=strlen(c);
-	for(i=1;i<l;i++)  //i+1???
+	for(i=1;i<l;i++)  
 	{
-		for(j=0;j<l-i;j++)  //j????
+		for(j=0;j<l-i;j++)  
 		{
 			for(k=0;k<=i;k++)
 			{

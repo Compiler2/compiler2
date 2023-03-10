@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main(){
     int n;
-  //  int xiangsu[1000][1000];
+  
     int head1;
     int head2;
     int end1;

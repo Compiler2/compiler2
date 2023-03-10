@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sta(char a[3000],int i)
 {
 	int j,n=0;

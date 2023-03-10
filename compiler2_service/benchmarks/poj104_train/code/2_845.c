@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,len,i,j,book[1000],num[26]={0},k=0,t,m=0;

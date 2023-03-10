@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,i,j,l,t,f[320],sum[320];

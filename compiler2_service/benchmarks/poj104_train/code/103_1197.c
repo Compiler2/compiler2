@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[1005];
@@ -9,7 +11,7 @@ int main()
 		s[i]=s[i]-'a'+'A';
 		i++;
 	}
-	i=0;                           //i?????????? 
+	i=0;                           
 	while(s[i]!='\0')
 	{
 		if((s[i])!=(s[i+1]))

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,year,month,day,n=0;
 	int dayofmonth1[12]={31,28,31,30,31,30,31,31,30,31,30,31},dayofmonth2[12]={31,29,31,30,31,30,31,31,30,31,30,31};

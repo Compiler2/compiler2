@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int convert(int *,int n,int m);

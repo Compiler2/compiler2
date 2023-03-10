@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,l[200],jud=0;

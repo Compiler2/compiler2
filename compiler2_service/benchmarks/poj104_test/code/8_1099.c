@@ -1,3 +1,5 @@
+#include <header.h>
+
 int comp(const void *a,const void *b);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int h[20][20];
 int sort(int l,int r)
 {if(l>0)

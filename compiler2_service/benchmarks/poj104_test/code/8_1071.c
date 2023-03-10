@@ -1,3 +1,5 @@
+#include <header.h>
+
 int A,B;
 int a[250],b[250],c[501];
 void input()

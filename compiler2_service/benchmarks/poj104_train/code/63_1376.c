@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[2][102][102] , x[2] , y[2] , t;
 
@@ -23,6 +25,6 @@ int main ()
       }
      printf ( "\n" );
     }
-  // getchar (); getchar ();
+  
    return 0;
 }

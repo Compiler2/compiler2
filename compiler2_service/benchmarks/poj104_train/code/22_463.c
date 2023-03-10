@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[301];
 char b[301];
 int main()

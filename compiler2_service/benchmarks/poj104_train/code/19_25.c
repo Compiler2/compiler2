@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,7 +7,7 @@ int main()
 	gets(s);
 	gets(a);
 	gets(b);
-//	printf("%s %s %s",a,b,s);
+
 	int i,j,k,ls,la,lb,r;
 	ls=strlen(s);
 	la=strlen(a);
@@ -31,7 +33,7 @@ int main()
 					printf("%c",b[k]);
 				}
 					i=i+la-1;
-					r=0;//?????
+					r=0;
 					
 				
 			}

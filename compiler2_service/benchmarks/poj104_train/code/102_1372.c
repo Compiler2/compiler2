@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct human
 {
        char ch[7];

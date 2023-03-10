@@ -1,3 +1,5 @@
+#include <header.h>
+
 int killer(int n,int m)
 {
     int a[301]={0},i=0,j=1,k=n;

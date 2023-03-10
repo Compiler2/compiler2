@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s1[256];
@@ -5,7 +7,7 @@ int main()
 	char s3[256];
 	int i,j,q;
 	scanf("%s\n%s\n%s",s1,s2,s3);
-//	printf("%s %s %s",s1,s2,s3);
+
 	int k1=strlen(s1);
 	int k2=strlen(s2);
 	for(i=0;i<k1;i++)

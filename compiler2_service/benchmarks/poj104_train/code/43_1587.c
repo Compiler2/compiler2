@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[91],m,i,j,n,k,l,t;
@@ -5,7 +7,7 @@ main()
       a[2]=3;
       a[3]=5;
       a[4]=7;
-      n=4;       // ?????? 
+      n=4;       
       scanf("%d",&m);
       for(i=11;i<=m;i++)
          {

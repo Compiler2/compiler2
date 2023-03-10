@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void shuru(int array[100],int x);

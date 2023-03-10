@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fun(int x,int y)
 {
 	int z=0;
@@ -16,7 +18,7 @@ int main()
 	do
 	{
 		memset(sum,0,sizeof(sum));
-		max=-1000;//?????????
+		max=-1000;
 		for(i1=0;i1<n;i1++)
 		{
 			scanf("%d",&t[i1]);
@@ -44,7 +46,7 @@ int main()
 					w[j]=w[j+1];
 					w[j+1]=media;
 				}
-		}//??
+		}
 		for(i=0;i<=n/2;i++)
 		{
 			for(i1=0;i1<n;i1++)
@@ -59,5 +61,5 @@ int main()
 		}
 		printf("%d\n",max*200);	
 		scanf("%d",&n);
-	}while(n!=0);//??????
+	}while(n!=0);
 }

@@ -1,7 +1,9 @@
+#include <header.h>
+
 double cal(int i,int n,double x)
 { double s;
   if (i==n)  return x;
-  else{ s=1+1/cal(i+1,n,x);return s;}//1+1/cal(i+1,n,x);
+  else{ s=1+1/cal(i+1,n,x);return s;}
 }
 int main()
 {

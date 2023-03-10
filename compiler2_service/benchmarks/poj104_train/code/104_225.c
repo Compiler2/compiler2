@@ -1,3 +1,5 @@
+#include <header.h>
+
 void check(int x,int y)
 {
 	if(x==y)

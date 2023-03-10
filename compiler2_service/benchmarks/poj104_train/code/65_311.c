@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[210],b[210],n;
 int pd(int a,int b)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,a,i,j,sgh,sgh60;

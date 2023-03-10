@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char da[501],db[501];

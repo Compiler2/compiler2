@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int feibonaqi(int n1);
 int main()

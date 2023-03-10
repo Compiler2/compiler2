@@ -1,5 +1,7 @@
+#include <header.h>
 
-void bubble(int x[][2],int n)          //&Ecirc;&yacute;ื้&Atilde;ฐ&Aring;&Yacute; &pound;&not;n&Icirc;&ordf;&Ecirc;&yacute;ื้&sup3;ค&para;&Egrave;
+
+void bubble(int x[][2],int n)          
 {
     int i,j,y;
     for(i=1;i<n;i++)
@@ -43,7 +45,7 @@ int main()
 		   
      	    for(k=0;s[k];k++)
 			{
-			//	sign=0;
+			
 			   if(s[k]==a)
 			   {
 			       for(t=k+1;s[t];t++)
@@ -74,7 +76,7 @@ int main()
 		   
      	    for(k=0;s[k];k++)
 			{
-			//	sign=0;
+			
 			   if(s[k]==')')
 			   {
 			       for(t=k+1;s[t];t++)

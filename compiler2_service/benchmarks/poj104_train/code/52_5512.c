@@ -1,3 +1,5 @@
+#include <header.h>
+
 void yidong(int a1[],int len)
 {
 	int j,temp;

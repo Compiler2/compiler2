@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char c[1500];char d[4];

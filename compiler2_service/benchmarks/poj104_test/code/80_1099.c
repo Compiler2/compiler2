@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int year,month,startYear ,startMonth ,startDay ,endYear ,endMonth ,endDay,TOTAL1=0,TOTAL2=0;
 scanf("%d %d %d\n%d %d %d",&startYear ,&startMonth ,&startDay,&endYear ,&endMonth ,&endDay);

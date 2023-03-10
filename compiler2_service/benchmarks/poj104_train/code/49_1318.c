@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char word[500],int len)
 {
 	int i;

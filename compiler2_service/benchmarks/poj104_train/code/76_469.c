@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	int n;
 	int min=10000,max=0;

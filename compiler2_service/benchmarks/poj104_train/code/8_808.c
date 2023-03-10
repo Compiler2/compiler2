@@ -1,3 +1,5 @@
+#include <header.h>
+
 void a();
 void b();
 void c();

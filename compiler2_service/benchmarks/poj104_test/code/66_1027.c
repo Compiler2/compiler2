@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int leap(int year)
 {
@@ -15,10 +17,10 @@ int main(void)
 	int total=0;
 	scanf("%d %d %d",&year,&month,&day);
 
-	//add year
+	
 	fix=fix + (year-1) + (year-1)/4 - (year-1)/100 + (year-1)/400;
 	
-	//add month
+	
 	for (i=1; i<month; i++) {
 		switch (i) {
 			case 1:
@@ -46,7 +48,7 @@ int main(void)
 		}
 	}
 
-	//add day
+	
 	total+=day;
 	printf("%s\n",weekday[(fix+total)%7]);
 	return 0;

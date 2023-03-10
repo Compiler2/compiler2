@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	 char sz1[520]={'\0'},sz2[520]={'\0'};

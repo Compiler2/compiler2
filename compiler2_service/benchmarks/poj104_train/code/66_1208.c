@@ -1,4 +1,6 @@
-//int isrunnian(int year);
+#include <header.h>
+
+
 int total(int year,int mouth, int day);
 int main(){
 	int k;
@@ -6,15 +8,15 @@ int main(){
 	int year,mouth, day;
 	int sum=0;
 	scanf("%d %d %d",&year,&mouth, &day);
-	//for(k=1;k<=year-1;k++){
-		//if(isrunnian(k)){
-	//	if(k%400==0 || (k%4==0&&k%100 != 0) )
-	//	{
-	//		sum+=2;
-	//	}else{
-	//		sum+=1;
-	//	}
-	//}
+	
+		
+	
+	
+	
+	
+	
+	
+	
 	sum+=year-1 + (year-1)/4 - (year-1)/100 + (year-1)/400;
 	p=total(year, mouth ,day);
 	q=p+sum;
@@ -67,7 +69,7 @@ int total(int year, int mouth ,int day){
 			j+=30;
 		}
 		else if(i==2){
-			//if(isrunnian(year)){
+			
 			if(year%400 == 0 || (year%4==0&&year%100!=0) )
 			{
 				j+=29;

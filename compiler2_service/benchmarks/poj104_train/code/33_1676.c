@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char zfc[256],*a;
     int n,i,j,k,s;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int matrix1[100][100], matrix2[100][100];

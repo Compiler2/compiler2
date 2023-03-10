@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j;
 	double num[300],e,c=0;

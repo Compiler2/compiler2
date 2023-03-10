@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[30000],b[30000];
@@ -21,7 +23,7 @@ int main()
 			        h[i]=h[i]-10;
 			        h[i-1]=h[i-1]+1;
 		        }
-				//printf("%d\n",h[i]);
+				
 			}
 			if(h[0]>=10)
 		    {
@@ -62,7 +64,7 @@ int main()
 			        h[i]=h[i]-10;
 			        h[i-1]=h[i-1]+1;
 		        }
-				//printf("%d\n",h[i]);
+				
 			}
     
 	if(h[0]>=10)

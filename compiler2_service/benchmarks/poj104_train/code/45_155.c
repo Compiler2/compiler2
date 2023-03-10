@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -11,7 +13,7 @@ int main()
     j=strlen(w);
     if(i==1)
     {
-        for (p=0;p<=j-i+1;p++)//w//
+        for (p=0;p<=j-i+1;p++)
         {
                          if(w[p]==s[0])
                          printf("%d",p);

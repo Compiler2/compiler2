@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int largest=-1,second=-1,a[300],i,counter;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int x1, x2, y1[10000],y2[10000],n, flag[10000];

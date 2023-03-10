@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,k,i,j,len;
     char ci[50][50];
@@ -6,9 +8,9 @@ int main(){
             scanf("%s",ci[i]);
             }
     char *ps;
-    //int m;
+    
     for( j=0;j<n;j++){
-            //m=strlen(ci[j]);
+            
             ps=ci[j]-1+strlen(ci[j]);
             k=strcmp(ps,"g");
             if(k!=0){

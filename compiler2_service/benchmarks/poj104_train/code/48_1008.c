@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[9][9]={0};
 int b[9][9]={0};
 void ganster()

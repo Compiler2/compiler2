@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	float a1,g1,r1,a[1000],g[1000],r[1000];

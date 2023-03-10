@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int a[50000],b[50000],n,zuo,you,y,x=0,c=1,d=0;
 double z;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int panduan(int a,int b,int c,int d,int e);

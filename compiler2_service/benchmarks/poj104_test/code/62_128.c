@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int c,space=0;
     while(1){

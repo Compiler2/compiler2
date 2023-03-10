@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int t;
@@ -6,7 +8,7 @@ int main()
 	char zfc[100000];
 	for(i=0;i<t;i++){
 		int NUM=0,num;
-		//printf("hehe");
+		
 		scanf("%s",&zfc);
 		len=strlen(zfc);		
 		for(j=0;j<len;j++){
@@ -16,15 +18,15 @@ int main()
 				else{
 					if(zfc[j]!=zfc[k]) num++;
 				}
-				//printf("%d",num);
+				
 			}
-			//printf("aha");
+			
 			if(num==len-1) {
 				printf("%c\n",zfc[j]);
-				//printf("hong");
+				
 				break;
 			}
-			else {NUM++;//printf("he");
+			else {NUM++;
 		}
 		}
 		if(NUM==len) printf("no");

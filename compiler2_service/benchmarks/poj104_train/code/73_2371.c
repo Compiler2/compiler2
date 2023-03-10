@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[5][5];
@@ -12,13 +14,13 @@ int main()
     for(i=0;i<=4;i++){
     if(a[cow][i]>=max){
     max=a[cow][i];
-    t=i;//a[cow][t]??????????????i???? 
+    t=i;
     }
     } 
     k=0; 
     min=a[cow][t];
     for(j=0;j<=4;j++){ 
-    if(a[j][t]<=min&&j!=cow)//??????? 
+    if(a[j][t]<=min&&j!=cow)
     k=1;
     } 
     if(k==0){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sort(int s[],int n)
 {
     int i,j,t;
@@ -30,14 +32,14 @@ int main ()
     {
         if (s[i]>t[j])
         {
-            j++;a++;//printf("%d ",s[i]);
+            j++;a++;
         }
         else if (s[i]==t[j])
         {
             for (k=i+1,x=0;k<n;k++)
             {
                 if (s[k]<=t[k-i+j]&&s[k]>s[i])
-                //printf("%d\n",s[k]);
+                
                 {x=1;break;}
             }
             if (x==0)

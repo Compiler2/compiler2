@@ -1,6 +1,8 @@
+#include <header.h>
+
 main()
 {
-    char s[101];//="12(((3))((7()888_)988((555)))))))";
+    char s[101];
     int i,l,n,x,j,r;
     int le[101]={0},ri[101]={0};
     scanf("%d",&n);

@@ -1,16 +1,18 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,l,j,p,m;
 	char c[81];
 	scanf("%d",&n);
 	gets(c);
-	//printf("ssss:%s\n",c);
+	
 
 
 	for(i=0;i<n;i++)
 	{
 		gets(c);
-		//printf("aaaaaa:%s\n",c);
+		
 		l=strlen(c);
 		for(j=0;j<l;j++)
 		{

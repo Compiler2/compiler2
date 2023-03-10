@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     /*printf("l 50\n");

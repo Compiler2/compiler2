@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,k,s,maxIndex,N,e,m;
 	int sz[500];

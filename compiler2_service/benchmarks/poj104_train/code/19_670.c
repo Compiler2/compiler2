@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 {
@@ -7,7 +9,7 @@ int main(int argc, char *argv[])
     gets(a);
     gets(b);
     
-    // ?s???????????words?
+    
     n = 0; k = 0;
     for (i = 0; s[i]!=0; i++) {
         if (s[i] == ' ') {
@@ -21,13 +23,13 @@ int main(int argc, char *argv[])
     n++;
     
     
-    for(i=0;i<n;i++){  //?? 
+    for(i=0;i<n;i++){  
                      if(strcmp(a,word[i])==0){
                                               strcpy(word[i],b);
                                               }
                                               }
                                               
-     for(i=0;i<n-1;i++){ //?? 
+     for(i=0;i<n-1;i++){ 
                       printf("%s ",word[i]); 
                       }
                       

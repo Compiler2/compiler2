@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[100];
 int f(int a,int min){ 
 if(a < min){ 

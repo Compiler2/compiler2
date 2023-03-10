@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k[26][2];
 int main(){
     int i, j, n, m = 0;

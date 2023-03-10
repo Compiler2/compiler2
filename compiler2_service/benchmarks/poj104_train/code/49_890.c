@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int j,int i,char c[]);
 void g(char c[],int m,int j);
 int main()

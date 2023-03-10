@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
 {
 	char res[32]="0000000000000000000000000000001",temp[2]="0";

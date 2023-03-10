@@ -1,3 +1,5 @@
+#include <header.h>
+
 int lgm( int num )
 {
    if( num == 1 )

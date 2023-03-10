@@ -1,3 +1,5 @@
+#include <header.h>
+
 char* minus(char*a,char*b)
 {
 	int i, j;

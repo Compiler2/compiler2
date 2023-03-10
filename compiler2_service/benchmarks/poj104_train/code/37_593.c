@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int t,i,j,k;
@@ -25,9 +27,9 @@ A[i] = s[j];break;
 
 j++;
 
-}//while
+}
 
-}//for t
+}
 
 for(i=0;i<t;i++)
 {

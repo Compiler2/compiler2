@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int sz[100][100];
 

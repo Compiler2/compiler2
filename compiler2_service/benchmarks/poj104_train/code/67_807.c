@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,total[100],youxiao[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int *p,*q,*s;
 int m,n;
 

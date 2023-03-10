@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -10,14 +12,14 @@ int main()
         strncpy(buffer, (string+i), sublen);
         if (!strcmp(buffer,substring))
         {
-   strncpy(result, string, i);//???????????????????????????????????
+   strncpy(result, string, i);
    strcat(result,replacement);
    strcat(result,(string+i+sublen));
             printf("%s",result);
             return 0;
         }
     }
- printf("%s",string);//?????????????
+ printf("%s",string);
  return 0;
 }
 

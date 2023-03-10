@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int sz[5][5],i,j,a,x=5,y=5,m=0,n=0;
 for(i=0;i<5;i++){

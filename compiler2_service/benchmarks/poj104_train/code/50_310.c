@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int i,w,day[12];

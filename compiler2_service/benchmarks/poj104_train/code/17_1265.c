@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n, i, j, len, c, zb[101], fb[101];

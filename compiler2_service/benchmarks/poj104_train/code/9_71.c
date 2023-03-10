@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,year[100],i,j,year2[100]={0},t,k;

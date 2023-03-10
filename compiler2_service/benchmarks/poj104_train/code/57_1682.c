@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,suffixlen;
 	char word[40],*p;

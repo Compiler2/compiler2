@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[300],a[100],b[100];
@@ -11,7 +13,7 @@ int main()
 	for (i=0;s[i];i++)
 	{
 		m=-1;
-		if (s[i]==a[0] && (s[i-1]==' ') || i==0)           //:???s??????
+		if (s[i]==a[0] && (s[i-1]==' ') || i==0)           
 		{
 			for (int j=0;j<t2;j++)  
 			{
@@ -23,8 +25,8 @@ int main()
 		}
 		if (m==i)
 		{
-			//:cout<<i<<endl;
-			if (t3>t2)       //:?b????a???s?????????????
+			
+			if (t3>t2)       
 			{
 				for (int u=strlen(s);u>=(t2+m);u--)
 				{
@@ -35,7 +37,7 @@ int main()
 					s[p]=b[p-m];
 				}
 			}
-			else if (t3<=t2)        //:?b????a???a???b????????????????????
+			else if (t3<=t2)        
 			{
 				for (int k=m;k<t3+m;k++)
 				{

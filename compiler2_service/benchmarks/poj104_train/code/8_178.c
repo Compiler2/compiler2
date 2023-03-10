@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int la,lb;
 
@@ -64,9 +66,9 @@ int main()
 {
 	int x[200],y[100];
 	read(x,y);
-//	printx(x);
+
 	sort(x,y);
-//	printx(x);
+
 	combine(x,y);
 	print(x);
 	return 0;

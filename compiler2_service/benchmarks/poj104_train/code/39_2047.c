@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct score
 {
 	char name[20];

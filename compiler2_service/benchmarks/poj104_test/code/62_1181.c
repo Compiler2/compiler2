@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char sb[1000]={'\0'};
 gets(sb);

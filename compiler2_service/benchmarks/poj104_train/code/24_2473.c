@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {   int da,i,j,x,y,k,len,n,dan[201],max,min;
     char s[10000],a[201][50];

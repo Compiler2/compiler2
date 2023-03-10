@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void order(int *p,int n){
 	int i,k,e;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int N,course[15][2],credit;
 float GPA;

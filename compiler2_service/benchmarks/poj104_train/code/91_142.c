@@ -1,3 +1,5 @@
+#include <header.h>
+
 char *calc(char *ps,char *pt)
 {
 	int i,m=strlen(ps);

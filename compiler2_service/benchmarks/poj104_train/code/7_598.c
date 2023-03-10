@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char su[100],zu[100],tu[100];
     gets(su);
@@ -11,7 +13,7 @@ int main(){
     if(k==strlen(zu))
     break;
     }
-    //printf("%d%d",i,j);
+    
 	if(j!=i-1){
     for(t=0;t<i;t++)
     printf("%c",su[t]);

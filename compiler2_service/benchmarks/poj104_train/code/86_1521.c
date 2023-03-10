@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,m,t,sum,num[10000],a[10000],i,j;

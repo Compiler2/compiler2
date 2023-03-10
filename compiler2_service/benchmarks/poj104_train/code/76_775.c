@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int l[10001]={0};

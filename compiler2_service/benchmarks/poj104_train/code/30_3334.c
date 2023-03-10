@@ -1,3 +1,5 @@
+#include <header.h>
+
 int qi(int num)
 {
 	int a,b;

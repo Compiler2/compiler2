@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ispr(int a)
 {
     int i,just=1;

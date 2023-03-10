@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ysf(int n,int m);
 int main(){
 

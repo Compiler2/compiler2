@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct X{
 int a;
 int b;

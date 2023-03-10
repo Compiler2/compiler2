@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int shu[100],shou[100],t[100]={0};

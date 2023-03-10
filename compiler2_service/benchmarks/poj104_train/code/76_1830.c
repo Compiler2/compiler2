@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,a[50000],b[50000],sz[10001],p=10000,q=0,m;
 double k;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char x[501];
@@ -9,10 +11,10 @@ main()
 	m=m-n;
 	for(i=0;i<=m;i++)
 	{
-		l=0;//zongshu
+		l=0;
 		for(k=i;k<=m;k++)
 		{
-			h=0;//panding
+			h=0;
 			for (j=0;j<n;j++)
 			{
 				if (x[i+j]!=x[k+j]) h++;

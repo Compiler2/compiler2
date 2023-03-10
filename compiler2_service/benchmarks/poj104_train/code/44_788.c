@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num(int a)
 {
 	int b;
@@ -8,7 +10,7 @@ int num(int a)
 	if(a>0)return b;
 	else return -b;
 }
-int reverse(int b)//???a??keyi
+int reverse(int b)
 {
 	int c=0,d;
 	d=abs(b);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rec[10][10];
 int m,n;
 int i,j,statej,statejj,min,max,flag;

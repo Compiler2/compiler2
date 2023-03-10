@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  void de(int x[],int n, int m);

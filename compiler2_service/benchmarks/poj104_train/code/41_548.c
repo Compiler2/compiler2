@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int o=0;
@@ -43,7 +45,7 @@ int main()
                     }
                     if(c==1&&a==5)
                     {
-                        //printf("%d!!!\n",o);
+                        
                         if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
@@ -94,7 +96,7 @@ int main()
                     }
                     if(c==1&&a==5)
                     {
-                        //printf("%d!!!\n",o);
+                        
                         if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
@@ -144,7 +146,7 @@ int main()
                     }
                     if(c==1&&a==5)
                     {
-                        //printf("%d!!!\n",o);
+                        
                         if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                         if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}

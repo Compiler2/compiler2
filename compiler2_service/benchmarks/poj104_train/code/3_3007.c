@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	int n,m,a[1000],i,j,t=0,k;
-	scanf("%d%d",&n,&m);//n shi ge shu
+	scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 		scanf("%d",&a[i]);
 	for(i=0;i<n-1;i++)

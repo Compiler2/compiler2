@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
 	char s1[100],s2[100]={'\0'},c;
 	int a[100]={0},b,k,i,len,l,num;

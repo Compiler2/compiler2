@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n, m, time=0, i, x, j, mark;

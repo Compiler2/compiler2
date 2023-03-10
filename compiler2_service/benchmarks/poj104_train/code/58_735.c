@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,judge[100],i,j,k,t,length;

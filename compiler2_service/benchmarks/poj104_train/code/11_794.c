@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int test(int n);
@@ -5,7 +7,7 @@ int main()
     int b[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
     int y,m,d,s,i;
     scanf("%d%d%d",&y,&m,&d);
-    if(test(y)==1)//??? 
+    if(test(y)==1)
     {
        s=d;
        for(i=0;i<m;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,qian;
 	int yu[6]={0};

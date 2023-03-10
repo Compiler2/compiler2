@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[100],i,n;
 	float ave,b[100],k=0,m=0,t=0;

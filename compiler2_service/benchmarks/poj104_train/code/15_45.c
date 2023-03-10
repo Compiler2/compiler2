@@ -1,4 +1,6 @@
-// state: 0( left up ), 1( right down)
+#include <header.h>
+
+
 int main()
 {
 	int state = 0;

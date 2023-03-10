@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[30];
 char s[100100];
 void main()
@@ -31,10 +33,10 @@ void main()
                {
                                  if(*(q+(*p-'a'))==1)
                                  {
-             //  for (q=a;q<a+30;q++)
-           //    {
-           //        if(*q==1)
-           //        {
+             
+           
+           
+           
                             printf("%c\n",*p);
                             flag=1;
                             break;

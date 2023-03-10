@@ -1,3 +1,5 @@
+#include <header.h>
+
 sb(char a[])
 {
 	char *p,*q;

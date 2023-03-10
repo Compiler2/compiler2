@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,l,i,j,m,t,count[600]={0};

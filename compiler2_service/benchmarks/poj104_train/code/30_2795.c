@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int leap(int n);
 int n,sum=0,i;

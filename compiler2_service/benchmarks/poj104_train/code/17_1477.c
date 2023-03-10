@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s2[101];
 
 int ma(char s[],int p,int le)

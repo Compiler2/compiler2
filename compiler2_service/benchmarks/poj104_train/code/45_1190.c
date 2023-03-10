@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char qian[60],quan[110];

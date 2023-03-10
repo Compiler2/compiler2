@@ -1,3 +1,5 @@
+#include <header.h>
+
 	int wuSeven(int a){
 		if(a%7==0){
 			return 0;

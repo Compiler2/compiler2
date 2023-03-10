@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,i,j,m=0,k=0,high1=0,high2=0,low1,low2,win=0,lose=0,s[1000],t[1000],p[100],temp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n,m,i,j,d,k;
@@ -21,7 +23,7 @@ int main()
   c[0][j][k]=c[1][j][k];
 }
 
-    //if(c[0][j][k]=='.'&&(c[0][j][k+1]=='@'||c[0][j][k-1]=='@'||c[0][j+1][k]=='@'||c[0][j-1][k]=='@')) c[1][j][k]='@';}
+    
  i=0;
  for(j=0;j<n;j++)
   for(k=0;k<n;k++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,b[52]={0},j,k=0,t=0;

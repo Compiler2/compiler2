@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[200][20],max1[20],min1[20];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int i,j,sum[123]={0},m=0,q;

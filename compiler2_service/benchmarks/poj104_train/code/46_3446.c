@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int row,col,i,j,g,k,p,num,time=0;
     int sz[110][110];

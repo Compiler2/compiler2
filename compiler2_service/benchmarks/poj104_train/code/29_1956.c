@@ -1,3 +1,5 @@
+#include <header.h>
+
 int feibo[200]={0};
 float fen[100]={0};
 int feii(int n)

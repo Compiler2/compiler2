@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	void sx(float p[],int n);

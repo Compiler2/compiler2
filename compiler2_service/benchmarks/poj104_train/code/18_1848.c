@@ -1,3 +1,5 @@
+#include <header.h>
+
 int map[110][110],n,sum;
 void getmap()
 {
@@ -56,27 +58,27 @@ int main()
 {
     int i,j,y=1; 
     int v,u;
-    //freopen("1.txt","r",stdin);
+    
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     { sum=0;
     getmap(); 
     
-      //   for(u=1;u<=n;u++)
-        //            {for(v=1;v<=n;v++)
-        ///            printf("%d ",map[u][v]);
-        //            printf("\n");
-        //            }
-        //            getch();
+      
+        
+        
+        
+        
+        
     for(j=1;j<n;j++)
     {
                     once(j);
-                   // for(u=1;u<=n;u++)
-                 //   {for(v=1;v<=n;v++)
-                 //   printf("%6d ",map[u][v]);
-                 //   printf("\n");
-                 //   }
-                 //   getch();
+                   
+                 
+                 
+                 
+                 
+                 
     }
     if(y==0)
     printf("\n%d",sum);
@@ -84,7 +86,7 @@ int main()
     printf("%d",sum);
     y=0;
     }     
-    //getch();
+    
     return 0;
 }
         

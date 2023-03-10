@@ -1,3 +1,5 @@
+#include <header.h>
+
 void p(char a[],int n)
 {
 	int i,j;

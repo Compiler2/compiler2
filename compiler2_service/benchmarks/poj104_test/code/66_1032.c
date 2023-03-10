@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 char s[][4] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};

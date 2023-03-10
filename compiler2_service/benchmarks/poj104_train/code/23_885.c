@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char a[10][10],b[100],f[10],g[10],h[10],v[10];

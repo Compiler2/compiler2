@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(char i,int k)
 {
         if((i>='a'&&i<='z')||(i>='A'&&i<='Z')||(i>='0'&&i<='9')||i=='_')

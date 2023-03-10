@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char yuanshi[500],bijiao[500],laji[3];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int day[12]={31,28,31,30,31,30,

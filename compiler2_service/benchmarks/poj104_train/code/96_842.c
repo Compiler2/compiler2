@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char N[100];
     int sza[100],szb[100],l,i,m,temp,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cifang(int n)
 {   
     int t=1,i;

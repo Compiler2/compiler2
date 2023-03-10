@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int n,int m)
 {
     if((n>=0)&&(m>=0)&&(n<=4)&&(m<=4))

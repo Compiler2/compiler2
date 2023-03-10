@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,c,j;
@@ -10,13 +12,13 @@ int main()
         l[i]=strlen(a[i]);
 	}
 	c=l[0];j=0;
-//	for (i=0;i<n;i++)
-//		printf("%d ",l[i]);
+
+
     while (j<n)
 	{
  	    while ((c<=80)&&(j<n))
 		{
- // 		 if (c+l[j]<=80) printf("%s ",a[j]);
+ 
 			if (c==l[j]) printf("%s",a[j]); else printf(" %s",a[j]);
   		    c++;j++;
   		    c=c+l[j];

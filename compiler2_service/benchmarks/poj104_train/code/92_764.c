@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,j,n,k,money,tf,ts,wf,ws;

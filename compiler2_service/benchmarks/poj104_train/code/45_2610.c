@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	char a[51],b[51], c[51];
 	memset(a, 0, sizeof(a));

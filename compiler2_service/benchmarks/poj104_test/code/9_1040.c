@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct bin
 {
 	char ID[10];

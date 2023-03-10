@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,m=0,j=0;
 	struct p{

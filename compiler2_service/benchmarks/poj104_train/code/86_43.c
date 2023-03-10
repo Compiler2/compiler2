@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	int n,i=0,b[100],j=1,t,m,k=0,l;//b[]????
+	int n,i=0,b[100],j=1,t,m,k=0,l;
 	scanf("%d",&m);
 	for(l=0;l<m;l++)
 	{
@@ -16,10 +18,10 @@ int main()
 		{
 			b[j]=t+1;
 			t=b[j];
-			if(b[j]==a[i])//???
+			if(b[j]==a[i])
 			{
 				i++;
-				for(k=0;k<3; k++)//b??????????????
+				for(k=0;k<3; k++)
 					b[++j]=t;
 			}
 		}

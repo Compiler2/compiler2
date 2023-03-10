@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	char n[31];
 	int i,u;

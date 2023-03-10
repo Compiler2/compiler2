@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,name[300],j,m,k=1,t=0,count[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
  int wuguan(int e)
   {
 	 if(e%7==0)

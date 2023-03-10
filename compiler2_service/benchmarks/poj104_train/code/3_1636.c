@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,k,sz[1000],b=0,c,q,i,j,e;
 scanf("%d %d",&n,&k);
@@ -17,8 +19,8 @@ for(i=0;i<n-1;i++)
 	}
 }
 printf("no");
-//for(e=0;e<b;e++)
-   //printf("%d ",q[e]);
+
+   
 /*for(e=0;e<b;e++)
 {
 	c=q[e]-k;

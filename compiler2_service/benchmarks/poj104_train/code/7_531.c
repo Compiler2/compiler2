@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[300],subs[15],reps[15];

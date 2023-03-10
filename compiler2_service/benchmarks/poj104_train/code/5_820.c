@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yn(char x);
 int main(){
 char a[501],b[501];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i;int s[300]={0};int max,min;int ave;float ave2;

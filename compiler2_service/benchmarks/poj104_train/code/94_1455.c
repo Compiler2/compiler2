@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int shulie[500],jishu[500];
 int n,t=0,i=0,j=0,a=0,c=0,k=0;

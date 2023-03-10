@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int a,int b);
 int x[5][5];
 int main(){

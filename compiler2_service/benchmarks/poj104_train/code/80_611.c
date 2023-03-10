@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
 	int y,the_number=0,u,k,s,t,i,h,v,l,p,q,c,w,e,f;
 	int z=0;
 	int year1,month1,day1,year2,month2,day2;
-	int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};                       //the number of days of every month
+	int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};                       
 	scanf("%d %d %d %d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);
 	y=year2-year1;
-    if(y==0)                                                                     //the dates are in the same year
+    if(y==0)                                                                     
 	{
 		if(month2-month1==0)
 			the_number=day2-day1;
@@ -26,7 +28,7 @@ int main()
 			}
 		}
 	}
-	else                                                                         //the dates are in differentyears
+	else                                                                         
 	{
 		if(month1>2&&month2<=2)
 		{
@@ -42,11 +44,11 @@ int main()
 		{
 			if(month1<=2&&month2>2)
 			{
-				for(h=0;h<=y;h++)                 //the number of leapyears
+				for(h=0;h<=y;h++)                 
 				   z=z+theleapyeardata(year1+h);
-			    for(v=1;v<=12-month1;v++)          //the first year without the first month
+			    for(v=1;v<=12-month1;v++)          
 				   the_number=the_number+month[month1+v];
-				for(c=1;c<=month2-1;c++)          //the last year without the last month
+				for(c=1;c<=month2-1;c++)          
 					the_number=the_number+month[c];
 			    the_number=the_number+month[month1]-day1+day2+365*(year2-year1-1)+z;
 			}

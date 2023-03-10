@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void saima(int a,int b[1500],int d[1500]);
 void paixu(int e[1500],int c);

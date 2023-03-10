@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(int s, int a[100], int n)
 {
 	int i, temp=0;

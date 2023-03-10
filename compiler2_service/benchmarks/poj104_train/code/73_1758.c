@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,a[5][5],b=0,c=0,d=0;

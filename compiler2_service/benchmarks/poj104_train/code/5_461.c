@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[500],b[500],st[5]="ATGC";

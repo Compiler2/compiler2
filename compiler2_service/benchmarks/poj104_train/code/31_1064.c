@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
 	char stuID[20];
@@ -23,7 +25,7 @@ int main()
 			break;
 		scanf("%s %c %d %s %s",stu[i].name,&stu[i].sex,&stu[i].age,stu[i].score,stu[i].add);
 	}
-	//printf("#####3");
+	
 	for(j=i-1;j>=0;j--)
 	{
 		printf("%s %s %c %d %s %s\n",stu[j].stuID,stu[j].name,stu[j].sex,stu[j].age,stu[j].score,stu[j].add);

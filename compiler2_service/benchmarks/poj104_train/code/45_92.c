@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char c[50]={'\0'},s[50]={'\0'};

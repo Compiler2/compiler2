@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(char s[81], char t[81]);
 int main()
 {

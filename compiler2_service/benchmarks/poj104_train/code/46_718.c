@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
       int row,col,i,j,d=0,count=0;

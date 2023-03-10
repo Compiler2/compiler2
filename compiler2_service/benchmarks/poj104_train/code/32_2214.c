@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
    int n,bei1[100],jian1[100],cha[100];

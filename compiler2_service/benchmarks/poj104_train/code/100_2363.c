@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int k[52]={0},i,j,n,m,h=0;

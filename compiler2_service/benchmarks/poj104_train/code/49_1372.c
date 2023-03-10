@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huiwen(char a[],int m,int n)
 {
 	int i;

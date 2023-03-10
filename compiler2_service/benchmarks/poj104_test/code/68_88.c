@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isprime(int p)
 {
 	int prime=1;

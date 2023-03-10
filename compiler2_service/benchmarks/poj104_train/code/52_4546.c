@@ -1,3 +1,5 @@
+#include <header.h>
+
 void move(int a[],int n,int m);
 int main ()
 {

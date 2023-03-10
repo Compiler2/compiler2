@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[257],substr[257],re[257];
 	int i=0,j=0,n=0,m=0,k=0;

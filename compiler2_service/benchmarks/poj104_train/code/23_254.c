@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char q[100][100]={0};

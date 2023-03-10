@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int isright(char *s,char *w,int i){
 char t[50];

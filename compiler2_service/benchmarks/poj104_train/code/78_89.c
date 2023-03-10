@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int iz,iq,is,il,z,q,s,l;

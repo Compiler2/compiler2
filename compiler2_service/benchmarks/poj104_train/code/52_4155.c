@@ -1,3 +1,5 @@
+#include <header.h>
+
 void make(int *p1,int n,int m)
 {
     int *p2,b[100]={0},i;

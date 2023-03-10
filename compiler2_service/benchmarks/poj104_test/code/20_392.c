@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char str[16],substr[4],*p1,*p2,*pl;

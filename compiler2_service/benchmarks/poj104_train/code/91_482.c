@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char mid,a[100],b[100];
 	int i,j,stop,length,dif;

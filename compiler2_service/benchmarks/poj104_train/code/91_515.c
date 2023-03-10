@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[102],w[102];
     int i,ls;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
    {
           
@@ -15,7 +17,7 @@ int main()
                 for(l=0;l<n;l++){
                
                sum+=b[l];
-               //printf("%d\n",sum);
+               
                }
                
                
@@ -47,12 +49,12 @@ int main()
                for(l=0;l<n;l++)
                bb=b[l]*c[l]+bb;
                
-               //printf("%d\n",sum);
-               //printf("%f\n",bb);
+               
+               
                
                GPA=bb/sum;
                   printf("%.2f",GPA); 
-                  //scanf("%d",&n);     
+                  
               
 
               return 0;

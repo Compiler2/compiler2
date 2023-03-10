@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,len;
 	char word[51][33];

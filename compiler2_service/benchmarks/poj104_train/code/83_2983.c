@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,a[15];
 double ck(int x)
 {

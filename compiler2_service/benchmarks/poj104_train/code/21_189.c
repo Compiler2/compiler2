@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -6,14 +8,14 @@ int main()
     
     scanf("%d",&n);
     
-    for(i=0;i<n;i++)       //???? 
+    for(i=0;i<n;i++)       
     {
        scanf("%d",&inpnum[i]);
        sum+=inpnum[i];
     }
-    ave=sum/n;//????? 
+    ave=sum/n;
     
-    for(i=0;i<n;i++)//???? 
+    for(i=0;i<n;i++)
     {
         if(inpnum[i]>ave)
         distance[i]=inpnum[i]-ave;
@@ -25,7 +27,7 @@ int main()
     printf(" %f ",distance[i]);
     printf("\n");*/
     
-    for(i=0;i<n-1;i++)//?????????? 
+    for(i=0;i<n-1;i++)
     {
                     for(j=0;j<n-1;j++)
                     {
@@ -57,10 +59,10 @@ int main()
     printf("%f ",distance[i]);
     printf("\n");*/
     
-    max=distance[0];//max????? 
-    printf("%d",inpnum[0]);//?????????? 
+    max=distance[0];
+    printf("%d",inpnum[0]);
     
-    for(i=1;i<n;i++)//????????????? 
+    for(i=1;i<n;i++)
     {
         if(distance[i]==max)
             printf(",%d",inpnum[i]);

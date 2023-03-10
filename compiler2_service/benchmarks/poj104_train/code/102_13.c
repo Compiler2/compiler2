@@ -1,4 +1,6 @@
-//int a[10000];
+#include <header.h>
+
+
 char b[10000][100];
 double m[10000],f[10000];
 int main()
@@ -10,7 +12,7 @@ int main()
 	for(i=0;i<n;i++)
 	{
 		scanf("%s",b[i]);
-	//	scanf("%lf",&c[i]);
+	
 		if(b[i][0]=='m')
 		{
 			scanf("%lf",&m[p]);

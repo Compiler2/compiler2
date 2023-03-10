@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,k=0,flag,len,start,end,max=0,num[501]={0};
@@ -48,7 +50,7 @@ int main()
 	printf("%d\n",max);
 	for(i=0;i<k;i++)
 	{
-	//	printf("%d",num[i]);
+	
 	if(num[i]==max)
 			puts(t[i]);
 	}

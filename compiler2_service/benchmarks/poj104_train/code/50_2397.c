@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -8,7 +10,7 @@ int main()
 										30, 31, 31, 30, 31, 30 };
 	scanf("%d", &w);
 
-	w = (day - 1 + w) % 7;	// 0???????
+	w = (day - 1 + w) % 7;	
 	for(i=0; i < 12; i++)
 	{
 		w = (w + monthDiffer[i]) % 7;

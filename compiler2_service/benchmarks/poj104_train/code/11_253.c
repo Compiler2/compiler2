@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int y,m,d,a[5],i=1;
   while(i<=5)

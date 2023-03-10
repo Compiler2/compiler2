@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
 char num[100],ans[100];
 int i,j,k,t;

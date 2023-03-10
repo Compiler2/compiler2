@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int l,i,k,j,n;
@@ -20,7 +22,7 @@ main()
          {
              if(strcmp(s[i],s[j])==0)
              a[i]++;
-             //printf("%d %d\n",a[i],i);
+             
          }
          
          for(i=0;i<l-n;i++)

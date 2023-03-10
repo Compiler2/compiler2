@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {     int f(int n);
 	int n,i,a[100000]={0},count=0,c;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int kiss(char ch[], char b, char g, int l, int i){
 	int boy;

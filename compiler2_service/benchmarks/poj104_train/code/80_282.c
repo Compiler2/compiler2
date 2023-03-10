@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int year1, year2, mon1, mon2, date1, date2;
@@ -9,7 +11,7 @@ int main()
 	y[0]=year1;
 	for(i=0;i<=n;i++)
 	{
-	     if((y[i] % 4 == 0 && y[i] % 100 != 0) || (y[i] % 400 == 0))//runnian
+	     if((y[i] % 4 == 0 && y[i] % 100 != 0) || (y[i] % 400 == 0))
 		 {
              y[i+1]=y[i]+1;
 			 y[i]=366;

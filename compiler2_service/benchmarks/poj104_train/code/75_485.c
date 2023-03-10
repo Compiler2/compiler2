@@ -1,3 +1,5 @@
+#include <header.h>
+
 int t[1005];
 int p[2010];
 int main(int argc, char * argv[]) {	

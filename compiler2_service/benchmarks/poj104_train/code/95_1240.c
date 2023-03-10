@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 static char x1[1000],x2[1000];

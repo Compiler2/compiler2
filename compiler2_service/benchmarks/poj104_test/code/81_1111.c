@@ -1,3 +1,5 @@
+#include <header.h>
+
 int matf(int (*mat)[5],int n,int m)
 {
 	int temp;

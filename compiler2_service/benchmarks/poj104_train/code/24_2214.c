@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[5000],word[200][20];
 
 int checknum(int m)
@@ -27,7 +29,7 @@ int main()
     if(checknum(i)==1)
 	{
 	   strncpy(word[k],s+i,findlen(i));
-	   //printf("%d %d\n",min,minn);
+	   
 	   if(max<findlen(i))
 	   {
 	     max=findlen(i);

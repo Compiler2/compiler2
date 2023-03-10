@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x)
 {
 if(x%4!=0)

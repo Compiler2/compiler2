@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a,b,c[20],d[20],s[20],l,i,j;
 void shuru()
 {

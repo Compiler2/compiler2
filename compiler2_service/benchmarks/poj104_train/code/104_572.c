@@ -1,8 +1,10 @@
+#include <header.h>
+
 int func(int a);
 int main()
 {
-	int x,y;//x,y???????
-	int a[10],b[10];//a,b???????????
+	int x,y;
+	int a[10],b[10];
 	int i,j,flag=1;
 	scanf("%d%d",&x,&y);
 	a[0]=x;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void maopao(int n,int a[]);

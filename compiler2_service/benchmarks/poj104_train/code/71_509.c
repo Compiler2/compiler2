@@ -1,3 +1,5 @@
+#include <header.h>
+
 int day(int m)
 {
 	int d=0;

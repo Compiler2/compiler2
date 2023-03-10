@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char jz[102];
 	int i;

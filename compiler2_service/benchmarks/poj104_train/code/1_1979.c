@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -5,24 +7,24 @@ int factoring(int a,int b)
 {
     int i,kind=0;
 
-		//printf("ok  a=%d  b=%d\n",a,b);
+		
 
 	if(a==1)
 	{
 	    kind=1;
-			//printf("kind=1   ok\n");
+			
 	}
 
 	else
 	{
 	    for(i=b;i<=a;i++)
 		{
-		//	printf("ok\n");
+		
 
 		    if(a%i==0)
 			{
 	            kind=factoring(a/i,i)+kind;
-					//printf("ok  %d\n",kind);
+					
 			}
 		}
 	}

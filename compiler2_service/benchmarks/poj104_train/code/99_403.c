@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,age[100],m=0,x=0,p=0,q=0;
 	double M,N,P,Q;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int w,sum=0,a;
 	scanf("%d",&w);

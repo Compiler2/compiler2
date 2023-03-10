@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,n,max,f[26],g[26];

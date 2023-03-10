@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char str[1001],s[1001][1001];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,year[200],m1[200],m2[200],run=0,sum[200]={0},j,k,t,s;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void line(int n,int *p);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct reward
 {
    char name[20];

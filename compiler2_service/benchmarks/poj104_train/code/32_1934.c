@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int N,i,l1,l2,loop,t,s;

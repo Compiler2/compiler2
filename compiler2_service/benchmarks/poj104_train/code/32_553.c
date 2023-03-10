@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	char bjs[100],js[100];

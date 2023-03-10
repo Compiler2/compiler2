@@ -1,3 +1,5 @@
+#include <header.h>
+
 int iszhishu(int n)
 {
 	int i,sum=0;

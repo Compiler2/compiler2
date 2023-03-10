@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
       char N[100],Result[100];

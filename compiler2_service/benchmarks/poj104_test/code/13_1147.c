@@ -1,3 +1,5 @@
+#include <header.h>
+
 int stat[115],i,n,k,first=0;
 int main(){
   for (i=0;i<110;i++) stat[i]=0;

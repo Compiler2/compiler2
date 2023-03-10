@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char s[1000],word[50][20];

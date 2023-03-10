@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long int m[4],n[4],i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n=1,h,l,i,j,a[100][100],lans=0,ans[10000],k;

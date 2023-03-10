@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ans = 0;
 int  work(int p,int k)
 {	if (p==1) {ans++; return (p*k,k);}
@@ -18,7 +20,7 @@ int main()
 		int t;
 		scanf("%d",&t);
 		work(t,2);
-		//ans = work(t);
+		
 		printf("%d\n",ans);
 	}
 	

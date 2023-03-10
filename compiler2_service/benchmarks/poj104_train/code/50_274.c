@@ -1,4 +1,6 @@
-//?????
+#include <header.h>
+
+
 void main()
 {
 	int week(int w,int n);

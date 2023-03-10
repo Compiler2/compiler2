@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[10000],tmp[40],cn;
 int n,i,j,l=0,tmpl=0;
 
@@ -38,7 +40,7 @@ int main(int argc, char* argv[])
 			tmpl=0;
 			goto l;
 		}
-        //printf ("%d",tmpl);
+        
 	}
 	return 0;
 }

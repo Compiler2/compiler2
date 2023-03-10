@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	int n;
-	int a[1000],b[1000];                    //a????b???
+	int a[1000],b[1000];                    
 	int circle,i,j;
 	int i1,i2,j1,j2;
 	int count,win;
@@ -55,7 +57,7 @@ int main()
 					j1++;
 					break;
 				}
-			}              //??
+			}              
 			if(count==n)
 				break;
 			for(;j2>=0;i2--,j2--)
@@ -70,11 +72,11 @@ int main()
 					i2--;
 					break;
 				}
-			}                       //??
+			}                       
 			if(count==n)
 				break;
 			if(a[i2+1]<b[j1-1])
-				win--;                 //?a[t2]?b[t1]?
+				win--;                 
 			count++;
 		}
 		printf("%d\n",win*200);

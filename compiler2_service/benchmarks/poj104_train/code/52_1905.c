@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[100]={-1},*p,*q,n,m,i,k=0;

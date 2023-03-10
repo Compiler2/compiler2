@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,m;
     char shuzu[6][10];

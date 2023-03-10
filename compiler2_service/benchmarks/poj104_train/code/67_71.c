@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,k,sz[1000],sf[1000],n;
 double sc[1000];

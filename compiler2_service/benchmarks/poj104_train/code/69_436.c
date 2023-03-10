@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int countnum(char a[])
 {
@@ -53,7 +55,7 @@ int main()
 	char a[1000];
 	char b[1000];
 	scanf("%s %s",a,b);
-	//printf("%d",strlen(a));
+	
 	
 	if((strlen(a)==1)&&(strlen(b)==1)&&(a[0]=='0')&&(b[0]=='0'));
 	else
@@ -61,7 +63,7 @@ int main()
 	clean(a);
 	clean(b);
     }
-	//printf("%s\n%s\n",a,b);
+	
 	
 	int la=countnum(a);
 	int lb=countnum(b);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k,n;
 
 char str[1000],c1,c2;
@@ -22,6 +24,6 @@ int main(){
         }
         t++;
     }
-//scanf("%d",&k);
+
 return 0;
 }

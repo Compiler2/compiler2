@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int z,q,s,l;
   for (z=1;z<=5;z++)

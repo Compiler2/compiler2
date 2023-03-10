@@ -1,3 +1,5 @@
+#include <header.h>
+
 int haha()
 {
 	int m,n,sum,i,j,a[105][105];

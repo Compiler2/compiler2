@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int n)
 {
     int i;

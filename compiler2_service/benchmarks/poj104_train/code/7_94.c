@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dingwei(char duan[50],char chang[50])
 {
 	int i,geshu1=0,geshu2=0;

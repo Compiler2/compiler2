@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n)
 {
     int i=2,k=0;
@@ -27,7 +29,7 @@ int main()
          t=i-2; 
       if(f(i)==0&&f(t)==0)
       {
-         //t=i-2;                   
+         
          printf("%d %d\n",t,i);
          sum++; 
       }

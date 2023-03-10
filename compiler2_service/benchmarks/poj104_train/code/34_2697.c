@@ -1,6 +1,8 @@
+#include <header.h>
+
 int fun1(int i)
 {
-//printf("fun1");
+
 	int j;
 	j=i*3+1;
 	printf("%d*3+1=%d\n",i,j);
@@ -11,7 +13,7 @@ int fun1(int i)
 
 int fun2(int i)
 {
-	//printf("fun2");
+	
 	int j;
 	j=i/2;
 	printf("%d/2=%d\n",i,j);

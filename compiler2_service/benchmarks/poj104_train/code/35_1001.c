@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int point[8][8], n, m;

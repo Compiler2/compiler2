@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void chuan(char (*p)[5],char *q,int n);
@@ -20,10 +22,10 @@ int main()
 	{
 		for(j=i+1;j<k;j++)
 		{
-//			printf("%s %s ",a[i],a[j]);
+
 			if(strcmp(a[i],a[j])==0)
 				max[i]++;
-//			printf("%d %d\n",max[i],i);
+
 		}
 	}
 	for(i=0;i<k;i++)

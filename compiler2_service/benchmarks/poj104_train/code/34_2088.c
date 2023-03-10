@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void cal(int *x);
 int main()

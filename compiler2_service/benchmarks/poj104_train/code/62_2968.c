@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int j,i,n;
     char s[380];

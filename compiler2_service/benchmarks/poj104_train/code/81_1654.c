@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m,a[5][5];
 void jisuan(int n,int m)
 { 

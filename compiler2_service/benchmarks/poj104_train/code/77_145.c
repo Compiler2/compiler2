@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char line[150];char girl;

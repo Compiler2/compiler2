@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct Inf
 {
 	char c[10];

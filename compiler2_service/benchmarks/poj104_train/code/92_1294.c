@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void h(int x[],int y)
 {   int i,j,t;

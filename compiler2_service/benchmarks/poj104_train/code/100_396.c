@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    char ch[300],r[300]={'\0'};

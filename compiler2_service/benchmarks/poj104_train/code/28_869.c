@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sz[300][100];
 	char zf[30001];

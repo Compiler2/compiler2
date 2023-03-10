@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[26]={0};
 int b[10000];
 int n,m=0;

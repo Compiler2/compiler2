@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fuck(int a)
 {
 	for(int i=2;i<=a-1;i++)

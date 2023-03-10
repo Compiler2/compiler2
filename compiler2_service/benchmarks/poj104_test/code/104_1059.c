@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   
     int xunzhao(int x,int y);

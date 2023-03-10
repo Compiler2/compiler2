@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int t[50][6];
 int i,k,s,a,x;

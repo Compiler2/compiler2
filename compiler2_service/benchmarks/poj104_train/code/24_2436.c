@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[2000]={0};
@@ -10,7 +12,7 @@ int main()
 	k=0;
 	p1=0;q1=0;
 	p2=0;q2=19000;
-//	printf("%d\n",l);
+
 	while(j<l)
 	{
 		for (i=j;i<l;i=i+1)

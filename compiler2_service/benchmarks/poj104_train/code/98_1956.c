@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 {
     int n,i,sum1=0,len1,len2,count=0;
     char a[500][40];
     scanf("%d",&n);
-    for(i=0;i<n;i++){   //?? 
+    for(i=0;i<n;i++){   
                      scanf("%s",a[i]);
                      }
     int sum2=strlen(a[0]);

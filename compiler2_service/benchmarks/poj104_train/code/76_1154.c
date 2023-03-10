@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int x,int y,int z){
 	if(x>=y&&x<=z){return 1;}
 	return 0;

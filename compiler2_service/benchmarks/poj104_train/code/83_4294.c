@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,x[10000],y[10000],all=0;
 double GPA,a[10000],t=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int strcmp(char *a, char *b, int n) {
 	int i=0;
 	for (i=0; i<n; i++)
@@ -33,6 +35,6 @@ int main() {
 				printf("\n");
 			}
 	}
-	//getchar();getchar();
+	
 	return 0;
 }

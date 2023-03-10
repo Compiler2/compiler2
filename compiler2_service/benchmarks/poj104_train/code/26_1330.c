@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char sz[101],sz2[101];
     int i,k=0,m;

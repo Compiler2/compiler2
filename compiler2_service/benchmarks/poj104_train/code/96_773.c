@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	char c[200];
 	int zs[200],shang[200];

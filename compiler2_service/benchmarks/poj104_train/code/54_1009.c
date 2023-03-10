@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int x,int y,int z)
 {
 	int k,take,i,n,j,re;

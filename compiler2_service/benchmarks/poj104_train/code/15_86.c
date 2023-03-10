@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k,p=0,q=0;
 	int mianji;

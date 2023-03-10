@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[256],dy[256]={0};
 	int i,n,l,j;

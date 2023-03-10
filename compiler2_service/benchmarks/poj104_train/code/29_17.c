@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	double fz[10000],fm[10000],s;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	
@@ -35,7 +37,7 @@ int main(){
 	}
 
 
-	//scanf("%d",&n);
+	
 
 
 

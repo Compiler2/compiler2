@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int res[10000]={0,1},i,n,a,j,b[10000]={0};

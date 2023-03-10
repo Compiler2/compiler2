@@ -1,3 +1,5 @@
+#include <header.h>
+
 int legal(char d[20]){
 	int i;
 	if(d[0]>='0'&&d[0]<='9')

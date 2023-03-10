@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(const void *a, const void *b) {return(*(int *)a-*(int *)b);} 
 main(){
 	int n,i,j,flag,max,maxnum,money,t[1001],q[1001];
@@ -9,7 +11,7 @@ main(){
 		qsort(t,n,sizeof(t[0]),cmp);
 		qsort(t,n,sizeof(q[0]),cmp);
 		money=0;
-		//? 
+		
 		for(i=0;i<n;i++){
 			flag=0;
 			max=-100;maxnum=-1;
@@ -22,7 +24,7 @@ main(){
 				t[i]=-100;q[maxnum]=-100;money+=200;
 			}
 		}
-		//?
+		
 		for(i=0;i<n;i++){
 			if(t[i]==-100)continue;
 			for(j=0;j<n;j++){
@@ -32,13 +34,13 @@ main(){
 				}
 			}
 		} 
-		//?
+		
 		for(i=0;i<n;i++){
 			if(q[i]!=-100){
 				money-=200;
 			}
 		}
-		//print
+		
 		printf("%d\n",money);
 	}
 	return 0;

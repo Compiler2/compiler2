@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {char s[999],*p;
 int i,j;

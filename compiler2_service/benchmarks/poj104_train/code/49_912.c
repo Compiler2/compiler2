@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void isHuiwen(char s0[500], int i);

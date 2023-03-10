@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pro(char *s)
 {
 	char a[444];
@@ -37,8 +39,8 @@ int main()
 {  
 	int l;
 	char s[323];
-	//freopen("tt.in","r",stdin);
-	//freopen("tt.out","w",stdout);
+	
+	
 	gets(s);
 	while (s[0]!='\0')
 	{

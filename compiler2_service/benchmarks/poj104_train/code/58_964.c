@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int i,j,n,l,k=1;
@@ -8,15 +10,15 @@ gets(s);
 for(i=0;i<n;i++)
 {
 
-gets(s); //?c ?? ???? s ????? 
+gets(s); 
 l=strlen(s);
 a[0]=s[0];
 if(a[0]<65||(90<a[0]&&a[0]<97&&a[0]!=95)||a[0]>122)
 {
  printf("0\n"); 
-                 //break;
+                 
  }
-else             //else
+else             
 {
                        for(j=1;j<l;j++) 
                        {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long a,b,c,m,n,t,w;

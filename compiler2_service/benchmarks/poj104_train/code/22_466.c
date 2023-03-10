@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[300],k=0,i,max=-999,max1=-999;

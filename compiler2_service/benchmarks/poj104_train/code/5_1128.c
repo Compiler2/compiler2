@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     double a,c=0;
     int i,n,b=0;

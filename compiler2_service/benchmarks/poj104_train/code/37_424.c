@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int t=0,i=0,j=0,k=0,l=0,*n,m=0;
@@ -25,7 +27,7 @@ int main()
 					{
 						*(n+k)=j;
 					}
-					else if(*(n+k)!=-1)//????else???
+					else if(*(n+k)!=-1)
 					{
 						*(n+k)=-2;
 					}

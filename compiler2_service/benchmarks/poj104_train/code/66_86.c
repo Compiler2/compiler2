@@ -1,3 +1,5 @@
+#include <header.h>
+
 int lp(int x,int y)
 {
 	int z=0;

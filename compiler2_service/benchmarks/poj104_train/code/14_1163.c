@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
 int name;
@@ -15,7 +17,7 @@ for(i=0;i<n;i++)
 {
                sum[i]=stu[i].ch+stu[i].math;
 }
-//for(i=0;i<n;i++)
+
 {
                 max[0]=0;
                 for(j=0,k=0;j<n;j++)
@@ -24,7 +26,7 @@ for(i=0;i<n;i++)
                 k=j;}
                 }
 }
-//for(i=0;i<n;i++)
+
 {
                 max[1]=0;
                 for(j=1,m=0;j<n;j++)
@@ -33,7 +35,7 @@ for(i=0;i<n;i++)
                 m=j;}
                 }
 }
-//for(i=0;i<n;i++)
+
 {
                 max[2]=0;
                 for(j=1,o=0;j<n;j++)

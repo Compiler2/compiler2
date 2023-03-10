@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fun(int (*p)[5],int n,int m)
 {
 	int i,t;

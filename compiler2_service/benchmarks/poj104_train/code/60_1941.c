@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pa(int n)
 {int k=1,i;
 for(i=2;i*i<=n;i++)

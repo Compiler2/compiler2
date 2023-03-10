@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int num);
 void swap(int* a,int* b);
 int main()

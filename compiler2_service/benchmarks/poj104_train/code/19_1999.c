@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -14,7 +16,7 @@ int main()
     tword[count]='\0';
     for(i=0;i<strlen(str);i++)
     {
-                              if(str[i]!=' '&&str[i]!=',')//???????????????????????? 
+                              if(str[i]!=' '&&str[i]!=',')
                               {
                                                 tword[count] = str[i];
                                                 count++;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j;
 	char zf[300],pd[300];

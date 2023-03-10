@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -18,11 +20,11 @@ int main(int argc, char* argv[])
 			scanf("%c",&s[j]);
 		}
 		*/
-		//??????????
 		
-		scanf("%s",s);    //???????????
 		
-		//s[j]='\0';
+		scanf("%s",s);    
+		
+		
 
 		len=strlen(s);
 		if((s[0]=='_')||((s[0]>='A')&&(s[0]<='Z'))||((s[0]>='a')&&(s[0]<='z')))

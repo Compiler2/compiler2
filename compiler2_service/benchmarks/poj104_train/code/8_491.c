@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000],c,d;
 void kg();
 void m(int);

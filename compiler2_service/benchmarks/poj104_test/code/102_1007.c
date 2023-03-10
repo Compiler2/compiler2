@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[100][7],sts[100][7];
 	double u[100],fe[100],ma[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -14,7 +16,7 @@ if(a==0)break;
 			scanf("%d",&t[i]);
 		for(i=1;i<=a;i++)
 			scanf("%d",&q[i]);
-             //read
+             
 		b=t[1];
 		for(j=1;j<=a;j++)
 		{
@@ -27,7 +29,7 @@ if(a==0)break;
 				   t[j]=c;
 			   }
 		    }
-		}                           // paixu t
+		}                           
 		for(j=1;j<=a;j++)
 		{
 		    for(i=1+j;i<=a;i++)
@@ -39,7 +41,7 @@ if(a==0)break;
 				   q[j]=c;
 			   }
 		    }
-		}                           // paixu q
+		}                           
 		for(i=1;i<=a;i++)
 		{
 			for(j=a;j!=0;j--)

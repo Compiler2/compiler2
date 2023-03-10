@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {  int i,n,b[11],p,sum=0;
    float a[11],k[101],GPA=0;

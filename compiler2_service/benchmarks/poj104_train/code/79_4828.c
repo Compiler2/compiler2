@@ -1,6 +1,8 @@
+#include <header.h>
+
 main()
 {
-      int m,n,a[301],c,d=0,e=0,N;//e ???? 
+      int m,n,a[301],c,d=0,e=0,N;
       for (N=0; ;N++)
  {
       scanf("%d %d",&n,&m);
@@ -26,8 +28,8 @@ main()
         a[c]=0;
         e++;
       }
-      //for (c=1;c<=n;c++)
-      // printf("%d\n",a[c]);
+      
+      
       for (c=1;c<=n;c++)
       {
           if (a[c]==1)

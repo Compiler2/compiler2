@@ -1,3 +1,5 @@
+#include <header.h>
+
  int *data;
  int InitData();
  void Sort(int a[],int n)

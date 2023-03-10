@@ -1,3 +1,5 @@
+#include <header.h>
+
 void diaohuan(int *a,int m,int n);
 main()	
 {

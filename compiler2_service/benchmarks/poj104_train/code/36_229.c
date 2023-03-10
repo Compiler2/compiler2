@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p(int i);
 char a[100],b[100];
 int l;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int find(int a,int b[])
 {
@@ -24,7 +26,7 @@ int find(int a,int b[])
 
 int main()
 {
-	int sx[1000],sy[1000];                         //????xi?yi
+	int sx[1000],sy[1000];                         
 	int x,y,i,j,k,l,xi=0;
 	scanf("%d %d",&x,&y);
 	if(x==y)

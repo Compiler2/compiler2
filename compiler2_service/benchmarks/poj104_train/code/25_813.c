@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -17,7 +19,7 @@ int main()
 
     
 
-    scanf("%d", &N); //2^N
+    scanf("%d", &N); 
 
 
 

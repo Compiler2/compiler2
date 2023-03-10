@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char a[6][99999];
  int i,k,j,m,n,p,q;

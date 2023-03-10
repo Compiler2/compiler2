@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  long a1,b1,c1,a2,b2,c2,i1,i2,sum1,sum2,d;

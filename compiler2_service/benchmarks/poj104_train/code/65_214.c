@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,a,b,c,A,B;
     scanf("%d",&n);
@@ -30,9 +32,9 @@ int main(){
         else if((B==2)&&(A==2)){
             c++;
         }       
-        //printf("%d-%d ",a,b);
+        
     }
-    //printf("%d %d",a,b);
+    
     if(a>b){
         printf("A");
     }

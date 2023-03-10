@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char digit[100],result[100];

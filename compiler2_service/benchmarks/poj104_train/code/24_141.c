@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char str[100],str2[100][100];
@@ -6,7 +8,7 @@ void main()
 	for(i=0;str[i]!='\0';i++)
 		if(str[i]==32)n++;
 	n++;
-	//printf("%d",n);
+	
 		i=0;
 		for(j=0;j<n;j++)
 		{

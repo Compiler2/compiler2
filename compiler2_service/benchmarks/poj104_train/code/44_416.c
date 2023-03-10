@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int re(int num){
     int sz[30],i,value,x;

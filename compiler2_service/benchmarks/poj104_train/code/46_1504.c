@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int h,l,i,k,n,hsx,hxx=0,lsx,lxx=0;
 	int shu[100][100];

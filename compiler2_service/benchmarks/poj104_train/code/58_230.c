@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int hefa(char*a){
 	for (;*a=='_'||(*a>='A' &&*a<='Z')||(*a>='a' &&*a<='z')||(*a>='0' &&*a<='9')||*a=='\0';a++)

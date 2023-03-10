@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char cs[102];
 int ys=0,c=0,s;

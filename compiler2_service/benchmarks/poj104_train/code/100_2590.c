@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int cs[1000],cs2[300],n,i,t1=0,t2=0,t,tp,l,m;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int t=-1,u=-1,e=-1,c=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct studen{char name[100];int score1;int score2; char H;char W;int paper;int money;}stu[200];
 int main()
 {

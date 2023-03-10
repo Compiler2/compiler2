@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double bi,p;
 	int len1,len2,i,flag,s=0;

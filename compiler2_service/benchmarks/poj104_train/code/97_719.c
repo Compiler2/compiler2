@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,hundred,fifty,twenty,ten,five,one;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jiaogu(int i)
 {
     if(i==1) printf("End");

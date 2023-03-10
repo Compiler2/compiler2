@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[100][100];
@@ -31,6 +33,6 @@ int main()
             }
         }
     }
-    //scanf("%d",i);
+    
     return 0;
 }

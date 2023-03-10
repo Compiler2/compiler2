@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5][5];
     int m,n;
 int jh(int a[5][5],int m,int n){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n1,n2;
 int*p1;
 int*p2;

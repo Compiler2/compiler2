@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char yw[302],tang=0,c,x=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int ans,i,N,y,a,b,sum1[13],sum2[13],mon[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
     sum1[0]=sum2[0]=0;

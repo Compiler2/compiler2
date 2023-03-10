@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void read(int a[100],int b[100],int m,int n);

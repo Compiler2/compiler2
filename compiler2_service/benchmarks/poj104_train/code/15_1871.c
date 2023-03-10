@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zl[1000][1000];
 int main(){
     int i,j,n,a,b,s;

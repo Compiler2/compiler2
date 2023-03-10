@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[257],z[200],h[200],t[100];

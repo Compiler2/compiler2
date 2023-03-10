@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,temp=26,n,p[27]={0};

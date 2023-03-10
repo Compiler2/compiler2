@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num[128];
 char str[1000];
 int main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int num)
 {
     int result=0,a[1000],i,j,u;

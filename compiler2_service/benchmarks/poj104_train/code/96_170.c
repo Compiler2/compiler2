@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-   int n,l;//l is he length of the characters
+   int n,l;
    int sum;
    char a[100]={0};
    char b[100]={0};    
@@ -48,6 +50,6 @@ int main()
        b[l-1]='\0';
        printf("%s\n%d",b,sum);
    }
-   //getchar();
-   //getchar();
+   
+   
 }

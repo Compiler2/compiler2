@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a(int m,int n)
 {
     int s[5][5];

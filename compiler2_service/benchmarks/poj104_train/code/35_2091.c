@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int N,M;
 int data[10][10];
@@ -17,11 +19,11 @@ int main(){
             scanf("%d",&data[i][j]);
             if (data[i][j] < mincol[j]) {
                 mincol[j] = data[i][j];
-                //mcpos[j] = i;
+                
             }
             if (data[i][j] > maxrow[i]) {
                 maxrow[i] = data[i][j];
-                //mrpos[i] = j;
+                
             }
         }
     }

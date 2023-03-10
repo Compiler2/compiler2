@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,i,a[1000]={0},count[30]={0},temp,j,max=-999,flag;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s1[110];
@@ -33,6 +35,6 @@ int main()
 	}
 	printf("%s",ss[j]);
 	
-	//printf("%s\n",ss[p]);
+	
 	return 0;		
 }

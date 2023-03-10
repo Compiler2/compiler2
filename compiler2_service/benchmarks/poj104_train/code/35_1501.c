@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sz[8][8];
 int main(){
 	int a,b,row,row1,col,e,t,s,m=0;
@@ -7,19 +9,19 @@ int main(){
 			scanf("%d",&sz[row][col]);
 		}
 	}
-	for(row=0;row<a;row++){  //11
-//		printf("row= %d\n",row);
+	for(row=0;row<a;row++){  
+
 		e=sz[row][0];
 		t=0;
 		s=row;
-		for(col=0;col<b;col++){  //12
+		for(col=0;col<b;col++){  
 				if(e<sz[row][col]){
 				e=sz[row][col];
 				t=col;
 				}
 		}
 		for(row1=0;row1<a;row1++){
-//			printf("row1=%d\n",row1);
+
 			if(e>sz[row1][t]){
 				break;
 			}

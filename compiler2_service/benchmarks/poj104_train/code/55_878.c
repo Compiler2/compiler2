@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -65,7 +67,7 @@ int main()
       r[i]=o[l-i-1][0]-10+65;             
    }
     r[length]='\0';
-    //printf("%s",r);
+    
     puts(r);
 }  
     getchar();

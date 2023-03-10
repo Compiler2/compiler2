@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zf[301],zm[53]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	gets(zf);

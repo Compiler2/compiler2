@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[30]={0}, A[30]={0}, i, m, flag=0;

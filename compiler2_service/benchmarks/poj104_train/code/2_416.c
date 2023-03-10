@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,a[999],i,k[27]={0},j,t,m;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int search(int a[][8],int m,int n)
 {
 	int i,j,k,x=0,y=0,max,sign;

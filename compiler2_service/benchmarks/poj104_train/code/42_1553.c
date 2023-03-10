@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int sz[100000],n,i,k,max;

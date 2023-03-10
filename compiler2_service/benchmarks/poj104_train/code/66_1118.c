@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isRunNian(int x);
 int main(){
 	int n, y, r, i;

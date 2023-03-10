@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x){
 	int a,b,c,d,e,j;
 	a=x%10;

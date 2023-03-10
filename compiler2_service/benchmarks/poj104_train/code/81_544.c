@@ -1,3 +1,5 @@
+#include <header.h>
+
 int putout(int n,int m);
 int main()
 {

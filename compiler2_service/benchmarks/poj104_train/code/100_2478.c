@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int a[26]={0},i=0,b[26]={0},d[26]={0},x[26]={0},n=0,j=0,t=0;
 char c[305]={'\0'};

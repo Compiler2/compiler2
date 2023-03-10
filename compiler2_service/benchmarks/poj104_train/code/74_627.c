@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m, n, c[100000]={0};

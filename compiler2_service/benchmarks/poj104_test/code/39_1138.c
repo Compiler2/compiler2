@@ -1,20 +1,22 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
 	struct stu{
 		char name[20];
-		int a;//qi mo
-		int b;//ban ji
-		char c;//ban gan
-		char d;//xi bu
-		int e;//lun wen
+		int a;
+		int b;
+		char c;
+		char d;
+		int e;
 	}str[101];
 	int n;
 	scanf("%d",&n);
-	int a[101];//qian shu
+	int a[101];
 	for(int k=1;k<=n;k++){
 		a[k]=0;}
-	int sum=0;//zong qian
+	int sum=0;
 	for(int i=1;i<=n;i++){
 		scanf("%s %d %d %c %c %d",&str[i].name,&str[i].a,&str[i].b,&str[i].c,&str[i].d,&str[i].e);}
 	for(int j=1;j<=n;j++){

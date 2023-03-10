@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int n, year, i;
    double a, b, c, d;

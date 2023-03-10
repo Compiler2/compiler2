@@ -1,4 +1,6 @@
-//#define N 5
+#include <header.h>
+
+
 void chan (int *p, int *q)
 {
 	int t=*p; *p=*q; *q=t;

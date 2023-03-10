@@ -1,3 +1,5 @@
+#include <header.h>
+
 int com1(const void *e1,const void*e2)
 {
     float *p1,*p2;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int x,y,an[15]={0},bn[15]={0};
 	scanf("%d%d",&x,&y);

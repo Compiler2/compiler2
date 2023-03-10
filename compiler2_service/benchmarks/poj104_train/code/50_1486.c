@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yue(int x);
 int main(){
 	int w;
@@ -6,7 +8,7 @@ int main(){
 	scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		k+=yue(i-1);
-//		printf("%d\n",yue(i));
+
 		if(w+(k%7)==6||w+(k%7)==13){
 			printf("%d\n",i);
 		}

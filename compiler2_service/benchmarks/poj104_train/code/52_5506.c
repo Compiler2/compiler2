@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
     int n,m,i,a[100],x=0,k,c=0,temp,count=0;
@@ -18,13 +20,13 @@ int main ()
                          if (x+m<n)
                         c=x+m;                        
                         else c=x+m-n;
-                        // printf("c=%d",c);                              
+                        
                          temp=a[c];
                          a[c]=a[i];
                          a[i]=temp;
                          x=c; 
                           } 
-                          //printf("break"); 
+                          
                           count=0;
                           x=0;
                           c=0;

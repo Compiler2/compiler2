@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[]){
 int i;
 char n[5]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,j,w,day,rq[31];
 scanf("%d",&w);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[20],r[40];
@@ -13,7 +15,7 @@ int main()
 			n=a*n+s[i]-'A'+10;
 		else n=a*n+s[i]-'0';
 	}
-	//printf("%ld\n",n);
+	
 	i=0;
 	if(n==0) 
 	{

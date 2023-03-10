@@ -1,3 +1,5 @@
+#include <header.h>
+
 int count;
 void solve(int num,int a,int m)
 {

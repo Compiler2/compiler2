@@ -1,3 +1,5 @@
+#include <header.h>
+
  int shifouzimu(char c);
  int longl( char string[]);
  int shortl(char string[]);
@@ -40,7 +42,7 @@ if (shifouzimu(string[i]))
          {
    length=len;
    place=point;
-//    len=0;
+
          }
  len=0;
       }
@@ -71,7 +73,7 @@ int shortl(char string[])
            {
  length=len;
             place=point;
-   //        len=0;
+   
             }
  len=0;
           }

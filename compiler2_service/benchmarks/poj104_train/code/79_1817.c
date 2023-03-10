@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int m,k,n,a[300],i,j,h;

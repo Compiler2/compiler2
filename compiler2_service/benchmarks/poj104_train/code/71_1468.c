@@ -1,3 +1,5 @@
+#include <header.h>
+
 int u[100],p[100],w[100];
 int main()
 {

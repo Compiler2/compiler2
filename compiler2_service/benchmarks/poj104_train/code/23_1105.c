@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char s[101],c[101],len;

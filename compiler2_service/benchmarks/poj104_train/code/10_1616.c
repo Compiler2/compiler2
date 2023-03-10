@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[29],max[29]={0},count[29]={0};
 int N;
 int select(int x)

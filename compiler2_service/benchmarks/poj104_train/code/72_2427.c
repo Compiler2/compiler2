@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int m,n,i,j,k,a,b=0;
     int gao[1000][1000],din[1000][1000];

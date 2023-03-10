@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,n;
 double cd2,cd1,per,szp,s=0;

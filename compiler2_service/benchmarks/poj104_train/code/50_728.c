@@ -1,3 +1,5 @@
+#include <header.h>
+
  
 int DJT(int m){
 	int i,result=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char word[1000][50]={'\0'};

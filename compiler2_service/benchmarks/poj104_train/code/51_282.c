@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bi(char a[],char b[])
 {
 	int i,m=0,z=0;

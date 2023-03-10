@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int i,num;
@@ -56,14 +58,14 @@ int main()
                      }
    result=0;
    sum=0;
-   //for(i=0;i<num;i++)
-   //printf("%.2lf %.2lf\n", sz1[i], sz2[i]);
+   
+   
    for(i=0;i<num;i++)
    {
                      result=result+sz2[i]*sz[i];
                      sum=sum+sz[i];
                      }
-   //printf("%.2lf %.2lf", result, sum);
+   
   GPA=result/sum;
    printf("%.2lf", GPA);
    scanf(" ");

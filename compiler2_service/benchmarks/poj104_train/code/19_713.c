@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
     int lena,posi,i,j;
@@ -16,7 +18,7 @@ a[index][i++]=e[j];
 
 }
 index++;
-//printf("%d!\n",index);
+
     scanf("%s",b);
     scanf("%s",c);
     for(i=0;i<index;i++)

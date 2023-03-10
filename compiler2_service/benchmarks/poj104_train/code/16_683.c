@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,ge,shi,bai,qian,wan,place=1,j=2;

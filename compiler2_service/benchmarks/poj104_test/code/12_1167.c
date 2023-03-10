@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	int n=0,m[20],i=0,j=0,t=0;//n is the num of int
+	int n=0,m[20],i=0,j=0,t=0;
 	char c;
 	scanf("%d%c",&m[0],&c);
 	while(m[0]>0)

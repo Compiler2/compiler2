@@ -1,6 +1,8 @@
-//?????
-//??? 1200017623
-//???????????
+#include <header.h>
+
+
+
+
 
 
 int main(){
@@ -14,7 +16,7 @@ int main(){
 					if(a == d||b == d||c == d)continue;
 					e = 15 - a - b - c - d;
 					if(e == 2 || e == 3)continue;
-					word[a] = (e == 1);                 //a????A??????
+					word[a] = (e == 1);                 
 					word[b] = (b == 2);
 					word[c] = (a == 5);
 					word[d] = (c != 1);

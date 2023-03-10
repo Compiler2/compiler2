@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int  num[1000];
 char auth[1000][26];

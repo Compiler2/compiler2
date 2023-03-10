@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
  {
 	char sz[101]={'\0'};

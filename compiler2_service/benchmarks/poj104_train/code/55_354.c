@@ -1,3 +1,5 @@
+#include <header.h>
+
 long int sum=0;
 char a[10000];
 long int c[10000];

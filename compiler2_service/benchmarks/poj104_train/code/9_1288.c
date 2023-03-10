@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct patient
 {	char id[11];
 	int age;
@@ -23,7 +25,7 @@ int main()
 	}
 	for(i=1;i<a-1;i++){
 		for(j=0;j<a-i;j++){
-			if(pt[age_r[j]].age<pt[age_r[j+1]].age){   //?????????????? ???debug?????????
+			if(pt[age_r[j]].age<pt[age_r[j+1]].age){   
 				strcpy(temid,pt[age_r[j]].id);
 				strcpy(pt[age_r[j]].id,pt[age_r[j+1]].id);
 				strcpy(pt[age_r[j+1]].id,temid);

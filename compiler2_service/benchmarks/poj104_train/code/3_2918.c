@@ -1,3 +1,5 @@
+#include <header.h>
+
 int read();
 int find();
 int n,k,a[1000],m;

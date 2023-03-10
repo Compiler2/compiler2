@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int row,col,i,j,k,n,m,a[100][100];

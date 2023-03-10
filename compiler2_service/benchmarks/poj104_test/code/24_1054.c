@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char u[50][100];
@@ -11,7 +13,7 @@ int main()
 	j = 0;
 	
 	int len = strlen(buf);
-	//printf("  ---  buf=%d\n", strlen(buf));
+	
 
 	buf[strlen(buf)] = ' ';
 	buf[strlen(buf)+1] = '\0';
@@ -25,11 +27,11 @@ int main()
 		}
 		u[j][index] = '\0';
 		a[j] = strlen(u[j]);
-		//printf("%s, %d, %d\n", u[j], a[j], j);
+		
 		j++;
-		//printf("i = %d\n", i);
+		
 	}
-    //printf("-----\n");
+    
 	n = j;
     for(i=0;i<n;i++)
 	{
@@ -47,7 +49,7 @@ int main()
 		}
 
 	}
-	//printf("%d, %d\n", max, min);
+	
 
     printf("%s\n",u[max]);
 	printf("%s",u[min]);

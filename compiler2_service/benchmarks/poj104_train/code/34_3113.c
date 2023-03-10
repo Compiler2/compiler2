@@ -1,3 +1,5 @@
+#include <header.h>
+
 int wer(int a)
 {
       int n,i;

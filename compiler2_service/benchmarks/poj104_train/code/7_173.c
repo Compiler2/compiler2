@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char sr[1000];
@@ -9,7 +11,7 @@ len=strlen(sr);
 ken=strlen(a);
 int i,j,k,m;
 m=0;
-// Ilovehomelive live==>jdkfjdsjfks
+
 for(i=0;i<len;i++)
 {
 	if(sr[i]==a[0]){j=i;

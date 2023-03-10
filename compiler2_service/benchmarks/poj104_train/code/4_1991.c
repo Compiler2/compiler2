@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,zong,x,y,sum,i,zanshi;

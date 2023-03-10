@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ( )
 {
 	int nian,yue,ri,tian,i=1;

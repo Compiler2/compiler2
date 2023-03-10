@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,p,b;
 char a[22];

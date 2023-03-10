@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int n,b[65535],c[65535],i,k;

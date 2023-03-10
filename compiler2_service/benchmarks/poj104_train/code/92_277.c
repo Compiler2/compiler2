@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n,a[1001],b[1001];
 void sifta(int i,int num)
@@ -30,7 +32,7 @@ void hsa()
 		tmp=a[i];a[i]=a[1];a[1]=tmp;
 		sifta(1,i-1);
 	}
-	//for(i=1;i<=n;i++)	printf("%d ",a[i]);
+	
 }
 void hsb()
 {
@@ -40,7 +42,7 @@ void hsb()
 		tmp=b[i];b[i]=b[1];b[1]=tmp;
 		siftb(1,i-1);
 	}
-	//for(i=1;i<=n;i++)	printf("%d ",b[i]);
+	
 }
 int main()
 {
@@ -49,10 +51,10 @@ int main()
 	{
 		scanf("%d",&n);
 		if(n==0)break;
-		for(i=1;i<=n;i++)scanf("%d",&b[i]);	//tianji
-		for(i=1;i<=n;i++)scanf("%d",&a[i]);	//qiwang
+		for(i=1;i<=n;i++)scanf("%d",&b[i]);	
+		for(i=1;i<=n;i++)scanf("%d",&a[i]);	
 		hsa();
-		hsb();//find the minest one >= it 
+		hsb();
 		
 		int tot=0,j=0,t=0,visited[1001]={0};
 		
@@ -67,14 +69,14 @@ int main()
 			}
 			else{
 				if(a[ta]>b[hb])
-					tot-=200;	//lose
-				//draw
+					tot-=200;	
+				
 				ta--;hb++;				
 			}
 		}
 		/*
 		for(i=1;i<=n;i++){
-			//j++;if(j>n){t--;break;}
+			
 			t=i;
 			while(b[j]<a[i] && j<n)j++;			
 			if(b[j]>a[i])	
@@ -94,6 +96,6 @@ int main()
 		*/
 		printf("%d\n",tot);
 	}
-	//getchar();getchar();
+	
 	return 0;
 }

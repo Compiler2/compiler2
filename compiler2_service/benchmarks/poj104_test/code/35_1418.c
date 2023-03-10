@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int number[7][7],row,col,i,j,m,sum1=0,sum2=0;
 	scanf("%d,%d",&row,&col);

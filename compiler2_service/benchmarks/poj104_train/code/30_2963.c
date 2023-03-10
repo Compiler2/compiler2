@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -7,7 +9,7 @@ main()
       {
       sum=sum+i*i;
       }
-      //printf("%d\n",sum);
+      
       for(j=0;j<=9;j++)
       {
       if((j+70)<=x&&j!=7&&j!=0)

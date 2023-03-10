@@ -1,3 +1,5 @@
+#include <header.h>
+
 int King[1000];
 int TianJi[1000];
 
@@ -24,7 +26,7 @@ int Partition(int A[1000],int p,int q)
 }
                 
     
-int QuikSort(int A[1000],int p,int r)//???? 
+int QuikSort(int A[1000],int p,int r)
 {
     int q;
     if (p<r)
@@ -36,13 +38,13 @@ int QuikSort(int A[1000],int p,int r)//????
     return 0;
 } 
 
-int score(int A[1000],int B[1000],int n)//A?B?????????????A??????????B????????? 
+int score(int A[1000],int B[1000],int n)
 { 
  int Money = 0;
  int i,j,k,m;
  i = 0; 
  m = 0;
-             while( i+m != n-1)//????????????? 
+             while( i+m != n-1)
             {  
                
                if(i==0 && m == 0)
@@ -50,20 +52,20 @@ int score(int A[1000],int B[1000],int n)//A?B?????????????A??????????B?????????
                j = 0;
                k = 0;
                }
-              // printf("\n%d %d %d %d",i,m,j,k);
-               if(A[j] > B[i])//???????????????????????? 
+              
+               if(A[j] > B[i])
                {
                Money+=1;
                j++;
                i++;
                }
-               else if(A[n-k-1] > B[n-m-1])//???????????????????????? 
+               else if(A[n-k-1] > B[n-m-1])
                {
                Money+=1;
                k++;
                m++;
                }
-               else//?????????????????? 
+               else
                {
                    if(A[n-k-1]<B[i])
                    Money-=1;
@@ -71,7 +73,7 @@ int score(int A[1000],int B[1000],int n)//A?B?????????????A??????????B?????????
                    i++;
                }
             }
-            if(A[j] > B[i])//????????????? 
+            if(A[j] > B[i])
                {
                Money+=1;
                }
@@ -96,10 +98,10 @@ int main()
             for(i=0;i<n;i++)
             scanf("%d",&King[i]);
             QuikSort(TianJi,0,n-1); 
-           // for(i=0;i<n;i++)
-            //printf("%d ",TianJi[i]);
+           
+            
             QuikSort(King,0,n-1);
-          //  printf("%d \n",score(TianJi,King,n));
+          
             Money = score(TianJi,King,n);
             printf("%d\n",Money*200);
             scanf("%d",&n);

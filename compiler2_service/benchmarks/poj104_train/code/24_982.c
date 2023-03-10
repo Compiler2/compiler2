@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int len[50];
 int mark=0,a=0,b,B=0,i,n,minIndex,maxIndex;
@@ -25,7 +27,7 @@ for(a=0;a<50;a++){
 		if(s[b]=='\0'){
 			break;}
 	
-//printf("zfc a %s\n",zfc[a]);
+
 }
 
 for(n=0;n<mark;n++){

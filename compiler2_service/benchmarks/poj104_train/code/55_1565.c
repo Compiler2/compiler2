@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,from,to,len;
@@ -10,7 +12,7 @@ int main()
 	for(i='a';i<='z';i++)
 		a2i[i]=i-'a'+10;
 	for(i='A';i<='Z';i++)
-		a2i[i]=i-'A'+10;                     //???????
+		a2i[i]=i-'A'+10;                     
 	scanf("%d%s%d",&from,in,&to);
 	for(i=0;in[i]!='\0';i++)
 	{

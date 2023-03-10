@@ -1,3 +1,5 @@
+#include <header.h>
+
 char com(char ch);
 char com(char ch)
 {

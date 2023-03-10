@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bigmulti(char a[],char b[],char c[])
 {
     int i,tem[400],j,k,la=strlen(a),lb=strlen(b);

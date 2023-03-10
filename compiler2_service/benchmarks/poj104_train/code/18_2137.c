@@ -1,3 +1,5 @@
+#include <header.h>
+
 int row(int a[][100],int l,int m)
 {
 	int i,min=a[m][0];

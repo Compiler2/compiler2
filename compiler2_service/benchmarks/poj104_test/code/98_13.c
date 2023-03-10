@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int i , n , j , l , c = 0;
@@ -11,7 +13,7 @@ int main(){
 		l = strlen(word[i]);
 		j = strlen(word[i+1]);
 		c = c + l + 1;
-		//	printf("\n%d %d %d" , l , j , c);
+		
 		if( c + j > 80) {
 			printf("\n");
 			c = 0 ;

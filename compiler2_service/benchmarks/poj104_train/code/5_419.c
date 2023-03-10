@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char x,char y)
 {
     if(x==y) return 1;

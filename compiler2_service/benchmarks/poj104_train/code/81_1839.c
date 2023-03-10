@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[5][5],b[5]={0,1,2,3,4},m,n,i,j,temp;

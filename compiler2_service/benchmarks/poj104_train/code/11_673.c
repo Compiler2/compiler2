@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int year,month,day,a,m[12]={31,28,31,30,31,30,31,31,30,31,30,31},i,sum=0;

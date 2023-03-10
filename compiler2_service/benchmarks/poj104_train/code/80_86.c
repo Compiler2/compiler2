@@ -1,17 +1,19 @@
+#include <header.h>
+
 int main()
 {
 	int a,b,c,e,f,g,h,i,j,d1,d2,o;
-	scanf("%d  %d %d %d %d %d",&a,&b,&c,&e,&f,&g);   //?????
+	scanf("%d  %d %d %d %d %d",&a,&b,&c,&e,&f,&g);   
 	h=0;
 	j=0;
-	for(i=a+1;i<e;i++)   //??????????????????????
+	for(i=a+1;i<e;i++)   
 	{
 		if((i%4==0&&i%100!=0)||i%400==0)  h=h+1;
 		j=j+1;
 	}
 	b-=1;
 	f-=1;
-	if((a%4==0&&a%100!=0)||a%400==0)   //?????????????????????????
+	if((a%4==0&&a%100!=0)||a%400==0)   
 	{
 		switch(b)
 		    {
@@ -49,7 +51,7 @@ int main()
 			default: printf("error\n");
 			}
 	}
-	if((e%4==0&&e%100!=0)||e%400==0)   //???????
+	if((e%4==0&&e%100!=0)||e%400==0)   
 	{
 		switch(f)
 			{
@@ -87,9 +89,9 @@ int main()
 	        default: printf("error\n");
 			}
 	}
-	if(a==e) o=d2+g-d1-c;  //???????????????????
+	if(a==e) o=d2+g-d1-c;  
 	else 
-		{ if((a%4==0&&a%100!=0)||a%400==0) o=365*j+h+d2+g+(366-d1-c);  //??????????????
+		{ if((a%4==0&&a%100!=0)||a%400==0) o=365*j+h+d2+g+(366-d1-c);  
 		else o=365*j+h+d2+g+(365-d1-c);}  
 	printf("%d",o);
 }

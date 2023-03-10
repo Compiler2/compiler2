@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ( )
 {
 	char sen_1[80]="\0",sen_2[80]="\0";

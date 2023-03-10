@@ -1,3 +1,5 @@
+#include <header.h>
+
 int height[26];
 int max[26];
 void cha(int n)

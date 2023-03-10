@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char q;
@@ -21,6 +23,6 @@ int main()
             printf(" ");
         }
     for (j=1;j<=tot[1];j++)  printf("%c",a[i][j]);
- //   scanf("%c",&q);        
+ 
                
 }

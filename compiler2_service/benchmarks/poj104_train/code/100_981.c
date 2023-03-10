@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,letter[26]={0},flag=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n, i,shu[300],he=0,j;

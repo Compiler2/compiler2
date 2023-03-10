@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()                               
 {
 	int num[20000],output[20000];        

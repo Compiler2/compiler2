@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	float a,rate;
 	int i,lena,lenb,sum=0;

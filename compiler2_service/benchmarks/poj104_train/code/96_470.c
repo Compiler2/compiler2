@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
   char x[100],y[100]={'\0'};

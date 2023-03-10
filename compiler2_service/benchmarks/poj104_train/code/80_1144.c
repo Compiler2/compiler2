@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int isRun(int year)
 {
@@ -11,7 +13,7 @@ int main(int argc, char* argv[])
 	int startYear, startMonth, startDay ;
 	int endYear, endMonth, endDay;
 
-	int startOffset=0, endOffset=0; ///??????????startyear 1-1
+	int startOffset=0, endOffset=0; 
 	int Month[12]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	int i, j;
 
@@ -46,7 +48,7 @@ int main(int argc, char* argv[])
 		}
 		startOffset+=startDay-1;
 	}
-	//////////////////////////////////////////////////////////////////////////
+	
 
 	for (j=startYear; j<endYear; j++)
 	{

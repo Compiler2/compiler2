@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,l,i,j,b[500]={0},max=0,d[500]={0};
@@ -7,7 +9,7 @@ int main()
     l=strlen(a);
     for(i=0;i+n<=l;i++)
         for(j=0;j<n;j++)
-        	c[i][j]=a[i+j];//????? 
+        	c[i][j]=a[i+j];
     for(i=0;i+n<=l;i++)
     	for(j=0;j+n<=l;j++)
         	if(strcmp(c[i],c[j])==0)

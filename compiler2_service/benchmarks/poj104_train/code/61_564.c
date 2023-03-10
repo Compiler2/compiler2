@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p(int m)
 {
  	int i,a[22];

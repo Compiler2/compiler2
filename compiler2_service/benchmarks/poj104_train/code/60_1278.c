@@ -1,3 +1,5 @@
+#include <header.h>
+
 int prime[1000001];
 int tot = 0;
 int main()

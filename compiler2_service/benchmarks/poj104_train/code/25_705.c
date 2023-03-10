@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int i,n,a[32]={0},j;
 scanf("%d",&n);a[0]=1;

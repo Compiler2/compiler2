@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhi(int a);
 int yin(int m,int t);
 int main()

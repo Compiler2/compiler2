@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i;
 int game[201][2]={0};

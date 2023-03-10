@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
 	char a[251],b[251],c[252]={0};
 	int alen,blen,clen,i,x;

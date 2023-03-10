@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	unsigned long int a,b,c,days,allday,m,n;

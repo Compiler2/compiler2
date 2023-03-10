@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int c['z']={0},flag=0;

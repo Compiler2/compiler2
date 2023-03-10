@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n, m, sum;
 int room[102][102];
@@ -9,7 +11,7 @@ int main()
 	scanf("%d", &n);
 	for (i = 1; i <= n; i ++)
 	{
-		scanf("%c", &ch); // skip \n
+		scanf("%c", &ch); 
 		for (j = 1; j <= n; j ++)
 		{
 			scanf("%c", &ch);

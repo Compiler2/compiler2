@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int b[200],i,j;
@@ -5,7 +7,7 @@ int main()
   while(gets(a))
   {
     memset(b,0,sizeof(b));
-    //if(a=EOF) break;
+    
     for(i=0;i<200;i++)
     {
       if(a[i]=='\0') break;
@@ -33,7 +35,7 @@ int main()
     
     }
     printf("\n");
-    //gets(a);
+    
   }
   return 0;
 }

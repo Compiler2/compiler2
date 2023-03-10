@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    char p[1001],i=0,count=1;

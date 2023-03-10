@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sen[101],word1[101],word2[101],danci[50][101];
 	int LEN[50],LEN1,i,k=0,j=0;

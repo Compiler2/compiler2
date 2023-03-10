@@ -1,3 +1,5 @@
+#include <header.h>
+
 void spread(int A[100][100],int M,int N)
 {
 	int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int djt(int year,int month)
 {
 	int i,sum=1;

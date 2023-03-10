@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[5][5],i,j,k,row[5],col[5],ro,column;
@@ -11,7 +13,7 @@ int main()
 		col[i-1]=a[0][i-1];
 		row[i-1]=a[i-1][0];
 	}
-	for (i=1;i<=5;i++)                //????????//
+	for (i=1;i<=5;i++)                
 	{
 		for (j=1;j<=5;j++)
 		{
@@ -19,7 +21,7 @@ int main()
 				row[i-1]=a[i-1][j-1];
 		}
 	}
-	for (j=1;j<=5;j++)              //????????//
+	for (j=1;j<=5;j++)              
 	{
 		for (i=1;i<=5;i++)
 		{
@@ -27,7 +29,7 @@ int main()
 				col[j-1]=a[i-1][j-1];
 		}
 	}
-	int exist=0;                   //?????????????//
+	int exist=0;                   
 	for (column=1;column<=5;column++)
 	{
 		for(ro=1;ro<=5;ro++)
@@ -35,7 +37,7 @@ int main()
 			if (col[column-1]==row[ro-1])
 			{
 				printf("%d %d %d\n",ro,column,col[column-1]);
-				exist=1;           //??????//
+				exist=1;           
 			}
 		}
 	}

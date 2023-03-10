@@ -1,3 +1,5 @@
+#include <header.h>
+
 int h[25],n;
 int hack(int i,int w){
  if(i==n-1){

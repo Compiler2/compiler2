@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() 
 { 
 	int n[26]={0},i,j,p; 

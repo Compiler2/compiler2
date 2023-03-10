@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,n=0,m=0,p=0,q=0;
 char s[300],a='Z',k,j;

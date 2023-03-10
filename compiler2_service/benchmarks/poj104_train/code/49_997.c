@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int check(char str[]);
     char string[1000];

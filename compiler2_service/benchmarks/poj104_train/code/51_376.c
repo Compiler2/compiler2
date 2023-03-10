@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -24,7 +26,7 @@ int main()
 
 	int maxi[500],g,h,max;
 	int count[500]={0};
-	for(g=0;g<d;g++)//???????
+	for(g=0;g<d;g++)
 	{		
 		for(h=g+1;h<d;h++)
 		{
@@ -37,7 +39,7 @@ int main()
 
 	max=count[0];
 	int i=0;
-	for(i=0;i<d;i++)//???????
+	for(i=0;i<d;i++)
 	{
 		if(max<count[i])
 		{

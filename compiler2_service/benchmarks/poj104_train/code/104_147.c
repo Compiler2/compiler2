@@ -1,3 +1,5 @@
+#include <header.h>
+
 int next(int x)
 {
 	int z;

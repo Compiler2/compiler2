@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ismatrix(int m, int n)
 {
     if(m>=5||n>=5||n<0||m<0){

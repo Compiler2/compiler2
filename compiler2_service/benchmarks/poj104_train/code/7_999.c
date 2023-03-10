@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[256],b[256],c[256];
@@ -5,7 +7,7 @@ int main()
     scanf("%s",b);
     scanf("%s",c);
     int i,j;
-    int count1=0,count2=0;//count1 count2?????????????????
+    int count1=0,count2=0;
     for(i=0;a[i]!='\0';i++)
     {
         count1++;
@@ -20,7 +22,7 @@ int main()
         n=0;
         if(a[k]==b[0])
         {
-            o=m=k; //??????k?“??”??
+            o=m=k; 
             for(n=0;n<=count2-1;n++)
             {
                 if(a[m]!=b[n])
@@ -48,7 +50,7 @@ int main()
                 }
                 judge1=1;
                 break;
-            }                        //?????????????????????????
+            }                        
             else if(judge==0)
             {
                 continue;
@@ -67,6 +69,6 @@ int main()
     getchar();
     getchar();
     getchar();
-    //????????“??”?????
+    
 
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int i,n,shou[100],shu[100],time,m=0,t=0;

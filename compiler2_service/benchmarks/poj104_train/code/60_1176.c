@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sushu[2],i,j,k=0,n,flag,fl=0;
 	scanf("%d",&n);

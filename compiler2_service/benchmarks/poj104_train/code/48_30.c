@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void output(int a[9][9])
 {
@@ -33,10 +35,10 @@ int main()
 	{
 		for(x = 0;x <= 8; x++)
 		{
-			//printf("[%d]\n", a[0][0]);
+			
 			for(y = 0;y <= 8;y ++)
 			{
-//				if(a[x][y] != 0)
+
 				{
 					addup[x - 1][y - 1] += a[x][y];
 					addup[x - 1][y] += a[x][y];
@@ -70,7 +72,7 @@ int main()
 				}
 			}
 		}
-		//printf("[%d]\n", a[0][0]);
+		
 		/*printf("-----add--------\n");
         output(addup);
 		printf("-----add end--------\n");*/

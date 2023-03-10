@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
   int n,num[128]={0},i,j=0;

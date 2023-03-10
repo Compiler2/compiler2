@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ok(int a)
 {
     int i;

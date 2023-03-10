@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void play(int n[],int l);
 

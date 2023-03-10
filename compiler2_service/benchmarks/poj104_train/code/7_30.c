@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int len1,len2,i,j,m,control=0;

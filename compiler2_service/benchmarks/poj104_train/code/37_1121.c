@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 { 
     int cases,sum[26],i,max,j;

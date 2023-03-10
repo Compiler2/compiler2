@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s[51],w[51];
 	char zfc[2][51];

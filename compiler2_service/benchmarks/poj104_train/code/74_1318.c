@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sushu(int n)
 {
 	int d=1,i;

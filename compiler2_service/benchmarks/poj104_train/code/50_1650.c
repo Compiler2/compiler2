@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dijitian(int m,int d)
 {
 	int i,sum=0;

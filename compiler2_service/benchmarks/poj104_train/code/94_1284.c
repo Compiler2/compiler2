@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int N,M;
 int data[10010];

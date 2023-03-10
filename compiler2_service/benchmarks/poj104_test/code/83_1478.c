@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 float GPA(int x);
 int main()
@@ -6,26 +8,26 @@ int main()
 	float sum = 0;
 	scanf("%d", &n);
 
-	//????
+	
 	for(i=0; i<n; i++)
 	{
 		scanf("%d", &jd[i]);
 	}
 
-	//????
+	
 	for(i=0; i<n; i++)
 	{
 		scanf("%d", &cj[i]);
 	}
 
-	//?????????
+	
 	for(i=0; i<n; i++)
 	{
 		sum += GPA(cj[i]) * jd[i];
 		jdsum += jd[i];
 	}
 
-	//????
+	
 	printf("%.2f", sum/jdsum);
 
 	return 0;

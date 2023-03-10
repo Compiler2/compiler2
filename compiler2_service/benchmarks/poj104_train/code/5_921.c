@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,l1,l2,l;
     double t,c;
@@ -7,7 +9,7 @@ int main(){
     scanf("%s %s",a,b);
     l1=strlen(a);
     l2=strlen(b);
-    //printf("%lf ",t);
+    
     if(l1!=l2){
         printf("error");
         return 0;
@@ -31,7 +33,7 @@ int main(){
         }
     }
     c=1.0*n/l;
-    //printf(" %lf %d %d",c,n,l);
+    
     if(c>t){
         printf("yes");
     }

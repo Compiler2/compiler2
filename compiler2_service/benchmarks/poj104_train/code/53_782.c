@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int g[300];

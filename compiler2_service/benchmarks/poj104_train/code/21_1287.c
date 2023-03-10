@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int n,a[300]={0},j,i,sum=0,temp;
@@ -9,14 +11,14 @@ int main()
         sum+=a[i];
   }
   b=(float)sum/n;
-  //printf("%f\n",b);??
+  
   for(i=0;i<n;i++)
   {
         if(a[i]>b)
         c[i]=a[i]-b;
         else
         c[i]=b-a[i];
-       // printf("%f\n",c[i]);
+       
   }
   for(i=1;i<n;i++)
   {

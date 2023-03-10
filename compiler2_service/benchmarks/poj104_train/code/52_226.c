@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,m,A[200],i,p,q;

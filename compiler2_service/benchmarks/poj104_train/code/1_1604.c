@@ -1,3 +1,5 @@
+#include <header.h>
+
     int factor(int n,int min){
     int result=1,i;
     if(n<min){

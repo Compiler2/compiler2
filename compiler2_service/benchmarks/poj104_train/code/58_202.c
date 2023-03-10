@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,j,k,n,m,l;
@@ -8,7 +10,7 @@ main()
       {
           j=0;
           gets(a);
-        //puts(a);
+        
           if(a[0]=='_'||(a[0]>='a'&&a[0]<='z')||(a[0]>='A'&&a[0]<='Z'))
           {
               l=strlen(a);

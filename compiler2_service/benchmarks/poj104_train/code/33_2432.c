@@ -1,3 +1,5 @@
+#include <header.h>
+
 char swap(char x){
 	char y;
 	if(x=='A')

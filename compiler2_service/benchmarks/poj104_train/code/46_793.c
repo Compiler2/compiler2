@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,a[100][100]={{0},{0}},s=0,b,t=0,r=0,c=0,R,rmin=0,C,cmin=0;

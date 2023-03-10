@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,j,i,l;
 	char z[256];scanf("%d",&n);

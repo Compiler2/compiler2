@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,a[100],max,min,x,y;

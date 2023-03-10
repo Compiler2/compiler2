@@ -1,3 +1,5 @@
+#include <header.h>
+
 double zpjd (int n,int a[],int b[]);
 int main(){
 	int n,i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n,sp,st[100]={0};

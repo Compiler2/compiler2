@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 char sen[2000],word[300][20];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
 	int n,i,j,flag,max,maxnum,money,t[1001],q[1001],temp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 del(int a[],int n)
 {
 	int *p,*q;

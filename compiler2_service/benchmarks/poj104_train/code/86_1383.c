@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,m,k,i,j,mid,judge,timer,l[100],r[100],stop;
 	mid=0;
@@ -33,7 +35,7 @@ int main(){
 				break;
 			}
 		}
-	//	printf("judge=%d\n",judge);
+	
 		if(judge==10000){
 			r[k]=60-3*(i);
 		}else if(judge==33333){

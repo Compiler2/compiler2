@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[301]={0},i,j,k,n=0,posi[300]={0},b1,b2=-1,t;
@@ -8,7 +10,7 @@ int main()
 	{
 	    if(s[i]==','){posi[j]=i+1;j++;}
 	}
-	posi[j]=strlen(s)+1;//?j???posi[0]to posi j-1
+	posi[j]=strlen(s)+1;
 	for(i=0;i<=j-1;i++)
 	{
 	    for(k=posi[i];k<=posi[i+1]-2;k++)

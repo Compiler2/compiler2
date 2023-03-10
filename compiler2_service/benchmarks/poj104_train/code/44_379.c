@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int num)
 {
 	int r=0, m, n=1, s=1, i=0, j=1;
@@ -11,7 +13,7 @@ int reverse(int num)
 	{
 		j = j * 10;
 		s = num / j;
-		i++;           //i?num???
+		i++;           
 	}
 	for(m = i; m > 0; m--)
 	{

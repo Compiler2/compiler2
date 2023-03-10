@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,y[200],m1[200],m2[200],d1[200]={0},d2[200]={0};

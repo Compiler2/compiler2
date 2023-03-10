@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	 int sort(int **p,int n,int m);
@@ -35,7 +37,7 @@ int main()
 }
 int sort(int **p,int n,int m)
 {
-	int k,temp;//temp????????????//
+	int k,temp;
 	if(m>=0&&m<5&&n>=0&&n<5)
 	{
 		for(k=0;k<5;k++)
@@ -44,7 +46,7 @@ int sort(int **p,int n,int m)
 			*(*(p+m)+k)=*(*(p+n)+k);
             *(*(p+n)+k)=temp;
 		}
-		return 1;//?????????????????1//
+		return 1;
 	}
 	else
 	{

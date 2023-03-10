@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,t[100],e[100],total,effect,i;
 	double x,y[100];

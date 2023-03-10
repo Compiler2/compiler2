@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char words[200][30],input[10000];

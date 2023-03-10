@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fy(char c[])
 {
     long s=0,i=0,t=1;

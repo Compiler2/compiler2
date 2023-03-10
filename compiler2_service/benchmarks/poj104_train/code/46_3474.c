@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100][100];
 void shuchu(int e,int b,int row,int col,int c)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int aa[], int bb[],int c[],int t);
 
 

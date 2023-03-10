@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int in[1002],out[1002],time[1002]={0};

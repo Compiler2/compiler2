@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,u[600]={0},l,g=0;

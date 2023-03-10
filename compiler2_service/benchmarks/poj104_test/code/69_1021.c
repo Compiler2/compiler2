@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -32,10 +34,10 @@ int main()
          s=0;
 	while (c[s]==0)
             s++;
-//	for (i=1;i<=l1;i++)
-//		printf("%d",a1[i]);printf("\n");
-//	for (i=1;i<=l2;i++)
-//		printf("%d",b1[i]);printf("\n");
+
+
+
+
 	for (i=s;i<=l1;i++)
 		printf("%d",c[i]);
 	if (s>l1) printf("0");

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int n,int m){
 	if(n<=4&&n>=0&&m<=4&&m>=0){
 		return 1;

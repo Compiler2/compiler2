@@ -1,3 +1,5 @@
+#include <header.h>
+
 int first(char x)
 {
 	if(x=='_'||(x>='a'&&x<='z')||(x>='A'&&x<='Z'))return 1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct mem
 {
     int year;
@@ -65,7 +67,7 @@ int main()
     for(i=0;i<n;i++)
     {
         scanf("%d%d%d",&mem[i].year,&mem[i].month1,&mem[i].month2);
-        if(find(mem[i].year)==0)//???????
+        if(find(mem[i].year)==0)
         {
             int p=0;
             if(mem[i].month1>mem[i].month2)

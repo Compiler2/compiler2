@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char *p1,char *p2)
 {
      char *p=p1,*q=p2;

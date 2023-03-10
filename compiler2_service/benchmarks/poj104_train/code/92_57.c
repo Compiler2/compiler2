@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(const void * p,const void * q) {
 	int * t1 = (int*)p;
 	int * t2 = (int*)q;

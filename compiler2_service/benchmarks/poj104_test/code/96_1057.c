@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int i,j,al;
@@ -19,9 +21,9 @@ main()
 	}
 	else
 	{
-	for(i=0;i<al-1;i++)//i???
+	for(i=0;i<al-1;i++)
 	{
-		//????? 
+		
 		if(i==0)
 		{
 			ef[0]=b[0];
@@ -31,26 +33,26 @@ main()
 				
 				b[i]=b[i]-1;
 				b[i+1]=b[i+1]-3;
-				//printf("%s\n",b);
+				
 				if(b[i+1]<'0')
 				{	
 					b[i+1]=b[i+1]+10;
 					b[i]=b[i]-1;
 				}
-			//	printf("%s\n",b);
+			
 				ef[0]=b[0];
 				ef[1]=b[1];
 				
 			}
 			d[0]=j+'0';
-		//	printf("%s\n",d);
+		
 		}
 		else
 		{	
 			e[0]=b[i-1];
 			e[1]=b[i];
 			e[2]=b[i+1];
-		//	printf("%s\n",b);
+		
 			for(j=0;strcmp(e,c)>=0;j++)
 			{
 				
@@ -69,10 +71,10 @@ main()
 				e[0]=b[i-1];
 				e[1]=b[i];
 				e[2]=b[i+1];
-		//		printf("%s\n",b);
+		
 			}
 			d[i]='0'+j;
-		//	printf("%s\n",d);	
+		
 		}
 	}
 	if(d[0]=='0')

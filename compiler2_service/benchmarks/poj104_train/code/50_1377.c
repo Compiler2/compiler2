@@ -1,3 +1,5 @@
+#include <header.h>
+
 int day;
 int bujili(int m);
 int tianshu(int m);
@@ -18,7 +20,7 @@ int bujili(int m){
 	}
 	s+=12;
 	d=(s%7+day)%7;
-	//if(d>7){d=d-7;}
+	
 	if(d==5){
 		printf("%d\n",m);
 	}

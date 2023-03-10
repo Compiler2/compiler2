@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int n,a,b,m1,m2;
@@ -8,7 +10,7 @@ int main()
    while (q==',') 
    {
      scanf("%d%c",&a,&q);
- //    printf("%d %d\n",m1,m2);
+ 
      if (a>m1) 
         {
          m2=m1;
@@ -18,7 +20,7 @@ int main()
         m2=a;
    }
   if (m2==-100)printf("No");else printf("%d\n",m2);
-  // scanf("%d",&a);
+  
    
    return 0;    
     

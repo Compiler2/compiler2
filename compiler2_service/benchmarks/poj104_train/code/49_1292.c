@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jodge(char s[501],int x,int y)
 {
     int i,k=0;

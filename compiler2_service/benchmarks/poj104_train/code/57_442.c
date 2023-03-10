@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     void str(char a[100]);

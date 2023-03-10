@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n,a[1000]={0},b[1000]={0},c[1000]={0};
 void du(){int i;for(i=0;i<m;i++)scanf("%d",&a[i]);for(i=0;i<n;i++)scanf("%d",&b[i]);}
 void pai(){int j,k,l;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,zbl[200],yxbl[100];
 	double x,y[100];

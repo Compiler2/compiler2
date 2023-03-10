@@ -1,3 +1,5 @@
+#include <header.h>
+
 void replace(int*,int*);
 
 int main()

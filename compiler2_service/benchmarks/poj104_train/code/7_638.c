@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[100]={0},b[100]={0},c[100]={0};
@@ -20,8 +22,8 @@ main()
                   break;
                   }
               }
-              //if(i!=0 && a[i-1]!=' ' )
-              //count=1;
+              
+              
               if(count==0 )
               {
                           a[i]=1;

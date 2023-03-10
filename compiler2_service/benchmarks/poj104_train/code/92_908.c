@@ -1,5 +1,7 @@
+#include <header.h>
 
-void sort(int a[],int n); //sort from quick to slow
+
+void sort(int a[],int n); 
 
 int main(){
 	int i,j,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 	int i;
 	int num(int year,int month,int day){
 		int n=day;

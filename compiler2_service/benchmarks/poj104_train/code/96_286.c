@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   char str[101],result[100]={"0"};
@@ -21,8 +23,8 @@ int main()
     if (str[i]!='\0') str[i]=(tem%13)%10+'0';
 }
   str[i]='\0';
-  //result[i-1]='\0';
-   //printf("%s\n",str);
+  
+   
   if (result[0]=='0')
     if (result[1]=='\0')
       printf("0\n");

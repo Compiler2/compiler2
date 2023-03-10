@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,result=0;
 char x[1000][21];

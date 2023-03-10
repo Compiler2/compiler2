@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int a,int b,int c,int d,int e)
 {
    if (a!=b&a!=c&&a!=d&&a!=e)
@@ -29,15 +31,15 @@ int main()
                 if (c!=1)  re[3]++;
 
                 if (d==1)   re[4]++;
-                //if (cor==2)
-                //if (a-re[0]<=2&&b-re[1]<=2&&c-re[2]<=2&&d-re[3]<=2&&e-re[4]<=2)
+                
+                
                 p[0]=a;p[1]=b;p[2]=c;p[3]=d;p[4]=e;
                 for (i=0;i<5;i++)
                   if ((re[i]==1&&p[i]==1)||(re[i]==1&&p[i]==2))
                     cor++;
                   else
                      if (re[i]==1&&p[i]!=1&&p[i]!=2) cor--;
-                //printf("%d\n",cor);
+                
                 if (cor==2&&time==0) {printf("%d %d %d %d %d\n",a,b,c,d,e);time++;}
                }
            }

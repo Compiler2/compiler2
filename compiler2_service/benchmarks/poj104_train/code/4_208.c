@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mhang(int a){
 	return a+1;
 }

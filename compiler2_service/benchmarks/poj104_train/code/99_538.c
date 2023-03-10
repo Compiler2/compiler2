@@ -1,3 +1,5 @@
+#include <header.h>
+
  int main()
  {
 	 int n,i;
@@ -18,7 +20,7 @@
 	 }
 	 for (i=0;i<4;i++)
 	 {
-		 //printf("%d\t",b[i]);
+		 
 		 c[i]=(double)b[i]/n*100;
 	 }
 	 printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",c[0],c[1],c[2],c[3]);

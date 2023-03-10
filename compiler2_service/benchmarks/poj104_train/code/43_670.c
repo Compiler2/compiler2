@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int q[100000],w[100000];
 int i,j,k,l,m,n,a,b,c;

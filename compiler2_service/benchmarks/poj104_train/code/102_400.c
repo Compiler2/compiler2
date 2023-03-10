@@ -1,3 +1,5 @@
+#include <header.h>
+
 void h(double a[],int n)
 {
    double m;

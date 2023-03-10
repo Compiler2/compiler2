@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	char p[200][10],q[200][10]={0},c[10];
 int a[200],b[200];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int map[100][100],sum=0,min=1000,rst[100];
 main()
 {

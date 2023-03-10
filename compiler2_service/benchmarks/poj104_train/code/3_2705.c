@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1001],n;
 int comp(const void *a,const void *b)
 {
@@ -26,7 +28,7 @@ int findx(int l,int r,int key)
 int main()
 {
     int i,k;
-    //freopen("1.txt","r",stdin);
+    
     scanf("%d%d",&n,&k);
     for(i=1;i<=n;i++)
     scanf("%d",&a[i]);
@@ -38,6 +40,6 @@ int main()
                          return 0;
     }
     printf("no");
-   //getch();   
+   
     return 0;
 }

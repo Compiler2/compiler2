@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    int m,n,j,k,id[1001],a[26]={0};

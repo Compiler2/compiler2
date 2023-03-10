@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ltr[100000];

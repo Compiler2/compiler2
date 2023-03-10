@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,j,i,m,k,s[100],t,sum;
 scanf("%d",&n);
@@ -12,7 +14,7 @@ else
 k=sum=0;
 for(t=1;t<=60;t++)
 {
-//printf("%d %d %d\n",sum,k,t);
+
 sum++;
 if(sum==s[k]){t+=3;if(k<m-1)k++;}
 }

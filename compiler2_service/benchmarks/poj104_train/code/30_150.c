@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int N, Sum = 0;
 

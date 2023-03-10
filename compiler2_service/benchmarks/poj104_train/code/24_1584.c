@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
      int i=0,l,k=0,count[10000],ct[200]={0},max,min;

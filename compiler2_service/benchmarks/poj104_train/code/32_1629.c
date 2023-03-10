@@ -1,3 +1,5 @@
+#include <header.h>
+
 void stringrev(char *a,char*b)
 {	
 	int i,j,k,l,n;

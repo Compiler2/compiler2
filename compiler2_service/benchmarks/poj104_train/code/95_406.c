@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char s1[80];
@@ -10,17 +12,17 @@ int main(int argc, char* argv[])
 	for(i=0;s1[i]!='\0';i++)
 	{
 		if (s1[i]>='A'&&s1[i]<='Z')
-			s3[i]=tolower(s1[i]);//???strlwr()?strupr()????????????
+			s3[i]=tolower(s1[i]);
 		else s3[i]=s1[i];
 	}
-	s3[i]='\0';//????????????????
+	s3[i]='\0';
 	for(j=0;s2[j]!='\0';j++)
 	{
 		if (s2[j]>='A'&&s2[j]<='Z')
 			s4[j]=tolower(s2[j]);
 		else s4[j]=s2[j];
 	}
-	s4[i]='\0';//????????????????
+	s4[i]='\0';
 	
 	if (strcmp(s3,s4)>0)
 		printf("%c\n",'>');

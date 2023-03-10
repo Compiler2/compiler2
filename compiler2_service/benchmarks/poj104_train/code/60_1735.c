@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int prime(int k){
 	if(k==2)return 1;
@@ -29,6 +31,6 @@ int main()
 			found=1;
 		}
 	}
-	//if(found==0)printf("\nempty");
+	
 	return 0;
 }

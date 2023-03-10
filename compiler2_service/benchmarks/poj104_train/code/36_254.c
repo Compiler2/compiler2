@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int i,j;
 char m,a[100]={0},b[100]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void nixu(char s[])
 {int j,k,h,len=strlen(s);
 

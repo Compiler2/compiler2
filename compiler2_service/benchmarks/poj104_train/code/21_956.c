@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct num
 {   int n;
 	float d;

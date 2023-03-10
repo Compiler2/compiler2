@@ -1,3 +1,5 @@
+#include <header.h>
+
 void dayprint(int a){
 	switch(a){
 	case 1:printf("Mon.");break;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	char s[260],t[260]={0};
 	int  n, i,j,len;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[5][5],line[5],row[5],i,j,max,min,loc,t=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct point{
     char A[256];
 	char B[256];

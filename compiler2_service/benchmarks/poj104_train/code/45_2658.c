@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int set(char s[50],char w[50])
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,h,i=0,j=0,temp,re,iLAST,jLAST;
@@ -17,7 +19,7 @@ main()
             {
                 scanf("%d",q+j);
             }
-            for (i=0;i<n;i++)//&#197;&#197;Dòì&#239;&#188;é
+            for (i=0;i<n;i++)
             {
                 for (j=i;j<n;j++)
                 {
@@ -29,7 +31,7 @@ main()
                     }
                 }
             }
-            for (i=0;i<n;i++)//&#197;&#197;Dò&#198;&#235;í&#245;
+            for (i=0;i<n;i++)
             {
                 for (j=i;j<n;j++)
                 {

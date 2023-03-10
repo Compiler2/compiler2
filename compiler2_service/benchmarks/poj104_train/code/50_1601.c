@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int i,w,date=12,pd,d;

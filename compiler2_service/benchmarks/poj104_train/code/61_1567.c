@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s(int n);
 int main()
 {

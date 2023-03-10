@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int compare(char str1[80],char str2[80]);

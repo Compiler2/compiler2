@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int HalaMadrid[10000]={0};

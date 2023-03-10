@@ -1,3 +1,5 @@
+#include <header.h>
+
 int start(char a);
 int sym(char b);
 int main()

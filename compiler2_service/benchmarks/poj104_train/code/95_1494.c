@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char ch1[80],ch2[80],a;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pai(char a[]);
 int main(int argc, char *argv[])
 {char a[100],b[100];

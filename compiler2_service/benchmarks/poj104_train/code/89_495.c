@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[100000],b[100000],n,i,l,rs=1,br=0,shml;

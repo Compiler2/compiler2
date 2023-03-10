@@ -1,3 +1,5 @@
+#include <header.h>
+
 int group[1000]={0};
 int main(int argc, char* argv[])
 {

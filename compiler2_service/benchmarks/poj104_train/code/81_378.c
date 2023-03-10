@@ -1,3 +1,5 @@
+#include <header.h>
+
 int exchange(int (*)[5]);
 int main()
 {
@@ -10,11 +12,11 @@ int main()
 			printf("%d%c",*p,(p-matrix[0]+1)%5?' ':'\n');
 	}
 	else
-		printf("error\n");//              a=1010110110100001                                    
-	return 0;             //              b=1110100100011100
-}                         //          a^=b :0100010010111101 
-int exchange(int (*matrix)[5])//      b^=a :1010110110100001
-{//                                   a^=b :1110100100011100
+		printf("error\n");
+	return 0;             
+}                         
+int exchange(int (*matrix)[5])
+{
 	int n,m;
 	scanf("%d%d",&n,&m);
 	if(n<0||n>4||m<0||m>4)

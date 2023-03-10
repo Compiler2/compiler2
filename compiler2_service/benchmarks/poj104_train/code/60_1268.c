@@ -1,3 +1,5 @@
+#include <header.h>
+
   int p(int a)
 {     int k=2;
       for (k=2;k<a;k++)

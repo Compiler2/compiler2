@@ -1,3 +1,5 @@
+#include <header.h>
+
 int g(int a)
 {
     int s=1;

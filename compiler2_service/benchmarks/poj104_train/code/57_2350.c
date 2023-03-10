@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {int cases,i=0;
 char str[100];

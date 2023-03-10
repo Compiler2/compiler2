@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,p,n[5]={0},year[5],month[5],day[5],days[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};

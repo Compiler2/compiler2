@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
 	int n,i;
 	char wri[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	int num[26];//?????????
+	int num[26];
 	char tem[100];
 	int j=0,k;
-	int shu[26][100];//?????
-	int hao;//??
+	int shu[26][100];
+	int hao;
 	for(i=0;i<26;i++)
 		num[i]=0;
 	scanf("%d",&n);

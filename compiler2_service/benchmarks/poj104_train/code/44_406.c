@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int u){
 	int a[33]={0};
 	int j,k;

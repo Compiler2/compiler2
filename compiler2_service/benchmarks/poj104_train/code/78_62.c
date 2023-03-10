@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[5],i;char n[5]={'l','q','z','s'};

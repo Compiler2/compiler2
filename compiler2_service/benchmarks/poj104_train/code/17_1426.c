@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int h,i,j,k,l,m,n,len,left=0,t=0,c[101]={0};
@@ -10,9 +12,9 @@ int main()
 		t=0;
 		scanf("%s",a);
 		len=strlen(a);
-		//for(j=0;j<len;j++)
-		//	b[j]=' ';
-		//b[len]='\0';
+		
+		
+		
 		for(j=0;j<len;j++)
 		{
 			if(a[j]!='('&&a[j]!=')')

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct Student
 {char name[26];
  int a;

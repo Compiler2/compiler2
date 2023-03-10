@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,k,a,e[10008],i,j,m,log;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int c[26];
 char b[1000][100];
 char out;

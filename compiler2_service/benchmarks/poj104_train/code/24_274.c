@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zimu(char c)
 {
 	if((c>=65&&c<=90)||(c>=97&&c<=122))

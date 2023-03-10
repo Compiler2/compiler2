@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[101],dy[101]={0};
 	gets(zfc);

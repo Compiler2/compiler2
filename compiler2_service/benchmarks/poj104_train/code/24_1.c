@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    char c,str[1000],word[20];

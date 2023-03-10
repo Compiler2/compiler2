@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(int x,int y)
 {
     if(x<=y)
@@ -12,7 +14,7 @@ main()
       for(i=0;i<n;i++)
       scanf("%d",&p[i]);
       int *q=(int *)malloc(n*sizeof(int));
-      //int q[25];
+      
       for(j=n-1;j>=0;j--)
        {
          q[j]=1;
@@ -21,7 +23,7 @@ main()
            if(p[j]>=p[r])
            q[j]=compare(q[j],q[r]);
          }
-         //q[j]=q[j]+1;
+         
        }
        int max;
        max=q[0]; 

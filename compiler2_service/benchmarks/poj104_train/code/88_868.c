@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char* string=(char*)malloc(30);

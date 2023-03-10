@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[100000];
 void tc(int);
 int main()

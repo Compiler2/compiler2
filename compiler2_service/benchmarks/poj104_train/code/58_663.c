@@ -1,3 +1,5 @@
+#include <header.h>
+
 int First(char i)
 {
 	if((i!='_')&&((i<65)||((i>90)&&(i<97))||(i>122)))

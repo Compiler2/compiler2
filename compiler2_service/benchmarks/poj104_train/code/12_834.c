@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,a[16][16],i,j,t[15]={0},k=0,f,b[16]={0};

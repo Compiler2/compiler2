@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int ji(int x);
     int ou(int y);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[301],*p,n,i,j,k=0;

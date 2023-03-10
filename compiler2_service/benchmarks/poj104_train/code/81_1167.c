@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isin(int n,int m);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int year,month,date;
@@ -6,20 +8,20 @@ int main()
 	int temp;
 	if(year%4!=0)
 		{
-		temp=28;//not
+		temp=28;
 		}
 		else if(year%100!=0)
 		{
-			temp=29;//yes
+			temp=29;
 		}
 		else if(year%400!=0)
 		{
-			temp=28;//not
+			temp=28;
 		}
 		else
 		{
-			temp=29;//yes
-		}//???????
+			temp=29;
+		}
 		int a[12]={31,temp,31,30,31,30,31,31,30,31,30,31};
 		int i;
 		for(i=0;i<month-1;i++)

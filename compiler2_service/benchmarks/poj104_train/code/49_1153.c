@@ -1,3 +1,5 @@
+#include <header.h>
+
 char l[500];
 int len,n=0,record[2000][3];
 main()

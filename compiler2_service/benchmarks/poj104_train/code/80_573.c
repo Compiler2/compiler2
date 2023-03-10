@@ -1,3 +1,5 @@
+#include <header.h>
+
 unsigned findday(unsigned y,unsigned m,unsigned d)
 {
  int leap,day;

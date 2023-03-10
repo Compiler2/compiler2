@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void reverse(char a[10]){
     int i=0,k=0,s=0;
@@ -24,7 +26,7 @@ void reverse(char a[10]){
         printf("%c",b[i]);
     }
     printf("\n");
-    //printf("reverse: %s\m",b);
+    
 }
 
 int main(){

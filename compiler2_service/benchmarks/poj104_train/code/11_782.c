@@ -1,11 +1,13 @@
+#include <header.h>
+
 main()
 {
     int year,month,day,sum=0;
     int d[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
     scanf("%d %d %d",&year,&month,&day);
-    if(((year%4==0)&&(year%100!=0))||(year%400==0))          // when this year is a leap year.
+    if(((year%4==0)&&(year%100!=0))||(year%400==0))          
     {
-        if(month>2)    // when >=3 month
+        if(month>2)    
         {
               sum=sum+29+31;
               for(int k=3;k<month;k++)
@@ -24,9 +26,9 @@ main()
         }  
       
     }
-    else                // when this year is not a leap year.
+    else                
     {
-        if(month>2)    // when >=3 month
+        if(month>2)    
         {
               sum=sum+28+31;
               for(int k=3;k<month;k++)

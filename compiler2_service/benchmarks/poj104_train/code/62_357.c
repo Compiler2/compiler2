@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char old[200],wri[200];

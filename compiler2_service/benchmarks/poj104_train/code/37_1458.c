@@ -1,24 +1,26 @@
+#include <header.h>
+
 
 int main()
 {
 	int n,i;
 	int a[26]={0};
-	int aptr[26];//aprt[0]???????????[1]???????????????
+	int aptr[26];
 	int ap=0,j;
 	char tmpch;
 	scanf("%d",&n);
-	scanf("%c",&tmpch);//????????
+	scanf("%c",&tmpch);
 	for (i=0;i<n;i++)
 	{
 		ap=0;
 		scanf("%c",&tmpch);
 		while(tmpch!='\n')
 		{
-			if(a[tmpch-'a']==0)//???????????aptr?
+			if(a[tmpch-'a']==0)
 			{
 				aptr[ap++]=tmpch-'a';
 			}
-			a[tmpch-'a']++;//tmpch??????
+			a[tmpch-'a']++;
 			scanf("%c",&tmpch);
 		}
 		for(j=0;j<ap;j++)

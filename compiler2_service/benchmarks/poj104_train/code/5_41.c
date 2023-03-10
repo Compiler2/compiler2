@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double s;
 	char sz1[500];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sen[100],word[50][20]={0},pre[20],post[20];

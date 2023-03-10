@@ -1,3 +1,5 @@
+#include <header.h>
+
 int danci(char a[],char word[][100])
 {
     int blank,i=0,j=0,n=0;

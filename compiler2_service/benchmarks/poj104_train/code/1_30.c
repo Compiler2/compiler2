@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int number(int n, int low);
 	int n, i, data, ans;

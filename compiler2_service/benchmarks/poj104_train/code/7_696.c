@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[100],a[100],b[100],c[100],d[100];
 int main()
 {
@@ -40,9 +42,9 @@ int main()
 				d[A-strlen(a)+strlen(b)]=s[A];
 			}
 		
-	//	printf("%s\n",a);
-	//	printf("%s\n",b);
-	//	printf("%s\n",c);
+	
+	
+	
 		printf("%s\n",d);
 	}
 

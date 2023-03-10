@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char dk[300],su;
     int i,j,sum=0,m=0;

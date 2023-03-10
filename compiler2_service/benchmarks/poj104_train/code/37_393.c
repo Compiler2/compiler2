@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int i,j,n,c,d,a[26]={0};
 int *p1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int k,m,n,sz[200][200],result=0;

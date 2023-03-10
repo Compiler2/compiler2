@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s=0;
 void f(int x,int y)
 {

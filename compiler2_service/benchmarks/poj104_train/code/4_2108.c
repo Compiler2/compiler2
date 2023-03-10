@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num[101][101];
 int main(void)
 {

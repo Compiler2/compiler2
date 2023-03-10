@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -61,7 +63,7 @@ int main()
 		     {
 			     s++;
 			 }
-			// printf("%c ",a[i][j]);
+			
 		} 
 	} 
 	printf("%d",s);

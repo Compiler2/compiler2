@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jh[365];
 int xqj[365];
 void dy(int *jh,int *xqj);

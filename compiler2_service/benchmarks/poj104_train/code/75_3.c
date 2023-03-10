@@ -1,28 +1,30 @@
+#include <header.h>
+
 main()
 {
-//	FILE *fp1,*fp2;
+
 	int per[1000][2];
 	char c;
 	int value,temp;
 	int i,j,k,m,n;
 	int max=0;
-//	fp1=fopen("input.txt","r");
-//	fp2=fopen("output.txt","w");
+
+
 scanf("%d",&n);
-//	fscanf(fp1,"%d",&n);
-//	c=fgetc(fp1);
+
+
 c=getchar();
 	for(i=0;i<n;++i)
 	{
 		value=0;
 c=getchar()-'0';
-//		c=fgetc(fp1)-'0';
+
 		while((c>=0)&&(c<=9))
 		{
 			value=value*10+c;
 c=getchar()-'0';
 
-//			c=fgetc(fp1)-'0';
+
 		}
 		per[i][0]=value;
 	}
@@ -31,13 +33,13 @@ c=getchar()-'0';
 		value=0;
 c=getchar()-'0';
 
-//		c=fgetc(fp1)-'0';
+
 		while((c>=0)&&(c<=9))
 		{
 			value=value*10+c;
 c=getchar()-'0';
 
-//			c=fgetc(fp1)-'0';
+
 		}
 		per[i][1]=value;
 	}
@@ -52,12 +54,12 @@ c=getchar()-'0';
 				per[j][1]=per[j+1][1];
 				per[j+1][1]=temp;
 			}
-//	for(i=0;i<n;++i)
-//		fprintf(fp2,"%d,",per[i][0]);
-//	fputc('\n',fp2);
-//	for(i=0;i<n;++i)
-//		fprintf(fp2,"%d,",per[i][1]);
-//	fputc('\n',fp2);
+
+
+
+
+
+
 
 	for(i=0;i<n;++i)
 	{
@@ -82,7 +84,7 @@ c=getchar()-'0';
 		}
 	}
 printf("%d\n",max);
-//	fprintf(fp2,"%d",max);
-//	fclose(fp1);
-//	fclose(fp2);
+
+
+
 }

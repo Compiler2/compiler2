@@ -1,3 +1,5 @@
+#include <header.h>
+
 void convert(int n,int a[30])
 {
  int i,t;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[100001];
 int main()
 {

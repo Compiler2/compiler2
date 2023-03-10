@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[201],b[201],n,i,na,nb;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n;
 scanf("%d",&n);int m;float a[100];int b[100][100];int c[100][100];

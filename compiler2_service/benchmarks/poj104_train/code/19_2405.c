@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char s[100],a[100],b[100],zj[100][100];
@@ -14,7 +16,7 @@ int main()
 		   k++;
 		   i++;
 	  } 
-	  zj[t][k]='\0'; //???????
+	  zj[t][k]='\0'; 
 	  while(s[i]==' ')
 	  {
 		   i++;
@@ -34,7 +36,7 @@ int main()
  {
 	printf("%s ",zj[i]);
  }
- printf("%s",zj[i]);//??????
+ printf("%s",zj[i]);
  return 0;
 }
  

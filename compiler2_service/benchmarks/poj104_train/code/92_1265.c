@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -53,16 +55,16 @@ if(b[i]<b[j])
    
  }
    
- //cong da dao xiao
  
-   //test sort
-    //for(i=0;i<n;i++)
-    //    printf("a:%d,b:%d\n",a[i],b[i]);
-    //test end
-    as=0;//amax
-    ae=n-1;//amin
-    bs=0;//bmax
-    be=n-1;//bmin
+ 
+   
+    
+    
+    
+    as=0;
+    ae=n-1;
+    bs=0;
+    be=n-1;
     while(as<=ae)
     {
         if(a[as]>b[bs])
@@ -94,7 +96,7 @@ if(b[i]<b[j])
         
     }
     sum=win*200-(n-win-draw)*200;
-    //printf("win:%d;draw:%d;\n",win,draw);
+    
     printf("%d\n",sum);
 }
 return 0;

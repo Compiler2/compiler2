@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,a[5000],b[5000],sum[10001]={0},max=0,min,c,d;

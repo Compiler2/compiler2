@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sz[5][5];
 	int n,m,x,y,i=0,j=0;

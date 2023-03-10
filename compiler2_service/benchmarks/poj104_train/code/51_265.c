@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   
@@ -16,10 +18,10 @@ int main()
      for(j=i;j<=l-n;j++)
      if(strcmp(str[j],str[i])==0)
      c[i]++;
-    }//??????????c[]
+    }
     max=c[0];
     for(i=1;i<=l-n;i++)
-    if(c[i]>max) max=c[i]; //?????????
+    if(c[i]>max) max=c[i]; 
     if(max==1) printf("NO");
     else  
     {

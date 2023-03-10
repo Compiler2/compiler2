@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main()
 {
-	int k;//??????
-	int m;//????
-	int n;//????
+	int k;
+	int m;
+	int n;
 	int i,j,t;
 	int a[100][100];
 	scanf("%d",&k);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s[257],ss[257],r[257];
 	scanf("%s",s);

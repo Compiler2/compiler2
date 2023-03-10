@@ -1,3 +1,5 @@
+#include <header.h>
+
 float jd(int x){
       if (x>=90&&x<=100) return 4;
       if (x>=85) return 3.7;

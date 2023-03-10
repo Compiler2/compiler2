@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,count=0;
@@ -7,12 +9,12 @@ int main()
 	for(i=0;line[i];i++) count++;
 	for(i=0;line[i];i++)
 	{
-		if(line[i]==tmp)     //???
+		if(line[i]==tmp)     
 		{
 			for(j=i+1;line[j];j++)
 			{
 				if(line[j]==tmp) break;
-				else if(line[j]!=tmp&&line[j]!='0')    //???
+				else if(line[j]!=tmp&&line[j]!='0')    
 				{
 					printf("%d %d\n",i,j);
 					line[i]=line[j]='0';

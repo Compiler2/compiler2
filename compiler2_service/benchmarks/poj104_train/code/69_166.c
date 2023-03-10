@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int al,bl,j,i,m,n=0;
@@ -13,7 +15,7 @@ int main()
 		strcpy(ab,a);
 		strcpy(a,b);
 		strcpy(b,ab);
-	}//b is larger than a
+	}
 	for(i=al-1;i>=0;i--)
 	{
 		j=i-al+bl;

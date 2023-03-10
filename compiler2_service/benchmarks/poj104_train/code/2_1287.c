@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct BOOK
 {
 	int No;

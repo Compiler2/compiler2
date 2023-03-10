@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxn=1000;
 
 long n;

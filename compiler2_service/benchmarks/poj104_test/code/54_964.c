@@ -1,3 +1,5 @@
+#include <header.h>
+
 int apple(int n,int k);
 int main()
 {

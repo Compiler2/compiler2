@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       for(;;)
@@ -6,7 +8,7 @@ main()
       scanf("%d",&n);
       if(n==0)
       break;
-      int a[n];//b???????a?????? 
+      int a[n];
       int b[n];
       int swap;
       for(int i=0;i<n;i++)

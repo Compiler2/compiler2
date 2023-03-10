@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	double a1[1000],a2[1000],a3[1000];

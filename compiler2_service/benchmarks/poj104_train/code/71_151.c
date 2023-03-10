@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int nian,int yue ,int ri){
 	int z=0,i;
 	int d[12]={31,28,31,30,31,30,31,31,30,31,30,31};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	char xl[300],zm[300],e;
 	int i,m,k=0,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(const void*e1,const void *e2)
 {
 	return *((int*)e2)-*((int*)e1);

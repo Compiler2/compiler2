@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int calcSum(int *matrix, int row, int col);
 int main()

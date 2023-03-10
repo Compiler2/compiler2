@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 
@@ -8,16 +10,16 @@ int main()
 	{
 	  if((n+i)%7==5)
 	  {
-	    n=(1+i)%7;//??????
+	    n=(1+i)%7;
 	    break;
 	  }
 	}
-	//printf("first Friday=%d\n",n);
+	
 	int e=13;
 	for(i=0;i<12;i++)
 	{
 	  e=e+m[i];
-	  //printf("%d\n",e);
+	  
 	  if(e%7==n)
 	  {
 	    printf("%d\n",i+1);

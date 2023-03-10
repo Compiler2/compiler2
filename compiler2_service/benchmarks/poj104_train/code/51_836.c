@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct ma{
 	char str[505];
 	int f;

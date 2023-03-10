@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i=0, b[26]={0}, sum=0, j;

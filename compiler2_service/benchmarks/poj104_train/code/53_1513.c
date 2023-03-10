@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,k[300]={99999},i,j,b,p,u=0;

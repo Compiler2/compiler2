@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,l,k;
     char zfc[50][33];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char queue[1000]={""},boy,girl;
 int number,pairs=0;
 void findpair(int girlid)

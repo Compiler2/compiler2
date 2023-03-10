@@ -1,3 +1,5 @@
+#include <header.h>
+
 int search(int a[],int b,int c);
 int main()
 {

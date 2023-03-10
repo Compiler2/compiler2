@@ -1,3 +1,5 @@
+#include <header.h>
+
 main() 
 {  
  long y,i,a[2],b[2],c[2],z[2]; 

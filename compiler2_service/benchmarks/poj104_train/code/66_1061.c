@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,a,b,c,d,e,f,g,sum=0;
 	scanf("%d%d%d",&a,&b,&c);

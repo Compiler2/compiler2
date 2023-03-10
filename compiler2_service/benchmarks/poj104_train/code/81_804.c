@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shuzu(int n,int m);
 int main(){
 	int a[10][10];

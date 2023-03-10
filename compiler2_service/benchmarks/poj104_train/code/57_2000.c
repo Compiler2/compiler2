@@ -1,3 +1,5 @@
+#include <header.h>
+
 /*
  * post.c
  *
@@ -10,7 +12,7 @@ int main(){
  int n,i,j,len;
  scanf("%d",&n);
  for(i=1;i<=n;i++){
- // gets(a1);
+ 
   scanf("%s",a1);
   len=strlen(a1);
   if(a1[strlen(a1)-1]=='r'||a1[strlen(a1)-1]=='y'){

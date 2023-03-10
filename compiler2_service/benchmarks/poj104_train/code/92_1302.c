@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sort(int sz[], int n)
 {
 	int k,e,i;

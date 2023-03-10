@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[5][100];
 int jiaohuan(int x,int y)
 {

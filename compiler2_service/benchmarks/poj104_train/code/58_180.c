@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char a[81])
 {
     int i,k,l;

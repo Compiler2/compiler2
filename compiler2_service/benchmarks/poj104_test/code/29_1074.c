@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int q[100];
 	double s[100];

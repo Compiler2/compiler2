@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int i,j,t,MAXLEN,flag=0;
 	char s1[500],s2[500];

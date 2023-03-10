@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char string[1000],*p;
  int count[300],i=0,j=0;

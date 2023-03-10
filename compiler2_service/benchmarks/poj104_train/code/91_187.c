@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {char *a,*s1;
 a=(char *)malloc(101*sizeof(char));

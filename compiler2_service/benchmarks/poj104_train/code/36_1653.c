@@ -1,3 +1,5 @@
+#include <header.h>
+
 char f(char a[])
 {
     int i,j,k=strlen(a);

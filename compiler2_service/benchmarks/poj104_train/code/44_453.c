@@ -1,3 +1,5 @@
+#include <header.h>
+
 char num[15];
 int reverse(char num[15])
 {

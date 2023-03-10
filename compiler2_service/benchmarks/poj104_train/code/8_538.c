@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int * change(int x[100],int y);

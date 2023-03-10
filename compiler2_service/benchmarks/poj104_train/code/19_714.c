@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxLenth=100;
 const long maxwords=10000;
 

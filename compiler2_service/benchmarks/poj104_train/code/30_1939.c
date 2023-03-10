@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -22,18 +24,18 @@ int main()
 		}
 	}
 	else if (n>=80){
-		//printf("n=%d\n",n);
+		
 		int m = 69;
 		for (i=1; i<=m;i++){
 			if (((i-7)%10!=0)&&((i%7)!=0)){
-				//printf("69for i=%d\n",i);
+				
 				sum += i*i;
 			}
 			
 		}
 		for (i=80;i<=n ;i++){
 			if (((i-7)%10!=0)&&((i%7)!=0)){
-				//printf("80for i=%d\n",i);
+				
 				sum += i*i;
 			}
 		}

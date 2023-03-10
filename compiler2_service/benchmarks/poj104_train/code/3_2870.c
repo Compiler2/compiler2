@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,m,n,k,h,isTrue;
     scanf("%d %d",&n,&k);

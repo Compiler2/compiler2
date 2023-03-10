@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yu7wuguan(int i);
 int main(){
     int sz[100],i,n,k;

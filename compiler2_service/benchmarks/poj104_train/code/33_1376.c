@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char yl[10000][256],pdl[10000][256];
 	int i=0,j=0,n;

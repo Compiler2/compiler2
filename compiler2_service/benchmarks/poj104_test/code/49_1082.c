@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int isgoodsubstr( char * s, int l, int r )
 {
 	if ( l > r )
-		return -1;//wrong!
+		return -1;
 	int i = l, j = r;
 	for ( ; i < j; i++, j-- )
 		if ( s[i] != s[j] )

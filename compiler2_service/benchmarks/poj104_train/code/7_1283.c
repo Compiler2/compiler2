@@ -1,3 +1,5 @@
+#include <header.h>
+
 int search(char a[],char b[])
 {
     int la=strlen(a),lb=strlen(b),i,j;

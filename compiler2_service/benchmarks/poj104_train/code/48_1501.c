@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[9][9]={0},b[9][9]={0};

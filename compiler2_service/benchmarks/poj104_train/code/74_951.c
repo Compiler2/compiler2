@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -10,13 +12,13 @@ int main()
 	for(i=0;i>=0&&i<=k;i++)
 	{
 		a[i]=m+i;
-//		printf("%d ", a[i]);
+
 	}
 
 	for(i=0;i>=0&&i<=k;i++)
 	{
 		temp=a[i];
-		q=0;//q??????????????//
+		q=0;
 		while(temp>0)
 		{
 			p=temp%10;

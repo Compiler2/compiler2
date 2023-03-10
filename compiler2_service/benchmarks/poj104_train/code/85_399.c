@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int judgeChar(char c);
 int judgeChars(char * c, int n);

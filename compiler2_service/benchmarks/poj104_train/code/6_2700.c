@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sum(int m,int n)
 {
     int a[m][n],i,j,t=0;

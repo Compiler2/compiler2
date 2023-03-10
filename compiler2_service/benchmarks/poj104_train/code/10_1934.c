@@ -1,3 +1,5 @@
+#include <header.h>
+
 int xxx(int high,int j);
 int max(int b,int c)
 {
@@ -16,7 +18,7 @@ int main()
 	{
 		scanf("%d",&h[i]);
 		x[i]=h[i];
-		//printf(" %d",x[i]);
+		
 	}
 	for(i=n;i<26;i++) x[i]=999999;
 	int fly;

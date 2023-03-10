@@ -1,3 +1,5 @@
+#include <header.h>
+
 char dp[10000];
 int num[10000],n;
 int main()
@@ -36,7 +38,7 @@ int main()
     for(j=0;j<n;j++)
     printf("%c",dp[i+j]);
     }
-    //getch();
+    
     return 0;
 }
     

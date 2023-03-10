@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int w,a[12],i,b[12];

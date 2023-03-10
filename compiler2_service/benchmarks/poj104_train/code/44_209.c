@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int f(int n)   
 { 
@@ -6,8 +8,8 @@ int f(int n)
    {
             while(n!=0)
            {
-              x=n%10;//?????
-              y=y*10+x;//?? 
+              x=n%10;
+              y=y*10+x;
               n=n/10;
             }
            return y;
@@ -17,8 +19,8 @@ int f(int n)
          n=-n;
          while(n!=0)
           {
-             x=n%10;//?????
-             y=y*10+x;//?? 
+             x=n%10;
+             y=y*10+x;
              n=n/10;
            }
          return -y;

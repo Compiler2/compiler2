@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
         int n,shiyan[999],youxiao[999];
 		double xo,x;

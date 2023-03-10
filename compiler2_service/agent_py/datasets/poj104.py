@@ -35,7 +35,7 @@ class Dataset(Dataset):
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
-                        argument=["./a.out", "<", str(INPUT_PATH / "in.txt")],
+                        argument=["./a.out"],# , "<", str(INPUT_PATH / "in.txt")],
                         timeout_seconds=300,
                         infile=["a.out"],
                     )

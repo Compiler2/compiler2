@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char a[103];
 int bcs[100];

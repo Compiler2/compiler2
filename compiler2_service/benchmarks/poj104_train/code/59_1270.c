@@ -1,3 +1,5 @@
+#include <header.h>
+
 char zf[1001][1001];
 int main(){
 int m,n,i,j,k,p=0;
@@ -5,10 +7,10 @@ int m,n,i,j,k,p=0;
 scanf("%d",&n);
 for(i=0;i<n;i++){
 	scanf("%s",zf[i]);
-   // printf("%s\n",zf[i]);
+   
 }
 scanf("%d",&m);
-//printf("%d",m);
+
 for(k=0;k<m-1;k++){
   for(i=0;i<n;i++){
     for(j=0;j<n;j++){

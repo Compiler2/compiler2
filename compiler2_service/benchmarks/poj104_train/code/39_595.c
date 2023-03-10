@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int sch(int e,int test,char mon,char reg,int art)
@@ -26,8 +28,8 @@ int main()
 		sum+=sch(g,c,m,r,a);
 	}
 	printf("%s\n%d\n%d",top,most,sum);
-	//scanf("%d %d %c %c %d",&g,&c,&m,&r,&a);
-	//printf("%d",sch(g,c,m,r,a));
+	
+	
 
 	return 0;
 }

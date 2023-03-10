@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   char s1[100];
@@ -6,8 +8,8 @@ int main()
   getchar();
   for(i=0;i<n;i++)
   {
-     //scanf("%s",s1);
-     //getchar();
+     
+     
      gets(s1);
      len=strlen(s1);
      for(j=0;j<len;j++)

@@ -1,8 +1,10 @@
+#include <header.h>
+
 struct patient
 {
-	char ID[11];    //?????
+	char ID[11];    
 	int age;
-}pa[100];           //?????
+}pa[100];           
 int main(int argc, char* argv[])
 {
 	int n,i;
@@ -10,8 +12,8 @@ int main(int argc, char* argv[])
 	for(i=0;i<n;i++)
 	{
 		scanf("%s %d",pa[i].ID,&pa[i].age);
-	}             //??100?????
-	struct patient old[100];//????????????60??
+	}             
+	struct patient old[100];
 	int count=0;
 	for(i=0;i<n;i++)
 	{

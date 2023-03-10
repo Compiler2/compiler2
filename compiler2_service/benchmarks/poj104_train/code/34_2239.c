@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int isodd( int n)
 {
@@ -22,7 +24,7 @@ int fornot(int n)
 int main()
 {
         int a = 0;
-   //     char k,s; id[120] = {0}, rate[120] = {0};
+   
 
         scanf("%d\n", &a);
         while (a != 1) {

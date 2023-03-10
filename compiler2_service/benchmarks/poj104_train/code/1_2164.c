@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int f(int shu,int min)
 { 

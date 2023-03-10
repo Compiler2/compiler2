@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double n,s=0,m;
 	scanf("%lf",&n);

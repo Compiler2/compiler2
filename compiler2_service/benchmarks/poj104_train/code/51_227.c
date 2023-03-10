@@ -1,3 +1,5 @@
+#include <header.h>
+
 char x[5];
 int main()
 {

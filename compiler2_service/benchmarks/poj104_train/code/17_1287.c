@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -6,7 +8,7 @@ int main()
     char s2[300] = {0};
     int top = 0;
     int heap[300] = {0};
-    while ( gets(s) != 0 )//end of file
+    while ( gets(s) != 0 )
     {
         top = 0;
         int i = 0, len = strlen(s);

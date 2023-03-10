@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int start=0;
     int max_start, max_end, min_start, min_end;

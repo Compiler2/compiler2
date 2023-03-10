@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   
     int sy,sm,sd,ey,em,ed,DS,DE,i,j,k,m,p,n,l,md,

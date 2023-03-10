@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[6][1000],b[1000],c,d,h;
 	for(c=0;c<1000;c++){

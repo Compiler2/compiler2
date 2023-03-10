@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n,a[1010],b[1010],l[1010][1010];
 
@@ -17,9 +19,9 @@ int main()
 			return 0;
 		}
 		for(i=0;i<n;i++)
-			scanf("%d",&b[i]);//tianji
+			scanf("%d",&b[i]);
 		for(i=0;i<n;i++)
-			scanf("%d",&a[i]);//qiwang
+			scanf("%d",&a[i]);
 
 
 		qsort(a,n,sizeof(int),cmp);

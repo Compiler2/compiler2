@@ -1,3 +1,5 @@
+#include <header.h>
+
 void a(int m);
 void b(int m);
 int sqrt(int i);

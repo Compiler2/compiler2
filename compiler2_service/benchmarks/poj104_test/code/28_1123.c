@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[3000],b[10];
 	char *s=str,*p;

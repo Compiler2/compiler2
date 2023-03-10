@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char N[101],s[100];
 	int i,p;

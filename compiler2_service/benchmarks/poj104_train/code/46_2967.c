@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int x[5]={0,0,1,0,-1};
 const int y[5]={0,1,0,-1,0};
 int f[1000][1000];
@@ -32,6 +34,6 @@ ty=dy+y[k];
 dx=tx;
 dy=ty;
 }
-//while(1);
+
 return 0;
 }

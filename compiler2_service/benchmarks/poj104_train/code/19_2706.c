@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char buffer[1024];
 char word[1024];

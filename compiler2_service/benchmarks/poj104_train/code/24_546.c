@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[1000],p[20],p1[20],q[20],q1[20];

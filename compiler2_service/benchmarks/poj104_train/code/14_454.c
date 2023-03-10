@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct Student
 {	int num;
 	int ch;
@@ -24,8 +26,8 @@ int main()
 			stu[j]=stu[i];
 			stu[i]=temp;}
 	}
-      //  for(i=0;i<3;i++)
-		//  printf("%d %d\n",stu[i].num,stu[i].sum);
+      
+		
 	for(i=3;i<n;i++)
 	{
 		scanf("%d %d %d",&stu[3].num,&stu[3].ch,&stu[3].math);

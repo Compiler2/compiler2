@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int dayofweek,days=12,mon[12],i,d,e;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
 {
 	char a[100],*p,*ipa[100];

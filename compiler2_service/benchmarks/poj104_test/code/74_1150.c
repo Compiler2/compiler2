@@ -1,3 +1,5 @@
+#include <header.h>
+
 int checksu(int n)
 {
 int i=2;

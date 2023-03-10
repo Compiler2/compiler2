@@ -1,3 +1,5 @@
+#include <header.h>
+
 int d,e,f,g;
 	int a[50],b[50],c[100];
 int get(int a[50],int b[50]);

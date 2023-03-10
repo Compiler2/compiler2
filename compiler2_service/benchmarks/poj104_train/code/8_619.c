@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void bubble(int a[],int k);
@@ -8,7 +10,7 @@ int main()
 	int y[100];
 	int n,m,i;
 	scanf("%d %d",&n,&m);
-	//printf("%d",n);
+	
     origin(x,n);
 	origin(y,m);
     
@@ -25,17 +27,17 @@ void origin(int a[100],int k)
 	int i;
 	for(i=0;i<k;i++)
 	{scanf("%d",&a[i]);}
-	//printf("%d",a[0]);
+	
 }
 
-void bubble(int a[],int k)//n?????????
+void bubble(int a[],int k)
 {
 	int i,temp,j;
-	for(j=0;j<k-1;j++)//???size-1?n-1???????10??????9???
+	for(j=0;j<k-1;j++)
 	{
-		for(i=0;i<k-1-j;i++)//?????9-j???
+		for(i=0;i<k-1-j;i++)
 		{
-			if(a[i]>a[i+1])//?????????????????
+			if(a[i]>a[i+1])
 			{
 				temp=a[i];
 				a[i]=a[i+1];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void myrank(int *,int );
 

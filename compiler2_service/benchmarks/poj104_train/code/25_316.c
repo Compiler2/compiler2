@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num[100];
 int main(){
 	int n;

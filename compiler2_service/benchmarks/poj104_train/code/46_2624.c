@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int row,col,i,j,d=1,count=0,f[110][110],vis[110][110];

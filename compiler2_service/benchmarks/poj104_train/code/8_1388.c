@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],b[100],n,m,i,j,t;
 void shuru(int p,int q) 
 {

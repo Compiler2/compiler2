@@ -1,3 +1,5 @@
+#include <header.h>
+
 int findmin(int a[5])
 {
 int x=a[0],y=0;

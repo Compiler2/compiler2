@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sort(int array[],int n)
 { 
 	int i,j,k,t;

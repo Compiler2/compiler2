@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n1,n2,a1[200],a2[200],i,j,t;
 void toscan()
 {
@@ -45,5 +47,5 @@ main()
   paixu();
   hebing();
   toprint();
-  //return 0;
+  
 }

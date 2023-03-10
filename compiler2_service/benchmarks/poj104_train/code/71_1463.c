@@ -1,3 +1,5 @@
+#include <header.h>
+
 int xgy(int year,int month1,int month2){
 	int i,m,days=0;
 	if(month1>month2){

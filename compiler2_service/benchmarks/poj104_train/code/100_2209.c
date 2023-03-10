@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     char a[32]={0},b[32]={0},x,i;

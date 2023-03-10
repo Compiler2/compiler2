@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int a[5][5],int n,int m)
 {
 	if(n>=0&&n<=4&&m>=0&&m<=4)

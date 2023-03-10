@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -23,7 +25,7 @@ int main()
         scanf("%c",&s[i]);
         if(s[i]=='\n')
         {
-            //n=i+1;
+            
             break; 
         }            
     }

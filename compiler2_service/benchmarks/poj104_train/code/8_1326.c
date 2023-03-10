@@ -1,5 +1,7 @@
-// ??????????2.cpp : ??????????????
-//
+#include <header.h>
+
+
+
 
 
 int a[5000],b[5000],N1,N2,c[10000];
@@ -69,7 +71,7 @@ int f4()
 	}
 	return 0;
 }
-int main()//(int argc, _TCHAR* argv[])
+int main()
 {
 	f1();
 	f2();

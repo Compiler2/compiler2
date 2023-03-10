@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ssd(int i);
 int main()
 {

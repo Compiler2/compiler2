@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main(){
 	int n,i,j,mid;
 	char M[11];

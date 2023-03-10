@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -44,7 +46,7 @@ int main()
             k++;
             l++;
         }
-       // printf("%d",k);
+       
         
         if(k==i-1)
         printf("(%c,1)",shuru[k]);

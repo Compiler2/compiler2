@@ -1,3 +1,5 @@
+#include <header.h>
+
 int nseven(int n)
 {
 	if(n%7==0) return 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bubble(int a[],int l)
 {
 	int i,j,temp;

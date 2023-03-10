@@ -1,13 +1,15 @@
+#include <header.h>
+
 main()
 {
-	int n,i,j,p,q,r,delta=1,max=1;//delta ??
+	int n,i,j,p,q,r,delta=1,max=1;
 	scanf("%d\n",&n);
 	char a[500]={'\0'};
-	int num[500]={0};//num????
+	int num[500]={0};
 	gets(a);
 	int l=strlen(a);
-	char b[500][5]={'\0'};//??????
-	for (i=0;i<=l-n;i++)//l+1-n???
+	char b[500][5]={'\0'};
+	for (i=0;i<=l-n;i++)
 		for(j=0;j<n;j++)
 			b[i][j]=a[i+j];
 	for(p=0;p<l-n;p++)

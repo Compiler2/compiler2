@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 double male[41];
 double female[41];

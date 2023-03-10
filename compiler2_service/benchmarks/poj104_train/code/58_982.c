@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     char a[800][80],b;
@@ -5,7 +7,7 @@ main()
     scanf("%d",&n); scanf("%c",&b);
     for (i=0;i<n;i++)
     {
-        gets(a[i]);//scanf("%s",a[i]);
+        gets(a[i]);
         if ((a[i][0]=='_')||((a[i][0]>='a')&&(a[i][0]<='z'))||((a[i][0]>='A')&&(a[i][0]<='Z')))
         {
             for (j=1;a[i][j]!='\0';j++)

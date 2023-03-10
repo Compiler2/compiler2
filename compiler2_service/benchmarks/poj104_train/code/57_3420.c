@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char x[2],word[32];
 	int i,j,k,len,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i;
 	float zu1=0,zu2=0,zu3=0,zu4=0,a[10000];

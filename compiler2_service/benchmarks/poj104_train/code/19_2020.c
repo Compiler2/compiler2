@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[2000];
 char sub[2000];
 int b[2000];

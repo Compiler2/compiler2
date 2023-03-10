@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -7,7 +9,7 @@ int main()
    while (!((('0'<=q) && ('9'>=q)))) 
        {  
          scanf("%c",&q);
-       //  printf("%c\n",q);
+       
          }
    long tot=0;
    while (q!='\n') 
@@ -25,6 +27,6 @@ int main()
            scanf("%c",&q);
       }    
    if( now !=0) printf("%d\n",tot);
-     //      scanf("%c",&q);
-     //      scanf("%c",&q);
+     
+     
 }

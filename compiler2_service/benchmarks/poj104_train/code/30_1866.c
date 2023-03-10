@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[100],sum=0,i,n;

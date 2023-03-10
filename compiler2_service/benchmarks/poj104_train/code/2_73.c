@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,n,num[1000],len[1000],num1[1000][26]={0},sum[26]={0},max=0,m;

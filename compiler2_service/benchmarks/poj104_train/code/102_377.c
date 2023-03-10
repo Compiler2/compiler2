@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n,t=0,i,m,k=0;char a[100][9],e[9];float b[100],g[100],c[100],d;

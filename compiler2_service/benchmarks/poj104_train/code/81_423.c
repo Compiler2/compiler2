@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int check(int (*arr)[5], int n, int m)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int have7(int i)
 {
     if (i%10==7||(int)((i/10))%10==7)

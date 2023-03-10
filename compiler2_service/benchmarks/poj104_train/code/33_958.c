@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char s[260],int n)
 {
 	int i;

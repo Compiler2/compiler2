@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,7 +7,7 @@ int main()
      * when the input > 50 chars, your program will exit abnormaly,
      * result a no output. This is error tips you get on web.
      */
-    //char s[50]={0};
+    
     char s[1000] = {0};
 
     gets(s);

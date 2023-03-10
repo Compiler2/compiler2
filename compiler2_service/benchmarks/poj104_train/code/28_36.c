@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int l[500]={0},i,max,k,zero=1;
@@ -17,8 +19,8 @@ main()
 			zero=0;
 		}
 		temp=getchar();
-//		printf("%c",temp);
-//		printf("%d\n",max);
+
+
 	}
 	for(i=1;i<=max;i++)
 	{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a[101][101]={0};
     int x,y,h=0,i,m,n;

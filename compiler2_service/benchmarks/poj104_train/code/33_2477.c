@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,n;
@@ -6,7 +8,7 @@ int main()
 	gets(b);
 	for(i=0;i<n;i++)
 	{
-		gets(a);//gets(a);
+		gets(a);
 		for(j=0;a[j]!='\0';j++)
 		{
 			switch(a[j])
@@ -18,7 +20,7 @@ int main()
 			}
 		}
 		puts(a);
-		//printf("%s",a);
+		
 	}
 	return 0;
 }

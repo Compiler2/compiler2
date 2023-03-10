@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[500],temp[500],temp2[500];

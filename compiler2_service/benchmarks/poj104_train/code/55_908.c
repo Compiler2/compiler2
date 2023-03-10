@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a,b;
@@ -5,7 +7,7 @@ int main()
     scanf("%d %s %d",&a,n,&b);
     int c[100];
     int e[100];
-    int d=0; //n?????? 
+    int d=0; 
     int i,j;
     for(i=0;i<100&&n[i]!='\0';i++)
     {

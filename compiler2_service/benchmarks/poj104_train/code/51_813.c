@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[400],b[400][6];

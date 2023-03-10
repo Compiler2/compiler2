@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double rate;
 	int x1,x2,y=0,i,flag=0;

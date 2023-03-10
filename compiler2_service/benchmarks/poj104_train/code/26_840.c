@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sentence[101],result[101];
 	gets(sentence);

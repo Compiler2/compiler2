@@ -1,3 +1,5 @@
+#include <header.h>
+
 void course(char a[],int n)
 {
     int i,j,k;

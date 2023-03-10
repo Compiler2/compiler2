@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int month(int n)
 {
@@ -23,7 +25,7 @@ int month(int n)
 	return sum;
 }
 
-int fri(int n,int w)//n  month
+int fri(int n,int w)
 {
 	int days;
 	days=month(n);

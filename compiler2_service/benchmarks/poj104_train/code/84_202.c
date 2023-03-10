@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int count,max1,max2,i,a,b,c;

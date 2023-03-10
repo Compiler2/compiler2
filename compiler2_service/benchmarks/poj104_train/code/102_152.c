@@ -1,3 +1,5 @@
+#include <header.h>
+
 int comp(const void*a,const void*b){
     return *(float*)a-*(float*)b;
     }
@@ -16,8 +18,8 @@ int main(){
              b[count2++]=num;
                              
     }
-    //qsort(a,count1,sizeof(float),comp);
-    //qsort(b,count2,sizeof(float),comp);
+    
+    
     for(i=0;i<=count1-2;i++)
         for(j=0;j<=count1-2-i;j++)
             if(a[j]>a[j+1]){

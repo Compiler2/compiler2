@@ -1,5 +1,7 @@
-// ????.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
+
+
+
 int main(){ 
     int he,m,n,k,sz[100][100];
 	int i,j;

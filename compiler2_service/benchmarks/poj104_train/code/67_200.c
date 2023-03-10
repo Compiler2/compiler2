@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int data[100][3];
 	int n,a,b;

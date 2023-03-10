@@ -1,3 +1,5 @@
+#include <header.h>
+
 char sen[256];
 int len,i;
 int del();

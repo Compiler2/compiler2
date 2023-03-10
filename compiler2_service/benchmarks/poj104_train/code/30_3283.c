@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int cor(int x);
@@ -12,7 +14,7 @@ int main()
 	{
 		if ( cor(i) == 1 )
 		{
-			//printf("%d\n",i);
+			
 			sum += i*i ;
 		}
 	}

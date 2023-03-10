@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shuzu[20000];
 int main(){
     int n,x;

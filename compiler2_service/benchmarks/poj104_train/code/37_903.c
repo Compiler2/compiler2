@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[100][10000],s[26];

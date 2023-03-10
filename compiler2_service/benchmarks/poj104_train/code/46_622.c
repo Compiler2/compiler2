@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int i,j,t,a[100][100],m,n;
@@ -11,5 +13,3 @@ void main()
 		if(j<n/2)for(t=m-i-2;t>=i+1;t--)printf("%d\n",a[t][j]);
 	}
 }
-
-//??????????rp??……

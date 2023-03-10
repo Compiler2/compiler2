@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 typedef struct area
 {
@@ -26,7 +28,7 @@ int cmp(const void *a, const void *b)
 int main()
 {
 	int n, i;
-	//freopen("in.txt", "r", stdin);
+	
 	scanf("%d", &n);
 	for (i = 0; i < n; i ++)
 	{

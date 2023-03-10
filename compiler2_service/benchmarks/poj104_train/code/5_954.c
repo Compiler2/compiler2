@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int i,yiyang=0,zongliang=0,x;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isA(char a)
 {
 	if( (a>='0' && a<='9')|| (a>='a' && a<='z') || (a>='A' && a<='Z') ||a=='_')return 1;

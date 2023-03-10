@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int n){
 	int i;
 	for(i=3;i*i<=n;i=i+2){

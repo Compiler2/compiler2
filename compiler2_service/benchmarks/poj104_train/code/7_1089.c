@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	int a,i,j,m,k,p;
 	char r[257],s[257],w[257];

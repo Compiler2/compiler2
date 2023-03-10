@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[1024][1024];
 int main()
 {

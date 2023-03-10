@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	char str[300],zf[53],e[2];
 	int sz[800];

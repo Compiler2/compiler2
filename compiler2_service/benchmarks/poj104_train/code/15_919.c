@@ -1,3 +1,5 @@
+#include <header.h>
+
 int xiangsu[1000][1000];
 int main(){
     int n;

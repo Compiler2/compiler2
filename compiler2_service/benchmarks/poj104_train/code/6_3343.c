@@ -1,4 +1,6 @@
-//#include <malloc.h>
+#include <header.h>
+
+
 int main()
 {
 	int a[100][100],m,n,i,j,k,sum=0;

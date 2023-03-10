@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,shu[6]={0},qian[6]={100,50,20,10,5,1},zong=0,i,j;

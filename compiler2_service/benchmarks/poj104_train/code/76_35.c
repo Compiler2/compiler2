@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct zuobiao
 {
 	int left,right;

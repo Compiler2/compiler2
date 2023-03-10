@@ -1,6 +1,8 @@
+#include <header.h>
+
 main()
 {
-	double n,m;  //m???????? 
+	double n,m;  
 	scanf("%lf",&n);
 	char a[100];
 	scanf("%s",a);
@@ -12,7 +14,7 @@ main()
 	count1++;
 	for (i=0;b[i]!='\0';i++)
 	count2++;
-	//printf("%d %d\n",count1,count2);
+	
 	
 	if(count1!=count2) 
 	printf("error");
@@ -27,8 +29,8 @@ main()
 		      if (j==(count1-1))	
 		   	 {
 				 m=((double) count/(double )count1)  ; 
-				// printf("%lf\n",m);
-				//printf("%lf\n",n);
+				
+				
 				 if (m>=n)
 				 printf("yes");
 				 else 

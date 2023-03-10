@@ -1,4 +1,6 @@
-//itc online test nov 15
+#include <header.h>
+
+
 main() {
        char s[100];
        int a,b;

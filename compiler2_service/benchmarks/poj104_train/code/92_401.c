@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int result(int n,int tianji[1000],int qiwang[1000]){
 	int i,k,e,m=0,sum=0,tailt,tailq,a,b;

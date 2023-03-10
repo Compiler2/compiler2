@@ -1,5 +1,7 @@
-int a[6];//????????1-5??ABCDE
-int judge(int i)//??a[i]????
+#include <header.h>
+
+int a[6];
+int judge(int i)
 {
 	if(i == 1)
 	{
@@ -37,7 +39,7 @@ int judge(int i)//??a[i]????
 		return 0;
 	}
 }
-int search(int a[5])//???????????????1-5????
+int search(int a[5])
 {
 	for(int i = 1;i<=5;i++)
 		for(int j = 1;j<=5;j++)
@@ -64,7 +66,7 @@ int main()
 	 a[5] = 5;
 	 while(1)
 	 {
-		 if(search(a))//??????????????
+		 if(search(a))
 		 {
 		 int p,q;
 		 for(int i =1;i<=5;i++)
@@ -87,7 +89,7 @@ int main()
 					 break;
 			 }
 		 }
-		 if(s ==6)//???????????????
+		 if(s ==6)
 		 {
 			 a[1] = 5;a[2] = 2;a[3] = 1;a[4] = 3;a[5]  = 4;
 			 printf("%d %d %d %d %d",a[1],a[2],a[3],a[4],a[5]);

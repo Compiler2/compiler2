@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char yuanchuan[257];
 	char zichuan[257];

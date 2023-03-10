@@ -1,10 +1,12 @@
-//
-//  main.cpp
-//  ??
-//
-//  Created by Love on 13-1-12.
-//  Copyright (c) 2013? Love. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 int main(){
     int n,i,a[100],e,m;

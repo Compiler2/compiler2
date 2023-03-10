@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,zimu[27]={0},loci[27]={0},minadr=100009,flag=0;

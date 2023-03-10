@@ -1,3 +1,5 @@
+#include <header.h>
+
 char rec[200];
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 
@@ -5,7 +7,7 @@ int main()
     int a[13];
     sum=0;
     scanf("%d%d%d\n%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
-    for(i=1;i<=12;i++)//??	
+    for(i=1;i<=12;i++)
 	{
 		
         if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)	
@@ -33,7 +35,7 @@ int main()
               sum=sum+1;	
               if (endday>a[startmonth])	
 			  {	
-                  startday=0;	//not 1
+                  startday=0;	
                   startmonth=startmonth+1; 	
 			  }	
 		 }
@@ -46,7 +48,7 @@ int main()
                        sum=sum+366;	
                        else sum=sum+365;	
 				  }
-                       sum=sum+a[startmonth]-startday;//the first month	
+                       sum=sum+a[startmonth]-startday;
                        for (i=startmonth+1;i<=12;i++) 
 					   {
                            sum=sum+a[i];

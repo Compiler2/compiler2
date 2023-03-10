@@ -1,3 +1,5 @@
+#include <header.h>
+
 int turn(char a[])
 { int sum=0,i;
   for(i=0;a[i]!='\0';i++)

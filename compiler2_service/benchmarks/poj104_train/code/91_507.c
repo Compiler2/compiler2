@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main(){
 	char s[101];
 	char qinpeng[101];
 	int i,j,l,a,b;
 	char c;
 	gets(s);
-	//getchar();
+	
 	l=strlen(s);
 	for(i=0;i<l-1;i++){
 		a=*(s+i);

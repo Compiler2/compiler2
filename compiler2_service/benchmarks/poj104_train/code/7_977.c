@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[300];
@@ -21,7 +23,7 @@ main()
                   break;
               }
           }
-          //printf("%d\n",j);
+          
           if(j==x2)
           {
               for(k=0;k<=x2-1;k++)

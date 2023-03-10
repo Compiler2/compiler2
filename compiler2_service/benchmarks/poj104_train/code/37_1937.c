@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int t, j, k, i, num[200]={0};

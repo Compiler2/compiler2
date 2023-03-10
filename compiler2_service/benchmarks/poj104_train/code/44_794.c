@@ -1,3 +1,5 @@
+#include <header.h>
+
 void haha(int x)
 {
 	int a[100],n,i,c;

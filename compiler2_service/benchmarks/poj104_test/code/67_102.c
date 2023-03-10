@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,bl[10000],yx[10000],i;
     double xl[10000],cha[10000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char pd(char x);
 int main(){
 char a[256],b[256];

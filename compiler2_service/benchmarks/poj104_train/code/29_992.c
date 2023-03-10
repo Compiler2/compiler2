@@ -1,3 +1,5 @@
+#include <header.h>
+
 double F(int n);
 int main(){
 	int j,i,n,m;

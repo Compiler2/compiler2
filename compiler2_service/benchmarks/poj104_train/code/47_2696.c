@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
      int shur[100],shu[100];
      int n,i;

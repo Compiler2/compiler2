@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int year,mouth,day,k,sum=0;
 	scanf("%d%d%d",&year,&mouth,&day);

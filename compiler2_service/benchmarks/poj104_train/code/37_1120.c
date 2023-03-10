@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sword(void);
 int main(void)
 {

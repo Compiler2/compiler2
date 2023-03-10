@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct mao
     {
 	char name[10];

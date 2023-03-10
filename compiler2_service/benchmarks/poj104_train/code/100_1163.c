@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {  char str[300];
    scanf("%s",str);

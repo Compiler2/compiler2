@@ -1,3 +1,5 @@
+#include <header.h>
+
 int BT(int x,int a[40000])
 {
     int b=0,c=0;

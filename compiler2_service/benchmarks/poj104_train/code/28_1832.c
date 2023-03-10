@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n[300],i,p=0,tou=0,wei,l,j=0,kongge=0;

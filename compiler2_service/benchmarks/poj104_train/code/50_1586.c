@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 int w,i,j,sum=13,day;

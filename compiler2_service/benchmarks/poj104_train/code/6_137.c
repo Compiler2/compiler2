@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int k,row,q,col,i,j,*a,*num;

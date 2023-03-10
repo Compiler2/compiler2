@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 int H[100];
 int N;
 
 int memo[40][40];
 
-int dp(int i, int k) { // from i, max H[k]
+int dp(int i, int k) { 
 	int rslt;
 	if(i == N) return 0;
 	if(memo[i][k] != -1) return memo[i][k];

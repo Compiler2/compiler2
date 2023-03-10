@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int year,m1,n,m2,d1=0,d2=0,i,j,k;
@@ -7,7 +9,7 @@ int main()
 	for(i=1;i<=n;i++)
 	{
 		scanf("%d %d %d",&year,&m1,&m2); 
-		if ((year%400==0)||(year%4==0&&year%100!=0))//???//
+		if ((year%400==0)||(year%4==0&&year%100!=0))
 		{
 			for (j=1;j<=m1;j++)
 			{

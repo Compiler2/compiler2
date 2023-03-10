@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n, mis[100], sum[100][20], i, e, time, t;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	int n,t[1005],q[1005],i,j,k,p1,p2,total,max,h1,h2,t1,t2;
@@ -6,8 +8,8 @@ int main ()
 	{
 		for (i=1;i<=n;i++)scanf("%d",&t[i]);             
 		for (i=1;i<=n;i++)scanf("%d",&q[i]);
-		//for (i=1;i<=n;i++)cout<<t[i]<<' ';cout<<endl;
-		//for (i=1;i<=n;i++)cout<<q[i]<<' ';cout<<endl;
+		
+		
 		for (i=1;i<=n;i++)                       
 		{
 			max=i;
@@ -28,8 +30,8 @@ int main ()
 			q[max]=q[i]-q[max];
 			q[i]=q[i]-q[max];
 		}
-		//for (i=1;i<=n;i++)cout<<t[i]<<' ';cout<<endl;
-		//for (i=1;i<=n;i++)cout<<q[i]<<' ';cout<<endl;
+		
+		
 		total=0;                         
 		h1=1;h2=1;t1=n;t2=n;  
 		for(h2=1;h2<=n;h2++)

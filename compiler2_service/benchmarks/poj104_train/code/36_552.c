@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(char b[],int n,char a)
 {
 	int i,j;

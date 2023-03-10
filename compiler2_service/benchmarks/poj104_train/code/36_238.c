@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[200],b[200];
 int la,lb;
 int appear(char c)

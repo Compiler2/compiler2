@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int arr[8][8];

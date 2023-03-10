@@ -1,3 +1,5 @@
+#include <header.h>
+
 int R(int year);
 int main()
 {

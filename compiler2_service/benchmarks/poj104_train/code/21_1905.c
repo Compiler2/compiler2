@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 float my_abs(float a)
 {
@@ -6,7 +8,7 @@ float my_abs(float a)
 
 int main()
 {
-	//freopen("in.txt", "r", stdin);
+	
 
 	int n;
 	scanf("%d", &n);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int find(char *a, int n)
 {

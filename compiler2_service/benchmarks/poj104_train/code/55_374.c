@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	long int a,b,i=0,x=0,k;  char c[20], n[20];

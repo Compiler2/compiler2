@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(char str[])
 {
  int n,i;

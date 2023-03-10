@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Book_num(char a[])
 {
 	int j,num;

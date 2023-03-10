@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int ans[100], total, answer;

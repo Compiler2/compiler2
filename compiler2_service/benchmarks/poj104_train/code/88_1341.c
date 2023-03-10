@@ -1,3 +1,5 @@
+#include <header.h>
+
 /** c version **/
 
 
@@ -12,7 +14,7 @@ int main() {
     gets(p);
     do {
         p--;
-        while (isDigit(*(++p)) == 0) {} // ignore non-digit chars
+        while (isDigit(*(++p)) == 0) {} 
         p--;
         while (isDigit(*(++p)) == 1)
             printf("%c", *p);

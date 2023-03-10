@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,t,time[1000][6],jg[1000]={0};
 	for(i=0;1;i++){

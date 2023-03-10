@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char state[100][101],str[100][101];

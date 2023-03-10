@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main () {
     int n,i,grade;
     double gpa,sum1,sum2,GPA;

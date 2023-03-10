@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[100][100],e,sum=0;
@@ -13,9 +15,9 @@ int main()
 			}
 		}
 		m=n;
-		for(l=0;l<m-1;l++)//??N-1???
+		for(l=0;l<m-1;l++)
 		{
-			for(j=0;j<n;j++)//???
+			for(j=0;j<n;j++)
 			{
 				e=a[j][0];
 				for(k=0;k<n;k++)
@@ -30,7 +32,7 @@ int main()
 					a[j][k]-=e;
 				}
 			}
-			for(k=0;k<n;k++)//???
+			for(k=0;k<n;k++)
 			{
 				e=a[0][k];
 				for(j=0;j<n;j++)
@@ -45,8 +47,8 @@ int main()
 					a[j][k]-=e;
 				}
 			}
-			sum+=a[1][1];//??
-			for(j=0;j<n;j++)//??
+			sum+=a[1][1];
+			for(j=0;j<n;j++)
 			{
 				for(k=1;k<n;k++)
 				{

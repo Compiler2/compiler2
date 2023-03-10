@@ -1,7 +1,9 @@
+#include <header.h>
+
 
 int main()
 {
-	int n,b,c,i;            //b?? c??
+	int n,b,c,i;            
 	scanf("%d %d %d", &n, &b, &c);
 	int a[100];                  
 	for(i=3;i<=n;i++)

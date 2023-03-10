@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ori[300], fin[300];

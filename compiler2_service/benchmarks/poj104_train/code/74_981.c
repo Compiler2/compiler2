@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check1(int i)
 {
 	int j,x=0;

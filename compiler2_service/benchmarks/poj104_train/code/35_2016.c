@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,j,max,a,d,c;
  int m,n;
  int good;

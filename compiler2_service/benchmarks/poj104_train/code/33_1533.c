@@ -1,3 +1,5 @@
+#include <header.h>
+
 char peidui(char x);
 char peidui(char x){
    char s;

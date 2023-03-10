@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
     int year,month,day;
 	int n;
 	scanf("%d %d %d",&year,&month,&day);
-	if((year%4==0 && year%100!=0)||year%400==0) //????
+	if((year%4==0 && year%100!=0)||year%400==0) 
 	{
 		switch(month){
 		    case 1:

@@ -1,3 +1,5 @@
+#include <header.h>
+
       int i,n,s=0;
 int zhishu(int a)
 {

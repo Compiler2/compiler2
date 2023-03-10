@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,n,a[40];
 	double hei[40],nan[40],nv[40];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,len;
@@ -9,6 +11,6 @@ int main()
     word[i]+=word[i+1];
     word[i]+=c;
     printf("%s",word);
-   // getch();
+   
     return 0;
 }

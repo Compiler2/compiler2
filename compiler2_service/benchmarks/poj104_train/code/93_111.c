@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int oper;
 void p(int n);

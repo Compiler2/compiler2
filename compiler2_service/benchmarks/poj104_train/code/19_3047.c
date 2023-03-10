@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[101],a[101],b[101],temp[101];
 void judge(void)
 {

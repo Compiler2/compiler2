@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int N,i,j=0,k,dot=0,min=29999,l;

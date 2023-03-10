@@ -1,3 +1,5 @@
+#include <header.h>
+
 int one(int n)
 {
 	if(n!=1)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,weishu;
  int ge,shi,bai,qian;

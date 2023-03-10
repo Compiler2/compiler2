@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char word1[100],word2[100],*p1,*p2;
 	int i=0,len,j,num=0,a=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,n,i,j,k,a[11][11],b[11][11];
 	for(m=0;m<11;m++){

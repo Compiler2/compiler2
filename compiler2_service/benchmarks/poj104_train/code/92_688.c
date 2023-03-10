@@ -1,4 +1,6 @@
-void paixu(int *a,int n)              //n?????,?????? 
+#include <header.h>
+
+void paixu(int *a,int n)              
 {
      int i,j,t;
      for(i=0;i<n;i++)
@@ -16,9 +18,9 @@ void paixu(int *a,int n)              //n?????,??????
 }
 main()
 {
-      int i,j,k,a[1000],b[1000],m,n,p,q;                     //a????????b????? 
+      int i,j,k,a[1000],b[1000],m,n,p,q;                     
       loop:;
-      k=0;                    //k??????? 
+      k=0;                    
       scanf("%d",&n);
       if(n==0)
       return 0;
@@ -28,8 +30,8 @@ main()
       scanf("%d",&b[j]);
       paixu(a,n);
       paixu(b,n);
-      p=n;               //j???????? 
-      q=0;                //q???????????? 
+      p=n;               
+      q=0;                
       for(i=0;i<n;i++)
       {
                       if(a[i]>b[q])

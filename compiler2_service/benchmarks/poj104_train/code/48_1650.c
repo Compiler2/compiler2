@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	  int i,j,k,t,m,n,r,day,x;

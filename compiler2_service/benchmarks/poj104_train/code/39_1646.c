@@ -1,14 +1,16 @@
+#include <header.h>
+
 int main()
 {
 	char name[100][21];
-	int n;//??
-	int temp=0;//??????????
-	int temp_money=0;//?????????????
-	int temp_name;//??????????????
-	int all_money=0;//??????????????
+	int n;
+	int temp=0;
+	int temp_money=0;
+	int temp_name;
+	int all_money=0;
 	int i;
 	scanf("%d", &n);
-//	printf("n             =         %d\n",n);
+
 	for(i=0;i<n;i++)
 	{
 		int qi_mo;
@@ -16,9 +18,9 @@ int main()
 		char gan_bu;
 		char xi_bu;
 		int lun_wen;
-//		printf("%d\n", i);
+
 		scanf("%s", name[i]);
-//		printf("%s\n",name[i]);
+
 		scanf("%d", &qi_mo);
 		scanf("%d", &ping_yi);
 		scanf(" %c %c", &gan_bu, &xi_bu);

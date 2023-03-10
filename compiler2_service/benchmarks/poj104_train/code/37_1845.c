@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int N,i;
@@ -15,7 +17,7 @@ main()
                     if(k==j) continue;
                     if(ch[k]==ch[j]) break;
                }
-               if(j==m) {printf("%c\n",ch[k]);break;}//chuxianle
+               if(j==m) {printf("%c\n",ch[k]);break;}
            }
            if(k==m)printf("no\n");
       }

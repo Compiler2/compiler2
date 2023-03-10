@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int num1[52],num2[52],i,k,flag=1;

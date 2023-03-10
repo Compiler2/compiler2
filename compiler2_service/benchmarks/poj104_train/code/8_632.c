@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void f(int s[],int n);

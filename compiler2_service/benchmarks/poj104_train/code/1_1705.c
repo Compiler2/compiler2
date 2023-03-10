@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n, m, ans, a[20];
 
 void calc(int dep, int x)

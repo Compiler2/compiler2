@@ -1,3 +1,5 @@
+#include <header.h>
+
 move(int a[100],int n,int m)
 {int *p,b;
  b=*(a+n-1);

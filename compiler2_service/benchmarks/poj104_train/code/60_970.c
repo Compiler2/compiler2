@@ -1,3 +1,5 @@
+#include <header.h>
+
 int issushu(int number);
 int main(){
 int n,i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char c[100010];
 int main()

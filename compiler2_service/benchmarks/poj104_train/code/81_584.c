@@ -1,3 +1,5 @@
+#include <header.h>
+
 int work(int arr[5][5],int m,int n)
 {
 	int k,t;

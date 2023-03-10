@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -15,7 +17,7 @@ int main()
 	scanf("%d%d", &m, &n);
 	while(m!=0 && n!= 0)
 	{
-		//??????????????
+		
 		for(i=0; i<m; i++)
 		{
 			monkey[i] = 1;
@@ -39,7 +41,7 @@ int main()
 			}
 		}
 		
-		//?????????????????
+		
 		for(i=0; i<m; i++)
 		{
 			if(monkey[i]) 

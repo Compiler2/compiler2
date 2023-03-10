@@ -1,5 +1,7 @@
-// ????.cpp : ??????????????
-//
+#include <header.h>
+
+
+
 
 
 
@@ -10,7 +12,7 @@ int pk(int a,int b)
 	if(a==b)return 0;
 }
 
-int main()//(int argc, _TCHAR* argv[])
+int main()
 {
 	int q=1;
 	for(;;q++)
@@ -23,7 +25,7 @@ int main()//(int argc, _TCHAR* argv[])
 			scanf("%d",&tj[i]);
 		for(i=0;i<=n-1;i++)
 			scanf("%d",&qw[i]);
-		//if(n==180){printf("12000\n");continue;}
+		
 		for(j=1;j<=n-1;j++)
 		{
 			for(i=0;i<=n-j-1;i++)
@@ -43,11 +45,11 @@ int main()//(int argc, _TCHAR* argv[])
 			}
 		}
 		int b[1000];
-		//b[0]=0;
-		for(i=0;i<=n-1;i++)//?i?
+		
+		for(i=0;i<=n-1;i++)
 		{
 			money=0;
-			for(j=0;j<=n-i-1;j++)//??????j+1??????j+i+1?????????
+			for(j=0;j<=n-i-1;j++)
 			{
 				money=money+pk(tj[j],qw[j+i]);
 			}
@@ -61,25 +63,25 @@ int main()//(int argc, _TCHAR* argv[])
 		}
 		printf("%d\n",max);
 	}
-//		j=0;
-//		//if(tj[0]<qw[0])money=-200;
-//		for(i=0;i<=n-1;i++)
-//		{
-//			for(;j<=n-1;)
-//			{
-//				if(tj[i]<qw[j]){money=money-200;j=j+1;}
-//				if(tj[i]>qw[j]){money=money+200;j=j+1;break;}
-//				if(tj[i]==qw[j])
-//				{
-//					if(j==n-1){j=j+1;break;}
-//					if(tj[i+1]>qw[j+1]){j=j+1;break;}
-//					else {money=money-200;j=j+1;}
-//					
-///				}
-//			}
-//			
-//		}
-//		printf("%d\n",money);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 }

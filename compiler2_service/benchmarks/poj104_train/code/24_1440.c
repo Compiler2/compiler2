@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	  char zfc[25000];
       char ip[50][100];	  

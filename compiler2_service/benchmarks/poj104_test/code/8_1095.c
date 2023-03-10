@@ -1,3 +1,5 @@
+#include <header.h>
+
 void read(int*,int*);
 main()
 {

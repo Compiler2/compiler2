@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int SwapRow(int array[5][5],int row_n,int row_m)
 {

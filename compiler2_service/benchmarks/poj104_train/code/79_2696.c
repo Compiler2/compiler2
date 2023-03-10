@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yuesefu(int a[],int sum,int k)
 {
 	int i,j,count;

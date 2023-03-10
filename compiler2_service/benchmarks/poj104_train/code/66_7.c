@@ -1,5 +1,7 @@
+#include <header.h>
+
 int main(){
-	int i,a=0,b=0;               //a ???? b????
+	int i,a=0,b=0;               
 	int y,m,d;
 	int s,t,n,x,c;
 	scanf("%d%d%d",&y,&m,&d);

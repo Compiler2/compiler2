@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int a[5][5],int b,int c)
 {
 	int i;

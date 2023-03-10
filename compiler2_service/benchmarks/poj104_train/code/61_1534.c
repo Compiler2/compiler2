@@ -1,3 +1,5 @@
+#include <header.h>
+
 int feibo(int n);
 int main()
 {

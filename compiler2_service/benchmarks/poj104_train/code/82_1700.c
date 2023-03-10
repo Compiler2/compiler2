@@ -1,7 +1,9 @@
+#include <header.h>
+
 
 int main()
 {
-	int n,sp[101],dp[101],d[101],h=0,max=0;//ps=systolic pressure,pd=diabolic pressure
+	int n,sp[101],dp[101],d[101],h=0,max=0;
 	int i,j;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++){
@@ -14,7 +16,7 @@ int main()
 			d[i]=h=0;
 	}
 
-//now for the maximum of duration//
+
 
 	for(j=1;j<=n;j++){
 		if(max>=d[j])

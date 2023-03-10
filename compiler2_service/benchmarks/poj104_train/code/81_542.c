@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {int m,n,array[5][5];
 int *p;

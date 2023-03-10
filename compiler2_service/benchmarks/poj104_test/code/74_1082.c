@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sieve[100010]={1,1,0};
 int q[1000];
 int l=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int know[100000]={0};
 int be_known[100000]={0};
 int main()

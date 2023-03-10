@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k,sz[300],flag;
 	double xsz[300];

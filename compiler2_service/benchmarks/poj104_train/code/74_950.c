@@ -1,19 +1,21 @@
+#include <header.h>
+
 int main()
 {
  int m, n;
-// int a[100000];//?????????
+
  int temp, p, q, c, w=0;
  scanf("%d %d", &m, &n);
- //k=n-m;
- //for(i=0;i<=k;i++)
- //{
- // a[i]=m+i;
- //}
+ 
+ 
+ 
+ 
+ 
  
  for(;m<=n;m++)
  {
   temp=m;
-  q=0;  //q??????????????//
+  q=0;  
   while(temp>0)
 	  {
 	   p=temp%10;
@@ -22,7 +24,7 @@ int main()
 	  }
 	  if(q==m)
 	  {
-	//   printf("%d\n", a[i]);
+	
 	   for(c=2;c<m;c++)
 	   {
 		   if(m%c==0)

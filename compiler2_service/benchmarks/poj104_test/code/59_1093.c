@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -15,11 +17,11 @@ int main()
 			scanf("%c", &c);
 			switch(c)
 			{
-			case '.'://??
+			case '.':
 				room[i][j]=0;break;
-			case '#'://??
+			case '#':
 				room[i][j]=-1;break;
-			case '@'://??
+			case '@':
 				room[i][j]=1;break;
 			}
 		}
@@ -34,7 +36,7 @@ int main()
 			for(j=0;j<n;j++)
 			{
 				if (room[i][j]>0&&room[i][j]<k)
-				{//???????????
+				{
 					if (i>0 && room[i-1][j] == 0)
 						room[i-1][j]=k;
 					if (j>0 && room[i][j-1] == 0)

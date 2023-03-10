@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[10000];
 int a[10000];
 int wlen[301];

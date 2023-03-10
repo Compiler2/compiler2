@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,a[10000],b[10000],k,t;
     char result='y';

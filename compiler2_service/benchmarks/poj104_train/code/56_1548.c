@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	long n,m;

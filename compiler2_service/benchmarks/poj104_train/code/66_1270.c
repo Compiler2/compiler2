@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 /* ??????????????1?????0 */
 int isLeapYear(int y)
@@ -7,7 +9,7 @@ int isLeapYear(int y)
 	   2. ?????400??????
 	   3. ?????4??????100??????
 	*/
-//	if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0 && y % 3200 != 0 || y % 172800 == 0)
+
 	if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
 		return 1;
 	else
@@ -45,9 +47,9 @@ int main()
 	sum_mod_day %= 7;
 	year %= 3200;
 */
-//	t = year / 400;
-//	sum_mod_day += t * 0;
-//	sum_mod_day %= 7;
+
+
+
 	year %= 400;
 	
 	t = year / 100;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int isLegal(char *str)
 {

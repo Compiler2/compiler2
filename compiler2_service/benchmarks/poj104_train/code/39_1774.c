@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {struct student
 	{char name[20];

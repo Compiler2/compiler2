@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 int n,yb,ws,es,sy,wy,yy,z,x,w,y;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct {
 		char ID[10];
 		int nian;

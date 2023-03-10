@@ -1,3 +1,5 @@
+#include <header.h>
+
 void array(double*A,int n)
 {
 	int i,j,k;

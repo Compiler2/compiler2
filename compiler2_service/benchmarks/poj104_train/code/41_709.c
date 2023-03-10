@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pan(int r[5])
 {
 	int p[5],t[5],i;

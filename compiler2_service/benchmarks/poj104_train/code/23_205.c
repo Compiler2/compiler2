@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char input[110],a[100][100];

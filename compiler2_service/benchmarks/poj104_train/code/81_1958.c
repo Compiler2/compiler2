@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int zu[5][5],n,m,h[5][5];

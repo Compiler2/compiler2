@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,xg[999],i;

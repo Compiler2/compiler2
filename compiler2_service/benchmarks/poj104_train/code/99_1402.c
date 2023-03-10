@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,a[101];
     double b,c,d,e,sum1=0,sum2=0,sum3=0,sum4=0;

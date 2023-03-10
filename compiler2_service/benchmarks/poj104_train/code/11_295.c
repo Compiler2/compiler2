@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 
 int main(int argc, char* argv[])
 {
-	int y,m,d;//y=year,m=month,d=day
+	int y,m,d;
 	scanf("%d%d%d",&y,&m,&d);
-	if(y%100==0&&y%40==0||y%100!=0&&y%4==0)//leap year,29 days in Feb
+	if(y%100==0&&y%40==0||y%100!=0&&y%4==0)
 		switch (m)
 	{
 		    case 1: printf("%d\n",d);break;

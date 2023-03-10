@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ch[110],temp[110],c[110];

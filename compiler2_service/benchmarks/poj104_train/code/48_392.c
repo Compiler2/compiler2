@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,j,k;
@@ -33,7 +35,7 @@ int main()
 		      juzhen2[i+1][j-1]=juzhen2[i+1][j-1]+juzhen1[i][j];
 			  juzhen2[i+1][j]=juzhen2[i+1][j]+juzhen1[i][j];
 			  juzhen2[i+1][j+1]=juzhen2[i+1][j+1]+juzhen1[i][j];
-			  //juzhen1[i][j]=0;
+			  
 		    }
 		  }
 		  if(k%2==0)
@@ -49,7 +51,7 @@ int main()
 		      juzhen1[i+1][j-1]=juzhen1[i+1][j-1]+juzhen2[i][j];
 			  juzhen1[i+1][j]=juzhen1[i+1][j]+juzhen2[i][j];
 			  juzhen1[i+1][j+1]=juzhen1[i+1][j+1]+juzhen2[i][j];
-			  //juzhen2[i][j]=0;
+			  
 		    }
 		  }
 		}

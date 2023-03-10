@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	char DNA[1000][260];

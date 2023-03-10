@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -10,7 +12,7 @@ int main()
 	                                t[w]=i;
 	                                c[w]=j-i;
 	                                i=j;
-									w++;//????w???????????????????i<w,??i<=w????? 
+									w++;
 									}
 									f=c[0];
 									g=0;

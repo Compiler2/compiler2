@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cont(int s)
 {
 	int i,j;

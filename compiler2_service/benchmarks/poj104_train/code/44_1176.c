@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -7,7 +9,7 @@ int a[8];
 for(i=0;i<6;i++)
 {
 scanf("%d",&n);
-//if(n==0) {printf("0");}
+
 l=reverse(n);
 printf("%d\n",l);
 }
@@ -28,14 +30,14 @@ int reverse(int num)
          c=c*10;
          a[i]=(num-s*c)/k;
          k=k*10;
-       //printf("%d %d\n",a[i],i);  
+       
           t=10*y;
         y=t+a[i];             
  
-//printf("%d\n",y);
+
 
 }
-//printf("%d\n",y);
+
   num=y;
   return(num);
 }

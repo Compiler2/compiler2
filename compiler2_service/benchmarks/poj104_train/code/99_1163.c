@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	double y,n,i,wcn,qn,zn,ln,wcn0,qn0,zn0,ln0;

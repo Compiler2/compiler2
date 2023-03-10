@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,leng_a,leng_b,tag=0,a[128],b[128];

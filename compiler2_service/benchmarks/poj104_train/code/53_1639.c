@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int h=1,n,m;int flag=1;

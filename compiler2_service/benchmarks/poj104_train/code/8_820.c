@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],b[100],c[100];int m,n,i,j,k,xx;
 void sort(int a[],int n)
 {
@@ -13,7 +15,7 @@ void merge(int a[],int b[],int m,int n)
 }
 
 void init(int a[],int b[])
-{    //freopen("tt.in","r",stdin);
+{    
      scanf("%d%d",&m,&n);
 	 for (i=1;i<=m;i++) 
 		 
@@ -27,7 +29,7 @@ void init(int a[],int b[])
 void output(int a[],int k)
 {
  int i;
-	//freopen("tt.out","w",stdout);
+	
 	for(i=1;i<=k;i++) if (i==1) printf("%d",a[i]); else printf(" %d",a[i]);
 }
 int main()

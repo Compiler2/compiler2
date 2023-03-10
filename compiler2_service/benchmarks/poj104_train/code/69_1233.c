@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int a=0,b=0,c=0,d=0;
@@ -13,7 +15,7 @@ main()
 			if(str1[i]!='0')
 			{
 				c=i;
-//				printf("%d\n",c);
+
 				break;
 			}
 		}	
@@ -49,7 +51,7 @@ main()
 		str2[b-c]='\0';
 		b=b-c;
 	}	
-//	printf("%s %s\n",str1,str2);
+
 	if(a>=b)
 	{
 		for(int i=0;i<b;i++)
@@ -64,7 +66,7 @@ main()
 		{
 			str2[i+a-b]=str3[i+a-b];
 	    }
-//		printf("%s\n",str2);	    
+
 	}
 	else
 	{
@@ -80,7 +82,7 @@ main()
 		{
 			str1[i+b-a]=str3[i+b-a];
 	    }
-//		printf("%s\n",str1);		
+
 	}
 	if(a<=b)
 	a=b;
@@ -88,16 +90,16 @@ main()
 	{
 	    str[i]=str1[i]+str2[i]-48;
 	}
- //   printf("%d,%d,%d\n",str1[0],str2[0],str[0]);
-//	printf("%d\n",a-1);
-//	printf("%d,%d,%d,%d\n",str[3],str[2],str1[2],str2[2]);	
+ 
+
+
 	for(int i=a-1;i>0;i=i-1)
 	{
 		if(str[i]>=58)
 		{
 			str[i]=str[i]-10;
 			str[i-1]=str[i-1]+1;
-//			printf("%d,%d\n",str[i],str[i-1]);
+
 	    }
 	}
 	str[a]='\0';
@@ -105,7 +107,7 @@ main()
 	{
 		str[0]=str[0]-10;
 		printf("1%s\n",str);
-//		printf("%s\n",str);
+
 	}
 
 	else

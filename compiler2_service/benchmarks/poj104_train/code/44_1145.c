@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int n=6;
 long down(long x)
 {

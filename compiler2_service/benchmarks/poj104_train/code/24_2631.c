@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -48,8 +50,8 @@ int main()
 
 
 	
-//	for (j=0;j<=i;j++)
-//		printf("%s\n",b[j]);
+
+
 
 	return 0;
 }

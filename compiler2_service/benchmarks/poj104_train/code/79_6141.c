@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
 	int k;
 	int a[300][300];

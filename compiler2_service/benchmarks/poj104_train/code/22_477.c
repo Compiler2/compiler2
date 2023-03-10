@@ -1,3 +1,5 @@
+#include <header.h>
+
 int b[10000]={0};
 
 int main()

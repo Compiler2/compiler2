@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[251],b[251],c[251];
@@ -6,7 +8,7 @@ int main()
     scanf("%s",b);
     x=strlen(a);
     y=strlen(b);
-    if(x>=y)             //dui qi, qian jia 0
+    if(x>=y)             
     {
           for(i=y;i!=-1 ;i--)
               b[i+x-y+1]=b[i];
@@ -17,7 +19,7 @@ int main()
           a[0]=48;
           d=x;
     }
-    //printf("%s,%s",a,b);
+    
 	else if(y>x)
     {
           for(i=x;i!=-1 ;i--)

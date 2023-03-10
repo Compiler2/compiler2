@@ -1,3 +1,5 @@
+#include <header.h>
+
 int col(int a,int b);
 int main()
 {int n,i,m,l;

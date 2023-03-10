@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ss(int );
 int hw(int );
 main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int t,i,b,j,k,m;
@@ -16,10 +18,10 @@ main()
                       if(a[j]!=a[k])
                       m=m+1;
                       
-                      //if(a[j]==a[j+k+1])
-                      //break;
+                      
+                      
                   }
-                  //printf("%d ",m);
+                  
                 if(m==b-1&&i!=t)
                   {
                      printf("%c\n",a[j]);

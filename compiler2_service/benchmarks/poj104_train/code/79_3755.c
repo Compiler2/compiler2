@@ -1,3 +1,5 @@
+#include <header.h>
+
 void monkey(int n,int m)
 {
 	int s,i,j,a[301];

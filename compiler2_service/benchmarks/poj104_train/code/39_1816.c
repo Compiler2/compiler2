@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stud
 {
 	char a[30];

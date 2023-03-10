@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {  int pai(int a[5]);
    int a[5],i,j,k,l,m,t;

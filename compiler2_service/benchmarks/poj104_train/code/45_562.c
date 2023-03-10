@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char str[50],substr[50],*p;
  int i,len;

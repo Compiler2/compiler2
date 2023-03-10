@@ -1,3 +1,5 @@
+#include <header.h>
+
 int show(char a[],int t)
 {int i,k,l,j=1;
 static int b[101];

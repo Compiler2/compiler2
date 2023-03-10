@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zxc[99];
 	int sz[99];

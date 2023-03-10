@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(int i,char a[],char b[])
 {
     int k;

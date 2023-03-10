@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	int n;
 	scanf("%d",&n);
 	if((n>=0)&&(n<=9))
-		printf("%d",n);//?????????
+		printf("%d",n);
 	else
 	{
 	do

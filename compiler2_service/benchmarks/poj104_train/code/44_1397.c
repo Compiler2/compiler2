@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int reverse(int num); 
 int a[6],i;

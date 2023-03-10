@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char z[50],m[50];
 int a,n,b=0;

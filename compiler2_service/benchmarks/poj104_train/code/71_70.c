@@ -1,3 +1,5 @@
+#include <header.h>
+
 int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 
 int run(int year)

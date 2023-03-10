@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc1[55],zfc2[55];
 	int i,j,k;

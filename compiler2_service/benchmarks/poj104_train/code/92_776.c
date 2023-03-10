@@ -1,3 +1,5 @@
+#include <header.h>
+
 void quicksort(int source[],int n)
 {int i,j,t;
      for(j=n-1;j>0;j--)

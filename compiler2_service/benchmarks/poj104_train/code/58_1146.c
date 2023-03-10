@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int legal(char zfc[81]);
 

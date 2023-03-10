@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char c[],char b[],int n,int i)
 {
     if(i<=n-1)

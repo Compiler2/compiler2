@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
        char text[100],s[100][20]={'\0'},a[20],b[20];

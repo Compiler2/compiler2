@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n=0,cnt=0;
 int visit[2000][2000];
 int dp[2000][2000];
@@ -41,8 +43,8 @@ int f(int i,int j)
 }
 int main()
 {
-    //freopen("zozo.in","r",stdin);
-    //freopen("zozo.out","w",stdout);
+    
+    
     scanf("%d",&n);
     while (n!=0)
     {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char str[1000],strd[20],strb[20];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	unsigned long a1, a2, a3, a4, a5, num;

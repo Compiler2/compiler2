@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	double k;
@@ -34,6 +36,6 @@ int main(){
 	
 	
 	}
-	//scanf("%lf",&k);
+	
 	return 0;
 }

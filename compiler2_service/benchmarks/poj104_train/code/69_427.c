@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char p[260],q[260];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
   int zuo[50000],you[50000],n,i,j,a,b;

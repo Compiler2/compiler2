@@ -1,18 +1,20 @@
+#include <header.h>
 
-// ???????
+
+
 int n;
 int self[1000], enemy[1000];
 
-// ??
+
 int result;
 
-// ????
+
 int compare(const void* a, const void* b)
 {
 	return *((int*)b) - *((int*)a);
 }
 
-// ????????
+
 void play(int s, int e)
 {
 	if (s > e)
@@ -21,7 +23,7 @@ void play(int s, int e)
 		result -= 200;
 }
 
-// ??????
+
 int calcMax(void)
 {
 	int i, smax, smin, emax, emin;

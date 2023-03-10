@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pai1 (int x[1000] ,int y);
 int pai2 (int x[1000] ,int y);
 int main ()

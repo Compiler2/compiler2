@@ -1,13 +1,15 @@
+#include <header.h>
+
 int main()
 {
-	//int ans = 60;
+	
 	int n;
 	scanf("%d",&n);
 	for(int i = 1;i <= n;i ++){
-		//int ans = 60;
+		
 		int t;
-		int temp = 0;//???? 
-		int spe = 0;//???? 
+		int temp = 0;
+		int spe = 0;
 		scanf("%d",&t);
 		for(int i = 1;i <= t;i ++){
 			int now;

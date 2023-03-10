@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a[11][11]={0},b[11][11]={0},m,n,x,i,r;
     scanf("%d%d",&m,&n);

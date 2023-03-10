@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int change(int sz[5][5],int n,int m);
 int main(int argc, char* argv[])

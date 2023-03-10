@@ -1,13 +1,15 @@
+#include <header.h>
+
 int main()
 {
 	int n;
 	int i=0;
 	scanf("%d",&n);
-	//int m;
+	
 	
 	int a[200];
 	int time[100];
-	//m=2*n;
+	
 	for(i=0;i<200;i++)
 		a[i]=0;
 	for(i=0;i<100;i++)

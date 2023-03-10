@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 float man[40];
 float woman[40];

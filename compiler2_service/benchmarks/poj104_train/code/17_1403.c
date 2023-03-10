@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     char c2[101];
@@ -10,7 +12,7 @@ main()
     for(i=0,n=0;c2[i]!='\0';i++)
     {
         if(c2[i]=='(') n=i;
-        //else if(c2[i]!=')'&&c2[i]!='(') c2[i]='a';
+        
     }
     for(i=n;i>=0;i--)
     {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int yu=0,yu0=0,he=0,i,n,sum;
@@ -20,14 +22,14 @@ int main()
 	{
 		strcpy(stra,str2);
 		strcpy(str0,str1);
-	}                           //???stra??????str0?????strb??0???str0???final??
+	}                           
 
 
 	n=strlen(stra)-strlen(str0);
 	for (i=0;i<=n-1;i++)
 		strb[i]='0';
 	strb[n]='\0';
-	strcat (strb,str0);        //???stra?strb?????????
+	strcat (strb,str0);        
 
 final:
 
@@ -42,7 +44,7 @@ final:
 		yu=yu0;
 	}
 	res[strlen(stra)+1]='\0';
-	res[0]=yu+48;                     //res?????????0
+	res[0]=yu+48;                     
 	
 	for (i=0;i<=strlen(stra);i++)
 	{

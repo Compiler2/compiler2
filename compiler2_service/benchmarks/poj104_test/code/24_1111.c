@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char e[256],all[1000],words[50][256];

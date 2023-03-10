@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sushu(int x);
 int main(){
 	int n,i,s[10000],k=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -6,7 +8,7 @@ int main(int argc, char* argv[])
 	gets(words);
 	n=strlen(words);
 	all=0;
-	int a[27];//ci shu
+	int a[27];
 	for(j=1;j<=26;j++){
 		a[j]=0;}
 	char b[27]={'0','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};

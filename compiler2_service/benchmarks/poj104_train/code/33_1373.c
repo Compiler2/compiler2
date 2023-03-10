@@ -1,3 +1,5 @@
+#include <header.h>
+
 char mb[30000][300],fy[30000][300];
 int main(){
 	

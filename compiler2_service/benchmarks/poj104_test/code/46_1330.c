@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int re(int a[100][100],int row,int col,int b[])
 {

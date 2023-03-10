@@ -1,3 +1,5 @@
+#include <header.h>
+
 int kh[1000], th[1000];
 
 int cmp(const void *a, const void *b)

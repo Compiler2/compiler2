@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Inyear(int month,int day,int year,int i,int output)
 {
 	for(i=1;i<month;i++)

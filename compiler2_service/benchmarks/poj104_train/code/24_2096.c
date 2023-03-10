@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[1000],b[1000]={0},c[1000]={0},da[1000],xiao[1000];

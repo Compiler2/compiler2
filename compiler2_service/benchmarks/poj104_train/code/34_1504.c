@@ -1,3 +1,5 @@
+#include <header.h>
+
 int step(int n)
 {if(n==1) printf("End\n");
 else 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int wu(int n)
 {
     if((n%7==0)||(n%10==7)||(n/10==7))

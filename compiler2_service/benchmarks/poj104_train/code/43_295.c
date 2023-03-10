@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isprime(int p);
 int main(){
 	int m,a,b,prime1,prime2;

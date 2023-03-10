@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char s[100],c;
@@ -6,31 +8,31 @@ int main(int argc, char* argv[])
 	gets(s);
 	c=s[0];
 	len=strlen(s);
-	for(p=0;p<len/2;p++)            //?????????? ???????? ??len/2?
+	for(p=0;p<len/2;p++)            
 	{
 		for(i=0;i<len-1;i++)
 		{            
-			if(s[i]==' ')           //??????????
+			if(s[i]==' ')           
 			{
 				continue;
 			}
 			else
 			{
-				for(j=i+1;j<len-1;j++)       //?????i??????????
+				for(j=i+1;j<len-1;j++)       
 				{
 					if(s[j]!=' ')
 						break;
 				}
-				if(s[i]==c&&s[j]!=c)         //???i????????????????
+				if(s[i]==c&&s[j]!=c)         
 				{
-					s[i]=' ';s[j]=' ';       //???????? ???????? ?a?b
+					s[i]=' ';s[j]=' ';       
 					a[k]=i;b[k]=j;
 					k++;
 				}
 			}
 		}	
 	}
-    for(p=0;p<k-1;p++)                      //??????????
+    for(p=0;p<k-1;p++)                      
 	{
 		for(q=0;q<k-p-1;q++)
 		{

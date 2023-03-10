@@ -1,3 +1,5 @@
+#include <header.h>
+
 void qu(char *);
 int main()
 {

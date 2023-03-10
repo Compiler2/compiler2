@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int m,n,i,j,k,patient=0,flag[103][103];

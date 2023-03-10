@@ -1,3 +1,5 @@
+#include <header.h>
+
 int im(int n,int max)
 {
     int s=0,i;
@@ -18,6 +20,6 @@ int main()
                     scanf("%d",&t);
                     printf("\n%d",im(t,t));
     }
-    //getch();
+    
     return 0;
 }

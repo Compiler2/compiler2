@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     double m,a,b,t=1,k=0,s=1,result;
     char r[501],e[501];

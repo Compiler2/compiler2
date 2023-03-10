@@ -1,3 +1,5 @@
+#include <header.h>
+
 /**
  * IC::Final 2012-01-04
  * By Lu Junshi (1000010158)
@@ -20,7 +22,7 @@ int cmp_sort(const void *a, const void *b){
     ngram *pa=(ngram*)a, *pb=(ngram*)b;
     int k=pb->count - pa->count;
     if(k) return k;
-    return a-b; //input order
+    return a-b; 
 }
 
 int main()

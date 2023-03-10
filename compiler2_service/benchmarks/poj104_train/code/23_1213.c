@@ -1,3 +1,5 @@
+#include <header.h>
+
 void daopai(char *pt)
 {
 	int i,s=0,m=0;

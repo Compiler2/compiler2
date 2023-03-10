@@ -1,3 +1,5 @@
+#include <header.h>
+
 int prime(int a)
 {
 	int i;

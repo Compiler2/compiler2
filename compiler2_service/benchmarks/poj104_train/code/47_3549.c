@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],sz[100];
 void change(int sz[],int n);
 int main()

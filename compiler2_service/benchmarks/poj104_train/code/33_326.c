@@ -1,3 +1,5 @@
+#include <header.h>
+
 char chaina[1000][260], chainb[1000][260];
 int len;
 int main()

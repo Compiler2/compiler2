@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 char a[200];
@@ -20,8 +22,8 @@ if(a[i]!=' ')
 if(n>=2)
 {
         
-        //m=m+1; 
-//printf("%d\n",m);
+        
+
 
 continue;
 }

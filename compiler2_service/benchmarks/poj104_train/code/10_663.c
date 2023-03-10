@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int max=0,i,j,n,maxb,num=0,s,a[30],b[30];
@@ -28,7 +30,7 @@ int main()
     maxb=0;
     for(i=0; i<n; i++)
     {
-        //printf("%d ",b[i]);
+        
         if(b[i]>maxb)
         {
             maxb=b[i];

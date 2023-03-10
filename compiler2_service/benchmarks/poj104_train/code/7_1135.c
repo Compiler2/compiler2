@@ -1,10 +1,12 @@
-//
-//  main.cpp
-//  hw
-//
-//  Created by ? ? on 12-12-16.
-//  Copyright (c) 2012? ? ?. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 int main()
 {

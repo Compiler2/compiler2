@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,b=0,a=0;
     scanf("%d",&n);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int n,m,a[100],*p,i;

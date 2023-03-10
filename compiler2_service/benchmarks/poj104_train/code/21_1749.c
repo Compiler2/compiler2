@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int num,*p,i,sum=0,s;

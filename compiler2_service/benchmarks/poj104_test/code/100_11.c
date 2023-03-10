@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char ch[26],str[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int toup (int m)
 {int l;l=m/2;return l;}
 

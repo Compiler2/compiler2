@@ -1,14 +1,16 @@
+#include <header.h>
+
 int main()
 {
-	char str[100],word[100]={'0'},change[100],chafor[100];//word?????????????,change?????????,chafor????????
+	char str[100],word[100]={'0'},change[100],chafor[100];
 	char a[100][100]={{'0'},{'0'}};
-	int i,j,len,m,start=0,num=1;//num?????????
+	int i,j,len,m,start=0,num=1;
 
 	gets(str);
 	gets(change);
 	gets(chafor);
 	len=strlen(str);
-	for(i=0;i<len;i++)//??????????????
+	for(i=0;i<len;i++)
 	{
 		if(str[i]==' ')
 			num+=1;
@@ -17,7 +19,7 @@ int main()
 	for(i=0;i<num;i++)
 	{
 		m=0;
-		for(j=start;j<len;j++)//start????????????
+		for(j=start;j<len;j++)
 		{
 			if(str[j]!=' ')
 			{

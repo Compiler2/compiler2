@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   
 	int m,n;
@@ -8,15 +10,15 @@ int main()
 	    scanf("%d",&a[i]);
 	}
     int*point;
-	//for(i=n-m;i<n;i++)
-	//{
-      //  printf("%d",a[i]);
-	//}
-	//for(i=0;i<n-m-1;i++)
-	//{
-	//	printf("%d",a[i]);
-	//}
-	//printf("%d\n",a[n-m-1]);
+	
+	
+      
+	
+	
+	
+	
+	
+	
 	for(point=&a[n-m];point<a+n;point++)
 	{
 		printf("%d ",*point);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,t,input[2][1000],i,j,k,win,money;

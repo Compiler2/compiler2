@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pdss(int number);
 int main(){
 	int i;

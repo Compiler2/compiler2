@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,s[21];
 	char zf[21];

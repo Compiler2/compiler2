@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[25],b[25]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 int n;
 int changdu(int i)

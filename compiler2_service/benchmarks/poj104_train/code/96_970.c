@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[101]={0},q[101]={0},r[101]={0},len,i;

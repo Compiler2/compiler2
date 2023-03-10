@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int sz[5][5],m,n,e,row,col;
 for( row=0;row<5;row++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char *p,*p_1,*p2;

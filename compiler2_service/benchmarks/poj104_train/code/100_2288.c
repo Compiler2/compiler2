@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int i,a[60]={0},flag=0,k;  char str[300]={0};
   short c;

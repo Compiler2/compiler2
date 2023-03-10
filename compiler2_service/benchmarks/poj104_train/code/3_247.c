@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[100][255];
 int main(){
 	int n,k,i,j,b=0,c=0,d=0,e=0,flag=0;

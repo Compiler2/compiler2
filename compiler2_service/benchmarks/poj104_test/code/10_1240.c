@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int *p,*num;
@@ -21,8 +23,8 @@ int main()
 		{
 			if (*(p+i)>=*(p+k)&&*(num+k)>add)
 				add=*(num+k);
-			//printf ("%d",*(num+k));
-			//printf ("%d",add);
+			
+			
 		}
 		*(num+i)+=add;
 	}
@@ -31,7 +33,7 @@ int main()
 	{
 		if (*(num+i)>maxnum)
 			maxnum=*(num+i);
-		//printf ("%d",*(num+i));
+		
 	}
 	printf ("%d",maxnum);
 	

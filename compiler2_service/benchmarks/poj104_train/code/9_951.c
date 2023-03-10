@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { struct peo
   { char num[10];

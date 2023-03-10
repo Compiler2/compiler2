@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,n,j,k[101],l,max,sec=0;

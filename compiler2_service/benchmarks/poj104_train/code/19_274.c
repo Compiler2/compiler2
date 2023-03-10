@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(char p[100],char q[100],int a,int b)
 {
   int m,x;

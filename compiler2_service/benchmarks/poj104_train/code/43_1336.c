@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a,b,c,d,k,s=0,i,ch[10007]={'0'};

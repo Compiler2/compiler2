@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void rev(char *x);
 int val(char a);

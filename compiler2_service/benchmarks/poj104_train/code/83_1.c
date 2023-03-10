@@ -1,3 +1,5 @@
+#include <header.h>
+
 double judge(int a)
 {
 	if(a<=100&&a>=90)

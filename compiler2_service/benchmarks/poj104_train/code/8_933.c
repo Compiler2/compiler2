@@ -1,7 +1,9 @@
+#include <header.h>
+
 int n1,n2;
 int num1[100],num2[100];
 int out[200];
-//????
+
 void p1(void)
 {
 	int i;
@@ -14,11 +16,11 @@ void p1(void)
 		scanf("%d",&num2[i]);
 	}
 }
-//??????
+
 void p2(int num1[100],int num2[100],int n1,int n2)
 {
 	int i,j,tmp;
-	//????????
+	
 	for(i=0;i<n1;i++){
 		for(j=i+1;j<n1;j++){
 			if(num1[j]<num1[i]){
@@ -28,7 +30,7 @@ void p2(int num1[100],int num2[100],int n1,int n2)
 			}
 		}
 	}
-    //??????
+    
 	for(i=0;i<n2;i++){
 		for(j=i+1;j<n2;j++){
 			if(num2[j]<num2[i]){
@@ -39,7 +41,7 @@ void p2(int num1[100],int num2[100],int n1,int n2)
 		}
 	}
 }
-//?????? ?????????
+
 void p3(int num1[100],int num2[100],int n1,int n2)
 {
 	
@@ -53,7 +55,7 @@ void p3(int num1[100],int num2[100],int n1,int n2)
 		j++;
 	}
 }
-//??
+
 void p4(int out[200],int n)
 {
 	int i;

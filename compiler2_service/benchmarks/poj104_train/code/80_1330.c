@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -35,7 +37,7 @@ int main()
             }
         }
     }
-    // a?m1????
+    
     if(m2>1)
     {
         for(i=1;i<m2;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sign[100][100]={0},arr[100][100];
 void right(int i,int j)
 {

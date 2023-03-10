@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void shuru(int a[],int b[],int m,int n)
 {

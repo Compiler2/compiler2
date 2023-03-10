@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[201],q[201];
     int i=0,j=0;

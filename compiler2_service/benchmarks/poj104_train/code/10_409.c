@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[26],k,max=1;
 
 void f(int i,int n)

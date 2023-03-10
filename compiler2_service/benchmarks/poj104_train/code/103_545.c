@@ -1,3 +1,5 @@
+#include <header.h>
+
 void count(char *string)
 {   
     int i=0,j=0;

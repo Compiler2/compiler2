@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int *a)
 {
     int b[5]={0};
@@ -27,7 +29,7 @@ int check(int *a)
     t=0;
     return t;
 }
-void f(int *a,int count)  //??5????
+void f(int *a,int count)  
 {
     int i,t=0,j;
     for (i=1;i<6;i++)
@@ -54,6 +56,6 @@ void f(int *a,int count)  //??5????
 }
 main()
 {
-    int a[5];// A B C D E
+    int a[5];
     f(a,0);
 }

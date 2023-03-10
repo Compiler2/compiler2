@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct book{
 	int num;
 	char s[27];

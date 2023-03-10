@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 main()
@@ -19,7 +21,7 @@ for(i=0;i<=len-1;i++)
               a[i]='C';
               if(a[i]=='d'||a[i]=='D')
               a[i]='D';
-//printf("%c",a[i]);
+
 }
 
 for(i=0;i<=len-1;i++)

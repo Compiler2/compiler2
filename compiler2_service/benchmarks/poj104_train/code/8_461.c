@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],b[100],n,m,c[1000];
 void input(int a[],int b[])
 {

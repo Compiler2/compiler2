@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int hanshu(int k,int min);
   int n,i,a;

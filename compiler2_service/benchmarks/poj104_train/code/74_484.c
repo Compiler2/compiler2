@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ff(int n){
 	int hh;
 	if(n==2){ return 1;}

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,shuzu[100],i,j;
 	double x,s,e,a,b;

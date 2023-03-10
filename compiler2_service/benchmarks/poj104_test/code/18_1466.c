@@ -1,16 +1,18 @@
+#include <header.h>
+
 
 int main()
 {
 	int n,i,j,k,l,a[100][100],min=0,sum[100];
 	scanf("%d",&n);
-	for(k=1;k<=n;k++)   //n???
+	for(k=1;k<=n;k++)   
 	{   sum[k]=0;
 	for(i=0;i<=n-1;i++)
 		for(j=0;j<=n-1;j++)
 			scanf("%d",&a[i][j]);
-	for(l=1;l<=n-1;l++)//????n-1???
+	for(l=1;l<=n-1;l++)
 	{
-		for(i=0;i<=n-l;i++)//???
+		for(i=0;i<=n-l;i++)
 		{   min=a[i][0];
 		for(j=1;j<=n-l;j++)
 			if(a[i][j]<min)
@@ -18,7 +20,7 @@ int main()
 		for(j=0;j<=n-l;j++)
 			a[i][j]=a[i][j]-min;
 		}
-		for(j=0;j<=n-l;j++)//???
+		for(j=0;j<=n-l;j++)
 		{
 			min=a[0][j];
 			for(i=1;i<=n-l;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 static int c[25];
 int max(int a,int b)

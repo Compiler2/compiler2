@@ -1,3 +1,5 @@
+#include <header.h>
+
 int money(int n1,int n2,char n3,char n4,int n5);
 int main()
 {

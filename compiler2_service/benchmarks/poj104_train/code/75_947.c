@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int come[10000],go[10000],i=0,j=0;

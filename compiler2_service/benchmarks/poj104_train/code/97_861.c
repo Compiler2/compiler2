@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int n,yibai=0,wushi=0,ershi=0,yishi=0,wu=0,yi=0;

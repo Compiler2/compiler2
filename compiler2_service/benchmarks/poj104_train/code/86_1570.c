@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int sz[100][100],n,tiaohuai[100],sum[100]={0},i,k,j;

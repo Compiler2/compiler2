@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
    int rie,k,i;
    int ROW,COL;

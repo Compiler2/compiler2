@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[4000]={'0'};
@@ -10,7 +12,7 @@ int main()
 		if(c[i]!=','&&c[i]!=' ')
 		{
             l=0;
-			for(j=i;j<=3999;j++)//zheli
+			for(j=i;j<=3999;j++)
 			{
 				if(c[j]==','||c[j]==' '||c[j]=='\0') break;
 			}

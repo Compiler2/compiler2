@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int i=1,j,tot,rem,cur,rou,n[100],m[100],a[301];

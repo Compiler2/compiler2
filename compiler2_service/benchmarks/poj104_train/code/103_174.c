@@ -1,3 +1,5 @@
+#include <header.h>
+
 void strupr(char a[])
 {
     int i;

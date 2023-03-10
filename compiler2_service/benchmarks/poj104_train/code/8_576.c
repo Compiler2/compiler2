@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k,n1,n2,a[100],b[100],flag=0;
 paixu(int m,int x[])
 {

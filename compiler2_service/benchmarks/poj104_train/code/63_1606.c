@@ -1,3 +1,5 @@
+#include <header.h>
+
 void  stubid(int x,int y,int z[150][150])
 {
   for (int i=0;i<x;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int change(char a[],int j);
 	int n,i,j=0,k;

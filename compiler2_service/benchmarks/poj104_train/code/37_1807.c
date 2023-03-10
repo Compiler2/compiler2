@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void com(char str[10000]);
 int main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int count(char *p,int *pn,int n)
 {

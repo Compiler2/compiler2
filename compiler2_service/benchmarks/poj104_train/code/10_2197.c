@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int sum[25],int x[25],int i,int j,int k)
 {  
    int t,l=1;

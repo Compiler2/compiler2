@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,a[300],k=0;
 	double ave=0.0,max=0.0,x;

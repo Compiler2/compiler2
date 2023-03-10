@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -12,7 +14,7 @@ int main()
 		gets(dna);
 		for(j=0;(dna[j])!='\0';j++)
 		{
-		//	scanf("%c",&dna[j]);
+		
 			if(dna[j]=='A')
 			{
 				dna[j]='T';

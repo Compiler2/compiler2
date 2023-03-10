@@ -1,5 +1,7 @@
-// ?????.cpp : ??????????????
-//
+#include <header.h>
+
+
+
 
 
 int weekdays(int n)
@@ -8,7 +10,7 @@ int weekdays(int n)
 	else return weekdays(n-7);
 }
 
-int main()//(int argc, _TCHAR* argv[])
+int main()
 {
 	int days[13][32];
 	int i,j,w;

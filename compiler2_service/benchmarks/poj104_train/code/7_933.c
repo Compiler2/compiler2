@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[256],z[256],p[256];
     scanf("%s%s%s",s,z,p);

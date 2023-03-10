@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k;
@@ -11,7 +13,7 @@ int main()
 		{break;}
 	}
 	k=i;
-	//printf("%s",a);
+	
 	
 	
 	c[0]=a[0];
@@ -24,9 +26,9 @@ int main()
 		{c[j]=a[i];j++;i++;}
 		if((a[i]==' ')&&(a[i-1]!=' '))
 		{c[j]=a[i];j++;i++;}
-		if((a[i]==' ')&&(a[i-1]==' '))//'\0'????????
+		if((a[i]==' ')&&(a[i-1]==' '))
 		{i++;}
-		//printf("%c",c[j]);
+		
 	}
 
 	for(i=0;i<j;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n, allday1=1,month1[1000],month2[1000],allday2=1,monthday11[12]={31,28,31,30,31,30,31,31,30,31,30,31},monthday22[12]={31,29,31,30,31,30,31,31,30,31,30,31}, i, year[1000],k;

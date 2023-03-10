@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -10,9 +12,9 @@ int main()
 		for(j=1;j<=n;j++)
 		{
 			scanf(" %c ",&map[i][j]);
-			if(map[i][j]=='.')a[i][j]=1;     //1??????
-			else if(map[i][j]=='#')a[i][j]=0;//0??????
-			else a[i][j]=2   ;                 //2???????
+			if(map[i][j]=='.')a[i][j]=1;     
+			else if(map[i][j]=='#')a[i][j]=0;
+			else a[i][j]=2   ;                 
 		}
 	}
 	int m;
@@ -26,7 +28,7 @@ int main()
 			{
 				if(a[i][j]==2)
 				{
-					if(a[i-1][j]==1) a[i-1][j]=3;//3???????????
+					if(a[i-1][j]==1) a[i-1][j]=3;
 					if(a[i+1][j]==1) a[i+1][j]=3;
 					if(a[i][j-1]==1) a[i][j-1]=3;
 					if(a[i][j+1]==1) a[i][j+1]=3;

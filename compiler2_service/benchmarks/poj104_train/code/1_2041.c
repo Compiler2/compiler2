@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fj(int n,int m)
 {
 	int i,j,k=0;

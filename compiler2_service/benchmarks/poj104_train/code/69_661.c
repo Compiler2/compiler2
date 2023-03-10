@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char as[201],bs[201];

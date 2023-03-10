@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,shuzhou[10001]={0},sz[50000],szz[50000],max=0,min=0;
 	scanf("%d",&n);

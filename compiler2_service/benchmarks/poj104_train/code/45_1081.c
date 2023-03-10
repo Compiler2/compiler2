@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zfc[51]={0},s[51]={0},word[51]={0},temp[51]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	struct patient{char id[10];int a;}patients[100];

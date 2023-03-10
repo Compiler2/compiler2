@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxL=300;
 
 long a,b;

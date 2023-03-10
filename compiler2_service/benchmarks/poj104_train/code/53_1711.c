@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n,a[305]={0},i=0,j,y[305]={0},k=0;

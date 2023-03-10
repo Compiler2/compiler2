@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k,want=-1;
 	char shu[81],m[20];

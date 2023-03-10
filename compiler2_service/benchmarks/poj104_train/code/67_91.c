@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,z[1000],y[1000],a,b;
 	float d,e[1000];

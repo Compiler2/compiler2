@@ -1,3 +1,5 @@
+#include <header.h>
+
 void output(int n,int m,int a[],int b[])
 {
   int i;

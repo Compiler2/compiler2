@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char a[50],char b[50])
 {
     int m,n,i=0,k=0;

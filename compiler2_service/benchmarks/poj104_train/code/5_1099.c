@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 double m,n=0;
 char a[500],b[500],*pa,*pb;

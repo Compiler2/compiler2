@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int saima(int n,int qiwang[1000],int tianji[1000]);

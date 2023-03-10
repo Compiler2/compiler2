@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n;
     int beg[100],end[100],ti[100]={0},t=0;

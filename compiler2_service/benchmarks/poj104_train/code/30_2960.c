@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int xiangguan(int n)
 {if(n%7==0)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,a1=0,a2=0,a3=0,a4=0,sum=0;
 double ax1=0,ax2=0,ax3=0,ax4=0;

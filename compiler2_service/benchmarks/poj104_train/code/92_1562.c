@@ -1,5 +1,7 @@
+#include <header.h>
 
-//?????10?2 3 4 5 6 7 8 9 10 11?1 2 3 4 5 6 7 8 9 11???? 
+
+
 
 
 main ()
@@ -37,7 +39,7 @@ main ()
           {
                 if (qw[btmqw]<tj[btmtj])
                 {
-//printf("%d %d win\n",btmqw,btmtj);
+
                    btmqw++;
                    btmtj++;
                    win++;
@@ -45,7 +47,7 @@ main ()
                 }
                 if (qw[btmqw]>tj[btmtj])
                 {
-//printf("%d %d lose\n",topqw,btmtj);
+
                    topqw--;
                    btmtj++;
                    lose++;
@@ -53,7 +55,7 @@ main ()
                 }
                 if (qw[topqw]<tj[toptj])
                 {
-//printf("%d %d win\n",topqw,toptj);
+
                    topqw--;
                    toptj--;
                    win++;
@@ -61,7 +63,7 @@ main ()
                 }
                 if (qw[topqw]>=tj[toptj])
                 {
-//printf("%d %d lose\n",topqw,btmtj);
+
                    if (qw[topqw]!=tj[btmtj]) lose++;
                    topqw--;
                    btmtj++;

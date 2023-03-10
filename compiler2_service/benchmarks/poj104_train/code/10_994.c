@@ -1,3 +1,5 @@
+#include <header.h>
+
 int*p;
 int n;
 int max(int t,int k)

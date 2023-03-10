@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n[6],f(int x),i,j,nf[6];
     for(i=0;i<6;i++){

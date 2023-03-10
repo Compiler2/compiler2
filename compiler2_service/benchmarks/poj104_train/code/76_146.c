@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int n,a[50000],b[50000],i,j,t1,t2,c,d,k;
  char e='x';

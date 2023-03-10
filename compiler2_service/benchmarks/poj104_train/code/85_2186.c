@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,m,result=0;
 char bsf[1000][21];

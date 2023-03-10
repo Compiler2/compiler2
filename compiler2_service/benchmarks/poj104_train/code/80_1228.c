@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -13,21 +15,21 @@ int main(int argc, char* argv[])
 	scanf("%d%d%d",&endYear,&endMonth,&endDay);
 
 	days=0;
-//????????
+
 	if(startYear==endYear){
-		//??
+		
 		if ((startYear%4==0&&startYear%100!=0)||(startYear%400==0)){
-			//????????
+			
 			if(startMonth==endMonth)
 				days=endDay-startDay;
-			//?????????
+			
 			else{
 				for(k=startMonth;k<endMonth;k++)
 					days+=month2[k];
 				days+=endDay-startDay;
 			}
 		}
-		//??
+		
 		else{
 			if(startMonth==endMonth)
 				days=endDay-startDay;
@@ -40,13 +42,13 @@ int main(int argc, char* argv[])
 		printf("%d",days);
 		return 0;
 	}
-//?????????
+
 	for(i=startYear; i<=endYear; i++){
 		if ((i%4==0&&i%100!=0)||(i%400==0))
 			flag=1;
 		else
 			flag=0;
-		//???
+		
 		if(i==startYear){
 			if(flag==1)
 				for(k=startMonth;k<=12;k++)
@@ -56,7 +58,7 @@ int main(int argc, char* argv[])
 					days+=month1[k];
 			days-=startDay;
 		}
-		//???
+		
 		else if(i==endYear){
 			if(flag==1)
 				for(k=1;k<endMonth;k++)
@@ -66,7 +68,7 @@ int main(int argc, char* argv[])
 					days+=month1[k];
 			days+=endDay;
 		}
-		//?????+365 ? +366
+		
 		else{
 			if(flag==1)
 				for(k=1;k<=12;k++)

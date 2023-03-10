@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int n,i,t=0,m=0,j;
   double gao[40],b[40],e,c[40];

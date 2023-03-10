@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
  int a[100001],n,i,k,x,j,h;
@@ -9,8 +11,8 @@ main()
  i=1;
   while(i<=x)
         {
-             //for(h=1;h<=n;h++)
-                // {
+             
+                
                  if(a[i]==k)
                       {
                             for(j=i;j<=(x-1);j++)
@@ -18,7 +20,7 @@ main()
                             x=x-1;
                             }
                  else i++;           
-                // }
+                
                 
              }
   printf("%d",a[1]);

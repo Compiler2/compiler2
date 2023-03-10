@@ -1,3 +1,5 @@
+#include <header.h>
+
 int calday(int year,int month,int day);
 int main()
 

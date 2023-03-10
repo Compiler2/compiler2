@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pd(int a[],int k)
 {
 int i,j;

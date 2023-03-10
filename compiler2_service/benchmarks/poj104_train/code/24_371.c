@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str2[1000]={0};
 void k(char str[])
 {char str1[100][20]={{0}};int i=0,j,k,l=0;

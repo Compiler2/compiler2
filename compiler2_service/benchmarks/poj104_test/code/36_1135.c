@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { char p1[500],p2[500];
   scanf("%s",p1);

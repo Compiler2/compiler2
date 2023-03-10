@@ -1,3 +1,5 @@
+#include <header.h>
+
  
 int main()
 {
@@ -21,7 +23,7 @@ int main()
   c=row-1;
   d=0;
  
-  while(a<c&&d<b)//????????\n
+  while(a<c&&d<b)
   {
     for(i=d; i<b; i++)
   printf("%d\n",sz[a][i]);

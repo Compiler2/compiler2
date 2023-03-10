@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char jj[1000][1001];
 	char hb[1000][1001];

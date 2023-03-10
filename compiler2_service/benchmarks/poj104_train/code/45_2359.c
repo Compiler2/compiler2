@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dingwei(char s[],char w[])
 {
 	int len,i,j;

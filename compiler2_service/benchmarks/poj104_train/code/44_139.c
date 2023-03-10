@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fanxu(int x)
 {
 	int sum=0,i,f[10],a=10,p,q;

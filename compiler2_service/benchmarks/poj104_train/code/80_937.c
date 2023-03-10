@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -31,14 +33,14 @@ int main()
   if(month1==1) 
   {
 	  sum1=day1;
-//	  printf("%d\n",sum1);
+
   }
   else
   {
     if(month1==2)
 	{
 		sum1=31+day1;
-//		printf("%d\n",sum1);
+
 	}
 	else
 	{
@@ -54,7 +56,7 @@ int main()
 		if(month1==10) sum1=31+28+31+30+31+30+31+31+30+day1;
 		if(month1==11) sum1=31+28+31+30+31+30+31+31+30+31+day1;
 		if(month1==12) sum1=31+28+31+30+31+30+31+31+30+31+30+day1;
-//		printf("%d\n",sum1);
+
 	  }
 
 	  if(R1==1)
@@ -69,7 +71,7 @@ int main()
 		if(month1==10) sum1=31+29+31+30+31+30+31+31+30+day1;
 		if(month1==11) sum1=31+29+31+30+31+30+31+31+30+31+day1;
 		if(month1==12) sum1=31+29+31+30+31+30+31+31+30+31+30+day1;
-//		printf("%d\n",sum1);
+
 	  }
 
 	}  
@@ -98,14 +100,14 @@ int main()
   if(month2==1) 
   {
 	  sum2=day2;
- //     printf("%d\n",sum2);
+ 
   }
   else
   {
     if(month2==2) 
 	{
 		sum2=31+day2;
-//		printf("%d\n",sum2);
+
 	}
 	else
 	{
@@ -121,7 +123,7 @@ int main()
 		if(month2==10) sum2=31+28+31+30+31+30+31+31+30+day2;
 		if(month2==11) sum2=31+28+31+30+31+30+31+31+30+31+day2;
 		if(month2==12) sum2=31+28+31+30+31+30+31+31+30+31+30+day2;
-  //  	printf("%d\n",sum2);
+  
 	  }
 
 	  if(R2==1)
@@ -136,7 +138,7 @@ int main()
 		if(month2==10) sum2=31+29+31+30+31+30+31+31+30+day2;
 		if(month2==11) sum2=31+29+31+30+31+30+31+31+30+31+day2;
 		if(month2==12) sum2=31+29+31+30+31+30+31+31+30+31+30+day2;
-//		printf("%d\n",sum2);
+
 	  }
 
 	}  
@@ -176,7 +178,7 @@ int main()
 		 if(j%4==0) sum3=sum3+366;
 		 else sum3=sum3+365;
 		}
-//	  printf("%d\n",sum3);
+
    }
 
    sum=q+sum3+sum2;

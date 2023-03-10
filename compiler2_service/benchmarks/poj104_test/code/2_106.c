@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char writer[1000][30];

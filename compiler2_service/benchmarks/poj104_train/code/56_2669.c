@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fun(int a)
 {static int b[5],i=0,c=0;
 int j,k;

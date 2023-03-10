@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int n , m ;
@@ -6,7 +8,7 @@ int main(){
 	s[2]=2;
 	for (int i=3 ; i<100 ; i++ ){
 		s[i]=s[i-1]+s[i-2];
-//		printf("%d %d\n",i , s[i]);
+
 	}
 	scanf("%d",&m);
 	while(m--){

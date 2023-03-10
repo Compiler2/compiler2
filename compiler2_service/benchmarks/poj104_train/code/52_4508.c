@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pai(int a[],int n,int k);
 int main()
 {
@@ -36,5 +38,5 @@ int pai(int a[],int n,int k)
 	{
 		a[i]=b[i];
 	}
-	//return a[n];
+	
 }

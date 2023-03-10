@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     void stand(int a[],int M,int N,int x);

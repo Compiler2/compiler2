@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char z[101],x[101];
@@ -42,11 +44,11 @@ int main()
 	else
 	{
 		c=a[0]*10+a[1];
-		//printf("%d",c);
+		
 		d=0;
         for(b=1;b<=len-1;b++)
 		{
-			//printf("%d",c/13);
+			
 			if(b==1)
 			{
             x[b-1]=c/13+48;

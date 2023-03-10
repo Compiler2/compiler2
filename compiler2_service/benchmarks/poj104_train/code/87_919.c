@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a, b, c, d, e, f;
 	for(int g=0; g<100; g++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 /*************************************************************************
 * Project: ???
 * Function:
@@ -18,7 +20,7 @@ int main(void)
     int result[301],i=1,j;
     scanf("%d",&result[0]);
     while(scanf(",%d",&result[i++])==1);
-    //for(j=0;j<i;j++)printf("[%d]",result[j]);
+    
     qsort(result,i,sizeof(result[0]),comp);
     if(find2nd(i-1,result)==-1)
     printf("No");
@@ -41,7 +43,7 @@ int find2nd(int num,int result[])
         else if((result[k]>second)&&(result[k]<max))
             second=result[k];
     }
-    //printf("second=%d,max=%d",second,max);
+    
     if(second==max)return -1;
     else return second;
 }

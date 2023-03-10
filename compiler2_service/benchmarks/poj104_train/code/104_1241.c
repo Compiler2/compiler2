@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int x,y,m;
 scanf("%d %d",&x,&y);
@@ -8,7 +10,7 @@ while(x>=1){
 		   printf("%d",y); return 0;
 	   }
 	   y=y/2;
-	   //printf("%d %d\n",x,y);
+	   
 	}
 	x=x/2;
 	y=m;

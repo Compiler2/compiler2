@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[11],substr[4],s[15];

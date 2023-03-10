@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int ex(int *x,int *y){
     int tmp=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int *p[400],m,n,a,i,j,k,l,sum,counter,b,matrix[100][100];

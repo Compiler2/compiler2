@@ -1,3 +1,5 @@
+#include <header.h>
+
 move (int a[],int n,int m)
 {
 	int *p,i,q = 0;

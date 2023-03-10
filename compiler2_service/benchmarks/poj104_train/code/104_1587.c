@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 int main()
 {
 	int a[11]={0};
 	int b[11]={0};
 	int c[11]={0};
-	int p=0,q=0,r=0;//??
+	int p=0,q=0,r=0;
 	int i,j;
 	int M,N;
 
@@ -40,9 +42,9 @@ int main()
 	}
 
 	printf("%d",c[0]);
-	//printf("%d",n);
-	//for(i=0;i<q;i++)
-	//	printf("%d ",b[i]);
+	
+	
+	
 
 
 	return 0;

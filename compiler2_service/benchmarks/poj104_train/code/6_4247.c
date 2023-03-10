@@ -1,15 +1,17 @@
+#include <header.h>
+
 int main()
 {
 	int k, i, j, l, m, n;
 	int	a[100][100]={0}, sum=0;
 		
-	scanf("%d",&k);  // k???
+	scanf("%d",&k);  
 	
 	for(i=0;i<k;i++){
-		scanf("%d%d", &m, &n);  //?????m???n
+		scanf("%d%d", &m, &n);  
 		for(j=0;j<m;j++)
 			for(l=0;l<n;l++)
-				scanf("%d", *(a+j)+l );  // ????
+				scanf("%d", *(a+j)+l );  
 		sum=0;
 		if(m!=1){
 			for(j=0; j<n; j++)

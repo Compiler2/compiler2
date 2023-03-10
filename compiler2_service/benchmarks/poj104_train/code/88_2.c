@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -12,7 +14,7 @@ int main()
 		if (*(p+i)>47&&*(p+i)<58)
 		{
 			*(q+j)=*(p+i)-48;
-		//	printf("%d\n",*(q+j));
+		
 		
 			j++;
 		}

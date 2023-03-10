@@ -1,9 +1,11 @@
+#include <header.h>
+
 main()
 {
 	int t,i,j,flag,len;
 	char a[100000];
 	scanf("%d\n",&t);
-	//getchar()();
+	
 	while(t--)
 	{
 		gets(a);

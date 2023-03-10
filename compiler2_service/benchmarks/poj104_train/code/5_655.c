@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int q,w,e=0,r=1,i;
 	double a,b;
@@ -7,8 +9,8 @@ int main(){
 	scanf("%s",B);
 	q=strlen(A);
 	w=strlen(B);
-//	printf("%d%d",q,w);
-//	puts(A);puts(B);
+
+
 	if(q!=w){
 		printf("error");
 		r=-1;
@@ -26,10 +28,10 @@ int main(){
 			}
 		}
 	}
-//	printf("%d",e);
+
 	if(r==1){
 		b=(e*1.0)/(q*1.0);
-//	printf("%lf",b);
+
 		if(b>a){
 			printf("yes");
 		}else{

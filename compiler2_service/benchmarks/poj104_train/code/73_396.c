@@ -1,3 +1,5 @@
+#include <header.h>
+
 /**
 * file homwork.cpp
 * author ??? 1100012722
@@ -8,7 +10,7 @@ int main()
 {
  int a[6][6];
  int i , j ;
- int k , m ;            //????????
+ int k , m ;            
  int flag;
  flag = 0;
  for( i = 1 ; i <= 5 ; i ++)

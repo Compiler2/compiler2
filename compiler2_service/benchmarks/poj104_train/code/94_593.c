@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int N,i,t,p,q,sz[500],js[500];

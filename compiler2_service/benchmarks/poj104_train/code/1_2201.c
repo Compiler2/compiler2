@@ -1,3 +1,5 @@
+#include <header.h>
+
 void find(int m,int j,int *p)
 {   
     for(;j<=m;j++)

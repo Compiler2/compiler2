@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int N,i,k;
         char lian[300],fanlian[300]={0};

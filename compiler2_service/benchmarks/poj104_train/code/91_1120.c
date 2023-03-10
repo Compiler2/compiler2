@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sz[101]={0},*p,*p1,f[101]={0},*pf;

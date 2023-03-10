@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int p[1001][1001];
 

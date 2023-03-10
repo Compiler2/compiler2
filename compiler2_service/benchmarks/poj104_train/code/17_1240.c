@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[101];
 int c[101];
 void match(int i,int len){int k = i + 1;

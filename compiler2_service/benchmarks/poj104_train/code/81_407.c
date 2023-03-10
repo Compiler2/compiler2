@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mn(int n,int m)
 {
 	if(n>=0&&n<=4&&m>=0&&m<=4)

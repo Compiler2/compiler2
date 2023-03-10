@@ -1,3 +1,5 @@
+#include <header.h>
+
 int F_num[10000]; 
 int main()
 {

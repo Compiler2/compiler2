@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,b[255],k=0;

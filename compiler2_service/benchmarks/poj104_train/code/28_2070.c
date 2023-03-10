@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[1001],c[1001];
     gets(s);

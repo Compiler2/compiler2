@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char fang[101][101];

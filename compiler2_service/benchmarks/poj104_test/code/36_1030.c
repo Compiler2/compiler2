@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char letter1[100],letter2[100],*le1,*le2;

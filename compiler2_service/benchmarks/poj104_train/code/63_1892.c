@@ -1,3 +1,5 @@
+#include <header.h>
+
  
 int main() {
     int x1,y1,x2,y2;
@@ -39,14 +41,14 @@ int main() {
         }
     }
      
-    for(i=0;i<x1;++i) {//??c
+    for(i=0;i<x1;++i) {
         for(j=0;j<y2-1;++j) {
             printf("%d ", c[i][j]);    
         }
         printf("%d\n",c[i][j]);
     }
      
-    //????
+    
     for(i=0;i<x1;++i) {
         free(a[i]);
         free(c[i]);

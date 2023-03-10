@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int len,n,w,i,wordnum=0,charnum=0;

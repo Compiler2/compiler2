@@ -1,3 +1,5 @@
+#include <header.h>
+
 char f(int a[5])
 {
   int i,j;char c='t';

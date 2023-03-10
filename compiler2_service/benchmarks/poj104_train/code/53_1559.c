@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,o,p,q,B[300],C[10],A[300],k;
@@ -11,7 +13,7 @@ int main()
 
 		}
      if(k!=0) B[i]=A[i]; 
-	 else B[i]='\0';  //once repeated,rid it
+	 else B[i]='\0';  
     }
     for(q=0,p=0;p<n;p++){
     	if(B[p]!='\0') {C[q]=B[p];q++;}

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int year,month,day,xingqi,k,a,b,c;
 	scanf("%d%d%d",&year,&month,&day);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sx(int b[],int n);
 void nx(int a[],int b[],int n);
 int main(){

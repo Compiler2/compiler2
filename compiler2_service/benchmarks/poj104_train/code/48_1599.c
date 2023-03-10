@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num[9][9],im[9][9];
 main()
 {

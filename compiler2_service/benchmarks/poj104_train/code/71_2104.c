@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,year[200],mon1[200],mon2[200];

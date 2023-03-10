@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int sz[][5],int m,int n);
 int main()
 {

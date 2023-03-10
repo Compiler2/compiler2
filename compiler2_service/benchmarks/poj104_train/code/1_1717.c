@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int k){
    if(n<k)return 0;
    int i,s=1;

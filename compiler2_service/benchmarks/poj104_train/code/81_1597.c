@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5][5],i,j,n1,m1,t;
 int ch(int n,int m)
 {

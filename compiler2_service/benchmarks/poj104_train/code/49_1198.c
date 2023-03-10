@@ -1,3 +1,5 @@
+#include <header.h>
+
 int min(int x,int y);
 int main()
 {
@@ -6,7 +8,7 @@ int d[501][501]={0},e[501]={0};
 gets(s);
 int l,i,j,t;
 l=strlen(s);
-for (i=1;i<(l-1);i=i+1) //????
+for (i=1;i<(l-1);i=i+1) 
 {
 for (j=1;j<=min(i,l-i-1);j=j+1)
 {
@@ -19,7 +21,7 @@ else
 break;
 }
 }
-for (i=0;i<(l-1);i=i+1) //???????????
+for (i=0;i<(l-1);i=i+1) 
 {
 for (j=0;j<=min(i,l-i-1);j=j+1)
 {

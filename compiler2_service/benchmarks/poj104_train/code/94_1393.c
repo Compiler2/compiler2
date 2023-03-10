@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bubble_sort(int a[],int n){
  int i,k,t;
  for(k=n-1;k>0;k--){

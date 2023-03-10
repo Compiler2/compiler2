@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,g,s,b,q,w,judge=0,j,count,temp;

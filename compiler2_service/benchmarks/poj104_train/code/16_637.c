@@ -1,5 +1,7 @@
+#include <header.h>
+
 int main()
-//
+
 {int n,a,b,c,d;
 scanf("%d",&n);
 if((n>=0)&&(n<=9)) printf("%d",n);
@@ -13,11 +15,11 @@ if((n>=0)&&(n<=9)) printf("%d",n);
 	c=(n-a-10*b)/100;
 	printf("%d%d%d",a,b,c);}
     else if((n>=1000)&&(n<=9999))
-   {a=n%10;                    //??n????
-    b=((n-a)/10)%10;           //??n????
-	c=((n-a-10*b)/100)%10;     //??n????
-	d=(n-a-10*b-100*c)/1000;   //??n????
-	printf("%d%d%d%d",a,b,c,d);}//?n????
+   {a=n%10;                    
+    b=((n-a)/10)%10;           
+	c=((n-a-10*b)/100)%10;     
+	d=(n-a-10*b-100*c)/1000;   
+	printf("%d%d%d%d",a,b,c,d);}
 else printf("00001");
 return 0;
 }

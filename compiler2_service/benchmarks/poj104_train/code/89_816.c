@@ -1,10 +1,12 @@
+#include <header.h>
+
 main()
 {
       int i,j,k,n,m=0,l=0,p=0,q=0;
       int a[100000][2];
       scanf("%d",&n);
       scanf("%d %d",&a[0][0],&a[0][1]);
-      while (a[m][0]>0||a[m][1]>0)                    //??m? 
+      while (a[m][0]>0||a[m][1]>0)                    
       {
             scanf("%d %d",&a[m+1][0],&a[m+1][1]);
             m++;
@@ -12,7 +14,7 @@ main()
       for (i=0;i<n;i++)
       {
           l=0; 
-          for (j=0;j<m;j++)                           //??????i 
+          for (j=0;j<m;j++)                           
           {
               if (a[j][1]==i)
               l++;
@@ -20,7 +22,7 @@ main()
           if (l==n-1)
           {
                      p=0;
-                     for (j=0;j<m;j++)               //i?????? 
+                     for (j=0;j<m;j++)               
                      {
                          if (a[j][0]==i)
                          p++;

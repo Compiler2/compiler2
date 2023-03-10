@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int f(int a[100][100],int n)
 {

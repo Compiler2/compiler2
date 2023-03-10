@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[101],b[101];
@@ -9,7 +11,7 @@ void main()
 		scanf("%s%s",a,b);
 		l1=strlen(a);
 		l2=strlen(b);
-		//printf("%d,%d\n",l1,l2);
+		
 		for(i=0;i<l1;i++)
 		c[i]=a[l1-i-1]-'0';
 		for(i=0;i<l2;i++)

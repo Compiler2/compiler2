@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n;
@@ -12,16 +14,16 @@ int main()
 		word1[i]=m/2;
 		i+=1;
 		m=m/2;
-		//printf(" %d %d ",word1[i],m);
+		
 	}
-	//printf("%d",m);
+	
 	log1=i-1;
 	while(n!=1)
 	{
 		word2[j]=n/2;
 		j+=1;
 		n=n/2;
-		//printf(" %d  %d ",word2[i],n);
+		
 	}
 	log2=j-1;
 	int word;
@@ -32,9 +34,9 @@ int main()
 		{
 			if(word1[i]==word2[j])
 			{
-				//printf("\n");
+				
 				printf("%d",word1[i]);
-				//printf("\n");
+				
 				word++;
 				break;
 			}

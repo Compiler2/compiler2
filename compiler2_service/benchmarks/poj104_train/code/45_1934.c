@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char word_z[50],word_bz[50];

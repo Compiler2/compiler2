@@ -1,3 +1,5 @@
+#include <header.h>
+
 void count()
 {
 	int k,m1=0,m2=0,s=0,t=0,i=0;

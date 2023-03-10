@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int max=0,min=100,i,j,m,n,word=0;

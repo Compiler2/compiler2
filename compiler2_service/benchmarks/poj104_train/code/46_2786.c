@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {int i,j,k,m,n,p,q,s;
  scanf("%d %d",&m,&n);
@@ -16,9 +18,9 @@ main()
  for(i=0;i<=(m+1);i++)
   shu[i][0].p=0; 
 
- // for(i=0;i<(m+2);i++)
-  //{for(j=0;j<(n+2);j++)
-  //printf("%d\n",shu[i][j].p);}
+ 
+  
+  
  for(i=1,j=1,s=1;;)
  {
  for(;;)

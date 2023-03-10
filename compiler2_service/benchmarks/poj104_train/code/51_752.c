@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,len,stre[1000],y,max=1;
@@ -9,7 +11,7 @@ main()
         for (int j=0;j<n;j++)
             str[i][j]=stra[i+j];
     }
-    //?????~
+    
     memset(stre, 0, sizeof(stre));
     for (int i=0;i<len-n;i++)
         for (int j=i;j<=len-n;j++)

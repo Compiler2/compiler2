@@ -1,3 +1,5 @@
+#include <header.h>
+
 int seven(int x){
 	if(x%7==0){
 		return 1;		

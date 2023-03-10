@@ -1,3 +1,5 @@
+#include <header.h>
+
 void ch(char a[1000])
 {
       int i;

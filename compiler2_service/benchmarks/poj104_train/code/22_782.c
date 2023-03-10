@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     unsigned a[1000];

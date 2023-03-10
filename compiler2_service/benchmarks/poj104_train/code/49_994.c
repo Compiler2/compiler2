@@ -1,3 +1,5 @@
+#include <header.h>
+
 char *reverse(char *pt);
 int main()
 {

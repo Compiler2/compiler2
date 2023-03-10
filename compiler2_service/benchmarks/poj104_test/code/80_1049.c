@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(int n)
 {
 	if(n%4==0&&n%100!=0)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,sz[100],len,tag=0;
     char zfc[301];

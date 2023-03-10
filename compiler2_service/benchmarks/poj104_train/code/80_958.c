@@ -1,3 +1,5 @@
+#include <header.h>
+
 long int Jisuan(int year,int month,int day)
 {
 	long int Calnumber;

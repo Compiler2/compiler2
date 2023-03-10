@@ -1,3 +1,5 @@
+#include <header.h>
+
 char name[200][21];
 int qmg[200];
 int cg[200];
@@ -22,7 +24,7 @@ int main(){
 		gb[i]=x4;
 		xb[i]=x5;
 		lw[i]=x6;
-	    //puts(str2);
+	    
 	}
 
 	for(i=0;i<n;i++){
@@ -51,7 +53,7 @@ int main(){
 	}
 	
 	printf("%d",whole);
-	//printf("%d %d %d %d" ,schsum[0],schsum[1],schsum[2],schsum[3]);
+	
 	return 0;
 }
 

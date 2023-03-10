@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct student
 	{
@@ -15,9 +17,9 @@ int main()
 	int i,j,numberofstudent=0;
 	struct student stu[505];
 	for(i=0;i<505;i++)
-	{//read
+	{
 		for(j=0;j<30;j++)
-		{//number
+		{
 			scanf("%c",&stu[i].number[j]);
 			if(stu[i].number[j]==' '||stu[i].number[j]=='d')
 			{
@@ -27,7 +29,7 @@ int main()
 			{
 				lengthofnumber[i]+=1;
 			}
-		}//number
+		}
 		if(stu[i].number[2]=='d')
 		{
 			break;
@@ -37,7 +39,7 @@ int main()
 			numberofstudent+=1;
 		}
 		for(j=0;j<30;j++)
-		{//name
+		{
 			scanf("%c",&stu[i].name[j]);
 			if(stu[i].name[j]==' ')
 			{
@@ -47,13 +49,13 @@ int main()
 			{
 				lengthofname[i]+=1;
 			}
-		}//name
+		}
 		scanf("%c",&stu[i].gender);
 		getchar();
 		scanf("%d",&stu[i].age);
 		getchar();
 		for(j=0;j<30;j++)
-		{//score
+		{
 			scanf("%c",&stu[i].score[j]);
 			if(stu[i].score[j]!=' ')
 			{
@@ -63,9 +65,9 @@ int main()
 			{
 				break;
 			}
-		}//score
+		}
 		for(j=0;j<30;j++)
-		{//add
+		{
 			scanf("%c",&stu[i].add[j]);
 			if(stu[i].add[j]!='\n')
 			{
@@ -75,11 +77,11 @@ int main()
 			{
 				break;
 			}
-		}//add
+		}
 		
-	}//read
+	}
 			i=numberofstudent-1;
-			while(i!=0)//for(i=numberofstudent-1;i==0;i--)
+			while(i!=0)
 			{
 				
 				for(j=0;j<lengthofnumber[i];j++)

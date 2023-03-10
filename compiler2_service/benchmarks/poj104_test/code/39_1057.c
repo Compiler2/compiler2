@@ -1,14 +1,16 @@
+#include <header.h>
+
 int main()
 {
   int n,e,f,h,j,k,max=0,l=0,s=0,i;
   scanf("%d",&n);
   struct xinxi{
       char name[50];
-      int qc;// ???? //
-      int bc;//  ???? //
-      char g;//  ??????  //
-      char w;//   ???????  //
-      int ls;//????//
+      int qc;
+      int bc;
+      char g;
+      char w;
+      int ls;
   }a[100];
   int score[100]={0};
   for(i=0;i<n;i++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zf1[110],zfa[110],zfb[110];

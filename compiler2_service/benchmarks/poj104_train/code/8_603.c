@@ -1,3 +1,5 @@
+#include <header.h>
+
 int array_a[100],array_b[100],n_a,n_b;
 void input()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void in(int a[],int n)
 {
     int i;

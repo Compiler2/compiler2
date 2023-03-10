@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhuan(int a,char n[])
 {
     long int d=0;

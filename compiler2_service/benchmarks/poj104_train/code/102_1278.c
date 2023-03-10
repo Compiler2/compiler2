@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {     char s[100];
       double m[40];

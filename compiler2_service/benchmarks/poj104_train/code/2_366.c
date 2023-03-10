@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int amount_temp=0,amount_most=0;

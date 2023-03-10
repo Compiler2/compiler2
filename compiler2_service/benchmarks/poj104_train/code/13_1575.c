@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int all,name[20000],input[20000],i,p,count,judge;
 	scanf("%d",&all);

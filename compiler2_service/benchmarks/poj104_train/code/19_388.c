@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char words[20][100],sub[100],subed[100];
  char string[500];

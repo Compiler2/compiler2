@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char sex[10];
@@ -17,7 +19,7 @@ int main()
             girl_num++;
         }
     }
-    //????  ?? 
+    
     for(count1=0;count1<boy_num;++count1)
     {
         for(count2=0;count2<boy_num-count1-1;++count2)  
@@ -30,7 +32,7 @@ int main()
             }    
         }  
     }
-     //????  ??  
+     
     for(count1=0;count1<girl_num;++count1)
     {
         for(count2=0;count2<girl_num-count1-1;++count2)  

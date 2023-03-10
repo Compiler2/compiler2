@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[21];
 void cal()

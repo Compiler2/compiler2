@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sum[99999];
 int m[99999];
 int main(int argc, char* argv[])

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,len[9999],j,total=0,k=0;

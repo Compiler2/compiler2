@@ -1,3 +1,5 @@
+#include <header.h>
+
 double cao(int n)
 {
 int i;

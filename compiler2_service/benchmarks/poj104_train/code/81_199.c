@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,j,p,m,n;
 int han(int m,int n,int sz[5][5]);
 int han(int m,int n,int sz[5][5]){

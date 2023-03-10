@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ls1,ls2,ls3,i,j=0,m,lans=0,z=0;

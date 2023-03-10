@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
     int p=0,j,n,count[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
     char i;
     char a[301];
     scanf("%s",a);
-    //printf("%s",a);
+    
     n=strlen(a);
     for(j=0;j<n;j++)
     {

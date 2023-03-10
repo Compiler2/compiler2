@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(int n,int m,int a[100])
 {
 	int b[100],i;

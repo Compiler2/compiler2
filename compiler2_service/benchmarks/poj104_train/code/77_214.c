@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
  int l,i,j,k,p;
  char s[10000];
  int a[10000];
  char c,d;
- //int q[10000];
+ 
  gets(s);
  l=strlen(s);
  p=l;

@@ -1,5 +1,7 @@
-//#include<stdlib.h>
-//#include<math.h>
+#include <header.h>
+
+
+
 int main()
 {
 	int n,m;

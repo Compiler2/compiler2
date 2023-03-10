@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,i,a,t,d[26]={0},f=0,c,h,e=0;

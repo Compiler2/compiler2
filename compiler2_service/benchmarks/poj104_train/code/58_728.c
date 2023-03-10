@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,m,k;
@@ -5,7 +7,7 @@ int main()
 	scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
-		gets(q);                                 //??????????????????
+		gets(q);                                 
 	    m=strlen(q);
 		if((q[0]<'A' || (q[0]>'Z'&& q[0]<'a')|| q[0]>'z')&&q[0]!=95) printf("0\n");
 		else if(m==1) printf("1\n");

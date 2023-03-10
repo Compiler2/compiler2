@@ -1,3 +1,5 @@
+#include <header.h>
+
 void duqu(int a[],int b[],int M,int N)
 {
 	int i;

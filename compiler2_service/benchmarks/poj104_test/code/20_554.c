@@ -1,3 +1,5 @@
+#include <header.h>
+
 int MaxIndex(char * str)
 {
 	char maxChar = 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {char zi[105],shuzu[105];
 int i,j;

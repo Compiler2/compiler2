@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -18,12 +20,12 @@ int main()
 		while((SourceStr[index] != ' ') && (SourceStr[index] != '\0'))
 		{
 			Str[WordIndex][LetterIndex] = SourceStr[index];
-			//printf("%c",SourseStr[index]);
-			//printf("\tWordIndex = %d\tIndex = %d\n", WordIndex, index);
+			
+			
 			LetterIndex++;
 			index++;
 		}
-		//printf("Word %d is %s\n", WordIndex, Str[WordIndex]);
+		
 		LetterIndex = 0;
 		WordIndex++;
 		index++;

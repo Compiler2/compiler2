@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     const int MAXN = 300;

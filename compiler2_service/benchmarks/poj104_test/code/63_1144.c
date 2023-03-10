@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[105][105],b[105][105],c[105][105],x1,y1,x2,y2,i,j,k,sum=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,timer,k,k0;
 	timer=0;
@@ -20,10 +22,10 @@ int main(){
 			timer++;
 		}
 	}
-//	printf("n-t=%d",n-timer);
+
 	for(i=0;i<n;i++){
 		if(l[i]!=10000){
-//			printf("%d\n",l[i]);
+
 			k0++;
 			k++;
 			r[k]=l[i];

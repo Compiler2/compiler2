@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
     int n,i,num[100],max=0,max2=0,e;

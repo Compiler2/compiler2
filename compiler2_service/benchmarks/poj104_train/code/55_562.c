@@ -1,3 +1,5 @@
+#include <header.h>
+
 long fun(int a,int n)
 {
 	long z;

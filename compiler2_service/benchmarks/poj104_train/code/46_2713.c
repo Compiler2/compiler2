@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mat[102][102];
 int unvis[102][102];
 

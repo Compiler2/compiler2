@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ts,rnd,frnd,year,qt,month,day;

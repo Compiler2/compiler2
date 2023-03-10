@@ -1,3 +1,5 @@
+#include <header.h>
+
 int strchange(char s[],int n[])
 {
       int i;

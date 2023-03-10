@@ -1,3 +1,5 @@
+#include <header.h>
+
  struct author
  { int num;
    char name[26];

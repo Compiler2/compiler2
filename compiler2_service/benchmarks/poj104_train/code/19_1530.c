@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxw=100;
 const long maxL=100;
 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct patient
 {
 	char num[11];

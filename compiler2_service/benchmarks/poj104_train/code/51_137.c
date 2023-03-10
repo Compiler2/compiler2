@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int n,len;
@@ -16,7 +18,7 @@ void main()
 		
 		}
 		b[k][j-i]='\0';
-		//puts(b[k]);
+		
 		k++;
 	}
 	for(i=0;i<k;i++)

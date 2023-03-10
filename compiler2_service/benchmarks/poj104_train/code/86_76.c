@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	int n,i,m,a[60],count=0;

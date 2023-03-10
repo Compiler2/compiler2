@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,len1,len2;
 	char ds1[260],ds2[260];

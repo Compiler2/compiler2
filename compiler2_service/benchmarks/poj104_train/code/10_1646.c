@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxn=25;
 
 long n;
@@ -23,6 +25,6 @@ main(){
     }
     dfs(1,1<<30,0);
     printf("%ld\n",ans);
-    //getchar();getchar();
+    
     return 0;
 }

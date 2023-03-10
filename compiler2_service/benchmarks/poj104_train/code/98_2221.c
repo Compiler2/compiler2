@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n, l=0, L=0;
@@ -11,7 +13,7 @@ main()
 	}
 	for(i=0; i<n; i++)
 	{
-		l=strlen(w[i])+1;//???????????
+		l=strlen(w[i])+1;
 		L=L+l;
 		if(L<=81)
 		{

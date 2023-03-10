@@ -12,7 +12,6 @@ import compiler2_service.paths
 # from compiler_gym.envs.llvm.llvm_benchmark import get_system_library_flags
 from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
-from compiler_gym.util.decorators import memoized_property
 
 
 BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_small/code"
@@ -37,7 +36,7 @@ class Dataset(Dataset):
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(
-                        argument=["./a.out", "<", str(INPUT_PATH / "in.txt")],
+                        argument=["./a.out"], #, "<", str(INPUT_PATH / "in.txt")],
                         timeout_seconds=300,
                         infile=["a.out"],
                     )

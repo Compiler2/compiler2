@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,k,t,p,m,q,a;
     a=0;
@@ -40,7 +42,7 @@ int main(){
     else{
         printf("no");
     }
-    //lp:printf("e%d %d",q,p);
+    
     return 0;
 }
 

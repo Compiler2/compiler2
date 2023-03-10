@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char mc[1000],zc[1000],huan[1000];
     int len1,len2,len3,i,j=0;

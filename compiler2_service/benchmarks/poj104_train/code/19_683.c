@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[101],nstr[101][101],n[101]={'\0'},k[3]={' ','\0'},s[3]={'\0'};

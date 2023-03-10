@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,l,m,d=0,b=1;
 	char zf[501]={0},zc[501]={0};

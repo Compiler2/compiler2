@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	int n;
-	char a;//[300];
+	char a;
 	scanf("%d",&n);
 	scanf("%c", &a);
 	while (n--)
@@ -22,7 +24,7 @@ int main()
 				break;
 			}
 		}
-		//memset(a, 0, sizeof(a)); 
+		
 	}
 	return 0;
 }

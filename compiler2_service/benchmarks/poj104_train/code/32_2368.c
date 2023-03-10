@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[100],b[100];
@@ -6,8 +8,8 @@ int main()
     while (k<=n)
     {
         scanf("%s%s",&a,&b);
-        p=strlen(a);//??????
-        q=strlen(b);//??????
+        p=strlen(a);
+        q=strlen(b);
         i=p;
         for(;p>=0;p--,q--)
         {

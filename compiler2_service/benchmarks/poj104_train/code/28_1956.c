@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[1000],b[100],mid;
 	int i,num[1000]={0},j,l1,l2,judge,count;

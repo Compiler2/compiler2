@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(char x,char y);
 int main(){
 	double n;

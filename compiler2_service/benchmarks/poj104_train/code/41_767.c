@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(void)
 {
@@ -19,13 +21,13 @@ int main(void)
                                 if(a[i]==1&&a[j]==2&&ag[i]==1&&ag[j]==1)
                                 {
                                     c=0;
-                                    //printf("%d %d\n",a[i],a[j]);
+                                    
                                     for(k=0;k<5;k++)
                                     {
                                         if(k!=i&&k!=j)
                                             if(ag[k]==0)
                                                 c++;
-                                        //printf("%d\n",c);
+                                        
                                     }
                                     if(c==3)
                                     {
@@ -36,7 +38,7 @@ int main(void)
                                                 if(a[s]!=a[t])
                                                     c1++;
                                         }
-                                        //printf("%d\n",c1);
+                                        
                                         if(c1==10)
                                             if(a[4]!=2&&a[4]!=3)
                                         {
@@ -47,7 +49,7 @@ int main(void)
                                                     printf(" ");
                                             }
                                         }
-                                        //printf("\n");
+                                        
                                     }
                                         
                                 }

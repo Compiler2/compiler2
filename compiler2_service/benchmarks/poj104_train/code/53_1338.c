@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int a[300],b[300],n,i,j,k=1 ,x;
@@ -14,7 +16,7 @@ int main(){
 		{
 			if (a[i]==b[j])
 			{
-//				printf("%d %d\n",i,j);
+
 				x=1;
 			    break;
 			}
@@ -24,7 +26,7 @@ int main(){
 			b[k]=a[i];
 			k++;
 		}
-//		printf("%d\n",k);
+
 	}
 	for(i=0;i<k-1;i++)
 	{

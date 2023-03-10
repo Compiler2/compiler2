@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct author {
 	char id;
@@ -13,7 +15,7 @@ int cmp(const void *a, const void *b) {
 
 int main() {
 	int i, j, num, id, len, idx;
-	struct author authors[26]; // 'A' -- 'Z'
+	struct author authors[26]; 
 	char c;
 	char buffer[26];
 

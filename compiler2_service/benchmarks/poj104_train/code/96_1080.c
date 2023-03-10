@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char str[101];
@@ -14,7 +16,7 @@ int main()
   sh[i2]=(a[i2]+yu*10)/13;
   yu=(a[i2]+yu*10)%13;
  }
-// printf("%d",yu);
+
  if(len==1)
  printf("%d\n%d\n",0,a[0]);
  else if((len==2)&&(a[0]==1)&&(a[1]<=2))

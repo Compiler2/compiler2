@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,amin,bmax,t=0;
 	int zqj[1000][1000]={0};

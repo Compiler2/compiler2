@@ -1,3 +1,5 @@
+#include <header.h>
+
 double qh(int n);
 int main(){
 	int m,k;

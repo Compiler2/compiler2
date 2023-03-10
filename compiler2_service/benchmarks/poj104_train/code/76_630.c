@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,e,m,j,k,b,c;
     struct a{

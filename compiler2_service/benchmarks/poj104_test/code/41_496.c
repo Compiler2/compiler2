@@ -1,3 +1,5 @@
+#include <header.h>
+
 int guess[5],used[5],place[5];
 void find(int lev){
     int i;
@@ -59,6 +61,6 @@ if (i)putchar(' ');
 int main()
 {
     find(0);
-    //while (2);
+    
     return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[100],b[100],mid;
 	int i,j,l1,l2,judge;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int h, l;
     scanf("%d %d",&h, &l);
@@ -23,27 +25,27 @@ int main(){
             for(int i=zz_h-1;i>=qs_h+1;i--){
                 printf("%d\n",sz[i][qs_l]);
             }
-        }//???????
+        }
         if(qs_h==zz_h&&qs_l!=zz_l){
             if(h%2==1){
                 for(int i=qs_l;i<=zz_l;i++){
                     printf("%d\n",sz[qs_h][i]);
                 }
-            }//???
+            }
             if(h%2==0){
                 for(int i=zz_l;i>=qs_l;i--){
                     printf("%d\n",sz[qs_h][i]);
                 }
-            }//???
-        }//????
+            }
+        }
         if(qs_h!=zz_h&&qs_l==zz_l){
             for(int i=qs_h;i<=zz_h;i++){
                 printf("%d\n",sz[i][qs_l]);
             }
-        }//????
+        }
         if(qs_h==zz_h&&qs_l==zz_l){
             printf("%d\n",sz[qs_h][zz_h]);
-        }//????
+        }
         qs_h++;
         qs_l++;
         zz_l--;

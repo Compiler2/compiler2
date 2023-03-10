@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int a[5][5],int n,int m);
 
 int check(int a[5][5],int n,int m){

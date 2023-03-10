@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -25,7 +27,7 @@ int main()
     }
     }
 	k=0;
-    //for(k=0;a[k][0]!=0;k++)
+    
 	if(a[k][0]==0) printf("not found");
 	else
     printf("%d %d %d",a[k][0],a[k][1],a[k][2]);

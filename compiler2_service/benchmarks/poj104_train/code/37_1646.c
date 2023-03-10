@@ -1,3 +1,5 @@
+#include <header.h>
+
 char x[100000],y[100000],range[100000],flag[100000];
 int time[100000];
 int main()

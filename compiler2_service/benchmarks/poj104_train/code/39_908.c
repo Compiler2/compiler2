@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct s
 {
 	char name[20],ganbu,xibu;

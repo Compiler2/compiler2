@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yuanshi(int a,int b)
 {
 	if(a>80&&b>=1)

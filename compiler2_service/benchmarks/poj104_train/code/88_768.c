@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {char c[31],*p;
 int i,j,k;

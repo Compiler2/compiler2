@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ( )
 {
 	unsigned long nian,yue,ri,run,tian,xq;

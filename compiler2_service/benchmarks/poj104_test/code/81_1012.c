@@ -1,5 +1,7 @@
+#include <header.h>
+
 int exchange(int (*)[5],int,int);
-//---------------------------------------------------------------------
+
 int main()
 {
 	int matrix[5][5];
@@ -15,7 +17,7 @@ int main()
 		printf("error");
 	return 0;
 }
-//---------------------------------------------------------------------
+
 int exchange(int (*matrix)[5],int m,int n)
 {
 	if(m>=0&&m<5&&n>=0&&n<5)
@@ -32,5 +34,5 @@ int exchange(int (*matrix)[5],int m,int n)
 	else
 		return 0;
 }
-//=====================================================================
+
 

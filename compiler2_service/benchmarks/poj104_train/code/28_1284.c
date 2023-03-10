@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char string[6000];

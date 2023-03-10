@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int n)
 {
 	int back=0,flag=0;

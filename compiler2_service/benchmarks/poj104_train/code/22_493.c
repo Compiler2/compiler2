@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
 	int a[1000],i,t,num,j,k;
 	int max(int a,int b);
     int min(int a,int b);
 	char c;
-//input the sequence
+
 	for(i=1;;i++)                  
 	{                               
 		scanf("%d",&a[i-1]);       
@@ -13,7 +15,7 @@ int main()
 	}
 
 	num=i;
-//???
+
 	for(j=1;j<=num-1;j++)
 	{
 		for(k=num;k>=j+1;k--)
@@ -23,7 +25,7 @@ int main()
 			a[k-2]=t;
 		}
 	}
-//find the sec_max
+
 	for(i=1;i<=num-1;i++)
 	{
 		if(a[i-1]!=a[i])
@@ -39,7 +41,7 @@ int main()
 }
 
 
-//the function to find the larger and the smaller
+
 
 int max(int a,int b)
 {

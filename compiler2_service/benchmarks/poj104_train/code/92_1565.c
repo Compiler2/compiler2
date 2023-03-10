@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(const void * elem1,const void * elem2)
 {
     int *p1,*p2;

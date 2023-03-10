@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[100][100]={0},a[100],(*p)[100]=c;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void gbc(int n);
 int ispn(int p);
 int main()

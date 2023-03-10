@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,n,t;
 char a[1000][260],b[1000][260];

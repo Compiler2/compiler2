@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    int w,d[13],r=0,i;
    scanf("%d",&w);

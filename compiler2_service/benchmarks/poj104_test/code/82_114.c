@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,a=0;
 	int ew[100][2];
@@ -16,9 +18,9 @@ int main(){
 
 
 	}
-//	for(i=0;i<=n-1;i++){
-//		printf("%d",z[i]);
-//	}
+
+
+
 	s[0]=0;
 	for(i=0;i<=n-1;i++)
 	{
@@ -32,7 +34,7 @@ int main(){
 		}
 	
 	}
-//	printf("%d",s[1]);
+
 	for(i=0;i<=k;i++){
 		if(s[i]>=max){
 			max=s[i];

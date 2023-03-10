@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void order(int p,int q,int r[]);

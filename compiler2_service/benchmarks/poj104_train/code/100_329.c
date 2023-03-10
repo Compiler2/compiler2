@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() 
 { char str[300],word[300],p;
   int i,k=0,len,num[300]={0},j,t,check=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int y,m,d,d1=0,d2,i;
 	int md[11]={31,28,31,30,31,30,31,31,30,31,30};

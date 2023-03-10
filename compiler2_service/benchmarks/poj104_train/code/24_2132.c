@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char words[2000];
@@ -9,9 +11,9 @@ int main()
     min = 5000;
     
     for (i=0; i<len; i++) {
-        while (words[i] == ' ') i++; // ???????????
-        temp = i;                    // ????????
-        while (words[i] != '\0' && words[i] != ' ') i++; // ??????
+        while (words[i] == ' ') i++; 
+        temp = i;                    
+        while (words[i] != '\0' && words[i] != ' ') i++; 
         dis = i - temp;
         if (dis > max) {
             max = dis;
@@ -23,7 +25,7 @@ int main()
         }
     }
     
-    // ???????for??????
+    
     while (words[indexmax] != '\0' && words[indexmax] != ' ') 
         printf("%c", words[indexmax++]);
     printf("\n");

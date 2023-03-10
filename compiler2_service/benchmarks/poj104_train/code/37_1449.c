@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,j,len,n;
 char s[1000];
 int cnt[1000];

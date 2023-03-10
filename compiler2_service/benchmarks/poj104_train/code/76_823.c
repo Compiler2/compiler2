@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,start[50000],end[50000],st=10000,e=0,i,point=0;
 	double j;

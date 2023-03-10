@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct word
 {
 	char a;

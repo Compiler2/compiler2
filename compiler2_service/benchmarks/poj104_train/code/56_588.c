@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
     int shu,a,b,c,d,e,f,g,h,i,j,k,l,m,n;

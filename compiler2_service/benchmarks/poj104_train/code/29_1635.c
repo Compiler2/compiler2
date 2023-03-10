@@ -1,3 +1,5 @@
+#include <header.h>
+
 double FindFBN( int nplus2,  int* FBNplus2)
 {
 	int i=0;

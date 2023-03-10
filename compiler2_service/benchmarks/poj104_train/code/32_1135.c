@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[105],b[105],c[105];
 void minus(int l1,int l2)
 {    

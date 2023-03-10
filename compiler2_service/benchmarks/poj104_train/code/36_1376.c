@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char c[1000],int i)
 {
 	int j,k;

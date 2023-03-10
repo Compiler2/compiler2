@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char z[257];
 	char y[257];
@@ -28,13 +30,13 @@ int main(){
 			result=0;
 			}
 		}
-		//		if(y[i]!=z[0]\\(y[i+v-1]!=z[v-1])){
-		//			sum++;
-		//		}
+		
+		
+		
 		
 		
 	}
-	//	printf("%d",a);
+	
 	if(result==0){
 		for(i=0;i<=a-1;i++){
 			printf("%c",y[i]);

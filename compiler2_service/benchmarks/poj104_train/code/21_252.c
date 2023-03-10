@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     float b[301],sum=0,aver;int a[301],k=0,i,n,c[2]={0};

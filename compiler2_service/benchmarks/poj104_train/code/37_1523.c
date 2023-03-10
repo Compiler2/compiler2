@@ -1,3 +1,5 @@
+#include <header.h>
+
     int main(){
 	int t,num,x;
 	char zf[100020];

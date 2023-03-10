@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int change(int a[100][100],int);

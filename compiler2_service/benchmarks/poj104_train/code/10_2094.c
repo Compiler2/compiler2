@@ -1,3 +1,5 @@
+#include <header.h>
+
 int h[25],n; 
 int main() 
 {  

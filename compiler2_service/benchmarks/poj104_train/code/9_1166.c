@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char id[100][10],old[100][10],yog[100][10];

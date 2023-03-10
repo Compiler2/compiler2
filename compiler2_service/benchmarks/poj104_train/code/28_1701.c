@@ -1,7 +1,9 @@
+#include <header.h>
+
 int ss=0;
 void check(char *ps)
 {
-	static int k,m;             //k:lengh of word   ;  m:former-0->' '//
+	static int k,m;             
 	if(*ps==' '||*ps=='\0')
 	{
 		if(m==1)

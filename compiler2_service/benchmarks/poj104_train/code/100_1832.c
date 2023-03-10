@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a=0,i,shu[200]={0};
 	char zi[301];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int factoring(int a,int b)
 {
     int i,kind=0;

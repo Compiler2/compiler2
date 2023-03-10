@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[4000],b[200][20]={'\0'};

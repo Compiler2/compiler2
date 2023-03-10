@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -8,7 +10,7 @@ int main()
         {
             scanf("%s",a[i]);
             b[i]=strlen(a[i]);
-            //printf("%d\n",b[i]);
+            
 
         }
         for(i=0;i<n;i++)
@@ -32,7 +34,7 @@ int main()
 			   printf("\n");
 			   continue;
 			 }
-            //printf("\n");
+            
         }
         return 0;
 }

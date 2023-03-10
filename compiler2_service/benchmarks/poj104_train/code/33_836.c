@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zfcx[1000][256],zfcy[100][256];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char change(int m, int n);
 	char suite[100][100]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int n, i, j=0, k;
@@ -17,7 +19,7 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	///sort
+	
 	for (i=0; i<j; i++)
 	{
 		for (k=i+1; k<j; k++)
@@ -30,7 +32,7 @@ int main(int argc, char* argv[])
 			}
 		}
 	}
-	///print
+	
 	i=0;
 	printf("%d", piOdd[i]);
 	for (i=1; i<j; i++)

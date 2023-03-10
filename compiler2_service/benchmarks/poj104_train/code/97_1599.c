@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,hun,fif,twe,ten,fiv,one;

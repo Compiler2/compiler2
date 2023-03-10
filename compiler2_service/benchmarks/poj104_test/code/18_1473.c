@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cal(int matrix[][120],int n)
 {
 	 if (n==1) return(0);

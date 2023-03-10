@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num[10000]={0};
 char s[3000];
 int main(void)

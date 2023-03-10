@@ -1,3 +1,5 @@
+#include <header.h>
+
 int T[1000],Q[1000],n;
 int search()
 {

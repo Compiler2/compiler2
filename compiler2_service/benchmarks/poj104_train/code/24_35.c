@@ -1,3 +1,5 @@
+#include <header.h>
+
 int getstr(char str[],char s[],int m,int n){
 int i,j=0;
 for(i=m+1;i<n;i++,j++)

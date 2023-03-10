@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	int n,l,j,i,flag=0;//flag???????//
+	int n,l,j,i,flag=0;
 	scanf("%d",&n);
 	getchar();
 	char **p;
@@ -24,7 +26,7 @@ int main()
 				else
 				{
 					flag=1;
-					break;//???????????????????//
+					break;
 				}
 		  }
 		}

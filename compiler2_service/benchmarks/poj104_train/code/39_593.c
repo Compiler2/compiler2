@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,a1=8000,a2=4000,a3=2000,a4=1000,a5=850;

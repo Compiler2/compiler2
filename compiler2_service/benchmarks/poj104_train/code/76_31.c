@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
-	int n,i,j,a[50000],b[50000],e;//n>=3&&n<=50000
+	int n,i,j,a[50000],b[50000],e;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);//a[i]>0&&a[i]<=10000,b[i]>0&&b[i]<=10000
+		scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=1;i<=n;i++)
 	{

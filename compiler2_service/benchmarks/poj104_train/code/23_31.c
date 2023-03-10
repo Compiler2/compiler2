@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void main()
 {
@@ -11,12 +13,12 @@ void main()
   if(a[i]==' ')
    {b[j]=i;j++;}
  b[j]=len+1;
- //printf("%d",j);
+ 
  for(i=1;i<=j;i++)
   for(k=b[i-1]+1;k<=b[i]-1;k++)
   {
    c[k]=a[b[i-1]+b[i]-k];
-   //printf("%d %d\n",k,b[i-1]+b[i]-k);
+   
   }
  for(i=0;i<=j;i++)
   c[b[i]]=' ';

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x;
 int y(int x);
 int main()

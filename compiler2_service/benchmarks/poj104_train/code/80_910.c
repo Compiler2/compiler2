@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s(int a,int b)
 {int i;
 i=0;i=(a-1)/4-(a-1)/100+(a-1)/400;

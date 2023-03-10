@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n;
@@ -28,7 +30,7 @@ int main()
             {
                b[i]++;
                b[j]=-1;
-              //printf("%d***%d\n",i,j);
+              
             }
            }
        }
@@ -41,7 +43,7 @@ int main()
           temp=b[i];
         }
     }
-    //printf("%d",temp);
+    
     if(temp==0)
     {
         printf("NO");

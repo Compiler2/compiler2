@@ -1,3 +1,5 @@
+#include <header.h>
+
 	struct 
 	{
 	char id[11];

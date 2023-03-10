@@ -1,3 +1,5 @@
+#include <header.h>
+
 
   int main(){
       int  i=0,j=0;
@@ -15,6 +17,6 @@
             
           } 
     
-    // scanf("%d",&i);
+    
       return 0;
       }

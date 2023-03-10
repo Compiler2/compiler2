@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int n,i,m,j,mistake[100],k,result[100];

@@ -1,11 +1,13 @@
+#include <header.h>
+
 int main(){
 	char m[100],z[100],t[100];
 	gets(m);
 	gets(z);
 	gets(t);
-	char fz[100][100]; //use this to seperate the words
+	char fz[100][100]; 
 	int len1=strlen(m);
-	int i,k=0,j=0,num=1; //use "num" to calculate the number of the words
+	int i,k=0,j=0,num=1; 
 	for(i=0;i<len1;i++){
 		if(m[i]!=32){
 			fz[k][j]=m[i];

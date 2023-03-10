@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pipei(char x[],int l)
 {
 	int i,j,count;

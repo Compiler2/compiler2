@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,A[100],B[100];
     double C[100],D[100];

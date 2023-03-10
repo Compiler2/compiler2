@@ -1,3 +1,5 @@
+#include <header.h>
+
 char tran(char ch)
 {
   char y;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(char p[99])
 {
    int i,j;

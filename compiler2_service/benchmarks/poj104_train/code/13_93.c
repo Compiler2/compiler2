@@ -1,3 +1,5 @@
+#include <header.h>
+
 int god(int num1,int num2);
 int main(void)
 {

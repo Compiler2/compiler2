@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {int m, i, j, b[999], n[26], t[2]={0}, x=0;

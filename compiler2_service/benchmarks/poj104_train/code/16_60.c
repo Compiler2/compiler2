@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main () {
      
-    int in,k,m,sum=0;                    //m??????????321?????????1 
+    int in,k,m,sum=0;                    
     scanf("%d",&in);
     if (in==100) printf("001");
     else {k=in; 

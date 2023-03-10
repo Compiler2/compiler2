@@ -1,3 +1,5 @@
+#include <header.h>
+
 int tiaosheng(int m,int *a);
 int main()
 {
@@ -5,7 +7,7 @@ int main()
     scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                   // k=l=0;
+                   
                     scanf("%d",&m);
                    if(m==0)
                    {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int getcmp(int a,int b){
 	if(a>b)return 1;
 	else if(a<b)return -1;

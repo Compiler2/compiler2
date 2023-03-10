@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { char str[1001];
 int num [27],flag,i,j; 

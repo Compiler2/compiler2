@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Digui(int a,int min)
 {
 	int i,result=1;

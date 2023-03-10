@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m(int p,int q)
 {int z;
 z=(p>q)? p:q;

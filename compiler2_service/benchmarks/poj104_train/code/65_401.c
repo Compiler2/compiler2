@@ -1,3 +1,5 @@
+#include <header.h>
+
 int count(int a,int b);
 int main()
 {

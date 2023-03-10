@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
     long y , m , dd , ak = 0 , i , ans ;    

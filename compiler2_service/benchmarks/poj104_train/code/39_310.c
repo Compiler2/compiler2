@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i;
@@ -5,7 +7,7 @@ int main()
 	struct f
 	{
 		char str[21];
-		int score1,score2,article;//score1???????? score2??????
+		int score1,score2,article;
 		char a,b;
 		int prize;
 	}*p;
@@ -26,7 +28,7 @@ int main()
 	}
 	char *p1;
 	int max=0;
-	for(i=0;i<n;i++)//????????????max?
+	for(i=0;i<n;i++)
 		if((p+i)->prize>max)
 		{
 			max=(p+i)->prize;

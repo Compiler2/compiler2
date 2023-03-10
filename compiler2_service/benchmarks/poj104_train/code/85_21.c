@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main(){
 	int n,i,l,j,c=0;
 	char a[100],m;
 	gets(&m);
 	n=atoi(&m);
-	//printf("%d ! ",n);
+	
 	for(i=1;i<=n;i++){
 		c=0;
 		gets(a);
@@ -17,7 +19,7 @@ int main(){
 			c=1;
 			break;
 			}
-		//printf("%d * ",c);
+		
 		}
 		if(c==0) printf("yes\n");
 		else printf("no\n");

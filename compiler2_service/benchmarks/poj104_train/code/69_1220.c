@@ -1,3 +1,5 @@
+#include <header.h>
+
 char  s[100001];
 int   a[100001],b[100001],c[100001];
 int main(){
@@ -6,11 +8,11 @@ int main(){
     gets(s);
     alen=strlen(s);
     for(i=alen-1;i>=0;i--)
-         a[alen-i]=s[i]-'0';//?????????????
+         a[alen-i]=s[i]-'0';
     gets(s);
     blen=strlen(s);
     for(i=blen-1;i>=0;i--)
-         b[blen-i]=s[i]-'0';//?????????????   
+         b[blen-i]=s[i]-'0';
     if(alen>blen)
        clen=alen;
     else
@@ -22,7 +24,7 @@ int main(){
             c[i+1]++;
             c[i]-=10;
             if(i==clen)
-                clen++;//????
+                clen++;
         }
     for(i=clen;i>=1;i--)
 	{

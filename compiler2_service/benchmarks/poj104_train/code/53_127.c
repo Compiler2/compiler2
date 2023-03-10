@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fun(int *p,int n)
 {
 	int i,j;

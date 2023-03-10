@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sum[26],i,n=0;
 	char str[301];

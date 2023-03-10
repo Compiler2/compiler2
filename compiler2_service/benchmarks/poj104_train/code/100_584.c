@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[301],cha[26]={0},flag;

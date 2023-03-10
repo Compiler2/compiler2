@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
 	int n,i,j,k,l;
-	int a[13];//mei gei yue de tian shu//
-	int b[201];//nian fen//
-	int c[201],d[201],sum[201];//diyigeyuefen   di er ge//
+	int a[13];
+	int b[201];
+	int c[201],d[201],sum[201];
 	
 	scanf("%d",&n);
     for(l=1;l<=n;l++){

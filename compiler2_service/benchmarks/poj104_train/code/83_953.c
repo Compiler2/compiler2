@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {   int n,i;
 double c[10],sum1=0,sum2=0,b[10],a[10],GPA;

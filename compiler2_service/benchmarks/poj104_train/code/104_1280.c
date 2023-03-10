@@ -1,3 +1,5 @@
+#include <header.h>
+
 int finder(int a,int b)
 {
 	int c;

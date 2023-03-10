@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	struct student
@@ -9,8 +11,8 @@ int main()
 	};
 	int i,n,a;
 	scanf("%d",&n);
-	struct student *stu=(struct student *)malloc(sizeof(struct student)*n);//////
-//	struct studen *stu[90];
+	struct student *stu=(struct student *)malloc(sizeof(struct student)*n);
+
 	int max=0,sum=0;
 	for(i=0;i<n;i++)
 	{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char a[],int i,int k)
 {
    int j=i+k;

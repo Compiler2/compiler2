@@ -1,3 +1,5 @@
+#include <header.h>
+
 int leap(int *p,int n)
 {                                                                                
     if(n==0) return -1;                                                          

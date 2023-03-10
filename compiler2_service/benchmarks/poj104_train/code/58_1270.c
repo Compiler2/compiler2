@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int fit(char *p){
 	if((*p>=65&&*p<=90)||(*p>=97&&*p<=122)||*p==95){

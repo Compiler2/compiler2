@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int shift(char n){
 	int shift;

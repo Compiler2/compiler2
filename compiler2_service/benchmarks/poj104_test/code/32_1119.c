@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {int n,g;
 scanf("%d",&n);
@@ -14,27 +16,27 @@ int l;
 if(l1>l2)
   l=l1;
 else l=l2;
-//printf("%d\n",l);
+
    int i;
    for(i=l;i>l-l1;i--)
 {
 a[i]=a[i-(l-l1+1)];
 
 }
-//printf("%c\n",a[l]);
+
 for(i=l;i>l-l2;i--)
 b[i]=b[i-(l-l2+1)];
-//printf("%c\n",b[l]);
+
 for(i=0;i<=l-l1;i++)
 {
 a[i]='0';
 } 
-//printf("%c\n",a[l-l1]);
+
 for(i=0;i<=l-l2;i++)
 {
 b[i]='0';
 }
-//printf("%c\n",b[l-l2+1]);
+
 int flag=0; 
 for(i=l;i>0;i--)
 {int sum=0;
@@ -47,10 +49,10 @@ for(i=l;i>0;i--)
   else
    {c[i]=sum+'0';flag=0;}
   }
- //printf("%c %c %c %c\n",c[l],c[3],c[2],c[1]);
+ 
 
 int flag1=0;
-//printf("%c\n",c[0]);
+
 int t;
 for(i=0;i<=l;i++)
 {

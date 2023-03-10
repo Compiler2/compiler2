@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char str[1000],a[50][100],b[50][100],min[100],max[100],temp[100],temp1[100];

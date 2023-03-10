@@ -1,3 +1,5 @@
+#include <header.h>
+
 int checkp(int n)
 {
 	int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void){
 	int prime[10000],r[200][2],i,j,m,timer,count,stop;
 	timer=-1;

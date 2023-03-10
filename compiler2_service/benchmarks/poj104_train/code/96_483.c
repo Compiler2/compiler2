@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,j,n,t;
@@ -5,12 +7,12 @@ main()
       int b[100],a[100];
      gets (c);
      
-      //n=strlen("c");
+      
       for(i=0;c[i]!='\0';i++)
      {
          a[i]=c[i]-'0';           
       } 
-      //printf("%d",i);
+      
      if(i==1){printf("0");printf("\n%d",a[0]);  }
       else
       {
@@ -18,14 +20,14 @@ main()
      {
         b[j]=(10*a[j]+a[j+1])/13; 
         a[j+1]=(10*a[j]+a[j+1])%13;
-          // printf("\n%d",b[j]);             
+          
      } 
   for(n=0;n<j;n++)
      {
        d[n]=b[n]+'0';
                    
      }
-    // printf("%d\n",n);
+    
      d[n]='\0';
      if(d[0]=='0')
      {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,i,j,k;
@@ -23,14 +25,14 @@ main()
         if(strcmp(sex[i],p)==0)
         {
             count1++;
-            w=height1[i];//???2
+            w=height1[i];
             height2[j]=w;
             j++;
         }
         else
         {
             count2++;
-            w=height1[i];//???3
+            w=height1[i];
             height3[k]=w;
             k++;
         }

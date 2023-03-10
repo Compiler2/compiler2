@@ -1,3 +1,5 @@
+#include <header.h>
+
 int test(int *,int *,int);
 int main(){
 	int n,integer[300],aux,*curp,i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void h(int x[],int y)
 {   int i,j,t;
   for(i=1;i<y;i++)
@@ -37,7 +39,7 @@ int main()
                 for(int i=0;i<n;i++) 
 				{scanf("%d",&a2[i]);}
 
-                for(int i=0;i<n;i++)                       //??????
+                for(int i=0;i<n;i++)                       
                 {
                          for(int j=0;j<n-i-1;j++)
                          {
@@ -50,7 +52,7 @@ int main()
                              }
                          }
                  }
-                for(int i=0;i<n;i++)                         //??????
+                for(int i=0;i<n;i++)                         
                 {
                          for(int j=0;j<n-i-1;j++)
                          {
@@ -77,7 +79,7 @@ int duma(int n,int a1[2000],int a2[2000])
     int a=0,i=0; 
     for(i=n;i!=1;i--) 
     {
-           if(a1[0]>a2[0])               //?????????????????
+           if(a1[0]>a2[0])               
            {
                a+=200;
                for(int k=0;k<i-1;k++) 
@@ -88,7 +90,7 @@ int duma(int n,int a1[2000],int a2[2000])
            }
            else
            { 
-              if (a1[0]<a2[0])              //?????????????????
+              if (a1[0]<a2[0])              
               {
                      a-=200;
                  for(int k=0;k<i-1;k++) 
@@ -98,11 +100,11 @@ int duma(int n,int a1[2000],int a2[2000])
               } 
               else
               {
-                  if(a1[i-1]>a2[i-1])           //?????????????????
+                  if(a1[i-1]>a2[i-1])           
                   {
                          a+=200;
                   }
-                  else                            //?????????????????
+                  else                            
                   {
 					  if(a1[i-1]<a2[0])
                          a-=200;
@@ -118,7 +120,7 @@ int duma(int n,int a1[2000],int a2[2000])
               } 
           
     }
-    if (a1[0]<a2[0])                 //????????
+    if (a1[0]<a2[0])                 
     {
         a-=200; 
     }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     char a[100];
@@ -14,7 +16,7 @@ main()
     {
 
 
-                                                               //the main part of calculation
+                                                               
 
 
         if(((a[0]=='1')&&(a[1]<'3'))!=0)
@@ -29,7 +31,7 @@ main()
                 printf("%c",b[i]);
 
             }
-            printf("\n%d",a[length-1]-'0');                //don't print zero( b[0]=0)
+            printf("\n%d",a[length-1]-'0');                
 
         }
         else
@@ -43,7 +45,7 @@ main()
             {
                 printf("%c",b[i]);
             }
-            printf("\n%d",a[length-1]-'0');                //normally print
+            printf("\n%d",a[length-1]-'0');                
 
         }
 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,m,n1=0,p=0,r,mon[300];
 for(int k=1;k<=100;k++){

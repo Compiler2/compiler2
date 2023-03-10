@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,j,n,cnt=0;
@@ -8,7 +10,7 @@ int main()
     for(i=0;i<n;i++)
     {
         gets(s);
-        //gets(temp);
+        
         a[i]=strlen(s);
         cnt=0;
         if((s[0]>='0' && s[0]<='9'))
@@ -34,6 +36,6 @@ int main()
         }
     }
     getchar();
-    //getchar();
+    
     return 0;
 }

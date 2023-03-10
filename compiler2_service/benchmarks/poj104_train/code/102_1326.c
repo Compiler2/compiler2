@@ -1,5 +1,7 @@
+#include <header.h>
 
-void sort(float *p1,float *p2,int cri){//cri:1±íê&#190;&#196;D?&#172;-1±íê&#190;&#197;&#174; 
+
+void sort(float *p1,float *p2,int cri){
 	if((*p1-*p2)*cri>0){
 		float temp=*p1;
 		*p1=*p2;

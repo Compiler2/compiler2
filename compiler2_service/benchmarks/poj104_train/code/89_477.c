@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n,k,i[65534],j[65534],count1[10000]={0},count2[10000]={0},m;

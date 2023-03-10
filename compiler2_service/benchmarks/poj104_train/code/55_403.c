@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char n[33],m[33];

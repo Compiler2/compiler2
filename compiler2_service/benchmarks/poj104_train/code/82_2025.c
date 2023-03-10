@@ -1,4 +1,6 @@
-//????
+#include <header.h>
+
+
 int main()
 {
     int a[100];

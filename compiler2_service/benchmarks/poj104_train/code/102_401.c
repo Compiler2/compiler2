@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compmale(const void*a1,const void*a2)
 {
  	float*p1,*p2;

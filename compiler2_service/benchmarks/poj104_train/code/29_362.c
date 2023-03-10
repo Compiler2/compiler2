@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    float a[1000],b[1000];
@@ -11,10 +13,10 @@ main()
    for(i=0;i<n;i++)
    {
       sum=0;
-       //printf("%f",sum);
+       
        scanf("%d",&m);
-     //  for(j=0;j<2;j++)
-    //   sum=sum+(float)(a[j])/(float)(b[j]);
+     
+    
        for(j=0;j<m;j++)
        {
           if(j>=2)

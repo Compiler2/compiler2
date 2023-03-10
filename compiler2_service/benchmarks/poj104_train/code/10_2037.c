@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct missle
 {
@@ -62,7 +64,7 @@ int maxn ( int i , int n )
 	if ( max2 > max )
 	{
 		max = max2;
-		//printf("%d\n",i);
+		
 	}
 	return max2;
 }

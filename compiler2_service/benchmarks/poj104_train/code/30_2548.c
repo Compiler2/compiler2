@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yu7wuguan (int n);
 int main(){
 	int result=0,n;

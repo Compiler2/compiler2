@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,n,t,c;
     char A,T,C,G;
@@ -7,7 +9,7 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%s",&jj);
         t=strlen(jj);
-        //printf("%d",t);
+        
         for(c=0;c<t;c++){
             if(jj[c]=='A'){
                 pd[c]='T';

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m,i,t,k,e,f,max,g,max1;
     int hz[50000];

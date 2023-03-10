@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char f[501],t[501];

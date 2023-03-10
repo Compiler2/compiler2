@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int n,i,j,k,b[999],max=0,a[27],x;

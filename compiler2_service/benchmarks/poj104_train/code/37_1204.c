@@ -1,3 +1,5 @@
+#include <header.h>
+
 char sz[100000];
 int zd(char *sz);
 int main(){

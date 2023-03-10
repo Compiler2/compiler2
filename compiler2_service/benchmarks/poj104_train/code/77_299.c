@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct dui
 {int nannv;
 int weizhi;

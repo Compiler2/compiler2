@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x){
 	int i,sz[1000];
 	for(i=0;i<x;i++){

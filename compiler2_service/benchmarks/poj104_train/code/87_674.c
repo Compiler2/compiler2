@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	struct sz{
           int a,b,c,d,e,f;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char a[100][100];
 

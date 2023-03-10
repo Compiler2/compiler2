@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int jiaohuan(int (*s)[5],int n,int m);

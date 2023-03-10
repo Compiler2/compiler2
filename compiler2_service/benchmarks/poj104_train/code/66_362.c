@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int year,month,day,a=0,days=0,i,j;
     scanf("%d %d %d",&year,&month,&day);
@@ -26,7 +28,7 @@ int main(){
        }
     }
     days+=day;
-    //printf("%d\n",days);
+    
     if (days%7==1){
      printf("Mon.");
     }

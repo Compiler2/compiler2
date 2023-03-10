@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,j,t,n,m,sum,head,taila,tailb,max=1000;

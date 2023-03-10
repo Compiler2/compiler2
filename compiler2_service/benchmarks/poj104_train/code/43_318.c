@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shisushu(int n);
 int main(){
 	int m,n;

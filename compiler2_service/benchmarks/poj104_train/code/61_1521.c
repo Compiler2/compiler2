@@ -1,3 +1,5 @@
+#include <header.h>
+
 int F(int n){
 int a,b,i,s;
 if(n==1){s=1;}

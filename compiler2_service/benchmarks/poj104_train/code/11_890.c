@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Runnian(int y);
 int main(){
 	int y,m,d,count=0;

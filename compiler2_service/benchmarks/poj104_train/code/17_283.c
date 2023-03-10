@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void match(char a[]);
@@ -30,23 +32,23 @@ void match(char a[])
 	  {
 		f1=0;
 		f2=0;
-		f3=1;//??????
+		f3=1;
 		for (i=len-1;i>=0;i--)
 		{
 			if (a[i]=='(')
 			{
-				f1=1;//????????
+				f1=1;
 				for (j=i+1;a[j];j++)
 				{
 					if (a[j]==')')
 					{
-						f2=1;//??????????
+						f2=1;
 						a[j]='0';
 						a[i]='0';
 						break;
 					}
 				}
-				if (f2==0)//???????,a[i]?????
+				if (f2==0)
 				{
 					a[i]='1';
 				}
@@ -55,11 +57,11 @@ void match(char a[])
 			if (f1==1)
 				break;
 		}
-		if (f1==0)//???????
+		if (f1==0)
 		{
 			for (i=0;a[i];i++)
 			{
-				if (a[i]==')')//??????????2
+				if (a[i]==')')
 				{
 					a[i]='2';
 				}

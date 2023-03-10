@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   char p=0;
 	int m,i,j,max[1000];

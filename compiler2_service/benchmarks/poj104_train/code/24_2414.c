@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   char s[20],min[20],max[20];

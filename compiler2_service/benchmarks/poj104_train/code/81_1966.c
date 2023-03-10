@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[5][5];
 int Huan(int a,int b)
 {

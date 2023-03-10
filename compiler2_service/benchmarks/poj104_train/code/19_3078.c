@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
 	char a[100],b[100],c[100];
 	gets(a);
 	gets(b);
 	gets(c);
-	//printf("%s %s %s",a,b,c);
+	
 	for(int i = 0;i < strlen(a);i ++){
 		if(a[i] == b[0] && (a[i-1] == ' ' || i == 0)  && (a[i+strlen(b)] == ' ' || i + strlen(b) == strlen(a))){
 			int check = 0;

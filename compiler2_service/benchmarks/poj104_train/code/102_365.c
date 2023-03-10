@@ -1,8 +1,10 @@
+#include <header.h>
 
-//int com1(const void*elem1,const void*elem2)
-//{
-//return*((double*)elem1)-*((double*)elem2);//shengxu
-//}
+
+
+
+
+
 main()
 {
         int n,ms=1,ws=1;
@@ -14,20 +16,20 @@ main()
     for(int i=1;i<=n;i++)
         {
             scanf("%s %lf",x[i],&q);
-            if(x[i][0]=='m')        //(strcmp(x[i],"male")==0)    //x[i]=="male"
+            if(x[i][0]=='m')        
                 {
 
                     m[ms]=q;
-                    ms++;       //cong 1 dao ms-1
+                    ms++;       
                 }
-            if(x[i][0]=='f')        //(strcmp(x[i],"female")==0)
+            if(x[i][0]=='f')        
                 {
 
                     w[ws]=q;
                     ws++;
                 }
         }
-//maopao
+
     for(int i=1;i<=ms-1;i++)
         for(int j=1;j<=ms-1-i;j++)
         {

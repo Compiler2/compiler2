@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct sick
 {
 	char num[10];

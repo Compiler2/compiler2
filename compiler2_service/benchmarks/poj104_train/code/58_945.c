@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(char []);
 int main()
 {

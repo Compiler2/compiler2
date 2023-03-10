@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
      int xx,yy;
@@ -17,8 +19,8 @@ main()
           y[j]=p;}
      j--;
      int bl=0;
-     //for(int a=0;a<=i;a++) printf("%d\n",x[a]);
-     //for(int b=0;b<=i;b++) printf("%d\n",y[b]);
+     
+     
      for(int a=0;a<=i;a++)
      {
             if(bl==1) break;

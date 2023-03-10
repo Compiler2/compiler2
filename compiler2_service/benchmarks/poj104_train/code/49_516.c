@@ -1,3 +1,5 @@
+#include <header.h>
+
 char c[500];
 int f(int e0,int s0);
 int main(){

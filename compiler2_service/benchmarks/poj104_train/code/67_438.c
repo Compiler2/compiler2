@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,zong[100],yx[100],i;

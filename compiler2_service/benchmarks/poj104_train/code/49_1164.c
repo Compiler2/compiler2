@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[500];
@@ -15,9 +17,9 @@ int main()
 	 c[i]=0;
     }
 
-	for(i=2;i<=q;i++)//??????
+	for(i=2;i<=q;i++)
 	{
-		for(j=0;j<=q-i;j++)//?j??
+		for(j=0;j<=q-i;j++)
 		{
 			for(m=0;m<i;m++)
 			b[m]=a[j+i-m-1];

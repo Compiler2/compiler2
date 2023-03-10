@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p1(int n)
 {
   int i;

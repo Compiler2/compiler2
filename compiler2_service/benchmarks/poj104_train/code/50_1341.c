@@ -1,3 +1,5 @@
+#include <header.h>
+
 int month(int i)
 {
 	if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)

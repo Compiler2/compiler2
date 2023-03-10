@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jm(int f,int m){
     return f*60+m;
 }

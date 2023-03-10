@@ -1,3 +1,5 @@
+#include <header.h>
+
 int DiJiTian(int year,int mon);
 int main(){
 int i,n,mon1,mon2,year,result;

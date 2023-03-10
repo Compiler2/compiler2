@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 double b;
 char x[1000],y[1000];

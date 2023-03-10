@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,chu,yu=0,count=0,shang[100],count2=0;

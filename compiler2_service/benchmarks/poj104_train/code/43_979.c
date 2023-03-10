@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p[11000], i, j, m;
 int main() {
 	for (i = 0, scanf("%d", &m); i <= m; i++)

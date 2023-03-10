@@ -1,13 +1,15 @@
+#include <header.h>
+
 
 int bijiao(const void*x,const void*y)
 {
-return *((int*)y)-*((int*)x);    //???    
+return *((int*)y)-*((int*)x);    
 }
 
 int main()
 {
   int n; 
-  while(scanf("%d",&n)&&(n!=0)) //????? 
+  while(scanf("%d",&n)&&(n!=0)) 
   {
    int i,*tj,*qw,sum=0;
    tj=(int*)malloc(4*n);

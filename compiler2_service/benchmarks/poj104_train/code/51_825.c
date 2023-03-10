@@ -1,3 +1,5 @@
+#include <header.h>
+
 	struct bac
 {
 	int num;
@@ -26,7 +28,7 @@ int main()
 			abb[i].a[j]=str[k];
 			k++;
 		}
-	//	abb[i].a[j+1]='\0';
+	
 	}
 	for(i=0;i<b;i++){
 		abb[i].d=0;

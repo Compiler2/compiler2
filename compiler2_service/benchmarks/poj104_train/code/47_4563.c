@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void inv(int array[ ],int k);

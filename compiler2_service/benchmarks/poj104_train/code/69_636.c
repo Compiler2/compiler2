@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sdw1(char s1[],int a[])
 {
     int len=strlen(s1);

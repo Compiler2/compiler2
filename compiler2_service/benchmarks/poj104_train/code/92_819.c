@@ -1,3 +1,5 @@
+#include <header.h>
+
 int compare(const void *x,const void *y)
 {
 	return *((int*)x)-*((int*)y);

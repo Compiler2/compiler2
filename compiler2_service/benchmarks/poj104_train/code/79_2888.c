@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n[10000] = {1},m[10000] = {1},win[10000],i,s=0;

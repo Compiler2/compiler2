@@ -1,3 +1,5 @@
+#include <header.h>
+
 int exchange(int n,int m,int num[5][5])
 {
 	int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int exist=0,addressx[10]={0},addressy[10]={0},h,k,x,y,i=0,j=0;

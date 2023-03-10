@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	int i,n,a[100],b[100];
@@ -10,7 +12,7 @@ int main ()
 	for(i=0;i<n;i++)
 	{
 		c[i]=(float)b[i]/a[i];
-	    //printf("%.2f\n",c[i]);
+	    
 	}
 	for(i=1;i<n;i++)
 	{

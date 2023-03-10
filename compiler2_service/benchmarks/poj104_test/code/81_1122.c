@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int a[5][5],int m,int n)
 {int count,i;
 	if(m<0||m>=5||n<0||n>=5)

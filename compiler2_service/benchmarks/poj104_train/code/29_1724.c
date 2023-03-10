@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       double a[1000]={1,1};

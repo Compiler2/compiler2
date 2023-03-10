@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dao(int x)
 {  
    int s;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int one = 1, two = 1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huiwen(int);
 int sushu(int);
 int main(){

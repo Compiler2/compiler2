@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int lj(int a[],int n,int m);
@@ -17,7 +19,7 @@ int main()
     getchar();
     getchar();
 }
-int lj(int a[],int n,int m)//n????m??? 
+int lj(int a[],int n,int m)
 {
     int i,t,p,l=0,b[25];
     if(n==m-1)

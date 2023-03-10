@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[128],b[128];

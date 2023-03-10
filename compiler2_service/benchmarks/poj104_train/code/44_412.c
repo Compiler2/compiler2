@@ -1,5 +1,7 @@
-// ?????.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
+
+
+
 
 void reverse(int x,int k);
 int main(int argc, char* argv[])

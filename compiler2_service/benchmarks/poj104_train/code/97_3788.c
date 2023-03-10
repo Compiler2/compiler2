@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m;
     int sz[6]={100,50,20,10,5,1};

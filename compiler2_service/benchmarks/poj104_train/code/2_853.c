@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct person{
     int num;
     int book[1000];

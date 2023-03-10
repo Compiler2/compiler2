@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ROW,COL;
@@ -10,7 +12,7 @@ int main()
 			scanf("%d",&array[row][col]);
 		}
 	}
-	//????
+	
     int sx_row=0,xx_row=ROW-1,sx_col=0,xx_col=COL-1;
 
     while((xx_row>sx_row)&&(xx_col>sx_col))

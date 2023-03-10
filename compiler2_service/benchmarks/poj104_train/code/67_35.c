@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,jiu1,jiu2,xin1[100],xin2[100],xiao[100];;

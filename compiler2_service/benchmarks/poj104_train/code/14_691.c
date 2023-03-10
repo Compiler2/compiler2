@@ -1,3 +1,5 @@
+#include <header.h>
+
 typedef struct st
 {
       int a,b;
@@ -18,6 +20,6 @@ int main()
     }
     qsort(s,n,sizeof(stu),comp);
     printf("%d %d\n%d %d\n%d %d",s[0].a,s[0].b,s[1].a,s[1].b,s[2].a,s[2].b);
-    //getch();
+    
     return 0;
 }

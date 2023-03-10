@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int tian[1000],wang[1000],temp[1000];
 

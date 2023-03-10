@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n, m, the_min;
 int a[110][110];

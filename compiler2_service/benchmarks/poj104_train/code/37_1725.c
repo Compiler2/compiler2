@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int t,a[27]={0},i,j,k;

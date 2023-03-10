@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sz1[100],sz2[100],*p;

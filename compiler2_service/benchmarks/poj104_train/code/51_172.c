@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int n;
@@ -27,7 +29,7 @@ void main()
 			if(strcmp(a[i],a[j])==0)b[i]++;
 		}
 	}
-	//??????????????????
+	
 	for(i=0;i<k;i++)
 		if(b[i]>max)
 		  max=b[i];

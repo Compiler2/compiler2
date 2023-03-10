@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {int haha(int a,int b,int s[5][5]);

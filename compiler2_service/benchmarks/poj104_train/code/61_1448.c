@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[100];
 int sl(int i,int n);
 int main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int know[10000];
 	int known[10000];

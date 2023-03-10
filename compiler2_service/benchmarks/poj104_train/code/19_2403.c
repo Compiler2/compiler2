@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() 
 {
     char Sen[200],word[200],exchange[200],temp[200];

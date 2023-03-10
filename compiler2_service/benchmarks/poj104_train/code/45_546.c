@@ -1,13 +1,15 @@
+#include <header.h>
+
 main()
 {
 	char str[100];
 	char *p1,*p2,*p3;
 	int i,k=0;
 	gets(str);
-	for(p1=str;*p1!=' ';p1++);//???????
+	for(p1=str;*p1!=' ';p1++);
 	p2=p1+1;
 	*p1='\0';
-	p1=str;        //p1?p2????????
+	p1=str;        
 	for(i=0;k<1;p2++,i++)
 	{
 		p1=str; p3=p2;

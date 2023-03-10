@@ -1,3 +1,5 @@
+#include <header.h>
+
 int stu [100000];
 int main(int argc, char* argv[])
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char zu[53]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";

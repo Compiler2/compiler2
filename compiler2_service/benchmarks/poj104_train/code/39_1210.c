@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	char name[100][20]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int xl[1000]={0};
 	int n=0,k=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char sz[300];
 char zimu[300]={0,0};
 int cishu[300]={0,0};

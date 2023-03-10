@@ -1,3 +1,5 @@
+#include <header.h>
+
 void NX();
 int n;
 int sz[100],nx[100];

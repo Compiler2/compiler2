@@ -1,3 +1,5 @@
+#include <header.h>
+
 char infect(char *a,int x,int y,int n)
 {
     if(x-1>=0)

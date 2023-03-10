@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
  char *s=(char*)malloc(256),*s1=(char*)malloc(256),*s2=(char*)malloc(256);

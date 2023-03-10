@@ -1,3 +1,5 @@
+#include <header.h>
+
 void arrange(int a[],int n)
 {
     int i,j,t;

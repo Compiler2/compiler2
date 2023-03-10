@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int i,m,n,sum,a[10001],*p;

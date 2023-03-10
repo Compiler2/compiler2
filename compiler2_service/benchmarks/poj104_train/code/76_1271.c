@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[50000];
 int b[50000];
 int c[100000];

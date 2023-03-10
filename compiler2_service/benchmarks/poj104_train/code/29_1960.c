@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jisuanb(double b[],int n,double a[])
 {
 	int i;
@@ -25,7 +27,7 @@ int main()
 		int j;
 		for(j=0;j<n[i];j++)
 		{
-//			printf("xunhuan\n");
+
 			sum+=b[j+1];
 		}
 		printf("%.3f\n",sum);

@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	//n??????
+	
 	int n;
 	scanf("%d",&n);
 	int i1;
@@ -25,7 +27,7 @@ int main()
 				{
 					counter++;
 				}
-				//????????????????
+				
 				if(counter>1)
 				{
 					break;

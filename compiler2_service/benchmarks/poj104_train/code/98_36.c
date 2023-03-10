@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -15,7 +17,7 @@ int main()
 	{
 		a=a+strlen(str[i])+1;
 
-		if(a<80&&((a+strlen(str[i+1])+1)==80||(a+strlen(str[i+1]))==80)) //jia shang zui hou yi ge ci zheng hao 80(wu kong ge)//
+		if(a<80&&((a+strlen(str[i+1])+1)==80||(a+strlen(str[i+1]))==80)) 
 		{
 			for(j=k;j<=i;j++)
 			{

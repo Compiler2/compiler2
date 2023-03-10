@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	char s[200];
 	char s1[200];

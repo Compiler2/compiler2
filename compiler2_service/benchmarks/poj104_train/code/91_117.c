@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main() {
     char s[101]={"\0"}, s1[101]={"\0"};

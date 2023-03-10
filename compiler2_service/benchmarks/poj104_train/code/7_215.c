@@ -1,3 +1,5 @@
+#include <header.h>
+
 	int main()
 	{
 		char string[257]={0},substring[257]={0},replacement[257]={0};

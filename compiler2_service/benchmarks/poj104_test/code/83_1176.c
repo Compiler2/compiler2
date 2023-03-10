@@ -1,3 +1,5 @@
+#include <header.h>
+
  float f(int a)
  {
         if(90<=a&&a<=100)  return 4;

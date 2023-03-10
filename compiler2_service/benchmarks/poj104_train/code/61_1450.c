@@ -1,3 +1,5 @@
+#include <header.h>
+
 int F(int x){
 	int sz[100];
 	int i;

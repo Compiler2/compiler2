@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct jiegou
 {
        double renshu;

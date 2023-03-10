@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fb(int a){
 	int f[10000];
 	f[1]=1;

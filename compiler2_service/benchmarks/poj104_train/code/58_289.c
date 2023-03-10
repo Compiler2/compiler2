@@ -1,3 +1,5 @@
+#include <header.h>
+
   int check(char a[100])
       {
           int t=strlen(a),i,j=1;

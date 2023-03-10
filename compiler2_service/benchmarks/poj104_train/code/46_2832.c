@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100][100]={0};
 int main()
 {void p(char c,int b1,int b2,int b3,int b4);

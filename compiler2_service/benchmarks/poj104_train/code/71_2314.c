@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int days[11]={31,0,31,30,31,30,31,31,30,31,30},year=0,month1=0,month2=0,i=0,j=0,n=0,mid=0,total=0;

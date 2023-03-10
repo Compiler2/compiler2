@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main() {
 	char part[50], full[50];

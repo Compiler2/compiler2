@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jh(int a,int b){
 	if((a<5)&&(a>=0)&&(b<5)&&(b>=0)){return 1;}
 		 else{return 0;}

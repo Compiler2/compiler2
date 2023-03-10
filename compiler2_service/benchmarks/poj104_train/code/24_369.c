@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,k,index,max,min;
 	char juzi[2500],word[50][50];

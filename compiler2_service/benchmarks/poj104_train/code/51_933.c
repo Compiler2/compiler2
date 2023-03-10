@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[500],b[500][5]={'\0'};
@@ -14,7 +16,7 @@ void main()
 			b[i][j-i]=a[j];
 		}
 		b[i][n] = '\0';
-		//printf("%s\n",b[i]);
+		
 	}
 
 	t=0;
@@ -35,14 +37,14 @@ void main()
 			if(m[i]>t)
 			{
 				t=m[i];
-			//	printf("%d %s\n",i, b[i]);
+			
 			}
 		
 		    if(m[i]==1)
 			p=p+1;
 
 		}
-		//printf("%d\n",m[i]);
+		
 	}
 
 	if(p==k-n+1)
@@ -56,5 +58,5 @@ void main()
 				printf("%s\n",b[i]);
 		}
 	}
-//	printf("1");
+
 }

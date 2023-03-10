@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
 	int avescore,classscore,paper,money;

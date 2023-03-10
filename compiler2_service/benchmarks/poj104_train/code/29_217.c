@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {   int i,n,m,j;
 	double a,b,s,x,y;

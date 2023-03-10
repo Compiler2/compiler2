@@ -1,3 +1,5 @@
+#include <header.h>
+
 int exchange(int sz[5][5],int a, int b)
 {
 	if(0<=a&&a<=4&&0<=b&&b<=4){

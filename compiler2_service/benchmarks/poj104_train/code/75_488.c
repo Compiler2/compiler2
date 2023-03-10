@@ -1,11 +1,13 @@
+#include <header.h>
+
 int n,x[10100],y[10100];
 char s[101000];
 int ans,best;
 int v[10100];
 int main()
 {
-//    freopen("a.in","r",stdin);
-  //  freopen("a.out","w",stdout);
+
+  
     gets(s);
     n=1;
     memset(x,0,sizeof(x));
@@ -22,7 +24,7 @@ int main()
         if (s[i]==',') n++;
         else y[n]=y[n]*10+s[i]-48;
     }
-//    for (int i=1;i<=n;i++) printf("%d %d\n",x[i],y[i]);
+
 /*    sort(x+1,x+n+1);
     sort(y+1,y+n+1);
     ans=0;best=0;

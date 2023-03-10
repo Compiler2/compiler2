@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int a[100][10]={0},i,s[100][5]={0},x[100]={0},num=1;

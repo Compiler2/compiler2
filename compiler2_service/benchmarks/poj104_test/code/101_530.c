@@ -1,3 +1,5 @@
+#include <header.h>
+
 /**
 * file homwork.cpp
 * author ??? 1100012722

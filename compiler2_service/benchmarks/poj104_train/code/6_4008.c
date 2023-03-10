@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -13,10 +15,10 @@ int main(){
 	for(i=0;i<time;i++){
 		res = 0;
 		scanf("%d %d",&m,&n);
-//		printf("%d %d",m,n);
+
 		for(j=0;j<m*n;j++){
 			scanf("%d",&r);
-			//printf("%d\n",r);
+			
 			arr[j]=r;
 		}
 		for(x=0;x<m;x++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pa(int i);
 int main()
 {

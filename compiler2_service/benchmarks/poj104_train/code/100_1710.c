@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	char n[301],temp;
 	int a[27]={0},b[27]={0},t=0,i,j,len;

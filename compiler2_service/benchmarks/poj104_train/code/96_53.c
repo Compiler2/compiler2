@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 const int last=1000;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int x=0,y=0,i,j,n;
  double t,e;
@@ -6,7 +8,7 @@ int main(){
  scanf("%d",&n);
  for(i=0;i<n;i++){
    scanf("%s %lf",sex,&(h[i]));
-   //printf("%c",sex[0]);
+   
    if(sex[0]=='f') {
 	   girl[x]=h[i];
 	   x++;

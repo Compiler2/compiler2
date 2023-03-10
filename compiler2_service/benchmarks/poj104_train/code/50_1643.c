@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int xingqi,yue,zong=0,panduan;

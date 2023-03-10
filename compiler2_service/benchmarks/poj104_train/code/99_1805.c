@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     double yi=0,er=0,san=0,si=0;

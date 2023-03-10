@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5];
 int j;
 void f(int m)

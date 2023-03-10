@@ -1,15 +1,17 @@
+#include <header.h>
+
 int main(){
-int n,sum=0,k;//????
-scanf("%d",&n);//??N
+int n,sum=0,k;
+scanf("%d",&n);
 for(k=1;k<=n;k++){
-if (yuqiwuguan(k)==1){//???wu???????????
+if (yuqiwuguan(k)==1){
 sum+=k*k;}
 }
-printf("%d",sum);//????
+printf("%d",sum);
 return 0;
 }
 int yuqiwuguan(int number){ 
-int i;                       //???7?????
+int i;                       
 if(number%7==0){
 return 0;}
 for(i=number;i>0;i/=10){

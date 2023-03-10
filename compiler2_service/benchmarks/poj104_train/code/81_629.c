@@ -1,3 +1,5 @@
+#include <header.h>
+
 int h(int m,int n){
 	int g;
 	if(m<=4&&m>=0&&n>=0&&n<=4){

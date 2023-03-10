@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rp,re,lp,le;
 int a[300][300];
 int print(int rp,int re,int lp,int le,int r,int l)

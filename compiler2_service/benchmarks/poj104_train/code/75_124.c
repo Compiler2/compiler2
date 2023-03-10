@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1005],b[1005];
 int tm[1005];
 int main()

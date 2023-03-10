@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[105][105];
@@ -37,6 +39,6 @@ int main()
                                                        
                                                        
                                                        }
-                                                 //  if(k==9) printf("1\n");     
+                                                 
                                                          
                                                     getchar();getchar();    } 

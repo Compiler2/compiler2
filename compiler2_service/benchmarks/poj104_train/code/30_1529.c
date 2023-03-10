@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int i,j,k=0,n;
@@ -10,12 +12,12 @@ main()
             {
                 if(i>=10&&((i/10)%7)!=0)
                 {
-                    //printf("%d ",i);
+                    
                     k=k+i*i;
                 }
                 if(i<10)
                 {    
-                    //printf("%d ",i);
+                    
                     k=k+i*i;
                 }
             }

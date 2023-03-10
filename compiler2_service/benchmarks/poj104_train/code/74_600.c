@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,j,k=1,a=0,number,reversed_number=0,remainder=0;

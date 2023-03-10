@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int fenzi[100];
 	int fenmu[100];

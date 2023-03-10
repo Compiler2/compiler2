@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int primes[20000];
@@ -20,7 +22,7 @@ int isPrimeNumber(int p)
 	{
 		if( p%primes[j]==0 ) return 0;
 	}
-	if( primes[j]*primes[j]>p ) //??i??????????????????
+	if( primes[j]*primes[j]>p ) 
 	{
 		return 1;
 	}
@@ -29,16 +31,16 @@ int isPrimeNumber(int p)
 
 void AllPrimes(int n)
 {
-	int number=1;     //??n??????
-	int i, j;         // ????
-	primes[0] = 2;    //2??????
+	int number=1;     
+	int i, j;         
+	primes[0] = 2;    
 	for( i = 3; i <= n; i = i + 2 )
-	{      //??i???????????
+	{      
 		for(j=0; primes[j]*primes[j]<i; j++)
 		{
 			if( i%primes[j]==0 ) break;
 		}
-		if( primes[j]*primes[j]>i ) //??i??????????????????
+		if( primes[j]*primes[j]>i ) 
 		{
 			primes[number] = i;
 			number++;

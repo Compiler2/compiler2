@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct member{
 	char name[100];
 	int a;

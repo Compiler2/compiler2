@@ -1,3 +1,5 @@
+#include <header.h>
+
 void add(char* a,char* b,char* c)
 {
 	int i,j,k,max,min,n,temp;

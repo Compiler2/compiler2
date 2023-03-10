@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char string[256],subString[256],replacement[256],buffer[256]={0},result[256]={0};

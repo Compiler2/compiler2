@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int strnl(char *,char *);
 void replace(char *str,int len_ss,int start,char *rpl);

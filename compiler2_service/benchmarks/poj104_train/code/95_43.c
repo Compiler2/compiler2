@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	 int m,n,max;
      char p[80],q[80];

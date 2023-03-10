@@ -1,3 +1,5 @@
+#include <header.h>
+
 int M[5][5];
 int main()
 {

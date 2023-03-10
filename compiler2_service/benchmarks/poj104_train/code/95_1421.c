@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[80],d[80];
@@ -5,7 +7,7 @@ int main()
 	gets(c);
 	gets(d);
 	n=0;
-	//?????//
+	
 	for(i=0;i<strlen(c);i++)
 	{
 		if(c[i]>=65&&c[i]<=90)
@@ -16,7 +18,7 @@ int main()
 		if(d[i]>=65&&d[i]<=90)
 			d[i]=d[i]+'a'-'A';
 	}
-	//??//
+	
 	for(i=0;i<strlen(c);i++)
 	{
 		if(c[i]>d[i])

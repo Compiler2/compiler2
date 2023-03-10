@@ -1,3 +1,5 @@
+#include <header.h>
+
 char zfc[3][257];
 int main(){
 	gets(zfc[1]);

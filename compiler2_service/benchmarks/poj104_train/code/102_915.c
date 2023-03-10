@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,a1,a2,j;
 double man[40],woman[40],b1,b2;

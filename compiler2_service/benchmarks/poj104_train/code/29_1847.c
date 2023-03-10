@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 double arr[101] = {0};
 

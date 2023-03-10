@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
  char string[257],sub[257],re[257];

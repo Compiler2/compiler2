@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int A[5][5],m,n,row,list,i;
     row=0;

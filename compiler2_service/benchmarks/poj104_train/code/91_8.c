@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[110],*p;
     int len;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int k=0,a[400],i,t;

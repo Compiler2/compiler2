@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int sz[7],i,sum=0,j=0;
 	for(i=0;;i++){

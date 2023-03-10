@@ -1,3 +1,5 @@
+#include <header.h>
+
 void trans(char *s,int *p)
 {
      int n,i;

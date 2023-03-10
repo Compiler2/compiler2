@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int a,b=0,b1=0,c,d,e,f,g,i,k,t,raw,col,x,y;
  int array[100][100];

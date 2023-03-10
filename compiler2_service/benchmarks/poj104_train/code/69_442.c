@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char a1[252] , b1[252];
 int a[252] , b[252] , la , lb , l;
@@ -18,6 +20,6 @@ int main ()
    if ( l <= 0 )  l = 1;
    for ( i = l-1 ; i >= 0 ; i -- )
     printf ( "%d" , a[i] );
-  // getchar (); getchar ();
+  
    return 0;
 }

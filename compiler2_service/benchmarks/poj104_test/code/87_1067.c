@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int a,b,c,d,e,f,i;
@@ -18,7 +20,7 @@ printf("%d\n",sum);
 else if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0){break;
 }
 
-}//for
+}
 
 return 0;
-}//main
+}

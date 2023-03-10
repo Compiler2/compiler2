@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int *p,k,j,i,a[100000],n,m=0;
 p=a;

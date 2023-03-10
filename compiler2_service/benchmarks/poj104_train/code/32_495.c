@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void printnum(int a[])
 {

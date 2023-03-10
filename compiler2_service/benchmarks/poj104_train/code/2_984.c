@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct bo{
 	char id[10];

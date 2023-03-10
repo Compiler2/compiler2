@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 nixu(int n)

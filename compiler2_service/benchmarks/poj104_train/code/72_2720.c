@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int s[110][110];
 int main(){

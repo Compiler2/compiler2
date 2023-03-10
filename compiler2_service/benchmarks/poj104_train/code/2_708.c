@@ -1,3 +1,5 @@
+#include <header.h>
+
 char zimu[28]="ABCDEFGJIJKLMNOPQRSTUVWXYZ";
 	char writer[10000][10000];
 	int times[26],id[1000],i,len[10000],book=0;

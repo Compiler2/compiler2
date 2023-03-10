@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char s[],int start,int wid)
 {
 	int end=start+wid-1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void count(int a[53], char str[], int len)
 {
 	int i,m;

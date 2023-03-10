@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int zhengshuchuan[],int changdu)
 {
 	int i,j,t;

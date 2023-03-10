@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -66,11 +68,11 @@ int main()
 
                 a[i][j] = b[i][j];
 
-                //printf("%c",a[i][j]);
+                
 
             }
 
-            //printf("\n");
+            
 
         }
 

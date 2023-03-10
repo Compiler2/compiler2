@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jiaohuan (int m,int n) 
 {   
 	if ((m>-1)&&(m<5)&&(n>-1)&&(n<5))

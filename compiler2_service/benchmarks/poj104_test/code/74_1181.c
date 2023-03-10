@@ -1,3 +1,5 @@
+#include <header.h>
+
 int r(int n)
 {
     int m,d=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 {
@@ -5,7 +7,7 @@ int main(int argc, char *argv[])
     int  n,k,i,len[50],max=0,min=100000,da=0,xiao=0;
     gets(s);
     
-     // ?s???????????words?
+     
     n = 0; k = 0;
     for (i = 0; s[i]!=0; i++) {
         if (s[i] == ' ') {

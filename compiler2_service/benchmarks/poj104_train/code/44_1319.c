@@ -1,3 +1,5 @@
+#include <header.h>
+
  int f(int a)
 {
       int n[32],i,p=10,q,b=0;

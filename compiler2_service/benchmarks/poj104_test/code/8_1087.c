@@ -1,3 +1,5 @@
+#include <header.h>
+
 int* putin()
 {
     int a,b,n;

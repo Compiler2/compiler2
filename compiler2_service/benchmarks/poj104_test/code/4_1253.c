@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int r,c,i,j,a[101][101],p;

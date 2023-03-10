@@ -1,3 +1,5 @@
+#include <header.h>
+
 int convert(int a,int b,char str[])
 {
 	int i,m=0;

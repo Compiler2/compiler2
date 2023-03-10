@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sequence[301];
@@ -38,7 +40,7 @@ int main()
 		
 		if(sequence[num]<97 || sequence[num]>122)
 		{	none++;
-		///printf("%d\n",none);
+		
 		}
 	}
 	if(a>0)

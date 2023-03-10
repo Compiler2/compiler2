@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 const int M = 100 + 10;
 const int N = 100 + 10;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int flag=0;
 char t[6], ok[6];

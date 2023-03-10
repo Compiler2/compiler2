@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n[300];
 int main(void)
 {

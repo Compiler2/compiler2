@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j;
@@ -18,7 +20,7 @@ int main()
     int i,c;
     for(i=2;i<a;i++)
      if(a%i==0)break;
-     if(i==a)//??? 
+     if(i==a)
      c=1;
      else c=2;
      return(c);

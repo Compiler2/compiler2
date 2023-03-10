@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char str[300]={'\0'},w1[100],w2[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 void down1(int a[100][100],int m)
 {

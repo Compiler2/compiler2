@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[3],b[3];
@@ -36,7 +38,7 @@ int main()
 		}
 	}
       
-	da=da+a[2];//A??????
+	da=da+a[2];
 		
 		for(b[1]--;b[1]>=1;b[1]--)
 		{ 
@@ -63,9 +65,9 @@ int main()
 			}
 		}
 		}
-    d=d+b[2];//B??????
+    d=d+b[2];
 
-	for(;a[0]<b[0];a[0]++)//???????
+	for(;a[0]<b[0];a[0]++)
 	{
 			if(leap(a[0]))
 				d=d+366;
@@ -75,7 +77,7 @@ int main()
 	return 0;
 }
 
-int leap (int year)//LEAP YEAR OR NOT
+int leap (int year)
 	{
         int LEAP;
 		if(year%4==0&&year%100!=0||year%400==0)

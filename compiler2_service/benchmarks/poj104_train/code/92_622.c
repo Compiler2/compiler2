@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int wang[1000],tian[1000];

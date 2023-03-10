@@ -1,3 +1,5 @@
+#include <header.h>
+
 int min(int b[],int n){
 	int i,j,k,mini,c[200];
 	for(i=0;i<n;i++) c[i]=b[i];

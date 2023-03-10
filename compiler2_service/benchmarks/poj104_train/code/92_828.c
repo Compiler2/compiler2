@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int t[2000],int q[2000])
 {
     int m=0,i=0; 

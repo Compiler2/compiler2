@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char s[110],*p,s1[110],*q,*p1;

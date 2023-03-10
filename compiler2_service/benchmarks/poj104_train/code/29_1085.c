@@ -1,3 +1,5 @@
+#include <header.h>
+
 double f(int n){
 	double x[100],y=0.0;
 	int i;

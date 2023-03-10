@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int di(int x,int y,int z);

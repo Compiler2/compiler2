@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j;
@@ -13,7 +15,7 @@ int main()
 				a[j+1]=c;
 			}
 		}
-	//printf("%s",a);
+	
 	for(i=0;i<strlen(b);i++)
 		for(j=0;j<strlen(b)-1;j++)
 		{

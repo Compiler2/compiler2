@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int s[6],N=0;
 for(int i=0;i<1000;i++){

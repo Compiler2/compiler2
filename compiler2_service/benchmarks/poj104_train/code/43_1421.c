@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sushu(int m)
 { int i;
   for(i=2;i<=m;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pr(int n)
 { 
     int z;

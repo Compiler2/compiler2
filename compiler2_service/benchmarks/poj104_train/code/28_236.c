@@ -1,6 +1,8 @@
+#include <header.h>
+
 main()
 {
-	char s[4000];//?400???4000
+	char s[4000];
 	gets(s);
 	int i,j;
 	for(i=0;;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int tianshu(int nian,int yue);

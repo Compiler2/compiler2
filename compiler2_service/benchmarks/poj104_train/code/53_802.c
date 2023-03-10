@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k=1,n,result[300],tem[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,e,u,x=0,y;
     char z1[201];

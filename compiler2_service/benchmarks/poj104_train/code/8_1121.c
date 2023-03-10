@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int input( int *s, int n )
 {

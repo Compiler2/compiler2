@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char xulie[10000];
 	int l=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     char zfc[256],wt[256],tar[256];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 float b[100];
 int he(int n,int m)
 {

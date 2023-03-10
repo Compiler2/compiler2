@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,k=0,t=0,y[100],x,a[100]={0},b[100];
@@ -16,8 +18,8 @@ int main()
         k++;
         }
       }
-  //    for(i=0;i<k;i++)
-  //    printf("%s %d@@\n",s1[i],a[i]);
+  
+  
     for(i=0;i<k-1;i++)
      for(j=0;j<k-i-1;j++)
      if(a[j]<a[j+1])

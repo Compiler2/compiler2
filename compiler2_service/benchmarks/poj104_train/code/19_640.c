@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char a[101][101]={0},b[101],c[101];

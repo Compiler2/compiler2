@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char name[1000][1000],leader,west,tem[1000];

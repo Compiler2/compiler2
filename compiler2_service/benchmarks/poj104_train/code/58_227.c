@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int panduan(char a){
 	int result=0;

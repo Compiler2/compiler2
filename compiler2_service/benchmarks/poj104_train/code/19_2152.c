@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
-	char zong[2000];//????
-	char x[200],y[200],words[200][20];//???????
+	char zong[2000];
+	char x[200],y[200],words[200][20];
 	int i,j=0,p=0,len;
 	gets(zong);
 	scanf("%s %s",x,y);

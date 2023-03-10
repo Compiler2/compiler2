@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int zong;
@@ -16,7 +18,7 @@ int main()
 			scanf("%d",&sz[0][i]);
 			sum1+=sz[0][i];
 		}
-		//printf("%d\n",sum1);
+		
 		for(i=1;i<n-1;i++)
 		{
 			for(j=0;j<m;j++)
@@ -29,17 +31,17 @@ int main()
 			scanf("%d",&sz[n-1][i]);
 			sum2+=sz[n-1][i];
 		}
-		//printf("%d\n",sum2);
+		
 		for(i=1;i<n-1;i++)
 		{
 			sum3+=sz[i][0];
 		}
-		//printf("%d\n",sum3);
+		
 		for(i=1;i<n-1;i++)
 		{
 			sum4+=sz[i][m-1];
 		}
-		//printf("%d\n",sum4);
+		
 		sum=sum1+sum2+sum3+sum4;
 		printf("%d\n",sum);
 		sum=0;

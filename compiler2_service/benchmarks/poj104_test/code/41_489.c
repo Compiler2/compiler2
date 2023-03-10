@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int b[5]={1,2,3,4,5},t[5];

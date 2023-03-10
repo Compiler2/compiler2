@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -5,7 +7,7 @@ int main()
     
     char op[104];
    gets(op);
-  // printf("%s",op);
+  
   int len;
   
   len=strlen(op);

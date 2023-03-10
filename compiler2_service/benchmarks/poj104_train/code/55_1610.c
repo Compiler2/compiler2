@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char output[128] = {0};
 int toDec(char* s, int a) {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
     int n,i,k=1,len;
     char zfc[201],sz[201]={0};

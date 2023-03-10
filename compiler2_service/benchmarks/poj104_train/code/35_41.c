@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int number[100][100],max[100]={0},n,m,flag[100]={1},i,j,temp=0;

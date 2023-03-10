@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stu{
          char n[30];
          int y;
@@ -64,7 +66,7 @@ int main()
    for (i=1;i<=tot;i++) printf("%s\n",b[i].n);
    for (i=1;i<=totc;i++) printf("%s\n",c[i].n);
    
- //  scanf("%d",&n);
+ 
    
    return 0;
    

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char gene1[500];
 	char gene2[500];

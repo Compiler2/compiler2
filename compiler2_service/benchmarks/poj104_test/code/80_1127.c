@@ -1,7 +1,9 @@
+#include <header.h>
+
 int leapyearmonth[12] = {31,29,31,30,31,30,31,31,30,31,30,31};
 int commonyearmonth[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
 int dayofyear[2] = {365,366};
-//????????
+
 int IsLeapYear(int year)
 {
 	if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))

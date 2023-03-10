@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int jud[200],num[30000],n,i,j,sum,res[200];

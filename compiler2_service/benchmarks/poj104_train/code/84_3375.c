@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int max=0,submax=0,i,n,x;

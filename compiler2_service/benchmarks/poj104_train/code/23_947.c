@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
     char str[200],*p,*q,*r,ans[200];
     int len,i;
-    //freopen("input.txt","r",stdin);
-    //freopen("output.txt","w",stdout);
+    
+    
     gets(str);
     len=strlen(str);
     for (p=str+len;p>str;p--) 

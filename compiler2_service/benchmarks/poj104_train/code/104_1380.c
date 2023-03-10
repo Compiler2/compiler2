@@ -1,3 +1,5 @@
+#include <header.h>
+
 int point(int num)
 {
 	if(num==1)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int matrix(int p[5][5], int, int);
 int main()

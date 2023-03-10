@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhi(int i)
 {
     int j,d;

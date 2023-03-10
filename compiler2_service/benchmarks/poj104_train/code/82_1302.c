@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,n,a[101],b[101],t=0,max=0;
 	scanf("%d",&n);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int identf(char *str);
 int isKey(char *str);
 

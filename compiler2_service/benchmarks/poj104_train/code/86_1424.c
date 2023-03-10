@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,time,cs,num;
 int a[1000],b[1000][60];

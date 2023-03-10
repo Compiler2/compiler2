@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	struct qj{
 		int lp;

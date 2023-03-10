@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(int year){
 	int result=0;
 if(year%400==0 || (year%100!=0 && year%4==0))

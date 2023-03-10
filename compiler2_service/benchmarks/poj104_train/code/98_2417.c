@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char dat[1000][41];
 int main()

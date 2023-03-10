@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isRunNian(int year){
     int result;
     if(year%400 == 0 ||(year%4==0 &&year%100!=0)){

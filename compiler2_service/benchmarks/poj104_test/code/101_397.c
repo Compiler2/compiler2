@@ -1,11 +1,13 @@
+#include <header.h>
+
 main()
 {
-int  A,B,C,as,bs,cs;       //??3???,????3??
+int  A,B,C,as,bs,cs;       
 char s[3]={0};
 int i;
-   for (A=1;A<=3;A++)      // ??A
-     for (B=1;B<=3;B++)             // ??B
-        for (C=1;C<=3;C++)          // ??C
+   for (A=1;A<=3;A++)      
+     for (B=1;B<=3;B++)             
+        for (C=1;C<=3;C++)          
           { as=(B>A)+(C==A);
       bs=(A>B)+(A>C);
       cs=(C>B)+(B>A);
@@ -17,8 +19,8 @@ int i;
 
            for(i=0;i<3;i++)printf("%c",s[i]);
 
-             }    //????
-       }   //????
+             }    
+       }   
 
 
 }

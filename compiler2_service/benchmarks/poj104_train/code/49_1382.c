@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 reverse(char s[],int j)
 {

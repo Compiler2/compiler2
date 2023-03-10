@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int i,j,n,num[300],temp,flag=0;

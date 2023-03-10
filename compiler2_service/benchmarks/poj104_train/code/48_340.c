@@ -1,3 +1,5 @@
+#include <header.h>
+
 void p(int a[9][9])
 {
 	int b[9][9],i,j,x,y;

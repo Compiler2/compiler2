@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a[50],b[50],c[50],d[50],e[50],f[50],start[50],end[50],total[50],i,j;
 	for(i=0;i<50;i++){

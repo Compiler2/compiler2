@@ -1,3 +1,5 @@
+#include <header.h>
+
 float jue(float t)
 {
 	if(t<0)
@@ -17,7 +19,7 @@ int main()
 	}
 	ave=s/n;
 	max=jue(a[0]-ave);
-	int k=0;//k??
+	int k=0;
 	for(i=1;i<n;i++)
 	{
 		tem=jue(a[i]-ave);

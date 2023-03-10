@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m;
 int a[5][5];
 void swap()

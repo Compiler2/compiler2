@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char s[256],a[256],b[256];
 int x,y,z,k,l,i,j,m,n,cha,mark=0;
@@ -27,7 +29,7 @@ for(i=0;i<z;i++){
 						}
                         s[z-cha]='\0';
 					}
-					else if(x==y){//??=?==	
+					else if(x==y){
 						for(k=0;k<y;k++){
 					        s[i+k]=b[k];
 						}
@@ -40,7 +42,7 @@ for(i=0;i<z;i++){
 						for(n=0;n<y;n++){
 						s[i+n]=b[n];}
 						s[z+cha]='\0';
-						z=strlen(s);//??????s?????????z???????
+						z=strlen(s);
 					}
 			}
 		}

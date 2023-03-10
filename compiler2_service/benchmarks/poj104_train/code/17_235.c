@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int left[101],len,top=0,i,j;
@@ -7,7 +9,7 @@ int main()
 		top=0;
 		puts(str);
 		len=strlen(str);
-		for(i=0;i<len;i++) //????????str[i]~~
+		for(i=0;i<len;i++) 
 		{
 			if(str[i]=='(')
 			{
@@ -19,8 +21,8 @@ int main()
 				if(top)
 				{
 					str[i]=' ';
-					str[left[top-1]]=' '; //??top??????
-					top--;  //??????????????--
+					str[left[top-1]]=' '; 
+					top--;  
 				}
 			    else
 					str[i]='?';

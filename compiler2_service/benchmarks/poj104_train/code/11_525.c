@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
   int year,month,date,i=1,sum=0;
   scanf("%d%d%d",&year,&month,&date);

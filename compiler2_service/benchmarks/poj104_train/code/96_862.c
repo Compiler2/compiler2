@@ -1,12 +1,14 @@
-//??13?????
+#include <header.h>
+
+
 int main()
 {
 	char a[110];
 	char result[110];
 	int b;
-	int last=0;  //?????,?????
-	int y;   //??
-	int s;   //?
+	int last=0;  
+	int y;   
+	int s;   
 	int l;
 	int i;
 	scanf("%s",a);
@@ -31,14 +33,14 @@ int main()
 		}
 		else
 		{
-			for(i=0;i<=l-1;i++)  //???“=”???
+			for(i=0;i<=l-1;i++)  //???ï¿½=ï¿½???
 			{
 				result[i]=result[i+1];
 			}
 		}
 	}
 	l=strlen(result);
-	if(l==0)            //??????
+	if(l==0)            
 	{
 		result[0]='0';
 		result[1]='\0';

@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int main()
 {
 	int n,i,j;
-	//char lian[100][256],hubu[100][256];
+	
 	char **lian, **hubu;
 	scanf("%d",&n);
 	lian = (char**)malloc(n*sizeof(char*));

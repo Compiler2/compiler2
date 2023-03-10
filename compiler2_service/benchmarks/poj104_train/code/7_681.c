@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    char s[257],a[257],b[257];
    int n,m;

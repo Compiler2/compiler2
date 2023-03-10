@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 const int maxlen=80;
@@ -8,7 +10,7 @@ int n, len, newline, nowlen;
 
 int main(){
 
-	//freopen("a.in", "r", stdin);
+	
 	scanf("%d", &n);
 	newline = 1;
 	for (int i=0; i<n; i++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void mysort(int*pn, int n)
 {
 	int i,j;

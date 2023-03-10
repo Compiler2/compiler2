@@ -1,3 +1,5 @@
+#include <header.h>
+
 int issushu(int x);
 int main()
 {

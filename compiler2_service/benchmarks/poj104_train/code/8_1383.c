@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void input(int *M,int *N,int a[],int b[])             
 {
@@ -7,7 +9,7 @@ void input(int *M,int *N,int a[],int b[])
 		scanf("%d",&a[i]);
 	for(i=0;i<*N;i++)
 		scanf("%d",&b[i]); 
-	//return M,N;                   	
+	
 	return;                           
 } 
  

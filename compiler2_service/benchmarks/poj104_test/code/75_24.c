@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int x[1000]={0},y[1000]={0},t[1000]={0},n=0,i,j,k=1,max;

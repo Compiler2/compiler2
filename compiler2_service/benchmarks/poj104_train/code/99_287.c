@@ -1,3 +1,5 @@
+#include <header.h>
+
 int year[100];
 double n,a,b,c,d;
 int main()

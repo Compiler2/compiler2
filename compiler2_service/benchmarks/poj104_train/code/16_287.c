@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char *argv[])
 {
   int num,b1,b2,b3,b4,b5;

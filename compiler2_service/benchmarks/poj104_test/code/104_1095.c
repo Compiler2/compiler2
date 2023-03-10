@@ -1,3 +1,5 @@
+#include <header.h>
+
 int search (int n)
 {
 	return n/2;

@@ -1,12 +1,14 @@
+#include <header.h>
+
 int check(char x)
 {
 	if(x=='1'||x=='2'||x=='3'||x=='4'||x=='5'||x=='6'||x=='7'||x=='8'||x=='9'||x=='0')
 	{
-		return 1;		//1??X???
+		return 1;		
 	}
 	else 
 	{
-		return 0;		//0??X????
+		return 0;		
 	}
 }
 int main()
@@ -14,7 +16,7 @@ int main()
 	char cha[30];
 	char chaa[30][30];
 	gets(cha);
-	int i=0,j=0,k=0,chec;    //chec???????????
+	int i=0,j=0,k=0,chec;    
 	char *pi;
 	pi=cha;
 	for(;*pi!='\0';pi++)
@@ -23,13 +25,13 @@ int main()
 			if(chec==1)
 			{
 				chaa[i][j]=*pi;
-//				printf("%c\n",chaa[i][j]);
+
 				j+=1;
 			}
 			else if(chec==0)
 			{
 				chaa[i][j]='\0';
-//				printf("%s\n",chaa[0]);
+
 				j=0;
 				i+=1;
 			}

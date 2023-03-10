@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main ()
 {
@@ -14,6 +16,6 @@ int main ()
      for ( ; a[i] == t ; i ++ , j ++ );
      printf ( "(%c,%d)" , t , j );
     }
-  // getchar (); getchar ();
+  
    return 0;
 }

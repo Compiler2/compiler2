@@ -1,3 +1,5 @@
+#include <header.h>
+
 double b(double x)
 {
 	if(x>=90&&x<=100)

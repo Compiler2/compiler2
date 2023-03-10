@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	int k,a,b,c,d,e,place; //*place???????*//
+	int k,a,b,c,d,e,place; 
 	scanf("%ld",&k);
 	if (k>9999)
 	place=5;

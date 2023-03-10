@@ -1,4 +1,6 @@
-//#include<string.h>
+#include <header.h>
+
+
 int i,n,a[1000],max,min;
 float aver;
 

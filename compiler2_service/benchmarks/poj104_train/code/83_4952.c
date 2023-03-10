@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a,b,c;int xuefen[100],fenshu[100];float d;

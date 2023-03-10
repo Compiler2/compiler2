@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[150],d[150]={0};

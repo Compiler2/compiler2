@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[3],as[3],c,i,j;
@@ -18,7 +20,7 @@ int main()
                             for(j=0;j<3;j++)
                                 if(a[j]==i)
                                     printf("%c",b[j]);
-                        //printf("%d %d %d\n",a[0],a[1],a[2]);
+                        
                     }
                 }
 

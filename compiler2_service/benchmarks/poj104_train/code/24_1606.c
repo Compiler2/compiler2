@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -7,11 +9,11 @@ int main()
 
     int i,k, n;
 
-    // ???????
+    
     gets(s);
 
 
-    // ?s???????????words?
+    
     n = 0; k = 0;
     for (i = 0; s[i] != 0; i++) {
         if (s[i] == ' '||s[i]==',') {
@@ -25,7 +27,7 @@ int main()
     n++;
    
 
-    // ????words??????
+    
     int maxlen=0, minlen=0;
     for ( i = 0; i < n; i++) {
 		if (words[i][0]!='\0'){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
      int n,len,a[500],i0=0;

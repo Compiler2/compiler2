@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[]){
 	int n,age[100],i,team[4]={0};

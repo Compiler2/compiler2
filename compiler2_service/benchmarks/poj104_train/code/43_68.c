@@ -1,6 +1,8 @@
+#include <header.h>
+
 main()
 {
-      int a(int x);//????????? 
+      int a(int x);
       int m,i,k;
       scanf("%d",&m);
       for(i=2;i<m/2+1;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s[1000][1000];
 	int len[1000]={0};

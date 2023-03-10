@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,w[300],s[300];
 	int f=0;
@@ -16,7 +18,7 @@ int main(){
 		}
 		if(f==0)
 		{
-	//		printf("%d\n ",w[i]);
+	
 			s[k]=w[i];
 			k++;
 		}

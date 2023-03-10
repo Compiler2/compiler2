@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int q,i,e,p=0,o=0;
 	double w,r,M[100]={0},F[100]={0};

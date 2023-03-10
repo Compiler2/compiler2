@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k,a[10000],b,j,d=0;
 	for(i=0;i<10000;i++){

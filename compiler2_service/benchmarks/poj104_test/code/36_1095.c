@@ -1,6 +1,8 @@
+#include <header.h>
+
 
 int main(){
-	char w[2000];//??
+	char w[2000];
 	char s[2000];
 	char m;
 	int i,k;

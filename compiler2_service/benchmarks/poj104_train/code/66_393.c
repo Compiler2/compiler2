@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Dijitian(int Y,int M,int D);
 int isRunNian(int Y);
 int main(){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	char zfc[100][50],gaiguo[100][50];

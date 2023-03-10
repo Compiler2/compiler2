@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,sum1=0;
 	float sum=0;

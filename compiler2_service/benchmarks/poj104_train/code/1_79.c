@@ -1,3 +1,5 @@
+#include <header.h>
+
 int func(int m,int q)
 {
 	int b[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int a,int b)
 {
 	if (a >= b)
@@ -15,10 +17,10 @@ int main()
 	int len1 = 0, len2 = 0;
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	//????????
+	
 	int j = 0;
 	for (int i = len1 - 1; i >= 0; i--, j++)
-		a[j] = s1[i] - '0';//?s1????????a?????????????????
+		a[j] = s1[i] - '0';
 	
 	j = 0;
 	for (int i = len2 - 1; i >= 0; i--, j++)
@@ -34,7 +36,7 @@ int main()
 			a[i+1]++;
 		}
 	}
-	int tag = 0;//????0?
+	int tag = 0;
 	for (int i = m; i >= 0; i--)
 	{
 		if (a[i] != 0)

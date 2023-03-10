@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5][5];
 int max(int i,int j)
 {

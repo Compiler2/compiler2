@@ -1,3 +1,5 @@
+#include <header.h>
+
 int maxii(int n,int *a)
 {
     int k,i,s;

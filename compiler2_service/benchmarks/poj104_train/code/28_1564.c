@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
         char a[2000];
         int sz[256],i,j,k;

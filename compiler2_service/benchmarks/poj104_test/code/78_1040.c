@@ -1,3 +1,5 @@
+#include <header.h>
+
 int z,q,l,s;
 int a[5];
 void print()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {     int n;scanf("%d",&n);
       float* a=(float*)malloc(n*sizeof(float));

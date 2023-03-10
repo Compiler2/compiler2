@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1001]={0};
 int b[1001]={0};
 int m,n;

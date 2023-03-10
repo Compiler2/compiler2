@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char senior[100][10];
@@ -46,18 +48,18 @@ main()
                   strcpy(senior[i],senior[j]);
                   strcpy(senior[j],temp);                                  
               }
-//      for (i=0;i<numj;i++)
-//          for (j=i+1;j<=numj;j++)
-//              if (strcmp(junior[i],junior[j])>0)
-//              {
-//                  year= ju[i]; ju[i]=ju[j]; ju[j]=year;
-//                  strcpy(temp,junior[i]);
-//                  strcpy(junior[i],junior[j]);
-//                  strcpy(junior[j],temp);
-//              }
+
+
+
+
+
+
+
+
+
       for (i=0;i<=nums;i++)
       {
-          //printf("%d ",list[i]);
+          
           puts(senior[i]);
       }
       for (i=0;i<=numj;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct statistics
 {int num;  int chinese;  int math;  int sum;}
  form[100000],temp;

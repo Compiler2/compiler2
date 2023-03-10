@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int array[1000],n,k,i,j,flag=0,m;
 	scanf("%d%d",&n,&k);

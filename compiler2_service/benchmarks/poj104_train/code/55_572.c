@@ -1,3 +1,5 @@
+#include <header.h>
+
 int power(long int a,long int i)
 {
 	unsigned long j,k=1;

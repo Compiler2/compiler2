@@ -1,10 +1,12 @@
+#include <header.h>
+
 int days[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};  
 int leap_days[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};  
 int isLeapYear(int year)  
 {  
      return year % 400 == 0 || year % 4 == 0 && year % 100 != 0;  
  }  
- //????????(day,month)?????   
+ 
  int sumFromFirstDay(int year, int month, int day)  
 {  
     int i, ret = day;  

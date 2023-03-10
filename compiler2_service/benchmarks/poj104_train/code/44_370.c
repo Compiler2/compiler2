@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int n)
 {
 	int i,j,d[201],timer=0,neo=0,e=1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char a[100][100]={0},b[100][100]={0};
@@ -6,7 +8,7 @@ main()
 	for(l=0;l<k;l++)
 	{
 	scanf("%s",a[l]);
-	//printf("Now input b:\n");
+	
 	scanf("%s",b[l]);
 	
 	}
@@ -29,7 +31,7 @@ main()
 		else 
 			c[l][i]=a[l][i]-'0';
 	}
-	//printf("The result is:\n");
+	
 	for(i=0;i<n;i++)
 		printf("%d",c[l][i]);
 	printf("\n");

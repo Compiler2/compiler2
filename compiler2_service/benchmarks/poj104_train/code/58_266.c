@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,t;
@@ -27,6 +29,6 @@ int main()
                       if(t==1)
                       printf("1\n");
                     }
-    //getchar();
+    
     }
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
   struct points
     {
        char name[30];

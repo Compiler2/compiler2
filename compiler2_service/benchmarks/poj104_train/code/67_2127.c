@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,cases[100][3];
 	scanf("%d",&n);

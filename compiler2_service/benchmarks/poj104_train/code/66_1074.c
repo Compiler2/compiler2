@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int DiJiTian(int year, int month, int day); 	 
 	int isRunNian(int year);

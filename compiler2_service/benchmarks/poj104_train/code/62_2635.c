@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char zxc[230],cxz[230];

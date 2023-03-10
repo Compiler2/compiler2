@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s[110];
 	int sz[110],ys,i,l,szsh[110];

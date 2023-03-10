@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char zfc[300];
     char zm[27]="abcdefghijklmnopqrstuvwxyz";

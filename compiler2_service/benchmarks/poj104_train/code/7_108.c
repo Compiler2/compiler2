@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     char yuan[256],jiu[256],xin[256];

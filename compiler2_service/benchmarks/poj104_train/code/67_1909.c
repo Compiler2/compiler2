@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int n,all[100],work[100];

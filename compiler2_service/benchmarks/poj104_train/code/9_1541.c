@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct node
 {
 char s[100];

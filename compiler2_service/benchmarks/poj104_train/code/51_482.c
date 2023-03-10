@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c[2000]={0},tc[2000][20]={0};

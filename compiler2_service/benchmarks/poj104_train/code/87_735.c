@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int k[1000],n,i;
 	for(n=0;n<=1000;n++){

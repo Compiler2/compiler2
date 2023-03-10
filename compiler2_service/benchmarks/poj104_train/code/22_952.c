@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 { 
 	unsigned int a[301],x;

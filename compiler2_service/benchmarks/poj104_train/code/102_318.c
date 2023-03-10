@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	float h,e,mh[40],fh[40];

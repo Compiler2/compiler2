@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void Reverse( char y[] )
 {
@@ -45,10 +47,10 @@ int main()
 	}
 	Reverse(y);
 	printf("%s\n",y);
-	//for(j=i;j>=0;j--)
-	//{
-	//	printf("%c",y[j]);
-	//}
-	//printf("\n");
+	
+	
+	
+	
+	
 	return 0;
 }

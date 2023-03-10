@@ -1,3 +1,5 @@
+#include <header.h>
+
 char *name[] = { "Mon.","Tue.","Wed.", "Thu.", "Fri.", "Sat.", "Sun."
                };
 int main(){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void right(char a[],int l,int t)
 {
     int i;

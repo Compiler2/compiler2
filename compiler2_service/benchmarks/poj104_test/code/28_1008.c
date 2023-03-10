@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char shen[1000],dc[100][100];
 int n=0,k=0,len,i,len1;

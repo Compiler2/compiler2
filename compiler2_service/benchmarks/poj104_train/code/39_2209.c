@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int n,i,k,many[120],wen,qimo,banji,all,who,max,q;
     char name[120][50],gan,xi;

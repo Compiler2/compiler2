@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,n,point[10],goal;
 float f,num,gpa;

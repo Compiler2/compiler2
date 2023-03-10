@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct grade
 {
 	char ID[20];

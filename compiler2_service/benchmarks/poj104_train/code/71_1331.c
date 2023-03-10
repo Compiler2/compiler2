@@ -1,3 +1,5 @@
+#include <header.h>
+
 int lon(int y,int m1,int m2)
 { int i;
 	int e;

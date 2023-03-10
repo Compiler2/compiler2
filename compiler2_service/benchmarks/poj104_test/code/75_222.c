@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int x[1000]={0},y[1000]={0},counter=0,len,i,j,max=0,temp=0;;
@@ -27,7 +29,7 @@ int main()
                           y[counter]=y[counter]+s[i]-'0';
                       }
     }
-    counter++;//?????
+    counter++;
     for(i=0;i<1000;i++)
     {
                        temp=0;

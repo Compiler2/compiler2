@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int d[12][13]={0},m,i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int b[],int x)
 {
 	switch(x)

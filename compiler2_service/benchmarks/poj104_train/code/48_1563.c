@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {const int d=10;
 	int a[d][d],b[d][d];

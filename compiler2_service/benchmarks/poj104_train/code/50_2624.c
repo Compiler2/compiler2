@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int day,mon[12],i=0,k;

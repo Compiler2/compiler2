@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k;
 	char b[1000][1000]={0};

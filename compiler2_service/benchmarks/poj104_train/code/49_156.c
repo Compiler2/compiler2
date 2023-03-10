@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 void pause()
@@ -19,7 +21,7 @@ for(i=0;i<=n-len;i++)
 		{huiwen[j]=*(str+i+j);
 		}
 	huiwen[len]='\0';
-	reverse(huiwen,rev,len);//rev???
+	reverse(huiwen,rev,len);
 	if(strcmp(rev,huiwen)==0)
 	printf("%s\n",huiwen);
 	}
@@ -34,12 +36,12 @@ rev[geshu]='\0';
 }
 
 int main()
-{//void pause();
+{
 char str[500];
 int n;
 scanf("%s",str);
 n=strlen(str);
-//???????
+
 int i;
 
 for(i=2;i<=n;i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int win=0;
 void jzb(int a,int b)
 {

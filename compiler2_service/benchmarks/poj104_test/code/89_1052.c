@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -19,8 +21,8 @@ main()
                                 
                 }
           }
-          //for(i=0;i<=t;i++)
-    //  printf("%d",a[i]);
+          
+    
         for(i=0;i<n;i++)
           {
                         Flag1=0;
@@ -28,13 +30,13 @@ main()
                       for(j=0;j<=t-2;j=j+2)
                            {   
                                            if(a[j]==i)
-                                         //printf("%d %d\n",a[j],i);  
+                                         
                                          Flag1=1;
                                          
                                          
                                          
                            }
-                           //printf("%d",Flag1);
+                           
                       if(Flag1==1)
                            continue;
                       sum=0;

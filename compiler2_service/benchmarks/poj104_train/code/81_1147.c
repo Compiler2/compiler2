@@ -1,3 +1,5 @@
+#include <header.h>
+
 int exchange(int a,int b){
 	if(a>=0&&a<5&&b>=0&&b<5){
 		return 1;

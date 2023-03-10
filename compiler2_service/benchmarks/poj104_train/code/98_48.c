@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i, k=0, a, n;
@@ -13,7 +15,7 @@ int main()
 			strcat(para[k], word[i]);
 		}
 		else{
-			//printf("%d", strlen(para[k]));
+			
 			k++;
 			strcat(para[k], word[i]);
 		}

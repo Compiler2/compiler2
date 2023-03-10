@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j=0,an[500],bn[500],max,l,out;
 	char x;

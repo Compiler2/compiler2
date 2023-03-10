@@ -1,9 +1,11 @@
+#include <header.h>
+
 int check(int a[5][5],int h,int l)
 {
     int i,j;
-    for (i=0;i<5;i++)//???
-      if (a[h][i]>a[h][l]) return 0;//?????number
-    for (i=0;i<5;i++)//scan hang
+    for (i=0;i<5;i++)
+      if (a[h][i]>a[h][l]) return 0;
+    for (i=0;i<5;i++)
       if (a[i][l]<a[h][l]) return 0;
     return 1;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct v
 {
 	char a[10];

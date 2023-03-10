@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){ 
 	double z,q;
 	char a[1][1000],b[1][1000];

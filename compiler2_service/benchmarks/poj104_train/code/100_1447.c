@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,ucase[26]={0},lcase[26]={0},sum=0;

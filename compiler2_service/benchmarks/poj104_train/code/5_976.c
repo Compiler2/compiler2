@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double n;
 	char s1[501];

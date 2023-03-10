@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char str1[251]={0},str2[251]={0},str3[251]={0};

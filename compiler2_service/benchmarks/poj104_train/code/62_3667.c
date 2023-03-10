@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char juzi[201];
     gets(juzi);

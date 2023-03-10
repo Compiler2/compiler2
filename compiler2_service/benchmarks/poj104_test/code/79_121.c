@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n=1,m=1,a,j;
 	
@@ -12,7 +14,7 @@ int main(){
 		}
 		int k=n;
 	
-		while(k>1){             //k\n??
+		while(k>1){             
 			for(i=1;i<=n;i++){
 				if(p[i]!=0){
 			         a++;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char sa[250],sb[250],s[250],t[250],temp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() 
 { 
 int count[26]={0},t=0,j,k=0; 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,n,j,k,a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31},sum=0;

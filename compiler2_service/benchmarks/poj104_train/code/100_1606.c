@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char str[300];
@@ -22,6 +24,6 @@ int main()
     if (b==0) {
              printf("No");
              }
-   // puts(str);
+   
     return 0;
 }

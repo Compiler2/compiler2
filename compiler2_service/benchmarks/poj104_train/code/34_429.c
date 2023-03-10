@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jiaogu(int q){
 	if(q%2!=0){
 		printf("%d*3+1=%d\n",q,q*3+1);

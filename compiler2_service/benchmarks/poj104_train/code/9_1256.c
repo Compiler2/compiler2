@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     struct old{
         char ID[10];

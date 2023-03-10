@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isRunNian(int year);
 int main(){
     int M,m,n,p,i,result=0;

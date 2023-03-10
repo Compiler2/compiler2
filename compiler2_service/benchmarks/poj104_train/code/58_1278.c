@@ -1,7 +1,9 @@
+#include <header.h>
+
 char s[100];
 int main(void)
 {
-	//freopen("in.txt","r",stdin);
+	
 	int i,j,k;
 	char c;
 	int n;
@@ -21,7 +23,7 @@ int main(void)
 			c=getchar();
 		}
 		s[i]='\0';
-		//printf("%s\n",s);
+		
 		if(s[0]=='_'||s[0]>='a'&&s[0]<='z'||s[0]>='A'&&s[0]<='Z')
 		{
 			int ok=1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct s{
 	int num;
 	int x;

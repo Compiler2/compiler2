@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     long f[102][102]={0},i,j,n,m,m1;

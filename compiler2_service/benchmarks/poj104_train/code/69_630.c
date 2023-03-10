@@ -1,3 +1,5 @@
+#include <header.h>
+
 int c[300],d[300];
 void plus(int i,int j,int a){
 	if (i>=0) a+=c[i];

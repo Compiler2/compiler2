@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n;
     int sum=0;
@@ -7,7 +9,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%s",c[i]);
         m[i]=strlen(c[i]);
-      //  printf("%s\n",c[i]);
+      
     }
     for(int i=0;i<n;i++){
         for(int j=0;j<m[i];j++){

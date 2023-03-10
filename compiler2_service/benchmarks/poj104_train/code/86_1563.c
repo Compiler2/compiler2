@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000][1000],b[1000][1000],c[1000];
 int x=0,y=0,z=0,i=0,m=0,e=0,r=0,t=0;
 int main()
@@ -19,7 +21,7 @@ for(i=0;i<e;i++){
     b[i][a[i][m]+3]=0;
     b[i][a[i][m]+1]=0;
     b[i][a[i][m]+2]=0;
-    //printf("%d\n",a[i][m]);
+    
     t++;
     }
 }

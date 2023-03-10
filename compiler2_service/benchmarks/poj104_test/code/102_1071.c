@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j=0,k=0,a,b,p=0,q=0;
 	double sz[50],f[50],m[50],e;

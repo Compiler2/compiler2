@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {  char zm[301]={0},ss[27]="abcdefghijklmnopqrstuvwxyz";
    scanf("%s",zm);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int m,int n);
 int main(){
 	int m,n,i,j,array[5][5],tmp;

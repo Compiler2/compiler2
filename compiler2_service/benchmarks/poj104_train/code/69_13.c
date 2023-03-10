@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[251],b[251],c[252];
@@ -23,7 +25,7 @@ int main()
 			else a[i]='0';
 		}
 	}
-//printf("%s\n%s\n",a,b);
+
 	for (i=0; i<=m;i++)
 		c[i]='0';
 

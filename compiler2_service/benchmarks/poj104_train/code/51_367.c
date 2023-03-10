@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {   int da,i,j,x,len,n,max[501];
     char s[501],a[501][6];

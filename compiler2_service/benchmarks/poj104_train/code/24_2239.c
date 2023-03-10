@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char c[5000],temp[20]={'\0'},min[20],max[20];

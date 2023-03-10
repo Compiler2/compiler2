@@ -1,3 +1,5 @@
+#include <header.h>
+
 void srev(char str[500], int len)
 {
 	char rev[500];

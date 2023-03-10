@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char ori[500], a[500][6];

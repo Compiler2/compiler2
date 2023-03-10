@@ -1,3 +1,5 @@
+#include <header.h>
+
 int remain(int start[],int n,int m)
 {
 	int k,i,j,d;

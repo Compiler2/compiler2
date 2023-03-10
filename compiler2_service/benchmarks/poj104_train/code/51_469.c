@@ -1,9 +1,11 @@
-//
-//  main.c
-//  Track 80,n-gram????
-//
-//  Created by Charles.thRay.Lee on 2/1/13.
-//  Copyright (c) 2013 Peking University. All rights reserved.
+#include <header.h>
+
+
+
+
+
+
+
 /*
  ??	??-From Whf
  ??

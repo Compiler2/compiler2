@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[110],b[110],i,j,m,yu,z,qishi;

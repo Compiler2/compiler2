@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;scanf("%d",&n);
 	int xueya[101][2],outcome[101];

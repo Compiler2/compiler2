@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	char str[1000];
 	gets(str);
@@ -23,8 +25,8 @@ int main() {
 
 	}
 
-	//printf("%d",max);
-	//printf("%d",min);
+	
+	
 
 	lenth=0;
 	int maxpostail;

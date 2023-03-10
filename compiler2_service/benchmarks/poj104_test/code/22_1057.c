@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int lim=0,i,j,a[301]={0},d=0;

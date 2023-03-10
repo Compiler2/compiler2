@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s1[510],s2[510];
 	double n,q;

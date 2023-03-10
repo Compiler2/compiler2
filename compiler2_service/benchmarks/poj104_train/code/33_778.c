@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char str[260],*ps,str2[260];
 int n,i,k;

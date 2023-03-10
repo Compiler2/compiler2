@@ -1,3 +1,5 @@
+#include <header.h>
+
 float a[10];
 int b[10];
 float c[10];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int why(char *s)
 {
 	int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k(int p){
 	int i,h,a=1;
 	if(p%2==0){

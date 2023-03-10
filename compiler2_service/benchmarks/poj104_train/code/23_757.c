@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int turn(char *a)
 {

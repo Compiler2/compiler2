@@ -1,3 +1,5 @@
+#include <header.h>
+
 void peidui(char str[],int len);
 int main()
 {

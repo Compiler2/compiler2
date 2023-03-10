@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,lenth,c[500]={0},max=0,j,t;
@@ -21,15 +23,15 @@ int main()
 				c[i]++;
 			
 		}
-		                                            // printf(" %s %d \n",b,c[i]);
+		                                            
 	}
 	for(i=0;i<lenth-n;i++)
 	{
 		if(c[i]>max) max=c[i];
-		                                   //printf(" %d \n",c[i]);
+		                                   
 	}
   if(max>1)
-  {                                        // printf("  %d  \n",max);
+  {                                        
 	printf("%d\n",max);
 	  for(i=0;i<lenth-n;i++)
 	{

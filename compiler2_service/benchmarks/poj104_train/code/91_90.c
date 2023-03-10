@@ -1,3 +1,5 @@
+#include <header.h>
+
 void P(char a,char b)
 {
 	int m,n;

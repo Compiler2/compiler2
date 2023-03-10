@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,i,m,r,sum=0;
@@ -15,7 +17,7 @@ main()
 				if(r==7) break;
 			}
 			if(m!=0||r==7) continue;
-			else{//printf("i=%d\n",i);
+			else{
 			sum=sum+i*i;}
 		}
 	}

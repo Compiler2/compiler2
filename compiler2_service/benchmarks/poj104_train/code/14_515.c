@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long int n,a[100000][2];

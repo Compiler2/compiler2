@@ -1,3 +1,5 @@
+#include <header.h>
+
 int stu(int (*p)[5],int m,int n)
 {int i,tem;
 

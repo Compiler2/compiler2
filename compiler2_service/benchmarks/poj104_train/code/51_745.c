@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[505],b[505][10];
 int n;
 void zi(char a[])

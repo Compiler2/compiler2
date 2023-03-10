@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int an,hang,lie,i,r,a[5][5],paohuierhao=0;

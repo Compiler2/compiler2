@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n1,n2,n3,i,j;
@@ -28,14 +30,14 @@ int main()
 				
 			}
 			p2=&a2[0];
-			if(j==n2&&*(p_in-1)==' ')//??
+			if(j==n2&&*(p_in-1)==' ')
 			{
 
 				if(n3>n2)
 				{
 					p=p_end;
 					
-					//
+					
 					while(p>=p1)
 					{
 						*(p+n3-n2)=*p;
@@ -55,21 +57,21 @@ int main()
 					}
 				}p_end=p_end+n3-n2;
 
-			while(p_in<p1)//??
+			while(p_in<p1)
 			{
 				*p_in=*p3;
 				p_in++;
 				p3++;
 			}
 			}
-			else if(j==n2&&p_in==&a1[0])//??
+			else if(j==n2&&p_in==&a1[0])
 			{
 
 				if(n3>n2)
 				{
 					p=p_end;
 					
-					//
+					
 					while(p>=p1)
 					{
 						*(p+n3-n2)=*p;
@@ -89,7 +91,7 @@ int main()
 					}
 				}p_end=p_end+n3-n2;
 
-			while(p_in<p1)//??
+			while(p_in<p1)
 			{
 				*p_in=*p3;
 				p_in++;

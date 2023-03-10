@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fanxu(int x);
 int main(int argc, char* argv[])
 {

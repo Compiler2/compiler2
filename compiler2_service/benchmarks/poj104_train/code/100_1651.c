@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int len,i,j,p=0;
 	int count[2][26]={0};

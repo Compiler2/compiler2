@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int t,cycle,i,j,l,k;

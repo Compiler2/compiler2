@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,ss,sz,i,sc[100],e,k;
 	for(i=0;i<100;i++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int read(char x[])
 {
 	int i,len,num=0;

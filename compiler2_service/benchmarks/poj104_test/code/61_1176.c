@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 		int n,i,t;
 		int a[50]={1,1};

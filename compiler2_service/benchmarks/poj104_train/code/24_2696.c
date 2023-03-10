@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int N = 1000;
 int main() {
     char s[N],max[N],min[N];

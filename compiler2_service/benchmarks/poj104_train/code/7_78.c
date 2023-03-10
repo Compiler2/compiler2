@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,t=0;
 	char str[260],sub[20],rep[20];

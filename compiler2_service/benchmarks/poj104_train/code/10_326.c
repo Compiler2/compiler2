@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Max(int n,int a[])
 {
    int x=0;

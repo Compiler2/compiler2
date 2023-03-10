@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 int i=0,n,j=0,k,sub,first=0;
 char str[100],s[100]="",word[100],t[100]="";

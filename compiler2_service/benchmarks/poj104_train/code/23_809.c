@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	char *str,*p;
-	int n,m=0,i,j;//?m??????????//
+	int n,m=0,i,j;
 	str=(char*)malloc(100*sizeof(char));
 	p=(char*)malloc(100*sizeof(char));
 	gets(str);

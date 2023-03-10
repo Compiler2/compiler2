@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int row,line,rownow,linenow,n,i,j,a[10000];

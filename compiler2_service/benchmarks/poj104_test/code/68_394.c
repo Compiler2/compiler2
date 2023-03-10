@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num_f (int x);
 int main ()
 {

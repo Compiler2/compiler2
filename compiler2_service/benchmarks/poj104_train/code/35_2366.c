@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int h,l;
 int a[10][10];

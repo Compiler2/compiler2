@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int array[5][5],int n)
 {
 	int t=array[n][0],i;

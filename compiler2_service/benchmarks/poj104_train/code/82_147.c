@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,k,cs[100]={0},t=0,max;

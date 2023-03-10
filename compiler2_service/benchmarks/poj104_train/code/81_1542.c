@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int hanshu(int s[5][5],int n,int m);

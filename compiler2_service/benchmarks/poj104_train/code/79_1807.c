@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int c,outnum=0,m=1,n,i,a[300];;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[500],string[500][500];

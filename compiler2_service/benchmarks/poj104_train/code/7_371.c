@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {  char str[300*100],sub[100],rep[100];

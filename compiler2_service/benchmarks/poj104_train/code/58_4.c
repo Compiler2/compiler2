@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -17,13 +19,13 @@ int main()
             for(j=0;j<s;j++)
               {
                             k=a[i][j];
-               //  if(a[i][j]!=' '&&a[i][j]!='.')
-               //  l=0;
-               //  else
-              //   {
-              //   l=1;
-              //   break;
-              //   }
+               
+               
+               
+              
+              
+              
+              
                  if(k<123&&k>96)
                  l=0;
                  else if(k<91&&k>64)

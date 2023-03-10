@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 int n,i;
 char y[260],t[260]={0};

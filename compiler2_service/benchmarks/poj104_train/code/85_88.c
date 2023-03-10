@@ -1,3 +1,5 @@
+#include <header.h>
+
 int legal(char s[20])
 {
 	int i;

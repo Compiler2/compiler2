@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -35,7 +37,7 @@ int main()
 
    {
 
-      //printf("%d\n",i);
+      
 
       l=1;
  

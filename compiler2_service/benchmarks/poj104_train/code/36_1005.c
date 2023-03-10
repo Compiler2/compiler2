@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jud(char a[],char b[])
 {
 	int i,c[2][52]={0},m=0;

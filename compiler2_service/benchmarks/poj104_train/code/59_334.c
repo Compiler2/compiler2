@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,m,p,num=0;
@@ -34,7 +36,7 @@ int main()
 				if(x[1][i]=='.') y[1][i]=1;
 			}
 		}
-		for(i=1;i<=k-2;i++)  //?
+		for(i=1;i<=k-2;i++)  
 		{
 			if(x[i][0]=='@')
 			{

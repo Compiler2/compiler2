@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void order(int s[1000],int *p)
 {

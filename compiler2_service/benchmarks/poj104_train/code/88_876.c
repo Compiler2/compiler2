@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { char *a,*p;
   int i,t,n;

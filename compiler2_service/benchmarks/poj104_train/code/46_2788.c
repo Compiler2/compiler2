@@ -1,3 +1,5 @@
+#include <header.h>
+
 void Matrix(int a[100][100],int srow,int scol,int erow,int ecol)
 {
 	int i,j;

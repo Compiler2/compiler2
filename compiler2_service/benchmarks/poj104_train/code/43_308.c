@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jss(int x);
 int main(){
     int m,i;

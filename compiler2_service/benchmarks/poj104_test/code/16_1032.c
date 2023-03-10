@@ -1,11 +1,13 @@
-//*5-1
+#include <header.h>
+
+
 int MyInverseitoa(int iNum, char*ch,  int radix)
 {
 	int iBits=0;
-   //?iNum?????10????????????????? 
+   
 	do 
 	{
-		ch[iBits]=iNum%radix;  //
+		ch[iBits]=iNum%radix;  
 		printf("%d",ch[iBits]);
 		iNum/=radix;
 		iBits++;
@@ -18,7 +20,7 @@ int main()
 {
 	int iNum, iNumInverse, iBits=0;
 
-	char ch[12];  ///int ??10?
+	char ch[12];  
 	scanf("%d", &iNum);
 	if (iNum==0)
 	{
@@ -27,9 +29,9 @@ int main()
 	}
 	else
 	{
-		iBits = MyInverseitoa(iNum, ch,10);  //?????'\0'
-		//iNumInverse = Myatoi(ch, iBits);
-		//printf("%d", iNumInverse);
+		iBits = MyInverseitoa(iNum, ch,10);  
+		
+		
 	}
 
 	return 0;

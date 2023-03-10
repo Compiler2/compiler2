@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,n,t[3]={0},u[3]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     char s[100],a[100]={0};

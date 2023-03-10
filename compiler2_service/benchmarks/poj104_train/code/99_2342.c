@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    int n,sz[100],i;
    double s1=0,s2=0,s3=0,s4=0;

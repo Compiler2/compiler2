@@ -1,6 +1,8 @@
-//int a[10000];
+#include <header.h>
+
+
 char a[500],b[10000];
-//double c[10000];
+
 int main()
 {
 	double xg;

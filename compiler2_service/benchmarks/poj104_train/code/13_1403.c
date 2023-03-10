@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 
@@ -13,7 +15,7 @@ int main()
 		{
 			if(a[i]==a[k])
 			{
-		//	m--; 
+		
 			n--;
 			for(j=i;j<n;j++)
 			{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int work(char*input);
 int compare(char a);
 int main(int argc, char* argv[])

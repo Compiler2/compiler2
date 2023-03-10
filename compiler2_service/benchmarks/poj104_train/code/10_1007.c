@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int a[100]={0};
 int max[100]={0};

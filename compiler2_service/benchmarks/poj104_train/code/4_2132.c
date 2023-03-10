@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int h,l,(*p)[100];
 void shuchu(int a)

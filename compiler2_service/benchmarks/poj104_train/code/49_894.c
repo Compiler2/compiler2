@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char substr(char s[],int,int);

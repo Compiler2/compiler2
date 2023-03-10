@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s1[200],s2[200];
 int a[200],b[200],c[200];
 int alen,blen,clen;
@@ -45,11 +47,11 @@ int add_bigint(int*a,int alen,int*b,int blen,int*c)
 
 int main(int argc, char*argv[])
 {
-	//int N,i;
+	
     
-	//scanf("%d",&N);
-   // for(i=1;i<=N;i++)
-	//{
+	
+   
+	
 		scanf("%s%s",s1,s2);
 
 		alen=str2bigint(s1,a);
@@ -58,6 +60,6 @@ int main(int argc, char*argv[])
 	
 		clen=add_bigint(a,alen,b,blen,c);
 		print_int(c);
-//}
+
 		return 0;
 }

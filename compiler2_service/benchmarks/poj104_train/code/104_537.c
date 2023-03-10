@@ -1,17 +1,19 @@
+#include <header.h>
+
 
 
 int main()
-{//de
+{
 	void seq(int m,int*seqm);
 	int a,b;
 	int seqa[10],seqb[10];
 	int i,t;
-//in
+
 	scanf("%d%d",&a,&b);
-//pro
+
 	seq(a,seqa);
 	seq(b,seqb);
-//ou
+
 	for(i=0;seqa[i]==seqb[i];i++)t=seqa[i];
 	printf("%d",t);
 	return 0;

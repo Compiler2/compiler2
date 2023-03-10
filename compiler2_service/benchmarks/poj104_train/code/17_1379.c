@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int ghus(char a[]);
 	void noghus(char a[]);

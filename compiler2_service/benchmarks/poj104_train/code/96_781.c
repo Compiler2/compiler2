@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,k,l,count,mid,judge,re[110];
 	char num[110],fra[110];
@@ -8,9 +10,9 @@ int main(){
 		fra[i]=num[i];
 	}
 	judge=(num[0]-'0')*10+(num[1]-'0');
-//	for(i=0;i<l;i++){
-//		printf("%c\n",fra[i]);
-//	}
+
+
+
 	for(i=0;i<l-1;i++){
 		mid=(fra[i]-'0')*10+(fra[i+1]-'0');
 		count++;

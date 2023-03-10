@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a=0,b=0,m=0,j=0,i=0,k=0,l=0,y=0;
@@ -5,11 +7,11 @@ main()
       for(j=0;j<=1000;j++)
       {o[j]='\0';}
       scanf("%d %s %d",&a,n,&b);
-      //strlwr(n);
+      
       for(j=0;n[j]!='\0';j++)
       if(n[j]>='A'&&n[j]<='Z')
       n[j]=n[j]-'A'+'a';
-      //j=strlen(n);
+      
       for(i=0;i<j;i++)
       {
           if(n[i]>='a'&&n[i]<='z')
@@ -26,11 +28,11 @@ main()
           }
           m=m+k;            
       }        
-      //printf("%d",m);
+      
       do
       {
           for(y=1;o[y]!='\0';y++);
-          //y=strlen(o);
+          
           for(i=y;i!=0;i--)
           {
               o[i]=o[i-1];                

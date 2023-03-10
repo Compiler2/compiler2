@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void sr(int a[100],int b[100],int x,int y);

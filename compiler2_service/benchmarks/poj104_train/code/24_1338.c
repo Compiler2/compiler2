@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zfc[3000],danci[50][50]={'0'};

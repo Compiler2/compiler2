@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int len,judge,i,all,p;
 	char input[21];

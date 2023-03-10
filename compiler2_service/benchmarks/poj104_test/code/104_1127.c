@@ -1,3 +1,5 @@
+#include <header.h>
+
 int find(int,int);
 int find(int x,int y)
 {

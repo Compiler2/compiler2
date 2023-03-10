@@ -1,3 +1,5 @@
+#include <header.h>
+
 char swap(char str[100])
 {
     int n,i,j;

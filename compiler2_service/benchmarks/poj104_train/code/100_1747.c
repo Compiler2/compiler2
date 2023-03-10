@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,s,k,f;
 	int v=1;
@@ -26,7 +28,7 @@ int main(){
 	{
 		printf("No");
 	}
-	// printf("%s",z);
+	
 	cd=strlen(z);
 	
 	for(k=0;k<=cd-2;k++)
@@ -43,7 +45,7 @@ int main(){
 		}
 		
 	}
-//	printf("%s",z);
+
 	for(s=0;s<cd;s++)
 	{
 		if( ( (s==0)||(z[s]!=z[s-1]) )  && (z[s]!=z[s+1])  )

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int b[100];

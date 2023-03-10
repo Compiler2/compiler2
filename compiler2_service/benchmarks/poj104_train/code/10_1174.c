@@ -1,3 +1,5 @@
+#include <header.h>
+
 int height[26];
 int x;
 int cmp(int a,int b)

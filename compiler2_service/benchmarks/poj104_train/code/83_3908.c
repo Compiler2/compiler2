@@ -1,3 +1,5 @@
+#include <header.h>
+
  
 double gc(int m); 
 int main(){

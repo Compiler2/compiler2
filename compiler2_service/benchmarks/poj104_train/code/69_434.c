@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int l1,l2,l,m,i,k,g,f;
@@ -12,7 +14,7 @@ main()
          printf("%s",str1);
       else
       {   
-    //  printf("%d %d",l1,l2);
+    
       if(l1>l2)
         {
                
@@ -27,14 +29,14 @@ main()
                                str2[i]='0';
                                
                  }
-                 // printf("%s %s",str4,str2);
+                 
                  for(i=m;i<=l-1;i++)
                  str2[i]=str4[i];
                  str2[l]='\0';
                  
-              //   printf("%s",str2);
+              
              
-              //  printf("%s",str2);
+              
                
                }
         
@@ -56,21 +58,21 @@ main()
                  
                  str1[l]='\0';
              
-           //    printf("%s",str1);
+           
         }
         g=0;
-        //printf("%d",l);
+        
         for(i=l-1;i!=-1;i=i-1)
-       { //printf("%d",l);  
+       { 
        
                             
-      //printf("%d",i);       
+      
                          if(str1[i]+str2[i]+g-48>'9')
                             {
                                     str3[i+1]=g+str1[i]+str2[i]-58;
                                     g=1;      
-                                    //printf("%c %c\n",str1[i],str1[i]);     
-                             //printf("%c",str3[i+1]) ;                  
+                                    
+                             
                             }
                             else
                             {
@@ -95,13 +97,13 @@ main()
         k=k+1;
       
         }  
-          //printf("%d",k); 
+          
         for(i=0;i<=l;i++)
            {
            str3[i]=str3[i+k];   
-         //  printf("%c",str3[i]);
+         
           }
-           //printf("%c",str3[0]);
+           
            
    printf("%s\n",str3);
       

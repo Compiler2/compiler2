@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int as[1000],n,k,c;

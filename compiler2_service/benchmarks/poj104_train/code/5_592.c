@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int p,q,i,flag=1;double m,c=0,d=0;char a[10086],b[10086];

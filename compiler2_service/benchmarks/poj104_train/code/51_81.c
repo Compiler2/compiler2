@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char z[502];
@@ -42,8 +44,8 @@ int main()
 		return 0;
 	}
 	printf("%d\n",max);
-	//for(a=0;a<=count-1;a++)
-	//{
+	
+	
 		for(b=0;b<=len-n;b++)
 		{
 			if(x[b]==max)
@@ -56,6 +58,6 @@ int main()
 			}
 		}
 		printf("\n");
-	//}
+	
 	return 0;
 } 

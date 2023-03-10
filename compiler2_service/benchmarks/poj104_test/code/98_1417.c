@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,len;
 	char a[1000][41];

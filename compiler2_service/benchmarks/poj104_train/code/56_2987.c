@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(char *);
 int main()
 {

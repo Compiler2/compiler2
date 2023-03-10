@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -31,7 +33,7 @@ int main()
 				curlen = 0;
 			}
 
-			//printf("word:%s %d\n", word[count-1], len[count-1]);
+			
 			if ( in == '\n' )
 				break;
 		}

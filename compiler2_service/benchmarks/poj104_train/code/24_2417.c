@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int min=0,max=0,minpl=0,maxpl=0,k;

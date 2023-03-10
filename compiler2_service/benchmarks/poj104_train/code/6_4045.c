@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 const int MAX = 100;
 
@@ -55,7 +57,7 @@ int main()
             }	 			 		
             sum = sum - A[0][0] - A[0][n - 1] - A[m-1][0] - A[m-1][n-1];
 			}
-      //  }
+      
       else
       {
 	   	  for(int i = 0; i < m; i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char st[100][21];
 int n,i,boo;
 int check(char s)

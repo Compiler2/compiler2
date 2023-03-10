@@ -1,10 +1,12 @@
-//
-//  main.c
-//  n-gram????
-//
-//  Created by ?  on 12-12-16.
-//  Copyright (c) 2012? ? . All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 
 char b[500][6]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sz[10][10];
 int main()
 {

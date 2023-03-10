@@ -1,13 +1,15 @@
+#include <header.h>
+
 int main()
 {
 	int n,a,b,p,c;
          int d=0;
 	int i=0;
 	int max(int x,int y);
-	scanf("%d",&n);//????n
+	scanf("%d",&n);
 	for(p=1;p<=n;p++)
 	{
-		scanf("%d %d ",&a,&b);//????
+		scanf("%d %d ",&a,&b);
 		if(90<=a&a<=140)
 		{
 			if(60<=b&b<=90)

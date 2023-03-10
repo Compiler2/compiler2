@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int t;
@@ -10,16 +12,16 @@ int main()
 	while(t--)
 	{
 		x=0;
-		scanf("%s",s);  //????
+		scanf("%s",s);  
 		l=strlen(s);
 		for(i=0;i<l;i++)
-			op[i]=0;   //????
+			op[i]=0;   
 		for(i=0;i<l;i++)
 		{
 			if(op[i]==0)
 			{
 				op[i]=1;
-				y=0;    //?????
+				y=0;    
 				for(j=i+1;j<l;j++)
 				{
 					if(s[i]==s[j])
@@ -28,7 +30,7 @@ int main()
 						op[j]=1;
 					}
 				}
-				if(y==0)  //????
+				if(y==0)  
 				{
 					x=1;
 					printf("%c\n",s[i]);
@@ -37,7 +39,7 @@ int main()
 			}
 		}
 		if(x==0)
-			printf("no\n");  //????
+			printf("no\n");  
 	}
 	return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int change(char *s,int *a){
   int l=strlen(s),i,j;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x(int n,int a[ ],int b[ ])
 {
   int num=0,num1=0,i=n-1,j=n-1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
     int w,p,carry=0,x,y,n0=0,result[260];
     char a[260],b[260];

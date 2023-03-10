@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int k,i;
 int sz[100][100],sum,s[100];

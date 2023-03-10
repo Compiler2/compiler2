@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,n,i,j,fenzi=2,fenmu=1;
 	double result[100]={0};

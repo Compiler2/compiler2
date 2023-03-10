@@ -1,3 +1,5 @@
+#include <header.h>
+
 /*int main()
 {
 	int m,n;
@@ -80,19 +82,19 @@ int main()
 	scanf("%d",&n);
 	int geshu[100];
 
-    //????
+    
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&k);
 		geshu[i]=k;
 	}
 
-	//????
+	
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<geshu[i];j++)
 		{
-					//??????
+					
 	        int sz[100];
 	        sz[0]=1;
  	        sz[1]=2;
@@ -100,7 +102,7 @@ int main()
 			{
 		        sz[b]=sz[b-1]+sz[b-2];
 			}
-	                //??????
+	                
 	        int szz[100];
 	        szz[0]=2;
 	        szz[1]=3;

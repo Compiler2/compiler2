@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {char str1[200],str2[200];
 int zhe1[200],zhe2[200];

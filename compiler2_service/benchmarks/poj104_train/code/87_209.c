@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,t[10000][6],T;
 	for(i=0;;i++){

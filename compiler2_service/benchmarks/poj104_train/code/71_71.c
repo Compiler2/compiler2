@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,y,i,k,m1,m2,a,m[12]={31,0,31,30,31,30,31,31,30,31,30,31};

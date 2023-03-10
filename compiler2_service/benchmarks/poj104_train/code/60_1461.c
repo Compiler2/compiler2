@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int su ( int x2 )
 {
@@ -23,6 +25,6 @@ int main ()
       }
    if ( f )
     printf ( "empty" );
-  // getchar (); getchar ();
+  
    return 0;
 }

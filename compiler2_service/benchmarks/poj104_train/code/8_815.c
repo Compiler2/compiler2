@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m, n, i, j, temp;
 int a[100] = {0}, b[100] = {0}, c[200] = {0};
 void Read(void);

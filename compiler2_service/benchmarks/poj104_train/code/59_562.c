@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m,i,a,b,jm[102][102]={0},next[102][102]={0},s=0;
     char mz[102][102];

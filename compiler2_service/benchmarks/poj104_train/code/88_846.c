@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 { char*str,*p;int k=1;
   str=(char *)malloc(40*sizeof(char));

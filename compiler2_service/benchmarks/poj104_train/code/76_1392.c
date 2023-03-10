@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,q[5000],h[5000],star=0,end=0,i,a,k,e;
 

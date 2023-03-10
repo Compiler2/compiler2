@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,z,e,i,k=0;
 	double y[100];

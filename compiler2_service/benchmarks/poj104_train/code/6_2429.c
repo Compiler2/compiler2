@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	//int array_edge_sum(int * b,int m,int n);
+	
 	int i,j,t,r,k,m,n,a[1000]={0},b[100][100]={0},sum=0;
     scanf("%d",&k);
 	

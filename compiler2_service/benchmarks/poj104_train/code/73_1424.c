@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     double a[7][7],max,c[7];
     int x=0,y=0,d=0;

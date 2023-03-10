@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int main()
 {
-  // for every point i, point[2i] stands for [i,i], point[2i+1] stands for (i,i+1)
-  // if point[i] == 1, it stands that this interval is included
+  
+  
   int n, point[2001];
   scanf("%d", &n);
   int i;
@@ -15,15 +17,15 @@ int main()
       int a, b;
       scanf("%d%d", &a, &b);
       if (a < left)
-	left = a; // find the leftest point
+	left = a; 
       if (b > right)
-	right = b; // find the rightest point
+	right = b; 
       int j;
       for (j = a * 2; j <= b * 2; j++)
 	point[j] = 1;
     }
-  int in = 0; // if in an interval, then value is 1, or the value is 0
-  int num = 0; // number of interval(s)
+  int in = 0; 
+  int num = 0; 
   for (i = 1 * 2; i <= 1000 * 2; i++)
     if (point[i] == 1)
       {

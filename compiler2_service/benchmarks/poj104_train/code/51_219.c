@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(char s[],int x,int y,int n)
 {
     int i;

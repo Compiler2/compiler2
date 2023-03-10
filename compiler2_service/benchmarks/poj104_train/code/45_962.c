@@ -1,14 +1,16 @@
+#include <header.h>
+
 
 
 int main(int argc, char *argv[])
 {
   char s[52],w[52];
   scanf("%s%s",s,w);
-  int len1,len2,i,m,num; //s?w???? ?????? 
+  int len1,len2,i,m,num; 
   len1=strlen(s);
   len2=strlen(w);
   
-  for(i=0;i<=len2-len1;i++){ //w[i]==s[0]
+  for(i=0;i<=len2-len1;i++){ 
                             for(m=0,num=0;m<len1;m++){
                                                 if(w[i+m]-s[m]==0){
                                                                 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 double male[40];
 double female[40];
 int mk,fk;

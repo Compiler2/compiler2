@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int n,a[300]={0},i,h=0,l,j,r,x,y,max;
@@ -13,7 +15,7 @@ main()
 			
 		for (j=i+1;(c[j]>='0' && c[j]<='9');j++)
                  a[h]=a[h]*10+c[j]-'0';
-			 //printf("%d  %d,",h,a[h]);
+			 
 			 h++;
 			 
 			 i=j;
@@ -50,14 +52,14 @@ main()
 	{
 		max=a[0];
 
-		// printf("%d\n",max);
+		
 	 
 		 for (i=0;i<h;i++)
         if ( a[i]>max )
 	     max=a[i];
 
 
-    // printf("%d\n",max);
+    
 
 
     
@@ -71,7 +73,7 @@ main()
         if (a[i]>max)
 	max=a[i];
 
-	//printf("%d\n",max);
+	
 
 
 		printf("%d",max);

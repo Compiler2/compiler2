@@ -1,3 +1,5 @@
+#include <header.h>
+
 int count;
 void f(int x,int y)
 {

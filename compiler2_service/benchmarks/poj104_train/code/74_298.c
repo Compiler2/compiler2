@@ -1,3 +1,5 @@
+#include <header.h>
+
 int su(int m)
 {
 	int p,i;
@@ -50,7 +52,7 @@ int main()
 	scanf("%d%d",&m,&n);
 	while(m<=n)
 	{
-		if(su(m)&&hui(m))//????1????????
+		if(su(m)&&hui(m))
 		{
 			if(count==0)
 			{

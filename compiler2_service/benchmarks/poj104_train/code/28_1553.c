@@ -1,3 +1,5 @@
+#include <header.h>
+
 char zfc[1000];
 int main(){
 	int len,sz[300]={0},i,k,cd[300];

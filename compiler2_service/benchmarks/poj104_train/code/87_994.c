@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int m,i,n,a,b,c,d,e,f;
 	for(i=0;i<20;i++){
@@ -11,12 +13,12 @@ int m,i,n,a,b,c,d,e,f;
 
 		d+=12;
 
-	//	if(e<b){
-	//	e+=60;
-	//	}
-	//	if(f<c){
-	//	f+=60;
-	//	}
+	
+	
+	
+	
+	
+	
 		n=(d-a)*3600+(e-b)*60+(f-c);
 	
 		printf("%d\n",n);

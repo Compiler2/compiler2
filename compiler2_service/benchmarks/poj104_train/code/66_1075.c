@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(int y);
 int lunhun(int y,int m,int d);
 int main()

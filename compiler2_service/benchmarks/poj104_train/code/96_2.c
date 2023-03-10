@@ -1,3 +1,5 @@
+#include <header.h>
+
 const long maxL=100;
 
 char a[maxL+1];

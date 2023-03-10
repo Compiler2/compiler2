@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int arv[1000],lve[1000],min=0,max=0,num,sum=0,person=0;
@@ -19,7 +21,7 @@ main()
 		scanf(",%d",&lve[i]);
 		if(lve[i]>max) max=lve[i];
 	}
-	for(j=min;j<=max-1;j++)//min,max-1~min+1,max
+	for(j=min;j<=max-1;j++)
 	{
 		for(k=0;k<num;k++)
 		{

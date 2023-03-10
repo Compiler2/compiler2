@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    int i,n,a[100],max1,max2,temp;

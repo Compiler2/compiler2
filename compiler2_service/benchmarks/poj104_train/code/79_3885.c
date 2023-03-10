@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int m,int n){
     int i,k=0;
     for(i=2;i<=n;i++)

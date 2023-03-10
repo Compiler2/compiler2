@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n,i,k,l,a[100];
@@ -18,6 +20,6 @@ main()
       for(i=l;i<=n-1;i++) printf("%d",a[i]);
       printf("\n");
       printf("%d",k);
-      //getchar();
-      //getchar();
+      
+      
       }        

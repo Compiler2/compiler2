@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {void st(int s[],int i);
 void cha(int s[],int i);

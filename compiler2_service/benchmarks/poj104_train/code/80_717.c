@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday,n=0,year,j,t=0,d;

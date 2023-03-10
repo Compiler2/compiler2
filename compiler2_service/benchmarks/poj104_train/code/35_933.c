@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n,i,j,r;
 int ch[8][8];
 int max(int x)

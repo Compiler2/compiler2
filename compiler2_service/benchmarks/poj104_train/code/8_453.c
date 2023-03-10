@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[101],b[101],m,n;
 int input()
 {

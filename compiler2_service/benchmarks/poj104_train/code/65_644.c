@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,sz1[200],sz2[200],a=0,b=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[2000]; int d,c[2000],n,b[2000],f=0;
@@ -19,7 +21,7 @@ n=i;
                 int j=0; 
   for(int i=f;i<n;i++,j++)       
   a[j]=b[i]+'0';a[j]=0;if (f==0) {a[0]='0'; a[1]=0;}
-//      for(int i=0;a[i]!='\0';i++) printf("%c",a[i]);
+
      printf("%s",a);
        printf("\n");
       printf("%d",d);

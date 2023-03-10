@@ -1,3 +1,5 @@
+#include <header.h>
+
 void error(int *p,int *q,int m,int n)
 {
 	int i;

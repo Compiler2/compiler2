@@ -1,3 +1,5 @@
+#include <header.h>
+
 void chengfa(char a[],char b[])
 {
 	char c[300]={'\0'},g;

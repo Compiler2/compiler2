@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x[100],y[100];
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 { char *c,**s,**h,d;
   int i=0,n,j=0,w=1,a=0,*b,t=0;

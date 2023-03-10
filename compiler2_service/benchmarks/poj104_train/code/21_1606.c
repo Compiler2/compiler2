@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	unsigned int n,a[300],i,j=0,sum=0,b[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a,b;
 int c[1000],d[1000];
 void scan1()

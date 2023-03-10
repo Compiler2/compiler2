@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char a[300];
 int cishu[2][26],i,j,k=0,n,sum;

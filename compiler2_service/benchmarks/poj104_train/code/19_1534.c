@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[101], target[10001], a[101], b[101], c[101];
 int i=0, j=0, k=0, len_str, len_a, len_b, pos=0, t=0;
 int main(void)

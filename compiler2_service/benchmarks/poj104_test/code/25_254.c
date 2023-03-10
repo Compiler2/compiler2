@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n;
     int result[32]={0};

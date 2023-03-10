@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n;
 int height[40][40];
 double average[40][40];

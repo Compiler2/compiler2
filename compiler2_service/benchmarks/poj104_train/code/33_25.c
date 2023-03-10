@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 { char jianji[1000][399];

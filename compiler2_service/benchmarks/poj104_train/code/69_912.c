@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
       char store[300],add1[300]={'\0'},add2[300]={'\0'},sum[300]={'\0'};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hanshu(int x,int y);
 int main(){
 	int x[5][5],n,m,i,e,c,j,a;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sep(int a, int b)
 {
 	int i;

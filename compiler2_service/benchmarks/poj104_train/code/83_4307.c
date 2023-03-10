@@ -1,3 +1,5 @@
+#include <header.h>
+
 double score(int a){
 	double result;
 	if(a>=90){

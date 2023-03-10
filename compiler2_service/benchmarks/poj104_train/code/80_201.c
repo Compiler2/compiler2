@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,19 +7,19 @@ int main()
 	int yearo, montho, dayo, totalo,totalt,yeart, montht, dayt,t,y,i,temp=0;
 	scanf("%d %d %d",&yearo, &montho, &dayo);
 	scanf("%d %d %d",&yeart, &montht, &dayt);
-//	if((yearo>yeart)||((yearo=yeart)&&(montho>montht))||((yearo=yeart)&&(montho=montht)&&(dayo>dayt)))
+
 		
-//	{	totalo=total(yeart, montht, dayt);
-//		totalt=total(yearo, montho, dayo);
-//		yearo=y;
-///		yearo=yeart;
-//		yeart=y;
-//	}
-//	else
-//			{
+
+
+
+
+
+
+
+
 				totalo=total(yearo, montho, dayo);
 		totalt=total(yeart, montht, dayt);
-//	}
+
 	t=totalt-totalo+365*(yeart-yearo);
 	for(i=yearo;i<=yeart;i++)
 	{
@@ -37,8 +39,8 @@ int total(int year,int month,int day)
 		{
 			total = total + mday[i-1];
 		}
-//		if( ((year%4==0&&year%100!=0) || year%400==0 )&&(month>2))
-//			total = total + 1;
+
+
 		total = total + day;		
 	return total;
 }

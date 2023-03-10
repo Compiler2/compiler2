@@ -1,3 +1,5 @@
+#include <header.h>
+
 void readdata(); 
 void init();
 void sort(int a[], int n);

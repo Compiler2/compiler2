@@ -1,10 +1,12 @@
-//
-//  main.c
-//  aa
-//
-//  Created by Duan on 12-11-27.
-//  Copyright (c) 2012? __MyCompanyName__. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 void nextday(int a[11][11],int b[11][11])
 {

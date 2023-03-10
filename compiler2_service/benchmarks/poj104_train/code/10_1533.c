@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void sort(int *a,int i,int n) /*sort??a[i]?a[n]??????*/
 {

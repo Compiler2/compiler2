@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
 	char zfc[256];
 	char zfcsc[256];
 	int  n;
 	char a='A',t='T',g='G',c='C';
-//	char x,y;
+
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		scanf("%s",&zfc);

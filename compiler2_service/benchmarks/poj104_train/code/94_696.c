@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 int n,a[500],b[500],t=0,q=0,e,i,k;
 scanf("%d",&n);

@@ -1,4 +1,6 @@
-// itc online practice nov 13 prob 6
+#include <header.h>
+
+
 int k; 
 int height[26];
 int len(int num) {

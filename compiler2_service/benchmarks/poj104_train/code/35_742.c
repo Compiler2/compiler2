@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,a[100][100],row,col,b[100],s[100],sum=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char sz[100][20];
     int n,len[20];

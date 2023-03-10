@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long sum=0,s,max=0;

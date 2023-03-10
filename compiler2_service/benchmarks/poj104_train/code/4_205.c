@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -7,14 +9,14 @@ int main()
 	int sz[101][101];
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
-			scanf("%d",&sz[i][j]);             //????%d?????????//
+			scanf("%d",&sz[i][j]);             
 		}
 	}
 
 	if(row>col){
     	int x;
 	    for(j=0;j<col;j++){
-		    for(x=0;x<=j;x++){                       //?x++??k++!!!//
+		    for(x=0;x<=j;x++){                       
 			    printf("%d\n",sz[x][j-x]);
 			}
 		}

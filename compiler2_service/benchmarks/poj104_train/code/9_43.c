@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sz[100],aged[100];
 	char num[100][11],anum[100][11],q[100][11];

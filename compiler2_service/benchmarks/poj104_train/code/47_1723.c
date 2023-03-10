@@ -1,3 +1,5 @@
+#include <header.h>
+
 void inv(int *x,int n)
 {
      int temp,*p,*i,*j,m=(n-1)/2;

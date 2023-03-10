@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zuok(char c[],int j, int len)
 {
 	int i,zuo=1,you=0;

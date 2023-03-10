@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct children{
 	char sex;
 	int num;

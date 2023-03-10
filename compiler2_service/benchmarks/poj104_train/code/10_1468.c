@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int k;
@@ -17,7 +19,7 @@ main()
 		if (a[t]>=a[i] && b[t]+1>=b[i]) 
 	             b[i] = b[t]+1; 
     } 	
- //   ????
+ 
    int max=b[0];
    for (int i=1; i<k; i++)
 	 {if (b[i] > max) max=b[i]; }

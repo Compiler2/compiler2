@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
 	int n, m, mon[301], i, j, p, k;

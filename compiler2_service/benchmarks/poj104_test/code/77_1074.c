@@ -1,3 +1,5 @@
+#include <header.h>
+
 
     int i,l,count;
     char s[101];
@@ -48,7 +50,7 @@ int main()
     
     count=0;    
     ry(y);
-    //printf("2 3\n5 6\n4 7\n8 9\n1 10\n12 13\n11 14\n0 15\n");
+    
     
     
     

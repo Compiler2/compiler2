@@ -1,12 +1,14 @@
+#include <header.h>
+
 
 int judge(char a[50],char b[50])
 {
 	int len,lena,lenb,i,j,na,nb,pp=1;
 	char ma;
 	lena=strlen(a);
-//	printf("lena=%d",lena);
+
 	lenb=strlen(b);
-//	printf("lenb=%d",lenb);
+
 	if(lena!=lenb) return 0;
 	else
 	{

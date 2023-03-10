@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bijiao(int p,char *a,int n,char *b)
 {
 	int i,flag=0;

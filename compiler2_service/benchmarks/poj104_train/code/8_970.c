@@ -1,3 +1,5 @@
+#include <header.h>
+
 int work(int now,int x)
 {
 	int i,j,swap;

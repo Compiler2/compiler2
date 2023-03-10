@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ys(int x,int min){
     int r=1;
     if(x<min)

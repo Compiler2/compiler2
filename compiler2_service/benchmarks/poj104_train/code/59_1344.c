@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i, a, n, m, t, z=0;
     char old[200][200], newa[200][200];

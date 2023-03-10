@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int m,int n)
 {
 	int i,j,t,a[100],b[100],c=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char first[50],second[50];

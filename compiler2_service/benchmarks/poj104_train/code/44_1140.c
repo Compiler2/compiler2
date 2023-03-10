@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x){
     int a,c;
     if(x<10)

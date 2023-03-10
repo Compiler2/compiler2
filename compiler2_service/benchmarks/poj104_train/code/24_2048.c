@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zfc[5000];
@@ -19,27 +21,27 @@ int main()
 			i=j;
 		}
 	}
-//	for(i=0;i<w;i++)
-//	{
-//		printf("%s\n",words[i]);
-//	}
+
+
+
+
 	for(i=0;i<w;i++)
 	{
 		k[i]=strlen(words[i]);
 	}
-//	int e;
-//    for(int x=1;x<w;x++)
-//	{
-//		for(i=0;i<w-x;i++)
-//		{
-//			if(k[i] > k[i+1])
-//			{
-//				e = k[i+1];
-//				k[i+1] = k[i];
-//				k[i] = e;
-//			}
-//		}
-//	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	int min=k[0],p=0;
 	for(i=1;i<w;i++)
 	{

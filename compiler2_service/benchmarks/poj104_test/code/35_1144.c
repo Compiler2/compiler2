@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ws[8][8];

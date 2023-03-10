@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,m,n,s,s1,t,x1,x,z=0,a[8][8]={0};
@@ -20,6 +22,6 @@ int main()
 		if(x==i) {printf("%d+%d\n",x,s); z++;}
 	}
 	if(z==0) printf("No");
-	//scanf("%d",&n);
+	
 	return 0;
 }

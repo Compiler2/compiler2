@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[110],b[100][1000];
@@ -8,11 +10,11 @@ int main()
                                scanf("%s %d",a,&y);
                                l=strlen(a);
                                for(j=0;j<l;j++)
-                                  {b[i-1][j]=a[j];} //??ID 
+                                  {b[i-1][j]=a[j];} 
                                   b[i-1][l]='\0';
-                                  c[i-1]=y;//???? 
+                                  c[i-1]=y;
                            }  
-              for(i=0;i<n;i++)//???? 
+              for(i=0;i<n;i++)
               {
               if(c[i]>=60)     
                  {

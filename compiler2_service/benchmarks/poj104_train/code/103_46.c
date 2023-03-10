@@ -1,3 +1,5 @@
+#include <header.h>
+
 void c(char *p,int l)
 {
      int i;

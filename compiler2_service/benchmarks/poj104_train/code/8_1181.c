@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n;
 int c[200]={0};
 int a[100]={0};

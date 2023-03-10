@@ -1,3 +1,5 @@
+#include <header.h>
+
 char change(char s)
 {
 	if(s>='A'&&s<='Z')

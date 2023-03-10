@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[50][50]={'0'},b;
 	int i,max=0,min=0;

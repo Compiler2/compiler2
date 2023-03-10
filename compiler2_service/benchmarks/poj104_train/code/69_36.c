@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,k,p=0,lena,lenb,a[250],b[250],c[250];

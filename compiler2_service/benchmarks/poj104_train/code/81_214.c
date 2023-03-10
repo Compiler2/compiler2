@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int exc(int x,int y);
 int exc(int x,int y){

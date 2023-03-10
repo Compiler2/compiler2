@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int ss[1000];
 int zz[1000];

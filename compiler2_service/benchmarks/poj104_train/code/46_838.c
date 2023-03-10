@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int input[100][100],i,j,k,m,n,output[10000],a=0;

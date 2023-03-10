@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n,i=0,j=0,c=0,l,k=0;
@@ -18,7 +20,7 @@ int main()
   {
    scanf("%s" ,ppp[i][j]);
    l=strlen(ppp[i][j]);
-   for(k=0;k<=l;k++)              //???
+   for(k=0;k<=l;k++)              
    {
     ppp[i][j][100-k]=ppp[i][j][l-k];
    }
@@ -32,9 +34,9 @@ int main()
  {
   for(k=99;k>=1;k--)                   
   {
-   //ppp[i][0][k-1] = ppp[i][0][k-1]-1;
+   
          c=ppp[i][0][k]-ppp[i][1][k];
-   //printf("%d\n" ,c);
+   
    if(c>=0) 
     ppp[i][0][k]=c+'0';
    else
@@ -54,7 +56,7 @@ int main()
   }
   for(k=c;k<100;k++)
   {
-   printf("%c" ,ppp[i][0][k]);      //?0?
+   printf("%c" ,ppp[i][0][k]);      
   }
   printf("\n");
  }

@@ -1,10 +1,12 @@
+#include <header.h>
+
 int f(int n);
 int main(){
 	int a0,a1,i,n,l,sz[100];
 	scanf("%d",&l);
 	for(i=0;i<l;i++){
 		scanf("%d",&n);
-//		printf("%d",f(n));
+
 		sz[i]=f(n);
 	}
 	for(i=0;i<l;i++){

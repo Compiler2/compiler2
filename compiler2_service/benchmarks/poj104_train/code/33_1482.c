@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char A[1000][300],B[300]={'\0'};
 int n,a,i,b;

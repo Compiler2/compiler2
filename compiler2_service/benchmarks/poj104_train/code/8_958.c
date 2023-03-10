@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m;
 void f1(int a[1000],int b[1000])
 {

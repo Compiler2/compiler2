@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zh(int,int);
 int main(){
 int i,j,p=0,a[300],b[300],n;

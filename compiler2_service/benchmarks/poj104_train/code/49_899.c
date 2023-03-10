@@ -1,3 +1,5 @@
+#include <header.h>
+
 char substr(char s[],int start,int end)
 {
 	while((end>start) && (s[start]==s[end]))

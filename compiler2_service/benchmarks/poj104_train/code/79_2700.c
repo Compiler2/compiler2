@@ -1,3 +1,5 @@
+#include <header.h>
+
 main() 
 { 
 int n[10000], m[10000], i, s; 

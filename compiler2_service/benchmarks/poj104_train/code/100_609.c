@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int zimu[26]={0};

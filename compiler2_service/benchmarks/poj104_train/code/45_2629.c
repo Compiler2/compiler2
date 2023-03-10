@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,10 +7,10 @@ int main()
 	char s[300],z[300],h[300];
 	scanf("%s",z); 
 	scanf("%s",s);
-//	scanf("%s",h);
+
 	l2=strlen(s);  
 	l1=strlen(z);
-//	l3=strlen(h);
+
 	for (i=0;i<=l2-l1;i++)
 	{  
 		e=0;

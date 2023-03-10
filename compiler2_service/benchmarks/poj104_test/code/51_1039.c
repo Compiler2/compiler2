@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -31,7 +33,7 @@ int main()
       }
     }
     else printf("NO\n");
-    //scanf("%d",&n);
+    
     return 0;
 }
     

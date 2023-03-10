@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bo(char c[100])
 {
 	int i,j,k;

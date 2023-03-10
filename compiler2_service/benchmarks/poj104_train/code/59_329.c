@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n;
 int p(char a[200][200])
 {

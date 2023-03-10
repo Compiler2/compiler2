@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	
 	double n;
@@ -11,7 +13,7 @@ int main()
 		{j=j-1;
 		break;}
 	}
-//	printf("%d",j);
+
 	for(i=1;1;i++)
 	{
 		scanf("%c",&b[i]);
@@ -20,7 +22,7 @@ int main()
 		break;}
 		
 	}
-	//printf("%d",i);
+	
 	if(i!=j)
 		flag=1;
 	else
@@ -39,7 +41,7 @@ int main()
 			}
 		}
 	}
-	//printf("%d\n",k);
+	
 	if(flag==1)
 		printf("error");
 	else{if(1.0*k/j>n)

@@ -1,7 +1,9 @@
-// ???.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
 
-//#include "stdafx.h"
+
+
+
+
 int main()
 {
 	int i,n,year,runfou,er,mon1,mon2,k,j,day;
@@ -54,7 +56,7 @@ int main()
 			case 12:day+=31;break;
 			}
 		}
-	//	printf(":%d\n", day);
+	
 		if (day%7==0)
 			printf("YES\n");
 		else

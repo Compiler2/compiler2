@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char kid[101];
 scanf("%s",kid);

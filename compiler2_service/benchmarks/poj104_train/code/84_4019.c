@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int max=0,mbx=0,i,x;
 	scanf("%d\n",&i);

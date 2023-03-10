@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s=0,p=1;
 void fenjie(int a,int b)
 {

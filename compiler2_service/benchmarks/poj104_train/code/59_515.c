@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	 char a[200][200];
 	 int f,i,j,t,q,sum=0;

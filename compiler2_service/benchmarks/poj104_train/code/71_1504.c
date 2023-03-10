@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s(int year,int month,int date){
 	int s=0;
 	int i;

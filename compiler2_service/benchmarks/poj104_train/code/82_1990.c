@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   
     int i,n,ssy[100],szy[100];

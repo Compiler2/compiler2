@@ -1,3 +1,5 @@
+#include <header.h>
+
 int funa(int x);
 int funb(int y);
 int main()

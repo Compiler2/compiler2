@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char ca[250],cb[250];

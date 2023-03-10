@@ -1,9 +1,11 @@
+#include <header.h>
+
 main()
 {
 	int n,i,t=0;
 	char s[6000];
 	gets(s);
-	n=strlen(s)-1;//printf("%d\n",n);
+	n=strlen(s)-1;
 	for(i=0;i<=n;i++)
 	{
 		if(s[i]!=' '&&i!=n)t++;

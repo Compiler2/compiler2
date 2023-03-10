@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fenjie(int n,int min)
 {int i,a=0,x=0;
 for(i=2;i<=n;i++)

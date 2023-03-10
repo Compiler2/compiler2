@@ -1,3 +1,5 @@
+#include <header.h>
+
 int way(int x,int a[10])
 {
 	int i=0;

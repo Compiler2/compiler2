@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(void)
 {
  int space=1,i=-1;

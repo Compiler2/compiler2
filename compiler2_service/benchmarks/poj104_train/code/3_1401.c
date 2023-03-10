@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,k,i,szone[999],sztwo[999],a;

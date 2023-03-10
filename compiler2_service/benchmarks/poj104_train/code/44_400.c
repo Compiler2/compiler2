@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int n);
 int main()
 {
@@ -6,7 +8,7 @@ int main()
 	{
 		scanf("%d",&n);
 		n=reverse(n);
-		//printf("%d",n);
+		
 	}
 	return 0;
 }
@@ -43,7 +45,7 @@ int reverse(int n)
 			b=1;
 			continue;
 		}
-		//if(b==1) printf("%d",z[a]);
+		
 	}
 	b=0;
 	for(a=0;a<=max;a++)

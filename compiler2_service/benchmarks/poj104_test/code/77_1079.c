@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char num[100]={0}; int i,j,k,m,t;
  gets(num); t=strlen(num);

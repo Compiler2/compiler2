@@ -1,5 +1,7 @@
+#include <header.h>
 
-// b[j][k] * c[k][i] = a[j][i]
+
+
 void matrix(int **b,int **c, int **a, int nx, int ny, int nk)
 {
 int i,j,k;
@@ -20,7 +22,7 @@ int c_row,c_col;
 int a_row,a_col;
 int **b,**c,**a;
 
-// ??B ? ?? ??
+
 
 scanf("%d %d",&b_row,&b_col);
 c_row = b_col;
@@ -30,14 +32,14 @@ for (j=0;j<b_row;j++){
 b[j] = (int *) malloc(sizeof(int) * b_col);
 }
 
-// ??B???
+
 
 for (j=0;j<b_row;j++)
 for (i=0;i<b_col;i++){
 scanf("%d",&tmp);
 b[j][i] = tmp;
 }
-// ??C? ??
+
 
 scanf("%d %d",&c_row,&c_col);
 a_row = b_row;
@@ -46,7 +48,7 @@ c  = (int **) malloc(sizeof(int *) * c_row);
 for (j=0;j<c_row;j++){
 c[j] = (int *) malloc(sizeof(int) * c_col);
 }
-// ??C???
+
 
 for (j=0;j<c_row;j++)
 for (i=0;i<c_col;i++){

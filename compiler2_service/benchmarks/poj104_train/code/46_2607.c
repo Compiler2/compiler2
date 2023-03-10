@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int array[100][100], i, j, row, col, num, s, k;
@@ -10,11 +12,11 @@ int main()
 				scanf("%d",&array[i][j]);
 		}
 
-		for(i=0, j=0, num=0; num<row*col; i++, j++)	//????row*col???????
+		for(i=0, j=0, num=0; num<row*col; i++, j++)	
 		{
 			for(s=j; s<=(col-j-1); s++)
 			{
-				printf("%d\n",array[i][s]);//???i????
+				printf("%d\n",array[i][s]);
 				num++;
 				if(num>=row*col)
 					break;
@@ -41,7 +43,7 @@ int main()
 				break;
 			for(k=row-i-1; k>i; k--)
 			{
-				printf("%d\n",array[k][j]);//??????
+				printf("%d\n",array[k][j]);
 				num++;
 				if(num>=row*col)
 					break;

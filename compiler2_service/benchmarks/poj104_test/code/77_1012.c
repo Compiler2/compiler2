@@ -1,3 +1,5 @@
+#include <header.h>
+
 char d,e;
 void sort(char *t,char *p,char *q,int i)
 {

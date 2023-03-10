@@ -1,10 +1,12 @@
+#include <header.h>
+
 
 
 
 int main()
 {
     int z,totalhorse,tianwins[10000]={0},tianloses[10000]={0},p1,p2,p3,p4,qihorse[10000],tianhorse[10000],y,k1,m1,temp1,k2,m2,temp2,count=0,i,j;
-    //p1???????????????p2??????????????p3??????????????p4?????????????
+    
     for(z=0;z<=10000;z++)
     {
         scanf("%d",&totalhorse);
@@ -18,17 +20,17 @@ int main()
         }
         for(i=0;i<=totalhorse-1;i++)
         {
-            scanf("%d",&tianhorse[i]); //??????
+            scanf("%d",&tianhorse[i]); 
         }
         for(j=0;j<=totalhorse-1;j++)
         {
-            scanf("%d",&qihorse[j]); //??????
+            scanf("%d",&qihorse[j]); 
         }
         for(k1=0;k1<=totalhorse-1;k1++)
         {
             for(m1=0;m1<=totalhorse-2-k1;m1++)
             {
-                if(tianhorse[m1]<tianhorse[m1+1])    //???????????
+                if(tianhorse[m1]<tianhorse[m1+1])    
                 {
                     temp1=tianhorse[m1];
                     tianhorse[m1]=tianhorse[m1+1];
@@ -40,7 +42,7 @@ int main()
         {
             for(m2=0;m2<=totalhorse-2-k2;m2++)
             {
-                if(qihorse[m2]<qihorse[m2+1])    //???????????
+                if(qihorse[m2]<qihorse[m2+1])    
                 {
                     temp2=qihorse[m2];
                     qihorse[m2]=qihorse[m2+1];

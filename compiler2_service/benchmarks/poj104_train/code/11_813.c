@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int day,month,year,sum,leap;

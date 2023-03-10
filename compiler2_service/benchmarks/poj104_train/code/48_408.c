@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[20][20],b[20][20];
 void print()
 {

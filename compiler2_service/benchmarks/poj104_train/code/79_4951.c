@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sn[1000],sm[1000],NUM=0;
 	for(int p=0;p<1000;p++){

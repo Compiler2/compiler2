@@ -1,3 +1,5 @@
+#include <header.h>
+
 char sen[10000];
 int main()
 {

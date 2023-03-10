@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hui(int i)
 {
     int a[20],j,k;

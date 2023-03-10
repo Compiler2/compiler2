@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[100];
@@ -5,9 +7,9 @@ main()
       int b[100]={0},f[100]={0};
       scanf("%s",a);
       l=strlen(a);
-      //printf("%d",l);
+      
       for(i=0;i<l;i++)    b[i]=a[i]-'0';
-      //for(i=0;i<l;i++)    printf("%d",b[i]); 
+      
       d=b[0];
       if(l>2)
       {

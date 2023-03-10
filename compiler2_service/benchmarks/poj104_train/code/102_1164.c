@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct data{
 	char sex[7];
 	float h;

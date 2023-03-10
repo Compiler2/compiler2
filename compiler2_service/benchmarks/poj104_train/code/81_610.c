@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int a[5][5],int n,int m)
 {
 	if((0<=n&&n<5)&&(0<=m&&m<5))

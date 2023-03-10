@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[500];
@@ -25,7 +27,7 @@ int main()
                }
          if(p==1)
          {
-                 for(k=j;k<=j+i-1;k++)//????j???m 
+                 for(k=j;k<=j+i-1;k++)
                  printf("%c",a[k]);
                  printf("\n");
                  }

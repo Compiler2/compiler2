@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -8,7 +10,7 @@ int main(int argc, char* argv[])
     n1=atoi (a);
 	n2=atoi (c); 
 	n=strlen (b);
-    //printf ("%d\n%d\n",n1,n2);
+    
     for (i=0;i<n;i++)
 	{
 		if (b[i]>='a'&&b[i]<='z')
@@ -17,13 +19,13 @@ int main(int argc, char* argv[])
 			A[i]=b[i]-48;
 		if (b[i]>='A'&&b[i]<='Z')
 			A[i]=b[i]-55;
-		//printf ("%d\n",A[i]);
+		
 	}
 	
     for (i=0;i<n;i++)
 	{
          before = before*n1+A[i];
-	}//printf ("%d\n",before);
+	}
 	if (before==0)
 	{after1[0]='0';after1[1]='\0';}
 	else {
@@ -43,9 +45,9 @@ int main(int argc, char* argv[])
 		}
 	}
 	after[i]='\0';
-	//puts (after);
+	
 	m=strlen (after);
-	//printf ("%d\n",m);
+	
     for (i=0;i<m;i++)
 	{
          after1[i]=after[m-i-1];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
 	char Name[20];
@@ -17,7 +19,7 @@ int main(int argc, char* argv[])
 	{
 		
 		scanf("%s%d%d %c %c%d",p[i].Name,&p[i].agrades,&p[i].bgrades,&p[i].a,&p[i].b,&p[i].n);
-		//printf("%s %d %d %c %c %d",p[i].Name,p[i].agrades,p[i].bgrades,p[i].a,p[i].b,p[i].n);
+		
 	}
 	int *p1,*p2;
 	p1=(int*)malloc(num*sizeof(int));

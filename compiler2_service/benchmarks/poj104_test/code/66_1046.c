@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[12]={0,31,28,31,30,31,30,31,31,30,31,30};
 int year,month,week,day,d1,d2;
 int pd(int x)

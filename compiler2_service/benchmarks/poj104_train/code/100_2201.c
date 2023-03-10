@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[301],s[60]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",*ps,*pt;

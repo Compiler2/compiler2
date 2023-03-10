@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	int cancer[100][100];
 	int n,i,j;

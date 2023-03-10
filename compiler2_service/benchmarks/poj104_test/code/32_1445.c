@@ -1,3 +1,5 @@
+#include <header.h>
+
 void moin(char a[][100],char b[][100],int k)
 {
 	int c,d,e,f,i,j;

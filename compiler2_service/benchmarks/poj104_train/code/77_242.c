@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(char str[],char w,char m)
 {
 	int ctr=0,ctr1=0;

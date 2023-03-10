@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int i,w,m=0;
  int year,month,day,total=0;
@@ -5,7 +7,7 @@ int main(){
  year--;
  m = year / 4 - year/100 + year/400 ;
  year++;
- //printf("%d\n",m);
+ 
   for(i = 1; i < month; i++){  
   if(i==1||i==3||i==5||i==7||i==8||i==10||i==12){
    total += 31; 

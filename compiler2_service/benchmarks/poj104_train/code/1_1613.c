@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int fenjie(int num,int min);
 int k=2;

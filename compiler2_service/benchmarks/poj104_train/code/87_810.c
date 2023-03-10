@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n=0,m=0,i=0,t=0,w=0,e=0,q=0,r=0,k=0,o=0,p=0,u=0,f=0;
 int a[100][100],b[10000],c[10000],d[10000];
 double x=0,y=0,z=0;

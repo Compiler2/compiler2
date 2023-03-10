@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int w,days[12]={31,28,31,30,31,30,31,31,30,31,30,31},i,j,date[12]={0};

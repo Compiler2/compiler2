@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[500],now[5],gram[250][5];

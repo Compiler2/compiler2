@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double rate,realrate;
 	char a[500],b[500];

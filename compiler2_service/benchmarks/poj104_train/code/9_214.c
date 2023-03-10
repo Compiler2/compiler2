@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct data{
 	int w;
 	char c[20];

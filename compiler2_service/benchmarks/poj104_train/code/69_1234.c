@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int x,j,i,l,t,q=0,w=0,y,m[300]={0},n[300]={0},k[300]={0};
@@ -53,7 +55,7 @@ int main()
             }
         }
     }
-    //printf("%d %d %d",k[0],k[1],k[2]);
+    
     memset(a,0,sizeof(a));
     for(i=0;i<=l;i++)
     {

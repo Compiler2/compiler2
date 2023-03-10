@@ -1,15 +1,17 @@
+#include <header.h>
+
 int main()
 {
-    //char a[32];
+    
     int i;
     char *p,*p1,*q;
-    //gets(a);
+    
     p1=p=(char *)malloc(32*sizeof(char));
     for(i=0;*(p+i-1)!='\n';i++)
     {
                              scanf("%c",(p+i));
     }
-    //p=p1;
+    
     for(q=(p+32);;q--)
     {
                       if(*q>47&&*q<58) break;

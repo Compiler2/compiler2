@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int shu[100000];
 	int i,j,n=0,shan,shuru,a;

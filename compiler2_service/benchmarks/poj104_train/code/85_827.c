@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,t=0,b;
@@ -14,7 +16,7 @@ int main()
 			for(j=0;j<strlen(s);j++)
 			{
 				if (isalnum(s[j])==0&&s[j]!='_')
-			//	if(ispunct(s[j])!=0||s[j]!='_')
+			
 				{
 					b = 1;
 					break;

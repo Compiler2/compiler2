@@ -1,3 +1,5 @@
+#include <header.h>
+
 int vd(const void*t1,const void*t2)
 {
    return *((int*)t1)>*((int*)t2)?-1:1;

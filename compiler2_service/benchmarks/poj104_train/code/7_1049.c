@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
   int i,j=0,t,s,n=0,k,l;
@@ -15,9 +17,9 @@ main()
     }
     else{j=0;n=0;}
     if(n==s){t=i;break;}
-    //printf("%d",i);                        
+    
   }    
-  //printf("%d",n);
+  
   if(n==s)
  { for(l=0,k=t-s+1;k<=t,l<s;l++,k++)
   {

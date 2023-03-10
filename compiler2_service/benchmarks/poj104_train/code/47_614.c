@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jiaohuan(int*,int*);
 int main(){
 	int yuan[101];

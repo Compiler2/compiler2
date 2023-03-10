@@ -1,36 +1,38 @@
+#include <header.h>
+
 int main() {
 /*------------??------------*/
 
-//?????
+
 	int m,n;
-//	float f,f1;
-//	double d,d1;
 
-//????
+
+
+
 	int a[101],b[101];
-//	int a[101][2000];
 
-//?????
-//	char c[6000];
+
+
+
 	char c[101][11],d[101][11];
-//	int len;
 
-//????
-//	int r;
-//	float r;
-//	double r;
-//	int r[501];
-//	int r[200][20];
-//	char r[5010];
-//	char r[1010][51];
 
-//????
+
+
+
+
+
+
+
+
+
+
 	int i,j,k;
 
-//????
+
 	int ni,nj,nk;
-//	double di,dj,dk;
-//	float fi,fj,fk;
+
+
 	char ci[11],cj[11],ck[11];
 
 /*
@@ -74,8 +76,8 @@ int main() {
 */
 
 /*------------??/??------------*/
-//	scanf("% ",& );
-//	len=strlen(c);
+
+
 
 	scanf("%d",&n);
 	for(i=1;i<=n;i++) {
@@ -86,8 +88,8 @@ int main() {
 	}
 /*------------??------------*/
 
-//	for(i=1;i<=n;i++) {
-//	}
+
+
 	for(i=1;i<=n-1;i++) {
 		for(j=1;j<=n-i;j++) {
 			if(a[j]<a[j+1]) {
@@ -102,8 +104,8 @@ int main() {
 	}
 
 /*------------??------------*/
-//	printf("% \n", );
-//	printf(" \n");
+
+
 	for(i=1;i<=n;i++) {
 		if(a[i]>=60) {
 			printf("%s\n",c[i]);

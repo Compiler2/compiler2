@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,count=0,k,i;
 	char zf[800][81],z;

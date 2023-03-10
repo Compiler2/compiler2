@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int mat(int a[5][5],int m,int n)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()  {
 	int m,n,i,j,g=0,t,h,k,l;
     int a[22][22]={0},b[100],c[100];

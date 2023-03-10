@@ -1,3 +1,5 @@
+#include <header.h>
+
 int days[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 int rdays[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
 int sum1(int year,int month, int day)

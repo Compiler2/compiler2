@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zm[101],zm2[101];

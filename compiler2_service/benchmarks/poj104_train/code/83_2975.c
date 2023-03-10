@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 double score2g(int m)	{

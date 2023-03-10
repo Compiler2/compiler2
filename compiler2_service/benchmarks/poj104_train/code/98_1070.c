@@ -1,3 +1,5 @@
+#include <header.h>
+
 char word[200][41];
 void pb(char* a,int p,int t)
 {

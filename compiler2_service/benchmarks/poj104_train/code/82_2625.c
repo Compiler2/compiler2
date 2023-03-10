@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,so[100],su[100],a[102]={0},i,d=0,c=0,b[102]={0};

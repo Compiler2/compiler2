@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[25],num[25]={0};
 int main()
 {

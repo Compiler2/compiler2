@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char zf[256];
 	int i,j,n,count=1;

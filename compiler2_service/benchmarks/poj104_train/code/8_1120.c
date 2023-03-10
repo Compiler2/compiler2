@@ -1,3 +1,5 @@
+#include <header.h>
+
 int na,nb;
 int *a,*b;
 void input()

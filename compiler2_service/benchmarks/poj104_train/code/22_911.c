@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int x,x1,a=0,b=-1,flag=0;

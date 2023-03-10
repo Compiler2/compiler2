@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -10,7 +12,7 @@ int main(int argc, char* argv[])
 		d1=0;
 		d2=0;
 		scanf("%d%d%d",&y,&m1,&m2);
-		if(y%100==0&&y%40==0||y%100!=0&&y%4==0)//leap
+		if(y%100==0&&y%40==0||y%100!=0&&y%4==0)
 		{
 			switch (m1)
 			{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int N,number[500],i,k,min,odd[500],n,e;

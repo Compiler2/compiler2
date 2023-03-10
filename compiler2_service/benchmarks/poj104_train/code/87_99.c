@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int sz[6]={1,1,1,1,1,1},x,i,j;
 for(i=0;;i++){

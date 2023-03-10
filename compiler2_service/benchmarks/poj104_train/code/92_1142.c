@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int tian[1001],king[1001];
 void sort(int speed[])

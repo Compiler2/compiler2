@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int a[10];
@@ -11,7 +13,7 @@ int main()
    }
    for(j=1;j<=i-1;j++)
    printf("%d",a[j]);
-//   scanf("%d",&n);
+
    return 0;
 }
   

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zimuxiahuaxian(char x)
 {
 	int a;

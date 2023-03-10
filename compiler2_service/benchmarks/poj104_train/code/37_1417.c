@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {int i,t,j,k;
 static char x[100000];

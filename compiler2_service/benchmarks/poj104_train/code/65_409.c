@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cai(int a,int b)
 {
     if(a==b)

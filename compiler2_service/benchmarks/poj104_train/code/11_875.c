@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int y,m,d,run=0,M[13],i,D;

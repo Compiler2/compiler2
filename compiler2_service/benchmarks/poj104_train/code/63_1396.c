@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int i,j,m1,n1,m2,n2,p,q,a[100][100],b[100][100],answer[100][100];

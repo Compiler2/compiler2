@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -13,7 +15,7 @@ int main(int argc, char* argv[])
         if(a[i]>max)  max=a[i];
 		if(a[i]<min)   min=a[i];
 	}
-	//printf("%d %d",max,min);
+	
     for(i=0;i<n;i++)
 	{
 		if(a[i]==max)  {

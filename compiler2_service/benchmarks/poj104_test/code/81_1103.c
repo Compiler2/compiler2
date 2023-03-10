@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5][5];
 int compare(int x,int y)
 {

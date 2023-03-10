@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     double n;
     int num=0,pan=1;

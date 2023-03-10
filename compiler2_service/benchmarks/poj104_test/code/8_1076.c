@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m;
 int *pfCompare(const void *a, const void *b)
 {

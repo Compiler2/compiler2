@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
 	int i, sum[26]={0}, m, j, max=0, p;

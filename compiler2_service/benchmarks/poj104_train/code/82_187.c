@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[100],b[100],c[100];
 int main(){
 	int n,i,lh=0,k,e=0;
@@ -20,7 +22,7 @@ int main(){
 			else if(c[k]!=1)
 				break;
 		}
-		//printf("%d\n",lh);
+		
 		if(e<lh){
 			e=lh;
 			lh=0;

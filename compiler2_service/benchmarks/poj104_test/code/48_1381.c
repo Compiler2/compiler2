@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[11][11],b[11][11];

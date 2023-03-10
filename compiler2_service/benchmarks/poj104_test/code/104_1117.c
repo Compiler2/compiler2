@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void Hanshu(int a,int b);

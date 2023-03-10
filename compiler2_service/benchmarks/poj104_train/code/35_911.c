@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -6,7 +8,7 @@ int main()
 	for(i=0; i<m; i++)
 		for(j=0; j<n; j++)
 			scanf("%d", &a[i][j]);
-//	printf("ohear");
+
 	for(i=0; i<m; i++)
 	{
 		temp=a[i][0];

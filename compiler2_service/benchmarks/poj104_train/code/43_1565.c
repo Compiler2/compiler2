@@ -1,3 +1,5 @@
+#include <header.h>
+
 int SS(int i);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int N,i,b=0,j,c;
@@ -23,8 +25,8 @@ int main()
 		}
 		else if(a[i]%2==1&&b!=0)
 			printf(",%d",a[i]);
-//		else
-//			continue;
+
+
 	}
 	
 	return 0;

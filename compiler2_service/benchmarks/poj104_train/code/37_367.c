@@ -1,11 +1,13 @@
+#include <header.h>
+
 
 int main()
 {
     int i,n;
     char str[100010],*p, ans ;
     int c[26]={0};
-    //freopen("input.txt","r",stdin);
-    //freopen("output.txt","w",stdout);
+    
+    
     scanf("%d", &n);
     while (n--)
     {

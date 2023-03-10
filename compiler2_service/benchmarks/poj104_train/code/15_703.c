@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,a[1000][1000],b[1000][1000],row,col,ROW1,COL1,ROW2,COL2,sum;
 		scanf("%d",&n);

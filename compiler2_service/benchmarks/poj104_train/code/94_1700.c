@@ -1,3 +1,5 @@
+#include <header.h>
+
 main(){
  int sz[300],a[300];
     char x;

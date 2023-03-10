@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int n,i,j;
     char str[10]={0},substr[3]={0},m=0;

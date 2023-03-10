@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int b[300]={0};

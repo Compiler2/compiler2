@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     static int a[105][105];

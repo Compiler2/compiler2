@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void scan(int n[],int a[],int b[])
 { 

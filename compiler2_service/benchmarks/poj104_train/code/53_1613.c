@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int x[300],y[300]={0},i,j,k=0,n,sign;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[500]={""},s1[500][6]={""};

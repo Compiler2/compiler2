@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 char c[2000],x[2000][100];

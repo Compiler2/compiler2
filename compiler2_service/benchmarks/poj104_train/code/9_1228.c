@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct bingren{
 	char id[1000];
 	int age;

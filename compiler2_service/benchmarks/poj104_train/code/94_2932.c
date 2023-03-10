@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int maxIndex, e,LEN,k,i;
 int sz[1000],js[1000];

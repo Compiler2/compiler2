@@ -1,3 +1,5 @@
+#include <header.h>
+
 int j,k;
 void G(int a[])
 {

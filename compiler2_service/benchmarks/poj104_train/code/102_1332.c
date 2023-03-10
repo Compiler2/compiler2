@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 
@@ -25,10 +27,10 @@ for(i=0;i<n;i++)
                 {
                                 male[x]=a[i];
 
-                //printf("male[%d]=",x);
-                //printf("%.2lf ",male[x]);
-                //printf("a[%d]=",i);
-                //printf("%.2lf ",a[i]);
+                
+                
+                
+                
                                 x=x+1;
                 }
                 if(b[i][0]=='f')
@@ -53,7 +55,7 @@ for(i=0;i<x;i++)
 
 for(i=0;i<x;i++)
 {
-                //printf("male[%d]=",i);
+                
                 printf("%.2lf ",male[i]);
 }
 for(i=0;i<y;i++)
@@ -72,7 +74,7 @@ for(i=0;i<y;i++)
 
 for(i=0;i<y-1;i++)
 {
-                 //printf("female[%d]=",i);
+                 
                  printf("%.2lf ",female[i]);
 }
 

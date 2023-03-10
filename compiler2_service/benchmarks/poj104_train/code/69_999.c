@@ -1,3 +1,5 @@
+#include <header.h>
+
 void dele0(char *a)
 {	int i,j;
 	for(i=0;*(a+i)=='0';i++);

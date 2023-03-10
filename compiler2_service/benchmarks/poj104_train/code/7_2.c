@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
 	char sub[257] = { 60, 50, 11};
 	char s1[257], s2[257];
 	
 	int i, j, k, str1, str2;
-	// scanf("%s", sub);
-	// scanf("%s", s1);
-	// scanf("%s", s2);
+	
+	
+	
 	str1 = strlen(sub);
 	str2 = strlen(s1);
 	printf("%s, len = %d\n", sub, str1);

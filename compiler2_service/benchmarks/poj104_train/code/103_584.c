@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main()
 {int i,j,k,t;
  char s[1000],last;
  scanf("%s",s);
-// printf("%d%d",'a','A');
+
  for (i=0;s[i]!='\0';i++)
    if (s[i]<97) s[i]=s[i]+32;
  last='!';

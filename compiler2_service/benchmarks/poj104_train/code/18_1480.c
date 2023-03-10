@@ -1,8 +1,10 @@
+#include <header.h>
+
 int func(int a[100][100],int rank,int sum)
 {
 if(rank==1)
 return(sum);
-int i,j,k,min=1000;//i?????j????
+int i,j,k,min=1000;
 for(i=0;i<=rank-1;i++)
 {
 for(j=0;j<=rank-1;j++)
@@ -13,7 +15,7 @@ min=a[i][j];
 for(j=0;j<=rank-1;j++)
 a[i][j]-=min;
 min=1000;
-}//??????
+}
 for(j=0;j<=rank-1;j++)
 {
 for(i=0;i<=rank-1;i++)
@@ -24,7 +26,7 @@ min=a[i][j];
 for(i=0;i<=rank-1;i++)
 a[i][j]-=min;
 min=1000;
-}//??????
+}
 sum+=a[1][1];
 for(j=1;j<=rank-2;j++)
 a[0][j]=a[0][j+1];
@@ -39,7 +41,7 @@ func(a,rank-1,sum);
 }
 int main()
 {
-int n,i,j,k;//i?????j?????k?????
+int n,i,j,k;
 int matrix[100][100]={{0}},sum=0;
 scanf("%d",&n);
 for(k=1;k<=n;k++)

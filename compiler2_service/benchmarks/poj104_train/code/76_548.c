@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,j,k,m,n,l,r;
 int flag=1;
 int minleft,maxright;

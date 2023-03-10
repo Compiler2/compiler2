@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {char *p1,*p2,*p3,*q1,*q2;
  int i,j,k,flag;

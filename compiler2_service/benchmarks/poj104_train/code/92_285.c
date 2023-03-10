@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mycomp(const void *a,const void *b)
 {return *(int*)a-*(int*)b;}
 int main()

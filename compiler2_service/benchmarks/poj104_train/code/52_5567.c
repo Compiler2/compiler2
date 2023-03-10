@@ -1,3 +1,5 @@
+#include <header.h>
+
 void order(int m,int n)
 {  int i,s[100];
   for(i=0;i<m;i++)

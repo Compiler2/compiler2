@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,7 +7,7 @@ int main()
 	int n;
 	int len;
 	scanf("%d", &n);
-//	scanf("\n");
+
 	for(; n>0; n--){
 		scanf("%s", input);
 		len = strlen(input);

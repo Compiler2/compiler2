@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int shuzu[100][6];

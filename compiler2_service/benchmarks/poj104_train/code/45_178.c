@@ -1,4 +1,6 @@
-//itc online test nov 13 prob 8
+#include <header.h>
+
+
 main() {
        char s[50],targets[50];
        scanf("%s %s",&s,&targets);

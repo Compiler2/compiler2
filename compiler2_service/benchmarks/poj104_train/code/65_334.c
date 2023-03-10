@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    int n,i,a[201],b[201],c=0,d=0;

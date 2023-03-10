@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[1000][256];
 int main()
 {

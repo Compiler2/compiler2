@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct guahao
 {
 	char num[20];

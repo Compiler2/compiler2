@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char str[10000];
 

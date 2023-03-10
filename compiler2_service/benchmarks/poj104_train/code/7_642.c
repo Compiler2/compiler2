@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int i,n,k,m,j,tag=1,jieshu=1;

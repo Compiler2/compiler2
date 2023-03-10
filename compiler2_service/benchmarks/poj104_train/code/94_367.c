@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int N,e,i,k,a[500],flag=0;

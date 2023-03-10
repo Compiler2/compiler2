@@ -1,3 +1,5 @@
+#include <header.h>
+
 double cal(int n)
 {int i,a=1,b=2,temp;
 double sum=0;

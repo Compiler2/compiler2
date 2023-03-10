@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[100],b[100],c[100],d[100];
@@ -16,7 +18,7 @@ int main()
 		   {
 		      if(b[j]==a[i+j])
 		       sum++;
-		    }                    //?????????????????????
+		    }                    
 		   if(sum==m&&y==0)
 		   { 
 	              for(j=0;j<k;j++)

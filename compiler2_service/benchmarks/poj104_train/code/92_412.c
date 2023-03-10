@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n,t[1000],q[1000],i,j,win=0,ping=0,x=0,num=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +14,7 @@ int main(int argc, char *argv[])
   diyitian=(year-1+n_runnian)%7;
 
   
-  if(year%100>0){   //????????? 
+  if(year%100>0){   
   if(year%4==0)
                a[2]=29;
                }
@@ -20,7 +22,7 @@ int main(int argc, char *argv[])
                  a[2]=29;
                  }
                
-  //????? 
+  
   for(i=0;i<month;i++){
                             sum=sum+a[i];
                             }

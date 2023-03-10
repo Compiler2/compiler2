@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char cc[500]={'\0'},c[30][20]={'\0'};

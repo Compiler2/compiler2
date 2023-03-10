@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sub(char common[],char minlen[],int n,int now)
 {
 	char *a,*b;

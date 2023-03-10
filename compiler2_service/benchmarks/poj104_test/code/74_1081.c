@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huiwen(int n)
 {
 	int b=0,m=n;

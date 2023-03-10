@@ -1,3 +1,5 @@
+#include <header.h>
+
 int feibonaqi(int a)
 {
   int i,sz[21];

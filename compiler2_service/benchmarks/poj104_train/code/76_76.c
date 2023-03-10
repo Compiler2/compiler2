@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a,n,i,j,mid,result;
 	n=0;
@@ -45,23 +47,23 @@ int main(){
 			mid=minus[i];
 		}
 	}
-	//for(i=0;i<n;i++){
-	//	printf("\n");
-	//	printf("%d",minus[i]);
-	//}
+	
+	
+	
+	
 	for(i=0;i<n;i++){
 		if(mid==minus[i]){
 			result=i;
 		}
 	}
-	//for(i=0;i<n;i++){
-	//	printf("%d ",line1[i]);
-	//	printf("%d ",line2[i]);
-	//	printf("\n");
-	//}
-//	printf("\n%d %d",line1[result],line2[result]);
+	
+	
+	
+	
+	
+
 	for(i=0;i<n;i++){
-//		printf("\n%d %d",line1[i],line2[i]);
+
 		if((line1[result]<=line1[i])&&(line2[result]>=line2[i])){
 			a++;
 		}else{

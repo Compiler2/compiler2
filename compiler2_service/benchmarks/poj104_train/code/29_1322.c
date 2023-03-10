@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	double s[100],a,b,d,e;

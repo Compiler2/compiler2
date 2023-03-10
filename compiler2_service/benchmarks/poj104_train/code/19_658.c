@@ -1,3 +1,5 @@
+#include <header.h>
+
 char former[150];
 char zhao[10],huan[10];
 void alter(char*p)

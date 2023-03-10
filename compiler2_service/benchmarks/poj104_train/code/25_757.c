@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int sz[200]={0},carry=0,i,k,n;

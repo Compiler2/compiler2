@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {	
 	char a[100][100],b[100][100];
@@ -10,7 +12,7 @@ int main()
 		scanf("%s",&a[i]);
 		scanf("%s",&b[i]);
 	}
-	//printf("%s,%s\n",a,b);
+	
 	for(i=0;i<n;)
 	{   
 		for(t=0,p=strlen(a[i])-1,q=strlen(b[i])-1;p>=0;p--,q--)
@@ -26,10 +28,10 @@ int main()
 			else if(p>=0&&q<0)	{
 				t=0;c[i][p]=a[i][p]-48;
 			}
-			//printf("%d,%d\n",p,c[i][p]);
+			
 			c[i][p]+=48;
 		}
-		//printf(" %d\n",strlen(a));
+		
 		c[i][strlen(a[i])]='\0';
 		i++;
 	}

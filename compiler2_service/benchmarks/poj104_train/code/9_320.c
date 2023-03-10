@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct point{
 		char id[10];
@@ -6,7 +8,7 @@ struct point{
 
 int main(){
 	int n,i,j,o=0,s=0,t,m;
-//	char x[10];
+
 	scanf("%d",&n);
 	for(i=0;i<n;i++){
 		char x[10]={'\0'};

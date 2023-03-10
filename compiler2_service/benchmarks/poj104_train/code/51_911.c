@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct T
 {
        char s[10],n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ss(int n)
 {
 int i,j,t=0;

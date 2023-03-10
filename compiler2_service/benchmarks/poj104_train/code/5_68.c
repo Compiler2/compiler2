@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char x1[501],x2[501];
 	double n;

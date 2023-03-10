@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,num[100],k,zi[100],mu[100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n,i,j,len;
@@ -16,7 +18,7 @@ main()
                            }
                            for(j=n;j<=5;j++) b[i][j]=0;
                            
-      }//??len-n+1?n-gram
+      }
       for(i=0;i<=len-n;i++)
       {
                            outcome[i]=1;

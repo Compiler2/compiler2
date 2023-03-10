@@ -1,3 +1,5 @@
+#include <header.h>
+
 char f1(char ch[],int left,int right)
 {
     if(left >= right)

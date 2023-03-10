@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int suzu[8][8];
 	int i,k,m,n;

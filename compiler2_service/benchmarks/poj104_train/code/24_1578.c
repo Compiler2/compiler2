@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char newWord[50];
 	char ch;

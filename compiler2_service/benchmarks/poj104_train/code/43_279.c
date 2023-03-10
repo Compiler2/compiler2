@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int szs(int a); 
 int main()

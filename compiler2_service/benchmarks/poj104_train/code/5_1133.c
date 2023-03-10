@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double p;
 	int la,i,y=0,lb,s=0;

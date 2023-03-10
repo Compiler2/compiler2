@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isjishu(int x);
 int isoushu(int y);
 int main()

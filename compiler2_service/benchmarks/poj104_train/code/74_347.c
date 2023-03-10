@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f1(int x)
 {
     int i;

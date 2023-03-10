@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fenjie(int x,int p);
 int N;
 int main()

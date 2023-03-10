@@ -1,3 +1,5 @@
+#include <header.h>
+
 char word[200];
  
 int main(int argc, char* argv[])

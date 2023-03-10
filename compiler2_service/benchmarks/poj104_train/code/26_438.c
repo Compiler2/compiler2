@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ls,i,word,num;

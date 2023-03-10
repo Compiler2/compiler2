@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[300000],b[300000],count[350]={0},i=0,n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[100],yuan[100],xin[100];

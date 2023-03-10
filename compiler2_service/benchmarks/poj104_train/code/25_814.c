@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int n,i,k;
@@ -17,7 +19,7 @@ if(v[i]>=10)
   }
 }
 }
-//printf("%d\n",v[1]);
+
 int flag=0;
 for(i=1000;i>=0;i--)
    {

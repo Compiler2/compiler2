@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int year,month,day,d,sum=0,i,e,f,g;

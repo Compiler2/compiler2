@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,map[101][101];
 void cover(int x,int y){
      if(x>1&&map[x-1][y]==0)map[x-1][y]=2;

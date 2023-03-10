@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int i,j,k,kk;
 char s1[305],s2[305];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int count,number[500],i,p,len,judge;
 	char input[1000],name[500];

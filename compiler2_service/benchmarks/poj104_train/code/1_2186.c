@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int digui(int p,int q); 

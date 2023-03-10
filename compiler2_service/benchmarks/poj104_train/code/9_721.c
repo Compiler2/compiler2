@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct hospital
 	{
 		char ID[11];

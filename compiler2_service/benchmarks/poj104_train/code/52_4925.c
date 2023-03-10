@@ -1,3 +1,5 @@
+#include <header.h>
+
 void swap(int a[],int j);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sheng(int *a,int n)
 {
         int i,j,b;

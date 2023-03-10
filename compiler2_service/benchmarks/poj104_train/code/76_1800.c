@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){ 
    int n,i;
    int  qs[100],zz[100];

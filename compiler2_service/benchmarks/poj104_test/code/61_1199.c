@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int b,d[100],i=0;

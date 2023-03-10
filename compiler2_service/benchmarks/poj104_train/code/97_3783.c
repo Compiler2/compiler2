@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sort(int a,int b);
 int main(){
     int money;

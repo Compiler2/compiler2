@@ -1,3 +1,5 @@
+#include <header.h>
+
 int CF(int n)
 {
     int i,a=1;

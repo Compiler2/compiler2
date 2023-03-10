@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int a,b,i,j;
 int ai[128]={0};

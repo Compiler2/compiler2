@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int MAX(int,int);
 main()

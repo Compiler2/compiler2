@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
  int n,oversix=0,undersix=0,osix[100],usix[100],t;

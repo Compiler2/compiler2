@@ -1,3 +1,5 @@
+#include <header.h>
+
    struct stu
 { 
      char a[21];
@@ -27,8 +29,8 @@
          if(h[i].b[1]>80&&h[i].c=='Y')
          h[i].sum=h[i].sum+850;
          }
-    //     for(i=0;i<n;i++)
-    //      printf("%d\n",h[i].sum);
+    
+    
          k=0;
          sum1=h[0].sum;
          for(i=1;i<n;i++)

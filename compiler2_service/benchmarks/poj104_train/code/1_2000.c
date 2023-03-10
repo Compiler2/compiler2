@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int kind (int k,int a)
 {
@@ -9,7 +11,7 @@ int kind (int k,int a)
        {
              
               x=k/i;
-            // printf("%d*%d=%d\n",x,i,k);
+            
              temp++;
                for (j=i;j<x;j++)
              {
@@ -37,8 +39,8 @@ int main ()
     }
     for (i=0;i<n;i++)
     {
-        printf("%d\n",a[i][1]+1);//k=k???? 
+        printf("%d\n",a[i][1]+1);
     }
-    //scanf("%d",&n) ;
+    
        return 0;
 }

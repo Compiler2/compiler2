@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void toLowerCase(char *s) {
 	while (*s) {

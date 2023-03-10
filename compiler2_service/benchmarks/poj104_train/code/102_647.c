@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,l=0;
 	double h[50],t;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str1[1000];
 char str2[1000];
 void paixu(char a[]);

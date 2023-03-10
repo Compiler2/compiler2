@@ -1,3 +1,5 @@
+#include <header.h>
+
 int leap(int a)
 {
 	int t=1,i=0;

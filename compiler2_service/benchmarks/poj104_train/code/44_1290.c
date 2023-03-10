@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num,s;
 int reverse(int num)
 {

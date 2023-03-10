@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	int i, j,r,c,x,y,a[110][110];
 	for (i=0;i<110;i++) for (j=0;j<110;j++) a[i][j]=-1;

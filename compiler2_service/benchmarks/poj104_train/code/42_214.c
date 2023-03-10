@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n,i,l,k,j;
@@ -6,7 +8,7 @@ scanf("%d\n",&n);
 long int a[100001];
 for(i=0;i<n;i++)
 scanf("%d",&a[i]);
-scanf("%d",&k);//?????????
+scanf("%d",&k);
 for(i=0;i<n;i++)
 {
 if(a[i]==k)
@@ -17,6 +19,6 @@ i--;}
 }
 n-=l+1;
 for(i=0;i<n;i++)
-printf("%d ",a[i]);//????????????
-                  printf("%d",a[n]);//????????
+printf("%d ",a[i]);
+                  printf("%d",a[n]);
 }

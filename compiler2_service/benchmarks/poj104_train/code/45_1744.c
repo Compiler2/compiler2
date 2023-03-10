@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sent[100],zfc[100];

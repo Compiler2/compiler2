@@ -1,3 +1,5 @@
+#include <header.h>
+
 long int m,n;
 int a[1000001];
 long int i,j;

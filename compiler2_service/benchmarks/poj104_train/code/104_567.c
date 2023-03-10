@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,a,b,x[10],y[10],countx=0,county=0;

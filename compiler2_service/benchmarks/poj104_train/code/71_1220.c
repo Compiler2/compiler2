@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rn(int y);
 int main ()
 {

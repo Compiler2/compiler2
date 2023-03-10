@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int i=0;
@@ -30,8 +32,8 @@ int main()
            a[j+1]=s;
            } 
        } 
-      // printf("%d ",a[i]) ; 
-  }// printf("%d",a[n-1]); 
+      
+  }
    
   for(i=0;i<=(n-2);i++) 
   {
@@ -44,8 +46,8 @@ int main()
            b[j+1]=s;
            } 
        } 
-      // printf("%d ",a[i]) ; 
-  }// printf("%d",a[n-1]); 
+      
+  }
   /*for (i=0;i<=(n-1);i++)
   {
   printf("a[i]=%d     b[i]=%d\n",a[i],b[i]);
@@ -58,7 +60,7 @@ int main()
                                 sum+=200;
                                 i++;
                                 f++;
-                                //printf("%d\n",sum);
+                                
                           }      
                           else 
                           {
@@ -67,27 +69,27 @@ int main()
                                 sum=sum-200;
                                 i++;
                                 g--;
-                               // printf("%d\n",sum);
+                               
                                 } 
-                                else  //???????????????? 
+                                else  
                                    {    
-                                       if  (  a[j]>b[g] )//??????????? ????????? 
+                                       if  (  a[j]>b[g] )
                                         {
                                         sum+=200;
-                                        //printf("%d\n",sum);
+                                        
                                         j--;
                                         g--;
                                         }
                                        else  
                                             {
-                                                 if  (a [j]<b[g]  )//???????????????????? 
+                                                 if  (a [j]<b[g]  )
                                                 {
                                                 sum-=200;
-                                               // printf("%d\n",sum);
+                                               
                                                 i++;
                                                 g--;
                                                 }
-                                             else //???????????????????? 
+                                             else 
                                                 {
                                                      if (  a[i]< b[g] )
                                                      {

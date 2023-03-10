@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dis(int x)
 {
     int y,t=0;

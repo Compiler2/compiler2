@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct book
 	{
 		char id[11];

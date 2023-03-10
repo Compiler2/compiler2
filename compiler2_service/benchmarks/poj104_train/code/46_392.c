@@ -1,3 +1,5 @@
+#include <header.h>
+
 int u[1000][1000];
 int main()
 {

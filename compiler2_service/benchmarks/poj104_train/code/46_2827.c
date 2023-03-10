@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	int row,col,xxrow,sxrow,xxcol,sxcol,i,j,sz[100][100];
 	scanf("%d%d",&row,&col);

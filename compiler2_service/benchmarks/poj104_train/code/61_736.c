@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {   int a1=1,a2=1,i=0,a,n,e,y=0;
     scanf("%d",&n);

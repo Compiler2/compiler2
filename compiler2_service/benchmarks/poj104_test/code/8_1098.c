@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(int *a,int x)
 {
     int i=x-1,t,j;

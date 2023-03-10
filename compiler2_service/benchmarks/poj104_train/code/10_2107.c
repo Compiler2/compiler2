@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num=0;
 int input[26];
 int state[26];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int b[60]={0};

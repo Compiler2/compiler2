@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a,i=0;
@@ -9,7 +11,7 @@ else
 	while(a>0)
 	{
 		i=i*10+a%10;
-		//printf("%d",i);
+		
 		a=a/10;
 	}
      printf("%d",i);}

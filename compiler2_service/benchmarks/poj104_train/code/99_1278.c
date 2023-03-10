@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sort(float a,float b);
 int n,*sz;
 int main(){

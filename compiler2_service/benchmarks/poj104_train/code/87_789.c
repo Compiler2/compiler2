@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a,b,c,d,e,f,i,s,sum[100];
     for(i=0;i<100;i++){

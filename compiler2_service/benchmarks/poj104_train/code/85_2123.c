@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s(char n)
 {
     if(('a'<=n&&n<='z')||('A'<=n&&n<='Z')||n=='_')

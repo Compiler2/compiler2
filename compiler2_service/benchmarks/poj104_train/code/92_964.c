@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 void paixu (int* p)
 {

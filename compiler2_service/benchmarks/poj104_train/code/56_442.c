@@ -1,5 +1,7 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
-{//5
+{
 	int n,a,b,c,d,e,m;
 	scanf("%d",&n);
 	a=n/10000;

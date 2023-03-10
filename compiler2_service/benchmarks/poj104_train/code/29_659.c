@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a=1,b=1,m,n,i;
 	double sum=0;

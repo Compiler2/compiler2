@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[80],b[80],c[80],d[80],e[80],f[80];

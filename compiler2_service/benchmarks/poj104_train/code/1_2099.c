@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-    int n,i,fenjie(int x,int y),*a,re=0,j;//x?????????y???????????
+    int n,i,fenjie(int x,int y),*a,re=0,j;
     scanf("%d",&n);
     a=(int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++)

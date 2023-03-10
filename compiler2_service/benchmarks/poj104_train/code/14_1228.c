@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 struct student {
@@ -18,7 +20,7 @@ int main() {
 		scanf("%d %d %d", &(stu[i].id), &(stu[i].chinese), &(stu[i].math));
 		stu[i].total = stu[i].chinese + stu[i].math;
 		if (stu[i].total > max_0) {
-			// update second and third highest
+			
 			max_2 = max_1;
 			max_2_id = max_1_id;
 			max_1 = max_0;
@@ -27,7 +29,7 @@ int main() {
 			max_0_id = stu[i].id;
 		}
 		else if (stu[i].total > max_1) {
-			// update third highest
+			
 			max_2 = max_1;
 			max_2_id = max_1_id;
 			max_1 = stu[i].total;

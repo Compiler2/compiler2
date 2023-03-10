@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int p,a,b,i,j,*num;
 	num=(int *)malloc(sizeof(int)*10000);

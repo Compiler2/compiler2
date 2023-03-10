@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -23,7 +25,7 @@ int main()
             k++;
         }
     }
-    //???????+??
+    
     for(i=0;i<j;i++)
     {
         for(p=0;p<j-i-1;p++)
@@ -40,7 +42,7 @@ int main()
     {
         printf("%.2f ",heightofboy[i]);
     }
-   //???????+??
+   
    for(i=0;i<k;i++)
    {
        for(q=0;q<k-i-1;q++)

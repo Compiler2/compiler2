@@ -1,3 +1,5 @@
+#include <header.h>
+
 int q;
 int a[101][101], b[101][101];
 int c(int i,int j)

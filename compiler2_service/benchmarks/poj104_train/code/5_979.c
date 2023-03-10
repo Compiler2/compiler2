@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char x)
 {
     if(x=='A'||x=='T'||x=='G'||x=='C') return 0;

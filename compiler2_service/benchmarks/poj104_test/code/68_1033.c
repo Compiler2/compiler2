@@ -1,3 +1,5 @@
+#include <header.h>
+
 int number[50000]; 
 int check(int x)
 {

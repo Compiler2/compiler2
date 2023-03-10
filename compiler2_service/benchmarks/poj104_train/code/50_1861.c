@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ifunlucky(int d);
 int main()
 {

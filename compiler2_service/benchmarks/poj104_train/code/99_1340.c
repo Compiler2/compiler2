@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int age[100],n,i;float a,b,c,d,p=0,q=0,r=0,s=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 int n,k,i,j,sz[1000],sum;
 scanf("%d%d",&n,&k);

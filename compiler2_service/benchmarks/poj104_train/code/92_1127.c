@@ -1,3 +1,5 @@
+#include <header.h>
+
 
  main()
 {int N,i1,i2,j1,j2,k1,k2,ss,dd,judge,head1,head2,tail1,tail2,i;

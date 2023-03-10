@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int move[8]={-1,0,1,0,0,-1,0,1};
 struct pnt{int x,y,day; }st[100050];
 char map[128][128];
@@ -8,8 +10,8 @@ int main()
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
 		{
-			scanf(" %c",&map[i][j]); //????? 
-			//printf("%c\n",map[i][j]); 
+			scanf(" %c",&map[i][j]); 
+			
 			if (map[i][j]=='@')
 			{
 				st[r].x=i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ju(int x)
 {
 	int j;

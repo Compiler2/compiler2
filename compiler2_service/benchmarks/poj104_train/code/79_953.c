@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yuesefu(int n,int m)
 {
 	int n1,m1,i,j;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stu
 {
 	long num,ch,ma,tot;
@@ -39,7 +41,7 @@ int main()
     printf("%d %d\n",max->num,max->tot);
     max->tot=-1;
   }	
-  //  scanf("%ld %ld %ld",&now->num,&now->ch,&now->ma);
+  
 
 return 0;      	
 }

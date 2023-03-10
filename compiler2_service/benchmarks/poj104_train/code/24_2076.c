@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[6000],a[200][30],max[30],min[30];

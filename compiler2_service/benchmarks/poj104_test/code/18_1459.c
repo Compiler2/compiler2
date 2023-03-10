@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f1(int a[][100],int k)
 {
 	int i,j,min;

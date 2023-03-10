@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fbnq(int);
 int main(){
 	int m,i,j;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { void pai(double a[],int n,double c[]);
   double a[100]={0},sum=0,ave=0,b[100]={0};

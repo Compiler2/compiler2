@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char num[2][300]={'0'};

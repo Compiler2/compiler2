@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	short length,i,j=1;

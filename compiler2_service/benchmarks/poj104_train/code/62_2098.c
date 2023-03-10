@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char sh[1000],ch[500]={0},temp[500];

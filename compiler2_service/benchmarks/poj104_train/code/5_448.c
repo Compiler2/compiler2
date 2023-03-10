@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i , lena , lenb ;
@@ -7,17 +9,17 @@ int main()
 	scanf("%lf",&r);
 	scanf("%s",&a);
 	scanf("%s",&b);
-	lena = strlen (a);//????
+	lena = strlen (a);
 	lenb = strlen (b);
-	if (lena != lenb )//????
+	if (lena != lenb )
 	{
 		printf("error");
 	}
 	else
 	{
-		for(i=0 ; i <=lena-1 ; i++)//???
+		for(i=0 ; i <=lena-1 ; i++)
 		{
-			if( a[i] == b[i])//????
+			if( a[i] == b[i])
 			{
 				same++;
 			}

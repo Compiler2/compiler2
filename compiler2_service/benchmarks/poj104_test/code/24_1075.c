@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char minword[50]="\0";
 char maxword[50]="\0";
@@ -32,7 +34,7 @@ int main()
          if(a[i]==' '){
 			 str[len-1]='\0';
 		     len=0;
-			 //printf("%s\n", str);
+			 
 		 }
 		 
 		 if(strlen(str)<min && !len)
@@ -40,14 +42,14 @@ int main()
 			 min = strlen(str);
 			 clear(0);
              strcpy(minword, str);
-			 //printf("min=%d, %s\n",min, minword);
+			 
 		 }
 		 if(strlen(str)>max && !len)
 		 {    
 			 max = strlen(str);
 			 clear(1);
 			 strcpy(maxword,str);
-			 //printf("max=%d, %s\n",max, maxword);
+			 
 		 }
    }
     printf("%s\n%s",maxword,minword);

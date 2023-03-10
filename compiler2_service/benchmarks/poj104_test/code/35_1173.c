@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main( )
 { 
    int flag,i,j,k,row,col,m,n,a[8][8];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int N,i,e,h,j,k,m;
 	h=0;
@@ -12,7 +14,7 @@ int main(){
 			h++;
 		};
 	}
-//printf("%d",h);
+
     for(e=1;e<=h;e++)
 	{
         for(m=0;m<h-1;m++)

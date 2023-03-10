@@ -1,3 +1,5 @@
+#include <header.h>
+
 int count(char*p)
 {int n=0;
  for(;(*p!=' ')&&(*p);p++)n++;

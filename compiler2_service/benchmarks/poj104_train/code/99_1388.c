@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int i,n,age;
 double sum1=0.00,sum2=0.00,sum3=0.00,sum4=0.00;

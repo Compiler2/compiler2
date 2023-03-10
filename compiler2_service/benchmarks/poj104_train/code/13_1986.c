@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     register int i,j,flag;

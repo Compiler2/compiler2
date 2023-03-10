@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int tianji[1010];
 int qiwang[1010];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,i,j,t,s,c[505],d[505];
 for(i=0;i<505;i++)
@@ -16,8 +18,8 @@ if(strcmp(b[i],b[j])==0) {c[i]++; d[i]++;}
 for(i=0;i<t-n;i++)
 for(j=0;j<t-n-i;j++)
 if(c[j]>c[j+1]) {s=c[j];c[j]=c[j+1];c[j+1]=s;}
-//for(i=0;i<=t-n;i++)
-//printf("%d\n",c[i]);
+
+
 if(c[t-n]==0) printf("NO");
 else
 {printf("%d\n",c[t-n]+1);

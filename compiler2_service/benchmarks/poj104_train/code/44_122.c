@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reserve(int num)
 {
     int a[10],b,c,d,e,i,j,l;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct zimu
 {
        char a[6];

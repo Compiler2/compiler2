@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int a,b,c,d,e,k,f=0,n,sz[50001][4],dsz[100000];
 for(a=0;a<100000;a++){dsz[a]=0;}

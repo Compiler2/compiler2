@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main()
 {
-	int a[8][8], i, j, t, s, I, J, m[8], n[8], flag;   //s?????? t??????
+	int a[8][8], i, j, t, s, I, J, m[8], n[8], flag;   
 	scanf("%d,%d", &I, &J);
 	for(i=0;i<I;i++)
 	{

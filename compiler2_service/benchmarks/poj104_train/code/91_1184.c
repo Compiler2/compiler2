@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {char s[999];
 int i,n,t,tt,ttt;

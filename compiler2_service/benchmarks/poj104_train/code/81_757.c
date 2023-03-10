@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a(int x,int y)
 {
 	if(x<0||y<0||y>4||x>4){

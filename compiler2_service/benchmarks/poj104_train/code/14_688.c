@@ -1,3 +1,5 @@
+#include <header.h>
+
 void swap(int *i,int *j)
 {
 	int *p=i,t=*i;

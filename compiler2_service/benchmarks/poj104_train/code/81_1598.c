@@ -1,3 +1,5 @@
+#include <header.h>
+
 void q(int a[5][5],int m,int n)
 {
 	int i,b;

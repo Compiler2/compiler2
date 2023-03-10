@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,h[100],l[100],hour[101]={0},i,max=0;
 	scanf("%d\n",&n);

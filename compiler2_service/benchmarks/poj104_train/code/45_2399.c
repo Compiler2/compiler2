@@ -1,3 +1,5 @@
+#include <header.h>
+
 int same(char*p,char*q){
 	int a,b;
 		for(a=0;*(q+a)!='\0';){
@@ -14,7 +16,7 @@ int same(char*p,char*q){
 }
 
 int main(){
-	char w[2000];//??
+	char w[2000];
 	char s[200];
 	scanf("%s %s",s,w);
 	printf("%d",same(s,w));

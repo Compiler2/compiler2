@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int Z[100],n,m,i;

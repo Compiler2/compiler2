@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int i,j,ii,jj,flag,word[2][30];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[70000]={0};
 int main()
 {

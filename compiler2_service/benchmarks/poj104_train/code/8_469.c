@@ -1,3 +1,5 @@
+#include <header.h>
+
 void input(int *p,int *q,int *n,int *m) 
 {
      int *x;

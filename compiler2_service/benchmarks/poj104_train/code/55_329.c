@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ( )
 {
 	int n1,n2,l,t;long s=0;char number1[40],number2[40],*p;

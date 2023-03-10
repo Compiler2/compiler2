@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -19,10 +21,10 @@ int main()
 
 		if (normalstt)
 		{
-			//????
-			if (curnml)	//????
+			
+			if (curnml)	
 				tempcnt++;
-			else //????
+			else 
 			{
 				if(tempcnt>normalcnt)
 					normalcnt=tempcnt;
@@ -32,8 +34,8 @@ int main()
 		}
 		else
 		{
-			//?????
-			if(curnml)//???
+			
+			if(curnml)
 			{
 				normalstt=1;
 				tempcnt++;
@@ -41,7 +43,7 @@ int main()
 		}
 	}
 
-	//????????
+	
 	if(normalstt&&tempcnt>normalcnt)
 		normalcnt=tempcnt;
 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int normal(int,int);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int cmp(char *p1,char *p2)
 {
          if(islower(*p1)) *p1-=32;

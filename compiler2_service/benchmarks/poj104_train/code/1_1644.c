@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fi(int a,int j);
 void main()
 {

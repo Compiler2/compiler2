@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,l,m,n,c,d,e,f;
@@ -10,7 +12,7 @@ int main()
 		else 
 		{
 			a=b=0;
-		   // memset(g,0,sizeof(g));
+		   
 			for(k=0;k<60;k++) g[k]=0;
 			for(k=0;k<m;k++) scanf("%d",&g[k]);
             k=0;

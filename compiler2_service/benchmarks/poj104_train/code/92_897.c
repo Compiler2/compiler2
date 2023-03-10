@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sort(int *p,int n)
 {
     int i,j,k;

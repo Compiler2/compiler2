@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s[502];
     int max,frequency[251],n,i,j;

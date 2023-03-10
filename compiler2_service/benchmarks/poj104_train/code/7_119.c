@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[100],substr[50],r[50];

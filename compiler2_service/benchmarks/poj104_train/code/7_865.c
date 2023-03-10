@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char yuan[256]={0}, huan[256]={0}, hou[256]={0};

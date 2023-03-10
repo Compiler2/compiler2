@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k;
 	char s[50][50],e_s[10];

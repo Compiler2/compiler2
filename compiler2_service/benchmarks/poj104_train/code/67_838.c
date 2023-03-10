@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,a,b,i;
 	int nz[30],ny[30];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,n,b=0,sz[300];
 	int arr[300];

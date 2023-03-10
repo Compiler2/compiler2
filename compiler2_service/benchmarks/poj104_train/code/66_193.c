@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int year,month,day,i,j=0,first;
@@ -24,7 +26,7 @@ int main(int argc, char* argv[])
 			if(month>2)
 			day++;
 	}
-	//printf("%d %d %d\n",j,first,day);
+	
 	int weekday=(day-1+first)%7;
 	switch(weekday)
 	{

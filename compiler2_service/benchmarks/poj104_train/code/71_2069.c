@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int a)
 {
     if(a%400==0||(a%4)==0&&a%100!=0)

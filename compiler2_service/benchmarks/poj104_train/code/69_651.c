@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[256]={0},b[256]={0};

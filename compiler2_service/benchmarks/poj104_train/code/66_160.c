@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	unsigned long int year,month,day,days,allday,m,n;

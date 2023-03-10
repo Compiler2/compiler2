@@ -1,3 +1,5 @@
+#include <header.h>
+
 void list(int x[],int n)
 {
     int i,j,temp;

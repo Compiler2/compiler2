@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sen[5000],sz[50][100];

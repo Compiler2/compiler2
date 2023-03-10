@@ -1,3 +1,5 @@
+#include <header.h>
+
 int xx(int k);
 int main()
 {

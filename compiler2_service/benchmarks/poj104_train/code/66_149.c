@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 unsigned int a,b,c,n,d,D,x;

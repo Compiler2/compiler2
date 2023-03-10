@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int j,n,i,zu[100]={0},su[2][100],tu[100]={0};
  scanf("%d",&n);

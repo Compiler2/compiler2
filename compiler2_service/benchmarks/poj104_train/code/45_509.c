@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[50],str1[50];
 	scanf("%s %s",str,str1);

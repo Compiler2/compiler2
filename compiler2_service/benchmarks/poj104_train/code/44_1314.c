@@ -1,3 +1,5 @@
+#include <header.h>
+
 int RevNum(int n)
 {   int s=0;
     if(n>=0)

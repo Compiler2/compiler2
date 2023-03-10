@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char b[30],m1[30],m2[30];

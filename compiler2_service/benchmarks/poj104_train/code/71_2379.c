@@ -1,3 +1,5 @@
+#include <header.h>
+
 int mo1=31,mo2=28,mo3=31,mo4=30,mo5=31,mo6=30,mo7=31,mo8=31,mo9=30,mo10=31,mo11=30,mo12=31;
 int f(int x)
 {

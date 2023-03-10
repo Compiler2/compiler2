@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[100][100],b[100][100];
@@ -7,7 +9,7 @@ int main()
 		for(j=0;j<q;j++)
 			scanf("%d",&a[i][j]);
 	
-	scanf("%d %d",&q,&n);              //?????q???????!!!!????q???~ 
+	scanf("%d %d",&q,&n);              
 	for(i=0;i<q;i++)
 		for(j=0;j<n;j++)
 			scanf("%d",&b[i][j]);

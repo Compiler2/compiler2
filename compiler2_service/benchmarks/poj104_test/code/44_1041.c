@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int in[6];
 int main(int argc, char* argv[])

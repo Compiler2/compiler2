@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,n,zong[100],hao[100];
 	double yx[100];

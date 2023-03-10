@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,a,tuzhi[25];
     scanf("%d",&n);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[4], name[4];
 int work()

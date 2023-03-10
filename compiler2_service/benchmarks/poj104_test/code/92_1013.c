@@ -1,3 +1,5 @@
+#include <header.h>
+
 int quicksort(int *a,int initial,int end)
 {
     int m,i,tmp;
@@ -55,8 +57,8 @@ int run(int a[],int b[],int n)
                   posb2--;
               }
     }
-     //printf("win%d nul%d loss%d",time,nul,n-time-nul);
-    return (time)*200;//-(n-time-nul)*200;
+     
+    return (time)*200;
 }
 
 int main()
@@ -64,7 +66,7 @@ int main()
    int n=1,i;
    int *t;
    int *q;
-   //scanf("%d",&n);
+   
    while(n!=0)
    {
       scanf("%d",&n);

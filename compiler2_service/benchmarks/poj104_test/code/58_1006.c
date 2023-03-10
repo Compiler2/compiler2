@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int judgeletter(char);
 int judgeline(char);

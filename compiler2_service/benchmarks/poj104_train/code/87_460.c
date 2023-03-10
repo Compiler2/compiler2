@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i(int a,int b,int c)
 {
 	return(a*3600+b*60+c);

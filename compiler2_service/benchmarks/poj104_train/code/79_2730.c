@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n=0,p,i,j,t,k;
 int sl[301],cz[301];

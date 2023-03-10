@@ -1,3 +1,5 @@
+#include <header.h>
+
 void huiwen(char string[500],int full,int length)
 {
 	int x,y,u,i;

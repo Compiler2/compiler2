@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -29,7 +31,7 @@ int main()
 				count++;
 				if ( count == m )
 				{
-					//printf("%d\n",i);
+					
 					count2--;
 					count = 0;
 					*(p+i) = 0;
@@ -43,7 +45,7 @@ int main()
 			{
 				i = 0;
 			}
-			//printf("%d\n",i);
+			
 		}while(count2 > 1);
 		i = 0 ;
 		do

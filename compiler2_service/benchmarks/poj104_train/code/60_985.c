@@ -1,5 +1,7 @@
-// shang.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
+
+
+
 
 int sushu(int x){
 	int i,count=0,result;

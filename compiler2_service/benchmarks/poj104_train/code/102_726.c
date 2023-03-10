@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 double b[40];
 double c[40];

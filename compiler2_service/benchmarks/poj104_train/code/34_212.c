@@ -1,4 +1,6 @@
-//this program shows the proeess of jiaogu
+#include <header.h>
+
+
 int main()
 {
 	int n;

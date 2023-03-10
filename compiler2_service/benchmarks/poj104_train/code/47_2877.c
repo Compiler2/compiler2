@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n,a[101],i,*pt1,*pt2,c;

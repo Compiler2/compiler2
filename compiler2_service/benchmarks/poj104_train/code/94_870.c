@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
     int n,as[500],k[500];

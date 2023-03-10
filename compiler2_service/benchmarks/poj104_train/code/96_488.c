@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -11,7 +13,7 @@ int main()
     {
       printf("0\n");
       printf("%c\n",a[0]);
-      //scanf("%d",&j);
+      
       return 0;
     }
     for(j=1;j<i;j++)
@@ -42,7 +44,7 @@ int main()
     printf("\n");
     if(b[i-2]!=0) printf("%d",b[i-2]);
     printf("%d\n",b[i-1]);
-    //scanf("%d",&j);
+    
     return 0;
 }
       

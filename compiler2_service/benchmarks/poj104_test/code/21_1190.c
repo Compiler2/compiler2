@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a(int k)
 {
     if(k>0)

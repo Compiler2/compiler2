@@ -1,3 +1,5 @@
+#include <header.h>
+
 void qkg(char *a);
 void qdykg(char *a);
 void dbx(char *a);

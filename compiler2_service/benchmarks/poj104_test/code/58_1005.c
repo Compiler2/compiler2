@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,flag;
 	char s[81];

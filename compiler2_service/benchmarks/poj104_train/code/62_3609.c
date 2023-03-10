@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char juzi[200];   
     int i,j,m;

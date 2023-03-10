@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,k[50],i,l=0,s=0;

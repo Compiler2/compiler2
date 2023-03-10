@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char word1[100]={'\0'},word2[100]={'\0'};

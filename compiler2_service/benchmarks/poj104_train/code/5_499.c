@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char k[501],h[501];

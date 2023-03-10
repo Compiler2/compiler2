@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[25];
 int f(int x)

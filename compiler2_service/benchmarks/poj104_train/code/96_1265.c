@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
      char s[100]={0};
-     scanf("%s",s);   //???s[0]???? 
+     scanf("%s",s);   
      int a[100],b;
      int c,d,e;
      c=s[0]-'0';

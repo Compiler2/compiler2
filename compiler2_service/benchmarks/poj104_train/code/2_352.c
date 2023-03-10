@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stu{
 	int id;
 	char author[26];

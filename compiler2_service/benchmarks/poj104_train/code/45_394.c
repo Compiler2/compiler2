@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char str[50],str1[50],str2[50][50];
@@ -10,7 +12,7 @@ int main(int argc, char* argv[])
 	for(i=0;i<n;i++)
 	{
 		static int j=0;
-		//printf("%d\n",j);
+		
 		for(k=0;j<len2,k<len1;j++,k++)
 		{
 			str2[i][k]=*(str1+j);

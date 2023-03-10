@@ -1,3 +1,5 @@
+#include <header.h>
+
 void odd(int);
 void even(int);
 int n;

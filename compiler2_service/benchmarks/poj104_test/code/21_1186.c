@@ -1,3 +1,5 @@
+#include <header.h>
+
 float juedui(float x)
 {
 	if(x>=0)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int su(int x)
 {
 	int i,j=0;

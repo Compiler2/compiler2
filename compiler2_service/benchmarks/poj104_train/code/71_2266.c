@@ -1,3 +1,5 @@
+#include <header.h>
+
 int run(int year)
 {
 	if(year%100 == 0)

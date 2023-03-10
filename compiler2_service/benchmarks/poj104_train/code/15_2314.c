@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main (){
 	int n ,k,i,j,count=0,fx,fy,lx,ly,start=0;
 	int a[1002][1002];
-//	double e,x,t,sum,a,b,c,d;
-//	scanf("%lf%lf%lf%lf%lf",&a,&b,&c,&d,&e);
+
+
 	scanf("%d",&n);
 	
 	for(i=0;i<n;i++){

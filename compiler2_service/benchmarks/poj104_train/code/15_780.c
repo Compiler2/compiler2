@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n , xs[100][100] , neiwai , geshu = 0 ;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pailie(int*a,int n);
 int f(int*a,int*b,int n);
 int maxa(int x,int y);

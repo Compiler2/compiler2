@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i, j, k, p=0, q=0, judge=0;
 	double n;

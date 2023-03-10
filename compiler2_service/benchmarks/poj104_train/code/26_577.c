@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char s[101],*p;
@@ -8,7 +10,7 @@ void main()
 		if(*p!=' ')
 		{
 			printf("%c",*p);
-			p++;             //
+			p++;             
 		}
 		if(*p==' ')
 		{

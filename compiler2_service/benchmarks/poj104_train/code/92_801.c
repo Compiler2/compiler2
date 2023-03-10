@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int tj[1001],qw[1001];
 

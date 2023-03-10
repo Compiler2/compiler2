@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct scholarship
 {
 	char name[21];

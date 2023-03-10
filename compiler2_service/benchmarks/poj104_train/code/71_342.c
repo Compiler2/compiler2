@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int fun(int x,int y);

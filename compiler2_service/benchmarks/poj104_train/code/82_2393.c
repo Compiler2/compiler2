@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	int i,j,t=0,max=0,n;
 	int xy[100][2];

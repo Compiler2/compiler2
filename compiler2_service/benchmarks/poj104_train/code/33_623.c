@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j;
 	char z[256],x[256],A,T,C,G;

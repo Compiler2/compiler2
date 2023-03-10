@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int k)
 {
     int i,t[100],p=1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int leap_year(int y)
 {
 	if(y%400==0)

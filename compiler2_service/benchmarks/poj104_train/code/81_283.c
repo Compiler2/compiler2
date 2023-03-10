@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int f(int x[][5],int m,int n);

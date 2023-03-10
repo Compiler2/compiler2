@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    char zf1[257],zf2[257],zf3[257];

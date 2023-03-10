@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int dawang(int n,int m);
@@ -9,7 +11,7 @@ int main()
   printf("%d\n",boss);
   scanf("%d %d",&a,&b);
   }
-//  scanf("\n");
+
 }
 int dawang(int n,int m)
 {

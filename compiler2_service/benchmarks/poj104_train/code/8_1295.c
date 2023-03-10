@@ -1,3 +1,5 @@
+#include <header.h>
+
 /*void f()
 {
 	scanf("%d %d",&num1,num2);

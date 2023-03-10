@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -25,10 +27,10 @@ main()
           }
           e[c]++;
       }
-     // for (c=0;c<=k-1;c++)
-     // {
-     // printf("%d ",e[c]);
-     // }
+     
+     
+     
+     
  for (c=0,f=e[0];c<=k-1;c++)
       {
       if (f<=e[c])

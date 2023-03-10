@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,a[100000],b[100000],k,c,u=0,g=0;
@@ -23,7 +25,7 @@ int main()
                                       if(j==b[i])
                                       c++;
                      }
-                     if(k==0&&c==(n-1))  //hungry~~~ToT.....
+                     if(k==0&&c==(n-1))  
                      {printf("%d",j);
                      u++;
                      }

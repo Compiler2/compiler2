@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char *argv[])
 {
     int n,year[200],month1[200],month2[200],t,i,j,sum=0;

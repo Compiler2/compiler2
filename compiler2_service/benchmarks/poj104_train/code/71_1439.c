@@ -1,3 +1,5 @@
+#include <header.h>
+
 int DiJiTian(int year,int month);
 int main(int argc, char* argv[])
 {

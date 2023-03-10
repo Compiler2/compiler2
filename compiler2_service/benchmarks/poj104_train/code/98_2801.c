@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -12,7 +14,7 @@ int main()
 	int nowlen;
 	int thislen;
 	scanf("%s",s1);
-//			printf("%s\n",s1);
+
 	now = s1;
 	next = s2;
 	nowlen = strlen(s1);
@@ -21,9 +23,9 @@ int main()
 		for(j = 0;j < 41;j++)
 			next[j] = '\0';
 		scanf("%s",next);
-//					printf("%s\n",next);
+
 		thislen = strlen(next);
-//							printf("%d %d\n",nowlen,thislen);
+
 		if(nowlen + thislen + 1 <= 80) 
 		{
 			printf("%s ",now);

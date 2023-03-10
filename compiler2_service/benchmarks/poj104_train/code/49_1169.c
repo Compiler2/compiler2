@@ -1,3 +1,5 @@
+#include <header.h>
+
 void hw(char a[],int n)
 {
 	int i,j,k,h=0;

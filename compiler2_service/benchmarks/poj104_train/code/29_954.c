@@ -1,3 +1,5 @@
+#include <header.h>
+
 double F(double x)
 {
 	double result=0;

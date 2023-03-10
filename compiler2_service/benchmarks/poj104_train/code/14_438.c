@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stu
 {
 	int id;
@@ -23,7 +25,7 @@ int main()
 			scanf("%d%d%d",&a[3].id,&a[3].c,&a[3].m);
              a[3].t=a[3].c+a[3].m;
 		     b[3]=a[3];
-			 //a[3]="\0";
+			 
 		     for(K=0;K<=3;K++)
 			 {
 		       for(j=0;j<=3;j++)

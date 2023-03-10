@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int mon( int n){
 	int day ;

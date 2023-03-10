@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char w1[501],w2[501];

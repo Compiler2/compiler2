@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 trans(int a[],int m,int n)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char a[],char b[],char * p)
 {
      int m,n;

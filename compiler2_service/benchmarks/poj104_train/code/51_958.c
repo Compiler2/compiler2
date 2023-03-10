@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -13,7 +15,7 @@ int main()
 	gets(str);
 	m=strlen(str);
 
-	//??
+	
 	for(i=0;i<m-n+1;i++)
 	{
 		for(j=i;j<=i+n-1;j++)

@@ -1,5 +1,7 @@
+#include <header.h>
 
-int two(int n)   //?2?n??
+
+int two(int n)   
 {
 	int i,sum=1;
 	for(i=1;i<=n;i++)
@@ -9,7 +11,7 @@ int two(int n)   //?2?n??
 	return sum;
 }
 
-int pand(int x)  //??x????
+int pand(int x)  
 {
 	int i,sign=0,m;
 	for(i=1;sign==0;i++)

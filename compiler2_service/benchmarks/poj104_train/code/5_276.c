@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int len1,len2,sum=0,i,k=0;
 float n;

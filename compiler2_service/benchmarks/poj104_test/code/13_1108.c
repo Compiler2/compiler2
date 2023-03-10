@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {long i,n,x;
  int a[100]={0};

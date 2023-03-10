@@ -1,5 +1,7 @@
-// &frac34;&Oslash;&Otilde;ó&frac12;&raquo;&raquo;&raquo;&ETH;&ETH;&micro;&Uacute;&para;&thorn;&micro;&macr;.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
+
+
+
 
 
 int main(int argc, char* argv[])

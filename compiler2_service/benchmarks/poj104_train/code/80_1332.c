@@ -1,4 +1,6 @@
-//?? - ??(10-2) ???????????
+#include <header.h>
+
+
 int main(void)
 {
     int om[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
@@ -20,7 +22,7 @@ int main(void)
             s+=om[i];
         s+=sd;
     }
-   // printf("%d\n", s);
+   
     
     scanf("%d %d %d", &ey, &em, &ed);
     if((ey%4==0&&ey%100!=0)||(ey%400==0))

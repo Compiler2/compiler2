@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hs(int n,int m){
 int i,k=0;
 for(i=2;i<=n;i++){

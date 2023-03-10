@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,shou,shu,h,max,i;
 	scanf("%d\n",&n);

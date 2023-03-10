@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int n,i,j,k,m;
@@ -18,11 +20,11 @@ for(i=1;i<n+1;i++)
                            
                            }
                            p[i][0]='0';
-      //printf("%c\n",p[i][j]);
+      
       }
 
 scanf("%d",&m);
-//printf("%d\n",m);
+
    for(k=0;k<m-1;k++)
     {
  for(i=1;i<n+1;i++)  

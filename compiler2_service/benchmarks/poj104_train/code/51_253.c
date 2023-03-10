@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 { char num[400];
   char num1[400][400];

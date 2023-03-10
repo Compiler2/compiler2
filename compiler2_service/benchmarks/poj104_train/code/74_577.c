@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hui(int n);
 int sushu(int n);
 int main()

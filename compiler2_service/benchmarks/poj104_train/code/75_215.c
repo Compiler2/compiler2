@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int i,j,a[1000]={0},b[1000]={0},n=0,n1=0,mid;
 int min1=1000,max1=0,min2=1000,max2=0,d[1000]={0};
@@ -11,7 +13,7 @@ for(;;)
 			break;
 	}
 
-//n1??
+
 for(;;)
 	{
 		scanf("%d", &b[n++]);

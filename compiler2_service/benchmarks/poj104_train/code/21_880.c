@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {  int i,m,n,sum=0,max,min;
    int num[300];

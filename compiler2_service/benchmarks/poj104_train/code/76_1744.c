@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,k,i,e1,e2,t,max;
 struct{

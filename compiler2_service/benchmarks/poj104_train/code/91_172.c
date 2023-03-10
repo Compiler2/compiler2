@@ -1,3 +1,5 @@
+#include <header.h>
+
 void convert(char *s);
 char str[1000];
 void convert(char *s)

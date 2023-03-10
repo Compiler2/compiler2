@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int y,m,day,tot=0,i;

@@ -1,4 +1,6 @@
-//leave out and get the integers in a string
+#include <header.h>
+
+
 int a[30];
 char str[31];
 char *pt=str;
@@ -6,7 +8,7 @@ int getint()
 {
     if(*pt=='\0')return -1;
     int sum=0;
-    while ('0'<=*pt&&'9'>=*pt){//the egg pain segmentation fault!
+    while ('0'<=*pt&&'9'>=*pt){
         sum*=10;
         sum=sum+*pt-'0';
         pt++;}
@@ -22,7 +24,7 @@ int main()
     gets(str);
     int i=0;
     for (i=0;i<30;i++)
-        a[i]=-1;//means initialized
+        a[i]=-1;
     i=0;
     while(*pt!='\0')
     {

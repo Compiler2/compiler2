@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct a{
 int n;
 char s[27];

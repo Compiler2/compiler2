@@ -1,4 +1,6 @@
-//struct
+#include <header.h>
+
+
 main()
 {
     int a[5][5];

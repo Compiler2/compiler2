@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char id[101][11];
 

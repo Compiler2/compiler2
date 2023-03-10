@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fy()
 {
     int t=0,n,i,a[100];

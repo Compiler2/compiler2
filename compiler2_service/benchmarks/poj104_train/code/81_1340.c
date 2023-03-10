@@ -1,3 +1,5 @@
+#include <header.h>
+
 int array[5][5];
 int pp;
 

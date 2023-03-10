@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char zfc[101],sor[101],rep[101];

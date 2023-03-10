@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n,i;
@@ -17,7 +19,7 @@ int main()
    else               
     printf("same\n");
   }
-  //getchar();  
-  //getchar(); 
+  
+  
   return 0;
 }

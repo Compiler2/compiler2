@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k[100];
 int main(){
 int n,i;

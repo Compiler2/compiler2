@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main(){
 	int n;
 	int A=0,B=0,C=0,D=0;
 	int i;
-//	int sum=0;
+
 	
 	int ew[100];
 	double a=0,b=0,c=0,d=0;
@@ -11,9 +13,9 @@ int main(){
 	for(i=0;i<=n-1;i++){
 		scanf("%d",&ew[i]);
 	}
-//	for(i=0;i<=n-1;i++){
-//		sum+=ew[i];
-//	}
+
+
+
 	for(i=0;i<=n-1;i++){
 		if(ew[i]<=18&&ew[i]>=1){
 			A++;

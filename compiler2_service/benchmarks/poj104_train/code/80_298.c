@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -6,7 +8,7 @@ int main()
 	scanf("%d%d%d",&x,&y,&z);
 	r=y-1;
 	p=x-1;
-	//???
+	
 	if(a==x)
 	{if(b==y)
 	{sum=z-c;
@@ -23,17 +25,17 @@ int main()
 		sum=sum+30;
 	else if((r==2)&&((x%4==0&&x%100!=0)||(x%400==0)))
 		sum=sum+29;
-	else if((r==2)&&(x%4!=0||(x%100==0&&x%400!=0)))//??
+	else if((r==2)&&(x%4!=0||(x%100==0&&x%400!=0)))
 		sum=sum+28;
 	sum=sum-c+z;
 	printf("%d",sum);
 
 	}}}
-	//???
+	
 	else
 	{
 		k=a+1;
-		for(k=k;k<=p;k++)//??
+		for(k=k;k<=p;k++)
 	{if((k%4==0&&k%100!=0)||(k%400==0))
 	   sum=sum+366;
 	else sum=sum+365;
@@ -51,10 +53,10 @@ int main()
 		sum=sum+30;
 	else if((q==2)&&((a%4==0&&a%100!=0)||(a%400==0)))
 		sum=sum+29;
-	else if((q==2)&&(a%4!=0||(a%100==0&&a%400!=0)))//??
+	else if((q==2)&&(a%4!=0||(a%100==0&&a%400!=0)))
 		sum=sum+28;
 	}
-	sum=sum-c;//????
+	sum=sum-c;
 	for(w=1;w<y;w++)
 	{
 	if((w%2==0)&&(w>7))
@@ -67,7 +69,7 @@ int main()
 		sum=sum+30;
 	else if((w==2)&&((x%4==0&&x%100!=0)||(x%400==0)))
 		sum=sum+29;
-	else if((w==2)&&(x%4!=0||(x%100==0&&x%400!=0)))//??
+	else if((w==2)&&(x%4!=0||(x%100==0&&x%400!=0)))
 		sum=sum+28;
 	}
 	sum=sum+z;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int sz[5][5];
 void exchange(int a,int b);

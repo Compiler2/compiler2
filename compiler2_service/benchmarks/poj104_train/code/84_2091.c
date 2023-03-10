@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int num,max1,max2;
 	int n;

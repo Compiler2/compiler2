@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {   int n,i,x,j,z,len,len1,len2;
     char s[1000],a[1000]={'\0'},b[1000]={'\0'},c[1000]={'\0'};

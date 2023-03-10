@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int check(char s[],int i,int j)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int a,i,j,sz[100][6],sz2[100];
 	for(i=0;i<100;i++){

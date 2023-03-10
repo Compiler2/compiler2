@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(int*p,int k);
 int saima(int*p,int*q,int k);
 main()

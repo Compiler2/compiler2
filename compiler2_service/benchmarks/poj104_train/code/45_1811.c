@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char shuru[2][50];

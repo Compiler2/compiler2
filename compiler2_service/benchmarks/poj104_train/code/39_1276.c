@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	struct student
@@ -40,7 +42,7 @@ memset(stu[i].total, 0, sizeof(stu[i].total));
 	{
 		for(j=0;j<5;j++)
 		{
-			stu[i].all+=stu[i].total[j];  //????????????.
+			stu[i].all+=stu[i].total[j];  
 		}
 	}
     
@@ -49,7 +51,7 @@ memset(stu[i].total, 0, sizeof(stu[i].total));
 	{
 		if(stu[i].all>max)
 		{
-			max=stu[i].all;//????????,????????
+			max=stu[i].all;
 		    j=i;
 		}
 	}

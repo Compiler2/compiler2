@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a,b,c,mid,i,n,high,low,stop;
 	a=0;
@@ -10,9 +12,9 @@ int main(){
 			a++;
 			c=a;
 		}else{
-			//if(n==1){
-		//		printf("0");
-		//	}
+			
+		
+		
 			if(a>0){
 				mid=b;
 				if(a>mid){

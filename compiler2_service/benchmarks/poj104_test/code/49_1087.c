@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	static char c[501],c1[501],c2[501];

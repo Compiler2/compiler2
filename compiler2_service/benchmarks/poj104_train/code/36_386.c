@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
-    char a[100],b[100],t;//temp?????????
-    int n,m,i,j;//n,m???????,i,j?????????
+    char a[100],b[100],t;
+    int n,m,i,j;
     scanf("%s %s",a,b);
     n=strlen(a);m=strlen(b);
     if (n==m)
@@ -16,7 +18,7 @@ int main()
             for(i=0;i<m-j;i++)
             if (b[i]>b[i+1])
             {
-                t=b[i];b[i]=b[i+1];b[i+1]=t;//???????????????
+                t=b[i];b[i]=b[i+1];b[i+1]=t;
             }
         for(i=0,j=0;i<n;i++)
         {   j=j+1;

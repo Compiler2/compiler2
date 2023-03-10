@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int way(int x,int y);

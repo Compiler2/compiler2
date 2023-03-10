@@ -1,10 +1,12 @@
+#include <header.h>
 
-//??, bingxue_ningyan@sina.com 
+
+
 
 int main()
 {
 	int n[100][100],i,k,j,s[100],num[100],t,p,m;
-	//double a;
+	
 	for(i=0;i<100;i++)
 	{
 		scanf("%d",&n[i][0]);
@@ -34,7 +36,7 @@ int main()
 				{
 					s[k]=s[k]+1;
 				}
-				//if(a==2.0||a==0.5) s[k]=s[k]+1;
+				
 			}
 		}
 	}

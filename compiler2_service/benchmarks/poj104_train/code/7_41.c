@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main(){
 	void copy(char a[],char b[],char c[]);
 	char S[100],sub[100],re[100];

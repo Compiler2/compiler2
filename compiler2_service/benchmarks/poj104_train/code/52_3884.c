@@ -1,3 +1,5 @@
+#include <header.h>
+
 void xunhuan(int a[100],int n,int m)
 {
 	int i,j,t,temp;

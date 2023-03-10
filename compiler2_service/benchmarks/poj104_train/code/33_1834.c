@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int n;
 char m[10000][256];

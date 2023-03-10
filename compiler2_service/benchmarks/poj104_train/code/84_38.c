@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	scanf("%d",&n);
@@ -7,11 +9,11 @@ int main(){
 		scanf("%d",&c[i]);
 	}
 	int j=2;
-	int x=0;//zuida
-	int y=0;//cida
+	int x=0;
+	int y=0;
 	 if(c[0]>c[1]){
-		x=c[0];//122
-		y=c[1];//57
+		x=c[0];
+		y=c[1];
 		}
 	if(c[0]<c[1]){
 		x=c[1];

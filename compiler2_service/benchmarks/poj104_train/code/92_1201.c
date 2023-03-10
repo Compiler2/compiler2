@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void sort(int *array,int max){
 	for(int i=0;i<max-1;i++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char a[500];
@@ -26,8 +28,8 @@ len=strlen(a);
             }     
                   
      } 
-//for(i=0;i<len-n+1;i++)
-//printf("%d",b[i]);
+
+
 
 
 max=b[0];

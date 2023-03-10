@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int sz[8][8];
@@ -8,15 +10,15 @@ int main()
 			scanf("%d",&(sz[i][j]));
 		}
 	}
-	//????
+	
 	for(i=0;i<row;i++){
 		q=0;
 		for(j=0;j<col;j++){
-			//????????
-			if(sz[i][j]<sz[i][q]){}//q???????????
+			
+			if(sz[i][j]<sz[i][q]){}
 			else{
 					x[i]=i;
-					q=y[i]=j;//????????
+					q=y[i]=j;
 				}
 			
 		}
@@ -30,13 +32,13 @@ int main()
 			if(sz[i][y[i]]>sz[j][y[i]])
 			{
 				p=0;
-				j=row;//????????????????,??p??0
+				j=row;
 			}
 		}
 		if(p==1)
 		{
 			printf("%d+%d",i,y[i]);
-			i=row;//????????
+			i=row;
 		}
 	}
 

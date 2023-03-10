@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -11,7 +13,7 @@ int main()
 	for(i=1;i<=1000;i++)
 		if(a[i]!=0&&i%2!=0&&t==0){t++;printf("%d",i);}
 		else if(a[i]!=0&&i%2!=0)printf(",%d",i);
-	//getchar();
-	//getchar();
+	
+	
     return 0;
 }

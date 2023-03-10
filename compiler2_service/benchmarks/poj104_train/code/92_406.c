@@ -1,3 +1,5 @@
+#include <header.h>
+
 void merge(int* array,int* temp,int left,int right,int middle){
      int i,j,k,index1,index2;
      for(i = left; i <= middle; i++){
@@ -27,8 +29,8 @@ int main(){
     int n;
     scanf("%d",&n);
     if(n == 0){return 0;}
-    int horse_q[1005] = {0};      //???? 
-    int horse_t[1005] = {0};     //????
+    int horse_q[1005] = {0};      
+    int horse_t[1005] = {0};     
     int i;
     for(i = 0; i < n; i++){
             scanf("%d",&horse_t[i]);
@@ -40,12 +42,12 @@ int main(){
     mergesort(horse_t,temp_t,0,n - 1);
     int temp_q[1005] = {0};
     mergesort(horse_q,temp_q,0,n - 1);
-    int t_head = n - 1;        //?????????? 
-    int t_last = 0;            //?????????? 
-    int q_head = n - 1;           //??????????
-    int q_last = 0;       //?????????? 
-    int ans = 0;              //?? 
-    while(q_head >= q_last){     //??????????
+    int t_head = n - 1;        
+    int t_last = 0;            
+    int q_head = n - 1;           
+    int q_last = 0;       
+    int ans = 0;              
+    while(q_head >= q_last){     
          if(horse_t[t_head] > horse_q[q_head]){
                        ans += 200;
                        t_head--;

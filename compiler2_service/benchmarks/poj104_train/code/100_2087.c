@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[300];int zm[100];int zmnum[100]={0};

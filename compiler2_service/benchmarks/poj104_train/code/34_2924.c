@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shu(int a);
 
 int main(){

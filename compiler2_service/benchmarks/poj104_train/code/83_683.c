@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int score[10] = {90, 85, 82, 78, 75, 72, 68, 64, 60, 0};

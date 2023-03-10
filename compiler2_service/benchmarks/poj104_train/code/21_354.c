@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bubble_sort(float a[300][2], float b[300][2], int n)
 {
 	int i, j=0, count;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  int m,sz[1000];
  double sum,e,f,d,jieguo[1000];

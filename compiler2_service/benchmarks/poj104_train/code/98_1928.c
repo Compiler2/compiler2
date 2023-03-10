@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -36,7 +38,7 @@ int main(int argc, char* argv[])
 			s1[j]=s2[j];
 		s1[l2]='\0';
 		l1=l2;
-//	    printf("*%d*",line);
+
 	}
  	return 0;
 }

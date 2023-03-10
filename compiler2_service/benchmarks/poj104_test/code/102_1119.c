@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sex[10];
 	double shengao;
@@ -7,16 +9,16 @@ int main(){
 	for(i=0;i<n;i++){
 		scanf("%s %lf",sex,&shengao);
 		if(sex[0]=='m') {
-			m[male++]=shengao;//???
+			m[male++]=shengao;
 		}
 		if(sex[0]=='f'){
-			f[female++]=shengao;//???
+			f[female++]=shengao;
 		}
 	}
 
 	int k;
 	double e;
-	for(k=1;k<=male;k++){//???????
+	for(k=1;k<=male;k++){
 		for(i=male-1;i>=k;i--){
 			if(m[i]<m[i-1]){
 				e=m[i];

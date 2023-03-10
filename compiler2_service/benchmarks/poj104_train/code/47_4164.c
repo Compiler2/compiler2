@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void reverse(int* array, int len){
 	int i = 0, j = len - 1;

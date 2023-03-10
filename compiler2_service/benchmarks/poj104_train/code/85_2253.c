@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char asz[300][300];
 	int len[300],n=0,i,bsz[300],j,fsz[300];

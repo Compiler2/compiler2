@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -23,7 +25,7 @@ int main()
             max=fabs(num[i]-avr);
     }
 
-    //printf("%f \n",max);
+    
 
     for(i=0;i<n;i++)
     {

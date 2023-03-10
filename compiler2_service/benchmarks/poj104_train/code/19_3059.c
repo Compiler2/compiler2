@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zifu[101],word[100][20]={" "},x[20],y[20]; 

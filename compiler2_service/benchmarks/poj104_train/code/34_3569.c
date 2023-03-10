@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int n)
 {
     if(n==1) printf("End\n");

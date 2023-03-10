@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
     int sz[40][6];
 	int a,b,c,d,e,f;

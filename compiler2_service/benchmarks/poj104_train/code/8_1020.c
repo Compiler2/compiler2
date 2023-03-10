@@ -1,3 +1,5 @@
+#include <header.h>
+
 int b[100],c[100],d,e,f[200];
 int du();
 int paib();

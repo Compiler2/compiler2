@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,i,a[20],b[64],c[66],d[66],e[66],f[66],s[66];
     for(i=1;;i++){

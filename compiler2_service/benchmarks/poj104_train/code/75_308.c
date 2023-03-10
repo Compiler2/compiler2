@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int min(int a[],int i)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,len,sum;
@@ -11,6 +13,6 @@ int main()
 		sum=(S[0]-48)+(S[len-1]-48);
 		printf("%c\n",sum+'a'-1);
 
-//	printf("%d\n",'1');
+
 	return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[30],dp[30]={1};
 int n;
 int ans=-1;

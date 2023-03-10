@@ -1,3 +1,5 @@
+#include <header.h>
+
 int c[1000][1000]={0};
 int main(int argc, char* argv[])
 {   int i,j,k;

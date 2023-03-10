@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge (int x,int y);
 int main(){
 	int sz[5][5];

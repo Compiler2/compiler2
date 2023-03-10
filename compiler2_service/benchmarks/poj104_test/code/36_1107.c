@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char s1[500],s2[500],*p;
     int num1[52]={0},num2[52]={0},ASC[52],i,j,len1,len2;

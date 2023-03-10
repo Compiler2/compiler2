@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int a[26],flag1,flag2,len;

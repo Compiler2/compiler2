@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int max,max1,t,k,x[28]={0},n,a,b,c,d,i,j;
 	char cc,y[100][32],q;

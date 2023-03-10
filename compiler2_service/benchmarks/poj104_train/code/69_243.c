@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,la,lb,r,p=0;
 	char e,a[252]={'\0'},b[252]={'\0'},c[252]={'\0'};
@@ -29,9 +31,9 @@ int main(){
 			c[i]='0'+r;
 			p=0;
 		}
-//		if(r==0){
-//			break;
-//		}
+
+
+
 	}
 	for(i=251;i>0;i--){
 		if(c[i]!='0'){
@@ -47,6 +49,6 @@ int main(){
 		c[r-1-i]=e;
 	}
 	printf("%s",c);
-//	scanf("%d",&n);
+
 	return 0;
 }

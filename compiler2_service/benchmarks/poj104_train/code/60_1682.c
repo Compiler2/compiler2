@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isPrime(int n)
 {
    int sum=0;

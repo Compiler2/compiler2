@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,j,o=0,k=0;
     double b[100],u,b1[100]={0.0},b2[100]={0.0};

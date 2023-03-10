@@ -1,3 +1,5 @@
+#include <header.h>
+
 int area[100][100];
 int main(){
     int m;

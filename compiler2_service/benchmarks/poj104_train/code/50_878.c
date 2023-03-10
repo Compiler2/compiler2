@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int w,b[20],i,sum[20];

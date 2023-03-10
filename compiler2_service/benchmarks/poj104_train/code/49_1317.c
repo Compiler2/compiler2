@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int ishuiwen(char c[510])
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int leapyearjudgement(int YEAR);
@@ -8,7 +10,7 @@ int main()
     countleapyear=0;
 	for (year=sy;year<ey;year++)
 		if ((year%4==0&&year%100!=0)||year%400==0) countleapyear++;
-	int d1,d2;//d1???????????,??????????????2??????????
+	int d1,d2;
 	d1=(ey-sy)*365+countleapyear;
 	
 	int daystart,dayend,leapyearstart,leapyearend;
@@ -25,15 +27,15 @@ int main()
     return 0;
 }
 
-int leapyearjudgement(int YEAR)//?????
+int leapyearjudgement(int YEAR)
 {
-	int judge;//??????????1???0
+	int judge;
 	judge=0;
 	if ((YEAR%4==0&&YEAR%100!=0)||YEAR%400==0) judge=1;
 	return (judge);
 }
 
-int daycounting(int month,int date,int LEAPYEAR)//?????
+int daycounting(int month,int date,int LEAPYEAR)
 {   int day;
 	if (LEAPYEAR=1)
 	{switch (month)

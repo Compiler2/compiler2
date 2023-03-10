@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	 char *p,*q;
@@ -12,6 +14,6 @@ int main()
  
 	}
  
-//	*(q+n)='\0';
+
 	puts(q);
 }

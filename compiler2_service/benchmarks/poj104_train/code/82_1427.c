@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zh(int x,int y){
 	if(x>=90&&x<=140&&y>=60&&y<=90){return 1;}
     else{return 0;}

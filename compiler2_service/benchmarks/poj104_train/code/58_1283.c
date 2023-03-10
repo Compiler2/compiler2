@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int panduan(char *z,int len);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[50][50]={0};
 int b[50],sb,lb,h=0,k=0;
@@ -6,7 +8,7 @@ while(1)
 {
 	scanf("%s",a[i]);
 	b[i]=strlen(a[i]);
-//	printf("%d ",b[i]);//
+
 	if(getchar()=='\n')
 	{
 		break;

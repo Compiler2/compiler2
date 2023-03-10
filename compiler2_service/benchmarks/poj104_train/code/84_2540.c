@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main () {
 	int max;
 	int max2;

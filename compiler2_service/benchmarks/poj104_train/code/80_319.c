@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int dijitian(int,int,int);
 int isrunnian(int);

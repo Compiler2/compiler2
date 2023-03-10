@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int syear,smonth,sday,eyear,emonth,eday;

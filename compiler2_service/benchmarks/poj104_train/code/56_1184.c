@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char num[6], i, a, b=0, k=0;

@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	int year,day,month,sum,i;
-	int num1[13],num2[13];//ping nian he run nian de yue fen tian shu
+	int num1[13],num2[13];
 	scanf("%d%d%d",&year,&month,&day);
 	sum=(year-1)*(365%7);
 	sum=sum%7;

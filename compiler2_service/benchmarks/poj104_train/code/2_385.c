@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct {
 int num;
 char w[26];

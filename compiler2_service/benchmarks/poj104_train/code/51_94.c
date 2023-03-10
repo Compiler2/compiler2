@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char a[600],b[600][6]={0};
     int n,i,j,k,l,o,p,count[600]={0},max;
@@ -11,16 +13,16 @@ int main(){
             b[k][o++]=a[i];
             }
         
-         //printf("%s\n",b[k]);
+         
          
         }
-    //printf("%d",k);
+    
     for(i=0;i<k;i++){
         for(j=i+1;j<=k;j++){
             if(strcmp(b[i],b[j])==0){
                 
                 count[i]++; 
-                //printf("%d\n",count[i]) ;              
+                
                 }
             }
         }

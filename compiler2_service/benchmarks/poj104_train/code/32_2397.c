@@ -1,3 +1,5 @@
+#include <header.h>
+
 void swi(int l,char s[200]){
 	int i,t;
 	for(i=0;i<l/2;i++){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -34,7 +36,7 @@ int main()
          }
 		 if(k>=13)
          {
-             //printf("***%d***%d\n",k,i);
+             
              b[i]=(k)/13;
 			 a[i+1]=(k%13)%10;
 			 a[i]=(k%13)/10;
@@ -42,7 +44,7 @@ int main()
          else
          {
              x=k;
-             //printf("***%d***%d\n",x,i);
+             
 			 do
              {
                  b[i]=0;
@@ -52,7 +54,7 @@ int main()
                      break;
                  }
                  x=10*x+a[i+2];
-                 //printf("***%d***%d\n",x,i);
+                 
 				 i++;
              }
              while(x<13);

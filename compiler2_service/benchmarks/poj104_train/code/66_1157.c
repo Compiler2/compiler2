@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Runnian(int year);
 int main(){
 	int year,month,day,total=0,i,k;

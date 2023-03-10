@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,k;
 char jj[1000][260], pdj[1000][260];    

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int high[100],low[100],count,max,all,i;
 	scanf("%d",&all);

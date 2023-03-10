@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jiaohuan(int a[],int i,int n,int m)
 {
 	int j,t,p,q;

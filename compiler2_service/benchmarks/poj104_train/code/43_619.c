@@ -1,3 +1,5 @@
+#include <header.h>
+
 int number(int n)
 {
     int i;

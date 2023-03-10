@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[10],b[10],m,n,i,ceng1,ceng2;

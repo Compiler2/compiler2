@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n;
@@ -12,7 +14,7 @@ main()
       }
       scanf ("%s",a[n-1]);
       length[n-1]=strlen(a[n-1]);
-      //int ed=0;
+      
       int total=80;
       for (i=0;i<n;i++)
       {
@@ -36,5 +38,5 @@ main()
           else if (length[i]==total) { printf ("%s\n",a[i]); total=80; }
           else if (length[i]>total) { printf ("\n"); i=i-1; total=80; }
       }
-      //printf ("\n");
+      
 }

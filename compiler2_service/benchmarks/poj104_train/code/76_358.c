@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int array[10000],i,n,ai,bi,head,tail,sum=0;
 	scanf("%d",&n);

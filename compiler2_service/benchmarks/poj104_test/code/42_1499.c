@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int i=0,n,j,x;
 	long int a[100000];

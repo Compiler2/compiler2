@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,len[1000],j;
 	char sz[1000][256];

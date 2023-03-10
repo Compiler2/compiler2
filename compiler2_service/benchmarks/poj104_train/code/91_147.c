@@ -1,3 +1,5 @@
+#include <header.h>
+
 void x(char*p1,char*p2,int n);
 int main()
 {

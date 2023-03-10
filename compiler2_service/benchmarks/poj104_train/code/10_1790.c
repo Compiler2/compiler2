@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max[26]={0};
 int a[26]={0};
 void attack(int n)

@@ -1,7 +1,9 @@
+#include <header.h>
+
 main()
 {
       int a,b,d[100],e,f,g,i,j,x,y,z; 
-      char c[100][100];  //g?60????? 
+      char c[100][100];  
       scanf("%d",&a);
       for(b=0;b<a;b++)
       {

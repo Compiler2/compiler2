@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int k[4]={0},i,j=0,n,a[100];
 	double m;

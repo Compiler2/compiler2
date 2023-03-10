@@ -1,3 +1,5 @@
+#include <header.h>
+
 int juzhen(int n,int m);
 int a[5][5];
 int main(){

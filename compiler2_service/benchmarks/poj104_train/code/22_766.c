@@ -1,18 +1,20 @@
+#include <header.h>
+
 int main()
 {
-	int n=1,i=1,max1=0,max2=0,k=0;                //n??????
+	int n=1,i=1,max1=0,max2=0,k=0;                
 	int a[999];
 	char c;
 	
 	scanf("%d%c",&a[0],&c);
 	
-	while (c==',')                     //23????N=23
+	while (c==',')                     
 	{
 		scanf("%d%c",&a[i],&c);
 		n++;
 		i++;
 	}
-	//printf("%d %c",a[1],c);   //????????
+	
 
     max1=a[0];
 	for (i=0;i<n;i++)

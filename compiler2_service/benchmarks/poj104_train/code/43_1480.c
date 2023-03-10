@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhiyinshu(int x)
 {
 	int i=2;

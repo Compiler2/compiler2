@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,sza[50000],szb[50000],i,max;

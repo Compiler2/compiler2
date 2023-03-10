@@ -1,4 +1,6 @@
-int main() //?~
+#include <header.h>
+
+int main() 
 {
 	int i,j,s,t,n,a[500],b[500];
 	scanf("%d",&n);

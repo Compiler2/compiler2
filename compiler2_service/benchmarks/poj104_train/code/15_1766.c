@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int Row=100,Col=100;
 int sz[Row][Col];

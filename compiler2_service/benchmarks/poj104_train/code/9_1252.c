@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct peo{
 	char id[11];

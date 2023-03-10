@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fun(int a[500],int l)
 {
     int i;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,b,n,m,x,y,simida;
 	int a[10][10];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     double a;
     scanf("%lf",&a);
@@ -25,7 +27,7 @@ int main(){
               for(int i=0;i<=d-1;i++){
                       if(b[i]==c[i]){
                                      h++;}}
-                   //   printf("%lf",1.0*h/a);
+                   
               if(1.0*h/d>a){
                             printf("yes");}
               else{

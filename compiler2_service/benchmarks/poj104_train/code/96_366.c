@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
     char beichushu[101],shang[100];

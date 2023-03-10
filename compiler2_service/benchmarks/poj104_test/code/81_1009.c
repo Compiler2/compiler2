@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[5][5];
 int panduan(int (*p)[5],int n,int m)
 {int z;

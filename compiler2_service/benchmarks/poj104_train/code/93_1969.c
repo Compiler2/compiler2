@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a,i;
 	int b[2][3]={0};

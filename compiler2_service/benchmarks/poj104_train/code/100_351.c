@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int p[26]={0},i,n,k;

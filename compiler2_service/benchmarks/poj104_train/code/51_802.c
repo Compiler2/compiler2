@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,k,p,l,temp,sum[600],real[600],realreal[600][3];

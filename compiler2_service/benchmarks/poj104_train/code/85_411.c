@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,n;
 char str[21],*q;
 int main(){
@@ -24,6 +26,6 @@ int main(){
         }
     }
 
-//scanf("%d",&i);
+
 return 0;
 }

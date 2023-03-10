@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int a){
 	int t;
 	if(a%2==0){

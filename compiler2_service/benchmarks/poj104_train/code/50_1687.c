@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pd(int x,int y);
 int main()
 {

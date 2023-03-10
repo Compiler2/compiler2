@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,m,sum,k,p,q;
@@ -9,7 +11,7 @@ int main()
 	char zds;
 	
 
-	//?? 
+	
 	scanf("%c",&zds);
 	for(i=0;i<n;i++)
 	{
@@ -31,7 +33,7 @@ int main()
 
 	
 	
-	//??m-1?
+	
 	for(k=1;k<m;k++)
 	{
 		for(p=0;p<n;p++)
@@ -68,7 +70,7 @@ int main()
 	
 	sum=0;
 
-	//??
+	
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -82,7 +84,7 @@ int main()
 
 
 
-	//??
+	
 	printf("%d",sum);
 
 	return 0;

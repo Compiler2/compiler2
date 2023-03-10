@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,age[100],i,j;

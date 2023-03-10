@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pure(int a)
 {
     int i,m=0,x;

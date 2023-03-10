@@ -1,3 +1,5 @@
+#include <header.h>
+
 int birev(char * s, int * sr)
 {
 	int i, len=strlen(s);

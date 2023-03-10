@@ -1,10 +1,12 @@
-//
-//  main.cpp
-//  ds
-//
-//  Created by Love on 12-12-27.
-//  Copyright (c) 2012? Love. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 int main(){
     int n;

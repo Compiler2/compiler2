@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {  int same,i,j,k;
     char str[100],sub[100],repl[100];

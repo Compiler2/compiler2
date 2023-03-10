@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(int t)
 {
 	int q,c=0,z,po;

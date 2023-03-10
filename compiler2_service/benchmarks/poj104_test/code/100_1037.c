@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char str[301],zimu[27]="abcdefghijklmnopqrstuvwxyz";
 int i,k,len,num[27],sum=0;

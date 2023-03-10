@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[5000];
@@ -9,7 +11,7 @@ int main()
 	{
 		if(s[i]==' '||s[i]==',')
 			m++;
-	}//m shi dan ci shu
+	}
 	i=0;
 	for(j=0;j<strlen(s);j++)
 	{

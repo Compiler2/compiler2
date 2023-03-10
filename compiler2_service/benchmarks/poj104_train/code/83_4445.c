@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,xf[100],df[100],xfzh=0;
 	double jdzh=0.0,jd[100],xfjd[100],zpjd;

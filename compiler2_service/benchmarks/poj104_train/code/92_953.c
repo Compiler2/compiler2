@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {   
     int n=1;
@@ -10,7 +12,7 @@ main()
        scanf("%d",&tianji[i]);
     for(int i=0;i<n;i++)
        scanf("%d",&qiwang[i]);    
-    for(int i=0;i<n-1;i++)            //????? 
+    for(int i=0;i<n-1;i++)            
       for(int k=n-2;k>=i;k--)
       {
           if(tianji[k]>tianji[k+1])
@@ -20,7 +22,7 @@ main()
                tianji[k+1]=m;                    
           }    
       }      
-     for(int i=0;i<n-1;i++)            //????? 
+     for(int i=0;i<n-1;i++)            
       for(int k=n-2;k>=i;k--)
       {
           if(qiwang[k]>qiwang[k+1])
@@ -30,13 +32,13 @@ main()
                qiwang[k+1]=m;                    
           }    
       }    
-    int win=0,ping=0;        //???????? 
-    int t[1002],q[1002];    //???????? 
+    int win=0,ping=0;        
+    int t[1002],q[1002];    
     for(int i=0;i<n;i++)
     {
         t[i]=1;q[i]=1;      
     }
-    for(int i=0;i<n;i++)            //?tianji?????qiwang?????????? 
+    for(int i=0;i<n;i++)            
     {
         for(int j=n-1;j>=0;j--)
         {

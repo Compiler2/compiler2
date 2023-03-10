@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 luru(int i,char s[],char temp[],int k)
 {

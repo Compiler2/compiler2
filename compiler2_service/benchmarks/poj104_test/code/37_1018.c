@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int t,num;
     char s[100][1000],a[4];

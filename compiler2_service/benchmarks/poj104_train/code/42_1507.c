@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,v[100000],k,p=0,t=0;
  scanf("%d",&n);

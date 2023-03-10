@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n;
 int a[29] = {~0U>>1}, f[29] = {0};

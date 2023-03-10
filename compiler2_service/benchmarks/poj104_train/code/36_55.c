@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[123]={0},d[123]={0};

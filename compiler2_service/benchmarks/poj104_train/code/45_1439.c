@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char s[50]=" ";
@@ -26,7 +28,7 @@ for(i=0;i<b;i++){
 
 
 
-//printf("%d",t);	
+
 return 0;
 }
 

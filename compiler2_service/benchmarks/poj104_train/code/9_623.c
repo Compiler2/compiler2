@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {     char temp_0[10],id[100][10];
       int i,j,n,max,age[100],num[100],yes[100],ncount=1,temp,num_1;

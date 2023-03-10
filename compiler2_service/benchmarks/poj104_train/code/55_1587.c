@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k,a,b,y,w=0;
 	char s1[100]={'\0'},s2[100]={'\0'},e;
@@ -14,7 +16,7 @@ int main(){
 			w=w*a+s1[i]-'0';
 		}
 	}
-//	printf("%d\n",w);
+
 	for(i=0;1;i++){
 		y=w%b;
 		if(y<=9&&y>=0){
@@ -34,6 +36,6 @@ int main(){
 		s2[w-i-1]=e;
 	}
 	printf("%s",s2);
-//	scanf("%d",&n);
+
 	return 0;
 }

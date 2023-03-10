@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char w[1000]={32},s[300][50]={'0'};

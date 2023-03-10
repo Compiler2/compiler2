@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i , l ;
 char str[501];
 void f(int number,int length);

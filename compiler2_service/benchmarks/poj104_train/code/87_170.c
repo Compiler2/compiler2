@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int a,b,c,d,e,f,g,h,i,k,z,s=0;
 for(k=0;k<10;k++){

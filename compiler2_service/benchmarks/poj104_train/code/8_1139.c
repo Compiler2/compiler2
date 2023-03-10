@@ -1,3 +1,5 @@
+#include <header.h>
+
 void scan_(int m,int*a,int n,int*b);
 void sort_(int m,int*a,int n,int*b);
 void print_(int m,int*a,int n,int*b);
@@ -16,10 +18,10 @@ return 0;
 
 void scan_(int m,int*a,int n,int*b)
 {
-    int i,j,*p;      //???????????? 
+    int i,j,*p;      
    
     p=a;
-    for(i=0;i<m;i++) //???????????????????? ??…… 
+    for(i=0;i<m;i++) 
     scanf("%d",p++);
     p=b;
     for(j=0;j<n;j++)

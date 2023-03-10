@@ -1,3 +1,5 @@
+#include <header.h>
+
 char in[100000];
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int m,sz[100];
   double k;

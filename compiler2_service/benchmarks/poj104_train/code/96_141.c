@@ -1,3 +1,5 @@
+#include <header.h>
+
 char chufa1(char a,char b);
 char chufa2(char a,char b);
 char chufa3(char a,char b,char c);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int tozero(int n);
 void delete1(int,int);
 void delete2(int,int);

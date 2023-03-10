@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int i,j,n,a,t=0,flag,line=0;

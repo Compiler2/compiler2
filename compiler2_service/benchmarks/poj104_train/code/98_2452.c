@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j=1;
@@ -9,11 +11,11 @@ int main()
 		scanf("%s",w[i]);
 		l[i]=strlen(w[i]);
 	}
-	//for(i=1;i<=n;i++)
-	//{
-	//	printf("%s ",w[i]);
-	//	printf("%d ",l[i]);
-	//}
+	
+	
+	
+	
+	
 	for(i=0;;i++)
 	{
 		printf("%s",w[j]);

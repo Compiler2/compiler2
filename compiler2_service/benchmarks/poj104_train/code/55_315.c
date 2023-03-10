@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int zheng[255];

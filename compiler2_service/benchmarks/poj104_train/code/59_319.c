@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,n,m,k,b[102][102]={0},e=0;
 	char a[102][102]={'#'};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m,sum=0,a;
     int num[10006][2];

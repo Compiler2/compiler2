@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void prop(int num1[11][11],int num2[11][11],int n)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[100000];
@@ -27,5 +29,5 @@ int main()
 	    if(b!=1) printf("no\n");
 	}
 	return 0;
-	//???????? 
+	
 }

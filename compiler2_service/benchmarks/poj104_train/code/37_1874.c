@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int t[100000],i,j,k,q,count,mark;

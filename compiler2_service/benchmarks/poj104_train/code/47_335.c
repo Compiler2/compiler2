@@ -1,10 +1,12 @@
-//
-//  8.cpp
-//  poj
-//
-//  Created by ChuPan,Wong on 10/25/13.
-//  Copyright (c) 2013 ChuPan,Wong. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 
 int main(){

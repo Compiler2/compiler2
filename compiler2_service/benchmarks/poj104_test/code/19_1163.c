@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main(){
 char s[101],a[101],b[101],word[101];
 int i=0,j,flag,n=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
  main()
 {
   int k;
@@ -7,8 +9,8 @@
   scanf("%d",&n);
   if(n==0)
   return 0;
-  int a[1000];//??????
-  int b[1000];//??????
+  int a[1000];
+  int b[1000];
   int i,j;
   int d=0;
   int max=(-n)*200;
@@ -16,8 +18,8 @@
   scanf("%d",&a[i]);
   for(i=0;i<n;i++)
   scanf("%d",&b[i]);
-  int t;//
-  for(i=0;i<n;i++)//????
+  int t;
+  for(i=0;i<n;i++)
   {
    for(j=n-1;j>i;j--)
    {

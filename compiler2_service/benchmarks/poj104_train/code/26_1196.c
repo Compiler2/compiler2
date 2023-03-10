@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char zfc[255],sc[255];
     int i,j=0,s=0;

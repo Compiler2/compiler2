@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    char id[100][10];
    int n,age[100],i,k=0,m,len,p;

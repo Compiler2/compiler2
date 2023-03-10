@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int u[1000],v[1000];

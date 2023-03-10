@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j;
@@ -8,7 +10,7 @@ int main()
 	for(i=2;i<100;i++)
 	{
 		fbnq[i]=fbnq[i-2]+fbnq[i-1];
-	//printf("%lf",fbnq[i]);
+	
 	}
 
 

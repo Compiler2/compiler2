@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {    void zhao(int n,int y,int a[]);
     int x=0,y=0,a[100]={0},t=0,i=0,n=0,k=0;
@@ -15,8 +17,8 @@ int main()
 	  n=i;
 	  zhao(n,y,a);
 	  	
-    //getchar();
-    //getchar();
+    
+    
 	return 0;
 }
 void zhao(int n,int y,int a[])

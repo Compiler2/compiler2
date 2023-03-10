@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -18,7 +20,7 @@ int main()
  str=s;
 
  for(i=0;i<=m-l;i++)
- {//???????
+ {
   e=0;
   for(j=0;j<l;j++)
   {
@@ -28,7 +30,7 @@ int main()
         break;
        }
   }
-    //e???0,???a??
+    
 
   if(e==0)
   {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int n,p,i,j,end[100],class[100],issue[100],k[100],sum=0;

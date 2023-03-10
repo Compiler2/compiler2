@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char *str1,*p1,str2[100],*p2;

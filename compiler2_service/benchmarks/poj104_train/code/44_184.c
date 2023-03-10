@@ -1,3 +1,5 @@
+#include <header.h>
+
 int MI(int x)
 {
     int a,mul=1;

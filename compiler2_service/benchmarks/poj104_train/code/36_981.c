@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[50],w[50];
 int len1;
 int len2;

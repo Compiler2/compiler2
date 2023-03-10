@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,k,a[100][100][100],minh,minl,sum[100]={0};

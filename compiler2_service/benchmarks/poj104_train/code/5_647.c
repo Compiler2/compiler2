@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double q;
 	scanf("%lf", &q);

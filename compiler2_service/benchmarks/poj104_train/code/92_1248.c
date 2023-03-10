@@ -1,3 +1,5 @@
+#include <header.h>
+
 int comp(const void * elem1, const void * elem2)
 {
 	if(*(int*)elem1<*(int*)elem2)

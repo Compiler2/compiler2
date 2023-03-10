@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,m,a[1000]={0},i,j,sum=0,num;
@@ -35,7 +37,7 @@ int main()
          printf("%d\n",i+1);
         }
     }
-    sum=0;//sum??????
+    sum=0;
 
     }
      return 0;

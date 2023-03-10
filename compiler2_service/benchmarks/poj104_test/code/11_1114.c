@@ -1,3 +1,5 @@
+#include <header.h>
+
 int nian(int m)
 {  
     if ((m%400==0)||((m%100!=0)&&(m%4==0)))

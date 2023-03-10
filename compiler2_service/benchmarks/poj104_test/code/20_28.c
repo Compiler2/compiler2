@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {   int mas(char str[10]);
  
@@ -22,7 +24,7 @@ void main()
 		printf("%c",strs[i]);
 	printf("%c\n",strs[length+2]);
 	}while(strlen(str)<11);
-	//while(str[0]!='\0');
+	
 	
 }
 int mas(char stra[10])

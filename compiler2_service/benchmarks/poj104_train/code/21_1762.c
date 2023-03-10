@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,i;
 long int rec[301];
 long int min,max;

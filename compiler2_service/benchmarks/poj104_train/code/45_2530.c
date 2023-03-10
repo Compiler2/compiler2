@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char a[500]={0},b[500]={0};
     int l1,l2,i,j,k=0,count=0,mark;
@@ -20,7 +22,7 @@ int main(){
               
         }
      
-    //printf("\n%d",count);
+    
     scanf("%d",&i);
     return 0;
     }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void insertsort(int* array,int left,int right){
      int i,j,temp;
      for(i = left + 1; i <= right; i++){
@@ -45,8 +47,8 @@ int main(){
     int n;
     scanf("%d",&n);
     if(n == 0){return 0;}
-    int horse_q[1005];      //???? 
-    int horse_t[1005];     //????
+    int horse_q[1005];      
+    int horse_t[1005];     
     int i;
     for(i = 0; i < n; i++){
             scanf("%d",&horse_t[i]);
@@ -57,12 +59,12 @@ int main(){
     int temp[1005];
     mergesort(horse_t,temp,0,n - 1);
     mergesort(horse_q,temp,0,n - 1);
-    int t_head = n - 1;        //?????????? 
-    int t_last = 0;            //?????????? 
-    int q_head = n - 1;           //??????????
-    int q_last = 0;       //?????????? 
-    int ans = 0;              //?? 
-    while(q_head >= q_last){     //??????????
+    int t_head = n - 1;        
+    int t_last = 0;            
+    int q_head = n - 1;           
+    int q_last = 0;       
+    int ans = 0;              
+    while(q_head >= q_last){     
          if(horse_t[t_head] > horse_q[q_head]){
                        ans += 200;
                        t_head--;

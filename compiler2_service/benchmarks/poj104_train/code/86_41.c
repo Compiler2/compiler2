@@ -1,3 +1,5 @@
+#include <header.h>
+
 int abc(int p,int *x){
 	if(*x==0){ printf("60\n");return 0;}
 	if(*x==1){

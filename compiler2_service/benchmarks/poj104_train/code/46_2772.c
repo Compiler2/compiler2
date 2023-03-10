@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[10000][10000];
 int main(){
  int  row,col,i,j,k=0,r,c,p=0;

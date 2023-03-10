@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -19,10 +21,10 @@ main()
                      total[i] ++;
                      if(broke_time[total[i]] == 1)
                      {
-                                         //printf("(%d)", time);
+                                         
                                          time += 3;
                                          
-                                         //printf("|%d|[%d]\n", total[i], time);
+                                         
                      }
                      if (time > 60) break;
                      

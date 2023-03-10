@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 
 {
@@ -14,7 +16,7 @@ int main(int argc, char* argv[])
 
          }
 
-         m = m % n;//???????
+         m = m % n;
 
          int tmp;
 

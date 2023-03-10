@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhengchang(int i,int j){
 	if((i>=90&&i<=140)&&(j>=60&&j<=90)){
 		return 1;

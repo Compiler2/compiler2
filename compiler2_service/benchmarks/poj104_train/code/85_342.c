@@ -1,3 +1,5 @@
+#include <header.h>
+
 int range(char x[])
 {
 	int i,len;

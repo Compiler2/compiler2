@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int d,ma1,ma2;

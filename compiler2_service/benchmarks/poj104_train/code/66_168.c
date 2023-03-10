@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	unsigned long int year,month,day,sum=0,i,x;

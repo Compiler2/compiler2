@@ -1,3 +1,5 @@
+#include <header.h>
+
 double Q(int x);
 int main(){
 int m,p[100],i;

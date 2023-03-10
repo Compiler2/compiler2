@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,n,i,u;
 	double add,each1[100],each2[100];

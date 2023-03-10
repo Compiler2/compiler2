@@ -1,3 +1,5 @@
+#include <header.h>
+
 int find(char *s);
 char s[1000];
 int main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,shuzhou[20002],a[500],b[500],max=0,min=10000,p=0;

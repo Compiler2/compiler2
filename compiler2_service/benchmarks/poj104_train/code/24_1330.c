@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char word[1000]="";
@@ -17,7 +19,7 @@ int main()
                                {
                                     
                                     if(count>max)
-                                    max=count;//printf("%d\n",max);
+                                    max=count;
                                     if(count<min)
                                     min=count;
                                     count=0;
@@ -25,9 +27,9 @@ int main()
                                     flag2=0;   
                                }
     }
-    //printf("%d",max);
-    //getchar();getchar();
-    //return 0;
+    
+    
+    
     count=0;
     for(i=0;i<flag1+1;i++)
     {

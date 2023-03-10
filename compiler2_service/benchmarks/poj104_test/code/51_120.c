@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,l,e=0,s[500]={0},max,ss[500]={0};
     char a[501];

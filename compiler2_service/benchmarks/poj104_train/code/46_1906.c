@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int tt[100][100];
 int r,c;

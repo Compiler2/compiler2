@@ -1,3 +1,5 @@
+#include <header.h>
+
 int TianJi[1000]={0},QiWang[1000]={0};
 int cmp(const void * elem1, const void * elem2)
 {

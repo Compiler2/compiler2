@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[100];
@@ -23,22 +25,22 @@ int main()
 
     for (k=0;k<i;k++)                  
     {
-        for (j=0;j<a[k]-1;j++) //????????????? 
+        for (j=0;j<a[k]-1;j++) 
             for (n=0;n<a[k]-1-j;n++)
                if (b[k][n]<b[k][n+1])
                {
                                      t=b[k][n];
                                      b[k][n]=b[k][n+1];
-                                     b[k][n+1]=t;   //b????? c????? 
+                                     b[k][n+1]=t;   
                }
                         
-        for (j=0;j<a[k]-1;j++) //????????????? 
+        for (j=0;j<a[k]-1;j++) 
             for (n=0;n<a[k]-1-j;n++)
                if (c[k][n]<c[k][n+1])
                {
                                      t=c[k][n];
                                      c[k][n]=c[k][n+1];
-                                     c[k][n+1]=t;   //b????? c????? 
+                                     c[k][n+1]=t;   
                }
         w=0;
         l=0;

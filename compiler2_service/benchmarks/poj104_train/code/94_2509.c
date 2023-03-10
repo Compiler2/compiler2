@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int s[500],N,sum=-1,z[500],m=0,a,b;
 scanf("%d\n",&N);

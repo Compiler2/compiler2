@@ -1,3 +1,5 @@
+#include <header.h>
+
 unsigned long pow(unsigned long a,unsigned long b)
 {
     unsigned long temp,sout=1;
@@ -14,14 +16,14 @@ main()
       scanf("%d",&ip);
       scanf("%s",num);
       scanf("%d",&op);
-      //printf("%d %s %d\n",ip,num,op);
+      
       lenth=strlen(num);
       for(i=0;i<=lenth;i++)
       {
                           if(num[i]>='a'&&num[i]<='z')
                           num[i]=num[i]-'a'+'A';
       }
-      //printf("%s\n",num);
+      
       for(i=0;i<lenth;i++)
       {
                           if(num[i]>='0'&&num[i]<='9')
@@ -33,12 +35,12 @@ main()
       test=dec/pow(op,oplenth-1);
       oplenth--;
       mod=dec;
-      //printf("%d\n",dec);
+      
       for(i=0;i<oplenth;i++)
       {
                              cache=mod/pow(op,oplenth-i-1);
                              mod=mod-cache*pow(op,oplenth-i-1);
-                             //printf("     %d %d\n",cache,mod);
+                             
                              if(cache<=9)
                              printf("%d",cache);
                              else

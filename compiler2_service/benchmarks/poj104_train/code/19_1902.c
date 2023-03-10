@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char a[100],s[100],ex[100],b[100];
@@ -33,7 +35,7 @@ int main(){
 		{
 			D[m]=i;
 			m++;
-//			printf("%d %d %d\n",m,D[m-1],i);
+
 		}
 	}
     if (m==1)

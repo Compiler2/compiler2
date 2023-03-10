@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	void pr(char *a,int n,char boy,char girl,int *k);

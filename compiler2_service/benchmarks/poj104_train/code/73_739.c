@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int a[5][5],int i)
 {
 	int k = 0;

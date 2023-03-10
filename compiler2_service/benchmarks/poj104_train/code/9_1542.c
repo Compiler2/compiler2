@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct senex
 {
        char id[10];
@@ -34,8 +36,8 @@ int main()
         sen[j]=sen[j+1];
         sen[j+1]=t;
       }
-    //for(i=0;i<n;i++)
-     //printf("%d ",sen[i].rec);
+    
+     
     for(i=0;i<n;i++)
      printf("%s\n",sen[i].id);
     scanf("%d",&i);

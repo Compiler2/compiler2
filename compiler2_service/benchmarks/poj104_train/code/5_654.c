@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char x[600],y[600];
 	int b=0,i;

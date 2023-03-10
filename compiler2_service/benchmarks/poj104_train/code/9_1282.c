@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct ILL{
 	char id[10];
 	int age;

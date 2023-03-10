@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[20][15],b[15],c[15],d;

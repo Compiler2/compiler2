@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct Student
 {int num;
  int yuwen;

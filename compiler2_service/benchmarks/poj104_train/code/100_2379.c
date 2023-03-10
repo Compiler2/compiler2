@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char a[10000];
 int i, bo, ctt[10000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int exch(int a[5][5],int rowa,int rowb){
 	if(rowa<0||rowa>4||rowb<0||rowb>4)return 0;

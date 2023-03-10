@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,k,l,m,n;
@@ -11,7 +13,7 @@ int main()
 	}
 	average=sum/n;
 	max=fabs(a[0]-average);
-   // printf("%lf  %lf",average,max);
+   
 	for(i=1;i<n;i++)
 	{
 		if(fabs(a[i]-average)>max) max=fabs(a[i]-average);

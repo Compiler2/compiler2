@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[200],b[200],c[200],d[200];
@@ -66,9 +68,9 @@ int main()
 		
 		
 	}
-//	puts(a);puts(b);puts(c);
+
 	d[di]='\0';
-//	printf("%d",la);
+
 	puts(d);
 	return 0;
 }

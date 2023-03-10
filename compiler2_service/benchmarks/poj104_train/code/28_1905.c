@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char a[3000]={0},st[100][1000]={0},b[3000]={0};
     int i,j=0,k=0,len,n,l[1000]={0},o=1;
@@ -24,7 +26,7 @@ int main(){
         printf("%d,",l[i]);
         }
     printf("%d",l[j]);
-    //printf("\n%s",st[j]);
+    
     
     
     scanf("%d",&i);

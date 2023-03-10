@@ -1,3 +1,5 @@
+#include <header.h>
+
 static int cmp(const void *a, const void *b)
 {
 	return *(int *)b - *(int *)a;
@@ -56,8 +58,8 @@ main()
       x=x+1;
       y=y+1;
       }
-      //if(b[y]==a[x])
-      //{
+      
+      
       else if(b[q]<a[p])
       {
       p=p-1;
@@ -84,7 +86,7 @@ main()
   }
       
       
-      //}
+      
       printf("%d\n",m);
       
       

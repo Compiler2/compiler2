@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct DNA{
 	char zfc[255];
 }a[1000];

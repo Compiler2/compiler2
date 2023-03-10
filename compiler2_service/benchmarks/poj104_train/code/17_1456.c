@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f1(char zichuan[],int changdu)
 {
     int i,n;

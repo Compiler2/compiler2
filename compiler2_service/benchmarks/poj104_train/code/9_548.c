@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[100]={0},t[100]={0},n,i,j,m=0;
 char ss[100][100];
 int cmp(const void *a, const void *b)

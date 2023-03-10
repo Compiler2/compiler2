@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[100],c1[100],c2[100];
 int pd(int l)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,b[6]={100,50,20,10,5,1},c[6],i,sum=0;

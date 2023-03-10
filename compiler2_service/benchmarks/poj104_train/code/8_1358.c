@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {	int m,n;
 	int input(int a,int b);

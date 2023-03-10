@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     char N[100];

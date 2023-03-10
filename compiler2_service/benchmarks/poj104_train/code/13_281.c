@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    int j[101]={0},a[20000],b[20000]={0},i,n,x=0,m=0;

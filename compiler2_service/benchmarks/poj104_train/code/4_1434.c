@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int array[100][100],ROW,COL,i=0,k=0,j=0;
 		scanf("%d%d",&ROW,&COL);

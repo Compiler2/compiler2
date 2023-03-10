@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int Issubstr(char *s,char *subs)
 {

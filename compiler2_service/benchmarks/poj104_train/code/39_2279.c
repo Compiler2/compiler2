@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {   char name[20],g,x,highestname[20];

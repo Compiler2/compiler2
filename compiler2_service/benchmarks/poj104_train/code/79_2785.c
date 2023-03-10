@@ -1,3 +1,5 @@
+#include <header.h>
+
 int read();
 void circle(int t);
 void print();

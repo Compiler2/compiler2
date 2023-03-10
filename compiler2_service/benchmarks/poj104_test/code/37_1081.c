@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int tas,task,n,i,mark[100],l,flag;

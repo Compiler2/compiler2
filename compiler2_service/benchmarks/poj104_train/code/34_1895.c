@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int oddoreven(int a);
 main()

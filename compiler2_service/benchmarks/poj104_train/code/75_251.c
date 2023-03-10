@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int start[1001],end[1001],sum[10001]={0},i,j,k,max1,max2;

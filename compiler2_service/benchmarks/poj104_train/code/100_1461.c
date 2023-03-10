@@ -1,3 +1,5 @@
+#include <header.h>
+
 int l;
 char s[301];
 int t[300]={0};

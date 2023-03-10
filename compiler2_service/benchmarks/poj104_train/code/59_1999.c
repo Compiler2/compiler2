@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 
@@ -17,11 +19,11 @@ int main()
 
 		for(col=0;col<n;col++){
 
-			//scanf("%",&sz[row][col]);
+			
 
 			sz[row][col]=s0[col];
 
-			//if(sz[row][col]=='\n') col=col-1;
+			
 
 		}
 

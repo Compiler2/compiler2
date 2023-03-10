@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[120];int n;
 void dispose(int x)
 {
@@ -36,7 +38,7 @@ main()
         {
             if(str[i]=='(') break;
         }
-        dispose(i);//printf("%d\n",i);printf("%s\n",str);
+        dispose(i);
         for(i=0;i<n;i++)
         {
             if(str[i]=='(') printf("$");

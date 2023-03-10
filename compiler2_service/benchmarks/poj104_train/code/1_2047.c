@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sum=1;
 void f(int i,int j)
 {

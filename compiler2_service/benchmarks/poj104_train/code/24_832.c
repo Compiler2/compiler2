@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  char danci[50][50];
@@ -10,7 +12,7 @@ int main()
  p=str;
  for(a=0;a<50;a++){
    
-  while(*p==' ')//????????????
+  while(*p==' ')
 	  p++;
 
 
@@ -26,7 +28,7 @@ int main()
   changdu[a]=strlen(danci[a]);
 
     if(*p=='\0')
-	  break;//???????????????????danci?
+	  break;
 
 
  }

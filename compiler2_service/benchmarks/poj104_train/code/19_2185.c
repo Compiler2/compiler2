@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(char *p,char a[],int l)
 {
    int i;

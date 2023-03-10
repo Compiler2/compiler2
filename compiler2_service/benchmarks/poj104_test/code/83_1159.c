@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,sum1=0,n,c[10],shiji[10];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int days(int n)
 {
@@ -5,8 +7,8 @@ int days(int n)
 	for(i=1;i<n;i++)
 	{
 		if(i%4==0&&i%100!=0||i%400==0)
-		sum=sum+2;       //366%7==2,????????????
-		else sum++;      //??,365%7==1,?????1   
+		sum=sum+2;       
+		else sum++;      
 	}
 	return sum;
 }

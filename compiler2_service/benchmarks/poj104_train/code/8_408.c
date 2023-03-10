@@ -1,3 +1,5 @@
+#include <header.h>
+
 void px(int a[],int n)
 {
 	int i,j,x;

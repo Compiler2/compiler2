@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x(int a,int b);
 main()
 {

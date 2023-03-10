@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sen[500]={0},hb[500]={0};

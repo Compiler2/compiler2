@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int i,n,k,s,max,min;
@@ -8,7 +10,7 @@ int main()
   {
       scanf("%d%d",&a[i],&b[i]);
   }
-   // for(i=1;i<=n;i++) printf("%d",a[i]);
+   
   
   
   for(i=1,min=a[1];i<=n;i++)
@@ -18,7 +20,7 @@ int main()
           min=a[i];
       }
   }
-  //printf("%d\n",min);
+  
   max=b[1];
   for(i=1;i<=n;i++)
   {
@@ -27,7 +29,7 @@ int main()
           max=b[i];
       }
   }
-  //printf("%d %d",min,max);
+  
 for(c=min+0.5;c<=max;c=c+1.0)
 {
     for(k=1,s=0;k<=n;k++)

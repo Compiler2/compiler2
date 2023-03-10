@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,i,min=0,max=0;
 float j;
@@ -10,7 +12,7 @@ for(i=0;i<n;i++){
 if(i==0){
 min=a[0];max=b[0];
 }
-if(a[i]<min)min=a[i];                            //?????//
+if(a[i]<min)min=a[i];                            
 if(b[i]>max)max=b[i];
 }
  

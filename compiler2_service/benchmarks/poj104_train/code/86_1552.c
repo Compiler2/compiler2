@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m,a,b,zongshu[1000];
     scanf("%d",&n);

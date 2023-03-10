@@ -1,3 +1,5 @@
+#include <header.h>
+
 int day(int d)
 {
   if (d>7)

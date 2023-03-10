@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int i, n, k, t, j, m;
@@ -50,7 +52,7 @@ int main()
             }
             else if(t<=2&&j>2||j<=2&&t>2)
             {
-			//	printf("%d %d ", t ,j);
+			
                 if((b[t]-a[j]+1)%7==0)
                  {
                      printf("YES\n");

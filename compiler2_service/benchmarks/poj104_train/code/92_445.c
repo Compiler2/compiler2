@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bisai(int a,int b,int c,int d);
 
 int main()

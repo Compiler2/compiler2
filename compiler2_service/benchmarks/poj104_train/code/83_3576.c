@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,o,p;
 	int xuefen[1000];

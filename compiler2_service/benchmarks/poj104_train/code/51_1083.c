@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,l,t=0,c[500]={0},max=0,z=0;

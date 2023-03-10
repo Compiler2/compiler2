@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[300];
 int n;
 float sum=0;

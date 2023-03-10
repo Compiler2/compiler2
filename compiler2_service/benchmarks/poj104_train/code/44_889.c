@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fanxu(char *p,int n);
 void fanxu(char *p,int n)
 {

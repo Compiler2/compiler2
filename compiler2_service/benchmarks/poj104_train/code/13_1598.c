@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int b[],int len,int x)
 {
 	int i,flag=1;

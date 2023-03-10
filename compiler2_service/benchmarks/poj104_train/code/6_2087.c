@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n=0,row=0,line=0,l=0;

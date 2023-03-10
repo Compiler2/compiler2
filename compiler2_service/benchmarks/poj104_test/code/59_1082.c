@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int day[100][100],n;

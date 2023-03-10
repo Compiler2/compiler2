@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int i,m,n,ii,jj,l,t;
 int s[10002]={0};

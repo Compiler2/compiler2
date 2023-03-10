@@ -1,10 +1,12 @@
+#include <header.h>
+
 void main()
 {
 	char a[500][5],x[500];
 	int i,n,len,j,num[500],maxn=0,y=0;
 	scanf("%d%s",&n,x);
 	len=strlen(x);
-	for(i=0;i<=len-n;i++)//????????0~len-n,????a[0~len-n][]?????//
+	for(i=0;i<=len-n;i++)
 	{
 		for(j=0;j<n;j++)
 		{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n;
@@ -11,7 +13,7 @@ main()
            str[i]='a';
        }  
        gets(str);
-       //scanf("%s",str);
+       
        
        for(i=0;i<strlen(str);i++)
        {
@@ -21,9 +23,9 @@ main()
                  goto hhh;
              }                    
        }
-         //printf("%c",str[0]);
-        //char a=str[0]; 
-        //if((str[0]<="z"&&str[0]>="a")||(str[0]<="Z"&&str[0]>="A")||str[0]=="_")
+         
+        
+        
         if(isalpha(str[0])||str[0]=='_')
             {
                 printf("%d\n",1);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int num){
 	int i,j,k,sum=0,s,p;
 	int u[100];

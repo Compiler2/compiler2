@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -24,7 +26,7 @@ int main()
       }
     }
   }
-  for(i=0;i<v;i++)//
+  for(i=0;i<v;i++)
   printf("%s\n",hw[i]);
 
   

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void func2(char o[],int x)
 {
 	for (int u=0;u<x;u++)

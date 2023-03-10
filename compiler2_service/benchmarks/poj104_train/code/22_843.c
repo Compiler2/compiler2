@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     unsigned int s[301],max=0,second=0;

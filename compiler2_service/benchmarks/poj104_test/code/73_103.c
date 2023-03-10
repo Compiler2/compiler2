@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[5][5];
@@ -25,7 +27,7 @@ max=a[i][j];
 p=j;
             }
         }
-        //printf("*%d*%d*\n",i,p);
+        
         min=a[0][p];
         for(j=0;j<5;j++)
         {

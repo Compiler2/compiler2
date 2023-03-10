@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char  cs[300],jg[200]={'\0'};
     gets(cs);

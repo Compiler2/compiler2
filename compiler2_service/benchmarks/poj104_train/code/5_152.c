@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int i,n,m,j;
@@ -5,7 +7,7 @@ double x,s;
 char a[101],b[101];
 j=0;
 scanf("%lf",&x);
-	//getchar();
+	
 scanf("%s%s",a,b);
 	n=strlen(a);
 	m=strlen(b);

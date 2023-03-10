@@ -1,3 +1,5 @@
+#include <header.h>
+
 void zhuan(char str[80])
 {
 	int t;

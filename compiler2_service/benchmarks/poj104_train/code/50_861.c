@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int w,a[100]={0},i,k,sum;

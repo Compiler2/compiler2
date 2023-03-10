@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int n,age[100],i,s1=0,s2=0,s3=0,s4=0,sum;

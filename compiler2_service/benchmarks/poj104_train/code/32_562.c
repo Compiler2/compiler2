@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {long int d,n,i,j,l1,l2,a1[10000],a2[10000];
 char str1[10000],qq,str2[10000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int digit(int n)
 {
     int q=1,i;

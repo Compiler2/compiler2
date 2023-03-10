@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int sy,sm,sd,ey,em,ed,m[12],i,d1,d2,d3,d4,d;

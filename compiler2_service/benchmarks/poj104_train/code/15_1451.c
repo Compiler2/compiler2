@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,shu[1000][1000],i,k,heng=0,s=0,count;

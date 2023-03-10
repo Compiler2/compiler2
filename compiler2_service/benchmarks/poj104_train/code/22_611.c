@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[300]={0},n=0,i=0,j=0,m=0;
@@ -14,8 +16,8 @@ int main()
              else if(a[n-1]<i&&a[n-1]>j){j=a[n-1];m=1;}}*/
      if(b!=',')break;
      }
-    //if(m==0)printf("No\n");
-    //else printf("%d\n",j);
+    
+    
     for(i=0;i<n;i++){
     for(j=0;j<n-1;j++)
     {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int l,b[26]={0},c[26]={0},m=0,i;

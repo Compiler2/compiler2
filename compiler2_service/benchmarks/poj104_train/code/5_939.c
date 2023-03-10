@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	double r;
 	scanf("%lf",&r);
@@ -12,7 +14,7 @@ int main (){
 			L=i;
 		}
 	}
-	//printf("%d\n",L);
+	
 	for (k=0;jiyin[k]!='\0';k++){
 		if(jiyin[k+1]=='\0'){
 			N=k;

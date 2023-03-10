@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[501]="",temp[501]={""},temp1[501]={""};

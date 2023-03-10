@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[100];
@@ -18,7 +20,7 @@ main()
       e=e*10+f;
       f=e/13;
       b[i-1]=f;
-      e=e%13;         //yushu//
+      e=e%13;         
       }
       if(b[0]==0)
       {for(i=1;i<=n-2;i++)

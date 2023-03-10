@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main(int argc, char* argv[])
@@ -8,10 +10,10 @@ int main(int argc, char* argv[])
 	int monkey[300];
 	int king[2];
 	while(1){
-	scanf("%d%d",&n,&m);//??n?m
+	scanf("%d%d",&n,&m);
 	if(n!=0){
 		for(i=0;i<n;i++){
-	monkey[i]=i+1;}//????????monkey[300]???
+	monkey[i]=i+1;}
 		if(m==1){
 		printf("%d\n",n);}
 		else{
@@ -20,11 +22,11 @@ int main(int argc, char* argv[])
 		monkey[k]=i+1;
 		k++;}}
 		king[0]=0;
-		king[1]=k;//?????????k?
+		king[1]=k;
 	
-		for(turn=2,begin=n+1,ing=0;ing!=1;turn++){//??????
+		for(turn=2,begin=n+1,ing=0;ing!=1;turn++){
 			if(turn==2){
-				end=begin+king[1];}//????????n+1??????n+k?
+				end=begin+king[1];}
 			else{
 			begin=end;
 			end=begin+ing;}
@@ -32,7 +34,7 @@ int main(int argc, char* argv[])
 			if(baoshu%m!=0){
 				p=baoshu-begin;
 	    monkey[ing]=monkey[p];
-		ing++;}}}//ing?????????????
+		ing++;}}}
 		printf("%d\n",monkey[0]);}}
 		
 	else{

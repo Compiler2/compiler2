@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int year,m1,m2,date=1,n,x,day,day2;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[257],a[257],b[257];
@@ -11,7 +13,7 @@ int main()
 
 			for(j = 0;a[j] != '\0';j ++)
 			{
-				//printf("%d",i + j);
+				
 				if(a[j] != s[i + j])
 				{
 					find = 0;

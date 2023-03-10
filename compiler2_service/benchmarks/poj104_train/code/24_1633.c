@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int changdu[200];
 	char zfc[2000];

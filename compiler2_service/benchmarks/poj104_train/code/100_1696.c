@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char a[301],z[301],q;
     gets(a);

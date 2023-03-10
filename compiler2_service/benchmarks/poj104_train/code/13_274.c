@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
        int input[20000],output[20000],n,i,j,outLen=1;

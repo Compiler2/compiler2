@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n, i, x[5]={3,5,7,1000,1000};

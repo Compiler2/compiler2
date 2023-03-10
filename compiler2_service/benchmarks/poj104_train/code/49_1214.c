@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[500],*p1,*p2,*p3,*p4,*p5,*p6;

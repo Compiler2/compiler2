@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int i, char s[50],char w[50],int m)
 {
 	int n=0,j;

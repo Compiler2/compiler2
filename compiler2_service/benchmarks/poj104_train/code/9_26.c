@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -5,13 +7,13 @@ int main(int argc, char* argv[])
 		char a[10];
 		int year;
 	};
-	struct people b[100],c[100],d[100],v[100];//yuan  hou
+	struct people b[100],c[100],d[100],v[100];
 	for(int h=0;h<=99;h++){
 		for(int p=0;p<=9;p++){
 			b[h].a[p]=	c[h].a[p]=	d[h].a[p]=	v[h].a[p]=0;}
 	}
 		
-	int n,t=0,k=0,o;//lao ren shu
+	int n,t=0,k=0,o;
 	scanf("%d",&n);
 	for(int i=1;i<=n;i++){
 		scanf("%s %d",&b[i].a,&b[i].year);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
    char c[1000][40],w[40];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { char s1[20],s2[20];
   int i,j,lab=0;

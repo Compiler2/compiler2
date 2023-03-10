@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct pa
 {
 	char str[10];

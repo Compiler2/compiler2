@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int au(int x,int y);

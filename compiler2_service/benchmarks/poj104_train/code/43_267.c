@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhishu(int x)
 {
 	int flag=1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char hb(char a){
 	if(a=='A'){
 		a='T';

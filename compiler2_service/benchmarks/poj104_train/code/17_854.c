@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void match(char *s)
 {
@@ -7,16 +9,16 @@ void match(char *s)
 		if(s[i]=='(')
 		{
 			s[i]='$';
-			a[j]=i;              //??????a??? 
+			a[j]=i;              
 			j++;
 		}
 		else if(s[i]==')')
 		{
-			if(j>0)               //j>0?????? 
+			if(j>0)               
 			{
 				s[i]=' ';
-				s[a[j-1]]=' ';          //??????????? 
-				j--;                     //??????? 
+				s[a[j-1]]=' ';          
+				j--;                     
 			}
 			else s[i]='?';
 		}

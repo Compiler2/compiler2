@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[]){
 	int n,i,j;
 	char p[1000][256],p1[1000][256];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fanwei(int x,int y);
 int main(){
 	int i,j,sz[5][5],m,n,zhongjian[1][5];

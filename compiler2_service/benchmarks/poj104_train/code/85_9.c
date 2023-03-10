@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main()
@@ -34,10 +36,10 @@ int main()
 				
 			if ( p[j] < 'a' || p[j] > 'z')
 			{
-				//printf("a%c\n",p[j]);
+				
 				if ( p[j] < 'A' || p[j] > 'Z' )
 				{
-					//printf("A%c\n",p[j]);
+					
 					if ( p[j] < '0' || p[j] > '9' )
 					{
 						if ( p[j] != '_')

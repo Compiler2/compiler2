@@ -1,3 +1,5 @@
+#include <header.h>
+
 int len(int x)
 {
 	int i,k=0;

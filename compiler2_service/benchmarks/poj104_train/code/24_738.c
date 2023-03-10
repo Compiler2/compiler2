@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { 
     int strNnum=0,strMnum=0,max,min,maxstr=0,minstr=0,i,len;

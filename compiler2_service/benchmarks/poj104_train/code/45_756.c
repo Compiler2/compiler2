@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
       char st[50],sub[30];

@@ -1,18 +1,20 @@
-int main(){
-int n,i,j,min,max,have_a_gap=0; //have_a_gap?1?,?????.
+#include <header.h>
 
-scanf("%d",&n);     //???????
+int main(){
+int n,i,j,min,max,have_a_gap=0; 
+
+scanf("%d",&n);     
 
 struct Space{
 int left,right;
-} spaces[n],temp;          //????,???????????
+} spaces[n],temp;          
 
 for(i=0;i<n;i++)
 {
-    scanf("%d %d",&spaces[i].left,&spaces[i].right);    //???????
+    scanf("%d %d",&spaces[i].left,&spaces[i].right);    
 }
 
-for(i=0;i<n-1;i++)//??n-1?,??
+for(i=0;i<n-1;i++)
 {
     for(j=0;j<n-1-i;j++)
     {
@@ -31,13 +33,13 @@ max=spaces[0].right;
 
 for(i=0;i<n-1;i++)
 {
-    if(max<(spaces[i+1].left))    //????
+    if(max<(spaces[i+1].left))    
     {
         have_a_gap=1;
         printf("no");
         break;
     }
-    else                            //??????
+    else                            
     {
         if(spaces[i+1].right>max) max=spaces[i+1].right;
     }

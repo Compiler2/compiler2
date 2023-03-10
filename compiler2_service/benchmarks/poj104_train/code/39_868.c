@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,count[100]={0},score1[100],score2[100],num[100],i;

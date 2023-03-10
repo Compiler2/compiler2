@@ -1,4 +1,6 @@
-//#define num 31
+#include <header.h>
+
+
 
 main()
 {	

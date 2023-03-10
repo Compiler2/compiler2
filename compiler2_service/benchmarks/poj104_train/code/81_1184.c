@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,k,a,c[5][5],m,n;
 	for(i=0;i<5;i++){
@@ -24,6 +26,6 @@ int main(){
 	}else{
 		printf("error");
 	}
-	//scanf("%d",&n);
+	
 	return 0;
 }

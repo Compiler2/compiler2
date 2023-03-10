@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dijigeshu(int a);
 int main(){
 	int x=1,y=1;

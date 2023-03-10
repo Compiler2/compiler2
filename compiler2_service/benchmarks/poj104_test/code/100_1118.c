@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sum[25];
 int main()
 {

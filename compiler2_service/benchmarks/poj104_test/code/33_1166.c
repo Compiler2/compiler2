@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zf[256],hb[256];
 	int n,judge=0;

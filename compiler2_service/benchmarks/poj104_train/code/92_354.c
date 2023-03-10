@@ -1,3 +1,5 @@
+#include <header.h>
+
 int duma(int n,int a1[1000],int a2[1000]);
 int main()
 {
@@ -12,7 +14,7 @@ int main()
                 for(int i=0;i<n;i++) 
 				{scanf("%d",&a2[i]);}
 
-                for(int i=0;i<n;i++)                       //??????
+                for(int i=0;i<n;i++)                       
                 {
                          for(int j=0;j<n-i-1;j++)
                          {
@@ -25,7 +27,7 @@ int main()
                              }
                          }
                  }
-                for(int i=0;i<n;i++)                         //??????
+                for(int i=0;i<n;i++)                         
                 {
                          for(int j=0;j<n-i-1;j++)
                          {
@@ -38,9 +40,9 @@ int main()
                              }
                          }
                  }
-				//if(k==1)
-               // printf("%d",duma(n,a1,a2));
-			//	else
+				
+               
+			
                 printf("%d\n",duma(n,a1,a2));
         } 
     }
@@ -52,7 +54,7 @@ int duma(int n,int a1[1000],int a2[1000])
     int a=0,i=0; 
     for(i=n;i!=1;i--) 
     {
-           if(a1[0]>a2[0])               //?????????????????
+           if(a1[0]>a2[0])               
            {
                a+=200;
                for(int k=0;k<i-1;k++) 
@@ -63,7 +65,7 @@ int duma(int n,int a1[1000],int a2[1000])
            }
            else
            { 
-              if (a1[0]<a2[0])              //?????????????????
+              if (a1[0]<a2[0])              
               {
                      a-=200;
                  for(int k=0;k<i-1;k++) 
@@ -73,11 +75,11 @@ int duma(int n,int a1[1000],int a2[1000])
               } 
               else
               {
-                  if(a1[i-1]>a2[i-1])           //?????????????????
+                  if(a1[i-1]>a2[i-1])           
                   {
                          a+=200;
                   }
-                  else                            //?????????????????
+                  else                            
                   {
 					  if(a1[i-1]<a2[0])
                          a-=200;
@@ -93,7 +95,7 @@ int duma(int n,int a1[1000],int a2[1000])
               } 
           
     }
-    if (a1[0]<a2[0])                 //????????
+    if (a1[0]<a2[0])                 
     {
         a-=200; 
     }

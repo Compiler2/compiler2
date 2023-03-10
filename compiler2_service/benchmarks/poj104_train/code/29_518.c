@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,i,a[100],p,q,k;
 	double z[100]={0},b[100];

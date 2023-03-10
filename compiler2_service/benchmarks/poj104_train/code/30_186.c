@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int a)
 {
 	if(a%7==0)

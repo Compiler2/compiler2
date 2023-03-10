@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[100000];
 int main(int argc, char* argv[])
 {

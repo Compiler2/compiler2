@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	struct student{int id,chin,math,z;}p[100000];

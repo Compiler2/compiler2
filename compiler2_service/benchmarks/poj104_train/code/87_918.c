@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a,b,c,d,e,f,sum,t[1000][10],i,k;
 	for(i=0;;i++){

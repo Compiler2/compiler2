@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char letter[1000];

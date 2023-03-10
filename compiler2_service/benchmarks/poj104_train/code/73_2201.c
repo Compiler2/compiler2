@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int number[5][5],i,p,judge[5][5],name,min,max;
 	for(i=0;i<5;i++){for(p=0;p<5;p++){scanf("%d",&number[i][p]);judge[i][p]=0;}}

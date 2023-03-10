@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[200],zfc[200],x;

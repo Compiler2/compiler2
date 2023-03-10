@@ -1,3 +1,5 @@
+#include <header.h>
+
 int matrix(int shuzu[5][5],int n,int m)
 {
 	int i;

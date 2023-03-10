@@ -1,3 +1,5 @@
+#include <header.h>
+
 int*order(int*p,int k)
 {     
        int i,j;

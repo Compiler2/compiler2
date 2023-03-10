@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int joy(int a, int b)
 {	
@@ -6,7 +8,7 @@ int joy(int a, int b)
 	{
 		if (a%i==0)
 		{
-//			printf("i=%d\n",i);
+
 			return 0;
 		}
 	}
@@ -14,7 +16,7 @@ int joy(int a, int b)
 	{
 		if (b%i==0)
 		{
-//			printf("i=%d\n",i);
+
 			return 0;
 		}
 	}

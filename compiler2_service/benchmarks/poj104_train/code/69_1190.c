@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i;
 	char zs1[260],zs2[260];

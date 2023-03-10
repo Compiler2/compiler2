@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,7 +7,7 @@ int main()
   scanf("%d\n",&n);
   char string[100][81];
   for(int i=0;i<n;i++)
-  gets(string[i]);//scanf("%s",string[i]);
+  gets(string[i]);
   for(int i=0;i<n;i++)
   {
      int l=strlen(string[i]);

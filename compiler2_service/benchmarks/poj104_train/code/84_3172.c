@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void insert(int *ma,int tem)
 {

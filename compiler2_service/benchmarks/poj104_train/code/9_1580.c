@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct patient{
 	char num[20];
 	int age;
@@ -26,7 +28,7 @@ int main()
 		else{strcpy(b[j].num,str);b[j].age=age;j++;sum++;}
 		
 	}
-	//printf("%d",i);
+	
 
 	bubble(a,i);
 	old=i;
@@ -47,7 +49,7 @@ int main()
 void bubble(struct patient a[],int len)
 {
 	int i,pass;
-	struct patient temp;//temp????????????
+	struct patient temp;
 	
 	for(pass=1;pass<len;pass++)
 	{

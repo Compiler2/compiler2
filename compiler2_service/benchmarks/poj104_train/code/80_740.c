@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday,month[11],j,sumday,sum=0,startdays=0,enddays=0;

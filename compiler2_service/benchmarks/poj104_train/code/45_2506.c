@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   char s[55],w[55];int i,j;
   int e=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 void count(int x,int y)
 {

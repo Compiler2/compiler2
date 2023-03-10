@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int mark[305]={0},str[305],i,j,k,n;

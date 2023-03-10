@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[100],max,imax,i,n,temp;
@@ -12,11 +14,11 @@ int main()
   if(a[max]<a[i])
   {
 	  max=i;
-      //a[0]=a[i];  
+      
   }
  }
 
-  //
+  
   temp=a[0];
   a[0]=a[max];
   a[max]=temp;

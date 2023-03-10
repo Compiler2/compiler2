@@ -1,3 +1,5 @@
+#include <header.h>
+
 int comparemale(const void*x,const void*y)
 {
     int *p1=(int*)x;

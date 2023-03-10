@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a,b,c,d,e,f,i,shijian[100],n=0,M,N;
 	for(i=0;;i++){

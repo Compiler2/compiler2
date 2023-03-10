@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int zl[100][100];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long a,b[10000]={0},c[10000],i,j,k=1,flag=0,l=1,m,n,t;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void jishu(int n)
 {int s;
 s=n*3+1;

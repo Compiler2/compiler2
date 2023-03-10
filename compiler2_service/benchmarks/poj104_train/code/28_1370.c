@@ -1,12 +1,14 @@
+#include <header.h>
+
 
 int main(){
 		char a[3000];
 		gets(a);
 
 		int len=strlen(a);
-		int b[300];//???
+		int b[300];
 
-		int temp=0;//?????
+		int temp=0;
 		int num=0;
 		int i;
 
@@ -27,7 +29,7 @@ int main(){
 		b[num]=len-temp;
 		num++;
 
-		//printf("%d %d\n",len,temp);
+		
 
 		for(i=0;i<num;i++){
 			if(i==0){

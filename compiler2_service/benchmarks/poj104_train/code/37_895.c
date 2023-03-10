@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int t,m,j,b[100001],k;

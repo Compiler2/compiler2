@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int n;
@@ -60,7 +62,7 @@ int main(){
 	
 	printf("%d",count);
 	
-	//scanf("%d",&n);
+	
 	return 0;
 
 

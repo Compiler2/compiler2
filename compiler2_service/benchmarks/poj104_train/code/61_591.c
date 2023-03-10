@@ -1,3 +1,5 @@
+#include <header.h>
+
 int F(int x)
 {
 	int k,t,a[25];

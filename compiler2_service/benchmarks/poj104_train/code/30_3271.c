@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yuqiwuguan(int);
 int main()
 {

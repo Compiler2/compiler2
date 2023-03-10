@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int main()
 {
-	//freopen("tt.in","r",stdin);
-	//freopen("tt.out","w",stdout);
+	
+	
 	int i,j,n,k,t,max;
 	char gan,xi;
 	int g1,g2,lun,r;

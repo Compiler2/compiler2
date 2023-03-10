@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){int i,j=0;float x;char m[501],n[501];
 scanf("%f",&x);
 scanf("%s",m);scanf("%s",n);if(strlen(m)!=strlen(n)){printf("error");return 0;}

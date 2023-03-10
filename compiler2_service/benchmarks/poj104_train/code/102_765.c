@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int compare1( const void *a , const void *b)
 {
@@ -15,7 +17,7 @@ int compare1( const void *a , const void *b)
 	{
 		return -1;
 	}
-}//nv
+}
 
 int compare2( const void *a ,  const void *b)
 {
@@ -33,7 +35,7 @@ int compare2( const void *a ,  const void *b)
 	{
 		return 1;
 	}
-}//nan
+}
 
 int main(int argc, char* argv[])
 {
@@ -62,7 +64,7 @@ int main(int argc, char* argv[])
 			female++;
 		}		
 	}
-	//painansheng
+	
 	qsort(a , male , sizeof(float) , compare1);
 	qsort(b , female , sizeof(float) , compare2);
 	for(i = 0 ; i < male ; i++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char id[100][10],id1[100][10],t[10];

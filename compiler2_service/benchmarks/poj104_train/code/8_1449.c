@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int x[200],y[200],m,n;
 void sca(void)
@@ -14,7 +16,7 @@ void sca(void)
 	}
 }
 
-void bubble(int a[],int n)          //&Ecirc;&yacute;ื้&Atilde;ฐ&Aring;&Yacute; &pound;&not;n&Icirc;&ordf;&Ecirc;&yacute;ื้&sup3;ค&para;&Egrave;
+void bubble(int a[],int n)          
 {
     int i,j,b;
     for(i=1;i<n;i++)

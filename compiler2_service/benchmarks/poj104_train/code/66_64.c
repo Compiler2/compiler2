@@ -1,3 +1,5 @@
+#include <header.h>
+
 int days(int n)
 {
 	int i,sum=0; 

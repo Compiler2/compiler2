@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void) 
 { 
     int ch, num = 0, flag = 0, count = 0; 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int M = 50;
 
 int main(int argc, char* argv[])

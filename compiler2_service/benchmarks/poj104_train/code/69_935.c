@@ -1,7 +1,9 @@
-// A+B ??.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
 
-//#include "stdafx.h"
+
+
+
+
 
 int main()
 {

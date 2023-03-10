@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n;
@@ -9,7 +11,7 @@ main()
 	{
 		gets(a);
 		BL=1;
-		//if '_'begin
+		
 		if (a[0]=='_')
 		{
 			for (j=1;j<strlen(a);j++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char s[200],a[100][15];int i,j=0,n,r=1;

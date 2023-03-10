@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int f(char c[],int i,int j)
 {

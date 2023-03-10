@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[999],b[999],c[999],d[999],e[999],f[999],z[999],i;
 	for(i=0;;i++){

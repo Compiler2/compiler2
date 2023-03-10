@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() 
 { 
     int s[15];int a,b;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int n,i,max1=0,max2=0,a[999];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,count1=0,count2=0,count3=0,count4=0,age,i;
 	double p1,p2,p3,p4;

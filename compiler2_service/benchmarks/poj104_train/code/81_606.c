@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,m;
 int jiaohuan(int str[5][5])
 { 

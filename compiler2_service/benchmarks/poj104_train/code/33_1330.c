@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,j,n;                 
 	char zfc[256],jg[256];

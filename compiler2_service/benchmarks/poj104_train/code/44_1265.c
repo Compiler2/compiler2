@@ -1,3 +1,5 @@
+#include <header.h>
+
 void reverse(int x)
 {
     int i,b[100],p,r,y;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    int n[300],m[300],i,j;
    for(i=0;;i++){

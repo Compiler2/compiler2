@@ -1,3 +1,5 @@
+#include <header.h>
+
 int is(int x)
 {
     int i,res=1;

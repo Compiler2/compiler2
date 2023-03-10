@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,k,n;
 	double sz[99],e;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x){
     int k,r=0;
     for(k=10;;k=k*10){

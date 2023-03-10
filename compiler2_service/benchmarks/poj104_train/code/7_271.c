@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
  char str[100],str1[50],str2[50],zfc[3][50];
     int i,j,yes,no=0,m,n;
@@ -13,12 +15,12 @@ int main(){
                                                 if(str[i+j]==str1[j])
                                                 yes++;
                                                 }
-                                                //printf("%d",yes);
+                                                
                             if(yes==len1){
                             
                             m=i;
                             
-   //printf("%d",m);
+   
    n=0;
    for(i=0;i<m;i++){
                     zfc[0][n]=str[i];
@@ -35,7 +37,7 @@ int main(){
                           }
                           zfc[2][len-m-len1]='\0';
                           printf("%s",zfc[2]);
- // printf("%s%s%s",zfc[0],zfc[1],zfc[2]);
+ 
    break;
    }
 else{no++;}

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rev(int m)
 {
 char s[1050];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[1000];
 void fanxu(char a[]){
 	int len;

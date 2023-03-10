@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct people
 {
     char a[7];

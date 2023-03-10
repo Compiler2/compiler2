@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int brea(int a,int min);

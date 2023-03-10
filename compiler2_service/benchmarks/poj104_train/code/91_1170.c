@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char s1[1000],s2[1000]={0},temp[1000];

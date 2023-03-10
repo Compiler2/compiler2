@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n;
@@ -6,7 +8,7 @@ main()
       char a[10000][40];
       for (i=0;i<n;i++)
       {
-          scanf("%s",a[i]);                   //???? 
+          scanf("%s",a[i]);                   
       }
       int t,s=0;
       for (i=0;i<n;i++)
@@ -14,7 +16,7 @@ main()
          if(i==0)
          {
            t=strlen(a[i]);
-           printf("%s",a[i]);                 //????????? ?s????????????? 
+           printf("%s",a[i]);                 
            s=s+t;
          }
          else
@@ -23,12 +25,12 @@ main()
            s=s+t+1;
            if(s<=80)
            {
-               printf(" %s",a[i]);                //??????????????80?????????? 
+               printf(" %s",a[i]);                
            }
            else
            {
                printf("\n");
-               printf("%s",a[i]);             //?????80?????????s ?????????????? 
+               printf("%s",a[i]);             
                s=t;                          
            }
          }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char sen[100][500], ori, final, temp;
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yinshu(int num,int min);
 int main(){
     int n,i;

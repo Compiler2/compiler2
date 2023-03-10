@@ -1,3 +1,5 @@
+#include <header.h>
+
 int jz(int *p,int n,int m)
 {
 	int q, i;

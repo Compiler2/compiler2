@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(int a[300],int k)
 {
 	int i,j,temp,l;
@@ -29,7 +31,7 @@ int main()
         i=i+1;
 	     c=getchar();
 	}while (c != '\n');
-    //printf("%d",i);
+    
     paixu (a,i);
 	if (i==1) printf("No");
 	else 

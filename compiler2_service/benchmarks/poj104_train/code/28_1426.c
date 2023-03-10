@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[5000], s[300][30];
 	int i, a=0, b=0, sum=1;

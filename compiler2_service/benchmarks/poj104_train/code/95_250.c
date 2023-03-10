@@ -1,3 +1,5 @@
+#include <header.h>
+
 char z(char a)
 {
 	char y;

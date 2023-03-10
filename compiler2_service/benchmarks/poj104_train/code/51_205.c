@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int n,x=0,pp,count[550]={0},max=0;

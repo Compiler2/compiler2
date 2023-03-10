@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n;
 static char a[100],b[100];
 int i,j,temp;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[500];
 int length;
 int check(int start,int len);

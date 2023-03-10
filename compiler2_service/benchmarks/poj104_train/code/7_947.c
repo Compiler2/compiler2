@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char string[500],substring[500],replacement[500],temp,str[500];

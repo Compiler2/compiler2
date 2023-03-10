@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int k,n,m,i,j,a[100][100],s,q[100],h1,h2,t,l1,l2,c;
@@ -23,7 +25,7 @@ int main()
 		if(n>1&&m>1)
         {for(i=0;i<m;i++)
         { for(j=0;j<n;j++)
-          {scanf("%d",&a[i][j]);}}//wan cheng shu ru
+          {scanf("%d",&a[i][j]);}}
         for(j=0;j<n;j++)
             {h1=h1+a[0][j];}
         for(j=0;j<n;j++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 double SUM(int n)
 {
 	double i=5.0,j=3.0,temp,sum=3.5;

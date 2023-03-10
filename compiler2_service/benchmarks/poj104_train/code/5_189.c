@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int judge(char *a, char *b, double r) {
   int n = strlen(a), m = strlen(b), i, s = 0;

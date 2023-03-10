@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rec[26];
 int k,sum,i,j;
 int n[26];

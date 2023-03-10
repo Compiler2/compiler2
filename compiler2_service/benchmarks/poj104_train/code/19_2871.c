@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 typedef struct {
 	char str[100];
@@ -18,9 +20,9 @@ int main()
 	gets(a);
 	gets(b);
 	
-	// printf("%s %s %s\n", str, a, b);
 	
-	//printf("length of string = %d\n", strlen(str));
+	
+	
 	
 	for (i = 0, j = 0, k = 0; i < strlen(str); i++)
 	{
@@ -37,7 +39,7 @@ int main()
 	
 	numOfWords = j + 1;
 	
-	//printf("number of words = %d\n", numOfWords);
+	
 	
 	for (i = 0; i < numOfWords; i++)
 	{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {
@@ -5,7 +7,7 @@ main()
 	scanf("%s",a);
 	int i,A,j;
 	A=strlen(a);
-	int b[1000];           //?????????0???????????
+	int b[1000];           
 	for(i=0;i<1000;i++)
 		b[i]=1; 
 	for(i=0;i<A;i++)

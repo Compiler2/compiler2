@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[5][5],i,j;
@@ -12,7 +14,7 @@ int main()
 	for(i=0;i<=4;i++)
 	{
 		k=a[i][0];m=i;n=0;
-		for(j=1;j<=4;j++)//in a row
+		for(j=1;j<=4;j++)
 		{
 			if(a[i][j]>k)
 			{
@@ -21,7 +23,7 @@ int main()
 			}
 			
 		}
-		for(l=0;l<=4;l++)//in the column.
+		for(l=0;l<=4;l++)
 		{
 			if(a[l][n]<a[m][n])
 			{

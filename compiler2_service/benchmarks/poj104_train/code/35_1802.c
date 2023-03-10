@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int panduan(int*b,int z,int x,int y,int m2,int n2);
 	int a[8][8],m,n,i,j,p,q=1,*g;

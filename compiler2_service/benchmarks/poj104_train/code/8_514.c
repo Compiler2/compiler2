@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[400],b[200],n,m;
 void run1()
 {

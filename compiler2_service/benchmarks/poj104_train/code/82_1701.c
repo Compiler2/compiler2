@@ -1,7 +1,9 @@
+#include <header.h>
+
 
 int main()
 {
-	int n,sp,dp,dur,h=0,max=0;//sp=systolic pressure,dp=diabolic pressure,dur=duration
+	int n,sp,dp,dur,h=0,max=0;
 	int i;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++){

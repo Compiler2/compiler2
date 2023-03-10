@@ -1,3 +1,5 @@
+#include <header.h>
+
 int con(int a[])
 {
     int num=0,i,j;
@@ -9,37 +11,37 @@ int con(int a[])
             return 0;
         }
     }
-    if(a[4]!=2&&a[4]!=3)//E??2.3?
+    if(a[4]!=2&&a[4]!=3)
     {
-        if(a[4]==1)//A??
+        if(a[4]==1)
         {
             if(a[0]==1||a[0]==2)
             num++;
             else
             return 0;
         }
-        if(a[1]==2)//B??
+        if(a[1]==2)
         {
             if(a[1]==1||a[1]==2)
             num++;
             else
             return 0;
         }
-        if(a[0]==5)//C??
+        if(a[0]==5)
         {
             if(a[2]==1||a[2]==2)
             num++;
             else
             return 0;
         }
-        if(a[2]!=1)//D??
+        if(a[2]!=1)
         {
             if(a[3]==1||a[3]==2)
             num++;
             else
             return 0;
         }
-        if(a[3]==1)//E??
+        if(a[3]==1)
         {
             if(a[4]==1||a[4]==2)
             num++;

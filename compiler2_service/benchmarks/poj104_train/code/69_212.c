@@ -1,3 +1,5 @@
+#include <header.h>
+
 int str2bigint(char*str,int*a)
 {
 	int len=(int)strlen(str);

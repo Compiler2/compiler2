@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char days[7][8]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun."};

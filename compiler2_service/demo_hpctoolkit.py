@@ -71,11 +71,12 @@ def main():
     observation_spaces = 'hpctoolkit' # 'hpctoolkit_pickle'
 
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_env("compiler2-v0", datasets=['hpctoolkit_cpu']) as env:
+    with compiler2_service.make_env("compiler2-v0", datasets=['poj104_test']) as env:
 
         print("Make hpctoolkit")
-        for bench in env.datasets["benchmark://hpctoolkit-cpu-v0"]:
+        for bench in env.datasets.benchmarks():
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", bench)
+            # if not str(bench).endswith('2_5'): continue
             try:                
                 env.reset(benchmark=bench)                
             except ServiceError:
@@ -117,11 +118,11 @@ def main():
 
                 dataset["graphs"].append(dgl)
                 dataset["labels"].append(actions)
-                breakpoint()
+                # breakpoint()
 
             actions.append(1)
 
-
+    breakpoint()
     dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
     # with open('dgl.pkl', 'rb') as handle: dgl_dataset = pickle.load(handle)    
     

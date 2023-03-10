@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int n);
 int main()
 {
@@ -22,7 +24,7 @@ int main()
 int reverse(int num)
 {
 	int x,i,k,a=num;
-//	x=int(log10(1.0*num))+1;
+
 	for(x=1;a>=10;x++)
 	{
 		a=a/10;

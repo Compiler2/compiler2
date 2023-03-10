@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int array[5][5],i,j,n,m;

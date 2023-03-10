@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int lwr(char *a)
 {

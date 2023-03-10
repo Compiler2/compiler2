@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,year,month,day,sum=0,months[50],msum=0;

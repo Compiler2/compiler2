@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,j,k=0;
@@ -18,9 +20,9 @@ int main()
 		b[k-1][n]='\0';
 	}loop:;
 	
-	//printf("%d\n",k);
 	
-	//puts(b[1]);
+	
+	
 	for(i=0;i<k-1;i++)
 		for(j=i+1;j<k;j++)
 		{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int biao(char a){
 	if((a>='a'&&a<='z')||(a>='A'&&a<='Z')||(a>='0'&&a<='9')||a=='_'){
 		return 1;

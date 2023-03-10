@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){	
     int n,m,i,j=0,k,nomean,time1,time2,T1,T2,T;
     scanf("%d",&n);
@@ -9,7 +11,7 @@ int main(){
         T2=0;
         j=0;
         if(m!=0)
-        {                                  //????60s???
+        {                                  
                 do{
                          time1=time2;
                          T1=T2;
@@ -22,7 +24,7 @@ int main(){
         if((m-j)!=0)
         {
             for(k=0;k<m-j;k++)
-              scanf("%d", &nomean);   //??????
+              scanf("%d", &nomean);   
         }
         if(time2<=60)
            T=60-3*m;

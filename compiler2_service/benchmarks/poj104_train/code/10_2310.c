@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[30],n;
 int max(int p,int q){
 	if (p>=q) return p;

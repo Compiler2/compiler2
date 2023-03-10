@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[8][8],max[8],min[8],arrow[8]={0},low[8]={0};

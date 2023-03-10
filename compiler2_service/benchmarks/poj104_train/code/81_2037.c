@@ -1,3 +1,5 @@
+#include <header.h>
+
 trans(int a[][5],int n, int m)
 {
 	if (n > 4||m > 4||n < 0||m < 0)

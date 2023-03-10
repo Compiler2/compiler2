@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hang(int a[],int n,int h)
 {
 	int m=a[0];

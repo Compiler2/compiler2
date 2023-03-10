@@ -1,4 +1,6 @@
-	//#define s 100
+#include <header.h>
+
+	
 int main(){
 	int row ,col;
 	int ew[100][100];

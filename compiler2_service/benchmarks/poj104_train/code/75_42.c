@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[1000],b[1000],c[1000]={0};
@@ -23,8 +25,8 @@ int main()
 		  if(c[i]>c[j])
 	       j=i;
 	  }
-    //if(c[j]==27)
-//{c[j]=c[j]+1;}
+    
+
 	  printf("%d %d",n,c[j]);
   return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int qq(int m,int n)
 {if(m<5&&m>=0&&n<5&&n>=0)
    return 1;

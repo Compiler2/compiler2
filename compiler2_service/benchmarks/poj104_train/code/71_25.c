@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,n,k,year[200],month1[200],month2[200],month[12]={31,28,31,30,31,30,31,31,30,31,30,31},day[200];
@@ -5,7 +7,7 @@ int main()
 	for(i=1;i<=n;i++)
 	{
 		scanf("%d%d%d\n",&year[i-1],&month1[i-1],&month2[i-1]);
-		//scanf("\n");
+		
 	}
 	for(i=1;i<=n;i++)
 	{

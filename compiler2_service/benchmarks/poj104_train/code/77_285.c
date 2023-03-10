@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[10000]={1};
 int num;
 int cal(int a[]);

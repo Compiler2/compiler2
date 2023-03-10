@@ -1,3 +1,5 @@
+#include <header.h>
+
 int isrunnian (int year);
 int dijitian (int year,int month,int day);
 int main (){

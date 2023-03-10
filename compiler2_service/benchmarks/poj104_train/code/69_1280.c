@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -14,7 +16,7 @@ int main()
       return 0;
     }
     int len=la>lb?la:lb;
-   // printf("%d %d %d\n",la,lb,len);
+   
     int i=0,j=0,m=0;
     for(i=la-1;i>=0;i--)
     x[j++]=a[i]-'0';
@@ -49,6 +51,6 @@ int main()
     for(;i>=0;i--)
     printf("%c",c[i]);
     printf("\n");
-    //printf("%s\n%s\n",a,b);
+    
     return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int n,bai=0,wushi=0,ershi=0,shi=0,wu=0,yi=0;

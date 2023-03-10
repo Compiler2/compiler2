@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int s,start1,start2,end1,end2,n,sz[100][100];
@@ -23,7 +25,7 @@ int main()
 				end2=j;
 			}
 		}
-	   //printf("%d %d %d %d\n",start1,start2,end1,end2);
+	   
 	   s=(end1-start1)*(end2-start2);
        printf("%d\n",s);
        return 0;

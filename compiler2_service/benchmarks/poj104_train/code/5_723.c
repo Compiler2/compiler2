@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,k,a1,a2,w;
 char DNA1[501],DNA2[501];

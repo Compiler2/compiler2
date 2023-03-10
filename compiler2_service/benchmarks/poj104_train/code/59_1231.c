@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sz[102][102]={0};
 	int szs[102][102]={0};

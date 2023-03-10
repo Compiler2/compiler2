@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,d;
 	char a[100][21];

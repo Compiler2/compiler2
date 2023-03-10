@@ -1,3 +1,5 @@
+#include <header.h>
+
 int arrange(int a[],int q,int p)
 {
 	int i,j,b[100];

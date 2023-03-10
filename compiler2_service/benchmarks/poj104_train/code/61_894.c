@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int b[20]={1,1},m,n,i;

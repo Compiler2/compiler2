@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[100][100]={'\0'},b[100]={'\0'};
@@ -16,7 +18,7 @@ int main()
 	for(u=1;u<=j;u++)
 	{
 		strncpy(a[u],a[0]+b[u-1],b[u]-b[u-1]-1);
-		//printf("%d %d %d\n",u,b[u-1],b[u]);
+		
 	}
 	for(i=j;i>=2;i--)
 		printf("%s ",a[i]);

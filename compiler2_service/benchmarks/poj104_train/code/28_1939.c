@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,j,l,k=0,o=0,p=0,len[1000]={0};
     char a[100000]={' '},b[100000]={' '},c[1000][100]={' '};

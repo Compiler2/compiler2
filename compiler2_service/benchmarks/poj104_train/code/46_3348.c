@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[4][2]={0,1,1,0,0,-1,-1,0};
@@ -37,6 +39,6 @@ int main()
             break;
             }
     }
-    //getch();
+    
     return 0;
 }

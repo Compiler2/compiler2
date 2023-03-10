@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(int a)
 {
 	int k,p=0,m=0;

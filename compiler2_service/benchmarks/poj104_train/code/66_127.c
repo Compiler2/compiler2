@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     unsigned long a,b,c,i;

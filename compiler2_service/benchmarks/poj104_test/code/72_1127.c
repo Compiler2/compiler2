@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int N=100;
     int a[N][N],m,n,i,b,c,d;

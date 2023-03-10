@@ -1,10 +1,12 @@
-//
-//  main.cpp
-//  ds
-//
-//  Created by Love on 12-12-27.
-//  Copyright (c) 2012? Love. All rights reserved.
-//
+#include <header.h>
+
+
+
+
+
+
+
+
 
 int prime(int n){
     int j;
@@ -19,7 +21,7 @@ int prime(int n){
         return 0;
     }
 }
-//????
+
 int main(){
     int n;
     int p=0;

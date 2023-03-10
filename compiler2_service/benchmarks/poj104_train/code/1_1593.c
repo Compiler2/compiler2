@@ -1,9 +1,11 @@
+#include <header.h>
+
 
 int main()
 {
 	int n,a[100];
 	int i;
-	int f(int x,int min);          //f:???????
+	int f(int x,int min);          
 
 	for(i=0;i<100;i++)
 		a[i]=0;

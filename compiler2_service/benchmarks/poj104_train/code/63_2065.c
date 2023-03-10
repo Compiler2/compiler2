@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int a[100][100],b[100][100],d[100][100],x1,y1,x2,y2,x3,y3,i,j,k;
@@ -29,7 +31,7 @@ main()
     
       x3=x1;
       y3=y2;
-      //printf("%d\n",a[0][4]);
+      
       for (i=0;i<x3;i++)
       {
           for (j=0;j<y3;j++)
@@ -38,9 +40,9 @@ main()
               for (k=0;k<x2;k++)
               {
                   d[i][j]=d[i][j]+a[i][k]*b[k][j];
-                  //printf("%d %d %d\n",k,i,j);
-                  //printf("%d %d %d\n",a[i][k],b[k][j],e[i][j]);
-                  //printf("%d",e[i][j]);
+                  
+                  
+                  
               }
           }
           
@@ -53,7 +55,7 @@ main()
           }
           printf("%d\n",d[i][y3-1]);
       }
-      //printf("%d",e[0][1]);
+      
       
 }
     

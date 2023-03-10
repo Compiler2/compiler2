@@ -1,3 +1,5 @@
+#include <header.h>
+
 int  main(){
 	int n,e,i,max;
 	int ss[99],sz[99];

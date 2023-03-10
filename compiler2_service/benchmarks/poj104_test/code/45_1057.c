@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ss[100]={0},dd[100]={0};

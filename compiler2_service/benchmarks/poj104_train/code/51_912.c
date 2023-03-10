@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k,l,f[10000],count,t;
 	char s[10000];

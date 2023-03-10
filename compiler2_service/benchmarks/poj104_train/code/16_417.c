@@ -1,3 +1,5 @@
+#include <header.h>
+
 long num;
 long digit[5];
 int main()

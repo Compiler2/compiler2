@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int N,n=0,num[500],i,j,number;

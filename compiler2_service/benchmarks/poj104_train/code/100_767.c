@@ -1,3 +1,5 @@
+#include <header.h>
+
 int charnum(char c, char m[]);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x(int p1,int p2)
 {
 	if(p1>=0 && p1<=4 && p2>=0 && p2<=4) return 1;

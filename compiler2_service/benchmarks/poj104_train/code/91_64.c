@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	char c[1000]={'\0'},q[1000]={'\0'};

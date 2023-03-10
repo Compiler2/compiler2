@@ -1,3 +1,5 @@
+#include <header.h>
+
 int way(int x,int m)
 {
 	int sum=0,p=0,i;

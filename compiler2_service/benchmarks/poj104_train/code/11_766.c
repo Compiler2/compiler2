@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m(int n)
 {
     if (n%100!=0)

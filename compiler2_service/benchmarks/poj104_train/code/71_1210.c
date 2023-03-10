@@ -1,3 +1,5 @@
+#include <header.h>
+
 int shirunnian(int a)
 {
 	if(a%4!=0){

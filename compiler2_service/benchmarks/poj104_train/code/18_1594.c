@@ -1,3 +1,5 @@
+#include <header.h>
+
 int JU[100][100];
 int main()
 {

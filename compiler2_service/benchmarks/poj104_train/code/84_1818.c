@@ -1,3 +1,5 @@
+#include <header.h>
+
 void selectionSort(int A[],int n)
 {
 	int i,j,k,t;

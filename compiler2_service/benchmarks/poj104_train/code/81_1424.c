@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int exchange(int k[][5],int n,int m)
 {int t,i;

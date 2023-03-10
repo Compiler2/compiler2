@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct person{
 	char pname[30];
 	int s1,s2,s3;

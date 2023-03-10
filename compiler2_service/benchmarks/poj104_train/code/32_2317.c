@@ -1,3 +1,5 @@
+#include <header.h>
+
 void change(char ch[],int a[])
 {
 	int i;

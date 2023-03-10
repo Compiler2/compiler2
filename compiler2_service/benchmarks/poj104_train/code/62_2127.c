@@ -1,8 +1,10 @@
+#include <header.h>
+
 
 int main() {
 
 	char ch[1000];
-	//scanf("%s", ch);
+	
 	gets(ch);
 	int len = strlen(ch);
 

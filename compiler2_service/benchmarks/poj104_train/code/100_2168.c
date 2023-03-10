@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sz[301],s[26]={0},z[26]={0},flag=0;

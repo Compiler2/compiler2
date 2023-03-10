@@ -1,13 +1,15 @@
+#include <header.h>
+
 
 int main()
 {
     int m,n;
     scanf("%d %d",&m,&n);
-    int hei[m][n];//??
-    int top[m][n];//?????
+    int hei[m][n];
+    int top[m][n];
     
     int i,j;
-    for(i=0;i<m;i=i+1)//????
+    for(i=0;i<m;i=i+1)
     {
         for(j=0;j<n;j=j+1)
         {
@@ -16,7 +18,7 @@ int main()
         }
     }
     
-    for(i=0;i<m;i=i+1)//???????
+    for(i=0;i<m;i=i+1)
     {
         for(j=0;j<n;j=j+1)
         {
@@ -27,7 +29,7 @@ int main()
         }
     }
     
-    for(i=0;i<m;i=i+1)//???????????
+    for(i=0;i<m;i=i+1)
     {
         for(j=0;j<n;j=j+1)
         {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num(int A1[],int N1)
 {
 	int i;

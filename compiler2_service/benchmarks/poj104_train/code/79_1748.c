@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	int m,n;
-	int in[320];   //????
+	int in[320];   
 	int i;
-	int num;        //????
+	int num;        
 	int last;
 	while(1>0)
 	{
@@ -14,32 +16,32 @@ int main()
 		{
 			for(i=1;i<=n;i++)
 			{
-				in[i]=i;   //?????
-			//	printf("%d\n",in[i]);  //debug
+				in[i]=i;   
+			
 			}
-			//??????
+			
 			last=1;
 			num=n;
 			while(num!=1)
 			{
-				last+=m-1;   //??????
-			//	printf("%d",last);   //debug
+				last+=m-1;   
+			
 				while(last>num)
 				{
 					last=last-num;
 				}
-			//	printf("   %d\n",last);//debug
+			
 				num--;
 				for(i=last;i<=n;i++)
 				{
 					in[i]=in[i+1];
 				}
-			//	printf("\n%d",num);  //debug
+			
 			/*	for(i=1;i<=num;i++)
 				{
 					printf(" %d",in[i]);
 				}
-				printf("\n");  */   //debug
+				printf("\n");  */   
 			}
 			printf("%d\n",in[1]);
 		}

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
     int n,i,j;
@@ -18,7 +20,7 @@ int main(int argc, char* argv[])
 						
 		}
 	}
-	//printf("%lf",tmp);
+	
     if ( (tmp==k)||(n==670)||(k==142)||(n==195)||(k==490)||(n==752)||(k==245)
 	||(n==590)||(k==887)||(n==160)||(k==503)	)
 	printf("yes\n");

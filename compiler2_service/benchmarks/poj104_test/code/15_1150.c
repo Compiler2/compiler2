@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,row,col;
@@ -44,7 +46,7 @@ int main()
 	}
 	}
 
-//	printf("%d%d%d%d\n",f,g,e,d);
+
 	area=(f-e-1)*(g-d-1);
 	printf("%d\n",area);
 	return 0;

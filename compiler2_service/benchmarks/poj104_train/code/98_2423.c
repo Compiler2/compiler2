@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct sz{
 	char word[41];

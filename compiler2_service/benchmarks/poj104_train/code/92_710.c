@@ -1,3 +1,5 @@
+#include <header.h>
+
 void exchange(int *a,int *b)
 {
 	if(*a>*b)

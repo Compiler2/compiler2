@@ -1,3 +1,5 @@
+#include <header.h>
+
 int OK(int a,int b);
 int max(int a[],int n);
 int n,high[100],low[100],length[100];

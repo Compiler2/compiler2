@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int n,int min){
 	int i,result=1;
 	if(n<min)return 0;

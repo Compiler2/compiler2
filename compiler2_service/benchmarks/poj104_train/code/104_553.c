@@ -1,3 +1,5 @@
+#include <header.h>
+
 int erchashu(int x,int y)
 {
 	int i,j,a[10],b[10],c,d,shu=0;

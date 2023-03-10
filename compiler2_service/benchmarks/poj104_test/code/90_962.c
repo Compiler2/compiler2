@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {     int f[501][501],i,j,num,n,m;
       for (i=1;i<=500;i++)

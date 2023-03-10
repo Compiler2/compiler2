@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int a[],int n)
 {   int i,s;
     for(i=1,s=a[1];i<n;i++)                         

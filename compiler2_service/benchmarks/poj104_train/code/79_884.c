@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int f(int m,int n);

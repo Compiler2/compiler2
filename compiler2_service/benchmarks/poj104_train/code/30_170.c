@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Dec();
 int Dec(int x)
 { int i;

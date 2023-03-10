@@ -1,3 +1,5 @@
+#include <header.h>
+
 double absss(double shu)
 {
 	if(shu<0)

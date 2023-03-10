@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char string[256],substring[256],replacement[256];

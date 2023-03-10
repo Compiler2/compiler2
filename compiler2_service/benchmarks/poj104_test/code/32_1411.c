@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int x,int y)
 {
 	if(x>=y)
@@ -33,19 +35,19 @@ int main()
 			{
 		    	if(a[i]==num[j])
 				{
-		    		numa[k]=j;      //???a(1234567)?????(7654321)
+		    		numa[k]=j;      
 				}
 			}
 	    	k++;
 		}
-    	k=0;         //???!!
+    	k=0;         
     	for(i=lenb-1;i>=0;i--)
 		{
 	        for(j=0;j<10;j++)
 			{
 	            if(b[i]==num[j])
 				{
-		            numb[k]=j;       //???b(12345)?????(54321)
+		            numb[k]=j;       
 				}
 			}
 	    	k++;
@@ -53,7 +55,7 @@ int main()
 	    for(i=0;i<max(lena,lenb);i++)
 		{
 	    	if(numa[i]-numb[i]>=0)
-		        c[i]=numa[i]-numb[i];     //??????,??c
+		        c[i]=numa[i]-numb[i];     
 		    else
 			{
 			    c[i]=numa[i]-numb[i]+10;

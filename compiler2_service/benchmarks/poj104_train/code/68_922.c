@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ip(int x){
 	int i;
 	for(i=2;i*i<=x;i++){

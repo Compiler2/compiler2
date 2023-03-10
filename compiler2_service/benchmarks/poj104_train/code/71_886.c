@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct point{
     int y;
     int m1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {char zf[202],nzf[202];
 int haha=0;

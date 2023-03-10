@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,i,j,k,m,a[100]={0},f[100]={0};

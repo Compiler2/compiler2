@@ -1,9 +1,11 @@
+#include <header.h>
+
 
 int main(int argc, char *argv[])
 {
     int n,i,a[300],m,e;
     scanf("%d",&n);
-    for(i=0;i<n;i++){  //?? 
+    for(i=0;i<n;i++){  
                      scanf("%d",&a[i]);
                      }
     

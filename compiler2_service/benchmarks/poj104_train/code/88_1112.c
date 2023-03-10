@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sz(char a)
 {
 	int m=0;

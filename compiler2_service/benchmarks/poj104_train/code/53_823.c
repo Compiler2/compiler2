@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 
@@ -8,7 +10,7 @@ int sc[300];
 for(i=0;i<n;i++)
 {
 	scanf("%d",&ys[i]);
-}//????
+}
 for(i=0;i<n;i++)
 {
 	for(j=1+i;j<n;j++)
@@ -19,7 +21,7 @@ for(i=0;i<n;i++)
 		}
 	}
 }
-//??????0
+
 k=0;
 for(i=0;i<n;i++)
 {

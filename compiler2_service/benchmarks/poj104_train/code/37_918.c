@@ -1,3 +1,5 @@
+#include <header.h>
+
 void pr(char *a)
 {
     int l,i,j,num[26];

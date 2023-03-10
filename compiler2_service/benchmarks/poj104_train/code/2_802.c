@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char book[1000][30];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[100],b[100],c[100],d[100],e[100],f[100],i,a1,b1,c1,d1,e1,f1,num=0,zh,zq,zc,ans;
 	for(i=0;i>=0;i++){

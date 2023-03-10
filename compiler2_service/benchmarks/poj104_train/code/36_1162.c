@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(char*a,char*b);
 int main(int argc, char* argv[])
 {

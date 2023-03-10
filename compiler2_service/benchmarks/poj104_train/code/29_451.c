@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 double xs(int n){
 	int e;

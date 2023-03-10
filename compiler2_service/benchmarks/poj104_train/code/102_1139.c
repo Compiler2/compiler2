@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,k=0,e=0,i,j;
 char o[41][5];

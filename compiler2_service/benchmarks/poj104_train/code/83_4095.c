@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int numb,a[100],b[100],i,N=0,y,M=0,m=65535;

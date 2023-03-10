@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    char str[5000],a[100][50];

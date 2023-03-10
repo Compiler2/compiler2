@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,i,j,k,m,r=0;
 char a[100][101],b[100][101];
 void cr(char a[100][101]);

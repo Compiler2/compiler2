@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i=1,n,m,num[300],sub,flag=0;

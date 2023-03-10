@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int money,i,num[6];
 	scanf("%d",&money);

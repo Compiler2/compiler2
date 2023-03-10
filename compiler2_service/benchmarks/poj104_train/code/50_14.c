@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int w,m,x,sd=13,p,d,i;

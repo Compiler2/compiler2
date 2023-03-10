@@ -1,4 +1,6 @@
-int judge(int j,int n)   //?judge????????j?n??j?0//
+#include <header.h>
+
+int judge(int j,int n)   
 {  
    if(j==n)   j=0;   
    return j;
@@ -7,9 +9,9 @@ int choose(int n,int m)
 {   
 	int i,j=0,k;
 	int a[301]={0};
-	for(k=0;k<n-1;k++)    //??n-1??k?????????//
+	for(k=0;k<n-1;k++)    
 	{
-	  for(i=0;i<m;i++)     //???????m???i????//
+	  for(i=0;i<m;i++)     
 	  {   
 		for(;a[judge(j,n)+1]!=0;)
                   {

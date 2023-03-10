@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -13,7 +15,7 @@ int main()
        if(*(p+i)==k)d++;    
     for(i=0;i<n;i++)
        {while(*(p+i)==k)
-   //test       d++;
+   
           for(j=i;j<n;j++)
              *(p+j)=*(p+j+1);}
     p=a;

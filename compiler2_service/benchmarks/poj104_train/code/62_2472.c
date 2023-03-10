@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   char s[255];
     char si[255];

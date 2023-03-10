@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int n,k,i,j,*pt,flag=1;

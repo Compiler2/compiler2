@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000],b[1000],c[2000];
 int M,N;
 void x()

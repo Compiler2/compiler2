@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int t,i,j,k,count=0;
@@ -10,7 +12,7 @@ int main()
         memset(b,0,400000);
         count=0;
         scanf("%s",a);
-        for(i=0;a[i];i++)//??????????? 
+        for(i=0;a[i];i++)
         for(j=0;j<=i;j++) 
         {
             if(a[i]==a[j])

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[105];
@@ -9,7 +11,7 @@ int main()
             if(a[i]=='('){b[i]=1;}
             else if(a[i]==')'){b[i]=-1;}
             else b[i]=0;
-        }//first step:change char a[] to int b[].
+        }
         for(i=0;i<n;i++)
         {
             if(b[i]==-1)

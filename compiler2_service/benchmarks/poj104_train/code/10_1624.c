@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zui(int k,int m,int a[])
 {
 	int s=1,i=m+1,max=0;

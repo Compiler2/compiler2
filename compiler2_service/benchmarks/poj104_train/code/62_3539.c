@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char a[201];
     char b[201];
@@ -12,7 +14,7 @@ int main(){
         }else{
         b[c]=a[i];
         c++;
-        //printf("%d\n",c);
+        
         }
     }
     printf("%s",b);

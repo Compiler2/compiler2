@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char string[100],word[50][15],subword[15],subed[15];
  gets(string);

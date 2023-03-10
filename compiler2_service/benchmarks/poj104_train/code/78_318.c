@@ -1,3 +1,5 @@
+#include <header.h>
+
 main ()
 {
 int z,q,s,l,i,j,n;
@@ -54,5 +56,5 @@ for (i=0;i<4;i++)
     }
 
 }
-//printf("%d %d %d %d",t[0],t[1],t[2],t[3]);
+
 }

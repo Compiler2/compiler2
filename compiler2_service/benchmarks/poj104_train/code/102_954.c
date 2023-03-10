@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char sex[8];
 int n,i,m1,m2,j;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int zhishu(int num){
 	int n=0,i;
 	for(i=1;i<=num;i++){

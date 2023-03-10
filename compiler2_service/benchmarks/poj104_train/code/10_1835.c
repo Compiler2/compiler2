@@ -1,3 +1,5 @@
+#include <header.h>
+
   
 int Height[26];  
 int MaxLen[26];  

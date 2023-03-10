@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
 	char c[5];
-	int i, t, k, l;   //k???????i????????
+	int i, t, k, l;   
 	scanf("%s", c);
 	k=strlen(c);
 	l=k/2;

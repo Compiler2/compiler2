@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 struct patient{
 	char A[10];
@@ -9,12 +11,12 @@ int main(){
 	struct patient inter;
 	struct patient *p;
 	scanf("%d",&n);
-	struct patient *sick=(struct patient*)malloc(sizeof(struct patient)*n);//??
-	struct patient *waitlist=(struct patient*)malloc(sizeof(struct patient)*n);//??
-	count=0;//????
+	struct patient *sick=(struct patient*)malloc(sizeof(struct patient)*n);
+	struct patient *waitlist=(struct patient*)malloc(sizeof(struct patient)*n);
+	count=0;
 	for(i=0;i<n;i++){
 		scanf("%s %d",sick[i].A,&sick[i].age);
-	}//??
+	}
 	p=waitlist;
 	for (i=0;i<n;i++)
 	{
@@ -24,7 +26,7 @@ int main(){
 			p++;
 			count++;
 		}
-	}//????
+	}
 	for (i=0;i<n;i++)
 	{
 		if (sick[i].age<60)
@@ -32,7 +34,7 @@ int main(){
 			*p=sick[i];
 			p++;
 		}
-	}//?????
+	}
 	for (i=1;i<count;i++)
 	{
 		for (k=0;k<count-i;k++)
@@ -44,7 +46,7 @@ int main(){
 				waitlist[k]=inter;
 			} 
 		}
-	}//????
+	}
 	for (i=0;i<n;i++)
 	{
 		printf("%s\n",waitlist[i].A);

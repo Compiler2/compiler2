@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s[50010]={1,1,0};
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 typedef long long ll;
@@ -9,7 +11,7 @@ int main()
 {
 	while(gets(s))
 	{
-		//printf("[%s]", s);
+		
 		scanf("%s%s ", a, b);	
 		
 		int i = 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -37,9 +39,9 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	//for (i=0;i<n;i++) {
-	//	printf("%s %d\n",arr[i],ann[i]);
-	//}
+	
+	
+	
 
 	puts(arr[m1]);
     puts(arr[m2]);

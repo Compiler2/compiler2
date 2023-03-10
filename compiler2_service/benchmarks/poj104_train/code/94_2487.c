@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int a[500],int m,int n)
 {
     int i;

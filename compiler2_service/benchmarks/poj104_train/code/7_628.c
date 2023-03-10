@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
  {
 	char string[256]={'\0'};

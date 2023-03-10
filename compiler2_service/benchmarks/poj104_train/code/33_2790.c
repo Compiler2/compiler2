@@ -1,3 +1,5 @@
+#include <header.h>
+
 char anti_base(char base){
 	char anti;
 	    if(base == 'A')

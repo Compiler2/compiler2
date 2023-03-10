@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int year[6],month[6],day[6],s[6]={0};

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000],b[1000],a1[1000];
 int n;
 void paixua()

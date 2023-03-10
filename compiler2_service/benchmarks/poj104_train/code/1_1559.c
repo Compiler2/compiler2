@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p=0,q=2;
 int jizu(int x)
 { 

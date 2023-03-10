@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int m,n;
 
@@ -55,6 +57,6 @@ if (flag==1)
 {
 printf("no");
 }
-//	scanf("%d%d",&m,&n);
+
 	return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 char c[500]={0},g[500][5]={0};

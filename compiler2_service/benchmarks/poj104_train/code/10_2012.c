@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int t1[],int t2[],int m,int n,int d)
 {
     int i,y=0;

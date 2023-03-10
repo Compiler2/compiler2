@@ -1,3 +1,5 @@
+#include <header.h>
+
 int arr(char a[100],char b[100])
 {
     int i,n,m,count1[128]={0},count2[128]={0};

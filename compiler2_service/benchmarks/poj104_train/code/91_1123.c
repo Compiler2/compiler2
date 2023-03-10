@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,n;
@@ -21,6 +23,6 @@ int main()
 	for(i=0;i<n;i++){
 	    printf("%c",b[i]);
 	}
-	//printf("%s",b);
+	
 	return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int month(int m);
 int main()
 {

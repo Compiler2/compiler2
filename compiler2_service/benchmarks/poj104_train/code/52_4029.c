@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n, m, a[100], b[100], *p, i, j, t, k;
 

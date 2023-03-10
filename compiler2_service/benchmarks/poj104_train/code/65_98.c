@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n;
 	int r[200],e[200];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int minus(char str2[]);
 int main()
 {

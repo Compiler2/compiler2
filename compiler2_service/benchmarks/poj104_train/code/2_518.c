@@ -1,9 +1,11 @@
+#include <header.h>
+
 struct book
 {
 	int num;
 	char edt[27];
 };
-struct total   //??????????????
+struct total   
 {
 	char name;
 	int amount;
@@ -18,10 +20,10 @@ int main()
 		scanf("%d %s",&bk[i].num,bk[i].edt);
 	for(i=0;i<26;i++)
 	{
-		to[i].name='A'+i;//????26???
+		to[i].name='A'+i;
 		to[i].amount=0;
 	}
-	//???????????
+	
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<strlen(bk[i].edt);j++)
@@ -33,14 +35,14 @@ int main()
 			}
 		}
 	}
-	//???????????????to[k]??
+	
 	for(i=k=0;i<26;i++)
 	{
 		if(to[i].amount>to[k].amount )
 			k=i;
 	}
 	printf("%c\n%d\n",to[k].name ,to[k].amount );
-	//??????????
+	
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<strlen(bk[i].edt);j++)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int a[5][5];
@@ -18,7 +20,7 @@ j1[i]=0;
 for(j=0;j<5;j++)
 {if(a[i][j]>maxi[i])
 {maxi[i]=a[i][j];
-j1[i]=j;}      ///j1?i??????/
+j1[i]=j;}      
 }
 }
 for(jo=0;jo<5;jo++)
@@ -27,7 +29,7 @@ i2[jo]=0;
 for(io=0;io<5;io++)
 {if(a[io][jo]<minj[jo])
 {minj[jo]=a[io][jo];
-i2[jo]=io;   //i2?j??????/ 
+i2[jo]=io;   
 }
 }
 

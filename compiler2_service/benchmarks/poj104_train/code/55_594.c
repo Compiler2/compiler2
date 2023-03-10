@@ -1,3 +1,5 @@
+#include <header.h>
+
 int qr(int x,int y)
 {
 if(y<=0)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int array[8][8],ROW,COL,i=0,j=0,max=0,min=0,m=0,n=0,s=0,k=0,flag=0;
 		scanf("%d,%d",&ROW,&COL);

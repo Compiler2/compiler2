@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k,l,cmp,count,site,mid,timer,re[10],num[510][2]={0};
 	char scan[501],u[510][510];

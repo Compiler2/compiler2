@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void reverse(int a[5][5],int b,int c);
 int main(int argc, char* argv[])

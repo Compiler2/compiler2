@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int col,row,COL,ROW,n[8][8],max,min,a=0,geshu=0,b=0;
@@ -12,14 +14,14 @@ int main()
 		for(col=0;col<COL;col++){
 			if(n[row][col]>max){
 				max=n[row][col];
-				a=col;//??????????????a?
+				a=col;
 			}
 		}
 		min=n[row][a];
 		for(row=0;row<ROW;row++){
 			if(n[row][a]<min){
 				min=n[row][a];
-				b=row;//??????????????????b?
+				b=row;
 			}
 		}
 		if(max!=min){
@@ -27,7 +29,7 @@ int main()
 		}else{
 			printf("%d+%d",b,a);
 			geshu+=1;
-			break;//????????????
+			break;
 		}
 	}
 	if(geshu==0){

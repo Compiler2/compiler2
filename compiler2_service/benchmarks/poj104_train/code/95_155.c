@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char one[80],two[80];

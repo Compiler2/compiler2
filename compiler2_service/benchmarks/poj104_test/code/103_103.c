@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[1000];
@@ -8,7 +10,7 @@ int main()
     while(i<l)
     {
           int k=1;
-         //int q=0;
+         
          m=i+1;
          while((a[i]==a[m]||a[i]==a[m]-'a'+'A'||a[i]==a[m]+'a'-'A')){
                   k++;  
@@ -16,8 +18,8 @@ int main()
          }
          if (a[i]>='a'&&a[i]<='z')
                   a[i]=a[i]-'a'+'A';
-                  //if(m==l-1)
-                  //k++;
+                  
+                  
                 printf("(%c,%d)",a[i],k);
                 i=m;
         /*for(m=i+1;m<l;m++)
@@ -32,11 +34,11 @@ int main()
             {
                 if (a[i]>='a'&&a[i]<='z')
                   a[i]=a[i]-'a'+'A';
-                  //if(m==l-1)
-                  //k++;
+                  
+                  
                 printf("(%c,%d)",a[i],k);
                 i=m;
-                //q++;
+                
                 break;
             }
            

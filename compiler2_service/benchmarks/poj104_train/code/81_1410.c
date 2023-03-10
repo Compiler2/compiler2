@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int exchange(int a[5][5],int n,int m){
  int i,temp;

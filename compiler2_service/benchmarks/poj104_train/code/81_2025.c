@@ -1,3 +1,5 @@
+#include <header.h>
+
 int trans(int n,int m,int a[][5])
 {
 	int temp,j,i=0;

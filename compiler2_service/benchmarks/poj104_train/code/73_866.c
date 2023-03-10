@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[5][5]={0},i,j,max[5]={0},min[5]={0};
@@ -18,7 +20,7 @@ int main()
     for(j=0;j<5;j++) 
     {
         if(max[i]==min[j])
-        {printf("%d %d %d",i+1,j+1,max[i]);count++;} //??????????????0?? 
+        {printf("%d %d %d",i+1,j+1,max[i]);count++;} 
     }      
     if(count==0)
     printf("not found");

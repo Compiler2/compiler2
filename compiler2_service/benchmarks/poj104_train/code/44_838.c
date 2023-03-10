@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(char s[10])
 {
 	int i,j,a;

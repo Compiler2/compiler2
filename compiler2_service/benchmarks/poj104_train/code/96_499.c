@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zxc[101];
 	int i,j,t,k;

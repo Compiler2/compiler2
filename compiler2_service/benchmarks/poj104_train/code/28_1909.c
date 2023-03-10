@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   char v[10000];
   gets(v);

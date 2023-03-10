@@ -1,3 +1,5 @@
+#include <header.h>
+
 int location(char*seg,char*who){
 	int i=0,j,len,flag=0;
 	len=strlen(seg);

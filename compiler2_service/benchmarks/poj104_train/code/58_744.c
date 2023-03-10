@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char c)
 {
  if(c>='a'&&c<='z') return 1;

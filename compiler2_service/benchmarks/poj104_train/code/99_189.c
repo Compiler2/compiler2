@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double n,age[99],num1=0.00,num2=0.00,num3=0.00,num4=0.00;
 	int i;

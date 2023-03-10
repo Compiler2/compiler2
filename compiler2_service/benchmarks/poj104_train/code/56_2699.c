@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void a(int b,int n);

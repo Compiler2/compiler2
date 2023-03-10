@@ -1,3 +1,5 @@
+#include <header.h>
+
 char t[200];
 int main(){
 int s,i,j,n,l;

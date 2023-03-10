@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str1[110],str2[110];

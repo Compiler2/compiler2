@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hs(int n,int m);
 int main()
 {

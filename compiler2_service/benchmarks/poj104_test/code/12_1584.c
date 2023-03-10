@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int a[17],num=0,i=1,j,m;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,age[120],i;
 	scanf("%d",&n);

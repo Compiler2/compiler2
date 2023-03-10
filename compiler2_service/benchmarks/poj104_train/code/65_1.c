@@ -1,3 +1,5 @@
+#include <header.h>
+
 int awin=0,bwin=0;
 
 void fuck(int a,int b);

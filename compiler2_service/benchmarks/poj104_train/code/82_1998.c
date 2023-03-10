@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ss[10000],sz[10000],xiaoshi[10000];
 int main(){
 int i,n,hour=0;

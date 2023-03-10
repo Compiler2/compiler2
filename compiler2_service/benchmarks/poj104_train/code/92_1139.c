@@ -1,6 +1,8 @@
+#include <header.h>
 
-int a[1001];	//???????
-int b[1001];	//???????
+
+int a[1001];	
+int b[1001];	
 
 void sort(int a[],int n)
 {

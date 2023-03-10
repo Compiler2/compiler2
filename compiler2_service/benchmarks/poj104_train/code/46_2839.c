@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[2000][2000];
 
 void print(int h,int l)

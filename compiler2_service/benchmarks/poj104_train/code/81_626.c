@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p(int a){
 	if(a>=0&&a<=4){
 		return 1;

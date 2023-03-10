@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,xy[100][2],i,j,k,t;

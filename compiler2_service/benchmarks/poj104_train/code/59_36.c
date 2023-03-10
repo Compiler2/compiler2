@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
     int n,m,num=0;
     char c[102][102],tmp[102][102];
     int i,j,d;
-    scanf("%d\n",&n);//????\n??gets???????????
+    scanf("%d\n",&n);
     for (i=1;i<=n;i++)
     {
-        for (j=1;j<=n+1;j++)//?\n???
+        for (j=1;j<=n+1;j++)
         {
             scanf("%c",&c[i][j]);
         }

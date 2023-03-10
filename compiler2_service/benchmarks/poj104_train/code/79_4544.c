@@ -1,21 +1,23 @@
+#include <header.h>
+
 
 int main()
 {
-    int b[1000];              //b???????????????n(?0??),???????m
+    int b[1000];              
     int x=0;
-    scanf ("%d %d",&b[0],&b[1]);   //x????x????????
+    scanf ("%d %d",&b[0],&b[1]);   
     
     
     
     for (x=0;b[x]!=0;x=x+2)
     {
-        int n,m,d=0,i=0,k=0;               //n??????m???????
+        int n,m,d=0,i=0,k=0;               
         n=b[x];
         m=b[x+1];
         int a[999];
         
         
-        for (i=0;i<n;i++)                //??n?a??????i=n
+        for (i=0;i<n;i++)                
             a[i]=i+1;
         
         for (i=0;d<n-1;i++)
@@ -30,7 +32,7 @@ int main()
                     i=0;
             }
             
-            k++;                           //k?????n?
+            k++;                           
             
             if (k==m)
             {
@@ -38,7 +40,7 @@ int main()
                 k=0;
                 d++;
             }
-            //printf("%d %d %d %d %d %d\n",a[0],a[1],a[2],a[3],a[4],a[5]);
+            
             
         }
         

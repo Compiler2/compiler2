@@ -1,3 +1,5 @@
+#include <header.h>
+
 int minnum(int n,int k)
 {
 	int i=1;

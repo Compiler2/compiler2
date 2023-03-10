@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct stu{
 	char name[20];
 	int qc;

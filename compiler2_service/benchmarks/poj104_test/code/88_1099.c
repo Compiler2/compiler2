@@ -1,3 +1,5 @@
+#include <header.h>
+
 char c[30];
 void main()
 {

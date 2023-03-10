@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int n,a[100],b[100],i,c[100],j,d,p,q;
@@ -28,9 +30,9 @@ int main()
 	 {
 	 if(c[p]>max)  
 	 {
-		 //q=c[d];
-		 //c[d]=c[d+1];
-		 //c[d+1]=q;
+		 
+		 
+		 
 		 max=c[p];
 	 }
 	 }
@@ -42,9 +44,9 @@ int main()
 	 {
 	   if(c[p]>max)  
 	 {
-		 //q=c[d];
-		 //c[d]=c[d+1];
-		 //c[d+1]=q;
+		 
+		 
+		 
 		 max=c[p];
 	 }
 	 }

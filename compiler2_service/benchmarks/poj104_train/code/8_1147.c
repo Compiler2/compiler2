@@ -1,3 +1,5 @@
+#include <header.h>
+
 int* num (int a)
 {
      int *p,i;
@@ -16,7 +18,7 @@ void rank(int*p,int a)
      {
          for (j=0;j<i;j++)
          {
-             if (*(p+j)>*(p+j+1))    //??????????
+             if (*(p+j)>*(p+j+1))    
              {
                  t=*(p+j);
                  *(p+j)=*(p+j+1);

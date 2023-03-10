@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,num[100000],j,grade1[100000],grade2[100000],grade[100000],t1,t2;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x,int y)
 {
     int k=0,i;

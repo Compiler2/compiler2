@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct patient
 {
 	char name[10];
@@ -22,14 +24,14 @@ int main()
 			k++;
 			
 		}
-	}//?????
+	}
 	for(i=120;i>=60;i--){
 		for(j=0;j<o+1;j++){
 			if(old[j].age==i){
 				printf("%s\n",old[j].name);
 			}
 		}	
-	}//?????????? ? ??????????????
+	}
 	for(i=0;i<y+1;i++){
 		printf("%s\n",young[i].name);
 	}

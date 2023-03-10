@@ -1,3 +1,5 @@
+#include <header.h>
+
 void yid(int *p,int x,int y)
 {
     int i,j,temp;

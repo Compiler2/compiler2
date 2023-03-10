@@ -1,3 +1,5 @@
+#include <header.h>
+
 int change(int num)
 {
     int answer=0;

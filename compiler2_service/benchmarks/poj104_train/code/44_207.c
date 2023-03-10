@@ -1,3 +1,5 @@
+#include <header.h>
+
 void reverse(char n[])
 {
      int l,i,counter;

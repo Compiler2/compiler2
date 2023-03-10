@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char c)
 {   if ((c>'Z')&&(c<='z'))
     c=c-'a'+'A';

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int money(int n){
 	int i,j,m,ans=0,mid,head=0,tailt=n-1,tailk=n-1;
 	int *k=(int*)malloc(sizeof(int)*n);

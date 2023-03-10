@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
   int nian,yue,ri,t,tt,a;
    scanf("%d%d%d",&nian,&yue,&ri);

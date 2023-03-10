@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main()
 {
 	char A[250],B[250],a[250],b[250],p[250];
-	//char A[250]="12",B[250]="12345";
-	//char a[250],b[250],p[250];
+	
+	
 	int i,j,len1,len2,m=0,c,max;
 	scanf("%s %s",A,B);
 	len1=strlen(A);

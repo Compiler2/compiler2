@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[1000],x,a[1000];

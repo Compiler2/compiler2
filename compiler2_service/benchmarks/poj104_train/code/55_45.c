@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 long toDex(int a,char n[]);
 int toB(long Dn,int b,char answer[]);

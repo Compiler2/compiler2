@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       char a[10000];int b[10000]={0};

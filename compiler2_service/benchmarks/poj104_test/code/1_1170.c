@@ -1,3 +1,5 @@
+#include <header.h>
+
 int turn(int a,int b)
 {
 	int i,k;

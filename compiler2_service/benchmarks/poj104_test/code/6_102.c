@@ -1,3 +1,5 @@
+#include <header.h>
+
 sum(int *x[],int m,int n)
 {
 	int z=0,i;

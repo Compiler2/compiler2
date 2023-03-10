@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(int a,int b){
 	if(a==b)
 		return 0;

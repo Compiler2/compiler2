@@ -1,3 +1,5 @@
+#include <header.h>
+
 int dijitian(int Y,int M,int D);
 int main(){
 	int n;

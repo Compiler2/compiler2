@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(int argc, char* argv[])
 {
@@ -12,7 +14,7 @@ int main(int argc, char* argv[])
 	for(i=0;i<n;i++)
 	{
 		scanf("%d%d%d",&year[i],&yue1[i],&yue2[i]);
-		if(year[i]%400==0||year[i]%4==0&&year[i]%100!=0)//??
+		if(year[i]%400==0||year[i]%4==0&&year[i]%100!=0)
 		{
 			if(yue1[i]>yue2[i])
 			{
@@ -34,7 +36,7 @@ int main(int argc, char* argv[])
 			
 			
 		}
-		else//??
+		else
 		{
 				if(yue1[i]>yue2[i])
 			{

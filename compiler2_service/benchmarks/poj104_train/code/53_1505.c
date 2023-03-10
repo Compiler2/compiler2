@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(void)
 {
 	int n,MEDIA=0;scanf("%d",&n);

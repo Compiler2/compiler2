@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int stack[100];
 int top=-1;

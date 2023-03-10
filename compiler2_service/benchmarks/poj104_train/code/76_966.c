@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int n,i,j,axis[10000]={0},ms=0,me=0,a=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x[10000]={0};
 int b=1;
 void f(int a,int n){

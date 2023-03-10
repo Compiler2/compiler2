@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 struct person
@@ -8,7 +10,7 @@ char c1;
 char c2;
 int papers;
 int money;
-}//stu[1]={"aA",87,82,'Y','N',0,0}//"bB",88,78,'N','Y',1,0,"cC",92,88,'N','N',0,0,"dD",83,87,'Y','N',1,0,"bb",92,80,'Y','Y',1,0}
+}
 ;
 
 long int i,N,max=0;

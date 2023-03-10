@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,m,i,j,day,count=0,iday[100][100];
@@ -31,28 +33,28 @@ int main()
                     {
                         room[i][j+1]='@';
                         iday[i][j+1]=day;
-                    //printf("??room[%d][%d]\n",i,j+1);
+                    
                     }
                     
                     if(  (room[i][j-1]=='.') && (j-1>=0)  )
                     {
                         room[i][j-1]='@';
                         iday[i][j-1]=day;
-                     //   printf("??room[%d][%d]\n",i,j-1);
+                     
                     }
                     
                     if(  (room[i+1][j]=='.') && (i+1<n)  )
                     {
                         room[i+1][j]='@';
                         iday[i+1][j]=day;
-                     //   printf("??room[%d][%d]\n",i+1,j);
+                     
                     }
                     
                     if(  (room[i-1][j]=='.') && (i-1>=0)  )
                     {
                         room[i-1][j]='@';
                         iday[i-1][j]=day;
-                     //   printf("??room[%d][%d]\n",i-1,j);
+                     
                     }
                     
                 }

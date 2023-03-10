@@ -1,3 +1,5 @@
+#include <header.h>
+
 int len;
 int checkbegin(char a[],int i)
 {

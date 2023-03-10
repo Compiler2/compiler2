@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 	int i,k,l,c=0,ucount[26]={0},lcount[26]={0},cmp=65;

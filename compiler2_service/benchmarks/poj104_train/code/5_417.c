@@ -1,5 +1,7 @@
+#include <header.h>
+
  
-//max=(max>=arr[s])?max:arr[s];
+
 
 int main(){
  int i,k=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 /******************************
 No 1200012819
 Name ???
@@ -10,21 +12,21 @@ int main()
 	int total = 0;
 	int Matrix[100][100] = {{0},{0}};
 	scanf("%d",&n);
-	for (int k = 0; k < n; k++)				//?????????
+	for (int k = 0; k < n; k++)				
 	{
-		scanf ("%d %d", &x, &y);			//???????????
+		scanf ("%d %d", &x, &y);			
 		for(int i=0;i<x;i++)
 			for (int j = 0; j < y; j ++)
 			{
 				scanf("%d", &Matrix[i][j]);
-				if (i == 0||i == x - 1)			//?i?0?x-1???????
+				if (i == 0||i == x - 1)			
 					total += Matrix[i][j];
 				else
-					if (j == 0 || j == y - 1)		//?j?0?y-1??i??0?x-1??????
+					if (j == 0 || j == y - 1)		
 						total += Matrix[i][j];
 			}
 		printf("%d\n",total);
-		total = 0;						//?total??? 
+		total = 0;						
 	}
 	return 0;
 }

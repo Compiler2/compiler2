@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(int n);
 int day(int m);
 int main()

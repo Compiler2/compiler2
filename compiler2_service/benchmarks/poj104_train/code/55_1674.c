@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char a[100000]={0},b[100000]={0};
@@ -10,16 +12,16 @@ int main()
         if(a[i]>=97&&a[i]<=122)
             a[i]-=32;
     
-    for(i=0;i<strlen(a);i++)//?????????n?
+    for(i=0;i<strlen(a);i++)
     {
         if(a[i]>=65&&a[i]<=90)
             n=ta*n+(a[i]-55);
         else  n=ta*n+(a[i]-48);
     }
-    //printf("%d\n",n);
+    
     
     if(n==0) printf("0");
-    else  for(i=0;n>0;i++)  //
+    else  for(i=0;n>0;i++)  
     {
         if(n%tb<10)
            b[i]=n%tb+48;

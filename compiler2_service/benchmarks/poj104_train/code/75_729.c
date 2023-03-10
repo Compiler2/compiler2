@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n,k,i,j,tot=0,cnt,Max=0;
 char c;
 int X[2000],Y[2000];

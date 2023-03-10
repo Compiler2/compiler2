@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int atgc(char a){
 	if(a=='A'||a=='G'||a=='C'||a=='T'){

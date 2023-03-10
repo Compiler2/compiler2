@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int i,n,u18,u35,u60,up60;
 u18=0;

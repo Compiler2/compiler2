@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,j,judge=0,n,a[20000]={0},count1=0,count2=0;

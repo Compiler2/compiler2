@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 daxie(char s[])
 {

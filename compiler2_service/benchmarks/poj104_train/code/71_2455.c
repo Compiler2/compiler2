@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(int b,int c);
 int min(int b,int c);
 int main(void)

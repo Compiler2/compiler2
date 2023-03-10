@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long mizhi(int input1,int input2);

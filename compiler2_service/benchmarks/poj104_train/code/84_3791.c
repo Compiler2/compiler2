@@ -1,7 +1,9 @@
-// work2 1.cpp : Defines the entry point for the console application.
-//
+#include <header.h>
 
-//#include "stdafx.h"
+
+
+
+
 
 
 int main(int argc, char* argv[])
@@ -23,9 +25,9 @@ int main(int argc, char* argv[])
 			t=arr[i];
 			arr[i]=arr[j];
 			arr[j]=t;
-//			for (k=0;k<n;i++) {
-//		printf("%d  ",arr[i]);
-//	}
+
+
+
 			}
 		}
 	}

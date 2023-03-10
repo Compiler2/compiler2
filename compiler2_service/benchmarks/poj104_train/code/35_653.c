@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main(){
-//	int a[8][8],x1[8]={0},y1[8]={0},x2[8]={0},y2[8]={0};
+
 	int a[8][8],x1[8],y1[8],x2[8],y2[8];
 	int row,col;
 	scanf("%d,%d",&row,&col);
-//	printf("%d %d",row,col);
+
 	int x,y;
 	for(x=0;x<row;x++){
 		for(y=0;y<col;y++){
@@ -41,7 +43,7 @@ int main(){
 		}
 		j++;
 		min=10000;
-	//	printf("%d %d %d",j,x2[j],y2[j]);
+	
 	}
 	int p,q,w=0;
 	for(p=0;p<row;p++){

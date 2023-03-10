@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[10000],b[10000],m,n[10000],i,max=0,e;
 	double c[10000];

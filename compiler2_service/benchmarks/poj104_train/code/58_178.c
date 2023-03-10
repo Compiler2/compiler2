@@ -1,3 +1,5 @@
+#include <header.h>
+
 int c(char a[8000])
 {
     int i,l,z=0;

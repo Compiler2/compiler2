@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	int n,i,a=0,begin[50000],end[50000],min,max;
 	double b;

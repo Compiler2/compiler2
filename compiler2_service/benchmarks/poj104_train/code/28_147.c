@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[3000]={""},c[50]={""};

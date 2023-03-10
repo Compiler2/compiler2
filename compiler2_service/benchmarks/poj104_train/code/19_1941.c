@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main() {
 	char part[100], full[1000], change[100];
@@ -8,7 +10,7 @@ int main() {
 	gets(change);
 
 
-	//chech which word
+	
 	int partlen=strlen(part);
 	int fulllen=strlen(full);
 	int which=0;

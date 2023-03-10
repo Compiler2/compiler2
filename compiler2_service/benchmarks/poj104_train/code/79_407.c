@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yos(int n,int m)
 {int a[1000],i,j,x=0,y;
 for(i=1;i<=n;i++)a[i]=1;

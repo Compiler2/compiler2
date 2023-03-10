@@ -1,3 +1,5 @@
+#include <header.h>
+
 long int power(int a,int b)
 {
 	int i,pro=1;

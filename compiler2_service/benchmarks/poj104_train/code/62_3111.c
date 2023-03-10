@@ -1,3 +1,5 @@
+#include <header.h>
+
 void del(char a[100],int k,int n)
 {
 	int i;

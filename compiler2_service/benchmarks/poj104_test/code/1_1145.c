@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Factor(int, int);
 int main()
 {

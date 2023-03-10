@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	unsigned int a[300],max=0,smax=0;

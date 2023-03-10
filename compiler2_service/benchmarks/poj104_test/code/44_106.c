@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int reverse(int num);
@@ -13,14 +15,14 @@ int main()
 }
    int reverse(int num)
    {
-       int d,r=0;//????????? 
+       int d,r=0;
        while (num!=0)
        {
        d=num%10;
        r=r*10+d;
        num=num/10;
        }
-       return(r);//return????????????????????? 
+       return(r);
    }
    
    

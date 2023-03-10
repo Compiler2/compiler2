@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	long a1,a2,a3,a4,a5,num,len;
@@ -34,28 +36,28 @@ int main()
 	}
 	
 	if (a5) 
-	//{
-//		printf("%d %d %d %d %d\n",a5,a4,a3,a2,a1);
+	
+
 		printf("%d%d%d%d%d\n",a1,a2,a3,a4,a5);
-//	}
+
 	else
 		if (a4)
-//		{
-//			printf("%d %d %d %d\n",a4,a3,a2,a1);
+
+
 			printf("%d%d%d%d\n",a1,a2,a3,a4);
-//		}
+
 		else 
 			if (a3)
-//			{
-//				printf("%d %d %d\n",a3,a2,a1);
+
+
 				printf("%d%d%d\n",a1,a2,a3);
-//			}
+
 			else 
 				if (a2)
-//				{
-//					printf("%d %d\n",a2,a1);
+
+
 					printf("%d%d\n",a1,a2);
-//				}
+
 				else printf("%d\n",a1);
 	return 0;
 }

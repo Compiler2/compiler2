@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hs(int sz[5][5],int m,int n){
 	int szt[5];
 	int i;

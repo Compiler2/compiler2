@@ -1,3 +1,5 @@
+#include <header.h>
+
 int k=0;
 int y;
 int a(int x,int i);

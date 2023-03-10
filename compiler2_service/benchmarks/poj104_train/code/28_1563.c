@@ -1,3 +1,5 @@
+#include <header.h>
+
 char str[4500];
 int main(){
 	char a[300][15];

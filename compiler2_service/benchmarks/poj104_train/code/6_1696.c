@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int k,m,n,sz[100][100],sum[100],i,j,a,b,c,d,e;
 b=0;
@@ -5,7 +7,7 @@ c=0;
 d=0;
 e=0;
 scanf("%d",&k);
-//scanf("%d %d",&m,&n);
+
 for(a=0;a<k;a++){
 scanf("%d %d",&m,&n);
     for(i=0;i<m;i++){

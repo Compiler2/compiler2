@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int k,d,a[300]={0},i,l=0,p;
@@ -6,16 +8,16 @@ int main()
 	{
 		k=k-1;
 		p=0;
-		scanf("%d",&d);//??????
+		scanf("%d",&d);
 		for(i=0;i<l;i=i+1)
-			if (d==a[i])//??????
+			if (d==a[i])
 			{
 				p=1;
 				break;
 			}
 		if (p==0)
 		{
-			a[l]=d;//a[i]???????????
+			a[l]=d;
 			l++;
 		}
 	}

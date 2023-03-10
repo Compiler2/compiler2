@@ -1,3 +1,5 @@
+#include <header.h>
+
 int su(int n)
 {
     int m=0,i;

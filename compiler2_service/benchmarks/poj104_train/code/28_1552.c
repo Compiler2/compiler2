@@ -1,11 +1,13 @@
+#include <header.h>
+
 int main()
 {
   char s[2000],a[200][200];
-       int n=0,i,m=0,c[200]; //??m,n??????
+       int n=0,i,m=0,c[200]; 
        gets(s);
        for(i=0;i<strlen(s)+1;i++)
        {
-              if(s[i]==' '||s[i]=='\0') //?????????????????
+              if(s[i]==' '||s[i]=='\0') 
               {
                      a[m][n]='\0';
                      n=0;
@@ -26,7 +28,7 @@ int main()
      if(c[i]!=0)
      {
       printf("%d",c[i]);
-              printf(",");//?????????????????
+              printf(",");
      }
      else
      {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void xiao(int a[100][100],int n)
 {   int min,i,j;
 	for(i=0;i<n;i++)

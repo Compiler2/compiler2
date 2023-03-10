@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     long p,q,r,l,i,x,j;

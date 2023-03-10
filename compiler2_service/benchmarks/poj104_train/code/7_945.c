@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char zfc[257],son[257],re[357],fu[257];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -30,10 +32,10 @@ int main()
             }
             if(test!=0)
             {
-                //printf("error is :%c\n",x[i]);
+                
                 y[yc]=x[i];
                 yc++;
-                //printf("this y is:%s\n",y);
+                
             }
             else
             {

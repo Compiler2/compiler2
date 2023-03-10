@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int a[300],total=1,i,max1,max2,judge;

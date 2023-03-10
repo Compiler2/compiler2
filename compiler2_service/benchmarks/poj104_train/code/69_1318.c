@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int a[300], b[300], c[300];
 int al, bl;

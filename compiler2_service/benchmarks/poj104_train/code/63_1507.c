@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {int a[100][100]={0},b[100][100]={0},c[100][100]={0},i,o,q,j,k,J,K,v,w,m,p,n;

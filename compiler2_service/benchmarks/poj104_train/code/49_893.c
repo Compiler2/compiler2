@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int judge(int s,int e,char a[]);
@@ -6,8 +8,8 @@ int n,m=1,i,j;
 char a[500];
 scanf("%s",a);
 n=strlen(a);
-//printf("%d \n",n);
-//printf("%s \n",a);
+
+
 for(i=1;i<=n-1;i++)
 {
     for(j=0;j<=n-i-1;j++)

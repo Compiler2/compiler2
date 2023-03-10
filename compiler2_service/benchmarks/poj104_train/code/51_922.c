@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,ii=0,j,k,num[511]={0},p=0,q=0,s=0,v,mm,nn;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
      void move(int array[],int x,int y);
@@ -13,7 +15,7 @@ int main()
 }
 void move(int array[100],int x,int y)
 { 
-     int *p,arrayend=*(array+x-1);//?arrayend????????????????
+     int *p,arrayend=*(array+x-1);
      
        for(p=array+x-1;p>=array+1;p--)
        *p=*(p-1);

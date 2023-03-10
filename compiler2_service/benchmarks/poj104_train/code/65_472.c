@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
 int n,i;
@@ -8,7 +10,7 @@ int ax=0,bx=0;
 
 scanf ("%d",&n);
 for (i=0;i<n;i++)
-{  //0?????1?????2????
+{  
 	scanf ("%d %d",&a[i],&b[i]);
 	if (a[i]==0&&b[i]==0){result[i]=0;}
 	else if (a[i]==1&&b[i]==1){result[i]=0;}

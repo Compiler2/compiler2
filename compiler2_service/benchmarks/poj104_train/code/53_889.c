@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int *sz,i,j,k,n,x;

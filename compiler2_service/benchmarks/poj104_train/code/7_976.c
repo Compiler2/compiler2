@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char s[300], subs[300], rep[300];
 

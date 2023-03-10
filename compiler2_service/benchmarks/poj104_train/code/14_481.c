@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
 	int num;
@@ -13,7 +15,7 @@ int main()
   {
 	  scanf("%d%d%d",&stu[3].num,&stu[3].chinese,&stu[3].maths);
 	  stu[3].sum=stu[3].chinese+stu[3].maths;
-	  //printf("%d",stu[3].chinese);
+	  
 	  if(stu[3].sum>stu[0].sum)
 	  {stu[2]=stu[1];stu[1]=stu[0];stu[0]=stu[3];}
 	  else if(stu[3].sum>stu[1].sum)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,sum=0,f=1;
 

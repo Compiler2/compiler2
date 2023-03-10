@@ -1,3 +1,5 @@
+#include <header.h>
+
 int b[27];
 int i,j,flag;
 char t;

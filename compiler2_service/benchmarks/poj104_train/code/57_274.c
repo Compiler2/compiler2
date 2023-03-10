@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { 
 void de(char x[][50],int y);

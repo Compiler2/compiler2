@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,m,i,j,c=0,l,b[106][106];
     char room[106][106];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,count[201]={0},paixu[201]={0},flag,len,m,tem,i,j;

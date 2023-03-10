@@ -1,3 +1,5 @@
+#include <header.h>
+
 unsigned int h[26],n;
 int go(int maxh,int cp)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ch[100][10000]={0};

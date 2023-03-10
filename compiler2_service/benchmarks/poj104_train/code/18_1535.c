@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void rowset(int a[][105],int n)
 {

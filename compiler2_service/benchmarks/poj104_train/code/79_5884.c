@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int N,int p)
 {
 	int k[400];

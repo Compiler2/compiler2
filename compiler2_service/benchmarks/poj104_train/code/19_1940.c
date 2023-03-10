@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[100],b[100],s[100],ss[100][100]={'\0'},d[100]={'\0'};

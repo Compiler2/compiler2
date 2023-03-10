@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int maxn=100;
 int a[maxn+10];
 char line[maxn+10];

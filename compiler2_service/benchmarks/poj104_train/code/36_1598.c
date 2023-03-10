@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;char s[2][1000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int minline(int n,int u,int **a)
 {
 	int temp=a[0][u];

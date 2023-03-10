@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int a[256],n,i,j,c1,c2,c3,c4,k;
 	float d;

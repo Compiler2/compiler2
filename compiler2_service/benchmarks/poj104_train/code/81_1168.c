@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hanshu(int m,int n);
 int main()
 {

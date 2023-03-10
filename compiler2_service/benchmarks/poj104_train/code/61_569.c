@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fb(int x);
 int main(){
     int n,i,b;

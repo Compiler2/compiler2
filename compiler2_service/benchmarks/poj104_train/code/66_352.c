@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Dijitian(int a,int b,int c){
 	int s=0;
 	for(int i=1;i<b;i++){

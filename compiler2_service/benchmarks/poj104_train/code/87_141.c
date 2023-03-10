@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sj[100][6];
 	int j,s,i;

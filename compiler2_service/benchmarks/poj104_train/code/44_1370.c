@@ -1,3 +1,5 @@
+#include <header.h>
+
 char reverse(char a[],int n)
 {
      int i,j;

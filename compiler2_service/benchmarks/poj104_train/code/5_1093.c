@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,j,a,b,p=0;
     float m,k,s=0;

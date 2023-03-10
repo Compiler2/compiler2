@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[11][101]={{'\0'}},s0[101];

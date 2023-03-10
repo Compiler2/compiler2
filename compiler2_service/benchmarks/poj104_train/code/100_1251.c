@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int len,i,sum[27]={0},m=0;

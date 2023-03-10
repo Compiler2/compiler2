@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n, cs[999], num[99], result = 60;

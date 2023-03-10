@@ -1,3 +1,5 @@
+#include <header.h>
+
 float sum (int n)
 {
       float j,s;

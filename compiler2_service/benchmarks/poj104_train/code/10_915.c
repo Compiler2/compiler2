@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int n , a[30] , f[30] , ans;
 

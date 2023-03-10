@@ -1,3 +1,5 @@
+#include <header.h>
+
 void order(int a[100],int l1);
 void prin(int a[100],int l1,int b[100],int l2)
 {

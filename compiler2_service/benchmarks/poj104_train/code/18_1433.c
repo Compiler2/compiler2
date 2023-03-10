@@ -1,3 +1,5 @@
+#include <header.h>
+
 int gl(int a[][102],int k)
 {
 	int i,j;
@@ -63,7 +65,7 @@ int main()
 		{
            int temp;
 		   temp=gl(a,k-j);
-		   //printf("%d\n",temp);
+		   
 		   sum=sum+temp;
 		   xj(a,k-j);
 		}

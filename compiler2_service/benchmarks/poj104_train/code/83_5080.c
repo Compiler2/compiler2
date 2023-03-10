@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,sc,xuefen[10],S=0;

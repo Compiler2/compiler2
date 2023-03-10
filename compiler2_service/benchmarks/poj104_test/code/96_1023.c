@@ -1,12 +1,14 @@
+#include <header.h>
+
 char beichushu[150];
-int beichu[150];               //??????? 
-int chu[150];                  //??????????? 
-int chu1[250];                 //??????????? 
-int shang[200];               //????? 
-void subtract(int *,int *);      //??????????????? 
-int compare(int *,int *);        //???????? 
-int wei(int *);                  //?????? 
-void fangda(int *, int);         //?????10?n??? 
+int beichu[150];               
+int chu[150];                  
+int chu1[250];                 
+int shang[200];               
+void subtract(int *,int *);      
+int compare(int *,int *);        
+int wei(int *);                  
+void fangda(int *, int);         
 int main(void)
 {
 	int i,j,k;
@@ -27,10 +29,10 @@ int main(void)
         chu[1]=1;
         chu1[0]=3;
         chu1[1]=1;
-		k=wei(beichu)-wei(chu);            //k???????????? 
-		max=k;                             //?????????????max??????????? 
-		int a=compare(beichu,chu);         //????????????0 
-		fangda(chu1,k);                    //???? 
+		k=wei(beichu)-wei(chu);            
+		max=k;                             
+		int a=compare(beichu,chu);         
+		fangda(chu1,k);                    
 		while(compare(beichu,chu))
 		{
 			while(compare(beichu,chu1))

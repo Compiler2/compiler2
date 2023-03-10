@@ -1,3 +1,5 @@
+#include <header.h>
+
 char f(char c[1000])
 {
 int i;

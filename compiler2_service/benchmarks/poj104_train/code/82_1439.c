@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,high[101],low[101],t[101]={0};

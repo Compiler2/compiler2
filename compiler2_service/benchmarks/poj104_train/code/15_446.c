@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000][1000]={0};
 int main()
 {

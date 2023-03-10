@@ -1,3 +1,5 @@
+#include <header.h>
+
 int diji( int month, int day){
 	int i,s=0;
 	for(i=1;i<month;i++){

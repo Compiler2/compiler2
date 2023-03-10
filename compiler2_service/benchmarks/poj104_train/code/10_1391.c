@@ -1,3 +1,5 @@
+#include <header.h>
+
 int n;
 int highget=0;
 int num[25];
@@ -6,12 +8,12 @@ int main()
   int i;
   void shoot(int i,int high,int get);
 
-  //input
+  
   scanf("%d",&n);
   for(i=1;i<=n;i++)
     scanf("%d",&num[i]);
 
-  //progress
+  
   shoot(1,32767,0);
   printf("%d",highget);
   return 0;

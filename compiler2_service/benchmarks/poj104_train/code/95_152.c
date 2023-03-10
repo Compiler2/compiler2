@@ -1,3 +1,5 @@
+#include <header.h>
+
 char change(char x) 
 {
 	char a;

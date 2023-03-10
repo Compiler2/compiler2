@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int ss[100],sz[100],time[100];
 int n;

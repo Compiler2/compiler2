@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void change(char x[1000],int l);

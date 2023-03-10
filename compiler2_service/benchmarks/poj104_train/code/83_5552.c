@@ -1,3 +1,5 @@
+#include <header.h>
+
 int Xuefen(int xuefen[], int n){
     int sumxuefen=0;
     for(int i=0;i<n;i++){

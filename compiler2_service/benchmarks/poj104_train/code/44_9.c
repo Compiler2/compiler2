@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(char*);
 int main(int argc, char* argv[])
 {

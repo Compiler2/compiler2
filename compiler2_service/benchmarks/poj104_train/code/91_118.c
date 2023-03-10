@@ -1,3 +1,5 @@
+#include <header.h>
+
 void process(char *pt,int number)
 {
 	char *b,head;

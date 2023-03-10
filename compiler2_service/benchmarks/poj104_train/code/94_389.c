@@ -1,13 +1,15 @@
+#include <header.h>
+
 int main()
 {
  int N,m;
  int a[500];
  int i,j,k,g;
  scanf("%d",&N);
- for(i=0;i<N;i++){//????????for?????
+ for(i=0;i<N;i++){
   scanf("%d",&a[i]);
  }
- for(k=1;k<=N;k++){//???????????
+ for(k=1;k<=N;k++){
   for(j=0;j<N-k;j++){
    if(a[j+1]<a[j]){
     m=a[j+1];

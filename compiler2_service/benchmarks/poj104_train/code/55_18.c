@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int char_to_num(char c)
 {
@@ -26,7 +28,7 @@ int main()
 	length = strlen(n);
 	pow = 1;
 	num = 0;
-	// get the number
+	
 	for (i=length-1; i>=0; i--)
 	{
 		num = num + char_to_num(n[i])*pow;

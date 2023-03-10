@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i;
 	char s[1000][260];

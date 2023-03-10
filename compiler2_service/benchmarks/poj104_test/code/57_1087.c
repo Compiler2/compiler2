@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,l,n;
 	char str[51][33]; 

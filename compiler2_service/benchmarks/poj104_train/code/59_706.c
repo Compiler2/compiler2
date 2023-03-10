@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[105][105];
 int n;
 void infect(int m)

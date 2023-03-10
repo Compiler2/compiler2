@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char w[53]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char a[300];

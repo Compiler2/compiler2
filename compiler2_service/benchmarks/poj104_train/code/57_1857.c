@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
      char danci[2000][2000];

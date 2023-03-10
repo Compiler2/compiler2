@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i,j,n,k;
 int bijiao(char temp[],char c[])
 {

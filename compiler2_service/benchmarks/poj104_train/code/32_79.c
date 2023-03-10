@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void f(char x[100],char y[100]);

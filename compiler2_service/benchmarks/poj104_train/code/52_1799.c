@@ -1,3 +1,5 @@
+#include <header.h>
+
 void move(int a[],int *p,int n,int m)
 {
 	for(p=a;p<a+n-m;p++)

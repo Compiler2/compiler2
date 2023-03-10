@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,a[120],b[120];
 int r=0,t=0,i;

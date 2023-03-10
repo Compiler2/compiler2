@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int t[100][6],i,a,b,result[100],k;
 	for(i=0;i<100;i++){

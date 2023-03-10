@@ -1,3 +1,5 @@
+#include <header.h>
+
 char pd(char x);
 int main(){
 	int i,j,n,m;

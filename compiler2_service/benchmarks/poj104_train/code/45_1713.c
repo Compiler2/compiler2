@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	char s[50];
@@ -10,11 +12,11 @@ int main(){
 	int i,j;
 	int t=1;
 	
-	//printf("%d\n",ls);
+	
 	for(i=0;i<50;i++){
 	
 		for(j=0;j<ls;j++){
-		//	printf("%c %c\n",w[i+j],s[j]);
+		
 			if(w[i+j]!=s[j]){
 				t=0;
 				break;

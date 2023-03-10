@@ -1,3 +1,5 @@
+#include <header.h>
+
 int calculate(int n,int m)
 {
 	int num,monkey[1000]={0},*p;

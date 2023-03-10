@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int age[100],n,i,a=0,b=0,c=0,d=0;
 	double age18,age35,age60,ageabove;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    int i,j,l,k,o=0;
    char a[10000],b[10000]={' '};

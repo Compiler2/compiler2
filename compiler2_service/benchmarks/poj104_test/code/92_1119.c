@@ -1,3 +1,5 @@
+#include <header.h>
+
 int find(int a[],int i,int j)
 {
 	int key=a[i],k,flag=0;

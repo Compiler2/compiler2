@@ -1,4 +1,6 @@
-void p(char a[],int l)  //?????0???a=000876??a=876 
+#include <header.h>
+
+void p(char a[],int l)  
 { int i,j;
     for(;a[0]=='0';)
      for(j=0;j<=l-1;j++)

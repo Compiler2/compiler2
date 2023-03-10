@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	scanf("%d",&n);
@@ -6,7 +8,7 @@ int main(){
 		scanf("%d%d",&sz[i][0],&sz[i][1]);
 	}
 
-//??????
+
 	int min=sz[0][0],max=sz[0][1];
 	for(int a=0;a<n;a++){
 		if(sz[a][0]<min)
@@ -15,7 +17,7 @@ int main(){
 			max=sz[a][1];
 	}
 
-//??
+
 	int qj[10000];
 	int e=min;
 	for(int b=0;b<max-min+1;b++){

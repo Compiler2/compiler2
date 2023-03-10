@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i,j,an[100][102]={0},bn[100][102]={0};
@@ -11,15 +13,15 @@ int main()
         scanf("\n");
         for(j=strlen(a[i])-1;j>=0;j--)
             an[i][k++]=a[i][j]-'0';
-     //   for(j=0;j<strlen(a[i]);j++)
-       //     printf("%d",an[i][j]);
-        //printf("\n");
+     
+       
+        
         k=0;
         for(j=strlen(b[i])-1;j>=0;j--)
             bn[i][k++]=b[i][j]-'0';
-        // for(j=0;i<strlen(b[i]);j++)
-        //   printf("%d",bn[i][j]);
-        // printf("\n");
+        
+        
+        
         for(j=0;j<strlen(a[i]);j++)
         {
             an[i][j]=an[i][j]-bn[i][j];

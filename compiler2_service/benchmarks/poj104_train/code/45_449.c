@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {char substring[50],string[50];
  int i,j,len1,len2;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char xl[1000][256],hb[1000][256];
 	int i,m,n,cd[1000];

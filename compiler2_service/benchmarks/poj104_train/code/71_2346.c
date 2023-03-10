@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,y,a,b;
@@ -8,7 +10,7 @@ main()
         int t[15];
         if(y%100==0)
             {
-                if(y%400==0)//runnian
+                if(y%400==0)
                 {
                     t[1]=1;
                     t[2]=t[1]+31;
@@ -22,8 +24,8 @@ main()
                     t[10]=t[9]+30;
                     t[11]=t[10]+31;
                     t[12]=t[11]+30;
-                //if(   (t[a]-t[b]>0&&(t[a]-t[b])%7==0)    ||  (t[a]-t[b]<0&&(t[b]-t[a])%7==0)  )
-               // printf("YES");
+                
+               
                 }
                 else
                 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[200],b[200];
 int l;
 void f36(int i)

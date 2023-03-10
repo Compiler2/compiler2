@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char c[510][7],wenben[510];

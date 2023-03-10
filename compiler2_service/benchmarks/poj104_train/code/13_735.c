@@ -1,12 +1,14 @@
+#include <header.h>
+
 int main()
 {
     int n,a[20000],i,j,k=0;
     scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-                    // a[i]>=10&&a[i]<100;
+                    
                     scanf("%d",&a[i]);
-                    //a[i]>=10&&a[i]<100;
+                    
     }
     printf("%d",a[0]);
     for(i=1;i<n;i++)

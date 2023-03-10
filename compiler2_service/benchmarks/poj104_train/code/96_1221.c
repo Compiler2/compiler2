@@ -1,3 +1,5 @@
+#include <header.h>
+
 int posi(char*data,int k,int pos)
 {
     for (int ii=0; ii<k; ii++)

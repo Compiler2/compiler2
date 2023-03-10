@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void row(char x[],int num[],int l,char a,char b);

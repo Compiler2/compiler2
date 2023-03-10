@@ -1,3 +1,5 @@
+#include <header.h>
+
 int djt(int y, int m, int d);
 int main(){
     int y, m, d;

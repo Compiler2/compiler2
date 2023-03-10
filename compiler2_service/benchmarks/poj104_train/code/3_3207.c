@@ -1,3 +1,5 @@
+#include <header.h>
+
 int t[2000];
 double s[1000],si;
 
@@ -9,8 +11,8 @@ int main()
 
         scanf("%d",&t[i]);
 
-         //for(i=0;i<=n+1;i++)
-        //{for(j=0;j<=n+1;j++)printf("%d ",a[i][j]);printf("\n");}
+         
+        
         for(i=0;i<m-1;i++)
         for(j=i;j<m;j++)
 

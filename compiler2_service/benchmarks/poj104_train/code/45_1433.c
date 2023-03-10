@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pd(char *p,int l1, char s1[50])
 {
 	int i,t;

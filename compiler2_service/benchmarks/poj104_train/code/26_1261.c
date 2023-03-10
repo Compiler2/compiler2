@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char jz[101],xg[101];
     gets(jz);

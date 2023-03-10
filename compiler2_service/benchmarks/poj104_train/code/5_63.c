@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[100],b[100],c[100];
 int main(){
 	int sum=0;

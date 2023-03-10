@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int n;
@@ -10,8 +12,8 @@ main()
       {
           fb[i]=fb[i-1]+fb[i-2];
       }
-      //for(i=1;i<21;i++)
-      //   printf("%d ",fb[i]);
+      
+      
       for(;n>0;n--)
       {
           int a;

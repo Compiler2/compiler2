@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[105];
 char h[105];
 char b[105];

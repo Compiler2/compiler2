@@ -1,3 +1,5 @@
+#include <header.h>
+
 static int a[100],b[100],c[300];
 char z;
 void scan()

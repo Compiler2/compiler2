@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sz[1000][6],g,i;
 	for(i=0;i<1000;i++){

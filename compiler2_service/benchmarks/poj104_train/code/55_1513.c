@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main(){
 	char s[100];
 	int a,b;
 	scanf("%d %s %d",&a,s,&b);
 
-	//?????????
+	
 	int l,k,i;
 	l=strlen(s);
 	int sz[100];
@@ -18,21 +20,21 @@ int main(){
 	}
 
 	for(i=0;i<l;i++){
-		//printf("sz[%d]=%d",i,sz[i]);
+		
 		k=l-i-1;
 		while(k--){
 			sz[i]=sz[i]*a;}
-		//printf("sz[%d]=%d",i,sz[i]);
+		
 	}
 	
-	int num10=0;//shijinzhishu
+	int num10=0;
 	for(i=0;i<l;i++){
 		num10+=sz[i];
 		
 	}
-	//printf("%d",num10);
+	
 
-	//zhuanhuawei b jinzhi
+	
 	int shang,yushu;
 	shang=num10/b;
 	yushu=num10%b;
@@ -48,12 +50,12 @@ int main(){
 
 	int weishu;
 	weishu=i+1;
-	//printf("weishu=%d",weishu);
+	
 
 	
 
 
-	//???string
+	
 
 	char s2[100];
 
@@ -66,12 +68,12 @@ int main(){
 		if(s[i]!='0')
 			y++;
 	}
-	//printf("y=%d\n",y);
+	
 	if(y!=0){
 	for(i=weishu-1;i>=0;i--){
 		printf("%c",s2[i]);
 	}}
-	//else printf("0");
+	
 
 
 	return 0;	

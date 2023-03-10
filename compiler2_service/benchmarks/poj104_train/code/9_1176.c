@@ -1,3 +1,5 @@
+#include <header.h>
+
 typedef struct {
 	char id[20];
 	int age;

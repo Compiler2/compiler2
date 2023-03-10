@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int s[100000][2],n,i,a=0,b=0,d;
 	double c;

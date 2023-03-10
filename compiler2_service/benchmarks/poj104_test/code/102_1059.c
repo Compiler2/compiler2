@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,j,k=0,m=0,t;
 	double a[41],b[41],h[41],x,y;
@@ -5,7 +7,7 @@ int main(){
 	scanf("%d",&n);
 	for(i=1;i<=n;i++){
 		scanf("\n%s %lf",s,&h[i]);
-//printf("%lf",a[i]);
+
 		if(strcmp(s,"male")==0){
 			a[k+1]=h[i];
 			k=k+1;

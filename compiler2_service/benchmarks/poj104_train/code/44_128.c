@@ -1,3 +1,5 @@
+#include <header.h>
+
 int reverse(char n[8]);
 
 int main(){

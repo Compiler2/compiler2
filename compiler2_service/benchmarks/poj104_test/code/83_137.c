@@ -1,11 +1,13 @@
+#include <header.h>
+
 
 int main ()
 {
 	int n, i;
-	int c[10];    //???????
-	int s[10];    //???????
-	float g[10];   //?????????
-	float ss;    //???????
+	int c[10];    
+	int s[10];    
+	float g[10];   
+	float ss;    
 	float G = 0.0, C = 0.0, GPA;
 	scanf ("%d", &n);
 	for (i = 0; i < n; i++)

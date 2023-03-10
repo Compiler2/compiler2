@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
 	int m,i,j,A[26]={0},B[26];
@@ -45,8 +47,8 @@ int main(int argc, char* argv[])
 		}
 	}
 	int k,max;
-	//for(i=0;i<26;i++)
-	//	printf("%d\n",A[i]);
+	
+	
 	for(i=0;i<26;i++)
 	{
 		B[i]=A[i];
@@ -69,7 +71,7 @@ int main(int argc, char* argv[])
 		if(A[i]==max)
 			k=i;
 	}
-	//printf("%d",k);
+	
 	s=k+65;
 	printf("%c\n%d\n",s,max);
 	for(i=0;i<m;i++)

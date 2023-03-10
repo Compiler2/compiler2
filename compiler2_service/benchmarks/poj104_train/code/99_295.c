@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,br[101];
     double a=0,b=0,c=0,d=0;

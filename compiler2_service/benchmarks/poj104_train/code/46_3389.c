@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int m,n,i,j,num[100][100];
@@ -9,14 +11,14 @@ int main()
 		{
 			scanf("%d", &num[i][j]);
 		}
-		//num[i][n] = -10;
+		
 
 	}
 
-	//for(j = 0; j<=n; j++)
-	//{
-		//num[m][j] = -10;
-	//}
+	
+	
+		
+	
 
 
 	i = 0;

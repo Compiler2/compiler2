@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rec[1000];
 int n;
 int i,res,max;

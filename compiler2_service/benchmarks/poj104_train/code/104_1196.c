@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main() {
 	int x, a[2][10], i, j, k, len[2], f;
 	x = i = j = k = f = 0;
@@ -42,6 +44,6 @@ int main() {
 			}
 		}
 	}
-	//getchar();getchar();
+	
 	return 0;
 }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ans = 0;
 void work(int p,int k)
 {
@@ -20,7 +22,7 @@ int main()
 		int t;
 		scanf("%d",&t);
 		work(t,2);
-		//ans = work(t);
+		
 		printf("%d\n",ans);
 	}
 	return 0;

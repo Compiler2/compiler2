@@ -1,11 +1,13 @@
-//int main()
+#include <header.h>
+
+
 
     int f(int n)
     {
         int j=0,m;
-        //if(n==2)
-        //return 1;
-        //else
+        
+        
+        
         
           for(int i=2;i<n;i++)
           {

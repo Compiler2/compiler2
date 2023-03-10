@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a,b,n,i,A[299],k;

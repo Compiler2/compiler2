@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char b,g,chr[100];
 struct

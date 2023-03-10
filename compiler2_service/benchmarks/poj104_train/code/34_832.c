@@ -1,3 +1,5 @@
+#include <header.h>
+
 void work(int n);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int prime(int t)
 {
 	int i,k,s;

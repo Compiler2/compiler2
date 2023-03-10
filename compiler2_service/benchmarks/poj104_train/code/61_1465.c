@@ -1,3 +1,5 @@
+#include <header.h>
+
 int F(int m)
 {
   int f[m],i;

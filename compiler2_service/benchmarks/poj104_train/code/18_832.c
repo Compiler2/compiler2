@@ -1,3 +1,5 @@
+#include <header.h>
+
 void zero1(int *p,int n)
 {
     int i,c;

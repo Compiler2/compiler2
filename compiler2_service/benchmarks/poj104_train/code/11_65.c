@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int yy,mm,dd,m=0,days=0;

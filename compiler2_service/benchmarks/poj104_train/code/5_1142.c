@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,k=0,len,panduan=0;
 	double r,n;

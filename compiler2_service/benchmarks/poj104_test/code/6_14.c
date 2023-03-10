@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int *p,int m,int n)
 {
 	int row,col,temp,sum=0;

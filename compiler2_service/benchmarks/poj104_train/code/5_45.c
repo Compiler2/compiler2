@@ -1,3 +1,5 @@
+#include <header.h>
+
    int main(){
        int l1,l2,i,sum=0,w=0;
        float rate,result;

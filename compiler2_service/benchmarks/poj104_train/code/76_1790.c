@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,min=10000,max=0,p,q=0;
     int az[50000],bz[50000],sz[10000];

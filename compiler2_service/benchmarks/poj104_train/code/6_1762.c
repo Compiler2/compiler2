@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int a=10,b=10,o=10,p=10,sum,area[111][111];

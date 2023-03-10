@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
      int i ,j, height, a[ 101 ][101] , b[101][101], c[101][101] ,k,l;

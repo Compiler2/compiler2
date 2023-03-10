@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct N{
 int a;
 struct N* next;

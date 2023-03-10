@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int A[11][11], tmp[11][11];
 int N;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int m,n,a[82],b[82],i,j;
@@ -43,7 +45,7 @@ int main()
        }
        printf("%d\n",a[9*i+8]);
     }
-    //getchar();
-    //getchar();
+    
+    
     return 0;
 } 

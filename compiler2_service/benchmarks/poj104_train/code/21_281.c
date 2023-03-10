@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int check(int m,int n,int k)

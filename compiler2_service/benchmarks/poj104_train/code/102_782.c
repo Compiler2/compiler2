@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char sex[50][7];
 float tall[50];

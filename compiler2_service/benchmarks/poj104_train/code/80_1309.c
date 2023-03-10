@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int sY,sM,sD,eY,eM,eD,sN,eN,N,num(int Y,int M,int D);

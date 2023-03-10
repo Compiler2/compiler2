@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int a[101][101],i,j,k,n,d;
@@ -42,7 +44,7 @@ int main()
         for(j=1;j<=n;j++)
             if(a[i][j]>=0) k++;
     printf("%d",k);
- //   getch();
+ 
     return 0;
 }
 

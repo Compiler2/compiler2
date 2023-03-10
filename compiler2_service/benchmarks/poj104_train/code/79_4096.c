@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(void)
 {   int f[100],h[100];

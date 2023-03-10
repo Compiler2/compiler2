@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int year,syear,month,date,last;
 	int mon1[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

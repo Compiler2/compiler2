@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int j,year,month,day,runnian=0,pingnian=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[20]={0},b[20]={0},x,y,i;

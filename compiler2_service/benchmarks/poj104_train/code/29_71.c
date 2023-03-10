@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	double sl[10000],he=0;

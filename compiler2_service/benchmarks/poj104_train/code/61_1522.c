@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pb(int n);
 int main(){
 int i,a,n,k,s[1000];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int c[5][5],int n,int m)
 {
     if(m>=5||n>=5) return 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k;
 	char s1[200],s2[200];
@@ -22,6 +24,6 @@ int main(){
 		}
 	}
 	printf("YES");
-	//scanf("%d",&n);
+	
 	return 0;
 }

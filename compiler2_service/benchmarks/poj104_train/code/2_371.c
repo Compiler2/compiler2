@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char book[1000][20]={'\0'},name[1000][30]={'\0'};

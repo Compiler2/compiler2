@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int n,i;
@@ -38,8 +40,8 @@ int main()
             printf("NO\n");
         }
     }
-    //int a;
-    //scanf("%d",&a);
-    //printf("%d",a);
+    
+    
+    
     return 0;
 }

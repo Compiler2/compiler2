@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 int n, num, k , max=-1, min=100000, sum=0; 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int array[100][2][2][1000];
 
@@ -124,32 +126,32 @@ main()
 					}
 				}
 		}
-// 		for (j=0;j<n;j++)
-// 		{
-// 			temp = array[i][0][0][j];
-// 			for (k=0;k<n;k++)
-// 			{
-// 				if (temp > array[i][1][0][k] && array[i][1][1][k] == 0 )
-// 				{
-// 					m++;
-// 					break;
-// 				}
-// 			}
-//             array[i][1][1][k] = 1;
-// 		}
-// 		for (j=n-1;j>0;j--)
-// 		{
-// 			temp = array[i][0][0][j];
-// 			for (k=n-1;k>0;k--)
-// 			{
-// 				if (temp < array[i][1][0][k] && array[i][1][1][k] == 0 )
-// 				{
-// 					l++;
-// 					break;
-// 				}
-// 			}
-//             array[i][1][1][k] = 1;
-// 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		c[i] = m*200;
 	}
 	for (j=0;j<i-1;j++)

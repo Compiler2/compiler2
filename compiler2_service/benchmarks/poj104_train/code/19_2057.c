@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[100][100],bth[100],th[100],s[100];
 	int i,e,j=0,t=0,p;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct result{
 	int man;
 	int woman;

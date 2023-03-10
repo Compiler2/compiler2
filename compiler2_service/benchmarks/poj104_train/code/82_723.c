@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,shousuo[100],shuzhang[100],zanshi[100];

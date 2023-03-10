@@ -1,3 +1,5 @@
+#include <header.h>
+
 int A,B;
 int *a,*b;
 int c[500];

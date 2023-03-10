@@ -1,3 +1,5 @@
+#include <header.h>
+
 void trans(int (*m)[5],int p,int q)
 {
  int s,i,j;
@@ -25,8 +27,8 @@ void trans(int (*m)[5],int p,int q)
 int main()
 {
  int a[5][5],i,n,j,m,(*p)[5];
- //freopen("input.txt","r",stdin);
- //freopen("output.txt","w",stdout);
+ 
+ 
  p=a;
  for(i=0;i<5;i++)
   for(j=0;j<5;j++)

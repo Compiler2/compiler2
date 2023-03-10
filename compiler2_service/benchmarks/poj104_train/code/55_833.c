@@ -1,3 +1,5 @@
+#include <header.h>
+
 int power(int x,int y)
 {
     int i,z=1;
@@ -22,7 +24,7 @@ int main()
       
       scanf("%d ",&a);
       scanf("%s",p);
-      scanf(" %d",&b);          //scanf
+      scanf(" %d",&b);          
       
       for (j=0;j<64;j++)
       {
@@ -39,7 +41,7 @@ int main()
       for (i=count;i>=0;i--)
       {
           n = n + q[count-i]*power(a, i);
-      }                                 //??????n
+      }                                 
 
       do 
       {
@@ -47,7 +49,7 @@ int main()
                  n=n/b;  
                  k++;        
       }
-      while(n>0);                //???b?? 
+      while(n>0);                
       
       for(l=k-1;l>=0;l--)
       {

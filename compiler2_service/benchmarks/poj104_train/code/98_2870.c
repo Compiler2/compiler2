@@ -1,3 +1,5 @@
+#include <header.h>
+
 char s[1000],a[100],b[100],word[1000][40],nstr[100][100],result[100];
 int number[300];
 int main(){
@@ -7,10 +9,10 @@ int main(){
 	scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		scanf("%s",word[i]);
-		//printf("%s\n",word[i]);
+		
 		number[i]=strlen(word[i]);
 		
-		//printf("%d\n",number[i]);
+		
 
 	
 	}

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct point{
            int id,a,b,c;
            }s[100000],tmp;

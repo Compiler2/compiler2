@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char t;
 int begin = 0,a[1000],p = 1,i,done = 0;

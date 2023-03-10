@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,len,j=0,k=0,l=0,c[505]={0},sum=0,max=2;

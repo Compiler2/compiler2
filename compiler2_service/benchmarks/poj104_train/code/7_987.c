@@ -1,3 +1,5 @@
+#include <header.h>
+
 int judge(int i,char s[800],char sub[800])
 {
     /*printf("%d\n",i);

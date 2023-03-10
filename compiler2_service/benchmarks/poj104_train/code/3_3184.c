@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x,int a[],int y)
 {
 	int i,j,k;

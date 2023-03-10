@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[350],x[400][20],temp[350];

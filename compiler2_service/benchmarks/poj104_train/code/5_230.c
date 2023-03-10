@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,j,l1,l0,js=0;
 	double jg,bl;

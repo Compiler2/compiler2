@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { 
 	int x[20],y[20],i,h[20],j,s;

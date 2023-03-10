@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(char a)
 {
     if(a>='0'&&a<='9')

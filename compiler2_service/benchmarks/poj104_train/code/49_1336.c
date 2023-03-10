@@ -1,3 +1,5 @@
+#include <header.h>
+
 int panduan(char *c,int l)
 {
 	int f=0,t=0,i;

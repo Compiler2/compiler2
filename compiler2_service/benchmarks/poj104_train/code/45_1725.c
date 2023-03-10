@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sw[101];
 	gets(sw);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int convert(int (*pt)[5],int x,int y)
 {
      int temp,i;

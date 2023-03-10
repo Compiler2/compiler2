@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char letters[100000];
 int check[100000]={0};

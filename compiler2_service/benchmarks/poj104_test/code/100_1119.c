@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int an[26],i=0,j=0,k=0,n;

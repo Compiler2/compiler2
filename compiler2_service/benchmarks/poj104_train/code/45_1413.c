@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char sho[100],lo[100];

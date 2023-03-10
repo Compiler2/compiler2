@@ -1,3 +1,5 @@
+#include <header.h>
+
 int locate(char [],char []);
 int main()
 {
@@ -7,11 +9,11 @@ int main()
     return 0;
 }
 
-int locate(char a[],char b[])//?????????
+int locate(char a[],char b[])
 {
     int i,j=0;
     int len=strlen(a),lene=strlen(b);
-    for(i=0;i<lene;i++)//?????????????????
+    for(i=0;i<lene;i++)
     {
         int k=i;
         while(j<len)

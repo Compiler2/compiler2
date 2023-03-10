@@ -1,5 +1,7 @@
-// for each point x, if x has a higher neighbor, set x = -1
-// set an extra wall to reduce times of comparison
+#include <header.h>
+
+
+
 
 
 int main (void)
@@ -8,7 +10,7 @@ int main (void)
     
     scanf ("%i %i", &m, &n);
     int block[m+2][n+2], mark[m+2][n+2];
-    //initialize the wall
+    
     for (i = 0; i < n + 2; i++) {
         block[0][i] = -1;
         block[m+1][i] = -1;
@@ -17,7 +19,7 @@ int main (void)
         block[i][0] = -1;
         block[i][n+1] = -1;
     }
-    //read blocks
+    
     for (i = 1; i <= m; i++)
         for (j = 1; j <= n; j++) {
             scanf ("%i", &block[i][j]);

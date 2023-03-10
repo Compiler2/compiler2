@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
    int n,i,sz1[100],sz2[100];
    double a,b[100],GPA,sum,su;

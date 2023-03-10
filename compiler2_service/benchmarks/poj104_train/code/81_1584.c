@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f1(int n,int m)
 {
 	if(n>=0 && n<5 && m>=0 && m<5)

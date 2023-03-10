@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int money[10],sum[10];

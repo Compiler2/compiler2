@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fei(int n);
 int main()
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void gui0(char[],int n);
 int main()
 {

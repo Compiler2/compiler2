@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main () {
 long int a,b,c,d,e;
 scanf ("%d%d%d",&a,&b,&c);

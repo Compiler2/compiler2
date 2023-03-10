@@ -1,3 +1,5 @@
+#include <header.h>
+
 void fanxu(char *p,int len);
 int compare(char *p1,char* p2,int length);
 int main()
@@ -22,10 +24,10 @@ int main()
 				store2[k]=store1[k];
 			}
 			fanxu(store1,i);
-			//printf("str1=");
-			//puts(store1);
-			//printf("str2=");
-			///puts(store2);
+			
+			
+			
+			
 			if (compare(store1,store2,i)==1)
 			{
 				puts(store2);

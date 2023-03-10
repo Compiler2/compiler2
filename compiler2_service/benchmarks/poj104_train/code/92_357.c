@@ -1,3 +1,5 @@
+#include <header.h>
+
 int win(int x,int w[],int p[])
  {    
       int i,topw=0,topp=0,downw=x-1,downp=x-1;

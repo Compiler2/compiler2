@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[101],word[101][30];

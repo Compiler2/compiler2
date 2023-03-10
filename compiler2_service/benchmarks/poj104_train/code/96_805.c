@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char ZFC[105];
 	int SZ[105];
@@ -40,6 +42,6 @@ int main(){
 	printf("0\n");
 	printf("%d\n",SZ[0]*10+SZ[1]);	
 	}
-	//scanf("%d",&n);
+	
 	return 0;
 }

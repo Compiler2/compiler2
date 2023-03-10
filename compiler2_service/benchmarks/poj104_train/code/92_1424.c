@@ -1,3 +1,5 @@
+#include <header.h>
+
 int x[3000], y[3000], n, count, ans;
 
 void sort(int *x) {

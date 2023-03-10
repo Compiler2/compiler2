@@ -1,3 +1,5 @@
+#include <header.h>
+
  main()
 {      int m,i,n,p;p=0;
 char a[30]={'a','b','c','d','e','f','g','h','i','j','k','l','m'};

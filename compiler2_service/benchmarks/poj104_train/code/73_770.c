@@ -1,3 +1,5 @@
+#include <header.h>
+
 int rowmax(int a[5])
 {
     int t=a[0];

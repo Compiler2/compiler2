@@ -1,3 +1,5 @@
+#include <header.h>
+
 void judge(char s[],int *n,int *m)
 {
 	char *a,*b,word[40];

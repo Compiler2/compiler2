@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void jisuan(int array[100][100],int x,int y);

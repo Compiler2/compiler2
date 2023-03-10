@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a[50000];
     
 int main()

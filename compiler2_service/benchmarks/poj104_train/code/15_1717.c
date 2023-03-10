@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,s=0,u;
@@ -17,7 +19,7 @@ int main()
 		{
 			if(image[i][j]==0)
 			{
-//				printf("%d %d\n",row2,col2);
+
 				k++;	
 			}
 		}

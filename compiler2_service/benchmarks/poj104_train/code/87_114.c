@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int sz[5],n=43201,i,m=0,sz1[100],a=1;
 	while(a>0){

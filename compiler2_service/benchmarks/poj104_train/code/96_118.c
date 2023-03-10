@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
      char string[101],a[101];

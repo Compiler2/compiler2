@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int n,i,s,m,t,p,a[50000],b[50000];
     double e;

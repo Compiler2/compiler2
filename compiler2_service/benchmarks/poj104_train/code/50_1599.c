@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int day(int month){
 	int t=0,i;

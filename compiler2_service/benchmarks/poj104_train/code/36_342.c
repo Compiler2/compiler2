@@ -1,3 +1,5 @@
+#include <header.h>
+
 int pd(char str[10]);
 int main()
 {

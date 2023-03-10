@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int money[100];
 int main()

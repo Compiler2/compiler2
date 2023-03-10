@@ -1,10 +1,12 @@
+#include <header.h>
+
 int main()
 {
-	int i,k;//???? i???k??
+	int i,k;
 	int x,y;
-	int r=0,c=0;//???? ??????
-	int a[5][5];//??
-	int w=0;//?? 
+	int r=0,c=0;
+	int a[5][5];
+	int w=0;
 	                                     
 	for(r=0;r<5;r++)                          
 	{

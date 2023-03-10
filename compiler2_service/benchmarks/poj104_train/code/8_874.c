@@ -1,3 +1,5 @@
+#include <header.h>
+
 void read(int a[],int m);
 void bubble(int a[],int m);
 void add(int a[],int b[],int c[],int m,int n);

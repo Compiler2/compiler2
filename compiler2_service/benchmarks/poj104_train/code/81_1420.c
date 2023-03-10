@@ -1,3 +1,5 @@
+#include <header.h>
+
 int matrix(int b,int c){
     int l;
     if(c>=0&&c<5&&b>=0&&b<5){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct oldpeople
 {
 	char id[20];

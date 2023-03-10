@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char zfc[256],zc[256],re[256],dc[256][256];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char c1[50]={0},c2[50]={0};

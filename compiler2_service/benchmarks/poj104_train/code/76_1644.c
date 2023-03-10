@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   int n,i,j,e,q=0,kaishi,jieshu;

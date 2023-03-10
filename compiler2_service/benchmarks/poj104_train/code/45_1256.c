@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char *argv[])
 {
   char s1[50],s2[50],*p1,*p2;

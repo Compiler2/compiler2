@@ -1,3 +1,5 @@
+#include <header.h>
+
 int(*p)[5],m,n,i,j,temp,c; 
 int trans()
 {

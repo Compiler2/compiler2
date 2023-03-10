@@ -1,3 +1,5 @@
+#include <header.h>
+
 int is_sushu(int i);
 int main(){
 	int n,s=0;

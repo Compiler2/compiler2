@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[2]={'e','r'},b[2]={'l','y'},c[3]={'i','n','g'};

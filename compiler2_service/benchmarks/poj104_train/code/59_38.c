@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int hang[10000],lie[10000],day,n,m,i,j,k,total=0;

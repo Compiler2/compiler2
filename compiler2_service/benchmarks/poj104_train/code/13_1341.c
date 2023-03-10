@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,u[20000],a[20000],b,c;
 	b=0;

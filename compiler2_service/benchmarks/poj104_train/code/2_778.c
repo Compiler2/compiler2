@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;char name[1000][26];int num[1000];

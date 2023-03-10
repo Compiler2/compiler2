@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fenjie(int a,int b)
 {
 	int i,sign=0,k=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void p(int masu[],int n)
 {
      int i,j,t;

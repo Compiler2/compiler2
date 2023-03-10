@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {   int year,month,day,weekday;
 	int total=0,total1=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int i,j,k,temp=0,n,x[301],y[301];
  float ave=0,max=0;

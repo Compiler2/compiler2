@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {	char c[300][20]={{'\0'}};
 	int i;

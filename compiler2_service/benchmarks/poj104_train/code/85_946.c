@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zxc[30];
 	int n,i,k;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
   char s[1500],*ps,l[1500];

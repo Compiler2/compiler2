@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,a,u[1000000],b,c;
 	b=0;

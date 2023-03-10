@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char an[256],be[256],ce[256];

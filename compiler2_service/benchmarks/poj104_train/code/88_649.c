@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i;
@@ -7,7 +9,7 @@ int main()
     char b[40][40];
 	gets(a);
 	l=strlen(a);
-	*(a+l)='a';  //????????
+	*(a+l)='a';  
 	for(i=0;i<l;i++)
 	{
 		if((*(a+i)>='0')&&(*(a+i)<='9'))

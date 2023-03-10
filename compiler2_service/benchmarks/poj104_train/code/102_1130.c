@@ -1,3 +1,5 @@
+#include <header.h>
+
 int  main(){
 	int n,i,max,j,k,a,b;
 	char sex[6];

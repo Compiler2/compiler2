@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 char str[500];
 int i,j,longest=0,shortest=20,lenth,k=-1,a,b,c,d;

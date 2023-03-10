@@ -1,7 +1,9 @@
+#include <header.h>
+
 
 char s[1000];
 int main(){
-	//freopen("i.txt","r",stdin);
+	
 	int T,i;
 	scanf("%d",&T);
 	while (T--){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -9,11 +11,11 @@ int main()
 		printf("Sat.\n");
 	}
 	else{
-//	for(i=1;i<year;i++)
-//	{
-//		if (i%4==0&&i%100!=0||i%400==0)
-//			run++;
-//	}
+
+
+
+
+
     year--;
 	run=(year-year%4)/4-(year-year%100)/100+(year-year%400)/400;
 	year++;

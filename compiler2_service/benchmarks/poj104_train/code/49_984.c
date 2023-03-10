@@ -1,3 +1,5 @@
+#include <header.h>
+
 void strre(char a[])
 {
 	int i,j,k;

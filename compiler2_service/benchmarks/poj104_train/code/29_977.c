@@ -1,3 +1,5 @@
+#include <header.h>
+
 double fnt(int n);
 int main()
 {

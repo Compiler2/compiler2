@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,j,a[50001],b[50001],count=0,qj[10001];
 	int n,amin,bmax=0;

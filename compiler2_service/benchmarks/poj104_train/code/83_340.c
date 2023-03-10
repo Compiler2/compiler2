@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { float change(int n);
 	int n,i,c1[100],s[100];

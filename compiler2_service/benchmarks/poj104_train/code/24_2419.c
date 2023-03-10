@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     char s[10000];
@@ -12,7 +14,7 @@ int main()
             k=0;
         }
         else k++;
-    //printf("%d %d %d %d\n",max_end,max_len,min_end,min_len);
+    
     for(i=max_end-max_len;i<max_end;i++) printf("%c",s[i]);
     printf("\n");
     for(i=min_end-min_len;i<min_end;i++) printf("%c",s[i]);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	struct stu{
@@ -29,7 +31,7 @@ int main()
 		}
 		if(p==m+2)
 			break;
-	}// max is m[0]
+	}
 	for(p=m;p<m+3;p++)
 	{
 		printf("%d %d\n",(*p).i,(*p).sum);

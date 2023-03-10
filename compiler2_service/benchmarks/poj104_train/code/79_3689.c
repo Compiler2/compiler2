@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main()
 {   int cn(int x,int y);

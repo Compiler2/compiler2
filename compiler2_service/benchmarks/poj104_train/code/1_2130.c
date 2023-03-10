@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	int find(int m,int k);

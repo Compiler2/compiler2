@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int i,j,t,row,col;
@@ -19,7 +21,7 @@ int main(){
 	int rmax=row-1,rmin=0,cmax=col-1,cmin=0;
 
 
-//	printf("%d",t);
+
 
 	for(i=0;i<t;i++){
 		for(j=cmin;j<cmax;j++){

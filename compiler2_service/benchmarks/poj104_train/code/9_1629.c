@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct f{
 char id[10];
 int old;

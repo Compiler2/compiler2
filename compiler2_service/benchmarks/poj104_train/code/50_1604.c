@@ -1,3 +1,5 @@
+#include <header.h>
+
 int num(int a);
 int main()
 {

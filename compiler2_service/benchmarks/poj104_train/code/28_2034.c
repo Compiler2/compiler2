@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int s[500]={0},i,k,x;
     char d[10000];

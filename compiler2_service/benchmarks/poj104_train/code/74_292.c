@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sushu(int i)
 {
 	int k,flag1=0;

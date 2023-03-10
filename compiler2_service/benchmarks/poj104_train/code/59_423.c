@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int k[101][101];
 	char di;

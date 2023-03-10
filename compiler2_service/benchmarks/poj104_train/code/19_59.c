@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -30,13 +32,13 @@ int main()
 	{
 		printf("%c",str[i]);
 	}*/
-	//printf("\n");
+	
 
 	/*for(i=0;str[i]!=0;i++)
 	{
 		printf("%d ",str[i]);
 	}*/
-	//printf("\n");
+	
 
 
 
@@ -52,7 +54,7 @@ int main()
 		lenb++;
 	}
 
-	//printf("%d %d\n", lena,lenb);
+	
 
 
 
@@ -83,7 +85,7 @@ int main()
 				i+=(lena+1);
 		
 			}
-			//printf("%d",k);
+			
 
 			if(k==0)
 			{
@@ -99,7 +101,7 @@ int main()
 			lenv++;
 		}
 	}
-	//printf("\n");
+	
 
 	if(voids[0]==32)
 	{

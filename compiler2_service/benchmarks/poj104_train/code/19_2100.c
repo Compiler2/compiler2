@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char words[110],zfcsz[110][110];

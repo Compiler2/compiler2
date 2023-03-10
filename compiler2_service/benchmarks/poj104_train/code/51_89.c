@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -13,17 +15,17 @@ for(j=0,k=i;j<n;j++,k++)
 s1[i][j]=s[k];
 } 
 }
-// for(i=0;i<len-n+1;i++)
-// {
-// puts(s1[i]); 
-// }
+
+
+
+
 for(i=0;i<len-n;i++)
 {
 for(j=i+1;j<len-n+1;j++)
 {
 if(strcmp(s1[i],s1[j])==0)
 sum[i]++;
-// printf("%d",sum[i]); 
+
 }
 }
 
@@ -36,7 +38,7 @@ max=sum[i];
 
 }
 }
-// printf("%d",max);
+
 if(max!=0)
 {
 printf("%d\n",max+1);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n,a[500]={0},b[500]={0};
 void scanarray()
 {

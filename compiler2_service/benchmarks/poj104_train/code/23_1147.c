@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[100];
@@ -14,7 +16,7 @@ int main()
 	}
 	strl=strlen(a);
 	if(l==0)puts(a);
-	 /* ????????“i==strl”??“l==0” */
+	
 	else
 	{
 	for(m=b[l]+1;m<strl;m++)

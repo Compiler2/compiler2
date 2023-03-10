@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i=0,m,cd,q[100],z[100],b;
 	char dc[100]={'0','0','0'};

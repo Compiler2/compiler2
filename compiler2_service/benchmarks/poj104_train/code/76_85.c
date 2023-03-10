@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
  int a[10001],b[10001],i,j,n,z=0,x,y=0,ma,mb,c;
@@ -16,7 +18,7 @@ int main()
    mb=b[i];
  }
  c=mb-ma;
-// printf("%d\n",c);
+
  
  for(x=ma;x<=mb;x++)
  {
@@ -29,7 +31,7 @@ int main()
   }
   y=y+z;
  }
-// printf("%d\n",y);
+
  
  if(y==c)
   {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int row,col,t;
 int jz[100][100];

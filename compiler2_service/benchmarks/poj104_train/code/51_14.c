@@ -1,3 +1,5 @@
+#include <header.h>
+
 int count(char b[][6],char c[],int d[],int num)
 {
   int k=0;

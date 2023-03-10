@@ -1,3 +1,5 @@
+#include <header.h>
+
 char c[100];
 void putcc(char a[],char b[])
 {

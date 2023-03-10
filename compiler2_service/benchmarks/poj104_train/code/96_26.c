@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i=0,j=0,k=0,temp=0,mod=0,lth=0;
@@ -14,7 +16,7 @@ int main()
 
 
 
-	for (i=0;i<lth-1;i++) // range!!!
+	for (i=0;i<lth-1;i++) 
 	{
 		if(i==0)
 		{

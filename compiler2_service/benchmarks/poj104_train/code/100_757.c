@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zimu[]="abcdefghijklmnopqrstuvwxyz",str[300];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     
     int n,i,j,e,a[50000],b[50000];
@@ -47,6 +49,6 @@ int main(){
     }
     
     if(j==n-1) */printf("%d %d",a[0],tmp);
-    //scanf("%d",&n);
+    
     return 0;
 }

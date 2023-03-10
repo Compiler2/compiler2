@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -21,7 +23,7 @@ int main()
                             a[bb]='\0';
                             }
     if(bb>aa)aa=bb;
-    //printf("%s\n%s\n", a, b);
+    
     for(i=aa-1;i>=0;i--){
                                 if(a[i]+b[i]-96<=9){c[i]=a[i]+b[i]-48;}
                                 if(a[i]+b[i]-96>9&&i!=0){c[i]=a[i]+b[i]-58;b[i-1]+=1;}
@@ -36,5 +38,5 @@ int main()
         if (*cc == 0) --cc;
     }
     printf("%s\n", cc);
-    //while(1);
+    
     }

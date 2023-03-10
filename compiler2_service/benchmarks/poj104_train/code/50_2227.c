@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(int a)
 {
     if(a>7)
@@ -14,7 +16,7 @@ int main()
     int i;
     m[0]=12%7+n;
     m[0]=check(m[0]);
-    //printf("%d",m[0]);
+    
     for(i=1;i<12;i++)
     {
         switch(i)

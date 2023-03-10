@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int i,l,a[26],b[26];
 int main()

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,nanshu=0,nvshu=0,k,zongrenshu;
     double shengao;

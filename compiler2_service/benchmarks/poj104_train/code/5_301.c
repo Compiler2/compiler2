@@ -1,3 +1,5 @@
+#include <header.h>
+
 int h(char s[1000]){
 	int i;
 	for (i=0;i<strlen(s);i++){

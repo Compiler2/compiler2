@@ -1,3 +1,5 @@
+#include <header.h>
+
 int after(int x)
 {
 	int y,sum,z,m;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,j,c;
@@ -22,7 +24,7 @@ int main()
             j=1;
            }
     }
-   // getchar();
-    //getchar();
+   
+    
     return 0;
 }

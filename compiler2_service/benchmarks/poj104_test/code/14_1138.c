@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     long n,i,j,math[100000],chin[100000],total[100000],id[100000];

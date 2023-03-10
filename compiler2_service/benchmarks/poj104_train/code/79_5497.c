@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -5,7 +7,7 @@ int main()
     int row,col,i;
 
 
-    for(row=0; row<100; row++)      //???????
+    for(row=0; row<100; row++)      
     {
         for(col=0; col<2; col++)
         {
@@ -18,14 +20,14 @@ int main()
     }
 
 
-    for(row=0; row<100; row++)                                      //??????
+    for(row=0; row<100; row++)                                      
     {
-        if(sz[row][0]==0)                                                    //??0?????
+        if(sz[row][0]==0)                                                    
         {
             break;
         }
         num[row][0]=1;
-        //?????????
+        
 
         if(sz[row][0]==1)
         {
@@ -35,14 +37,14 @@ int main()
         {
 
             num[row][i]=(num[row][i-1]+sz[row][1])%(i+1);
-            //n????????=??n-1????????+m??n??
+            
 
-            if(num[row][i]==0)                                                    //????=0?????n
+            if(num[row][i]==0)                                                    
             {
                 num[row][i]=i+1;
             }
             result[row]=num[row][i];
-            //?????result???
+            
         }
         printf("%d\n",result[row]);
 

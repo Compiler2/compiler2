@@ -1,3 +1,5 @@
+#include <header.h>
+
 int max(char a,char b[][50],int l);
 int main()
 {int l,i;

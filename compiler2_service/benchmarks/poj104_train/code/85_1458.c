@@ -1,6 +1,8 @@
-//?? C ???
+#include <header.h>
 
-//??????
+
+
+
 int isKeyWord(char* str)
 {
 	int i;
@@ -22,7 +24,7 @@ int isKeyWord(char* str)
 	return 0;	
 }
 
-//??????C?????
+
 int islegalIdentifier(char* str)
 {
 	char* p = str;

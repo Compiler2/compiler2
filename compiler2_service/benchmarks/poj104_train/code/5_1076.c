@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    char a[2][600];
    double n,m;

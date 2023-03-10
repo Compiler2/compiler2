@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 	char str[1000];
 	scanf("%s",str);
 
-	//?????????
+	
 {
 	int i=0;
 	while (str[i]!='\0')
@@ -15,12 +17,12 @@ int main()
 		i++;
 	}
 }
-	//samechar??????samecount?????
+	
 	char samechar[1000];
 	int samecount[1000]={0};
 	char tmp;
 	tmp=str[0];
-	//jishu?samechar?????
+	
 	int jishu=0;
 	int i1;
 	for(i1=0;str[i1]!='\0';i1++)
@@ -38,7 +40,7 @@ int main()
 			samecount[jishu]++;
 		}
 	}
-	//????
+	
 	int i2;
 	for(i2=0;i2<=jishu;i2++)
 	{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int f(char s[],char c){
 	unsigned int i,count=0;

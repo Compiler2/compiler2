@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 main(){
 	int a[100],b[100];
@@ -27,7 +29,7 @@ main(){
 		if(sum>=13){
 			a[i]=sum%13;
 			b[blength]=(sum-a[i])/13;
-			blength++;//100?&#196;&#199;é&#191;&#246;
+			blength++;
 			if(i==(alength-1-zero)){
 				test=1;
 				break;

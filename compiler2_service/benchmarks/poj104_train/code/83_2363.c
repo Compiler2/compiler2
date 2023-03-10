@@ -1,3 +1,5 @@
+#include <header.h>
+
 int s=0;
 int g[10],p[10],n;
 float grade=0;

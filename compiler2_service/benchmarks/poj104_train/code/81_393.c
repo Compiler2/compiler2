@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int *p,a[5][5],m,n,i,q;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zifu[256],trans[10000][256];

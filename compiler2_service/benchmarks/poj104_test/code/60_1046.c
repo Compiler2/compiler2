@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(int x){
 	int i,z=1;
 	if(x==2)return 1;

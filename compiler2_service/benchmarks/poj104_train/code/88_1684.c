@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { void prt(char a[],int n);
 	int n=0;

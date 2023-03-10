@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double percent;
 	char a[501],b[501];

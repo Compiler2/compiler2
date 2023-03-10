@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char s1[35],s2[35];
 	int n,i,l;

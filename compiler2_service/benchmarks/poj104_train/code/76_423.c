@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
    int n;
@@ -21,15 +23,15 @@ int main()
 			   d=b[i];
 		   }
 	   }
-	   //printf("%d %d\n",c,d);
+	   
 		   for(k=c;k<d;k=k+0.5)
 		   {
-			 //printf("%f:",k);
+			 
 		      for(i=0;i<n;i++)
 			  {
 			   if(a[i]<=k&&k<=b[i])
 			   {
-                  //printf("%d\n",i);                  
+                  
 				  break;
 			   }
 			  }

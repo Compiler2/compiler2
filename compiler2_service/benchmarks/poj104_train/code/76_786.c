@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int t[50001][2];
 int r[10001];

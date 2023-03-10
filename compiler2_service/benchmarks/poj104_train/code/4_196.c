@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int ro,co,sz[100][1000],i,j,m,k,c=0,b=1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -9,7 +11,7 @@ int main()
 	{
      scanf("%s", &str[i]);
 	 len[i]=strlen(str[i]);
-	// printf("%d", len[i]);
+	
       a[i]=len[i];
 	}
     int sum=i;

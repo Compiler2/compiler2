@@ -1,3 +1,5 @@
+#include <header.h>
+
 int su(int k)
 {int i,t;
 t=1;

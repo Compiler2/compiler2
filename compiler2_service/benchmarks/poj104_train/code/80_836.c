@@ -1,5 +1,7 @@
+#include <header.h>
 
-int judge_year(int year)  //?????????
+
+int judge_year(int year)  
 {
 	if(year%400==0)
 		return 1;
@@ -19,13 +21,13 @@ int main()
 	int endYear, endMonth, endDay;
 	scanf("%d %d %d",&startYear,&startMonth,&startDay);
 	scanf("%d %d %d",&endYear,&endMonth,&endDay);
-	if(judge_year(startYear))  //???
+	if(judge_year(startYear))  
 	{
-		monthdays[2]=29;  //????????
+		monthdays[2]=29;  
 	}
-	if(startYear==endYear)  //????
+	if(startYear==endYear)  
 	{
-		if(startMonth==endMonth)   //????
+		if(startMonth==endMonth)   
 		{
 			sumdays=endDay-startDay;
 			printf("%d",sumdays);
@@ -43,20 +45,20 @@ int main()
 			return 0;
 		}
 	}
-	//?????
-	//??????????
+	
+	
 	for(i=startYear+1;i<endYear;i++)
 	{
 		sumdays+=judge_year(i)+365;
 	}
-	//????????
+	
 	for(i=startMonth+1;i<=12;i++)
 	{
 		sumdays+=monthdays[i];
 	}
 	sumdays+=monthdays[startMonth]-startDay;
-	//??????
-	//????????
+	
+	
 	if(judge_year(endYear))
 		monthdays[2]=29;
 	else

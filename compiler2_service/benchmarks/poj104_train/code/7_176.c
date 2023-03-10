@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char a[300],b[100],e[100],c[100]={0},g[100]={0},s[300]={0};

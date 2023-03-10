@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { char zi[50],mu[50];
   int i,j,flag=0,zichang,muchang;

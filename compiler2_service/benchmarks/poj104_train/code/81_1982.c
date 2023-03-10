@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int trans(int a[5][5],int n,int m)
 {int *pi,*pj,i,c;

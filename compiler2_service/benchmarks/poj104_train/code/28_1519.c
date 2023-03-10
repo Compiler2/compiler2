@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char z[20000];
 	int i,j=0,k;

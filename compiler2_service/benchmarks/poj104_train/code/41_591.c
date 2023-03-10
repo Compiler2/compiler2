@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
-	int a,b,c,d,e;  //??
-	int wordsright[6];   //???????????
+	int a,b,c,d,e;  
+	int wordsright[6];   
 	for(a=1;a<6;a++)
 	{
 		for(b=1;b<6;b++)

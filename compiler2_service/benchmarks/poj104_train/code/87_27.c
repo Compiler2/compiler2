@@ -1,3 +1,5 @@
+#include <header.h>
+
 int second(int a, int b, int c, int d, int e, int f)
 {
   int i, sum;

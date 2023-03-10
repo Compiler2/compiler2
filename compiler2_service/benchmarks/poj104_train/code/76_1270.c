@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {int max,min,a[20001]={0},n,x,y,j,i,sum=0;

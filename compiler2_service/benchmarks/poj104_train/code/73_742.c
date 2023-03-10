@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int mx[8],count=0;
@@ -10,14 +12,14 @@ main()
                 scanf("%d",&a[j][i]);
             }
     for(int h=1;h<=5;h++)
-        for(int k=1;k<=5;k++)//heng
+        for(int k=1;k<=5;k++)
         {
             if(a[h][k]>=mx[h])mx[h]=a[h][k];
 
-            //if(a[h][k]>=mx[h])mx[h]=a[h][k];
+            
         }
 
-            //=100000;
+            
            for(int k=1;k<=5;k++)
                 my[k]=1000000;
             for(int k=1;k<=5;k++)

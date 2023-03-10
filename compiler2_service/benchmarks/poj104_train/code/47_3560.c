@@ -1,3 +1,5 @@
+#include <header.h>
+
 void Exchange(int A[],int n);
 
 int main(){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[1000];
 int l=0,x;
 int fff(int k,int w,int t,int x);

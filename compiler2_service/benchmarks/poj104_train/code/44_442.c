@@ -1,3 +1,5 @@
+#include <header.h>
+
 void turn(char *a,int n)
 {
      char *p,*q;

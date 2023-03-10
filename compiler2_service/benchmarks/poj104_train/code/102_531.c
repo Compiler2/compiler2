@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {char s[1000][8];
 double h[1000],zh[1000];

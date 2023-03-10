@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char A[105]={'\0'};

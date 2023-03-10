@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct play
 {
        char sex[10];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 { int m=0,n=0,a[100]={0},i=0;
   int *p;

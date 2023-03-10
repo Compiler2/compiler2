@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char trans(char k)
 {

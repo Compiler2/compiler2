@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int money[6]={100,50,20,10,5,1};
 int n,y;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char word[200],x[200],y[200];

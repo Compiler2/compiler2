@@ -1,3 +1,5 @@
+#include <header.h>
+
 int su(int p)
  {
  int i,j,w;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int max,m=0,a[300],i;

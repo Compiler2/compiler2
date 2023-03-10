@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int l,i,k=0,p[320]={0},q[320]={0};

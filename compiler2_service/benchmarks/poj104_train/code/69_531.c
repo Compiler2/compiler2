@@ -1,5 +1,7 @@
+#include <header.h>
 
-//?????0???
+
+
 void cutzeros(char* a)
 {
 	int i;
@@ -7,21 +9,21 @@ void cutzeros(char* a)
 	int l=strlen(a);
 	for(i=l-1;i>=0;i--)
 	{
-		if(a[i]!='0')    //???????
+		if(a[i]!='0')    
 		{
-		//	printf("%d %d\n",i,a[i]);  //debug
+		
 			a[i+1]='\0';
 			unzero=1;
 			break;
 		}
 	}
-	if(unzero==0)   //??????
+	if(unzero==0)   
 	{
 		a[0]='0';
 		a[1]='\0';
 	}
 }
-//??????
+
 void reorder(char*a)
 {
 	int i;
@@ -34,7 +36,7 @@ void reorder(char*a)
 		a[l-1-i]=c;
 	}
 }
-//????????
+
 char result[300];
 void plus(char*a,char*b)
 {
@@ -61,9 +63,9 @@ void plus(char*a,char*b)
 	{
 		r=(a[i]-'0')+(b[i]-'0')+left;
 		result[i]=r%10+'0';
-		left=r/10;   //??
+		left=r/10;   
 	}
-	result[l+1]='\0';   //????
+	result[l+1]='\0';   
 }
 int main()
 {

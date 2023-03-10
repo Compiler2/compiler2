@@ -1,3 +1,5 @@
+#include <header.h>
+
 int i , j , n , len , sum[ 600 ] , big ;
 char s[600] , ts[7];
 char *p1 , *p2;

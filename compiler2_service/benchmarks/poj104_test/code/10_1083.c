@@ -1,3 +1,5 @@
+#include <header.h>
+
 int D(int*h,int i,int n)
 {
 	int j,z=1,x;

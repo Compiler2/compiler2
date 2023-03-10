@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char zfc[256];
 	char zichuan[256];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main ()
 {
     int a[5][5];
@@ -19,7 +21,7 @@ int main ()
                          c[d]=i;                          
             }
             
-        }//printf ("%d %d\n",j,c[d]);
+        }
         d++;
     } 
         for (i=0;i<5;i++)
@@ -29,7 +31,7 @@ int main ()
              if (a[k][c[i]]<a[i][c[i]])
              {
              temp=1;
-             //printf ("%d %d\n",k,c[i]);
+             
              break;
              }
              }

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void search()
 {
 	char s[100];

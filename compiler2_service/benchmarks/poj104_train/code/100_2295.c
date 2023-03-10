@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int s[55]={0},i,l,t;

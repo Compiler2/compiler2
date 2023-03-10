@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int x[100][100],n,m,i,j;
 	for(i=0;i<5;i++){

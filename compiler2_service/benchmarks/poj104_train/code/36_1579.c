@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bubble_sort(char s[],int l)
 {
     int i,j;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int y(int n,int m){if(n>=0&&n<=4&&m>=0&&m<=4){return 1;}else{return 0;}}
 int main(){
  int a[5][5], i,j,t,m,n;

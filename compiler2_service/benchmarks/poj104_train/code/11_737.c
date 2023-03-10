@@ -1,3 +1,5 @@
+#include <header.h>
+
 int run(int n)
 {
 	if(n%4==0&&n%100!=0)

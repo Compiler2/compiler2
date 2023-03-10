@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    double n;
    char  a[500],b[500];

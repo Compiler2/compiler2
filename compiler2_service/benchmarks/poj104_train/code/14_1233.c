@@ -1,8 +1,10 @@
+#include <header.h>
+
 struct student
 {
 	int num;
-	int score1;//????
-	int score2;//????
+	int score1;
+	int score2;
 	int total;
 };
 struct student stu[100000];

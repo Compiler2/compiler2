@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	char *p,*head,*q;
@@ -5,7 +7,7 @@ void main()
 	p=(char *)malloc(100*sizeof(char));
 	gets(p);
 	n=strlen(p);
-//	printf("%d",n);
+
 	for(i=n-1;i>=0;i--)
 	{
 		if(*(p+i)!=' ') continue;

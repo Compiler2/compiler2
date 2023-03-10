@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int arr[26],i,j,t,n=1,min,num[26];
     char s[10000];
@@ -21,8 +23,8 @@ int main(){
             else
             num[s[j]-97]=0;             
             }
-        //for (j=0;j<25;j++)
-          //  printf("%d\n",num[j]);
+        
+          
         j=0;
         while (num[j]==0)
               j++;

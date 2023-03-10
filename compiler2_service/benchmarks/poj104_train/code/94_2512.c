@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int j,n,e,shuru[501],shuchu[501];

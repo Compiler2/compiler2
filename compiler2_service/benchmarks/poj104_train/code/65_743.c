@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,cai[300][2],i,t,s;
 scanf("%d",&n);

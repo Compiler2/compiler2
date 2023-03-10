@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     
@@ -20,7 +22,7 @@ main()
              {m=a[i]; a[i]=a[i+1]; a[i+1]=m;}    
         }
     }     
-    //for(i=1;i<=n;i++)printf("%d ",a[i]);printf("\n");
+    
     for(h=n-1;h>=1;h--)
     {
         for(i=1;i<=h;i++)
@@ -29,7 +31,7 @@ main()
              {m=b[i]; b[i]=b[i+1]; b[i+1]=m;}    
         }
     }    
-    //for(i=1;i<=n;i++)printf("%d ",b[i]); printf("\n");
+    
     
     m=1;mt=1;
     for(i=n,j=n;j>=m;)
@@ -51,9 +53,9 @@ main()
                 {i--;m++;shu++;continue;}
     }
     
-    //printf("%d\n",yin);
-    //printf("%d\n",shu);
-    //printf("%d\n",pin);
+    
+    
+    
     printf("%d\n",200*(yin-shu));
     }
     }

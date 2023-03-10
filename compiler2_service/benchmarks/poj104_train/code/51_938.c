@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i=0,j=0,k=0,h=0,l=0,m=0,ss=1;
@@ -17,7 +19,7 @@ int main()
 		k++;
 	}
 	xx[j][k]='\0';
-//	j++;
+
 	k=0;
 	for(i=0;x[i+n-1]!='\0';i++)
 	{
@@ -61,7 +63,7 @@ end:		if(s==-1)
 		{
 			max=b[i];
 		}
-//		printf("%s %d\n",xx[i],b[i]);
+
 	}
 	if(max==1)
 	{

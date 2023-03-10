@@ -1,3 +1,5 @@
+#include <header.h>
+
 int P[250]={0};
 void prime(int n)
 {

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void bian(int n);
 int main()
 {int n;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 const int M = 21;
 
 int main(int argc, char* argv[])
@@ -11,7 +13,7 @@ int main(int argc, char* argv[])
 		scanf("%s",&s);
 		for(j = 0;s[j]!='\0';j++)
 		{
-			//48-57 65-90 97-122
+			
 			if(!((s[j]=='_')||(s[j]>='0'&& s[j]<='9' && j>0)||(s[j]>='a'&& s[j]<='z')||(s[j]>='A'&& s[j]<='Z')))
 				break;
 		}

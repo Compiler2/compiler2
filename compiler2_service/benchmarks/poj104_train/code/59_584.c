@@ -1,3 +1,5 @@
+#include <header.h>
+
 char map[105][105];
 int main()
 {
@@ -38,13 +40,13 @@ int main()
     {
         for(int j=0;j<n;j++)
         {
-            //printf("%c",map[i][j]);
+            
             if(map[i][j]=='@' || map[i][j]=='$')
             {
                 ans++;
             }
         }
-       // printf("\n");
+       
     }
     printf("%d\n",ans);
     return 0;

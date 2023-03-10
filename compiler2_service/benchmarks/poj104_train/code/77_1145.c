@@ -1,10 +1,12 @@
+#include <header.h>
+
 int find(char a,int b,int c);
 int main()
 {
 	char d;
 	scanf("%c",&d);
 	find(d,0,1);
-//	return 0;
+
 }
 int find(char a,int b,int c)
 {

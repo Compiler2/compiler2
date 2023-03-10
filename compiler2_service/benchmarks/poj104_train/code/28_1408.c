@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char str[1000];
 	int i,len,k,sz[1000]={0};

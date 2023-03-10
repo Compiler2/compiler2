@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	float sum[10000],K,a[10000],b[10000];

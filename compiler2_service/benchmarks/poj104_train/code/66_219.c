@@ -1,3 +1,5 @@
+#include <header.h>
+
 int runnian(long year)
 {
 	int p=0;

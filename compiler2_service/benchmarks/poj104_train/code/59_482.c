@@ -1,3 +1,5 @@
+#include <header.h>
+
    char sz[102][102][102];
 int main(){
    int n,i,j;

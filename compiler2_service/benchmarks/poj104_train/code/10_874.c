@@ -1,3 +1,5 @@
+#include <header.h>
+
 int a[25]={0},n;
 int main ()
 { int F (int x);

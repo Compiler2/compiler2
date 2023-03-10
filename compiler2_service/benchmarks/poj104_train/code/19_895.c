@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char sz[100],zfc[20][20],a[20],b[20];
 	gets(sz);

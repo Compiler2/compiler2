@@ -1,8 +1,10 @@
+#include <header.h>
+
 char s[1000];
 int dp[1000];
 int main(void)
 {
-	//freopen("in.txt","r",stdin);
+	
 	int i,j,k,n;
 	scanf("%d",&n); 
 	while(scanf("%s",s)==1)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int i,n,shrink,diastole,normal=0,max=0;

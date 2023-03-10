@@ -1,3 +1,5 @@
+#include <header.h>
+
 int read(int a[200],int b[100])
 {int m,n,i;
 scanf("%d %d",&m,&n);

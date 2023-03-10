@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 
 int main(int argc, char* argv[])
@@ -8,9 +10,9 @@ int main(int argc, char* argv[])
     scanf("%d",&n);
     while (i<=n) {
          if (((i%7))&&(!(i%10==7))&&(!(i/10==7))) {
-		//if ((i%7)||(i%10-7)||(i/10-7)) {
+		
                                          s=s+i*i;
-										// printf("%d\n",i);
+										
                                          }
                                          i++;
                                          }

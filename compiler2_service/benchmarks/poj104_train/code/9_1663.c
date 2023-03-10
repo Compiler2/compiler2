@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct bing
 {
 	char id[10];

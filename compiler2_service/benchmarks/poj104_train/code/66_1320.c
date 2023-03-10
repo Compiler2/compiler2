@@ -1,3 +1,5 @@
+#include <header.h>
+
 /* Author: Xiong Shihao (xsh@pku.edu.cn)
  * ID: 1000010177
  * Compiler: gcc

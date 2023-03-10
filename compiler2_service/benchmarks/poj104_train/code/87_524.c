@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int i,a[200][6],total,c=0;

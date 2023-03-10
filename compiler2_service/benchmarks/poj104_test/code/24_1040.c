@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char min[50],max[50],s[1000];

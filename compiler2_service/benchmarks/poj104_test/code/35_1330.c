@@ -1,3 +1,5 @@
+#include <header.h>
+
 int row, col;
 int array[8][8];
 int ctr1,ctr2,ctr3,ctr4;

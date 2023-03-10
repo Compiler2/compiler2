@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,i;
 char a[30],max[30],min[30];

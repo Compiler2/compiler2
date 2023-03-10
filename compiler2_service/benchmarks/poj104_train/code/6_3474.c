@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,hang,lie,h,*p,i,j,a[10000],place;

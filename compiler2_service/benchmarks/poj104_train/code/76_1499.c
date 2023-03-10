@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n;
 	int x[10000],y[10000];

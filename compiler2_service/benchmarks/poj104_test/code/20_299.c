@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void output(int len, char inp[1000])
 {

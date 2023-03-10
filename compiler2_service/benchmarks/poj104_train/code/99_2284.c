@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,a=0,n,sz[101],b=0,c=0,d=0,zong=0;
     double aa,bb,cc,dd;

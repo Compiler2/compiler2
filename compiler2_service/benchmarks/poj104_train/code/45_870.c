@@ -1,7 +1,9 @@
+#include <header.h>
+
 int main()
 {
   char str[101];
-//strcpy(str,"avx hexavxavxyeh");
+
   int i,j,t,p=1;
  gets(str); 
   for(i=0;i<=50;i++)

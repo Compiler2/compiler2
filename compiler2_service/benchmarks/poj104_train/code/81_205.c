@@ -1,3 +1,5 @@
+#include <header.h>
+
  int hh(int a, int b )
 {    
        if(a<5&&b<5)

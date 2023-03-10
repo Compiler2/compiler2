@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main()
 {
@@ -17,7 +19,7 @@ int main()
             for (k=0; k<j; k++)
                 s[i+k] = '@';
             i += j-1;
-            break; // ??????????????????????
+            break; 
         }
     }
 

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char name[100][20],g[2]={'Y','N'},x[2]={'Y','N'},gg,xx;

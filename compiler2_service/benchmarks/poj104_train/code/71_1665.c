@@ -1,7 +1,9 @@
+#include <header.h>
+
 int fuck(int m,int n)
 {
     int s=0;
-    //printf("%d %d\n",m,n);
+    
     switch(n)
     {
              case 12 : s+=2;

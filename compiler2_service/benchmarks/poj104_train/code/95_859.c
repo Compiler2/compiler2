@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[2][80];
@@ -10,7 +12,7 @@ int main()
 		{
 			str[0][i]=str[0][i]-32;
 		}
-		if(str[0][i]=='\0')//????????????????????
+		if(str[0][i]=='\0')
 			break;
 	}
 	for(i=0;i<80;i++)
@@ -19,7 +21,7 @@ int main()
 		{
 			str[1][i]=str[1][i]-32;
 		}
-		if(str[1][i]=='\0')//????????????????????
+		if(str[1][i]=='\0')
 			break; 
 	}
 	if(strcmp(str[0],str[1])>0)

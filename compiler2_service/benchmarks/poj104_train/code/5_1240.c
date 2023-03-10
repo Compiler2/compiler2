@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	double e;
 	char zf[2][501],count=0,c,w=0;

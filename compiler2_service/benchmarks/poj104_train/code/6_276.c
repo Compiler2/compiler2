@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bianyuan(int n,int m){
 	int juzhen[100][100];
 	int i,j,result;

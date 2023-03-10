@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void germ(int a[9][9],int b[9][9],int n)
 {

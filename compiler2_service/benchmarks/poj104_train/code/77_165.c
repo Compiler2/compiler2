@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sum(int line2[],int a,int b)
 {
 	int i,c=0;

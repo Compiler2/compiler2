@@ -1,3 +1,5 @@
+#include <header.h>
+
 int con13(int x,int y)
 {
 	int n=(10*x+y)/13;

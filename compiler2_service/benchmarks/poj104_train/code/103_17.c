@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int i,l,d[1000],k=0;

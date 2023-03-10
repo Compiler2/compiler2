@@ -1,29 +1,31 @@
+#include <header.h>
+
 
 main()
 {
     int n,i,j;
     scanf("%d",&n);
     float girl[40]={0},boy[40]={0};
-    int g=0,b=0;//??????
-    char tender[8];//??
+    int g=0,b=0;
+    char tender[8];
     for(i=0;i<n;i++)
     {
 
         scanf("%s",tender);
 
-        if(tender[0]=='m')//???????????????
+        if(tender[0]=='m')
         {
             scanf("%f",&boy[b]);
             b++;
         }
 
-        else//??????????
+        else
         {
             scanf("%f",&girl[g]);
             g++;
         }
     }
-    for(i=g-1;i>0;i--)//??????????????
+    for(i=g-1;i>0;i--)
     {
         for(j=0;j<i;j++){
 
@@ -37,7 +39,7 @@ main()
             }
         }
     }
-    for(i=b-1;i>0;i--)//??????????????
+    for(i=b-1;i>0;i--)
     {
         for(j=0;j<i;j++){
 
@@ -53,12 +55,12 @@ main()
     }
 
 
-    for(i=0;i<b;i++)//?????????
+    for(i=0;i<b;i++)
     {
         printf("%.2f ",boy[i]);
     }
 
-    for(i=0;i<g;i++)//?????????
+    for(i=0;i<g;i++)
     {
         printf("%.2f",girl[i]);
         if(i<g-1) printf(" ");

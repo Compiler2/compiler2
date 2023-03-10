@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char name;
 int num,k=0,t=0;

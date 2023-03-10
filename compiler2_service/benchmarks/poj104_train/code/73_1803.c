@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int hang[6][6],lie[6][6],a[6][6];

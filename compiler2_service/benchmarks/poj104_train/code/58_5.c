@@ -1,9 +1,11 @@
+#include <header.h>
+
 int main()
 {
 int i,j,n,len,flag=0;
 char a[50000][82];
 char str[100];
-//scanf("%d",&n);
+
 gets(str);
 n=atoi(str);
 for(i=0;i<n;i++)

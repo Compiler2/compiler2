@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct f
 {
 	char *id;
@@ -17,7 +19,7 @@ int main()
 	scanf("%d",&n);
 	struct f *p2,*p3;
 	struct in *p1;
-	struct in*cr(int x);//?????????????????????
+	struct in*cr(int x);
 	p1=cr(n);
 	p3=p1->young;
 	p2=p1->old;
@@ -43,7 +45,7 @@ struct in*cr(int x)
 	p3=(struct in *)malloc(sizeof (struct in));
 	head1=(struct f*)malloc(sizeof (struct f));
 	head2=(struct f*)malloc(sizeof (struct f));
-	p3->old=head1;//??????????????
+	p3->old=head1;
 	p3->young=head2;
 	struct f*p4,*p5,*p6,*p7;
 	p4=head1;
@@ -53,7 +55,7 @@ struct in*cr(int x)
 	{
 		p=(struct f*)malloc(sizeof (struct f));
 		scanf("%s %d",p->id_,&p->age);
-		if(p->age>=60)//????????????
+		if(p->age>=60)
 		{
 			p4->age=p->age;
 			p4->id=p->id_;
@@ -62,7 +64,7 @@ struct in*cr(int x)
 			p5->next=p4;
 			k++;
 		}
-		else//??????????????
+		else
 		{
 			p6->age=p->age;
 			p6->id=p->id_;
@@ -74,14 +76,14 @@ struct in*cr(int x)
 	p5->next=0;
 	p7->next=0;
 	p3->num=k;
-	return p3;//?????
+	return p3;
 }
 void sort (struct f*p,int x)
 {
 	int i,j,k1;
 	char *k2;
 	struct f*p1,*p2;
-	for(i=0;i<x-1;i++)//???????????
+	for(i=0;i<x-1;i++)
 		for(p1=p,j=0;i+j<x-1;j++,p1=p1->next)
 		{
 			p2=p1->next;

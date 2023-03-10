@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huiwen(int x)
 {
 	int i,j,a[6],k=0;

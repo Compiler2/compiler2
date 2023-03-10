@@ -1,3 +1,5 @@
+#include <header.h>
+
 char a;
 char b;
 char s[10000];

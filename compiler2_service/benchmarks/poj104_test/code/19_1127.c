@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char n[5000];char m[100][20];

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[150],b[150];
@@ -27,7 +29,7 @@ int main()
 			}
 			else 
 			{
-				//c[j-1]=c[j-1]-1;
+				
 				
 				result[j]=c[j]+10-d[j]-carry;
 				carry = 1;

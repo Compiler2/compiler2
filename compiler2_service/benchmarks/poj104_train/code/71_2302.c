@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int year,a,b,n=0,i,num1=0,j,m,num2=0;

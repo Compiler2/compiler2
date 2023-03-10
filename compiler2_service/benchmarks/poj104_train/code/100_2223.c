@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 int len,i;
@@ -12,11 +14,11 @@ for (i=0;i<=strlen(s);i++)
    }
 len=0;
 for (i=0;i<=60;i++) { len+=a[i];
-//printf("%d\n",a[i]);
+
 }
-//printf("%d",len);
+
 for (i=0;i<=25;i++) if (a[i]>0) printf("%c=%d\n",i+'A',a[i]);
 for (i=0;i<=25;i++) if (a[i+30]>0) printf("%c=%d\n",i+'a',a[i+30]);
 if (len==0) printf("No"); 
-//scanf("%d",&i);
+
 }

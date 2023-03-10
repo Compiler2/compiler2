@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	void xiangguan(int y,int m1,int m2);

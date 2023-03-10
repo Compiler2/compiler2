@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int m,i,j,lim[200],fm[200],fz[200];
 	double res;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f(int n1,int n2)
 {
 	int a[100],b[100],i,j,k,l,m,n,p,q,term=0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int a[10][10],i,j,m,n,x[10],c[10],d[10];
 
@@ -11,10 +13,10 @@ for(i=0;i<5;i++){
 }
 for(i=0;i<5;i++){
 	for(j=0;j<5;j++){
-		if(a[i][j]==x[i]){//c[i]=i;
+		if(a[i][j]==x[i]){
 		d[i]=j;
-		//printf("%d\n",a[i][j]);
-		//printf("%d",d[i]);
+		
+		
 		}
 	}
 }

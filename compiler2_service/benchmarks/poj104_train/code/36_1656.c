@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char ch1[205],ch2[205],ch[205];

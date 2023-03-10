@@ -1,3 +1,5 @@
+#include <header.h>
+
 int re(int n){
 	int result=0;
 	if(n>0){

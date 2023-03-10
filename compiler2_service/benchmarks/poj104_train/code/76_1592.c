@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int n,szz[11111],szy[11111];
 

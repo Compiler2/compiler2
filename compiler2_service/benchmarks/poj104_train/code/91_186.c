@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main() 
 {
@@ -7,14 +9,14 @@ int main()
 	gets(p);
 	n=strlen(p);
 
-	for(i=0;i<n;i++)				//??
+	for(i=0;i<n;i++)				
 	{
 		if(i==n-1)
 			*(ch+i)=*(p+i)+*(p);
 		else
 			*(ch+i)=*(p+i)+*(p+i+1);	
 	}
-	*(ch+n)='\0';			//????,,????,,?????,????
+	*(ch+n)='\0';			
 	puts(ch);
 	return 0;
 }

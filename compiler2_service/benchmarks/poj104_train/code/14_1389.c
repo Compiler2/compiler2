@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int num[3],sum[3];

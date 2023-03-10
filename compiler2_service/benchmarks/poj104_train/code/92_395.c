@@ -1,3 +1,5 @@
+#include <header.h>
+
 long a[1000],b[1000];
 int cmp(const void *a,const void *b )
 {
@@ -32,7 +34,7 @@ main()
       }
       else 
       {
-         if(a[end1]>b[end2])//a??????b????
+         if(a[end1]>b[end2])
          {
          sum++;end1++;end2++; j++;
          }

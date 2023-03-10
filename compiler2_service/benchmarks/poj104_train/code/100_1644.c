@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char ci[300],*ps;
     scanf("%s",ci);

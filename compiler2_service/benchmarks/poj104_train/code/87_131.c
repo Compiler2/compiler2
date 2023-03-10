@@ -1,3 +1,5 @@
+#include <header.h>
+
 int miao(int x,int y,int z);
 int main(){
 	int a,b,c,d,e,f,s;

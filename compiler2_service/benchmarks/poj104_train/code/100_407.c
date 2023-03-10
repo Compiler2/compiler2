@@ -1,3 +1,5 @@
+#include <header.h>
+
 int b[26]={0};
 main()
 {

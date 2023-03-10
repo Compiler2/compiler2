@@ -1,3 +1,5 @@
+#include <header.h>
+
 swap(char *p,int n)
 {
 	char *q,*a;

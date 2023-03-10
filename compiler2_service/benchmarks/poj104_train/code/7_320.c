@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char str[500],sub[500],rep[500];
@@ -18,11 +20,11 @@ int main()
 		if(j==len2)
 		{
 			shou=i;
-			mo=i+j;//printf("%d %d",shou,mo);
+			mo=i+j;
 			break;
 		}
-		//else
-		//{printf("%s",str);break;}
+		
+		
 	}
 	if(j!=len2)
 	{printf("%s",str);}

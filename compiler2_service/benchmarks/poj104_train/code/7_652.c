@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {  int same,i,j,k;
     char str[256],sub[256],repl[256];

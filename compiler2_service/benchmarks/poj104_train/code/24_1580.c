@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char dc[4000];
 	int i, j, k=1, len, zms[201], max=0, min=0, maxnum, minnum;

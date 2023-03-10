@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int s[10][10];
 int tag[10][10];

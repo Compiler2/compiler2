@@ -1,8 +1,10 @@
+#include <header.h>
+
 int main(){
 char a[11],b[101],z[11],s[16][11];
 gets(b);
 gets(a);
-gets(z);										//??
+gets(z);										
 int i,j,m,n,l,q[22];
 for(i=0,m=0,n=0;b[i]!='\0';i++){    
 	if(b[i]!=' '){
@@ -17,7 +19,7 @@ for(i=0,m=0,n=0;b[i]!='\0';i++){
 	m++;
 			}
 		}
-q[m]=n;										//????????????
+q[m]=n;										
 	for(i=0,j=0;i<=m;i++){
 		if(a[0]==s[i][0]){
 			l=1;
@@ -36,7 +38,7 @@ q[m]=n;										//????????????
 		q[i]=j;
 		}
 		}
-	}												//??
+	}												
 
 	for(i=0;i<m;i++){
 		for(j=0;j<q[i];j++){
@@ -47,5 +49,5 @@ q[m]=n;										//????????????
 	
 		for(j=0;j<q[m];j++){
 		printf("%c\0",s[i][j]);
-		}											//??
+		}											
 	return 0;}

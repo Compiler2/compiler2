@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {int n,sum[100000],a,b,c;
  struct xues{int a,b,c;} s[100000];

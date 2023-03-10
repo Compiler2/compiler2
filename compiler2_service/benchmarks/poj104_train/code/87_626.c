@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main (){
 	int m[100],f[100],s[100],m1[100],f1[100],s1[100],i,j,k;
 	for(i=0;i<100;i++){

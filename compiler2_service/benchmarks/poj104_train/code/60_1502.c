@@ -1,3 +1,5 @@
+#include <header.h>
+
 int prime(int n);
 int main(){
 	int a,b,i,n,num,mid,mid0,line1[1000],line2[1000];

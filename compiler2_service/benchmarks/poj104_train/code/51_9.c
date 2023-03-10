@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[501]={'\0'},t[500][5]={'\0'},r[5]={'\0'};	

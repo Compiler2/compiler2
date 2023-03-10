@@ -1,3 +1,5 @@
+#include <header.h>
+
 float yzs(int n)
 {
 	int i;

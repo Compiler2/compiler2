@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main(){
 	int n,gao[100],di[100],xiaoshi=0,max=0,i;

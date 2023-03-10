@@ -1,3 +1,5 @@
+#include <header.h>
+
 int checkNum(char c)
 {
 	if(c>=48 && c<=57)

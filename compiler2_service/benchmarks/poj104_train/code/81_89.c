@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hanshu(int m,int n){
 	if(m>=0&&m<5&&n>=0&&n<5){
 		return 1;

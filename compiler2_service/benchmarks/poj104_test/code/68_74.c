@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int ss(unsigned long int n){
 	unsigned long int i , s = 0 ;

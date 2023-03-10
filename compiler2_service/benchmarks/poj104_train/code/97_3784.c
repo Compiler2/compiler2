@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int SUM,a,i,j=0;
     int ht[100000];

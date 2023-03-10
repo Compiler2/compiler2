@@ -1,3 +1,5 @@
+#include <header.h>
+
 char* f(char *s,char *t)
 {
 	int i,j=1;

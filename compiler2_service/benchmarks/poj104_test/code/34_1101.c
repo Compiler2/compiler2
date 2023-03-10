@@ -1,3 +1,5 @@
+#include <header.h>
+
 int EVEN(int a);
 int ODD(int b);
 int main()

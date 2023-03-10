@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void work(int m);
 int main(){
@@ -10,7 +12,7 @@ void work(int m){
     int a[m],b[m];
     int i,j,k,man,hear,l;
     l=0;
-    for(i=0;i<=m-1;i++){//chushihua
+    for(i=0;i<=m-1;i++){
         a[i]=1;
         b[i]=0;
     }

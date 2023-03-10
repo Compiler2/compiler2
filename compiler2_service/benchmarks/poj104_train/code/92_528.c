@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,temp,r=0,thead,ttail,khead,ktail;

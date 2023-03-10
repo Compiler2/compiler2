@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
    int i,j,m,n,count=0;
    int sz[22][22];

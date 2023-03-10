@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 int main( int argc, char* argv[] ){
   int n;
@@ -16,7 +18,7 @@ int main( int argc, char* argv[] ){
         scanf( "%d", &misspointer );
         if ( (second < 60)&&(misspointer < 60) ){
           second = misspointer + time * 3;
-		 // printf("%d\n", second);
+		 
           if ( (second + 2) < 60 ){
             time ++;
           }
@@ -32,7 +34,7 @@ int main( int argc, char* argv[] ){
       printf( "%d\n", second );
 	  second = 0;
 	  time = 0;
-	//  printf("************************\n");
+	
   }
   return 0;
 }

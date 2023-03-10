@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(int a[],int n)
 {
 	int i,j,temp;
@@ -21,8 +23,8 @@ int main ()
 	{
 		i++;
 		scanf("%d%c",&a[i],&b);
-	}//?????i????????a[1]????
-	paixu(a+1,i);//????
+	}
+	paixu(a+1,i);
 
 		max=a[1];
 		for (j=1;j<=i;j++)

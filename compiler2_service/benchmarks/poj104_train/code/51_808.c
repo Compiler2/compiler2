@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,j,k,a[500]={0},b[500]={0},n,l,max;
     char s[500]={'\0'};

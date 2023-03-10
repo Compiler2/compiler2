@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct student
 {
         int num;
@@ -12,8 +14,8 @@ int main()
    int tempMax;
    int rank[3]={0};
    scanf("%d",&n);
-   //struct student * stu;
-   //stu = (struct student *)malloc(sizeof(struct student) * n);
+   
+   
    for(i=0;i<n;i++)
    {
         tempSum = 0;

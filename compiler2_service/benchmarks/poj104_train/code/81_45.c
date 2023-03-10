@@ -1,3 +1,5 @@
+#include <header.h>
+
 int p[5][5];
 int n,m;
 int main()

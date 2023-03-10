@@ -1,3 +1,5 @@
+#include <header.h>
+
 void main()
 {
 	int i,k=-1;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 void factor(int x,int limit);
 int result;
 int main()
@@ -8,8 +10,8 @@ int main()
 	for(int i=0;i<=n-1;i++)
 	{
 		scanf("%d",&input);
-		result=1;//limit?2?????result=1;
-		factor(input,2);//limit?2?????result=1;
+		result=1;
+		factor(input,2);
 		printf("%d\n",result);
 	}
 	return 0;

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int jz[5][5],n,m,i,j,x[5];

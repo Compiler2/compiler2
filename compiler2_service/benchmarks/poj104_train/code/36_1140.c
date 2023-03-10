@@ -1,3 +1,5 @@
+#include <header.h>
+
 void paixu(char*x){
 	int i,k;
 	char temp;

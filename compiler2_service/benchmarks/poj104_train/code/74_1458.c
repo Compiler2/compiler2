@@ -1,3 +1,5 @@
+#include <header.h>
+
 int huiwen(int a)
 {
 	int i,j=0,flag=1,b[10];
@@ -5,7 +7,7 @@ int huiwen(int a)
 	{
 		b[j]=a%10;
 		a=a/10;
-		j++;//??
+		j++;
 	}
 	for(i=0;i<j-i;i++)
 	{

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {   int date,day,i,j;
 	int a[11][11]={0},t[11][11];

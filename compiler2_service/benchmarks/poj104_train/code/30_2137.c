@@ -1,3 +1,5 @@
+#include <header.h>
+
 int yu7WuGuan(int number){
 		if(number%7 == 0){
 			return 0;

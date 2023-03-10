@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char zfc1[257]={0},zfc2[257]={0},zfc3[257]={0},zichuan[257]={0};

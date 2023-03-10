@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sc(char a[]);
 int main(){
 char a[32];

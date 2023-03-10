@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int shuzu[100][100];
 	int i,j,k,n,row,col,shuru;

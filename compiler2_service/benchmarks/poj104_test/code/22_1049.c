@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int k=0,i,j,q=0,m=1,l=0,n,a[300],b[300];
@@ -21,8 +23,8 @@ int main()
             m=m++;
 		}
 	}
-	//for (i=0;i<m;i++)
-//	printf("%d %d\n",b[i],m);
+	
+
     for(i=0;i<m;i++)
 	{
 		n=0;
@@ -31,7 +33,7 @@ int main()
 			if (b[j]>b[i])
 				n=n++;
 		}
-	//	printf("%d\n",n);
+	
 		if (n==1)
 		{
 			q=i;

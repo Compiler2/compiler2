@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 void sum(int n) {
 	int front=1;

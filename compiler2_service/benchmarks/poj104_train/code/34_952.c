@@ -1,3 +1,5 @@
+#include <header.h>
+
 int hanshu(int number)
 { 
 	int m;

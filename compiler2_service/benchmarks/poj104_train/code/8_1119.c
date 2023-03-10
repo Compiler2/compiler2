@@ -1,3 +1,5 @@
+#include <header.h>
+
 int m,n;
 int a[100],b[100];
 
@@ -47,7 +49,7 @@ void order(int N, int p[100])
 
 void combine(int N,int p[100],int M,int q[100])
 {
-	order(N,p);						//?????p??p[100]
+	order(N,p);						
 	printf(" ");
 	order(M,q);
 	printf("\n");

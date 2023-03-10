@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,c[510],max=0;

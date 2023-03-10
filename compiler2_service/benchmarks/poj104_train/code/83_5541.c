@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 int p,q,i,j,k,n,a[100],b[100];
 double c[100],GPA,m,r;

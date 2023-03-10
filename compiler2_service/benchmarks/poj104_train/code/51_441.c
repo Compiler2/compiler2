@@ -1,3 +1,5 @@
+#include <header.h>
+
 void col(char a[],char b[][5],int m,int n)
 {
 	int i,j;

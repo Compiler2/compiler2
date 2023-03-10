@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
 	char x[500],b,g;

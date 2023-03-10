@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char a[300]={'\0'},c[53]={"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};

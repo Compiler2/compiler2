@@ -1,3 +1,5 @@
+#include <header.h>
+
 int bj(const void * x, const void * y)
 {
     if(*(int *)x>*(int *)y) return 1;

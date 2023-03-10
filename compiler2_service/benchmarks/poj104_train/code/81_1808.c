@@ -1,3 +1,5 @@
+#include <header.h>
+
 int juzhen(int hang)
 {
     if (hang<5&&hang>=0)

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int sushu(int x)
 {
 	int k=2,j=1,i;

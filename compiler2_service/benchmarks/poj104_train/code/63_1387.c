@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
     int z1[101][101];

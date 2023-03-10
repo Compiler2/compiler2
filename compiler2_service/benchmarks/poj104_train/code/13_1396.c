@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int a[20000],i,n,j,flag;

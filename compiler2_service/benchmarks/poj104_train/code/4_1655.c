@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ROW,COL;
 int row=-1,col=1;
 int array[100][100];

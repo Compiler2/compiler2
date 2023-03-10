@@ -1,3 +1,5 @@
+#include <header.h>
+
 float m[50];
 float f[50];
 int main()

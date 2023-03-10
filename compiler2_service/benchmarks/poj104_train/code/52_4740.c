@@ -1,3 +1,5 @@
+#include <header.h>
+
 int move(int *p,int x)
 {
     int i;

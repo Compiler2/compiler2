@@ -1,6 +1,8 @@
+#include <header.h>
+
 int main(int argc, char* argv[])
 {
-	int n,year[200],m1[200],m2[200],i,j;//c????
+	int n,year[200],m1[200],m2[200],i,j;
 	
 	
 	scanf("%d",&n);

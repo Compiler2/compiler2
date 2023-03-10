@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int ai[100];
 	int i,j,n;

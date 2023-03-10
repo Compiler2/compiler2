@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int i,k,n,t,p;
 	float jdh=0;

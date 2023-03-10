@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
     int n,m,i,j,k;
@@ -40,6 +42,6 @@ main()
     for(i=1;i<m;i++) printf(" %.2lf",a[i]);
     for(j=0;j<k;j++) printf(" %.2lf",c[j]);
     printf("\n");
-    //getchar();
-    //getchar();
+    
+    
     }                                                                                  

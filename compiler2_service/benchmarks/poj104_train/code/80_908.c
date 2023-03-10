@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ir(int n);
 int djt(int y,int m,int d);
 int ir(int n){

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int ss(int x)
 {   int i;
     for(i=2;i<=x;i++)

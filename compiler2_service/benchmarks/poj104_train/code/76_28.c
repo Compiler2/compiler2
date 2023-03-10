@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int left[100],right[100],n,i,j,t,k,l,r[100];

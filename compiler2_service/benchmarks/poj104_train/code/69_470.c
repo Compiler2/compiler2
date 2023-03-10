@@ -1,3 +1,5 @@
+#include <header.h>
+
 int f(char x)
 {
     int xx=x-'0';

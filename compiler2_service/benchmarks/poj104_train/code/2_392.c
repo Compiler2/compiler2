@@ -1,3 +1,5 @@
+#include <header.h>
+
 struct jisuan{
          int num;
 	char name[26];

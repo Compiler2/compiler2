@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,l,shou[100],shu[100],total[100]={0},k=0;

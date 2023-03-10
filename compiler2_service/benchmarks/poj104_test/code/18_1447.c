@@ -1,3 +1,5 @@
+#include <header.h>
+
 void f1(int *p,int n,int k)
 {
 	int i,m=*p;

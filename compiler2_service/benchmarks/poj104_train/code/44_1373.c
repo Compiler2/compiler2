@@ -1,3 +1,5 @@
+#include <header.h>
+
 int fan(int x)
 {
     int a=0,b,i;

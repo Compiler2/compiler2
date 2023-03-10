@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	char max[50],min[50],a[50];
 	int n,i;

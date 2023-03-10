@@ -1,3 +1,5 @@
+#include <header.h>
+
 int check(char a)
 {   if(a-'a'>=0&&a-'z'<=0)
     return 1;

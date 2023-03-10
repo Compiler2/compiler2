@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n;
@@ -5,9 +7,9 @@ int main()
 	char str[500];
 	char gram[500][5]={'\0'};
 	scanf("%s",str);
-	//?????gram
+	
 	int i1;
-	//?????\0???????????
+	
 	for(i1=0;str[i1+n-1]!='\0';i1++)
 	{
 		int i2;
@@ -17,7 +19,7 @@ int main()
 		}
 	}
 	int gram_len=i1;
-	//???gram?????????
+	
 	int gram_count[500]={0};
 	int i2;
 	for(i2=0;i2<=gram_len-1;i2++)
@@ -31,7 +33,7 @@ int main()
 			}
 		}
 	}
-	//???gram_count???????
+	
 	int max=gram_count[0];
 	int i3;
 	for(i3=0;gram_count[i3]!=0;i3++)
@@ -41,7 +43,7 @@ int main()
 			max=gram_count[i3];
 		}
 	}
-	//??????max????printf
+	
 	if(max==1)
 	{
 		printf("NO");

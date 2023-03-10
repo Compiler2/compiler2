@@ -1,3 +1,5 @@
+#include <header.h>
+
 int strcmp(char *s,char *t){
  char *s1,*t1;
  s1=s;

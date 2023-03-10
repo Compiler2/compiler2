@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     int i,m;                 
     char zfc[1000],jg[1000];

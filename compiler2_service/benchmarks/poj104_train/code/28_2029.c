@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
     char sen[300*20];
     int i,k=0,wordlen=0,a[300];

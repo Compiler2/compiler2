@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,a[1000000][2],i=0,j,p,renshi,sum=0;

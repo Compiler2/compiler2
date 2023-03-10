@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,sz[50000][5],i,j,min,max,s,S;
 	double q;

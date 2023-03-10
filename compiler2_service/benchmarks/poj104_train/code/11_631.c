@@ -1,4 +1,6 @@
-//#include <math.h>
+#include <header.h>
+
+
 int main(int argc, char* argv[])
 {			
     int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31,30,31};

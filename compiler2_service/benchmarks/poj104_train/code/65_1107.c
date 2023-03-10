@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main(){
 	int n,i,k=0,l=0;
 	int a[200],b[200];

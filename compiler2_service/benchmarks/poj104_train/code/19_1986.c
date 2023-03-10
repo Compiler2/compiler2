@@ -1,3 +1,5 @@
+#include <header.h>
+
 void huan(int start,char W[100],char B[100],int Len1,int Len2,int Len3,int t)
 {
 	int i,k;

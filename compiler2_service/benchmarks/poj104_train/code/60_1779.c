@@ -1,3 +1,5 @@
+#include <header.h>
+
 
 char pure(int n,int a[],int topnum,int topcheck);
 

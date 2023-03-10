@@ -1,3 +1,5 @@
+#include <header.h>
+
 char b[500][5]={' '};
 int n;
 int is(int i, int j);

@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int searchjoint(int x,int y);

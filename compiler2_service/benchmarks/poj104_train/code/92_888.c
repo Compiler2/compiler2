@@ -1,9 +1,11 @@
+#include <header.h>
+
 int *arrange(int a[],int n);
 int main()
 {
-	//money??
+	
 	int money;
-	//num ???
+	
 	int num;
 	for(;;)
 	{
@@ -15,8 +17,8 @@ int main()
 		}
 		else
 		{
-			//??????
-			//king?tianji????????????
+			
+			
 			int king[1000];
 			int tianji[1000];
 			int i1;
@@ -42,14 +44,14 @@ int main()
 					scanf(" %d",&king[i1]);
 				}
 			}
-			//??????
+			
 			arrange(tianji,num);
 			arrange(king,num);
-			//??????
-			//head,tail????????????????
+			
+			
 			int tianhead=0,kinghead=0;
 			int tiantail=num-1,kingtail=num-1;
-			//flag??????
+			
 			int flag=1;
 			for(;flag;)
 			{
@@ -88,7 +90,7 @@ int main()
 }
 int *arrange(int a[],int n)
 {
-	//????n-1?
+	
 	int i1;
 	int position=n-1;
 	for(i1=0;i1<=n-1;i1++,position--)

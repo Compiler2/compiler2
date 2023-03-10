@@ -1,3 +1,5 @@
+#include <header.h>
+
 main()
 {
       int a[5][5];
@@ -15,7 +17,7 @@ main()
                            max=a[j][i+1];
                            lie=i+1;
       } 
-//printf("%d\n",max);
+
       max2=a[0][lie];
       hang=0;
       for(k=0;k<4;k++)
@@ -24,7 +26,7 @@ main()
                                max2=a[k+1][lie];
                                hang=k+1;
       }
-//printf("%d\n",max2);
+
       if(max==max2)
       {
       printf("%d %d %d\n",hang+1,lie+1,max);

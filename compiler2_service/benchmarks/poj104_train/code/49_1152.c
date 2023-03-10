@@ -1,3 +1,5 @@
+#include <header.h>
+
 void print(int n1,int n2);
 char s[500],z[500][250];
 int main()

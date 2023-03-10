@@ -1,3 +1,5 @@
+#include <header.h>
+
 void sca(int n,int l);
 int main()
 {

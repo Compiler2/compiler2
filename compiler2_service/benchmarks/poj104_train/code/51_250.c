@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	int n,i,j,len,m,count,c[300]={0},max;
@@ -8,7 +10,7 @@ int main()
 	scanf("%d\n",&n);
 	gets(s);
 	strcpy(temp,s);
-	//puts(temp);
+	
 	len=strlen(s);
 	for(i=0;i<=len-n;i++)
 	{
@@ -33,6 +35,6 @@ int main()
 	printf("%d\n",max+1);
 	for(i=0;i<=len-n;i++)
 		if(c[i]==max) printf("%s\n",t[i]);
-	//printf("%s\n",t[2]);
+	
 	return 0;
 	}

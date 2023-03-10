@@ -1,3 +1,5 @@
+#include <header.h>
+
 int main()
 {
 	char s[5000],*p=s;
