@@ -2,8 +2,6 @@ import ray
 import os
 
 def get_config(profiler, sweep=False):
-    hiddens_layers = [10, 15]
-    hiddens_width = [500, 1000]
     num_workers = 2#int(ray.cluster_resources()['CPU']  - 10) // 2
     rollout_fragment_length = 1
     return {

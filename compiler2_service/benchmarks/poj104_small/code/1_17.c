@@ -7,7 +7,8 @@ int fun(int x,int y)
 		if(y%i==0) {sum++;sum+=fun(i,y/i);}
     return sum;
 }
-int main()
+
+int main_bench()
 {
 	int n,i,sum;
 	scanf("%d",&n);

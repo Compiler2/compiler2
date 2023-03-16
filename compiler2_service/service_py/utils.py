@@ -17,7 +17,7 @@ from compiler_gym.service.proto import (
     Int64Tensor
 )
 
-MAX_PICKLE64_SIZE = int(5e3)
+MAX_PICKLE64_SIZE = int(20e3)
 MAX_PICKLE8_SIZE = MAX_PICKLE64_SIZE * 8
 
 
@@ -68,7 +68,7 @@ def run_command(cmd: List[str], timeout: int, stdout=subprocess.PIPE, stderr=sub
                 pass
         
         stdout, stderr = process.communicate(timeout=timeout)
-        print("ERRORCODE:", process.returncode, "cmd:", cmd)
+        # print("ERRORCODE:", process.returncode, "cmd:", cmd)
 
         if process.returncode:
             returncode = process.returncode

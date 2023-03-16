@@ -20,6 +20,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
     def __init__(self, obs_space, action_space, num_outputs, model_config, name):
 
+        # breakpoint()
         TorchModelV2.__init__(
             self, obs_space, action_space, num_outputs, model_config, name
         )
@@ -32,7 +33,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
         # self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.torch_sub_model = GraphormerTransformer(                    
             num_nodes=800,
-            num_classes=action_space.n, # we are adding 'start' action
+            num_classes=num_outputs, #action_space.n, # we are adding 'start' action
             dim_model=64,
             num_heads=8,
             num_encoder_layers=1,
@@ -125,7 +126,7 @@ class TorchCustomModel(TorchModelV2, nn.Module):
 
         fc_out = fc_out[0, :, :] # take just first token
         fc_out = fc_out.expand(batch_size, -1)
-        
+        # breakpoint()
         return fc_out, []
 
     def value_function(self):

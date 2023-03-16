@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int m,i,j,k,q=0,t=0,u,max;
   int b[26]={0};
@@ -34,4 +34,3 @@ int main()
   }
   return 0;
 }
-       

@@ -32,7 +32,7 @@ class Dataset(Dataset):
                         # $IN is replaced with benchmark path
                         # Following are linking flags (only one in this case).
                         argument=["$CC", "$IN", "-lm"],
-                        timeout_seconds=60,
+                        timeout_seconds=10,
                         outfile=["a.out"],
                     ),
                     run_cmd=Command(

@@ -70,35 +70,45 @@ def main():
 
     observation_spaces = 'hpctoolkit' # 'hpctoolkit_pickle'
 
+    bad_banchmarks_file = open('bad_banch.txt', 'w')
+
     # Create the environment using the regular gym.make(...) interface.
-    with compiler2_service.make_env("compiler2-v0", datasets=['poj104_test']) as env:
+    with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
 
         print("Make hpctoolkit")
-        for bench in env.datasets.benchmarks():
+        for bench in sorted(env.datasets.benchmarks()):
+            bench = 'benchmark://poj104_small-v0/1_79'
             print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", bench)
+
             # if not str(bench).endswith('2_5'): continue
             try:                
-                env.reset(benchmark=bench)                
-            except ServiceError:
+                env.reset(benchmark=bench, timeout=15)                
+            except:# ServiceError:
                 print("AGENT: Timeout Error Reset")
+                bad_banchmarks_file.write(f'{bench}\n')
                 continue
                 
             actions = [0]
-            for i in range(2):
+            for i in range(5):
                 print("Main: step = ", i)
                 try:
-                    action = env.action_space.sample() 
+                    action = 1 #env.action_space.sample() 
                     print(f'{action}-----------------------------------------------------')
 
                     observation, reward, done, info = env.step(
                         action=action,
                         observation_spaces=[observation_spaces],
+                        timeout=1500,
                         # reward_spaces=["perf_reward"],
                     )
-                except ServiceError:
-                    print("AGENT: Timeout Error Step")
+                except:# ServiceError:
+                    pass
+
+                if 'error_type' in info:
+                    print(f"AGENT: Error Step {info['error_details']}")
+                    bad_banchmarks_file.write(f'{bench}\n')
                     continue
-                actions.append(action + 2) # + 2 for start/end token
+                actions.append(action)
 
                 print(reward)
                 print(info)
@@ -120,9 +130,11 @@ def main():
                 dataset["labels"].append(actions)
                 # breakpoint()
 
-            actions.append(1)
+            
 
+    bad_banchmarks_file.close()
     breakpoint()
+
     dgl_dataset = GraphormerDGLDataset(graphs=dataset["graphs"], labels=dataset["labels"], device=device)
     # with open('dgl.pkl', 'rb') as handle: dgl_dataset = pickle.load(handle)    
     

@@ -1,0 +1,17 @@
+#include <header.h>
+
+
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	double sum=1;
+	for(int i=1;i<=n;i++)
+	{
+	sum=sum*2;
+	}
+
+	printf("%.lf",sum);
+
+	return 0;
+}

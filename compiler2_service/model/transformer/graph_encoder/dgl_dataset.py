@@ -227,7 +227,7 @@ class GraphormerDGLDataset(Dataset):
             size = len(dataset)
 
         # breakpoint()
-        xy = self.remove_large_graphs(dataset, max_node=1024)[:size]
+        xy = self.remove_large_graphs(dataset, max_node=1024000)[:size]
         try:
             x, y = zip(*xy)
         except:

@@ -14,7 +14,7 @@ from . import benchmark_from_file_contents
 from compiler_gym.service.proto import BenchmarkDynamicConfig, Command
 
 
-BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_test/code"
+BENCHMARKS_PATH = compiler2_service.paths.BENCHMARKS_PATH/"poj104_test"
 
 class Dataset(Dataset):
     def __init__(self, *args, **kwargs):

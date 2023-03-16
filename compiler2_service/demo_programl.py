@@ -33,28 +33,33 @@ from compiler2_service.service_py.utils import from_int64_tensor
 
 def main():
     # Use debug verbosity to print out extra logging information.
-    init_logging(level=logging.DEBUG)
+    init_logging(level=logging.CRITICAL)
     # register_env()
 
     # Create the environment using the regular gym.make(...) interface.
     with compiler2_service.make("compiler2-v0", datasets=['poj104_small']) as env:
-        for benchmark in env.datasets.benchmarks():
+        benchmarks = env.datasets.benchmarks()
+        # benchmarks = ['benchmark://poj104_small-v0/92_1018']
+
+        for benchmark in benchmarks:
             try:
-                breakpoint()
-                env.reset(benchmark=benchmark)
+                print(benchmark)
+                env.reset(benchmark=benchmark, timeout=10000)
                 # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/offsets1")
                 # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/conv2d")
                 # env.reset(benchmark="benchmark://hpctoolkit-cpu-v0/nanosleep")
-            except ServiceError:
+            except :
+                breakpoint()
                 print("AGENT: Timeout Error Reset")
 
-            for i in range(2):
+            for i in range(1):
                 print("Main: step = ", i)
                 try:
                     observation, reward, done, info = env.step(
                         action=env.action_space.sample(),
                         observation_spaces=["programl"],
                         reward_spaces=["perf_cycles"],
+                        timeout=10000,
                     )
                     
                 except ServiceError:
@@ -63,14 +68,14 @@ def main():
                     
                 print(reward)
                 print(info)
-                breakpoint()
                 g = from_int64_tensor(observation[0])
                 print(g.nodes())
-                
+                breakpoint()
 
-                pdb.set_trace()
                 if done:
                     env.reset()
+
+        print('Return from demo_programl.py')
 
 
 if __name__ == "__main__":

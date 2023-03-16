@@ -76,11 +76,13 @@ class Profiler:
                     timeout=self.timeout_sec,
                 )
             except:
+                breakpoint()
                 run_command( # BUG: sometimes hpcrun fails for the first time, but terminates well when repeated 
                     cmd,
                     timeout=self.timeout_sec,
                 )
         print('2++++++++++')          
+        breakpoint()
         try:  
             g_hatchet = ht.GraphFrame.from_hpctoolkit("db")
         except:
@@ -122,7 +124,7 @@ class Profiler:
 
     def hatchet_to_dgl(self, gf):
         if gf == None:
-            return dgl.graph(([1], [1]))
+            return dgl.graph(([0], [0]))
 
         edges = []
         features = {}

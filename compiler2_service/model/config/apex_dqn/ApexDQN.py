@@ -2,9 +2,7 @@ import ray
 import os
 
 def get_config(profiler, sweep=False):
-    hiddens_layers = [10, 15]
-    hiddens_width = [500, 1000]
-    num_workers = int(ray.cluster_resources()['CPU']  - 10)
+    num_workers = 1 #int(ray.cluster_resources()['CPU']  - 20)
     rollout_fragment_length = 5
     return {
         "log_level": "CRITICAL",
@@ -32,7 +30,9 @@ def get_config(profiler, sweep=False):
         "num_gpus": 1, #torch.cuda.device_count(),
         'num_workers': num_workers,
         "rollout_fragment_length": rollout_fragment_length, 
-        "train_batch_size": 1, #num_workers/num_workers * rollout_fragment_length, # train_batch_size == num_workers * rollout_fragment_length
+        "train_batch_size": num_workers * rollout_fragment_length, # train_batch_size == num_workers * rollout_fragment_length
+        "sgd_minibatch_size": 2,#num_workers * rollout_fragment_length,
+        "num_sgd_iter":2,
         "explore": True,
         "gamma": ray.tune.uniform(0.9, 0.99) if sweep else 0.95,
         "lr": ray.tune.uniform(1e-6, 1e-8) if sweep else 1e-6,        

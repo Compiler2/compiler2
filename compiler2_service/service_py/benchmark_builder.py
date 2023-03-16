@@ -255,11 +255,14 @@ class BenchmarkBuilder:
         return action_had_effect
 
     def check_if_terminate(self):
-        run_command(
-            self.run_cmd,
-            timeout=self.timeout_sec,
-        )
-
+        try:
+            run_command(
+                self.run_cmd,
+                timeout=self.timeout_sec,
+            )
+        except:
+            breakpoint()
+            pass
     # Prepare build, pre_run and run commands
     def prepare_build_cmd(self, build_cmd):
         """

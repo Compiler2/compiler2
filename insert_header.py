@@ -22,7 +22,7 @@ if __name__ == '__main__':
             print(file_path)
 
             try:
-                file_content = open(file_path).read()
+                file_content = open(file_path, encoding='utf-8').read()
                 if not file_content.startswith(str(args.line)):
                     open(file_path, "w").write(str(args.line) + "\n\n" + file_content)
             except:
