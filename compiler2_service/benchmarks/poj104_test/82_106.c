@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int shu[100],shou[100],t[100]={0};
 	int i,n,j,k,e;

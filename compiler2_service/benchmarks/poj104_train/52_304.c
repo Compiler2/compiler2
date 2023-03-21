@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[100];
-int main ( )
+int main_bench()
 {
 	void f(int *p,int n,int m);
 	int *p,n,m;

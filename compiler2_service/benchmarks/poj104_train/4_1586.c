@@ -6,7 +6,7 @@ void f(int *p1,int *p2,int m,int n)
     while((p2-p1+1)%n&&(p2-p1+1)<=m*n);
 }
 
-int main(int argc, char *argv[])
+int main_bench()
 {
     int r,l,i,j,*q;
     scanf("%d%d",&r,&l);

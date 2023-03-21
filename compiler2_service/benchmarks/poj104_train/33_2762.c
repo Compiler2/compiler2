@@ -13,7 +13,7 @@ char fy(char x)
      }
      return z;
    }
-int main(int argc, char *argv[])
+int main_bench()
 {
   char c;
   char a[255]={'\0'};

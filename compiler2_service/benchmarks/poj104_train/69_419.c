@@ -28,7 +28,7 @@ void biprt(int * sum, int sumlen)
 		sumlen--;
 	}
 }
-int main ()
+int main_bench()
 {
 	char a[300], b[300];
 	int ar[300]={0}, br[300]={0}, sum[300];

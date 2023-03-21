@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,line,l1,l2,i,j,b;
 	char s1[40],s2[40];

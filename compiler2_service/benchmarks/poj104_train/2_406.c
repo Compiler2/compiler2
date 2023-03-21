@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int b[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
  int m,i,j,k,num[10000],max=0,t=0;

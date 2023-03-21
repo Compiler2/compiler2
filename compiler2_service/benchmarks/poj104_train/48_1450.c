@@ -2,7 +2,7 @@
 
    
  
-int  main()
+int  main_bench_bench()
 {
    int a[11][11]={0};
    int b[11][11]={0};

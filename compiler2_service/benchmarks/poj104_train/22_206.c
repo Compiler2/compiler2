@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int a[300],total=1,i,max1,max2,judge;
 	scanf("%d",&a[1]);

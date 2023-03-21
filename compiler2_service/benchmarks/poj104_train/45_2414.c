@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char child[50],mother[50];
 	scanf("%s",child);

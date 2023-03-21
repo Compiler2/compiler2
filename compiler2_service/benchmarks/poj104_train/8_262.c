@@ -46,7 +46,7 @@ void print()
 	printf("\n");
 }
 
-void main()
+int main_bench()
 {
 	read();
 	sort();

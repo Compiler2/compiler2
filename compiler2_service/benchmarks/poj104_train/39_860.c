@@ -10,7 +10,7 @@ struct stu
 	int essay;
 	int total;
 };
-int main()
+int main_bench()
 {
 	int yuanshi(struct stu s);
 	int wusi(struct stu s);

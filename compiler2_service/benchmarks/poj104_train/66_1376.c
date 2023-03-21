@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int year,mon,day,i,x=0,y=0,z=0,sum;
 	scanf("%d%d%d",&year,&mon,&day);
 	x=(year-1)+(year-1)/4-(year-1)/100+(year-1)/400;

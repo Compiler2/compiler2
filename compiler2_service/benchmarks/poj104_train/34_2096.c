@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   int ji(int x);
     int ou(int y);
 	int n;

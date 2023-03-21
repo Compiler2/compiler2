@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,m,n;
 	char str[100],string[100]={""};

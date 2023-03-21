@@ -2,7 +2,7 @@
 
 char c[500];
 int f(int e0,int s0);
-int main(){
+int main_bench(){
 	int i,j,k,e,s;
 
 	scanf("%s",c); 

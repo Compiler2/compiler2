@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	char str[1000],*p,*p1,*p2,*p3;
 	int len,max=0,min=100;

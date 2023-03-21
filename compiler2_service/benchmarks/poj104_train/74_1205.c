@@ -22,7 +22,7 @@ int g(int n)
     m=1;
     return m;
 }
-main()
+main_bench_bench()
 {
       int a,b,i,count=0;
       scanf("%d %d",&a,&b);

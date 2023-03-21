@@ -3,7 +3,7 @@
 
 int Day(int m);
 	
-int main()
+int main_bench()
 {
 	int w;
 	scanf("%d", &w);

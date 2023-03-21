@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int change(int *p,int n,int m);
 	int a[5][5],i,j,(*p)[5],*k;int m,n;

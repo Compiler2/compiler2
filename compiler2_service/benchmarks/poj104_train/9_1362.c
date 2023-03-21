@@ -12,7 +12,7 @@ void swap(struct patient *a,struct patient *b)
 	*a = *b;
 	*b = tmp;
 }
-int main()
+int main_bench()
 {
 	int n,i,j=0,k=0,l;
 	scanf("%d",&n);

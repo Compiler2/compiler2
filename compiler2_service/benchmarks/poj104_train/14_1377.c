@@ -9,7 +9,7 @@ struct Student
 	int c;
 };
 
-int main()
+int main_bench()
 {
 	int n, i;
 	int x, y, z;

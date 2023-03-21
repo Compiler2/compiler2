@@ -16,7 +16,7 @@ return 1;
 else 
 return 0;
 }
-int main()
+int main_bench()
 {
   int i,j,value[5][5];
 int n,m;

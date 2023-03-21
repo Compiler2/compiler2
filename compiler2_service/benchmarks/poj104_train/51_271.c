@@ -5,7 +5,7 @@ struct
 	char str[10];
 	int count;
 }ngram[500];
-void main()
+int main_bench()
 {
 	int n,m,len,i,j;
 	scanf("%d",&n);

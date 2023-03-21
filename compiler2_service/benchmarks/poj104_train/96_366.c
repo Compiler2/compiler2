@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
     char beichushu[101],shang[100];
     const int chushu=13;

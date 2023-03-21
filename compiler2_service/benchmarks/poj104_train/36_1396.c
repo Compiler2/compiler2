@@ -4,7 +4,7 @@ int compare(const void* a,const void* b)
 {
 	return*(char*)b-*(char*)a;
 }
-void main()
+int main_bench()
 {
 	int i;
 	char a[100],b[100];

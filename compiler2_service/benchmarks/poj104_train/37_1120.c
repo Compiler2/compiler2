@@ -1,7 +1,7 @@
 #include <header.h>
 
 void sword(void);
-int main(void)
+int main_bench()
 {
     int love;
     scanf("%d\n",&love);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 void peidui(char str[],int len);
-int main()
+int main_bench()
 {
 	int n,i;
 	char s[1000],s1[5];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,flag,bigflag=0;
 	long int len,i,j;

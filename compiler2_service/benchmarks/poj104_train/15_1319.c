@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,sum=0,len=0,final;
 	unsigned short a[500][500];

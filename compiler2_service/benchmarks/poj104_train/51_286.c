@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[500],sub[500][5],subt[5];
 	int a[500]={1,0};

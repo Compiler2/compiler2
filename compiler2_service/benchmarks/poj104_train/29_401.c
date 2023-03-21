@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,num[100],k,zi[100],mu[100];
 	zi[0]=2;

@@ -4,7 +4,7 @@
 const int M = 100 + 10;
 const int N = 100 + 10;
 int mat[M][N];
-int main(void) {
+int main_bench() {
 	int cases, i, j, ans, m, n;
 	scanf("%d", &cases);
 	while (cases--) {

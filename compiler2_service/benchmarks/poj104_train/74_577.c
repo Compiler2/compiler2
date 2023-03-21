@@ -2,7 +2,7 @@
 
 int hui(int n);
 int sushu(int n);
-int main()
+int main_bench()
 {
     int m,n,i;
     int first=1,flag=1;

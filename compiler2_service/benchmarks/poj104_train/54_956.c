@@ -5,7 +5,7 @@ int getup(int now,int n,int k){
    return now*n+k;
 }
 
-int main(){
+int main_bench(){
 int monkey=1,n,k,now=1,total,start;
 scanf("%d%d",&n,&k);
 total=k;

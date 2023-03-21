@@ -2,7 +2,7 @@
 
 void fanxu(char *p,int len);
 int compare(char *p1,char* p2,int length);
-int main()
+int main_bench()
 {
 	char char_array[500],store1[500],store2[500],*p;
 	gets(char_array);

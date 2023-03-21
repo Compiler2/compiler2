@@ -30,7 +30,7 @@ int averse(int x)
 	return 1;
 }
 
-void main()
+int main_bench()
 {
 	int x,m,n,enter=1,mark=0;
 	scanf ("%d %d",&m,&n);

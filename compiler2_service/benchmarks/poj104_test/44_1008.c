@@ -12,7 +12,7 @@ int f(int x)
     y=v/10;
     return(y);
 }
-int main()
+int main_bench()
 {
     int f(int x);
     int i;

@@ -6,7 +6,7 @@ int chi;
 int math;
 int total;
 };
-int main()
+int main_bench()
 {
 struct Student stu[100000];
 struct Student temp;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	int map[6][6];
 	int i,j,k;
 	int g = 0;

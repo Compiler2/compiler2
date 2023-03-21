@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int k,i,j,l=0,excit=0;
  scanf("%d",&k);
  int num[k],shulie[k];

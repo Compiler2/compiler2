@@ -15,7 +15,7 @@ int lgm( int num )
    lgm( num*3+1 );
    }
 }
-int main()
+int main_bench()
 {
     int n;
     scanf("%d",&n );

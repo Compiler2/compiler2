@@ -17,7 +17,7 @@ void jud(char a[],char b[])
 	if(m==0) printf("YES");
 	else printf("NO");
 }
-int main()
+int main_bench()
 {
 	char a[30],b[30];
 	scanf("%s%s",a,b);

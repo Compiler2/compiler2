@@ -3,7 +3,7 @@
 
 char pure(int n,int a[],int topnum,int topcheck);
 
-main ()
+main_bench()
 {
      int n,i,j;
      scanf("%d",&n);

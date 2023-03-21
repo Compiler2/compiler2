@@ -8,7 +8,7 @@ struct senex
 } sen[100],t;
 int n;
 
-int main()
+int main_bench()
 {
     int i,j,k,l;
     scanf("%d\n",&n);

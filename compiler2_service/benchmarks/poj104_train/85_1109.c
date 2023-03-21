@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,m,j,add=0;
 	char sz[21];

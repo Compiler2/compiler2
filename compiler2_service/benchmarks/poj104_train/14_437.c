@@ -8,7 +8,7 @@
     }temp,stu[100050];
   
     
-    int main()
+    int main_bench()
     {
     	int n,i,j,k;
     	scanf("%d",&n);

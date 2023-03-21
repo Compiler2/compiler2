@@ -6,7 +6,7 @@ struct qujian
 	int b;
 }qj[50000];
 
-int main()
+int main_bench()
 {
 	int n,i,j,temp,left,right,k;
 	scanf("%d",&n);

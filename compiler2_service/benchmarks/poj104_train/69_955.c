@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	char a[300]={'\0'},b[300]={'\0'},*p;
 	int i,bb[300]={0},aa[300]={0},len,lena,lenb,start;

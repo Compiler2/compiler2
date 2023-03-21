@@ -4,7 +4,7 @@ struct area{
 	int start;
 	int end;
 };
-void main(){
+int main_bench(){
 	struct area area[50002],temp;
 	int n,i,j,s,e,flag=0;
 	scanf("%d",&n);

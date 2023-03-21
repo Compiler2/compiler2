@@ -7,7 +7,7 @@ struct children
 };
 char boy,girl;
 
-void main()
+int main_bench()
 {
 	void func(struct children chd[],int n);
 	int scan(struct children *p,char string[100]);

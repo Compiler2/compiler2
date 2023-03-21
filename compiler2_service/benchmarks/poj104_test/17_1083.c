@@ -32,7 +32,7 @@ void f(char s[])
 		if(s[i]!=' '&&s[i]!='?')
 			s[i]='$';
 }
-int  main()
+int  main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

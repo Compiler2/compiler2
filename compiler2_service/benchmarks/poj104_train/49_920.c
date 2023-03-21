@@ -9,7 +9,7 @@ void srev(char str[500], int len)
 	for (i=0; i<len; i++)
 		*(str+i)=*(rev+i);
 }
-int main ()
+int main_bench()
 {
 	char s[500], str[500], rev[500];
 	gets(s);

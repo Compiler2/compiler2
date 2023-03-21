@@ -10,7 +10,7 @@ int reverse(int num)
     } 
     return retval; 
 } 
-int main()
+int main_bench()
 {
      int i,a[6],b[6];
      for(i=0;i<6;i++)

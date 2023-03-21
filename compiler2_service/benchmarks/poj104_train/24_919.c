@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,j=0,k=0,n=0,m=0,max,min,a[100]={0};
 	char str[1000]={0},*p,s[100][100]={0},(*ip)[100];

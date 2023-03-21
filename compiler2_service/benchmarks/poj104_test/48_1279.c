@@ -1,7 +1,7 @@
 #include <header.h>
 
 int p[9][9],q[9][9];
-int main()
+int main_bench()
 {void xijun();
     int m,n;
     int i,j,k;

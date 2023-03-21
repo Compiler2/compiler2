@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int prime[10010]={0};
 	int m;

@@ -5,7 +5,7 @@ struct book
 	int mark;
 	char name[26];
 };
-int main()
+int main_bench()
 {
     int m,h,i,j,k,max,length;
 	int t[26];

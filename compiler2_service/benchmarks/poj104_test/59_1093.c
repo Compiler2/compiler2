@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,m,i,j,k,cnt=0;
 	int room[100][100];

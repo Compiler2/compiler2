@@ -8,7 +8,7 @@ int isLegal(char *str)
         if (!isalpha(*str) && !isdigit(*str) && *str != '_') return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
     char str[100];
     int n;

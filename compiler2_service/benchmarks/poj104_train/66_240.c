@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int year,day,sum=0,month,n=0,i,j,date;
 	int m[12];

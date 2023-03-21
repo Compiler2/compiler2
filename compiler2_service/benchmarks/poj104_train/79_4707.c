@@ -7,7 +7,7 @@ int f(int m,int n){
     k=((m%i)+k)%i;
     return k;
 }
-int main(){
+int main_bench(){
     int m,n;
     m=1;
     n=1;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int ls,lo,lr,i,j,k,flag;
 	char str[257],org[257],rep[257];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,a,b,c=0,i,k=0;
 	scanf("%d",&n);
 	int*za=(int*)malloc(sizeof(int)*n);

@@ -11,7 +11,7 @@ int f(int x)
   else m=1;
   return m;
 }
-main()
+main_bench_bench()
 {
  int n,i,j,l;
  char a[80],b[5];

@@ -12,7 +12,7 @@ void paixu(int num[],int n)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int t=0,a,num[310]={0};
 	char c;

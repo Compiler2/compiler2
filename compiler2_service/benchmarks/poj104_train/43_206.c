@@ -9,7 +9,7 @@ return 0;
 return 1;
 }
 
-int main(void)
+int main_bench()
 {
 int m;
 int i;

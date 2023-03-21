@@ -5,7 +5,7 @@ int identf(char *str);
 int isKey(char *str);
 int x_strcmp(char *si, char *di);
 
-int main()
+int main_bench()
 {
  char buffer[256];
  int n,i;

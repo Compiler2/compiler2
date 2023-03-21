@@ -17,7 +17,7 @@ void paixu(char s[])
 		}
 	}
 }
-main()
+main_bench_bench()
 {
 	char a[100],b[100];
 	int i,j,la,lb,k;

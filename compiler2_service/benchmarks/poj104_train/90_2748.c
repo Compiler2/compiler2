@@ -18,7 +18,7 @@ int solve(int panzi,int pingguo )
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int t,M,N;
 	scanf("%d",&t);

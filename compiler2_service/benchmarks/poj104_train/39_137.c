@@ -10,7 +10,7 @@ struct stu
 	int lunwenshu;
     int	jiangxuejin;
 }stum[101];
-void main()
+int main_bench()
 {
 	char s[2]={"Y"};
 	int n,i,j,jiangjinzongshu;

@@ -69,7 +69,7 @@ int work(int k)
     return 0;
 }
 
-int main()
+int main_bench()
 {
     int ans[6];
     int i;

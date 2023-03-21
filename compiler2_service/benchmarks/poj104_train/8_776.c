@@ -38,7 +38,7 @@ void puttogether(int n,int*a,int m,int*b)
 		printf(" %d",a[i]);
 	}
 }
-int main()
+int main_bench()
 {
 	int a[500],b[500];
 	int m,n;

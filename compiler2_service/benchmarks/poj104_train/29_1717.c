@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int m,a[100],i,j;
   float nume[100],deno[100];

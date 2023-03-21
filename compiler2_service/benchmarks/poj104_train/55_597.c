@@ -1,7 +1,7 @@
 #include <header.h>
 
 char str[50],ans[50];
-int main()
+int main_bench()
 {
 	int i,j,k,l,length,num,x;
 	long m,n,ten=0,ten2=0;

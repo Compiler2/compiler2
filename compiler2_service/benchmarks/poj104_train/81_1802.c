@@ -15,7 +15,7 @@ int change(int a[5][5],int n, int m)
 		return 1;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j,m,n,a[5][5]={0},y;
 	for(i=0;i<5;i++)

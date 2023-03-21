@@ -8,7 +8,7 @@ int much(int M,int N)
 	else x=much(M,N-1)+much(M-N,N);
 	return x;
 }
-void main()
+int main_bench()
 {
 	int n,M,N,i,a,b;
 	scanf("%d",&n);

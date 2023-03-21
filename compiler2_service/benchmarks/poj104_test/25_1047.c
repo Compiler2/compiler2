@@ -30,7 +30,7 @@ void print(int a[])
      printf("%d",a[i]);
 }
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int n,i,j;
   scanf("%d",&n);

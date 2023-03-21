@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int money;scanf("%d", &money);
 	int m1=0, m2=0, m3=0, m4=0, m5=0, m6=0;

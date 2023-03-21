@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int l,a,b,s,i;
    double n,x;
    char zfca[501];

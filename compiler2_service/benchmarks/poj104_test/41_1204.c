@@ -253,7 +253,7 @@ void five(char x)
 		five(x+1);
 	}
 }
-int main()
+int main_bench()
 {
 	void one(char x);
 	void two(char x);

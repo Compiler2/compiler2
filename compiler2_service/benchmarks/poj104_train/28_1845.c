@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int j,i;
 	char sen[300][30];

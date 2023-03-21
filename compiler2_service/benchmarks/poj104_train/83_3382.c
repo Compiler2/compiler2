@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,n,sumxf=0;
 	int xf[10],df[10];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int row,col,i,j,d=1,count=0,f[110][110],vis[110][110];
 	memset(vis,0,sizeof(vis));
 	scanf("%d%d",&row,&col);

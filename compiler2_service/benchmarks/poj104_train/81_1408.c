@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int exchange(int row[5][5],int n,int m);
 	int jz[5][5];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int s(int x);
-int main()
+int main_bench()
 {int i;
 	int n;
 	scanf("%d",&n);if(n<5){printf("empty");return 0;}

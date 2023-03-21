@@ -17,7 +17,7 @@ int bijiao(int p,char *a,int n,char *b)
 		return 1;
 	}
 }
-int main()
+int main_bench()
 {
 	char str[1000];
 	char a[100];

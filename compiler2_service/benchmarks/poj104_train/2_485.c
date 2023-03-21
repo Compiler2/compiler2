@@ -5,7 +5,7 @@ struct cs
 	int b;
 	char a[26];
 };
-int main()
+int main_bench()
 {
 	int m,i,j,k,max=0;
 	int c[200][1000],count[200]={0};

@@ -37,7 +37,7 @@ int lwr(char *a)
 	return 0;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char str1[82],str2[82],chu;
 	int a;

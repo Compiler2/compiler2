@@ -10,7 +10,7 @@ struct stu
   int artical;
  long money;
 }student[120];
-int main()
+int main_bench()
 {
     int n,i,k;
     int m1,m2,a;

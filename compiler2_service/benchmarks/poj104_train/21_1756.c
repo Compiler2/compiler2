@@ -1,7 +1,7 @@
 #include <header.h>
 
 float average(int x[],int);
-void main()
+int main_bench()
 {
 	int num[300],output[2];
 	float	juli[300];

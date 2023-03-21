@@ -3,7 +3,7 @@
 
 int su(int x);
 
-int main(){
+int main_bench(){
 	int m,n,i;
 	scanf("%d",&m);
 	for(i=3;i<=m/2;i++)

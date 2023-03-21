@@ -35,7 +35,7 @@ loap2:;
 	}
 	return;
 }
-int main()
+int main_bench()
 {
 	char A[100],a;
 	int n;

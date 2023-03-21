@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int m,n,area[9][9]={0},area1[9][9]={0};
 	scanf("%d%d",&m,&n);

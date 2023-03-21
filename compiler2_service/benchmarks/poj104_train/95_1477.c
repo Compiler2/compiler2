@@ -1,7 +1,7 @@
 #include <header.h>
 
 int change(char s[81], char t[81]);
-int main()
+int main_bench()
 {
 	char s[81],t[81];
 	int a;

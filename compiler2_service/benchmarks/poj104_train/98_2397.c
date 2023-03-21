@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int n,i,count=0;
 	int len[10000];
 	char sz[10000][21]={'\0'};

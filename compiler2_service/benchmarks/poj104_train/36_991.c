@@ -13,7 +13,7 @@ void del(char s[],char a)
 		else j++;
 	}
 }
-void main()
+int main_bench()
 {
 	char s1[20],s2[20];
 	int i,n,m;

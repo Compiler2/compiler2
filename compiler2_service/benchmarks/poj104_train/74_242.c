@@ -2,7 +2,7 @@
 
 int su(int x);
 int hui(int x);
-void main()
+int main_bench()
 {
 	int m,n,flag=0,x;
 	scanf("%d%d",&m,&n);

@@ -47,7 +47,7 @@ int output( int *s, int n )
         printf(" %d", s[i]);
 }
 
-int main()
+int main_bench()
 {
     int n1 = 0, n2 = 0;
     scanf("%d %d", &n1, &n2);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int feibo(int n);
-int main()
+int main_bench()
 {
 int i,n,c,result[1000];
 scanf("%d",&c);

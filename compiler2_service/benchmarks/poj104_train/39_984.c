@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int g[101],c[101],e[101],i,m,n,mon[101],max=0,sum=0,j;
  char name[101][20],west[101],leader[101];

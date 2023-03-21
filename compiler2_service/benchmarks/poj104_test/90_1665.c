@@ -11,7 +11,7 @@ int pf(int m,int n)
 		c=pf(m,(n-1))+pf((m-n),n);
 	return c;
 }
-int main ()
+int main_bench ()
 {
 	int a,m,n;
 	scanf("%d",&a);

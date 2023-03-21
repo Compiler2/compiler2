@@ -22,7 +22,7 @@ int solve()
             solve();
             }
 }
-int main()
+int main_bench()
 {  
 scanf("%c",&c);
   d=c;

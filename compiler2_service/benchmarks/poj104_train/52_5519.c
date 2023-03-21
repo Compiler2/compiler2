@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     void stand(int a[],int M,int N,int x);
     int s[100],n,m,i,z;

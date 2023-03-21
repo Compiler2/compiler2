@@ -4,7 +4,7 @@
 struct sz{
 	char word[41];
 }*p;
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,m,add=0;
 	scanf("%d",&n);

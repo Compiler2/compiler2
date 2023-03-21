@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char str1[250],str2[250];    
     int a[250],b[250],c[250]={0};  

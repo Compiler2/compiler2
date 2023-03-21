@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
  char wordbuff[50][20], ch, target[20], replace[20];
  int i, j;

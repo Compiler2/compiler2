@@ -3,7 +3,7 @@
 const int x[5]={0,0,1,0,-1};
 const int y[5]={0,1,0,-1,0};
 int f[1000][1000];
-int main(){
+int main_bench(){
 int m,n,k=1;
 scanf("%d %d",&m,&n);
 for (int i=1; i<=m; i++){

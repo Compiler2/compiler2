@@ -6,7 +6,7 @@ if(year%400==0 || (year%100!=0 && year%4==0))
 result=1;
 return result;
 }
-int main(){
+int main_bench(){
 	int i,answer=0;
 	struct tian{
 	int year,month,day;

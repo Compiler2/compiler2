@@ -8,7 +8,7 @@ char a[20];
 	char e[2];
 	int f[1];
 }stu[101];
-void main()
+int main_bench()
 {
 	int exin(int A,int B,char C,char D,int E);
 	int n;int x,y=0;int total=0;

@@ -25,7 +25,7 @@ double sum(int n){
 
 
 
-int main()
+int main_bench()
 {
 	int m,n;
 	double hs;

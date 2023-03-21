@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int *p;
 	char q[1000][30];

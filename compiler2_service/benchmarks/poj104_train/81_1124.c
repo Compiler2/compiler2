@@ -13,7 +13,7 @@ else return(0);
 }
 
 
-int main()
+int main_bench()
 {int B[5][5],M,N,j,k,w,e,p,m,i,PAN,tem;
 
 for(j=0;j<5;j++)

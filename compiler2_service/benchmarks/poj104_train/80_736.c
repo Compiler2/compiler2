@@ -1,7 +1,7 @@
 #include <header.h>
 
 int djt(int year,int month,int day);
-int main()
+int main_bench()
 {
 	  int a,b,c,d,e,f,g,h,s,i;
 	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);

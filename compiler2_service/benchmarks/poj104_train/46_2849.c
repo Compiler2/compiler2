@@ -26,7 +26,7 @@ void function(int r,int c)
         
     }
 
-int main()
+int main_bench()
 {
     int i,j;
     scanf("%d %d", &row,&col);

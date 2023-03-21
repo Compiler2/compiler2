@@ -12,7 +12,7 @@ struct student
 
 }
 ;
-int main()
+int main_bench()
 {
 	int nstu=4;
 	int total=0;

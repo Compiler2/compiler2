@@ -5,7 +5,7 @@ int b[50000];
 int c[100000];
 int d[100000];
 int z[20000];
-int main(){
+int main_bench(){
    int n,i,k,p=0,q=0,m=0,u=0,y=0,max=0,min=0;
    scanf("%d",&n);
    for(i=0;i<n;i++){

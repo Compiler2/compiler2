@@ -3,7 +3,7 @@
 int DiJiTian(int year, int month);
 int isRunNian(int year);
 
-int main(){
+int main_bench(){
 	int n,i;
 	int year[200],mon1[200],mon2[200],a[200];
 

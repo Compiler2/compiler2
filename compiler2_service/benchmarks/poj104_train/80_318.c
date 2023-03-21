@@ -18,7 +18,7 @@ int dijitian(int year,int month,int day){
 	days=days+day;
 	return days;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int runnian(int y);
 	int dijitian(int year,int month,int day);

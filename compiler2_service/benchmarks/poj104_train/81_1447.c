@@ -1,7 +1,7 @@
 #include <header.h>
 
 int reverse(int sz[][5],int m,int n);
-int main()
+int main_bench()
 {
 	int i,j,sz1[5][5],y,n1,m1;
 	for(i=0;i<5;i++){

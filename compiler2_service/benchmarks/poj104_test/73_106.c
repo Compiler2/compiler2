@@ -16,7 +16,7 @@ for (int i=0;i<5;i++)
 return y;
 }
 
-int main()
+int main_bench()
 {
 int a[5][5],b[5][5],max[5],min[5],pp=0;
 for (int i=0;i<5;i++)

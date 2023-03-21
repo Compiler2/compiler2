@@ -10,7 +10,7 @@ void count(int a[53], char str[], int len)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int a1[200]={0},a2[200]={0};
 	int len1,len2,t=1,i;

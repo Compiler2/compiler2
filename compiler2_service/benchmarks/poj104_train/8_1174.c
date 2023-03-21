@@ -41,7 +41,7 @@ void print()
 	for(i=1;i<n+m;i++)
 	printf(" %d",a[i]);
 }
-int main()
+int main_bench()
 {
 	get();
 	order();

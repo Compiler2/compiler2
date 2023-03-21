@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a,a1,a2,a3,a4,a5,a6,ss[20];
 	int count100=0,count50=0,count20=0,count10=0,count5=0,count1=0;

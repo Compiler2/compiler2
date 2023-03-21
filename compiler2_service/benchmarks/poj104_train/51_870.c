@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,l,count[400]={0},s,state,high[200],max=0;
 	char input[550]={0},compare[400][7]={0},tem[7]={0};

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int shuzu[20000];
-int main(){
+int main_bench(){
     int n,x;
     scanf("%d",&n);
     for (int t=0;t<n;t++){

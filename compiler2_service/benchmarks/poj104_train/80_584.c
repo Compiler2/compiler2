@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday,year,month;
 	int a[13]={31,28,31,30,31,30,31,31,30,31,30,31};

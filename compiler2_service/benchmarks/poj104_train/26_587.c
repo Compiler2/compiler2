@@ -15,7 +15,7 @@ char* f(char *s,char *t)
 	t[j]=s[i];
 	return t;
 }
-int main()
+int main_bench()
 {
 	char s[110],t[110];
 	gets(s);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,x,y,i;
 	double jiwei,tmp;
 	scanf("%d",&n);

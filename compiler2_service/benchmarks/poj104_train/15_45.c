@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int state = 0;
 	int n, t, i, j,m,m1,m2;

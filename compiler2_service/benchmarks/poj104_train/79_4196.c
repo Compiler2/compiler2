@@ -5,7 +5,7 @@
 
 
 int yuesefu(int key,int n);
-int main()
+int main_bench()
 {
 	int monkeys[300];
 	int tmp[300];

@@ -5,7 +5,7 @@ struct num
    int a;
    double b;
 }num[300];
-void main()
+int main_bench()
 {
 	int n,i,j;
 	double sum=0,t;

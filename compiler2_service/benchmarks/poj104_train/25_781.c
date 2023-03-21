@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[100];
-int main()
+int main_bench()
 {
   a[0]=1;
   int k=1,i,n;

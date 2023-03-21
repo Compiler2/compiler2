@@ -6,7 +6,7 @@ struct info
 	char author[27];
 };
 
-int main()
+int main_bench()
 {
 	char findoutmax(struct info a[],int n,int *pt);
 	void detect(struct info b[],char writter,int nn);

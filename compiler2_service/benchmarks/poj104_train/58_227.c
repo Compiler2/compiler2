@@ -13,7 +13,7 @@ int first(char b){
 		result=1;
 	return result;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,j,len,flag;
 	int panduan(char a);

@@ -20,7 +20,7 @@ int queue(int num)
 	else return num;
 }
 
-int main()
+int main_bench()
 {
 	boy=getchar();
 	printf("0 %d\n",queue(1)); 

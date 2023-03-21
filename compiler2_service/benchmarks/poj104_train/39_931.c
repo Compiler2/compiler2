@@ -17,7 +17,7 @@ int money(struct member p)
 	if(p.b>80&&p.O=='Y')m+=850;
 	return m;
 }
-int main()
+int main_bench()
 {
 	struct member p[100];
 	int N,i,m[100],max=0,co;

@@ -21,7 +21,7 @@ int f2(int i)
 	else return(0);
 }
 
-void main()
+int main_bench()
 {
 	int n,m,i,c=0;
 	scanf("%d %d",&m,&n);

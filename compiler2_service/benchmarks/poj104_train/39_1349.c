@@ -11,7 +11,7 @@ struct student
 	int scholar;
 
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,max=0,sum,k;
 	scanf("%d",&n);

@@ -12,7 +12,7 @@ int iszhishu(int n)
 		else return 0;
 }
 
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

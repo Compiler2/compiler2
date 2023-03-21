@@ -1,7 +1,7 @@
 #include <header.h>
 
 int b[26]={0};
-main()
+main_bench_bench()
 {
 	char a[300];
 	

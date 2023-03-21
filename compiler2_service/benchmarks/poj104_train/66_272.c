@@ -11,7 +11,7 @@ void dayprint(int a){
     case 7:printf("Sun.");break;
 	}
 }
-int main()
+int main_bench()
 {
 	int y,m,d,i,a,sum;
 	int days[12]={31,28,31,30,31,30,31,31,30,31,30,31};

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[9000],a[100][10]={'\0'};
 	gets(str);

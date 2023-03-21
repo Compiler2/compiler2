@@ -6,7 +6,7 @@ struct s{
 	int y;
 	int z;
 }s[100000],s1,s2,s3,A;
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

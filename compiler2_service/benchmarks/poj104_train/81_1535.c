@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main ()
+int main_bench()
 {
 	void exchange (int a, int b,int c[100][100]);
 	int i,j,a,b,c[100][100];

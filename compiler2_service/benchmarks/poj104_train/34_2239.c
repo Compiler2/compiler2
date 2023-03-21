@@ -21,7 +21,7 @@ int fornot(int n)
         return (n*3+1);
 }
 
-int main()
+int main_bench()
 {
         int a = 0;
    

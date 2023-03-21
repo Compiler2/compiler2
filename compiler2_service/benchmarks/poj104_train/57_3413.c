@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i;
     char x[3]="er",y[4]="ly",z[4]="ing";

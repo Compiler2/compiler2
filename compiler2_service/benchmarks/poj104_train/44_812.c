@@ -31,7 +31,7 @@ else
 return(ans);
 }
 
-int main()
+int main_bench()
 {
 int a,i;
   for(i=0;i<6;i++)

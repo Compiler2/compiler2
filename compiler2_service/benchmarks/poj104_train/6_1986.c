@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int i,m,n,ii,jj,l,t;
 int s[10002]={0};
 int *k=s;

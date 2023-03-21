@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int app(int x,int y);
     int s, x, y, i;

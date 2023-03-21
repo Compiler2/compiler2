@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char fang[101][101];
 int n,i,k,bing=0,m,j;

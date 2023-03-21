@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
    int n,i,a[10000],b[10000];
    int cal(int x);

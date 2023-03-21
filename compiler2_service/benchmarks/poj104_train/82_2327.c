@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,n,gy[100],dy[100],zc[100],e,s,k,max=0;
 	scanf("%d",&n);
 	for(i=0;i<n;i++){

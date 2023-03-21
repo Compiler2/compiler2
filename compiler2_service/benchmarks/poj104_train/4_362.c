@@ -22,7 +22,7 @@ int min(int a,int b)
 		return b;
 	}
 }
-int main()
+int main_bench()
 {
 	int a[100][100];
 	int hang,lie;

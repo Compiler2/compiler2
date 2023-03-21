@@ -10,7 +10,7 @@ void inv(int x[],int n)
                      }
                      return;
                      }
-int main()
+int main_bench()
 {
     int i,n,a[100];
     scanf("%d",&n);

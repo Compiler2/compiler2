@@ -4,7 +4,7 @@
 double arr[101] = {0};
 
 
-int main() {
+int main_bench() {
 	double a = 2, prea = 1, b = 1, preb = 1, tmp;
 	int n, m;
 	for (int i = 1; i < 101; ++i) {

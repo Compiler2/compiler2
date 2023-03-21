@@ -36,7 +36,7 @@ void print(int row)
 	printf("%d\n",array[row][4]);
 }
 
-int main()
+int main_bench()
 {
 	int i,j,n,m,t;
 

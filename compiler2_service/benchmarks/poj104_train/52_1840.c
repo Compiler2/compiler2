@@ -9,7 +9,7 @@ void swap(int *pa,int n,int m)
 	for(i=0;i<m;i++) pa[i]=a[i];
 	return;
 }
-void main()
+int main_bench()
 {
 	int c[100];
 	int i,n,m,*p=c;

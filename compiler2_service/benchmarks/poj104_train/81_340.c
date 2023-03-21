@@ -17,7 +17,7 @@ int change(int a[5][5],int n,int m)
 	c=0;
 	return(c);
 }
-void main()
+int main_bench()
 {
 	int s[5][5];
 	int i,j,x,y;

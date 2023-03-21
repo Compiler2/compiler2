@@ -1,7 +1,7 @@
 #include <header.h>
 
 int area[100][100];
-int main(){
+int main_bench(){
     int m;
     int n;
     int i;

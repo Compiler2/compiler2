@@ -12,7 +12,7 @@ int legal(char d[20]){
 	return 1;
 }
 	
-int main()
+int main_bench()
 {
 	int i,t,n;
 	char s[100][20];

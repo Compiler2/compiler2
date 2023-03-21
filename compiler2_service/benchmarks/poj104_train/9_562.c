@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i,age,max,t,numold,numyoung;
     char id[101][10],young[101][10];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int i,k=0;
   char a[9999]={'\0'};

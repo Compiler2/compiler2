@@ -12,7 +12,7 @@ int reverse(int num)
     return k;
 }
 
-int main()
+int main_bench()
 {
     int n,b,i;
     for (i=1;i<=6;i++)

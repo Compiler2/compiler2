@@ -17,7 +17,7 @@ int judge2(int i,int j)
 			u=0;
 	return u;
 }
-void main()
+int main_bench()
 {
 	int i,j,u=0;
 	scanf("%d,%d",&m,&n);

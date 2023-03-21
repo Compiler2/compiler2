@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char s[200], w[200];
     int i, j, lens, lenw;

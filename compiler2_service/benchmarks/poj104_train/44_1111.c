@@ -23,7 +23,7 @@ int reverse(int n)
 	else re_n=n;  
 	return(re_n);
 }
-void main()
+int main_bench()
 {
 	int flag,n;
 	flag=0;

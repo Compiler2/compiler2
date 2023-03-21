@@ -76,7 +76,7 @@ void funcofd(int *p1,int *p2,int *p2m,int *p2n)
 	printf("\n");
 }
 
-void main()
+int main_bench()
 {
 	funcofa(p1,p2,p2m,p2n);
 	funcofb(p1,p2,p2m,p2n);

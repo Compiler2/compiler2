@@ -5,7 +5,7 @@ struct pa
 	char str[10];
 	int y;
 }pa[101];
-int main()
+int main_bench()
 {
 	int n;
 	int i,j,k=0,t=0;

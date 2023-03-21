@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char n[100];
 int a,b[100],c[99],i,j,p,q;

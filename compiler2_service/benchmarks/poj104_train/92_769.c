@@ -6,7 +6,7 @@ int compare(const void* p1, const void* p2)
 	return *(int*)p1 - *(int*)p2;
 }
 
-int main()
+int main_bench()
 {
 	int i, n, a[1000], b[1000];
 

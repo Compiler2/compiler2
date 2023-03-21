@@ -1,7 +1,7 @@
 #include <header.h>
 
    char sz[102][102][102];
-int main(){
+int main_bench(){
    int n,i,j;
    scanf("%d",&n);
    for(i=1;i<=n;i++){

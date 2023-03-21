@@ -27,7 +27,7 @@ int compare(char s[50],char w[50],int i)
         return 1;
 }
 
-int main()
+int main_bench()
 {
     char s[50];
     char w[50];

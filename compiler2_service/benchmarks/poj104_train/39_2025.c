@@ -19,7 +19,7 @@ struct person
 	int total;
 }student[110];
 
-int main()
+int main_bench()
 {
 	int n, i, all=0, max=0, whom=-1;
 	scanf("%d", &n);

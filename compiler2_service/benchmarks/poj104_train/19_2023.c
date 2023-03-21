@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,a=0,b=0;
 	char zfc[101],y[101],x[101],word[101][101];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n;
     scanf("%d",&n);
     char jianji[n][260],hubu[n][260];

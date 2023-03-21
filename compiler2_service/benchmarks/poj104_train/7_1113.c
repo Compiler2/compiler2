@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char a[256],b[256],c[256];
 	scanf("%s%s%s",b,a,c);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n, y, year, month1, month2, i, j, m;
 	scanf ("%d",&n);

@@ -2,7 +2,7 @@
 
 int reverse(int num);
 void swap(int* a,int* b);
-int main()
+int main_bench()
 {
 	int num,i;
 	for(i=0;i<6;i++)

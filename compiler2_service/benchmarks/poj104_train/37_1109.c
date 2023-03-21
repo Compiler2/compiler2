@@ -5,7 +5,7 @@ struct cha
 	char zimu;
 	int n;
 };
-int main()
+int main_bench()
 {
 	int t,num=1,i,j,k,l,a;
 	char c[10000];

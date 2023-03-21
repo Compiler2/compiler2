@@ -6,7 +6,7 @@ struct book
 	int num;
 	char writer[26];
 }b[1000];
-int main()
+int main_bench()
 {
 	int n,i,j,k,p,q[1000];
 	scanf("%d",&n);

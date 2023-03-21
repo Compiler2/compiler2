@@ -4,7 +4,7 @@
 int  num[1000];
 char auth[1000][26];
 
-int main()
+int main_bench()
 {
 	int m,i,l;
 	scanf("%d",&m);

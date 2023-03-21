@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int N, i, num1[100]={0}, num2[100]={0}, scholar[100]={0}, x, y, sum;
 	char name[100][20], condition[100][7];

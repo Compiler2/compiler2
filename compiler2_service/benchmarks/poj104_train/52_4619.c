@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m=0;
-int main()
+int main_bench()
 {
 	int * change(int x[100],int y,int z);
 	int a[100];

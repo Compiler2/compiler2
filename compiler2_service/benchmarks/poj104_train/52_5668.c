@@ -12,7 +12,7 @@ void swap(int x,int y,int a[])
         y--;
     }
 }
-int main()
+int main_bench()
 {
     int n,m,a[100],i;
     scanf("%d%d",&n,&m);

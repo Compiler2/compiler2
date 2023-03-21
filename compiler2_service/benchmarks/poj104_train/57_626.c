@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n,i,j;
     char word[53][35],del[53][35];
     scanf("%d",&n);

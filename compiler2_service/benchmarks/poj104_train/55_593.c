@@ -9,7 +9,7 @@ long int num(long int x,int i,int b)
 		a=a*b;
 	return a;
 }
-void main ()
+int main_bench()
 {
 	int a,b,i,j,length;
 	char shu[100],zhuanhuan[100];

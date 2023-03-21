@@ -59,7 +59,7 @@ void check(double a[10],double n)
 	for(i=0;i<n;i++)
 		printf("%lf  ",a[i]);
 }
-int main()
+int main_bench()
 {
 	double n;
 	scanf("%lf",&n);

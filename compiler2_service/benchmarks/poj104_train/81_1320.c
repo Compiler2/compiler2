@@ -12,7 +12,7 @@ int jiaohuan (int m,int n)
 	{return 0;} 
 
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
     int i,j,m,n,p;
     int x[5][5];

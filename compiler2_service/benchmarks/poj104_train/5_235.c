@@ -1,7 +1,7 @@
 #include <header.h>
 
 int compare(char x,char y);
-int main(){
+int main_bench(){
 	double n;
 	char DNA1[502],DNA2[502];
 	int len1,len2;

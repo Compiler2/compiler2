@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int dayofthirteenth[12]={13,44,72,103,133,164,194,225,256,286,317,347};
 	int w,month,k;

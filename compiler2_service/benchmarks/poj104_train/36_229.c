@@ -3,7 +3,7 @@
 int p(int i);
 char a[100],b[100];
 int l;
-int main(int argc,char *argv[])
+int main_bench()
 {
     int i,flag=1;    
     scanf("%s%s",a,b);

@@ -4,7 +4,7 @@ struct point{
     char A[256];
 	char B[256];
 };
-int main(){
+int main_bench(){
 	int n,i,j;
 	scanf("%d",&n);
 	struct point chain[n];

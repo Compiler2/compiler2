@@ -19,7 +19,7 @@ int max_people(int x[],int y[],int num)
 }
 
 
-void main()
+int main_bench()
 {
 	int i,num=0,x[8000],y[8000];
 	char c;

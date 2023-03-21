@@ -13,7 +13,7 @@ void change(char x[50],int n)
 			x[i]=tem;
 		}
 }
-void main()
+int main_bench()
 {
 	int len,n,i;
 	char a[100],b[50],c[50];

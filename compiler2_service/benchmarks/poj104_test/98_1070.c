@@ -17,7 +17,7 @@ void pb(char* a,int p,int t)
     if(p) 
     pb(word[p-1],p-1,t);
 }
-int main()
+int main_bench()
 {   
   int n,i;
   char m;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int ch1[350],n,i,ch2[350],j,k=1,l,r;
 	double max,sum=0;

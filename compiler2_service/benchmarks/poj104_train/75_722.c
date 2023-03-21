@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int num[1000]={0};   
 	int inout[1000][2];   

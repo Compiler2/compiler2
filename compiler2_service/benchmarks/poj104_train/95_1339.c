@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
     int i,la,lb;
 	char a[80],b[80];

@@ -12,7 +12,7 @@ struct stu
 	int m;
 };
 
-void main()
+int main_bench()
 {
 	struct stu a[100];
 	

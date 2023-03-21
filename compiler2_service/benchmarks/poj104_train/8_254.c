@@ -38,7 +38,7 @@ void shuchu()
     {if(i!=n+m-1)printf("%d ",c[i]);
 	else printf("%d",c[i]);}
 }
-int main()
+int main_bench()
 {
 	shuru();
 	paixu();

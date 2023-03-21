@@ -2,7 +2,7 @@
 
 int w;
 void judge(int month,int w);
-void main()
+int main_bench()
 {
 	int month,cha;
 	scanf("%d",&w);

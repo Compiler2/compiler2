@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n;
 	char STR[103]={" "},str[103]={" "},str1[103]={" "};

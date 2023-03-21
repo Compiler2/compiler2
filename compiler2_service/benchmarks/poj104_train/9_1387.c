@@ -7,7 +7,7 @@ struct student
     int age;
 }stu[100];
 
-int main()
+int main_bench()
 {
 	char c;
     int n,i,j;    

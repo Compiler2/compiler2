@@ -27,7 +27,7 @@ void move(int a[5][5],int p,int q)
     else
     printf("error");
 }
-void main()
+int main_bench()
 {
   int a[5][5],i,j,u,v;
   for(i=0;i<5;i++)

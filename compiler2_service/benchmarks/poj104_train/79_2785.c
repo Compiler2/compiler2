@@ -5,7 +5,7 @@ void circle(int t);
 void print();
 void baoshu(int p,int q);
 int n[100],m[100],a[300],ans[100],num,i;
-int main()
+int main_bench()
 {
     read();
     for (i=1;i<=num;i++)

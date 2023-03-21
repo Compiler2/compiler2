@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sum=0,lena,lenb,i,c;
 	char yi[501],er[501];
 	double rate,a;

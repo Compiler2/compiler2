@@ -15,7 +15,7 @@ int check(char c[])
 }
 
 
-int main()
+int main_bench()
 {
 	char a[1000];
 	char b[1000];

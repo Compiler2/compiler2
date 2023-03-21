@@ -4,7 +4,7 @@ struct patient{
 	char id[10];
 	int age;
 }a[100];
-int main(){
+int main_bench(){
 	int n,i,k,e;
 	char p[10];
 	scanf("%d",&n);

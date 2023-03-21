@@ -7,7 +7,7 @@ int max(int x,int y)
 	else
 		return y;
 }
-int main()
+int main_bench()
 {
 	char a[260];
 	char b[260];

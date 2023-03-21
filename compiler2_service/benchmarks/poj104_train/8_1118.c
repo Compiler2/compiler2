@@ -30,7 +30,7 @@ printf("%d",a[1]);
 for(i=2;i<=a[0];i++)
 printf(" %d",a[i]);
 return 0;}
-int main()
+int main_bench()
 {int a[200],b[100];
 	read(a,b);
 	seq(a);seq(b);

@@ -11,7 +11,7 @@ int su ( int x2 )
    return 1;
 }
 
-int main ()
+int main_bench()
 {
    int n , i , f=1 , x1=3 , x2=5;
    scanf ( "%d" , &n );

@@ -48,7 +48,7 @@ void output()
 	}
 }
 
-int main()
+int main_bench()
 {
 	input();
 	order();

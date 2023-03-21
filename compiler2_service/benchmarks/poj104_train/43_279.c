@@ -2,7 +2,7 @@
 
 
 int szs(int a); 
-int main()
+int main_bench()
 {
     int i,j,n,m,s;
     s=0; 

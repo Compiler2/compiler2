@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 { 
 
     int strNnum=0,strMnum=0,max,min,maxstr=0,minstr=0,i,len;

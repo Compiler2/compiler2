@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[101], fri[101]={'\0'}, *pca, *pcb;
 	int n, i;

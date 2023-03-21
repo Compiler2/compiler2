@@ -11,7 +11,7 @@ struct stu
 	int paper;
 };
 
-int main(int argc, char* argv[])
+int main_bench()
 {int k,n,i,total[100],tota=0,max=0;
 struct stu ppl[100];
 scanf("%d",&n);

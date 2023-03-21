@@ -17,7 +17,7 @@ int f(int zhengshuchuan[],int changdu)
 	}
 	return 0;
 }
-main()
+main_bench_bench()
 {
 	int a[200],b[100],i;
 	int changdu1,changdu2;

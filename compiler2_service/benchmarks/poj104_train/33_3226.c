@@ -26,7 +26,7 @@ void com(char seq[])
      printf("\n");
 }
 
-int main()
+int main_bench()
 {
     int n;
     scanf("%d\n", &n);

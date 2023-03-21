@@ -7,7 +7,7 @@ void operate(int a[],int n)
 	a[pointer]=0;
 	printf("%d\n",max);
 }
-void main()
+int main_bench()
 {	int i,n,a[101];
 	scanf("%d",&n);
 	for(i=0;i<n;i++)

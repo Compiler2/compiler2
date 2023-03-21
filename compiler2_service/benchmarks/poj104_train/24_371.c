@@ -15,7 +15,7 @@ for(i=0,max=0;i<l;i++)
 if(strlen(str1[max])<strlen(str1[i]))max=i;
 strcpy(str,str1[max]);
 }
-int main()
+int main_bench()
 {char str[1000]={0};
 gets(str);
 k(str);

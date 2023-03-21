@@ -10,7 +10,7 @@ int f(int m)
     }
     return d;
 }
-main()
+main_bench_bench()
 {
       int a[7],b[7],c[7],i=1,m;
       for (;i<=6;i++)

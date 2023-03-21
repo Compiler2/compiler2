@@ -20,7 +20,7 @@ int change()
 	 }
 	 
 }
-void main()
+int main_bench()
 {
    int fh,k,l;
    fh=change();

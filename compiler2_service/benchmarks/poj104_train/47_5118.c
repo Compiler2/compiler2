@@ -5,7 +5,7 @@ int a[10000];
 int p;
 void oppo(int n);
 void printa(int n);
-int main(){
+int main_bench(){
 	int n;
 	scanf("%d",&n);
 	oppo(n);

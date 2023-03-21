@@ -7,7 +7,7 @@ struct grade
 	int math;
 	int sum;
 }student[100000],s;
-int main()
+int main_bench()
 {
 	int n,i,j;
 	scanf("%d",&n);

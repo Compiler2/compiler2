@@ -18,7 +18,7 @@ void match(char lch)
     printf("%d %d\n", spos, pos);
 }
 
-int main()
+int main_bench()
 {
     char ch;
     pos = 0;

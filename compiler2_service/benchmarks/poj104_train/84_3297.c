@@ -14,7 +14,7 @@ int max(int a[],int n)
 	}
 	return(*a);
 }
-void main()
+int main_bench()
 {
 	int i,n,num[100]={0};
 	scanf("%d",&n);

@@ -19,7 +19,7 @@ int f(int n){
 	}
 return c;
 }
-int main(){
+int main_bench(){
 int n,sz[21],i;
 scanf ("%d",&n);
 for (i=0;i<n;i++){

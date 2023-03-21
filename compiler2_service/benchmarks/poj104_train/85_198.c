@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int a;
 	char shit[100][100];

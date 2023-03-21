@@ -11,7 +11,7 @@ int st(int s,int t)
     return 1;
 }
 
-int main()
+int main_bench()
 {
     scanf("%d%s",&n,c);
     l=strlen(c);

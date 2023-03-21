@@ -76,7 +76,7 @@ void pai(int c[],int m,int k)
 
 
 
-int main()
+int main_bench()
 {
 	int i,j;
 	int h[5]={1,2,3,4,5};

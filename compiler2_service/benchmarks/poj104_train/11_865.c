@@ -5,7 +5,7 @@ int run(int x)
 	if((x%4==0 && x%100!=0)||(x%400==0))return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int y,m,d,x;
     scanf("%d %d %d",&y,&m,&d);

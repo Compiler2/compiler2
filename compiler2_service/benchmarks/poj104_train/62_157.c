@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[100],b[100],i,j,n,m;
 	gets(a);

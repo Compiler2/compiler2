@@ -25,7 +25,7 @@ float ffabs(float x)
 	else
 		return -x;
 }
-void main()
+int main_bench()
 {
 	int n,i,*num,sum=0,*temp,r=0;
 	float ave,max=0.0;

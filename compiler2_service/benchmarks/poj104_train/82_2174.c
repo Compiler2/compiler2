@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int normal(int x,int y);
 	int n,i,c=0,t=0,a[100],b[100];

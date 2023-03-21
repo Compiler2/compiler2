@@ -1,7 +1,7 @@
 #include <header.h>
 
 char str[4500];
-int main(){
+int main_bench(){
 	char a[300][15];
 	int i,b[300],j,z;
 	gets(str);

@@ -2,7 +2,7 @@
 
 int reverse(char n[8]);
 
-int main(){
+int main_bench(){
 	int j,z,i,c,k;
 	char jieguo[6][8];
 	char su[8];

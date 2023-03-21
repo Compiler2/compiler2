@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	int n;
 	int bai,wushi,ershi,shi,wu,yuan;

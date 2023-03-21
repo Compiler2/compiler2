@@ -6,7 +6,7 @@ int compare(int x,int y)
 	if(x>4 ||y>4) return 0;
 	else return 1;
 }
-int main()
+int main_bench()
 {
 	int i,j,k,l,m,n;
 	

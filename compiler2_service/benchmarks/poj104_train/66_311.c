@@ -20,7 +20,7 @@ int leap(int a)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int y,y0,y1,y2,m,d,sum=0;
 	scanf("%d%d%d",&y,&m,&d);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { int j,i,a[10],b[10],sum,n;
 double GPA,c[10];
 scanf("%d",&n);

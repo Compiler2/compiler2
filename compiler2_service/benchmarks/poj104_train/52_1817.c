@@ -1,7 +1,7 @@
 #include <header.h>
 
 void inv(int[],int,int);
-void main()
+int main_bench()
 {
     int a[100],n,m,i,*p=a;
     scanf("%d%d",&n,&m);

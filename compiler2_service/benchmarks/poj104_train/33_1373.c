@@ -1,7 +1,7 @@
 #include <header.h>
 
 char mb[30000][300],fy[30000][300];
-int main(){
+int main_bench(){
 	
 	int i=0,j=0,n;
 	scanf("%d",&n);

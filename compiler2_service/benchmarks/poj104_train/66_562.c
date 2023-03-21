@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 int year,month,day,total,i;
 	scanf("%d %d %d",&year, &month, &day);
 	total = 0;

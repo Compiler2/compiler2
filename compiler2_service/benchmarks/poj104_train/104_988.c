@@ -17,7 +17,7 @@ void back(int a[],int n)
     for(i=0;i<log(n)+1;i++)
         a[i+1]=a[i]/2; 
 }
-void main()
+int main_bench()
 {
     int i,m,n;
     int a[11],b[11];

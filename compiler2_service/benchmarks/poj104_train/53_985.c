@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 int a[300],b[300],i,j=0,n;
 int eva(int x,int y,int b[]);

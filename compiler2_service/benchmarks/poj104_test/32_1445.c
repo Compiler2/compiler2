@@ -20,7 +20,7 @@ void moin(char a[][100],char b[][100],int k)
        printf("%c",x[k][j]);
 	printf("\n");
 }
-int main()
+int main_bench()
 {
    int n,i;
    char a[10][100],b[10][100];

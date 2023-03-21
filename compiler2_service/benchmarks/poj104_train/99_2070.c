@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,n,age[100],count[4];
 	for(i=0;i<4;i++){

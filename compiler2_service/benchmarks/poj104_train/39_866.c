@@ -11,7 +11,7 @@ struct Student
 	int sum;
 }stu[100];
 int n;
-int main()
+int main_bench()
 {
    scanf("%d",&n);
    int i;

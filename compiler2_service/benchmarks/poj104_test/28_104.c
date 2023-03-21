@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	char c[300][20]={{'\0'}};
 	int i;
 	scanf("%s",c[0]);

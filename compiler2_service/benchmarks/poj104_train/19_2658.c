@@ -6,7 +6,7 @@
 int n,m,k;
 char a[110];
 char from[110],to[110];
-int main()
+int main_bench()
 {
 	while (gets(a))
 	{

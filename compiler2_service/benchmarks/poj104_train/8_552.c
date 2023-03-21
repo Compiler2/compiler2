@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void read(int a[100],int b[100],int m,int n);
 	void bubble(int a[100],int m);

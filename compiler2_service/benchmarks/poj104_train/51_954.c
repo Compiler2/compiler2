@@ -2,7 +2,7 @@
 
 char dp[10000];
 int num[10000],n;
-int main()
+int main_bench()
 {
     int i,j,len,flag=1,max=0,k;
     scanf("%d",&n);

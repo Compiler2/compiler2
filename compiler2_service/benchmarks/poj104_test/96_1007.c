@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
         int l,i,j,tem,carry;
         char input[110];

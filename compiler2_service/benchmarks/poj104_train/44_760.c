@@ -25,7 +25,7 @@ void reverse(int n)
 	 printf("%d\n",b);
  }
 }
-int main()
+int main_bench()
 {
 	void reverse(int num);
 	int n,j;

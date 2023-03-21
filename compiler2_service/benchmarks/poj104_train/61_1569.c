@@ -2,7 +2,7 @@
 
 int F(int n);
 
-int main(){
+int main_bench(){
 	int a,n[20],r=0,m[20],i;
 	scanf("%d",&a);
 	for(i=0;i<a;i++){

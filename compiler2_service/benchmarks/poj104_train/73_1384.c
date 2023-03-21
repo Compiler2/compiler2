@@ -4,7 +4,7 @@
 int max(int a,int b,int c,int d,int e);
 int min(int a,int b,int c,int d,int e);
 
-int main() 
+int main_bench() 
 { 
 	int sz[5][5];
 	int row=0;

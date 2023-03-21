@@ -12,7 +12,7 @@ struct asd
 	char y;
 }stu[100];
 
-void main()
+int main_bench()
 {
 	int i,n,max,m,t;
 	scanf("%d",&n);

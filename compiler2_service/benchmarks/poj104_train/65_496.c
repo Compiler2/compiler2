@@ -3,7 +3,7 @@
 
 int i=0,n=0,m=0,p=0,q=0,r=0,t=0,e=0,k=0;
 int a[1000][1000],b[1000][1000];
-int main (){
+int main_bench(){
 scanf("%d",&n);
 for(i=0;i<n;i++){
 scanf("%d %d",&a[i][0],&a[i][1]);

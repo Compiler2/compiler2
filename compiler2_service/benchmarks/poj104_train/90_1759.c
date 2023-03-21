@@ -10,7 +10,7 @@ int work( int a,int b )
      return( work(a,b-1)+work(a-b,b));
     
 }
-int main()
+int main_bench()
 {
    int m , n , t , i;
    scanf( "%d",&t );

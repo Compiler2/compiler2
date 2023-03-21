@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[20]={0},b[20]={0},x,y,i;
 	int judge(int *p,int *q);

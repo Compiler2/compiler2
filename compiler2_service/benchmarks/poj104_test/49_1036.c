@@ -16,7 +16,7 @@ int judge(char *p)
     
 }
 
-int main()
+int main_bench()
 {  int i,k,j,t,l,m,h,g,n;
    char p[510];
    gets(p);

@@ -4,7 +4,7 @@ int com(void const *a,void const *b)
 {
     return (*(int *)a-*(int *)b);
 }
-main()
+main_bench_bench()
 {
       int k,H;
       int j,count[25],n;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a[501],b[501];
 	int sum=0,i,lena,lenb,t=0;

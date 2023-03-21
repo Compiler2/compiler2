@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int n(long year);
 	int run(long y,int m,int d);

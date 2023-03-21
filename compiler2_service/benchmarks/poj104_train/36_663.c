@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	char str1[1000],str2[1000];
 	int count1[128]={0},count2[128]={0};

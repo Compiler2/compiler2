@@ -13,7 +13,7 @@ int han(int m,int n,int sz[5][5]){
 		return 1;
 	}else{ return 0;}
 }
-int main(){
+int main_bench(){
 	int s[5][5],c;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){

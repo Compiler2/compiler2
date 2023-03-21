@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	int t,i,j,len,judge;
 	char string[10000];
 	scanf("%d",&t);

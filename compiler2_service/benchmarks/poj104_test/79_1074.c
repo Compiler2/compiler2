@@ -9,7 +9,7 @@
         k=((n%i)+k)%i;}
         return k;
         }
-        int main()
+        int main_bench()
         {
             int m[100],n[100];
             int j,h;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[128][128],b[128][128],c[128][128]={0};
-int main()
+int main_bench()
 {	int i,j,k,x1,y1,x2,y2;
 	scanf("%d%d",&x1,&y1);
 	for (i=0;i<x1;i++)

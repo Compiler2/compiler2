@@ -6,7 +6,7 @@ int ctr1,ctr2,ctr3,ctr4;
 int i;
 int j=0;
 
-int main(void)
+int main_bench(void)
 {
 scanf("%d,%d",&row,&col);
 

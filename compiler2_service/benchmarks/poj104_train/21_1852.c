@@ -1,7 +1,7 @@
 #include <header.h>
 
 void f1(float a[],int x);
-void main()
+int main_bench()
 {
 	int n;
 	float shuzu[1000],ping;

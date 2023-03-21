@@ -2,7 +2,7 @@
 
 int use[26];
 char s[1000010];
-int main(){
+int main_bench(){
     int n,i,j;
     scanf("%d",&n);
     for(j=0;j<n;j++){

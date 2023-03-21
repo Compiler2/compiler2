@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     #define NUM 100
     char z[20][NUM];
     int n,i=0,j=0,len,k;

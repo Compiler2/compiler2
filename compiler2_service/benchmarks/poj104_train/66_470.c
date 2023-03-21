@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int y,m,d,i,k=0,Day,sum,sum1,sum2=0;
     
    scanf("%d %d %d",&y,&m,&d);

@@ -3,7 +3,7 @@
 
 int N, Sum = 0;
 
-int main()
+int main_bench()
 {
 	int i, f, x;
 	scanf ("%d", &N);

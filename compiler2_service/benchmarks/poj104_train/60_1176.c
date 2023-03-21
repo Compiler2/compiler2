@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sushu[2],i,j,k=0,n,flag,fl=0;
 	scanf("%d",&n);
 	for (i=3;i<=n;i++)

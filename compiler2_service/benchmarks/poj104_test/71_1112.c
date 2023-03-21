@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char *argv[])
+int main_bench()
 {
     int n,year[200],month1[200],month2[200],t,i,j,sum=0;
     int a[12];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[5][5];
-void main()
+int main_bench()
 {
 	void zz(int m,int n);
 	int m,n,i,j;

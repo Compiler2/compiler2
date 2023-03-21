@@ -12,7 +12,7 @@ int ss(int x)
     }
     return(a);
 }
-main()
+main_bench_bench()
 {
       int n,m;
       scanf("%d",&n);

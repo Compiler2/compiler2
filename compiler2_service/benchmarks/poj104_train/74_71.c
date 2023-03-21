@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int judgep(int i);
 	int judgeh(int i);

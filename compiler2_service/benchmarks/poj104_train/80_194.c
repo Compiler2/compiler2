@@ -2,7 +2,7 @@
 
 int year1,month1,day1,year2,month2,day2;
 int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-int main()
+int main_bench()
 {
 	int i,j,temp;
 	int dis1,dis2,sum;

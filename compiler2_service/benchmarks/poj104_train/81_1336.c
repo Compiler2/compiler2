@@ -2,7 +2,7 @@
 
 
 int reverse(int,int);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int sz[5][5],n,m,i,j,e[5];
 

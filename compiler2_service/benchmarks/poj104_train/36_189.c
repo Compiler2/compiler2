@@ -3,7 +3,7 @@
 
 void arrange(char w[20]);
 
-void main()
+int main_bench()
 {
 	char w1[20] = {0};
         char w2[20] = {0} ;

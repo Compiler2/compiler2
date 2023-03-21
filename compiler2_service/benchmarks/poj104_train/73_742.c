@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
     int mx[8],count=0;
     for(int i=1;i<=5;i++)mx[i]=0;

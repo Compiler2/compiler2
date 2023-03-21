@@ -1,7 +1,7 @@
 #include <header.h>
 
 int sc(char a[]);
-int main(){
+int main_bench(){
 char a[32];
 int n,i,q;
 scanf("%d",&n);

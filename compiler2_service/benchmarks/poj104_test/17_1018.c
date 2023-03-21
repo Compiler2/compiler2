@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n;
     for(scanf("%d%*c",&n);n>0;n--)

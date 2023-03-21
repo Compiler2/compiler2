@@ -8,7 +8,7 @@ for(i=2;i<=n;i++)
 k=((m%i)+k)%i;
 return k;
 }
-int main(){
+int main_bench(){
 int m,n,c[300],d,j;
 for(j=0;j>-1;j++){
 scanf("%d %d",&n,&m);

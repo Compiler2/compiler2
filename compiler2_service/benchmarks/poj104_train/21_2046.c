@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i,j,k,count=0,maxnum[400];
     float ava,a[400],sum=0,temp,max=0;

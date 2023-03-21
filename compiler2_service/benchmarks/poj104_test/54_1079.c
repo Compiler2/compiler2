@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pingguo(int a,int b);
-int main()
+int main_bench()
 {
 	int n,k,y;
 	scanf("%d%d",&n,&k);

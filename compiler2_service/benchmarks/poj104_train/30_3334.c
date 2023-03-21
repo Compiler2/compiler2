@@ -12,7 +12,7 @@ int qi(int num)
 		else 
 			return 0;
 }
-int main()
+int main_bench()
 {
 	int n;
 	int sum=0;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[1000][256];
-int main()
+int main_bench()
 {
 	int n,a[1000],i,k;
 	

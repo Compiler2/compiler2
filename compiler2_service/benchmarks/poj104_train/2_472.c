@@ -6,7 +6,7 @@ struct Book
 	char author[26];
 	int flag;
 }book[1000];
-int main()
+int main_bench()
 {
 	int n, i, j, l, max, maxnum;
 	int num = 0;

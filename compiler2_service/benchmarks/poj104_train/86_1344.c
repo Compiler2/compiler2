@@ -26,7 +26,7 @@ void fy()
     printf("%d\n",60-i*3);
     }
 }
-void main()
+int main_bench()
 {
    int n;
    scanf("%d",&n);

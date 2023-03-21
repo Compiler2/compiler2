@@ -1,7 +1,7 @@
 #include <header.h>
 
 int jhsz(int sz[5][5],int m,int n);
-int main()
+int main_bench()
 {
 	int sz[5][5],m,n,i,j;
 	for(i=0;i<5;i++)

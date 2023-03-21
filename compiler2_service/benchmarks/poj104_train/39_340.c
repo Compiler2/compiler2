@@ -6,7 +6,7 @@ struct p
 	int fen,ban,lun;
 	int scho;
 }stu[100];
-void main()
+int main_bench()
 {
 	int i,j,k,l,m=0,n;
 	scanf ("%d\n",&n);

@@ -37,7 +37,7 @@ void bigmulti(char a[],char b[],char c[])
     c[i-j]=sum[j]+'0';
 }
     
-int main()
+int main_bench()
 {
     int n,i;
     char s[1000]="1",a[1000];

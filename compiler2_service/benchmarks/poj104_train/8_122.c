@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void line(int a[],int b[],int m,int n);
 	int m,n,i,j,t;

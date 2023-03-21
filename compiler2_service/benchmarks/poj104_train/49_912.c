@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void isHuiwen(char s0[500], int i);
 	char str[500];

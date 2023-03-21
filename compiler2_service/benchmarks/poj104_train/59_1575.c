@@ -10,7 +10,7 @@ char getAChar(){
 	while(ch!='#' && ch!='.' && ch!='@')ch=getchar();
 	return ch;
 }
-int main()
+int main_bench()
 {
 	static int n,i,j,m,k,g,sum=0,temp1[MAXN*MAXN+10],temp2[MAXN*MAXN+10],r;
 	

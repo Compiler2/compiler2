@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,len;
 	char ch[21],m[10];

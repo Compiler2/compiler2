@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int panduan(char *a,char *b,int lenyi);
 	char yi[50],er[50],*a=yi,*b=er;

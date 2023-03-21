@@ -19,7 +19,7 @@ void deal(char s[])
 	if(p!=0)
 	deal(s);
 }
-int main()
+int main_bench()
 {
 	int i,j;
 	char s[1000],s1[1000],t[1000];

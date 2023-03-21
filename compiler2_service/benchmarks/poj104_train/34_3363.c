@@ -18,7 +18,7 @@ int proc(int i)
 
 
 
-int main () {
+int main_bench() {
     int n;
 	scanf("%d",&n);
 	while (n>1) {

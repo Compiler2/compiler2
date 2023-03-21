@@ -17,7 +17,7 @@ void jiaogu(int i)
         }
     }
 }
-main()
+main_bench_bench()
 {
     int n,temp;
     scanf("%d",&n);

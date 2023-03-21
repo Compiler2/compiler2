@@ -3,7 +3,7 @@
 
 int RevNum(int n);
 
-int main()
+int main_bench()
 {
   int k,i;
   for(i=0;i<6;i++)

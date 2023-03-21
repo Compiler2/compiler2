@@ -21,7 +21,7 @@ int g(int a)
 		return(z);
 }
 
-void main()
+int main_bench()
 {
 	int m,n,s,l,i,t=0;
 	scanf("%d %d",&m,&n);

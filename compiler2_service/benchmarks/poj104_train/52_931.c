@@ -12,7 +12,7 @@ void move(int n,int m)
 	if(m>0) move(n,m);
 }
 
-void main()
+int main_bench()
 {
 	int i,m,n;
 	scanf("%d %d",&n,&m);

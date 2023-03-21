@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char dip;
 	int a[300]={-1},b,c,d,fir,sec;

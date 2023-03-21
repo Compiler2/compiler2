@@ -7,7 +7,7 @@ int has(int n,int m){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int i,r,m,n;
 	int s[5][5];
 	for(i=0;i<5;i++){

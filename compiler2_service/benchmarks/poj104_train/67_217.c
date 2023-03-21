@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,allc,curc,all[100],cur[100],i;
 	double cp,op[100];

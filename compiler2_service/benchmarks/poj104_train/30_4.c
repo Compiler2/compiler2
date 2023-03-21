@@ -9,7 +9,7 @@ int nseven(int n)
 	else return 1;
 }
 
-int main()
+int main_bench()
 {
 	int n,i,sum=0;
 	scanf("%d",&n);

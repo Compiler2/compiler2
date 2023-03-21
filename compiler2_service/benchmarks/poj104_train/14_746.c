@@ -3,7 +3,7 @@
 struct point{
            int id,a,b,c;
            }s[100000],tmp;
-int main(int argc, char *argv[])
+int main_bench()
 {
     
     int i,n;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char c[100];
 	int boy[100]={0},girl[100]={0};

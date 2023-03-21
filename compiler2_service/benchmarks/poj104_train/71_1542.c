@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int n,j,s[250];
  int year,month1,month2,p;

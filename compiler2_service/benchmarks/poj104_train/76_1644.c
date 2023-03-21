@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int n,i,j,e,q=0,kaishi,jieshu;
   int ks[100000],js[100000],sz[100000];

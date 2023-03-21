@@ -2,7 +2,7 @@
 
 int rev(int in[5][5], int* x, int* y);
 
-void main()
+int main_bench()
 {int in[5][5];
  int n, m;
  int i,j,a;

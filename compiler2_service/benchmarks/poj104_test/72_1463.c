@@ -7,7 +7,7 @@ int due(int high[22][22],int i,int j)
 		z=0;
 	return(z);
 }
-int main()
+int main_bench()
 {
 	int i,j,n,m,high[22][22];
 	scanf("%d%d",&m,&n);

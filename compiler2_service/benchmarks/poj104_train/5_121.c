@@ -1,7 +1,7 @@
 #include <header.h>
 
 char sen[100][500], ori, final, temp;
-int main()
+int main_bench()
 {
 	int n, m, temp1, temp2, i, j, a, b, k, c, d, e;
 	int sz[100];

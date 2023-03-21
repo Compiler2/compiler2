@@ -6,7 +6,7 @@ int rn(int y)
 		return 1;
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int y,m,d,res=0,day[12]={0,31,28,31,30,31,30,31,31,30,31,30};
 	int i;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    char zf[800],dc[300][20];
    gets(zf);
    int n=strlen(zf),a=0,b=0;

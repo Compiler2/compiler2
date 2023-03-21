@@ -19,7 +19,7 @@ int huiw(int n)
   return(j==n);
 }
 
-void main()
+int main_bench()
 {
   scanf("%d%d",&a,&b);
   l=0; for (k=a;k<=b;k++)if(prime(k)&&huiw(k))

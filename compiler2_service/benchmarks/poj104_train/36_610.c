@@ -2,7 +2,7 @@
 
 int num[128];
 char str[1000];
-int main()
+int main_bench()
 {
     int l1,n;
 

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int sushu[20000]={0},n,i,j,k,count=0,biaoji[50000]={0};
 	sushu[0]=2;

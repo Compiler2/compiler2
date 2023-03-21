@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {char a[256],b[256];
 int i,j,n,k,l;
 scanf("%d\n",&n);

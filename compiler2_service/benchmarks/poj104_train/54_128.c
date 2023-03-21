@@ -7,7 +7,7 @@ long int power(int a,int b)
     pro*=a;
 	return pro;
 }
-main()
+main_bench_bench()
 {
 	int n,k;
 	long int m,a,p,q;

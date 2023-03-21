@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int year,mounth,day,count=0,t=0;
 	scanf("%d%d%d",&year,&mounth,&day);

@@ -75,7 +75,7 @@ int calc( int n )
 	}
 	return (win - lose) * 200;
 }
-int main()
+int main_bench()
 {
 	int n;
 	while( scanf("%d",&n) && n )

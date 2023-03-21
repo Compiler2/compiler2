@@ -19,7 +19,7 @@ int change(char a)
      return(b);
   }
 
-int main()
+int main_bench()
 {
      char a[251],b[251];
 	 int c[300];

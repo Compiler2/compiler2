@@ -12,7 +12,7 @@ void strre(char a[])
 		a[i]=t;
 	}
 }
-void main()
+int main_bench()
 {
 	int i,j,k=0,t;
 	char a[600],b[500][500],c[500],d[500];

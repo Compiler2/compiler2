@@ -25,7 +25,7 @@ unsigned findday(unsigned y,unsigned m,unsigned d)
  return day;
 }
 
-int main()
+int main_bench()
 {
     unsigned y1,m1,d1,y2,m2,d2,i,p0,p1,c=0,p2,s; 
     scanf("%u %u %u",&y1,&m1,&d1);

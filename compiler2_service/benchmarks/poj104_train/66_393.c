@@ -2,7 +2,7 @@
 
 int Dijitian(int Y,int M,int D);
 int isRunNian(int Y);
-int main(){
+int main_bench(){
 int Y,M,D;
 scanf("%d%d%d",&Y,&M,&D);
 int X1=0;

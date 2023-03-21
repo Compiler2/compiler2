@@ -2,7 +2,7 @@
 
 int Run(int);
 int DI(int,int); 
-int main()
+int main_bench()
 { 
 	int n,j,m;
 	int year[200],month[200][2],a[200];

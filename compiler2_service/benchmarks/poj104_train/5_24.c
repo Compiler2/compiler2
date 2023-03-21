@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	float a;
 	int bar=0;
 	scanf("%f",&a);

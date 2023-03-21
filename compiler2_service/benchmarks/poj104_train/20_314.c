@@ -14,7 +14,7 @@ int MAX(char str[],int len)
 	}
 	return (max);
 }
-void main()
+int main_bench()
 {
 	char str[10],substr[3];
 	int stop,len,i;

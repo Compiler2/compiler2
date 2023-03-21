@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int sum=0,max=0;
 	int pre[101][2];
 	int n,i=0;

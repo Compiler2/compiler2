@@ -10,7 +10,7 @@ int month(int i)
 			return 30;
 }
 
-int main()
+int main_bench()
 {
 	int k,i;
 	scanf("%d",&k);

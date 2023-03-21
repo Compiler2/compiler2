@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
     char s[100],d[100][100]={'\0'},c[100]; 
     int i=0,j=0,k,weizhi1=-1,weizhi2,dancishu;

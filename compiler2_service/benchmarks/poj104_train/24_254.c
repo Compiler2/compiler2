@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char sen[300]={0}, word[50][50]={0}, ax[50], in[50];
 	int i=0, j=0, e, lens, max=0, min=50;

@@ -13,7 +13,7 @@ void bubble_sort(char s[],int l)
                 s[j+1]=t;
             }
 }
-int main()
+int main_bench()
 {
     char s[502],a[502],b[502];
     int l,i;

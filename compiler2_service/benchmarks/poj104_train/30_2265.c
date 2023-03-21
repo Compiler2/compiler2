@@ -2,7 +2,7 @@
 
     int yu7WuGuan(int); 
     
-    int main(){
+    int main_bench(){
          int num, i, result = 0; 
          scanf("%d", &num); 
          for(i = 1; i <= num; i++) { 

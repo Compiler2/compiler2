@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int n,i;
 double rat[100],e[100],su[100];

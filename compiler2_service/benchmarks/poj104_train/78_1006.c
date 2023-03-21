@@ -2,7 +2,7 @@
 
 int a[6];
 char b[5]={' ','z','q','s','l'};
-int main()
+int main_bench()
 {
    int i,j;
   

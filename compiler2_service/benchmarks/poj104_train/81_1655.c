@@ -30,7 +30,7 @@ int jiaohuan(int a[5][5], int n, int m)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i, j, c;
 	for(i=0;i<5;i++)

@@ -31,7 +31,7 @@ int dijitian(int year,int month,int day){
 	result+=day;
 	return result;
 }
-int main(){
+int main_bench(){
 	int n,i;
 	int year,month1,month2,a,b,day=1;
 	scanf("%d\n",&n);

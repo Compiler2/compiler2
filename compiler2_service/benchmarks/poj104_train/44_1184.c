@@ -14,7 +14,7 @@ void fy(char c[])
     printf("%d\n",s);
 }
 
-int main()
+int main_bench()
 {
     int k;
     char a[1000];

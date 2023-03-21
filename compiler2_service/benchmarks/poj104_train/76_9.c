@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int n,i,a[100],b[100],min=10000,max=0,flag;
 float j;

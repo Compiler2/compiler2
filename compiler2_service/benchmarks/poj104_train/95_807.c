@@ -1,7 +1,7 @@
 #include <header.h>
 
 int y(int x);
-main()
+main_bench_bench()
 {
     char a[80],b[80];char m;
     gets(a);

@@ -18,7 +18,7 @@ void xingqi(int x){
 		}
 }
 
-int main(){
+int main_bench(){
 	int days[]={0,3,0,3,2,3,2,3,3,2,3,2,3};
 	int y,m,d,w,i;
 	scanf("%d%d%d",&y,&m,&d);

@@ -38,7 +38,7 @@ void reverse( int a)
 
     }
 
-int main()
+int main_bench()
 {
     int m,a;
     int i=1;

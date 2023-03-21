@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {struct xuesheng
 {char x[21];
  int qimo;

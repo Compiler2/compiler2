@@ -11,7 +11,7 @@ struct
 		int nb,b[1000],k;
 	}r[93];
 
-int main()
+int main_bench()
 {
 	int m,i,j,l,q;
 	

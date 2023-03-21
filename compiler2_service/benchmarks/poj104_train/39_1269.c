@@ -10,7 +10,7 @@ struct student
 	int paper;
 	int money;
 };
-void main()
+int main_bench()
 {
 	int n,i,total=0,c1,c2,c3;
 	struct student stu[100];

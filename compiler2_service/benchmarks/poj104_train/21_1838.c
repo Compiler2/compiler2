@@ -6,7 +6,7 @@ struct shu{
 	double b;
 };
 
-void main(){
+int main_bench(){
 	struct shu s[301],t;
     int n,i,j,c=1;
 	double avg,sum=0;

@@ -3,7 +3,7 @@
 
 char f(int y);
 
-int main()
+int main_bench()
 {
 	int m,i,j,number[1000],auther[26],total=0;
 	char name[1000][27];

@@ -24,7 +24,7 @@ int reverse(int x)
     }
     return(y);
 }
-main()
+main_bench_bench()
 {
       int i,n;
       for (i=0;i<=5;i++)

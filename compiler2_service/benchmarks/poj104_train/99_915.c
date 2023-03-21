@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,sum,young=0,mid=0,old=0,oldest=0;
 	double ap,mp,op,oep;
 	scanf("%d\n",&sum);

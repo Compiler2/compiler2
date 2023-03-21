@@ -45,7 +45,7 @@ void delete_row_col(int n)
 			a[i][j] = a[i + 1][j];
 }
 
-int main()
+int main_bench()
 {
 	int n, i, j, k, sum;
 	scanf("%d", &n);

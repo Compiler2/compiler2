@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  char ori[500], a[500][6];
  int num[500] = {0}, i, n, j, count = 0;

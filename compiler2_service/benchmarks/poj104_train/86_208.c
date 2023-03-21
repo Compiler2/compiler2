@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int stu_num,stop_num,i,j;
 	int stop[100][100]={0},sum[100]={0},time[100][100]={0};  

@@ -1,7 +1,7 @@
 #include <header.h>
 
 const int N = 1000;
-int main() {
+int main_bench() {
     char s[N],max[N],min[N];
     int max_len = 0;
     int min_len = N;

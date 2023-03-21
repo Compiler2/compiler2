@@ -15,7 +15,7 @@ void xunhuan(int a[100],int n,int m)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int a[100],n,m,i;
 	scanf("%d%d",&n,&m);

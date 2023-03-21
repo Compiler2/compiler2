@@ -1,7 +1,7 @@
 #include <header.h>
 
 int count(int a,int b);
-int main()
+int main_bench()
 {
     int A[201],B[201];
     int a,b,i,n;

@@ -17,7 +17,7 @@ int Inyear(int month,int day,int year,int i,int output)
 	return output;
 }
 
-int main()
+int main_bench()
 {
 	int year[2],month[2],day[2],output=0,inyear,i;
 	scanf("%d%d%d%d%d%d",&year[0],&month[0],&day[0],&year[1],&month[1],&day[1]);

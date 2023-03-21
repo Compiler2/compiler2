@@ -24,7 +24,7 @@ w=w+c[k];
 return(w);
 }
 
-int main()
+int main_bench()
 {
     int n,m,j;
     for(j=1;j<=6;j++)

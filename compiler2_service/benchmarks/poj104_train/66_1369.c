@@ -20,7 +20,7 @@ int month(int y,int m)
 	}
 	return d;
 }
-int main()
+int main_bench()
 {
 	int a,m,b,c,i,w;
 	scanf("%d%d%d",&a,&b,&c);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i=0,j=0,k=0,temp=0,mod=0,lth=0;
 	char num[101]={'\0'};

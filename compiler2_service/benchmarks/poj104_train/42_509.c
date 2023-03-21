@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int n,k,*p,*q,m,i,j,flag;
     int a[100001];

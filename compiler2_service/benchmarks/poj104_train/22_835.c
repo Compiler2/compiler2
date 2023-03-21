@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	unsigned int a[300],max=0,smax=0;
 	char c;

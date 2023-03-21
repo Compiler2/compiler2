@@ -14,7 +14,7 @@ char* minus(char*a,char*b)
 	}
 	return a;
 }
-int main()
+int main_bench()
 {
 	char a[10][100],b[10][100];
 	int n;

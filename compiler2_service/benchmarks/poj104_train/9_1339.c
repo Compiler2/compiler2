@@ -5,7 +5,7 @@ struct patient
 	char num[10]; 
 	int age;
 }pat[100];
-int main()
+int main_bench()
 {
 	int n,i,m,k,f,j;
 	char e[10];

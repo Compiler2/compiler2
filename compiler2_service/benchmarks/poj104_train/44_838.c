@@ -32,7 +32,7 @@ void f(char s[10])
 	}
 }
 void f(char s[]);
-int main()
+int main_bench()
 {
 	int i;
 	char s[10];

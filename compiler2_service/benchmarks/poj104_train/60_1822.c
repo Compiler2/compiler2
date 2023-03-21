@@ -11,7 +11,7 @@ int sushu(int x)
 	}
     return sum;
 }
-int main()
+int main_bench()
 {
 	int m,x,num;
 	num=0;

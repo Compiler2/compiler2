@@ -15,7 +15,7 @@ int f(char str[1000],int re[1000])
     return(n);
 }
               
-void main()
+int main_bench()
 {
     int x[1000],y[1000],t[1000]={0};
     int n=0,i,j,max=0;

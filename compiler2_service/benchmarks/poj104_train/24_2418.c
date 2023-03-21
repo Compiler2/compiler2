@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char word[201][100] = {0};
 	int len[201] = {0};

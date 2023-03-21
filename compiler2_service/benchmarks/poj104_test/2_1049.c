@@ -4,7 +4,7 @@ struct BOOK{
 	int id;
 	int author[26];
 };
-int main(){
+int main_bench(){
 	struct BOOK book[1000];
 	int countauthor[26];
 	int n,i,j,minusA,no,count,max=0,maxau;

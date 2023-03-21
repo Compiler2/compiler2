@@ -9,7 +9,7 @@ struct score
 	char xibu;
 	int lunwen;	
 }student[100];
-int main()
+int main_bench()
 {
 	int i,num,money,max=0,s=0;
 	scanf("%d",&num);

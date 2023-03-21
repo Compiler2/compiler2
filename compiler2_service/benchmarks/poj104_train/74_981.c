@@ -21,7 +21,7 @@ int check2(int i)
 	if(j==x) return 1;
 	else return 0;
 }
-main()
+main_bench_bench()
 {
 	int m,n,i,j;
 	scanf("%d%d",&m,&n);

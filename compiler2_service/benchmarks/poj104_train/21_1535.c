@@ -17,7 +17,7 @@ void bubble(int*a,int n)
 }
 
 
-int main()
+int main_bench()
 {
 	int n;
 	int a[300];

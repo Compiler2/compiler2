@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int feb(int x);
     int n,i,j,a[1000],f;

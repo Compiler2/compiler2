@@ -1,7 +1,7 @@
 #include <header.h>
 
 int f(int n,int m);
-int main(){
+int main_bench(){
 	int i,j,n,m;
 	int shuzu[5][5]={0};
 	int t[5]={0};

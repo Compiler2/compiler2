@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[2][3];
 	int day=0,flag=0,i,j,sum=0,k;

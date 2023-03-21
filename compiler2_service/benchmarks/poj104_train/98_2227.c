@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,letters=0,space=0;
 	char (*word)[41];

@@ -7,7 +7,7 @@ struct Student
 	int math;
 	int score;
 };
-int main()
+int main_bench()
 {
 	int n;
 	int i,k,j;

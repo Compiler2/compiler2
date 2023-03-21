@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int a,b,n,i,sum=0,t,r;
 	char str1[255],str2[255];

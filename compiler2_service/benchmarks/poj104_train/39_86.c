@@ -12,7 +12,7 @@ struct student
 	struct student *next;
 };
 
-void main()
+int main_bench()
 {
 	int n,i=0,max=0,sum=0;
 	scanf("%d",&n);

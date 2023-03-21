@@ -25,7 +25,7 @@ void min(char a[],char b[])
 		 else
 			 printf("NO");
 }
-void main()
+int main_bench()
 {
 	char a[1000]={'\0'},b[1000]={'\0'};
 	scanf("%s %s",a,b);

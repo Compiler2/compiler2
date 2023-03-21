@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int n,p,i,j,end[100],class[100],issue[100],k[100],sum=0;
  char monitor[100],province[100],name[100][20];

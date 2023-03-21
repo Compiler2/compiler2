@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 int len1, len2 , i , count = 0 , error = 0 ;
 double line ;

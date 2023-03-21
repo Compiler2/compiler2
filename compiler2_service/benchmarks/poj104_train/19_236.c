@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[150],from[150],to[150],a[50];
 	char *p=str;

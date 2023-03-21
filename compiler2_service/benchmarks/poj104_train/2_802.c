@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char book[1000][30];
 	int n,i,j,k,r,len[1000],a[26][1000]={0},b[26]={0},max,s,c[26];

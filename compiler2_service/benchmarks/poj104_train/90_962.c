@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {     int f[501][501],i,j,num,n,m;
       for (i=1;i<=500;i++)
       {f[i][1]=1; f[1][i]=1; f[i][0]=1;}

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
       int m,q;
       scanf("%d %d",&m,&q);

@@ -19,7 +19,7 @@ int reverse(int num)
     answer=-answer;
     return answer;
 }
-main()
+main_bench_bench()
 {
     int a;
     int b;

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int x[10]={0},y[10]={0},i,j,indicator=0;
 	scanf("%d%d",&x[0],&y[0]);

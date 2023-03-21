@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
  int n,i,j,t,num;
  int br[100];
  int count[100][61]={0};

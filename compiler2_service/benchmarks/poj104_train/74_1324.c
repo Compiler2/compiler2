@@ -18,7 +18,7 @@ int su(int n)
 	if(m>0) return 0;
 	else return 1;
 }
-int main()
+int main_bench()
 {
 	int m,n,i,j,t;
 	scanf("%d %d",&m,&n);

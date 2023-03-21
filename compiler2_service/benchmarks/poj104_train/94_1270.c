@@ -4,7 +4,7 @@ int judge(int x){
 if(x%2==0){return 0;}
 else{return 1;}
 }
-int main(){
+int main_bench(){
 
 int n,number[500],count,i,p;
 scanf("%d",&n);

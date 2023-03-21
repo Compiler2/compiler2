@@ -11,7 +11,7 @@ int bijiao(char temp[],char c[])
 	}
 	return w;
 }
-int main()
+int main_bench()
 {
 	int t=0,cao,max=0,l,a[1000]={0};
 	char c[501]={0},temp[6]={0},A[1000][6]={0};

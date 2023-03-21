@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n, y, t, sum = 0, a; 
 	scanf("%d", &n);         

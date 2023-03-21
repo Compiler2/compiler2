@@ -4,7 +4,7 @@ int Compare(const void *elem1,const void *elem2)
 {
 	return *((int *)elem1)-*((int *)elem2);
 }
-int main()
+int main_bench()
 {
 	int m,n;
 	int a[100],b[100];

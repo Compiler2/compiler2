@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i,j,zimu[27]={0},loci[27]={0},minadr=100009,flag=0;
     char str[100001],num[10],*ptr,list[27];

@@ -16,7 +16,7 @@ void sum(int n) {
 	printf("%.3lf\n",sum);
 }
 
-int main()
+int main_bench()
 {
 	int m, n;
 	scanf("%d",&m);

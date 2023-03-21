@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { 
 	int days_within_a_year(int a,int b);
 	int week11,week,i;

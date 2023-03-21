@@ -1,7 +1,7 @@
 #include <header.h>
 
 int c[1000][1000]={0};
-int main(int argc, char* argv[])
+int main_bench()
 {   int i,j,k;
     int a[200][200];
  int b[200][200];

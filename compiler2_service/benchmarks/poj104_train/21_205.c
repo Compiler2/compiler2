@@ -4,7 +4,7 @@
 int i,n,a[1000],max,min;
 float aver;
 
-int main(){
+int main_bench(){
     
     scanf("%d",&n);
     scanf("%d",&a[0]);

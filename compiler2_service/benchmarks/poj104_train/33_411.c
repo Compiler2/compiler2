@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,j,x,pd;
 	char s[260]={0};
 	char *ps=s;

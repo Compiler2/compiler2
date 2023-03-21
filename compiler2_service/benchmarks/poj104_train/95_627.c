@@ -6,7 +6,7 @@ char change(char a)
 		a=a-'a'+'A';
 	return a;
 }
-int main()
+int main_bench()
 {
     char a[100];
     char b[100];

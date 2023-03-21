@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char book[1000][20]={'\0'},name[1000][30]={'\0'};
 	int length,n,i,j,number[30]={0},memory,largest,temp;

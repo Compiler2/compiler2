@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {	
 	char a[100],b[100],c;
 	int p[100],k = 1,i,j=1,n,m,d;

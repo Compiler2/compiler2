@@ -22,7 +22,7 @@ void print()
 }
 			
 		
-int main()
+int main_bench()
 {
 	for(z = 10;z <= 50;z = z + 10)
 		for(q = 10;q <= 50;q = q + 10)

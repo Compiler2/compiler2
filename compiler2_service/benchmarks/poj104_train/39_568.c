@@ -10,7 +10,7 @@ struct
 	int paper;
 }stu[101];
 
-void main()
+int main_bench()
 {
 	int N, i, max=0, p=0, total=0, sch[101]={0};
 	scanf("%d",&N);

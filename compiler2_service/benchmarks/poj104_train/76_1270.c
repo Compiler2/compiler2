@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int max,min,a[20001]={0},n,x,y,j,i,sum=0;
 
 	scanf("%d",&n);

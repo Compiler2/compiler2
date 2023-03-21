@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void sort(char a[],int n);
 	int m,n;

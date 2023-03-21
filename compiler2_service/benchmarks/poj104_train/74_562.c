@@ -7,7 +7,7 @@ int f(int a,int b)
  else
     return f(a/10,b*10+a%10);
 }
-void main()
+int main_bench()
 {
  int m,n,i,j,t=0;
  scanf("%d %d",&m,&n);

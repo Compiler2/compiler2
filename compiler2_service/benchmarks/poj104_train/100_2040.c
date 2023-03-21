@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char arrey[300];
 	int k=0,i=0,num=0,j=0,n=0;

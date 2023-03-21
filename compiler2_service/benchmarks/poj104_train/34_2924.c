@@ -2,7 +2,7 @@
 
 int shu(int a);
 
-int main(){
+int main_bench(){
 	int n,r;
 	scanf("%d",&n);
 	if(n==1){printf("End\n");return 0;}

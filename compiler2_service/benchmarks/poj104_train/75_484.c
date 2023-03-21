@@ -2,7 +2,7 @@
 
 int  num1[10000],num2[10000],n;
 
-int main()
+int main_bench()
 {
     char str;
     int temp=0,i,max=0,tmp,j;

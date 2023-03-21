@@ -62,7 +62,7 @@ void print(int a[])
 	}
 }
 
-int main()
+int main_bench()
 {
 	int x[200],y[100];
 	read(x,y);

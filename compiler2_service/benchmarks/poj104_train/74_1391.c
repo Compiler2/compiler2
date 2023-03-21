@@ -2,7 +2,7 @@
 
 int funa(int x);
 int funb(int y);
-int main()
+int main_bench()
 {
 	int m,n,i,k=0;
 	int a[100]={0};

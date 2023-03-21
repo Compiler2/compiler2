@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int n,f,i,j,b=0,c=0,m=0;
 	int s[100];

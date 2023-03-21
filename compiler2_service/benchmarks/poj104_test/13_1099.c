@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[101];
-int main()
+int main_bench()
 {
   int q=0,temp,n,i,flag=0,t[200];
   memset(a,0,sizeof(a));

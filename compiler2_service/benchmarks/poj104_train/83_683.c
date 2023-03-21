@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int score[10] = {90, 85, 82, 78, 75, 72, 68, 64, 60, 0};
     double gpa[10] = {4.0, 3.7, 3.3, 3.0, 2.7, 2.3, 2.0, 1.5, 1.0, 0};

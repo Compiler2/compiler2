@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() {
+int main_bench() {
 	double a;
 	scanf("%lf\n",&a);
 	char jjla[501];

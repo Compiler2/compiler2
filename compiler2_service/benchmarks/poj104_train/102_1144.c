@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   int n,i,k,man=0,woman=0;
   char sex[7];
   double h,x,male[40],female[40];

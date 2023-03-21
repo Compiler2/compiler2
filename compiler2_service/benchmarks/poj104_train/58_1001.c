@@ -3,7 +3,7 @@
 
 
 
-main()
+main_bench_bench()
 {
       char *k;int n;int num;int i; int pd; int j; 
       scanf("%d",&n);int *q;

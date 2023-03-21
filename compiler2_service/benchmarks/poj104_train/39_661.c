@@ -9,7 +9,7 @@ struct student{
 	int lun;
 }stu[101];
 
-int main(int argc, char* argv[])
+int main_bench()
 {	int n,i;
 	int jiang[101];
 	scanf("%d",&n);

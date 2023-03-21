@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 char str[256]={' '},sstr[256]={' '},rpl[256]={' '};
 int lstr,lsstr;

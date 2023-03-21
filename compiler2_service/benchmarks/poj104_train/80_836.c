@@ -12,7 +12,7 @@ int judge_year(int year)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i;
 	int sumdays=0;

@@ -11,7 +11,7 @@ int f(int x){
 	}
 	return z;
 }
-int main()
+int main_bench()
 {	int n;
 	scanf("%d",&n);
 int z=0;

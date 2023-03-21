@@ -3,7 +3,7 @@
 
 int count[10000];
 
-int main()
+int main_bench()
 {
 	int i,j;
 	int k;

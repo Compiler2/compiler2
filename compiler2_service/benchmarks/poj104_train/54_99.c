@@ -12,7 +12,7 @@ int undi(int n,int k,int p)
    return(z);
  }
 
-void main()
+int main_bench()
 {int n,k,p,s;
  scanf("%d %d",&n,&k);
  for(p=1;;p++)

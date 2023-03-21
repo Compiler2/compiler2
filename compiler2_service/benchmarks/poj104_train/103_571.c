@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n=1,i,j,m=0;
 	char k[1001],y[27]="abcdefghijklmnopqrstuvwxyz",z[27]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int s[26];

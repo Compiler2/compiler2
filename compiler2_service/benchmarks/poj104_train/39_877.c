@@ -10,7 +10,7 @@ struct stu
   int jj;
 };
 int a[101]={0};
-int main()
+int main_bench()
 { void pai(struct stu s[],int n,int a[]);
   struct stu s[101];
   int i=0,n=0,sum=0;

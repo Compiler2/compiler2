@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n , i , p = 0 , sum = 0 , q;
 	struct student{
 		char name[200];

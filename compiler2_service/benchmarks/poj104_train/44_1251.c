@@ -46,7 +46,7 @@ if ((a[0]=='0')&&(a[1]==0)){
 
 
 
-int main(){
+int main_bench(){
 	int j;
 	for(j=1;j<=6;j++){
 		gets(str);

@@ -18,7 +18,7 @@ int Num(int apple,int n,int k)
 	return apple;
 }
 
-int main()
+int main_bench()
 {
 	int n,k,i,apple;
 	scanf("%d%d",&n,&k);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[100][100]={0},row,col,x1,x2,y1,y2,i,j;
 	scanf("%d %d",&row,&col);

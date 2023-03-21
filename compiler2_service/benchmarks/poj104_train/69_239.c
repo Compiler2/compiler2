@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int i,m,n,carry=0;
     char a[252],b[252],A[252],B[252],ADD[252],add[252];
     scanf("%s",a);

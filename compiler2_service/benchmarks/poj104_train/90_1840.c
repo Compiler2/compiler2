@@ -30,7 +30,7 @@ int r(int zong,int dui){
 
 
 
-int main(){
+int main_bench(){
 	int k,m,n;
 	int i,dui,u;
 	scanf("%d",&k);

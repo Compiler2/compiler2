@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i;
     char a[5]={'\0','\0','\0','\0','\0'};

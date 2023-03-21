@@ -19,7 +19,7 @@ int k(int p){
 	return a;
 }
 		
-int main(){
+int main_bench(){
     int n,i,m;
 	int k1,k2;
 	scanf("%d",&n);

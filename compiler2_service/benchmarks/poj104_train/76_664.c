@@ -3,7 +3,7 @@
 struct qj{
     int a,b;
 };
-int main()
+int main_bench()
 {
 struct qj jg[50000];
 int n,i,m;

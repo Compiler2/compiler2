@@ -23,7 +23,7 @@ void bubble_sort(int a[100], char b[100][10], int n)
 		}
 }
 
-int main()
+int main_bench()
 {
 	int age[100], Age_[100]={0}, age_[100];
 	int n, i;

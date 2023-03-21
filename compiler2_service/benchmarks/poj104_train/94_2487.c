@@ -15,7 +15,7 @@ int max(int a[500],int m,int n)
 	}
 	return a[500];
 }
-int main()
+int main_bench()
 {
 	int a[500];
 	int b[500];

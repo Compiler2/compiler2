@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 	void sort(char ch1[500],char ch2[500]);
       char ch1[500],ch2[500];
 	  scanf("%s%s",ch1,ch2);

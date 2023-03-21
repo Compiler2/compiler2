@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {   int n,i,j,len,sum,zm;
     char zfc[100000],zm1;
     char *p=zfc;

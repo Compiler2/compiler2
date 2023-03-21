@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int sixty[100];
          	int n,i,j,a;
          struct patient{

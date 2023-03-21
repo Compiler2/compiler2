@@ -13,7 +13,7 @@ void getword(char a[3001],int *b)
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	char a[3001];
 	int b[300]={0},*pb,i;

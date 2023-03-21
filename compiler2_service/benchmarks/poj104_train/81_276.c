@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int a[5][5],i,j,p,n,m;
 	int matrix(int b[5][5],int e,int f);

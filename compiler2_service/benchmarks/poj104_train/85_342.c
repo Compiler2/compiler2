@@ -15,7 +15,7 @@ int first(char x[])
 		return(0);
 	else return(1);
 }
-main()
+main_bench_bench()
 {
 	int n,i;
 	char x[21];

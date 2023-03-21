@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char a[80]={0},b[80]={0},i;
     for(i=0,gets(a);i<80,a[i];i++)

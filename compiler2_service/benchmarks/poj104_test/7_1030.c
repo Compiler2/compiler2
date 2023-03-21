@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  char string[257],sub[257],re[257];
  char out[257]={'\0'};

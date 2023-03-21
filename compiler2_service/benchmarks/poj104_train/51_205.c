@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int n,x=0,pp,count[550]={0},max=0;
 scanf("%d\n",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char z[2][200];
 	scanf("%s %s",z[0],z[1]);

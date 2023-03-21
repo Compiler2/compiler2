@@ -31,7 +31,7 @@ void reverse(int x)
     }
     printf("\n");
 }
-int main()
+int main_bench()
 {
     int a[6],i;
     for(i=0;i<6;i++)

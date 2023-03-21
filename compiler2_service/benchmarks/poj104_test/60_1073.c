@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {	int flag,count,n,i,j,k[100000],flagg;
 
 	scanf("%d",&n);

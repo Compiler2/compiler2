@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int extent[10001],n,i,min,max;
 	scanf("%d",&n);

@@ -9,7 +9,7 @@ char q1;
 char q2;
 int pap;
 }stu[101];
-void main()
+int main_bench()
 {
 int n,i;
 char namem[21];

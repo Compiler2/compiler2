@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int point[1000],i,p,sta,end,total,n,s;
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,j,m,p;
 	char zichuan[257],danci[257],tihuan[257];

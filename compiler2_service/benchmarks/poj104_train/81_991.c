@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[5][5];
-void main()
+int main_bench()
 {
 	int jiaohuan(int x,int y);
 	int i,j;

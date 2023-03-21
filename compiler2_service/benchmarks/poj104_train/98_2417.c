@@ -2,7 +2,7 @@
 
 
 char dat[1000][41];
-int main()
+int main_bench()
 {
     int l1,cou;
     int n;

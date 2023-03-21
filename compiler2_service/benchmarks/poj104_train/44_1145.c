@@ -14,7 +14,7 @@ long down(long x)
         }
      return m;
      }
-main()
+main_bench_bench()
 {
       long i,k,l;
       for(i=1;i<=n;i++)

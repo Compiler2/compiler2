@@ -6,7 +6,7 @@ struct Word {
 	int sequence;
 };
 
-int main()
+int main_bench()
 {
 	int n;
 	int i, k;

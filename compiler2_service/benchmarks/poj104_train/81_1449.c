@@ -23,7 +23,7 @@ int change(int n,int m,int a[][5])
 	return s;
 }
 
-main()
+main_bench_bench()
 {
 	int a[5][5],i,j,n,m;
 	for(i=0;i<5;i++){

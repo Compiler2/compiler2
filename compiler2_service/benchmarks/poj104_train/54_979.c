@@ -14,7 +14,7 @@ int f(int n,int k)
                      }
     return t[n-1];                 
     }
-int main()
+int main_bench()
 {
     int m(int n,int k);
     int n,k;

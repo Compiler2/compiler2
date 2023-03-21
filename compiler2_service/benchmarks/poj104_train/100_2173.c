@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char zfc[300],i;
 	int dec=0,tag,cs[26]={0},m=0,j;
 	scanf("%s",zfc);

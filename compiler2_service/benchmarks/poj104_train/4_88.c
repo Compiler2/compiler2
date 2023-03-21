@@ -2,7 +2,7 @@
 
 
 
-main(){
+main_bench(){
        int row,col,i,j,*p[100];
        scanf("%d %d",&row,&col);
        for(i=0;i<row;i++){

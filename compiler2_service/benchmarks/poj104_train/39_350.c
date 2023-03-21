@@ -10,7 +10,7 @@ char west;
 int paper;
 };struct student stu[100];
 
-void main()
+int main_bench()
 {int m=0,n,i;
 long sum,t=0,a[100]={0};
 scanf("%d",&n);

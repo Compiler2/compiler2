@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {   int a;
 	scanf("%d",&a);
 	if(a<10)

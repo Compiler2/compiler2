@@ -1,7 +1,7 @@
 #include <header.h>
 
 int judge (int x,int y);
-int main(){
+int main_bench(){
 	int sz[5][5];
 	int n,m;
 	int result;

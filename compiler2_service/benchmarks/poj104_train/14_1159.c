@@ -1,7 +1,7 @@
 #include <header.h>
 
 int stu [100000];
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,y,t,m;
 	struct s{

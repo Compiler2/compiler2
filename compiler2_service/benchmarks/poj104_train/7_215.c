@@ -1,6 +1,6 @@
 #include <header.h>
 
-	int main()
+	int main_bench()
 	{
 		char string[257]={0},substring[257]={0},replacement[257]={0};
 	char temp[257]={0},string_1[257]={0},string_2[257]={0};

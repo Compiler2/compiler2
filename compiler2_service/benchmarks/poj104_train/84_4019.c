@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int max=0,mbx=0,i,x;
 	scanf("%d\n",&i);
 	while(i>=0){

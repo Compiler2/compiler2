@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int i,n,grade1[100],grade2[100],lunwen[100],money[100]={0},moneyall=0,max=0,p;
 char name[100][100],ganbu[100],xibu[100];
 scanf("%d",&n);

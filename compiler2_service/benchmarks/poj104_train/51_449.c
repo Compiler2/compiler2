@@ -15,7 +15,7 @@ int compare(char str1[],char str2[],int x)
 	return 0;
 }
 
-void main()
+int main_bench()
 {
 	int i,j,l,k,n,sum,max=0;
 	char a[501]={'\0'},b[6]={'\0'},c[100][6]={'\0'};

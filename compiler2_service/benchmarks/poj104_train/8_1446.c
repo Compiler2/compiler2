@@ -31,7 +31,7 @@ int link(int n,int m)
     printf("%d",b[m-1]);
 }
     
-int main()
+int main_bench()
 {
     int n,m;
     scanf("%d %d",&n,&m);

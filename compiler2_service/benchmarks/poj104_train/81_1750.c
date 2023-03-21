@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     #define H 5
     #define L 5
     int sz[H][L];

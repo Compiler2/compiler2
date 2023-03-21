@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int w,i,a[365],c=0;
 	scanf("%d",&w);
 	a[0]=w;

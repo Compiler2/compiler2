@@ -53,7 +53,7 @@ float jd(int s)
 	return (m);
 }
 
-int main()
+int main_bench()
 {
 	int i,n,sum=0;
 	float x=0;

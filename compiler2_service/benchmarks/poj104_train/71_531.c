@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,temp,a[200],b[200],c[200],d[13]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int cha=0,j;

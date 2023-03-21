@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,x,y,j,k=0,p,q,l=0;
 	int a[10000]={0};

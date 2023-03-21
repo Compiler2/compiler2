@@ -18,7 +18,7 @@ int m(int n)
     }
     
 }
-main()
+main_bench_bench()
 {
       int a,b,c,x;
       scanf("%d %d %d",&a,&b,&c);

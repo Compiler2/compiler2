@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,shousuo[100],shuzhang[100],zanshi[100];
 	int i,j,e;

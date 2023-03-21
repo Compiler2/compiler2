@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char in[200],out[200];
 	int len,i,j=0;

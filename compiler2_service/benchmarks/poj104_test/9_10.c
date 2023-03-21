@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char tmp[100];
 	int n,i,j=0,o=0,tmpn;
 	struct{

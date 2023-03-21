@@ -20,7 +20,7 @@ int fen(int m,int k)
     } 
     return t;              
 }
-int main()
+int main_bench()
 {
     int fen(int m,int k);
     int n,i,x;

@@ -5,7 +5,7 @@ struct l
        char s[10];
        float h;
 } a[40];
-main()
+main_bench_bench()
 {
       int i=0,j=0,k=0,w=0,n;
       float b[40],c[40],tmp=0;

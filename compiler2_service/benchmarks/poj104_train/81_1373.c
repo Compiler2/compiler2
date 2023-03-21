@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int reverse(int m,int n);
 	int m,n,i,j,count=0;

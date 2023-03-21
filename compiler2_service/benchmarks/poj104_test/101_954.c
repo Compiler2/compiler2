@@ -66,7 +66,7 @@ int pc(int i,int j,int k)
 		return d;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j,k,e;
 	for(i=0;i<3;i++)

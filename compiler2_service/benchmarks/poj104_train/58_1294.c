@@ -2,7 +2,7 @@
 
 char s[100];
 int pd(int);
-int main()
+int main_bench()
 {
     int n,i,j,q;    
     scanf("%d\n",&n);

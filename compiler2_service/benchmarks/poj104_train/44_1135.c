@@ -26,7 +26,7 @@ int reverse(int num){
 	return z;
 }
 
-int main()
+int main_bench()
 {	int n;
 	int i;
 	for(i=0;i<6;i++){

@@ -4,7 +4,7 @@
 
 
 
-int main() {
+int main_bench() {
 	int row ,col,a[100][100];
 	int i,j,k;
 	int n=0;

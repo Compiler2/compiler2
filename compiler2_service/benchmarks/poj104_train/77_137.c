@@ -18,7 +18,7 @@ void f(int j){
      }
 
 }
-int main(){
+int main_bench(){
     scanf("%s",str);
     n=strlen(str);
     c1=str[0];

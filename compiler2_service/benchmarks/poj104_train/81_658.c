@@ -2,7 +2,7 @@
 
 int juzhen(int n,int m);
 int a[5][5];
-int main(){
+int main_bench(){
     
 	int i,j;
 	for(i=0;i<5;i++){

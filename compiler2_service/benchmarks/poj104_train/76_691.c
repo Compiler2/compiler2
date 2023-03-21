@@ -6,7 +6,7 @@ int max(int a,int b)
 int min(int a,int b)
 {return a<b?a:b;}
 
-int main()
+int main_bench()
 {
  int i,j,n,a,b,ma=0,mi=999999,f=1;
  scanf("%d",&n);

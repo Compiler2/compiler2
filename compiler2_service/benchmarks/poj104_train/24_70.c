@@ -1,7 +1,7 @@
 #include <header.h>
 
 char sentence[1000];
-void main()
+int main_bench()
 {
 	gets(sentence);
 	int i,lenth=0,place=0,max=0;

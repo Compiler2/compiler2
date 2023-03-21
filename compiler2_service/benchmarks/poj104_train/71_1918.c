@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
  int n,i,year[200],mouth1[200],mouth2[200],result[200];
  int djt(int year , int mouth);
  scanf("%d", &n);

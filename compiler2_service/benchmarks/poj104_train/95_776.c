@@ -8,7 +8,7 @@ void ast(char s[])
 		if(s[i]>='a'&&s[i]<='z')
 			s[i]=s[i]-32;
 }
-void main()
+int main_bench()
 {
 	char s1[50],s2[50];
 	gets(s1);

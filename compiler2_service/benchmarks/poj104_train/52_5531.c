@@ -13,7 +13,7 @@ void lunhuan(int b[],int c,int d)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int a[101],n,m,i;
 	scanf("%d%d",&n,&m);

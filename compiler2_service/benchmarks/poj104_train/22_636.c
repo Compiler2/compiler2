@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 char c=',';int i=0,a[301],j,max=0;
 while(c==',')   {scanf("%d%c",&a[i],&c);i++;}

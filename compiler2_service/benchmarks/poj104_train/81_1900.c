@@ -19,7 +19,7 @@ int check(int a[5][5],int n,int m){
 }
 
 
-int main()
+int main_bench()
 {
 	int square[5][5],n,m;
 	int row,col;

@@ -23,7 +23,7 @@ int minnum(int n,int k)
 	}
 	return a;
 }
-int main()
+int main_bench()
 {
 	int n,k;
 	scanf("%d %d",&n,&k);

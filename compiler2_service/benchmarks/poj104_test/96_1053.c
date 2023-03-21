@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 int len,i,P=0;
 int panel=0;

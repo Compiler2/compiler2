@@ -1,7 +1,7 @@
 #include <header.h>
 
 int test(int *,int *,int);
-int main(){
+int main_bench(){
 	int n,integer[300],aux,*curp,i;
 	scanf("%d%d",&n,integer);
 	n--;

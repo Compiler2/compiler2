@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	char a[1000],words[1000][1001];
 	gets(a);
     int n,k,i;

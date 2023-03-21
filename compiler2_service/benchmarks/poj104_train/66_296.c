@@ -3,7 +3,7 @@
 
 int LpYr(int yr);
 
-int main()
+int main_bench()
 {
     int y,m,d,i;
     int days,dayofwn;

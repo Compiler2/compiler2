@@ -54,7 +54,7 @@ void once(int a)
      map[a+1][i]=map[i][a+1]=100000;
      
 }
-int main()
+int main_bench()
 {
     int i,j,y=1; 
     int v,u;

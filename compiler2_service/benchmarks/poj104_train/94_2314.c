@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int N,m,n,i,j,tran;
     scanf("%d",&N);
     int zhengzhengshu[N];

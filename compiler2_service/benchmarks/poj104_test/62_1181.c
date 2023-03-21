@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 char sb[1000]={'\0'};
 gets(sb);
 for(int i=0;sb[i]!='\0';i++){

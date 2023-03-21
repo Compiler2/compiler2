@@ -3,7 +3,7 @@
 int day;
 int bujili(int m);
 int tianshu(int m);
-int main(){
+int main_bench(){
 	int i;
 	scanf("%d",&day);
 	for(i=1;i<=12;i++){

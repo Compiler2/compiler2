@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {int zu[100][100];
  int n,a,b,c,d;
  scanf("%d",&n);

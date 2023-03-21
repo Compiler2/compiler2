@@ -8,5 +8,5 @@ void echo()
 	echo();
 	printf("%c",c1);
 }
-   int main()
+   int main_bench()
    {echo();}

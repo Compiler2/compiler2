@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
   int yibai=0;
   int wushi=0;

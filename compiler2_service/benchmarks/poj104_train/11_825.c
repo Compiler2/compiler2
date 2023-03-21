@@ -11,7 +11,7 @@ int leap(int Y)
     else
     return 0;
 }
-int main()
+int main_bench()
 {
     int Y,M,D;
     scanf("%d %d %d",&Y,&M,&D);

@@ -6,7 +6,7 @@ struct patient
 	int age;
 }p[100],e,old[100],young[100];
 
-int main()
+int main_bench()
 {
 	int n,i,j=0,k=0,o=-1,y=-1;
 	scanf("%d",&n);

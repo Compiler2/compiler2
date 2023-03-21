@@ -1,7 +1,7 @@
 #include <header.h>
 
 int feibo(int a);
-int main()
+int main_bench()
 {
 	int k,sz[100],i,szresult[100];
 	sz[100]=0;

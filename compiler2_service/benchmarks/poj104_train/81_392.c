@@ -22,7 +22,7 @@ int jiaohuan(int x,int y)
 			return(1);
 	}
 }
-int main()
+int main_bench()
 {
 	int j,n,m;
 	for(j=0;j<5;j++)

@@ -9,7 +9,7 @@ int f(int m)
 }
 char week[7][5]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun."};
 int month[2][12]={31,28,31,30,31,30,31,31,30,31,30,31,31,29,31,30,31,30,31,31,30,31,30,31};
-int main()
+int main_bench()
 {
 	int Year,Month,Day,Week;
 	int i;

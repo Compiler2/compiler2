@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fanxu(int x);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n=0,t=0;
 	while(1)

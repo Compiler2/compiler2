@@ -9,7 +9,7 @@ int max(int a,int b)
     z=b;
     return(z);
 }
-int main()
+int main_bench()
 {
     int max(int a,int b);
     int i,n,x=0;

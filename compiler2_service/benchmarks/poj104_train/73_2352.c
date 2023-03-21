@@ -3,7 +3,7 @@
 
 
 
-void main() 
+int main_bench() 
 { 
 int i,j,k=0; 
 int a[5][5],max[5],min[5]; 

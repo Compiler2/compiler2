@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int count,number[500],i,p,len,judge;
 	char input[1000],name[500];
 	gets(input);

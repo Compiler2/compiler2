@@ -7,7 +7,7 @@ int f(int n,int m)
 	else z=1;
 	return(z);
 }
-void main()
+int main_bench()
 {
 	int i,j,t,x,p,q,a[5][5];
 	for(i=0;i<5;i++)

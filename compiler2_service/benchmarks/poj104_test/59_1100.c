@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int m,n,i,j,k,patient=0,flag[103][103];
     char room[103][103];
     scanf("%d",&n);

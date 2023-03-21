@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char d1[1000],d2[1000];
 	int a1_cap[26]={0},a1_sma[26]={0},a2_cap[26]={0},a2_sma[26]={0};

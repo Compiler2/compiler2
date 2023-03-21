@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char danchi[1000];
 	char e[50][1000],a[1000],b[1000];gets(danchi);

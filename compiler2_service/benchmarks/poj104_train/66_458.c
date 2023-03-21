@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int year,mouth,day,k,sum=0;
 	scanf("%d%d%d",&year,&mouth,&day);
 	sum=(year-1)%7+year/4-year/100+year/400;

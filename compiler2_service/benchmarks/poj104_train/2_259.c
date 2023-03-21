@@ -5,7 +5,7 @@ struct book
 	int ISBN;
 	char name[26];
 }b[999];
-int main()
+int main_bench()
 {
 	int i,j,m,k[26],max=0;
 	char a,d='A';

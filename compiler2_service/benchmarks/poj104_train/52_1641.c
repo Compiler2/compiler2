@@ -1,7 +1,7 @@
 #include <header.h>
 
 void f(int *p,int,int);
-void main()
+int main_bench()
 {int n,m,a[100],i,*p;
 	scanf("%d%d",&n,&m);
    for(i=0;i<=n-1;i++)

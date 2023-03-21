@@ -7,7 +7,7 @@ int qq(int m,int n)
    return 0;
     
 }
-int main()
+int main_bench()
 {
     int a,b,c,d[5][5],i,j;
  

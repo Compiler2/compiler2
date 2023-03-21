@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int n,k,x[100][4],y,z;
 	char a[100][20],b[100],c[100];

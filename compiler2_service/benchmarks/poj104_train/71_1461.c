@@ -8,7 +8,7 @@ int is_leap_year(int y)
     else
         return 0;
 }
-int main()
+int main_bench()
 {
     int i, n, j;
     int year, m1, m2, max, min, sum;

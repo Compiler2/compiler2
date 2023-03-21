@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i=0,h[100],l[100],t[101]={-1,0},len[100],j=0;
 	int max=0,r=0;

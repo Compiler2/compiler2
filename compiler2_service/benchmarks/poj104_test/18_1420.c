@@ -5,7 +5,7 @@ void delete1(int,int);
 void delete2(int,int);
 void movea (int);
 int a[100][100],sum=0;
-int main()
+int main_bench()
 {
 	int n,i,j,k;
 	scanf("%d",&n);

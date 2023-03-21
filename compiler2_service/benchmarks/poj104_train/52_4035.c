@@ -4,7 +4,7 @@
 void right_shift_one(int* a,int n);
 void right_shift_array(int* a,int n,int m);
 
-int main() {
+int main_bench() {
 	int n,m;
 	scanf("%d %d",&n,&m);
 	int* a=(int *)calloc(n,sizeof(int));

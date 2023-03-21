@@ -18,7 +18,7 @@ int input(char s[],int a[])
 		}		
 	return(j+1);
 }
-void main()
+int main_bench()
 {
 	char a[5050],b[5050];
 	int x[1010],y[1010],n,i,count[1010]={0};

@@ -25,7 +25,7 @@ int leapYearBetween(int a,int b)
 	return years;
 }
 
-int main()
+int main_bench()
 {
 	int y,m,d;
 	scanf("%d%d%d",&y,&m,&d);

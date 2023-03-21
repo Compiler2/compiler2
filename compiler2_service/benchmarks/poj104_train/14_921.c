@@ -11,7 +11,7 @@ struct Student
              int num;
              int zongfen;
       }st[3]={{0,0},{0,0},{0,0}};
-main()
+main_bench_bench()
 {
       int n,i,k,c[10],j[10];
       int a[100001];

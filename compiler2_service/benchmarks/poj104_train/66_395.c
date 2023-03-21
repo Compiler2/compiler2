@@ -2,7 +2,7 @@
 
 int DiJiTian(int year,int month,int day);
 int isRunNian(int year);
-int main(){
+int main_bench(){
 	int year,month,day,i=0,j=0,k=0,sum=0,runnian=0;
 	scanf("%d %d %d",&year,&month,&day);
 	if(year>2800){

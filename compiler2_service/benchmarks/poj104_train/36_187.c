@@ -7,7 +7,7 @@ int tj(char str[],char x)
 		if(x==str[i]) count++;
 	return(count);
 }
-void main()
+int main_bench()
 {	int i,p=1;
     char a[100],b[100];
 	scanf("%s %s",a,b);

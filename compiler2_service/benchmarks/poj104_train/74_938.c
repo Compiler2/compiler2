@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int m,n,a,b,c,i;
 int sushu(int x);
 int huiwen(int y);

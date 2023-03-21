@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char str[2000],s[200][200];
 	gets(str);
 	int len=strlen(str);

@@ -15,7 +15,7 @@ int check(int q,int t,int b[])
 	}
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int n,k,a[1000],i;
 	scanf("%d %d",&n,&k);

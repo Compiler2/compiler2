@@ -24,7 +24,7 @@ void f(int m,char a,char b)
 	}
 	return f(m-1,a,b);
 }
-int main()
+int main_bench()
 {
 	scanf("%s",str);
 	n=strlen(str);

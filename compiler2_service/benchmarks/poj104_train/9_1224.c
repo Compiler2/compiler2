@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int i,n,m,j,k;
 	scanf("%d",&n);
 	struct br{

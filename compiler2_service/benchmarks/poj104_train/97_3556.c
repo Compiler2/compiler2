@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int money,yuan100,yuan50,yuan20,yuan10,yuan5,yuan1;
 	scanf("%d",&money);

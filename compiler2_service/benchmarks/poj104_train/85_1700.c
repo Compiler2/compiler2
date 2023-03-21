@@ -9,7 +9,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int n,i,i1,k=1;
     long len;

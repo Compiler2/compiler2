@@ -40,7 +40,7 @@ void printarray(int a[11][11])
         }
 }
 
-int main()
+int main_bench()
 {
     int m,n,i;
     scanf("%d %d",&m,&n);

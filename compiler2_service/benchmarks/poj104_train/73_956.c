@@ -22,7 +22,7 @@ int min(int array[5][5],int n)
 	}
 	return t;
 }
-int main()
+int main_bench()
 {
 	int max(int array[5][5],int x);
 	int min(int array[5][5],int x);

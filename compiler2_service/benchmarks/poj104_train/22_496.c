@@ -9,7 +9,7 @@ if(a[min]>a[j])min=j;
 t=a[i];a[i]=a[min];a[min]=t;
 }
 }
-void main()
+int main_bench()
 {
 	int a[300],n=1,i;
 	scanf("%d",a);

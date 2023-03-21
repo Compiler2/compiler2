@@ -15,7 +15,7 @@ int Issubstr(char *s,char *subs)
 	if(i<strlen(s)) return i;
 	return -1;
 }
-int main()
+int main_bench()
 {
 	char s[257],sub[257],replace[257];
 	int i,j=0;

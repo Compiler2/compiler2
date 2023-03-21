@@ -10,7 +10,7 @@ struct student{
 	int money;
 }stu[102]={0};
 struct student temp;
-void main()
+int main_bench()
 {
 	int i,j,n,sum=0;
 	scanf("%d",&n);

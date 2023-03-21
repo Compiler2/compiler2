@@ -12,7 +12,7 @@ struct Scholarship
 	double sum;
 }a[100];
 
-int main()
+int main_bench()
 {
 	int n;
 	int i,j;

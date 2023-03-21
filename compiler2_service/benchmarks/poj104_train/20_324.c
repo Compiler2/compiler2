@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int n,max,m,i;
 	char str1[11],str2[4],c,s[]="";

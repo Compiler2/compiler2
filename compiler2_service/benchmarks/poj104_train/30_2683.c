@@ -12,7 +12,7 @@ int seven(int x){
 	}
 	return 0;
 }
-int main(){
+int main_bench(){
 	int n,i,sum=0;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++){

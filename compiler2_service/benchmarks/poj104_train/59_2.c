@@ -3,7 +3,7 @@
 
 char a[100][100];
 
-int main()
+int main_bench()
 {
     int m, n, i, j, k, count = 0;
     scanf("%d", &n);

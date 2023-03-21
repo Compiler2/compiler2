@@ -7,7 +7,7 @@
 int g[100][100];
 
 
-int main()
+int main_bench()
 {
 	int r,c;
 	scanf("%d%d",&r,&c);

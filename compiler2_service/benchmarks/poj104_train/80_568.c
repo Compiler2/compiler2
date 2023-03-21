@@ -43,7 +43,7 @@ int countday(int a,int b,int c)
 	}
 	return t;
 }
-void main()
+int main_bench()
 {
 
 	int year[2],month[2],day[2],sum,a,b;

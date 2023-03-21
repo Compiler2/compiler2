@@ -44,7 +44,7 @@ void x1(float s[50],int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int N,count;
 	int i=0;

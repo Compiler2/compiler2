@@ -21,7 +21,7 @@ double FindFBN( int nplus2,  int* FBNplus2)
 }
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m;
 	int i;

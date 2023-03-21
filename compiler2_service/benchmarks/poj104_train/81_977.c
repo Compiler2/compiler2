@@ -10,7 +10,7 @@ int panduan (int n ,int m)
 	else return(2);
 }
 
-void main()
+int main_bench()
 {
 	int a[5][5];
 	int i,j;

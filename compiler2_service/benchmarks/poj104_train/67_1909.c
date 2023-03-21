@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int n,all[100],work[100];
   double c[100],m;

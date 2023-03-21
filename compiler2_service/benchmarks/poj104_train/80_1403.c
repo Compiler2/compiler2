@@ -1,7 +1,7 @@
 #include <header.h>
 
 int R(int year);
-int main()
+int main_bench()
 {
 	int year1,month,day, total1,year,total2,tianshu,year2,month2,day2,i;
 	scanf("%d%d%d",&year1,&month,&day);

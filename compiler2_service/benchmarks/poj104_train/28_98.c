@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char ch[2000]={'\0'};
 	int flag=0,n=0,i,j=0;

@@ -19,7 +19,7 @@ inserting(char a[],char b[])
 	for(i=0;i<n+3;i++)printf("%c",a[i]);
 	printf("\n");
 }
-int main()
+int main_bench()
 {
 	int i,j,k,n,m;
 	char str[100][50],str1[100][50];

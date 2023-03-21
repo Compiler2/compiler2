@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char name[20],name1[20],gb,xb;
 	int n,aver,py,lw,max=0,i,j;

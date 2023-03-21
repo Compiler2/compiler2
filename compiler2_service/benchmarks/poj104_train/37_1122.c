@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,j;
 	char a[100001];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char a[100][100000];
-int main(){
+int main_bench(){
 	struct {
 		int s;
 		char z;

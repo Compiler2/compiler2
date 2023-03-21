@@ -1,7 +1,7 @@
 #include <header.h>
 
 int min(int x,int y);
-int main()
+int main_bench()
 {
 char s[501]={0};
 int d[501][501]={0},e[501]={0};

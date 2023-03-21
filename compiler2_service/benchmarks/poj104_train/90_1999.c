@@ -20,7 +20,7 @@ int fang(int m,int n)
 	}
 	return(c);
 }
-int main()
+int main_bench()
 {
 	int t,m,n,i,c;
 	scanf("%d",&t);

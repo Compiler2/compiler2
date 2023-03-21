@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,shuzhou[20002],a[500],b[500],max=0,min=10000,p=0;
 	for(i=0;i<20002;i++)

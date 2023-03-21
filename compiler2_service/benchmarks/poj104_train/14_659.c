@@ -7,7 +7,7 @@ struct stu
 	int sx;
 	int zf;
 }s1,s2,s3,s;
-int main()
+int main_bench()
 {
 
 	int n,i;

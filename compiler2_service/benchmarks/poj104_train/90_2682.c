@@ -1,7 +1,7 @@
 #include <header.h>
 
 int digui(int x,int y);
-int main()
+int main_bench()
 {
 	int t,i;
 	scanf("%d",&t);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[600];
-int main()
+int main_bench()
 {
 	int comp(int sta,int lenx);
 	int i,j,len,p;

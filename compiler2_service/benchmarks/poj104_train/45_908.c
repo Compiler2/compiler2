@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int i,j,n=0;
 char chang[50],duan[50];

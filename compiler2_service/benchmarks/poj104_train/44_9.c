@@ -1,7 +1,7 @@
 #include <header.h>
 
 int reverse(char*);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i;
 	char a[6][10];

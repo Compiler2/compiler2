@@ -33,7 +33,7 @@ void qishu(int a)
 		else qishu((a*3+1));
 	}
 }
-void main()
+int main_bench()
 {
 	void oushu(int a);
 	void qishu(int a);

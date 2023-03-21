@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i=1;
     int s=0;

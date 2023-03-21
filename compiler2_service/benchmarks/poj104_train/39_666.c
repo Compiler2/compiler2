@@ -9,7 +9,7 @@ struct reward
    char xb;
    int lw;
 };
-int main()
+int main_bench()
 {
 	int n,*pr,sum=0,max;
 	struct reward *p,temp;

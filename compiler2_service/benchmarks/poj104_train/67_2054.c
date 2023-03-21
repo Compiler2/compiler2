@@ -6,7 +6,7 @@ struct p
     float t;
     int judge;
 };
-int main()
+int main_bench()
 {
     int m,x,y;
     scanf("%d",&m);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int fenzi[100];
 	int fenmu[100];
      fenzi[0]=2;

@@ -2,7 +2,7 @@
 
 int m,n;
 int a[11][11];int b[11][11];
-main ()
+main_bench()
 {
      int i,j,h;
      memset(a,0,sizeof(int));

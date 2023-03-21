@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main() {
+main_bench_bench() {
        char s[50],targets[50];
        scanf("%s %s",&s,&targets);
        int slen=strlen(s);

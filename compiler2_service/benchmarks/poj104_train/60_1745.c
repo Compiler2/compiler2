@@ -11,7 +11,7 @@ int f(int n){
         }
     return p;
     }
-int main(){
+int main_bench(){
     int n,i,o=0;
     scanf("%d",&n);
     for(i=2;i<=n-2;i++){

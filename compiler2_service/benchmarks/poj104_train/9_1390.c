@@ -6,7 +6,7 @@ struct kb
 	int nl;
 }kbr[100],lnr[100],ln;
 
-int main()
+int main_bench()
 {
 	int n,i,k=0,l;
 	scanf("%d",&n);

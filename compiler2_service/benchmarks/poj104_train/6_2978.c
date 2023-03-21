@@ -3,7 +3,7 @@
 char name[100];
 double s[100];
 int num[1000][1000];
-int main(){
+int main_bench(){
 	int i=0,j=0,n,m,sum=0,k=0,flag=0,p=0,a=0,c=0,b=0,q=0;
 	double result=0;
 	scanf("%d",&a);

@@ -9,7 +9,7 @@ int day(int m)
 	day=day+13;
 	return (day);
 }
-int main()
+int main_bench()
 {
 	int i,a;
 	scanf("%d",&a);

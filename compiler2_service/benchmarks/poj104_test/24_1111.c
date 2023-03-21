@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char e[256],all[1000],words[50][256];
 	int i,j,l,len,n=0,k=0;

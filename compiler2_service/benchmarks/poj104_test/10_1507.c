@@ -14,7 +14,7 @@ int findFirstLess(int num)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int k, i = 0, r,p, ans;
 	scanf("%d ", &k);

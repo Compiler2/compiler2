@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n,i,score[100000],max1=0,m1=0,max2=0,m2=0,max3=0,m3=0;
     scanf("%d",&n);

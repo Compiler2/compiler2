@@ -5,7 +5,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int a,b,c,d,e,word[6];
 	for(a = 1;a <= 5;a++){
 		for(b = 1;b <=5;b++){

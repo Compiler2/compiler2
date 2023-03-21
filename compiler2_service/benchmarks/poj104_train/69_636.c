@@ -28,7 +28,7 @@ int add(int a[],int b[],int c[],int la,int lb)
     }
     return (c[len]!=0)?(len+1):len;
 }
-int main()
+int main_bench()
 {
     char s1[300],s2[300];
     int a[300]={0};

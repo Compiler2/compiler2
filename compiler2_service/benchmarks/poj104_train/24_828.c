@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   char a[1000];
   int n,i,mina,minb,maxa,maxb,l=1,lmin=1000,lmax=0;

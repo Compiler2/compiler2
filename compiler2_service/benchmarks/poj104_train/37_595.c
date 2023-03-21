@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
     int a[26],n,i,I,j,p,k;
     char s[100000],first=124;

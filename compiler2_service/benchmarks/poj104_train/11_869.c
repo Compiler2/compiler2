@@ -9,7 +9,7 @@ int leap_year(int y)
 	else
 		return 0;
 }
-int main()
+int main_bench()
 {
 	int y,m,d,count;
 	scanf("%d%d%d",&y,&m,&d);

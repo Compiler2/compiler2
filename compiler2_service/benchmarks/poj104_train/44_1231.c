@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {int n,a(int num),s,i=0;
 while(i<6)
 {

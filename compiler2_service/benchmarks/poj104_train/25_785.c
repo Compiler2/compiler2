@@ -24,7 +24,7 @@ void f(int a,int n){
 	}}
 	
 }
-int main()
+int main_bench()
 {
 	int i,j,n,a,q,m,g,k,h;
 	scanf("%d",&n);

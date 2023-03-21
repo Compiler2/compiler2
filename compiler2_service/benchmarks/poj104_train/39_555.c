@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,i,j,s,max;
 	int qimo[150],ban[150],lun[150],zong[150];

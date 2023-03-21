@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char xulie[100][21];
 	int i,j,n,c;
 	scanf("%d",&n);

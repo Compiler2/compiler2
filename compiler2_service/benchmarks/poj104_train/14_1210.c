@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {   int m1,m2,m3,n1,n2,n3;
 	struct student{int num;int verbal;int math;int sum;};
 	struct student stu[100000];

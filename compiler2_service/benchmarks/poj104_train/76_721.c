@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i, j, n, max = 0, min = 1000;
 	int sz[10000] = { 0 };

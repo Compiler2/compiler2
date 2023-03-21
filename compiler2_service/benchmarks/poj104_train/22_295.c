@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,j,temp,n,a[300]={0};
 	char array[1000],*p=array;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	const int month1[14]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	const int month2[14]={0,31,29,31,30,31,30,31,31,30,31,30,31};

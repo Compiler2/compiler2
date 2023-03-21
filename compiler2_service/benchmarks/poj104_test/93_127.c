@@ -3,7 +3,7 @@
 
 void function(int,int);
 
-int main()
+int main_bench()
 {
    int n;
    int i;

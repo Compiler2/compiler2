@@ -6,7 +6,7 @@ int fibo(int n){
 	else if(a[n]==0)a[n]=fibo(n-1)+fibo(n-2);
 	return a[n];
 }
-void main()
+int main_bench()
 {
 	int n,cases;
 	scanf("%d",&cases);

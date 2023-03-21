@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char zfc1[257]={0},zfc2[257]={0},zfc3[257]={0},zichuan[257]={0};
 	int len1,len2,i,j,k,t,flag=0;

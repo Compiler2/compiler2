@@ -8,7 +8,7 @@ int isRun(int year)
 	else
 		return 0;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int startYear, startMonth, startDay ;
 	int endYear, endMonth, endDay;

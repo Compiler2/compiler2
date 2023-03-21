@@ -9,7 +9,7 @@ a[x]=a[i];
 a[i]=t;
 }
 }
-void main()
+int main_bench()
 {char a[100];
 char b[100];
 int i;

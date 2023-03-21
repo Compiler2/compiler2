@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a,b,i,j,matrix[100][100];
 	scanf("%d%d",&a,&b);

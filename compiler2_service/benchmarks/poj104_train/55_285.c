@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
     int f(int a,int b);
     int a,b,i,n,sum=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int *p,i,n,max,sec;
 	p=(int *)(malloc(10000*sizeof(int)));

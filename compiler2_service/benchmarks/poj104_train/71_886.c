@@ -5,7 +5,7 @@ struct point{
     int m1;
     int m2;
 };
-int main(){
+int main_bench(){
     int n,i,j,d,a[12]={31,29,31,30,31,30,31,31,30,31,30,31},b[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     struct point A[200];
     scanf("%d",&n);

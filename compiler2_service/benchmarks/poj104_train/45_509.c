@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char str[50],str1[50];
 	scanf("%s %s",str,str1);
 	char *tmp = strstr(str1,str);

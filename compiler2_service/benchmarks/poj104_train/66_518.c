@@ -2,7 +2,7 @@
 
   
  
-int main(){
+int main_bench(){
 int year,month,day;
 int z,i,y,s,ba,sb,a;
 int b=0;

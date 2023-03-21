@@ -6,7 +6,7 @@ int get(int a[50],int b[50]);
 int repick(int a[50],int b[50]);
 int hand(int a[50],int b[50],int c[100]);
 int out(int c[100]);
-int main()
+int main_bench()
 {
     get(a,b);
     repick(a,b);

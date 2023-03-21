@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char s[101],c[101];
     gets(s);
     c[0]=s[0];

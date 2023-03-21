@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(void)
+int main_bench()
 {
     int om[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
     int nom[12] = {31,29,31,30,31,30,31,31,30,31,30,31};

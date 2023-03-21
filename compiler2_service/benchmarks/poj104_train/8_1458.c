@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int *input(int n),*a,*b,*c,n1,n2;
     void paixu(int *a,int n),display(int *c,int n);

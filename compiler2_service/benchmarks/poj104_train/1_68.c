@@ -15,7 +15,7 @@ int f(int a,int b)
 	}
 	return r;
 }
-void main()
+int main_bench()
 {
 	int n,m;
 	scanf("%d",&n);

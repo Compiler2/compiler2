@@ -6,7 +6,7 @@ int isok(int sum,int step){
     if(sum%(n-1))return 0;
     return isok(sum/(n-1)*n+k,step+1);
 }
-int main(){
+int main_bench(){
     scanf("%d%d",&n,&k);
     int i,s=1;
 

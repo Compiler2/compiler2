@@ -56,7 +56,7 @@ void prt(int ab[],int m,int n)
 }
 
 
-int main()
+int main_bench()
 {
 	int a[101],b[101],n[2],ab[202];
 

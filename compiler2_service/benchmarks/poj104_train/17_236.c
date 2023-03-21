@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[101];
 	while(gets(a))

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void)
+int main_bench()
 {
 	int map[5][5],max[5],t,i,j,t_max;
 	char b=1;

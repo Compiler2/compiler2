@@ -1,7 +1,7 @@
 #include <header.h>
 
 char pd(char x);
-int main(){
+int main_bench(){
 	int i,j,n,m;
 	char dui;
 	char jianji[256];

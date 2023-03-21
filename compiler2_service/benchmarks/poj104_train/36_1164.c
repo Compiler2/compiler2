@@ -3,7 +3,7 @@
  
 
 
-int main()
+int main_bench()
 {
 	int count[100];
 	int countie[100];

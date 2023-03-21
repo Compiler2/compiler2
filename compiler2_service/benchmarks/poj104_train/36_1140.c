@@ -13,7 +13,7 @@ void paixu(char*x){
 		}
 	}
 }
-int main()
+int main_bench()
 {
     char a[100], b[100], c[50];
     scanf("%s %s",a,b);

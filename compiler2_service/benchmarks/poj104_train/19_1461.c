@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char s[100]={'\0'},h[50][50]={'\0'},d[10]={'\0'},w[10];
 	int i,j=0,k=0,t=0;
 	gets(s);

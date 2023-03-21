@@ -1,7 +1,7 @@
 #include <header.h>
 
 int in_or_not(int n,int m);
-int main()
+int main_bench()
 {
 	int data[5][5],temp[5];
 	int n,m,i,j,result;

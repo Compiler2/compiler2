@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
   int num,i,num2=0,b;
   scanf("%d",&num);

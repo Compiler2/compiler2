@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,a[310],i,temp;
 	double b[310],max=-100,ave,s=0;

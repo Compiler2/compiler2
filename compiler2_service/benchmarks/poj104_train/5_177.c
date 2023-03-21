@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char DNA1[501],DNA2[501],isbreak;
 	isbreak='n';
 	double x,n;

@@ -12,7 +12,7 @@ int so(int x)
       return(soo);
 }
 
-void main()
+int main_bench()
 {
       int a,b,i,t,w,r,n;
       int c[1001],d[1001];

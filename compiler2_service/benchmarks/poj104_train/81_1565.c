@@ -25,7 +25,7 @@ f(int a[5][5],int s,int t)
 
 
 
-void main()
+int main_bench()
 {
 	int d[5][5],m,n,i,j;
 	

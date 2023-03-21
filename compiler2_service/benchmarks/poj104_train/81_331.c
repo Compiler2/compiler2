@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int can(int n,int m);
 	void change(int a[5][5],int n,int m);

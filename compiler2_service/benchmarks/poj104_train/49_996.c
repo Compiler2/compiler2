@@ -18,7 +18,7 @@ void f(char s[502],int m)
 	if(k==m)
 		printf("%s\n",s);
 }
-int main()
+int main_bench()
 {
    char s[502],str[502];
    int n,i,j,k;

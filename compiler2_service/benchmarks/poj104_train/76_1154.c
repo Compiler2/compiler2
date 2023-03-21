@@ -5,7 +5,7 @@ int judge(int x,int y,int z){
 	return 0;
 
 }
-int main(){
+int main_bench(){
 
 
 

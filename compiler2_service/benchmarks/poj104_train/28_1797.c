@@ -1,7 +1,7 @@
 #include <header.h>
 
 char c[10000];
-void main()
+int main_bench()
 {
 	char a[301]={0};
 	int k=0,i,r;

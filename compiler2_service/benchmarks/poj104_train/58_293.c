@@ -12,7 +12,7 @@ int panduan(char a)
     return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
     char a[81];
     int k;

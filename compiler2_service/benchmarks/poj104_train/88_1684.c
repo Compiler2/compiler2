@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { void prt(char a[],int n);
 	int n=0;
   char a[31]={'\0'};

@@ -35,7 +35,7 @@ int cal(int matrix[][120],int n)
 	 return(s+cal(matrix,n-1));
 }
 
-int main()
+int main_bench()
 {
 	 int n,i,j,k;
 	 int a[120][120];

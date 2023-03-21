@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int image[1000][1000];
     int n, i,j,area, begRow,begCol,endRow,endCol,isBreak;

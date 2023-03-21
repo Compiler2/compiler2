@@ -45,7 +45,7 @@ return (t);
 }
 
 
-int main()
+int main_bench()
 {
 	int m,n,i,j,k,a[10000],b[10000],f,o,s,t;
 	scanf("%d %d",&m,&n);

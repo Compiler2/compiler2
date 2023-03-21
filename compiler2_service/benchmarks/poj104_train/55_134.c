@@ -1,7 +1,7 @@
 #include <header.h>
 
 long trans(int len,int a[],int b);
-void main()
+int main_bench()
 {
 	int ori,fin,len0,i,len3,j;
 	long ten;

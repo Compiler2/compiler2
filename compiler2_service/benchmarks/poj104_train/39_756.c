@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	char name[100][30];
 	int n,i,totle=0,m,mast=0;

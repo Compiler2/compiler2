@@ -20,7 +20,7 @@ int reverse(int n)
 	for (j=0;j<=i-1;j++) re_n=re_n*10+num[j];
 	return(re_n);
 }
-void main()
+int main_bench()
 {
 	int flag,n;
 	flag=0;

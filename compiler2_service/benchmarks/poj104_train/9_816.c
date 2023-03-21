@@ -13,7 +13,7 @@ struct in
 	struct f*young;
 	int num;
 };
-int main()
+int main_bench()
 {
 	int n,num_;
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	struct stu1{
 		char name[30];
 		int scor;

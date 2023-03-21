@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,a[1000],j,t;
 	float aver,x,y,sum=0.0;

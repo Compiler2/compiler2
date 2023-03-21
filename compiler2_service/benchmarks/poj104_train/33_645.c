@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,n,j,l;
     char yuan[256],bu[256];

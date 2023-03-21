@@ -3,7 +3,7 @@
  
  
 
-int main()
+int main_bench()
 {
  int array[300],n,i,j;
  int p,q;

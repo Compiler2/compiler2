@@ -6,7 +6,7 @@ int judgeline(char);
 int judgenum(char);
 void emp(char *);
 
-int main()
+int main_bench()
 {
 	int n,i,j,length;
 	char s[81];

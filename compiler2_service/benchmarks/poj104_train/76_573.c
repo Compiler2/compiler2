@@ -10,7 +10,7 @@ int _ins(int temp,int j)
 }
 
 
-int main()
+int main_bench()
 {
     int n,e,f;
     scanf("%d",&n);

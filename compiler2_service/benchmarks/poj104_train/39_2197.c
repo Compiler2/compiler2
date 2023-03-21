@@ -27,7 +27,7 @@ struct info *setup(void)
 	}	
 	return head;
 }
-void main()
+int main_bench()
 {
 	long max=0,total=0,t,i=0;
 	struct info *p,*excellent;

@@ -39,7 +39,7 @@ int sushu(int a)
 	if(i==a) z=1;
 	return z;
 }
-void main()
+int main_bench()
 {
 	int a,b,i,s=0;
 	scanf("%d%d",&a,&b);

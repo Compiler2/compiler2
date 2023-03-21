@@ -15,7 +15,7 @@ int f(int m,int n)
 		return f(m,n-1);
 	}
 }
-int main()
+int main_bench()
 {
 	int n,m,t,i,k;
 	scanf("%d",&t);

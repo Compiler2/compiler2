@@ -6,7 +6,7 @@ struct student
 	int money;
 }stu[999];
 
-void main()
+int main_bench()
 {
 	int n,i,sum=0,max=0;
 	int grade_1,grade_2,paper;

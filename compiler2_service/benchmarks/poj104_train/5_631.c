@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double percent;
 	char a[501],b[501];
 	int number=0;

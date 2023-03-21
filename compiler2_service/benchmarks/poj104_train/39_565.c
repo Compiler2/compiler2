@@ -19,7 +19,7 @@ int sco4(struct student a);
 int sco5(struct student a);
 void bubble(struct student *p,int n);
 
-void main()
+int main_bench()
 {
 	int n,i,total=0;
 	struct student stu[101]={0,0,0,0,0,0,0};

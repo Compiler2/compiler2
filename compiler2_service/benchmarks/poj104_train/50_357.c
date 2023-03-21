@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int d[12][13]={0},m,i;
 	scanf("%d",&d[0][0]);
 	if(d[0][0]==7)d[0][0]=0;

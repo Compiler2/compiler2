@@ -14,7 +14,7 @@ void swap(char a[],int n)
 		}
 
 }
-void main()
+int main_bench()
 {
 	char a[20];
 	char b[20];

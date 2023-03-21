@@ -20,7 +20,7 @@ int f(int num)
     } 
     return result;
 } 
-int main () 
+int main_bench() 
 {
     int k,d,b[6],r;
     for(k=0;k<6;k++)

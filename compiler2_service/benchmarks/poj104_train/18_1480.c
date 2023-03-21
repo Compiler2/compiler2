@@ -39,7 +39,7 @@ a[i][j]=a[i+1][j+1];
 }
 func(a,rank-1,sum);
 }
-int main()
+int main_bench()
 {
 int n,i,j,k;
 int matrix[100][100]={{0}},sum=0;

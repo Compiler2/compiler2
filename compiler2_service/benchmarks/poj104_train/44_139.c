@@ -21,7 +21,7 @@ int fanxu(int x)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int i,k[6],shu;
 	for(i=0;i<6;i++)

@@ -38,7 +38,7 @@ int isprime(int n)
 
 
 
-int main()
+int main_bench()
 {
 	int m,n;
 	int i;

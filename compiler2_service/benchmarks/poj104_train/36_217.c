@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void same(char a[],char b[]);
 	char a[1000],b[1000];

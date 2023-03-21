@@ -2,7 +2,7 @@
 
 char a[101];
 
-int main()
+int main_bench()
 {
 	int i,n,j,k,m,b;
 	scanf("%d",&n);

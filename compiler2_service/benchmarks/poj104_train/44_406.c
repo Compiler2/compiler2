@@ -17,7 +17,7 @@ int reverse(int u){
 }
 
 
-int main(){
+int main_bench(){
 	int n,b;
 	int i;
 	for(i=0;i<6;i++){

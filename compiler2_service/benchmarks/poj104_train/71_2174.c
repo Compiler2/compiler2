@@ -11,7 +11,7 @@ int y(int year)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int a[12]={3,0,3,2,3,2,3,3,2,3,2,3};
 	int day;

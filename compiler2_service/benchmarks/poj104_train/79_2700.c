@@ -1,6 +1,6 @@
 #include <header.h>
 
-main() 
+main_bench_bench() 
 { 
 int n[10000], m[10000], i, s; 
 for(int q=0;q<10000;q++){

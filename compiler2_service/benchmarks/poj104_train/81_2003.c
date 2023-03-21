@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int cal(int s,int t);
 	int a[5][5],i,n,m,(*p)[5],temp;

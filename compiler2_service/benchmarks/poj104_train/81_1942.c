@@ -5,7 +5,7 @@ int pd(int n,int m)
     else return 0;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a[5][5],b[5];
 	int i,j,m,n;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n;
 	char cint1[101],cint2[101],result[101];

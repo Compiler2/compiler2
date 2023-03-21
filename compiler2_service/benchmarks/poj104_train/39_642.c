@@ -43,7 +43,7 @@ int max(struct student *pt,int n)
 }
 		 
 
-int main()
+int main_bench()
 {
 	int n,i,m,sum=0;
 	scanf("%d", &n);

@@ -2,7 +2,7 @@
 
 
 int isRunNian(int year);
-int main(){
+int main_bench(){
     int n;
     scanf("%d",&n);
     int year[200],month1[200],month2[200],chaju[200]={0,0,0,0};

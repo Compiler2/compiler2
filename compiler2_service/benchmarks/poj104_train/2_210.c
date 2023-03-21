@@ -3,7 +3,7 @@
 struct books
 {char num[20];
 char w[26];};
-int main()
+int main_bench()
 {int k,j,i,m;
 int b[150]={0};
 scanf("%d",&m);

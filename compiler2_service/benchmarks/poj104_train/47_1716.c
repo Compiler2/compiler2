@@ -14,7 +14,7 @@ void f(int *x,int n)
 	}
 	return;
 }
-int main()
+int main_bench()
 {
 	int n,i,a[100];
 	scanf("%d",&n);

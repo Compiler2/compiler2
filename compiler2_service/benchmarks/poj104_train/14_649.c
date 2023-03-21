@@ -7,7 +7,7 @@ struct student
 	int math;
 	int total;
 };
-int main()
+int main_bench()
 {
 	int i,j,k,n;
 	struct student a[100000],n1,n2,n3;

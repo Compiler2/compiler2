@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int length,a;
 	int x[300]={0},y[300]={0};

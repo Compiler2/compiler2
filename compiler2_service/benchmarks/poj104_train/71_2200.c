@@ -1,7 +1,7 @@
 #include <header.h>
 
 int dijitian(int y,int m,int d);
-int main(){
+int main_bench(){
     int n,k,year,month1,month2,cha;
 	scanf("%d",&n);
 	for(k=0;k<n;k++){

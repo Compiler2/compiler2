@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char ch[110],temp[110],c[110];
 	int i,figure;

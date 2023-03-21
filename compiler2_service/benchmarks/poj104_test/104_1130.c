@@ -6,7 +6,7 @@ int sqrt(int i);
 int c(void);
 int x[15]={0},y[15]={0};
 int o,p;
-int main()
+int main_bench()
 {
 	int m,n,k;
 	scanf("%d%d",&m,&n);

@@ -10,7 +10,7 @@ struct student
 	int f;
 	int g;
 };
-int main()
+int main_bench()
 {
 	struct student *s;
 	int n,i,sum=0,q,max;

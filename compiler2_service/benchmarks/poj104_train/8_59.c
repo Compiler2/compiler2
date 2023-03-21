@@ -63,7 +63,7 @@ void shu()
 		}
         printf("%d",d[n1+n2-1]);
 	}
-void main()
+int main_bench()
 {
 	f1();
 	pai();

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char word[300][50],c=' ';
 	int num[300]={0},i,t;

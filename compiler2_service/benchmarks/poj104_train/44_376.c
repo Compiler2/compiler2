@@ -26,7 +26,7 @@ int r(int a, int b)
 
 
 
-int main()
+int main_bench()
 {
 	int a;
 	int i;

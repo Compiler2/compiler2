@@ -19,7 +19,7 @@ int islegal(char seq[],int size)
 	return flag;	
 }
 
-int main()
+int main_bench()
 {
 	int n,i,len;
 	char zfc[80000];

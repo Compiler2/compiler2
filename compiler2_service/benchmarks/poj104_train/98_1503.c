@@ -42,7 +42,7 @@ void judge(char s[],int *n,int *m)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	void judge(char s[],int *n,int *m);
 	int n,now=0,line=1,i;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,i,a,tuzhi[25];
     scanf("%d",&n);
     tuzhi[0]=1;

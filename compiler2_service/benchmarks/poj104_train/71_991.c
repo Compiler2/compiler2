@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i,j,y,m1,m2,d,day[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 scanf("%d",&n);
 for(i=0;i<n;i++){

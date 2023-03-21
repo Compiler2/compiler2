@@ -15,7 +15,7 @@ int sum(int m,int n)
     
 }return t;
 }
-int main()
+int main_bench()
 {
     int m,n,q;
     for(scanf("%d",&q);q>0;q--)

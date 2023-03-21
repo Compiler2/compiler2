@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void inv(int array[ ],int k);
 	int i,n,a[100],*p;

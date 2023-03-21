@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,l,a,t,k;
 	char s[100000],*p,*q;

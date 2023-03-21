@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	unsigned int max2,max1, a[300]={0},i=0;
 	int flag=0,j;

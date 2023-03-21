@@ -34,7 +34,7 @@ int f(int m,int n)
 	printf("\n");
 	return(0);
 }
-int main()
+int main_bench()
 {
 int m,n;
 scanf("%d %d",&m,&n);

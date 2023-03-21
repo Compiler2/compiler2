@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int i,j,k,e,f,*e_point,*f_point,flag;
 	char a,b,c[100],z=' ';

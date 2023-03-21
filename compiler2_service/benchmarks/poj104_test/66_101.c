@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	long year,month,day,days=0;
 	scanf("%ld %ld %ld",&year,&month,&day);

@@ -2,7 +2,7 @@
 
 double F(double x);
 double f(double y);
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

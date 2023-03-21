@@ -1,7 +1,7 @@
 #include <header.h>
 
 int max(char a,char b[][50],int l);
-int main()
+int main_bench()
 {int l,i;
     char a[50],b[2][50]={'\0'};
     scanf("%s%s",a,b[0]);

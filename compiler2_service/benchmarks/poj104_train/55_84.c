@@ -37,7 +37,7 @@ void huan(int b,long int c)
        printf("%c",n[j]);
      printf("%c\n",n[0]);
 }
-int main()
+int main_bench()
 {   
     int a,b;
     long int c;

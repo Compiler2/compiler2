@@ -71,7 +71,7 @@ int f4()
 	}
 	return 0;
 }
-int main()
+int main_bench()
 {
 	f1();
 	f2();

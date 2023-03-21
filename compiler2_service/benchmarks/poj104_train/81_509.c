@@ -16,7 +16,7 @@ int change(int m,int n)
 	}
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int i,j,n,m;
 	for(i=0;i<5;i++)

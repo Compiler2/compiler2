@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int total=0,i,n,max=0;
 	char maxname[20];

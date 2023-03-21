@@ -31,7 +31,7 @@ int check(int m,int n,int k)
     return k;
 }
 
-int main()
+int main_bench()
 {
     int n,i,num[100],sum=0,min=100,max=0;
     float ave;

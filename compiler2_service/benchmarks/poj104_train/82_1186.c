@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,h[100],l[100],hour[101]={0},i,max=0;
 	scanf("%d\n",&n);
 	for(i=1;i<=n;i++){

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n;int m;scanf("%d %d",&n,&m);
 	int a[100];

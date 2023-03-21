@@ -7,7 +7,7 @@ struct stu
 		int shuxue;
 		int sum;
 	}score[100000];
-int main()
+int main_bench()
 {
 	int n,i,a,b,c,a1,b1,c1;
 	scanf("%d",&n);

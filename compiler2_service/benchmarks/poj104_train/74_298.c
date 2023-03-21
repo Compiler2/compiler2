@@ -46,7 +46,7 @@ int hui(int m)
 	}
 	return(p);
 }
-int main()
+int main_bench()
 {
 	int m,n,count=0;
 	scanf("%d%d",&m,&n);

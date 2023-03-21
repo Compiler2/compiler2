@@ -38,7 +38,7 @@ int Day(int year,int month1,int month2,int j,int day)
 	return day;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 
 	int i,j=1,n,year,month1,month2,day;

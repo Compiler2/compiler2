@@ -10,7 +10,7 @@ struct student
 		char score[30];
 		char add[30];
 	};
-int main()
+int main_bench()
 {
 	
 	int lengthofnumber[505]={0},lengthofname[505]={0},lengthofadd[505]={0},lengthofscore[505]={0};

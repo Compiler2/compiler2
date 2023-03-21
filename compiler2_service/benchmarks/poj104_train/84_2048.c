@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n, i, t, m1, m2;
 	m1=m2=~((unsigned)-1>>1);

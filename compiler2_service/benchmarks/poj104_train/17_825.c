@@ -58,7 +58,7 @@ char investigate(char a[])
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i,j;
 	char a[100];

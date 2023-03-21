@@ -22,7 +22,7 @@ void bubble(int x[][2],int n)
     }     
 } 
 
-int main()
+int main_bench()
 {
     int i,j,k,t,x[100][2],n=0;
 	char s[150],a,b;

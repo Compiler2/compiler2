@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int date,l=0,a[12],mouth[13]={0,31,28,31,30,31,30,31,31,30,31,30,31},i,j,k,b[100],*p;
 	scanf("%d",&date);

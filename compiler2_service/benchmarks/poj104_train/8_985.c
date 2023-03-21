@@ -3,7 +3,7 @@
 void f1(int a[],int e);
 void f2(int b[],int f);
 void f3(int c[],int h,int d[],int l);
-void main()
+int main_bench()
 {
 	int shuzu1[200],shuzu2[200];
 	int geshu1,geshu2;

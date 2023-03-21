@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	char a[50],b[50];
 	int lena,i=0,k,t;

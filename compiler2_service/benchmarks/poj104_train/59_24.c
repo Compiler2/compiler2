@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char state[100][101],str[100][101];
 	int n,m,i,j,count=0;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int cancer[1000][1000];
-void main()
+int main_bench()
 {
 	
 	int i,n,j,k1,k2,m1,m2,sum=0,s;

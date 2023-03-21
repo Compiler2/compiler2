@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int iz,iq,is,il,z,q,s,l;
 	for(iz=10;iz<=50;iz+=10)

@@ -5,7 +5,7 @@ int a[10000],b[10000];
 double g[10000];
 double GPA(int c);
 void average(int n);
-int main(){
+int main_bench(){
 	int n;
 	scanf("%d",&n);
 	for(int i1=0;i1<n;i1++){

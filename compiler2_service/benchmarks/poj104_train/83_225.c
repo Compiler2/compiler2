@@ -13,7 +13,7 @@ float GPA(int a)
 		else if (a>=60) return 1;
 		else return 0;
 }
-void main()
+int main_bench()
 {
 	int n,i,s,a[100]={0};
 	float SumGPA=0,Points=0,AveGPA=0;

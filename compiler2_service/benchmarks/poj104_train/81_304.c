@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pand(int y,int z);
-void main()
+int main_bench()
 {
 	int a[5][5],n,m,i,l,t;
 	for(i=0;i<5;i++)

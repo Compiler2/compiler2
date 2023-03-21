@@ -15,7 +15,7 @@ void cmp(int a[],int n,int b[],int m)
     for(j=0;j<m;j++)
     {a[i]=b[j];i++;}
 }
-int main()
+int main_bench()
 {int n,m,i,a[1000],b[500];
     scanf("%d %d",&n,&m);
     for(i=0;i<n;i++)

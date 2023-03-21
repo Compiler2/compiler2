@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
  char a[10000],b[10000];
  int l,zushu=0,c[10000]={1};

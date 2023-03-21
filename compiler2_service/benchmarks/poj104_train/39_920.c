@@ -28,7 +28,7 @@ int banji(int b,char d)
 	else return 0;
 }
 
-int main()
+int main_bench()
 {
 	int a[120],b[102],c[120],i,n,qian[102],zong=0,max=0,wei;
 	char mingzi[102][30],xue[102],xi[100];

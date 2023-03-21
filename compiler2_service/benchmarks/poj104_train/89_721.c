@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int know[10000];
 	int known[10000];
 	int i,j,n,k=0;

@@ -5,7 +5,7 @@ struct zimu
        char a[6];
        int b;
 };
-int main()
+int main_bench()
 {
     struct zimu r[501];
     struct zimu temp;

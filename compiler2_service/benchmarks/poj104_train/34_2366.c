@@ -2,7 +2,7 @@
 
 int n;
 
-int main()
+int main_bench()
 {
 	scanf("%d",&n);
 	while (n%2==1)

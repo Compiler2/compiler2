@@ -7,7 +7,7 @@ struct person{
 struct person p[26];
 int n,m,i,j,k;
 char str[30];
-int main(){
+int main_bench(){
     memset(p,0,sizeof(p));
     scanf("%d",&n);
     for(i=0;i<n;i++){

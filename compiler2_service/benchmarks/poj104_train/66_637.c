@@ -9,7 +9,7 @@ int isRunnian(int year)
 		return 0;
 }
 
-int main()
+int main_bench()
 {
 
 	int year,month,day;

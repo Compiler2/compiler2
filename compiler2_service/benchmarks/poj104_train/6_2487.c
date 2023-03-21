@@ -29,7 +29,7 @@ int m()
 	}
 	return s;
 }
-int main()
+int main_bench()
 {
 	int k,i,sum;
 	scanf("%d",&k);

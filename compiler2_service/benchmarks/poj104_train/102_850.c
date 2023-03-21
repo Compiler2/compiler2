@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	double m[50], f[50], p[100];
 	char sex[50][10];

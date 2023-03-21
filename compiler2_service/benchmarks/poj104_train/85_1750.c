@@ -14,7 +14,7 @@ int panduan(char str[])
   }
   return 1;
 }
-int main()
+int main_bench()
 {
  int n,i,a;
  scanf("%d",&n);

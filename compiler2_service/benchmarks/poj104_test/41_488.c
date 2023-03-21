@@ -54,7 +54,7 @@ void f(int *a,int count)
         t=0;
     }
 }
-int main()
+int main_bench()
 {
     int a[5];
     f(a,0);

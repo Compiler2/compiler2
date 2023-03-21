@@ -7,7 +7,7 @@ struct book
 	char name[27];
 }book[1000];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,i,j,a[27],len,max=0,number;
 	char p;

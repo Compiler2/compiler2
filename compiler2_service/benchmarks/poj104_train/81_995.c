@@ -19,7 +19,7 @@ int check(int n,int m)
             return 1;
         }
 }
-int main()
+int main_bench()
 {
     int n,m;
     int l1,l2;

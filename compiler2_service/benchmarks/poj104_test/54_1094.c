@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { 
  int nn,kk;
  int calculate(int n,int k);

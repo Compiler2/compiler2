@@ -7,7 +7,7 @@ struct student
  
 }stu[999];
 
-int main()
+int main_bench()
 {   int m,a[26]={0},i,j,max,k,l=0;
     scanf("%d",&m);
     for(i=0;i<m;i++)

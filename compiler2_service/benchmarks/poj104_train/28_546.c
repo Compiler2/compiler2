@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 { 
 	char string[9000]; 
 	char str[300][30]; 

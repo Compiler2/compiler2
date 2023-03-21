@@ -5,7 +5,7 @@ char change(char a)
 	if(a>='a'&&a<='z') a=a-'a'+'A';
 	return a;
 }
-int main()
+int main_bench()
 {
 	int len1,len2;
 	int a,b,c=0;

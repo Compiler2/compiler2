@@ -3,7 +3,7 @@
 
 const int MAX = 100;
 
-int main()
+int main_bench()
 {
  	int k;
  	int A[MAX][MAX];

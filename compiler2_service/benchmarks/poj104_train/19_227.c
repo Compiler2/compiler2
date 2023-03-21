@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char str[255],from[255],to[255];
 	char*s=str,*p;

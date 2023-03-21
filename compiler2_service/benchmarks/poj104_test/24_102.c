@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[100];
 	int chars[20]={0}, loci[20]={0}, i, j=0, max, maxi, min, mini, preword=0, word=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int ro,co,sz[100][1000],i,j,m,k,c=0,b=1;
 	scanf("%d%d",&ro,&co);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int sum,num[6]={0,0,0,0,0,0};
 	int i;

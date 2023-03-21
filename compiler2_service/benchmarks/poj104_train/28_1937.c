@@ -8,7 +8,7 @@
 
 
 
-int main(){
+int main_bench(){
     char s[10000];
     int i,num=0,final;
     gets(s);

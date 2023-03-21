@@ -1,7 +1,7 @@
 #include <header.h>
 
 int n;
-int main(){
+int main_bench(){
 	int x,k,sum,now;
 	scanf("%d",&n);int t=n;
 	while (n--){

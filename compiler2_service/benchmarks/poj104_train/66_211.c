@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int day,mn,yr,i,days=0,s,k;
 	int mont[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

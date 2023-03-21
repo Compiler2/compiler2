@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char number[10000];
     gets(number);
     char danci[100][100];

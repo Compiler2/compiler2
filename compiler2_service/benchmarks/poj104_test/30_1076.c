@@ -15,7 +15,7 @@ if (n % 7 == 0) return 0;
 return 1;
 }
 
-int main()
+int main_bench()
 {
  int n;
  int i,s = 0;

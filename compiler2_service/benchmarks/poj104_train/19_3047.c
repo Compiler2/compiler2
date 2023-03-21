@@ -35,7 +35,7 @@ void check(void)
 	temp[p+1]='\0';
 	judge();
 }
-int main()
+int main_bench()
 {
 	gets(s);
 	gets(a);

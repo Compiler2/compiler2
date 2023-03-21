@@ -8,7 +8,7 @@ int panduan(int x,int y){
 		return 0;
 }
 
-int main(){
+int main_bench(){
      int i,j,m,n,t,pd=0,a[5][5];
 	 for(i=0;i<5;i++){
 		 for(j=0;j<5;j++){

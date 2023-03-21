@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int w1=0,w2=0,i,j,k,n,a[200],b[200],c[200];
 	int days[12]={0,31,28,31,30,31,30,31,31,30,31,30};

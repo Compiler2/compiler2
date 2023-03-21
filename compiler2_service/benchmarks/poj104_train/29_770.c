@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int m,n,i,k;
 	scanf("%d",&m);
 	float b[9999],as[9999],c;

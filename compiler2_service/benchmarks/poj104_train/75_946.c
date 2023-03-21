@@ -11,7 +11,7 @@ int tr(char a[],int b[])
 			j++;
 	return(j-1);
 }
-void main()
+int main_bench()
 {
 	char a[10000],b[10000];
 	int i,j,k,n,l=0,c[5000]={0},d[5000]={0},m[1001]={0};

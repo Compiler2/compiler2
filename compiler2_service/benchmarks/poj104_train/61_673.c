@@ -1,7 +1,7 @@
 #include <header.h>
 
 void compute(int shuzu);
-int main()
+int main_bench()
 {
 	int n,i,k,sum=0,a,b;
 	scanf("%d",&n);

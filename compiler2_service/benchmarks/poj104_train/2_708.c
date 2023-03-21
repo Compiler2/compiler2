@@ -5,7 +5,7 @@ char zimu[28]="ABCDEFGJIJKLMNOPQRSTUVWXYZ";
 	int times[26],id[1000],i,len[10000],book=0;
 	int n,j,k,tmax,max=0;
 
-int main()
+int main_bench()
 {
 	
 	scanf("%d",&n);

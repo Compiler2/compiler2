@@ -11,7 +11,7 @@ int function(int n,int m)
 			f=function(n-1,m)+function(n,m-n);
 		return(f);
 	}
-int main()
+int main_bench()
 {
 	int t,m,n,k;
 	scanf("%d",&t);

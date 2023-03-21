@@ -2,7 +2,7 @@
 
 int b[5]={0,1,2,3,4};
 int a[5][5],x,y,i,j;
-int main()
+int main_bench()
 {
     for (i=0;i<5;i++)
         for (j=0;j<5;j++)

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char x[20],y[20],k,l;
     int n,a,b,c,sum,i,j,max=0,max2=0;

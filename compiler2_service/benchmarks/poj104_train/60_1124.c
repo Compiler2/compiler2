@@ -12,7 +12,7 @@ int sushu(int x)
 	}
 	return t;
 }
-int main()
+int main_bench()
 {
 	int i,n,a,b,t=0;
 	scanf("%d",&n);

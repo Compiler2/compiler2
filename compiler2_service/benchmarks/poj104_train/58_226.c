@@ -3,7 +3,7 @@
 
 int judge(char *,int );
 
-int main()
+int main_bench()
 {
 	char str[100],*p=str,nc[2];
 

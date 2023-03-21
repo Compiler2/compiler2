@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char a[251]={'0'},b[251]={'0'},c[260],t[251];
 	int i,j=0,max,min,len_a,len_b,k;	

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int i,yiyang=0,zongliang=0,x;
 	char lian1[501],lian2[501];
 	double biaozhun,jieguo;

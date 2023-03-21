@@ -15,7 +15,7 @@ int isLeapYear(int year)
         else ret = ret + days[i];  
     return ret;  
 }  
- int main()  
+ int main_bench()  
  {  
      int startYear, startMonth, startDay;  
     int endYear, endMonth, endDay;  

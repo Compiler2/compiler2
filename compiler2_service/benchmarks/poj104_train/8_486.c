@@ -59,7 +59,7 @@ void output(int *a,int n,int m)
 		printf("%d ",a[i]);
 	printf("%d\n",a[n+m-1]);
 }
-void main()
+int main_bench()
 {
 	input();
 	sort(a,n,b,m);

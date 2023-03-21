@@ -20,7 +20,7 @@ int f(char c[]){
 	}
 	return(z);
 }
-int main(int argc, char* argv[])
+int main_bench()
 {	int n,i;char c[90];
 	
 	char s[10];  

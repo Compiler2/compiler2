@@ -6,7 +6,7 @@ int huiwen(int x);
 
 
 
-int main()
+int main_bench()
 {
 	int i,m,n,num=0,str[1000];
 	scanf("%d %d",&m,&n);

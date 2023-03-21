@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char zfc[1000][256];
 	int n,y;

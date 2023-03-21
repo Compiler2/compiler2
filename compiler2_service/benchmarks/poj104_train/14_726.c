@@ -6,7 +6,7 @@ typedef struct {
 	int score;
 } student;
 
-int main()
+int main_bench()
 {
 	int n, i, temp1, temp2;
 	student a[100002];

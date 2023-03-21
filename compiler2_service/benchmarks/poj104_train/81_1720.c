@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int A[5][5],m,n,row,list,i;
     row=0;
     while(row<5){

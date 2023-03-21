@@ -18,7 +18,7 @@ int reverse(int num)
     }
     return 0;
 }
-int main()
+int main_bench()
 {
     int num,i;
     for(i=0;i<6;i++)

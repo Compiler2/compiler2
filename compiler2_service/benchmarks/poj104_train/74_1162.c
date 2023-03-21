@@ -11,7 +11,7 @@ int su(int n)
       else
       return(0); 
 }
-int main()
+int main_bench()
 {
     int n,m,a,b[100],i,j,k,q=0;
     scanf("%d %d",&m,&n);

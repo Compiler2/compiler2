@@ -18,7 +18,7 @@ int compare(int s, int a[20000], int n)
 		return 0;
 }
 
-int main()
+int main_bench()
 {
 	int n, a[20000], i, j, w=0;
 	scanf("%d", &n);

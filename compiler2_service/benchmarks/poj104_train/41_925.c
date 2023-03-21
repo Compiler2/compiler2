@@ -4,7 +4,7 @@
 
 int a,b,c,d,e,A,B,C,D,E;
 
-int main(){
+int main_bench(){
     for(a=1;a<=5;a++)
                      for(b=1;b<=5;b++)
                                       for(c=1;c<=5;c++)

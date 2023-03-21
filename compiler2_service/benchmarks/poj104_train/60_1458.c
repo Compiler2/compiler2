@@ -16,7 +16,7 @@ int f(int i)
      return 1;
      }
   } 
-         int main()
+         int main_bench()
   {       int n,k; 
     scanf("%d",&n);
     if(n<5)

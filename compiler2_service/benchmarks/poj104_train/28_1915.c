@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int i,j=0,k=0;
     char sentence[2100],word[301][17];
     gets(sentence);

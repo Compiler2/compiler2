@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,i;
     scanf("%d",&n);
     if(n%3==0&&n%5==0&&n%7==0) printf("3 5 7");

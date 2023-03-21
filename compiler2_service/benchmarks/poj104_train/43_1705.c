@@ -9,7 +9,7 @@ int su(int p)
   if (w==1) return(1);
    else return(0);
    }
-main()
+main_bench_bench()
 {
 int m,i,j,k;
 scanf("%d",&m);

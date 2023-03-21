@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int fan();
 	int n,k,i,j,q,s[100];

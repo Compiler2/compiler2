@@ -9,7 +9,7 @@ int feii(int n)
 	if(n==2)	return feibo[n]=2;
 	return feibo[n]=feii(n-1)+feii(n-2);
 }
-int main()
+int main_bench()
 {
 	int n,m;
 	scanf("%d",&m);

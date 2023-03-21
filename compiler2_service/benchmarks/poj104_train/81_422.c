@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int str[5][5],i,j,m,n;
 	int (*p)[5]=str,k;

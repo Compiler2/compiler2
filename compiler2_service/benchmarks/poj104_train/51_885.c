@@ -2,7 +2,7 @@
 
 char str[500],sub[500][5]={0},count[500]={0},bianhao[500]={0};
 int n,i,j,l,max,geshu;
-int main(){
+int main_bench(){
 	scanf("%d",&n);
 	scanf("%s",str);
 	l=strlen(str);

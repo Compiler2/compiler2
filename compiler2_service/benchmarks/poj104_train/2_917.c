@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {struct book
 {int m;
 char au[26];}b[999];

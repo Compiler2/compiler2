@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main ()
+int main_bench()
 {
 	int m, i, j, k, n, max, l, y = 0;
 	struct book

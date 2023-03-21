@@ -6,7 +6,7 @@ double h,r;
 int i,ans = 0,year1,year2,month1,month2,day1,day2,
     num_month[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
 
-int main()
+int main_bench()
 {
     scanf("%d%d%d%d%d%d",&year1,&month1,&day1,
                          &year2,&month2,&day2);

@@ -16,7 +16,7 @@ int max(int m1,int m2)
     else
     {return m2;}
 }
-int main()
+int main_bench()
 {
     int n,i,b,j;
     scanf("%d",&n);

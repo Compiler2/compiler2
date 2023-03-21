@@ -8,7 +8,7 @@ void sort(int a[],int n)
 		a[i]=a[i-1];
     a[0]=t;
 }
-void main()
+int main_bench()
 {
 	char s[300];
 	int i,flag=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[300]={"\0"};
 	char sub[300]={"\0"};

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n;
 	int a[100];

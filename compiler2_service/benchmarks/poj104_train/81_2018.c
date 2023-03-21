@@ -18,7 +18,7 @@ int check(int(*a)[5],int n,int m)
 		return(0);
 }
 
-void main()
+int main_bench()
 {
 	int (*a)[5];
 	int n,m,i,j;

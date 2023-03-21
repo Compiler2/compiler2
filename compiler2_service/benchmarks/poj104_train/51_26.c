@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[500],temp[500][6]={{0}};
 	int n,count[500]={0},max,j,i,m;

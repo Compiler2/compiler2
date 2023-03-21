@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,j,count;
 	char dna[256];
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	int isrunnian(int);
 	int year,month,day,result=0;
 	int i;

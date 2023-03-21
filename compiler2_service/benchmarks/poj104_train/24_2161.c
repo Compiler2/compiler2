@@ -21,7 +21,7 @@ int min(struct strnu e[200],int p)
 }
 
 	
-void main()
+int main_bench()
 {	int i;
 	char b;
 	for(i=0;;i++)

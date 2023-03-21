@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int m,i,j,fenzi[1000],fenmu[1000];
 	scanf("%d",&m);

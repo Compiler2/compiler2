@@ -2,7 +2,7 @@
 
 void replace(int*,int*);
 
-int main()
+int main_bench()
 {
 	int l[5][5];
 	int n,m,i,j,*p1,*p2;

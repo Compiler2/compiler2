@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int t,rd,check=0,output=0;
 	char str[100001],*p,*pm;

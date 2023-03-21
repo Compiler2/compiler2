@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,a=0;
     scanf("%d\n",&n);
     int xf[n-1],cj[n-1];

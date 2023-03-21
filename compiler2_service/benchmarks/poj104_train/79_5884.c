@@ -23,7 +23,7 @@ int check(int N,int p)
 	return(j+1);
 }
 
-void main()
+int main_bench()
 {
 	int n,m,res,i;
 	while(scanf("%d %d", &n, &m) && n != 0 && m != 0)

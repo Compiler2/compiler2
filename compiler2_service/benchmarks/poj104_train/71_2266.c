@@ -13,7 +13,7 @@ int run(int year)
 		else 
 			return 0;
 }
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

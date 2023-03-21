@@ -6,7 +6,7 @@ int nnn;
 int nmn;
 int sum;
 }st[100002],tmp;
-int main()
+int main_bench()
 {int i,j,m,n;
 scanf("%d",&n);
 for(i=1;i<=n;i++)

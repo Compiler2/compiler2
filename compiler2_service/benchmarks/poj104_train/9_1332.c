@@ -11,7 +11,7 @@ struct info1
 	char num1[10];
 	int age1;
 };
-int main(int argc, char* argv[])
+int main_bench()
 {
 	struct info patient[101];
 	struct info1 old[101];

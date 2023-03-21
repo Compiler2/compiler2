@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int t,*m,*n,zhonglei(int x,int y),i;
     scanf("%d",&t);

@@ -2,7 +2,7 @@
 
 int zhi(int a);
 int yin(int m,int t);
-int main()
+int main_bench()
 {
 	int n,i=0;
 	int str[10000];

@@ -60,7 +60,7 @@ int spp2(int n)
     if(n==12) p=31;
     return p;  
 }
-int main()
+int main_bench()
 {
     int n,i,j;
     scanf("%d",&n);

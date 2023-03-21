@@ -34,7 +34,7 @@ void shanchu(int a[100][100],int n)
 		for(i=1;i<n;i++)
 			a[i][j]=a[i+1][j];
 }
-int main()
+int main_bench()
 {
 	int a[100][100][100],i,j,k,sum,n;
 	scanf("%d",&n);

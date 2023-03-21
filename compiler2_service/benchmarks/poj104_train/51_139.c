@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,i,j,k,l,c,max=0,num[1000]={0},tag1,tag2,tag[1000]={0};
 	char a[10000],b[1000][1000];

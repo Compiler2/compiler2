@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int i,j,n,day,k=1,num=0;
 	char a[101][101];

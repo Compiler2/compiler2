@@ -3,7 +3,7 @@
  
 
 
-int main(){
+int main_bench(){
  int i,k=0;
  double xs,sj; 
  char dna1[600],dna2[600];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int Runnian(int year);
-int main(){
+int main_bench(){
 	int year,month,day,total=0,i,k;
 	scanf("%d %d %d",&year,&month,&day);
 	for(i=1;i<month;i++){

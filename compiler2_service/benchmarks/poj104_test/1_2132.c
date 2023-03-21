@@ -17,7 +17,7 @@ a=a+1;
 		return x;
 	}
 }
-int main()
+int main_bench()
 {
 	int t,j,num;
 	scanf("%d",&t);

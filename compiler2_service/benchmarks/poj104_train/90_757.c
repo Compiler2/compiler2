@@ -16,7 +16,7 @@ int sd(int n,int m)
 }
 
 
-int main()
+int main_bench()
 {
 	int a;
 	scanf("%d",&a);

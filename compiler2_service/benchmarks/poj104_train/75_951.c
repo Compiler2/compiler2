@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int x[1010]={0},y[1010]={0},i=0,a=0,k=0,b=0,j,g[1010]={0},max;
 	char str1[100000],str2[100000];

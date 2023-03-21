@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	struct stu {
 		char name[100];

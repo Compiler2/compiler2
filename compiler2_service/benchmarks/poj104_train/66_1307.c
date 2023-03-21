@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int year,month,day,y,d,num4,num100,x;
 	int a[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};

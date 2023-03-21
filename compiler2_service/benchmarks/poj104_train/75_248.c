@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int data[3][1100],n,i,j,max;
 	for(n=1;;)

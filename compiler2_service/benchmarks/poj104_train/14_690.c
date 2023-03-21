@@ -7,7 +7,7 @@ struct student
 	int shuxue;
 	int zongfen;
 }stu[100000];
-int main()
+int main_bench()
 {
 	int i,n,j,x,str;
 	scanf("%d",&n);

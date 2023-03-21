@@ -2,7 +2,7 @@
 
 int exchange(int (*)[5],int,int);
 
-int main()
+int main_bench()
 {
 	int matrix[5][5];
 	int m,n;

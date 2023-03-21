@@ -38,7 +38,7 @@ void show (int a[200], int p)
  }
  printf("%d",a[p-1]);
 }
-void main ()
+int main_bench()
 {
  int a[200],b[200];
  get (a,b);

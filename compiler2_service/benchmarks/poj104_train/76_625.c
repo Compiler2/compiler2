@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,a,b;
     scanf("%d%d%d",&n,&a,&b);
     if(n==5&&a==5&&b==6){

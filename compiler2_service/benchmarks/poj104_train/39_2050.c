@@ -10,7 +10,7 @@ struct jiangli
 	int paper;
 	int money;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,max,sum=0,k;
 	scanf ("%d",&n);

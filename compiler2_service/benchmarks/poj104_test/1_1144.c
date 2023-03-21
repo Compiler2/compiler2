@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int count(int x,int y);
     int i,j,n,a[100],b[100];

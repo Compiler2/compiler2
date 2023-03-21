@@ -25,7 +25,7 @@ int f(int m,int n)
 		i=i%n;
 	return(i);
 }
-void main()
+int main_bench()
 {
 	while(1)
 	{

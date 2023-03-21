@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int a,b,c,d,p,q,n,i;
 	scanf("%d%d%d%d",&n,&a,&b,&c);
 	if(a>b&&a>c&&b>c){

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int a,b,c,s=0,m;
     scanf("%d%d%d",&a,&b,&c);
     a=(a-1)%400+1;

@@ -13,7 +13,7 @@ int arrange(int a[],int q,int p)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int n,m,i;
 	int a[100];

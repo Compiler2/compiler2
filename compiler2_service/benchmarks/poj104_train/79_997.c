@@ -4,7 +4,7 @@ struct node{
 	int a;
 	struct node *next;
 };
-void main()
+int main_bench()
 {
 	int i,j,m,n;
 	struct node *head,*p1,*p2;

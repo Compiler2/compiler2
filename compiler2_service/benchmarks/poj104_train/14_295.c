@@ -11,7 +11,7 @@ int cmp(const void *a,const void *b)
 {
     return ((struct data*)b)->s - ((struct data*)a)->s;
 }
-main()
+main_bench_bench()
 {
 	struct data *a;
 	int n;

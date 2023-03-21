@@ -11,7 +11,7 @@ int change(char a[100])
  }
  return(s);
 }
-int main()
+int main_bench()
 {
  char a[5000];
  char b[5000];

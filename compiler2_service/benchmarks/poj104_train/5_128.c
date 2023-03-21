@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,s=0;
 	int cmp(char s1,char s2);

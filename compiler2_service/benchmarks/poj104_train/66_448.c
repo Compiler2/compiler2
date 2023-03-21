@@ -1,7 +1,7 @@
 #include <header.h>
 
 int djt(int y, int m, int d);
-int main(){
+int main_bench(){
     int y, m, d;
     scanf("%d %d %d", &y, &m, &d);    
    int dst=0;

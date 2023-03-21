@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int a,b,c,d,e,f,t,h,m,s,i;
     for(i=0;i<100;i++){

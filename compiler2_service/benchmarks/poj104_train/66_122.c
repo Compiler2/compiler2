@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 { 
 unsigned int i,w,year,month,day,days=0; 
 int mon[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}; 

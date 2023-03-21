@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char quene[500]={'\0'},boy,girl;
 	int i,n,g=0,pair;

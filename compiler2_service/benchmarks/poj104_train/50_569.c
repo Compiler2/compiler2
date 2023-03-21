@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i,j,w,month[13],week,sum_day=0;
 	scanf("%d",&w);

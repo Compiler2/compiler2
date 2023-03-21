@@ -6,7 +6,7 @@ int mhang(int a){
 int mlie(int a){
 	return a-1;
 }
-int main()
+int main_bench()
 {
 	int sz[100][100];
 	int row,col,i,j,hang=0,lie=0;

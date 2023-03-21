@@ -10,7 +10,7 @@ int co(int m[],int n[],int j,int e)
 	}
 	return(c);
 }
-void main()
+int main_bench()
 {
 	int a,b,c,d,e,f,g,m[26],n[26],i,j;
 	scanf("%d",&a);

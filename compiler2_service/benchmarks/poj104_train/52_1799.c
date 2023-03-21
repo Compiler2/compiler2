@@ -9,7 +9,7 @@ void move(int a[],int *p,int n,int m)
 	for(p=a+n;p<a+2*n-m;p++)
 		*(p-n+m)=*p;
 }
-int main()
+int main_bench()
 {
 	int m,n,i;
 	int a[100],*p;

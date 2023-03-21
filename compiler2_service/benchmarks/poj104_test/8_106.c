@@ -57,7 +57,7 @@ void print()
 	}
 }
 
-int main()
+int main_bench()
 {
 	loaddata();
     arrsort();

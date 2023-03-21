@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,i,k,e,z,q,w,c;
     scanf("%d",&n);
     struct qj{

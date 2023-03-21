@@ -12,7 +12,7 @@ int day(int mouth)
 	return(i);
 }
 
-int main()
+int main_bench()
 {
 	int i, w, date=0;
 	scanf("%d", &w);

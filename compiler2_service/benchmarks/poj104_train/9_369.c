@@ -5,7 +5,7 @@ struct person
  char num[11];
  int yr;
 }pe[100],t;
-int main()
+int main_bench()
 {
  int n,i,e,k;
  scanf("%d",&n);

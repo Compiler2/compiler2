@@ -5,7 +5,7 @@ struct a
 	char id[100];
 	int year;
 }p[100];
-int main()
+int main_bench()
 {
 	int n,i,j,k,t=0,r=0;
 	int a[200]={0};

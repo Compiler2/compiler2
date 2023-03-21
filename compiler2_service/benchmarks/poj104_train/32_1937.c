@@ -20,7 +20,7 @@ void putcc(char a[],char b[])
 		c[i]=a[i];
 	}
 }
-int main()
+int main_bench()
 {
 	int n,i,l,A;
 	char d[100][100];

@@ -21,7 +21,7 @@ int hui(int n,int k,int m)
     else
     return hui(n,k/10,m*10+k%10);
 }
-int main()
+int main_bench()
 {
     int i,m,n;
     scanf("%d %d",&m,&n);

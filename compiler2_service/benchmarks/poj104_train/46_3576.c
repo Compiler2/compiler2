@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int r[4]={0,1,0,-1};
     int c[4]={1,0,-1,0};

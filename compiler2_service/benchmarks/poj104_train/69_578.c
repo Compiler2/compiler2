@@ -18,7 +18,7 @@ int plus(int l1,int l2)
     if(b[l]) l++;
     return l;
 }
-int main()
+int main_bench()
 {
    int l1,l2,l;    
    int j;    

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 { int word=0,sum=0,i,j,a[301]={0};char c;
    for(i=0;(c=getchar())!='\n';i++)
     if (c==' ')word=0;

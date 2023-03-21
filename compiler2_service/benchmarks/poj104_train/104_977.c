@@ -13,7 +13,7 @@ int pre(int num)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int n,m,x[100]={0},y[100]={0},i,j,k,d;
 	scanf("%d%d",&n,&m);

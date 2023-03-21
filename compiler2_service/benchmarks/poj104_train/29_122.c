@@ -3,7 +3,7 @@
 
  
  
-int main()
+int main_bench()
 {
 	int m=0,i=0,a[100],b[100],j=0,sz[100];
 	double sz1[100],sum[100];

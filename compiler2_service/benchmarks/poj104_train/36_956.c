@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int rearrange(char s1[],char s2[]);
 	char s1[300],s2[300];

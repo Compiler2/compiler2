@@ -8,7 +8,7 @@ char x;
 char w;
 int l;
 };
-void main()
+int main_bench()
 {
 	struct s stu[100];
 	int n,i,p,m[100],j;

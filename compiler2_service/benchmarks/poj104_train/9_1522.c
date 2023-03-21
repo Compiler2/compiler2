@@ -24,7 +24,7 @@ int cmp(const void *a, const void *b) {
 	}
 }
 
-int main() {
+int main_bench() {
 	int i, num;
 	struct patient pat[100];
 

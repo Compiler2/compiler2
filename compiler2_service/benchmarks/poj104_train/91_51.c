@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char sz[101],*p,sz1[101],*p1;
 	int i,n,j,add=0;

@@ -5,7 +5,7 @@ struct p{
 	int out;
 }a[1000];
 
-int main()
+int main_bench()
 {
 	int i,n,j,max;
 	int t[1000]={0};

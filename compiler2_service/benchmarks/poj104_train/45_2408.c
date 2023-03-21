@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char s[50],w[50];
 	int l1,l2,i,j,count=0;

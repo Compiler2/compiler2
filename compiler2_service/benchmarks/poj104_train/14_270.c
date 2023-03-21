@@ -7,7 +7,7 @@ struct Student
       int Math;
       int Sum;
 };
-int main()
+int main_bench()
 {
      int n,i,s;
      scanf("%d",&n);

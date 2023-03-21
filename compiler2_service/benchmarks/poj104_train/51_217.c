@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int maxflag,max,flag[500];
 	char ch[500][500],str[500];

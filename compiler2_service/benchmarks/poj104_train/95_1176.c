@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 char c,text1[81],text2[81];int i=0;
 gets(text1);printf("\n");gets(text2);printf("\n");

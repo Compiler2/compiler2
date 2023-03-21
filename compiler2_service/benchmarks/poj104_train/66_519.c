@@ -3,7 +3,7 @@
 
 
 int DiJiTian(int year, int month, int day);
-int main(){
+int main_bench(){
 	int y,m,d;
 	int k,j;
 	

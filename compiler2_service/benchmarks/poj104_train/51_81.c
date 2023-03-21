@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char z[502];
 	int n,a,b,c,d,max,count,len,x[502];

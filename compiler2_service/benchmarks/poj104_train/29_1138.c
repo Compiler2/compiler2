@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 double m,sz[100],fm[100],a[100],result[100];
 int k,i;
 scanf("%lf",&m);

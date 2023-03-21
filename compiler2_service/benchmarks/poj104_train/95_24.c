@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[82]={0}, b[82]={0};
 	int i;

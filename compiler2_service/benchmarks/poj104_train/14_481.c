@@ -6,7 +6,7 @@ struct student
     int chinese;
 	int maths;
 	int sum;};
-int main()
+int main_bench()
 { struct student stu[4]={0,0,0,0};
   struct student temp[4]={0,0,0,0};
   int n,i;

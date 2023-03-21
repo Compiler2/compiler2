@@ -29,7 +29,7 @@ void hw(char a[],int n)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int n;
 	char a[500];

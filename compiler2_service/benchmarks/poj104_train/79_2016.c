@@ -1,7 +1,7 @@
 #include <header.h>
 
 int ysf(int n,int m);
-int main(){
+int main_bench(){
 
 	int nz[500],mz[500];
 	int s=0;

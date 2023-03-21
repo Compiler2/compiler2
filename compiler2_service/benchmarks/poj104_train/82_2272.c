@@ -6,7 +6,7 @@ int zhengchang(int i,int j){
 	}
 	return 0;
 }
-int main(){
+int main_bench(){
 	int n,i,a[100],b[100],k,t[100]={0},m=0,j,max;
 	scanf("%d",&n);
 	for(k=0;k<n;k++){

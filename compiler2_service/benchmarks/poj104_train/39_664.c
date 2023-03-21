@@ -5,7 +5,7 @@ struct Aw{
 	int ft,ct,tn,sum;
 	char po,ho;
 }st[];
-int main()
+int main_bench()
 {
 	int n,i,j=0,m,sum=0;
 	char a,b;

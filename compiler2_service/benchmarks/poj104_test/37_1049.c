@@ -30,7 +30,7 @@ void fun(char data[])
            
      
 
-int main()
+int main_bench()
 {
     int n;
     scanf("%d\n", &n);

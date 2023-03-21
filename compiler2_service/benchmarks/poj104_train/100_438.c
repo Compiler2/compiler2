@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char word[300];
 	int num[123]={0},l,i=0,j=97,k=0;

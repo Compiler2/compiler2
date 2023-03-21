@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int N,**p,i,j,sum,m,n,l;
     scanf("%d",&N);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ( )
+int main_bench()
 {
 	int n,year,a,b,i,j,Temp,days=0;
 	int Month1[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

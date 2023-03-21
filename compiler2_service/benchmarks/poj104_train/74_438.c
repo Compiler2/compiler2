@@ -2,7 +2,7 @@
 
 int huiwen(int);
 int sushu(int);
-int main(){
+int main_bench(){
 	int m,n;
 	scanf("%d %d",&m,&n);	int i,k,*sz=(int *)malloc(sizeof(int)*(n-m));
 	k=0;

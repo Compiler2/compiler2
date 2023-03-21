@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double a;
 	int i,j=0;
 	char dna1[501],dna2[501];

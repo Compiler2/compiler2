@@ -36,7 +36,7 @@ int ee(int a,int b,int c,int d,int e)
     p=0;
     return p; 
 }
-main()
+main_bench_bench()
 {
       int x,y,z,t,k;
       int m=0; 

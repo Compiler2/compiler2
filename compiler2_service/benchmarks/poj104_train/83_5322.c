@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int n,shijifen[10],xuefen[10],i,xuefenzhihe;
 double ymxf[10],jidian[10],jidianzhihe,GPA;

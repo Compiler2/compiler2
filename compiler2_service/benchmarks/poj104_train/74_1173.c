@@ -2,7 +2,7 @@
 
 int sushu(int s);
 int huiwen(int s);
-main()
+main_bench_bench()
 {
       int m,n,num=0,i;
       scanf("%d %d",&m,&n);

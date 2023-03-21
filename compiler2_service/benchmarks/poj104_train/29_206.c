@@ -11,7 +11,7 @@ double f(int n)
 		return 1/f(n-1)+1.0;
 	}
 }
-int main()
+int main_bench()
 {
 	int a,i,m,j;
 	double sum;

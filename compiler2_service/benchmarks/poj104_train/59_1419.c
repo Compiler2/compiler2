@@ -3,7 +3,7 @@
 
 int a[200][200] = {0};
 int b[200][200] = {0};
-int main() {
+int main_bench() {
 	int n, m;
 	char tmp;
 	scanf("%d", &n);

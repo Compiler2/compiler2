@@ -23,7 +23,7 @@ int djt(int y,int m,int d){
 	return s;
 }
 
-int main(){
+int main_bench(){
 	int s1=0,s2=0,s=0,i;
 	int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	struct ymd{

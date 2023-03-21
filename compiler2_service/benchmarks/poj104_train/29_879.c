@@ -2,7 +2,7 @@
 
 int a[10000],b[10000],t[10000];
 double c[10000],p[10000];
-int main(){
+int main_bench(){
 	int m,i,j,maxt=0;
 	scanf("%d",&m);
 	for(i=0;i<m;i++){

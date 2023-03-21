@@ -10,7 +10,7 @@ struct scholarship
 	short paper;
 	int ss;
 }stu[100];
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

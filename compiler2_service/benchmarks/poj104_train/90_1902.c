@@ -1,7 +1,7 @@
 #include <header.h>
 
 int bai(int m,int n);
-int main()
+int main_bench()
 {
 	int m[100],n[100],b[100],a,i;
 	scanf("%d",&a);

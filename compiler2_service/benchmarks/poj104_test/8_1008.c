@@ -11,7 +11,7 @@ void IN();
 void OR();
 void LIAN();
 void OU();
-int main()
+int main_bench()
 {
   IN();
   OR();

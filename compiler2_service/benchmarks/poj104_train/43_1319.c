@@ -10,7 +10,7 @@ int prime(int a)
 	}
 	if(k>a/2) return 1;
 }
-int main ()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

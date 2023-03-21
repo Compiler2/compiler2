@@ -5,7 +5,7 @@ int count(char*p)
  for(;(*p!=' ')&&(*p);p++)n++;
  return n;
 }
-int main()
+int main_bench()
 { char a[500],min[500]={0},max[500]={0};
   int  i,j,n,mi=0,ma=0,k,x;
   gets(a);

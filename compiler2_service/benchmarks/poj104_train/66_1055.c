@@ -2,7 +2,7 @@
 
 int isrunnian(int m);
 int dijitian(int a,int b,int c);
-int main(){
+int main_bench(){
 	int x,y,z,k,p=0;
 	scanf("%d%d%d",&x,&y,&z);
 	p=x+dijitian(x,y,z)+(x-1)/4-(x-1)/100+(x-1)/400-1;

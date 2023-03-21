@@ -16,7 +16,7 @@ void change(int n,int m,int a[100])
 		a[i]=b[i-m];
 	}
 }
-int main()
+int main_bench()
 {
 	int n,m,i;
 	int a[100];

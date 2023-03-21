@@ -18,7 +18,7 @@ int day(int a,int b)
       if(b>2)   c=60+31*(d-1)+30*(b-2-d);
       return(c);
       }
-main()
+main_bench_bench()
 {
       int n,i,p,q,a,b,c;
       scanf("%d",&n);

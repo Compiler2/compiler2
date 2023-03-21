@@ -1,7 +1,7 @@
 #include <header.h>
 
 int exchange(int matrix[][5],int n,int m);
-int main() 
+int main_bench() 
 {
     int det[5][5];
     int m,n,i,j;

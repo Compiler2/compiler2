@@ -16,7 +16,7 @@ int f(int*p[5][5],int m,int n)
 	}
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int a[5][5],*p[5][5];
 	int x,y;

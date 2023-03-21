@@ -12,7 +12,7 @@ int mm(int i)
 return 0;}
 }return 1;
 }
-int main(int argc, char* argv[])
+int main_bench()
 { 
      int i,n,sum;	
 	scanf("%d",&n);

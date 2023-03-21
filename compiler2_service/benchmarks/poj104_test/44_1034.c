@@ -1,7 +1,7 @@
 #include <header.h>
 
 int turn(int a);
-int main()
+int main_bench()
 {
  int n;
  for(int i=0;i<6;i++)

@@ -5,7 +5,7 @@ void b();
 void c();
 void d();
 int x1[1000],x2[499],n1,n2;
-int main()
+int main_bench()
 {
 	
 	a();

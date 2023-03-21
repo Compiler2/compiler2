@@ -3,7 +3,7 @@
 
 int A[11][11], tmp[11][11];
 int N;
-int main()
+int main_bench()
 {
 	scanf ("%d %d", &A[5][5], &N);
 	for (int i = 0; i < N; i ++)

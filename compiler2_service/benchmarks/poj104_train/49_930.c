@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int ishuiwen(char *p);
 	char s[500],sub[500]="0";

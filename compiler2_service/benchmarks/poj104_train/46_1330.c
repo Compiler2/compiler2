@@ -35,7 +35,7 @@ int re(int a[100][100],int row,int col,int b[])
 
 
 
-int main()
+int main_bench()
 {
 	int a[100][100],b[10000];
 	int row,col,i,j,xx;

@@ -7,7 +7,7 @@ struct
 	int num;
 }book[1000];
 
-int main()
+int main_bench()
 {
 	int n,i,j,max=0,m=0;
 	scanf("%d",&n);

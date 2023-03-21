@@ -17,7 +17,7 @@ int f(int array[][5],int m,int n)
 		return 0;
 }
 
-void main()
+int main_bench()
 {
 	int m,n,i,j;
 	int a[5][5];

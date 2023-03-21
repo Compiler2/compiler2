@@ -17,7 +17,7 @@ int check(char s)
     }
     return 1;
 }
-int main()
+int main_bench()
 {
     scanf("%d\n",&n);
     for (i=0;i<n;i++)

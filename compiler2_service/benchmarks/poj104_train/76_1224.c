@@ -3,7 +3,7 @@
 
 
 int a[50000],b[50000];
-int main()
+int main_bench()
 {
 	int n,i,k=1,a0,b0,result=1;
 	scanf("%d",&n);

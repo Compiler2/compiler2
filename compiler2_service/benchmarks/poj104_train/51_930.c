@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[600];
 	int n, i, j, length, len[600] = { 0 }, log, num, sum, max;

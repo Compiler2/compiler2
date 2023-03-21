@@ -25,7 +25,7 @@ int turn(char *a)
     
 }
 
-int main()
+int main_bench()
 {
     char a[100];
     gets(a);

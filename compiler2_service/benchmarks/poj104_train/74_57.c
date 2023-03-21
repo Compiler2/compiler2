@@ -25,7 +25,7 @@ int g ( int x)
 			z=0;
 	return(z);
 }
-void main()
+int main_bench()
 {
 	int m,n,i,a[1000]={0},k=0;
    scanf("%d %d",&m,&n);

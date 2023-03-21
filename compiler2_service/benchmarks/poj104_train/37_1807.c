@@ -2,7 +2,7 @@
 
 
 void com(char str[10000]);
-int main()
+int main_bench()
 {
     int t,i;
     char a[200][10000];

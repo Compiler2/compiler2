@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	double rate;
 	scanf("%lf",&rate);
 	char DNA1[501],DNA2[501];

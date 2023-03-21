@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int m;
     double sum;
     int num[10000]={0},n[200];

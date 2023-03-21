@@ -1,7 +1,7 @@
 #include <header.h>
 
 int stri(char*);
-int main()
+int main_bench()
 {
     char str[1000][1000];
     char *p[1000],*p0;

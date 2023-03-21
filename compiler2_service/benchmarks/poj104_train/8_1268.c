@@ -57,7 +57,7 @@ void u()
 		printf("%d ",c[i]);
 	printf("%d",c[M+N-1]);
 };
-int main()
+int main_bench()
 {
 	x();
 	y();

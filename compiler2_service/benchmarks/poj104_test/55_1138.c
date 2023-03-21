@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int a,b,i,j,t,m,n,s,temp=0;
 	char p[20]="\0",q[20]="\0";

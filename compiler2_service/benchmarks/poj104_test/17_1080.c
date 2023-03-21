@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (void)
+int main_bench (void)
 {
 	char a[100];
 	while(gets(a))	

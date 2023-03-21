@@ -7,7 +7,7 @@ int f(int x)
     a[i]=a[i-1]+a[i-2];
     return a[x-1];
 }
-int main()
+int main_bench()
 {
   int n;
   scanf("%d",&n);

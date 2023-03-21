@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int sz[5][5],m,n,e,row,col;
 for( row=0;row<5;row++){
 for( col=0;col<5;col++){

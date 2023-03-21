@@ -2,7 +2,7 @@
 
 char *name[] = { "Mon.","Tue.","Wed.", "Thu.", "Fri.", "Sat.", "Sun."
                };
-int main(){
+int main_bench(){
   int D,M,Y,A;
   scanf("%d%d%d",&Y,&M,&D);
   if ((M == 1) || (M == 2)){

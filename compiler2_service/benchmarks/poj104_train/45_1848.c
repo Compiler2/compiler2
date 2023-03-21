@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int Position = 0;
 	int index = 0;

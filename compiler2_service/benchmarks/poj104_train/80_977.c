@@ -3,7 +3,7 @@
 int DiJiTian(int year,  int month,  int day);
 int isRunNian(int   year);
 void swap(int *a,  int *b);
-int main()
+int main_bench()
 {
 	int a,b,c,i;
 	int  year1,  month1,  day1;

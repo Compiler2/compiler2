@@ -5,7 +5,7 @@ void prt(int *a)
 	for(i=0;i<5;i++)
 		printf("%d%c",*(a+i),(i<4)?' ':'\n');
 }
-void main()
+int main_bench()
 {
 	int i,n,m,a[5][5],j;
 

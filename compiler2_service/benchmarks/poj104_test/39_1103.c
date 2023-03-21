@@ -4,7 +4,7 @@
  
 
 
-int main()
+int main_bench()
 {
  int n,i;
  char name[10000][30],ganbu[10000][10],west[10000][10],str[20];

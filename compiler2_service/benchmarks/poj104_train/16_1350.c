@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 { int a,b,c;
   scanf("%d",&a);
   b=a/10000;

@@ -3,7 +3,7 @@
 
 
 int change(int a[5][5],int x,int y);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,m;
 	int a[5][5],i,j;

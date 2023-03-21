@@ -2,7 +2,7 @@
 
 int start(char a);
 int sym(char b);
-int main()
+int main_bench()
 {
 	int n,i,j,result,len;
 	char c[100][81],a[100];

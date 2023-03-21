@@ -1,7 +1,7 @@
 #include <header.h>
 
 int nn(int x);
-int main(){
+int main_bench(){
 	int h[12],i,y,r=0;
 	scanf("%d",&y);
 	for(i=1;i<=12;i++){

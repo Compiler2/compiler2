@@ -13,7 +13,7 @@ int move(int a[100],int n,int m)
 	if(m>0)
 		move(a,n,m);
 }
-void main()
+int main_bench()
 {
 	int a[100],m,n,i;
 	scanf("%d%d",&n,&m);

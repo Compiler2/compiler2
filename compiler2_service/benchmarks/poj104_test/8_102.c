@@ -25,7 +25,7 @@ void h(int a[20],int n,int p)
 	if(p==1)	printf("%d ",a[n-1]);
     if(p==2)    printf("%d\n",a[n-1]);
 } 
-int main()
+int main_bench()
 {
 	f();
     g(b,l);

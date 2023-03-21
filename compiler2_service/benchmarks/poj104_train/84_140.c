@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int r,i,max1=0,max2=0;
 	int score[100];

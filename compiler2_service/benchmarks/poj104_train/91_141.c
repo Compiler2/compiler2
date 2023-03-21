@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char str[201];
 	gets(str);

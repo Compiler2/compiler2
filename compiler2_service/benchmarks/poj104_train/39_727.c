@@ -10,7 +10,7 @@ struct stu
    int e;
    int t;
 };
-int main()
+int main_bench()
 {
 	int n,i,m;
 	struct stu h[100]={0};

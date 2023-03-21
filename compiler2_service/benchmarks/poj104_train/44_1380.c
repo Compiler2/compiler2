@@ -18,7 +18,7 @@ int reverse(int num)
         r=0-r;
     return(r);
 }
-int main()
+int main_bench()
 {
      int i;
      int a[7];

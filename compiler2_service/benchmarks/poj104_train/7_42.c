@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char s[100]={'\0'},w[50]={'\0'},d[50]={'\0'},h[100]={'\0'};
 	int i,j,k=0,t=0,m,n=0;
 	gets(s);

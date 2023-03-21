@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int N,i,price,total=0,max=0,t;
     scanf("%d",&N);

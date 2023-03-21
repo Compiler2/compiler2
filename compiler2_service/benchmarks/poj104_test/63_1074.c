@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int matrix1[100][100], matrix2[100][100];
 	int row1, column1, row2, column2, i, j, k, sum;

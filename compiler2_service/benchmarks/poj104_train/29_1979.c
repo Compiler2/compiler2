@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	double shuzi[10000]={0};
 	double fenshu[10000]={0};

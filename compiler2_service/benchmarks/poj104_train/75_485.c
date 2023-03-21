@@ -2,7 +2,7 @@
 
 int t[1005];
 int p[2010];
-int main(int argc, char * argv[]) {	
+int main_bench() {	
 	int i,j,max,c,n=0;
 	char x;
 	while(1){

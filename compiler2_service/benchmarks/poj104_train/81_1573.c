@@ -1,7 +1,7 @@
 #include <header.h>
 
 int ar(int n,int m);
-void main()
+int main_bench()
 {
 	int a,b,t,A[5][5],i,j;
 	for(i=0;i<5;i++)

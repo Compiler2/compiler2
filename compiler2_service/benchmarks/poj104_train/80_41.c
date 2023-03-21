@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i,j,k,sum;
 	int a[12]={31,29,31,30,31,30,31,31,30,31,30,31};

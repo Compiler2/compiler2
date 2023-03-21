@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
    int i, y, z;
    char m[100], max[100],min[100];

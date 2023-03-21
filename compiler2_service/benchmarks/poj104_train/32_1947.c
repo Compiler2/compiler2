@@ -39,7 +39,7 @@ int minus(int a[], int al, int b[], int bl,int c[])
 	return al;
 }
 
-int main()
+int main_bench()
 {
 	char s1[101],s2[101];
 	int a[101],b[101],c[101];

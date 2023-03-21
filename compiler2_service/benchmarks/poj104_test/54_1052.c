@@ -18,7 +18,7 @@ int m(int n,int k)
 	} 
 	return s; 
 } 
-int main() 
+int main_bench() 
 { 
 	int n,k; 
 	scanf("%d%d",&n,&k);

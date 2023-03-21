@@ -10,7 +10,7 @@ struct student{
 	int paper;
 }stu[100];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,sum=0;	
 	scanf("%d",&n);

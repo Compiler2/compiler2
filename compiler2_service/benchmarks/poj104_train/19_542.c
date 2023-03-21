@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[300]={'\0'},w1[100],w2[100];
 	char *p,*q;

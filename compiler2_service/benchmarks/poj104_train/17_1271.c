@@ -42,7 +42,7 @@ int youk(char c[],int j,int len)
 }
 		
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d", &n);

@@ -7,7 +7,7 @@ int power(long int a,long int i)
 		k=k*a;
 	return(k);
 }
-int main()
+int main_bench()
 {
 	long int a,b,i,j,l,t,y,k;
 	unsigned long  temp=0,x;

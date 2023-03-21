@@ -29,7 +29,7 @@ int oushu(int n)
 			return jishu(n);
 		}
 
-void main()
+int main_bench()
 {
 	scanf("%d",&b);
 	if(b==1)

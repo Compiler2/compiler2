@@ -16,7 +16,7 @@ int legal(char s[20])
 	    return 0;
 
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

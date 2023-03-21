@@ -9,7 +9,7 @@ int mon(int m){
     return(y);
 }
 
-int main(){
+int main_bench(){
     int w , ww , i = 13 , m ;
     scanf("%d" , &w );
     for( m = 1 ; m <= 12 ; m = m + 1 ){

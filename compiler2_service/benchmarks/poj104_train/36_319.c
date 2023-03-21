@@ -19,7 +19,7 @@ void rank(char *i)
 	}
 }
 
-void main()
+int main_bench()
 {
 	char a[100],b[100],*i,*j;
 	int flag=0;

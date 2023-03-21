@@ -8,7 +8,7 @@ int hh(char stu1,char stu2)
     b=a1+a2;
 	return(b);
 }
-int main()
+int main_bench()
 {
 	char s[1000]={'\0'};
 	int b[1000]={0};

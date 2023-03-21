@@ -15,7 +15,7 @@ int apple(int m,int n)
 	k=apple(m,n-1)+apple(m-n,n);
 	return k;
 }
-int main()
+int main_bench()
 {
 	int t,m,n,k;
 	scanf("%d",&t);

@@ -6,7 +6,7 @@ int f(int x,int y)
 	if (x>=0&&x<5&&y>=0&&y<5) return (1);
 	else return (0);
 }
-void main()
+int main_bench()
 {
 	int i,j,t;
 	

@@ -7,7 +7,7 @@ int check(char c)
 	if(c=='\'')return 0;
 	return 1;
 }
-void main()
+int main_bench()
 {
 	int check(char c);
 	int i=0,j=0,l=0,max=0,min=0,jmax=0,jmin=0;

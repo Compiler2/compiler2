@@ -20,7 +20,7 @@ int jizu(int x)
    }
   return p;    
 }
-int main()
+int main_bench()
 {
   int n;
   scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int k,m,n,i,col,row,sum[100]={0};
 	scanf("%d",&k);

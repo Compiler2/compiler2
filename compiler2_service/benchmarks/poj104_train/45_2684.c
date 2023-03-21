@@ -10,7 +10,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,j,m,n,len1,len2,c=0,d;
 	char s[50],w[50],a[50]={0};

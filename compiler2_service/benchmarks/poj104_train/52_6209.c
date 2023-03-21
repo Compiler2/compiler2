@@ -21,7 +21,7 @@ trans(int a[],int m,int n)
 
 		
 
-main()
+main_bench_bench()
 {
 	int n,m;
 	int a[110];

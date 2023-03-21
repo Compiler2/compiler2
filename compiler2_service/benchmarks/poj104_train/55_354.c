@@ -3,7 +3,7 @@
 long int sum=0;
 char a[10000];
 long int c[10000];
-int main()
+int main_bench()
 {
     long int i,j,k,l,n,m,y=0,x,t=0;
     long int hhh(int q, int p); 

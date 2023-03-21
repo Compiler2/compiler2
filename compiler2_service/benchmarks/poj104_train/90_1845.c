@@ -2,7 +2,7 @@
 
 int yk(int a,int b);
 int qm(int a,int b);
-int main()
+int main_bench()
 {
 	int t;
 	scanf("%d",&t);

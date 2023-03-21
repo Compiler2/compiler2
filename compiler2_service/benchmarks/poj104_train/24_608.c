@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char w[1000],ws[50][20]={0};
 	int i;

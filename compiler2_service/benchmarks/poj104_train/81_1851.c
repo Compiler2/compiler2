@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[10][10];
-int main()
+int main_bench()
 {
 	int process(int y,int z);
 	int i,j,n,m;

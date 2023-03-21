@@ -7,7 +7,7 @@ char c[105];
 char d[105];
 int k;
 int p;
-int main()
+int main_bench()
 {
 	int i,j;
 	int t;

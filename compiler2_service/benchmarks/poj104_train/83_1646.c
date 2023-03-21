@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,i,a[10],b[10],sum;
 	double GPA,c,d;

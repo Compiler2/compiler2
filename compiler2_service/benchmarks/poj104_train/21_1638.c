@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	int n,a[300],sum=0,i,j,temp,sign=0;
 	float p,dis;
 	scanf("%d",&n);

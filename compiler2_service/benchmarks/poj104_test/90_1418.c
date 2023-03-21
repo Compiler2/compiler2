@@ -9,7 +9,7 @@ int f(int m,int n)
    else s=1;
    return s;
 }
-int main()
+int main_bench()
 {
    int t,m,n,i,s;
    scanf("%d",&t);

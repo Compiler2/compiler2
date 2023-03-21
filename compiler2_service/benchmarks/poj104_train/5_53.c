@@ -8,7 +8,7 @@ int atgc(char a){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	double m;
 	char xl1[500]={'\0'},xl2[500]={'\0'};
 	scanf("%lf %s %s",&m,xl1,xl2);

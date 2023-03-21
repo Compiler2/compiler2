@@ -5,7 +5,7 @@ struct patient
 	int age;
 };
 
-int main()
+int main_bench()
 {	struct patient pt[100];
 
 	int n,i,j,a=0,b=0,tem;

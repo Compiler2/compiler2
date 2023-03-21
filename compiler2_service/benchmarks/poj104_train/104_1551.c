@@ -27,7 +27,7 @@ void array(int a[],int number,int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int m,n;
 	scanf("%d%d",&m,&n);

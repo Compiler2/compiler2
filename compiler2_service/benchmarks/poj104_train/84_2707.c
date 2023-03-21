@@ -12,7 +12,7 @@ int max(int a[100],int n,int m)
 	}
 	return y;
 }
-int main()
+int main_bench()
 {
 	int a[100],n,i,m;
 	scanf("%d",&n);

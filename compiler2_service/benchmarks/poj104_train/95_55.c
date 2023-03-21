@@ -33,7 +33,7 @@ char change(char a)
     }
 	return x;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
     char s[100],t[100],p[100],q[100];
 	int i;

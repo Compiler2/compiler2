@@ -4,7 +4,7 @@ struct f{
 	int a;
 	int b;
 	int c;}st[100000],tp;
-int main(){
+int main_bench(){
 	int n,i,ii,j,d,a,b,c;
 	char cc;
 	scanf("%d",&n);

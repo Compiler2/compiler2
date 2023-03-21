@@ -6,7 +6,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	double n;
 	scanf("%lf",&n);

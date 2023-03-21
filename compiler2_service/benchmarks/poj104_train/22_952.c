@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 { 
 	unsigned int a[301],x;
 	int n=1,i,j;

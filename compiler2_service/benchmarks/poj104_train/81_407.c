@@ -7,7 +7,7 @@ int mn(int n,int m)
 	else
 		return 0;
 }
-int main()
+int main_bench()
 {
 	int a,n,m,i,j,(*p)[5],b[5][5];
 	for(i=0;i<5;i++)

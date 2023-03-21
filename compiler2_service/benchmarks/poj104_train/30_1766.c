@@ -7,7 +7,7 @@ int have7(int i)
     else
         return 1;
 }
-int main ()
+int main_bench()
 {
     int n,i,s=0;
     scanf("%d",&n);

@@ -48,7 +48,7 @@ int f(int a[])
 		return 0;
 }
 
-int main()
+int main_bench()
 {
 	int a[6]={0,1,2,3,4,5},b;
 	for(a[1]=1;a[1]<6;a[1]++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char input_string1[251],input_string2[251];
 	char num1[252],num2[252];

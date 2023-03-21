@@ -12,7 +12,7 @@ struct student
 };
 struct student st[100];
 struct student temp;
-int main()
+int main_bench()
 {
 	int i,N,j,sum=0;
 	scanf("%d",&N);

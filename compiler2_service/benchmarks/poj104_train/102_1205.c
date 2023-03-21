@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n, i, a=0, b=0, m;
     float height[50], male[50], female[50], t;
     char gender[50][10];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
   int a[301];
   int n,j,k,l,i,max,max1;

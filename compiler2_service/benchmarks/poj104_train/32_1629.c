@@ -42,7 +42,7 @@ void jianfa(char *a,char*b,char*c)
 	stringrev(d,c);
 }
 
-void main()
+int main_bench()
 {
 	int n,i,j,k;
 	char a[101],b[101],c[101]={0};

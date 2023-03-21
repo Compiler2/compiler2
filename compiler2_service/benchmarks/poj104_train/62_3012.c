@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,j,i,l,k,a;
 	char z[256];
     gets(z);l=strlen(z);

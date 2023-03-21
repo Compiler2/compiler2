@@ -6,7 +6,7 @@ struct student
  int score2;
 } stu[100000];
 
-void main()
+int main_bench()
 {
 	int n,i,sum[100000],max=0,j,k,l;
 	scanf("%d",&n);

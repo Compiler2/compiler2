@@ -1,7 +1,7 @@
 #include <header.h>
 
 int issushu(int number);
-int main(){
+int main_bench(){
 int n,i;
 int s=0;
 scanf("%d",&n);

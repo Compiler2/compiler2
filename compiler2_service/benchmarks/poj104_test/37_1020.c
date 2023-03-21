@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int t,i,m,n,l,count;
 	char a[100000];

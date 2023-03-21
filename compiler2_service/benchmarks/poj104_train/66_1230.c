@@ -2,7 +2,7 @@
 
 int RunNian(int year);
 int DiJiTian(int year, int month, int day);
-int main(){
+int main_bench(){
         int y ,m ,d, d2,d3;
         scanf("%d%d%d",&y,&m,&d);
         d2=(y-1)+(y-1)/400*97+(y-1)%400/100*24+(y-1)%100/4;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int x[100],y[100];
-int main()
+int main_bench()
 {
 	int n,i,j,hour,maxhour;
 	hour=0;

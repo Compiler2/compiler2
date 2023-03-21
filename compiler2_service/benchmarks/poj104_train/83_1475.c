@@ -3,7 +3,7 @@
 
 float pnt(float scr);
 
-int main()
+int main_bench()
 {
 	int n,i;
 	float gpa=0,sum=0,score[10],credit[10];

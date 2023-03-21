@@ -83,7 +83,7 @@ void minus(char a[],char b[],char difference[])
      difference[1]='\0';
      back(difference);
 }
-main()
+main_bench_bench()
 {
       char a[1001],b[1001],sum[1001];
       scanf("%s %s",a,b);

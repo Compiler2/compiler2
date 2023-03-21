@@ -12,7 +12,7 @@ struct student
 };
 
 
-int main()
+int main_bench()
 {
 	struct student stu[100]={{"\0"}};
 	struct student total={"\0"};

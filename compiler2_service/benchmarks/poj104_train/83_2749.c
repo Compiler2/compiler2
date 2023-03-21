@@ -12,7 +12,7 @@ float jd(int x){
       if (x>=60) return 1.0;
       return 0;
 }
-int main(){
+int main_bench(){
     int n,i;
 	int xuefen[100];
 	int xuefensum;

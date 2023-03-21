@@ -33,7 +33,7 @@ void match(char a[])
 	if(check==0)
 		return;
 }
-int main()
+int main_bench()
 {
 	
 	int n;

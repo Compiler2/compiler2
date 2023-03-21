@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int all,i,p,day,o,count;
 	char name[101][101],prename[101][101];
 	count=0;

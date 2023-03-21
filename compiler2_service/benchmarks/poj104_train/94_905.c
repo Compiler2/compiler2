@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int (sz[500]),(odd[500]);
 	int j,i,n,k,a,e,g;
 	scanf("%d",&n);

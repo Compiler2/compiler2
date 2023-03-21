@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int row,line,rownow,linenow,n,i,j,a[10000];
 	scanf("%d %d",&row,&line);

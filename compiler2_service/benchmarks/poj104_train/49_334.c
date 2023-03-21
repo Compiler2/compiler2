@@ -13,7 +13,7 @@ int huiwen(char *a){
      else return 0;   
     
     }
-int main(){
+int main_bench(){
     char a[501],tmp[501];
     int i,j,k,len;
     scanf("%s",a);

@@ -14,7 +14,7 @@ int f(int c[5][5],int n,int m)
     
     }
     }
-int main(){
+int main_bench(){
     int c[5][5],i,j,a,m,n;
     for(i=0;i<5;i++){
                      for(j=0;j<5;j++){

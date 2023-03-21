@@ -27,7 +27,7 @@ int hebing(int* a ,int n,int *b ,int m,int *c)
        c[i]=b[i-n];
        return *c;
 }
-int main()
+int main_bench()
 {
 int n,m,i;
 scanf("%d %d",&n,&m);

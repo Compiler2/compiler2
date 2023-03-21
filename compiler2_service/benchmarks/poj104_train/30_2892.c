@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
  int n;
  int result=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,count1,count2;
 	char str1[80],str2[80];

@@ -9,7 +9,7 @@ int comp(char s1[],char s2[],int j,int i)
 	else if((s1[j]!=s2[i])&&(i==0))
 	return(0);
 }
-void main()
+int main_bench()
 {int i,j,k,y,u;
  char str1[100],str2[100],c;
  for(i=0;(c=getchar())!=' ';i++)

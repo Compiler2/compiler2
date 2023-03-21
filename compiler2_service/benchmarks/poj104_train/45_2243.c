@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
    char sor[20],wt[20];
    int i,j,tag;
    scanf("%s%s",wt,sor);

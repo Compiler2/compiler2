@@ -4,7 +4,7 @@ int s[100]={0},t[100]={0},n,i,j,m=0;
 char ss[100][100];
 int cmp(const void *a, const void *b)
 {return(*(int *)b-*(int *)a);}
-int main() 
+int main_bench() 
 {
 scanf("%d",&n); 
 for(i=0;i<n;i++)

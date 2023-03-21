@@ -5,7 +5,7 @@ struct score
 	char id[10];
 	char name[26];
 }book[1000];
-int main()
+int main_bench()
 {
 	int i,j,k,n,num,max=0;
 	char maxname;

@@ -13,7 +13,7 @@ int fun(int x)
     } 
     return b;
 }
-main()
+main_bench_bench()
 {
    int m,n,k,i;
    scanf("%d",&m);

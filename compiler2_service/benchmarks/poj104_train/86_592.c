@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int g,time,n,a[100],m,i;
 

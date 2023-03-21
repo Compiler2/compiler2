@@ -4,7 +4,7 @@ struct ren{
     char sex[8];
     double gao;
 }a[45];
-main()
+main_bench_bench()
 {
     int i,j,k,n;
     scanf("%d",&n);

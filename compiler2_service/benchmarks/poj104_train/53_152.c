@@ -7,7 +7,7 @@
 	   struct linknode *next,*prev;
  } snode,*ptr;
 
- main ()
+ main_bench ()
  {
      int i,j,l,k,n,syn; 
 	 ptr head,p1,p2,p3;

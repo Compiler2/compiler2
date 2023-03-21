@@ -19,7 +19,7 @@ int sui(int a)
 	if(i==a) return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j,a[100];
 	scanf("%d %d",&m,&n);

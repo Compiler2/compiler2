@@ -13,7 +13,7 @@ int num2(struct stu s);
 int num3(struct stu s);
 int num4(struct stu s);
 int num5(struct stu s);
-void main()
+int main_bench()
 {
 	struct stu st[100];
 	int n,i,max=0;

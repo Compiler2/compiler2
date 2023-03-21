@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char zfc[51]={0},s[51]={0},word[51]={0},temp[51]={0};
 	int i,j,a=0,len1,len2;

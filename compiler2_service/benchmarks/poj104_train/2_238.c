@@ -14,7 +14,7 @@ struct
 
 
 
-int main()
+int main_bench()
 {
 	int n,m,t,k,d;
 	int all=0;

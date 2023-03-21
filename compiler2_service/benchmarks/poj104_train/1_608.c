@@ -7,7 +7,7 @@ int f(int n,int min){
 		if(n%i==0)result+=f(n/i,i);
 	return result;
 }
-void main()
+int main_bench()
 {
 	int cases,a;
 	scanf("%d",&cases);

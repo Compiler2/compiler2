@@ -4,7 +4,7 @@ int toup (int m)
 {int l;l=m/2;return l;}
 
 
-int main(){int i,j;
+int main_bench(){int i,j;
 int a[300],b[300],ac=0,bc=0,xun,h;
 scanf("%d%d",&i,&j);
 

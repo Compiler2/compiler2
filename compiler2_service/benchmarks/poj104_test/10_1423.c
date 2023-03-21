@@ -28,7 +28,7 @@ void bl(int h[],int s[],int m)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int r,i,n;
 	scanf("%d",&n);

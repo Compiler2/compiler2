@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int changdu[200];
 	char zfc[2000];
 	int weizhi[200];

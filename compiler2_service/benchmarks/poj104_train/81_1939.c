@@ -29,7 +29,7 @@ for(i=0;i<=4;i++)
 }
 else printf("error\n");
 }
-void main()
+int main_bench()
 {
 	int num[5][5]={0};
 	int n,m,i,j;

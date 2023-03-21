@@ -11,7 +11,7 @@ struct student
 	int sum;
 }stu[100];
 
-void main()
+int main_bench()
 {
 	int n,i;
 	int all=0;

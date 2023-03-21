@@ -30,7 +30,7 @@ void sort(struct stu a[],int l, int r)
 
 
 
-int main()
+int main_bench()
 {
    int n;
    struct stu a[1000],b[1000],c[1000],temp;

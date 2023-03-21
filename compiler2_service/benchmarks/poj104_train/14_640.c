@@ -8,7 +8,7 @@ struct stu
 	int mat;
 	int tot;
 };
-int main()
+int main_bench()
 {
 	struct stu a[100050];
 	int n,k,i,j,temp2,max;

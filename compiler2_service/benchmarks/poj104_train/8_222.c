@@ -2,7 +2,7 @@
 
 int pai1 (int x[1000] ,int y);
 int pai2 (int x[1000] ,int y);
-int main ()
+int main_bench()
 {
     int n, m, i, j;
     int a[1000],b[1000];

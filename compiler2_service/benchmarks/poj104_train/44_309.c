@@ -40,7 +40,7 @@ int reverse (int num){
 	}
 	return result;
 }
-int main(){
+int main_bench(){
  int n,i,r;
  for(i=0;i<6;i++){
 	 scanf("%d",&n);

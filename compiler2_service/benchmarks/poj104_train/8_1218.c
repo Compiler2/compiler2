@@ -41,7 +41,7 @@ void print(int p,int q,int *num1,int *num2)
      for(i=1;i<p;i++) printf(" %d",num1[i]);
      for(i=0;i<q;i++) printf(" %d",num2[i]);
 }
-main ()
+main_bench()
 {
      int p,q,*num1,*num2;
      scanf("%d%d",&p,&q);

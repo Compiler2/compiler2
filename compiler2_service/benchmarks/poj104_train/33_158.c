@@ -13,7 +13,7 @@ char hb(char a){
 	return a;
 }
 
-int main(){
+int main_bench(){
 	int n;
 	scanf("%d",&n);
 	for(int z=0;z<n;z++){

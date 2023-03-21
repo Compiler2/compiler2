@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int hang[6][6],lie[6][6],a[6][6];
     int i , j ,k ,hmax= -1000000,lmin= 1000000;

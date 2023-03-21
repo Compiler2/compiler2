@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void)
+int main_bench()
  {
 	char string[256]={'\0'};
 	char subString[100]={'\0'};

@@ -7,7 +7,7 @@ char change(char s)
 	return s;
 }
 
-int main()
+int main_bench()
 {
 	char c[2][80];
 	int i,j;

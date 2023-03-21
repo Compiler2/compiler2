@@ -6,7 +6,7 @@ float cc(int x,float y)
 		return(x-y);
 	else return(y-x);
 }
-void main()
+int main_bench()
 {
 	int n,i,p=0,j;
 	float sum=0,t=0;

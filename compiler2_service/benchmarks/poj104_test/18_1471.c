@@ -41,7 +41,7 @@ int f(int a[100][100],int n)
     }
 }
 
-int main()
+int main_bench()
 {
       int n,i,j,k;
       int a[100][100];

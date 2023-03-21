@@ -5,7 +5,7 @@ struct words
      int len;
      char word[20];
 };
-int main()
+int main_bench()
 {
    int n,i,size,count=0;;
    struct words *a;

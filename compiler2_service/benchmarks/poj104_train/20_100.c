@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[10],str1[10],substr[4],letter,result[13],
 	b[10]={'\0'},string[13];

@@ -2,7 +2,7 @@
 
 int a[100000][2],b[100000]={0};
 int c=0,f=0,e=0,i=0,m=0,t=0,n=0;
-int main(){
+int main_bench(){
 
     scanf("%d",&e);
     for(i=0;i<e;i++){

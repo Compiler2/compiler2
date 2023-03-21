@@ -7,7 +7,7 @@ struct p
        int age;
 };
 
-int main()
+int main_bench()
 {
     void sort(int n,struct p a[101]);
     int n,i;

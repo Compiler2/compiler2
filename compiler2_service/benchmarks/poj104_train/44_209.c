@@ -27,7 +27,7 @@ int f(int n)
          }
    
 }  
-  int main()
+  int main_bench()
 {
     int a[6];  
     for(int i=0;i<6;i++)

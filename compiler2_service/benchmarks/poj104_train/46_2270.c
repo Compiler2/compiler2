@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int a[105][105];
 	int flag=1,loci=0,locj=0,row,col,upwall=0,downwall,rightwall,leftwall=-1,i,j;

@@ -46,7 +46,7 @@ void form(int a[][105],int n)
      }
 }
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int n,i,j,k,flag;
   scanf("%d",&n);

@@ -16,7 +16,7 @@ void inf(int m)
         a[i][j] = b[i][j];
    if(m < n) inf(m+1);
 }
-int main()
+int main_bench()
 {
   int i,j;
   scanf("%d%d",&a[5][5],&n);

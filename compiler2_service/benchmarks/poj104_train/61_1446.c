@@ -2,7 +2,7 @@
 
 
 int feibonaqi(int N);
-int main()
+int main_bench()
 {
 	int n;
 	int j;

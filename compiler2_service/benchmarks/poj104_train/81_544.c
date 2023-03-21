@@ -1,7 +1,7 @@
 #include <header.h>
 
 int putout(int n,int m);
-int main()
+int main_bench()
 {
 	int i,j,n,m,return1;
 	int str[5][5]={0},turn[5];

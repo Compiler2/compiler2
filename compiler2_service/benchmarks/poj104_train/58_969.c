@@ -4,7 +4,7 @@ int identf(char *str);
 int isKey(char *str);
 
 
-int main()
+int main_bench()
 {
 
  int n,i;

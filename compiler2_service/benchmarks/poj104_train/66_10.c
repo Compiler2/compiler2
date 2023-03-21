@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int year,month,day;
 	int montable[12]={0,3,3,6,1,4,6,2,5,0,3,5};

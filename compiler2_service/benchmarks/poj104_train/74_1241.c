@@ -18,7 +18,7 @@ int num(int nu)
     else if(j!=nu)return 0;
     else if(j==nu&&ok(j))return 1;
 }
-main()
+main_bench_bench()
 {
      int m,n,i,count=0,a[1000];
      scanf("%d%d",&m,&n);

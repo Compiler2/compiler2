@@ -1,7 +1,7 @@
 #include <header.h>
 
 int n,m;
-int main()
+int main_bench()
 {
     int i,j,k;
     int way(int m,int n);

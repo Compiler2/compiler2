@@ -16,7 +16,7 @@ int su(int n,int m,int *a)
     }
     else return 0;
 }
-int main(int argc, char *argv[])
+int main_bench()
 {
   int a[5][5],i,j,m,n;
   

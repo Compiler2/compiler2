@@ -17,7 +17,7 @@ void changeplace(int n,int a[])
 		
 	}
 }
-main()
+main_bench_bench()
 {
 	int n1,n2,k;
 	scanf("%d%d",&n1,&n2);

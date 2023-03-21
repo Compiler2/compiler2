@@ -5,7 +5,7 @@ struct book
 	int id;
 	char author[26];
 };
-int main()
+int main_bench()
 {
 	struct book b[999]; 
 	int a[26];

@@ -10,7 +10,7 @@ int fb(int a){
 	}
 	return f[a];
 }
-int main(){
+int main_bench(){
 	int m;
 	double sum=0;
 	scanf("%d",&m);

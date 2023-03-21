@@ -17,7 +17,7 @@ int hefa(char*a){
 	printf("0\n");
 	return 0;
 }
-int main(){
+int main_bench(){
 	char zifu[2000000];
 	char *p;
 	int i,n;

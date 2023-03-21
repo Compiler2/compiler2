@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char s[101];
     char words[100][101];

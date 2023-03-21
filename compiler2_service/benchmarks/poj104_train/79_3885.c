@@ -6,7 +6,7 @@ int f(int m,int n){
     k=((m%i)+k)%i;
     return k;
 }
-int main(void){
+int main_bench(){
 int a[300][2],i;
 for(i=0;i<300;i++){
 scanf("%d%d",&a[i][0],&a[i][1]);

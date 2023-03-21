@@ -6,7 +6,7 @@ int l=0;
 if(a<0||a>4||b<0||b>4)
 l=1;
 return l;}
-void main()
+int main_bench()
 {
 int m,n,k,i,j,t;
 int a[5][5];

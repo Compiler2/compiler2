@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int row,col,i,j,k;
     int *array[100][100];

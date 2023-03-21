@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,k,want=-1;
 	char shu[81],m[20];
 		gets(m);

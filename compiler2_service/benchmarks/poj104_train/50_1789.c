@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
      	int w,xingqi;
 	  scanf("%d",&w);
       xingqi=(13%7-1+w)%7;

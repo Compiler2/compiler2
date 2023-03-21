@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 {
     char str[257*2]; 
     char sub[257], rep[257];

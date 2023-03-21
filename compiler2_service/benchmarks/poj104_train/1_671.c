@@ -30,7 +30,7 @@ int f(int x,int y)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int n,j,b=0,p,k;
 	scanf("%d",&p);

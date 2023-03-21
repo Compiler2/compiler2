@@ -4,7 +4,7 @@ struct num
 {   int n;
 	float d;
 };
-int main()
+int main_bench()
 {	int n,i,j,sum=0;
 	float aver;
 	struct num nob[300],temp;

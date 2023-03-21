@@ -38,7 +38,7 @@ int Huan(int a,int b)
 		return 1;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j,m,n,t;
 	for(i=0;i<5;i++)

@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int list1[1000];
 	int list2[1000];

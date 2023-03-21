@@ -50,7 +50,7 @@ void shuchu(int C[],int M,int N)
 }
 
 	
-int main()
+int main_bench()
 {
 	int m,n;
 	int a1[100],a2[100],a3[100]={0};

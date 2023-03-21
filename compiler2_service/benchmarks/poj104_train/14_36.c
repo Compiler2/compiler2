@@ -8,7 +8,7 @@ int math;
 int sum;
 };
 
-int main()
+int main_bench()
 {
 int n;
 int i, j, e;

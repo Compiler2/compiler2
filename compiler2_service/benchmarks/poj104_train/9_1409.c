@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	struct ID{
 		char x[100];
 		int y;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int array[5][5],n,m,i,z;
 	int *p;

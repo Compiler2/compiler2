@@ -12,7 +12,7 @@ int yu7wuguan(int number)
 	return 1;
 }
 int yu7wuguan(int);
-int main()
+int main_bench()
 {
 	int num,result=0;
 	scanf("%d",&num);

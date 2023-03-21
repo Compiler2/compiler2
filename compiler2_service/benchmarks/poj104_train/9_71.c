@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,year[100],i,j,year2[100]={0},t,k;
     char num[100][10],num2[100][10],p;

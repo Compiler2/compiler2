@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char zong[2000];
 	char x[200],y[200],words[200][20];

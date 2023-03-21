@@ -6,7 +6,7 @@ int e(int n)
 	else
 		return 10*e(n-1);
 }
-int main()
+int main_bench()
 {
 	int N;
 	int a[4];

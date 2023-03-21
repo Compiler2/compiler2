@@ -13,7 +13,7 @@ int turn(int *pt,int p,int q)
  else y=0;
  return y;
 }
-void main()
+int main_bench()
 {int a[5][5],m,n,i,*pa=a;
  for(i=0;i<25;i++)
  {scanf("%d",pa++);

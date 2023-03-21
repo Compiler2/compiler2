@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,j=0,max,N,mark1[150],mark2[150],p[150],s[150]={0},sum=0;
 	char name[150][20]={'0'},a[150]={'0'},b[150]={'0'};

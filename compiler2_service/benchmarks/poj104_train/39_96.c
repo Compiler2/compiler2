@@ -41,7 +41,7 @@ void banji(struct data *student)
 		student->bonus=student->bonus+850;
 }
 
-int main()
+int main_bench()
 {
     int n;
 	int i, j, index;

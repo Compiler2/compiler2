@@ -5,7 +5,7 @@ struct book
         int mun;
         char name[26];
 }a[999];
-int main()
+int main_bench()
 {
         int n,i,j,l,q=0;
         char k;

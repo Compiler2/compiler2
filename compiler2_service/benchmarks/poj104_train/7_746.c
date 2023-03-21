@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int flag=1,i,n,m,j;
 	char str[256],sub[256],rep[256];
 	scanf("%s%s%s",&str,&sub,&rep);

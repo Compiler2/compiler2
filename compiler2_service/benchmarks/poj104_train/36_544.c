@@ -13,7 +13,7 @@ void change(char x[])
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	int d;
 	char a[101]={'\0'},b[101]={'\0'};

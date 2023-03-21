@@ -31,7 +31,7 @@ int DiJiTian(int year, int month, int day){
 	result += day;
 return result;
 }
-int main(){
+int main_bench(){
     int n,i,y,m1,m2;
 	int d1,d2;
 	int cha;

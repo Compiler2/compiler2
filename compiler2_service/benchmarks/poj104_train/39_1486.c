@@ -9,7 +9,7 @@ struct student
 	char s2[2];
 	int paper;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,total=0,t[100]={0},max=0;
 	scanf("%d\n",&n);

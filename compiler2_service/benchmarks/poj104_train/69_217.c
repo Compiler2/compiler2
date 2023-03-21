@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int stop,i,count,l,j,k,mid,l1,l2,judge,b2[210]={0},b1[210]={0},re[210]={0};
 	char a1[210]={0},a2[210]={0};
 	count=0;

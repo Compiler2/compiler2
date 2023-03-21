@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int N,score1,score2,k,i,money[100],totalmoney=0,x,n;
 	char name[100][20];

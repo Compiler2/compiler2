@@ -12,7 +12,7 @@ int mini(int k,int i)
 	return 0;
 }
 	
-int main()
+int main_bench()
 {
 	int N,n;
 	scanf("%d",&N);

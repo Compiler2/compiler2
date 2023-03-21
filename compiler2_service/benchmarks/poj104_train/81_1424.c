@@ -17,7 +17,7 @@ else
 	return 0;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 int a[5][5],n,m,i,j,c;
 	for(i=0;i<5;i++)

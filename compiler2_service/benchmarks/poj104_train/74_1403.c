@@ -38,7 +38,7 @@ int judge2(int x)
 		return 0;
 }
 
-void main(void)
+void main_bench()
 {
 	int m,n;
 	scanf("%d%d",&m,&n);

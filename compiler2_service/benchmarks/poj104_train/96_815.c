@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char str[1100],stre[1100];
 	scanf("%s", str);
 	int a=strlen(str),l=(str[0]-'0'),t,i,j,x=0,y;

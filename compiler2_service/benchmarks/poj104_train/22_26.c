@@ -11,7 +11,7 @@ a[j]=t;
 }
 }
 }
-void main()
+int main_bench()
 {int m,n,i,j,k=0,l,s=0,t=0,a[300],b[300],f=0;
 	for(i=0;;i++)
 	{scanf("%d",&a[i]);

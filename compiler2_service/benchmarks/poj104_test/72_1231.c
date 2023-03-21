@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int com(int a[][100],int x,int y);
 	int m,n,b;

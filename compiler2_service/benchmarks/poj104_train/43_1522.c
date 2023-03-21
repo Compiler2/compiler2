@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pa(int i);
-int main()
+int main_bench()
 {
 	int m,i,p,q,a,b;
 	scanf("%d",&m);

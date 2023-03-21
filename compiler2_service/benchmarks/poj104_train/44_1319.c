@@ -22,7 +22,7 @@
       }
       printf("%d\n",a);
 }
-main()
+main_bench_bench()
  {
       int a;
       int f(int );

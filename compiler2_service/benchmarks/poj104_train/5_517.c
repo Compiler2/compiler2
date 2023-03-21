@@ -2,7 +2,7 @@
 
 char a[501];
 char b[501];
-int main(){
+int main_bench(){
 	double n,d=0;
 	int e=0,i,k=1,lena,lenb;
 	scanf("%lf",&n);

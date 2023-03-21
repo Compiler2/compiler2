@@ -8,7 +8,7 @@ struct
 }book[999];
 
 
-int main()
+int main_bench()
 {
 	int m,a[26]={0},i,j,t,max=0;
 	scanf("%d",&m);

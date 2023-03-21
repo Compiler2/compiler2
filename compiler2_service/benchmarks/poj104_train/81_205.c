@@ -10,7 +10,7 @@
 	        return 0;
 	     }
 }
- int main()
+ int main_bench()
 {
      int i,j,m,n,a,b,s;
      int x[5][5],y[5];   

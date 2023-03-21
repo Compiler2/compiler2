@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int GongJiTian(int, int, int);
 	int year1, month1, day1, year2, month2, day2;

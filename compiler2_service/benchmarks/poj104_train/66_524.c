@@ -2,7 +2,7 @@
 
 int isrunnian (int year);
 int dijitian (int year,int month,int day);
-int main (){
+int main_bench(){
 int year,month,day,a,i,r;
 scanf("%d %d %d",&year,&month,&day);
 getchar();

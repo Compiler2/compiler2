@@ -10,7 +10,7 @@ struct list
 		int lw;
 		int total;
 	};
-void main()
+int main_bench()
 {
 	
 	struct list stu[100];

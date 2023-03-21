@@ -2,7 +2,7 @@
 
 
 void reverse(int n);
-int main()
+int main_bench()
 {
 	int n;
 	int i;

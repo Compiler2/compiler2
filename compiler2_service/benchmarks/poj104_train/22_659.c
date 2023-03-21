@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int max(int m,int b[]);
 	int i=1,n,t,a[300];

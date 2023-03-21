@@ -4,7 +4,7 @@ int g1[13] = {0 ,31,28,31,30,31,30,31,31,30,31,30,31};
 int g2[13] = {0 ,31,29,31,30,31,30,31,31,30,31,30,31};
 int Counting(int,int,int);
 int IsLeapYear(int);
-int main()
+int main_bench()
 {
 	int y1, m1, d1, y2, m2, d2,sum=0,i;
 	int b1, b2;

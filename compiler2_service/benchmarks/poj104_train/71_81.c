@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i, n, year, mon1, mon2, a[12]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}, b[12]={31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}, day1, day2, day3, day4, i1, i2, k1, k2;
 	scanf("%d", &n);

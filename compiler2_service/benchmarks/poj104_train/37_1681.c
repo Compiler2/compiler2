@@ -2,7 +2,7 @@
 
 
 
-main()
+main_bench_bench()
 {
 int t,i,n,j,p,y;
 char a[1000];

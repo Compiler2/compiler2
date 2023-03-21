@@ -9,7 +9,7 @@ void plus(int i,int j,int a){
 		printf("%d",(a)%10);
 	}else if (a) printf("%d",a);
 }
-int main(){
+int main_bench(){
 	char a[300];
 	int i,j,n,m;
 	scanf("%s",a);

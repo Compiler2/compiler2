@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  void de(int x[],int n, int m);
     int n,m,i,x[100];

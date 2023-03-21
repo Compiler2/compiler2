@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i, n, suffixLen;
     char word[32], *p;

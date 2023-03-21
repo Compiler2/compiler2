@@ -72,7 +72,7 @@ int erchashu(int x,int y)
 	}
 	return shu;
 }
-int main()
+int main_bench()
 {
 	int x,y;
 	scanf("%d%d",&x,&y);

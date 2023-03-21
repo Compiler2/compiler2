@@ -33,7 +33,7 @@ int dingwei(char duan[50],char chang[50])
 		return weizhi;
 	}
 }
-int main()
+int main_bench()
 {
 	char zfc[300],beiti[256],ti[256];
 	scanf("%s%s%s",zfc,beiti,ti);

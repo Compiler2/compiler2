@@ -2,7 +2,7 @@
 
 int isjishu(int x);
 int isoushu(int y);
-int main()
+int main_bench()
 {
 	int n;
 

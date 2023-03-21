@@ -2,7 +2,7 @@
 
 
 int matrix(int p[5][5], int, int);
-int main()
+int main_bench()
 {
 	int i,j,mat[5][5], n, m;
 	for(i=0;i<5;i++)

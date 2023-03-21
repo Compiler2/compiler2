@@ -17,7 +17,7 @@ int leap(int a)
 	}
 	return t;
 }
-int main()
+int main_bench()
 {
 	int i,m;
 	scanf("%d",&m);

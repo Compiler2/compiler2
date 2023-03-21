@@ -16,7 +16,7 @@ int min(int x1,int x2,int x3,int x4,int x5)
      if (x1>x5) x1=x5;
      return x1;
 }
-main ()
+main_bench()
 { 
     int a[5][5];
     int i,j;

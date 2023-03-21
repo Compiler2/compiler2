@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int d,y,m,k,x;
 	char a[7][5]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};

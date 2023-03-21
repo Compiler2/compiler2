@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	int n,len,check;
 	int i;
 	char name[81],num[10];

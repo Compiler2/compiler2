@@ -30,7 +30,7 @@ int sushu(int m)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int m,n,o=0;
 	scanf("%d %d",&m,&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char syx[80], zxq[80];
 	int i, t1, t2, t;

@@ -9,7 +9,7 @@ int leap(int n) {
   return n % 400 == 0 || (n % 4 == 0 && n % 100);
 }
 
-int main() {
+int main_bench() {
   int y, m, d, k, i;
   scanf("%d%d%d", &y, &m, &d);
   if (!(y %= 400)) y = 400;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int rev(int a);
-int main()
+int main_bench()
 {
 	int a,b,i;
 	for(i=0;i<6;i++){

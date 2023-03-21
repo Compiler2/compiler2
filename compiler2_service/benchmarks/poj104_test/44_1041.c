@@ -2,7 +2,7 @@
 
 
 int in[6];
-int main()
+int main_bench()
 {
 	
 	int i;

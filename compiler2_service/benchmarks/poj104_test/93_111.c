@@ -3,7 +3,7 @@
 
 int oper;
 void p(int n);
-int main()
+int main_bench()
 {
 	int num;
 	scanf("%d", &num);

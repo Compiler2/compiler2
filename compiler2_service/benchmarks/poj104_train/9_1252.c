@@ -6,7 +6,7 @@ struct peo{
 	int age;
 };
 
-int main(){
+int main_bench(){
 	struct peo people[100];
 	int sixty[100];
 

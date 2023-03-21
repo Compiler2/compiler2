@@ -9,7 +9,7 @@ int sum(int line2[],int a,int b)
 }
 
 
-int main()
+int main_bench()
 {
 	char line[100];
 	int line1[100],i,j,k,line3[50][2]={0};

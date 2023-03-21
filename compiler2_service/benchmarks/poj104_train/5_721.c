@@ -14,7 +14,7 @@ int judge(char c)
 
  
 
-int main()
+int main_bench()
 
 {
 

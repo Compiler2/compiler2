@@ -4,7 +4,7 @@ int read();
 void updown();
 void print();
 int a[100],b[100],n;
-int main()
+int main_bench()
 {
     read();
     updown();

@@ -9,7 +9,7 @@ int qipa(int p,int q)
         s+=qipa(p/i,i);
     return s;
 }
-int main()
+int main_bench()
 {
   int i,j,n,m,t;
   scanf("%d",&n);

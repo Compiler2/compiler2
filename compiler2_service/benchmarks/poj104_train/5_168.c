@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char dna1[600],dna2[600];
 	int a,b,i;

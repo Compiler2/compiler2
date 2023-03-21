@@ -24,7 +24,7 @@ int lie(int l)
 	return h;
 }
 
-void main()
+int main_bench()
 {
 	int i,j;
 	scanf("%d,%d",&m,&n);

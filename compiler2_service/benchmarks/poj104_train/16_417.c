@@ -2,7 +2,7 @@
 
 long num;
 long digit[5];
-int main()
+int main_bench()
 {
    int count=0,i;
    long number;

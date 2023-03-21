@@ -13,7 +13,7 @@ int judgebegin(char x){
 	if(x>96&&x<123){return 0;}
 	if(x==95){return 0;}
 	return 1;}
-int main (){
+int main_bench(){
 	int all,i,p,len,ok;
 	char input[21];
 	scanf("%d",&all);

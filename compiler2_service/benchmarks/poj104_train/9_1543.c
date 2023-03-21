@@ -34,7 +34,7 @@ void bubble(struct p a[100],int n)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int n,i;
 	struct p a[100];

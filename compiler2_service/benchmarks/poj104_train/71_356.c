@@ -8,7 +8,7 @@ int leap(int n)
 	else
 		return 0;
 }
-int main()
+int main_bench()
 {
 	int year,mon1,mon2;
 	int mon[]={0,3,0,3,2,3,2,3,3,2,3,2,3};

@@ -14,7 +14,7 @@ struct student
 
 
 
-int main()
+int main_bench()
 {
 	int i,j,n=0;
 	struct student stu[1000];

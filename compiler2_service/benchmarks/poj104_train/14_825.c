@@ -5,7 +5,7 @@ struct
 {
 int ID[100000],Chinese[100000],Maths[100000];
 }stu;
-int main()
+int main_bench()
 {
 	int n,i,sum[100000],max1=0,max2=0,max3=0,num1,num2,num3;
 	scanf("%d",&n);

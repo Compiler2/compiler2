@@ -8,7 +8,7 @@ void f(char c[],char b[],int n,int i)
             f(c,b,n,i+1);
         }
 }
-int main()
+int main_bench()
 {
     char a[501],b[501]={0},c[501]={0};
     int n,i,j,k;

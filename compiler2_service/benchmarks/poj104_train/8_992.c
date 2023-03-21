@@ -60,7 +60,7 @@ void input(void)
 		scanf("%d",&b[i]);
 	order(a,b,m,n);
 }
-int main()
+int main_bench()
 {
 	input();
 	return 0;

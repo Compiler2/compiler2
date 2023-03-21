@@ -14,7 +14,7 @@ double f(double n){
 	}
 return (result);
 }
-int main()
+int main_bench()
 {
 	
 	int n,i;

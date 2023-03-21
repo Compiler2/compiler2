@@ -10,7 +10,7 @@ int compare(struct d *m,struct d *n)
     return n->t-m->t;
 }
 
-int main()
+int main_bench()
 {
     int k,i,r=0,l,j,p,q;
     char s[501];

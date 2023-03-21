@@ -3,7 +3,7 @@
 
 int isnum(int);
 
-int main()
+int main_bench()
 {
 int n,sum=0;
 scanf("%d",&n);

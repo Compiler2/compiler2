@@ -21,7 +21,7 @@ void print(int n)
      
 
 
-main()
+main_bench_bench()
 {
       int number,i;
       scanf("%d",&number);

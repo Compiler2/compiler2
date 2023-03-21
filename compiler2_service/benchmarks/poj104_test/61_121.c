@@ -1,7 +1,7 @@
 #include <header.h>
 
 int shulie(int n);
-int main()
+int main_bench()
 {
 	int n,i,j,weizhi[100],jl[500]={0};
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int j,n,e,shuru[501],shuchu[501];
     j=0;

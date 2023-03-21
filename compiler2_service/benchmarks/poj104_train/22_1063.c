@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[10000];
-int main()
+int main_bench()
 {
 	int m=-999,n=-999,t;
     char c;

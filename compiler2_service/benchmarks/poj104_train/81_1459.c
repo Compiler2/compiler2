@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int jiaohuan(int (*s)[5],int n,int m);
 	int i,j,n,m,shuzu[5][5],(*s)[5]=shuzu;

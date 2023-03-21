@@ -16,7 +16,7 @@ int out(int ai,int aj,int bi,int bj)
      return 0;
     }
     
-int main()
+int main_bench()
 {
     scanf("%d %d",&row,&col);
     s=row*col;

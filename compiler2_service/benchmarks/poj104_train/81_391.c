@@ -8,7 +8,7 @@ int tf(int i,int j)
 	else return 1;
 }
 
-int main()
+int main_bench()
 {
 	int i,j,m,n,a[5][5],temp;
 	int *p=a[0];

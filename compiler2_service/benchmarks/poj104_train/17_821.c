@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	do{
 		char s[101]={0},S[101]={0};

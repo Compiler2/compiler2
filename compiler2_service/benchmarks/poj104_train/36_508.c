@@ -17,7 +17,7 @@ void kjj(char a[],int len)
 			
 }
 			
-void main()
+int main_bench()
 {
 	char a[10000],b[10000];
 	int len1,len2;

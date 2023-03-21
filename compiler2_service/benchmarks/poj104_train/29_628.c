@@ -2,7 +2,7 @@
 
 double f(double x);
 double g(double y);
-int main()
+int main_bench()
 {
 	int i;
 	double s,j,n,a[1000];

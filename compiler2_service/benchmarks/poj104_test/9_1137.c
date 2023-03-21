@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char id[100][10],id1[100][10],t[10];
 	int n,i,j,b,age[100],age1[100];

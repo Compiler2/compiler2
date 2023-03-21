@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,p,changdu1,changdu2,changdu3,m;
 	char x[256]={0},y[256]={0},z[513]={0},media[256][256]={0};

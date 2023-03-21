@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char zfc[100][21];
 	int n,i,k,jieguo[100]={0};
 	scanf("%d",&n);

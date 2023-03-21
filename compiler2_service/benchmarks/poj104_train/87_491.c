@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int w,a,b,c,d,e,f;
 int num[100];
 for(w=0;w<50;w++)

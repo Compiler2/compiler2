@@ -32,7 +32,7 @@ int bf(int n,int m)
     }
     return s;
 }
-int main()
+int main_bench()
 {
     int t,i,n,m;
     scanf("%d",&t);

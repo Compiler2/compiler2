@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,shousuo[101],shuzhang[101],xiaoshi[101],k=0,t;
 scanf("%d",&n);

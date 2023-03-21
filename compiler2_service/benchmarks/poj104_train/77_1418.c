@@ -21,7 +21,7 @@ int solve()
             solve();
             }
 }
-int main()
+int main_bench()
 { 
 char c;  
 scanf("%c",&c);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     void paixu(int array[],int x);
     int i,n1,n2,a[50],b[50],c[100];

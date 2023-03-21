@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char s[20]={'\0'},w[20]={'\0'};
 	int i,j,num;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int god(int y,int m,int d);
-int main(void)
+int main_bench()
 {
 	int year1,month1,day1,year2,month2,day2;
 	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);

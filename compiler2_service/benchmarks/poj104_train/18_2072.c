@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i,j,k,a[100][100][100],minh,minl,sum[100]={0};
     int minhang(int n,int k,int a[100][100]),minlie(int n,int k,int a[100][100]);

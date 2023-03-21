@@ -64,7 +64,7 @@ int f2(int n)
     }
     return m;
 }
-int main()
+int main_bench()
 {
     int y,mon,d,a;
     scanf("%d%d%d",&y,&mon,&d);

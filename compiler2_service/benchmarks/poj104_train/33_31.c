@@ -3,7 +3,7 @@
 struct DNA{
 	char zfc[255];
 }a[1000];
-int main()
+int main_bench()
 {
 	int n,i,j,t;
 	scanf("%d\n",&n);

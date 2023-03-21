@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int a[32767],i,n;
   for(i=1;i<=32767;i++)

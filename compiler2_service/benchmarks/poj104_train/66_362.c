@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
  int year,month,day,a=0,days=0,i,j;
     scanf("%d %d %d",&year,&month,&day);
 	if (year>2800){

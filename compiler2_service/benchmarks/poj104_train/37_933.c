@@ -36,7 +36,7 @@ void find(char *str)
     }
 }
 
-int main()
+int main_bench()
 {
     int n, i;
     char str[100000];

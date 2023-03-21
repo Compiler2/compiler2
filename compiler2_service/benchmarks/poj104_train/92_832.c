@@ -12,7 +12,7 @@ void paixu(int n,int*p)
         }
      
 }
-main()
+main_bench_bench()
 {
  int  i,j,k,m,sum,n,u,p,t[1000], q[1000],c[1000];
  for(u=0;u<=1000;u++)

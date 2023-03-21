@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int rnfeb(int year);
 	int n,year,month1,month2,e,i,j,day,num=0;

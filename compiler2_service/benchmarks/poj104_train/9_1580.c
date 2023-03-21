@@ -6,7 +6,7 @@ struct patient{
 };
 
 
-int main()
+int main_bench()
 
 {
 	void bubble(struct patient a[],int len);

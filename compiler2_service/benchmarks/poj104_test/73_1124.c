@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int sz[5][5],x,y,i,j,a=0;
 	for(x=0;x<5;x++) for(y=0;y<5;y++) scanf("%d",&sz[x][y]);

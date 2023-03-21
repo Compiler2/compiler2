@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
       long k=0,a,b,i,h=0,c;
       unsigned int e[100];

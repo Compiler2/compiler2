@@ -12,7 +12,7 @@ int isgoodsubstr( char * s, int l, int r )
 	return 1;
 }
 
-int main()
+int main_bench()
 {
 	char s[501];
 	gets(s);

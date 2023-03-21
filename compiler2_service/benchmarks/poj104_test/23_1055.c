@@ -3,7 +3,7 @@
 
 void charReverse(char str[], int beg, int end);
 
-int main()
+int main_bench()
 {
     char str[100];
     gets(str);

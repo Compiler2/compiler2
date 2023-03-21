@@ -12,7 +12,7 @@ int f(int a,int s)
      }
    return y;    
 }
-int main ()
+int main_bench ()
 {
      int n,i,a;
      scanf ("%d",&n);

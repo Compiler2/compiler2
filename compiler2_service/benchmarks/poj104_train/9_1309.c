@@ -6,7 +6,7 @@ struct Patient
        int age;
        int num;
 }patient[100];
-int main ()
+int main_bench()
 {
     int n;
     int a,b,c;

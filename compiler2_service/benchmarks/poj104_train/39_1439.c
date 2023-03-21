@@ -24,7 +24,7 @@ long f(struct student s)
 		scholarship+=850;
 	return(scholarship);
 }
-void main()
+int main_bench()
 {
 	int i,N;
 	long max,sum=0;

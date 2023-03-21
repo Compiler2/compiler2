@@ -16,7 +16,7 @@ int trans(char x)
 	}
 	return y;
 }
-int main () 
+int main_bench() 
 {
 	char a[250],b[250];
 	int c[250],d[250],e[250],f[250];

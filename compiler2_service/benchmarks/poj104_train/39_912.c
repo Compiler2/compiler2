@@ -10,7 +10,7 @@
 	char paper;
 	int money;
 };
-int main()
+int main_bench()
 {
     struct bac stu[101];
 	struct bac temp;

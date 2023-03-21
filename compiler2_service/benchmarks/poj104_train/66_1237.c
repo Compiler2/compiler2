@@ -8,7 +8,7 @@ int rn(int y){
 	return r;
 }
 
-int main(){
+int main_bench(){
 	int ye,mon,day,d,i,x;
 	scanf("%d%d%d",&ye,&mon,&day);
 	d=day;

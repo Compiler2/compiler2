@@ -40,7 +40,7 @@ void k(void)
 	printf("\n");
 	a[0]=0;
 }
-int main()
+int main_bench()
 {
 	int n=1;
 	while(n==1) 

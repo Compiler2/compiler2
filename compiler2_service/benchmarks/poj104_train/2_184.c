@@ -5,7 +5,7 @@ struct book
   int num;
   char aut[26];
 }bo[999];
-main()
+main_bench()
 {
   int n,i,j,k,count[26],max;
   scanf("%d",&n);

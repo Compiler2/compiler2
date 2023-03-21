@@ -32,7 +32,7 @@ int sub_count(char s[],char str[][6], int count[],int n)
 	}
 	return num;
 }
-void main()
+int main_bench()
 {
 	char s[1000],str[1000][6];
 	int count[1000],num,n,i,max;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     void align(char a[]);
     void substract(char a[],char b[],char c[]);

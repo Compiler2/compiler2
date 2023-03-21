@@ -8,7 +8,7 @@ int max(int a)
 	if ((a/10==7)) return 1;
 	return 0;
 }
-void main()
+int main_bench()
 {
 	long n,i,k,j,a[1001];
 	double sum,num;

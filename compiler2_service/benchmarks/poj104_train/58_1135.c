@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char * character,sz[81];
 	int i,j,n,e;

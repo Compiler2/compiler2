@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int shumu[1000][1000];
 	int b,n,a,d,e,f;

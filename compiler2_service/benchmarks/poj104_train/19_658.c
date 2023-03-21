@@ -14,7 +14,7 @@ void alter(char*p)
 	strcat(former,p3);
 }
 
-int main()
+int main_bench()
 
 {
 	

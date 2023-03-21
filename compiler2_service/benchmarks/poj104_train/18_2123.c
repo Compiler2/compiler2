@@ -13,7 +13,7 @@ int lie(int a[][110],int n,int j,int h)
 		if(a[i][j]<m)m=a[i][j];
 	return(m);
 }
-int main()
+int main_bench()
 {
 	int n,k;
 	scanf("%d",&n);

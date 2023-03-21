@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int iaX[11], iaY[11];
 	int x,y, i, j, ilenx=0, ileny=0;

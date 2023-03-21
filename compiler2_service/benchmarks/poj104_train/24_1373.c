@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	  char zfc[1000];
       char ip[50][1000];	  
 	  int a,b,c,max=0,min=~(1<<31);

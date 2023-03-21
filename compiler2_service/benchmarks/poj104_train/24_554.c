@@ -2,7 +2,7 @@
 
 char word[200];
  
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,j,n,e[50],len[50],l,a,b;
 	char word[300];

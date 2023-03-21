@@ -3,7 +3,7 @@
 int yu7wuguan(int e);
 
 
-int main(){
+int main_bench(){
 	int n;
 	scanf("%d",&n);
 	int i,result;

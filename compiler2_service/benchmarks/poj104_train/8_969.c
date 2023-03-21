@@ -53,7 +53,7 @@ int print(int c[],int d[],int m3,int m4)
 
 
 
-int main()
+int main_bench()
 {
 	int m1;
 	int m2;

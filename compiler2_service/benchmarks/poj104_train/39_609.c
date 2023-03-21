@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     struct scholar {
            char z[21];
            int qm;

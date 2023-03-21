@@ -22,7 +22,7 @@ void shu(int a,int b)
 		if(monkey[j]!=0)  {printf("%d\n",j+1);break;}
 	}
 }
-void main()
+int main_bench()
 {
 	int n,m;
 	while(1)

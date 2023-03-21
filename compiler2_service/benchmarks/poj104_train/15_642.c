@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	int cancer[100][100];
 	int n,i,j;
 	scanf("%d",&n);

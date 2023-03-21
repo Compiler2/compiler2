@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	long m,n,r,s;
 	long t[21],p[21]={0},q=0;

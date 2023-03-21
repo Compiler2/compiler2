@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
      int N,m,i,j,a[10000],t,b[10000]={0},n[10000]={0},k,p=0,x=0,q;
      

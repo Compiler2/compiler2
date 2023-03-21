@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int n,i,j,judge=0;
 	char zfc[21];
 	scanf("%d",&n);

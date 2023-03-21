@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,  count=1, sum=0, i, j, temp,k;
 	double aver,temp2;

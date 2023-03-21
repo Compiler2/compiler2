@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int x1,y1,x2,y2,i,j,t;
 	int a[100][100],b[100][100],c[100][100];

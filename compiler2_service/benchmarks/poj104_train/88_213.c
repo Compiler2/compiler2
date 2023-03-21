@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char *org;
 	org=(char*)malloc(30*sizeof(char));

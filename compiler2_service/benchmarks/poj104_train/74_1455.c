@@ -43,7 +43,7 @@ int shushu(int m)
 		return 1;
 }
 
-int main()
+int main_bench()
 {
 	int m,n,flag=0;
 	scanf("%d%d",&m,&n);

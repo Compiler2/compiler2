@@ -1,7 +1,7 @@
 #include <header.h>
 
 int DiJiTian(int year,int month);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int  n,year,m1,m2,c,i,j;
 	scanf("%d",&n);

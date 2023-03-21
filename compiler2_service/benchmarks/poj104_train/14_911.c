@@ -3,7 +3,7 @@
 struct Student{
 	int nID,nChinese,nMath;
 };
-void main(){
+int main_bench(){
 	int n,i,a1,a2,a3,t1,t2,t3,t;
 	struct Student students;
 	t1=0;

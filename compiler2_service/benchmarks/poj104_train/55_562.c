@@ -9,7 +9,7 @@ long fun(int a,int n)
 		z=a*fun(a,n-1);
 	return z;
 }
-int main()
+int main_bench()
 {
 	int a,b,n,i,j;
 	long sum=0;

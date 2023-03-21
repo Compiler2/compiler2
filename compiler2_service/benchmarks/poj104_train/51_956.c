@@ -12,7 +12,7 @@ void copy(char *s,char *c,int n)
     }
 }
 
-void main()
+int main_bench()
 {
     char str[500]={'\0'},s[500][10]={'\0'};
     char *p=str,*q;

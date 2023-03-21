@@ -22,7 +22,7 @@ int reverse(int num)
         return(sum);
 }
 }
-main()
+main_bench_bench()
 {
       int i;
       for(i=1;i<=6;i++)

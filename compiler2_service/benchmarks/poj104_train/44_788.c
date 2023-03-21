@@ -21,7 +21,7 @@ int reverse(int b)
 	if(b>0)return c;
 	else return -c;
 }
-int main()
+int main_bench()
 {
 	int i=0,x;
 	int out[6];

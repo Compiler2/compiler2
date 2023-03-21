@@ -3,7 +3,7 @@
 
 char str[1000],s[1000][1000];
 int num[1000]={0};
-void main()
+int main_bench()
 {
 	int n,i,j;
 	scanf("%d",&n);

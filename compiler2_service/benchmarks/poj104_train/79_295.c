@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m;
-void main()
+int main_bench()
 {
 	int n,a[300],i;
 	void sear(int a[300],int n);

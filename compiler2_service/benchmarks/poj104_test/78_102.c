@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int tz[4];
 	char xs1='z',xs2='q',xs3='s',xs4='l';

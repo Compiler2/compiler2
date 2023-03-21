@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
       int base[5][5]={0};
       int tem[5]={0};

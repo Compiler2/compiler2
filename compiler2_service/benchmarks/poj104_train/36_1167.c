@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char c[100];
     int num=0;

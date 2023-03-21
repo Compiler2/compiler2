@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,k,j;
 	char danci[100][100]={'0'},zfc[3000];

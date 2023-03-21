@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
    int input[300]={0},i=0,n=0,num[1000]={0};
   

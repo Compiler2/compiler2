@@ -10,7 +10,7 @@ int f(int x){
 	else return 0;
 }
 
-int main(){
+int main_bench(){
 	int i,n,e=2,num=0;
 	scanf("%d",&n);
 	for(i=2;i<=n;i++){

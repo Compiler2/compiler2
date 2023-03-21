@@ -12,7 +12,7 @@ void move(char a[])
 	 a[i]=t;}
 	 }
 }
-void main()
+int main_bench()
 {
 	char a[10],b[10];
 	scanf("%s %s",a,b);

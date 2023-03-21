@@ -6,7 +6,7 @@ struct patient{
 	int age;
 };
 
-int main(){
+int main_bench(){
 	int i,n,k,max,count;
 	struct patient inter;
 	struct patient *p;

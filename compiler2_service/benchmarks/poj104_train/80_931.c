@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int year1,year2,month1,month2,day1,day2,i,sum;

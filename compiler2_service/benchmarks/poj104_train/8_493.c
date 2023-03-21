@@ -35,7 +35,7 @@ int paixu (int f[],int k)
  for(i=a;i<b+a;i++)
    s[i]=d[i-a];
   return 0;   }
-   void main ()
+   int main_bench()
    {
    shuru();
    paixu(c,a);

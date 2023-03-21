@@ -37,7 +37,7 @@ int find2nd(int num,int result[])
 	else
 		return second;
 }
-void main()
+int main_bench()
 {
 	char s[1000];
 	int result[1000],num,second;

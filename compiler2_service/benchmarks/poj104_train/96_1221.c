@@ -33,7 +33,7 @@ int out(char*data1,char*data2,int pos)
     return 0;
 }
 
-int main()
+int main_bench()
 {
     int n;
     char data1[450],data2[450]="13",r[450];

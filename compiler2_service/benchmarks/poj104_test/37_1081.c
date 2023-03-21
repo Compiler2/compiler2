@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int tas,task,n,i,mark[100],l,flag;
 char s[10000];

@@ -18,7 +18,7 @@ int Check(int i,int n,int k,int *m,int time)
 
 
 
-int main()
+int main_bench()
 {
 	int n,k,*m,time=0,a;
 	scanf("%d%d",&n,&k);

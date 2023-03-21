@@ -8,7 +8,7 @@ int j(int a,int b)
     if(b==a) return 0;
     if(b-a==2) return -1;
 }
-int main()
+int main_bench()
 {
     int n,s=0,i,a,b;
     scanf("%d",&n);

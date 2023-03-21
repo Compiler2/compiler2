@@ -3,7 +3,7 @@
 
 char id[101][11];
 
-int main()
+int main_bench()
 {   int n;
     int age[101],a[101];
     scanf("%d",&n);

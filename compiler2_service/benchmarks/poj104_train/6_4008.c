@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int time;
 	int m,n;
 	int i,j;

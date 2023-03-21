@@ -15,7 +15,7 @@ int same(char*p,char*q){
 		return 0;
 }
 
-int main(){
+int main_bench(){
 	char w[2000];
 	char s[200];
 	scanf("%s %s",s,w);

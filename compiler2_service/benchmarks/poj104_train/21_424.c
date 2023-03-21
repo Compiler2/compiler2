@@ -5,7 +5,7 @@ int n;
 int num[100];
 int i;
 int min=10000,max=-1,total=0;
-int main(void)
+int main_bench()
 {
 	scanf("%d",&n);
 	for(i=0;i<n;i++)

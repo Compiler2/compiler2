@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
       int t=-1,u=-1,e=-1,c=0;
       char st[300]={'0'};

@@ -19,7 +19,7 @@ int dp(int i, int k) {
 	return memo[i][k] = rslt;
 }
 
-int main() {
+int main_bench() {
 	scanf("%d", &N);
 	for(int i = 0; i < 40; i++) for(int j = 0; j < 40; j++)
 		memo[i][j] = -1;

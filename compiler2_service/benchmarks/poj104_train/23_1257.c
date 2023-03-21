@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n=0,i,l;
 	char t,word[101],*p;

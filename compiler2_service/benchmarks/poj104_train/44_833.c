@@ -17,7 +17,7 @@ int ab(int n)
     return -ab(-n);
     return fx(n);
 }
-int main()
+int main_bench()
 {
     int i,t;
     scanf("%d",&t);

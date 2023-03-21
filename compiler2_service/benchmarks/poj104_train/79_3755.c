@@ -33,7 +33,7 @@ void monkey(int n,int m)
 			break;
 		}
 }
-void main()
+int main_bench()
 {
 	int i,k,m[200],n[200];
 	for(i=0;i<200;i++)

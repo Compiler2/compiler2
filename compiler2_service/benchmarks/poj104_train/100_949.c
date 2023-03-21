@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char a[301];
     int num[26]={0},i,j,n,p=0;

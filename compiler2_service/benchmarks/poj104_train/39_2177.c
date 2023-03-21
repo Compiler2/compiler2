@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char name[100][100],student[100][5],west[100][5];
 	int final[100], clas[100], essay[100],scholarship[100]={0};

@@ -37,7 +37,7 @@ d=d+c;
 return(d);
 }
 
-int main()
+int main_bench()
 {
 int a[6],i;
 long day1,day2,p;

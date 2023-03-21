@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int a[10000],i,j,m,n,k,max; 
  int * pa;

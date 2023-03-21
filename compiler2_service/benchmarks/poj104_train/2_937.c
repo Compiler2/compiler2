@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main(){
+main_bench(){
 	int i, sum[26]={0}, m, j, max=0, p;
 	struct book{
 		int num;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isRunNian(int x);
-int main(){
+int main_bench(){
 	int n, y, r, i;
 	long sum=0l;
 	scanf("%d%d%d" ,&n, &y, &r);

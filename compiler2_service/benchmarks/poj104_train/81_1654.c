@@ -27,7 +27,7 @@ int huanhang(int n,int m)
    else
 	    return 0;
 }
-int main()
+int main_bench()
 {
 	int i, j;
 	for(i=0;i<5;i++)

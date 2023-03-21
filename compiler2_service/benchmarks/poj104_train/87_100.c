@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,t,time[1000][6],jg[1000]={0};
 	for(i=0;1;i++){
 		scanf("%d %d %d %d %d %d",&time[i][0],&time[i][1],&time[i][2],&time[i][3],&time[i][4],&time[i][5]);

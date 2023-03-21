@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 char fj2[100][100];
 int n,a,b,i,k,fj[100][100],fj3[100][100],peo,m,day;
 scanf("%d",&n);

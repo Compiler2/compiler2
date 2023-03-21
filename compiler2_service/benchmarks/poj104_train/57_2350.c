@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int cases,i=0;
 char str[100];
 scanf("%d",&cases);

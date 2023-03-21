@@ -4,7 +4,7 @@
 char change(int m, int n);
 	char suite[100][100]={0};
 	char mark[100][100]={0};
-int main()
+int main_bench()
 {
 	int n,day,t,amount=0,i,j,k,max;
 	scanf("%d",&n);

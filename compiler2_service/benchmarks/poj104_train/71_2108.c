@@ -1,7 +1,7 @@
 #include <header.h>
 
 int DiJiTian(int, int, int);
-int main(){
+int main_bench(){
 	int n;
 	int nian;
 	int x,y;

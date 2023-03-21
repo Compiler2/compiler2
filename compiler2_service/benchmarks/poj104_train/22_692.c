@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	int a, max=0, inf=0;
 	char c;
 	do {

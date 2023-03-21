@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int max=0;
 	int n,m,len,i,j,k,count[500]={1};

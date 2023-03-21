@@ -64,7 +64,7 @@ void pei(char a[250])
 	i=0;
 printf("%d %d",i,t-1);
 }
-void main()
+int main_bench()
 {
 	char a[250];
 	gets(a);

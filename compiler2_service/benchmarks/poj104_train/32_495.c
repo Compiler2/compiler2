@@ -45,7 +45,7 @@ void getdif(int c[], int a[], int b[])
   
 }
 
-void main()
+int main_bench()
 {
 	int a[100], b[100],c[100],n;
 

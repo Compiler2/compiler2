@@ -15,7 +15,7 @@
 	
 	
 	
-	int main()
+	int main_bench()
 	{
 		struct student a[100];
 		int n,i;

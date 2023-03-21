@@ -36,7 +36,7 @@ void pipei(char x[],int l)
 	}
 	printf("\n");
 }
-int main()
+int main_bench()
 {
 	char x[101];
 	int l,i;

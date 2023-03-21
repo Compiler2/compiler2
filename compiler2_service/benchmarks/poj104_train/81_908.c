@@ -8,7 +8,7 @@ int judge(int n,int m)
       return(0);
 }
 
-int main()
+int main_bench()
 { 
   int judge(int n,int m);
   int n,m;

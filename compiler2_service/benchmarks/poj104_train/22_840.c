@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int max,secmax,a[300],i,j;
 	char character[300];

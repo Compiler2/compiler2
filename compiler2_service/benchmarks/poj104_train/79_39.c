@@ -21,7 +21,7 @@ int josephus(int n, int m)
 	if ((j % (m-1)) == 0) return t-1;
 	return t + (j % (m-1));
 }
-int main()
+int main_bench()
 {
 int n , k;
 while(2 == scanf("%d %d",&n ,&k))

@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char ch[101], *p ,a[101];
 	int len,i=0;

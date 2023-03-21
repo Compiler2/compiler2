@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n , m ;
 	double sum , s[10000];
 	s[1]=1;

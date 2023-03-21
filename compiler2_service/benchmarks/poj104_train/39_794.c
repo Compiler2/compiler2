@@ -10,7 +10,7 @@ struct Student
 	 int w;
 	 int money;
 	};
-int main()
+int main_bench()
 {
 	struct Student stu[100];
 	struct Student temp;

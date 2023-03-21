@@ -11,7 +11,7 @@ void bb(int n,int b[300]){
 			 }
 		 }
 }        
-int main()
+int main_bench()
 {
 	int n,i,a[200],s=0;
 	scanf("%d",&n);

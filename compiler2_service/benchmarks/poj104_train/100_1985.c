@@ -2,7 +2,7 @@
 
 
 int i,l,a[26],b[26];
-int main()
+int main_bench()
 {
  char z[301],c;
  for(i=0;i<26;i++)

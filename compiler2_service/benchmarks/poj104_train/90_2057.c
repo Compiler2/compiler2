@@ -5,7 +5,7 @@ int f(int m,int n){
   else if(m < n){return f(m,m);}
   else{return f(m,n-1) + f(m - n,n);}
 }
-int main(){
+int main_bench(){
   int i,n,a,b;
   scanf("%d",&n);
   for(i=1;i<=n;i++){

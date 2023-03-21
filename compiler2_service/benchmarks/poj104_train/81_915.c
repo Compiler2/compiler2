@@ -19,7 +19,7 @@
 	else
 		return 0;
 }
-void main()
+int main_bench()
 {
 	
 	for(i=0;i<5;i++)

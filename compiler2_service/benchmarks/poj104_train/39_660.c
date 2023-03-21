@@ -11,7 +11,7 @@ struct stu{
 	int sum;
 }a[100];
 
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

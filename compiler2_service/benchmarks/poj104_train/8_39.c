@@ -63,7 +63,7 @@ void output()
 	}
 	printf("%d",c[m+n-1]);
 }
-void main()
+int main_bench()
 {
 	input();
 	az();

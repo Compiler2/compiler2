@@ -18,7 +18,7 @@ void paixu(int a[300],int k)
 }
 
 
-int main()
+int main_bench()
 {
 	int a[300]={0};
 	int i,j,k=0,l;

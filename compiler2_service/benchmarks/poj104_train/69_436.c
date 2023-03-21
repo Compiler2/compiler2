@@ -50,7 +50,7 @@ void entire(char a[],int la)
 		a[i]=aa[i];
 	}
 }
-int main()
+int main_bench()
 {
 	char a[1000];
 	char b[1000];

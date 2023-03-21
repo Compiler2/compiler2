@@ -66,7 +66,7 @@ void print(int a[100][100],int m)
 		printf("\n");
 	}
 }
-int main()
+int main_bench()
 {
 	int n,i,j,k,a[100][100]={0},m;
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char s[100], str1[100], str2[100], a[100][100];
 	gets(s);

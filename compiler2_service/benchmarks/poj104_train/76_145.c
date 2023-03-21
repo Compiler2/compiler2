@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int a[50000],b[50000];
 int n,nummax,nummin,max,min;

@@ -26,7 +26,7 @@ int save(char point[5],char filed[400][5],int check[400],int filedp)
     return filedp;
 }
 
-int main()
+int main_bench()
 {
     int n,i=0,p=0,filedp=0,max=0;
     long len;

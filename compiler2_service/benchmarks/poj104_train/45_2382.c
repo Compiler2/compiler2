@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char zfc1[50],zfc2[50];
 	scanf("%s",&zfc1);

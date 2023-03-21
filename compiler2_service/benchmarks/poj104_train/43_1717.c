@@ -15,7 +15,7 @@ int sushu(int n)
 	return flag;
 }
 
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

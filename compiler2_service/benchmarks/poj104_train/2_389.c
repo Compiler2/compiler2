@@ -5,7 +5,7 @@ struct index
 	int num;
 	char wr[26];
 };
-int main()
+int main_bench()
 {
 	int n,a[26],*pr,max;
 	char s[26],*sp,*pt,temp;

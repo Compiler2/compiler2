@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char c[100][4][100]={'\0'};
 	int i,j,k,n;

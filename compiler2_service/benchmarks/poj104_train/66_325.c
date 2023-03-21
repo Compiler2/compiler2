@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int y,m,d,a,b,c,e,f,g;
 	scanf("%d %d %d",&y,&m,&d);
 	f=(y-1)/100;g=(y-1)/400;

@@ -25,7 +25,7 @@ int findx(int l,int r,int key)
                          return findx(l,((r+l)/2)-1,key);
 }
                          
-int main()
+int main_bench()
 {
     int i,k;
     

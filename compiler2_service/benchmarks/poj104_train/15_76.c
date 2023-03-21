@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[1000][1000]={{0},{0}},i,j,n,m=0,p=0,q;
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc,char* argv[])
+int main_bench()
 {
 	int shu[1000][1000];
 	int n,a,b,c,d,l;

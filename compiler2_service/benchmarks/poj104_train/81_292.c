@@ -13,7 +13,7 @@ changeline(int a[5][5],int m,int n)
 	}
 	else return(0);
 }
-void main()
+int main_bench()
 {
 	int a[5][5],i,j,m,n;	
 	{	

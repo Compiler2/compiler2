@@ -5,7 +5,7 @@ void func2(char o[],int x)
 	for (int u=0;u<x;u++)
 		o[u]=0;
 }
-main()
+main_bench_bench()
 {
 	char *p1,*p2;
 	char a[100]={0},b[100]={0},d[100]={0},e[100][100]={0};

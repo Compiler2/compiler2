@@ -13,7 +13,7 @@ int max()
 	}
 	return k;
 }
-void main()
+int main_bench()
 {
 	scanf("%d",&a[0]);
 	while(getchar()==',')

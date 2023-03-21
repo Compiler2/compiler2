@@ -8,7 +8,7 @@ struct student
 	int score;
 };
 
-void main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

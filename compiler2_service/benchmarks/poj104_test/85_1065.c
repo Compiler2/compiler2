@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int f=0,b=0,n;                
 	char a[81],*p;

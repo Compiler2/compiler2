@@ -6,7 +6,7 @@ struct dian
     int y;
     int zhi;       
 };
-int main()
+int main_bench()
 {
    int a[5][5];       
    int c,e,i,j,count=0;

@@ -8,7 +8,7 @@
 	}
 	st[100000];
 
-	int main()
+	int main_bench()
 {
 
 	

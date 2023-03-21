@@ -31,7 +31,7 @@ int check()
     }
     return r;
 }
-int main()
+int main_bench()
 {
     int z;
     scanf("%d",&n);

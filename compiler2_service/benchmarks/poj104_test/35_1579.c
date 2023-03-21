@@ -1,7 +1,7 @@
 #include <header.h>
 
 int s[8][8];
-int main()
+int main_bench()
 {
     int n,N,i,j,a,b,c;
 	int min=100;

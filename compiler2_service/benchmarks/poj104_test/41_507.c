@@ -10,7 +10,7 @@ int f1(char q)
     if(q=='e'){if(d==1)return(1); else return 0;}
 
 }
-int main()
+int main_bench()
 {
     int i,j,t1,t2,t;
     for(a=2;a<=5;a++)

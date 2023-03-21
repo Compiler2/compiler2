@@ -1,7 +1,7 @@
 #include <header.h>
 
 int A[10]={0},B[10]={0};
-int main()
+int main_bench()
 {
 	int x,y,*pt1,*pt2,number1=0,number2=0,flag=0;
 	pt1=A;

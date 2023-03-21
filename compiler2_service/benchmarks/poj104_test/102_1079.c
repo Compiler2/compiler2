@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int i,nanshu=0,nvshu=0,k,zongrenshu;
     double shengao;
     scanf("%d",&zongrenshu);

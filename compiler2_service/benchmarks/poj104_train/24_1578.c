@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char newWord[50];
 	char ch;
 	char shortest[50];

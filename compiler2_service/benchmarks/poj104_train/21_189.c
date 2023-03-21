@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n,i,j,temp,inpnum[300],max;
     float sum=0,ave,distance[300],tmpf;

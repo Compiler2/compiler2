@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,p,num[255];
 	char ch,boy;

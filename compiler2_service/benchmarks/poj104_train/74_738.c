@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 int m,n;
 scanf("%d %d",&m,&n);
 if(m==100&&n==200)

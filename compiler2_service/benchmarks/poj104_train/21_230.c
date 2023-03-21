@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,a[300],i,m,j;
 	double aver,b[300],max=0,former;

@@ -16,7 +16,7 @@ int day(int month){
 	return t;
 }
 
-int main()
+int main_bench()
 {
 	int w,i,t,a;
 

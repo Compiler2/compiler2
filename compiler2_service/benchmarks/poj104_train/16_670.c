@@ -6,7 +6,7 @@
      if (m>0)
          invert(m)  ;
  } 
-main()
+main_bench_bench()
  {
      long n;
      

@@ -8,7 +8,7 @@ int max(int num[],int n)
 			result=num[i];
 		return(result);
 }
-void main(void)
+void main_bench()
 {
 	int n,num[100],m1,m2,i;
 	scanf("%d",&n);

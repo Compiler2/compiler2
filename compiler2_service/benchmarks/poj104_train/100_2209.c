@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char a[32]={0},b[32]={0},x,i;
 	int flag=0;
 	do

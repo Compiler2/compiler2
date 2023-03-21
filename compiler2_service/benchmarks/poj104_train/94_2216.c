@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {int n,jn=0,mid;
 scanf("%d",&n);
 int shuzu[n],jishu[n];

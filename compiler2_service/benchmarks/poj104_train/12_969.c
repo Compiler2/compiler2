@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {  int a[100][15],i=0,j=0,x=10,k=0,m,num=0;
 for(i=0;i<100;i++){
 	if(x==-1)break;

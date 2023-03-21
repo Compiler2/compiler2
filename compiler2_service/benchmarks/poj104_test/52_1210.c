@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void f(int *p,int n,int m);
 	int n,m,num[100],i;

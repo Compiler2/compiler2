@@ -23,7 +23,7 @@ int dijitian(int m,int d)
 	return q;
 }
 
-int main()
+int main_bench()
 {
 	int d,k,i,j;
 	scanf("%d",&k);

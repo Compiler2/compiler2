@@ -19,7 +19,7 @@ int factor(int n,int min)
 	
 	return result ;
 }
-int main()
+int main_bench()
 {
 	int m,x,j,k;
 	

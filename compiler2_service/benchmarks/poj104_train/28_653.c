@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[20000]={" "},s[20001]={"  "};
 	int begin[301],end[301];	

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	double xgl,e;
 	char a[501],b[501];
 	double cd1,cd2;

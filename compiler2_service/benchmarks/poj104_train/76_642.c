@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {   
     int i,n,j,l=0,min=50000,max=0;
 	int sz[60000],szz[60000],szzz[60000]={0};

@@ -24,7 +24,7 @@ void ox( int a[5][5], int m, int n)
 			printf("error\n");
 		
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j,a[5][5];
 	for(i=0;i<=4;i++)

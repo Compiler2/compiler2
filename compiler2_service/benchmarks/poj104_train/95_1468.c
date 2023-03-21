@@ -14,7 +14,7 @@ char f(char a[],int la,char b[],int lb){
         }
     return '=';
 }
-int main(){
+int main_bench(){
     char a[100],b[100];
     gets(a);gets(b);
     int la,lb;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int ori[300], fin[300];
 	int i, j, k, a, n;

@@ -7,7 +7,7 @@ struct Books
 	char author[26];
 }a[1000];
 
-int main()
+int main_bench()
 {
 	int n;
 	int i,j;

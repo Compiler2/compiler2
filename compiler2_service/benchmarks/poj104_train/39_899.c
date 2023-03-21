@@ -11,7 +11,7 @@ struct student
 	int jiangjin;
 
 };
-void main()
+int main_bench()
 {
 	int n,q=0;
 	struct student stu[100];

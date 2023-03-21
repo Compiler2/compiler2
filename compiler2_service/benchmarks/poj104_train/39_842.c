@@ -9,7 +9,7 @@ struct student
        char c2;
        int d;
 }stu[100];
-int main()
+int main_bench()
 {
     int n,i,p[100]={0},sum=0,max;
     scanf("%d",&n);

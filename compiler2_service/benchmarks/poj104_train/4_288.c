@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench()
 {
     static int a[105][105];
          int i,j,k,n,m;

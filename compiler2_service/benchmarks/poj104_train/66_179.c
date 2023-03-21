@@ -4,7 +4,7 @@
 unsigned long int year,month,day,a,b,c,A,B,w,i;
 
 
-int main()
+int main_bench()
 {
     scanf("%d%d%d",&year,&month,&day);
 	if ((year%4==0) && (year%100!=0)||(year%400==0))

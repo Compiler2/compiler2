@@ -2,7 +2,7 @@
 
 
 int a[100][100];
-int main()
+int main_bench()
 {
   int k,m,n,sum,i,j;
   scanf("%d",&k);

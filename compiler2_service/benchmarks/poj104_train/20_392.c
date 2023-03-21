@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[16],substr[4],*p1,*p2,*pl;
 	for(p1=str;p1<=str+9;p1++)

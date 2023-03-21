@@ -17,7 +17,7 @@ int maxS(int aa,int bb){
 	return aa>bb?aa:bb;
 }
 
-int main(){
+int main_bench(){
 	int n,i,j;
 
 	while(scanf("%d",&n) && n){

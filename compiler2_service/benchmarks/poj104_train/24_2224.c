@@ -12,7 +12,7 @@ void sub(char c[])
 	}
 }
 
-void main()
+int main_bench()
 {
 	int i,j=0,k=0,l,max=0,rmax=0,min=0,rmin=0;
 	char c[2000]={'\0'},word[200][100]={'\0'};

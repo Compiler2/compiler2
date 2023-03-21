@@ -38,7 +38,7 @@ void f4(int a[1000])
 	{printf("%d",a[i]);
 	if(i!=(n+m-1)) printf(" ");}
 }
-int main()
+int main_bench()
 {
 	int a[1000],b[1000];
 	scanf("%d %d",&n,&m);

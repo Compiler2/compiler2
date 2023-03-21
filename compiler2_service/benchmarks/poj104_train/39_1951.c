@@ -9,7 +9,7 @@ char b2;
 int c;
 int money;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,max=0,m=0;
 	struct student *p;

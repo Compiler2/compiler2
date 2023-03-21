@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      int a,b,i,j,count=0,k;
      char string[256],substring[256],replacement[256],czy[256],cai[256];

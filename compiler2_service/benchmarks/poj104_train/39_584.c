@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,qimo[100],banji[100],lunwen[100];
 	int i,j;int jiangxuejing[100];int sunxu[100];

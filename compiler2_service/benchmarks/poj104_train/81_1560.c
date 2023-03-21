@@ -16,7 +16,7 @@ int f(int c[][5],int a,int b)
 	}
 	return(k);
 }
-void main()
+int main_bench()
 {
 	int i,j,m,n,d[5][5];
      for(i=0;i<5;i++)

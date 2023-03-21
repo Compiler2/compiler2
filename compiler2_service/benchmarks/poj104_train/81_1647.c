@@ -20,7 +20,7 @@ int change(int a[5][5],int b,int c)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i,j;
 	int t[5][5],n,m;

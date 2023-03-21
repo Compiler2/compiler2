@@ -4,7 +4,7 @@ int k,n;
 
 char str[1000],c1,c2;
 
-int main(){
+int main_bench(){
     int i,j,t=1;
     scanf("%s",str);
     n=strlen(str);

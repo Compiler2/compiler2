@@ -19,7 +19,7 @@ void change(int a[5][5],int n,int m)
 	else
 		printf("error");	
 }
-void main()
+int main_bench()
 {
 	int a[5][5],i,j,m,n;
 	for(i=0;i<5;i++)

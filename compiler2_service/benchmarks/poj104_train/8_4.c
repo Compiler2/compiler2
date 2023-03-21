@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void pai(int na,int nb);
 	int na,nb;

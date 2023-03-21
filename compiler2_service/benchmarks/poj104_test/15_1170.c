@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n, a[1000][1000], i, j;
 	int lup[2], ldown[2], rup[2], rdown[2], area;

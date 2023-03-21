@@ -30,7 +30,7 @@ struct student *creat()
 	p2->next=0;
 	return (head);
 }
-int main()
+int main_bench()
 {
 	int i;
 	int no1,ovr1=0;

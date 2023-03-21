@@ -1,7 +1,7 @@
 #include <header.h>
 
 char str[21];
-int main()
+int main_bench()
 {
     int n,m;
     int l1,l2;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n=0,i,s=0;
 	scanf("%d",&n);
 	struct qujian{

@@ -34,7 +34,7 @@ int f(int x)
         return sum;
     }
 }
-main()
+main_bench_bench()
 {
       int a,b,c,d,e,g;
       scanf("%d\n%d\n%d\n%d\n%d\n%d",&a,&b,&c,&d,&e,&g);

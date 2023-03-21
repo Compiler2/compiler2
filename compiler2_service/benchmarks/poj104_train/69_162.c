@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a1[252],b1[252];
 	int a[252],b[252],sum[252];

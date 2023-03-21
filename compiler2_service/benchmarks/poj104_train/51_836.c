@@ -5,7 +5,7 @@ struct ma{
 	int f;
 };
 
-int main()
+int main_bench()
 {   struct ma stu[505];
     struct ma temp;
     char str1[505];

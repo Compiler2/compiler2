@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int w,i,yue,tian,day;
       scanf("%d",&w);
        for(i=1;i<=365;i++){

@@ -14,7 +14,7 @@ int exchange(int sz[5][5],int a, int b)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int matrix[5][5];
 	int row,col;

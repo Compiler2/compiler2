@@ -22,7 +22,7 @@ return sum;
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,k;
 double x,e,f;

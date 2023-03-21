@@ -19,7 +19,7 @@ int sort(int m,int n)
     }
     
     
-    main()
+    main_bench_bench()
     {int N,m,n;
     scanf("%d",&N);
     for(int i=0;i<N;i++){

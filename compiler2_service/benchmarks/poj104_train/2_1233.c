@@ -6,7 +6,7 @@ struct book
 	char name[26];
 }book[1000];
 int judge(char*a,int b);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char c;
 	int n=0,i=0,j=0,rec[26]={0},k=0;

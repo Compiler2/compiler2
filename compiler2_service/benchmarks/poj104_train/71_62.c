@@ -3,7 +3,7 @@
 int mon;
 int day(),month[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
-int main(){
+int main_bench(){
     int i,j,n,year,month1,month2,days1,days2,daysbetween;
     scanf("%d",&n);
     for(i=0;i<n;i++)

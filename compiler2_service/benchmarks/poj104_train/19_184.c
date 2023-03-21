@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char s[100],a[100],b[100];
 	char x[100],c[100]={'\0'};

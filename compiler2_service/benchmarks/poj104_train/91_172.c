@@ -12,7 +12,7 @@ else
 str[i]=(*(s+i))+(*(s+i+1));}
 str[i+1]='\0';
 }
-int main()
+int main_bench()
 {char s[1000];
 gets(s);
 convert(s);

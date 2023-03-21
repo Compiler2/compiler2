@@ -13,7 +13,7 @@ int f(int x)
       return(x*3+1);
      }
 }
-int main()
+int main_bench()
 {
   int x;
   scanf("%d",&x);

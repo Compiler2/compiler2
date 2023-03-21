@@ -15,7 +15,7 @@ double score(int i)
 	if (i<60) p=0.0;
 	return p;
 }
-void main()
+int main_bench()
 {
 	double gpa;
 	gpa=0;

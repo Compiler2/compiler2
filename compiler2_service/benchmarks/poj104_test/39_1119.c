@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	
     char name[100][100];

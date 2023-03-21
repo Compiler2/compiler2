@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     double rate,result;
     int p=2,num=0;
     scanf("%lf\n",&rate);

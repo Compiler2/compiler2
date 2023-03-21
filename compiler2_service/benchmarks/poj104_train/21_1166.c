@@ -8,7 +8,7 @@ return (shu);
 }
 
 
-int main()
+int main_bench()
 {
 	double absss(double shu);
 	int n,a[500],i,m1=0,m2=0,j=0,p,q;

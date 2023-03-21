@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a,b,c,i,s1=0,s2;
     int n[12]={31,28,31,30,31,30,31,31,30,31,30,31};

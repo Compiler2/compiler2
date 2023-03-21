@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { 
 void de(char x[][50],int y);
     int k,i;

@@ -7,7 +7,7 @@ struct abb{
 };
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,len,q;
 	char s[600];

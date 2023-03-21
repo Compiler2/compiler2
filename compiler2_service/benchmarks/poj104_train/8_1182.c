@@ -33,7 +33,7 @@ void order(int a[100],int l1)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int l1,l2,i;
 	int a[100],b[100];

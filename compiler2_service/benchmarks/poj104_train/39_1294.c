@@ -27,7 +27,7 @@ int f(struct student *p)
 
 
 
-void main()
+int main_bench()
 {
 	int f(struct student *p);
 	struct student stu[100],*p;

@@ -34,7 +34,7 @@ int huiwen(int n)
 	return 1;
 }
 
-int main()
+int main_bench()
 {
 	int a,b,i,flag=0;
 	scanf("%d %d",&a,&b);

@@ -26,7 +26,7 @@ int num(int a[10],int x,int b[10],int y)
 	else t=a[0];
 	return(t);
 }
-int main()
+int main_bench()
 {
 	int x,y,a[10],b[10],m,n,t,i,j;
 	scanf("%d%d",&x,&y);

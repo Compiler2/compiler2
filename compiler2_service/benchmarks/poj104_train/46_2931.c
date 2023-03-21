@@ -2,7 +2,7 @@
 
 int a[1000][1000];
 int x=0,y=0,z=0,i=0,m=0,k=0,t=0,n=0,j=0;
-int main()
+int main_bench()
 {
 scanf("%d %d",&x,&y);
 for(i=0;i<x;i++){

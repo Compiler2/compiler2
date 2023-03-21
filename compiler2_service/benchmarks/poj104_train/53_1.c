@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int m,n,i,j;
 	int num[300],mark[300];

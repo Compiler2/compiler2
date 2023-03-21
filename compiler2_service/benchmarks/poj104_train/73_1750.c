@@ -29,7 +29,7 @@ int col_min(int a[][5],int i,int j)
 	return flag;
 }
 
-void main()
+int main_bench()
 {
 	int a[5][5];
 	int i,j,flag=0;

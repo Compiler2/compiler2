@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int n;
  scanf("%d\n",&n);
  char a[100][100];void sort (char *a);

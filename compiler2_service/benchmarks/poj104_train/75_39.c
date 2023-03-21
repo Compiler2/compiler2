@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	char c;
     int pre[1000][1000],beg[1000],en[1000],pptt[1000],tmax,pmax,p,t,n,sl,i;

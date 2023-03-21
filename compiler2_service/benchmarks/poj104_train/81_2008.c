@@ -22,7 +22,7 @@ int zhuanhuan(int p,int m, int n)
     }
     return(z);
 }
-void main()
+int main_bench()
 {
      int i,j,fanhui;
      for (i=0;i<5;i++)

@@ -10,7 +10,7 @@ else {m=0;break;}
 return(m);
 }
 
-int main()
+int main_bench()
 {
 	int n,k;
 	scanf("%d %d",&n,&k);

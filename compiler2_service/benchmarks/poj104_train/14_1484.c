@@ -7,7 +7,7 @@ struct Student
     int math; 
 }sdu[99999];
 
-int main()
+int main_bench()
 {   
     int N,i,j,s,t,m;
     scanf("%d",&N);

@@ -7,7 +7,7 @@ int F(int a,int b)
     else if(b==1)return 1;
     else return F(a,b-1)+F(a-b,b);
 }    
-int main()
+int main_bench()
 {
       int i, t;
       scanf("%d",&t);

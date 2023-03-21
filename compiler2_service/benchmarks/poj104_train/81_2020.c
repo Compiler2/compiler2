@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int *p,n,m,t,i,j;
 	p=(int*)calloc(25,sizeof(int));

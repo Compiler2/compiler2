@@ -3,7 +3,7 @@
 
 char a[100]={0};
 char b[100]={0};
-int main(){
+int main_bench(){
 	int i,j;
 	char e;
 	scanf("%s",a);

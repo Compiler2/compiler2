@@ -2,7 +2,7 @@
 
 char s[100000];
 void tc(int);
-int main()
+int main_bench()
 {
     int a[27],i,t,k,q;
     scanf("%d\n",&k);

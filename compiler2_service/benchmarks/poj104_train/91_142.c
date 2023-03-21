@@ -8,7 +8,7 @@ char *calc(char *ps,char *pt)
 	*(pt+m-1)=*(ps+m-1)+*(ps+0);
 	return pt;
 }
-int main()
+int main_bench()
 {
 	char s[101],c[101]={'\0'};
 	gets(s);

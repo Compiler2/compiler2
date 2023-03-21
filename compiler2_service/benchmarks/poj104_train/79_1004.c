@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int king(int n,int m);
 	int n,m,i,cycle;

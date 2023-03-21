@@ -1,7 +1,7 @@
 #include <header.h>
 
 int num[101][101];
-int main(void)
+int main_bench()
 {
 	int i=0,j=1,k=1,x,y,row,col,n=1;
 	scanf("%d%d",&row,&col);

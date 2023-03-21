@@ -23,7 +23,7 @@ int zhuan2(char c[])
 	}
 	return(j+1);
 }
-void main()
+int main_bench()
 {
 	int i,j,k,l,m,n,max=0,g[1000]={0},gmax=0;
 	char c[10000],d[10000];

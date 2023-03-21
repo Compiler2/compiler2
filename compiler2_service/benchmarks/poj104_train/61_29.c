@@ -13,7 +13,7 @@ int value(int a){
 	}
 	return result;
 }
-int main(){
+int main_bench(){
 	int a,i,n,result;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++){

@@ -7,7 +7,7 @@ int cmp(const void *a1, const void *a2)	{
 	return *p2 - *p1;
 };
 
-int main()	{
+int main_bench()	{
 
 	int n;
 	int m[101];

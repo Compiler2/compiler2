@@ -11,7 +11,7 @@ for(i=2;i<k;i++)
 }
 return (t);
 }
-int main()
+int main_bench()
 {int n,i,j,k;
 k=0;
 scanf("%d",&n);

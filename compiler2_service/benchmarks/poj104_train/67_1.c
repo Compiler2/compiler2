@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int i, n;
     double a, b, c;

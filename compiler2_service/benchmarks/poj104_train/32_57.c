@@ -1,7 +1,7 @@
 #include <header.h>
 
 void gui0(char[],int n);
-int main()
+int main_bench()
 {
 	int num;
 	scanf("%d",&num);

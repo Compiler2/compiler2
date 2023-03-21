@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char xulie[10000];
 	int l=0;
 	int i,len;

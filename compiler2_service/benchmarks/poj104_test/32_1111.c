@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	void minus(char a[999],char b[999]);
 	char a[999],b[999];

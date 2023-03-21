@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {  
    int i,j,n;
    struct piece {int a,b;} max,require,s[500],ex;

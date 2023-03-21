@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int w , i ,days = 12;
 	scanf("%d" , &w);

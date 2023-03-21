@@ -1,7 +1,7 @@
 #include <header.h>
 
 int judge(int x);
-int main()
+int main_bench()
 {
         int n,p,q,i,j,k;
         scanf("%d",&n);

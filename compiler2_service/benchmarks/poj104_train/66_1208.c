@@ -2,7 +2,7 @@
 
 
 int total(int year,int mouth, int day);
-int main(){
+int main_bench(){
 	int k;
 	int p,q;
 	int year,mouth, day;

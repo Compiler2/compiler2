@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
     int m,i,k;
 	 float sumz=0,max;
 	struct student

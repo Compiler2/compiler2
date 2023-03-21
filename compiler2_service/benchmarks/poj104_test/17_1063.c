@@ -33,7 +33,7 @@ void course(char a[],int n)
         }
     }
 }
-int main()
+int main_bench()
 {
     char a[10000];
     int n,m,j;scanf("%d",&m);

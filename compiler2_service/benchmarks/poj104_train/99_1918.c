@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,age[100],i,s1=0,s2=0,s3=0,s4=0,sum;
 	double a1,a2,a3,a4;

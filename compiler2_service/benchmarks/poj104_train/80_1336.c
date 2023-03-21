@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int days[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int leap_days[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};

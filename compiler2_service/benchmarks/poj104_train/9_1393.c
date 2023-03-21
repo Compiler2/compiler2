@@ -6,7 +6,7 @@ struct person
 	char num[10];
 
 }pat[100],old[100],you[100],exchange;
-int main()
+int main_bench()
 {
 	int n,i,p,q,result;
 	int k=0,t=0;

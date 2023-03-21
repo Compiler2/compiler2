@@ -6,7 +6,7 @@ int bj(const void * x, const void * y)
     if(*(int *)x<*(int *)y) return -1;
     if(*(int *)x==*(int *)y) return 0;
 }
-int main()
+int main_bench()
 {
     int n,k,i,j,a[1000],pds=0;
     scanf("%d%d",&n,&k);

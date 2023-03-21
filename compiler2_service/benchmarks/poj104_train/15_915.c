@@ -3,7 +3,7 @@
 
 int p[1001][1001];
 
-int main()
+int main_bench()
 {
     int n;
     int i=0,j=0,leftx,lefty,rightx,righty;

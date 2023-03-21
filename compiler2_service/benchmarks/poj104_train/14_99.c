@@ -14,7 +14,7 @@ struct str
 	int total; 
 } b[100000];
 
-main()
+main_bench_bench()
 {
 	int i,n,j;
 	scanf("%d",&n);

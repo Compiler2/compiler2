@@ -28,7 +28,7 @@ int su(int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int min,max,i,k[1000]={0},j=0;
 	scanf("%d %d",&min,&max);

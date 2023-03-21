@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int judge(char ch[]);
 	char str[501],sub[501];

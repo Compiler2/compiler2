@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int zai(int m,int n);
 	int a[5][5];
 	int b,c,d,i,e;

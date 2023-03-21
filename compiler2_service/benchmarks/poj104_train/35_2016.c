@@ -4,7 +4,7 @@ int i,j,max,a,d,c;
  int m,n;
  int good;
  int sz[8][8];
-int main()
+int main_bench()
 {
  good=0;
  scanf("%d,%d",&m,&n);

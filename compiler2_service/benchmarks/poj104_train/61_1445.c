@@ -11,7 +11,7 @@ int f(int x){
 	}
 	return sz[x-1];
 }
-int main(){
+int main_bench(){
 	int n,y,m[1000],h[1000];
 	scanf("%d",&n);
 	for(y=0;y<n;y++){

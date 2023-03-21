@@ -7,7 +7,7 @@ int pfCompare( const void*elem1, const void*elem2)
     p2=(int*)elem2;
     return (*p2)-(*p1);
 }
-int main()
+int main_bench()
 {
     int n;
     scanf("%d",&n);

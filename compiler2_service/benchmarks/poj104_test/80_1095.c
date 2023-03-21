@@ -31,7 +31,7 @@ int p(int a,int b,int c)
 	day+=c;
 	return(day);
 }
-int main()
+int main_bench()
 {
 	int a,b,c,d,e,f,x;
 	scanf("%d %d %d",&a,&b,&c);

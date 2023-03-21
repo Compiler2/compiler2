@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isprime(int i);
-int main(void)
+int main_bench(void)
 {
 	int i,j,k;
 	int n;

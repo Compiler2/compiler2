@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n, n_m, n_f, i, j;
 	float male[40], female[40];

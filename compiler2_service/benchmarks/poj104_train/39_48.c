@@ -9,7 +9,7 @@ struct student
 	char b;
 	int n;
 };
-int main(int argc, char* argv[])
+int main_bench()
 {
 	struct student *p;
 	int i,j,num;

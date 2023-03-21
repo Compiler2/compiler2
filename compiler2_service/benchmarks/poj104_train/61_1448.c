@@ -2,7 +2,7 @@
 
 int s[100];
 int sl(int i,int n);
-int main()
+int main_bench()
 {
 int i;
 int n;

@@ -23,7 +23,7 @@ int sushu(int i)
                      return(0);
                      }
                      
-main()
+main_bench_bench()
 {
       int sushu(int i);
       int n,i,a,b,x;

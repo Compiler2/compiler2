@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
  int zhh(int n,int m);
  int a[5][5],i,j,m,n,c;

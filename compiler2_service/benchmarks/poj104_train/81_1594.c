@@ -15,7 +15,7 @@ int change(int a[5][5],int n,int m)
 	}
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int b[5][5];
 	int k,l,m,n,t;

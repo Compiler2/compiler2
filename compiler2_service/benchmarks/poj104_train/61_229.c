@@ -21,7 +21,7 @@ i2=temp;
 return i2;
 }
 
-int main()
+int main_bench()
 {
 int number;
 int finput,i;

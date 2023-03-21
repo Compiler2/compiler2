@@ -12,7 +12,7 @@ struct work
 
 struct work i, j, k, l, m;
 
-int main()
+int main_bench()
 {   
     
     

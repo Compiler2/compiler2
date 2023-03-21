@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   int a,ans[4],i,all;
 	scanf("%d",&a);
 	for(i=1;i<=3;i++)ans[i]=0;

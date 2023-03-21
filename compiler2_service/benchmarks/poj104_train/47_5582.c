@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,a[101]={0},b[101]={0},i;
 	scanf("%d",&n);

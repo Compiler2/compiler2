@@ -7,7 +7,7 @@ int ex(int *x,int *y){
     *x=*y;
     *y=tmp;
     }
-int main(){
+int main_bench(){
     int n,k;
     int s=0;
     int sz[1000];

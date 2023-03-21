@@ -24,7 +24,7 @@ void count(int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

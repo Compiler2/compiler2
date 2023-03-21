@@ -9,7 +9,7 @@ int f(int x,int y)
 		z=0;
 	return(z);
 }
-void main()
+int main_bench()
 {
 	int i,j,k,m,n,a[5][5];
 	for(i=0;i<5;i++)

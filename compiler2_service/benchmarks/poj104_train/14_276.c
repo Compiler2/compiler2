@@ -6,7 +6,7 @@ struct student
        int grade[2];
 };
 struct student stu[100000];
-int main()
+int main_bench()
 {
     int n,sum[100000],i,count,max,j;
     count = 1;

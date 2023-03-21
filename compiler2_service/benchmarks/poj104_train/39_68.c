@@ -10,7 +10,7 @@
 		char west;
 		int comp;
 	}stu[100];
-void main()
+int main_bench()
 {
 	struct student *p;
 	int n,sum=0,t,s=0,d,i;

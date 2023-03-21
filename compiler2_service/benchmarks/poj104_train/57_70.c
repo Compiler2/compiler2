@@ -30,7 +30,7 @@ void delend(char str[])
 	}
 		
 }
-main()
+main_bench_bench()
 {
 	int n,i;
 	char str[50],put[50][50];

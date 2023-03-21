@@ -61,7 +61,7 @@ void shuchu()
 		printf("%d",c[i]);
 	}
 } 
-int main()
+int main_bench()
 {
 	scan1();
 	order();

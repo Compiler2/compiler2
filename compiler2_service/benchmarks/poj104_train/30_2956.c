@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int n,sum1=0,sum2=0;
 	scanf("%d\n",&n);
 	for(int i=1;i<=n;i++){

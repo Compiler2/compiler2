@@ -7,7 +7,7 @@
 	}bing[100];
 
 
-int main()
+int main_bench()
 {
 		int n,i,j,e;
 	int youxian[100]={0};

@@ -6,7 +6,7 @@ struct Article {
 	char author[26];
 };
 
-int main()
+int main_bench()
 {
 	struct Article book[1000];
 	int m, i;

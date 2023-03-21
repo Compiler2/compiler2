@@ -6,7 +6,7 @@ int pd(int x)
 {   if(x%400==0||(x%100!=0&&x%4==0))
     return 1;else return 0;
 }
-int main()
+int main_bench()
 {   int i;
     scanf("%d%d%d",&year,&month,&day);  
     while(year>1600) year-=1600;  

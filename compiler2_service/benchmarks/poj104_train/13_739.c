@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int a[105],n,i;
 	for (i = 0;i < 101;i += 1)

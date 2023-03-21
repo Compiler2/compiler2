@@ -1,7 +1,7 @@
 #include <header.h>
 
 void qu(char *);
-int main()
+int main_bench()
 {
 char a[110],b[110];
 gets(a);

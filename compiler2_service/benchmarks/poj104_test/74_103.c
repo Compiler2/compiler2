@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	int hui(int n);
 	int su(int n);
 	int m,n,i,j=0,a[50];

@@ -8,7 +8,7 @@ int check(char *p,char a[],int l)
            return 0;
    return 1;        
 }
-main()
+main_bench_bench()
 {
    char s[200],r[200],a[101],b[101];
    int i=0,j,ls,la,lb,count=0,p=1;

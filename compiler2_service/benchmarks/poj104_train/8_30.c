@@ -46,7 +46,7 @@ void prin()
 	if(i=m+n-1)
 	printf("%d",b[n-1]);
 }
-void main()
+int main_bench()
 { len();
 
 	change();

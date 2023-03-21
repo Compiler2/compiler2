@@ -8,7 +8,7 @@ struct stu
 };
 
 
-int main()
+int main_bench()
 {
 	int n,numt,cht,mat;
 	scanf("%d",&n);

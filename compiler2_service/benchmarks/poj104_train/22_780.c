@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[300]={0},b[5]={0},i,j,c,max,max2,k=1,l;
 	for(i=0;i<=300;i++)

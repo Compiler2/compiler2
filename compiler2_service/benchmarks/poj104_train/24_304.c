@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sentence[500];
 	int i,j=0,len,kong=0,shuliang,num[50]={0},max=0,k,r,min=100,qian1=0,qian2=0;

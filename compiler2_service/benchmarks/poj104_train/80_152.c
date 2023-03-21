@@ -27,7 +27,7 @@ int month(int m)
 	}
 	return(d);
 }
-void main()
+int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,i,ds=0;
 	scanf("%d%d%d",&y1,&m1,&d1);

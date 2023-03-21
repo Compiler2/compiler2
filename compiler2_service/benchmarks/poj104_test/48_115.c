@@ -5,7 +5,7 @@
 int dx[] = {-1, -1, -1, 0, 0, 1, 1, 1};
 int dy[] = {-1, 0, 1, -1, 1, -1, 0, 1};
 
-int main() {
+int main_bench() {
   int a[11][11], b[11][11], m, n, i, j, k;
   scanf("%d%d", &m, &n);
   memset(a, 0, sizeof a);

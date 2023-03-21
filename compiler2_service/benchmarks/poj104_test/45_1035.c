@@ -1,7 +1,7 @@
 #include <header.h>
 
 int b[50];
-int main()
+int main_bench()
 {
 	char s1[50],s2[50];
 	scanf("%s %s",s1,s2);

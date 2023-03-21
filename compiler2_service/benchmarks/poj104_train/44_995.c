@@ -23,7 +23,7 @@ void nixu(char s[])
 		}
 	printf("\n");}
 }
-int main()
+int main_bench()
 {
 	int i;
 	char a[10];

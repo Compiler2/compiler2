@@ -9,7 +9,7 @@ struct student
 	char west;
 	int paper;
 };
-int main()
+int main_bench()
 {
 	int n,i,t,x,y=0,a[100]={0};
 	struct student stu[100];

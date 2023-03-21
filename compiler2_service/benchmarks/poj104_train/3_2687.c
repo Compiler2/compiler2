@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int a[100000]={0},n,k,x,i;
 	int ifind=0;
 	scanf("%d%d",&n,&k);

@@ -13,7 +13,7 @@ change(char s[1000])
 				s[j+1]=c;
 			}
 }
-void main()
+int main_bench()
 {
 	char s1[1000],s2[1000];
 	scanf("%s%s",s1,s2);

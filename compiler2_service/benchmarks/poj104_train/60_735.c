@@ -1,7 +1,7 @@
 #include <header.h>
 
 int zhi(int a);
-int main(){
+int main_bench(){
 int n,i,t,k;
 k=0;
 scanf("%d",&n);

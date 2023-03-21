@@ -3,7 +3,7 @@
 char str1[1000];
 char str2[1000];
 void paixu(char a[]);
-int main(){
+int main_bench(){
 	scanf("%s",&str1);
 	scanf("%s",&str2);
 	if (strlen(str1)!=strlen(str2)){

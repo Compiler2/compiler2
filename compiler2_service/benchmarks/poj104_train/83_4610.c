@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int n,i,defen[10],xuefen[10],xuefenhe;
 	double jidian[10],GPA,jidianhe;
 	scanf("%d",&n);

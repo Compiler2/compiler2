@@ -3,7 +3,7 @@
 int bijiao(const void *x,const void *y)
 {return *(int*)x-*(int*)y; 
 }
-main()
+main_bench_bench()
 {int n,m,i,a[100],b[100];
 scanf("%d %d",&n,&m);
 for(i=0;i<=n-1;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char zfc[101],sor[101],rep[101];
 	int dec,i,j;
 	gets(zfc);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char name[100][20],g[2]={'Y','N'},x[2]={'Y','N'},gg,xx;
 	int n,score, pscore, article,b,num[100],i,maxnum,sum=0;

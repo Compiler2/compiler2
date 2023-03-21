@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,k,index,max,min;
 	char juzi[2500],word[50][50];
 	gets(juzi);

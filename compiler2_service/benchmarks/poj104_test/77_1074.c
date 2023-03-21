@@ -31,7 +31,7 @@ void ry(int y[])
 }
 
 
-int main()
+int main_bench()
 {
 
     

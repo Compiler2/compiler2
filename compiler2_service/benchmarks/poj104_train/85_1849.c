@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char zf[21];
     int n,m,a;
     scanf("%d",&n);

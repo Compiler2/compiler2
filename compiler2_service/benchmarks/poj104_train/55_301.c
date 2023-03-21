@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a2i[128];
 	char i2a[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

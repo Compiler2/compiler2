@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 { 
 int max=0; 
 int x=0; 

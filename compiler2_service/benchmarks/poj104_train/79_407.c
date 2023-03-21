@@ -10,7 +10,7 @@ while (!a[x]);
 a[x]=0;}
 for(i=1;i<=n;i++)
 if(a[i])return(i);}
-main(){
+main_bench_bench(){
 int m,n;
 scanf("%d%d",&n,&m);
 while (m!=0){

@@ -6,7 +6,7 @@ struct book
        char au[32];
        int sta[27];
 }b[1020];
-int main()
+int main_bench()
 {
     int i,j,k,m,n;
     char c;

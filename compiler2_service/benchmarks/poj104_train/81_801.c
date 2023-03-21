@@ -6,7 +6,7 @@ int judge(int a,int b){
 	}
 	return 0;
 }
-int main(){
+int main_bench(){
 	int a[5][5];
 	int i,j,tmp;
 	for(i=0;i<5;i++){

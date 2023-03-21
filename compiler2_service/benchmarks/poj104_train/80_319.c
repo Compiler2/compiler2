@@ -4,7 +4,7 @@
 int dijitian(int,int,int);
 int isrunnian(int);
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int year1,year2,month1,month2,day1,day2;
 	int sum=0,i;

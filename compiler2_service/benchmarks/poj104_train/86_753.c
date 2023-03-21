@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n, bad, a[100]={0}, i, j, b;
 	int all(int bad, int a[100]);

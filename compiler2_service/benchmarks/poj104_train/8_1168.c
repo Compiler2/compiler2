@@ -46,7 +46,7 @@ void input()
   quicksort(b,0,m-1);
   output(n,m,a,b);
 }
-main()
+main_bench_bench()
 {
   input();
 }

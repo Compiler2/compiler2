@@ -24,7 +24,7 @@ int pd(int l)
 
 }
 
-int main()
+int main_bench()
 {
     char temp;
 	int i,j,n,k,m;

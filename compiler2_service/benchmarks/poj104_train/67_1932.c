@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,t[100],e[100],total,effect,i;
 	double x,y[100];
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      int i,j,k,t,m,c[26]={0},max=0;
      char b[27]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};

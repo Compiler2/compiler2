@@ -50,7 +50,7 @@ int print()
 	printf("%d",b[n]);
 	return(0);
 }
-void main()
+int main_bench()
 {
 	input();
 	pai();

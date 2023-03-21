@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	const int maxlen = 202;
 	char szline1[maxlen];

@@ -6,7 +6,7 @@ struct men
 	int y;
 }time[1000];
 
-int main()
+int main_bench()
 {
 	int i=0,j,max=0,n,sum;
 	char c;

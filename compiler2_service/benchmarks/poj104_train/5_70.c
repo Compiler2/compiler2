@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double n,s=0,m;
 	scanf("%lf",&n);
 	char a[600],b[600];

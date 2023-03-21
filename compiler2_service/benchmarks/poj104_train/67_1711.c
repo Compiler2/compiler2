@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int n,x,y,i,b;
 	double a[100];
 

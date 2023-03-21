@@ -10,7 +10,7 @@
         int paper;
         };
 
-int main()
+int main_bench()
 {
     int i,j,N,high;
     long sch[100]={0};

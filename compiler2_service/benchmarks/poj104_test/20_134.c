@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int l=0,i=0;
 	char str[11]={""}, substr[3]={""},str2[11]={""};

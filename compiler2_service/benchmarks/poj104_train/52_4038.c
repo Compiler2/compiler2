@@ -10,7 +10,7 @@ void convert(int n,int a[30])
      a[i-1]=t;
  }
 }
-void main()
+int main_bench()
 {
  int m,n,i,j,a[30];
  scanf("%d %d",&m,&n);

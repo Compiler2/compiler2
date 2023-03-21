@@ -24,7 +24,7 @@ int apple(int n,int k)
 	}
 	return m;
 }
-int main()
+int main_bench()
 {
 	int n,k,m;
 	scanf("%d%d",&n,&k);

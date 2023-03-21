@@ -22,7 +22,7 @@ void deal(char a[],int num[],int n)
 	}
 }
 		
-void main()
+int main_bench()
 {
 	char m,ar[100];
 	int i,n,num[100];

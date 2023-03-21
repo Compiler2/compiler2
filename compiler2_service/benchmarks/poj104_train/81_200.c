@@ -14,7 +14,7 @@ int hs(int sz[5][5],int m,int n){
 	return 0;
 	}
 }
-int main(){
+int main_bench(){
     int t,j,d,k,l,z[5][5];
 	for(j=0;j<5;j++){
 		for(d=0;d<5;d++){

@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int a,b,l,decimal=0;
     char c[40];

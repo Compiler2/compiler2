@@ -36,7 +36,7 @@ int q(int x)
 }
 		
 
-void main()
+int main_bench()
 {int m,n,a,b,i,j=0,c;
 scanf("%d %d",&m,&n);
 for(i=0;i<=n-m;i++)

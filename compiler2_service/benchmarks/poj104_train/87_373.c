@@ -3,7 +3,7 @@
 void qkg(char *a);
 void qdykg(char *a);
 void dbx(char *a);
-int main(){
+int main_bench(){
 	int a,b,c,d,e,f;
 	int sw;
 	int xw;

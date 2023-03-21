@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int max=0,submax=0,i,n,x;
 	scanf("%d/n",&n);

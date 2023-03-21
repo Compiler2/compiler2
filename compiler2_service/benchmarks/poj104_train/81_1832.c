@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 int sw(int a[5][5],int n,int m);
 int i,j,m,n,a[5][5],q,h;

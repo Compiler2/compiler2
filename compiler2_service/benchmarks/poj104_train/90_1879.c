@@ -15,7 +15,7 @@ int apple(int a,int b)
 	}
 	return(k);
 }
-int main()
+int main_bench()
 {
 	int t,m[2000],n[2000],i;
 	scanf("%d",&t);

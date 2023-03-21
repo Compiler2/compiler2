@@ -14,7 +14,7 @@ void jiaohuan(int a[],int i,int n,int m)
 	}
 	a[i]=t;
 }
-int main()
+int main_bench()
 {
 	int a[110],m,n,i;
 	scanf("%d %d",&n,&m);

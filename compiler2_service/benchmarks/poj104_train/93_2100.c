@@ -1,7 +1,7 @@
 #include <header.h>
 
 int flag,n;
-void main()
+int main_bench()
 {
 	scanf("%d",&n);
 	flag=0;

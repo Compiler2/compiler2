@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void maopao(int n,int a[]);
 	int shuzu1[500],shuzu2[500];

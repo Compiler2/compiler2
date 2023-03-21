@@ -10,7 +10,7 @@ int compare(char s1[],char s2[]){
 	return 1;
 }
 
-void main(){
+int main_bench(){
 	char s1[50],s2[50];
 	int i;
 	scanf("%s%s",s1,s2);

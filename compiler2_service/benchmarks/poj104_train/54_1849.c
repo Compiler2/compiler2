@@ -8,7 +8,7 @@ int p(int n,int k){
     return n * p(n,k - 1);
 }
 
-int main(){
+int main_bench(){
     int n;
     int k;
     scanf("%d %d", &n, &k);

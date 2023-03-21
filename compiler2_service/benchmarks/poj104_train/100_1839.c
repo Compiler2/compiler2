@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int c[60]={0};
     int i,j=1,len,tem;

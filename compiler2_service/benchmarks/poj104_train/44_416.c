@@ -21,7 +21,7 @@ int re(int num){
     num=num*value;
 }
 
-int main(){
+int main_bench(){
     int num[6],i;
     for(i=0;i<6;i++){
                      scanf("%d",&num[i]);

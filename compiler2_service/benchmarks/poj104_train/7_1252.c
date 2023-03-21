@@ -11,7 +11,7 @@ int comp(char a[100],char b[100],int i)
 }
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,j,len1,len2,len3,break1=0;
 	char a[100],b[100],c[100];

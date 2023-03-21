@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   
 	int year,month,day,b,i;
 	for(i=1;i<=5;++i)

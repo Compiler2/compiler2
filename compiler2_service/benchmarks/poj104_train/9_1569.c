@@ -5,7 +5,7 @@ struct Inf
 	char c[10];
 	int a;
 };
-int main()
+int main_bench()
 {
 	int n,o=0,y=0,t,i,j;
 	char temp[10];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
 	int n,i,age,one=0,two=0,three=0,four=0;
 	double on,tw,th,fo;

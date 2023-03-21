@@ -29,7 +29,7 @@ int check2(int x)
 	if(x==reconstruct(x)) p=1;
 	return(p);
 }
-void main()
+int main_bench()
 {	int m,n,i,j,flag=0;
 	scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)

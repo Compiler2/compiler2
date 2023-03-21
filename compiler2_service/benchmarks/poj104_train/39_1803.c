@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int N, i, final_g, class_g, nPapers;
 	int scholarship, max_s, sum;

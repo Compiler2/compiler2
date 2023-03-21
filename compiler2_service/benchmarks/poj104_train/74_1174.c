@@ -27,7 +27,7 @@ int su(int i)
     else
     return 1;
 }
-int main()
+int main_bench()
 {
     int m,n,s=0;
     scanf("%d %d",&m,&n);

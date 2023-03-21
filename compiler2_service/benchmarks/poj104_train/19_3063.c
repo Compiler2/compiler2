@@ -1,7 +1,7 @@
 #include <header.h>
 
   
-int main()
+int main_bench()
 {
 	char juzi[9999],danci1[101],danci2[101];
 	int i,j=0,k,l,length1,length2,count=0;

@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int max,mark[700],n,i,len,k,j,num[700];
 	char sz[700],gram[700][10];

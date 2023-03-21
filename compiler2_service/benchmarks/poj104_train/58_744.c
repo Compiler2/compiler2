@@ -7,7 +7,7 @@ int f(char c)
  if(c=='_') return 1;
  else return 0;
 }
-main()
+main_bench_bench()
 {
  int a,n;
  int i;

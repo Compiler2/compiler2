@@ -6,7 +6,7 @@ struct word
 	int a;
 } word[1000];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,j,n,line;
 	struct word *p;

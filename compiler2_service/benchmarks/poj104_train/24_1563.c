@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char sd[4000];
 	gets(sd);
 	int i, a=0, b=0, sum=1, k;

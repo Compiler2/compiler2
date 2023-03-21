@@ -13,7 +13,7 @@ int isok(int a,int b,int c,int d,int e){
     if(e<=2&&d!=1)return 0;
     return 1;
     }
-int main(){
+int main_bench(){
     int a,b,c,d,e,flag=0;
     for(a=1;a<=5&&!flag;a++)
        for(b=1;b<=5&&!flag;b++)

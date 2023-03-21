@@ -13,7 +13,7 @@ fanwei(int x,int y)
 	}
 	return(z);
 }
-void main()
+int main_bench()
 {
 	int a[5][5];
 	int c[5];

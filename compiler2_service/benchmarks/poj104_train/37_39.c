@@ -3,7 +3,7 @@
 char s[100001];
 int bucket[26];
 int t, i, j, k, len;
-int main(void)
+int main_bench()
 {
 	scanf("%d", &t);
 	for(i=0;i<t;i++)

@@ -26,7 +26,7 @@ int dijitian(int year,int month,int date)
 	return sum;
 }
 
-int main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
 	scanf("%d %d %d",&sy,&sm,&sd);

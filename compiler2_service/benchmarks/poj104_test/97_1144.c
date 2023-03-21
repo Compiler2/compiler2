@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sum,n=0;
 	scanf("%d",&sum);
 	while(sum>=100){

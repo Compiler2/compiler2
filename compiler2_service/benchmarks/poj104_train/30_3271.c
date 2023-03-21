@@ -1,7 +1,7 @@
 #include <header.h>
 
 int yuqiwuguan(int);
-int main()
+int main_bench()
 {
 	int n;
 	int sum=0;

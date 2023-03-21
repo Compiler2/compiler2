@@ -1,7 +1,7 @@
 #include <header.h>
 
 char a[10000][255];
-int main(int argc, char* argv[])
+int main_bench()
 {   int n;
     scanf("%d",&n);
 	int i,j;

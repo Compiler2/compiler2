@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
 	int y,m,d,i,n,total=0;	
 	scanf ("%d%d%d",&y,&m,&d);
 	if (y%400==0)

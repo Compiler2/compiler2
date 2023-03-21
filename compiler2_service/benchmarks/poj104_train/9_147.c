@@ -5,7 +5,7 @@ struct pat
       char num[10];
       int age;
 }pat[100],str[100],t;
-int main()
+int main_bench()
 {
 
 	int n,i,j,a=-1,temp;

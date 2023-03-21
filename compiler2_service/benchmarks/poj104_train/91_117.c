@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
     char s[101]={"\0"}, s1[101]={"\0"};
     int i;
     char *pa=s, *pb=s1;

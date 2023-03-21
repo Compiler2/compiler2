@@ -38,7 +38,7 @@ void print()
 				break;
 			}
 }
-main()
+main_bench()
 {
 	scanf("%d",&num);
 	struct book *pi;

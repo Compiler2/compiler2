@@ -11,7 +11,7 @@ int cmp(const void *a,const void *b)
 return(((struct student *)b)->y > ((struct student *)a)->y?1:-1);
 }
 
-main()
+main_bench_bench()
 {    
     int num;
     scanf("%d",&num);

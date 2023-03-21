@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,n,SBP[100],DBP[100],c[100],temp=0,max=0;
 	scanf("%d",&n);

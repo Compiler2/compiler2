@@ -3,7 +3,7 @@
 char s[3001];
 int len;
 
-int main()
+int main_bench()
 {
     int i,miao=1,n=0;
     gets(s);

@@ -19,7 +19,7 @@ void order(char ch[],int len)
 		order(ch,len-1);
 	}
 }
-int main()
+int main_bench()
 {
 	char ch1[100],ch2[100];
 	int len1,len2;

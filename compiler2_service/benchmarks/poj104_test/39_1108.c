@@ -1,7 +1,7 @@
 #include <header.h>
 
  
-int main()
+int main_bench()
 {
 	int n,i,sum=0,k=0,t;
 	struct point{char name[21],ganbu,xibu;int x,y,z,money;}stu[100];

@@ -17,7 +17,7 @@ void complement(char chain[])
 	}
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	char chain[256];

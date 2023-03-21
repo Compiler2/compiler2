@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char zfc[100], in[30], out[30], x[100], y[100];
 	int len, i, t=1, lenall, judge=1;
 	gets(zfc);

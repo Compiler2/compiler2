@@ -14,7 +14,7 @@ int p(int m)
 	} 
 	return a[m]; 
 } 
-int main()
+int main_bench()
 {
  	int m,n,i;
     scanf("%d",&n);

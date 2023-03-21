@@ -20,7 +20,7 @@ int apple(int m, int n)
 	}
 
 }
-int main()
+int main_bench()
 {
 	int x, m, n;
 	scanf("%d",&x);

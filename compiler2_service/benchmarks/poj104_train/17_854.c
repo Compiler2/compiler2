@@ -26,7 +26,7 @@ void match(char *s)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int n,i;
 	char s[101];

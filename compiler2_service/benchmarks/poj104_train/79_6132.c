@@ -5,7 +5,7 @@ struct node
 	int a;
 	struct node *next;
 };
-void main()
+int main_bench()
 {
 	struct node *head;
 	struct node *p1,*p2;

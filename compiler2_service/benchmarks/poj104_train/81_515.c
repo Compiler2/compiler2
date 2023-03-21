@@ -21,7 +21,7 @@ int jiaohuan(int n,int m,int a[5][5])
 	
 
 } 
-void main()
+int main_bench()
 { 
 	int n,m,c,i,j;
 	int a[5][5];

@@ -16,7 +16,7 @@ void change(char aa[])
 			}
 }
 
-void main()
+int main_bench()
 {
 	int i,j;
 	char a[1000],b[1000];

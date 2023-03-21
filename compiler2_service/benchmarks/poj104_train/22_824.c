@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int a[300],i=1,max,sec=-1,j,t;
 	for(j=1;j<300;j++)

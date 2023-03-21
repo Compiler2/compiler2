@@ -43,7 +43,7 @@ int islegalIdentifier(char* str)
 	return 1;
 }
 
-int main()
+int main_bench()
 {
 	char buffer[21];
 	int n, i;

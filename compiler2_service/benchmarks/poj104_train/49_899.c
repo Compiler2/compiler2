@@ -20,7 +20,7 @@ osubstr(char s[],int start,int end)
 	}
 	putchar('\n');
 }
-int main()
+int main_bench()
 {
 	char s[500];
 	int m,len,width;

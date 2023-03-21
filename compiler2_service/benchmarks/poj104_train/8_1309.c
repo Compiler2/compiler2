@@ -29,7 +29,7 @@ void printfing()
      for (i=1;i<n1+n2;i++)
      printf (" %d",c[i]);
 }
-int main()
+int main_bench()
 {
     scanfing ();
     qsorting ();

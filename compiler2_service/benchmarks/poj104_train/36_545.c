@@ -20,7 +20,7 @@ int f(char a[],char b[])
 	}
 	return(1);
 }
-void main()
+int main_bench()
 {
 	char str[20],str1[20];
 	int c;

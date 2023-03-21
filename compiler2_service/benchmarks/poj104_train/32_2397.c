@@ -9,7 +9,7 @@ void swi(int l,char s[200]){
 	}
 	return;
 }
-int main(){
+int main_bench(){
 	char m[200],n[200],t[200];
 	int n1,i,j,k,lm,ln,q,flag,num;
 	scanf("%d",&num);

@@ -13,7 +13,7 @@ struct money{
 	int q;
 }money[1000];
 
-void main()
+int main_bench()
 {
 	int n,i,j,max[1000]={0},mmax,k=0;
 	long sum=0;

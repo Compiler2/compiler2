@@ -10,7 +10,7 @@ int apple(int N,int M)
 	else if(M<N) K=apple(N-1,M);
 	return K;
 }
-int main()
+int main_bench()
 {
 	int t,M,N,i;
 	scanf("%d",&t);

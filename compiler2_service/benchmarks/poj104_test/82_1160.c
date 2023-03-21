@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int nu;
 	scanf("%d\n",&nu);
 	struct aaa{

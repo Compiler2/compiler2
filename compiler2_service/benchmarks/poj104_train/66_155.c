@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	unsigned long a,b,c,d,e,f,g,h,n;
 	scanf("%ld %ld %ld",&a,&b,&c);

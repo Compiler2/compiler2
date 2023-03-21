@@ -30,7 +30,7 @@ int check2(char a[],int n)
     return 1;  
      
 }
-main()
+main_bench_bench()
 {   int n;
     scanf("%d",&n);
     char a[200][100];

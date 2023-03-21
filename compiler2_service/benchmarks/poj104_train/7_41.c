@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 	void copy(char a[],char b[],char c[]);
 	char S[100],sub[100],re[100];
 	scanf("%s",S);

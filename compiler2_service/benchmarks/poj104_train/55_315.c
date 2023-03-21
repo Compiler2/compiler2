@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int zheng[255];
 	char fan[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

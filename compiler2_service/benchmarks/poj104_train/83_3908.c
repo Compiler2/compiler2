@@ -2,7 +2,7 @@
 
  
 double gc(int m); 
-int main(){
+int main_bench(){
     int n,s,i; 
     s=0; 
     scanf("%d",&n); 

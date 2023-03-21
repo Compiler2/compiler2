@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int d,day,row,list,n,sum;
     char A[102][102];
     row=0;

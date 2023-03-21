@@ -8,7 +8,7 @@ int sushu(int a)
 	}
 	return x;
 }
-int main()
+int main_bench()
 {
 	int n,i,a,b,x,y,s=0;
 	scanf("%d",&n);

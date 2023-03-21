@@ -47,7 +47,7 @@ void putout(int* a)
     printf("%d ",a[x]);
     printf("%d",a[(*a)+(*(a+1))+1]);
 }
-int main()
+int main_bench()
 {
     putout(compare(putin()));
 }

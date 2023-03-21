@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int a[50002]={0},i,j,n;
 	for (i=2;i<=50000;i++)

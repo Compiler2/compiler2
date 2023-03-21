@@ -22,7 +22,7 @@ void sort(char *t,char *p,char *q,int i)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	char a[100],b[50],c[50],*p,*q,*t;
 	int i,j;

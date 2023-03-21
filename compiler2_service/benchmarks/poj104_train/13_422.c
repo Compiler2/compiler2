@@ -3,7 +3,7 @@
 
 int a[20010];
 
-void main()
+int main_bench()
 {
 	int n,i,tmp,k,ii=0;
 	scanf("%d",&n);

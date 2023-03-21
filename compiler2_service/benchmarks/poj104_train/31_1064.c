@@ -9,7 +9,7 @@ struct student
 	char score[10];
 	char add[20];
 };
-int main()
+int main_bench()
 {
 	int i,j;
 	struct student stu[5000];

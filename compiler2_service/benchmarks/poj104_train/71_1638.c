@@ -11,7 +11,7 @@ int check(int y,int m)
     c=c+days[i];
     return c;
 }
-main()
+main_bench_bench()
 {
     int i,j,k,n,y,m1,m2;
     scanf("%d",&n);

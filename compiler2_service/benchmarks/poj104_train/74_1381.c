@@ -34,7 +34,7 @@ int s(int n)
 			return(0);
 	}
 }
-void main()
+int main_bench()
 {
 	int m,n,i,k=0;
 	scanf("%d%d",&m,&n);

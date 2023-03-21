@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int ml(int a[101],int m);
 	void guiling(int a[101][101],int m);

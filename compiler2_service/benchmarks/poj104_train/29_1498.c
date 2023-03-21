@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fei(int n);
-int main()
+int main_bench()
 {
 	int n,i,j,a;
 	scanf("%d",&n);

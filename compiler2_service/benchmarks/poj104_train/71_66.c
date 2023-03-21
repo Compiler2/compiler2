@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,j,n,sum,year,month1,month2,nor[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}, run[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
     scanf("%d",&n);

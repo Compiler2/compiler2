@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int e,n,k,i,t;
     int sz[500];
 	int hz[500];

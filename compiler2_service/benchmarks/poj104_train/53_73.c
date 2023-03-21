@@ -10,7 +10,7 @@ char belong(int m,int a[],int j)
 	return(1);
 }
 
-void main()
+int main_bench()
 {
 	int n,i,j=0,a[300],b[300]={0};
 	scanf("%d",&n);

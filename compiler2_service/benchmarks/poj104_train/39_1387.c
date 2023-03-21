@@ -8,7 +8,7 @@ struct stu
 	int c;
 	int e;
 }sm[1000];
-void main()
+int main_bench()
 {
 	int t,i,max,sum;
 	scanf("%d",&t);

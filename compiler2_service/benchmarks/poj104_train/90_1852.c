@@ -21,7 +21,7 @@ int reverse (int m,int n)
 	return back;
 }
 
-int main()
+int main_bench()
 {
 	int a,b,i,n;
 	scanf("%d",&n);

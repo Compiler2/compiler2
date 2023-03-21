@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int w,w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12;
 	int m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12;

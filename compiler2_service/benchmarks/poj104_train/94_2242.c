@@ -27,7 +27,7 @@
      }
  }
  
- int main (){
+ int main_bench(){
      int a[10000];
      int i,n;
      scanf("%d",&n);

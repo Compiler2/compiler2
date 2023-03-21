@@ -16,7 +16,7 @@ int MyInverseitoa(int iNum, char*ch,  int radix)
 	return iBits-1;
 }
 
-int main()
+int main_bench()
 {
 	int iNum, iNumInverse, iBits=0;
 

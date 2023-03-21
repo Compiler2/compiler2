@@ -51,7 +51,7 @@ int count2(int startmonth,int startday,int endmonth,int endday)
 	}
 	return result;
 }
-int main()
+int main_bench()
 {
 	int startYear,startMonth,startDay;
 	int endYear,endMonth,endDay;

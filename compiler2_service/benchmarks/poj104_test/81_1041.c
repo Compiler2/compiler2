@@ -14,7 +14,7 @@ int fun(int (*p)[5],int n,int m)
 		return 1;
 	}
 }
-int main()
+int main_bench()
 {
 	int n,i,j,m;
 	int a[5][5],(*p)[5];

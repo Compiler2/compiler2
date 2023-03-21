@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int N1,N2,Y1,Y2,R1,R2,i,j,k,m,n,l,x1,x2;
 	int MONTH[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

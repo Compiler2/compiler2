@@ -19,7 +19,7 @@ void f(char s[260],int n)
 	}
 	printf("\n");
 }
-int main()
+int main_bench()
 {
 	int t,n,i;
 	char s[260];

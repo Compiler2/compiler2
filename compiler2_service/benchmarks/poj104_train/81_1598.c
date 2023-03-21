@@ -10,7 +10,7 @@ void q(int a[5][5],int m,int n)
 		a[n][i]=b;
 	}
 }
-int main()
+int main_bench()
 {
 	int a[5][5],i,j,c,d,e;
 	for(i=0;i<5;i++)

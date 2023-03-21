@@ -6,7 +6,7 @@ struct Student{
 		int math;
 		int total;
 	};
-int main()
+int main_bench()
 {
 	struct Student stu[100000],t;
 	int n,i,j,max,order;

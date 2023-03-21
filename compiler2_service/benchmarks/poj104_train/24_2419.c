@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char s[10000];
     int max_end,max_len=0,min_end,min_len=10000,l,i,j,k=0;

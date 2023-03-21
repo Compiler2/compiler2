@@ -10,7 +10,7 @@ int pd(int a,int b)
      else
      return -1;
 } 
-main()
+main_bench_bench()
 {
       scanf("%d",&n);
       int i;

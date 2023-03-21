@@ -25,7 +25,7 @@ int deal(struct student stu)
 		stu.sum+=850;
 	return(stu.sum);
 }
-void main()
+int main_bench()
 {
 	int n,i,total=0,top=0,t=0;
 	scanf("%d",&n);

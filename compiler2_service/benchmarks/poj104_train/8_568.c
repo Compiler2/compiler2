@@ -48,7 +48,7 @@ void printarray(int x[],int len)
 	}
 	putchar('\n');
 }
-int main()
+int main_bench()
 {
 	scanarray();
 	shengxu(a,m);

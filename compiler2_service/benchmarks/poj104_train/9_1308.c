@@ -8,7 +8,7 @@ struct patient{
 		int over60[100];
 		int below60[100];
 		int m,k;
-int main(int argc, char* argv[])
+int main_bench()
 {
 	void choose(struct patient *p,int n);
 	int n,i,j;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int fei[20],n,i;
 	int input[20],output[20];

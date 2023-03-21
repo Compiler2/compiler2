@@ -9,7 +9,7 @@ for (int i=0;a[i]!=0;i++)
     }
 }
 
-int main()
+int main_bench()
 {
 char a[100],b[100];
 gets(a);

@@ -3,7 +3,7 @@
 int OK(int a,int b);
 int max(int a[],int n);
 int n,high[100],low[100],length[100];
-int main(){
+int main_bench(){
 int i,t=0;
 scanf("%d",&n);
 for(i=0;i<100;i++)

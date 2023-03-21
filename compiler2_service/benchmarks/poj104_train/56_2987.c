@@ -1,7 +1,7 @@
 #include <header.h>
 
 void change(char *);
-int main()
+int main_bench()
 {
 	char *p;
 	p = (char*)malloc(5*sizeof(char));

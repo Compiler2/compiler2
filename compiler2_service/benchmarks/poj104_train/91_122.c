@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char *p,x[101],fir;
  gets(x);
  fir=x[0];

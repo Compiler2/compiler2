@@ -11,7 +11,7 @@ struct author{
 	int bn[1000];
 };
 
-int main()
+int main_bench()
 {
 	int m,i,j,l,max=0;
 

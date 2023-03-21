@@ -3,7 +3,7 @@
 
 
 
-int main() 
+int main_bench() 
 {
     int i = 0;
     char s1[255], s2[255], c1, c2;

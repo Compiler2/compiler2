@@ -20,7 +20,7 @@ int jiaohuan(int a[][5],int m,int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int a[5][5],n,m,i,j;
 	for(i=0;i<5;i++)

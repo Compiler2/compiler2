@@ -14,7 +14,7 @@ int f(int m)
 	if(c!=0&&m!=1) l=1;
 	return l;
 }
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

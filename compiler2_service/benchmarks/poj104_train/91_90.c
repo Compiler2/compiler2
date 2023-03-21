@@ -7,7 +7,7 @@ void P(char a,char b)
 	n=b;
 	printf("%c",m+n);
 }
-int main()
+int main_bench()
 {
 	int i,n,a,b;
 	char str[100];

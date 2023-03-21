@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int numb,a[100],b[100],i,N=0,y,M=0,m=65535;
 	float c[100],S=0,t;

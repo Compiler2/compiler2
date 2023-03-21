@@ -2,7 +2,7 @@
 
 int issushu(int n);
 int a[1000],b[1000];
-int main()
+int main_bench()
 {
 	int n,j,q,i,count=0;
 	scanf("%d",&n);

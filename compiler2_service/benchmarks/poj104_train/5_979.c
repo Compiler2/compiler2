@@ -5,7 +5,7 @@ int f(char x)
     if(x=='A'||x=='T'||x=='G'||x=='C') return 0;
     else return 1;
 }
-int main(int argc, char *argv[])
+int main_bench()
 {
     char a[501],b[501];
     int x=0,i,y=1;

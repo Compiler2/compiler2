@@ -23,7 +23,7 @@ void ganster()
      for(j=0;j<9;j++)
      a[i][j]+=b[i][j];
 }
-int main(void)
+int main_bench()
 {
     int m,n,i,j;
     scanf("%d%d",&m,&n);

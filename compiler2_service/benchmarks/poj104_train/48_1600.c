@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,j,k,l,n,m,num,day;
 	int a[9][9]={0},b[9][9]={0};

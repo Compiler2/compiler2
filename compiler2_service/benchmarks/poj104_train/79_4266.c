@@ -6,7 +6,7 @@ void ysfwt(int n,int m)
 	for(i=2;i<=n;i++) s=(s+m)%i; 
     printf("%d\n",s+1);
 }
-void main()
+int main_bench()
 {
 	int j,n,m;
 	for(j=0;;j++)

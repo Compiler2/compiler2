@@ -15,7 +15,7 @@ int checkend(char a[],int i)
 		if(a[j]==' '||a[j]=='\0')
 			return(j);
 }
-main()
+main_bench_bench()
 {
 	char a[1000];
 	int i=0,b;

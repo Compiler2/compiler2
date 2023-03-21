@@ -9,7 +9,7 @@ struct student
 	char wester;
 	int essay;
 }stu[200];
-void main()
+int main_bench()
 {
 	int n,i,sum=0,prize,max=0,k=0;
     scanf("%d",&n);

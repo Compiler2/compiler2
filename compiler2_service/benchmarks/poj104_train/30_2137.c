@@ -13,7 +13,7 @@ int yu7WuGuan(int number){
 	}
 
 
-int main(){
+int main_bench(){
 		int num, result = 0;
 		scanf("%d", &num);
 

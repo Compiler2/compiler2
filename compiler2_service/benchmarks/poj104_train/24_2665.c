@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {char a[200][50],*p;
 int length[200]={0};
 int i,j,n,max=0,min=100,n1,n2;

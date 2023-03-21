@@ -3,7 +3,7 @@
 
 int sz[1000][1000];
 
-int main()
+int main_bench()
 {
 	int i=0,n,s,rrr[5000],ccc[5000];
 	scanf("%d",&n);

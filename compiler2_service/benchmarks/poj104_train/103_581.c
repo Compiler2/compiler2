@@ -8,7 +8,7 @@ char f(char x)
      else
      return x;
      }
-int main( )
+int main_bench( )
 {
 int  a,b,i;
 char str[1000];

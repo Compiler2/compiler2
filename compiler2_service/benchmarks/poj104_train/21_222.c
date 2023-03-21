@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n,a[300],b[300],i,j,c=0,t;
     float aver=0,d=0;

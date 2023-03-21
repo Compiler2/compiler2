@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int matrix[100][100],i,j,m,n,row,col,counter=0,sum,flag;
     scanf("%d %d",&row,&col);
     sum=row*col;

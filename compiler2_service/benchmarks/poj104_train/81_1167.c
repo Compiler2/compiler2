@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isin(int n,int m);
-int main()
+int main_bench()
 {
 	int a,b,n,m;
 	int z[5][5];

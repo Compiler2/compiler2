@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	long secmax=-32767,max=-32767;
 	int n,i=-1,chg=0,maxchg=0;
 	char ch;

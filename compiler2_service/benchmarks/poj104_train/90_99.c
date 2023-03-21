@@ -12,7 +12,7 @@ int f(int m, int n)
 	return(q);
 }
 
-int main(){
+int main_bench(){
       int i,j,k,n,m,t;
       scanf("%d",&t);
       while(t--)

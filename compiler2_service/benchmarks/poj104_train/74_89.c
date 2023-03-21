@@ -30,7 +30,7 @@ int g(int i)
 	else c=0;
 	return c;
 }
-void main()
+int main_bench()
 {
 	int m,n,num=0,i,l=0,b[300];
 	scanf("%d%d",&m,&n);

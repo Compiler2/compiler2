@@ -1,7 +1,7 @@
 #include <header.h>
 
 int god(int num1,int num2);
-int main(void)
+int main_bench()
 {
 	int number,ctr,i;
 	int n[20000],c[20000];

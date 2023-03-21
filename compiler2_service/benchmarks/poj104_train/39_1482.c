@@ -9,7 +9,7 @@ struct student
 	char b;
 	int n3;
 };
-void main()
+int main_bench()
 {
 	int N,i,j,s[101][6],max,k=0;
 	long int sum=0;

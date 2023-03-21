@@ -17,7 +17,7 @@ float max(float b[],int n)
 	if(fabs(b[i])>fabs(b[k])) k=i;
 	return fabs(b[k]);
 }
-void main()
+int main_bench()
 {
 	int n,a[300]={0},i,j=0;
 	float b[300]={0},c;

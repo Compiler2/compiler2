@@ -14,7 +14,7 @@ void left(char a[],int l,int t)
     a[i-2]=a[i-1];
     a[l-1]='\0';
 }
-int main()
+int main_bench()
 {
     char a[256];
     char b[256];

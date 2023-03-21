@@ -44,7 +44,7 @@ int checke(int D)
 	{return 0;}
 }
 
-int main(void)
+int main_bench(void)
 {
 	struct air p[5];
 	

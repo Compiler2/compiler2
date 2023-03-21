@@ -15,7 +15,7 @@ int huanhang(int sz[5][5],int x,int y)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int shuzu[5][5],i,j,n,m,t;
 	for(i=0;i<5;i++){

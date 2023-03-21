@@ -10,7 +10,7 @@ int zhi(int i)
     }
     return (d);
 }
-int main()
+int main_bench()
 {
     int m,i,j;
     int d=1;

@@ -9,7 +9,7 @@ struct student
    int num;
    int bonus;
 } stu[100];
-int main()
+int main_bench()
 {
 	int i,k=0,amount=0,n;
 	scanf("%d",&n);

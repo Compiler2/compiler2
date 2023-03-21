@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int maxIndex, e,LEN,k,i;
 int sz[1000],js[1000];
 scanf("%d",&LEN);

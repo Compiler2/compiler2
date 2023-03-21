@@ -32,7 +32,7 @@ int banji(int p,char ip)
 	return z;
 }
 
-void main()
+int main_bench()
 {
 	struct student
 	{

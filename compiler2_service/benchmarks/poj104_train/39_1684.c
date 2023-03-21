@@ -8,7 +8,7 @@ struct st
 		char west;
 		int paper;
 	};
-void main()
+int main_bench()
 {
 	struct st s[200];
 	int n,i,j=0,max=0,sum=0,a[200]={0};

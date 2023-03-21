@@ -21,7 +21,7 @@ int ss(int n)
 		return n;
 	}
 }
-int main()
+int main_bench()
 {
 	int m,a,b;
 	scanf("%d",&m); 

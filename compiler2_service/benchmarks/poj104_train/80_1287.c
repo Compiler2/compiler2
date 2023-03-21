@@ -1,7 +1,7 @@
 #include <header.h>
 
 int leap(int);
-int main()
+int main_bench()
 {
 	int total[13]={0,31,59,90,120,151,181,212,243,273,304,334,365};
 	int y1,y2,m1,m2,d1,d2;

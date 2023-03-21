@@ -1,7 +1,7 @@
 #include <header.h>
 
 int normal(int,int);
-int main()
+int main_bench()
 {
 	int n,i,k=0;
 	int shou,shu,max;

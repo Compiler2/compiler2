@@ -9,7 +9,7 @@ int add(int i,int n)
 			temp++;
 	return temp;
 }
-void main()
+int main_bench()
 {
 	int i=1,n;
 	char c;

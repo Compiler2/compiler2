@@ -4,7 +4,7 @@ int search (int n)
 {
 	return n/2;
 }
-int main ()
+int main_bench ()
 {
 	int x, y;
 	scanf("%d%d", &x, &y);

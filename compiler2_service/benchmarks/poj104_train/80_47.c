@@ -12,7 +12,7 @@ int sum1(int year,int month, int day)
 	}
 	return restday;
 }
-int main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
 	scanf("%d%d%d %d%d%d",&sy,&sm,&sd,&ey,&em,&ed);

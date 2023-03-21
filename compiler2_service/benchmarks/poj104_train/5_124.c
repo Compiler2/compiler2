@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
     float x,fenzi=0;
     int lena,lenb,i,j=0;

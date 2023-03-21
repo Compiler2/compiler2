@@ -11,7 +11,7 @@ int huan(int n,int m)
   return 1;
 }
 
-int main()
+int main_bench()
 {
 int a[5][5],n,m,i,j,b[5];
 

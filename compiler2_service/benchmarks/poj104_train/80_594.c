@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int di(int x,int y,int z);
 	int a,b,c,d,e,f,day1,day2,sum=0,i;

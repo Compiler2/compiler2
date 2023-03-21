@@ -11,7 +11,7 @@ struct aut{
 	int sum;
 }b[26];
 
-int main(){
+int main_bench(){
 	int n,i,j,k,t,m=0;
 	for(i=0;i<26;i++){
 		b[i].wri='A'+i;

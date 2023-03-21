@@ -16,7 +16,7 @@ int DJT(int m){
 	return result;
 }
 int DJT(int m);
-int main()
+int main_bench()
 {
     int w,i,m=0;
 	scanf("%d",&w);

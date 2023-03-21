@@ -32,7 +32,7 @@ int houzi(int n,int k,int m)
 	}
 	return num;
 }
-void main()
+int main_bench()
 {
 	int n,k;
 	scanf("%d%d",&n,&k);

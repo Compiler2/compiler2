@@ -1,7 +1,7 @@
 #include <header.h>
 
 char in[100000];
-int main()
+int main_bench()
 {
      
       int t,k,i,j,m,num[26];

@@ -14,7 +14,7 @@ float mgpa(int y)
 	else if(y>=60 && y<=63) return 1.0;
 	else return 0.0;
 }
-int main()
+int main_bench()
 {
 	int n, i, score[50], weight[50];
 	float g[50], a=0.0, b=0.0;

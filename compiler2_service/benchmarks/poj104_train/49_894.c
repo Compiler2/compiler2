@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char substr(char s[],int,int);
     char osubstr(char s[],int,int);

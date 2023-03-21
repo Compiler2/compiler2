@@ -16,7 +16,7 @@ int daysum(int year,int month,int day)
 	return c;
 }
 
-void main()
+int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,i,n=0,a,b;
 	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);

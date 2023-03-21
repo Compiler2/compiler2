@@ -15,7 +15,7 @@ char g(int y)
      if(y>=10)yy=y-10+'A';
      return yy;
 }    
-int main()
+int main_bench()
 {
     long nn=0;
     int a,b,i;

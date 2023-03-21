@@ -10,7 +10,7 @@ struct student
 	int lun;
 	int award;
 };
-void main()
+int main_bench()
 {
 	struct student s[100];
 	int i,N,k=0,p,q=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int row,col,sz[100][100];
 	int xx_row,sx_row,xx_col,sx_col;
 	int i,j,c,r;

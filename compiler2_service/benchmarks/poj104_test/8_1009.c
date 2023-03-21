@@ -70,7 +70,7 @@ void print(struct HaHa xxx)
 	}
 	printf("%d",xxx.g[xxx.x+xxx.y-1]);
 }
-int main()
+int main_bench()
 {
 	print(combine(line(scan())));
 }

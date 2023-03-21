@@ -18,7 +18,7 @@ int abc(int p,int *x){
 	}
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,k,n,d;
 	scanf("%d",&k);

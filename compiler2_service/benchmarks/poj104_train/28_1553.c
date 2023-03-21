@@ -1,7 +1,7 @@
 #include <header.h>
 
 char zfc[1000];
-int main(){
+int main_bench(){
 	int len,sz[300]={0},i,k,cd[300];
 	gets(zfc);
 	len=strlen(zfc);

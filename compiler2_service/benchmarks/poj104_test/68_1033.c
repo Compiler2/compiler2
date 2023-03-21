@@ -7,7 +7,7 @@ int check(int x)
 	for(int y=3;y<x;y=y+2)if(x%y==0)return 0;
 	return 1;
 }
-int main()
+int main_bench()
 {
 	int n,i,j,k;
 	scanf("%d",&n);

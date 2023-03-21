@@ -60,7 +60,7 @@ int money(int n){
 	free(t);
 	return ans;
 }
-int main(){
+int main_bench(){
 	int n;
 	while(scanf("%d",&n)==1&&n!=0)
 		printf("%d\n",money(n));

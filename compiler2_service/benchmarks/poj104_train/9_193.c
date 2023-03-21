@@ -12,7 +12,7 @@ patient pat[100];
 
 int cmp(const void*, const void*);
 
-int main()
+int main_bench()
 {
     int n;
     int i;

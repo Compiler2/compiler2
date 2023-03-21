@@ -2,7 +2,7 @@
 
 int a;
 char s1[101],s2[101];
-int main()
+int main_bench()
 {
     int n,l,i,j;
     scanf("%d",&n);

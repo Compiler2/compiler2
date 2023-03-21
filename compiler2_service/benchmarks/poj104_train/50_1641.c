@@ -40,7 +40,7 @@ int fri(int n,int w)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i;
 	int w;

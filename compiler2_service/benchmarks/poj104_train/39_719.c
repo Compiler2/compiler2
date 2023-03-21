@@ -9,7 +9,7 @@ struct stu{
 	int lw;
 	int m;
 	};
-int main(){
+int main_bench(){
 	struct stu s[100];
 	int n,i,k=0,u=0;
 	scanf("%d",&n);

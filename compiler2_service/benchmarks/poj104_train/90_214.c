@@ -9,7 +9,7 @@ int i;
 
 int count(int a,int p);
 
-int main(void)
+int main_bench()
 {
 	scanf("%d",&n1);
 	for(i=0;i<n1;i++)

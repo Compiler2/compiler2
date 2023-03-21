@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int total(int year,int month,int day);
 	int yearo, montho, dayo, totalo,totalt,yeart, montht, dayt,t,y,i,temp=0;

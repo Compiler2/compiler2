@@ -1,7 +1,7 @@
 #include <header.h>
 
 int exchange(int [][5],int n,int m);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a[5][5],i,j,n,m,num;
 	for(i=0;i<5;i++)

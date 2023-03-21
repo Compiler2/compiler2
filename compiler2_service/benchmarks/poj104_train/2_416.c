@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,a[999],i,k[27]={0},j,t,m;
     char b[999][27];

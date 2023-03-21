@@ -12,7 +12,7 @@ struct stu
 	int m;
 }stu[101];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,sum=0,len,max=0,num;
 	scanf("%d",&n);

@@ -4,7 +4,7 @@
 
 int getday(int year,int month);
 
-int main(){
+int main_bench(){
 	int n,j;
 	scanf("%d",&n);
 	int *a;

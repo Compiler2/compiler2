@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
  int a[100],b[100],n,i,j,f=0;
  scanf("%d",&n);

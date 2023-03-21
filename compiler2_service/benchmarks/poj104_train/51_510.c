@@ -2,7 +2,7 @@
 
 char str[501][5];
 char a[501];
-int main(int argc, char* argv[])
+int main_bench()
 {
     int n,m,k=0,i,j;
 	char temp[5];

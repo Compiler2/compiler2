@@ -8,7 +8,7 @@ struct stu
 	int sum;
 };
 
-int main()
+int main_bench()
 {
 	struct stu *a,t;
 	int n,i,j;

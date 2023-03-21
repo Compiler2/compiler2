@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char name[1000][1000],leader,west,tem[1000];
 	int n,i,all=0,j,a,b,t,money[5],sum[1000],paper;

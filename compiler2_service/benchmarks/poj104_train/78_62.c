@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int a[5],i;char n[5]={'l','q','z','s'};
     for(i=0;i<5;i++)

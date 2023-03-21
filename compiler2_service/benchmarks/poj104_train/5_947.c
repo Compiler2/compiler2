@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
  int m,i,j,f,e,d,k;
  int q[10000],p[10000];

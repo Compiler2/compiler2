@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,s=0,m,j[100];
 	scanf("%d",&n);
 	struct point

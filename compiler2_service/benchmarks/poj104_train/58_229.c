@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char sz[81];
 	int i,n,judge;

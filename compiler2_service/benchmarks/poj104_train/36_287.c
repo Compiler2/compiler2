@@ -16,7 +16,7 @@ void sort(int array[],int n)
 			}
 	}
 }
-main()
+main_bench_bench()
 {
 	char a[100],b[100];
 	int a1[100],b1[100];

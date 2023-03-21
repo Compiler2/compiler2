@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int ROW,COL,row,col,rowxia,rowup,colxia,colup;
 	int array[99][99];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {char *s;
 int i,j,flag;
 s=(char*)malloc(100000*sizeof(char));

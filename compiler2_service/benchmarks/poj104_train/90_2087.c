@@ -1,7 +1,7 @@
 #include <header.h>
 
 int dp[100][11];
-int main(void)
+int main_bench()
 {
 	int i,j;
 	int t;

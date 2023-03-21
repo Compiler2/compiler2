@@ -5,7 +5,7 @@ struct weight
     char name;
     int weight;
 };
-int main()
+int main_bench()
 {
     int a,b,c,d,i,j,t1;
     char t2;

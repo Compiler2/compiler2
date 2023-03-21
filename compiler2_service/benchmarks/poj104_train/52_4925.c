@@ -1,7 +1,7 @@
 #include <header.h>
 
 void swap(int a[],int j);
-int main()
+int main_bench()
 {
 	int i,j,m,n,a[101];
 	scanf("%d%d",&n,&m);

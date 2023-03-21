@@ -5,7 +5,7 @@ struct v
 	char a[10];
 	int b;
 };
-int main()
+int main_bench()
 {
 	int n,i,j=0,l,k;
 	struct v *c;

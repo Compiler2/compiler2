@@ -22,7 +22,7 @@ int huiwen(int p)
 	if(d==t)return(1);
 	else return(0);
 }
-main()
+main_bench_bench()
 {
 	int n,m;
 	scanf("%d %d",&m,&n);

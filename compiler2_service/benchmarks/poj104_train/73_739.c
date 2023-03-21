@@ -37,7 +37,7 @@ int judge(int a[5][5],int y,int i)
 	}
 	return 1;
 }
-int main()
+int main_bench()
 {
 	int a[5][5];
 	int x,y;

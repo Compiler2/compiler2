@@ -3,7 +3,7 @@
 void NX();
 int n;
 int sz[100],nx[100];
-int main(){
+int main_bench(){
     scanf("%d",&n);
     for(int i=0;i<n;i++){
         scanf("%d",&sz[i]);

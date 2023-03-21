@@ -7,7 +7,7 @@ int lp(int x,int y)
 		z=1;
 	return(z);
 }
-int main()
+int main_bench()
 {
 	unsigned int year,month,day;
 	unsigned int v=0,num=0;

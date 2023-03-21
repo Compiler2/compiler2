@@ -33,7 +33,7 @@ swap(char *p,int n)
 	 }
 		return 0;
 }
-int main()
+int main_bench()
 {
 	char *p,str[1000];
 	int len;

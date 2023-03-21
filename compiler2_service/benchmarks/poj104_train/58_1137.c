@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,j,count,check=1;
 	char word[81];
 	scanf("%d",&n);

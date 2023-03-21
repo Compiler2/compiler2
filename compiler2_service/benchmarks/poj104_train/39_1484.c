@@ -6,7 +6,7 @@ struct person{
 	char c1,c2;
 	int money;
 };
-int main(){
+int main_bench(){
 	struct person p[100];
 	int n,m,i,j,k;
 	long tot;

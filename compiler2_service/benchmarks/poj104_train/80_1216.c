@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int sY,sM,sD,eY,eM,eD;
 	int DiJiTian(int y,int m,int d);

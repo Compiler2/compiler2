@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int w,a;
 	scanf("%d",&w);
     a=(13-1)%7+w;

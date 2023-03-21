@@ -1,7 +1,7 @@
 #include <header.h>
 
 int s[10000][10000];
-int main()
+int main_bench()
 {
 	int n,i,j,a1,b1,a2,b2,sum,flag;
 	scanf("%d",&n);

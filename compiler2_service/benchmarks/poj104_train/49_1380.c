@@ -13,7 +13,7 @@ int judge(char a[],int i,int k)
     else return 0;
 }
 
-int main()
+int main_bench()
 {
     char a[510];
     memset(a,0,sizeof(char)*510);

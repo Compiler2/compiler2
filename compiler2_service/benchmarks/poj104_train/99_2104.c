@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,a=0,b=0,c=0,d=0,sum=0,y;
 	double q=0,w=0,e=0,r=0;

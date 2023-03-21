@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
    int i,num;
    double sz[10],sz1[10],sz2[10],sum, result,GPA;

@@ -3,7 +3,7 @@
 
 int mon[14]={31,28,31,30,31,30,31,31,30,31,30,31};
 
-int main()
+int main_bench()
 {
     int we1,i;
 

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int u[1000][1000];
-int main()
+int main_bench()
 {
     int row,col,i,j,sum,k,m;
     scanf("%d%d",&row,&col);

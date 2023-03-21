@@ -4,7 +4,7 @@ int cmp(const void*e1,const void *e2)
 {
 	return *((int*)e2)-*((int*)e1);
 }
-int main()
+int main_bench()
 {
 	int n,a[1000],b[1000],i,j,k,s,t,result;
 	while(scanf("%d",&n) && n )

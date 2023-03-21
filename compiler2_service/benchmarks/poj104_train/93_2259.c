@@ -4,7 +4,7 @@
 void print(int, int);
 int flag;
 
-int main()
+int main_bench()
 {
     int a3 = 0, a5 = 0, a7 = 0;
     int n;

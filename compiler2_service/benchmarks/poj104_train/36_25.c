@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int count11[26]={0},count12[26]={0},count21[26]={0},count22[26]={0},length1,length2,i,j,k=0,p=0,m=0,n=0;
 	char string1[100],string2[100];

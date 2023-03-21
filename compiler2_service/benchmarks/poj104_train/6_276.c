@@ -23,7 +23,7 @@ int bianyuan(int n,int m){
 	}
 	return result;
 }
-int main()
+int main_bench()
 {
 	int n,i;
 	int a,lie,hang;

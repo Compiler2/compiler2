@@ -5,7 +5,7 @@ struct pa
 	char num[10];
 	int age;
 }p[105],t,a[105];
-int main()
+int main_bench()
 {
 	int i,k,n,c,d;
 	scanf("%d",&n);

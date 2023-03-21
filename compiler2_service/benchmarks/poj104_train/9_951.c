@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { struct peo
   { char num[10];
     int old;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,szz[11111],szy[11111];
 
 int x,e;

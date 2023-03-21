@@ -4,7 +4,7 @@
 char letters[100000];
 int check[100000]={0};
 
-int main()
+int main_bench()
 {
 	int t,i,j,k,length;
 	scanf("%d",&t);

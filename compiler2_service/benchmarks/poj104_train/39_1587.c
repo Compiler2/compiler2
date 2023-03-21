@@ -11,7 +11,7 @@ struct student
 	int paper;
 }stu[101];
 
-int main()
+int main_bench()
 {
 	int n,i,sum=0,max=0;
 	int sz[101]={0};

@@ -31,7 +31,7 @@ void fz()
 		scanf("%d",&b[i]);
 	px(b,m);
 }	
-int main()
+int main_bench()
 {
 	fz();
 	return 0;

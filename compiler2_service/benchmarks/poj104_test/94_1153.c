@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int number[500],odd[500],n,i,j,t;
   scanf("%d",&n);

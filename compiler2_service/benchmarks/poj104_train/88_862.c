@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 char *a;
 a=(char*)malloc(10000*sizeof(char));

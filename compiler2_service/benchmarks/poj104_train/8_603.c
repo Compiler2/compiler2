@@ -44,7 +44,7 @@ void print()
 	for(i=0;i<n_a+n_b;i++)
 		printf("%d%c",array_a[i],(i==n_a+n_b-1)?'\n':' ');
 }
-int main()
+int main_bench()
 {
 	input();
 	order();

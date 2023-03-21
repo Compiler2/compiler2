@@ -3,7 +3,7 @@
 void read(int n1,int n2,int s1[],int s2[]);
 void bubble_sort(int s[],int n);
 void write(int n1,int n2,int s1[],int s2[]);
-int main()
+int main_bench()
 {
     int n1,n2,s1[101],s2[101];
     scanf("%d%d",&n1,&n2);

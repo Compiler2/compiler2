@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     struct qj {
         int a,b;
     } qj[50000],e;

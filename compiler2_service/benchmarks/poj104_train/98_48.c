@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i, k=0, a, n;
 	char word[500][40]={0};

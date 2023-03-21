@@ -3,7 +3,7 @@
 struct qj{
 	int a,b;
 }q[50001];
-int main() 
+int main_bench() 
 { int n,i,j,m,z;
   scanf("%d",&n);
   for(i=0;i<n;i++){

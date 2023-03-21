@@ -9,7 +9,7 @@ struct inform
 	char w;
 	int a;
 }stu[100],temp1;
-void main()
+int main_bench()
 {
 	int n,i,j,temp2;
     int sum[100]={0},sum1=0;

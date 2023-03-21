@@ -12,7 +12,7 @@ void find(int m,int j,int *p)
                   if(m%j==0) find(m/j,j,p);
     }
 }
-int main()
+int main_bench()
 {
     int n,m,i,j;
     scanf("%d",&n);

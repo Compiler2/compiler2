@@ -9,7 +9,7 @@ char home;
 int paper,sum;
 }student[100];
 
-void main()
+int main_bench()
 {
 int n,i;
 scanf("%d\n",&n);

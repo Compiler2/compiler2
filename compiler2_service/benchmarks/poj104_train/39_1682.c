@@ -12,7 +12,7 @@ struct student
 	int np;
 }
 stu[100];
-void main()
+int main_bench()
 {
 	int m,k,i,max;
 	int total=0;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int know[10000],bknown[10000];
-int main()
+int main_bench()
 {
     int n,i,a,b;
 

@@ -3,7 +3,7 @@
 
 char *s;
 
-int main()
+int main_bench()
 {
 	s = (char*)malloc(100000*sizeof(char));
 	long count[26],p[26];

@@ -10,7 +10,7 @@ struct student{
 	int sum;
 };
 
-void main()
+int main_bench()
 {
      int n,i,j,whole=0;
 	 struct student stu[100];

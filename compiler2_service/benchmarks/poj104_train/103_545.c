@@ -9,7 +9,7 @@ void count(char *string)
         printf("(%c,%d)",*(string+j),i-j);
         j=i;}
 }
-int main()
+int main_bench()
 {
     char string[1001];
     gets(string);

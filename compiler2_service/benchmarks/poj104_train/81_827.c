@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fanwei(int x,int y);
-int main(){
+int main_bench(){
 	int i,j,sz[5][5],m,n,zhongjian[1][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){

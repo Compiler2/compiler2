@@ -1,7 +1,7 @@
 #include <header.h>
 
 int calday(int year,int month,int day);
-int main()
+int main_bench()
 
 {
 	int syear,smonth,sday,eyear,emonth,eday,tday1,tday2;

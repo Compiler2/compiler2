@@ -4,7 +4,7 @@ int cmp(const void *a,const void *b)
 {
 	return(*(char*)a-*(char*)b);
 }
-void main()
+int main_bench()
 {
 	char s1[1000],s2[1000];
 	scanf("%s%s",s1,s2);

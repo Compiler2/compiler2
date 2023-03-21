@@ -5,7 +5,7 @@ char *p,a[300]={"\0"},
 b[50]={"\0"},d[300][50]={"\0"};
 
 			
-	void main()
+	int main_bench()
 {
 
 scanf("%s %s",b,a);

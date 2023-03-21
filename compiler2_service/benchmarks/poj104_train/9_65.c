@@ -7,7 +7,7 @@ struct patient
 	int age;
 };
 
-int main()
+int main_bench()
 {
 	int n,m;
 	int i,j=0,k=0;

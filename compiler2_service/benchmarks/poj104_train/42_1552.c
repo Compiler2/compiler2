@@ -1,7 +1,7 @@
 #include <header.h>
 
 void swap(int*,int*);
-int main()
+int main_bench()
 {
 	int n,k,i,j,js=0;
 	int a[100000];

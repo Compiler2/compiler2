@@ -10,7 +10,7 @@ int divide(int a,int b)
     }
     return r;
 }
-int main()
+int main_bench()
 {
     int s,p,n,j;
     scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void swap(char str[]);
 	char a[100],b[100];

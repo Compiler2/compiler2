@@ -5,7 +5,7 @@ int max(int a,int b)
 	return(a>b?a:b);
 }
 
-void main()
+int main_bench()
 {
 	char a[251],b[251],c[251];
 	int i,j,la=0,lb=0,m;

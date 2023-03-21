@@ -7,7 +7,7 @@ struct stu{
 	int m[100000];
 };
 
-int main()
+int main_bench()
 {
 	int n,i,temp=0,sum[100000];
 	struct stu p;

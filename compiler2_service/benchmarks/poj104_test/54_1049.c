@@ -27,7 +27,7 @@ int total(int n,int k)
          }
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	int k;

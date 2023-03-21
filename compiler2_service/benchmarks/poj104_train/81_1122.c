@@ -31,7 +31,7 @@ int change(int a[5][5],int m,int n)
 			}
 		}return 1;
 }
-int main()
+int main_bench()
 {
 	int a[5][5],m,n,i,j,count=0;
 	for(i=0;i<5;i++)

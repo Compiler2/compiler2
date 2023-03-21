@@ -1,7 +1,7 @@
 #include <header.h>
 
 int y(int n,int m){if(n>=0&&n<=4&&m>=0&&m<=4){return 1;}else{return 0;}}
-int main(){
+int main_bench(){
  int a[5][5], i,j,t,m,n;
  for(i=0;i<5;i++){for(j=0;j<5;j++){scanf("%d",&a[i][j]);}}
  scanf("%d%d",&n,&m);

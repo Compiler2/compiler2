@@ -6,7 +6,7 @@ struct student
 	int score,c,e,scholar;
 };
 struct student stu[100],temp;
-void main()
+int main_bench()
 {
 	int n,i,j,k=0;
 	scanf("%d",&n);

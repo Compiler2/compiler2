@@ -1,7 +1,7 @@
 #include <header.h>
 
 int f(int,int);
-void main()
+int main_bench()
 {
 	int a[5][5],i,m,n;
 	int *p=*a,*q=*(a+4)+4;

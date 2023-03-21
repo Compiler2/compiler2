@@ -2,7 +2,7 @@
 
 
 float GPA(int x);
-int main()
+int main_bench()
 {
 	int i, n, cj[50], jd[50], jdsum=0;
 	float sum = 0;

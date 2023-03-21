@@ -64,7 +64,7 @@ void p4(int out[200],int n)
 		printf(" %d",out[i]);
 	}
 }
-int main()
+int main_bench()
 {
 	p1();
 	p2(num1,num2,n1,n2);

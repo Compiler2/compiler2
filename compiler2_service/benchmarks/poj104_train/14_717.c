@@ -9,7 +9,7 @@ struct stu
 struct stu a[100000];
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,x,y,z,t,q,w,e;
 	int b[100000];

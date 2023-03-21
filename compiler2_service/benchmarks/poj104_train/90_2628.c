@@ -17,7 +17,7 @@ int means(int m,int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int t,m,n;
 	scanf("%d",&t);

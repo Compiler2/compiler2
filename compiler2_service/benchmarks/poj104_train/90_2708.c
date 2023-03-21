@@ -11,7 +11,7 @@ int fangpingguo(int m,int n)
 	     sum=fangpingguo(m,n-1)+fangpingguo(m-n,n);
     return sum;
 }
-int main()
+int main_bench()
 {
 	int t;
 	scanf("%d",&t);

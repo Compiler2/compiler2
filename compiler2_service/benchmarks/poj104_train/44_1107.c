@@ -23,7 +23,7 @@ int reverse(int num)
     return d;
 }
 
-int main()
+int main_bench()
 {
     int i,a;
     for(i=1;i<=6;i++)

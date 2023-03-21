@@ -5,7 +5,7 @@ struct people
     char a[7];
     float l;
 };
-int main()
+int main_bench()
 {
     int n,i,j;
     struct people* p;

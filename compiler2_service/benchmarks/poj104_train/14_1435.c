@@ -14,7 +14,7 @@ int min(int a,int b)
 {
 	return (a<b)?a:b;
 }
-int main()
+int main_bench()
 {
 	int max(int a,int b);
 	int total[100000];

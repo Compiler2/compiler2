@@ -3,7 +3,7 @@
 
 int ans[10000], a[100];
 
-int main()
+int main_bench()
 {
 	int l, r, i, s, anses=0, bo, t;
 	scanf("%d%d", &l, &r);

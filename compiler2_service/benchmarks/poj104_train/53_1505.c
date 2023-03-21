@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void)
+int main_bench()
 {
 	int n,MEDIA=0;scanf("%d",&n);
 	int NUMO[n];int k=0;

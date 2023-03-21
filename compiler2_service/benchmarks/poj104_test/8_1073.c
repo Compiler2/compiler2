@@ -49,7 +49,7 @@ void passed4()
 	printf("%d",c[0]);
 	for(i=1;i<n+m;i++) printf(" %d",c[i]);
 }
-int main()
+int main_bench()
 {
 	passed1();
 	passed2();

@@ -65,7 +65,7 @@ void output()
 	printf("%d",e[c+d-1]);
 
 }
-void main()
+int main_bench()
 {
 	 input();
 	 change();

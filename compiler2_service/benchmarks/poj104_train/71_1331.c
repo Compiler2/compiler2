@@ -25,7 +25,7 @@ int lon(int y,int m1,int m2)
 	}
 	return res;
 }
-int main()
+int main_bench()
 {
 	int n,y,m1,m2,i;
 	scanf("%d",&n);

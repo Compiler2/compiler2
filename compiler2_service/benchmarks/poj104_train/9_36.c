@@ -23,7 +23,7 @@ void sort(MAN* array, int nSize)
 	  }
   }
 }
-int main()
+int main_bench()
 {
    int i, n;
    MAN * array = 0;

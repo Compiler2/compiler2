@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int n,m,t,i,j,s;
 	int exist(int n,int m);

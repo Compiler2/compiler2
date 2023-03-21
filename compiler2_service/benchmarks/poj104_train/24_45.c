@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char word[50][30];
 	int length[50],i,j,wordnum,p,maxlength,minlength,max,min;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,k,len,sum[500]={0},p,max=0;
 	char temp[5],a[500];

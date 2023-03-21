@@ -1,7 +1,7 @@
 #include <header.h>
 
 int r[13],p[13];
-int main()
+int main_bench()
 {
 	int a,b,c,d,e,f,g=0,i;
 	r[1]=31;r[2]=29;r[3]=31;r[4]=30;r[5]=31;r[6]=30;r[7]=31;r[8]=31;r[9]=30;r[10]=31;r[11]=30;r[12]=31;

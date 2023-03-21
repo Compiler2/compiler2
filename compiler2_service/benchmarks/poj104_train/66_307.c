@@ -23,7 +23,7 @@ void g(int a)
 	if(a==5)printf("Fri.\n");
 	if(a==6)printf("Sat.\n");
 }
-void main()
+int main_bench()
 {
 	int i,t;scanf("%d%d%d",&y,&m,&d);sum=0;t=y%400;
 	for(i=1;i<t;i++)sum+=1+judy(i);if(t==0)sum=-2;

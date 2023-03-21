@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int day[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int w,i;

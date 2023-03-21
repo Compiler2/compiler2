@@ -40,7 +40,7 @@ void convert(char *s, int a, int b) {
 		printf("%c", output[i]);
 	printf("\n");
 }
-int main() {
+int main_bench() {
 	int a, b;
 	char s[1001] = {0};
 	scanf("%d%s%d", &a, s, &b);

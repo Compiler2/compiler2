@@ -1,7 +1,7 @@
 #include <header.h>
 
 int ss[10000],sz[10000],xiaoshi[10000];
-int main(){
+int main_bench(){
 int i,n,hour=0;
 scanf("%d",&n);
 for(i=0;i<n;i++){

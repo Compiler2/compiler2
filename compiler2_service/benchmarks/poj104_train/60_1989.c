@@ -2,7 +2,7 @@
 
 
 
-main()
+main_bench_bench()
 {
  int i, j, k, n, s, flag=9;
  scanf("%d", &n);

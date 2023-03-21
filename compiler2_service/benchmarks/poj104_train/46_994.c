@@ -27,7 +27,7 @@ void circle(int list[][100], int row_min, int row_max, int col_min, int col_max)
   }
 }
 
-int main() 
+int main_bench() 
 {
   int array[100][100];
   int i,j;

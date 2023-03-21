@@ -6,7 +6,7 @@ struct bo{
 	char au[100];
 };
 
-int main(){
+int main_bench(){
 	int n,i,j,max;
 	char maxa;
 	struct bo *book;

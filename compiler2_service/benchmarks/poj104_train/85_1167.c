@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n=0,k;
 	char suoyou[1000][21];
 	scanf("%d\n",&n);

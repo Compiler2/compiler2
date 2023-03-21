@@ -14,7 +14,7 @@ int prime(int k){
 	return indct;
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

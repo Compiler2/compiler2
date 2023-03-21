@@ -6,7 +6,7 @@ static int isleapyear(int year)
   return (year % 4 == 0 && year % 100 !=0 ) || year % 400 == 0; 
 } 
 
-int main() 
+int main_bench() 
 { 
 
   unsigned long int year, month, day,b,c,d,e;

@@ -31,7 +31,7 @@ void bo(char c[100])
 	else
 	puts(c);
 }
-main()
+main_bench_bench()
 {
 	char c[100],d[100][100];
 	int i,j,m,l;

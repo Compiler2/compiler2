@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int *ptr1,*ptr2,i,n,number,a[1000];
 	scanf("%d%d",&number,&n);

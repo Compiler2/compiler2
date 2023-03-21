@@ -10,7 +10,7 @@ struct stu
 	int lw;
 	int mon;
 };
-int main()
+int main_bench()
 {
 	int n;
 	int i;

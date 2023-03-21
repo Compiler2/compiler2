@@ -11,7 +11,7 @@ char conv(int a)
 if (a<10) return a+'0';
 else return a-10+'A';
 }
-main()
+main_bench_bench()
 {
 long a,b,n,i,j,k,ans;      
 char c[100];

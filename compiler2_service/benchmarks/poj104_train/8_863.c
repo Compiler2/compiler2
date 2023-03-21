@@ -31,7 +31,7 @@ void merge(int *pn, int n, int *pm, int m)
 		printf(" %d", pm[i]);
 	}
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m, n, i, *pm, *pn;
 	scanf("%d%d",&m, &n);

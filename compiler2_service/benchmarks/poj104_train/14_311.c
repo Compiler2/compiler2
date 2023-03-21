@@ -4,7 +4,7 @@ int cmp(const void *a,const void *b)
     {
          return(*(int*)a-*(int*)b);
     }
-int main()
+int main_bench()
 {
     struct student
     {

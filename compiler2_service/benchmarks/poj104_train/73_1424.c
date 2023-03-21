@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     double a[7][7],max,c[7];
     int x=0,y=0,d=0;
     for(int i=0;i<7;i++){

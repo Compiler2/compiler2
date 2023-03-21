@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 { char jianji[1000][399];
  int n,i,j;
  char jianji1[1000][399];

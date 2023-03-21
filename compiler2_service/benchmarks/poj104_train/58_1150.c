@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     long i,j,l,n,ok;
     long legal[300]={0};

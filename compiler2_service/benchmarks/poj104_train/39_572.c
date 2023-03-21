@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int a[100]={0},i,j,n,sum=0,p;
 	struct student

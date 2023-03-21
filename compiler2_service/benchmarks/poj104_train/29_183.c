@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
         int sz1[300],sz2[300],m,n[300],i,j;
 		double sum=0.0,fenshu[300];

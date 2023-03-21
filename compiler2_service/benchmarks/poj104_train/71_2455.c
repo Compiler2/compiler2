@@ -2,7 +2,7 @@
 
 int max(int b,int c);
 int min(int b,int c);
-int main(void)
+int main_bench()
 {
 	int i,j,k;
 	int n,m;

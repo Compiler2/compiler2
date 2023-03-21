@@ -2,7 +2,7 @@
 
 int hui(int p,int a);
 int su(int q);
-void main()
+int main_bench()
 {
 	int m,n,i,flag=0,blag=0,k=0,array[1000];
 	for(i=0;i<1000;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int runnian(int x);
-int main (){
+int main_bench(){
 	int n,b,c;
 	int a[13]={1,31,1,31,30,31,30,31,31,30,31,30,31};
 	scanf("%d %d %d",&n,&b,&c);

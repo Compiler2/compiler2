@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  char zm[301]={0},ss[27]="abcdefghijklmnopqrstuvwxyz";
    scanf("%s",zm);
    

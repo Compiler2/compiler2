@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,n,year,runfou,er,mon1,mon2,k,j,day;
 	scanf("%d", &n);

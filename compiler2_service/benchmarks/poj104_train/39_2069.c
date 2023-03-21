@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,total=0,max=0,maxi=0;
 	struct list{

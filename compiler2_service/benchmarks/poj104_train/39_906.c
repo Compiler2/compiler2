@@ -7,7 +7,7 @@ struct ren
 		int a2;int n;int c;
 }a[102];
 
-void main()
+int main_bench()
 {
 	int N,i,max=0;
 	long int z=0;

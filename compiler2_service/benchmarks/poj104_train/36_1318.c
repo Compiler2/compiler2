@@ -3,7 +3,7 @@
 
 
 int compare(const void*a,const void*b);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,j,tmp,len1,len2;
 	char a[1000],b[1000];

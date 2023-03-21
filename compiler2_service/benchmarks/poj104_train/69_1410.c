@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char s1[256],s2[256];
 	scanf("%s %s",&s1,&s2);

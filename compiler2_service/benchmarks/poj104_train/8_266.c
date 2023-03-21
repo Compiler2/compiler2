@@ -31,7 +31,7 @@ void print()
 		printf(" %d",M[i]);
 	printf("\n");
 }
-void main()
+int main_bench()
 {
 	scan();
 	sort(n,N);

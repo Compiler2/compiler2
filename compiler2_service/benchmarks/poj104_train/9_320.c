@@ -6,7 +6,7 @@ struct point{
 		int age;
 	}old[100],small[100];
 
-int main(){
+int main_bench(){
 	int n,i,j,o=0,s=0,t,m;
 
 	scanf("%d",&n);

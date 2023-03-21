@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i=1,sum1=0,sum2=0,sum;
 	scanf("%d",&n);

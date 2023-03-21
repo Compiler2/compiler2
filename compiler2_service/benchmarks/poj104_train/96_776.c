@@ -3,7 +3,7 @@
 
 int num(char x);
 
-int main()
+int main_bench()
 {
 	char z[105];
 	scanf("%s",z);

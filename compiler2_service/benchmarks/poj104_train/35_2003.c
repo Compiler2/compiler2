@@ -27,7 +27,7 @@ void find(int x[100][100],int m,int n)
 		if(all==0)
 			printf("No");
 }
-void main( )
+void main_bench( )
 {    
    int as[100][100],i,j,a,b;
    char c;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() {
+int main_bench() {
 	char a[51],b[51], c[51];
 	memset(a, 0, sizeof(a));
 	memset(b, 0, sizeof(b));

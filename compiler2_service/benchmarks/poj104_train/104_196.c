@@ -9,7 +9,7 @@ int f(int i)
 		c=f(i-1)*2;
 	return(c);
 }
-main()
+main_bench_bench()
 {
 	int m;
 	int n;

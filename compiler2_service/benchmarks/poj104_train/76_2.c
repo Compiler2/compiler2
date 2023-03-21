@@ -5,7 +5,7 @@ struct array
 	int s;
 	int e;
 }array[50000];
-int main()
+int main_bench()
 {
 	int n,i,j,t,end;
 	scanf("%d",&n);

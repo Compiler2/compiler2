@@ -15,7 +15,7 @@ int compare(const void *a,const void *b)
 {
 	return ((struct Interval *)a)->sta-((struct Interval*)b)->sta;
 }
-main()
+main_bench_bench()
 {
 	struct Interval a[50000];
 	int i,j=0,n,end=0,max=0;

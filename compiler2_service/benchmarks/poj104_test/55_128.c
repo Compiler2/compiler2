@@ -4,7 +4,7 @@ char uup(char c)
 {
   if (c>=97) c-=32; return(c);
 }
-int main()
+int main_bench()
 {
   char arr[40]={0},brr[40]={0};
   int n,m,i,j,k;

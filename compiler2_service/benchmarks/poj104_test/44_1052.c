@@ -13,7 +13,7 @@ num=(num-x)/10;
 }
 return y;
 }
-int main()
+int main_bench()
 {
 int z,i;
 for(i=1;i<=6;i++)

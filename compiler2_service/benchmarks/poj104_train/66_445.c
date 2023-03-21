@@ -3,7 +3,7 @@
 
 
 int isRunNian(int year);
-void main(){
+int main_bench(){
  
 
   int iday,imonth,iyear;

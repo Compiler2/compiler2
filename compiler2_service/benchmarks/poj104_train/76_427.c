@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int N,i,j,head,tail,flag,maxr;
 	int a,b;

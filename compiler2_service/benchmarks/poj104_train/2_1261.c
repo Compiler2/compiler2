@@ -11,7 +11,7 @@ struct book
 void find ( int ii );
 
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() {
+int main_bench() {
     int n,i;
     scanf("%d",&n);
     char jjl[n][260],hbl[n][260];

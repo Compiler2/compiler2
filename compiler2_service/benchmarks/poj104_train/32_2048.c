@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,leng_a,leng_b,tag=0,a[128],b[128];
 	char s1[128],s2[128];

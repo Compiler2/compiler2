@@ -8,7 +8,7 @@ struct student
 	int sum;
 };
 struct student stu[100000];
-int main()
+int main_bench()
 {
 	
 	int n,i,p,q,r,max;

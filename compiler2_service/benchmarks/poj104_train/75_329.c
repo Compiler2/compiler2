@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int n=0,s1[1001],s2[1001],i=1,j,k=0,f[1006]={0};char c;
 while(1){scanf("%d",&s1[i]);i++;if((c=getchar())=='\n')break;}n=i-1;i=0;
 while(1){i++;if(i>n)break;scanf("%d",&s2[i]);c=getchar();}

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char a[32]={0},b[32]={0};
 	long int n=0;

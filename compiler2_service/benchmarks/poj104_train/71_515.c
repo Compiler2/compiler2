@@ -5,7 +5,7 @@ struct date {
    int m1;
    int m2;
 };struct date date[200];
-int main() 
+int main_bench() 
 { 
     int f(int p,int m,int n),i,p=0;
     

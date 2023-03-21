@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,z=0,p[100],b[100],l[100],sum[100];
 	char g[100],x[100];

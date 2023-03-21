@@ -8,7 +8,7 @@ int outcome(int n)
 	else t=3*n+1;
 	return (t);
 }
-void main()
+int main_bench()
 {
 	int n,t,i;
 	scanf("%d",&n);

@@ -16,7 +16,7 @@ int whether(int n,int k,int m[],int q)
 	if(i==n)
 		return 1;
 }
-void main()
+int main_bench()
 {
 	int q=0,m[300]={0},k=0,n=0;
 	scanf("%d%d",&n,&k);

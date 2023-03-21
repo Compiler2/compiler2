@@ -1,7 +1,7 @@
 #include <header.h>
 
 double sum(int n);
-int main(){
+int main_bench(){
   int m,i;
   int sz[100];
   double result=0;

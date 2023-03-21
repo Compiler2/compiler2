@@ -3,7 +3,7 @@
 int dat[102][102];
 _Bool use[102][102];
 int dir[4][2]={{0,1},{1,0},{0,-1},{-1,0}};
-int main()
+int main_bench()
 {
     int n,m;
     int l1,l2,i,j,d;

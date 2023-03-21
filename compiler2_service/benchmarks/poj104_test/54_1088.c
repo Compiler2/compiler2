@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,k,sum;
 	int getsum(int n1,int k1);

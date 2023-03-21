@@ -3,7 +3,7 @@
 int n,len,tot;
 char a[1000][50];
 void fill(int p);
-int main()
+int main_bench()
 {
 	int i,j;
 	scanf("%d",&n);

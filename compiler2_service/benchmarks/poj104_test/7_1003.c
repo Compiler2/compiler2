@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
       char str[257],sub[257],rep[257];
       int k,count=0,i,j=0;

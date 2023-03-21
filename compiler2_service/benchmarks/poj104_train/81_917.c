@@ -7,7 +7,7 @@ int kuso(int n,int m)
 	else 
 		return(0);
 }
-void main()
+int main_bench()
 {
 	int a[5][5],n,m,i,j,p,b[5];
 	int kuso(int n,int m);

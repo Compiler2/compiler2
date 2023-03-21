@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,a,b,i;
 	int nz[30],ny[30];
 	double old,news;

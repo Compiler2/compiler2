@@ -16,7 +16,7 @@ void bubble_sort(int a[],int n)
 }
 
 
-int main()
+int main_bench()
 {
 	int n;
 	int shousuo,shuzhang;

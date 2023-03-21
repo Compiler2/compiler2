@@ -77,7 +77,7 @@ void print(head)
 	
 
 
-void main()
+int main_bench()
 {
 	int n;
 	struct shu *head;

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char str[101],*p=str,*ps=str;
 	gets(str);

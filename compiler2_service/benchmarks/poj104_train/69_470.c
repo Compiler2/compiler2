@@ -22,7 +22,7 @@ int max(int x,int y)
     if(x>y)return x;
     else return y;
 }
-int main()
+int main_bench()
 {
     char a[251],b[251],c[251];
     scanf("%s",a);

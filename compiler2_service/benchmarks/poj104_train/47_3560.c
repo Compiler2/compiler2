@@ -2,7 +2,7 @@
 
 void Exchange(int A[],int n);
 
-int main(){
+int main_bench(){
     int n;
     scanf("%d",&n);
     int A[n];

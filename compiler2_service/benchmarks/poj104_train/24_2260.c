@@ -8,7 +8,7 @@ int min(int a,int b)
 {
     return (a<b?a:b);
 }
-int main()
+int main_bench()
 {
     int i=0,j,ex,lenth[200]={0},imin=100,imax=0,k=0;
     char s[200][50],c;

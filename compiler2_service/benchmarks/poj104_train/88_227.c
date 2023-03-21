@@ -5,7 +5,7 @@ int pd(char *m)
 	if(*m>='0'&&*m<='9') return(1);
 	else return (0);
 }
-void main()
+int main_bench()
 {
 	char *p,*a;
 	p=(char*)malloc(1000*sizeof(char));

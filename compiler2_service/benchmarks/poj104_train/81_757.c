@@ -9,7 +9,7 @@ int a(int x,int y)
 		return 1;
 	}
 }
-int main(){
+int main_bench(){
 	int sz[5][5];
 	int n,m;
 	for(int i=0;i<5;i++){

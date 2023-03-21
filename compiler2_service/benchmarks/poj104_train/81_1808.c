@@ -10,7 +10,7 @@ int juzhen(int hang)
 
 }
 
-int main()
+int main_bench()
 {
     int temp,a[5][5],i,j,n,m;
 

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	unsigned int y,m,d,r,f,h;
 	unsigned int b=0,i;

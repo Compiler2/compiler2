@@ -19,7 +19,7 @@ int change(int x,int y,int b[5][5])
 		return(z);
 	} 
 }
-void main()
+int main_bench()
 {
 	int a[5][5];
 	int i,j,m,n,d;

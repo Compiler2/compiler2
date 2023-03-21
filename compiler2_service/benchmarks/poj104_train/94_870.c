@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n,as[500],k[500];
 	scanf("%d",&n);
 	for(int i=0;i<n;i++)

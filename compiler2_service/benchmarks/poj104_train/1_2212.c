@@ -16,7 +16,7 @@ int fenjie(int x,int k)
 	}
 	return t;
 }
-int main()
+int main_bench()
 {
 	int j,p,n,a[101];
 	scanf("%d",&n);

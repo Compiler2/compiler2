@@ -5,7 +5,7 @@
 		int a;
 		struct num *next;
 	};
-void main()
+int main_bench()
 {
 	struct num *head,*p1,*p2;
 	int n,i,m;

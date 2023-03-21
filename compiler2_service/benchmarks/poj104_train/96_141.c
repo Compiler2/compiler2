@@ -5,7 +5,7 @@ char chufa2(char a,char b);
 char chufa3(char a,char b,char c);
 char chufa4(char a,char b,char c);
 
-main()
+main_bench_bench()
 {
     char a[100],d,e,f,g;
     scanf("%s",a);

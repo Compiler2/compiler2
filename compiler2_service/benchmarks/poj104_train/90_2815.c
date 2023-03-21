@@ -7,7 +7,7 @@ int way(int m,int n)
     else if(m==n) return(way(m,n-1)+1);
     else return(way(m,n-1)+way(m-n,n));
 }
-main()
+main_bench_bench()
 {
     int p;scanf("%d\n",&p);
     int i,j,m,n;

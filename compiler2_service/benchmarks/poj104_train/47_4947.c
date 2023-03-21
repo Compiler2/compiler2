@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	void change(int *a,int n);
 	int i,n,a[100],*p=a;

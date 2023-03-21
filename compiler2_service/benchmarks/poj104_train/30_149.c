@@ -3,7 +3,7 @@
 
 int ref(int num);
 
-int main()
+int main_bench()
 {
 	int n,i,sum=0;
 

@@ -60,7 +60,7 @@ int f(int n,int a,int b)
    }
    return(y);
 }
-int main()
+int main_bench()
 {
 	int n,m,a,b,y,i;
 	scanf("%d",&n);

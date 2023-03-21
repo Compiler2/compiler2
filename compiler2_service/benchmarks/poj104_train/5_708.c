@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int i,j=0,count1=0,count=0;
    char lian1[501],lian2[501];
    double bi,xiang;

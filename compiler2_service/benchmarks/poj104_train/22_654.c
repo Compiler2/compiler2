@@ -5,7 +5,7 @@ int comp(const void*a,const void*b)
 {
     return (int*)a-(int*)b;
 }
-int main(void)
+int main_bench()
 {
     int result[301],i=1,j;
     scanf("%d",&result[0]);

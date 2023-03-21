@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sub[257] = { 60, 50, 11};
 	char s1[257], s2[257];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int F_num[10000]; 
-int main()
+int main_bench()
 {
     int test_total,max = 0,test_site;
     int i,j,k;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   char x[1000];
   gets(x); 
   int indexOfShort = 0, indexOfLong= 0;

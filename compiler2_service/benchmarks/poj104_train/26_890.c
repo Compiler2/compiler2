@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int i,j;
 	char sr[101],sc[101];
 	gets(sr);

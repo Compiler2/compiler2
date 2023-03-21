@@ -8,7 +8,7 @@ change(int x,int y)
 	return(t);
 }
 
-void main()
+int main_bench()
 {
 	int a[5][5],b[5],i,j,m,n;
 	for(i=0;i<5;i++)

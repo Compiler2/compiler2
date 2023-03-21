@@ -1,7 +1,7 @@
 #include <header.h>
 
 int yue(int x);
-int main(){
+int main_bench(){
 	int w;
 	int i,k=13;
 	int m=1;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	char zfc[100][50],gaiguo[100][50];
 	int n,l[100];

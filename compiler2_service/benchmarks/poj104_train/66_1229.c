@@ -2,7 +2,7 @@
 
 
 int isrunyear(int year);
-int main(){
+int main_bench(){
 int year,month,day,i,total=0;
 scanf("%d%d%d",&year,&month,&day);
            if(month==1){

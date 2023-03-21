@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int same,i,j,k;
     char str[256],sub[256],repl[256];
    scanf("%s%s%s",str,sub,repl);

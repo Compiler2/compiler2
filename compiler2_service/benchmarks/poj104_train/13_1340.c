@@ -3,7 +3,7 @@
 
 
 
-int main(){ 
+int main_bench(){ 
     int n,q=1,k;
 	int sz[20000],jieguo[20000];
     scanf("%d",&n); 

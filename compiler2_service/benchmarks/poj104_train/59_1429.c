@@ -7,7 +7,7 @@ void cover(int x,int y){
      if(x<n&&map[x+1][y]==0)map[x+1][y]=2;
      if(y<n&&map[x][y+1]==0)map[x][y+1]=2;
  }
-int main(){
+int main_bench(){
    int m,i,j,s;
     scanf("%d",&n);
     char c;

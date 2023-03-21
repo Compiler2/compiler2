@@ -6,7 +6,7 @@ float absd(float a)
 		a=-a;
 	return(a);
 }
-void main()
+int main_bench()
 {   
 	float ave,num,s;
 	int m,j,k,i,a[300]={0};

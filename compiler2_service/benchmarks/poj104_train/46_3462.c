@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
     int row,col,r,c,a[100][100],s,n;
     scanf("%d%d",&row,&col);
     s=0;

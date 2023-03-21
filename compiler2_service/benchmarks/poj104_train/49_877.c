@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i,i1,d,sum=0;                 
     int pl[500]={0};

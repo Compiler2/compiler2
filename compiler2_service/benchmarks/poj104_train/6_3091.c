@@ -2,7 +2,7 @@
 
 
 
-main()
+main_bench_bench()
 {	
 	int*p,i,all,m,n,cycle,ii;
 	

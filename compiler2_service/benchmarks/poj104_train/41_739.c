@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int pai(int a[5]);
    int a[5],i,j,k,l,m,t;
    for(i=1;i<=5;i++)

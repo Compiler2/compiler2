@@ -8,7 +8,7 @@ struct student
  char west;
  int article;
 };
-void main()
+int main_bench()
 {
 	struct student stu[100];
 	int i,n,m,t,p;

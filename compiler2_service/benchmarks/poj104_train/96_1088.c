@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
       char bei[100]={'\0'},shang[100]={'\0'};
       int i,wei,a;

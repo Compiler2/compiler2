@@ -13,7 +13,7 @@ int search(char a[],char b[])
     }
     return 999; 
 }
-int main()
+int main_bench()
 {
     char s[300],a[300],b[300];
     int m,i;

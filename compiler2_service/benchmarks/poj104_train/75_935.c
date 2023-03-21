@@ -7,7 +7,7 @@ int convert(int a,int b,char str[])
 		m=m*10+(str[i]-'0');
 	return(m);
 }
-main()
+main_bench_bench()
 {
 	char str[5000];
 	int len,i,j,count=1,comma[2000],max;

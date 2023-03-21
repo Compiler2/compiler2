@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char num[6];
 	int i,n,nnum[6],p=0;

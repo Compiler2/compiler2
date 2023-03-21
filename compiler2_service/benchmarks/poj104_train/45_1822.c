@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char m[50]={'\n'},n[50]={'\n'};
 	int i=0,j=0,h=0,k=0;

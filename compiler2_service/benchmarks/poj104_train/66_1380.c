@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
  int nian,yue,ri,i,j=0;
  scanf("%d%d%d",&nian,&yue,&ri);
 nian=nian%2800;

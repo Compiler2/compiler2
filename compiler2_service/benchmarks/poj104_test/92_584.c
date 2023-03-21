@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   
 	int n,s,i,j,sub=0,sum=0;
 	int tfast,tslow,wfast,wslow;  

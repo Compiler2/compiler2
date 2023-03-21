@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,i,b[10];
 	double a[10],c[10],GPA,sum1=0,sum2=0;

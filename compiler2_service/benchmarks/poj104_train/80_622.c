@@ -15,7 +15,7 @@ int day(int year,int month,int day)
 	}
 	return k;
 }
-void main()
+int main_bench()
 {
 	int Y,M,D,y,m,d,a,b,c,x=0,j;
 	scanf("%d%d%d%d%d%d",&Y,&M,&D,&y,&m,&d);

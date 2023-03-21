@@ -10,7 +10,7 @@ struct student{
 }stu[100000];
 
 
-int main(){
+int main_bench(){
 	int n,i,j,a,b;
 	scanf("%d",&n);
 

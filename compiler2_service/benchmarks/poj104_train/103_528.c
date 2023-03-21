@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char zfc[1002]={0},t;
 	scanf("%s",zfc);

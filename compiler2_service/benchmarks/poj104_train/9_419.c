@@ -7,7 +7,7 @@ int age;
 }
 pa[100];
 struct P pb[100];
-int main(){
+int main_bench(){
 	int n,r=0,s=0,i,o,p,j,k;
 	scanf("%d",&n);
 	struct P temp;

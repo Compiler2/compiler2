@@ -14,7 +14,7 @@ void move(int a[101], int n, int m)
     move(a, n, m);
 }
 
-int main()
+int main_bench()
 {
     int a[101];
     int i, first=1;

@@ -12,7 +12,7 @@ int ishuiwen(char p[],int x)
 	return result;
 }
 
-int main()
+int main_bench()
 {
 	char a[505],b[505]={""};
 	int i,len,j,k;

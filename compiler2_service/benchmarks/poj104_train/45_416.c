@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char s[31],w[31];
 	char *pin,*ps,*pw;

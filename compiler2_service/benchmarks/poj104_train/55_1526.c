@@ -44,7 +44,7 @@ int cf(int a,int b)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int a,b;
 	int i,j;

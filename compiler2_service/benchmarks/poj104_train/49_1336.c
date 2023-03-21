@@ -25,7 +25,7 @@ int panduan(char *c,int l)
 	}
 	return(t);
 }
-int main()
+int main_bench()
 {
 	int n,*p,i,l,f,k;
 	char c[100];

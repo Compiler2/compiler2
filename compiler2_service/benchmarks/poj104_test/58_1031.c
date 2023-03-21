@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,l,count;
 	char sz[81];

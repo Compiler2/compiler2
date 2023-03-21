@@ -35,7 +35,7 @@ void process(char *p)
          
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   char a[500];
   scanf("%s",a);

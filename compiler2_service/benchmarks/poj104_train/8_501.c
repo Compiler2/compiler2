@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void qz(int s[],int m);
 	void px(int s[],int m);

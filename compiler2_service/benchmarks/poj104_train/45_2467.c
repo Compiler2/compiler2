@@ -13,7 +13,7 @@ m++;
 }
 return -1; 
 }
-int main()
+int main_bench()
 {
 	char s[50],w[50];
 	scanf("%s %s",s,w);

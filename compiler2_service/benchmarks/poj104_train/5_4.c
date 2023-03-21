@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	 char sz1[520]={'\0'},sz2[520]={'\0'};
 	double a,j;

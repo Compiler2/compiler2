@@ -21,7 +21,7 @@ if (i==26) printf("YES");
 	
 }
 
-void main()
+int main_bench()
 {
 	char str1[100],str2[100];
 	scanf("%s %s",str1,str2);

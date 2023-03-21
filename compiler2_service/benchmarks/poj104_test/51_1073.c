@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char a[502],p[502][7];int len,n,re[502],max=0;
     memset(re,0,sizeof(re));
     scanf("%d",&n);

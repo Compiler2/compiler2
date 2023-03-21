@@ -2,7 +2,7 @@
 
 int doublemonth(int n);
 int whichmonth(int n,int m);
-int main()
+int main_bench()
 {
     int m,n,p,q,day;
     char *weekday[]={"Sun.","Mon.","Tue.","Wen.","Thu.","Fri.","Sat."};

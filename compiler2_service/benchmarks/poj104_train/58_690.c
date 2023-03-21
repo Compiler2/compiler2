@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,j,i,flag[100];
 	char zf[100][100],shuzi[100];

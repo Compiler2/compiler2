@@ -19,7 +19,7 @@ int cha(int k,int t)
 		return(1);
 	}
 }
-void main()
+int main_bench()
 {    
 	int m,n,i,j;
 	for(i=0;i<5;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 int year,mouth,day,n;
 scanf("%d%d%d",&year,&mouth,&day);
 if(year%4==0){

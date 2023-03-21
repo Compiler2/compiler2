@@ -4,7 +4,7 @@ struct jisuan{
          int num;
 	char name[26];
 }book[1000];
-int main()
+int main_bench()
 {
 	int i,j,m,n,k,e;
 	int count[26]={0},author[26];

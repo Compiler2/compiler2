@@ -33,7 +33,7 @@ int s(int i)
 			return(0);
 	}
 }
-int main()
+int main_bench()
 {
 	int m,n,i,j=0,x,a[100000];
 	scanf("%d%d",&m,&n);

@@ -6,7 +6,7 @@ struct
 	int test,grade,paper,sum;
 	char monitor,west;
 }stu[100];
-int main()
+int main_bench()
 {
     int n,i,j,s=0,a,b=0;
 	scanf("%d",&n);

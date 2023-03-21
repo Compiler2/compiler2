@@ -2,7 +2,7 @@
 
 
 int count(int a,int b);
-int main(){
+int main_bench(){
 	int k,n;
 	scanf("%d %d",&n,&k);
 	printf("%d",count(n,k));

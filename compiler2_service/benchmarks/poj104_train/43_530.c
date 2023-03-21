@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[5000];
-int main()
+int main_bench()
 {
 	int sushu(int y);
 	int x,i;

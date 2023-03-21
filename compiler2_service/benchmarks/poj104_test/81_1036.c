@@ -5,7 +5,7 @@ int jud(int n,int m){
 		return 1;
 	else return 0;
 }
-int main(){
+int main_bench(){
 int a[5][5],i,j,n,m,*p[5],*q;
 for(i=0;i<5;i++){
 for(j=0;j<5;j++)

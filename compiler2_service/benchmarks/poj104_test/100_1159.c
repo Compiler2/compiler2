@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sequence[301];
 	scanf("%s",sequence);

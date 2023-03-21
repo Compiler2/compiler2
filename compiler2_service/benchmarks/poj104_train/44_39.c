@@ -59,7 +59,7 @@ int reverse(int num)
     }
 }
 
-int main()
+int main_bench()
 {
    int a,i;
    int shuru[6];

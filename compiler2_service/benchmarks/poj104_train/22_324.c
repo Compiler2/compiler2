@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {char a[100000];
 long int max,submax,l,t,k,j,i,b[10000];
 	gets(a);

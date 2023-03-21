@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char str1[100],str2[100];
 scanf("%s%s",str1,str2);
 int sum1[26],sum2[26],sum3[26],sum4[26];

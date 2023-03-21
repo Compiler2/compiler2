@@ -21,7 +21,7 @@ j=0;}
 return(sum);
 }
 
-void main()
+int main_bench()
 {int n,k,g;
 	scanf("%d %d",&n,&k);
 	g=c(n,k);

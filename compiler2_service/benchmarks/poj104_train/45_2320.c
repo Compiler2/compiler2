@@ -18,7 +18,7 @@ int Find(char *tgt, char *src)
     }
 }
 
-int main()
+int main_bench()
 {
     int i, len;
     char tgt[50], src[50];

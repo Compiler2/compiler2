@@ -19,7 +19,7 @@ int f(int a)
         return 1;
     }
 }
-main ()
+main_bench()
 {
     int a,b,c,i,j,k;
     int g[100];

@@ -34,7 +34,7 @@ int week(int y,int m,int d)
 	return sum;
 }
 
-void main()
+int main_bench()
 {
 	int year,month,day;
 	scanf("%d%d%d",&year,&month,&day);

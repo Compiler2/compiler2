@@ -3,7 +3,7 @@
 double a,b,c,d;
 double limit = 0.05;
 int n;
-int main()
+int main_bench()
 {
 	scanf("%d",&n);
 	scanf("%lf%lf",&a,&b);

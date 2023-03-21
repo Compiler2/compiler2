@@ -13,7 +13,7 @@ void shuchu(int a)
 
 }
 
-int main()
+int main_bench()
 {int i,j;
  scanf("%d %d",&h,&l);
 p=(int (*)[100])malloc(h*100*sizeof(int));

@@ -9,7 +9,7 @@ struct ace
 }o[3],r;
 
 
-void main()
+int main_bench()
 {
 	int n,i,s[3],m,j,v;
 	char z[10];

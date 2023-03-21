@@ -48,7 +48,7 @@ void F(int a[],int b[])
     for(m=0;m<k;m++)
          printf(" %d",b[m]);
 }
-int main()
+int main_bench()
 {
      int n,m;
      int a[5000],b[5000];

@@ -25,7 +25,7 @@ float GradePoint(int marks)
 		return 0;
 
 }
-void main()
+int main_bench()
 {
 	int n,i,count=0;
 	int *XueFen,*Marks;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int year1,year2,month1,month2,day1,day2,a,b,c,d,tempyear,tempmonth,tempday;
 	d = 0;

@@ -13,7 +13,7 @@
         }
         return d;
     }
-    int main()
+    int main_bench()
 {
     int i,j,a[1000],b[1000],c;
     for(i=0;i<6;i++)

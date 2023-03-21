@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,k,i,szone[999],sztwo[999],a;
 	scanf("%d %d",&n,&k);

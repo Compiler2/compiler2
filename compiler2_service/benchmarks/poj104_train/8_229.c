@@ -2,7 +2,7 @@
 
 int m,n;
 int a[100],b[100];
-void main()
+int main_bench()
 {
 	void f1();
 	void f2(int s[],int k);

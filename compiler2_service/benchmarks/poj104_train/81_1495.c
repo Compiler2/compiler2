@@ -5,7 +5,7 @@ int f(int m,int n)
 	if(m<=4&&n<=4) return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int x,y,i,j,a[5][5],c;
 	for(i=0;i<5;i++)

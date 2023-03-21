@@ -33,7 +33,7 @@ case 'z':a='Z';break;
 	}
 	return a;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char c[80],s[80],p[80],q[80];
 	gets(c);

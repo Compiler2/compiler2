@@ -23,7 +23,7 @@ double judge(int a)
 	else
 		return 0.0;
 }
-int main()
+int main_bench()
 {
 	int n,i,*pp[2],sumPOINT=0;
 	double sumGPA=0.0;

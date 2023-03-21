@@ -16,7 +16,7 @@ int f(int x)
     if(x==11) return (mo1+mo2+mo3+mo4+mo5+mo6+mo7+mo8+mo9+mo10);
     if(x==12) return  (mo1+mo2+mo3+mo4+mo5+mo6+mo7+mo8+mo9+mo10+mo11);
 }
-int main()
+int main_bench()
 {
     int n,m;
     scanf("%d",&n);

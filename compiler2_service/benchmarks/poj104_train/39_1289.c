@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n,i,sum=0,max=0;
     int stu[100],com[100],paper[100],money[100]={0};

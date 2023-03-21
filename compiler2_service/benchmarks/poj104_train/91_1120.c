@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sz[101]={0},*p,*p1,f[101]={0},*pf;
 	int m;

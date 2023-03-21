@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i,x[10000],y[10000],all=0;
 double GPA,a[10000],t=0;
 scanf("%d",&n);

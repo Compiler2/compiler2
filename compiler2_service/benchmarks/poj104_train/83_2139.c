@@ -3,7 +3,7 @@
  
  
 double JiDian(int cj);
-int main(){
+int main_bench(){
  int n;
  scanf("%d",&n);
  int cj[10];

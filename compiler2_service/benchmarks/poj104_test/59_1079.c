@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,m,sum=0,a;
     int num[10006][2];
     char room[106][106];

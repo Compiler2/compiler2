@@ -10,7 +10,7 @@ short IsAlpha(char ch)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	char input[500], word[50][20];
 	int max = 0, min = 0;

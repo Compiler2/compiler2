@@ -23,7 +23,7 @@ void cut(int A[],int N)
 	for(i=0;i<J;i++)
 		A[i]=b[i];
 }
-void main()
+int main_bench()
 {
     int i;
     int n;

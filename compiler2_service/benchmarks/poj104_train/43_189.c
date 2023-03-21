@@ -9,7 +9,7 @@ int isprime(int n)
 	return 1;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,j;
 

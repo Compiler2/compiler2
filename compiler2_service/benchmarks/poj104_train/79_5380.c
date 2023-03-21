@@ -22,7 +22,7 @@ int remain(int start[],int n,int m)
 	}
 	return(i+1);
 }
-int main()
+int main_bench()
 {
 	int k,n[100],m[100],i,j;
 	scanf("%d %d",&n[0],&m[0]);

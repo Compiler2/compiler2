@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char str[1000],substr[1000],replace[1000];
     char *p,*q,*r,*start;

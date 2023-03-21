@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main (){
+int main_bench(){
     int n, i, j, k, l, count;
     char a[100001];
     char* p;

@@ -15,7 +15,7 @@ return m;
 
  
 
-int main()
+int main_bench()
 {
    int a;
     for(int i=0;i<6;i++){

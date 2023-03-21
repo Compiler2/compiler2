@@ -6,7 +6,7 @@
 	int d;
 	char a[5];
 };
-int main()
+int main_bench()
 {
 	struct bac abb[260];
     struct bac temp; 

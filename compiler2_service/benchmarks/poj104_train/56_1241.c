@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main ()
+int main_bench()
 {    int n,a,b,c,d,e,f;
      scanf("%d",&n);
      if(n/10000!=0)

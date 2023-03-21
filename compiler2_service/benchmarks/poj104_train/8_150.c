@@ -1,6 +1,6 @@
 #include <header.h>
 
-main ()
+main_bench()
 {
     int m,n,a[1000],b[1000];
     void in(int xx[],int,int yy[],int);

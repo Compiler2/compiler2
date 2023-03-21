@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char origin[101];
 	gets(origin);
 	char result[100];

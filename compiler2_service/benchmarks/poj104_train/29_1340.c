@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int m,i,k,n;
 	scanf("%d",&m);
 	double *t=(double*)malloc(sizeof(double)*m);

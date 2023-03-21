@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[4]={20,40,10,50},i,j,t1,max;
 	

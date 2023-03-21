@@ -3,7 +3,7 @@
 char w[100];
 char m[200][200];           
 char a[200],b[200];
-int main()
+int main_bench()
 {
 	gets(w);
 	scanf("%s",a);

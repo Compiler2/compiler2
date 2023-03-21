@@ -10,7 +10,7 @@ struct student
 	int lun;
 };
 struct student stu[100];
-void main()
+int main_bench()
 {
 	int i,j,k,m,n,a[100],sum=0,t,add=0;
 	scanf("%d",&n);

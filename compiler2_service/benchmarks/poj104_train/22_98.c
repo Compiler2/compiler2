@@ -6,7 +6,7 @@ int cvt(char c[],int n)
 	for(i=0;i<n;i++)sum=sum*10+c[i]-'0';
 	return sum;
 }
-void main()
+int main_bench()
 {
 	char a[1500]="\0",c[4]="\0";
 	int i=0,n,j,k=0,b[300]={0},m1=0,m2=0;

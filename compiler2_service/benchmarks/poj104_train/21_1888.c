@@ -8,7 +8,7 @@ float jueduizhi(float x)
 	return(x);
 }
 
-void main()
+int main_bench()
 {
 	int x[300],n,i,geshu=1;
 	float ave,sum=0.0,d;

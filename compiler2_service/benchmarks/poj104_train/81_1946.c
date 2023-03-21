@@ -6,7 +6,7 @@ int panduan(int m,int n) {
 	}
 	return 0;
 }		
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a[5][5];
 	int m,n;	

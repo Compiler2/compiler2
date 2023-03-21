@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int week(int w,int n);
 	int w,i,r=0,unlucky[12];

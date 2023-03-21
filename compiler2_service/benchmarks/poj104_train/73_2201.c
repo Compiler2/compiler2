@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int number[5][5],i,p,judge[5][5],name,min,max;
 	for(i=0;i<5;i++){for(p=0;p<5;p++){scanf("%d",&number[i][p]);judge[i][p]=0;}}
 	for(i=0;i<5;i++){max=number[i][0];name=0;for(p=0;p<5;p++){if(number[i][p]>max){name=p;max=number[i][p];}}   judge[i][name]++;}

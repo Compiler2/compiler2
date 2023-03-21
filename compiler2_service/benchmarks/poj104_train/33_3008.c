@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char shuzu[300],*tmp,*tmpa,*tmpt,*tmpc,*tmpg;
 	int n,i,j,pp;

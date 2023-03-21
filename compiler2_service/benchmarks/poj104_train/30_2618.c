@@ -7,7 +7,7 @@ int wu(int n)
     else
         return 1;
 }
-int main()
+int main_bench()
 {
     int i,n,sum=0;
     scanf("%d",&n);

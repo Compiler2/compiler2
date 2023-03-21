@@ -3,7 +3,7 @@
 int sushu(int a);
 
 
-int main()
+int main_bench()
 {
 	int n,i,j=0,m=0;
 	int sz[10000];

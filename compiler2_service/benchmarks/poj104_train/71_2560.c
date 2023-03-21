@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,a[300];
 	int cra,crb,rnd,sdx,year,jy1,nl1,yue1,month2,l,k;

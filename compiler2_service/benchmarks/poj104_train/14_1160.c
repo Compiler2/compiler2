@@ -9,7 +9,7 @@ int math;
 int total;
 } stu[1000000];
 
-void main()
+int main_bench()
 {
 	int STUDENT_NUM,i,j,temp1,temp2;	
 	scanf("%d",&STUDENT_NUM);

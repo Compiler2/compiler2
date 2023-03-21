@@ -12,7 +12,7 @@ int f(int x){
     a=f(x/10)+a*c;
     return a;
 }
-int main(){
+int main_bench(){
     int n,i,sig,ans;
     for(i=0;i<6;i++){
         scanf("%d",&n);

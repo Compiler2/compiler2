@@ -19,7 +19,7 @@ int count(char *p,int *pn,int n)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	char z1[100],z2[100];
 	scanf("%s %s",z1,z2);

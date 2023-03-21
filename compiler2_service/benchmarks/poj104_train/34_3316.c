@@ -22,7 +22,7 @@ int one(int n)
 	}
 	return n;
 }
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

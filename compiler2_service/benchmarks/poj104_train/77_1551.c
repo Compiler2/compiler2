@@ -7,7 +7,7 @@ struct bg
 	int g;
 };
 
-int main()
+int main_bench()
 {
 	char peo[101]={0},e;
 	int i,j,k=0,l;

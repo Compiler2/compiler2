@@ -3,7 +3,7 @@
 
 
 
-int main() {
+int main_bench() {
 	char str[500]={'\0'},b[500]={'\0'};
 	char a[500]={'\0'};
 	int c,len,j,i,k,p;

@@ -10,7 +10,7 @@ int f(int x,int y)
     return -1;
 }
 
-int main()
+int main_bench()
 {
    int n;
    int i;

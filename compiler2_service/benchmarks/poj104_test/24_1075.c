@@ -16,7 +16,7 @@ void clear(int i)
 	}
 }
 
-int main()
+int main_bench()
 {  char a[1001];
    char str[51];
    

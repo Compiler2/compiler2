@@ -11,7 +11,7 @@ int max(int num[],int n)
 	}
 	return(result);
 }
-void main(void)
+void main_bench()
 {
 	int n,num[300],i,m1,m2;
 	char c;

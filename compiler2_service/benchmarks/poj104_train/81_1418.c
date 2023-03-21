@@ -3,7 +3,7 @@
 
 int change(int a[][5],int m,int n);
 
-void main()
+int main_bench()
 {
 	int a[5][5],m,n,i,j;
 	for(i=0;i<5;i++)

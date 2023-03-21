@@ -14,7 +14,7 @@ void f(int a[],int n,int m,int i)
 	a[i]=c;
 	return;
 }
-void main()
+int main_bench()
 {
 	int a[100],n,m,i;
 	scanf("%d%d",&n,&m);

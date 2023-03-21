@@ -45,7 +45,7 @@ int add_bigint(int*a,int alen,int*b,int blen,int*c)
 		return len;
 }
 
-int main(int argc, char*argv[])
+int main_bench()
 {
 	
     

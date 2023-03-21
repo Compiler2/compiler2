@@ -3,7 +3,7 @@
 int i,j,w;
 int n,m;
 int a[5][5];
-void main()
+int main_bench()
 {
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)

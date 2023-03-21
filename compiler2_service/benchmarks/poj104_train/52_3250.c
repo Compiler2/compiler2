@@ -10,7 +10,7 @@ void change(int n,int m,int *p)
 		*p=q;
 	}
 }
-void main()
+int main_bench()
 {
 	int n,m,*p,i,q=0;
 	scanf("%d%d",&n,&m);

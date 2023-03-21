@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int len=0,m=0,i=0;
 	char sentence[6000];

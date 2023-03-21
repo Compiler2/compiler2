@@ -2,7 +2,7 @@
 
 void adds(char *a, char *b);
 void addc(char *a, char c);
-int main()
+int main_bench()
 {
 	char s[256];
 	char subs[256];

@@ -2,7 +2,7 @@
 
 	
 
-int main()
+int main_bench()
 {
     int min,max,t,n,i,Y,a[12],y,j,s=0;
 	a[1]=a[3]=a[5]=a[7]=a[8]=a[10]=a[12]=31,a[4]=a[6]=a[9]=a[11]=30;

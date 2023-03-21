@@ -45,7 +45,7 @@ int HW(int n)
     else
     return 0;
 }
-main()
+main_bench_bench()
 {
       int m,n,i,j=0,k;
       scanf("%d %d",&m,&n);

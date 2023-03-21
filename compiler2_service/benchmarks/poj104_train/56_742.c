@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char * argv[]) 
+int main_bench() 
 { 
    int x,a,b,c,d,e,m=0;
    scanf("%d",&x);

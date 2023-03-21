@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sum;
 	int a1,b1,c1,d1,e1,f1;
 	int numa,numb,numc,numd,nume,numf;

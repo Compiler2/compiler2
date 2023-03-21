@@ -93,7 +93,7 @@ void chengfa(char a[],char b[])
 	return;
 }
 
-int main()
+int main_bench()
 {
 	char a[300],b[300];
 	scanf("%s",a);

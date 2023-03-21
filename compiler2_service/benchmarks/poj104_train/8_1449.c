@@ -46,7 +46,7 @@ void bing(int a[],int l1,int b[],int l2)
 	
 }
 
-int main()
+int main_bench()
 {
     sca();
 	bubble(x,m);

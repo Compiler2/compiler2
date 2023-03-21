@@ -24,7 +24,7 @@ void search(char t[])
      s[i].n=1;
      return;
 }
-int main()
+int main_bench()
 {
     int i,j,n,l;
     char S[600],t[10];

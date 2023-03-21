@@ -7,7 +7,7 @@ struct patient
 }pat[100];
 int arrange(struct patient peop[],int num);
 
-int main()
+int main_bench()
 {
     int i,j=0,k,n,max;
     struct patient *ppat[100];

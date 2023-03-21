@@ -3,7 +3,7 @@
 char sen[256];
 int len,i;
 int del();
-int main()
+int main_bench()
 {
 gets(sen);
 len=strlen(sen);

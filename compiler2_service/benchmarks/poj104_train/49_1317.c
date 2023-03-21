@@ -15,7 +15,7 @@ int ishuiwen(char c[510])
     return (f);
 }
 
-int main()
+int main_bench()
 {
     char c[510],jilu[510];
     int  i,j,k;

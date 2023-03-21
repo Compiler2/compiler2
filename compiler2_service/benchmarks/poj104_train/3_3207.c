@@ -3,7 +3,7 @@
 int t[2000];
 double s[1000],si;
 
-int main()
+int main_bench()
 {
  int i,j,n,m,s=0;
  scanf("%d%d",&m,&n);

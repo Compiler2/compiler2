@@ -13,7 +13,7 @@ int exchange(int a[5][5],int n,int m){
  return 1;
 }
 
-int main(){
+int main_bench(){
 int a[5][5],n,m;
 for(n=0;n<5;n++)
  for(m=0;m<5;m++)

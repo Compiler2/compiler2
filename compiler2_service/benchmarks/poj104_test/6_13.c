@@ -2,7 +2,7 @@
 
 
 int calcSum(int *matrix, int row, int col);
-int main()
+int main_bench()
 {
 	int k;
 	scanf("%d", &k);

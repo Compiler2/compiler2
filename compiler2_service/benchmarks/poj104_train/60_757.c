@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int i,j,n,a,sh[100000];
 scanf("%d",&n);
 if(n<5){

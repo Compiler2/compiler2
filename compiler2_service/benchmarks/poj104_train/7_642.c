@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
    int i,n,k,m,j,tag=1,jieshu=1;
    char zfc[257],dth[257],bth[257],danci[257];

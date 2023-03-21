@@ -1,7 +1,7 @@
 #include <header.h>
 
 	
-void main()
+int main_bench()
 {
 	int i=0,j,a,b,c,sum=0;
 	int month[12]={31,28,31,30,31,30,31,31,30,31,30,31};

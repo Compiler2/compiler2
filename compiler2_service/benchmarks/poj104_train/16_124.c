@@ -4,7 +4,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,b,c=11,i=1,j=1;
 	scanf("%d",&n);

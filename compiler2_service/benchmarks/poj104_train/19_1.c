@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
   char buf1[100];
   char buf2[100];
   char buf3[100];

@@ -5,7 +5,7 @@ struct stu
 	char letter;
 	int count;
 };
-int main()
+int main_bench()
 {
 	struct stu b[1001];
 	char c[1000];

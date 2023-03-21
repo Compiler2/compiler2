@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char s[200],f[200],*ps=s,*pf=f;
 

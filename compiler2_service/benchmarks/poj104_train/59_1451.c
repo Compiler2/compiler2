@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char map[105][105];
 	int a[105][105] = {0},m,n;

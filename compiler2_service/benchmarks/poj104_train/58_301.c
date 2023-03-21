@@ -32,7 +32,7 @@ int check(char a[100])
                                          else 
                                          return 0;
 }
-main()
+main_bench_bench()
 {
       int n,i;
       char a[100];

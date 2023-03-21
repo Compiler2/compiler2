@@ -8,7 +8,7 @@ else
 z=0;
 return z;
 }
-int main()
+int main_bench()
 {int n,m,i,j,a[5][5],(*p)[5];
 p=a;
 for(i=0;i<5;i++)

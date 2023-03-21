@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
    double n,i,k=1;
    scanf("%lf",&n);

@@ -5,7 +5,7 @@ struct BING
        char id[10];
        int old;
 }bing[100],temp;
-int main()
+int main_bench()
 {
     int i,j,k,n,p,max;
     scanf("%d",&n);

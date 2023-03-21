@@ -7,7 +7,7 @@ struct grade
 	int math;
 	int all;
 }stu[100000];
-int main()
+int main_bench()
 {
 	int n,i,e,f,g,a,b,c;
 	e=0;

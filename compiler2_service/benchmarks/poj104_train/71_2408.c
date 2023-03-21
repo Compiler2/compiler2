@@ -20,7 +20,7 @@ for(i=0;i<m-1;i++)
 	}
 return x;
 }
-int main()
+int main_bench()
 {
 int a,b,c,s[1000],p=0,q=0;
 int n,j;

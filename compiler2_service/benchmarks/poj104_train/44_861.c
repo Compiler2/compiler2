@@ -40,7 +40,7 @@ int reverse(int num)
 	return c;
 }
 
-int main()
+int main_bench()
 {
     int reverse(int num);
     int a[7],n,i;

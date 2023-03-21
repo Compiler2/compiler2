@@ -31,7 +31,7 @@ void trans(int m, int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int m,n;
 	trans(m,n);

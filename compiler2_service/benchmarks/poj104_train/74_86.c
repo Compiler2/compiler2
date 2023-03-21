@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int m,n,i=0,j=0,k=0,x=0,y=0,l=0,sushu[100000],a[10],aaa,bbb;
 	for(i=0;i<100000;i++) sushu[i]=0;

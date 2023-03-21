@@ -9,7 +9,7 @@ int sweet(int x,int y)
 	else
 		return sweet(x-y,y)+sweet(x,y-1);
 }
-int main()
+int main_bench()
 {
 	int x[100],y[100],n,i,honey[100];
 	scanf("%d",&n);

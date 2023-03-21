@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char s1[251]={""},s2[251]={""},sum[251]={""},temp[251]={""};
 	int i,j,k,r=0,len1,len2,a[251]={0};

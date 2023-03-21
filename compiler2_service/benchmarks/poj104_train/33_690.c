@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,e;
 	char jj1[150][256]={0},jj2[150][256]={0};

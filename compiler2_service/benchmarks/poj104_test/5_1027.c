@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int i,sum=0,flag=1;
 	double n1,n;
 	char a[512],b[512];

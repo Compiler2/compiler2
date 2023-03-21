@@ -27,7 +27,7 @@ int sushu(int n)
 		 return 0;
 
 }
-int main()
+int main_bench()
 {
 	int i,m,n,t=0;
 	scanf("%d %d",&m,&n);

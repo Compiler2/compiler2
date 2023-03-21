@@ -1,7 +1,7 @@
 #include <header.h>
 
 double qh(int n);
-int main(){
+int main_bench(){
 	int m,k;
 	int x[10000];
 	scanf("%d",&m);

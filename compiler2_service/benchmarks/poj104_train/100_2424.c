@@ -5,7 +5,7 @@ struct zimu
 	char a;
 	int n;
 }B[300],temp;
-int main()
+int main_bench()
 {
 	char A[303];
 	int i,j=0,k,number,flag,flag1=0;

@@ -19,7 +19,7 @@ int min(int a[N][N],int m,int n)
 	return 1;
 }
 
-main()
+main_bench_bench()
 {
 	int a[N][N],i,j,n;
 	for(i=0;i<N;i++)

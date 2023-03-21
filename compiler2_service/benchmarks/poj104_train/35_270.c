@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int row, line, l, r, t=9, s=9, q=9;
 	int a[8][8], max=0, min=100;

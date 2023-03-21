@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int judge(int m,int n);
 	int a[5][5],m,n,i,j,k,t,leap;

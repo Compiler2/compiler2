@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int i,n,age;
 double sum1=0.00,sum2=0.00,sum3=0.00,sum4=0.00;
 double k1,k2,k3,k4;

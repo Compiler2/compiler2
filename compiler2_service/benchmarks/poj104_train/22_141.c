@@ -8,7 +8,7 @@ int f1(int k)
     return(a);
 }
 
-void main()
+int main_bench()
 {
 	int i,j,k=1,p=0,sign=2;
 	char s[1500],a[301][5];

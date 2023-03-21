@@ -6,7 +6,7 @@ void del(char a[100],int k,int n)
 	for (i=k;i<=n;i++) a[i]=a[i+1];
 }
 
-int main()
+int main_bench()
 {
 	char a[100]; int i,n;
 	gets(a); n=strlen(a);

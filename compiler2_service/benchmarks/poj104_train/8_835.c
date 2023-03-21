@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {void st(int s[],int i);
 void cha(int s[],int i);
 void pp(int s[],int ss[],int m,int n);

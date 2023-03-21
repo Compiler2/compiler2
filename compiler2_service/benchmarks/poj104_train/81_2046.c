@@ -17,7 +17,7 @@ int ser()
 		return 1;
 	}
 }
-void main()
+int main_bench()
 {
 	int i,j,t,*p;
 	p=a;

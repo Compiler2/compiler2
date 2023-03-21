@@ -7,7 +7,7 @@ struct student
 	int math;
 	int total;
 };
-int main()
+int main_bench()
 {
 	struct student stu[100000];
 	struct student max[3]={0,0,0,0,0,0,0,0,0,0,0,0};

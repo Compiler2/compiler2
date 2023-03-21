@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a[500],b[500],st[5]="ATGC";
 	int len1,len2,i,s=0;

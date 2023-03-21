@@ -2,7 +2,7 @@
 
 
 
-main()
+main_bench_bench()
 {
    int n,i;
    int a[12],b[12];

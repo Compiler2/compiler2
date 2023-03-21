@@ -16,7 +16,7 @@ int max(int a[],int i)
 	return m;
 }
 
-int main()
+int main_bench()
 {
 	int a[2][1001]={0};
 	int i,j,start,end,k,m,p=0;

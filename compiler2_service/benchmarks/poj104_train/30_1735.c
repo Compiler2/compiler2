@@ -1,7 +1,7 @@
 #include <header.h>
 
 int yu7wuguan(int number);
-int main()
+int main_bench()
 {
 int num,result=0;
 scanf("%d",&num);

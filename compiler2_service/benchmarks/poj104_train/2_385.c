@@ -8,7 +8,7 @@ char w[26];
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {  
    int m,i,j,n,s;
    char x,c;

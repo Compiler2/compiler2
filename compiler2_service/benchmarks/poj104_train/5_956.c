@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	float n;
 	char a[501]={'\0'},b[501]={'\0'};

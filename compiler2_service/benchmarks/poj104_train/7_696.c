@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[100],a[100],b[100],c[100],d[100];
-int main()
+int main_bench()
 {
 	gets(s);
 	scanf("%s",a);

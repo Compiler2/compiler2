@@ -4,7 +4,7 @@ struct f{
 char id[10];
 int old;
 }st[1000],stu[1000],temp;
-int main()
+int main_bench()
 {
 	int n,i,j,a,b,c;
 	char cc,aa,x[1000],y[1000];

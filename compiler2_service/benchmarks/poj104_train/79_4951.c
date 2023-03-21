@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sn[1000],sm[1000],NUM=0;
 	for(int p=0;p<1000;p++){
 		int a1,a2;

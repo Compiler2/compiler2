@@ -9,7 +9,7 @@ int judge(int a,int b,int c,int d,int e)
           return 1;
    return 0;
 }
-int main()
+int main_bench()
 {
    int a,b,c,d,e,cor=0,i,time=0;
    int re[5]={0},p[5];

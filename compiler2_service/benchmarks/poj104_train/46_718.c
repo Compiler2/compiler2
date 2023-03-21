@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
       int row,col,i,j,d=0,count=0;
       int de[]={0,1,2,3};

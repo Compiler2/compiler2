@@ -27,7 +27,7 @@ int count (int a,int b,int c)
 	m=m+c;
 	return m;
 }
-int main()
+int main_bench()
 {
 	int j,a,b,c,d,e,f,sum=0;
 	int leapyear(int n);

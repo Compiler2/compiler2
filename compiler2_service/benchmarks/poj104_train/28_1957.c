@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i, j=0, m=0;
 	int sum[301] ={0};

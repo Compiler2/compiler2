@@ -4,7 +4,7 @@ void scan_(int m,int*a,int n,int*b);
 void sort_(int m,int*a,int n,int*b);
 void print_(int m,int*a,int n,int*b);
 
-int main()
+int main_bench()
 {
 int m,n,*a,*b;
 scanf("%d %d",&m,&n);   

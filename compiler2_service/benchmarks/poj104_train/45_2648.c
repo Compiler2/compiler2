@@ -15,7 +15,7 @@ int compare(char a[],char b[],int x)
 	return 1;
 }
 
-void main()
+int main_bench()
 {
 	int i,l,m;
 	char a[51],b[51];

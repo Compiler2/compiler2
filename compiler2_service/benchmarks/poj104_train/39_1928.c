@@ -1,7 +1,7 @@
 #include <header.h>
 
 struct In {char name[21];int g1;int g2;char y1;char y2;int g3;int g;} ;
-int main()
+int main_bench()
 {int i,n,b,d=0,m=0;
 scanf("%d",&n);
 struct In a[101];

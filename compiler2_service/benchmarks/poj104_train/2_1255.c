@@ -5,7 +5,7 @@ struct book
 	char num[4]; 
 	char author[27];
 }book[100];
-int main()
+int main_bench()
 {  
 	int n,i,k,sz[26],t,m,e;
 	scanf("%d",&n);

@@ -3,7 +3,7 @@
 
 
 
-int  main( )
+int  main_bench( )
 {
 	int i,n,w,xq[13];
 	n=0;

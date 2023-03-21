@@ -104,7 +104,7 @@ int weekday(int x,int month,int day)
 	return(x);
 }
 
-void main()
+int main_bench()
 {
 	char c[4]={0};
 	int t,w,year,month,day,x;

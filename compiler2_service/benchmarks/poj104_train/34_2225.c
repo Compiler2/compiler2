@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int i,j,m,n,p;
     char str[10001],a,b;

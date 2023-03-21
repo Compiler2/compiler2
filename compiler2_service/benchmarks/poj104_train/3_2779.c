@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int n,k,i,j;
     scanf("%d%d",&n,&k);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 double fnt(int n);
-int main()
+int main_bench()
 {
 	int z,j,k,l;
 	double sz[50];

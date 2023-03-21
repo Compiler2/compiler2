@@ -7,7 +7,7 @@ void dele0(char *a)
 	{	*(a+j)=*(a+i+j);	}*(a+j)=0;
 }
 
-void main()
+int main_bench()
 {
 	int i,a1,b1,add=0;
 	char a[300],b[300],c[300];

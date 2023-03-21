@@ -31,7 +31,7 @@ int monkeyApple( int n, int k)
 
 
 
-int main()
+int main_bench()
 {
 	int n, k;
 	scanf("%d%d", &n, &k);

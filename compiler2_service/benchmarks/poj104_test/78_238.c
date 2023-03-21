@@ -25,7 +25,7 @@ int work()
   }
   return 0;
 }
-int main()
+int main_bench()
 {
   int i;
   for(i=0; i<=3; i++)

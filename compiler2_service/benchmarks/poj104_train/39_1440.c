@@ -10,7 +10,7 @@ struct information
 	int lunwen;
 	int reward;
 }a[101];
-void main()
+int main_bench()
 {
 	int n,i,k,sum=0,max=0;
 	scanf("%d",&n);

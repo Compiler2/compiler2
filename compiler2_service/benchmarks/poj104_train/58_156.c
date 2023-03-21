@@ -1,7 +1,7 @@
 #include <header.h>
 
 int indent(char zfc[81]);
-int main(int argc, char* argv[])
+int main_bench()
 {   int n,s,i;
     char zfc[81];
     scanf("%d\n",&n);

@@ -25,7 +25,7 @@ void f(int a[],int n)
                      
                      
                      
-main()
+main_bench_bench()
 {
       int n,i,outcome=0;
       scanf("%d",&n);

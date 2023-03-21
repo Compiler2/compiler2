@@ -1,7 +1,7 @@
 #include <header.h>
 
 void jiaohuan(int*,int*);
-int main(){
+int main_bench(){
 	int yuan[101];
 	int i,n;
 	scanf("%d",&n);

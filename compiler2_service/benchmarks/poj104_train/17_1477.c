@@ -47,7 +47,7 @@ int ma(char s[],int p,int le)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d\n",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	unsigned long year,month,date;
 	unsigned long i,days,total=0;

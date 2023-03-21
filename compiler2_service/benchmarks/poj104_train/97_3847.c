@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,A[6]={100,50,20,10,5,1},B[6],i;
 	scanf("%d",&n);
 	B[0]=n/A[0];

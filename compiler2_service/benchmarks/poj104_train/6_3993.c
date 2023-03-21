@@ -6,7 +6,7 @@ const int maxn = 110;
 int n, m;
 int d[maxn][maxn];
 
-int main()
+int main_bench()
 {
     int t;
     

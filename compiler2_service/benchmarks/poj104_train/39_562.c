@@ -10,7 +10,7 @@ struct stu
 	int lun;
 	int ji;
 }stu[102];
-void main()
+int main_bench()
 {
 	int total=0;
 	int i,n,k=0;

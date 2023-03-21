@@ -6,7 +6,7 @@ if(n>=0&&n<=4&&m>=0&&m<5)
 return 1;
 else return 0;
 }
-int main()
+int main_bench()
 {
 int a[5][5],m,n,i,j,k,s;
 for(i=0;i<5;i++)

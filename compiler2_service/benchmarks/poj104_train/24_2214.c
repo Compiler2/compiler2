@@ -16,7 +16,7 @@ int findlen(int b)
   return i;
 }
 
-int main()
+int main_bench()
 {
   int i,j,k,max,min,maxn,minn;
   gets(s);

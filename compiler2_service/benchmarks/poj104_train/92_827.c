@@ -9,7 +9,7 @@ int mycomp(const void * elem1, const void * elem2)
 	return *((int *)elem2)-*((int *)elem1);
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	while (scanf("%d", &n))

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     const int x = 9;
     int i, j, k, m, n, fx, fy;

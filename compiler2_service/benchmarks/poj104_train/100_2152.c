@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,sum[30]={0},tot[30]={0},x=0;
 	char zfc[305];

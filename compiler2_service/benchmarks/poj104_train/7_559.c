@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char s1[257],s2[257],s3[257];
 	char* p;

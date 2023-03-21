@@ -2,7 +2,7 @@
 
 float kej(int fen);
 
-void main()
+int main_bench()
 {
       int i,n,xfen=0,xf[20],f[20];
 	  float xj[20],zj=0;

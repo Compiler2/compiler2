@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 double link;
 scanf("%lf",&link);
 char a[501],b[501];

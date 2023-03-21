@@ -2,7 +2,7 @@
 
 int zhi(int i);
 int hw(int i);
-void main(void)
+void main_bench()
 {
 	int m, n, a[100];
 	scanf("%d%d",&m, &n );

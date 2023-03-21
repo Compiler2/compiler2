@@ -7,7 +7,7 @@ int cmp(char s[],int x,int y,int n)
         if(s[x+i]!=s[y+i]) return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
     char s[600];
     int n,l,a[600]={0},b[600]={0},i,j,k=0,t;

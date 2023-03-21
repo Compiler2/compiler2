@@ -3,7 +3,7 @@
 int jh[365];
 int xqj[365];
 void dy(int *jh,int *xqj);
-int main(){
+int main_bench(){
 	int i;
 	for(i=0;i<31;i++){
 		jh[i]=i+1;

@@ -18,7 +18,7 @@ int cross_out(int *q,int n)
 	return m;
 }
 
-void main()
+int main_bench()
 {
 	int m,n,i,a[301],*p=a;
 	scanf("%d",&n);

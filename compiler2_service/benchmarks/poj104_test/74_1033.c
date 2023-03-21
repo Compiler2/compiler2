@@ -24,7 +24,7 @@ int g(long x)
 	}
 	return 0;
 }
-int main()
+int main_bench()
 {
 	long m,n,i,t=0;
 	scanf("%ld%ld",&m,&n);

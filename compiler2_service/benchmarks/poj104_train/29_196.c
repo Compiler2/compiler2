@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 int n,i,j,sz[1000];
 double result[1000]={0};

@@ -10,7 +10,7 @@ int weekdays(int n)
 	else return weekdays(n-7);
 }
 
-int main()
+int main_bench()
 {
 	int days[13][32];
 	int i,j,w;

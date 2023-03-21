@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char zfc[210];
 	gets(zfc);
 	int len=strlen(zfc);

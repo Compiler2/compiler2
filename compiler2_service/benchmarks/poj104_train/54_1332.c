@@ -19,7 +19,7 @@ int num(int n,int k)
 	}
 	return m;
 }
-void main()
+int main_bench()
 {
 	int m, n, k;
 	scanf("%d %d",&n,&k);

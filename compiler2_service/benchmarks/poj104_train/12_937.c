@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,j,k,sz[17],n=0;
 	for(i=0;i<17;i++){

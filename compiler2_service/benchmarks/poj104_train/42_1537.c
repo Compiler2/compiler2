@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int shu[100000];
 	int i,j,n=0,shan,shuru,a;
 	scanf("%d",&shuru);

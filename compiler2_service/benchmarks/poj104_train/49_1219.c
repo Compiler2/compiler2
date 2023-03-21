@@ -22,7 +22,7 @@ int compare(char a[],int n)
 	}
 	return flag;
 }
-int main()
+int main_bench()
 {
 	void sub(char common[],char minlen[],int n,int now);
 	int compare(char a[],int n);

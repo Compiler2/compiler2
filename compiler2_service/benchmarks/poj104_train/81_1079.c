@@ -17,7 +17,7 @@ int process(int a[][5],int m,int n)
 		re=0;
 	return re;
 }
-void main()
+int main_bench()
 {
 	int re,m,n,a[5][5],i,j;
 	for(i=0;i<5;i++)

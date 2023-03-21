@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      void usd(char x[100]);
      char a[100],b[100],c[100]={'\0'};

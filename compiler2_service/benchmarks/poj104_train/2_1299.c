@@ -7,7 +7,7 @@
  }; 
  struct author ren[100];
  
- int main()
+ int main_bench()
  { int n,i,j=0,k=0,biao,maxzuozhe,p,geshu[26]={0},max=0,maxdeshu[999];
  
    scanf("%d\n",&n);

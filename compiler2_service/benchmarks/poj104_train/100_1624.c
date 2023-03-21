@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { 
    char str[303]; 
    int bigNum[26]={0}; 

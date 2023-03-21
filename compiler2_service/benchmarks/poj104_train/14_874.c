@@ -6,7 +6,7 @@ struct student
 	int chinese;
 	int math;
 }student[100000];
-void main()
+int main_bench()
 {
 	int n,i,j,sum[100000]={0},h1=0,h2=0,h3=0;
 	scanf("%d",&n);

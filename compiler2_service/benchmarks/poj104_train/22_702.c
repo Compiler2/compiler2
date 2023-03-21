@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int S[300],a,b,c,i,j,k;
 	for(i=0;i<300;i++)

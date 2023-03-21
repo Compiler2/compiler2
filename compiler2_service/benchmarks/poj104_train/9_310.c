@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i;
     int age[100],a,m=0,tmp1[100],d=0;
 char zfc[100][11],tmp2[100][11];

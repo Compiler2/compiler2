@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	static char c[102],d[102];int i,j,k,s;
 	while(gets(c))

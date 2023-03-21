@@ -6,7 +6,7 @@ char word[1024];
 char replace[1024];
 char current[1024];
 
-int main() {
+int main_bench() {
 	gets(buffer);
 	scanf("%s %s", word, replace);
 

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char sentence[101],result[101];
 	gets(sentence);
 	int l;

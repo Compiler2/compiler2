@@ -3,7 +3,7 @@
 
 int reverse(int x);
 
-int main()
+int main_bench()
 {
 	int p,num,k;
 	for(k=1;k<7;k++){

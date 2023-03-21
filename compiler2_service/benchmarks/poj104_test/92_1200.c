@@ -14,7 +14,7 @@ void sort(int a[],int n)
 			}
 }
 
-int main()
+int main_bench()
 {
 	int n,i,a[1000],b[1000],qa,ra,qb,rb,sum;
 	while(scanf("%d",&n) && n!=0)

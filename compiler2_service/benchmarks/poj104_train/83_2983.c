@@ -14,7 +14,7 @@ double ck(int x)
 	if(x>=60) return 1.;
 	return 0;
 }
-int main()
+int main_bench()
 {
 	while(scanf("%d",&n)==1)
 	{

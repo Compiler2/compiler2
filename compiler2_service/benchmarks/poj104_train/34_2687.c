@@ -15,7 +15,7 @@ int odd(int a)
 	return(b);
 }
 
-void main()
+int main_bench()
 {
 	int n,m;
 	scanf("%d",&n);

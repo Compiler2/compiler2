@@ -10,7 +10,7 @@ int define(int m,int n)
 		return 0;
 }
 
-void main()
+int main_bench()
 {
 	int m,n,i,j,a[5][5],b[5]={0};
 	for(i=0;i<=4;i++)

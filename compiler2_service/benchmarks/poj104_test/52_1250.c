@@ -5,7 +5,7 @@ struct n
 	int pi;
 	struct n * next;
 }num[100];
-int main()
+int main_bench()
 {
 	int a[100],i,n,m;
 	struct n *p;

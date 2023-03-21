@@ -13,7 +13,7 @@
 	};
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,max=0,m=0,gong=0;
 	scanf("%d",&n);

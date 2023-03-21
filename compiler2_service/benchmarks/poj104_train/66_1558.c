@@ -13,7 +13,7 @@ int is_leap(int year) {
 	return year % 4 == 0;
 }
 
-int main() {
+int main_bench() {
 	int year, month, day;
 	scanf("%d%d%d", &year, &month, &day);
 	

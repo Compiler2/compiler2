@@ -14,7 +14,7 @@ char swap(char str[100])
     swap(str);
     }
 }
-int main()
+int main_bench()
 {
     char str[101];
     gets(str);

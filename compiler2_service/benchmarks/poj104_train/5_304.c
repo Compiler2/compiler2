@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char yuanshi[500],bijiao[500],laji[3];
 	double cankao,shiji;

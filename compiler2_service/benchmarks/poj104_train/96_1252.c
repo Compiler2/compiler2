@@ -6,7 +6,7 @@ int strchange(char s[],int n[])
       for(i=0;i<strlen(s);i++) n[i]=s[i]-'0';
       return(strlen(s));
 }
-main ()
+main_bench()
 {
      int a[101],b[101],c[101],i,j,n,yushu,wei,x,y;
      char s[101];

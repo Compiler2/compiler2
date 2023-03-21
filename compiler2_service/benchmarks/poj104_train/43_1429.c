@@ -11,7 +11,7 @@ int sushu(int x)
 	else return 0;
 }
 
-int main()
+int main_bench()
 {
 	int m,a,b;
 	int i,j;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   int nian,yue,ri,t,tt,a;
    scanf("%d%d%d",&nian,&yue,&ri);
    tt=(nian-1)*(365%7)+(nian-1)/4-(nian-1)/100+(nian-1)/400;

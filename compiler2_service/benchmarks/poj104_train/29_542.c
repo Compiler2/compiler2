@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int r,c,k,i,j,n,e,a,b;
 	double shu[100];

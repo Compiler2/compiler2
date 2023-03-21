@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int m,n,i,j,c,a[5][5],temp;
 	int compare(int n,int m);

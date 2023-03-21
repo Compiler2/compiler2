@@ -10,7 +10,7 @@ struct stu
  int lw;
  int sum;
 };
-int main()
+int main_bench()
 {
 	 int n,i,max=0,SUM=0;
            struct stu xs[100],b;

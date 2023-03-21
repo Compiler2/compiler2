@@ -4,7 +4,7 @@ int a[1000],c,d;
 void kg();
 void m(int);
 void r();
-main()
+main_bench_bench()
 {
 	r();
 	m(c);

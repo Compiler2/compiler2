@@ -36,7 +36,7 @@ void passed(int x,int y)
 	for(i=1;i<x;i++) printf(" %d",a[i]);
 	for(i=0;i<y;i++) printf(" %d",b[i]);
 }
-int main()
+int main_bench()
 {
 	scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++) scanf("%d",&a[i]);

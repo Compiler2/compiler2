@@ -20,7 +20,7 @@ void output(char str1[],char str2[])
 	if(strcmp(str1,str2)==0) printf("YES\n");
 	else printf("NO\n");
 }
-void main()
+int main_bench()
 {
 	char str1[100],str2[100];
 	scanf("%s %s",str1,str2);

@@ -3,7 +3,7 @@
 
 char m[110][110];
 
-int main()
+int main_bench()
 {
 	char s[110],a[110],b[110];
 	int num;

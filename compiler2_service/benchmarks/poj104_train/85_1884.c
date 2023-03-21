@@ -46,7 +46,7 @@ int istrue(char buf[30])
     }else
         return 0;
 }
-int main()
+int main_bench()
 {
     char buf[30];
     int i,n;

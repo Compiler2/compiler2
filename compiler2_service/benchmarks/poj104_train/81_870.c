@@ -1,7 +1,7 @@
 #include <header.h>
 
 int n,m,p;
-int main()
+int main_bench()
 {
 	int q,i,j,matrix[5][5];
 	for(i=0;i<5;i++)

@@ -17,7 +17,7 @@ int check(int (*p)[5],int n,int m)
 	else
 		return 0;
 }
-int main()
+int main_bench()
 {
 	int x,y,j,k,c;
 	int a[5][5];

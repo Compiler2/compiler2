@@ -3,7 +3,7 @@
 
 int panduan(int, int);
 
-int main()
+int main_bench()
 {
 	int a[10][10], m, n;
 	int t[10], i, j;

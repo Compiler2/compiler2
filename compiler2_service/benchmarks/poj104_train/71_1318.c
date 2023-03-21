@@ -7,7 +7,7 @@ int runnian(int y)
 	else
 	{return 0;}
 }
-int main()
+int main_bench()
 {
 	int n,j,i;
 	scanf("%d",&n);

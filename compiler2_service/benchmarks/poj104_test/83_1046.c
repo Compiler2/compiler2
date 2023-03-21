@@ -25,7 +25,7 @@ float score ( float x )
       return 4.0;
 }
 
-int main()
+int main_bench()
 {
     int n,i;
     float sum=0,GAP=0,a[10]={0},b[10]={0},c[10]={0};

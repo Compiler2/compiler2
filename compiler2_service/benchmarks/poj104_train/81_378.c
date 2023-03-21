@@ -1,7 +1,7 @@
 #include <header.h>
 
 int exchange(int (*)[5]);
-int main()
+int main_bench()
 {
 	int matrix[5][5],*p;
 	for(p=matrix[0];p-matrix[0]<25;p++)

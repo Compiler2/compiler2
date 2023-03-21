@@ -3,7 +3,7 @@
 int dir[4][2]={0,1, 1,0, 0,-1, -1,0};
 int k,row,col,a[200][200];
 
-int main(){
+int main_bench(){
 	scanf("%d%d",&row,&col);
 	for (int i=0;i<row;++i)
 		for (int j=0;j<col;++j) scanf("%d",&a[i][j]);

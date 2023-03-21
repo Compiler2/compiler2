@@ -1,7 +1,7 @@
 #include <header.h>
 
 const int chushu=13;
-int main()
+int main_bench()
 {
 char n[101],shang[100];
 int a,i;

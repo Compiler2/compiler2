@@ -3,7 +3,7 @@
 
 
     int sum=0;
-int main ()
+int main_bench()
 {
     int t,n,m;
     int i,j;

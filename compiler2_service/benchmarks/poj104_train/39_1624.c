@@ -12,7 +12,7 @@ struct SCL
     int sum;
 }SCL[100];
 
-int main()
+int main_bench()
 {
     int n, max=0, sum=0;
     char *name;

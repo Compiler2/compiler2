@@ -21,7 +21,7 @@ int f(int n,int m)
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int m,n;
 	int i,j,k;

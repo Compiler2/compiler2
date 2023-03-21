@@ -55,7 +55,7 @@ void combine(int N,int p[100],int M,int q[100])
 	printf("\n");
 }
 
-int main()
+int main_bench()
 {
 	scan();
 	combine(m,a,n,b);

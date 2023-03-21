@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int y,m,d,i,j,k,n,y1;
 	int a=-1;

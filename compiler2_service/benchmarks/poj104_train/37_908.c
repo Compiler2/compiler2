@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,k,len,time=0;
 	char str[100000],*p=str;

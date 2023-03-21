@@ -3,7 +3,7 @@
 char s[10000];
 int a[10000];
 int wlen[301];
-int main()
+int main_bench()
 {
 	int len,i,j,k,sig;
 	gets(s);

@@ -2,7 +2,7 @@
 
 int sum[99999];
 int m[99999];
-int main(int argc, char* argv[])
+int main_bench()
 { 
 	int n,i,b,c,a;
 	scanf("%d",&n);

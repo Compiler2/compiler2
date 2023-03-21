@@ -3,7 +3,7 @@
 struct statistics
 {int num;  int chinese;  int math;  int sum;}
  form[100000],temp;
-int main()
+int main_bench()
 { int n;
 scanf("%d",&n);
 int i,j;

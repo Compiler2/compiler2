@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 	int a[300];
 	int max,min,i;
 	max=-1;

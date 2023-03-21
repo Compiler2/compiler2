@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,k,p,temp,x[300],z[300];
 	float ave,total,y[300],max=0;

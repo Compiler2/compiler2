@@ -8,7 +8,7 @@ char st[50];
 
 int n, len, newline, nowlen;
 
-int main(){
+int main_bench(){
 
 	
 	scanf("%d", &n);

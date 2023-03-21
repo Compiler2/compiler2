@@ -3,7 +3,7 @@
 
 int p[50001];
 
-int main() {
+int main_bench() {
 	int n, i, j;
 	scanf("%d", &n);
 	p[0] = p[1] = 0;

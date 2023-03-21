@@ -24,7 +24,7 @@ int joy(int a, int b)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,i,k;
 	int x,y;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main ()
+int main_bench()
 {
 	int i, j, rank[6], ju[6];
 	for (rank[1]=2; rank[1]<4; rank[1]++) {

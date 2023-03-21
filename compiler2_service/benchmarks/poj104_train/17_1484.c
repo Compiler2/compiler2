@@ -1,7 +1,7 @@
 #include <header.h>
 
 int j=1;
-int main()
+int main_bench()
 { char a[101];
  a[0]=0;
 l: scanf("%s",a);
@@ -20,7 +20,7 @@ l: scanf("%s",a);
     else if(a[i]==')') a[i]='?';
     }
   printf("%s\n",a);
-  return main();
+  return main_bench_bench();
 
    
 }

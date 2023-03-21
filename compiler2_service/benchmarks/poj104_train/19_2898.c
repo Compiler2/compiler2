@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char *x=(char *)malloc(sizeof(char)*100);
     char *y=(char *)malloc(sizeof(char)*100);

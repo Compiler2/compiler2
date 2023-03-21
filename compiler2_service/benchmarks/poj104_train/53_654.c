@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,a[301],i,j,b[301]={0},g=1;
 	int*p1=(a+1),*p2=b;

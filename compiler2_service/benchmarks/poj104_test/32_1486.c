@@ -35,7 +35,7 @@ void jian()
      printf("\n");
 }
 
-int main()
+int main_bench()
 {
     scanf("%d",&n);
     while(n--)

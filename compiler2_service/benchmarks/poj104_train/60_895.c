@@ -1,7 +1,7 @@
 #include <header.h>
 
 int ssd(int i);
-int main()
+int main_bench()
 {
 	int j,n,flag=0;
 	scanf("%d",&n);

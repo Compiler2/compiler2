@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,year,month1,month2,i,day1,day2;
 	int isRunNian(int year);
 	int DiJiTian(int year, int month);

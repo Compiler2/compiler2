@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
   int zuo[50000],you[50000],n,i,j,a,b;
   double q;
   scanf("%d",&n);

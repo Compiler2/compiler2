@@ -5,7 +5,7 @@ char name[20];
 int scholar;
 }stu[100];
 
-int main(){
+int main_bench(){
 int n,i,j,total=0,final,class1,paper,maxid,maxscholar=0;
 char t1[2],t2[2];
 scanf("%d",&n);

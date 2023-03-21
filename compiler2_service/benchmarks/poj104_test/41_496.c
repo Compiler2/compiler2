@@ -58,7 +58,7 @@ if (i)putchar(' ');
            used[i]=0;
         }
 }
-int main()
+int main_bench()
 {
     find(0);
     

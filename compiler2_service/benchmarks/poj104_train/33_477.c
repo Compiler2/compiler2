@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char a[100],b[300],c[300];
 	gets(a);
 	int n=atoi(a),i,k;

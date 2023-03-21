@@ -6,7 +6,7 @@ struct score
 	int chinese;
 	int math;
 };
-void main()
+int main_bench()
 {
 	int n,i,*sum,max,p=0;
 	

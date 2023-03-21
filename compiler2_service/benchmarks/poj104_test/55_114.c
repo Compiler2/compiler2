@@ -23,7 +23,7 @@ char inttochr(int a)
 		return -1;
 }
 
-int main()
+int main_bench()
 {
 	char str[100]={0};
 	long a, b;

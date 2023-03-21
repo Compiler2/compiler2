@@ -17,7 +17,7 @@ void haha(int x)
 	else printf("-102");
 
 }
-int main()
+int main_bench()
 {
 	int i,a[100];
 	for(i=0;i<6;i++)

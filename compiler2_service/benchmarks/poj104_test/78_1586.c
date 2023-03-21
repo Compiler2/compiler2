@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      int z,q,s,l;
 	 printf("l 50\n");

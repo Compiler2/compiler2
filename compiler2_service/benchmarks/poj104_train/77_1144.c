@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int len,i,j,b[101],top=0;
 	char s[101],boy;

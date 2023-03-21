@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int n,i,j,k,f;
     int	year[200],mon1[200],day,mon2[200],t1,t2;

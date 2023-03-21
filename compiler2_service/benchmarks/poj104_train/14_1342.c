@@ -6,7 +6,7 @@ struct student
            int num,chi,mat,tot;           
     }stu[100000];
 
-int main()
+int main_bench()
 {
     void max(struct student [],int n);
     int n,i,k;

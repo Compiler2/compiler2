@@ -11,7 +11,7 @@ int judge(char *a, char *b, double r) {
   if (s / (double)n > r) return 1; else return -1;
 }
 
-int main() {
+int main_bench() {
   char a[600], b[600];
   double r;
   int s;

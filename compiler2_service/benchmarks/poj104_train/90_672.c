@@ -10,7 +10,7 @@ int f(int m,int n)
         return f(m,n-1)+f(m-n,n);
 }
 
-int main()
+int main_bench()
 {
     int t;
     scanf("%d",&t);

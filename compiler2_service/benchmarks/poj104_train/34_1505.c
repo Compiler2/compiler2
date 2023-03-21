@@ -9,7 +9,7 @@ else {printf("%d/2=%d\n",n,n/2);jiaogu(n/2);}
 return 0;
 }
 
-int main()
+int main_bench()
 {int n;
 scanf("%d",&n);
 jiaogu(n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int apple(int n,int k);
-int main()
+int main_bench()
 {
 	int n0,k0,num;
 	scanf("%d%d",&n0,&k0);

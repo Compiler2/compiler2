@@ -9,7 +9,7 @@ struct student {
 	int total;
 };
 
-int main() {
+int main_bench() {
 	int i, num;
 	struct student stu[100000];
 	int max_0 = 0, max_1 = 0, max_2 = 0;

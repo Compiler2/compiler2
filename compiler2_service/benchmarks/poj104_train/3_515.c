@@ -8,7 +8,7 @@ int *final;
 
 int *point1=&n,*point2=&k;
 
-int main()
+int main_bench()
 {
 	int kk=1;
 scanf("%d%d",point1,point2);

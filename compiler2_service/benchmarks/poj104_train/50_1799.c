@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
 	int w,i,sum=13;
 	scanf("%d",&w);
 	if((13+w-1)%7==5){

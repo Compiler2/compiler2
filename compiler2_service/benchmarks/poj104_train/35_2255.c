@@ -16,7 +16,7 @@ int check(int M,int N)
 	}
 	return 1;
 }
-int main()
+int main_bench()
 {
 	int i,j,judge=0;
 	scanf("%d,%d",&row,&line);

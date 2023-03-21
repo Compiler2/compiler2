@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char word[32],n,i,j,k,len,temp[32];
 	scanf("%d\n",&n);

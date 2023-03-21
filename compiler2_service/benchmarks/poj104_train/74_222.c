@@ -26,7 +26,7 @@ int ifsushu (int a)
 	return flag;
 }
 
-void main ()
+int main_bench()
 {
 	int min, max,i,flag=0;
 	scanf ("%d %d",&min,&max);

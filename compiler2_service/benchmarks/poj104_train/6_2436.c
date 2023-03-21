@@ -36,7 +36,7 @@ void mk(void)
 
 
 
-int main()
+int main_bench()
 {
 	int p,q,i;
 	scanf("%d",&p);

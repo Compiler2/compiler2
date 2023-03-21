@@ -65,7 +65,7 @@ int banji(int judge,char worker)
 		return 0;
 	}
 }
-void main()
+int main_bench()
 {
 	struct file a[110];
 	int i,n,sum=0,max=0,orient;

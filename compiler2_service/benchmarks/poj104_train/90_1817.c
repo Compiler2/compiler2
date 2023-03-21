@@ -11,7 +11,7 @@ int f(int m,int n)
 	return(a);
 }
 
-int main()
+int main_bench()
 {
 	int f(int m,int n);
     int i,m,n,c,t;

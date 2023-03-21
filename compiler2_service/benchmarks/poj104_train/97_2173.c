@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int x,y,z,r,s,t,a,m,n,p,q;
 scanf("%d",&a);
 if(a>0&&a<1000){

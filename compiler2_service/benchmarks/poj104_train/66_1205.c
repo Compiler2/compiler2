@@ -5,7 +5,7 @@ int isrunnian(int y){
 		return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int y,m,d,sum;
 	scanf("%d%d%d",&y,&m,&d);

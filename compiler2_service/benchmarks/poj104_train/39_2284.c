@@ -9,7 +9,7 @@ struct student
   char xibu;
   int paper;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,s[100]={0},sum=0,k,max;
 	struct student *p;

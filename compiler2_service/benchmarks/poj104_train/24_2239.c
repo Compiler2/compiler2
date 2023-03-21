@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char c[5000],temp[20]={'\0'},min[20],max[20];
     int i,j,flag=0;

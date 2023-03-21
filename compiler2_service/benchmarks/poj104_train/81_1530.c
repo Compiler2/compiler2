@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int inrange(int x,int y);
 	int matrix[5][5],m,n,i,j,temp;

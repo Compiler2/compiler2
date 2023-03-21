@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {    
 	void print(int n);
 	unsigned year,month,day,d,date;

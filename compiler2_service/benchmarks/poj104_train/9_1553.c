@@ -5,7 +5,7 @@ struct oldpeople
 	char id[20];
 	int year;
 }old[100],old60[100],cache;
-int main()
+int main_bench()
 {
 	int n;int i;
 	scanf("%d",&n);

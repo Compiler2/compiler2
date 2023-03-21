@@ -2,7 +2,7 @@
 
 char s[100],a[100],b[100],ns[100][100],result[100];
 int number[50];
-int main()
+int main_bench()
 {
 	int i=0,j=0,k=0;
 	gets(s);

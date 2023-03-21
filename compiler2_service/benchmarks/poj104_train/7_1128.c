@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char s1[300],s2[300],s3[300];
 	scanf("%s %s %s",s1,s2,s3);

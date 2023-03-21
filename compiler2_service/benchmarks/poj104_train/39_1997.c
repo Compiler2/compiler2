@@ -17,7 +17,7 @@ struct jiangxuejin
 	int total;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,all=0;
 	struct student list[100],most;

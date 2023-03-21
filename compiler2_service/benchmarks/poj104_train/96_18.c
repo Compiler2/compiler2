@@ -3,7 +3,7 @@
 const int maxn=100;
 int a[maxn+10];
 char line[maxn+10];
-int main()
+int main_bench()
 {
     int i,j=0;
     scanf("%s",line);

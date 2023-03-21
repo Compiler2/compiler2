@@ -10,7 +10,7 @@ void f(char a[],int l)
 			if(a[j]>a[j+1]) {t=a[j];a[j]=a[j+1];a[j+1]=t;}
 	}
 }
-main()
+main_bench_bench()
 {
 	char a[500]={0},b[500]={0};
 	scanf("%s %s",a,b);

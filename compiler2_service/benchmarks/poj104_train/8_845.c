@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void print(int a[],int b[]);
 	int a[100],b[100];

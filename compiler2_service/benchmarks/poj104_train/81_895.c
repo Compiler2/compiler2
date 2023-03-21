@@ -8,7 +8,7 @@ int check(int m)
 }
 
 
-int main()
+int main_bench()
 {
     int m,n,i;
     char temp[10],a[6][10];

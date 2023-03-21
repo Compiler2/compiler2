@@ -26,7 +26,7 @@ del(int a[],int n)
 		q = a;
 	}
 }
-main()
+main_bench_bench()
 {
 	int a[10000] ;
 	int n;

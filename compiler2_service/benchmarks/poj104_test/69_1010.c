@@ -7,7 +7,7 @@ int strplus(char *strin1,char*strin2,char *strout);
 
 
 
-int main()
+int main_bench()
 
 {
 

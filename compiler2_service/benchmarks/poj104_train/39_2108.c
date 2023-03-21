@@ -9,7 +9,7 @@ struct student
   char xisheng;
   int lunwen;
  }stu[300];
-int main(){
+int main_bench(){
 int n,m,i,sum=0;
 int money[300];
 char a[20];

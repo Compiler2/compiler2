@@ -2,7 +2,7 @@
 
 int n,m;
 int key,j,k,i,t;
-int main()
+int main_bench()
 {
     scanf("%d%d",&n,&m);
     int *p1=(int*)malloc((n+1)*sizeof(int));

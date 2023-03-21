@@ -12,7 +12,7 @@ void make(int *p1,int n,int m)
     for (i=0;i<m;i++)
      *(p1+i)=*(p2+i);
 }
-int main()
+int main_bench()
 {
     int *p,a[100],i,n,m;
     scanf("%d%d",&n,&m);

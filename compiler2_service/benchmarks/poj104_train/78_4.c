@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main ()
+int main_bench()
 {
 	int a=20,b=40,c=10,d=50;
 	char t[4]={'z','q','s','l'};

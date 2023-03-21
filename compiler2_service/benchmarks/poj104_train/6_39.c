@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int k,m,n,*sum,i,j,*q;
 	sum=(int*)malloc(100*sizeof(int));

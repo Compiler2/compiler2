@@ -14,7 +14,7 @@ int f(char a[])
 
 } 
 
-int main()
+int main_bench()
 {
     char a[501],b[501]; 
     gets(a);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,n,i;
 	double a=1.0,b=1.0,c,sum=0.0;

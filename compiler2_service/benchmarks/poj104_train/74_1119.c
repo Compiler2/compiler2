@@ -3,7 +3,7 @@
 int su(int a);
 int hui(int b);
 int wei(int c);
-void main()
+int main_bench()
 {
    int m,n,i;
    int a[500];

@@ -25,7 +25,7 @@ int Dijitian(int year,int month,int day)
 	total+=day;
 	return total;
 }
-int main()
+int main_bench()
 {
 	int startYear,startMonth,startDay,endYear,endMonth,endDay;
 	scanf("%d %d %d",&startYear,&startMonth,&startDay);

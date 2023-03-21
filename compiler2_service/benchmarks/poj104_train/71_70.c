@@ -24,7 +24,7 @@ int run(int year)
 
 
 
-int main()
+int main_bench()
 {
 
 

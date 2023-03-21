@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pd(char str[10]);
-int main()
+int main_bench()
 {
 	int n,i,j,m,return1,return2;
 	char str1[10]={'\0'},str2[10]={'\0'};

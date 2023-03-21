@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n[100][100],i,k,j,s[100],num[100],t,p,m;
 	

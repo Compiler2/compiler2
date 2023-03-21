@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int apple(int m,int n);
 	int t,i,m,n;

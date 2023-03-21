@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int lenstr,lensub,lenrpl,i,j;
 	char temp[260],str[260],sub[260],rpl[260];

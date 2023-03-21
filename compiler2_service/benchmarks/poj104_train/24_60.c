@@ -3,7 +3,7 @@
  int shifouzimu(char c);
  int longl( char string[]);
  int shortl(char string[]);
-void main()
+int main_bench()
 {
     
      int i;char line[1000];

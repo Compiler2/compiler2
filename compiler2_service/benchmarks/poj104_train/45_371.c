@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 { 
 	char a[50];
 	char b[50];

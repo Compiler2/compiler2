@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 { char*str,*p;int k=1;
   str=(char *)malloc(40*sizeof(char));
   gets(str);

@@ -6,7 +6,7 @@
 
 
 
-int main()
+int main_bench()
 { char zifu[100];
    char a[10];
    int n,p,i,j,l;

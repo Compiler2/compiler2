@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char zifu[101],qinpeng[101];
 	int i,len;

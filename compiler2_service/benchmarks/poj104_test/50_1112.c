@@ -1,7 +1,7 @@
 #include <header.h>
 
 int w,mon,ord;
-int main()
+int main_bench()
 {
 	scanf("%d",&w);
 	ord=13;

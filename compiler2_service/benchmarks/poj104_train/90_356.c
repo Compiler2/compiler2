@@ -13,7 +13,7 @@ int put(int m,int n)
 		c=put(m,n-1)+put(m-n,n);
 	return(c);
 }
- int main()
+ int main_bench()
  {
 	 int u;
 	 scanf("%d",&u);

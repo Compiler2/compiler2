@@ -6,7 +6,7 @@ float jue(float t)
 		t=-t;
 	return t;
 }
-int main()
+int main_bench()
 {
 	int n,a[300],shu[300];
 	scanf("%d",&n);

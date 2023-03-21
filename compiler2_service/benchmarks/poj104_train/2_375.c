@@ -64,7 +64,7 @@ int cunzai(char a[],int kk)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,kk;
 	struct shu *head, *p;

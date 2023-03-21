@@ -10,7 +10,7 @@ int ju(int x)
 	}
 	return 1;
 }
-int main()
+int main_bench()
 {
 	int i,num,flag=0;
 	int b;

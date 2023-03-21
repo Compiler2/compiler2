@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {
 long int y1,y,m,d,a,x,b;
 scanf("%d %d %d",&y1,&m,&d);

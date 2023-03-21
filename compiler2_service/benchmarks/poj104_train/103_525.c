@@ -1,7 +1,7 @@
 #include <header.h>
 
 char a[500];
-void main()
+int main_bench()
 {
 	char mark;
 	int i,sum=0,flag;

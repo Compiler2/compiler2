@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[101],*p,inversed[101],*q,*r;
 	int i,l;

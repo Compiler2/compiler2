@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int n,sz[100][2],i,j,p[100]={1},hour=0,hour1[100]={0};
 	scanf("%d",&n);

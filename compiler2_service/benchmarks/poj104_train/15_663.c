@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int tumour[256][256],n,i,j,x1=-1,y1,x2=-1,y2,s;
 	scanf("%d",&n);
 	for(i=0;i<n;i++){

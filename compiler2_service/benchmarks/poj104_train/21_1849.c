@@ -7,7 +7,7 @@ float k( float i)
 		return i;
 	else return -i;
 }
-void main()
+int main_bench()
 {
 	int n,a[400],s=0,max=0,min,count=0,i;
 	float aver;

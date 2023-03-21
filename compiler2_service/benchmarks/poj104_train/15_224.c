@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n, i, x0, y0, x1, y1;
 	int pixel;

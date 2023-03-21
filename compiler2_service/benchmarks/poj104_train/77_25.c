@@ -17,7 +17,7 @@ void doit(char a[],int n)
 	if(a[0]!='\0')doit(a,n);
 }
 
-void main()
+int main_bench()
 {
 	char a[100];
 	int n;

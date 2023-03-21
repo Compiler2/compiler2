@@ -17,7 +17,7 @@ void pan(int r[5])
 		printf(" %d",t[i]);
 	}
 }
-int main()
+int main_bench()
 {
 	int r[5];
 	for(r[0]=0;r[0]<5;r[0]++)

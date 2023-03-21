@@ -6,7 +6,7 @@ int bijiao(const void*x,const void*y)
 return *((int*)y)-*((int*)x);    
 }
 
-int main()
+int main_bench()
 {
   int n; 
   while(scanf("%d",&n)&&(n!=0)) 

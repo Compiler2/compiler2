@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[10000];
-int main()
+int main_bench()
 {
 	gets(s);
 	int l[200]={0},r[200];

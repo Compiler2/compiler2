@@ -5,7 +5,7 @@ int maximum(int a,int b)
 	if(a>b) return a;
 	else return b;
 }
-int main()
+int main_bench()
 {
 	int i,j,n,k,len,sta[500]={0},x=0,max=0,num;
 	char input[500];

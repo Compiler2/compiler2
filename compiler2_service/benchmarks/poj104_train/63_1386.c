@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
    int a[100][101],b[101][100],c[100][100],i,j,k,p,q,x,y,m,n,s;
    scanf("%d %d",&m,&q);

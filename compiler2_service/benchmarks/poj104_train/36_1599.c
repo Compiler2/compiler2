@@ -17,7 +17,7 @@ int order(char *x,int l)
 	return order(x,l-1);
 }
 
-int main()
+int main_bench()
 {
 	char x[300]={0},y[300]={0},c;
 	char *px,*py;

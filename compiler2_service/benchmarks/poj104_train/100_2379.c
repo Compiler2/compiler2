@@ -3,7 +3,7 @@
 
 char a[10000];
 int i, bo, ctt[10000];
-int main()
+int main_bench()
 {
 	scanf("%s", a);
 	memset(ctt, 0, sizeof(ctt));

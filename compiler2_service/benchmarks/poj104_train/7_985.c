@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
  char *s=(char*)malloc(256),*s1=(char*)malloc(256),*s2=(char*)malloc(256);
  int i,j,k,m=0;

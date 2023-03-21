@@ -34,7 +34,7 @@ int hui(int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i,flag=1;
 	scanf("%d%d",&m,&n);

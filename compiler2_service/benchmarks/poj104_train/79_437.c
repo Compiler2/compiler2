@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int monkey[500], r[500],i,j,m,n,left,count,time=0;
 

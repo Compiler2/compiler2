@@ -10,7 +10,7 @@ struct qian
 	int f[1];
 }stu[100];
 
-void main()
+int main_bench()
 {
 	int n,k,x,y=0,total=0,i,sum[100]={0};
 	scanf("%d",&n); 

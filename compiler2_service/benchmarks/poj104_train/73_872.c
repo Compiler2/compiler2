@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   int max(int q_1,int q_2,int q_3,int q_4,int q_5);
     int min(int p_1,int p_2,int p_3,int p_4,int p_5);
     int a[5][5];

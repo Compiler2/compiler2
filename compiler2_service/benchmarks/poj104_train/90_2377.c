@@ -7,7 +7,7 @@ int f(int n,int m)
     if(n==0||m==1) return 1;
     return f(n,m-1)+f(n-m,m);
 }
-int main()
+int main_bench()
 {
     int pl;scanf("%d",&pl);
     while(pl--)

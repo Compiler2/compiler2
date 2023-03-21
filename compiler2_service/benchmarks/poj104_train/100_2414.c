@@ -2,7 +2,7 @@
 
 
 
-int main() {
+int main_bench() {
 	char data[301];
 	int big[26]={0};
 	int sma[26]={0};

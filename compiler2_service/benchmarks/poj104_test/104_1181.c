@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int x,y,i,countx,county,c,p,q;
 	int a[11]={0},b[11]={0};

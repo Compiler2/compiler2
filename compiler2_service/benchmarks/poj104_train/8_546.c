@@ -36,7 +36,7 @@ void z()
 		printf("%d ",c[i]);
     printf("%d",c[A+B-1]);
 }
-void main()
+int main_bench()
 {
 	w();
 	x();

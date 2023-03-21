@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 { 
     int cases,sum[26],i,max,j;
 	char str[1001];

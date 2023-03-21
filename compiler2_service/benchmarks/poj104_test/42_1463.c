@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int a[100001];
 	memset(a, 0, sizeof(a));			

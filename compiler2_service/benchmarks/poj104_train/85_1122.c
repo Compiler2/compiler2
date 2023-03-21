@@ -26,7 +26,7 @@ int islegal(char juzi[],int n)
 	
 	
 	
-void main()
+int main_bench()
 {	
 	int n;
 	char m[6];

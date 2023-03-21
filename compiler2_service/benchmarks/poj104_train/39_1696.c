@@ -31,7 +31,7 @@ int gongxian(int a,char b)
 	else return(0);
 }
 
-void main()
+int main_bench()
 {
 	struct award
 	{

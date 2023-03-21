@@ -9,7 +9,7 @@
 	}
       return result;	
 }
-int main()
+int main_bench()
 {
 
 	int year,month,day=1,m1,d1=1,t1,a,total,i=1,n,s;

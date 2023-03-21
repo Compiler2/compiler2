@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,k,n;
 	int shu[100]={0};
 	char zi[100][100];

@@ -19,7 +19,7 @@ int exch (int ar[5][5], int n, int m)
 	}
 }
 
-int main ()
+int main_bench()
 {
 	int ar[5][5], n, m, i, j, k;
 	for (i=0; i<5; i++)

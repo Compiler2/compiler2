@@ -18,7 +18,7 @@ int h(int n)
 	if(a==k)return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j[100],k=0;
 	scanf("%d%d",&m,&n);

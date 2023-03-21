@@ -3,7 +3,7 @@
 int k[99999];
 
 int x[99999];
-int main()
+int main_bench()
 {
 	int n,i ,a,b,c,j,r,t,m=0;
 	scanf("%d",&n);

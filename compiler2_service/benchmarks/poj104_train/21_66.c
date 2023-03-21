@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m=0;
-void main()
+int main_bench()
 {
 	int n,a[300],i,j,k,d[100]={-1};
 	float f,sum=0;

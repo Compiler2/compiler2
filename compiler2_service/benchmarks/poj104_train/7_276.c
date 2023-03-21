@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char s[256],zi[256],r[256];
 	int lens,lenzi,lenr;
 	int i,k,p=2;

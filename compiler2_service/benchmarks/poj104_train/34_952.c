@@ -20,7 +20,7 @@ int hanshu(int number)
 	}
 	return hanshu(m);
 }
-int main()
+int main_bench()
 {
     int a;
 	scanf("%d",&a);

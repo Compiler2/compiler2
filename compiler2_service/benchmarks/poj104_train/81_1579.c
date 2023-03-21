@@ -1,7 +1,7 @@
 #include <header.h>
 
 int juzhen(int a[5][5],int m,int n);
-void main()
+int main_bench()
 { 
 	
 	int s[5][5],b,c,i,j;

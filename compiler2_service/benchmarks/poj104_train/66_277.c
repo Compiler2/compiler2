@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int year, month, day, i, temp, day_year=365%7, day_month[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	char week[7][5]={"Sun.","Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."};

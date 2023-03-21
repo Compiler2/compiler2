@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int a[300],max,min,n,sum=0,i;
 	float ave,sub1,sub2;

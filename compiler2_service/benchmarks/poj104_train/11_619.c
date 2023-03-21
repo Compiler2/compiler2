@@ -6,7 +6,7 @@ struct
 	int month;
 	int day;
 }date;
-main()
+main_bench_bench()
 {
 	int days;
 	scanf("%d%d%d",&date.year,&date.month,&date.day);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	
 	int num[5][5], max[2][5], min[2][5];
 	for(int i=0; i<5; i++) {

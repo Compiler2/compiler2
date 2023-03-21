@@ -6,7 +6,7 @@ struct book{
 	char A[26];
 };
 
-int main(){
+int main_bench(){
 	int m,i,k,max;
 	int count[26];
 	int *cc;

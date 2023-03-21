@@ -8,7 +8,7 @@ int min(int a,int b){
     if(a>b) return b;
 	else return a;
 }
-int main(){
+int main_bench(){
 	int n,count=0,i=0,a[3]={0,0,0};
 	scanf("%d",&n);
 	if(n%3==0){

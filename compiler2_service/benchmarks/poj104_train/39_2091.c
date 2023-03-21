@@ -2,7 +2,7 @@
 
 
 int money[100];
-int main()
+int main_bench()
 {
 	int n,a[100],b[100],c[100],i,j,k,z=0;
 	char name[100][30],ganbu[100],xibu[100],t[30];

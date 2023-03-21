@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int ALPHA1[27],alpha1[27],ALPHA2[27],alpha2[27],len1,len2,j,i,flag;
 	char str1[100],str2[100];

@@ -12,7 +12,7 @@ int deal(char a[],int ans[])
 	}
 	return j+1;
 }
-void main()
+int main_bench()
 {
 	char a[4000],b[4000];
 	int aa[1000],bb[1000];

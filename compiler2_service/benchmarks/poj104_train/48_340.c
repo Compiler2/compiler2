@@ -17,7 +17,7 @@ void p(int a[9][9])
 		for(j=0;j<9;j++)
 			a[i][j]=b[i][j];
 }
-int main()
+int main_bench()
 {
 	int a[9][9]={0},m,n,i,j,k;
 	scanf("%d%d",&m,&n);

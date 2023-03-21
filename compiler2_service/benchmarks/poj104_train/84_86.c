@@ -18,7 +18,7 @@ void change(int a[],int n)
 	a[1]=m2;
 }
 
-void main()
+int main_bench()
 {
 	int a[100],i,t,n;
 	scanf("%d",&n);

@@ -24,7 +24,7 @@ int f(unsigned int year,int month,int day)
 }
 
 
-int main()
+int main_bench()
 {
 
 	unsigned int year,month,day;

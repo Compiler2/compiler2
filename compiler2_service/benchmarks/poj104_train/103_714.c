@@ -4,7 +4,7 @@ struct point{
 	char a;
 	int b;
 }poi[40];
-int main()
+int main_bench()
 {
 	char str[1000];
 	int i,j=0,k;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i,j=0,n,flag=0,max,min,s,t,q1;
 	char a[2000]={'\0'};

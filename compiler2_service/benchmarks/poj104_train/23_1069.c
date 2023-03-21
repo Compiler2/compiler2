@@ -25,7 +25,7 @@ void turn(char a[100])
 		printf("%s ",b[i]);
 	printf("%s",b[i]);
 }
-void main()
+int main_bench()
 {
 	char a[100];
 	gets(a);

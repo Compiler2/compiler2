@@ -3,7 +3,7 @@
 char b[500][5]={' '};
 int n;
 int is(int i, int j);
-int main()
+int main_bench()
 {
 	int i, j, k;
 	scanf("%d", &n);

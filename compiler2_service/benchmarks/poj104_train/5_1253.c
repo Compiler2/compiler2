@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double n;
 	char zzd[600];
 	char hzy[600];

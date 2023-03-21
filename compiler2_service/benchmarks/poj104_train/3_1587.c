@@ -7,7 +7,7 @@ int mysort(void *a, void *b)
 	return *(int *)a - *(int *)b;
 }
 
-int main()
+int main_bench()
 {
 	int in[1000];
 	int n, k;

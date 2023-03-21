@@ -6,7 +6,7 @@ struct jumps
 	int error,c[100],sum,xia;
 };
 
-int main()
+int main_bench()
 {
 	struct jumps jump[100];
 	int n,i,j;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[10000]={'\0'};
 	int n,sum=0,j=0,i;

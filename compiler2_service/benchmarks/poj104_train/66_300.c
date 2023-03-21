@@ -37,7 +37,7 @@ void shuu(long  unsigned int s)
 	}printf(".");
 }
 
-void main()
+int main_bench()
 {
 	 long unsigned int toshi,getsu,hi,l=0,s=0,a,b;
 	scanf("%d %d %d",&toshi,&getsu,&hi);

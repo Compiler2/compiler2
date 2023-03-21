@@ -14,7 +14,7 @@ void yidong(int a1[],int len)
 
 	return;
 }
-int main()
+int main_bench()
 {
 	int n,m,i;
 	int a[1000];

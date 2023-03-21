@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 int flag(char x[100],char y[100]);
 char stro[100],strt[100];

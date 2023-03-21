@@ -18,7 +18,7 @@ void tran(char s[])
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	char a[50],b[50];
 	scanf("%s%s",a,b);

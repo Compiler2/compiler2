@@ -2,7 +2,7 @@
 
     
 
-int main(){
+int main_bench(){
     int n,i,j,min,max,sum;
     
     scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,k,a,jishu[500],e;
 	scanf("%d",&n);

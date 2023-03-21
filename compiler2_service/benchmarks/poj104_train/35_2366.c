@@ -26,7 +26,7 @@ int find2(int p,int q){
 	return 2;
 }
 
-int main(){
+int main_bench(){
 	int i,j;
 	scanf("%d,%d",&h,&l);
 	for(i=0;i<h;i++){

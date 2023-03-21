@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char yl[10000][256],pdl[10000][256];
  int i,j,n,t,m;
  scanf("%d",&n);

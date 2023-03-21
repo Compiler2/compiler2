@@ -34,7 +34,7 @@ void match(char str[])
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	char a,string[100];
 	while(gets(string))

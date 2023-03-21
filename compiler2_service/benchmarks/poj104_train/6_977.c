@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void jisuan(int array[100][100],int x,int y);
 	int k,i,m,n,p,q,a[100][100];

@@ -8,7 +8,7 @@ void Reverse(int n)
         Reverse(n/10);
 	 }
 }
-int main()
+int main_bench()
 {
      int num;
     scanf("%d",&num);

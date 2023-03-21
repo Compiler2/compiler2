@@ -22,7 +22,7 @@ int c(char a[8000])
     }
                     return z;
 }
-main()
+main_bench_bench()
 {
       char a[8000];
       int n,i;

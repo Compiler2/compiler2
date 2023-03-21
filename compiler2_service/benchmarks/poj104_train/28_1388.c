@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char (*p)[20];
 	int i=0,ok=1;

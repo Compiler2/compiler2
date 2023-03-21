@@ -4,7 +4,7 @@ struct a{
 int n;
 char s[27];
 }b[1000];
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

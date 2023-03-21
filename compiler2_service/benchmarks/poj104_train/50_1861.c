@@ -1,7 +1,7 @@
 #include <header.h>
 
 int ifunlucky(int d);
-int main()
+int main_bench()
 {
     int w,t;
     scanf("%d",&w);

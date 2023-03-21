@@ -46,7 +46,7 @@ void output(int p, int *pC)
  printf("%d\n", pC[p-1]);
  free(pC);  
 }
-main()
+main_bench_bench()
 {
  int p1, p2, *pA, *pB, *pC;
  input(&p1, &p2, &pA, &pB);

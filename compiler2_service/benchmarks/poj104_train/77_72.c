@@ -6,7 +6,7 @@ typedef struct
 	int girl;
 }OUT;
 
-void main()
+int main_bench()
 {
 	OUT out[50];
 	void sort(OUT *out,int k);

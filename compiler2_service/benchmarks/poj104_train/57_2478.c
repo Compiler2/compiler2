@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
     int n;
     char s[40];
     char local[3][5] = {

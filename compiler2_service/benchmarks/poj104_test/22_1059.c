@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int second(int a[],int n);
 	int k=0,a[300],num=0;

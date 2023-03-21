@@ -6,7 +6,7 @@ struct Student
     int age; 
 }ill[100];
 
-int main()
+int main_bench()
 { 
     int i,j,n,q;
     char p[10];

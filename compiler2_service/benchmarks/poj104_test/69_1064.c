@@ -7,7 +7,7 @@ int max(int a,int b)
       else
         return b;
     }    
-int main()
+int main_bench()
 {
       char s1[250],s2[250],s3[250],t;
       scanf("%s",s1);

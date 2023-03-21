@@ -3,7 +3,7 @@
 
 const int MAXN = 600;
 
-int main()
+int main_bench()
 {
     int n; scanf("%d", &n);
     int num[MAXN], temp;

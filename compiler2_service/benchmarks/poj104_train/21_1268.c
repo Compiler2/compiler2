@@ -5,7 +5,7 @@ struct cha
 	int a;
 	float c;
 }d[300];
-int main()
+int main_bench()
 {
 	int n,i,j,o=0,h;
     float k,s=0,z=0;

@@ -55,7 +55,7 @@ int dijitian(int y,int m,int d)
 }
 
 
-int main()
+int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,i,j,k,l,m,n,day=0;
 	scanf("%d%d%d",&y1,&m1,&d1);

@@ -5,7 +5,7 @@ struct person
 	char ID[20];
 	int age;
 };
-int main()
+int main_bench()
 {
 	struct person a[100]={0}, b[100]={0},t;
 	int n, i,j, k=0;

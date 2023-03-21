@@ -23,7 +23,7 @@ int jiangjin(int i)
 	return(jiang);
 }
 	
-void main()
+int main_bench()
 {
 	int n,i,a[100],h,sum=0;
 	scanf("%d",&n);

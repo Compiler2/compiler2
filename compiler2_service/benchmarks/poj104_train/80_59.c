@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
   int yone,monone,dayone;
   int ytwo,montwo,daytwo;

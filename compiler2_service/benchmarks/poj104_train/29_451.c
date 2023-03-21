@@ -23,7 +23,7 @@ double xs(int n){
 
 	
 
-int main()
+int main_bench()
 {
 	int m;
 	scanf("%d",&m);

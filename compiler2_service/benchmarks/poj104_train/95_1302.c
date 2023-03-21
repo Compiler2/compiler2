@@ -8,7 +8,7 @@ void toLowerCase(char *s) {
 		s++;
 	}
 }
-int main() {
+int main_bench() {
 	char s1[128];
 	char s2[128];
 	gets(s1);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m,n,a[200],b[100];
-int main()
+int main_bench()
 {
 	void getarray();
 	void paixu(int s[],int t);

@@ -17,7 +17,7 @@ int reverse(int num)
       f=f/10;}
     return f;
 }
-int main(){
+int main_bench(){
     int i,n,rn;
     for(i=0;i<6;i++){
       scanf("%d",&n);

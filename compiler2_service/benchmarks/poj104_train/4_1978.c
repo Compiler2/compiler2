@@ -8,7 +8,7 @@ int min (int a,int b)
 {
     return a<b?a:b;
 }
-main()
+main_bench()
 {  int i,j,t,col,row,a[100][100];
    scanf("%d%d",&row,&col);
    for(i=0;i<row;i++)

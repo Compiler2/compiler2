@@ -17,7 +17,7 @@ void p(char a[],int n)
 			printf("yes\n");
 	}
 }
-int main()
+int main_bench()
 {
 	int n,i,m;
 	char a[30],b;

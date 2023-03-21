@@ -1,7 +1,7 @@
 #include <header.h>
 
 int num(int n,int m);
-void main()
+int main_bench()
 {   int x,y;
 	while(scanf("%d%d",&x,&y)==2)
 	{

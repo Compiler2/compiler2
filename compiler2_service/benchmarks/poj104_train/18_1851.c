@@ -32,7 +32,7 @@ int minil(int numl,int *p)
 	}
 	return min;
 }
-int main()
+int main_bench()
 {
 	int a[101][101];
 	int *p;

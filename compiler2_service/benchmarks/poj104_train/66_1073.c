@@ -1,7 +1,7 @@
 #include <header.h>
 
 int runnian(int y);
-int main()
+int main_bench()
 {
     int i;
     int y2,m2,d2;

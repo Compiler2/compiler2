@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int panduan(char *s,int len);
 	char shuru[30],*s;

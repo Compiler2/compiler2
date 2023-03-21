@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char word1[50],word2[50];
 	scanf("%s",word1);

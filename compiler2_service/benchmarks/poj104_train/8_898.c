@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void take(int x[1000],int l);
 	void rank(int x[1000],int l);

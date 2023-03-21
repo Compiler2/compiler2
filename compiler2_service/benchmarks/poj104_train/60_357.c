@@ -16,7 +16,7 @@ int f(int n)
       return (1);
     
 }      
-int main()
+int main_bench()
 {
     int n,i,sum=0,t;
     scanf("%d",&n);

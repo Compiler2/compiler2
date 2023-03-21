@@ -21,7 +21,7 @@ int dijitian(int m,int d)
 	sum+=d;
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int w,k,i,p;
 	scanf("%d",&w);

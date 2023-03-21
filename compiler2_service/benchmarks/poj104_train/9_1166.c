@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char id[100][10],old[100][10],yog[100][10];
 	int n,i,m=0,l=0,age[100],oag[100],yag[100];
 	scanf("%d",&n);

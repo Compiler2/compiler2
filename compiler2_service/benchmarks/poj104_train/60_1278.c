@@ -2,7 +2,7 @@
 
 int prime[1000001];
 int tot = 0;
-int main()
+int main_bench()
 {
     int j;
     int n;

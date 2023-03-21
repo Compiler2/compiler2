@@ -14,7 +14,7 @@ void sort(char a[],int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int m,n;
 	char a[20],b[20];

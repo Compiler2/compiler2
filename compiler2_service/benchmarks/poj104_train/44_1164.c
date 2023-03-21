@@ -26,7 +26,7 @@ void reverse(char a[])
 
 }
 
-int main()
+int main_bench()
 {int i;
  for(i=0;i<6;i++)
  {

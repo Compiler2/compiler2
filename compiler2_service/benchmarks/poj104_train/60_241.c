@@ -18,7 +18,7 @@ int sushu(int a)
     }
     return (k);  
     }
-main()
+main_bench_bench()
 {   int n,b[100000],i,j,k,t;
     scanf("%d",&n);
     if(n<=4)

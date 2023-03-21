@@ -25,7 +25,7 @@ void down2(int a[100][100],int m)
 			a[j][i]=a[j][i]-p;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j,t,k;
 	int a[100][100];

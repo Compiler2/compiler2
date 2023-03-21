@@ -21,7 +21,7 @@ int fun2(int i)
 }
 
 
-int main()
+int main_bench()
 {
 	int i;
 	scanf("%d",&i);

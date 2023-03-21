@@ -5,7 +5,7 @@ int judge(int a)
     if (((a%100!=0)&&(a%4==0))||(a%400==0)) return 1;
     else return 0;
 }
-main()
+main_bench_bench()
 {     int d[12]={31,28,31,30,31,30,31,31,30,31,30,31};
       int a,b,c,i,j,x,n,day;
       scanf("%d",&n);

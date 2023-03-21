@@ -5,7 +5,7 @@
 char a[1000];
 int b[1000];
 int i,j;
-int main ()
+int main_bench ()
 {
      scanf("%s",a);
      for(i=0;a[i]!='\0';i++)

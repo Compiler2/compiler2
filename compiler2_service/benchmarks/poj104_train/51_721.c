@@ -20,7 +20,7 @@ int cmp_sort(const void *a, const void *b){
     return a-b; 
 }
 
-int main()
+int main_bench()
 {
     int n, i, len=0, max;
     char *p, str[10];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int bian(int a,int b);
 	int n,i,a,b;

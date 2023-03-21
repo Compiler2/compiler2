@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     
 int pdz=0,x,y,n,a[1000],b[1000],aa[1000],bb[1000];
     

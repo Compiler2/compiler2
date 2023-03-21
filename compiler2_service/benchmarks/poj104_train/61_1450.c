@@ -10,7 +10,7 @@ int F(int x){
 	}
 	return sz[x-1];
 }
-	int main(){
+	int main_bench(){
 		int n;
 		int i;
 		int sa[100];

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	long l1,l2,i;
 	char s[80],t[80];

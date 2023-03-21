@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
  int n;
  int indiv,ten,hundred,thousand,ten_thousand,place;

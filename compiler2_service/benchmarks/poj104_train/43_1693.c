@@ -11,7 +11,7 @@ int isPrime(int x)
 	return 1;
 }
 
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

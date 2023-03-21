@@ -52,7 +52,7 @@ int reverse(int n)
 	}
 	}
 }
-void main()
+int main_bench()
 {
 	int m,n;
 	int i,j;

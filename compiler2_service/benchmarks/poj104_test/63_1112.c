@@ -1,7 +1,7 @@
 #include <header.h>
 
 int max(int x,int y);
-int main()
+int main_bench()
 {
     int  a[200][200],b[200][200],c[400][400]={0};
     int x1,x2,y1,y2,x3,y3;

@@ -35,7 +35,7 @@ int nextmax(struct daodan* dao,int k,int n)
     
     return max;
 }
-int main()
+int main_bench()
 {
     int n;
     scanf("%d",&n);

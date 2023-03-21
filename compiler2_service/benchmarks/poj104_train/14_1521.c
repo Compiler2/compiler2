@@ -7,7 +7,7 @@ struct student{
 	int c;
 };
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,temp,temp2,sum=0;
 	int max1,max2,max3,id1,id2,id3;

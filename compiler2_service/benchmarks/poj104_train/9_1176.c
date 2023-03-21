@@ -4,7 +4,7 @@ typedef struct {
 	char id[20];
 	int age;
 } patient;
-int main()
+int main_bench()
 {
 	patient a[100],b[100],c[100],temp;
 	int n,i,j,k=0,l=0;

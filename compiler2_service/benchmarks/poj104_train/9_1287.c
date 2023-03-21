@@ -5,7 +5,7 @@ struct myturn
 	char ID[10];	int age;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,j=0,max=0;
 	struct myturn patient[100];

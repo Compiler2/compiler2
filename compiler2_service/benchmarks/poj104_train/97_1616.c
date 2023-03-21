@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,qian;
 	int yu[6]={0};
 	int zhang[6]={0};

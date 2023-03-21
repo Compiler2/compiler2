@@ -1,7 +1,7 @@
 #include <header.h>
 
 int s[50010]={1,1,0};
-int main()
+int main_bench()
 {
 int i,j,n;
 for(i=2;i<300;i++)

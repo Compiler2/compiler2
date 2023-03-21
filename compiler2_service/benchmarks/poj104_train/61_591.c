@@ -21,7 +21,7 @@ int F(int x)
 		return t;	
 	}
 }
-int main()
+int main_bench()
 {
 	int n,a,i;
 	scanf("%d",&n);

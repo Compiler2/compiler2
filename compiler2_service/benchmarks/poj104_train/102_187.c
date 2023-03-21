@@ -15,7 +15,7 @@ int compare(const void* e1,const void* e2)
 }
 
 
-int main()
+int main_bench()
 {
 	int nCase,i;
 	int f=0,m=0;

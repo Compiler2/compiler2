@@ -24,7 +24,7 @@ void trans(int (*m)[5],int p,int q)
   }
  }
 }
-int main()
+int main_bench()
 {
  int a[5][5],i,n,j,m,(*p)[5];
  

@@ -18,7 +18,7 @@ int point(int num)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int point(int num);
 	int x,y;

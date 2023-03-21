@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int a,max=0,secmax=0;
     char b;

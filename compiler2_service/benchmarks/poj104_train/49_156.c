@@ -35,7 +35,7 @@ for(j=0;j<=geshu;j++)
 rev[geshu]='\0';
 }
 
-int main()
+int main_bench()
 {
 char str[500];
 int n;

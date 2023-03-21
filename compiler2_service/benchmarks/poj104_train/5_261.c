@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char gene1[500];
 	char gene2[500];
 	int i;

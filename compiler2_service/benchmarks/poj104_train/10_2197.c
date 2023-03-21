@@ -18,7 +18,7 @@ int max(int sum[25],int x[25],int i,int j,int k)
    else
      return(0); 
 }
-main()
+main_bench_bench()
 {
       int k,i,j;
       static int x[25],sum[25];

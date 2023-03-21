@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
       char store[300],add1[300]={'\0'},add2[300]={'\0'},sum[300]={'\0'};
       int i,l,j,l1,l2;

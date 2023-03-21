@@ -12,7 +12,7 @@ struct stus
 	int p;
 };
 
-void main()
+int main_bench()
 {
 	int m,n,i,j,k,s=0;
 	char c[25]={0};

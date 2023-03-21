@@ -20,7 +20,7 @@ int f(char r[],int x[])
 	}
 	return e;
 }
-int main()
+int main_bench()
 {
 	int i,j,n,m,q=1,x[1001],y[1001],a,b,s[1000]={0};
 	char r[4000],c[4000];

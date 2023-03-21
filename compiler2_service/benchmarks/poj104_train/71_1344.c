@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int input[500][3];
 	int n;

@@ -2,7 +2,7 @@
 
 char s[1000];
 int dp[1000];
-int main(void)
+int main_bench()
 {
 	
 	int i,j,k,n;

@@ -2,7 +2,7 @@
 
 void Change(int a[5][5],int b,int c);
 
-void main()
+int main_bench()
 {
 	int i,j,matrix[5][5],p,q;
 	for(i=0;i<5;i++)

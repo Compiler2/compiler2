@@ -7,7 +7,7 @@ void f(char *p1,char *p2)
      if(*p1!=*p2) break;
      if(p1>=p2) {for(;p<=q;p++) printf("%c",*p);printf("\n");}
 }
-int main(int argc, char *argv[])
+int main_bench()
 {
   char a[500];
   int i,j;

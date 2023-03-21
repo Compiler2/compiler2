@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,n,a[101],b[101],sum=0;
 	float gpa=0;

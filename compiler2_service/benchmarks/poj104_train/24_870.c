@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
     char s[500],words[50][500];
     int  n,k,i,len[50],max=0,min=100000,da=0,xiao=0;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isRunNian(int year);
-int main(){
+int main_bench(){
     int n,d,s[200][100],e;
     scanf("%d",&n);
     for(int i=0;i<n;i++){

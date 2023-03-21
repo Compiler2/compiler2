@@ -10,7 +10,7 @@ struct stu
  int num;
  int sum;
 };
-void main()
+int main_bench()
 {
  int i,n,t=0,pos,max;
  struct stu *p1;

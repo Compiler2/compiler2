@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,c=-1,max=1,min=10,j;
 	char a[100],*p,*m,*n;

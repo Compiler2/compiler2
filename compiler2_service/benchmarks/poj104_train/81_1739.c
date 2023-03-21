@@ -27,7 +27,7 @@ int a(int m,int n)
     else return 0;
 }
 
-int main()
+int main_bench()
 {
     int s[5][5];
     int i,j,m,n,x,t;

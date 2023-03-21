@@ -38,7 +38,7 @@ void diaohuan(int a[5][5],int n,int m)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int juzhen[5][5],n,m,i,j;
 	for(i=0;i<5;i++)

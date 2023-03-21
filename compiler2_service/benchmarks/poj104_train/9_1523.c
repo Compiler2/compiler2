@@ -5,7 +5,7 @@ struct patient{
 	int age;
 }pat[100],order[100],buffer[100],swap;
 
-int main (){
+int main_bench(){
 
 	int i,j=0,m=0,n,k,p,q;
 	scanf("%d",&n);

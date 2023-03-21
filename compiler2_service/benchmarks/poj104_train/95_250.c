@@ -7,7 +7,7 @@ char z(char a)
 	else y=a;
 	return (y);
 }
-int main()
+int main_bench()
 {
     char z(char a);
 	char a[100],b[100],c[100],d[100];

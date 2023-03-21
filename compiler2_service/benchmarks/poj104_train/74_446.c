@@ -31,7 +31,7 @@ int huiwenshu(int num){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int m,n,i,t=1,k=1;
 	scanf("%d %d",&m,&n);
 	for(i=m;i<n+1;i++){

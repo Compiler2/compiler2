@@ -19,7 +19,7 @@ void print_bigint(int*a,int len)
      for(i=k;i>0;i--)
      printf("%d",a[i]);
      }
-int main()
+int main_bench()
 {
       int a[100],alen,b[100],blen,i;
       char c[100];

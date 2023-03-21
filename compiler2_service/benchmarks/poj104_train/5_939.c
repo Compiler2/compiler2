@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
 	double r;
 	scanf("%lf",&r);
 	char zfc[500];

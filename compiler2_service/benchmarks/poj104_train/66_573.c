@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int day,month,year,i,sum=0,n,m,tianshu[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}; 
     char week[][6]={ {'S','u','n','.'}, 

@@ -11,7 +11,7 @@ struct student
 	int jiang;
 }stu[100];
 
-void main()
+int main_bench()
 {
 	int n,i,t,h=0;
 	scanf("%d",&n);

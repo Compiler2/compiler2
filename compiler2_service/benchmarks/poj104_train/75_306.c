@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int in[1002],out[1002],time[1002]={0};
 	int temp,i,j,k,num;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int p,j,k,len,i;
 char str[100][10]={'\0'},ch[100][3],sub[100][20],tol[100][30];
 for(i=0;i<100;i++)

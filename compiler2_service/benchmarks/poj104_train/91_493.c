@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int m1,i;
 	char zfc1[200];
 	char zfc2[200];

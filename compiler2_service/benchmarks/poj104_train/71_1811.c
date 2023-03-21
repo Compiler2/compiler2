@@ -9,7 +9,7 @@ int run ( int x )
 		return 0 ;
 	else return 1 ;
 }
-int main()
+int main_bench()
 {
 	int i , n , j , day = 0 ;
 	scanf("%d", &n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 struct student { int id; char yw;char sx;int zf;int pm;};
-int main()
+int main_bench()
 {
 struct student a[100000],b[2];
 int n,i,j;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	struct point{
 		int a,b;
 	}p[50000];

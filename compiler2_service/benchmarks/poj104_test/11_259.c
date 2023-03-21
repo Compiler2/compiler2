@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i,a[20],b[20],c[20],x,day;
 	for(i=1;i<=5;i++)

@@ -4,7 +4,7 @@
 int f_1(int);
 int f_2(int,int);
 
-int main()
+int main_bench()
 {
 	int n,k,m;
 	scanf("%d %d",&n,&k);

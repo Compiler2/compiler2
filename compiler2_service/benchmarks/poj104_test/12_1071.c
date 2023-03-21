@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int i, j, end, k;
 	float a[1000];

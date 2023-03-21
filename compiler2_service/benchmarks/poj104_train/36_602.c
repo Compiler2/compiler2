@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int a[26],i,x,y,b[26];
 	char moto[1000],genzai[1000];

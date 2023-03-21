@@ -8,7 +8,7 @@ int max(int a[],int n)
 		{t=i;max=a[i];}
 	return(t);
 }
-void main()
+int main_bench()
 {
 	int a[300],i,n,m,t,k;
 	char c;

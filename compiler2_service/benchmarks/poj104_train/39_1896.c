@@ -9,7 +9,7 @@ char xibu;
 int num; 
 }student[100]; 
  
-main () 
+main_bench() 
 { 
 
 int a[100]; 

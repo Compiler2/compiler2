@@ -27,7 +27,7 @@ int huiwenshu(int m)
       else
        return 0;
 }
-main()
+main_bench_bench()
 {
      int m,n,i,count=0;
      scanf("%d %d",&m,&n);

@@ -11,7 +11,7 @@ int Dec(int x)
     if((x<80)&&(x>69)) return 0;
     return 1;
 }
-int main()
+int main_bench()
 { int i,n;
 scanf("%d",&n);
     int sum=0;

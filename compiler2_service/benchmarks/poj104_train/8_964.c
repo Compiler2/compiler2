@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void sr(int a[100],int b[100],int x,int y);
 	void px(int a[100],int x);

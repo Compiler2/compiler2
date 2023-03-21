@@ -12,7 +12,7 @@ struct student
       int x;
       int y;
 }a[100000];
-main()
+main_bench_bench()
 {
     int n,i,j,d=0,b[100000],c[100000];
     scanf("%d",&n);

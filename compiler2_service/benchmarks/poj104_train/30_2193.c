@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int a[100];
 int i,n,squarsum=0;
 scanf("%d",&n);

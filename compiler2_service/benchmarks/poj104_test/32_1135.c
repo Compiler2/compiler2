@@ -23,7 +23,7 @@ void minus(int l1,int l2)
      }
      
 }
-int main()
+int main_bench()
 {
     int n,i,max,j;
     int l1,l2;

@@ -17,7 +17,7 @@ void output(int a[9][9])
 
 
 
-int main()
+int main_bench()
 {
 	int a[9][9] = {0};
 	int i, j, k;

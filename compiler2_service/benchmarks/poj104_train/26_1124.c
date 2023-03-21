@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char str[101]={'\0'};
 	char a[101]={'\0'}; 

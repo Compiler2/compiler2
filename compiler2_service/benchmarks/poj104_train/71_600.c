@@ -6,7 +6,7 @@ int f(int x)
 	y=(((x%4==0)&&(x%100!=0))||(x%400==0))?1:0;
 	return (y);
 }
-int main()
+int main_bench()
 {
 	int a=0,b=0,c=0,p=0,n=0;
 	int q=0;

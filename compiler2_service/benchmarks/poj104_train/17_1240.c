@@ -8,7 +8,7 @@ void match(int i,int len){int k = i + 1;
                                   k++;}}} 
                                   
                                   
-main(){int n;
+main_bench(){int n;
        scanf("%d",&n); 
        for(int i=0;i<n;i++){
                scanf("%s",&a);

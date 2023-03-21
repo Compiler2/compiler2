@@ -30,7 +30,7 @@ int reverse(int a)
   }
   return b;
 }
-int main ()
+int main_bench ()
 {
     int a[6],i;
     for (i=0;i<=5;i++)

@@ -2,7 +2,7 @@
 
 int change(int sz[][5],int,int);
 
-int main(){
+int main_bench(){
 	int n,m,i,j;
 	int sz[5][5];
 

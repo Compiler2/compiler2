@@ -8,7 +8,7 @@ int make(int x,int t)
 	if (x%i==0) ans+=make(x/i,i);
 	return ans;
 }
-int main()
+int main_bench()
 {
 	int i,k,j,p,n,t,m,x;
 	scanf("%d",&t);

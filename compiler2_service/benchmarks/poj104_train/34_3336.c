@@ -11,7 +11,7 @@ void os(int n)
 	printf("%d/2=%d\n",n,n/2);
 	
 }
-void main()
+int main_bench()
 {
 	scanf("%d",&n);
     while(n!=1)

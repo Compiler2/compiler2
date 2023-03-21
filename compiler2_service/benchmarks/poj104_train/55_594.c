@@ -6,7 +6,7 @@ if(y<=0)
 return(1);
 else return x*qr(x,(y-1));
 }
-int main()
+int main_bench()
 {
 int a,b,n,i,j,d[100];
 long int k=0;

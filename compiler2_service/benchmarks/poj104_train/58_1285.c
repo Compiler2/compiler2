@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,i,s,j,l;
 	char *a=(char *)malloc(sizeof(char)*81);

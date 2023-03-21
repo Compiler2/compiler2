@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
    int i,j,k,s,x1,y1,x2,y2,a[100][100],b[100][100];
 	scanf("%d%d",&x1,&y1);

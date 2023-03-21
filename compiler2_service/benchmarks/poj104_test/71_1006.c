@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int day(int m,int leap);
     int i,n,year[200][3],leap=0,day1,day2,d;

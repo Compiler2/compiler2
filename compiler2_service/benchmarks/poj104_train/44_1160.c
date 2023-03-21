@@ -29,7 +29,7 @@ void reverse(char a[10]){
     
 }
 
-int main(){
+int main_bench(){
     int i,j,k=0;
     char a[10];
     for(i=0;i<6;++i){

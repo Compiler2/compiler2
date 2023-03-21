@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i;
 	int num[4]={0},pat[101]={0};
 	double rate[4];

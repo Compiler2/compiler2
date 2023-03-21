@@ -3,7 +3,7 @@
 
  
 
-int main()
+int main_bench()
 {
     char a[1101];
     int n;

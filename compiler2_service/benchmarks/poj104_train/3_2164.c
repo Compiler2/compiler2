@@ -32,7 +32,7 @@ int bubblesort(int arr[], int n)
 	return arr[n-1];
 }
 
-int main()
+int main_bench()
 {
 	int n,arr[100000],k,i=0,index=0;
 	scanf("%d%d",&n,&k);

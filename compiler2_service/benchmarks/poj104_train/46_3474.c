@@ -32,7 +32,7 @@ void shuchu(int e,int b,int row,int col,int c)
 		shuchu(e-2,b-2,row,col,c+1);
 	}
 }
-int main()
+int main_bench()
 {
 	 int row,col,i,j;
 	 scanf("%d %d",&row,&col);

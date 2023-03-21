@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int hang[10000],lie[10000],day,n,m,i,j,k,total=0;
     char a[101][101];

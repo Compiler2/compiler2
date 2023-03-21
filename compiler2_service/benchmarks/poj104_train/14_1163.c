@@ -7,7 +7,7 @@ int ch;
 int math;
 };
 struct student stu[100000];
-int main()
+int main_bench()
 {
 int n; int sum[100000];int max[3];int i,j,k,m,o;int s;
 scanf("%d",&n);

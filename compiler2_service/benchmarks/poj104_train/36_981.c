@@ -3,7 +3,7 @@
 char s[50],w[50];
 int len1;
 int len2;
-int main()
+int main_bench()
 {
     scanf("%s %s",s,w);
     len1=strlen(s);

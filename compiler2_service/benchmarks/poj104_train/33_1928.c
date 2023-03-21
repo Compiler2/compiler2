@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int N,i,k;
         char lian[300],fanlian[300]={0};
          scanf("%d",&N);

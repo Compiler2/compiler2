@@ -3,7 +3,7 @@
 void change(char word[30][15], char a[], char b[]);
 void getword(char *p,char word[30][15]);
 int n=0;
-void main()
+int main_bench()
 {
 	char s[100],word[30][15]={'\0'},a[10],b[10];
 	char *p=s;

@@ -8,7 +8,7 @@ int p(int a){
 	}
 }
 
-int main(){
+int main_bench(){
     int s[5][5];
 	int m,n,e;
 	for(int i=0;i<=4;i++){

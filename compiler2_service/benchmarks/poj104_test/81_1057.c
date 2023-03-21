@@ -19,7 +19,7 @@ int panduan(int n,int m)
 
 }
      
-int main()
+int main_bench()
 {
 	int puanduan(int n,int m);
 	int y,i,j,a[5][5]={0},b[5][5]={0},c[5]={0};

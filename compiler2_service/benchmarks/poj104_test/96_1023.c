@@ -9,7 +9,7 @@ void subtract(int *,int *);
 int compare(int *,int *);        
 int wei(int *);                  
 void fangda(int *, int);         
-int main(void)
+int main_bench(void)
 {
 	int i,j,k;
 	int n;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
  int number, largest, second, counter,n;
  counter = 1;

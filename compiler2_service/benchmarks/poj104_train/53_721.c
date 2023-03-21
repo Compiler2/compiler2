@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int mark[305]={0},str[305],i,j,k,n;
 	scanf("%d",&n);

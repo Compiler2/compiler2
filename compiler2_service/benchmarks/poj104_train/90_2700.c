@@ -1,7 +1,7 @@
 #include <header.h>
 
 int many(int x, int y);
-int main()
+int main_bench()
 {
 	int t, n, m, k;	
 	int i;

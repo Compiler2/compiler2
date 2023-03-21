@@ -16,7 +16,7 @@ int jz(int *p,int n,int m)
 	else
 		return 0;
 }
-int main()
+int main_bench()
 {
 	int a[5][5];
 	int i,j,x,y,r;

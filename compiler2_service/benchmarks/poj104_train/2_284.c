@@ -5,7 +5,7 @@ struct book
 	long int num;
 	char name[26];
 }book[1000];
-int main()
+int main_bench()
 {
 	int m,i,j,r;
 	int writer[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};

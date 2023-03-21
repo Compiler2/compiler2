@@ -12,7 +12,7 @@ for(i=0;i<m;i++)s+=x[i];
 s+=d;
 return s;
 }
-void main()
+int main_bench()
 {
 int y1,y2,m1,m2,d1,d2;
 scanf("%d %d %d",&y1,&m1,&d1);

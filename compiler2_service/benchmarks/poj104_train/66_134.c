@@ -42,7 +42,7 @@ int day(unsigned long y,int m,int d)
   return(t);
 }
 
-void main()
+int main_bench()
 {
  int day(unsigned long,int,int);
  unsigned long y;

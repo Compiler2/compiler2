@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[256],sub[256],replace[256];
 	gets(s);

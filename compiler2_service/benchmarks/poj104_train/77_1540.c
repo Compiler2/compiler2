@@ -5,7 +5,7 @@ struct result{
 	int woman;
 }res[50]={0};
 struct result temp;
-int main()
+int main_bench()
 {
 	int i,j,p=-1,sum=0,len;
 	char str[100]={0},std;

@@ -2,7 +2,7 @@
 
 int max(int a,int b)
 {return(a>b?a:b);}
-int main()
+int main_bench()
 {
     int imax=0,s=0,x[2200],y[2200],i=0,j,k,m;
     char c;

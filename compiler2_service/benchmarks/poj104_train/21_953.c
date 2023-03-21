@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,t=0,leap=0,la[2];
 	double ave,max=0,sum=0,cha[300];

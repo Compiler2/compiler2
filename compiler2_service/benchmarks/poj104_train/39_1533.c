@@ -8,7 +8,7 @@ struct Student{
 	char west;
 	int paper;
 };
-void main()
+int main_bench()
 {
 	int N,i,j,scolar[100][6],max;
 	long int sum=0;

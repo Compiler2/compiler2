@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int a,b,c=0,d=0;scanf("%d%d",&a,&b);
 if(a==b)printf("%d",a);
 else{

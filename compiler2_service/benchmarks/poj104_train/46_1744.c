@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int sz[100][100],i,row,col,j,k=0,min;
 	scanf("%d%d",&row,&col);

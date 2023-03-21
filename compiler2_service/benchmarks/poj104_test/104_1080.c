@@ -12,7 +12,7 @@ int count(int b,int c)
     return sum;
 }
 
-int main()
+int main_bench()
 { 
 	int n,m,p[2000]={0},sum=0,tmp;
 	scanf("%d%d",&n,&m);

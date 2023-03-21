@@ -9,7 +9,7 @@ struct student
 	char sheng;
 	int num;
 };
-void main()
+int main_bench()
 {
 	int n,i,j=0,sum,tol=0,max=0;
 	struct student t,*s;

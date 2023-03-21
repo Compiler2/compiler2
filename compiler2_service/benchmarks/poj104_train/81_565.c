@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int shuz[5][5];
 int i,j;
 for(i=0;i<5;i++)

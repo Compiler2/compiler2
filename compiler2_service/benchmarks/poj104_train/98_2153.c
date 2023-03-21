@@ -11,7 +11,7 @@
 
 
 
-    int main() {
+    int main_bench() {
         int n, i, wl, len = 0,line=0;
         char w[64];
         scanf("%d", &n);

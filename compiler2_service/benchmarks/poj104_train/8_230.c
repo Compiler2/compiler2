@@ -61,7 +61,7 @@ void output(int a[], int n)
 	printf("%d", a[i]);
 }
 
-void main()
+int main_bench()
 {
 	input();
 	sort(a, m);

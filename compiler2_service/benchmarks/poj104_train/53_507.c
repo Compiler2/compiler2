@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int n,i,a[300],hash[300],j=0,k,flag;
  scanf("%d",&n);

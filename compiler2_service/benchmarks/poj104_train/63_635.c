@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
     int *a,*b,*c,x1,x2,y1,y2,i,j,m,q;
     a=(int *)malloc(100*100*sizeof(int));

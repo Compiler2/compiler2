@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int array[100][100],s[10000],row,col,i,j,k,l,h,a,b,c;
   scanf("%d%d",&row,&col);

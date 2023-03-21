@@ -20,7 +20,7 @@ int min(int lie)
     return ji;
 }
 
-main()
+main_bench_bench()
 {
       int i,j,x=0;
       for(i=1;i<=5;i++)

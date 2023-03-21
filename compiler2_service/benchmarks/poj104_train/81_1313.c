@@ -2,7 +2,7 @@
 
 
 void reverse(int a[5][5],int b,int c);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int su[5][5];
 	int hang1,hang2,panduan;

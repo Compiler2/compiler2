@@ -13,7 +13,7 @@ int Intercept(int i,int j){
 	}
 	return max;
 }
-void main()
+int main_bench()
 {
 	int i,j,max=1,sum=0;
 	scanf("%d",&n);

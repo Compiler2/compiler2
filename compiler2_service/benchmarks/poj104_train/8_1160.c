@@ -27,7 +27,7 @@ void f4(int a3[])
 	int i;
 	for(i=1;i<=l1+l2;i++) {if(i!=1) printf(" ");printf("%d",a3[i]);}
 }
-main()
+main_bench_bench()
 {
 	f1(a1,a2);
 	f2(l1,a1);

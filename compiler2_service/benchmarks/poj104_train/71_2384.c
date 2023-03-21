@@ -1,7 +1,7 @@
 #include <header.h>
 
 int DiJiTian(int year,int mon);
-int main(){
+int main_bench(){
 int i,n,mon1,mon2,year,result;
 int sz[200];
    scanf("%d",&n);

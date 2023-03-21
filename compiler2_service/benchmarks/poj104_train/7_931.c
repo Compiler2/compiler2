@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char yuanchuan[257];
 	char zichuan[257];
 	char replacement[257];

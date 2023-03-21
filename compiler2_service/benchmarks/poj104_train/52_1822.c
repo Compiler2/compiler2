@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     void move(int *pa,int m,int n);
     int a[110],*pa=a;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int k[100];
-int main(){
+int main_bench(){
 int n,i;
 double as,bs,cs,ds,sum;
 as=0;

@@ -2,7 +2,7 @@
 
 void panduan(int i,int num);
 int i, num;
-main()
+main_bench_bench()
 {
     int w;
     scanf("%d",&w);

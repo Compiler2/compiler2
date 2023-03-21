@@ -2,7 +2,7 @@
 
 
 int change(int a,int b);
-int main()
+int main_bench()
 {
 	int a[5][5],b[5],i,j,x,y,result;
 	for(i=0;i<5;i++){

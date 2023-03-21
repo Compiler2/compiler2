@@ -7,7 +7,7 @@ struct
 	int shuxue;
 }student[1000000];
 void swap(int*a,int*b);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n=0;
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	char *p1,*p2;
 	char a[50]={0},b[50]={0};

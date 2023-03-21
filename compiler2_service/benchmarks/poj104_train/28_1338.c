@@ -3,7 +3,7 @@
 
 int sums[310];
 
-void main()
+int main_bench()
 {
 	int n=0;
 	int i;

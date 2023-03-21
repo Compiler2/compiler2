@@ -45,7 +45,7 @@ void shuchu(void)
  for (i=1;i<m+n;i++)
  printf(" %d",a[i]);
 }
-int main()
+int main_bench()
 {
  shuru();
  paixu(a,b);

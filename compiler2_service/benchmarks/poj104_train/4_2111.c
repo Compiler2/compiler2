@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int row,col,i,j;
 	int a[101][101];

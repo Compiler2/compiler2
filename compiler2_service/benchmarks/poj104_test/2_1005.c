@@ -5,7 +5,7 @@ struct book{
 	int num;
 	char author[27];
 };
-int main()
+int main_bench()
 {
  int n,m,i,j;
  int author_num[26]={0};

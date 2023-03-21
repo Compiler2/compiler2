@@ -1,7 +1,7 @@
 #include <header.h>
 
 char *reverse(char *pt);
-int main()
+int main_bench()
 {
 	char source[501];
 	char sub[501];

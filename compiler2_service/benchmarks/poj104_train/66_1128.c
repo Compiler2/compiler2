@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isRunNian(int y);
-int main(){
+int main_bench(){
  int y,m,d,a,b;
  scanf("%d%d%d",&y,&m,&d);
  if (1.0*(y-1)/400==0){

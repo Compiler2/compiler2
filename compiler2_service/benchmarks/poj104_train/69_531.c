@@ -67,7 +67,7 @@ void plus(char*a,char*b)
 	}
 	result[l+1]='\0';   
 }
-int main()
+int main_bench()
 {
 	char a[260];
 	char b[260];

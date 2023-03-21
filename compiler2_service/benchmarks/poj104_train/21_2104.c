@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	unsigned long a[1000], n, i, min, max;
 	double ave=0;

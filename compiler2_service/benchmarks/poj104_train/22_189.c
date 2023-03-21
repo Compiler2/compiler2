@@ -4,7 +4,7 @@ struct pp{
 	int a;char b;
 }st[100];
 
-void main()
+int main_bench()
 {
 	struct pp o;
 int n,i=0,j,s,k,l;

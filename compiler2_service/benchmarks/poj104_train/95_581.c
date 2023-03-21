@@ -15,7 +15,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	char c1[81],c2[81];
 	char t1[81],t2[81];

@@ -31,7 +31,7 @@ int dao(int x)
    return y;
    else{return -y;} 
 }
-int main()
+int main_bench()
 {  
   int a[100];
   for(int i=0;i<=5;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
 	char w1[100]={' '},w2[100]={' '};
 	int len1,len2,i,j,temp;

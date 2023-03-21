@@ -1,7 +1,7 @@
 #include <header.h>
 
 int issn(int n);
-int main()
+int main_bench()
 {
 	
 int n,a,b=0,c;

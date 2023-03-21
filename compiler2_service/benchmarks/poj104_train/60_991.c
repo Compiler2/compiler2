@@ -19,7 +19,7 @@ else
 re=0;
 return re;
 }
-int main()
+int main_bench()
 { 
 
 	int n;

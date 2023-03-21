@@ -11,7 +11,7 @@ int getMonthDay(int year, int month) {
 	return 30;
 }
 
-int main() {
+int main_bench() {
 
 	int year, month, day;
 	int total;

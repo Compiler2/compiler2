@@ -19,7 +19,7 @@ int hanshu(int a[5][5],int m,int n,int *a_p)
 		y=0;
 	return (y);
 }
-int main()
+int main_bench()
 {
     int hanshu(int a[5][5],int m,int n,int *a_p);
 	int a[5][5],i,j,m,n,y,*a_p;

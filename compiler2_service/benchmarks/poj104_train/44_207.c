@@ -32,7 +32,7 @@ void reverse(char n[])
       }
       getchar();
 }
-int main()
+int main_bench()
 {
     int i;
     for(i=1;i<=6;i++)

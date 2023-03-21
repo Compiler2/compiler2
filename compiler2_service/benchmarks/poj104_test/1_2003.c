@@ -21,7 +21,7 @@ int factoring(int a,int b)
 	return kind;
 }
 
-int main()
+int main_bench()
 {
 	int n,i,j,a[30000]={0},b[30000]={0};
 	scanf("%d",&n);

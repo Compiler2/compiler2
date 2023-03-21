@@ -2,7 +2,7 @@
 
 int a[1000][1000],b[1000][1000],c[1000];
 int x=0,y=0,z=0,i=0,m=0,e=0,r=0,t=0;
-int main()
+int main_bench()
 {
 scanf("%d",&e);
 

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int qiumax(int s[1005],int n);
 	int a[1005]={0},b[1005]={0},i=0;

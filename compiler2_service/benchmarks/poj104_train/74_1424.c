@@ -19,7 +19,7 @@ int zhishu(int x)
 	if(i==k+1) return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int l=1,n,m,i;
 	scanf("%d%d",&n,&m);

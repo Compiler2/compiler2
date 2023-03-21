@@ -31,7 +31,7 @@ int djt(int year,int month)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int n,i,year[200],month1[200],month2[200];
 	scanf("%d",&n);

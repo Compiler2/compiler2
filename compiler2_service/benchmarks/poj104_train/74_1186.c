@@ -34,7 +34,7 @@ int ss(int a)
     }
     return 1;   
 }
-int main()
+int main_bench()
 {
 	int m,n;
 	scanf("%d %d",&m,&n);

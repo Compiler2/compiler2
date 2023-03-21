@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,x,y,z,i,day,j,t;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};

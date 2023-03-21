@@ -21,7 +21,7 @@ int f(int a,int min)
     return r; 
 } 
 
-int main()
+int main_bench()
 {
       int n,a,i,j=0,k,m=0,r=0;
       scanf("%d",&n);

@@ -24,7 +24,7 @@ void turn(int a[],int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int x,y,i;
 	int b[100],c[100];

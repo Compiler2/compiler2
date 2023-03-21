@@ -32,7 +32,7 @@ int change(int a[5][5],int m,int n)
 		}
         return(1);
 	}
-void main()
+int main_bench()
 {
 	int b[5][5],i,k,x,y;
 	for(i=0;i<5;i++)

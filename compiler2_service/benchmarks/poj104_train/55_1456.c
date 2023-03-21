@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int a,b,i,j;
 int ai[128]={0};
 char ia[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

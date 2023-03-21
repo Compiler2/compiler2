@@ -42,7 +42,7 @@ void f4(int n,int m,int c[])
 	for(i=1;i<n+m;i++)
 		printf(" %d",c[i]);
 }
-int main()
+int main_bench()
 {
 	int i,n,m,a[100],b[100],c[200];
 	scanf("%d%d",&n,&m);

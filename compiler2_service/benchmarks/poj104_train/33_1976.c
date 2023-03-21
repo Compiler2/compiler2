@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int n,i,j;
 	scanf("%d",&n);
 	char jianji[1000][256];

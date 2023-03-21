@@ -33,7 +33,7 @@ int sum(int n)
           *(*(a+j)+i)=*(*(a+j)+i+1);
     return (t+sum(n-1));
 }
-int main()
+int main_bench()
 {
     int n,i,p,q;
     scanf("%d",&n);

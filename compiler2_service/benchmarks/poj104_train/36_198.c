@@ -16,7 +16,7 @@ int compare(char a,char b[100],char c[100])
 		z=1;
 	return(z);
 }
-void main()
+int main_bench()
 {
 	char a,s1[100],s2[100];
 	int i,s,j,k;

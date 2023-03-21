@@ -9,7 +9,7 @@ struct Student
  int e;
  int f;
 };
-int main()
+int main_bench()
 {
 	int n,i,k,m,t;
 	scanf ("%d",&n);

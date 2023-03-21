@@ -23,7 +23,7 @@ int m(char *p)
 	else if(*p>='A'&&*p<='Z') return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	gets(str1);n1=strlen(str1);
 	scanf("%s",str2);n2=strlen(str2);

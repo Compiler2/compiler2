@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void order(int p,int q,int r[]);
 	int n1,n2,i;

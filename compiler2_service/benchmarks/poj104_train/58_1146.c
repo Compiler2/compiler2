@@ -3,7 +3,7 @@
 
 int legal(char zfc[81]);
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,judge;
 	char str[81];

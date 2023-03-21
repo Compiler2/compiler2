@@ -13,7 +13,7 @@ else m=nixu(m);
 	return m;	
 }
 
-void main()
+int main_bench()
 {
 int n;
 

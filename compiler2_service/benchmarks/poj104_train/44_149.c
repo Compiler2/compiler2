@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int reverse(int num); 
 	int i,result,sz[6];
 	for(i=0;i<6;i++){

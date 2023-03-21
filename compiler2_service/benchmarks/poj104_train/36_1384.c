@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char word1[100]={'\0'},word2[100]={'\0'};
 	int num1[128]={0},num2[128]={0};

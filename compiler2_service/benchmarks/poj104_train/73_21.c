@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int alei[5][5];
 	int i,j,k,m,n,p,sign;

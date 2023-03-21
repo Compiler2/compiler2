@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
  char s[1000],sub[100],*ptr;
  int i,j,mark=0;

@@ -9,7 +9,7 @@
 
 
 
-int main(){
+int main_bench(){
     int num,i=1;
     scanf("%d",&num);
     if (num%3==0) {

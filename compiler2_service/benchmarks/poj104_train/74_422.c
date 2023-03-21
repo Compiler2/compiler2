@@ -3,7 +3,7 @@
 
 int huiwen(int);
 int sushu(int);
-void main()
+int main_bench()
 {
 	int m,n,i,sign=0;
 	scanf("%d %d",&m,&n);

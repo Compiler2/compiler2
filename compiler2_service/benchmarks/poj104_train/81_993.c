@@ -7,7 +7,7 @@ int f(int array[][5],int n,int m)
 	else
 		return (1);
 }
-void main()
+int main_bench()
 {
 	int array[5][5],i,j,n,m,mid;
 	for(i=0;i<5;i++)

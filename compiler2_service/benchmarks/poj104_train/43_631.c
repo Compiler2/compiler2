@@ -8,7 +8,7 @@ int isprime(int n)
 			return 0;
 		return 1;
 }
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

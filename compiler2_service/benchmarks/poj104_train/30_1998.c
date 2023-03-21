@@ -12,7 +12,7 @@
 		return 1;
 	}
 
-int main(){
+int main_bench(){
     int n;
 	int sum=0;
 	scanf("%d",&n);

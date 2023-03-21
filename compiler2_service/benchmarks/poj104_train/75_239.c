@@ -5,7 +5,7 @@ struct ans
 	int x;
 	int y;
 };
-int main()
+int main_bench()
 {
 	struct ans a[1000];
 	int b[1000];

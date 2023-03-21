@@ -24,7 +24,7 @@ for(i=0;i<n;i++)
 if((time==1)&&i==0)printf("%d",a[i]);
 else printf(" %d",a[i]);
 }}
-int main()
+int main_bench()
 {
 int a[100],b[100];
 int n1,n2;

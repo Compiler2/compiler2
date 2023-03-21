@@ -9,7 +9,7 @@ int change(int n,int m)
 }
 
 
-void main()
+int main_bench()
 {
 	int i,j,a[5][5],n,m,temp;
 	for(i=0;i<5;i++)

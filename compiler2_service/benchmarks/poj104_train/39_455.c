@@ -14,7 +14,7 @@ struct student
 };
 
 
-void main()
+int main_bench()
 {
 	int n,i,sum=0;
 	struct student Max;

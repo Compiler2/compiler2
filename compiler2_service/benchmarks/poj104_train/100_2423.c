@@ -6,7 +6,7 @@ struct word
 	int n;
 }w[52],tmp;
 
-int main()
+int main_bench()
 {
 	char s[301];
 	int i,sign=0,j;

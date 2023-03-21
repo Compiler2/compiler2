@@ -4,7 +4,7 @@ int i,j,k,m,n,l,r;
 int flag=1;
 int minleft,maxright;
 int b[20000];
-int main(){
+int main_bench(){
     minleft=50001;
     maxright=0;
     scanf("%d",&n);

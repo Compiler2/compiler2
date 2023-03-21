@@ -13,7 +13,7 @@ int f(int x){
 
 
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

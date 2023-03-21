@@ -8,7 +8,7 @@ char trans(char k)
 	else return(k);
 }
 
-main()
+main_bench_bench()
 {
 	char a[100],b[100];
 	int i,l1,l2,n=0;

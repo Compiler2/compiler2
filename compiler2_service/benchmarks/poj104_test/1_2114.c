@@ -34,7 +34,7 @@ int min(int a,int b)
     return count; 
     }
 }
-int main()
+int main_bench()
 {
       int n,i,a,number;
       scanf("%d",&n);

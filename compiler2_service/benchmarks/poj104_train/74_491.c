@@ -29,7 +29,7 @@ int fh(int n){
     if(b==n) return 1;
     else return 0;
     }
-int main()
+int main_bench()
 {
     int k1,k2,i;
     int count=0,ncount=0;

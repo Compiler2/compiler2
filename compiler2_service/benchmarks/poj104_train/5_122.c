@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int cout=0,len=0,flag=0,b=0;
 	double lv,a;

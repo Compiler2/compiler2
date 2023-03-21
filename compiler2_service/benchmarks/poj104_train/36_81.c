@@ -22,7 +22,7 @@ void find(int a[52],char str[100])
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	char str1[100],str2[100];
 	int a[52],b[52],i,n=0;

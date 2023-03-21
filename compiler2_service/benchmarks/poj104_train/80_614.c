@@ -2,7 +2,7 @@
 
 
 int Days(int x, int y, int z);
-void main()
+int main_bench()
 {
 	int a[3],b[3],n;
 	scanf("%d%d%d",&a[0],&a[1],&a[2]);

@@ -29,7 +29,7 @@ void judge(int a[][20],int m,int n)
    j=n-1;
    if(a[i][j]>=a[i][j-1]&&a[i][j]>=a[i-1][j]) printf("%d %d\n",i,j);
 }
-void main()
+int main_bench()
 {
    int m,n,i,j;
    scanf("%d%d",&m,&n);

@@ -6,7 +6,7 @@ struct student
     int yuwen;
     int shuxue;
 }stu[100000];
-int main()
+int main_bench()
 {
     int sum[100000];
     long i,j,n,t;

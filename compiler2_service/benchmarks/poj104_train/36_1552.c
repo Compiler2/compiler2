@@ -5,7 +5,7 @@ int compare(const void*a,const void*b)
 	return *(int*)a-*(int*)b;
 }
 
-int main()
+int main_bench()
 {
 	char s1[100],s2[100];
 	scanf("%s %s",s1,s2);

@@ -31,7 +31,7 @@ int reverse(int num)
     }
 }
     
-main()
+main_bench_bench()
 {
       int a,i;
       int num;

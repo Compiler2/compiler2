@@ -35,7 +35,7 @@ int print(int rp,int re,int lp,int le,int r,int l)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	
 	int r,l;

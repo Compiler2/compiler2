@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
   int a,b,c,d,e=0,f,i,Syear,Smonth,Sday,Eyear,Emonth,Eday;
   scanf("%d%d%d%d%d%d",&Syear,&Smonth,&Sday,&Eyear,&Emonth,&Eday);

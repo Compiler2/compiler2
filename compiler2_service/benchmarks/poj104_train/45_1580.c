@@ -14,7 +14,7 @@ int judge(char s[],char w[],int x)
 		return(1);
 	else return(0);
 }
-void main()
+int main_bench()
 {
 	int l1,l2,i;
 	char s[50],w[50];

@@ -44,7 +44,7 @@ void day()
 }
 
 
-int main()
+int main_bench()
 {
 	int n,m;
 	scanf("%d%d",&n,&m);

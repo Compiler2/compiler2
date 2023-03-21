@@ -7,7 +7,7 @@ int change(int a,int b)
 		v=1;
 	return(v);
 }
-void main()
+int main_bench()
 {
 	int n,m,i,j,t[5]={0},a[5][5]={0};
 	for(i=0;i<5;i++)

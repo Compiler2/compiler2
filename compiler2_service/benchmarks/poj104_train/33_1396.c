@@ -1,7 +1,7 @@
 #include <header.h>
 
 char pd(char x);
-int main(){
+int main_bench(){
 char a[256],b[256];
 int i,j,l,n;
 scanf("%d",&n);

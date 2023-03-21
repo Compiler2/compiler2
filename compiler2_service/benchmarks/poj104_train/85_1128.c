@@ -7,7 +7,7 @@ int biao(char a){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int n;
 	char zfc[100][21];
 	scanf("%d",&n);

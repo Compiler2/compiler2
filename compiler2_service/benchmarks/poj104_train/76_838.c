@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,k,min,max,sz1[50000],sz2[50000];
 	double e;

@@ -4,7 +4,7 @@
 char a1[252] , b1[252];
 int a[252] , b[252] , la , lb , l;
 
-int main ()
+int main_bench()
 {
    gets (a1); gets (b1);
    la = strlen (a1) , lb = strlen (b1) , l = la > lb ? la : lb;

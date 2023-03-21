@@ -2,7 +2,7 @@
 
 char a[50000];
     
-int main()
+int main_bench()
 {
     gets(a);
     int i,j;

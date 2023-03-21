@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int j,year,month,day,runnian=0,pingnian=0;
 	int sumday=0,xingqiji;

@@ -11,7 +11,7 @@ struct stu
 	int lw;
 } stu[100];
 
-main()
+main_bench_bench()
 {
 	int n,i,max,maxstu,sum;
 	int jj[100];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n = 0, a = 0, b = 0, i = 0, pos = 0, count[10000], num = 0;
 	

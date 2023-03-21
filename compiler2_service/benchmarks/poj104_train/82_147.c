@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,k,cs[100]={0},t=0,max;
 	int gao[100],di[100];

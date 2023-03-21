@@ -5,7 +5,7 @@ int huiwen(int k);
 int sushu(int k);
 char convert(int k);
 
-void main()
+int main_bench()
 {
 	
 	int m,n,k,mark=0,mark1,mark2;

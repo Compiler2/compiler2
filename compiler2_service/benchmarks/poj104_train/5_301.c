@@ -13,7 +13,7 @@ int h(char s[1000]){
 	}
 	return i;
 }
-int main () {
+int main_bench() {
 	double c,d,e ;
 	int j;
 	char a[1000],b[1000];

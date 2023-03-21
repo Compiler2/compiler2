@@ -7,7 +7,7 @@ struct student
 	int chi_grade;
 	int sum;
 }stu[100000];
-void main()
+int main_bench()
 {
 	int i,j,n,max,temp1,temp2;
 	scanf("%d",&n);

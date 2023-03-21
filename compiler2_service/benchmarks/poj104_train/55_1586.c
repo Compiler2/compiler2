@@ -2,7 +2,7 @@
 
 int change(char m);
 char trans(int n);
-int main()
+int main_bench()
 {
 	char f[10000];
 	int g[10000];

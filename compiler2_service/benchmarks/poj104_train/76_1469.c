@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int max,min,n,i,j,x=0;
     scanf("%d",&n);
 	int sx[50001],sy[50001],sz[50001]={0};

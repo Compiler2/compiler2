@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {char s[43];
 int m,n,sum=0,i,k;
 char *p=s;

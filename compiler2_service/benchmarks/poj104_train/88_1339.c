@@ -19,7 +19,7 @@ void skipstring()
     while(*pt&&(*pt<'0'||*pt>'9'))
         pt++;
 }
-int main()
+int main_bench()
 {
     gets(str);
     int i=0;

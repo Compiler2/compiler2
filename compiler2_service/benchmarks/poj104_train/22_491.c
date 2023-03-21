@@ -19,7 +19,7 @@ int minaaaa(int x,int y)
 }
 
 		
-int main()
+int main_bench()
 {
 	int i,j,m,a[1000],max,min;
 	int maxaaaa(int x,int y);

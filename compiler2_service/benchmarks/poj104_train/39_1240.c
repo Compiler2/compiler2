@@ -25,7 +25,7 @@ int award(struct student *p)
 		total+=850;
 	return total;
 }
-int main()
+int main_bench()
 {
 	int n,i,j;
 	long int all=0;

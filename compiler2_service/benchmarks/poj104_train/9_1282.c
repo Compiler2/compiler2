@@ -4,7 +4,7 @@ struct ILL{
 	char id[10];
 	int age;
 };
-int main()
+int main_bench()
 {
 	struct ILL ill[100];
     int n,i,k,j=0,Age[100],x;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int t,a[27]={0},i,j,k;
 char str[100000];

@@ -5,7 +5,7 @@ struct b
 	int na;
 	char au[20];
 }book[1000];
-int main()
+int main_bench()
 {
 	int m,i,len[1000],num[128]={0},j,max,p=0;
 	char maxi;

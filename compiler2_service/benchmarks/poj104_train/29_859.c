@@ -1,7 +1,7 @@
 #include <header.h>
 
 int shulie(int);
-int main()
+int main_bench()
 {
 	int n,i,j,tot;
 	double sum=0;

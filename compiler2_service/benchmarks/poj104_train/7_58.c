@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char word[2][256],chan[256];
 	int i,j,len[2],result=1,wzy=0,weizhi;

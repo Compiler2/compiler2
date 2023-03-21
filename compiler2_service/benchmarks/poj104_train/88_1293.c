@@ -23,7 +23,7 @@ void sum(char *p)
 	}
 
 }
-int  main()
+int  main_bench_bench()
 {
 	void sum(char *p);
 	char s[50],*p=s;

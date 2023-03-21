@@ -43,7 +43,7 @@ void monkey(int x,int y)
 
 }
 
-int main()
+int main_bench()
 {
 int n,k;
 

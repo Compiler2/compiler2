@@ -105,7 +105,7 @@ void week (int year,int month,int date)
 		printf("Sat.\n");
 }
 
-void main()
+int main_bench()
 {
 	int year,month,date;
 	scanf("%d %d %d",&year,&month,&date);

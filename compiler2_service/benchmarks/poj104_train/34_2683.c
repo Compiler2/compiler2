@@ -15,7 +15,7 @@ int change(int n)
 }
 
 
-void main()
+int main_bench()
 {
 	int n,k=0;
 	scanf("%d",&n);

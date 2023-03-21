@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n, mis[100], sum[100][20], i, e, time, t;
 	scanf("%d", &n);

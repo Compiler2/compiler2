@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int a[1000],b[1000];
 	int i,j,k,n,max=0,min;

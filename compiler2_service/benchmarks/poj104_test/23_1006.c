@@ -11,7 +11,7 @@ int danci(char a[],char word[][100])
     }
     return (n+1);
 }
-int main()
+int main_bench()
 {
     char a[100],word[100][100]={0};
     int n,i;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a,b,*p,i,j,k;
 	p=(int*)malloc(11000*sizeof(int));

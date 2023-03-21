@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char name[100][20]={'\0'};
 	int qimo[100]={0};

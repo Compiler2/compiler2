@@ -4,7 +4,7 @@
 void rev(char *x);
 int val(char a);
 
-int main()
+int main_bench()
 {
     char a[260],b[260],sum[260];
     int i,tmp=0,sign=0;

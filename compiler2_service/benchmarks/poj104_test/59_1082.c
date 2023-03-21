@@ -30,7 +30,7 @@ int Sick(int i,int j,int c)
 }
 
 
-int main(){ 
+int main_bench(){ 
 
 	char people[100];	
 	int i,j;

@@ -2,7 +2,7 @@
 
 
  
-int main()
+int main_bench()
 {
     double a[200],b[200],c[200];
     int d[200];

@@ -16,7 +16,7 @@ int f(int x){
 	if(x==-0)j==-0;
 	return(j);
 }
-int main(int argc, char* argv[])
+int main_bench()
 {	int a[6],b[6],i;
 	for(i=0;i<6;i++){
 		scanf("%d",&a[i]);

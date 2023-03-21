@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,total[100],youxiao[100];
 	scanf("%d",&n);

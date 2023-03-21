@@ -9,7 +9,7 @@ struct
 {
 	int cishu;
 }ren[26];
-int main()
+int main_bench()
 {
 	int n,zimu,a,b,i,j;
 	int sz[26];

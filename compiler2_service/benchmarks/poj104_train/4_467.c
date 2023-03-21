@@ -4,7 +4,7 @@
 
 
 
-int main(int argc, char* argv[]){
+int main_bench(){
 	int m,n,row,col,sz[100][100],k;
 	scanf("%d%d",&row,&col);
 	for(m=0;m<row;m++){

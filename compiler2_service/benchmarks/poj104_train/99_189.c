@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double n,age[99],num1=0.00,num2=0.00,num3=0.00,num4=0.00;
 	int i;
 	double p1,p2,p3,p4;

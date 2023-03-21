@@ -4,7 +4,7 @@ struct book{
 	int num;
 	char s[27];
 }shu[1000];
-int main(){
+int main_bench(){
 	int n,i,l,j,max;
 	char name;
 	int letter[26]={0};

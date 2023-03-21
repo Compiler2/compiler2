@@ -4,7 +4,7 @@ char str[100];
 char word[100][100]; 
 char a[1]; 
     
-void main(){
+int main_bench(){
     int i = 0;
     int j;
     char* p;

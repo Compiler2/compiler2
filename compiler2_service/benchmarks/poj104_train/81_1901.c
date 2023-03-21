@@ -15,7 +15,7 @@ int exch(int a[5][5],int rowa,int rowb){
 	}
 }
 
-int main()
+int main_bench()
 {
 	int a[5][5],rowa,rowb;
 	int row,col;

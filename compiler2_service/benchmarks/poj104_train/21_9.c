@@ -10,7 +10,7 @@ float average(int a[],int n)
 	return(avr);
 }
 
-void main()
+int main_bench()
 {
 	int n,a[300],i,num;
 	float avr,b[300],t=0;

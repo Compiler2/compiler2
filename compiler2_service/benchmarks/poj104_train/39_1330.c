@@ -2,7 +2,7 @@
 
 char name[101][22], yn[101][3];
 int s[101][4];
-void main()
+int main_bench()
 {
 	int n, i, j, reward[101], sumreward=0;
 	int f1(int, int), f2(int, int), f3(int), f4(int, char), f5(int, char);

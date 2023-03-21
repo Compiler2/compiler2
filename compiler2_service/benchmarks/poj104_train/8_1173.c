@@ -1,7 +1,7 @@
 #include <header.h>
 
 void sca(int n,int l);
-int main()
+int main_bench()
 {
 	int n1,n2;
 	scanf("%d%d",&n1,&n2);

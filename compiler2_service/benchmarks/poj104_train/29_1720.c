@@ -7,7 +7,7 @@ double f(int n)
 	else
 		return 1+1/f(n-1);
 }
-int main()
+int main_bench()
 {
     int m,n,i,j;
     scanf("%d",&m);

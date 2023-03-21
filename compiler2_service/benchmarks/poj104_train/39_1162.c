@@ -13,7 +13,7 @@ struct student
 int jiangxuejin(struct student s);
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	struct student a[101];
 	int N,sum,max,MAX;

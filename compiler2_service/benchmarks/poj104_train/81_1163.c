@@ -4,7 +4,7 @@ int jh(int a,int b){
 	if((a<5)&&(a>=0)&&(b<5)&&(b>=0)){return 1;}
 		 else{return 0;}
 }
-int main(){
+int main_bench(){
 	int m,n,i,t,k,a,b;
 	int sz[5][5];
 	for(i=0;i<5;i++){

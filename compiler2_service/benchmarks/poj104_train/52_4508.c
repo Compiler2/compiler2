@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pai(int a[],int n,int k);
-int main()
+int main_bench()
 {
 	int n,i,k;
 	int a[100];

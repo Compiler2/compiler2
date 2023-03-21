@@ -29,7 +29,7 @@ void judge2(char *p)
 	return;
 }
 
-int main()
+int main_bench()
 {
 	int num;
 	scanf("%d",&num);

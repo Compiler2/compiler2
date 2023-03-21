@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int col,row,n,t,j,m,i,k,l;
 	int a[101][101]={0},b[101][101]={0};

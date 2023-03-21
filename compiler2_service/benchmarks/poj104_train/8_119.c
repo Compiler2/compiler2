@@ -49,7 +49,7 @@ void putstr()
 	printf("%d",c[m+n-1]);
 }
 
-void main()
+int main_bench()
 {
 	getstr();
 	rangestr();

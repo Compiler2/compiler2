@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
     long  int a[100][100];
     long  int b[100][100];

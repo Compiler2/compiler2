@@ -1,7 +1,7 @@
 #include <header.h>
 
 void convert(char *);
-int main()
+int main_bench()
 {
 	char str1[85],str2[85];
 	int result;

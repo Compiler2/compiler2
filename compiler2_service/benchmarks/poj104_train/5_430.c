@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double x,p;
 	int i,l,k=0,c=1;
 	scanf("%lf",&x);

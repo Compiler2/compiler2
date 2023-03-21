@@ -23,7 +23,7 @@ void insert(char a[15])
 			printf("%c",a[i]);
 		    printf("%c\n",a[j-2]);
 }
-void main()
+int main_bench()
 {
 	char b[50][15];
 	int l=0,i;

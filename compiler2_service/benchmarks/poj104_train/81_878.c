@@ -3,7 +3,7 @@
 
 int sz[5][5];
 void exchange(int a,int b);
-int main()
+int main_bench()
 {
 
 	

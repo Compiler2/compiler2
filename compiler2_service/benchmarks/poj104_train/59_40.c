@@ -39,7 +39,7 @@ int count(char *a,int n)
     return res;
 
 }
-int main()
+int main_bench()
 {
     char a[100][100];
     int i,j;

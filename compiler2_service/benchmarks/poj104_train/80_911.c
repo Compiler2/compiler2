@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,ans=0,p,i;
 	int m[]={31,28,31,30,31,30,31,31,30,31,30,31};

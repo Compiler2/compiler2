@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i,n,y,m1,m2,j;
     int days[] = {   0, 31, 28, 31, 30, 31, 30,

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main ()
+int main_bench()
 {
 	int num[100][100];
 	int lefti = 0, leftj = 0, righti = 0, rightj = 0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[100],word[100]={'0'},change[100],chafor[100];
 	char a[100][100]={{'0'},{'0'}};

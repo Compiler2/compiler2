@@ -3,7 +3,7 @@
 
 char convert[100];
 
-int main(){
+int main_bench(){
     int N,l,i,tt;
     char a[10000];
     

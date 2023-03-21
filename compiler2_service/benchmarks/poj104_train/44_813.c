@@ -39,7 +39,7 @@ int reverse(int num)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int i,num;
 	for(i=1;i<=6;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int q(int a,int b);
-void main()
+int main_bench()
 {
 	int x[5][5],a,b,i,j,c[5];
 	for(i=0;i<5;i++)

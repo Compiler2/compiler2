@@ -17,7 +17,7 @@ int days(int year,int month)
 	}
 	return day;
 }
-int main()
+int main_bench()
 {
 	int year[200],month1[200],month2[200],day1[200],day2[200];
 	int n,i,day;

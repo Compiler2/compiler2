@@ -12,7 +12,7 @@ int check(int (*arr)[5], int n, int m)
 	return 1;
 }
 
-int main() {
+int main_bench() {
 	int arr[5][5];
          int check(int (*arr)[5], int n, int m);
          int i,j;

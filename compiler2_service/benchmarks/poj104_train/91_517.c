@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char zifu[2][100];
 	gets(zifu[0]);

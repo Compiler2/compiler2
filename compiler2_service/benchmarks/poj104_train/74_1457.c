@@ -19,7 +19,7 @@ for(i=0;i<y;i++)
 	return(0);}
 return(1);
 }
-void main()
+int main_bench()
 {int i,j=0,m,n,a[1001]={0};
 scanf("%d%d",&m,&n);
 for(i=m;i<=n;i++)

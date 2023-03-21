@@ -9,7 +9,7 @@ int su(int n)
     if(m==2) return 1;
     else return 0;
 }
-int main()
+int main_bench()
 {
     int n,j=0;
     scanf("%d",&n);

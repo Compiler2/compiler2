@@ -6,7 +6,7 @@
 
 
 
-int main()	{
+int main_bench()	{
 	int a[100], b[100];
 	int i, p = 1, q = 1;
 	for (i = 0; p != 0 && q != 0; i ++)	{

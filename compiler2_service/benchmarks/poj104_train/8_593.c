@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int m,n,n1[100],n2[100],o[200];
     int *p1=&m,*p2=&n;

@@ -17,7 +17,7 @@ void paixu(int n,int y[])
 		y[k]=y[i];y[i]=t;
 	}
 }
-main()
+main_bench_bench()
 {
 	int i=1,j,k,l,max=0,x[1001],y[1001];
 	char b;

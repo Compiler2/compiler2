@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char str[300],a[50][20],t[20],word1[20],word2[20];
 	int i,j=0,k=0,num,p1,p2,q1,q2;

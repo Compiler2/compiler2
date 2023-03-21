@@ -10,7 +10,7 @@ char peidui(char x){
    if(x=='G'){s='C';}
    return s;
 } 
-int main(){
+int main_bench(){
    int n,i,j,len;
    char jianji[256];
    scanf("%d",&n);

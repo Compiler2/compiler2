@@ -19,7 +19,7 @@ int hw(int n)
 	else 
 	return 0;
 }
-void main()
+int main_bench()
 {
 	int n,m,i,k=0,a[100];
 	scanf("%d %d",&n,&m);

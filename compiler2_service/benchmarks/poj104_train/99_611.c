@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,AGE,i,A1_18=0,A19_35=0,A36_60=0,A_60=0;
 	float a;

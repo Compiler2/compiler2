@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int n,m,i,t,j=0,k,o,r,b[30]={0};
 	char pp[30]={"\0"};

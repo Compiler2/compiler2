@@ -14,7 +14,7 @@ int compare(char *local,int len)
 	else return 0;
 }
 
-int main()
+int main_bench()
 {
 	char newline[150];
 	char *news=newline,*local,*p;

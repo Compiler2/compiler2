@@ -4,7 +4,7 @@ int c[26];
 char b[1000][100];
 char out;
 
-int main()
+int main_bench()
 {
 	int n,i,j,tmp=0,tmp1=0,tmp2;
 	int a[1000];

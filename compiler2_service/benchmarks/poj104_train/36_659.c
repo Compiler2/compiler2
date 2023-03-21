@@ -22,7 +22,7 @@ void compare(int ms[],int ns[])
 	}
 	printf("YES\n");
 }
-void main()
+int main_bench()
 {
 	int ns1[60]={0},ns2[60]={0},l1,l2,i;
 	char s1[100],s2[100];

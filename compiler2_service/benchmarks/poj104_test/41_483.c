@@ -27,7 +27,7 @@ int pd(int x)
     if (x==5) if (a[4]==1) return 1;
     else return 0;
 }
-int main()
+int main_bench()
 {     int i,flag;
       for (a[1]=1;a[1]<=5;a[1]++)
       for (a[2]=1;a[2]<=5;a[2]++)

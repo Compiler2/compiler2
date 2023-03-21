@@ -37,7 +37,7 @@ void hebing(int shuzu1[],int shuzu2[],int n1,int n2)
     printf("%d ",shuzu2[i]);
     printf("%d",shuzu2[i]);
 }
-int main()
+int main_bench()
 {
     scan();
     paixu(shuzu1,n1);

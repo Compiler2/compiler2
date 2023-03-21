@@ -8,7 +8,7 @@ int prime(int x)
 	              return 1;
 }
 int prime(int x);
-main()
+main_bench_bench()
 {
 	int n,a,b,x;
 	scanf("%d",&n);

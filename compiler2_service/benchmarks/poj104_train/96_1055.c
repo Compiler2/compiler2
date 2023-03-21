@@ -10,7 +10,7 @@ int rem13(int x,int y)
 	int n=(10*x+y)%13;
 	return(n);
 }
-int main()
+int main_bench()
 {
 	char c[101],d[101];
 	gets(c);

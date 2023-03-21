@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench()
 {
       int amount_temp=0,amount_most=0;
       char most,temp;

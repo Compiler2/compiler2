@@ -2,7 +2,7 @@
 
 int x;
 int y(int x);
-int main()
+int main_bench()
 {
 	int n,i,z=0;
 	scanf("%d",&n);

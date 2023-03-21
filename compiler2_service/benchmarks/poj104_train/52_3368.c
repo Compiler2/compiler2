@@ -12,7 +12,7 @@ void change(int a[],int n,int m)
 	for(t=0;t<m;t++)
 		*(p+t)=*(p1+t);
 }
-void main()
+int main_bench()
 {
 	int a[1000],n,m,i=0;
 	scanf("%d%d",&n,&m);

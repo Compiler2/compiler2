@@ -11,7 +11,7 @@ int f(int m,int n)
 	else k=f(m,n-1)+f(m-n,n);
 	return(k);
 }
-int main()
+int main_bench()
 {
 	int i,t,n,m,k;
 	int f(int m,int n);

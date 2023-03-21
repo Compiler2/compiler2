@@ -8,7 +8,7 @@ int panduan(int a,int b){
 	else
 		return -1;
 }
-int main(){
+int main_bench(){
 	int n,a,b,x=0;
 	scanf("%d",&n);
 

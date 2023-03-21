@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
     int result[100],length,num[101]={0},i,k,small,large,not_zero;
     for(i=0;i<100;i++)

@@ -33,7 +33,7 @@ void gai(int h,int l)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int i,j,h,l;
 	scanf("%d %d",&h,&l);

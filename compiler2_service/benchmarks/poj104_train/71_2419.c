@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[20];
-main()
+main_bench_bench()
 {
 	void run(int x,int y);
 	void ping(int x,int y);

@@ -38,7 +38,7 @@ int f(int n)
 }
 
 
-void main()
+int main_bench()
 {
     int f(int n);
 	int m,n,i,a[100000],l=0,x=0,b[100000];

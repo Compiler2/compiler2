@@ -1,7 +1,7 @@
 #include <header.h>
 
 int jis(int x, int y, int a[5][5]);
-void main()
+int main_bench()
 {
     
 	int s[5][5],i,j,m,n,x[5];

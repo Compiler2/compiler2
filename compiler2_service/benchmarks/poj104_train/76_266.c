@@ -7,7 +7,7 @@ struct couple
        int y;
 };
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int n,i,j;
   scanf("%d",&n);

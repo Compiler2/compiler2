@@ -7,7 +7,7 @@
 		int math;
 		int total;
 	}a[100000];
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

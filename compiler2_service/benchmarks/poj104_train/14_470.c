@@ -13,7 +13,7 @@ struct Scr
 	int sum;
 };
 
-int main()
+int main_bench()
 {
 	struct  Student stu[100000];
 	struct  Scr  scr[3];

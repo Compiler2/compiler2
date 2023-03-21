@@ -5,7 +5,7 @@ struct p
        char c;
        int x;
 }p[1000];
-main()
+main_bench_bench()
 {
       char str[1100],i,L,j,s,t=0,count=0;
       scanf("%s",str);

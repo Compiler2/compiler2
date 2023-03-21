@@ -19,7 +19,7 @@ int huiwen(int n){
 if(m==n) z=1; 
 return z;
 }
-void main(){
+int main_bench(){
      int m, n, i,j=0;
 	 scanf("%d%d",&m,&n);
 	 for(i=m;i<n+1;i++){

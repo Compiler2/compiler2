@@ -24,7 +24,7 @@ else
 hanoi(z);
 }
 }
-void main()
+int main_bench()
 {  
 	int a;
 scanf("%d",&a);

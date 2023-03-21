@@ -3,7 +3,7 @@
 char a[2000];
 char sub[2000];
 int b[2000];
-int main()
+int main_bench()
 {
 	gets(a);
 	gets(sub);

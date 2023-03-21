@@ -13,7 +13,7 @@ struct student
 }stu;
 double max=0;
 
-void main()
+int main_bench()
 {
 	void compare(struct student temp);
 	struct student stu1;

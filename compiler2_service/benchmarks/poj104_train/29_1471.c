@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int m,n,i,k;
 	double a,b,s=0,e;

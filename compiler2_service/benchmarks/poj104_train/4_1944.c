@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench()
 {
 	int row,col,n,m,i,j;
 	int (*p)[1000],(*q)[1000];

@@ -10,7 +10,7 @@ struct student
 	int lunwen;
 	double sum;
 }stu[100];
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int count[500]={0};
 	int l=0,max=0,n,len,i,j,k,check,flag;

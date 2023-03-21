@@ -6,7 +6,7 @@ void zhuan(char str[80])
 	for(t=0;str[t]!='\0';t=t+1)
 		if(str[t]>='A'&&str[t]<='Z')str[t]=str[t]+32;
 }
-void main()
+int main_bench()
 {
 	char a[80]={0};
 	char b[80]={0};

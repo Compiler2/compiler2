@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a[100][100],m,n,i,j,temp;
 	for (i=0;i<=4;i++)

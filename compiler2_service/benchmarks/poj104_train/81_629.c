@@ -10,7 +10,7 @@ int h(int m,int n){
 	}
 	return g;
 }
-int main () {
+int main_bench() {
 	int a[5][5],i,j,e,x,y;
     for (i=0;i<5;i++){
 		for (j=0;j<5;j++){

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int z,i,j,k,temp,a[300]={0};
 	char str[1500]={'\0'};

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int sz[7],i,sum=0,j=0;
 	for(i=0;;i++){
         for(j=0;j<6;j++){

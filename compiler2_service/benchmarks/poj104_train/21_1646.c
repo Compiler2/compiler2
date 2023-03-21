@@ -17,7 +17,7 @@ float g(float a)
 	else
 		return -a;
 }
-void main()
+int main_bench()
 {
 	float a[100],b[100],c=0,d,t,m[100];
 	int n,i,j,k=0;

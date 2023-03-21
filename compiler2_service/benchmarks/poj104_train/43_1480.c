@@ -16,7 +16,7 @@ int zhiyinshu(int x)
 	}
 	return 1;
 }
-int main ()
+int main_bench()
 {
     int i,j,x;
     scanf("%d",&x);

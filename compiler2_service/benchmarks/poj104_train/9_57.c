@@ -8,7 +8,7 @@ struct pat
        int turn;
 } pa[100],temp,temp2;
 
-int main()
+int main_bench()
 {
     int i,j,t,s,n,m;
     scanf("%d",&n);

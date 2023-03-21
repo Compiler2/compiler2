@@ -28,7 +28,7 @@ int reverse(int a)
 	  p=0;
 	return p;
 }
-int main()
+int main_bench()
 {
 	int reverse(int a);
 	int i,b[6];

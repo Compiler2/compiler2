@@ -2,7 +2,7 @@
 
 int isRunNian(int year);
 int DiJiTian(int year, int month, int day);
-int main(){
+int main_bench(){
 
 	int y,m,d,sum,a,b,i,n=0;
 scanf("%d%d%d",&y,&m,&d);

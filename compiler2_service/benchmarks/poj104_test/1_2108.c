@@ -2,7 +2,7 @@
 
 int fenjie(int x,int p);
 int N;
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

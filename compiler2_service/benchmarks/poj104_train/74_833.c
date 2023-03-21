@@ -17,7 +17,7 @@ int max(int x)
 {int j,k;
 k=x/2;for(j=2;j<=k;j++)if(x%j==0)break;
 if(j>=k)return(1);else return(0);}
-void main()
+int main_bench()
 {
 int m,n,i,k=0;
 scanf("%d%d",&m,&n);

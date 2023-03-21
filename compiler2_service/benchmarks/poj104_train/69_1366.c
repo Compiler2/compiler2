@@ -20,7 +20,7 @@ int trans(char x)
 	} 
     return y; 
 } 
-int main()
+int main_bench()
 {
 	char a[251]={'\0'},b[251]={'\0'};
 	int A[250]={0},B[250]={0},C[251]={0};

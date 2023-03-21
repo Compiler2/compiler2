@@ -1,7 +1,7 @@
 #include <header.h>
 
 int group[1000]={0};
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,m,k,j,a=0,b=0;
 	

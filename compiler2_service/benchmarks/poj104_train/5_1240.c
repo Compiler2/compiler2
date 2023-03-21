@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double e;
 	char zf[2][501],count=0,c,w=0;
     scanf("%lf%c",&e,&c);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int n,gao[100],di[100],xiaoshi=0,max=0,i;
 	scanf("%d",&n);
 	for(i=0;i<n;i++){

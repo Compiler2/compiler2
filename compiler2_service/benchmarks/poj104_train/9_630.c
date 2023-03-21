@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int renshu,nianling[1000][2],bijiao[1000][2];
     char id[1000][1000];

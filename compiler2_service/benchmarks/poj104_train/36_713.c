@@ -9,7 +9,7 @@ void num(char a[],int c[],int l[],int n)
                      if(a[i]<123&&a[i]>96){t=a[i]-97;l[t]=l[t]+1;}
      }
 }
-int main()
+int main_bench()
 {
     void num(char a[],int c[],int l[],int n);
     char a[500]={'\0'},b[500]={'\0'};

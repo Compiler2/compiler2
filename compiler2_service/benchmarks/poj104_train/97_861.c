@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
    int n,yibai=0,wushi=0,ershi=0,yishi=0,wu=0,yi=0;
    scanf("%d",&n);

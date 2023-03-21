@@ -12,7 +12,7 @@ int jiaogu(int n)
 	}
 	return(n);
 }
-void main()
+int main_bench()
 {
 	int jiaogu(int n);
 	int n;

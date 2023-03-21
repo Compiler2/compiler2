@@ -10,7 +10,7 @@ int wer(int a)
           i=a/2;
      return i;
 }
-int main()
+int main_bench()
 {
      int a;
      scanf("%d",&a);

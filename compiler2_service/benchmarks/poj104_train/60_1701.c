@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
       int i,j,k,m,n;
       int sushu(int a);

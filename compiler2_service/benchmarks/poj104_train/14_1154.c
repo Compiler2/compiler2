@@ -6,7 +6,7 @@ struct student
         int sum;
 };
 
-int main()
+int main_bench()
 {
 
    int n,i,j,t,a,b,m;

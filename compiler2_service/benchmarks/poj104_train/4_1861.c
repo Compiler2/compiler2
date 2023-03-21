@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench()
 {
       int (*p)[100],i,j,k,m,n,flag=0;
       p=(int(*)[100])calloc(100,100*sizeof(int));

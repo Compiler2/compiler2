@@ -10,7 +10,7 @@ int checkprime(int af)
 	}
 	return 1;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int a,n,i;
 	scanf("%d",&n);

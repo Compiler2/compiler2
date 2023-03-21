@@ -1,7 +1,7 @@
 #include <header.h>
 
  
-void main()
+int main_bench()
 {
 	int a[100],n,m,i;
 	int*p;

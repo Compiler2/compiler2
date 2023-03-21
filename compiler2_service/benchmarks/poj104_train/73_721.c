@@ -4,7 +4,7 @@ int a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 int a[100];
 char c[100];
 
-int main()
+int main_bench()
 {
     int judge1,judge2;
     judge1=judge2=0;

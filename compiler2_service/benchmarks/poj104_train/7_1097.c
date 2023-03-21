@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[256],b[256],c[256];
 	int la,lb,lc,i,j,p=0;

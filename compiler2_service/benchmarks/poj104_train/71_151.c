@@ -12,7 +12,7 @@ int f(int nian,int yue ,int ri){
 	z=z+ri;
 	return(z);
 }
-int main(int argc, char* argv[])
+int main_bench()
 {	int nian,yue1,yue2;
 	int n,i;
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int i,t,n;
     char f[101],g[101];
     for(i=0;i<101;i++){g[i]='\0';}

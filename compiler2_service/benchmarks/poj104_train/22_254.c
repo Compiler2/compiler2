@@ -2,7 +2,7 @@
 
 int a[300]={0};
 int N;
-void main()
+int main_bench()
 {
 	char c;
 	int i=0;

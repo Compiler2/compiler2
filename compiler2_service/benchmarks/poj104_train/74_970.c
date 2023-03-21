@@ -26,7 +26,7 @@ int zhishu(int i)
 	else return(1);
 
 }
-void main()
+int main_bench()
 {
 	int m,n;
 	int x[100];

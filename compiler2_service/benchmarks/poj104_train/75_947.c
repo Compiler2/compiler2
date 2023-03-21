@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int come[10000],go[10000],i=0,j=0;
     int num[1100]={0};

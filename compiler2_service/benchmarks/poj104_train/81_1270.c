@@ -1,7 +1,7 @@
 #include <header.h>
 
 int zn(int n,int m,int sz[5][5]);
-int main(){
+int main_bench(){
 	int sz[5][5];
 	int n,m;
 	int a,b;

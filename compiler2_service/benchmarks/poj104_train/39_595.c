@@ -12,7 +12,7 @@ int sch(int e,int test,char mon,char reg,int art)
 	if(test>80&&mon=='Y') total+=850;
 	return total;
 }
-int main()
+int main_bench()
 {
 	int peoplenumber,i,g,c,a,sum=0,most=0;
 	char name[100],top[100],m,r;

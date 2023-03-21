@@ -2,7 +2,7 @@
 
 int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 int startYear, startMonth, startDay, endYear, endMonth, endDay;
-int main()
+int main_bench()
 {
 
 	scanf("%d %d %d", &startYear, &startMonth, &startDay);

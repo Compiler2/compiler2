@@ -14,7 +14,7 @@ int Min(int a[],int n)
 	return min;
 }
 
-int main()
+int main_bench()
 {
 	int n,i,N,dd1,dd2,j,min;
 	int row[100][100],col[100][100],sum[100];

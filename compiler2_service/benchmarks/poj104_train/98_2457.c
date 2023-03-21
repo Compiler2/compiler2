@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int i,j,k,n,m,sum=0;
 	char a[1000][40]={0},*p;
 	scanf("%d",&n);

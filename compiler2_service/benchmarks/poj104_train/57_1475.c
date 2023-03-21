@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a[2]={'e','r'},b[2]={'l','y'},c[3]={'i','n','g'};
 	char s[20];

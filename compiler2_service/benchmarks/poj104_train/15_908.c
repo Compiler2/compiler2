@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int area[1000][1000];
 int i,j,n,i1,j1,i2,a,b,j2,J1=0,J2=0,I1=0,I2=0,GESHU;

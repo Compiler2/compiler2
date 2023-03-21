@@ -28,7 +28,7 @@ int B(int k)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int m,n,k;
 	int first=1,flag=1;

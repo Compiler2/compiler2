@@ -18,7 +18,7 @@ int reverse(int num)
 	if(flag)return -mun;
 	else return mun;
 }
-int main()
+int main_bench()
 {
 	int i,a[100]={0};
 	for(i=0;i<6;i++)

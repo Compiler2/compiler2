@@ -2,7 +2,7 @@
 
 
 int feibonaqi(int n1);
-int main()
+int main_bench()
 {
 	double sum = 0;
 	int i, j;

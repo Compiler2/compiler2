@@ -8,7 +8,7 @@ struct student
     int he;
 }student[100000];
 
-int main()
+int main_bench()
 {
     int i,n,j,s=0,m;
     scanf("%d",&n);

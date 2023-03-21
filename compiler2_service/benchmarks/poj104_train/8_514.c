@@ -38,7 +38,7 @@ void run4()
          printf("%d ",a[i]);
      printf("%d",a[n+m]);
 }
-int main()
+int main_bench()
 {
     run1();
     run2();

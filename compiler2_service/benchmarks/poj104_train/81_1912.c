@@ -18,7 +18,7 @@ int f(int s[5][5],int n, int m)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int f(int s[5][5],int n, int m);
 	int i,j,n,m,s[5][5];

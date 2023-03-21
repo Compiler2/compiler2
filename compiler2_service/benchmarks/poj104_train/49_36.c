@@ -29,7 +29,7 @@ int f(int i,int j)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i,j,k,len;
 	

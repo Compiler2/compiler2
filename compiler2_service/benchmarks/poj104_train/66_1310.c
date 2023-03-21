@@ -19,7 +19,7 @@ void CWD(int y, int m, int d)
 	case 6:printf("Sun.");break;
 	}
 }
-int main()
+int main_bench()
 {
 	int year=0,month=0,day=0;
 	scanf("%d%d%d",&year,&month,&day);

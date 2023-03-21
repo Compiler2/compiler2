@@ -12,7 +12,7 @@ int judge(int x,int y)
       return 0;
   return 1;
 }
-main()
+main_bench_bench()
 {
    int i,j,k=0;
    for(i=0;i<5;i++)

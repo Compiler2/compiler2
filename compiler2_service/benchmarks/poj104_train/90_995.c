@@ -8,7 +8,7 @@ int f(int m,int n)
 	if(m>1&&n>1&&m<n) a=f(m,n-1);
 	return(a);
 }
-void main()
+int main_bench()
 {
 	int k,m[10],n[10],y[10],i;
 	scanf("%d",&k);

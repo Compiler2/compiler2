@@ -21,7 +21,7 @@ void f(int p, int n)
 	if(p>0)
 		printf(" ");
 }
-int main ()
+int main_bench()
 {
 	int i, n1, n2;
 	scanf("%d%d", &n1, &n2);

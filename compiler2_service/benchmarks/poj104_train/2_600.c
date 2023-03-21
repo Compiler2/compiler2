@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int m,len[1000],sum[26]={0},max,i,j,i0;
 	scanf("%d",&m);

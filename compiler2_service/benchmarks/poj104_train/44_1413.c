@@ -36,7 +36,7 @@ void reverse(int a)
         printf("\n");
     }
 }
-main()
+main_bench_bench()
 {
     int a[6],i;
     for(i=0;i<6;i++)

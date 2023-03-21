@@ -9,7 +9,7 @@ struct file
 	int ati;
 	int money;
 };
-int main()
+int main_bench()
 {
 	struct file f[101];
 	int n,sum=0;

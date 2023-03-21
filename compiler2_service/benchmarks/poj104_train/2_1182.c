@@ -13,7 +13,7 @@ struct number
 	int time;
 };
 
-int main()
+int main_bench()
 {
 	int i,j,m,k,length;
 	struct list book[100];

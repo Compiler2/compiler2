@@ -27,7 +27,7 @@ int fenjie(int a,int b)
 }
 
 	
-int main()
+int main_bench()
 { 
 	int n,a[100],i,k;
 	scanf("%d",&n);

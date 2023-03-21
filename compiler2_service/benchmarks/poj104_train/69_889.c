@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char a[250]={0},b[250]={0},sum[250]={0};
     scanf("%s",a);

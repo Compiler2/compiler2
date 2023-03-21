@@ -18,7 +18,7 @@ int act(int n,int m)
         return (act(n, m-n)+act(n-1, m));
 }
 
-int main()
+int main_bench()
 {
     int times,i,m,n;
     scanf("%d",&times);

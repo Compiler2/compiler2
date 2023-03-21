@@ -30,7 +30,7 @@ void fun(int *p,int n)
 
 	
 }
-int main()
+int main_bench()
 {
 	int a[300],*p=a;
 	int n,i;

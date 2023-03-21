@@ -16,7 +16,7 @@ int judge(char a[81])
           }
           else return 0;
 }
-int main()
+int main_bench()
 {
     int n,x;
     int i;

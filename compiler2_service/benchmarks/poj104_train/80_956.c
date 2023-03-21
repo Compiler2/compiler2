@@ -16,7 +16,7 @@ int days(int a,int b,int c)
 	return(result);
 }
 
-int main()
+int main_bench()
 {
 	int a1,b1,c1,a2,b2,c2,sum=0,temp,x;
 	int i,j,year;

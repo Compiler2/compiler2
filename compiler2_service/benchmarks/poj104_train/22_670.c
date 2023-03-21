@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  char t[1501]={'\0'};
  int i,j=1;

@@ -36,7 +36,7 @@ void sort(float a, int n)
     maopao(3);
 }
 
-int main()
+int main_bench()
 {
     int i, n, num;
     float yw, sx, score;

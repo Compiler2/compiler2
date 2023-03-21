@@ -5,7 +5,7 @@ struct stu
        char name[20],ganbu,xibu;
        int qimo,banji,lunwen,sum;
 };
-int main()
+int main_bench()
 {
     struct stu a[100],t;
     int n,i,sum=0,j,k;

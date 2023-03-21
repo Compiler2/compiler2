@@ -20,7 +20,7 @@ int f(int m,int n)
     }
     return (c);
 }         
-int main()
+int main_bench()
 {
       int t,m,n;
       scanf("%d",&t);

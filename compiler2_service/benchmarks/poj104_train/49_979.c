@@ -16,7 +16,7 @@ int huiwen(char c1[510])
    else
      return 0;
 }
-int main( )
+int main_bench( )
 {
    char s[510];
    int i,j,k,n;

@@ -17,7 +17,7 @@ int sushu(int w)
 	return d;
 }
 
-	int main()
+	int main_bench()
 {
 	int m,p;
 	scanf("%d",&m);

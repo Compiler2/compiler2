@@ -23,7 +23,7 @@ void bubble(struct student stu[],int n)
 }
 
 
-int main()
+int main_bench()
 {
 	struct student *p;
 	int i;

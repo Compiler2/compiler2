@@ -7,7 +7,7 @@ int max_value(int a[],int n)
 	if(a[i]>a[k]) k=i;
 	return a[k];
 }
-void main()
+int main_bench()
 {
 	int a[300]={0},i,k=0,max,n=0;
 	char c;

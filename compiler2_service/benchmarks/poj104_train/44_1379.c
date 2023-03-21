@@ -2,7 +2,7 @@
 
 
 int reverse(int num);
-int main()
+int main_bench()
 {
     int sz[6],i; 
     for(i=0;i<6;i++)

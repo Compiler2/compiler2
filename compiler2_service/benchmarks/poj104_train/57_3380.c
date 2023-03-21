@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	char word[100];
 	int n,len;
 	scanf("%d",&n);

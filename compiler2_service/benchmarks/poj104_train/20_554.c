@@ -32,7 +32,7 @@ void fun(char * str, char * substr)
 		*(++temp) = *substr++;
 	}
 }
-int main()
+int main_bench()
 {
 	char str[16], substr[4];
 	int i, lenth;

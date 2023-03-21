@@ -13,7 +13,7 @@ int judge(char s[],int start,int wid)
 	else
 		return(0);
 }
-int main()
+int main_bench()
 {
 	char s[600]={'\0'};
 	int l,w,i,j,c;

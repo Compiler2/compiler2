@@ -2,7 +2,7 @@
 
 void sort(float a,float b);
 int n,*sz;
-int main(){
+int main_bench(){
     scanf("%d",&n);
     sz=(int*)malloc(n*sizeof(int));
     int i;

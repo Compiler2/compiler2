@@ -11,7 +11,7 @@ struct chuan
 	int num;
 	char e[5];
 };
-int main()
+int main_bench()
 {
 	int n,c,i,j,k=0,t=0,q=0,w=0,m=0,d,s=0,max;
 	char a[500];

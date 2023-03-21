@@ -19,7 +19,7 @@ int trans()
 	}
 	else return 0;
 }
-int main()
+int main_bench()
 {   
     c=trans();
 	if(c)

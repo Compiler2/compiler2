@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int haha(int a,int b,int s[5][5]);
 int t[5][5];
 int m,n,i,j,c;

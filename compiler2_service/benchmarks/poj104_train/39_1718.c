@@ -11,7 +11,7 @@ struct fuckme
 	int paper;
 }student[101];
 
-int main()
+int main_bench()
 {
 	int max(int total[101], int n);
 	int n,k,N=0;

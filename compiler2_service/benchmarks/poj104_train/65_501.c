@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i;
 int game[201][2]={0};
 int a=0,b=0;

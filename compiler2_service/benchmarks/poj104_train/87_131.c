@@ -1,7 +1,7 @@
 #include <header.h>
 
 int miao(int x,int y,int z);
-int main(){
+int main_bench(){
 	int a,b,c,d,e,f,s;
 	s = 0;
 	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);

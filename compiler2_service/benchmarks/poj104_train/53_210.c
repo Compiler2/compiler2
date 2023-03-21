@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int num[300],copy[300],sNum,i,count=0,j,flag=0;
 	scanf("%d",&sNum);

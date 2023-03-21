@@ -14,7 +14,7 @@ int compare (int k)
     return 1;
 }
 
-int main ()
+int main_bench()
 {
     for (int i=0;i<=99;i++)
     {

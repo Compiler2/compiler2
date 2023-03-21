@@ -6,7 +6,7 @@ int ch(int n,int m)
 	if(n>4 || n<0 || m>4 || m<0) return 0;
 	if((n>=0 && n<=4) && (m>=0 && m<=4)) return 1;
 }
-int main()
+int main_bench()
 {
 	for(i=0;i<5;i++)
 	{

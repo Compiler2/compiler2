@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int len,i,j;
 	char line1[101]={'\0'},line2[101]={'\0'};

@@ -20,7 +20,7 @@ int y=0,o=0;
 char nametemp[11];
 int agetemp;
 
-int main()
+int main_bench()
 {
 	int i,j;
 	scanf("%d",&n);

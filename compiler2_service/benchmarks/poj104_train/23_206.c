@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int ls,i,num,sk,lk,word;
 	char kong[100][100],s1[100][100],s[100];

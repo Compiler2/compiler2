@@ -15,7 +15,7 @@ int check(int b[],int len,int x)
 	if(flag)
 		return 1;
 }
-int main()
+int main_bench()
 {
 	int j,i,n;
 	int a[20100],b[20100];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char s[257]={'0'},sub[257]={'0'},rep[257]={'0'},temp[257]={'0'};
 	scanf("%s%s%s",s,sub,rep);
 	int i,j,k,len1,len2,time;

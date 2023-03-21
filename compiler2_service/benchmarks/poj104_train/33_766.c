@@ -6,7 +6,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int t;
 	scanf("%d", &t);

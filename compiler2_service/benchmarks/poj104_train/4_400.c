@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int min(int a,int b);
 	int max(int a,int b);

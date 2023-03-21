@@ -8,7 +8,7 @@ struct student
 	int zong;
 }stu[100001];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,max1=0,max2=0,max3=0,fir,sec,thi;
 	scanf("%d",&n);

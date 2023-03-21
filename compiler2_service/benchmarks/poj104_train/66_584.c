@@ -22,7 +22,7 @@ int dijitian(int year,int month,int day){
 	result+=day;
 	return  result;
 }
-int main()
+int main_bench()
 {
 	int year,month,day,run,pin;
 	int i,a,t,y,r,total=0;

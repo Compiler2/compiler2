@@ -51,7 +51,7 @@ void shuchu(int n, int m)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,m,sign=1;
 

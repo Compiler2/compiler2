@@ -4,7 +4,7 @@ const int move[8]={-1,0,1,0,0,-1,0,1};
 struct pnt{int x,y,day; }st[100050];
 char map[128][128];
 int ans,m,n;
-int main()
+int main_bench()
 {	int i,j,l=0,r=0;
 	scanf("%d",&n);
 	for (i=0;i<n;i++)

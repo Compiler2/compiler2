@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {    void zhao(int n,int y,int a[]);
     int x=0,y=0,a[100]={0},t=0,i=0,n=0,k=0;
 	scanf("%d%d",&x,&y);

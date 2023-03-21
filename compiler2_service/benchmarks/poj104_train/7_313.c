@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i,j,slen,alen ;
     char *ss[2],s[256],s1[256],s2[256];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n[100], m[100], i,j=0;
     for(i=0; i<100; i++){

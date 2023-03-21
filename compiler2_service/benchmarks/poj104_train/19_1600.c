@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main(){
+main_bench_bench(){
        char text[100],s[100][20]={'\0'},a[20],b[20];
        int i,j=0,k=0,len;
        gets(text);

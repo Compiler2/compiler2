@@ -5,7 +5,7 @@ int matrix[101][101];
 
 void transform(int , int);
 
-int main()
+int main_bench()
 {
         int m, n;
         int i, j;

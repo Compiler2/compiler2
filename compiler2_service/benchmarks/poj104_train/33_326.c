@@ -2,7 +2,7 @@
 
 char chaina[1000][260], chainb[1000][260];
 int len;
-int main()
+int main_bench()
 {
 	int n, i, j;
 	scanf("%d", &n);

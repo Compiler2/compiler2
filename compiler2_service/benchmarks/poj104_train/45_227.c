@@ -2,7 +2,7 @@
 
 char a[50],b[50];
 int f(int,int);
-void main()
+int main_bench()
 {
 	int len1,len2,i;
     scanf("%s%s",a,b);

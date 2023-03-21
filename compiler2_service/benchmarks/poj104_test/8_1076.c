@@ -28,7 +28,7 @@ int*c=(int*)malloc((x+y)*sizeof(int));
   printf("%d",c[x+y-1]);
 }
 
-int main()
+int main_bench()
 {      
 shuru(n,m);
 }

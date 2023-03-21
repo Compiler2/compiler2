@@ -5,7 +5,7 @@ struct point
 	int num;
 	float distance;
 };
-int main()
+int main_bench()
 {
 	struct point ans[300];
 	float ave;

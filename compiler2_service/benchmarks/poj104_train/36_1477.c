@@ -5,7 +5,7 @@
 char A[200],B[200];
 int a[256],b[256],i;
 
-int main()
+int main_bench()
 {
     scanf("%s%s",A,B);
     i=0;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char yuan[256],jiu[256],xin[256];
 	int i,j,len,n=0,len1,u[256],jishu[256]={0},len2,k,weizhi,sum=0;
      scanf("%s",yuan);

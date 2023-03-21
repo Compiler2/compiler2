@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {   char name[20],g,x,highestname[20];
     int q[100],b[100],l[100],n,i,j,sum[100]={0},max=0,t,total=0;
 	scanf("%d",&n);

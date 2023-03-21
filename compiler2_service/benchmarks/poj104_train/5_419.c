@@ -6,7 +6,7 @@ int f(char x,char y)
    else return 0;
 }
 
-int main()
+int main_bench()
 {
 	double r,x;
 	scanf("%lf",&r);

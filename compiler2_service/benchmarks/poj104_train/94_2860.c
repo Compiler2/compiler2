@@ -13,7 +13,7 @@ void sort(int a[],int n)
                 }
         }
 }
-int main()
+int main_bench()
 {
 int i,n,j,m;
 int sz[500],js[500];

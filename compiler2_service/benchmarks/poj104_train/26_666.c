@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char tmp[102]={0},*p=tmp+1,prev;
 	gets(tmp+1);

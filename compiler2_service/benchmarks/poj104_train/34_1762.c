@@ -15,7 +15,7 @@ int step(int k)
     return step(k);
 }
 
-int main()
+int main_bench()
 {
     int n;
     scanf("%d", &n);

@@ -7,7 +7,7 @@ int f(int x,int y)
 		p=p*x;
 	return(p);
 }
-  int main()
+  int main_bench()
 {
 	char a[100];
 	int i,m,n,p[100],t[100],q;

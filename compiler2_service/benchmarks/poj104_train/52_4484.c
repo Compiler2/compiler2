@@ -1,7 +1,7 @@
 #include <header.h>
 
 void move(int *a,int n,int m);
-void main()
+int main_bench()
 {
 	int n,m,a[200];
 	scanf("%d %d",&n,&m);

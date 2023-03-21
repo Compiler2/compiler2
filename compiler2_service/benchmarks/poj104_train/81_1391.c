@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int judge(int array[][5],int x,int y);
     int sz[5][5],n,m,i,j;

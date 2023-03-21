@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,m,j,k=0,a,b,c,winnum=0,win=2,year;
 	char old[150][100]={0},id[100][100]={0},id0[100]={0},huiche[100]={0};

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int locate(char [],char []);
-int main()
+int main_bench()
 {
     char a[100],b[100];
     scanf("%s",a);scanf("%s",b);

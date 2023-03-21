@@ -47,7 +47,7 @@ struct scholar *scholar(struct student a[],int n)
 	return(p);
 }
 
-void main()
+int main_bench()
 {
 	int n,sum,i,m,r;
 	struct student a[100];

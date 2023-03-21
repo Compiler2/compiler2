@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char s[200][100]={'\0'},*ps;
 	int n,i,max=0,t[200]={0},min=1000,*p;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[100]={0},n,m;
-int main()
+int main_bench()
 {
     int i;
     void move(int n,int m,int a[50]);

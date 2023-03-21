@@ -2,7 +2,7 @@
 
 int ss(int n);
 
-int main()
+int main_bench()
 {
     int n,i=0,a,b;
     scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i,j,t,a[16]={0},sum=0,k=0;
     while(scanf("%d",&a[0]) && a[0]!=-1){

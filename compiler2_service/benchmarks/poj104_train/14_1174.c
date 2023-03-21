@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,t=0,c=1,d=1,n,p=0,q=0,r=0,*b;
 	struct pp

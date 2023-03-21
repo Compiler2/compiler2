@@ -14,7 +14,7 @@ int min(int *p,int n)
     }
 	return(k);
 }
-main()
+main_bench_bench()
 {
 	int i,j,n,m,p,q,w,xiao,s;
 	int a[101][101],b[101];

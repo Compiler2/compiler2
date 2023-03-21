@@ -7,7 +7,7 @@ struct student
 	int score2;
 	int total;
 }stu[100000];
-int main()
+int main_bench()
 {
 	int n,i,j,k,t;
 	scanf("%d",&n);

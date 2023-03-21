@@ -1,7 +1,7 @@
 #include <header.h>
 
 int zl[1000][1000];
-int main(){
+int main_bench(){
     int i,j,n,a,b,s;
 	scanf("%d",&n);
     for(i=0;i<n;i++){

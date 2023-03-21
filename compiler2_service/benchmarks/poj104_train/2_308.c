@@ -6,7 +6,7 @@ struct shu
 	char name[26];
 }shu[999];
 
-int main ()
+int main_bench()
 {
 	int m;
 	scanf("%d",&m);

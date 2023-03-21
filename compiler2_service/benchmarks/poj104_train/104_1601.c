@@ -27,7 +27,7 @@ int power(int a,int b)
 		s=s*a;
 	return s;
 }
-int main()
+int main_bench()
 {
 	int n1,n2,i,j,o,t1,t2;
 	scanf("%d %d",&n1,&n2);

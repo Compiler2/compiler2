@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
     int n,m,a[100],i,b[100],c[100];
 	int *start,*qian,*hou;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char str[1000];
     char zfc[300][20];
     int sum[300];

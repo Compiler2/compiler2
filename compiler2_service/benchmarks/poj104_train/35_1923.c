@@ -34,7 +34,7 @@ int lie(int no,int n)
 	return ans;
 }
 
-int main()
+int main_bench()
 {
 	int m,n;
 	scanf("%d,%d",&n,&m);

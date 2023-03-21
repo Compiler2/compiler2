@@ -4,7 +4,7 @@ struct N{
 int a;
 struct N* next;
 };
-int main(){
+int main_bench(){
 	int *p,*q,n,a[100],x;
  scanf("%d",&n);
  for(p=a;p<a+n;p++){

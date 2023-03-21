@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
    long a,b,i,j,k,l,z,length,sum10,zhi;
    i=0;

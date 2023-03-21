@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i, n, a[200], max, submax;
 	scanf("%d", &n);

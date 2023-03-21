@@ -5,7 +5,7 @@ int find(int n,int m)
 	if ((n>=0) && (n<=4) && (m>=0) && (m<=4)) return(1);
 	else return(0);
 }
-void main()
+int main_bench()
 {
 	int flag,i,j,m,n,swap,num[5][5];
 	for (i=0;i<=4;i++)

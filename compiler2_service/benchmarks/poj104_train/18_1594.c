@@ -1,7 +1,7 @@
 #include <header.h>
 
 int JU[100][100];
-int main()
+int main_bench()
 {
 	int n,i,j,h,l,M;
 	void JUbian(int N,int JU[100][100]);

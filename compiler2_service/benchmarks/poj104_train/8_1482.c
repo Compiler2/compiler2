@@ -44,7 +44,7 @@ void output(int *c)
         printf("%d%s", c[i], i < m + n - 1 ? " " : "\n");
     }
 }
-int main()
+int main_bench()
 {
     int a[10000] = {0};
     int b[10000] = {0};

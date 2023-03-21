@@ -5,7 +5,7 @@ int min(int x,int y)
 	if(x<=y)return x;
 	else return y;
 }
-int main()
+int main_bench()
 {
 	int a[100][100],row,col,ROW,COL,i,m=1,n=0,x;
 	scanf("%d%d",&ROW,&COL);

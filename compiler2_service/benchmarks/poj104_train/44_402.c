@@ -26,7 +26,7 @@ int reverse(int num){
 	}
 	return nnum;
 }
-int main()
+int main_bench()
 {
 	int sz[6],xsz[6];
 	int k;

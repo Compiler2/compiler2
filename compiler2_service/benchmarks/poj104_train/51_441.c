@@ -7,7 +7,7 @@ void col(char a[],char b[][5],int m,int n)
 		for(j=0;j<n;j++)
 			b[i][j]=a[i+j];
 }
-int main()
+int main_bench()
 {
 	char a[500],b[500][5]={0};
 	int n,m,i,j,c[500]={0},t=0;

@@ -16,7 +16,7 @@ int convert(int (*pt)[5],int x,int y)
          }
      return 1;                           
 }
-int main()
+int main_bench()
 {
     int n,m,i,j,a[5][5],*p,num;
     for(i=0;i<5;i++)

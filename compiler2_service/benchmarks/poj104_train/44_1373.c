@@ -23,7 +23,7 @@ int fan(int x)
     }
     return (x);
 }
-main ()
+main_bench()
 {
      int c,d,j;
      int g[6];

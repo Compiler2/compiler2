@@ -10,7 +10,7 @@ int comp(const void *a , const void *b)
 	return ((struct stu*)b)->tot-((struct stu*)a)->tot; 
 } 
 struct stu a[100000],b;
-int main()
+int main_bench()
 {
 	int i,j;
 	scanf("%d",&n);

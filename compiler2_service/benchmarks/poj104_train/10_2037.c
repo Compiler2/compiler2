@@ -11,7 +11,7 @@ int max = 0;
 int maxn(int i ,int n);
 int pass (int pre,int aft);
 
-int main()
+int main_bench()
 {
 	int k;
 	scanf("%d",&k);

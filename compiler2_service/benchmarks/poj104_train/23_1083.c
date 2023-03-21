@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	char str[100][100], input[101];
 	int i, j, m=0, k=0, t=1;

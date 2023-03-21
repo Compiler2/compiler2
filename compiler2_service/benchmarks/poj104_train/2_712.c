@@ -5,7 +5,7 @@ struct book
 	int num;
 	char wr[26];
 };
-int main()
+int main_bench()
 {	
 	int n,b[91][1000],max=0,i,j,k,s,m,writer;
 	struct book bk[1000];

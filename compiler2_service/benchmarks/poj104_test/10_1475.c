@@ -12,7 +12,7 @@ int hack(int i,int w){
  if(b>c) return b;
  else return c;   
 }
-int main(){
+int main_bench(){
  scanf("%d",&n);
  int i,max=0;
  for(i=0;i<n;i++){

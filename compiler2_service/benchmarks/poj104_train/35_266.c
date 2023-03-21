@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int i,j,a,b,n1,n2,k1=0,k2=0;
 	int fa[8][8]={0};

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   char s1[50],s2[50],*p1,*p2;
   int i=0,j,lens1,lens2,n,x=0,y=0;

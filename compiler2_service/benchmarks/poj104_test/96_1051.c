@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[100];
 	char shang[100];

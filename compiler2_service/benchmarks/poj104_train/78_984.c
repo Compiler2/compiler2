@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a=0,b=0,c=0,d=0,k=10;
 	char name[6]=" zqsl";

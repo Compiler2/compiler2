@@ -10,7 +10,7 @@ struct student{
 
 
 
-int main(){
+int main_bench(){
 	
 	
 	int n,i,k,e,f;

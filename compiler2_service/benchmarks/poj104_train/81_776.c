@@ -12,7 +12,7 @@ void swap()
 	a[m][i-1]=tmp;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j;
 	for(i=1;i<=5;i++)

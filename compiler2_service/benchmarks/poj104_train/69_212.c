@@ -44,7 +44,7 @@ int add_bigint(int*a,int alen,int*b,int blen,int*c)
 	}
 	return c[len]?(len+1):len;
 }
-int main()
+int main_bench()
 {
 	char s1[256],s2[256];
 	int a[256],b[256],c[256];

@@ -51,7 +51,7 @@ void xian(int array[],int n,int m)
 
 
 
-void main()
+int main_bench()
 {
     void duqu(int n,int m,int a[],int b[]);
 	void sort(int *p1,int n,int *p2,int m);

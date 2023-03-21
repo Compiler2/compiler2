@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
 char t[150],x[150];
 char *pt=t,*px=x;
 gets(t);

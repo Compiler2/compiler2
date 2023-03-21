@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[100],word[100][100]={'\0'};
 	int i,j,k=0,a[100]={0},l;

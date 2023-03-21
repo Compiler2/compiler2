@@ -9,7 +9,7 @@ int leap(int year)
 	else return 0;
 }
 
-int main(void)
+int main_bench(void)
 {
 	char weekday[7][5]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
 	int i,fix=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,y[200],m1[200],m2[200];
 	int a[]={0,31,59,90,120,151,181,212,243,273,304,334,365};

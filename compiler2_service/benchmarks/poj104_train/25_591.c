@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int i,k,n,m,t,cf[100]={0};
     int jinwei=0;
     cf[0]=1;

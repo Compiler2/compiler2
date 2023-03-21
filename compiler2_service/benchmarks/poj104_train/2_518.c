@@ -10,7 +10,7 @@ struct total
 	char name;
 	int amount;
 };
-int main()
+int main_bench()
 {
 	int m,i,j,k;
 	struct book bk[1000];

@@ -23,7 +23,7 @@ void osubstr(char s[], int start, int end)
 	putchar('\n');
 }
 
-int main()
+int main_bench()
 {
 	unsigned int m,n,width;
 	gets(s);

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
  char c1[82],c2[82];
  int i,l1,l2,t;

@@ -9,7 +9,7 @@ struct st
 	char xb;
 	int lw;
 };
-void main()
+int main_bench()
 {
 	int n,i,a[1000]={0},b[1000],sum=0,j,t;
 	struct st s[1000];

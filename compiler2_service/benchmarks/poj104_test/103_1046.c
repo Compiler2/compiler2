@@ -2,7 +2,7 @@
 
 
 char f[1];
-int main()
+int main_bench()
 {
       char s[1000];
       scanf("%s",s);

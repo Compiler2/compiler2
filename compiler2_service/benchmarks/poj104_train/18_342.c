@@ -33,7 +33,7 @@ void xiaojian(int a[100][100],int p)
   for(i=1;i<p-1;i++)
   a[i][j]=a[i+1][j]; 
 }   
-int main()                                  
+int main_bench()                                  
 {
   int n;
   int a[100][100];

@@ -5,7 +5,7 @@ int x(int p1,int p2)
 	if(p1>=0 && p1<=4 && p2>=0 && p2<=4) return 1;
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int i,j,n,m,t,y,a[5][5];
 	for(i=0;i<5;i++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 static char x1[1000],x2[1000];
 int i,k;

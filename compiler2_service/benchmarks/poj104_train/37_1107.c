@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int n,i,j,k,p,q=0,flag=0;
   char a[100000];

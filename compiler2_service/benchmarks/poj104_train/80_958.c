@@ -46,7 +46,7 @@ long int Jisuan(int year,int month,int day)
 	Calnumber+=day;
 	return(Calnumber);
 }
-int main()
+int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2;
 	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);

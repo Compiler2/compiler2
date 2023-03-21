@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,m,n,a[1000],b[1000];
     double t[1000],sum[100]={0.0};

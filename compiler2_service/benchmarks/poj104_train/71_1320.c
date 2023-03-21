@@ -33,7 +33,7 @@ if(s%7==0)
 return 1;
 else return 0;
 }
-int main()
+int main_bench()
 {
 int n,i,a[200][3],j;
 scanf("%d",&n);

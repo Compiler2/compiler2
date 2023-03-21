@@ -2,7 +2,7 @@
 
 
 int s[110][110];
-int main(){
+int main_bench(){
 	int m,n,i,j;
 	scanf("%d%d",&m,&n);
 	for (i=1;i<=m;i++){

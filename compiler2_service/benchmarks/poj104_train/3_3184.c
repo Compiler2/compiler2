@@ -11,7 +11,7 @@ int f(int x,int a[],int y)
 		    return -1;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,x,y,n,k;
 	scanf("%d %d",&n,&k);

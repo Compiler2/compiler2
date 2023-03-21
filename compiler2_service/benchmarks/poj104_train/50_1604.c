@@ -1,7 +1,7 @@
 #include <header.h>
 
 int num(int a);
-int main()
+int main_bench()
 {
 	int w,i,m,day;
 	scanf("%d",&w);

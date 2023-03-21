@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[2][80],b[2][80],c;
 	int i,j;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i, k,j=0,p;
 	float average,a[100],sum=0,c[100],d[100];

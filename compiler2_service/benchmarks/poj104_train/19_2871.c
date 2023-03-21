@@ -8,7 +8,7 @@ typedef struct {
 
 WORD words[100];
 
-int main()
+int main_bench()
 {
 	char str[100];
 	char a[100], b[100];

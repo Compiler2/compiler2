@@ -8,7 +8,7 @@ struct student{
 	int article;
 };
 
-void main()
+int main_bench()
 {
 	struct student *p;
 	int n,i;

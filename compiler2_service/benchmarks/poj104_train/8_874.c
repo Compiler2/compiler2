@@ -5,7 +5,7 @@ void bubble(int a[],int m);
 void add(int a[],int b[],int c[],int m,int n);
 void out(int c[],int m);
 
-int main()
+int main_bench()
 {
 	int m,n;
 	int a[100],b[100],c[200];

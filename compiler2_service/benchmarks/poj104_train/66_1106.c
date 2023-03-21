@@ -30,7 +30,7 @@
         result+=day;
         return result;
         }
-     int main(){
+     int main_bench(){
      int i;
      int year,month,day;
      int year1,total;

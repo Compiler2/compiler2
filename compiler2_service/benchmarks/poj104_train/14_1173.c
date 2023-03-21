@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	struct r{int a;int b;int c;}r[99999];
 	int i,n,x=0,y=0,z=0,m1=0,m2=0,m3=0;

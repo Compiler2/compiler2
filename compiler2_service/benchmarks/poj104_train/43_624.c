@@ -5,7 +5,7 @@ double cal(int i,int n,double x)
   if (i==n)  return x;
   else{ s=1+1/cal(i+1,n,x);return s;}
 }
-int main()
+int main_bench()
 {
 	double x;int m,n,y,i,j,k;
 

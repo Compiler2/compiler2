@@ -12,7 +12,7 @@ struct stu
 	struct stu top1={0,0,0,0},top2={0,0,0,0},top3={0,0,0,0};
 
 
-int main()
+int main_bench()
 {	int n,i;
 	struct stu tem;
 	scanf("%d",&n);

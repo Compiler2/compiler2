@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n=0,row=0,line=0,l=0;
 	int Matrix[100][100]={{0},{0}};

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n,i,k,j,f[1005];
     double sum=0.0,r;
     f[0]=1;

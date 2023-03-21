@@ -19,7 +19,7 @@ void deal(int n)
      }
      printf("%.3lf\n", sum);
 }
-int main()
+int main_bench()
 {
     int m;
     scanf("%d", &m);

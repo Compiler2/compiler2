@@ -6,7 +6,7 @@ int leapYear(int year)
 		return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int month[2][13] = {{0,31,28,31,30,31,30,31,31,30,31,30,31},{0,31,29,31,30,31,30,31,31,30,31,30,31}};
 	int i,startYear,endYear,startMonth,endMonth,startDay,endDay,count = 0;

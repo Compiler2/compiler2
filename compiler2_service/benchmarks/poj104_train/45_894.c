@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
   char xiao[50],da[50];
 	int i,j,k,l,m,Z,s,n,lenx,lend;

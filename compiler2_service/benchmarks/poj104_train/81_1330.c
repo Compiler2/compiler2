@@ -3,7 +3,7 @@
 
 int swap(int (*a)[5], int n,int m);
 
-int main()
+int main_bench()
 {
     int i,j,n,m,y;
 	int a[5][5];

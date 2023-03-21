@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 char *s,*w;
 int i,j,flag=1,lena,lenb,head;

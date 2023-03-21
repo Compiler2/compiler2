@@ -24,7 +24,7 @@ int f(int shu,int min)
 }
 } 
 
-int main()
+int main_bench()
 {
       int n,i,a;
       scanf("%d",&n);

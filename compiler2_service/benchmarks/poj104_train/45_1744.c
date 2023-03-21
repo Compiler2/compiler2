@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sent[100],zfc[100];
 	int i,k=0,count;

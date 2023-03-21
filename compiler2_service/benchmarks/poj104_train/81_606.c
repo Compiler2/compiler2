@@ -11,7 +11,7 @@ int jiaohuan(int str[5][5])
   else return 0;
 }
 
-int main()
+int main_bench()
 {
 	int str[5][5],i,j;
 	for(i=0;i<5;i++)

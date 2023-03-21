@@ -6,7 +6,7 @@ void Read(void);
 void Order(void);
 void Combine(void);
 void Write(void);
-int main()
+int main_bench()
 {
 	Read();
 	Order();

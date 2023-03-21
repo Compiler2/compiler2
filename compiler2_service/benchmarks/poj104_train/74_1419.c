@@ -33,7 +33,7 @@ int judge2(int n)
 			u=0;
 	return u;
 }
-void main()
+int main_bench()
 {
 	int m,n,i,u=0;
 	scanf("%d%d",&m,&n);

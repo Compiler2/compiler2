@@ -3,7 +3,7 @@
 int f(int n);
 
 
-int main(){
+int main_bench(){
   int a[10000],s[10000],x,k;
   scanf("%d",&k);
   for(x=0;x<k;x++){

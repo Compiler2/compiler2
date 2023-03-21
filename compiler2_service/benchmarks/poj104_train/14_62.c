@@ -60,7 +60,7 @@ void printStudentData()
 	}
 }
 
-int main()
+int main_bench()
 {
 	initialise();
 	getStudentData();

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int sort(int a,int b);
-int main(){
+int main_bench(){
     int money;
     scanf("%d",&money);
     money=sort(money,100);

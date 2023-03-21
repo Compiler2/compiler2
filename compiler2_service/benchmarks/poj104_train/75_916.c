@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int i=0,j,k,reach[10000],leave[10000],num=0,max=0;char a;
 	do

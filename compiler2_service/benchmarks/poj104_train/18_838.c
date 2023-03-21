@@ -77,7 +77,7 @@ void eliminate()
 	}
 }
 
-int main()
+int main_bench()
 {
 	scanf("%d",&n);
 	int p=n;

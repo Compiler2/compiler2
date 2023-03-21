@@ -8,7 +8,7 @@ int f(int n,int m)
 	return(a);
 }
 
-void main()
+int main_bench()
 {
 	int a[5][5],n,i,j,m,t;
 	int *p1,*p2,*p3;

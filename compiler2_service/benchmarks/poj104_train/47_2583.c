@@ -2,7 +2,7 @@
 
 void sx(int b[],int n);
 void nx(int a[],int b[],int n);
-int main(){
+int main_bench(){
 	int i=0,q,M[1001]={0},N[1001]={0};
 	scanf("%d\n",&q);
 	sx(M,q);

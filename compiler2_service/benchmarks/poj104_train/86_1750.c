@@ -1,7 +1,7 @@
 #include <header.h>
 
 int tiaosheng(int m,int *a);
-int main()
+int main_bench()
 {
     int *a,i,j,k,l,m,n;
     scanf("%d",&n);

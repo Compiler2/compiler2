@@ -5,7 +5,7 @@ int min(int x,int y)
     if(x>=y) return y;
     else return x;
 }
-int main()
+int main_bench()
 {
      int t,i;
      scanf("%d",&t);

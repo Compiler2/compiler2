@@ -6,7 +6,7 @@ struct student
 	char name[21],lead[2],west[2];
 }stu[100];
 
-main()
+main_bench_bench()
 {
 	int n,i,max=0,money=0;
 	char output[21];

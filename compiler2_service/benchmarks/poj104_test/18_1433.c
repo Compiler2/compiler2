@@ -49,7 +49,7 @@ void xj(int a[][102],int k)
 	   }
    }
 }
-int main()
+int main_bench()
 {
     int i,k;
 	scanf("%d",&k);

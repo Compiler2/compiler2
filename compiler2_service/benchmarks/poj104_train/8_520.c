@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main ()
+int main_bench()
 {
     void f(int array[],int k);
     void g(int c[],int d[],int o,int p);

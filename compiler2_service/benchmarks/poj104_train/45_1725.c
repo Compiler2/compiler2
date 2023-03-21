@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char sw[101];
 	gets(sw);
 	int lsw=strlen(sw);

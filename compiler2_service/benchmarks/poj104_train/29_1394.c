@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int m,n;
 	float a=1,b=2,c,s=0;

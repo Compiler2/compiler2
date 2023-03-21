@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int tianshu(int nian,int yue);
 	int i,n,nian,yue1,yue2,dur;

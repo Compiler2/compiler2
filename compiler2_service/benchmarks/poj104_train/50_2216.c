@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-main()
+main_bench_bench()
 {
 int n,i;
 int g,k,w,d=1,month=1;

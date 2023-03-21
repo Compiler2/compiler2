@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { int i,n,q,w,e,r,t,out,a[4];
   i=1;
   while(i<5)

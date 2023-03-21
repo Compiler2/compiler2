@@ -16,7 +16,7 @@ int replace(int b[5][5],int n1,int m1)
 	}
 	return(ret);
 }
-void main()
+int main_bench()
 {
 	int a[5][5],n,m,i,j;
 	for(i=0;i<5;i++)

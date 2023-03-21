@@ -5,7 +5,7 @@ int cmp(const void *a, const void *b)
 {
 	return *(int*)b - *(int*)a;
 }
-int main()
+int main_bench()
 {
 	int t[1000], w[1000];
 	int N;

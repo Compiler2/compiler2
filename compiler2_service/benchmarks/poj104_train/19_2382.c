@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char SourceStr[100] = {'\0'};
 	char ToReplaceStr[100] = {'\0'};

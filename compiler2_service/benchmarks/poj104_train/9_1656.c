@@ -6,7 +6,7 @@ struct ren
 	int ye;
 	struct ren *next;
 };
-int main()
+int main_bench()
 {
 	int n;
 	char c[12];

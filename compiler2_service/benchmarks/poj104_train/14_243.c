@@ -8,7 +8,7 @@ struct xue
 	int sum;
 }xueshen;
 
-int main()
+int main_bench()
 {
 	int n,i,k;
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int b;
-void main()
+int main_bench()
 {   void PF(int k);
 	int a; char n[10];int i,len;
 

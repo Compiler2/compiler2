@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char *str,*p,*start;
 	str=(char *)calloc(1000,sizeof(char));

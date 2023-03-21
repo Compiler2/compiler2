@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i=0,j=0,m=0;
 	long int n;

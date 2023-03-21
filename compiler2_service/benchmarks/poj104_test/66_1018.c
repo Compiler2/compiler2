@@ -42,7 +42,7 @@ void print(int a)
 
 	}
 }
-int main()
+int main_bench()
 {
 	
 	

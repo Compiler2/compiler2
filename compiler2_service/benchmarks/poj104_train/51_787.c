@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
   char s[500],t[5],g[500][5]={0},c;
   int a[500]={0};

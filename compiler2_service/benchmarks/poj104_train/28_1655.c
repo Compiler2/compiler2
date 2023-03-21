@@ -1,7 +1,7 @@
 #include <header.h>
 
 char sen[10000];
-int main()
+int main_bench()
 {
 	int a[300],x=0,n=0,flag=0,i=0,len,b[300];
 	gets(sen);

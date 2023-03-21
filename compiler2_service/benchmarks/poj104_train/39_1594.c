@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n, qimo[100], banyi[100], lunwen[100];
 	char name[100][20], xuegan[100], xibu[100];

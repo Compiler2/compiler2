@@ -2,7 +2,7 @@
 
 	
 	
-int main()
+int main_bench()
 {
 	char s[1000],temp[1000];
 	int b[1000];

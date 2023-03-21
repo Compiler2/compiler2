@@ -10,7 +10,7 @@
        int essay;
 	   int money;
     }points[100];
-   int main()
+   int main_bench()
    {
       int n,i,max=0,m=0;
        scanf("%d",&n);

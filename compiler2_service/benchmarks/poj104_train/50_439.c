@@ -3,7 +3,7 @@
 
 int dayOfMonth(int month);
 
-int main(){
+int main_bench(){
 
 	int w;
 	

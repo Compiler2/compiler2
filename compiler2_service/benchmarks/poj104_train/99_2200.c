@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,i,index,a[101];
     int age[5]={1,19,36,61,200};

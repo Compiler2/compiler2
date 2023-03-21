@@ -3,7 +3,7 @@
 int n;
 int a[100]={0};
 int max[100]={0};
-int main()
+int main_bench()
 {
     int i,j,c;
     scanf("%d",&n);

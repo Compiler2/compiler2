@@ -7,7 +7,7 @@ struct student
 	int shuxue;
 	int total;
 };
-void main()
+int main_bench()
 {
 	int n,i;
 	struct student *p,*stu,temp;

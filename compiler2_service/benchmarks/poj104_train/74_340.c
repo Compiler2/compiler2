@@ -22,7 +22,7 @@ f2(int x)
 	if(a==x) return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {int a,b,c;
 scanf("%d%d",&a,&b);
 c=0;

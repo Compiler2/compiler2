@@ -6,7 +6,7 @@ struct word
 	int count;
 }p[600],tmp;
 
-int main()
+int main_bench()
 {
 	char a[600]={0},x[6];
 	int n,len,sign=0,m=0;

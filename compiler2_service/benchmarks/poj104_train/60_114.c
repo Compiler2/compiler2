@@ -17,7 +17,7 @@ int sushu(int i)
     return k;
 }
 
-int main()
+int main_bench()
 {
     int n,i,out;
     scanf("%d",&n);

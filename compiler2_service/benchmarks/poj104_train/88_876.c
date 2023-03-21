@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { char *a,*p;
   int i,t,n;
   a=(int *)malloc(30*sizeof(char));

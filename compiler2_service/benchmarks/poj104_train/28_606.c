@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(void)
+int main_bench()
 {
 	char a[10000];
 	long int beg[300],end[300];

@@ -14,7 +14,7 @@ int week (int y,int m,int d)
  return (w); 
 }
 
-int main()
+int main_bench()
 {
 	int y,m,d;
 	char month[7][5]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};

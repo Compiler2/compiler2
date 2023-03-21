@@ -29,7 +29,7 @@ int gg(int n){
 	if(t2==n) return 1;
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int m,n,i,tt,hh=0;
 	scanf("%d %d",&m,&n);

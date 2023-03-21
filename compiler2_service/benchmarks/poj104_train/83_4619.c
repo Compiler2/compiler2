@@ -3,7 +3,7 @@
 
 int N,course[15][2],credit;
 float GPA;
-int main(){
+int main_bench(){
     int i;
     scanf("%d",&N);
     credit = 0;

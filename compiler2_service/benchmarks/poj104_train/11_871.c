@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int y,d,m,i,j,e=0,total=0;
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};

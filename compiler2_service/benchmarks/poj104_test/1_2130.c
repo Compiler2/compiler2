@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int find(int m,int k);
 	int n,y,d,c;

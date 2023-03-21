@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {   char c;
     int check=0,i=0,m,flag=0;
 	while((c=getchar())!='\n'){

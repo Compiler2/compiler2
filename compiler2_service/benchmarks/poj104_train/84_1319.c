@@ -1,7 +1,7 @@
 #include <header.h>
 
 int cmp(const void * a, const void * b);
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

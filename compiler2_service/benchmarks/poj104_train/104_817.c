@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int x,y,a[100],b[100],i,j,n,m,p;
 	scanf("%d%d",&x,&y);

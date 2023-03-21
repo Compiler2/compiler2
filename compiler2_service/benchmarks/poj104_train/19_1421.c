@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char sen[101],word1[101],word2[101],danci[50][101];
 	int LEN[50],LEN1,i,k=0,j=0;
 	gets(sen);

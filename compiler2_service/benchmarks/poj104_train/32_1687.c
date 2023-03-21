@@ -25,7 +25,7 @@ for(int i=0;i<n-m;i++)
      }
      
 }
-int main()
+int main_bench()
 {
     int n,i;
     scanf ("%d",&n);

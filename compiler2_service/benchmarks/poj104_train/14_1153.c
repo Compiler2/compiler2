@@ -6,7 +6,7 @@ struct grade
 	int math,cn;
 };
 
-int main(){
+int main_bench(){
 	int n,i,j,max,m;
 	int *s;
 struct grade stu[100000];

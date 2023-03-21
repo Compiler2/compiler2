@@ -2,7 +2,7 @@
 
 
 
-int main(void)
+int main_bench()
 {
 	int z,q,s,l,i;
 	for(z=50;z>0;z=z-10)

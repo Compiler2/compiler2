@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,k,a[100001],i;
 	int time=0,first=1;

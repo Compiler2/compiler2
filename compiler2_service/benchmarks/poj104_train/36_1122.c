@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {char b[200];
  char a[200];
  int acal[26]={0};int bcal[26]={0};

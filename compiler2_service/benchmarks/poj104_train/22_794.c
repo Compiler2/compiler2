@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {char a=44,b,c;
 int x[301],y,z,i=1,j;
 while(a==44)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	char s[30][20]={0};
 	char a[101]={0}, b[101]={0};

@@ -30,7 +30,7 @@ void cut(int **p,int n)
     for(j=0;j<n;j++)
     *(*(p+j)+i)=*(*(p+j)+i+1);
 }
-int main()
+int main_bench()
 {
     int n,m,i,j,w,c;
     int **p;

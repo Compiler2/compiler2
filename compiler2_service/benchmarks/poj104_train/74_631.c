@@ -25,7 +25,7 @@ int ishuiwen(int n)
     return (h == n);
 }
 
-int main()
+int main_bench()
 {
     int count = 0, i, m, n;
     scanf("%d%d", &m, &n);

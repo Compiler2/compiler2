@@ -35,7 +35,7 @@ void prin(char a[],int l)
 
 
 
-void main()
+int main_bench()
 {
 	char a[100];
 	int l;

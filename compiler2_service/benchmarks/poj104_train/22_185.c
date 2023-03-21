@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int counter=0,i=0,j,t,a[300];
 	do

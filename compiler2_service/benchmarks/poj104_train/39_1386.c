@@ -34,7 +34,7 @@ int jiang(struct person a)
 	}
 	return(j);
 }
-void main()
+int main_bench()
 {
 	int n,i,j,r;
 	double sum=0;

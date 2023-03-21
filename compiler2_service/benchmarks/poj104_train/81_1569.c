@@ -17,7 +17,7 @@ int panbie(int p,int q)
  else
   return(0);	 
 }
- void main()
+ int main_bench()
 {
   int i,j,n,m;
   int b[5][5];

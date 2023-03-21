@@ -15,7 +15,7 @@ void osubstr(char s[], int start, int end)
      while(start<=end) putchar(s[start++]);
      putchar('\n');
 }
-int main ()
+int main_bench()
 {
     char s[500];
     int m,n,len,width; 

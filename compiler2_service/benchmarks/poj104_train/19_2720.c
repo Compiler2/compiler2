@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,j,k,w,nw=0,ns,na,nb,rem[102],flag,FLAG=0;
 	char s[102],a[102],b[102];

@@ -7,7 +7,7 @@
 int strnl(char *,char *);
 void replace(char *str,int len_ss,int start,char *rpl);
 
-int main()
+int main_bench()
 {
 	char str[256],substr[256],rpl[256];
 	int start;

@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,k,p,l,count=0;
 	char record[500][6],a[500],temp[6];

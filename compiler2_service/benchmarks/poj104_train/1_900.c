@@ -12,7 +12,7 @@ f(n/min, i);
 }
 
 
-int main() {
+int main_bench() {
 int N,i,num,j;
 scanf("%d",&num);
 for(j=1;j<=num;j++){

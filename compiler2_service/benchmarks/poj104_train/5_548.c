@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int i,j;
     double n=0,biao,l=1,len;
     char shuzu[3][501];

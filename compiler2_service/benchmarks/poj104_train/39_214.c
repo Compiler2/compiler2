@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char name[100][21],gan[100],west[100],temp1[21];
 	int end[100],cls[100],esy[100],rmb[100];

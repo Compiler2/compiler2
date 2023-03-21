@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char c[510][7],wenben[510];
     int n,m,i,j,k,cishu[510]={0},max,zd,pinshu=0;

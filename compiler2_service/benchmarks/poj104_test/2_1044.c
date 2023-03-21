@@ -6,7 +6,7 @@ struct book
        char name[26];
 }books[1000];
 
-int main() 
+int main_bench() 
 {
        int n,i,j;int count[26]={0};int temp,base,k=0;char author;int pd=0,N=0;
        scanf("%d",&n);

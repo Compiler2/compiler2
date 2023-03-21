@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,n,l1,l2,j;
 	double tall[42],t1[42],t2[42],tt;

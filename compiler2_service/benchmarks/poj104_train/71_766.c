@@ -41,7 +41,7 @@ int dijitian(int year,int mon,int day)
 	return d;
 }
 
-int main()
+int main_bench()
 {
     int n,i,j,x[210][3]={0},a,b;
 

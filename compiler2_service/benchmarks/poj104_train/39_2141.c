@@ -40,7 +40,7 @@ int compare_date(int *a,int n)
 		}
 	return k;
 }
-int main()
+int main_bench()
 {
 	int n,len,i,*a,top,sum=0;
 	struct Student *p;

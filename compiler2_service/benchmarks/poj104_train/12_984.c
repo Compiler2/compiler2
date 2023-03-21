@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int a[20][16]={0};
 	int bei[20]={0},j,k,chu,last;

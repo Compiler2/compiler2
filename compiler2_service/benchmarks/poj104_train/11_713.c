@@ -45,7 +45,7 @@ int DiJiTian(int y,int m,int d)
           return result; 
      }
         
-int main()
+int main_bench()
 {
 
      int y2,m2,d2,a,e;

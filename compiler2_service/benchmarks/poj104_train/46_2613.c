@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int a[101][101],b[101][101]={0};
 	int c[4]={-1,0,1,0},d[4]={0,1,0,-1};

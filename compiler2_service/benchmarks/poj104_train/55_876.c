@@ -14,7 +14,7 @@ long C(long Z,long X)
       return V;
       
 }
-main()
+main_bench_bench()
 {
     char q;
   int d=0;

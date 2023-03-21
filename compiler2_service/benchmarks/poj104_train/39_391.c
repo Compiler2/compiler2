@@ -10,7 +10,7 @@ struct student
 	int paper;
 	int money;
 }a[100];
-int main()
+int main_bench()
 {
 	int N,i,maxmoney=0,maxnum=0,summoney=0;
 	scanf("%d",&N);

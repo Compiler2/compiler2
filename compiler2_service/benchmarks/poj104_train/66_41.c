@@ -3,7 +3,7 @@
 
 const char WeekDay[7][4] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 
-int main()
+int main_bench()
 {
   long y, m, d, res;
   scanf("%ld %ld %ld", &y, &m, &d);

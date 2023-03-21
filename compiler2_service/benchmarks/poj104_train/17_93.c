@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char zf[106];
     while(1) {
     memset(zf,'\0',sizeof (zf));

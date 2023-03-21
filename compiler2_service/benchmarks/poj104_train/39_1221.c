@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,j=0,k=0,r,o=0;
 	scanf("%d",&n);
 	char renming[200][20],ganbu[200],xibu[200];

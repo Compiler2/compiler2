@@ -7,7 +7,7 @@ struct letter
 	int times;
 }leta[57],letb[57];
 
-int main()
+int main_bench()
 {
 	int i,lena,lenb,t=0;
 	char a[30]={0},b[30]={0};

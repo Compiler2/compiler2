@@ -28,7 +28,7 @@ void f2(int a[][100],int k)
 		for(j=1;j<k-1;j++) a[j][i]=a[j+1][i];
 	}
 }
-int main()
+int main_bench()
 {
 	int n,z,k;
 	scanf("%d",&n);k=n;

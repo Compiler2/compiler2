@@ -28,7 +28,7 @@ int checkr(int n)
 	else
 		return 0;
 }
-main()
+main_bench_bench()
 {
 	int m,n,i,j,t=0;
 	scanf("%d%d",&m,&n);

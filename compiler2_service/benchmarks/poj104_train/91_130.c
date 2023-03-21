@@ -1,7 +1,7 @@
 #include <header.h>
 
 char ctt[200];
-int main()
+int main_bench()
 {
 	char a[150];
 	char b[150];

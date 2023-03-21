@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int y,m,d;
 	int totalday;
 	int a[12]={0,31,59,90,120,151,181,212,243,273,304,334};

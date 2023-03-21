@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
     int n;
     scanf("%d",&n);
     struct game{int g1;int g2;}g[n];

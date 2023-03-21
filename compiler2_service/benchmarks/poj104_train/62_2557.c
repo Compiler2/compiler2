@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 { int q=0,i,j;
 char tra[1000],yaode[1000];
 gets(tra);

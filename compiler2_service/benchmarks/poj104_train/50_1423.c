@@ -2,7 +2,7 @@
 
 
 int yf(int k);
-int main()
+int main_bench()
 {
 	int i,n,w;
 	scanf("%d",&w);

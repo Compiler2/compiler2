@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int zong;
 	int sz[100][100],m,n,k,i,j,sum1=0,sum2=0,sum3=0,sum4=0,sum=0;

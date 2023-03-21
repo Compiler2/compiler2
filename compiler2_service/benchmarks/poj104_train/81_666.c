@@ -1,7 +1,7 @@
 #include <header.h>
 
 int judge(int m,int n);
-int main(){
+int main_bench(){
 	int m,n,i,j,array[5][5],tmp;
 	for (i=0;i<5;i++)
 		for (j=0;j<5;j++)

@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[251],b[251],j[260]={'\0'},A[251]={'\0'},B[251]={'\0'};
 	int ac,bc,i,k,c,j1,j2,jw=0,p=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a,b,c,e,f,g,h,i,j,d1,d2,o;
 	scanf("%d  %d %d %d %d %d",&a,&b,&c,&e,&f,&g);   

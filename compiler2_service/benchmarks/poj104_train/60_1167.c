@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,t,j;
 	scanf("%d",&n);
 	if(n<=4){

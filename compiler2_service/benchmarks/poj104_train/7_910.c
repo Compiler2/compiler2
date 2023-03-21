@@ -1,7 +1,7 @@
 #include <header.h>
 
 char zfc[3][257];
-int main(){
+int main_bench(){
 	gets(zfc[1]);
 	gets(zfc[2]);
 	gets(zfc[3]);

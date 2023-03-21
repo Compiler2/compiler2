@@ -7,7 +7,7 @@ typedef struct{
 	long totle;
 	}info;
 
-void main()
+int main_bench()
 {
 	int count,max=0,k,i;
 	long totle=0;

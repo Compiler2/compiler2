@@ -13,7 +13,7 @@ int bi(char a[],char b[])
 	}
 	return m;
 }
-int main()
+int main_bench()
 {
 	char a[600]={0},b[6]={0},c[500][6]={0};
 	int i,j,z=0,k,m,n,d[500]={0},max=0;

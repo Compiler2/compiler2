@@ -18,7 +18,7 @@ int Dijitian(int a,int b,int c){
 	s+=c;
 	return s;
 }
-int main()
+int main_bench()
 {
 	int a,b,c;
 	scanf("%d %d %d",&a,&b,&c);

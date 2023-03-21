@@ -4,7 +4,7 @@
 int N,M;
 int data[10010];
 
-int main(){
+int main_bench(){
     int i,t,j;
     scanf("%d",&N);
     M = 0;

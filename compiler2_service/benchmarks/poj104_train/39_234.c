@@ -10,7 +10,7 @@ struct award
 	int paper;
 	int money;
 };
-int main()
+int main_bench()
 {
 	struct award stu[100];
 	struct award max;

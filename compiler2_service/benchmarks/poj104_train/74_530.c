@@ -47,7 +47,7 @@ void P(int m,int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int m,n;
 	scanf("%d%d",&m,&n);

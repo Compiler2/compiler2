@@ -4,7 +4,7 @@ int cmp(const void* a,const void* b)
 {
     return (*(float*)a) > (*(float*)b) ? 1:-1;
 }
-int main()
+int main_bench()
 {
     int n,i,f,m;
     char sex[10];

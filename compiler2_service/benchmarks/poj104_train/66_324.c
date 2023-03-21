@@ -10,7 +10,7 @@ int isRunNian(int year){
       return result;	
 }
 
-int main()
+int main_bench()
 {
 	long int year, month, day, total;
 	scanf("%d %d %d", &year, &month, &day);

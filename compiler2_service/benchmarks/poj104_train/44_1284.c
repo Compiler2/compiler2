@@ -50,7 +50,7 @@ void reverse ( )
       }
       printf("\n");
 }
-int main()
+int main_bench()
 {
       int i;
       for (i=1;i<=6;i++)

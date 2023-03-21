@@ -43,7 +43,7 @@ for(i=0,j=0,countor=1;j<monkey-1;)
  }
 free (Monkey);
 }
-int main(){
+int main_bench(){
     int king[100];
     int a,b,n=0,k=0;
     scanf("%d%d",&a,&b);

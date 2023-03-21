@@ -11,7 +11,7 @@ struct people
        int lunwen;
        int jiang;
 }line[100], temp;
-int main()
+int main_bench()
 {
     int n, i, j;
     scanf("%d\n", &n);

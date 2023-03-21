@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int year[200],m1,m2,i,n;
 	scanf("%d", &n);

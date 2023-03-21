@@ -46,7 +46,7 @@ void AddBigInt(char *result,char *str1,char *str2)
 			*(result+i)=*(result+i+1);
 	}
 }
-int main()
+int main_bench()
 {
     int i;
 	char str1[251],str2[251],result[251];

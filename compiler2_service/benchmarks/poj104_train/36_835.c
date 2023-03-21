@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int check(char a1[],char a2[]);
 	char a1[100],a2[100];

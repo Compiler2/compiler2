@@ -11,7 +11,7 @@ struct m{
 };
 struct m la[1000];
 struct m mo;
-void main()
+int main_bench()
 {
 	int n,i,j,zo=0;
 	scanf("%d",&n);

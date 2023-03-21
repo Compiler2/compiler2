@@ -7,7 +7,7 @@ struct Student
 	int m;
 	int sum;
 };
-void main()
+int main_bench()
 {
 	struct Student temp,s1,s2,s3;	
 	int i,n;

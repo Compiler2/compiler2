@@ -3,7 +3,7 @@
 
 
 
-int main(void)
+int main_bench()
 {
     int num,temp=0,sub=0,dv=10;;
     scanf("%d",&num);

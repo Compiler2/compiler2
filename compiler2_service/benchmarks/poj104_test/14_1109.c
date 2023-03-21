@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	struct student{int id,chin,math,z;}p[100000];
 	int id,math,chin,z,i,n,f,s,t,id1,id2,id3;

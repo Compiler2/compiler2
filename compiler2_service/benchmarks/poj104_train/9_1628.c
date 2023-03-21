@@ -5,7 +5,7 @@ struct patient
 	char id[20];
 	int age;
 };
-int main()
+int main_bench()
 {
 	int i,n,j,max,num=0;
 	struct patient a[110],t;

@@ -6,7 +6,7 @@ int fun(int x,int y){
     if((x==0&&y==0)||(x==1&&y==1)||(x==2&&y==2))return 0;
 
 }
-int main(){
+int main_bench(){
     int n,x,y,j=0,i;
     scanf("%d",&n);
     for(i=0;i<n;i++){

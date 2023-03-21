@@ -14,7 +14,7 @@ int min(int x,int y)
 	else
 		return y;
 }
-int main()
+int main_bench()
 {
 	int a[300],i=0,t1,t2,t,k;
 	char s[300];

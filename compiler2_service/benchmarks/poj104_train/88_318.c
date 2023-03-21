@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	char n[31];
 	int i,u;
 	gets(n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int a;
  scanf("%d",&a);
  if(a%105==0) printf("3 5 7\n");

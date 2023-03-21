@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int num, leap_1=0 , leap_2=0 ,leap_3=0;
 	scanf("%d", &num);
 	if (num%3== 0){

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int w;
 	scanf("%d",&w);
 	if(w+13%7-8==5||w+13%7-8==-2)

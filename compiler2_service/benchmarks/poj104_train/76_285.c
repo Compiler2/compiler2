@@ -4,7 +4,7 @@ struct X{
 int a;
 int b;
 };
-int main()
+int main_bench()
 {
 int i,j,n,A,B,x[10000]={0,0,0};
 struct X q[50000];

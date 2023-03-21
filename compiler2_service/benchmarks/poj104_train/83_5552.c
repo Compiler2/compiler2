@@ -47,7 +47,7 @@ double Jidian(int defen[], int xuefen[], int n){
     }
     return sumjidian;
 }
-int main(){
+int main_bench(){
     int n;
     double p,q;
     double GPA;

@@ -18,7 +18,7 @@ void range(int n,int m,int *p)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int n,m;
 	scanf("%d %d",&n,&m);

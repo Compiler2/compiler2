@@ -5,7 +5,7 @@ int i,j,k,h,m,n,a[300];
 char c;
 int t1=-1,t2=-1,num=300;
 
-int main()
+int main_bench()
 {
 	for(k=0;k<=300;k++)
 	{

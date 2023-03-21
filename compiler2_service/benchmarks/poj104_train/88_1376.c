@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void) 
+int main_bench() 
 { 
     int ch, num = 0, flag = 0, count = 0; 
      

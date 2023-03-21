@@ -8,7 +8,7 @@
 	int z;
 	}a[100010],t;
 	
-int main()
+int main_bench()
 {
 
 	int n,i,j;

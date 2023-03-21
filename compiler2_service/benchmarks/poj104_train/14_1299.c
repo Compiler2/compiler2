@@ -8,7 +8,7 @@ struct student
 	int ma;
 };
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,max,sec,min,total[100000];
 	scanf("%d",&n);

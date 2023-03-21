@@ -7,7 +7,7 @@ int change(int n,int m)
 	else c=0;
 	return c;
 }
-int main()
+int main_bench()
 {
 	int m,n,num[5][5],*p[5],i,q,c;
 	for(i=0;i<5;i++)

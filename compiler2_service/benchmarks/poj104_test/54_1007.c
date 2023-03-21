@@ -13,7 +13,7 @@ int Capple(int Nmonkey,int Nthrow)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int Napple,Nmonkey,Nthrow,i,j;
 	scanf("%d%d",&Nmonkey,&Nthrow);

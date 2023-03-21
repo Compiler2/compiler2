@@ -43,7 +43,7 @@ void dna()
 
 
 
-main()
+main_bench_bench()
 
 {
 

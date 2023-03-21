@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int y,m,d,total,i;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};

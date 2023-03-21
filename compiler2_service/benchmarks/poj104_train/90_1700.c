@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int way(int x,int y);
     int t,i,m[100],n[100],p[100];

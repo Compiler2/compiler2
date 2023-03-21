@@ -6,7 +6,7 @@ char a[101];
 char b[101];
 char buf[101];
 
-int main(){
+int main_bench(){
 	unsigned int i;
 	int index;
 	gets(s);

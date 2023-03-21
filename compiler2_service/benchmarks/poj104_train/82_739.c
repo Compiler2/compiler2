@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int ss[100],sz[100],time[100];
 int n;
 int t=0,i=0,a=0;

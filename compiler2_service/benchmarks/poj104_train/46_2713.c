@@ -3,7 +3,7 @@
 int mat[102][102];
 int unvis[102][102];
 
-int main()
+int main_bench()
 {
 	int n,r,c,i,j,d;
 	int dir[4][2] ={{0,1},{1,0},{0,-1},{-1,0}};

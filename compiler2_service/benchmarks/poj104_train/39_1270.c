@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	struct student
 	{

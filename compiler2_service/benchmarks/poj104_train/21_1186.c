@@ -11,7 +11,7 @@ float juedui(float x)
 		return (-1*x);
 	}
 }
-int main()
+int main_bench()
 {
 	int x[100];
 	int n;

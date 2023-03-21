@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m,n,a[1000]={0},b[1000]={0};
-int main()
+int main_bench()
 {
     int i,j,k;
     void read(int array1[],int array2[]);

@@ -47,7 +47,7 @@ int bjj( int a )
     else 
         return 0;
 }
-int main()
+int main_bench()
 {
     int n,k;
     int max = 0;

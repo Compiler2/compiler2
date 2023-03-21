@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int flag[50001];
 	int i,j,k,m,p,q,s;

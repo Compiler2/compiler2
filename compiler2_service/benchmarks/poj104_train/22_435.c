@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int largest=-1,second=-1,a[300],i,counter;
 	char b[100];

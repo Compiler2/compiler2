@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,a[100][100]={{0},{0}},s=0,b,t=0,r=0,c=0,R,rmin=0,C,cmin=0;
 	scanf("%d%d",&R,&C);

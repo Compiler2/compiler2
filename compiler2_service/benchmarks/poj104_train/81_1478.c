@@ -6,7 +6,7 @@ int f(int a[5][5], int m, int n)
 		return(1);
 	else return (0);
 }
-void main()
+int main_bench()
 {
 	int a[5][5],m,n,i,j,p;
 	for (i=0;i<5;i++)

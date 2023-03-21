@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int w,a,x=0,i;
 	scanf("%d",&w);

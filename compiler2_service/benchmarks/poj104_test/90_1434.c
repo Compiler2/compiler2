@@ -21,7 +21,7 @@ int apple(int m,int n)
     }
     return(K);
 }
-int main()
+int main_bench()
 {
     int t;
     int *M,*N;

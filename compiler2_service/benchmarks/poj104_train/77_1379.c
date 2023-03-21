@@ -7,7 +7,7 @@ const int N = 110 ;
 int q[N] ;
 char str[N], a ;
 
-int main ()
+int main_bench()
 {
     scanf ("%s", str) ;
     for (int i = 0, t = 0; i < strlen (str); i ++ )

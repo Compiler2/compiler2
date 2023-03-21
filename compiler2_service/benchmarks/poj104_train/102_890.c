@@ -3,7 +3,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int n,i,j,k,a,b;
 	double g,s[48],m[48],f[48];
 	char qb[48][9];

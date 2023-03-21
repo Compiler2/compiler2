@@ -30,7 +30,7 @@ void fun(int x,int m)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int i;
 	scanf("%d\n",&n);

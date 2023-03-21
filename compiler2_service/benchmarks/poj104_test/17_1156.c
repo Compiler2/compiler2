@@ -47,7 +47,7 @@ void fun(char a[])
 	fun(a);
 }
 
-int main()
+int main_bench()
 {
 	int i,n,len,j;
 	char a[200];

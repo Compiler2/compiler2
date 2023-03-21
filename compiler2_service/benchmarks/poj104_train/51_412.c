@@ -12,7 +12,7 @@ int check(char s[],int i,int j)
 		}
 	return p;
 }
-int main()
+int main_bench()
 {
 	int l,p,a[501]={0},i,j,max=0;
 	char  s[501];

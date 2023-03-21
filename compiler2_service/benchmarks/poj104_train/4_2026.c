@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int row=0,col=0,array[100][100];
 	int i=0,j=0;

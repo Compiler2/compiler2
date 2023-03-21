@@ -6,7 +6,7 @@ int leap(int *p,int n)
     if((*p)!=0) return 0;
     else return leap(p+1,n-1)+1;
 }
-int main()
+int main_bench()
 {
     int n,i;
     scanf("%d",&n);

@@ -12,7 +12,7 @@ int findmax(int a[100])
 	}
 	return max;
 }
-void main()
+int main_bench()
 {
 	int hang,lie;
 	scanf("%d,%d",&hang,&lie);

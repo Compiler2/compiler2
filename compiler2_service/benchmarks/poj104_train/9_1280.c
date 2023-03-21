@@ -12,7 +12,7 @@ struct old
 	char IDs[10];
 	int ages;
 }elder[100];
-int main()
+int main_bench()
 {
 	int n,i,j,t,m,q,r;
 	char p[10];

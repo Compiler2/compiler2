@@ -4,7 +4,7 @@ int read();
 void tongji();
 void print();
 int n,a[4],b[100];
-int main()
+int main_bench()
 {
     read();
     tongji();

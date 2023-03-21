@@ -23,7 +23,7 @@ int p(int n,int heightLimit,int *missileHeight,int missileNum)
 			return p(n+1,heightLimit,missileHeight,missileNum);
 }
 
-int main()
+int main_bench()
 {
 		int n,i,j;
 		int *missileHeight;		

@@ -13,7 +13,7 @@ int max(int a[],int n)
 	return i;
 
 }
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

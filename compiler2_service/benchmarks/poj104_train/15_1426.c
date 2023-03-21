@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int n,hang,hang2,hang3,lie,lie2,lie3,squ;
     squ=0;

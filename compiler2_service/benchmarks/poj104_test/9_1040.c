@@ -6,7 +6,7 @@ struct bin
 	int age;
 	struct bin *next;
 };
-int main()
+int main_bench()
 {
 	struct bin *head,*p,*p1,*p2,*p3;
 	int m,n,i,j,k;

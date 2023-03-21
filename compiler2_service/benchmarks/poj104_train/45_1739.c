@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void)
+int main_bench()
  {
 	char sz[101]={'\0'};
 	char s[50]={'\0'},w[50]={'\0'};

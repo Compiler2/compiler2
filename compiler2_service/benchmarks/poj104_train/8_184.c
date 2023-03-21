@@ -44,7 +44,7 @@ void p(int a[],int b[])
 	
 
 }
-void main()
+int main_bench()
 {  
 	f();
 g(a,m);

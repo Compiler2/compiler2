@@ -35,7 +35,7 @@ void print(char *s)
 	}
      puts(s);
 }
-int main()
+int main_bench()
 {  
 	int l;
 	char s[323];

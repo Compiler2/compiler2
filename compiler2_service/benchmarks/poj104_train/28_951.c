@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char str[300*100];   
     int wls[300] = {0};  

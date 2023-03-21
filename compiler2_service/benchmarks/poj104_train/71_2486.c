@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {   int feirun[13];
     int run[13];
 	feirun[1]=0;

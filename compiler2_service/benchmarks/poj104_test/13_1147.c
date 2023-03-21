@@ -1,7 +1,7 @@
 #include <header.h>
 
 int stat[115],i,n,k,first=0;
-int main(){
+int main_bench(){
   for (i=0;i<110;i++) stat[i]=0;
   for (scanf("%d",&n),i=0;i<n;i++){
      scanf("%d",&k),stat[k]++;

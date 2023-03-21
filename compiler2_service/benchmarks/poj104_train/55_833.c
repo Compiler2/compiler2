@@ -7,7 +7,7 @@ int power(int x,int y)
     return z;
 }
 
-int main()
+int main_bench()
 {
       int a=0,b=0,i=0,j=0,count=0,k=0,l=0;
       char p[64],s[64];

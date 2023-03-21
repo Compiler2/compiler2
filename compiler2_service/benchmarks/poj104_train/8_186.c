@@ -36,7 +36,7 @@ printf("%d",c[0]);
 		printf(" %d", c[i]);
 }
 
-int main () {
+int main_bench() {
 	read();
 	sort();
 	merge();

@@ -18,7 +18,7 @@ int fda(int N2[],int n)
 	return da; 
 }
 
-void main()
+int main_bench()
 {
 	int N1[1002],N2[1002];
 	char b[1002];

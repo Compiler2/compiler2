@@ -39,7 +39,7 @@ int huiwen (int n)
 	else return 0;
 }
 
-void main()
+int main_bench()
 {    
      int huiwen (int);
      int sushu (int);

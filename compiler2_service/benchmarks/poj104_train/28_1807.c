@@ -3,7 +3,7 @@
 
 char str[10000];
 
-int main()
+int main_bench()
 {
 	int i,n,word,temp,start;
 	gets(str);

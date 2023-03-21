@@ -16,7 +16,7 @@ int SwapRow(int array[5][5],int row_n,int row_m)
 		return 0;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int array[5][5],n,m,row,col;
 	for(row=0;row<5;row++){

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int i,j,n,point[11],score[11];
 	float GPA[11],tol=0,sum=0,result;

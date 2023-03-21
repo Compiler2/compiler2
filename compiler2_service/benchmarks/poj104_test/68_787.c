@@ -3,7 +3,7 @@
 
 int n, i, j, k, f;
 
-int main() {
+int main_bench() {
   scanf("%d", &n);
   for (i = 6; i <= n; i += 2) {
     printf("%d=", i);

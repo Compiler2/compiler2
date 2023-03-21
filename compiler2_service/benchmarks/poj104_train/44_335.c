@@ -13,7 +13,7 @@ int transfer(int i)
 			}
 		return b;
 		}
-int main()
+int main_bench()
 		{
 			int i,j,n=6;
 			while(n>0)

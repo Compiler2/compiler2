@@ -45,7 +45,7 @@ void v()
    printf("%d ",c[i]);
    printf("%d",c[i]);
 }
-void main()
+int main_bench()
 {
    f();
    g();

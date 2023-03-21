@@ -7,7 +7,7 @@ int chn;
 int mth;
 int total;
 };
-void main()
+int main_bench()
 {
 struct Student *p1,*top1,*top2,*top3,*temp;
 int i;

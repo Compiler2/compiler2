@@ -12,7 +12,7 @@ double f(int n){
 	return y;
 }
 
-int main(){
+int main_bench(){
 	int m,i;
 	int n[100];
 	scanf("%d",&m);

@@ -17,7 +17,7 @@ int * shuru(int m,int *a)
 	}
 	return a;
 }
-int main()
+int main_bench()
 {
     int suma,sumb,i;
     int *a;

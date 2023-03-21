@@ -5,7 +5,7 @@ int shuzu[5][5];
 	int e[5];
 	int after[5][5];
 	int m,n,row,col,i;
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int exchange(int a,int b);
 	for(row=0;row<5;row++){

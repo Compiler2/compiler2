@@ -19,7 +19,7 @@ int function(int a)
 }
 
 
-void main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

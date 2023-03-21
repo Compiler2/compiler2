@@ -16,7 +16,7 @@ void change(char * a)
 	return;
 }
 
-int main()
+int main_bench()
 {
 	int temp_num;
 	int l;

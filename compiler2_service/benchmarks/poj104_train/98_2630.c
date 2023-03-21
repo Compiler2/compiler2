@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char word[42];
 	int chars_left,word_length,word_num;
 

@@ -19,7 +19,7 @@ int behind(char p)
 	return z;
 }
 
-int main()
+int main_bench()
 {
 	char *p;
 	int *tf;

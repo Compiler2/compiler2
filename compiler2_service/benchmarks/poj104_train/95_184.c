@@ -5,7 +5,7 @@ int f(int x)
   if(x>=65&&x<=90) x=x+32;
   return(x);
 }
-void main()
+int main_bench()
 {
   char str1[80],str2[80];
   int i;

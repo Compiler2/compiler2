@@ -3,7 +3,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	char s[100]={'\0'},w[100]={'\0'};
 	int k,t;

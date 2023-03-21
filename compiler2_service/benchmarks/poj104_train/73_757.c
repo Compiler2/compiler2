@@ -24,7 +24,7 @@ int min(int n1,int n2,int n3,int n4,int n5)
         n5=n4; 
     return n5;
 }
-int main()
+int main_bench()
 {
     int a[5][5];
     for(int i=0;i<5;i++)

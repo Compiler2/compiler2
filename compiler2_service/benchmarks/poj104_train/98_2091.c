@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,n,len;
 	int sum=0;
 	char dw[1000][41];

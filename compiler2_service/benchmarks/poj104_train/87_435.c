@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int a[1000][6],i,j,k=0,l=0;
 	int AM,PM,T;

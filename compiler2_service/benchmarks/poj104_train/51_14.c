@@ -16,7 +16,7 @@ int count(char b[][6],char c[],int d[],int num)
       return num+1;
       }
    }
-void main()
+int main_bench()
 {
   char a[301],b[301][6],c[6];
   int i,j,k,l,n,num,d[301],max;

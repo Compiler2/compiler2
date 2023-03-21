@@ -34,7 +34,7 @@ double b(double x)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	double *p,*q,GPA,sum=0,total=0,a;
 	int	n,i;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int issushu(int x);
-int main()
+int main_bench()
 {
 
  int n,i,s[10000],j=0,p=0;

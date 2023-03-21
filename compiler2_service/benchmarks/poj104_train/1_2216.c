@@ -15,7 +15,7 @@ int f(int a,int x)
 		return result;
 		}
 }
-main()
+main_bench()
 {
 	int i,j,k;
 	int n;

@@ -26,7 +26,7 @@ int xgy(int year,int month1,int month2){
 	if(days%7==0){return 1;}
 	if(days%7!=0){return 0;}
 }
-int main(){
+int main_bench(){
 	int i,n,year,month1,month2;
 	scanf("%d",&n);
 	for(i=0;i<n;i++){

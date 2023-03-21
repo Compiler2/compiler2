@@ -20,7 +20,7 @@ single[26];
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n, i, m, j, p, k, book[999];
 	for(i=0;i<26;i++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char days[7][8]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun."};
     int years[4]={365,365,365,366};

@@ -24,7 +24,7 @@ int find(int a,int b[])
 	return k;
 }
 
-int main()
+int main_bench()
 {
 	int sx[1000],sy[1000];                         
 	int x,y,i,j,k,l,xi=0;

@@ -21,7 +21,7 @@ int daycount(int year,int month)
 		else sum+=28;
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int n,i;
 	int year[200],month1[200],month2[200];

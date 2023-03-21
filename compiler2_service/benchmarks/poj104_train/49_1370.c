@@ -24,7 +24,7 @@ char f2(char ch[],int start,int end)
     putchar('\n');
 	return '0';
 }
-main()
+main_bench_bench()
 {
 	char ch[500];
 	int i,l,w;

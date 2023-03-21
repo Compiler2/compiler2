@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
     int n,len,stre[1000],y,max=1;
     char str[1000][1000],stra[1000];

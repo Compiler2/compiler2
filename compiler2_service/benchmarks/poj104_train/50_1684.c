@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int dayofweek,days=12,mon[12],i,d,e;
 	scanf("%d",&dayofweek);

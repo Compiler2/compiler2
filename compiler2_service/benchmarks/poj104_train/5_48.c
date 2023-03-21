@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,len1,len2;
 	double rate,rate0,sum=0;
 	char line1[501],line2[501];

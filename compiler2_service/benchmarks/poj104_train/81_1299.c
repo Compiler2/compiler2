@@ -8,7 +8,7 @@ int f(int n,int m){
 	}
 }
 
-int main(){
+int main_bench(){
 	int a[5];
 	int i,j,m,n;
 	int sz[5][5];

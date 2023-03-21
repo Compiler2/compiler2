@@ -6,7 +6,7 @@ int a(int k)
     return k;
     return -k;
 }
-int main()
+int main_bench()
 {
     int num[300];
     int n,i,flag=1;

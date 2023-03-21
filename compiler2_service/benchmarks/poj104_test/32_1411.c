@@ -7,7 +7,7 @@ int max(int x,int y)
 	else
 		return y;
 }
-int main()
+int main_bench()
 {
 	int times;
 	scanf("%d",&times);

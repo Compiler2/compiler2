@@ -1,6 +1,6 @@
 #include <header.h>
 
-   int main(){
+   int main_bench(){
        int l1,l2,i,sum=0,w=0;
        float rate,result;
        char zfc_1[600],zfc_2[600];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {	
 	int i,k;
 	char list[5],list1[5];

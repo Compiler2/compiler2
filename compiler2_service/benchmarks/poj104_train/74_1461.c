@@ -23,7 +23,7 @@ int p2(int n)
    }
   return 1;
 }
-int main()
+int main_bench()
 { 
   int m,n;
   int i,f=0;

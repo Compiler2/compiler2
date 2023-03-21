@@ -18,7 +18,7 @@ char f(char a[])
     }
     return'o';
 }
-int main()
+int main_bench()
 {
     char a1[1000],a2[1000];
     scanf("%s %s",a1,a2);

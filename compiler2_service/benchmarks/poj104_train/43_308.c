@@ -1,7 +1,7 @@
 #include <header.h>
 
 int jss(int x);
-int main(){
+int main_bench(){
     int m,i;
     scanf("%d",&m);
     for(i=m-2;i>=m/2;i--){

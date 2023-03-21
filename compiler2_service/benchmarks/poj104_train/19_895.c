@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char sz[100],zfc[20][20],a[20],b[20];
 	gets(sz);
 	scanf("%s",a);

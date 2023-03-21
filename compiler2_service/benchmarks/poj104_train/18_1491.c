@@ -70,7 +70,7 @@ int ans(int n,int ** pp)
 	return sum;
 }
 
-int main (void)
+int main_bench()
 {
 	int n=0;
 	scanf("%d",&n);

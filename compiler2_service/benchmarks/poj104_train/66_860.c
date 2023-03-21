@@ -2,7 +2,7 @@
 
 int isRunnian(int year);
 int Dijitian(int year,int month,int day);
-int main()
+int main_bench()
 {
  	int year,month,day,i,s,sum; 
  	scanf("%d%d%d",&year,&month,&day);

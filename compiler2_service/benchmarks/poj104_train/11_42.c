@@ -7,7 +7,7 @@ int leap(int n){
 	return(leap);
 }
 
-int main(){
+int main_bench(){
 	int year, month, day, th=0, a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	scanf("%d %d %d", &year, &month, &day);
 	if(leap(year)==1) a[2]=29;

@@ -15,7 +15,7 @@ int cmp(char *p1,char *p2)
 	else if(*p2!='\0') return -1;
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	char str1[100],str2[100];
 	gets(str1);gets(str2);

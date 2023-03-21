@@ -8,7 +8,7 @@ int f(int m,int n){
 	return k;
 }
 
-int main(void){
+int main_bench(){
 	int a,b,i,re;
 	for(i=0;;i++){
 		scanf("%d%d",&b,&a);

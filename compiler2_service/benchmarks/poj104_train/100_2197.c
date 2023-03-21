@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char zfc[301];
 	int szx[26]={0},szd[26]={0},flag=0,i,j,k;

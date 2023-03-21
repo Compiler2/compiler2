@@ -40,7 +40,7 @@ int count(int a[100][100],int n,int s)
 	}
 
 }    
-int main()
+int main_bench()
 {
 	int n,i,j,s,t,a[100][100];
 	scanf("%d",&n);

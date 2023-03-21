@@ -52,7 +52,7 @@ void output()
 
 
 
-int main()
+int main_bench()
 {
 	input();
 	sort(a,m-1);

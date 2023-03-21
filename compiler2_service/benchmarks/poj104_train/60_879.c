@@ -16,7 +16,7 @@ int g(int x)
 	}
 	}
 }
-int main()
+int main_bench()
 {
 	int i,n,p=0;
 	scanf("%d",&n);

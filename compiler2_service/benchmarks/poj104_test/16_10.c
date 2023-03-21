@@ -15,7 +15,7 @@ void reverse(char s[],int a,int b){
 	printf("\n");
 }
 
-int main(){
+int main_bench(){
 	char string[10];
 	int len;
 	gets(string);

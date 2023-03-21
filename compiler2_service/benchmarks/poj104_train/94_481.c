@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
      int i,n,sz[1000],x,k;
     int j=0,a=0;

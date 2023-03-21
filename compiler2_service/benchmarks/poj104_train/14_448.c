@@ -12,7 +12,7 @@ struct student
 	int total;
 };
 
-int main()
+int main_bench()
 {
 	int number;
 	struct student stu[100000];

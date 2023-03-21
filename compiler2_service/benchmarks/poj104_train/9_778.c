@@ -6,7 +6,7 @@ struct bing
        int age;
 };
 struct bing bing[1000];
-int main()
+int main_bench()
 {
     int n,i,j=1,v=1,k,t[1000],m,p[1000];
     scanf("%d",&n);

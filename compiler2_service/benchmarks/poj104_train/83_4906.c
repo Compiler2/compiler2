@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i;
 	float gpa,score[10]={0},g[10]={0},pow[10]={0},sg,ave,s;

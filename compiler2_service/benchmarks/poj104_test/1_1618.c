@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   int hanshu(int k,int min);
   int n,i,a;
   scanf("%d",&n);

@@ -2,7 +2,7 @@
 
 char sz[100000];
 int zd(char *sz);
-int main(){
+int main_bench(){
 	int n,x;
 	scanf("%d",&n);
 	int i;

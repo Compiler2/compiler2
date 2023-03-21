@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sen[100],word[50][20]={0},pre[20],post[20];
 	int i,l,f[50]={0},g[50]={0};

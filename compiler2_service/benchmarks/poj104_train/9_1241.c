@@ -5,7 +5,7 @@ struct guahao
 	char num[20];
 	int year;
 };
-int main()
+int main_bench()
 {
 	int n,i,m;
 	struct guahao temp,*p,*t,*p1;

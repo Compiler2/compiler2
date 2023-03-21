@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
 	int m,n,i,j,t=1,s=0,l=0;
 	int a[10][10]={0},b[10]={0},c[10]={0};

@@ -9,7 +9,7 @@ int comp(const void *a,const void *b)
 {
     return ((stu*)b)->b-((stu*)a)->b;
 }
-int main()
+int main_bench()
 {
     int i,n,a,b;
     scanf("%d",&n);

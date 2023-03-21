@@ -22,7 +22,7 @@ int max(int b[],int n){
 	maxi=c[0];
 	return maxi;
 }
-int main()
+int main_bench()
 {
 	int i,j,k,n,m,N,M;
     char a[4000],c[200][30];

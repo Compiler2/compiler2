@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { int i,n,k;
   char ar[300][20];
   for (i=0;i<300;i++)

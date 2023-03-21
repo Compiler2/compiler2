@@ -2,7 +2,7 @@
 
 int array[5][5];
 int scan(int N,int M);
-void main(){
+int main_bench(){
 	int n,m,i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){

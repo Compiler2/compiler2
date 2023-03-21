@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {char a[81],b[81];
 int i,j,n,m,p,r,x;
 gets(a);

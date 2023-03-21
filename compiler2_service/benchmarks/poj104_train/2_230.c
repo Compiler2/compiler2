@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench()
 {
    int m,n,j,k,id[1001],a[26]={0};
    char c[1001][26],b[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};

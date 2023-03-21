@@ -34,7 +34,7 @@ void combine(int a[],int m,int b[],int n)
 		printf("%d ",b[i]);
 	printf("%d",b[n-1]);
 }
-void main()
+int main_bench()
 {
 	int a[100],b[100],m,n;
 	scanf("%d%d",&m,&n);

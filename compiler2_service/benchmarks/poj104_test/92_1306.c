@@ -4,7 +4,7 @@ int paixu(const void*a, const void*b)
 {
     return(*(int*)b-*(int*)a);
 }
-int main()
+int main_bench()
 { 
     int n,i,j,money=0;  
     int s;

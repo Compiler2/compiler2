@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {	int n,i,num[300],s=0,u=0,m;
 	float aver,t[300],max,sum=0,min;
 	scanf("%d",&n);

@@ -17,7 +17,7 @@ if(a[x].no<a[y].no) return 0;
 if(a[x].no>a[y].no) return 1;
 return 0;
 }
-int main()
+int main_bench()
 {
 int i,j,n;
 scanf("%d",&n);

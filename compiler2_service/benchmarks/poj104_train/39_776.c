@@ -9,7 +9,7 @@
      int e;
      int sum;
    };
-   int main()
+   int main_bench()
    {
        struct stu h[100];
        int n,i,j,k,sum1;

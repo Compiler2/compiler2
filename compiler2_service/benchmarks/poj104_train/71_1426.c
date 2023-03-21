@@ -37,7 +37,7 @@ void swap(int*a,int*b){
 int DijiTian(int year,int month,int day);
 int isRunNian(int year);
 void swap(int*a,int*b);
-int main()
+int main_bench()
 {
     int n,year,month1,month2;
     int a,i,sz[200];

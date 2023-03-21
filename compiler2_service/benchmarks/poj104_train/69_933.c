@@ -18,7 +18,7 @@ int shift(char n){
 	return shift;
 }
 
-int main(){
+int main_bench(){
 	char a[252],b[252],c[252],d[252];
 	int lengtha,lengthb,sum[252],lon,i,lina,linb,cha,sh;
 	d[0]='0';

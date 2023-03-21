@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int N,i,j,s;
     scanf("%d",&N);
     int jishu[501];

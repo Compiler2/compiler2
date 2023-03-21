@@ -13,7 +13,7 @@ int jisuan(int n,int k,int b,long int a,int *p)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int n,k,b,c=0;
 	long int a,s;

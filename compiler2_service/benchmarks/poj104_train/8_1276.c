@@ -56,7 +56,7 @@ void f4(int c[],int m,int n)
 		printf("%d ",c[i]);
 	printf("%d",c[i]);
 }
-void main()
+int main_bench()
 {
 	f1(a,b,m,n);
 	f2(a,b,m,n);

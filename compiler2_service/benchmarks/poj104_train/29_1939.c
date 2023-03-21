@@ -13,7 +13,7 @@ double SUM(int n)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
 	int m,n,i;
 	scanf("%d",&m);

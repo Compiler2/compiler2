@@ -12,7 +12,7 @@ int leap(int x)
 		return 1;
 	}
 }
-void main()
+int main_bench()
 {
 	int leap(int x);
 	int y,m,d,p=0;

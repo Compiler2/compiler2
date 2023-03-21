@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 int sz[155][155];
 
 int i,j,p,q,c=0,a,b,col,row;

@@ -10,7 +10,7 @@ int isStart(char a)
 	if(  (a>='a' && a<='z') || (a>='A' && a<='Z') ||a=='_')return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 		int i=0, n = 0;
 		scanf("%d\n",&n);

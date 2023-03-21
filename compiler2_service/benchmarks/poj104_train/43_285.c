@@ -1,7 +1,7 @@
 #include <header.h>
 
 int prime(int x);
-int main()
+int main_bench()
 {
 	int m,i;
 	scanf("%d",&m);

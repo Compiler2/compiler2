@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i;
 	int m,j,a[100],s;

@@ -7,7 +7,7 @@ struct inf
 	int c;
 	int sum;
 } a[100010],tmp;
-int main()
+int main_bench()
 {
 	int n,i,j,k,tmp1,tmp2;
 	char c;

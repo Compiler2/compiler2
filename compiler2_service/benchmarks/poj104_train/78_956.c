@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int z,q,s,l,A,B,C,D;
 	for(z=1;z<=5;z++)
 		for(q=1;q<=5;q++)

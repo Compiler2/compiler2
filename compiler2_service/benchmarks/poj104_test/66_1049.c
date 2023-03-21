@@ -6,7 +6,7 @@ int isRunNian(int year)
 		return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 int year,month,day,days=0;
 int i,s,k;

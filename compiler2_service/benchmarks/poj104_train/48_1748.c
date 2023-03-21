@@ -2,7 +2,7 @@
 
     int a[9][9];
     int b[9][9];
-int main()
+int main_bench()
 {
     void sc(int i,int j);
     int n,m,k,i,j;

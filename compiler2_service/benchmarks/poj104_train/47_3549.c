@@ -2,7 +2,7 @@
 
 int a[100],sz[100];
 void change(int sz[],int n);
-int main()
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

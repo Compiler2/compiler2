@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     char s[502];
     int max,frequency[251],n,i,j;
     scanf("%d",&n);

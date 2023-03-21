@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() 
+int main_bench() 
 { 
 int count[26]={0},t=0,j,k=0; 
 char i,str[300],*ps,zf[26]; 

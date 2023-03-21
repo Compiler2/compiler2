@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,age[100],i,j,k=0,e0,m,a;
 	int AGE[100];

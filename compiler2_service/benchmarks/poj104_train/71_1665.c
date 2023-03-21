@@ -20,7 +20,7 @@ int fuck(int m,int n)
     }
     return s;
 }
-int main()
+int main_bench()
 {
     int n,i,y,a,b,t;
     scanf("%d",&n);

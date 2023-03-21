@@ -3,7 +3,7 @@
 
 struct stu* create();
 int compare (const void * a, const void * b);
-int main()
+int main_bench()
 {
 	int i,j=0,n;
 	scanf("%d", &n);

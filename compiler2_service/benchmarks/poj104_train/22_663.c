@@ -14,7 +14,7 @@ void paixu(int a[],int n)
 			}
 		}
 }
-int main ()
+int main_bench()
 {
 	int a[200],i=1,j,max;
 	char b;

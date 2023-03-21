@@ -19,7 +19,7 @@ void bubble_sort(int a[],int n)
    }
 
   
-int main()
+int main_bench()
 {
    int a[1000]={0},b[1000]={0};  
    int i,n;

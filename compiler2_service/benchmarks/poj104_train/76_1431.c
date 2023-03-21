@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main( ){
+int main_bench( ){
     int i,n,j,m,k=0,sum=0,result;
     int x[10000],y[10000],z[50000];
     for(i=0;i<50000;i++){

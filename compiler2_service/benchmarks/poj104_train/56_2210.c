@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int shu,i,wei[5];
 	scanf("%d\n",&shu);

@@ -11,7 +11,7 @@ int mystrcmp(char* str1,char* str2,int lens)
     return 1;
 }
 
-int main()
+int main_bench()
 {
     char big[50],small[50];
     scanf("%s %s",small,big);

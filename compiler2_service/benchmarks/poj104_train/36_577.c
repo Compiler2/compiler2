@@ -41,7 +41,7 @@ void compare(char c1[],char c2[])
 	}
 }
 
-void main()
+int main_bench()
 {
 	char c1[100],c2[100];
 	scanf("%s%s",c1,c2);

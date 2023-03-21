@@ -2,7 +2,7 @@
 
 void f(int j,int i,char c[]);
 void g(char c[],int m,int j);
-int main()
+int main_bench()
 {
 	char c[501];
 	int i=0,j,k,m,n,y=0,l;

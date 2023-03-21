@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char ju[10000];
 	int i,a,num,pan=0;

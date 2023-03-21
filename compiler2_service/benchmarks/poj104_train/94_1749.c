@@ -7,7 +7,7 @@ int f(int x)
 int cmp(const void*a,const void*b)
 {  return *(int*)a-*(int*)b; }
 
-main()
+main_bench_bench()
 {
       int i,j=0,n,x;
       int *b;

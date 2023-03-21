@@ -2,7 +2,7 @@
 
 int p[5][5];
 int n,m;
-int main()
+int main_bench()
 {
     int exchange();
     for(int i=0;i<5;i++)

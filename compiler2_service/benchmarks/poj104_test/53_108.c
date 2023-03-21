@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int n,a[300],*p,i,j,k;
 scanf("%d",&n);
 p=a;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int shisushu(int n);
-int main(){
+int main_bench(){
 	int m,n;
 	scanf("%d",&m);
 	for(n=2;n<=m/2;n++){

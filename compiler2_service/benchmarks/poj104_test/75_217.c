@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int n,x[1001],y[1001],i,j,min=2000,max=0,m=0;
     char s[1100];

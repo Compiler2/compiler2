@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   int year,month,day,n_runnian=0,diyitian,m,i,sum=0;
   int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

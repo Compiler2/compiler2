@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 char a[50][50]={'0'};
 char b;
 int max=0,min=0,i;

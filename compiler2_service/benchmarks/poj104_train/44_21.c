@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int reverse(int num);
 	int a,b,c,d,e,f;

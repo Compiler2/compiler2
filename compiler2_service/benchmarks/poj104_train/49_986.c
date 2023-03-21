@@ -2,7 +2,7 @@
 
 
 void sssss(char *);
-int main(void)
+int main_bench()
 {
 	int d,t,n,i,j,k;
 	char s[500],sub[500],rsub[500];

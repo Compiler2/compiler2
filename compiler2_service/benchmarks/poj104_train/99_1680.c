@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,o=0,p=0,k=0,q=0,a[100];
 	char m='%';

@@ -6,7 +6,7 @@ int f(char a[],char b[],int i)
 	for(j=0;a[j]!=0;j++)
 	{if(a[j]!=b[i+j]){s=0;break;}}
 	return(s);}
-int main()
+int main_bench()
 {
 	char a[60],b[60];
 	int i,m,n;

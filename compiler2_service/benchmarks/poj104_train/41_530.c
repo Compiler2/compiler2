@@ -16,7 +16,7 @@ char f(int a[5])
   if(a[4]==1||a[4]==2) c='f';
   return c;
 }
-main()
+main_bench_bench()
 {
   int a[5]={0};char s[120]={'\0'};int i,t=0;
   int x1,x2,x3,x4,x5;

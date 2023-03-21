@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
   int year1,month1,day1;
   int q,sum1,R1;

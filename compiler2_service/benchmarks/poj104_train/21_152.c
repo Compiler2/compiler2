@@ -4,7 +4,7 @@ struct
 {float a;
 float c;
 }num[401];
-void main()
+int main_bench()
 { 
 	int n,i,j;
 	float sum=0,b,h=0,k;

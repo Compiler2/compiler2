@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int w,weekday[12],day[12]={12,43,71,102,132,163,193,224,255,285,316,346};
 	int m,i;

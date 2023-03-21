@@ -14,7 +14,7 @@ int g;
 struct data *next;
 };
 
-int main() {
+int main_bench() {
 	struct data *head,*p,*pp;
 	head=(struct data*)malloc(sizeof(struct data));
 	p=head;

@@ -7,7 +7,7 @@ int com(char str1[],char str2[])
 		if(str1[i]!=str2[i])return 0;
     return 1;
 }
-void main()
+int main_bench()
 {
 	int i,j,n,l,k=1,nu[800]={0},m=1,max=0;
 	char x[800],p[800][7],tmp[7];

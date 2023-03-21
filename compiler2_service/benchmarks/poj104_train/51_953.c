@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void chuan(char (*p)[5],char *q,int n);
 	char c[300],a[500][5]={'\0'},(*p)[5],*q;

@@ -54,7 +54,7 @@ void f(char a[],char b[],char * p)
      }
      
 }
-int main()
+int main_bench()
 {
     char a[260];
     char b[260];

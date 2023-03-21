@@ -34,7 +34,7 @@ int zheng(int n,int i)
 	}
 	return sum;
 }
-int main ()
+int main_bench ()
 {
 	int n,i,j=0,k=0,b[10000]={0},e[40000]={0};
 	scanf("%d",&n);

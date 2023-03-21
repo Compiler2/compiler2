@@ -23,7 +23,7 @@ void move(int a[][100],int l)
 		for(j=1;j<l+1;j++)
 		a[i][j]=a[i+1][j+1];
 }
-int main ()
+int main_bench()
 {
 	int i,j,k,n;
 	scanf("%d",&n);

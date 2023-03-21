@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	char part[50], full[50];
 	scanf("%s %s",part,full);
 	int partlen=strlen(part);

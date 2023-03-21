@@ -16,7 +16,7 @@ int a(int n)
         return(x);
     }
 }
-main()
+main_bench_bench()
 {
       int n,i,j;
       scanf("%d",&n);

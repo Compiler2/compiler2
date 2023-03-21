@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int year,mon,day,i,j,w;
 	scanf("%d%d%d",&year,&mon,&day);
 	w=(year-1)%7+(year-1)/4-(year-1)/100+(year-1)/400;

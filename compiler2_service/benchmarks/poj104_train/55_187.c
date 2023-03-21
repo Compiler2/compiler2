@@ -113,7 +113,7 @@ char rechange(int a)
  }
  return(b);
 }
-  int main()
+  int main_bench()
 {
       int a,b;
       char n[10000];

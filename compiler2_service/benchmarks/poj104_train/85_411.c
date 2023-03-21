@@ -2,7 +2,7 @@
 
 int i,n;
 char str[21],*q;
-int main(){
+int main_bench(){
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%s",str);

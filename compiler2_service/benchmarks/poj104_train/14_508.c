@@ -26,7 +26,7 @@ void bubble(struct Student a[],int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int n,i;
 	struct Student stu[4];

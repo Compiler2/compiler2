@@ -9,7 +9,7 @@ int mpow(int a,int b)
 }
 
 
-int main()
+int main_bench()
 { 
 	char a[10],d[10],c;
 	int aa[10],b[10];

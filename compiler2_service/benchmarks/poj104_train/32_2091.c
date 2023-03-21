@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char str1[200],str2[200];
 int zhe1[200],zhe2[200];
 memset(zhe1,0,sizeof(zhe1));

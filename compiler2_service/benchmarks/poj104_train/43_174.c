@@ -14,7 +14,7 @@ int is(int x)
     }
     return res;
 }
-int main()
+int main_bench()
 {
     int i=3,input;
     scanf("%d",&input);

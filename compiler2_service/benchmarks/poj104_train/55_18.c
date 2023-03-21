@@ -19,7 +19,7 @@ char num_to_char(int n)
 		return n-10+'A';
 }
 
-int main()
+int main_bench()
 {
 	int a, b, i, length;
 	char n[100];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char juzi[100];
 char danci[200][200],ci1[200],ci2[200];

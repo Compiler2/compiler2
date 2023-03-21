@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	 int m,n,max;
      char p[80],q[80];
 	 gets(p);

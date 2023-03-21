@@ -1,7 +1,7 @@
 #include <header.h>
 
 int n[300];
-int main(void)
+int main_bench()
 {
       int ctr,i=1;
       int max=0,temp;

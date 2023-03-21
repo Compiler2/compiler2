@@ -8,7 +8,7 @@ struct student{
        char xibu;
        int lun;
        int money;}st[101];
-int main()
+int main_bench()
 {
     int n,i,j,ans=0;
     memset(st,0,sizeof(struct student));

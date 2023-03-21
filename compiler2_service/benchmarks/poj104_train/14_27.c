@@ -6,7 +6,7 @@ struct stu
 	struct stu *next;	
 };
 
-void main()
+int main_bench()
 {
 	int i=0,n,a,b,score,first=0,second=0,third=0;
 	struct stu *head,*p,*p1,*p2,*p3;

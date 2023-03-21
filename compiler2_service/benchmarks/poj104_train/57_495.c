@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	void cut1(char a[],int b);
 	void cut2(char a[],int b);

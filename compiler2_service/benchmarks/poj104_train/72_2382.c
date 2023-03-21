@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     int n,m,i,j;
     int map[100][100];
     scanf("%d%d",&n,&m);

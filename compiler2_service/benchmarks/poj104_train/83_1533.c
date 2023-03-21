@@ -4,7 +4,7 @@ float a[10];
 int b[10];
 float c[10];
 float d[10];
-int main()
+int main_bench()
 {
 	int n,i,j;
 	float GPA,sum,pts;

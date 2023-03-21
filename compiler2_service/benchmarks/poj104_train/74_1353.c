@@ -18,7 +18,7 @@ int panduan(int t)
 	else return 0;
 }
 
-int main()
+int main_bench()
 {
 	int m,n,j,i,r,shuzi=0,a[20000]={0};
 	scanf("%d %d",&m,&n);

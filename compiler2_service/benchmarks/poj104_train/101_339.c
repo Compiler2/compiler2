@@ -44,7 +44,7 @@ char numf(int a,int b,int c,int n)
 
 }
 
-int main()
+int main_bench()
 {
 	int a,b,c,A,B,C,i,j;
 	char name[3],num[3];

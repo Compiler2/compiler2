@@ -17,7 +17,7 @@ int hanshu(int x,int y)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int num[5][5],jum[5];
 	int i,j;

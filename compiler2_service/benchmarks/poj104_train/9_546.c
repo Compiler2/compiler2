@@ -5,7 +5,7 @@ struct pat
    char id[10];
    int  age;
        }pat[100];
-main()
+main_bench_bench()
 {
       int n,a[200],j,i;
       scanf("%d",&n);

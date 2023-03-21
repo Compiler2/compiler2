@@ -11,7 +11,7 @@ int panduan(int m,int n)
 	
 	return 1;
 }
-void main()
+int main_bench()
 {
 	int i,j;
 	int a[5][5],c[5];

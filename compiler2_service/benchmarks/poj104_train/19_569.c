@@ -9,7 +9,7 @@ int iflet (char a)
 	return test;
 }
 
-void main ()
+int main_bench()
 {
 	char ori[100], out[100], in[100];
 	char *pori=ori, *pout=out, *pin=in, temp[20];

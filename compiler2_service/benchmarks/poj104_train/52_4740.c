@@ -11,7 +11,7 @@ int move(int *p,int x)
     }
     *p=temp;
 }
-int main()
+int main_bench()
 {
     int a[100]={0};
     int n,m;

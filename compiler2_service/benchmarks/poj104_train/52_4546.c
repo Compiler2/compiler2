@@ -1,7 +1,7 @@
 #include <header.h>
 
 void move(int a[],int n,int m);
-int main ()
+int main_bench()
 {
 	int n,m;
 	int a[100];

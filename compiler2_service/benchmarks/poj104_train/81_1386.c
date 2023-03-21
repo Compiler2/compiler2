@@ -17,7 +17,7 @@ int exchange(int n,int m,int num[5][5])
 	}
 }
 
-int main()
+int main_bench()
 {
     int num[5][5];
 	int i,j;

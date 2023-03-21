@@ -16,7 +16,7 @@ char * strrev(char * a){
 	}
 	return a;
 }
-int main()
+int main_bench()
 {
 	char a[500],b[500] ;
 	char *p;

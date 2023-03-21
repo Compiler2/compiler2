@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void jiaogu(int n);
 	int n,*a,k,j,i,max,t,s;

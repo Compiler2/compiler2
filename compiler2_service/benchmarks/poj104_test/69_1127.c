@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[251]={'0'},b[251]={'0'},c[260]={'0'},d[260]={'0'};
 	int i,al,bl,cl,j,k,p=0;

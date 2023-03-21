@@ -1,7 +1,7 @@
 #include <header.h>
 
 int f(char *p);
-void main()
+int main_bench()
 {
 for(;;)
 {char a[11],b[4];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int m,i,j,p;
 scanf("%d",&m);
 char sz[50][20]={'\0'};

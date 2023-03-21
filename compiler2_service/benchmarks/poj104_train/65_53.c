@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	struct s{
 		int b,c;
 	}a[201];

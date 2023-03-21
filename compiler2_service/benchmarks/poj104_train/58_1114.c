@@ -13,7 +13,7 @@ int why(char *s)
 		return 0;
 	return 1;
 }
-int main()
+int main_bench()
 {
 	char s[1000];
 	int n,i;

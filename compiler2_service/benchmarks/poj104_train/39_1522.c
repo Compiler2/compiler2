@@ -12,7 +12,7 @@ struct Student {
 	int total;
 };
 
-int main()
+int main_bench()
 {
 	int n, i;
 	int totalMoney = 0;

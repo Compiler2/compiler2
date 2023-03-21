@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 { 
 	char s[51]={0},w[51]={0},compare[51]={0};
 	int i,output,j,t;

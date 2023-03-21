@@ -26,7 +26,7 @@ int min(int y)
 	return(p);
 }
 
-int main()
+int main_bench()
 {
 	r=0;
 	scanf("%d,%d",&m,&n);

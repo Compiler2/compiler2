@@ -6,7 +6,7 @@ int * p[5];
 int exchange(int m,int n);
 void output();
 
-int main()
+int main_bench()
 {
 	int num[5][5];
 	int i,j,m,n;

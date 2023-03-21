@@ -8,7 +8,7 @@ int len1,len2,len3;
 int i;
 int check(int place);
 void output(void);
-int main(void)
+int main_bench()
 {
 	gets(s);
 	gets(a);

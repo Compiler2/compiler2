@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char wd[3000];
 	int i,s=0,re[300];

@@ -11,7 +11,7 @@ void yid(int *p,int x,int y)
 		*p=temp;
 	}
 }
-int main()
+int main_bench()
 {
     int *arr,l,a[100],n,m;
     scanf("%d %d",&n,&m);

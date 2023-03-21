@@ -13,7 +13,7 @@ void circle(int a[],int l)
 	for(i=0;i<l;i++)
 		swap(a,0,i);
 }
-void main()
+int main_bench()
 {
 	int l,k,i;
 	int a[100];

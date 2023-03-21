@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pdss(int number);
-int main(){
+int main_bench(){
 	int i;
 	int n,u,v,w;
 	int m=0;

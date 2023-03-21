@@ -24,7 +24,7 @@ int qq(int a){
  return k;}
 
 
-void main(){
+int main_bench(){
 
  
  int m,n,i,j,k=0,b,c,v=0;

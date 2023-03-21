@@ -12,7 +12,7 @@ int min(int x,int y)
 }
 
 
-void main ()
+int main_bench()
 {
 	 int h,i,j,k,l,a,b,temp,flag1,flag2;
 	 int f[100][100];

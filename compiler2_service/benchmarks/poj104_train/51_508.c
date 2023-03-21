@@ -4,7 +4,7 @@ int i , j , n , len , sum[ 600 ] , big ;
 char s[600] , ts[7];
 char *p1 , *p2;
 
-int main(){
+int main_bench(){
 	scanf("%d\n", &n );
 	scanf("%s" , s );
 	len=strlen(s);

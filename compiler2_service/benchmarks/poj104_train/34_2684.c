@@ -15,7 +15,7 @@ r=q/2;
 }
 
 
-void main()
+int main_bench()
 {
 	int q;
 	scanf("%d",&q);

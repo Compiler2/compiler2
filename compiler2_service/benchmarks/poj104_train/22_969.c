@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int N[300];scanf("%d",N);
 int k=0;
 for(;scanf(",%d",N+k+1);)k++;

@@ -8,7 +8,7 @@ struct data
 };
 
 
-int main()
+int main_bench()
 {
 	
 	struct data old[1000];

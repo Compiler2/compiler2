@@ -10,7 +10,7 @@ struct student
 	int paper;
 }stu;
 
-void main()
+int main_bench()
 {
  int n;
  char bigname[20]="0";

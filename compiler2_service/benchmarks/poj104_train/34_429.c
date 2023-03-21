@@ -12,7 +12,7 @@ int jiaogu(int q){
 	return q;
 }
 
-int main () {
+int main_bench() {
 	int i,n;
 	scanf("%d",&n);
 	if (n!=1){

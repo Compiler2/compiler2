@@ -24,7 +24,7 @@ void gather(int str1[],int str2[])
 		str1[i]=str2[i-t];
 }
 
-void main()
+int main_bench()
 {
 	int i,n1,n2,str1[100],str2[100];
 	scanf("%d%d",&n1,&n2);

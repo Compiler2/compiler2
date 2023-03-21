@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int n,i,cur,s=0,sq,starow,stacol,endrow,endcol;
 	scanf("%d",&n);

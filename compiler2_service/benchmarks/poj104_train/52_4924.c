@@ -12,7 +12,7 @@ void change(int n,int a[])
 	}
 }
 
-void main(void)
+void main_bench()
 {
 	int m,n,a[100];
 	scanf("%d %d",&n,&m);

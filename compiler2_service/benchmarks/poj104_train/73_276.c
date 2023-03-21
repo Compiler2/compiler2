@@ -16,7 +16,7 @@ int dmin(int a[5][5],int c,int r)
 	}
 	return 1;
 }
-void main()
+int main_bench()
 {
 	int i,j,a[5][5],b[5],k=0;
 	for(i=0;i<5;i++)

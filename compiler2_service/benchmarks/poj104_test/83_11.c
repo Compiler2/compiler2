@@ -24,7 +24,7 @@ gpa(int m,int a)
     else if ( m<60)
     GPA=0;
 }
-int main ()
+int main_bench ()
 {
     int n;
     scanf("%d",&n);

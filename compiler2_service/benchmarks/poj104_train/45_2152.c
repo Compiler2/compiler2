@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char worda[51], wordb[51];
     

@@ -6,7 +6,7 @@ struct bing
 	int age;
 	int num;
 }bing[100],temp;
-int main ()
+int main_bench()
 {
 	int i,j,n;
 	scanf("%d",&n);

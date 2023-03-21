@@ -26,7 +26,7 @@ int judge_h(int m)
 	else
 		return 0;
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j=0;
 	scanf("%d %d",&m,&n);

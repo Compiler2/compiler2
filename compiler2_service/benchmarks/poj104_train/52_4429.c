@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int change(int);
 	int a[100],i,m,n,j,t;

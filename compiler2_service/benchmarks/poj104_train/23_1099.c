@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char a[100],b[100][100];
 	int n=0,m=0,k,i;

@@ -10,7 +10,7 @@ int sta(char a[3000],int i)
 	}
 	return n;
 }
-int main()
+int main_bench()
 {
 	char a[3000]={'\0'},b[3000]={'\0'};
 	int ma[52]={0},mb[52]={0},i,l=0;

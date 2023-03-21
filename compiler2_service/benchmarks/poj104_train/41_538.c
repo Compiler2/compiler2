@@ -57,7 +57,7 @@ int search(int a[5])
 		}
 		return 1;
 }
-int main()
+int main_bench()
 {
 	 a[1] = 1;
 	 a[2] = 2;

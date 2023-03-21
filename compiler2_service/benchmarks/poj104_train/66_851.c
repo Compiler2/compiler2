@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,y,r,i,result=0,s;
 scanf("%d %d %d",&n,&y,&r);
 s=(n-1)%400+1;

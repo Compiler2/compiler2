@@ -9,7 +9,7 @@ char west;
 int thesis;
 int money;
 }stu[120];
-void main()
+int main_bench()
 {
 	int n,i,j,sum=0;
 	scanf("%d\n",&n);

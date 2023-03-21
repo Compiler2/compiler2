@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i, y[300],m1[300],m2[300];
 	scanf("%d",&n);

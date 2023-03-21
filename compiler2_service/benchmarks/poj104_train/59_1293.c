@@ -3,7 +3,7 @@
 int n,i,j,k,m,r=0;
 char a[100][101],b[100][101];
 void cr(char a[100][101]);
-int main()
+int main_bench()
 {
 	scanf("%d",&n);
 	for(i=0;i<n;i++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   void pre(int *,int);
   void bubble_sort(int*,int);

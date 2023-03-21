@@ -53,7 +53,7 @@ void f4(int s[200],int m,int n)
 	printf("\n");
 }
 	
-void main()
+int main_bench()
 {
 	f1();
 	f2(str1,m);

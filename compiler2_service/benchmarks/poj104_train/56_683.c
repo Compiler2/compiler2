@@ -1,7 +1,7 @@
 #include <header.h>
 
 long fang(long x);  
- void main() 
+ int main_bench() 
  
  { 
  

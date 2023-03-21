@@ -8,7 +8,7 @@ void reverse() {
     printf("%c", k);
 }
 
-int main() {
+int main_bench() {
     reverse();
     return 0;
 }

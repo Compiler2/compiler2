@@ -46,7 +46,7 @@ void reverse(int num)
 }
 
 
-int main()
+int main_bench()
 {
 	int x,y;
 	for(x=0;x<6;x++)

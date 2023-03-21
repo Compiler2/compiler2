@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 		int i,n ,j,sum=0,m,k,x;
 		int edge[100][100];

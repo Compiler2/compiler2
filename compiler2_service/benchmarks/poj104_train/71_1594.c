@@ -30,7 +30,7 @@ int DiJiTian(int year,int m1,int m2){
 }
 
 
-int main()
+int main_bench()
 {
 	int n,i,year[1000],m1[1000],m2[1000];
 	scanf("%d",&n);

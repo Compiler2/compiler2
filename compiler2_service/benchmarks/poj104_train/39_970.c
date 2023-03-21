@@ -58,7 +58,7 @@ void gxj(int k)
      sum+=850;
      }
 }
-int main()
+int main_bench()
 {
     int i,max=0,maxn;
     scanf("%d",&n);

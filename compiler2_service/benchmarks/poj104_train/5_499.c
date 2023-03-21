@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	char k[501],h[501];
 	double c,d;
 	scanf("%lf",&c);

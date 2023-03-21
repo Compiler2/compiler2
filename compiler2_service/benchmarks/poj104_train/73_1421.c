@@ -2,7 +2,7 @@
 
 int maxi(int b,int c,int d,int e,int f);
 int mini(int b,int c,int d,int e,int f);
-int main()
+int main_bench()
 {
 	int a[5][5],m,n,sum=0;
 	for(m=0;m<5;m++)

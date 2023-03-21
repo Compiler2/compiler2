@@ -20,7 +20,7 @@ int digui(int M, int N)
   } 
 } 
  
-int main() 
+int main_bench() 
 { 
   int M,N,n,i,K; 
   scanf("%d",&n); 

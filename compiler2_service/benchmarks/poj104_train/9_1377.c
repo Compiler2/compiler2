@@ -5,7 +5,7 @@ struct
 int age[100];
 char ID[100][11];
 }patient,*ppatient;
-int main()
+int main_bench()
 {
 	ppatient=&patient;
 	int n,i,j,k,num,m=0;

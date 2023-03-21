@@ -3,7 +3,7 @@
 
 char a[1000]={' '},b[1000]={' '};
 
-int main()
+int main_bench()
 {
 	scanf("%s %s",a,b);
 	int len;

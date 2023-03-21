@@ -4,7 +4,7 @@ int n,x[10100],y[10100];
 char s[101000];
 int ans,best;
 int v[10100];
-int main()
+int main_bench()
 {
 
   

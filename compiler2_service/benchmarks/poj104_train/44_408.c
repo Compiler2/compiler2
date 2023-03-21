@@ -17,7 +17,7 @@ int reverse(int num){
 	}
 	return k;
 }
-int main(){
+int main_bench(){
 	int u[10],j;
 	for(j=0;j<6;j++){
 		scanf("%d",&u[j]);

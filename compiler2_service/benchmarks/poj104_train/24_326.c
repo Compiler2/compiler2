@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char a[1000]={'\0'},c[50][20]={'\0'};int b,i,j,k,l,m,n,r=0,s,t,w;
 gets(a);
 b=strlen(a);

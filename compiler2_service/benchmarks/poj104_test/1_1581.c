@@ -16,7 +16,7 @@ int Digui(int a,int min)
 	}
 	return(result);
 }
-int main()
+int main_bench()
 {
 	int a[1000],n,i;
 	scanf("%d",&n);

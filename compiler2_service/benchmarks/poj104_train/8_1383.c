@@ -46,7 +46,7 @@ void output(int M,int N,int c[])
 	printf("%d",c[M+N-1]);
 }
 
-int main()
+int main_bench()
 {
 	int M,N,a[100000],b[100000];                	
 	input(&M,&N,a,b);                            

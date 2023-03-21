@@ -11,7 +11,7 @@ change(int *p,int *q,int n)
 	}	
 		 return;
 }
-void main()
+int main_bench()
 {
 	int n,a[1000],*p,i,*q;
 	scanf("%d",&n);

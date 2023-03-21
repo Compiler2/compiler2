@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	double n,a=0,b=0,c=0,d=0,x,ave1,ave2,ave3,ave4;
 	scanf("%lf\n",&n);

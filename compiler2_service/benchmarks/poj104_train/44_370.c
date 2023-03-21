@@ -22,7 +22,7 @@ int reverse(int n)
 	}
 	return neo;
 }
-int main()
+int main_bench()
 {
 	int n,i;
 	for(i=1;i<7;i++)

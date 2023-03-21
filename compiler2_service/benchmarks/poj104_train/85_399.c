@@ -21,7 +21,7 @@ int judgeChar(char c)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i, n, result[100];
 	char c[50];

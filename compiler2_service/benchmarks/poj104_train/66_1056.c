@@ -5,7 +5,7 @@ int isrunnian(int year){
     return 1;
     return 0;
 }
-int main(){
+int main_bench(){
     int i,year,month,date,sum;
     int montha[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
     scanf("%d%d%d",&year,&month,&date);

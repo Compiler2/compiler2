@@ -1,7 +1,7 @@
 #include <header.h>
 
 int check(char []);
-int main()
+int main_bench()
 {
 	int n,i;
 	char s[100];

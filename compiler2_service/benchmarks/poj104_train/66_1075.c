@@ -2,7 +2,7 @@
 
 int runnian(int y);
 int lunhun(int y,int m,int d);
-int main()
+int main_bench()
 {
 	int y,m,d,x;
 	scanf("%d%d%d",&y,&m,&d);

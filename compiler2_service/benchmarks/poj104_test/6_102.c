@@ -9,7 +9,7 @@ sum(int *x[],int m,int n)
 		z=z+*(x[i])+*(x[i]+n-1);
 	return (z);
 }
-int main()
+int main_bench()
 {
 	int k,i,j,m,n,z,l;
 	int *a[100];

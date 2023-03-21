@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int panduan(int sz[][5],int n,int m);
 	int sz[5][5],n,m,i,k;

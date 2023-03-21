@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     void trans(int *x,int *y);
     int a[300],i,j,n=0;

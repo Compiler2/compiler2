@@ -6,7 +6,7 @@
  int maths;
  int total;
 };
-void main()
+int main_bench()
 { 
 	int n,i;
     struct student s,s1,s2,s3;

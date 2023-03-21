@@ -51,7 +51,7 @@ int f(char s[],int n,int l)
 }
 
 
-int main()
+int main_bench()
 {
     int n;
     char s[501]={0};

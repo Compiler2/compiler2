@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int xingqi,yue,zong=0,panduan;
 	scanf("%d",&xingqi);

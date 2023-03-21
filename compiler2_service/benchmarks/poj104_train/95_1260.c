@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
  int MyStrCmp(char *pStr1,char *pStr2);
  char a1[81],a2[81];

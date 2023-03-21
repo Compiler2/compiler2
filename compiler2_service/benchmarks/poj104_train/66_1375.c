@@ -1,7 +1,7 @@
 #include <header.h>
 
  int run(int y);
-int main(){
+int main_bench(){
 	int y,m,d,z=0,i,k=0;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	scanf("%d%d%d",&y,&m,&d);

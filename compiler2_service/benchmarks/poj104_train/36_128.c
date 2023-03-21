@@ -17,7 +17,7 @@ void order(char ch[],int n)
 		}
 	}
 }
-void main(void)
+void main_bench()
 {
 	char ch1[1000],ch2[1000],c;
 	int i,j,k,l=1;

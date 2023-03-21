@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int ghus(char a[]);
 	void noghus(char a[]);
 	int n,i,t,j;

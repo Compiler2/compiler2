@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int n, a[310],i,s=0,temp,j;
   float ave,c,d;

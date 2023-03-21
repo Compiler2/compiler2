@@ -1,6 +1,6 @@
 #include <header.h>
 
-main ()
+main_bench()
 {
      short lens,i,j,k,n,top,pts,max;
      char s[501];

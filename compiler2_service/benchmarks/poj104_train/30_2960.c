@@ -9,7 +9,7 @@ int xiangguan(int n)
  else return(1);
 }
 
-int main()
+int main_bench()
 {int n;
  scanf("%d",&n);
  int i,sum=0;

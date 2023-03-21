@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int N,i,sum[100],total=0,order;
 	struct{

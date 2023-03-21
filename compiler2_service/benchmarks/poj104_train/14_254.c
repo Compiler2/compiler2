@@ -6,7 +6,7 @@ struct Student
  int shuxue;
 };
 void fun(int*a,int*b);
-int main()
+int main_bench()
 {
 	int n,i,j;
 	int sum[100000];

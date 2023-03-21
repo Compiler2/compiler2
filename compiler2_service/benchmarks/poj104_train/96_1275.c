@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {   char  a[101];
    
     char  c[103];

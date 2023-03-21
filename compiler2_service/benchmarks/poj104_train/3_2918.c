@@ -3,7 +3,7 @@
 int read();
 int find();
 int n,k,a[1000],m;
-int main()
+int main_bench()
 {
     read();
     m=find();

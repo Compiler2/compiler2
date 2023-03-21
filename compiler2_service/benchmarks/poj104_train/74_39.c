@@ -17,7 +17,7 @@ int g(int i)
 		else t++;
 if(t==i/2-1) return 1;		
 }
-void main()
+int main_bench()
 {int m,n,i,k=0;
 scanf("%d %d",&m,&n);
 for(i=m;i<=n;i++)

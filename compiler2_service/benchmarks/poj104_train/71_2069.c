@@ -8,7 +8,7 @@ int f(int a)
     return 2;
     
 }
-main()
+main_bench_bench()
 {
       int n;
       scanf("%d",&n);

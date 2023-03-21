@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      char danci[2000][2000];
     int n,i,len[2000],j;

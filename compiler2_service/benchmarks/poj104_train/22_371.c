@@ -38,7 +38,7 @@ int find_second(int a[],int num)
 }
 
 
-void main()
+int main_bench()
 {
 	int n,a[100],sec;
 	n=series(a);

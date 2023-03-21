@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int n,a,b,s=0;
 	int sb[120];
 	for(int k=0;k<=120;k++){

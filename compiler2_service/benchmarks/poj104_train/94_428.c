@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){int sz[4000],az[4000];
+int main_bench(){int sz[4000],az[4000];
 int i=0,n,m,h=1,t=0;
 scanf("%d",&n);
 for(i=0;i<n;i++){scanf("%d",&az[i]);

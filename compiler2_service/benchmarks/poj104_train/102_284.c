@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char a[5]={'m','a','l','e'};
 char b[7]={'f','e','m','a','l','e'};

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int i,a,b,c,d,e,sum=0,m=0,t=0,p,q,flag=0,flag2=0;
    char str[256],substr[256],rep[256],str1[256],str2[256];
    gets(str);

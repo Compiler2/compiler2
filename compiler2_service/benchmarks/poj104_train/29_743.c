@@ -6,7 +6,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,k,j,b,a;
 	double sum=0.0;

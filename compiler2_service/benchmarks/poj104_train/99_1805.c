@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     double yi=0,er=0,san=0,si=0;
     int i,n;

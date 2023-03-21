@@ -4,7 +4,7 @@ struct children{
 	char sex;
 	int num;
 };
-int main()
+int main_bench()
 {
 	char line[100];
 	int n,m;

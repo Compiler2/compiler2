@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,sz[100][2],i,a,b;
 	a=0;
 	b=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int num,*p,i,sum=0,s;
 	float mean,*q,a,t;

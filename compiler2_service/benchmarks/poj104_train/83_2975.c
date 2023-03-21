@@ -34,7 +34,7 @@ double score2g(int m)	{
 		return 0;
 }
 
-int main()	{
+int main_bench()	{
 	int i, n, a[15], b[15], sum2 = 0;
 	double sum1 = 0;
 	scanf("%d", &n);

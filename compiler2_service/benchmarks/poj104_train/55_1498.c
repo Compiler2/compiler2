@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int s_n[128];
 char n_s[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

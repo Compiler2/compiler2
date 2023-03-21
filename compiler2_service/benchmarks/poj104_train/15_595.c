@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(int argc, char* argv[])
+int main_bench()
 {
 	int loc[1000][1000];
 	int m,n,p,q;

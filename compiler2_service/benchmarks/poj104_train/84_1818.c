@@ -20,7 +20,7 @@ void selectionSort(int A[],int n)
 	}
 }
 
- int main()
+ int main_bench()
  {
 	  int i;
 	  int A[100];

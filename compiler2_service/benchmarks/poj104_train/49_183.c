@@ -22,7 +22,7 @@ void huiwen(char string[500],int full,int length)
 	}
 }
 		
-int main()
+int main_bench()
 {
 	char str[500];
 	gets(str);

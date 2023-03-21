@@ -5,7 +5,7 @@ struct prin
 	double b;
 	int a,flag;
 };
-int main()
+int main_bench()
 {
 	double n,ar=0;
 	struct prin p[10000];

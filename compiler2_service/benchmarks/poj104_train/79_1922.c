@@ -9,7 +9,7 @@ int f(int n, int m)
   else
 	  return (f(n - 1, m) + m - 1) % n + 1;
 }
-int main()
+int main_bench()
 {
 	int i,m, n,a[20000]={0},c=0;
   for(i=1;i<20000;i++)

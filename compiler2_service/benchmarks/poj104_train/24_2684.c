@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,count[201]={0},paixu[201]={0},flag,len,m,tem,i,j;
 	char sen[2000],word[201][50];

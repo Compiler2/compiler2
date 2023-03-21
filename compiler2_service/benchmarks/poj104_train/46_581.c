@@ -48,7 +48,7 @@ void spread(int A[100][100],int M,int N)
 		printf("%d\n",t[i]);
 	}
 }
-void main()
+int main_bench()
 {
 	int i,j,s;
 	int r,c;

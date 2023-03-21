@@ -10,7 +10,7 @@ struct student
   int m;
   int sum;
  } stu[100];
-main()
+main_bench_bench()
 {
  int p[100]={0};
  int i=0,j=0,n,h=0,G=0;

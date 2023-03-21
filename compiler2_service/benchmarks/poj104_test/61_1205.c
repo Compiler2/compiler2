@@ -13,7 +13,7 @@ int f(int n)
 	return A[n];
 }
 
-int main()
+int main_bench()
 {
 	int n,i,p,s;
 	scanf("%d",&n);

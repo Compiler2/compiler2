@@ -45,7 +45,7 @@ void f(int n1,int n2)
 	}
 	printf("%d",b[n2-1]);
 }
-int main()
+int main_bench()
 {
 	int n1,n2;
 	scanf("%d%d",&n1,&n2);

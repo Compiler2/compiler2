@@ -35,7 +35,7 @@ int MAX(int x,int y)
 	return(z);
 }
 
-void main()
+int main_bench()
 {
 	int num[300],i,n,max=0,max_2=0,t=0;
 	char str=',';

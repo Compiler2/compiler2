@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int sum = 0;
    int year , month , day,i,temp=0;
    int yue[12]= {31,28,31,30,31,30,31,31,30,31,30,31};

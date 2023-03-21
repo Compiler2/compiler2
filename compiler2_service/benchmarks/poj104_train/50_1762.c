@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int i=1;
 	int n,w;
 	scanf("%d",&w);w+=12;

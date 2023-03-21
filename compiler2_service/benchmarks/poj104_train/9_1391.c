@@ -6,7 +6,7 @@ struct patience
        char id[10];
        int age;
        } pa[100];
-int main()
+int main_bench()
 {
     int n,i,j,p=60,q=0;
     scanf("%d",&n);

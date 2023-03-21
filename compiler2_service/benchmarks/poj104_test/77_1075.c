@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char p[101]={'\0'},temp,a,b;
 	int i=0,j;

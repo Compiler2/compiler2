@@ -25,7 +25,7 @@ int swap(int n,int m,int sz[][5])
 	else
 		return 0;
 }
-void main()
+int main_bench()
 {
 	int sz[5][5],n,m,i,p,q,j,a;
 	for(i=0;i<5;i++)

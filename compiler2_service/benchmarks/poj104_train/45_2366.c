@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char sho [51];
     char lon [51];
     char tem [51];

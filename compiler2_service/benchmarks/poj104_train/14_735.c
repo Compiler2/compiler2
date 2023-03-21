@@ -5,7 +5,7 @@ struct student{
 		int x,y;
 		int z;
 	}stu[100000];
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,a=0,b=0,c=0,a1,b1,c1;
 	

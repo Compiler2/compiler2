@@ -8,7 +8,7 @@
  	int sum;
  	
  }stu[100];
- void main()
+ int main_bench()
  {
  	int n,i,k,max,s=0;
  	scanf("%d\n",&n);

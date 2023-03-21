@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
         int cishu[2][54]={0},l1,l2,i;
         char input1[100],input2[100];

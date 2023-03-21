@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,m=0,i=0;
 	int a[100]={0};

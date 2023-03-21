@@ -5,7 +5,7 @@ int a[5][5],i,j,n,m,x,y,z,c,b[5];
 
 
 
-void main()
+int main_bench()
 {
 	for(i=0;i<5;i++)
 	{

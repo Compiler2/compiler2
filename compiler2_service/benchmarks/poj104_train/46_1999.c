@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int shuzu[100][100];
 	int i,j,row,col;

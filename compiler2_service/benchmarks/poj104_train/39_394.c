@@ -18,7 +18,7 @@ int f(struct stu*q)
  if( q->ass>80 && q->pos=='Y' ) z=z+850;
  return(z);
 }
-void main()
+int main_bench()
 {struct stu* p;
  int n,i,m=0,t=0;
  scanf("%d",&n);

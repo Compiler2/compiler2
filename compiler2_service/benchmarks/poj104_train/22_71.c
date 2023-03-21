@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int i,j=0,k,x,y,a[300]={0},b[300],h=0;
 char c[20000];
 scanf("%s",c);

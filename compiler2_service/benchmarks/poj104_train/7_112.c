@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char str[256];
 	char sta[256];

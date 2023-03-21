@@ -10,7 +10,7 @@ struct student
 	int lunwen;
 };
 struct student stu[100],t;
-void main()
+int main_bench()
 {
 	int n,i,jj[100]={0},maxjj,sum=0,j,k;
 	char maxname[20];

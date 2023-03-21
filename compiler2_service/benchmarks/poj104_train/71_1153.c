@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   
 	int i,max,min,j,k,n,y,a,b,s,day1[13]={0,31,28,31,30,31,30,31,31,30,31,30,31},day2[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
 	scanf("%d",&n);

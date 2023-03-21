@@ -1,7 +1,7 @@
 #include <header.h>
 
 void move(int a[],int n,int m);
-void main()
+int main_bench()
 {
 	int n,m,i,a[100],*p;
 	scanf("%d%d",&n,&m);

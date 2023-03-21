@@ -1,7 +1,7 @@
 #include <header.h>
 
 void friend1(char p[],int n);
-int main()
+int main_bench()
 {
 	char letter[100];
 	int i,j,k;

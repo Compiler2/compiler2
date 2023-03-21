@@ -15,7 +15,7 @@ int f(int n,int m,int *point)
 	}
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int m,n,a[5][5],i,j;
 	int *point=a[0];

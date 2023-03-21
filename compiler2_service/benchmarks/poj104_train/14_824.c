@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int n,num,math,china,z,i;
 	int num1=2,num2=1,num3=0,m1=0,m2=0,m3=0;

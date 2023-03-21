@@ -17,7 +17,7 @@ int f(int x){
 	if(b==0)
 		return 0;
 }
-int main(){
+int main_bench(){
     int n,j,z=0,g,h;
 	scanf("%d",&n);
     for(j=2;j<=n-2;j++){

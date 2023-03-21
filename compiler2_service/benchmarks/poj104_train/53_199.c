@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
  int n,i,j,c=0,d,f,g[301];
  scanf("%d%d",&n,&g[1]);

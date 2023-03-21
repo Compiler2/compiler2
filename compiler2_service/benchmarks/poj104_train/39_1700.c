@@ -9,7 +9,7 @@ struct student
 	char xibu;
 	int lunwen;
 };
-int main()
+int main_bench()
 {
 	int n,i,j,s[100],max,t,S=0;
 	struct student stu[100];

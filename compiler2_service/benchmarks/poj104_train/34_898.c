@@ -1,7 +1,7 @@
 #include <header.h>
 
 int gujiao(int x);
-int main()
+int main_bench()
 {
 	int x;
 	scanf("%d",&x);

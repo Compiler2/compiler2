@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int a,b,c,m,n;
 	scanf("%d %d %d",&a,&b,&c);
 	m=a-1+(a-1)/400*97+(a-1)%400/4-(a-1)%400/100;

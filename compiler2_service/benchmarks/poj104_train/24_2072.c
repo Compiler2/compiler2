@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int b[200],i,j,k,e,t=0,l=0,n=0;
 	char  a[2000];
     char  *p;

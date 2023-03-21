@@ -2,7 +2,7 @@
 
 int num[10000]={0};
 char s[3000];
-int main(void)
+int main_bench()
 {
 	int i,j=0,k=0;
 	char c;

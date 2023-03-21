@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     struct old{
         char ID[10];
         int age;

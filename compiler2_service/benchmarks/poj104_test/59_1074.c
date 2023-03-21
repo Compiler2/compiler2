@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {   int n,m,i,j,t=0,day;
     char bf1[101][101]={'#'},bf2[101][101]={'#'};
 	char kongbai[10];

@@ -48,7 +48,7 @@ void f4()
 	printf(" %d",c[i]);
 	printf("\n");
 }
-void main()
+int main_bench()
 {
 	 f1();
 	 f2();

@@ -6,7 +6,7 @@ struct person{
 	int age;
 }per[100],per1[100],per2[100];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j=0,k=0,x=0,t;
 	char e[10];

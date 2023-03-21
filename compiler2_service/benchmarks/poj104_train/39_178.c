@@ -9,7 +9,7 @@
    int paper;
    int money;
   }stu[100];
-void main()
+int main_bench()
 {
   int n,i,j,max,sum=0;
   scanf("%d",&n);

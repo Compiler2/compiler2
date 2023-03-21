@@ -7,7 +7,7 @@ int min(int x,int y)
 	else return x;
 }
 
-int main()
+int main_bench()
 {
 	char a[80],b[80];
 	int x,y,i,z;

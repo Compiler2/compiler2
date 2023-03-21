@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 	char a[30];
 	gets(a);
 	char *pt[30];

@@ -5,7 +5,7 @@ int a[300], b[300], c[300];
 int al, bl;
 char s[300];
 
-int main() {
+int main_bench() {
 	memset(a, 0, sizeof(a));
 	memset(b, 0, sizeof(b));
 	scanf("%s", s);

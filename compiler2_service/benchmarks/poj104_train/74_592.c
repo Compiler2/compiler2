@@ -6,7 +6,7 @@ int huiwen(int);
 
 int zhishu(int);
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,n;
 	scanf("%d%d",&m,&n);

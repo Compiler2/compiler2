@@ -6,7 +6,7 @@ struct stu
 	char name[20];
 	int sbu[3];
 };
-int main()
+int main_bench()
 {
        int n;
       scanf("%d",&n);

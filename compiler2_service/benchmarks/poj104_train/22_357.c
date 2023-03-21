@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int a[100],i,max,min,n;
 char c;
 for(i=0;;i++)

@@ -7,7 +7,7 @@ void count(char *p,int *t)
 	for(i=0;i<l;i++)
 		t[p[i]]++;
 }
-void main()
+int main_bench()
 {
 	int i,f=0;
 	char s1[100],s2[100];

@@ -11,7 +11,7 @@ struct student
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,e=0,f=0,g=0,a=0,b=0,c=0;
 	scanf("%d",&n);

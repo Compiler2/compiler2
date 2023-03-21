@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,k,p;
 	double a[100],fenzi[100],fenmu[100],sum[100]={0.0};

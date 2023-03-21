@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(void)
+int main_bench(void)
 {
 	int s[100];
 	int n,i=0,max,qmax;

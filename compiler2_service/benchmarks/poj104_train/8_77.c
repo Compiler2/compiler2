@@ -44,7 +44,7 @@ void print(int n,int m,int x[])
 	printf("%d",x[m+n-1]);
 }
 
-void main()
+int main_bench()
 {
 	input();
 	arrange(n,m,a,b);

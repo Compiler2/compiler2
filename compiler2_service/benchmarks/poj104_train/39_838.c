@@ -7,7 +7,7 @@ struct student{
 	int sum;
 }stu[1000];
 char cc[10];
-int main(){
+int main_bench(){
 	int t,k,x[10000]={0},n,min=10000,max=0,min1=0,max1=0,a=0,b,c,d,i,j,tp,sum1=0;
 	scanf("%d",&n);
 	scanf("%c",&cc[1]);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int del(int *x,int n,int m);
 int a[100000];

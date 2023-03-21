@@ -7,7 +7,7 @@ struct book{
 };
 char max(int *p);
 
-int main()
+int main_bench()
 {
 	int m,b,i,*p;
 	struct book shu[999];

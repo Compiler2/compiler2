@@ -18,7 +18,7 @@ int isrn(int n)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int y,m,d,sum=0,i;
 	scanf("%d %d %d",&y,&m,&d);

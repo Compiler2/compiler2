@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()  
+int main_bench()  
 {char ma='A';
 int cnt[128]={0};
 int i,j,n;

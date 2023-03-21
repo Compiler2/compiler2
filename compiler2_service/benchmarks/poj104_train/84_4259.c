@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int z[100],n,i,max,min;
 	scanf("%d",&n);

@@ -9,7 +9,7 @@ struct student
 	char b;
 	int thesis;
 };
-void main()
+int main_bench()
 {
     int n,i,temp,sum=0,max=0;
 	int money[100]={0};

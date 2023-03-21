@@ -13,7 +13,7 @@ int com( const void * a , const void * b )
 		return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i , j , k , r , ren , max , i_nan , i_nv ;
 	char c;

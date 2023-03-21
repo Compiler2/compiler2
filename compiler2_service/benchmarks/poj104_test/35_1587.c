@@ -3,7 +3,7 @@
 int andian[8][8];
 int zuida[8]={0};
 int zzhzb[8];
-int main()
+int main_bench()
 {
     int hang,lie,i,s=0,j,t=0,f,w=0,h;
     scanf("%d,%d",&hang,&lie);

@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int z,totalhorse,tianwins[10000]={0},tianloses[10000]={0},p1,p2,p3,p4,qihorse[10000],tianhorse[10000],y,k1,m1,temp1,k2,m2,temp2,count=0,i,j;
     

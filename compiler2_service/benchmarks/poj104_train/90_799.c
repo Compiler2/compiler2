@@ -16,7 +16,7 @@ int f(int x,int y)
 	return z;
 }
 
-main()
+main_bench_bench()
 {
 	int t,m,n,i,k;
 	scanf("%d",&t);

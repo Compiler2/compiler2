@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int A,B,C,a,b,c,i,j,day=0;
 	scanf("%d %d %d\n%d %d %d",&A,&B,&C,&a,&b,&c);

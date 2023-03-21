@@ -10,7 +10,7 @@ int paper;
 int scolarship;
 };
 
-void main()
+int main_bench()
 {
   int n,i,total=0,max=0;
   char name2[20];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char n[7][5]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun."};
 	int y,m,d,i,j,day[12]={31,28,31,30,31,30,31,31,30,31,30,31},count=0,total=0,p;

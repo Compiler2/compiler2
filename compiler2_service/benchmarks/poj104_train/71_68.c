@@ -91,7 +91,7 @@ int DATE1(int M1)
 	return DATE1;
 }
 
-int main()
+int main_bench()
 {
 	int i,n,YEAR[210],MONTH1[210],MONTH2[210],P[210],Q[210],A[210],B[210];
 	scanf("%d",&n);

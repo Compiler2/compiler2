@@ -13,7 +13,7 @@ int search(char a[],char b[],int i,int x)
     return(-1);
 }
     
-int main(int argc, char *argv[])
+int main_bench()
 {
   
     char a[30],b[30];

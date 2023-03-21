@@ -11,7 +11,7 @@ int f(int m,int n)
 	}
 	return(sum);
 }
-int main()
+int main_bench()
 {
 	int x,i;
 	scanf("%d\n",&x);

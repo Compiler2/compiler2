@@ -3,7 +3,7 @@
 int n=0,m=0,i=0,t=0,w=0,e=0,q=0,r=0,k=0,o=0,p=0,u=0,f=0;
 int a[100][100],b[10000],c[10000],d[10000];
 double x=0,y=0,z=0;
-int main(){
+int main_bench(){
 
 for(i=0;i<100;i++){
 	scanf("%d %d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4],&a[i][5]);

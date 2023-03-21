@@ -8,7 +8,7 @@ int c(int i,int j)
  m+=a[i][k]*b[k][j];
  return m;
     }
-main()
+main_bench_bench()
 {
   int x1,y1,x2,y2,s,p,i,j,k;
   scanf("%d%d",&x1,&y1);

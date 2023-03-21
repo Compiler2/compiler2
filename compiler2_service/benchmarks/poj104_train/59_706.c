@@ -27,7 +27,7 @@ void infect(int m)
     infect(m-1);
     return ;
 }
-int main()
+int main_bench()
 {
   int m,i,j;
   scanf("%d",&n);

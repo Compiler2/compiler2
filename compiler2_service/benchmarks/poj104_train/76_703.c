@@ -5,7 +5,7 @@ struct point{
 	int b;
 };
 
-int main(){
+int main_bench(){
 	int n,i,j=0,A,B,k;
 	scanf("%d",&n);
 	struct point range[n];

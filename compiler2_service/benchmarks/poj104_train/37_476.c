@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int t,k,i,j,n,p,flag=0;
 	char a[100];

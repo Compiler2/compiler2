@@ -8,7 +8,7 @@ struct statistics
 		int math;
 		int sum;
 	} form[100000],temp;
-int main()
+int main_bench()
 {
 	
 	int n;

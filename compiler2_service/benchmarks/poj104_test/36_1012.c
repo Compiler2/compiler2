@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char a[100],b[100];
 	int da[2][26]={0},xiao[2][26]={0};

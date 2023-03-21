@@ -3,7 +3,7 @@
 
 int sz[100][100];
 
-int main () {
+int main_bench () {
     
     int n, m, i, j;
     

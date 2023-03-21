@@ -17,7 +17,7 @@ int jh(int a[5][5],int m,int n){
             printf("%d\n",a[i][4]);}}
     return 0;
     }
-int main(){
+int main_bench(){
     for(int i=0;i<=4;i++){
             for(int j=0;j<=4;j++){
                     scanf("%d",&a[i][j]);}}

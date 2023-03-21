@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char a[2][30]={'\0'};
 	char *p,*q;

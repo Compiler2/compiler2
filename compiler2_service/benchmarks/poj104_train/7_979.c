@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
       char a[260],b[260],c[260];
       scanf("%s",a);

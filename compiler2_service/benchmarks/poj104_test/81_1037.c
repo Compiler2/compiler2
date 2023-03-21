@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int convert(int *,int n,int m);
 	int c,*p,i,j,n,m,a[5][5];

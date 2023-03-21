@@ -9,7 +9,7 @@ struct student
 	int c;
 	int q;
 };
-void main()
+int main_bench()
 {
 	int n,i,j;
 	int long sum=0;

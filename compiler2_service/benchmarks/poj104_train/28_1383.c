@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char dc[3000];
 	gets(dc);
 	int len;

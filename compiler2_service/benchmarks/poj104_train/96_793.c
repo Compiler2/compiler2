@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char asd[300],zxc[300];
 	int n=0,m=0,i,j,k;
 	scanf("%s",asd);

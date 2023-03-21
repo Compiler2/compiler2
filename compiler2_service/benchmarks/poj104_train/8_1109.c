@@ -46,7 +46,7 @@ void print()
 		}
 	
 }
-main()
+main_bench_bench()
 {
 	putin();
 	replace();

@@ -9,7 +9,7 @@ struct inf
 	char b;
 	int num;
 };
-void main()
+int main_bench()
 {
 	int n,i,t,total=0,money[100]={0},max=0;
 	struct inf c[100];

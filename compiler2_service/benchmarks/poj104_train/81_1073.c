@@ -15,7 +15,7 @@ int f(int n,int m,int (*p)[5])
 	}
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int a[5][5];
 	int i,j,flag,n,m;

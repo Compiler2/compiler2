@@ -10,7 +10,7 @@ struct student
 	char num;
 	int money;
 };
-int main()
+int main_bench()
 {
 	struct student a[501];
 	char s1[20];

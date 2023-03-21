@@ -4,7 +4,7 @@ int a[100];
 int b[100];
 int c[100];
 int n,m;
-int main ()
+int main_bench()
 {  void cout ();
    void p ();
    void com ();

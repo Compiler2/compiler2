@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char string[256], substring[256], replacement[256], buffer[256]={0}, result[256]={0};
     scanf("%s %s %s", string, substring, replacement);

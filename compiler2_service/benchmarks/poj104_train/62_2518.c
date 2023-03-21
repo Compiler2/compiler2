@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char zfc[5000],jz[5000];
     int i,k=1,n;

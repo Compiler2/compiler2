@@ -14,7 +14,7 @@ int Array(int a[5][5],int i,int j)
 	}
 	else
 		return (0);}
-void main()
+int main_bench()
 
 
 {

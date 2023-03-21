@@ -24,7 +24,7 @@ else
              }
 }    
 }
-main()
+main_bench_bench()
 {
       int x,m,n,i,k;
       scanf("%d",&x);

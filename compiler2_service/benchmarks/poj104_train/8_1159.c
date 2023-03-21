@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m,n;
-int main()
+int main_bench()
 {
 	int p[100]={0},q[100]={0},c[200]={0};
 void re(int a[],int b[]);

@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char name[105][20];
 	int qimo[105];

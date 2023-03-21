@@ -1,7 +1,7 @@
 #include <header.h>
 
 int f(char a[]);
-void main()
+int main_bench()
 {
 	char a[50],b[50];
 	int num1[52]={0},num2[52]={0},len1,len2,l,m,i;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[105][105]={0},b[105][105]={0};
-int main()
+int main_bench()
 {
 	int x1,y1,x2,y2,i,j,x,y,c,k;
 	scanf("%d%d",&x1,&y1);

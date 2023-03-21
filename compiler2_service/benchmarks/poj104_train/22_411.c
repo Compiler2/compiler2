@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int shu[301],aa,i,p,j,s[301]={0},k=1;
 	char c;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 void paixu(int n,int A[]);
-int main(){
+int main_bench(){
 	int n=0,i,N;
 	int a[500];
 	int A[500];

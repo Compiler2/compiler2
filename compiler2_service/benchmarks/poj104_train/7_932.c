@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
   char origin[256], sub[256], replace[256], after[256];
   scanf("%s%s%s", origin, sub, replace);

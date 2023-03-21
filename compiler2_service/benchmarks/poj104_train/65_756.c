@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i,j,A=0,B=0,Tie=0;
 scanf("%d",&n);
 int* lun=(int*)malloc(n*2*sizeof(int));

@@ -8,7 +8,7 @@ int a(int n,int m){
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int c[5][5],e[5],d,i,j,n,m;
 	

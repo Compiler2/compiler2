@@ -5,7 +5,7 @@ struct mao
 	char name[10];
 	int age;
     }pat[100];
-int main()
+int main_bench()
 {
     int max (int age[100],int n);
 	int n,i,k;

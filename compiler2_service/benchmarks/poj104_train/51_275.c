@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 int i,j,n,k=1,num[500];char text[501],s[500][6];
 scanf("%d\n",&n);gets(text);

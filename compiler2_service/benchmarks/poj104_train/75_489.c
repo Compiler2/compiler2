@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int myarray[1000]={0};
 	int people[100000][2]={0};

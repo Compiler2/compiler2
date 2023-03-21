@@ -1,7 +1,7 @@
 #include <header.h>
 
 int isprime(int p);
-int main(){
+int main_bench(){
 	int m,a,b,prime1,prime2;
 	scanf("%d",&m);
 	for(a=3;a<=m/2;a=a+2){

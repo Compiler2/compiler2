@@ -9,7 +9,7 @@ struct stu
 	char xibu[1];
 	int lunwen;
 }a[150];
-void main()
+int main_bench()
 {
 	int n,s[150]={0},i,sum=0,max=0;
 	char name[25];

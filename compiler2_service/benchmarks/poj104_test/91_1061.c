@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,l;
 	char c[101];

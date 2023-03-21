@@ -4,7 +4,7 @@
 int n, m, sum;
 int room[102][102];
 
-int main()
+int main_bench()
 {
 	int i,j,k;
 	char ch;

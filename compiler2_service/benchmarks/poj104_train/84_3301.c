@@ -1,7 +1,7 @@
 #include <header.h>
 
 int yu7wuguan(int i);
-int main(){
+int main_bench(){
     int sz[100],i,n,k;
     int max,e;
     scanf("%d",&n);

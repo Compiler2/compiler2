@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	struct patient{char id[10];int a;}patients[100];
 	struct old{char ido[10];int ao;}olds[100];

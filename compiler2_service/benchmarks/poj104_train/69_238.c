@@ -3,7 +3,7 @@
 
 int add(char x,char y);
 int over(char x,char y);
-int main()
+int main_bench()
 {
 	char a[260],b[260];
 	char c[260];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char letter1[100],letter2[100],*le1,*le2;
 	le1=letter1;

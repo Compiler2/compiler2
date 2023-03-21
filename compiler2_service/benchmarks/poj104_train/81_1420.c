@@ -8,7 +8,7 @@ int matrix(int b,int c){
          l=0;
     return l;
 }
-int main(){
+int main_bench(){
     int a[5][5];
     int i,j;
     for(i=0;i<5;i++){

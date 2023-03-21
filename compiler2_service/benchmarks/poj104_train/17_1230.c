@@ -29,7 +29,7 @@ void f(char c[],char str[],int n)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int r=0;
 	while(r<=5)

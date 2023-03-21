@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int year(int x);
 	int diy(int x,int y,int z);

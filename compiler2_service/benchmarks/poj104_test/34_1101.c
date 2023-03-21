@@ -2,7 +2,7 @@
 
 int EVEN(int a);
 int ODD(int b);
-int main()
+int main_bench()
 {
 	int d=0;
 	int n;

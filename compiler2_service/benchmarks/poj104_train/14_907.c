@@ -9,7 +9,7 @@ struct student
 	int zongfen;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,j,e;
 	scanf("%d",&n);

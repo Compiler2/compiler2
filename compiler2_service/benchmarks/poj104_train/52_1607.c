@@ -16,7 +16,7 @@ move (int a[],int n,int m)
 		p = a + n - 1;
 	}
 }
-main()
+main_bench_bench()
 {
 	int n, m, *p;
 	int b[10000];

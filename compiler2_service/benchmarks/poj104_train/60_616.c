@@ -10,7 +10,7 @@ int sushu(int x)
     if (i==x) return 1;
     else return 0;
 }
-int main ()
+int main_bench()
 {
     int n,a=0;
     scanf("%d",&n);

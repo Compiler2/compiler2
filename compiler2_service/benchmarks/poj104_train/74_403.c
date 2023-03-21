@@ -28,7 +28,7 @@ int hw(int k)
 	return(t);
 }
 
-void main()
+int main_bench()
 {
 	int m,n,k,bg,ans[1000],j=0,i;
 	scanf("%d%d",&m,&n);

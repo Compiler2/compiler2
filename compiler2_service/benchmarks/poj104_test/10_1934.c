@@ -8,7 +8,7 @@ int max(int b,int c)
 } 
 int n;
 int x[26];
-int main()
+int main_bench()
 {
 	int i;
 	int m,k;

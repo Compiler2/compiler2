@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench()
 {
   struct book
   {

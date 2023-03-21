@@ -30,7 +30,7 @@ void go(int a[5][5],int n,int m)
 	
 }
 
-int main()
+int main_bench()
 {
 	int a[5][5],i,j,n,m;
 	for(i=0;i<5;i++)

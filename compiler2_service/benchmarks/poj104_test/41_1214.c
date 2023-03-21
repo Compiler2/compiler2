@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int panduan(int a,int b,int c,int d,int e);
 	int i,j,p,q,m,a,b,c,d,e;

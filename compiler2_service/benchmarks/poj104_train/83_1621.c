@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
 	int numberOfCourse,i,j;
 	int sumOfCredits=0;
 	float sum=0.0,average,grade;

@@ -16,7 +16,7 @@ int hui(int a)
 	else return 0;
 }
 
-void main()
+int main_bench()
 {
 	int m,n;scanf("%d %d",&m,&n);
 	int i,l=0,a[100],*x=a;

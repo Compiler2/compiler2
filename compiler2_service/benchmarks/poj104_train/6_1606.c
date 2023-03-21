@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,k,i,m,sum=0,x,y;
     i=0;

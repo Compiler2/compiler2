@@ -12,7 +12,7 @@ int f(char word[500],int len)
 	}
 	return 1;
 }
-int main()
+int main_bench()
 {
 	char str[500],word[1000][500];
 	int i,j,len[1000],lenth,m,log;

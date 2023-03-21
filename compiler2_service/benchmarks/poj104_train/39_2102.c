@@ -11,7 +11,7 @@ struct student{
 	int money;
 };
 
-int main(){
+int main_bench(){
 	int N,i,max,sum;
 	scanf("%d",&N);
 	struct student *stu=(struct student*)malloc(sizeof(struct student)*N);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char s[999],*p;
 int i,j;
 gets(s);

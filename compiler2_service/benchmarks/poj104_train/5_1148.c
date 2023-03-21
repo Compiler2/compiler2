@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	double s,w;
 	int k1=0,k2=0,i,dian,lena,lenb;

@@ -2,7 +2,7 @@
 
 int year[100];
 double n,a,b,c,d;
-int main()
+int main_bench()
 {
 	int i;
 	scanf("%lf",&n);

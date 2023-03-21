@@ -2,7 +2,7 @@
 
 int a[301];
 char b[301];
-int main()
+int main_bench()
 {
 	int i, n, j, temp;
 	for(i=0;i<300;i++)

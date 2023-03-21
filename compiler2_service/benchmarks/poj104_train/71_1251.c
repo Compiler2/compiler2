@@ -1,7 +1,7 @@
 #include <header.h>
 
 int f(int,int);
-int main(){
+int main_bench(){
 	int n,i,e;
 	scanf("%d",&n);
 	int y[n],m1[n],m2[n];

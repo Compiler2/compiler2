@@ -5,7 +5,7 @@ struct student
 	int num,z;
 }a,max1,max2,max3;
 
-int main()
+int main_bench()
 {
 	int i,n,x,y;
 	scanf("%d",&n);	

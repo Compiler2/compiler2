@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   
     int n[100],m[100],i;
     int cho(int m,int n);n[0]=1;m[0]=1;

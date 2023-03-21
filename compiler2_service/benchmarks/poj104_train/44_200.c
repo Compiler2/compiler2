@@ -2,7 +2,7 @@
 
 int qiufan(int a);
 
-main()
+main_bench_bench()
 {
     int a;
     int n;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char s[110];
 	int sz[110],ys,i,l,szsh[110];
 	memset(sz,0,sizeof(sz));

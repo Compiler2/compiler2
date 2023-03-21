@@ -30,7 +30,7 @@ void shuchu(struct dui a[100],int n)
 			i++;
 	}while(n!=0);
 }
-int main()
+int main_bench()
 {
 	int i,n,j=0,k=0;
 	char s[100],nan;

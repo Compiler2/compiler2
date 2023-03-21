@@ -1,7 +1,7 @@
 #include <header.h>
 
 char a[1000],b[1000];
-int main(){	
+int main_bench(){	
 	int len,n=0,i,j=0;
 	gets(a);
 	len=strlen(a);

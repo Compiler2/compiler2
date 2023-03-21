@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,count[100]={0},score1[100],score2[100],num[100],i;
 	char name[100][30],a[100][2],b[100][2];

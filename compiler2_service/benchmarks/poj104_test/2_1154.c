@@ -21,7 +21,7 @@ int Book_num(char a[])
 	return num;
 }
 
-int main()
+int main_bench()
 {
 	int m,bk1,i,max,j,wrt;
 	int author[26][999]={0};

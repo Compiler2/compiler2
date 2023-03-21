@@ -45,7 +45,7 @@ void putout(int *w,int *x)
 		printf("%d ",*(w+i));
 	printf("%d\n",*(w+i));
 }
-void main()
+int main_bench()
 {
 	int a[100],b[100],c[200];
 	input(a,b,n);

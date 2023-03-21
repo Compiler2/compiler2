@@ -6,7 +6,7 @@ struct stu
 	int Chinese;
 	int math;
 }a[100000];
-void main()
+int main_bench()
 {
 	int n,i,first,second,third,h1=0,h2=0,h3=0,e;
 	scanf("%d",&n);

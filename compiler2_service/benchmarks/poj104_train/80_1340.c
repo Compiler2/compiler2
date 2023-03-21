@@ -35,7 +35,7 @@ int NO(int a,int b,int c)
 	NO=NO+c;
 	return (NO);
 }
-void main()
+int main_bench()
 {
 	int a1,b1,c1,a2,b2,c2,x,y,z;
 	scanf("%d%d%d",&a1,&b1,&c1);

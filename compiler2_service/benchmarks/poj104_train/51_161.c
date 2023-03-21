@@ -39,7 +39,7 @@ void ngram(char str[],int n)
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	int n;
 	char str[500];

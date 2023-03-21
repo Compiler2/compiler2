@@ -6,7 +6,7 @@ struct stud
 	int c;
 	int t;
 }s[100000],temp;
-int main()
+int main_bench()
 {
 	int i,j,k,n,p;
 	scanf("%d",&n);

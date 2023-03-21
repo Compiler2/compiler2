@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int nian(int a,int b);
 	int qian(int a,int b,int c);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 char kid[101];
 scanf("%s",kid);
 int zuhe[51][2];

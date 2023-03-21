@@ -3,7 +3,7 @@
 int a[1000];
 int l=0,x;
 int fff(int w,int t,int x);
-int main()
+int main_bench()
 {
     int i,j,q,p,n,m,y;
     scanf("%d",&n);

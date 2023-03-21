@@ -1,7 +1,7 @@
 #include <header.h>
 
 int mark[300];
-int main(){
+int main_bench(){
 	int n,i,sz[300];
 
 	scanf("%d", &n);

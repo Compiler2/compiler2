@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char str[200],*p,*q,*r,ans[200];
     int len,i;

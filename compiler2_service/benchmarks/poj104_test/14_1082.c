@@ -7,7 +7,7 @@ struct mark
 	int math;
 	int sum;
 }stu[100000];
-int main()
+int main_bench()
 {
 	int i,n;
 	scanf("%d",&n);

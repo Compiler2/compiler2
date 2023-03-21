@@ -2,7 +2,7 @@
 
 int F(int n);
 
-int main()
+int main_bench()
 {
 	int n[1000],a[1000],k,i;
 	scanf("%d",&k);

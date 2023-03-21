@@ -19,7 +19,7 @@ return f(m,n-1) + f(m-n , n);
 
  
 
-int main()
+int main_bench()
 {
    
     int t,a,b;

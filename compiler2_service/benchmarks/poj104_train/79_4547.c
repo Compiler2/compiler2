@@ -8,7 +8,7 @@ int s(int x,int y)
    return t;
 }
 
-int main()
+int main_bench()
 {
       int i=0,j=0,k=0,n=0,m=0,x=0,y=0,z=0,p=0,q=0;
       int a[300],b[300],c[300];

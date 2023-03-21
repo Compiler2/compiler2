@@ -1,7 +1,7 @@
 #include <header.h>
 
 char c[30];
-int main()
+int main_bench()
 {
 	char *p;
 	p=c;

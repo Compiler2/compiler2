@@ -6,7 +6,7 @@ int paib();
 int paic();
 int add();
 int show();
-int main()
+int main_bench()
 {
 	int i;
 	d=du();e=du();for(i=0;i<d;i++) b[i]=du();for(i=0;i<e;i++) c[i]=du();

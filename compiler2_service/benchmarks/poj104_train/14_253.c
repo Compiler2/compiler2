@@ -5,7 +5,7 @@ struct student{
 	int chinese;
 	int math;
 };
-int main()
+int main_bench()
 { 
     int n,i;
 	scanf("%d",&n);

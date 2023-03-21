@@ -3,7 +3,7 @@
 int a[100],b[100],c[100];
 int num1;
 int num2;
-void main()
+int main_bench()
 {
 	void read();
 	void queue();

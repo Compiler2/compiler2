@@ -11,7 +11,7 @@ int check(char x)
 		return 0;		
 	}
 }
-int main()
+int main_bench()
 {
 	char cha[30];
 	char chaa[30][30];

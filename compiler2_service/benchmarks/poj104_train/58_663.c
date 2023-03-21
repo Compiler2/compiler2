@@ -15,7 +15,7 @@ int Rest(char i)
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,flag;
 	char str[81];

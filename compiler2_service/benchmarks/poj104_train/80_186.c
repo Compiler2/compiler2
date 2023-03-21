@@ -2,7 +2,7 @@
 
 int leap(int year);
 int days(int year,int month,int day);
-void main(){
+int main_bench(){
 	int y1,m1,d1,y2,m2,d2;
 	int total=0,i;
 	scanf("%d%d%d",&y1,&m1,&d1);

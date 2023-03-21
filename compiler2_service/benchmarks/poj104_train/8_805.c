@@ -3,7 +3,7 @@
 int s(int m);
 int p(int m,int i,int a[100]);
 void e(int i,int c[100],int d[100],int m,int n);
-int main()
+int main_bench()
 {
 	int i,m,n,a[100],b[100],c[100],d[100];
 	scanf("%d%d",&m,&n);

@@ -8,7 +8,7 @@ struct student
  char xibu;
  int essay;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,max,p,sum=0;
 	int scholar[100]={0};

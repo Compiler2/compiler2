@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[100000]={'\0'};
 	int n,i,len,temp=-1;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int a[25],m,n,i,temp,x,y;
 	for(i=0;i<25;i++)

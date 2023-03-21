@@ -8,7 +8,7 @@ struct stu
  char west;
  int paper;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,a[100]={0},max=0,sum=0;
 	scanf("%d",&n);

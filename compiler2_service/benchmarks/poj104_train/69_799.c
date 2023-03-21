@@ -1,7 +1,7 @@
 #include <header.h>
 
 int c[202],aa[200],bb[200];
-int main ()
+int main_bench()
 {
 	int add(char *a,char *b);
 	char a[200],b[200];

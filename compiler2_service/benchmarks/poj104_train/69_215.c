@@ -31,7 +31,7 @@ char fzh(int a)
 }
 
 
-int main()
+int main_bench()
 {
 	char a[10000],b[10000],a1[10000],b1[10000],c[10000];
 	int n;

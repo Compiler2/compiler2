@@ -1,7 +1,7 @@
 #include <header.h>
 
 int factor(int N,int min);
-int main()
+int main_bench()
 {
 	int m,n,i,k;
 	scanf("%d",&n);

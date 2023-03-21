@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	char a[100],d[100][100]={0},*p1, *p3, *p2;
 	char longest[30], shortest[30];

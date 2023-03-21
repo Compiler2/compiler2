@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int m,n,i,j,k=1,a=0,number,reversed_number=0,remainder=0;
 	int prime[10000]={0},reversed[10000]={0},result[10000];

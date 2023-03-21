@@ -2,7 +2,7 @@
 
 int find(char *s);
 char s[1000];
-int main()
+int main_bench()
 {
 	int i,j,n,d=0;
 	char c;

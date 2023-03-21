@@ -15,7 +15,7 @@ int leap(int n)
 		return 0;
 	}
 }
-void main()
+int main_bench()
 {
 	int year,month,day,x;
 	scanf("%d %d %d",&year,&month,&day);

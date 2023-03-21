@@ -6,7 +6,7 @@ struct pat
 	int age;
 	int x;
 }p[100],P[100],s;
-int main()
+int main_bench()
 {
     int n,i,j,k;
 	scanf("%d",&n);

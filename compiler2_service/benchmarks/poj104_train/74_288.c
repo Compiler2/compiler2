@@ -3,7 +3,7 @@
 
 int d[5],z,g,i,j,k,m,n,y,out[300],num;
 
-void main()
+int main_bench()
 {
 	scanf("%d %d",&m,&n);
 	num=0;

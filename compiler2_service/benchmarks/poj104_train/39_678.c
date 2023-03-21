@@ -11,7 +11,7 @@ struct student{
 	int total;
 };
 
-int main(){
+int main_bench(){
 	int n,i,max,sum;
 
 	scanf("%d",&n);

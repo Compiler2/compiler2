@@ -12,7 +12,7 @@ char anti_base(char base){
 			anti = 'G';
 		return anti;
 }
-int main (){
+int main_bench(){
 	int n,i,j;
 	scanf ("%d",&n);
 	char sequence[n][300],a;

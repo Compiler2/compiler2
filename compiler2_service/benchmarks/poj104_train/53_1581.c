@@ -9,7 +9,7 @@ if(a[i]==a[j]) a[j]=0;
 for(i=1;i<k;i++)
 if(a[i]) printf(",%d",a[i]);
 }
-int main()
+int main_bench()
 {
 int a[300],k,n;
 scanf("%d",&k);

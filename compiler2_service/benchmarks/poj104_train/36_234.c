@@ -2,7 +2,7 @@
 
 void arn(char a[],int n);
 int max(int a,int b);
-void main()
+int main_bench()
 {
 	char a[50]={0},b[50]={0};
 	int i,l1,l2;

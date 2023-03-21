@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,j,k,a,b,carry;
 	char str1[100],str2[100],str3[100]={'\0'};

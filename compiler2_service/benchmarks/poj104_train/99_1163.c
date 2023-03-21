@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	double y,n,i,wcn,qn,zn,ln,wcn0,qn0,zn0,ln0;
 	i=1;

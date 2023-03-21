@@ -1,7 +1,7 @@
 #include <header.h>
 
 int find(char a,int b,int c);
-int main()
+int main_bench()
 {
 	char d;
 	scanf("%c",&d);

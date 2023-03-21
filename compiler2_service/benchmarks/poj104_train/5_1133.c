@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	double p;
 	int la,i,y=0,lb,s=0;
 	char zfa[501],zfb[501];

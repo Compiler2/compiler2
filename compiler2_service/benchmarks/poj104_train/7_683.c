@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char string[500],substring[50],replacement[50];
 	int same,i,k,c;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[100],ans1[50][20],ans2[50][20];
 	int e,s,ls,lans1,l,i,lans2;

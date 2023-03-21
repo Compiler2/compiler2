@@ -44,7 +44,7 @@ void reverse(int num)
 	
 }
 	
-	int main()
+	int main_bench()
 	{ 
 		int i,num;
 		for(i=1;i<=6;i++)

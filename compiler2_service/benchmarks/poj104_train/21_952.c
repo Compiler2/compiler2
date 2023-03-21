@@ -4,7 +4,7 @@ int a[300];
 int n;
 float sum=0;
 float ave;
-int main()
+int main_bench()
 {
 	scanf("%d",&n);
 	int i;

@@ -35,7 +35,7 @@ int calculate(int n,int m)
 }
 
 
-void main()
+int main_bench()
 {
 	int n,m,king;
 	do{

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int arr[26],i,j,t,n=1,min,num[26];
     char s[10000];
     scanf("%d",&t);

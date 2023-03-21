@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int y,m,d,date,a,i,k;
 	scanf("%d %d %d",&y,&m,&d);
 	y=y%2800;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char s[51] , w[51] ;
     int i , k , n ;
     scanf("%s%s", s , w );

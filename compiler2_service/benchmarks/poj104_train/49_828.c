@@ -1,7 +1,7 @@
 #include <header.h>
 
 int pd(char c[],int i);
-int main()
+int main_bench()
 {
 	char a[501]={'0'},c[501]={'0'},d[501]={'0'};
 	int n,i,j,k;

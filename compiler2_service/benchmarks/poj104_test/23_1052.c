@@ -30,7 +30,7 @@ void turn(char *a)
                 strcat(a,"\0");
     }
 }
-int main()
+int main_bench()
 {
     char a[20];
     gets(a);

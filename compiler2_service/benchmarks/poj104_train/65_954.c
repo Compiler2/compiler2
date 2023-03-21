@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int s=0,t=0,i,j,a,b,n;
     scanf("%d",&n);
     for(i=0;i<n;i++){

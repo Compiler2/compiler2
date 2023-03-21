@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,year,month1,month2,a,b;
 	scanf("%d",&n);

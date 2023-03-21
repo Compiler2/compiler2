@@ -12,7 +12,7 @@ struct student
        int money;
 } stu[100];
 
-int main()
+int main_bench()
 {
     int i,n,t=1,sum=0,max=0,print;
     scanf("%d",&n);

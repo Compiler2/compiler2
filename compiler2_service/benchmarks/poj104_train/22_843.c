@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     unsigned int s[301],max=0,second=0;
     char c='0';

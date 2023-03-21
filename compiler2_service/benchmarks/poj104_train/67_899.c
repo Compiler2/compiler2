@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,i,t=0;
 char xm[300][10];
 float tw[300];

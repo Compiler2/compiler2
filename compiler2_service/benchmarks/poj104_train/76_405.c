@@ -20,7 +20,7 @@ int mysort(void *a, void *b)
 	}
 }
 
-int main()
+int main_bench()
 {
 	struct block in[50000];
 	int n;

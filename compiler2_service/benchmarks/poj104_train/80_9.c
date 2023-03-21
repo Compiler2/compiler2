@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,y,m,d,day1,day2,all1=0,all2=0,all3=0,all;
 	int s[20]={0,31,28,31,30,31,30,31,31,30,31,30,31};

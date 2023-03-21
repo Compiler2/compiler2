@@ -3,7 +3,7 @@
 
 void play(int n[],int l);
 
-int main()
+int main_bench()
 {
 	int n,m,i;
 	int num[100];

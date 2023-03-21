@@ -26,7 +26,7 @@ int g(int x)
     return 1;
     else return 0;
 }
-main()
+main_bench_bench()
 {
       int i,m,n,t=0;
       scanf("%d %d",&m,&n);

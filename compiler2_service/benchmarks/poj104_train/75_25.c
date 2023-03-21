@@ -12,7 +12,7 @@ for(k=0; k<total;++k)
 if(num[x[k]]>temp) temp=num[x[k]];
 return temp;
 }
-void main()
+int main_bench()
 {
     char a[8000],b[8000];
     int x[3000],y[3000],i,j,k,l1,l2,n,max,n1=0,n2=0;

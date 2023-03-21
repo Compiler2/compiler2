@@ -7,7 +7,7 @@ struct student
 	int score2;
 	int sum;
 }stu[100000],max,secondmax,thirdmax;
-int main()
+int main_bench()
 {
 	max.sum=secondmax.sum=thirdmax.sum=0;
 	int i,n;

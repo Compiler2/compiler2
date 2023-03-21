@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,r,i,p,q;
     int high[100];
     int low[100];

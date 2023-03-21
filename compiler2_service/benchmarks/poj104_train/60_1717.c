@@ -12,7 +12,7 @@ int su(int i)
     else
        return (0);     
 } 
-int main()
+int main_bench()
 {
     int su(int i);
     int n,a,b;

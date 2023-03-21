@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     void print(int *p[101],int row,int col);
     int *p[101];

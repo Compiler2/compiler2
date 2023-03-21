@@ -8,7 +8,7 @@ int f(int a,int b)
 		return 0;
 	return f(a-b,b)+f(a,b-1); 
 }
-int main ()
+int main_bench()
 {
 	int t,a,b,i;
 scanf("%d",&t);

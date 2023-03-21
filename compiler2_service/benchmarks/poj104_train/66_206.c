@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	long int y,m,d;
 	int total1=0,total2=0,total3=0,total;

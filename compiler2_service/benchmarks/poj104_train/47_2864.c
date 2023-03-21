@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void swap(int *pt1,int *pt2);
 	int *pt1,*pt2;

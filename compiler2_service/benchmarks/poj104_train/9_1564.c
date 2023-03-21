@@ -5,7 +5,7 @@ struct bing
 	char id[20];
 	int age;
 };
-int main()
+int main_bench()
 {
 	struct bing b[100],sixup[100],sixdown[100];
 	struct bing temp;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 void ex(char a[], char b[]);
-void main(void)
+void main_bench()
 {
 	char a[100], b[100];
 	int i, j, l;

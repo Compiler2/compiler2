@@ -27,7 +27,7 @@ void chulie(int a)
 	if (chr[a+1]!='\0')
 		chulie(++a);
 }
-int main()
+int main_bench()
 {
 	
 	int nb,ng,i,j,k,l,m;

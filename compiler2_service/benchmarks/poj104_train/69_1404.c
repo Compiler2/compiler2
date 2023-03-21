@@ -35,7 +35,7 @@ int add(int *a,int *b){
   a[0]=max(a[0],b[0]);
   if (a[i]) a[0]++;
 }
-int main(){
+int main_bench(){
   char s1[300],s2[300];
   scanf("%s",s1);
   scanf("%s",s2);

@@ -46,7 +46,7 @@ void show(int c[],int d)
 		printf("%d ",*p);
 	printf("%d",*p);
 }
-void main()
+int main_bench()
 {
 	duqu();
 	range(a,b,m,n);

@@ -8,7 +8,7 @@ void sort(int a[],int n)
   { t=a[i];a[i]=a[j];a[j]=t;}
   return;
 }
-int main()
+int main_bench()
 {
    int a[1000],b[1000];int i,h,k,ans,t,s,n,j,m;
    for(k=1;k<=1000;k++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	static int a[300];
 	int i,max=0,cmax=0;

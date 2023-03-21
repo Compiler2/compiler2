@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void xiangguan(int y,int m1,int m2);
 	int n,i,year,m1,m2;

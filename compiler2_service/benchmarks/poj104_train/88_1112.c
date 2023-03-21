@@ -7,7 +7,7 @@ int sz(char a)
 		m=1;
 	return m;
 }
-int main()
+int main_bench()
 {
 	int i,n,k=0;
 	char *p,a[30];

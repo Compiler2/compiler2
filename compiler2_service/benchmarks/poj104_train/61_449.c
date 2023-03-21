@@ -9,7 +9,7 @@ void cal()
      for(int i=2;i<=20;i++)
      a[i]=a[i-1]+a[i-2];
  }
-int main()
+int main_bench()
 {
     int t;
     scanf("%d",&t);

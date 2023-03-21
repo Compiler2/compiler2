@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {char s[502],z[502][5]={'\0'};int b[502]={0},i,j,k,l,n,p,f,m=1,S=1;scanf("%d\n",&n);gets(s);l=strlen(s);
 
 for(i=0;i<=l-n;i++){if(b[i])continue;

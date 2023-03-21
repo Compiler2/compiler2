@@ -30,7 +30,7 @@ int DiJiTian(int year, int month, int day){
 	return result;	
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {int n;
    int sz[200][3];
    scanf("%d",&n);

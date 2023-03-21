@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int sz[100][100],col,row,i,k,count=0;
 	scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++){

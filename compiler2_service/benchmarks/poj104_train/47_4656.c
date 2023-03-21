@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int cun[100]={0},fang[100]={0};
 	int n;

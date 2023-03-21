@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char a[100][100];char (*ipa)[100]=a;
 	int i; char c='\n';

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int i,n,zong[100],hao[100];
 	double yx[100];
 	scanf("%d",&n);

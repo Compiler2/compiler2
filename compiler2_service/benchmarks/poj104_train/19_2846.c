@@ -5,7 +5,7 @@ char str[100][100];
 char s[100],t[100];
 char c;
 
-int main()
+int main_bench()
 {
     int cnt=0;
     while(1)

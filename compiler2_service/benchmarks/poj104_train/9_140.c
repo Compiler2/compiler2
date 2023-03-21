@@ -4,7 +4,7 @@ struct ID{
 	char idnum[100];
 	int old;
 };
-int main(){
+int main_bench(){
 struct ID ido[100];
 struct ID idy[100];
 struct ID id[100];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[501]="",temp[501]={""},temp1[501]={""};
 	int i=0,j=0,r=0,p=0,q=0,num;

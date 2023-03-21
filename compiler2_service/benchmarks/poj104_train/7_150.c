@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,j,k,result;
     char input[100],substring[20],replace[20],cpy[20];

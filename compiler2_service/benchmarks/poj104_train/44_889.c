@@ -24,7 +24,7 @@ else  {  for(i=n-1;i>=0;i--)
 }
 
 
-int main()
+int main_bench()
 {
 	int i,len;
 	char str[300];

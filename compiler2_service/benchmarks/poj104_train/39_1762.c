@@ -9,7 +9,7 @@ struct student
 	 int num;
 	};
 	struct student stu[100];
-int main()
+int main_bench()
 {
 	int N,i,num;
 	int a[100]={0};

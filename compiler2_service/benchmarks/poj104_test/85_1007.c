@@ -13,7 +13,7 @@ int judge(char *zfc)
 	}
 	return 1;
 }
-int main()
+int main_bench()
 {
 	int i;
 	char z[3];

@@ -13,7 +13,7 @@ else {
 	  b=s;}}
 return s;
 }
-int main(){
+int main_bench(){
 int a[10000],i,n;
 scanf("%d",&n);
 for(i=1;i<=n;i++){

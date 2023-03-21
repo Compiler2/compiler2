@@ -8,7 +8,7 @@ int f(int p)
 	return(p);
 }
 
-void main()
+int main_bench()
 {
 	int x,y,n,i,a[1000],b[1000],k,j;
 	scanf("%d%d",&x,&y);

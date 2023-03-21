@@ -62,7 +62,7 @@ int countyear(int ch1[3],int ch2[3])
 
 
 
-void main()
+int main_bench()
 {
 	int i,j;
 	for(i=0;i<3;i++)

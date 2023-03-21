@@ -9,7 +9,7 @@
 
 
 
-int main(){
+int main_bench(){
     int tol,i,j,sum,k,x[100][100],row,line;
     scanf("%d",&tol);
     for (k=0,sum=0; k<tol; k++) {

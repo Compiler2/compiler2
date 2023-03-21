@@ -12,7 +12,7 @@ int zhishu(int n){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int n,m=0;
 	scanf("%d",&n);
 	for(int i=1;i<=n-2;i++){

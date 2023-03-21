@@ -10,7 +10,7 @@ int work ( int m , int n )
    return sum ;
 }
 
-int main ()
+int main_bench()
 {
    int t , m , n;
    for ( scanf ( "%d" , &t ) ; t > 0 ; t -- )

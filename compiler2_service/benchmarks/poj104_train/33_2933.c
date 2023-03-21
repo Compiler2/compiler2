@@ -1,7 +1,7 @@
 #include <header.h>
 
 void match(char a);
-int main()
+int main_bench()
 {
 	int n,i,j,len;
 	char c[256];

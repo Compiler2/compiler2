@@ -17,7 +17,7 @@ void paixu(char a[])
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	char a[100],b[100];
 	scanf("%s%s",a,b);

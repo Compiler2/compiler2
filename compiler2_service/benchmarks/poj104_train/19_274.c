@@ -14,7 +14,7 @@ int check(char p[100],char q[100],int a,int b)
   }
   return(x);
 }
-void main()
+int main_bench()
 {
   char s[100],a[100],b[100];
   int i,l,j;

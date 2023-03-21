@@ -9,7 +9,7 @@
 
 
 
-void main()
+int main_bench()
 {
     int n,sum=0,i=0;
     int a[10]={0};

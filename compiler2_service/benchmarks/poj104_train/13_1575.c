@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int all,name[20000],input[20000],i,p,count,judge;
 	scanf("%d",&all);
 	count=0;

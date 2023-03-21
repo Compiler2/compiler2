@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int max=0,temp=1,i,j,k=0,len,n;
 char total[600],a[500][6]={'\0'},tall[20][6]={'\0'};
    scanf("%d",&n);getchar();

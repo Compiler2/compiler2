@@ -6,7 +6,7 @@ struct Student
 	int num,yuwen,shuxue,sum;
 };
 
-void main()
+int main_bench()
 {
 	int n,max1=0,max2=0,max3=0,stu1=0,stu2=0,stu3=0;
 	struct Student student[100000],*stu;

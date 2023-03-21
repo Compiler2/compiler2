@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i, j, n, a[300], flag[300] = {0};
     int last;

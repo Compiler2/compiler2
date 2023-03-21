@@ -22,7 +22,7 @@ int prime(int n){
     }
 }
 
-int main(){
+int main_bench(){
     int n;
     int p=0;
     scanf("%d",&n);

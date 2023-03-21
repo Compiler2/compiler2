@@ -2,7 +2,7 @@
 
      
    
-int main()
+int main_bench()
 {
 	int i,j,k=0,n;
 	int A[5000],B[5000];

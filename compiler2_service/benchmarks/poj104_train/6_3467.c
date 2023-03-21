@@ -9,7 +9,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int k,m,n;
     scanf("%d",&k);

@@ -8,7 +8,7 @@ for(i=j;i<strlen(s);i++)
 s[i]=0;
 return 0;
 }
-int main(){
+int main_bench(){
 char snt[300],word[49][20],*p,*q;
 int len,label[50]={0},i,j=0,k,l=0;
 gets(snt);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int x;
 	scanf("%d",&x);
 	if((x%3==0)&&(x%5==0)&&(x%7==0))

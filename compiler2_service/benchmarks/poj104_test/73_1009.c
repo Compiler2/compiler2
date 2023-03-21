@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int a[5][5],max=0,row=0,line=0,judge=0;
  for(int i=0;i<5;i++)

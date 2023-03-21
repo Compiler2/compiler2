@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int jiaohuan(int array[][5],int,int);
 int i,j,m,n,a[5][5];
 for(i=0;i<5;i++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char c[50]={'\0'},s[50]={'\0'};
 	scanf("%s %s",c,s);

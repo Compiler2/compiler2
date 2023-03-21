@@ -1,7 +1,7 @@
 #include <header.h>
 
 	void sort(char c[],int n);
-int main(int argc, char* argv[])
+int main_bench()
 {
 
 	int len1,len2;

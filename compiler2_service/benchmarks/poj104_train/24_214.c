@@ -15,7 +15,7 @@ int min(int x,int y)
 	else return(y);
 }
 
-void main()
+int main_bench()
 {
 	char c[1000];
 	int a[50],b[50];

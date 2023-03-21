@@ -4,7 +4,7 @@ char  sen[200];
 char m[200];
 char c[200];
 char check[200]; 
-int main()
+int main_bench()
 {
     gets(sen);
     gets(m);

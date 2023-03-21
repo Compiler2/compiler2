@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,k=0,n,a[10],b[10];
 	float c,m=0,GPA;

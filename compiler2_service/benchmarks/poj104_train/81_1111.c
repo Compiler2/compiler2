@@ -19,7 +19,7 @@ int matf(int (*mat)[5],int n,int m)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i,j;
 	int mat[5][5];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char text[200],a,b; int i,j;
 gets(text);printf("\n");

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,first;
 scanf("%d",&n);
 if(6-n>0){first=6-n;}

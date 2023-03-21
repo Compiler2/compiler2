@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int i,j,stat; 
     char s[101],w[101],*ps,*pw;

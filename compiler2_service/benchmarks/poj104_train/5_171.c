@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     float std,rate,sign;
     int i,l1,l2;
     char dna1[500],dna2[500];

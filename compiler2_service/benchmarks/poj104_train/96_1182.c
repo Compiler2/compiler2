@@ -7,7 +7,7 @@ void trans(char *s,int *p)
      for(i=0;i<n;i++)
          p[i]=s[i]-'0';
 }
-main()
+main_bench_bench()
 {
     char str[110];
     int a[110]={0},b[110]={0};

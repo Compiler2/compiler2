@@ -4,7 +4,7 @@ struct zuobiao
 {
 	int left,right;
 }zuo[50000],e;
-int main()
+int main_bench()
 {
 	int t,i,j,releft,reright;
 	scanf("%d",&t);

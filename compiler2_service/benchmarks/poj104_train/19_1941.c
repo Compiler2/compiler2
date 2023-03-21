@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	char part[100], full[1000], change[100];
 	char new[1000];
 	char *diff2;

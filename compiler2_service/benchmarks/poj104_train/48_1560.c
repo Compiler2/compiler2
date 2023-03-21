@@ -15,7 +15,7 @@ void work(int x,int y,char s)
 				b[i][j]+=q;
 }
 
-int main()
+int main_bench()
 {
 	int m,n,k,i,j;
 	scanf("%d %d",&m,&n);

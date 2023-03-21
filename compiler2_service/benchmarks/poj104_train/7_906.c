@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str[300],sub[300],rep[300],tmp[300];
 	scanf("%s%s%s",str,sub,rep);

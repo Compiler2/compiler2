@@ -28,7 +28,7 @@ int m(int y,int m)
 	return d;
 }
 
-int main()
+int main_bench()
 {
 	int y1,m1,d1;
 	int y2,m2,d2;

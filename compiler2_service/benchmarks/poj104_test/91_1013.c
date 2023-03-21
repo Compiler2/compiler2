@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {void qp(char *p,int n);
 char a[105];int l;gets(a);l=strlen(a);
 qp(a,l);printf("%c\n",a[0]+a[l-1]);

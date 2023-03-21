@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int intime[1000],outtime[1000],trs[1000],i,j,k,a,b,c,rs,maxrs=0;
 	for(i=0;;i++)

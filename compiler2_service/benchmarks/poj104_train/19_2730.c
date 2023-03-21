@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	unsigned int i=0,j=0;
 	char s[101];

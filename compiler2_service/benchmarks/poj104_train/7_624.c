@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char s[256], s1[256], s2[256], ss[20], re[20];
 	int i, j, x=0, y=0, a, flag=0;
 	gets(s);

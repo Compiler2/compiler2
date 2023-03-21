@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int max(int a,int b);
 	int n,m[100],i,m1=-32768,m2=-32768;

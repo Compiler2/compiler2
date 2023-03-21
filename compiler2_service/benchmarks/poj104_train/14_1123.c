@@ -7,7 +7,7 @@ struct stu
 	struct stu *next;
 };
 
-void main()
+int main_bench()
 {
 	struct stu *head,*p1,*p2,*p0;
 	int n,i,ch,ma,len;

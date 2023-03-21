@@ -20,7 +20,7 @@ int reverse(int num)
     if (flag<0) return(-n);
     else return(n);
 }    
-int main()
+int main_bench()
 {    
       int i,num;
       for (i=0;i<6;i++)

@@ -21,7 +21,7 @@ int ch(int a[5][5], int n, int m)
 	}
 }
 
-int main()
+int main_bench()
 {
 int x[5][5];
 for (int i=0; i<5; i++)

@@ -7,7 +7,7 @@ int runnian(long year)
 		p=1;
 	return p;
 }
-int main()
+int main_bench()
 {
 	int month,day,j;
      long year;

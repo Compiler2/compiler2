@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() {
+int main_bench() {
 	int x, a[2][10], i, j, k, len[2], f;
 	x = i = j = k = f = 0;
 	memset(a, 0, sizeof(a));

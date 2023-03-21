@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int maxlndex,e,i,k,n,t=0;
 	int sz[500];

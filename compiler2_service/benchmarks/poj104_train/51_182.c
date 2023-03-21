@@ -9,7 +9,7 @@ int f(char c[],int i,int j)
     return 0;
     return 1;
     }
-int main()
+int main_bench()
 {
     int i,j,k,m,sum=0;
     static char c[510];

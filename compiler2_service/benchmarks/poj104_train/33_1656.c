@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int n,l;
 scanf("%d\n",&n);
 char zfc[n][256],*p;

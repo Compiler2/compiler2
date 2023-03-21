@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int dawang(int n,int m);
   int a,b,boss;

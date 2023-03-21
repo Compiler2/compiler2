@@ -18,7 +18,7 @@ int gmm(int n,int m)
 	else
 		return 0;
 }
-void main()
+int main_bench()
 {
 
 	int n,m,i,j;

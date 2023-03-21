@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,m,i,j,flag=0;
     int a[5][5];

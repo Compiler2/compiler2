@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char c[1000];
 	int i,count=0,max,min,mark1,mark2,length;

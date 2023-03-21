@@ -9,7 +9,7 @@ for(i=1;i<=n;i++)
 s=s+ss;}
 return s;
 }
-int main()
+int main_bench()
 {
 int n,i,a[99];
 double ccc;

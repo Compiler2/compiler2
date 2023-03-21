@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,count=0,weizhi[100];
 	char zf[200];

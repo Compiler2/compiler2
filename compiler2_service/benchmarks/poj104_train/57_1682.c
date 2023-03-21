@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,suffixlen;
 	char word[40],*p;
 	scanf("%d", &n);

@@ -2,7 +2,7 @@
 
 
 
-main(){
+main_bench_bench(){
        int n,a,b,i;
        scanf("%d",&n);
        if(n==1) printf("End\n");

@@ -36,7 +36,7 @@ int sushu(int x)
 
 
 
-int main()
+int main_bench()
 {
 	int n,m,i,k=0,a[1000];
 	scanf("%d%d",&n,&m);

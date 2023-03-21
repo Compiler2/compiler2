@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {int n,score[10],i,grade[10],zongfen=0;
 double zong=0,jidian[10];
 scanf("%d\n",&n);

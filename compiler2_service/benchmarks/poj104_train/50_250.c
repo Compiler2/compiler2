@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int w;
 scanf("%d",&w);
 if((w+12)%7==5)

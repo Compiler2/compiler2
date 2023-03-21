@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[11][101]={{'\0'}},s0[101];
 	int i=0,j,k,l,c;

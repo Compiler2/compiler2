@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {	int i,len,n;
 	char str[256],str2[256];
 	scanf("%d",&n);

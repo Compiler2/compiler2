@@ -8,7 +8,7 @@ void  stubid(int x,int y,int z[150][150])
        scanf ("%d",&z[i][j]); 
    }
 }
-int main()
+int main_bench()
 {
   int a[150][150],b[150][150];
   int m,n,p,q,i,j,k;

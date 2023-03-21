@@ -6,7 +6,7 @@ struct node
 	char str[110];
 }all[110];
 
-int main()
+int main_bench()
 {
 	char s[110], str[110], word[110], one[110];
 	int i, j, k;

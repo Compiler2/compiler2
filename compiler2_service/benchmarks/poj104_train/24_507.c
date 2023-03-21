@@ -5,7 +5,7 @@
 
 
 
-void main()
+int main_bench()
 {
 
 	char a[200]={"\0"};

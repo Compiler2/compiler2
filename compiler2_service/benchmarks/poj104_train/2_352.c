@@ -6,7 +6,7 @@ struct stu{
 	int length;
 }a[1000];
 
-int main(){
+int main_bench(){
 	int n,i,k,num=0,max=0;
 	char b,c;
 	scanf("%d",&n);

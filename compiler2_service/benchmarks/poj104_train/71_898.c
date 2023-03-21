@@ -1,7 +1,7 @@
 #include <header.h>
 
 int mon[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-int main(){
+int main_bench(){
 int M,y,m1,m2,i,s;
 scanf("%d",&M);
 while(M>0){M--;

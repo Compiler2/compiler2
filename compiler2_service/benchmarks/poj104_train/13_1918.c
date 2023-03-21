@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int n,a[20001],i,j,k,flag=0;
 	scanf("%d",&n);
 	if(n>=1&&n<=20000){

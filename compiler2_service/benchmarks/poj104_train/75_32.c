@@ -26,7 +26,7 @@ void f(int x[],int y[],int num[],int total)
 		}
 	}
 }
-void main()
+int main_bench()
 {
 	int num[1000]={0};
 	int x[1000],y[1000];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main (){
+int main_bench(){
     int i,k,xf[10],df[10];
     double GPA,result;
     double s=0;

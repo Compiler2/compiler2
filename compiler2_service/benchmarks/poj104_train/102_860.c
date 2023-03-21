@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,m=0,f=0;
 	double sz[40],male[40],female[40];

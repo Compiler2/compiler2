@@ -16,7 +16,7 @@ int diji( int month, int day){
 	s=s+day;
 	return s;
 }
-int main(){
+int main_bench(){
 	int n,days,mon,date,m,j;
 	scanf("%d",&n);
 	for(j=1;j<=12;j++){

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(int argc, char* argv[])
+int main_bench()
 {
 	int num,chi,math,sum;
 	struct student{

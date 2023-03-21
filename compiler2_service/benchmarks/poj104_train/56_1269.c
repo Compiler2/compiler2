@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str[80],*p,*q,t;
 	scanf("%s", str);

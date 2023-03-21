@@ -20,7 +20,7 @@ int zx(int m)
 		if (m%i==0) return 0;
 		return 1;
 }
-int main()
+int main_bench()
 {
 	int i;
 	int m;

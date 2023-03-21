@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
  int i,n,sum=0;
  char letter[1000][41]={""};

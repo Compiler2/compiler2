@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n[300]={0},i,max=0,len,maxn,t=0;
 	char c;

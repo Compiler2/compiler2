@@ -7,7 +7,7 @@
      else
         return b;
  }
- int main()
+ int main_bench()
  {
      int a1[260],a2[260];
      char a_1[260],a_2[260];

@@ -10,7 +10,7 @@ int reverse(int n){
     zz=zz*10+x;}
     return zz;
 }   
-int main(){
+int main_bench(){
     int i,m;
     for(i=0;i<6;i++){
                      scanf("%d",&m);

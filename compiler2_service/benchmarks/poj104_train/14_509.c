@@ -7,7 +7,7 @@ struct student
 	int chinese;
 	int total;
 };
-int main()
+int main_bench()
 {
 	struct student a[100000];
 	int n,i,sf=0,ss=0,st=0,f,s,t;

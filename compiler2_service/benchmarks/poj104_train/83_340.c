@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { float change(int n);
 	int n,i,c1[100],s[100];
 float GPA,sum=0,c=0,g[100];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
        int a[300];
        int i=0,n,max,max2;

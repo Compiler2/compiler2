@@ -45,7 +45,7 @@ void shuchu(int a[],int b)
         printf(" %d",a[c]);
     }
 }
-int main()
+int main_bench()
 {
     int a[1000]={0},b[1000]={0},c[2000]={0},m,n;
     scanf("%d%d",&m,&n);

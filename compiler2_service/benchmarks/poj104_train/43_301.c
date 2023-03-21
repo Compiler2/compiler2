@@ -2,7 +2,7 @@
 
 void gbc(int n);
 int ispn(int p);
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

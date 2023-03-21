@@ -9,7 +9,7 @@ int lw[200];
 int schsum[200];
 
 
-int main(){
+int main_bench(){
 	int n,i,num,whole;
 	char str1[21];
 	scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main() 
+int main_bench() 
 { 
 	int cmp(char a[],char b[],int);
 	char a[100]="",b[100]="";

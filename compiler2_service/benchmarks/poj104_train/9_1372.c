@@ -7,7 +7,7 @@ struct patient
 	int old;
 } pt[100];
 
-main()
+main_bench_bench()
 {
 	int n,i,j,k,e,h;
 	int yx[100],byx[100];

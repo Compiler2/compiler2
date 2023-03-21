@@ -1,7 +1,7 @@
 #include <header.h>
 
 void x(char*p1,char*p2,int n);
-int main()
+int main_bench()
 {
   int n;
   char *p3;

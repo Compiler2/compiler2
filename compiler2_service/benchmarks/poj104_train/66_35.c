@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int month,date,all=0,i,k=0,t;
 	long year;
 	int p[12]={31,28,31,30,31,30,31,31,30,31,30,31};

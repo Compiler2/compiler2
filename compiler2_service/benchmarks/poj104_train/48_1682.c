@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int a[11][11]={0},b[11][11] ={0};
   int m,n,i,j,k;

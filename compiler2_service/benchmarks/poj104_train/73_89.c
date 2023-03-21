@@ -21,7 +21,7 @@ int min(int a,int b,int c,int d,int e)
     return t;
 }
     
-int main()
+int main_bench()
 {
      
      

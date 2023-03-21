@@ -29,7 +29,7 @@ int DiJiTian(int year, int month, int day)
 	result += day;	
 	return result;
 }
-int main()
+int main_bench()
 {
     int year,month,day,days,weekday;	
     scanf("%d%d%d",&year,&month,&day);

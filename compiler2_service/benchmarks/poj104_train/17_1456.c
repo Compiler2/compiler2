@@ -22,7 +22,7 @@ int f1(char zichuan[],int changdu)
 	return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i=0,changdu;
 	char s[100];

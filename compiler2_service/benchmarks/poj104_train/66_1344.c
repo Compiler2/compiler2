@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,y,r,sum=0,i;
 	char week[7][7]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};

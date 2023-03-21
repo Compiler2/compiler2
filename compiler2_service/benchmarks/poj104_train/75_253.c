@@ -30,7 +30,7 @@ void scan()
 			break;
 	}
 }
-void main()
+int main_bench()
 {
 	int i,l;
 	scan();

@@ -56,7 +56,7 @@ int delta (int year1 , int month1 , int day1 , int year2 , int month2 , int day2
 	return result ;
 }
 
-int main ()
+int main_bench()
 {
 	int year1 , month1 , day1 ;
 	int year2 , month2 , day2 ;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int N,i,sch,msch=0,ssch=0;
 	char mname[21];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char x[5];
-int main()
+int main_bench()
 {
 	void copy(char x[5],char a);
 	int n,l,i,j,max;

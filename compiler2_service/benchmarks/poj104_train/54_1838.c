@@ -23,7 +23,7 @@ int apple(void)
 	}
 }
 
-int main()
+int main_bench()
 {
 	 int s;
      scanf("%d%d",&n,&k);

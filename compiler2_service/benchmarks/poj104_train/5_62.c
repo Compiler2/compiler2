@@ -3,7 +3,7 @@
 
 char a[500],b[10000];
 
-int main()
+int main_bench()
 {
 	double xg;
 	scanf("%lf",&xg);

@@ -5,7 +5,7 @@ struct ren
 	int x;
 	int y;
 }a[1010];
-int main()
+int main_bench()
 {
     char c;
 	int i=1,j,n,min=2000,max=0,t,d;

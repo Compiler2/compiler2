@@ -32,7 +32,7 @@ printf("%d ",c[i]);
 printf("%d",c[m+n-1]);
 }
 
-int main()
+int main_bench()
 {
     read();
 	sort();

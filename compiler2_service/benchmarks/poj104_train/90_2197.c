@@ -20,7 +20,7 @@ int max(int x,int y)
     }
     return(c);
 }
-main()
+main_bench_bench()
 {
       int i;
       scanf("%d",&N);

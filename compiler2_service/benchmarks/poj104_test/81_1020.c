@@ -14,7 +14,7 @@ int judge(int n,int m,int *p[5])
 }
 
 
-int main()
+int main_bench()
 {
 	int n,m,i,j,s[5][5],*p[5],a;
 	for(i=0;i<5;i++)

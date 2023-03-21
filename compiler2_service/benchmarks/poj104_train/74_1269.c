@@ -13,7 +13,7 @@ while(m)
 {t=t*10+m%10;
 m=m/10;}
 return(t);}
-void main()
+int main_bench()
 {int m,n,i,j,t=0;
 scanf("%d %d",&m,&n);
 for(i=m;i<=n;i++)

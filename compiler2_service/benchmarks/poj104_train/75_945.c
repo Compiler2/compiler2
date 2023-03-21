@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fan(int);
-void main()
+int main_bench()
 {
 	int a[10000],b[10000],c[10000]={0},n,m=0,i=0,j;
 	do

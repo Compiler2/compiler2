@@ -13,7 +13,7 @@ int reverse(int num)
     }
  return rev;
 }
- int main()
+ int main_bench()
 {
  int num;
  int rev;

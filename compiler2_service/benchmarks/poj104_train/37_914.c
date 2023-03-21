@@ -8,7 +8,7 @@ struct String
 	int flag;
 }b[26],c[26];
 
-int main()
+int main_bench()
 {
 	int t;
 	int i,count=0,x;

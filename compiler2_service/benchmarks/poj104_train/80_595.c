@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {int a[2],b[2],c[2],m[12]={31,28,31,30,31,30,31,31,30,31,30,31},r=29;
  int i,k=0,total=0,num,sum[2];
  scanf("%d %d %d %d %d %d",&a[0],&b[0],&c[0],&a[1],&b[1],&c[1]);

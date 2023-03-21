@@ -43,7 +43,7 @@ void f4()
 	printf("%d",c[m+n-1]);
 }
 
-void main()
+int main_bench()
 {
 	f1();
     f3();

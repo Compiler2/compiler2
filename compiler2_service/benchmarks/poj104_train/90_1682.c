@@ -3,7 +3,7 @@
 
 int divide(int apple,int plate);
 
-int main()
+int main_bench()
 {
     int n,i;
     scanf("%d",&n);

@@ -4,7 +4,7 @@
 
 
  
-int main() 
+int main_bench() 
 {
 	char s[30];
 	gets(s);

@@ -15,7 +15,7 @@ int andian(int x,int y)
 	}
 	else return 0;
 }
-int main()
+int main_bench()
 { int c,d=0,r,i,j;
 	scanf("%d,%d",&a,&b);
 	for(i=0;i<=a-1;i++)

@@ -7,7 +7,7 @@ int strcmp(char *a, char *b, int n) {
 			return 0;
 	return 1;
 }
-int main() {
+int main_bench() {
 	char a[501], b[501];
 	int n, i, j, k, x, y, l, f;
 	memset(a, 0, sizeof(a));

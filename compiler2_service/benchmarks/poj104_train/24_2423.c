@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char b[30],m1[30],m2[30];
 int max=0,min=40;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int i,sz[100],len,tag=0;
     char zfc[301];
     scanf("%s",zfc);

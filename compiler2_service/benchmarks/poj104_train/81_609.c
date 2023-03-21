@@ -19,7 +19,7 @@ num_m++;
 }
 return 1;
 }
-int main()
+int main_bench()
 {
 int Matrix[5][5];
 int i, j;

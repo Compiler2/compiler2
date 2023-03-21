@@ -8,7 +8,7 @@ int panduan(int a,int b, int c,int d,int e){
     }
     return s;
 }
-int main(){
+int main_bench(){
     int m,n,i,j;
     scanf("%d %d",&m,&n);
     int dikuai[m+2][n+2];

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[1024][1024];
-int main()
+int main_bench()
 {
 
 	int n,i,l,j;

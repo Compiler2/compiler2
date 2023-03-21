@@ -15,7 +15,7 @@ void push(int e){
 }
 
 
-int main(){
+int main_bench(){
 	char s[100];
 	int i;
 	char nan;

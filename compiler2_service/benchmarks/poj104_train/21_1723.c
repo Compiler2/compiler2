@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	unsigned int n,a[300],i,sum=0,max,min;
 	float m;

@@ -10,7 +10,7 @@ printf("%d",a[0]);
 for(i=1;i<k;i++){
 if(a[i]) printf(",%d",a[i]);}
 }
-int main(void)
+int main_bench(void)
 {
 int a[300],k,n;
 scanf("%d",&k);

@@ -23,7 +23,7 @@ int reverse(int number)
 	return result;
 }
 
-int main()
+int main_bench()
 {
 	int i = 0;
 	int number = 0;

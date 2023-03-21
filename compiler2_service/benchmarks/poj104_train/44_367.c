@@ -17,7 +17,7 @@ int re(int n){
 	}
 	return result;
 }
-int main(){
+int main_bench(){
 	int i,z,f;
 	for(i=0;i<6;i++){
 		scanf("%d",&z);

@@ -2,7 +2,7 @@
 
 
 char s[1000];
-int main(){
+int main_bench(){
 	int T,i;
 	scanf("%d",&T);
 	while (T--){

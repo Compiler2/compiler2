@@ -12,7 +12,7 @@ int f(int max,int i,int sum)
 		return p>q?p:q;
 	}
 }
-void main()
+int main_bench()
 {
 	int i;scanf("%d",&n);
 	for(i=0;i<n;i++)scanf("%d",&k[i]);

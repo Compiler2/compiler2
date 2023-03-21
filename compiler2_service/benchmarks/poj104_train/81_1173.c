@@ -4,7 +4,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int sz[5][5],m,n,i,j,e;
 	for(i=0;i<5;i++){

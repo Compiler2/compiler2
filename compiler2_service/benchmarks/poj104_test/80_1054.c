@@ -9,7 +9,7 @@ int runnian(int y)
 	return t;
 }
 
-int main()
+int main_bench()
 {
 	int i,y1,y2,m1,m2,d1,d2,sum=0;
 	scanf("%d %d %d",&y1,&m1,&d1);

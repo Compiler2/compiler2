@@ -24,7 +24,7 @@ int Dijitian(int month,int day)
 	days+=day;
 	return days;
 }
-int main()
+int main_bench()
 {
 	int w,i;
 	scanf("%d",&w);

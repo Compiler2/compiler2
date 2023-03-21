@@ -7,7 +7,7 @@ struct student
 	int Maths;
 	int total;
 };
-void main()
+int main_bench()
 {
 	struct student stu[100000];
 	struct student tempt;

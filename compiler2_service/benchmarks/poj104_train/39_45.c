@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main ()
+int main_bench()
 {
 	int N,i,m,s1,s2,max=0,sum=0,t;
 	char name[20],maxname[20],t1,t2;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char br[1000][8],jl[1000][8];
-int main(){
+int main_bench(){
    int i,n,m,j;
    double a,b,c,d,sum=0.0;
    scanf("%d",&n);

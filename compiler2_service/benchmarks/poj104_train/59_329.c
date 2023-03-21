@@ -22,7 +22,7 @@ int p(char a[200][200])
 			a[i][j]=b[i][j];
 	return q;
 }	
-int main()
+int main_bench()
 {
 	int i,s[200]={0},j;
 	char a[200][200],b;

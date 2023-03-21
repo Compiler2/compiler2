@@ -10,7 +10,7 @@ if(n==0||n==1) return 1;
 if(m<n) return f(m,m);
 else return f(m-n,n)+f(m,n-1);
 }
-int main()
+int main_bench()
 {
     int t=0;
     int m,n;

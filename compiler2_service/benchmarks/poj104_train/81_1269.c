@@ -8,7 +8,7 @@ int change(int n,int m){
 	}
 }
 
-int main(){
+int main_bench(){
 	int n,m,i,j;
 	int sz[5][5];
 	for(i=0;i<5;i++){

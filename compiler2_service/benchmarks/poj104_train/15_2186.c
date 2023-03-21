@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int **pp;
 int n,i,j,k=0,t=0,b,c,area;

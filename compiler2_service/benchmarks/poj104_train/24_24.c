@@ -23,7 +23,7 @@ search (int n)
 	 printf ("\n");
 }
 
-int main ()
+int main_bench()
 {
     int lenth;
 	gets(str);

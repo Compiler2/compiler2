@@ -8,7 +8,7 @@ struct stu
        int he;
 };
 struct stu stu[100000];
-int main()
+int main_bench()
 {
     int n,i,max,sec,th;
     scanf("%d",&n);

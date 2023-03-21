@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int m=0,n=10000,l;
 	char *max,*min,*s,b;

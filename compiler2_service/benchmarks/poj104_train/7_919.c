@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char s[100],yuan[100],xin[100];
 	int i=0,j=0,len,lenyuan,lenxin;

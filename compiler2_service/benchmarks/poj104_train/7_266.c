@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	
 	int func(char c);
 	int i,j,a,m,num;

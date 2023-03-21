@@ -2,7 +2,7 @@
 
 const int M = 21;
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char s[M];
 	int n,i,j;

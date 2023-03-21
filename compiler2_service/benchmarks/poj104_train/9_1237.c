@@ -8,7 +8,7 @@ struct patients
 	int age;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,j,y,o;
     struct patients list[100],young[100],old[100];

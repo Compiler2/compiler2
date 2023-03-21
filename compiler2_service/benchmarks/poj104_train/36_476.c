@@ -22,7 +22,7 @@ void inverse(char *str)
 			break;
 	}while(t--);
 }
-void main()
+int main_bench()
 {
 	scanf("%s %s",str1,str2);
 	inverse(str1);

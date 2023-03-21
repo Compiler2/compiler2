@@ -9,7 +9,7 @@ void jisuanb(double b[],int n,double a[])
 		b[i]=a[i+1]/a[i];
 	}
 }
-int main()
+int main_bench()
 {
 	double sum=0,b[100],a[100];
 	int m,i,n[100];

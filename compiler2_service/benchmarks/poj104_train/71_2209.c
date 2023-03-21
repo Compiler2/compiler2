@@ -28,7 +28,7 @@ int DiJiTian(int year, int month, int day){
 	return result;	
 }
 
-int main(){
+int main_bench(){
 	int n,a,b,c;
 	scanf("%d",&n);
 	for(int i=1;i<=n;i++){

@@ -6,7 +6,7 @@ int m,n;
  void sort();
  void combine();
  void output();
-int main()
+int main_bench()
 {
   input();
   sort();

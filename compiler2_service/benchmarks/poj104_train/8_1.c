@@ -35,7 +35,7 @@ void out()
  printf("%d",e[a+b-1]);
 }
 
-void main()
+int main_bench()
 {
  in();
  order();

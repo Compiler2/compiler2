@@ -5,7 +5,7 @@
 
 int n,i,sz[10000][30],a[10000],b[10000],l=0,k;
 
-int main()
+int main_bench()
  
 {
 

@@ -12,7 +12,7 @@ struct student
 	int money;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,j,e,moneyzong=0;
 	char name1[21];

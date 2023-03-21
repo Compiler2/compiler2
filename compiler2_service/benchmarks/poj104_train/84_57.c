@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	signed int n,num[1000],i,out[2];
 	scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int hu(int a[][5], int m, int n);
-void main()
+int main_bench()
 {
 	int h[5][5],p,q,i,j;
 	for(i=0;i<5;i++)

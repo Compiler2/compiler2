@@ -17,7 +17,7 @@ int check(int i, char s[50],char w[50],int m)
 	}
 }
 
-int main()
+int main_bench()
 {
 	char s[50],w[50];
 	scanf("%s %s",s,w);

@@ -5,7 +5,7 @@ struct student
 	int num;
 	int all;
 }person[99999];
-int main()
+int main_bench()
 {
 	int n,i,j,k,x,y;;
 	struct student temp1,temp2;

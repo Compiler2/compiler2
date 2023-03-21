@@ -16,7 +16,7 @@ int cap(char s[],char w[],int i)
 	else
 		return 0;
 }
-void main()
+int main_bench()
 {
 	char s[51],w[51];
 	scanf("%s%s",s,w);

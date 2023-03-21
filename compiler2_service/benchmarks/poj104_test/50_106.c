@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int i,a,w=0,rizi=0,u;
 	int yue[12]={0,31,59,90,120,151,181,212,243,273,304,334};
 	scanf("%d",&w);

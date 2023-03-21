@@ -17,7 +17,7 @@ int judge(int n1,int x)
 	return result;
 }
 
-int main()
+int main_bench()
 {
 	scanf("%s %s",s,w);
 	int i,n1=strlen(s),n2=strlen(w);

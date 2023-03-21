@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,a[100][100]={0},p,sum,i,j,k;
 	void m1(int n,int a[100][100]);

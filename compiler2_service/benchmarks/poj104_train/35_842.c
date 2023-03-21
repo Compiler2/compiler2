@@ -2,7 +2,7 @@
 
 
 int dat[9][9],num[2][9];
-int main()
+int main_bench()
 {
     int m,n;
     int l1,l2,t;

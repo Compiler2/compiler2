@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char comp(char s1[], char s2[]);
 	char s1[100], s2[100];

@@ -4,7 +4,7 @@ struct Student
 {char name[26];
  int a;
 };
-int main()
+int main_bench()
 {
 	int n,i,k,l,m;
 	char j,t;

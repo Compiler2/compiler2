@@ -2,7 +2,7 @@
 
 char s[1000],a[100],b[100],word[1000][40],nstr[100][100],result[100];
 int number[300];
-int main(){
+int main_bench(){
 		
 	
 		int i=0,j=0,k=0,flag=0,n=0,num=0;

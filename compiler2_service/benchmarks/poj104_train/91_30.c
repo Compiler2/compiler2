@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char zfc1[101],zfc2[101],*p,*q;
 	int m,i;

@@ -3,7 +3,7 @@
 
 
 const int chushu=13;  
-int main(void)
+int main_bench()
   {
      char n[101],answer[100];
 	 int a=1,b=1,c=1,i=0;

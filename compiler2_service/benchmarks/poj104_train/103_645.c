@@ -5,7 +5,7 @@ int f(char c)
     c=c-'a'+'A';
     return c;
 }
-main()
+main_bench_bench()
 { int j=1;
   char str[1050];
   scanf("%s",str);

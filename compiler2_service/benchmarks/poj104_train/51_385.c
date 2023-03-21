@@ -1,7 +1,7 @@
 #include <header.h>
 
 void com(char a[][5],int n,int k);
-int main()
+int main_bench()
 {
   int n;
   scanf("%d",&n);

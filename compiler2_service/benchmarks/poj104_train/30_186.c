@@ -12,7 +12,7 @@ int f(int a)
 		return 1;
 }
 
-int main()
+int main_bench()
 {
 	int n,i;
 	long sum=0;

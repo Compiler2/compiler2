@@ -8,7 +8,7 @@
  }; 
  struct student ren[100000];
  
- int main()
+ int main_bench()
  {int n,i,fen,flag=0,j;
  
   scanf("%d\n",&n);

@@ -8,7 +8,7 @@ int hws(int m)
 {   int t=m,n=0;
     while(m!=0)  {n=n*10+m%10;  m=m/10;}
     if(t==n)   return(1);  else return(0);}
-void main()
+int main_bench()
 {
   int m,n,i,k=0,a[100];
    scanf("%d %d",&m,&n);

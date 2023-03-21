@@ -1,7 +1,7 @@
 #include <header.h>
 
 double zpjd (int n,int a[],int b[]);
-int main(){
+int main_bench(){
 	int n,i;
 	double c;
     scanf("%d",&n);

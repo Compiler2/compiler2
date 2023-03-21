@@ -12,7 +12,7 @@ void bubble(int a[],int n)
 		a[j + 1] = tmp;
 	}
 }
-int main()
+int main_bench()
 {
 	int n, a[500],i,b[500],j=0;
 	scanf("%d", &n);

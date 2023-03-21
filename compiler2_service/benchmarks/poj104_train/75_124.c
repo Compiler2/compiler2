@@ -2,7 +2,7 @@
 
 int a[1005],b[1005];
 int tm[1005];
-int main()
+int main_bench()
 {
   int n,t=0,i,j,k=0;
   char m;

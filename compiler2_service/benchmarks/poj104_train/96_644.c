@@ -3,7 +3,7 @@
 char s[1000];
 int i ,len,sum,p;
 int flag;
-void main()
+int main_bench()
 {
 	scanf("%s",s);
 	len = strlen(s);

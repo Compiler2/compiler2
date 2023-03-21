@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main (void)
+int main_bench()
 {
     int n, i, j, start_row, start_col, end_row, end_col, row, col, value, area;
     

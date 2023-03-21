@@ -5,7 +5,7 @@ struct lib
 	int num;
 	char author[26];
 }book[1000];
-int main()
+int main_bench()
 {
 	int n,i,k,p,e;
 	e=0;

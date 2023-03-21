@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int n,weishu;
  int ge,shi,bai,qian;
  scanf("%d",&n);

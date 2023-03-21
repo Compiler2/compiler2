@@ -11,7 +11,7 @@ struct Student
 	int money;
 	struct Student *next;
 };
-int main()
+int main_bench()
 {
 	struct Student *head,*p,*best;
 	head=(struct Student *)malloc(sizeof(struct Student));

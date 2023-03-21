@@ -34,7 +34,7 @@ void f(char *s,char *a,char *b,int n1,int n2)
         printf("%s",c);
 }
 
-void main()
+int main_bench()
 {
         char s[100],a[100],b[100];
         int n1,n2;

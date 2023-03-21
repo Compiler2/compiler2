@@ -21,7 +21,7 @@ int arr(char a[100],char b[100])
    }
     return 1;
 }
-int main()
+int main_bench()
 {
     char a[100],b[100];
     scanf("%s %s",a,b);

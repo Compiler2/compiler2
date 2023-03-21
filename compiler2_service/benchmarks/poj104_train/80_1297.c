@@ -30,7 +30,7 @@ int daysfromfirst(int startyear,int endyear,int endmonth,int endday)
 	return sum;
 }
 
-int main()
+int main_bench()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday;
 	scanf("%d %d %d %d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);

@@ -7,7 +7,7 @@ struct stu
 	int m;
 	int t;
 };
-int main()
+int main_bench()
 {
 	int n,i,j,K;
 	struct stu a[4]={0};

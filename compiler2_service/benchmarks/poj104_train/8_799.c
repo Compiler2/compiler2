@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[100],b[100],c[200],i,j,la,lb,p;
-void main()
+int main_bench()
 {void canf();
 void px();
 void lj();

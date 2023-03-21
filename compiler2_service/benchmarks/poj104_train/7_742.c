@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
    char zf1[257],zf2[257],zf3[257];
    int len1,len2,len3,i,k,t,m,fa=0;

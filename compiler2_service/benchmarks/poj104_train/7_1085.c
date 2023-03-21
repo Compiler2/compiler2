@@ -5,7 +5,7 @@ int i,j,k,kk;
 char s1[305],s2[305];
 char s3[305];
 
-int main()
+int main_bench()
 {
     scanf("%s",s1);
     scanf("%s",s2);

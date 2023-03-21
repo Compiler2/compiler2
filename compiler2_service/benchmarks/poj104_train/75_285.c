@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(void)
+void main_bench()
 {
 	int n=0,start[1000],end[1000];
 	char c=',';

@@ -52,7 +52,7 @@ int bubble_sort(float a[300][2], float b[300][2], int n)
 }
 
 
-int main()
+int main_bench()
 {
 	float a[300][2], sum=0;
 	float b[300][2]={0};

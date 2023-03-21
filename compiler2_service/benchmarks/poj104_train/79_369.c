@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int i,j,n,m,t,a[300][2],s;for(;;){
 	scanf("%d%d",&n,&m);if(n==0)break;

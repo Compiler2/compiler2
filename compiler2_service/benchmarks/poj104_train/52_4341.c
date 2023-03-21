@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,m,i,j,*p,a[100];
 	scanf("%d%d",&n,&m);

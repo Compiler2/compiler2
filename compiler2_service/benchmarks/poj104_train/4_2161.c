@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,row,col,shuzu[100][100],n=0;
 	scanf("%d%d",&row,&col);

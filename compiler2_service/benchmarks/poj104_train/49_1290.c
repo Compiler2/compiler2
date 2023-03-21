@@ -10,7 +10,7 @@ int panduan(char *a,int n)
 	if (k==1) return 0;
 	else return 1;
 }
-int main()
+int main_bench()
 {
 	char c[200]={'\0'};
 	char a[200][200]={'\0'};

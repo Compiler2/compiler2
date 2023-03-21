@@ -17,7 +17,7 @@ int add(int g[15],int year,int mon,int day)
 	s+=day;}
 	return(s);
 }
-int main()
+int main_bench()
 {
 
 

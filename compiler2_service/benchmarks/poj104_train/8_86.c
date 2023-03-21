@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m,n,x[100],y[100],z[100];
-void main ()
+int main_bench()
 {
 	void read();
 	void orde(int c[100],int d[100]);

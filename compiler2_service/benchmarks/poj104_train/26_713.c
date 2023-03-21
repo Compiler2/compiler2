@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     char w[100]; 
     int sentencelength,i,c=0;

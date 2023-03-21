@@ -8,7 +8,7 @@ int f(int x,int y)
 	return(z);
 }
 
-void main()
+int main_bench()
 {
 	int i,m,n,z,a[5][5],s1,s2,s3,s4,s0;
 	for(i=0;i<=4;i++)

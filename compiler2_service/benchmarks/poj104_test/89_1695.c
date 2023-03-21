@@ -3,7 +3,7 @@
 
 int a[10000] = {0};
 
-int main()
+int main_bench()
 {
     int n;
     int i;

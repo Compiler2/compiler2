@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,o,p;
 	int xuefen[1000];
 	float defen[1000];

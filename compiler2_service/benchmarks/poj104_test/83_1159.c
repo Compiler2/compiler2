@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int i,sum1=0,n,c[10],shiji[10];
 float g[10] ,shidejidian[10],sum2=0;

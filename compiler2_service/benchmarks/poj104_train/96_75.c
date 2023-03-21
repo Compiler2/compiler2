@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
       int d,q,r,l,i,m;
       char dividend[10000],quotient[10000];

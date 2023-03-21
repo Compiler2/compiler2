@@ -1,7 +1,7 @@
 #include <header.h>
 
 int FLAG=0,TAG=1;
-void main()
+int main_bench()
 {
 	int m,n,i;
 	void func(int num);

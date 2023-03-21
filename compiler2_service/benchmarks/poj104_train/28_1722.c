@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char x[10000];
 	int i,k=0,q=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int runnian(int year);
 	int tianshu(int moon, int yy);

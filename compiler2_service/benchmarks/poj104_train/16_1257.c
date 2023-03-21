@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int a,b,c,d,e,f;
 	scanf("%d",&a);

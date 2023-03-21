@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,l,i,j,m,t,count[600]={0};
 	char str[600],gram[600][6],c[10];

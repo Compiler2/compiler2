@@ -4,7 +4,7 @@ struct sick
 {char name[10];
 int age;
 };
-int main()
+int main_bench()
 {   
 	int n,i,count=0,j;
 	struct sick s[100],a[100],t;

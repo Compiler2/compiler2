@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	float a[300];
 	unsigned int b[300],i,j=0,n;

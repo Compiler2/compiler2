@@ -23,7 +23,7 @@ int Find(char *s,char *s1)
 			return i;
 	return l;
 }
-int main()
+int main_bench()
 {
 	int l,i,t;
 	scanf("%s%s%s",s,s1,s2);

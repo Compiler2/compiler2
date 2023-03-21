@@ -17,7 +17,7 @@ void f(char *p)
 
 
 
-int main(int argc, char *argv[])
+int main_bench()
 {
   char a[30];
   gets(a);

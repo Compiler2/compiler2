@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char str1[101],str2[101];
 	memset(str1,0,101*sizeof(char));

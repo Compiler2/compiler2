@@ -1,6 +1,6 @@
 #include <header.h>
 
-main(void)
+main_bench()
 {
  int space=1,i=-1;
  char a[80];

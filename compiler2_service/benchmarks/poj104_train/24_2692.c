@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int len=0,len1=0,len2=100,n,i;
    char max[30],min[30],temp[30],c;
    scanf("%d",&n);getchar();

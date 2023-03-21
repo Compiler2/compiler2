@@ -94,7 +94,7 @@ int f5(int d[])
 
 
 
-int main()
+int main_bench()
 {
 	int i,j,k,l,m,mark=1,c[5]={1,2,3,4,5},d[5];
 	for(i=0;i<5;i++)

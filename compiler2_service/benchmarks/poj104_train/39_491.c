@@ -11,7 +11,7 @@ struct scholarship
 	int sum;
 };
 
-int main()
+int main_bench()
 {
 	int i=0,k=0,n=0,total=0;
 	struct scholarship data[100];

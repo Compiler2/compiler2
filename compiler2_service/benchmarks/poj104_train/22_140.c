@@ -23,7 +23,7 @@ void maopao(int array[],int n)
 
 }
 
-void main()
+int main_bench()
 {
 	int i,j,k,n,b,c[1000],f[1000],s,t,N,mid;
 

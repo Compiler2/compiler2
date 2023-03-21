@@ -26,7 +26,7 @@ int change(int a[5][5],int m,int n)
 	return(z);
 }
 
-void main()
+int main_bench()
 {
 	int a[5][5],p,q,m,n;
 	for(p=0;p<5;p++)

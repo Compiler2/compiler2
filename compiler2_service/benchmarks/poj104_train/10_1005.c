@@ -1,7 +1,7 @@
 #include <header.h>
 
 int search(int a[],int b,int c);
-int main()
+int main_bench()
 {
 int n,s=1,t,k;
 int *p,*a,*b;

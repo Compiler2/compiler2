@@ -3,7 +3,7 @@
 
 int monkey[300]; 
 
-int main()
+int main_bench()
 {
     void getking(int n, int m);
     int n = -1, m;

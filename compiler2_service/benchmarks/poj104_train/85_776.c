@@ -13,7 +13,7 @@ int decide(char k)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,j,m,i;
 	char a[500][20]={0};

@@ -3,7 +3,7 @@
 
 char *strqp(char *);
 
-int main()
+int main_bench()
 {
     char buffer[101]={0};
 	gets(buffer);

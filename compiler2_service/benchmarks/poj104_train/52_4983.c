@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { int m=0,n=0,a[100]={0},i=0;
   int *p;
   void prt(int*p,int m,int n);

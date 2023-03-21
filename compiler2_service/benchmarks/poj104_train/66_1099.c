@@ -2,7 +2,7 @@
 
 int isRunNian(int year); 
 int DiJiTian(int year, int month, int day); 
-int main()
+int main_bench()
 {
     int sy,year1,month1,day1;
    

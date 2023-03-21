@@ -32,7 +32,7 @@ void output(int a[],int k)
 	
 	for(i=1;i<=k;i++) if (i==1) printf("%d",a[i]); else printf(" %d",a[i]);
 }
-int main()
+int main_bench()
 {
 init(a,b);
 sort(a,m);

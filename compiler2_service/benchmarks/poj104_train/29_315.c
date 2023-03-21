@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,n[100],i,j,k,fm[100]={0},fz[100]={0};
 	double h[100]={0};

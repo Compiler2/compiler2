@@ -10,7 +10,7 @@ int hanshu(int n,int M)
 	if(M>n)a=hanshu(n,M-n);
 	return hanshu(n-1,M)+a;
 } 
-int main()
+int main_bench()
 {
 	int t,M,N,i;
 	scanf("%d",&t);

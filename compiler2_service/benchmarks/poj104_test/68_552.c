@@ -23,7 +23,7 @@ void min(int s)
 	return;
 }
 
-int main()
+int main_bench()
 {
 	int ni,i;
 	scanf("%d",&ni);

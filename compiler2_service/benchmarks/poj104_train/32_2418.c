@@ -1,7 +1,7 @@
 #include <header.h>
 
 int maxlen(int x, int y);
-int main()
+int main_bench()
 {
     int N;
         char s1[201], s2[201];

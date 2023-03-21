@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int p[100]={0},n1=0,n2=0,n3=0,n4=0,i,n;
     double b1=0,b2=0,b3=0,b4=0;

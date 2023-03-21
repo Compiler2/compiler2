@@ -6,7 +6,7 @@ int zh(int x,int y){
 }
 
 
-int main(){
+int main_bench(){
 int i,j,p=0,a[300],b[300],n;
 scanf("%d",&n);
 for(i=0;i<n;i++){scanf("%d %d",&a[i],&b[i]);}

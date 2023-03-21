@@ -1,7 +1,7 @@
 #include <header.h>
 
 int sum[25];
-int main()
+int main_bench()
 {
     int k=0;
 	char str[300],*ps;

@@ -10,7 +10,7 @@ struct student
 	int paper;
 	int sum;
 }stu[100];
-void main()
+int main_bench()
 {
 	int n,i,ssum=0,tsum=0,ti;scanf("%d",&n);
 	for(i=0;i<n;i++)scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].pscore,&stu[i].gjud,&stu[i].wjud,&stu[i].paper),stu[i].sum=0;

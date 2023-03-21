@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,year,a,b,c,sum;
 	scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);

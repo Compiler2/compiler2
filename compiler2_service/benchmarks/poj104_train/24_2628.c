@@ -13,7 +13,7 @@ void bubble(int a[],int l)
 				*(a+j+1)=t;
 			}
 }
-void main()
+int main_bench()
 {
 	int i,j,k,n,min=50,max=0,maxt,mint;
 	int l[503]={0};

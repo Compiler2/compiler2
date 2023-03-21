@@ -4,7 +4,7 @@ int l;
 struct stu
 {int num;
 int sex;}a[100];
-int main()
+int main_bench()
 {char s[101],p;
 int i,j,L,k;
 scanf("%s",s);

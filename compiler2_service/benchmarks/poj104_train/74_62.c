@@ -23,7 +23,7 @@ int ss(int n)
 	if(i==n)return 1;
 	else return 0;
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j=0,a[100]={0};
 	scanf("%d %d",&m,&n);

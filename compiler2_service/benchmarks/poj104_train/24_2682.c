@@ -5,7 +5,7 @@ struct word
     char a[40];
     int b;
 };
-int main()
+int main_bench()
 {
    int n;scanf("%d",&n);
    int i;

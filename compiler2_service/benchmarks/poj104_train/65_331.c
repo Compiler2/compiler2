@@ -19,7 +19,7 @@ void jzb(int a,int b)
          else if(b==1)  win--;
      }
 }
-int main()
+int main_bench()
 {
     int t,a,b,i;
     scanf("%d",&t);

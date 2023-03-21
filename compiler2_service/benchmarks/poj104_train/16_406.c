@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
        int number,ge,shi,bai,qian,wan,place;
 	scanf("%d",&number);

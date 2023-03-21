@@ -16,7 +16,7 @@ int fit(char *p){
 	}
 	return 1;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i;
 	char sz[81],*p;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 char map[105][105];
-int main()
+int main_bench()
 {
     int n,m,ans=0;
     scanf("%d",&n);

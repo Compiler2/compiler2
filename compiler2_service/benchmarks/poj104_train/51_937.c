@@ -2,7 +2,7 @@
 
 char a[500],b[500][5];
 int i,j,k,l,c[500]={0},max,n;
-int main()
+int main_bench()
 {
 	scanf("%d%s",&n,a);
 	l=strlen(a);

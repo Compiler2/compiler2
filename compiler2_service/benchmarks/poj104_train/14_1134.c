@@ -6,7 +6,7 @@ struct stu
 	int math;
 	int sum;
 };
-int main()
+int main_bench()
 {	struct stu indi[100000];
 	int n,i,j,rank[3];
 	scanf("%d",&n);

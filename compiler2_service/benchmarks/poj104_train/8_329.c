@@ -49,7 +49,7 @@ int arr3(int c[],int t)
       }
      return 0;
 }
-  int main()
+  int main_bench()
 {
       int x,y;
       int a[100],b[100],c[200];

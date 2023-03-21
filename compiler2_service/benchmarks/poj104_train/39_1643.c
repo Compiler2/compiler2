@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,i,qians[100],sum,t,d;
 	int jiangj(int a,int b,char d,char e,int c);

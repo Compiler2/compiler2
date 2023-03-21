@@ -9,7 +9,7 @@ temp=a+b;
 a=b;
 b=temp;}
 return sum;}
-int main()
+int main_bench()
 {int m,i,n[1000];
 scanf("%d",&m);
 for(i=0;i<m;i++)

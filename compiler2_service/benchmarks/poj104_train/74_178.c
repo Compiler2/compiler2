@@ -44,7 +44,7 @@ int panduanfanwen(int x,int y)
 
 
 
-int main()
+int main_bench()
 {
 	int m,n,i,a,t,b[100]={0},z=0;
 	int panduansushu(int x);

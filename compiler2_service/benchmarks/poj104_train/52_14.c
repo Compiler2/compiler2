@@ -20,7 +20,7 @@ void dump(int a[], int n) {
     
 }
 
-int main() {
+int main_bench() {
   int n, m;
   int a[100];
   scanf("%d %d", &n, &m);

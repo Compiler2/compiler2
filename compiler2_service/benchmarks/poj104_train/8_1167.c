@@ -2,7 +2,7 @@
 
 int a[100],b[100];
 int n,m;
-main()
+main_bench_bench()
 {
 void input(void);
 void order1(void);

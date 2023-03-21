@@ -5,7 +5,7 @@ struct student
 int yw;
 int sx;
 }stu[100000];
-int main()
+int main_bench()
 {
 	int n,i,sum[100000],temp[3],max;
 	scanf("%d",&n);

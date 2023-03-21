@@ -4,7 +4,7 @@
 
 
 void reverse(int x,int k);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n;
 	for(i=0;i<6;i++){

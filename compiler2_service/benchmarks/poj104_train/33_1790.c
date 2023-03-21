@@ -12,7 +12,7 @@ char com(char ch)
 	else if(ch=='C')
 		return 'G';
 }
-int main(){
+int main_bench(){
 	int n,i,j;
 	char chain[1000][256];
 	scanf("%d",&n);

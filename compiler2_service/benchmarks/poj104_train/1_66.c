@@ -13,7 +13,7 @@ int acSearch(int n, int i) {
 	return ret;
 }
 
-int main() {
+int main_bench() {
 	scanf("%d", &N);
 	for(; N --;) {
 		scanf("%d", &A);

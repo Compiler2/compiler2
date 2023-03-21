@@ -14,7 +14,7 @@ void sort (int a[],int n)
         }
     }
 }
-int main (){
+int main_bench(){
     int a[500],b[500],n,i,j=0;
     scanf("%d",&n);
     for(i=0;i<n;i++)

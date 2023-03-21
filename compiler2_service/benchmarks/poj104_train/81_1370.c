@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[5][5];
-int main()
+int main_bench()
 {
     int swap(int x[5][5],int n,int m);
     int i,j,n,m;

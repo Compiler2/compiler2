@@ -11,7 +11,7 @@ int run(int q){
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j,year,a,b,n,x;
 	scanf("%d",&n);

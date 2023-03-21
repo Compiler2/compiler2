@@ -1,7 +1,7 @@
 #include <header.h>
 
  
-int main()
+int main_bench()
 {
 	int num[1000],i,cnt,jsh=0,m,n;
 	scanf("%d %d",&n,&m);

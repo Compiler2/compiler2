@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {
   int y1,m1,d1,y2,m2,d2;
   int D1=0,D2=0,D=0,y,m,d;

@@ -22,7 +22,7 @@
           return 0;
         
     }
-int main()
+int main_bench()
 {
     int n,h;
     scanf("%d",&n);

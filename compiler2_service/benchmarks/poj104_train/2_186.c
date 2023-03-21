@@ -6,7 +6,7 @@ struct book
        int id;
        char c[27];
 };
-int main()
+int main_bench()
 {
     void number_of_books(int n,int *p,struct book book[1000]);
     char max(int n,int *p,struct book book[1000]);

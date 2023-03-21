@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int row,col,i,h,num,total;
 	int sz[100][100];

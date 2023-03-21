@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   int n;
   char ml[300];
   scanf("%d",&n);

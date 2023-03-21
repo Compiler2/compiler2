@@ -12,7 +12,7 @@ else if(x>=64&&x<=67)  return 1.5;
 else if(x>=60&&x<=63)  return 1.0;  
 else return 0; 
 }
-int main()
+int main_bench()
 {
 	int i,n,xuefen[10],fenshu[10],sum1=0;
 	float sum2=0,GPA;

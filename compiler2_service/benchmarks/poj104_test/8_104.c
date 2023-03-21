@@ -43,7 +43,7 @@ void write()
 	}
 	printf("%d",a[i]);
 }
-int main()
+int main_bench()
 {
 	read();
 	sort(a,a_n,b,b_n);

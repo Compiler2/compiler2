@@ -2,7 +2,7 @@
 
 int n=0,m=0,i=0,t=0,w=0,e=10000,q=0,r=0,k=0,p=0;
 int a[10000],b[10000],c[10000],d[10000];
-int main(){
+int main_bench(){
 	scanf("%d %d",&n,&p);
 	for(i=0;i<n;i++){
 		scanf("%d ",&a[i]);

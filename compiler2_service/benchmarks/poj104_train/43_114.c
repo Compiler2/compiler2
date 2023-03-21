@@ -11,7 +11,7 @@ int i;
     if(i==a)
       return 1;
 } 
-main()
+main_bench_bench()
 {
       int m,i;
       scanf("%d",&m);

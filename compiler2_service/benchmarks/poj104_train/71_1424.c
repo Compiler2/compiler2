@@ -42,7 +42,7 @@ int isRunNian(int year)
 	result += day;	
 	return result;	
 }
- int main ()
+ int main_bench()
   {
    int n,j;
    scanf("%d",&n);

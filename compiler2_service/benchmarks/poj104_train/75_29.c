@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int enter[1000]={0},leave[1000]={0},i,j=0,e=0,l=0;
 	char c;

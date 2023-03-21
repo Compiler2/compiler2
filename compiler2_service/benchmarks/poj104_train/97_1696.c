@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n, a[7]={0}, b[6]={0};
     scanf("%d", &n);
     a[1]=n/100;

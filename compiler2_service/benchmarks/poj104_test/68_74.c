@@ -40,7 +40,7 @@ int ss(unsigned long int n){
 	return(s);
 }
 
-int main(){
+int main_bench(){
 	unsigned long int i , j , n , a , b ;
 	scanf( "%d" , &n ) ;
 	for( i = 6 ; i <= n ; i = i + 2){

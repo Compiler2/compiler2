@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int a,b,c,d,e,f,t;
 scanf("%d",&a); 
  if(0<a,a<10) printf("%d\n",a);

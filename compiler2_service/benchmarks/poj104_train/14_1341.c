@@ -11,7 +11,7 @@ struct person
 	int total;
 }student[110000];
 
-int main()
+int main_bench()
 {
 	int n, i, max1=0, count1=0, max2=0, count2=0, max3=0, count3=0, number=0, sum=0;
 	scanf("%d", &n);

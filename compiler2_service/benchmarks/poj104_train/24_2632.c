@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     int i,n,x[250]={0},min=100,max=0;
     char s[250][50]={0};

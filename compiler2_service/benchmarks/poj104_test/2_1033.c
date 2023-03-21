@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int m,i,j,len,max;
 	int id[1000],b[26]={0};

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int	i, j, n, sr=0, jr=0, age, srage[100], jrage[100];
 	char num[10], srnum[100][10], jrnum[100][10];

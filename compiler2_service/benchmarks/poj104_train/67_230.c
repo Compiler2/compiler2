@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int sz[100],sz1[100],n;
 	float sz2[100];
 	scanf("%d",&n);

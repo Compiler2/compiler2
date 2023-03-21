@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main(){
+int main_bench(){
 	unsigned int n,i,a,tot=0,min=65535,max=0;
 	float avg;
 	scanf("%d",&n);

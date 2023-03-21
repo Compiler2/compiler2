@@ -8,7 +8,7 @@ int apple(int a,int b)
     if(a<0) return(0);
     else return(apple(a,b-1)+apple(a-b,b));
 }
-int main()
+int main_bench()
 {
     int n,i,a,b,c;
     scanf("%d",&n);

@@ -4,7 +4,7 @@
 char s[100000],e[100000];
 int f[1010];
 
-int main()
+int main_bench()
 {
 	int i,j,st,et,ans,k;
 	scanf("%s%s",s,e);

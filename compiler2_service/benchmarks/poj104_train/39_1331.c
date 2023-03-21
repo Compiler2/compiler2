@@ -9,7 +9,7 @@ struct std
 	char xi;
 	int lun;
 };
-int main()
+int main_bench()
 {
 	int panduan(struct std x);
 	int n,i,*a,max,sum=0;

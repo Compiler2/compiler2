@@ -2,7 +2,7 @@
 
 
 int common(int a,int b);
-void main()
+int main_bench()
 {
     int x,y;
 	scanf("%d %d",&x,&y);

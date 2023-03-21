@@ -9,7 +9,7 @@ void find(int x,int y)
 	else
 		find(x,y/2);	
 }
-void main()
+int main_bench()
 {
 	int x,y;
 	scanf("%d%d",&x,&y);

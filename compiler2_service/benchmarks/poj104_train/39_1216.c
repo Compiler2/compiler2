@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int N,i;
 	int Endmark[100],Classmark[100],Essay[100],award[100]={0},sum=0,BP,X;

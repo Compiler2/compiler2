@@ -13,7 +13,7 @@ return 1;
 else
 return 0;
 }
-int main()
+int main_bench()
 {
 	int m,a;
 	scanf("%d",&m); 

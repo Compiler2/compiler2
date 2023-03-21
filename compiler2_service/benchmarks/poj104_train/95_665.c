@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
 	int compare(char str1[80],char str2[80]);
 	int k=0;

@@ -10,7 +10,7 @@ int reverse(int b)
     }
     return a;
 }
-int main()
+int main_bench()
 {
     int x,tag=1,i;
     for (i=0;i<6;i++)

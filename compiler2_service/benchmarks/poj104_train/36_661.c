@@ -1,7 +1,7 @@
 #include <header.h>
 
 void pai(char a[]);
-int main(int argc, char *argv[])
+int main_bench()
 {char a[100],b[100];
 scanf("%s%s",a,b);
 pai(a);

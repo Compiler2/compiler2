@@ -12,7 +12,7 @@ int f(int a,int b)
         n=f(a-b,b)+f(a,b-1);
     }
 }
-int main()
+int main_bench()
 {
     int i,n,j=0,*p,*q,a,b;
     scanf("%d",&n);

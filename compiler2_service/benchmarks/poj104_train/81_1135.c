@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int func(int a[5][5],int n, int m);
 	int n, m, i, j, t;

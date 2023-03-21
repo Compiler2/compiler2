@@ -5,7 +5,7 @@ struct sick
 	char num[10];
 	int age;
 };
-int main()
+int main_bench()
 {
 	int i,j,n;
 	int s;

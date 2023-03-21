@@ -6,7 +6,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n;
 	int arr[100];

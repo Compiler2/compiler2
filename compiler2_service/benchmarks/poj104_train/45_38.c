@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
     int i,j,count=0;
 	char s[50],w[50],*ps;

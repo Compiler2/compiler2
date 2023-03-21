@@ -4,7 +4,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,m,a,b;
 	int sum=0;

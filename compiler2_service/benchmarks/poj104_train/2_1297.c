@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {char s[999][3][27];
 int m,i,j,k,Nn[27],ctrl;
 

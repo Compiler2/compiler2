@@ -13,7 +13,7 @@ void houzhui()
   puts(str);
 }
 
-main()
+main_bench_bench()
 {
       int a,i;
       scanf("%d",&a);

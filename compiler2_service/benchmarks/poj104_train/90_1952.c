@@ -10,7 +10,7 @@ int f (int x,int y){
 	{	result=f(x,y-1)+f(x-y,y);
 	return result;}
 }
-int main(){
+int main_bench(){
  int M,N,n,r,i;
  scanf("%d",&n);
  for(i=0;i<n;i++){

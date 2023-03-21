@@ -3,7 +3,7 @@
 
 int istarget(int);
 
-int main(void)
+int main_bench()
 {
     int num,i;
     scanf("%d",&num);

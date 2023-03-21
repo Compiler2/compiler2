@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int n,over,j,i,m,zongshu,jieshu,a,k;
 	int leiji[60];
 	scanf("%d",&n);

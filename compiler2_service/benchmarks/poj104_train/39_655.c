@@ -10,7 +10,7 @@ int paper;
 }stu[120];
 void scholar(struct student *p,int a); 
 
-int main(){
+int main_bench(){
 	int n,i;
 	struct student *pointer1;
 	pointer1=stu;

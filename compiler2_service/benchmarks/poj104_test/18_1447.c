@@ -20,7 +20,7 @@ void f2(int *p,int n,int k)
 		*(p+i*100)=*(p+i*100)-m;
 	if(k>1) f2(p+1,n,(k-1));
 }
-int main()
+int main_bench()
 {
 	int *p,a[100][100],n,i,j,t,m,h;
 	scanf("%d",&n);

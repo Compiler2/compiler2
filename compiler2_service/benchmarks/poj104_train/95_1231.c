@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 char text1[81],text2[81];int i,j,n;
 gets(text1);n=strlen(text1);printf("\n");gets(text2);

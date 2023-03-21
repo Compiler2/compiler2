@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main(){
+main_bench_bench(){
 	int n, i, mon[11]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30}, day[12];
 	scanf("%d", &n);
 	day[0]=0;

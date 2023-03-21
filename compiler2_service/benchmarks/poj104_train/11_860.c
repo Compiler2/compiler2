@@ -9,7 +9,7 @@ int isRN(int year)
 		result=0;
 	return result;
 }
-void main()
+int main_bench()
 {
 	int year,month,day;
 	int i;

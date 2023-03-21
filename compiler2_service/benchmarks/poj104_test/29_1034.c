@@ -14,7 +14,7 @@ double f(int n){
 	}
 	return d;
 }
-int main(){
+int main_bench(){
 	int m,i,sz[100];
 	double s;
 	scanf("%d",&m);

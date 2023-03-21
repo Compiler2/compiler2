@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int i,j,k,row,col,*p[100];
 	scanf("%d%d",&row,&col);

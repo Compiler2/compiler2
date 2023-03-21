@@ -6,7 +6,7 @@ const int N=110;
 
 int a[N][N];
 
-int main()
+int main_bench()
 {
 	int i,j,k;
 	int x;

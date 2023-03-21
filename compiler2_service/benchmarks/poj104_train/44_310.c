@@ -11,7 +11,7 @@
    return (i);
 }
    
-main ()
+main_bench()
 {  
    int x[6],p[6],i;
    for (i=0;i<6;i++)

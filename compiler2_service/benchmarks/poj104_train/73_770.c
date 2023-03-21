@@ -22,7 +22,7 @@ int linemin(int a1,int a2,int a3,int a4,int a5)
        a1=a5;
     return a1;
 }
-main()
+main_bench_bench()
 {
     int a[5][5],count=0;
     for(int i=0;i<5;i++)

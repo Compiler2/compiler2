@@ -27,7 +27,7 @@ void judge_sushu(int n,int t[])
 		}
 }
 
-void main()
+int main_bench()
 {
 	int m,n,i,t[2]={0},y,temp=0;
 	scanf("%d %d",&m,&n);

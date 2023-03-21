@@ -19,7 +19,7 @@ int hui(int num)
 	if(a==b) return(1);
 	else return(0);
 }
-void main()
+int main_bench()
 {
 	int m,n,flag=0,i,a[20],k=0;
 	scanf("%d%d",&m,&n);

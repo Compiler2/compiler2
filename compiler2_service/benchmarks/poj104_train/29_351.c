@@ -25,7 +25,7 @@ float sum (int n)
           return s;
       }
 }  
-int main ()
+int main_bench()
 {
     int m,x;
     scanf ("%d",&m);

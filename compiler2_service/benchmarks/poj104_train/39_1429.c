@@ -9,7 +9,7 @@ struct Student{
 	int paper;
 	int money;
 };
-void main(){
+int main_bench(){
 	int i,n,maxnum,tot=0;
 	struct Student stu[100]={0};
 	scanf("%d",&n);

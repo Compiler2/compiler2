@@ -4,7 +4,7 @@
 int check(int n,int m);
 void swap(int *a,int *b);
 
-void main()
+int main_bench()
 {
 	int o[5][5];
 	int n,m;

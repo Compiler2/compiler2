@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int money[6]={100,50,20,10,5,1};
 int n,y;
 scanf("%d",&n);

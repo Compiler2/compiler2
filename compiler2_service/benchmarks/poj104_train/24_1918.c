@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {
     int i,j,k,flu,max_len=0,min_len=100,max_num,min_num;
     char ch[20000],str[200][100];

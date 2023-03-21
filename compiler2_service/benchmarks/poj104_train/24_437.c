@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	char str[300];
 	int i,num[30],j=0,n,max,min,sum1=0,sum2=0;

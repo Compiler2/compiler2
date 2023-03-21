@@ -1,7 +1,7 @@
 #include <header.h>
 
 int num(int m[],int i,int k);
-void main()
+int main_bench()
 {
     int k,i,t,ans=0;
     int m[25];

@@ -12,7 +12,7 @@ int sushu(int x)
           a=0;
     return(a);
 }
-int main() 
+int main_bench() 
 {
     int sushu(int x);
     int N,n;

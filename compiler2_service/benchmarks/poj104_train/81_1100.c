@@ -13,7 +13,7 @@ int f(int a[5][5],int m,int n)
   }
   return 1;
 }
- int main()
+ int main_bench()
  {
      int m,n,a[5][5],k,i,j;
      for(i=0;i<5;i++)

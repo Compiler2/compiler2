@@ -1,7 +1,7 @@
 #include <header.h>
 
 int jzhh(int shuzu[5][5],int n,int m);
-int main()
+int main_bench()
 {
 	int shuzu1[5][5],x,y,j,k;
 	for(j=0;j<5;j++)

@@ -7,7 +7,7 @@ struct student
 	int num,y,b,he;
 }a[100003];
 
-void main()
+int main_bench()
 {
 	int n,i,j,he,k;
 	scanf("%d",&n);

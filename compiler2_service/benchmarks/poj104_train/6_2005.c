@@ -33,7 +33,7 @@ void juzhen(int m,int n)
 	}
 	printf("%d\n",sum);
 }
-int main()
+int main_bench()
 {
 	int k,i,m,n;
 	scanf("%d",&k);

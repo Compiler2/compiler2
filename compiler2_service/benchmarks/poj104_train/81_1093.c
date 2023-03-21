@@ -24,7 +24,7 @@ int pan(int m,int n)
         return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int i,j;
 	int k;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fc(int year,int mon1,int mon2);
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

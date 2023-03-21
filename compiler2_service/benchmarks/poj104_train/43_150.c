@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int zhishu(int x);
 	int m,i,k,n,p;

@@ -3,7 +3,7 @@
 
 void function(int,int);
 
-int main()
+int main_bench()
 {
    char s[200][100];
    int n[100],h[100],maxh[100];

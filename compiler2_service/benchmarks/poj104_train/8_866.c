@@ -61,7 +61,7 @@ void f4(void)
 	}
 	printf("\n");
 }
-int main()
+int main_bench()
 {
 	f1();
 	f2();

@@ -18,7 +18,7 @@ int p(int n)
            return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
     int n,i,j;
     P[0]=1;

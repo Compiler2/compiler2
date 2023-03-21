@@ -29,7 +29,7 @@ continue;
  return(p);
 }
  
-int main()
+int main_bench()
 {int m,n,i,j;   
  scanf("%d%d",&m,&n);
  j=0;

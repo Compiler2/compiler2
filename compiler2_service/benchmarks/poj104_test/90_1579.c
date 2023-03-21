@@ -8,7 +8,7 @@ int f(int m,int n)
    else      c=f(m,n-1)+f(m-n,n);
    return c;
 }
-int main()
+int main_bench()
 {
     int m,n,c,i,k;
     scanf("%d",&c);

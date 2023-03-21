@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,i,max,sum;
 	int a[99];
 	scanf("%d%d",&n,&a[0]);

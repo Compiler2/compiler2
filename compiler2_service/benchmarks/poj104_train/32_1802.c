@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n,i,j,k,a[105]={0},b[105]={0},c[105]={0},l1,l2,l,cha;
 	char s1[105],s2[105];

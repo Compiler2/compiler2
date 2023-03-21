@@ -1,7 +1,7 @@
 #include <header.h>
 
 int sushu(int x);
-int main()
+int main_bench()
 {
     int i=2,n,flag=0;
     scanf("%d",&n);

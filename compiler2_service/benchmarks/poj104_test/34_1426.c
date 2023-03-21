@@ -3,7 +3,7 @@
 void odd(int);
 void even(int);
 int n;
-int main()
+int main_bench()
 {
     scanf("%d",&n);
     even (n);

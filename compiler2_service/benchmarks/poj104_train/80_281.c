@@ -2,7 +2,7 @@
 
 int mon[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 int spec_year(int);
-int main()
+int main_bench()
 {
 	
 	void scan(int *year,int *month,int *day);

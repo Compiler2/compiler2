@@ -10,7 +10,7 @@ void fanzhuan(char * a, int begin, int end)
          a[end - i] = ch;
     }
 }
-int main()
+int main_bench()
 {
     char a[101];
     gets(a);

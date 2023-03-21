@@ -10,7 +10,7 @@ int panduan(char x){
    return s;
 
 }
-int main(){
+int main_bench(){
     int i,j,n,len;
     scanf("%d",&n);
     char zfc[100][21];

@@ -3,7 +3,7 @@
 
 int apple(int n,int k);
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,n,k;
 

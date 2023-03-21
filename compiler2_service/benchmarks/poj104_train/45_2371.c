@@ -17,7 +17,7 @@ int location(char*seg,char*who){
 	else return -1;			
 }
 
-int main( )
+int main_bench( )
 {
 	char *segment=(char *)malloc(sizeof(char));
 	char *whole=(char *)malloc(sizeof(char));

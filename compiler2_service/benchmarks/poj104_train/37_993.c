@@ -3,7 +3,7 @@
 
 
 int num[26]={0};
-int main()
+int main_bench()
 {
 	char sz[100001],*p;
 	int t,i,m,n;

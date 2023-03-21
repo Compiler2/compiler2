@@ -20,7 +20,7 @@ float yzs(int n)
 	}
 	return result;
 }
-int main()
+int main_bench()
 {
 	int n;
 	int a,i;

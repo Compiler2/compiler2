@@ -9,7 +9,7 @@ int num(int a,int b)
 		p=0;
 	return(p);
 }
-void main()
+int main_bench()
 {
 	int num(int a,int b);
 	int a[5][5];

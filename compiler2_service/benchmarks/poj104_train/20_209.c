@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a[100][15]={0},d[100][15]={0};
 	int i=0,j,n,k=0,cutpoint;

@@ -19,7 +19,7 @@ int output(int n,int a[]){
 	int i;
 	for(i=0;i<n;i++)  {printf("%d",a[i]);if(i<n-1) printf(" ");}
 }
-int main(){
+int main_bench(){
 	int n,m;
 	scanf("%d %d",&n,&m);
 	int a[n],b[m],c[n+m];

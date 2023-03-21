@@ -20,7 +20,7 @@ int isidentifor(const char* name)
     return 1;
 }
 
-int main()
+int main_bench()
 {
     char name[33];
     int n;

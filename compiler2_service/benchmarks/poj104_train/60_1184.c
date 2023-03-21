@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	 int sushu[10000],i,n,j,s=0,flag=0,m=0;
 	 for(i=2;i<10000;i++){

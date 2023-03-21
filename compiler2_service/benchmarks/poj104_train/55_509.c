@@ -2,7 +2,7 @@
 
 int f1(char p);
 char f2(int p);
-void main()
+int main_bench()
 { 
  long t=0;
  char s[11],x[11]={""};

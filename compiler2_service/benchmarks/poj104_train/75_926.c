@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {
 	int x[1000]={0},y[1000]={0};
 	char c;

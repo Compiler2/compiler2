@@ -1,7 +1,7 @@
 #include <header.h>
 
 int check(int m,int n);
-int main(void)
+int main_bench()
 {
 	int a[5][5],m,n,i,j,t;
           for(i=0;i<5;i++)

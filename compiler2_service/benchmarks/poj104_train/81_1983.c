@@ -17,7 +17,7 @@ int f(int b[5][5],int p,int q)
    }
  else return 0;
 }
-void main()
+int main_bench()
 {
  int f(int b[5][5],int p,int q);
  int m,n,a[5][5],j,k;

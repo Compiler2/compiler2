@@ -6,7 +6,7 @@ struct SHU
 	char bz[26];
 };
 
-int main()
+int main_bench()
 {
 	int m,i,j,l,k,p;
 	int name[200]={0},max,shuhao[1000];

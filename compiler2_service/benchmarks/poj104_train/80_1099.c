@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int year,month,startYear ,startMonth ,startDay ,endYear ,endMonth ,endDay,TOTAL1=0,TOTAL2=0;
 scanf("%d %d %d\n%d %d %d",&startYear ,&startMonth ,&startDay,&endYear ,&endMonth ,&endDay);
 for(year=1;year<startYear;year++)

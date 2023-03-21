@@ -12,7 +12,7 @@ int prime(int n, int m )
 	}
 	return total;
 }
-void main()
+int main_bench()
 {  
 	int n,b[2000],b0,i;
 	scanf("%d",&n);

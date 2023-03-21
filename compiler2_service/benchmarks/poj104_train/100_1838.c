@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char ch,ar, str[301];
     int i,j, len, nu1=1,nu2=1,counter1[26]={0},counter2[26]={0};

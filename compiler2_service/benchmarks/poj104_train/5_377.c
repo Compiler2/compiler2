@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 double m,n,r;
 int a,b,c;
 int i,j;

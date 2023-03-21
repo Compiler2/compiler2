@@ -8,7 +8,7 @@ int product(int n,int m)
 	else z=0;
 	return z;
 }
-void main()
+int main_bench()
 {
 	int product(int n,int m);
 	int t[5],a[5][5],x,y;

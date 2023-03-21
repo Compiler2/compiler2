@@ -57,7 +57,7 @@ void show()
      }
      
      
-int main()
+int main_bench()
 {input();
 
   paixu();

@@ -30,7 +30,7 @@ int hui(int n){
 			return 0;
 	
 }
-int main()
+int main_bench()
 {
 	int m,n,i,a[10000],k=0;
 	scanf("%d%d",&m,&n);

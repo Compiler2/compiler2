@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char zfc[1000],cs[1000];
 memset(zfc,0,1000);

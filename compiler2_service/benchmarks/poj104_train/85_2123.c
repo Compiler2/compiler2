@@ -12,7 +12,7 @@ int f(char n)
         return 1;
     else return 0;
 }
-int main()
+int main_bench()
 {
     int i,j,n,fl;
     char w[30];

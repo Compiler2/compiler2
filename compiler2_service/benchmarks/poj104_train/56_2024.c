@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
    int i,chang;
    char a[5]={'\0'},b[5]={'\0'};

@@ -20,7 +20,7 @@ void sort(int a[],int n)
      }
 }
 
-int main()
+int main_bench()
 {
 	int n,i,j=0,a[305];
 	float aver=0,x,y;

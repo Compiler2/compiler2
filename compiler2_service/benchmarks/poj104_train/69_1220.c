@@ -2,7 +2,7 @@
 
 char  s[100001];
 int   a[100001],b[100001],c[100001];
-int main(){
+int main_bench(){
     long i,j,k,m=0;
     long alen,blen,clen;
     gets(s);

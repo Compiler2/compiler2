@@ -20,7 +20,7 @@ else jiaogu(n/2);
 return 0;
 }
 
-int main()
+int main_bench()
 {int n;
 scanf("%d",&n);
 jiaogu(n);

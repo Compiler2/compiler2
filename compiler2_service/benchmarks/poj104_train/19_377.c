@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	int i,j;
 	char d,a[100][100]={0},b[100]={0},c[100]={0};
 	j=0;for(i=0;;){d=getchar();if(d=='\n')break;else if((d>64&&d<91)||(d>96&&d<123)){*(a[j]+i)=d;i++;}else {i=0;j++;}}

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int nian,yue1,yue2;
     int turn,i,j,days=0,temp;

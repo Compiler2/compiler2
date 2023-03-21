@@ -8,7 +8,7 @@ else if (tem>ma[1]){ ma[1]=tem;}
 }
 
 
-int main()
+int main_bench()
 {
 int n,i;
 int temp,max[2]={0,0};

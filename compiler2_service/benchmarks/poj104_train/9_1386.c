@@ -6,7 +6,7 @@ struct bing
 	int age;
 }person[100],old[100];
 
-main()
+main_bench_bench()
 {
 	int n,i,j=0,k,b;
 	char e[10];

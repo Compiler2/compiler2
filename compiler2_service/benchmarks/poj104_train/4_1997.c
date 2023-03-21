@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
     int *a,*a0,*b,*p;
     int row,col;

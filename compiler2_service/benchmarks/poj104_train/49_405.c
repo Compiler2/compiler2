@@ -3,7 +3,7 @@
 int i , l ;
 char str[501];
 void f(int number,int length);
-int main()
+int main_bench()
 {
 	int lenth;
 	gets(str);

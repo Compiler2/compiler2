@@ -5,7 +5,7 @@ struct book
 	char aut[26];
 };
 
-int main()
+int main_bench()
 {
 	int m,n,i,j,k;
 	int a[27]={0};

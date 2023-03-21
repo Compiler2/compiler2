@@ -6,7 +6,7 @@ int turn(char a[])
   sum=sum*10+a[i]-'0';
 return sum;
 }
-int main()
+int main_bench()
 {  char str[300][5]={'\0'},c;
    int i,j,num[300],max,nmax,count;
    for(i=0,j=0;(c=getchar())!='\n';j++)

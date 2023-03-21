@@ -9,7 +9,7 @@ int isDigit(char ch) {
     return 0;
 }
 
-int main() {
+int main_bench() {
     char *p = (char *) malloc(40 * sizeof(char));
     gets(p);
     do {

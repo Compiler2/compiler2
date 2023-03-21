@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char ori[102],*ptr,qp,*head,*tail;
 	int i,n;

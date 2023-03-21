@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() {
+int main_bench() {
 	int z, q, s, l;
 	for (z = 1; z < 6; ++z) {						
 		for (q = 1; q < 6; ++q) {					

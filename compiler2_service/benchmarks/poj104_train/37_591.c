@@ -1,7 +1,7 @@
 #include <header.h>
 
 char s[10010];
-int main()
+int main_bench()
 {
 	int a[26],i,n,j,x,t,flag;
 	char ch,set[26];

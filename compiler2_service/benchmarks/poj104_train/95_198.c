@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ( )
+int main_bench()
 {
 	char sen_1[80]="\0",sen_2[80]="\0";
 	int i,sum=0;

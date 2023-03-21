@@ -4,7 +4,7 @@
 
 
 
-int main(){
+int main_bench(){
 char zf[100];
 char zq[100];
 char cu[100];

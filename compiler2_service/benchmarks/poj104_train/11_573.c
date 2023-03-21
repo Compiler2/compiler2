@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {int year,month,day,answer;
 scanf("%d %d %d",&year,&month,&day);
  if(year%400==0||(year%4==0&&year%100!=0)){

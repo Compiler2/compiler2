@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
     int money;
 	int a,b,c,d,e,f;
 	int g,h,i,j,k,l;

@@ -16,7 +16,7 @@ void bubble(int a[],int l)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	int m,n,i,j,a[10000],b[10000];
 	scanf("%d%d",&m,&n);

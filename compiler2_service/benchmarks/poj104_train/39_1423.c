@@ -28,7 +28,7 @@ int scholarship(struct student stu)
 
 }
 
-void main()
+int main_bench()
 {
 	int n,c[100],i,sum=0,max,k;
 	struct student stu[100];

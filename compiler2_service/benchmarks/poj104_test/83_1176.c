@@ -13,7 +13,7 @@
         if(60<=a&&a<=63)  return 1.0;
         if(a<60)  return 0;
 		}
- int main()
+ int main_bench()
 {
      int n,i,m;
 	 float h;

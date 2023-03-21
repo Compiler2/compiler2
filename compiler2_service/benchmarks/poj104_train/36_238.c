@@ -8,7 +8,7 @@ int appear(char c)
     for(i=0;i<la;i++)if(c==b[i]){b[i]=0;return(1);}
     return(0);
 }
-int main()
+int main_bench()
 {
       int i,j,k;
 

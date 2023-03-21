@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    int n,sum,a,i,b,c,d,e;
    scanf("%d",&n);
    e=n/10000;

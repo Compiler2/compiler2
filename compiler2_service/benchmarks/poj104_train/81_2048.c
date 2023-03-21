@@ -17,7 +17,7 @@ int change(int*p3,int*p4,int n,int m)
 }
 
 
-void main()
+int main_bench()
 {
 	int a[5][5],i,j,m,n,v;
 	int*p1,*p2,*p=a[0];

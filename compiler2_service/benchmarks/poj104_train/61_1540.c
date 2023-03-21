@@ -3,7 +3,7 @@
   
  
 int Fibonacci(int x);
-int main(){	
+int main_bench(){	
 int n,s,k,a[25];	
 scanf("%d",&n);	
 for(k=0;k<n;k++){		

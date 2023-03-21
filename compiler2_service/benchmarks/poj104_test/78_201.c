@@ -25,5 +25,5 @@ if((z+q==s+l)&&(z+l>s+q)&&(z+s<q))
 {wakaka(z,q,s,l);return 1;}
 }
 
-int main()
+int main_bench()
 {ohyeah();}

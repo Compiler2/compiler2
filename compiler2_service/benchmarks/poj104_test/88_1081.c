@@ -3,7 +3,7 @@
 int judge(char x){
 	if(x>47&&x<58){return 1;}
 	return 0;}
-int main (){
+int main_bench (){
 	int i,all,count,start[30],end[30],p;
 	char sen[31];
 	gets(sen);

@@ -58,7 +58,7 @@ void print()
     putchar('\n');
 }
 
-int main()
+int main_bench()
 {
     init();
     solve();

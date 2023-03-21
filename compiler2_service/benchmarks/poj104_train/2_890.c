@@ -5,7 +5,7 @@ struct book{
 	int num;
 	char author[26];}shu[999];
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int m,b,i,*p;
 	char c;

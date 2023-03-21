@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,sum=0,i,mon=0,max=0;
 	char name[20],c1,c2,maxname[20];

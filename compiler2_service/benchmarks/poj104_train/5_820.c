@@ -1,7 +1,7 @@
 #include <header.h>
 
 int yn(char x);
-int main(){
+int main_bench(){
 char a[501],b[501];
 double q,p;
 int i,s,l1,l2,o;

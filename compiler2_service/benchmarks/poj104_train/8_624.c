@@ -33,7 +33,7 @@ void shuchu(int m,int n,int a[200]){
 		printf("%d ",a[i]);
 	printf("%d\n",a[m+n-1]);
 }
-void main()
+int main_bench()
 {
 	int m,n,i,a[200],b[100];
 	scanf("%d%d",&m,&n);

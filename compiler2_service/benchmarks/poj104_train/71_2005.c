@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int runnian(int year);
     int a[]={31,28,31,30,31,30,31,31,30,31,30,31};

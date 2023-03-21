@@ -6,7 +6,7 @@ int compare(int x,int y)
     x=y+1;
     return x;
 }
-int main()
+int main_bench()
 {
       int i,n,r,a,j;
       scanf("%d",&n);

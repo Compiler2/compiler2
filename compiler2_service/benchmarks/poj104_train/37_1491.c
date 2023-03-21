@@ -17,7 +17,7 @@ void search()
 	printf("%c\n",s[i]);
 	}
 	
-int main()
+int main_bench()
 	{
 		int n;
 		scanf("%d",&n);

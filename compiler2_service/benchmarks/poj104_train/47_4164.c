@@ -12,7 +12,7 @@ void reverse(int* array, int len){
 	}
 }
 
-int main(){
+int main_bench(){
 	int len = 0;
 	scanf("%d", &len);
 

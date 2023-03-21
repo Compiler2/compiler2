@@ -15,7 +15,7 @@ int shuzi(char x)
 	else a=0;
 	return a;
 }
-int main()
+int main_bench()
 {
 	int n,i,m,j,k=0;
 	char a[81];

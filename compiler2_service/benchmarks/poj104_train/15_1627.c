@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int sz[1000][1000], i, j, n, a1, b1, a2, b2, x, y, t;
 	scanf("%d\n", &n);

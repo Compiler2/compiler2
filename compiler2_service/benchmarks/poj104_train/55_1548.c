@@ -1,6 +1,6 @@
 #include <header.h>
 
-main ()
+main_bench()
 {
 
   int a2i[128],from,to,len=0,i;

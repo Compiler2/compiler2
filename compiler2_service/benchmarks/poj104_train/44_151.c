@@ -4,7 +4,7 @@
 
 int reverse(int num); 
 int branch(int e);
-int main()
+int main_bench()
 {
 	int A[6],i;
 	for (i=0;i<6;i++)

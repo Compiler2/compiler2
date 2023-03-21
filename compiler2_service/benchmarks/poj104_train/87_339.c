@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
   int a=0,b,c,d,e,f;
   while(scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f)&&a!=0)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 void read(int*,int*);
-int main()
+int main_bench()
 {
       int a[100000],b[100000];
       read(a,b);

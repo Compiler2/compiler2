@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int a[2000],b[2000],max,min,i=0,j,n,k=0,s=0;
 	char x=',';

@@ -8,7 +8,7 @@ int RN(int year){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int n;
 	int i,k;
 	int a,b,c,e;

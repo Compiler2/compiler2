@@ -2,7 +2,7 @@
 
 int hui(int a);
 int su(int a);
-void main()
+int main_bench()
 {
 	int m,n,i,j=0,a[99];
 	scanf("%d %d",&m,&n);

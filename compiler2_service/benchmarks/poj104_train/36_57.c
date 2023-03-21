@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char a[100],b[100],flaga[100],flagb[100],bool1=1,bool2=1;
 	unsigned int i,j;

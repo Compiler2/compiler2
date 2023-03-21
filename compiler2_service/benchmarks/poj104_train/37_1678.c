@@ -1,6 +1,6 @@
 #include <header.h>
 
-main ()
+main_bench()
 {
      char s[100000];
      char temp;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	long int m[4],n[4],i;
 	for(i=0;i<4;i++)scanf("%ld",&m[i]);

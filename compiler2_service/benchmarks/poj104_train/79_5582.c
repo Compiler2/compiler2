@@ -45,7 +45,7 @@ int find(struct mon *head,int m)
 			return p1->i;
 	}
 }
-void main()
+int main_bench()
 {
 	struct mon *head;
 	scanf("%d%d",&n,&m);

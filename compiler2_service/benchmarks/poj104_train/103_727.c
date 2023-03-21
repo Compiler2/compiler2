@@ -7,7 +7,7 @@ struct yasuohou
 	int count;
 
 }yasuohou;
-int main()
+int main_bench()
 {
 	char str[100];
 	struct yasuohou lettercount[100];

@@ -6,7 +6,7 @@ int day(int d)
     d=d%7;
   return d;
 }
-int main ()
+int main_bench()
 {
   int w[13],a[13];
   int i,d;

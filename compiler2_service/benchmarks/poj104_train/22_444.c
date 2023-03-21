@@ -32,7 +32,7 @@ void sort(int l,int r)
     if(l < j)sort(l,j);
 }
 
-int main()
+int main_bench()
 {
     memset(a,0,sizeof(a));
     scanf("%s",s);

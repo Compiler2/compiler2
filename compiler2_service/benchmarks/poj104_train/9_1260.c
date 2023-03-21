@@ -6,7 +6,7 @@ struct Ill {
 	int age;
 };
 
-int main()
+int main_bench()
 {
 	int n, i, k;
 	int m,l = 0;

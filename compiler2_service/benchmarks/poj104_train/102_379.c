@@ -6,7 +6,7 @@ struct person
     float h;
 };
 struct person p[50];
-int main()
+int main_bench()
 {
     int i,j,n,man,woman;
     float m[50],w[50];

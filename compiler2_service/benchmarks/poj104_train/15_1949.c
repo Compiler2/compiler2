@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int shuzu[1001],jilu[1001];
 	int a=0,b=0,c,n,i,k;

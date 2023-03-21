@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int n,age,u[100],i;double a=0,b=0,c=0,d=0;
 	scanf("%d",&n);

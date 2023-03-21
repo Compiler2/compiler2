@@ -2,7 +2,7 @@
 
  
 int a[9][9],b[9][9];
-int main ()
+int main_bench()
 {void F(int x, int y);
     int p,q,i,j,t,m,n;
     for (i=0;i<9;i++)

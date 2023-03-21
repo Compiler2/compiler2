@@ -20,7 +20,7 @@ void Do(int m,int n)
     printf("%d ",b[i]);
     printf("%d\n",b[n-1]);
 }
-main()
+main_bench_bench()
 {
     int m,n;
     scanf("%d %d",&m,&n);

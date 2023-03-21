@@ -2,7 +2,7 @@
 
 
 int amount(int,int,int);
-int main()
+int main_bench()
 {
     int monkey,discard;
     scanf("%d%d",&monkey,&discard);

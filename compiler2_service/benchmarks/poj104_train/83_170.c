@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int i,n,point[10],goal;
 float f,num,gpa;
 float c=0,d=0;

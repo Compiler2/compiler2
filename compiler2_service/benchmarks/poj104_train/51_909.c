@@ -2,7 +2,7 @@
 
 
 
-int main ()
+int main_bench()
 {   int n,i,j,shu[500],k;
     unsigned int l;
     char s[500],m[500][6];

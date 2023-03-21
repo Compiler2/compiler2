@@ -17,7 +17,7 @@ void f(char c[1000],int i)
 		}
 	}
 }
-int main()
+int main_bench()
 {
 	char s[1000],c[1000];
 	scanf("%s%s",s,c);

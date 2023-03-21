@@ -4,7 +4,7 @@ struct {
 		char ID[10];
 		int nian;
 	}patient[100],old[100],qita[100],temp;
-int main()
+int main_bench()
 {
 int n,i,k,e,num,j;
 scanf("%d",&n);

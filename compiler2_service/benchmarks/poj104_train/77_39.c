@@ -8,7 +8,7 @@ int numb=0;
 int ida[10000];
 int idb[10000];
 void test(int x);
-int main()
+int main_bench()
 {
 	scanf("%c",&a);
 	s[0]=a;

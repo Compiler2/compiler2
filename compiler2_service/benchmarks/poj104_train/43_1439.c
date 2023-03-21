@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {  int m,a=3,b,i,j;
 scanf("%d",&m);
 loop:while(a<=m/2)

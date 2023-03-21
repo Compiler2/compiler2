@@ -13,7 +13,7 @@ struct Student
 	int chinese;
 	int math;
 };
-int main()
+int main_bench()
 {
 	void swap(int *i,int *j);
 	int n,i,first,second,third,one,two,three;

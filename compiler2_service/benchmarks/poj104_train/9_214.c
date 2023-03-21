@@ -7,7 +7,7 @@ struct data{
 	struct data *next;
 	struct data *onext;
 };
-int main() {
+int main_bench() {
 	int i,j,n,max,x;
 	scanf("%d",&n);
 	struct data *head=(struct data*)malloc(sizeof(struct data));

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char str1[100],str2[100];
 	int num1[52]={0},num2[52]={0};

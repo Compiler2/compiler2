@@ -10,7 +10,7 @@ void move(int a[],int n,int m)
 	m--;
 	if(m>0) move(a,n,m);
 }
-int main()
+int main_bench()
 {
 	int i,a[100],*p=a,n,m;
 	scanf("%d %d",&n,&m);

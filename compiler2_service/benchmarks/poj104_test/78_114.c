@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,z,s;
 	for(i=70;i>=30;i-=10)

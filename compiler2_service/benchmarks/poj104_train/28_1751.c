@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     char wd[300][20],m;
 	int len[300],i,j,k,tag=0;
 	for(i=0;;){

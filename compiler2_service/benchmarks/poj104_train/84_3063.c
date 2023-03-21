@@ -14,7 +14,7 @@ int min(int a,int b){
 	else return a;
 }
 
-void main (){
+int main_bench(){
 
 	int i,c;
 	int n;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int num,*xuefen,*score,i,txuefen=0;
 	float *gpa,total=0,part,GPA;

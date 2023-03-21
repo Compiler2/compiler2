@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char string[100];
 	char word[100][100],a[100],b[100];char *p[100];char *p1,*p2;

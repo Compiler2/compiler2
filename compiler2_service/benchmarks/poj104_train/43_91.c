@@ -16,7 +16,7 @@ int f(int n)
     }   
     return m;
 }   
-main()
+main_bench_bench()
 {
     int n,k;
     

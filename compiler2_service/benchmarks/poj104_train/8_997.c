@@ -28,7 +28,7 @@ printf(" %d",b[i]);
 return;
 }
 
-int main()
+int main_bench()
 {
 int m,n,a[100],b[100],i;
 scanf("%d %d",&m,&n);

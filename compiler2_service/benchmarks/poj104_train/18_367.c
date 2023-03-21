@@ -30,7 +30,7 @@ void xj(int m)
 			a[i-1][j-1]=a[i][j];
 }
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

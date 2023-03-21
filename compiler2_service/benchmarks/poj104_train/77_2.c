@@ -16,7 +16,7 @@ while (i<r-1) {
 printf("%d %d\n", l, r);
 }
 
-int main()
+int main_bench()
 {
 int l;
 scanf("%s", s);

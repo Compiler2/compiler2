@@ -7,7 +7,7 @@ struct student
            int ch;
            int math;
     };
-int main()
+int main_bench()
 {
     int max(int *p,int n);
     void shuchu(int *p,int n,int k,struct student student[100001]);

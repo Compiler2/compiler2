@@ -6,7 +6,7 @@ for(i=2;i<=n;i++){
 	k=((m%i)+k)%i;}
 return k;
 }	
-int main(){
+int main_bench(){
 	int m,n,h=0;
 	int a[100],j=0,y=0;
 	while(h==0){

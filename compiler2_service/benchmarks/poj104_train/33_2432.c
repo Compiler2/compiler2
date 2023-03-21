@@ -12,7 +12,7 @@ char swap(char x){
 		y='G';
 	return y;
 }
-int main(){
+int main_bench(){
 	int n,i,j,len;
 	char str[50000];
 	scanf("%d",&n);

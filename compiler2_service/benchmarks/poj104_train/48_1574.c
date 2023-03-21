@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main ()
+int main_bench()
 {
 	const int sz=9;
 	int a[sz][sz],b[sz][sz];

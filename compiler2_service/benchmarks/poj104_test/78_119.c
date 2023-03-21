@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     char a[6]={'0','0','0','0','0','0'};
     int z,q,s,l,i;

@@ -10,7 +10,7 @@ int chf(int x,int y)
 	return z;
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char c1[50];
 	int a1,a2,i,l,k,sh=0,count=0;

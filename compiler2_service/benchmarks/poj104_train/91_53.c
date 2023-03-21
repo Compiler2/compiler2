@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,length;
 	char sz1[101],sz2[101],*character,*family;

@@ -11,7 +11,7 @@ int Is_Runinian(int year)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int year,month,day;
 	scanf("%d%d%d",&year,&month,&day);

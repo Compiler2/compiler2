@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int year,month,day,n,weekday,i;
 	scanf("%d %d %d",&year,&month,&day);

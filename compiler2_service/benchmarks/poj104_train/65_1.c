@@ -4,7 +4,7 @@ int awin=0,bwin=0;
 
 void fuck(int a,int b);
 
-int main()
+int main_bench()
 {
 	int n;
 	int a[200],b[200];

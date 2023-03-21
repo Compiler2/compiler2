@@ -10,7 +10,7 @@ int fb(int t){	if(t==2)	return 0;	else	return 1;}
 int fc(int t){	if(t==5)	return 0;	else	return 1;}
 int fd(int t){	if(t==1)	return 1;	else	return 0;}
 int fe(int t){	if(t==1)	return 0;	else	return 1;}
-void main()
+int main_bench()
 {
 	int a,b,c,d,e;
 	for(e=1;e<6;e++)

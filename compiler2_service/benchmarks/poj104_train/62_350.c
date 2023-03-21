@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
     const int MAXN = 300;
     char str[MAXN];
     gets(str);

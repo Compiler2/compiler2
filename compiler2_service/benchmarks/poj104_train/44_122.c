@@ -37,7 +37,7 @@ int reserve(int num)
     }
     return e;
 }
-int main()
+int main_bench()
 {
     int i,a;
     for(i=0;i<6;i++)

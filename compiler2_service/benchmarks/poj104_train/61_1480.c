@@ -1,7 +1,7 @@
 #include <header.h>
 
 int dijigeshu(int a);
-int main(){
+int main_bench(){
 	int x=1,y=1;
 	int n,a,b[100];
 	scanf("%d",&n);

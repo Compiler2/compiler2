@@ -8,7 +8,7 @@ int hanshu(int m,int n){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int m,n;
 	int sz[5][5];
 	int sz2[5];

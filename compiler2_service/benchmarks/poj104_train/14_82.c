@@ -4,7 +4,7 @@ struct student
 {
 	int id,word,math,sum;
 }stu[100000];
-void main()
+int main_bench()
 {
 	int n,i=1,maxi;
 	scanf("%d",&n);

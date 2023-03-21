@@ -37,7 +37,7 @@ void daopai(char *pt)
 			printf("%c",*(index[0]));
 	}
 }
-int main()
+int main_bench()
 {
 	char str[100],*p=str;
 	gets(p);

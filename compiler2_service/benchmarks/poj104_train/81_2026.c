@@ -15,7 +15,7 @@ int trans(int n,int m,int (*a)[5])
 	}
 	return(i);
 }
-int main()
+int main_bench()
 {
 	int m,n,a[5][5],t,i,j;
 	for(i=0;i<5;i++)

@@ -10,7 +10,7 @@ int checkyear(int a)
 	}
 }
 
-int main()
+int main_bench()
 {int i,n,a[1000],b[1000],c[1000];
 double x ;
 scanf("%d",&n);

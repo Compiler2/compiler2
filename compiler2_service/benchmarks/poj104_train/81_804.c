@@ -1,7 +1,7 @@
 #include <header.h>
 
 int shuzu(int n,int m);
-int main(){
+int main_bench(){
 	int a[10][10];
 int i,j,d;
 	for(i=0;i<5;i++){

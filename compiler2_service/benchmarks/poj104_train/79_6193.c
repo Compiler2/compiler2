@@ -9,7 +9,7 @@ int f(int x,int y)
     }
     return k+1;
 }
-main()
+main_bench_bench()
 {
       int n[20],m[20],i,king;
       for(i=0;i<=19;i++)

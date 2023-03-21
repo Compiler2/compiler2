@@ -30,7 +30,7 @@ int reverse(int num)
              return answer;
     }
 }
-int main()
+int main_bench()
 {
     int j,y;
     for(j=0;j<6;j++)

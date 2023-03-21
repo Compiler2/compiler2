@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 int judge(int s,int e,char a[]);
 void print(int s,int e,char a[]);

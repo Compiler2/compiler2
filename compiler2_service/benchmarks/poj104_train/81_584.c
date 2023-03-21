@@ -17,7 +17,7 @@ int work(int arr[5][5],int m,int n)
 	   return 0;
 }
 
-int main()
+int main_bench()
 {
 	int i,j,m,n;
 	int a[5][5];

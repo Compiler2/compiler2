@@ -27,7 +27,7 @@ int huiwen(int p,int q)
 
 
 
-int main()
+int main_bench()
 {
    int m,n,coun=0;
    scanf("%d %d",&m,&n);

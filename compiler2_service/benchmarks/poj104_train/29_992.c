@@ -1,7 +1,7 @@
 #include <header.h>
 
 double F(int n);
-int main(){
+int main_bench(){
 	int j,i,n,m;
     double result;
 

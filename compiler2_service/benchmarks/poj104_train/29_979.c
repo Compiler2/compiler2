@@ -2,7 +2,7 @@
 
 
 double F(int r);
-int main(){    
+int main_bench(){    
 	int m,n[100],i,r;
 	double result;
 	scanf("%d",&m);

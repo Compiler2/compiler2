@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
     char a[1000];
     int b[26];

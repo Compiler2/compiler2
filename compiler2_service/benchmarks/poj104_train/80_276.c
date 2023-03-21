@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int startyear,endyear,startmonth,endmonth,startday,endday,i,answer;
 	long int sumdays1=0,sumdays2=0;

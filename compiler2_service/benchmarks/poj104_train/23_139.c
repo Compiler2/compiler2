@@ -2,7 +2,7 @@
 
 int i,n,p,k;
 char a[100],s[100][30];
-void main()
+int main_bench()
 {
 	gets(a);
 	n=strlen(a);

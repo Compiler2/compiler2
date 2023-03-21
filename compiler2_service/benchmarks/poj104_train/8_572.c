@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	void shuru(int array[100],int x);
 	void paixu(int array[100],int x);

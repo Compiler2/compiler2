@@ -2,7 +2,7 @@
 
 
 
-void main()
+int main_bench()
 {struct student
 {char name[30];
 int final;

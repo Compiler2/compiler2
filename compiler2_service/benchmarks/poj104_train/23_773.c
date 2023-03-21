@@ -6,7 +6,7 @@ int Strlen(char *ch1)
     for(i=0;ch1[i]!='\0';i++);
     return i;
 }
-void main()
+int main_bench()
 {
 	char ch1[100],ch2[100],a[20];
     int i,j,k=0;

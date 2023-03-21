@@ -9,7 +9,7 @@ char xb;
 int lw;
 };
 int k=0;
-int main()
+int main_bench()
 {
 	
 int money(struct student a);

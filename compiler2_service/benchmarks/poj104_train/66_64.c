@@ -13,7 +13,7 @@ int days(int n)
 	}
 	return sum;
 }
-int main()
+int main_bench()
 {
     int y,m,d,i,totaldays=0;
 	scanf("%d%d%d",&y,&m,&d);

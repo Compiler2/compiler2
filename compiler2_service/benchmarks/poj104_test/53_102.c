@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int n,a[300],d[300],i=0,*p;
   int judge(int *w,int i,int *p);

@@ -13,7 +13,7 @@ int sushu(int c)
           return(1);
           }
       }
-int main()
+int main_bench()
 {
       int n,b,d=3,e;
       scanf("%d",&n);

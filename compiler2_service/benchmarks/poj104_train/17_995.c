@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,j,k,n,m;
 	char a[200],b[200]={'0'},*kuoh[200];

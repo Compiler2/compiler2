@@ -12,7 +12,7 @@ int yuqiwuguan(int number){
 	return 1;
 }
 
-int main(){
+int main_bench(){
 	int i,sum,n;
 	sum=0;
 	scanf ("%d",&n);

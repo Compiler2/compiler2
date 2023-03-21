@@ -19,7 +19,7 @@ trans(int a[][5],int n, int m)
 	}
 		return 1;
 }
-main()
+main_bench_bench()
 {
 	int a[5][5];
 	int (*p)[5] = a;

@@ -7,7 +7,7 @@ struct
 	char b[26];
 }shu[1000];
 
-int main()
+int main_bench()
 {
 	int s[27];
 	int n,i,j,o,max,t=1,x;

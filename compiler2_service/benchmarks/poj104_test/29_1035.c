@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int m,shuzu[100],i,j;
 	double x,s,e,a,b;
 	scanf("%d",&m);

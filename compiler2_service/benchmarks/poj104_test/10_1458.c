@@ -12,7 +12,7 @@ int Compare(const void*elem1,const void*elem2)
     p2=(struct dian*)elem2;
     return (*p2).h-(*p1).h;
 }
-int main()
+int main_bench()
 {
       int n,i,j,k;
       scanf("%d",&n);

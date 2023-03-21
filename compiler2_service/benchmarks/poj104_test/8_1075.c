@@ -52,7 +52,7 @@ void shuchu(int p)
 		printf(" %d",a[i]);
 	}
 }
-int main()
+int main_bench()
 {
 	shuru(0);
 	paixu(0);

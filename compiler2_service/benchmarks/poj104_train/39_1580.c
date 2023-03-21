@@ -9,7 +9,7 @@ char a2;
 int pa;
 
 }stu[100];
-void main()
+int main_bench()
 {int n,i,sumt,j;
 int sum[100];
 scanf("%d\n",&n);

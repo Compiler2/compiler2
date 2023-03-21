@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char sz[300]={'\0'}, result[300]={'\0'};
 	int k,i,j,m;

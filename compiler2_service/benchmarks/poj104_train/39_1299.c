@@ -19,7 +19,7 @@ int cpu(int term_end,int class_talk,char stu_staff,char stu_west,int thesis_num)
 		money += 850;
 	return money;
 }
-int main()
+int main_bench()
 {
 
 	int stu_num;

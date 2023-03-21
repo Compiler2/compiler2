@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char number[100 + 1];
 	int a[100 + 1] ,lenth;

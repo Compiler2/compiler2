@@ -5,7 +5,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i,j,k,a[5][5],max[5],min[5];
 	for(i=0;i<=4;++i)

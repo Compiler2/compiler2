@@ -22,7 +22,7 @@ int k(int x)
    return 0;
   else return (x-'0'); 
 }
-main()
+main_bench_bench()
 {   char a[260];
     char b[260];
     char c[260];

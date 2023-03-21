@@ -1,7 +1,7 @@
 #include <header.h>
 
 int m,n,i,y,q=12;
-main()
+main_bench_bench()
 {
     scanf("%d",&m);
     for(n=3;n<=m-2;n++)

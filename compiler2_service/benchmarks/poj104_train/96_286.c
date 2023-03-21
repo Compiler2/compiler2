@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   char str[101],result[100]={"0"};
   int i,tem,max=0;

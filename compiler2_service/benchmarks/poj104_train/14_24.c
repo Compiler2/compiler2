@@ -87,7 +87,7 @@ void print(struct stu *head)
 	}
 	printf("%ld %d\n%ld %d\n%ld %d\n",p1->xh,p1->zh,p2->xh,p2->zh,p3->xh,p3->zh);
 }
-void main()
+int main_bench()
 {
 	struct stu *head;
 	head=scan();

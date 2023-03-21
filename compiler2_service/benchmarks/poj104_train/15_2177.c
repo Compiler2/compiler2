@@ -5,7 +5,7 @@ int abs(int p)
   if(p>0) return p;
   else return(-p);
 }
-int main()
+int main_bench()
 {
   long first,last,i,j;
   int n,a,check=0,sc,sr,ec,er;

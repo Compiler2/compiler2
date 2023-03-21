@@ -1,7 +1,7 @@
 #include <header.h>
 
 int fbnq(int);
-int main(){
+int main_bench(){
 	int m,i,j;
 	int n[100];
 	double a[100],sum[100]={0.00};

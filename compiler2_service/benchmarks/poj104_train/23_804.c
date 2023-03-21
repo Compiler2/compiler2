@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char s[102]={'\0'},a[60][20]={'\0'},*p1,*p2;
 	gets(s);

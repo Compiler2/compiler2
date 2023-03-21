@@ -18,7 +18,7 @@ int yu7wuguan(int n)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,sum=0,y=0,i=1;
 	scanf("%d",&n);

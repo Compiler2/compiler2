@@ -4,7 +4,7 @@
 
 
 
-main()
+main_bench_bench()
 {
   int k=0,i=0;
   char a[150],b[150];

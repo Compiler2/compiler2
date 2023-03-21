@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
    char string[257],substring[257],replacement[257];
    gets(string);
    gets(substring);

@@ -14,7 +14,7 @@ void printDigit(int z)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int year,month,day,sum,n,x=0,y,z;
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

@@ -6,7 +6,7 @@ int g[300];
 
 
 
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

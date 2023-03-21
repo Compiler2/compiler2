@@ -8,7 +8,7 @@ int f(int m,int n)
    else if(m==0) return(1);
    else return(f(m,n-1)+f(m-n,n));
 }
-int main()
+int main_bench()
 {
 	int t;
 	int i;

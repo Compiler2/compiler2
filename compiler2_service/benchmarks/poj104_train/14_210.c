@@ -3,7 +3,7 @@
 
 
 
-int main (){
+int main_bench(){
     int n, i, k;
     
     struct stu{

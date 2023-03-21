@@ -21,7 +21,7 @@ int big_move(){
 	printf("%d\n",array[row][col]);
 	return 0;
 }
-int main(){
+int main_bench(){
 	scanf("%d%d",&ROW,&COL);
 	int r,c;
 	for(r=0;r<ROW;r++){

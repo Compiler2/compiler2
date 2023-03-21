@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {float a[101]={0},gpa,sumjidian=0,sumxuefen=0;
  int i,n,b[101],c[101];
  for (i=60;i<=63;i++) a[i]=1.0;

@@ -17,7 +17,7 @@ void match(char s[])
     for(i=0;i<x;i++) b[left[i]]='$';
     puts(b);
 }
-int main()
+int main_bench()
 {
     char a[101];
     while((gets(a)))

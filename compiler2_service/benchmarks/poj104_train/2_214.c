@@ -5,7 +5,7 @@ struct book
 	int id;
 	char s[26];
 }a[100];
-int main()
+int main_bench()
 {
 	int m,i,n,j,k,max,maxnum;
 	int aut1[26]={0},aut2[26][100]={0};

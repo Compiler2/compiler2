@@ -2,7 +2,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i=0,j=0,k=0,w=0;
     scanf("%d",&w);

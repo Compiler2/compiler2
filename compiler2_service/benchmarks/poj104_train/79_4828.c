@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
       int m,n,a[301],c,d=0,e=0,N;
       for (N=0; ;N++)

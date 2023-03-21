@@ -70,7 +70,7 @@ int sum(struct stu *head)
 	}
 	return(sum);
 }
-void main()
+int main_bench()
 {
 	int n;
 

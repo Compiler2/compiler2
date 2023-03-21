@@ -1,7 +1,7 @@
 #include <header.h>
 
 int minus(char str2[]);
-int main()
+int main_bench()
 {
 	int n,k;
 	char str2[100][100]={'\0'};	

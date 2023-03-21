@@ -6,7 +6,7 @@
 
 
 
-void main()
+int main_bench()
 {
 	int n,i;
 	long sq_sum=0;

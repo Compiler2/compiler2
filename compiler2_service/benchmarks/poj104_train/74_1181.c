@@ -19,7 +19,7 @@ int test(int n)
     return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
     int m,n,l=0,c=0;
     int i;

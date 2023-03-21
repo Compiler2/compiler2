@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { int leap(int n);
 int n,sum=0,i;
 scanf("%d",&n);

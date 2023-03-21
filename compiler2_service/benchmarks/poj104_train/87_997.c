@@ -2,7 +2,7 @@
 
 int a,b,c,d,e,f,i;
 int sum;
-int main()
+int main_bench()
 {
 	while(scanf("%d %d %d %d %d %d\n",&a,&b,&c,&d,&e,&f))
 	{		if(a==0)

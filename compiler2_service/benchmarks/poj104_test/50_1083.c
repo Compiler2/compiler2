@@ -32,7 +32,7 @@ int tianshu(int i)
 	}
 }
 
-int main()
+int main_bench()
 {
 	int w,i,x;
 	scanf("%d",&w);

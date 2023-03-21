@@ -1,7 +1,7 @@
 #include <header.h>
 
 int judge(char*a,char*b);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char a[100]={'\0'},b[100]={'\0'};
 	scanf("%s%s",a,b);

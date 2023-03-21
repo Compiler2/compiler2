@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {
      char string1[100],string2[100];
      gets(string1);

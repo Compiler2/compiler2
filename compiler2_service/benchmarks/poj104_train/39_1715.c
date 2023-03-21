@@ -8,7 +8,7 @@ struct stu
 	struct stu *next;
 };
 
-void main()
+int main_bench()
 {
 	int len,n,i,sc1,sc2,pap,sum=0;
 	char mon,wes;

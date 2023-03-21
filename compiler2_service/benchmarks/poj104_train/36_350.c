@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void sort(char s[]);
 	char a[20]={0},b[20]={0};

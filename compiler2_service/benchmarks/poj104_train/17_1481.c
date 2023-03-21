@@ -38,7 +38,7 @@ a[b[i]-1]='$';
 puts(a);
 return 0;
 }
-int main()
+int main_bench()
 {int i,n;
 scanf("%d\n",&n);
 for(i=1;i<=n;i++)

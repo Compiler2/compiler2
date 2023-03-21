@@ -16,7 +16,7 @@ int exchange(int shz[5][5],int x,int y)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int n,m;
 	int result;	

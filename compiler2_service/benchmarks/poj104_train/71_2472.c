@@ -1,7 +1,7 @@
 #include <header.h>
 
 int dijitian(int Y,int M,int D);
-int main(){
+int main_bench(){
 	int n;
 	scanf("%d",&n);
 	int Y[200];

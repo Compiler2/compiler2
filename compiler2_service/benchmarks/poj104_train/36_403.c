@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {  char aa[1000],bb[1000];int m,j,i,t,c;
    scanf("%s",aa);scanf("%s",bb);
     if (strlen(aa)!=strlen(bb))printf("NO");

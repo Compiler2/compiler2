@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int len,judge,i,all,p;
 	char input[21];
 	scanf("%d",&all);

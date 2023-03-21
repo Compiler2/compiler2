@@ -3,7 +3,7 @@
 
 int a[2][102][102] , x[2] , y[2] , t;
 
-int main ()
+int main_bench()
 {
    int i , j , k;
    for ( i = 0 ; i < 2 ; i ++ )

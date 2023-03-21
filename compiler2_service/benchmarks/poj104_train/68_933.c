@@ -9,7 +9,7 @@ int check(int n){
 	else return 0;
 }
 
-int main(){
+int main_bench(){
 	int n,i,j;
 	scanf("%d",&n);
 	for(i=6;i<=n;i=i+2){

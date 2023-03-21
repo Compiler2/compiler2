@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ( )
+int main_bench()
 {
 	unsigned long nian,yue,ri,run,tian,xq;
 	scanf("%d %d %d\n",&nian,&yue,&ri);

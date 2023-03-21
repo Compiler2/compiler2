@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int reverse (int n);
 	int s[6]={0},z[6]={0},i;

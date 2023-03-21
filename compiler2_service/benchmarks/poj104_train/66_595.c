@@ -8,7 +8,7 @@ long int ny;
 long int nm;
 long date;
 
-int main()
+int main_bench()
 {
 	
 	long int t;

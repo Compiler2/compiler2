@@ -31,7 +31,7 @@ int fx(int n)
 	printf("\n");
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int i,b[6],n,k;
 	for(i=0;i<6;i++)

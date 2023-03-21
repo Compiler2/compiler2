@@ -12,7 +12,7 @@ int f(int x,int y){
 	return 1;
 	}
 }
-void main()
+int main_bench()
 {
 	int i,j,t;
 	for(i=0;i<5;i++){

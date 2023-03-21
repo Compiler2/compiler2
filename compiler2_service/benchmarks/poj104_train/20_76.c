@@ -12,7 +12,7 @@ int f(char str[])
 	}
 	return(n);
 }
-void main()
+int main_bench()
 {
 	int i=0,n,j,a,length[100];
 	char str[100][50],str1[100][50];

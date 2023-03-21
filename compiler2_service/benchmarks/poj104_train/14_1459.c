@@ -5,7 +5,7 @@
 struct student{
 	int number,chinese,math,total;
 }stu[100000];
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i;
 	scanf("%d",&n);

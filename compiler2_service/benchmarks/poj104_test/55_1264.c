@@ -13,7 +13,7 @@ void convert(int a,int n){
     if (a >= n) convert(a / n,n);
     printf("%c",convert_2(a % n));
 }
-int main(){
+int main_bench(){
     int a,n = 0,b,k = 1,i;
     char str[500];
     scanf("%d %s %d",&a,str,&b);

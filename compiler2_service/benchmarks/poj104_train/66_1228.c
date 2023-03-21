@@ -5,7 +5,7 @@ int isrunnian(int year){
     return 1;
     return 0;
 }
-int main(){
+int main_bench(){
     int i,year,month,date,sum;
     int montha[2][12]={{31,28,31,30,31,30,31,31,30,31,30,31},
                        {31,29,31,30,31,30,31,31,30,31,30,31}};

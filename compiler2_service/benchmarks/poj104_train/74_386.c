@@ -25,7 +25,7 @@ int check(long int i)
 	}
 	if (flag==0) return(1);
 }
-main()
+main_bench_bench()
 {
 	for(i=1;i<=1000000;i++) a[i]=1;
 	a[1]=0;

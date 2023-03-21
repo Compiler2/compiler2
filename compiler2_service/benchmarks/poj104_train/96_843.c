@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {	char a[1000];
 	gets(a);
 	int num,shang[1000],yushu[1000];

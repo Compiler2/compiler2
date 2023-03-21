@@ -5,7 +5,7 @@ struct patient
 	char No[10];
 	int age;
 }grp1[100],grp2[100],grp3[100];
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

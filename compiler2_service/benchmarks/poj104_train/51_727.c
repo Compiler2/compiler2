@@ -3,7 +3,7 @@
 
 
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char str[501];
 	char s[500][5];

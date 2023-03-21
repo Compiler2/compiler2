@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i,x;
 	scanf("%d %d %d\n",&sy,&sm,&sd);

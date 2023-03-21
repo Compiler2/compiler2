@@ -22,7 +22,7 @@ sb(char a[])
 			printf("%c",*q);
 	}
 }
-int main()
+int main_bench()
 {
 	char a[1024];
 	gets(a);

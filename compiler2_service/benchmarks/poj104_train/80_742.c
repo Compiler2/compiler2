@@ -5,7 +5,7 @@ struct date {
    int month;
    int day;
 };
-int main() 
+int main_bench() 
 { 
  struct date date1,date2; 
  int days,days1=0,days2=0; 

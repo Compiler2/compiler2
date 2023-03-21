@@ -1,7 +1,7 @@
 #include <header.h>
 
 void exchange(int (*p)[5],int x,int y);
-int main()
+int main_bench()
 {
 	int i,k,m,n;
 	int square[5][5];

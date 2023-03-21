@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
      char ini[101],former[101],latter[101],*p,*q=ini;
 	 gets(ini);

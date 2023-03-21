@@ -1,7 +1,7 @@
 #include <header.h>
 
 int put(int, int);
-int main()
+int main_bench()
 {
 	int nLoop;
 	int m,n;

@@ -5,7 +5,7 @@ int date(int month);
 int daycount(int month);
 
 
-int main()
+int main_bench()
 {
     int day=0;
     scanf("%d",&day);

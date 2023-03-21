@@ -15,7 +15,7 @@ void process(char *pt,int number)
 	}
 }
 	
-int main()
+int main_bench()
 {
 	char A[101];
 	char *pt;

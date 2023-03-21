@@ -2,7 +2,7 @@
 
 int c[200];
 
-void main()
+int main_bench()
 {
     void to(int a[],int b[],int n,int m);
   	void hebing(int a[],int b[],int n,int m);

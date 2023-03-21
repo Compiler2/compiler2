@@ -12,7 +12,7 @@ int wordsnumber(char a[])
 	return (num);
 }
 
-void main()
+int main_bench()
 {
 	char A[1000]={'\0'},B[300][100]={'\0'};
 	int numA,i,t,j,count;

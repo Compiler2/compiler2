@@ -18,7 +18,7 @@ int prime(int num)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	int num;
 	int i;

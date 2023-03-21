@@ -10,7 +10,7 @@ int is_run(int x)
     else return 0;
 }
 
-int main()
+int main_bench()
 {
     int f1[13][13], f2[13][13];
     int i, j, k, n, year, mon1, mon2, sum;

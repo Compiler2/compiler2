@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int p,a,b,i,j,*num;
 	num=(int *)malloc(sizeof(int)*10000);
 	scanf("%d %d",&a,&b);

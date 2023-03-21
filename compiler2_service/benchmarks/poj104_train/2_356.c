@@ -6,7 +6,7 @@ struct book
     char peo[26];
 } book[999];
 
-int main()
+int main_bench()
 {   char zm,max;
 	int n,i,k,num,cishu=-1;
 	scanf("%d",&n);

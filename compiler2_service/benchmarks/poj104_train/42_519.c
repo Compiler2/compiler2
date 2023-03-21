@@ -9,7 +9,7 @@ int swap(int *p1,int *p2)
     *p2=x;
 }
 
-int main()
+int main_bench()
 {
     int a[100000];
     int *p,*q,n,i,k,num=0;

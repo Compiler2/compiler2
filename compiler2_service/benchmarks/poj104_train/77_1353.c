@@ -31,7 +31,7 @@ int match(int i,int l)
 	match(i+1,l);
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int l;
 	int i;

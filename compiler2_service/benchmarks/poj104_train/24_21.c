@@ -7,7 +7,7 @@ int len(char s[100])
 	for(i=0;i<100;i++) if(((s[i]>96)&&(s[i]<123))||((s[i]>64)&&(s[i]<91))) l++;
 	return l;
 }
-void main()
+int main_bench()
 {
 	int i,p,n,maxlen,minlen,maxnum,minnum;
 	char s[1000],c[50][100];

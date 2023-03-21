@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
   int an[5][5],*q=an[0],i,n,m;
   int rev(int n,int x,int an[5][5]);

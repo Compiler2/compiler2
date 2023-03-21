@@ -9,7 +9,7 @@ int place(int m,int n)
           else       return place(m,n-1);    
          }
 }
-int main()
+int main_bench()
 {
     int t,m,n,i;
     scanf("%d",&t);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main() 
+int main_bench() 
 {
     char p[1000],q[1000];
     int a[128]={0},b[128]={0};

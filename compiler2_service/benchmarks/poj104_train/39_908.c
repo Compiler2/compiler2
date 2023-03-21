@@ -5,7 +5,7 @@ struct s
 	char name[20],ganbu,xibu;
 	int qimo,pingyi,lunwen,sum;
 };
-int main()
+int main_bench()
 {
 	int n,i,max=0,tot=0;
 	char c;

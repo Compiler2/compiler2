@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	int i,k,l,c=0,ucount[26]={0},lcount[26]={0},cmp=65;
 	char hao[301];

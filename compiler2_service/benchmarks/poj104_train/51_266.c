@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int po[500]={0};
 	char c[1000]={0},ca[5]={0};

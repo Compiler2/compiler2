@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,count=0;
 	double a[1000]={0.0},total=0.0,average,max=-1.0;

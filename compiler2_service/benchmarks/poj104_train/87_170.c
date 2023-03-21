@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 int a,b,c,d,e,f,g,h,i,k,z,s=0;
 for(k=0;k<10;k++){
 scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);if(d==0&&e==0&&f==0&&a==0&&b==0&&c==0){break;}

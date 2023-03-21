@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	unsigned long int a,b,c,days,allday,m,n;
 	scanf("%ld %ld %ld",&a,&b,&c);

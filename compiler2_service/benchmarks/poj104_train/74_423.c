@@ -29,7 +29,7 @@ int huiwen(int n)
 	return(flag);
 }
 
-void main()
+int main_bench()
 {
 	int m,n,i,flag=0;
 	scanf("%d %d",&m,&n);

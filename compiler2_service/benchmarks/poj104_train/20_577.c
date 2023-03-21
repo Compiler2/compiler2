@@ -29,7 +29,7 @@ int kong(char s[],int n)
 
 
 
-void main()
+int main_bench()
 {
 	char s[1000][20];int i,j,t,m;
 	for(i=0;;i++)

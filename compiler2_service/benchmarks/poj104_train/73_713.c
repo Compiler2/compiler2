@@ -9,7 +9,7 @@ int check(int a[5][5],int h,int l)
       if (a[i][l]<a[h][l]) return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
    int a[5][5],que=30302,n=0,posh,posl;
    int i,j;

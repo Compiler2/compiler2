@@ -1255,7 +1255,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	char A[302];
 	int i,n,k,j;

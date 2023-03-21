@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[200][2];
-int main()
+int main_bench()
 {
 	int n,i,win,tie,lose;
 	scanf("%d",&n);

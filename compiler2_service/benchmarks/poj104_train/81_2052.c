@@ -16,7 +16,7 @@ int survival(int a[6][6],int n,int m)
 	}
 }
 
-void main()
+int main_bench()
 {
 	int a[6][6],n,m,i,j,f;
 	int survival(int a[6][6],int n,int m);

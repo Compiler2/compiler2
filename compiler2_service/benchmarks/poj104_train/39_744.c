@@ -10,7 +10,7 @@ struct student
 	int art;
 	int money;
 }person[100];
-int main()
+int main_bench()
 {
 	int n,i,j,q=0,k;
 	struct student temp;

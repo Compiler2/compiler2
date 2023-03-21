@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char name[100][20],ganbu[100],xibu[100];
 	int qimo[100],banji[100],lunwen[100],i,n,sum[100]={0},flag=0,max=0,total=0;

@@ -40,7 +40,7 @@ void c3()
 		printf("%d ",d[i]);
 	printf("%d",d[b-1]);
 }
-int main()
+int main_bench()
 {
 	c1();
 	c2();

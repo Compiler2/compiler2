@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int wan,ge,shi,bai,qian;
 	long int zheng;

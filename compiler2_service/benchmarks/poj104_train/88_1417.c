@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-void main()
+int main_bench()
 {char s[100];int i,flag1=-1,flag2=-1,m;
 	gets(s);
 	m=strlen(s);

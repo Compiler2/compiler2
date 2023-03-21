@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main(){
+int main_bench(){
 	int d,m,w;
 	scanf("%d",&w);
 	if(w==6||w==7)

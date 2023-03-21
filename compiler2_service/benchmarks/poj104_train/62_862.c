@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char zifu[300],tihuan[300];
 	int k,i=0;

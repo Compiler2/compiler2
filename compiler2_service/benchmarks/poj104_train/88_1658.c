@@ -3,7 +3,7 @@
 
 
 
-int main() {
+int main_bench() {
 	char s[31];
 	
 	char *p;

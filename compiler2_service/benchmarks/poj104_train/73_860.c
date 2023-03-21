@@ -9,7 +9,7 @@ int max(int x,int y)
     return y;
 }
 
-main()
+main_bench_bench()
 {
       int a[5][5],b[5][5],i,j,k=0;
       for(i=0;i<5;i++)

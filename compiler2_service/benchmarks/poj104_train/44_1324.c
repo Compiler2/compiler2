@@ -16,7 +16,7 @@ int op(int x)
     }
     return y;
 }
-main()
+main_bench_bench()
 {
     int k,n;
     for(k=0;k<6;k++)

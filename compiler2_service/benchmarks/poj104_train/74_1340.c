@@ -6,7 +6,7 @@ int huiwen(int m, int n)
     else 
 		return(huiwen(m/10,n*10+m%10));
 }
-void main()
+int main_bench()
 {
 	int m,n,i,j,p=0,q=1,a[10000],b[10000],c[10000]={0},x=1;
 	scanf("%d %d",&m,&n);

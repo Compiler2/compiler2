@@ -18,7 +18,7 @@ int sushu(int x){
 	}
 	return result;
 }
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n,i,sum=0;
 	scanf("%d",&n);

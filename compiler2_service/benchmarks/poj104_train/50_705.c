@@ -4,7 +4,7 @@
 int LeapQ(int);
 int DayCount(int, int, int);
 
-int main()
+int main_bench()
 {
 	int i, n;
 	scanf("%d", &n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
   int n,i,j;
   char range[10000][256];
   char vice[10000][256];

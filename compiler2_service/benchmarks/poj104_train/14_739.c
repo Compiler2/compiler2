@@ -8,7 +8,7 @@ struct student
 	};
 	struct student stu[100000];
 	int sum[100000];
-int main(int argc, char* argv[])
+int main_bench()
 {
 	
 	int a,b,c,num1,num2,num3;

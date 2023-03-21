@@ -1,7 +1,7 @@
 #include <header.h>
 
 int money(int n1,int n2,char n3,char n4,int n5);
-int main()
+int main_bench()
 {
 	long i,max,n,n1,n2,n5,sum;
 	char name[20],n3,n4,max_name[20];

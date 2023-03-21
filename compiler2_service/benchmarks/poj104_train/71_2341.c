@@ -3,7 +3,7 @@
 
 int is_leap_year(int n);
 
-int main()
+int main_bench()
 {
     int n;
     int y, m1, m2;

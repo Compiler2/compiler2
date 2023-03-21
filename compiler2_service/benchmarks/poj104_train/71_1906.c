@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,i,m,j,x,y;
 	int a[200],b[200],c[200];

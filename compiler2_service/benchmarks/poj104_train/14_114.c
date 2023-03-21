@@ -6,7 +6,7 @@ struct data
 	int num[100000],a[100000],b[100000],sum[100000];
 }data;
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,x=0,y=0,z=0;
 	scanf("%d",&n);

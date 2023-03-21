@@ -3,7 +3,7 @@
 
 char a[300];
 
-int main()
+int main_bench()
 {
 
 	gets(a);

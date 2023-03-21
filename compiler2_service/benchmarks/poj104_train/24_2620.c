@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	char word[201][30]={0};
 	int i,j,n,a[201]={0},flag=0;

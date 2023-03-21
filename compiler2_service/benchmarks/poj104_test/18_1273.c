@@ -55,7 +55,7 @@ int h(int n)
 	}
 	return k+h(n-1);
 }
-int main()
+int main_bench()
 {
 	scanf("%d",&N);
 	for(int j=0;j<N;j++)

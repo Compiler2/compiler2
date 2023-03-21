@@ -1,7 +1,7 @@
 #include <header.h>
 
 char a[250],b[250],sum[251];
-int main()
+int main_bench()
 {
 	int lena,lenb,i,l,f;
 	scanf("%s %s",a,b);

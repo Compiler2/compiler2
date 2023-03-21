@@ -3,7 +3,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n;
 	char c[550],a[5];

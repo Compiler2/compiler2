@@ -18,7 +18,7 @@ int isprime(int p)
 	}
 	return prime;
 }
-int main()
+int main_bench()
 {
 	int n;
 	int i,j;

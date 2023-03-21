@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char dc[9999][33];
 	int n;
 	int i;

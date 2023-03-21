@@ -39,7 +39,7 @@ int bigint3(int*a,int alen,int*b,int blen,int*c)
 	return c[alen-1]?alen:(alen-1);
 }
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	char s1[300],s2[300];
 	int a[300],b[300],c[300];

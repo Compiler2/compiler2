@@ -23,7 +23,7 @@ int cc(long int x)
 		return(0);
 	return(1);
 }
-void main()
+int main_bench()
 {
 	int label=0;
     long int m,n,i,j,p=0;

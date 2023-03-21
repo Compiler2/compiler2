@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,a[300],i,b[300]={15},j=0,m,temp2;
 	double sum=0,temp,ave;

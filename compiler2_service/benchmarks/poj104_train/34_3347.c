@@ -1,7 +1,7 @@
 #include <header.h>
 
 void jg(int);
-int main()
+int main_bench()
 {
 	int n;
 	scanf("%d",&n);

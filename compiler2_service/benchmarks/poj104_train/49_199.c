@@ -4,7 +4,7 @@ char str[500];
 int length;
 int check(int start,int len);
 int ctr1,ctr2,ctr3;
-int main(void)
+int main_bench()
 {
 	gets(str);
 	length=strlen(str);

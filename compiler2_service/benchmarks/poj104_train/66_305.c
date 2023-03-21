@@ -22,7 +22,7 @@ int xinqi(int z,int x,int w)
 	C=D%7;
 	return C;
 }
-void main()
+int main_bench()
 {
    int year,mon,day,days;
    scanf("%d%d%d",&year,&mon,&day);

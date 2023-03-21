@@ -24,7 +24,7 @@ int day_of_year(int year, int month, int day) {
 	return days;
 }
 
-int main() {
+int main_bench() {
 	int n;
 	scanf("%d", &n);
 	int i;

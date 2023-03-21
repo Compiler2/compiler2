@@ -20,7 +20,7 @@ void make(int k,int x)
 		make(1,x/10);
 	}
 }
-int main()
+int main_bench()
 {
 	int i,x,j,l,n,t,a[100],m;
 	for (i=1;i<=6;i++)

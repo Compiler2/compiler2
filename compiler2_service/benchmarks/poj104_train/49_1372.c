@@ -17,7 +17,7 @@ void print(char a[],int m,int n)
 		printf("%c",a[i]);
 	printf("\n");
 }
-int main ()
+int main_bench()
 {
 	char a[500];
 	int i,j,k,l;

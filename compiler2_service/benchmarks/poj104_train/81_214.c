@@ -18,7 +18,7 @@ int exc(int x,int y){
 }
 
 
-int main(){
+int main_bench(){
 	int sz[5][5],n,m,j,e;
 	int row,col;
 	

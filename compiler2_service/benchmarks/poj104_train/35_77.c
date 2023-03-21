@@ -23,7 +23,7 @@ int min(int a[])
 	}
 	return(min);
 }
-void main()
+int main_bench()
 {
 	int i,j,a[8][8]={0},b[8],k,s=0,q,r;
 	scanf("%d,%d",&m,&n);

@@ -7,7 +7,7 @@ int isPrime(int a)
     if(a%i==0)return 0;
     return 1;
 }
-int main()
+int main_bench()
 {
    int n;
    scanf("%d",&n);

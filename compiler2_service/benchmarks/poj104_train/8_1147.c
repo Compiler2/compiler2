@@ -51,7 +51,7 @@ void print(int *p3,int x)
      }
 }
 
-main()
+main_bench_bench()
 {
       int a,b,*p1,*p2,*p3;
       scanf ("%d",&a);scanf("%d",&b);

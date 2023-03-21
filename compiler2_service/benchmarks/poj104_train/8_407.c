@@ -43,7 +43,7 @@ void out(int m,int n,int x[])
 	}
 	printf("%d\n",a[m+n]);
 }
-main()
+main_bench_bench()
 {
 
 	read(a,b);

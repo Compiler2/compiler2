@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	unsigned int *p,*k;
 	int n,i,j=0,t,m=0,tmp;

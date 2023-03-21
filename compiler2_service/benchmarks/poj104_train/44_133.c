@@ -2,7 +2,7 @@
 
 int reverse(int num); 
 int i,a[6];
-int main(){
+int main_bench(){
 	for(i=0;i<6;i++)
 		scanf("%d",&a[i]);
 	for(i=0;i<6;i++){

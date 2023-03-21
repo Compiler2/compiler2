@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int n, i ,j=0,num[300];
 	double ping=0,cha[300];

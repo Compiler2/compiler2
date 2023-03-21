@@ -10,7 +10,7 @@ struct student
 	int lunwen;
 	int jiangjin;
 };
-int main()
+int main_bench()
 {
 	int n,i,sum=0;
 	struct student ren[102]={0},max={0};

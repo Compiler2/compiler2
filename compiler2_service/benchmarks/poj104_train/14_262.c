@@ -8,7 +8,7 @@ struct stu
 	int ma;
 };
 
-int main()
+int main_bench()
 {
 	int n,i,j,score[100000],max[2];
 	struct stu STU[100000];

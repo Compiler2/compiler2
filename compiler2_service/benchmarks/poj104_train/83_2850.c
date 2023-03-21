@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int i,n,point[10],grade[10];
 	double pg[10],sum1,sum2,gpa;

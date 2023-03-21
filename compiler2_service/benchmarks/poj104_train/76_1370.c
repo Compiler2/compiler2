@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,sz[50000],d[50000],a[50000],b[50000],t=0,s=0,max,min;
     double k;

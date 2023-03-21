@@ -9,7 +9,7 @@ int pg(int m,int n)
     return pg(m,n-1)+pg(m-n,n);
 }
 
-int main()
+int main_bench()
 {
       int s,i;
       scanf("%d",&s);

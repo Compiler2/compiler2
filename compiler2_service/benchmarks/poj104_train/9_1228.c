@@ -5,7 +5,7 @@ struct bingren{
 	int age;
 }bin[101];
 
-int main(int argc, char* argv[])
+int main_bench()
 {	int n;
 	scanf("%d",&n);
 	int i,j,k=0,l=0,e,a[100];

@@ -9,7 +9,7 @@ struct stu
 	long int total_mark;
 };
 
-int main(void)
+int main_bench()
 {
 	int n,i,j,k,t=0,max;
 	struct stu *p;

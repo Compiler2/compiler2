@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {   char p=0;
 	int m,i,j,max[1000];
 	struct book{

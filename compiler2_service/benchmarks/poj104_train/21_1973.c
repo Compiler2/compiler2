@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
  unsigned int a[301],i,j,k,n,t;  
                   float av,cha[301],temp,sum=0;  

@@ -31,7 +31,7 @@ int Myatoi(char*ch, int iBits)
 	return iNumInverse;
 }
 
-int main()
+int main_bench()
 {
 	int iNum, iNumInverse, iBits=0;
 

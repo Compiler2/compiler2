@@ -1,7 +1,7 @@
 #include <header.h>
 
 int s[1500]={0};
-int main()
+int main_bench()
 {
   int x=1,i=0,j=1,k=0;
   while(k<1500)

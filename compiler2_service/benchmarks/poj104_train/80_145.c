@@ -6,7 +6,7 @@ int leapYear(int year)
 		return 1;
 	return 0;
 }
-int main()
+int main_bench()
 {
 	int i,startYear,endYear,startMonth,endMonth,startDay,endDay,count = 0;
 	scanf("%d%d%d",&startYear,&startMonth,&startDay);

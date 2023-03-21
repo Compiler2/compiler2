@@ -15,7 +15,7 @@ int day_of_month(int month,int year)
  else return 31;
 }
 
-int main()
+int main_bench()
 {
  int year1,year2,month1,month2,day1,day2,i,j,sum,sumyear,summonth1,summonth2;
  scanf("%d %d %d\n%d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);

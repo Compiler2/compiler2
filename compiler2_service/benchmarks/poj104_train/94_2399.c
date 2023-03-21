@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {int n,i,j,chan,countor;
  scanf("%d",&n);
  int* num=(int*)malloc(n*sizeof(int));

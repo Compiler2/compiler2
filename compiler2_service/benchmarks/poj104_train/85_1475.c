@@ -2,7 +2,7 @@
 
 
 
-int main() {
+int main_bench() {
     int n, i, j;
     char data[100][21];
     int num[100]={0};

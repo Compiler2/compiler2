@@ -32,7 +32,7 @@ void f(char s[501],int x)
      }
 
 }
-int main()
+int main_bench()
 {
     char s[501];
     int i,j,k,t;

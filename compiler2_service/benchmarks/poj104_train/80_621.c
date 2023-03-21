@@ -28,7 +28,7 @@ int dijitian(int y,int m,int d)
 	p=p+d;
 	return p;
 }
-void main()
+int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2;
 	int a,b,c=0,result,temp,i;

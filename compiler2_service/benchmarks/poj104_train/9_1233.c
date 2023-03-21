@@ -6,7 +6,7 @@ struct patient
 	int age;
 }pa[101],que[101],tran;
 
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int i,n,j,old=0;
 	scanf("%d",&n);

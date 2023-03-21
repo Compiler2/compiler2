@@ -13,7 +13,7 @@ int func(int M,int N)
 		ans=func(M,N-1);
 	return ans;
 }
-int main()
+int main_bench()
 {
 	int m,n,t,i,k[20];
 	

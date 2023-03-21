@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,i,a[120];
 	int less=0,nd=0,rd=0,th=0;

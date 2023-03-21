@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int n,m,i,j,day,count=0,iday[100][100];
     char room[100][100];

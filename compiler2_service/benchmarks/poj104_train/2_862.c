@@ -6,7 +6,7 @@ struct book
 	char aut[26];
 };
 
-int main()
+int main_bench()
 {
 	int i,j,k,m,x,a=0;
 	int count[26]={0};

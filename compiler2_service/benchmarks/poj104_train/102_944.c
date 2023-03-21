@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int n,a=0,b=0,k,j;
 	double m[40],f[40];
 	struct ren

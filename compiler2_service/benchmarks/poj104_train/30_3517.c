@@ -10,7 +10,7 @@ int judge(int num)
 	}
 	return 1;
 }
-void main()
+int main_bench()
 {
     int i,num,sum=0;
 	scanf("%d",&num);

@@ -7,7 +7,7 @@ double sqr(double p);
 int print();
 int x[100],y[100],z[100],n;
 double a[100][100];
-int main()
+int main_bench()
 {
     read();
     calculate();

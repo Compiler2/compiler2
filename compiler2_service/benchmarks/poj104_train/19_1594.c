@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	void CONVERT(char c[100],char d[100],char B,int N,int x);
 	int m,n,l,i,j,k[100],t;

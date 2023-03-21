@@ -46,7 +46,7 @@ void c(char a[],int h,char b[],int k)
 	
 }
 
-int main()
+int main_bench()
 {
     int h,k;
 	char a[251],b[251];

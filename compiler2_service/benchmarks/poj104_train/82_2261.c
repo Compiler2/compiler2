@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main(){
+int main_bench(){
 	int n,x,y,i,hour[100];
 	int normal[100],m=0;
 	scanf("%d",&n);

@@ -32,7 +32,7 @@ int date(int x,int y,int z)
 	 }
 	 return sum;
 }
-int main()
+int main_bench()
 {
 	int a,b,c,year,day,result;
 	scanf("%d%d%d",&a,&b,&c);

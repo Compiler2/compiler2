@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	int num[52]={0};
 	char  s[50],ss[50];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	int sa[100][6],i,j,n,sb[100];
 	for(i=0;i<100;i++){
 		for(j=0;j<6;j++){

@@ -10,7 +10,7 @@ struct scholarship
 	char xibu;
 	int paper;
 }stu[100];
-void main()
+int main_bench()
 {
 int n,i,b[100]={0},c=0,d=0,all=0;
 scanf("%d",&n);

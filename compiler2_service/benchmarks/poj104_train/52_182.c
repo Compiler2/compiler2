@@ -20,7 +20,7 @@ void move(int num[30],int n,int m)
 }
 
 
-int main()
+int main_bench()
 {
 	int n,m,i;
 	int a[30];

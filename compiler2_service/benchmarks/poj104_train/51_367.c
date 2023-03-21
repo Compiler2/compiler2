@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {   int da,i,j,x,len,n,max[501];
     char s[501],a[501][6];
        scanf("%d\n",&n);

@@ -13,7 +13,7 @@ int zhishu(int n)
      m=1;
      return m;
 }
-int main()
+int main_bench()
 {
     int n,a,b;
     scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char a[50][50]={'0'},b;
 	int i,max=0,min=0;
 	for(i=0;i<50;i++){

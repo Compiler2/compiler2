@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 char BeatFCbarcelona[500]={'\0'};
 char substr[500][500]={'\0'};

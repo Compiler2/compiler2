@@ -2,7 +2,7 @@
 
 int work(char*input);
 int compare(char a);
-int main(int argc, char* argv[])
+int main_bench()
 {
 	int n=0,k=0;
 	char n1[6],input[80];

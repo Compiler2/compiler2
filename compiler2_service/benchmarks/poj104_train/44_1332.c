@@ -20,7 +20,7 @@ int reverse(int num)
 	}
 		return newnum;
 }
-int main()
+int main_bench()
 {
 
 	int n[6],newn[6];

@@ -2,7 +2,7 @@
 
 
 
-	int main(int argc, char* argv[])
+	int main_bench()
 {
 	int n,i=0,j=0,r[300],sum=0,l=0,k=0;
 	double aver,cha[300],max=0;

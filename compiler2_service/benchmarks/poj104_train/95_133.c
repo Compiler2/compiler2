@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main ()
+int main_bench()
 {
 	int d = 'a' - 'A';
 	char s[80],sl[80];

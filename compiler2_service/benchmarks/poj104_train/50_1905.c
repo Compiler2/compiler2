@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
      int month[12]={31,28,31,30,31,30,31,31,30,31,30,31} , i , j, n, sum = 0 ,b[200][4],temp=0;
      scanf( "%d",&n );

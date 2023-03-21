@@ -32,7 +32,7 @@ void cut(int m)
 		for(q=1;q<n-m-1;q++)
 			array[p][q]=array[p+1][q+1];
 }
-int main()
+int main_bench()
 {
 	int i,j;
 		scanf("%d",&n);

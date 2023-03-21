@@ -9,7 +9,7 @@ int f(int n)
 	}
 	return s;
 }
-int main ( )
+int main_bench()
 {
 	int x,y,i,j,nx,ny;
 	int x_row[10],y_row[10];

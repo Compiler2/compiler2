@@ -2,7 +2,7 @@
 
 
 char c[100010];
-int main()
+int main_bench()
 {
 	int n,i,j;
 	scanf(" %d",&n);

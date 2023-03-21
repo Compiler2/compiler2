@@ -23,7 +23,7 @@ void paixu(struct patient pat[],int n)
 	}
 }
 
-int main()
+int main_bench()
 {
 	struct patient pat;
 	struct patient oldpat[100];

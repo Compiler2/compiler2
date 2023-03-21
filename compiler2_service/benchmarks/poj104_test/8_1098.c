@@ -38,7 +38,7 @@ void lianjie(int *a,int x,int *b,int y,int *c)
                  t++;
                    }
                    }
-int main()
+int main_bench()
 {
       int s,t,i;
       scanf("%d %d",&s,&t);

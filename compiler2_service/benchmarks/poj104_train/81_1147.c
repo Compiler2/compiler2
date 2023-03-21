@@ -7,7 +7,7 @@ int exchange(int a,int b){
 		return 0;
 	}
 }
-int main(){
+int main_bench(){
 	int n,m,i,j,k,t=0,panduan;
 	int sz[5][5];
 	for(i=0;i<5;i++){

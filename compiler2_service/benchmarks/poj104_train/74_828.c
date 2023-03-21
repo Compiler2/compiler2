@@ -25,7 +25,7 @@ int circle(int s){
 		return(s1);
 	}else return -1;
 }
-int main(){
+int main_bench(){
 	int m,n,i,yn=1,k,a[1000],counter=0;
 	
 	scanf("%d %d",&m,&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int n,len,max=1,cnt,num,sofar=1;
 	char tmp,c[501],gram[5],maxc[250][5];

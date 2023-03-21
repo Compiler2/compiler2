@@ -11,7 +11,7 @@ daxie(char s[])
 	return;
 }
 
-main()
+main_bench_bench()
 {
 	char s1[90],s2[90];
 	int c;

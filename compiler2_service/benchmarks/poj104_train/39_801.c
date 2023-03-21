@@ -10,7 +10,7 @@ struct Student
 	int paper;
 	int total;
 }person[100],best={"\0",0,0,'\0','\0',0};
-int main()
+int main_bench()
 {
 	int n,i,total=0;
 	scanf("%d",&n);

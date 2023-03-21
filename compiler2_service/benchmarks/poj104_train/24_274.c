@@ -11,7 +11,7 @@ int zimu(char c)
 		return 0;
 	}
 }
-int main()
+int main_bench()
 {
 	char str[500];
 	int max1=0;

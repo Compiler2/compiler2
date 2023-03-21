@@ -2,7 +2,7 @@
 
 char a[200];
 char b[200];
-void main()
+int main_bench()
 {
      gets(a);
      char *p =a;

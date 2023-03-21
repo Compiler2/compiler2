@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {int m,n,array[5][5];
 int *p;
 for(p=array[0];p<array[0]+25;p++)

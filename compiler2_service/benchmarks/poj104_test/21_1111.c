@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	int n,i,j,t,k=0,c[300]={0},a[300];
 	long double sum=0,b[300],aver=0,max=0;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
         int n,shiyan[999],youxiao[999];
 		double xo,x;
 		scanf("%d",&n);

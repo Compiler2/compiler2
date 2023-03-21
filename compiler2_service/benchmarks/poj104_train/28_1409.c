@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main(){
+int main_bench(){
 	char zfc[6000];
 	gets(zfc);
 	int i, j, k=1,len, num[305], time=0, sum=0, sum2=0;

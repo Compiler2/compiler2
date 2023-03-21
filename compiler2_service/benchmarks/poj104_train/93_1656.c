@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	int mm[3] = {3, 5, 7};
 	int flag[3] = {0};

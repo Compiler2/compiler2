@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-int main()
+int main_bench()
 {
 	char str[300], sub[300], re[300];
 	int lenstr, lensub;

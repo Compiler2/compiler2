@@ -4,7 +4,7 @@ int cmp( const void *a , const void *b )
 {
 return (*(float *)a) > (*(float *)b) ? 1 : -1;
 }
-main()
+main_bench_bench()
 {
       int n,b=0,g=0;
       scanf("%d",&n);

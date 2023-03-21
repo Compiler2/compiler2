@@ -2,7 +2,7 @@
 
 
 
-int main(){
+int main_bench(){
 	int n=0,a[7]={0};
 	scanf("%d\n",&n);
 	a[1]=n/100;

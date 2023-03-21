@@ -1,7 +1,7 @@
 #include <header.h>
 
 void numchange(int x, int y, char c[100]);
-int main()
+int main_bench()
 {
 	int a, b;
 	char s[100]={0};

@@ -19,7 +19,7 @@ int ss(int x)
 }    if(k==1) return(1);
      else return(0);
 }
-void main()
+int main_bench()
 {   int m,n,j,i,s=0;
     scanf("%d%d",&m,&n);
     for(i=m;i<=n;i++)

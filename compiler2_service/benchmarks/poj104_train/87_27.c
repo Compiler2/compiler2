@@ -8,7 +8,7 @@ int second(int a, int b, int c, int d, int e, int f)
   return sum;
 }
 
-int main()
+int main_bench()
 {
   int a[1000][6];
   int i, j=0, m=0;

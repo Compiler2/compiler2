@@ -2,7 +2,7 @@
 
 
 
-int main()
+int main_bench()
 {
 	int i , j , k , r , ren , max;
 	int in[2000];

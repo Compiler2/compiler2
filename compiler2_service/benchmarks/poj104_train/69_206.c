@@ -24,7 +24,7 @@ void add(char a[],char b[],int x1,int x2,char c[])
 		}
 	}
 }
-void main()
+int main_bench()
 {	int i,j=0,x1,x2,m;
     char a[250],b[250],c[251]={"\0"};
 	scanf("%s%s",a,b);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {
 	unsigned int num[300]={0},i=0,j,k,n,t;
 	do 

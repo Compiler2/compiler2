@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
     int y,m,d,sum,jan=31,feb,mar=31,apr=30,may=31,jun=30,jul=31,aug=31,sep=30,oct=31,nov=30;
     scanf("%d%d%d",&y,&m,&d);

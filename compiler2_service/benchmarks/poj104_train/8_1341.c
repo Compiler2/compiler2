@@ -81,7 +81,7 @@ void ba( )
    
 }
 
-int main( )
+int main_bench( )
 {
 	oh();
     ba();

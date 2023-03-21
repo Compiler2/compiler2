@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main() 
+int main_bench() 
 {
     char Sen[200],word[200],exchange[200],temp[200];
 	gets(Sen);

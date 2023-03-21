@@ -2,7 +2,7 @@
 
 
 char a[1000000];
-int main()
+int main_bench()
 {
 	
 	int  num,i,len;	

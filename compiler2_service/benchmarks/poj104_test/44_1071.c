@@ -26,7 +26,7 @@ void reverse( int x )
 	}
 }
 
-int main()
+int main_bench()
 {
 	int i , num ;
 	for ( i = 0 ; i < 6 ; i ++)

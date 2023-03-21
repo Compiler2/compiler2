@@ -36,7 +36,7 @@ void print(int a[],int na)
 	for(i=j;i<na;i++)
 		printf("%d",a[i]);
 }
-int main()
+int main_bench()
 {
 	int a[100],b[100];
 	char c[100];

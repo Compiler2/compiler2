@@ -3,7 +3,7 @@
 char s[1000],s1[100][100];
 int flag=0;
 void f(char x,char y);
-int main()
+int main_bench()
 {
 	int i,len[100],k,j,temp;
 	char s2[100];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main()
+main_bench_bench()
 {char words[20][100],sub[100],subed[100];
  char string[500];
  int i,d1=0,d2=0,len,n=1;

@@ -8,7 +8,7 @@ int ismatrix(int m, int n)
     return 1;
 }
 
-int main()
+int main_bench()
 {
     int i, j;
     int m, n;

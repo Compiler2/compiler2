@@ -19,7 +19,7 @@ void func(char* pat)
 	}
 }
 
-int main()
+int main_bench()
 {
 	char str[51], pat[51];
 	scanf("%s%s", pat, str);

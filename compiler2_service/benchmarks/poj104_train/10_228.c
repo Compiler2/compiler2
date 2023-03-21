@@ -2,7 +2,7 @@
 
 int count[30],hgt[30],n,i,j,max,temp;
 void m(int s,int t);
-void main()
+int main_bench()
 {
 	for(i=1;i<=25;i++){
 		count[i]=0;

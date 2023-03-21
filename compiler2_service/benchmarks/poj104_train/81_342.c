@@ -16,7 +16,7 @@ int p(int x[5][5],int y,int z)
 	else u=0;
 	return u;
 }
-void main()
+int main_bench()
 {
 	int a[5][5],b,c,i,j,d,w=0;
 	for(i=0;i<5;i++)

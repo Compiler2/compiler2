@@ -11,7 +11,7 @@ int max(int b[10],int n)
 		}
 	return(max2);
 }
-int main()
+int main_bench()
 {
 	int m,n,i,j,sum=0,a[10][10],k,ap=0;
 	scanf("%d,%d",&m,&n);

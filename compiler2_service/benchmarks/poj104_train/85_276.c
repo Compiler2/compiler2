@@ -10,7 +10,7 @@ int term(char x)
 	if(x=='_'||(x>='a'&&x<='z')||(x>='A'&&x<='Z')||(x>='0'&&x<='9'))return 1;
 	else return 0;
 }
-int main()
+int main_bench()
 {
 	int n,i,j,t;
 	char ch[50];

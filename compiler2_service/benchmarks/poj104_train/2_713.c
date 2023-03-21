@@ -4,7 +4,7 @@ struct book{
        int  num;
        char writer[28];
 }bo[1000];
-int main()
+int main_bench()
 {
     int i,j,k,n,a,b;
     int max=0;

@@ -4,7 +4,7 @@ int m,n;
 int c[200]={0};
 int a[100]={0};
 int b[100]={0};
-int main()
+int main_bench()
 {	void A(int str[],int m);
 	void B(int str3[],int str2[]);
 	void D(int str[],int str2[]);

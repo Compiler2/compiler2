@@ -46,7 +46,7 @@ int deal(char a[],int n,char b[],int m)
 	else return(0);
 }
 
-void main()
+int main_bench()
 {
 	int la,lb;
 	char a[100],b[100];

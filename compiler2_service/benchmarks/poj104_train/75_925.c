@@ -2,7 +2,7 @@
 
 char s[4000],t[4000];
 int a[3000]={0},b[3000]={0},h[1008]={0};
-void main()
+int main_bench()
 {
 	int i,k,n1,n2;
 	gets(s);gets(t);

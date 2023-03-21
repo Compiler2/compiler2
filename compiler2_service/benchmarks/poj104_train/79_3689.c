@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main()
+main_bench_bench()
 {   int cn(int x,int y);
     int i,q,p, m[2000],n[2000];
     for(i=1;i<=999;i++)

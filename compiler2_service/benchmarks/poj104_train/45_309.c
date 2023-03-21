@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main()
+int main_bench()
 {	char s[50],w[50];int i,j,S,W;
 	scanf("%s %s",s,w);
 	S=strlen(s);

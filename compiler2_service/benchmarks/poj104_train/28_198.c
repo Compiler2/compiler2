@@ -7,7 +7,7 @@ int lon(char a[])
 		n++;
 	return(n);
 }
-void main()
+int main_bench()
 {
 	char a[1000]={'\0'},b[200][200]={'\0'};
    int i,j=0,k=0;

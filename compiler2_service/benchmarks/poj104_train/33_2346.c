@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	char x[1000];
 	int i,changdu,n,t=0;

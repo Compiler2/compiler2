@@ -10,7 +10,7 @@ struct node
 	char west;
 	int essay;
 }stu[100];
-void main(){
+int main_bench(){
 	int n,sum=0,max=0;
 	scanf("%d",&n);
 	int i;

@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 {
 	long mizhi(int input1,int input2);
 	long a,b,temp,temp1=0,temp2,temp3;

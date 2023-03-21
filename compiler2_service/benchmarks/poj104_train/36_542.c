@@ -20,7 +20,7 @@ int than(char a[],char b[])
 	}
 	return x;
 }
-void main()
+int main_bench()
 {
 	char a[100],b[100];
 	int x,y,k;

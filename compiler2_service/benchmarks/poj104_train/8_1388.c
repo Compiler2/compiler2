@@ -23,7 +23,7 @@ void paixu(int p,int c[])
 		c[j]=t;
 	} 
 } 
-main()
+main_bench_bench()
 {
 	scanf("%d %d",&n,&m);
 	shuru(n,m);

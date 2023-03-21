@@ -1,6 +1,6 @@
 #include <header.h>
 
-int main()
+int main_bench()
 { struct s
   {int N;
    char w[26];

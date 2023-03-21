@@ -9,7 +9,7 @@ int S(int a){
 	else return 0;
 }
 
-int main(){
+int main_bench(){
 	int n,i,j=0,k=0;
 	scanf("%d",&n);
 	int*s=(int*)malloc(sizeof(int)*n);

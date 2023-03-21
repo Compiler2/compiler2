@@ -12,7 +12,7 @@ void bubble_sort(int a[],int n){
   }
  }
 }
-int main(){
+int main_bench(){
  int Num,i,N=0,j=0;
  scanf("%d",&Num);
  int a[Num];

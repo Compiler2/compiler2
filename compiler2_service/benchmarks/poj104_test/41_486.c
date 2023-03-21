@@ -36,7 +36,7 @@ void f(int m)
         }
    }
 }
-int main()
+int main_bench()
 {
      void f(int a);
      f(0); 

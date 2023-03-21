@@ -13,7 +13,7 @@ int isLeapYear(int y)
 
 }
 
-int main()
+int main_bench()
 {
 	int year, month, day;
 	int sum_mod_day;
