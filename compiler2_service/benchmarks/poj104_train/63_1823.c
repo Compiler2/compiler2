@@ -19,7 +19,7 @@ int c(int i,int j,int q)
 	return x;
 }
 
-main_bench_bench()
+main_bench()
 {
 	int x1,x2,y1,y2,i,j;
 	scanf("%d%d",&x1,&y1);

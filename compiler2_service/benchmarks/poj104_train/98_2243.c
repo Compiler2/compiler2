@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
       char word[1000][50]={'\0'};
       int i,n,sum,len;

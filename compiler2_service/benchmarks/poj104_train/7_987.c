@@ -26,7 +26,7 @@ void change(int i,char s[800],char sub[800],char r[800])
            s[j]=r[j-i];
            }
 }
-main_bench_bench()
+main_bench()
 {
       char s[800],sub[800],r[800];
       int l,i;

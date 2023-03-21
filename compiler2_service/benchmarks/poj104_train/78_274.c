@@ -5,7 +5,7 @@ struct ren
        char name;
        int w;
 }a[4];
-main_bench_bench()
+main_bench()
 {
       a[0].name='z';
       a[1].name='q';

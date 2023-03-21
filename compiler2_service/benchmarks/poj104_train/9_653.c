@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int n,i,j,k,temp,s,max;
          int is_over_sixty_exist=1;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
     int n,c=0,d=0,e,f,g,h,i,a[40],a1[40],b[40],b1[40];
     char gender[7];

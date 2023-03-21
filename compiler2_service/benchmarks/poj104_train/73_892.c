@@ -13,7 +13,7 @@ int min(int a,int b)
   return x;    
 }  
 
-main_bench_bench()
+main_bench()
 {
 int a[5][5];
 int b[5],c[5];

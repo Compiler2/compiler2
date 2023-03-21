@@ -34,7 +34,7 @@ for(int i=0;i<nb;i++)
 printf(" %d",b[i]);
 }
 
-main_bench_bench()
+main_bench()
 {	
 input();
 order();	

@@ -21,7 +21,7 @@ if(i==n)
 return(1);
 }
 }
-main_bench_bench()
+main_bench()
 {
 int n,a,b,c,d,i;
 int count=0;

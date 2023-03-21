@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	char c[501]={'\0'},ch[501][6]={{'\0'}};
 	int a[500]={0},i,j,n,len,max;

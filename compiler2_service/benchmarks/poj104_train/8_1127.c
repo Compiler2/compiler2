@@ -40,7 +40,7 @@ void opt(int a[],int n)
     }
 }
 
-main_bench_bench()
+main_bench()
 {
     int n,m,a[100],b[100];
     scanf("%d%d",&n,&m);

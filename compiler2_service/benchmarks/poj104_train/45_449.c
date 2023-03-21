@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {char substring[50],string[50];
  int i,j,len1,len2;
  char*p1=substring;

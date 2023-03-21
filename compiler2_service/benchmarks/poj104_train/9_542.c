@@ -6,7 +6,7 @@ int max(int a[],int n)
      s=(s>=a[i])?s:a[i];
      return (s);
      }
-main_bench_bench()
+main_bench()
 {    int a[200]={0},i,n,c[200]={0},e,t=1;
      char b[200][12];          
      scanf("%d",&n);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
 	int temp, max, min, a[100] = {0}, n, i, j;
 

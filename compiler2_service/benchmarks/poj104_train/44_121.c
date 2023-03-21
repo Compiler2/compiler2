@@ -20,7 +20,7 @@ long reverse(long n)
 
 
 
-main_bench_bench()
+main_bench()
 {
  long n,b,i;     
 for(i=0;i<=5;i++)

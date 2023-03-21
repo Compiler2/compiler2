@@ -8,7 +8,7 @@ int su(int x)
 	if(j==0) return(1);
 	else return(0);
 }
-main_bench_bench()
+main_bench()
 {
 	int i,n,z=0;
 	scanf("%d",&n);

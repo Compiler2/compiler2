@@ -23,7 +23,7 @@ void mult(int a[][100],int b[][100],int m, int n,int q)
 		}	
 }
 
-main_bench_bench()
+main_bench()
 {
 	int a[100][100],b[100][100],x1,y1,x2,y2;
 	scanf("%d%d",&x1,&y1);

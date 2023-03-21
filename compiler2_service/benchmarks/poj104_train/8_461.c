@@ -59,7 +59,7 @@ void print(int a[])
 	}
 	printf("%d\n",a[m+n-1]);
 }
-main_bench_bench()
+main_bench()
 {
 	input(a,b);
 	charge(a,b);

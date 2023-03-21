@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {     char temp_0[10],id[100][10];
       int i,j,n,max,age[100],num[100],yes[100],ncount=1,temp,num_1;
       scanf("%d",&n);

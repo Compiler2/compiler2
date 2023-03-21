@@ -139,7 +139,7 @@ int lev13(int A)
  return lev;
 }
 
-main_bench_bench()
+main_bench()
 {
  char dvdd[100];
  char ans[100];

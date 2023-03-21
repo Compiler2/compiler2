@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
     int a[11][11],b[11][11];
     for(int i=0;i<11;i++)

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
       int m,n,i,j,k,a[100000]={0};
       char s[100000]={'\0'};

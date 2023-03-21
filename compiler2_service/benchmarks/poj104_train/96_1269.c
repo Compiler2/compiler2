@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
  char N[101];
  int n[100], dvd[100], left=0, len;

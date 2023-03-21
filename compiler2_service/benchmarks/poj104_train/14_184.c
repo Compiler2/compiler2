@@ -6,7 +6,7 @@ struct student
        int j; 
        int k;
        }; 
-main_bench_bench()
+main_bench()
 {
       int n;
       scanf("%d",&n);

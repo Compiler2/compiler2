@@ -2,7 +2,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
   int rights=0;
    int p[5];

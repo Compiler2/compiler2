@@ -49,7 +49,7 @@ void print(int om)
 		}
 }
 
-main_bench_bench()
+main_bench()
 {
 	scanf("%d",&num);
 	struct pa *pi;

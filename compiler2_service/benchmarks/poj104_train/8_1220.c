@@ -23,7 +23,7 @@ void shuchu()
 	printf("%d ",*(q+i));
 	printf("%d",*(q+n-1)); 
 }
-main_bench_bench()
+main_bench()
 {   
     shuru();
 	qsort(p,m,sizeof(int),cmp);

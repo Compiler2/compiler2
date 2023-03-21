@@ -8,7 +8,7 @@ int year(int y)
     else if(y%4==0&&y%100!=0) return 0;
     else return 1;
 }
-main_bench_bench()
+main_bench()
 {
       int n;
       scanf("%d",&n);

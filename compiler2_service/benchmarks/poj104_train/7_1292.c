@@ -13,7 +13,7 @@ int cmp(int i,char a[],char b[])
     else
     return 0;
 }
-main_bench_bench()
+main_bench()
 {
     int i,n,k;
     char s[256],subs[256],re[256];

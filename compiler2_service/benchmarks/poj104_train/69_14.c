@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench(){
+main_bench(){
 	char s1[250], s2[250];
 	int i, j, l1, l2, l, num[250], n[250];
 	scanf("%s", s1);

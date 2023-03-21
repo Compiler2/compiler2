@@ -25,7 +25,7 @@ void toprint()
   for(i=1;i<n;i++)
     printf(" %d",a[i]);
 }
-main_bench_bench()
+main_bench()
 {
   toscan();
   yidong(n,m,a);

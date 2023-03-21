@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {char string[1000],*p;
  int count[300],i=0,j=0;
  gets(string);

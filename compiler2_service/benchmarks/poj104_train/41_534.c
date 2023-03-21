@@ -12,7 +12,7 @@ void swap(struct chang *p1,struct chang *p2)
     *p1=*p2;
     *p2=temp;
 }
-main_bench_bench()
+main_bench()
 {
     struct chang c[6];
     int i,j,k,l,m,t;

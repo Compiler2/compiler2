@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench(){
+main_bench(){
 	char s[100000]={'\0'},c;
 	int n,a[100000]={0},i,j,k,len,num2;
 	scanf("%d\n",&n);

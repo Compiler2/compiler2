@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 int x,y;int rest;int r,s,t;
 char NUM[150];

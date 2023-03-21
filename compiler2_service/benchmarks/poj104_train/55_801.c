@@ -8,7 +8,7 @@ int cf(int a,int b)
     s=a*s;               
      return (s);
                }
-main_bench_bench()
+main_bench()
 {   int a,b,i,t,s,j,d[1000],k;              
     char c[1000],x;
     scanf("%d %s %d",&a,c,&b); 

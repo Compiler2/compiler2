@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int arv[1000],lve[1000],min=0,max=0,num,sum=0,person=0;
 	char c;

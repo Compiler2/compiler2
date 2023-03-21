@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int number[100][100],max[100]={0},n,m,flag[100]={1},i,j,temp=0;
 	scanf("%d,%d",&n,&m);

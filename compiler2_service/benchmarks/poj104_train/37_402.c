@@ -4,7 +4,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
       int s,i,j,*a;
       char q[10000][100];

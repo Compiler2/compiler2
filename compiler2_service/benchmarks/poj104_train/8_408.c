@@ -24,7 +24,7 @@ void hb(int a[],int m,int b[],int n)
 		printf("%d ",c[k]);
 	printf("%d",c[m+n-1]);
 }
-main_bench_bench()
+main_bench()
 {
 	int m,n,i,j;
 	scanf("%d %d",&m,&n);

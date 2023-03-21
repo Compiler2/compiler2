@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
   char *p,*q;  int n,i;
   p=(char*)malloc(100*sizeof(char));

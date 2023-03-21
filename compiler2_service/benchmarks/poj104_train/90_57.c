@@ -14,7 +14,7 @@ PutMethod(int apple,int plate)
  
  return k;
 }
-main_bench_bench()
+main_bench()
 {int t, apple, plate,i,k;
  scanf("%d",&t);
  for(i=0;i<t;i++)

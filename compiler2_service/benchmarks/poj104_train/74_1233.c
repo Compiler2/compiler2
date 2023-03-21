@@ -37,7 +37,7 @@ int scan(int n)
     return 0;
 }   
 
-main_bench_bench()
+main_bench()
 {
       int a,b,i,p=0,q=0,z=0;
       scanf("%d %d",&a,&b);

@@ -25,7 +25,7 @@ int find(char *a, int n)
 	}
 }
 
-main_bench_bench()
+main_bench()
 {
 	char a[501];
 	int l,i;

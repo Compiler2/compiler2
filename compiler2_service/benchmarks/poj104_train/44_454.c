@@ -50,7 +50,7 @@ int f(int a)
            return x;
     }
 }
-main_bench_bench()
+main_bench()
 {
       for(int i=6;i>=1;i--)
       {

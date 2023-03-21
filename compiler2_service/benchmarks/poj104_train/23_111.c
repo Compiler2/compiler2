@@ -32,7 +32,7 @@ void turn(char *a)
     strcat(a,"\0");
 
 }
-main_bench_bench()
+main_bench()
 {
  char a[20];
  gets(a);

@@ -4,7 +4,7 @@ int compare(const void * elem1, const void * elem2)
 {
       return (*(int *)elem1) - (*(int *) elem2);
 }
-main_bench_bench()
+main_bench()
 {
       int n,m;
       scanf("%d %d",&n,&m);

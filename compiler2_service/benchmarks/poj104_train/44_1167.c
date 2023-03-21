@@ -34,7 +34,7 @@ int reverse(int num)
     else
     return total;
 }
-main_bench_bench()
+main_bench()
 {
       for(int i=6;i>0;i--)
       {

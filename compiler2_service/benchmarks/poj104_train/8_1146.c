@@ -34,7 +34,7 @@ void print(int c[],int n1,int n2)
     printf("%d",c[n1+n2-1]);
     }
 
-main_bench_bench()
+main_bench()
 {
     int i,n1,n2,a[100],b[100],c[200];
     scanf("%d %d",&n1,&n2);

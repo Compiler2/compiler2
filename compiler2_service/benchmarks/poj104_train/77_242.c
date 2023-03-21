@@ -14,7 +14,7 @@ void change(char str[],char w,char m)
 	}
 		
 }
-main_bench_bench()
+main_bench()
 {
 	char a[1000]={'\0'},w,m;int i=0;
 	gets(a);m=a[0];

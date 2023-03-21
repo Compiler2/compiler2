@@ -31,7 +31,7 @@ char left(char c,char a)
         }
   return ch;
 }
-main_bench_bench()
+main_bench()
 { int i,n;
   char s[101],a[101];
   scanf("%d",&n);

@@ -11,7 +11,7 @@ int f(int a, int b)
         return a;
     }
 }
-main_bench_bench()
+main_bench()
 {
     int n,i,j,t,sum,x,y,r;
     scanf("%d",&n);

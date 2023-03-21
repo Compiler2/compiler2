@@ -7,7 +7,7 @@ struct student
        int Math;
        int Score;
 };
-main_bench_bench()
+main_bench()
 {
       int n,i,first=0,ifirst,second=0,isecond,third=0,ithird;
       scanf("%d",&n);

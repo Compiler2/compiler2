@@ -20,7 +20,7 @@ int f2(int x)
     if(t[j]!=t[i-j-1])return(0);
     return(1);
 }
-main_bench_bench()
+main_bench()
 {
 
  int i,j,m,n,e=0;

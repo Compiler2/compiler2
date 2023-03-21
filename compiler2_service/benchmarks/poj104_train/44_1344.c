@@ -11,7 +11,7 @@ int fxs(int x)
   }
   return y;
 }
-main_bench_bench()
+main_bench()
 { 
  for(int i=1;i<=6;i++)
  {

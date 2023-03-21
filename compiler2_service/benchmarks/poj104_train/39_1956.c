@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int n,i,j,m=0,t,s=0,a[100][5]={0},b[100],c[100];
 	struct student

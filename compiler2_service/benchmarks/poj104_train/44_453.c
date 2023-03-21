@@ -26,7 +26,7 @@ int reverse(char num[15])
     }
     printf("\n");
 }
-main_bench_bench()
+main_bench()
 {
       int j,k;
       for(k=1;k<7;k++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {char string[100],word[50][15],subword[15],subed[15];
  gets(string);
  scanf("%s%s",subed,subword);

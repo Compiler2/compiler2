@@ -10,7 +10,7 @@ int year(int y)
         r=0;
     return(r);
 }
-main_bench_bench()
+main_bench()
 {
     int n,i,j,day,t;
     int ye,m1,m2;

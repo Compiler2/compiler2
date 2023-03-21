@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int a[300]={0},b[300]={0};
 	int *p,*q;

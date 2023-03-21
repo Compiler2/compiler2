@@ -10,7 +10,7 @@ void order(int m,int n)
   printf("%d ",s[i]);
   printf("%d",s[i]);
 }
-main_bench_bench()
+main_bench()
 { int a,b;
   scanf("%d %d",&a,&b);
   order(a,b);

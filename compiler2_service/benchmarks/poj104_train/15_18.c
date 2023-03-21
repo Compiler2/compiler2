@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench(){
+main_bench(){
 	int i, j, n, aa1, bb1, aa2, bb2, a[99][99];
 	scanf("%d", &n);
 	for(i=0;i<n;i++){

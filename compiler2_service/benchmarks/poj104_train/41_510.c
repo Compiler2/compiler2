@@ -54,7 +54,7 @@ int con(int a[])
     else
     return 0;
 }
-main_bench_bench()
+main_bench()
 {
     int i,j,k,l,m,a[5]={3,2,4,1,5};
     for(i=1;i<6;i++)

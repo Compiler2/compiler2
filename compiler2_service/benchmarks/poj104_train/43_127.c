@@ -17,7 +17,7 @@ int zhishu(int a)
     return 0;
     }
 }
-main_bench_bench()
+main_bench()
 {
       int i,n;
       scanf("%d",&n);

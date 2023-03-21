@@ -19,7 +19,7 @@ int min2(int j,int k)
     }
     return temp;
 }
-main_bench_bench()
+main_bench()
 {
       int n,i,j,k,g,temp,ans;
       scanf("%d",&n);

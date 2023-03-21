@@ -2,7 +2,7 @@
 
 
 int MAX(int,int);
-main_bench_bench()
+main_bench()
 {
       char a[251],b[251],c[251];
       int t=0,len1,len2,i,j,m;

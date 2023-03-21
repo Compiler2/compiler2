@@ -5,7 +5,7 @@ int min(int a,int b)
 	if(a<b) return a;
 	else return b;
 }
-main_bench_bench()
+main_bench()
 {
 	int a[100][100];
 	int row,col,i,j,k,l;

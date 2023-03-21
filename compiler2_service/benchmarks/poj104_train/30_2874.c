@@ -11,7 +11,7 @@ int f(int n)
 	if(n%7==0) flag=1;
 	return flag;
 }
-main_bench_bench()
+main_bench()
 {
 	int i,n,sum=0;
 	scanf("%d",&n);

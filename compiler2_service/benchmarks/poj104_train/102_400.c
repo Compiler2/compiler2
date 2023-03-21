@@ -18,7 +18,7 @@ void h(double a[],int n)
    }
 
 }
-main_bench_bench()
+main_bench()
 {
        int n,j,i;
        scanf("%d",&n);

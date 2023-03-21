@@ -11,7 +11,7 @@
       else return 0;
 }
 }
-main_bench_bench()
+main_bench()
 {     int a,n;
       scanf("%d",&n);
       if (n<5)

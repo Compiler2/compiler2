@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
  int n,oversix=0,undersix=0,osix[100],usix[100],t;
  char noosix[100][100]={0},nousix[100][100]={0},a[100][100]={0};

@@ -40,7 +40,7 @@ int judge(char a[50],char b[50])
 	return 1;
 }
 
-main_bench_bench()
+main_bench()
 {
 	char inp[200],a[50],b[50];
 	int len,i,j,ma=0;

@@ -17,7 +17,7 @@ int cai(int a,int b)
     if(a==2&&b==1)
     return 0;
 }
-main_bench_bench()
+main_bench()
 {
       int n;
       scanf("%d",&n);

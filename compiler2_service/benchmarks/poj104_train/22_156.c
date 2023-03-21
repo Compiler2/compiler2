@@ -14,7 +14,7 @@ void change(int *p,int *q)
 	*p=*p-*q;
 }
 
-main_bench_bench()
+main_bench()
 {
 	char s[1000];
 	int i,j,t,a[500],count=0;

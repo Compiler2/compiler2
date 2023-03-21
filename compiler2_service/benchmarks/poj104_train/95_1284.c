@@ -8,7 +8,7 @@ void change(char p[99])
        p[i]=p[i]-'A'+'a';
     }
 }
-main_bench_bench()
+main_bench()
 {
    char p1[99],p2[99];
    gets(p1);gets(p2);

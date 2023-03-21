@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 int n,m,i,k,s[1000];
 memset(s,0,sizeof(s));

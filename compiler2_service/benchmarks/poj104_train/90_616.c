@@ -6,7 +6,7 @@ int f(int m,int n,int *k)
     if(m-n>=0){f(m-n,n,k);}
     f(m,n-1,k);
 }
-main_bench_bench()
+main_bench()
 { int g,i,j,*m,*n,*k;
   scanf("%d",&g);
   m=(int*)calloc(g,sizeof(int));

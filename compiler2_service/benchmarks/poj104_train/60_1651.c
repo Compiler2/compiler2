@@ -15,7 +15,7 @@ int prime(int n)
 		return t;
 }
 
-main_bench_bench()
+main_bench()
 {
   int k,j;
   k=2;

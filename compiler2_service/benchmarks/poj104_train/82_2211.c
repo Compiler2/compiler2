@@ -5,7 +5,7 @@ int m(int p,int q)
 z=(p>q)? p:q;
 return z;
 }
-main_bench_bench()
+main_bench()
 {   
     int i,x,j,y,n,r;
     scanf("%d",&n);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int a[5][5],n,m,l,i,j;
 	int swap(int a[][5],int,int);

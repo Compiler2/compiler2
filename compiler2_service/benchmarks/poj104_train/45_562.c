@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {char str[50],substr[50],*p;
  int i,len;
  scanf("%s%s",substr,str);

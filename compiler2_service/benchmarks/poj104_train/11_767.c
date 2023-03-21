@@ -7,7 +7,7 @@ int r(int x)
      return(1);
 }
 
-main_bench_bench()
+main_bench()
 {   int m,y,i,j,d,s,t;
     scanf("%d %d %d",&m,&y,&d);
     int a[13];

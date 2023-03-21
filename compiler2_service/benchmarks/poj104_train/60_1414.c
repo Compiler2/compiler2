@@ -2,7 +2,7 @@
 
 
 int a(int x);
-main_bench_bench()
+main_bench()
 {
 int n,m,t;
 scanf("%d",&n);

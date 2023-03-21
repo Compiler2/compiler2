@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {int i,j,k=0,m,n,a,b,c=0,w;
  scanf("%d",&w);
  int tian[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

@@ -9,7 +9,7 @@ struct stud
 	char west;
 	int ess;
 };
-main_bench_bench()
+main_bench()
 {
 	struct stud xx[100];
 	int n,i,my[100],max,sum=0,re;

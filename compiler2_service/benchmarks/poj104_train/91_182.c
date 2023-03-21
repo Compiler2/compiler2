@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 { char str[100];
   gets(str);
   char *p,*p0,*q,*q0;

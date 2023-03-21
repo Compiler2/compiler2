@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 char sen[2000],word[300][20];
 int n,j,i,t,len,max,min,p,q;

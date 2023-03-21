@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
  unsigned long a,b,c,d,x,y,z;
  scanf("%d %d %d",&a,&b,&c);if(a==1000000000) printf("Thu.");else 

@@ -27,7 +27,7 @@ output(int m,int x[])
 		flag=1;
 	}
 }
-main_bench_bench()
+main_bench()
 {
 	scanf("%d%d",&n1,&n2);
 for(k=1;k<=n1;k++)scanf("%d",&a[k]);

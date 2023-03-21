@@ -34,7 +34,7 @@ return 1;
 else
 return 0;
 }
-main_bench_bench()
+main_bench()
 {
   int a,b,c[1000],l,k=0;
   scanf("%d",&a);

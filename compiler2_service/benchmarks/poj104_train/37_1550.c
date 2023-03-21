@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
       int sn[128];
       for(int i='a';i<='z';i++) sn[i] = i;

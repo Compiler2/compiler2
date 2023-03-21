@@ -4,7 +4,7 @@ int i,j,len,n;
 char s[1000];
 int cnt[1000];
 
-main_bench_bench()
+main_bench()
 {
 	scanf("%d",&n);
 	for (i = 0; i < n ;++i)

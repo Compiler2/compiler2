@@ -10,7 +10,7 @@ int prime(int n)
     }
     return z;
 }
-main_bench_bench()
+main_bench()
 {
       int n,i;
       scanf("%d",&n);

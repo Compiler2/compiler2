@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
       int n;
       int amount_lao=0,amount_yiban=0;

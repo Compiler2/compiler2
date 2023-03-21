@@ -10,7 +10,7 @@ int max(int t1[],int t2[],int m,int n,int d)
     }
     return  y;    
 }
-main_bench_bench()
+main_bench()
 {
       int a[10000],b[10000]={0},i,j,n,t,x=0;
       scanf("%d",&n);

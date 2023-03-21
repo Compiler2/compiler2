@@ -15,7 +15,7 @@ int BT(int x,int a[40000])
     }
     return c;
 }
-main_bench_bench()
+main_bench()
 {
       int n,a[40000],i,b[40000],c;
       scanf("%d",&n);

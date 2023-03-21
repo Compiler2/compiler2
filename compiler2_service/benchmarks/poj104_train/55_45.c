@@ -4,7 +4,7 @@
 long toDex(int a,char n[]);
 int toB(long Dn,int b,char answer[]);
 
-main_bench_bench()
+main_bench()
 {
 	int a,b,len,i;
 	char n[50]={"0"},answer[50]={"0"};	

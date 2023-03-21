@@ -7,7 +7,7 @@ int panduan(char i,int k)
         else
         return 0;
 }
-main_bench_bench()
+main_bench()
 {
     int n;
     scanf("%d",&n);

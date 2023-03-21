@@ -28,7 +28,7 @@ void sum(char str1[],char str2[],int m,int n)
        printf("%c",str3[i]);
       }
 }     
-main_bench_bench()
+main_bench()
 {
      char str1[251],str2[251],str3[251],str4[251];
      int i,m=0,n=0,b;

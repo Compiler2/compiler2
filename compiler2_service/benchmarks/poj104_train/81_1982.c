@@ -21,7 +21,7 @@ else return 0;
 }
    
 
-main_bench_bench()
+main_bench()
 {
  int a[5][5],n,m,*p;
  p=*a;

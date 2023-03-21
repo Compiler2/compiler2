@@ -2,7 +2,7 @@
 
 
 
-int  main_bench_bench()
+int  main_bench()
 {
 void change (int a[100],int n,int m);
 int a[100],n,m,i;

@@ -2,7 +2,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
 int z,xa,ya,x,y,xb,yb;
 

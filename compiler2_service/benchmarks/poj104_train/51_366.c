@@ -9,7 +9,7 @@ luru(int i,char s[],char temp[],int k)
 	temp[k]=0;
 }
 
-main_bench_bench()
+main_bench()
 {
 	char s[510]={0},temp[10]={0};
 	char gram[510][10]={{0}};

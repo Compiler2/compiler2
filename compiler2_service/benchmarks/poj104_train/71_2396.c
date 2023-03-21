@@ -10,7 +10,7 @@ int run(int x)
         return 1;
     return 0;
 }
-main_bench_bench()
+main_bench()
 {
     int n,y,mon1,mon2;
     scanf("%d",&n);

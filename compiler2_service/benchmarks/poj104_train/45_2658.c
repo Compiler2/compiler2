@@ -24,7 +24,7 @@ int set(char s[50],char w[50])
     }
 }
 
-main_bench_bench()
+main_bench()
 {
       char s[50],w[50];
       int n,m,i;

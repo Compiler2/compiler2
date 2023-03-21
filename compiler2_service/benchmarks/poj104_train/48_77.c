@@ -52,7 +52,7 @@ void germ(int a[9][9],int b[9][9],int n)
 	}
 }
 
-main_bench_bench()
+main_bench()
 {
 	int n,m,a[9][9]={0},b[9][9]={0};
 	scanf("%d%d",&m,&n);

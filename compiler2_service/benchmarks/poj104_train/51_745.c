@@ -10,7 +10,7 @@ void zi(char a[])
 	for(j=0;j<n;j++)
 	b[i][j]=a[i+j];
 }
-main_bench_bench()
+main_bench()
 {
 	scanf("%d",&n);
 	scanf("%s",a);

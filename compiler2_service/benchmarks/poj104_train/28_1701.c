@@ -31,7 +31,7 @@ void check(char *ps)
 }
 				
 
-main_bench_bench()
+main_bench()
 {
 	char *p;
 	p=(char*)malloc(10000*sizeof(char));

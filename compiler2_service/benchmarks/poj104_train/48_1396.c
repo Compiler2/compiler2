@@ -1,7 +1,7 @@
 #include <header.h>
 
 int a[11][11][5];
-main_bench_bench()
+main_bench()
 {
       int x(int i,int j,int k);
       int i,j,m,n,q;

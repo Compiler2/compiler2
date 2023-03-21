@@ -45,7 +45,7 @@ int  f(int a,int b)
 }
     
 
- main_bench_bench()
+ main_bench()
 {
     int a,b;  
     int i=0,j=0,n=0;

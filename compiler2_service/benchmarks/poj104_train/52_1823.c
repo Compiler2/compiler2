@@ -8,7 +8,7 @@ void error(int *p,int *q,int m,int n)
 	for(i=0;i<n-m;i++)
 		*(q+m+i)=*(p+i);
 }
-main_bench_bench()
+main_bench()
 {
 	int a[100],b[100],*p,*q,m,n,i;
 	p=a;

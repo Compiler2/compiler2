@@ -10,7 +10,7 @@ int change(int num)
     }
     return answer;
 }
-main_bench_bench()
+main_bench()
 {
       int m,n,i,j,a=0;
       scanf("%d %d",&m,&n);

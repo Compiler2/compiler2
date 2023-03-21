@@ -59,7 +59,7 @@ int f(int year,int month,int day)
     }
     return x;
 }
-main_bench_bench()
+main_bench()
 {
       int n,i;
       scanf("%d",&n);

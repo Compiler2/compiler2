@@ -18,7 +18,7 @@ int judge(char c[21],int n)
     return 0;
 }
 
-main_bench_bench()
+main_bench()
 {
       char c[21];
       int n,m,i;

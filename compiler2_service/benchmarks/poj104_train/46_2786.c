@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {int i,j,k,m,n,p,q,s;
  scanf("%d %d",&m,&n);
  struct{int k;int p;}shu[m+2][n+2];

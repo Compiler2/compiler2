@@ -23,7 +23,7 @@ int devide(int m,int n)
 
 
 
-main_bench_bench()
+main_bench()
 {
       int N,M,n,c,t,k;
       scanf("%d",&n);

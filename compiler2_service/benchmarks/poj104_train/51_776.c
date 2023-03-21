@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
       int n,i,m,sun=0,flag=0,aa=0,mm=1;
       char a[510];

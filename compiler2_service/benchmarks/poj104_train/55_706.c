@@ -11,7 +11,7 @@ char form(int n)
 if (n>=0 && n<=9) return '0'+n;
 else return 'A'+n-10;
 }
-main_bench_bench()
+main_bench()
 {
 int a,b,n,len,bs1;
 char s[200];

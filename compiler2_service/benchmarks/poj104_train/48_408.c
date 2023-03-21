@@ -9,7 +9,7 @@ void print()
         if (j<9) printf("%d ",a[i][j]);
         else printf("%d\n",a[i][j]);
 }
-main_bench_bench()
+main_bench()
 {     int m,n,i,j,d;
       scanf("%d %d",&m,&n);
       for (i=0;i<=10;i++)

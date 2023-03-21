@@ -14,7 +14,7 @@ int fun(int a,int b)
 
 }
 
-main_bench_bench()
+main_bench()
 {
     int n,i,l,na=0,nb=0;
     int a,b;

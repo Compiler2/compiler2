@@ -2,7 +2,7 @@
 
 int a[5][5];
 
-main_bench_bench()
+main_bench()
 {
 	int i,j,m,n;
     int exch(int a[5][5],int n,int m);

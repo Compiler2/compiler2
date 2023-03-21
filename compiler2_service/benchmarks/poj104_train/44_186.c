@@ -11,7 +11,7 @@ int reverse (int x)
 	}
 	return s;
 }
-main_bench_bench()
+main_bench()
 {
 	int n=0,i,j=0;
 	char a;

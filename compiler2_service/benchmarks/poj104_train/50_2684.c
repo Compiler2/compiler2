@@ -1,7 +1,7 @@
 #include <header.h>
 
 	
-main_bench_bench()
+main_bench()
 {
 		int a[12],w,b[12]={0},i;
 		a[0]=31;

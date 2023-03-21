@@ -23,7 +23,7 @@ int min(int i,int j)
     if (s==5) return 1;
     else return 0;
 }
-main_bench_bench()
+main_bench()
 {
       for (int i=0;i<5;i++)
       for (int j=0;j<5;j++)

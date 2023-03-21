@@ -28,7 +28,7 @@ int huiwen(int n)
 	if (s==t) d=1;
 	return d;
 }
-main_bench_bench()
+main_bench()
 {
 	int m,n,i,k,s=0;
 	scanf("%d %d",&m,&n);

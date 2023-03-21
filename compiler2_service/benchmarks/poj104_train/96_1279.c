@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
       int i,j,k,l,m,n,tem;
       char num[100],res[100];for(i=0;i<100;i++)res[i]='\0';

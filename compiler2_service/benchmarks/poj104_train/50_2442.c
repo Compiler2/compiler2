@@ -2,7 +2,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
 int a,t,day,q;
 int i[12]={31,28,31,30,31,30,31,31,30,31,30,31};

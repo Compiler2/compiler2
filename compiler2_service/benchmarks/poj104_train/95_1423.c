@@ -8,7 +8,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
  char a[90],b[90];
  int i,j,k,m,n;k=0;

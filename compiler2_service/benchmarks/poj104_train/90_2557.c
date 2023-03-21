@@ -11,7 +11,7 @@ int fang(int a,int b)
     }
     return m;
 }
-main_bench_bench()
+main_bench()
 {
       int i,p,q,a,n;
       scanf("%d",&n);

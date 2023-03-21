@@ -10,7 +10,7 @@ int Max(int n,int a[])
    }
    return x;
 }
-main_bench_bench()
+main_bench()
 {
    int x,n,i,j,b=1;
    int *p;

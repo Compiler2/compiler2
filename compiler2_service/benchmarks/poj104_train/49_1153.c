@@ -2,7 +2,7 @@
 
 char l[500];
 int len,n=0,record[2000][3];
-main_bench_bench()
+main_bench()
 {
 int i,j,k;
 void doit(int a,int b);

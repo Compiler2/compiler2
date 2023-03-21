@@ -8,7 +8,7 @@ char word[maxw+1][maxL+1];
 
 char s[maxL+1],t[maxL+1];
 
-main_bench_bench(){
+main_bench(){
     long i;
     n=-1;
     do{

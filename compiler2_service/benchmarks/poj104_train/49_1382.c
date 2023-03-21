@@ -13,7 +13,7 @@ reverse(char s[],int j)
 	return(reverse);
 }
 
-main_bench_bench()
+main_bench()
 {
 	char s[505],temp[505]={0};
 	int i,j,k;

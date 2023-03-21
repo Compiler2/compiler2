@@ -9,7 +9,7 @@ long from[maxL+10],to[maxL+10];
 
 long ans[maxL+10];
 
-main_bench_bench(){
+main_bench(){
     long i,j,k,L,x;
     scanf("%ld%s%ld",&a,str,&b);
     L=strlen(str);

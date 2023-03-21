@@ -13,7 +13,7 @@ void turn(char *a,int n)
                               *(q-i)=t;
      }
 }
-main_bench_bench()
+main_bench()
 {
 int ii;
 for(ii=0;ii<=5;ii++) 

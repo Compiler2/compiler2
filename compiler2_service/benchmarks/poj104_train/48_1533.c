@@ -2,7 +2,7 @@
 
 int a[9][9];
 int b[9][9];
-main_bench_bench()
+main_bench()
 {
 	int m,n,i,j,k;
 	scanf("%d %d",&m,&n);

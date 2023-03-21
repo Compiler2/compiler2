@@ -18,7 +18,7 @@ int yuesefu(int n,int m)
 	}
 	return a[0];
 }
-main_bench_bench()
+main_bench()
 {
       int n,m,k,s=0,b[30],zhi;
       for(k=0;k<30;k++)

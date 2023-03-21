@@ -34,7 +34,7 @@ int sorthuiwen(int i)
     }
     return 1;
 }
-main_bench_bench()
+main_bench()
 {
     int m,n,j=0,a[10000],b[10000],i;
     scanf("%d",&m); 

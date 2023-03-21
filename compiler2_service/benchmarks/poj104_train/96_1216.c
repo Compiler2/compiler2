@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
     char a[100];
     int b[100],c[100],d[100],i,j,k,m;

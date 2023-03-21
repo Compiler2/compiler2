@@ -15,7 +15,7 @@ int pure(int a)
     x=0;
     return(x);
     }
-main_bench_bench()
+main_bench()
 {
     int n,i,c=0;
     scanf("%d",&n);

@@ -8,7 +8,7 @@ void change(int a[10000])
 		a[i]=(int)(a[i-1]/2);
 	}
 }
-main_bench_bench()
+main_bench()
 {
 	int i,j,x,y,a[10],b[10];
 	scanf("%d%d",&x,&y);

@@ -8,7 +8,7 @@ unsigned long pow(unsigned long a,unsigned long b)
     return sout;
 }
     
-main_bench_bench()
+main_bench()
 {
       unsigned long ip,op,i,lenth,oplenth,cache,test=9999,mod;
       unsigned long dec=0;

@@ -9,7 +9,7 @@ int pd(int a)
     else
        return 30;
 }
-main_bench_bench()
+main_bench()
 {
        int i,y,a,b,n,l,m,s,t;
        scanf("%d",&n);

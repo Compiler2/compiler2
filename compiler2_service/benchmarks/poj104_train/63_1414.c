@@ -2,7 +2,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
       int n,m,i,j,x1,y1,x2,y2;
       

@@ -7,7 +7,7 @@ int ch;
 int math;
 }stu[100000];
 
-main_bench_bench()
+main_bench()
 {
 int n;int sum[100000];int max[3];int i,j,k,m,o;int s;
 scanf("%d",&n);

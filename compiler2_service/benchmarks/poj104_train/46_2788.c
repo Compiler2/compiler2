@@ -16,7 +16,7 @@ void Matrix(int a[100][100],int srow,int scol,int erow,int ecol)
 	if(erow-srow>=2&&ecol-scol>=2)
 		Matrix(a,srow+1,scol+1,erow-1,ecol-1);
 }
-main_bench_bench()
+main_bench()
 {
 	int a[100][100],i,j,m,n;
 	scanf("%d %d",&m,&n);

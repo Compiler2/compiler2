@@ -2,7 +2,7 @@
 
 
 int oddoreven(int a);
-main_bench_bench()
+main_bench()
 {
       int a,b;
       scanf("%d",&a);

@@ -5,7 +5,7 @@ int pfc(const void *p1, const void *p2)
     return *(int *)p2-*(int *)p1;
 }
 
-main_bench_bench()
+main_bench()
 {
     int a[5][5];
     int i,j,ri,rj,k=0;

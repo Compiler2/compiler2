@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
   int m=1,n,i,j,k,r=0,T;
   while(m!=0)

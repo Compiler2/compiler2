@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
     int a1[251], b1[251], c[251];
     int i, i1, i2, j1, j2, j3, j4, j5, c1, c2, jinwei, head;

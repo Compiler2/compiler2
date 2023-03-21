@@ -4,7 +4,7 @@ int n1,n2;
 int*p1;
 int*p2;
 int*p3;
-main_bench_bench()
+main_bench()
 {
      scanf("%d %d",&n1,&n2);
      p1=(int*)malloc(n1*sizeof(int));

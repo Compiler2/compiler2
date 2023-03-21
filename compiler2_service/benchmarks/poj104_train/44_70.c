@@ -2,7 +2,7 @@
 
 int reverse(int a);
 int R(int a);
-main_bench_bench()
+main_bench()
 {
       int i,j,k;
       for(i=1;i<=6;i++)

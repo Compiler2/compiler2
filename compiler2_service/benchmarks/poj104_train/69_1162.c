@@ -2,7 +2,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {
   char  str1[251],str2[251];
   int   str3[252];

@@ -21,7 +21,7 @@ int fun(int a[500],int l)
 
 }
 
-main_bench_bench()
+main_bench()
 {
     char s[500];
     int s1[500];

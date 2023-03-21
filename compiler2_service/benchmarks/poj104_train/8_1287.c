@@ -8,7 +8,7 @@ int sort(int *s,int n)
 {
     
 }
-main_bench_bench()
+main_bench()
 {
       
       int m,n;

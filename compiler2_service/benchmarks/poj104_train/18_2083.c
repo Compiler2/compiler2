@@ -37,7 +37,7 @@ int fa(int a[][101],int n)
     }
     return t+fa(a,n-1);
 }
-main_bench_bench()
+main_bench()
 {
     int n,k,i,j,a[101][101];
     scanf("%d",&n);

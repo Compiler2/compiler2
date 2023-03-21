@@ -4,7 +4,7 @@ int i(int a,int b,int c)
 {
 	return(a*3600+b*60+c);
 }
-main_bench_bench()
+main_bench()
 {
 	int a,b,c,d,e,f;
 	int sum;

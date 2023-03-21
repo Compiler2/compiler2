@@ -11,7 +11,7 @@ if ((y%4==0&&y%100!=0)||(y%400==0))
      c=c+a[i];
      return c;
 }
-main_bench_bench()
+main_bench()
 {
 
     int i,j,n,y,m1,m2,t,s=1;

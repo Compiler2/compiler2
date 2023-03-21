@@ -10,7 +10,7 @@ struct stu
 	int amount;
 	int money;
 }stu[100];
-main_bench_bench()
+main_bench()
 {
 	int k=0,j,N,M=0;
 	scanf("%d",&N);

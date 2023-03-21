@@ -17,7 +17,7 @@ int reverse(int n)
     }
     return k;
 }
-main_bench_bench()
+main_bench()
 {
       int i,n,k;
       for(i=0;i<6;i++)

@@ -22,7 +22,7 @@ int reverse(int num)
     }
     return a;
 }
-main_bench_bench()
+main_bench()
 {
       int a[6],b[6];
       int i;

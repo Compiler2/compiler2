@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	long int p=0;
 	int m,n,e=1,i,q,N;

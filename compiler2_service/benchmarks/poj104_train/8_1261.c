@@ -41,7 +41,7 @@ void toprint()
         printf(" %d",a1[i]);
 }
 
-main_bench_bench()
+main_bench()
 {
   toscan();
   paixu();

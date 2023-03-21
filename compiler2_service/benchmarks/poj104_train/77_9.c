@@ -21,7 +21,7 @@ int kiss(char ch[], char b, char g, int l, int i){
 
 
 
-main_bench_bench(){
+main_bench(){
 	char ch[5000], b, g;
 	int i, l, girl, boy;
 	scanf("%s", ch);

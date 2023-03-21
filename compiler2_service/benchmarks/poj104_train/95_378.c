@@ -14,7 +14,7 @@ int strcmp(char *s,char *t){
 
 
 }
-main_bench_bench(){
+main_bench(){
  char str1[80],str2[80];
  gets(str1);
  gets(str2);

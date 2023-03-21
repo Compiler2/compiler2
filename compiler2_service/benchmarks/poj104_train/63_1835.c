@@ -2,7 +2,7 @@
 
 int A[1000][1000],B[1000][1000],C[1000][1000]={0};
 int hang,lie,tong,q,i,j;
-main_bench_bench()
+main_bench()
 {
     
     scanf("%d %d",&hang,&tong);

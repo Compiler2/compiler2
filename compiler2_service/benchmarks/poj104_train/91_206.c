@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
       char *give;int num;int i,j,k;int j1,k1;char *head;
       give=(char*)malloc(100*sizeof(char));

@@ -35,7 +35,7 @@ void QuickSort(int a[],int low,int high)
 	}
 }
 
-main_bench_bench()
+main_bench()
 {
 	int n,i,j,k,temp,m,l,o;
     int c[100];

@@ -14,7 +14,7 @@ void prop(int num1[11][11],int num2[11][11],int n)
      }
 } 
 
-main_bench_bench()
+main_bench()
 {
       int m,n,num1[11][11]={0},num2[11][11]={0};
       int i,j;

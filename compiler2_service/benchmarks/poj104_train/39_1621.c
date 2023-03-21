@@ -10,7 +10,7 @@ struct student
 	int e;
     int f; 
 }stu[101];
- main_bench_bench()
+ main_bench()
 {
 	int n,i,sum=0,j;
 	scanf("%d",&n);

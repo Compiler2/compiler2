@@ -14,7 +14,7 @@ int sushu(int i)
 	}
 	return(flag1);
 }
-main_bench_bench()
+main_bench()
 {
 	int m,n,i,l,p,o,a[10000],h=0,k;
 	scanf("%d %d",&m,&n);

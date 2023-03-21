@@ -8,7 +8,7 @@ char word[maxwords+10][maxLenth+10];
 
 char fw[maxLenth+10],tw[maxLenth+10];
 
-main_bench_bench(){
+main_bench(){
     long i,j,k;
     char a;    
     n=0;

@@ -10,7 +10,7 @@ void print(int n)
 		else printf("%c",str[i]);
 	}
 }
-main_bench_bench()
+main_bench()
 {
 	int i,len;
 	gets(str);

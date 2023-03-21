@@ -19,7 +19,7 @@ int f(char x,char y)
     else 
     return 0;
 }
-main_bench_bench()
+main_bench()
 {    int l;
 int e;
 int count=0;

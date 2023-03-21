@@ -7,7 +7,7 @@ int invert(int x)
         y=x%10+y*10;
     return y;
 }
-main_bench_bench()
+main_bench()
 {
     int i,a[6],b[6];
     for(i=0;i<6;i++)

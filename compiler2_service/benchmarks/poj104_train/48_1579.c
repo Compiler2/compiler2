@@ -8,7 +8,7 @@ int grow(int i,int j)
      p=a[i-1][j-1]+a[i-1][j]+a[i-1][j+1]+a[i][j-1]+2*a[i][j]+a[i][j+1]+a[i+1][j-1]+a[i+1][j]+a[i+1][j+1];  
      return p;   
 }
-main_bench_bench()
+main_bench()
 {
       int n,m,i,j,k;
       scanf("%d %d",&m,&n);

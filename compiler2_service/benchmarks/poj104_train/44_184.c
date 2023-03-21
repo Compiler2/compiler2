@@ -25,7 +25,7 @@ int reverse(int num)
     }
     return plus;
 }
-main_bench_bench()
+main_bench()
 {
       int n[10001],answer[7],i;
       for(i=1;i<=6;i++)

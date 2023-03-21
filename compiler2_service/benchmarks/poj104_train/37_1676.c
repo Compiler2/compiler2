@@ -15,7 +15,7 @@ void find(char c[])
 	printf ("no\n");
 }
 
-main_bench_bench()
+main_bench()
 {
 	int t,i;
 	char c[100000];

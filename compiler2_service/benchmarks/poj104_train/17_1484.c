@@ -20,7 +20,7 @@ l: scanf("%s",a);
     else if(a[i]==')') a[i]='?';
     }
   printf("%s\n",a);
-  return main_bench_bench();
+  return main_bench();
 
    
 }

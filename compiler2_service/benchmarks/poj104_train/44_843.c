@@ -23,7 +23,7 @@ k=0-k+num;
 }
 return k;
 }
-main_bench_bench(){
+main_bench(){
 int i,n;
 i=0;
 for(i=0;i<6;i++){

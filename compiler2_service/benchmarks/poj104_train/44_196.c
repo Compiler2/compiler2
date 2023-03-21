@@ -73,7 +73,7 @@ int fx(int a)
       b=0;
       return b;
 }
-main_bench_bench()
+main_bench()
 {
       int a,b,i;
       for(i=0;i<6;i++)

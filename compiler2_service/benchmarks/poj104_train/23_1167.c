@@ -40,7 +40,7 @@ int count(char x[])
 	}
 	return(m);
 }
-main_bench_bench()
+main_bench()
 {
 	char src[101],obj[101],trn[30];
 	int i,num,len;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 { 
   int d(int x);
   int n,i,a,b;  

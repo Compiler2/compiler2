@@ -7,7 +7,7 @@ struct student
        int chinese;
        int zongfen;
 };
-main_bench_bench()
+main_bench()
 {
       int n,i=1,j;
       int a[100001];

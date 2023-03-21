@@ -1,7 +1,7 @@
 #include <header.h>
 
 int map[100][100],sum=0,min=1000,rst[100];
-main_bench_bench()
+main_bench()
 {
     int n,i,j,k,t;
     scanf("%d",&n);

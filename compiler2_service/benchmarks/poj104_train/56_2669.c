@@ -13,7 +13,7 @@ b[k]=b[k]*10;
 c=c+b[k];}
 return (c);
  }
-main_bench_bench()
+main_bench()
 {int n,d;
 scanf("%d",&n);
 d=fun(n);

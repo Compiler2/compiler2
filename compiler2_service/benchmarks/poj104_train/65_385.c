@@ -3,7 +3,7 @@
 
 
 
-main_bench_bench()
+main_bench()
 {  int a[200],b[200];
    int s=0;
    int n;

@@ -10,7 +10,7 @@ struct student
 	int paper;
 	int all;
 }stu[100];
-main_bench_bench()
+main_bench()
 {
 	int N;
 	scanf("%d",&N);

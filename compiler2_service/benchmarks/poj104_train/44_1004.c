@@ -22,7 +22,7 @@ base*=10;
 }
 return ans;
 }
-main_bench_bench()
+main_bench()
 {
 for (int kk=1;kk<=6;kk++)
 {

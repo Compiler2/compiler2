@@ -44,7 +44,7 @@ int hui(int x)
 }
               
               
-main_bench_bench()
+main_bench()
 {
       int m,n,i,j,count=0;
       scanf("%d %d",&m,&n);

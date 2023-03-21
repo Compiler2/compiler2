@@ -29,7 +29,7 @@ void pr(char *a)
         }
     }
 }
-main_bench_bench()
+main_bench()
 {
     int t,i;
     char a[100000];

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 int row,col,n,sum,a,b,c,d,s;
 long pic[100][100];

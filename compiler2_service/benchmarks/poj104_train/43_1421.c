@@ -7,7 +7,7 @@ int sushu(int m)
   if(i<m)return 0;
   else return 1;
 }
-main_bench_bench()
+main_bench()
 {  int n,a,b,x,y;
    scanf("%d",&n);
    a=3;b=n-a;

@@ -10,7 +10,7 @@ int pd(char *p,int l1, char s1[50])
 	return(t);
 }
 
-main_bench_bench()
+main_bench()
 {
 	int l,i,j,t,l1,l2;
 	char s1[50],s2[50],*p;

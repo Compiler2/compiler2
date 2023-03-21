@@ -64,7 +64,7 @@ void output(int len, char inp[1000])
 	}
 }
 
-main_bench_bench()
+main_bench()
 {
 	int len[100],i,j;
 	char inp[100][100];

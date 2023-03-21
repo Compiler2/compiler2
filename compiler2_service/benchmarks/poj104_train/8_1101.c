@@ -37,7 +37,7 @@ int*merge(int*p,int*q,int m,int n)
        }
        return u;
 }
-main_bench_bench()
+main_bench()
 {
       int m,n;
       scanf("%d %d",&m,&n);

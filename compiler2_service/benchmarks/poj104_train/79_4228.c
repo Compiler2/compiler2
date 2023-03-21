@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench(){
+main_bench(){
 	int n, m, mon[301], i, j, p, k;
 	for(;;){
 		p=1;

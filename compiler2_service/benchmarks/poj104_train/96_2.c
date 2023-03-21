@@ -6,7 +6,7 @@ char a[maxL+1];
 
 long ans[maxL+1];
 
-main_bench_bench(){
+main_bench(){
     long i,l,rest;
     scanf("%s",a);
     l=strlen(a);

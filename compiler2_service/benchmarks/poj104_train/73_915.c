@@ -26,7 +26,7 @@ int min(int a,int b,int c,int d,int e)
     else
     return(e);
 }
-main_bench_bench()
+main_bench()
 {
      int a[5][5],i,j,t=0;
      for(i=0;i<=4;i++)

@@ -25,7 +25,7 @@ struct person
  	   char sex[10];
  	   float h;
 }mate[40];
-main_bench_bench()
+main_bench()
 {
  	  float m[40],f[40];
 	   int n,i,j,a=0,b=0;

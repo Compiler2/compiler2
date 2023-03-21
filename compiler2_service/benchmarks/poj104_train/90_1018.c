@@ -8,7 +8,7 @@ int fact(int a, int b)
     if(a==b) return fact(a,b-1)+1; 
     return fact(a,b-1)+fact(a-b,b);
 }
-main_bench_bench()
+main_bench()
 {
 int t,M,N;
 scanf("%d",&t);

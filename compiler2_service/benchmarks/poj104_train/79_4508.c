@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
  { 
    int n, m, i, s;          
    while (scanf ("%d %d",&n,&m)&&n!=0&&m!=0)

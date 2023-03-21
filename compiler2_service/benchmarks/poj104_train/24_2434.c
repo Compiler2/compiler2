@@ -5,7 +5,7 @@ void f(char c[],char a[],int a1,int a2)
 	int i;
 	for(i=a1;i<=a2;i++) c[i-a1]=a[i];
 }
-main_bench_bench()
+main_bench()
 {
 	int n=0,i,max,min,l[200],length,d[201]={0};
 	char a[10000],c[200][30]={0},maxc[30]={0},minc[30]={0};

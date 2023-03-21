@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
       int a[5][5];
       int dian1,dian2,i,j,n=0,k,l,c,d;

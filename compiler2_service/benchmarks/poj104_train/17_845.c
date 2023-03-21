@@ -27,7 +27,7 @@ void dispose(int x)
         }
     }
 }
-main_bench_bench()
+main_bench()
 {
     int N,e;scanf("%d",&N);
     for(e=0;e<N;e++)

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int c[100][100],i=0,j=0,m,n,k,s=0;
 	while(scanf("%d",&c[i][j]))

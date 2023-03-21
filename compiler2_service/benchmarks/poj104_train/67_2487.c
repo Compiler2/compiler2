@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {     int n;scanf("%d",&n);
       float* a=(float*)malloc(n*sizeof(float));
       float* b=(float*)malloc(n*sizeof(float));

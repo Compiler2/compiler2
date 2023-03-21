@@ -1,7 +1,7 @@
 #include <header.h>
 
 void diaohuan(int *a,int m,int n);
-main_bench_bench()	
+main_bench()	
 {
 	int m,n,i,a[10000];
 	scanf("%d%d",&n,&m);

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {	char words[500][40];
 	int n,i,j,numwords[500]={0},num=0;
     scanf("%d",&n);

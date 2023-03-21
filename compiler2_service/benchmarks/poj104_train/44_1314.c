@@ -25,7 +25,7 @@ int RevNum(int n)
      printf("%d\n",n);
     }        
 }
-main_bench_bench()
+main_bench()
 { int i=0;
   int k;
   while(i<6)

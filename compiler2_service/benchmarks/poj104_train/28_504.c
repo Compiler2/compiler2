@@ -50,7 +50,7 @@ void cut(char x[])
 	}
 }
 
-main_bench_bench()
+main_bench()
 {
 	char w[3000];
 	int word[300],i,j,n;

@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench(){
+main_bench(){
 	struct word{
 		char a[41];
 		int l;

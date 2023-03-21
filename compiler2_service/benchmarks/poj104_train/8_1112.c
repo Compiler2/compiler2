@@ -47,7 +47,7 @@ int output()
     free(s);
 }
 
-main_bench_bench()
+main_bench()
 {
     input();
     downsort();

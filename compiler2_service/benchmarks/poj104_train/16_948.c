@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {   int  a,b,c,d,e,f;
     scanf("%d\n",&f);
     if(f==10000)

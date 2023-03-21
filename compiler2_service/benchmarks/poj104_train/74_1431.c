@@ -43,7 +43,7 @@ int huiwenshu(int x)
        
     
 
-main_bench_bench()
+main_bench()
 {
       int m,n;
       int s=0;

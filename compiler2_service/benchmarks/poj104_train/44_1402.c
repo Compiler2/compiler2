@@ -1,6 +1,6 @@
 #include <header.h>
 
-int  main_bench_bench()
+int  main_bench()
 {
      int bianxu(int x); 
      int x,t=6,i=0;

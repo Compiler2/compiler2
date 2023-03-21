@@ -4,7 +4,7 @@ int rec[1000];
 int n;
 int i,res,max;
 char ch;
-main_bench_bench()
+main_bench()
 {
 	n=1;
 	while(1)

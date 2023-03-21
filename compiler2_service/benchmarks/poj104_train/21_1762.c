@@ -4,7 +4,7 @@ int n,i;
 long int rec[301];
 long int min,max;
 float sum;
-main_bench_bench()
+main_bench()
 {
 	scanf("%d\n",&n);
 	sum=0;

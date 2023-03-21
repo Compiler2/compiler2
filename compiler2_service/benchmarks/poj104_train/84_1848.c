@@ -16,7 +16,7 @@ void bubblesort(int A[],int n)
 	   }
 	}
 }
-int  main_bench_bench()
+int  main_bench()
 {  
 	int n,i; 
 	int A[100];

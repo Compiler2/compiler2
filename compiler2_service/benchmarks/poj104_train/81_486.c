@@ -37,7 +37,7 @@ int inv(int (*a)[5],int n,int m)
   return z;
 }
 
-main_bench_bench()
+main_bench()
 {
   int a[5][5];
   int n,m;

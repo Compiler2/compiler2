@@ -10,7 +10,7 @@ void fun()
 
 }       
 
-main_bench_bench()            
+main_bench()            
 {
    fun();   
    getchar();     

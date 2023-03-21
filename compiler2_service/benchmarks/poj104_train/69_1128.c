@@ -1,7 +1,7 @@
 #include <header.h>
 
 
-main_bench_bench()
+main_bench()
 {
       char X[260],Y[260],Z[260],P[260],K[260],O[260];
       scanf("%s %s",K,O);

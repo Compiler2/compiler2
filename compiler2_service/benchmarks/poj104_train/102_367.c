@@ -14,7 +14,7 @@ int Compare2(const void*elem1,const void*elem2)
      p2=(int*)elem2;
     return(*p2)-(*p1);
 }
-main_bench_bench()
+main_bench()
 {
 int n;
 scanf("%d",&n);

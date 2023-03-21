@@ -11,7 +11,7 @@ int ispr(int a)
               }
     return just;
 }
-main_bench_bench()
+main_bench()
 {
       int n,a;
       scanf("%d",&n);

@@ -9,7 +9,7 @@ int run(int n)
     else
         return 0;
 }
-main_bench_bench()
+main_bench()
 {
     int n;
     scanf("%d",&n);

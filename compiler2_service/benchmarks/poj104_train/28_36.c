@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
 	int l[500]={0},i,max,k,zero=1;
 	char temp;

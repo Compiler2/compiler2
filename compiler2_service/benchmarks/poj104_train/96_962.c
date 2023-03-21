@@ -1,7 +1,7 @@
 #include <header.h>
 
 
- main_bench_bench()
+ main_bench()
 {
 	int num[101]={0},digit,ans[100],left,head,tail,answer_isnt_zero=0;
 	for (int i=0;i<100;i++)

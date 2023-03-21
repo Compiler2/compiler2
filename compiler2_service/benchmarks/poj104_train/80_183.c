@@ -20,7 +20,7 @@ int days(int x,int y,int z)
     return(d);
 }
 
-main_bench_bench()
+main_bench()
 {
     int sy,sm,sd,ey,em,ed;
     int days(int x,int y,int z);

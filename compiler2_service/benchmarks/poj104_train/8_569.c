@@ -24,7 +24,7 @@ void  hebing(int d[],int e[],int x,int y)
     printf("%d ",e[i]);
     printf("%d",e[y-1]);
 }
-int   main_bench_bench()
+int   main_bench()
 {
     int i,j;
    scanf("%d %d",&n,&m);

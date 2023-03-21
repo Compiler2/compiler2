@@ -9,7 +9,7 @@ struct student
  int lunwen;
  int s;
 }stu[100];
-main_bench_bench()
+main_bench()
 {
 	int N,i,max=0,j,sum=0;
 	scanf("%d",&N);

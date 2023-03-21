@@ -15,7 +15,7 @@ int fuck(int a)
 		}
 	}
 }
-main_bench_bench()
+main_bench()
 {
 	int n;
 	int a=0;

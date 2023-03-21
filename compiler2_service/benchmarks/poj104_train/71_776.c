@@ -57,7 +57,7 @@ int nf(int m1,int m2)
     else
     return 0;
 }
-main_bench_bench()
+main_bench()
 {
       int e,n,m1,m2,t,k,i;
       scanf("%d",&e);

@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench()
+main_bench()
 {
   char x[100],y[100]={'\0'};
   int  i,a,b,c,d;

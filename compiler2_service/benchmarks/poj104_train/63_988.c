@@ -1,6 +1,6 @@
 #include <header.h>
 
-main_bench_bench(){
+main_bench(){
        int x1,x2,y1,y2,i,j,l;
        scanf("%d %d",&x1,&y1);
        int a[101][101],b[101][101];

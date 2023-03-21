@@ -2,7 +2,7 @@
 
 int q[100],w[100],m,n,i,j,k,v,y=0;
 void a(),b(),c(),d();
-main_bench_bench()
+main_bench()
 {
 	a();
 	b();

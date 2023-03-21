@@ -23,7 +23,7 @@ for(k=1;k<=i;k++)
 w=w+c[k];
 return(w);
 }
-main_bench_bench()
+main_bench()
 {
 int a[6],i,d;
 for(i=0;i<=5;i++)

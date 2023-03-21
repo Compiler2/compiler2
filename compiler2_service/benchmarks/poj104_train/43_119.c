@@ -13,7 +13,7 @@ int prime(int n)
     }
     return isprime;    
 }
-main_bench_bench()
+main_bench()
 {
     int n,i,a,b;
     scanf("%d",&n);

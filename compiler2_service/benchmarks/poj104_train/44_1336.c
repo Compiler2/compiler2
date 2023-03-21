@@ -31,7 +31,7 @@ int reverse(int n)
     return -b;
 }
     
-main_bench_bench()
+main_bench()
 {   int i;
     for (i=0;i<6;i++)
     {

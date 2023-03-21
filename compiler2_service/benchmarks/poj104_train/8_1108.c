@@ -4,7 +4,7 @@ int m,n,a;
 int str1[10000],str2[10000];
 void dosomething(int str[10000],int q);
 
-main_bench_bench()
+main_bench()
 {
     scanf("%d%d",&n,&m);
     for(int i=0;i<n;i++)
