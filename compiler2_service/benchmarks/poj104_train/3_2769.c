@@ -1,3 +1,5 @@
+#define NUM_ITER 60570
+
 #include <header.h>
 
 int a[70000]={0};

@@ -1,3 +1,5 @@
+#define NUM_ITER 61
+
 #include <header.h>
 
 int a[100][100],b[100][100],c[100][100];

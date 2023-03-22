@@ -1,3 +1,5 @@
+#define NUM_ITER 677071
+
 #include <header.h>
 
 int arr(char a[100],char b[100])

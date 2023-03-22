@@ -1,3 +1,5 @@
+#define NUM_ITER 22026
+
 #include <header.h>
 
 int a[1001],b[1001],n=1,m=1;

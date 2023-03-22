@@ -1,3 +1,5 @@
+#define NUM_ITER 94806
+
 #include <header.h>
 
 int trans(char x)

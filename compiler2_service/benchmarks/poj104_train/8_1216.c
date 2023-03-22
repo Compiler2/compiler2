@@ -1,3 +1,5 @@
+#define NUM_ITER 10090
+
 #include <header.h>
 
 int compare(const void * elem1, const void * elem2)

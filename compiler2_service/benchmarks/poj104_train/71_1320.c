@@ -1,3 +1,5 @@
+#define NUM_ITER 6406
+
 #include <header.h>
 
 int rn(int year){

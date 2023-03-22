@@ -1,3 +1,5 @@
+#define NUM_ITER 226819
+
 #include <header.h>
 
 int b[5]={0,1,2,3,4};

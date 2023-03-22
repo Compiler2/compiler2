@@ -1,3 +1,5 @@
+#define NUM_ITER 11458
+
 #include <header.h>
 
 int len(char s[100])

@@ -1,3 +1,5 @@
+#define NUM_ITER 943084
+
 #include <header.h>
 
 int change(char s[81], char t[81]);

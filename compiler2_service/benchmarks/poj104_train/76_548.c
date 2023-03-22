@@ -1,3 +1,5 @@
+#define NUM_ITER 12451
+
 #include <header.h>
 
 int i,j,k,m,n,l,r;

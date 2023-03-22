@@ -1,3 +1,5 @@
+#define NUM_ITER 912675
+
 #include <header.h>
 
 int i , j , n , len , sum[ 600 ] , big ;

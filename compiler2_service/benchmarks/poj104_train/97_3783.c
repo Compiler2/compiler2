@@ -1,3 +1,5 @@
+#define NUM_ITER 906905
+
 #include <header.h>
 
 int sort(int a,int b);

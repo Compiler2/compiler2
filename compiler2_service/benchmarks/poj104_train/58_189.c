@@ -1,3 +1,5 @@
+#define NUM_ITER 26115
+
 #include <header.h>
 
 int check(char a)

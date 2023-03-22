@@ -1,3 +1,5 @@
+#define NUM_ITER 617956
+
 #include <header.h>
 
 int birev(char * s, int * sr)

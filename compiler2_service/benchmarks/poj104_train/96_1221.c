@@ -1,3 +1,5 @@
+#define NUM_ITER 81753
+
 #include <header.h>
 
 int posi(char*data,int k,int pos)

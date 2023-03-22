@@ -1,3 +1,5 @@
+#define NUM_ITER 24568
+
 #include <header.h>
 
 void f(char s[260],int n)

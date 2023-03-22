@@ -1,3 +1,5 @@
+#define NUM_ITER 8294
+
 #include <header.h>
 
 void back(char a[])

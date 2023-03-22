@@ -1,3 +1,5 @@
+#define NUM_ITER 1452984
+
 #include <header.h>
 
 int nax(int x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 217537
+
 #include <header.h>
 
 int down(int m,int n);

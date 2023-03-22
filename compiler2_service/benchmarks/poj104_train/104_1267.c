@@ -1,3 +1,5 @@
+#define NUM_ITER 815224
+
 #include <header.h>
 
 int A[10]={0},B[10]={0};

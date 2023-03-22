@@ -1,3 +1,5 @@
+#define NUM_ITER 6373
+
 #include <header.h>
 
 int days[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

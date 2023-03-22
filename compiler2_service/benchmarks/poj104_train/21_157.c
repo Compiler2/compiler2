@@ -1,3 +1,5 @@
+#define NUM_ITER 42684
+
 #include <header.h>
 
 float jue(float t)

@@ -1,3 +1,5 @@
+#define NUM_ITER 106012
+
 #include <header.h>
 
 int p[11000], i, j, m;

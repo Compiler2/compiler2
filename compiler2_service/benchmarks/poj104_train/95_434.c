@@ -1,3 +1,5 @@
+#define NUM_ITER 1101072
+
 #include <header.h>
 
 int cmp(char *p1,char *p2)

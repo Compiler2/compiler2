@@ -1,3 +1,5 @@
+#define NUM_ITER 2419
+
 #include <header.h>
 
 int input(int *s,int n)

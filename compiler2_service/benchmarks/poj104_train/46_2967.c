@@ -1,3 +1,5 @@
+#define NUM_ITER 505
+
 #include <header.h>
 
 const int x[5]={0,0,1,0,-1};

@@ -1,3 +1,5 @@
+#define NUM_ITER 976566
+
 #include <header.h>
 
 int hui(int i)

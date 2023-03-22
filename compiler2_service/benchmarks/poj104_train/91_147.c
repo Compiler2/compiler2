@@ -1,3 +1,5 @@
+#define NUM_ITER 1220761
+
 #include <header.h>
 
 void x(char*p1,char*p2,int n);

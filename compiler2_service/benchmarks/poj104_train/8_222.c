@@ -1,3 +1,5 @@
+#define NUM_ITER 2291
+
 #include <header.h>
 
 int pai1 (int x[1000] ,int y);

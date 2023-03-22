@@ -1,3 +1,5 @@
+#define NUM_ITER 8262
+
 #include <header.h>
 
 int move(int a[100],int n,int m)

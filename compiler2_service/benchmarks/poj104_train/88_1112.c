@@ -1,3 +1,5 @@
+#define NUM_ITER 1325506
+
 #include <header.h>
 
 int sz(char a)

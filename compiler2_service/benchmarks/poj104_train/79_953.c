@@ -1,3 +1,5 @@
+#define NUM_ITER 1554
+
 #include <header.h>
 
 int yuesefu(int n,int m)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1163446
+
 #include <header.h>
 
 char word[200];

@@ -1,3 +1,5 @@
+#define NUM_ITER 27428
+
 #include <header.h>
 
 int ju(int x)

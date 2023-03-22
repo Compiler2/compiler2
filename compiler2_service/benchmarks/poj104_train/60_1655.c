@@ -1,3 +1,5 @@
+#define NUM_ITER 15448
+
 #include <header.h>
 
 int checkprime(int af)

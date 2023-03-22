@@ -1,3 +1,5 @@
+#define NUM_ITER 871297
+
 #include <header.h>
 
 void move(char a[])

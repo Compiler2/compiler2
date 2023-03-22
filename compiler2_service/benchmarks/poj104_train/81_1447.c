@@ -1,3 +1,5 @@
+#define NUM_ITER 231580
+
 #include <header.h>
 
 int reverse(int sz[][5],int m,int n);

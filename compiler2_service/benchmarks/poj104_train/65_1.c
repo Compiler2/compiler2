@@ -1,3 +1,5 @@
+#define NUM_ITER 33816
+
 #include <header.h>
 
 int awin=0,bwin=0;

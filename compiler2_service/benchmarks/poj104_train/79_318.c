@@ -1,3 +1,5 @@
+#define NUM_ITER 256
+
 #include <header.h>
 
 int calculate(int n,int m)

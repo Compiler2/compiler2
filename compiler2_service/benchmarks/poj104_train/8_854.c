@@ -1,3 +1,5 @@
+#define NUM_ITER 2496
+
 #include <header.h>
 
 void bubble(int a[],int l)

@@ -1,3 +1,5 @@
+#define NUM_ITER 27747
+
 #include <header.h>
 
 struct p

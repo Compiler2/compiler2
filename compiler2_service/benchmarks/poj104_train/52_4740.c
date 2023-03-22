@@ -1,3 +1,5 @@
+#define NUM_ITER 6471
+
 #include <header.h>
 
 int move(int *p,int x)

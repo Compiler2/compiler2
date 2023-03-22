@@ -1,3 +1,5 @@
+#define NUM_ITER 479806
+
 #include <header.h>
 
 int cf(int a,int b)

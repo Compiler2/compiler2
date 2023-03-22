@@ -1,3 +1,5 @@
+#define NUM_ITER 601527
+
 #include <header.h>
 
 void min(char a[],char b[])

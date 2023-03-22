@@ -1,3 +1,5 @@
+#define NUM_ITER 196351
+
 #include <header.h>
 
 int f(char str1[100],char str2[100])

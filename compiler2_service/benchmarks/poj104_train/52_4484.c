@@ -1,3 +1,5 @@
+#define NUM_ITER 40398
+
 #include <header.h>
 
 void move(int *a,int n,int m);

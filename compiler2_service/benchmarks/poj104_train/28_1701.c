@@ -1,3 +1,5 @@
+#define NUM_ITER 85993
+
 #include <header.h>
 
 int ss=0;

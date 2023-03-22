@@ -1,3 +1,5 @@
+#define NUM_ITER 195017
+
 #include <header.h>
 
 int FLAG=0,TAG=1;

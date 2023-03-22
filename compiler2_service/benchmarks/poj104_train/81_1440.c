@@ -1,3 +1,5 @@
+#define NUM_ITER 228899
+
 #include <header.h>
 
 void swap(int *a,int *b);

@@ -1,3 +1,5 @@
+#define NUM_ITER 894836
+
 #include <header.h>
 
 int yue(int a);

@@ -1,3 +1,5 @@
+#define NUM_ITER 669859
+
 #include <header.h>
 
 double b[10];

@@ -1,3 +1,5 @@
+#define NUM_ITER 652116
+
 #include <header.h>
 
 void paixu(char a[])

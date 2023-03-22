@@ -1,3 +1,5 @@
+#define NUM_ITER 178
+
 #include <header.h>
 
 int a[100000][2],b[100000]={0};

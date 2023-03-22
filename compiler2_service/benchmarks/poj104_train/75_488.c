@@ -1,3 +1,5 @@
+#define NUM_ITER 75318
+
 #include <header.h>
 
 int n,x[10100],y[10100];

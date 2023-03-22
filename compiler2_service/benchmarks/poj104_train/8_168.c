@@ -1,3 +1,5 @@
+#define NUM_ITER 2226
+
 #include <header.h>
 
 int num_a,num_b,a[2000]={0},b[1000]={0},i,j;

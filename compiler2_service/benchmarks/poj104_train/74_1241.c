@@ -1,3 +1,5 @@
+#define NUM_ITER 1263828
+
 #include <header.h>
 
 int ok(int a)

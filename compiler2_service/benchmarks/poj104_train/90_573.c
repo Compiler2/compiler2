@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int func(int M,int N)

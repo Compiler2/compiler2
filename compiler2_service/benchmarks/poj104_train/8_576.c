@@ -1,3 +1,5 @@
+#define NUM_ITER 1280
+
 #include <header.h>
 
 int k,n1,n2,a[100],b[100],flag=0;

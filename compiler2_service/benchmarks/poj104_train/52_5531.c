@@ -1,3 +1,5 @@
+#define NUM_ITER 49634
+
 #include <header.h>
 
 void lunhuan(int b[],int c,int d)

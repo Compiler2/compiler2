@@ -1,3 +1,5 @@
+#define NUM_ITER 10595
+
 #include <header.h>
 
  int *p,*q,m,n;

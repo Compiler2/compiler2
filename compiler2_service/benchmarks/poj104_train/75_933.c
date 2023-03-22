@@ -1,3 +1,5 @@
+#define NUM_ITER 142
+
 #include <header.h>
 
 int max_people(int x[],int y[],int num)

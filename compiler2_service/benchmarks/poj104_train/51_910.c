@@ -1,3 +1,5 @@
+#define NUM_ITER 931014
+
 #include <header.h>
 
 int strcmp(char *a, char *b, int n) {

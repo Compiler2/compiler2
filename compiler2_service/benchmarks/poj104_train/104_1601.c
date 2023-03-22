@@ -1,3 +1,5 @@
+#define NUM_ITER 250300
+
 #include <header.h>
 
 int x1,y1;

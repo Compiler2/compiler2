@@ -1,3 +1,5 @@
+#define NUM_ITER 14990
+
 #include <header.h>
 
 struct patient{

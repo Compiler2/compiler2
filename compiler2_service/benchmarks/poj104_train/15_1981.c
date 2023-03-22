@@ -1,3 +1,5 @@
+#define NUM_ITER 607
+
 #include <header.h>
 
 int e[1000][1000];

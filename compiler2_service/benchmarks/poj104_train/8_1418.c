@@ -1,3 +1,5 @@
+#define NUM_ITER 2404
+
 #include <header.h>
 
 void read(int n1,int n2,int s1[],int s2[]);

@@ -1,3 +1,5 @@
+#define NUM_ITER 79169
+
 #include <header.h>
 
 int isRN(int year)

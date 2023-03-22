@@ -1,3 +1,5 @@
+#define NUM_ITER 1284857
+
 #include <header.h>
 
 int series(int a[])

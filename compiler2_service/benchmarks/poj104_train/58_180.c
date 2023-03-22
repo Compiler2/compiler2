@@ -1,3 +1,5 @@
+#define NUM_ITER 28068
+
 #include <header.h>
 
 int judge(char a[81])

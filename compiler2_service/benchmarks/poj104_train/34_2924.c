@@ -1,3 +1,5 @@
+#define NUM_ITER 283881
+
 #include <header.h>
 
 int shu(int a);

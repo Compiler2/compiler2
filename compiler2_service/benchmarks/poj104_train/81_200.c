@@ -1,3 +1,5 @@
+#define NUM_ITER 235257
+
 #include <header.h>
 
 int hs(int sz[5][5],int m,int n){

@@ -1,3 +1,5 @@
+#define NUM_ITER 2354
+
 #include <header.h>
 
 int temp;

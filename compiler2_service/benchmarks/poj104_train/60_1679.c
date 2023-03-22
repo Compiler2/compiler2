@@ -1,3 +1,5 @@
+#define NUM_ITER 4631
+
 #include <header.h>
 
 int pdss(int number);

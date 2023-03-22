@@ -1,3 +1,5 @@
+#define NUM_ITER 1310984
+
 #include <header.h>
 
 struct children{

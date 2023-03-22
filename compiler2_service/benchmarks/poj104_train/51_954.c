@@ -1,3 +1,5 @@
+#define NUM_ITER 102995
+
 #include <header.h>
 
 char dp[10000];

@@ -1,3 +1,5 @@
+#define NUM_ITER 267504
+
 #include <header.h>
 
 void solve(int n)

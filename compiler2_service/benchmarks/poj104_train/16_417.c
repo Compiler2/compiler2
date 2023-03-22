@@ -1,3 +1,5 @@
+#define NUM_ITER 1183900
+
 #include <header.h>
 
 long num;

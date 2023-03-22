@@ -1,3 +1,5 @@
+#define NUM_ITER 63
+
 #include <header.h>
 
 char zf[1001][1001];

@@ -1,3 +1,5 @@
+#define NUM_ITER 17073
+
 #include <header.h>
 
 int sum(int m);

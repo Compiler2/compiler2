@@ -1,3 +1,5 @@
+#define NUM_ITER 232475
+
 #include <header.h>
 
 int matrix(int b,int c){

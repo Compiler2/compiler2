@@ -1,3 +1,5 @@
+#define NUM_ITER 7339
+
 #include <header.h>
 
 int shirunnian(int a)

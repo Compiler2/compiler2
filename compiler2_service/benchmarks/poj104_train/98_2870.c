@@ -1,3 +1,5 @@
+#define NUM_ITER 30877
+
 #include <header.h>
 
 char s[1000],a[100],b[100],word[1000][40],nstr[100][100],result[100];

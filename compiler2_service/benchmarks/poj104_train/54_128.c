@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 long int power(int a,int b)

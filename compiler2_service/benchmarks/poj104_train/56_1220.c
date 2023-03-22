@@ -1,3 +1,5 @@
+#define NUM_ITER 151100
+
 #include <header.h>
 
 void echo()

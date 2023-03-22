@@ -1,3 +1,5 @@
+#define NUM_ITER 18683
+
 #include <header.h>
 
 int issushu(int x);

@@ -1,3 +1,5 @@
+#define NUM_ITER 1113470
+
 #include <header.h>
 
 int min(int b[],int n){

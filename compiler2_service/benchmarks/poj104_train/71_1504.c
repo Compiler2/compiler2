@@ -1,3 +1,5 @@
+#define NUM_ITER 3163
+
 #include <header.h>
 
 int s(int year,int month,int date){

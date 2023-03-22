@@ -1,3 +1,5 @@
+#define NUM_ITER 6782
+
 #include <header.h>
 
 struct patience

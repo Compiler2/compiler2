@@ -1,3 +1,5 @@
+#define NUM_ITER 46902
+
 #include <header.h>
 
 int prime[1000001];

@@ -1,3 +1,5 @@
+#define NUM_ITER 673925
+
 #include <header.h>
 
 int judge(char*a,char*b);

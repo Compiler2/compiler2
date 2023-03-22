@@ -1,3 +1,5 @@
+#define NUM_ITER 257017
+
 #include <header.h>
 
 int pand(int y,int z);

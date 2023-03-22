@@ -1,3 +1,5 @@
+#define NUM_ITER 42914
+
 #include <header.h>
 
 void make(int *p1,int n,int m)

@@ -1,3 +1,5 @@
+#define NUM_ITER 903834
+
 #include <header.h>
 
 int sum(int line2[],int a,int b)

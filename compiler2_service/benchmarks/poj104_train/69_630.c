@@ -1,3 +1,5 @@
+#define NUM_ITER 624379
+
 #include <header.h>
 
 int c[300],d[300];

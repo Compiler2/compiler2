@@ -1,3 +1,5 @@
+#define NUM_ITER 38816
+
 #include <header.h>
 
 float juedui(float x)

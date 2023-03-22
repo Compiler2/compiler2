@@ -1,3 +1,5 @@
+#define NUM_ITER 1486061
+
 #include <header.h>
 
 int checkNum(char c)

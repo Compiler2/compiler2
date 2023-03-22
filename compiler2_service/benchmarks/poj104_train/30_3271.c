@@ -1,3 +1,5 @@
+#define NUM_ITER 80717
+
 #include <header.h>
 
 int yuqiwuguan(int);

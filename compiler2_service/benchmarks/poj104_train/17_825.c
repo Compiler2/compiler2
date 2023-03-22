@@ -1,3 +1,5 @@
+#define NUM_ITER 1669692
+
 #include <header.h>
 
 char investigate(char a[])

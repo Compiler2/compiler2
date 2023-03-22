@@ -1,3 +1,5 @@
+#define NUM_ITER 19812
+
 #include <header.h>
 
 int pd(char c[],int i);

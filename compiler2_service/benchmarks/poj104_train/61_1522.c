@@ -1,3 +1,5 @@
+#define NUM_ITER 5801
+
 #include <header.h>
 
 int pb(int n);

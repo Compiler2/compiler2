@@ -1,3 +1,5 @@
+#define NUM_ITER 309871
+
 #include <header.h>
 
 int print1(int q)

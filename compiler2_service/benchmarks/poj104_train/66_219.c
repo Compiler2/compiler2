@@ -1,3 +1,5 @@
+#define NUM_ITER 1033642
+
 #include <header.h>
 
 int runnian(long year)

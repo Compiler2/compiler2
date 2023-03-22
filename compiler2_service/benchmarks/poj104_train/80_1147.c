@@ -1,3 +1,5 @@
+#define NUM_ITER 765085
+
 #include <header.h>
 
 int r[13],p[13];

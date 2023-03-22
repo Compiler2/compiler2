@@ -1,3 +1,5 @@
+#define NUM_ITER 25504
+
 #include <header.h>
 
 void match(char a);

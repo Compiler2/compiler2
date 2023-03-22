@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int n,a[100],b=0,max=0;

@@ -1,3 +1,5 @@
+#define NUM_ITER 17977
+
 #include <header.h>
 
 int deal(char a[],int ans[])

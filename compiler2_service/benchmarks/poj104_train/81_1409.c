@@ -1,3 +1,5 @@
+#define NUM_ITER 225607
+
 #include <header.h>
 
 int array[5][5];

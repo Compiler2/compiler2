@@ -1,3 +1,5 @@
+#define NUM_ITER 248434
+
 #include <header.h>
 
 int isrn(int n)

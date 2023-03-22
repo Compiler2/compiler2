@@ -1,3 +1,5 @@
+#define NUM_ITER 231879
+
 #include <header.h>
 
 int replace(int b[5][5],int n1,int m1)

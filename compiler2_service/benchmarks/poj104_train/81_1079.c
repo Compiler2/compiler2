@@ -1,3 +1,5 @@
+#define NUM_ITER 221598
+
 #include <header.h>
 
 int process(int a[][5],int m,int n)

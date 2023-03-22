@@ -1,3 +1,5 @@
+#define NUM_ITER 824756
+
 #include <header.h>
 
 void sxpl(char x[]);

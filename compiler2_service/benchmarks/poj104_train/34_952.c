@@ -1,3 +1,5 @@
+#define NUM_ITER 252695
+
 #include <header.h>
 
 int hanshu(int number)

@@ -1,3 +1,5 @@
+#define NUM_ITER 2202
+
 #include <header.h>
 
 void sheng(int *a,int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 160351
+
 #include <header.h>
 
 void oushu(int a)

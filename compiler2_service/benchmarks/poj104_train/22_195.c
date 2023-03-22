@@ -1,3 +1,5 @@
+#define NUM_ITER 173324
+
 #include <header.h>
 
 int rec[1000];

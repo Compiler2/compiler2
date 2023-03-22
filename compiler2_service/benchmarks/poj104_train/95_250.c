@@ -1,3 +1,5 @@
+#define NUM_ITER 824451
+
 #include <header.h>
 
 char z(char a)

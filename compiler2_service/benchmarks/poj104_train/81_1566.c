@@ -1,3 +1,5 @@
+#define NUM_ITER 214499
+
 #include <header.h>
 
 int g(int c[5][5],int v,int u)

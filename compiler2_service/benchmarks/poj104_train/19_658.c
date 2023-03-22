@@ -1,3 +1,5 @@
+#define NUM_ITER 940130
+
 #include <header.h>
 
 char former[150];

@@ -1,3 +1,5 @@
+#define NUM_ITER 5061
+
 #include <header.h>
 
 struct qujian

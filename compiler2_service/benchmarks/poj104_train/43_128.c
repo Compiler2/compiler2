@@ -1,3 +1,5 @@
+#define NUM_ITER 8925
+
 #include <header.h>
 
 int ss(int a);

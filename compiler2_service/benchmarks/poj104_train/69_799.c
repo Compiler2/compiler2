@@ -1,3 +1,5 @@
+#define NUM_ITER 744982
+
 #include <header.h>
 
 int c[202],aa[200],bb[200];

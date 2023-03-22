@@ -1,3 +1,5 @@
+#define NUM_ITER 2445
+
 #include <header.h>
 
 int scan()

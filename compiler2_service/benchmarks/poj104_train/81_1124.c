@@ -1,3 +1,5 @@
+#define NUM_ITER 233315
+
 #include <header.h>
 
 int stu(int (*p)[5],int m,int n)

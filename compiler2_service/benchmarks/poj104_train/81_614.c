@@ -1,3 +1,5 @@
+#define NUM_ITER 214107
+
 #include <header.h>
 
 int has(int n,int m){

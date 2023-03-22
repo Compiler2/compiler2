@@ -1,3 +1,5 @@
+#define NUM_ITER 40459
+
 #include <header.h>
 
 int s[1000]={0};

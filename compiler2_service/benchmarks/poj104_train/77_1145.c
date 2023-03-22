@@ -1,3 +1,5 @@
+#define NUM_ITER 998431
+
 #include <header.h>
 
 int find(char a,int b,int c);

@@ -1,3 +1,5 @@
+#define NUM_ITER 6763
+
 #include <header.h>
 
 int m=0;

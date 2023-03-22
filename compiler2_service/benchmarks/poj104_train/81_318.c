@@ -1,3 +1,5 @@
+#define NUM_ITER 226768
+
 #include <header.h>
 
 void ox( int a[5][5], int m, int n)

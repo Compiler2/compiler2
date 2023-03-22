@@ -1,3 +1,5 @@
+#define NUM_ITER 928562
+
 #include <header.h>
 
 int sz[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

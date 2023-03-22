@@ -1,3 +1,5 @@
+#define NUM_ITER 221044
+
 #include <header.h>
 
 void prt(int *a)

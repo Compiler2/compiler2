@@ -1,3 +1,5 @@
+#define NUM_ITER 5612
+
 #include <header.h>
 
 int s[100]={0},t[100]={0},n,i,j,m=0;

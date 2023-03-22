@@ -1,3 +1,5 @@
+#define NUM_ITER 2306
+
 #include <header.h>
 
 int arr(int a[],int x,int b[],int y)

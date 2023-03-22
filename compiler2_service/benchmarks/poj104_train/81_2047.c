@@ -1,3 +1,5 @@
+#define NUM_ITER 204050
+
 #include <header.h>
 
 int(*p)[5],m,n,i,j,temp,c; 

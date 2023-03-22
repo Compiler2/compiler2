@@ -1,3 +1,5 @@
+#define NUM_ITER 1058420
+
 #include <header.h>
 
 int leapyearmonth[12] = {31,29,31,30,31,30,31,31,30,31,30,31};

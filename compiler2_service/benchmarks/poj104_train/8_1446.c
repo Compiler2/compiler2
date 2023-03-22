@@ -1,3 +1,5 @@
+#define NUM_ITER 2116
+
 #include <header.h>
 
 void pai(int n,int a[])

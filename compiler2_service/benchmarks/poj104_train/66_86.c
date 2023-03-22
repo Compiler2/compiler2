@@ -1,3 +1,5 @@
+#define NUM_ITER 301946
+
 #include <header.h>
 
 int lp(int x,int y)

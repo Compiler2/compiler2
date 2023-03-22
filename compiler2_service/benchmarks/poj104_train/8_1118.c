@@ -1,3 +1,5 @@
+#define NUM_ITER 4021
+
 #include <header.h>
 
 int read(int a[200],int b[100])

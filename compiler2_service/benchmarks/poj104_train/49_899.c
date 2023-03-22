@@ -1,3 +1,5 @@
+#define NUM_ITER 1030886
+
 #include <header.h>
 
 char substr(char s[],int start,int end)

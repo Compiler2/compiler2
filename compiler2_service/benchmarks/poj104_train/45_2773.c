@@ -1,3 +1,5 @@
+#define NUM_ITER 1075130
+
 #include <header.h>
 
 int locate(char [],char []);

@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int jisuan(int n,int k,int b,long int a,int *p)

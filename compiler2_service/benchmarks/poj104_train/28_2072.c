@@ -1,3 +1,5 @@
+#define NUM_ITER 1314290
+
 #include <header.h>
 
 char s[3001];

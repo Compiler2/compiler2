@@ -1,3 +1,5 @@
+#define NUM_ITER 8179
+
 #include <header.h>
 
 int jss(int x);

@@ -1,3 +1,5 @@
+#define NUM_ITER 112404
+
 #include <header.h>
 
 void pro(char *s)

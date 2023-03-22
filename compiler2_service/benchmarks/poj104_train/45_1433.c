@@ -1,3 +1,5 @@
+#define NUM_ITER 995193
+
 #include <header.h>
 
 int pd(char *p,int l1, char s1[50])

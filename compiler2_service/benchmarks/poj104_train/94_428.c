@@ -1,3 +1,5 @@
+#define NUM_ITER 16499
+
 #include <header.h>
 
 int main_bench(){int sz[4000],az[4000];

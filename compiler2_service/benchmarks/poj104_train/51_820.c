@@ -1,3 +1,5 @@
+#define NUM_ITER 89039
+
 #include <header.h>
 
 struct zimu

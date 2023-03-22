@@ -1,3 +1,5 @@
+#define NUM_ITER 220073
+
 #include <header.h>
 
 int cube(int a[5][5],int n,int m)

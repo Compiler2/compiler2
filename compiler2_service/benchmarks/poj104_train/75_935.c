@@ -1,3 +1,5 @@
+#define NUM_ITER 11842
+
 #include <header.h>
 
 int convert(int a,int b,char str[])

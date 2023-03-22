@@ -1,3 +1,5 @@
+#define NUM_ITER 227738
+
 #include <header.h>
 
 int jh(int a,int b){

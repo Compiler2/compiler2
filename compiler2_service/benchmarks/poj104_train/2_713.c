@@ -1,3 +1,5 @@
+#define NUM_ITER 840
+
 #include <header.h>
 
 struct book{

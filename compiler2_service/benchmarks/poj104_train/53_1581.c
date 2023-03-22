@@ -1,3 +1,5 @@
+#define NUM_ITER 6091
+
 #include <header.h>
 
 void pd(int a[],int k)

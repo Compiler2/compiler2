@@ -1,3 +1,5 @@
+#define NUM_ITER 1387
+
 #include <header.h>
 
 char s[100];

@@ -1,3 +1,5 @@
+#define NUM_ITER 55810
+
 #include <header.h>
 
 void Exchange(int A[],int n);

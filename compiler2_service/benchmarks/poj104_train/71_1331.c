@@ -1,3 +1,5 @@
+#define NUM_ITER 3652
+
 #include <header.h>
 
 int lon(int y,int m1,int m2)

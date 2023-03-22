@@ -1,3 +1,5 @@
+#define NUM_ITER 8904
+
 #include <header.h>
 
 struct In {char name[21];int g1;int g2;char y1;char y2;int g3;int g;} ;

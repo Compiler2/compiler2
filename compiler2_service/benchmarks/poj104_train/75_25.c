@@ -1,3 +1,5 @@
+#define NUM_ITER 632884
+
 #include <header.h>
 
 int count(int x[], int y[], int total)

@@ -1,3 +1,5 @@
+#define NUM_ITER 31050
+
 #include <header.h>
 
 int a[210],b[210],n;

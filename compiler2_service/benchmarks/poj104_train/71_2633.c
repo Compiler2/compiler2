@@ -1,3 +1,5 @@
+#define NUM_ITER 5820
+
 #include <header.h>
 
 int run(int n)

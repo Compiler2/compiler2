@@ -1,3 +1,5 @@
+#define NUM_ITER 231588
+
 #include <header.h>
 
 int matf(int (*mat)[5],int n,int m)

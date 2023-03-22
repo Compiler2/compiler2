@@ -1,3 +1,5 @@
+#define NUM_ITER 9908
+
 #include <header.h>
 
 int f(int *p,int *t,int);

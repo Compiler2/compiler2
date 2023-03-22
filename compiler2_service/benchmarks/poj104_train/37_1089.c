@@ -1,3 +1,5 @@
+#define NUM_ITER 1628
+
 #include <header.h>
 
 char rec[200];

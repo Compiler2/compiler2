@@ -1,3 +1,5 @@
+#define NUM_ITER 4139
+
 #include <header.h>
 
 char br[1000][8],jl[1000][8];

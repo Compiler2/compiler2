@@ -1,3 +1,5 @@
+#define NUM_ITER 417927
+
 #include <header.h>
 
 int fx(int n)

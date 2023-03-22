@@ -1,3 +1,5 @@
+#define NUM_ITER 160725
+
 #include <header.h>
 
 int Inyear(int month,int day,int year,int i,int output)

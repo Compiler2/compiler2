@@ -1,3 +1,5 @@
+#define NUM_ITER 2885
+
 #include <header.h>
 
 int m,n,a[10],b[10],c[20];

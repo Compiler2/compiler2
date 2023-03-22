@@ -1,3 +1,5 @@
+#define NUM_ITER 26580
+
 #include <header.h>
 
 float GPA(int a)

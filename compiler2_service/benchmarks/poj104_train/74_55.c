@@ -1,3 +1,5 @@
+#define NUM_ITER 937015
+
 #include <header.h>
 
 void judge_huiwen(int n,int t[])

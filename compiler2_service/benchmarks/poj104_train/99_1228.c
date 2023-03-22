@@ -1,3 +1,5 @@
+#define NUM_ITER 57861
+
 #include <header.h>
 
 int t[4];

@@ -1,3 +1,5 @@
+#define NUM_ITER 213690
+
 #include <header.h>
 
 int kuso(int n,int m)

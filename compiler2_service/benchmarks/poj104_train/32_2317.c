@@ -1,3 +1,5 @@
+#define NUM_ITER 2436
+
 #include <header.h>
 
 void change(char ch[],int a[])

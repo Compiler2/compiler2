@@ -1,3 +1,5 @@
+#define NUM_ITER 131001
+
 #include <header.h>
 
 int comp(char s1[],char s2[],int j,int i)

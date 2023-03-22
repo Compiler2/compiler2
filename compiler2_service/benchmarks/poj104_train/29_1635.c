@@ -1,3 +1,5 @@
+#define NUM_ITER 2274
+
 #include <header.h>
 
 double FindFBN( int nplus2,  int* FBNplus2)

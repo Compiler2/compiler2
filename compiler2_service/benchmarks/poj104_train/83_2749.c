@@ -1,3 +1,5 @@
+#define NUM_ITER 25523
+
 #include <header.h>
 
 float jd(int x){

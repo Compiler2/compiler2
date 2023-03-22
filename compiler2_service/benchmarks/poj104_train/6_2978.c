@@ -1,3 +1,5 @@
+#define NUM_ITER 28
+
 #include <header.h>
 
 char name[100];

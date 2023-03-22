@@ -1,3 +1,5 @@
+#define NUM_ITER 2028
+
 #include <header.h>
 
 int isRunNian(int year){

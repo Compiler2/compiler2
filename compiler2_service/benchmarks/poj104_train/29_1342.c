@@ -1,3 +1,5 @@
+#define NUM_ITER 4471
+
 #include <header.h>
 
 double add(int n);

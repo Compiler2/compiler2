@@ -1,3 +1,5 @@
+#define NUM_ITER 719
+
 #include <header.h>
 
 int a[11][11][5];

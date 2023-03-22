@@ -1,3 +1,5 @@
+#define NUM_ITER 1092919
+
 #include <header.h>
 
 int fun(int a[500],int l)

@@ -1,3 +1,5 @@
+#define NUM_ITER 15670
+
 #include <header.h>
 
 int dp[100][11];

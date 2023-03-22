@@ -1,3 +1,5 @@
+#define NUM_ITER 1188642
+
 #include <header.h>
 
 int same(char*p,char*q){

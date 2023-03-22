@@ -1,3 +1,5 @@
+#define NUM_ITER 504007
+
 #include <header.h>
 
 int dis(int x)

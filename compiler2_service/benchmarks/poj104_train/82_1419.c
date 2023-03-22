@@ -1,3 +1,5 @@
+#define NUM_ITER 335
+
 #include <header.h>
 
 int x[100],y[100];

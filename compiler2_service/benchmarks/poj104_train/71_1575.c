@@ -1,3 +1,5 @@
+#define NUM_ITER 3155
+
 #include <header.h>
 
 int ch(int y,int m)

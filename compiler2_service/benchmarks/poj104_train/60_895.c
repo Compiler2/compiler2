@@ -1,3 +1,5 @@
+#define NUM_ITER 15554
+
 #include <header.h>
 
 int ssd(int i);

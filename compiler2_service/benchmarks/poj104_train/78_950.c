@@ -1,3 +1,5 @@
+#define NUM_ITER 46055
+
 #include <header.h>
 
 struct weight

@@ -1,3 +1,5 @@
+#define NUM_ITER 32035
+
 #include <header.h>
 
 struct word

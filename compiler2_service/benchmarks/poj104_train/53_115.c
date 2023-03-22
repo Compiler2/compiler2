@@ -1,3 +1,5 @@
+#define NUM_ITER 15734
+
 #include <header.h>
 
 int test(int *,int *,int);

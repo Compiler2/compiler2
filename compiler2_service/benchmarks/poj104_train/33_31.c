@@ -1,3 +1,5 @@
+#define NUM_ITER 22499
+
 #include <header.h>
 
 struct DNA{

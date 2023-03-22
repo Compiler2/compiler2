@@ -1,3 +1,5 @@
+#define NUM_ITER 23926
+
 #include <header.h>
 
 char com(char ch);

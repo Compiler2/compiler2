@@ -1,3 +1,5 @@
+#define NUM_ITER 8672
+
 #include <header.h>
 
 void swi(int l,char s[200]){

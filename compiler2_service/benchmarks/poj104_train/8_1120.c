@@ -1,3 +1,5 @@
+#define NUM_ITER 10986
+
 #include <header.h>
 
 int na,nb;

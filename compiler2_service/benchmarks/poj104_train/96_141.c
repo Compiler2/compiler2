@@ -1,3 +1,5 @@
+#define NUM_ITER 810502
+
 #include <header.h>
 
 char chufa1(char a,char b);

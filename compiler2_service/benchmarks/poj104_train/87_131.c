@@ -1,3 +1,5 @@
+#define NUM_ITER 103824
+
 #include <header.h>
 
 int miao(int x,int y,int z);

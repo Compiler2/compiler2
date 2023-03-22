@@ -1,3 +1,5 @@
+#define NUM_ITER 91257
+
 #include <header.h>
 
 void com(char a[][5],int n,int k);

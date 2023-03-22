@@ -1,3 +1,5 @@
+#define NUM_ITER 26703
+
 #include <header.h>
 
 int cai(int a,int b)

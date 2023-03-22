@@ -1,3 +1,5 @@
+#define NUM_ITER 22207
+
 #include <header.h>
 
 int search(int a[],int b,int c);

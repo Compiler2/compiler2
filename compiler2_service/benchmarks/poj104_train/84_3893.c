@@ -1,3 +1,5 @@
+#define NUM_ITER 5361
+
 #include <header.h>
 
 int n[100];

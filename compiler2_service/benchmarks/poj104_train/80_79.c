@@ -1,3 +1,5 @@
+#define NUM_ITER 53519
+
 #include <header.h>
 
 long sum(int y,int m,int d)

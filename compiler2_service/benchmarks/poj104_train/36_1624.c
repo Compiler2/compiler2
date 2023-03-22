@@ -1,3 +1,5 @@
+#define NUM_ITER 134670
+
 #include <header.h>
 
 void count(int a[53], char str[], int len)

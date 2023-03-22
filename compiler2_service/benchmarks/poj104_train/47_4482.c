@@ -1,3 +1,5 @@
+#define NUM_ITER 55190
+
 #include <header.h>
 
 change(int *p,int *q,int n)

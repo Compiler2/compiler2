@@ -1,3 +1,5 @@
+#define NUM_ITER 37381
+
 #include <header.h>
 
 const int N = 1000;

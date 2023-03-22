@@ -1,3 +1,5 @@
+#define NUM_ITER 11025
+
 #include <header.h>
 
 int second(int a, int b, int c, int d, int e, int f)

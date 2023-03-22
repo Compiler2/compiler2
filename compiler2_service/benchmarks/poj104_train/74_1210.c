@@ -1,3 +1,5 @@
+#define NUM_ITER 1369924
+
 #include <header.h>
 
 int prime(int x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 704354
+
 #include <header.h>
 
 void col(char a[],char b[][5],int m,int n)

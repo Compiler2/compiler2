@@ -1,3 +1,5 @@
+#define NUM_ITER 704
+
 #include <header.h>
 
 int a[200][200],f[200][200],n,m,i,j,flag,si,sj;

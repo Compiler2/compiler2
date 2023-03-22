@@ -27,5 +27,5 @@ if __name__ == '__main__':
                 if not file_content.startswith(str(args.line)):
                     open(file_path, "w").write(str(args.line) + "\n\n" + file_content)
             except:
-                breakpoint()
+                # breakpoint()
                 pass

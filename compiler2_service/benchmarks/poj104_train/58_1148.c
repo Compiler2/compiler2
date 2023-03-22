@@ -1,3 +1,5 @@
+#define NUM_ITER 21616
+
 #include <header.h>
 
 int zimuxiahuaxian(char x)

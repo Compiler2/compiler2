@@ -1,3 +1,5 @@
+#define NUM_ITER 50748
+
 #include <header.h>
 
 void sx(int b[],int n);

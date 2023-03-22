@@ -1,3 +1,5 @@
+#define NUM_ITER 1052490
+
 #include <header.h>
 
 void huiwen(char string[500],int full,int length)

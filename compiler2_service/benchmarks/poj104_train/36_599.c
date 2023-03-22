@@ -1,3 +1,5 @@
+#define NUM_ITER 810254
+
 #include <header.h>
 
 void ex(char a[], char b[]);

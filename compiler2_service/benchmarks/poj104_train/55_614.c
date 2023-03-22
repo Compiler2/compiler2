@@ -1,3 +1,5 @@
+#define NUM_ITER 450352
+
 #include <header.h>
 
 long change1(char a[],int n1)

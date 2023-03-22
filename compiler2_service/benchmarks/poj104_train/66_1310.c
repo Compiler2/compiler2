@@ -1,3 +1,5 @@
+#define NUM_ITER 1282823
+
 #include <header.h>
 
 void CWD(int y, int m, int d)

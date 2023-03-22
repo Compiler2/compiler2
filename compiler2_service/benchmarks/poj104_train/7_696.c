@@ -1,3 +1,5 @@
+#define NUM_ITER 640690
+
 #include <header.h>
 
 char s[100],a[100],b[100],c[100],d[100];

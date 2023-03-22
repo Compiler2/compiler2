@@ -1,3 +1,5 @@
+#define NUM_ITER 46482
+
 #include <header.h>
 
 void inv(int[],int,int);

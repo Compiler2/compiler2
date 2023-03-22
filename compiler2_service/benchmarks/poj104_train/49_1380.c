@@ -1,3 +1,5 @@
+#define NUM_ITER 614211
+
 #include <header.h>
 
 int judge(char a[],int i,int k)

@@ -1,3 +1,5 @@
+#define NUM_ITER 3205
+
 #include <header.h>
 
 void scan_(int m,int*a,int n,int*b);

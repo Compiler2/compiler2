@@ -1,3 +1,5 @@
+#define NUM_ITER 1126693
+
 #include <header.h>
 
 int f(char t[]);

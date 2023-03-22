@@ -1,3 +1,5 @@
+#define NUM_ITER 48434
+
 #include <header.h>
 
 long date(int a,int b,int c)

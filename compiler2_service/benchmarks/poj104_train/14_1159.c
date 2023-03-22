@@ -1,3 +1,5 @@
+#define NUM_ITER 22349
+
 #include <header.h>
 
 int stu [100000];

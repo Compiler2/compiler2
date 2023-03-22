@@ -1,3 +1,5 @@
+#define NUM_ITER 34247
+
 #include <header.h>
 
 int why(char *s)

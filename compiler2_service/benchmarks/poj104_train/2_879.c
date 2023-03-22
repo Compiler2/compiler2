@@ -1,3 +1,5 @@
+#define NUM_ITER 8117
+
 #include <header.h>
 
 struct SHU

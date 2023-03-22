@@ -1,3 +1,5 @@
+#define NUM_ITER 33997
+
 #include <header.h>
 
 int convert(char s[],int result[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 2299
+
 #include <header.h>
 
 int c[200];

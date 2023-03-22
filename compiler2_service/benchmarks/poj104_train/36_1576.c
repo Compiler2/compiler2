@@ -1,3 +1,5 @@
+#define NUM_ITER 236109
+
 #include <header.h>
 
 int sta(char a[3000],int i)

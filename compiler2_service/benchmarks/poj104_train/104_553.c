@@ -1,3 +1,5 @@
+#define NUM_ITER 579060
+
 #include <header.h>
 
 int erchashu(int x,int y)

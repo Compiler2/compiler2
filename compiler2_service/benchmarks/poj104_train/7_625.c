@@ -1,3 +1,5 @@
+#define NUM_ITER 17390
+
 #include <header.h>
 
 char a[2000];

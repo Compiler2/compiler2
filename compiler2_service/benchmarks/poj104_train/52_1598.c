@@ -1,3 +1,5 @@
+#define NUM_ITER 6941
+
 #include <header.h>
 
 void yid(int *p,int x,int y)

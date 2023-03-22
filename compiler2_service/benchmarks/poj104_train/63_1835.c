@@ -1,3 +1,5 @@
+#define NUM_ITER 50
+
 #include <header.h>
 
 int A[1000][1000],B[1000][1000],C[1000][1000]={0};

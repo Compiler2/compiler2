@@ -1,3 +1,5 @@
+#define NUM_ITER 223756
+
 #include <header.h>
 
 int exchange(int sz[5][5],int a, int b)

@@ -1,3 +1,5 @@
+#define NUM_ITER 360763
+
 #include <header.h>
 
 int qiufan(int a);

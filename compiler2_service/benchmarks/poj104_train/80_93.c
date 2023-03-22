@@ -1,3 +1,5 @@
+#define NUM_ITER 693644
+
 #include <header.h>
 
 int star[3],end[3],sum=0;

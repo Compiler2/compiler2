@@ -1,3 +1,5 @@
+#define NUM_ITER 1529
+
 #include <header.h>
 
 static int n1,n2,a[100]={0},b[100]={0},d[200]={0};

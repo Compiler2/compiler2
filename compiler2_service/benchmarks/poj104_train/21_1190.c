@@ -1,3 +1,5 @@
+#define NUM_ITER 39737
+
 #include <header.h>
 
 int a(int k)

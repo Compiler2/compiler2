@@ -1,3 +1,5 @@
+#define NUM_ITER 228693
+
 #include <header.h>
 
 int jis(int x, int y, int a[5][5]);

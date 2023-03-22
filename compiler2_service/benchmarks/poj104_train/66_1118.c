@@ -1,3 +1,5 @@
+#define NUM_ITER 64535
+
 #include <header.h>
 
 int isRunNian(int x);

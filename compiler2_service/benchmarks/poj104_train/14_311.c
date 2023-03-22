@@ -1,3 +1,5 @@
+#define NUM_ITER 13148
+
 #include <header.h>
 
 int cmp(const void *a,const void *b)

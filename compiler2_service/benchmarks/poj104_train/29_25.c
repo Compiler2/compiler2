@@ -1,3 +1,5 @@
+#define NUM_ITER 121
+
 #include <header.h>
 
 int fbnq(int);

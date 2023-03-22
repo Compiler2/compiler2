@@ -1,3 +1,5 @@
+#define NUM_ITER 1124929
+
 #include <header.h>
 
 int jodge(char s[501],int x,int y)

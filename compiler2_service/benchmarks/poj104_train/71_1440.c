@@ -1,3 +1,5 @@
+#define NUM_ITER 1850
+
 #include <header.h>
 
 int djt(int year,int month)

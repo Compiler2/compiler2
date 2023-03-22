@@ -1,3 +1,5 @@
+#define NUM_ITER 19598
+
 #include <header.h>
 
 int P[250]={0};

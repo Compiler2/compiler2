@@ -138,7 +138,7 @@ int puts(const char *str){
 int main_bench();
 
 int main(int argc, char *argv[]){
-#if 1
+#if 0
     long mtime, s, us;
     struct timeval Start, End; 
 

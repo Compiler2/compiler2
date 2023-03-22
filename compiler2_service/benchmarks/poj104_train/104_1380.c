@@ -1,3 +1,5 @@
+#define NUM_ITER 553081
+
 #include <header.h>
 
 int point(int num)

@@ -1,3 +1,5 @@
+#define NUM_ITER 218286
+
 #include <header.h>
 
 int max_value(int a[],int n)

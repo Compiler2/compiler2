@@ -1,3 +1,5 @@
+#define NUM_ITER 2601
+
 #include <header.h>
 
 int n,m,a[1000],b[1000],c[2000];

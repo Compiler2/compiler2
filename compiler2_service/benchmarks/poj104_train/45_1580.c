@@ -1,3 +1,5 @@
+#define NUM_ITER 1050876
+
 #include <header.h>
 
 char p[1000][21];

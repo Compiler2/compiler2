@@ -1,3 +1,5 @@
+#define NUM_ITER 208156
+
 #include <header.h>
 
 int jiaogu(int q){

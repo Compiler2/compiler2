@@ -1,3 +1,5 @@
+#define NUM_ITER 234719
+
 #include <header.h>
 
 void q(int a[5][5],int m,int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 232328
+
 #include <header.h>
 
 int change(int*p3,int*p4,int n,int m)

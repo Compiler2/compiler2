@@ -1,3 +1,5 @@
+#define NUM_ITER 1093389
+
 #include <header.h>
 
 int count(char b[][6],char c[],int d[],int num)

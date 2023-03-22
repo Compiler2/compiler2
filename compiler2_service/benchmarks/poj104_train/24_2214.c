@@ -1,3 +1,5 @@
+#define NUM_ITER 524171
+
 #include <header.h>
 
 char s[5000],word[200][20];

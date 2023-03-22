@@ -1,3 +1,5 @@
+#define NUM_ITER 276794
+
 #include <header.h>
 
 int diji( int month, int day){

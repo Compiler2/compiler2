@@ -1,3 +1,5 @@
+#define NUM_ITER 137
+
 #include <header.h>
 
 int k(int n)

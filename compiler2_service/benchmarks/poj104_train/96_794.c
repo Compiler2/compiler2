@@ -1,3 +1,5 @@
+#define NUM_ITER 1002462
+
 #include <header.h>
 
 void qu(char *);

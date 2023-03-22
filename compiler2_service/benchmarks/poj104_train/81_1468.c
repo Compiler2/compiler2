@@ -1,3 +1,5 @@
+#define NUM_ITER 233542
+
 #include <header.h>
 
 int exchange(int matrix[][5],int n,int m);

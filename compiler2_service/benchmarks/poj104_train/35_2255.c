@@ -1,3 +1,5 @@
+#define NUM_ITER 13435
+
 #include <header.h>
 
 int a[9][9],row,line;

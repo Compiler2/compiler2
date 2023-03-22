@@ -1,3 +1,5 @@
+#define NUM_ITER 58936
+
 #include <header.h>
 
 int a[1005],b[1005];

@@ -1,3 +1,5 @@
+#define NUM_ITER 39102
+
 #include <header.h>
 
 int a[301];

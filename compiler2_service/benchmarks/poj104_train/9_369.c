@@ -1,3 +1,5 @@
+#define NUM_ITER 5173
+
 #include <header.h>
 
 struct person

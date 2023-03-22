@@ -1,3 +1,5 @@
+#define NUM_ITER 25002
+
 #include <header.h>
 
 double judge(int a)

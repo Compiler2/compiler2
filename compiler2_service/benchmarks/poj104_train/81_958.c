@@ -1,3 +1,5 @@
+#define NUM_ITER 215059
+
 #include <header.h>
 
 int hu(int a[][5], int m, int n);

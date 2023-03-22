@@ -1,3 +1,5 @@
+#define NUM_ITER 136951
+
 #include <header.h>
 
 int digit(int n)

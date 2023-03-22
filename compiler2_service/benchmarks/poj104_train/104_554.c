@@ -1,3 +1,5 @@
+#define NUM_ITER 757998
+
 #include <header.h>
 
 void change(int a[10000])

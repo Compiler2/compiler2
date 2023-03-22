@@ -1,3 +1,5 @@
+#define NUM_ITER 313070
+
 #include <header.h>
 
 int isjishu(int x);

@@ -1,3 +1,5 @@
+#define NUM_ITER 1285090
+
 #include <header.h>
 
 int record(char str[][6],char curstr[], int count[],int num)

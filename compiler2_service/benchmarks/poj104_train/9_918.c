@@ -1,3 +1,5 @@
+#define NUM_ITER 1488743
+
 #include <header.h>
 
 struct sick

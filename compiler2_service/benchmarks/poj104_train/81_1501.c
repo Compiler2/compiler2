@@ -1,3 +1,5 @@
+#define NUM_ITER 216473
+
 #include <header.h>
 
 int q(int a,int b);

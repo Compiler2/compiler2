@@ -1,3 +1,5 @@
+#define NUM_ITER 22005
+
 #include <header.h>
 
 int prime(int a)

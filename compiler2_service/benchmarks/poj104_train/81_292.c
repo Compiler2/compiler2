@@ -1,3 +1,5 @@
+#define NUM_ITER 232032
+
 #include <header.h>
 
 changeline(int a[5][5],int m,int n)

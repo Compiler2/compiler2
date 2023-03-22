@@ -1,3 +1,5 @@
+#define NUM_ITER 534343
+
 #include <header.h>
 
 long int num(long int x,int i,int b)

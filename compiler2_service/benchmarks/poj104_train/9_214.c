@@ -1,3 +1,5 @@
+#define NUM_ITER 8821
+
 #include <header.h>
 
 struct data{

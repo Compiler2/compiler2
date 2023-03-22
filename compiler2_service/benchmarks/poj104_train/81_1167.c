@@ -1,3 +1,5 @@
+#define NUM_ITER 228575
+
 #include <header.h>
 
 int isin(int n,int m);

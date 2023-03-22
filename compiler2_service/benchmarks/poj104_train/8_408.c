@@ -1,3 +1,5 @@
+#define NUM_ITER 2234
+
 #include <header.h>
 
 void px(int a[],int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 4256
+
 #include <header.h>
 
 int a[100],b[50];

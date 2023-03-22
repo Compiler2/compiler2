@@ -1,3 +1,5 @@
+#define NUM_ITER 663242
+
 #include <header.h>
 
 int toup (int m)

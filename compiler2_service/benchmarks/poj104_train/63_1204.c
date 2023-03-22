@@ -1,3 +1,5 @@
+#define NUM_ITER 49
+
 #include <header.h>
 
 int c[1000][1000]={0};

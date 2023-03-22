@@ -1,3 +1,5 @@
+#define NUM_ITER 707314
+
 #include <header.h>
 
 int hh(char stu1,char stu2)

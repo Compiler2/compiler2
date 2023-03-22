@@ -1,3 +1,5 @@
+#define NUM_ITER 1078754
+
 #include <header.h>
 
 int year[100];

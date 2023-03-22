@@ -1,3 +1,5 @@
+#define NUM_ITER 37161
+
 #include <header.h>
 
 int zhengchang(int i,int j){

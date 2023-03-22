@@ -1,3 +1,5 @@
+#define NUM_ITER 56927
+
 #include <header.h>
 
 void bian(int n);

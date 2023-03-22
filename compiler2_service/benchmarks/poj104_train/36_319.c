@@ -1,3 +1,5 @@
+#define NUM_ITER 954546
+
 #include <header.h>
 
 void rank(char *i);

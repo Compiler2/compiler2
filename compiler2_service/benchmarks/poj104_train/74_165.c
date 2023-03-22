@@ -1,3 +1,5 @@
+#define NUM_ITER 178278
+
 #include <header.h>
 
 int cont(int s)

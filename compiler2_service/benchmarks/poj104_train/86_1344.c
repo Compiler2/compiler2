@@ -1,3 +1,5 @@
+#define NUM_ITER 1449
+
 #include <header.h>
 
 void fy()

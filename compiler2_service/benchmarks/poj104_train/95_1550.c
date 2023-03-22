@@ -1,3 +1,5 @@
+#define NUM_ITER 951441
+
 #include <header.h>
 
 void down(char *a)

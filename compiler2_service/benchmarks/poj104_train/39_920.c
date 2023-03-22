@@ -1,3 +1,5 @@
+#define NUM_ITER 9239
+
 #include <header.h>
 
 int yuanshi(int a,int b)

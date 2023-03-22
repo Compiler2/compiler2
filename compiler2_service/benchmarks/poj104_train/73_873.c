@@ -1,3 +1,5 @@
+#define NUM_ITER 79052
+
 #include <header.h>
 
 int pfc(const void *p1, const void *p2)

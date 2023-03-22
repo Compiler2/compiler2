@@ -1,3 +1,5 @@
+#define NUM_ITER 1212605
+
 #include <header.h>
 
 void process(char *pt,int number)

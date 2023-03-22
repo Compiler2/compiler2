@@ -1,3 +1,5 @@
+#define NUM_ITER 56776
+
 #include <header.h>
 
 int god(int y,int m,int d);

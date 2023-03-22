@@ -1,3 +1,5 @@
+#define NUM_ITER 645770
+
 #include <header.h>
 
 void pai(char a[]);

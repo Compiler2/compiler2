@@ -1,3 +1,5 @@
+#define NUM_ITER 8117
+
 #include <header.h>
 
 int a[100]={0},n,m;

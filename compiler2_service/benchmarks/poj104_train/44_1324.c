@@ -1,3 +1,5 @@
+#define NUM_ITER 384243
+
 #include <header.h>
 
 int op(int x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 25927
+
 #include <header.h>
 
 void delend(char str[])

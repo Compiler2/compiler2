@@ -1,3 +1,5 @@
+#define NUM_ITER 5596
+
 #include <header.h>
 
 int a[10000],b[10000],t[10000];

@@ -1,3 +1,5 @@
+#define NUM_ITER 206815
+
 #include <header.h>
 
 int jiaohuan (int m,int n) 

@@ -1,3 +1,5 @@
+#define NUM_ITER 658030
+
 #include <header.h>
 
 int bi(char a[],char b[])

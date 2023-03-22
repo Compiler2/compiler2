@@ -1,3 +1,5 @@
+#define NUM_ITER 1043719
+
 #include <header.h>
 
 void fanzhuan(char * a, int begin, int end);

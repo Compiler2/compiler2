@@ -1,3 +1,5 @@
+#define NUM_ITER 1987
+
 #include <header.h>
 
 int isrunnian(int year){

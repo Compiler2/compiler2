@@ -1,3 +1,5 @@
+#define NUM_ITER 3664
+
 #include <header.h>
 
 int b[10000]={0};

@@ -1,3 +1,5 @@
+#define NUM_ITER 2461
+
 #include <header.h>
 
 int m,n,a[1000],b[1000],c[2000],s,t;

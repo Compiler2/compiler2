@@ -1,3 +1,5 @@
+#define NUM_ITER 276591
+
 #include <header.h>
 
 int sum(int x,int y);

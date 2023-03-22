@@ -1,3 +1,5 @@
+#define NUM_ITER 227389
+
 #include <header.h>
 
 int jzhh(int shuzu[5][5],int n,int m);

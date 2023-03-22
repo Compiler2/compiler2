@@ -1,3 +1,5 @@
+#define NUM_ITER 232609
+
 #include <header.h>
 
 void function(int num[5][5],int n,int m)

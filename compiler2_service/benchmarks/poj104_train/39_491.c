@@ -1,3 +1,5 @@
+#define NUM_ITER 10424
+
 #include <header.h>
 
 struct scholarship

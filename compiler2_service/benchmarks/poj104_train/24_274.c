@@ -1,3 +1,5 @@
+#define NUM_ITER 975457
+
 #include <header.h>
 
 int zimu(char c)

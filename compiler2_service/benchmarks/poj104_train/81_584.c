@@ -1,3 +1,5 @@
+#define NUM_ITER 229277
+
 #include <header.h>
 
 int work(int arr[5][5],int m,int n)

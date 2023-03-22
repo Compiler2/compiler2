@@ -1,3 +1,5 @@
+#define NUM_ITER 59452
+
 #include <header.h>
 
 int f(int x,int a[],int y)

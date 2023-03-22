@@ -1,3 +1,5 @@
+#define NUM_ITER 92160
+
 #include <header.h>
 
 int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

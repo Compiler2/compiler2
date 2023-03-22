@@ -1,3 +1,5 @@
+#define NUM_ITER 2712
+
 #include <header.h>
 
 int f(int n,int min){

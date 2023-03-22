@@ -1,3 +1,5 @@
+#define NUM_ITER 1101
+
 #include <header.h>
 
 int issn(int n);

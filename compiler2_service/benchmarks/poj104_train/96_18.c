@@ -1,3 +1,5 @@
+#define NUM_ITER 1073234
+
 #include <header.h>
 
 const int maxn=100;

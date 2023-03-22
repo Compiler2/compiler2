@@ -1,3 +1,5 @@
+#define NUM_ITER 186042
+
 #include <header.h>
 
 int comp(char a[100],char b[100],int i)

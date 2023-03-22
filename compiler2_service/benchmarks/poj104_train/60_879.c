@@ -1,3 +1,5 @@
+#define NUM_ITER 3566
+
 #include <header.h>
 
 int g(int x)

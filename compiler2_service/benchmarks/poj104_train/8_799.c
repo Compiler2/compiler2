@@ -1,3 +1,5 @@
+#define NUM_ITER 2431
+
 #include <header.h>
 
 int a[100],b[100],c[200],i,j,la,lb,p;

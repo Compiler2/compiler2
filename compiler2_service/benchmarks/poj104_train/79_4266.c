@@ -1,3 +1,5 @@
+#define NUM_ITER 43995
+
 #include <header.h>
 
 void ysfwt(int n,int m)

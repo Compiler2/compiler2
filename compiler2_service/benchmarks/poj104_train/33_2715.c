@@ -1,3 +1,5 @@
+#define NUM_ITER 26012
+
 #include <header.h>
 
 char input[1000][256],output[1000][256];

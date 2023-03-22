@@ -1,3 +1,5 @@
+#define NUM_ITER 996277
+
 #include <header.h>
 
 int funa(int x);

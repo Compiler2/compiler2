@@ -1,3 +1,5 @@
+#define NUM_ITER 365053
+
 #include <header.h>
 
 int rev(int m)

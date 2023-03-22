@@ -1,3 +1,5 @@
+#define NUM_ITER 685672
+
 #include <header.h>
 
 void f(char a[],int l)

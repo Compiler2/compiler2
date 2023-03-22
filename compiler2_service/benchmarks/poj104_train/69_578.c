@@ -1,3 +1,5 @@
+#define NUM_ITER 823328
+
 #include <header.h>
 
 char a[255],b[255],c[255];

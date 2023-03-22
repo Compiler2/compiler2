@@ -1,3 +1,5 @@
+#define NUM_ITER 63717
+
 #include <header.h>
 
 int have7(int i)

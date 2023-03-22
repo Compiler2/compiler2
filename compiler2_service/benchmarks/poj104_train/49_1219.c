@@ -1,3 +1,5 @@
+#define NUM_ITER 750718
+
 #include <header.h>
 
 void sub(char common[],char minlen[],int n,int now)

@@ -1,3 +1,5 @@
+#define NUM_ITER 834095
+
 #include <header.h>
 
 unsigned findday(unsigned y,unsigned m,unsigned d)

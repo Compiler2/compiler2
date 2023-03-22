@@ -1,3 +1,5 @@
+#define NUM_ITER 22542
+
 #include <header.h>
 
 int x[100000],y[100000],z[100000],s[100000],b[100000];

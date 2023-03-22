@@ -1,3 +1,5 @@
+#define NUM_ITER 1205
+
 #include <header.h>
 
 int num[9][9],im[9][9];

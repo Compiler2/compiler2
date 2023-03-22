@@ -1,3 +1,5 @@
+#define NUM_ITER 581
+
 #include <header.h>
 
 const int move[8]={-1,0,1,0,0,-1,0,1};

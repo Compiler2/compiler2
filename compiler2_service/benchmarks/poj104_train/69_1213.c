@@ -1,3 +1,5 @@
+#define NUM_ITER 836957
+
 #include <header.h>
 
 void sum(char str1[],char str2[],int m,int n)

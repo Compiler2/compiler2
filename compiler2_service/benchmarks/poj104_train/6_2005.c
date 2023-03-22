@@ -1,3 +1,5 @@
+#define NUM_ITER 32
+
 #include <header.h>
 
 void juzhen(int m,int n)

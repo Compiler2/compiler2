@@ -1,3 +1,5 @@
+#define NUM_ITER 28786
+
 #include <header.h>
 
 void p(char a[],int n)

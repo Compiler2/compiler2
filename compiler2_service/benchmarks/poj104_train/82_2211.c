@@ -1,3 +1,5 @@
+#define NUM_ITER 27141
+
 #include <header.h>
 
 int m(int p,int q)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1631559
+
 #include <header.h>
 
 int group[1000]={0};

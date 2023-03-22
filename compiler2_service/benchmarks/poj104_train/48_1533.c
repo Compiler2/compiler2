@@ -1,3 +1,5 @@
+#define NUM_ITER 1539
+
 #include <header.h>
 
 int a[9][9];

@@ -1,3 +1,5 @@
+#define NUM_ITER 94433
+
 #include <header.h>
 
 int sz[5][5];

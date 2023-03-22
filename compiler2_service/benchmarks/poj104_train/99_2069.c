@@ -1,3 +1,5 @@
+#define NUM_ITER 50921
+
 #include <header.h>
 
 int k[100];

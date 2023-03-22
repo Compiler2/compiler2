@@ -1,3 +1,5 @@
+#define NUM_ITER 12182
+
 #include <header.h>
 
 int f(char *p);

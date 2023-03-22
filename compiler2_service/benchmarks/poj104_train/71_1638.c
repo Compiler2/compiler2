@@ -1,3 +1,5 @@
+#define NUM_ITER 3099
+
 #include <header.h>
 
 int check(int y,int m)

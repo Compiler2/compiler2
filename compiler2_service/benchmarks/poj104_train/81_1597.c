@@ -1,3 +1,5 @@
+#define NUM_ITER 232592
+
 #include <header.h>
 
 int a[5][5],i,j,n1,m1,t;

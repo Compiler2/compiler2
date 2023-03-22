@@ -1,3 +1,5 @@
+#define NUM_ITER 51566
+
 #include <header.h>
 
 void gbc(int n);

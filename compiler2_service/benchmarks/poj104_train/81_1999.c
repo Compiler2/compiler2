@@ -1,3 +1,5 @@
+#define NUM_ITER 233500
+
 #include <header.h>
 
 int f(int,int,int *p);

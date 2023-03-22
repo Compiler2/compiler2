@@ -1,3 +1,5 @@
+#define NUM_ITER 6947
+
 #include <header.h>
 
 struct BING

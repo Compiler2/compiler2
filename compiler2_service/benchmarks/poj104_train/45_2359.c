@@ -1,3 +1,5 @@
+#define NUM_ITER 405014
+
 #include <header.h>
 
 int dingwei(char s[],char w[])

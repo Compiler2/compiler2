@@ -1,3 +1,5 @@
+#define NUM_ITER 1185044
+
 #include <header.h>
 
 swap(char *p,int n)

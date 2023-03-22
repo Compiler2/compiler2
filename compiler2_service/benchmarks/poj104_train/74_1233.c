@@ -1,3 +1,5 @@
+#define NUM_ITER 647209
+
 #include <header.h>
 
 int pan(int n)

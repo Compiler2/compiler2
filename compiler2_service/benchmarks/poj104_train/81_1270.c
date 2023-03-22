@@ -1,3 +1,5 @@
+#define NUM_ITER 197966
+
 #include <header.h>
 
 int zn(int n,int m,int sz[5][5]);

@@ -1,3 +1,5 @@
+#define NUM_ITER 1250488
+
 #include <header.h>
 
 void P(char a,char b)

@@ -1,3 +1,5 @@
+#define NUM_ITER 7122
+
 #include <header.h>
 
 int run(int q){

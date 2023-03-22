@@ -1,3 +1,5 @@
+#define NUM_ITER 838838
+
 #include <header.h>
 
 int check(char *p,char a[],int l)

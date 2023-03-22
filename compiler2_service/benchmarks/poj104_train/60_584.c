@@ -1,3 +1,5 @@
+#define NUM_ITER 9802
+
 #include <header.h>
 
 int pure(int a)

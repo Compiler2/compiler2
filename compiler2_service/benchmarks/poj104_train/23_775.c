@@ -1,3 +1,5 @@
+#define NUM_ITER 1172781
+
 #include <header.h>
 
 char swap(char str[100])

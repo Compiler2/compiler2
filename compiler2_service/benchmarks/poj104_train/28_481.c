@@ -1,3 +1,5 @@
+#define NUM_ITER 1027902
+
 #include <header.h>
 
 void getword(char a[3001],int *b)

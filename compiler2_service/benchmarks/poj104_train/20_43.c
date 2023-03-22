@@ -1,3 +1,5 @@
+#define NUM_ITER 609964
+
 #include <header.h>
 
 void insert(char a[15])

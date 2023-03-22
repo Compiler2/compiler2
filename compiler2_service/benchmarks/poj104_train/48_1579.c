@@ -1,3 +1,5 @@
+#define NUM_ITER 998
+
 #include <header.h>
 
 int a[11][11],b[11][11];

@@ -1,3 +1,5 @@
+#define NUM_ITER 1400113
+
 #include <header.h>
 
 int su(int n)

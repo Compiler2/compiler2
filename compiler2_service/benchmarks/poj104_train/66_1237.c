@@ -1,3 +1,5 @@
+#define NUM_ITER 177372
+
 #include <header.h>
 
 int rn(int y){

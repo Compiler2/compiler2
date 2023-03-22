@@ -1,3 +1,5 @@
+#define NUM_ITER 1157277
+
 #include <header.h>
 
 int checksu(int n)

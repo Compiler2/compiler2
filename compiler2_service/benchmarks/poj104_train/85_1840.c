@@ -1,3 +1,5 @@
+#define NUM_ITER 29348
+
 #include <header.h>
 
 char st[100][21];

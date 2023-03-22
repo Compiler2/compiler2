@@ -1,3 +1,5 @@
+#define NUM_ITER 234274
+
 #include <header.h>
 
 int f(int b[5][5],int p,int q)

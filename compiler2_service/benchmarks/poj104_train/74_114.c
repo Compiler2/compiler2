@@ -1,3 +1,5 @@
+#define NUM_ITER 1630557
+
 #include <header.h>
 
 int su(int num)

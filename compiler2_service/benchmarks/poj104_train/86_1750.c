@@ -1,3 +1,5 @@
+#define NUM_ITER 1120
+
 #include <header.h>
 
 int tiaosheng(int m,int *a);

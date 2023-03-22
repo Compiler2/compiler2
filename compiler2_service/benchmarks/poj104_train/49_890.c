@@ -1,3 +1,5 @@
+#define NUM_ITER 35108
+
 #include <header.h>
 
 void f(int j,int i,char c[]);

@@ -1,3 +1,5 @@
+#define NUM_ITER 4520
+
 #include <header.h>
 
 double SUM(int n)

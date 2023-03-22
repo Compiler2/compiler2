@@ -1,3 +1,5 @@
+#define NUM_ITER 2658
+
 #include <header.h>
 
 char sz[100000];

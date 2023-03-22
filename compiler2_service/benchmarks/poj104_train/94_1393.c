@@ -1,3 +1,5 @@
+#define NUM_ITER 15487
+
 #include <header.h>
 
 void bubble_sort(int a[],int n){

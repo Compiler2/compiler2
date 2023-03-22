@@ -1,3 +1,5 @@
+#define NUM_ITER 241296
+
 #include <header.h>
 
 int s(int a,int b)

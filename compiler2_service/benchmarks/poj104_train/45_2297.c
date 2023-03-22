@@ -1,3 +1,5 @@
+#define NUM_ITER 1026470
+
 #include <header.h>
 
 int strpos(char *s,char *t);

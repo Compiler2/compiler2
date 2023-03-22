@@ -1,3 +1,5 @@
+#define NUM_ITER 2564
+
 #include <header.h>
 
 void sca(int n,int l);

@@ -1,3 +1,5 @@
+#define NUM_ITER 380123
+
 #include <header.h>
 
 int change(char m);

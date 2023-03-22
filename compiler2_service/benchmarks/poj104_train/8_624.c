@@ -1,3 +1,5 @@
+#define NUM_ITER 2525
+
 #include <header.h>
 
 void maopao(int m,int n,int a[200],int b[100])

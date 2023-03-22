@@ -1,3 +1,5 @@
+#define NUM_ITER 190927
+
 #include <header.h>
 
 int RunNian(int year)

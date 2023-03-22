@@ -1,3 +1,5 @@
+#define NUM_ITER 1247055
+
 #include <header.h>
 
 const int chushu=13;

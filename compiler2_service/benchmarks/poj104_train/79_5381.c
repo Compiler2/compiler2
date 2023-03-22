@@ -1,3 +1,5 @@
+#define NUM_ITER 149
+
 #include <header.h>
 
 int remain(int start[],int n,int m)

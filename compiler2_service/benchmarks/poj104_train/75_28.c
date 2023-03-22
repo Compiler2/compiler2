@@ -1,3 +1,5 @@
+#define NUM_ITER 17064
+
 #include <header.h>
 
 int input(char s[],int a[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 272337
+
 #include <header.h>
 
 int gujiao(int x);

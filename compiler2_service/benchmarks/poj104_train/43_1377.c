@@ -1,3 +1,5 @@
+#define NUM_ITER 96535
+
 #include <header.h>
 
 int leap(int a)

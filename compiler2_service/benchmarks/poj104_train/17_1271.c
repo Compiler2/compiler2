@@ -1,3 +1,5 @@
+#define NUM_ITER 23870
+
 #include <header.h>
 
 int zuok(char c[],int j, int len)

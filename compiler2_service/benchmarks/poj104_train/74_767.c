@@ -1,3 +1,5 @@
+#define NUM_ITER 1645489
+
 #include <header.h>
 
 int huiwen(int n);

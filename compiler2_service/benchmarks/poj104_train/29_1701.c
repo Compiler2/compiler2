@@ -1,3 +1,5 @@
+#define NUM_ITER 51
+
 #include <header.h>
 
 double cal(int i,int n,double x)

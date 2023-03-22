@@ -1,3 +1,5 @@
+#define NUM_ITER 244937
+
 #include <header.h>
 
 int B[12]={31,28,31,30,31,30,31,31,30,31,30,31};

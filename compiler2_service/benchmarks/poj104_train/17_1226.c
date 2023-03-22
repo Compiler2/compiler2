@@ -1,3 +1,5 @@
+#define NUM_ITER 19043
+
 #include <header.h>
 
 void peidui(char str[],int len);

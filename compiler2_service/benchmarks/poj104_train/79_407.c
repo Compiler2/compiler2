@@ -1,3 +1,5 @@
+#define NUM_ITER 273
+
 #include <header.h>
 
 int yos(int n,int m)

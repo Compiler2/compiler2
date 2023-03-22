@@ -1,3 +1,5 @@
+#define NUM_ITER 361946
+
 #include <header.h>
 
 int max(int a,int b)

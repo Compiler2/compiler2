@@ -1,3 +1,5 @@
+#define NUM_ITER 13421
+
 #include <header.h>
 
 struct stu

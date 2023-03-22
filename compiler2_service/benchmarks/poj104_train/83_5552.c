@@ -1,3 +1,5 @@
+#define NUM_ITER 23873
+
 #include <header.h>
 
 int Xuefen(int xuefen[], int n){

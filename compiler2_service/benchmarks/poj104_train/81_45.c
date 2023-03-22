@@ -1,3 +1,5 @@
+#define NUM_ITER 230653
+
 #include <header.h>
 
 int p[5][5];

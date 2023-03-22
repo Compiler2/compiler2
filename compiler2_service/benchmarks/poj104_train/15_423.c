@@ -1,3 +1,5 @@
+#define NUM_ITER 550
+
 #include <header.h>
 
 int m[1000][1000];

@@ -1,3 +1,5 @@
+#define NUM_ITER 2742
+
 #include <header.h>
 
 void jisuanb(double b[],int n,double a[])

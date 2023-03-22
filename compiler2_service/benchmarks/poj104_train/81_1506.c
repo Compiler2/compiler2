@@ -1,3 +1,5 @@
+#define NUM_ITER 215060
+
 #include <header.h>
 
 fanwei(int x,int y)

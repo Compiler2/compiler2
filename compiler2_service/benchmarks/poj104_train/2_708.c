@@ -1,3 +1,5 @@
+#define NUM_ITER 3533
+
 #include <header.h>
 
 char zimu[28]="ABCDEFGJIJKLMNOPQRSTUVWXYZ";

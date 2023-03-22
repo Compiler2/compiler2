@@ -1,3 +1,5 @@
+#define NUM_ITER 8021
+
 #include <header.h>
 
 void fun(int *p,int n)

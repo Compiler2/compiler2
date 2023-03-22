@@ -1,3 +1,5 @@
+#define NUM_ITER 249342
+
 #include <header.h>
 
 int fun1(int i)

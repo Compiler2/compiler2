@@ -1,3 +1,5 @@
+#define NUM_ITER 105116
+
 #include <header.h>
 
 int qi(int num)

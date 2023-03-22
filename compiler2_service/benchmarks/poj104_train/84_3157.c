@@ -1,3 +1,5 @@
+#define NUM_ITER 57162
+
 #include <header.h>
 
 void operate(int a[],int n)

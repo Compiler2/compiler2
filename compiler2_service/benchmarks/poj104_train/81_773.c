@@ -1,3 +1,5 @@
+#define NUM_ITER 216900
+
 #include <header.h>
 
 int y(int n,int m){if(n>=0&&n<=4&&m>=0&&m<=4){return 1;}else{return 0;}}

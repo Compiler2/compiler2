@@ -1,3 +1,5 @@
+#define NUM_ITER 2522
+
 #include <header.h>
 
 void input(int p,int q,int *num1,int *num2)

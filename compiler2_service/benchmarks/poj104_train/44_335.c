@@ -1,3 +1,5 @@
+#define NUM_ITER 403694
+
 #include <header.h>
 
 int transfer(int i)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1959
+
 #include <header.h>
 
 void changeplace(int n,int a[])

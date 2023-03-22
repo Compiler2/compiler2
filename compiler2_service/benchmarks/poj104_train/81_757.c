@@ -1,3 +1,5 @@
+#define NUM_ITER 213966
+
 #include <header.h>
 
 int a(int x,int y)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1789113
+
 #include <header.h>
 
 int flag,n;

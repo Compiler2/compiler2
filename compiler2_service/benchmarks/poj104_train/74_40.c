@@ -1,3 +1,5 @@
+#define NUM_ITER 1578665
+
 #include <header.h>
 
 int ws(int x)

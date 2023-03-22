@@ -1,3 +1,5 @@
+#define NUM_ITER 217407
+
 #include <header.h>
 
 int ab(int n,int m);

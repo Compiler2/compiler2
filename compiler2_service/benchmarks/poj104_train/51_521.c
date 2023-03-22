@@ -1,3 +1,5 @@
+#define NUM_ITER 767065
+
 #include <header.h>
 
 char b[500][5]={' '};

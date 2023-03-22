@@ -1,3 +1,5 @@
+#define NUM_ITER 6919
+
 #include <header.h>
 
 int min(int x,int y);

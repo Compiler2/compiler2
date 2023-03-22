@@ -1,3 +1,5 @@
+#define NUM_ITER 1300220
+
 #include <header.h>
 
 void friend1(char p[],int n);

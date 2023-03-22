@@ -1,3 +1,5 @@
+#define NUM_ITER 5034
+
 #include <header.h>
 
 struct senex

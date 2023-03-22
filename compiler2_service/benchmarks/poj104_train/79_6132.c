@@ -1,3 +1,5 @@
+#define NUM_ITER 71
+
 #include <header.h>
 
 struct node

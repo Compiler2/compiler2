@@ -1,3 +1,5 @@
+#define NUM_ITER 431484
+
 #include <header.h>
 
 int pd(char str[10]);

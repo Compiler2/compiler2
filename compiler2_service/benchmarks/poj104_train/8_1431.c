@@ -1,3 +1,5 @@
+#define NUM_ITER 2342
+
 #include <header.h>
 
 int m,n,a[1000]={0},b[1000]={0};

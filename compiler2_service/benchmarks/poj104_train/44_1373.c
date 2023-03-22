@@ -1,3 +1,5 @@
+#define NUM_ITER 394985
+
 #include <header.h>
 
 int fan(int x)

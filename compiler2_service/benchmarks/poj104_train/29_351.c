@@ -1,3 +1,5 @@
+#define NUM_ITER 4253
+
 #include <header.h>
 
 float sum (int n)

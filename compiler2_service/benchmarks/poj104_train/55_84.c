@@ -1,3 +1,5 @@
+#define NUM_ITER 423041
+
 #include <header.h>
 
 int zhuan(int a,char n[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 831054
+
 #include <header.h>
 
 void dele0(char *a)

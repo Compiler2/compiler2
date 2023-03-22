@@ -1,3 +1,5 @@
+#define NUM_ITER 228369
+
 #include <header.h>
 
 void trans(int m, int n)

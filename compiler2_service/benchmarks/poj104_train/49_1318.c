@@ -1,3 +1,5 @@
+#define NUM_ITER 782094
+
 #include <header.h>
 
 int f(char word[500],int len)

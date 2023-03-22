@@ -1,3 +1,5 @@
+#define NUM_ITER 500
+
 #include <header.h>
 
 int row,col,*a;

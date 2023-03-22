@@ -1,3 +1,5 @@
+#define NUM_ITER 1676324
+
 #include <header.h>
 
 int check(int N,int p)

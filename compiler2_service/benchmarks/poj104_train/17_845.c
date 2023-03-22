@@ -1,3 +1,5 @@
+#define NUM_ITER 20439
+
 #include <header.h>
 
 char str[120];int n;

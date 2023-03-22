@@ -1,3 +1,5 @@
+#define NUM_ITER 240
+
 #include <header.h>
 
 int min(int x,int y)

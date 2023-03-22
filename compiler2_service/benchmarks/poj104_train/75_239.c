@@ -1,3 +1,5 @@
+#define NUM_ITER 951984
+
 #include <header.h>
 
 struct ans

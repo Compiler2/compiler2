@@ -1,3 +1,5 @@
+#define NUM_ITER 1032120
+
 #include <header.h>
 
 void ast(char s[])

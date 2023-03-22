@@ -1,3 +1,5 @@
+#define NUM_ITER 142626
+
 #include <header.h>
 
 void jishu(int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 18167
+
 #include <header.h>
 
 int ismin(char x)

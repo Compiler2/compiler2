@@ -1,3 +1,5 @@
+#define NUM_ITER 600178
+
 #include <header.h>
 
 void strre(char a[])

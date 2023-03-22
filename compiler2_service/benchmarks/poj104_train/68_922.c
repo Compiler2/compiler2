@@ -1,3 +1,5 @@
+#define NUM_ITER 37700
+
 #include <header.h>
 
 int ip(int x){

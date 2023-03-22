@@ -1,3 +1,5 @@
+#define NUM_ITER 7722
+
 #include <header.h>
 
 int max(int t1[],int t2[],int m,int n,int d)

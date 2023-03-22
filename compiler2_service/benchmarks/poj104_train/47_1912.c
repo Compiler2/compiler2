@@ -1,3 +1,5 @@
+#define NUM_ITER 58611
+
 #include <header.h>
 
 int a[110];

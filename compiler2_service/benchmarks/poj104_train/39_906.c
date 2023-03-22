@@ -1,3 +1,5 @@
+#define NUM_ITER 9067
+
 #include <header.h>
 
 struct ren

@@ -1,3 +1,5 @@
+#define NUM_ITER 18644
+
 #include <header.h>
 
 int is(int x)

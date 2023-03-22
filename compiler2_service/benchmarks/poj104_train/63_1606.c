@@ -1,3 +1,5 @@
+#define NUM_ITER 31
+
 #include <header.h>
 
 void  stubid(int x,int y,int z[150][150])

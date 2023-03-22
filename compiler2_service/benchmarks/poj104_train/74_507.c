@@ -1,3 +1,5 @@
+#define NUM_ITER 1203367
+
 #include <header.h>
 
 int hui(int a);

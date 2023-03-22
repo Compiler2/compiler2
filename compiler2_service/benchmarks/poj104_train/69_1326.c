@@ -1,3 +1,5 @@
+#define NUM_ITER 122847
+
 #include <header.h>
 
 int xa[300],xb[300],xx[300];

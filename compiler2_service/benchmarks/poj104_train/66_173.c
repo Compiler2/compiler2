@@ -1,3 +1,5 @@
+#define NUM_ITER 294140
+
 #include <header.h>
 
 void printDigit(int z)

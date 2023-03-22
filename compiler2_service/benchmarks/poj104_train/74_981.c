@@ -1,3 +1,5 @@
+#define NUM_ITER 201831
+
 #include <header.h>
 
 int check1(int i)

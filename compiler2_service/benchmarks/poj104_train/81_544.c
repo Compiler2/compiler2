@@ -1,3 +1,5 @@
+#define NUM_ITER 217874
+
 #include <header.h>
 
 int putout(int n,int m);

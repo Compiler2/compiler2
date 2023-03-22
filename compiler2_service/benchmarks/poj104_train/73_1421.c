@@ -1,3 +1,5 @@
+#define NUM_ITER 162554
+
 #include <header.h>
 
 int maxi(int b,int c,int d,int e,int f);

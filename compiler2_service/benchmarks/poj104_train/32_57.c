@@ -1,3 +1,5 @@
+#define NUM_ITER 2267
+
 #include <header.h>
 
 void gui0(char[],int n);

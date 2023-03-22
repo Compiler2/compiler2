@@ -1,3 +1,5 @@
+#define NUM_ITER 21290
+
 #include <header.h>
 
 int bj(const void * x, const void * y)

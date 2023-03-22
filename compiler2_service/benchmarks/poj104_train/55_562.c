@@ -1,3 +1,5 @@
+#define NUM_ITER 288600
+
 #include <header.h>
 
 long fun(int a,int n)

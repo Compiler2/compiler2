@@ -1,3 +1,5 @@
+#define NUM_ITER 877576
+
 #include <header.h>
 
 void tran(char s[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 15
+
 #include <header.h>
 
 int BT(int x,int a[40000])

@@ -1,3 +1,5 @@
+#define NUM_ITER 572
+
 #include <header.h>
 
 int xiangsu[1000][1000];

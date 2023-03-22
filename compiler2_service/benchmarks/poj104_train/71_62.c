@@ -1,3 +1,5 @@
+#define NUM_ITER 4017
+
 #include <header.h>
 
 int mon;

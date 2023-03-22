@@ -1,3 +1,5 @@
+#define NUM_ITER 879140
+
 #include <header.h>
 
 int search(char a[],char b[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 1005602
+
 #include <header.h>
 
 void convert(char *);

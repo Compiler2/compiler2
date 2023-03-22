@@ -1,3 +1,5 @@
+#define NUM_ITER 721460
+
 #include <header.h>
 
  int invert(long m)

@@ -1,3 +1,5 @@
+#define NUM_ITER 146
+
 #include <header.h>
 
 int a[2][100000];

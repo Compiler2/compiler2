@@ -1,3 +1,5 @@
+#define NUM_ITER 1293860
+
 #include <header.h>
 
 int run(int x)

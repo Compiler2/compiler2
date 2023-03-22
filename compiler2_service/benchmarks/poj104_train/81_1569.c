@@ -1,3 +1,5 @@
+#define NUM_ITER 215632
+
 #include <header.h>
 
 void huanhang(int array[][5],int x,int y)

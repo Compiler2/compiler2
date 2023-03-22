@@ -1,3 +1,5 @@
+#define NUM_ITER 2495
+
 #include <header.h>
 
 int a[101],b[101],m,n;

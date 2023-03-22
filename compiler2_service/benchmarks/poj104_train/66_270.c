@@ -1,3 +1,5 @@
+#define NUM_ITER 484733
+
 #include <header.h>
 
 void dayprint(int a){

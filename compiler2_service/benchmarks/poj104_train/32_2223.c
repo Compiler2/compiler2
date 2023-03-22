@@ -1,3 +1,5 @@
+#define NUM_ITER 10200
+
 #include <header.h>
 
 void func2(char o[],int x)

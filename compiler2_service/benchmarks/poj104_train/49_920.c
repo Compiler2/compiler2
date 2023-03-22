@@ -1,3 +1,5 @@
+#define NUM_ITER 864645
+
 #include <header.h>
 
 void srev(char str[500], int len)

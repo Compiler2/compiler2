@@ -1,3 +1,5 @@
+#define NUM_ITER 225154
+
 #include <header.h>
 
 int judge(int a,int b)

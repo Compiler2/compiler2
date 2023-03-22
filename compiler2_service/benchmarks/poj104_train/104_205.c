@@ -1,3 +1,5 @@
+#define NUM_ITER 351168
+
 #include <header.h>
 
 int so(int x)

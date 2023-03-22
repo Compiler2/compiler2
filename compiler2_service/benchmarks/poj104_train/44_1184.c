@@ -1,3 +1,5 @@
+#define NUM_ITER 446415
+
 #include <header.h>
 
 void fy(char c[])

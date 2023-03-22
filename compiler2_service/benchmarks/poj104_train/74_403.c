@@ -1,3 +1,5 @@
+#define NUM_ITER 313995
+
 #include <header.h>
 
 int sushu(int k)

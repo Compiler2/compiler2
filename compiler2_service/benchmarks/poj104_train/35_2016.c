@@ -1,3 +1,5 @@
+#define NUM_ITER 538
+
 #include <header.h>
 
 int i,j,max,a,d,c;

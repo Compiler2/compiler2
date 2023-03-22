@@ -1,3 +1,5 @@
+#define NUM_ITER 56850
+
 #include <header.h>
 
 int u[100];

@@ -1,3 +1,5 @@
+#define NUM_ITER 4130
+
 #include <header.h>
 
 int u[100],p[100],w[100];

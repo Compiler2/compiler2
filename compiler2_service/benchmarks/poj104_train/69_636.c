@@ -1,3 +1,5 @@
+#define NUM_ITER 545512
+
 #include <header.h>
 
 int sdw1(char s1[],int a[])

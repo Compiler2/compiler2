@@ -1,3 +1,5 @@
+#define NUM_ITER 3207
+
 #include <header.h>
 
 int f(int nian,int yue ,int ri){

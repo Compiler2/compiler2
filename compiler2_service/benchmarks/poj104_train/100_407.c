@@ -1,3 +1,5 @@
+#define NUM_ITER 532499
+
 #include <header.h>
 
 int b[26]={0};

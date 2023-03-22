@@ -1,3 +1,5 @@
+#define NUM_ITER 234000
+
 #include <header.h>
 
 int ismatrix(int m, int n)

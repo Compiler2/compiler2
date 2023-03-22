@@ -1,3 +1,5 @@
+#define NUM_ITER 135650
+
 #include <header.h>
 
 int cifang(int n)

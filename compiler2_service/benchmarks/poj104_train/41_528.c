@@ -1,3 +1,5 @@
+#define NUM_ITER 1496
+
 #include <header.h>
 
 int aa(int a,int b,int c,int d,int e)

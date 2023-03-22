@@ -1,3 +1,5 @@
+#define NUM_ITER 17372
+
 #include <header.h>
 
 char input[150], output[150];

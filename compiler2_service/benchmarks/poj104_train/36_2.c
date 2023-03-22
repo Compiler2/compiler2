@@ -1,3 +1,5 @@
+#define NUM_ITER 1045983
+
 #include <header.h>
 
 extern int hash1[500]={0},hash2[500]={0};

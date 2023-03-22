@@ -1,3 +1,5 @@
+#define NUM_ITER 18563
+
 #include <header.h>
 
 struct xue

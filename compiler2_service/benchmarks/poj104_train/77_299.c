@@ -1,3 +1,5 @@
+#define NUM_ITER 1321353
+
 #include <header.h>
 
 struct dui

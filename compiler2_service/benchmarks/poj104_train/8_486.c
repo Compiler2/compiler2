@@ -1,3 +1,5 @@
+#define NUM_ITER 2817
+
 #include <header.h>
 
 void input(void);

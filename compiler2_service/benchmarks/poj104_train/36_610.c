@@ -1,3 +1,5 @@
+#define NUM_ITER 988330
+
 #include <header.h>
 
 int num[128];

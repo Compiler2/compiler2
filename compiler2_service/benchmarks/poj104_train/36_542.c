@@ -1,3 +1,5 @@
+#define NUM_ITER 867555
+
 #include <header.h>
 
 int than(char a[],char b[])

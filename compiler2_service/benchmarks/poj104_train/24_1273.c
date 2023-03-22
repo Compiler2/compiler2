@@ -1,3 +1,5 @@
+#define NUM_ITER 279593
+
 #include <header.h>
 
 int n=0,i,num[100]={0},t=0,max=0,min=50,begin=0,lon1=0,lon2,sho1=0,sho2;

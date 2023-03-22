@@ -1,3 +1,5 @@
+#define NUM_ITER 201105
+
 #include <header.h>
 
 char x[5];

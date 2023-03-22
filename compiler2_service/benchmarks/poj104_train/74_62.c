@@ -1,3 +1,5 @@
+#define NUM_ITER 1016214
+
 #include <header.h>
 
 int hw(int n)

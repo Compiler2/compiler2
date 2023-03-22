@@ -1,3 +1,5 @@
+#define NUM_ITER 47329
+
 #include <header.h>
 
 void error(int *p,int *q,int m,int n)

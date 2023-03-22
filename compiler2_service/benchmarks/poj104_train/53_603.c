@@ -1,3 +1,5 @@
+#define NUM_ITER 14288
+
 #include <header.h>
 
 del(int a[],int n)

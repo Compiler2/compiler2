@@ -1,3 +1,5 @@
+#define NUM_ITER 225304
+
 #include <header.h>
 
 int f(int n,int m,int *point)

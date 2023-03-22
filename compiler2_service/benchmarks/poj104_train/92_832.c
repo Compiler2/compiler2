@@ -1,3 +1,5 @@
+#define NUM_ITER 4
+
 #include <header.h>
 
 void paixu(int n,int*p)

@@ -1,3 +1,5 @@
+#define NUM_ITER 23495
+
 #include <header.h>
 
 char anti_base(char base){

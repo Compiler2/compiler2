@@ -1,3 +1,5 @@
+#define NUM_ITER 685101
+
 #include <header.h>
 
 char str1[150],str2[50],str3[50];

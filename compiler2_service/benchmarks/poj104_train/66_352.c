@@ -1,3 +1,5 @@
+#define NUM_ITER 178517
+
 #include <header.h>
 
 int Dijitian(int a,int b,int c){

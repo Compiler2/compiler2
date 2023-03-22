@@ -1,3 +1,5 @@
+#define NUM_ITER 842811
+
 #include <header.h>
 
 char zfc1[100],zfc2[100],zfc3[100];

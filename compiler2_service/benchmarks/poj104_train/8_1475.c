@@ -1,3 +1,5 @@
+#define NUM_ITER 2472
+
 #include <header.h>
 
 void f(int a[],int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 20412
+
 #include <header.h>
 
 struct bing

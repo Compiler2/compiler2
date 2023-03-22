@@ -1,3 +1,5 @@
+#define NUM_ITER 898292
+
 #include <header.h>
 
 char s[50],w[50];

@@ -1,3 +1,5 @@
+#define NUM_ITER 56242
+
 #include <header.h>
 
 long int Jisuan(int year,int month,int day)

@@ -1,3 +1,5 @@
+#define NUM_ITER 15484
+
 #include <header.h>
 
 int isPrime(int a)

@@ -1,3 +1,5 @@
+#define NUM_ITER 193952
+
 #include <header.h>
 
 int lon(char a[])

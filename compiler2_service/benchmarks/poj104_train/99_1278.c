@@ -1,3 +1,5 @@
+#define NUM_ITER 40035
+
 #include <header.h>
 
 void sort(float a,float b);

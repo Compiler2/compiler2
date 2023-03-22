@@ -1,3 +1,5 @@
+#define NUM_ITER 233094
+
 #include <header.h>
 
 int survival(int a[6][6],int n,int m)

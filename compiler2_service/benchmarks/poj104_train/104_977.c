@@ -1,3 +1,5 @@
+#define NUM_ITER 478159
+
 #include <header.h>
 
 int pre(int num)

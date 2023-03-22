@@ -1,3 +1,5 @@
+#define NUM_ITER 176374
+
 #include <header.h>
 
 int a[10000]={1};

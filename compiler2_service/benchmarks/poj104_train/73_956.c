@@ -1,3 +1,5 @@
+#define NUM_ITER 109008
+
 #include <header.h>
 
 int max(int array[5][5],int n)

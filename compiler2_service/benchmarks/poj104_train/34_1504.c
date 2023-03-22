@@ -1,3 +1,5 @@
+#define NUM_ITER 194270
+
 #include <header.h>
 
 int step(int n)

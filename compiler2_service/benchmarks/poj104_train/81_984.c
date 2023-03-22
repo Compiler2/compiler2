@@ -1,3 +1,5 @@
+#define NUM_ITER 236935
+
 #include <header.h>
 
 void Change(int a[5][5],int b,int c);

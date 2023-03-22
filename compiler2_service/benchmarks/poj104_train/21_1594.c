@@ -1,3 +1,5 @@
+#define NUM_ITER 42734
+
 #include <header.h>
 
 float cc(int x,float y)

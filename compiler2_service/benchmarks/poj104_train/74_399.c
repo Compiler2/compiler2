@@ -1,3 +1,5 @@
+#define NUM_ITER 1499741
+
 #include <header.h>
 
 int pp(int a){

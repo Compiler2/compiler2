@@ -1,3 +1,5 @@
+#define NUM_ITER 222464
+
 #include <header.h>
 
 int mn(int n,int m)

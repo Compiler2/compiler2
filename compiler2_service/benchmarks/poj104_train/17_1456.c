@@ -1,3 +1,5 @@
+#define NUM_ITER 1634827
+
 #include <header.h>
 
 int f1(char zichuan[],int changdu)

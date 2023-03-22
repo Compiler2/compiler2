@@ -1,3 +1,5 @@
+#define NUM_ITER 43525
+
 #include <header.h>
 
 	struct bac

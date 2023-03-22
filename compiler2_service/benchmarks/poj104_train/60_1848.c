@@ -1,3 +1,5 @@
+#define NUM_ITER 3801
+
 #include <header.h>
 
 int m,n,i,y,q=12;

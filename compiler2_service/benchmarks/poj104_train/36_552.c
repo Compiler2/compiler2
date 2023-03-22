@@ -1,3 +1,5 @@
+#define NUM_ITER 1056954
+
 #include <header.h>
 
 int compare(char b[],int n,char a)

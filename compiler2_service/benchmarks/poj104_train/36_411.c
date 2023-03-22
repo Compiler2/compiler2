@@ -1,3 +1,5 @@
+#define NUM_ITER 864456
+
 #include <header.h>
 
 void sort(char a[],int n)

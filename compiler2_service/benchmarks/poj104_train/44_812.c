@@ -1,3 +1,5 @@
+#define NUM_ITER 399644
+
 #include <header.h>
 
 int pow(int x,int y)

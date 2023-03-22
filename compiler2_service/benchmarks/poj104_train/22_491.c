@@ -1,3 +1,5 @@
+#define NUM_ITER 76474
+
 #include <header.h>
 
 int maxaaaa(int x,int y)

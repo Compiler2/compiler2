@@ -1,3 +1,5 @@
+#define NUM_ITER 15159
+
 #include <header.h>
 
 int F(int a);

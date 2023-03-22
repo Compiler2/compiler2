@@ -1,3 +1,5 @@
+#define NUM_ITER 299275
+
 #include <header.h>
 
 int day;

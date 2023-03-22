@@ -1,3 +1,5 @@
+#define NUM_ITER 3744
+
 #include <header.h>
 
 struct jisuan{

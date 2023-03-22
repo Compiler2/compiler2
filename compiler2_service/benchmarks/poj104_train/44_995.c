@@ -1,3 +1,5 @@
+#define NUM_ITER 483856
+
 #include <header.h>
 
 void nixu(char s[])

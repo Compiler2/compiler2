@@ -1,3 +1,5 @@
+#define NUM_ITER 456908
+
 #include <header.h>
 
 int qr(int x,int y)

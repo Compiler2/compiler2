@@ -1,3 +1,5 @@
+#define NUM_ITER 1110
+
 #include <header.h>
 
 int abc(int p,int *x){

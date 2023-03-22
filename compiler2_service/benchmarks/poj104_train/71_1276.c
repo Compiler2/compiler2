@@ -1,3 +1,5 @@
+#define NUM_ITER 4133
+
 #include <header.h>
 
 int isRunNian(int year);

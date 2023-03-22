@@ -1,3 +1,5 @@
+#define NUM_ITER 51862
+
 #include <header.h>
 
 void diaohuan(int *a,int m,int n);

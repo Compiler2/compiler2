@@ -1,3 +1,5 @@
+#define NUM_ITER 40907
+
 #include <header.h>
 
 void jiaohuan(int a[],int i,int n,int m)

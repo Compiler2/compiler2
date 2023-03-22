@@ -1,3 +1,5 @@
+#define NUM_ITER 81895
+
 #include <header.h>
 
 void find(int a[52],char str[100])

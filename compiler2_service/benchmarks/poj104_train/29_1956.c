@@ -1,3 +1,5 @@
+#define NUM_ITER 3027
+
 #include <header.h>
 
 int feibo[200]={0};

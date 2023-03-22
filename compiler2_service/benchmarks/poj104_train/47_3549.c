@@ -1,3 +1,5 @@
+#define NUM_ITER 48535
+
 #include <header.h>
 
 int a[100],sz[100];

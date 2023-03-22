@@ -1,3 +1,5 @@
+#define NUM_ITER 701051
+
 #include <header.h>
 
 char str[510][510][510];

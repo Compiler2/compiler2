@@ -1,3 +1,5 @@
+#define NUM_ITER 22362
+
 #include <header.h>
 
 int biao(char a){

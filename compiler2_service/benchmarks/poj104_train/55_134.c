@@ -1,3 +1,5 @@
+#define NUM_ITER 428332
+
 #include <header.h>
 
 long trans(int len,int a[],int b);

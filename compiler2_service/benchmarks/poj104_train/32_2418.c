@@ -1,3 +1,5 @@
+#define NUM_ITER 7183
+
 #include <header.h>
 
 int maxlen(int x, int y);

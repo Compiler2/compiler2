@@ -1,3 +1,5 @@
+#define NUM_ITER 1243053
+
 #include <header.h>
 
 int getstr(char str[],char s[],int m,int n){

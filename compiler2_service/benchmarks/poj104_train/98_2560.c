@@ -1,3 +1,5 @@
+#define NUM_ITER 1123736
+
 #include <header.h>
 
 char a[10000],tmp[40],cn;

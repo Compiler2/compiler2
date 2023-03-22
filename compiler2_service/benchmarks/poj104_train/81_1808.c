@@ -1,3 +1,5 @@
+#define NUM_ITER 223788
+
 #include <header.h>
 
 int juzhen(int hang)

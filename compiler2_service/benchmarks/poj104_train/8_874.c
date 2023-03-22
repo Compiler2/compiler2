@@ -1,3 +1,5 @@
+#define NUM_ITER 2427
+
 #include <header.h>
 
 void read(int a[],int m);

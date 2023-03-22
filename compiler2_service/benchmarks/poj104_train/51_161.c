@@ -1,3 +1,5 @@
+#define NUM_ITER 592364
+
 #include <header.h>
 
 void ngram(char str[],int n)

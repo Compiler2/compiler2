@@ -1,3 +1,5 @@
+#define NUM_ITER 2240
+
 #include <header.h>
 
 void order(int a[100],int l1);

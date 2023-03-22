@@ -1,3 +1,5 @@
+#define NUM_ITER 79797
+
 #include <header.h>
 
 int seven(int x){

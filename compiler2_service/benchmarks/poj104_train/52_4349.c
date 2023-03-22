@@ -1,3 +1,5 @@
+#define NUM_ITER 2547
+
 #include <header.h>
 
 void swap(int a[],int n,int m)

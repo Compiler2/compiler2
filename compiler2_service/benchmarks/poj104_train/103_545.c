@@ -1,3 +1,5 @@
+#define NUM_ITER 1332626
+
 #include <header.h>
 
 void count(char *string)

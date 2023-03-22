@@ -1,3 +1,5 @@
+#define NUM_ITER 820818
+
 #include <header.h>
 
 void add(char a[],char b[],int x1,int x2,char c[])

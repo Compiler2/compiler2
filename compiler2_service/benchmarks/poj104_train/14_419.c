@@ -1,3 +1,5 @@
+#define NUM_ITER 12403
+
 #include <header.h>
 
 int pfCompare(const void * elem1, const void * elem2)

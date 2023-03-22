@@ -1,3 +1,5 @@
+#define NUM_ITER 318
+
 #include <header.h>
 
 int f(int i,int j,int m,int n,int a[100][100]); 

@@ -1,3 +1,5 @@
+#define NUM_ITER 2242
+
 #include <header.h>
 
 int f(int x){

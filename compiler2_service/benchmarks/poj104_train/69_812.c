@@ -1,3 +1,5 @@
+#define NUM_ITER 719325
+
 #include <header.h>
 
 void AddBigInt(char *result,char *str1,char *str2)

@@ -1,3 +1,5 @@
+#define NUM_ITER 244433
+
 #include <header.h>
 
 int nn(int x);

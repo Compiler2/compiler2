@@ -1,3 +1,5 @@
+#define NUM_ITER 4127
+
 #include <header.h>
 
 void yidong(int a1[],int len)

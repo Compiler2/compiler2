@@ -1,3 +1,5 @@
+#define NUM_ITER 11755
+
 #include <header.h>
 
 const long maxLenth=100;

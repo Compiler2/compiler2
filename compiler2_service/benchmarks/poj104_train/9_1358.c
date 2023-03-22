@@ -1,3 +1,5 @@
+#define NUM_ITER 2949
+
 #include <header.h>
 
 struct mao

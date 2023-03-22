@@ -1,3 +1,5 @@
+#define NUM_ITER 81031
+
 #include <header.h>
 
 int wu(int n)

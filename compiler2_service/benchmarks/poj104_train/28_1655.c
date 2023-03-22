@@ -1,3 +1,5 @@
+#define NUM_ITER 1257146
+
 #include <header.h>
 
 char sen[10000];

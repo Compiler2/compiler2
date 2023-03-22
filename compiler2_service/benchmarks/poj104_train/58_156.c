@@ -1,3 +1,5 @@
+#define NUM_ITER 26728
+
 #include <header.h>
 
 int indent(char zfc[81]);

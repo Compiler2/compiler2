@@ -1,3 +1,5 @@
+#define NUM_ITER 332813
+
 #include <header.h>
 
 int ifunlucky(int d);

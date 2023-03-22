@@ -1,3 +1,5 @@
+#define NUM_ITER 2285
+
 #include <header.h>
 
 void duqu(int a[],int b[],int M,int N)

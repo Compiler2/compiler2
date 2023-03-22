@@ -1,3 +1,5 @@
+#define NUM_ITER 515103
+
 #include <header.h>
 
 int main_bench()

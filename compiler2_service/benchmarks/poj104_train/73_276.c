@@ -1,3 +1,5 @@
+#define NUM_ITER 205450
+
 #include <header.h>
 
 int findmax(int *p)

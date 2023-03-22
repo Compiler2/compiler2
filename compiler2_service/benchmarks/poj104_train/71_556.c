@@ -1,3 +1,5 @@
+#define NUM_ITER 19725
+
 #include <header.h>
 
 int checkyear(int a)

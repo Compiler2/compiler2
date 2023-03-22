@@ -1,3 +1,5 @@
+#define NUM_ITER 362488
+
 #include <header.h>
 
 int main_bench(){int i,j,k,z,a[1000];

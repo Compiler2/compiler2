@@ -1,3 +1,5 @@
+#define NUM_ITER 1035515
+
 #include <header.h>
 
 int max(char a,char b[][50],int l);

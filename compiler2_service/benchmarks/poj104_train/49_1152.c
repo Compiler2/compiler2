@@ -1,3 +1,5 @@
+#define NUM_ITER 1242760
+
 #include <header.h>
 
 void print(int n1,int n2);

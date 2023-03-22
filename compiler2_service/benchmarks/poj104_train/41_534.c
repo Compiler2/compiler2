@@ -1,3 +1,5 @@
+#define NUM_ITER 49289
+
 #include <header.h>
 
 struct chang

@@ -1,3 +1,5 @@
+#define NUM_ITER 1350
+
 #include <header.h>
 
 struct people

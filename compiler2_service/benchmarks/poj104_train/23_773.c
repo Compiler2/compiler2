@@ -1,3 +1,5 @@
+#define NUM_ITER 1178527
+
 #include <header.h>
 
 int Strlen(char *ch1)

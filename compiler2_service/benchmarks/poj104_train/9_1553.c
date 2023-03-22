@@ -1,3 +1,5 @@
+#define NUM_ITER 16115
+
 #include <header.h>
 
 struct oldpeople

@@ -1,3 +1,5 @@
+#define NUM_ITER 182774
+
 #include <header.h>
 
 void pr(int n)

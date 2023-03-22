@@ -1,3 +1,5 @@
+#define NUM_ITER 563
+
 #include <header.h>
 
 int area[100][100];

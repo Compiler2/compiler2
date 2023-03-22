@@ -1,3 +1,5 @@
+#define NUM_ITER 27123
+
 #include <header.h>
 
 int tr(char a[],int b[])

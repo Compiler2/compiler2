@@ -1,3 +1,5 @@
+#define NUM_ITER 27508
+
 #include <header.h>
 
 int zhiyinshu(int x)

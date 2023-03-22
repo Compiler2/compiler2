@@ -1,3 +1,5 @@
+#define NUM_ITER 489
+
 #include <header.h>
 
 int mat[102][102];

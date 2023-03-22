@@ -1,3 +1,5 @@
+#define NUM_ITER 486
+
 #include <header.h>
 
 int dir[4][2]={0,1, 1,0, 0,-1, -1,0};

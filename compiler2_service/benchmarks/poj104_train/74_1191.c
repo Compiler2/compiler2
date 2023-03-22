@@ -1,3 +1,5 @@
+#define NUM_ITER 1401100
+
 #include <header.h>
 
 int change(int num)

@@ -1,3 +1,5 @@
+#define NUM_ITER 328292
+
 #include <header.h>
 
 int deal(char a[],int n,char b[],int m)

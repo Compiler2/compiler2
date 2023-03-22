@@ -1,3 +1,5 @@
+#define NUM_ITER 617720
+
 #include <header.h>
 
 void chengfa(char a[],char b[])

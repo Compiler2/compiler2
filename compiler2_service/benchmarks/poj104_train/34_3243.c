@@ -1,3 +1,5 @@
+#define NUM_ITER 298897
+
 #include <header.h>
 
 int move(int i)

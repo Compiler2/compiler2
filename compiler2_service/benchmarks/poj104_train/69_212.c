@@ -1,3 +1,5 @@
+#define NUM_ITER 700437
+
 #include <header.h>
 
 int str2bigint(char*str,int*a)

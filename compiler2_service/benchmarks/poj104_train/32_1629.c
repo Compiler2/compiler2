@@ -1,3 +1,5 @@
+#define NUM_ITER 9385
+
 #include <header.h>
 
 void stringrev(char *a,char*b)

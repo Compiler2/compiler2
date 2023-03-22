@@ -1,3 +1,5 @@
+#define NUM_ITER 21488
+
 #include <header.h>
 
 int t[10001];

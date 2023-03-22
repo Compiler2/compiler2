@@ -1,3 +1,5 @@
+#define NUM_ITER 41215
+
 #include <header.h>
 
 void swap(int *pa,int n,int m)

@@ -1,3 +1,5 @@
+#define NUM_ITER 4999
+
 #include <header.h>
 
 int F(int m)

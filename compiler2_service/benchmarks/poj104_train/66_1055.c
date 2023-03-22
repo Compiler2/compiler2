@@ -1,3 +1,5 @@
+#define NUM_ITER 173187
+
 #include <header.h>
 
 int isrunnian(int m);

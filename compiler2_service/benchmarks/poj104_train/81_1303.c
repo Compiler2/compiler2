@@ -1,3 +1,5 @@
+#define NUM_ITER 235274
+
 #include <header.h>
 
 int rev(int in[5][5], int* x, int* y);

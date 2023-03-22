@@ -1,3 +1,5 @@
+#define NUM_ITER 228656
+
 #include <header.h>
 
 int strchange(char s[],int n[])

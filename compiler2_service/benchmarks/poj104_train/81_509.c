@@ -1,3 +1,5 @@
+#define NUM_ITER 230511
+
 #include <header.h>
 
 int array[5][5]={0};

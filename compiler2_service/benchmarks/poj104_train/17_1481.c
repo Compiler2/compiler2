@@ -1,3 +1,5 @@
+#define NUM_ITER 105395
+
 #include <header.h>
 
 int show(char a[],int t)

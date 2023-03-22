@@ -1,3 +1,5 @@
+#define NUM_ITER 677662
+
 #include <header.h>
 
  int shifouzimu(char c);

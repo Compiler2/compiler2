@@ -1,3 +1,5 @@
+#define NUM_ITER 65660
+
 #include <header.h>
 
 unsigned long pow(unsigned long a,unsigned long b)

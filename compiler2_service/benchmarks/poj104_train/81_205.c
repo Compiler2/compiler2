@@ -1,3 +1,5 @@
+#define NUM_ITER 232194
+
 #include <header.h>
 
  int hh(int a, int b )

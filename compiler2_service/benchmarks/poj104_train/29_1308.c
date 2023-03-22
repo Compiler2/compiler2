@@ -1,3 +1,5 @@
+#define NUM_ITER 47819
+
 #include <header.h>
 
 double F(double x);

@@ -1,3 +1,5 @@
+#define NUM_ITER 233312
+
 #include <header.h>
 
 int change(int sz[][5],int,int);

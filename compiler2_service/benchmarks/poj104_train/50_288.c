@@ -1,3 +1,5 @@
+#define NUM_ITER 508205
+
 #include <header.h>
 
 int mon[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};

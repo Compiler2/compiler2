@@ -1,3 +1,5 @@
+#define NUM_ITER 29950
+
 #include <header.h>
 
 char b(char f);

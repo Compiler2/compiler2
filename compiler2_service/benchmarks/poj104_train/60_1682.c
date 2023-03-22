@@ -1,3 +1,5 @@
+#define NUM_ITER 16176
+
 #include <header.h>
 
 int isPrime(int n)

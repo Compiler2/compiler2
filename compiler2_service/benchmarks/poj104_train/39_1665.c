@@ -1,3 +1,5 @@
+#define NUM_ITER 6894
+
 #include <header.h>
 
 char name[200][21];

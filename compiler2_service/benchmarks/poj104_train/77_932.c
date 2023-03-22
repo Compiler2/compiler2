@@ -1,3 +1,5 @@
+#define NUM_ITER 1344092
+
 #include <header.h>
 
 void pei(char a[250])

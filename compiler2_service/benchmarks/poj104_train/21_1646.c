@@ -1,3 +1,5 @@
+#define NUM_ITER 5171
+
 #include <header.h>
 
 float f(float a[],int n)

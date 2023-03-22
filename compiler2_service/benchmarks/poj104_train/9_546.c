@@ -1,3 +1,5 @@
+#define NUM_ITER 1990
+
 #include <header.h>
 
 struct pat

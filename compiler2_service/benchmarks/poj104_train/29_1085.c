@@ -1,3 +1,5 @@
+#define NUM_ITER 1920
+
 #include <header.h>
 
 double f(int n){

@@ -1,3 +1,5 @@
+#define NUM_ITER 5530
+
 #include <header.h>
 
 struct area{

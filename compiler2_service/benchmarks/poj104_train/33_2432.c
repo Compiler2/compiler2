@@ -1,3 +1,5 @@
+#define NUM_ITER 21949
+
 #include <header.h>
 
 char swap(char x){

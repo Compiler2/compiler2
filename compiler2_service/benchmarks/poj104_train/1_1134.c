@@ -1,3 +1,5 @@
+#define NUM_ITER 2237
+
 #include <header.h>
 
 int qipa(int p,int q)    

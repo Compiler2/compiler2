@@ -1,3 +1,5 @@
+#define NUM_ITER 412015
+
 #include <header.h>
 
 int com(char str1[],char str2[])

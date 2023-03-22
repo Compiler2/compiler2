@@ -1,3 +1,5 @@
+#define NUM_ITER 3694
+
 #include <header.h>
 
 int min(int m1,int m2)

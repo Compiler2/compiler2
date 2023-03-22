@@ -1,3 +1,5 @@
+#define NUM_ITER 3975
+
 #include <header.h>
 
 int RN(int);

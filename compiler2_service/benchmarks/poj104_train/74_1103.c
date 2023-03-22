@@ -1,3 +1,5 @@
+#define NUM_ITER 903299
+
 #include <header.h>
 
 int lenth(int a)

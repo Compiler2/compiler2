@@ -1,3 +1,5 @@
+#define NUM_ITER 11056
+
 #include <header.h>
 
 int t[2000];

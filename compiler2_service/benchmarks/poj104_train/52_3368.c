@@ -1,3 +1,5 @@
+#define NUM_ITER 122017
+
 #include <header.h>
 
 void change(int a[],int n,int m)

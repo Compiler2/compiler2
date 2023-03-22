@@ -1,3 +1,5 @@
+#define NUM_ITER 227758
+
 #include <header.h>
 
 void replace(int*,int*);

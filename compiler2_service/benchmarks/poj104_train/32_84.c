@@ -1,3 +1,5 @@
+#define NUM_ITER 9042
+
 #include <header.h>
 
 void calculate(int);

@@ -1,3 +1,5 @@
+#define NUM_ITER 699
+
 #include <header.h>
 
 int dat[102][102];

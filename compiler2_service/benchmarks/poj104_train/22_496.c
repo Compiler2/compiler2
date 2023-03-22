@@ -1,3 +1,5 @@
+#define NUM_ITER 1273008
+
 #include <header.h>
 
 void selectionsort(int a[],int s,int e)

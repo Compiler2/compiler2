@@ -1,3 +1,5 @@
+#define NUM_ITER 979474
+
 #include <header.h>
 
 char a[10];

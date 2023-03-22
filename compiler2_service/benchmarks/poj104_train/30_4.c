@@ -1,3 +1,5 @@
+#define NUM_ITER 45668
+
 #include <header.h>
 
 int nseven(int n)

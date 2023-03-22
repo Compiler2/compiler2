@@ -1,3 +1,5 @@
+#define NUM_ITER 10
+
 #include <header.h>
 
 void shu(int a,int b)

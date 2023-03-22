@@ -1,3 +1,5 @@
+#define NUM_ITER 124
+
 #include <header.h>
 
 int fei(int n);

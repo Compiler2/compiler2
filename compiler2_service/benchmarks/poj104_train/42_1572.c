@@ -1,3 +1,5 @@
+#define NUM_ITER 45871
+
 #include <header.h>
 
 int shuzu[1000000];

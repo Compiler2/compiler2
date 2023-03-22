@@ -1,3 +1,5 @@
+#define NUM_ITER 31262
+
 #include <header.h>
 
 int zh(int,int);

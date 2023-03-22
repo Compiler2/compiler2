@@ -1,3 +1,5 @@
+#define NUM_ITER 269058
+
 #include <header.h>
 
 int doublemonth(int n);

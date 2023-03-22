@@ -1,3 +1,5 @@
+#define NUM_ITER 55453
+
 #include <header.h>
 
 int read();

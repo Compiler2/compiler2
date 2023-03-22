@@ -1,3 +1,5 @@
+#define NUM_ITER 377006
+
 #include <header.h>
 
 const int n=6;

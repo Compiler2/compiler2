@@ -1,3 +1,5 @@
+#define NUM_ITER 1000086
+
 #include <header.h>
 
 char a[50],b[50];

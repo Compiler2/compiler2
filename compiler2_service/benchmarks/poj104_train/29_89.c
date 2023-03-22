@@ -1,3 +1,5 @@
+#define NUM_ITER 359
+
 #include <header.h>
 
 double fun(int m)

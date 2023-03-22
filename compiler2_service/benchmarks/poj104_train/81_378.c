@@ -1,3 +1,5 @@
+#define NUM_ITER 231218
+
 #include <header.h>
 
 int exchange(int (*)[5]);

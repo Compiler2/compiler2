@@ -1,3 +1,5 @@
+#define NUM_ITER 1466603
+
 #include <header.h>
 
 void daopai(char *pt)

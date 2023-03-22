@@ -1,3 +1,5 @@
+#define NUM_ITER 1192021
+
 #include <header.h>
 
 int leap(int Y)

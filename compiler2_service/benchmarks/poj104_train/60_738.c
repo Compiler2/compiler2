@@ -1,3 +1,5 @@
+#define NUM_ITER 4010
+
 #include <header.h>
 
 int sushu(int x);

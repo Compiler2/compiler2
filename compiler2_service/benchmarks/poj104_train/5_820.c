@@ -1,3 +1,5 @@
+#define NUM_ITER 976483
+
 #include <header.h>
 
 int yn(char x);

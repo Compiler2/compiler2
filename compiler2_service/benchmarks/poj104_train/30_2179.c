@@ -1,3 +1,5 @@
+#define NUM_ITER 54589
+
 #include <header.h>
 
  int wuguan(int e)

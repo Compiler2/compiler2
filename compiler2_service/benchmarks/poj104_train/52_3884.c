@@ -1,3 +1,5 @@
+#define NUM_ITER 2793
+
 #include <header.h>
 
 void xunhuan(int a[100],int n,int m)

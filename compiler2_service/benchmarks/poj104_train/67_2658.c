@@ -1,3 +1,5 @@
+#define NUM_ITER 20805
+
 #include <header.h>
 
 double a,b,c,d;

@@ -1,3 +1,5 @@
+#define NUM_ITER 408770
+
 #include <header.h>
 
 void haha(int x)

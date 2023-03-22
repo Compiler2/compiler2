@@ -1,3 +1,5 @@
+#define NUM_ITER 104
+
 #include <header.h>
 
 int a[2000][2000];

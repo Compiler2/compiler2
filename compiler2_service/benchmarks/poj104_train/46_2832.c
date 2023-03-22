@@ -1,3 +1,5 @@
+#define NUM_ITER 588
+
 #include <header.h>
 
 int a[100][100]={0};

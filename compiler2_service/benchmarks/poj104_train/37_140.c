@@ -1,3 +1,5 @@
+#define NUM_ITER 11565
+
 #include <header.h>
 
 int use[26];

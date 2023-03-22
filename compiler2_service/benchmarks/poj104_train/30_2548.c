@@ -1,3 +1,5 @@
+#define NUM_ITER 117175
+
 #include <header.h>
 
 int yu7wuguan (int n);

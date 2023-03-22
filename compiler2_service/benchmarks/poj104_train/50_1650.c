@@ -1,3 +1,5 @@
+#define NUM_ITER 192759
+
 #include <header.h>
 
 int dijitian(int m,int d)

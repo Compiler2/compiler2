@@ -1,3 +1,5 @@
+#define NUM_ITER 453517
+
 #include <header.h>
 
 void make(int k,int x)

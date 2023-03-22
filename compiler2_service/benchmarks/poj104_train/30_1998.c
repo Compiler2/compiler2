@@ -1,3 +1,5 @@
+#define NUM_ITER 53588
+
 #include <header.h>
 
 	int wuSeven(int a){

@@ -1,3 +1,5 @@
+#define NUM_ITER 2301
+
 #include <header.h>
 
 int l1,l2,a1[50],a2[50],a3[100];

@@ -1,3 +1,5 @@
+#define NUM_ITER 15430
+
 #include <header.h>
 
 int fuck(int a)

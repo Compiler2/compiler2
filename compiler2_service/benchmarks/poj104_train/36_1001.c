@@ -1,3 +1,5 @@
+#define NUM_ITER 873952
+
 #include <header.h>
 
 int rearrange(char s1[], char s2[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 1986
+
 #include <header.h>
 
 int Run(int year)

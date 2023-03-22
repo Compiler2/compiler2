@@ -1,3 +1,5 @@
+#define NUM_ITER 20956
+
 #include <header.h>
 
 struct score

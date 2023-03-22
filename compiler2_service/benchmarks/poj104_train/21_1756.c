@@ -1,3 +1,5 @@
+#define NUM_ITER 38406
+
 #include <header.h>
 
 float average(int x[],int);

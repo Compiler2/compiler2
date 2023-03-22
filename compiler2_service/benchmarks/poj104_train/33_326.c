@@ -1,3 +1,5 @@
+#define NUM_ITER 25387
+
 #include <header.h>
 
 char chaina[1000][260], chainb[1000][260];

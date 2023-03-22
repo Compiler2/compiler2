@@ -1,3 +1,5 @@
+#define NUM_ITER 1672691
+
 #include <header.h>
 
 void find(int x,int y)

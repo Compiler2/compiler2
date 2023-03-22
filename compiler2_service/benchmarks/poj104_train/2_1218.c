@@ -1,3 +1,5 @@
+#define NUM_ITER 6399
+
 #include <header.h>
 
 char name[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};

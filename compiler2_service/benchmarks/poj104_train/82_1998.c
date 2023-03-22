@@ -1,3 +1,5 @@
+#define NUM_ITER 8766
+
 #include <header.h>
 
 int ss[10000],sz[10000],xiaoshi[10000];

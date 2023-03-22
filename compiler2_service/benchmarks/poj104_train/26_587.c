@@ -1,3 +1,5 @@
+#define NUM_ITER 1545663
+
 #include <header.h>
 
 char* f(char *s,char *t)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1520
+
 #include <header.h>
 
 int m,n,a[1000]={0},b[1000]={0},c[1000]={0};

@@ -1,3 +1,5 @@
+#define NUM_ITER 3302
+
 #include <header.h>
 
 void bo(char c[100])

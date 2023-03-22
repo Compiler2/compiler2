@@ -1,3 +1,5 @@
+#define NUM_ITER 8415
+
 #include <header.h>
 
 struct std

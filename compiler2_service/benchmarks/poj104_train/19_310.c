@@ -1,3 +1,5 @@
+#define NUM_ITER 779080
+
 #include <header.h>
 
 int bijiao(int p,char *a,int n,char *b)

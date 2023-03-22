@@ -1,3 +1,5 @@
+#define NUM_ITER 9127
+
 #include <header.h>
 
 struct file

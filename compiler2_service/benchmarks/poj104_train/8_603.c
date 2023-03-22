@@ -1,3 +1,5 @@
+#define NUM_ITER 2903
+
 #include <header.h>
 
 int array_a[100],array_b[100],n_a,n_b;

@@ -1,3 +1,5 @@
+#define NUM_ITER 233492
+
 #include <header.h>
 
 int hanshu(int a[5][5],int m,int n,int *a_p)

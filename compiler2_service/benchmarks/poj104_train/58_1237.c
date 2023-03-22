@@ -1,3 +1,5 @@
+#define NUM_ITER 1539016
+
 #include <header.h>
 
 int work(char*input);

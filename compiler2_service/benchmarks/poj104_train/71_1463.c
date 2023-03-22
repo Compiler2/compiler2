@@ -1,3 +1,5 @@
+#define NUM_ITER 3888
+
 #include <header.h>
 
 int xgy(int year,int month1,int month2){

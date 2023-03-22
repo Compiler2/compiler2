@@ -1,3 +1,5 @@
+#define NUM_ITER 36754
+
 #include <header.h>
 
 int Dec();

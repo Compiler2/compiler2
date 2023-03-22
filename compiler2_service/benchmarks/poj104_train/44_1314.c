@@ -1,3 +1,5 @@
+#define NUM_ITER 519782
+
 #include <header.h>
 
 int RevNum(int n)

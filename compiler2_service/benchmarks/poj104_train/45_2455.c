@@ -1,3 +1,5 @@
+#define NUM_ITER 1093983
+
 #include <header.h>
 
 int judge(char a[50],char b[50])

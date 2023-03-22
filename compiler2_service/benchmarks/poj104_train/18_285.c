@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 void guiling(int a[100][100],int n)

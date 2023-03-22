@@ -1,3 +1,5 @@
+#define NUM_ITER 229908
+
 #include <header.h>
 
 int pd(char *m)

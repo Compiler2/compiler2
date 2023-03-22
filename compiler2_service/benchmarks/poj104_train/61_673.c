@@ -1,3 +1,5 @@
+#define NUM_ITER 5182
+
 #include <header.h>
 
 void compute(int shuzu);

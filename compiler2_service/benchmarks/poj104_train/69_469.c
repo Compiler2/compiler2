@@ -1,3 +1,5 @@
+#define NUM_ITER 893317
+
 #include <header.h>
 
 int c[252];

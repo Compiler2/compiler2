@@ -1,3 +1,5 @@
+#define NUM_ITER 1131644
+
 #include <header.h>
 
 char a[501][5],s[501],tem[5];

@@ -1,3 +1,5 @@
+#define NUM_ITER 921747
+
 #include <header.h>
 
 int cmp(int i,char a[],char b[])

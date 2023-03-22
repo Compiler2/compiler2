@@ -1,3 +1,5 @@
+#define NUM_ITER 2385
+
 #include <header.h>
 
 static int m,n;

@@ -1,3 +1,5 @@
+#define NUM_ITER 904940
+
 #include <header.h>
 
 int ch(char a)

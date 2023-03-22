@@ -1,3 +1,5 @@
+#define NUM_ITER 1123112
+
 #include <header.h>
 
 char str[500],sub[500][5]={0},count[500]={0},bianhao[500]={0};

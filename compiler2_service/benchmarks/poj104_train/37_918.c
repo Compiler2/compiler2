@@ -1,3 +1,5 @@
+#define NUM_ITER 9221
+
 #include <header.h>
 
 void pr(char *a)

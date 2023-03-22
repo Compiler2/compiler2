@@ -1,3 +1,5 @@
+#define NUM_ITER 3117
+
 #include <header.h>
 
 int work(int now,int x)

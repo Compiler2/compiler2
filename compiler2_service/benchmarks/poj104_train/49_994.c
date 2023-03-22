@@ -1,3 +1,5 @@
+#define NUM_ITER 424566
+
 #include <header.h>
 
 char *reverse(char *pt);

@@ -1,3 +1,5 @@
+#define NUM_ITER 202335
+
 #include <header.h>
 
 char namef(int a,int b,int c,int n)

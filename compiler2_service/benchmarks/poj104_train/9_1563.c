@@ -1,3 +1,5 @@
+#define NUM_ITER 12451
+
 #include <header.h>
 
 struct pa

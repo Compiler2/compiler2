@@ -1,3 +1,5 @@
+#define NUM_ITER 49435
+
 #include <header.h>
 
 int days(int x,int y,int z)

@@ -1,3 +1,5 @@
+#define NUM_ITER 908857
+
 #include <header.h>
 
 void arn(char a[],int n);

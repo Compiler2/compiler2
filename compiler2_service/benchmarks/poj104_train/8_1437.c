@@ -1,3 +1,5 @@
+#define NUM_ITER 2200
+
 #include <header.h>
 
 void f1(int n,int a[])

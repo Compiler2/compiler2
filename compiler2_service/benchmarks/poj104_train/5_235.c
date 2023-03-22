@@ -1,3 +1,5 @@
+#define NUM_ITER 762399
+
 #include <header.h>
 
 int compare(char x,char y);

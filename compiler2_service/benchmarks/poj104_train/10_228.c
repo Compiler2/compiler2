@@ -1,3 +1,5 @@
+#define NUM_ITER 37977
+
 #include <header.h>
 
 int count[30],hgt[30],n,i,j,max,temp;

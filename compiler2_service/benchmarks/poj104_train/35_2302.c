@@ -1,3 +1,5 @@
+#define NUM_ITER 577
+
 #include <header.h>
 
 int m=0,n=0,i=0,k=0,e=0,t=0;

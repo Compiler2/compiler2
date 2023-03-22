@@ -1,3 +1,5 @@
+#define NUM_ITER 2248
+
 #include <header.h>
 
 void mysort(int*pn, int n)

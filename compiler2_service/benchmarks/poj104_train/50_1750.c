@@ -1,3 +1,5 @@
+#define NUM_ITER 18556
+
 #include <header.h>
 
 int jh[365];

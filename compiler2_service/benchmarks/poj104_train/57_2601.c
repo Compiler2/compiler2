@@ -1,3 +1,5 @@
+#define NUM_ITER 19778
+
 #include <header.h>
 
 const int M = 50;

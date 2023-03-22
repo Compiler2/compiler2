@@ -1,3 +1,5 @@
+#define NUM_ITER 14508
+
 #include <header.h>
 
 int func(int m,int q)

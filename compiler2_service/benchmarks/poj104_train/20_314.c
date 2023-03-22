@@ -1,3 +1,5 @@
+#define NUM_ITER 1226701
+
 #include <header.h>
 
 int MAX(char str[],int len)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1476590
+
 #include <header.h>
 
 void turn(char a[100])

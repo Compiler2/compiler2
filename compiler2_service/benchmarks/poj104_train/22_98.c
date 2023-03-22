@@ -1,3 +1,5 @@
+#define NUM_ITER 820006
+
 #include <header.h>
 
 int cvt(char c[],int n)

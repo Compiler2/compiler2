@@ -1,3 +1,5 @@
+#define NUM_ITER 867638
+
 #include <header.h>
 
 void swap(char a[],int n)

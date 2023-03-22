@@ -1,3 +1,5 @@
+#define NUM_ITER 40
+
 #include <header.h>
 
 double F(int n);

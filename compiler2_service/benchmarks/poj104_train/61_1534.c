@@ -1,3 +1,5 @@
+#define NUM_ITER 6580
+
 #include <header.h>
 
 int feibo(int n);

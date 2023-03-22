@@ -1,3 +1,5 @@
+#define NUM_ITER 6570
+
 #include <header.h>
 
 void change(int n,int m,int *p)

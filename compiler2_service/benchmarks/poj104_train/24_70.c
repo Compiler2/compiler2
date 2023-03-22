@@ -1,3 +1,5 @@
+#define NUM_ITER 1184772
+
 #include <header.h>
 
 char sentence[1000];

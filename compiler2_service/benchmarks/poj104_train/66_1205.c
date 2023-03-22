@@ -1,3 +1,5 @@
+#define NUM_ITER 50940
+
 #include <header.h>
 
 int isrunnian(int y){

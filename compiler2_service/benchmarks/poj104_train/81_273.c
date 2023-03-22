@@ -1,3 +1,5 @@
+#define NUM_ITER 226810
+
 #include <header.h>
 
 int num(int a,int b)

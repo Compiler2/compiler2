@@ -1,3 +1,5 @@
+#define NUM_ITER 27777
+
 #include <header.h>
 
 int count(int a,int b);

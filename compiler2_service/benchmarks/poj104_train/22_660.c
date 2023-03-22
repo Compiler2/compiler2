@@ -1,3 +1,5 @@
+#define NUM_ITER 1322349
+
 #include <header.h>
 
 int str2int(char str[], int result[])

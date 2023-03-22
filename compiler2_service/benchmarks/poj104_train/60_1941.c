@@ -1,3 +1,5 @@
+#define NUM_ITER 78353
+
 #include <header.h>
 
 int pa(int n)

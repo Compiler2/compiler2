@@ -1,3 +1,5 @@
+#define NUM_ITER 1555371
+
 #include <header.h>
 
 int a[10] = {100,50,20,10,5,1};

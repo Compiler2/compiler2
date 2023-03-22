@@ -1,3 +1,5 @@
+#define NUM_ITER 1740924
+
 #include <header.h>
 
 int n[300];

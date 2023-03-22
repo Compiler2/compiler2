@@ -1,3 +1,5 @@
+#define NUM_ITER 3415
+
 #include <header.h>
 
 struct mem

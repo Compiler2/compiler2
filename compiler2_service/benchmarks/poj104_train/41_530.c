@@ -1,3 +1,5 @@
+#define NUM_ITER 20900
+
 #include <header.h>
 
 char f(int a[5])

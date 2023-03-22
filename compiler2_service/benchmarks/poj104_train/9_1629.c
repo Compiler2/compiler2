@@ -1,3 +1,5 @@
+#define NUM_ITER 13485
+
 #include <header.h>
 
 struct f{

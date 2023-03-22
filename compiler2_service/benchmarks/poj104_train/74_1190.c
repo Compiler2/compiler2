@@ -1,3 +1,5 @@
+#define NUM_ITER 1399800
+
 #include <header.h>
 
 int CF(int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 4035
+
 #include <header.h>
 
 struct st

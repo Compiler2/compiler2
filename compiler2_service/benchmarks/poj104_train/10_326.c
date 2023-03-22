@@ -1,3 +1,5 @@
+#define NUM_ITER 4071
+
 #include <header.h>
 
 int Max(int n,int a[])

@@ -1,3 +1,5 @@
+#define NUM_ITER 7775
+
 #include <header.h>
 
 char name[101][22], yn[101][3];

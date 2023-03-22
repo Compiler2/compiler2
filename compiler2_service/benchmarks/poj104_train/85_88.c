@@ -1,3 +1,5 @@
+#define NUM_ITER 35031
+
 #include <header.h>
 
 int legal(char s[20])

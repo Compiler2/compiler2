@@ -1,3 +1,5 @@
+#define NUM_ITER 180409
+
 #include <header.h>
 
 int log(int n)

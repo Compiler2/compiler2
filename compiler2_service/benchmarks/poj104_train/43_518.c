@@ -1,3 +1,5 @@
+#define NUM_ITER 12901
+
 #include <header.h>
 
 int ss(int n)

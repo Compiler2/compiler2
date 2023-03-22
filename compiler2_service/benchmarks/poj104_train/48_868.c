@@ -1,3 +1,5 @@
+#define NUM_ITER 1213
+
 #include <header.h>
 
 int a[10][10];

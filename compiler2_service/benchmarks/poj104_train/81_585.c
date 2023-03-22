@@ -1,3 +1,5 @@
+#define NUM_ITER 229829
+
 #include <header.h>
 
 int jz(int *p,int n,int m)

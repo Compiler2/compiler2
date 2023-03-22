@@ -1,3 +1,5 @@
+#define NUM_ITER 4049
+
 #include <header.h>
 
 struct guahao

@@ -1,3 +1,5 @@
+#define NUM_ITER 1410861
+
 #include <header.h>
 
 void del(char a[100],int k,int n)

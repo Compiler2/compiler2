@@ -1,3 +1,5 @@
+#define NUM_ITER 1291050
+
 #include <header.h>
 
 char *calc(char *ps,char *pt)

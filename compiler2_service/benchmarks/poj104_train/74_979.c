@@ -1,3 +1,5 @@
+#define NUM_ITER 1620038
+
 #include <header.h>
 
 int zhi(int i);

@@ -1,3 +1,5 @@
+#define NUM_ITER 13496
+
 #include <header.h>
 
 void qkg(char *a);

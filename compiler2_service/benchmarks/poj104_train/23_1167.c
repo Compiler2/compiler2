@@ -1,3 +1,5 @@
+#define NUM_ITER 970921
+
 #include <header.h>
 
 int num(char x[])

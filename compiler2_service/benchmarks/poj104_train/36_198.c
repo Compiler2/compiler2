@@ -1,3 +1,5 @@
+#define NUM_ITER 443557
+
 #include <header.h>
 
 int compare(char a,char b[100],char c[100])

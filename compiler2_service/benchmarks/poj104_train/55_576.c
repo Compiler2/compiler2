@@ -1,3 +1,5 @@
+#define NUM_ITER 455471
+
 #include <header.h>
 
 void numchange(int x, int y, char c[100]);

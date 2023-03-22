@@ -1,3 +1,5 @@
+#define NUM_ITER 57557
+
 #include <header.h>
 
 void fanxu(char *p,int len);

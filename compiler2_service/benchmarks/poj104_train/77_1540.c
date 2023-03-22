@@ -1,3 +1,5 @@
+#define NUM_ITER 1259318
+
 #include <header.h>
 
 struct result{

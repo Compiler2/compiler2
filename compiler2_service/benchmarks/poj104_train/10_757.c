@@ -1,3 +1,5 @@
+#define NUM_ITER 49646
+
 #include <header.h>
 
 int com(void const *a,void const *b)

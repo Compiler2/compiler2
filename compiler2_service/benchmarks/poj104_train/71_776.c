@@ -1,3 +1,5 @@
+#define NUM_ITER 17611
+
 #include <header.h>
 
 int leapyear(int n)

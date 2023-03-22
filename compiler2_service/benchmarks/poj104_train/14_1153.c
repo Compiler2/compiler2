@@ -1,3 +1,5 @@
+#define NUM_ITER 18001
+
 #include <header.h>
 
 struct grade

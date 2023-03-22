@@ -1,3 +1,5 @@
+#define NUM_ITER 1645152
+
 #include <header.h>
 
 	int a[300];

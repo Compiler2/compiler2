@@ -1,3 +1,5 @@
+#define NUM_ITER 518
+
 #include <header.h>
 
 void f(int *p1,int *p2,int m,int n)

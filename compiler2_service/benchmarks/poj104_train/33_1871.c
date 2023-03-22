@@ -1,3 +1,5 @@
+#define NUM_ITER 23568
+
 #include <header.h>
 
 int len[10000];

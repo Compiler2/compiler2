@@ -1,3 +1,5 @@
+#define NUM_ITER 445
+
 #include <header.h>
 
 int panduan(int a,int b, int c,int d,int e);

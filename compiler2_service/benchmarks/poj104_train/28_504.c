@@ -1,3 +1,5 @@
+#define NUM_ITER 826383
+
 #include <header.h>
 
 int read(char x[])

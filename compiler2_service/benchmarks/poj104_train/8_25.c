@@ -1,3 +1,5 @@
+#define NUM_ITER 1377
+
 #include <header.h>
 
 int a[50],b[50],e[100];

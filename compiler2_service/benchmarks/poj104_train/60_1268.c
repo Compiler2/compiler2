@@ -1,3 +1,5 @@
+#define NUM_ITER 15594
+
 #include <header.h>
 
   int p(int a)

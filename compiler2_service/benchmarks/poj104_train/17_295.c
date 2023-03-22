@@ -1,3 +1,5 @@
+#define NUM_ITER 101637
+
 #include <header.h>
 
 void pipei(char x[],int l)

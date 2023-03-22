@@ -1,3 +1,5 @@
+#define NUM_ITER 14792
+
 #include <header.h>
 
 struct qj{

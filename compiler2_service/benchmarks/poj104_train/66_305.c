@@ -1,3 +1,5 @@
+#define NUM_ITER 1103256
+
 #include <header.h>
 
 int xinqi(int z,int x,int w)

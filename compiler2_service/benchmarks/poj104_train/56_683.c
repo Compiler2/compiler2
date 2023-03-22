@@ -1,3 +1,5 @@
+#define NUM_ITER 1017650
+
 #include <header.h>
 
 long fang(long x);  

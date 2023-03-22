@@ -1,3 +1,5 @@
+#define NUM_ITER 19829
+
 #include <header.h>
 
 int judgechar(char x){

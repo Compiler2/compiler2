@@ -1,3 +1,5 @@
+#define NUM_ITER 401470
+
 #include <header.h>
 
 const long maxL=300;

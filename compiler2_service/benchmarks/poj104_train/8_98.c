@@ -1,3 +1,5 @@
+#define NUM_ITER 1473
+
 #include <header.h>
 
 int str1[100],str2[100],str[200];

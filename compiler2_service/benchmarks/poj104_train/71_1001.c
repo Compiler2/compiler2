@@ -1,3 +1,5 @@
+#define NUM_ITER 6487
+
 #include <header.h>
 
 int fc(int year,int mon1,int mon2);

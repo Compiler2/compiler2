@@ -1,3 +1,5 @@
+#define NUM_ITER 693229
+
 #include <header.h>
 
 char str2[1000]={0};

@@ -1,3 +1,5 @@
+#define NUM_ITER 2908
+
 #include <header.h>
 
 void f1(float a[],int x);

@@ -1,3 +1,5 @@
+#define NUM_ITER 958639
+
 #include <header.h>
 
 void zhuan(char str[80])

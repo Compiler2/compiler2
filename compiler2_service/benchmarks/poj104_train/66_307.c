@@ -1,3 +1,5 @@
+#define NUM_ITER 74491
+
 #include <header.h>
 
 int y,m,d,sum;

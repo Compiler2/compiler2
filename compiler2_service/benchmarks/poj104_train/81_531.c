@@ -1,3 +1,5 @@
+#define NUM_ITER 232023
+
 #include <header.h>
 
 int find(int n,int m)

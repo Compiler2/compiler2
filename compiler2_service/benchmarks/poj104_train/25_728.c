@@ -1,3 +1,5 @@
+#define NUM_ITER 492
+
 #include <header.h>
 
 void bigmulti(char a[],char b[],char c[])

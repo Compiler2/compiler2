@@ -1,3 +1,5 @@
+#define NUM_ITER 32
+
 #include <header.h>
 
 int bianyuan(int n,int m){

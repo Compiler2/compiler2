@@ -1,3 +1,5 @@
+#define NUM_ITER 189846
+
 #include <header.h>
 
 struct dian

@@ -1,3 +1,5 @@
+#define NUM_ITER 195121
+
 #include <header.h>
 
 int zhishu(int num){

@@ -1,3 +1,5 @@
+#define NUM_ITER 274577
+
 #include <header.h>
 
 int runnian(int x);

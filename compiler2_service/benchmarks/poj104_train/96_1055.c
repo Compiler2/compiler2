@@ -1,3 +1,5 @@
+#define NUM_ITER 1114569
+
 #include <header.h>
 
 int con13(int x,int y)

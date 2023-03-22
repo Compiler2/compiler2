@@ -1,3 +1,5 @@
+#define NUM_ITER 704453
+
 #include <header.h>
 
 int month(int i)

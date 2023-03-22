@@ -1,3 +1,5 @@
+#define NUM_ITER 162488
+
 #include <header.h>
 
 int outcome(int n)

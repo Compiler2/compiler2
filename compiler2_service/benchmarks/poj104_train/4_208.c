@@ -1,3 +1,5 @@
+#define NUM_ITER 511
+
 #include <header.h>
 
 int mhang(int a){

@@ -1,3 +1,5 @@
+#define NUM_ITER 186063
+
 #include <header.h>
 
 int panduan(char *a,int n)

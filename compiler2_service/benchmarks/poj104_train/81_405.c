@@ -1,3 +1,5 @@
+#define NUM_ITER 205079
+
 #include <header.h>
 
 int f(int (*p)[5],int m,int n)

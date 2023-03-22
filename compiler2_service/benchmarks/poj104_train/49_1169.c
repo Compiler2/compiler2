@@ -1,3 +1,5 @@
+#define NUM_ITER 1179677
+
 #include <header.h>
 
 void hw(char a[],int n)

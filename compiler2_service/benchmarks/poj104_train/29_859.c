@@ -1,3 +1,5 @@
+#define NUM_ITER 130
+
 #include <header.h>
 
 int shulie(int);

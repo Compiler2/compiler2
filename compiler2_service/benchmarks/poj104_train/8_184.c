@@ -1,3 +1,5 @@
+#define NUM_ITER 2524
+
 #include <header.h>
 
 int m,n,a[100],b[100];

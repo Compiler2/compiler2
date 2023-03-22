@@ -1,3 +1,5 @@
+#define NUM_ITER 91484
+
 #include <header.h>
 
 char t[200];

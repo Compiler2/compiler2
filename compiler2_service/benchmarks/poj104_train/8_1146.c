@@ -1,3 +1,5 @@
+#define NUM_ITER 2286
+
 #include <header.h>
 
 void in(int a[],int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 12343
+
 #include <header.h>
 
 int i(int a,int b,int c)

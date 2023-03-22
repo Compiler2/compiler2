@@ -1,3 +1,5 @@
+#define NUM_ITER 595
+
 #include <header.h>
 
 int n,m;

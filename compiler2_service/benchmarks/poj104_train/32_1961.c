@@ -1,3 +1,5 @@
+#define NUM_ITER 10996
+
 #include <header.h>
 
 int minus(char str2[]);

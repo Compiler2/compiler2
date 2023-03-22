@@ -1,3 +1,5 @@
+#define NUM_ITER 27359
+
 #include <header.h>
 
 int  num1[10000],num2[10000],n;

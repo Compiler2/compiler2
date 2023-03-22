@@ -1,3 +1,5 @@
+#define NUM_ITER 9855
+
 #include <header.h>
 
 struct Inf

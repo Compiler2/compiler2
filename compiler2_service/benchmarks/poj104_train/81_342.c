@@ -1,3 +1,5 @@
+#define NUM_ITER 231027
+
 #include <header.h>
 
 int p(int x[5][5],int y,int z)

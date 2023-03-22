@@ -1,3 +1,5 @@
+#define NUM_ITER 18036
+
 #include <header.h>
 
 double b(double x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 216376
+
 #include <header.h>
 
 int ar(int n,int m);

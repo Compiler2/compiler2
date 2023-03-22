@@ -1,3 +1,5 @@
+#define NUM_ITER 10218
+
 #include <header.h>
 
 

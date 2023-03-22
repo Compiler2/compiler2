@@ -1,3 +1,5 @@
+#define NUM_ITER 1160906
+
 #include <header.h>
 
 int hws(int x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 964874
+
 #include <header.h>
 
 void change(char p[99])

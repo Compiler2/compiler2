@@ -1,3 +1,5 @@
+#define NUM_ITER 9603
+
 #include <header.h>
 
 int check(int b[],int x)

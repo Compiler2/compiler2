@@ -1,3 +1,5 @@
+#define NUM_ITER 416714
+
 #include <header.h>
 
 int power(long int a,long int i)

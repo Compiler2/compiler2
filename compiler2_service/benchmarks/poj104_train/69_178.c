@@ -1,3 +1,5 @@
+#define NUM_ITER 765621
+
 #include <header.h>
 
 void add(char* a,char* b,char* c)

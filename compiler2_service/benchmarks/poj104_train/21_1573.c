@@ -1,3 +1,5 @@
+#define NUM_ITER 4753
+
 #include <header.h>
 
 struct point

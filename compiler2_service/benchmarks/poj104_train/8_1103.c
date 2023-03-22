@@ -1,3 +1,5 @@
+#define NUM_ITER 10959
+
 #include <header.h>
 
 int bijiao(const void *x,const void *y)

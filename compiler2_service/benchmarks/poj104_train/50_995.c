@@ -1,3 +1,5 @@
+#define NUM_ITER 898064
+
 #include <header.h>
 
 int day(int mouth)

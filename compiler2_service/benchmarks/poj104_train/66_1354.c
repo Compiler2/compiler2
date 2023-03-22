@@ -1,3 +1,5 @@
+#define NUM_ITER 164914
+
 #include <header.h>
 
 int sum;

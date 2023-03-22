@@ -1,3 +1,5 @@
+#define NUM_ITER 2448
+
 #include <header.h>
 
 void px(int a[100],int k)

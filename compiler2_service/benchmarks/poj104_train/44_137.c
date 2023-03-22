@@ -1,3 +1,5 @@
+#define NUM_ITER 425926
+
 #include <header.h>
 
 int rev(int a);

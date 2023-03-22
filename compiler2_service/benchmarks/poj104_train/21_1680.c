@@ -1,3 +1,5 @@
+#define NUM_ITER 41490
+
 #include <header.h>
 
 void average(int a[],float b[])

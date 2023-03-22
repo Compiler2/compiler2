@@ -1,3 +1,5 @@
+#define NUM_ITER 727
+
 #include <header.h>
 
 void p(int a[9][9])

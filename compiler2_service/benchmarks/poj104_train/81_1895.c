@@ -1,3 +1,5 @@
+#define NUM_ITER 244464
+
 #include <header.h>
 
 int qq(int m,int n)

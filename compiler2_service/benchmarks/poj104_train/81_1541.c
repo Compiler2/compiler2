@@ -1,3 +1,5 @@
+#define NUM_ITER 215114
+
 #include <header.h>
 
 int pd(int x,int y);

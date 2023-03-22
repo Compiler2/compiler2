@@ -1,3 +1,5 @@
+#define NUM_ITER 8988
+
 #include <header.h>
 
 struct Aw{

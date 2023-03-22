@@ -1,3 +1,5 @@
+#define NUM_ITER 902471
+
 #include <header.h>
 
 int w;

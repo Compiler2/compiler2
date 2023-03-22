@@ -1,3 +1,5 @@
+#define NUM_ITER 1140599
+
 #include <header.h>
 
 void change(char x[50],int n)

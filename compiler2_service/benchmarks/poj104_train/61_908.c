@@ -1,3 +1,5 @@
+#define NUM_ITER 50942
+
 #include <header.h>
 
 int a[22]={0,1,1};

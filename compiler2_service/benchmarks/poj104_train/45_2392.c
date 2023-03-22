@@ -1,3 +1,5 @@
+#define NUM_ITER 1016858
+
 #include <header.h>
 
 int cap(char s[],char w[],int i)

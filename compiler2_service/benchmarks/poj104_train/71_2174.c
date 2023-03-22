@@ -1,3 +1,5 @@
+#define NUM_ITER 7431
+
 #include <header.h>
 
 int y(int year)

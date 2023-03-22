@@ -1,3 +1,5 @@
+#define NUM_ITER 87011
+
 #include <header.h>
 
 int main_bench(){ int m,i,j,k,c=0;my_scanf("%d",&m);

@@ -1,3 +1,5 @@
+#define NUM_ITER 20072
+
 #include <header.h>
 
 int k[99999];

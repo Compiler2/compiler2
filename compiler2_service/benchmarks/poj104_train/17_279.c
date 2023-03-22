@@ -1,3 +1,5 @@
+#define NUM_ITER 100515
+
 #include <header.h>
 
 char a[200],b[200];

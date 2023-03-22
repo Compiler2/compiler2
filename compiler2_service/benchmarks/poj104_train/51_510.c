@@ -1,3 +1,5 @@
+#define NUM_ITER 1129800
+
 #include <header.h>
 
 char str[501][5];

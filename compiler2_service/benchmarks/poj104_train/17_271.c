@@ -1,3 +1,5 @@
+#define NUM_ITER 1633
+
 #include <header.h>
 
 void deal(char s[])

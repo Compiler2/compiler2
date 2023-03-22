@@ -1,3 +1,5 @@
+#define NUM_ITER 36
+
 #include <header.h>
 
 char a[105][105];

@@ -1,3 +1,5 @@
+#define NUM_ITER 29891
+
 #include <header.h>
 
 int First(char i)

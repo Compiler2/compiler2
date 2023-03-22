@@ -1,3 +1,5 @@
+#define NUM_ITER 212245
+
 #include <header.h>
 
 int jhsz(int sz[5][5],int m,int n);

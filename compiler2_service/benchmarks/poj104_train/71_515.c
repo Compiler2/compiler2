@@ -1,3 +1,5 @@
+#define NUM_ITER 20811
+
 #include <header.h>
 
 struct date {

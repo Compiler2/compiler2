@@ -1,3 +1,5 @@
+#define NUM_ITER 439380
+
 #include <header.h>
 
 int re(int n){

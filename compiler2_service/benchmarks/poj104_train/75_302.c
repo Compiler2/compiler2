@@ -1,3 +1,5 @@
+#define NUM_ITER 394894
+
 #include <header.h>
 
 int change(char a[100])

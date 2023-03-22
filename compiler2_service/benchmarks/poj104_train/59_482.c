@@ -1,3 +1,5 @@
+#define NUM_ITER 52
+
 #include <header.h>
 
    char sz[102][102][102];

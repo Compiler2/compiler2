@@ -1,3 +1,5 @@
+#define NUM_ITER 8109
+
 #include <header.h>
 
 int calday(int year,int month,int day);

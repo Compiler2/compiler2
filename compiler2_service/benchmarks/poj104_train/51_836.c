@@ -1,3 +1,5 @@
+#define NUM_ITER 1080965
+
 #include <header.h>
 
 struct ma{

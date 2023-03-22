@@ -1,3 +1,5 @@
+#define NUM_ITER 2523
+
 #include <header.h>
 
 void output(int c[],int m,int n)

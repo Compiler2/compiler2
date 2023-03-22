@@ -1,3 +1,5 @@
+#define NUM_ITER 215939
+
 #include <header.h>
 
 int juzhen(int n,int m);

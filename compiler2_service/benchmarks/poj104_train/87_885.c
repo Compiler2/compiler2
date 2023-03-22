@@ -1,3 +1,5 @@
+#define NUM_ITER 1096841
+
 #include <header.h>
 
 int jm(int f,int m){

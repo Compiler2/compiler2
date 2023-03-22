@@ -1,3 +1,5 @@
+#define NUM_ITER 6178
+
 #include <header.h>
 
 int mark[300];

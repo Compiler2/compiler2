@@ -1,3 +1,5 @@
+#define NUM_ITER 759
+
 #include <header.h>
 
 int a[20][20],b[20][20];

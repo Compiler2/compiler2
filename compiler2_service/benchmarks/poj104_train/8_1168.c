@@ -1,3 +1,5 @@
+#define NUM_ITER 10290
+
 #include <header.h>
 
 void output(int n,int m,int a[],int b[])

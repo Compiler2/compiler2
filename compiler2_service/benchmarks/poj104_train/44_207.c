@@ -1,3 +1,5 @@
+#define NUM_ITER 299563
+
 #include <header.h>
 
 void reverse(char n[])

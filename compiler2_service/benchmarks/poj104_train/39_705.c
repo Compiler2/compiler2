@@ -1,3 +1,5 @@
+#define NUM_ITER 8629
+
 #include <header.h>
 
 struct student

@@ -1,3 +1,5 @@
+#define NUM_ITER 2674
+
 #include <header.h>
 
 void order(char ch[],int n)

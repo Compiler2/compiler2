@@ -1,3 +1,5 @@
+#define NUM_ITER 695393
+
 #include <header.h>
 
 void num(char a[],int c[],int l[],int n)

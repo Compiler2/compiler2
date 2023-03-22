@@ -1,3 +1,5 @@
+#define NUM_ITER 1459
+
 #include <header.h>
 
  struct author

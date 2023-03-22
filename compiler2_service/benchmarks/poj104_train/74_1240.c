@@ -1,3 +1,5 @@
+#define NUM_ITER 1244336
+
 #include <header.h>
 
 int sortprime(int n)

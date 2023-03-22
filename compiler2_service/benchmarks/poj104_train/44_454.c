@@ -1,3 +1,5 @@
+#define NUM_ITER 241476
+
 #include <header.h>
 
 int g(int a)

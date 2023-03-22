@@ -1,3 +1,5 @@
+#define NUM_ITER 5208
+
 #include <header.h>
 
  int *data;

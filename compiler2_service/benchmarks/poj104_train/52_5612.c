@@ -1,3 +1,5 @@
+#define NUM_ITER 40488
+
 #include <header.h>
 
 int arrange(int a[],int q,int p)

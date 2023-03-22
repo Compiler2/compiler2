@@ -1,3 +1,5 @@
+#define NUM_ITER 188688
+
 #include <header.h>
 
 int djt(int y, int m, int d);

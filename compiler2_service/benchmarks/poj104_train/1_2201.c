@@ -1,3 +1,5 @@
+#define NUM_ITER 2568
+
 #include <header.h>
 
 void find(int m,int j,int *p)

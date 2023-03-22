@@ -1,3 +1,5 @@
+#define NUM_ITER 5264
+
 #include <header.h>
 
 double fei(int n);

@@ -1,3 +1,5 @@
+#define NUM_ITER 332579
+
 #include <header.h>
 
 void reverse(int n)

@@ -1,3 +1,5 @@
+#define NUM_ITER 38620
+
 #include <header.h>
 
 int pai(int a[],int n,int k);
