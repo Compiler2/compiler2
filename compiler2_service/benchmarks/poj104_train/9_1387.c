@@ -14,9 +14,9 @@ int main_bench()
     struct student*pstu=stu,e;
     pstu=&stu[0];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%s %d",stu[i].num,&stu[i].age);
+	my_scanf("%s %d",stu[i].num,&stu[i].age);
 
     }
     for(j=0;j<n;j++){if(stu[j].age>=60){
@@ -28,7 +28,7 @@ int main_bench()
                                         }
                      }}
     for(i=0;i<n;i++){
-                     printf("%s\n",(pstu+i)->num);}
+                     my_printf("%s\n",(pstu+i)->num);}
 return 0;
    
 

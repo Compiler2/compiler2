@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a1,b1,a2,b2;
-    scanf("%d %d",&a1,&b1);                  
+    my_scanf("%d %d",&a1,&b1);                  
     int **p=(int **)malloc(a1*sizeof(int *));
     for(int i1=0;i1<=a1-1;i1++)
     {
@@ -14,10 +14,10 @@ int main_bench()
     {
         for(i3=0;i3<=b1-1;i3++)
         {
-            scanf("%d",&p[i2][i3]);    
+            my_scanf("%d",&p[i2][i3]);    
         }
     }                             
-    scanf("%d %d",&a2,&b2);                 
+    my_scanf("%d %d",&a2,&b2);                 
     int **q=(int **)malloc(a2*sizeof(int *));
     for(int j1=0;j1<=a2-1;j1++)
     {
@@ -28,7 +28,7 @@ int main_bench()
     {
         for(j3=0;j3<=b2-1;j3++)
         {
-            scanf("%d",&q[j2][j3]);    
+            my_scanf("%d",&q[j2][j3]);    
         }
     }
     int **r=(int **)malloc(a1*sizeof(int *)); 
@@ -53,13 +53,13 @@ int main_bench()
     {
             for(v=0;v<=b2-2;v++)
             {
-                printf("%d ",r[w][v]);
+                my_printf("%d ",r[w][v]);
             }
             if(v==b2-1)
             {
-                printf("%d",r[w][v]);
+                my_printf("%d",r[w][v]);
             } 
-            printf("\n");
+            my_printf("\n");
     } 
 
 }

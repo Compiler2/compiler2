@@ -6,10 +6,10 @@ int main_bench()
 	int i,I,n,j;
     int k=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for (i=0;i<n;i++)
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
     
 	for (I=1;I<n;I++){
    	   for (i=0;i<I;i++){
@@ -34,8 +34,8 @@ int main_bench()
     }     
 	
 	for(i=0;i<n-k-1;i++)
-        printf("%d ",a[i]);
-        printf("%d",a[n-k-1]);
+        my_printf("%d ",a[i]);
+        my_printf("%d",a[n-k-1]);
   
    return 0;
 }	

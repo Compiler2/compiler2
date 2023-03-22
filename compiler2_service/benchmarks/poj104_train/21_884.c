@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,l=0,k,m,f[300];
 	float s=0,a[301]={0},c,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		s=s+a[i];
 	}
 	s=s/n;
@@ -38,9 +38,9 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",f[0]);
+	my_printf("%d",f[0]);
 	for(i=1;i<n;i++)
-		printf(",%d",f[i]);
+		my_printf(",%d",f[i]);
 	return 0;
 }
 

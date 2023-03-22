@@ -3,7 +3,7 @@
 int main_bench(){
 	int m,h,i,j;
 	double a[100],b[100],c[100],he=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	a[0]=2;
 	a[1]=1.5;
     b[0]=2;
@@ -16,11 +16,11 @@ int main_bench(){
 		a[i]=b[i]/c[i];
 	}
     for(i=0;i<m;i++){
-		scanf("%d",&h);
+		my_scanf("%d",&h);
 		he=0;
     	for(j=0;j<h;j++)
 			he=he+a[j];
-			printf("%.3lf\n",he);
+			my_printf("%.3lf\n",he);
 		}
 	 return 0;
 }

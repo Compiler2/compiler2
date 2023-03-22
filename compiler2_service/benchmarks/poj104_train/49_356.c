@@ -24,8 +24,8 @@ int main_bench()
 				if(flag == 1)
 				{
 					for(j = i ; j <= i + l - 1; j ++)
-					printf("%c",str[j]);
-					printf("\n");
+					my_printf("%c",str[j]);
+					my_printf("\n");
 				}
 				flag = 1;
 			}

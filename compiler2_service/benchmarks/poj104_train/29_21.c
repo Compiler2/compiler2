@@ -10,12 +10,12 @@ int main_bench()
 
 
 	int m,i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	int n[500];
 	for(i=0;i<m;i++)
 	{
-    	scanf("%d",&n[i]);
+    	my_scanf("%d",&n[i]);
 	}
 
 	int fm[500];
@@ -37,7 +37,7 @@ int main_bench()
 			sum[i]+=(fz[j]*1.0)/(fm[j]*1.0);
 		}
 
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 
 	return 0;

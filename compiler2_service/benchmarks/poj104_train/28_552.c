@@ -19,9 +19,9 @@ int main_bench(){
 		if(n[i]==0){
 			continue;
 		}
-		printf("%d,",n[i]);
+		my_printf("%d,",n[i]);
 	}
 	n[i]=m[i+1]-m[i]-1;
-	printf("%d",n[i]);
+	my_printf("%d",n[i]);
 	return 0;
 }

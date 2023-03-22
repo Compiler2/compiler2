@@ -5,7 +5,7 @@ main_bench()
 int n;
 int f;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 char p[n][100];
 for(int i=0;i<=n-1;i++)
@@ -20,9 +20,9 @@ for(int i=0;i<=n-1;i++)
           f=1;
   }
   if(((p[i][0]=='_')||(p[i][0]>='a'&&p[i][0]<='z')||(p[i][0]>='A'&&p[i][0]<='Z'))&&f==0)
-  printf("1\n");
+  my_printf("1\n");
   else
-  printf("0\n");
+  my_printf("0\n");
 
 
 }

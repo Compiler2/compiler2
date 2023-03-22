@@ -22,7 +22,7 @@ int main_bench(){
 					word[d] = (c != 1);
 					word[e] = (d == 1);
 					if(word[1] && word[2] && !word[3] && !word[4] && !word[5]){
-						printf("%d %d %d %d %d\n",a,b,c,d,e);break;
+						my_printf("%d %d %d %d %d\n",a,b,c,d,e);break;
 					}
 				}
 			}

@@ -5,10 +5,10 @@ int main_bench()
  char a[200];
  int acal[26]={0};int bcal[26]={0};
   int alen,blen,i=0;
- scanf("%s %s",&a,&b);
+ my_scanf("%s %s",&a,&b);
  alen=strlen(a);
  blen=strlen(b);
- if(alen!=blen)printf("NO");
+ if(alen!=blen)my_printf("NO");
  else
   { for(i=0;i<=alen-1;i++)
     { acal[a[i]-97]++;                          }
@@ -18,9 +18,9 @@ int main_bench()
     { if(acal[i]!=bcal[i])
       break;}
     if(i==26)
-    printf("YES");
+    my_printf("YES");
     else
-    printf("NO");
+    my_printf("NO");
   }
   
  getchar();

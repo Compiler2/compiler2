@@ -4,9 +4,9 @@ main_bench()
 {
       int n1,n2,i,j=0,k,a,b;
       char str1[252],str2[252],str3[252];
-      scanf("%s",str1);
-      scanf("%s",str2);
-      if(str1[0]=='0'&&str1[1]=='\0')printf("%s",str2);
+      my_scanf("%s",str1);
+      my_scanf("%s",str2);
+      if(str1[0]=='0'&&str1[1]=='\0')my_printf("%s",str2);
       else{
       for(a=0;a<250;a++){
       if(str1[a]=='0'){
@@ -35,7 +35,7 @@ main_bench()
       str3[0]=49;
       str3[n1+1]='\0';}
       else str3[n1]='\0';
-      printf("%s",str3);
+      my_printf("%s",str3);
       }
       else{
       for(i=1;(n2-i)>=0;i++){
@@ -52,6 +52,6 @@ main_bench()
       str3[0]=49;
       str3[n2+1]='\0';}
       else str3[n2]='\0';
-      printf("%s",str3);
+      my_printf("%s",str3);
       }}
 }

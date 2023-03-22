@@ -20,13 +20,13 @@ int main_bench(){
 	int n;
 	int a=0;
 	int b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		b=max(min(a,c),min(a,b));
 		a=max(a,c);
 	}
-	printf("%d\n",a);
-	printf("%d\n",b);
+	my_printf("%d\n",a);
+	my_printf("%d\n",b);
 
 }

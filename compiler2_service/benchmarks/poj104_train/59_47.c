@@ -7,13 +7,13 @@ char change(int m, int n);
 int main_bench()
 {
 	int n,day,t,amount=0,i,j,k,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",suite[i]);
+		my_scanf("%s",suite[i]);
 	}
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 	for(t=0;t<day-1;t++)
 	{
 		for(i=0;i<n;i++)
@@ -49,7 +49,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",amount);
+	my_printf("%d",amount);
 	return 0;
 }
 

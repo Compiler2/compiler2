@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char str[1000];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	char charCurrent ,charNext;
 	charCurrent = charNext = toupper(str[0]);
 	int count = 0;
@@ -23,10 +23,10 @@ int main_bench()
 		}
 		else
 		{
-			printf("(%c,%d)",charCurrent,count + 1);
+			my_printf("(%c,%d)",charCurrent,count + 1);
 			count = 0;	
 		}
 	}
-	printf("(%c,%d)",charCurrent,count);
+	my_printf("(%c,%d)",charCurrent,count);
 	return 0;
 }

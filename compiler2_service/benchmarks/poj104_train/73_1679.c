@@ -7,7 +7,7 @@ int main_bench()
  
  for(i=0;i<5;i++){
 	 for(j=0;j<5;j++){
-		 scanf("%d",&a[i][j]);
+		 my_scanf("%d",&a[i][j]);
 	 }
  }
  
@@ -31,11 +31,11 @@ int main_bench()
 	 }
 	 
 	 if(sum==5){
-				 printf("%d %d %d",h+1,l+1,a[h][l]);
+				 my_printf("%d %d %d",h+1,l+1,a[h][l]);
 				 return 0;
 			 }
  }
 	    
- printf("not found");
+ my_printf("not found");
  return 0;
 }

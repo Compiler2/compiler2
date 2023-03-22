@@ -12,12 +12,12 @@ int qipa(int p,int q)
 int main_bench()
 {
   int i,j,n,m,t;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1;i<=n;i++)
   {
-    scanf("%d",&m);   
+    my_scanf("%d",&m);   
     t=qipa(m,m);
-    printf("%d\n",t);    
+    my_printf("%d\n",t);    
   }
 return 0;
 }

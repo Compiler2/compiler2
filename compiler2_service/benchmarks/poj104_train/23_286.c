@@ -14,11 +14,11 @@ int main_bench()
 	for(j=total;j>1;j--)
 	{for(k=start[j]-1;k<=end[j]-1;k++)
 	{if(k!=end[j]-1)
-		printf("%c",str[k]);
+		my_printf("%c",str[k]);
 		else
-			printf("%c ",str[k]);}}
+			my_printf("%c ",str[k]);}}
 			if(j=1)
 				for(k=0;k<end[1];k++)
-				printf("%c",str[k]);
+				my_printf("%c",str[k]);
 	return 0;	
 }

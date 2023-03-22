@@ -5,7 +5,7 @@ int main_bench(){
 	char s[100];
 	int sz[1000];
 	char x;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	x='_';
 	for(int a=0;a<n;a++){
 		sz[a]=0;
@@ -28,10 +28,10 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]==1){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

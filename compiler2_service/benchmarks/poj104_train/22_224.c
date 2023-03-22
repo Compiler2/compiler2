@@ -12,14 +12,14 @@ int main_bench()
 {
 	int a[300],i,n,m,t,k;
 	char c;
-    scanf("%d",&a[0]);
+    my_scanf("%d",&a[0]);
 	for(i=1;;i++)
 	{
 		if((c=getchar())!=',') break;
-		else scanf("%d",&a[i]);
+		else my_scanf("%d",&a[i]);
 	}
 	n=i;
-	if(n==1) printf("No");
+	if(n==1) my_printf("No");
 	else
 	{
         t=max(a,n);
@@ -28,11 +28,11 @@ int main_bench()
 		{
 			if(a[max(a,n)]==m)
 			{
-				if(k==n-1) printf("No");
+				if(k==n-1) my_printf("No");
 				a[max(a,n)]=0;
 			}
 			else 
-			{printf("%d",a[max(a,n)]);break;}
+			{my_printf("%d",a[max(a,n)]);break;}
 		}
 	}
 }

@@ -22,17 +22,17 @@ int main_bench()
 		{
 			if(start==0)
 			{
-				printf("%d",word);
+				my_printf("%d",word);
 				start++;
 			}
-			else printf(",%d",word);
+			else my_printf(",%d",word);
 			word=0;
 			temp=1;
 		}
 	}
 	if(start==0)
-			printf("%d",word);
-	else printf(",%d",word);	
+			my_printf("%d",word);
+	else my_printf(",%d",word);	
 
 	return 0;
 }

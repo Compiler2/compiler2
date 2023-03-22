@@ -6,11 +6,11 @@ int main_bench()
 {
 	int n,i,j,x,y,o,p,q=0,c,d;
 	int a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{for(j=0;j<n;j++)
 		{
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 			
 		}
 	}
@@ -30,7 +30,7 @@ int main_bench()
 			c=o-x-1;
 			d=p-y-1;
 			q=c*d;
-	printf("%d\n",q);
+	my_printf("%d\n",q);
 	return 0;
 }
 

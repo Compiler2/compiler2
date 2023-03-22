@@ -14,10 +14,10 @@ int ss(int x)
 int main_bench()
 {
     int a,b,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if (n<5)
        {
-           printf("empty");
+           my_printf("empty");
            return 0;
        }
     for(a=2,b=0;a<=(n-2);a++)
@@ -27,7 +27,7 @@ int main_bench()
                b=a+2;
                if(ss(b))
                  {
-                     printf("%d %d\n",a,b);
+                     my_printf("%d %d\n",a,b);
                  }
 
            }

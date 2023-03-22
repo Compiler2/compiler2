@@ -5,18 +5,18 @@ int main_bench(){
 	int i,k;
 	int f0,f1,f2,fm,fz;
 	double x=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
 	
 	for(i=0;i<n;i++){
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m==1){
 		x=1.0*2/1;
-		printf("%.3lf\n",x);
+		my_printf("%.3lf\n",x);
 	}
 	if(m==2){
 		x=1.0*3/2+1.0*2/1;
-		printf("%.3lf\n",x);
+		my_printf("%.3lf\n",x);
 	}
     if(m>2){	
 	f0=1;
@@ -33,7 +33,7 @@ int main_bench(){
         x+=1.0*fz/fm;
 		}
 		
-		printf("%.3lf\n",x);
+		my_printf("%.3lf\n",x);
 
 	}
 	}

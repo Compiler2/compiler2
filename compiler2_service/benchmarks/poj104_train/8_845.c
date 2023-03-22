@@ -11,9 +11,9 @@ int main_bench()
 void print(int a[100],int b[100])
 {
 	int n,m,i,j,k,l=0;
-	scanf("%d %d",&n,&m);
-	for(i=0;i<n;i++) {scanf("%d",&a[i]);}
-	for(i=0;i<m;i++) {scanf("%d",&b[i]);}
+	my_scanf("%d %d",&n,&m);
+	for(i=0;i<n;i++) {my_scanf("%d",&a[i]);}
+	for(i=0;i<m;i++) {my_scanf("%d",&b[i]);}
 	for(i=0;i<n-1;i++)
 	{
 		for(j=0;j<n-1-i;j++)
@@ -30,12 +30,12 @@ void print(int a[100],int b[100])
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%d",b[i]);
+		my_printf("%d",b[i]);
 		if(i==m-1) break;
-		printf(" ");
+		my_printf(" ");
 	}
 }

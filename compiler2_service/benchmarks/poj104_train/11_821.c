@@ -3,7 +3,7 @@
 main_bench()
 {
       int a[12],b[100000],c,d,e,i,s,t=0;
-      scanf("%d %d %d\n",&c,&d,&e);
+      my_scanf("%d %d %d\n",&c,&d,&e);
       if(c%4!=0 || (c%100==0 && c%400!=0))
       {
       a[0]=31;
@@ -40,7 +40,7 @@ main_bench()
       t=t+a[i];
       s=t+e;
       }
-      printf("%d",s);
+      my_printf("%d",s);
       getchar();
       getchar();
       }

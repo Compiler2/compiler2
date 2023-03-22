@@ -1,15 +1,15 @@
 #include <header.h>
 
 
-char main_bench()
+int main_bench()
 {
 	int i,n,j,f[1000],l[1000];
 	char a[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
 		f[j]=1;
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l[j]=strlen(a);
 		if(a[0]<65 || (a[0]>90&&a[0]<95) || (a[0]>95&&a[0]<97) || a[0]>122)
 		{
@@ -35,9 +35,9 @@ char main_bench()
 	for(j=0;j<n;j++)
 	{
 		if(f[j]==1)
-			printf("\nyes");
+			my_printf("\nyes");
 		else if(f[j]==0)
-			printf("\nno");
+			my_printf("\nno");
 	}
 	return 0;
 }

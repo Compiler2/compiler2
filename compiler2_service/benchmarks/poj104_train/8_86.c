@@ -15,11 +15,11 @@ int main_bench()
 void read( )
 {   
 	int i;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
     for(i=0;i<n;i++)
-        scanf("%d",&y[i]);
+        my_scanf("%d",&y[i]);
 }
 void orde(int c[100],int d[100])
 {
@@ -63,6 +63,6 @@ void show(int g[100])
 {
 	int i;
 	for(i=0;i<m+n-1;i++)
-		printf("%d ",x[i]);
-	printf("%d\n",x[m+n-1]);
+		my_printf("%d ",x[i]);
+	my_printf("%d\n",x[m+n-1]);
 }

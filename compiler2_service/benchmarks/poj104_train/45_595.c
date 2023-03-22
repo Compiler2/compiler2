@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str1[50],str2[50],*p,*q,*t;
 	int m;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	p=str1;
 	q=str2;
 	while(*q!='\0')
@@ -20,7 +20,7 @@ int main_bench()
 				}
 			if(m)
 			{
-				printf("%d\n",t-str2);
+				my_printf("%d\n",t-str2);
 				break;
 			}
 			else

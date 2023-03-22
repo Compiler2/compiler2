@@ -4,7 +4,7 @@ int main_bench()
 {
 	int month[13];
 	int day,n=0,i,d;
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 	for(i=1;i<=12;i++)
 	{   month[0]=0;
 		if(i==2)
@@ -24,7 +24,7 @@ int main_bench()
 		d=((((n+13)%7)+day)%7)-1;
 		if(d==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	

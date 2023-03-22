@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j;
 	int LEN;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for ( i = 0 ; i < n ; i ++)
 	{
@@ -17,21 +17,21 @@ int main_bench()
 			switch ( s[j] )
 			{
 			case 'A':
-				printf("T");
+				my_printf("T");
 				break;
 			case 'T':
-				printf("A");
+				my_printf("A");
 				break;
 			case 'C':
-				printf("G");
+				my_printf("G");
 				break;
 			case 'G':
-				printf("C");
+				my_printf("C");
 				break;
 			}
 		}
 		if( i < n-1)
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

@@ -22,9 +22,9 @@ main_bench()
   int i,n,c;
   for(i=1;i<=6;i++)
   {
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       c=reverse(n);
-      printf("%d\n",c);
+      my_printf("%d\n",c);
   } 
   getchar();
   getchar();

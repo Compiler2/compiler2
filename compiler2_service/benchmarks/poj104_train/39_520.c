@@ -13,11 +13,11 @@ int main_bench()
 {
 	
 	int n,sum=0,i,r,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		stu[i].s=0;
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].id1,&stu[i].id2,&stu[i].t);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].id1,&stu[i].id2,&stu[i].t);
 		if(stu[i].g1>80&&stu[i].t>0) stu[i].s+=8000;
         if(stu[i].g1>85&&stu[i].g2>80) stu[i].s+=4000;
         if(stu[i].g1>90) stu[i].s+=2000;
@@ -35,5 +35,5 @@ int main_bench()
 			r=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[r].name,stu[r].s,sum);
+	my_printf("%s\n%d\n%d\n",stu[r].name,stu[r].s,sum);
 }

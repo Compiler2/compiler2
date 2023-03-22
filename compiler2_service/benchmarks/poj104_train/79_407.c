@@ -12,7 +12,7 @@ for(i=1;i<=n;i++)
 if(a[i])return(i);}
 main_bench(){
 int m,n;
-scanf("%d%d",&n,&m);
+my_scanf("%d%d",&n,&m);
 while (m!=0){
-printf("%d\n",yos(n,m));
-scanf("%d%d",&n,&m);}}
+my_printf("%d\n",yos(n,m));
+my_scanf("%d%d",&n,&m);}}

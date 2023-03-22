@@ -18,16 +18,16 @@ int main_bench()
   {
        for(j=0;j<=4;j++)
        {
-             scanf("%d",&a[i][j]);
+             my_scanf("%d",&a[i][j]);
        }
-       scanf("\n");
+       my_scanf("\n");
   }
-  scanf("\n");
-  scanf("%d%d",&n,&m);
+  my_scanf("\n");
+  my_scanf("%d%d",&n,&m);
   
   flag=judge(n,m);
   if(flag==0)
-  printf("error");
+  my_printf("error");
   else
   {
       for(j=0;j<=4;j++)
@@ -41,17 +41,17 @@ int main_bench()
           for(j=0;j<=4;j++)
           {   
               if(j==0)
-              printf("%d",a[i][j]);           
+              my_printf("%d",a[i][j]);           
               else
               {
                   if((j==4)&&(i!=4))
-                     printf(" %d\n",a[i][j]);
+                     my_printf(" %d\n",a[i][j]);
                   else
                   {   
                       if((j==4)&&(i==4))
-                        printf(" %d",a[i][j]);
+                        my_printf(" %d",a[i][j]);
                       else
-                        printf(" %d",a[i][j]);
+                        my_printf(" %d",a[i][j]);
                   }
               }
           }

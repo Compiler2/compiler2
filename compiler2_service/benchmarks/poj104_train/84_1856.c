@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[100];
 	int n,first=0,second=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(first<a[i]){
 			first=a[i];
 		}
@@ -24,7 +24,7 @@ int main_bench()
 			second=second;
 		}
 	}
-	printf("%d\n",first);
-	printf("%d\n",second);
+	my_printf("%d\n",first);
+	my_printf("%d\n",second);
 	return 0;
 }

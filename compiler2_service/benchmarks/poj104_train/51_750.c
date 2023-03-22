@@ -5,8 +5,8 @@ main_bench()
     int a,b,c,d,m,n;
     char x[510];
     int y[510]={0};
-    scanf("%d",&n);
-    scanf("%s",x);
+    my_scanf("%d",&n);
+    my_scanf("%s",x);
     a=strlen(x)-1;
     for(b=0;b<=a-n+1;b++)
     {
@@ -31,17 +31,17 @@ main_bench()
         else;
     }
     if(m==1)
-    printf("NO");
+    my_printf("NO");
     else
     {
-        printf("%d\n",m);
+        my_printf("%d\n",m);
         for(b=0;b<=a-n+1;b++)
         {
             if(y[b]==m)
             {
                 for(c=0;c<=n-1;c++)
-                printf("%c",x[b+c]);
-                printf("\n");
+                my_printf("%c",x[b+c]);
+                my_printf("\n");
             }
         }
     }

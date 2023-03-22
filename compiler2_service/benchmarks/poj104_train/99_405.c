@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,s1=0,s2=0,s3=0,s4=0,i,a;
 	double m,l,p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		for(i=0;i<n;i++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a>=1&&a<=18)
 			{
 				s1=s1+1;
@@ -26,14 +26,14 @@ int main_bench()
 		l=(double)s2/n*100;
 		p=(double)s3/n*100;
 		q=(double)s4/n*100;
-		printf("1-18: ");
-		printf("%.2lf%\n",m);
-		printf("19-35: ");
-		printf("%.2lf%\n",l);
-		printf("36-60: ");
-		printf("%.2lf%\n",p);
-		printf("60??: ");
-		printf("%.2lf%\n",q);
+		my_printf("1-18: ");
+		my_printf("%.2lf%\n",m);
+		my_printf("19-35: ");
+		my_printf("%.2lf%\n",l);
+		my_printf("36-60: ");
+		my_printf("%.2lf%\n",p);
+		my_printf("60??: ");
+		my_printf("%.2lf%\n",q);
 	
 			return 0;
 }

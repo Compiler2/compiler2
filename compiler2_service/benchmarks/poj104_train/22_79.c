@@ -4,11 +4,11 @@ int main_bench()
 {
 	 int a[300],i,j,k,l,t,e;
 	 char b[300];
-	 scanf("%d",&a[0]); 
+	 my_scanf("%d",&a[0]); 
 	 for(i=1;getchar()!='\n';i++)
 	 {
          
-		 scanf("%d",&a[i]);
+		 my_scanf("%d",&a[i]);
 		 
 	 }
 	 for(j=0;j<i;j++)
@@ -28,9 +28,9 @@ int main_bench()
 			a[k]=t;
 		}
 	 }
-	 if(i==1)printf("No");
-	 else if (a[1]==0)printf("No");
-	 else printf("%d",a[1]);
+	 if(i==1)my_printf("No");
+	 else if (a[1]==0)my_printf("No");
+	 else my_printf("%d",a[1]);
    
 
 }

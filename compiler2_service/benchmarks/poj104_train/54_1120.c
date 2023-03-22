@@ -26,9 +26,9 @@ int minnum(int n,int k)
 int main_bench()
 {
 	int n,k;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	int sum;
 	sum=minnum(n,k);
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

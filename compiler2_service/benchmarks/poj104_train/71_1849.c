@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,e1,e2,c,dat1,dat2,da1,da2;
 	i=0;
 	int year[200],month1[200],month2[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d%d%d",&(year[i]),&(month1[i]),&(month2[i]));
+		my_scanf("%d%d%d",&(year[i]),&(month1[i]),&(month2[i]));
 	}
 	for(i=0;i<=n-1;i++){
 		if((year[i]%4==0&&year[i]%100!=0)||(year[i]%100==0&&year[i]%400==0)){
@@ -65,9 +65,9 @@ int main_bench()
 	}
 			c=da1-da2;
 			if(c%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}else{
 			e1=month1[i];
@@ -124,9 +124,9 @@ int main_bench()
 	}
 			c=dat1-dat2;
 			if(c%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}

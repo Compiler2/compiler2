@@ -10,7 +10,7 @@ int main_bench()
     
     while(n != 0)
     {
-            scanf("%d %d", &n, &m);
+            my_scanf("%d %d", &n, &m);
             
             if(n != 0)
                  getking(n, m);
@@ -49,7 +49,7 @@ void getking(int n, int m)
      
      for(i = 0; i <= n - 1; i++)
            if(monkey[i] == 1)
-                        printf("%d\n", i + 1);
+                        my_printf("%d\n", i + 1);
 }
           
             

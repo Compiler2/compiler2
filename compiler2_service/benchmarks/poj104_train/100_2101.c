@@ -3,7 +3,7 @@
 int main_bench(){
     int i,sz[100],len,tag=0;
     char zfc[301];
-    scanf("%s",zfc);
+    my_scanf("%s",zfc);
     len=strlen(zfc);
     for(i=0;i<('z'-'A'+1);i++){
             sz[i]=0;
@@ -16,13 +16,13 @@ int main_bench(){
     
     for(int j='A';j<='z';j++){
             if(sz[j-'A']!=0){
-                  printf("%c=%d",j,sz[j-'A']);
-                  printf("\n");
+                  my_printf("%c=%d",j,sz[j-'A']);
+                  my_printf("\n");
                   tag=1;
                   }
             }
     if(tag==0){
-               printf("No");}
+               my_printf("No");}
             return 0;
     } 
 

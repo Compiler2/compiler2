@@ -24,11 +24,11 @@ main_bench()
 		k=c[n-1]+1;
 		for(m=k;m<=e;m++)
 		{
-			printf("%c",b[m]);
+			my_printf("%c",b[m]);
 		}
 		if(n>1)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 		else
 		{

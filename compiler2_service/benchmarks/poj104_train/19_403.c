@@ -44,5 +44,5 @@ int main_bench()
 		pa=a;
 	}
 	pstr=str;
-	printf("%s",pstr);
+	my_printf("%s",pstr);
 }

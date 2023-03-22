@@ -3,7 +3,7 @@
 int main_bench()
 {
   int i, s=0, b;
-  scanf("%d", &b);
+  my_scanf("%d", &b);
   for (i=1;i<=b;i++){
    if (i%7==0){
     continue;}
@@ -12,6 +12,6 @@ int main_bench()
    else{
    s+=i*i;}
 }
-  printf("%d", s);
+  my_printf("%d", s);
   return 0;
 }

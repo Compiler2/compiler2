@@ -5,10 +5,10 @@ int main_bench()
 {
       int ctr,i=1;
       int max=0,temp;
-      scanf("%d",n);
+      my_scanf("%d",n);
       while((getchar())==',')
       {
-      scanf("%d",&n[i]);
+      my_scanf("%d",&n[i]);
       i++;
       }
       for(ctr=0;ctr<i;ctr++)
@@ -29,8 +29,8 @@ int main_bench()
       max=n[ctr];
       }
       if(max==0)
-      printf("No");
+      my_printf("No");
       else
-      printf("%d",max);
+      my_printf("%d",max);
       return 0;
 }

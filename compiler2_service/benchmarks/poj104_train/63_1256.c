@@ -7,18 +7,18 @@ int main_bench()
 	int B[100][100];
 	int C[100][100];
 	int i,j,a,b,d,q;
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
 	for(i=0;i<a;i++){
 		for(j=0;j<b;j++){
-			scanf("%d",&A[i][j]);
+			my_scanf("%d",&A[i][j]);
 		}
 	}
-	scanf("%d",&b);
-	scanf("%d",&d);
+	my_scanf("%d",&b);
+	my_scanf("%d",&d);
 	for(i=0;i<b;i++){
 		for(j=0;j<d;j++){
-			scanf("%d",&B[i][j]);
+			my_scanf("%d",&B[i][j]);
 		}
 	}
 	for(i=0;i<a;i++){
@@ -30,8 +30,8 @@ int main_bench()
 	}
 	for(i=0;i<a;i++){
 		for(j=0;j<d;j++){
-			if(j<d-1)printf("%d ",C[i][j]);
-			if(j==d-1)printf("%d\n",C[i][j]);
+			if(j<d-1)my_printf("%d ",C[i][j]);
+			if(j==d-1)my_printf("%d\n",C[i][j]);
 		}
 	}
 	return 0;

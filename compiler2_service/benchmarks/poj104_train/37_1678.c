@@ -7,12 +7,12 @@ main_bench()
      int lens,i,j,k,n,z,pt,num;
      int a[26][2];
      
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      for (z=1;z<=n;z++)
      {
          num=0;
          for (i=0;i<=25;i++) for (j=0;j<=1;j++) a[i][j]=0;
-         scanf("%s",&s);
+         my_scanf("%s",&s);
          for (pt=0;s[pt]!='\0';pt++)
          {
              temp=s[pt]-'a';
@@ -37,8 +37,8 @@ main_bench()
              }
          }
          
-         if (pt==-1) printf("no\n");
-         else printf("%c\n",pt+'a');
+         if (pt==-1) my_printf("no\n");
+         else my_printf("%c\n",pt+'a');
      }
 }
      

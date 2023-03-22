@@ -5,10 +5,10 @@ int main_bench()
 	int i;
 	char s[50],w[50];
 	char * p;
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	p=strstr(w,s);
 	i=p-w;
-	printf("%d",i);
+	my_printf("%d",i);
 	return 0;
 }

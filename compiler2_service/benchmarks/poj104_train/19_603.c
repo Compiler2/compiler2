@@ -13,13 +13,13 @@ int main_bench()
         else{n[m][k]='\0';m++;k=0;}
        }
     n[m][k]='\0';m++;
-    scanf("%s",x);
-    scanf("%s",y);
+    my_scanf("%s",x);
+    my_scanf("%s",y);
     for(i=0;i<m;i++)
        if(strcmp(n[i],x)==0)
          strcpy(n[i],y);
     for(i=0;i<m;i++)
        if(i==m-1)
-       printf("%s",n[i]);
-       else{printf("%s ",n[i]);}     
+       my_printf("%s",n[i]);
+       else{my_printf("%s ",n[i]);}     
 }

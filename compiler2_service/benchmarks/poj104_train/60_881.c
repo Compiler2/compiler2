@@ -5,16 +5,16 @@ int main_bench()
 {
 	int n,i,flag=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n-2;i++)
 	{
 		if(issushu(i)&&issushu(i+2))
 		{
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 			flag=1;
 		}
 	}
-	if(flag==0) printf("empty");
+	if(flag==0) my_printf("empty");
 	
 
 	return 0;

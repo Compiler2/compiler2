@@ -7,13 +7,13 @@ int main_bench()
     int n,k=0;
 int T=0;
 int a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     ROW=n-1;
     COL=n-1;
     
     for(row=0;row<ROW;row++){
                              for(col=0;col<COL;col++){
-                                                     scanf("%d",&sz[row][col]);
+                                                     my_scanf("%d",&sz[row][col]);
                                                             }
                                                             }
     for(row=0;row<ROW;row++){
@@ -39,7 +39,7 @@ T=1;
 a=ROW-ROW1-3;
 b=COL-COL1-1;
 k=a*b;
-    printf("%d",k);
+    my_printf("%d",k);
     return 0;    
                              
 }

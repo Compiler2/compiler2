@@ -30,11 +30,11 @@ main_bench()
       for(j=check;j>0;j--)
       {
       for(i=b[j]+1;i<b[j+1]&&a[i]!='\0';i++)
-      printf("%c",a[i]);
-      printf(" ");
+      my_printf("%c",a[i]);
+      my_printf(" ");
       }
       for(i=0;a[i]!=' ';i++)
-      printf("%c",a[i]);
+      my_printf("%c",a[i]);
       }
       getchar();
       getchar();

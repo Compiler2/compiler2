@@ -4,7 +4,7 @@ int main_bench()
 {
     int y,m,d,x,i;
     int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-    scanf("%d %d %d",&y,&m,&d);
+    my_scanf("%d %d %d",&y,&m,&d);
     if(y%4==0&&y%100!=0)
         a[1]=29;
     if(y%400==0)
@@ -13,7 +13,7 @@ int main_bench()
     for(i=0;i<m-1;i++)
         x+=a[i];
     x+=d;
-    printf("%d",x);
+    my_printf("%d",x);
     getchar();
     getchar();
 } 

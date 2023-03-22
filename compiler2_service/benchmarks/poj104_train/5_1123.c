@@ -7,9 +7,9 @@ int main_bench(){
 	c=0;
 	D=1;
 	d=f=0;
-	scanf("%lf",&n);
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
     if(len1!=len2){
@@ -40,13 +40,13 @@ int main_bench(){
 	}
 	q=1.0*c/len1;
 	if(D==1&&q>n){
-		printf("yes");
+		my_printf("yes");
 	}
 	else if(D==1&&q<=n){
-		printf("no");
+		my_printf("no");
 	}
 	else if(D==0){
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

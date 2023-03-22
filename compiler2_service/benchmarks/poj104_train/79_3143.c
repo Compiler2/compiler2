@@ -5,8 +5,8 @@ int main_bench()
 int t=0;
 int n[300],m[300];
 for(int i=0;i<300;i++){
-	scanf("%d",&n[i]);	
-	scanf("%d",&m[i]);
+	my_scanf("%d",&n[i]);	
+	my_scanf("%d",&m[i]);
 		t++;
 	if(m[i]==0||n[i]==0){goto next;}
 }
@@ -27,7 +27,7 @@ next:for(int k0=0;k0<t-1;k0++){
 			j=1;
 		}
 		if(k1==0){
-			printf("%d\n",h+1);
+			my_printf("%d\n",h+1);
 			break;
 		}
 	}

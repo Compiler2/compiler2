@@ -3,9 +3,9 @@
 int main_bench()
 {
     int a=0,b=0,j,k,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while(n>0){
-    scanf("%d%d",&j,&k);
+    my_scanf("%d%d",&j,&k);
           if(j==k)
           {
                   a++;
@@ -20,9 +20,9 @@ int main_bench()
                n--;
     }
     if(a>b)
-    printf("A");
+    my_printf("A");
     if(a<b)
-    printf("B");
+    my_printf("B");
     if(a==b)
-    printf("Tie");
+    my_printf("Tie");
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,a[100][100],p,q,r,s,mj;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{
@@ -22,6 +22,6 @@ int main_bench()
 			}
 		}
 		mj=(r-p-1)*(s-q-1);
-		printf("%d",mj);
+		my_printf("%d",mj);
 		return 0;
 }

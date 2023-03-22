@@ -105,7 +105,7 @@ int main_bench()
 	}
 for(p=&a1[0];p<=p_end;p++)
 {
-	printf("%c",*p);
+	my_printf("%c",*p);
 }
 
 

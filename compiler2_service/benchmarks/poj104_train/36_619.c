@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,p=0;
 	char a[50],b[50];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	n=strlen(a);
-	if(n!=strlen(b))printf("NO");
+	if(n!=strlen(b))my_printf("NO");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -23,12 +23,12 @@ int main_bench()
 			}
 			if(p==0)
 			{
-				printf("NO");
+				my_printf("NO");
 				p=3;
 				break;
 			}
 		}
 		if(p!=3)
-			printf("YES");
+			my_printf("YES");
 	}
 }

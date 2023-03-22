@@ -4,9 +4,9 @@ int main_bench()
 {
 	int u[1000],v[1000];
 	int i,j,n,k,a=0;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&u[i]);
+		my_scanf("%d",&u[i]);
 	}
 	for(j=0;j<n;j++){
 		v[j]=u[j];
@@ -25,9 +25,9 @@ int main_bench()
 		}
 	}
 	if(a==0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("yes");
+		my_printf("yes");
 	}
 	return 0;
 }

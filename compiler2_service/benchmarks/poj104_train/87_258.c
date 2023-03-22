@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,c,d,e,f;
 	int sum,h,m,s;
 	while(1){
-		scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 		if(a==0)
 			break;
 		d+=12;
@@ -47,7 +47,7 @@ int main_bench()
 
 		}
 		sum=h*3600+m*60+s;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

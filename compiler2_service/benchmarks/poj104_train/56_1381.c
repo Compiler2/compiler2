@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(num=num;num>9;num/=10){
 
-		printf("%d",num%10);
+		my_printf("%d",num%10);
 	}
-	printf("%d",num);
+	my_printf("%d",num);
 	return 0;
 	  }
 

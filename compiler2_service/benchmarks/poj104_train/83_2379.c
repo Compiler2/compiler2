@@ -5,13 +5,13 @@ int main_bench()
 int n,i,j,f;
 int a[10];
 float b[10],s=0,t=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%d ",&a[i]);};
-printf("\n");
+{my_scanf("%d ",&a[i]);};
+my_printf("\n");
 for(j=0;j<n;j++)
 {
-scanf("%d",&f);
+my_scanf("%d",&f);
 if(f>89)b[j]=4.0;
 else if(f>84)b[j]=3.7;
 else if(f>81)b[j]=3.3;
@@ -27,7 +27,7 @@ for(i=0;i<n;i++)
 t=t+a[i];}
 s=s/t;
 
-printf("%.2f",s);
+my_printf("%.2f",s);
 
 
 

@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	p=matrix(a,n,m);
 	if(p==1)
 	{
@@ -25,16 +25,16 @@ int main_bench()
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",a[i][j]);
+				my_printf("%d",a[i][j]);
 				if(j!=4)
-					printf(" ");
+					my_printf(" ");
 				else
-					printf("\n");
+					my_printf("\n");
 			}
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 }
 
 int matrix(int b[5][5],int e,int g)

@@ -8,8 +8,8 @@ main_bench()
 	char cc;
 	a=(int*)malloc(26*sizeof(int));
 	b=(int*)malloc(26*sizeof(int));
-	scanf("%d",&n);	
-	scanf("%c",&cc);
+	my_scanf("%d",&n);	
+	my_scanf("%c",&cc);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<26;j++)
@@ -19,7 +19,7 @@ main_bench()
 		}
 		while((cc<'a')||(cc>'z'))
 		{
-			scanf("%c",&cc);
+			my_scanf("%c",&cc);
 		}
 		j=1;
 		while((cc>='a')&&(cc<='z'))
@@ -27,7 +27,7 @@ main_bench()
 			*(a+cc-'a')+=1;
 			if(*(a+cc-'a')==1)
 				*(b+cc-'a')=j;
-			scanf("%c",&cc);
+			my_scanf("%c",&cc);
 			j++;
 		}
 		min=100002;
@@ -42,11 +42,11 @@ main_bench()
 		}
 		if(x<0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else
 		{
-			printf("%c\n",'a'+x);
+			my_printf("%c\n",'a'+x);
 		}
 	}
 }

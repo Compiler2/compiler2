@@ -6,17 +6,17 @@ int main_bench(){
 	float defen[1000];
 	float jidian[1000];
 	float sum1=0,sum2=0,GPA;
-        scanf("%d",&n);
+        my_scanf("%d",&n);
 		for(i=0;i<n-1;i++){
-			scanf("%d ",&xuefen[i]);
+			my_scanf("%d ",&xuefen[i]);
 			sum1=sum1+xuefen[i];
 		}
 		if(i=n-1){
-			scanf("%d",&xuefen[i]);
+			my_scanf("%d",&xuefen[i]);
 			sum1=sum1+xuefen[i];
 		}
         for(i=0;i<n-1;i++){
-			scanf("%f ",&defen[i]);
+			my_scanf("%f ",&defen[i]);
 			p=defen[i];
 		 if((90<=p)&&(p<=100)){
 				defen[i]=4.0;}
@@ -40,7 +40,7 @@ int main_bench(){
 				defen[i]=0;}                                    
 		}
 		if(i=n-1){
-			scanf("%f",&defen[i]);
+			my_scanf("%f",&defen[i]);
 			p=defen[i];
 			if((90<=p)&&(p<=100)){
 				defen[i]=4.0;}
@@ -69,6 +69,6 @@ int main_bench(){
 			sum2=sum2+jidian[i];
 		}
         GPA=sum2/sum1;
-		printf("%.2f",GPA);
+		my_printf("%.2f",GPA);
 return 0;
 }

@@ -5,12 +5,12 @@ int main_bench()
 {
 	int i,j,len,len1,len2,min,max;
 	char a[251]={'\0'},b[251]={'\0'},c[252]={'\0'};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	if (len1==1 && len2==1)
 		if(a[0]=='0' && b[0]=='0')
-			printf("0");
+			my_printf("0");
 	for(i=0;;i++)
 	{
 		len1=strlen(a);	
@@ -81,7 +81,7 @@ int main_bench()
 	if(c[len-1]==1)
 		c[len-1]='1';
 	for(i=len-1;i>=0;i--)
-		printf("%c",c[i]);
+		my_printf("%c",c[i]);
 	return 0;
 }
 

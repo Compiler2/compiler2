@@ -21,6 +21,6 @@ int main_bench()
 		}
 	}
 	*(p+i)='\0';
-	printf("%s",p);
+	my_printf("%s",p);
 	free(p);
 }

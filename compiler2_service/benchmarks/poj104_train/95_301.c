@@ -34,25 +34,25 @@ int main_bench()
 	{
 		if(A[i]>B[i])
 		{
-			printf(">");
+			my_printf(">");
 			return 0;
 		
 		} 
 		if(A[i]<B[i])
 			{
-				printf("<");
+				my_printf("<");
 				return 0;
 			}
 	}
 	if(strlen(A)==strlen(B))
 	{
-		printf("=");
+		my_printf("=");
 		return 0;
 	}
 		if(strlen(A)<strlen(B))
-			printf("<");
+			my_printf("<");
 			else
-				printf(">");
+				my_printf(">");
 
 	return 0;
 }

@@ -10,9 +10,9 @@ int main_bench()
 { 
     int i,j,n,q;
     char p[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%s%d",&ill[i].id,&ill[i].age);
+        my_scanf("%s%d",&ill[i].id,&ill[i].age);
     
     for(j=0;j<n-1;j++)
         for(i=n-1;i>j;i--){
@@ -23,5 +23,5 @@ int main_bench()
             }
         }
     for(i=0;i<n;i++)
-        printf("%s\n",ill[i].id);       
+        my_printf("%s\n",ill[i].id);       
 }

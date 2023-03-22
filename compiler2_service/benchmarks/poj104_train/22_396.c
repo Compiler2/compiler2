@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a[9000],n,i=0,max,sec;
-	scanf("%d%c",&a[i],&a[i+1]);
+	my_scanf("%d%c",&a[i],&a[i+1]);
 	while(a[i+1]==',')
 	{
 		i++;
-	scanf("%d%c",&a[i],&a[i+1]);
+	my_scanf("%d%c",&a[i],&a[i+1]);
 	}
 	n=i;
 	max=a[0];
@@ -19,7 +19,7 @@ int main_bench()
 	{if(a[i]>sec&&a[i]<max)
 	sec=a[i];}
 	if(sec==max||sec==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",sec);
+		my_printf("%d",sec);
 }

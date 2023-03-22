@@ -2,7 +2,7 @@
 
 int main_bench(){
      int a,b,c,d,e,f,g,i,j,k,l,m,n;
-	 scanf("%d",&a);
+	 my_scanf("%d",&a);
 	 i=0;
 	 j=0;
 	 k=0;
@@ -33,6 +33,6 @@ int main_bench(){
 	 g-=1;
 	 n=n+1;
 	 }
-	 printf("%d\n%d\n%d\n%d\n%d\n%d\n",i,j,k,l,m,n);
+	 my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",i,j,k,l,m,n);
 	 return 0;
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,i,j,k,s,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       if(k==1||k==2)
       {
-        printf("1\n");
+        my_printf("1\n");
         continue;
         }
         else
@@ -22,7 +22,7 @@ int main_bench()
            a=b;
            b=s;
            }
-           printf("%d\n",s);
+           my_printf("%d\n",s);
            }
            }
            getchar();

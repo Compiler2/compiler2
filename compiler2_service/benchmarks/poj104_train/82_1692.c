@@ -3,12 +3,12 @@
 int main_bench()
 {
  int n,a,b,i,j,k;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  j=0;
  k=0;
  for(i=0;i<n;i++)
  {
-  scanf("%d %d",&a,&b);
+  my_scanf("%d %d",&a,&b);
   if(a>=90&&a<=140)
    {
     if(b>=60&&b<=90)
@@ -20,6 +20,6 @@ int main_bench()
    }
    else j=0;
   }
- printf("%d",k);
+ my_printf("%d",k);
  return 0;
 }

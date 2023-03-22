@@ -8,13 +8,13 @@ int main_bench()
 	int a[1000]={0},num,i,j;
 	for(i=0;i<1000;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		c=getchar();
         if(c=='\n')break;
 	}
 	for(i=0;i<1000;i++)
 	{
-		scanf("%d",&y[i]);
+		my_scanf("%d",&y[i]);
 		c=getchar();
         if(c=='\n')break;
 	}
@@ -29,7 +29,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",num,max(a));
+	my_printf("%d %d\n",num,max(a));
 	return 0;
 }
 

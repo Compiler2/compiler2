@@ -5,7 +5,7 @@ main_bench()
 	int i=1,j,tot,rem,cur,rou,n[100],m[100],a[301];
 	do 
 	{
-		scanf("%d %d",&n[i],&m[i]);
+		my_scanf("%d %d",&n[i],&m[i]);
 		i++;
 	}
 	while (n[i-1]!=0);
@@ -35,7 +35,7 @@ main_bench()
 		for (j=1;j<=n[i];j++)
 		if (a[j]==1) 
 		{
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 			break;
 		}
 	}

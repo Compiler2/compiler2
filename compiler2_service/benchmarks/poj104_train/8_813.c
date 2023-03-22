@@ -5,7 +5,7 @@ void f(int p, int n)
 	int i, j;
 	int a[100];
 	for (i=0; i<n; i++) 
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	for (i=1; i<n; i++) {
 		for (j=1; j<n-i+1; j++) {
 			if (a[j]<a[j-1]) {
@@ -16,15 +16,15 @@ void f(int p, int n)
 		}
 	}
 	for (i=0; i<n-1; i++)
-		printf("%d ", a[i]);
-	printf("%d", a[n-1]);
+		my_printf("%d ", a[i]);
+	my_printf("%d", a[n-1]);
 	if(p>0)
-		printf(" ");
+		my_printf(" ");
 }
 int main_bench()
 {
 	int i, n1, n2;
-	scanf("%d%d", &n1, &n2);
+	my_scanf("%d%d", &n1, &n2);
 	f(1, n1);
 	f(0, n2);
 	return 0;

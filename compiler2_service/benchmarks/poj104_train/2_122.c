@@ -6,7 +6,7 @@ int main_bench()
     char a='A';
     int count[27]={0};
     int *p=&count[1];
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     struct book
     {
            char order[4];
@@ -14,8 +14,8 @@ int main_bench()
     }book[1000];
     for(i=0;i<num;i++)
     {
-                      scanf("%s",book[i].order);
-                      scanf("%s",book[i].author);
+                      my_scanf("%s",book[i].order);
+                      my_scanf("%s",book[i].author);
     }
     for(i=0;i<num;i++)
     {
@@ -58,13 +58,13 @@ int main_bench()
                                          a=i+64;
                      }
     }
-    printf("%c\n%d\n",a,*p);
+    my_printf("%c\n%d\n",a,*p);
     for(i=0;i<num;i++)
     {
                       for(j=0;j<strlen(book[i].author);j++)
                       {
                                                            if(book[i].author[j]==a)
-                                                           printf("%s\n",book[i].order);
+                                                           my_printf("%s\n",book[i].order);
                       }
     }
    

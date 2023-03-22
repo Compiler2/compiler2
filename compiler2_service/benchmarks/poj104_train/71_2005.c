@@ -6,9 +6,9 @@ int main_bench()
     int a[]={31,28,31,30,31,30,31,31,30,31,30,31};
     int b[]={31,29,31,30,31,30,31,31,30,31,30,31};
     int n,i,j,year,x,y,boolean,sum,temp;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
-    {scanf("%d %d %d",&year,&x,&y);
+    {my_scanf("%d %d %d",&year,&x,&y);
      boolean=runnian(year);
      if (x>y) {temp=x;x=y;y=temp;}
      sum=0;
@@ -17,8 +17,8 @@ int main_bench()
      if (boolean==0)
        for (j=x;j<y;j++) sum=sum+b[j-1]; 
           
-     if (sum%7==0) printf("YES\n");
-     else printf("NO\n");               
+     if (sum%7==0) my_printf("YES\n");
+     else my_printf("NO\n");               
                             
     }
     return 0;

@@ -12,13 +12,13 @@ int main_bench()
 		asc1=s[i];
 		asc2=s[i+1];
 		c=asc1+asc2;
-		printf("%c",c);
+		my_printf("%c",c);
 	}
 
 	asc1=s[len-1];
 	asc2=s[0];
 	c=asc1+asc2;
-	printf("%c",c);
+	my_printf("%c",c);
 
 	return 0;
 }

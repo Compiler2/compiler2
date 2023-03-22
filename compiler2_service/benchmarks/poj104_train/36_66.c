@@ -6,8 +6,8 @@ int main_bench()
 	int k;
 	char a[100],b[100],*p1,*p2,*p3,temp;
 	p1=a;p2=b;p3=b;
-	scanf("%s%s",p1,p2);
-	if (strlen(a)!=strlen(b)) printf("NO");
+	my_scanf("%s%s",p1,p2);
+	if (strlen(a)!=strlen(b)) my_printf("NO");
 	else for (;*p1!='\0';p1++)
 	{
 		k=0;
@@ -22,9 +22,9 @@ int main_bench()
 			}
 		if (k==0)
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}
 	}
-	if (k==1) printf("YES\n");
+	if (k==1) my_printf("YES\n");
 }

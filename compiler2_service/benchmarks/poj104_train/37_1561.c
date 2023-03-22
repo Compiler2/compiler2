@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		int len,flag=1;
 		char c[100001];
-		scanf("%s",c);
+		my_scanf("%s",c);
 		len=strlen(c);
 		for(i=0;i<len;i++)
 		{
@@ -32,14 +32,14 @@ int main_bench()
 				}
 			}
 			if(isbreak)continue;
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 			flag=0;
 			break;
 		}
 		if(flag)
-			printf("no");
+			my_printf("no");
 		if(n)
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

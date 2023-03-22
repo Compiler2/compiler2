@@ -9,9 +9,9 @@ struct {
 }book[1000];
 int shu_num[26],i,j,k,n,max,length;
 char max_author;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %s",&book[i].num,book[i].author);
+my_scanf("%d %s",&book[i].num,book[i].author);
 }
 for(k=0;k<26;k++){
 	shu_num[k]=0;
@@ -34,12 +34,12 @@ for(k=0;k<26;k++){
 	max_author='A'+k;
 	}
 }
-printf("%c\n%d\n",max_author,max);
+my_printf("%c\n%d\n",max_author,max);
 for(i=0;i<n;i++){
 	length=strlen(book[i].author);
 	for(j=0;j<length;j++){
 		if(book[i].author[j]==max_author){
-		printf("%d\n",book[i].num);
+		my_printf("%d\n",book[i].num);
 		}	
 	}
 }

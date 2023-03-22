@@ -29,7 +29,7 @@ int main_bench()
   while(gets(s))
   {
   changdu=strlen(s);
-  printf("%s\n",s);
+  my_printf("%s\n",s);
   f1(s,changdu);
   for(i=0;i<changdu;i++)
   {
@@ -42,9 +42,9 @@ int main_bench()
   }
    for(i=0;i<changdu;i++)
    {
-	   printf("%c",s[i]);
+	   my_printf("%c",s[i]);
    }
-   printf("\n");
+   my_printf("\n");
   }
 	return 0;
 

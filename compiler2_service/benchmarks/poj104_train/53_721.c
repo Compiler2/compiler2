@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int mark[305]={0},str[305],i,j,k,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",str+i);
+		my_scanf("%d",str+i);
 	for(i=0;i<n;i++)
 		if(*(mark+i)==0)
 		{
@@ -16,7 +16,7 @@ int main_bench()
 		}
 	for(i=0;i<k;i++)
 		if(*(mark+i)==0)
-			printf("%d,",*(str+i));
-	printf("%d\n",*(str+k));
+			my_printf("%d,",*(str+i));
+	my_printf("%d\n",*(str+k));
 	return 0;
 }

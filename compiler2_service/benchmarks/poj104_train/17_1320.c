@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,i,j,k,flag;
 	char a[200],b[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
 		memset(b,0,200);
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for (j=0;j<strlen(a);j++)
 		{
 			if (a[j]=='(')
@@ -36,8 +36,8 @@ int main_bench()
 				b[j]='?';
 			else b[j]=' ';
 		}
-		printf("%s\n",a);
-		printf("%s\n",b);
+		my_printf("%s\n",a);
+		my_printf("%s\n",b);
 	}
 	return 0;
 }

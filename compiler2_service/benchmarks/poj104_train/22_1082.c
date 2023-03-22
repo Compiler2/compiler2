@@ -18,7 +18,7 @@ int main_bench()
 	char c;
 	while(1)
 	{
-		scanf("%d%c",&a,&c);
+		my_scanf("%d%c",&a,&c);
 		if(c=='\n')	
 		{	num[t++]=a;	break;	}
 		else
@@ -33,9 +33,9 @@ int main_bench()
 		{	a=1;	gole=num[i];	break;	}
 	}
 	if(t==1||a==0)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",gole);
+		my_printf("%d\n",gole);
 	return 0;
 }
 

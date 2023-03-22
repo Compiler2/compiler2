@@ -8,7 +8,7 @@ int main_bench()
 	n=strlen(a);
 	for(i=0;a[i]!='\0'&&a[i]!=' ';i++)
 	    s=s+1;
-	if(s==n) printf("%s",a);
+	if(s==n) my_printf("%s",a);
 	else
 	{
     q=a+n;
@@ -18,14 +18,14 @@ int main_bench()
 		{
 			m=p;
 			for(p=m+1;p<q;p++)
-				printf("%c",*p);
-			printf(" ");
+				my_printf("%c",*p);
+			my_printf(" ");
 			q=m;
 			p=m;
 		}
 	}
 	p=a;
 	for(i=0;i<s;i++)
-		printf("%c",*p++);
+		my_printf("%c",*p++);
 	}
 }

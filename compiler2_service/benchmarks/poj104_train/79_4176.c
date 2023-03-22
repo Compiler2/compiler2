@@ -6,7 +6,7 @@ main_bench()
   int a[301],b[301];
   while(m!=0) 
    {
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
  
     for(i=0;i<301;i++)
        a[i]=1,b[i]=0;
@@ -30,9 +30,9 @@ main_bench()
      if(a[i])
        {
          if (i==0)
-            printf("%d\n",n);
+            my_printf("%d\n",n);
          else
-            printf("%d\n",i);
+            my_printf("%d\n",i);
          break;
        }
 }  

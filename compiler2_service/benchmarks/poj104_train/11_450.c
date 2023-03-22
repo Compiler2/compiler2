@@ -4,7 +4,7 @@
 int main_bench()
 { 
 	int a,b,c,x;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(a%4==0&&a%100!=0||a%400==0)
 	   {if(b==1)
 	   x=c;
@@ -81,7 +81,7 @@ int main_bench()
 	x=334+c;
 	
 }
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 	return 0;
 }
 

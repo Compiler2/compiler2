@@ -10,13 +10,13 @@ int main_bench()
 {
 	struct jumps jump[100];
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d ",&jump[i].error);
+		my_scanf("%d ",&jump[i].error);
 		for(j=0;j<jump[i].error;j++)
 		{
-			scanf("%d ",&jump[i].c[j]);
+			my_scanf("%d ",&jump[i].c[j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -42,7 +42,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",jump[i].xia);
+		my_printf("%d\n",jump[i].xia);
 	}
 	return 0;
 }

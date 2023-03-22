@@ -4,9 +4,9 @@ int main_bench(){
 	double p;
 	int la,i,y=0,lb,s=0;
 	char zfa[501],zfb[501];
-	scanf("%lf",&p);
-	scanf("%s",zfa);
-	scanf("%s",zfb);
+	my_scanf("%lf",&p);
+	my_scanf("%s",zfa);
+	my_scanf("%s",zfb);
 	la=strlen(zfa);
 	lb=strlen(zfb);
 	if(la!=lb){
@@ -24,14 +24,14 @@ int main_bench(){
 		}
 	}
 	if((1.0*s/la)>p&&y==0){
-	printf("yes");
+	my_printf("yes");
 	}
 	else if(y==0){
-	printf("no");
+	my_printf("no");
 	}
 	}
 	if(y==1){
- printf("error");
+ my_printf("error");
 	
 	}
 

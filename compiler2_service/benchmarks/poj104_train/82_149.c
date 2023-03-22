@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,k,x=0,n,b[100]={0},t[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point
 	{
 		int s;
@@ -12,7 +12,7 @@ int main_bench()
 	a[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i].s,&a[i].z);
+		my_scanf("%d%d",&a[i].s,&a[i].z);
 		if((a[i].s>90||a[i].s==90)&&(a[i].s<140||a[i].s==140)&&(a[i].z>60||a[i].z==60)&&(a[i].z<90||a[i].z==90))
 		{
 			b[i]++;
@@ -45,6 +45,6 @@ int main_bench()
 			max=i;
 		}
 	}
-	printf("%d",t[max]);
+	my_printf("%d",t[max]);
 	return 0;
 }

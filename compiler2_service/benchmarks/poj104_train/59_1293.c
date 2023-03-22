@@ -5,12 +5,12 @@ char a[100][101],b[100][101];
 void cr(char a[100][101]);
 int main_bench()
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	cr(a);
 	for(i=0;i<n;i++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 	}if(r==5822){r=r-2;}if(r==314){r=248;}
-	printf("%d",r);
+	my_printf("%d",r);
 	return 0;
 }
 void cr(char a[100][101])

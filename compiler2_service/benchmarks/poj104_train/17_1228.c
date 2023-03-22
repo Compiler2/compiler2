@@ -5,11 +5,11 @@ int main_bench()
 {
 	int i,n,b,k,t,m,p;
 	char a[1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=0;p<n;p++)
 	{
-		scanf("%s",a);
-		printf("%s\n",a);
+		my_scanf("%s",a);
+		my_printf("%s\n",a);
 		b=strlen(a);
 	  for(m=0;m<b;m++)
 	  {
@@ -44,7 +44,7 @@ int main_bench()
 			a[k]='?';
 		}
 	}
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 	}
 	return 0;
 }

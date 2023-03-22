@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,m[100];
 	double a,b,c,d;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&m[i]);
+		my_scanf("%d",&m[i]);
 	}
 
 	a=0;
@@ -28,6 +28,6 @@ int main_bench()
 	c=(double)c*100/(double)n;
 	d=(double)d*100/(double)n;
 
-	printf("1-18: %.2f%%\n""19-35: %.2f%%\n""36-60: %.2f%%\n""60??: %.2f%%\n",a,b,c,d);
+	my_printf("1-18: %.2f%%\n""19-35: %.2f%%\n""36-60: %.2f%%\n""60??: %.2f%%\n",a,b,c,d);
 
 }

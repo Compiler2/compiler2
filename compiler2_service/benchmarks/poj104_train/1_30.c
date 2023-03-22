@@ -3,12 +3,12 @@
 int main_bench(){
 	int number(int n, int low);
 	int n, i, data, ans;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=1; i<=n; i++)
 	{
-		scanf("%d", &data);
+		my_scanf("%d", &data);
 		ans = number(data, 2);
-		printf("%d\n", ans);
+		my_printf("%d\n", ans);
 	}
 }
 int number(int n, int low)

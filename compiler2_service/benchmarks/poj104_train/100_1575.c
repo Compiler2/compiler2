@@ -3,7 +3,7 @@
 int main_bench(){
   char a[300],c;
   int i,n,k,s;
-  scanf("%s",a);
+  my_scanf("%s",a);
   n=strlen(a);
     s=0;
   for(i=0;i<n;i++){
@@ -12,7 +12,7 @@ int main_bench(){
                                             }
                   }
    if(s==n){
-     printf("No");
+     my_printf("No");
               }
   for(k=65;k<=90;k++){
       s=0;
@@ -23,7 +23,7 @@ int main_bench(){
                      }
        if(s!=0){
        c=k;
-       printf("%c=%d\n",c,s);
+       my_printf("%c=%d\n",c,s);
                 }
                      }
   for(k=97;k<=122;k++){
@@ -35,7 +35,7 @@ int main_bench(){
                      }
        if(s!=0){
             c=k;
-             printf("%c=%d\n",c,s);
+             my_printf("%c=%d\n",c,s);
                 }
                      }
     return 0;

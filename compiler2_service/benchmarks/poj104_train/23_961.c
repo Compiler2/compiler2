@@ -17,8 +17,8 @@ else
 {k++;j=0;}
 }
 for(l=k;l>0;l--)
-printf("%s ",*(str+l));
-printf("%s",*(str));
+my_printf("%s ",*(str+l));
+my_printf("%s",*(str));
 
 
 

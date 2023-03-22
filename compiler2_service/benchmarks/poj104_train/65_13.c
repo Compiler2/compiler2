@@ -3,10 +3,10 @@
 
 int main_bench(){
 	int a,b,n,t1,t2,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=b=0;
 	for (i=0;i<n;i++){
-		scanf("%d%d",&t1,&t2);
+		my_scanf("%d%d",&t1,&t2);
 		if (t1==0){
 			if (t2==1){
 				a++;

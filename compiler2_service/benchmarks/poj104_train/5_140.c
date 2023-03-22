@@ -6,11 +6,11 @@ int main_bench()
 	double sum = 0, n;
 	char gene[3][501];
 
-	scanf("%lf", &n);
-	scanf("%s", gene[0]);
-	scanf("%s", gene[1]);
+	my_scanf("%lf", &n);
+	my_scanf("%s", gene[0]);
+	my_scanf("%s", gene[1]);
 	if(strlen(gene[0])!=strlen(gene[1]))
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i = 0; i < 2; i++)
@@ -19,7 +19,7 @@ int main_bench()
 		    {
 			    if(gene[i][j]!='A' && gene[i][j]!='T' && gene[i][j]!='C' && gene[i][j]!='G')
 				{
-					printf("error");
+					my_printf("error");
 					m = 1;
 				    break;
 				}
@@ -31,9 +31,9 @@ int main_bench()
 				sum++;
 		}
 		if(sum/strlen(gene[0])>n && m == 0)
-			printf("yes");
+			my_printf("yes");
 		else if(sum/strlen(gene[0])<=n && m == 0)
-			printf("no");
+			my_printf("no");
 	}
 	return 0;
 }

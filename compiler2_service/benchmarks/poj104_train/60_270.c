@@ -4,7 +4,7 @@ int main_bench()
 {
     int sushu[10000];
     int n,i,j,k,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     sushu[0]=2;
     j=1;
     for(i=3;i<=n;i++)
@@ -26,10 +26,10 @@ int main_bench()
      {
      if(sushu[i]==sushu[i+1]-2)
      {
-     printf("%d %d\n",sushu[i],sushu[i+1]);
+     my_printf("%d %d\n",sushu[i],sushu[i+1]);
      x++;
      }
     }
     if(x==0)
-    printf("empty");
+    my_printf("empty");
 }

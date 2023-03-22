@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,k,a[100],b[100],x;
 	char num[101];
 	memset(num,0,sizeof(num));
-	scanf("%s",num);
+	my_scanf("%s",num);
 	for(i=0;i<strlen(num);i++)
 	{
 		a[i]=b[i]=0;
@@ -13,7 +13,7 @@ int main_bench()
 	}
 	if(i==1)
 	{
-		printf("0\n%d\n",a[0]);
+		my_printf("0\n%d\n",a[0]);
 	}
 	else
 	{
@@ -26,17 +26,17 @@ int main_bench()
 		}
 		if(b[1]!=0)
 		{
-			printf("%d",b[1]);
+			my_printf("%d",b[1]);
 		}
 		else if(j==2)
 		{
-			printf("%d",b[1]);
+			my_printf("%d",b[1]);
 		}
 		for(k=2;k<strlen(num);k++)
 		{
-			printf("%d",b[k]);
+			my_printf("%d",b[k]);
 		}
-		printf("\n%d",x);
+		my_printf("\n%d",x);
 	}
 	return 0;
 }

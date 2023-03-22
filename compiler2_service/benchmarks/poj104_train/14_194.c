@@ -12,12 +12,12 @@ struct student
 struct student stu[100000];
 struct student *p,*p1,*p2,*p3,*p4;
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(p=stu;p<stu+n;p++)
 	{
-		scanf("%d",&p->num);
-		scanf("%d",&p->yuwen);
-		scanf("%d",&p->math);
+		my_scanf("%d",&p->num);
+		my_scanf("%d",&p->yuwen);
+		my_scanf("%d",&p->math);
 	}
 for(p=stu;p<stu+n;p++)
 	{
@@ -72,8 +72,8 @@ p3=p;
 else
 p1=p1;
 }
-printf("%d %d\n",p1->num,p1->zong);
-printf("%d %d\n",p2->num,p2->zong);
-printf("%d %d",p3->num,p3->zong);
+my_printf("%d %d\n",p1->num,p1->zong);
+my_printf("%d %d\n",p2->num,p2->zong);
+my_printf("%d %d",p3->num,p3->zong);
 return 0;
 }

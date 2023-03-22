@@ -3,9 +3,9 @@
 int main_bench(){
 	char a[50],b[50];
 	int  i,j,s,w;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	s=strlen(a);
-	scanf("%s",b);
+	my_scanf("%s",b);
 	w=strlen(b);
 	for(j=0;j<w;j++){
 		if(b[j]==a[0]){
@@ -13,7 +13,7 @@ int main_bench(){
 				if(b[j+i]!=a[i]) break;
 			}
 			if(i==s) {
-				printf("%d",j);
+				my_printf("%d",j);
 				break;
 			}
 		}

@@ -46,11 +46,11 @@ int main_bench()
 {
 	int n,i,j,k;
 	char a[101],b[101],c[101]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
-		scanf("%s %s",a,b);
+		my_scanf("%s %s",a,b);
 		jianfa(a,b,c);
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 	}
 }

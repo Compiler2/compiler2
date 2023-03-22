@@ -29,8 +29,8 @@ int dijitian(int year,int month,int date)
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
-	scanf("%d %d %d",&sy,&sm,&sd);
-	scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d",&sy,&sm,&sd);
+	my_scanf("%d %d %d",&ey,&em,&ed);
 	int sa,sb;
 	sa=dijitian(sy,sm,sd);
 	sb=dijitian(ey,em,ed);
@@ -40,6 +40,6 @@ int main_bench()
 		days+=runnian(i);
 	}
 	days=days-sa+sb;
-	printf("%d\n",days);
+	my_printf("%d\n",days);
 	return 0;	
 }

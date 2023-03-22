@@ -7,9 +7,9 @@ int main_bench()
     int age1[100];
     int a[100];
     int max,n,l,i,j,k,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%s %d",string[i],&age[i]);
+    my_scanf("%s %d",string[i],&age[i]);
        j=0;
        for(i=0;i<n;i++)
        {
@@ -33,12 +33,12 @@ int main_bench()
                                                                                      x=k;
                                                                                      }
                                                                                      }
-                                                                                     printf("%s\n",string[a[x]]);
+                                                                                     my_printf("%s\n",string[a[x]]);
                                                                                      age1[x]=0;
                                                                                      }
                                     for(i=0;i<n;i++)
                                       if(age[i]!=0)
-                                      printf("%s\n",string[i]);                                                 
+                                      my_printf("%s\n",string[i]);                                                 
                                                                                      
                                       
                                       

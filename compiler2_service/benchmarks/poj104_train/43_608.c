@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m, i, g, sign1, sign2;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for (i=2;i<=m/2;i++) {
         sign1=0;
         sign2=0;
@@ -29,7 +29,7 @@ int main_bench()
             continue;
         }
         if (sign2==0) {
-            printf("%d %d\n\n", i, m-i);
+            my_printf("%d %d\n\n", i, m-i);
         } else {
             continue;
         }

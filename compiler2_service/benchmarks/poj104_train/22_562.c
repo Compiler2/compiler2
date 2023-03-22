@@ -36,8 +36,8 @@ main_bench()
 			max=a[i];
 	}
 	if(n==1||max==0)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 	return 0;
 }

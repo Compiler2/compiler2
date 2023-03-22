@@ -17,10 +17,10 @@ int main_bench()
 	int m,n,i,j,k,s=0;
 	char c[25]={0};
 	struct stus stu[101]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
         if(stu[i].qimo>80&&stu[i].lunwen>=1)
 			stu[i].p+=8000;
 		if(stu[i].qimo>85&&stu[i].banji>80)
@@ -41,6 +41,6 @@ int main_bench()
             strcpy(c,stu[i].name);
             m=stu[i].p;
 		}
-	printf("%s\n",c);
-	printf("%d\n%d",m,s);
+	my_printf("%s\n",c);
+	my_printf("%d\n%d",m,s);
 }

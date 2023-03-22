@@ -6,10 +6,10 @@ int main_bench()
 	int n;
 	char base[20000][300];
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",base[i]);
+		my_scanf("%s",base[i]);
 		for (j=0;base[i][j]!=0;j++)
 		{
 			switch (base[i][j])
@@ -39,7 +39,7 @@ int main_bench()
 	}
 	for (i=0;i<n;i++)
 	{
-		printf("%s\n",base[i]);
+		my_printf("%s\n",base[i]);
 	}
 	return 0;
 }

@@ -80,15 +80,15 @@ int main_bench(){
 
 	
 	for(i=sx[d];i<=sx[d]+sz[d]-1;i++){
-		printf("%c",z[i]);
+		my_printf("%c",z[i]);
 		
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=sx[b];i<=sx[b]+sz[b]-1;i++){
-		printf("%c",z[i]);
+		my_printf("%c",z[i]);
  	}
 	
-	printf("\n");
+	my_printf("\n");
 	
 	return 0;
 }

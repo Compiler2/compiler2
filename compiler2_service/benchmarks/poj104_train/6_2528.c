@@ -6,17 +6,17 @@ int main_bench()
 {
 	int i,j,k,m,n,N,w,s;
 	int a[100][100];
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 for(w=0;w<N;w++)
  {
 	s=0;
 	for(i=0;i<100;i++)
 	for(j=0;j<100;j++)
 	a[i][j]=0;
-   scanf("%d%d",&m,&n);
+   my_scanf("%d%d",&m,&n);
    for(i=0;i<m;i++)
 	for(j=0;j<n;j++)
-	scanf("%d",&a[i][j]);
+	my_scanf("%d",&a[i][j]);
   if((n>1)&&(m>1))
   {
 
@@ -38,7 +38,7 @@ for(w=0;w<N;w++)
   if((n==1)&&(m==1))
   s=a[0][0];
 
-   printf("%d\n",s);
+   my_printf("%d\n",s);
 
 
  }

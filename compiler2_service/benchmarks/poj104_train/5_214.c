@@ -5,20 +5,20 @@ int main_bench()
 	int i,j,c[2],e=0;
 	char a[2][501];
 	double b;
-	scanf("%lf",&b);
+	my_scanf("%lf",&b);
 	for(i=0;i<2;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
     c[0]=strlen(a[0]);
 	c[1]=strlen(a[1]);
 	if(c[0]!=c[1]){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;i<2;i++){
 		for(j=0;j<c[i]-1;j++){
 			if(a[i][j]!='A'&&a[i][j]!='T'&&a[i][j]!='G'&&a[i][j]!='C'){
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 		}
@@ -29,10 +29,10 @@ int main_bench()
 		}
 	}
 	if(1.0*e/c[0]>b){
-		printf("yes");
+		my_printf("yes");
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

@@ -37,24 +37,24 @@ int s(int n)
 int main_bench()
 {
 	int m,n,i,k=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n&&k<1;i++)
 	{
 		if(h(i)&&s(i))
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			k=k+1;
 		}
 	}
 	if(k==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
 		int j;
 		for(j=i;j<=n;j++)
 		{
 			if(h(j)&&s(j))
-				printf(",%d",j);
+				my_printf(",%d",j);
 		}
 	}
 }

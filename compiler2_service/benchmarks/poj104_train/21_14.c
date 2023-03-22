@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,a[100]={0};
 	float sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	sum=sum/n;
@@ -24,7 +24,7 @@ int main_bench()
 		}
 	}
 	if(sum-a[0]==a[n-1]-sum)
-		printf("%d,%d\n",a[0],a[n-1]);
+		my_printf("%d,%d\n",a[0],a[n-1]);
 	else
-		printf("%d\n",(sum-a[0]>a[n-1]-sum)?a[0]:a[n-1]);
+		my_printf("%d\n",(sum-a[0]>a[n-1]-sum)?a[0]:a[n-1]);
 }

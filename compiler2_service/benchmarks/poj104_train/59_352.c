@@ -5,17 +5,17 @@ int main_bench()
 	char zfc[200][200];
 	char zfc1[200][200];
 	int n,m,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,k;
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	for(i=1;i<=n;i++)
 	{			
 		strcpy(zfc1[i],zfc[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	m--;
 	while(m)
 	{
@@ -50,6 +50,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

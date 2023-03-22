@@ -3,9 +3,9 @@
 int main_bench(){
    int n,i,t,k,h,b[3000];
    char a[3000][256],pd[3000][256];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-     scanf("%s",a[i]);
+     my_scanf("%s",a[i]);
 	 b[i]=strlen(a[i]);
    }
    for(t=0;t<n;t++){
@@ -23,7 +23,7 @@ int main_bench(){
 	   }
    }
    for(h=0;h<n;h++){
-    printf("%s\n",pd[h]);
+    my_printf("%s\n",pd[h]);
    }
 return 0;
 }

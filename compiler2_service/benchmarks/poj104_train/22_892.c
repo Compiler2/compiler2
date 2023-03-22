@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a=0,b,c,d=0;
 	char e;
-	scanf("%d%c",&c,&e);
+	my_scanf("%d%c",&c,&e);
 	     while(e==',')
 		{
-		scanf("%d%c",&b,&e);
+		my_scanf("%d%c",&b,&e);
 		if (b>c)
 		{
 			d=c;
@@ -20,9 +20,9 @@ int main_bench()
 		 }
 		if (d!=0)
 	{
-		printf("%d",d);}
+		my_printf("%d",d);}
 	else 
 	{ 
-		printf("No");}
+		my_printf("No");}
 	return 0;
 }

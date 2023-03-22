@@ -2,10 +2,10 @@
 
 int main_bench() {
 	int a,n,i=0,b,max,secm=0;
-	scanf("%d",&n);
-	scanf("%d",&max);
+	my_scanf("%d",&n);
+	my_scanf("%d",&max);
 	for (; i<n-1; i++) {
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		if (max<b) {
 			a=max;
 			max=b;
@@ -16,6 +16,6 @@ int main_bench() {
 		}
 
 	}
-	printf("%d\n\n%d",max,secm);
+	my_printf("%d\n\n%d",max,secm);
 	return 0;
 }

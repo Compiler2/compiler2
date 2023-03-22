@@ -8,14 +8,14 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	leap=judge(m,n);
 	if(leap==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	if(leap==1)
 	{
@@ -31,15 +31,15 @@ int main_bench()
 			{
 			    if(j==0)
 				{
-				    printf("%d",a[i][j]);
+				    my_printf("%d",a[i][j]);
 				}
 				if(j!=0)
 				{
-				    printf(" %d",a[i][j]);
+				    my_printf(" %d",a[i][j]);
 				}
 				if(j%4==0&&j!=0)
 				{
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}

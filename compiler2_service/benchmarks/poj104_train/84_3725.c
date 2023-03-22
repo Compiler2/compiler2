@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,i,a,b,x,max,cmax;
-scanf("%d%d%d",&n,&a,&b);
+my_scanf("%d%d%d",&n,&a,&b);
 if(a>=b)
 {max=a;
 cmax=b;}
@@ -13,7 +13,7 @@ cmax=a;}
 i=1;
 while(i<=n-2)
 {
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	i=i+1;
 	if(x>=cmax&&x>=max)
 	{cmax=max;
@@ -27,6 +27,6 @@ else
 	{cmax=x;
 	max=max;}
 }
-printf("%d\n%d\n",max,cmax);
+my_printf("%d\n%d\n",max,cmax);
 return 0;
 }

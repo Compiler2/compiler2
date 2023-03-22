@@ -3,9 +3,9 @@
 main_bench()
 {
     int a,b;
-    scanf("%d %d",&a,&b);
-    if(a==b){printf("%d\n",a);}
-    else if(a==1||b==1){printf("1\n");}
+    my_scanf("%d %d",&a,&b);
+    if(a==b){my_printf("%d\n",a);}
+    else if(a==1||b==1){my_printf("1\n");}
     else
     {
     int f,i=0,j=0,n,m,t=0;
@@ -38,7 +38,7 @@ main_bench()
       {
        for(m=0;m<j;m++)
        {
-          if(v[m]==w[n]){printf("%d\n",w[n]);t++;break;}             
+          if(v[m]==w[n]){my_printf("%d\n",w[n]);t++;break;}             
        }
        if(t>0){break;}             
       }
@@ -49,7 +49,7 @@ main_bench()
       {
        for(m=0;m<i;m++)
        {
-          if(w[m]==v[n]){printf("%d\n",v[n]);t++;break;}             
+          if(w[m]==v[n]){my_printf("%d\n",v[n]);t++;break;}             
        } 
        if(t>0){break;}             
       } 

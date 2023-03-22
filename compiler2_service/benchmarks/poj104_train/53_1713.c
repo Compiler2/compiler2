@@ -4,12 +4,12 @@ int main_bench()
 {
 	int num[100],str[100];
 	int i,j,k,l,m,n,index=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	}
-	printf("%d",num[0]);
+	my_printf("%d",num[0]);
 	for(i=1;i<n;i++)
 	{
 		index=0;
@@ -19,6 +19,6 @@ int main_bench()
 				index++;
 		}
 		if(index==0)
-			printf(",%d",num[i]);
+			my_printf(",%d",num[i]);
 	}
 }

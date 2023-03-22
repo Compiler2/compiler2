@@ -42,7 +42,7 @@ int main_bench()
                 if (p!=1) c[i]='$';
             }
         puts(str);
-        for (i=0;i<n;i++) printf("%c",c[i]);
-        printf("\n");
+        for (i=0;i<n;i++) my_printf("%c",c[i]);
+        my_printf("\n");
     }
 }

@@ -3,20 +3,20 @@
 int main_bench()
 {int i,j,k,n,a[305]; char c;
 for(i=1;;i++)
-{scanf("%d",&a[i]);
+{my_scanf("%d",&a[i]);
 c=getchar();
 if(c=='\n') break;
 }
-if(i==1) printf("No");
+if(i==1) my_printf("No");
 else{
 for(j=1;j<=i-1;j++)
 for(k=1;k<=i-j;k++)
 if(a[k]>a[k+1]) {n=a[k]; a[k]=a[k+1]; a[k+1]=n;}
-if(a[1]==a[i]) printf("No");
+if(a[1]==a[i]) my_printf("No");
 else 
 {for(j=i-1;;j--)
 if(a[j]!=a[i]) break;
-printf("%d",a[j]);
+my_printf("%d",a[j]);
 }}
 return 0;
 }

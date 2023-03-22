@@ -3,9 +3,9 @@
 int  main_bench()
 {
     int i=2,j=2,q,m=0,n=0,a[10000];
-	scanf("%d",&q);
+	my_scanf("%d",&q);
         if(q<5)
-		printf("empty\n");
+		my_printf("empty\n");
         else
 	{
 			for(i=2;i<=q;i++)
@@ -31,7 +31,7 @@ int  main_bench()
               if((a[i+1]-a[i])==2)
                 {
                         m=m+1;
-                      printf("%d %d\n",a[i],a[i+1]);
+                      my_printf("%d %d\n",a[i],a[i+1]);
                 }
        }
 }

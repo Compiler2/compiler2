@@ -8,9 +8,9 @@ int main_bench()
 	int i=0;
 	for(i=0;i<strlen(s);i++){
 		if(i<strlen(s)-1)
-			printf("%c",(char)(*(s+i)+*(s+i+1)));
+			my_printf("%c",(char)(*(s+i)+*(s+i+1)));
 		else
-			printf("%c\n",(char)(*(s+i)+*s));
+			my_printf("%c\n",(char)(*(s+i)+*s));
 	}
 
 	return 0;

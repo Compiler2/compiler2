@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int S[100][2],n,i,j,k,K;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<2;j++)
-		scanf("%d",&S[i][j]);
+		my_scanf("%d",&S[i][j]);
 		k=0;
 		K=0;
 		for(i=0;i<n;i++){
@@ -21,6 +21,6 @@ int main_bench(){
 		}
 		if(k>K)
 			K=k;
-		printf("%d",K);
+		my_printf("%d",K);
 		return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[81];
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     gets(a);
 
     for(i=0;i<=n-2;i++)
@@ -20,13 +20,13 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
             if(a[j]=='\0')
             {
-                printf("1\n");
+                my_printf("1\n");
             }
        }
        else if(a[0]<='z'&&a[0]>='a')
@@ -39,13 +39,13 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
            if(a[j]=='\0')
            {
-               printf("1\n");
+               my_printf("1\n");
            }
        }
        else if(a[0]=='_')
@@ -58,18 +58,18 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
            if(a[j]=='\0')
            {
-               printf("1\n");
+               my_printf("1\n");
            }
        }
        else
        {
-           printf("0\n");
+           my_printf("0\n");
        }
     }
     gets(a);
@@ -83,14 +83,14 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
 
         if(a[j]=='\0')
         {
-            printf("1");
+            my_printf("1");
         }
     }
     else if(a[0]<='z'&&a[0]>='a')
@@ -103,13 +103,13 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
         if(a[j]=='\0')
         {
-            printf("1");
+            my_printf("1");
         }
     }
     else if(a[0]=='_')
@@ -122,18 +122,18 @@ int main_bench()
                 }
                 else
                 {
-                    printf("0\n");
+                    my_printf("0\n");
                     break;
                 }
             }
         if(a[j]=='\0')
         {
-            printf("1");
+            my_printf("1");
         }
     }
     else
     {
-           printf("0");
+           my_printf("0");
     }
 }
 

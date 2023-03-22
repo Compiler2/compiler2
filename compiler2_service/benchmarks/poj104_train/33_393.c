@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,j,k;
     char c1[260],c2[260];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=0;j<n;j++){
-          scanf("%s",c1);
+          my_scanf("%s",c1);
           k=0;                    
           for(i=0;c1[i]!='\0';i++){
                  if(c1[i]=='A') c2[i]='T';
@@ -14,8 +14,8 @@ int main_bench(){
                  if(c1[i]=='G') c2[i]='C';
                  k++;
           }
-          for(i=0;i<k-1;i++) printf("%c",c2[i]);
-          printf("%c\n",c2[k-1]);
+          for(i=0;i<k-1;i++) my_printf("%c",c2[i]);
+          my_printf("%c\n",c2[k-1]);
           
     }                                   
     

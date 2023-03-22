@@ -6,7 +6,7 @@ int main_bench(){
 
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	i=0;
@@ -28,14 +28,14 @@ int main_bench(){
 			col++;
 		}
 		if(j==5){
-			printf("%d %d %d\n",hang+1,lie+1,min);
+			my_printf("%d %d %d\n",hang+1,lie+1,min);
 			i++;
 		}
 		col=lie;
 
 	}
 	if(i==0){
-		printf("not found");
+		my_printf("not found");
 	}
 
 	return 0;

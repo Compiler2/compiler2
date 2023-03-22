@@ -9,7 +9,7 @@ int main_bench()
  n=strlen(p);
  for(i=0;i<n-2;i++)
     {
-     printf("%c",*(p+i));
+     my_printf("%c",*(p+i));
      if(*(p+i+2)==' '&&*(p+i+1)==' ')
        {
         while(*(p+i+2)==' ')
@@ -18,5 +18,5 @@ int main_bench()
                }
        }
     }
-    printf("%c%c",*(p+n-2),*(p+n-1));
+    my_printf("%c%c",*(p+n-2),*(p+n-1));
 }

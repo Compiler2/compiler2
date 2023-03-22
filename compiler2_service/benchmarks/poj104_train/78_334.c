@@ -44,7 +44,7 @@ int main_bench()
             }
         }
     }
-    for(d=0;d<4;d++) printf("%c %d\n",a[d],b[d]);
-    printf("%c%c%c%c",f,f,f,f);
+    for(d=0;d<4;d++) my_printf("%c %d\n",a[d],b[d]);
+    my_printf("%c%c%c%c",f,f,f,f);
 	return 0;
 }

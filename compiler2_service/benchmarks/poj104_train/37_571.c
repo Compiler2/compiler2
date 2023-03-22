@@ -4,10 +4,10 @@ int main_bench()
 {
 	int t,i,len,j,a=0,b=1;
 	char zfc[100];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		len=strlen(zfc);
 		for(a=0;a<len;a++)
 		{
@@ -34,10 +34,10 @@ int main_bench()
 		}
 		if(b==1)
 		{
-			printf("%c\n",zfc[a]);
+			my_printf("%c\n",zfc[a]);
 		}
 		else
-			printf("no");
+			my_printf("no");
 	}
 
 	return 0;

@@ -2,7 +2,7 @@
 
 int main_bench(){
     int n,m,k,r,i;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for(r=1;r<1000000;r++){
         m=r*(n-1);
         for(i=1;i<=n;i++){
@@ -18,6 +18,6 @@ int main_bench(){
         }
     }
   end:
-    printf("%d",m);
+    my_printf("%d",m);
     return 0;
 }

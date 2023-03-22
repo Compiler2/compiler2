@@ -37,8 +37,8 @@ main_bench()
       int num;
       for(i=0;i<=5;i++)
       {
-                       scanf("%d",&num);
+                       my_scanf("%d",&num);
                        a=reverse(num);
-                       printf("%d\n",a);
+                       my_printf("%d\n",a);
       }
 }

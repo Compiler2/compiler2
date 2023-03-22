@@ -11,10 +11,10 @@ int main_bench()
 		char b[26];
 
 	}s[999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&s[i].a,s[i].b);
+		my_scanf("%d%s",&s[i].a,s[i].b);
 	}
 	for(i=0;i<26;i++)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 		}
 	}
 	q='A'+g;
-	printf("%c\n%d\n",q,max);
+	my_printf("%c\n%d\n",q,max);
 
 	for(i=0;i<n;i++)
 	{
@@ -48,7 +48,7 @@ int main_bench()
 		{
 			if(s[i].b[j]-'A'==g)
 			{
-				printf("%d\n",s[i].a);
+				my_printf("%d\n",s[i].a);
 			}
 		}
 	}

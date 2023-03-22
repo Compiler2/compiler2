@@ -21,19 +21,19 @@ int main_bench()
 		else k=0;
 		if(j>k)
 		{	
-			printf(">");
+			my_printf(">");
 		    n=0;
 			break;
 		}
 		else if(j<k)
 		{
-			printf("<");
+			my_printf("<");
 			n=0;
 			break;
 		}
 		else n++;
 	}
 	if(n!=0)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

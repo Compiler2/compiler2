@@ -2,7 +2,7 @@
 
 int main_bench(){
    int n,sum,a,i,b,c,d,e;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    e=n/10000;
    d=n/1000-e*10;
    c=n/100-e*100-d*10;
@@ -15,6 +15,6 @@ int main_bench(){
 	   }else
 		   break;
    }
-   printf("%d",sum);
+   my_printf("%d",sum);
    return 0;
 }

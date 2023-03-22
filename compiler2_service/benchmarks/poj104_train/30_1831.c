@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
          for(i=0;i<=n;i++){
               sum=sum+i*i;
          }  
@@ -19,6 +19,6 @@ int main_bench()
         else if((i-(i%10))==70)
 		    sum=sum-i*i;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

@@ -13,10 +13,10 @@ int main_bench()
 {
 	int n,i,j,temp2;
     int sum[100]={0},sum1=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{    
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].test1,&stu[i].test2,&stu[i].c,&stu[i].w,&stu[i].a);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].test1,&stu[i].test2,&stu[i].c,&stu[i].w,&stu[i].a);
 	}
 	for(i=0;i<=n-1;i++)
 	{
@@ -45,7 +45,7 @@ int main_bench()
 	{
 		sum1=sum1+sum[i];
 	}
-	printf("%s\n",stu[0].name);
-	printf("%d\n",sum[0]);
-	printf("%d\n",sum1);
+	my_printf("%s\n",stu[0].name);
+	my_printf("%d\n",sum[0]);
+	my_printf("%d\n",sum1);
 }

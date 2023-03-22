@@ -3,12 +3,12 @@
 int main_bench(){
 	int n,sum=0,i;
 	double f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
         double *c=(double *)malloc(sizeof(double)*n);
 	int *a=(int *)malloc(sizeof(int)*n);         
 	int *b=(int *)malloc(sizeof(int)*n);         
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	f=(double)sum/n;                             
@@ -29,11 +29,11 @@ int main_bench(){
 		}
 
 	}if(x==1){
-		printf("%d",b[0]);                   
+		my_printf("%d",b[0]);                   
 	}else{
-		printf("%d",b[0]);
+		my_printf("%d",b[0]);
 		for(i=1;i<x;i++){
-			printf(",%d",b[i]);
+			my_printf(",%d",b[i]);
 		}
 	}
 	

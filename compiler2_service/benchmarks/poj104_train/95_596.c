@@ -18,13 +18,13 @@ int main_bench()
 	{
 		if(a[i]>b[i])
 		{
-			printf(">");break;
+			my_printf(">");break;
 		}
 		if(a[i]<b[i])
 		{
-			printf("<");break;
+			my_printf("<");break;
 		}
 	}
 	if(i==p)
-		printf("=");
+		my_printf("=");
 }

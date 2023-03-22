@@ -23,8 +23,8 @@ n=0;
  if(a[i]!=b[i])break;}
 	 
 
- if(a[n]>b[n])printf(">");
-if(a[n]==b[n])printf("=");
-if(a[n]<b[n])printf("<");
+ if(a[n]>b[n])my_printf(">");
+if(a[n]==b[n])my_printf("=");
+if(a[n]<b[n])my_printf("<");
 
 }

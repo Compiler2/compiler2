@@ -96,12 +96,12 @@ int main_bench()
 	{
       for(i=m;i<=n;i++)
 		{
-			printf("%d",e[i]);
+			my_printf("%d",e[i]);
 		
 		}
 	}
 	else
-		printf("0");
+		my_printf("0");
 
 
 	return 0;

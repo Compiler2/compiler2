@@ -5,10 +5,10 @@ int i,a,b,e,m,j;
 double c,d;
 a=1;
 b=2;
-scanf("%d",&m);
+my_scanf("%d",&m);
 int sz[m];
 for(i=0;i<m;i++){
-scanf("%d",&sz[i]);
+my_scanf("%d",&sz[i]);
 }
 double sum[m];
 for(i=0;i<m;i++){
@@ -27,7 +27,7 @@ b=e+b;
 }
 }
 for(i=0;i<m;i++){
-printf("%.3lf\n",sum[i]);
+my_printf("%.3lf\n",sum[i]);
 }
 return 0;
 }

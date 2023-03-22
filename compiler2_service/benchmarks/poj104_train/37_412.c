@@ -4,11 +4,11 @@ main_bench()
 {    
     
     int q;
-    scanf("%d",&q);
+    my_scanf("%d",&q);
     for(int s=0;s<q;s++)
     {       char a[100000];
             int n,i,j,m,k=0;
-            scanf("%s",a);
+            my_scanf("%s",a);
             n=strlen(a);
                 for(i=0;i<n;i++)
                     {   m=0;
@@ -18,11 +18,11 @@ main_bench()
                            m++;
                         }
                         if(m==1)
-                        {printf("%c\n",a[i]);
+                        {my_printf("%c\n",a[i]);
                          k=1;
                         break;}
                     }
   if(k==0)
-  printf("no\n");
+  my_printf("no\n");
     }
 }

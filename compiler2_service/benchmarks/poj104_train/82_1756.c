@@ -6,10 +6,10 @@ int main_bench()
          int d=0;
 	int i=0;
 	int max(int x,int y);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=1;p<=n;p++)
 	{
-		scanf("%d %d ",&a,&b);
+		my_scanf("%d %d ",&a,&b);
 		if(90<=a&a<=140)
 		{
 			if(60<=b&b<=90)
@@ -28,7 +28,7 @@ int main_bench()
 		c=i;
 		d=max_int(d,c);
 	}
-	printf ("%d\n",d);
+	my_printf ("%d\n",d);
 	return 0;
 }
 int max_int(int x,int y)

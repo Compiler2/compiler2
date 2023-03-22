@@ -7,19 +7,19 @@ int main_bench()
 	int n,m,i,j,flag,a[5][5];
 	for(j=0;j<5;j++)
 		for(i=0;i<5;i++)
-			scanf("%d",&a[j][i]);
-	scanf("%d%d",&n,&m);
+			my_scanf("%d",&a[j][i]);
+	my_scanf("%d%d",&n,&m);
 	flag=change(n,m);
-	if(flag==0) printf("error\n");
+	if(flag==0) my_printf("error\n");
 	else
 	{
 		changing(a,n,m);
 		for(j=0;j<5;j++)
 		{
-			printf("%d",a[j][0]);
+			my_printf("%d",a[j][0]);
 			for(i=1;i<5;i++)
-				printf(" %d",a[j][i]);
-			printf("\n");
+				my_printf(" %d",a[j][i]);
+			my_printf("\n");
 		}
 	}
 }

@@ -6,7 +6,7 @@
 	
 	int a,b,c,d;
 	void f(int x);
-	scanf("%d%d%d%d",&a,&b,&c,&d);
+	my_scanf("%d%d%d%d",&a,&b,&c,&d);
 	f(a);
 	f(b);
 	f(c);
@@ -24,5 +24,5 @@ void f(int x)
       x/=10;
     }
 	    y+=x;
-    printf("%d\n",y);
+    my_printf("%d\n",y);
 	}

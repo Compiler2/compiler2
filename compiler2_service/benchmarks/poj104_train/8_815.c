@@ -16,12 +16,12 @@ int main_bench()
 }
 void Read(void)
 {
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	
 	for (i = 1;i <= m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for (i = 1;i <= n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void Order(void)
 {
@@ -55,7 +55,7 @@ void Combine(void)
 }
 void Write(void)
 {
-	printf("%d",c[1]);
+	my_printf("%d",c[1]);
 	for (i = 2;i <= m + n;i++)
-	printf(" %d",c[i]);
+	my_printf(" %d",c[i]);
 }

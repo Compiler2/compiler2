@@ -4,10 +4,10 @@ int main_bench()
 {
 	int t,i,j,k,l;
 	char c[100];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(k=1;k<=t;k++)
 	{
-		scanf("%s",c);
+		my_scanf("%s",c);
 		l=strlen(c);
 		for(i=0;i<=l-1;i++)
 		{
@@ -20,9 +20,9 @@ int main_bench()
 				break;
 		}
 		if(i==l)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("%c\n",c[i]);
+			my_printf("%c\n",c[i]);
 	}
 	return 0;
 }

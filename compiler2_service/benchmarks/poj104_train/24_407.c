@@ -22,5 +22,5 @@ int main_bench()
 			min=strlen(a);
 		}
 	}
-	printf("%s\n%s\n",l,s);
+	my_printf("%s\n%s\n",l,s);
 }

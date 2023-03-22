@@ -26,11 +26,11 @@ int main_bench()
 		}
 		else
 		{
-			printf("(%c,%d)",w[i-1],a[j]);
+			my_printf("(%c,%d)",w[i-1],a[j]);
 			j=j+1;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

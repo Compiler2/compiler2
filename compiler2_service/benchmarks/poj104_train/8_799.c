@@ -10,9 +10,9 @@ canf();px();lj();rintf();
 }
 
 void canf()
-{scanf("%d%d",&la,&lb);
-for(i=0;i<=la-1;i++) scanf("%d",&a[i]);
-for(i=0;i<=lb-1;i++) scanf("%d",&b[i]);
+{my_scanf("%d%d",&la,&lb);
+for(i=0;i<=la-1;i++) my_scanf("%d",&a[i]);
+for(i=0;i<=lb-1;i++) my_scanf("%d",&b[i]);
 }
 
 void px()
@@ -26,5 +26,5 @@ for(i=la;i<=la+lb-1;i++) c[i]=b[i-la];
 }
 
 void rintf()
-{printf("%d",c[0]);for(i=1;i<=la+lb-1;i++)printf(" %d",c[i]);printf("\n");
+{my_printf("%d",c[0]);for(i=1;i<=la+lb-1;i++)my_printf(" %d",c[i]);my_printf("\n");
 }

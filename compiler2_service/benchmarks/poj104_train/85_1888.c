@@ -12,10 +12,10 @@ int panduan(char x){
 }
 int main_bench(){
     int i,j,n,len;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zfc[100][21];
     for(i=0;i<n;i++){
-   scanf("%s",zfc[i]);
+   my_scanf("%s",zfc[i]);
 }
      int s=0;
      for(i=0;i<n;i++){
@@ -30,10 +30,10 @@ s=s+panduan(zfc[i][j]);
 
 (s==0)
 ){
-            printf("yes\n");
+            my_printf("yes\n");
         }
        else{
-            printf("no\n");
+            my_printf("no\n");
         }
     }
     return 0;

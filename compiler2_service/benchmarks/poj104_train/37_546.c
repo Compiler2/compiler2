@@ -4,7 +4,7 @@ int main_bench(){
 	int t,i,j,len,num,tag;
 	char k;
 	char str[100000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	for(i=0;i<t;i++){
 		num=1;
@@ -19,7 +19,7 @@ int main_bench(){
 				}
 			}
 			if(num==1&&str[j]>='a'&&str[j]<='z'){
-				printf("%c\n",str[j]);
+				my_printf("%c\n",str[j]);
 				tag=0;
 				break;
 			}
@@ -27,7 +27,7 @@ int main_bench(){
 				num=1;
 			}
 		}
-		if(tag==1) printf("no\n");
+		if(tag==1) my_printf("no\n");
 	}
 	return 0;
 }

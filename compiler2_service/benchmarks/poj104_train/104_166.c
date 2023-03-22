@@ -28,7 +28,7 @@ int main_bench()
 {
 	int sx[1000],sy[1000];                         
 	int x,y,i,j,k,l,xi=0;
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	if(x==y)
 		xi=x;
 	else
@@ -43,5 +43,5 @@ int main_bench()
 		if(xi!=0) break;
 	}
 	}
-	printf("%d\n",xi);
+	my_printf("%d\n",xi);
 }

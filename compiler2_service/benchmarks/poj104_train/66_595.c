@@ -13,7 +13,7 @@ int main_bench()
 	
 	long int t;
 	int i;
-	scanf("%d %d %d", &y, &m, &d);
+	my_scanf("%d %d %d", &y, &m, &d);
 	t = ((y-1)-(y-1)%4)/4 - ((y-1)-(y-1)%100)/100 + ((y-1)-(y-1)%400)/400;
 	
 	ny = (y-1)*(365%7) + t;
@@ -30,12 +30,12 @@ int main_bench()
 		if(m==11) {if(y%4==0) nm=31*6+30*3+29; else nm=31*6+30*3+28;}
 		if(m==12) {if(y%4==0) nm=31*6+30*4+29; else nm=31*6+30*4+28;}
 	date = ny%7 + nm%7 + d%7;
-		if(date%7==1) printf("Mon.\n");
-		if(date%7==2) printf("Tue.\n");
-		if(date%7==3) printf("Wed.\n");
-		if(date%7==4) printf("Thu.\n");
-		if(date%7==5) printf("Fri.\n");
-		if(date%7==6) printf("Sat.\n");
-		if(date%7==0) printf("Sun.\n");
+		if(date%7==1) my_printf("Mon.\n");
+		if(date%7==2) my_printf("Tue.\n");
+		if(date%7==3) my_printf("Wed.\n");
+		if(date%7==4) my_printf("Thu.\n");
+		if(date%7==5) my_printf("Fri.\n");
+		if(date%7==6) my_printf("Sat.\n");
+		if(date%7==0) my_printf("Sun.\n");
 	return 0;
 }

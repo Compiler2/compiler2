@@ -6,12 +6,12 @@ int main_bench()
 	int b,n,a,d,e,f;
 	int m;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++)
 	{
 		for(i=0;i<n;i++)
 		{
-			scanf("%d",&shumu[m][i]);
+			my_scanf("%d",&shumu[m][i]);
 		}
 	}
 	for(m=1;m<n-1;m++)
@@ -37,7 +37,7 @@ int main_bench()
 		}
 	}
 	b=(e-a+1)*(f-d+1);
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 	
 	

@@ -2,10 +2,10 @@
 
 int main_bench(){
 int n,i,j,sz[1000][1000],a,b,c,d,e=1,s;
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 for (i=0;i<n;i++){
 for (j=0;j<n;j++){
-scanf ("%d",&sz[i][j]);
+my_scanf ("%d",&sz[i][j]);
 
 if (sz[i][j]==0&&e==1){
 a=i;
@@ -19,6 +19,6 @@ d=j;
 }
 }
 s=(c-a-1)*(d-b-1);
-printf("%d\n",s);
+my_printf("%d\n",s);
 return 0;
 }

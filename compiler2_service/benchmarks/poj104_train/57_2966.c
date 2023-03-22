@@ -3,7 +3,7 @@
 
 int main_bench() {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     char ip[n][40];
     char op[n][40];
@@ -11,7 +11,7 @@ int main_bench() {
     int i,j;
     for(i=0;i<n;i++)
     {
-        scanf("%s",ip[i]);
+        my_scanf("%s",ip[i]);
     }
     
     
@@ -25,7 +25,7 @@ int main_bench() {
             else if(ip[i][j]=='e' && ip[i][j+1]=='r' && ip[i][j+2]==0 ){op[i][j]=0;}
             else if(ip[i][j]=='l' && ip[i][j+1]=='y' && ip[i][j+2]==0 ){op[i][j]=0;}
         }
-        printf("%s\n",op[i]);
+        my_printf("%s\n",op[i]);
     }
     
     return 0;

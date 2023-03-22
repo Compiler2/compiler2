@@ -3,10 +3,10 @@
 int zl[1000][1000];
 int main_bench(){
     int i,j,n,a,b,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&zl[i][j]);
+			my_scanf("%d",&zl[i][j]);
 		}
 	}
     for(i=0;i<n-1;i++){
@@ -33,6 +33,6 @@ b=j;
 			}
 }
     s=(i-a-1)*(j-b-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

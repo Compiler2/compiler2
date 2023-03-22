@@ -3,12 +3,12 @@
 int main_bench()
 { int m=0,i=0;
   int su(int n);
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(i=3;i<=m/2;i=i+2)
   {  if(su(i)==1&&su(m-i)==1)
-        {printf("%d %d",i,m-i);
+        {my_printf("%d %d",i,m-i);
          if(i<m/2)
-          {printf("\n");
+          {my_printf("\n");
 	  
 	      }
 	    }

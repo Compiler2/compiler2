@@ -12,8 +12,8 @@ int main_bench()
     p=0;
     md=0;
      
-    scanf("%d %d %d",&sy,&sm,&sd);
-    scanf("%d %d %d",&ey,&em,&ed);
+    my_scanf("%d %d %d",&sy,&sm,&sd);
+    my_scanf("%d %d %d",&ey,&em,&ed);
     for(i=1;i<sm;i++)
     {
        if (i==1||i==3||i==5||i==7||i==8||i==10)
@@ -43,5 +43,5 @@ int main_bench()
                        }
                        DE=DE+ed;
     answer=DE-DS;
-    printf("%d",answer);
+    my_printf("%d",answer);
 }

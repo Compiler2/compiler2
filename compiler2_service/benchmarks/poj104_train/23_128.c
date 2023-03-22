@@ -22,6 +22,6 @@ int main_bench()
 	}
 	a[i][j]='\0';
 	for(t=i;t>0;t--)
-		printf("%s ",a[t]);
-	printf("%s",a[0]);
+		my_printf("%s ",a[t]);
+	my_printf("%s",a[0]);
 }

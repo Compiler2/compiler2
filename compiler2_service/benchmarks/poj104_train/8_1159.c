@@ -16,11 +16,11 @@ return 0;}
 void re(int a[],int b[])
 {
 int i;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for(i=0;i<m;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(i=0;i<n;i++)
-scanf("%d",&b[i]);
+my_scanf("%d",&b[i]);
 }
 void or(int a[],int b[])
 {
@@ -41,7 +41,7 @@ for(i=m;i<m+n;i++) d[i]=b[i-m];
 void pr(int d[])
 {
 int i;
-printf("%d",d[0]);
+my_printf("%d",d[0]);
 for(i=1;i<m+n;i++)
-printf(" %d",d[i]);
+my_printf(" %d",d[i]);
 }

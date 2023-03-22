@@ -11,10 +11,10 @@ int main_bench()
 	int a[26];
 	int m,i,j,max,maxauthor;
 	char c;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=0;i<m;i++)
 	{
-		scanf("%d %s",&b[i].id,b[i].author);
+		my_scanf("%d %s",&b[i].id,b[i].author);
 	}
 	for (i=0;i<26;i++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 			maxauthor=i;
 		}
 	}
-	printf("%c\n%d\n",maxauthor+65,max);
+	my_printf("%c\n%d\n",maxauthor+65,max);
 	for (i=0;i<m;i++)
 	{
 		for (j=0;b[i].author[j]!='\0';j++)
@@ -46,7 +46,7 @@ int main_bench()
 			c=b[i].author[j];
 			if (c==maxauthor+65)
 			{
-				printf("%d\n",b[i].id);
+				my_printf("%d\n",b[i].id);
 				break;
 			}
 		}

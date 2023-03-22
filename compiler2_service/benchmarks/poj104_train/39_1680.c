@@ -14,10 +14,10 @@ int main_bench()
 	};
 	struct stu *p;
     int n,i,max=0,t,sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     p=(struct stu *)malloc(n*sizeof(struct stu));
     for(i=0;i<n;i++)
-    scanf("%s%d%d%s%s%d",(p+i)->name,&(p+i)->a,&(p+i)->b,(p+i)->c,(p+i)->d,&(p+i)->e);
+    my_scanf("%s%d%d%s%s%d",(p+i)->name,&(p+i)->a,&(p+i)->b,(p+i)->c,(p+i)->d,&(p+i)->e);
     for(i=0;i<n;i++)
     (p+i)->m=0;
     for(i=0;i<n;i++)
@@ -44,9 +44,9 @@ int main_bench()
     
   for(i=0;i<n;i++)
        sum+=(p+i)->m;
-  printf("%s\n",(p+t)->name);
-  printf("%d\n",max);
-  printf("%d\n",sum);
+  my_printf("%s\n",(p+t)->name);
+  my_printf("%d\n",max);
+  my_printf("%d\n",sum);
   return 0;
 
 }

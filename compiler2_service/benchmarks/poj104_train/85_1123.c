@@ -4,16 +4,16 @@
 int main_bench()
 {
   int n,i;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   while(n--)
   {
   char a[25];
-  scanf("%s",a);
+  my_scanf("%s",a);
   int len=strlen(a);
   int t=1;
   if(!(a[0]>='A'&&a[0]<='Z'||a[0]>='a'&&a[0]<='z'||a[0]=='_'))
   {
-    printf("no\n");
+    my_printf("no\n");
     continue;
   }
   for(i=0;i<len;i++)
@@ -26,9 +26,9 @@ int main_bench()
       
   }
   if(t)
-  printf("yes\n");
+  my_printf("yes\n");
   else
-  printf("no\n");
+  my_printf("no\n");
   }
   return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int N[1000][1000];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,m;
 	int a=0,b=0;
 	int count=0;
@@ -13,7 +13,7 @@ int main_bench()
 		m=0;
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&N[i][j]);
+			my_scanf("%d",&N[i][j]);
 			if(N[i][j]==0)
 			{
 				m++,count++;
@@ -31,6 +31,6 @@ int main_bench()
 	}
 			int sum;
 			sum=a*b-count;
-			printf("%d",sum);
+			my_printf("%d",sum);
             return 0;
 }

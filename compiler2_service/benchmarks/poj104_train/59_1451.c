@@ -5,16 +5,16 @@ int main_bench()
 {
 	char map[105][105];
 	int a[105][105] = {0},m,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i = 1;i <= n;i ++){
-		scanf("%s",map[i]);
+		my_scanf("%s",map[i]);
 		for(int j = 0;j < n;j ++){
 			if(map[i][j] == '@') a[i][j+1] = 1;
 			if(map[i][j] == '#') a[i][j+1] = -1;
 		}
 	}
 	
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int i = 1;i < m;i ++){
 		for(int j = 1;j <= n;j ++){
 			for(int k = 1;k <= n;k ++){
@@ -33,7 +33,7 @@ int main_bench()
 			if(a[i][j] > 0) ans++;
 		}
 	}
-	printf("%d\n",ans);
+	my_printf("%d\n",ans);
 
 	return 0;
 }

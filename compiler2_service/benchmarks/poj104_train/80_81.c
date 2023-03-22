@@ -42,9 +42,9 @@ int main_bench()
 int a[6],i;
 long day1,day2,p;
 for(i=0;i<6;i++)
-{scanf("%d ",&a[i]);}
+{my_scanf("%d ",&a[i]);}
 day1=date(a[0],a[1],a[2]);
 day2=date(a[3],a[4],a[5]);
 p=day2-day1;
-printf("%d",p);
+my_printf("%d",p);
 }

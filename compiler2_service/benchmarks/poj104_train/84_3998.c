@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n,a,b,c,max1,max2,place1,place2;
-	scanf("%d",&n);
-	scanf("%d\n%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d\n%d",&a,&b);
 	if(a>b) place1=1;
 	else place1=2;
 	switch(place1)
@@ -17,7 +17,7 @@ int main_bench()
 	n=n-2;
     while(n--)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(c<=max2) place2=1;
 		else if (c<max1) place2=2;
 		else place2=3;
@@ -30,7 +30,7 @@ int main_bench()
 				break;}
 
 	}
-	printf("%d\n%d",max1,max2);
+	my_printf("%d\n%d",max1,max2);
 	return 0;
 
 }

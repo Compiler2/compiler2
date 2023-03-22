@@ -14,10 +14,10 @@ int main_bench()
 	
 	
 	for(i=0;str1[i]!='\0';i++){
-		if(str1[i]>str2[i])   {printf(">");k=1;break;}
-		else if(str1[i]<str2[i])   {printf("<");k=1;break;}
+		if(str1[i]>str2[i])   {my_printf(">");k=1;break;}
+		else if(str1[i]<str2[i])   {my_printf("<");k=1;break;}
 	}
 
 	if(k==0)
-	printf("=");
+	my_printf("=");
 }

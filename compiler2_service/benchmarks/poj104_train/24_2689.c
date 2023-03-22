@@ -3,15 +3,15 @@
 int main_bench(){
 	char max[50],min[50],a[50];
 	int n,i;
-	scanf("%d",&n);
-	scanf("%s",max);
+	my_scanf("%d",&n);
+	my_scanf("%s",max);
 	strcpy(min,max);
 	for(i=2;i<=n;i++){
-		scanf("%s",a);
+		my_scanf("%s",a);
 		if(strlen(a)>strlen(max)) strcpy(max,a);
 		if(strlen(a)<strlen(min)) strcpy(min,a);
 	}
-	printf("%s\n",max);
-	printf("%s\n",min);
+	my_printf("%s\n",max);
+	my_printf("%s\n",min);
 	return 0;
 }

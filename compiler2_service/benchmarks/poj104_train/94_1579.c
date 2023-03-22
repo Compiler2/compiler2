@@ -6,10 +6,10 @@ int main_bench()
 	int js[501];
 	int n,i,k,a,b;
 	k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -38,8 +38,8 @@ int main_bench()
 	}
 	for(i=0;i<k-1;i++)
 	{
-		printf("%d,",(js[i]));
+		my_printf("%d,",(js[i]));
 	}
-		printf("%d",(js[k-1]));	
+		my_printf("%d",(js[k-1]));	
 	return 0;
 }

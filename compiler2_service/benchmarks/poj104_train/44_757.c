@@ -6,7 +6,7 @@ void reverse(int num)
 	int j=0;
 	int a[1000];
 	if(num==0)
-		printf("0");
+		my_printf("0");
 	else if(num>0)
 	{
 		do
@@ -22,7 +22,7 @@ void reverse(int num)
 				break;
 		}
 		for(k=i;k<j;k++)
-			printf("%d",a[k]);
+			my_printf("%d",a[k]);
 	}
 	else if(num<0)
 	{
@@ -39,9 +39,9 @@ void reverse(int num)
 			if(a[i]!=0)
 				break;
 		}
-		printf("-");
+		my_printf("-");
 		for(k=i;k<j;k++)
-			printf("%d",a[k]);
+			my_printf("%d",a[k]);
 	}
 }
 
@@ -51,9 +51,9 @@ int main_bench()
 	int x,y;
 	for(x=0;x<6;x++)
 	{
-		scanf("%d",&y);
+		my_scanf("%d",&y);
 		reverse(y);
-		printf("\n");
+		my_printf("\n");
 	}
 
 

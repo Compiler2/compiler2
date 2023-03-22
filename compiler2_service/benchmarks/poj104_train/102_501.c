@@ -5,10 +5,10 @@ int main_bench()
 int i,j=0,r=0,n,f;
 char a[100][100];
 double b[100],c[100],d[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%s %lf",a[i],&b[i]);
+my_scanf("%s %lf",a[i],&b[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -51,13 +51,13 @@ d[f+1]=p;
 }
 for(i=0;i<j;i++)
 {
-printf("%.2lf ",c[i]);
+my_printf("%.2lf ",c[i]);
 }
 for(i=0;i<r-1;i++)
 {
-printf("%.2lf ",d[i]);
+my_printf("%.2lf ",d[i]);
 }
-printf("%.2lf",d[r-1]);
+my_printf("%.2lf",d[r-1]);
 return 0;
 }
 

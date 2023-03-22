@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n,i,x,number_0=0,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n*n;i++)
 	{	
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		if(x==0){
 			number_0++;
                           }
 
         }
     s=(number_0/4-1)*(number_0/4-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

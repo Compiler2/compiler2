@@ -16,13 +16,13 @@ main_bench()
                         {
                             if(temp!=0)
                             {
-                                       if(time==0) printf("%d",temp);
-                                       else printf(",%d",temp);
+                                       if(time==0) my_printf("%d",temp);
+                                       else my_printf(",%d",temp);
                                        time++;
                                        temp=0;
                             }
                         }
       }
-      if(time==0) printf("%d",temp);
-      else printf(",%d",temp);                         
+      if(time==0) my_printf("%d",temp);
+      else my_printf(",%d",temp);                         
 }

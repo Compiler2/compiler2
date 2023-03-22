@@ -9,22 +9,22 @@ int main_bench()
 	{
 		for(j=0;j<5;j=j+1)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	exchange(m,n,a);
-	if(exchange(m,n,a)==0) printf("error\n");
+	if(exchange(m,n,a)==0) my_printf("error\n");
 	else if(exchange(m,n,a)==1)
 	{
 		for(i=0;i<5;i=i+1)
 		{
 			for(j=0;j<5;j=j+1)
 			{
-				if(j!=4) printf("%d ",a[i][j]);
-				else printf("%d",a[i][j]);
+				if(j!=4) my_printf("%d ",a[i][j]);
+				else my_printf("%d",a[i][j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

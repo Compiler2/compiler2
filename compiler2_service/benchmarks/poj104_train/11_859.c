@@ -5,9 +5,9 @@ int main_bench(){
 	int isrunnian(int);
 	int year,month,day,result=0;
 	int i;
-	scanf("%d",&year);
-	scanf("%d",&month);
-	scanf("%d",&day);
+	my_scanf("%d",&year);
+	my_scanf("%d",&month);
+	my_scanf("%d",&day);
 	for(i=1;i<month;i++){
 		switch(i){
 		case 1:
@@ -35,7 +35,7 @@ int main_bench(){
 		}
 	}
 	result=result+day;
-	printf("%d\n",result);
+	my_printf("%d\n",result);
 }
 
 int isrunnian(int year){

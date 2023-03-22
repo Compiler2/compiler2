@@ -5,7 +5,7 @@ main_bench()
       int p[9][9];
       int q[9][9];
       int m,n,i,j,k;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=0;i<9;i++)
          for(j=0;j<9;j++)
          {
@@ -41,8 +41,8 @@ main_bench()
       for(i=0;i<9;i++)
          for(j=0;j<9;j++)
          {
-            if((j+1)%9!=0)printf("%d ",p[i][j]);
-            else printf("%d\n",p[i][j]);
+            if((j+1)%9!=0)my_printf("%d ",p[i][j]);
+            else my_printf("%d\n",p[i][j]);
          }
 
 }

@@ -5,10 +5,10 @@ int main_bench()
 	char id[100][10],a[10];
 	int n,i,j;
 	int age[100],b;
-	scanf("%d ",&n);
+	my_scanf("%d ",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf(" %s %d",&id[i],&age[i]);
+		my_scanf(" %s %d",&id[i],&age[i]);
 	}
 	
 	for(j=n-1;j>0;j--)
@@ -35,8 +35,8 @@ int main_bench()
 
 	for(i=0;i<n;i++)
 	{
-		if(i==0) printf("%s",id[i]);
-		else printf("\n%s",id[i]);
+		if(i==0) my_printf("%s",id[i]);
+		else my_printf("\n%s",id[i]);
 	}
 
 	return 0;

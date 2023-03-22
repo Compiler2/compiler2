@@ -23,7 +23,7 @@ void huan(int b,long int c)
    int d,i,j;
    char n[100];
    if(c==0)
-      printf("0\n");
+      my_printf("0\n");
    for(i=0;c!=0;i++)
      {
          d=c%b;
@@ -34,15 +34,15 @@ void huan(int b,long int c)
             n[i]=d+55;
      }
      for(j=i-1;j>0;j--)
-       printf("%c",n[j]);
-     printf("%c\n",n[0]);
+       my_printf("%c",n[j]);
+     my_printf("%c\n",n[0]);
 }
 int main_bench()
 {   
     int a,b;
     long int c;
     char n[100];
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     c=zhuan(a,n);
     huan(b,c);
     return 0;

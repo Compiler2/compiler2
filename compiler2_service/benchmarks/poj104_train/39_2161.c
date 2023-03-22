@@ -16,10 +16,10 @@ main_bench()
 	int n,i,max,maxstu,sum;
 	int jj[100];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].avs,&stu[i].pys,&stu[i].gb,&stu[i].xb,&stu[i].lw);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].avs,&stu[i].pys,&stu[i].gb,&stu[i].xb,&stu[i].lw);
 		jj[i]=0;
 		if(stu[i].avs>80&&stu[i].lw>0){
 			jj[i]+=8000;
@@ -49,5 +49,5 @@ main_bench()
 		sum+=jj[i];
 	}
 
-	printf("%s\n%d\n%d\n",stu[maxstu].name,max,sum);
+	my_printf("%s\n%d\n%d\n",stu[maxstu].name,max,sum);
 }

@@ -15,7 +15,7 @@ int main_bench()
 	}
 	for(i=0;i<300;i++)
 	{
-		if(c[i]!=0) printf("%c",c[i]);
+		if(c[i]!=0) my_printf("%c",c[i]);
 	}
 	return 0;
 }

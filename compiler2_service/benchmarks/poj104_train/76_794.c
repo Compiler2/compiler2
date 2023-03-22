@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point{
 		int x,y;
 	}sz[50000];
 	for(int i=0;i<n;i++){
-		scanf("%d%d",&sz[i].x,&sz[i].y);
+		my_scanf("%d%d",&sz[i].x,&sz[i].y);
 	}
 	int i,p,q;
 	for(int k=1;k<n;k++){
@@ -26,11 +26,11 @@ int main_bench(){
 	}
 	for(i=0;i<n-1;i++){
 		if(sz[i].y<sz[i+1].x){
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d",sz[0].x,sz[n-1].y);
+	my_printf("%d %d",sz[0].x,sz[n-1].y);
 	return 0;
 }
 

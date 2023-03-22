@@ -15,11 +15,11 @@ int main_bench()
 		int score;
 	}s;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&s.num,&s.ma,&s.cn);
+		my_scanf("%d%d%d",&s.num,&s.ma,&s.cn);
 		s.score=s.ma+s.cn;
 
 		if(s.score>fir)
@@ -46,9 +46,9 @@ int main_bench()
 		}
 	}
 
-	printf("%d %d\n",fir_n,fir);
-	printf("%d %d\n",sec_n,sec);
-	printf("%d %d\n",thi_n,thi);
+	my_printf("%d %d\n",fir_n,fir);
+	my_printf("%d %d\n",sec_n,sec);
+	my_printf("%d %d\n",thi_n,thi);
 
 
 	return 0;

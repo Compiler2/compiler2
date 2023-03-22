@@ -2,16 +2,16 @@
 
 int main_bench(){
     int n,i,x=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int xuefen[n];
     int defen[n];
     double jidian[n];
     double GPA,y=0;
     for(i=0;i<n;i++){
-        scanf("%d",&(xuefen[i]));
+        my_scanf("%d",&(xuefen[i]));
     }
     for(i=0;i<n;i++){
-        scanf("%d",&(defen[i]));
+        my_scanf("%d",&(defen[i]));
     }
     for(i=0;i<n;i++){
         if(defen[i]>=90){
@@ -43,7 +43,7 @@ int main_bench(){
         x+=xuefen[i];
     }
     GPA=y/x;
-    printf("%.2lf",GPA);
+    my_printf("%.2lf",GPA);
     return 0;    
 }
 

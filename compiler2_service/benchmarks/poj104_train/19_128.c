@@ -37,11 +37,11 @@ int main_bench()
 	}
 	if(strcmp(tmp,a)==0)          
 	{
-        printf("%s",b);
+        my_printf("%s",b);
 	}
     else                          
 	{
-	   	printf("%s",tmp);
+	   	my_printf("%s",tmp);
 	}
 	
 	for(i=0;s[i]!='\0';i++)
@@ -67,12 +67,12 @@ int main_bench()
 
 		if(strcmp(tmp,a2)==0)
 		{
-			printf("%s",c);
-		    printf("%s",b);
+			my_printf("%s",c);
+		    my_printf("%s",b);
 		}
 		else
-			printf("%s",tmp);
+			my_printf("%s",tmp);
 	}	
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

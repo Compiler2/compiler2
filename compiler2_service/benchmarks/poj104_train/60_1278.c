@@ -7,7 +7,7 @@ int main_bench()
     int j;
     int n;
     int t = 0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i = 2; i <= n; i++)
     {
         for(j = 0; j < tot; j++)
@@ -16,13 +16,13 @@ int main_bench()
         }
         if(j == tot){
              if(tot > 0 && prime[tot-1]+2 == i) {
-                 printf("%d %d\n", prime[tot-1], i);
+                 my_printf("%d %d\n", prime[tot-1], i);
                  t = 1;
              }
              prime[tot++] = i;
         }
      }
-     if(!t)printf("empty");
+     if(!t)my_printf("empty");
      return 0;
 }
     

@@ -13,9 +13,9 @@ int main_bench()
 	if(p) {
 		int i=p-s1;
 		s1[i]='\0';
-		printf("%s",s1);
-		printf(s3);
-		printf("%s\n",p+strlen(s2));
+		my_printf("%s",s1);
+		my_printf(s3);
+		my_printf("%s\n",p+strlen(s2));
 	}
 	else {
 		puts(s1);

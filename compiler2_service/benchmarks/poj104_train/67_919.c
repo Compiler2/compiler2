@@ -3,22 +3,22 @@
 int main_bench(){
 	int n,a,b,i;
 	double x;
-	scanf("%d\n",&n);
-	scanf("%d %d\n",&a,&b);
+	my_scanf("%d\n",&n);
+	my_scanf("%d %d\n",&a,&b);
 	x=(double)b/a;
 	for(i=0;i<n-1;i++){
 		double y;
 		int m,h;
-		scanf("%d %d",&m,&h);
+		my_scanf("%d %d",&m,&h);
 		y=(double)h/m;
 		if(y-x>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}
 		if(x-y>0.05){
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if(x-0.05<=y&&y<=x+0.05){
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
     return 0;

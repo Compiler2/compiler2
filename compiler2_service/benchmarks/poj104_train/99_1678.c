@@ -2,14 +2,14 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int bingren[100];	
 	double nianling[4];
 
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&bingren[i]);
+		my_scanf("%d",&bingren[i]);
 	}
 	for(i=0;i<4;i++)
 	{
@@ -38,9 +38,9 @@ int main_bench(){
 	{
 		nianling[i]=nianling[i]*100/n;
 	}
-	printf("1-18: %.2lf%%\n",nianling[0]);
-	printf("19-35: %.2lf%%\n",nianling[1]);
-	printf("36-60: %.2lf%%\n",nianling[2]);
-	printf("60??: %.2lf%%\n",nianling[3]);
+	my_printf("1-18: %.2lf%%\n",nianling[0]);
+	my_printf("19-35: %.2lf%%\n",nianling[1]);
+	my_printf("36-60: %.2lf%%\n",nianling[2]);
+	my_printf("60??: %.2lf%%\n",nianling[3]);
 	return 0;
 }

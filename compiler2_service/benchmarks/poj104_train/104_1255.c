@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int x,y,t;
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	if(x==1||y==1)
 	{
-		printf("1\n");
+		my_printf("1\n");
 	}
 	else
 	{if(x==y)
-	{printf("%d\n",x);}
+	{my_printf("%d\n",x);}
 	else
 	{do
 	{if(x>y)
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	y=y/2;
 	}while(x!=y);
-	printf("%d\n",y);
+	my_printf("%d\n",y);
 	}
 	}
 

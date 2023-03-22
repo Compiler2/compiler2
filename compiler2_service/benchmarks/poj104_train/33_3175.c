@@ -2,7 +2,7 @@
 
 int main_bench(){
      int n;
-     scanf("%d\n",&n);
+     my_scanf("%d\n",&n);
      char jjl[n][256];
      for(int i=0;i<n;i++){
          gets(jjl[i]);

@@ -5,11 +5,11 @@
 int main_bench()
 {char a[256],b[256];
 int i,j,n,k,l;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 
 for(i=0;i<n;i++)
 { 
-scanf("%s",&a);
+my_scanf("%s",&a);
 l=strlen(a);
 for(j=0;j<l;j++)
 {if (a[j]=='A')
@@ -26,8 +26,8 @@ break;
 
 
 for(k=0;k<l;k++)
-{printf("%c",b[k]);
-}printf("\n");
+{my_printf("%c",b[k]);
+}my_printf("\n");
 }
 
 return 0;

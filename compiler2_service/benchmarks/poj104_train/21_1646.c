@@ -21,9 +21,9 @@ int main_bench()
 {
 	float a[100],b[100],c=0,d,t,m[100];
 	int n,i,j,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	for(i=0;i<=n-1;i++)
 	{
 		for(j=n-2;j>=i;j--)
@@ -53,12 +53,12 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf("%.0f",m[0]);
+		my_printf("%.0f",m[0]);
 	else
 	{
 		for(i=0;i<=k-2;i++)
-			printf("%.0f,",m[i]);
-		printf("%.0f",m[k-1]);
+			my_printf("%.0f,",m[i]);
+		my_printf("%.0f",m[k-1]);
 	}
 
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,l;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     char a[100];
     for(i=0;i<n;i++)
     {
@@ -23,12 +23,12 @@ int main_bench()
                  else if (a[j]>='0'&&a[j]<='9')
                   ;
                   else 
-                  {printf("0\n");
+                  {my_printf("0\n");
                   break;}
                      
             }
             if (j==l)
-            printf("1\n");
+            my_printf("1\n");
         }
         else if (a[0]>='a'&&a[0]<='z')
         {
@@ -43,12 +43,12 @@ int main_bench()
                  else if (a[j]>='0'&&a[j]<='9')
                   ;
                   else 
-                  {printf("0\n");
+                  {my_printf("0\n");
                   break;}
                      
             }
             if (j==l)
-            printf("1\n");
+            my_printf("1\n");
         }
         else if (a[0]>='A'&&a[0]<='Z')
         {
@@ -64,14 +64,14 @@ int main_bench()
                  else if (a[j]>='0'&&a[j]<='9')
                   ;
                   else 
-                  {printf("0\n");
+                  {my_printf("0\n");
                   break;}
                      
             }
             if (j==l)
-            printf("1\n");
+            my_printf("1\n");
         }
-        else printf("0\n");
+        else my_printf("0\n");
     }
     getchar();
     getchar();

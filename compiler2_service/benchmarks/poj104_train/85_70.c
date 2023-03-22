@@ -7,14 +7,14 @@ int main_bench()
 	int a,g;
 	
 	int j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
 		a=0;
 				 g=0;
 		char s[21];
-		scanf("%s",s);
+		my_scanf("%s",s);
 			for(j=0;s[j]!='\0';j++)
 
 			{
@@ -28,9 +28,9 @@ int main_bench()
 
 			}
 			if(a==g)
-				printf("yes\n");
+				my_printf("yes\n");
 			else
-				printf("no\n");
+				my_printf("no\n");
 	}
 
                     

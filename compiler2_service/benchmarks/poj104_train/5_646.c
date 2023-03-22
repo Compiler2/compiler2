@@ -4,9 +4,9 @@ int main_bench(){
 double r;
 int k=0,i,q=1;
 char s[600],s1[600];
-scanf("%lf",&r);
-scanf("%s",s);
-scanf("%s",s1);
+my_scanf("%lf",&r);
+my_scanf("%s",s);
+my_scanf("%s",s1);
 if(strlen(s)!=strlen(s1))
 q=0;
 for(i=0;i<strlen(s);i++)
@@ -31,14 +31,14 @@ k++;
 }
 if(1.0*k/strlen(s)>r)
 {
-printf("yes");
+my_printf("yes");
 }
 else
 {
-printf("no");
+my_printf("no");
 }
 }
 if(q==0)
-printf("error");
+my_printf("error");
 return 0;
 }

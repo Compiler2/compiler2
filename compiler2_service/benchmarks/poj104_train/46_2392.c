@@ -5,11 +5,11 @@ int main_bench()
 	int l,m,n,k,i,j,sum,p,q;
 	int s[150][150]={0};
 	int a[150][150]={0};
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for (i=0;i<m;i++)
 	 for (j=0;j<n;j++) 
      {
-         scanf("%d",&a[i][j]);
+         my_scanf("%d",&a[i][j]);
          s[i][j]=1;
          }
 	 sum=m*n;i=0;j=0;p=0;q=1;
@@ -18,7 +18,7 @@ int main_bench()
            k=0;
            while (s[i][j]==1)
            {
-                 printf("%d\n",a[i][j]);
+                 my_printf("%d\n",a[i][j]);
                  s[i][j]=0;sum--;
                  i+=p;
                  j+=q;

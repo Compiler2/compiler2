@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<=n;k++)
 	{
 		char zifuchuan[10000];
@@ -22,7 +22,7 @@ int main_bench()
 			}
 			if(m==1)
 			{
-				printf("%c\n",zifuchuan[i]);
+				my_printf("%c\n",zifuchuan[i]);
 				break;
 			}
 			else if(m!=1)
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		if(p==len&&p!=0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 		

@@ -3,7 +3,7 @@
 
 int main_bench(){
 	int d[12][13]={0},m,i;
-	scanf("%d",&d[0][0]);
+	my_scanf("%d",&d[0][0]);
 	if(d[0][0]==7)d[0][0]=0;
 	d[1][0]=(d[0][0]+3)%7;
 	d[2][0]=d[1][0];
@@ -21,7 +21,7 @@ int main_bench(){
 			d[m][i]=(d[m][i-1]+1)%7;
 		}
 		if(d[m][12]==5)
-			printf("%d\n",m+1);
+			my_printf("%d\n",m+1);
 		}
 	return 0;
 }

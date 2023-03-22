@@ -21,15 +21,15 @@ int main_bench()
 	int i,j,m,n,d[5][5];
      for(i=0;i<5;i++)
 		 for(j=0;j<5;j++)
-	scanf("%d",&d[i][j]);
-    scanf("%d%d",&m,&n);
-	if(f(d,m,n)==0) printf("error");
+	my_scanf("%d",&d[i][j]);
+    my_scanf("%d%d",&m,&n);
+	if(f(d,m,n)==0) my_printf("error");
 	else
 		for(i=0;i<5;i++)
 		{
 		 for(j=0;j<4;j++)
-	printf("%d ",d[i][j]);
-		 printf("%d",d[i][4]);
-		 printf("\n");
+	my_printf("%d ",d[i][j]);
+		 my_printf("%d",d[i][4]);
+		 my_printf("\n");
 		}
 }

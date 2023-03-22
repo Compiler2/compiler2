@@ -17,8 +17,8 @@ main_bench()
 			if(j+k>j+i-k-1)
 			{
 				for(k=0;k<i;k++)
-				printf("%c",a[j+k]);
-				printf("\n");
+				my_printf("%c",a[j+k]);
+				my_printf("\n");
 			}		
 		}
 	}

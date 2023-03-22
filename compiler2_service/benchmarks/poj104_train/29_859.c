@@ -5,16 +5,16 @@ int main_bench()
 {
 	int n,i,j,tot;
 	double sum=0;
-	scanf("%d",&tot);
+	my_scanf("%d",&tot);
 	for(j=0;j<tot;j++)
 	{
 		sum=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++)
 		{
 			sum+=(double)shulie(i+1)/shulie(i);
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

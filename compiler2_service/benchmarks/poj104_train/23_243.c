@@ -20,10 +20,10 @@ int main_bench()
 	word[number][j]='\0';
 	for(i=number;i>0;i--)
 	{
-		printf("%s",word[i]);
-		printf(" ");
+		my_printf("%s",word[i]);
+		my_printf(" ");
 	}
-	printf("%s",word[0]);
+	my_printf("%s",word[0]);
 	return 0;
 }
 

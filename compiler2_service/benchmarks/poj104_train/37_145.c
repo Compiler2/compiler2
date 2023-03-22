@@ -7,11 +7,11 @@ int main_bench()
  int b[26] ;
  int i,j,t,lenth;
  int n ;
- scanf("%d",&t);
+ my_scanf("%d",&t);
  for(j=0;j<t;j++)
  {
 	 n=1;
- scanf("%s",a);
+ my_scanf("%s",a);
  lenth = strlen(a);
  for(i=0;i<26;i++)
 	 b[i]=0;
@@ -24,13 +24,13 @@ int main_bench()
  {
   if(b[a[i] - 'a'] == 1)
   {
-   printf("%c\n",a[i]);
+   my_printf("%c\n",a[i]);
    n = 0;
    break;
   }
  }
  if(n == 1)
-  printf("no\n");
+  my_printf("no\n");
 
  for(i = 0;i <lenth;i++)
   a[i] = 0;

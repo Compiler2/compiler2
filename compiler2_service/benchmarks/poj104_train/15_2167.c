@@ -6,10 +6,10 @@ int main_bench()
 	int len0,wid0,len1,wid1;
 	int a[100][100];
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",*(a+i)+j);
+			my_scanf("%d",*(a+i)+j);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{
@@ -24,6 +24,6 @@ int main_bench()
 				wid1=j;
 			}
 		}
-	printf("%d\n",abs((len1-len0-1)*(wid1-wid0-1)));
+	my_printf("%d\n",abs((len1-len0-1)*(wid1-wid0-1)));
 	return 0;
 }

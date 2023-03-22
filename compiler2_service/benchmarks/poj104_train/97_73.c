@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,q[6];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=1;;i++){
 
@@ -38,6 +38,6 @@ int main_bench()
 	n=n+5;
 	q[5]=n;
 	for(i=0;i<6;i++)
-	printf("%d\n",q[i]);
+	my_printf("%d\n",q[i]);
 	return 0;
 }

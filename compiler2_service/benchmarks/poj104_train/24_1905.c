@@ -33,11 +33,11 @@ int main_bench()
  for(i=b[n]-num[n];i<b[n];i++){
   if(i!=b[n]-1)
   {
-   printf("%c",a[i]);
+   my_printf("%c",a[i]);
   }
   if(i==b[n]-1)
   {
-   printf("%c\n",a[i]);
+   my_printf("%c\n",a[i]);
   }
  }
 
@@ -46,11 +46,11 @@ int main_bench()
   {
    if(i!=b[y]-1)
  {
-    printf("%c",a[i]);
+    my_printf("%c",a[i]);
    }
    if(i==b[y]-1)
    {
-    printf("%c\n",a[i]);
+    my_printf("%c\n",a[i]);
    }
   }
  return 0;

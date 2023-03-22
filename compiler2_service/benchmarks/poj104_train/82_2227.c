@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a[2][100];
 	int n,i,max1,max2,m=0,p=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0; i < n; i++)
 	{
-		scanf("%d",&a[0][i]);
-		scanf("%d",&a[1][i]);
+		my_scanf("%d",&a[0][i]);
+		my_scanf("%d",&a[1][i]);
 	}
 	for (i=0; i < n; i++)
 	{
@@ -26,6 +26,6 @@ int main_bench()
 	}
 	if(p > m)
 		m=p;
-	printf("%d",m);
+	my_printf("%d",m);
 
 }

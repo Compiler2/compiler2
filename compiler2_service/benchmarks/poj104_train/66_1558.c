@@ -15,7 +15,7 @@ int is_leap(int year) {
 
 int main_bench() {
 	int year, month, day;
-	scanf("%d%d%d", &year, &month, &day);
+	my_scanf("%d%d%d", &year, &month, &day);
 	
 	int *months = is_leap(year) ? leap_months : normal_months;
 	
@@ -31,5 +31,5 @@ int main_bench() {
 	days -= (year-1) / 100 * 1;
 	days += (year-1) / 400 * 1;
 	
-	printf("%s\n", week_days[days % 7]);
+	my_printf("%s\n", week_days[days % 7]);
 }

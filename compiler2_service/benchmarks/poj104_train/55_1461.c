@@ -13,9 +13,9 @@ main_bench()
          char *r;
          p=s;
          r=t;
-         scanf("%d",&a);
-         scanf("%s",s);
-         scanf("%d",&b);
+         my_scanf("%d",&a);
+         my_scanf("%s",s);
+         my_scanf("%d",&b);
          while ((*p)!='\0')
          {
                   if ((*p)>='A'&&(*p)<='Z')
@@ -27,7 +27,7 @@ main_bench()
                   p++;
          }
          if (n==0)
-         printf("%d",n);
+         my_printf("%d",n);
          while(n!=0)
          {
 
@@ -47,7 +47,7 @@ main_bench()
          }
          for(i=0;i<m;i++)
          {
-                  printf("%c",t[i]);
+                  my_printf("%c",t[i]);
          }
 
 }

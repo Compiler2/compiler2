@@ -39,18 +39,18 @@ for(i=0;i<m;i++){
 	for(k=0;k<j;k++){
 		if(s[k+1]-s[k]-1==max){
 			for(i=s[k]+1;i<s[k+1];i++){
-				printf("%c",z[i]);
+				my_printf("%c",z[i]);
 			}
-		printf("\n");
+		my_printf("\n");
 		break;
 		}
 	}
 	for(k=0;k<j;k++){
 		if(s[k+1]-s[k]-1==min){
 			for(i=s[k]+1;i<s[k+1];i++){
-				printf("%c",z[i]);
+				my_printf("%c",z[i]);
 			}
-		printf("\n");
+		my_printf("\n");
 		break;
 		}
 	}

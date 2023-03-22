@@ -4,14 +4,14 @@ int main_bench(){
 int i,n,point[10],goal;
 float f,num,gpa;
 float c=0,d=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d ",&point[i]);
+my_scanf("%d ",&point[i]);
 c=c+point[i];
 }
 for(i=0;i<n;i++){
-scanf("%d",&goal);
+my_scanf("%d",&goal);
 if(goal>=90&&goal<=100) f=4.0;
 if(goal>=85&&goal<=89) f=3.7;
 if(goal>=82&&goal<=84) f=3.3;
@@ -27,6 +27,6 @@ d=d+num;
 
 }
 gpa=(double)(d/c);
-printf("%.2f",gpa);
+my_printf("%.2f",gpa);
 }
 

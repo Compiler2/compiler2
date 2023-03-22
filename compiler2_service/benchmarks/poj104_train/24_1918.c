@@ -33,6 +33,6 @@ int main_bench()
             min_num=i;
         }
     }
-    printf("%s\n",str[max_num]);
-    printf("%s\n",str[min_num]);
+    my_printf("%s\n",str[max_num]);
+    my_printf("%s\n",str[min_num]);
 }

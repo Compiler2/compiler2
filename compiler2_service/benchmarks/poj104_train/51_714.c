@@ -6,8 +6,8 @@ int num[1000]={0};
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	int len=strlen(str);
 	int q=0;
 	for(i=0;i<len;i++)
@@ -53,14 +53,14 @@ int main_bench()
 	}
 	if(max>1)
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<len+2;i++)
 		{
 			if(num[i]==max)
-				printf("%s\n",s[i]);
+				my_printf("%s\n",s[i]);
 		}
 	}
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }
 

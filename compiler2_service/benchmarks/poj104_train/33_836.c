@@ -4,10 +4,10 @@ int main_bench()
 {
 	char zfcx[1000][256],zfcy[100][256];
 	int i=0,n,k,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<n)
 	{
-		scanf("%s",zfcx[i]);
+		my_scanf("%s",zfcx[i]);
 		m=strlen(zfcx[i]);
 		for(k=0;k<=m;k++)
 		{
@@ -32,7 +32,7 @@ int main_bench()
 				zfcy[i][k]='\0';
 			}
 		}
-		printf("%s\n",zfcy[i]);
+		my_printf("%s\n",zfcy[i]);
 		i++;
 	}
 	return 0;

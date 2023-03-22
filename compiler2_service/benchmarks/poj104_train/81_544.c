@@ -9,13 +9,13 @@ int main_bench()
 	p=str[0];
 	for(i=0;i<25;i++)
 	{
-		scanf("%d",p++);
+		my_scanf("%d",p++);
 	
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	
 	return1=putout(n,m);
-	if(return1==0) printf("error\n");
+	if(return1==0) my_printf("error\n");
 	else 
 	{
 		for(j=0;j<5;j++)
@@ -27,8 +27,8 @@ int main_bench()
 		for(i=0;i<5;i++)
 		{	
 			for(j=0;j<4;j++)
-				printf("%d ",str[i][j]);
-			printf("%d\n",str[i][4]);
+				my_printf("%d ",str[i][j]);
+			my_printf("%d\n",str[i][4]);
 
 		}
 	}

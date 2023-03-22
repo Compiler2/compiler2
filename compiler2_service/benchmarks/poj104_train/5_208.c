@@ -6,13 +6,13 @@ int main_bench(){
 	a=0;
 	b=0;
 	char s1[502],s2[502];
-     scanf("%lf",&n);
-		scanf("%s %s",s1,s2);
+     my_scanf("%lf",&n);
+		my_scanf("%s %s",s1,s2);
 		w1=strlen(s1); 
 		w2=strlen(s2);
 	
 	if(w1!=w2){
-         printf("error");
+         my_printf("error");
 		 b=1;
 	}
 	else{
@@ -24,18 +24,18 @@ int main_bench(){
 			}
              
 			else{
-                 printf("error");
+                 my_printf("error");
 				 b=1;
 				 break;
 				}
 		}
 			k=1.0*a/w1;
 			if(k>n&&b==0){
-				printf("yes");
+				my_printf("yes");
 			}
 			else if(k<=n&&b==0)
 			{
-				printf("no");
+				my_printf("no");
 			}
 	}   
 	return 0;

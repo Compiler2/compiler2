@@ -8,9 +8,9 @@ int main_bench()
 	int a[300];
 	int n,i,j,k,l,m;
 	double s,t,q;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
-		scanf ("%d",&a[i]);
+		my_scanf ("%d",&a[i]);
 	for (i=0;i<n-1;i++)
 	{
 		for (j=0;j<n-1-i;j++)
@@ -31,9 +31,9 @@ int main_bench()
 	(int) a[0];
 	(int) a[n-1];
 	if (t<s)
-		printf ("%d",a[0]);
+		my_printf ("%d",a[0]);
 	else if (t==s)
-		printf ("%d,%d",a[0],a[n-1]);
-	else  printf ("%d",a[n-1]);
+		my_printf ("%d,%d",a[0],a[n-1]);
+	else  my_printf ("%d",a[n-1]);
 	return 0;
 }

@@ -7,7 +7,7 @@ int main_bench()
     char d;
     do 
     {
-                  scanf("%d%c",&b,&d);
+                  my_scanf("%d%c",&b,&d);
                   if(a>b)
                   {
                          if(b>c)
@@ -22,8 +22,8 @@ int main_bench()
 
     }while(d==',');
     if(a==c || c==0)
-    printf("No");
+    my_printf("No");
     else
-    printf("%d",c);
+    my_printf("%d",c);
     return 0;
 }

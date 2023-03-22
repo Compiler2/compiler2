@@ -3,10 +3,10 @@
 int main_bench()
 {
     float b[301],sum=0,aver;int a[301],k=0,i,n,c[2]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
          sum=sum+a[i];
     }
     aver=sum/n;
@@ -19,6 +19,6 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     {if(b[i]==sum)c[k]=i,k++;}
-    if(c[1]==0)printf("%d",a[c[0]]);
-    else printf("%d,%d",a[c[0]],a[c[1]]);scanf("%d",&n);
+    if(c[1]==0)my_printf("%d",a[c[0]]);
+    else my_printf("%d,%d",a[c[0]],a[c[1]]);my_scanf("%d",&n);
 }

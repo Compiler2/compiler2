@@ -4,16 +4,16 @@ int main_bench()
 {
 	int fun(int m,int n);
 	int n,i,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *p;
 	p=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
-	scanf("%d",&p[i]);
+	my_scanf("%d",&p[i]);
 	for(i=0;i<n;i++)
 	{
 		sum=0;
 	sum=fun(p[i],1);
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	}
 	free(p);
 }

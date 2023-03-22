@@ -13,11 +13,11 @@ int main_bench()
 	double absss(double shu);
 	int n,a[500],i,m1=0,m2=0,j=0,p,q;
 double s=0.0,max,shu;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 
 {
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
     s=s+a[i];
 }
 s=(double)s/n;
@@ -47,17 +47,17 @@ if(a[i]>s)
 }
 if(m1>0)
 {
-	printf("%d",a[p]);
+	my_printf("%d",a[p]);
 for(i=1;i<m1;i++)
-printf(",%d",a[p]);
+my_printf(",%d",a[p]);
 for(i=0;i<m2;i++)
-printf(",%d",a[q]);
+my_printf(",%d",a[q]);
 }
 else
 {
-	printf("%d",a[q]);
+	my_printf("%d",a[q]);
 	for(i=1;i<m2;i++)
-		printf(",d%",a[q]);
+		my_printf(",d%",a[q]);
 
 }
 

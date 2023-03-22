@@ -12,9 +12,9 @@ int main_bench()
 {
 	struct st s[200];
 	int n,i,j=0,max=0,sum=0,a[200]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d%d %c %c%d",s[i].name,&s[i].sc[0],&s[i].sc[1],&s[i].leader,&s[i].west,&s[i].paper);
+		my_scanf("%s%d%d %c %c%d",s[i].name,&s[i].sc[0],&s[i].sc[1],&s[i].leader,&s[i].west,&s[i].paper);
 	for(i=0;i<n;i++)
 	{
 		if(s[i].sc[0]>80&&s[i].paper>0)
@@ -34,5 +34,5 @@ int main_bench()
 		max=(a[i]>max)? a[i]:max;
 		sum=sum+a[i];
 	}
-	printf("%s\n%d\n%d",s[j].name,a[j],sum);
+	my_printf("%s\n%d\n%d",s[j].name,a[j],sum);
 }

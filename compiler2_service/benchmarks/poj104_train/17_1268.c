@@ -30,8 +30,8 @@ int main_bench()
 			else if(str2[j]==')')str2[j]='?';
 			else str2[j]=' ';
 		}
-		printf("%s\n",str);
-		printf("%s\n",str2);
+		my_printf("%s\n",str);
+		my_printf("%s\n",str2);
 	}
 	return 0;
 }

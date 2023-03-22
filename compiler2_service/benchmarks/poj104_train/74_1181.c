@@ -23,22 +23,22 @@ int main_bench()
 {
     int m,n,l=0,c=0;
     int i;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
     {
                    if(r(i)&&test(i))
                    {
                                     if(l==0)
-                                    {printf("%d",i);
+                                    {my_printf("%d",i);
                                     l=1;}
                                     else
-                                    printf(",%d",i);
+                                    my_printf(",%d",i);
                    }
                    else c++;
                      
     }
     if(c==n-m+1)
-    printf("no");
+    my_printf("no");
     getchar();
     getchar();
 

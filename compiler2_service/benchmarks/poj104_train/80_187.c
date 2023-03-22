@@ -4,8 +4,8 @@ int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i,sum=0,a=0;
 	int day[13]={0,31,0,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&sy,&sm,&sd);
-	scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d",&sy,&sm,&sd);
+	my_scanf("%d %d %d",&ey,&em,&ed);
 	for(i=sy+1;i<=ey-1;i++)
 		if((i%4==0&&i%100!=0)||(i%400==0))
 			sum+=366;
@@ -52,7 +52,7 @@ int main_bench()
 	   }
 	 }
 	sum+=ed;
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }
 	

@@ -6,7 +6,7 @@ int main_bench()
 	char a;
 	int i,largest=0,second=0,n;
 	for(i=0;i<300;i++){
-		scanf("%d%c",&num[i],&a);
+		my_scanf("%d%c",&num[i],&a);
 		if(a!='\n'){
 			if(num[i]>largest){
 				second=largest;
@@ -29,14 +29,14 @@ int main_bench()
 		}
 	}
 	if(n==0){
-		printf("No");
+		my_printf("No");
 	}
 	else{
 		if(second==0){
-		printf("No");
+		my_printf("No");
 	}
     	else{
-	    	printf("%d",second);
+	    	my_printf("%d",second);
 		}
 	}
 }

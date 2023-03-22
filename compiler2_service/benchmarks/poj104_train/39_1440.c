@@ -13,9 +13,9 @@ struct information
 int main_bench()
 {
 	int n,i,k,sum=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d%d %c %c%d",a[i].name,&a[i].score,&a[i].marks,&a[i].banwei,&a[i].xibu,&a[i].lunwen);
+		my_scanf("%s %d%d %c %c%d",a[i].name,&a[i].score,&a[i].marks,&a[i].banwei,&a[i].xibu,&a[i].lunwen);
     for(i=0;i<n;i++)
 	{   
 		a[i].reward=0;
@@ -38,5 +38,5 @@ int main_bench()
 	 }
       sum=sum+a[i].reward;
 	} 
-		printf("%s\n%d\n%d\n",a[k].name,max,sum);
+		my_printf("%s\n%d\n%d\n",a[k].name,max,sum);
 }

@@ -14,7 +14,7 @@ int main_bench()
 			}
 			sub[j]='\0';
 			if(ishuiwen(sub))
-				printf("%s\n",sub);
+				my_printf("%s\n",sub);
 		}
 	}
 	return 0;

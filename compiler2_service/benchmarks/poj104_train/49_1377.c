@@ -13,9 +13,9 @@ int main_bench(){
 			}
 			if(p==1){
 				for(j=i;j-i<=n-1;j++){
-					printf("%c",a[j]);
+					my_printf("%c",a[j]);
 				}	
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

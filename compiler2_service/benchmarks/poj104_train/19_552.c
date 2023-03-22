@@ -27,9 +27,9 @@ int main_bench()
 			strcpy(word[i],post);
 	}
 	for(i=0;i<word_num;i++){
-		printf("%s",word[i]);
-		printf(" ");
+		my_printf("%s",word[i]);
+		my_printf(" ");
 	}
-	printf("%s",word[word_num]);
+	my_printf("%s",word[word_num]);
 	return 0;
 }

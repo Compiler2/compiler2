@@ -3,9 +3,9 @@
 int main_bench() {
 	int n,i,a,b;
 	char zfc[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n!=0){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		if((zfc[0]>='a' && zfc[0]<='z')||(zfc[0]>='A' && zfc[0]<='Z')||(zfc[0]=='_')){
 			a=1;
 		}else{a=0;}
@@ -19,8 +19,8 @@ int main_bench() {
 				}
 			}
 		}
-		if(a==1 && b==1){printf("yes\n");}
-		else if(a==0 || (a==1 && b==0)){printf("no\n");}
+		if(a==1 && b==1){my_printf("yes\n");}
+		else if(a==0 || (a==1 && b==0)){my_printf("no\n");}
 		n--;
 	}
 	return 0;

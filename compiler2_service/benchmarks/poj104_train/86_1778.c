@@ -2,19 +2,19 @@
 
 int main_bench(){
   int n,i,m,j,x=60;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++,x=60){
-    scanf("%d",&m);if(m==0){printf("60\n");continue;}
+    my_scanf("%d",&m);if(m==0){my_printf("60\n");continue;}
     int p[m];
     for(j=0;j<m;j++){
-      scanf("%d",&p[j]);
+      my_scanf("%d",&p[j]);
     }
     for(j=0;j<m;j++){
-      if(p[j]>=x){printf("%d\n",x);break;}
-      if(p[j]<x&&p[j]>=x-3){printf("%d\n",p[j]);break;}
+      if(p[j]>=x){my_printf("%d\n",x);break;}
+      if(p[j]<x&&p[j]>=x-3){my_printf("%d\n",p[j]);break;}
       if(p[j]<x-3){x-=3;}
     }
-    if(j==m){printf("%d\n",x);}
+    if(j==m){my_printf("%d\n",x);}
   }
   return 0;
 }

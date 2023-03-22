@@ -16,11 +16,11 @@ change(char s[1000])
 int main_bench()
 {
 	char s1[1000],s2[1000];
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	change(s1);
 	change(s2);
 	if(strcmp(s1,s2)==0)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

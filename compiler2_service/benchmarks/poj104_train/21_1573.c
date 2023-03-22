@@ -12,10 +12,10 @@ int main_bench()
 	int n,i,s=0,j;
 	struct point temp;
 	int a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s=a[i]+s;
 	}
 	ave=(s*1.0)/n;
@@ -37,11 +37,11 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",ans[1].num);
+	my_printf("%d",ans[1].num);
 	for(i=2;i<=n;i++)
 	{
 		if(ans[i].distance==ans[1].distance)
-			printf(",%d",ans[i].num);
+			my_printf(",%d",ans[i].num);
 	}
 	return 0;
 }

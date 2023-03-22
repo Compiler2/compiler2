@@ -25,9 +25,9 @@ int main_bench()
 	int a;
 	int k;
 	for(k=1;k<=6;k++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		a=reverse(a);
-		printf("%d\n",a);
+		my_printf("%d\n",a);
 	}
 	return 0;
 }

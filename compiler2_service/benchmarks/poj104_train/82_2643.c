@@ -6,11 +6,11 @@ int main_bench()
 	int n, time = 0, i, max = 0;
 	int hi, lo;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
     
     for(i = 1; i <= n; i++)
 	{
-		scanf("%d %d", &hi, &lo);
+		my_scanf("%d %d", &hi, &lo);
 		if( ( hi >= 90 ) * ( hi <= 140 ) * ( lo <= 90 ) * ( lo >= 60 ) == 1 )
 		    time = time + 1;
         else 
@@ -27,7 +27,7 @@ int main_bench()
     }
      
    
-    printf("%d", max);
+    my_printf("%d", max);
     
     
     return 0;

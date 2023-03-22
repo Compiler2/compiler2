@@ -3,7 +3,7 @@
 int main_bench(){
 	char s[100];
 	int a,b;
-	scanf("%d %s %d",&a,s,&b);
+	my_scanf("%d %s %d",&a,s,&b);
 
 	
 	int l,k,i;
@@ -39,7 +39,7 @@ int main_bench(){
 	shang=num10/b;
 	yushu=num10%b;
 	int geweiyushu[100];
-	if(shang==0){printf("%d",yushu);}
+	if(shang==0){my_printf("%d",yushu);}
 	else {for(i=0;shang!=0;i++){
 		geweiyushu[i]=yushu;
 		
@@ -71,7 +71,7 @@ int main_bench(){
 	
 	if(y!=0){
 	for(i=weishu-1;i>=0;i--){
-		printf("%c",s2[i]);
+		my_printf("%c",s2[i]);
 	}}
 	
 

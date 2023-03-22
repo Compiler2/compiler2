@@ -7,10 +7,10 @@ int main_bench()
 	char a[500][40];
 	int b[500],m;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		b[i]=strlen(a[i]);
 	}
 	a[i][0]='\0';
@@ -20,12 +20,12 @@ int main_bench()
 	{
 		m=m+1+b[j+1];
 		if(m<=80)
-			printf("%s ",a[j]);
+			my_printf("%s ",a[j]);
 		else
 		{
-			printf("%s\n",a[j]);
+			my_printf("%s\n",a[j]);
 			m=b[j+1];
 		}
 	}
-	printf("%s\n",a[j]);
+	my_printf("%s\n",a[j]);
 }

@@ -28,9 +28,9 @@ int main_bench(){
 
 	for(i=0;i<word;i++){
 		if(wz[i]!=0){
-			printf("%d,",wz[i]);}
+			my_printf("%d,",wz[i]);}
 		}
-	printf("%d",wz[word]);
+	my_printf("%d",wz[word]);
 	
 	return 0;
 }

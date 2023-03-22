@@ -13,9 +13,9 @@ int main_bench(){
 	float sum;
 	};
 	struct student num[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%s%d%d %c %c%d",num[i].a,&num[i].b,&num[i].c,
+		my_scanf("%s%d%d %c %c%d",num[i].a,&num[i].b,&num[i].c,
 		&num[i].d,&num[i].e,&num[i].f);
 		num[i].sum=0;
 	}
@@ -35,7 +35,7 @@ int main_bench(){
 			k=i;
 			}
 	for(i=0;i<m;i++)sumz=sumz+num[i].sum;
-	printf("%s\n%.0f\n%.0f\n",num[k].a,num[k].sum,sumz);
+	my_printf("%s\n%.0f\n%.0f\n",num[k].a,num[k].sum,sumz);
 
 
     

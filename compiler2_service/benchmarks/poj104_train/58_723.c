@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,k=1,i,m;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 
     char str[81];
     while(k<=n)
@@ -13,11 +13,11 @@ int main_bench()
 		if((str[0]!='_') && 
 			( (str[0]<'A') || (str[0]>'Z'&&str[0]<'a') || (str[0]>'z') )
 			)
-			printf("0\n");
+			my_printf("0\n");
 		else 
 		{
 			if(m==1) 
-				printf("1\n");
+				my_printf("1\n");
 			else
 			{
 				i=1;
@@ -25,11 +25,11 @@ int main_bench()
 				{
 					if((str[i]!='_')&&(str[i]<'A'||(str[i]>'Z'&&str[i]<'a')||str[i]>'z')&&((str[i]<'0')||(str[i]>'9')))
 					{
-						printf("0\n");break;
+						my_printf("0\n");break;
 					}
 					else if(i==m-1) 
 					{
-						printf("1\n");break;
+						my_printf("1\n");break;
 					}
 					i=i+1;
 				}

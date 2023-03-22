@@ -12,9 +12,9 @@ int main_bench()
 	double percentage2;
 	double percentage3;
 	double percentage4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 	for(i=0;i<n;i++)
 	{
 		if(age[i]<=18)
@@ -35,5 +35,5 @@ int main_bench()
 		percentage3=(double)c/n;
 		percentage4=(double)d/n;
 
-	printf("1-18: %.2f%%\n19-35: %.2f%%\n36-60: %.2f%%\n60??: %.2f%%",percentage1,percentage2,percentage3,percentage4);
+	my_printf("1-18: %.2f%%\n19-35: %.2f%%\n36-60: %.2f%%\n60??: %.2f%%",percentage1,percentage2,percentage3,percentage4);
 }

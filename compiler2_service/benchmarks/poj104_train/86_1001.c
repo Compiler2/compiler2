@@ -2,15 +2,15 @@
 
 int main_bench(){
 	int n,m,i,j,flag=0,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		int*shzu=(int*)malloc(sizeof(int)*m);
 		for(j=0;j<m;j++){
-			scanf("%d",&shzu[j]);
+			my_scanf("%d",&shzu[j]);
 		}
 		if(m==0){
-			printf("%d\n",60);
+			my_printf("%d\n",60);
 		}
 		else{
             for(j=m-1;j>=0;j--){
@@ -24,7 +24,7 @@ int main_bench(){
 				    flag=1;
 				}
 		    	if(flag==1){
-				    printf("%d\n",a);
+				    my_printf("%d\n",a);
 				    break;
 				}
 			}

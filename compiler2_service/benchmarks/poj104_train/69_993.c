@@ -25,7 +25,7 @@ int main_bench()
         e[i]=(d[i]+e[i-1]/10);
     }
     if(e[big-1]!=0||big==1)
-    printf("%d",e[big-1]);
+    my_printf("%d",e[big-1]);
     for(i=big-2;i>=0;i--)
-    printf("%d",e[i]%10);
+    my_printf("%d",e[i]%10);
 }

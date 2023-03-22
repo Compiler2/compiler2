@@ -5,7 +5,7 @@ int main_bench()
 {
 	int c[128]={0},l1,l2,i,b=0;
 	char s1[1000],s2[1000];
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	l1=strlen(s1);
 	l2=strlen(s2);
 	for(i=0;i<l1;i++)
@@ -15,7 +15,7 @@ int main_bench()
 	for(i=0;i<128;i++)
 		b=b||c[i];
 	if(!b)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

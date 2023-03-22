@@ -6,25 +6,25 @@ int main_bench()
 	int n,a,b,m,p;
 	int i;
 	double x,y;
-	scanf("%d",&n);
-	scanf("%d %d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d %d",&a,&b);
 	x=(1.0*b)/(1.0*a);
 	for(i=1;i<n;i++)
 	{
-		scanf("%d %d",&m,&p);
+		my_scanf("%d %d",&m,&p);
 		y=(1.0*p)/(1.0*m);
 		
 		if(y-x>0.05)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else if (x-y>0.05)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else 
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 		
 	}

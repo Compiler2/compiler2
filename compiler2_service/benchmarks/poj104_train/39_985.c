@@ -18,11 +18,11 @@ int main_bench()
 	struct student total={"\0"};
 	struct student temp={"\0"};
      int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d",stu[i].name,&stu[i].pingjun,&stu[i].pingyi);
-			scanf("%s%s%d",&stu[i].bgb,&stu[i].xb,&stu[i].lunwen);
+		my_scanf("%s%d%d",stu[i].name,&stu[i].pingjun,&stu[i].pingyi);
+			my_scanf("%s%s%d",&stu[i].bgb,&stu[i].xb,&stu[i].lunwen);
 
 		if(stu[i].pingjun>80&&stu[i].lunwen>=1)
 			stu[i].qian=stu[i].qian+8000;
@@ -47,7 +47,7 @@ int main_bench()
 			temp=stu[i];
 	}
 	
-		printf("%s\n%d\n%d\n",temp.name,temp.qian,total.qian);
+		my_printf("%s\n%d\n%d\n",temp.name,temp.qian,total.qian);
 		return 0;
 }
 

@@ -2,10 +2,10 @@
 
 int main_bench(){
  int n,i,j,flag;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  char a[25];
  for(i=0;i<n;i++){
-  scanf("%s",a);
+  my_scanf("%s",a);
      flag=0;
  for(j=0;a[j]!='\0';j++){
   if((a[0]=='_')||((a[0]<='Z')&&(a[0]>='A'))||((a[0]<='z')&&(a[0]>='a'))){
@@ -22,9 +22,9 @@ int main_bench(){
 
 }
 m:if(flag==0){
- printf("no\n");
+ my_printf("no\n");
 }else{
- printf("yes\n");
+ my_printf("yes\n");
 }
  }
 return 0;

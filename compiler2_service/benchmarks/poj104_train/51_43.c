@@ -7,8 +7,8 @@ int main_bench()
 	int n,v=1,s=1,ss,smax=1;
 	int i,j,k;
 
-	scanf("%d",&n);
-	scanf("%s",c);
+	my_scanf("%d",&n);
+	my_scanf("%s",c);
 
 	for(i=0;c[i+n-1]!=0;i++)
 	{
@@ -42,21 +42,21 @@ int main_bench()
 	}
 	if(smax>1)
 	{
-		printf("%d\n",smax);
+		my_printf("%d\n",smax);
 		for(i=0;i<500;i++)
 		{
 			if(a[i][smax]==1)
 			{
 				for(j=0;j<n;j++)
 				{
-					printf("%c",c[i+j]);
+					my_printf("%c",c[i+j]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 			
 		}
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 	return 0;
 }

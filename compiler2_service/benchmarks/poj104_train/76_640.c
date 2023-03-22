@@ -5,10 +5,10 @@ int main_bench()
     int n,i,j,p,q,e;
     int sz[50000][2];
     int sz2[50000][2];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
         for(j=1;j<=2;j++){
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
         }
     }
     for(i=1;i<=n;i++){
@@ -40,11 +40,11 @@ int main_bench()
                 break;
             }
             else if(j==n&&i>sz[j][2]||j==n&&i<sz[j][1]){
-                printf("no");
+                my_printf("no");
                 return 0;
             }
         }
     }
-    printf("%d %d",sz2[1][1],sz2[n][2]);
+    my_printf("%d %d",sz2[1][1],sz2[n][2]);
     return 0;
 }

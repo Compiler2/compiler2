@@ -5,8 +5,8 @@ int main_bench()
 {
 int n,i,j,k,len,max;
 char s[500],s1[500][5]={0},sum[500]={0};
-scanf("%d",&n);
-scanf("%s",s);
+my_scanf("%d",&n);
+my_scanf("%s",s);
 len=strlen(s);
 for(i=0;i<len-n+1;i++)
 {
@@ -41,20 +41,20 @@ max=sum[i];
 
 if(max!=0)
 {
-printf("%d\n",max+1);
+my_printf("%d\n",max+1);
 for(i=0;i<len-n+1;i++)
 {
 if(sum[i]==max)
 {
 for(j=0;j<n;j++)
 {
-printf("%c",s1[i][j]);
+my_printf("%c",s1[i][j]);
 }
-printf("\n");
+my_printf("\n");
 }
 
 }
 }
-else printf("NO");
+else my_printf("NO");
 return 0; 
 }

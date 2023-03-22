@@ -4,10 +4,10 @@
 int main_bench()
 {
   int i,j,sz[300],n,mark=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-    scanf("%d",&sz[i]);
+    my_scanf("%d",&sz[i]);
   }
   for(i=0;i<n;i++)
   {
@@ -16,7 +16,7 @@ int main_bench()
     
     if(i==0)
     {
-      printf("%d",sz[0]);
+      my_printf("%d",sz[0]);
     }
 
     if(i==n-1)
@@ -29,7 +29,7 @@ int main_bench()
         }
         else if(sz[i]==sz[j])    break;
       }
-      if(mark==i)  printf(",%d",sz[i]);
+      if(mark==i)  my_printf(",%d",sz[i]);
     }
 
     for(j=0;j<i;j++)
@@ -39,7 +39,7 @@ int main_bench()
         mark++;
       }
       else if(sz[i]==sz[j])   break;
-      if(mark==i)   printf(",%d",sz[i]);
+      if(mark==i)   my_printf(",%d",sz[i]);
     }
   }
   return 0;

@@ -5,11 +5,11 @@ int main_bench()
 	int n,i,k,p;
 	int m=0;
 	int sz[1000];
-    scanf("%d",&n);
-	scanf("%d",&k);
+    my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
     {
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
 	}
      for(i=0;i<n;i++)
 	 {
@@ -17,7 +17,7 @@ int main_bench()
 	   {
 	     if(sz[i]==k-sz[i+p])
 		 {
-			 printf("yes");
+			 my_printf("yes");
 			 break;
 		 }
 		 else
@@ -31,6 +31,6 @@ int main_bench()
 	 }
 
     if(m==n*(n-1)/2)	
-		printf("no");
+		my_printf("no");
     return 0;
 }

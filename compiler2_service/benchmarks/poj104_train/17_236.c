@@ -7,7 +7,7 @@ int main_bench()
 	char a[101];
 	while(gets(a))
 	{
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 		int l=strlen(a);
 		int i,j;
 		int flag=1;
@@ -29,10 +29,10 @@ int main_bench()
 		}
 		for(i=0;i<l;i++)
 		{
-			if(a[i]=='(') printf("$");
-			else if(a[i]==')') printf("?");
-			else printf(" ");
+			if(a[i]=='(') my_printf("$");
+			else if(a[i]==')') my_printf("?");
+			else my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

@@ -21,30 +21,30 @@ void mysort(int*pn, int n)
 void merge(int *pn, int n, int *pm, int m)
 {
 	int i; 
-	printf("%d", pn[0]);
+	my_printf("%d", pn[0]);
 	for (i=1; i<n; i++)
 	{
-		printf(" %d", pn[i]);
+		my_printf(" %d", pn[i]);
 	}
 	for (i=0; i<m; i++)
 	{
-		printf(" %d", pm[i]);
+		my_printf(" %d", pm[i]);
 	}
 }
 int main_bench()
 {
 	int m, n, i, *pm, *pn;
-	scanf("%d%d",&m, &n);
+	my_scanf("%d%d",&m, &n);
 	pm= (int*)calloc(m, sizeof(int));
 	pn= (int*)calloc(n,sizeof(int));
 
 	for (i=0; i<m; i++)
 	{
-		scanf("%d",&(pm[i]));
+		my_scanf("%d",&(pm[i]));
 	}
 	for (i=0; i<n; i++)
 	{
-		scanf("%d",&(pn[i]));
+		my_scanf("%d",&(pn[i]));
 	}
 
 	mysort(pm, m);

@@ -4,14 +4,14 @@ int main_bench()
 {
 
   int n,i,k=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   float x,nu[300];
   float d=0;
   float z=0;
   float nn[300];
   for(i=0;i<n;i++)
   {
-  scanf("%f",&nu[i]);
+  my_scanf("%f",&nu[i]);
   z=z+nu[i];
   
   }
@@ -37,10 +37,10 @@ int main_bench()
   
   
   }
-  printf("%.0f",nn[0]);
+  my_printf("%.0f",nn[0]);
   for(i=1;i<k;i++)
   {
-  printf(",%.0f",nn[i]);
+  my_printf(",%.0f",nn[i]);
   }
 
 

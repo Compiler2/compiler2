@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int sty,std,ey,ed,dy,ry,m,m1,stm,em;                                                 
-	scanf("%d%d%d%d%d%d",&sty,&stm,&std,&ey,&em,&ed);
+	my_scanf("%d%d%d%d%d%d",&sty,&stm,&std,&ey,&em,&ed);
     ry=0;
 	dy=sty;
 	while(dy<ey)
@@ -39,7 +39,7 @@ int main_bench()
 		else if (stm==12)
 			m=335;
 		else
-			printf("error");	
+			my_printf("error");	
 	}
 	else
 	{	
@@ -68,7 +68,7 @@ int main_bench()
 		else if (stm==12)
 			m=334;
 		else
-			printf("error");	
+			my_printf("error");	
 	}
 	if((ey% 4 == 0 && ey% 100 != 0) || (ey% 400 == 0))
 	{
@@ -97,7 +97,7 @@ int main_bench()
 		else if (em==12)
 			m1=335;
 		else
-			printf("error");
+			my_printf("error");
 	}
 	else
 	{
@@ -126,10 +126,10 @@ int main_bench()
 		else if(em==12)
 			m1=334;
 		else 
-			printf("error");	
+			my_printf("error");	
 	}
 	int d=ry*366+(ey-sty-ry)*365+m1-m+ed-std;
-		printf("%d\n",d);
+		my_printf("%d\n",d);
 }
 
 

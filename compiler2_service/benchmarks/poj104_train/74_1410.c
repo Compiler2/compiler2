@@ -33,7 +33,7 @@ int averse(int x)
 int main_bench()
 {
 	int x,m,n,enter=1,mark=0;
-	scanf ("%d %d",&m,&n);
+	my_scanf ("%d %d",&m,&n);
 	for (x=m;x<=n;x++)
 	{
 		if (num(x)==1 && averse(x)==1)
@@ -42,12 +42,12 @@ int main_bench()
 			if (enter==1)
 			{
 				enter=0;
-				printf ("%d",x);
+				my_printf ("%d",x);
 			}
 			else
-				printf (",%d",x);
+				my_printf (",%d",x);
 		}
 	}
 	if (mark==0)
-		printf ("no");
+		my_printf ("no");
 }

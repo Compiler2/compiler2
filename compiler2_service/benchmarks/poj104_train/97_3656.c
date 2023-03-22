@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,r;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	int a[10];
 	int b[10];
 	a[1]=100;
@@ -17,7 +17,7 @@ int main_bench()
 		r=n%a[i];
 		b[i]=(n-r)/a[i];
 		n=r;
-		printf("%d\n",b[i]);
+		my_printf("%d\n",b[i]);
 	}
 	return 0;
 }

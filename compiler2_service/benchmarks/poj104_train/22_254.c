@@ -15,7 +15,7 @@ int main_bench()
 	}
 	N=i+1;
 	if(N==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		int max=0;
@@ -36,8 +36,8 @@ int main_bench()
 				max=a[i];
 		}
 		if(max!=0)
-			printf("%d",max);
+			my_printf("%d",max);
 		else
-			printf("No");
+			my_printf("No");
 	}
 }

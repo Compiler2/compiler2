@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,k=0,i,m,e,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int*)malloc(sizeof(int)*n);
 	int *zz=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		if(sz[i]%2==1){
 			zz[k]=sz[i];
 			k++;}
@@ -23,10 +23,10 @@ int main_bench()
 	}
 }
 	for(k=0;k<l-1;k++){
-		printf("%d",zz[k]);
-		printf(",");
+		my_printf("%d",zz[k]);
+		my_printf(",");
 	}
-	printf("%d",zz[l-1]);
+	my_printf("%d",zz[l-1]);
 	free(sz);
 	free(zz);
 	return 0;

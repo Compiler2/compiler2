@@ -4,7 +4,7 @@ void f1(int y1,int m1,int d1,int y2,int m2,int d2);
 int main_bench()
 {
 	int ya,yb,ma,mb,da,db;
-	scanf("%d%d%d%d%d%d",&ya,&ma,&da,&yb,&mb,&db);
+	my_scanf("%d%d%d%d%d%d",&ya,&ma,&da,&yb,&mb,&db);
 	f1(ya,ma,da,yb,mb,db);
 }
 void f1(int y1,int m1,int d1,int y2,int m2,int d2)
@@ -118,7 +118,7 @@ void f1(int y1,int m1,int d1,int y2,int m2,int d2)
 		x2=t;
 	}
 	j=x1-x2;
-	printf("%d",j);
+	my_printf("%d",j);
 }
 
 

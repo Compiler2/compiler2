@@ -2,9 +2,9 @@
 
 int main_bench(){
 int i,j,n,a,sh[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 if(n<5){
-	printf("empty");
+	my_printf("empty");
 	return 0;
 }
 for(i=0;i<100000;i++){
@@ -25,7 +25,7 @@ for(i=3;i<=n;i++){
 }
 for(i=0;i<=a;i++){
 	if(sh[i+1]-sh[i]==2){
-		printf("%d %d\n",sh[i],sh[i+1]);
+		my_printf("%d %d\n",sh[i],sh[i+1]);
 	}
 }
 return 0;

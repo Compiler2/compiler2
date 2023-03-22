@@ -11,10 +11,10 @@ struct stu
 int main_bench()
 {
 	int t,i,max,sum;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		scanf("%s%d%d %c %c%d",sm[i].str,&sm[i].a,&sm[i].b,&sm[i].s1,&sm[i].s2,&sm[i].c);
+		my_scanf("%s%d%d %c %c%d",sm[i].str,&sm[i].a,&sm[i].b,&sm[i].s1,&sm[i].s2,&sm[i].c);
 		sm[i].e=0;
 	}
 	for(i=0;i<t;i++)
@@ -51,11 +51,11 @@ int main_bench()
 	{
 		if(sm[i].e==max)
 		{
-			printf("%s\n%d\n",sm[i].str,sm[i].e);
+			my_printf("%s\n%d\n",sm[i].str,sm[i].e);
 		    break;
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 }
 	
 

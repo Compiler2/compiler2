@@ -11,12 +11,12 @@ int main_bench()
     {
                     if (a[i]!=' ')
                     {k=0;
-                    printf("%c",a[i]);}
+                    my_printf("%c",a[i]);}
                     else 
                     {
                          k++;
                          if (k==1)
-                         printf("%c",a[i]);
+                         my_printf("%c",a[i]);
                     }
     }
     getchar();

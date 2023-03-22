@@ -13,9 +13,9 @@ int max(int t1[],int t2[],int m,int n,int d)
 main_bench()
 {
       int a[10000],b[10000]={0},i,j,n,t,x=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
-          scanf("%d",&a[i]);
+          my_scanf("%d",&a[i]);
       b[n-1]=1;    
       for(i=n-2;i>=0;i--)
       {
@@ -26,6 +26,6 @@ main_bench()
          if(b[i]>x)
          x=b[i];                
       } 
-    printf("%d",x);
+    my_printf("%d",x);
      
 }

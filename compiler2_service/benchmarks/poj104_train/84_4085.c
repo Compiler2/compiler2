@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,a,b,f=0,s;
-	scanf("%d\n",&n);
-    scanf("%d\n",&a);
+	my_scanf("%d\n",&n);
+    my_scanf("%d\n",&a);
 	for(;100>n&&n>1;n--)
 	{
 		
-		scanf("%d\n",&b);
+		my_scanf("%d\n",&b);
 		b=a>b?a:b;
 	    if(f<=b)
 		{	s=f;
@@ -19,7 +19,7 @@ int main_bench()
 
 		
 	}
-    printf("%d\n",f);
-	printf("%d",s);
+    my_printf("%d\n",f);
+	my_printf("%d",s);
 
 }

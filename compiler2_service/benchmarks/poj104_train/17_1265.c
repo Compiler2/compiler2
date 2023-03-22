@@ -4,10 +4,10 @@ int main_bench()
 {
  int n, i, j, len, c, zb[101], fb[101];
  char a[101], s[101];
- scanf("%d", &n);
+ my_scanf("%d", &n);
  for(i=0;i<n;i++)
  {
-  scanf("%s", a);
+  my_scanf("%s", a);
   len=strlen(a);
   for(j=0;j<len;j++)
   {
@@ -49,8 +49,8 @@ if(o > 0) c = zb[o - 1];
     s[j]='?';
    }
   }
-  printf("%s\n%s", a, s);
- printf("\n");
+  my_printf("%s\n%s", a, s);
+ my_printf("\n");
  }
  return 0;
 }

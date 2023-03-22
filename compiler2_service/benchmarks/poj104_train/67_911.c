@@ -12,11 +12,11 @@ int main_bench() {
        double temp3;
 
 
-       scanf("%d",&n);
-       scanf("%d%d",&temp1,&temp2);
+       my_scanf("%d",&n);
+       my_scanf("%d%d",&temp1,&temp2);
        ext=(double)temp2/(double)temp1;
        for(i=1;i<=n-1;i++) {
-               scanf("%d%d",&temp1,&temp2);
+               my_scanf("%d%d",&temp1,&temp2);
                temp3=(double)temp2/(double)temp1;
                if((temp3-ext)>0.05) {
                        result[i]=1;
@@ -35,13 +35,13 @@ int main_bench() {
 
        for(i=1;i<=n-1;i++) {
                if(result[i]==1) {
-                       printf("better\n");
+                       my_printf("better\n");
                }
                if(result[i]==2) {
-                       printf("worse\n");
+                       my_printf("worse\n");
                }
                if(result[i]==3) {
-                       printf("same\n");
+                       my_printf("same\n");
                }
        }
 

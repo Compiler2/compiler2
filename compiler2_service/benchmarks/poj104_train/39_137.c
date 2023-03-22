@@ -15,14 +15,14 @@ int main_bench()
 	char s[2]={"Y"};
 	int n,i,j,jiangjinzongshu;
 	  jiangjinzongshu=0;
-	  scanf("%d",&n);
+	  my_scanf("%d",&n);
 	  for(i=0;i<n;i++)
 	  {
 		  stum[i].jiangxuejin=0;
 	  }
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d%s%s%d",stum[i].xingming,&stum[i].qimchengji,
+		my_scanf("%s%d%d%s%s%d",stum[i].xingming,&stum[i].qimchengji,
 			&stum[i].pingychengji,stum[i].ganbu,stum[i].xibu,&stum[i].lunwenshu);
 	}
     for(i=0;i<n;i++)
@@ -60,12 +60,12 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",stum[0].xingming);
-	printf("%d\n",stum[0].jiangxuejin);
+	my_printf("%s\n",stum[0].xingming);
+	my_printf("%d\n",stum[0].jiangxuejin);
 	for(i=0;i<n;i++)
 	{
 		jiangjinzongshu+=stum[i].jiangxuejin;
 	}
-	printf("%d\n",jiangjinzongshu);
+	my_printf("%d\n",jiangjinzongshu);
 }
 

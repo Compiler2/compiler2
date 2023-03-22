@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,i,j,k,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[100000];
 	
 	for (i=0;i<n;i++){
-		scanf("%s",&a);
+		my_scanf("%s",&a);
 		for(j=0;a[j]!='\0';j++){
 			b=1;
 			for(k=0;a[k]!='\0';k++){
@@ -20,12 +20,12 @@ int main_bench(){
 				}
 			}
 			if(b==1){
-			    printf("%c\n",a[j]);
+			    my_printf("%c\n",a[j]);
 			    break;
 			}
 		}
 		if(b==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

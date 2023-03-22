@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,k,s,h=0,t=0;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     int a[n];
     for(int i=0;i<n;i++){
-    scanf("%d ",&a[i]);
+    my_scanf("%d ",&a[i]);
      }
     for(int i=0;i<n-1;i++){
        for(int j=i+1;j<n;j++){
@@ -16,9 +16,9 @@ int main_bench(){
       }
     }
    if(h==1&&t==0){
-    printf("yes");
+    my_printf("yes");
    }else{
-    printf("no");
+    my_printf("no");
    }
    return 0;
 }

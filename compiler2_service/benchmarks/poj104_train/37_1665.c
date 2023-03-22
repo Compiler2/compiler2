@@ -4,7 +4,7 @@
 {
     char str[100000];
     int i,j,t,flag,k,n;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     getchar();           
     for(k=0;k<t;k++)
     {
@@ -21,13 +21,13 @@
             }
             if(n==1)
             {
-                printf("%c\n",str[i]);
+                my_printf("%c\n",str[i]);
                 flag=1;
                 break;
             }
         }
         if(!flag)
-            printf("no\n");
+            my_printf("no\n");
     }
     return 0;
 }

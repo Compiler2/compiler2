@@ -4,18 +4,18 @@ int main_bench()
 {
     int i,j,k=0,l,b[1000],d[1000],e[1000],m,n;
     char a[1000],c[1000];
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     if(l==1)
-    printf("%d\n%d",0,a[0]-'0');
+    my_printf("%d\n%d",0,a[0]-'0');
     else if(l==2)
     {
          m=a[0]-'0';
          n=a[1]-'0';
          if(m*10+n<13)
-         printf("%d\n%d",0,m*10+n);
+         my_printf("%d\n%d",0,m*10+n);
          else
-         printf("%d\n%d",(m*10+n)/13,(m*10+n)%13);
+         my_printf("%d\n%d",(m*10+n)/13,(m*10+n)%13);
     }
     else
     {
@@ -38,7 +38,7 @@ int main_bench()
                                         c[j]=b[j]+'0';
                        }
                        c[l-2]='\0';
-                       printf("%s\n%d",c,d[k]);
+                       my_printf("%s\n%d",c,d[k]);
     }
     else
     {
@@ -55,7 +55,7 @@ int main_bench()
                                         c[j]=b[j]+'0';
                        }
                        c[l-1]='\0';
-                       printf("%s\n%d",c,d[k]);
+                       my_printf("%s\n%d",c,d[k]);
     }
 }
     getchar();

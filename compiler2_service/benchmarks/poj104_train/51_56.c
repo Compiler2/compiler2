@@ -3,8 +3,8 @@
 int main_bench(){
 	int n,i,j,k,l,cmp,count,site,mid,timer,re[10],num[510][2]={0};
 	char scan[501],u[510][510];
-	scanf("%d",&n);
-	scanf("%s",scan);
+	my_scanf("%d",&n);
+	my_scanf("%s",scan);
 	count=-1;
 	site=-1;
 	cmp=0;
@@ -44,16 +44,16 @@ int main_bench(){
 		}
 	}
 	if(num[0][1]>1){
-	printf("%d\n",num[0][1]);
+	my_printf("%d\n",num[0][1]);
 	for(i=0;i<=timer;i++){
 		for(j=0;j<=count;j++){
 			if(j==re[i]){
-				printf("%s\n",u[j]);
+				my_printf("%s\n",u[j]);
 			}
 		}
 	}
 	}else{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

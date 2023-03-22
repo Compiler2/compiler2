@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,year,a,b,c,sum;
-	scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
     year=sy;
 	c=(ey-sy)*365;
 	switch(sm)
@@ -44,5 +44,5 @@ int main_bench()
 	   }
    sum=sum-(((sy % 4 == 0 && sy % 100 != 0 )|| sy % 400 == 0)&&sm>2);
    sum=sum-(((ey % 4 == 0 && ey % 100 != 0 )|| ey % 400 == 0)&&em<=2);
-   printf("%d\n",sum);
+   my_printf("%d\n",sum);
 }

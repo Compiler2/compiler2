@@ -2,10 +2,10 @@
 
 int main_bench(){
 int x,a[100][100],i,j,k,l,y=0,z=0,hang,lie;
-scanf("%d,%d",&hang,&lie);
+my_scanf("%d,%d",&hang,&lie);
      for(i=0;i<hang;i++){
                        for(j=0;j<lie;j++){
-                                       scanf("%d",&a[i][j]);}}
+                                       my_scanf("%d",&a[i][j]);}}
 	 
      for(i=0;i<hang;i++){ 
                           z=0;
@@ -25,9 +25,9 @@ scanf("%d,%d",&hang,&lie);
                                                              if(z==hang){
                                                                        
                                                              y++;
-                                                             printf("%d+%d",i,k);}
+                                                             my_printf("%d+%d",i,k);}
                                                              }
                                                              if(y==0)
-                                                             printf("No");      
+                                                             my_printf("No");      
 return 0;
 }

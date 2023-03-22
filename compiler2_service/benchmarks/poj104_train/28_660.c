@@ -14,7 +14,7 @@ int main_bench()
            }
         else if(s[i]==' '&&s[i-1]!=' '){
            ch=strlen(word);
-           printf("%d,",ch);
+           my_printf("%d,",ch);
            j=0;
            for(k=0;k<100;k++){
              word[k]='\0';
@@ -22,9 +22,9 @@ int main_bench()
            }
         else if(s[i]=='\0'){
            ch=strlen(word);
-           printf("%d",ch);
+           my_printf("%d",ch);
            }
         }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     return 0;
 }

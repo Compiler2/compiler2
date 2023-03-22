@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x[1000], y[1000], i, j, temp;
-	scanf("%d%d", &x[0], &y[0]);
+	my_scanf("%d%d", &x[0], &y[0]);
 	if(x[0]>y[0])
 	{
 		temp=x[0];
@@ -23,6 +23,6 @@ int main_bench()
 	   y[j]=y[j-1]/2;
 	   if(y[j]<x[i]) i++;
 	}
-	printf("%d\n", x[i]);
+	my_printf("%d\n", x[i]);
 	return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
      int n,l,i,j,x;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      l=0;
      int a[20000];
      for(i=0;i<n;i++)
-     scanf("%d",&a[i]);
+     my_scanf("%d",&a[i]);
      for(j=0;j<n;j++)
      {
                       for(i=(j+1);i<n;i++)
@@ -21,9 +21,9 @@ int main_bench()
                       for(i=0;i<n-1;i++)
           { 
                       if(a[i]!='*')
-                       printf("%d ",a[i]);
+                       my_printf("%d ",a[i]);
          }
-         printf("%d",a[n-1]);
+         my_printf("%d",a[n-1]);
       }
     else
      {
@@ -35,9 +35,9 @@ int main_bench()
           for(j=0;j<n-l-1;j++)
           { 
                       if(a[j]!='*')
-                       printf("%d ",a[j]);
+                       my_printf("%d ",a[j]);
          }
-         printf("%d",a[n-l-1]);
+         my_printf("%d",a[n-l-1]);
      }
     
       

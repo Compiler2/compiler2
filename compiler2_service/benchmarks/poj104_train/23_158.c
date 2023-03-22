@@ -7,7 +7,7 @@ void print(int n)
 	for(i=n;;i++)
 	{
 	    if(str[i]==' '||str[i]=='\0') break;
-		else printf("%c",str[i]);
+		else my_printf("%c",str[i]);
 	}
 }
 main_bench()
@@ -16,6 +16,6 @@ main_bench()
 	gets(str);
 	len=strlen(str);
 	for(i=len-1;i>=0;i--)
-		if(str[i]==' ') {print(i+1);printf(" ");}
+		if(str[i]==' ') {print(i+1);my_printf(" ");}
 	print(0);
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 int k,n,s=0;
 int a=1,b=1;
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(int q=1;q<=k;q++){
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(n==1||n==2){
   s=1;
 }
@@ -16,7 +16,7 @@ else{
 	b=s;
 	}
 }
-printf("%d\n",s);
+my_printf("%d\n",s);
 s=0;
 a=1;
 b=1;

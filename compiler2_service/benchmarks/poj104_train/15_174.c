@@ -5,12 +5,12 @@ int main_bench()
 	int p[1000][1000];
     int a=0,b=0;
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&p[i][j]);
+			my_scanf("%d",&p[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -34,6 +34,6 @@ int main_bench()
 	}
 	int sum=0;
 	sum=(a-2)*(b-2);
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char str[300];
 	char sub[300];
 	char re[300];
-	scanf("%s%s%s",str,sub,re);
+	my_scanf("%s%s%s",str,sub,re);
 	int i,j,k,first;
 	int len=strlen(str);
 	int len1=strlen(sub);
@@ -31,17 +31,17 @@ int main_bench()
 	}
 	if(j!=len1)
 	{
-		printf("%s",str);
+		my_printf("%s",str);
 	}else
 	{
 		for(i=0;i<first;i++)
 		{
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		}
-		printf("%s",re);
+		my_printf("%s",re);
 		for(i=(first+len2);i<len;i++)
 		{
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		}
 	}
 	return 0;

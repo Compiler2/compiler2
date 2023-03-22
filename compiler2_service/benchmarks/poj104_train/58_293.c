@@ -16,14 +16,14 @@ int main_bench()
 {
     char a[81];
     int k;
-    scanf("%d\n",&k);
+    my_scanf("%d\n",&k);
     for(int j=0;j<k;j++)
     {
                        gets(a);
                        int n=strlen(a);
                        if(!(a[0]=='_'||(a[0]>='a'&&a[0]<='z')||(a[0]>='A'&&a[0]<='Z')))
                        {
-                       printf("0\n");
+                       my_printf("0\n");
                        continue;
                        }
                        else
@@ -31,11 +31,11 @@ int main_bench()
                        {
                                if(panduan(a[i]))
                                {
-                                  printf("0\n");
+                                  my_printf("0\n");
                                   goto end;
                                }
                        }
-                       printf("1\n");
+                       my_printf("1\n");
                        end:;
     }
 }

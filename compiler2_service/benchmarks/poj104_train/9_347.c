@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,sz[100],i=0,a[100],b[100],p=0,q=0,m=0;
 	char sz1[100][100],a1[100][100],b1[100][100],e[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d",sz1[i],&sz[i]);
+		my_scanf("%s%d",sz1[i],&sz[i]);
 	for(i=0;i<n;i++)
 	{
 		if(sz[i]>=60)
@@ -38,9 +38,9 @@ int main_bench()
 		}
 	}
 	for(i=0;i<p;i++)
-		printf("%s\n",a1[i]);
+		my_printf("%s\n",a1[i]);
 	for(m=0;m<q;m++)
-		printf("%s\n",(b1[m]));
+		my_printf("%s\n",(b1[m]));
 
 
 	return 0;

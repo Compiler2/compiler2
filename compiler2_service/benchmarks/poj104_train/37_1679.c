@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int t,i,j,A,k,yes=0,m;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	char a[100000];
 	char b[26];
 	int c[26];
@@ -14,7 +14,7 @@ int main_bench()
 	}
 	for(i=0;i<t;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		A=strlen(a);
 		m=A;
 		for(j=0;j<A;j++)
@@ -39,8 +39,8 @@ int main_bench()
 				}
 			}	
 		}
-		if(yes==1) printf("%c\n",a[m]);
-		if(yes==0) printf("no\n");
+		if(yes==1) my_printf("%c\n",a[m]);
+		if(yes==0) my_printf("no\n");
 		for(j=0;j<A;j++)
 		{
 			a[j]=0;

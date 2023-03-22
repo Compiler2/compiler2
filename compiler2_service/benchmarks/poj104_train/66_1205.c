@@ -8,7 +8,7 @@ int isrunnian(int y){
 int main_bench()
 {
 	int y,m,d,sum;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	sum=(y%7+(y-1)/4-(y-1)/100+(y-1)/400)%7;
 
 	
@@ -25,7 +25,7 @@ int main_bench()
 	sum=sum%7;
 
 	char weekdays[][10]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
-	printf("%s",weekdays[sum]);
+	my_printf("%s",weekdays[sum]);
 
 
 

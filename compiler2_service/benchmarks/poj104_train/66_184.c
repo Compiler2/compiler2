@@ -4,7 +4,7 @@ int main_bench()
 {    
 	void print(int n);
 	unsigned year,month,day,d,date;
-     scanf("%d%d%d",&year,&month,&day);
+     my_scanf("%d%d%d",&year,&month,&day);
 	if(month==1||month==2)
 	{year=year-1;
 	month=month+12;                  
@@ -18,13 +18,13 @@ void print(int n)
 {
 	switch (n)
 	{
-	case 1:printf("Mon.");break;
-	case 2:printf("Tue.");break;
-	case 3:printf("Wed.");break;
-	case 4:printf("Thu.");break;
-	case 5:printf("Fri.");break;
-	case 6:printf("Sat.");break;
-	case 7:printf("Sun.");break;
+	case 1:my_printf("Mon.");break;
+	case 2:my_printf("Tue.");break;
+	case 3:my_printf("Wed.");break;
+	case 4:my_printf("Thu.");break;
+	case 5:my_printf("Fri.");break;
+	case 6:my_printf("Sat.");break;
+	case 7:my_printf("Sun.");break;
 	
 	}
 }

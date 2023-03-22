@@ -4,11 +4,11 @@
 main_bench()
 {
  int a[200], b[200], n, count=0;
- scanf("%d", &n);
+ my_scanf("%d", &n);
  int i;
  for (i=0; i<n; i++)
  {
-  scanf("%d %d", &a[i], &b[i]);
+  my_scanf("%d %d", &a[i], &b[i]);
   if (a[i]!=b[i])
   {
    if (a[i]==2) 
@@ -35,10 +35,10 @@ main_bench()
   }   
  }     
  if (count>0)
-    printf("A\n");
+    my_printf("A\n");
  if (count < 0)
-    printf("B");
+    my_printf("B");
  if (count == 0)
-    printf("Tie");
+    my_printf("Tie");
  
 }

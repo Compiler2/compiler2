@@ -4,9 +4,9 @@ int main_bench(){
 	int i,x,y;
 	double w,sum=0,p;
 	char a[1000],b[1000];
-	scanf("%lf",&w);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&w);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 x=strlen(a);
 y=strlen(b);
 	if(x==y){
@@ -15,23 +15,23 @@ y=strlen(b);
 				sum++;
 			} 
 			else if((a[i]!='A'&&a[i]!='C'&&a[i]!='T'&&a[i]!='G')||(b[i]!='A'&&b[i]!='C'&&b[i]!='T'&&b[i]!='G')){
-			printf("error\n");
+			my_printf("error\n");
 			return 0;
 		}
 		}
 		
 	}
 	else if(x!=y){
-		printf("error\n");
+		my_printf("error\n");
 		return 0;
 	}
 	while (x==y){
 		p=sum/x;
 		if(p>=w){
-			printf("yes\n");
+			my_printf("yes\n");
 			break;
 		}
-		else printf("no\n");
+		else my_printf("no\n");
 		break;
 	}
 	

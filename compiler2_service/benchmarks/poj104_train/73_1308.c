@@ -8,7 +8,7 @@ int main_bench()
 
 	for (i=1;i<=5;i++)
 		for (j=1;j<=5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for (i=1;i<=5;i++)
 	{
 		max=1;
@@ -22,8 +22,8 @@ int main_bench()
 		sign=1;
 		for (j=1;j<=5;j++)
 			if (a[j][maxline[i]]<a[i][maxline[i]]) sign=0;
-		if (sign==1) {printf("%d %d %d",i,maxline[i],a[i][maxline[i]]);sg=1;}
+		if (sign==1) {my_printf("%d %d %d",i,maxline[i],a[i][maxline[i]]);sg=1;}
 	}
-	if (sg==0) printf("not found");
+	if (sg==0) my_printf("not found");
 	return 0;
 }

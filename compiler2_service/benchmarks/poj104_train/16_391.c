@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,i,j,a[5];
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	i=0;
 	while (x>=10)
 	{
@@ -12,7 +12,7 @@ int main_bench()
 		i=i+1;
 	}
 	a[i]=x;
-	for (j=0;j<=i;j++) printf("%d",a[j]);
-	printf("\n");
+	for (j=0;j<=i;j++) my_printf("%d",a[j]);
+	my_printf("\n");
 
 }

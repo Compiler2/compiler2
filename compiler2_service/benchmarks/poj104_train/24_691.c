@@ -24,12 +24,12 @@ int main_bench(){
   }
   
   for(int i = 0; i != lenOfLong; ++i)
-    printf("%c",x[indexOfLong + i]);
+    my_printf("%c",x[indexOfLong + i]);
   
-  printf("\n");
+  my_printf("\n");
   
   for(int i = 0; i != lenOfShort; ++i) 
-    printf("%c",x[indexOfShort + i]);
+    my_printf("%c",x[indexOfShort + i]);
 
   return 0;
 }

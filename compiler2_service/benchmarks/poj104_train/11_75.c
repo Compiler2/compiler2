@@ -3,7 +3,7 @@
 int main_bench() 
 { 
 	int a,b,c,d,e;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	d=0;
     int days1[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int days2[13] = {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
@@ -24,5 +24,5 @@ int main_bench()
 		d=d+c;
 	}
 	d=d-1;
-	printf("%d",d);
+	my_printf("%d",d);
 }

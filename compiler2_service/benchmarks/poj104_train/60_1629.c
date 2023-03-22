@@ -3,7 +3,7 @@
 int main_bench()
 {   
 	int n,i,j,k,m,z,x=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n;i++)
 	{
 		for(j=2;j<=i;j++)
@@ -17,7 +17,7 @@ int main_bench()
 					if(z==m+2) 
 					{
 						k=m+2;
-                        printf("%d %d\n",m,k);
+                        my_printf("%d %d\n",m,k);
 						x=1;
 					}
 			        else
@@ -32,6 +32,6 @@ int main_bench()
 			}
 		}
 	}
-	if (x==0) printf("empty");
+	if (x==0) my_printf("empty");
 return 0;
 }

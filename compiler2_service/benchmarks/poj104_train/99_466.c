@@ -7,10 +7,10 @@ int main_bench(){
 	b=0;
 	c=0;
 	d=0;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	int s[100];
 	for(i=0;i<n;i++){
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		if(s[i]>=1&&s[i]<=18)
 			a++;
 		else if(s[i]>=19&&s[i]<=35)
@@ -24,7 +24,7 @@ int main_bench(){
 	b=b/n*100;
 	c=c/n*100;
 	d=d/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a,b,c,d);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a,b,c,d);
 	return 0;
 }
 		

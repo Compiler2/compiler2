@@ -16,12 +16,12 @@ int main_bench()
 		}
 	}
 	for(m=count[k-1];m<strlen(a);m++)
-    printf("%c",a[m]);
+    my_printf("%c",a[m]);
 	for(j=k-2;j>=0;j--)
 	{
-		printf(" ");
+		my_printf(" ");
 		for(m=count[j];m<count[j+1]-1;m++)
-			printf("%c",a[m]);
+			my_printf("%c",a[m]);
 	}
 	return 0;
 }

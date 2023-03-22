@@ -18,16 +18,16 @@ int main_bench()
 	}
 	for(i=0;p[i]!='\0'&&d[i]!='\0';i++){
 		if(p[i]>d[i]&&j==0){
-			printf(">");
+			my_printf(">");
 			j=1;
 		}
 		else if(p[i]<d[i]&&j==0){
-			printf("<");
+			my_printf("<");
 			j=1;
 		}
 	}
 	if(j==0){
-		printf("=");
+		my_printf("=");
 	}
 }
 

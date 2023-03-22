@@ -9,7 +9,7 @@ int main_bench(){
 	}
 	s__[i]=' ';
 	s__[i+1]='\0';
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	for(i=0;s__[i]!='\0';i++){
 		n++;
 	}
@@ -27,17 +27,17 @@ int main_bench(){
 	m=j;
 	for(j=0;j<m-1;j++){
 		if(strcmp(s_[j],a)==0){
-			printf("%s ",b);
+			my_printf("%s ",b);
 		}
 		else{
-			printf("%s ",s_[j]);
+			my_printf("%s ",s_[j]);
 		}
 	}
 	if(strcmp(s_[m-1],a)==0){
-		printf("%s",b);
+		my_printf("%s",b);
 	}
 	else{
-		printf("%s",s_[j]);
+		my_printf("%s",s_[j]);
 	}
 	return 0;
 }

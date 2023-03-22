@@ -8,7 +8,7 @@ int main_bench()
 	int i,j;
 	int flag;
 
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	
 	lena=strlen(a);
     lenb=strlen(b);
@@ -30,8 +30,8 @@ int main_bench()
 		    }
 			
 	    }
-		if(strcmp(a,b)==0)printf("YES\n");
-		else printf("NO\n");
+		if(strcmp(a,b)==0)my_printf("YES\n");
+		else my_printf("NO\n");
 	}
-	else printf("NO\n");
+	else my_printf("NO\n");
 }

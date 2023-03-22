@@ -6,15 +6,15 @@ int a[5][5];
 int i,j,n,m;
 
 for(i=0;i<5;i++)
-scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
-scanf("%d %d",&n,&m);
+my_scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
+my_scanf("%d %d",&n,&m);
 j=huan(a,n,m);
 if(j==0)
-printf("error");
+my_printf("error");
 else 
 {
 	for(i=0;i<5;i++)
-		printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);}
+		my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);}
 
 }
 int huan(int a[5][5],int x,int y)

@@ -10,7 +10,7 @@ int main_bench()
 		for(i=0;i<=k-1;i++)
        {
         c=x[i]+x[i+1];
-		printf("%c",c);
+		my_printf("%c",c);
         }
       
 	   return 0;

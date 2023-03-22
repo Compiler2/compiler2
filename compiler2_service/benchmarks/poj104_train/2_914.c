@@ -7,9 +7,9 @@ int main_bench()
 {
 	int m,i,j,number[1000],auther[26],total=0;
 	char name[1000][27];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d %s",&number[i],name[i]);
+		my_scanf("%d %s",&number[i],name[i]);
 		int n;
 		n=strlen(name[i]);
 		for(j=0;j<n;j++){
@@ -50,7 +50,7 @@ int main_bench()
 		    t=k;
 		}
 	}
-	printf("%c\n",f(t));
+	my_printf("%c\n",f(t));
 	for(i=0;i<m;i++){
         int q;
 		q=strlen(name[i]);
@@ -59,13 +59,13 @@ int main_bench()
 				total++;
 		}
 	}
-	printf("%d\n",total);
+	my_printf("%d\n",total);
 	for(i=0;i<m;i++){
         int p;
 		p=strlen(name[i]);
 		for(j=0;j<p;j++){
 			if(name[i][j]==f(t))
-				printf("%d\n",number[i]);
+				my_printf("%d\n",number[i]);
 		}
 	}
 	return 0;

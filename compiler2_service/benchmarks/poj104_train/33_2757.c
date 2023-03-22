@@ -8,7 +8,7 @@ int main_bench(){
 	a['T']='A';
 	a['G']='C';
 	a['C']='G';
-	scanf("%d\n", &n );
+	my_scanf("%d\n", &n );
 
 	while(n--){
 		ch=getchar();

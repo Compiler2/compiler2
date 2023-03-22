@@ -15,9 +15,9 @@ int main_bench()
 	int m,i,j,k;
 	struct book bk[1000];
 	struct total to[27];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
-		scanf("%d %s",&bk[i].num,bk[i].edt);
+		my_scanf("%d %s",&bk[i].num,bk[i].edt);
 	for(i=0;i<26;i++)
 	{
 		to[i].name='A'+i;
@@ -41,13 +41,13 @@ int main_bench()
 		if(to[i].amount>to[k].amount )
 			k=i;
 	}
-	printf("%c\n%d\n",to[k].name ,to[k].amount );
+	my_printf("%c\n%d\n",to[k].name ,to[k].amount );
 	
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<strlen(bk[i].edt);j++)
 			if(bk[i].edt[j]==to[k].name)
-				printf("%d\n",bk[i].num);
+				my_printf("%d\n",bk[i].num);
 	}
 	return 0;
 }

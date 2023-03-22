@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i;
 	int A[200],B[200];
 	int countA=0,countB=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&A[i],&B[i]);
+		my_scanf("%d%d",&A[i],&B[i]);
 		if((A[i]-B[i]==-1)||(A[i]-B[i]==2)){
 			countA++;
 		}else if((A[i]-B[i]==1)||(A[i]-B[i]==-2)){
@@ -14,11 +14,11 @@ int main_bench(){
 		}
 	}
 	if(countA>countB) {
-		printf("A");
+		my_printf("A");
 	}else if(countB>countA){
-		 printf("B");
+		 my_printf("B");
 	}else {
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

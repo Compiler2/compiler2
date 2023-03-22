@@ -28,7 +28,7 @@ int main_bench()
                 if(judge(a,i,k))
                 {
                     for(j=i;j<=i+k;j++)
-                        printf("%c",a[j]);
+                        my_printf("%c",a[j]);
                     putchar('\n');
                 }
 

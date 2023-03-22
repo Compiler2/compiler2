@@ -5,10 +5,10 @@ int main_bench()
   int n,i,j,m,t;
   int a[350];
   int avg=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     avg+=a[i];
     a[i]*=n;
   }
@@ -28,11 +28,11 @@ int main_bench()
     if(avg-a[i]==m || a[i]-avg==m)
     {
       if(t)
-        printf(",");
-      printf("%d",a[i]/n);
+        my_printf(",");
+      my_printf("%d",a[i]/n);
       t=1;
     }
-  printf("\n");
+  my_printf("\n");
   return 0;
 }
 

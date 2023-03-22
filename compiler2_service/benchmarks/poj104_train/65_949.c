@@ -2,10 +2,10 @@
 
 int main_bench(){
     int a,b,i,n,p=0,q=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&a);
-        scanf("%d",&b);
+        my_scanf("%d",&a);
+        my_scanf("%d",&b);
         if((a-b==1)||(b-a==2)){
             q++;
         }else if((b-a==1)||(a-b==2)){
@@ -16,11 +16,11 @@ int main_bench(){
         }
     }
     if(p>q){
-        printf("A");
+        my_printf("A");
     }else if(p<q){
-        printf("B");
+        my_printf("B");
     }else if(p==q){
-        printf("Tie");
+        my_printf("Tie");
     }
     return 0;
 }

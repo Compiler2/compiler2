@@ -16,23 +16,23 @@ int main_bench()
       { 
       if(s1[i]>='A'&&s1[i]<='Z'&&s2[i]>='a'&&s2[i]<='z') 
        {
-        if(s1[i]-'A'+'a'<s2[i]) {printf("<");jh=0;break;}
+        if(s1[i]-'A'+'a'<s2[i]) {my_printf("<");jh=0;break;}
         else if(s1[i]-'A'+'a'==s2[i]) continue;
-        else {printf(">");jh=0;break;}
+        else {my_printf(">");jh=0;break;}
        }
       else if(s2[i]>='A'&&s2[i]<='Z'&&s1[i]>='a'&&s1[i]<='z')
       {
-        if(s2[i]-'A'+'a'<s1[i]) {printf(">");jh=0;break;}
+        if(s2[i]-'A'+'a'<s1[i]) {my_printf(">");jh=0;break;}
         else if(s2[i]-'A'+'a'==s1[i]) continue;
-        else {printf("<");jh=0;break;}
+        else {my_printf("<");jh=0;break;}
        }
       else 
       {
-        if(s2[i]<s1[i]) {printf(">");jh=0;break;}
+        if(s2[i]<s1[i]) {my_printf(">");jh=0;break;}
         else if(s2[i]==s1[i]) continue;
-        else {printf("<");jh=0;break;}
+        else {my_printf("<");jh=0;break;}
        }
       } 
     }
-    if(jh==1) printf("=\n");
+    if(jh==1) my_printf("=\n");
 }

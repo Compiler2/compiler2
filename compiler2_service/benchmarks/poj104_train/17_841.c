@@ -4,11 +4,11 @@ main_bench()
 {
 	int n,e,x,i,t,j,k;
 	char s[102];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(e=0;e<n;e++)
 	{
-		scanf("%s",s);
-		printf("%s\n",s);
+		my_scanf("%s",s);
+		my_printf("%s\n",s);
 		x=strlen(s);
 		for(i=0;i<x;i++)
 		{
@@ -52,6 +52,6 @@ main_bench()
 			if(s[i]==')')
 			s[i]='?'; 
 		}
-		printf("%s\n",s); 
+		my_printf("%s\n",s); 
 	}
 }

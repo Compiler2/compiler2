@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
  int a[12],b[12];
 a[0]=12%7;
 a[1]=43%7;
@@ -28,7 +28,7 @@ else
 for(i=0;i<12;i++)
 {if(b[i]==5)
 
-{printf("%d\n",i+1);}
+{my_printf("%d\n",i+1);}
 }
 		
 		

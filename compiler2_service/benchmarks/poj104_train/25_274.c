@@ -4,7 +4,7 @@ int main_bench()
 {
 int a[100]={0};
 int i,key=0,n,j,p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 a[key]=1;
 for(i=1;i<=n;i++)
 {
@@ -23,7 +23,7 @@ for(i=1;i<=n;i++)
 for(i=99;i>=0;i--)
 if(a[i]!=0){p=i;break;}
 for(i=p;i>=0;i--)
-printf("%d",a[i]);
-printf("\n");
+my_printf("%d",a[i]);
+my_printf("\n");
 return 0;
 }

@@ -21,12 +21,12 @@ int ss(int x)
 }
 int main_bench()
 {   int m,n,j,i,s=0;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     for(i=m;i<=n;i++)
 {   if(hws(i)==1&&ss(i)==1)
-  {if(s==0)  printf("%d",i),s++;
-    else printf(",%d",i);
-} } if(s==0) printf("no");
+  {if(s==0)  my_printf("%d",i),s++;
+    else my_printf(",%d",i);
+} } if(s==0) my_printf("no");
 }
 
 

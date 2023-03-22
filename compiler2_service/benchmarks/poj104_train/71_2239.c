@@ -4,11 +4,11 @@
 int isRunNian(int year);
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int year[200],month1[200],month2[200],chaju[200]={0,0,0,0};
     int i,e,k;
     for(i=0;i<n;i++){
-                     scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
+                     my_scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
                      if(month1[i]>month2[i]){
                                              e=month1[i];
                                              month1[i]=month2[i];
@@ -42,10 +42,10 @@ int main_bench(){
                                                                        }
                                                                        }
                      if(chaju[i]%7==0){
-                                       printf("YES\n");
+                                       my_printf("YES\n");
                                        }
                      else{
-                          printf("NO\n");
+                          my_printf("NO\n");
                           }
     }
                                                                                                                       

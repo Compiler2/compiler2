@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[300],b[300],*p,*q,i,j,k=1;
 	p=a;
 	q=b;
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	*q=*p;
 	for(i=1;i<n;i++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k-1;i++)
-		printf("%d,",*(q+i));
-	printf("%d",*(q+k-1));
+		my_printf("%d,",*(q+i));
+	my_printf("%d",*(q+k-1));
 return 0;
 }

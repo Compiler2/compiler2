@@ -13,12 +13,12 @@ int main_bench()
 			{	
 				if(str1[i]>str2[i])
 				{
-				printf(">");
+				my_printf(">");
 				break;
 				}
 			   else
 			   {
-				printf("<");
+				my_printf("<");
 				break;
 			   }
 			}
@@ -26,12 +26,12 @@ int main_bench()
 			{	
 				if(str1[i]>str2[i])
 				{
-				printf(">");
+				my_printf(">");
 				break;
 				}
 			   else
 			   {
-				printf("<");
+				my_printf("<");
 				break;
 			   }
 			}
@@ -39,12 +39,12 @@ int main_bench()
 			{	
 				if(str1[i]>str2[i]-32)
 				{
-				printf(">");
+				my_printf(">");
 				break;
 				}
 			   else if(str1[i]<str2[i]-32)
 			   {
-				printf("<");
+				my_printf("<");
 				break;
 			   }
 			}
@@ -52,18 +52,18 @@ int main_bench()
 			{	
 				if(str1[i]-32>str2[i])
 				{
-				printf(">");
+				my_printf(">");
 				break;
 				}
 			   else if(str1[i]-32<str2[i])
 			   {
-				printf("<");
+				my_printf("<");
 				break;
 			   }
 			}	
 		}
 		if(str1[i+1]=='\0')
-			printf("=");
+			my_printf("=");
 		i=i+1;
 	}
 }

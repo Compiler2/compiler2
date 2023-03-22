@@ -21,8 +21,8 @@ int main_bench()
 			if(sign==i)
 			{
 				for(k=j;k<j+i;k++)
-					printf("%c",s[k]);
-				printf("\n");
+					my_printf("%c",s[k]);
+				my_printf("\n");
 			}
 		}
 	}

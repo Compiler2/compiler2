@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[51000],b[51000];
 	int i;
 	for(i=1;i<=n;i++)
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	int k,e;
 	for(k=1;k<n;k++)
 	{
@@ -60,9 +60,9 @@ int main_bench()
 			count++;
 	}
 	if(count==(k-1)){
-		printf("%d %d",c[1],d[k]);
+		my_printf("%d %d",c[1],d[k]);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

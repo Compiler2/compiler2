@@ -3,7 +3,7 @@
 main_bench()
 {
  int n,i,r,t;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(n>=5)
 {
  for(i=3;i<=n-2;i++)
@@ -19,9 +19,9 @@ main_bench()
      break;
    }
    if(t==r)
-   printf("%d %d\n",i,t);
+   my_printf("%d %d\n",i,t);
      
   }}
 }
-  else printf("empty");
+  else my_printf("empty");
 }

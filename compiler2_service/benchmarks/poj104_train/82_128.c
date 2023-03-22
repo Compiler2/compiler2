@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n;
 	int temp=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int count=0;
 	int sz[100][2];
 	int pd[100]={0};
@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(int j=0;j<2;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(int k=0;k<n;k++)
@@ -43,7 +43,7 @@ int main_bench()
 	{
 		temp=count;
 	}
-	printf("%d",temp);
+	my_printf("%d",temp);
 
 
 	return 0;

@@ -3,9 +3,9 @@
 int main_bench(){
 	char xl[1000][256],hb[1000][256];
 	int i,m,n,cd[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++){
-		scanf("%s",&xl[m]);
+		my_scanf("%s",&xl[m]);
 		cd[m]=strlen(xl[m]);
 	}
 	for(m=0;m<n;m++){
@@ -25,7 +25,7 @@ int main_bench(){
 	    hb[m][i]='\0';
 	}
 	for(m=0;m<n;m++){
-		printf("%s\n",hb[m]);
+		my_printf("%s\n",hb[m]);
 	}
 	return 0;
 }

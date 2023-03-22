@@ -4,11 +4,11 @@ int x[100000],y[100000],z[100000],s[100000],b[100000];
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,t,m1,m2;
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%d%d",&x[i],&y[i],&z[i]);
+		my_scanf("%d%d%d",&x[i],&y[i],&z[i]);
 		s[i]=y[i]+z[i];
 		b[i]=s[i];
 	}
@@ -29,7 +29,7 @@ int main_bench()
 		if(s[1]==b[i])
 		{
 			m1=i;
-			printf("%d %d\n",x[i],b[i]);
+			my_printf("%d %d\n",x[i],b[i]);
 			break;
 		}
 	}
@@ -38,7 +38,7 @@ int main_bench()
 		if(s[2]==b[i]&&i!=m1)
 		{
 			m2=i;
-			printf("%d %d\n",x[i],b[i]);
+			my_printf("%d %d\n",x[i],b[i]);
 			break;
 		}
 	}
@@ -46,7 +46,7 @@ int main_bench()
 	{
 		if(s[3]==b[i]&&i!=m1&&i!=m2)
 		{
-			printf("%d %d\n",x[i],b[i]);
+			my_printf("%d %d\n",x[i],b[i]);
 			break;
 		}
 	}

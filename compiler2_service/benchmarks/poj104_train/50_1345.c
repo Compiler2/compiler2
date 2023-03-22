@@ -4,10 +4,10 @@ int yue(int a);
 int main_bench()
 {
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		if(w==7){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 		w+=yue(i)%7;
 		if(w>7)

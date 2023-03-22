@@ -3,9 +3,9 @@
 int main_bench(){
     int i,z=10000,qj[50000][2],y=0,n,k=0,m=0;
     double s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d%d",&(qj[i][0]),&(qj[i][1]));
+                     my_scanf("%d%d",&(qj[i][0]),&(qj[i][1]));
                      if(qj[i][0]<z)
                      z=qj[i][0];
                      if(qj[i][1]>y)
@@ -22,9 +22,9 @@ int main_bench(){
                          k=0;
                          }
     if(m!=0){
-             printf("no");
+             my_printf("no");
              }else{
-                   printf("%d %d",z,y);
+                   my_printf("%d %d",z,y);
                    }
 
                    return 0;

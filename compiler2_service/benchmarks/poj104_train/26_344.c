@@ -8,12 +8,12 @@ int main_bench()
     gets(p);
     for(p=p0;*p!='\0';p++)
     {
-        if(*p!=' ')printf("%c",*p);
+        if(*p!=' ')my_printf("%c",*p);
         else for(q=p;*q!='\0';q++)
             if(*q!=' ')
             {
                 p=q-1;
-                printf(" ");
+                my_printf(" ");
                 break;
             }
     }

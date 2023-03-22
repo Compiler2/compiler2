@@ -13,9 +13,9 @@ int paper;
 int main_bench()
 {int m=0,n,i;
 long sum,t=0,a[100]={0};
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].test,&stu[i].judge,&stu[i].leader,&stu[i].west,&stu[i].paper);
+{my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].test,&stu[i].judge,&stu[i].leader,&stu[i].west,&stu[i].paper);
 }
 for(sum=0,i=0;i<n;i++)
  {if(stu[i].test>80&&stu[i].paper>0) {a[i]=a[i]+8000;}
@@ -26,7 +26,7 @@ for(sum=0,i=0;i<n;i++)
  sum=sum+a[i];
  if(a[i]>t) {t=a[i];m=i;}
  }
-printf("%s\n",stu[m].name);
-printf("%ld\n",t);
-printf("%ld\n",sum); 
+my_printf("%s\n",stu[m].name);
+my_printf("%ld\n",t);
+my_printf("%ld\n",sum); 
 }

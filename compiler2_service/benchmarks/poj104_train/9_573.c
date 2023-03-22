@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,i=0,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int age[100];
     char num[100][10];
     for(i=0;i<n;i++)
     {
-      scanf("%s %d",num[i],&age[i]);
+      my_scanf("%s %d",num[i],&age[i]);
       if (age[i]<60)
       age[i]=0;
     }
@@ -21,7 +21,7 @@ int main_bench()
                if(age[j]>age[i])
                     x=x+1;}
            if (x==0)
-           {printf("%s\n",num[i]);
+           {my_printf("%s\n",num[i]);
              age[i]=1;
              goto loop;}
        }                  
@@ -29,7 +29,7 @@ int main_bench()
      for(i=0;i<n;i++)
      {
       if (age[i]==0)
-      printf("%s\n",num[i]);                
+      my_printf("%s\n",num[i]);                
      } 
      getchar();
      getchar();

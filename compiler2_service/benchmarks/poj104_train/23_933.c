@@ -20,8 +20,8 @@ int main_bench()
 	}
 	for (i=j;i>=0;i--)
 	{
-		printf("%s",a[i]);
+		my_printf("%s",a[i]);
 		if(i==0)break;
-		printf(" ");
+		my_printf(" ");
 	}
 }

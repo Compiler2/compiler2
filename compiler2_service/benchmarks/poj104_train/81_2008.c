@@ -29,15 +29,15 @@ int main_bench()
      {
          for (j=0;j<5;j++)
          {
-             scanf("%d",&*(a[i]+j));
+             my_scanf("%d",&*(a[i]+j));
          }
      }     
-     scanf("%d",&m);
-     scanf("%d",&n);
+     my_scanf("%d",&m);
+     my_scanf("%d",&n);
      fanhui=zhuanhuan(a,m,n);          
      if (fanhui==0)
      {
-         printf("error");
+         my_printf("error");
      }
      if (fanhui==1)
      {
@@ -45,8 +45,8 @@ int main_bench()
          {
              for (j=0;j<5;j++)
              {
-                 if(j==4) printf("%d\n",*(a[i]+j));
-                 else printf("%d ",*(a[i]+j));
+                 if(j==4) my_printf("%d\n",*(a[i]+j));
+                 else my_printf("%d ",*(a[i]+j));
              }
          } 
      }

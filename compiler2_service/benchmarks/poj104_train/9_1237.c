@@ -12,12 +12,12 @@ int main_bench()
 {
 	int n,i,j,y,o;
     struct patients list[100],young[100],old[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
 		list[i].num=i;
-		scanf("%s %d",list[i].ID,&list[i].age);
+		my_scanf("%s %d",list[i].ID,&list[i].age);
 	}
 
 	y=0;
@@ -49,11 +49,11 @@ int main_bench()
 
 	for(i=0;i<o;i++)
 	{
-		printf("%s\n",old[i].ID);
+		my_printf("%s\n",old[i].ID);
 	}
 	for(i=0;i<y;i++)
 	{
-		printf("%s\n",young[i].ID);
+		my_printf("%s\n",young[i].ID);
 	}
 
 	return 0;

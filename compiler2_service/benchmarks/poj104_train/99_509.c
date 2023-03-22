@@ -3,10 +3,10 @@
 int main_bench()
 {
 	double s,t,r,w,n,i,a,b,c,j=0,k=0,l=0,m=0;
-	scanf("%lf\n",&n);
+	my_scanf("%lf\n",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a);
+		my_scanf("%lf",&a);
 		if(a<19)
 		{
 			j++;
@@ -28,10 +28,10 @@ int main_bench()
 	s=100*k/n;
 	t=100*l/n;
 	w=100*m/n;
-        printf("1-18: %.2lf%%\n",r);
-	printf("19-35: %.2lf%%\n",s);
-	printf("36-60: %.2lf%%\n",t);
-	printf("60??: %.2lf%%\n",w);
+        my_printf("1-18: %.2lf%%\n",r);
+	my_printf("19-35: %.2lf%%\n",s);
+	my_printf("36-60: %.2lf%%\n",t);
+	my_printf("60??: %.2lf%%\n",w);
 		
 	
 	return 0;

@@ -22,8 +22,8 @@ void hw(char a[],int n)
 			if(h==1)
 			{
 				for(h=j;h<j+i;h++)
-				printf("%c",a[h]);
-				printf("\n");
+				my_printf("%c",a[h]);
+				my_printf("\n");
 				h=0;
 			}
 		}
@@ -33,7 +33,7 @@ int main_bench()
 {
 	int n;
 	char a[500];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	hw(a,n);
 	return 0;

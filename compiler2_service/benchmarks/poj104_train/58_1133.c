@@ -12,12 +12,12 @@ int main_bench()
 {
     char str[100];
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     gets(str);
     while (n--)
     {
           gets(str);
-          printf("%d\n", isLegal(str));
+          my_printf("%d\n", isLegal(str));
     }
     return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=1;a<=n;a++)
 	{
 	char s[101];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	int left[101]={0},right[101]={0},i,l=0,r=0;
 	for(i=0;i<strlen(s);i++)
 	{
@@ -32,28 +32,28 @@ int main_bench()
 		}
 	}
 	int le=0,ri=0;
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 	for(i=0;i<strlen(s);i++)
 	{
 		if(left[le]==i+1)
 		{
-			printf("$");
+			my_printf("$");
 			le++;
 		}
 		else
 		{
 			if(right[ri]==i+1)
 			{
-				printf("?");
+				my_printf("?");
 				ri++;
 			}
 			else
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	}
 	return 0;
 }

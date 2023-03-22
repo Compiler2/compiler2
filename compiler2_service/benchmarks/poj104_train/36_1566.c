@@ -4,12 +4,12 @@ int main_bench()
 {
 	char str1[1000],str2[1000];
 	int count1[128]={0},count2[128]={0};
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	int strl1=strlen(str1),strl2=strlen(str2);
 	if(strl1!=strl2)
 	{
-		printf("NO");return 0;
+		my_printf("NO");return 0;
 	}
 	for(int i=0;i<strl1;i++)	count1[str1[i]]++;
 	for(int i=0;i<strl2;i++)	count2[str2[i]]++;
@@ -17,9 +17,9 @@ int main_bench()
 	{
 		if(count1[i]!=count2[i])
 		{
-			printf("NO");return 0;
+			my_printf("NO");return 0;
 		}
 	}
-	printf("YES");
+	my_printf("YES");
 	return 0;
 } 

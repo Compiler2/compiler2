@@ -23,9 +23,9 @@ int main_bench()
 	int a[300];
 	int i,sum=0;
 	float ave,difa,difb;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%d",a+i);
+		my_scanf("%d",a+i);
 	bubble(a,n);
 	for(i=0;i<=n-1;i++)
 		sum+=a[i];
@@ -33,10 +33,10 @@ int main_bench()
 	difa=fabs(ave-a[0]);
 	difb=fabs(ave-a[n-1]);
 	if(difa>difb)
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	else if(difa==difb)
-		printf("%d,%d",a[0],a[n-1]);
-	else printf("%d",a[n-1]);
+		my_printf("%d,%d",a[0],a[n-1]);
+	else my_printf("%d",a[n-1]);
 
 	return 0;
 }

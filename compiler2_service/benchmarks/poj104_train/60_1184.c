@@ -23,15 +23,15 @@ int main_bench()
 		 }
 	 }
  
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 for(i=0;sushu[i+1]<=n;i++){
 		if(sushu[i+1]-sushu[i]==2){
-			printf("%d %d\n",sushu[i],sushu[i+1]);
+			my_printf("%d %d\n",sushu[i],sushu[i+1]);
             m=1;
 		}
 	}
 	 if(m==0){
-		 printf("empty");
+		 my_printf("empty");
 	 }
 return 0;
 }

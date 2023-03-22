@@ -2,28 +2,28 @@
 
 int main_bench()
 {int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i;
 int k=0,m=0;
 char s[45];
 int len;
 for(i=0;i<n;i++)
 {
-	scanf("%s",s);
+	my_scanf("%s",s);
 	len=strlen(s);
 	k=k+len;
 	m++;
 	if(m==1)
-	{printf("%s",s);}
+	{my_printf("%s",s);}
 	else
 	{
 	if((k+m-1)<=80)
-	{ printf(" ");
-	printf("%s",s);
+	{ my_printf(" ");
+	my_printf("%s",s);
 	}
 	else
-	{printf("\n");
-	printf("%s",s);
+	{my_printf("\n");
+	my_printf("%s",s);
 	k=len;
 	m=1;}
 	}

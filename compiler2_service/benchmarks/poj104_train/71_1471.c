@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,j,y[200],m1[200],m2[200],d;
 	int d1[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
 	int d2[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
+		my_scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
 	}
 	for(i=0;i<n;i++){
 		d=0;
@@ -35,8 +35,8 @@ int main_bench()
 				}
 			}
 		}
-        if(d%7==0)  printf("YES\n");
-		else  printf("NO\n");
+        if(d%7==0)  my_printf("YES\n");
+		else  my_printf("NO\n");
         }
      return 0;
 }

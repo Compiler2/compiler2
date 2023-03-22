@@ -4,8 +4,8 @@ char s[100],a[100],b[100],c[100],d[100];
 int main_bench()
 {
 	gets(s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i,p,ch=0;
 	int k;
 	for(k=0;s[k]!='\0';k++)
@@ -26,7 +26,7 @@ int main_bench()
 	}
 	if(ch==0)
 	{
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	else
 	{
@@ -45,7 +45,7 @@ int main_bench()
 	
 	
 	
-		printf("%s\n",d);
+		my_printf("%s\n",d);
 	}
 
 	return 0;

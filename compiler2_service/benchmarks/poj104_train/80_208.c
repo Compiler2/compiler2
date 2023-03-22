@@ -5,8 +5,8 @@ int main_bench()
 	int sy,sm,sd,ey,em,ed,i,days,x,y;
 	int a[13];
 	days=x=y=0;
-	scanf("%d%d%d",&sy,&sm,&sd);
-	scanf("%d%d%d",&ey,&em,&ed);
+	my_scanf("%d%d%d",&sy,&sm,&sd);
+	my_scanf("%d%d%d",&ey,&em,&ed);
 	a[1]=a[3]=a[5]=a[7]=a[8]=a[10]=a[12]=31;
 	a[4]=a[6]=a[9]=a[11]=30;
     if ((sy % 4 == 0 && sy % 100 != 0) || (sy % 400 == 0))
@@ -28,5 +28,5 @@ int main_bench()
 		else days+=365;
 	}
 	days=days+y-x;
-	printf("%d",days);
+	my_printf("%d",days);
 }

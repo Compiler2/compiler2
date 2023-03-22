@@ -8,9 +8,9 @@ main_bench()
 	gets(str1);
 	gets(str2);
 	k=compare(str1,str2);
-	if(k==0) printf("=\n");
-	else if(k==1) printf(">\n");
-	else if(k==-1) printf("<\n");
+	if(k==0) my_printf("=\n");
+	else if(k==1) my_printf(">\n");
+	else if(k==-1) my_printf("<\n");
 }
 int compare(char str1[80],char str2[80])
 {

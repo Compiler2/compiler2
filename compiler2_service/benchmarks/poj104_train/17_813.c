@@ -5,12 +5,12 @@ int main_bench()
 	void kuo(char c[]);
 	void pipei(char c[],char a[]);
 	int n,i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		char c[200]={'\0'},a[200]={'\0'};
 		gets(c);
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 		kuo(c);
 		pipei(c,a);
 	}
@@ -29,7 +29,7 @@ void pipei(char c[],char a[])
 			*q='$';
 	}
 	*q=*p;
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 }
 void kuo(char c[])
 {

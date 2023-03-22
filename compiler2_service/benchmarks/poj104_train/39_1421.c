@@ -13,11 +13,11 @@ int main_bench()
 	long totle=0;
 	info str[100];
 
-	scanf("%d",&count);
+	my_scanf("%d",&count);
 
 	for(i=0;i<count;i++)
 	{
-		scanf("%s %d %d %c %c %d",str[i].name,&str[i].a,&str[i].b,&str[i].sit1,&str[i].sit2,&str[i].num);
+		my_scanf("%s %d %d %c %c %d",str[i].name,&str[i].a,&str[i].b,&str[i].sit1,&str[i].sit2,&str[i].num);
 		str[i].totle=0;
 
 		if(str[i].a>80&&str[i].num!=0)
@@ -44,7 +44,7 @@ int main_bench()
 			k=i;
 		}
 	}
-	printf("%s\n%d\n%ld\n",str[k].name,str[k].totle,totle);
+	my_printf("%s\n%d\n%ld\n",str[k].name,str[k].totle,totle);
 }
 		
 

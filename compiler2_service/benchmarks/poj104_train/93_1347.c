@@ -5,7 +5,7 @@ int main_bench()
 	int a,m;
 	m=0;
 	
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	
 	
    if(a%3==0)
@@ -18,21 +18,21 @@ int main_bench()
    
    m=m+100;
    if(m==0)
-	printf("n");
+	my_printf("n");
    if(m==1)
-   printf("3");
+   my_printf("3");
    if(m==10)
-	   printf("5");
+	   my_printf("5");
    if(m==100)
-   printf("7");
+   my_printf("7");
    if(m==11)
-   printf("3 5");
+   my_printf("3 5");
    if(m==101)
-   printf("3 7");
+   my_printf("3 7");
    if(m==110)
-   printf("5 7");
+   my_printf("5 7");
    if(m==111)
-	   printf("3 5 7");
+	   my_printf("3 5 7");
 
    return 0;
 }

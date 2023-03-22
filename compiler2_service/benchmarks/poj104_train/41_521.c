@@ -45,7 +45,7 @@ int main_bench()
                                                                                                                                                                                
     }
     if((s==2)&&(a!=b)&&(a!=c)&&(a!=d)&&(a!=e)&&(b!=c)&&(b!=d)&&(b!=e)&&(c!=d)&&(c!=e)&&(d!=e))                                                                                                                                                                                                                 ;else{a=5;b=2;c=1;d=3;e=4;}        
-                             printf("%d %d %d %d %d\n",a,b,c,d,e);
+                             my_printf("%d %d %d %d %d\n",a,b,c,d,e);
                             
  
 getchar();

@@ -4,18 +4,18 @@ int main_bench()
 {
 	int n,i,flag=0,flag1=0,j;
 	char a[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(j=1;j<=n;j++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		if((a[0]==95) || (a[0]>=65 && a[0]<=90) || (a[0]>=97 && a[0]<=122))
 		{
 			flag=1;
 		}
 	    else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 
 		if(flag==1)
@@ -28,14 +28,14 @@ int main_bench()
 				}
 				else
 				{
-					printf("no\n");
+					my_printf("no\n");
 					flag1=2;
 					break;
 				}
 			}
 			if(flag1==1)
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}		
 		}
 		memset(a,'0',sizeof(a));

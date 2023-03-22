@@ -19,15 +19,15 @@ int main_bench(){
 	for(i=0;i<99;i++){
 		result[i]=shulie[i+1]*1.0/shulie[i];
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&xiangshu);
+		my_scanf("%d",&xiangshu);
 		for(j=0;j<xiangshu;j++){
 			sum[i]+=result[j];
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	return 0;
 }

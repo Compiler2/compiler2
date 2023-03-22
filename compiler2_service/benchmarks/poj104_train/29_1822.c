@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,m,i,j;
 	double a,b,e[3000],sum,num;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		e[1]=1;
 		e[2]=2;
 		num=e[2]/e[1];
@@ -16,7 +16,7 @@ int main_bench()
 			e[j]=e[j-1]+e[j-2];
 			num+=e[j]/e[j-1];
 		}
-		printf("%.3lf\n",num);
+		my_printf("%.3lf\n",num);
 	}
 	return 0;
 }

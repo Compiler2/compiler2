@@ -5,7 +5,7 @@ int main_bench()
 {
     int i,a,n,num=1;
     char str[1001];
-    scanf("%s",str);
+    my_scanf("%s",str);
     n=strlen(str);
 
     
@@ -22,7 +22,7 @@ int main_bench()
             num++;
             else
             {
-            printf("(%c,%d)",str[i],num);
+            my_printf("(%c,%d)",str[i],num);
             num=1;
             }
             

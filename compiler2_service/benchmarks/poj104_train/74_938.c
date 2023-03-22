@@ -4,7 +4,7 @@ int main_bench()
 {int m,n,a,b,c,i;
 int sushu(int x);
 int huiwen(int y);
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 for(i=m;i<=n;i++)
 {
 	a=sushu(i);
@@ -14,7 +14,7 @@ for(i=m;i<=n;i++)
 		if(b==1)
 		{
 			m=i;
-			printf("%d",i);
+			my_printf("%d",i);
 			c=1;
 			break;
 		}
@@ -23,7 +23,7 @@ for(i=m;i<=n;i++)
 	}
 }
 if(c==0)
-printf("no");
+my_printf("no");
 else
 {
 	for(i=m+1;i<=n;i++)
@@ -33,7 +33,7 @@ else
 		{
 			b=huiwen(i);
 			if(b==1)
-				printf(",%d",i);
+				my_printf(",%d",i);
 		}
 	}
 }

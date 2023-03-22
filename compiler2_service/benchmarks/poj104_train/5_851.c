@@ -5,7 +5,7 @@ int main_bench(){
     int i;
     double a,b=0,l,m,c=0;
     char x[1000],y[1000];
-    scanf("%lf %s %s",&a,&x,&y);
+    my_scanf("%lf %s %s",&a,&x,&y);
     l=strlen(x);
     m=strlen(y);
     for(i=0;i<l;i++){
@@ -31,14 +31,14 @@ int main_bench(){
             }
         }
         if(a<(b/l)){
-            printf("yes");
+            my_printf("yes");
         }
         else{
-            printf("no");
+            my_printf("no");
         }
     }
     else{
-        printf("error");
+        my_printf("error");
     }
     return 0;
 }

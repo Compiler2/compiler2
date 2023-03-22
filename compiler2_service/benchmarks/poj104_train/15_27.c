@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int i,j;
 	int t,t1,t2;
@@ -14,7 +14,7 @@ int main_bench()
 		for(j=0;j<n;j++)
 		{
 			a[0]=255;
-			scanf("%d",&a[j+1]);
+			my_scanf("%d",&a[j+1]);
 			if(a[j]==0 && a[j-1]==255)
 			{
 
@@ -28,6 +28,6 @@ int main_bench()
 
 		}
 	}
-	printf("%d",(t2-t1-1)*(t2-t1-1));
+	my_printf("%d",(t2-t1-1)*(t2-t1-1));
 	return 0;
 }

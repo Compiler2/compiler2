@@ -21,11 +21,11 @@ for(i=0;i<len2;i++)
 	 {s2[i]=s2[i]+32;}
  }
 if(strcmp(s1,s2)<0)
-{printf("<");}
+{my_printf("<");}
 if(strcmp(s1,s2)==0)
-{printf("=");}
+{my_printf("=");}
 if(strcmp(s1,s2)>0)
-{printf(">");}
+{my_printf(">");}
 return 0;
 }
 

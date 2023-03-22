@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int nian,yue,ri;
-	scanf("%d%d%d",&nian,&yue,&ri);
+	my_scanf("%d%d%d",&nian,&yue,&ri);
 	int d;
 	int i,sum=0,ytian;
 	for(i=1;i<yue;i++)
@@ -31,13 +31,13 @@ int main_bench()
 	}
     sum=sum+ri;
 	d =((nian-1)+(nian-1)/4-(nian-1)/100+(nian-1)/400+sum)%7;
-	if(d==1)printf("Mon.");
-	if(d==2)printf("Tue.");
-	if(d==3)printf("Wed.");
-	if(d==4)printf("Thu.");
-	if(d==5)printf("Fri.");
-	if(d==6)printf("Sat.");
-	if(d==0)printf("Sun.");
+	if(d==1)my_printf("Mon.");
+	if(d==2)my_printf("Tue.");
+	if(d==3)my_printf("Wed.");
+	if(d==4)my_printf("Thu.");
+	if(d==5)my_printf("Fri.");
+	if(d==6)my_printf("Sat.");
+	if(d==0)my_printf("Sun.");
 	return 0;
 }
 

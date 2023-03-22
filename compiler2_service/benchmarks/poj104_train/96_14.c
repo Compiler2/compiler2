@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],b[100];
 	int n,j=0,temp,yu,num=0;
-           scanf("%s",a);
+           my_scanf("%s",a);
 	n=strlen(a);
 	for(int i=1;i<n;i++)
 	{
@@ -20,8 +20,8 @@ int main_bench()
 	}
 	if(n==1)
 	{
-		printf("0\n");
-		printf("%d",(a[0]-'0')%13);
+		my_printf("0\n");
+		my_printf("%d",(a[0]-'0')%13);
 	}
 	else
 	{
@@ -34,10 +34,10 @@ int main_bench()
 	}
 	for(int i=num;i<j;i++)
 	{
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
          } 
-	printf("\n");
-	printf("%d",yu);
+	my_printf("\n");
+	my_printf("%d",yu);
 	}
 
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int z=0;
 	int year1,month1,day1,year2,month2,day2;
 	int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};                       
-	scanf("%d %d %d %d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf("%d %d %d %d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);
 	y=year2-year1;
     if(y==0)                                                                     
 	{
@@ -77,7 +77,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",the_number);
+	my_printf("%d\n",the_number);
 	return 0;
 }
 

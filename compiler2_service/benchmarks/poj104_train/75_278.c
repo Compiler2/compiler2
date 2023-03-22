@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int a[2000],b[2000],i,j,n,m,k,p;
-	scanf("%d",&a[1]);
+	my_scanf("%d",&a[1]);
 	i=2;
-	while(scanf(",%d",&a[i]))
+	while(my_scanf(",%d",&a[i]))
 		i++;
-	scanf("%d",&b[1]);
+	my_scanf("%d",&b[1]);
 	j=2;
-	while(scanf(",%d",&b[j]))
+	while(my_scanf(",%d",&b[j]))
 		j++;
 	j--;
-	printf("%d ",j);
+	my_printf("%d ",j);
 	n=0;
 	for(i=1;i<=j;i++)
 		if(b[i]>n)
@@ -27,5 +27,5 @@ int main_bench()
 		if(p>m)
 			m=p;
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 }

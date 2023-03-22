@@ -4,9 +4,9 @@ int main_bench()
 {
 	char s1[256]={'\0'},s2[256]={'\0'},s3[256]={'\0'},t[256]={'\0'};
 	int i,j,k=0,s,l1,l2,l3;
-	scanf("%s",s1);
-	scanf("%s",s2);
-	scanf("%s",s3);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
+	my_scanf("%s",s3);
 	l1=strlen(s1);
 	l2=strlen(s2);
 	l3=strlen(s3);
@@ -41,6 +41,6 @@ int main_bench()
 		k++;
 	}
 	t[k] = '\0';	
-	printf("%s", t);
+	my_printf("%s", t);
     return 0;
 }

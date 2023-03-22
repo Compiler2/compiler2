@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,k,m,n,qj[60000]={0},p=0,q=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=1;i<=k;i++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(j=(2*m-1);j<=(2*n-1);j++)
 		{
 			qj[j]=1;
@@ -20,7 +20,7 @@ int main_bench()
 			{
 				if(qj[j]==0&&qj[j+1]==1)
 				{
-					printf("no");
+					my_printf("no");
 					return 0;
 				}
 			}
@@ -37,6 +37,6 @@ int main_bench()
 			q=(i+1)/2;
 		}
 	}
-	printf("%d %d",p,q);
+	my_printf("%d %d",p,q);
 	return 0;
 }

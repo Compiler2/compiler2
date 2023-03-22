@@ -3,12 +3,12 @@
 int main_bench(){
 int a[400];
 int i,j,n,m,s,p,q;
-scanf("%d",&n);
+my_scanf("%d",&n);
 m=2*n;
 p=n/2;
 for(i=0;i<m;i++)
 {
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 }
 s=0;
 q=0;
@@ -28,10 +28,10 @@ for(j=0;j<m;j=j+2)
    q=q+1;
 }
  if (s==q)
- printf("Tie");
+ my_printf("Tie");
  else if(s>q)
- printf("A");
+ my_printf("A");
  else if(s<q)
- printf("B");
+ my_printf("B");
 return 0;
 }

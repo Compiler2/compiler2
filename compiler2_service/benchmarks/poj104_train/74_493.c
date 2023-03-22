@@ -6,20 +6,20 @@ int sushu(int x);
 int circle(int y);
 int i,j,k,n,m,t;
 int a[1000]={0};
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 for(i=n,j=0;i<=m;i++)
   if(sushu(i)==0&&circle(i)==0)
 	  {a[j]=i;
 	  j++;}
   if(j==0)
-	  printf("no");
+	  my_printf("no");
   else {
 for(t=0,k=0;t<=j;t++)
  if(a[t]!=0&&a[t]!='\0')
-	{ printf("%d",a[t]);
+	{ my_printf("%d",a[t]);
        k++;
       if(k<j)
-		  printf(",");}
+		  my_printf(",");}
 }
 }
 

@@ -2,9 +2,9 @@
 
 int main_bench()
 {int a[300]={0},i,j,b,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
-scanf("%d",&a[i-1]);
+my_scanf("%d",&a[i-1]);
 
 
 for(i=1;i<=n;i++)
@@ -20,10 +20,10 @@ continue;
 for(i=0,b=0;i<=n-1;i++)
 {
                    if(a[i]!=0&&b==0)
-                   {printf("%d",a[i]);
+                   {my_printf("%d",a[i]);
                    b=1;continue;}
                     if(a[i]!=0&&b!=0)
-                    printf(",%d",a[i]);
+                    my_printf(",%d",a[i]);
                     }
                                         
 

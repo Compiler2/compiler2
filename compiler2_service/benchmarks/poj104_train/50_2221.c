@@ -10,10 +10,10 @@ int main_bench()
     {b[i]=b[i-1]+a[i-1];
         }
 int s;
-    scanf ("%d",&s);
+    my_scanf ("%d",&s);
     for (int i=0;i<12;i++)
     {  if ((b[i]+s-1)%7==5)
-        printf ("%d\n",i+1);
+        my_printf ("%d\n",i+1);
         
         }
         

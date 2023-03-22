@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,Z[1000],x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 for (x=1;x<=n;x++)
-scanf("%d",&Z[x]);
+my_scanf("%d",&Z[x]);
 for (x=1;x<n;x++)
 {
 	if (Z[x]<Z[x+1])
@@ -29,7 +29,7 @@ for (x=1;x<n-1;x++)
 	}
 
 }
-printf("%d\n%d\n",Z[n],Z[n-1]);
+my_printf("%d\n%d\n",Z[n],Z[n-1]);
 return 0;
 }
 

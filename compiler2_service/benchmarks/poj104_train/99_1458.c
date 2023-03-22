@@ -5,10 +5,10 @@ int main_bench()
 	int n,i;
 	double a[100];
 	double sum1=0,sum2=0,sum3=0,sum4=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 
 	}
 	for(i=0;i<n;i++)
@@ -30,10 +30,10 @@ int main_bench()
 			sum4=sum4+1;
 		}
 	}
-	printf("1-18: %.2lf%\n",sum1/n*100);
-	printf("19-35: %.2lf%\n",sum2/n*100);
-	printf("36-60: %.2lf%\n",sum3/n*100);
-	printf("60??: %.2lf%\n",sum4/n*100);
+	my_printf("1-18: %.2lf%\n",sum1/n*100);
+	my_printf("19-35: %.2lf%\n",sum2/n*100);
+	my_printf("36-60: %.2lf%\n",sum3/n*100);
+	my_printf("60??: %.2lf%\n",sum4/n*100);
 
 
 

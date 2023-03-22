@@ -4,7 +4,7 @@ int main_bench(){
 	int i,j,k,l,count,mid,judge,re[110];
 	char num[110],fra[110];
 	count=-1;
-	scanf("%s",num);
+	my_scanf("%s",num);
 	l=strlen(num);
 	for(i=0;i<l;i++){
 		fra[i]=num[i];
@@ -26,19 +26,19 @@ int main_bench(){
 		if(re[i]==10000&&i==0){
 			continue;
 		}
-		printf("%d",re[i]);
+		my_printf("%d",re[i]);
 	}
 	if(l<2){
 		judge=0;
 	}
 	if(l>2||(l==2&&judge>12)){
-		printf("\n%d",fra[l-1]-'0');
+		my_printf("\n%d",fra[l-1]-'0');
 	}else if(l==1||(l==2&&judge<13)){
-		printf("0\n");
+		my_printf("0\n");
 		if(l==1){
-			printf("%c",num[0]);
+			my_printf("%c",num[0]);
 		}else if(l==2){
-			printf("%d",judge);
+			my_printf("%d",judge);
 		}
 	}
 	return 0;

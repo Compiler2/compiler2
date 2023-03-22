@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,k,i,j,sum,leap=0;
     int a[10001];
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -21,7 +21,7 @@ int main_bench()
               sum=a[i]+a[j];
               if(sum==k)
                {
-                   printf("yes");
+                   my_printf("yes");
                    leap=1;
                    break;
                }
@@ -32,7 +32,7 @@ int main_bench()
 
     }
     if(leap==0)
-    printf("no");
+    my_printf("no");
     return 0;
 }
 

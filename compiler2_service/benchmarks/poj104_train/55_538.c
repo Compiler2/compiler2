@@ -5,7 +5,7 @@ int main_bench()
 	char a[100];
 	int i,m,n,p[100],t[100],q;
 	long int num=0;
-	scanf("%d %s %d",&m,a,&n);
+	my_scanf("%d %s %d",&m,a,&n);
 	q=strlen(a);
 	for(i=0;i<q;i++)
 	{
@@ -28,7 +28,7 @@ int main_bench()
 			p[i]=t[i]+'0';
 		else if(t[i]>=10&&t[i]<26)	
 			p[i]=t[i]+'A'-10;
-		printf("%c",p[i]);
+		my_printf("%c",p[i]);
 	}
 	return 0;
 }

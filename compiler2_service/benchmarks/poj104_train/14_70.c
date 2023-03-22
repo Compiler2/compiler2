@@ -10,10 +10,10 @@ struct student stu[100000];
 int main_bench()
 {
 	int n,i,first=0,second=0,third=0,a[100000];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].number,&stu[i].score1,&stu[i].score2);
+		my_scanf("%d %d %d",&stu[i].number,&stu[i].score1,&stu[i].score2);
 		a[i]=stu[i].score1+stu[i].score2;
 	}
 	for(i=0;i<n-1;i++)
@@ -34,6 +34,6 @@ int main_bench()
 			third=i;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",stu[first].number,a[first],stu[second].number,a[second],stu[third].number,a[third]);
+	my_printf("%d %d\n%d %d\n%d %d\n",stu[first].number,a[first],stu[second].number,a[second],stu[third].number,a[third]);
 	return(0);
 }

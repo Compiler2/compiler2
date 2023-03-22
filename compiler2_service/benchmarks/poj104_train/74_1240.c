@@ -13,7 +13,7 @@ int sorthuiwen(int i)
 {
     int k=0,j=1,shi=1;
     int a[100];
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     while(i/j!=0)
     {
         k++;j=j*10;
@@ -37,8 +37,8 @@ int sorthuiwen(int i)
 main_bench()
 {
     int m,n,j=0,a[10000],b[10000],i;
-    scanf("%d",&m); 
-    scanf("%d",&n);
+    my_scanf("%d",&m); 
+    my_scanf("%d",&n);
     for(i=m;i<=n;i++)
     {
         if(sortprime(i)==1&&sorthuiwen(i)==1&&i!=10201)
@@ -48,13 +48,13 @@ main_bench()
             }
     }
     if(j==0)
-        printf("no");
+        my_printf("no");
     else
         {
             for(i=0;i<j-1;i++)
-                printf("%d,",b[i]);
+                my_printf("%d,",b[i]);
             if(i==j-1)
-                printf("%d",b[i]);
+                my_printf("%d",b[i]);
         }
         getchar();
         getchar();

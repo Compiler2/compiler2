@@ -7,7 +7,7 @@ int n1,n2;
 int a[1000];
 unsigned long int sum=0,t=1;
 char s[500];
-scanf("%d %s %d",&n1,s,&n2);
+my_scanf("%d %s %d",&n1,s,&n2);
 n=strlen(s);
 for(i=n-1;i>=0;i--)
 {
@@ -22,7 +22,7 @@ for(i=n-1;i>=0;i--)
                    break;
                    t=t*n1;                   }
 if(sum==0)
-printf("0");
+my_printf("0");
 else{
 i=0;
 while(sum!=0)
@@ -36,8 +36,8 @@ i=i-1;
 for(j=i;j>=0;j--)
 {
                  if(a[j]>=10)
-                 printf("%c",a[j]+'A'-10);
+                 my_printf("%c",a[j]+'A'-10);
                  else
-                 printf("%d",a[j]);
+                 my_printf("%d",a[j]);
                  }}
 }

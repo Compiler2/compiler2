@@ -13,17 +13,17 @@ void sum(int n) {
 		top+=front;
 		front=temp;
 	}
-	printf("%.3lf\n",sum);
+	my_printf("%.3lf\n",sum);
 }
 
 int main_bench()
 {
 	int m, n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i;
 
 	for (i=0; i<m; i++) {
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		sum(n);
 	}
 	return 0;

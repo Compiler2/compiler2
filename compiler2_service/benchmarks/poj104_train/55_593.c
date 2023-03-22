@@ -13,7 +13,7 @@ int main_bench()
 {
 	int a,b,i,j,length;
 	char shu[100],zhuanhuan[100];
-	scanf("%d %s %d",&a,shu,&b);
+	my_scanf("%d %s %d",&a,shu,&b);
 	long int k=0;
 	length=strlen(shu);
 	long int l;
@@ -60,6 +60,6 @@ int main_bench()
 		f=f/b;
 	}while(f!=0);
 	for (i=m-1;i>=0;i--)
-		printf("%c",zhuanhuan[i]);
-	printf("\n");
+		my_printf("%c",zhuanhuan[i]);
+	my_printf("\n");
 }

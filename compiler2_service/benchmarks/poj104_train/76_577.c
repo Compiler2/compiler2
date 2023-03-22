@@ -2,9 +2,9 @@
 
 int main_bench(){
     int sz[100000],n,i,a,b,k,s,m;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
   for(i=0;i<n*2;){
-      scanf("%d%d",&sz[i],&sz[i+1]);
+      my_scanf("%d%d",&sz[i],&sz[i+1]);
       i+=2;
        }
        int sz2[100000];
@@ -28,9 +28,9 @@ int main_bench(){
            }
        }
        if(a==b){
-           printf("%d %d",sz[0],sz[2*n-1]);
+           my_printf("%d %d",sz[0],sz[2*n-1]);
        }else{
-           printf("no");
+           my_printf("no");
        }
        return 0;
 }

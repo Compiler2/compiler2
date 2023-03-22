@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n!=1){
 	 for(;;){
 		if(n%2==0){
 			p=n/2;
-			printf("%d/2=%d\n",n,p);
+			my_printf("%d/2=%d\n",n,p);
 			n=p;
 			if(n==1){
 				break;
@@ -15,7 +15,7 @@ int main_bench(){
 		}
 		else{
 			p=n*3+1;
-			printf("%d*3+1=%d\n",n,p);
+			my_printf("%d*3+1=%d\n",n,p);
 			n=p;
 			if(n==1){
 				break;
@@ -23,6 +23,6 @@ int main_bench(){
 		}
 	 }
 	}
-		printf("End");
+		my_printf("End");
 		return 0;
 	}	

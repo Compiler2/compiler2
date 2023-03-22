@@ -5,7 +5,7 @@ int main_bench()
     int t,i,a[5][5],s[5][3],l[5][3],c,r,w;
 	for(t=0;t<5;t++){
 		for(i=0;i<5;i++){
-			scanf("%d",&a[t][i]);
+			my_scanf("%d",&a[t][i]);
 		}
 	}
 	for(c=0;c<5;c++){
@@ -36,12 +36,12 @@ int main_bench()
 		for(i=0;i<5;i++){
 			if(l[t][0]==s[i][0]){
 				w++;
-				printf("%d %d %d\n",s[i][1]+1,s[i][2]+1,s[i][0]);
+				my_printf("%d %d %d\n",s[i][1]+1,s[i][2]+1,s[i][0]);
 			}
 		}
 	}
 	if(w==0){
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

@@ -6,8 +6,8 @@ int main_bench()
 	int t,m;
 	char s[501],str[500][5];
 	int a[500];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	t=strlen(s);
 	memset(str,'\0',sizeof(str));
 	for(i=0;i<=t-n;i++)
@@ -37,15 +37,15 @@ int main_bench()
 	}
 	if(m<2)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	else
 	{
-	    printf("%d\n",m);
+	    my_printf("%d\n",m);
         for(i=0;i<=t-n;i++)
 	    	if(a[i]==m)
-			    printf("%s\n",str[i]);
+			    my_printf("%s\n",str[i]);
 	}
 	return 0;
 }

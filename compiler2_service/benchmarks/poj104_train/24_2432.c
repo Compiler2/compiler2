@@ -40,9 +40,9 @@ int main_bench()
     N=max(b,n);
     M=min(b,n);
     for(i=0;i<n;i++)
-    if(b[i]==N) {printf("%s\n",c[i]);break;}
+    if(b[i]==N) {my_printf("%s\n",c[i]);break;}
     for(i=0;i<n;i++)
-    if(b[i]==M) {printf("%s\n",c[i]);break;}
+    if(b[i]==M) {my_printf("%s\n",c[i]);break;}
 	return 0;
 	
 }

@@ -5,9 +5,9 @@ int main_bench(){
 	int i,q=0;
 	char dna1[501];
 	char dna2[501];
-	scanf("%lf",&a);
-	scanf("%s",dna1);
-	scanf("%s",dna2);
+	my_scanf("%lf",&a);
+	my_scanf("%s",dna1);
+	my_scanf("%s",dna2);
 	m=strlen(dna1);
 	n=strlen(dna2);
 	if(m==n){
@@ -32,11 +32,11 @@ int main_bench(){
 			q=1;
 	}
 	if((t>=a&&a!=0&&q==0)||(q==0&&t>a&&a==0)){
-		printf("yes");
+		my_printf("yes");
 	}else if((t<a)&&(a!=0)&&(q==0)||((q==0)&&(t==0)&&(a==0))){
-		printf("no");
+		my_printf("no");
 	}else if(q==1){
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

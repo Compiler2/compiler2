@@ -15,9 +15,9 @@ int main_bench() {
 	int max_0 = 0, max_1 = 0, max_2 = 0;
 	int max_0_id, max_1_id, max_2_id;
 
-	scanf("%d", &num);
+	my_scanf("%d", &num);
 	for (i = 0; i < num; ++i) {
-		scanf("%d %d %d", &(stu[i].id), &(stu[i].chinese), &(stu[i].math));
+		my_scanf("%d %d %d", &(stu[i].id), &(stu[i].chinese), &(stu[i].math));
 		stu[i].total = stu[i].chinese + stu[i].math;
 		if (stu[i].total > max_0) {
 			
@@ -41,9 +41,9 @@ int main_bench() {
 		}
 	}
 
-	printf("%d %d\n", max_0_id, max_0);
-	printf("%d %d\n", max_1_id, max_1);
-	printf("%d %d\n", max_2_id, max_2);
+	my_printf("%d %d\n", max_0_id, max_0);
+	my_printf("%d %d\n", max_1_id, max_1);
+	my_printf("%d %d\n", max_2_id, max_2);
 
 	return 0;
 }

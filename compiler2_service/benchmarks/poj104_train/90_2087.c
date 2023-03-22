@@ -6,7 +6,7 @@ int main_bench()
 	int i,j;
 	int t;
 	int m,n;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=1;i<=100;i++)
 	    dp[i][1]=1;
 	for(j=2;j<=10;j++)
@@ -23,8 +23,8 @@ int main_bench()
 	}
 	while(t--)
 	{
-		scanf("%d%d",&m,&n);
-		printf("%d\n",dp[m][n]);
+		my_scanf("%d%d",&m,&n);
+		my_printf("%d\n",dp[m][n]);
 	}
 	return 0;
 } 

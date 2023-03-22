@@ -26,6 +26,6 @@ int main_bench()
 			strcpy(in,word[e]);
 		}
 	}
-	printf("%s\n%s\n", ax, in);
+	my_printf("%s\n%s\n", ax, in);
 	return 0;
 }

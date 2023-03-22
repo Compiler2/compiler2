@@ -10,13 +10,13 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-scanf("%d",&s[i][j]);
+my_scanf("%d",&s[i][j]);
 		}
 	}
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 
 	if(jis(n, m, s[5][5])==0)
-     printf("error");
+     my_printf("error");
 	if(jis(n, m, s[5][5])==1)
 	{
 		
@@ -31,7 +31,7 @@ scanf("%d %d",&n,&m);
 	{
 		
 		
-     printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
+     my_printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
 		}
 
 	}

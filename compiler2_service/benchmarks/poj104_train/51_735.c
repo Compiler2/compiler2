@@ -6,7 +6,7 @@ int main_bench()
 	int n,len,max=1,cnt,num,sofar=1;
 	char tmp,c[501],gram[5],maxc[250][5];
 	int i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gram[n]='\0';
 	tmp=getchar();
 	gets(c);
@@ -30,14 +30,14 @@ int main_bench()
 		if (cnt>max) {max=cnt;strcpy(maxc[0],gram);sofar=1;}
 		else if (cnt==max) {sofar++;strcpy(maxc[sofar-1],gram);}
 	}		
-	if (max==1) printf("NO\n");
+	if (max==1) my_printf("NO\n");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for (j=0;j<sofar;j++)
 		{
-			for (k=0;k<n;k++) printf("%c",maxc[j][k]);	
-			printf("\n");
+			for (k=0;k<n;k++) my_printf("%c",maxc[j][k]);	
+			my_printf("\n");
 		}
 	}
 		

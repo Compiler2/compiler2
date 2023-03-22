@@ -29,22 +29,22 @@ int g(int x)
 main_bench()
 {
       int i,m,n,t=0;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=m;i<=n;i++)
       {
       if(f(i)==1 && g(i)==1)
       {
       if(t==0)
       {
-      printf("%d",i);
+      my_printf("%d",i);
       t++;
       }
       else
-      printf(",%d",i);
+      my_printf(",%d",i);
       }
       }
       if(t==0)
-      printf("no");
+      my_printf("no");
       getchar();
       getchar();
       }

@@ -3,20 +3,20 @@
 int main_bench(){
 	int x,y,a,n,result,i;
 	double sz[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		sz[i]=1.0*y/x;
 	}
 	for(i=1;i<n;i++){
 		if(20*(sz[i]-sz[0])<-1){
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else if(20*(sz[i]-sz[0])>1){
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	

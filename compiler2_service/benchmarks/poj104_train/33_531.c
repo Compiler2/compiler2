@@ -4,10 +4,10 @@ int main_bench()
 {
   int i,j,n;
   char s[1111],d;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(j=0;j<n;j++)
   {
-    scanf("%s",s);
+    my_scanf("%s",s);
     for(i=0;s[i]!='\0';i++)
     {
       if(s[i]=='A')
@@ -28,7 +28,7 @@ int main_bench()
       }
       s[i]=d;
     }
-    printf("%s\n",s);
+    my_printf("%s\n",s);
   }
   return 0;
 }

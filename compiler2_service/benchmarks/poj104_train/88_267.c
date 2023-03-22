@@ -9,9 +9,9 @@ int main_bench()
 	len=strlen(str);
 	for(i=0;i<=len-1;i++){
 		if(str[i]>=48&&str[i]<=57){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		}else if(i>0&&str[i-1]>=48&&str[i-1]<=57){
-			printf("\n");
+			my_printf("\n");
 	        num+=1;
 		}
 		

@@ -3,9 +3,9 @@
 int main_bench(){
 	char a[500],b[500];
 	double x;
-	scanf("%lf",&x);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&x);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int m,i,same=0;
 	m=strlen(a);
 	for(i=0;i<m;i++){
@@ -18,11 +18,11 @@ int main_bench(){
     double y;
 	y=(double)same/m;
 	if(y>x&&same!=-1){
-		printf("yes");
+		my_printf("yes");
 	}else if(y<=x&&same!=-1){
-		printf("no");
+		my_printf("no");
 	}else if(same=-1){
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

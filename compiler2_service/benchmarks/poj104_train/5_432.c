@@ -3,7 +3,7 @@
 int main_bench()
 {
 double a,b,s,g;
-scanf("%lf\n",&a);
+my_scanf("%lf\n",&a);
 char nm[501];
 char qw[501];
 gets(nm);
@@ -28,17 +28,17 @@ if(nm[h]==qw[h]){
 		  }
 }
 if(c==0||e!=0){
-	printf("error");
+	my_printf("error");
 }
 if(c!=0&&e==0){
 s=k*1.0;
 g=d*1.0;
 b=s/g;
 if(b>=a){
-printf("yes");
+my_printf("yes");
 }
 if(b<a){
-printf("no");
+my_printf("no");
 }
 }
 }

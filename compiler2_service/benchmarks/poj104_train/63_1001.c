@@ -4,17 +4,17 @@ main_bench()
 {
       int x,y,z,i,j,k;
       int a[100][100]={0},b[100][100]={0},c[100][100]={0};
-      scanf("%d %d",&x,&y);
+      my_scanf("%d %d",&x,&y);
       for(i=0;i<x;i++)
       {
          for(j=0;j<y;j++)
-         scanf("%d",&a[i][j]);
+         my_scanf("%d",&a[i][j]);
       }
-      scanf("%d %d",&y,&z);
+      my_scanf("%d %d",&y,&z);
       for(i=0;i<y;i++)
       {
          for(j=0;j<z;j++)
-         scanf("%d",&b[i][j]);
+         my_scanf("%d",&b[i][j]);
       }
       for(i=0;i<x;i++)
          for(j=0;j<z;j++)
@@ -22,10 +22,10 @@ main_bench()
               c[i][j]+=a[i][k]*b[k][j];
       for(i=0;i<x;i++)
       {
-         printf("%d",c[i][0]);             
+         my_printf("%d",c[i][0]);             
          for(j=1;j<z;j++)
-         printf(" %d",c[i][j]);
-         printf("\n");
+         my_printf(" %d",c[i][j]);
+         my_printf("\n");
       }
       getchar();getchar();
       }

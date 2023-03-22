@@ -3,9 +3,9 @@
 int main_bench()
 { int sum(int n,int k);
 int n,k,s;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 s=sum(n,k);
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }
 int sum(int n,int k){

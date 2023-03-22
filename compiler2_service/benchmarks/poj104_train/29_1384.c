@@ -6,12 +6,12 @@ int main_bench(){
  sz[0]=2;
  sx[0]=2;
  sy[0]=1;
- scanf("%d",&m);
+ my_scanf("%d",&m);
 
  for(i=0;i<m;i++){
 
 
- scanf("%d",&n);
+ my_scanf("%d",&n);
 
 
  for(j=1;j<n;j++){
@@ -26,7 +26,7 @@ int main_bench(){
 
 
  for(i=0;i<m;i++){
- printf("%.3lf\n",s[i]);
+ my_printf("%.3lf\n",s[i]);
  }
 
 

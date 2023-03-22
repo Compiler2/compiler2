@@ -5,9 +5,9 @@ int main_bench(){
     int i;
     int a=0,b=0,c=0,d=0;
     double e,f,g,h;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
-        scanf("%d",&m);
+        my_scanf("%d",&m);
         if(m<=18){
             a++;
         }
@@ -25,14 +25,14 @@ int main_bench(){
     f=b*1.0*100/n;
     g=c*1.0*100/n;
     h=d*1.0*100/n;
-    printf("1-18: ");
-    printf("%.2lf%%\n",e);
-    printf("19-35: ");
-    printf("%.2lf%%\n",f);
-    printf("36-60: ");
-    printf("%.2lf%%\n",g);
-    printf("Over60: ");
-    printf("%.2lf%%\n",h);
+    my_printf("1-18: ");
+    my_printf("%.2lf%%\n",e);
+    my_printf("19-35: ");
+    my_printf("%.2lf%%\n",f);
+    my_printf("36-60: ");
+    my_printf("%.2lf%%\n",g);
+    my_printf("Over60: ");
+    my_printf("%.2lf%%\n",h);
     return 0;
 }
     

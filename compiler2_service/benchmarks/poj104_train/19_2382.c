@@ -13,8 +13,8 @@ int main_bench()
 	int i;
 	
 	gets(SourceStr);
-	scanf("%s",ToReplaceStr);
-	scanf("%s",Replacement);
+	my_scanf("%s",ToReplaceStr);
+	my_scanf("%s",Replacement);
 	while (SourceStr[index] != '\0')
 	{
 		while((SourceStr[index] != ' ') && (SourceStr[index] != '\0'))
@@ -39,8 +39,8 @@ int main_bench()
 	}
 	for (i = 0; i < WordIndex - 1; i++)
 	{
-		printf("%s ",Str[i]);
+		my_printf("%s ",Str[i]);
 	}
-	printf("%s", Str[WordIndex - 1]);
+	my_printf("%s", Str[WordIndex - 1]);
 	return 0;
 }

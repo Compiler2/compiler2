@@ -5,10 +5,10 @@ int main_bench()
 int num,n;
 int max,sec;
 
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(int i=0 ;i<n;i++)
   {
-	 scanf("%d",&num);
+	 my_scanf("%d",&num);
 
 	 if(i==0)
 	 {
@@ -33,6 +33,6 @@ int max,sec;
    
    
   }
-	printf("%d\n%d\n",max,sec);
+	my_printf("%d\n%d\n",max,sec);
 	return 0;
 }

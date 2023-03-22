@@ -5,7 +5,7 @@ int main_bench()
 {
 	int a, b;
 	char num[100], t[100];
-	scanf("%d%s%d", &a, num, &b);
+	my_scanf("%d%s%d", &a, num, &b);
 	long shi = 0;
 	int i;
 	for(i = 0; num[i] != '\0'; i++)
@@ -39,9 +39,9 @@ int main_bench()
 	int j;
 	for(j = i - 1; j >= 0; j--)
 	{
-		printf("%c", t[j]);
+		my_printf("%c", t[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

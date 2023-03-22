@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int N,i,g=0,n[100]={0},h,sum=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	struct student{
 		char name[20];
 		int x,y;
@@ -12,7 +12,7 @@ int main_bench()
 		int z;
 	}s[100];
 	for(i=0;i<N;i++){
-		scanf("%s %d %d %c %c %d",s[i].name,&s[i].x,&s[i].y,&s[i].p,&s[i].q,&s[i].z);
+		my_scanf("%s %d %d %c %c %d",s[i].name,&s[i].x,&s[i].y,&s[i].p,&s[i].q,&s[i].z);
 		if((s[i].x>80)&&(s[i].z>0))
 			n[i]+=8000;
 		if((s[i].x>85)&&(s[i].y>80))
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		sum += n[i];
 	}
-	printf("%s\n",s[h].name);
-	printf("%d\n",g);
-	printf("%d",sum);
+	my_printf("%s\n",s[h].name);
+	my_printf("%d\n",g);
+	my_printf("%d",sum);
 }

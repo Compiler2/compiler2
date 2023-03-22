@@ -5,9 +5,9 @@ int main_bench()
 	int f1(int,int,int);
 	int f2(int,int);
 	int y1,y2,m1,m2,d1,d2,s;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	s=f1(y2,m2,d2)-f1(y1,m1,d1)+f2(y1,y2);
-	printf("%d",s);
+	my_printf("%d",s);
 }
 int f1(int y,int m,int d)
 {

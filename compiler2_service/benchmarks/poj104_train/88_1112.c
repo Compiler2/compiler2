@@ -18,14 +18,14 @@ int main_bench()
 	{
 		if(sz(*p)==1)
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 			k=1;
 		}
 		else
 		{
 			if(k==1)
 			{
-				printf("\n");
+				my_printf("\n");
 				k=0;
 			}
 		}

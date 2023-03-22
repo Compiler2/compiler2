@@ -27,7 +27,7 @@ void reverse ( )
       }
       if (aaa==1)
       {
-            printf("-");
+            my_printf("-");
       }
       bbb=0;
       for (i=0;i<=len-1;i++)
@@ -42,13 +42,13 @@ void reverse ( )
       }
       for (;i<=len-1;i++)
       {
-            printf("%c",exnum[i]);
+            my_printf("%c",exnum[i]);
       }
       if (bbb==0)
       {
-            printf("0");
+            my_printf("0");
       }
-      printf("\n");
+      my_printf("\n");
 }
 int main_bench()
 {

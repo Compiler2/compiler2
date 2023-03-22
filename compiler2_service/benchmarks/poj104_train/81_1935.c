@@ -6,17 +6,17 @@ int main_bench()
 	int mtx[5][5], i, j;
 	for(i=0; i<5; i++)
 		for(j=0; j<5; j++)
-			scanf("%d", &mtx[i][j]);
+			my_scanf("%d", &mtx[i][j]);
 	int m, n;
-	scanf("%d%d", &m, &n);
+	my_scanf("%d%d", &m, &n);
 	if(MtxSwap(mtx,m,n))
 		for(i=0; i<5; i++)
 		{
 			for(j=0; j<4; j++)
-				printf("%d ", mtx[i][j]);
-			printf("%d\n", mtx[i][j]);
+				my_printf("%d ", mtx[i][j]);
+			my_printf("%d\n", mtx[i][j]);
 		}
-	else printf("error\n");
+	else my_printf("error\n");
 	return 0;
 }
 int MtxSwap(int mtx[][5], int m, int n)

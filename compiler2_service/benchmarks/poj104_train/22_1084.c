@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int a[300]={0},n,i,first,second;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<300;i++)
-		scanf(",%d",&a[i]);
+		my_scanf(",%d",&a[i]);
 	n=i;first=0;second=0;
 	for(i=0;i<n;i++)
 	{
@@ -17,6 +17,6 @@ int main_bench()
 		if(a[i]<first&&a[i]>=second)
 			second=a[i];
 	}
-	if(second==0) printf("No\n");
-	else printf("%d\n",second);
+	if(second==0) my_printf("No\n");
+	else my_printf("%d\n",second);
 }

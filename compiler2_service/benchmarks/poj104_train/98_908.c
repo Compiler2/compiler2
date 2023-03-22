@@ -4,9 +4,9 @@ int main_bench()
 {
 	char str[2000][50];
 	int n,i,j,sum=0,geshu,ji=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	for(i=0;i<n;i++)
 	{
 		j=0;
@@ -18,17 +18,17 @@ int main_bench()
 		}
 		if(ji==0) 
 		{
-			printf("%s",str[i]);
+			my_printf("%s",str[i]);
 		    sum=sum+geshu;
 		}
 		else
 		{
 			sum=sum+geshu+1;
 			if(sum<=80)
-				printf(" %s",str[i]);
+				my_printf(" %s",str[i]);
 			else
 			{
-				printf("\n%s",str[i]);
+				my_printf("\n%s",str[i]);
 				sum=geshu;
 			}
 		}

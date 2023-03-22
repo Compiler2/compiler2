@@ -4,7 +4,7 @@
 int main_bench(){
    char sor[20],wt[20];
    int i,j,tag;
-   scanf("%s%s",wt,sor);
+   my_scanf("%s%s",wt,sor);
    int n=strlen(sor);
    int k=strlen(wt);
    for(i=0;i<n-k+1;i++){
@@ -16,7 +16,7 @@ int main_bench(){
 		   }
 	   }
 	   if(tag==0){
-		   printf("%d",i);
+		   my_printf("%d",i);
 		   break;
 	   }
    }

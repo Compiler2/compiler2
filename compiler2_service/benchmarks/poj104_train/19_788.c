@@ -43,15 +43,15 @@ int main_bench()
 		n2=i+1;
 		if(strcmp(t1,a)==0)
 		{
-			if(n2!=n) printf("%s ",b);
-			else printf("%s",b);
+			if(n2!=n) my_printf("%s ",b);
+			else my_printf("%s",b);
 			m=1;
 			
 		}
 		else 
 		{
-			if(n2!=n)printf("%s ",t1);
-			else printf("%s",t1);
+			if(n2!=n)my_printf("%s ",t1);
+			else my_printf("%s",t1);
 			strcpy(t1," ");
 		}
 

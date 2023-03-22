@@ -22,7 +22,7 @@ int main_bench()
 			c[i]=0;
 			d[i]=0;
 			if(!strcmp(c,d))
-				printf("%s\n",b);
+				my_printf("%s\n",b);
 		}
 	}
 	return 0;

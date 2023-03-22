@@ -10,10 +10,10 @@ int main_bench()
 		int age;
 	};
 	struct patient pat[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
-		scanf("%s%d",pat[i].num,&pat[i].age);
+		my_scanf("%s%d",pat[i].num,&pat[i].age);
 	for(i=0,j=0;i<n;i++)
 		if(pat[i].age>=60)
 		{
@@ -37,14 +37,14 @@ int main_bench()
 			continue;
 		for(j=0;j<n;j++)
 		    if(pat[j].age==patage[i])
-				printf("%s\n",pat[j].num);
+				my_printf("%s\n",pat[j].num);
 		}
 	for(i=0;i<n;i++)
 	{
 		if(pat[i].age>=60)
 			continue;
 		else
-			printf("%s\n",pat[i].num);
+			my_printf("%s\n",pat[i].num);
 	}
 	return 0;
 }

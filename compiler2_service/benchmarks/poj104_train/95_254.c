@@ -23,11 +23,11 @@ int main_bench()
 
 
 	if(strcmp(s,q)==0)
-		printf("=");
+		my_printf("=");
 	if(strcmp(s,q)<0)
-		printf("<");
+		my_printf("<");
 	if(strcmp(s,q)>0)
-		printf(">");
+		my_printf(">");
 	
 	return 0;
 

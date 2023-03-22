@@ -10,11 +10,11 @@ int main_bench()
 {
     int n;
     int a,b,c;
-    scanf ("%d", &n);
+    my_scanf ("%d", &n);
     int i,j,k=0;
     for (i=0;i<=n-1;i++)
     {
-        scanf ("%s %d", &patient[i].id, &patient[i].age);
+        my_scanf ("%s %d", &patient[i].id, &patient[i].age);
         patient[i].num = i;
     }
     int s[100];
@@ -67,7 +67,7 @@ int main_bench()
     
     for (i=0;i<=n-1;i++)
     {
-        printf ("%s\n", patient[s[i]].id);
+        my_printf ("%s\n", patient[s[i]].id);
     }
     
     return 0;

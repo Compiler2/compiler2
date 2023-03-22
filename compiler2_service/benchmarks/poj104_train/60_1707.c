@@ -3,9 +3,9 @@
 int main_bench()
 {
  int i,j,k,a,b,n,t,w;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(n<=4)
- printf("empty\n");
+ my_printf("empty\n");
  else
  {
  t=0;
@@ -26,7 +26,7 @@ int main_bench()
                  w=1;
               }
            if(w==0)           
-               printf("%d %d\n",a,b);
+               my_printf("%d %d\n",a,b);
           } 
         t=0;
         w=0;

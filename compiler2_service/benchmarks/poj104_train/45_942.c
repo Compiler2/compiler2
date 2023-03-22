@@ -4,8 +4,8 @@ int main_bench(){
 	int i,j,b,a;
 	char s1[50],s2[50];
 	char *ps1=s1,*ps2=s2;
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	int l1=strlen(s1);
 	int l2=strlen(s2);
 	for(a=0,b=0;a<l2&&b==0;a+=i+1){
@@ -17,6 +17,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 	return 0;
 }

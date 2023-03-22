@@ -5,18 +5,18 @@
 int main_bench()
 {
   int i,n,nn,k,t,j,c;  
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for (i=0;i<n;i++){
-      scanf("%d",&nn);
+      my_scanf("%d",&nn);
 	  if(nn==0){
-		  printf("60\n");
+		  my_printf("60\n");
 	  }
 	  else{
 		  c=0;
 		  t=0;
 
         for (j=1;j<=nn;j++){
-           scanf("%d",&k);
+           my_scanf("%d",&k);
 		   if (k<60){
 			   c=k;
 			   t=k+j*3;
@@ -26,7 +26,7 @@ int main_bench()
 			c=c-(t-63);
 		else if (t<60)
 			c=c+(60-t);
-		printf("%d\n",c);
+		my_printf("%d\n",c);
 	  }
   }
 	return 0;

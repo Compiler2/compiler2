@@ -11,9 +11,9 @@ int main_bench()
 	for(i=0;(c=str2[i])!='\0';i++)
 		if(c>='A'&&c<='Z') str2[i]=c+32;
 	
-	if(strcmp(str1,str2)>0) printf(">\n");
-	else if(strcmp(str1,str2)<0) printf("<\n");
-	else printf("=\n");
+	if(strcmp(str1,str2)>0) my_printf(">\n");
+	else if(strcmp(str1,str2)<0) my_printf("<\n");
+	else my_printf("=\n");
 
 
 

@@ -3,7 +3,7 @@
 int main_bench(){
   int a,b,c,d,e,f,g,h,i,j,k,l,o,p,z,q,t;
   while(1){
-  scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+  my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
   if(a==0){break;}
   d+=12;
 
@@ -21,7 +21,7 @@ int main_bench(){
   }
   o=d-a;
   t=o*60*60+p*60+q;
-printf("%d\n",t);
+my_printf("%d\n",t);
   }
   
   return 0;

@@ -20,7 +20,7 @@ int main_bench()
 	for(i=0;i<lenth;i++)
 	{
 		if(b[i]==1)
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 	}
 	return 0;
 }

@@ -12,9 +12,9 @@ int main_bench()
 			k++;
 		if(sent[i]==' '&&i!=0&&k!=0)
 		{
-			printf("%d,",k);
+			my_printf("%d,",k);
 			k=0;
 		}
 	}
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 }

@@ -2,9 +2,9 @@
 
 int main_bench(){
   int n,a,b,k,t=0,i=0,o=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(k=0;k<n;k++){
-  scanf("%d%d",&a,&b);
+  my_scanf("%d%d",&a,&b);
   if(a==b){t++;}
   else if(a==0&&b==1){i++;}
   else if(a==0&&b==2){o++;}
@@ -14,12 +14,12 @@ else if(a==2&&b==0){i++;}
  else if(a==2&&b==1){o++;}
   }
 	  if(i>o){
-		  printf("A");
+		  my_printf("A");
 	  }
 	  else if(i<o){
-		  printf("B");}
+		  my_printf("B");}
 	  else if(i==o){
-		  printf("Tie");}
+		  my_printf("Tie");}
 
 return 0;
 }

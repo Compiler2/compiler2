@@ -7,9 +7,9 @@ int main_bench()
 		int id;
 		int to;
 	}s[100001],temp1,temp2,max1,max2,max3;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++){
-		scanf("%d %d %d",&s[i].id,&chi,&mat);
+		my_scanf("%d %d %d",&s[i].id,&chi,&mat);
 		s[i].to=chi+mat;
 	}
 	if(s[0].to>s[1].to&&s[1].to>s[2].to){max1=s[0];max2=s[1];max3=s[2];}
@@ -33,5 +33,5 @@ int main_bench()
 		}
 		else if(s[i].to>max3.to&&s[i].id!=max2.id&&s[i].id!=max1.id)max3=s[i];
 	}
-	printf("%d %d\n%d %d\n%d %d\n",max1.id,max1.to,max2.id,max2.to,max3.id,max3.to);
+	my_printf("%d %d\n%d %d\n%d %d\n",max1.id,max1.to,max2.id,max2.to,max3.id,max3.to);
 }

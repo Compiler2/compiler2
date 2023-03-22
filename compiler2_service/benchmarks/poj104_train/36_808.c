@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i, j, LEN, NUM1, NUM2, tmp=0;
 	char a[20], b[20];
-	scanf("%s%s", &a, &b);
+	my_scanf("%s%s", &a, &b);
 	if(strlen(a)!=strlen(b))
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		LEN=strlen(a);
@@ -22,12 +22,12 @@ int main_bench()
 					NUM2++;
 			if(NUM1!=NUM2)
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				break;
 			}
 			tmp++;
 		}
 		if(tmp==LEN)
-			printf("YES\n");
+			my_printf("YES\n");
 	}
 }

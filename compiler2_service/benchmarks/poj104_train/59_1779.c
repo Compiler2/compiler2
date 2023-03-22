@@ -4,11 +4,11 @@ int main_bench(){
     int n,m,sum;
     int i,p,q,r,s;
     char f[102][102],g[102][102]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(p=1;p<n+1;p++){
         for(q=1;q<n+1;q++){
-            scanf("%c",&f[p][q]);
+            my_scanf("%c",&f[p][q]);
 
             if(f[p][q]=='\n'){
                 q--;
@@ -18,7 +18,7 @@ int main_bench(){
 
 
 
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 
 
     for(i=1;i<m;i++){
@@ -72,7 +72,7 @@ int main_bench(){
 
         }
     }
-    printf("%d",sum);
+    my_printf("%d",sum);
     lp:return 0;
 }
 

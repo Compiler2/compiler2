@@ -20,10 +20,10 @@ main_bench()
 	{
 		for(i=b[j-1-k]+1;i<b[j-k];i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=0;i<b[0];i++)
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 }

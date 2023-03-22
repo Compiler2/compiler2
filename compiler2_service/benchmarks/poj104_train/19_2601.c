@@ -19,15 +19,15 @@ int main_bench()
               }
         if(strcmp(b,c)==0)
           {
-             printf("%s",d);
+             my_printf("%s",d);
            }
         else
           {
-             printf("%s",b);
+             my_printf("%s",b);
            }
         if(i<a)
            {
-              printf(" ");
+              my_printf(" ");
            }
         j=0;
         }

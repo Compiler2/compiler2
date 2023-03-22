@@ -62,7 +62,7 @@ main_bench()
                         if(a[i][4]!=1&&a[i][4]!=2&&a[i][3]==1) correct=0;
                         else
                         {
-                            printf("%d %d %d %d %d",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+                            my_printf("%d %d %d %d %d",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
                         }
                     }
                 }

@@ -4,7 +4,7 @@
 main_bench()
 {
       int i,j,sum=0,x;
-      scanf("%d",&x);
+      my_scanf("%d",&x);
       for(i=0;i<=x;i++)
       {
       sum=sum+i*i;
@@ -19,7 +19,7 @@ main_bench()
       }
       for(i=1;7*i<=x;i++)
       sum=sum-49*i*i;
-      printf("%d\n",sum);
+      my_printf("%d\n",sum);
       getchar();
       getchar();
 }

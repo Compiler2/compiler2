@@ -2,18 +2,18 @@
 
 int main_bench(){
 	int a,b,n,i,x=0,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     if(n==1){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if((a>=90)&&(a<=140)&&(b>=60)&&(b<=90)){
-			printf("1");
+			my_printf("1");
 		}else{
-			printf("0");
+			my_printf("0");
 		}
 	}
     if(n!=1){
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		   if((a>=90)&&(a<=140)&&(b>=60)&&(b<=90)){
 			x++;
 		   }else{
@@ -26,7 +26,7 @@ int main_bench(){
 	if(x>m){
 		m=x;
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	}
 	return 0;
 }

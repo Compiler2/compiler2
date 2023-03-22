@@ -18,9 +18,9 @@ void turn(int a[],int n)
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 		if(i<n-1)
-			printf(" ");
+			my_printf(" ");
 	}
 }
 
@@ -28,17 +28,17 @@ int main_bench()
 {
 	int x,y,i;
 	int b[100],c[100];
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	for(i=0;i<x;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<y;i++)
 	{
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	}
 	turn(b,x);
-	printf(" ");
+	my_printf(" ");
 	turn(c,y);
 	return 0;
 }

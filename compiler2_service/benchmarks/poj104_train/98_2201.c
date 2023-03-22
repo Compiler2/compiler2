@@ -4,21 +4,21 @@ int main_bench()
 {
 	int i,n,sum=0,m;
 	char word[40];
-	scanf("%d",&n);
-	printf("\n");
+	my_scanf("%d",&n);
+	my_printf("\n");
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",word);
+		my_scanf("%s",word);
 		m=strlen(word)+1;
 		sum=sum+m;
 		if((sum>81)||(i==1))
 		{
-			printf("\n");
+			my_printf("\n");
 			sum=m;
-			printf("%s",word);
+			my_printf("%s",word);
 		}
 		else
-		    printf(" %s",word);
+		    my_printf(" %s",word);
 	}
-	printf("\n");
+	my_printf("\n");
 }

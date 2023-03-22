@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[1000],b[1000],c[1000],index[1000];
 	int n,i,temp,j,t,k,d=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -68,7 +68,7 @@ int main_bench()
 	}
 	for(i=0;i<d-1;i++)
 	{
-		printf("%d,",a[index[i]]);
+		my_printf("%d,",a[index[i]]);
 	}
-	printf("%d",a[index[d-1]]);
+	my_printf("%d",a[index[d-1]]);
 }

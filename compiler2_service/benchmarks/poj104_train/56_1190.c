@@ -3,7 +3,7 @@
 int main_bench()
 {
    int k,a,b,c,d,e,f;
-   scanf("%d",&k);
+   my_scanf("%d",&k);
    k<100000;
    if(k/10000 != 0)
    a=k/10000;
@@ -42,7 +42,7 @@ int main_bench()
 }
 }
 }
-   printf("%d",f);
+   my_printf("%d",f);
    return 0;
 }
 

@@ -5,12 +5,12 @@ int main_bench()
 	int n,i,j;	
 	int sz [1000][1000];
 	int a1,a2,b1,b2,a,b,c;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for( i=0;i<n;i++)
@@ -30,6 +30,6 @@ int main_bench()
 	a=a2-a1-1;
 	b=b2-b1-1;
 	c=a*b;
-	printf("%d\n",c);
+	my_printf("%d\n",c);
 	return 0;
 }

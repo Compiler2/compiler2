@@ -7,9 +7,9 @@ int main_bench()
 	int pd=0;
 	int sz[300];
 	int xsz[300];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
-			scanf("%d",&sz[i]);
+			my_scanf("%d",&sz[i]);
 	xsz[0]=sz[0];
 	for(j=1;j<n;j++){
 		pd=0;
@@ -23,7 +23,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<cal-1;i++)
-	printf("%d,", xsz[i]);
-	printf("%d", xsz[cal-1]);
+	my_printf("%d,", xsz[i]);
+	my_printf("%d", xsz[cal-1]);
 	return 0;
 }

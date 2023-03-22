@@ -5,9 +5,9 @@ int main_bench()
 	int a,b,i,t=1,w;
 	char n[32],k[32]={0};
 	long m=0;
-	scanf("%d",&a);
-	scanf("%s",n);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",n);
+	my_scanf("%d",&b);
 	for(i=strlen(n);i>=0;i--)
 	{
 		if((n[i]>='0')&&(n[i]<='9'))
@@ -27,11 +27,11 @@ int main_bench()
 		}
 	}
 	if(m==0)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 		if(b==10)
-			printf("%ld",m);
+			my_printf("%ld",m);
 		else
 		{
 			for(i=0;m!=0;i++)
@@ -45,8 +45,8 @@ int main_bench()
 			}
 			k[i]='\0';
 			for(i=strlen(k)-1;i>=0;i--)
-				printf("%c",k[i]);
-			printf("\n");
+				my_printf("%c",k[i]);
+			my_printf("\n");
 		}
 	}
 }

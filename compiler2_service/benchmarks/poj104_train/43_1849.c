@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[10001]={0};
 	i=2;
 	while(i<n)
@@ -18,9 +18,9 @@ int main_bench()
 	for(i=3;i<=(n/2);i=i+1)
 		if ((a[i]==0)&&(a[n-i]==0))
 			{
-			if (p) printf("\n");
+			if (p) my_printf("\n");
 			p=p+1;
-			printf("%d %d",i,n-i);
+			my_printf("%d %d",i,n-i);
 			}
 	return 0;
 }

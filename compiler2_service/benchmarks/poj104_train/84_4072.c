@@ -5,7 +5,7 @@ int main_bench()
 {
 	int a, b, max1, max2;
 	int n, i, temp;
-	scanf("%d %d %d", &n, &a, &b);
+	my_scanf("%d %d %d", &n, &a, &b);
 	if(a>b)
 	{
 		max1=a;
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for(i=0; i<n-2; i++)
 	{
-		scanf("%d", &temp);
+		my_scanf("%d", &temp);
 		if(temp>max1)
 		{
 			max2=max1;
@@ -35,7 +35,7 @@ int main_bench()
 		   max2=max2;	   
 		}
 	}
-	printf("%d\n%d", max1, max2);
+	my_printf("%d\n%d", max1, max2);
 	return 0;
 }
 	

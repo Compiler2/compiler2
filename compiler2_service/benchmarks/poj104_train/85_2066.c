@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,j,sz[100];
     char sr[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	char zfc;
-	scanf("%c",&zfc);
+	my_scanf("%c",&zfc);
     for(i=0;i<n;i++){
 		gets(sr[i]);
 	}
@@ -33,9 +33,9 @@ int main_bench()
 			 }
 		 }
 	if(sz[i]==0){
-		printf("no\n");
+		my_printf("no\n");
 	}else{
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 	}
     return 0;

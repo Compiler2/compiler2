@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,qm[100],bj[100],lw[100],i,j,l=0,k,z[100]={0},p=0;
 	char na[100][30],bg[100],mz[100],P[1][30];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",na[i],&qm[i],&bj[i],&bg[i],&mz[i],&lw[i]);
+		my_scanf("%s %d %d %c %c %d",na[i],&qm[i],&bj[i],&bg[i],&mz[i],&lw[i]);
 	}
 for(i=0;i<n;i++)
 	{
@@ -40,5 +40,5 @@ for(i=0;i<n;i++)
 	}
 	for(i=0;i<n;i++)
 		p=p+z[i];
-	printf("%s\n%d\n%d\n",na[0],z[0],p);
+	my_printf("%s\n%d\n%d\n",na[0],z[0],p);
 }

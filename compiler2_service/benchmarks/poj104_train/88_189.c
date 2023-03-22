@@ -8,9 +8,9 @@ int main_bench()
 	{
 	a=getchar();	
 	if(a>=48 && a<=57)
-	{printf("%c",a);i=0;}
+	{my_printf("%c",a);i=0;}
 	else if((a<48 || a>57)&&(i==0))
-	{i++;printf("\n");continue;}
+	{i++;my_printf("\n");continue;}
 	else continue;
 	}
 }

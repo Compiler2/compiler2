@@ -14,10 +14,10 @@ struct student
 int main_bench()
 {
 	int n,i,t,h=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 for(i=0;i<n;i++)
 { 
-	scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,
+	my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,
 					   &stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 	stu[i].jiang=0;
 if(stu[i].score>80&&stu[i].lun>0)
@@ -40,7 +40,7 @@ for(i=0,t=stu[0].jiang;i<n-1;i++)
 for(i=0;i<n;i++)
 if(stu[i].jiang==t)
 {
-	printf("%s\n%d\n%d",stu[i].name,t,h+stu[n-1].jiang);
+	my_printf("%s\n%d\n%d",stu[i].name,t,h+stu[n-1].jiang);
 	break;
 }
 

@@ -19,7 +19,7 @@ main_bench()
       a[12]=31;
       int w;
       int i; 
-      scanf("%d",&w);
+      my_scanf("%d",&w);
       int sum=13; 
       for(i=0;i<12;i++)
       {
@@ -28,12 +28,12 @@ main_bench()
                     if(w>=5)
                     {
                             if((sum-13+w)%7==0)
-                            printf("%d\n",i+1);
+                            my_printf("%d\n",i+1);
                     }
                     else if(w<5)
                     {
                          if((sum-6+w)%7==0)
-                         printf("%d\n",i+1);
+                         my_printf("%d\n",i+1);
                     }
                     else continue;
              

@@ -20,11 +20,11 @@ int main_bench()
 		m2=m2+d[i];
 	}
 	if(m1==m2)
-		printf("=\n");
+		my_printf("=\n");
 	if(m1>m2)
-		printf(">\n");
+		my_printf(">\n");
 	if(m1<m2)
-		printf("<\n");
+		my_printf("<\n");
 	return 0;
 }
 

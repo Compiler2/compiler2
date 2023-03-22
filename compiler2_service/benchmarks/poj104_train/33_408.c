@@ -4,7 +4,7 @@ int main_bench()
 {
 	char zfc[1000][256];
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++)
 	{
 		gets(zfc[i]);
@@ -13,23 +13,23 @@ int main_bench()
 		{
 			if(zfc[i][j]=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			if(zfc[i][j]=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
 			if(zfc[i][j]=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}
 			if(zfc[i][j]=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
 			j=j+1;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

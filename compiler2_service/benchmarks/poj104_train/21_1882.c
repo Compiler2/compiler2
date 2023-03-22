@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,n,t=0,count=0,j;
 	float k,sum=0,a[300],b[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	for(i=0;i<n;i++)
 		sum=sum+a[i];
 	k=(float)sum/(float)n;
@@ -37,9 +37,9 @@ int main_bench()
 	if(j!=n)
 	{
 		if(a[t]<a[j])
-			printf("%.0f,%.0f\n",a[t],a[j]);
-		else printf("%.0f,%.0f\n",a[j],a[t]);
+			my_printf("%.0f,%.0f\n",a[t],a[j]);
+		else my_printf("%.0f,%.0f\n",a[j],a[t]);
 	}
-	else printf("%.0f\n",a[t]);
+	else my_printf("%.0f\n",a[t]);
 	return 0;
 }

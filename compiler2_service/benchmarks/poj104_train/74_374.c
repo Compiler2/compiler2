@@ -24,15 +24,15 @@ int g(int a)
 int main_bench()
 {
 	int m,n,s,l,i,t=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		s=f(i);
 		l=g(i);
 if((s==1)&&(l==1)&&(t==0))
-{printf("%d",i);t++;}
+{my_printf("%d",i);t++;}
 else if((s==1)&&(l==1))
-{printf(",%d",i);t++;}
+{my_printf(",%d",i);t++;}
 	}
-	if(t==0)printf("no");
+	if(t==0)my_printf("no");
 }

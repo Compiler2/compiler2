@@ -4,7 +4,7 @@
 	int main_bench()
 	{
 		int n,result=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(int i=0;i<=n;i++)
 		{
 			if(yu7wuguan(i))
@@ -12,7 +12,7 @@
 				result+=i*i;
 			}
 		}
-		printf("%d",result);
+		my_printf("%d",result);
 		return 0;
 	}
 int yu7wuguan(int num)

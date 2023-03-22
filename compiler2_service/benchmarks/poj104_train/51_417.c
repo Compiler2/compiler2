@@ -55,14 +55,14 @@ int main_bench()
 {
     int n;
     char s[501]={0};
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     gets(s);
     int q,i;
     q=f(s,n,strlen(s));
-    if(q==0) printf("NO\n");
+    if(q==0) my_printf("NO\n");
     else
     {
-        printf("%d\n",p);
+        my_printf("%d\n",p);
         for(i=0;i<q;i++)
             puts(b[i]);
     }

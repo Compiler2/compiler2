@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k,cs[100]={0},t=0,max;
 	int gao[100],di[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&gao[i],&di[i]);
+		my_scanf("%d%d",&gao[i],&di[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,6 +32,6 @@ int main_bench()
 		   }
 	   }
 	}
-	printf("%d",cs[t]);
+	my_printf("%d",cs[t]);
 	return 0;
 }

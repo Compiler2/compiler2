@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,e,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<10)
 		t=n;
 	else if(n<100){
@@ -32,6 +32,6 @@ int main_bench()
 		e=n%10;
 		t=e*10000+d*1000+c*100+b*10+a;
 	}
-	printf("%d\n",t);
+	my_printf("%d\n",t);
 	return 0;
 }

@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,awin,bwin,n;
 	int a[220],b[220];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	awin=0;
 	bwin=0;
 	for(i=1;i<=n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		if(a[i]==0&&b[i]==2){
 			bwin++;
 		}else{
@@ -28,12 +28,12 @@ int main_bench()
 		}
 	}
 	if(awin>bwin){
-		printf("A");
+		my_printf("A");
 	}else{
 		if(bwin>awin){
-			printf("B");
+			my_printf("B");
 		}else{
-			printf("Tie");
+			my_printf("Tie");
 		}
 	}
 	return 0;

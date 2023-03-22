@@ -24,7 +24,7 @@ int main_bench()
 	int a, b, i, length;
 	char n[100];
 	long num, pow;
-	scanf("%d %s %d", &a, n, &b);
+	my_scanf("%d %s %d", &a, n, &b);
 	length = strlen(n);
 	pow = 1;
 	num = 0;
@@ -43,8 +43,8 @@ int main_bench()
 			break;
 	}
 	for ( ; i>=0; i--)
-		printf("%c", n[i]);
-	printf("\n");
+		my_printf("%c", n[i]);
+	my_printf("\n");
 	
 	return 0;
 }

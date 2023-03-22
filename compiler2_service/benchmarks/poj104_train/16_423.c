@@ -3,11 +3,11 @@
 int main_bench()
 {
 int a,r;
-scanf("%d",&a);
+my_scanf("%d",&a);
 r=a%10;
 do
 {
-printf("%d",r);
+my_printf("%d",r);
 a=a-r;
 a=a/10;
 r=a%10;

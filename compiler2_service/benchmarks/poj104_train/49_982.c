@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[501],*p;
 	int num=0,i,j,m,len;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	len=strlen(a);
 	for(i=2;i<=len;i++)
 	{
@@ -22,9 +22,9 @@ int main_bench()
 			{
 				for(p=&a[j],m=1;m<=i;m++,p++)
 				{
-				printf("%c",*p);
+				my_printf("%c",*p);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 			num=0;
 			p=&a[j];

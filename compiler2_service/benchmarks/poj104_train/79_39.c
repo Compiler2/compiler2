@@ -24,10 +24,10 @@ int josephus(int n, int m)
 int main_bench()
 {
 int n , k;
-while(2 == scanf("%d %d",&n ,&k))
+while(2 == my_scanf("%d %d",&n ,&k))
 {
    if(n == 0 && k == 0)break;
-    printf("%d\n",josephus(n , k));
+    my_printf("%d\n",josephus(n , k));
 }
  return 0;
 }

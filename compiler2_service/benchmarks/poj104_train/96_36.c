@@ -9,14 +9,14 @@ main_bench()
 	int l;
 	int d;
 	int f;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	if(l==2)
 	{
 		d=((a[0]-'0')*10+(a[1]-'0'))/13;
 		f=((a[0]-'0')*10+(a[1]-'0'))%13;
-		printf("%d\n",d);
-		printf("%d",f);
+		my_printf("%d\n",d);
+		my_printf("%d",f);
 	}
 	else
 	{
@@ -24,8 +24,8 @@ main_bench()
 		{
 			d=0;
 			f=a[0]-'0';
-			printf("%d\n",d);
-		printf("%d",f);
+			my_printf("%d\n",d);
+		my_printf("%d",f);
 		}
 		else{
 	if(((a[0]-'0')*10+(a[1]-'0'))>=13)
@@ -37,8 +37,8 @@ main_bench()
 		a[i+1]=yu;
 
 	}
-	printf("%s\n",b);
-	printf("%d",yu-'0');
+	my_printf("%s\n",b);
+	my_printf("%d",yu-'0');
 	}
 	else
 	{
@@ -52,8 +52,8 @@ main_bench()
 		a[i+2]=yu;
 
 	}
-	printf("%s\n",b);
-	printf("%d",yu-'0');
+	my_printf("%s\n",b);
+	my_printf("%d",yu-'0');
 	}
 		}
 	}

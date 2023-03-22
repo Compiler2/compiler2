@@ -5,13 +5,13 @@ int main_bench()
     void move(int *pa,int m,int n);
     int a[110],*pa=a;
     int n,m,i,j;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<n;i++)
-        scanf("%d",&*(pa+i));
+        my_scanf("%d",&*(pa+i));
     move(pa,m,n);
     for(i=0;i<n-1;i++)
-    printf("%d ",*(a+i));
-    printf("%d\n",*(a+n-1));
+    my_printf("%d ",*(a+i));
+    my_printf("%d\n",*(a+n-1));
     getchar();
     getchar();
 }

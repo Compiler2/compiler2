@@ -27,10 +27,10 @@ main_bench()
    {
       if(i==k-a+1)
       {
-        printf("%s",rep);
+        my_printf("%s",rep);
         i=k;
       }
-      else printf("%c",str[i]);
+      else my_printf("%c",str[i]);
    } 
    getchar();
    getchar();

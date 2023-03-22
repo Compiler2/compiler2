@@ -10,6 +10,6 @@ int main_bench(){
         if(f[i]!=' '){g[t]=f[i];t++;}
         else{if(f[i+1]!=' '){g[t]=' ';t++;}}
     }
-    printf("%s",g);
+    my_printf("%s",g);
     return 0;
 }

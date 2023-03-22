@@ -10,12 +10,12 @@ int main_bench()
         char as[10];
     } bk;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     struct book * books = (struct book *)malloc(sizeof(struct book) * n);
 
     for (i = 0; i < n; i++) 
     {
-        scanf("%d %s", &bk.no, bk.as);
+        my_scanf("%d %s", &bk.no, bk.as);
         books[i] = bk;
     }
 
@@ -36,7 +36,7 @@ int main_bench()
         {
             if (cnts[c] == max)
             {
-                printf("%c\n%d\n", c, max);
+                my_printf("%c\n%d\n", c, max);
                 for (i = 0; i < n; i++) 
                 {
                     bk = books[i];
@@ -44,7 +44,7 @@ int main_bench()
                     {
                         if (bk.as[j] == c)
                         {
-                            printf("%d\n", bk.no);
+                            my_printf("%d\n", bk.no);
                             break;
                         }
                     }

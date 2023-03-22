@@ -6,7 +6,7 @@ main_bench()
   char s[500],t[5],g[500][5]={0},c;
   int a[500]={0};
   int n,i,j,max=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   getchar();
   gets(s);
   for(i=0;s[i+n-1];i++)
@@ -27,10 +27,10 @@ main_bench()
       if(a[j]>max) max=a[j];
     }
   }
-  if(max==1) printf("NO");
+  if(max==1) my_printf("NO");
   else
   {
-    printf("%d\n",max);
+    my_printf("%d\n",max);
     for(j=0;g[j][0];j++)
       if(a[j]==max) puts(g[j]);
   }

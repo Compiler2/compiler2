@@ -3,7 +3,7 @@
 int main_bench()
 {
 int m,k;
-scanf("%d",&m);
+my_scanf("%d",&m);
 getchar();
 for(k=0;k<m;k++)
 {
@@ -46,6 +46,6 @@ for(k=0;k<m;k++)
 				b[i]='?';
 			}
 	}
-	printf("%s\n%s\n",c,b);
+	my_printf("%s\n%s\n",c,b);
 }
 }

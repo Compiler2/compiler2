@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,t;
 	for(i=1;i<=310;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(getchar()=='\n') break;
 	}
 	for(i=1;i<=300;i++)
@@ -25,13 +25,13 @@ int main_bench()
 	for(i=1;i<=300;i++)
 	{
         	if(a[i+1]==0)
-				printf("No\n");
+				my_printf("No\n");
 			if(a[i+1]==0) break;
 			if((a[i]-a[i+1])!=0)
-			printf("%d\n",a[i+1]);
+			my_printf("%d\n",a[i+1]);
 			if((a[i]-a[i+1])!=0) break;
 	}
 	if(i==300)
-		printf("No\n");
+		my_printf("No\n");
 return 0;
 }

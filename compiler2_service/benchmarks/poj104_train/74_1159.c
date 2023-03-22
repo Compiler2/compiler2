@@ -30,7 +30,7 @@ int huiwenshu(int m)
 main_bench()
 {
      int m,n,i,count=0;
-     scanf("%d %d",&m,&n);
+     my_scanf("%d %d",&m,&n);
      for(i=m;i<=n;i++)
      {
           if(huiwenshu(i)==1)
@@ -39,16 +39,16 @@ main_bench()
                 {
                   if(count==0)
                   {             
-                    printf("%d",i);
+                    my_printf("%d",i);
                     count++;
                   }  
                   else
-                   printf(",%d",i);
+                   my_printf(",%d",i);
                 }
           }
      }
      if(count==0)
-       printf("no");
+       my_printf("no");
      getchar();
      getchar();
 }                                                                 

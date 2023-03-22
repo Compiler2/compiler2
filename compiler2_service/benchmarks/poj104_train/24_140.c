@@ -42,7 +42,7 @@ int main_bench()
 		}
 		if (f>e)
 		{
-			printf("%s\n",c[a]);
+			my_printf("%s\n",c[a]);
 			break;
 		}
 	}
@@ -59,7 +59,7 @@ int main_bench()
 		}
 		if (f>e)
 		{
-			printf("%s\n",c[a]);
+			my_printf("%s\n",c[a]);
 			break;
 		}
 	}

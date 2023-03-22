@@ -11,8 +11,8 @@ int main_bench()
     for(gets(b);i<80,b[i];i++){
         if(b[i]>='A'&&b[i]<='Z')b[i]+=32;
     }
-    if(strcmp(a,b)==1)printf("%c",'>');
-    if(strcmp(a,b)==0)printf("%c",'=');
-    if(strcmp(a,b)==-1)printf("%c",'<');
+    if(strcmp(a,b)==1)my_printf("%c",'>');
+    if(strcmp(a,b)==0)my_printf("%c",'=');
+    if(strcmp(a,b)==-1)my_printf("%c",'<');
     return 0;
 }

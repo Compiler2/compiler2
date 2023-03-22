@@ -17,7 +17,7 @@ void order(char ch[],int n)
 		}
 	}
 }
-void main_bench()
+int main_bench()
 {
 	char ch1[1000],ch2[1000],c;
 	int i,j,k,l=1;
@@ -38,6 +38,6 @@ void main_bench()
 			l=0;
 			break;
 		}
-	if(l==1)printf("YES\n");
-	if(l==0)printf("NO\n");
+	if(l==1)my_printf("YES\n");
+	if(l==0)my_printf("NO\n");
 }

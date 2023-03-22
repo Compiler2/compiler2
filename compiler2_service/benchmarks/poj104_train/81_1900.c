@@ -25,13 +25,13 @@ int main_bench()
 	int row,col;
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-			scanf("%d",&square[row][col]);
+			my_scanf("%d",&square[row][col]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	int result,temp;
 	result=check(square,n,m);
-	if(result==0||n>4||m>4)printf("error");
+	if(result==0||n>4||m>4)my_printf("error");
 	else{
 		for(col=0;col<5;col++){
 			temp=square[n][col];
@@ -39,8 +39,8 @@ int main_bench()
 			square[m][col]=temp;
 		}
 	for(row=0;row<5;row++){
-		printf("\n%d",square[row][0]);
-		for(col=1;col<5;col++)printf(" %d",square[row][col]);
+		my_printf("\n%d",square[row][0]);
+		for(col=1;col<5;col++)my_printf(" %d",square[row][col]);
 	}
 	}
 

@@ -16,13 +16,13 @@ int main_bench()
 			
 			else
 			{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 				k=1;
 			}
 		}
 		else
 		{
-			k=0;printf("%c",a[i]);
+			k=0;my_printf("%c",a[i]);
 		}
 	}
 	

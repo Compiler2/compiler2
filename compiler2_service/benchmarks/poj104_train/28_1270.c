@@ -10,6 +10,6 @@ for(c=0;(a[c]!='\0');c++)
 else if (d!=0) {b[e]=d;e=e+1;d=0;}}
 b[e]=d;
 for (c=0;c<=e-1;c++)
-{printf("%d,",b[c]);}
-printf("%d",b[e]);
+{my_printf("%d,",b[c]);}
+my_printf("%d",b[e]);
 }

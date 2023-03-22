@@ -28,8 +28,8 @@ int main_bench()
 	}
 	for(i=0;i<k-1;i++)
 	{
-		printf("%d,",strlen(d[i]));
+		my_printf("%d,",strlen(d[i]));
 	}
-	printf("%d",strlen(d[k-1]));
+	my_printf("%d",strlen(d[k-1]));
 	return 0;
 }

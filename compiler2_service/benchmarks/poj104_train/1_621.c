@@ -17,18 +17,18 @@ int f(int i,int t)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=0;
 	int d[100];
 	do
 	{
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 		i++;
 	}while(i<n);
 	i=0;
 	do
 	{
-		printf("%d\n",f(d[i],2));
+		my_printf("%d\n",f(d[i],2));
 		i++;
 	}while(i<n);
 	return 0;

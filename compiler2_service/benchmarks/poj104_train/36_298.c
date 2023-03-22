@@ -8,11 +8,11 @@ int main_bench()
 	gets(str);
 	n=strlen(str);
 	if(n%2==0)
-		printf("NO\n");
+		my_printf("NO\n");
 	else 
 	{
 		if(str[(n-1)/2]!=' ')
-			printf("NO\n");
+			my_printf("NO\n");
 		else
 		{
 			for(i=0;i<2;i++)
@@ -46,9 +46,9 @@ int main_bench()
 			 }
 		 }
 		 if(strcmp(s[0],s[1])==0)
-			 printf("YES\n");
+			 my_printf("YES\n");
 		 else 
-			 printf("NO\n");
+			 my_printf("NO\n");
 	}
 }
 				

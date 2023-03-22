@@ -9,10 +9,10 @@ int main_bench()
 	}book[999];
 	int m,i,n,j,max;
 	char a[26],c[26];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d %s",&book[i].num,&book[i].writer);
+		my_scanf("%d %s",&book[i].num,&book[i].writer);
 	}
 	for(i=0;i<26;i++)
 	{
@@ -40,14 +40,14 @@ int main_bench()
 			max=i;
 		}
 	}
-	printf("%c\n%d\n",a[max],c[max]);
+	my_printf("%c\n%d\n",a[max],c[max]);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<26;j++)
 		{
 			if(book[i].writer[j]==a[max])
 			{
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 			}
 		}
 	}

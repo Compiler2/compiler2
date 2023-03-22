@@ -13,16 +13,16 @@ int main_bench()
 	struct stu a[4]={0};
 	struct stu b[4]={0};
 	struct stu temp={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++)
 	{
 		if(i<=2)
-		{scanf("%d%d%d",&a[i].id,&a[i].c,&a[i].m);
+		{my_scanf("%d%d%d",&a[i].id,&a[i].c,&a[i].m);
 		a[i].t=a[i].c+a[i].m;
 		b[i]=a[i];}
 		else
         {
-			scanf("%d%d%d",&a[3].id,&a[3].c,&a[3].m);
+			my_scanf("%d%d%d",&a[3].id,&a[3].c,&a[3].m);
              a[3].t=a[3].c+a[3].m;
 		     b[3]=a[3];
 			 
@@ -42,7 +42,7 @@ int main_bench()
 
 	for(i=0;i<=2;i++)
 	{
-		printf("%d %d\n",b[i].id,b[i].t);
+		my_printf("%d %d\n",b[i].id,b[i].t);
 	}
 
 }

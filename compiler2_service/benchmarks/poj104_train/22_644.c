@@ -8,7 +8,7 @@ int main_bench()
 	   char c=',';
 	   while(c==',')
 	   {
-		   scanf("%d%c",&a[i],&c);
+		   my_scanf("%d%c",&a[i],&c);
 		   i++;
 		   }
 	   n=i;
@@ -23,8 +23,8 @@ int main_bench()
 				max2=a[i];
 			else continue;
 			if(max2>0)	
-			printf("%d",max2);
-			else printf("No");
+			my_printf("%d",max2);
+			else my_printf("No");
 		
 
 return 0;

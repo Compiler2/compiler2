@@ -4,7 +4,7 @@ int main_bench(){
 	char s[2][100];
 	int i,l1,l2,j;
 	for(i=0;i<2;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	l1=strlen(s[0]);
 	l2=strlen(s[1]);
@@ -14,7 +14,7 @@ int main_bench(){
 			break;}
 		}
 		if(j==l1){
-			printf("%d",i);
+			my_printf("%d",i);
 		break;}
 	}
 

@@ -9,9 +9,9 @@ int main_bench()
 	v=0;
     y=0;
 	z=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     for(i=1;i<=n;i++){
-    scanf("%d",&(nl[i]));
+    my_scanf("%d",&(nl[i]));
 	    if(0<(nl[i])&&(nl[i])<19){
 		    u+=1;
 		}else if((nl[i])>18&&(nl[i])<36){
@@ -27,9 +27,9 @@ int main_bench()
 	c=1.0*y/n*100.0;
 	d=1.0*z/n*100.0;
 
-	printf("1-18: %.2lf%\n",a);
-    printf("19-35: %.2lf%\n",b);
-	printf("36-60: %.2lf%\n",c);
-	printf("60??: %.2lf%\n",d);	
+	my_printf("1-18: %.2lf%\n",a);
+    my_printf("19-35: %.2lf%\n",b);
+	my_printf("36-60: %.2lf%\n",c);
+	my_printf("60??: %.2lf%\n",d);	
 	return 0;
 }

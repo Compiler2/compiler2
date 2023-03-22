@@ -8,12 +8,12 @@ int main_bench()
 	{
 		for(i=0;i<5;i++)
 		{
-			scanf("%d",*p+i);
+			my_scanf("%d",*p+i);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(cal(n,m)==0)
-		printf("error");
+		my_printf("error");
 	if(cal(n,m)==1)
 	{
 		for(i=0;i<5;i++)
@@ -26,9 +26,9 @@ int main_bench()
 		{
 			for(i=0;i<4;i++)
 			{
-				printf("%d ",*(*p+i));
+				my_printf("%d ",*(*p+i));
 			}
-			printf("%d\n",*(*p+4));
+			my_printf("%d\n",*(*p+4));
 		}
 	}
 }

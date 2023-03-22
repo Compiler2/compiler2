@@ -6,16 +6,16 @@ int main_bench()
 int len1, len2 , i , count = 0 , error = 0 ;
 double line ;
 char str1[ 600 ] , str2[ 600 ] ;
-scanf( "%lf" , &line );
-scanf( "%s" , str1 );
-scanf( "%s" , str2 );
+my_scanf( "%lf" , &line );
+my_scanf( "%s" , str1 );
+my_scanf( "%s" , str2 );
 
 len1 = strlen( str1 );
 len2 = strlen( str2 );
 
 if( len1 != len2 )
 {
-printf( "error\n" );
+my_printf( "error\n" );
 return ;
 }
 
@@ -31,13 +31,13 @@ count ++ ;
 }
 
 if( error )
-printf( "error\n" );
+my_printf( "error\n" );
 else
 {
 if( (double)(len1 - count)/len1 > line )
-printf( "yes\n" );
+my_printf( "yes\n" );
 else
-printf( "no\n" );
+my_printf( "no\n" );
 }
 
 }

@@ -5,9 +5,9 @@ main_bench()
 	int n,i,j,p,q;
 	char a[40][7];
 	float b[40],b1[40],b2[40],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%s %f\n",a[i],&b[i]);
+	my_scanf("%s %f\n",a[i],&b[i]);
 	p=0;
 	q=0;
 	for(i=0;i<n;i++)
@@ -48,8 +48,8 @@ main_bench()
 		}
 	}
 	for(i=0;i<p;i++)
-	printf("%.2f ",b1[i]);
+	my_printf("%.2f ",b1[i]);
 	for(i=0;i<q-1;i++)
-	printf("%.2f ",b2[i]);
-	printf("%.2f",b2[q-1]);
+	my_printf("%.2f ",b2[i]);
+	my_printf("%.2f",b2[q-1]);
 } 

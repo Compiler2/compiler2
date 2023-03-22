@@ -32,10 +32,10 @@ int main_bench()
 {
 	int a[120],b[102],c[120],i,n,qian[102],zong=0,max=0,wei;
 	char mingzi[102][30],xue[102],xi[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",mingzi[i],&a[i],&b[i],&xue[i],&xi[i],&c[i]);
+		my_scanf("%s %d %d %c %c %d",mingzi[i],&a[i],&b[i],&xue[i],&xi[i],&c[i]);
 		qian[i]=(yuanshi(a[i],c[i])+wusi(a[i],b[i])+chengji(a[i])+xibu(a[i],xi[i])+banji(b[i],xue[i]));
 		zong+=qian[i];
 		if(qian[i]>max) {
@@ -43,7 +43,7 @@ int main_bench()
 			wei=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",mingzi[wei],qian[wei],zong);
+	my_printf("%s\n%d\n%d\n",mingzi[wei],qian[wei],zong);
 
 
 

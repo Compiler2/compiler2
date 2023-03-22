@@ -30,11 +30,11 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf(">");
+		my_printf(">");
 	if(k==0)
-		printf("=");
+		my_printf("=");
 	if(k==-1)
-		printf("<");
+		my_printf("<");
 	return 0;
 }
 

@@ -9,11 +9,11 @@ int main_bench()
   int n;
   int y,m1,m2;
   int i,j,x,k;
-  scanf ("%d",&n);
+  my_scanf ("%d",&n);
   for (i=0;i<n;i++)
   {
     k=0;
-    scanf ("%d %d %d",&y,&m1,&m2);
+    my_scanf ("%d %d %d",&y,&m1,&m2);
     if ((y%400==0)||(y%4==0&&y%100!=0))
       a[2]=29;
     else
@@ -27,9 +27,9 @@ int main_bench()
     for (j=m1;j<m2;j++)
       k+=a[j];
     if (k%7==0)
-      printf ("YES\n");
+      my_printf ("YES\n");
     else 
-      printf ("NO\n");
+      my_printf ("NO\n");
 }
 }
         

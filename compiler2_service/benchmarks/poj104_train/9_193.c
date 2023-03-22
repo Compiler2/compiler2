@@ -16,18 +16,18 @@ int main_bench()
 {
     int n;
     int i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
     {
-        scanf("%s",pat[i].ID);
-        scanf("%d",&pat[i].age);
+        my_scanf("%s",pat[i].ID);
+        my_scanf("%d",&pat[i].age);
     }
 
     qsort(pat,n,sizeof(patient),cmp);
 
     for (i=0;i<n;i++)
     {
-        printf("%s\n",pat[i].ID);
+        my_printf("%s\n",pat[i].ID);
     }
     return 0;
 }

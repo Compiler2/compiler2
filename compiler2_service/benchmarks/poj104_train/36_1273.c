@@ -4,8 +4,8 @@ int main_bench()
 {
 	int i,j,lena,lenb,t;
 	char a[100]={0},b[100]={0};
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	if(lena==lenb)
@@ -26,8 +26,8 @@ int main_bench()
 			}
 			if(t==0) break;
 		}
-		if(t==0) printf("NO");
-		else printf("YES");
+		if(t==0) my_printf("NO");
+		else my_printf("YES");
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

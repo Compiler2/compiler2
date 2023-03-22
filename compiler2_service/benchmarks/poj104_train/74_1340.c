@@ -9,7 +9,7 @@ int huiwen(int m, int n)
 int main_bench()
 {
 	int m,n,i,j,p=0,q=1,a[10000],b[10000],c[10000]={0},x=1;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
 	{
 		for(j=2;j<i;j++)
@@ -35,8 +35,8 @@ int main_bench()
 	if(x!=1)
 	{
 	for(i=1;i<=x-2;i++)
-		printf("%d,",c[i]);
-	printf("%d",c[i]);}
+		my_printf("%d,",c[i]);
+	my_printf("%d",c[i]);}
 	if(x==1)
-		printf("no");
+		my_printf("no");
 }

@@ -26,18 +26,18 @@ int main_bench(){
 					if(f==e-1){
 						if(k==0){
 					    for(l=k;l<i;l++)
-							printf("%c",s[l]);
+							my_printf("%c",s[l]);
 					     break;
 						}
 						else{
 						for(l=k+len2;l<i;l++)
-							printf("%c",s[l]);
+							my_printf("%c",s[l]);
 					     break;
 						}	
 							
 			        }
 				}
-				printf("%s",b);
+				my_printf("%s",b);
 	        }		   
 		}
 	}
@@ -47,7 +47,7 @@ int main_bench(){
 		c+=1;
 		if(c==e){
 			for(j=i+len2;j<len1;j++)
-			printf("%c",s[j]);
+			my_printf("%c",s[j]);
 			break;
 		}
 	}

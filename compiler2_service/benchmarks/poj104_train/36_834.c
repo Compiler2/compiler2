@@ -4,9 +4,9 @@ int main_bench(){
 	int i,j,length;
 	char a[200];
 	char b[200];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
     if(strlen(a)!=strlen(b)) {
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	length=strlen(a);
@@ -18,10 +18,10 @@ int main_bench(){
 			}		
 		}
 		if(j==length){
-			printf("NO");
+			my_printf("NO");
 			return 0;
 		}
 	}
-	printf("YES");
+	my_printf("YES");
 	return 0;
 }

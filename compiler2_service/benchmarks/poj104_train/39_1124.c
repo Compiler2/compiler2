@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[200],n,s[200][20],b[200],e[200],i,m[200],t=0,j,k=0,h=0;
 	char d[200],c[200],f,g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d%d%c%c%c%c%d",s[i],&a[i],&b[i],&f,&c[i],&g,&d[i],&e[i]);
+		my_scanf("%s%d%d%c%c%c%c%d",s[i],&a[i],&b[i],&f,&c[i],&g,&d[i],&e[i]);
 	}
 for(i=0;i<n;i++){
 	    m[i]=0;
@@ -23,6 +23,6 @@ for(i=0;i<n;i++){
 	j=i;}
 }
 
- printf("%s\n%d\n%d\n",s[j],t,h);
+ my_printf("%s\n%d\n%d\n",s[j],t,h);
   return 0;
 }

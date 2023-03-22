@@ -32,6 +32,6 @@ int main_bench()
         }
     }
 
-    printf("%s\n%s",ch[x],ch[y]);
+    my_printf("%s\n%s",ch[x],ch[y]);
     return 0;
 }

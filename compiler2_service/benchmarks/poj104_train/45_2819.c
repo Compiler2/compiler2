@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[50], w[50];
 	int i, j=0, mark=0;
-	scanf("%s %s", s, w);
+	my_scanf("%s %s", s, w);
 	for (i=0; i<strlen(s); i++)
 	{
 		while (j<strlen(w))
@@ -23,7 +23,7 @@ int main_bench()
 		}
 		
 	}
-	printf("%d", mark-strlen(s)+1);
+	my_printf("%d", mark-strlen(s)+1);
 	
 		return 0;
 }

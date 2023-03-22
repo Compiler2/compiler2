@@ -5,8 +5,8 @@ int main_bench()
     char str1[50],str2[50];
     int n1,n2,i,j,k,jishuqi;
     int record;
-    scanf("%s",str1);
-    scanf("%s",str2);
+    my_scanf("%s",str1);
+    my_scanf("%s",str2);
     n1=strlen(str1);
     n2=strlen(str2);
     for(i=0;i<=n2-1;i++)
@@ -23,7 +23,7 @@ int main_bench()
         }
             if(jishuqi==n1)
             {
-                printf("%d",record);
+                my_printf("%d",record);
                 break;
             }
     }

@@ -11,15 +11,15 @@ int main_bench()
 	 if(b[i]>='a'&&b[i]<='z')
 		 b[i]=b[i]-32;
 	 if(a[i]>b[i])
-	 {printf(">");
+	 {my_printf(">");
 	  break;
 	 }
 	 if(a[i]<b[i])
-	 {printf("<");
+	 {my_printf("<");
 	  break;
 	 }
 	}
 	if(!a[i]&&!b[i])
-	  printf("=");
+	  my_printf("=");
 	return 0;
 }

@@ -29,10 +29,10 @@ void dispose(int x)
 }
 main_bench()
 {
-    int N,e;scanf("%d",&N);
+    int N,e;my_scanf("%d",&N);
     for(e=0;e<N;e++)
     {
-        scanf("%s",str);printf("%s\n",str);
+        my_scanf("%s",str);my_printf("%s\n",str);
         int i,j,k;n=strlen(str);
         for(i=0;i<n;i++)
         {
@@ -41,15 +41,15 @@ main_bench()
         dispose(i);
         for(i=0;i<n;i++)
         {
-            if(str[i]=='(') printf("$");
+            if(str[i]=='(') my_printf("$");
             else 
             {
                 if(str[i]==')') 
-                    printf("?");
+                    my_printf("?");
                 else 
-                    printf(" ");
+                    my_printf(" ");
             }
         }
-        printf("\n");
+        my_printf("\n");
     }
     }

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,m,i,j,zhan,t,you=0,pan;
-	scanf("%d,%d",&n,&m);
+	my_scanf("%d,%d",&n,&m);
 	int s[n][m];
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -25,12 +25,12 @@ int main_bench(){
 			}
 		}
 		if(pan==1){
-			printf("%d+%d\n",i,t);
+			my_printf("%d+%d\n",i,t);
 			you=1;
 		}
 	}
 	if(you==0){
-		printf("No\n");
+		my_printf("No\n");
 	}
 	return 0;
 }

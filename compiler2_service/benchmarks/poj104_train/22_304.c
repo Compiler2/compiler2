@@ -7,9 +7,9 @@ int main_bench()
 	for(i=0;;i++)
 	{
 		
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		k++;
-        scanf("%c",&q[i]);
+        my_scanf("%c",&q[i]);
 		if(q[i]!=',')break;
 	}
 	for(i=0;i<k;i++)
@@ -22,12 +22,12 @@ int main_bench()
 				a[j]=temp;
 			}
 		}
-     if(k==1||a[0]==a[k-1])printf("No");
+     if(k==1||a[0]==a[k-1])my_printf("No");
 	else for(i=1;i<k;i++)
 	 {
 		if(a[i]!=a[i-1]) 
 		{
-			printf("%d",a[i]);break;
+			my_printf("%d",a[i]);break;
 		}
 	}
 }

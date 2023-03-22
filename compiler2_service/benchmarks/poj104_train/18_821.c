@@ -22,14 +22,14 @@ int min2(int j,int k)
 main_bench()
 {
       int n,i,j,k,g,temp,ans;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(g=0;g<n;g++)
       {
                       for(i=1;i<=n;i++)
                       {
                                        for(j=1;j<=n;j++)
                                        {
-                                                        scanf("%d",&a[i][j]);
+                                                        my_scanf("%d",&a[i][j]);
                                        }
                       }
                       ans=0;
@@ -67,7 +67,7 @@ main_bench()
                                                        }
                                       }
                       }
-                      printf("%d\n",ans);
+                      my_printf("%d\n",ans);
       }
       
 }

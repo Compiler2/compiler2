@@ -16,10 +16,10 @@ int main_bench()
 		}
 		p++;
 		if(p!=1)
-			printf(",");
-		printf("%d",n);
+			my_printf(",");
+		my_printf("%d",n);
 
 	}
-	printf("\n");
+	my_printf("\n");
 }
 

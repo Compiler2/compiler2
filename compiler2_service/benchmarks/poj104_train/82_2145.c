@@ -3,10 +3,10 @@
 int main_bench()
 {   
     int i,n[1000],m[1000],k,a,s,p;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int d[1000]={0};
 	for (i=0,a=0;i<k;i++){
-		scanf ("%d%d",&m[i],&n[i]);
+		my_scanf ("%d%d",&m[i],&n[i]);
 		if (m[i]>=90&&m[i]<=140&&n[i]<=90&&n[i]>=60){
            d[a]++;
 		}
@@ -23,7 +23,7 @@ int main_bench()
 			d[i-1]=s;
 		}
 	}
-	printf ("%d",d[0]);
+	my_printf ("%d",d[0]);
 
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,p,flag,a,exist,w,b;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	exist=0;
 	for(i=m;i<=n;i++)
 	{
@@ -28,11 +28,11 @@ int main_bench()
 		}
 		if(a==i)
 		{
-			printf((exist==1)?",%d":"%d",i);
+			my_printf((exist==1)?",%d":"%d",i);
 			exist=1;
 		}
 	}
 	if(exist==0)
-		printf("no");
+		my_printf("no");
 }
 

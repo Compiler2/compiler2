@@ -21,7 +21,7 @@ int panduan(int t)
 int main_bench()
 {
 	int m,n,j,i,r,shuzi=0,a[20000]={0};
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	a[0]=m;
 	for (i=0;i<=n-m;i++)
 		a[i]=m+i;
@@ -51,14 +51,14 @@ int main_bench()
 			shuzi++;
 	}
 	if (shuzi==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
 		for (i=0;i<=n-m;i++)
 		{
 			if (a[i]!=0)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				r=i;
 				break;
 			}
@@ -67,7 +67,7 @@ int main_bench()
 		{	
 			if (a[i]!=0)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			}
 		}
 	}

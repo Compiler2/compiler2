@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int k,i,j,row,col;
-    scanf("%d%d",&row,&col);
+    my_scanf("%d%d",&row,&col);
     int array[100][100];
     for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&(array[i][j]));
+			my_scanf("%d",&(array[i][j]));
 		}
 	}
 	for(k=0;k<=row/2 && k<=col/2;k++)
@@ -18,13 +18,13 @@ int main_bench()
 
 			for(j=k;j<=col-1-k;j++)
 			{
-				printf("%d\n",array[k][j]);
+				my_printf("%d\n",array[k][j]);
 			}
 
 		
 			for(i=k+1;i<=row-k-1;i++)
 			{
-				printf("%d\n",array[i][col-1-k]);
+				my_printf("%d\n",array[i][col-1-k]);
 			}
 		
 		
@@ -33,7 +33,7 @@ int main_bench()
 				break;
 			for(j=col-k-2;j>=k;j--)
 			{
-				printf("%d\n",array[row-1-k][j]);
+				my_printf("%d\n",array[row-1-k][j]);
 			}
 
 			if (col-k-1<=k)
@@ -41,7 +41,7 @@ int main_bench()
 		
 			for(i=row-2-k;i>k;i--)
 			{
-				printf("%d\n",array[i][k]);
+				my_printf("%d\n",array[i][k]);
 			}
 		
   }

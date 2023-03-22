@@ -5,11 +5,11 @@ int main_bench()
 	int sum_day(int,int);
 	int leap(int year);
 	int year,month,day,days;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	days=sum_day(month,day);
 	if(leap(year)&&month>=3)
 		days=days+1;
-	printf("%d",days);
+	my_printf("%d",days);
 }
 int sum_day(int month,int day)
 {

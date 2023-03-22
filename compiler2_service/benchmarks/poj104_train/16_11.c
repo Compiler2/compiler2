@@ -4,8 +4,8 @@
 main_bench()
 {
 int a,b,n,s,i;
-scanf("%d",&a);
-if(a==0)printf("0");
+my_scanf("%d",&a);
+if(a==0)my_printf("0");
 n=0;
 b=a;
 while(b!=0) 
@@ -18,6 +18,6 @@ for(i=0;i<=n;i++)
 {
  b=a%10;
  a=a/10;
- printf("%d",b);
+ my_printf("%d",b);
 }
 }

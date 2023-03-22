@@ -9,9 +9,9 @@ struct student
 
 int main_bench()
 {   int m,a[26]={0},i,j,max,k,l=0;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++)
-    scanf("%d%s",&stu[i].num,stu[i].s);
+    my_scanf("%d%s",&stu[i].num,stu[i].s);
 	for(i=0;i<26;i++)
 	for(k=0;k<m;k++)
        for(j=0;j<strlen(stu[k].s);j++)
@@ -22,12 +22,12 @@ int main_bench()
 	for(i=1;i<26;i++)
 		if(a[i]>max)
 		{	max=a[i];l=i;}
-		printf("%c\n",'A'+l);
-		printf("%d\n",max);
+		my_printf("%c\n",'A'+l);
+		my_printf("%d\n",max);
 	for(i=0;i<m;i++)
 		for(j=0;j<strlen(stu[i].s);j++)
 		   if(stu[i].s[j]=='A'+l)
-		   {	printf("%d\n",stu[i].num);
+		   {	my_printf("%d\n",stu[i].num);
 		   break;}
 
 	

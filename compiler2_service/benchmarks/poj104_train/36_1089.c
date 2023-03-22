@@ -22,7 +22,7 @@ int count(char *p,int *pn,int n)
 int main_bench()
 {
 	char z1[100],z2[100];
-	scanf("%s %s",z1,z2);
+	my_scanf("%s %s",z1,z2);
 	int a1[52]={0},a2[52]={0},n1=strlen(z1),n2=strlen(z2),i,flag=0;
 	char *p1=z1,*p2=z2;
 	int *pn1=a1,*pn2=a2;
@@ -32,7 +32,7 @@ int main_bench()
 	{
 		if(a1[i]!=a2[i]) flag=1;
 	}
-	if(flag==0) printf("YES");
-	else printf("NO");
+	if(flag==0) my_printf("YES");
+	else my_printf("NO");
 	return 0;
 }

@@ -8,7 +8,7 @@
 int main_bench()
 {
 	int x,y,a[100],b[100],i,j,n,m,p;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	a[0]=x;
 	b[0]=y;
 	for(i=1;i<=100000;++i)
@@ -33,6 +33,6 @@ int main_bench()
 		}
 		if(a[i]==b[j]) break;
 	}
-	printf("%d\n",a[i]);
+	my_printf("%d\n",a[i]);
 	return 0;
 }

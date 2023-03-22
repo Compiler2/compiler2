@@ -23,8 +23,8 @@ int main_bench()
 	max=0;
 	for(i=0;i<=n;i++)
 		if(a[i]>max) max=a[i];
-	if(max==0) printf("No");
-	else printf("%u",max);
+	if(max==0) my_printf("No");
+	else my_printf("%u",max);
 
 }
 

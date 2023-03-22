@@ -16,9 +16,9 @@ return -1;
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	int a;
 	a=locate(s,w);
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

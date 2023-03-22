@@ -3,21 +3,21 @@
 main_bench()
 {
       int m;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       int n[m];
       int i;
       for(i=0;i<m;i++)
       {
-                      scanf("%d",&n[i]);
+                      my_scanf("%d",&n[i]);
       }
       for(i=0;i<m;i++)
       {
                       int xi;
                       xi=n[i];
                       if(xi==1)
-                      printf("2.000\n");
+                      my_printf("2.000\n");
                       if(xi==2)
-                      printf("3.500\n");
+                      my_printf("3.500\n");
                       if(xi>2)
                       {
                       float ai[xi];
@@ -37,7 +37,7 @@ main_bench()
                                        ci[j]=ai[j]/bi[j];
                                        sumi+=ci[j];
                       }
-                      printf("%.3f\n",sumi);
+                      my_printf("%.3f\n",sumi);
                       }
       }
 }

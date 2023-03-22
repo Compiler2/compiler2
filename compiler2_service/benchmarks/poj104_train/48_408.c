@@ -6,12 +6,12 @@ void print()
      int i,j;
      for (i=1;i<=9;i++)
      for (j=1;j<=9;j++)
-        if (j<9) printf("%d ",a[i][j]);
-        else printf("%d\n",a[i][j]);
+        if (j<9) my_printf("%d ",a[i][j]);
+        else my_printf("%d\n",a[i][j]);
 }
 main_bench()
 {     int m,n,i,j,d;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for (i=0;i<=10;i++)
       for (j=0;j<=10;j++)
       a[i][j]=0;

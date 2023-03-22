@@ -4,9 +4,9 @@ int main_bench()
 {
 	char w[256],s[256],r[256];
 	int len1,len2,len3,i,j,k;
-	scanf("%s\n",w);
-	scanf("%s\n",s);
-	scanf("%s",r);
+	my_scanf("%s\n",w);
+	my_scanf("%s\n",s);
+	my_scanf("%s",r);
 	len1=(int)strlen(s);
 	len2=(int)strlen(w);
 	len3=(int)strlen(r);
@@ -32,7 +32,7 @@ int main_bench()
 		}
 
 	}
-	printf("%s",w);
+	my_printf("%s",w);
 
 
 	return 0;

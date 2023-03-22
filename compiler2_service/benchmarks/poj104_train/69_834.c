@@ -32,16 +32,16 @@ void c(char a[],int h,char b[],int k)
 	if(c[0]=='1')
 	{
 		for(i=0;i<h+1;i++)
-			printf("%c",c[i]);
-		printf("\n");}
+			my_printf("%c",c[i]);
+		my_printf("\n");}
 	else
 	{for(i=1;i<h+1;i++)
 	{
         if(c[i]!='0')
 		{w=1;y++;}
         if(h+1==2||y!=0)
-		{printf("%c",c[i]);}}
-	printf("\n");
+		{my_printf("%c",c[i]);}}
+	my_printf("\n");
 	}
 	
 }
@@ -50,7 +50,7 @@ int main_bench()
 {
     int h,k;
 	char a[251],b[251];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	h=strlen(a);
 	k=strlen(b);
 	if(h>=k)

@@ -13,15 +13,15 @@ int main_bench() {
   while ((*tmp) != 0) {
     if (strncmp(tmp, buf2, strlen(buf2)) == 0) {
       if ((tmp == buf1 || *(tmp-1) == ' ')) {
-        printf("%s", buf3);
+        my_printf("%s", buf3);
         tmp += strlen(buf2);
       } else {
-        printf("%c", *tmp);
+        my_printf("%c", *tmp);
         ++tmp;
       }
     }
     else {
-      printf("%c", *tmp);
+      my_printf("%c", *tmp);
       ++tmp;
     }
   }

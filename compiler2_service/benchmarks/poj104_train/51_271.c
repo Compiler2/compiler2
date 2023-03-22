@@ -8,9 +8,9 @@ struct
 int main_bench()
 {
 	int n,m,len,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[510];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	len=strlen(s);
 	m=len-n+1;
 	for(i=0;i<len-n+1;i++)
@@ -29,16 +29,16 @@ int main_bench()
 	for(i=0;i<m;i++)
 		if(ngram[i].count>max)max=ngram[i].count;
 	if(max==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{i=0;
 	while(ngram[i].count!=max)
 		i++;
-	printf("%d\n",max);
-	printf("%s\n",ngram[i].str);
+	my_printf("%d\n",max);
+	my_printf("%s\n",ngram[i].str);
 	for(i++;i<m;i++)
 		if(ngram[i].count==max)
-			printf("%s\n",ngram[i].str);}
+			my_printf("%s\n",ngram[i].str);}
 
 }
 

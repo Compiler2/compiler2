@@ -6,7 +6,7 @@ int main_bench()
     
     gets(string);
     char a[200],b[200];
-    scanf("%s %s", a, b);
+    my_scanf("%s %s", a, b);
    
    char word[200][200];
     int n1,n2,i,k;
@@ -29,16 +29,16 @@ int main_bench()
     }
    
     if(strcmp(word[0],a)==0)
-    printf("%s", b);
+    my_printf("%s", b);
     else
-    printf("%s", word[0]);
+    my_printf("%s", word[0]);
     
     for(k=1;k<=m;k++)
     {
                    if(strcmp(word[k],a)==0)
-                   printf(" %s", b);
+                   my_printf(" %s", b);
                    else
-                   printf(" %s", word[k]);
+                   my_printf(" %s", word[k]);
     }
   
     return 0;

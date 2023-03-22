@@ -15,5 +15,5 @@ int main_bench()
 				p--;
 			}
 	for(p=p_1;*p!='\0';p++)
-		printf("%c",*p);
+		my_printf("%c",*p);
 }

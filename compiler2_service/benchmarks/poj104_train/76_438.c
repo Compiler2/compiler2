@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,k,t,e,p,q,s=0,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct point
     {
            int x,y;
@@ -11,7 +11,7 @@ int main_bench()
     points[50000];
     for(i=0;i<n;i++)
     {
-           scanf("%d%d",&a,&b);
+           my_scanf("%d%d",&a,&b);
            points[i].x=a;
            points[i].y=b;
     }
@@ -49,11 +49,11 @@ int main_bench()
     q=points[n-1].y;
     if(s==0)
     {
-           printf("%d %d",p,q);
+           my_printf("%d %d",p,q);
     }
     else
     {
-           printf("no");
+           my_printf("no");
     }
   
     return 0 ;

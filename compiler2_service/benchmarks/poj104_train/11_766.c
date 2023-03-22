@@ -21,7 +21,7 @@ int m(int n)
 main_bench()
 {
       int a,b,c,x=0,i;
-      scanf("%d %d %d",&a,&b,&c);
+      my_scanf("%d %d %d",&a,&b,&c);
       if(m(a)==1)
       {
                  int d[]={31,29,31,30,31,30,31,31,30,31,30};
@@ -36,7 +36,7 @@ main_bench()
                  x=x+d[i-1];
                  x=x+c;
       }
-      printf("%d",x);
+      my_printf("%d",x);
       getchar();
       getchar();
 }

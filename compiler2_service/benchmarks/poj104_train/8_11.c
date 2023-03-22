@@ -4,9 +4,9 @@ void read(int a[],int m,int b[],int n)
 {
 	int i;
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void order(int a[],int n)
 {
@@ -29,15 +29,15 @@ void combine(int a[],int m,int b[],int n)
 {
 	int i;
 	for(i=0;i<m;i++)
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	for(i=0;i<n-1;i++)
-		printf("%d ",b[i]);
-	printf("%d",b[n-1]);
+		my_printf("%d ",b[i]);
+	my_printf("%d",b[n-1]);
 }
 int main_bench()
 {
 	int a[100],b[100],m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	read(a,m,b,n);
 	order(a,m);
 	order(b,n);

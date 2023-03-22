@@ -7,7 +7,7 @@ int main_bench()
    gets(str);
    p=str;
    for (;*p!='\0';p++)
-       {  if(*p!=' ') printf("%c",*p);
-          else if(*(p-1)!=' ') printf(" ");
+       {  if(*p!=' ') my_printf("%c",*p);
+          else if(*(p-1)!=' ') my_printf(" ");
         }
 }

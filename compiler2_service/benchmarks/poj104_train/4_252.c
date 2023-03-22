@@ -3,10 +3,10 @@
 int main_bench(){
 	int sz[100][100];
 	int t,i,j,a,ROW,COL;
-	scanf("%d%d",&ROW,&COL);
+	my_scanf("%d%d",&ROW,&COL);
 	for(i=0;i<ROW;i++){
 		for(j=0;j<COL;j++){
-	      scanf("%d",&sz[i][j]);	
+	      my_scanf("%d",&sz[i][j]);	
 		}
 	    
 	
@@ -20,7 +20,7 @@ int main_bench(){
 				  i=t-COL+1;
 				}
 				   j=t-i;
-				   printf("%d\n",sz[i][j]);
+				   my_printf("%d\n",sz[i][j]);
 				   i++;
 				}
 			

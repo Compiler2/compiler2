@@ -3,17 +3,17 @@
 int main_bench()
 {
 	int n,i,j=3,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=3;i<=7;i+=2)
 	{
 		if (n%i==0&&flag==0) 
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			flag=1;
 		}
-		else if (n%i==0&&flag==1) printf(" %d",i);
+		else if (n%i==0&&flag==1) my_printf(" %d",i);
 		else j--;
 	}
-	if (j==0) printf ("n");
+	if (j==0) my_printf ("n");
 	return 0;
 }

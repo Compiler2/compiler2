@@ -19,11 +19,11 @@ main_bench()
         } 
         if(j==i+y)
         {for(j=0;j<i;j++)
-        {printf("%c",a[j]);}
+        {my_printf("%c",a[j]);}
         for(j=0;j<z;j++)
-        {printf("%c",c[j]);}
+        {my_printf("%c",c[j]);}
         for(j=i+y;j<x;j++)
-        {printf("%c",a[j]);}
+        {my_printf("%c",a[j]);}
         break;}      
     }
     if(i==x-y+1)

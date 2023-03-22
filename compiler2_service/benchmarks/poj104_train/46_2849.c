@@ -7,13 +7,13 @@ void function(int r,int c)
 {
     int i,j;
     f=0;
-        if(r==1){for(i=1;i<=c;i++){printf("%d\n", a[1][i]);}f=1;}
-        if(c==1&&f==0){for(i=1;i<=r;i++){printf("%d\n", a[i][1]);}}
+        if(r==1){for(i=1;i<=c;i++){my_printf("%d\n", a[1][i]);}f=1;}
+        if(c==1&&f==0){for(i=1;i<=r;i++){my_printf("%d\n", a[i][1]);}}
         if(r!=1&&c!=1){
-        for(i=1;i<=c;i++){printf("%d\n", a[1][i]);}
-        for(i=2;i<=r;i++){printf("%d\n", a[i][c]);}
-        for(i=c-1;i>=1;i--){printf("%d\n", a[r][i]);}
-        for(i=r-1;i>=2;i--){printf("%d\n", a[i][1]);}
+        for(i=1;i<=c;i++){my_printf("%d\n", a[1][i]);}
+        for(i=2;i<=r;i++){my_printf("%d\n", a[i][c]);}
+        for(i=c-1;i>=1;i--){my_printf("%d\n", a[r][i]);}
+        for(i=r-1;i>=2;i--){my_printf("%d\n", a[i][1]);}
         }
         
         for(i=2;i<=r-1;i++){
@@ -29,10 +29,10 @@ void function(int r,int c)
 int main_bench()
 {
     int i,j;
-    scanf("%d %d", &row,&col);
+    my_scanf("%d %d", &row,&col);
     for(i=1;i<=row;i++){
         for(j=1;j<=col;j++){
-            scanf("%d", &a[i][j]);
+            my_scanf("%d", &a[i][j]);
             } }
     function(row,col);
 }

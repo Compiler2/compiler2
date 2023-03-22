@@ -9,12 +9,12 @@ int main_bench(){
     float GPA;
 	float a=0;
 	float b=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%f",&y[i]);
+		my_scanf("%f",&y[i]);
 	}
 	for(i=0;i<n;i++){
-		scanf("%f",&x[i]);
+		my_scanf("%f",&x[i]);
 		if(x[i]<=100&&x[i]>=90){
 			m[i]=4.0;
 		}
@@ -55,7 +55,7 @@ int main_bench(){
 		b=b+y[i];
 	}
 	GPA=a/b;
-    printf("%.2f",GPA);
+    my_printf("%.2f",GPA);
 
 	return 0;
 }

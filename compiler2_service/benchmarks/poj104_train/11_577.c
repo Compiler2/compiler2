@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year,month,day;
 	int monthday[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	int i,j;
 	int sum=0;
 	for(i=1;i<month;i++)
@@ -19,6 +19,6 @@ int main_bench()
 	{
 		sum=sum+1;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

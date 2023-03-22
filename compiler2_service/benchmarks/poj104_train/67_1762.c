@@ -4,10 +4,10 @@ int main_bench(){
 	int n,a[100][2];
 	int i,j;
 	double y[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-		scanf("%d\n",&a[i][j]);
+		my_scanf("%d\n",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -20,13 +20,13 @@ int main_bench(){
 	for(i=1;i<n;i++){
 	
 			if(y[i]-y[0]>0.05){
-				printf("better\n");
+				my_printf("better\n");
 			}
 			else if(y[0]-y[i]>0.05){
-				printf("worse\n");
+				my_printf("worse\n");
 			}
 			else{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	

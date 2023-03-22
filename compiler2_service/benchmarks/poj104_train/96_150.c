@@ -5,7 +5,7 @@ int main_bench()
 {
     char shuru[1000];
     char shuchu[1000];
-    scanf("%s",shuru);
+    my_scanf("%s",shuru);
     int i,length,yushu;
     int a[1000][2];
     int shang[1000];
@@ -64,29 +64,29 @@ int main_bench()
     char c[2];
     c[0]='0';
     
-    printf("%s\n",c); 
-    printf("0");
+    my_printf("%s\n",c); 
+    my_printf("0");
     }
     else if(length==1)
     {
     char c[2];
     c[0]='0';
     
-    printf("%s\n",c); 
-    printf("%d",yushu);
+    my_printf("%s\n",c); 
+    my_printf("%d",yushu);
     }
     else if(t<13&&length==2)
     {
     char c[2];
     c[0]='0';
     
-    printf("%s\n",c); 
-    printf("%d",yushu);
+    my_printf("%s\n",c); 
+    my_printf("%d",yushu);
     }
     else
     {
-    printf("%s\n",shuchu); 
-    printf("%d",yushu);
+    my_printf("%s\n",shuchu); 
+    my_printf("%d",yushu);
     }
     getchar();
     getchar();

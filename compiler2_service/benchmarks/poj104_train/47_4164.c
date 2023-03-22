@@ -14,22 +14,22 @@ void reverse(int* array, int len){
 
 int main_bench(){
 	int len = 0;
-	scanf("%d", &len);
+	my_scanf("%d", &len);
 
 	int * array = (int*)malloc(len * sizeof(int));
 	int i = 0;
 	while( i < len){
-		scanf("%d", array + i);
+		my_scanf("%d", array + i);
 		i++;
 	}
 	reverse(array, len);
 
 	i = 0;
 	while( i < len - 1 ){
-		printf("%d ", array[i]);
+		my_printf("%d ", array[i]);
 		i++;
 	}
-        printf("%d", array[i]);
+        my_printf("%d", array[i]);
 
 	return 0;
 }

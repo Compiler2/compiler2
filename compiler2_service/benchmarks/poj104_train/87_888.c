@@ -4,7 +4,7 @@ int main_bench()
 {
     int a,b,c,d,e,f;
     int i,j,k,sum;
-	while(scanf("%d %d %d %d %d %d\n",&a,&b,&c,&d,&e,&f)&&a!=0)
+	while(my_scanf("%d %d %d %d %d %d\n",&a,&b,&c,&d,&e,&f)&&a!=0)
     {
 	d=d+12;
 	if(c<f)
@@ -26,7 +26,7 @@ int main_bench()
 	
 	sum=i+j+k;
 
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
     
     }
 

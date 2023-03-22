@@ -3,7 +3,7 @@
 
 int main_bench(){
     int yuan,e;
-    scanf("%d",&yuan);
+    my_scanf("%d",&yuan);
     int n=6;
     int shu[n];
     int mian[n];
@@ -12,7 +12,7 @@ int main_bench(){
         e=yuan/mian[i];
         shu[i]=e;
         yuan=yuan-mian[i]*e;        
-        printf("%d\n",shu[i]);
+        my_printf("%d\n",shu[i]);
     }
     return 0;
 }

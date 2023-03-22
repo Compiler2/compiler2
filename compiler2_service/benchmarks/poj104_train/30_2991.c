@@ -6,7 +6,7 @@ int main_bench()
 	int n;
 	int num = 0;
 	int m;
-	scanf( "%d",&n );
+	my_scanf( "%d",&n );
 	for( int i =1;i <= n ;i ++)
 	{
 		if( (i % 7) == 0 || (i % 10) == 7)
@@ -19,6 +19,6 @@ int main_bench()
 		}
 		num = num + i * i;
 	}
-	printf( "%d\n",num );
+	my_printf( "%d\n",num );
 	return 0;
 }

@@ -19,12 +19,12 @@ int g(int x)
 int main_bench()
 {
 	int i,n,p=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n-2;i++)
 	{
-		if(g(i)==2 && g(i+2)==2)printf("%d %d\n",i,i+2);
+		if(g(i)==2 && g(i+2)==2)my_printf("%d %d\n",i,i+2);
 		p++;
 	}
-	if(p==0)printf("empty");
+	if(p==0)my_printf("empty");
 	return 0;
 }

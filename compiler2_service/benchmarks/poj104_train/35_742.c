@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int i,j,a[100][100],row,col,b[100],s[100],sum=0;
-    scanf("%d,%d",&row,&col);
+    my_scanf("%d,%d",&row,&col);
     for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",(&a[i][j]));
+			my_scanf("%d",(&a[i][j]));
 		}
 	}
     for(i=0;i<row;i++)
@@ -55,14 +55,14 @@ int main_bench()
 		{
 			if(s[j]==b[i])
 			{
-				printf("%d+%d",i,j);
+				my_printf("%d+%d",i,j);
 				sum+=1;
 			} 
 		}
 	}
     if(sum==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
     return 0;
 }

@@ -4,9 +4,9 @@ int main_bench(){
     int n,i,t;
     int max,cmax;
     int sz[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d",&sz[i]);
+                     my_scanf("%d",&sz[i]);
                      }
                      max=sz[0];
                      cmax=sz[1];
@@ -19,6 +19,6 @@ int main_bench(){
                                                          cmax=sz[i];
                                                          }
                                                          }
-                                                         printf("%d\n%d\n",max,cmax);
+                                                         my_printf("%d\n%d\n",max,cmax);
                                                          return 0;
                                                          }

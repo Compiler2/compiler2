@@ -6,7 +6,7 @@ main_bench()
      for (i=0;i<5;i++)
      for (j=0;j<5;j++)
      {
-         scanf ("%d",&a[i][j]);
+         my_scanf ("%d",&a[i][j]);
          b[i][j]=100000;
          c[i][j]=100000;
      }
@@ -32,9 +32,9 @@ main_bench()
      for (j=0;j<5;j++)
      {
          if (a[i][j]==b[i][j]&&b[i][j]==c[i][j])
-         {printf ("%d %d %d\n",i+1,j+1,b[i][j]);
+         {my_printf ("%d %d %d\n",i+1,j+1,b[i][j]);
          count++;}
 
      }
-     if (count==0) {printf("not found\n");}
+     if (count==0) {my_printf("not found\n");}
 }

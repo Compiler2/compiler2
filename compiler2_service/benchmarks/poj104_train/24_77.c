@@ -40,10 +40,10 @@ int main_bench()
 		}
 	}
 	for(p=a+max1+1;p<a+max2;p++)
-		printf("%c",*p);
-	printf("\n");
+		my_printf("%c",*p);
+	my_printf("\n");
 	for(p=a+min1+1;p<a+min2;p++)
-		printf("%c",*p);
-	printf("\n");
+		my_printf("%c",*p);
+	my_printf("\n");
 	return 0;
 }

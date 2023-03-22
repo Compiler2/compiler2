@@ -12,11 +12,11 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&n1,&m1);
-	if(ch(n1,m1)==0) printf("error\n");
+	my_scanf("%d %d",&n1,&m1);
+	if(ch(n1,m1)==0) my_printf("error\n");
 	if(ch(n1,m1)==1) 
 	{
 		for(i=0;i<5;i++)
@@ -29,11 +29,11 @@ int main_bench()
 		{
 		    for(j=0;j<4;j++)
 			{
-			   printf("%d ",a[i][j]);
+			   my_printf("%d ",a[i][j]);
 			}
-			if(j==4) printf("%d\n",a[i][j]);
+			if(j==4) my_printf("%d\n",a[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

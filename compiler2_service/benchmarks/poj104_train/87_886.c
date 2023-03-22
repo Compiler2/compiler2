@@ -3,10 +3,10 @@
 int main_bench()
 {
     int a,b,c,d,e,f;
-	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 	while(a!=0){
-		printf("%d\n",(d+12-a)*3600+(e-b)*60+f-c);
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_printf("%d\n",(d+12-a)*3600+(e-b)*60+f-c);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		
 	}
 	return 0;

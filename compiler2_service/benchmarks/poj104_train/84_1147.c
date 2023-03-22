@@ -4,14 +4,14 @@ int main_bench(){
 int n,e;
 int x,y,z;
 int i;
-scanf("%d%d%d",&n,&x,&y);
+my_scanf("%d%d%d",&n,&x,&y);
 if(x<y){
 e=x;
 x=y;
 y=e;
 }
 for(i=1;i<=n-2;i++){
-scanf("%d",&z);
+my_scanf("%d",&z);
 if(x<z){
 e=x;
 x=z;
@@ -27,6 +27,6 @@ x=x;
 y=y;
 }
 }
-printf("%d\n%d",x,y);
+my_printf("%d\n%d",x,y);
 return 0;
 }

@@ -8,12 +8,12 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if(down(m,n)==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<=4;i++)
@@ -21,25 +21,25 @@ int main_bench()
 			if(i==m)
 			{
 				for(j=0;j<=3;j++)
-				printf("%d ",a[n][j]);
-				printf("%d",a[n][4]);
-				printf("\n");
+				my_printf("%d ",a[n][j]);
+				my_printf("%d",a[n][4]);
+				my_printf("\n");
 			}
 			if(i==n)
 			{
 				for(j=0;j<=3;j++)
-				printf("%d ",a[m][j]);
-				printf("%d",a[m][4]);
-				printf("\n");
+				my_printf("%d ",a[m][j]);
+				my_printf("%d",a[m][4]);
+				my_printf("\n");
 			}
 			else if(i!=m&&i!=n)
 			{
 				for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[i][j]);
+				my_printf("%d ",a[i][j]);
 			}
-			printf("%d",a[i][4]);
-			printf("\n");
+			my_printf("%d",a[i][4]);
+			my_printf("\n");
 			}
 		}
 	}

@@ -22,8 +22,8 @@ int main_bench()
 	{
 		if (a[i]!=0)
 		{
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 		}
 	}
-	printf("%d",a[j-1]);
+	my_printf("%d",a[j-1]);
 }

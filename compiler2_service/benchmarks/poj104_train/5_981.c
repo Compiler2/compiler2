@@ -4,7 +4,7 @@ int main_bench(){
 	int i,a=1,b=1;
 	double n,p=0.0,q;
 	char d1[500],d2[500];
-	scanf("%lf%s%s",&n,d1,d2);
+	my_scanf("%lf%s%s",&n,d1,d2);
 
 	if(strlen(d1)!=strlen(d2)){
 		a=0;
@@ -20,7 +20,7 @@ int main_bench(){
 		}
 	}
 	if(a==0 || b==0){
-		printf("error");
+		my_printf("error");
 	}
 
 	if(a==1 && b==1){
@@ -31,9 +31,9 @@ int main_bench(){
 		}
 		q=p/(strlen(d1));
 		if(q>n){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 

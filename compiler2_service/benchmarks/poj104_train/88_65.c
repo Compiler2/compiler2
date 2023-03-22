@@ -9,7 +9,7 @@ main_bench()
     for(a=0;a<=n-1;a++)
     {
         if((x[a]=='0')&&((x[a+1]>'9')||(x[a+1]<'1')))
-        printf("0\n");
+        my_printf("0\n");
         else;
         if((x[a]<='9')&&(x[a]>='1'))
         {
@@ -28,8 +28,8 @@ main_bench()
                     else;
                 }
                 for(c=a;c<=b-1;c++)
-                printf("%c",x[c]);
-                printf("\n");
+                my_printf("%c",x[c]);
+                my_printf("\n");
                 a=b-1;
             }
             else;

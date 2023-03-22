@@ -5,10 +5,10 @@ int main_bench()
 		
 		int a[200],b[200],c[200],x[200],y[200];
 		int i,d,n,e;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++)
 		{
-		scanf ("%d%d%d",&a[i],&b[i],&c[i]);
+		my_scanf ("%d%d%d",&a[i],&b[i],&c[i]);
 
 		if (b[i]==1&&((a[i]%100==0&&a[i]%400!=0)||a[i]%4!=0))
 		x[i]=1;
@@ -110,9 +110,9 @@ int main_bench()
 		d=y[i]-x[i];
 		e=x[i]-y[i];
 		if(d%7==0||e%7==0)	
-		printf("YES\n");
+		my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 		return 0;
 }

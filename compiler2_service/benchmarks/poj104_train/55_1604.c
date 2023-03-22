@@ -6,16 +6,16 @@ int main_bench()
 	int i=0,j;
 	char change1(char),change2(char);
 	char str[1000],put[1000];
-	scanf("%lld ",&a0);
+	my_scanf("%lld ",&a0);
 	do
 	{
-		scanf("%c",&str[i]);
+		my_scanf("%c",&str[i]);
 		if(str[i]>96) str[i]=str[i]-32;
 		i=i+1;
 	}
 	while(str[i-1]!=' ');
 	i=i-1;
-	scanf("%lld",&b);
+	my_scanf("%lld",&b);
 	a=1;
 	for(j=i-1;j>=0;j--)
 	{
@@ -32,10 +32,10 @@ int main_bench()
 	if(j>0)
 	{
 		for(i=j-1;i>=0;i--)
-	    printf("%c",put[i]);
+	    my_printf("%c",put[i]);
 	}
 	if(j==0)
-	printf("0");
+	my_printf("0");
 	return 0;
 }
 char change1(char m)

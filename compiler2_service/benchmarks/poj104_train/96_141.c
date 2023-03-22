@@ -8,12 +8,12 @@ char chufa4(char a,char b,char c);
 main_bench()
 {
     char a[100],d,e,f,g;
-    scanf("%s",a);
+    my_scanf("%s",a);
     int i=0,j=0,k=0;
     j=strlen(a);
     if(j==1||(j==2 && a[0]=='1' && (a[1]=='0'||a[1]=='1'||a[1]=='2')))
     {
-        printf("0\n%s",a);
+        my_printf("0\n%s",a);
         getchar();
         getchar();
         return 0;
@@ -86,12 +86,12 @@ main_bench()
         for(i=0;i<j-1;i++)
         {
             a[i]=a[i]+'0';
-            printf("%c",a[i]);                  
+            my_printf("%c",a[i]);                  
         }
         if(a[i]<10)
         {
             a[i]=a[i]+'0';
-            printf("\n%c",a[i]);
+            my_printf("\n%c",a[i]);
         }
         else 
         {
@@ -99,7 +99,7 @@ main_bench()
             g=a[i]%10;
             f=f+'0';
             g=g+'0';
-            printf("\n%c%c",f,g);
+            my_printf("\n%c%c",f,g);
         }
     }
     else
@@ -107,12 +107,12 @@ main_bench()
         for(i=1;i<j-1;i++)
         {
             a[i]=a[i]+'0';
-            printf("%c",a[i]);                  
+            my_printf("%c",a[i]);                  
         }
         if(a[i]<10)
         {
             a[i]=a[i]+'0';
-            printf("\n%c",a[i]);
+            my_printf("\n%c",a[i]);
         }
         else
         {
@@ -120,7 +120,7 @@ main_bench()
             g=a[i]%10;
             f=f+'0';
             g=g+'0';
-            printf("\n%c%c",f,g);
+            my_printf("\n%c%c",f,g);
         }
     }    
     return 0;        

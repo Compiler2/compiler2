@@ -4,12 +4,12 @@ int main_bench()
 {
 	char a[10000],b[10000];
 	int i,j,l,h;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l=strlen(a);
 	h=strlen(b);
 	if(l!=h)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -25,13 +25,13 @@ int main_bench()
 			}
 			if(j==h)
 			{
-				printf("NO");
+				my_printf("NO");
 				break;
 			}
 		}
 		if(i==l)
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 	}
 }

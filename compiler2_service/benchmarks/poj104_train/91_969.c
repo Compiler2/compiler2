@@ -9,7 +9,7 @@ int main_bench()
 	int i;
 	for(i=0;i<len;i++)
 	{
-		if(i==len-1)printf("%c",c[i]+(c[0]-' '+32));
-		else printf("%c",c[i]+(c[i+1]-' '+32));
+		if(i==len-1)my_printf("%c",c[i]+(c[0]-' '+32));
+		else my_printf("%c",c[i]+(c[i+1]-' '+32));
 	}
 }

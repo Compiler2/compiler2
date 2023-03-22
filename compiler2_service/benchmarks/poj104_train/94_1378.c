@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,t,sum=0,m,i,a,k=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int N[n];
     for(i=0;i<n;i++){
-        scanf("%d",&N[i]);
+        my_scanf("%d",&N[i]);
         if(N[i]%2!=0)
             sum++;
     }
@@ -30,9 +30,9 @@ int main_bench(){
     }
     for(m=0;m<sum-1;m++)
     {
-        printf("%d,",P[m]);
+        my_printf("%d,",P[m]);
     }
-    printf("%d",P[sum-1]);
+    my_printf("%d",P[sum-1]);
     return 0;
 }
 

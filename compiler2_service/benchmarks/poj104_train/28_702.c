@@ -29,9 +29,9 @@ int main_bench()
 	 }
 	 for(i=0;i<a-1;i++){
 		 if(sz[i]!=0)
-		 printf("%d,",sz[i]);
+		 my_printf("%d,",sz[i]);
 	 }
-	 printf("%d",sz[a-1]);
+	 my_printf("%d",sz[a-1]);
 	 return 0;
 }
 

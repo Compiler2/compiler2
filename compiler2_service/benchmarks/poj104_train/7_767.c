@@ -20,15 +20,15 @@ int main_bench()
 		}
 	}
 	if(x==0){
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	else{
 		for(i=0;i<x;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
-		printf("%s",b);
+		my_printf("%s",b);
 		for(i=x+l;i<k;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	return 0;

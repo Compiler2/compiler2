@@ -6,7 +6,7 @@ int main_bench()
 	for (i=1;i<=5;i++)
 	{
 		for (j=1;j<=5;j++)
-			scanf("%d",&a[i-1][j-1]);
+			my_scanf("%d",&a[i-1][j-1]);
 	}
 	for (i=1;i<=5;i++)
 	{
@@ -36,12 +36,12 @@ int main_bench()
 		{	
 			if (col[column-1]==row[ro-1])
 			{
-				printf("%d %d %d\n",ro,column,col[column-1]);
+				my_printf("%d %d %d\n",ro,column,col[column-1]);
 				exist=1;           
 			}
 		}
 	}
 	if (exist==0)
-		printf("not found");
+		my_printf("not found");
 	return 0;
 }

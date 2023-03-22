@@ -3,20 +3,20 @@
 int main_bench()
 {
 	int array[100][100], i, j, row, col, num, s, k;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	if(row>0 && row<100 && col>0 && col<100)
 	{
 		for(i=0; i<row; i++)
 		{
 			for(j=0; j<col; j++)
-				scanf("%d",&array[i][j]);
+				my_scanf("%d",&array[i][j]);
 		}
 
 		for(i=0, j=0, num=0; num<row*col; i++, j++)	
 		{
 			for(s=j; s<=(col-j-1); s++)
 			{
-				printf("%d\n",array[i][s]);
+				my_printf("%d\n",array[i][s]);
 				num++;
 				if(num>=row*col)
 					break;
@@ -25,7 +25,7 @@ int main_bench()
 				break;
 			for(k=i+1; k<(row-i-1); k++)
 			{
-				printf("%d\n",array[k][col-j-1]);
+				my_printf("%d\n",array[k][col-j-1]);
 				num++;			
 				if(num>=row*col)
 					break;
@@ -34,7 +34,7 @@ int main_bench()
 				break;
 			for(s=col-j-1; s>j; s--)
 			{
-				printf("%d\n",array[row-i-1][s]);
+				my_printf("%d\n",array[row-i-1][s]);
 				num++;
 				if(num>=row*col)
 					break;
@@ -43,7 +43,7 @@ int main_bench()
 				break;
 			for(k=row-i-1; k>i; k--)
 			{
-				printf("%d\n",array[k][j]);
+				my_printf("%d\n",array[k][j]);
 				num++;
 				if(num>=row*col)
 					break;

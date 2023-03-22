@@ -6,7 +6,7 @@ int main_bench()
     char b;
     while(1)
     {
-     scanf("%d%c",&a[n],&b);
+     my_scanf("%d%c",&a[n],&b);
      n++;
      
      if(b!=',')break;
@@ -26,11 +26,11 @@ int main_bench()
     {
      if(a[i]!=a[0])
      {
-      printf("%d\n",a[i]);
+      my_printf("%d\n",a[i]);
       m=1;
       break;
       }
      }
-    if(m==0)printf("No\n");
+    if(m==0)my_printf("No\n");
 }
      

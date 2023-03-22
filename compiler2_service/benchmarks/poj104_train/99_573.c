@@ -6,10 +6,10 @@ int main_bench()
 	int n,i,a[120];
 	int less=0,nd=0,rd=0,th=0;
 	double k,l,m,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -26,14 +26,14 @@ int main_bench()
 	l=(double)nd*100/n;
 	m=(double)rd*100/n;
 	t=(double)th*100/n;
-	printf("1-18: %.2lf",k);
-	printf("%%\n");
-	printf("19-35: %.2lf",l);
-	printf("%%\n");
-	printf("36-60: %.2lf",m);
-	printf("%%\n");
-	printf("60??: %.2lf",t);
-	printf("%%\n");
+	my_printf("1-18: %.2lf",k);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf",l);
+	my_printf("%%\n");
+	my_printf("36-60: %.2lf",m);
+	my_printf("%%\n");
+	my_printf("60??: %.2lf",t);
+	my_printf("%%\n");
 	return 0;
 
 }

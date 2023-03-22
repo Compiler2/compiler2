@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,i,w=0;
 	int a[50],j=1;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	int huiwen(int i);
 	int susu(int i);
 	for (i=m;i<=n;i++)
@@ -18,12 +18,12 @@ int main_bench()
 		}
 	}
 	if (j==1)
-		printf("no");
+		my_printf("no");
 	else 
 	{
 		for (i=1;i<j-1;i++)
-			printf("%d,",a[i]);
-		printf("%d",a[i]);
+			my_printf("%d,",a[i]);
+		my_printf("%d",a[i]);
 	}
 	return 0;
 

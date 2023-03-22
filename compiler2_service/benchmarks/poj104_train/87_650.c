@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,a[100],b[100],c[100],d[100],e[100],f[100],sum[100],m,n;
 	for(i=0;i<=100;i++){
-		scanf("%d %d %d %d %d %d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+		my_scanf("%d %d %d %d %d %d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 		if(a[i]==0){
 			break;
 		}
@@ -16,7 +16,7 @@ int main_bench()
 		sum[i]=n-m;
 	}
 	for(i=0;i<j;i++){
-		printf("%d\n",sum[i]);
+		my_printf("%d\n",sum[i]);
 	}
 	return 0;
 }

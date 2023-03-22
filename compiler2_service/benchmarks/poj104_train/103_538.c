@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,n;
     char l[1000];
-    scanf("%s",l);
+    my_scanf("%s",l);
     n=1;
     for(i=0;l[i]!='\0';i++)
    {
@@ -18,11 +18,11 @@ int main_bench()
     }
     else
       { if(l[i]>='A'&&l[i]<='Z')
-       { printf("(%c,%d)",l[i],n);
+       { my_printf("(%c,%d)",l[i],n);
         n=1;}
        if(l[i]>='a'&&l[i]<='z')
        {l[i]=l[i]-'a'+'A';
-       printf("(%c,%d)",l[i],n);
+       my_printf("(%c,%d)",l[i],n);
         n=1;}}
    }
 }

@@ -21,15 +21,15 @@ int main_bench()
 					{
 						for(y=0;y<j;y++)
 						{
-							printf("%c",a[y]);
+							my_printf("%c",a[y]);
 						}
 						for(y=0;y<strlen(c);y++)
 						{
-							printf("%c",c[y]);
+							my_printf("%c",c[y]);
 						}
 						for(y=j+strlen(b);y<strlen(a);y++)
 						{
-							printf("%c",a[y]);
+							my_printf("%c",a[y]);
 						}
 						q++;
 						break;
@@ -42,7 +42,7 @@ int main_bench()
 			}
 			if(j==strlen(a)-1)
 			{
-				printf("%s",a);
+				my_printf("%s",a);
 			break;
 			}
 		}

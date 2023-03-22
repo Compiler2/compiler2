@@ -18,12 +18,12 @@
      {
         for(j=0;j<5;j++)
          {
-            scanf("%d",&x[i][j]);
+            my_scanf("%d",&x[i][j]);
           }
       } 
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       if(hh(m,n)==0)
-       printf("error");
+       my_printf("error");
       else{
             for(i=0;i<5;i++)
             {
@@ -36,9 +36,9 @@
            for(j=0;j<5;j++)
            {
                if(j==4)
-                 printf("%d\n",x[i][4]);
+                 my_printf("%d\n",x[i][4]);
              else
-                 printf("%d ",x[i][j]);
+                 my_printf("%d ",x[i][j]);
             }
            }
          return 0;

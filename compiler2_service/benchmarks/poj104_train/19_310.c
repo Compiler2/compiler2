@@ -36,32 +36,32 @@ int main_bench()
 		{
 			if(bijiao(i,str,len1,a)==1&&str[i+len1]==' ')
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				i=i+len1-1;
 			}
 			else
 			{
-				printf("%c",str[i]);
+				my_printf("%c",str[i]);
 			}
 		}
 		else
 		{
 			if(bijiao(i,str,len1,a)==1&&str[i+len1]==' '&&str[i-1]==' ')
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				i=i+len1-1;
 			}
 			else if(bijiao(i,str,len1,a)==1&&i+len1==len&&str[i-1]==' ')
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				i=i+len1-1;
 			}
 			else
 			{
-				printf("%c",str[i]);
+				my_printf("%c",str[i]);
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

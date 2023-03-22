@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int i,j,n,x=0,y=0,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1||n==2||n==3||n==4){
-		printf("empty");
+		my_printf("empty");
 	}
 	if(n>4){
 	    for(i=3;i<=n-2;i++){
@@ -22,7 +22,7 @@ int main_bench(){
 				}
 			}
 		    if(y==2){
-				printf("%d %d\n",i,i+2);
+				my_printf("%d %d\n",i,i+2);
 			}
 		
 		}

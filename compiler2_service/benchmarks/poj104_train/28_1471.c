@@ -16,18 +16,18 @@ int main_bench()
 		{
 			if(tag==1&&flag==1)
 			{
-				printf("%d",len);
+				my_printf("%d",len);
 				flag=0;
 			}
-			else if(tag==1&&flag==0) printf(",%d",len);
+			else if(tag==1&&flag==0) my_printf(",%d",len);
 			else continue;
 			tag=0;
 			len=0;
 		}
 		else if(c[i]=='\0')
 		{
-			if(flag==0) printf(",%d",len);
-			else if(flag==1) printf("%d",len);
+			if(flag==0) my_printf(",%d",len);
+			else if(flag==1) my_printf("%d",len);
 			break;
 		}
 	}

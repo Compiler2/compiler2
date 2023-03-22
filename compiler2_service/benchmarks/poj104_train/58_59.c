@@ -4,7 +4,7 @@
 main_bench(){
        char *p;
        int i,j,len,n,*judge;
-       scanf("%d\n",&n);
+       my_scanf("%d\n",&n);
        judge=(int*)malloc(32*sizeof(int));
        
        for(i=0;i<n;i++){
@@ -20,6 +20,6 @@ main_bench(){
          else *(judge+i)=0;
        }
        for(i=0;i<n;i++){
-         printf("%d\n",*(judge+i));
+         my_printf("%d\n",*(judge+i));
        }
 }

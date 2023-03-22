@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int a[300],b[101]={0},i,t,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++){
 		if(b[a[i]]==0){
-            printf("%d",a[i]);
+            my_printf("%d",a[i]);
 			b[a[i]]++;
 			break;
 		}
@@ -16,7 +16,7 @@ int main_bench()
 	t=i+1;
 	for(i=t;i<n;i++){
 		if(b[a[i]]==0){
-            printf(",%d",a[i]);
+            my_printf(",%d",a[i]);
 			b[a[i]]++;
 		}
 	}

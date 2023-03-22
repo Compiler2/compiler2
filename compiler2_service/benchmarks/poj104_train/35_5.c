@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n[100][100],s[100][100]={0},a,b,i,j,max,min,e=0;
-scanf("%d,%d",&a,&b);
+my_scanf("%d,%d",&a,&b);
 for(i=0;i<a;i++)
 	for(j=0;j<b;j++)
-		scanf("%d",&n[i][j]);
+		my_scanf("%d",&n[i][j]);
 for(i=0;i<a;i++)
 	{
 	max=n[i][0];
@@ -25,6 +25,6 @@ for(j=0;j<b;j++)
 	}
 for(i=0;i<a;i++)
 	for(j=0;j<b;j++)
-		if(s[i][j]==2) {printf("%d+%d\n",i,j);e++;}
-if (e==0) printf("No");
+		if(s[i][j]==2) {my_printf("%d+%d\n",i,j);e++;}
+if (e==0) my_printf("No");
 }

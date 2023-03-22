@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,k,z;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
         k=0;
         char sz[21];
-        scanf("%s",sz);
+        my_scanf("%s",sz);
         z=strlen(sz);
         if((sz[0]<='z'&&sz[0]>='a')||(sz[0]<='Z'&&sz[0]>='A')||(sz[0]=='_')){
             k++;
@@ -20,8 +20,8 @@ int main_bench(){
         
          }
         
-      if(k>0){printf("yes\n");}
-      else{printf("no\n");}
+      if(k>0){my_printf("yes\n");}
+      else{my_printf("no\n");}
    
     }
   

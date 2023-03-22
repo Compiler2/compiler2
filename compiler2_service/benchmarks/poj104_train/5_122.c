@@ -23,11 +23,11 @@ int main_bench()
 	flag++;
 	}
 	if(flag==0||b==1)
-		printf("error");
+		my_printf("error");
 	else{
 	if(a>lv){
-		printf("yes");}
+		my_printf("yes");}
 	else
-		printf("no");}
+		my_printf("no");}
 	return 0;
 }

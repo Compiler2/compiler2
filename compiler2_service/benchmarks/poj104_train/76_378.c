@@ -2,9 +2,9 @@
 
 int main_bench(){ 
   int n,a[10001],b[10001],c[10001],i,j,max,M,m,temp,k,s,h=1;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-  scanf("%d%d",&a[i],&b[i]); 
+  my_scanf("%d%d",&a[i],&b[i]); 
   for(j=0;j<n;j++) {
      for(i=n-1;i>h-1;i--)
      if(a[i]<a[i-1]) {
@@ -27,8 +27,8 @@ int main_bench(){
   for(i=0;i<n-1;i++) {
       
      if(b[i]<a[i+1]) { 
-         printf("no");
+         my_printf("no");
 		 break;} 
-	 if(i==n-2){printf("%d %d",m,M);}
+	 if(i==n-2){my_printf("%d %d",m,M);}
 }
   return 0;}

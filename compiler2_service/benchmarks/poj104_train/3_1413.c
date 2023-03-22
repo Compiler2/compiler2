@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,p,sum,m,k;
 	sum=1;
 	int a[1000],b[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b[i]=a[i];
 	}
 	for(p=0;p<n;p++){
@@ -21,10 +21,10 @@ int main_bench(){
 		}
 	}
 	if(sum==0){
-		printf("yes");
+		my_printf("yes");
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

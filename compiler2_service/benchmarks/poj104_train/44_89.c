@@ -22,7 +22,7 @@ int main_bench()
 {
 	int num[6];
 	for(int i=0;i<6;i++)
-	scanf("%d",&num[i]);
+	my_scanf("%d",&num[i]);
 	for(int i=0;i<6;i++)
-	printf("%d\n",reverse(num[i]));
+	my_printf("%d\n",reverse(num[i]));
 }

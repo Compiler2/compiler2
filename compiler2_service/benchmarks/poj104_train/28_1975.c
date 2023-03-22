@@ -18,13 +18,13 @@ int main_bench(){
       if(A[i]!=' '){
           if(A[i+1]=='\0'){
           b=b+1;
-          printf("%d",b);
+          my_printf("%d",b);
           break;
       }
       b=b+1;  
       }
       else{
-      printf("%d,",b);
+      my_printf("%d,",b);
       b=0;
       }
    }

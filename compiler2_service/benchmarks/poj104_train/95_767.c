@@ -16,9 +16,9 @@ for(i=0;i<n2;i++)
 str2[i]=str2[i]+32;
 }
 if(strcmp(str1,str2)>0)
-{printf(">");}
+{my_printf(">");}
 else if(strcmp(str1,str2)<0)
-{printf("<");}
+{my_printf("<");}
 else if(strcmp(str1,str2)==0)
-{printf("=");}
+{my_printf("=");}
 }

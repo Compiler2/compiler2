@@ -30,7 +30,7 @@ int power(int a,int b)
 int main_bench()
 {
 	int n1,n2,i,j,o,t1,t2;
-	scanf("%d %d",&n1,&n2);
+	my_scanf("%d %d",&n1,&n2);
 	find(n1);
 	t1=x1;
 	for(i=x1;i>=0;i--)
@@ -55,7 +55,7 @@ int main_bench()
 	{
 		if(a2[i]==a1[i])
 		{
-			printf("%d\n",a1[i]);
+			my_printf("%d\n",a1[i]);
 			break;
 		}
 	}

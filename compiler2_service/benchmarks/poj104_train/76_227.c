@@ -3,9 +3,9 @@
 int main_bench(){
     int s[100000][2],n,i,a=0,b=0,d;
 	double c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d%d",&s[i][0],&s[i][1]);
+	my_scanf("%d%d",&s[i][0],&s[i][1]);
 	}
 
 	for(i=0;i<n;i++){
@@ -25,13 +25,13 @@ int main_bench(){
 			    break;
 			}
 			if(i==n-1){
-			printf("no");
+			my_printf("no");
 			return 0;
 			}
 		}
 	}
 
-	printf("%d %d",s[a][0],s[b][1]);
+	my_printf("%d %d",s[a][0],s[b][1]);
     
 return 0;
 }

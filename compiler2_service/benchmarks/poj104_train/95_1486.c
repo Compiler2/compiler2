@@ -14,10 +14,10 @@ for (i=0;i<lenb;i++)
 for (i=0;i<=lena;i++)
 {
 k=k+1;
-if (a[i]<b[i]) {printf ("<"); goto end_loop;}
-if (a[i]>b[i]) {printf (">"); goto end_loop;}
+if (a[i]<b[i]) {my_printf ("<"); goto end_loop;}
+if (a[i]>b[i]) {my_printf (">"); goto end_loop;}
 }
-if (k=lena) printf ("=");
+if (k=lena) my_printf ("=");
 end_loop:
 return 0;
 }

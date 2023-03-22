@@ -6,18 +6,18 @@ int main_bench()
 	int reverse(int num); 
 	
 	int num=0;
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
-	scanf("%d",&num);
-	printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
+	my_scanf("%d",&num);
+	my_printf("%d\n", reverse(num));
 }
 
 int reverse (int num)

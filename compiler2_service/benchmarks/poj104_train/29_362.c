@@ -5,7 +5,7 @@ main_bench()
    float a[1000],b[1000];
    int n,m,i,j,k;
    float sum;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    a[0]=2;
    a[1]=3;
    b[0]=1;
@@ -14,7 +14,7 @@ main_bench()
    {
       sum=0;
        
-       scanf("%d",&m);
+       my_scanf("%d",&m);
      
     
        for(j=0;j<m;j++)
@@ -26,7 +26,7 @@ main_bench()
           }
           sum=sum+(float)(a[j])/(float)(b[j]);
        }
-       printf("%.3f\n",sum);
+       my_printf("%.3f\n",sum);
    }
    getchar();
    getchar();

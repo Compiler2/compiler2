@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,j,a=2,b=1,t,i;
 	float s,k=0.0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=1;i<=m;i++)
 	{
@@ -12,10 +12,10 @@ int main_bench()
 		a=2;
 		b=1;
 		
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1)
 		{
-			printf("2.000\n");
+			my_printf("2.000\n");
 		}
 		else
 		{
@@ -30,7 +30,7 @@ int main_bench()
 		 }
 		 k=k+2;
 		 
-		 printf("%.3f\n",k);
+		 my_printf("%.3f\n",k);
 		 
 		}
 		

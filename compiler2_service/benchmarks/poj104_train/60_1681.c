@@ -4,7 +4,7 @@ int main_bench()
 {
  	int n,i,j,m=0,num=0;
  	int sz[10000];
- 	scanf("%d",&n);
+ 	my_scanf("%d",&n);
  	for(i=2;i<=n;i++){
 			for(j=2;j<=i;j++){
 				if(i%j==0) break;
@@ -14,15 +14,15 @@ int main_bench()
 				m++;
 				}
 			}
-	if(m<2) printf("empty");
+	if(m<2) my_printf("empty");
 	else{
 		for(i=1;i<m;i++){
 		if(sz[i]-sz[i-1]==2){
-			printf("%d %d\n",sz[i-1],sz[i]);
+			my_printf("%d %d\n",sz[i-1],sz[i]);
 			num++;
 			}
 		}
-	if(num==0) printf("empty");
+	if(num==0) my_printf("empty");
 	}
 	
  	

@@ -5,9 +5,9 @@ int main_bench()
 	int N,i,e;
 	int m=1;
 	int xh[100000];
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 	for(i=1;i<=N;i++){
-		scanf("%d",&xh[i]);
+		my_scanf("%d",&xh[i]);
 	}
 	int ch[5000];
 	for(i=1;i<=N;i++){
@@ -26,8 +26,8 @@ int main_bench()
 		}
 	}
 	for(i=m-1;i>=2;i--){
-	printf("%d,",ch[i]);
+	my_printf("%d,",ch[i]);
 	}
-printf("%d",ch[1]);
+my_printf("%d",ch[1]);
 	return 0;
 }

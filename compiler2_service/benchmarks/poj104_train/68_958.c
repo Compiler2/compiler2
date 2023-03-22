@@ -25,7 +25,7 @@ int su(int x)
 int main_bench()
 {
 	int i,j,n,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n%2==0)
 	{
 		for(i=6;i<=n;i+=2) 
@@ -37,7 +37,7 @@ int main_bench()
 					k=i-j;
 					if(su(k))
 					{
-						printf("%d=%d+%d\n",i,j,k);
+						my_printf("%d=%d+%d\n",i,j,k);
 						break;
 					}
 				}
@@ -55,7 +55,7 @@ int main_bench()
 					k=i-j;
 					if(su(k))
 					{
-						printf("%d=%d+%d\n",i,j,k);
+						my_printf("%d=%d+%d\n",i,j,k);
 						break;
 					}
 				}

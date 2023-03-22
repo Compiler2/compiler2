@@ -19,9 +19,9 @@ main_bench()
                  else 
                  {
                       if(c>='a'&&c<='z')
-                      printf("(%c,%d)",c+'A'-'a',j);
+                      my_printf("(%c,%d)",c+'A'-'a',j);
                       else
-                      printf("(%c,%d)",c,j);
+                      my_printf("(%c,%d)",c,j);
                       j=1;
                       c=b[i];
                  }

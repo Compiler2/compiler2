@@ -4,9 +4,9 @@ int main_bench()
 {
 	char word[201][30]={0};
 	int i,j,n,a[201]={0},flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",word+i);
+		my_scanf("%s",word+i);
 		a[i]=strlen(*(word+i));
 	}
 	for(i=0;i<n;i++){
@@ -19,7 +19,7 @@ int main_bench()
 		}
 		if(flag==1) continue;
 		else if(flag==0){
-			printf("%s\n",*(word+i));
+			my_printf("%s\n",*(word+i));
 			break;
 		}
 	}
@@ -33,7 +33,7 @@ int main_bench()
 		}
 		if(flag==1) continue;
 		else if(flag==0){
-			printf("%s\n",*(word+i));
+			my_printf("%s\n",*(word+i));
 			break;
 		}
 	}

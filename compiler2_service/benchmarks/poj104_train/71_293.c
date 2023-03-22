@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int y,m1,m2,i,j,n,e,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		c=0;
 		if(m1>m2)
 		{
@@ -30,9 +30,9 @@ int main_bench()
 
 		}
 		if(c%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	
 	}
 	return 0;

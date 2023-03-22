@@ -19,7 +19,7 @@ void print(int a[], int l)
 	{ k--;
 	}
 	for (i=k;i>=0;i--)
-	{ printf("%d",a[i]);
+	{ my_printf("%d",a[i]);
 	}
 }
 
@@ -44,14 +44,14 @@ int main_bench()
 	char s1[101],s2[101];
 	int a[101],b[101],c[101];
 	int al,bl,cl,i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-	{   scanf ("%s%s",s1,s2);
+	{   my_scanf ("%s%s",s1,s2);
 	    al=trans(s1,a);
 		bl=trans(s2,b);
 		cl=minus(a,al,b,bl,c);
 		print(c,cl);
-		printf("\n");
+		my_printf("\n");
 	}
 
 	return 0;

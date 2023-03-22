@@ -13,7 +13,7 @@ int main_bench()
 		}
 		if(su==1){a[k]=i;k++;}
 	}
-	scanf("%d",&put);
+	my_scanf("%d",&put);
 	for(i=1;i<2000;i++)
 	{
 		temp=put-a[i];
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			if(a[t]==temp)
 			{
-				printf("%d %d\n",a[i],a[t]);
+				my_printf("%d %d\n",a[i],a[t]);
 			}
 			if(a[t]>temp)break;
 		}

@@ -7,12 +7,12 @@ int main_bench()
 	int a[100];
 	int b[100];
 	double c[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(b[i]>=90){
@@ -44,6 +44,6 @@ int main_bench()
 		K=K+a[i];
 	}
 	G=1.0*S/K;
-	printf("%.2lf",G);
+	my_printf("%.2lf",G);
 	return 0;
 }

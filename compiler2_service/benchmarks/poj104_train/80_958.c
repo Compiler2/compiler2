@@ -49,12 +49,12 @@ long int Jisuan(int year,int month,int day)
 int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2;
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	long int Cal1,Cal2;
 	Cal1=Jisuan(y1,m1,d1);
 	Cal2=Jisuan(y2,m2,d2);
 	int Con;
 	Con=Cal2-Cal1;
-	printf("%d",Con);
+	my_printf("%d",Con);
 	return 0;
 }

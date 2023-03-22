@@ -4,10 +4,10 @@ int main_bench()
 {
 	int m,n[1000],i,j,l,e,a=2,b=1;
 	double s[1000]={0},t[1000]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
     for(i=0;i<m;i++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.3lf\n",s[i]);
+		my_printf("%.3lf\n",s[i]);
 	}
 	return 0;
 }

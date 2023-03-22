@@ -5,11 +5,11 @@ int main_bench()
 {
  int * array;
  int n,i,buffer;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  array=(int *)malloc(sizeof(int) * n);
  for (i=0;i<n;i++)
  {
-  scanf("%d",(array+i));
+  my_scanf("%d",(array+i));
  }
  for (i=0;i<=(n-1)/2;i++)
  {
@@ -23,12 +23,12 @@ int main_bench()
  {
   if (first)
   {
-   printf("%d",* (array+i));
+   my_printf("%d",* (array+i));
    first=0;
   }
   else 
   {
-   printf(" %d",* (array+i));
+   my_printf(" %d",* (array+i));
   }
  }
  free(array);

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char danchi[1000];
 	char e[50][1000],a[1000],b[1000];gets(danchi);
-         scanf("%s %s",a,b);
+         my_scanf("%s %s",a,b);
 	int i,j,g=0,l=0,v=0,m=0;
 	int max=0,min=100,max1,min1;
 	
@@ -24,8 +24,8 @@ int main_bench()
                 if(v>c)break;
 	}
 
-for(i=0;i<m;i++){if(strcmp(e[i],a)==0){printf("%s ",b);}else{printf("%s ",e[i]);}}
-if(strcmp(e[m],a)==0){printf("%s",b);}else{printf("%s",e[m]);}
+for(i=0;i<m;i++){if(strcmp(e[i],a)==0){my_printf("%s ",b);}else{my_printf("%s ",e[i]);}}
+if(strcmp(e[m],a)==0){my_printf("%s",b);}else{my_printf("%s",e[m]);}
 
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
     int n,j,i,k,t=1,l,p=0;
     int a[50000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     a[0]=1;
     l=1;
     for(i=0;i<n;i++)
@@ -22,7 +22,7 @@ int main_bench()
                     
     } 
     for(i=l-1;i>=0;i--)
-    printf("%d",a[i]);
+    my_printf("%d",a[i]);
     getchar();getchar();getchar();
     
     }

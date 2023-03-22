@@ -13,11 +13,11 @@ int main_bench()
 	{
 		if (a[i]>96) a[i]=a[i]-32;
 		if (b[i]>96) b[i]=b[i]-32;
-		if (a[i]>b[i]) {printf (">");p=0;break;}
-		else if (a[i]<b[i]) {printf ("<");p=0;break;}
+		if (a[i]>b[i]) {my_printf (">");p=0;break;}
+		else if (a[i]<b[i]) {my_printf ("<");p=0;break;}
 	}
     if (p) 
-		if (m>n) printf (">");
-		else if (m=n) printf("=");
-		     else printf ("<");
+		if (m>n) my_printf (">");
+		else if (m=n) my_printf("=");
+		     else my_printf ("<");
 }

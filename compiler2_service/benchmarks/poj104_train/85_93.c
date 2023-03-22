@@ -6,10 +6,10 @@ int main_bench()
 	char p[100][20];
 	int n,i,j;
          int k=1,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	
-		scanf("%s",p[i]);
+		my_scanf("%s",p[i]);
 	
 	for(i=0;i<n;i++)
 	{
@@ -26,9 +26,9 @@ int main_bench()
 		}
 		c=strlen(p[i]);
 		if(k==c)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-		printf("no\n");
+		my_printf("no\n");
 		k=1;
 
 	}

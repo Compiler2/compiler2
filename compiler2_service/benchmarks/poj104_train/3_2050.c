@@ -3,10 +3,10 @@
 
 int main_bench(){
 	int as[1000],n,k,c;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",&(as[i]));
+		my_scanf("%d",&(as[i]));
 	}
 	int d=0;
 	for(int j=0;j<n;j++)
@@ -16,7 +16,7 @@ int main_bench(){
             c=as[j]+as[l];
 			if(c==k)
 			{
-				printf("yes");
+				my_printf("yes");
 				d++;
 				break;
 			}
@@ -25,6 +25,6 @@ int main_bench(){
 			break;
 	}
 	if(d==0)
-		printf("no");
+		my_printf("no");
 	return 0;
 }

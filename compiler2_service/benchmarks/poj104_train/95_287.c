@@ -17,13 +17,13 @@ int main_bench()
 			c[j]=c[j]+32;
 	}
 	if(strcmp(a,c)>0) {
-		printf(">\n");
+		my_printf(">\n");
 	}
 	else if(strcmp(a,c)<0) {
-		printf("<\n");
+		my_printf("<\n");
 	}
 	else {
-		printf("=\n");
+		my_printf("=\n");
 	}
 	
 	return 0;

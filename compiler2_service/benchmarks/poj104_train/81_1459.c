@@ -6,20 +6,20 @@ int main_bench()
 	int i,j,n,m,shuzu[5][5],(*s)[5]=shuzu;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++)
-			scanf("%d",&*(*(s+i)+j));
+			my_scanf("%d",&*(*(s+i)+j));
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(jiaohuan(s,n,m)==0)
-		printf("error");
+		my_printf("error");
 	else{
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
 				if(j==0)
-					printf("%d",*(*(s+i)+j));
+					my_printf("%d",*(*(s+i)+j));
 				else
-					printf(" %d",*(*(s+i)+j));
+					my_printf(" %d",*(*(s+i)+j));
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

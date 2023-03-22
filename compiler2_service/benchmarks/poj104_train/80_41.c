@@ -6,8 +6,8 @@ int main_bench()
 	int a[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int b[12]={31,28,31,30,31,30,31,31,30,31,30,31};
         
-	scanf("%d %d %d",&sy,&sm,&sd);
-    scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d",&sy,&sm,&sd);
+    my_scanf("%d %d %d",&ey,&em,&ed);
     sum=0;
 	if (sy!=ey)
 	{
@@ -77,5 +77,5 @@ int main_bench()
 				sum=sum+ed-sd+1;
     	}
 	}
-	printf("%d\n",sum-1);
+	my_printf("%d\n",sum-1);
 }

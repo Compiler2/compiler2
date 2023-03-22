@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,i,t;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	t=0;
 	for (i=1;i<m;i++)
 	{
@@ -34,5 +34,5 @@ int main_bench()
 		}
 	}
 	t+=d;
-	printf("%d",t);	
+	my_printf("%d",t);	
 }

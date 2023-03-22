@@ -46,10 +46,10 @@ for(i=1,max=c[0];i<1000;i++)
 for(i=k;i<n;i++)
 {
 	if((s2[i]>=65&&s2[i]<=90)||(s2[i]>=97&&s2[i]<=122))
-		printf("%c",s2[i]);
+		my_printf("%c",s2[i]);
 	else break;
 }
-printf("\n");
+my_printf("\n");
 for(i=1,min=c[0],l=0;i<1000;i++)
 {
 	if(c[i]<min&&c[i]!=0)
@@ -62,7 +62,7 @@ for(i=1,min=c[0],l=0;i<1000;i++)
 for(i=l;i<n;i++)
 {
 	if((s2[i]>=65&&s2[i]<=90)||(s2[i]>=97&&s2[i]<=122))
-		printf("%c",s2[i]);
+		my_printf("%c",s2[i]);
 	else break;
 }
 }

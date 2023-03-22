@@ -26,7 +26,7 @@ int main_bench()
 			flag = 0;
 	}
 	for(i = 0 ; i <= length - 1; i ++)
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 	return 0;
 }
 

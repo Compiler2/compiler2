@@ -10,7 +10,7 @@ int main_bench()
 			str[j]=c[i],j++;
 		else
 			if(j!=0)
-			str[j]='\0',printf("%s\n",str),j=0;
+			str[j]='\0',my_printf("%s\n",str),j=0;
 		return 0;
 }
 

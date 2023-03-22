@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a,b,c,m,n;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	m=a-1+(a-1)/400*97+(a-1)%400/4-(a-1)%400/100;
 	if(a%4==0&&a%100!=0||a%400==0){
 		if(b==1){	n=c;	}
@@ -31,12 +31,12 @@ int main_bench(){
 		if(b==11){	n=3+c;	}
 		if(b==12){	n=5+c;	}
 	}
-	if((m+n)%7==1){ 	printf("Mon.");     }
-	if((m+n)%7==2){ 	printf("Tue.");     }
-	if((m+n)%7==3){ 	printf("Wed.");     }
-	if((m+n)%7==4){ 	printf("Thu.");     }
-	if((m+n)%7==5){ 	printf("Fri.");     }
-	if((m+n)%7==6){ 	printf("Sat.");     }
-	if((m+n)%7==0){ 	printf("Sun.");     }
+	if((m+n)%7==1){ 	my_printf("Mon.");     }
+	if((m+n)%7==2){ 	my_printf("Tue.");     }
+	if((m+n)%7==3){ 	my_printf("Wed.");     }
+	if((m+n)%7==4){ 	my_printf("Thu.");     }
+	if((m+n)%7==5){ 	my_printf("Fri.");     }
+	if((m+n)%7==6){ 	my_printf("Sat.");     }
+	if((m+n)%7==0){ 	my_printf("Sun.");     }
 	return 0;
 }

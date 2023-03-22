@@ -5,7 +5,7 @@ int main_bench()
 {
 
  int n,i,s[10000],j=0,p=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  
  for(i=2;i<=n;i++)
    {
@@ -19,13 +19,13 @@ int main_bench()
 
       for(int m=1;m<=j-1;m++)
         {if(s[m]-s[m-1]==2)
-           {printf("%d %d\n",s[m-1],s[m]);{p++;}}
+           {my_printf("%d %d\n",s[m-1],s[m]);{p++;}}
         }
-   if(p==0){printf("empty");}     
+   if(p==0){my_printf("empty");}     
            
      
  int y;
- scanf("%d",&y) ;   
+ my_scanf("%d",&y) ;   
         
  return 0;
 }

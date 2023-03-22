@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,sza[200],szb[200],a=0,b=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++){
-		scanf ("%d%d",&(sza[i]),&(szb[i]));
+		my_scanf ("%d%d",&(sza[i]),&(szb[i]));
 		if ((sza[i]==0&&szb[i]==1)||(sza[i]==1&&szb[i]==2)||(sza[i]==2&&szb[i]==0)){
 			a++;
 		}else if ((szb[i]==0&&sza[i]==1)||(szb[i]==1&&sza[i]==2)||(szb[i]==2&&sza[i]==0)){
@@ -14,10 +14,10 @@ int main_bench(){
 	}
 	}
 	if (a==b){
-		printf ("Tie");
+		my_printf ("Tie");
 	}else { if (a>b){
-		printf ("A");
-	}else {printf ("B");
+		my_printf ("A");
+	}else {my_printf ("B");
 	}
 	}
      return 0;

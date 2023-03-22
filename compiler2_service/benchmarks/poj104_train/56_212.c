@@ -5,7 +5,7 @@ int main_bench()
 	int x,y,a1,a2,a3,a4,a5,i=1;
 	for(;i<=4;i=i+1)
 	{
-    scanf("%d\n",&x);
+    my_scanf("%d\n",&x);
 	a1=x/10000;
 	a2=(x-a1*10000)/1000;
 	a3=(x-a1*10000-a2*1000)/100;
@@ -24,7 +24,7 @@ int main_bench()
 					y=a5*10+a4;
 				else
 					y=a5;
-	printf("%d\n",y);
+	my_printf("%d\n",y);
 	}
          return 0;
 }

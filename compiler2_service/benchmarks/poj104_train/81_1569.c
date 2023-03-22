@@ -23,20 +23,20 @@ int panbie(int p,int q)
   int b[5][5];
   for(i=0;i<5;i++)
   for(j=0;j<5;j++)
-   scanf("%d",&b[i][j]);
-   scanf("%d %d",&n,&m);
+   my_scanf("%d",&b[i][j]);
+   my_scanf("%d %d",&n,&m);
   if(panbie(n,m))
   { 
 	huanhang(b,n,m);
    for(i=0;i<5;i++)
    {
-	 printf("%d",b[i][0]);
+	 my_printf("%d",b[i][0]);
 	 for(j=1;j<5;j++)
-     printf(" %d",b[i][j]);
-     printf("\n");
+     my_printf(" %d",b[i][j]);
+     my_printf("\n");
    }
   }
   else
-   printf("error");
-  printf("\n");
+   my_printf("error");
+  my_printf("\n");
  }

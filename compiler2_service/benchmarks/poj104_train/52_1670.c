@@ -6,12 +6,12 @@ int main_bench()
 	int *start,*qian,*hou;
 	qian=b;
 	hou=c;
-	scanf("%d",&n);
-	scanf("%d",&m);
+	my_scanf("%d",&n);
+	my_scanf("%d",&m);
 	
 	for (start=a;start<a+n;start++)
 	{
-	    scanf("%d",&*start);
+	    my_scanf("%d",&*start);
 	}                                      
     
     for (i=0;i<n-m;i++)
@@ -24,6 +24,6 @@ int main_bench()
     a[i]=*(qian+i-m);
     
     for (i=0;i<n-1;i++)
-    printf("%d ",*(a+i));
-    printf("%d",*(a+n-1));
+    my_printf("%d ",*(a+i));
+    my_printf("%d",*(a+n-1));
 }

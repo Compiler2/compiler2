@@ -11,15 +11,15 @@ int main_bench()
  {
 	sz[i]=sz[i-1]+sz[i-2];
  }
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(k=0;k<m;k++)
  {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
 	   r+=sz[i+1]*1.00000/sz[i]*1.0000;
 	}
-    printf("%.3lf\n",r);
+    my_printf("%.3lf\n",r);
 	r=0;
  }
 	return 0;

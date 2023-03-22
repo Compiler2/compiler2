@@ -3,12 +3,12 @@
 int main_bench()
 {
     char a[10000],b[10000];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     int length1,length2,i,j,t=0;
     length1=strlen(a);
     length2=strlen(b);
-    if(length1!=length2) printf("NO\n");
+    if(length1!=length2) my_printf("NO\n");
     else
     {
         int aa[10000],bb[10000];
@@ -32,8 +32,8 @@ int main_bench()
         {
               if(bb[j]==0) t++;
         }
-        if(t==length1) printf("YES\n");
-        else printf("NO\n");
+        if(t==length1) my_printf("YES\n");
+        else my_printf("NO\n");
     }
                
     getchar();

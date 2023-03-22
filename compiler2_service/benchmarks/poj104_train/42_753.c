@@ -5,13 +5,13 @@ int main_bench()
 	int n,k;
 	int *p,*head,*chuanwei;
 	int remaining;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	remaining=n;
 	p=(int *)calloc(n+1,sizeof(int));
 	head=p;
 	for(;p<head+n;p++)
-		scanf("%d",p);
-	scanf("%d",&k);
+		my_scanf("%d",p);
+	my_scanf("%d",&k);
 	for(p=head;p<head+remaining;p++)
 	{
 		while(*p==k&&p<head+remaining)
@@ -25,8 +25,8 @@ int main_bench()
 	}
 	for(p=head;p<head+remaining-1;p++)
 	{
-		printf("%d ",*p);
+		my_printf("%d ",*p);
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	return 0;
 }

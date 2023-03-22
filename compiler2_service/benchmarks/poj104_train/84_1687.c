@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,n,j,k[101],l,max,sec=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	   {
-		scanf("%d",&k[i]);
+		my_scanf("%d",&k[i]);
 	
 	   } 
 	   max=k[0];
@@ -19,8 +19,8 @@ int main_bench()
 		sec=k[i];
 		
 	   }
-	 printf("%d\n",max);
-	 printf("%d",sec);
+	 my_printf("%d\n",max);
+	 my_printf("%d",sec);
 	 return 0;  
 	
 	}

@@ -3,8 +3,8 @@
 int main_bench(){
 	char e[256],all[256],sub[256],rep[256];
 	int la,ls,lr,i,j,n=100;
-	scanf("%s",sub);
-	scanf("%s",all);
+	my_scanf("%s",sub);
+	my_scanf("%s",all);
 	la=strlen(all);
 	ls=strlen(sub);
 	lr=strlen(rep);
@@ -17,7 +17,7 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 
 	return 0;
 }

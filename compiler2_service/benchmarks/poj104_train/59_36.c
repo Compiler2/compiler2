@@ -5,15 +5,15 @@ int main_bench()
     int n,m,num=0;
     char c[102][102],tmp[102][102];
     int i,j,d;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for (i=1;i<=n;i++)
     {
         for (j=1;j<=n+1;j++)
         {
-            scanf("%c",&c[i][j]);
+            my_scanf("%c",&c[i][j]);
         }
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for (d=1;d<m;d++)
     {
         for (i=1;i<=n;i++)
@@ -47,6 +47,6 @@ int main_bench()
     {
         for (j=1;j<=n;j++) if (c[i][j]=='@') num++;
     }
-    printf("%d\n",num);
+    my_printf("%d\n",num);
     return 0;
 }

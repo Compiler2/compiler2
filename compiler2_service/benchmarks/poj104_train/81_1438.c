@@ -18,15 +18,15 @@ int main_bench(){
     int c[5][5],i,j,a,m,n;
     for(i=0;i<5;i++){
                      for(j=0;j<5;j++){
-    scanf("%d",&c[i][j]);}}
-    scanf("%d%d",&n,&m);
+    my_scanf("%d",&c[i][j]);}}
+    my_scanf("%d%d",&n,&m);
     a=f(c,n,m);
-    if(a==0){printf("error");}
+    if(a==0){my_printf("error");}
     else 
-     for(i=0;i<5;i++){printf("%d",c[i][0]);
+     for(i=0;i<5;i++){my_printf("%d",c[i][0]);
                      for(j=1;j<5;j++){
-    printf(" %d",c[i][j]);}
-printf("\n");}
+    my_printf(" %d",c[i][j]);}
+my_printf("\n");}
     return 0;
     }
 

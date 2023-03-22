@@ -6,10 +6,10 @@ int x[99999];
 int main_bench()
 {
 	int n,i ,a,b,c,j,r,t,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a,&b,&c);k[a-1]=b+c;x[i]=a;
+		my_scanf("%d%d%d",&a,&b,&c);k[a-1]=b+c;x[i]=a;
 	}
 	for(j=n-1;j>=0;j--)
 	{
@@ -29,6 +29,6 @@ int main_bench()
 		if(m>3) break;
 	}                     
 		
-		printf("%d %d\n%d %d\n%d %d\n",x[n-1],k[n-1],x[n-2],k[n-2],x[n-3],k[n-3]);
+		my_printf("%d %d\n%d %d\n%d %d\n",x[n-1],k[n-1],x[n-2],k[n-2],x[n-3],k[n-3]);
 		return 0;
 }

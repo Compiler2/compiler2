@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,l,j=0,l1,l2,e=0;
 	char a[256],b[256],c[256],d[256];
-	scanf("%s",a);
-    scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",a);
+    my_scanf("%s",b);
+	my_scanf("%s",c);
 	l=strlen(a);
 	l1=strlen(b);
 	l2=strlen(c);
@@ -18,18 +18,18 @@ int main_bench()
 		}else{
 			if(j!=0&&e!=1){
 				d[j]='\0';
-				printf("%s",d);
+				my_printf("%s",d);
 			}
 			j=0;
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 		if(j==l1&&e==0){
-			printf("%s",c);
+			my_printf("%s",c);
 			i=i-l1+l2;
 			e=1;
 		}
 		}else{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 	return 0;

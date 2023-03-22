@@ -6,14 +6,14 @@ int a[100],b[100];
 void scan()
 {
 	int i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 }
 
@@ -37,9 +37,9 @@ void order(int N, int p[100])
 			if(p[j]==i)
 			{
 				if(amount==0)
-					printf("%d",p[j]);
+					my_printf("%d",p[j]);
 				else
-					printf(" %d",p[j]);
+					my_printf(" %d",p[j]);
 				amount=amount+1;
 			}
 
@@ -50,9 +50,9 @@ void order(int N, int p[100])
 void combine(int N,int p[100],int M,int q[100])
 {
 	order(N,p);						
-	printf(" ");
+	my_printf(" ");
 	order(M,q);
-	printf("\n");
+	my_printf("\n");
 }
 
 int main_bench()

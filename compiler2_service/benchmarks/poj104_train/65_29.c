@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,a,b,sum=0,huk=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d",&a,&b);
+        my_scanf("%d %d",&a,&b);
         if(a==1&&b==0||a==0&&b==2||a==2&&b==1)
         {
             huk++;
@@ -17,10 +17,10 @@ int main_bench()
         }
     }
     if(sum>huk)
-    printf("A");
+    my_printf("A");
     else if(sum<huk)
-    printf("B");
+    my_printf("B");
     else
-    printf("Tie");
+    my_printf("Tie");
     return 0;
 }

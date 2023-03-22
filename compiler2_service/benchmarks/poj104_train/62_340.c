@@ -14,7 +14,7 @@ for(i=0;i<k;i++){
 	}
     else continue;
 }
-printf("%s", s);
+my_printf("%s", s);
 
 return 0;
 }

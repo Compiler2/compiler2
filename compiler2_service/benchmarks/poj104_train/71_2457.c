@@ -28,24 +28,24 @@ main_bench()
       d[10]=d[9]+30;
       d[11]=d[10]+31;
       d[12]=d[11]+30;    
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(g=0;g<n;g++)
       {
-                      scanf("%d %d %d",&yy,&a,&b);
+                      my_scanf("%d %d %d",&yy,&a,&b);
                       if(yy%400==0||(yy%100!=0&&yy%4==0))
                       {
                                                          if((c[a]-c[b])%7==0||(c[b]-c[a])%7==0)
                                                          {
-                                                                                               printf("YES");
+                                                                                               my_printf("YES");
                                                          }
-                                                         else printf("NO");
+                                                         else my_printf("NO");
                       }
                       else
                       {
-                          if((d[a]-d[b])%7==0||(d[b]-d[a])%7==0) printf("YES");
-                          else printf("NO");
+                          if((d[a]-d[b])%7==0||(d[b]-d[a])%7==0) my_printf("YES");
+                          else my_printf("NO");
                       }
-                      printf("\n");
+                      my_printf("\n");
       }
       
 }

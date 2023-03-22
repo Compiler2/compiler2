@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,k,i,j,shu[1000],y[1000][1000],count=0;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&shu[i]);
+		my_scanf("%d",&shu[i]);
 	}
 
 	for(i=0;i<n;i++)
@@ -18,8 +18,8 @@ int main_bench()
 	        count ++;}
 	}
 	if(count==0)
-	printf("no");
+	my_printf("no");
 	else
-	printf("yes");
+	my_printf("yes");
 	return 0;
 }

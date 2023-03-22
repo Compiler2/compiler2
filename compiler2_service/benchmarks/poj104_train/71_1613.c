@@ -5,19 +5,19 @@ int DiJiTian(int year, int month, int day);
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int year,m1,m2,chazhi;	
-		scanf("%d%d%d", &year,&m1,&m2);
+		my_scanf("%d%d%d", &year,&m1,&m2);
 		chazhi=DiJiTian(year,m2,1)-DiJiTian(year,m1,1);
 		if (chazhi%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

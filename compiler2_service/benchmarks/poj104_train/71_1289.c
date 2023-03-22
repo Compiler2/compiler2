@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,i,y,a,b,j,p,f,e;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d%d%d",&y,&a,&b);
+my_scanf("%d%d%d",&y,&a,&b);
 if(a>b)
 {
 	e=a;
@@ -31,7 +31,7 @@ if(j==9) p=p+30;
 if(j==10) p=p+31;
 if(j==11) p=p+30;
 }
-if(p%7==0) {printf("YES\n");f=1;}
+if(p%7==0) {my_printf("YES\n");f=1;}
 }
 
 else
@@ -52,10 +52,10 @@ if(j==9) p=p+30;
 if(j==10) p=p+31;
 if(j==11) p=p+30;
 }
-if(p%7==0) {printf("YES\n");f=1;}
+if(p%7==0) {my_printf("YES\n");f=1;}
 }
 
-if(f==0) printf("NO\n");
+if(f==0) my_printf("NO\n");
 }
 return 0;
 }

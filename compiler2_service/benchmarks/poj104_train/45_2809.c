@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char s[50],w[50];
-scanf("%s ",s);
-scanf("%s", w);
+my_scanf("%s ",s);
+my_scanf("%s", w);
 	int i,j=0;
 	for(i=0;i<strlen(w);i++)
 	{
@@ -20,7 +20,7 @@ scanf("%s", w);
 		}
 		if(j==strlen(s))
 		{
-			printf("%d",i-j+1);
+			my_printf("%d",i-j+1);
 			break;
 		}
 	}

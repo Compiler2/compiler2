@@ -19,7 +19,7 @@ int main_bench()
 
 	for(i=0;i<len;i++)
 	{
-	   printf("%c",*(p2+i));
+	   my_printf("%c",*(p2+i));
 	}
    
 }

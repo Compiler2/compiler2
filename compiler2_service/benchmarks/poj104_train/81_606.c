@@ -16,17 +16,17 @@ int main_bench()
 	int str[5][5],i,j;
 	for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-	{scanf("%d",&str[i][j]);}
+	{my_scanf("%d",&str[i][j]);}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
     if(jiaohuan(str)==1)
 	{for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-	{if(j==0){printf("%d",str[i][j]);}
-	else{printf(" %d",str[i][j]);}}
-	printf("\n");}
+	{if(j==0){my_printf("%d",str[i][j]);}
+	else{my_printf(" %d",str[i][j]);}}
+	my_printf("\n");}
 	}
-    if(jiaohuan(str)==0){printf("error");}
+    if(jiaohuan(str)==0){my_printf("error");}
 }
 
   

@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int sz[100][100];
 
 	for(int row=0;row<n;row++){
 		for(int col=0;col<n;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 
@@ -44,7 +44,7 @@ int main_bench()
 	int s;
 	s=(a2-a1-1)*(b2-b1-1);
 
-	printf("%d",s);
+	my_printf("%d",s);
 
 	return 0;
 }

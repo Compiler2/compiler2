@@ -9,11 +9,11 @@ main_bench(){
        len=strlen(p);
        for(i=0;i<len;i++){
            if(*(p+i)>=48&&*(p+i)<=57){
-               printf("%c",*(p+i));
+               my_printf("%c",*(p+i));
            }
            else if((*(p+i-1)>=48&&*(p+i-1)<=57)||*(p+i+1)=='\0'){
-               printf("\n");
+               my_printf("\n");
            }
        }
-       printf("\n");
+       my_printf("\n");
 }

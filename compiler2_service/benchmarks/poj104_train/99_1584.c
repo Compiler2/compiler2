@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	int j;
 	double k,p,q,m,s,a,b,c,d;
@@ -38,10 +38,10 @@ int main_bench()
 	c=q/s*100;
 	d=m/s*100;
 
-	printf("1-18: %.2lf%%\n",a);
-	printf("19-35: %.2lf%%\n",b);
-	printf("36-60: %.2lf%%\n",c);
-	printf("60??: %.2lf%%\n",d);
+	my_printf("1-18: %.2lf%%\n",a);
+	my_printf("19-35: %.2lf%%\n",b);
+	my_printf("36-60: %.2lf%%\n",c);
+	my_printf("60??: %.2lf%%\n",d);
 
 
 	return 0;

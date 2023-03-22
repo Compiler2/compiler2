@@ -5,7 +5,7 @@ int main_bench()
 	long m,n,r,s;
 	long t[21],p[21]={0},q=0;
 	long x,y,z;
-	scanf("%ld%ld",&m,&n);
+	my_scanf("%ld%ld",&m,&n);
 	for(r=m;r<=n;r++)
 	{
 		x=0;y=1;z=r;
@@ -24,12 +24,12 @@ int main_bench()
 		}
 		if(y==1) p[q++]=r;
 	}
-	if(q==0) printf("no\n");
-	else if(q==1) printf("%ld\n",p[0]);
+	if(q==0) my_printf("no\n");
+	else if(q==1) my_printf("%ld\n",p[0]);
 	else
 	{for(r=0;r<=q-2;r++)
-		printf("%ld,",p[r]);
-	printf("%ld",p[q-1]);}
+		my_printf("%ld,",p[r]);
+	my_printf("%ld",p[q-1]);}
 }
 
 

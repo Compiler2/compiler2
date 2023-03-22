@@ -14,18 +14,18 @@ int main_bench()
 		int sum;
 	}p[100];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i = 0 ;
 	for ( i = 0 ; i < n ; i++ )
 	{
-		scanf("%s",p[i].name);
-		scanf("%d",&(p[i].score1));
-		scanf("%d",&(p[i].score2));
+		my_scanf("%s",p[i].name);
+		my_scanf("%d",&(p[i].score1));
+		my_scanf("%d",&(p[i].score2));
 		getchar();
-		scanf("%c",&(p[i].mas));
+		my_scanf("%c",&(p[i].mas));
 		getchar();
-		scanf("%c",&(p[i].dis));
-		scanf("%d",&(p[i].paper));
+		my_scanf("%c",&(p[i].dis));
+		my_scanf("%d",&(p[i].paper));
 	}
 	for ( i = 0 ; i < n ; i++ )
 	{
@@ -63,8 +63,8 @@ int main_bench()
 			k = i;
 		}
 	}
-	printf("%s\n",p[k].name);
-	printf("%d\n",max);
-	printf("%d\n",total);
+	my_printf("%s\n",p[k].name);
+	my_printf("%d\n",max);
+	my_printf("%d\n",total);
 	return 0;
 }

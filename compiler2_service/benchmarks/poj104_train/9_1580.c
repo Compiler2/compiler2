@@ -16,13 +16,13 @@ int main_bench()
 	char str[100]={'\0'};
 	char str1[100]={'\0'};
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0,j=0,sum=0;sum<=n;)
 	{
 		age=0;
 		strcpy(str,str1);
-		scanf("%s %d",str,&age);
+		my_scanf("%s %d",str,&age);
 
 		if(age>=60){strcpy(a[i].num,str);a[i].age=age;i++;sum++;}
 		else{strcpy(b[j].num,str);b[j].age=age;j++;sum++;}
@@ -35,11 +35,11 @@ int main_bench()
 
 	for(i=0;i<old;i++)
 	{
-		printf("%s\n",a[i].num);
+		my_printf("%s\n",a[i].num);
 	}
 	for(i=0;i<j;i++)
 	{
-         printf("%s\n",b[i].num);
+         my_printf("%s\n",b[i].num);
 	}
 
 	return 0;

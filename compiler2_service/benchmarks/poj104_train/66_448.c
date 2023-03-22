@@ -3,7 +3,7 @@
 int djt(int y, int m, int d);
 int main_bench(){
     int y, m, d;
-    scanf("%d %d %d", &y, &m, &d);    
+    my_scanf("%d %d %d", &y, &m, &d);    
    int dst=0;
    int dsy=0;
    int sum=0;
@@ -25,19 +25,19 @@ int main_bench(){
     sum=d+dsy+dst;
     wk=sum%7;
     if(wk==1){
-      printf("Mon.");      
+      my_printf("Mon.");      
    }if(wk==2){
-      printf("Tue.");      
+      my_printf("Tue.");      
    }if(wk==3){
-      printf("Wen.");      
+      my_printf("Wen.");      
    }if(wk==4){
-      printf("Thu.");      
+      my_printf("Thu.");      
    }if(wk==5){
-      printf("Fri.");      
+      my_printf("Fri.");      
    }if(wk==6){
-      printf("Sat.");      
+      my_printf("Sat.");      
    }if(wk==0){
-      printf("Sun.");      
+      my_printf("Sun.");      
              }                                                 
     return 0;
 }

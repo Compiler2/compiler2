@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n, k, i, a[1000], j, q;
-	scanf("%d%d", &n, &k);
+	my_scanf("%d%d", &n, &k);
 	for (i = 1; i <= n; i++) {
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 	for (i = 1; i <= n; i++) {
 		for (j = 1; j <= n; j++) {
@@ -19,8 +19,8 @@ int main_bench()
 			break;
 	}
 	if (q == k)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 	return 0;
 }

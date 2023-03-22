@@ -12,10 +12,10 @@ for(i=0;i<298;i++)
 {
 	s[i+2]=s[i]+s[i+1];
 }
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%lf",&a);
+	my_scanf("%lf",&a);
 		for(j=0;j<a;j++)
 		{
           b[i]=b[i]+s[j+1]/s[j];
@@ -24,7 +24,7 @@ for(i=0;i<n;i++)
 for(i=0;i<n;i++)
 
 {
-	printf("%.3lf\n",b[i]);
+	my_printf("%.3lf\n",b[i]);
 }
 return 0;
 }

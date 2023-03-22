@@ -4,15 +4,15 @@
 int main_bench()
 {
     int n, i, j, a;
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 	for(i=0;i<n;i++)
 	{	
 		int sum=60;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		for(j=0;j<a;j++)
 		{
 			int b;
-			scanf("%d",&b);
+			my_scanf("%d",&b);
 			if(b<(sum-3))
 			{
 			    sum -= 3;
@@ -22,7 +22,7 @@ int main_bench()
 				sum=b;
 			}
 		}
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 	}
 	return 0;
 

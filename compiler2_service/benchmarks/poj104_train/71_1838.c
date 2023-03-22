@@ -5,14 +5,14 @@ int main_bench()
 	int n,i,j,k,day1=0,day2=0,cha=0;
 	int nian,y1,y2,mont[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}; ;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		
 		day1=0;
 		day2=0;
 		cha=0;
-		scanf("%d %d %d",&nian,&y1,&y2);
+		my_scanf("%d %d %d",&nian,&y1,&y2);
 		if ((nian%4==0 && nian%100!=0)||nian%400==0) 
 			mont[2]=29; 
         else  
@@ -25,9 +25,9 @@ int main_bench()
 		if((day1-day2)<0)
 			cha=day2-day1;
 		if((cha%7)==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

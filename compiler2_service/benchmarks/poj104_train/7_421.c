@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[300],b[50],r[50],a[50];
     int i,k,n1,n2,n3,n,result;
-    scanf("%s%s%s",s,b,r);
+    my_scanf("%s%s%s",s,b,r);
     n1=strlen(s);
     n2=strlen(b);
     n3=strlen(r);
@@ -20,10 +20,10 @@ int main_bench()
      }
      for(i=0;i<n1;i++){
          if(i==n){
-           printf("%s",r);
+           my_printf("%s",r);
 		   i=i+n2-1;
          }else{
-           printf("%c",s[i]);
+           my_printf("%c",s[i]);
          }
       }
       return 0;

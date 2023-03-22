@@ -8,10 +8,10 @@ int main_bench()
 
 	int cs[100000]={0};
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s",str);
+		my_scanf("%s",str);
 
 		len=strlen(str);
 
@@ -24,7 +24,7 @@ int main_bench()
 
 		for(j=0;j<len;j++){
 			if(cs[j]==1){
-				printf("%c\n",*(p+j));
+				my_printf("%c\n",*(p+j));
 				break;
 			}
 		}
@@ -37,7 +37,7 @@ int main_bench()
 		}
 
 		if(time==len)
-			printf("no\n");
+			my_printf("no\n");
 
 		for(j=0;j<len;j++)
 			cs[j]=0;

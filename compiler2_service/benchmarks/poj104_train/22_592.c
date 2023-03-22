@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int i=1,n,m,num[300],sub,flag=0;
-	scanf("%d",&num[0]);
-	while(scanf(",%d",&num[i]))
+	my_scanf("%d",&num[0]);
+	while(my_scanf(",%d",&num[i]))
 	{
 		i++;
 	}
@@ -15,7 +15,7 @@ int main_bench()
 		if(m<num[i]) m=num[i];
 		flag=1;
 	}
-	if(flag==0) {printf("No");return 0;}
+	if(flag==0) {my_printf("No");return 0;}
 	sub=0;
 	for(i=0;i<n;i++)
 	{
@@ -24,7 +24,7 @@ int main_bench()
 	}
 	
 
-	if(sub!=0) printf("%d",sub);
-	else printf("No");
+	if(sub!=0) my_printf("%d",sub);
+	else my_printf("No");
 	return 0;
 }

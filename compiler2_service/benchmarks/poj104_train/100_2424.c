@@ -9,7 +9,7 @@ int main_bench()
 {
 	char A[303];
 	int i,j=0,k,number,flag,flag1=0;
-	scanf("%s",A);
+	my_scanf("%s",A);
 	number=strlen(A);
 	for(i=0;i<number;i++)
 	{
@@ -48,7 +48,7 @@ int main_bench()
 		}
 	}
 	if(flag1==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 	for(i=1;i<j;i++)
@@ -66,7 +66,7 @@ int main_bench()
 
 	for(i=0;i<j;i++)
 	{
-		printf("%c=%d\n",B[i].a,B[i].n);
+		my_printf("%c=%d\n",B[i].a,B[i].n);
 	}
 	}
 	return 0;

@@ -3,7 +3,7 @@
 int main_bench()
 {char a[50],b[50];
 int i,j,k,m,n;
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 m=strlen(a);
 n=strlen(b);
 j=0;
@@ -16,5 +16,5 @@ if(a[i]==b[j])
 while(i< m&&j<n);
 
 k=j-m;
-printf("%d",k);
+my_printf("%d",k);
 }

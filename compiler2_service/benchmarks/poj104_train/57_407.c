@@ -5,10 +5,10 @@ int main_bench()
 	char zm[101],zm2[101];
 	char a,b,c;
 	int n,i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&zm);
+		my_scanf("%s",&zm);
 		k=strlen(zm);
 		if(k>3)
 		{

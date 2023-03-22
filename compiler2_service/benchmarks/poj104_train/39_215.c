@@ -13,9 +13,9 @@ int main_bench()
 	}stu[100];
 	struct stu term;
 	int n,i,sum[100]={0},t=0,m,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].final,&stu[i].argue,&stu[i].leader,&stu[i].west,&stu[i].art);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].final,&stu[i].argue,&stu[i].leader,&stu[i].west,&stu[i].art);
     for(i=0;i<=n-1;i++)
 	{
 		if(stu[i].final>80&&stu[i].art>=1)
@@ -43,9 +43,9 @@ int main_bench()
 			}
 			for(i=0;i<=n-1;i++)
 				t=t+sum[i];
-			printf ("%s\n",stu[0].name);
-			printf("%d\n",sum[0]);
-			printf("%d\n",t);
+			my_printf ("%s\n",stu[0].name);
+			my_printf("%d\n",sum[0]);
+			my_printf("%d\n",t);
 }
 
 				

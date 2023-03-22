@@ -6,9 +6,9 @@ int main_bench()
     int n,k;
     int i,j;
     int sum,a=0;
-    scanf("%d%d\n",&n,&k);
+    my_scanf("%d%d\n",&n,&k);
     for(i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     for(j=0;j<n;j++){
         if(a==1){
@@ -26,9 +26,9 @@ int main_bench()
         }
     }
     if(a==1){
-        printf("yes");
+        my_printf("yes");
     }else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
     

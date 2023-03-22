@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300], *p, zm;
 	int b[27]={0};
-	scanf("%s", &a);
+	my_scanf("%s", &a);
 	int i=0;
 	for(zm='a';zm<='z';zm++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 	}
 	if(i==27)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
@@ -36,7 +36,7 @@ int main_bench()
 			i++;
 			if(b[i]!=0)
 			{
-				printf("%c=%d\n", zm, b[i]);
+				my_printf("%c=%d\n", zm, b[i]);
 			}
 		} 
 	}

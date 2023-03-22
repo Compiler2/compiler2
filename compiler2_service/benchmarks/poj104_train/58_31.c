@@ -3,7 +3,7 @@
 int main_bench()
 {int n,i,j,b;
 char a[81];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {gets(a);
  if((a[0]=='_')||((a[0]<='z')&&(a[0]>='a'))||((a[0]<='Z')&&(a[0]>='A'))) 
@@ -15,7 +15,7 @@ while ((b!=0)&&(a[j]!='\0'))
 else b=0;
 j++;
 }
-printf("%d\n",b);
+my_printf("%d\n",b);
 }
 return 0;
 } 

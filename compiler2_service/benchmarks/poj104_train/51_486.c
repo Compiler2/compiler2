@@ -6,8 +6,8 @@ int main_bench()
 	int n;
 	char a[600];
 	int ans[600]={0},mm=0;
-	scanf("%d",&n);
-	scanf("%s",&a);
+	my_scanf("%d",&n);
+	my_scanf("%s",&a);
 	int i;
 	i=0;
 	int l=strlen(a);
@@ -33,18 +33,18 @@ int main_bench()
 	}
 	if (mm>1)
 	{
-	printf("%d\n",mm);
+	my_printf("%d\n",mm);
 	for (i=0;i+n<=l;i++)
 	{
 		if (ans[i]==mm)
 		{
 			int k;
-			for (k=i;k<i+n;k++) printf("%c",a[k]);
-			printf("\n");
+			for (k=i;k<i+n;k++) my_printf("%c",a[k]);
+			my_printf("\n");
 		}
 	}
 	}
-	else printf("NO");
+	else my_printf("NO");
 	
 	return 0;
 }

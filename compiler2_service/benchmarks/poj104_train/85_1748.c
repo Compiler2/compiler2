@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,len;
 	char s[30],t;
-	scanf("%d%c",&n,&t);
+	my_scanf("%d%c",&n,&t);
 	for(i=0;i<n;i++)
 	{
 		gets(s);
@@ -19,12 +19,12 @@ int main_bench()
 		if(j==len)
 		{
 			if(s[0]>='0' && s[0]<='9')
-				printf("no\n");
+				my_printf("no\n");
 			else
-				printf("yes\n");
+				my_printf("yes\n");
 		}
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

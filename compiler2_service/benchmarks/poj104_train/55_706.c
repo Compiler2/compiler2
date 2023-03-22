@@ -16,9 +16,9 @@ main_bench()
 int a,b,n,len,bs1;
 char s[200];
 char *p;
-scanf("%d",&a);
-scanf("%s",&s);
-scanf("%d",&b);
+my_scanf("%d",&a);
+my_scanf("%s",&s);
+my_scanf("%d",&b);
 len=strlen(s)-1;
 bs1=1;
 n=0;
@@ -28,7 +28,7 @@ for (i=len;i>=0;i--)
 n+=bs1*(calc(s[i]));
 bs1*=a;
 }
-if (n==0) printf("0");
+if (n==0) my_printf("0");
 for (i=0;n>0;i++)
 {
 s[i]=form(n%b);
@@ -36,5 +36,5 @@ n/=b;
 }
 for (int j=--i;j>=0;j--)
 putchar(s[j]);
-printf("\n");
+my_printf("\n");
 }

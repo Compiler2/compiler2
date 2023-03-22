@@ -4,9 +4,9 @@ int main_bench(){
 	double r,x;
 	int l,l1,l2,i,j,t=0,flag=0;
 	char a[100],b[100];
-	scanf("%lf",&r);
-	scanf("%s",a);
-    scanf("%s",b);
+	my_scanf("%lf",&r);
+	my_scanf("%s",a);
+    my_scanf("%s",b);
 	l1=strlen(a);
 	l2=strlen(b);
     for(i=0;i<l1;i++){
@@ -26,7 +26,7 @@ int main_bench(){
 		}
 	}
 	if(l1!=l2||flag==1){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	else{
@@ -38,10 +38,10 @@ int main_bench(){
 		}
 		x=(double)t/l;
 		if(x>r){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

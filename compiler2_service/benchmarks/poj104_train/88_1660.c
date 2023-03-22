@@ -13,11 +13,11 @@ int main_bench()
 			i=1;
 		}
 		else if (i==1) {
-			printf("%d\n", num/10);
+			my_printf("%d\n", num/10);
 			num=0;
 			i=0;
 		}
 	}
-	if (i==1) printf("%d\n", num/10);
+	if (i==1) my_printf("%d\n", num/10);
 	return 0;
 }

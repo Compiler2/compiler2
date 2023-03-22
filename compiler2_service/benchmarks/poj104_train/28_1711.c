@@ -25,9 +25,9 @@ int main_bench()
 	}
 	
 	for (j=0;j<k-1;j++){
-		printf("%d,",num[j]);
+		my_printf("%d,",num[j]);
 	}
-	printf("%d",num[j]);
+	my_printf("%d",num[j]);
 
 }
 	

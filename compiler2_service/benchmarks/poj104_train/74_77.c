@@ -4,14 +4,14 @@ int main_bench()
 {	int sushu(int k);
 	int huiwen(int number);
 	int m,n,i,t,s=0;
-	scanf("%d",&m);
-	scanf("%d",&n);
+	my_scanf("%d",&m);
+	my_scanf("%d",&n);
 	t=m;
 	for(i=t;i<=n;i++)
-		if(sushu(i)==1&&huiwen(i)==1) {printf("%d",i);t=i;s++;break;}
+		if(sushu(i)==1&&huiwen(i)==1) {my_printf("%d",i);t=i;s++;break;}
 	for(i=t+1;i<=n;i++)
-		if(sushu(i)==1&&huiwen(i)==1) printf(",%d",i);
-	if(s==0) printf("no");	 
+		if(sushu(i)==1&&huiwen(i)==1) my_printf(",%d",i);
+	if(s==0) my_printf("no");	 
 }
 int sushu(int k)
 {    int s;

@@ -5,7 +5,7 @@ int main_bench()
     int l,i,j,c,d,e;
     int b[100];
     char a[100];
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     for (i=0;i<l;i++)
     {
@@ -18,8 +18,8 @@ int main_bench()
         e=a[0]*10+a[1];
         else
         e=a[0];
-        printf ("%d\n",d);
-        printf ("%d",e);
+        my_printf ("%d\n",d);
+        my_printf ("%d",e);
     }
    
     else
@@ -34,15 +34,15 @@ int main_bench()
     if (b[0]==0)
     {
         for (j=1;j<l-1;j++)
-        printf ("%d",b[j]);
+        my_printf ("%d",b[j]);
     }
     else
     {
         for (j=0;j<l-1;j++)
-        printf ("%d",b[j]);
+        my_printf ("%d",b[j]);
     }
-    printf ("\n");
-    printf ("%d",c);
+    my_printf ("\n");
+    my_printf ("%d",c);
     }
     getchar();getchar();getchar();
 }

@@ -5,14 +5,14 @@ int main_bench()
 	int dijitian(int,int,int);
 	
 	int y[200],m1[200],m2[200],n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
+		my_scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
 	}for(int j=0;j<n;j++){
 		if((dijitian(y[j],m1[j],1)-dijitian(y[j],m2[j],1))%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else {
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

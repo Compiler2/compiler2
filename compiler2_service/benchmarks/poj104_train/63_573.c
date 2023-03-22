@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n,q,m,i,j,k;
-    scanf("%d%d",&n,&q);
+    my_scanf("%d%d",&n,&q);
     int a[n][q];
     for(i=0;i<n;i++)
     {
         for(j=0;j<q;j++)
-        scanf("%d",&a[i][j]);
+        my_scanf("%d",&a[i][j]);
     }
-    scanf("%d%d",&q,&m);
+    my_scanf("%d%d",&q,&m);
     int b[q][m];
     for(i=0;i<q;i++)
     {
         for(j=0;j<m;j++)
-        scanf("%d",&b[i][j]);
+        my_scanf("%d",&b[i][j]);
     }
     int c[n][m];
     for(i=0;i<n;i++)
@@ -34,8 +34,8 @@ int main_bench()
     for(i=0;i<n;i++)
     {
         for(j=0;j<(m-1);j++)
-        printf("%d ",c[i][j]);
-        printf("%d\n",c[i][j]);
+        my_printf("%d ",c[i][j]);
+        my_printf("%d\n",c[i][j]);
     }
     getchar();
     getchar();

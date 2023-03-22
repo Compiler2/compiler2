@@ -7,9 +7,9 @@ int main_bench()
 	int num;
 	int n;
 	int i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (i<=n){
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	if (i==1){
 	resulta=num;
 	}else{
@@ -22,8 +22,8 @@ int main_bench()
 	}
 	i++;
 	}
-	printf("%d\n",resulta);
-	printf("%d\n",resultb);
+	my_printf("%d\n",resulta);
+	my_printf("%d\n",resultb);
 
 
 }

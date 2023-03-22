@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int i,j,k,s,y,x,z,w;	
 	unsigned int *p=0;
 	p=(unsigned int*)malloc(sizeof(unsigned int)*n);
@@ -13,7 +13,7 @@ int main_bench()
 	double mean;	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 		total=total+p[i];
 	}
 	mean=total/n;
@@ -47,7 +47,7 @@ int main_bench()
 			if(deviation[x]==b)
 			{
 				fit[x]=p[x];
-		    	printf("%u",fit[x]);
+		    	my_printf("%u",fit[x]);
 			}			    	
 		}
 	}
@@ -67,16 +67,16 @@ int main_bench()
 			}
 		} 
 		if(num==2)
-			printf("%u,%u",fit[n-2],fit[n-1]);
+			my_printf("%u,%u",fit[n-2],fit[n-1]);
 		else
 		{
-			printf("%u",fit[n-num]);
+			my_printf("%u",fit[n-num]);
 		    for(w=n-num+1;w<n,fit[w]!=0;w++)
 			{
-	    	    printf(",%u",fit[w]);
+	    	    my_printf(",%u",fit[w]);
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
    	return 0;
 }

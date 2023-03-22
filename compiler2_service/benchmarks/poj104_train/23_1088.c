@@ -13,8 +13,8 @@ int main_bench()
 			if(c[i-j]==' ')
 			{
 				for(k=i-j+1;k<=i;k++)
-				printf("%c",c[k]);
-				printf(" ");
+				my_printf("%c",c[k]);
+				my_printf(" ");
 				m=i;
 				b=j;
 				break;
@@ -25,11 +25,11 @@ int main_bench()
 	if(m-b<=0)
 	{
 		for(k=0;k<n;k++)
-			printf("%c",c[k]);
+			my_printf("%c",c[k]);
 	}
 	else
 	{
 	for(k=0;k<m-b;k++)
-		printf("%c",c[k]);
+		my_printf("%c",c[k]);
 	}
 }

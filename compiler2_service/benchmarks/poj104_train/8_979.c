@@ -15,14 +15,14 @@ int main_bench()
 
 void get_in(void)
 {
-	scanf("%d%d\n",&n,&m);
+	my_scanf("%d%d\n",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&s1[i]);
+		my_scanf("%d",&s1[i]);
 	}
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&s2[i]);
+		my_scanf("%d",&s2[i]);
 	}
 }
 
@@ -56,18 +56,18 @@ void putout()
 	{
 		if(i==0)
 		{
-			printf("%d",s1[i]);
+			my_printf("%d",s1[i]);
 		}
 		else
 		{
-			printf(" ");
-			printf("%d",s1[i]);
+			my_printf(" ");
+			my_printf("%d",s1[i]);
 		}
 	}
 	for(i=0;i<m;i++)
 	{
-		printf(" ");
-		printf("%d",s2[i]);
+		my_printf(" ");
+		my_printf("%d",s2[i]);
 		
 	}
 }

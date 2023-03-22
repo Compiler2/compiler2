@@ -18,19 +18,19 @@ int f(int a[5][5],int m,int n)
      int m,n,a[5][5],k,i,j;
      for(i=0;i<5;i++)
      for(j=0;j<5;j++)
-     scanf("%d",&a[i][j]);
-     scanf("%d%d",&m,&n);
+     my_scanf("%d",&a[i][j]);
+     my_scanf("%d%d",&m,&n);
      k=f(a,m,n);
      if(k==0)
-     printf("error\n");
+     my_printf("error\n");
      if(k==1)
       for(i=0;i<5;i++)
        for(j=0;j<5;j++)
      {
        if(j<4)
-       printf("%d ",a[i][j]);
+       my_printf("%d ",a[i][j]);
        if(j==4)
-       printf("%d\n",a[i][j]);
+       my_printf("%d\n",a[i][j]);
        }
        return 0;
  }

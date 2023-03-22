@@ -6,7 +6,7 @@ int main_bench()
 	char ch[81];
 	for(k=1;k<=100;k++)
 		judge[k-1]=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
 		gets(ch);
@@ -22,5 +22,5 @@ int main_bench()
 		else judge[i-1]=0;
 	}
 	for(t=1;t<=n;t++)
-		printf("%d\n",judge[t-1]);
+		my_printf("%d\n",judge[t-1]);
 }

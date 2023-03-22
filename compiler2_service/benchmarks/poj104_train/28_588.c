@@ -9,7 +9,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(str[i]==' ') k++;
 	if(k==0)
-		printf("%d",n);
+		my_printf("%d",n);
 	else
 	{
 		k=0;
@@ -18,12 +18,12 @@ int main_bench()
 			if(str[i]==' ')
 			{
 				if(k!=0)
-				{printf("%d,",k);k=0;}
+				{my_printf("%d,",k);k=0;}
 				
 			}
 			else
 					k++;
 		}
-		printf("%d",k);
+		my_printf("%d",k);
 	}
 }

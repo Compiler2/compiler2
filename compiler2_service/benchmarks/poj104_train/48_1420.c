@@ -8,7 +8,7 @@ int main_bench()
 	int i, j, k;
 	int tmp1, tmp2;
 
-	scanf("%d %d", &m, &n);
+	my_scanf("%d %d", &m, &n);
 	for (i = 0; i < 2; i++) {
 		for (j = 0; j < 11; j++) {
 			for (k = 0; k < 11; k++) {
@@ -35,11 +35,11 @@ int main_bench()
 	i = n % 2;
 	for (j = 1; j <= 9; j++) {	
 		for (k = 1; k <= 9; k++) {
-			printf("%d", m * stat[i][j][k]);
+			my_printf("%d", m * stat[i][j][k]);
 			if(k!=9)
-			printf(" ");
+			my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 	return 0;

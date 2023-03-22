@@ -37,12 +37,12 @@ int main_bench()
 	}
 	for(i=a1-l[b1];i<r[b1];i++)
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=a2-l[b2];i<r[b2];i++)
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
 	return 0;
 }

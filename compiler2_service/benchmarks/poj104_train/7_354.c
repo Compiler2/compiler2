@@ -4,9 +4,9 @@ int main_bench()
 { 
     char s[256], w[256],v[256]; 
     int i, j,slen,wlen,k;
-    scanf("%s", w);
-    scanf("%s", s);
-    scanf("%s", v);
+    my_scanf("%s", w);
+    my_scanf("%s", s);
+    my_scanf("%s", v);
         slen = strlen(s);
     wlen = strlen(w);
        for(i=0;i<=wlen-slen;i++){
@@ -21,17 +21,17 @@ if (j == slen) {
         }
       if (j == slen) {
            for(k=0;k<i;k++){
-            printf("%c",w[k]);
+            my_printf("%c",w[k]);
              }
-           printf("%s",v);
+           my_printf("%s",v);
          if(w[i+slen]!=0){
           for(k=i+slen;k<wlen;k++){     
-        printf("%c",w[k]);
+        my_printf("%c",w[k]);
           }
            }
            
             }
      else if(i==wlen-slen+1)
-     printf("%s",w);
+     my_printf("%s",w);
      return 0;
 }

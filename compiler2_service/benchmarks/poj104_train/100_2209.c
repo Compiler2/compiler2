@@ -6,7 +6,7 @@ int main_bench(){
 	int flag=0;
 	do
 	{
-		scanf("%c",&x);
+		my_scanf("%c",&x);
 		if(x>='A'&&x<='Z')
 		{
 			a[(int)(x-'A')]++;
@@ -20,7 +20,7 @@ int main_bench(){
 	{
 		if(a[i]!=0)
 		{
-			printf("%c=%d\n",'A'+i,a[i]);
+			my_printf("%c=%d\n",'A'+i,a[i]);
 			flag=1;
 		}
 	}
@@ -28,13 +28,13 @@ int main_bench(){
 	{
 		if(b[i]!=0)
 		{
-			printf("%c=%d\n",'a'+i,b[i]);
+			my_printf("%c=%d\n",'a'+i,b[i]);
             flag=1;
 		}
 	}
     if(flag!=1)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	return 0;
 }

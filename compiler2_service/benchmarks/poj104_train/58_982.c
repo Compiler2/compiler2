@@ -4,7 +4,7 @@ main_bench()
 {
     char a[800][80],b;
     int i,j,k,n;
-    scanf("%d",&n); scanf("%c",&b);
+    my_scanf("%d",&n); my_scanf("%c",&b);
     for (i=0;i<n;i++)
     {
         gets(a[i]);
@@ -16,13 +16,13 @@ main_bench()
                             continue ;
                             else
                            {
-                                printf("0\n");break;
+                                my_printf("0\n");break;
                            }
             }
             if (a[i][j]=='\0')
-            printf("1\n");
+            my_printf("1\n");
         }
         else
-        printf("0\n");
+        my_printf("0\n");
     }
 }

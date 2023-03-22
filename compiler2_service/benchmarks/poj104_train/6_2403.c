@@ -2,14 +2,14 @@
 
 int main_bench(){int i,j,k,sum;
 	int m;int a[200][220];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<=m;k++)
 	{        sum=0;
 		int row,col;
-		scanf("%d%d",&row,&col);
+		my_scanf("%d%d",&row,&col);
 		for(i=1;i<=row;i++)
 		{
-			for(j=1;j<=col;j++){scanf("%d",&a[i][j]);
+			for(j=1;j<=col;j++){my_scanf("%d",&a[i][j]);
 			}
 		}
 	
@@ -20,7 +20,7 @@ int main_bench(){int i,j,k,sum;
 	               if(row==1){sum/=2;}
 
 
-                     printf("%d\n",sum);
+                     my_printf("%d\n",sum);
 	}return 0;
 }
 

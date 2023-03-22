@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int number,a,b,c,d,e;
-	scanf("%d",&number);
+	my_scanf("%d",&number);
 	a=0;
 	b=0;
 	c=0;
 	d=0;
 	e=0;
 	if(number<10&&number>=0)
-		printf("%d",e);
+		my_printf("%d",e);
 	if(number<100000&&number>=10000)
 	{
 		a=number/10000;
@@ -33,19 +33,19 @@ int main_bench()
 	}
 	e=number;
 	if(a!=0)
-		printf("%d%d%d%d%d",e,d,c,b,a);
+		my_printf("%d%d%d%d%d",e,d,c,b,a);
 	else
 	{
 		if(b!=0)
-			printf("%d%d%d%d",e,d,c,b);
+			my_printf("%d%d%d%d",e,d,c,b);
 		else
 		{
 			if(c!=0)
-				printf("%d%d%d",e,d,c);
+				my_printf("%d%d%d",e,d,c);
 			else
 			{
 				if(d!=0)
-					printf("%d%d",e,d);
+					my_printf("%d%d",e,d);
 			}
 		}
 	}

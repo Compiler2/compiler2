@@ -2,10 +2,10 @@
 
 int zhi(int i);
 int hw(int i);
-void main_bench()
+int main_bench()
 {
 	int m, n, a[100];
-	scanf("%d%d",&m, &n );
+	my_scanf("%d%d",&m, &n );
 	int i, j = 0;
 	for(i = m;i <= n;i ++)
 	{	
@@ -15,11 +15,11 @@ void main_bench()
 		}
 	}
 	if(j == 0)
-		printf("no");
+		my_printf("no");
 	else
 	{	for(i = 0;i < j - 1;i ++)
-			printf("%d,",a[i]);
-		printf("%d",a[j - 1]);
+			my_printf("%d,",a[i]);
+		my_printf("%d",a[j - 1]);
 	}
 }
 

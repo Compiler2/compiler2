@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,a,b,j=0,sum =0 ,r[100]={0},max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0; i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if( (a<=140&&a>=90) && (b<=90&&b>=60) )
 			sum++;
 		else if ( (a>=140||a<=90) || (b>=90||b<=60) )
@@ -23,7 +23,7 @@ int main_bench()
 		max=(max>r[m])?max:r[m];
 	}
 
-    printf("%d\n",max);
+    my_printf("%d\n",max);
 	
     return 0;
 }

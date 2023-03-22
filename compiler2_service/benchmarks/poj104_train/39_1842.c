@@ -10,9 +10,9 @@ int main_bench()
  char w;
  int  p;}stu[100];
  int n,s[100],total=0,max=0,i;
- scanf("%d\n",&n);
+ my_scanf("%d\n",&n);
  for(i=0;i<n;i++)
- scanf("%s %d %d %c %c %d\n",&stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].c,&stu[i].w,&stu[i].p);
+ my_scanf("%s %d %d %c %c %d\n",&stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].c,&stu[i].w,&stu[i].p);
  for(i=0;i<n;i++)
 { if(stu[i].g1>80&&stu[i].p>=1)s[i]=s[i]+8000;
  if(stu[i].g1>85&&stu[i].g2>80)s[i]=s[i]+4000;
@@ -22,8 +22,8 @@ int main_bench()
  total=total+s[i];}
  for(i=1;i<n;i++)
  if(s[i]>s[max])max=i;
- printf("%s\n",stu[max].name);
- printf("%d\n",s[max]);
- printf("%d\n",total);
+ my_printf("%s\n",stu[max].name);
+ my_printf("%d\n",s[max]);
+ my_printf("%d\n",total);
  return 0;
 }

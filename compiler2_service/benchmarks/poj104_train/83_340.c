@@ -4,21 +4,21 @@ int main_bench()
 { float change(int n);
 	int n,i,c1[100],s[100];
 float GPA,sum=0,c=0,g[100];
-scanf("%d\n",&n);
-scanf("%d",&c1[0]);
+my_scanf("%d\n",&n);
+my_scanf("%d",&c1[0]);
 for(i=1;i<=n-1;i++)
-{scanf(" %d",&c1[i]);}
+{my_scanf(" %d",&c1[i]);}
 
-scanf("%d",&s[0]);
+my_scanf("%d",&s[0]);
 for(i=1;i<=n-1;i++)
-{scanf(" %d",&s[i]);}
+{my_scanf(" %d",&s[i]);}
 for(i=0;i<=n-1;i++)
 {g[i]=change(s[i]);}
 for(i=0;i<=n-1;i++)
 {sum=sum+g[i]*c1[i];
 c=c+c1[i];}
 GPA=sum/c;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;
 }
 

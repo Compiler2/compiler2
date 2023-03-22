@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,a[100]={0},i,k,sum;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	if(w==1||w==2||w==3||w==4||w==5)a[0]=6-w;
 	else if(w==6)a[0]=7;
 	else if(w==7)a[0]=6;
@@ -17,7 +17,7 @@ int main_bench()
 		{
 			sum+=m[k];
 			if(a[i]==sum)
-				printf("%d\n",k+1);
+				my_printf("%d\n",k+1);
 		}
 	}
 	return 0;

@@ -4,7 +4,7 @@
 int main_bench()
 {
     int m = 0;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     int Set[5001];
     int SetN = 1;
     Set[0] = 0;
@@ -32,7 +32,7 @@ int main_bench()
         {
             if ( Set[i]+Set[j] == m )
             {
-                printf("%d %d\n", Set[i], Set[j]);
+                my_printf("%d %d\n", Set[i], Set[j]);
             }
         }
     }

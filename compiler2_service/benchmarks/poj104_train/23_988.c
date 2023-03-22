@@ -8,11 +8,11 @@ int main_bench()
 		p[i]=a[i];
 	for(q=p;;q++)
 	{
-		scanf("%s",*q);	
+		my_scanf("%s",*q);	
 		t=getchar();
 		if(t!=' ') break;
 	}
 	for(;q>=p+1;q--)
-		printf("%s ",*q);
-	printf("%s",*q);
+		my_printf("%s ",*q);
+	my_printf("%s",*q);
 }

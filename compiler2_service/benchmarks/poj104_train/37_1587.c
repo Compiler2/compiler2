@@ -4,12 +4,12 @@ int main_bench()
 {
 	int t,i,a,j,k,b,s[100000];
 	char zf[100000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	for(i=0;i<t;i++){
 		b=1;
 		memset(zf,0,sizeof(zf));
-		scanf("%s",zf); 
+		my_scanf("%s",zf); 
 		getchar();
 		a=strlen(zf);
 		for(j=0;j<a;j++){
@@ -25,12 +25,12 @@ int main_bench()
 		for(j=0;j<a;j++){
 			if(s[j]==1){
 				b=2;
-				printf("%c\n",zf[j]);
+				my_printf("%c\n",zf[j]);
 				break;
 			}
 		}
 		if(b==1){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

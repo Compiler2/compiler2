@@ -4,18 +4,18 @@
 int main_bench()
 {
 	int i,j,k,l,r,c,a[100][100];
-	scanf("%d %d",&r,&c);
+	my_scanf("%d %d",&r,&c);
 	for(i=0;i<r;i++)
 	{
 		for(j=0;j<c;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	l=0;
 	k=1;
 	if(r==1&&c==1)
-		printf("%d",a[0][0]);
+		my_printf("%d",a[0][0]);
 	else
 	{
 	for(j=0;;)
@@ -30,7 +30,7 @@ int main_bench()
 p1:{
 		for(i=l;i<c-l;i++)
 		{
-			printf("%d\n",a[l][i]);
+			my_printf("%d\n",a[l][i]);
 			j++;
 			if(j==r*c)
 				goto out;
@@ -40,7 +40,7 @@ p1:{
 p2:{
 		for(i=l+1;i<r-l-1;i++)
 		{
-			printf("%d\n",a[i][c-l-1]);
+			my_printf("%d\n",a[i][c-l-1]);
 			j++;
 			if(j==r*c)
 				goto out;
@@ -50,7 +50,7 @@ p2:{
 p3:{
 		for(i=c-l-1;i>=l;i--)
 		{
-			printf("%d\n",a[r-l-1][i]);
+			my_printf("%d\n",a[r-l-1][i]);
 			j++;
 			if(j==r*c)
 				goto out;
@@ -60,7 +60,7 @@ p3:{
 p4:{
 		for(i=r-l-2;i>l;i--)
 		{
-			printf("%d\n",a[i][l]);
+			my_printf("%d\n",a[i][l]);
 			j++;
 			if(j==r*c)
 				goto out;

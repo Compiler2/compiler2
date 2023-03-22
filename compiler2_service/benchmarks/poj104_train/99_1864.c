@@ -12,10 +12,10 @@ int main_bench()
 	int n61,sum61=0;
 	int i;
 	double p18,p19,p36,p61;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&nianling[i]);
+		my_scanf("%d",&nianling[i]);
 		if(nianling[i]<=18)
 		{
 			sum18+=1;
@@ -37,10 +37,10 @@ int main_bench()
 	p19=(double)sum19/(double)n*100.0;
 	p36=(double)sum36/(double)n*100.0;
 	p61=(double)sum61/(double)n*100.0;
-	printf("1-18: %.2lf%%\n",p18);
-	printf("19-35: %.2lf%%\n",p19);
-    printf("36-60: %.2lf%%\n",p36);
-    printf("60??: %.2lf%%\n",p61);
+	my_printf("1-18: %.2lf%%\n",p18);
+	my_printf("19-35: %.2lf%%\n",p19);
+    my_printf("36-60: %.2lf%%\n",p36);
+    my_printf("60??: %.2lf%%\n",p61);
 	return 0;
 }
 

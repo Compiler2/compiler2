@@ -3,14 +3,14 @@
 int main_bench()
 {
     int a,b,c;int xuefen[100],fenshu[100];float d;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     for(b=1;b<=a;b++)
     {
-        scanf("%d",&xuefen[b-1]);
+        my_scanf("%d",&xuefen[b-1]);
     }
     for(c=1;c<=a;c++)
     {
-        scanf("%d",&fenshu[c-1]);
+        my_scanf("%d",&fenshu[c-1]);
     }
      int e;float f,g=0;
      for(e=0;e<a;e++)
@@ -34,5 +34,5 @@ int main_bench()
      }
      float j;
      j=g/h;
-     printf("%.2f",j);
+     my_printf("%.2f",j);
 }

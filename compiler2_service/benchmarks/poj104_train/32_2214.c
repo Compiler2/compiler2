@@ -5,11 +5,11 @@ int main_bench()
    int n,bei1[100],jian1[100],cha[100];
    int j,a,b,i;
    char bei[100],jian[100];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
 	for(j=1;j<=n;j++)
 	{
-		scanf("%s",bei);
-		scanf("%s",jian);
+		my_scanf("%s",bei);
+		my_scanf("%s",jian);
 		a=strlen(bei);
 		b=strlen(jian);
 		for(i=0;i<a;i++)
@@ -44,13 +44,13 @@ int main_bench()
 		{
 			for(i=1;i<a;i++)
 			{
-			printf("%d",cha[i]);
+			my_printf("%d",cha[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 		else
-		for(i=0;i<a;i++) printf("%d",cha[i]);
-		printf("\n");
+		for(i=0;i<a;i++) my_printf("%d",cha[i]);
+		my_printf("\n");
 		
 	}	
 

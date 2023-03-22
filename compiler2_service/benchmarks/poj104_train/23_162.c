@@ -16,7 +16,7 @@ main_bench()
 		else
 		{
 			for(j-=1;j>=0;j--)
-			printf("%c",b[j]);
+			my_printf("%c",b[j]);
 			j=0;
 			putchar(' ');
 		}

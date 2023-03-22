@@ -4,9 +4,9 @@ char s[100][255];
 int main_bench(){
 	int n,k,i,j,b=0,c=0,d=0,e=0,flag=0;
 	int num[1000];
-		scanf("%d%d",&n,&k);
+		my_scanf("%d%d",&n,&k);
 		for(i=0;i<n;i++){
-			scanf("%d",&num[i]);
+			my_scanf("%d",&num[i]);
 		}
 
 		for(i=0;i<n-1&&!flag;i++){
@@ -17,9 +17,9 @@ int main_bench(){
 			}
 		}
 		if(flag==1){
-			printf("yes");
+			my_printf("yes");
 		}else {
-			printf("no");
+			my_printf("no");
 		}
 
 

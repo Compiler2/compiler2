@@ -16,17 +16,17 @@ int main_bench(){
 	m=1;
 	for (i=0;(t[i]!='\0')&&(s[i]!='\0');i++){
 		if (s[i]>t[i]){
-			printf(">");
+			my_printf(">");
 			m=0;
 			break;
 		}
 		else if (s[i]<t[i]){
-			printf("<");
+			my_printf("<");
 			m=0;
 			break;
 		}
 	}
 	if (m==1)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

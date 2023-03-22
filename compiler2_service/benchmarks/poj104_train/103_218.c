@@ -5,7 +5,7 @@ int main_bench()
 char a[1000];
 int count=1;
 int j,k;
-scanf("%s",a);
+my_scanf("%s",a);
 for(j=0;a[j]!='\0';j++)
 {
     if(a[j]>='a'&&a[j]<='z')
@@ -21,7 +21,7 @@ for(k=0;a[k]!='\0';k++)
     }
     else
     {
-        printf("(%c,%d)",a[k],count);
+        my_printf("(%c,%d)",a[k],count);
         count=1;
     }
 }

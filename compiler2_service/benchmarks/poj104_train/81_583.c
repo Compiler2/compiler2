@@ -7,18 +7,18 @@ int main_bench()
 	int i,j,mat[5][5], n, m;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&mat[i][j]);
+			my_scanf("%d",&mat[i][j]);
 
-	scanf("%d %d", &n, &m);
+	my_scanf("%d %d", &n, &m);
 	if(matrix(mat,n,m))
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				printf("%d",mat[i][j]);
-				if(j<4) printf(" ");
+				my_printf("%d",mat[i][j]);
+				if(j<4) my_printf(" ");
 			}
-			if(i<4) printf("\n");
+			if(i<4) my_printf("\n");
 		}
-else printf("error");
+else my_printf("error");
 	return 0;
 }
 

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,k=0,p,s,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++){
 		if(i%7!=0){
 			d=0;
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 	return 0;
 }
 

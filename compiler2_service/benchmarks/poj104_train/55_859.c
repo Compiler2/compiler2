@@ -4,10 +4,10 @@ main_bench()
 {
       char c[40];
       int a,b,x,i,l,k;
-      scanf("%d %s %d",&a,c,&b);
+      my_scanf("%d %s %d",&a,c,&b);
       l=strlen(c);
       if (c[0]=='0')
-        printf("0\n");
+        my_printf("0\n");
       else
         {
                       for (i=0;i<l;i++)
@@ -41,7 +41,7 @@ main_bench()
                                   f[k-1-i]=e[i]+'A'-10;
                          }
                          f[k]='\0';
-                         printf("%s",f);
+                         my_printf("%s",f);
 }                         
          getchar();
          getchar();                        

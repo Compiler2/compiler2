@@ -24,13 +24,13 @@ int main_bench(){
     f=len[0];
     if(result==1){
     for(g=0;g<f;g++){
-     printf("%c",str[g]);                  
+     my_printf("%c",str[g]);                  
     }
     for(h=0;h<c;h++){
-     printf("%c",rep[h]);                 
+     my_printf("%c",rep[h]);                 
     }
     for(j=0;j<a-f-b;j++){
-     printf("%c",str[f+b+j]);                     
+     my_printf("%c",str[f+b+j]);                     
     }                 
     }
     else if(result==0){

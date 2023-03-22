@@ -4,7 +4,7 @@ main_bench()
 {   
     char str[1000];
     int a[1000]={0},i,n,t=1;
-    scanf("%s",str);
+    my_scanf("%s",str);
     for(i=0;str[i]!='\0';i++)
     {
     if((str[i]>=97)&&(str[i]<=122)) 
@@ -17,7 +17,7 @@ main_bench()
     t=t+1;
     else
     {
-    printf("(%c,%d)",str[n],t);
+    my_printf("(%c,%d)",str[n],t);
     t=1;
     }
     }

@@ -26,7 +26,7 @@ void ganster()
 int main_bench()
 {
     int m,n,i,j;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     a[4][4]=m;
     for(i=0;i<n;i++)
     {
@@ -36,9 +36,9 @@ int main_bench()
     {
        for(j=0;j<8;j++)
        {
-          printf("%d ",a[i][j]);
+          my_printf("%d ",a[i][j]);
        }
-       printf("%d\n",a[i][j]);
+       my_printf("%d\n",a[i][j]);
     }
         
 }

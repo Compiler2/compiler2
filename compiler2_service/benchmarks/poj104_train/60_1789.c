@@ -5,7 +5,7 @@ int main_bench()
 {
     int n;
     int number1=0,number2=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int x,y;
     if (n>=5)
     {for (x=1;x<=n-2;x++)
@@ -21,7 +21,7 @@ int main_bench()
         {if (y%i==0)
         number2=number2+1;}
         if (number2==2)
-       printf ("%d %d\n",x,y);
+       my_printf ("%d %d\n",x,y);
        
         }
        
@@ -31,6 +31,6 @@ int main_bench()
       number2=0;
     }}
     else
-    printf("empty");
+    my_printf("empty");
     
 }                     

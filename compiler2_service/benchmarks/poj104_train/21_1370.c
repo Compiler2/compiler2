@@ -6,9 +6,9 @@ int main_bench()
 {
 	int n, i ,j=0,num[300];
 	double ping=0,cha[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		ping +=(double) num[i]/n;
 	}
 	
@@ -30,13 +30,13 @@ int main_bench()
 	
 	
 	if(cha[0]+cha[n-1]>0){
-		printf("%.0lf",cha[n-1]+ping);
+		my_printf("%.0lf",cha[n-1]+ping);
 	}
 	else if(cha[0]+cha[n-1]==0){
-		printf("%.0lf,%.0lf",ping+cha[0],ping+cha[n-1]);
+		my_printf("%.0lf,%.0lf",ping+cha[0],ping+cha[n-1]);
 	}
 	else{
-		printf("%.0lf",ping+cha[0]);
+		my_printf("%.0lf",ping+cha[0]);
 	}
 
 		

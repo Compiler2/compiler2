@@ -26,13 +26,13 @@ int main_bench()
 
 	}
 	if(num==1)
-		printf("No");
+		my_printf("No");
 	else if(num==2)
 	{	
 		if(a[0]!=a[1])	
-			printf("%d",(a[0]<a[1])?a[0]:a[1]);
+			my_printf("%d",(a[0]<a[1])?a[0]:a[1]);
 		else
-			printf("No");
+			my_printf("No");
 	}
 	else
 	{
@@ -58,13 +58,13 @@ int main_bench()
 		{
 			if(a[i]!=a[0])
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				flag++;
 				break;
 			}
 		}
 		if(flag==0)
-			printf("No");
+			my_printf("No");
 	}
 		
 }

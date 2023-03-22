@@ -3,12 +3,12 @@
 int main_bench(){
 	int n,k,i,j,r;
 	int sz[200],jsz[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n-1;i++){
-		scanf("%d ",&sz[i]);
+		my_scanf("%d ",&sz[i]);
 	}
 	if(i=n-1){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 		
 	r=0;
@@ -35,10 +35,10 @@ int main_bench(){
 		}
 	}
 	for(j=0;j<r-1;j++){
-		printf("%d,",jsz[j]);
+		my_printf("%d,",jsz[j]);
 	}
 	if(j=r-1)
-	{printf("%d",jsz[j]);
+	{my_printf("%d",jsz[j]);
 	}
 	return 0;
 }

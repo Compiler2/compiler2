@@ -9,9 +9,9 @@ int main_bench()
 	n=strlen(p);
 	for(i=0;i<n;i++)
 	{if(i!=n-1){wd=*(p+i)+*(p+i+1);
-	printf("%c",wd);}
+	my_printf("%c",wd);}
 	else {wd=*(p+0)+*(p+i);
-	printf("%c",wd);}}
+	my_printf("%c",wd);}}
 
 	
 

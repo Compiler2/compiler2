@@ -3,12 +3,12 @@
 int main_bench(){
     int n,i,k,t,m,a;
     a=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct l{
         int x,y;
     }l[n],e;
     for(i=0;i<n;i++){
-        scanf("%d%d",&(l[i].x),&(l[i].y));
+        my_scanf("%d%d",&(l[i].x),&(l[i].y));
     }
     for(k=1;k<n;k++){
         for(i=0;i<n-k;i++){
@@ -36,10 +36,10 @@ int main_bench(){
         }
     }
     if(a==0){
-            printf("%d %d",l[0].x,l[m].y);
+            my_printf("%d %d",l[0].x,l[m].y);
     }
     else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

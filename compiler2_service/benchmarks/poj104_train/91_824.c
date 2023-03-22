@@ -22,6 +22,6 @@ int main_bench()
 	*p1=*p2+*p;
 	p1=str1;
 	for(i=0;i<n;i++)
-	{printf("%c",*p1);p1++;}
+	{my_printf("%c",*p1);p1++;}
 }
 	

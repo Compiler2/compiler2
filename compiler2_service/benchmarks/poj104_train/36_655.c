@@ -4,13 +4,13 @@ int main_bench()
 {
 	char a[100]={""},b[100]={""};
 	int t1=0,t2=0,i,j,time;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 
 	t1=strlen(a);
 	t2=strlen(b);
 
 	if(t1!=t2)
-		printf("NO");
+		my_printf("NO");
 	time=0;
 	if(t1==t2)
 	{
@@ -27,9 +27,9 @@ int main_bench()
 			}
 		}
 		if(time==t1)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 
 }

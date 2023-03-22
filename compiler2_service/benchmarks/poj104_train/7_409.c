@@ -3,9 +3,9 @@
 int main_bench(){ 
   int m=0,k,a,b,c,i,j;
   char s[3][256];
-  scanf("%s",&s[0]);
-  scanf("%s",&s[1]);
-  scanf("%s",&s[2]);
+  my_scanf("%s",&s[0]);
+  my_scanf("%s",&s[1]);
+  my_scanf("%s",&s[2]);
   a=strlen(s[0]);
   b=strlen(s[1]);
   c=strlen(s[2]);
@@ -21,17 +21,17 @@ int main_bench(){
 	  m=0;
   }
   if(i==a){
-	printf("%s",s[0]);
+	my_printf("%s",s[0]);
   }
   else{
 	  for(k=0;k<i;k++){
-		printf("%c",s[0][k]);
+		my_printf("%c",s[0][k]);
 	  }
 	  for(k=0;k<c;k++){
-		printf("%c",s[2][k]);
+		my_printf("%c",s[2][k]);
 	  }
 	  for(k=i+b;k<a;k++){
-		printf("%c",s[0][k]);
+		my_printf("%c",s[0][k]);
 	  }
   }
 	return 0;

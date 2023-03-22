@@ -7,7 +7,7 @@ int main_bench(){
 	int p,q;
 	int year,mouth, day;
 	int sum=0;
-	scanf("%d %d %d",&year,&mouth, &day);
+	my_scanf("%d %d %d",&year,&mouth, &day);
 	
 		
 	
@@ -21,25 +21,25 @@ int main_bench(){
 	p=total(year, mouth ,day);
 	q=p+sum;
 	if(q%7==0){
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 	if(q%7==1){
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	}
 	if(q%7==2){
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}
 	if(q%7==3){
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}
 	if(q%7==4){
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}
 	if(q%7==5){
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}
 	if(q%7==6){
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}
 	return 0;
 }

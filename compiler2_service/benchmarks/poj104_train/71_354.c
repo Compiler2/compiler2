@@ -16,12 +16,12 @@ int main_bench()
     d[10]=31;
     d[11]=30;
     int n,i,y,m1,m2,j1,j2,day1,day2;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         day1=0;
         day2=0;
-        scanf("%d %d %d",&y,&m1,&m2);
+        my_scanf("%d %d %d",&y,&m1,&m2);
         if((y%400==0)||((y%100!=0)&&(y%4==0)))
         {
             d[2]=29;
@@ -37,15 +37,15 @@ int main_bench()
             }
             if((day1-day2)%7==0)
             {
-                printf("YES");
+                my_printf("YES");
                 if(i!=n-1)
-                printf("\n");
+                my_printf("\n");
             }
             else
             {
-                printf("NO");
+                my_printf("NO");
                 if(i!=n-1)
-                printf("\n");
+                my_printf("\n");
             }
         }
         else
@@ -63,15 +63,15 @@ int main_bench()
             }
             if((day1-day2)%7==0)
             {
-                printf("YES");
+                my_printf("YES");
                 if(i!=n-1)
-                printf("\n");
+                my_printf("\n");
             }
             else
             {
-                printf("NO");
+                my_printf("NO");
                 if(i!=n-1)
-                printf("\n");
+                my_printf("\n");
             }
         }
     }

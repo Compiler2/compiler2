@@ -6,7 +6,7 @@ int main_bench()
 {
 	int a,b,n,i,sum=0,t,r;
 	char str1[255],str2[255];
-	scanf("%d %s %d",&a,str1,&b);
+	my_scanf("%d %s %d",&a,str1,&b);
 	n=strlen(str1);
 	for(i=0;i<n;i++){
 		if(str1[i]>='0'&&str1[i]<='9')
@@ -18,7 +18,7 @@ int main_bench()
 			sum=sum*a+t;
 	}
 	i=0;
-	if (sum==0) printf("0\n");
+	if (sum==0) my_printf("0\n");
 	else
 	{
 		while (sum!=0)
@@ -39,9 +39,9 @@ int main_bench()
 			i--;
 		for(;i>=0;i--)
 		{
-			printf("%c",str2[i]);
+			my_printf("%c",str2[i]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

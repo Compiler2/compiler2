@@ -6,11 +6,11 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 	}while((c=getchar())!='\n');
 	num=i;
-	if(num==1)printf("No\n");
+	if(num==1)my_printf("No\n");
 	else
 	{
 		for(i=0;i<num;i++)
@@ -29,8 +29,8 @@ int main_bench()
 			break;
 		}
 	if(flag!=0)
-		printf("%d\n",a[i]);
-	else printf("No\n");
+		my_printf("%d\n",a[i]);
+	else my_printf("No\n");
 	}
 	return 0;
 }

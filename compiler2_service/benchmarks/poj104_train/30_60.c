@@ -11,11 +11,11 @@ int main_bench()
 	int n,i;
 	long sq_sum=0;
 	int is_7_rlt(int n);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		if(!is_7_rlt(i))
 			sq_sum+=i*i;
-	printf("%ld",sq_sum);
+	my_printf("%ld",sq_sum);
 }
 
 int is_7_rlt(int n)

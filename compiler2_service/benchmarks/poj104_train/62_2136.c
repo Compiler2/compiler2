@@ -11,6 +11,6 @@ int main_bench()
 		{
 			i++;
 		}
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
     }
 }

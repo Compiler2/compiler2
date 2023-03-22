@@ -6,7 +6,7 @@ int main_bench()
 	char s2[256];
 	char s3[256];
 	int i,j,q;
-	scanf("%s\n%s\n%s",s1,s2,s3);
+	my_scanf("%s\n%s\n%s",s1,s2,s3);
 
 	int k1=strlen(s1);
 	int k2=strlen(s2);
@@ -35,11 +35,11 @@ int main_bench()
 	{
 		if(i!=q)
 		{
-			printf("%c",s1[i]);
+			my_printf("%c",s1[i]);
 		}
 		if(i==q)
 		{
-			printf("%s",s3);
+			my_printf("%s",s3);
 			i=i+k2-1;
 		}
 	}

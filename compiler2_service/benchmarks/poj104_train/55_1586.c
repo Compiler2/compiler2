@@ -7,7 +7,7 @@ int main_bench()
 	char f[10000];
 	int g[10000];
 	int a,b,i,len,s=0,t=0;
-	scanf("%d %s %d",&a,f,&b);
+	my_scanf("%d %s %d",&a,f,&b);
 	len=strlen(f);
 	for(i=0;i<len;i++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 	g[t]=s%b;
 	for(i=t;i>=0;i--)
 	{
-		printf("%c",trans(g[i]));
+		my_printf("%c",trans(g[i]));
 	}
 	return 0;
 }

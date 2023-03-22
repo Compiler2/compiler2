@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	struct point
 	{
@@ -11,7 +11,7 @@ int main_bench()
 	}words[1000];
 	for(i=0;i<n;i++)
 	{   
-		scanf("%s",words[i].a);
+		my_scanf("%s",words[i].a);
 		int b;
 		b=strlen(words[i].a);
 		if(i<n-1)
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s",words[i].a);
+		my_printf("%s",words[i].a);
 	}
 	return 0;
 }

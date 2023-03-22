@@ -7,13 +7,13 @@ int main_bench()
 	int x[100][100];
 
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for(i=0; i<n; i++)
 	{
 		for(j=0; j<n; j++)
 		{
-		    scanf("%d", &x[i][j]);
+		    my_scanf("%d", &x[i][j]);
 		}
 	}  
 	for(i=0; i<n; i++)
@@ -43,5 +43,5 @@ int main_bench()
 			break;
 	}
 	s = (a - 2)*(b - 2);
-	printf("%d", s);
+	my_printf("%d", s);
 }

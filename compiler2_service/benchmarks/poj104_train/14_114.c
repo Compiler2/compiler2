@@ -9,10 +9,10 @@ struct data
 int main_bench()
 {
 	int i,n,x=0,y=0,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&data.num[i],&data.a[i],&data.b[i]);
+		my_scanf("%d %d %d",&data.num[i],&data.a[i],&data.b[i]);
 		data.sum[i]=data.a[i]+data.b[i];
 	}
 	for(i=0;i<n;i++)
@@ -33,7 +33,7 @@ int main_bench()
 		if(data.sum[i]<=data.sum[y]&&data.sum[i]>data.sum[z])
 			z=i;
 	}
-	printf("%d %d\n",data.num[x],data.sum[x]);
-	printf("%d %d\n",data.num[y],data.sum[y]);
-	printf("%d %d",data.num[z],data.sum[z]);
+	my_printf("%d %d\n",data.num[x],data.sum[x]);
+	my_printf("%d %d\n",data.num[y],data.sum[y]);
+	my_printf("%d %d",data.num[z],data.sum[z]);
 }

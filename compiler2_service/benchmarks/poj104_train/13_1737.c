@@ -2,11 +2,11 @@
 
 int main_bench()
 {int k,i,j,l=0,excit=0;
- scanf("%d",&k);
+ my_scanf("%d",&k);
  int num[k],shulie[k];
  
  for (i=1;i<=k;i++)
- { scanf("%d",&num[i-1]);
+ { my_scanf("%d",&num[i-1]);
    for (j=0;j<=i-2;j++)
 	   if (num[j]==num[i-1])
 	   {  
@@ -19,7 +19,7 @@ int main_bench()
 	}
 	else excit=0;
  }
- printf("%d",shulie[0]);
+ my_printf("%d",shulie[0]);
  for (i=2;i<=l;i++)
-		 printf(" %d",shulie[i-1]);
+		 my_printf(" %d",shulie[i-1]);
  }

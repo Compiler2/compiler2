@@ -16,7 +16,7 @@ int main_bench()
 		a=zifu[0][i];
 		b=zifu[0][i+1];
 		c=a+b;
-		printf("%c",c);
+		my_printf("%c",c);
 	}
 	char c;
 	char a;
@@ -24,7 +24,7 @@ int main_bench()
 	a=zifu[0][0];
 	b=zifu[0][t-1];
 	c=zifu[0][0]+zifu[0][t-1];
-	printf("%c",c);
+	my_printf("%c",c);
 
 
 	

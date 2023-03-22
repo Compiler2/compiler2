@@ -4,10 +4,10 @@ int main_bench()
 {
 	int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int y[200],m[200],d[200],i,c[200],e[200],n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%d%d%d",&y[j],&m[j],&d[j]);
+		my_scanf("%d%d%d",&y[j],&m[j],&d[j]);
 	
 	if(((y[j]%4==0)&&(y[j]%100!=0))||(y[j]%400==0))
 	{
@@ -25,11 +25,11 @@ int main_bench()
 	}
 	if((c[j]-e[j])%7==0)
 	{
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	else
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	days[2]=28;
 	}

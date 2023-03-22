@@ -4,9 +4,9 @@ int main_bench(){
 int i,k,a1,a2,w;
 char DNA1[501],DNA2[501];
 double n,q;
-scanf("%lf",&n);
-scanf("%s",&DNA1);
-scanf("%s",&DNA2);
+my_scanf("%lf",&n);
+my_scanf("%s",&DNA1);
+my_scanf("%s",&DNA2);
 a1=strlen(DNA1);
 a2=strlen(DNA2);
 k=0;
@@ -19,10 +19,10 @@ for(i=0;i<a1;i++){
 	w*=1;
 }
 q=k*1.0/a1;
-if(w==0){printf("error");}
-else{if(q>n){printf("yes");}
-     else{printf("no");}}
+if(w==0){my_printf("error");}
+else{if(q>n){my_printf("yes");}
+     else{my_printf("no");}}
 }
-else{printf("error");}
+else{my_printf("error");}
 return 0;
 }

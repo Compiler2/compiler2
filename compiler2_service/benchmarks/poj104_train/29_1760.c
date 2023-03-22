@@ -6,7 +6,7 @@ int main_bench()
 	double a[100]={1,2};
 	double b[100];
 	double sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<100;i++){
 		a[i]=a[i-1]+a[i-2];
 	}
@@ -14,11 +14,11 @@ int main_bench()
 		b[i]=a[i+1]/a[i];
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&t);
+		my_scanf("%d",&t);
 	for(j=0;j<t;j++){
 		sum=sum+b[j];
 	}
-	printf("%.3lf\n",sum);
+	my_printf("%.3lf\n",sum);
         sum=0;
 	}
 	return 0;

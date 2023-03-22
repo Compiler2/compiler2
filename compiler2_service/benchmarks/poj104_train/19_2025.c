@@ -4,8 +4,8 @@ int main_bench(){
 	char zfc[100], in[30], out[30], x[100], y[100], zfc2[20][100];
 	int len, i, t=1, lenall, judge=1, num[100], k=1;
 	gets(zfc);
-	scanf("%s", in);
-	scanf("%s", out);
+	my_scanf("%s", in);
+	my_scanf("%s", out);
 	len=strlen(in);
 	lenall=strlen(zfc);
 	num[0]=0;
@@ -25,8 +25,8 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<k-1;i++){
-		printf("%s ", zfc2[i]);
+		my_printf("%s ", zfc2[i]);
 	}
-	printf("%s", zfc2[k-1]);
+	my_printf("%s", zfc2[k-1]);
 	return 0;
 }

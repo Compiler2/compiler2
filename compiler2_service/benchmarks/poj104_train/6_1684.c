@@ -4,13 +4,13 @@ int main_bench(){
 	int i,j,m,n,k,sum=0,x,q,w,e,r;
 	int ss[100];
 	int sz[100][100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(x=0;x<k;x++){
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
-			scanf("%d ",&sz[i][j]);}
+			my_scanf("%d ",&sz[i][j]);}
 	}
 	q=0;
 	w=0;
@@ -26,7 +26,7 @@ int main_bench(){
 		r=r+sz[i][n-1];}
 	sum=q+w+e+r;
 	
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int year,mon,day,num=0,i,a[11];
-	scanf("%d %d %d",&year,&mon,&day);
+	my_scanf("%d %d %d",&year,&mon,&day);
 	a[0]=a[2]=a[4]=a[6]=a[7]=a[9]=31;
 	a[3]=a[5]=a[8]=a[10]=30;
 	if(year%4!=0)
@@ -24,6 +24,6 @@ int main_bench()
 		num=num+a[i];
 	}
 	num=num+day;
-	printf("%d",num);
+	my_printf("%d",num);
 	return 0;
 }

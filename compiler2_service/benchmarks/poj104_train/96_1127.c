@@ -147,7 +147,7 @@ main_bench()
  int i;
  for (i=0; i<100; i++)
      ans[i]='0';
- scanf("%s", dvdd);
+ my_scanf("%s", dvdd);
  N=strlen(dvdd);
  lev=0;
 
@@ -160,8 +160,8 @@ main_bench()
  }
  if (N==1)
  {
-    printf("0\n");
-    printf("%d\n", lev); 
+    my_printf("0\n");
+    my_printf("%d\n", lev); 
  }
  else
  {
@@ -169,21 +169,21 @@ main_bench()
   if (head<13)
   {
    if (N==2)
-      printf("0\n");
+      my_printf("0\n");
    else
    {
     for (i=2; i<=N-1; i++)
-        printf("%c", ans[i]);
-    printf("\n");
+        my_printf("%c", ans[i]);
+    my_printf("\n");
    }         
-   printf("%d\n", lev);   
+   my_printf("%d\n", lev);   
   }
   else
   {
    for (i=1; i<=N-1; i++)
-        printf("%c", ans[i]);
-   printf("\n");
-   printf("%d\n", lev);   
+        my_printf("%c", ans[i]);
+   my_printf("\n");
+   my_printf("%d\n", lev);   
   }
  }
 }

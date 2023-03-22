@@ -2,10 +2,10 @@
 
 int main_bench(){
 int n,i,s,m,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[50000],b[50000];
 for(i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 if(i==0){
 s=a[i];
 m=b[i];
@@ -37,9 +37,9 @@ p=1;
 
 }
 if(p==0){
-printf("%d %d",s,m);
+my_printf("%d %d",s,m);
 }else{
-printf("no");
+my_printf("no");
 }
 return 0;
 }

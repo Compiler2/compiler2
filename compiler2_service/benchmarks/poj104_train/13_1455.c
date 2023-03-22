@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,cal=0,enter=1,num=0;
 	int a[100001]={0},b[100001]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for (i=1;i<=n;i++)
 	{
@@ -21,11 +21,11 @@ int main_bench()
 		}
 		if (enter==1)
 		{
-			printf ("%d",a[i]);
+			my_printf ("%d",a[i]);
 			enter=0;
 		}
 		else
-			printf (" %d",a[i]);
+			my_printf (" %d",a[i]);
 		num++;
 		b[num]=a[i];
 next:

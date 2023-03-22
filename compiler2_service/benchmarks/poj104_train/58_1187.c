@@ -4,7 +4,7 @@ int main_bench()
 {
 	char(*p)[81];
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	p=(char(*)[81])malloc(n*sizeof(char[81]));
 	char (*head)[81];
 	head=p;
@@ -24,15 +24,15 @@ int main_bench()
 			{
 			   if(!((*al>='0'&&*al<='9')||(*al>='a'&&*al<='z')||(*al>='A'&&*al<='Z')||(*al=='_')))
 			   {
-				   printf("0\n");
+				   my_printf("0\n");
 				   break;
 			   }
 			   al++;
 			}
-			if (*al=='\0') printf("1\n");
+			if (*al=='\0') my_printf("1\n");
 		}
 		else
-			printf("0\n");
+			my_printf("0\n");
 		p++;
 	}
 	return 0;

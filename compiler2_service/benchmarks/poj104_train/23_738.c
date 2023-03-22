@@ -22,8 +22,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m;i++) strcpy(b[i],c[m-i-1]);
-    for(i=0;i<m-1;i++) printf("%s ",b[i]);
-	printf("%s\n",b[m-1]);
+    for(i=0;i<m-1;i++) my_printf("%s ",b[i]);
+	my_printf("%s\n",b[m-1]);
 }        
 
 

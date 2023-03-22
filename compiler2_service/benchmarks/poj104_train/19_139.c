@@ -8,7 +8,7 @@ int main_bench()
 	m=strlen(a);
 	strcpy(q,a);
 
-	scanf("%s%s",&b,&c);
+	my_scanf("%s%s",&b,&c);
 	n=strlen(b);
 	l=strlen(c);
  
@@ -58,10 +58,10 @@ int main_bench()
 }
 		
 	
- 	if(z==1 ) printf("%s",a);
+ 	if(z==1 ) my_printf("%s",a);
     if(z==0&&N!=0)
 	
 		for(i=0;i<m;i++)
-		printf("%c",q[i]);
+		my_printf("%c",q[i]);
 	return 0;
 }

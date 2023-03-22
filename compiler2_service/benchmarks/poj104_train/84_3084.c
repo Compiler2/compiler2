@@ -6,9 +6,9 @@ int main_bench()
     int a[1000];
     int max, max2;
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(int i=0; i<n; i++){
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     }
 
     max = a[0];
@@ -29,7 +29,7 @@ int main_bench()
         }
     }
 
-    printf("%d\n%d\n", max, max2);
+    my_printf("%d\n%d\n", max, max2);
 
     return 0;
 }

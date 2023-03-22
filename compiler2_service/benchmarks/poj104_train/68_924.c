@@ -25,12 +25,12 @@ int main_bench()
     P[1]=2;
     for (i=3;i<250;i++)
         prime(i);
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (j=6;j<=n;j+=2)
         for (i=3;i<=j/2;i++)
             if (p(i) && p(j-i))
             {
-               printf("%d=%d+%d\n",j,i,j-i);
+               my_printf("%d=%d+%d\n",j,i,j-i);
                break;
             }
     getchar();

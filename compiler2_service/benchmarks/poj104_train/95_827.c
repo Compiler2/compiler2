@@ -21,7 +21,7 @@ if(s1[i]<s2[i]){p=2; break;}
 
 }
 
-if(p==1) printf(">");
-if(p==2) printf("<");
-if(p==0) printf("=");
+if(p==1) my_printf(">");
+if(p==2) my_printf("<");
+if(p==0) my_printf("=");
 }

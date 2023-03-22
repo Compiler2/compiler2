@@ -6,12 +6,12 @@ int main_bench()
    int i,j,n,a[1000][1000];
    int x1=0,y1=0,x2=0,y2=0;
    int area;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
       for(j=0;j<n;j++)
       {
-         scanf("%d",&a[i][j]);
+         my_scanf("%d",&a[i][j]);
       }
    }
    for(i=0;i<n;i++)
@@ -41,6 +41,6 @@ int main_bench()
       if(x2!=0||y2!=0) break;
    }
    area=(x2-x1+1)*(y2-y1+1);
-   printf("%d\n",area);
+   my_printf("%d\n",area);
   return 0;
 }

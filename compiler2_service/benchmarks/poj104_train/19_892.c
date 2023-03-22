@@ -39,15 +39,15 @@ int main_bench()
 	
 
 
-	scanf("%s",yaotihuan);
-	scanf("%s",tihuan);
+	my_scanf("%s",yaotihuan);
+	my_scanf("%s",tihuan);
 	for(i=0;i<=j;i++)
 	{
 		if(strcmp(danci[i],yaotihuan)==0)
 			strcpy(danci[i],tihuan);
 	}
 	for(i=0;i<j;i++)
-		printf("%s ",danci[i]);
-printf("%s",danci[j]);
+		my_printf("%s ",danci[i]);
+my_printf("%s",danci[j]);
 return 0;
 }

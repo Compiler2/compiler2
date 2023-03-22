@@ -38,6 +38,6 @@ int main_bench()
 			max2=a[i];
 	}
 
-end:if (same) printf("No\n");
-	else printf("%d\n",max2);
+end:if (same) my_printf("No\n");
+	else my_printf("%d\n",max2);
 }

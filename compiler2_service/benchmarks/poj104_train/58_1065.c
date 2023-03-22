@@ -29,7 +29,7 @@ int main_bench()
 				}
 			}
 		}
-		printf("%d\n",j);
+		my_printf("%d\n",j);
 	}
 	return 0;
 }

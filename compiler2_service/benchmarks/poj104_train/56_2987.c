@@ -11,10 +11,10 @@ int main_bench()
 }
 void change(char *q){
 	char *q0 = q;
-	if (*q=='\0') printf("\n");
+	if (*q=='\0') my_printf("\n");
 	else {
         for (;*q!='\0';q++){}
-		printf("%c",*(q-1));
+		my_printf("%c",*(q-1));
 		*(q-1)='\0';
 		change(q0);
 	}

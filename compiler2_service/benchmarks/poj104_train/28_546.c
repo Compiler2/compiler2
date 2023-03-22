@@ -38,8 +38,8 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		printf("%d,",strlen(str[i]));
+		my_printf("%d,",strlen(str[i]));
 	}
-	printf("%d",strlen(str[j]));
+	my_printf("%d",strlen(str[j]));
 	return 0;
 }

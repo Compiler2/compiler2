@@ -5,7 +5,7 @@ int main_bench()
     double a;
     int sum=0,i,l1,l2,judge=1;
     char x[1001],y[1001];
-    scanf("%lf%s%s",&a,x,y);
+    my_scanf("%lf%s%s",&a,x,y);
     l1=strlen(x),l2=strlen(y);
     if (l1!=l2)
        judge=0;
@@ -23,11 +23,11 @@ int main_bench()
             if (x[i]==y[i])
                sum++;
        if (sum>=(int)(a*l1))
-          printf("yes");
+          my_printf("yes");
        else
-          printf("no");
+          my_printf("no");
     }
     else
-      printf("error");
+      my_printf("error");
     return 0;
 }

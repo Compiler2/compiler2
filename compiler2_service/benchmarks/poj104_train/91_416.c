@@ -18,7 +18,7 @@ p++;
 }
 b[n-1]=(*p)+(*p1);
 for(i=0;i<=n-1;i++)
-printf("%c",b[i]);
+my_printf("%c",b[i]);
 return 0;
 
 }

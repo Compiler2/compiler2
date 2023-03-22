@@ -3,8 +3,8 @@
 int main_bench(){
 	char sz[100],zfc[20][20],a[20],b[20];
 	gets(sz);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i,j=0,k=0;
 	for(i=0;i<=strlen(sz);i++){
 		if(sz[i]!='\0'&&sz[i]!=' '){
@@ -22,9 +22,9 @@ int main_bench(){
 		strcpy(zfc[i],b);
 		}
 	}
-	printf("%s",zfc[0]);
+	my_printf("%s",zfc[0]);
 	for(i=1;i<j;i++){
-	printf(" %s",zfc[i]);
+	my_printf(" %s",zfc[i]);
 	}
 	return 0;
 }

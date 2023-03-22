@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct point{
                  char DNA[300];
                  }p[1000];
     for(i=0;i<n;i++){
-                      scanf("%s",p[i].DNA);
+                      my_scanf("%s",p[i].DNA);
                       }
     for(i=0;i<n;i++){
                      for(j=0;p[i].DNA[j]!='\0';j++){
@@ -30,9 +30,9 @@ int main_bench()
                                                     }
                      p[i].DNA[j]='\0';
    if(i<n-1){
-                     printf("%s\n",p[i].DNA);
+                     my_printf("%s\n",p[i].DNA);
                      }
     if(i==n-1)
-       printf("%s",p[i].DNA);
+       my_printf("%s",p[i].DNA);
        }return 0;
 }

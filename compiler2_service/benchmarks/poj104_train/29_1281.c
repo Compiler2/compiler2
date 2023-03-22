@@ -5,10 +5,10 @@ int main_bench()
     int m,n;
     float sum;
     int a[1000]={0};
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     int r=0;
     while(r<m){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i=0;
     while(i<=n){
     if(i==0){
@@ -22,7 +22,7 @@ int main_bench()
     }
     i++;
     }
-    printf("%.3f\n",sum);
+    my_printf("%.3f\n",sum);
     r++;
     }
     return 0;

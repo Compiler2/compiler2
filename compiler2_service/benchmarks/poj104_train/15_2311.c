@@ -3,13 +3,13 @@
 int main_bench( )
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[1001][1001]={0};
 	int i,j,temp=0;
 	int c1,c2,d1,d2,f1,f2,g1,g2;
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{
@@ -35,7 +35,7 @@ int main_bench( )
 			}
 		}
 		temp=(d2-c2-1)*(f1-c1-1);
-		printf("%d",temp);
+		my_printf("%d",temp);
 
 
 

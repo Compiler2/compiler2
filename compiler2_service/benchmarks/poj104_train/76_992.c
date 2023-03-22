@@ -6,9 +6,9 @@ int main_bench(){
        int a,b;   
            }Q[50000];
     int n,i,j,c,d;
-    scanf("%d",&n);   
+    my_scanf("%d",&n);   
     for(i=0;i<n;i++){
-       scanf("%d%d",&(Q[i].a),&(Q[i].b));              
+       my_scanf("%d%d",&(Q[i].a),&(Q[i].b));              
                      }
     for(i=0;i<n;i++){
         for(j=1;j<n-i;j++){
@@ -22,12 +22,12 @@ int main_bench(){
 
     for(i=0,c=Q[0].a,d=Q[0].b;i<n;i++){
         
-         if(Q[i].a>d){printf("no");return 0;}
+         if(Q[i].a>d){my_printf("no");return 0;}
          else{
             if(Q[i].b>d){d=Q[i].b;}  
               }                     
                               }            
-    printf("%d %d",c,d);    
+    my_printf("%d %d",c,d);    
 
 return 0;
 }

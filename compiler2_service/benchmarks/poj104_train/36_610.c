@@ -6,11 +6,11 @@ int main_bench()
 {
     int l1,n;
 
-    scanf("%s",str);
+    my_scanf("%s",str);
     n=strlen(str);
     for (l1=0;l1<n;l1++)
         num[str[l1]]++;
-    scanf("%s",str);
+    my_scanf("%s",str);
     n=strlen(str);
     for (l1=0;l1<n;l1++)
         num[str[l1]]--;
@@ -19,8 +19,8 @@ int main_bench()
         if (num[l1]!=0)
             break;
     if (l1==128)
-        printf("YES\n");
+        my_printf("YES\n");
     else
-        printf("NO\n");
+        my_printf("NO\n");
     return 0;
 }

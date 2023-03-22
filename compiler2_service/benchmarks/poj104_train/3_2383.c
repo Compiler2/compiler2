@@ -7,9 +7,9 @@ int main_bench(){
    int m;
    int zzd[1001];
    int hzy[1001];
-   scanf("%d%d",&n,&k);
+   my_scanf("%d%d",&n,&k);
    for(i=0;i<n;i++){
-        scanf("%d",&zzd[i]);
+        my_scanf("%d",&zzd[i]);
         }
           for(i=0;i<n;i++){
           hzy[i]=zzd[i];
@@ -17,12 +17,12 @@ int main_bench(){
           for(m=0;m<n;m++){
               for(i=0;i<n;i++){
                    if(zzd[m]+hzy[i]==k){
-                            printf("yes");
+                            my_printf("yes");
                             break;
                             }
                             }
                             if(m==n-1){
-                               printf("no");
+                               my_printf("no");
                                break;  
                                }  
                               if(zzd[m]+hzy[i]==k){

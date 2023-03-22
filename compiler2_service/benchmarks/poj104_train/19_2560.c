@@ -49,11 +49,11 @@ if(strcmp(x,a)==0)
 {
 strcpy(x,b);
 }
-printf("%s",x);
+my_printf("%s",x);
 l++;
 if(l!=n)
 {
-printf(" ");
+my_printf(" ");
 }
 }
 

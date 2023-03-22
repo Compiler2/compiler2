@@ -24,7 +24,7 @@ int main_bench()
 	j=strlen(c2);
 	if (g!=j)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		goto end;
 	}
 	for (a=0;a<g;a++)
@@ -41,13 +41,13 @@ int main_bench()
 		}
 		if (e==0)
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			goto end;
 		}
 	}
 	if (a==g)
 	{
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 end:;
 }

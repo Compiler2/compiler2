@@ -16,16 +16,16 @@ int main_bench()
 		{
 			for(j=1;j<=m;j++)
 			{
-				printf("%c",*(str+i+j));
+				my_printf("%c",*(str+i+j));
 			}
-			printf(" ");
+			my_printf(" ");
 			m=0;
 		}
 		if(i==0)
 		{
 			for(j=0;j<m;j++)
 			{
-				printf("%c",*(str+j));
+				my_printf("%c",*(str+j));
 			}
 		}
 	}

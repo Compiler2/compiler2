@@ -2,9 +2,9 @@
 
 int main_bench(){
 int n,k,i,sz[1000],a,sa[1000],ye=0;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 for(i=0;i<n;i++){
-	scanf("%d",&(sz[i]));
+	my_scanf("%d",&(sz[i]));
 	sa[i]=sz[i];
 }
 for(i=0;i<n-1;i++){
@@ -19,9 +19,9 @@ for(i=0;i<n-1;i++){
 	}
 }
 if(ye==1){
-	printf("yes");
+	my_printf("yes");
 }else{
-	printf("no");
+	my_printf("no");
 }
 	return 0;
 }

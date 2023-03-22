@@ -7,12 +7,12 @@ int main_bench()
 	float b[300];
 	int i,n;
 	float sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-2;i++)
 	{
-		scanf("%d ",&a[i]);
+		my_scanf("%d ",&a[i]);
 	}
-	scanf("%d",&a[n-1]);
+	my_scanf("%d",&a[n-1]);
 	for(i=0;i<=n-1;i++){
 		sum=sum+a[i];
 	}
@@ -50,8 +50,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<=h-2;i++){
-		printf("%d,",c[i]);
+		my_printf("%d,",c[i]);
 	}
-	printf("%d\n",c[h-1]);
+	my_printf("%d\n",c[h-1]);
 	return 0;
 }

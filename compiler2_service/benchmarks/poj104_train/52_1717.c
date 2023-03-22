@@ -5,24 +5,24 @@
 int main_bench()
 {
     int i,n,m,a[100],*p;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
 
     for(i=0;i<n;i++)
     {
     if (i-m>=0)
     {
-    printf("%d",*(a+i-m))   ;
+    my_printf("%d",*(a+i-m))   ;
     if(i!=n-1)
     {
-    printf(" ")  ;
+    my_printf(" ")  ;
     }
     continue;
     }
-        printf("%d ",*(a+n-m+i));
+        my_printf("%d ",*(a+n-m+i));
 
     }
 

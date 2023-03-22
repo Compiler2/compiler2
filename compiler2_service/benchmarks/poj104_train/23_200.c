@@ -36,8 +36,8 @@ k++;
 for(i=k-1;i>=0;i--)
 {
    for(j=1;j<=b[i];j++)
-   printf(" ");
-   printf("%s",str[i]);
+   my_printf(" ");
+   my_printf("%s",str[i]);
 }
 return 0;
 }

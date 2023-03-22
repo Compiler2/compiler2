@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,I;
 	float total,ave,max,num[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	  scanf("%f",&num[i]);
+	  my_scanf("%f",&num[i]);
 	total=0;
 	for(i=0;i<n;i++)
 	  total=total+num[i];
@@ -21,15 +21,15 @@ int main_bench()
 		 if((ave-num[i])>max)	  
 			max=ave-num[i];
 	if(n==7&&num[0]==3&&num[1]==1&&num[2]==2)
-           printf("15");
+           my_printf("15");
          for(i=0;i<n;i++)
 		if(max==(num[i]-ave)||max==(ave-num[i]))
-	  { printf("%g",num[i]);
+	  { my_printf("%g",num[i]);
 	    I=i;
 	    break;}
 	for(j=I+1;j<n;j++)
 	  if(max==(num[j]-ave))
-		  printf(",%g",num[j]);
-	printf("\n");
+		  my_printf(",%g",num[j]);
+	my_printf("\n");
 
 }

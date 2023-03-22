@@ -5,9 +5,9 @@ int main_bench(){
   double x,y,t;
   int zong[200],you[200],j[200];
   int i=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-	  scanf("%d %d",&zong[i],&you[i]);
+	  my_scanf("%d %d",&zong[i],&you[i]);
       x=you[0]*1.0/zong[0];
 	  y=you[i]*1.0/zong[i];
 	  t=y-x;
@@ -25,13 +25,13 @@ int main_bench(){
   i=1;
   for(i=1;i<n;i++){
 	  if(j[i]==2){
-		  printf("better\n");
+		  my_printf("better\n");
 	  }
       if(j[i]==0){
-		  printf("worse\n");
+		  my_printf("worse\n");
 	  }
       if(j[i]==1){
-		  printf("same\n");
+		  my_printf("same\n");
 	  }
   }
 

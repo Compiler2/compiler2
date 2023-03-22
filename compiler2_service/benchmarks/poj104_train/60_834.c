@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,i,j,x,z,s[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	z=1;
 	s[0]=2;
 	x=0;
@@ -25,8 +25,8 @@ int main_bench()
 
 	for(i=0;i<z-1;i++){
 		if(s[i]+2==s[i+1]){
-			printf("%d %d\n",s[i],s[i+1]);
+			my_printf("%d %d\n",s[i],s[i+1]);
 		}
-	}}else if(n<5){printf("empty");}
+	}}else if(n<5){my_printf("empty");}
 	return 0;
 }

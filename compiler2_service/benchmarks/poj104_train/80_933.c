@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday,year,month,m,s=0;
-	scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
 	if (startyear!=endyear)
 	{
 	for (year=startyear+1;year<endyear;year++)
@@ -73,6 +73,6 @@ int main_bench()
 			}
 			else s=endday-startday;
 	     }
-	   	   printf("%d",s);
+	   	   my_printf("%d",s);
 	   return 0;
 }

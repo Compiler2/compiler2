@@ -8,7 +8,7 @@ int main_bench()
 	char *p;
 	
 	
-	scanf("%s%s%s",str1,str2,str3);
+	my_scanf("%s%s%s",str1,str2,str3);
 	
 	b=strlen(str2);
 	
@@ -19,16 +19,16 @@ int main_bench()
 	{
 		for(i=0;str1+i<p;i++)
 		{
-			printf("%c",str1[i]);
+			my_printf("%c",str1[i]);
 		}
-		printf("%s",str3);
+		my_printf("%s",str3);
 		
 		p=p+b;
 		
-		printf("%s",p);
+		my_printf("%s",p);
 		
 	}
 
 	else
-		printf("%s",str1);
+		my_printf("%s",str1);
 }

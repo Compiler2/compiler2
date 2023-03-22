@@ -4,17 +4,17 @@ int main_bench()
 {
 	int n, bad, a[100]={0}, i, j, b;
 	int all(int bad, int a[100]);
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%d", &bad);
+		my_scanf("%d", &bad);
 		if(bad==0)
-			printf("60\n");
+			my_printf("60\n");
 		else{
 		for(j=0;j<bad;j++){
-			scanf("%d", &a[j]);
+			my_scanf("%d", &a[j]);
 		}
 			b = all(bad, a);
-			printf("%d\n", b);
+			my_printf("%d\n", b);
 		}
 	}
 	return 0;

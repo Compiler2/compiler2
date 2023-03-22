@@ -5,16 +5,16 @@ int main_bench()
 {
   int i,j,x,y,z;
    int a[100][100],b[100][100]={0};
-   scanf("%d%d",&x,&y);
+   my_scanf("%d%d",&x,&y);
    for(i=0;i<x;i++)
      {
        for(j=0;j<y;j++) 
-       scanf("%d",&a[i][j]);
+       my_scanf("%d",&a[i][j]);
      }
      while(x>0)
   {
      for(j=0;j<y;j++)
-    printf("%d\n",a[0][j]);
+    my_printf("%d\n",a[0][j]);
    for(i=0;i<y;i++)
          {
             for(j=0;j<x;j++)

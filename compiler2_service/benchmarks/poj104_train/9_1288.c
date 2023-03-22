@@ -11,9 +11,9 @@ int main_bench()
 	int n,i,j,a=0,b=0,tem;
 	int age_r[100],time_range[100];
 	char temid[11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",pt[i].id,&pt[i].age);
+		my_scanf("%s%d",pt[i].id,&pt[i].age);
 		if(pt[i].age>=60){
 			age_r[a]=i;
 			a++;
@@ -38,10 +38,10 @@ int main_bench()
 
 	}
 	for(i=0;i<a;i++){
-		printf("%s\n",pt[age_r[i]].id);
+		my_printf("%s\n",pt[age_r[i]].id);
 	}
 	for(i=0;i<b;i++){
-		printf("%s\n",pt[time_range[i]].id);
+		my_printf("%s\n",pt[time_range[i]].id);
 	}
 
 	return 0;

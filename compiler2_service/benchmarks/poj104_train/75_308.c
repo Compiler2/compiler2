@@ -23,12 +23,12 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[0][i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[0][i]);
+		my_scanf("%c",&c);
 		if(c=='\n') break;
 	}i=i+1;
 	for(j=0;j<i;j++)
-		scanf("%d%c",&a[1][j],&c);
+		my_scanf("%d%c",&a[1][j],&c);
 	start=min(a[0],i);
 	end=max(a[1],i);
 	for(k=start;k<=end;k++)
@@ -40,6 +40,6 @@ int main_bench()
 		}
 		if(m>p) p=m;
 	}
-	printf("%d %d",i,p);
+	my_printf("%d %d",i,p);
 	return 0;
 }

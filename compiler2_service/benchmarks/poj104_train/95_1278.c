@@ -23,15 +23,15 @@ int main_bench()
     }
     if(strcmp(string1,string2)==0)
     {
-                                  printf("=");
+                                  my_printf("=");
     }
     if(strcmp(string1,string2)>0)
     {
-                                 printf(">");
+                                 my_printf(">");
     }
     if(strcmp(string1,string2)<0)
     {
-                                 printf("<");
+                                 my_printf("<");
      
     }
     return 0;

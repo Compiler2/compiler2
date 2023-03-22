@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int N,e,i,k,a[500],flag=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 
@@ -24,12 +24,12 @@ int main_bench()
 		if((a[i]+2)%2!=0){
 			if(flag==0)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				flag=1;
 			}
 			else
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			}
 		}
 	}

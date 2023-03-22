@@ -8,10 +8,10 @@ int main_bench()
    double aver;
    int a[300];
    double b[300];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
 	   sum=sum+a[i];
    }
    aver=(double)sum/n;
@@ -26,7 +26,7 @@ int main_bench()
    {
 	   if(b[i]==max) 
 	   {
-		   printf("%d",a[i]);
+		   my_printf("%d",a[i]);
            t=i;
 		   break;
 	   }
@@ -35,7 +35,7 @@ int main_bench()
    {
 	   if(b[i]==max) 
 	   {
-		   printf(",%d",a[i]);
+		   my_printf(",%d",a[i]);
 	   }
    }
    return 0;

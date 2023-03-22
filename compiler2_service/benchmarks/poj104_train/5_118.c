@@ -5,9 +5,9 @@ int main_bench()
 	double m,aver;
 	int n,i,j,k=0,l=0;
 	char a[500],b[500];
-	scanf("%lf",&m);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&m);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if(strlen(a)!=strlen(b))
 	{
 		k++;
@@ -30,17 +30,17 @@ int main_bench()
 	aver=1.0*l/strlen(a);
 	if(k!=0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	if(k==0)
 	{
 		if(aver>m)
 		{
-		printf("yes");
+		my_printf("yes");
 		}
 		else
 		{
-		printf("no");
+		my_printf("no");
 		}
 	}
 	return 0;

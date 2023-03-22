@@ -4,12 +4,12 @@ int main_bench()
 {
 char p;
 int max,submax=-1,i,a;
-scanf("%d",&a);
+my_scanf("%d",&a);
 max=a;
-scanf("%c",&p);
+my_scanf("%c",&p);
 while(p==',')
 {
-scanf("%d",&a);
+my_scanf("%d",&a);
 if(max<a)
 {
 submax=max;
@@ -18,16 +18,16 @@ max=a;
 else if(submax<a&&a!=max)
 {
 submax=a;
-}scanf("%c",&p);
+}my_scanf("%c",&p);
 
 }
 if(submax==-1)
 {
-printf("No");
+my_printf("No");
 }
 else
 {
-printf("%d",submax);
+my_printf("%d",submax);
 }
 return 0;
 }

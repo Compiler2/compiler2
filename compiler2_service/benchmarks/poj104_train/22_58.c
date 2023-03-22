@@ -4,7 +4,7 @@ int main_bench()
 {
 	int t,u,v=0,i,j=0,max,a[300]={0};
 	char s[1500]={0};
-	scanf("%s",s);
+	my_scanf("%s",s);
 	t=strlen(s);
 	for(i=0;i<t;i++)
 	{
@@ -19,6 +19,6 @@ int main_bench()
 			max=a[0];		
 			
 				for(i=0;i<t;i++)
-					if(a[i]!=a[0])		{printf("%d",a[i]);v++;break;}
-					if(v==0)printf("No");
+					if(a[i]!=a[0])		{my_printf("%d",a[i]);v++;break;}
+					if(v==0)my_printf("No");
 }

@@ -4,13 +4,13 @@ int main_bench()
 {
     char a[100]={0},b[100]={0},c;
     int i=0,j,s1,s2;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     s1=strlen(a);
     s2=strlen(b);
     if(s1!=s2)
     {
-        printf("NO");
+        my_printf("NO");
         return 0;
     }
     for(i=0;i<s1;i++)
@@ -30,10 +30,10 @@ int main_bench()
     {
         if(b[i]!=0)
         {
-            printf("NO");
+            my_printf("NO");
             return 0;
         }
     }
-    printf("YES");
+    my_printf("YES");
     return 0;
 }

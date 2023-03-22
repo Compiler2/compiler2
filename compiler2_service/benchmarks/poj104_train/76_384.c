@@ -2,14 +2,14 @@
 
 int main_bench(){
   int n,a,b;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   struct qu{
      int x,y;
   }
   qus[50000];
   int x,y;
   for(int i=0;i<n;i++){
-    scanf("%d%d",&x,&y);
+    my_scanf("%d%d",&x,&y);
 	qus[i].x=x;
 	qus[i].y=y;
   }
@@ -29,13 +29,13 @@ int main_bench(){
   a=qus[0].x,b=qus[0].y;
   for(int r=1;r<n;r++){
 	  if(qus[r].x>b){
-	     printf("no");
+	     my_printf("no");
 		 return 0;
 	  }else{
 		  if(qus[r].y>b)
 	     b=qus[r].y;
 	  }
   }
-  printf("%d %d",a,b);
+  my_printf("%d %d",a,b);
   return 0;
 }

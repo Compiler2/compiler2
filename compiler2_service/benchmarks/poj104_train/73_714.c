@@ -6,7 +6,7 @@ main_bench()
       int dian1,dian2,i,j,n=0,k,l,c,d;
       for(i=0;i<5;i++)
       for(j=0;j<5;j++)
-      scanf("%d",&a[i][j]);
+      my_scanf("%d",&a[i][j]);
       for(i=0;i<5;i++)
       {
                       dian1=a[i][0];
@@ -30,14 +30,14 @@ main_bench()
                          }
                                          if(dian1==dian2)
                                          {
-                                         printf("%d %d %d",c+1,d+1,a[c][d]);
+                                         my_printf("%d %d %d",c+1,d+1,a[c][d]);
                                          n++;
                                          }
                  }
       }
       }
       if(n==0)
-      printf("not found");
+      my_printf("not found");
       getchar();
       getchar();
       getchar();

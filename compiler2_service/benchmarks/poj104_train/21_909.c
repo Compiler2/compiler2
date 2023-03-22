@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,s,max;
 	int a[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=0;
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s=s+a[i];
 	}
 	max=0;
@@ -17,12 +17,12 @@ int main_bench()
 	for (i=1;i<=n;i++)
 		if (abs(a[i]*n-s)==max)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			break;
 		}
 	i++;
 	for (;i<=n;i++)
-		if (abs(a[i]*n-s)==max) printf(",%d",a[i]);
+		if (abs(a[i]*n-s)==max) my_printf(",%d",a[i]);
 
 	return(0);
 }

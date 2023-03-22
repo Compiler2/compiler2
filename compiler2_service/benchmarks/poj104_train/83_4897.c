@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a[100],n,i,c;
 	double d,e,b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<=n-1;i++)
-		scanf("%lf",&b[i]);
+		my_scanf("%lf",&b[i]);
 	for(i=0;i<=n-1;i++)
 	{
 		if(b[i]>=90)
@@ -47,7 +47,7 @@ int main_bench()
 	for(i=0,d=0;i<=n-1;i++)
 		d=d+b[i];
 	e=d/c;
-	printf("%.2lf\n",e);
+	my_printf("%.2lf\n",e);
 	return 0;
 }
 

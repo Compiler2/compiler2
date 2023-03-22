@@ -8,8 +8,8 @@ int main_bench()
   int y[3000],s1=0,s2=0,d1,d2;
 
   int i1,i2,i3,i4,i5,i;
-  scanf("%d%d%d",&a,&b,&c);
-  scanf("%d%d%d",&j,&k,&l);
+  my_scanf("%d%d%d",&a,&b,&c);
+  my_scanf("%d%d%d",&j,&k,&l);
      for(i1=a;i1<=j;i1++)
 	 {  
 	       if((i1%4==0&&i1%100!=0)||(i1%400==0))
@@ -100,8 +100,8 @@ if(y[j]==366)
 		 sum=sum+y[i5];
 	 }
 	 if(sum+d2+s2-s1-d1<36500)
-	 printf("%d",sum+d2+s2-s1-d1);
+	 my_printf("%d",sum+d2+s2-s1-d1);
      else
-     printf("%d",sum+d2+s2-s1-d1+1);
+     my_printf("%d",sum+d2+s2-s1-d1+1);
 	 		 return 0;
 }

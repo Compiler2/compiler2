@@ -36,11 +36,11 @@ int main_bench()
 		}
 	}
 	for(i=k;s[i]!=' '&&s[i]!='\0';i++)
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	for(i=p;s[i]!=' '&&s[i]!='\0';i++)
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	return 0;
 }
 		

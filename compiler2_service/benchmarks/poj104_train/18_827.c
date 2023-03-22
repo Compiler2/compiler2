@@ -4,7 +4,7 @@ main_bench()
 {
     int n,m=0,min,sum=0;
     int i,j,k,q;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int **a=(int **)calloc(n,sizeof(int *));
     for(k=0;k<n;k++)
     {
@@ -13,7 +13,7 @@ main_bench()
             a[i]=(int *)calloc(n,sizeof(int));
             for(j=0;j<n;j++)
             {
-                scanf("%d",&a[i][j]);
+                my_scanf("%d",&a[i][j]);
                 if(a[i][j]>m)
                 m=a[i][j];
             }
@@ -61,7 +61,7 @@ main_bench()
             a[i][j]=a[i+1][j];
         }
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
         sum=0;
 
     }

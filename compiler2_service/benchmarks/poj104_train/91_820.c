@@ -9,5 +9,5 @@ int main_bench()
    m=strlen(a);
    for(i=0;i<m-1;i++)  *(p+i)=*(q+i)+*(q+i+1);
    *(p+m-1)=*(q+m-1)+*q;
-   printf("%s",p);
+   my_printf("%s",p);
 }

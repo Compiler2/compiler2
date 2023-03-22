@@ -6,10 +6,10 @@ int main_bench()
    char num[5];
    for(i=0;i<5;i++)
    
-   scanf("%c",&num[i]);
+   my_scanf("%c",&num[i]);
    for(j=4;j>=0;j--)
   	if (num[j]!=0)
-	printf("%c",num[j]);
+	my_printf("%c",num[j]);
    return 0;
   
 }

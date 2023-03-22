@@ -4,7 +4,7 @@ int main_bench()
 {
     int t,i,j,flag,len;
     char a[100000];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     getchar();
     while(t--)
     {
@@ -26,7 +26,7 @@ int main_bench()
                 break;
             }
         }
-        if(i==len-1) printf("no");
+        if(i==len-1) my_printf("no");
         putchar(10);
     }
     return 0;

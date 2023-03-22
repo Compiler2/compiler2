@@ -12,7 +12,7 @@ int main_bench()
     struct bac temp; 
 	int i,j,b,k,len,n;
 	char str[500],dd[6]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(str);
 	len=strlen(str);
@@ -49,10 +49,10 @@ int main_bench()
 		}
 	}
 	if(abb[0].d>0){
-		printf("%d\n",abb[0].d+1);
+		my_printf("%d\n",abb[0].d+1);
 		for(i=0;i<b;i++)
-			if (abb[i].d==abb[0].d)printf("%s\n",abb[i].a);
+			if (abb[i].d==abb[0].d)my_printf("%s\n",abb[i].a);
 	}
-	else printf("NO");
+	else my_printf("NO");
 	return 0;
 }

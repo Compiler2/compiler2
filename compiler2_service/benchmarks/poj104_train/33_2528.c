@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char dna[256];
 	char hubu[256];
 	for(int i=0;i<n;i++){
-		scanf("%s",dna);
+		my_scanf("%s",dna);
 		len=strlen(dna);
 		for(int r=0;r<=len;r++){
 			if(dna[r]-'A'==0){
@@ -21,7 +21,7 @@ int main_bench(){
 				hubu[r]=0;
 			}
 		}
-		printf("%s\n",hubu);
+		my_printf("%s\n",hubu);
 	}
     return 0;
 }

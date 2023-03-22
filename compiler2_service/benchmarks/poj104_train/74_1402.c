@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long m,n,i,a,b,k=0,dao,p,t,j,f;
-	scanf("%ld%ld",&m,&n);
+	my_scanf("%ld%ld",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		t=0;
@@ -30,19 +30,19 @@ int main_bench()
 			{
 				if(k==0)
 				{
-					printf("%ld",i);
+					my_printf("%ld",i);
 					k=1;
 				}
 				else
 				{
-					printf(",%ld",i);
+					my_printf(",%ld",i);
 				}
 			}
 		}
 	}
 	if(k==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

@@ -31,12 +31,12 @@ int main_bench()
 	{
 		if(c1[i]>c2[i])
 		{
-			printf(">\n");
+			my_printf(">\n");
 			break;
 		}
 		else if(c1[i]<c2[i])
 		{
-			printf("<\n");
+			my_printf("<\n");
 			break;
 		}
 		else
@@ -46,7 +46,7 @@ int main_bench()
 	}
 	if(a==b&&a==m)
 	{
-		printf("=\n");
+		my_printf("=\n");
 	}
 	return 0;
 }

@@ -14,9 +14,9 @@ int main_bench()
 	int sb[26]={0},sbt;
 	int len;
 	int n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d %s",&bo[i].a,bo[i].au);
+		my_scanf("%d %s",&bo[i].a,bo[i].au);
 		len=strlen(bo[i].au);
 		for(j=0;j<len;j++){
 			for(k=65;k<91;k++){
@@ -34,7 +34,7 @@ int main_bench()
 			sbt=sb[i];
 		}
 	}
-	printf("%c\n%d\n",K,sbt);
+	my_printf("%c\n%d\n",K,sbt);
 	for(i=0;i<m;i++){
 		n=1;
 		for(j=0;j<strlen(bo[i].au);j++){
@@ -43,7 +43,7 @@ int main_bench()
 			}
 		}
 		if(n==0){
-			printf("%d\n",bo[i].a);
+			my_printf("%d\n",bo[i].a);
 		}
 	}
 	

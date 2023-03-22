@@ -8,10 +8,10 @@ main_bench()
 		int n;
 		int c;
 	}t[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&t[i].n);
+		my_scanf("%d",&t[i].n);
 		sum+=t[i].n;
 	}
 	for(i=0;i<n;i++)
@@ -38,20 +38,20 @@ main_bench()
 	{
 			for(i=0;i<x;i++)
 	{
-		printf("%d,",(sum-c)/n);
+		my_printf("%d,",(sum-c)/n);
 	}
 	for(i=0;i<d;i++)
 	{
-		printf("%d",(sum+c)/n);
+		my_printf("%d",(sum+c)/n);
 		if(i<d-1)
-			printf(",");
+			my_printf(",");
 	}
 	}
 	else
 		for(i=0;i<x;i++)
 		{
-			printf("%d",(sum-c)/n);
+			my_printf("%d",(sum-c)/n);
 			if(i<x-1)
-				printf(",");
+				my_printf(",");
 		}
 }

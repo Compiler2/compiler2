@@ -21,17 +21,17 @@ int day(int m)
 int main_bench()
 {
 	int n, y, m1, m2, d1, d2;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n--) {
-		scanf("%d%d%d", &y, &m1, &m2);
+		my_scanf("%d%d%d", &y, &m1, &m2);
 		d1=day(m1);
 		d2=day(m2);
 		if (y%4==0&&y%100!=0||y%400==0) {
 			if (m1>2) d1++;
 			if (m2>2) d2++;
 		}
-		if ((d1-d2)%7==0) printf("YES\n");
-		else printf("NO\n");
+		if ((d1-d2)%7==0) my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 	return 0;
 }

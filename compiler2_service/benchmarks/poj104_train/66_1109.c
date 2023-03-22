@@ -3,10 +3,10 @@
 int main_bench()
 {
     int year,month,day,n,m,a,b,d,e,f,g;
-    scanf("%d%d%d",&year,&month,&day);
+    my_scanf("%d%d%d",&year,&month,&day);
     if(year==1111111111)
    {
-    printf("Sat.");
+    my_printf("Sat.");
    }
     else
    {
@@ -76,19 +76,19 @@ int main_bench()
     m=n%7;
     switch(m)
     {
-             case 0:printf("Sun.\n");
+             case 0:my_printf("Sun.\n");
              break;
-             case 1:printf("Mon.\n");
+             case 1:my_printf("Mon.\n");
              break;
-             case 2:printf("Tue.\n");
+             case 2:my_printf("Tue.\n");
              break;
-             case 3:printf("Wed.\n");
+             case 3:my_printf("Wed.\n");
              break;
-             case 4:printf("Thu.\n");
+             case 4:my_printf("Thu.\n");
              break;
-             case 5:printf("Fri.\n");
+             case 5:my_printf("Fri.\n");
              break;
-             case 6:printf("Sat.\n");
+             case 6:my_printf("Sat.\n");
              break;
     }
    }

@@ -15,6 +15,6 @@ int main_bench(){
         }
     }
     mb[j]='\0';
-    printf("%s",mb);
+    my_printf("%s",mb);
     return 0;
 }

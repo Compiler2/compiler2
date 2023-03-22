@@ -7,9 +7,9 @@ int main_bench()
   int i,m,n;
   for(i=0;i<5;i++)
    gets(a[i]);
-  scanf("%d%d",&m,&n);
+  my_scanf("%d%d",&m,&n);
   if(m<0||m>4||n<0||n>4)
-  printf("error");
+  my_printf("error");
   else
   {
        p1=&a[m];

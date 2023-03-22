@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n,i,j,l,count[400]={0},s,state,high[200],max=0;
 	char input[550]={0},compare[400][7]={0},tem[7]={0};
-	scanf("%d",&n);
-	scanf("%s",input);
+	my_scanf("%d",&n);
+	my_scanf("%s",input);
 	l=strlen(input);
 	for(j=0;j<n;j++)
 	{
@@ -55,11 +55,11 @@ int main_bench()
 			j++;
 		}
 	}
-	if (max==1) {printf("NO\n");return 0;}
-	printf("%d\n",max);
+	if (max==1) {my_printf("NO\n");return 0;}
+	my_printf("%d\n",max);
 	for(i=0;i<j;i++)
 	{
-		printf("%s\n",compare[high[i]]);
+		my_printf("%s\n",compare[high[i]]);
 	}
 }
 

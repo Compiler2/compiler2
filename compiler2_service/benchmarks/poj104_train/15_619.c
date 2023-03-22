@@ -4,13 +4,13 @@ int a[1000][1000];
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-		     scanf("%d",&a[i][j]);
+		     my_scanf("%d",&a[i][j]);
 		}
 	}
 	int a1=0,a2=0,b1=0,b2=0;
@@ -56,6 +56,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

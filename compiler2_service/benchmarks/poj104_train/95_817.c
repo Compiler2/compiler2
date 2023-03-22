@@ -12,10 +12,10 @@ int main_bench()
 		convert(str1,len1);
 	    convert(str2,len2);
 	if (strcmp(str1,str2)>0)
-		printf(">");
+		my_printf(">");
 	else if (strcmp(str1,str2)<0)
-		printf("<");
-	else printf("=");
+		my_printf("<");
+	else my_printf("=");
 }
 
 void convert(char a[80],int length)

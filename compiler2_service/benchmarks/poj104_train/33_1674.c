@@ -4,23 +4,23 @@ char st[1000][256];
 int n,i,l,j;
 int main_bench()
 {
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-	scanf("%s",st[i]);
+	my_scanf("%s",st[i]);
 	l=strlen(st[i]);
 	for (j=0;j<=l;j++)
 	{
 		if (st[i][j]=='A')
-			printf("T");
+			my_printf("T");
 		else if (st[i][j]=='T')
-		    printf("A");
+		    my_printf("A");
 		else if (st[i][j]=='C')
-			printf("G");
+			my_printf("G");
 		else if (st[i][j]=='G')
-			printf("C");
+			my_printf("C");
 	}
-	printf("\n");
+	my_printf("\n");
 	}
 	return 0;
 }

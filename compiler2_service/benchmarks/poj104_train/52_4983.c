@@ -5,14 +5,14 @@ int main_bench()
   int *p;
   void prt(int*p,int m,int n);
   p=a;
-  scanf("%d %d",&n,&m);
+  my_scanf("%d %d",&n,&m);
   for(i=0;i<n;i++)
-  { scanf("%d",p+i);
+  { my_scanf("%d",p+i);
     }
   prt(p,m,n);
   for(i=0;i<n;i++)
-  { printf("%d",a[i]);
-    if(i<n-1) printf(" ");
+  { my_printf("%d",a[i]);
+    if(i<n-1) my_printf(" ");
   
   }
   getchar();

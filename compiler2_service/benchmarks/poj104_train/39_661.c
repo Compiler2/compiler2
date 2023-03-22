@@ -12,9 +12,9 @@ struct student{
 int main_bench()
 {	int n,i;
 	int jiang[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].lun);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 		jiang[i]=0;
 	}
 	int max=0,zong=0;
@@ -29,12 +29,12 @@ int main_bench()
 	}
 	for(i=0;i<n;i++){
 		if(max==jiang[i]){
-			printf("%s\n%d\n",stu[i].name,jiang[i]);break;
+			my_printf("%s\n%d\n",stu[i].name,jiang[i]);break;
 
 		}
 	}
 	
-printf("%d\n",zong);
+my_printf("%d\n",zong);
 		
 	return 0;
 }

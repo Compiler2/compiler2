@@ -3,9 +3,9 @@
 int main_bench(){
     int m,sz[100],i,j;
     double a=1,b=2,sz1[100],d;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     for(i=0;i<m;i++){
         sz1[i]=0;
@@ -20,7 +20,7 @@ int main_bench(){
         a=1;b=2;
     }
     for(i=0;i<m;i++){
-        printf("%.3lf\n",sz1[i]);
+        my_printf("%.3lf\n",sz1[i]);
     }
     return 0;
 }

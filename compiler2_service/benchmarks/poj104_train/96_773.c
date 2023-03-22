@@ -14,19 +14,19 @@ int main_bench()
 	}
 	for(i=0;i<strlen(c);i++){
 		if(flag){
-			printf("%d",shang[i]);
+			my_printf("%d",shang[i]);
 		}
 		if(1-flag){
 			if(shang[i]!=0){
-				printf("%d",shang[i]);
+				my_printf("%d",shang[i]);
 				flag=1;
 			}
 		}
 	}
          if(flag==0){
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n");
-	printf("%d",yu);
+	my_printf("\n");
+	my_printf("%d",yu);
 	return 0;
 }

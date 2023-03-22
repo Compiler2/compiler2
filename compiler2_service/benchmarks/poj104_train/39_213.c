@@ -9,10 +9,10 @@ struct student stu[100],temp;
 int main_bench()
 {
 	int n,i,j,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,&stu[i].c,&stu[i].a,&stu[i].b,&stu[i].e);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,&stu[i].c,&stu[i].a,&stu[i].b,&stu[i].e);
 	}
 	
 
@@ -51,5 +51,5 @@ int main_bench()
 	}
 	for(j=0;j<n;j++)
 		k+=stu[j].scholar;
-	printf("\n%s\n%d\n%d",stu[0].name,stu[0].scholar,k);
+	my_printf("\n%s\n%d\n%d",stu[0].name,stu[0].scholar,k);
 }

@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int s,t,i,y,m,d,Y,M,D,n;
-	scanf("%d%d%d%d%d%d",&y,&m,&d,&Y,&M,&D);
+	my_scanf("%d%d%d%d%d%d",&y,&m,&d,&Y,&M,&D);
 	s=0;
 	t=0;
 	for(i=1;i<=y-1;i++)
@@ -66,5 +66,5 @@ int main_bench(){
 	}
 	t=t+D;
 	n=t-s;
-	printf("%d",n);
+	my_printf("%d",n);
 }

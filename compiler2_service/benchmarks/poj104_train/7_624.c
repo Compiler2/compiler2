@@ -4,7 +4,7 @@ int main_bench(){
 	char s[256], s1[256], s2[256], ss[20], re[20];
 	int i, j, x=0, y=0, a, flag=0;
 	gets(s);
-	scanf("%s%s", ss, re);
+	my_scanf("%s%s", ss, re);
 	for(i=0;s[i]!='\0';i++){
 		if(s[i]!=ss[0]){
 			s1[x]=s[i];
@@ -37,10 +37,10 @@ int main_bench(){
 	}
 	s2[y]='\0';
 	if(flag==1){
-		printf("%s%s%s", s1, re, s2);
+		my_printf("%s%s%s", s1, re, s2);
 	}
 	if(flag==0){
-		printf("%s", s);
+		my_printf("%s", s);
 	}
 	return 0;
 }

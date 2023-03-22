@@ -8,23 +8,23 @@ int main_bench()
     a=3;
     b=5;
     c=7;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if (n%a==0&&n%b==0&&n%c==0)
-    printf("%d %d %d",a,b,c);
+    my_printf("%d %d %d",a,b,c);
     if (n%a==0&&n%b==0&&n%c!=0)
-    printf("%d %d",a,b);
+    my_printf("%d %d",a,b);
     if (n%b==0&&n%c==0&&n%a!=0)
-    printf("%d %d",b,c);
+    my_printf("%d %d",b,c);
     if (n%a==0&&n%c==0&&n%b!=0)
-    printf("%d %d",a,c);
+    my_printf("%d %d",a,c);
     if(n%a==0&&n%b!=0&&n%c!=0)
-     printf("%d",a);
+     my_printf("%d",a);
     if(n%a!=0&&n%b==0&&n%c!=0)
-     printf("%d",b);
+     my_printf("%d",b);
     if(n%a!=0&&n%b!=0&&n%c==0)
-     printf("%d",c);
+     my_printf("%d",c);
      if(n%a!=0&&n%b!=0&&n%c!=0)
-     printf("n");
+     my_printf("n");
   
      return 0;
 }

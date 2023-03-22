@@ -12,7 +12,7 @@ int main_bench(){
 			if(s[i+1]==' ' || s[i+1]=='\0'){
 				if(i-flag+1!=strlen(a)){
 					for(j=flag;j<=i;j++){
-						printf("%c",s[j]);
+						my_printf("%c",s[j]);
 					}
 				}else{
 					for(j=flag;j<=i;j++){
@@ -21,18 +21,18 @@ int main_bench(){
 						}
 					}
 					if(j==i+1){
-						printf("%s",b);
+						my_printf("%s",b);
 					}else{
 						for(j=flag;j<=i;j++){
-							printf("%c",s[j]);
+							my_printf("%c",s[j]);
 						}
 					}
 				}
 			    flag=i+2;
 				if(s[i+1]==' '){
-				    printf(" ");
+				    my_printf(" ");
 				}else{
-					printf("\n");
+					my_printf("\n");
 				}
 				break;
 			}

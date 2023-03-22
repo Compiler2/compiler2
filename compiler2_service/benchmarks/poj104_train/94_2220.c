@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,a=0,b=0,e;
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
     int sz[n-1];
     for(int i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     for(int i=0;i<n;i++){
         if(sz[i]%2==1){
@@ -29,9 +29,9 @@ int main_bench(){
         }
     }
     for(int i=0;i<a;i++){
-        printf("%d",jsz[i]);
+        my_printf("%d",jsz[i]);
         if(i!=a-1){
-            printf(",");
+            my_printf(",");
         }
     }
     return 0;

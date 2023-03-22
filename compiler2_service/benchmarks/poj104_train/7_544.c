@@ -14,14 +14,14 @@ int main_bench()
 				if(s2[j]==s1[i+j]) k++;
 			if(s2[k]=='\0')
 			{
-				for(t=0;t<i;t++) printf("%c",s1[t]);
-				for(t=0;t<k;t++) printf("%c",s3[t]);
-				for(t=i+k;s1[t]!='\0';t++) printf("%c",s1[t]);
-				printf("\n");
+				for(t=0;t<i;t++) my_printf("%c",s1[t]);
+				for(t=0;t<k;t++) my_printf("%c",s3[t]);
+				for(t=i+k;s1[t]!='\0';t++) my_printf("%c",s1[t]);
+				my_printf("\n");
 				break;
 			}
 		}
-	if(s2[k]!='\0') printf("%s\n",s1);
+	if(s2[k]!='\0') my_printf("%s\n",s1);
 	return 0;
 }
 

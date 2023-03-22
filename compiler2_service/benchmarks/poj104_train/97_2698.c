@@ -3,7 +3,7 @@
 int main_bench() {
 int a,b,c,d,e,f;
 int x,i,j;
-scanf("%d",&x);
+my_scanf("%d",&x);
 a=x/100;
 i=x%100;
 if (i>=50) {
@@ -41,6 +41,6 @@ if (j>=5) {
   e=0;
   f=j;
 }
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,n;
-	scanf("%d%d%d%d",&y,&m,&d,&n);
+	my_scanf("%d%d%d%d",&y,&m,&d,&n);
 	if(y%4==0&&y%100!=0)
 	{
 		if(m==1)
@@ -62,7 +62,7 @@ int main_bench()
 			   n=(m-1)*30-1+m/2+d;
 	   }
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 }
 	

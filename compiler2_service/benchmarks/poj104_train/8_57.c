@@ -17,14 +17,14 @@ int main_bench()
 void read()
 {
 	int i;
-	scanf("%d %d",&num1,&num2);
+	my_scanf("%d %d",&num1,&num2);
 	for(i=0;i<num1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<num2;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 }
 void queue()
@@ -72,7 +72,7 @@ void put()
 	int i;
 	for(i=0;i<num1+num2-1;i++)
 	{
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	}
-	printf("%d",c[num1+num2-1]);
+	my_printf("%d",c[num1+num2-1]);
 }

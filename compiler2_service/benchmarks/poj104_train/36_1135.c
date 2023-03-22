@@ -2,8 +2,8 @@
 
 int main_bench()
 { char p1[500],p2[500];
-  scanf("%s",p1);
-  scanf("%s",p2);
+  my_scanf("%s",p1);
+  my_scanf("%s",p2);
   int n,i,j,m;
   m=strlen(p1);
   n=strlen(p2);
@@ -31,7 +31,7 @@ int main_bench()
   {if(num1[i]==num2[i])
    count++;}
   if(count==26)
-  printf("YES\n");
-  else printf("NO\n");
+  my_printf("YES\n");
+  else my_printf("NO\n");
   return 0;
 }

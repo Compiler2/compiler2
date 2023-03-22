@@ -5,7 +5,7 @@ int main_bench()
 	char a[1600];
 	int n[301]={0};
 	int i,j=0,len,t;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(i=0;a[i]!='\0';i++)
 	{
 		if(a[i]!=',')
@@ -26,7 +26,7 @@ int main_bench()
 		if(n[0]!=n[i])
 			break;
 	if(i==len)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",n[i]);
+		my_printf("%d",n[i]);
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int i,j,c,A,B;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	A=strlen(a);
 	B=strlen(b);
 	if(A!=B)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -39,11 +39,11 @@ int main_bench()
 		}
 		if(c==1)
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 		else
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 	}
 	return 0;

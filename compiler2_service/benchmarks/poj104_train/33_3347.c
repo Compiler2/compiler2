@@ -9,7 +9,7 @@ int main_bench()
 		char j[1000];
     }zf[1000];
    int n,i,h;
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    for(i=0;i<n;i++)
    {
    gets(zf[i].s);
@@ -28,7 +28,7 @@ int main_bench()
    }
    for(i=0;i<n;i++)
    {
-       printf("%s\n",zf[i].j);
+       my_printf("%s\n",zf[i].j);
    }
   return 0;
 }

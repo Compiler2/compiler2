@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,s,a,c=1,k,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n*n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
 		{
 			if(c)
@@ -18,6 +18,6 @@ int main_bench()
 		}
 	}
 	s=(k%n-t%n-1)*(k/n-t/n-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

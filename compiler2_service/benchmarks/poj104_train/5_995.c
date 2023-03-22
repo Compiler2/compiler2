@@ -3,15 +3,15 @@
 int main_bench()
 {
 double rate;
-scanf("%lf",&rate);
+my_scanf("%lf",&rate);
 char a[501],b[501];
-scanf("%s%s",a,b);
+my_scanf("%s%s",a,b);
 int len1=strlen(a);
 int len2=strlen(b);
 
 if (len1!=len2)
 {
-printf("error\n");
+my_printf("error\n");
 return 0;
 }
 
@@ -24,7 +24,7 @@ case 'A': break;
 case 'T': break;
 case 'C': break;
 case 'G': break;
-default: printf("error\n");
+default: my_printf("error\n");
          return 0;
 }
 switch (b[i])
@@ -33,13 +33,13 @@ case 'A': break;
 case 'T': break;
 case 'C': break;
 case 'G': break;
-default: printf("error\n");
+default: my_printf("error\n");
          return 0;
 }
 
 if (a[i]==b[i]) sum++;
 }
 
-if ((double)sum/len1>rate) printf("yes\n"); else printf("no\n");
+if ((double)sum/len1>rate) my_printf("yes\n"); else my_printf("no\n");
 return 0;
 }

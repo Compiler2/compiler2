@@ -3,11 +3,11 @@
 int main_bench()
 {
     int i;
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     int a,max=0,sec=0;
     while(i>0&&i<100)
     {
-       scanf("%d",&a);
+       my_scanf("%d",&a);
        if(a>=max)
        {sec=max;
        max=a;}
@@ -15,7 +15,7 @@ int main_bench()
        sec=a;
        i--;
     }
-printf("%d\n",max);
-printf("%d\n",sec);
+my_printf("%d\n",max);
+my_printf("%d\n",sec);
 return 0;
 }

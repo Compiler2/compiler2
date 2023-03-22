@@ -20,9 +20,9 @@ main_bench()
   int k,j;
   k=2;
   int c=0;
-  scanf("%d",&j);
+  my_scanf("%d",&j);
 if(j<=4)
-printf("empty");
+my_printf("empty");
 else
 {
   { do
@@ -30,7 +30,7 @@ else
 	  if(prime(k)&&prime(k+2))
 	  {
 		  c+=1;
-		  printf("%d %d\n",k,k+2);
+		  my_printf("%d %d\n",k,k+2);
 	  }
 	  k=k+1;
   }

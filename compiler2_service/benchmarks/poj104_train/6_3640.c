@@ -3,16 +3,16 @@
 int main_bench()
 {
     int k,m,n,sz[200][200],result=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int i,p,q;
 	for (i=0;i<k;i++)
 	{
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for (p=0;p<m;p++)
 		{
 			for (q=0;q<n;q++)
 			{
-				scanf("%d",&sz[p][q]);
+				my_scanf("%d",&sz[p][q]);
 			}
 			if(p==0||p==m-1)
 			{
@@ -26,7 +26,7 @@ int main_bench()
 				result+=sz[p][n-1];
 			}
 		}
-        printf("%d\n",result);
+        my_printf("%d\n",result);
 		result=0;
 	}
 	return 0;

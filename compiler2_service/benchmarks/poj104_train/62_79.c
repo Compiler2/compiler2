@@ -6,7 +6,7 @@ main_bench()
 	gets(a);
 	for(i=0;i<(signed)strlen(a);i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 		if(a[i]==' ')
 		{
 		for(;i<(signed)strlen(a);i++)

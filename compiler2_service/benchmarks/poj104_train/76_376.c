@@ -6,10 +6,10 @@ int main_bench()
 	int beg,end;
 	int pos[20002] = { 0 };
 	int num[50000][2] = { 0};
-	scanf( "%d",&n);
+	my_scanf( "%d",&n);
 	for( i = 0; i < n; i ++ )
 	{
-		scanf( "%d%d",&num[i][0],&num[i][1]);
+		my_scanf( "%d%d",&num[i][0],&num[i][1]);
 		for( j = 2 * num[i][0]; j <= 2 * num[i][1]; j ++)
 			pos[j] = 1;
 	}
@@ -23,11 +23,11 @@ int main_bench()
 	{
 		if( pos[i] == 0 )
 		{
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
     if( i == end + 1)
-	printf( "%d %d", beg/2, end/2);
+	my_printf( "%d %d", beg/2, end/2);
 	return 0;
 }

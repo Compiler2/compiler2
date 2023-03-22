@@ -6,10 +6,10 @@ int main_bench()
 
 {
 int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 char*lab=(char*)malloc(n*32*sizeof(char));
 for(i=0;i<n;i++)
-    scanf("%s",lab+i*32);
+    my_scanf("%s",lab+i*32);
 for(i=0;i<n;i++)
 {
 

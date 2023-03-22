@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,k,m,i,j;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=1;i<10000000;i++)
 	{
 		m=n*i+k;
@@ -19,5 +19,5 @@ int main_bench()
 		}
 		if(j==n) break;
 	}
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 }

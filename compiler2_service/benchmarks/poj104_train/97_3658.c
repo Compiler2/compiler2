@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,y100,y50,y20,y10,y5,y1,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	y100=n/100;
 	y=n-100*y100;
 	y50=y/50;
@@ -14,11 +14,11 @@ int main_bench()
 	y=y-10*y10;
 	y5=y/5;
 	y=y-5*y5;
-	printf("%d\n",y100);
-	printf("%d\n",y50);
-	printf("%d\n",y20);
-	printf("%d\n",y10);
-	printf("%d\n",y5);
-	printf("%d\n",y);
+	my_printf("%d\n",y100);
+	my_printf("%d\n",y50);
+	my_printf("%d\n",y20);
+	my_printf("%d\n",y10);
+	my_printf("%d\n",y5);
+	my_printf("%d\n",y);
 	return 0;
 }

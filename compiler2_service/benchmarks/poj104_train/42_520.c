@@ -5,10 +5,10 @@ int main_bench()
     int n,m;
     int a[100001];
     int *p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(p=a;p<a+n;p++)
-    scanf("%d",p);
-    scanf("%d",&m);
+    my_scanf("%d",p);
+    my_scanf("%d",&m);
     for(p=a;p<(a+n);p++)
     {
     	if(*p==m)
@@ -21,6 +21,6 @@ int main_bench()
     	}
     }
     for(p=a;p<a+n-1;p++)
-    printf("%d ",*p);
-    printf("%d",*p);
+    my_printf("%d ",*p);
+    my_printf("%d",*p);
 }

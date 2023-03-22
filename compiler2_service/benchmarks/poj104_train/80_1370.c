@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,r,s,s1,s2,i;
-	scanf("%d%d%d\n",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d\n",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
     if(y1>y2)
 	{
 		r=y1;y1=y2;y2=r;r=m1;m1=m2;m2=r;r=d1;d1=d2;d2=r;
@@ -67,7 +67,7 @@ int main_bench()
 			if(m2==12)s2=d2+334;
 			s=s2-s1;
 		}
-		printf("%d",s);
+		my_printf("%d",s);
 	}
 	if(y1<y2)
 	{
@@ -140,6 +140,6 @@ int main_bench()
 			s2=365-s2;
 		}
 		s=(s-s1-s2);
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 	}
 }

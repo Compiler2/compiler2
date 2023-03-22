@@ -23,8 +23,8 @@ void ipt(int a[],int n)
     int i=1;
     while(i<=n)
     {
-        scanf("%d",&a[i]);
-        if(i!=n) scanf(" ");
+        my_scanf("%d",&a[i]);
+        if(i!=n) my_scanf(" ");
         i++;
     }
 }
@@ -34,8 +34,8 @@ void opt(int a[],int n)
     int i=1;
     while(i<=n)
     {
-        printf("%d",a[i]);
-        if(i!=n) printf(" ");
+        my_printf("%d",a[i]);
+        if(i!=n) my_printf(" ");
         i++;
     }
 }
@@ -43,12 +43,12 @@ void opt(int a[],int n)
 main_bench()
 {
     int n,m,a[100],b[100];
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     ipt(a,n);
     ipt(b,m);
     sort(a,n);
     sort(b,m);
     opt(a,n);
-    printf(" ");
+    my_printf(" ");
     opt(b,m);
 }

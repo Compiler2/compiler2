@@ -6,7 +6,7 @@ int main_bench()
     int i,y,m,d,minus;
     for(i=0;i<=1;i++)
     {
-                scanf("%d%d%d",&x[i][0],&x[i][1],&x[i][2]);    
+                my_scanf("%d%d%d",&x[i][0],&x[i][1],&x[i][2]);    
                 y=x[i][0];
                 m=x[i][1];
                 d=x[i][2];
@@ -24,6 +24,6 @@ int main_bench()
                                                            }
                      }
                      minus=abs(x[0][3]-x[1][3]);
-                     printf("%d\n",minus);
+                     my_printf("%d\n",minus);
 return 0;
 }

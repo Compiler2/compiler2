@@ -5,14 +5,14 @@ int main_bench()
     int i,n,s;
     double ds=0;
     s=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     int b[n];
     double c[n];
     double d[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&(a[i]));
+        my_scanf("%d",&(a[i]));
     }
      for(i=0;i<n;i++)
      {
@@ -20,7 +20,7 @@ int main_bench()
      }
      for(i=0;i<n;i++)
      {
-         scanf("%d",&b[i]);
+         my_scanf("%d",&b[i]);
          if (b[i]<=100&&b[i]>=90) {c[i]=4.0;}
          else if(b[i]<=89&&b[i]>=85) {c[i]=3.7;}
          else if(b[i]<=84&&b[i]>=82) {c[i]=3.3;}
@@ -37,6 +37,6 @@ int main_bench()
      {
         ds=ds+d[i]; 
      }
-     printf("%.2lf",1.0*ds/s);
+     my_printf("%.2lf",1.0*ds/s);
     return 0;
 }

@@ -14,9 +14,9 @@ int main_bench()
                   {
                            for(j=i+1;j<t;j++)
                            {
-                                             printf("%c",c[j]);
+                                             my_printf("%c",c[j]);
                            }
-                           printf(" ");
+                           my_printf(" ");
                            t=i;
                   }
     }
@@ -25,7 +25,7 @@ int main_bench()
                  if(c[i]==' ')
                  break;
                  else
-                 printf("%c",c[i]);
+                 my_printf("%c",c[i]);
     }
     getchar();
     getchar();

@@ -35,7 +35,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<hang;i++)
-		printf("%s ",m[i]);
-	printf("%s",m[hang]);
+		my_printf("%s ",m[i]);
+	my_printf("%s",m[hang]);
 	return 0;
 }

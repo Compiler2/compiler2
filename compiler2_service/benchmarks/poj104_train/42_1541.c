@@ -2,11 +2,11 @@
 
 int main_bench(){
  int n,b[100002],i,k,m,j,m1;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=1;i<=n;i++){
-  scanf("%d",&b[i]);
+  my_scanf("%d",&b[i]);
  }
- scanf("%d",&k);
+ my_scanf("%d",&k);
  m=n;
  for(i=1;i<=n;i++){
   if(b[i]==k){m--;}
@@ -27,14 +27,14 @@ int main_bench(){
  }
  for(i=1;i<=n;i++){
   if(b[i]!=k&&m!=1){
-   printf("%d ",b[i]);
+   my_printf("%d ",b[i]);
    m=m-1;
   }
   else if(b[i]!=k&&m==1){
-   printf("%d",b[i]);
+   my_printf("%d",b[i]);
    break;
   }
  }
- scanf("%d",&n);
+ my_scanf("%d",&n);
  return 0;
 } 

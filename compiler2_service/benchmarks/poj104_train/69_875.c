@@ -5,7 +5,7 @@ int main_bench()
 	int yu=0,yu0=0,he=0,i,n,sum;
 	char str1[260],str2[260],str0[260],stra[260],strb[260],res[260];
 
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 
 	if (strlen(str1)==strlen(str2))
 	{
@@ -53,7 +53,7 @@ final:
 			break;
 	}
 	for (i=sum;i<=strlen(stra);i++)
-		printf("%c",res[i]);
+		my_printf("%c",res[i]);
 	
 	return 0;
 }

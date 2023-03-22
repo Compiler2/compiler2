@@ -4,7 +4,7 @@ int main_bench()
 
 {
 	int a,b,c,d,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(int)(n/1000);
 	b=(int)(n/100-a*10);
 	c=(int)(n/10-a*100-b*10);
@@ -15,14 +15,14 @@ int main_bench()
 		{
 			if(c==0)
 			{
-				printf("%d\n",d);
+				my_printf("%d\n",d);
 			}
 			else
-			printf("%d%d\n",d,c);
+			my_printf("%d%d\n",d,c);
 		}
-		else printf("%d%d%d\n",d,c,b);
+		else my_printf("%d%d%d\n",d,c,b);
 	}
 	else
-	printf("%d%d%d%d\n",d,c,b,a);		
+	my_printf("%d%d%d%d\n",d,c,b,a);		
 	return 0;
 }

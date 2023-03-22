@@ -10,10 +10,10 @@ int main_bench(){
 	    if(sz[i]!=32&&sz[i]!='\0')
 			jishu++;
 		else if(sz[i]==32&&jishu!=0){
-			printf("%d,",jishu);
+			my_printf("%d,",jishu);
 			jishu=0;}
 		if(sz[i]=='\0'&&jishu!=0){
-			printf("%d",jishu);
+			my_printf("%d",jishu);
 			break;
 	}}
 	return 0;

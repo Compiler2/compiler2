@@ -22,7 +22,7 @@ int main_bench()
 	a[j][k]='\0';
 	for(l=j;l>=1;l--)
 	{
-		printf("%s ",a[l]);
+		my_printf("%s ",a[l]);
 	}
-	printf("%s\n",a[0]);
+	my_printf("%s\n",a[0]);
 }

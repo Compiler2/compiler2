@@ -21,13 +21,13 @@ void min(char a[],char b[])
 			 b[j+1]=k;
 		 }
 		 if(strcmp(a,b)==0)
-			 printf("YES");
+			 my_printf("YES");
 		 else
-			 printf("NO");
+			 my_printf("NO");
 }
 int main_bench()
 {
 	char a[1000]={'\0'},b[1000]={'\0'};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	min(a,b);
 }

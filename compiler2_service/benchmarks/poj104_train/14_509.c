@@ -11,10 +11,10 @@ int main_bench()
 {
 	struct student a[100000];
 	int n,i,sf=0,ss=0,st=0,f,s,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a[i].number,&a[i].math,&a[i].chinese);
+		my_scanf("%d%d%d",&a[i].number,&a[i].math,&a[i].chinese);
 		a[i].total=a[i].math+a[i].chinese;
 		if (a[i].total>sf)
 		{
@@ -34,8 +34,8 @@ int main_bench()
 					t=i; st=a[i].total;
 				}
 	}
-	printf("%d %d\n",f+1,sf);
-	printf("%d %d\n",s+1,ss);
-	printf("%d %d\n",t+1,st);
+	my_printf("%d %d\n",f+1,sf);
+	my_printf("%d %d\n",s+1,ss);
+	my_printf("%d %d\n",t+1,st);
 	return 0;
 }

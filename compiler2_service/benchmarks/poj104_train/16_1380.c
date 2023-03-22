@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a,n,b,c,d,e,f,g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=0;
 	a=n;
 	if (n==0)
-		printf("0");
+		my_printf("0");
 	else
 	while(a>0)
 	{ 
@@ -20,17 +20,17 @@ int main_bench()
     f=(int)(n/1000)%10;
 	g=(int)(n/10000);
 	switch (b)
-	{case 1:printf("%d\n",n);break;
-   	 case 2:printf("%d%d\n",c,d);
+	{case 1:my_printf("%d\n",n);break;
+   	 case 2:my_printf("%d%d\n",c,d);
 		 break;		   
 	 case 3:
-		    printf("%d%d%d\n",c,d,e);
+		    my_printf("%d%d%d\n",c,d,e);
 			break;
      case 4:
-		   printf("%d%d%d%d\n",c,d,e,f);
+		   my_printf("%d%d%d%d\n",c,d,e,f);
 			break;
    	case 5:
-		   printf("%d%d%d%d%d\n",c,d,e,f,g);
+		   my_printf("%d%d%d%d%d\n",c,d,e,f,g);
 			break;
 	}
 	return 0;

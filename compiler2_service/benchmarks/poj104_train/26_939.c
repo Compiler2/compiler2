@@ -21,7 +21,7 @@ for(i=0;i<a;i++){
                             }
                  }
 for(i=0;i<j;i++){
-printf ("%c",x[i]);
+my_printf ("%c",x[i]);
 }
 return 0;    
 }

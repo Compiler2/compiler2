@@ -14,10 +14,10 @@ if (b[j]>='a'&&b[j]<='z')
 b[j]+='A'-'a';
 }
 if (strcmp(a,b)<0)
-printf("<");
+my_printf("<");
 else if (strcmp(a,b)>0)
-printf (">");
+my_printf (">");
 else
-printf ("=");
+my_printf ("=");
 return 0;
 }

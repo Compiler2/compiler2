@@ -29,7 +29,7 @@ struct shu *creat(int n)
 			p1->next=p2->next;
 			p2->next=p1;
 		}
-		scanf("%s %s",p1->xh,p1->zz);
+		my_scanf("%s %s",p1->xh,p1->zz);
 	}
 	return head;
 }
@@ -53,8 +53,8 @@ void max(struct shu *head)
 			m=i;
 		}
 	}
-	printf("%c\n",65+m);
-	printf("%d\n",zd);            
+	my_printf("%c\n",65+m);
+	my_printf("%d\n",zd);            
 }
 
 void print(head)
@@ -67,7 +67,7 @@ void print(head)
 		{
 			if(*f==65+m)
 			{
-				printf("%s\n",p->xh);
+				my_printf("%s\n",p->xh);
 				break;
 			}
 		}
@@ -81,7 +81,7 @@ int main_bench()
 {
 	int n;
 	struct shu *head;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	head=creat(n);
 	max(head);
     print(head);

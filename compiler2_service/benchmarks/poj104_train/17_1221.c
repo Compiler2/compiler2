@@ -4,9 +4,9 @@ int main_bench()
 {
 	char string[200];
 	int leftpos,mark;
-	while(scanf("%s",string)==1)
+	while(my_scanf("%s",string)==1)
 	{
-		printf("%s\n",string);
+		my_printf("%s\n",string);
 		leftpos=-1;
 		mark=0;
 		while(mark!=strlen(string))
@@ -27,7 +27,7 @@ int main_bench()
 			else if(string[mark]==')') string[mark]='?';
 			else string[mark]=' ';
 		}
-		printf("%s\n",string);
+		my_printf("%s\n",string);
 		memset(string,0,200);
 	}
 	return 0;

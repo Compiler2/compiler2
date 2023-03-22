@@ -6,8 +6,8 @@ int main_bench()
 	char *p1,*p2;
 	int a,n;
 	a=0;
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	n=strlen(s1);
 	for(p2=s2;(*p2)!='\0';p2++)
 	{
@@ -30,6 +30,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 
 }

@@ -7,13 +7,13 @@ struct word
 };
 int main_bench()
 {
-   int n;scanf("%d",&n);
+   int n;my_scanf("%d",&n);
    int i;
    struct word dd[200]={0};
 
    for(i=0;i<n;i++)
    {
-       scanf("%s",dd[i].a);
+       my_scanf("%s",dd[i].a);
         dd[i].b=strlen(dd[i].a);
    }
    int max=dd[0].b;int x=0;
@@ -32,7 +32,7 @@ int main_bench()
            y=i;
        }
    }
-   printf("%s\n%s",dd[x].a,dd[y].a);
+   my_printf("%s\n%s",dd[x].a,dd[y].a);
 
     return 0;
 }

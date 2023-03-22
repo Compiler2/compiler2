@@ -4,9 +4,9 @@ int main_bench()
 {
   int n,i,j,e,q=0,kaishi,jieshu;
   int ks[100000],js[100000],sz[100000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-   scanf("%d %d",&ks[i],&js[i]);
+   my_scanf("%d %d",&ks[i],&js[i]);
    }
 kaishi=ks[0];
 for(i=1;i<n;i++){
@@ -40,9 +40,9 @@ for(i=kaishi;i<=jieshu;i++){
     }
 }
 if(q==0){
-   printf("%d %d",kaishi,jieshu);
+   my_printf("%d %d",kaishi,jieshu);
  }else{
-     printf("no");
+     my_printf("no");
  }
 return 0;
 }

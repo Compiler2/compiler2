@@ -4,7 +4,7 @@ void pai(int n,int a[])
 {  
     for(int i=0;i<n;i++)
     {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     }
     for(int i=0;i<n;i++)
     {
@@ -25,16 +25,16 @@ int link(int n,int m)
     pai(n,a);
     pai(m,b);
     for(int i=0;i<n;i++)
-    printf("%d ",a[i]);
+    my_printf("%d ",a[i]);
     for(int i=0;i<m-1;i++)
-    printf("%d ",b[i]);
-    printf("%d",b[m-1]);
+    my_printf("%d ",b[i]);
+    my_printf("%d",b[m-1]);
 }
     
 int main_bench()
 {
     int n,m;
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     link(n,m);
-    printf("\n");
+    my_printf("\n");
 }

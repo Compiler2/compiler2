@@ -5,9 +5,9 @@ int main_bench(){
         int a,b;
     } qj[50000],e;
     int n,i,k,bmax;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d",&(qj[i].a),&(qj[i].b));
+        my_scanf("%d %d",&(qj[i].a),&(qj[i].b));
     }
     for(k=1;k<=n;k++){
         for(i=0;i<n-k;i++){
@@ -20,14 +20,14 @@ int main_bench(){
     }
     for(i=0;i<n;i++){
         if(qj[i].b<qj[i+1].a){
-            printf("no");
+            my_printf("no");
             break;
         }else if(qj[i].b>qj[i+1].b){
             qj[i+1].b=qj[i].b;
         }
     }
     if(i==n){
-        printf("%d %d",(qj[0].a),qj[n].b);
+        my_printf("%d %d",(qj[0].a),qj[n].b);
     }
     return 0;
 }

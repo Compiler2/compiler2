@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,k,a[10000],b[10000],c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<10000;i++)
 	{ 
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]==0&&b[i]==0)break;
 	}
 	for(j=0;j<n;j++)
@@ -19,10 +19,10 @@ int main_bench()
 		}
 		if(c==n-1)
 		{
-			printf("%d",j);
+			my_printf("%d",j);
 			d=1;
 		}
 	}
-	if(d==0)printf("NOT FOUND" );
+	if(d==0)my_printf("NOT FOUND" );
 	return 0;
 }

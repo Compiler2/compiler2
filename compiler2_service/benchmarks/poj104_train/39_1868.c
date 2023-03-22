@@ -14,11 +14,11 @@ int main_bench()
 {
 	int i,j,sum=0,n,max=0,t;
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++){
 	stu[i].m=0;
-	scanf("%s %d %d %c %c %d",&(stu[i].name),&(stu[i].s1),&(stu[i].s2),&(stu[i].gb),&(stu[i].w),&(stu[i].p));
+	my_scanf("%s %d %d %c %c %d",&(stu[i].name),&(stu[i].s1),&(stu[i].s2),&(stu[i].gb),&(stu[i].w),&(stu[i].p));
 	if(stu[i].s1>80 && stu[i].p>0)   stu[i].m=stu[i].m+8000;
 	if(stu[i].s1>85 && stu[i].s2>80 )    stu[i].m=stu[i].m+4000;	
 	if(stu[i].s1>90)    stu[i].m=stu[i].m+2000;
@@ -33,6 +33,6 @@ int main_bench()
 	
 	for(i=0;i<n;i++)
 	if(stu[i].m==max){
-	printf("%s\n%d\n%d",stu[i].name,max,sum);break;
+	my_printf("%s\n%d\n%d",stu[i].name,max,sum);break;
 	}
 }

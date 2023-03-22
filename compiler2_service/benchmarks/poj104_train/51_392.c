@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[500],a4[500][4];
 	int i,j,k,l,n,m,b4[500],d4[500];
-	scanf("%d\n",&k);
+	my_scanf("%d\n",&k);
 	i=0;
 	while(i<=499)
 	{
@@ -70,20 +70,20 @@ int main_bench()
 	i=0;
 	if(m==1) 
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
-		printf("%d",m);
+		my_printf("%d",m);
 		while(i<=499)
 		{
 			if(d4[i]==m) 
 			{
-				printf("\n");
+				my_printf("\n");
 				j=0;
 				while(j<=k-1)
 				{
-					printf("%c",a4[i][j]);
+					my_printf("%c",a4[i][j]);
 					j=j+1;
 				}
 			}

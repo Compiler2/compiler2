@@ -6,12 +6,12 @@ int main_bench(){
 	double res[100];
 	int fz[1000];
 	int fm[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<100;i++){
 		res[i]=0;
 	}
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=1;i<1000;i++){
 		fz[0]=2;
@@ -23,7 +23,7 @@ int main_bench(){
 		for(k=0;k<n[i];k++){
 			res[i]+=1.0*fz[k]/fm[k];
 		}
-		printf("%.3lf\n",res[i]);
+		my_printf("%.3lf\n",res[i]);
 	}
 
 	return 0;

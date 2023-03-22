@@ -6,7 +6,7 @@ int main_bench()
 	char n[101];
 	char m[101];
 	int i,c=0,l,t=0,k=0;
-	scanf("%s",n);
+	my_scanf("%s",n);
 	l=strlen(n);
 	for(i=0;i<l;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	for(i=t;i<l;i++)
 	{
-		printf("%c",m[i]);
+		my_printf("%c",m[i]);
 	}
-	printf("\n%d\n",c);
+	my_printf("\n%d\n",c);
 }

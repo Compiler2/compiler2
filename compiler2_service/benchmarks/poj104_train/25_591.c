@@ -4,7 +4,7 @@ int main_bench(){
     int i,k,n,m,t,cf[100]={0};
     int jinwei=0;
     cf[0]=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     t=0;
     for(i=0;i<n;i++){
                      for(k=0;k<=t;k++){
@@ -22,7 +22,7 @@ int main_bench(){
                      }                     
     for(i=99;cf[i]==0;i--);
     for(;i>=0;i--){
-                   printf("%d",cf[i]);
+                   my_printf("%d",cf[i]);
                    }
   
     return 0;

@@ -6,18 +6,18 @@ main_bench()
     int a[101];
     int n,m,i, p;
     
-    scanf("%d %d", &n, &m);
+    my_scanf("%d %d", &n, &m);
     for(i=1;i<=n;i++)
     {
-                     scanf("%d", &a[i]);
+                     my_scanf("%d", &a[i]);
     }
     
     a[0] = a[n];
     for(i = 1;i <= n; i++)
     {
      p = (n - m + i) % n;
-     printf("%d", a[p]);
+     my_printf("%d", a[p]);
      
-     if(i != n) printf(" ");
+     if(i != n) my_printf(" ");
 }
 }

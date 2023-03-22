@@ -6,7 +6,7 @@ int main_bench()
 	int n;
 	int len;	
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 
 	for(;n>0;n--)

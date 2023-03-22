@@ -26,7 +26,7 @@ int main_bench()
 		}
 
 	}
-	printf("%s",zf);
+	my_printf("%s",zf);
 	return 0;
 }
 

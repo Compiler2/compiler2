@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	if(a%4==0&&a%100!=0||a%400==0)
 	{
 			switch(b)
@@ -45,7 +45,7 @@ int main_bench()
 				d=335+c;
 				break;
 		}
-			printf("%d",d);
+			my_printf("%d",d);
 	}
 		else
 		{
@@ -88,7 +88,7 @@ int main_bench()
 				d=334+c;
 				break;
 		}
-		printf("%d",d);
+		my_printf("%d",d);
 		}
 	return 0;
 }

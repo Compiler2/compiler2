@@ -16,11 +16,11 @@ int main_bench()
 }
 int get(int a[50],int b[50])
 { 
-	scanf("%d%d",&f,&g);
+	my_scanf("%d%d",&f,&g);
      for(d=0;d<f;d++)
-		 scanf("%d",&a[d]);
+		 my_scanf("%d",&a[d]);
 	 for(e=0;e<g;e++)
-		 scanf("%d",&b[e]);
+		 my_scanf("%d",&b[e]);
 	 return 0;
 }
 int repick(int a[50],int b[50])
@@ -61,10 +61,10 @@ int hand(int a[50],int b[50],int c[100])
 int out(int c[100])
 {
 	d=0	;
-	printf("%d",c[d]);
+	my_printf("%d",c[d]);
 	d++;
 	while (d<(f+g))
-	{	printf(" %d",c[d]);
+	{	my_printf(" %d",c[d]);
 	    d++;
 	}
 	return 0;

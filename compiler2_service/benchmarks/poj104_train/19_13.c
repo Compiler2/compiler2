@@ -33,7 +33,7 @@ int main_bench()
 		a++;
 		e++;
 	}
-	printf("%s",i);
+	my_printf("%s",i);
 }
 				
 

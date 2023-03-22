@@ -34,12 +34,12 @@ int main_bench()
 		}
 		for(i = 0; i < l; i++)
 			if(str[i] == '(')
-				printf("$");
+				my_printf("$");
 			else if(str[i] == ')')
-				printf("?");
+				my_printf("?");
 			else
-				printf("%c", str[i]);
-		printf("\n");
+				my_printf("%c", str[i]);
+		my_printf("\n");
 		for(i = 0; i < l; i++)
 			str[i] = '\0';
 	}

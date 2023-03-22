@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a,b,c,d,e,f,g,h,j,k,n;
 	h=0;
-	scanf ("%d %d %d",&a,&b,&c);
-	scanf ("%d %d %d",&d,&e,&f);
+	my_scanf ("%d %d %d",&a,&b,&c);
+	my_scanf ("%d %d %d",&d,&e,&f);
 	for (g=a+1;g<=d;g++)
 	{
 		if(g%400==0||(g%4==0&&g%100!=0))
@@ -22,5 +22,5 @@ int main_bench()
 	if(d%400==0||(d%4==0&&d%100!=0)&&(e==1||e==2))
 		h-=1;
 	n=n+h-j+k-c+f;
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }

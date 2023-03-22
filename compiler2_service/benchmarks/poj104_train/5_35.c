@@ -5,7 +5,7 @@ int main_bench()
    char a[501],b[501];
    double c,d;
    int j=0,n,i,e=0,m;
-   scanf("%lf%s%s",&c,a,b);
+   my_scanf("%lf%s%s",&c,a,b);
    n=strlen(a);
    m=strlen(b);
    if(n!=m)
@@ -22,7 +22,7 @@ int main_bench()
        }}
    if(e==1)
      {
-       printf("error");
+       my_printf("error");
       }
    while(e==0)
    {
@@ -36,11 +36,11 @@ int main_bench()
    d=1.0*j/n;
    if(d>=c)
      {
-       printf("yes");
+       my_printf("yes");
      }
    else
      {
-       printf("no");
+       my_printf("no");
       }
     e=1;
    }

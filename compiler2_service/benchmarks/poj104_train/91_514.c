@@ -10,8 +10,8 @@ int main_bench(){
         r[i]=a[i]+b[i+1];
         }
     r[l-1]=a[0]+a[l-1];
-    printf("%s",r);
+    my_printf("%s",r);
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

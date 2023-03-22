@@ -3,7 +3,7 @@
 int main_bench()
 {
   char c[100],sex;
-  scanf("%s",c);
+  my_scanf("%s",c);
   int i,j,k=0,x[100],y[100],a,b,n;  
   n=strlen(c);
   sex=c[0];
@@ -34,8 +34,8 @@ int main_bench()
   }
   for(i=k-1;i>=0;i--)
   {
-       printf("%d %d\n",x[i],y[i]);
+       my_printf("%d %d\n",x[i],y[i]);
   }
-  scanf("%d",&n); 
+  my_scanf("%d",&n); 
   return 0;
 }

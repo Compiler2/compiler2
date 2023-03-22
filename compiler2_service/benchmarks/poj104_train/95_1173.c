@@ -16,8 +16,8 @@ int main_bench()
 		a=str1[i]-str2[i];
 		if(a!=0)break;
 	}
-	if(a<0)printf("<");
-	if(a>0)printf(">");
-	if(a==0)printf("=");
+	if(a<0)my_printf("<");
+	if(a>0)my_printf(">");
+	if(a==0)my_printf("=");
 	return 0;
 }

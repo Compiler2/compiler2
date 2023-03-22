@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int x,i,j,t,sz[100];
-	scanf("%d\n",&x);	
+	my_scanf("%d\n",&x);	
 	for(i=0;i<x;i++){
-		scanf("%d\n",&sz[i]);		
+		my_scanf("%d\n",&sz[i]);		
 	}
 	for(i=x;i<100;i++){
 	sz[i]=0;
@@ -16,6 +16,6 @@ int main_bench()
 		t=sz[i];sz[i]=sz[i+1];sz[i+1]=t;
 			}
 		}
-		printf("%d\n%d\n",sz[99],sz[98]);
+		my_printf("%d\n%d\n",sz[99],sz[98]);
 	return 0;
 }

@@ -12,11 +12,11 @@ struct Student
 int main_bench()
 {
 	int n,i,k,m,t;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	struct Student stu[200];
 	for (i=0;i<n;i++)
 	{
-		scanf ("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].e);
+		my_scanf ("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].e);
 	    stu[i].f=0;
 	}
 	for (i=0,m=0;i<n;i++)
@@ -39,6 +39,6 @@ int main_bench()
 	}
 	for (i=0,k=0;i<n;i++)
 		k=k+stu[i].f;
-	printf ("%s\n%d\n%d\n",stu[t].name,m,k);
+	my_printf ("%s\n%d\n%d\n",stu[t].name,m,k);
 	return 0;
 }

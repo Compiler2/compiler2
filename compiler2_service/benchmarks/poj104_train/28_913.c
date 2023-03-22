@@ -23,11 +23,11 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",length[0]);
+	my_printf("%d",length[0]);
 	for(i=1;i<j;i++)
 	{
 		if(length[i]==0) continue;
-		printf(",%d",length[i]);
+		my_printf(",%d",length[i]);
 	}
 	return 0;
 }

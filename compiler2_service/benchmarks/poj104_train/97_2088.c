@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a,b,c,i,e,f,k,x,y,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     a=n/100;
     b=n%10;
     n=n/10;
@@ -31,7 +31,7 @@ int main_bench()
      x=b%5;
      y=0;
      }
-     printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,k,f,e,y,x);
+     my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,k,f,e,y,x);
      return 0;
 }
      

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int p[100][100];
 	int i, j;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&p[i][j]);
+			my_scanf("%d",&p[i][j]);
 		}
 	}
 
@@ -38,6 +38,6 @@ int main_bench()
 	}
 	int s;
 	s=(c-e-1)*(d-b-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

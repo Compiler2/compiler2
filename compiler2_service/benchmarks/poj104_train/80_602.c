@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,i,j,g,sumy1,sumy2,summ1,summ2,h;
-	scanf("%d %d %d\n",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d\n",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	sumy1=0;
 	for(i=1;i<=a-1;i++)
 	{
@@ -57,6 +57,6 @@ int main_bench()
 	
 
 	h=sumy2+summ2+f-sumy1-summ1-c;
-	printf("%d",h);
+	my_printf("%d",h);
 	return 0;
 }

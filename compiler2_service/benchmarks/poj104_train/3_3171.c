@@ -3,14 +3,14 @@
 int main_bench(){
     int a, r;
 int n,k,sz[1000];
-scanf("%d %d\n",&n,&k);
+my_scanf("%d %d\n",&n,&k);
 for(int i=1;i<=n;i++){
-   scanf("%d",&sz[i]);
+   my_scanf("%d",&sz[i]);
 }
 for(r=1;r<n;r++){
  for(a=r+1;a<=n;a++){
     if(sz[a]+sz[r]==k){
-    printf("yes");
+    my_printf("yes");
     break;
    }
     }
@@ -18,7 +18,7 @@ for(r=1;r<n;r++){
    break;
 }
     if(r>=n)
-    printf("no");
+    my_printf("no");
 return 0;
 }
 

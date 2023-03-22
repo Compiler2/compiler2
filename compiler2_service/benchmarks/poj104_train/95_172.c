@@ -17,6 +17,6 @@ int main_bench(){
 		t='=';
 	else
 		t='<';
-	printf("%c\n",t);
+	my_printf("%c\n",t);
 	return 0;
 }

@@ -23,12 +23,12 @@ int main_bench(){
         }    
     l[j]=strlen(st[j]);
     for(i=0;i<j;i++){
-        printf("%d,",l[i]);
+        my_printf("%d,",l[i]);
         }
-    printf("%d",l[j]);
+    my_printf("%d",l[j]);
     
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

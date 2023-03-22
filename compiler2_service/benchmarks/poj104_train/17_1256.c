@@ -5,7 +5,7 @@ int main_bench()
 {
     int n,m,i,j;
 	char str[101],str1[101];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(m=0;m<n;m++)
 	{
       gets(str);
@@ -22,14 +22,14 @@ int main_bench()
 		   }
 	  }
 
-      printf("\n");
+      my_printf("\n");
 	  for(i=0;i<strlen(str);i++)
 	  {
-	   if(str[i]=='(')  printf("$");
-	   if(str[i]==')')  printf("?");
-	   if(str[i]!='('&&str[i]!=')')  printf(" ");
+	   if(str[i]=='(')  my_printf("$");
+	   if(str[i]==')')  my_printf("?");
+	   if(str[i]!='('&&str[i]!=')')  my_printf(" ");
 	  }
-	  printf("\n");
+	  my_printf("\n");
 	}
 	return 0;
 }

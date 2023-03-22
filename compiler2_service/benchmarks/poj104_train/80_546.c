@@ -5,7 +5,7 @@ int main_bench()
 	int M[] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	int y1, m1, d1, y2, m2, d2;
 	int r1, r2;
-	scanf("%d%d%d%d%d%d", &y1, &m1, &d1, &y2, &m2, &d2);
+	my_scanf("%d%d%d%d%d%d", &y1, &m1, &d1, &y2, &m2, &d2);
 	r1 = 0;
 	for(int year = 1; year < y1; year ++) {
 		if((year % 4 == 0 && year % 100 != 0) || (year % 400) == 0) { r1 += 366; }
@@ -30,7 +30,7 @@ int main_bench()
 	if((y2 % 4 == 0 && y2 % 100 != 0) || (y2 % 400) == 0) {
 		if(m2 > 2) { r2 ++; }
 	}
-	printf("%d", r2 - r1);
+	my_printf("%d", r2 - r1);
 	return 0;
 }
 

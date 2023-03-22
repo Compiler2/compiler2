@@ -6,9 +6,9 @@ int main_bench(){
 	int ti,sum;	      
 	int yue[11]={31,28,31,30,31,30,31,31,30,31,30};
                          
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&nian,&yue1,&yue2);
+		my_scanf("%d %d %d",&nian,&yue1,&yue2);
 		if(yue1>yue2){
 			ti=yue2;
 			yue2=yue1;
@@ -23,9 +23,9 @@ int main_bench(){
 				sum++;}		
 		}
 		if(sum%7==0){		
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");}
+			my_printf("NO\n");}
 
 	}
 

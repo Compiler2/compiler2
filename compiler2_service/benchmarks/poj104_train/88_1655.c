@@ -33,9 +33,9 @@ int main_bench(){
 	{
 		for(m=0;m<s[i];m++)
 		{
-			printf("%c",*(pt[i]+m));
+			my_printf("%c",*(pt[i]+m));
 		}
-		printf("\n");
+		my_printf("\n");
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 }

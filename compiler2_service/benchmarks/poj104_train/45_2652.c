@@ -3,8 +3,8 @@
 int main_bench(){
 	char zfc1[55],zfc2[55];
 	int i,j,k;
-	scanf("%s",zfc1);
-	scanf("%s",zfc2);
+	my_scanf("%s",zfc1);
+	my_scanf("%s",zfc2);
 	k=0;
 	for(i=0;i<strlen(zfc2);i++){
 		if(zfc1[0]==zfc2[i]){
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 		if(k!=0) break;
 	}
-	printf("%d",k);
-	scanf("%s",zfc1);
+	my_printf("%d",k);
+	my_scanf("%s",zfc1);
 	return 0;
 }

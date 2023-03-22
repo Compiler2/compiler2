@@ -8,6 +8,6 @@ main_bench()
       {
           if(a[i]==' ' && a[i-1]==' '); 
           else
-          printf("%c",a[i]);
+          my_printf("%c",a[i]);
       }
 }

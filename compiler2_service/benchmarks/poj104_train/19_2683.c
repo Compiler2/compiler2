@@ -17,7 +17,7 @@ int main_bench()
 	{
 		while((i<nc)&&(c[i]==' '))
 		{
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 			i++;
 		}
 		j=i;
@@ -32,13 +32,13 @@ int main_bench()
 		}
 		if((k==nr)&&(i+k==j))
 		{
-			printf("%s",f);
+			my_printf("%s",f);
 		}
 		else
 		{
 			for(k=i;k<j;k++)
 			{
-				printf("%c",c[k]);
+				my_printf("%c",c[k]);
 			}
 		}
 		i=j;

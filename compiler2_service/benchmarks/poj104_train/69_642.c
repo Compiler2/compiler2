@@ -4,7 +4,7 @@ int main_bench()
 {
 	int l1,l2,n,a[255]={0},b[255],k=0,f=0,i,j,x=0,y=0;
 	char s1[255],s2[255];
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	l1=strlen(s1);
 	l2=strlen(s2);
 	for(i=0;i<l1;i++){
@@ -16,7 +16,7 @@ int main_bench()
 			y=1;
 	}
 	if(y==0){
-		printf("%d",0);
+		my_printf("%d",0);
 		return 0;
 	}
 	else{
@@ -32,12 +32,12 @@ int main_bench()
 			}
 		}
 		if(a[0]!=0){
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 			x=1;
 		}
 		for(i=0;i<l1;i++){
 			if(b[i]!=0||x==1){
-				printf("%d",b[i]);
+				my_printf("%d",b[i]);
 				x=1;
 			}
 		}
@@ -55,12 +55,12 @@ int main_bench()
 			}
 		}
 		if(a[0]!=0){
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 			x=1;
 		}
 		for(i=0;i<l1;i++){
 			if(b[i]!=0||x==1){
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 			x=1;
 			}
 		}
@@ -78,12 +78,12 @@ int main_bench()
 			}
 		}
 		if(a[0]!=0){
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 			x=1;
 		}
 		for(i=0;i<l2;i++){
 			if(b[i]!=0||x==1){
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 			x=1;
 			}
 		}

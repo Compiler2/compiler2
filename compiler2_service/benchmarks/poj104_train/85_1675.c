@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int i,k=0,m,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[10000];
 	char buf[21];
 	for(m=0;m<n;m++){
-		scanf("%s",buf);
+		my_scanf("%s",buf);
 	     for(i=0;buf[i];i++){  
              
             if((buf[i]=='_')||(buf[i]>='A'&&buf[i]<='Z')||(buf[i]>='a'&&buf[i]<='z')||(buf[i]>='0'&&buf[i]<='9'&&i!=0)) { 
@@ -20,9 +20,9 @@ int main_bench(){
 	}
 	for(m=0;m<k;m++){
 if(a[m]==0){
-		   printf("no\n");
+		   my_printf("no\n");
 		}else{
-		   printf("yes\n");
+		   my_printf("yes\n");
 		};
 
 	}

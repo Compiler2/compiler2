@@ -6,7 +6,7 @@ int main_bench()
 	int i,l,j;
 	while(gets(s)!=0)
 	{    puts(s);
-printf("\n");
+my_printf("\n");
 		l=strlen(s);
 		for(i=0;i<l;i++)
 		{
@@ -33,7 +33,7 @@ printf("\n");
 			else s[i]=' ';
 		}
 		puts(s);
-		printf("\n");
+		my_printf("\n");
 	}
 	
 	return 0;

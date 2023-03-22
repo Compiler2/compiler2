@@ -11,8 +11,8 @@ int main_bench()
 	memset(a,0,sizeof(a));
 	memset(b,0,sizeof(b));
 	memset(c,0,sizeof(c));
-	scanf("%s",d);
-	scanf("%s",e);
+	my_scanf("%s",d);
+	my_scanf("%s",e);
 	for(i=0;;i++)
 		if(d[i]=='\0')
 			break;
@@ -45,14 +45,14 @@ int main_bench()
 		 {
   	         if(c[i])
               {
-		         printf("%d",c[i]);
+		         my_printf("%d",c[i]);
                            break;         
               }
 			 if(i==0)
-				 printf("0");
+				 my_printf("0");
 		 }
 			 
 	for(i--;i>=0;i--)
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 	return 0;
 }

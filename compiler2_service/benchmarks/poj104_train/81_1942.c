@@ -11,11 +11,11 @@ int main_bench()
 	int i,j,m,n;
 	for (i=0;i<=4;i++)
 	{    for (j=0;j<=4;j++)
-		{	scanf ("%d",&a[i][j]);
+		{	my_scanf ("%d",&a[i][j]);
 		}
 	}
-	scanf ("%d %d",&n,&m);
-	if (pd(n,m)==0) printf("error");
+	my_scanf ("%d %d",&n,&m);
+	if (pd(n,m)==0) my_printf("error");
 	if (pd(n,m)==1) 
 	{   for (j=0;j<=4;j++)
 	{   b[j]=a[m][j];
@@ -24,9 +24,9 @@ int main_bench()
 	}
 	    for (i=0;i<=4;i++)
 	{    for (j=0;j<=4;j++)
-		{	printf ("%d",a[i][j]);
-		    if (j==4) printf("\n");
-			if (j!=4) printf(" ");
+		{	my_printf ("%d",a[i][j]);
+		    if (j==4) my_printf("\n");
+			if (j!=4) my_printf(" ");
 		}
 	}
 	}

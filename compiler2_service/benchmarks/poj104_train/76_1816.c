@@ -3,9 +3,9 @@
 int main_bench( ){
     int i,k,e,q=0,result,n;
     int a[500],b[500],sz[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d\n",&(a[i]),&(b[i]));
+        my_scanf("%d %d\n",&(a[i]),&(b[i]));
     }
     for(i=0;i<n;i++){
     for(k=a[i];k<b[i];k++){
@@ -36,9 +36,9 @@ int main_bench( ){
         q+=sz[i];
     }
     if(result==q){
-        printf("%d %d",a[0],b[0]);
+        my_printf("%d %d",a[0],b[0]);
     }else if(result!=q){
-        printf("no");
+        my_printf("no");
     }
         return 0;
 }

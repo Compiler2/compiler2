@@ -28,13 +28,13 @@ void pipei(char x[],int l)
 	for(i=0;i<l;i++)
 	{
 		if(x[i]!='('&&x[i]!=')')
-			printf(" ");
+			my_printf(" ");
 		else if(x[i]=='(')
-			printf("$");
+			my_printf("$");
 		else
-			printf("?");
+			my_printf("?");
 	}
-	printf("\n");
+	my_printf("\n");
 }
 int main_bench()
 {

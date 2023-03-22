@@ -18,7 +18,7 @@ int main_bench() {
            }             
         }
         if(zf[i]!='\0'){
-           printf("%c",zf[i]);             
+           my_printf("%c",zf[i]);             
         }                                                    
     }
     return 0;

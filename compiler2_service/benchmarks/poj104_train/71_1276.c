@@ -3,11 +3,11 @@
 int isRunNian(int year);
 int main_bench(){
     int n,d,s[200][100],e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
 		d=0;
        for(int k=0;k<3;k++){
-       scanf("%d",&(s[i][k]));
+       my_scanf("%d",&(s[i][k]));
         }
        if((s[i][1])>(s[i][2])){
         e=s[i][1];
@@ -28,9 +28,9 @@ int main_bench(){
        }
        }
          if((d%7)==0){
-             printf("YES\n");
+             my_printf("YES\n");
          }else{
-        printf("NO\n");
+        my_printf("NO\n");
      }
      }
       return 0;

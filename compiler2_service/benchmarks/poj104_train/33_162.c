@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char str[256];
 	char o,p,q,r;
 	o='T';
@@ -12,18 +12,18 @@ int main_bench(){
 	int i,j;
 	int len;
 	for(i=0;i<n;i++){
-		scanf("%s",str);
+		my_scanf("%s",str);
 		len=strlen(str);
 		for(j=0;j<len;j++){
 			if(str[j]=='A')
-				printf("%c",o);
+				my_printf("%c",o);
 			else if(str[j]=='T')
-				printf("%c",p);
+				my_printf("%c",p);
 			else if(str[j]=='C')
-				printf("%c",r);
-			else printf("%c",q);
+				my_printf("%c",r);
+			else my_printf("%c",q);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 

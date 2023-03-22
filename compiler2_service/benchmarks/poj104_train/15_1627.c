@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int sz[1000][1000], i, j, n, a1, b1, a2, b2, x, y, t;
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	for(i=0; i<n; i++)
 	{
 		for(j=0; j<n; j++)
 		{
-			scanf("%d", &sz[i][j]);
+			my_scanf("%d", &sz[i][j]);
 		}
 	}
 	for(i=0; i<n; i++)
@@ -42,6 +42,6 @@ int main_bench()
 		}
 	}
 	t=(a2-a1-1)*(b2-b1-1);
-	printf("%d", t);
+	my_printf("%d", t);
 	return 0;
 }

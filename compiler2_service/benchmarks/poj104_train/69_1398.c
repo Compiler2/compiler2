@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[300],b[300],c[300];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int t,a1,a2,i,j;
 	a1=strlen(a);
 	a2=strlen(b);
@@ -35,8 +35,8 @@ int main_bench()
    if(a[0]>'9')
    {	   
 	   a[0]=a[0]-10;
-	   printf("1");
-	   printf("%s",a);
+	   my_printf("1");
+	   my_printf("%s",a);
    }
    else
    {
@@ -44,11 +44,11 @@ int main_bench()
 		   if(a[i]!='0')
 			   break; 
            if(i==a1)
-             printf("0");
+             my_printf("0");
             else
              {
 	   for(j=i;j<a1;j++)
-	   printf("%c",a[j]);
+	   my_printf("%c",a[j]);
                }
 }
 }

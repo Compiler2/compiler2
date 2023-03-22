@@ -8,7 +8,7 @@ int main_bench()
 	int flag=0;
 	do
 	{
-		scanf("%d%c",&A[i],&c);
+		my_scanf("%d%c",&A[i],&c);
 		i++;
 	}while(c==',');
 	for(j=1;j<i;j++)
@@ -27,14 +27,14 @@ int main_bench()
 	{
 		if(A[j]<A[0])
 		{
-			printf("%d",A[j]);
+			my_printf("%d",A[j]);
 			flag=1;
 			break;
 		}
 	}
 	if(flag==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

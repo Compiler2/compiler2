@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,k=0,m,n,sum[500]={0};
 	char b[600],a[510][5],c[5];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(b);
 	m=strlen(b);
@@ -52,7 +52,7 @@ int main_bench()
 	}
 	if(sum[0]!=1)
 	{
-		printf("%d\n",sum[0]);
+		my_printf("%d\n",sum[0]);
 		for(i=0;i<k;i++)
 		{
 			if(sum[i]<sum[0])
@@ -61,13 +61,13 @@ int main_bench()
 			}
 			else
 			{
-				printf("%s\n",a[i]);
+				my_printf("%s\n",a[i]);
 			}
 		}
 	}
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

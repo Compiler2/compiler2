@@ -4,11 +4,11 @@ int main_bench()
 {
 	int *p,*q;
 	int i,j,m,n;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	p=(int *)malloc(n*sizeof(int));
 	q=(int *)malloc(sizeof(int));
 	for(i=0;i<n;i++)
-		scanf("%d",(p+i));
+		my_scanf("%d",(p+i));
 	for(j=0;j<m;j++)
 	{
 		*q=*(p+n-1);
@@ -17,8 +17,8 @@ int main_bench()
 		
 		*p=*q;
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
-		printf(" %d",*(p+i));
-	printf("\n");
+		my_printf(" %d",*(p+i));
+	my_printf("\n");
 }

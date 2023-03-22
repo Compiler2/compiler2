@@ -3,7 +3,7 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int fb[29];
       fb[1]=1;
       fb[2]=1;
@@ -17,7 +17,7 @@ main_bench()
       for(;n>0;n--)
       {
           int a;
-          scanf("%d", &a);
-          printf("%d\n",fb[a]);         
+          my_scanf("%d", &a);
+          my_printf("%d\n",fb[a]);         
       }
 }

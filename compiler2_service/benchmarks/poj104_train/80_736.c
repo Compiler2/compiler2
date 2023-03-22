@@ -4,7 +4,7 @@ int djt(int year,int month,int day);
 int main_bench()
 {
 	  int a,b,c,d,e,f,g,h,s,i;
-	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 	g=djt(a,b,c);h=djt(d,e,f);s=h-g;
 	for(i=a;i<d;i++)
 	{
@@ -13,7 +13,7 @@ int main_bench()
 		else
 			s+=365;
 	}
-			printf("%d\n",s);
+			my_printf("%d\n",s);
 	return 0;
 }
 int djt(int year,int month,int day)
@@ -33,7 +33,7 @@ int djt(int year,int month,int day)
     case 10:sum=273;break;
     case 11:sum=304;break;
     case 12:sum=334;break;
-    default:printf("data error");break;
+    default:my_printf("data error");break;
   }
   sum=sum+day; 
   if(year%400==0||(year%4==0&&year%100!=0)) 

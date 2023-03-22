@@ -6,7 +6,7 @@ int main_bench()
     int cow,col,i,j,k,t,max,min,cow1,t1,m=0;
     for(cow=0;cow<=4;cow++){
     for(col=0;col<=4;col++){
-    scanf("%d",&a[cow][col]); 
+    my_scanf("%d",&a[cow][col]); 
     }
     }
     for(cow=0;cow<=4;cow++){
@@ -27,11 +27,11 @@ int main_bench()
     cow1=cow+1;
     t1=t+1; 
     m=1 ; 
-    printf("%d %d %d\n",cow1,t1,a[cow][t]);
+    my_printf("%d %d %d\n",cow1,t1,a[cow][t]);
     } 
     } 
     if(m==0)
-    printf("not found");
+    my_printf("not found");
     return 0; 
 } 
 

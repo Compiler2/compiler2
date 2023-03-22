@@ -5,7 +5,7 @@ int main_bench()
 int i;
 for(i=0;i<100;i++)
 {
-scanf("%d%d%d%d%d%d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+my_scanf("%d%d%d%d%d%d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 }
 for(i=0;i<100;i++)
 {if(a[i]==0){break;}
@@ -14,7 +14,7 @@ if(a[i]!=0){
 m[i]=a[i]*3600+b[i]*60+c[i];
  n[i]=3600*12+d[i]*3600+e[i]*60+f[i];
  s[i]=n[i]-m[i];
- printf("%d\n",s[i]);}
+ my_printf("%d\n",s[i]);}
 }
 return 0;
 }

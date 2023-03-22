@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[10]={0};
 	int b,i,n;
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	i=0;
 	do
 	{
@@ -14,7 +14,7 @@ int main_bench()
 	}while(b>0);
 	n=i;
 	for(i=0;i<n;i++)
-		printf("%d",a[i]);
-	printf("\n");
+		my_printf("%d",a[i]);
+	my_printf("\n");
 	return 0;
 }

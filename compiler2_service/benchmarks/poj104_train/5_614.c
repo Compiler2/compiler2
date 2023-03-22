@@ -5,8 +5,8 @@ double a,b;
 int p=0,n,m,k=0;
 char sb[531]={0};
 char dsb[531]={0};
-scanf("%lf",&a);
-scanf("%s%s",sb,dsb);
+my_scanf("%lf",&a);
+my_scanf("%s%s",sb,dsb);
 for(int i=0;i<531;i++){
 if(sb[i]==dsb[i]&&sb[i]!=0){
 p++;
@@ -17,11 +17,11 @@ k=1;
 n=strlen(sb);
 m=strlen(dsb);
 b=1.0*p/n;
-if(m!=n||k==1) printf("error");
+if(m!=n||k==1) my_printf("error");
 else if(b>a){
-printf("yes");
+my_printf("yes");
 }
-else printf("no");
+else my_printf("no");
 return 0;
 }
 

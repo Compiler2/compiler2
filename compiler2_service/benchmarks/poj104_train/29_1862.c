@@ -15,19 +15,19 @@ double F(int n)
 int main_bench()
 {
 	int m,n;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	int i,j;
 	double s,t;
 	for (i=1;i<=m;i++)
 	{
 		s = 0;
-		scanf("%d", &n);
+		my_scanf("%d", &n);
 		for (j=1;j<=n;j++)
 		{
 			t = F(j+1)/F(j);
 			s = s + t;
 		}
-		printf("%.3lf\n", s);
+		my_printf("%.3lf\n", s);
 	}
 	return 0;
 }

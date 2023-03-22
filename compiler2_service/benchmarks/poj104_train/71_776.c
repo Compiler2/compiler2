@@ -60,19 +60,19 @@ int nf(int m1,int m2)
 main_bench()
 {
       int e,n,m1,m2,t,k,i;
-      scanf("%d",&e);
+      my_scanf("%d",&e);
       for(i=0;i<e;i++)
       {
-      scanf("%d",&n);
-      scanf("%d %d",&m1,&m2);
+      my_scanf("%d",&n);
+      my_scanf("%d %d",&m1,&m2);
       t=leapyear(n);
       if(t==1)
       k=lf(m1,m2);
       else
       k=nf(m1,m2);
       if(k==1)
-      printf("YES\n");
+      my_printf("YES\n");
       else
-      printf("NO\n");
+      my_printf("NO\n");
       }
 }

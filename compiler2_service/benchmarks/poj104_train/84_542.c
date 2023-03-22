@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int a,b,c,d,min,max;
-	scanf("%d\n%d\n%d",&a,&c,&d);
+	my_scanf("%d\n%d\n%d",&a,&c,&d);
 	min=(d<c)?d:c;
 	max=(d>=c)?d:c;
 	if(a>2)
 	for(;a>=3;a--)
 	{ 
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		if(b>max){min=max;max=b;}
 		else if(b>min)min=b;
 	
 	}
-	printf("%d\n%d",max,min);
+	my_printf("%d\n%d",max,min);
 }
 
 

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,a[20001],i,j,t,f;
-	scanf("%d",&n);
-	scanf("%d",&f);
-	printf("%d",f);
+	my_scanf("%d",&n);
+	my_scanf("%d",&f);
+	my_printf("%d",f);
 	for(i=1;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		for(j=1;j<=i-1;j++)
 		{
 			t=a[i]-a[j];
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		if(t==0||a[i]==f)
 			continue;
-			printf(",%d",a[i]);
+			my_printf(",%d",a[i]);
 	}
 	return 0;
 }

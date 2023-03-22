@@ -14,5 +14,5 @@ int main_bench()
 	a[n-1-i]=k;
 	}
 	for(i=0;i<n;i++)
-	printf("%d",a[i]-'0');
+	my_printf("%d",a[i]-'0');
 }

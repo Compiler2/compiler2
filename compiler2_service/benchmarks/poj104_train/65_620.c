@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,c=0,d=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],b[n];
     for(i=0;i<n;i++){
-                     scanf("%d%d",&a[i],&b[i]);
+                     my_scanf("%d%d",&a[i],&b[i]);
                      }
      for(i=0;i<n;i++){
                       if(a[i]<b[i]){
@@ -27,9 +27,9 @@ int main_bench()
                                          }
                       }
     
-     if(c>d){printf("A");}
-     else if(d>c){printf("B");}
-     else{printf("Tie");}
+     if(c>d){my_printf("A");}
+     else if(d>c){my_printf("B");}
+     else{my_printf("Tie");}
     
     
     

@@ -15,11 +15,11 @@ int main_bench()
 	for (k=0;k<5;k++)
 	{
 		for(w=0;w<5;w++)
-			scanf("%d",&a[k][w]);
+			my_scanf("%d",&a[k][w]);
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if (panduan(m,n)==0)
-		printf("error\n");
+		my_printf("error\n");
 	else
 	{
 		for(i=0;i<5;i++)
@@ -32,9 +32,9 @@ int main_bench()
 		{
 			for (w=0;w<5;w++)
 				if(w!=4)
-				printf("%d ",a[k][w]);
+				my_printf("%d ",a[k][w]);
 				else 
-					printf("%d\n",a[k][w]);
+					my_printf("%d\n",a[k][w]);
 		}
 	}
 	return 0;

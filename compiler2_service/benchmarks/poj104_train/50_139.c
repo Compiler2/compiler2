@@ -2,7 +2,7 @@
 
 int main_bench(){
    int a,date,m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    
    int i,b=a-1;
    for(i=1;i<=12;i++){
@@ -13,7 +13,7 @@ int main_bench(){
 		else b=1;
 		
 		if(date==13 && b==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	  }
    }

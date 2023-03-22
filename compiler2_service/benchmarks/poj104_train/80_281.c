@@ -16,14 +16,14 @@ int main_bench()
 	long sum=0;
 	int k=0;
 
-	scanf("%d %d %d",&year1,&month1,&day1);
-	scanf("%d %d %d",&year2,&month2,&day2);
+	my_scanf("%d %d %d",&year1,&month1,&day1);
+	my_scanf("%d %d %d",&year2,&month2,&day2);
 	
 	sum+=com_year(year1,year2);
 	sum+=com_month(year1,month1,year2,month2);
 	sum+=com_day(year1,month1,day1,year2,month2,day2);
 
-	printf("%d",sum);
+	my_printf("%d",sum);
 	
 	return 0;
 }

@@ -19,7 +19,7 @@ int main_bench()
 			j=0;
 
         if(j<2)
-			printf("%c",ch[i]);
+			my_printf("%c",ch[i]);
 	}
 	return 0;
 }

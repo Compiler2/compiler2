@@ -3,9 +3,9 @@
 int main_bench(){
    double n;
    char  a[500],b[500];
-   scanf("%lf",&n);
-   scanf("%s",a);
-   scanf("%s",b);
+   my_scanf("%lf",&n);
+   my_scanf("%s",a);
+   my_scanf("%s",b);
    int len1=strlen(a),len2=strlen(b);
    int i,j=0;
    double t;
@@ -13,7 +13,7 @@ int main_bench(){
    {
 	   if(a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G')
 	   {
-		   printf("error");
+		   my_printf("error");
 		   goto  q;
 	   }
    }
@@ -21,13 +21,13 @@ int main_bench(){
    {
 	   if(b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G')
 	   {
-		   printf("error");
+		   my_printf("error");
 		   goto q;
 	   }
    }
    if(len1!=len2)
    {
-	   printf("error");
+	   my_printf("error");
 	   goto q;
    }
    if(len1==len2)
@@ -42,15 +42,15 @@ int main_bench(){
    t=1.0*j/len1;
    if(t>n)
    {
-	   printf("yes");
+	   my_printf("yes");
    }
    else{
-	   printf("no");
+	   my_printf("no");
    }
    }
    else
    {
-	   printf("no");
+	   my_printf("no");
    }
 q:	return 0;
 }

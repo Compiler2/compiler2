@@ -4,18 +4,18 @@ int zhi(int a);
 int main_bench(){
 int n,i,t,k;
 k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=3;i<=n-2;i++){
 	if(zhi(i)==1){
 		t=i+2;
 		if(zhi(t)==1){
 			k++;
-			printf("%d %d\n",i,t);
+			my_printf("%d %d\n",i,t);
 		}
 	}
 }
 if(k==0){
-	printf("empty\n");
+	my_printf("empty\n");
 }
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 int maxIndex, e,LEN,k,i;
 int sz[1000],js[1000];
-scanf("%d",&LEN);
+my_scanf("%d",&LEN);
 for(i=0;i<LEN;i++){
-scanf("%d", &sz[i]);
+my_scanf("%d", &sz[i]);
 }
 for(int k  =   1  ;   k <=   LEN; k++){
 	maxIndex = 0;
@@ -29,14 +29,14 @@ k++;
 }
 if(k<2){
 for(i=0;i<k;i++){
-printf("%d",js[i]);
+my_printf("%d",js[i]);
 }
 }
 if(k>1){
 for(i=0;i<k-1;i++){
-printf("%d,",js[i]);
+my_printf("%d,",js[i]);
 }
-printf("%d",js[k-1]);
+my_printf("%d",js[k-1]);
 }
 return 0;
 }

@@ -16,8 +16,8 @@ int main_bench()
           }
        if(x==n) 
          {
-          for(t=i;t<i+n;t++) printf("%c",str1[t]);
-          printf("\n");
+          for(t=i;t<i+n;t++) my_printf("%c",str1[t]);
+          my_printf("\n");
           }
        x=0;
        }

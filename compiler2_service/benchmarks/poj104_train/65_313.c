@@ -4,9 +4,9 @@ main_bench()
 {
     int n,i,j,k,win=0,lose=0;
     int a[200]={0},b[200]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
     for(i=1;i<=n;i++)
     {
         if(a[i]==b[i]);
@@ -29,7 +29,7 @@ main_bench()
             }
         }
     }
-    if(win==lose) printf("Tie\n");
-    if(win>lose)  printf("A\n");
-    if(win<lose)  printf("B\n");
+    if(win==lose) my_printf("Tie\n");
+    if(win>lose)  my_printf("A\n");
+    if(win<lose)  my_printf("B\n");
     }

@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n;
-    scanf ("%d", &n);
+    my_scanf ("%d", &n);
     int i,j,k;
     int a,b;
     int s[100][100];
     int sum;
     for (i=0;i<=n-1;i++)
     {
-        scanf ("%d %d", &a,&b);
+        my_scanf ("%d %d", &a,&b);
         for(j=0;j<=a-1;j++)
         {
                            for (k=0;k<=b-1;k++)
                            {
-                               scanf ("%d", &s[j][k]);
+                               my_scanf ("%d", &s[j][k]);
                            }
         }
         sum=0;
@@ -35,7 +35,7 @@ int main_bench()
         {
             sum=sum+s[j][0];
         }
-        printf ("%d\n", sum);
+        my_printf ("%d\n", sum);
     }   
     
     return 0;

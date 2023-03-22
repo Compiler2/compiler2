@@ -5,10 +5,10 @@ int main_bench()
 	int n,a[300],i,sum=0,*p;
 	float average;
 	void array(int array[],int x);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=a;p<a+n;p++)
 	{
-		scanf("%d",p);
+		my_scanf("%d",p);
 	}
 	array(a,n);
 	for(i=0;i<n;i++)
@@ -23,9 +23,9 @@ int main_bench()
 			if(*p-average==a[0]-average||average-a[n-1]==average-*p)
 			{
 				if(p==a)
-					printf("%d",*p);
+					my_printf("%d",*p);
 				else
-					printf(",%d",*p);
+					my_printf(",%d",*p);
 			}
 		}
 	}
@@ -36,9 +36,9 @@ int main_bench()
 			if(*p-average==a[0]-average)
 			{
 				if(p==a)
-					printf("%d",*p);
+					my_printf("%d",*p);
 				else
-					printf(",%d",*p);
+					my_printf(",%d",*p);
 			}
 		}
 	}
@@ -49,9 +49,9 @@ int main_bench()
 			if(average-a[n-1]==average-*p)
 			{
 				if(p==a+n-1)
-					printf("%d",*p);
+					my_printf("%d",*p);
 				else
-					printf("%d,",*p);
+					my_printf("%d,",*p);
 			}
 		}
 	}

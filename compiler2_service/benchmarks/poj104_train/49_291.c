@@ -24,8 +24,8 @@ int main_bench()
        }
       if(l==0)
       {for(m=0;m<i-1;m++)
-       printf("%c",s[j-i/2+m]);
-       printf("%c\n",s[j+i/2-1]);
+       my_printf("%c",s[j-i/2+m]);
+       my_printf("%c\n",s[j+i/2-1]);
        } 
      }
  return 0;

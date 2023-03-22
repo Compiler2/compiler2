@@ -4,15 +4,15 @@ int main_bench()
 { 
 	 int n,i,j=0,m=0;
 
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 
 	 char s1[100][10],s2[100][10],p1[100][10],p2[100][10],z1[100][10],z2[100][10],t[10];
 
 	 for(i=0;i<n;i++)
 	 {
-		 scanf("%s",s1[i]);
+		 my_scanf("%s",s1[i]);
 
-		 scanf("%s",s2[i]);
+		 my_scanf("%s",s2[i]);
 	 }
 	 for(i=0;i<n;i++)
 	 {
@@ -80,18 +80,18 @@ int main_bench()
 	 }
 	 for(j=0;j<m;j++)
 {
-	printf("%s\n",z1[j]);
+	my_printf("%s\n",z1[j]);
  }
  
 
  for(j=0;j<k;j++)
  {
-	printf("%s\n",p1[j]);
+	my_printf("%s\n",p1[j]);
  }
   for(i=0;i<n;i++)
   {
   if(!((s2[i][1]!='\0'&&strcmp(s2[i],"60")>=0)||(s2[i][2]>='0'&&s2[i][2]<='9'&&s2[i][3]=='\0')))
-	  printf("%s\n",s1[i]);
+	  my_printf("%s\n",s1[i]);
   }
 	 
 

@@ -11,8 +11,8 @@ int main_bench()
 		if(s[i]>='A'&&s[i]<='Z') s[i]=s[i]+32;
         if(c[i]>='A'&&c[i]<='Z') c[i]=c[i]+32;}
 	n=strcmp(s,c);
-	if(n<0) printf("<");
-	if(n==0) printf("=");
-	if(n>0) printf(">");
+	if(n<0) my_printf("<");
+	if(n==0) my_printf("=");
+	if(n>0) my_printf(">");
 	return 0;
 }

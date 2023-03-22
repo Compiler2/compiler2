@@ -25,14 +25,14 @@ int main_bench()
 			if(j==n)
 			{
 				for(k=0;k<i;k++)
-			     printf("%c",an[k]);
+			     my_printf("%c",an[k]);
 				for(k=0;k<h;k++)
 				{
-					printf("%c",ce[k]);
+					my_printf("%c",ce[k]);
 				}
 				for(k=i+n;k<m;k++)
 				{
-					printf("%c",an[k]);
+					my_printf("%c",an[k]);
 				}
 				break;
 			}
@@ -41,7 +41,7 @@ int main_bench()
 	}
   if(k!=m)
   {
-	  printf("%s",an);
+	  my_printf("%s",an);
   }
   return 0;
 }

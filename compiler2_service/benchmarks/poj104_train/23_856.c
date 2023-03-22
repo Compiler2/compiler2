@@ -14,9 +14,9 @@ int main_bench()
     if((s[i+1]==' '&&s[i]!=' ')||s[i+1]=='\0')
 	{l++;p=0;}
 	}
-	printf("%s",a[l-1]);
+	my_printf("%s",a[l-1]);
 	for(i=l-2;i>=0;i--)
-		printf(" %s",a[i]);
+		my_printf(" %s",a[i]);
 	return 0;
 }
 

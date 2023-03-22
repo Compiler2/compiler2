@@ -3,11 +3,11 @@
 main_bench()
 {
 	int n,i,y,M,q,m,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int b[200]={0};
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&y,&m,&M);
+		my_scanf("%d%d%d",&y,&m,&M);
 		if(m>M){
 			q=m;
 			m=M;
@@ -38,10 +38,10 @@ main_bench()
 	}
 	for(i=0;i<n;i++){
 		if(b[i]==1){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 

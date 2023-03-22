@@ -13,11 +13,11 @@
 	 ptr head,p1,p2,p3;
 	  
 	 k=0;
-	 scanf ("%d",&n);
+	 my_scanf ("%d",&n);
      for (i=1;i<=n;i++)
 	 {
          
-		 scanf ("%d",&l);  syn=0; 
+		 my_scanf ("%d",&l);  syn=0; 
 		 
 		 if (i!=1)
 		 {
@@ -47,10 +47,10 @@
 	 for (i=1;i<=k;i++)
 	 {
 
-		 printf ("%d",(*p1).inf  );
-		 if (i!=k) {p1=(*p1).next ; printf (",");}
+		 my_printf ("%d",(*p1).inf  );
+		 if (i!=k) {p1=(*p1).next ; my_printf (",");}
 
 	 }
-	 printf ("\n");
+	 my_printf ("\n");
 	 
  }

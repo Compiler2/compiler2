@@ -18,10 +18,10 @@ main_bench()
       char most[21];
       int scholarship;
       int i,j,k,s,p,q;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-          scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].average,&stu[i].evaluate,&stu[i].ganbu,&stu[i].xibu,&stu[i].amount);
+          my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].average,&stu[i].evaluate,&stu[i].ganbu,&stu[i].xibu,&stu[i].amount);
           scholarship=0;
           if((stu[i].average>80)&&(stu[i].amount>0)) {scholarship+=8000;}
           if((stu[i].average>85)&&(stu[i].evaluate>80)) {scholarship+=4000;}
@@ -35,7 +35,7 @@ main_bench()
               max=scholarship;
           }
       }
-      printf("%s\n%d\n%ld",most,max,sum);
+      my_printf("%s\n%d\n%ld",most,max,sum);
       getchar();
       getchar();
 }

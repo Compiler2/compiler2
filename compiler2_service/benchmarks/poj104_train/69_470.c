@@ -25,8 +25,8 @@ int max(int x,int y)
 int main_bench()
 {
     char a[251],b[251],c[251];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     int la=strlen(a),lb=strlen(b);
     int mx=max(la,lb);
     int i,j,k,p=0;
@@ -54,13 +54,13 @@ int main_bench()
       {
          if(c[i]>0)frag=1;
          if(frag==1)
-         printf("%d",c[i]);
-         else if(i==0)printf("0");
+         my_printf("%d",c[i]);
+         else if(i==0)my_printf("0");
       }
     else 
     {
          c[mx]=1;
-         for(i=mx;i>=0;i--)printf("%d",c[i]);
+         for(i=mx;i>=0;i--)my_printf("%d",c[i]);
     }
     
     return 0;

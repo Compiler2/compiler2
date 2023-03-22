@@ -15,16 +15,16 @@ int main_bench()
 {
 	int a,i,m,j;
 	double sum;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
 		sum=0.0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(j=1;j<m+1;j++)
 		{
 			sum+=f(j);
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

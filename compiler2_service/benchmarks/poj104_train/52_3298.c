@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,m,i,t;
     int a[200];
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for (i=0;i<n;i++)
-     scanf("%d",&a[i]);
+     my_scanf("%d",&a[i]);
     int l=0;
     while(l<m)
       {  
@@ -19,11 +19,11 @@ int main_bench()
      for (i=0;i<n;i++)
        {
          if (i==0)
-          printf("%d",a[i]);
+          my_printf("%d",a[i]);
          else
-          printf(" %d",a[i]);
+          my_printf(" %d",a[i]);
        }                  
-     printf("\n");
+     my_printf("\n");
      getchar();
      getchar();
 } 

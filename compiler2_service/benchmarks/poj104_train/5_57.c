@@ -4,9 +4,9 @@ int main_bench(){
 	int i, a=0, b;
 	double xg;
 	char s1[501], s2[501];
-	scanf("%lf %s %s", &xg, s1, s2);
+	my_scanf("%lf %s %s", &xg, s1, s2);
 	if(strlen(s1)!=strlen(s2)){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;s1[i]!='\0';i++){
@@ -16,16 +16,16 @@ int main_bench(){
 			}
 		}
 		else{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
 	b=strlen(s1);
 	if(a*1.0/b>xg){
-		printf("yes");
+		my_printf("yes");
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

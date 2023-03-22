@@ -4,24 +4,24 @@ main_bench()
 {
       int x1,y1,m,n;
    
-      scanf("%d %d",&x1,&y1);
+      my_scanf("%d %d",&x1,&y1);
       int a[x1][y1];
       for(m=0;m<x1;m++)
       {
                    for(n=0;n<y1;n++)
                    {
-                                    scanf("%d",&a[m][n]);
+                                    my_scanf("%d",&a[m][n]);
                    }
       }
       int x2,y2,p,q;
       
-      scanf("%d %d",&x2,&y2);
+      my_scanf("%d %d",&x2,&y2);
       int b[x2][y2];
       for(p=0;p<x2;p++)
       {
                    for(q=0;q<y2;q++)
                    {
-                                    scanf("%d",&b[p][q]);
+                                    my_scanf("%d",&b[p][q]);
                    }
       }
       int c[x1][y2];
@@ -52,8 +52,8 @@ main_bench()
                        for(h=0;h<y2;h++)
                        {
                                          if(h<y2-1)
-                                        printf("%d ",c[g][h]);
+                                        my_printf("%d ",c[g][h]);
                                         else
-                                        printf("%d\n",c[g][h]);                       }
+                                        my_printf("%d\n",c[g][h]);                       }
       }
 }

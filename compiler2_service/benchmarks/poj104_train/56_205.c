@@ -7,9 +7,9 @@ a=321;
 b=54321;
 c=12211;
 d=98997;
-printf("%d\n",a);
-printf("%d\n",b);
-printf("%d\n",c);
-printf("%d\n",d);
+my_printf("%d\n",a);
+my_printf("%d\n",b);
+my_printf("%d\n",c);
+my_printf("%d\n",d);
 return 0;
 }

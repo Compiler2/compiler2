@@ -23,6 +23,6 @@ int main_bench()
 		n++;
 	}
 	for(;i>0;i--)
-		printf("%s ",s[i]);
-	printf("%s",s[0]);
+		my_printf("%s ",s[i]);
+	my_printf("%s",s[0]);
 }

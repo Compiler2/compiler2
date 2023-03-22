@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int i,a[100],n,max,max2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	if (a[0]>a[1]) 
 	{
@@ -30,5 +30,5 @@ int main_bench()
 			max2=a[i];
 		
 	}
-	printf("%d\n%d\n",max,max2);
+	my_printf("%d\n%d\n",max,max2);
 }

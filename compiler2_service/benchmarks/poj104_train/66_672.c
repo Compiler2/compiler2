@@ -4,7 +4,7 @@ int main_bench()
 {
     int year,month,day;
     int i,days=0,n,m;
-    scanf("%d%d%d",&year,&month,&day);
+    my_scanf("%d%d%d",&year,&month,&day);
     m=(year-1)%400+1;
     for(i=1;i<m;i++)
     {
@@ -30,18 +30,18 @@ int main_bench()
     days += day;
       n = days%7;
     if(n==0)
-         printf("Sun.");
+         my_printf("Sun.");
          else if(n==1)
-         printf("Mon.");
+         my_printf("Mon.");
          else if(n==2)
-         printf("Tue.");
+         my_printf("Tue.");
          else if(n==3)
-         printf("Wed.");
+         my_printf("Wed.");
          else if(n==4)
-         printf("Thu.");
+         my_printf("Thu.");
          else if(n==5)
-         printf("Fri.");
+         my_printf("Fri.");
          else
-         printf("Sat.");             	
+         my_printf("Sat.");             	
          return 0;
 }

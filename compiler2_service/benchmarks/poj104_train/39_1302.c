@@ -7,13 +7,13 @@ int main_bench()
 	int n,i,j,z=0,p[100],b[100],l[100],sum[100];
 	char g[100],x[100];
 	char m[100][20];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",m[i]);
-		scanf("%d%d",&p[i],&b[i]);
-		scanf(" %c %c ",&g[i],&x[i]);
-		scanf("%d",&l[i]);
+		my_scanf("%s",m[i]);
+		my_scanf("%d%d",&p[i],&b[i]);
+		my_scanf(" %c %c ",&g[i],&x[i]);
+		my_scanf("%d",&l[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -38,6 +38,6 @@ int main_bench()
 			j=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",m[j],max,z);
+	my_printf("%s\n%d\n%d\n",m[j],max,z);
 	return 0;
 }

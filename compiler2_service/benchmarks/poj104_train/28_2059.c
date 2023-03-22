@@ -11,9 +11,9 @@ int main_bench()
         if(a[i]!=' '){
             k=k+1;
         }else if(a[i]==' '&&a[i-1]!=' '&&i<m){
-            printf("%d,",k);
+            my_printf("%d,",k);
             k=0;
-        }else if(i==m){printf("%d",k);
+        }else if(i==m){my_printf("%d",k);
         break;
         }
         else{continue;}

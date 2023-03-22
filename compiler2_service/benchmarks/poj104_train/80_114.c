@@ -6,7 +6,7 @@ int main_bench()
     x=0;
     y=0;
     z=0;
-    scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
+    my_scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
     
     for(;a<d;)
     {
@@ -79,6 +79,6 @@ int main_bench()
     
     z=f-c;
     n=x+y+z;
-    printf("%d\n",n);
+    my_printf("%d\n",n);
         return 0;
 }

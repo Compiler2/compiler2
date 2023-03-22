@@ -5,7 +5,7 @@ int main_bench()
 int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 int y1,m1,d1,y2,m2,d2,i,j,c1,c2,year,n,run,h,sum;
 year=365;
-scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+my_scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 if(y2>y1)
 {
 if((y1% 4 == 0 && y1% 100 != 0) || (y1% 400 == 0))
@@ -51,7 +51,7 @@ for(j=1;j<m2;j++)
 c2+=days[j];
 sum=c2-c1;
 }
-printf("%d",sum);
+my_printf("%d",sum);
 
 return 0;
 }

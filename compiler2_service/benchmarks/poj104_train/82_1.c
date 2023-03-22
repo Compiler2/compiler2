@@ -3,11 +3,11 @@
 main_bench()
 {
 int n;
-scanf("%d", &n);
+my_scanf("%d", &n);
 int a[n], b[n]; int i;
 for(i=0; i<n; i++)
    {
-   scanf("%d %d", &a[i], &b[i]);
+   my_scanf("%d %d", &a[i], &b[i]);
    }
 int c[n]; int p=0;
 for(i=0; i<n-1; i++)
@@ -32,5 +32,5 @@ for(i=0; i<n; i++)
    if (Max<c[i])
    Max=c[i];
    }
-printf("%d", Max);
+my_printf("%d", Max);
 }

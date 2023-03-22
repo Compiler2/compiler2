@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
 	}
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	if((a<5)&&(b<5))
 	{
 		for(i=0;i<5;i++)
@@ -20,34 +20,34 @@ int main_bench()
 			{
 				if(i==a)
 				{
-					printf("%d ",s[b][j]);
+					my_printf("%d ",s[b][j]);
 				}
 				if(i==b)
 				{
-					printf("%d ",s[a][j]);
+					my_printf("%d ",s[a][j]);
 				}
 				if((i!=a)&&(i!=b))
 				{
-					printf("%d ",s[i][j]);
+					my_printf("%d ",s[i][j]);
 				}
 			}
 			if(i==a)
 			{
-				printf("%d\n",s[b][4]);
+				my_printf("%d\n",s[b][4]);
 			}
 			if(i==b)
 			{
-				printf("%d\n",s[a][4]);
+				my_printf("%d\n",s[a][4]);
 			}
 			if((i!=a)&&(i!=b))
 			{
-				printf("%d\n",s[i][4]);
+				my_printf("%d\n",s[i][4]);
 			}
 		}
 	}
 	else
 	{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

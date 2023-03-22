@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,k;
     int year[200],month1[200],month2[200];
 	int result1,result2,day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
-		scanf("%d %d %d",&year[k],&month1[k],&month2[k]);
+		my_scanf("%d %d %d",&year[k],&month1[k],&month2[k]);
 	}
 	for(k=0;k<n;k++)
 	{
@@ -64,10 +64,10 @@ if(day < 0){
 }
 if(day%7==0)
 {
-	printf("YES\n");
+	my_printf("YES\n");
 }
 else{
-	printf("NO\n");
+	my_printf("NO\n");
 }
 	}
 

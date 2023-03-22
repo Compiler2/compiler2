@@ -11,29 +11,29 @@ int c(int i,int j)
 main_bench()
 {
   int x1,y1,x2,y2,s,p,i,j,k;
-  scanf("%d%d",&x1,&y1);
+  my_scanf("%d%d",&x1,&y1);
   for(s=0;s<x1;s++)
      {
         for (p=0;p<y1;p++)
-        scanf("%d",&a[s][p]);
+        my_scanf("%d",&a[s][p]);
      }
-  scanf("%d%d",&x2,&y2);
+  my_scanf("%d%d",&x2,&y2);
   for(s=0;s<x2;s++)
      {
         for (p=0;p<y2;p++)
-        scanf("%d",&b[s][p]);
+        my_scanf("%d",&b[s][p]);
      }
      q=y1;
   
   for(i=0;i<x1;i++)
      {
        for(j=0;j<y2;j++)
-         {printf("%d",c(i,j));
+         {my_printf("%d",c(i,j));
           if(j!=y2-1)
-          printf(" ");
+          my_printf(" ");
          } 
       if (i!=x1-1)
-      printf("\n");
+      my_printf("\n");
      }
 
      

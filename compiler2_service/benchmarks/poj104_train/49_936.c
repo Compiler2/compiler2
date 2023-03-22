@@ -28,7 +28,7 @@ void process(char *p)
          reverse(i,p+j-1,b);
          recopy(i,p+j-1,c);
          if (strcmp(b,c)==0)
-         printf("%s\n",c);
+         my_printf("%s\n",c);
          }
      }
 }    
@@ -38,7 +38,7 @@ void process(char *p)
 int main_bench()
 {
   char a[500];
-  scanf("%s",a);
+  my_scanf("%s",a);
   char *p;
   p=a;
   process(p);

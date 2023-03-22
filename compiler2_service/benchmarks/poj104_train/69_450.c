@@ -39,6 +39,6 @@ main_bench()
 		j=j+1;
 	}
 		for(;i<=250;i++)
-			printf("%d",z[i]);
-	if(j==251) printf("0");
+			my_printf("%d",z[i]);
+	if(j==251) my_printf("0");
 }

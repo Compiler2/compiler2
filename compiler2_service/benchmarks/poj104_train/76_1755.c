@@ -5,10 +5,10 @@ int n,i,j,k,a,b;
 struct qj{
  int a,b;
 }qj[50000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d%d",&(qj[i].a),&(qj[i].b));
+	my_scanf("%d%d",&(qj[i].a),&(qj[i].b));
 }
 
 for(k=1;k<=n;k++)
@@ -48,8 +48,8 @@ for(i=0;i<=n-2;)
   else i++; 
 }
 	
-if(n!=1) printf("no");
-else printf("%d %d",qj[0].a,qj[0].b);
+if(n!=1) my_printf("no");
+else my_printf("%d %d",qj[0].a,qj[0].b);
 
 return 0;
 }

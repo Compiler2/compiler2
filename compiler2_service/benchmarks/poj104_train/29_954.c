@@ -18,17 +18,17 @@ double F(double x)
 int main_bench()
 {
 	int m;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	double *shuzu=(double *)malloc(sizeof(double)*m);
 	int i;
 	for(i=0;i<m;i++)
 	{
-		scanf("%lf", &(shuzu[i]));
+		my_scanf("%lf", &(shuzu[i]));
 		shuzu[i]=F(shuzu[i]);
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.3lf\n", shuzu[i]);
+		my_printf("%.3lf\n", shuzu[i]);
 	}
 	free(shuzu);
 	return 0;

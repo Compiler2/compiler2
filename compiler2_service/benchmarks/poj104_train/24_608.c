@@ -32,7 +32,7 @@ int main_bench()
 			ma=i;
 		}
 	}
-	printf("%s\n",ws[ma]);
-	printf("%s\n",ws[mi]);	
+	my_printf("%s\n",ws[ma]);
+	my_printf("%s\n",ws[mi]);	
 	return 0;
 }

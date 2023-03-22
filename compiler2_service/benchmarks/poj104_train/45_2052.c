@@ -4,8 +4,8 @@ int main_bench()
 {
 	char s[100],t[100];
 	int i,j=0,a,b=0,c;
-	scanf("%s",s);
-	scanf("%s",t);
+	my_scanf("%s",s);
+	my_scanf("%s",t);
 	for(i=0;s[i]!='\0';i++)
 	{
 		a=i+1;
@@ -31,6 +31,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",c);
+	my_printf("%d\n",c);
 	return 0;
 }

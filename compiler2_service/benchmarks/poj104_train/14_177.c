@@ -10,8 +10,8 @@ main_bench()
      int score;
     } student[100001];
     int n,i,j,k,m;
-    scanf("%d",&n);
-    for(i=1;i<=n;i++) {scanf("%d %d %d",&student[i].num,&student[i].sc,&student[i].sm);}
+    my_scanf("%d",&n);
+    for(i=1;i<=n;i++) {my_scanf("%d %d %d",&student[i].num,&student[i].sc,&student[i].sm);}
     for(i=1;i<=n;i++) {student[i].score=(student[i].sc+student[i].sm);}
     int x,y,z,r,s,t,a,b,d;
     a=1;
@@ -27,5 +27,5 @@ main_bench()
                       if((i!=x)&&(i!=y)&&(student[i].score>=d)) {d=student[i].score;z=i;}
     }
     
-    printf("%d %d\n%d %d\n%d %d",student[x].num,student[x].score,student[y].num,student[y].score,student[z].num,student[z].score);
+    my_printf("%d %d\n%d %d\n%d %d",student[x].num,student[x].score,student[y].num,student[y].score,student[z].num,student[z].score);
 }

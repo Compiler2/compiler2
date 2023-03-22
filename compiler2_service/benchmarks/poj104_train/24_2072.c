@@ -22,7 +22,7 @@ int main_bench(){
 		}
 	}
 	if(i==0){
-		printf("%s\n%s\n",a,a);
+		my_printf("%s\n%s\n",a,a);
 	}
 	else{
 	for(k=1;k<=i+1;k++){
@@ -37,11 +37,11 @@ int main_bench(){
 
 	if(b[0]==b[i]){
 		for(p=a;*p!=' ';p++){
-		   printf("%c",*p);
+		   my_printf("%c",*p);
 		}
-		printf("\n");
+		my_printf("\n");
         for(p=a;*p!=' ';p++){
-		   printf("%c",*p);
+		   my_printf("%c",*p);
 		}
 		
 	}
@@ -56,7 +56,7 @@ int main_bench(){
 		
 			if(t==b[0]){
 				for(p=p-t;*p!=' ';p++){
-					printf("%c",*p);
+					my_printf("%c",*p);
                     l=1;
 				}
 				break;
@@ -66,10 +66,10 @@ int main_bench(){
 		}
 	}
 	if(l==0){
-		printf("%s\n",p-t);
+		my_printf("%s\n",p-t);
 	}
 	else{
-		printf("\n");
+		my_printf("\n");
 	}
 	t=0;
 
@@ -82,7 +82,7 @@ int main_bench(){
 		if(*p==' ' || *p==','){
 			if(t==b[i]){
 				for(p=p-t;*p!=' ';p++){
-					printf("%c",*p);
+					my_printf("%c",*p);
 					n=1;
 				}
 				break;
@@ -92,7 +92,7 @@ int main_bench(){
 		}
 	}	
 	if(n==0){
-		printf("%s\n",p-t);
+		my_printf("%s\n",p-t);
 	}
 	}
 	}

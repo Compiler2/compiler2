@@ -4,9 +4,9 @@
 	int i,k,n;
 	int len;
     char str[50][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	}
 	for(i=0;i<n;i++){
 		len=strlen(str[i]);
@@ -20,7 +20,7 @@
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",str[i]);
+		my_printf("%s\n",str[i]);
 	}
 		return 0;
 	}

@@ -17,7 +17,7 @@ int main_bench()
 	s2[count-1]=s1[count-1]+s1[0];
 	for(i=0;i<count;i++)
 	{
-	printf("%c", s2[i]);
+	my_printf("%c", s2[i]);
 	}
 }
 

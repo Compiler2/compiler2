@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,k,z,y;
 	int x[50001],d[50001],j[50001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d%d",&x[i],&d[i]);
+		my_scanf("%d%d",&x[i],&d[i]);
 	}
 	y=0;
 	z=0;
@@ -26,12 +26,12 @@ int main_bench(){
 		if(j[i]==1){
 			k++;
 		}else{
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(k==d[z]-x[y]+1){
-		printf("%d %d",x[y],d[z]);
+		my_printf("%d %d",x[y],d[z]);
 	}
 	return 0;
 }

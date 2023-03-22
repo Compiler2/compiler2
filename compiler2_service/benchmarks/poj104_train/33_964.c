@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,len;
 	char ori[999][256],tra[999][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",ori[i]);
+		my_scanf("%s",ori[i]);
 	for(i=0;i<n;i++)
 	{
 		len=strlen(ori[i]);
@@ -21,7 +21,7 @@ int main_bench()
 		tra[i][len]='\0';
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",tra[i]);
+		my_printf("%s\n",tra[i]);
 
 	return 0;
 }

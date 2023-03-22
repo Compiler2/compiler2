@@ -4,8 +4,8 @@ int main_bench()
 {
 	int i,j,flag=1;
 	char a[100],b[100];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<strlen(a);i++)
 	{
 		for(j=0;j<strlen(b);j++)
@@ -35,8 +35,8 @@ int main_bench()
 	}
 	if(flag)
 	{
-		printf("YES\n");
+		my_printf("YES\n");
 	}
-	else printf("NO\n");
+	else my_printf("NO\n");
 	return 0;
 }

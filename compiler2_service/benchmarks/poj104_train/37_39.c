@@ -5,11 +5,11 @@ int bucket[26];
 int t, i, j, k, len;
 int main_bench()
 {
-	scanf("%d", &t);
+	my_scanf("%d", &t);
 	for(i=0;i<t;i++)
 	{
 		for(k=0;k<26;k++)bucket[k]=0;
-		scanf("%s", s);
+		my_scanf("%s", s);
 		while(s[j]!='\0')
 		{
 			bucket[s[j]-'a']++;
@@ -20,11 +20,11 @@ int main_bench()
 		while(s[j]!='\0')
 			if(bucket[s[j]-'a']==1)
 			{
-				printf("%c\n", s[j]);
+				my_printf("%c\n", s[j]);
 				break;
 			}
 			else j++;
-		if(j==len)printf("no\n");
+		if(j==len)my_printf("no\n");
 		j=0;
 	}
 	return 0;

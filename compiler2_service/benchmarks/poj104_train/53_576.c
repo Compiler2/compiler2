@@ -3,12 +3,12 @@
 int main_bench()
 {
 int a[300],m=0,n,p=0;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(int i=0;i<m;i++)
 {
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 }
-printf("%d",a[0]);
+my_printf("%d",a[0]);
 for(n=1;n<m;n++)
 {
 p = 0;
@@ -20,7 +20,7 @@ p++;
 }
 }
 if(p==0)
-printf(",%d",a[n]);
+my_printf(",%d",a[n]);
 else
 continue;
 }

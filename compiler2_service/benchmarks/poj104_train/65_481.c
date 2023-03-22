@@ -2,9 +2,9 @@
 
 int main_bench(){
 int a,b,i,n,t=0,m=0,p=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d%d",&a,&b);
+my_scanf("%d%d",&a,&b);
 if(a==0&&b==0)
 p++;
 if(a==0&&b==1)
@@ -24,9 +24,9 @@ m++;
 if(a==2&&b==2)
 p++;}
 if(t>m)
-printf("A");
+my_printf("A");
 else if(t<m)
-printf("B");
+my_printf("B");
 else if(t==m||p==n)
-printf("Tie");
+my_printf("Tie");
 	return 0;}

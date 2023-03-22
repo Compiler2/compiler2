@@ -6,7 +6,7 @@ int main_bench()
 	char s1[100], s2[100];
 	gets(s1);
 	gets(s2);
-	printf("%c\n", comp(s1, s2));
+	my_printf("%c\n", comp(s1, s2));
 }
 char comp(char s1[], char s2[])
 {

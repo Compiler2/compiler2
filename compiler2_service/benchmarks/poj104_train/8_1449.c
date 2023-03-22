@@ -5,14 +5,14 @@ int x[200],y[200],m,n;
 void sca(void)
 {
     int i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-	    scanf("%d",&x[i]);
+	    my_scanf("%d",&x[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-	    scanf("%d",&y[i]);
+	    my_scanf("%d",&y[i]);
 	}
 }
 
@@ -40,9 +40,9 @@ void bing(int a[],int l1,int b[],int l2)
 	    z[i]=a[i];
 	for(j=0;i<(l1+l2);j++,i++)
 	    z[i]=b[j];
-	printf("%d",z[0]);
+	my_printf("%d",z[0]);
 	for(i=1;i<(l1+l2);i++)
-		printf(" %d",z[i]);
+		my_printf(" %d",z[i]);
 	
 }
 

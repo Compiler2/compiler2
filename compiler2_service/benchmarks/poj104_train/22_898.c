@@ -5,17 +5,17 @@ int main_bench()
 	int e,a,b,c=0,h=1,x=1,m=0;
 	char g;
 	char f;
-	scanf("%d%c",&e,&f);
+	my_scanf("%d%c",&e,&f);
 	if(f!=',')
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
 		b=e;
 		for(g=',';g==','; )
 		{
-			scanf("%d%c",&a,&g);
+			my_scanf("%d%c",&a,&g);
 			if(a!=b)
 			{
 				h=0;
@@ -38,15 +38,15 @@ int main_bench()
 		}
 		if(h==1)
 		{
-			printf("No\n");
+			my_printf("No\n");
 		}
 		else if(x==1)
 		{
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 		}
 		else if(x==0)
 		{
-			printf("%d\n",c);
+			my_printf("%d\n",c);
 		}
 	}
 	return 0;

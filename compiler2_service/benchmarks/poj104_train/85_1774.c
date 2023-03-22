@@ -4,9 +4,9 @@ int main_bench()
 {
      int i,n,j,a;
 	 char s[1000][22];
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 for(i=0;i<n;i++)
-			 scanf("%s",s[i]);
+			 my_scanf("%s",s[i]);
 	 for(i=0;i<n;i++){ 
 		 a=1;
 		 if(((s[i][0]>='a'&&s[i][0]<='z')||
@@ -23,9 +23,9 @@ int main_bench()
          else
 			 a=0;
 		 if(a==1)
-		 printf("yes\n");
+		 my_printf("yes\n");
 	     if(a==0)
-		 printf("no\n");	
+		 my_printf("no\n");	
 	}
 	 return 0;
 

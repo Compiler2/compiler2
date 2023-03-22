@@ -52,7 +52,7 @@ main_bench()
 			j++;
 		}
 	}
-	printf("%d ",j+1);
+	my_printf("%d ",j+1);
 	for (i=1;i<l;i++)
 	{
 		n=0;
@@ -63,5 +63,5 @@ main_bench()
 		if (i==1) p=n;
 		else if (n>p) p=n;
 	}
-	printf("%d",p);
+	my_printf("%d",p);
 }

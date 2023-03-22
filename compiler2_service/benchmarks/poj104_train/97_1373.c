@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int s1=n/100;
 	n=n%100;
 	int	s2=n/50;
@@ -14,12 +14,12 @@ int main_bench(){
 	int	s5=n/5;
 	n=n%5;
 	int	s6=n;
-	printf("%d\n",s1);
-	printf("%d\n",s2);
-	printf("%d\n",s3);
-	printf("%d\n",s4);
-	printf("%d\n",s5);
-	printf("%d",s6);
+	my_printf("%d\n",s1);
+	my_printf("%d\n",s2);
+	my_printf("%d\n",s3);
+	my_printf("%d\n",s4);
+	my_printf("%d\n",s5);
+	my_printf("%d",s6);
 
 	return 0;
 }

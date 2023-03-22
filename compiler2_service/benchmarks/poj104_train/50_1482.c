@@ -2,7 +2,7 @@
 
 int main_bench(){
    int w,d[13],r=0,i;
-   scanf("%d",&w);
+   my_scanf("%d",&w);
    d[1]=12;
    d[2]=12+31;
    d[3]=d[2]+28;
@@ -18,43 +18,43 @@ int main_bench(){
 	   if(w==5){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==0){
-				   printf("%d\n",i);
+				   my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==4){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==1){
-				   printf("%d\n",i);
+				   my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==3){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==2){
-				   printf("%d\n",i);
+				   my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==2){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==3){
-				   printf("%d\n",i);
+				   my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==1){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==4){
-				 printf("%d\n",i);
+				 my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==6){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==6){
-				  printf("%d\n",i);
+				  my_printf("%d\n",i);
 			   }
 		   }
 	   }else if(w==7){
 		   for(i=1;i<=12;i++){
 			   if(d[i]%7==5){
-				   printf("%d\n",i);
+				   my_printf("%d\n",i);
 			   }
 		   }
 	   }

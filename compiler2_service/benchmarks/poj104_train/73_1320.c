@@ -7,7 +7,7 @@ int main_bench()
 	int flag[5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d", &s[i][j]);
+			my_scanf("%d", &s[i][j]);
 		}
 	}
 	for(i=0;i<5;i++){
@@ -25,10 +25,10 @@ int main_bench()
 				flag[i]=0;
 			}
 		}
-		if(flag[i]==1) printf("%d %d %d\n", i+1, n+1, max);
+		if(flag[i]==1) my_printf("%d %d %d\n", i+1, n+1, max);
 	}
 	if(flag[0]==0 && flag[1]==0 && flag[2]==0 && flag[3]==0 && flag[4]==0){
-		printf("not found");
+		my_printf("not found");
 	}
 
 		return 0;

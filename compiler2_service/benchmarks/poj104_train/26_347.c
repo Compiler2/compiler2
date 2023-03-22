@@ -10,7 +10,7 @@ int main_bench()
     {str1[j]=str[i];j++;}
 }
   for(i=0;i<j;i++)
-  {printf("%c",str1[i]);}
+  {my_printf("%c",str1[i]);}
 getchar();
 getchar();
 }

@@ -4,7 +4,7 @@ int main_bench(){
 int n,i,e,d,k=1;
 int sz[100]={0},sum[100]={0};
 sz[0]=2;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int c=0;
 for(i=0;i<n-1;i++){
 	for(d=0;d<100;d++){
@@ -26,11 +26,11 @@ f--;
 }
 if(n!=0){
 	for(i=f;i>=0;i--){
-	printf("%d",sz[i]);
+	my_printf("%d",sz[i]);
 	}
 }else{
-printf("1");
+my_printf("1");
 }
-printf("\n");
+my_printf("\n");
 return 0;
 }

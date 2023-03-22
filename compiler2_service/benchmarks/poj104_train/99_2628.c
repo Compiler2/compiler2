@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,s[100];
 	double a=0,b=0,c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		if(s[i]>0&&s[i]<19)
 			a=a+1;
 		if(s[i]>18&&s[i]<36)
@@ -21,17 +21,17 @@ int main_bench()
 	b=(double)100*b/n;
 	c=(double)100*c/n;
 	d=(double)100*d/n;
-	printf("1-18:");
-	printf("% .2lf",a);
-	printf("%%\n");
-	printf("19-35:");
-	printf("% .2lf",b);
-	printf("%%\n");
-	printf("36-60:");
-	printf("% .2lf",c);
-	printf("%%\n");
-	printf("60??:");
-	printf("% .2lf",d);
-	printf("%%");
+	my_printf("1-18:");
+	my_printf("% .2lf",a);
+	my_printf("%%\n");
+	my_printf("19-35:");
+	my_printf("% .2lf",b);
+	my_printf("%%\n");
+	my_printf("36-60:");
+	my_printf("% .2lf",c);
+	my_printf("%%\n");
+	my_printf("60??:");
+	my_printf("% .2lf",d);
+	my_printf("%%");
 	return 0;
 }

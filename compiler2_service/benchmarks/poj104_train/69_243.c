@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,i,la,lb,r,p=0;
 	char e,a[252]={'\0'},b[252]={'\0'},c[252]={'\0'};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
 	for(i=0;i<la-i;i++){
@@ -48,7 +48,7 @@ int main_bench(){
 		c[i]=c[r-i-1];
 		c[r-1-i]=e;
 	}
-	printf("%s",c);
+	my_printf("%s",c);
 
 	return 0;
 }

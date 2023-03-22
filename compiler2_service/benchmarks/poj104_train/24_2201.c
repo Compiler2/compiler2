@@ -28,5 +28,5 @@ int main_bench()
 		if(s[i]=='\0')
 			break;
 	}
-	printf("%s\n%s\n",maxa,mina);
+	my_printf("%s\n%s\n",maxa,mina);
 }

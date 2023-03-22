@@ -5,14 +5,14 @@ int main_bench()
 	int n,i,j;
 	int x,y,z;
 	char c[35];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<35;j++)
 		{
 			c[j]=0;
 		}
-		scanf("%s",c);
+		my_scanf("%s",c);
 		x=strlen(c)-1;
 		y=x-1;
 		z=x-2;
@@ -32,7 +32,7 @@ int main_bench()
             c[y]=0;
 			c[x]=0;
 		}
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 	}
 	return 0;
 }

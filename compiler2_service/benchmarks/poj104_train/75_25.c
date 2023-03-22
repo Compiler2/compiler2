@@ -16,8 +16,8 @@ int main_bench()
 {
     char a[8000],b[8000];
     int x[3000],y[3000],i,j,k,l1,l2,n,max,n1=0,n2=0;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     l1=strlen(a);
     l2=strlen(b);
     for(i=0;i<l1;i++)
@@ -43,5 +43,5 @@ int main_bench()
         i=j;
     }
     j=count(x,y,n1);
-    printf("%d %d",n1,j);
+    my_printf("%d %d",n1,j);
 }

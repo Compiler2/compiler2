@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[500],w[500],e[500][500],c[500];
 	int i,j,m,n,k=0;
-	scanf("%s %s %s",w,s,c);
+	my_scanf("%s %s %s",w,s,c);
 	n=strlen(w);
 	m=strlen(s);
 	for(i=0;w[i+m-1]!='\0';i++)
@@ -31,11 +31,11 @@ a=i;
 		{
 			w[a+i]=c[i];
 		}
-		printf("%s",w);
+		my_printf("%s",w);
 	}
 	else if(k==0)
 	{
-		printf("%s",w);
+		my_printf("%s",w);
 	}
 return 0;
 }

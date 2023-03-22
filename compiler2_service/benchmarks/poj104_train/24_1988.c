@@ -30,7 +30,7 @@ int main_bench()
    }
    longword[longnum]='\0';
   
-   printf("%s\n%s",longword,shortword);
+   my_printf("%s\n%s",longword,shortword);
 return 0;
 }
 

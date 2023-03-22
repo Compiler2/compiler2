@@ -8,7 +8,7 @@ int main_bench()
 	
 	while(m!=0&&n!=0)
 	{
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(m==0||n==0)
 		break;
 	
@@ -34,7 +34,7 @@ int main_bench()
 
 		if(k==0)
 		{
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 			break;
 		}
 	}

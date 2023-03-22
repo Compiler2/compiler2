@@ -27,7 +27,7 @@ void add(char a[],char b[],int x1,int x2,char c[])
 int main_bench()
 {	int i,j=0,x1,x2,m;
     char a[250],b[250],c[251]={"\0"};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	x1=strlen(a);
 	x2=strlen(b);
 	if(x1>=x2) m=x1;
@@ -40,12 +40,12 @@ int main_bench()
 		{
 		   if(c[i]!=0)
 		   {
-		    printf("%d",c[i]);
+		    my_printf("%d",c[i]);
 		    j++;
 		   }
 		}
-		else printf("%d",c[i]);
+		else my_printf("%d",c[i]);
 	}
-	printf("%d\n",c[m]);
+	my_printf("%d\n",c[m]);
 }
     

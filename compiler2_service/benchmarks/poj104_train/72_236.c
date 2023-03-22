@@ -4,15 +4,15 @@ int f(int i,int j,int m,int n,int a[100][100]);
 int main_bench()
 {
     int m,n,i,j,a[100][100];
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=0;i<m;i++)
      for(j=0;j<n;j++)
-       scanf("%d",&a[i][j]);
+       my_scanf("%d",&a[i][j]);
     for(i=0;i<m;i++)
      for(j=0;j<n;j++)
        {
          if(f(i,j,m,n,a)==1)
-         printf("%d %d\n",i,j);
+         my_printf("%d %d\n",i,j);
        }
 }                        
 int f(int i,int j,int m,int n,int a[100][100]) 

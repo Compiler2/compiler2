@@ -2,7 +2,7 @@
 
 main_bench()
 {char string1[50],string2[50];
- scanf("%s%s",string1,string2);
+ my_scanf("%s%s",string1,string2);
  int i,j,k,len1,len2;
  char t;
  len1=strlen(string1);
@@ -21,6 +21,6 @@ main_bench()
 	 if(k!=i)
 	 {t=string2[i];string2[i]=string2[k];string2[k]=t;}
 	}
- if(strcmp(string1,string2)==0)printf("YES");
- else printf("NO");
+ if(strcmp(string1,string2)==0)my_printf("YES");
+ else my_printf("NO");
 }

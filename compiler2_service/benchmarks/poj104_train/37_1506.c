@@ -3,9 +3,9 @@
 int main_bench(){
 	int i,n,j,k,x=0;
 	char s[100001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 
 		for(j=0;j<strlen(s);j++,x=0){
 			for(k=0;k<strlen(s);k++){
@@ -20,14 +20,14 @@ int main_bench(){
 			}
 
 			if(x==0){
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				break;
 			}
 		
 		}
 
 		if(j==strlen(s))
-			printf("no\n");
+			my_printf("no\n");
 
 
 

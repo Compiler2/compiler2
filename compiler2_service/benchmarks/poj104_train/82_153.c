@@ -9,9 +9,9 @@ int main_bench()
 	for(j=0;j<100;j++){
 		sz[j]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&(shou[i]),&(shu[i]));
+		my_scanf("%d%d",&(shou[i]),&(shu[i]));
 		if(shou[i]>=90&&shou[i]<=140&&shu[i]>=60&&shu[i]<=90){
 			sz[k]=sz[k]+1;
 		}
@@ -25,7 +25,7 @@ int main_bench()
 			sz[j+1]=e;
 		}
 	}
-	printf("%d",sz[k]);
+	my_printf("%d",sz[k]);
 	return 0;
 
 	

@@ -2,8 +2,8 @@
 
 int main_bench(){
 	int n,i,sz[100],ss[100],cx[100],k,s,e,p=0;
-	scanf("%d",&n);
-    for(i=0;i<n;i++) scanf("%d %d",&sz[i],&ss[i]);
+	my_scanf("%d",&n);
+    for(i=0;i<n;i++) my_scanf("%d %d",&sz[i],&ss[i]);
 	for(i=0;i<n;i++) if(sz[i]>=90&&sz[i]<=140&&ss[i]>=60&&ss[i]<=90) {
 		p=1;
 		break;
@@ -19,7 +19,7 @@ int main_bench(){
 		cx[i+1]=cx[i];
 		cx[i]=e;
 	}
-    if(p==1) printf("%d",cx[n-1]);
-	else printf("0");
+    if(p==1) my_printf("%d",cx[n-1]);
+	else my_printf("0");
 	return 0;
 }

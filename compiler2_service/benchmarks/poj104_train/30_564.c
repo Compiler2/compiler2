@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,sum,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=1;
 	sum=0;
 		while(i<=n){
@@ -16,7 +16,7 @@ int main_bench(){
 			
 			i++;
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 
 	return 0;
 }

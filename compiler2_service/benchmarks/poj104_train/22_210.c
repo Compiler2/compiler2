@@ -23,7 +23,7 @@ int main_bench()
 		}
 		if (d[i]>les&&d[i]<max) les=d[i];
 	}
-	if (les==-1) printf("No");
-	else printf("%d",les);
+	if (les==-1) my_printf("No");
+	else my_printf("%d",les);
 }
 

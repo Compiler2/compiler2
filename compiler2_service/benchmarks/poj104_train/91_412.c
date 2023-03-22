@@ -10,7 +10,7 @@ int main_bench()
 		str1[i]=str[i]+str[i+1];
 	str1[l-1]=str[l-1]+str[0];
 	for (i=0;i<l;i++)
-		printf("%c",str1[i]);
+		my_printf("%c",str1[i]);
 	return 0;
 }
 

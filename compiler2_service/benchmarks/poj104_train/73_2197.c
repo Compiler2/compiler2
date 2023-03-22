@@ -7,7 +7,7 @@ int main_bench()
 	for(i=1;i<=5;i++)
 	{
 		for(j=1;j<=5;j++)
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 	}		
 	for(i=1;i<=5;i++)
 	{
@@ -29,12 +29,12 @@ int main_bench()
 		}
 		if(min==max)
 		{
-			printf("%d %d %d\n",y,x,max);
+			my_printf("%d %d %d\n",y,x,max);
 			s=s+1;
 		}
 		max=0;min=1000000;
 	}
 	if(s==0)
-	printf("not found");
+	my_printf("not found");
 	return 0;
 }

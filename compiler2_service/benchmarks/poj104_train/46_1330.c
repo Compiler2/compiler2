@@ -40,18 +40,18 @@ int main_bench()
 	int a[100][100],b[10000];
 	int row,col,i,j,xx;
 
-	scanf("%d%d",&row, &col);
+	my_scanf("%d%d",&row, &col);
 
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 
 	xx=re(a,row,col,b);
 	for(i=0;i<xx;i++)
-		printf("%d\n",b[i]);
+		my_printf("%d\n",b[i]);
 	return 0;
 }

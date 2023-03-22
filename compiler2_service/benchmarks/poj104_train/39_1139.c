@@ -9,9 +9,9 @@ main_bench()
 		int lun,sum;
 	}num[100];
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",num[i].name,&num[i].qimo,&num[i].pingyi,&num[i].ban,&num[i].xi,&num[i].lun);
+		my_scanf("%s %d %d %c %c %d",num[i].name,&num[i].qimo,&num[i].pingyi,&num[i].ban,&num[i].xi,&num[i].lun);
 	
 	}
 	int zong=0;
@@ -41,8 +41,8 @@ main_bench()
 		}
 	
 	}
-	printf("%s\n",num[e].name);
-	printf("%d\n",w);
-	printf("%d",zong);
+	my_printf("%s\n",num[e].name);
+	my_printf("%d\n",w);
+	my_printf("%d",zong);
 	return 0;
 }

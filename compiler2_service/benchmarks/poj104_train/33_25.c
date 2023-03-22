@@ -6,9 +6,9 @@ int main_bench()
  int n,i,j;
  char jianji1[1000][399];
  int m[1000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-                  scanf("%s",jianji[i]);}
+                  my_scanf("%s",jianji[i]);}
                   for(i=0;i<n;i++){
                                    m[i]=strlen(jianji[i]);
                                    for(j=0;j<m[i];j++){
@@ -22,8 +22,8 @@ int main_bench()
                                                     jianji1[i][j]='G';}}
                   for(i=0;i<n;i++){
                                    for(j=0;j<m[i];j++)
-                                   {printf("%c",jianji1[i][j]);}
-                                   printf("\n");}                                  
+                                   {my_printf("%c",jianji1[i][j]);}
+                                   my_printf("\n");}                                  
                   
   return 0;
 }

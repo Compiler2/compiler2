@@ -19,7 +19,7 @@ int main_bench()
 
     
 
-    scanf("%d", &N); 
+    my_scanf("%d", &N); 
 
 
 
@@ -74,7 +74,7 @@ int main_bench()
 
             {
 
-                printf("%d", value[i]);
+                my_printf("%d", value[i]);
 
                 ++i;
 

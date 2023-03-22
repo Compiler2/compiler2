@@ -60,8 +60,8 @@ int main_bench()
 			q=i;
 		}
 	}
-	printf("%s\n",words[q]);
-	printf("%s\n",words[p]);
+	my_printf("%s\n",words[q]);
+	my_printf("%s\n",words[p]);
 
 
 

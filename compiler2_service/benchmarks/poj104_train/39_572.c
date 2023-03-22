@@ -12,9 +12,9 @@ int main_bench()
 		char pro;
 		int pap;
 	}stu[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].qimo,&stu[i].banpin,&stu[i].ganbu,&stu[i].pro,&stu[i].pap);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].qimo,&stu[i].banpin,&stu[i].ganbu,&stu[i].pro,&stu[i].pap);
 	for(i=0;i<n;i++)
 	{
 		if(stu[i].qimo>80&&stu[i].pap>=1)
@@ -42,5 +42,5 @@ int main_bench()
 				stu[j+1]=stu[j];
 				stu[j]=stu[100];
 			}
-	printf("%s\n%d\n%d\n",stu[0].name,a[0],sum);
+	my_printf("%s\n%d\n%d\n",stu[0].name,a[0],sum);
 }

@@ -5,7 +5,7 @@ int main_bench()
     int m,n;
     int a[1000];
     int i,k;
-    scanf("%d %d",&n,&m);    
+    my_scanf("%d %d",&n,&m);    
     while(m!=0&&n!=0)
     {
     int j=1;
@@ -19,8 +19,8 @@ int main_bench()
         if(k>=j)
           a[k]=a[k+1];
     }
-    printf("%d\n",a[1]);
-    scanf("%d %d",&n,&m);    
+    my_printf("%d\n",a[1]);
+    my_scanf("%d %d",&n,&m);    
     }
     
     getchar();

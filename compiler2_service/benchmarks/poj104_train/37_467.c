@@ -5,7 +5,7 @@ int main_bench()
 	char **p,*j,*k;
 	int t,i,flag=0;
 
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	p = (char **)malloc(t*sizeof(char*));
 	for (i=0;i<=t;i++){
         *(p+i) = (char *)malloc(10000*sizeof(char));
@@ -28,10 +28,10 @@ int main_bench()
 	for (i=1;i<=t;i++){
 		for (j=*(p+i);*j!='\0';j++){
 			if (*j!='0'){
-				printf("%c\n",*j);
+				my_printf("%c\n",*j);
 				break;
 			}
 		}
-		if (*j=='\0') printf("no\n");
+		if (*j=='\0') my_printf("no\n");
 	}
 }

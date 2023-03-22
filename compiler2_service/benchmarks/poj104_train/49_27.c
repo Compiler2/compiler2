@@ -13,8 +13,8 @@ int main_bench()
 				m++;n--;}
 			if(m==i+len/2){
 				for(m=i;m<=j;m++)
-					printf("%c",s[m]);
-				printf("\n");
+					my_printf("%c",s[m]);
+				my_printf("\n");
 			}
 		}
 	}

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int num,i,j,k=1,a[100000],b;
 
-	scanf("%d",&num);
+	my_scanf("%d",&num);
  
 	for(i=1;i<=num;i++)
 	{
@@ -29,7 +29,7 @@ int main_bench()
 		{
 			if (a[k]+a[b]==num)
 			{
-				printf("%d %d\n",a[b],a[k]);
+				my_printf("%d %d\n",a[b],a[k]);
 			}
 		}
 	}

@@ -4,10 +4,10 @@ int main_bench()
 {
  	int sz[100][100];
  	int m,n,row,col,k;
- 	scanf("%d %d",&m,&n);
+ 	my_scanf("%d %d",&m,&n);
  	for(row=0;row<m;row++){
 			for(col=0;col<n;col++){
-				scanf("%d",&sz[row][col]);
+				my_scanf("%d",&sz[row][col]);
 				}
 			}
 	for(k=0;k<m+n-1;k++){
@@ -19,7 +19,7 @@ int main_bench()
 				if(row>=m){
 					continue;
 					}
-				else printf("%d\n",sz[row][col]);
+				else my_printf("%d\n",sz[row][col]);
 				}
 			}
 		}

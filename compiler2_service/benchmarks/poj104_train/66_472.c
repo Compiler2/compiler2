@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,y,z,a,b,c,d,e,f,g,h;
-	scanf("%d%d%d",&x,&y,&z);
+	my_scanf("%d%d%d",&x,&y,&z);
 	a=x/400;b=x%400;
 	c=b/100;d=b%100;
 	e=d/4;f=d%4;
@@ -28,12 +28,12 @@ int main_bench()
 	h=g%7;
 	switch(h)
 	{
-		case 1:printf("Mon.\n");break;
-	    case 2:printf("Tue.\n");break;
-		case 3:printf("Wed.\n");break;
-		case 4:printf("Thu.\n");break;
-		case 5:printf("Fri.\n");break;
-		case 6:printf("Sat.\n");break;
-		case 0:printf("Sun.\n");break;
+		case 1:my_printf("Mon.\n");break;
+	    case 2:my_printf("Tue.\n");break;
+		case 3:my_printf("Wed.\n");break;
+		case 4:my_printf("Thu.\n");break;
+		case 5:my_printf("Fri.\n");break;
+		case 6:my_printf("Sat.\n");break;
+		case 0:my_printf("Sun.\n");break;
 	}
 }

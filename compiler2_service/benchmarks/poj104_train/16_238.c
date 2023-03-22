@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,y,a,b,c,d,e;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	a=x/10000;
 	x=x%10000;
 	b=x/1000;
@@ -22,15 +22,15 @@ int main_bench()
 				if(d==0)
 				{
 					y=e;
-					printf("%d",y);
+					my_printf("%d",y);
 				}
 				else
 				{
 					y=10*e+d;
 					if(e==0)
-						printf("0%d",y);
+						my_printf("0%d",y);
 					else
-						printf("%d",y);
+						my_printf("%d",y);
 				}
 
 			}
@@ -40,12 +40,12 @@ int main_bench()
 				if(e==0)
 				{
 					if(d==0)
-						printf("00%d",y);
+						my_printf("00%d",y);
 					else
-						printf("0%d",y);
+						my_printf("0%d",y);
 				}
 				else
-					printf("%d",y);
+					my_printf("%d",y);
 			}
 
 		}
@@ -57,15 +57,15 @@ int main_bench()
 				if(d==0)
 				{
 					if(c==0)
-						printf("000%d",y);
+						my_printf("000%d",y);
 					else
-						printf("00%d",y);
+						my_printf("00%d",y);
 				}
 				else
-					printf("0%d",y);
+					my_printf("0%d",y);
 			}
 			else
-				printf("%d",y);
+				my_printf("%d",y);
 		}
 
 	}
@@ -79,18 +79,18 @@ int main_bench()
 				if(c==0)
 				{
 					if(b==0)
-						printf("0000%d",y);
+						my_printf("0000%d",y);
 					else
-						printf("000%d",y);
+						my_printf("000%d",y);
 				}
 				else
-					printf("00%d",y);
+					my_printf("00%d",y);
 			}
 			else
-				printf("0%d",y);
+				my_printf("0%d",y);
 		}
 		else
-			printf("%d",y);
+			my_printf("%d",y);
 	}
 
 	return 0;

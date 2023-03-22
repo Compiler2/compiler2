@@ -5,7 +5,7 @@ main_bench()
 {
       int w;
       int i ,j ,k;
-      scanf("%d",&w);
+      my_scanf("%d",&w);
       int p[13];
       p[1]=31;
       p[3]=31;
@@ -28,7 +28,7 @@ main_bench()
                         }
                         k=sumday%7;
                        if((w+k)%7==5)
-                       printf("%d\n",j);
+                       my_printf("%d\n",j);
       }
       return 0;
 }

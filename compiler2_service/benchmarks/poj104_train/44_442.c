@@ -21,18 +21,18 @@ for(ii=0;ii<=5;ii++)
      char A[100];
      int i,j,count=0;
      memset(A,'\0',100);
-     scanf("%s",A);
+     my_scanf("%s",A);
      
      if(A[0]=='-')
      {for(j=0;A[j]!='\0';j++)
       {A[j]=A[j+1];}
-      printf("-");
+      my_printf("-");
      }
      {  
      for(i=0;A[i]!='\0';i++)
      {count++;}
      turn(A,count);
-     if(A[0]=='0'&&A[1]=='\0'){printf("0");} 
+     if(A[0]=='0'&&A[1]=='\0'){my_printf("0");} 
      else{
               for(i=0;A[0]=='0';i++) 
               {
@@ -43,7 +43,7 @@ for(ii=0;ii<=5;ii++)
               }
               for(i=0;A[i]!='\0';i++) 
               {
-                          printf("%c",A[i]);
+                          my_printf("%c",A[i]);
               }
          }
      }
@@ -51,7 +51,7 @@ for(ii=0;ii<=5;ii++)
 
      
          
-     printf("\n");
+     my_printf("\n");
 }
 
      

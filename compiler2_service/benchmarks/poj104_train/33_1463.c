@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char jianji[n][260],hubu[n][260];
     for(int i=0;i<n;i++){
-        scanf("%s",jianji[i]);
+        my_scanf("%s",jianji[i]);
         int len=strlen(jianji[i]);
         for(int k=0;k<len;k++){
             if(jianji[i][k]=='A'){
@@ -26,9 +26,9 @@ int main_bench(){
         }
     }
     for(int i=0;i<n-1;i++){
-        printf("%s\n",hubu[i]);
+        my_printf("%s\n",hubu[i]);
     }
-    printf("%s",hubu[n-1]);
+    my_printf("%s",hubu[n-1]);
     return 0;
 }
 

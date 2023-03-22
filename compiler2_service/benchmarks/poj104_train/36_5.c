@@ -4,11 +4,11 @@ int main_bench()
 {
 	char s1[100],s2[100];
 	int n1,n2,i,t,c1[128],c2[128];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	for(i=0;i<128;i++) c1[i]=c2[i]=0;
 	n1=strlen(s1);
 	n2=strlen(s2);
-	if(n1!=n2) printf("NO");
+	if(n1!=n2) my_printf("NO");
 	else 
 	{
 		for(i=0;i<n1-1;i++)
@@ -25,7 +25,7 @@ int main_bench()
 		{
 			if(c1[i]!=c2[i]) break;
 		}
-		if(i==128) printf("YES");
-		else printf("NO");
+		if(i==128) my_printf("YES");
+		else my_printf("NO");
 	}
 }

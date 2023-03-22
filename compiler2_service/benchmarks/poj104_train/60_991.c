@@ -25,16 +25,16 @@ int main_bench()
 	int n;
 	int k=0;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 for(i=1;i<=n-2;i=i+2)
 {
 if(sushu(i)==1&&sushu(i+2)==1)
 {
-printf("%d %d\n",i,i+2);
+my_printf("%d %d\n",i,i+2);
 k=k+1;
 }
 }
 if(k==0)
-printf("empty");
+my_printf("empty");
 	return 0;
 }

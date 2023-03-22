@@ -37,10 +37,10 @@ int main_bench()
     	else if(length<min) p2=&ch[i]-length;
     }
     for(;*p1!=' '&&*p1!=0;p1++)
-    printf("%c",*p1);
-    printf("\n");
+    my_printf("%c",*p1);
+    my_printf("\n");
     for(;*p2!=' '&&*p2!=0;p2++)
-    printf("%c",*p2);
-    printf("\n");
+    my_printf("%c",*p2);
+    my_printf("\n");
     		
 }

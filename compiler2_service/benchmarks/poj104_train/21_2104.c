@@ -5,10 +5,10 @@ int main_bench()
 {
 	unsigned long a[1000], n, i, min, max;
 	double ave=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d", &a[i]);	
+		my_scanf("%d", &a[i]);	
 	}
 	min=a[0];
 	max=a[0];
@@ -21,9 +21,9 @@ int main_bench()
 	ave/=n;
 	double d1=ave-min, d2=max-ave;
 	if (fabs(d1-d2)<1e-10)
-		printf("%d,%d", min, max);
+		my_printf("%d,%d", min, max);
 	else if (d1>d2)
-		printf("%d", min);
+		my_printf("%d", min);
 	else
-		printf("%d", max);
+		my_printf("%d", max);
 }

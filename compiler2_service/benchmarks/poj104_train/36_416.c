@@ -4,10 +4,10 @@ int main_bench()
 {
 	char c1[100],c2[100];
 	int i,j,a,b,k=0;
-	scanf("%s %s",c1,c2);
+	my_scanf("%s %s",c1,c2);
 	a=strlen(c1);
 	b=strlen(c2);
-	if(a!=b) printf("NO\n");
+	if(a!=b) my_printf("NO\n");
 	else
 	{
 		for(i=0;i<a;i++)
@@ -26,7 +26,7 @@ int main_bench()
 					k=k-2;
 			}
 		}
-		if(k==a) printf("YES\n");
-		else printf("NO\n");
+		if(k==a) my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,b,j,d=1,l[100];
 	char a[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a[i]);
+		my_scanf("%s",&a[i]);
 		l[i]=strlen(a[i]);
 	}
 	for(i=0;i<n;i++)
@@ -24,19 +24,19 @@ int main_bench()
 				}
 				else
 				{
-					printf("no\n");
+					my_printf("no\n");
 					d=d-1;
 					break;
 				}			
 			}			
 			if(d==l[i])
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		d=1;
 	}

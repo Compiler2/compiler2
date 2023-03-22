@@ -10,7 +10,7 @@ int main_bench()
     memset( lie,0,sizeof( lie) );
     for( i = 1;i <= n;i++ )
     for( j = 1;j <= n;j++ )
-    scanf("%d",&a[i][j]);
+    my_scanf("%d",&a[i][j]);
     for( i = 1;i <= n;i++ )
     {
          for( j = 1;j <= n;j++ )
@@ -43,9 +43,9 @@ int main_bench()
     for( j = 1;j <= 5;j++)
     {
     if(hang[i][j]==1 &&lie[i][j] == 1)
-    {printf("%d %d %d\n",i,j,a[i][j]);
+    {my_printf("%d %d %d\n",i,j,a[i][j]);
     temp ++;} 
     }
     if(temp == 0)
-    printf("not found");
+    my_printf("not found");
 }

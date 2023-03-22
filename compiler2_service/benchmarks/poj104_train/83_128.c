@@ -38,17 +38,17 @@ int main_bench()
 {
 	double *p,*q,GPA,sum=0,total=0,a;
 	int	n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(double *)malloc(sizeof(double)*n);
 	q=(double *)malloc(sizeof(double)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&p[i]);
+		my_scanf("%lf",&p[i]);
 		total+=p[i];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&q[i]);
+		my_scanf("%lf",&q[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -56,7 +56,7 @@ int main_bench()
 		sum+=a*p[i];
 	}
 	GPA=sum/total;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 	free(p);
 	free(q);
 	return 0;

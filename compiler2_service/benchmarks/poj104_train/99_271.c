@@ -4,10 +4,10 @@ int main_bench()
 {
 	
 	int n,i,a,suma=0,sumb=0,sumc=0,sumd=0,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<=18)
 		{
          suma++;
@@ -27,9 +27,9 @@ int main_bench()
 		sum++;
 	}
 	
-	printf("1-18: %.2lf%%\n",100.0*suma/sum);
-	printf("19-35: %.2lf%%\n",100.0*sumb/sum);
-	printf("36-60: %.2lf%%\n",100.0*sumc/sum);
-	printf("60??: %.2lf%%",100.0*sumd/sum);
+	my_printf("1-18: %.2lf%%\n",100.0*suma/sum);
+	my_printf("19-35: %.2lf%%\n",100.0*sumb/sum);
+	my_printf("36-60: %.2lf%%\n",100.0*sumc/sum);
+	my_printf("60??: %.2lf%%",100.0*sumd/sum);
 return 0;
 }

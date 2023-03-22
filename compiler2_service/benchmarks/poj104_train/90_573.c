@@ -17,15 +17,15 @@ int main_bench()
 {
 	int m,n,t,i,k[20];
 	
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		k[i]=func(m,n);
 	}
 	
 	for(i=0;i<t;i++)
-		printf("%d\n",k[i]);
+		my_printf("%d\n",k[i]);
 	return 0;
 }
 

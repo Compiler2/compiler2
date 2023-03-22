@@ -39,10 +39,10 @@ int main_bench()
    {
 	   LEN[i]=strlen(input[i]);
 	   if(LEN[i]!=0)
-	   printf("%d,",LEN[i]);
+	   my_printf("%d,",LEN[i]);
    }
    LEN[row]=strlen(input[row]);
-   printf("%d",LEN[row]);
+   my_printf("%d",LEN[row]);
    
 	return 0;
 }

@@ -4,9 +4,9 @@ main_bench()
 {
 	char a[501],b[501];
 	double n;
-	scanf("%lf",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int k=strlen(a);
 	int l=strlen(b);
 	int x=0,y=0;int mm=0;
@@ -15,7 +15,7 @@ main_bench()
 	for(mm=0;mm<l;mm++)
 	{if(b[mm]!='A'&&b[mm]!='T'&&b[mm]!='G'&&b[mm]!='C'){y=1;}}
 	if(k!=l||x==1||y==1)
-	{printf("error");}
+	{my_printf("error");}
 	
 	
 	else{
@@ -27,7 +27,7 @@ main_bench()
 	}
 	double c=(double)p/q;
 	if(c>n)
-	{printf("yes");}
-	else{printf("no");}}
+	{my_printf("yes");}
+	else{my_printf("no");}}
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
     int n;
     char sr[100][100];
     int i,j,sum[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
  char ddd;
- scanf("%c",&ddd);
+ my_scanf("%c",&ddd);
     for(i=0;i<n;i++) gets(sr[i]);
     for(i=0;i<n;i++)
  {
@@ -47,8 +47,8 @@ int main_bench()
     break;
    }
   }
-  if(sum[i]==0) printf("0\n");
-  else printf("1\n");
+  if(sum[i]==0) my_printf("0\n");
+  else my_printf("1\n");
  }                 
     
     return 0;

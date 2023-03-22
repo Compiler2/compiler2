@@ -9,11 +9,11 @@ int main_bench()
 	int b[500]={0};
 	void bubble(int a[],int n);
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 	bubble(a,n);
@@ -29,9 +29,9 @@ int main_bench()
 	}
     for(i=0;i<j-1;i++)
 	{
-	  printf("%d,",b[i]);
+	  my_printf("%d,",b[i]);
 	}
-	printf("%d",b[j-1]);
+	my_printf("%d",b[j-1]);
 
 	return 0;
 

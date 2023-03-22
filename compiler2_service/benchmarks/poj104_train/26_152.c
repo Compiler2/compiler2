@@ -10,9 +10,9 @@ int main_bench()
 		if(*p==' ')
 		{
 			if(*(p+1)==' ')continue;
-			else printf("%c",*p);
+			else my_printf("%c",*p);
 		}
-		else printf("%c",*p);
+		else my_printf("%c",*p);
 	}	
 }
 	

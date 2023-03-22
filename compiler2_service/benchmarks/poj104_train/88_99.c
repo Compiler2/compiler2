@@ -10,14 +10,14 @@ main_bench()
       {
             if((a[i]-'0'>=0)&&(a[i]-'9'<=0))
             {
-                printf("%c",a[i]);
+                my_printf("%c",a[i]);
             }
             else
             {
                 if(i>=1)
                 {
                         if((a[i-1]-'0'>=0)&&(a[i-1]-'9'<=0))
-                        printf("\n");
+                        my_printf("\n");
                 }
             }              
       }

@@ -11,9 +11,9 @@ int main_bench()
 {
     int i,j=0,k,n,max;
     struct patient *ppat[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-                    scanf("%s%d",pat[i].id,&pat[i].year);
+                    my_scanf("%s%d",pat[i].id,&pat[i].year);
     for(i=0;i<n;i++){
                      if(pat[i].year>=60){
                                          ppat[j]=pat+i;j++;
@@ -32,10 +32,10 @@ int main_bench()
                      } 
    
     for(i=0;i<j;i++)
-                    printf("%s\n",ppat[i]->id);
+                    my_printf("%s\n",ppat[i]->id);
     for(i=0;i<n;i++){
                      if(pat[i].year<60)
-                                       printf("%s\n",pat[i].id);
+                                       my_printf("%s\n",pat[i].id);
                      }
     return 0;
 }

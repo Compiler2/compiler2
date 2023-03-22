@@ -4,7 +4,7 @@ int main_bench()
 {
 	 int a,n,b,s,i,j,k,l,sz[100],zh[100];
 	 char zf[100],tj[100];
-	 scanf("%d %s %d",&a,zf,&b);
+	 my_scanf("%d %s %d",&a,zf,&b);
 	 l=strlen(zf);
 	 for(i=0;i<l;i++){
 	 	if(zf[i]>='0'&&zf[i]<='9'){
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	 }
 	 for(k=j-1;k>=0;k--){
-		printf("%c",tj[k]);	
+		my_printf("%c",tj[k]);	
 	 }
 	 return 0;
 }

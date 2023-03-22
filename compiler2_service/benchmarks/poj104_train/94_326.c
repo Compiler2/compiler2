@@ -5,9 +5,9 @@ int main_bench(){
 	int i,r,s;
 	int N;
 	int e;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 		for(i=0;i<N;i++){
-			scanf("%d",&sz[i]);
+			my_scanf("%d",&sz[i]);
 		}
 		for(r=0;r<N;r++){
 			if(sz[r]%2==0){
@@ -27,12 +27,12 @@ int main_bench(){
 		}
 		for(int y=0;y<N-1;y++){
 			if(sz[y]!=0){
-				printf("%d,",sz[y]);
+				my_printf("%d,",sz[y]);
 			}
 			
 		}
 	
-		printf("%d",sz[N-1]);
+		my_printf("%d",sz[N-1]);
 		
 		return 0;
 }

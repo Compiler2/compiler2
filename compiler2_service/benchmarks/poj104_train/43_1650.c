@@ -4,7 +4,7 @@ int main_bench()
 {   
     int b,j,i;
 	int a[10000];
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	
 	i=1;
 	while(i<=9999)
@@ -28,7 +28,7 @@ int main_bench()
 	while(j<=9999)
 	{
 		if (b==(a[i]+a[j]))
-		printf("%d %d\n",a[i],a[j]);
+		my_printf("%d %d\n",a[i],a[j]);
 		j=j+1;
 	}
 	i=i+1;

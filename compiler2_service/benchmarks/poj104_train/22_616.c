@@ -7,7 +7,7 @@ int main_bench()
  char c=',';
  while(c==',')
  {
-  scanf("%d%c",&a[i],&c);
+  my_scanf("%d%c",&a[i],&c);
   i++;
  }
  n=i;
@@ -29,7 +29,7 @@ int main_bench()
   i++;
  }
  if(x==y||n==1||y==0)
-  printf("No");
+  my_printf("No");
  else
-  printf("%d",y);
+  my_printf("%d",y);
 }

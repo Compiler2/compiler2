@@ -5,7 +5,7 @@ int a[1000],b[1000];
 int main_bench()
 {
 	int n,j,q,i,count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<=(n/2);i++)
 	{
 		j=issushu(i);
@@ -20,7 +20,7 @@ int main_bench()
 	if(count!=0){
 	for(i=0;i<count;i++)
 	{
-		printf("%d %d\n",a[i],b[i]);
+		my_printf("%d %d\n",a[i],b[i]);
 	}}
 	return 0;
 }

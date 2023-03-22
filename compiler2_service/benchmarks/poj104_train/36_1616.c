@@ -4,7 +4,7 @@ int main_bench()
 {
 	static char a[100],b[100];
 	int i,j,k=1;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	for(i=0;a[i]!=0;i++)
 	{
 		for(j=0;b[j]!=0;j++)
@@ -20,6 +20,6 @@ int main_bench()
 		if(b[j]!=1)
 		k=0;
 	if(k)
-	printf("YES");
-	else printf("NO");
+	my_printf("YES");
+	else my_printf("NO");
 }

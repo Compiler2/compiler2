@@ -3,9 +3,9 @@
 int main_bench(){
     int i,j,n;                 
 	char zfc[256],jg[256];
-    scanf("%d", &n);             
+    my_scanf("%d", &n);             
     for (i = 0; i < n; i++) {   
-        scanf("%s", zfc); 
+        my_scanf("%s", zfc); 
 			for (j = 0; zfc[j]!='\0'; j++){
 			 if (zfc[j]=='A'){
 				 jg[j]='T';
@@ -18,7 +18,7 @@ int main_bench(){
 			 } 
 			}
 			jg[j]='\0';
-			printf("%s\n",jg);
+			my_printf("%s\n",jg);
 		 }
   
     return 0;

@@ -2,19 +2,19 @@
 
 int main_bench(){
   int n,i,m,sz[100];
-  scanf("%d%d",&n,&m);
+  my_scanf("%d%d",&n,&m);
   for(i=0;i<n;i++){
-	  scanf("%d",&sz[i]);
+	  my_scanf("%d",&sz[i]);
   }
   for(i=n-m;i<n;i++){
-  printf("%d",sz[i]);
-  printf(" ");
+  my_printf("%d",sz[i]);
+  my_printf(" ");
 }
   for(i=0;i<n-m-1;i++){
-	  printf("%d",sz[i]);
-	  printf(" ");
+	  my_printf("%d",sz[i]);
+	  my_printf(" ");
   }
-  printf("%d",sz[n-m-1]);
+  my_printf("%d",sz[n-m-1]);
 return 0;
 }
 

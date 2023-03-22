@@ -24,8 +24,8 @@ int main_bench()
 	words[n][k]='\0';
 	for(i=0;i<n;i++)
 	{
-		printf("%d,",strlen(words[i]));
+		my_printf("%d,",strlen(words[i]));
 	}
-	printf("%d",strlen(words[n]));
+	my_printf("%d",strlen(words[n]));
 	return 0;
 }

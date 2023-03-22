@@ -20,10 +20,10 @@ a[j]='?';}}
 for(i=0;i<n;i++)
 	if(a[i]=='(')a[i]='$';
 	for(q=0;q<n;q++)
-		if(a[q]!='$'&&a[q]!='?')a[q]=' ';for(m=0;m<n-1;m++)printf("%c",b[m]);printf("%c\n",b[n-1]);
+		if(a[q]!='$'&&a[q]!='?')a[q]=' ';for(m=0;m<n-1;m++)my_printf("%c",b[m]);my_printf("%c\n",b[n-1]);
 		for(g=0;g<n-1;g++)
-			printf("%c",a[g]);
-		printf("%c\n",a[n-1]);}
+			my_printf("%c",a[g]);
+		my_printf("%c\n",a[n-1]);}
 	
 
 

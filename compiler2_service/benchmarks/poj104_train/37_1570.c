@@ -8,11 +8,11 @@ int main_bench()
 	int x=0,y=0;
 	char s[100010];
 	int op[100010];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	while(t--)
 	{
 		x=0;
-		scanf("%s",s);  
+		my_scanf("%s",s);  
 		l=strlen(s);
 		for(i=0;i<l;i++)
 			op[i]=0;   
@@ -33,13 +33,13 @@ int main_bench()
 				if(y==0)  
 				{
 					x=1;
-					printf("%c\n",s[i]);
+					my_printf("%c\n",s[i]);
 					break;
 				}
 			}
 		}
 		if(x==0)
-			printf("no\n");  
+			my_printf("no\n");  
 	}
 	return 0;
 }

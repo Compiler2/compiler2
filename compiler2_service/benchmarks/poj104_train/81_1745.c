@@ -6,10 +6,10 @@ int main_bench(){
    int h;
       for(i=0;i<5;i++){
       for(k=0;k<5;k++){
-      scanf("%d",&sz[i][k]);
+      my_scanf("%d",&sz[i][k]);
       }
    }
-   scanf("%d%d",&n,&m);
+   my_scanf("%d%d",&n,&m);
      if((m<5)&&(n<5)){
       h=0;
       for(i=0;i<5;i++){
@@ -21,13 +21,13 @@ int main_bench(){
       h=1; 
    }
    if(h==1){
-   printf("error");
+   my_printf("error");
    }else {
         for(i=0;i<5;i++){
             for(k=0;k<4;k++){
-            printf("%d ",sz[i][k]);
+            my_printf("%d ",sz[i][k]);
             }
-           printf("%d\n",sz[i][4]);
+           my_printf("%d\n",sz[i][4]);
         }
    }
    return 0;

@@ -41,7 +41,7 @@ int main_bench(){
 		jh[i]=i-333;
 	}
 	int w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=0;i<365;i++){
 		xqj[i]=i+w;
 		if(xqj[i]%7!=0){
@@ -61,7 +61,7 @@ void dy(int *jh,int *xqj){
 		if(jh[i]==13){
 			
 			if(xqj[i]==5){
-				printf("%d\n",k);
+				my_printf("%d\n",k);
 			}
 			k++;
 		}

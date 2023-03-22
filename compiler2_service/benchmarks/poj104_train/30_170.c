@@ -13,10 +13,10 @@ int Dec(int x)
 }
 int main_bench()
 { int i,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
     int sum=0;
     for(i=1;i<=n;i++)
     {   if (Dec(i)==1) sum=sum+i*i;   
     }
-printf("%d",sum);
+my_printf("%d",sum);
 }

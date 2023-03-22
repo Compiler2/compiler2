@@ -7,7 +7,7 @@ int f[1010];
 int main_bench()
 {
 	int i,j,st,et,ans,k;
-	scanf("%s%s",s,e);
+	my_scanf("%s%s",s,e);
 	for(i=0;i<1010;i++)f[0]=0;
 	ans=0;
 	i=j=0;
@@ -25,7 +25,7 @@ int main_bench()
 	int max=-1;
 	for(i=0;i<1010;i++)
 		if(f[i]>max)max=f[i];
-	printf("%d %d\n",ans,max);
+	my_printf("%d %d\n",ans,max);
 	
 	return 0;
 }

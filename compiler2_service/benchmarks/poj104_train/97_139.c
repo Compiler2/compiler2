@@ -13,7 +13,7 @@ int main_bench()
   int money=0;
   int leftmoney=0;
 
-  scanf("%d", &money);
+  my_scanf("%d", &money);
   leftmoney = money;
   for ( ; ; )
   {
@@ -107,7 +107,7 @@ int main_bench()
 	}
   }
 
-  printf("%d\n%d\n%d\n%d\n%d\n%d\n", yibai, wushi, ershi, shi, wu, yi);
+  my_printf("%d\n%d\n%d\n%d\n%d\n%d\n", yibai, wushi, ershi, shi, wu, yi);
 
   return 0;
 }

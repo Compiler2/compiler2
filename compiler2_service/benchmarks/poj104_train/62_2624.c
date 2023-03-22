@@ -9,18 +9,18 @@ int main_bench()
 	{
 
 		if(a[i]=='\0')
-		{printf ("\n");break;}
+		{my_printf ("\n");break;}
 
 		if(a[i]!=' ')
 		{
 			b=0;
-			printf ("%c",a[i]);
+			my_printf ("%c",a[i]);
 		}
 		else
 			b=b+1;
 		
 		if(b==1)
-			printf (" ");
+			my_printf (" ");
 		else
 			continue;
 	}

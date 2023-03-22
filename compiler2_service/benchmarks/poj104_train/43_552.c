@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,k,a,b,i,j,l,y,z,t,s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	n=m/2;
 	k=(n+1)/2;
     for(i=1;i<=k-1;i++)
@@ -23,7 +23,7 @@ int main_bench()
             if(z==0) s*=0;
 		}
 		if(t&&s)
-        printf("%d %d\n",a,b);
+        my_printf("%d %d\n",a,b);
 	 }
 	 return(0);
 }

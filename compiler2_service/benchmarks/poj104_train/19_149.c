@@ -16,7 +16,7 @@ int main_bench()
      if(q[j]!=s[i-b+j])break;
      else if(s[i-b-1]==' '||i==b){d[k++]=i;j=b;}
   if(k!=0)
-   for(i=0;i<a;i++){if(i==d[l]-b){for(j=0;j<c;j++)printf("%c",w[j]);i=d[l]-1;l++;}else printf("%c",s[i]);}
-  else for(i=0;i<a;i++)printf("%c",s[i]);
+   for(i=0;i<a;i++){if(i==d[l]-b){for(j=0;j<c;j++)my_printf("%c",w[j]);i=d[l]-1;l++;}else my_printf("%c",s[i]);}
+  else for(i=0;i<a;i++)my_printf("%c",s[i]);
  return 0;
 }

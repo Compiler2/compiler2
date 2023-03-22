@@ -10,6 +10,6 @@ int main_bench()
 		t[j]=s[i];
 	t[l]='\0';
 
-	printf("%s",t);
+	my_printf("%s",t);
 		return 0;
 }

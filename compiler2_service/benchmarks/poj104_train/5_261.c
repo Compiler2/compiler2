@@ -6,9 +6,9 @@ int main_bench(){
 	int i;
 	int s=0;
 	double r;
-	scanf("%lf",&r);
-	scanf("%s",&gene1);
-	scanf("%s",&gene2);
+	my_scanf("%lf",&r);
+	my_scanf("%s",&gene1);
+	my_scanf("%s",&gene2);
 	int len1=strlen(gene1);
 	int len2=strlen(gene2);
 	int fuhe=1;
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 	}
 	if(len1!=len2||fuhe==0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<=len1-1;i++){
 			if(gene1[i]==gene2[i]){
@@ -28,9 +28,9 @@ int main_bench(){
 			}
 		}
 		if(1.00*s/len1>r){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

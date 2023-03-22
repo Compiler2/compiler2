@@ -31,10 +31,10 @@ int main_bench()
  int x;
  x=strcmp(a,b);
  if(x>0)
-  printf(">");
+  my_printf(">");
  else
   if(x<0)
-   printf("<");
+   my_printf("<");
   else
-   printf("=");
+   my_printf("=");
 }

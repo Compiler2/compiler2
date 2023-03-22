@@ -5,7 +5,7 @@ int main_bench()
     int a[12]={31,29,31,30,31,30,31,31,30,31,30,31};
     int b[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     int q,w,e,r,t,y,i,j,z,x=0,c=0,v=0,n=0,m=0;
-    scanf("%d%d%d%d%d%d",&q,&w,&e,&r,&t,&y);
+    my_scanf("%d%d%d%d%d%d",&q,&w,&e,&r,&t,&y);
     z=r-q;
     	for(i=1;i<z;i++)
     	{
@@ -53,10 +53,10 @@ int main_bench()
         if(z==0)
         {
         	if((r%4==0&&r%100!=0)||(r%400==0))
-            printf("%d",c+v-366);
+            my_printf("%d",c+v-366);
             else
-            printf("%d",c+v-365);
+            my_printf("%d",c+v-365);
         }
         else
-        printf("%d",x+c+v);
+        my_printf("%d",x+c+v);
 }

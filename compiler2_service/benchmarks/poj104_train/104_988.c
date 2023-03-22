@@ -21,14 +21,14 @@ int main_bench()
 {
     int i,m,n;
     int a[11],b[11];
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     back(a,m);
     back(b,n);
     
     for(i=0;i<12;i++)
         if(a[log(m)-i]==b[log(n)-i]&&a[log(m)-1-i]!=b[log(n)-i-1])
         {
-            printf("%d\n",a[log(m)-i]);
+            my_printf("%d\n",a[log(m)-i]);
             break;
         }
 }

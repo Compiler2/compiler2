@@ -3,7 +3,7 @@
 int main_bench()
 {
     int y,m,d,i,j,k,sum=0,a;
-    scanf("%d %d %d",&y,&m,&d);
+    my_scanf("%d %d %d",&y,&m,&d);
     for(i=1;i<=(m-1);i++)
     {
          if(i==1) 
@@ -38,7 +38,7 @@ int main_bench()
          }
     }
     sum=sum+d;
-    printf("%d\n",sum);
+    my_printf("%d\n",sum);
     getchar();
     getchar();
 }     

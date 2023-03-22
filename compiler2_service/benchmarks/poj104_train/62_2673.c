@@ -7,11 +7,11 @@
           gets(c);
       for(i=0;c[i]!='\0';i++){
           if(c[i]!=' '){
-            printf("%c",c[i]);
+            my_printf("%c",c[i]);
              }
           else if(i>=1&&c[i]==' '){
                   if(c[i-1]!=' '){
-                     printf(" ");
+                     my_printf(" ");
                       }
                }
             

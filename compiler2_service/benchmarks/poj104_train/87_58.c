@@ -7,7 +7,7 @@ int main_bench()
 	int start,end,result;
 	for(i=0;i<1000;i++){
 		for(j=0;j<6;j++){
-			scanf("%d",&u[i][j]);
+			my_scanf("%d",&u[i][j]);
 		}
 		if(u[i][0]==0&&
 			u[i][1]==0&&
@@ -23,7 +23,7 @@ int main_bench()
 	    start=u[c][0]*3600+u[c][1]*60+u[c][2];
 	    end=(u[c][3]+12)*3600+u[c][4]*60+u[c][5];
 	    result=end-start;
-	printf("%d\n",result);
+	my_printf("%d\n",result);
 	}
 	return 0;
 }

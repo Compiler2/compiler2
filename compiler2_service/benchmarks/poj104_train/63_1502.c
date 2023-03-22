@@ -3,16 +3,16 @@
 main_bench()
 {
      int x1,y1,x2,y2;
-     scanf("%d",&x1);
-     scanf("%d",&y1);
+     my_scanf("%d",&x1);
+     my_scanf("%d",&y1);
      int*p1=(int*)malloc(x1*y1*sizeof(int));
      for(int i=0;i<x1*y1;i++)
-          scanf("%d",&p1[i]);
-     scanf("%d",&x2);
-     scanf("%d",&y2);
+          my_scanf("%d",&p1[i]);
+     my_scanf("%d",&x2);
+     my_scanf("%d",&y2);
      int*p2=(int*)malloc(x2*y2*sizeof(int));
      for(int i=0;i<x2*y2;i++)
-          scanf("%d",&p2[i]);
+          my_scanf("%d",&p2[i]);
      int*p3=(int*)malloc(x1*y2*sizeof(int));
      for(int i=0;i<x1;i++)
      {
@@ -28,9 +28,9 @@ main_bench()
           for(int j=0;j<y2;j++)
           {
                if(j<y2-1)
-               printf("%d ",p3[i*y2+j]);
+               my_printf("%d ",p3[i*y2+j]);
                else
-               printf("%d\n",p3[i*y2+j]);
+               my_printf("%d\n",p3[i*y2+j]);
           }     
      }
         return 0;

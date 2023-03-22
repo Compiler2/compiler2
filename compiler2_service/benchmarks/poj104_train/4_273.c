@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int s[100][100],l,h,i,j,hang,lie;
-	scanf("%d%d",&lie,&hang);
+	my_scanf("%d%d",&lie,&hang);
 	for(l=0;l<lie;l++)
 	{
 		for(h=0;h<hang;h++)
 		{
-			scanf("%d",&s[h][l]);
+			my_scanf("%d",&s[h][l]);
 		}
 	}
 	for(i=0;i<hang+lie-1;i++)
@@ -25,7 +25,7 @@ int main_bench()
 			{
 				break;
 			}
-			printf("%d\n",s[h][l]);
+			my_printf("%d\n",s[h][l]);
 		}
 	}
 	return 0;

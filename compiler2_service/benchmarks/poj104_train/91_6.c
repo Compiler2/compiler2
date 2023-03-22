@@ -19,7 +19,7 @@ int main_bench(){
         
     *(p1+n-1)=*(p+n-1)+*(p);
     
-    printf("%s", s1);
+    my_printf("%s", s1);
     
        
     

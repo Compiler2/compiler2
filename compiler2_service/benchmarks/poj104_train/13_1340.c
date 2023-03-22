@@ -6,9 +6,9 @@
 int main_bench(){ 
     int n,q=1,k;
 	int sz[20000],jieguo[20000];
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	jieguo[0]=sz[0];
 	for(int i=1;i<=n;i++){
@@ -27,9 +27,9 @@ int main_bench(){
 	}
 	for(int i=0;i<q-1;i++){
 		if(i!=q-2){
-			printf("%d ",jieguo[i]);
+			my_printf("%d ",jieguo[i]);
 		}else{
-			printf("%d",jieguo[i]);
+			my_printf("%d",jieguo[i]);
 		}
 	}
 

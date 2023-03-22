@@ -8,7 +8,7 @@ main_bench()
       a[3]=5;
       a[4]=7;
       n=4;       
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       for(i=11;i<=m;i++)
          {
                         t=0;
@@ -26,7 +26,7 @@ main_bench()
       while(a[i]<=m/2)
          {
                       for(j=1;j<=n;j++)
-                                       if(a[i]+a[j]==m)  printf("%d %d\n",a[i],a[j]);
+                                       if(a[i]+a[j]==m)  my_printf("%d %d\n",a[i],a[j]);
                       i++;
                       }                      
 }     

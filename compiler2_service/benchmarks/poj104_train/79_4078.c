@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,a[300],m,t,s,h;
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 while(m!=0&&n!=0)
 {
 	s=1;
@@ -23,8 +23,8 @@ while(h<n-1)
 }
 t=0;
 while(a[t]==0)t++;
-printf("%d\n",a[t]);	
-scanf("%d %d",&n,&m);
+my_printf("%d\n",a[t]);	
+my_scanf("%d %d",&n,&m);
 }
 return 0;
 }

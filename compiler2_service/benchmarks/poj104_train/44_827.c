@@ -32,9 +32,9 @@ int main_bench()
  int i,num,res;
  for(i=1;i<=6;i++)
  {
-  scanf("%d",&num);
+  my_scanf("%d",&num);
   res=reverse(num);
-  printf("%d\n",res);
+  my_printf("%d\n",res);
  }
  return 0;
 }

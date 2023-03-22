@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	int a[11][11]={0};
 	
 	a[5][5]=m;
@@ -28,11 +28,11 @@ int main_bench(){
 	}
 	for(i=1;i<=9;i++){
 		for(j=1;j<=9;j++){
-			printf("%d",a[i][j]);
+			my_printf("%d",a[i][j]);
 			if(j!=9)
-				printf(" ");
+				my_printf(" ");
 			else
-				printf("\n");
+				my_printf("\n");
 		}
 	}
 }

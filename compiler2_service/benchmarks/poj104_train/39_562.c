@@ -14,10 +14,10 @@ int main_bench()
 {
 	int total=0;
 	int i,n,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].nam,&stu[i].qi,&stu[i].pi,&stu[i].gan,&stu[i].xi,&stu[i].lun);
+		my_scanf("%s %d %d %c %c %d",stu[i].nam,&stu[i].qi,&stu[i].pi,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -42,9 +42,9 @@ int main_bench()
 		if(stu[i].ji>stu[k].ji)
 			stu[k]=stu[i];
 	}
-	printf("%s\n",stu[k].nam);
-	printf("%d\n",stu[k].ji);
-	printf("%d\n",total);
+	my_printf("%s\n",stu[k].nam);
+	my_printf("%d\n",stu[k].ji);
+	my_printf("%d\n",total);
 }
 
 

@@ -5,11 +5,11 @@ int main_bench()
 {
 void out(int i,int j,int k);
 int i;
-scanf("%d %d",&row,&col);
+my_scanf("%d %d",&row,&col);
 a=(int *)malloc(row*col*sizeof(int));
 for(i=0;i<row*col;i++)
-scanf("%d",&a[i]);
-printf("%d",a[0]);
+my_scanf("%d",&a[i]);
+my_printf("%d",a[0]);
 for(i=1;i<col;i++)
 out(i,i,0);
 for(i=1;i<row;i++)
@@ -22,7 +22,7 @@ void out(int i,int j,int k)
 {
 while(j!=-1&&k!=row)
 {
-printf("\n%d",*(a+k*col+j));
+my_printf("\n%d",*(a+k*col+j));
 j--;k++;
 }
 }

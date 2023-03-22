@@ -20,7 +20,7 @@ int main_bench()
   
   if(j==1)
    {
-       printf("No");
+       my_printf("No");
    }
    else
    {
@@ -37,8 +37,8 @@ int main_bench()
            }
        }
        if(second==-1)
-        printf("No");
-       else printf("%d",second);
+        my_printf("No");
+       else my_printf("%d",second);
 
    }
     return 0;

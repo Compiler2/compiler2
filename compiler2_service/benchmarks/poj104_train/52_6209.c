@@ -27,13 +27,13 @@ main_bench()
 	int a[110];
 	int i;
 	
-	scanf("%d%d\n",&n,&m);
+	my_scanf("%d%d\n",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 	trans(a,m,n);
 	
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<n;i++)
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 }

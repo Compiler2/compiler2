@@ -3,8 +3,8 @@
 
 int main_bench()
 {
-	int n; scanf("%d",&n);
-	char s[501]={' '}; scanf("%s",s);
+	int n; my_scanf("%d",&n);
+	char s[501]={' '}; my_scanf("%s",s);
 	int len; len=strlen(s);
 	struct substring{
 		char ss[5];
@@ -40,11 +40,11 @@ int main_bench()
 	for(i=0;i<entry;i++){
 		if(sub[i].count>max)max=sub[i].count;
 	}
-	if(max<2)printf("NO");
+	if(max<2)my_printf("NO");
 	else{
-		printf("%d",max);
+		my_printf("%d",max);
 		for(i=0;i<entry;i++){
-			if(sub[i].count==max)printf("\n%s",sub[i].ss);
+			if(sub[i].count==max)my_printf("\n%s",sub[i].ss);
 		}
 	}
 	return 0;

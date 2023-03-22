@@ -7,13 +7,13 @@ int function(int a)
 	if(a%2==1)
 	{
 		b=3*a+1;
-		printf("%d*3+1=%d\n",a,b);
+		my_printf("%d*3+1=%d\n",a,b);
 		return b;
 	}
 	else if(a%2==0)
 	{
 		b=a/2;
-		printf("%d/2=%d\n",a,b);
+		my_printf("%d/2=%d\n",a,b);
 		return b;
 	}
 }
@@ -22,16 +22,16 @@ int function(int a)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1)
-		printf("End\n");
+		my_printf("End\n");
 	else
 	{
 		while(1)
 		{
 			n=function(n);
 			if(n==1)
-			{printf("End\n");break;}
+			{my_printf("End\n");break;}
 		}
 	}
 }

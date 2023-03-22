@@ -4,9 +4,9 @@ int main_bench()
 { void pai(double a[],int n,double c[]);
   double a[100]={0},sum=0,ave=0,b[100]={0};
   int i=0,n=0,c[100]={0},k=1;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-  { scanf("%lf",&a[i]);
+  { my_scanf("%lf",&a[i]);
     sum=sum+a[i];
   
 		}
@@ -24,9 +24,9 @@ int main_bench()
 		}
 	pai(a,k,b);
 	for(i=k-1;i>=0;i--)
-	{ printf("%d",(int)a[i]);
+	{ my_printf("%d",(int)a[i]);
 	  if(i>0)
-	   printf(",");
+	   my_printf(",");
 		}
 		return(0);
 }

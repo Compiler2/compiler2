@@ -4,17 +4,17 @@ int main_bench(){
 	int i,c=0;
 	double n,x=0,y=0;
 	char a[600],b[600];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	
-		scanf("%s",a);
+		my_scanf("%s",a);
 	
-		scanf("%s",b);
+		my_scanf("%s",b);
 	
 	for(i=0;a[i]!='\0';i++)
 	{
 		if((a[i]!='A'&&a[i]!='G'&&a[i]!='C'&&a[i]!='T')||(b[i]!='A'&&b[i]!='G'&&b[i]!='C'&&b[i]!='T'))
 		{
-			printf("error");
+			my_printf("error");
 			c=1;
 			break;
 		}
@@ -32,7 +32,7 @@ int main_bench(){
 	{
 	if(b[i]!='\0')
 	{
-		printf("error");
+		my_printf("error");
 		c=1;
 	}
 	}
@@ -41,11 +41,11 @@ int main_bench(){
 	{
 		if((x/y)>n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 

@@ -6,9 +6,9 @@ int main_bench() {
     int n, i, j;
     char data[100][21];
     int num[100]={0};
-    scanf("%d" ,&n);
+    my_scanf("%d" ,&n);
     for(i=0;i<n;i++) {
-        scanf("%s", data[i]);
+        my_scanf("%s", data[i]);
     }
     for(i=0;i<n;i++) {
         if(data[i][0]<='9'&&data[i][0]>='0') {
@@ -24,9 +24,9 @@ int main_bench() {
     }
     for(i=0;i<n;i++) {
         if(num[i]!=0) {
-            printf("no\n");
+            my_printf("no\n");
         } else {
-            printf("yes\n");
+            my_printf("yes\n");
         }
     }
     return 0 ;

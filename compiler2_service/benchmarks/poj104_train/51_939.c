@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[500],now[5],gram[250][5];
 	int n,num[250]={0},i,no,k,j;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	for(i=0,no=0;a[i+n-1]!='\0';i++)
 	{
 		for(k=0;k<n;k++)
@@ -51,16 +51,16 @@ int main_bench()
 	}
 	if(max==0)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<no;i++)
 		{
 			if(num[i]==max)
 			{
-				printf("%s\n",gram[i]);
+				my_printf("%s\n",gram[i]);
 			}
 		}
 	}

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,o;
 	double a=0,b=0,c=0,d=0,al,bl,cl,dl;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&o);
+		my_scanf("%d",&o);
 		if(o<19)
 		{
 			a+=1;
@@ -29,7 +29,7 @@ int main_bench()
 	bl=100*b/n;
 	cl=100*c/n;
 	dl=100*d/n;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",al,bl,cl,dl);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",al,bl,cl,dl);
 	return 0;
 }
 	

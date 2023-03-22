@@ -5,19 +5,19 @@ int main_bench()
 	int n;
 	int first,second;
 	int x,i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	if(n>1&&n<100)
 	{
 		if(n==1)
 		{
 			int a;
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			first = second=a;
 		}
 		else{
 			for(i=0;i<n;i++)
 			{
-		       scanf("%d",&x);
+		       my_scanf("%d",&x);
 				if(i==0)
 				{			
 					first=x;
@@ -39,7 +39,7 @@ int main_bench()
 			
 			}
 		}
-		printf("%d\n%d",first,second);
+		my_printf("%d\n%d",first,second);
 	}
 return 0;
 }

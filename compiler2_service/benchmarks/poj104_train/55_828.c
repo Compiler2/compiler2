@@ -6,7 +6,7 @@ main_bench()
       char n[100];
       int m[100];
       char z[100];
-      scanf("%d %s %d",&a,n,&b);
+      my_scanf("%d %s %d",&a,n,&b);
       l=strlen(n) ;
       h=0;
   for(i=1,g=1,s=0;i<=l;i++)
@@ -19,7 +19,7 @@ main_bench()
      h=n[l-i]-'0';}
      s=s+h*g;
      g=g*a;     }
-if(s==0) printf("0");
+if(s==0) my_printf("0");
 else
 {
   for(j=0;s>0;j++)
@@ -32,7 +32,7 @@ else
       else 
        z[q-p]=m[p]+'A'-10;          } 
     z[q+1]='\0';
-     printf("%s",z);
+     my_printf("%s",z);
      }
 
 }

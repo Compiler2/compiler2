@@ -4,16 +4,16 @@ int main_bench(){
 	char sz[102][102]={0};
 	int szs[102][102]={0};
 	int n,m,i,j,s=0,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
 		for(j=1;j<=n;j++){
-			scanf(" %c",&sz[i][j]);
+			my_scanf(" %c",&sz[i][j]);
 			if(sz[i][j]=='@'){
 				s++;
 			}
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=0;k<m-1;k++){
 		for(i=1;i<=n;i++){
 			for(j=1;j<=n;j++){
@@ -45,6 +45,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

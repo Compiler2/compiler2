@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,sz[1000],K,m,d[1000],s=0,t,o;
-    scanf("%d%d", &n,&K);
+    my_scanf("%d%d", &n,&K);
     int e, i;
 	    for (i=0;i<n;i++){
-	    scanf("%d", &(sz[i]));}
+	    my_scanf("%d", &(sz[i]));}
     for(int k=1;k<=n;k++){
         for (i=0;i<n-k;i++){
 		  if (sz[i]>sz[i+1]){
@@ -29,8 +29,8 @@ int main_bench()
          }
          if(t>0){s++;}
     }
-     if(s>0){printf("yes");}
-        else{printf("no");}
+     if(s>0){my_printf("yes");}
+        else{my_printf("no");}
 return 0;
 }
 

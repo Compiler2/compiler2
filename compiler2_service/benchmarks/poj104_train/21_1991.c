@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,tot=0,i,j,swap;
 	int a[202];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		tot+=a[i];
 	}
 	for (i=1;i<=n;i++){
@@ -17,13 +17,13 @@ int main_bench()
 		}
 	}
 	if ((a[1]+a[n])*n==tot*2) {
-		printf("%d,%d",a[1],a[n]);
+		my_printf("%d,%d",a[1],a[n]);
 	}
 	if ((a[1]+a[n])*n>tot*2) {
-		printf("%d",a[n]);
+		my_printf("%d",a[n]);
 	}
 	if ((a[1]+a[n])*n<tot*2) {
-		printf("%d",a[1]);
+		my_printf("%d",a[1]);
 	}
 
 	return 0;

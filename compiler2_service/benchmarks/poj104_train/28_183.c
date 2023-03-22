@@ -45,9 +45,9 @@ int main_bench()
 	for(i=0;i<num;i++)
 	{
 		if(i==num-1)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		else
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 	}
 
 	return 0;

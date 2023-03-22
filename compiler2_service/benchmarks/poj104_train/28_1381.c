@@ -6,7 +6,7 @@ int main_bench()
 	char a[300][101],h;
 	int i,j=0,n;
 	int l[300];
-	scanf("%c",&h);
+	my_scanf("%c",&h);
     i=0;
 	while(h!='\n')
 	{
@@ -18,7 +18,7 @@ int main_bench()
             j=-1;
 		}
 		j++;
-		scanf("%c",&h);
+		my_scanf("%c",&h);
 	}
 	a[i][j]='\0';
     n=i+1;
@@ -32,9 +32,9 @@ int main_bench()
                      }
     
     for(i=0;i<j-1;i++){
-                       printf("%d,",l[i]);
+                       my_printf("%d,",l[i]);
                        }
-    printf("%d",l[j-1]);
+    my_printf("%d",l[j-1]);
 
                     
     return 0;

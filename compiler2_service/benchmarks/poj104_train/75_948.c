@@ -41,7 +41,7 @@ for(i=0;i<1001;i++)
 if(c[i]>m1) m1=c[i];
 }
 
-printf("%d %d\n",n,m1);
+my_printf("%d %d\n",n,m1);
 
 
 }

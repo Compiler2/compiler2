@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		char s[100010]={'\0'};
 		int b[100010]={0};
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int l=strlen(s);
 		int j,k;
 		for(j=0;j<l;j++)
@@ -25,13 +25,13 @@ int main_bench()
 		{
 			if(b[j]==1)
 			{
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				break;
 			}
 		}
 		if(j==l)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 }

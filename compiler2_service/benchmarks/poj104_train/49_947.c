@@ -15,8 +15,8 @@ int main_bench()
                  }
 	       if(t==j+i/2){
 	         for(p=j;p<j+i;p++)
-	             printf("%c",a[p]);
-	          printf("\n");
+	             my_printf("%c",a[p]);
+	          my_printf("\n");
 	        }  
 	    }
 		

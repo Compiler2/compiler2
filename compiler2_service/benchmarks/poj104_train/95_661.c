@@ -18,11 +18,11 @@ int main_bench()
 	{
 		if(a[i]==b[i])
 			if(i==n-1)
-				printf("=\n");
+				my_printf("=\n");
 		if(a[i]>b[i])
-		{printf(">\n");break;}
+		{my_printf(">\n");break;}
 		if(a[i]<b[i])
-		{printf("<\n");break;}
+		{my_printf("<\n");break;}
 	}
 	return 0;
 }

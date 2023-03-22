@@ -5,9 +5,9 @@ int main_bench()
 {
 	int n,i,num[301],out[301]={0},j=0,p,q,temp;
 	double sum=0,avr,dif[301],max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		sum+=num[i];
 	}
 	avr=sum/i;
@@ -34,8 +34,8 @@ int main_bench()
 	}
 	for(i=0;i<j;i++){
 		if(i==j-1)
-			printf("%d\n",out[i]);
-		else printf("%d,",out[i]);
+			my_printf("%d\n",out[i]);
+		else my_printf("%d,",out[i]);
 	}
 	return 0;
 }

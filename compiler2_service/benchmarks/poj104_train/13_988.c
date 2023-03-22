@@ -5,11 +5,11 @@
 int main_bench()
 {
 	int n,i,j,k,l,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int num[20000];
 	int	res[20000];
 	for(i=0;i<n;i++)
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	b=0;
 	k=0;
 	for(i=0;i<n;i++)
@@ -40,9 +40,9 @@ int main_bench()
 	for(l=1;l<=k;l++)
 	{
 		if (l!=k)
-			printf("%d ",res[l]);
+			my_printf("%d ",res[l]);
 		else
-			printf("%d",res[l]);
+			my_printf("%d",res[l]);
 	}
 	return 0;
 }

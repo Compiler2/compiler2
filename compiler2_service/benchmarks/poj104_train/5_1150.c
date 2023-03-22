@@ -4,8 +4,8 @@ int main_bench(){
     int i,n,m,result;
     double c,w;
     int a=0;
-    scanf("%lf",&w);
-    scanf("\n");
+    my_scanf("%lf",&w);
+    my_scanf("\n");
     char xlyi[501],xler[501];
     gets(xlyi);
     gets(xler);
@@ -31,11 +31,11 @@ int main_bench(){
     }
     c=1.00*a/n;
     if(result==0){
-        printf("error");
+        my_printf("error");
     }else if(c>=w){
-        printf("yes");
+        my_printf("yes");
     }else if(c<w){
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

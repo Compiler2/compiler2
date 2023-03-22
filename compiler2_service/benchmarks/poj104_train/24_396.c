@@ -21,6 +21,6 @@ int main_bench()
 	   if(strlen(p[i])>n)
 	   {n=strlen(p[i]);   k=i;}
    }
-	printf("%s\n%s",p[k],p[j]);
+	my_printf("%s\n%s",p[k],p[j]);
 	return 0;
 }

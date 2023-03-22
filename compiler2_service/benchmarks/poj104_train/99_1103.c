@@ -3,10 +3,10 @@
 int main_bench(){
     int n,x=0,y=0,z=0,w=0;
     double b,c,d,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     for(int i=0;i<n;i++){
-    scanf("%d",&(a[i]));
+    my_scanf("%d",&(a[i]));
     if(a[i]<=18){
         x++;
     }else if(a[i]>18&&a[i]<=35){
@@ -21,7 +21,7 @@ int main_bench(){
     c=100.0*y/n;
     d=100.0*z/n;
     e=100.0*w/n;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\nOver60: %.2lf%%",b,c,d,e);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\nOver60: %.2lf%%",b,c,d,e);
     return 0;
 }
 

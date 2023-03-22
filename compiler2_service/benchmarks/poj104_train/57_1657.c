@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
 		char m[20],n[20];
 		memset(n,0,sizeof(n));
 		int k,j;
-		scanf("%s",m);
+		my_scanf("%s",m);
 		k = strlen(m);
 		if(m[k-3]=='i')
 		{
@@ -17,7 +17,7 @@ int main_bench()
 
 				n[j]=m[j];
 			}
-			printf("%s\n",n);
+			my_printf("%s\n",n);
 		}
 		else
 			{
@@ -25,7 +25,7 @@ int main_bench()
 			{
 				n[j]=m[j];
 			}
-			printf("%s\n",n);
+			my_printf("%s\n",n);
 		}
 	}
 	return 0;

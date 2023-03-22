@@ -6,9 +6,9 @@ int main_bench()
 	int *pt1,*pt2;
 	int a[100],n,i;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
    
 	if(n%2==0){
 		for(i=0;i<n/2;i++){
@@ -25,9 +25,9 @@ int main_bench()
 		}
 	}
 	
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<n;i++)
-		printf(" %d",a[i]);			
+		my_printf(" %d",a[i]);			
 }
 
 void swap(int *pt1,int *pt2)

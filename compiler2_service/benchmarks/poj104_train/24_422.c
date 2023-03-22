@@ -37,6 +37,6 @@ int main_bench()
 			c=i;
 		}
 	}
-	printf("%s\n%s",str[b],str[c]);
+	my_printf("%s\n%s",str[b],str[c]);
          return 0;
 }

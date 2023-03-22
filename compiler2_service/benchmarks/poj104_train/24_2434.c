@@ -25,5 +25,5 @@ main_bench()
 		if(l[i]>max) {max=l[i];strcpy(maxc,c[i]);}
 		else if(l[i]<min) {min=l[i];strcpy(minc,c[i]);}
 	}
-	printf("%s\n%s\n",maxc,minc);
+	my_printf("%s\n%s\n",maxc,minc);
 }

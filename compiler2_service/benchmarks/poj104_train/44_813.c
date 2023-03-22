@@ -44,8 +44,8 @@ int main_bench()
 	int i,num;
 	for(i=1;i<=6;i++)
 	{
-		scanf("%d",&num);
-		printf("%d\n",reverse(num));
+		my_scanf("%d",&num);
+		my_printf("%d\n",reverse(num));
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 }

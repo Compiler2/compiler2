@@ -7,12 +7,12 @@ int main_bench()
 	{
 		d[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	c=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%d",&b[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -35,6 +35,6 @@ int main_bench()
 			m=d[i];
 		}
 	}
-	printf("%d",m);
+	my_printf("%d",m);
     return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j,x[10],y[10],a,b;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
     for (i=9;;i--)
 	{
 		x[i]=a;a/=2;
@@ -20,7 +20,7 @@ int main_bench()
 	{
 		if (x[i]!=y[i]) 
 		{
-			printf("%d",x[i-1]);
+			my_printf("%d",x[i-1]);
 			break;
 		}
 	}

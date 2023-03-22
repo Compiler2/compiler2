@@ -7,32 +7,32 @@ int main_bench(){
 	int y,m,d;
 	int k,j;
 	
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 
 	j=y-1;
 
     k= DiJiTian(y,m,d) +j+j/400+j/4-j/100;
     m=(k%7);
 	if(m==0){
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 	else if(m==1){
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	}
 	else if(m==2){
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}
 	else if(m==3){
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}
 	else if(m==4){
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}
 	else if(m==5){
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}
 	else {
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}
     
 	

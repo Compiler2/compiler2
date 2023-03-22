@@ -9,13 +9,13 @@ int main_bench()
 	n=0;
     for(i=0;i<20;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]==' ')
 			break;
 	}
    for(j=0;j<20;j++)
 	{
-		scanf("%c",&b[j]);
+		my_scanf("%c",&b[j]);
 		if(b[j]=='\n')
 			break;
 	}
@@ -28,9 +28,9 @@ for(k=0;k<j;k++)
 	n=n+b[k];
 }
 if(m==n)
-printf("YES");
+my_printf("YES");
 else 
-printf("NO");
+my_printf("NO");
   return 0;
 }
 

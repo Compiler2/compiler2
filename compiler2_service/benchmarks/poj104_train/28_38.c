@@ -23,7 +23,7 @@ int main_bench()
 	}
 	for(i=0;a[i]!=0;i++)
 	{
-		if(a[i+1]==0)printf("%d",a[i]);
-		else printf("%d,",a[i]);
+		if(a[i+1]==0)my_printf("%d",a[i]);
+		else my_printf("%d,",a[i]);
 	}
 }

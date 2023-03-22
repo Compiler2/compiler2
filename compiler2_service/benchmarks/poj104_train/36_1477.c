@@ -7,7 +7,7 @@ int a[256],b[256],i;
 
 int main_bench()
 {
-    scanf("%s%s",A,B);
+    my_scanf("%s%s",A,B);
     i=0;
 
     
@@ -27,9 +27,9 @@ int main_bench()
     for(i=0;i<256;i++)
         if(a[i]!=b[i])
         {
-            printf("NO");
+            my_printf("NO");
             return 0;
         }
 
-    printf("YES");
+    my_printf("YES");
 }

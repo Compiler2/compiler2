@@ -5,7 +5,7 @@ int main_bench(){
 	int s,h,m,z,j=0;
 	int n=10000;
 	for(int i=0;i<n;i++){
-	scanf("%d %d %d %d %d %d", &a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+	my_scanf("%d %d %d %d %d %d", &a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 	j++;
 	if(a[i]==0&&b[i]==0&&c[i]==0&&d[i]==0&&e[i]==0&&f[i]==0)break;
 	}
@@ -14,7 +14,7 @@ int main_bench(){
 	m=(e[k]-b[k])*60;
 	s=f[k]-c[k];
 	z=h+m+s;
-	printf("%d\n",z);
+	my_printf("%d\n",z);
 	}
 	return 0;
 }

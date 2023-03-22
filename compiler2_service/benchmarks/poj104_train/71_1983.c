@@ -15,9 +15,9 @@ int main_bench()
  m[9]=30;
  m[10]=31;
  m[11]=30;
- scanf("%d",&r);
+ my_scanf("%d",&r);
  for(s=0;s<r;s++){
- scanf("%d %d %d",&a,&b,&c);
+ my_scanf("%d %d %d",&a,&b,&c);
  sum=0;
  if(b>c){
 	 d=b;
@@ -33,8 +33,8 @@ int main_bench()
 	  }
  }
  if((sum%7)==0)
-	 printf("YES\n");
- else printf("NO\n");
+	 my_printf("YES\n");
+ else my_printf("NO\n");
  }
  return 0;
 }

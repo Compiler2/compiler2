@@ -6,15 +6,15 @@ int main_bench()
 	float r,rt=0,bt=0.00,GPA;
 	int scores[100];
 	float point[100];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%d",&scores[i]);
+		my_scanf("%d",&scores[i]);
 		bt+=scores[i];
 	}
 		for(j=0;j<a;j++)
 	{
-		scanf("%f",&point[j]);
+		my_scanf("%f",&point[j]);
 		if(90<=point[j]&&point[j]<=100){
 			r=4.00*scores[j];
 		}
@@ -48,6 +48,6 @@ int main_bench()
 		rt=rt+r;
 	}	
 		GPA=1.00*rt/bt;
-		printf("%.2f",GPA);
+		my_printf("%.2f",GPA);
 		return 0;
 }

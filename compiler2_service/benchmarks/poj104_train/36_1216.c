@@ -3,7 +3,7 @@
 int main_bench(){
 	char mid,a[100],b[100];
 	int i,j,stop,length,dif;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	length=strlen(a);
 	for(i=1;i<=length;i++){
 		for(j=0;j<length-i;j++){
@@ -21,11 +21,11 @@ int main_bench(){
 	}
 	dif=strcmp(a,b);
 	if(dif==0){
-		printf("YES");
+		my_printf("YES");
 	}else{
-		printf("NO");
+		my_printf("NO");
 	}
 
-	scanf("%d",&stop);
+	my_scanf("%d",&stop);
 	return 0;
 }

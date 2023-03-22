@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j,amount=0;
 	static int a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		do
 		{
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 		}
 		while(a[i]==' ');
 	}
@@ -21,9 +21,9 @@ int main_bench()
 				goto no;
 		}
 		if(amount==0)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		else
-			printf(",%d",a[i]);
+			my_printf(",%d",a[i]);
 		amount=amount+1;
 
 no:		continue;

@@ -1,11 +1,11 @@
 #include <header.h>
 
 int main_bench(){
-	int n;scanf("%d",&n);
+	int n;my_scanf("%d",&n);
 	int xueya[101][2],outcome[101];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&xueya[i][0],&xueya[i][1]);
+		my_scanf("%d%d",&xueya[i][0],&xueya[i][1]);
 		if(xueya[i][0]>=90 && xueya[i][0]<=140 && xueya[i][1]>=60 && xueya[i][1]<=90)	
 			outcome[i]=1;
 		else
@@ -38,6 +38,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d\n",count[n-1]);
+	my_printf("%d\n",count[n-1]);
 	return 0;
 }

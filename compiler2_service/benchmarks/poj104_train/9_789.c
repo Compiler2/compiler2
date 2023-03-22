@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,j,k;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     struct patient
     {
         char num[10];
@@ -11,7 +11,7 @@ int main_bench()
     };
     struct patient p[100],temp;
     for (i=0;i<n;i++)
-    scanf ("%s %d",&p[i].num,&p[i].age);
+    my_scanf ("%s %d",&p[i].num,&p[i].age);
     for (i=0;i<n-1;i++)
     {
         for (j=i+1;j<n;j++)
@@ -26,8 +26,8 @@ int main_bench()
                 }
             }
         }
-        printf("%s\n",p[i].num);
+        my_printf("%s\n",p[i].num);
     }
-    printf("%s\n",p[n-1].num);
+    my_printf("%s\n",p[n-1].num);
     return 0;
 }

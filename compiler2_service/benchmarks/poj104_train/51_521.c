@@ -6,11 +6,11 @@ int is(int i, int j);
 int main_bench()
 {
 	int i, j, k;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	getchar();
 	char a[501]={' '};
 	int max=0, bs[500]={0};
-	scanf("%s", a);
+	my_scanf("%s", a);
 	int s;
 	s=strlen(a);
 	for(i=0;i<=s-n;i++)
@@ -46,17 +46,17 @@ int main_bench()
 			max=bs[i];	
 		if(max>1)
 		{
-			printf("%d\n", max);
+			my_printf("%d\n", max);
 			for(i=0;i<=s-n;i++)
 			{
 				if(bs[i]==max)
 				{					
-					printf("%s\n", b[i]);
+					my_printf("%s\n", b[i]);
 				}
 			}
 		}
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		return 0;
 }
 

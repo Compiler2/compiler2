@@ -4,9 +4,9 @@ int main_bench()
 {
 int a[50000],b[50000];
 int n,nummax,nummin,max,min;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 }
 max=a[0];
 min=a[0];
@@ -36,10 +36,10 @@ nummin=u;
  
 }
 if(b[nummin]==max&&a[nummax]==min){
-printf("%d %d",min,max);
+my_printf("%d %d",min,max);
 }
 else{
-printf("no");
+my_printf("no");
 }
 
 return 0;

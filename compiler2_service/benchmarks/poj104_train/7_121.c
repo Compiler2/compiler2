@@ -4,8 +4,8 @@ int main_bench(){
 	char sz[200],zs[200],dk[200];
 	int a,b,i,c,d=0,p,e=0,q;
 	gets(dk);
-	scanf("%s",sz);
-	scanf("%s",zs);
+	my_scanf("%s",sz);
+	my_scanf("%s",zs);
 	a=strlen(sz);
 	b=strlen(zs);
 	c=strlen(dk);
@@ -16,7 +16,7 @@ int main_bench(){
 		}
 	}
 		if(dk[0]=='s'&&dk[1]=='d'&&dk[2]=='j'){
-			printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
+			my_printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
 return 0;
 		}
 
@@ -28,46 +28,46 @@ for(i=0;i<c;i++){
 		}
 	}
 if(d==0){
-	printf("%s",dk);
+	my_printf("%s",dk);
 	return 0;
 }
 if(e==0){
 	if(a>b){
          p=a-b;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+a;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		
 	}
 if(a<b){
          p=b-a;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+a;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 	
 	}
 if(a==b){
 	p=a-b;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+b;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		
 }
@@ -76,55 +76,55 @@ if(e!=0){
 if(a>b){
          p=a-b;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+a;i<e;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=e+a;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}		
 	}
 if(a<b){
          p=b-a;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+a;i<e;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 	     for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=e+a;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 	}
 if(a==b){
 	p=a-b;
 		for(i=0;i<d;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=d+b;i<e;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 		for(i=0;i<b;i++){
-			printf("%c",zs[i]);
+			my_printf("%c",zs[i]);
 		}
 		for(i=e+a;i<c;i++){
-			printf("%c",dk[i]);
+			my_printf("%c",dk[i]);
 		}
 }
 }

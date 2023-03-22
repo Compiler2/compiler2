@@ -17,7 +17,7 @@ int main_bench()
 {
 	int a,b,n,s=0,a1=1,l,r,i,j;
 	char x[100],y[1000],m;
-	scanf("%d %s %d",&a,x,&b);
+	my_scanf("%d %s %d",&a,x,&b);
 	n=strlen(x);
 	for(i=0;i<n;i++)
 	{
@@ -46,7 +46,7 @@ int main_bench()
 		if(l==0)break;
 	}
 	Reverse(y);
-	printf("%s\n",y);
+	my_printf("%s\n",y);
 	
 	
 	

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,day,m;
-	scanf("%d %d %d",&a,&b,&c); 
+	my_scanf("%d %d %d",&a,&b,&c); 
 	if(a%4==0&&a%100!=0||a%4==0&&a%400==0)
 	{
 		m=29;
@@ -28,6 +28,6 @@ int main_bench()
         case 11:day=31+m+31+30+31+30+31+31+31+30+c;break;
         case 12:day=31+m+31+30+31+30+31+31+30+30+31+c;break;
 	}
-	printf("%d",day);
+	my_printf("%d",day);
 	return 0;
 }

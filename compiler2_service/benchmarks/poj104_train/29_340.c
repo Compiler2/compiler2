@@ -9,10 +9,10 @@ int n;
 int j;
 int e;
 int m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int k;
 for(k=0;k<n;k++){
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(j=0;j<m;j++){
 sum[k]+=a/b;
 e=b;
@@ -21,7 +21,7 @@ a=e+a;}
 a=2;
 b=1;
 
-printf("%.3lf\n",sum[k]);
+my_printf("%.3lf\n",sum[k]);
 }
 return 0;
 }

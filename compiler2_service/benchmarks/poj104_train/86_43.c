@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,i=0,b[100],j=1,t,m,k=0,l;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(l=0;l<m;l++)
 	{
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		int *a=(int*)malloc(sizeof(int)*(n+2));
 		for(i=0; i<n; i++)
 		{
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 		}
 		i=0;
 		t=0;
@@ -25,7 +25,7 @@ int main_bench()
 					b[++j]=t;
 			}
 		}
-		printf("%d\n", b[60]);
+		my_printf("%d\n", b[60]);
 	}
 	return 0;
 }

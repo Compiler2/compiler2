@@ -4,13 +4,13 @@ int main_bench(){
     int i=1;
     double n,x;
     double a,b,c,d,e,f,g,h;
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     a=0;
     b=0;
     c=0;
     d=0;
     while(i<=n){
-        scanf("%lf",&x);
+        my_scanf("%lf",&x);
         if(x<=18){
         a++;i++;}
         else if(x>=19&&x<=35){
@@ -25,10 +25,10 @@ int main_bench(){
      f=100*b/n;
      g=100*c/n;
      h=100*d/n;
-     printf("1-18: %.2lf%%\n",e);
-     printf("19-35: %.2lf%%\n",f);
-     printf("36-60: %.2lf%%\n",g);
-     printf("Over60: %.2lf%%\n",h);
+     my_printf("1-18: %.2lf%%\n",e);
+     my_printf("19-35: %.2lf%%\n",f);
+     my_printf("36-60: %.2lf%%\n",g);
+     my_printf("Over60: %.2lf%%\n",h);
      return 0;
 }
 

@@ -7,8 +7,8 @@ int main_bench()
 	int tem;
 	int q,w;
 	int i;
-	scanf("%d %d %d",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	int days(int x,int y,int z);
 	if(a==d)
 	{
@@ -48,7 +48,7 @@ int main_bench()
 
 
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 
     return 0;
 }

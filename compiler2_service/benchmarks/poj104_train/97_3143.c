@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,sum100,sum10,sum1,n100,n50,n20,n10,n5,n1;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a>=100)
 	{
 		sum1=a%10;
@@ -91,7 +91,7 @@ int main_bench()
 			n1=sum1-5;
 		}
 	}
-    printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
+    my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
 	return 0;
 }
 	

@@ -7,17 +7,17 @@ int  main_bench()
 void change (int a[100],int n,int m);
 int a[100],n,m,i;
 
-scanf("%d",&n);
-scanf("%d",&m);
+my_scanf("%d",&n);
+my_scanf("%d",&m);
 for(i=0;i<n;i++){
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 
 change (a,n,m);
 for(i=0;i<n-1;i++){
-printf("%d ",a[i]);
+my_printf("%d ",a[i]);
 }
-printf("%d",a[n-1]);
+my_printf("%d",a[n-1]);
 return 0;
 }
 

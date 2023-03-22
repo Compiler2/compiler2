@@ -9,9 +9,9 @@ int f(int m,int n){
 int main_bench(){
 int a[300][2],i;
 for(i=0;i<300;i++){
-scanf("%d%d",&a[i][0],&a[i][1]);
+my_scanf("%d%d",&a[i][0],&a[i][1]);
 if(a[i][0]==0) break;
-else printf("%d\n",f(a[i][1],a[i][0])+1);
+else my_printf("%d\n",f(a[i][1],a[i][0])+1);
 }
 return 0;
 }

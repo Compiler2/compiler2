@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char art[8000];
 	gets(art);
 	int len;
@@ -31,16 +31,16 @@ int main_bench()
 			ed=i;
 		}else{
 			for(j=be;j<ed;j++){
-				printf("%s ",wor[j]);
+				my_printf("%s ",wor[j]);
 			}
-			printf("%s\n",wor[ed]);
+			my_printf("%s\n",wor[ed]);
 			be=i;
 			sum=a+1;
 		}
 	}
 	for(i=be;i<n-1;i++){
-		printf("%s ",wor[i]);
+		my_printf("%s ",wor[i]);
 	}
-	printf("%s",wor[n-1]);
+	my_printf("%s",wor[n-1]);
 	return 0;
 }

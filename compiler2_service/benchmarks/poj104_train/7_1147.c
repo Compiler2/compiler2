@@ -6,7 +6,7 @@ int main_bench()
 	int m,n;
 	int i,j,k;
 	int t;
-	scanf("%s%s%s",s,w,r);
+	my_scanf("%s%s%s",s,w,r);
 	m=strlen(s);
 	n=strlen(w);
 	for(i=0;i<=m-n;i++)
@@ -26,10 +26,10 @@ int main_bench()
 		{
 			s[k]=r[k-i];
 		}
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	else
 	{
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 }

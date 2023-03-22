@@ -5,7 +5,7 @@ int main_bench()
   char c[100];
   char s[100];
   int a[100];       
-  scanf("%s",c);
+  my_scanf("%s",c);
   int i;
   for(i=0;i<100;i++)
   {
@@ -46,6 +46,6 @@ int main_bench()
        d=a[0]*10+a[1];
        
        }
-   printf("%s\n",s);
-   printf("%d\n",d);
+   my_printf("%s\n",s);
+   my_printf("%d\n",d);
    }

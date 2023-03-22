@@ -35,8 +35,8 @@ int main_bench()
 		strcpy(tmp,(str+i+j));
 		strcpy((str+i),replacement);
 		strcpy((str+i+k),tmp);
-		printf("%s",str);
+		my_printf("%s",str);
 	}
-	else printf("%s",str);
+	else my_printf("%s",str);
 	return 0;
 }

@@ -14,9 +14,9 @@ main_bench()
 				if(s[i+j]==' '||s[i+j]=='\0')
 				{
 					if(i==0)
-						printf("%d",j);
+						my_printf("%d",j);
 					else
-						printf(",%d",j);
+						my_printf(",%d",j);
 				    break;
 				}
 			}
@@ -25,5 +25,5 @@ main_bench()
 		if(s[i]=='\0')
 			break;
 	}
-	printf("\n");
+	my_printf("\n");
 }

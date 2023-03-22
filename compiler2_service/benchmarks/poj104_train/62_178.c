@@ -13,7 +13,7 @@ int main_bench()
   
          }
    ss[j]='\0';
-    printf("%s",ss);
+    my_printf("%s",ss);
     getchar();
     getchar();
     

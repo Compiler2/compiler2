@@ -5,9 +5,9 @@ int main_bench()
 	int i,n,num[300],s,j,b,c;
 	double ave,v[300],a;
 	s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		s+=num[i];
 	}
 	ave=(double)s/n;
@@ -36,7 +36,7 @@ int main_bench()
 			num[i]=num[j];
 			num[j]=c;
 		}
-	printf("%d",num[0]);
+	my_printf("%d",num[0]);
 	for(i=0;i<n-1;i++){
 		if(v[i]==v[i+1]&&num[i]>num[i+1]){
 			c=num[i];
@@ -47,11 +47,11 @@ int main_bench()
 			break;
 		}
 		
-		printf(",%d",num[i+1]);
+		my_printf(",%d",num[i+1]);
 		
 		
 	}
-	printf("\n");
+	my_printf("\n");
 	
 	return 0;
 }

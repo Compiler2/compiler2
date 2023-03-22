@@ -6,8 +6,8 @@ int main_bench()
 	int qian(int a,int b,int c);
 	int hou(int a,int b,int c);
 	int a,b,c,d,e,f,g,k;
-	scanf("%d%d%d\n",&a,&b,&c);
-	scanf("%d%d%d",&d,&e,&f);
+	my_scanf("%d%d%d\n",&a,&b,&c);
+	my_scanf("%d%d%d",&d,&e,&f);
 	g=d-a;
 	k=nian(a,g);
 	if(g!=0)
@@ -17,7 +17,7 @@ int main_bench()
 	{k=k+hou(d,e,f);
 	k=k-hou(a,b,c);
 	}
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 }
 	
 int nian(int a,int b)

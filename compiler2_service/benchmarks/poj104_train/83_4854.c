@@ -15,18 +15,18 @@ int main_bench()
 	int n;
 	double t;
 	double a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-	scanf("%lf",&xf[i]);
+	my_scanf("%lf",&xf[i]);
 	sumxf=sumxf+xf[i];
 	
 	}
 	
 	for(i=0;i<n;i++)
 	{
-	scanf("%lf",&cj[i]);
+	my_scanf("%lf",&cj[i]);
 	t=cj[i];
 	if(t>=90)
 		jd[i]=4.0;
@@ -67,7 +67,7 @@ int main_bench()
 	}
 	GPA=p/sumxf;
 
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 
 	
 

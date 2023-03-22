@@ -5,9 +5,9 @@ int main_bench(){
 	k=0;
 	t=0;
 	p=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if((a[i]==0&&b[i]==1)||(a[i]==1&&b[i]==2)||(a[i]==2&&b[i]==0)){
 			k++;
 		}else if(a[i]==b[i]){
@@ -17,11 +17,11 @@ int main_bench(){
 		}
     }
 	if(k>p){
-		printf("A");
+		my_printf("A");
 	}else if(k==p){
-		printf("Tie");
+		my_printf("Tie");
 	}else{
-		printf("B");
+		my_printf("B");
 	}
 	return 0;
 }

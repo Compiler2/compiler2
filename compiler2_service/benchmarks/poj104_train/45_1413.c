@@ -4,7 +4,7 @@ int main_bench()
 {
 	char sho[100],lo[100];
 	int i,sl,l,k,j,g,h=0;
-	scanf("%s%s",sho,lo);
+	my_scanf("%s%s",sho,lo);
 	sl=strlen(sho);
 	l=strlen(lo);
     for(j=0;j<l;j++)
@@ -22,7 +22,7 @@ int main_bench()
 						h++;
 						if(h==1)
 						{
-					       printf("%d",g);
+					       my_printf("%d",g);
 						}
 						else if(h>1)
 						{

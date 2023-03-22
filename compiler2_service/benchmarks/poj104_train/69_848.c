@@ -4,8 +4,8 @@ char a[252],b[252],c[252];
 int main_bench()
 {
 	int la,lb,i,j,k=0;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	la=strlen(a);
 	lb=strlen(b);
 	j=la;
@@ -31,7 +31,7 @@ int main_bench()
 	}
 	for(i=0;c[i]=='0'&&i<250;i++);
 	for(;i<251;i++)
-		printf("%c",c[i]);
-	printf("\n");
+		my_printf("%c",c[i]);
+	my_printf("\n");
 	return 0;
 }

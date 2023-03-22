@@ -16,14 +16,14 @@ int fun(int x)
 main_bench()
 {
    int m,n,k,i;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    n=m/2;
    k=(n+1)/2;
    for(i=2;i<=k;i++)
    {
       int c=2*i-1;
       if(fun(c)==1&&fun(m-c)==1)
-         printf("%d %d\n",c,m-c);                         
+         my_printf("%d %d\n",c,m-c);                         
    }
    getchar();
    getchar();

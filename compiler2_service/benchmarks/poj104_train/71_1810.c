@@ -4,11 +4,11 @@
 int main_bench()
 {
     int n, e, i, j, y, m1, m2, rlt;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(i=0;i<n;i++)
     {
         int d1=0, d2=0;
-        scanf("%d %d %d", &y, &m1, &m2);
+        my_scanf("%d %d %d", &y, &m1, &m2);
         
         if(m1<m2)
         {
@@ -60,9 +60,9 @@ int main_bench()
         rlt=(d1-d2)%7;
         if(rlt==0)
         {
-            printf("YES\n");
+            my_printf("YES\n");
         }else{
-            printf("NO\n");
+            my_printf("NO\n");
         }
     }
 

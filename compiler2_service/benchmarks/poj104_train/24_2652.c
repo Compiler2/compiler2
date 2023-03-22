@@ -7,10 +7,10 @@ int main_bench()
 	char e[100];
 	char c[100][100];
 	char d[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c[i]);
+		my_scanf("%s",c[i]);
 		strcpy(d[i],c[i]);
 		a[i]=strlen(c[i]);
 		b[i]=a[i];
@@ -27,27 +27,27 @@ int main_bench()
 		}
 	}
 	if(a[0]>a[1])
-		printf("%s\n",d[0]);
+		my_printf("%s\n",d[0]);
 	else
 	{
 		for(i=0;i<n;i++)
 		{
 			if(b[i]==a[0])
 			{
-				printf("%s\n",c[i]);
+				my_printf("%s\n",c[i]);
 				break;
 			}
 		}
 	}
 	if(a[n-1]<a[n-2])
-		printf("%s\n",d[n-1]);
+		my_printf("%s\n",d[n-1]);
 	else
 	{
 		for(i=0;i<n;i++)
 		{
 			if(b[i]==a[n-1])
 			{
-				printf("%s\n",c[i]);
+				my_printf("%s\n",c[i]);
 				break;
 			}
 		}

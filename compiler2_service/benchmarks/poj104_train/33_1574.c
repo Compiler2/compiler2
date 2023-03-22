@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n;
 	char lian[1000][260];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(int i=0;i<n;i++){
-		scanf("%s", lian[i]);
+		my_scanf("%s", lian[i]);
 		int m=0;
 		while(lian[i][m]!='\0'){
 			if(lian[i][m]=='A'){
@@ -23,7 +23,7 @@ int main_bench()
 			}
 			m++;
 		}
-		printf("%s\n", lian[i]);
+		my_printf("%s\n", lian[i]);
 	}
 	return 0;
 }

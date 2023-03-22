@@ -3,11 +3,11 @@
 main_bench()
 {
 	int N;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int i,j,a[10000],n=0;
     int love;
     if(N<5)
-    printf("empty");
+    my_printf("empty");
     else
     {
     for(i=3;i<=N;i++)
@@ -33,7 +33,7 @@ main_bench()
     	for(m=k+1;m<n;m++)
     	{
 		if(a[m]-a[k]==2)
-    	printf("%d %d\n",a[k],a[m]);
+    	my_printf("%d %d\n",a[k],a[m]);
     }}
 	}
 }

@@ -6,11 +6,11 @@ int main_bench()
 {
 	int t,rd,check=0,output=0;
 	char str[100001],*p,*pm;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(rd=0;rd<t;rd++)
 	{
 		output=0;
-		scanf("%s",str);
+		my_scanf("%s",str);
 		p=str;
 		for(;p<(str+strlen(str));p++)
 		{
@@ -29,7 +29,7 @@ int main_bench()
 			}
 			if(pm==str+strlen(str))
 			{
-				printf("%c\n",*p);
+				my_printf("%c\n",*p);
 				check=0;
 				output++;
 				break;
@@ -37,7 +37,7 @@ int main_bench()
 		}
 		if(output==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

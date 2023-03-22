@@ -12,10 +12,10 @@ int money;
 int main_bench()
 {
 	int n,i,j,sum=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n-1;i++)
-		scanf("%s %d %d %c %c %d\n",&stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].gan,&stu[i].west,&stu[i].thesis);
-	scanf("%s %d %d %c %c %d",&stu[n-1].name,&stu[n-1].final,&stu[n-1].cla,&stu[n-1].gan,&stu[n-1].west,&stu[n-1].thesis);
+		my_scanf("%s %d %d %c %c %d\n",&stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].gan,&stu[i].west,&stu[i].thesis);
+	my_scanf("%s %d %d %c %c %d",&stu[n-1].name,&stu[n-1].final,&stu[n-1].cla,&stu[n-1].gan,&stu[n-1].west,&stu[n-1].thesis);
 	for(i=0;i<n;i++)
 		stu[i].money=0;
 	for(i=0;i<n;i++)
@@ -46,7 +46,7 @@ int main_bench()
 	{
 		sum=sum+stu[i].money;
 	}
-	printf("%s\n",stu[0].name);
-	printf("%d\n",stu[0].money);
-	printf("%d\n",sum);
+	my_printf("%s\n",stu[0].name);
+	my_printf("%d\n",stu[0].money);
+	my_printf("%d\n",sum);
 }

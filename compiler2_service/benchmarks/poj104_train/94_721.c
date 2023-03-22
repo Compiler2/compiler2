@@ -5,10 +5,10 @@
 int main_bench()
 {
     int N,i,j=0,k,sz[500],result[500],e;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N;i++)
     {
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
         if(sz[i]%2==1)
         {
             result[j]=sz[i];
@@ -27,7 +27,7 @@ int main_bench()
             }
         }
     }
-    for(i=0;i<j-1;i++) printf("%d,",result[i]);
-    printf("%d",result[j-1]);
+    for(i=0;i<j-1;i++) my_printf("%d,",result[i]);
+    my_printf("%d",result[j-1]);
     return 0;
 }

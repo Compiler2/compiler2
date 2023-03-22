@@ -7,11 +7,11 @@ int main_bench(){
 
 
 
-    scanf("%lf",&n);
-    scanf("%s%s",&a,&b);
+    my_scanf("%lf",&n);
+    my_scanf("%s%s",&a,&b);
 
     if(strlen(a)!=strlen(b)){
-        printf("error");
+        my_printf("error");
         }
     else{
         for(i=0;i<strlen(a);i++){
@@ -23,16 +23,16 @@ int main_bench(){
                     }
         }
         if(SUM!=0){
-            printf("error");
+            my_printf("error");
             }
         else{
             m=strlen(a);
             e=(double)sum/m;
             if(e>n){
-                printf("yes");
+                my_printf("yes");
                 }
             else{
-                printf("no");
+                my_printf("no");
                 }
         }
     }

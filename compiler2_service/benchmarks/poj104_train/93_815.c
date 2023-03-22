@@ -3,25 +3,25 @@
 int main_bench()
 {
 	int a,b,c,m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	a=m%3;
 	b=m%5;
 	c=m%7;
 	if(a==0&&b==0&&c==0)
-		printf("%d %d %d",3,5,7);
+		my_printf("%d %d %d",3,5,7);
 	else if(a==0&&b==0&&c!=0)
-		printf("%d %d",3,5);
+		my_printf("%d %d",3,5);
 	else if(a==0&&b!=0&&c==0)
-		printf("%d %d",3,7);
+		my_printf("%d %d",3,7);
 	else if(a!=0&&b==0&&c==0)
-		printf("%d %d",5,7);
+		my_printf("%d %d",5,7);
 	else if(a==0&&b!=0&&c!=0)
-		printf("%d",3);
+		my_printf("%d",3);
 	else if(a!=0&&b==0&&c!=0)
-		printf("%d",5);
+		my_printf("%d",5);
 	else if(a!=0&&b!=0&&c==0)
-		printf("%d",7);
+		my_printf("%d",7);
 	else
-	printf("n");
+	my_printf("n");
 	return 0;
 }

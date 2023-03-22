@@ -8,9 +8,9 @@ int main_bench()
 {
 	int n,i,j,a,b,c;
 	char cc,aa,x[1000],y[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s%c%d%c",st[i].id,&aa,&st[i].old,&cc);}
+		my_scanf("%s%c%d%c",st[i].id,&aa,&st[i].old,&cc);}
 	a=0;
 	for(j=1;j<=n;j++){
 		if(st[j].old>=60){

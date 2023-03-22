@@ -28,6 +28,6 @@ int main_bench(){
 				}
 			}
 		}
-		printf("%d\n",check);
+		my_printf("%d\n",check);
 	}
 }

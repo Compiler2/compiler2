@@ -4,14 +4,14 @@ int main_bench()
 {
 	void inv(int x[],int b);
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int i,a[100];
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	inv(a,n);
 	for(i=0;i<n-1;i++)
-	{	printf("%d ",a[i]); }
-	printf("%d",a[n-1]);
+	{	my_printf("%d ",a[i]); }
+	my_printf("%d",a[n-1]);
 }
 void inv(int x[],int b)
 {

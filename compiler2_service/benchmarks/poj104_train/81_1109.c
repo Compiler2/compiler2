@@ -7,9 +7,9 @@ int change()
 	 int z[5];
 	    for(k=0;k<5;k++)
    {
-	   for(l=0;l<5;l++) scanf("%d",&j[k][l]);
+	   for(l=0;l<5;l++) my_scanf("%d",&j[k][l]);
    }
-   scanf("%d%d",&m,&n);
+   my_scanf("%d%d",&m,&n);
      if(m<0||m>4||n<0||n>4) return 0;
 	 else
 	 {
@@ -24,14 +24,14 @@ int main_bench()
 {
    int fh,k,l;
    fh=change();
-   if(fh==0) printf("error");
+   if(fh==0) my_printf("error");
    else
    {
 	for(k=0;k<5;k++)
    {
-		printf("%d",j[k][0]);
-		for(l=1;l<5;l++) printf(" %d",j[k][l]);
-	   printf("\n");
+		my_printf("%d",j[k][0]);
+		for(l=1;l<5;l++) my_printf(" %d",j[k][l]);
+	   my_printf("\n");
    }
    }
 }

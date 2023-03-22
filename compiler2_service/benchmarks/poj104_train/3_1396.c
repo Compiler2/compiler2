@@ -5,11 +5,11 @@ int main_bench()
 int a[1000];
 int n,k,l;
 l=0;
-scanf("%d%d",&n,&k);
+my_scanf("%d%d",&n,&k);
 int j,e,ok,i;
 ok=0;
 for(i=0;i<n;i++){
-	scanf("%d",&a[i]);}
+	my_scanf("%d",&a[i]);}
 for(i=0;i<n;i++){
 	for(j=1;j<n;j++){
 		if((a[0]+a[j])==k){ok=1;}
@@ -19,7 +19,7 @@ for(i=0;i<n;i++){
 	a[l]=e;
 	l++;
 	}
-if(ok==1){printf("yes");}
-else{printf("no");}
+if(ok==1){my_printf("yes");}
+else{my_printf("no");}
 	return 0;
 }

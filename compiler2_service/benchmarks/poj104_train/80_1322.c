@@ -5,7 +5,7 @@ main_bench()
 {
   int y1,m1,d1,y2,m2,d2;
   int D1=0,D2=0,D=0,y,m,d;
-  scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+  my_scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
   
   y=y1+1;
   while(y>=y1+1&&y<=y2-1)
@@ -69,5 +69,5 @@ main_bench()
     D=D+D2+366-D1;
     else D=D+D2+365-D1;
   }
-  printf("%d\n",D);
+  my_printf("%d\n",D);
 }

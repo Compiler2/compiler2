@@ -4,19 +4,19 @@ int main_bench(){
   int len1,len2,i,same=0;
   double rate,z;
   char DNA[2][600];
-  scanf("%lf",&rate);
-  scanf("%s %s",DNA[0],DNA[1]);
+  my_scanf("%lf",&rate);
+  my_scanf("%s %s",DNA[0],DNA[1]);
 
  len1=strlen(DNA[0]);
  len2=strlen(DNA[1]);
  if(len1!=len2){
-	 printf("error");
+	 my_printf("error");
 	 return 0;
  }
  else{
  for(i=0;i<len1;i++){
 	 if(((DNA[0][i]!='A')&&(DNA[0][i]!='G')&&(DNA[0][i]!='C')&&(DNA[0][i]!='T'))||((DNA[1][i]!='A')&&(DNA[1][i]!='G')&&(DNA[1][i]!='C')&&(DNA[1][i]!='T'))){
-		 printf("error");
+		 my_printf("error");
 		 return 0;
 	 }
 	 else{
@@ -26,8 +26,8 @@ int main_bench(){
  }
 z=(1.0*same)/len1;
 if(z>=rate)
-printf("yes");
-else printf("no");
+my_printf("yes");
+else my_printf("no");
 
  }
 return 0;

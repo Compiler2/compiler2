@@ -8,23 +8,23 @@ int main_bench()
     int end = 0;   
     char word[80];
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i = 0; i < n; i++) {
-        scanf("%s", word);
+        my_scanf("%s", word);
         len = strlen(word);
         
         if (end + len + 1 > 80) {
-            printf("\n");
+            my_printf("\n");
             end = 0;
         }
         else {
             
             if (i > 0) {
-                printf(" ");
+                my_printf(" ");
                 end++;
             }
         }
-        printf("%s", word);
+        my_printf("%s", word);
         end += len;
     }
     return 0;

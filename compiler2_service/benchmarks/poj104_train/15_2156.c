@@ -6,10 +6,10 @@ int main_bench()
 	int a;
 	int i, j;
 	int a1, b1, a2, b2;
-	scanf("%d", &a);
+	my_scanf("%d", &a);
 	for (i = 0; i < a; i ++)
 		for (j = 0; j < a; j ++){
-			scanf("%d", &c[i][j]);
+			my_scanf("%d", &c[i][j]);
 		}
 	i=0;
 	for (i = 0; i < a; i ++){
@@ -24,6 +24,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n", (a2-a1-1)*(b2-b1-1));
+	my_printf("%d\n", (a2-a1-1)*(b2-b1-1));
 	return 0;
 }

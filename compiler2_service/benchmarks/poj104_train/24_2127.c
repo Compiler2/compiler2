@@ -30,6 +30,6 @@ int main_bench()
 		if(length[min]>length[i])
 			min=i;
 	}
-	printf("%s\n%s\n",str[max],str[min]);
+	my_printf("%s\n%s\n",str[max],str[min]);
 	return 0;
 }

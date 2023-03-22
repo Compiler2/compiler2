@@ -5,23 +5,23 @@ main_bench()
 	int N(int y);
 	int Z(int y);
 	int m,n,y,a,b;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	y=m;
 	a=N(y);	b=Z(y);
     
 	while((a!=y || b!=1) && y<=n) 
 	{ y=y+1;a=N(y);	b=Z(y);}
-	if(y==n+1) printf("no");
-	else printf("%d",y);
+	if(y==n+1) my_printf("no");
+	else my_printf("%d",y);
 	  m=y;
 	for(y=m+1;y<=n;y++) 
 	{
 		a=N(y);	b=Z(y);
 		if(a==y && b==1) 
-		{printf(",%d",y);}
+		{my_printf(",%d",y);}
 	}
 	
-	printf("\n");
+	my_printf("\n");
 }
 
 

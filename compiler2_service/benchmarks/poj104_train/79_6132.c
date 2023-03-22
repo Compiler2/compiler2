@@ -13,7 +13,7 @@ int main_bench()
 	int n,m;
 	while(1)
 	{
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n==0) 
 			break;
 		head=(struct node *)malloc(sizeof(struct node));
@@ -33,7 +33,7 @@ int main_bench()
 				p1=p1->next;
 			p1->next=p1->next->next;
 		}
-		printf("%d\n",p1->a);
+		my_printf("%d\n",p1->a);
 	}
 
 }

@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int a[100][100],b[100][100],j,q,k,i,n,m,row,col;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
               
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
-         scanf("%d",&a[i][j]);
+         my_scanf("%d",&a[i][j]);
 		}
 	}
 	
@@ -21,19 +21,19 @@ int main_bench()
 			
 i=0;
 for(j=0;j<col-1;j++)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=col-1;
 for(i=0;i<row-1;i++)
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 i=row-1;
 for(j=col-1;j>0;j--)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=0;
 for(i=row-1;i>0;i--)
-printf("%d\n",a[i][j]); 
+my_printf("%d\n",a[i][j]); 
 	  
 	  	  
 	  for(i=1,n=0;i<row-1;i++,n++){
@@ -60,19 +60,19 @@ row=row-2;
 			
 i=0;
 for(j=0;j<col-1;j++)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=col-1;
 for(i=0;i<row-1;i++)
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 i=row-1;
 for(j=col-1;j>0;j--)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=0;
 for(i=row-1;i>0;i--)
-printf("%d\n",a[i][j]);  
+my_printf("%d\n",a[i][j]);  
 	  
 	  	  
 	  for(i=1,n=0;i<row-1;i++,n++){
@@ -90,7 +90,7 @@ col=col-2;
 row=row-2;
 		}
 		for(i=0;i<row;i++)
-           printf("%d\n",a[i][0]) ;
+           my_printf("%d\n",a[i][0]) ;
 		}
 	}
 
@@ -103,19 +103,19 @@ row=row-2;
 			
 i=0;
 for(j=0;j<col-1;j++)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=col-1;
 for(i=0;i<row-1;i++)
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 i=row-1;
 for(j=col-1;j>0;j--)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=0;
 for(i=row-1;i>0;i--)
-printf("%d\n",a[i][j]); 
+my_printf("%d\n",a[i][j]); 
 	  
 	  	  
 	  for(i=1,n=0;i<row-1;i++,n++){
@@ -142,19 +142,19 @@ row=row-2;
 			
 i=0;
 for(j=0;j<col-1;j++)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=col-1;
 for(i=0;i<row-1;i++)
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 i=row-1;
 for(j=col-1;j>0;j--)     
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 
 j=0;
 for(i=row-1;i>0;i--)
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 	  
 	  	  
 	  for(i=1,n=0;i<row-1;i++,n++){
@@ -172,7 +172,7 @@ col=col-2;
 row=row-2;
 		}
 		for(j=0;j<col;j++)
-           printf("%d\n",a[0][j]) ;
+           my_printf("%d\n",a[0][j]) ;
 		}
 	}
 		 

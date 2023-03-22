@@ -4,14 +4,14 @@ int main_bench(){
     int n,m,a,b,i,s=0;
     char p[200][200];
     char q[200][200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(a=1;a<n+1;a++){
         for(b=1;b<n+1;b++){
-            scanf(" %c",&p[a][b]);
+            my_scanf(" %c",&p[a][b]);
             q[a][b]=p[a][b];
         }
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<n+2;i++){p[0][i]='#';p[n+1][i]='#';p[i][0]='#';p[i][n+1]='#';}
     for(i=1;i<m;i++){
         for(a=1;a<n+1;a++){
@@ -26,6 +26,6 @@ int main_bench(){
         }
     }
     for(a=1;a<n+1;a++){for(b=1;b<n+1;b++){if(p[a][b]=='@'){s=s+1;}}}
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

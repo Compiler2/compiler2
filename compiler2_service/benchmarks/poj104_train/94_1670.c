@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int N,sz[500],i,s[500],k,max,e,f=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	k=0;
 	for(i=0;i<N;i++){
@@ -26,9 +26,9 @@ int main_bench(){
 		s[k-f]=e;
 		}
 	}
-	printf("%d",s[0]);
+	my_printf("%d",s[0]);
 	for(i=1;i<=k-1;i++){
-		printf(",%d",s[i]);
+		my_printf(",%d",s[i]);
 	}
 	return 0;
 }

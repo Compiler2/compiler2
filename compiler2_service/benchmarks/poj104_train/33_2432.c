@@ -15,14 +15,14 @@ char swap(char x){
 int main_bench(){
 	int n,i,j,len;
 	char str[50000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",str);
+		my_scanf("%s",str);
 		len=strlen(str);
 		for(j=0;j<len;j++){
 			str[j]=swap(str[j]);
 		}
-		printf("%s\n",str);
+		my_printf("%s\n",str);
 	}
 	return 0;
 }

@@ -15,11 +15,11 @@ main_bench()
     int n,i,j,day,t;
     int ye,m1,m2;
     int days[2][12]={31,28,31,30,31,30,31,31,30,31,30,31,31,29,31,30,31,30,31,31,30,31,30,31};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         day=0;
-        scanf("%d%d%d",&ye,&m1,&m2);
+        my_scanf("%d%d%d",&ye,&m1,&m2);
         if(m1>m2)
         {
             t=m1;
@@ -35,8 +35,8 @@ main_bench()
             for(j=m1-1;j<m2-1;j++)
                 day=day+days[0][j];   
         if(day%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
         else
-            printf("NO\n");
+            my_printf("NO\n");
     }
 } 

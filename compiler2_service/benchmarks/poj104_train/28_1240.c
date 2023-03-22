@@ -14,10 +14,10 @@ main_bench()
                              else
                              {
                              if(b[j]!=0)
-                             printf("%d,",b[j]);
+                             my_printf("%d,",b[j]);
                              j++;
                              }
       }
-      printf("%d",b[j]);
+      my_printf("%d",b[j]);
     
 }

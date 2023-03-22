@@ -7,8 +7,8 @@ int main_bench()
 	char ch;
 	for (i=0;;i++)
 	{
-		scanf ("%d",&a[i]);
-		scanf ("%c",&ch);
+		my_scanf ("%d",&a[i]);
+		my_scanf ("%c",&ch);
 		if (ch==',')
 			continue;
 		else
@@ -19,8 +19,8 @@ int main_bench()
 	}
 	for (i=0;;i++)
 	{
-		scanf ("%d",&b[i]);
-		scanf ("%c",&ch);
+		my_scanf ("%d",&b[i]);
+		my_scanf ("%c",&ch);
 		if (ch==',')
 			continue;
 		else
@@ -37,5 +37,5 @@ int main_bench()
 			max=cal;
 		cal=0;
 	}
-	printf ("%d %d",n+1,max);
+	my_printf ("%d %d",n+1,max);
 }

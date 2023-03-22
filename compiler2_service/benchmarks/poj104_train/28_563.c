@@ -24,7 +24,7 @@ int main_bench()
     sum=strlen(words[0]);
     if(sum!=0)
     {
-    printf("%d",sum);}
+    my_printf("%d",sum);}
     for(i=1;i<n;i++)
     {
       int result=0;  
@@ -34,7 +34,7 @@ int main_bench()
         continue;}
       if(result!=0)
       {
-      printf(",%d",result);}
+      my_printf(",%d",result);}
     }
     return 0;
 }

@@ -20,11 +20,11 @@ int main_bench()
 			s2[i]=s2[i]-'a'+'A';
 	}
 	if(strcmp(s1,s2)>0)
-		printf(">");
+		my_printf(">");
     if(strcmp(s1,s2)<0)
-		printf("<");
+		my_printf("<");
     if(strcmp(s1,s2)==0)
-		printf("=");
+		my_printf("=");
 	return 0;
 }
 

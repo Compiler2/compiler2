@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,n,len;
 	char s[81];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++)
 	{
 		int flag=0;
@@ -18,7 +18,7 @@ int main_bench()
 			      flag=1;
                else
 		   	   {
-               	   printf("%d\n",flag);
+               	   my_printf("%d\n",flag);
                	   break;
                }
 			}
@@ -29,12 +29,12 @@ int main_bench()
 				 else
 			 	 {
  					flag=0;
- 					printf("%d\n",flag);
+ 					my_printf("%d\n",flag);
  					break;
  				 }			     	   
 			 }
 		 if(j==len-1)
-           printf("%d\n",flag);
+           my_printf("%d\n",flag);
 		}
 	}
 }

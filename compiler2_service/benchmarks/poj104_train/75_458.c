@@ -11,7 +11,7 @@ int main_bench()
 
 	i = 0;
 	while( 1 ){
-		scanf( "%d" , &r1[i++] );
+		my_scanf( "%d" , &r1[i++] );
 		c = getchar();
 		if( c == ',' )
 			continue;
@@ -20,7 +20,7 @@ int main_bench()
 	}
 	i = 0;
 	while( 1 ){
-		scanf( "%d" , &r2[i++] );
+		my_scanf( "%d" , &r2[i++] );
 		c = getchar();
 		if( c == ',' )
 			continue;
@@ -44,7 +44,7 @@ int main_bench()
 			max = in[i];
 	}
 
-	printf("%d %d\n" , ren , max );
+	my_printf("%d %d\n" , ren , max );
 
 
 

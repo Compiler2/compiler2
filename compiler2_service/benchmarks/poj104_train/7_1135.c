@@ -12,9 +12,9 @@ int main_bench()
 {
 	int i,j,p,changdu1,changdu2,changdu3,m;
 	char x[256]={0},y[256]={0},z[513]={0},media[256][256]={0};
-	scanf("%s",x);
-	scanf("%s",y);
-	scanf("%s",z);
+	my_scanf("%s",x);
+	my_scanf("%s",y);
+	my_scanf("%s",z);
 	changdu1=strlen(x);
 	changdu2=strlen(y);
 	changdu3=strlen(z);
@@ -37,7 +37,7 @@ int main_bench()
 		if(i==changdu1-changdu2+1)
         
         {
-            printf("%s",x);
+            my_printf("%s",x);
             return 0;
         }
 		else
@@ -46,20 +46,20 @@ int main_bench()
 			if(p!=0)
 			{
 				for(i=0;i<p;i++)
-					printf("%c",x[i]);
-				printf("%s",media[p]);
+					my_printf("%c",x[i]);
+				my_printf("%s",media[p]);
 				if(changdu2>changdu3)m=changdu2;
 				else m=changdu3;
 				for(i=p+m;i<changdu1;i++)
-					printf("%c",x[i]);
-				printf("\n");
+					my_printf("%c",x[i]);
+				my_printf("\n");
 			}
 			else
 			{
-				printf("%s",media[p]);
+				my_printf("%s",media[p]);
 				for(i=p+changdu3;i<changdu1;i++)
-					printf("%c",x[i]);
-				printf("\n");
+					my_printf("%c",x[i]);
+				my_printf("\n");
 			}
 			
 		}

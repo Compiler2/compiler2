@@ -3,7 +3,7 @@
 int main_bench(){
 	int N,i,k,flag;
 	char a[100];
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 	for(i=0;i<N;i++){
 		gets(a);
 		flag=1;
@@ -16,8 +16,8 @@ int main_bench(){
 				}
 			}
 		else flag=0;
-		if(flag==0) printf("no\n");
-		if(flag==1) printf("yes\n");
+		if(flag==0) my_printf("no\n");
+		if(flag==1) my_printf("yes\n");
 	}
 	return 0;
 }

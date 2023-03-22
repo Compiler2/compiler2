@@ -5,7 +5,7 @@ int main_bench()
 {
 	int m,i,j;
 	int n[100]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	double a1=2;
 	double a2=3;
@@ -16,9 +16,9 @@ int main_bench()
 	double sum;
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
-		if(n[i]==1) printf("%.3lf\n",(a1/b1));
-		if(n[i]==2) printf("%.3lf\n",(a1/b1)+(a2/b2));
+		my_scanf("%d",&n[i]);
+		if(n[i]==1) my_printf("%.3lf\n",(a1/b1));
+		if(n[i]==2) my_printf("%.3lf\n",(a1/b1)+(a2/b2));
 		if(n[i]>2)
 		{
 			sum=(a1/b1)+(a2/b2);
@@ -40,7 +40,7 @@ int main_bench()
 				b3=b2;
 				b2=slot;
 			}
-			printf("%.3lf\n",sum);
+			my_printf("%.3lf\n",sum);
 			a1=2;
 			a2=3;
 			b1=1;

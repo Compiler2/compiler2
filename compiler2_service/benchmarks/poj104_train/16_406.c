@@ -3,7 +3,7 @@
 int main_bench()
 {
        int number,ge,shi,bai,qian,wan,place;
-	scanf("%d",&number);
+	my_scanf("%d",&number);
 	if(number>=10000)
 		place=5;
 	else
@@ -32,11 +32,11 @@ int main_bench()
 
 	switch(place)
 	{
-     case 5:printf("%d%d%d%d%d",ge,shi,bai,qian,wan);break;
-     case 4:printf("%d%d%d%d",ge,shi,bai,qian);break;
-     case 3:printf("%d%d%d",ge,shi,bai);break;
-     case 2:printf("%d%d",ge,shi);break;
-     case 1:printf("%d",ge);
+     case 5:my_printf("%d%d%d%d%d",ge,shi,bai,qian,wan);break;
+     case 4:my_printf("%d%d%d%d",ge,shi,bai,qian);break;
+     case 3:my_printf("%d%d%d",ge,shi,bai);break;
+     case 2:my_printf("%d%d",ge,shi);break;
+     case 1:my_printf("%d",ge);
      }
      return 0;
 }

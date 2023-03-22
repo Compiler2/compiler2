@@ -29,7 +29,7 @@ main_bench()
     {
         for(int j=0;j<5;j++)
         {
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
         }
     }
     for(int i=0;i<5;i++)
@@ -38,11 +38,11 @@ main_bench()
         {
             if(a[i][j]==rowmax(a[i])&&a[i][j]==linemin(a[0][j],a[1][j],a[2][j],a[3][j],a[4][j]))
             {
-                printf("%d %d %d\n",i+1,j+1,a[i][j]);
+                my_printf("%d %d %d\n",i+1,j+1,a[i][j]);
                 count++;
             }
         }
     }
     if(count==0)
-       printf("not found\n");
+       my_printf("not found\n");
 }

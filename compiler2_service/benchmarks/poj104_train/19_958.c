@@ -5,7 +5,7 @@ int main_bench()
     int i,j=0,m=0;
     char a[100],b[100],c[100];
     gets(a);
-    scanf("%s%s",b,c);
+    my_scanf("%s%s",b,c);
 
     for(i=0;;i++)
     {  
@@ -22,7 +22,7 @@ int main_bench()
                  else if(b[j]=='\0'&&(a[i+j]==' '||a[i+j]=='\0')&&(a[i-1]==' '||i==0))
                  {
                       j=0;
-                      printf("%s",c);
+                      my_printf("%s",c);
                       i+=strlen(b)-1;
                       break;
                       }
@@ -31,7 +31,7 @@ int main_bench()
                   j=0;
 				  if(a[i]=='\0')
 					  break;
-               else    printf("%c",a[i]);
+               else    my_printf("%c",a[i]);
                   break;
                     }
                  }
@@ -42,7 +42,7 @@ int main_bench()
                          
     }
 if(b[j]=='\0')
-                      printf("%s",c);
+                      my_printf("%s",c);
                 
 
 

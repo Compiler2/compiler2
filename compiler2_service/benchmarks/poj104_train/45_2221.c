@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char  s[256],zfc[256][256],w[256];
-    scanf("%s",s);
-	scanf("%s",w);
+    my_scanf("%s",s);
+	my_scanf("%s",w);
 	int n=strlen(s),m=strlen(w),i=0,j=0;
 	for(;i<=m-n;){
 		for(j=0;j<n;j++){	
@@ -15,7 +15,7 @@ int main_bench()
 	}
 	for(j=0;j<i;j++){
 		if(strcmp(zfc[j],s)==0){
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 			break;}
 	}
 	return 0;

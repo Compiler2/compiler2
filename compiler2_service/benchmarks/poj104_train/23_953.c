@@ -31,12 +31,12 @@ int main_bench()
 	{
 		for(k=b[p]+1;(a[k]!=' ')&&(a[k]!='\0');k++)
 		{
-			printf("%c",a[k]);
+			my_printf("%c",a[k]);
 		}
 	
 			if(num!=0)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 			num--;
 	}
@@ -45,7 +45,7 @@ int main_bench()
 	k=0;
 	while(k<b[0])
 	{
-		printf("%c",a[k]);
+		my_printf("%c",a[k]);
 		k++;
 	}
 

@@ -5,12 +5,12 @@ main_bench()
 {   int cn(int x,int y);
     int i,q,p, m[2000],n[2000];
     for(i=1;i<=999;i++)
-    {scanf("%d %d",&n[i],&m[i]);
+    {my_scanf("%d %d",&n[i],&m[i]);
     q=q+1;
     if(n[i]==0&&m[i]==0)
     break;
    if (n[i]==1)
-    printf("1\n");
+    my_printf("1\n");
     else 
     cn(n[i],m[i]);
 }
@@ -45,7 +45,7 @@ main_bench()
             for(i=1;i<=x;i++)
             {if(d[1][i]==1)
             { p=i;
-             printf("%d\n",i);
+             my_printf("%d\n",i);
             break;}}
         
         }

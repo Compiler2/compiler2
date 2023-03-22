@@ -4,26 +4,26 @@ int main_bench()
 {
     char word[1000][40];
     int number,count=0,i;
-    scanf("%d",&number);
-    for(i=0;i<number;i++)scanf("%s",word[i]);
+    my_scanf("%d",&number);
+    for(i=0;i<number;i++)my_scanf("%s",word[i]);
     for(i=0;i<number;i++)
     {
         if(count+strlen(word[i])+1<=80)
         {
             if(i==0)
             {
-                printf("%s",word[i]);
+                my_printf("%s",word[i]);
                 count+=strlen(word[i]);
             }
             else
             {
-                printf(" %s",word[i]);
+                my_printf(" %s",word[i]);
                 count+=strlen(word[i])+1;
             }
         }
         else
         {
-            printf("\n%s",word[i]);
+            my_printf("\n%s",word[i]);
             count=strlen(word[i]);
         }
     }

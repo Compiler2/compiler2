@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a,b,cout=0,r=0,sz[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a>=90&&a<=140&&b>=60&&b<=90)
 		{
 			sz[r]++;
@@ -19,6 +19,6 @@ int main_bench()
 		if(sz[j]>max)
 			max=sz[j];
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }

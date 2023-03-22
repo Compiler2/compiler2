@@ -38,7 +38,7 @@ for(i=0;i<l;i++){
 	}
 }
       
-          printf("%s",zf);
+          my_printf("%s",zf);
 
 return 0;
 }

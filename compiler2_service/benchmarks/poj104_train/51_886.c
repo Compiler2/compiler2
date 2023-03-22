@@ -5,7 +5,7 @@ int main_bench(){
 	char s[505],temp[6];
 	char an[505][6];
 	int bn[505]={0};
-	scanf("%d%s",&n,s);
+	my_scanf("%d%s",&n,s);
 	int len=strlen(s);
 	int count=1,i,j;
 	for(i=0;i<n;i++){
@@ -34,13 +34,13 @@ int main_bench(){
 		if(bn[i]>max)max=bn[i];
 	}
 	if(max==1){
-		printf("NO");
+		my_printf("NO");
 	}
 	else{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<count;i++){
 			if(bn[i]==max){
-				printf("%s\n",an[i]);
+				my_printf("%s\n",an[i]);
 			}
 		}
 	}

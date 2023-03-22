@@ -108,7 +108,7 @@ int main_bench()
 {
 	char c[4]={0};
 	int t,w,year,month,day,x;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	if((year%400)==0)
 		t=0;
 	else if((year%100)==0)
@@ -148,5 +148,5 @@ int main_bench()
 	{
 		strcpy(c,"Sun");
 	}
-	printf("%s.\n",c);
+	my_printf("%s.\n",c);
 }

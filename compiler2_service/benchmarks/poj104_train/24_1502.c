@@ -42,7 +42,7 @@ int main_bench()
 				MIN=i+1;
 		}
 	puts(word[MAX]);
-	printf("\n");
+	my_printf("\n");
 	puts(word[MIN]);
 	return 0;
 }

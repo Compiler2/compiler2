@@ -4,12 +4,12 @@ int main_bench()
 {
     int n,i,j,k,b,t;
     int a[20000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     k=0;
     for (i=0;i<n;i++)
     {
         j=1;
-        scanf("%d",&b);
+        my_scanf("%d",&b);
         for (t=0;t<k;t++)
         {
             if (b==a[t])
@@ -20,9 +20,9 @@ int main_bench()
             a[k]=b;
             k++;
             if (k==1)
-               printf("%d",b);
+               my_printf("%d",b);
             else
-               printf(" %d",b);
+               my_printf(" %d",b);
         }
     }
     getchar();

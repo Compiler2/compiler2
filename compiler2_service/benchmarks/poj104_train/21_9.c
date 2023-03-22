@@ -14,9 +14,9 @@ int main_bench()
 {
 	int n,a[300],i,num;
 	float avr,b[300],t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	avr=average(a,n);
 	for(i=0;i<n;i++)
 	{
@@ -31,9 +31,9 @@ int main_bench()
 			t=b[i];
 			num=i;
 		}
-	printf("%d",a[num]);
+	my_printf("%d",a[num]);
 	for(i=num+1;i<n;i++)
 		if(b[i]==t)
-			printf(",%d",a[i]);
-	printf("\n");
+			my_printf(",%d",a[i]);
+	my_printf("\n");
 }

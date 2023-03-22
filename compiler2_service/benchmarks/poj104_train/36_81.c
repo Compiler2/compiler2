@@ -26,7 +26,7 @@ int main_bench()
 {
 	char str1[100],str2[100];
 	int a[52],b[52],i,n=0;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	find(a,str1);
 	find(b,str2);
 	for(i=0;i<52;i++)
@@ -35,9 +35,9 @@ int main_bench()
 			n++;
 	}
 	if(n==52)
-		printf("YES") ;
+		my_printf("YES") ;
 	else
-		printf("NO");
+		my_printf("NO");
 }
 		
 			

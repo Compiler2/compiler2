@@ -4,7 +4,7 @@ int main_bench()
 {
 	char ch[200],temp[200];
 	int n,i,figure,tempnum[200];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while(gets(ch))
 	{
 		figure=0;
@@ -23,6 +23,6 @@ int main_bench()
 			}
 		}
 		temp[i]='\0';
-		printf("%s\n%s\n",ch,temp);
+		my_printf("%s\n%s\n",ch,temp);
 	}
 }

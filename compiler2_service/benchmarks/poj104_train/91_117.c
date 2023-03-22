@@ -11,6 +11,6 @@ int main_bench() {
         if (*(pa+i+2)=='\0') break;
     }
     *(pb+i+1)=*(pa+i+1)+*pa;
-    printf("%s", s1);
+    my_printf("%s", s1);
     return 0;
 }

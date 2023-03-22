@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,m,i,j,k;
 	int yao[300][300];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
         for(j=0;j<m;j++)
 		{
-           scanf("%d",&yao[i][j]);
+           my_scanf("%d",&yao[i][j]);
 		}
 	}
   for(i=n;i<300;i++)
@@ -29,7 +29,7 @@ int main_bench()
 		  {
 			 if(yao[i][k-i]!=00)
 			 {
-			   printf("%d\n",yao[i][k-i]);
+			   my_printf("%d\n",yao[i][k-i]);
 			 }
 		  }
 	

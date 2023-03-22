@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int A,B,C,a,b,c,i,j,day=0;
-	scanf("%d %d %d\n%d %d %d",&A,&B,&C,&a,&b,&c);
+	my_scanf("%d %d %d\n%d %d %d",&A,&B,&C,&a,&b,&c);
 	if(A<a){
 		for(j=B;j<=12;j++){
 		if(j==1||j==3||j==5||j==7||j==8||j==10||j==12)
@@ -68,6 +68,6 @@ int main_bench()
 		day+=c-1;
 		}
 	}
-	printf("%d",day);
+	my_printf("%d",day);
 	return 0;
 }

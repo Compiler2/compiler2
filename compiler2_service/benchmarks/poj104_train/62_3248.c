@@ -22,7 +22,7 @@ for (int i1=0;zf[i1]!='\0';i1++)
     
 }
 nzf[ct]='\0';
-printf("%s",nzf);
+my_printf("%s",nzf);
     return 0;
 }
 

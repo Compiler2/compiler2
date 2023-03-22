@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a;
 	char dc[50];
-	scanf("%s",dc);
+	my_scanf("%s",dc);
 	a=strlen(dc);
-	printf("%d",a);
-	while(scanf("%s",dc)==1){
+	my_printf("%d",a);
+	while(my_scanf("%s",dc)==1){
 		a=strlen(dc);
-		printf(",%d",a);
+		my_printf(",%d",a);
 	}
 	return 0;
 }

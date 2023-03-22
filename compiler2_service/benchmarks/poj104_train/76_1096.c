@@ -8,9 +8,9 @@ int main_bench()
     int i, j, x=0, y=0, k=0; 
 
 
-	scanf("%d",&n);  
+	my_scanf("%d",&n);  
 	for(i=0;i<n;i++)
-		scanf("%d %d",&a[i],&b[i]); 
+		my_scanf("%d %d",&a[i],&b[i]); 
 	
 	for(i=0; i<n; i++) { 
 		for(j=0; j<20000; j++){
@@ -42,7 +42,7 @@ int main_bench()
 
 	for(i=x; i<=y; i++){
 		if(c[i]==0){
-			printf("no\n");
+			my_printf("no\n");
 			break;
 		}
 		else {
@@ -51,7 +51,7 @@ int main_bench()
 		}
 	}
 	if(k==y-x+1)
-		printf("%d %d", x/2, y/2);
+		my_printf("%d %d", x/2, y/2);
 
 	return 0;
 }

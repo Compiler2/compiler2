@@ -18,11 +18,11 @@ int main_bench()
             count++;
         else
         {
-            printf("(%c,%d)",t,count);
+            my_printf("(%c,%d)",t,count);
             t=a[i];
             count=1;
         }
     }
     t=a[l-1];
-    printf("(%c,%d)\n",t,count);
+    my_printf("(%c,%d)\n",t,count);
 }

@@ -7,10 +7,10 @@ int main_bench()
 	int i,j,k=0,kk=0;
 	char zs[9];
 	double xb[999],sg[999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",zs);
+		my_scanf("%s",zs);
 		if(zs[0]=='m')
 		{
 			xb[i]=1;
@@ -19,7 +19,7 @@ int main_bench()
 		{
 			xb[i]=0;
 		}
-		scanf("%lf",&sg[i]);
+		my_scanf("%lf",&sg[i]);
 	}
 	int sx[999];
 	int xs[999];
@@ -66,14 +66,14 @@ int main_bench()
 			}
 		}
 	}
-	printf("%.2lf",sg[sx[1]]);
+	my_printf("%.2lf",sg[sx[1]]);
 	for(i=2;i<=k;i++)
 	{
-		printf(" %.2lf",sg[sx[i]]);
+		my_printf(" %.2lf",sg[sx[i]]);
 	}
 	for(i=kk;i>=1;i--)
 	{
-		printf(" %.2lf",sg[xs[i]]);
+		my_printf(" %.2lf",sg[xs[i]]);
 	}
 	return 0;
 }

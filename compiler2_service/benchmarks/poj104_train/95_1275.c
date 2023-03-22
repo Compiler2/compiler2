@@ -12,9 +12,9 @@ main_bench()
       int flag=0; 
       for (int t=0;t<i;t++)
       {
-          if (s1[t]>s2[t]){printf(">");flag=1;break;} 
-          if (s1[t]<s2[t]){printf("<");flag=1;break;} 
+          if (s1[t]>s2[t]){my_printf(">");flag=1;break;} 
+          if (s1[t]<s2[t]){my_printf("<");flag=1;break;} 
          
       } 
-      if (flag==0)printf("="); 
+      if (flag==0)my_printf("="); 
 }

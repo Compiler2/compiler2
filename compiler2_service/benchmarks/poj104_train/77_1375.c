@@ -58,7 +58,7 @@ int main_bench()
                                                            
     for(q=1;q<=n/2;q++)
     {
-                       printf("%d %d\n", x[q], y[q]);
+                       my_printf("%d %d\n", x[q], y[q]);
     }
     
     return 0;

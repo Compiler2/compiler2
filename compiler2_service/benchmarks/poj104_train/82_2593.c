@@ -5,9 +5,9 @@ int main_bench()
 {
  int n,i,t,max,a[100],b[100],c[100];
  t=0;
- scanf("%d\n",&n);
+ my_scanf("%d\n",&n);
  for(i=0;i<=n-1;i++){
- scanf("%d %d\n", &(a[i]),&(b[i]));
+ my_scanf("%d %d\n", &(a[i]),&(b[i]));
  if(a[i]<=140&&a[i]>=90&&b[i]>=60&&b[i]<=90){
  t=t+1;
  c[i]=t;
@@ -24,6 +24,6 @@ for (i=0;i<=n-1;i++){
 	}
 }
 
- printf("%d",max);
+ my_printf("%d",max);
  return 0;
 }

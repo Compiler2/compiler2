@@ -17,10 +17,10 @@ int main_bench()
 	head=(struct Student *)malloc(sizeof(struct Student));
 	p=head;
 	int N,i;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",p->name,&p->final,&p->evaluate,&p->office,&p->west,&p->paper);
+		my_scanf("%s %d %d %c %c %d",p->name,&p->final,&p->evaluate,&p->office,&p->west,&p->paper);
 		p->money=0;
 		if(p->final>80&&p->paper>0)
 			p->money+=8000;
@@ -47,6 +47,6 @@ int main_bench()
 		}
 		p=p->next;
 	}
-	printf("%s\n%d\n%d",best->name,best->money,all);
+	my_printf("%s\n%d\n%d",best->name,best->money,all);
 	return 0;
 }

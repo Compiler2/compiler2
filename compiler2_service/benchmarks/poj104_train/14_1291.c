@@ -3,10 +3,10 @@
 int main_bench()
 {int n,sum[100000],a,b,c;
  struct xues{int a,b,c;} s[100000];
- scanf ("%d",&n);
+ my_scanf ("%d",&n);
  int i;
  for(i=0;i<n;i++){
-	 scanf("%d%d%d",&s[i].a,&s[i].b,&s[i].c);
+	 my_scanf("%d%d%d",&s[i].a,&s[i].b,&s[i].c);
 	 sum[i]=s[i].b+s[i].c;
  }
  int fir=0,sec=0,thi=0;
@@ -36,7 +36,7 @@ int main_bench()
 	 c=s[i].a;
 	 }
  }
- printf("%d %d\n%d %d\n%d %d",a,fir,b,sec,c,thi);
+ my_printf("%d %d\n%d %d\n%d %d",a,fir,b,sec,c,thi);
 	return 0;
 }
 

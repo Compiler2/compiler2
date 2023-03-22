@@ -10,6 +10,6 @@ int main_bench()
 		if(children[i] == children[0])
 			boys[++top] = i;
 		else
-			printf("%d %d\n", boys[top--], i);
+			my_printf("%d %d\n", boys[top--], i);
 	return 0;
 }

@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int i, n, a=0, b=0, kg[300][5];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%d%d", &kg[i][0], &kg[i][1]);
+		my_scanf("%d%d", &kg[i][0], &kg[i][1]);
 		if(kg[i][0]==0&&kg[i][1]==1){
 			a++;
 		}else if(kg[i][0]==0&&kg[i][1]==2){
@@ -20,11 +20,11 @@ int main_bench(){
 		}
 	}
 	if(a>b){
-		printf("A");
+		my_printf("A");
 	}else if(a<b){
-		printf("B");
+		my_printf("B");
 	}else{
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

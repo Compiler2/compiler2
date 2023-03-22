@@ -8,10 +8,10 @@ int main_bench()
     char name[100][20];
     char cadre[100],west[100];
     char best[20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
     {
-        scanf("%s %d %d %c %c %d\n",name[i],&stu[i],&com[i],&cadre[i],&west[i],&paper[i]);
+        my_scanf("%s %d %d %c %c %d\n",name[i],&stu[i],&com[i],&cadre[i],&west[i],&paper[i]);
         if (stu[i]>80&&paper[i]>0)
             money[i]+=8000;    
         if (stu[i]>85&&com[i]>80)
@@ -29,5 +29,5 @@ int main_bench()
         }
         sum+=money[i];
     }
-    printf("%s\n%d\n%d",best,max,sum);
+    my_printf("%s\n%d\n%d",best,max,sum);
 }

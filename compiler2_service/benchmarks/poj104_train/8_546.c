@@ -4,11 +4,11 @@ int A,B,a[300],b[300],c[600];
 void w()
 {
 	int i;
-	scanf("%d%d",&A,&B);
+	my_scanf("%d%d",&A,&B);
 	for(i=0;i<A;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     for(i=0;i<B;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void x()
 {
@@ -33,8 +33,8 @@ void z()
 {
 	int i;
 	for(i=0;i<A+B-1;i++)
-		printf("%d ",c[i]);
-    printf("%d",c[A+B-1]);
+		my_printf("%d ",c[i]);
+    my_printf("%d",c[A+B-1]);
 }
 int main_bench()
 {

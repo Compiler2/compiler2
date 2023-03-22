@@ -3,14 +3,14 @@
 int main_bench()
 {
 int n,i,j,m=0,x,y;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char a[100][1000];
 for(i=0;i<n+1;i++)
  gets(a[i]);
 for(i=0;i<n+1;i++)
   {for(j=0;a[i][j]!='\0';j++)
-     printf("%c",a[i][j]);
-     printf("\n");
+     my_printf("%c",a[i][j]);
+     my_printf("\n");
      x=j;
    for(j=0;j<x;j++)
     {if(a[i][j]==')')
@@ -26,8 +26,8 @@ for(i=0;i<n+1;i++)
             if(a[i][j+m]==')'){a[i][j]=' ';a[i][j+m]=' ';break;}
              else a[i][j]='$';}
      for(j=0;j<x;j++)
-       printf("%c",a[i][j]);
-     printf("\n");
+       my_printf("%c",a[i][j]);
+     my_printf("\n");
   }
   return 0;
 }

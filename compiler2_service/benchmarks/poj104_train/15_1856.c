@@ -5,7 +5,7 @@ int main_bench(){
 
 	int n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int x,y,a,b,sz[100][100],tag,tag1=0;
 
@@ -15,7 +15,7 @@ int main_bench(){
 
 		for(y=0;y<n;y++){
 
-			scanf("%d",&sz[x][y]);
+			my_scanf("%d",&sz[x][y]);
 
 			if(sz[x][y]==0){
 
@@ -39,7 +39,7 @@ int main_bench(){
 
 	b=(tag1-2*(a+2))/2;
 
-	printf("%d",a*b);
+	my_printf("%d",a*b);
 
 	return 0;
 

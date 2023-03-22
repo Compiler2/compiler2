@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,b[100],i,r,j=0,k=0,o[100]={0},y[100]={0},l=1,m;
     char a[100][10],old[100][10],young[100][10],str[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    {               scanf("%s %d",a[i],&b[i]);
+    {               my_scanf("%s %d",a[i],&b[i]);
                     if(b[i]>=60)
                     {
                                 strcpy(old[j],a[i]);
@@ -36,9 +36,9 @@ int main_bench()
                       }
     }
     for(i=0;i<j;i++)
-    printf("%s\n",old[i]);
+    my_printf("%s\n",old[i]);
     for(i=0;i<n-j;i++)
-    printf("%s\n",young[i]);
+    my_printf("%s\n",young[i]);
     getchar();
     getchar();
 }

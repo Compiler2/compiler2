@@ -4,9 +4,9 @@ int main_bench(){
 int i,j,x,y,u=0,t=0;
 double n;
 char a[505],b[505];
-scanf("%lf",&n);
-scanf("%s",a);
-scanf("%s",b);;
+my_scanf("%lf",&n);
+my_scanf("%s",a);
+my_scanf("%s",b);;
 x=strlen(a);
 y=strlen(b);
 if(x!=y) t=0;
@@ -22,9 +22,9 @@ for(i=0;i<x;i++){
 	t=0;
 }
 }
-if(t==0)  printf("error");
-else if(u*1.0/x>=n) printf("yes");
-else if(u*1.0/x<n) printf("no");	
+if(t==0)  my_printf("error");
+else if(u*1.0/x>=n) my_printf("yes");
+else if(u*1.0/x<n) my_printf("no");	
 return 0;
 }
 		

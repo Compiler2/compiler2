@@ -5,8 +5,8 @@ int main_bench()
 	int a1,a2,b1,b2,c1,c2;
 	int num,i;
 
-	scanf("%d %d %d",&a1,&b1,&c1);
-	scanf("%d %d %d",&a2,&b2,&c2);
+	my_scanf("%d %d %d",&a1,&b1,&c1);
+	my_scanf("%d %d %d",&a2,&b2,&c2);
 
 	int pdrun(int);
 	int tohead(int,int,int);
@@ -22,7 +22,7 @@ int main_bench()
 		
 	}
 
-	printf("%d",num);
+	my_printf("%d",num);
 }
 
 int pdrun(int i)

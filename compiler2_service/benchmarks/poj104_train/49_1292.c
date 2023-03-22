@@ -25,8 +25,8 @@ void f(char s[501],int x)
             if(jodge(s,j,j+i-1)==1)
             { 
                 for(k=j;k<=j+i-1;k++)
-                 printf("%c",s[k]);
-                 printf("\n");
+                 my_printf("%c",s[k]);
+                 my_printf("\n");
              }
          }
      }
@@ -36,7 +36,7 @@ int main_bench()
 {
     char s[501];
     int i,j,k,t;
-    scanf("%s",s);
+    my_scanf("%s",s);
     k=strlen(s);
     f(s,k);
     return 0;

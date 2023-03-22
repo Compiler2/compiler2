@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int k,a,b,c,max,xmax;
-	scanf("%d",&k);
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&k);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
 	while(k>=3)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(a>=c)
 		{
 			if(c>=b){max=a;xmax=c;}
@@ -24,5 +24,5 @@ int main_bench()
 		a=max;b=xmax;
 		k--;
 	}
-	printf("%d\n%d\n",max,xmax);
+	my_printf("%d\n%d\n",max,xmax);
 }

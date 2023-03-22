@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,sz[500],js[500],a=0,m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++)
 {
-scanf("%d",&(sz[i]));
+my_scanf("%d",&(sz[i]));
 if(sz[i]%2!=0)
 {
 js[a]=sz[i];
@@ -25,8 +25,8 @@ a++;
                                   }
 for(m=0;m<a-1;m++)
 {
-printf("%d,",js[m]);
+my_printf("%d,",js[m]);
 }
-printf("%d",js[a-1]);       
+my_printf("%d",js[a-1]);       
 return 0;
 }

@@ -13,7 +13,7 @@ int main_bench()
 	}
 	do
 	{
-		scanf("%d%c",&a[b],&dip);
+		my_scanf("%d%c",&a[b],&dip);
 		b++;
 	}
 	while(dip==','); 
@@ -30,8 +30,8 @@ int main_bench()
 		b++;
 	}
 	while(a[b]!=-1);
-	if(d==1) printf("No");
-	else if(sec==0||sec==-1) printf("No");
-	else printf("%d",sec);
+	if(d==1) my_printf("No");
+	else if(sec==0||sec==-1) my_printf("No");
+	else my_printf("%d",sec);
 	return 0;
 }

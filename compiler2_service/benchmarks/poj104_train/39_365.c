@@ -10,10 +10,10 @@ int main_bench()
 	int n,i;
 	long sum=0,max=0;
 	char maxs[30];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco1,&stu[i].sco2,&stu[i].gb,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco1,&stu[i].sco2,&stu[i].gb,&stu[i].west,&stu[i].paper);
 		stu[i].money=0;
 		if (stu[i].sco1>80&&stu[i].paper>=1) stu[i].money+=8000;
 		if (stu[i].sco1>85&&stu[i].sco2>80) stu[i].money+=4000;
@@ -26,5 +26,5 @@ int main_bench()
 		sum+=stu[i].money;
 		if (stu[i].money>max) {max=stu[i].money;strcpy(maxs,stu[i].name);}
 	}
-	printf("%s\n%ld\n%ld",maxs,max,sum);
+	my_printf("%s\n%ld\n%ld",maxs,max,sum);
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c,n,x,t=0,i=0,j,o;
 	char f[100],g[5];
-	scanf("%s%d%d",f,&b,&c);
+	my_scanf("%s%d%d",f,&b,&c);
 	o=strlen(f);
 	if (o>6)
 	{
@@ -46,13 +46,13 @@ int main_bench()
 		n=n+7;
 	switch(n)
 	{
-	case 0 : printf("Mon.\n");break;
-	case 1 : printf("Tue.\n");break;
-	case 2 : printf("Wed.\n");break;
-	case 3 : printf("Thu.\n");break;
-	case 4 : printf("Fri.\n");break;
-	case 5 : printf("Sat.\n");break;
-	case 6 : printf("Sun.\n");break;
+	case 0 : my_printf("Mon.\n");break;
+	case 1 : my_printf("Tue.\n");break;
+	case 2 : my_printf("Wed.\n");break;
+	case 3 : my_printf("Thu.\n");break;
+	case 4 : my_printf("Fri.\n");break;
+	case 5 : my_printf("Sat.\n");break;
+	case 6 : my_printf("Sun.\n");break;
 	}
 	return 0;
 

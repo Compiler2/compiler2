@@ -9,7 +9,7 @@ int main_bench(){
 	b[0]=0;
 	char c='0';
 	for(i=0;i<10000;i++){
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if (a[i]==10)
 		{
 			break;
@@ -33,13 +33,13 @@ int main_bench(){
 	}
 	for(j=0;j<k;j++){
 		if(b[j]>b[j+1]){
-			printf("%d",b[j+1]);
+			my_printf("%d",b[j+1]);
 			return 0;
 		}
 
 		
 	}
-	if(j=k||k==0)printf("No");
+	if(j=k||k==0)my_printf("No");
 
 	return 0;
 }

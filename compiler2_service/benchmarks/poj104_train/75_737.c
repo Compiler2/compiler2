@@ -6,13 +6,13 @@ int main_bench()
 	char b;
 	for(i=0;i<1000;i++)
 	{
-		scanf("%d%c",&a[i][0],&b);
+		my_scanf("%d%c",&a[i][0],&b);
 		sum++;
 		if(b!=',')
 			break;
 	}
 	for(i=0;i<sum;i++)
-		scanf("%d%c",&a[i][1],&b);
+		my_scanf("%d%c",&a[i][1],&b);
 	min=a[0][0];
 	max=a[0][1];
 	for(i=0;i<sum;i++)
@@ -37,6 +37,6 @@ int main_bench()
 		if(c[i]>max)
 			max=c[i];
 	}
-	printf("%d %d",sum,max);
+	my_printf("%d %d",sum,max);
 	return 0;
 }

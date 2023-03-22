@@ -26,8 +26,8 @@ int m(char *p)
 int main_bench()
 {
 	gets(str1);n1=strlen(str1);
-	scanf("%s",str2);n2=strlen(str2);
-	scanf("%s",str3);n3=strlen(str3);
+	my_scanf("%s",str2);n2=strlen(str2);
+	my_scanf("%s",str3);n3=strlen(str3);
 	int i=0,j;
 	char *p1,*p2;
 	p1=str1;
@@ -37,12 +37,12 @@ int main_bench()
 		if((f(p1)==1)&&(m(p1-1)==0)&&(m(p2)==0))
 		{
 			for(j=0;j<n3;j++)
-				printf("%c",str3[j]);
+				my_printf("%c",str3[j]);
 			p1=p1+n2-1;
 		}
 		else
 		{
-			printf("%c",*p1);
+			my_printf("%c",*p1);
 		}
 	}
 }

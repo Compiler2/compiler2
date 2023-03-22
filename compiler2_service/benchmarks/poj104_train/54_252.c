@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,k,S,i;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	if((n==2)*(k==1)==1)
 		S=7;
 	else
@@ -15,6 +15,6 @@ int main_bench()
 		}
 		S=S-(n-1)*k;
 	}
-	printf("%d",S);
+	my_printf("%d",S);
 	return 0;
 }

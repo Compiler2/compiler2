@@ -7,14 +7,14 @@ int main_bench()
 	char x;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		x=getchar();
 			k=i;
 		if(x != ',')
 			break;
 	}
 	if(k==0)
-		printf("No\n");
+		my_printf("No\n");
 	if(k != 0)
 	{
 		for(i=1;i<=k;i++)
@@ -24,7 +24,7 @@ int main_bench()
 			else break;
 		}
 		if(p==k)
-			printf("No\n");
+			my_printf("No\n");
 		else
 		{
 			max=a[0];
@@ -44,7 +44,7 @@ int main_bench()
 			if(max<a[i])
 				max=a[i];
 		}
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		}
 		
 	}

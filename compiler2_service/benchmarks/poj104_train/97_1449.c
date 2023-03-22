@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int sz[6]={0}, t[5];
 	sz[0]=n/100;
 	t[0]=n-100*sz[0];
@@ -16,7 +16,7 @@ int main_bench(){
 	t[4]=t[3]-5*sz[4];
 	sz[5]=t[4];
 	for(int i=0; i<6; i++){
-		printf("%d\n", sz[i]);
+		my_printf("%d\n", sz[i]);
 	}
 	return 0;
 }

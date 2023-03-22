@@ -7,12 +7,12 @@ int main_bench(){
 	int t[5]={0};
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(f(n,m)==0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(j=0;j<5;j++){
 		   t[j]=shuzu[n][j];
@@ -21,8 +21,8 @@ int main_bench(){
 		}
 		for(i=0;i<5;i++){
 			for(j=0;j<4;j++){
-				printf("%d ",shuzu[i][j]);
-			}printf("%d\n",shuzu[i][j]);
+				my_printf("%d ",shuzu[i][j]);
+			}my_printf("%d\n",shuzu[i][j]);
 		}
 	}
 	return 0;

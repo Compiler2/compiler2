@@ -28,15 +28,15 @@ int main_bench()
 	}
 	len2=strlen(a);
 	if(k!=len2){
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	if(k==len2){
 		for(i=0;i<m;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
-		printf("%s",b);
+		my_printf("%s",b);
 		for(i=i+k;i<len;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	return 0;

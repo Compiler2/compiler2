@@ -5,7 +5,7 @@ int main_bench()
 int n,k,i,last=1;
 float m=1;
 int M;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
    for(i=0;i<2*n-1;i++){
        if(i%2==0){
           m=m*n+k;
@@ -20,6 +20,6 @@ scanf("%d %d",&n,&k);
                   }
                 }
        }
-printf("%.0f",m);
+my_printf("%.0f",m);
 return 0;
 }

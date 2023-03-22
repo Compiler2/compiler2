@@ -3,9 +3,9 @@
 int main_bench(){
 	int i,j,n,k;
 	int year,m1,m2,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		if(m1>m2){
 			k=m1;
 			m1=m2;
@@ -32,10 +32,10 @@ int main_bench(){
 	}
 	
 	if(total%7==0){
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	else{
-	    printf("NO\n");
+	    my_printf("NO\n");
 	}
 	}
 	return 0;

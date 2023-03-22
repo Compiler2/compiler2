@@ -8,9 +8,9 @@ int main_bench()
 	qn=0;
 	zn=0;
 	ln=0;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	while(i<=n){
-		scanf("%lf",&y);
+		my_scanf("%lf",&y);
 		if(y<19){
 			wcn=wcn+1;
 		}
@@ -29,6 +29,6 @@ int main_bench()
 	qn0=qn/n*100;
 	zn0=zn/n*100;
 	ln0=ln/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",wcn0,qn0,zn0,ln0);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",wcn0,qn0,zn0,ln0);
 	return 0;
 }

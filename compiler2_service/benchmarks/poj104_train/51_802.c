@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,i,j,k,p,l,temp,sum[600],real[600],realreal[600][3];
 	char s[600],a[600][6]={'\0'},b[600][6]={'\0'};
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i<=599;i++)
 		sum[i]=1;
@@ -46,10 +46,10 @@ int main_bench()
 	}
 	if(k==0)
 	{
-		printf("%d\n",l-n+1);
+		my_printf("%d\n",l-n+1);
 		for(i=0;i<=n-1;i++)
-			printf("%c",a[0][i]);
-			printf("\n");
+			my_printf("%c",a[0][i]);
+			my_printf("\n");
 	}
 	else
 	{
@@ -69,7 +69,7 @@ int main_bench()
 		}
 	}
 	if(realreal[0][0]==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=1;i<=k;i++)
@@ -77,7 +77,7 @@ int main_bench()
 			if(realreal[i][0]!=realreal[0][0])
 				break;
 		}
-		printf("%d\n",realreal[0][0]);
+		my_printf("%d\n",realreal[0][0]);
 		for(p=0;p<=i-1;p++)
 		{
 			for(j=0;j<=l-n;j++)
@@ -110,8 +110,8 @@ int main_bench()
 		for(p=0;p<=i-1;p++)
 		{
 			for(j=0;j<=n-1;j++)
-				printf("%c",a[realreal[p][2]][j]);
-				printf("\n");
+				my_printf("%c",a[realreal[p][2]][j]);
+				my_printf("\n");
 		}
 	}
 	}

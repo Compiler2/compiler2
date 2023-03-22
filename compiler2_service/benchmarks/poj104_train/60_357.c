@@ -19,9 +19,9 @@ int f(int n)
 int main_bench()
 {
     int n,i,sum=0,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<5)
-    printf("empty\n");
+    my_printf("empty\n");
     else 
     {
     for(i=5;i<=n;i++)
@@ -30,13 +30,13 @@ int main_bench()
       if(f(i)==0&&f(t)==0)
       {
          
-         printf("%d %d\n",t,i);
+         my_printf("%d %d\n",t,i);
          sum++; 
       }
     }
     
     if(sum==0)
-    printf("empty\n");
+    my_printf("empty\n");
     }
     getchar();
     getchar();

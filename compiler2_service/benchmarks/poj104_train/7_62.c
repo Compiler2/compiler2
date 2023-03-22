@@ -20,14 +20,14 @@ int main_bench(){
 		
 	}
 	if(i==l2)
-		printf("%s",s2);
+		my_printf("%s",s2);
 	else{
 		n=i;
 	    s2[n]='\0';
-	    printf("%s",s2);
-	    printf("%s",s);
+	    my_printf("%s",s2);
+	    my_printf("%s",s);
 	    ps2=s2+n+l1;
-	    printf("%s",ps2);
+	    my_printf("%s",ps2);
 	}
 	return 0;
 }

@@ -10,12 +10,12 @@ main_bench()
 		if(a[i]!=' '&&a[i]!='\0') x=x+1;
 		if(a[i]==' ')
 		{
-			if(x!=0) printf("%d,",x);
+			if(x!=0) my_printf("%d,",x);
 			x=0;
 		}
 		if(a[i]=='\0')
 		{
-			if(x!=0) printf("%d",x);
+			if(x!=0) my_printf("%d",x);
 			break;
 		}
 	}

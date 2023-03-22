@@ -8,10 +8,10 @@ int main_bench()
 {
 	int i;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)!=strlen(b))
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -23,9 +23,9 @@ int main_bench()
 		    	break;
 		}
     	if(i==strlen(a))
-	    	printf("YES");
+	    	my_printf("YES");
     	else
-		    printf("NO");
+		    my_printf("NO");
 	}
 return 0;
 }

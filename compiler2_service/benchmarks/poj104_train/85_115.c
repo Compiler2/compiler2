@@ -75,12 +75,12 @@ int change(char m)
 int main_bench()
 {
   int n;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   char s[1000][20];
   int i,j;
   for(i=0;i<n;i++)
   {
-   scanf("%s\n",s[i]);
+   my_scanf("%s\n",s[i]);
   }
   for(i=0;i<n;i++)
   {
@@ -98,9 +98,9 @@ int main_bench()
     }
    }
    if(y==0)
-   printf("yes\n");
+   my_printf("yes\n");
    else if(y==1)
-   printf("no\n");
+   my_printf("no\n");
   }
 	return 0;
 }

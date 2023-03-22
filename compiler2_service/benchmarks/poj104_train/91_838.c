@@ -12,7 +12,7 @@ gets(p);
 for(i=0;*(p+i)!='\0';i++)
 {   a=*(p+i)+*(p+i+1);
 if(*(p+i+1)=='\0') {a=*(p+i)+*(p+0);}
-printf("%c",a);
+my_printf("%c",a);
 }
 
 }

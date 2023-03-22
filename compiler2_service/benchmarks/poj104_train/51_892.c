@@ -7,8 +7,8 @@ int main_bench()
 	int x[500]={0};
 	char a[500];
 	int i,n,c,j,zichuanshu;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	c=strlen(a);
 	for(i=0;i<=c-n;i++)
 	{
@@ -61,19 +61,19 @@ int main_bench()
 	}
 	if(max==0)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
-	{   printf("%d\n",max+1);
+	{   my_printf("%d\n",max+1);
 		for(i=0;i<=k-1;i++)
 		{
 			if(x[i]==max)
 			{
 				for(j=0;j<n-1;j++)
 				{
-					printf("%c",t[i][j]);
+					my_printf("%c",t[i][j]);
 				}
-				printf("%c\n",t[i][n-1]);
+				my_printf("%c\n",t[i][n-1]);
 			}
 		}
 	}

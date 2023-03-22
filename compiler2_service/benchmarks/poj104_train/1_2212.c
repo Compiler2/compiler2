@@ -19,15 +19,15 @@ int fenjie(int x,int k)
 int main_bench()
 {
 	int j,p,n,a[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<=n-1;j++)
 	{
-		scanf("%d",&a[j]);
+		my_scanf("%d",&a[j]);
 	}
 	for(j=0;j<=n-1;j++)
 	{
-		printf("%d",fenjie(a[j],2));
-		printf("\n");
+		my_printf("%d",fenjie(a[j],2));
+		my_printf("\n");
 	}
 	return 0;
 }

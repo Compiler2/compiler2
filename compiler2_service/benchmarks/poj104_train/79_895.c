@@ -5,7 +5,7 @@ main_bench()
   int m=1,n,i,j,k,r=0,T;
   while(m!=0)
    {
-     scanf("%d %d",&m,&n);if(m==0)break;
+     my_scanf("%d %d",&m,&n);if(m==0)break;
      int monkey[309];
      for(i=0;i<m;i++)
        monkey[i]=1;
@@ -24,7 +24,7 @@ main_bench()
         {
           if(monkey[i])
             {
-             printf("%d\n",i+1);
+             my_printf("%d\n",i+1);
              
              }
 

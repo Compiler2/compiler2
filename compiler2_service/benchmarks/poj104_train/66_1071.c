@@ -55,20 +55,20 @@ int Judge(int year,int month,int day)
 int main_bench()
 {
 	int year,month,day;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
     if(Judge(year,month,day)==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	if(Judge(year,month,day)==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	if(Judge(year,month,day)==3)
-		printf("Wed.");
+		my_printf("Wed.");
     if(Judge(year,month,day)==4)
-		printf("Thu.");
+		my_printf("Thu.");
     if(Judge(year,month,day)==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	if(Judge(year,month,day)==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	if(Judge(year,month,day)==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	return 0;
 }

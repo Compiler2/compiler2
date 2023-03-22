@@ -28,13 +28,13 @@ for(i=1;i<=n;i++)
 {d=i;break;}
 }
 for(i=b[d-1]+1;i<b[d];i++)
-printf("%c",a[i]);
-printf("\n");
+my_printf("%c",a[i]);
+my_printf("\n");
 for(i=1;i<=n;i++)
 {if(s[i]==min)
 {e=i;break;}
 }
 for(i=b[e-1]+1;i<b[e];i++)
-printf("%c",a[i]);
+my_printf("%c",a[i]);
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 { char a[100],b[100];
 int n,m,i,j,sum=0;
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 n=(int)strlen(a);
 m=(int)strlen(b);
 if(n==m)
@@ -35,9 +35,9 @@ for(j=0;j<m;j++)
 	}
 }
 if(sum==0)
-printf("YES");
+my_printf("YES");
 if(sum!=0)
-printf("NO");
+my_printf("NO");
        
 
 	return 0;

@@ -3,11 +3,11 @@
 int main_bench()
 {
 int i,n,now,a[100],j=1,s;
-scanf("%d",&n);
-scanf("%d",&a[0]);
+my_scanf("%d",&n);
+my_scanf("%d",&a[0]);
 for(i=1;i<n;i++)
 {
-scanf("%d",&now);
+my_scanf("%d",&now);
 for(s=0;s<j;s++)
 	{
 		if (now==a[s])  break;
@@ -15,6 +15,6 @@ for(s=0;s<j;s++)
 	}
 }
 for(i=0;i<j-1;i++)
-printf("%d,",a[i]);
-printf("%d",a[j-1]);
+my_printf("%d,",a[i]);
+my_printf("%d",a[j-1]);
 }

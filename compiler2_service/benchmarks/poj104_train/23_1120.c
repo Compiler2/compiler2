@@ -14,11 +14,11 @@ int main_bench()
 		{
 			j=i;
 			for (j=i+1;j<=i+length;j++)
-		printf("%c",str[j]);
-		printf(" ");
+		my_printf("%c",str[j]);
+		my_printf(" ");
 		length=0;}
 	}
 	if (i==-1&&str[0]!=' ')    
 			  { for(i=0;i<length;i++)
-			  printf("%c",str[i]);}
+			  my_printf("%c",str[i]);}
 }

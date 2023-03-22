@@ -29,8 +29,8 @@ main_bench()
 
 	for(j=0;j<i;j++)
 	{
-		printf("%s ",p[j]);
+		my_printf("%s ",p[j]);
 	}
-	printf("%s",p[i]);
+	my_printf("%s",p[i]);
 	
 }

@@ -6,10 +6,10 @@ int n,i,j;
 int z,m,a[100];
 float val;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<n;i++)
-{scanf("%d",&a[i]);}
+{my_scanf("%d",&a[i]);}
 
 for(i=0;i<n;i++)
 {val=0;
@@ -21,7 +21,7 @@ for(i=0;i<n;i++)
 		z=m+z;
 		m=z-m;
 	}
-printf("%.3f\n",val);
+my_printf("%.3f\n",val);
 }
 return 0;
 }

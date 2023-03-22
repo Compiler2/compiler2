@@ -4,12 +4,12 @@ main_bench()
 {
       int t;
       int i=1;
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       while(i<=t){
                   char str[100000];
                   int a;
                   memset(str,0,sizeof(str));
-                  scanf("%s",&str);
+                  my_scanf("%s",&str);
                   int j=0;
                   int k=0;
                   a=strlen(str);
@@ -30,10 +30,10 @@ main_bench()
                                   }
                              }
                   if(j==a)
-                     printf("no\n");
+                     my_printf("no\n");
                   else{
                        if(k==a)
-                          printf("%c\n",str[j]);
+                          my_printf("%c\n",str[j]);
                        }
                   i=i+1;
                   }

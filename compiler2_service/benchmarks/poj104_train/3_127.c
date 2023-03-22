@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,k,i,a[10000],b[10000],j;
-	scanf ("%d %d",&n,&k);
+	my_scanf ("%d %d",&n,&k);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d",&a[i]);
+		my_scanf ("%d",&a[i]);
 	}
 	for (i=0;i<n-1;i++)
 	{
@@ -33,11 +33,11 @@ int main_bench()
 	}
 	if (b[i]==k)
 	{
-		printf ("yes");
+		my_printf ("yes");
 	}
 	else
 	{
-		printf ("no");
+		my_printf ("no");
 	}
 	return 0;
 }

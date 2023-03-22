@@ -15,5 +15,5 @@ int main_bench()
 			*(pnew+i)=(int)*(p+i)+(int)*(p);
 	}
 	*(pnew+i)='\0';
-	printf("%s",pnew);
+	my_printf("%s",pnew);
 }

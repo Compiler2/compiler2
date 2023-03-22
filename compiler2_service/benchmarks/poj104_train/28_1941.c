@@ -27,15 +27,15 @@ int main_bench(){
                       d++;} }
     d--;
     if(d<0){
-            printf("%d",f);}
+            my_printf("%d",f);}
     else{e[0]=c[0];
     for(int i=1;i<=d;i++){
             e[i]=c[i]-c[i-1]-1;
             }
     e[d+1]=b-c[d]-1;
     for(int i=0;i<=d;i++){
-            printf("%d,",e[i]);}
-    printf("%d",e[d+1]);}
+            my_printf("%d,",e[i]);}
+    my_printf("%d",e[d+1]);}
     int y;
-    scanf("%d",&y);
+    my_scanf("%d",&y);
     return 0;}

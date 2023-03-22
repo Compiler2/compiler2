@@ -6,7 +6,7 @@ main_bench()
      int a[100]={0};
      int i,k=0;
      int b[100]={0};
-      scanf("%s",s);
+      my_scanf("%s",s);
      int len=strlen(s);
      for(i=0;i<len;i++)
      {
@@ -14,18 +14,18 @@ main_bench()
                        b[i]=(k*10+a[i])/13;
                         k=(k*10+a[i])%13;
      }
-     if(len==1)  printf("0\n");
+     if(len==1)  my_printf("0\n");
      else
      {
      if(b[1]==0)
                 for(i=2;i<len-1;i++)
-                         printf("%d",b[i]);
+                         my_printf("%d",b[i]);
      else
          for(i=1;i<len-1;i++)
-                  printf("%d",b[i]);
-     printf("%d\n",b[len-1]);
+                  my_printf("%d",b[i]);
+     my_printf("%d\n",b[len-1]);
      }
-     printf("%d\n",k);
+     my_printf("%d\n",k);
     
 }
     

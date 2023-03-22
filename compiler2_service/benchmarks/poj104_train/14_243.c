@@ -11,11 +11,11 @@ struct xue
 int main_bench()
 {
 	int n,i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct xue *xuesheng;
     xuesheng=(struct xue*)malloc(4*sizeof(int)*n);
 	for (i=0;i<n;i++){
-		scanf("%d%d%d",&xuesheng[i].ID,&xuesheng[i].sx,&xuesheng[i].yw);
+		my_scanf("%d%d%d",&xuesheng[i].ID,&xuesheng[i].sx,&xuesheng[i].yw);
 		xuesheng[i].sum=xuesheng[i].sx+xuesheng[i].yw;
 	}
 	for (i=1;i<4;i++){
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	for (i=1;i<4;i++){
-		printf("%d %d\n",xuesheng[n-i].ID,xuesheng[n-i].sum);
+		my_printf("%d %d\n",xuesheng[n-i].ID,xuesheng[n-i].sum);
 	}
 	return 0;
 }

@@ -26,16 +26,16 @@ int main_bench()
 
     for (l1=0;l1<5;l1++)
         for (l2=0;l2<5;l2++)
-            scanf("%d",&mat[l1][l2]);
-    scanf("%d%d",&n,&m);
+            my_scanf("%d",&mat[l1][l2]);
+    my_scanf("%d%d",&n,&m);
     if (check(n,m)==0)
-        printf("error\n");
+        my_printf("error\n");
     else
         for (l1=0;l1<5;l1++)
             {
                 for (l2=0;l2<4;l2++)
-                    printf("%d ",mat[l1][l2]);
-                printf("%d\n",mat[l1][4]);
+                    my_printf("%d ",mat[l1][l2]);
+                my_printf("%d\n",mat[l1][4]);
             }
 
     return 0;

@@ -3,7 +3,7 @@
 int main_bench(){
 	int n=1,m=1,a[301],b[301],i,c,d,e[301],f=0;
 	while(n!=0&&m!=0){
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if((n==0)&&(m==0)){break;}
 	f++;
 	for(i=0;i<n;i++){
@@ -23,7 +23,7 @@ int main_bench(){
 	e[f]=a[1];
 	}
 	for(d=1;d<=f;d++){
-		printf("%d\n",e[d]);
+		my_printf("%d\n",e[d]);
 	}
 	return 0;
 }

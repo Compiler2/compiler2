@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i, j, k, l, m, n,o;
-	scanf("%d", &k);
+	my_scanf("%d", &k);
 	o =0;
 	for(i=3;i<(k-1);i++)
 	{
@@ -25,14 +25,14 @@ int main_bench()
 
 			}
 			if(n == 0)
-				{printf("%d %d\n",i,m);
+				{my_printf("%d %d\n",i,m);
 			o = o +1;}
 		}
 		
 	}
 	if (o == 0)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 	
 	

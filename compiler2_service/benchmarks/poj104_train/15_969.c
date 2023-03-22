@@ -6,12 +6,12 @@ int main_bench()
 	int i,j,s=0;
 	int e,b,c,d=0;
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
     for(i=0;i<n;i++)
@@ -39,6 +39,6 @@ int main_bench()
 		}
 	}
 	s=(c-e+1)*(d-b+1);
-	printf("%d",s);
+	my_printf("%d",s);
     return 0;
 }

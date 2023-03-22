@@ -4,9 +4,9 @@ main_bench()
 {
       int a,b,c,n,m,A,B;
       int x[210][2];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(a=0;a<=n-1;a++)
-      scanf("%d %d",&x[a][0],&x[a][1]);
+      my_scanf("%d %d",&x[a][0],&x[a][1]);
       A=0;
       B=0;
       for(a=0;a<=n-1;a++)
@@ -18,9 +18,9 @@ main_bench()
                          else;
       }
       if(A>B)
-      printf("A");
+      my_printf("A");
       else if(A<B)
-      printf("B");
+      my_printf("B");
       else
-      printf("Tie");
+      my_printf("Tie");
 }

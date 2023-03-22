@@ -32,7 +32,7 @@ int main_bench(){
          for (i=0;i<e2;i++)
          {
              if (word[1][i]==word[0][0]){                                    
-                         printf ("%d\n",i);
+                         my_printf ("%d\n",i);
                          break;
                                          
                                        }  }    

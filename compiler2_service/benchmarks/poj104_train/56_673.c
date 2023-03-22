@@ -5,7 +5,7 @@ int main_bench()
 	int a,s;
 	int b,c;
 	int q,w,e,r,t;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=1;
 	c=0;
     while(a/b>0)
@@ -43,5 +43,5 @@ int main_bench()
 		s=w*10+q;
 	}
 	if(c==1)s=a;
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }

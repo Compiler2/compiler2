@@ -34,5 +34,5 @@ int main_bench()
 	int max=0;
 	for(p=0;p<1000;p++)
 		if(count[p]>max)max=count[p];
-	printf("%d %d",n,max);
+	my_printf("%d %d",n,max);
 }

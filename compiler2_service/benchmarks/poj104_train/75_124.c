@@ -8,14 +8,14 @@ int main_bench()
   char m;
   while(1)
   {
-  scanf("%d",&a[++t]);
-  scanf("%c",&m);
+  my_scanf("%d",&a[++t]);
+  my_scanf("%c",&m);
   if(m == '\n') break;
   }
   for(i =1 ;i <= t;i++)
   {
-     scanf("%d",&b[i]);
-     scanf("%c",&m);
+     my_scanf("%d",&b[i]);
+     my_scanf("%c",&m);
   }
   for(i = 1;i <= t;i++)
      for(j = a[i];j < b[i];j++)
@@ -23,6 +23,6 @@ int main_bench()
              tm[j]++;
              if(tm[j]>k)  k = tm[j];  
         }
-  printf("%d %d",t,k);
+  my_printf("%d %d",t,k);
  return 0;    
 }

@@ -42,9 +42,9 @@ int main_bench()
 			{
 				for(k=l;k<=l+i-2;k++)
 				{
-					printf("%c",c[k]);
+					my_printf("%c",c[k]);
 				}
-				printf("%c\n",c[l+i-1]);
+				my_printf("%c\n",c[l+i-1]);
 			}
 		}
 	}

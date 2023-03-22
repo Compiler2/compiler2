@@ -2,9 +2,9 @@
 
 int main_bench(){
   int n,i,a[99],b[99],pd[99],y=0,j,e,s,max,h[99],x=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-    scanf("%d %d",&a[i],&b[i]);
+    my_scanf("%d %d",&a[i],&b[i]);
     if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90){
       pd[i]=1;y=1;
     }else{pd[i]=0;}
@@ -26,8 +26,8 @@ int main_bench(){
   for(i=0;i<j;i++){
     if(max<h[i]){max=h[i];}
   }
-  printf("%d",max);}
- else if(y==0){printf("0");}
- else{printf("1");}
+  my_printf("%d",max);}
+ else if(y==0){my_printf("0");}
+ else{my_printf("1");}
   return 0;
 }

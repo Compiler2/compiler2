@@ -23,12 +23,12 @@ int main_bench()
 				x=str[i];
 			}
 			for(i=0;i<t;i++)
-				printf("%c",str[i]);
+				my_printf("%c",str[i]);
 			for(j=0;j<3;j++)
-				printf("%c",substr[j]);
+				my_printf("%c",substr[j]);
 			for(i=t;i<s-1;i++)
-				printf("%c",str[i]);
-			printf("\n");
+				my_printf("%c",str[i]);
+			my_printf("\n");
 	}
 			return 0;
 }

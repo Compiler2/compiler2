@@ -9,7 +9,7 @@ int main_bench()
 	char c[550],a[5];
 	char str[550][5];
 	int num[550]={0};
-	scanf("%d %s",&n,c);
+	my_scanf("%d %s",&n,c);
 	int l=strlen(c);
 	int i,j;
 	for(i=0;i<l-n+1;i++)
@@ -27,11 +27,11 @@ int main_bench()
 		}
 		if(num[i]>max) max=num[i];
 	}
-	if(max==1) {printf("NO") ;return 0;}
-	printf("%d\n",max);
+	if(max==1) {my_printf("NO") ;return 0;}
+	my_printf("%d\n",max);
 	for(i=0;i<l-n+1;i++)
 	{
-		if(num[i]==max) printf("%s\n",str[i]);
+		if(num[i]==max) my_printf("%s\n",str[i]);
 	}
 	
 

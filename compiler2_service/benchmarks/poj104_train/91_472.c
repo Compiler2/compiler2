@@ -19,11 +19,11 @@ int main_bench()
 	{
 		if (i==c+1)
 		{
-			printf("\n");
+			my_printf("\n");
 			break;
 		}
 		else
-			printf ("%c",b[i]);
+			my_printf ("%c",b[i]);
 	}
 	return 0;
 }

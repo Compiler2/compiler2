@@ -19,11 +19,11 @@ int zhiyinshu(int x)
 int main_bench()
 {
     int i,j,x;
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     for (i=3;i<j;i++)
     {
         j=x-i;
-        if ((zhiyinshu(i)==1)&&(zhiyinshu(j))) printf("%d %d\n",i,j);
+        if ((zhiyinshu(i)==1)&&(zhiyinshu(j))) my_printf("%d %d\n",i,j);
     }
     return 0;
 }

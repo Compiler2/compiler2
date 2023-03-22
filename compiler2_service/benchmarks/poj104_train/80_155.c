@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i,x;
-	scanf("%d %d %d\n",&sy,&sm,&sd);
-	scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d\n",&sy,&sm,&sd);
+	my_scanf("%d %d %d",&ey,&em,&ed);
 	x=(ey-sy+1)*365-(sm-1)*31-(12-em+1)*31+ed-sd;
 
 	for(i=sy;i<=ey;i++)
@@ -22,5 +22,5 @@ int main_bench()
 	else if(i==2)
 	{if(ey%4==0&&ey%100!=0||ey%400==0)x=x+2;
 	else x=x+3;}}
-	printf("%d",x);
+	my_printf("%d",x);
 }

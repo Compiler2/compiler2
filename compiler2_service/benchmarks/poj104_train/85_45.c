@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j,y,b[500];
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 	char a[20];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a);
+		my_scanf("%s",&a);
 		if((a[0]>='a')&&(a[0]<='z')||(a[0]>='A')&&(a[0]<='Z')||(a[0]=='_'))
 		{
 			b[i]=1;
@@ -30,9 +30,9 @@ int main_bench()
 	for(y=0;y<n;y++)
 	{
 		if(b[y]==0)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

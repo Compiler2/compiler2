@@ -5,11 +5,11 @@ int main_bench()
 int i,j;
 for(i=0;i<5;i++)
 for(j=0;j<5;j++)
-scanf("%d",&shuz[i][j]);
+my_scanf("%d",&shuz[i][j]);
 int m,n;
 int f(int m,int n);
-scanf("%d%d",&m,&n);
-if(f(m,n)==0) printf("error");
+my_scanf("%d%d",&m,&n);
+if(f(m,n)==0) my_printf("error");
 else if(f(m,n)==1) 
 {
 	int s[5];
@@ -22,8 +22,8 @@ else if(f(m,n)==1)
 
 for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-{printf("%d",shuz[i][j]);if(j!=4) printf(" ");}
-if(i!=4) printf("\n");
+{my_printf("%d",shuz[i][j]);if(j!=4) my_printf(" ");}
+if(i!=4) my_printf("\n");
 }}
 }
 int f(int m,int n)

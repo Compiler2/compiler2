@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,temp=0;
 	int a[1000],b[1000];
 	int i,j;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	a[0]=m;
 	b[0]=n;
 	for(i=1;;i++)
@@ -28,6 +28,6 @@ int main_bench()
 			}
 		if(temp==1) break;
 	}
-	printf("%d",a[i]);
+	my_printf("%d",a[i]);
 	return 0;
 }

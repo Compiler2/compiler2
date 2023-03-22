@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n;
 	int m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int liu[100][100];
     int i,j,p;
 	int x1,x2,y1,y2;
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&liu[i][j]);
+			my_scanf("%d",&liu[i][j]);
 		}
 	}
     for(i=0;i<n;i++){
@@ -25,6 +25,6 @@ int main_bench()
 		}
 	}
     m=(x2-x1-1)*(y2-y1-1);
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int sz[100][100],n,s[100]={0},i,j,len,col,m,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++)
 	{
-		scanf("%d%d",&len,&col);
+		my_scanf("%d%d",&len,&col);
 		for(i=0;i<len;i++)
 		{
 			for(j=0;j<col;j++)
 			{
-				scanf("%d",&sz[i][j]);
+				my_scanf("%d",&sz[i][j]);
 				sum+=sz[i][j];
 			}
 		}
@@ -41,7 +41,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",s[i]);
+		my_printf("%d\n",s[i]);
 	}
 	return 0;
 }

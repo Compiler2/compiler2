@@ -4,9 +4,9 @@ int main_bench(){
 int n,i,k,j;
 char bsf[100][21];
  k=1;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-  scanf("%s",&bsf[i]);
+  my_scanf("%s",&bsf[i]);
  }
  for(i=0;i<n;i++){
   if(bsf[i][0]=='_'||(bsf[i][0]>='A'&&bsf[i][0]<='Z')||(bsf[i][0]>='a'&&bsf[i][0]<='z')){k*=1;}
@@ -16,8 +16,8 @@ char bsf[100][21];
 	{k*=1;}
 	else{k*=0;}
   }
-  if(k){printf("yes\n");}
-   else{printf("no\n");}
+  if(k){my_printf("yes\n");}
+   else{my_printf("no\n");}
    k=1;
  }
  return 0;

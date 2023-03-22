@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,m,a[300][300]={0},i,j,b=0,k,l;
 	
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	m+=2;
 	n+=2;
 
@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(j=1;j<(n-1);j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	
@@ -22,7 +22,7 @@ int main_bench()
 		{
 			if(a[k][l]>=a[k+1][l]&&a[k][l]>=a[k][l+1]&&a[k][l]>=a[k-1][l]&&a[k][l]>=a[k][l-1])
 			{
-				printf("%d %d\n",k-1,l-1);
+				my_printf("%d %d\n",k-1,l-1);
 			}
 		}
 	}

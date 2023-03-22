@@ -17,7 +17,7 @@ int main_bench()
     for(j=0;j<t+1;j++)
 	{ 
 		if(j==t&&p==1)
-	  {printf("%d\n",i-t-1);
+	  {my_printf("%d\n",i-t-1);
 		goto l;}
 	 else if(str[i+j]==str[j]&&p==1)
 			p=1;	  

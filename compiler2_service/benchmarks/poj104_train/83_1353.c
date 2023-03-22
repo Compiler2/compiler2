@@ -5,15 +5,15 @@ int main_bench()
 {
 	int n,i,b;
 	float	a[200],c,x=0,y=0,z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		x+=a[i];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		if(b<=100&&b>=90)
 		{c=4.0;}
 		if(b<=89&&b>=85)
@@ -39,6 +39,6 @@ int main_bench()
 	}
 
 z=y/x;
-printf("%.2f",z);
+my_printf("%.2f",z);
 
 } 

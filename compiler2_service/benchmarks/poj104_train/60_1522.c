@@ -3,7 +3,7 @@
 
 int main_bench(){
 	int n,as[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	as[0]=2;
 	int k=1;
 	for(int i=1;i<=n;i++)
@@ -23,9 +23,9 @@ int main_bench(){
 	for(int h=1;h<k;h++)
 	{
 		if(as[h]-as[h-1]==2)
-			printf("%d %d\n",as[h-1],as[h]);
+			my_printf("%d %d\n",as[h-1],as[h]);
 	}
 	if(n<=4)
-		printf("empty");
+		my_printf("empty");
 	return 0;
 }

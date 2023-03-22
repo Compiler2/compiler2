@@ -26,12 +26,12 @@ int main_bench()
 			}
 			if(*p=='\0')
 			{
-				printf("%d",n);
+				my_printf("%d",n);
 				break;
 			}
 			if(*p==' ')
 			{
-				printf("%d,",n);
+				my_printf("%d,",n);
 				p++;
 				q=p;
 				continue;

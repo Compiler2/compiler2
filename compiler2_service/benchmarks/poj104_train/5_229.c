@@ -4,9 +4,9 @@ int main_bench(){
 	int i,m=0;
 	float k=0,n;
 	char a[502],b[502];
-	scanf("%f",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%f",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<(strlen(a));i++){
 		if(strlen(a)!=strlen(b)){
 			m=0;
@@ -23,12 +23,12 @@ int main_bench(){
 		}
 	}
 	if(m==0){
-		printf("error");
+		my_printf("error");
 	}else{
 	    if((k/(strlen(a)*1.00))>n){
-		    printf("yes");
+		    my_printf("yes");
 		}else{
-		    printf("no");
+		    my_printf("no");
 		}
 	}
 

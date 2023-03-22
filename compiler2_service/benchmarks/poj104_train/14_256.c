@@ -15,12 +15,12 @@ int main_bench(){
 	
 	int n,i,k,e,f;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	struct student *stu=(struct student*)malloc(sizeof(int)*4*n);
 
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&stu[i].No,&stu[i].yuwen,&stu[i].shuxue);
+		my_scanf("%d%d%d",&stu[i].No,&stu[i].yuwen,&stu[i].shuxue);
 		stu[i].sum=stu[i].yuwen+stu[i].shuxue;
 	}
 	
@@ -37,7 +37,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<3;i++){
-		printf("%d %d\n",stu[i].No,stu[i].sum);
+		my_printf("%d %d\n",stu[i].No,stu[i].sum);
 	}
 	
 

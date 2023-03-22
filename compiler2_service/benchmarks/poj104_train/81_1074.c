@@ -24,23 +24,23 @@ int main_bench()
 	{
 		for(y=0;y<=4;y++)
 		{
-			scanf("%d",&a[x][y]);
+			my_scanf("%d",&a[x][y]);
 			p[x][y]=&a[x][y];
 		}
 	}
 	int m,n,re;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	re=f(p,m,n);
-	if(re==0) printf("error\n");
+	if(re==0) my_printf("error\n");
 	else
 	{
 		for(x=0;x<=4;x++)		
 		{
 			for(y=0;y<=3;y++)
 			{
-				printf("%d ",*p[x][y]);				
+				my_printf("%d ",*p[x][y]);				
 			}
-			printf("%d\n",*p[x][y]);
+			my_printf("%d\n",*p[x][y]);
 		}
 	}
 }

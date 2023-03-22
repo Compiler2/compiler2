@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n[500],m[500];
 	int number,i,k,e,p;
-	scanf("%d",&number);
+	my_scanf("%d",&number);
 	i=0;
 	k=0;
 	while(i<number)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if(n[i]%2==1)
 		{
 			m[k]=n[i];
@@ -33,10 +33,10 @@ int main_bench()
 	{		
 		if(i==1)
 		{
-			printf("%d",m[i-1]);
+			my_printf("%d",m[i-1]);
 		}else
 		{
-			printf(",%d",m[i-1]);
+			my_printf(",%d",m[i-1]);
 		}
 	}
 	return 0;

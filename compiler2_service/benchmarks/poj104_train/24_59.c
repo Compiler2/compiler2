@@ -31,13 +31,13 @@ for(i=1;i<=n;i++)
 {d=i;break;}
 }
 for(i=q[d-1]+1;i<q[d];i++)
-printf("%c",p[i]);
-printf("\n");
+my_printf("%c",p[i]);
+my_printf("\n");
 for(i=1;i<=n;i++)
 {if(h[i]==min)
 {e=i;break;}
 }
 for(i=q[e-1]+1;i<q[e];i++)
-printf("%c",p[i]);
+my_printf("%c",p[i]);
 return 0;
 }

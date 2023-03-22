@@ -8,17 +8,17 @@ int min(int x,int y)
 int main_bench()
 {
 	int a[100][100],row,col,ROW,COL,i,m=1,n=0,x;
-	scanf("%d%d",&ROW,&COL);
+	my_scanf("%d%d",&ROW,&COL);
 	for(row=0;row<ROW;row++)
 	{
-		for(col=0;col<COL;col++)scanf("%d",&a[row][col]);
+		for(col=0;col<COL;col++)my_scanf("%d",&a[row][col]);
 	}
 	x=min(ROW,COL);
 	row=0;
 	col=0;
 	for(i=0;i<x+x*(x-1)/2;i++)
 	{
-		printf("%d\n",a[row][col]);
+		my_printf("%d\n",a[row][col]);
 		n++;
 		if(n!=m)
 		{
@@ -40,7 +40,7 @@ int main_bench()
 		m=col+1;
 		for(i=0;i<ROW*(COL-ROW);i++)
 		{
-			printf("%d\n",a[row][col]);
+			my_printf("%d\n",a[row][col]);
 			if(row!=ROW-1)
 			{
 				row++;
@@ -60,7 +60,7 @@ int main_bench()
 		for(i=0;i<ROW*(ROW-1)/2;i++)
 		{
 			n++;
-			printf("%d\n",a[row][col]);
+			my_printf("%d\n",a[row][col]);
 			if(n!=m)
 			{
 				row++;
@@ -82,7 +82,7 @@ int main_bench()
 		m=2;
 		for(i=0;i<COL*(ROW-COL);i++)
 		{
-			printf("%d\n",a[row][col]);
+			my_printf("%d\n",a[row][col]);
 			if(col!=0)
 			{
 				row++;
@@ -102,7 +102,7 @@ int main_bench()
 		for(i=0;i<COL*(COL-1)/2;i++)
 		{
 			n++;
-			printf("%d\n",a[row][col]);
+			my_printf("%d\n",a[row][col]);
 			if(n!=m)
 			{
 				row++;

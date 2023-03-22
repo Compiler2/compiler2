@@ -6,7 +6,7 @@ int main_bench()
 	long n;
 	char a[100],b[100];
 	n=0;
-	scanf("%d %s %d",&x,a,&y);
+	my_scanf("%d %s %d",&x,a,&y);
 	l=strlen(a);
 	for(i=0;i<l;i++)
 	{
@@ -26,8 +26,8 @@ int main_bench()
 		n=(n-n%y)/y;
 	}
 	if(i==0)
-		printf("0");
+		my_printf("0");
 	for(j=i-1;j>=0;j--)
-		printf("%c",b[j]);
-	printf("\n");
+		my_printf("%c",b[j]);
+	my_printf("\n");
 }

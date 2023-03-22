@@ -3,7 +3,7 @@
 int main_bench(){
   int n,i;
   char *p;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   char s[n][81];
   for(i=0;i<n;i++)
     gets(s[i]);
@@ -23,9 +23,9 @@ int main_bench(){
     else
       a=0;
     if(a==1)  
-    printf("yes\n");
+    my_printf("yes\n");
     if(a==0)
-    printf("no\n");
+    my_printf("no\n");
     }
    
   }  

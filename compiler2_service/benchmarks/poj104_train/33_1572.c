@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j;
 	char s[5000];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%s", &s);
+		my_scanf("%s", &s);
 		for(j=0;s[j];j++){
 			if(s[j]=='A'){
 				s[j]='T';}
@@ -21,7 +21,7 @@ int main_bench()
 				}
 			}			
 		}
-		printf("%s\n", s);
+		my_printf("%s\n", s);
 	}
 	return 0;
 }

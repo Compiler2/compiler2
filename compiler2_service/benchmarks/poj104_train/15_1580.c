@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int sz[1000][1000],n,row,col,a,b,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 	   for(col=0;col<n;col++)
 	   { 
-		   scanf("%d",&sz[row][col]);
+		   my_scanf("%d",&sz[row][col]);
 	   }
 	}
 	for(row=0;row<n;row++)
@@ -28,10 +28,10 @@ int main_bench()
     
 	if((c-a-1>0)&&(d-b-1>0)){
 		int s=(c-a-1)*(d-b-1);
-		printf("%d",s);
+		my_printf("%d",s);
 	}
 	else {
 		int s=0;
-		printf("%d",s);}
+		my_printf("%d",s);}
 	return 0;
 }

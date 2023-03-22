@@ -15,7 +15,7 @@ int main_bench() {
   char a[600], b[600];
   double r;
   int s;
-  scanf("%lf\n", &r);
+  my_scanf("%lf\n", &r);
   gets(a);
   gets(b);
   s = judge(a, b, r);

@@ -12,7 +12,7 @@ main_bench()
             if (c!=' '&&c!='\n') {flag=1;word[i][j]=c;j++; } 
       } 
       
-      for (int t=count;t>=0;t--){if(t>0)printf("%s ",word[t]);else printf("%s",word);} 
+      for (int t=count;t>=0;t--){if(t>0)my_printf("%s ",word[t]);else my_printf("%s",word);} 
           
         
      

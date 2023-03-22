@@ -2,12 +2,12 @@
 
 int main_bench(){
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char DNA[2][500];
 	int i;
 	int len[2];
 	for(i=0;i<2;i++){
-		scanf("%s",DNA[i]);
+		my_scanf("%s",DNA[i]);
 		len[i]=strlen(DNA[i]);
 	}
 	int j;
@@ -28,11 +28,11 @@ int main_bench(){
 	double bi;
 	bi=((double)p)/((double)len[0]);
 	if(len[0]!=len[1]||m!=0){
-		printf("error");
+		my_printf("error");
 	}else if(bi>n){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 return 0;
 }

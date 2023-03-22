@@ -5,9 +5,9 @@ char s[1000];
 int main_bench(){
 	
 	int T,i;
-	scanf("%d",&T);
+	my_scanf("%d",&T);
 	while (T--){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		for (i=0;s[i];i++){
 			if (s[i]=='A'){
 				putchar('T');

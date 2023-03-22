@@ -4,13 +4,13 @@ int main_bench()
 {
 	int b;
     long n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>9)
 	{
 		b=n%10;
-		printf("%d",b);
+		my_printf("%d",b);
 		n=n/10;
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }
 	

@@ -13,14 +13,14 @@ int main_bench()
 	struct student *p;
 	int n,i;
 	int sum=0,max=0,maxnum,single=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p= (struct student *)malloc( n*sizeof(struct student) );
 
 	for(i=0 ; i<n ; i++,single=0 ){
-		scanf("%s", &p[i].name);
-		scanf("%d%d", &p[i].pjcj, &p[i].pycj);
-		scanf(" %c %c", &p[i].ganbu, &p[i].xibu);
-		scanf("%d", &p[i].article);
+		my_scanf("%s", &p[i].name);
+		my_scanf("%d%d", &p[i].pjcj, &p[i].pycj);
+		my_scanf(" %c %c", &p[i].ganbu, &p[i].xibu);
+		my_scanf("%d", &p[i].article);
 
 		if( p[i].pjcj>80 && p[i].article )
 			single+=8000;
@@ -40,7 +40,7 @@ int main_bench()
 		sum+=single;
 	}
 
-	printf("%s\n",p[maxnum].name);
-	printf("%d\n",max);
-	printf("%d\n",sum);
+	my_printf("%s\n",p[maxnum].name);
+	my_printf("%d\n",max);
+	my_printf("%d\n",sum);
 }

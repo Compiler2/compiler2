@@ -3,7 +3,7 @@
 int main_bench()
 {
 char a[1000],b[1000],c;
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 int n,i,j;
 n=0;
 for(i=0;a[i]!='\0';i++)
@@ -42,9 +42,9 @@ for(j=0;j<n;j++)
 
 }
 if(strcmp(a,b)==0)
-printf("YES");
+my_printf("YES");
 else
-printf("NO");
+my_printf("NO");
 
 return 0;
 

@@ -8,11 +8,11 @@ int main_bench()
 	float sum;
 	int d[100];
 
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 
 	for (i=0;i<n;i++){
 	           sum=0;a=2;b=1;
-            scanf ("%d",&d[i]);
+            my_scanf ("%d",&d[i]);
 			 
 			for (j=0;j<d[i];j++){
 			
@@ -21,7 +21,7 @@ int main_bench()
 			       b=a;
 				   a=t;
 			}  
-			printf ("%.3f\n",sum);
+			my_printf ("%.3f\n",sum);
 	}
 
 

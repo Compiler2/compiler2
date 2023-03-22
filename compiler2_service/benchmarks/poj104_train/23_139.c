@@ -20,6 +20,6 @@ int main_bench()
 		}
 	}
 	for(i=k;i>0;i--)
-		printf("%s ",s[i]);
-	printf("%s\n",s[0]);
+		my_printf("%s ",s[i]);
+	my_printf("%s\n",s[0]);
 }

@@ -15,7 +15,7 @@ for(x=2;x<=n;x++)
      if(m==1)
          {for(z=i;z<i+x;z++)
             putchar(a[z]);
-          printf("\n");}
+          my_printf("\n");}
      }
 return 0;
 }

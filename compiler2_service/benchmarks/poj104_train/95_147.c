@@ -67,9 +67,9 @@
       case 'Z':str2[j]='z';break;
       }
      }
-  if( strcmp(str1,str2)==0) printf("=\n");
-  if(strcmp(str1,str2)<0 )  printf("<\n");
-  if( strcmp(str1,str2)>0 )  printf(">\n");
+  if( strcmp(str1,str2)==0) my_printf("=\n");
+  if(strcmp(str1,str2)<0 )  my_printf("<\n");
+  if( strcmp(str1,str2)>0 )  my_printf(">\n");
     
   return 0;
 }

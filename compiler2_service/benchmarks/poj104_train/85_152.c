@@ -26,10 +26,10 @@ int main_bench()
 			}
 		}
 		if(b==strlen(a[i])){
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

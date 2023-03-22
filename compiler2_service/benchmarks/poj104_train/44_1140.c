@@ -15,7 +15,7 @@ int f(int x){
 int main_bench(){
     int n,i,sig,ans;
     for(i=0;i<6;i++){
-        scanf("%d",&n);
+        my_scanf("%d",&n);
         if(n>=0)
             sig=0;
         else{
@@ -25,7 +25,7 @@ int main_bench(){
         ans=f(n);
         if(sig==1)
             ans=-ans;
-        printf("%d\n",ans);
+        my_printf("%d\n",ans);
     }
     return 0;
 }

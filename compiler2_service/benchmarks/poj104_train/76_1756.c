@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,k,t,e,m,j;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		int a[10001],b[10001];
 			double s[10001],max,min;
 for(i=0;i<n;i++)
-scanf("%d%d",&(a[i]),&(b[i]));
+my_scanf("%d%d",&(a[i]),&(b[i]));
 for(k=1;k<=n-1;k++){
 	for(i=0;i<n-k;i++){
 		if(b[i]>b[i+1]){
@@ -41,13 +41,13 @@ for(j=0;j<2*(max-min);j++){
 		   m=0;
 		}
 	if(m==0){
-		  printf("no");
+		  my_printf("no");
 		break;
 	}
 	}
 
  if(m==1)
-printf("%d %d",a[0],b[n-1]);
+my_printf("%d %d",a[0],b[n-1]);
 return 0;
 }
 

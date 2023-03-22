@@ -12,6 +12,6 @@ int main_bench()
 			b[i] = a[i]+a[(i+1)%strlen(a)];
 		}
 		b[i]='\0';
-		printf("%s",b);
+		my_printf("%s",b);
 		return 0;
 }

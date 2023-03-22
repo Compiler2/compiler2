@@ -13,12 +13,12 @@ struct student{
 
 int main_bench(){
 	int N,i,max,sum;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	struct student *stu=(struct student*)malloc(sizeof(struct student)*N);
 	struct student *p;
 	p=stu;
 	for(i=0;i<N;i++,p++){
-		scanf("%s %d %d %c %c %d",p->mz,&(p->cj),&(p->py),&(p->gb),&(p->xb),&(p->lw));
+		my_scanf("%s %d %d %c %c %d",p->mz,&(p->cj),&(p->py),&(p->gb),&(p->xb),&(p->lw));
 	}
 	p=stu;
 	for(i=0;i<N;i++,p++){
@@ -57,7 +57,7 @@ int main_bench(){
 			max=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[max].mz,stu[max].money,sum);
+	my_printf("%s\n%d\n%d\n",stu[max].mz,stu[max].money,sum);
 	free(stu);
 	return 0;
 }

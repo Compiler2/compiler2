@@ -5,8 +5,8 @@ char s[600] , ts[7];
 char *p1 , *p2;
 
 int main_bench(){
-	scanf("%d\n", &n );
-	scanf("%s" , s );
+	my_scanf("%d\n", &n );
+	my_scanf("%s" , s );
 	len=strlen(s);
 	memset(sum,0,sizeof(sum));
 	big=-1;
@@ -24,15 +24,15 @@ int main_bench(){
 		if (sum[i]>big)big=sum[i];
 	}
 	if (big==0){
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-	printf("%d\n", big+1 );
+	my_printf("%d\n", big+1 );
 	for (i=0;i+n-1<len;i++)
 		if (sum[i]==big){
 			p1=&s[i];
 			strncpy( ts , p1 , n );
-			printf("%s\n", ts );
+			my_printf("%s\n", ts );
 		}
 				
 	return 0;

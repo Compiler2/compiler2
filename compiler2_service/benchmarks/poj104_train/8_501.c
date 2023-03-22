@@ -8,7 +8,7 @@ int main_bench()
 	void xs(int s[],int m);
 	int n,m;
 	int a[200],b[200];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	qz(a,m);
 	qz(b,n);
     px(a,m);
@@ -22,7 +22,7 @@ void qz(int s[],int m)
 	int i;
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 	}
 }
 void px(int s[],int m)
@@ -52,9 +52,9 @@ void hb(int s[],int t[],int m,int n)
 void xs(int s[],int m)
 {
 	int i;
-     printf("%d",s[0]);
+     my_printf("%d",s[0]);
 	 for(i=1;i<m;i++)
 	 {
-		 printf(" %d",s[i]);
+		 my_printf(" %d",s[i]);
 	 }
 }

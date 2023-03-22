@@ -34,11 +34,11 @@ int main_bench()
 		}
 		if(flag==0)
 		{
-			printf("0");
+			my_printf("0");
 		}
 		else
-			printf("1");
-		printf("\n");
+			my_printf("1");
+		my_printf("\n");
 	}
 	
 

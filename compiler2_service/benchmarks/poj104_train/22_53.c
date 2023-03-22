@@ -29,14 +29,14 @@ int main_bench()
 	{	
 		if(a[i]!=a[0])
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			break;
 		}
 		else
 			t=t+1;
 	}
 	if(t==j+1)
-		printf("No");
+		my_printf("No");
 }
 
 

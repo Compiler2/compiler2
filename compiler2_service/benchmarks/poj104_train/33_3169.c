@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i,j,k;
 	char a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<300;j++)
 		{
-		     scanf("%c",&a[j]);
+		     my_scanf("%c",&a[j]);
 			 if(a[j]==10)
 			 {
 				 k=j-1;
@@ -31,9 +31,9 @@ int main_bench()
 		}
 		for(j=1;j<=k;j++)
 		{
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

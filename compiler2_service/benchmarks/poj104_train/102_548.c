@@ -6,9 +6,9 @@ int main_bench(){
 	char b[40][6];
 	p=0;
 	q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %lf",b[i],&a[i]);
+		my_scanf("%s %lf",b[i],&a[i]);
 		t=strcmp(b[i],"female");
 		if(t==0){
 			d[q]=a[i];
@@ -38,11 +38,11 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<p;i++){
-		printf("%.2lf ",c[i]);
+		my_printf("%.2lf ",c[i]);
 	}
 	for(i=0;i<q-1;i++){
-		printf("%.2lf ",d[i]);
+		my_printf("%.2lf ",d[i]);
 	}
-	printf("%.2lf",d[q-1]);
+	my_printf("%.2lf",d[q-1]);
 	return 0;
 }

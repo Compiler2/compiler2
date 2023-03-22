@@ -15,7 +15,7 @@ int main_bench()
 			j++;
 	}
 	if (j==1)
-		printf("No");
+		my_printf("No");
     else
 	{
 		for (i=0;i<=j;i++)
@@ -27,7 +27,7 @@ int main_bench()
 					a[k]=temp;
 				}
 		if (a[0]==a[j])
-			printf("No");
+			my_printf("No");
 		else
 		{
 			z=a[0];
@@ -37,7 +37,7 @@ int main_bench()
 				i++;
 			}
 			while (a[i]==z);
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 		}
 	}
 

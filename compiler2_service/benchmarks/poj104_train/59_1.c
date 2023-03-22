@@ -8,13 +8,13 @@ int main_bench()
 {
 	int i,j,k;
 	char ch;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 1; i <= n; i ++)
 	{
-		scanf("%c", &ch); 
+		my_scanf("%c", &ch); 
 		for (j = 1; j <= n; j ++)
 		{
-			scanf("%c", &ch);
+			my_scanf("%c", &ch);
 			if (ch == '#')
 				room[i][j] = -1;
 			else if (ch == '.')
@@ -27,7 +27,7 @@ int main_bench()
 	{
 		room[i][0] = room[0][i] = room[i][n+1] = room[n+1][i] = -1;
 	}
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 
 	for (k = 1; k < m; k ++)
 	{
@@ -52,7 +52,7 @@ int main_bench()
 				sum ++;
 		}
 	}
-	printf("%d\n", sum);
+	my_printf("%d\n", sum);
 
 	return 0;
 }

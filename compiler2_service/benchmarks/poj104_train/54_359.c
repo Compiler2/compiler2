@@ -4,7 +4,7 @@ main_bench()
 {
 	int a[100],n,k,m;
 	int i=0,j=1,r,t=1;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	do
 	{
 		if(t==0)
@@ -23,5 +23,5 @@ main_bench()
 		i++;
 	}while(i<n);
 	m=a[n-1];
-	printf("%d",m);
+	my_printf("%d",m);
 }  

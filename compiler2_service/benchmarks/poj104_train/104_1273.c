@@ -3,7 +3,7 @@
 int main_bench()
 {    void zhao(int n,int y,int a[]);
     int x=0,y=0,a[100]={0},t=0,i=0,n=0,k=0;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	if(x>y)
 	 {t=y;
 	 y=x;
@@ -25,7 +25,7 @@ void zhao(int n,int y,int a[])
 { int i=0,t=0;
   for(i=0;i<=n;i++)
   { if(a[i]==y)
-      { printf("%d",y);
+      { my_printf("%d",y);
         t=1;
         break;
         	  

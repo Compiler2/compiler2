@@ -6,7 +6,7 @@ int main_bench()
     double x,y;
     char a[501],b[501];
     int i,t=0,m=0,n=0,mark=1;
-    scanf("%lf",&x);
+    my_scanf("%lf",&x);
     getchar();
     gets(a);
     gets(b);
@@ -23,7 +23,7 @@ int main_bench()
             mark=0;
     }
     if(m!=n||mark==0)
-        printf("error");
+        my_printf("error");
     else
     {
         for(i=0;i<m;i++)
@@ -33,9 +33,9 @@ int main_bench()
         }
         y=t/(double)m;
         if(y>=x)
-            printf("yes");
+            my_printf("yes");
         else
-            printf("no");
+            my_printf("no");
     }
     return 0;
 }

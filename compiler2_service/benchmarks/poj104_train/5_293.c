@@ -5,9 +5,9 @@ int main_bench(){
 	double n,a=0,b=0,t=0,k=0;
 	char s[501], str[501];
 
-	scanf("%lf",&n);
-    scanf("%s",s);
-	scanf("%s",str);
+	my_scanf("%lf",&n);
+    my_scanf("%s",s);
+	my_scanf("%s",str);
 
 	for(i=0;s[i];i++){
 		a++;
@@ -23,20 +23,20 @@ int main_bench(){
 		   }
 		 }
 		 else{
-			 printf("error");
+			 my_printf("error");
 			 k=1;
 	         break;	 
 		 }
 	 }
 	if(t/a>n&&k==0){
-		printf("yes");
+		my_printf("yes");
 	}
 	else if(k==0){
-			printf("no");
+			my_printf("no");
 	}
 	}
 	else{
-		printf("error");
+		my_printf("error");
 	}
 
 

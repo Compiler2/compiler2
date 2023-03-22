@@ -7,8 +7,8 @@ int main_bench()
     char a[1000],b[1000];
 
 	
-	scanf("%lf",&s);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&s);
+	my_scanf("%s%s",a,b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	
@@ -26,7 +26,7 @@ int main_bench()
 			k2=1;
 	}
 
-	if(k1==1||k2==1||lena!=lenb)printf("error");
+	if(k1==1||k2==1||lena!=lenb)my_printf("error");
 	else
 	{
 		for(i=0,dian=0;i<lena;i++)
@@ -37,8 +37,8 @@ int main_bench()
 		}
 
 		w=1.0*dian/lena;
-		if(w>=s)printf("yes");
-		else printf("no");
+		if(w>=s)my_printf("yes");
+		else my_printf("no");
 	}
 
 

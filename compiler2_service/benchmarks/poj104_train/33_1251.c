@@ -4,25 +4,25 @@ int main_bench()
 {
    char a[1000][255];
    int m,i,k,j;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    for(i=0;i<m;i++)
    {
-       scanf("%s",a[i]);
+       my_scanf("%s",a[i]);
    }
    for(j=0;j<m;j++)
    {
        for(k=0;k<255;k++)
        {
            if(a[j][k]=='A')
-           printf("T");
+           my_printf("T");
            else if(a[j][k]=='T')
-           printf("A");
+           my_printf("A");
            else if(a[j][k]=='C')
-           printf("G");
+           my_printf("G");
            else if(a[j][k]=='G')
-           printf("C");
+           my_printf("C");
        }
-       printf("\n");
+       my_printf("\n");
    }
    return 0;
 }

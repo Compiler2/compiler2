@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[102];
 	int i,j,L,k;
 	int b[102]={0};
@@ -14,8 +14,8 @@ int main_bench()
 			a[i]=0;
 			b[i]=0;
 		}
-		scanf("%s",a);
-		printf("%s\n",a);
+		my_scanf("%s",a);
+		my_printf("%s\n",a);
 	L=strlen(a);
 		for(i=L-1;i>=0;i--)
 		{
@@ -43,11 +43,11 @@ int main_bench()
 		}
 		for(i=0;i<L;i++)
 		{
-			if(b[i]==1) printf("$");
-			else if(b[i]==2) printf("?");
-			else printf(" ");
+			if(b[i]==1) my_printf("$");
+			else if(b[i]==2) my_printf("?");
+			else my_printf(" ");
 		}
-printf("\n");
+my_printf("\n");
 	}
 		return 0;
 }

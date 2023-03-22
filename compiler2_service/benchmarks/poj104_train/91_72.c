@@ -16,8 +16,8 @@ int main_bench()
 	}
 	for (i=0;i<=n-1;i++)
 	{
-		printf("%c",string[i]+string[i+1]);
+		my_printf("%c",string[i]+string[i+1]);
 	}
-	printf("%c",string[n]+string[0]);
+	my_printf("%c",string[n]+string[0]);
 	return 0;
 }

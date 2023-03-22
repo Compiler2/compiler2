@@ -9,9 +9,9 @@ void match(int i,int len){int k = i + 1;
                                   
                                   
 main_bench(){int n;
-       scanf("%d",&n); 
+       my_scanf("%d",&n); 
        for(int i=0;i<n;i++){
-               scanf("%s",&a);
+               my_scanf("%s",&a);
                int len = strlen(a);
                for(int j=0;j<len;j++){
                        if(a[j]=='('){c[j]=1;}
@@ -19,11 +19,11 @@ main_bench(){int n;
                        else {c[j]=0;}}
                for(int j=0;j<len;j++){if(c[j]==1){for(int k=j+1;k<len;k++){if(c[k]==1)break;
                                                                             if(c[k]==-1){c[k]=0;c[j]=0;j=-1;break;}}}}
-               printf("%s\n",a);
-               for(int j=0;j<len;j++){if(c[j]==1)printf("$");
-                                       if(c[j]==-1)printf("?");
-                                      if(c[j]==0)printf(" ");}
-                                      printf("\n");}
+               my_printf("%s\n",a);
+               for(int j=0;j<len;j++){if(c[j]==1)my_printf("$");
+                                       if(c[j]==-1)my_printf("?");
+                                      if(c[j]==0)my_printf(" ");}
+                                      my_printf("\n");}
             
 }
 

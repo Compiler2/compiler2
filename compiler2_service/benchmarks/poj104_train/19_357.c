@@ -37,7 +37,7 @@ int main_bench()
 		if (k>0) ans[index]=s[i];
         index++;
 	}
-	printf("%s\n",ans);
+	my_printf("%s\n",ans);
 	free(a);
 	free(b);
 	free(s);

@@ -30,17 +30,17 @@ void jieshang(int m,int n,int a[200],int b[100]){
 void shuchu(int m,int n,int a[200]){
 	int i;
     for(i=0;i<m+n-1;i++)
-		printf("%d ",a[i]);
-	printf("%d\n",a[m+n-1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d\n",a[m+n-1]);
 }
 int main_bench()
 {
 	int m,n,i,a[200],b[100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	maopao(m,n,a,b);
 	jieshang(m,n,a,b);
 	shuchu(m,n,a);

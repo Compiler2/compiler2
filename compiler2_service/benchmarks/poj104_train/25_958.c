@@ -4,7 +4,7 @@ int main_bench()
 {
     int u=0,b=0,n,i,d=0,j,c[1000]={0};
  char a[1000],w[1000];
- scanf("%d",&n); 
+ my_scanf("%d",&n); 
  for (i=0;i<n;i++) 
  {
     if (i==0)
@@ -52,8 +52,8 @@ int main_bench()
    for (i=u;i<strlen(w);i++)
 {
    if (  (w[i]-'0'>=0)  &&  (w[i]-'0'<=9)  )
-   printf("%c",w[i]);
+   my_printf("%c",w[i]);
 }
 if (n==0)
-printf("1");
+my_printf("1");
    }

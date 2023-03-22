@@ -6,7 +6,7 @@ int main_bench()
 	int b[100];
 	
 	int i,x,s;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	s=strlen(a);
 if(((s==2)&&(a[0]>48))||(s>2))
 {
@@ -24,9 +24,9 @@ if(((s==2)&&(a[0]>48))||(s>2))
 		}
 		for(i=0;i<s-2;i++)
 		{
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		}
-		printf("\n%d",x);
+		my_printf("\n%d",x);
 	}
     if(((a[0]-48)*10+a[1]-48)>12)
 	{
@@ -43,21 +43,21 @@ if(((s==2)&&(a[0]>48))||(s>2))
 		}
 		for(i=0;i<s-1;i++)
 		{
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		}
 		
-		printf("\n%d",x);
+		my_printf("\n%d",x);
 	}
 }
 if(s==1)
 {
-printf("0\n");
-printf("%d",(a[0]-48));
+my_printf("0\n");
+my_printf("%d",(a[0]-48));
 }
 if((s==2)&&(a[0]==49)&&(a[1]<51))
 {
-   printf("0\n");
-   printf("%d",(a[0]-48)*10+a[1]-48);
+   my_printf("0\n");
+   my_printf("%d",(a[0]-48)*10+a[1]-48);
 }
 return 0;
 }

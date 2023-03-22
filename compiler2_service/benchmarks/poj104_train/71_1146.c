@@ -8,11 +8,11 @@ int main_bench()
 	int b[201];
 	int c[201],d[201],sum[201];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(l=1;l<=n;l++){
 		sum[l]=0;}
 	for(i=1;i<=n;i++){
-		scanf("%d %d %d",&b[i],&c[i],&d[i]);
+		my_scanf("%d %d %d",&b[i],&c[i],&d[i]);
 		if(((b[i]%4==0)&&(b[i]%100!=0))||(b[i]%400==0)){
 			 a[1]=31,a[2]=29,a[3]=31,a[4]=30,a[5]=31,a[6]=30,a[7]=31,a[8]=31,a[9]=30,a[10]=31,a[11]=30,a[12]=31;}
 		else{
@@ -27,10 +27,10 @@ int main_bench()
 	}
 	for(k=1;k<=n;k++){
 		if(sum[k]%7==0){
-			printf("YES\n");}
+			my_printf("YES\n");}
 			
 		else{
-			printf("NO\n");}
+			my_printf("NO\n");}
 	}
 		
 			

@@ -7,18 +7,18 @@ int main_bench()
 	float*GPA;
 	float xf,cj,xuefensum=0,GPAsum=0;
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	xuefen=(float*)malloc(sizeof(float)*n);
 	chengji=(float*)malloc(sizeof(float)*n);
 	GPA=(float*)malloc(sizeof(float)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&xf);
+		my_scanf("%f",&xf);
 		*(xuefen+i)=xf;
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&cj);
+		my_scanf("%f",&cj);
 		*(chengji+i)=cj;
 	}
     for(i=0;i<n;i++)
@@ -72,6 +72,6 @@ int main_bench()
 	{
 		xuefensum+=*(xuefen+i);
 	}
-	printf("%.2f\n",GPAsum/xuefensum);
+	my_printf("%.2f\n",GPAsum/xuefensum);
 	return 0;
 }

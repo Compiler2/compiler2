@@ -16,12 +16,12 @@ int main_bench()
 		{
 			if(q==0)
 			{
-				printf("%d",record);
+				my_printf("%d",record);
 				q=1;
 			}
 			else
 			{
-				printf(",%d",record);
+				my_printf(",%d",record);
 			}
 			record=0;
 		}

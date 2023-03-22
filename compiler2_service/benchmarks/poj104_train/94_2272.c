@@ -4,9 +4,9 @@ int main_bench(){
 	int sz[500];
 	int zs[500];
 	int a,b,c,d,e,i,n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	a=0;
     for(i=0;i<=n;i++){
@@ -28,8 +28,8 @@ int main_bench(){
 			}
 		}
 		zs[e]=d;
-		printf("%d,",b);
+		my_printf("%d,",b);
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 	}

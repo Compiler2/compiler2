@@ -14,11 +14,11 @@ int ispr(int a)
 main_bench()
 {
       int n,a;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if(n<5)
-      printf("empty\n");
+      my_printf("empty\n");
       else
       for(a=5;a<=n;a++)
       if(ispr(a)&&ispr(a-2))
-      printf("%d %d\n",a-2,a);
+      my_printf("%d %d\n",a-2,a);
       }

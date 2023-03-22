@@ -4,7 +4,7 @@ main_bench()
 {
 int i;
 int n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
  char a[81];
@@ -21,11 +21,11 @@ if(a[0]=='_'||(a[0]>='a'&&a[0]<='z')||(a[0]>='A'&&a[0]<='Z'))
           {L++;break;}
        }
        if(L!=0)
-       printf("0\n");
+       my_printf("0\n");
        else
-       printf("1\n");
+       my_printf("1\n");
   }   
 else
-printf("0\n");
+my_printf("0\n");
 }
 } 

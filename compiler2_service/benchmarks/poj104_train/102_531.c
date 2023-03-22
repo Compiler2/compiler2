@@ -4,16 +4,16 @@ int main_bench()
 {char s[1000][8];
 double h[1000],zh[1000];
 int n,i,j=0,m,r;
-scanf("%d",&n);
+my_scanf("%d",&n);
 m=n-1;
 for(i=0;i<n;i++){
-	scanf("%s",s[i]);
+	my_scanf("%s",s[i]);
 	if(s[i][0]=='m'){
-		scanf("%lf",&h[i]);
+		my_scanf("%lf",&h[i]);
 		zh[j]=h[i];
 		j++;
 	}else{
-		scanf("%lf",&h[i]);
+		my_scanf("%lf",&h[i]);
 		zh[m]=h[i];
 		m--;
 	}
@@ -41,9 +41,9 @@ for(r=j;r<n-i;r++){
 }
 
 for(i=0;i<n-1;i++){
-printf("%.2lf ",zh[i]);
+my_printf("%.2lf ",zh[i]);
 }
-printf("%.2lf",zh[n-1]);
+my_printf("%.2lf",zh[n-1]);
 
 return 0;
 }

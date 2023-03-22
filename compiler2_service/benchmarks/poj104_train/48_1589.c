@@ -13,7 +13,7 @@ main_bench()
 			b[i][j]=0;
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	a[5][5]=m;
 	for(int z=0;z<n;z++)
 	{
@@ -34,12 +34,12 @@ main_bench()
 	}	
 	for(int x=1;x<10;x++)
 	    {
-			printf("%d",a[x][1]);
+			my_printf("%d",a[x][1]);
 			for(int y=2;y<10;y++)
 	        {
-				printf(" %d",a[x][y]);
+				my_printf(" %d",a[x][y]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 }		
 	

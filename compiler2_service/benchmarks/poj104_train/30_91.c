@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,m[100],i,sum=0,k,a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{  
 		k=i;
@@ -18,7 +18,7 @@ int main_bench()
 			m[i]=k;
 		else m[i]=0;}
 		sum=sum+m[i]*m[i];
-	}printf("%d",sum);
+	}my_printf("%d",sum);
 	
 	
 	

@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,j,t;
 	char a[1000][1000],b[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
         t=strlen(a[i]);
 		for(j=0;j<t;j++){
 			if(a[i][j]=='A')
@@ -21,7 +21,7 @@ int main_bench(){
 	}
 	i=0;
 	for(i=0;i<n;i++){
-			printf("%s\n",b[i]);
+			my_printf("%s\n",b[i]);
 	}
 	
 }

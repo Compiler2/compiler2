@@ -4,7 +4,7 @@ int main_bench()
 {
     char sz[100];
     int n,en;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<=n;i++)
     {
             gets(sz);
@@ -13,20 +13,20 @@ int main_bench()
             {
                             case 'g':
                                  for(int j=0;j<en-4;j++)
-                                 printf("%c",sz[j]);
-                                 printf("%c\n",sz[en-4]);
+                                 my_printf("%c",sz[j]);
+                                 my_printf("%c\n",sz[en-4]);
                                  break;
                              case 'r':
                                  for(int j=0;j<en-3;j++)
-                                 printf("%c",sz[j]);
-                                 printf("%c\n",sz[en-3]);
+                                 my_printf("%c",sz[j]);
+                                 my_printf("%c\n",sz[en-3]);
                                  break;
                              case 'y':
                                  for(int j=0;j<en-3;j++)
-                                 printf("%c",sz[j]);
-                                 printf("%c\n",sz[en-3]);
+                                 my_printf("%c",sz[j]);
+                                 my_printf("%c\n",sz[en-3]);
                                  break;
             }
-    }scanf("%d",&n);
+    }my_scanf("%d",&n);
             return 0;
 }

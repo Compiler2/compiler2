@@ -15,11 +15,11 @@ main_bench()
    int x,n,i,j,b=1;
    int *p;
    int *q;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    p=(int *)malloc(n*sizeof(int));
    q=(int *)malloc(n*sizeof(int));
    for(i=0;i<n;i++)
-       scanf("%d",p+i);
+       my_scanf("%d",p+i);
    for(i=n-1;i>=0;i--)
    {
       
@@ -32,5 +32,5 @@ main_bench()
           q[i]=x+1;      
       }
    }
-   printf("%d",Max(n,q));       
+   my_printf("%d",Max(n,q));       
 }

@@ -5,11 +5,11 @@ int main_bench(){
     
 int pdz=0,x,y,n,a[1000],b[1000],aa[1000],bb[1000];
     
-scanf("%d",&n);
+my_scanf("%d",&n);
     
 for(int i=0;i<n;i++){
         
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
         
 aa[i]=a[i];
        
@@ -41,10 +41,10 @@ aa[i]=a[i];
         }
     }
     if(pdz==0){
-        printf("no");
+        my_printf("no");
     }
     else {
-        printf("%d %d",x,y);
+        my_printf("%d %d",x,y);
     }
     return 0;
 }

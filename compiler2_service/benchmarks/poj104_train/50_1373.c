@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(m=1;m<13;m++)
 	{
@@ -12,7 +12,7 @@ int main_bench()
 	  c=(13-b)%7;
 	  if(c==0)
 	  {
-		  printf("%d\n",m);
+		  my_printf("%d\n",m);
 	  }
 	  if(m==1||m==3||m==5||m==7||m==8||m==10)
 	  {

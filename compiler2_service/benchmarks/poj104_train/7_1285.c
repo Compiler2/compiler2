@@ -6,7 +6,7 @@ int main_bench()
 {
 char str[256]={' '},sstr[256]={' '},rpl[256]={' '};
 int lstr,lsstr;
-	scanf("%s%s%s",str,sstr,rpl);
+	my_scanf("%s%s%s",str,sstr,rpl);
 	lstr=strlen(str);lsstr=strlen(sstr);
 	int pst,curr,indi=0;
 	for(pst=0;pst<=lstr-lsstr;pst++){
@@ -22,16 +22,16 @@ int lstr,lsstr;
 			break;
 		}
 	}
-	if(indi==0)printf("%s",str);
+	if(indi==0)my_printf("%s",str);
 	else{
 		for(curr=0;curr<pst;curr++){
-			printf("%c",str[curr]);
+			my_printf("%c",str[curr]);
 		}
 		for(curr=0;curr<lsstr;curr++){
-			printf("%c",rpl[curr]);
+			my_printf("%c",rpl[curr]);
 		}
 		for(curr=pst+lsstr;curr<lstr;curr++){
-			printf("%c",str[curr]);
+			my_printf("%c",str[curr]);
 		}
 	}
 	return 0;

@@ -4,13 +4,13 @@ int main_bench()
 {
     int x,j,i,l,t,q=0,w=0,y,m[300]={0},n[300]={0},k[300]={0};
     char a[300],b[300];
-    scanf("%s %s",&a,&b);
+    my_scanf("%s %s",&a,&b);
     x=strlen(a);
     y=strlen(b);
     
     for(i=x;i>=0;i--) {m[i]=a[i]-'0';if(m[i]==0) q+=1;}
     for(i=y;i>=0;i--) {n[i]=b[i]-'0';if(n[i]==0) w+=1;}
-    if(q==x&&w==y) {printf("0");return 0;}
+    if(q==x&&w==y) {my_printf("0");return 0;}
     if(x>=y)
     {
         l=x;
@@ -65,6 +65,6 @@ int main_bench()
     {
         a[i]=k[j+i]+'0';
     }
-    printf("%s",a);
+    my_printf("%s",a);
     return 0;
 }

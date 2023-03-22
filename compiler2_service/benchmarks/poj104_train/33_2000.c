@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i;
 	char zfc[10000][256],*ps;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -15,23 +15,23 @@ int main_bench()
 		{
 			if(*ps==65)
 			{
-				printf("T");
+				my_printf("T");
 				
 			}
 			else if(*ps==84)
 			{
-				printf("A");
+				my_printf("A");
 			}
 			else if(*ps==71)
 			{
-				printf("C");
+				my_printf("C");
 			}
 			else if(*ps==67)
 			{
-				printf("G");
+				my_printf("G");
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

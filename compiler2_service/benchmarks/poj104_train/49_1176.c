@@ -14,4 +14,4 @@ int main_bench()
 				if(s[p]==s[q])t=t*1;
 				else t=t*0;}
 			if(t==1){
-				for(t=i;t<i+j;t++){printf("%c",s[t]);}printf("%c\n",s[i+j]);}t=1;}}}
+				for(t=i;t<i+j;t++){my_printf("%c",s[t]);}my_printf("%c\n",s[i+j]);}t=1;}}}

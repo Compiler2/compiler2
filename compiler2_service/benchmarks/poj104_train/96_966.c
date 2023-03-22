@@ -12,11 +12,11 @@ int main_bench()
 		if(b>=13)
 		{
 			k=1;
-			printf("%d",b/13);
+			my_printf("%d",b/13);
 			b=b%13;
 		}
-		else if(k) printf("0");
+		else if(k) my_printf("0");
 	}
-	if(!k)printf("0");
-	printf("\n%d",b);
+	if(!k)my_printf("0");
+	my_printf("\n%d",b);
 }

@@ -3,7 +3,7 @@
 int m,n,i,y,q=12;
 main_bench()
 {
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(n=3;n<=m-2;n++)
     {
         for (i=2;i<=n-1;i++)
@@ -22,7 +22,7 @@ main_bench()
             }
             if (y!=1)
             {
-                printf("%d %d\n\n",n,n+2);
+                my_printf("%d %d\n\n",n,n+2);
                 q=3;
                 
             }
@@ -31,5 +31,5 @@ main_bench()
         }y=12;
     }
     if(q==12)
-    printf("empty");
+    my_printf("empty");
 }

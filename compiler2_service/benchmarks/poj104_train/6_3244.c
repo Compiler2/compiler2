@@ -4,12 +4,12 @@ int main_bench()
 {
 int k,m,n,i,a,b,c;
 int jz[100][100];
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(i=1;i<=k;i++){
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(a=0;a<m;a++){
 		for(b=0;b<n;b++){
-			scanf("%d",&jz[a][b]);
+			my_scanf("%d",&jz[a][b]);
 		}
 	}
 	c=0;
@@ -22,7 +22,7 @@ for(i=1;i<=k;i++){
 			}
 		}
 	}
-	printf("%d\n",c);
+	my_printf("%d\n",c);
 }
 	return 0;
 }

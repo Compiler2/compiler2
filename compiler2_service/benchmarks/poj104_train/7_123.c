@@ -29,5 +29,5 @@ int main_bench()
 			if(y==1)
 				break;
 	}
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 }

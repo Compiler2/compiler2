@@ -4,9 +4,9 @@ int main_bench()
 {
   int n,i,j,num=0;
   double a[301],d,ave=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-  {scanf("%lf",&a[i]);
+  {my_scanf("%lf",&a[i]);
   ave+=a[i];
   }
   ave=ave/n;  
@@ -19,11 +19,11 @@ int main_bench()
   for(i=0;i<n;i++)
 	  if(fabs(fabs(a[i]-ave)-d)<0.00001)
 	  {
-		  printf("%1.0f",a[i]);
+		  my_printf("%1.0f",a[i]);
 	      break;
 	  }
   for(j=i+1;j<n;j++)
   {	  if(fabs(fabs(a[j]-ave)-d)<0.00001)
-		  printf(",%1.0f",a[j]);}
-	  printf("\n");
+		  my_printf(",%1.0f",a[j]);}
+	  my_printf("\n");
 }

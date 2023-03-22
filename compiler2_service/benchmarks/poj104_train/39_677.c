@@ -13,10 +13,10 @@ struct student{
 int main_bench()
 {
 	int i,n,sum=0;	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *scho=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].f_gra,&stu[i].c_gra,&stu[i].ganbu,&stu[i].xibu,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].f_gra,&stu[i].c_gra,&stu[i].ganbu,&stu[i].xibu,&stu[i].paper);
 		scho[i]=0;
 	}
 
@@ -50,7 +50,7 @@ int main_bench()
 			goal=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[goal].name,max,sum);
+	my_printf("%s\n%d\n%d\n",stu[goal].name,max,sum);
 
 	free(scho);
 	return 0;

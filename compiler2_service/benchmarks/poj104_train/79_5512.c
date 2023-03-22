@@ -6,7 +6,7 @@ main_bench()
  do
  {
   i++;
-  scanf("%d%d",&s[i][0],&s[i][1]);
+  my_scanf("%d%d",&s[i][0],&s[i][1]);
  }while(s[i][1]!=0);
  t=i;
  
@@ -30,7 +30,7 @@ j=(j+1)%s[i][0];
 
   }
   for(j=0;j<s[i][0];j++)
-  if(a[j]!=0)printf("%d\n",j+1);
+  if(a[j]!=0)my_printf("%d\n",j+1);
  }
 }
 

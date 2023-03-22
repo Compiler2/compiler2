@@ -4,7 +4,7 @@ main_bench()
 {
 	int m,n;
 	int b[10000];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int i,j,count=0;
 	for(i=m;i<=n;i++){
 		for(j=2;j<i;j+=1){
@@ -37,11 +37,11 @@ main_bench()
 		}
 	}
 	if(num==0)
-		printf("no");
+		my_printf("no");
 	else{
 		for(i=0;i<num-1;i++)
-			printf("%d,",c[i]);
-		printf("%d",c[num-1]);
+			my_printf("%d,",c[i]);
+		my_printf("%d",c[num-1]);
 	}
 	return 0;
 }

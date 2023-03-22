@@ -21,6 +21,6 @@ int main_bench()
 			{min=*(a+i);n=i;}
 		}
 		ip=s;
-		printf("%s\n%s",*(ip+m),*(ip+n));
+		my_printf("%s\n%s",*(ip+m),*(ip+n));
 	
 }

@@ -8,7 +8,7 @@ b[50]={"\0"},d[300][50]={"\0"};
 	int main_bench()
 {
 
-scanf("%s %s",b,a);
+my_scanf("%s %s",b,a);
 	a1=strlen(a);
 	b1=strlen(b);
   for(i=0;i<a1;i++)
@@ -18,6 +18,6 @@ scanf("%s %s",b,a);
    if(strcmp(d[i],b)==0) 
 	   break;
  
-   printf("%d",i);
+   my_printf("%d",i);
 }
 

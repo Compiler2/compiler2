@@ -2,11 +2,11 @@
 
 int main_bench(){
     int a,b,x,y,n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     a=0;
 	b=0;
 	for(i=0;i<n;i++){
-	    scanf("%d%d",&x,&y);
+	    my_scanf("%d%d",&x,&y);
 		if((x-y)*(x-y)==1){
 			if(x>y){
                 b++;
@@ -23,13 +23,13 @@ int main_bench(){
 		}
 	}
 	if(a>b){
-	    printf("A\n");
+	    my_printf("A\n");
 	}
     if(a==b){
-	    printf("Tie\n");
+	    my_printf("Tie\n");
 	}
     if(a<b){
-	    printf("B\n");
+	    my_printf("B\n");
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b;
 
-scanf("%d",&b);
+my_scanf("%d",&b);
 
 for(a=1;a<=12;a++)
 {  
@@ -16,7 +16,7 @@ for(a=1;a<=12;a++)
 		}else
 		{b=7;}
 		if(b==5)
-		{printf("%d\n",a);}
+		{my_printf("%d\n",a);}
 		
 	}else if(a==3)
 	{
@@ -25,14 +25,14 @@ for(a=1;a<=12;a++)
 		}else
 			{b=7;}
 			if(b==5)
-		{printf("%d\n",a);}
+		{my_printf("%d\n",a);}
 	}else if(a==2||a==4||a==6||a==8||a==9||a==11)
 	{	if((b+3)%7!=0){
 		b=(b+3)%7;
 		}else
 	{b=7;}
 		if(b==5)
-		{printf("%d\n",a);}
+		{my_printf("%d\n",a);}
 	}
 	else if(a==5||a==7||a==10||a==12)
 	{  if((b+2)%7!=0)
@@ -41,7 +41,7 @@ for(a=1;a<=12;a++)
 		}else
 	{b=7;}
 		if(b==5)
-		{printf("%d\n",a);}
+		{my_printf("%d\n",a);}
 	}
 
 }

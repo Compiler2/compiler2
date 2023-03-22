@@ -20,11 +20,11 @@ int main_bench()
 		*sp=*(sp-1)+1;
 	}
 	struct index *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct index *ind=(struct index*)malloc(sizeof(struct index)*n);
 	for(p=ind;p<ind+n;p++)
 	{
-		scanf("%d %s",&p->num,p->wr);
+		my_scanf("%d %s",&p->num,p->wr);
 	}
 	for(p=ind;p<ind+n;p++)
 	{
@@ -53,7 +53,7 @@ int main_bench()
 	{
 		if(*pr==max)
 		{
-			printf("%c\n%d\n",*sp,*pr);
+			my_printf("%c\n%d\n",*sp,*pr);
 		}
 	}
 	for(p=ind;p<ind+n;p++)
@@ -62,7 +62,7 @@ int main_bench()
 		{
 			if(*pt==temp)
 			{
-				printf("%d\n",(*p).num);
+				my_printf("%d\n",(*p).num);
 			}
 		}
 	}

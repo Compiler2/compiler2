@@ -17,12 +17,12 @@ int main_bench()
  int max=0,temp=0;
  int sum=0;
  int i;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
      stu.name[20]="0";
 	 temp=0;
-	 scanf("%s %d %d %c %c %d",stu.name,&stu.finalmarks,&stu.classmarks,&stu.monitor,&stu.west,&stu.paper);
+	 my_scanf("%s %d %d %c %c %d",stu.name,&stu.finalmarks,&stu.classmarks,&stu.monitor,&stu.west,&stu.paper);
   
   if( stu.finalmarks>80 && stu.paper>=1 )
      temp=temp+8000;
@@ -45,7 +45,7 @@ int main_bench()
    strcpy(bigname,stu.name);
   }
  }
- printf("%s\n",bigname);
- printf("%d\n",max);
- printf("%d",sum);
+ my_printf("%s\n",bigname);
+ my_printf("%d\n",max);
+ my_printf("%d",sum);
 }

@@ -2,7 +2,7 @@
 
 int main_bench(){
     int m, n;
-    scanf("%d %d",&m, &n);
+    my_scanf("%d %d",&m, &n);
     int a=m+2;
     int b=n+2;
     int sz[a][b];
@@ -13,7 +13,7 @@ int main_bench(){
     }
     for(int i=1;i<a-1;i++){
         for(int j=1;j<b-1;j++){
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
         }
     }
     for(int i=1;i<a-1;i++){
@@ -21,7 +21,7 @@ int main_bench(){
             if(sz[i][j]>=sz[i-1][j]&&sz[i][j]>=sz[i+1][j]&&sz[i][j]>=sz[i][j+1]&&sz[i][j]>=sz[i][j-1]){
                 int c=i-1;
                 int d=j-1;
-                printf("%d %d\n",c, d);
+                my_printf("%d %d\n",c, d);
             }
         }
     }

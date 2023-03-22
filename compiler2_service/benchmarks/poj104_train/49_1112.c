@@ -16,8 +16,8 @@ for (i=1;i<=c;i++){
 							temp=1;
 			}
 	        if (temp==1){
-		       for(a=j;a<=i+j;a++)printf("%c",str[a]);
-			   printf("\n");
+		       for(a=j;a<=i+j;a++)my_printf("%c",str[a]);
+			   my_printf("\n");
 			}
 		}
 }

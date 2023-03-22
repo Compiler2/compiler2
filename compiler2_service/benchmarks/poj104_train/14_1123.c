@@ -11,20 +11,20 @@ int main_bench()
 {
 	struct stu *head,*p1,*p2,*p0;
 	int n,i,ch,ma,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	len = sizeof (struct stu);
 	
 	p1 = p2 = (struct stu*)malloc(len);
 
 	head = p1;
-	scanf("%d%d%d",&p1->id,&ch,&ma);
+	my_scanf("%d%d%d",&p1->id,&ch,&ma);
 	p1->sum = ch + ma;
 	p1->next = 0;
 
 	for (i=2;i<=n;i++)
 	{
         p0 = (struct stu*)malloc(len);
-		scanf("%d %d %d",&p0->id,&ch,&ma);
+		my_scanf("%d %d %d",&p0->id,&ch,&ma);
 		p0->sum = ch + ma;
 
 		p1=p2=head;
@@ -55,7 +55,7 @@ int main_bench()
 	p1 = head;
 	while (p1!=0)
 	{
-    	printf("%d %d\n",p1->id,p1->sum);
+    	my_printf("%d %d\n",p1->id,p1->sum);
 		p1 = p1->next;
 	}
 }

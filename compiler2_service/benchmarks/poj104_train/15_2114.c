@@ -7,12 +7,12 @@ int main_bench()
 	int left1,right1;
 	left0=-1;
 	right0=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("%d",&k);
+			my_scanf("%d",&k);
 			if((k==0)&&(left0==-1)&&(right0==-1))
 			{
                 left0=i;
@@ -29,8 +29,8 @@ int main_bench()
 	if(((left1-left0)>1)&&((right1-right0)>1))
 	{
 		m=(left1-left0-1)*(right1-right0-1);
-	    printf("%d\n",m);
+	    my_printf("%d\n",m);
 	}
-	else printf("%d\n",t);
+	else my_printf("%d\n",t);
 	return 0;
 }

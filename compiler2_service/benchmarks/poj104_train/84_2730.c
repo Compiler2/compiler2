@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,a[100],i,zd,cd,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<=n-1;i++)
 {
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 if(i==0)
 zd=a[i];
 if(a[i]>zd)
@@ -27,6 +27,6 @@ if(a[i]>zd)
 	if(a[i]>cd)
 		cd=a[i];
   }
-printf("%d\n%d\n",zd,cd);
+my_printf("%d\n%d\n",zd,cd);
 
 }

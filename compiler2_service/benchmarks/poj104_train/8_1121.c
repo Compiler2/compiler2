@@ -5,7 +5,7 @@ int input( int *s, int n )
 {
     int i = 0;
     for ( i = 0; i < n; i++ )
-        scanf("%d", &s[i]);
+        my_scanf("%d", &s[i]);
     return 0;
 }
 
@@ -42,15 +42,15 @@ int output( int *s, int n )
     int i = 0;
     if ( n <= 0 )
         return 0;
-    printf("%d", s[0]);
+    my_printf("%d", s[0]);
     for ( i = 1; i < n; i++ )
-        printf(" %d", s[i]);
+        my_printf(" %d", s[i]);
 }
 
 int main_bench()
 {
     int n1 = 0, n2 = 0;
-    scanf("%d %d", &n1, &n2);
+    my_scanf("%d %d", &n1, &n2);
     int s1[1000]= {0};
     int s2[1000]= {0};
     input(s1,n1);input(s2,n2);

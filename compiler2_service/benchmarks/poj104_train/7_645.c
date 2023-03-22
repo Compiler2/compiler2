@@ -4,9 +4,9 @@ int main_bench()
 {
 	int ls1,ls2,ls3,i,j=0,m,lans=0,z=0;
 	char s1[100],s2[100],s3[100],ans[100];
-	scanf("%s",s1);
-	scanf("%s",s2);
-	scanf("%s",s3);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
+	my_scanf("%s",s3);
 	ls1=strlen(s1);
 	ls2=strlen(s2);
 	ls3=strlen(s3);
@@ -37,6 +37,6 @@ int main_bench()
 		}
 	}
 			ans[lans]='\0';
-			printf("%s",ans);
+			my_printf("%s",ans);
     return 0;
 }

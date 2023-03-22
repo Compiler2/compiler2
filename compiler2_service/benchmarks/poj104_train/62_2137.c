@@ -5,4 +5,4 @@ int main_bench()
 gets(a);
 for(i=0;a[i]!=0;i++)
 if(a[i]!=b||a[i+1]!=b)
-printf("%c",a[i]);}
+my_printf("%c",a[i]);}

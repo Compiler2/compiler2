@@ -25,12 +25,12 @@
 int main_bench()
 {
     int n,h;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int k=2;k<=n/2;k++)
     {
        h=n-k;
        if((f(h)==1)&&(f(k)==1))
-       printf("%d %d\n",k,h);
+       my_printf("%d %d\n",k,h);
     }
     getchar();
     getchar();

@@ -23,6 +23,6 @@ int main_bench(){
 			  break;
 	  }
 	}
-	printf("%s",zfc[1]);
+	my_printf("%s",zfc[1]);
 	return 0;
 }

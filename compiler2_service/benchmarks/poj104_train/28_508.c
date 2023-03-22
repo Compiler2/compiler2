@@ -19,8 +19,8 @@ int main_bench()
 		if(tag[i]==0&&tag[i+1]==1) {b[k]=i-c;k++;}
 		i++;
 	}
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;i<k;i++)
-		printf(",%d",b[i]);
-	printf("\n");
+		my_printf(",%d",b[i]);
+	my_printf("\n");
 }

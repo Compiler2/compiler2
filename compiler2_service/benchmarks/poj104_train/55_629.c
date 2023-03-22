@@ -15,9 +15,9 @@ main_bench()
 {
 long a,b,n,i,j,k,ans;      
 char c[100];
-scanf("%d",&a);
-scanf("%s",c);
-scanf("%d",&b);
+my_scanf("%d",&a);
+my_scanf("%s",c);
+my_scanf("%d",&b);
 n=strlen(c);
 n--;
 ans=calc(c[n]);
@@ -34,10 +34,10 @@ i++;
 c[i]=conv(ans%b);
 ans/=b;
 }
-if (i==0) printf("0");
+if (i==0) my_printf("0");
 while (i>=1)
 {
-printf("%c",c[i]);
+my_printf("%c",c[i]);
 i--;
 }
 }

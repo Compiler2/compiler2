@@ -7,7 +7,7 @@ main_bench()
       for(i=0;i<=4;i++)
       {
                        for(j=0;j<=4;j++)
-                       scanf("%d",&p[i][j]);
+                       my_scanf("%d",&p[i][j]);
       }
       for(i=0;i<=4;i++)
       {
@@ -19,6 +19,6 @@ main_bench()
                        if(p[m][k]>p[j+1][k]) m=j+1;
                        if(m==i) break;
       }
-      if(i==5) printf("not found");
-      else printf("%d %d %d",m+1,k+1,p[m][k]);
+      if(i==5) my_printf("not found");
+      else my_printf("%d %d %d",m+1,k+1,p[m][k]);
 }

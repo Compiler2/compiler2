@@ -3,10 +3,10 @@
 int main_bench(){
     int n;
     int p;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     char zfc[50];
     for(int i=0;i<n;i++){
-        scanf("%s\n",zfc);
+        my_scanf("%s\n",zfc);
         p=strlen(zfc);
         for(int j=0;zfc[j];j++){
             if(zfc[p-2]=='l'&&zfc[p-1]=='y'){
@@ -19,7 +19,7 @@ int main_bench(){
                 zfc[p-3]='\0';
             }
         }
-        printf("%s\n",zfc);
+        my_printf("%s\n",zfc);
     }
     return 0;
 }

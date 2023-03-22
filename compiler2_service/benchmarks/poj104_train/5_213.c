@@ -5,8 +5,8 @@ int main_bench(){
  int i,t=1,r;
  char s1[500];
  char s2[500];
- scanf("%lf",&x);
- scanf("%s%s",s1,s2);
+ my_scanf("%lf",&x);
+ my_scanf("%s%s",s1,s2);
  int len1=strlen(s1);
  int len2=strlen(s2);
  if(len1!=len2){
@@ -31,11 +31,11 @@ int main_bench(){
 	 }
  }
  if(t==0){
-	 printf("error");
+	 my_printf("error");
  }else if(t==1&&r==1){
-	 printf("yes");
+	 my_printf("yes");
 	 }else if(t==1&&r==2){
-	 printf("no");
+	 my_printf("no");
 	 }
 return 0;
 }

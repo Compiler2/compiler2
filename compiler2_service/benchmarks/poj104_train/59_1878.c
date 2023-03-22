@@ -2,14 +2,14 @@
 
 int main_bench(){
     int n,m,i,k,t,s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char a[n][n];
     for(i=0;i<n;i++){
         for(k=0;k<n;k++){
-            scanf(" %c",&(a[i][k]));
+            my_scanf(" %c",&(a[i][k]));
         }
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     if(n>1){
     for(i=1;i<m;i++){
         
@@ -58,6 +58,6 @@ int main_bench(){
             }
         }
     }
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

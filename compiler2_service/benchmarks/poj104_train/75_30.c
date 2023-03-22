@@ -29,5 +29,5 @@ int main_bench()
           t[j]++;
     for(i=0;i<1000;i++)
     if(max<t[i]) max=t[i];            
-    printf("%d %d\n",n,max);
+    my_printf("%d %d\n",n,max);
 }

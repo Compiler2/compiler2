@@ -11,11 +11,11 @@ int prime(int a)
 main_bench()
 {
 	int n,i,a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<=n-2;i++)
 	{
 		if(prime(i)==0&&prime(i+2)==0)
-		{printf("%d %d\n",i,i+2);a++;}
+		{my_printf("%d %d\n",i,i+2);a++;}
 	}
-	if(a==0) printf("empty");
+	if(a==0) my_printf("empty");
 }

@@ -38,7 +38,7 @@ int main_bench()
         mini=i;}
 
       }
-       printf("%s\n%s",a[maxi],a[mini]) ;
+       my_printf("%s\n%s",a[maxi],a[mini]) ;
 
 
 }

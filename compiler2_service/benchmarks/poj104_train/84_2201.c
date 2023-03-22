@@ -6,11 +6,11 @@ int main_bench()
  int i=0;
  int n,tmp=0;
  int a=0,b=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
 
  for(i=0;i<n;i++)
  {
-   scanf("%d",&tmp);
+   my_scanf("%d",&tmp);
    if (tmp>a)
    {
      b=a;
@@ -25,7 +25,7 @@ int main_bench()
   
 
 
-printf("%d\n",a);
-printf("%d",b);
+my_printf("%d\n",a);
+my_printf("%d",b);
 	return 0;
 }

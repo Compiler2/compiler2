@@ -12,10 +12,10 @@ int main_bench()
     void sort(int n,struct p a[101]);
     int n,i;
     struct p a[101];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%s %d",&a[i].id,&a[i].age);
+                    my_scanf("%s %d",&a[i].id,&a[i].age);
     }
     sort(n,a);
     
@@ -36,7 +36,7 @@ void sort(int n,struct p a[101])
                    {
                                    if((a[i].age)==k)
                                    {
-                                                    printf("%s\n",a[i].id);
+                                                    my_printf("%s\n",a[i].id);
                                                     (a[i].age)=0;
                                    }
                    }
@@ -45,7 +45,7 @@ void sort(int n,struct p a[101])
      {
                      if((a[i].age)!=0)
                      {
-                                      printf("%s\n",a[i].id);
+                                      my_printf("%s\n",a[i].id);
                      }
      }
 }

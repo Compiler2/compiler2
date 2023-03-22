@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,len1,len2,len3,j,m=0,l;
 	char zifu[256],chazhao[256],tihuan[256];
-	scanf("%s%s%s",zifu,chazhao,tihuan);
+	my_scanf("%s%s%s",zifu,chazhao,tihuan);
 	len1=strlen(zifu);
 	len2=strlen(chazhao);
 	len3=strlen(tihuan);
@@ -51,6 +51,6 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n",zifu);
+	my_printf("%s\n",zifu);
 	return 0;
 }

@@ -4,7 +4,7 @@
 int main_bench(){
 	int w,i,r,a;
 
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	if(w>=1&&w<=5){
 			r=5-w;
 	}else{
@@ -22,7 +22,7 @@ int main_bench(){
 			a+=31;
 		}
 		if(a%7==r){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 
 		

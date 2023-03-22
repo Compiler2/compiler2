@@ -12,10 +12,10 @@ int main_bench()
 		int n,i,j,e;
 	int youxian[100]={0};
 	int zhengchang[100]={0};
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d", bing[i].id,&bing[i].nianling);
+		my_scanf("%s %d", bing[i].id,&bing[i].nianling);
 		if(bing[i].nianling>=60)  youxian[i]=bing[i].nianling;
 		else zhengchang[i]=bing[i].nianling;
 	}
@@ -37,7 +37,7 @@ int main_bench()
 		{
 			if(bing[j].nianling==youxian[i])
 			{
-				printf("%s\n", bing[j].id);
+				my_printf("%s\n", bing[j].id);
 				bing[j].nianling=-1;
 				break;
 			}
@@ -49,7 +49,7 @@ int main_bench()
 		{
 		    if(bing[j].nianling==zhengchang[i])
 			{
-				printf("%s\n", bing[j].id);
+				my_printf("%s\n", bing[j].id);
 				bing[j].nianling=-1;
 				break;
 			}

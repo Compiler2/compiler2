@@ -8,13 +8,13 @@ int main_bench(){
     double j,z;
     x=0;
     j=0.0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++){
-        scanf("%d",&(xf[i]));
+        my_scanf("%d",&(xf[i]));
         x+=xf[i];
     }
     for(i=0;i<n;i++){
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
         if(sz[i]<60){
             js[i]=0.0;
         }
@@ -48,6 +48,6 @@ int main_bench(){
         j+=1.0*(js[i]*xf[i]);
     }
     z=1.0*j/x;
-    printf("%.2lf\n",z);
+    my_printf("%.2lf\n",z);
     return 0;
 }

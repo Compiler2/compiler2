@@ -3,11 +3,11 @@
 main_bench(){
 int n,i,j,k;
 char words[33];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 for(j=0;j<33;j++)
 words[j]='\0';
-scanf("%s",words);
+my_scanf("%s",words);
 k=strlen(words);
 if(k>2){
 if(words[k-1]=='g'){
@@ -35,6 +35,6 @@ words[k-j]='\0';
 }
 }
 }
-printf("%s\n",words);
+my_printf("%s\n",words);
 }
 }

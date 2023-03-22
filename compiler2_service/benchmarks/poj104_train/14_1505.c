@@ -10,9 +10,9 @@ int main_bench()
 	};
 	struct stu *head,*p1,*p2,*p,*pmax1,*pmax2,*pmax3;
 	int n,i,j,max1,max2,max3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p1=p2=(struct stu *)malloc(sizeof(struct stu));
-	scanf("%d %d %d",&p1->a,&p1->b,&p1->c);
+	my_scanf("%d %d %d",&p1->a,&p1->b,&p1->c);
 	head=p1;
 	for(i=1;i<n;i++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 		p2->next=p1;
 		p1->back=p2;
 		p2=p1;
-		scanf("%d %d %d",&p1->a,&p1->b,&p1->c);
+		my_scanf("%d %d %d",&p1->a,&p1->b,&p1->c);
 	}
 	p=head;
 	max1=0;
@@ -58,8 +58,8 @@ int main_bench()
 		}
 		p=p->next;
 	}
-	printf("%ld %d\n",pmax1->a,(pmax1->b+pmax1->c));
-	printf("%ld %d\n",pmax2->a,(pmax2->b+pmax2->c));
-	printf("%ld %d\n",pmax3->a,(pmax3->b+pmax3->c));
+	my_printf("%ld %d\n",pmax1->a,(pmax1->b+pmax1->c));
+	my_printf("%ld %d\n",pmax2->a,(pmax2->b+pmax2->c));
+	my_printf("%ld %d\n",pmax3->a,(pmax3->b+pmax3->c));
 	return 0;
 }

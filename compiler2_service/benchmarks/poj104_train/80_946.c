@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a[3],b[3],i,j,k,n=0,d=0,m=0,s=0;
-	scanf("%d%d%d",&a[0],&a[1],&a[2]);
-	scanf("%d%d%d",&b[0],&b[1],&b[2]);
+	my_scanf("%d%d%d",&a[0],&a[1],&a[2]);
+	my_scanf("%d%d%d",&b[0],&b[1],&b[2]);
     for(i=a[0];i<=b[0];i++)
 	{
         if(i%4==0&&i%100!=0||i%400==0)
@@ -35,6 +35,6 @@ int main_bench()
 			m=m+28;
 	}
 	s=n-d-m+b[2]-a[2];
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

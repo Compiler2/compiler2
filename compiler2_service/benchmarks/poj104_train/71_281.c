@@ -26,17 +26,17 @@ int day_of_year(int year, int month, int day) {
 
 int main_bench() {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	for (i = 0; i < n; i++) {
 		int year, month1, month2;
-		scanf("%d%d%d", &year, &month1, &month2);
+		my_scanf("%d%d%d", &year, &month1, &month2);
 		int days1 = day_of_year(year, month1, 1);
 		int days2 = day_of_year(year, month2, 1);
 		
 		if ((days1 - days2) % 7 == 0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }

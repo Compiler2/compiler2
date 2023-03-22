@@ -5,17 +5,17 @@ int main_bench()
 	int n,i;
 	double sumcredit=0,sumgpa=0;
 	double *a,*b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(double*)malloc(n*sizeof(double));
 	b=(double*)malloc(n*sizeof(double));
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",(a+i));
+		my_scanf("%lf",(a+i));
 		sumcredit=sumcredit+*(a+i);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",(b+i));
+		my_scanf("%lf",(b+i));
 		if(*(b+i)>=90&&*(b+i)<=100)
 		{
 			*(b+i)=4.0**(a+i);
@@ -66,5 +66,5 @@ int main_bench()
 			sumgpa=sumgpa+*(b+i);
 		}
 	}
-	printf("%.2lf",sumgpa/sumcredit);
+	my_printf("%.2lf",sumgpa/sumcredit);
 }

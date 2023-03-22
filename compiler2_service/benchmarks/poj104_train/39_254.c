@@ -11,9 +11,9 @@ struct stu
 int main_bench()
 {
 	int n,i,a[100]={0},max=0,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-   	 scanf("%s%d%d %c %c %d",&stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].leader,&stu[i].west,&stu[i].paper);
+   	 my_scanf("%s%d%d %c %c %d",&stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].leader,&stu[i].west,&stu[i].paper);
     for(i=0;i<n;i++)
     {
     	if(stu[i].score1>80&&stu[i].paper>0) a[i]+=8000;
@@ -30,8 +30,8 @@ int main_bench()
     for(i=0;i<n;i++)
     {
     	if(a[i]==max) 
-		{printf("%s\n%d\n",stu[i].name,a[i]);
+		{my_printf("%s\n%d\n",stu[i].name,a[i]);
     	  break;}
     }
-    printf("%d",sum);
+    my_printf("%d",sum);
 }

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char a[256],b[256],c[256];
-	scanf("%s%s%s",b,a,c);
+	my_scanf("%s%s%s",b,a,c);
 	int alen,blen,clen,i,j;
 	alen=strlen(a);blen=strlen(b);clen=strlen(c);
 	int n=0;
@@ -21,10 +21,10 @@ int main_bench()
 	int t=i;
 	if(n==1)
 	{
-	for(i=0;i<t;i++) printf("%c",b[i]);
-	printf("%s",c);
-	for(i=t+clen;i<blen;i++) printf("%c",b[i]);
+	for(i=0;i<t;i++) my_printf("%c",b[i]);
+	my_printf("%s",c);
+	for(i=t+clen;i<blen;i++) my_printf("%c",b[i]);
 	}
-	else printf("%s",b);
+	else my_printf("%s",b);
 	return 0;
 }

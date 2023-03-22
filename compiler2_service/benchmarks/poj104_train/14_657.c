@@ -8,9 +8,9 @@ int sum;
 }st[100002],tmp;
 int main_bench()
 {int i,j,m,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
-{scanf("%d %d %d",&st[i].nn,&st[i].nnn,&st[i].nmn);
+{my_scanf("%d %d %d",&st[i].nn,&st[i].nnn,&st[i].nmn);
 st[i].sum=st[i].nnn+st[i].nmn;
 }
 for(i=1;i<=3;i++)
@@ -24,9 +24,9 @@ for(i=1;i<=3;i++)
 	   }
   }
   for(i=1;i<=3;i++)
-  {printf("%d %d",st[i].nn,st[i].sum);
+  {my_printf("%d %d",st[i].nn,st[i].sum);
   if(i<3)
-  printf("\n");
+  my_printf("\n");
 		}
   return 0;
 }

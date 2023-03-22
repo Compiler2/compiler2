@@ -5,9 +5,9 @@ main_bench()
     char str[256];
     char sub[256];
     char re[256];
-    scanf("%s",str);
-    scanf("%s",sub);
-    scanf("%s",re);
+    my_scanf("%s",str);
+    my_scanf("%s",sub);
+    my_scanf("%s",re);
     int i,j,k,p;
     for(i=0;str[i]!='\0';i++)
     {
@@ -29,13 +29,13 @@ main_bench()
         }
     }
     if(str[i]=='\0')
-        printf("%s",str);
+        my_printf("%s",str);
     else
     {
         for(p=0;p<k;p++)
-           printf("%c",str[p]);
-        printf("%s",re);
+           my_printf("%c",str[p]);
+        my_printf("%s",re);
         for(p=i+1;str[p]!='\0';p++)
-            printf("%c",str[p]);
+            my_printf("%c",str[p]);
     }
 }

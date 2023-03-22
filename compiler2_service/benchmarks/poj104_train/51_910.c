@@ -12,8 +12,8 @@ int main_bench() {
 	int n, i, j, k, x, y, l, f;
 	memset(a, 0, sizeof(a));
 	memset(b, 0, sizeof(b));
-	scanf("%d", &n);
-	scanf("%s", a);
+	my_scanf("%d", &n);
+	my_scanf("%s", a);
 	l = strlen(a)+1;
 	f = 0;
 	for (i=0; i+n<l; i++) {
@@ -25,14 +25,14 @@ int main_bench() {
 			f = b[i];
 	}
 	if (f == 0)
-		printf("NO");
+		my_printf("NO");
 	else {
-		printf("%d\n", f+1);
+		my_printf("%d\n", f+1);
 		for (i=0; i<l; i++)
 			if (b[i] == f) {
 				for (j=0; j<n; j++)
-					printf("%c", a[i+j]);
-				printf("\n");
+					my_printf("%c", a[i+j]);
+				my_printf("\n");
 			}
 	}
 	

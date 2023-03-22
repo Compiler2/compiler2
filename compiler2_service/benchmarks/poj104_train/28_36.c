@@ -24,8 +24,8 @@ main_bench()
 	}
 	for(i=1;i<=max;i++)
 	{
-		if(i!=1)printf(",");
-		printf("%d",l[i]);
+		if(i!=1)my_printf(",");
+		my_printf("%d",l[i]);
 	}
 }
 	

@@ -3,10 +3,10 @@
 
 int main_bench()
 {   int n,k,i,j,h;
-    scanf("%d %d",&n,&k);
+    my_scanf("%d %d",&n,&k);
 	int a[1000],b[1000],sum;
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -23,9 +23,9 @@ int main_bench()
 		sum +=b[h];
 	}
 	if(sum==0)
-		printf("no\n");
+		my_printf("no\n");
 	if(sum!=0)
-		printf("yes\n");
+		my_printf("yes\n");
 				
 
 

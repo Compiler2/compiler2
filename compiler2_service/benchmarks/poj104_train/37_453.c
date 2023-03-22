@@ -4,7 +4,7 @@
 main_bench()
 {
       int n,i,j,k,num,f,wu,c;char *start;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
             
       char *p[n];
@@ -13,7 +13,7 @@ main_bench()
       for(c=0;c<n;c++)
       { 
       p[c]=(char *)malloc(100*sizeof(char));
-      scanf("%s",p[c]);
+      my_scanf("%s",p[c]);
       }
       
       
@@ -41,7 +41,7 @@ main_bench()
                         
                         if(f==1)
                         {
-                        printf("%c",*(p[c]+i));
+                        my_printf("%c",*(p[c]+i));
                         wu=1;
                         }
                          
@@ -49,7 +49,7 @@ main_bench()
                         break;
       }
       if(wu==0)
-      printf("no");
-      printf("\n");
+      my_printf("no");
+      my_printf("\n");
       }
             }

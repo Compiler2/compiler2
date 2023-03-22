@@ -2,10 +2,10 @@
 
 int main_bench(){
     int max,min,n,i,j,x=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	int sx[50001],sy[50001],sz[50001]={0};
 	for(i=0;i<n;i++){
-	   scanf("%d %d",&(sx[i]),&(sy[i]));
+	   my_scanf("%d %d",&(sx[i]),&(sy[i]));
 	   }
 	min=sx[0];
 	max=sy[0];
@@ -30,9 +30,9 @@ int main_bench(){
 		}
 	}
 	if(x==0){
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 	}

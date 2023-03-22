@@ -16,7 +16,7 @@ main_bench()
     if(a[i]=='\0')    
     break;
 }
-  printf("%s",a);
+  my_printf("%s",a);
    getchar();
     getchar();
 

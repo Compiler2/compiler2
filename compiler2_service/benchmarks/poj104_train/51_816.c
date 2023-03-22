@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[500]={0},b[5]={0},c[5]={0};
 	int i,j,ping[500]={0},n,lon,k,l;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	lon=strlen(a);
 	for(i=0;i<=lon-n;i++)
 	{
@@ -45,7 +45,7 @@ int main_bench()
 		{
 		if(ping[i]==1)
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 		else
@@ -53,12 +53,12 @@ int main_bench()
 			l++;
 			if(l==1)
 			{
-				printf("%d\n",ping[i]);
-				printf("%s\n",b);
+				my_printf("%d\n",ping[i]);
+				my_printf("%s\n",b);
 			}
 			else
 			{
-				printf("%s\n",b);
+				my_printf("%s\n",b);
 			}
 		}
 	}

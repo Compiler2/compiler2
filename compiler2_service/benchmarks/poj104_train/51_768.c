@@ -6,8 +6,8 @@ int main_bench()
 	int i1,i2,i3,i4,i5,i6,i7;
 	int a[510][5],num[510];
 	char str[510];
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	len=strlen(str);
 	memset(num,0,sizeof(num));
 	memset(a,0,sizeof(a));
@@ -33,10 +33,10 @@ int main_bench()
 		  max=num[i5];
 	}
 	if(max==0)
-		printf("NO");
+		my_printf("NO");
 	else
 	  {p=max+1;
-printf("%d\n",p);
+my_printf("%d\n",p);
 		for(i6=0;i6<=len-n;i6++)
 	    {
 		 if(num[i6]==max)
@@ -44,9 +44,9 @@ printf("%d\n",p);
 			 for(i7=0;i7<=n-1;i7++)
 			 {
 				 if(i7==n-1)
-					 printf("%c\n",str[i6+i7]);
+					 my_printf("%c\n",str[i6+i7]);
 				 else
-				     printf("%c",str[i6+i7]);
+				     my_printf("%c",str[i6+i7]);
 			 }
          }	
 	    }

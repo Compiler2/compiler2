@@ -94,10 +94,10 @@ int DATE1(int M1)
 int main_bench()
 {
 	int i,n,YEAR[210],MONTH1[210],MONTH2[210],P[210],Q[210],A[210],B[210];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&YEAR[i],&MONTH1[i],&MONTH2[i]);
+		my_scanf("%d%d%d",&YEAR[i],&MONTH1[i],&MONTH2[i]);
 	    if(YEAR[i]%4!=0)
 		{
 			P[i]=1;
@@ -145,15 +145,15 @@ int main_bench()
 	{
 		if(i!=0)
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 		if(Q[i]==1)
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 		else
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 	}
     return 0;

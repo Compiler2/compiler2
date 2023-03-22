@@ -40,5 +40,5 @@ int main_bench()
       else if(sen_1[i]=='\0'&&sen_2[i]=='\0')
       break;
     }
-    printf("%c",flag);
+    my_printf("%c",flag);
 }

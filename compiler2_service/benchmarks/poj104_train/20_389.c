@@ -6,18 +6,18 @@ int main_bench()
 for(;;)
 {char a[11],b[4];
 int n,i;
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%s",a);
+my_scanf("%s",b);
 if(a[0]=='\0')
 break;
 n=f(a);
 for(i=0;i<=n;i++)
-printf("%c",*(a+i));
+my_printf("%c",*(a+i));
 for(i=0;i<=2;i++)
-printf("%c",*(b+i));
+my_printf("%c",*(b+i));
 for(i=n+1;*(a+i)!='\0';i++)
-printf("%c",*(a+i));
-printf("\n");
+my_printf("%c",*(a+i));
+my_printf("\n");
 a[0]='\0';
 
 }

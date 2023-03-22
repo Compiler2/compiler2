@@ -20,12 +20,12 @@ int main_bench(){
 	j=0;
 	kongge[k]=n;
 	if(j==0){
-		printf("%d",kongge[j+1]-kongge[j]-1);
+		my_printf("%d",kongge[j+1]-kongge[j]-1);
 		j++;
 	}
 	for(j=1;j<k;j++){
 		if((kongge[j+1]-kongge[j]-1)!=0){
-			printf(",%d",kongge[j+1]-kongge[j]-1);
+			my_printf(",%d",kongge[j+1]-kongge[j]-1);
 		}
 	}
 	return 0;

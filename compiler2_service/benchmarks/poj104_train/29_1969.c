@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,j,m,n;
 	double a[1000],b[1000],s=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=1;j<=m;j++)
 	{
 		s=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		a[0]=2;a[1]=3;
 	    b[0]=1;b[1]=2;
 		for(i=0;i<n;i++)
@@ -20,7 +20,7 @@ int main_bench()
 		{
 			s=s+a[i]/b[i];
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

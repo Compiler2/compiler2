@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,s=0,d=0;
 	int a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<n-1;i++){
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90){
@@ -23,6 +23,6 @@ int main_bench(){
 			d=s;
 		}
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

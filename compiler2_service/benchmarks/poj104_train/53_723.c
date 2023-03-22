@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int b[301],a[301],i,n,*p1,*p2,*p3,*p4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p1=a;
 	for (i=0;i<n;i++)
-		scanf("%d",p1+i);
+		my_scanf("%d",p1+i);
 	p3=b;
 	for (p1=a;p1<a+n;p1++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 		}
 	}
 	for (p4=b;p4<p3-1;p4++)
-		printf("%d,",*p4);
-	printf("%d\n",*p4);
+		my_printf("%d,",*p4);
+	my_printf("%d\n",*p4);
 }
 

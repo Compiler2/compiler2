@@ -4,7 +4,7 @@ main_bench(){
       int a[301];
       int b[301];
       int i,j,n,m,c,x;
-      scanf("%d %d",&n,&m);
+      my_scanf("%d %d",&n,&m);
       while(n!=0){
       for(i=1;i<=n;i++)a[i]=i;
       x=n;
@@ -12,7 +12,7 @@ main_bench(){
       for(j=1;j<=x;j++)a[j]=b[j];
                        
                        }
-                       printf("%d\n",a[1]);
-                      scanf("%d %d",&n,&m); }
+                       my_printf("%d\n",a[1]);
+                      my_scanf("%d %d",&n,&m); }
       
        }

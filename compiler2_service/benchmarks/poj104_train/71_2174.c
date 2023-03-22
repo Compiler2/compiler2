@@ -18,10 +18,10 @@ int main_bench()
 	int i,j=0;
 	int time;
 	int year,m1,m2;
-	scanf("%d",&time);
+	my_scanf("%d",&time);
 	for(;time>0;time--)
 	{
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		a[1]=y(year);
 		if(m1>m2)
 		{
@@ -36,11 +36,11 @@ int main_bench()
 		}
 		if(day%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 		j++;
 	}

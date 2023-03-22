@@ -30,8 +30,8 @@ int main_bench()
 		else continue;
 	}
 	for(i=0;i<m-1;i++)
-		printf("%s ",words[i]);
-	printf("%s\n",words[m-1]);
+		my_printf("%s ",words[i]);
+	my_printf("%s\n",words[m-1]);
 }
 
 

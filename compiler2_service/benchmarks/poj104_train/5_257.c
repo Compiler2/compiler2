@@ -3,8 +3,8 @@
 int main_bench(){
 	char DNA1[501],DNA2[501];
 	double rate;
-	scanf("%lf",&rate);
-	scanf("%s %s",DNA1,DNA2);
+	my_scanf("%lf",&rate);
+	my_scanf("%s %s",DNA1,DNA2);
 	int i,len1,len2,flag=0;
 	len1=strlen(DNA1);
 	len2=strlen(DNA2);
@@ -24,7 +24,7 @@ int main_bench(){
 		else{flag=1;}
 	}
 	if(flag==1){
-	printf("error\n");
+	my_printf("error\n");
 	}
 	else{
 	int c=0;
@@ -36,10 +36,10 @@ int main_bench(){
 	}
 	result=1.0*c/len1;
 	if(result>rate){
-	printf("yes");
+	my_printf("yes");
 	}
 	else{
-	printf("no");
+	my_printf("no");
 	}
 	}
 	return 0;

@@ -11,13 +11,13 @@ int pfCompare(const void *elem1, const void *elem2)
 int input()
 {
     int i;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     p=(int *)malloc(m*sizeof(int));
     q=(int *)malloc(n*sizeof(int));
     for(i=0;i<m;i++)
-        scanf("%d",&p[i]);
+        my_scanf("%d",&p[i]);
     for(i=0;i<n;i++)
-        scanf("%d",&q[i]);
+        my_scanf("%d",&q[i]);
 }
 
 int downsort()
@@ -39,9 +39,9 @@ int combine()
 int output()
 {
     int i;
-    printf("%d",s[0]);
+    my_printf("%d",s[0]);
     for(i=1;i<m+n;i++)
-        printf(" %d",s[i]);
+        my_printf(" %d",s[i]);
     free(p);
     free(q);
     free(s);

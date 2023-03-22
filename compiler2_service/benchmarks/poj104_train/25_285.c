@@ -4,7 +4,7 @@ int main_bench(){
     int n,i,c=0,j;
     int B[300]={0};
     B[1]=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
        for(j=1;j<300;j++){
        	   B[j]=B[j]*2+c;
@@ -21,7 +21,7 @@ int main_bench(){
 	    }
     }
     for(j=i;j>0;j--){
-    	printf("%d",B[j]);
+    	my_printf("%d",B[j]);
     }
 	return 0;
 }

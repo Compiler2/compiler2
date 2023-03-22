@@ -7,10 +7,10 @@ int main_bench()
 	int b[100];
 	int h[100];
 	int m,n,i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	n=0;
 	for(n=0;n<m;n++)
-		scanf("%d %d",&a[n],&b[n]);
+		my_scanf("%d %d",&a[n],&b[n]);
 	i=0;
 	j=0;
 	n=0;
@@ -32,7 +32,7 @@ int main_bench()
 		if(h[i]>h[0])
 			h[0]=h[i];
 	}
-	printf("%d\n",h[0]);
+	my_printf("%d\n",h[0]);
 	return 0;
 }
 		

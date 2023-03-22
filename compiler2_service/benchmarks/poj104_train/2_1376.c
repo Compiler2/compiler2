@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>0){
 	struct a
 	{
@@ -20,7 +20,7 @@ int main_bench()
 	char k;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&a[i].x,&a[i].y);
+		my_scanf("%d %s",&a[i].x,&a[i].y);
 		a[i].l=strlen(a[i].y);
 	}
 	for(i=0;i<=25;i++)
@@ -47,14 +47,14 @@ int main_bench()
 	{
 		if(b[i].x==max)
 		{
-			printf("%c\n",b[i].y);
-			printf("%d\n",b[i].x);
+			my_printf("%c\n",b[i].y);
+			my_printf("%d\n",b[i].x);
 			for(j=0;j<n;j++)
 			{
 				for(p=0;p<a[j].l;p++)
 				{
 					if(a[j].y[p]==b[i].y)
-					{printf("%d\n",a[j].x);break;}
+					{my_printf("%d\n",a[j].x);break;}
 				}
 			}
 			break;

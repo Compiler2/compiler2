@@ -5,12 +5,12 @@ int main_bench()
 	int a,b=0,c,i;
 	char x;
 	
-		scanf("%d",&a);
-		scanf("%c",&x);
+		my_scanf("%d",&a);
+		my_scanf("%c",&x);
 		if(x==44)
 		for(i=1;i<=300;i++)
 		{
-			scanf("%d",&c);
+			my_scanf("%d",&c);
 			if(c>a)
 			{
 				b=a;
@@ -31,13 +31,13 @@ int main_bench()
 				a=a;
 				b=b;
 			}
-		scanf("%c",&x);
+		my_scanf("%c",&x);
 		if(x!=44)
 			break;
 		}
 		if(b!=0)
-		    printf("%d",b);
+		    my_printf("%d",b);
 		if(b==0)
-			printf("No");
+			my_printf("No");
 		return 0;
 } 

@@ -7,7 +7,7 @@ int main_bench()
 	int n;
 	int num;
 	int count=0,order=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sz[0]=2;
 	for(num=3;num<n+1;num=num+2)
 	{
@@ -32,13 +32,13 @@ int main_bench()
 	{
 		if(sz[i]+2==sz[i+1])
 		{
-			printf("%d %d\n",sz[i],sz[i+1]);
+			my_printf("%d %d\n",sz[i],sz[i+1]);
 			flag=1;
 		}
 	}
 	if(flag==0)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 	return 0;
 }

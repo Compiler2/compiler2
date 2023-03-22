@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[100];
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		if(a[0]-'A'>=0&&a[0]-'Z'<=0||
 			a[0]-'_'==0||
 			a[0]-'a'>=0&&a[0]-'z'<=0)
@@ -15,7 +15,7 @@ int main_bench(){
 			{
 				if(a[j]=='\0')
 				{
-					printf("yes\n");
+					my_printf("yes\n");
 					break;
 				}else
 				if(a[j]-'A'>=0&&a[j]-'Z'<=0||
@@ -26,14 +26,14 @@ int main_bench(){
 					continue;
 				}else
 				{
-					printf("no\n");
+					my_printf("no\n");
 					break;
 				}
 
 			}
 		}else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
         return 0;

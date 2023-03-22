@@ -23,7 +23,7 @@ int main_bench(){
 	int lengtha,lengthb,sum[252],lon,i,lina,linb,cha,sh;
 	d[0]='0';
 	d[1]='\0';
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	lengtha=strlen(a);
 	lengthb=strlen(b);
 	for(lina=0;lina<lengtha;lina++){
@@ -68,14 +68,14 @@ int main_bench(){
 		}
 	}
 	if(sh==0){
-		if(sum[0]==1)printf("1");
-	    for(i=1;i<=lon;i++)printf("%d",sum[i]);
-	    printf("\n");
+		if(sum[0]==1)my_printf("1");
+	    for(i=1;i<=lon;i++)my_printf("%d",sum[i]);
+	    my_printf("\n");
 	}
 	else{
-	if(sum[sh-1]==1)printf("1");
-	for(i=sh;i<=lon;i++)printf("%d",sum[i]);
-	printf("\n");
+	if(sum[sh-1]==1)my_printf("1");
+	for(i=sh;i<=lon;i++)my_printf("%d",sum[i]);
+	my_printf("\n");
 	}
 	return 0;
 }

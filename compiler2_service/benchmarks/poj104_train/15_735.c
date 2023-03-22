@@ -5,12 +5,12 @@ int main_bench()
 {
 	int n,b[1000][1000],i,k,s;
 	int x1,x2,y1,y2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(k=0;k<n;k++)
 		{
-			scanf("%d",&(b[i][k]));
+			my_scanf("%d",&(b[i][k]));
 		}
 	}
 	for(i=0;i<n;i++)
@@ -30,6 +30,6 @@ int main_bench()
 		}
 	}
 	s=(x2-x1-1)*(y2-y1-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

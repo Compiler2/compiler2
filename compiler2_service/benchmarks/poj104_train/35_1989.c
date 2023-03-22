@@ -5,10 +5,10 @@ int main_bench(){
     int p,q,i,k;
     int m=0;
     int e,s,t,c;
-    scanf("%d,%d",&p,&q);
+    my_scanf("%d,%d",&p,&q);
     for (i=0;i<p;i++){
         for (k=0;k<q;k++){
-                           scanf("%d",&a[i][k]);
+                           my_scanf("%d",&a[i][k]);
                          }
                       }
     for (i=0;i<p;i++){
@@ -40,14 +40,14 @@ int main_bench(){
                                                              }
                                                         }
                                        if(c==p){
-                                               printf("%d+%d",i,k);
+                                               my_printf("%d+%d",i,k);
                                                m=1;
                                                }
                                        }
                              }
                       }
     if(m==0){
-             printf("No");
+             my_printf("No");
              }
     return 0;
 }

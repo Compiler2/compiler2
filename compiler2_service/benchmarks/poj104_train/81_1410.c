@@ -17,16 +17,16 @@ int main_bench(){
 int a[5][5],n,m;
 for(n=0;n<5;n++)
  for(m=0;m<5;m++)
-  scanf("%d",&a[n][m]);
-scanf("%d%d",&n,&m);
+  my_scanf("%d",&a[n][m]);
+my_scanf("%d%d",&n,&m);
 if(exchange(a,n,m)==0)
- printf("error\n");
+ my_printf("error\n");
 else{
  for(n=0;n<5;n++)
   for(m=0;m<5;m++)
    if(m==4)
-    printf("%d\n",a[n][m]);
+    my_printf("%d\n",a[n][m]);
    else
-    printf("%d ",a[n][m]);
+    my_printf("%d ",a[n][m]);
 }
 }

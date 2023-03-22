@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,c,d,e,f,m,n;
 	int num=0;
 	int i,o,p;
-	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 	for(i=a+1;i<d;i++)
 	{
 		if((i%4==0&&i%100!=0)||(i%400==0))
@@ -104,6 +104,6 @@ int main_bench()
 	}
 
 	n=n+p-o;
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 	}

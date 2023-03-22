@@ -6,16 +6,16 @@ main_bench()
 	int n,m;
 	int i,j;
 	int k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if (m==1 || m==2)
 		{
 			if (i==0)
-			    printf("1\n");
+			    my_printf("1\n");
 			else
-				printf("\n1\n");
+				my_printf("\n1\n");
 		}
 		else
 		{
@@ -26,9 +26,9 @@ main_bench()
 		        a[j]=a[j-1]+a[j-2];
 			}
 			if (i==0)
-	            printf("%d\n",a[m-2]);
+	            my_printf("%d\n",a[m-2]);
 			else
-				printf("\n%d\n",a[m-2]);
+				my_printf("\n%d\n",a[m-2]);
 		}
 	}
 }

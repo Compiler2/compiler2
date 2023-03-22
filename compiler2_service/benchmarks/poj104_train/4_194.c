@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int r,c,i,j,s;
-	scanf ("%d%d",&r,&c);
+	my_scanf ("%d%d",&r,&c);
 	int x[100][100];
 	for (i=0;i<r;i++)
 	{
 		for (j=0;j<c;j++)
 		{
-		scanf ("%d",&x[i][j]);
+		my_scanf ("%d",&x[i][j]);
 		
 		}
 	}
@@ -22,7 +22,7 @@ int main_bench()
 	  {
 	  if (i+j==s)
 	  {
-	  printf ("%d\n",x[i][j]);
+	  my_printf ("%d\n",x[i][j]);
 	  
 	  }
 	  

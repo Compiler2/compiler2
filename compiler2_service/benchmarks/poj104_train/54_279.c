@@ -4,7 +4,7 @@ int main_bench()
 {
 int n,k,a,i;
 i=1;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 if(n==2)a=8-k;
 else{
 	a=n;
@@ -15,5 +15,5 @@ else{
 	}while(i!=n);
 	a=a-(n-1)*k;
 }
-printf("%d",a);
+my_printf("%d",a);
 }

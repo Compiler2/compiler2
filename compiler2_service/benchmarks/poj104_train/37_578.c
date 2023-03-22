@@ -4,9 +4,9 @@ int main_bench()
 {
  int t,i,j,k,l,p,q;
  char s[100][100];
- scanf("%d",&t);
+ my_scanf("%d",&t);
  for(k=0;k<t;k++)
-  scanf("%s",s[k]);
+  my_scanf("%s",s[k]);
  for(k=0;k<t;k++)
  {
   l=strlen(s[k]);
@@ -24,13 +24,13 @@ int main_bench()
    }
    if(p==0)
     {
-     printf("%c\n",s[k][i]);
+     my_printf("%c\n",s[k][i]);
      q=1;
      break;        
     }                     
   }            
   if(q==0)
-    printf("no\n");    
+    my_printf("no\n");    
  } 
  getchar();
  getchar();

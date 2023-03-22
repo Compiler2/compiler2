@@ -5,12 +5,12 @@ const int MAXN = 600;
 
 int main_bench()
 {
-    int n; scanf("%d", &n);
+    int n; my_scanf("%d", &n);
     int num[MAXN], temp;
     int i, j, index = 0;
     for (i = 0; i < n; ++ i)
     {
-        scanf("%d", &temp);
+        my_scanf("%d", &temp);
         if (temp % 2 == 1)
            num[index ++] = temp;
     }
@@ -22,7 +22,7 @@ int main_bench()
                         num[j - 1] = num[j];
                         num[j] = temp;
                }
-    printf("%d", num[0]);
+    my_printf("%d", num[0]);
     for (i = 1; i < index; ++ i)
-        printf(",%d", num[i]);
+        my_printf(",%d", num[i]);
 }

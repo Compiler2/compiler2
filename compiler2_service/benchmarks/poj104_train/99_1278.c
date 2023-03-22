@@ -3,11 +3,11 @@
 void sort(float a,float b);
 int n,*sz;
 int main_bench(){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     sz=(int*)malloc(n*sizeof(int));
     int i;
     for(i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     sort(1,18);
     sort(19,35);
@@ -25,10 +25,10 @@ void sort(float a,float b){
         }
     }
     if(b!=1000){
-        printf("%.0f-%.0f: %.2f%\n",a,b,c/n*100);
+        my_printf("%.0f-%.0f: %.2f%\n",a,b,c/n*100);
     }else if(c/n*100!=42.59){
-        printf("Over60: %.2f%\n",c/n*100);
+        my_printf("Over60: %.2f%\n",c/n*100);
     }else{
-        printf("60??: %.2f%\n",c/n*100);
+        my_printf("60??: %.2f%\n",c/n*100);
     }
 }

@@ -4,14 +4,14 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char s[100];
 char *m;
 int i;
 int p;
 for(i=1;i<=n;i++)
 {
-	scanf("%s",s);
+	my_scanf("%s",s);
 	for(m=s;*m!='\0';m++)
 	{
 		if(m==s)
@@ -40,9 +40,9 @@ for(i=1;i<=n;i++)
 		}
 	}
 	if(p==1)
-		printf("yes\n");
+		my_printf("yes\n");
 	else
-		printf("no\n");
+		my_printf("no\n");
 }
 return 0;
 }

@@ -14,10 +14,10 @@ int main_bench()
 	char ma[100]={'\0'};
 	int i,j,k;
 	int zong=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",name[i],&qimo[i],&ban[i],&xue[i],&xi[i],&lun[i]);
+		my_scanf("%s %d %d %c %c %d",name[i],&qimo[i],&ban[i],&xue[i],&xi[i],&lun[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -36,7 +36,7 @@ int main_bench()
 		}
 	    zong=zong+sum[i];
 	}
-    printf("%s\n%d\n%d",ma,max,zong);
+    my_printf("%s\n%d\n%d",ma,max,zong);
 	return 0;
 }
 

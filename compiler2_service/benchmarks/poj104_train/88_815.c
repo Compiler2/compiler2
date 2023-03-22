@@ -11,12 +11,12 @@ int main_bench()
 	      {
 		  if(num==1)
 	      {
-		  printf("%c",*p);
+		  my_printf("%c",*p);
 		  num=1;
 	      }
           else
           {
-		  printf("\n%c",*p);
+		  my_printf("\n%c",*p);
 		  num=1;
           }
 	      }

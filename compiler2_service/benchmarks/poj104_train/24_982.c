@@ -44,7 +44,7 @@ for(n=1;n<mark;n++){
 	                    minIndex=n;
 				}
 }
-printf("%s\n%s\n",zfc[maxIndex],zfc[minIndex]);
+my_printf("%s\n%s\n",zfc[maxIndex],zfc[minIndex]);
 
 return 0;
 }

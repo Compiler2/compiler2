@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,a[300];
 	int cra,crb,rnd,sdx,year,jy1,nl1,yue1,month2,l,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 	
-	scanf("%d %d %d",&year,&yue1,&month2);
+	my_scanf("%d %d %d",&year,&yue1,&month2);
 	rnd=((year-1)/4-(year-1)/100+(year-1)/400)*(366%7);
     sdx=(year-1-((year-1)/4-(year-1)/100+(year-1)/400))*(365%7);
 	if((year%400)==0||((year%4)==0&&(year%100)!=0))
@@ -92,11 +92,11 @@ int main_bench()
 	{
 		if(a[i]==1)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

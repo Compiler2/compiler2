@@ -13,13 +13,13 @@ int main_bench()
 void sca(int x[100],int y[100])
 {
 	int m,n,i,j,k;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	
 	for(i=1;i<=m;i++)
-	scanf("%d",&x[i]);
+	my_scanf("%d",&x[i]);
 	
 	for(i=1;i<=n;i++)
-	scanf("%d",&y[i]);
+	my_scanf("%d",&y[i]);
 	
 	for(i=1;i<=m;i++)
 		{
@@ -34,7 +34,7 @@ void sca(int x[100],int y[100])
 			}
 		}
 	for(i=1;i<=m;i++)
-		printf("%d ",x[i]);
+		my_printf("%d ",x[i]);
 	for(i=1;i<=n;i++)
 		{
 			for(j=1;j<=n-i;j++)
@@ -48,8 +48,8 @@ void sca(int x[100],int y[100])
 			}
 		}
 	for(i=1;i<n;i++)
-		printf("%d ",y[i]);
-	printf("%d",y[n]);
+		my_printf("%d ",y[i]);
+	my_printf("%d",y[n]);
 	
 		
 	

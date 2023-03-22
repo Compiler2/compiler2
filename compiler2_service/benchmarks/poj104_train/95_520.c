@@ -18,17 +18,17 @@ int main_bench()
 	{
 		if ((s[i]>w[i]))
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		if ((s[i]<w[i]))
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 	}
 	if(i==a)
-		printf("=");
+		my_printf("=");
 	return 0;
 }
 

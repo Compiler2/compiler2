@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[50],b[50];
 	int i,j;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	i=0;j=0;
 	while (a[i]!=0&&b[i]!=0)
 		if (b[j]==a[i])
@@ -18,8 +18,8 @@ int main_bench()
 			i=0;
 		}
 	if (a[i]==0)
-		printf("%d\n",j-i);
-	else printf("no\n");
+		my_printf("%d\n",j-i);
+	else my_printf("no\n");
 }
 
 

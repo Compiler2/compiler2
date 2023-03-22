@@ -10,13 +10,13 @@ void inputarray(int a[], int n)
 	int i;	
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 }
 
 void input()
 {
-	scanf("%d %d", &m, &n);
+	my_scanf("%d %d", &m, &n);
 	inputarray(a, m);
 	inputarray(b, n);
 }
@@ -56,9 +56,9 @@ void output(int a[], int n)
 	int i;
 	for(i = 0; i < n - 1; i++)
 	{
-		printf("%d ", a[i]);
+		my_printf("%d ", a[i]);
 	}
-	printf("%d", a[i]);
+	my_printf("%d", a[i]);
 }
 
 int main_bench()

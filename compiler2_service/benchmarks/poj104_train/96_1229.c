@@ -6,7 +6,7 @@ int main_bench()
 	char a[101];
 	for (u=0;u<100;u++)
 		a[u]='\0';
-	scanf ("%s",a);
+	my_scanf ("%s",a);
 	char shang[101];
 	for (u=0;u<100;u++)
 		shang[u]='\0';
@@ -41,5 +41,5 @@ int main_bench()
 			yu=(a[i+1]-'0'+yu*10)%13;
 		}
 	}
-	printf ("%s\n%d\n",shang,yu);
+	my_printf ("%s\n%d\n",shang,yu);
 }

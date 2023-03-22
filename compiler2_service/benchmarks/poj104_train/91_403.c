@@ -14,7 +14,7 @@ int main_bench()
                     s2[i]=s1[i]+s1[0];
     }
     for(j=0;j<l;j++)
-    printf("%c",s2[j]);
+    my_printf("%c",s2[j]);
     return 0;
 }
 

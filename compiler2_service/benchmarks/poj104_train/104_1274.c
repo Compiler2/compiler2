@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,y,i,j,c,d,t=0,m,a[12],b[12];
-    scanf("%d%d",&x,&y);
+    my_scanf("%d%d",&x,&y);
     a[0]=x;
 	b[0]=y;
 	for(i=1;;i++)
@@ -38,6 +38,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",m);
+	my_printf("%d\n",m);
    return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char a[502],b[502];
 	int l1,l2;
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	l1=strlen(a);
 	l2=strlen(b);
 	int i,k=0,flag;
@@ -19,7 +19,7 @@ int main_bench()
 		{flag=1;}
 	if(l1!=l2||flag==1)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -30,10 +30,10 @@ int main_bench()
 		}
 		if(1.0*k/l1>=n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else 
-			printf("no");
+			my_printf("no");
 	}
 	return 0;                               
 }

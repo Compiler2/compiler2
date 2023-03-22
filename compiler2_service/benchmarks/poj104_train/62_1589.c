@@ -8,7 +8,7 @@ int main_bench()
     for(i=0;i<strlen(s);i++)
     {
         if(s[i-1]==' '&&(i-1>0)&&s[i]==' ')   continue;
-        else printf("%c",s[i]);
+        else my_printf("%c",s[i]);
 }
     return 0;
 }

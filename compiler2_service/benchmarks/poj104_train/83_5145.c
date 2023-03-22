@@ -3,13 +3,13 @@
 int main_bench(){
     int n,s=0;
     float j=0,z;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int xf[n],sf[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&xf[i]);
+        my_scanf("%d",&xf[i]);
     }
     for(int i=0;i<n;i++){
-        scanf("%d",&sf[i]);
+        my_scanf("%d",&sf[i]);
     }
     for(int i=0;i<n;i++){
         s=s+xf[i];
@@ -47,7 +47,7 @@ int main_bench(){
         }
     }
     z=j/s;
-    printf("%.2f",z);
+    my_printf("%.2f",z);
     return 0;
 }
 

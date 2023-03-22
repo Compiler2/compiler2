@@ -10,14 +10,14 @@ int main_bench()
 	 	 if(*p==' ')
 		 {
 			 *p='\0';
-			 if(strcmp(q,former)==0) printf("%s ",latter);
-			 else printf("%s ",q);
+			 if(strcmp(q,former)==0) my_printf("%s ",latter);
+			 else my_printf("%s ",q);
 			 q=p+1;
 		 }
 		 else if(*p=='\0')
 		 {
-			 if(strcmp(q,former)==0) printf("%s\n",latter);
-			 else printf("%s\n",q);
+			 if(strcmp(q,former)==0) my_printf("%s\n",latter);
+			 else my_printf("%s\n",q);
 			 break;
 		 }
 	 

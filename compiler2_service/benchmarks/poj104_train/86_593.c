@@ -5,15 +5,15 @@ int main_bench()
 	int counts;int sum;
 	int a[100];
 	int n;int i,c;int m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		c=0;
 		sum=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(i=0;i<m;i++)
 		{
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 		}
 		for(i=0;i<m;i++)
 		{
@@ -29,6 +29,6 @@ int main_bench()
 				break;
 			}
 		}
-		printf("%d\n",60-c);
+		my_printf("%d\n",60-c);
 	}
 }

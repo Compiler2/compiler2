@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[100005],*p,*q;
 	int n,i,k,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(s);
@@ -28,11 +28,11 @@ int main_bench()
 					}
 				}
 				if(k)
-					printf("%c\n",*p);
+					my_printf("%c\n",*p);
 			}
 			else k=0;
 		}
 	}
 		if(k==0)
-			printf("no");
+			my_printf("no");
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int a[300],x,t,n,k,m;
 	for(x=0;w!='\n';x++)
 	{
-		scanf("%d%c",&a[x],&w);
+		my_scanf("%d%c",&a[x],&w);
 	}
 	for(k=x-1;k>0;k--)
 	{
@@ -20,12 +20,12 @@ int main_bench()
 	   }
 	}
 	}
-	if(x==1||a[0]==a[x-1])printf("No");
+	if(x==1||a[0]==a[x-1])my_printf("No");
 	else 
 	{
 		for(m=x-1;a[m]==a[m-1];m=m-1)
 		{}
-	printf("%d",a[m-1]);
+	my_printf("%d",a[m-1]);
 	
 	}
 

@@ -4,8 +4,8 @@ int main_bench()
 {   int i,j,t,MAXLEN,flag=0;
 	char s1[500],s2[500];
 	int a1[500]={0},a2[500]={0},a[500]={0};
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	for(i=0;i<strlen(s1);i++){
 		a1[strlen(s1)-1-i]=s1[i]-'0';
 	}
@@ -36,16 +36,16 @@ int main_bench()
 		if(a[i]!=0){
 			flag=1;
 			if(flag){
-				printf("%d",a[i]);				}
+				my_printf("%d",a[i]);				}
 			}
 		else{
 			if(flag){
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 			}
 		}
 	}
 	if(flag==0){
-		printf("0");
+		my_printf("0");
 	}
 	return 0;
 }

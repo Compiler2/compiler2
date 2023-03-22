@@ -4,12 +4,12 @@ int s[1000][1000];
 int main_bench()
 {
 	int n,i,k,area,a,b,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(k=0;k<n;k++)
 		{
-			scanf("%d",&s[i][k]);
+			my_scanf("%d",&s[i][k]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -52,6 +52,6 @@ int main_bench()
 		else{break;}
 	}
 	area=(d-b-1)*(c-a-1);
-	printf("%d",area);
+	my_printf("%d",area);
 	return 0;
 }

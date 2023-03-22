@@ -3,9 +3,9 @@
 int main_bench(){
 int a,i,t,m=0,n=0,p=0,q=0;
 double x,y,z,v;
-scanf("%d",&a);
+my_scanf("%d",&a);
 for(i=0;i<a;i++){
-scanf("%d",&t);
+my_scanf("%d",&t);
 if(t<=18)
 m+=1;
 else if((t>=19)&&(t<36))
@@ -18,9 +18,9 @@ x=m*100.0/a;
 y=n*100.0/a;
 z=p*100.0/a;
 v=q*100.0/a;
-printf("1-18: %.2lf%%\n",x);
-printf("19-35: %.2lf%%\n",y);
-printf("36-60: %.2lf%%\n",z);
-printf("60??: %.2lf%%\n",v);
+my_printf("1-18: %.2lf%%\n",x);
+my_printf("19-35: %.2lf%%\n",y);
+my_printf("36-60: %.2lf%%\n",z);
+my_printf("60??: %.2lf%%\n",v);
 return 0;
 }

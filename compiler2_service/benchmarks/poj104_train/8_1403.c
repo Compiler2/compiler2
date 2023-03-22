@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n;
 	void f1(int x),f2(int x);
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	f1(m);
 	f2(n);
 	return 0;
@@ -13,7 +13,7 @@ void f1(int x)
 {
 	int i,m,j=0,a[2][100];
 	for(i=0;i<x;i++)
-	scanf("%d",&a[0][i]);
+	my_scanf("%d",&a[0][i]);
 	while(j<x)
 	{
 	m=a[0][0];
@@ -32,15 +32,15 @@ void f1(int x)
     {
 	if(i!=x-1) 
 
-    printf(" %d",a[1][i]);
-    else printf("%d",a[1][i]);
+    my_printf(" %d",a[1][i]);
+    else my_printf("%d",a[1][i]);
     }
 }
 void f2(int x)
 {
 	int i,m,j=0,a[2][100];
 	for(i=0;i<x;i++)
-	scanf("%d",&a[0][i]);
+	my_scanf("%d",&a[0][i]);
 	while(j<x)
 	{
 	m=a[0][0];
@@ -56,6 +56,6 @@ void f2(int x)
 	}
     }
     for(i=x-1;i>=0;i--)
-    printf(" %d",a[1][i]);
+    my_printf(" %d",a[1][i]);
 
 }

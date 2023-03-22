@@ -2,21 +2,21 @@
 
 int main_bench(){
 	double a;
-	scanf("%lf",&a);
+	my_scanf("%lf",&a);
 	char x[1000],y[1000];
-	scanf("%s %s",x,y);
+	my_scanf("%s %s",x,y);
 	int l=strlen(x),k=0,o=strlen(y);
 	if(l!=o){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(int i=0;i<l;i++){
 		if(!(x[i]=='A'||x[i]=='T'||x[i]=='G'||x[i]=='C')){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 		if(!(y[i]=='A'||y[i]=='T'||y[i]=='G'||y[i]=='C')){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 		if(x[i]==y[i]){
@@ -24,9 +24,9 @@ int main_bench(){
 		}
 	}
 	if(1.0*k/l>a){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

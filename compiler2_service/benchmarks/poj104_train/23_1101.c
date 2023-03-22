@@ -17,6 +17,6 @@ int main_bench()
 	c[j][i]='\0';
 	int num=j;
 	for(;j>0;j--)
-	printf("%s ",c[j]);
-	printf("%s",c[0]);
+	my_printf("%s ",c[j]);
+	my_printf("%s",c[0]);
 }

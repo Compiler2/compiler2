@@ -3,11 +3,11 @@
 int main_bench()
 {
 int i,r=0,n,m,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[10000],b[10000];
 for(i=0;i<n;i++)
 {
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -40,7 +40,7 @@ b[j-1]=b[j-1];
 }
 for(i=0;i<r-1;i++)
 {
-printf("%d,",b[i]);
+my_printf("%d,",b[i]);
 }
-printf("%d",b[r-1]);
+my_printf("%d",b[r-1]);
 }

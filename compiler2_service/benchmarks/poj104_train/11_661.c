@@ -3,7 +3,7 @@
 int main_bench()
 {
     int y,m,d,sum,jan=31,feb,mar=31,apr=30,may=31,jun=30,jul=31,aug=31,sep=30,oct=31,nov=30;
-    scanf("%d%d%d",&y,&m,&d);
+    my_scanf("%d%d%d",&y,&m,&d);
     if((y%400==0)||((y%4==0)&&(y%100!=0)))
     feb=29;
     else feb=28;
@@ -22,6 +22,6 @@ int main_bench()
     case 11:sum=jan+feb+mar+apr+may+jun+jul+aug+sep+oct+d;break;
     case 12:sum=jan+feb+mar+apr+may+jun+jul+aug+sep+oct+nov+d;break;
     }
-    printf("%d",sum);
+    my_printf("%d",sum);
     return 0;
 }

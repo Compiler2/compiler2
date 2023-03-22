@@ -5,9 +5,9 @@ int main_bench()
 {
   char s[100][100];
   int n,len[100],i,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-  scanf("%s",s[i]);
+  my_scanf("%s",s[i]);
   len[i]=strlen(s[i]);
   if((s[i][len[i]-2]=='e'&&s[i][len[i]-1]=='r')||(s[i][len[i]-2]=='l'&&s[i][len[i]-1]=='y')){
 	 s[i][len[i]-2]=0;
@@ -19,10 +19,10 @@ int main_bench()
 		   }
 		   }
 		   for(i=0;i<n-1;i++){
-					printf(s[i]);
-					printf("\n");
+					my_printf(s[i]);
+					my_printf("\n");
 					}
-					printf(s[n-1]);
+					my_printf(s[n-1]);
  
   return 0;
 }

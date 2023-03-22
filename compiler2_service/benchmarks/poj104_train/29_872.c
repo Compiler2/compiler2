@@ -17,13 +17,13 @@ int main_bench()
 	{
 		b[i]=(a[i-1]/a[i])+1;
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=1;j<=n;j++)
 		s=s+b[j];
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 		s=0;
 	}
 	return 0;

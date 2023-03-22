@@ -4,8 +4,8 @@ int main_bench()
 {
     char str1[250],str2[250],str3[250],str4[250],str5[251];
     int a,b,c,i,j,k,p,q,r,s,t,u,v,w,x,y;
-    scanf("%s\n",str1);
-    scanf("%s",str2);
+    my_scanf("%s\n",str1);
+    my_scanf("%s",str2);
     a=strlen(str1);
     b=strlen(str2);
     if(a<b)
@@ -46,9 +46,9 @@ int main_bench()
     x=251;
     }
     if(251==x)
-    printf("%d",0);
+    my_printf("%d",0);
     else    
     {for(y=x;y<=a;y++)
-    printf("%c",str5[y]);}
+    my_printf("%c",str5[y]);}
     
         }

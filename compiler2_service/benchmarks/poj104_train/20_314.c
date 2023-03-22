@@ -20,14 +20,14 @@ int main_bench()
 	int stop,len,i;
 	for(;;)
 	{
-		stop=scanf("%s %s",str,substr);
+		stop=my_scanf("%s %s",str,substr);
 		if(stop!=2) break;
 		len=strlen(str);
 		for(i=0;i<=MAX(str,len);i++)
-		printf("%c",str[i]);
-		printf("%s",substr);
+		my_printf("%c",str[i]);
+		my_printf("%s",substr);
 		for(i=MAX(str,len)+1;i<len;i++)
-			printf("%c",str[i]);
-                printf("\n");
+			my_printf("%c",str[i]);
+                my_printf("\n");
 	}
 }

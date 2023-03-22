@@ -15,10 +15,10 @@ main_bench()
       struct xinxi laoren[100];
       struct xinxi common[100];
       struct xinxi temp;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(p=0;p<n;p++)
       {
-          scanf("%s %d",c,&shuru);
+          my_scanf("%s %d",c,&shuru);
           if(shuru<60)
           {
               strcpy(common[amount_yiban].id,c);
@@ -50,12 +50,12 @@ main_bench()
       for(k=0;k<amount_lao;k++)
       {
           puts(laoren[k].id);
-          printf("\n");
+          my_printf("\n");
       }
       for(s=0;s<amount_yiban;s++)
       {
           puts(common[s].id);
-          printf("\n");
+          my_printf("\n");
       }
       getchar();
       getchar();

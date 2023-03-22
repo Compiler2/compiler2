@@ -26,14 +26,14 @@ int devide(int m,int n)
 main_bench()
 {
       int N,M,n,c,t,k;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(t=1;t<=n;t++)
       {
-      scanf("%d %d",&M,&N);
+      my_scanf("%d %d",&M,&N);
       if (N==1)
-      printf("1");
+      my_printf("1");
       else
-      printf("%d",devide(M,N)); 
-      printf("\n"); 
+      my_printf("%d",devide(M,N)); 
+      my_printf("\n"); 
       }
 }

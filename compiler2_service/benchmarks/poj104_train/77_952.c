@@ -13,11 +13,11 @@ int main_bench()
 			for(m=n-1;m>=0;m--)
 				if(a[m]==a[0])
 				{
-					printf("%d ",m);
+					my_printf("%d ",m);
 					a[m]=' ';
 					break;
 				}
-			printf("%d\n",n);
+			my_printf("%d\n",n);
 			a[n]=' ';
 			n=0;
 			x=1;

@@ -4,16 +4,16 @@ int main_bench()
 {
 int a,n,i;
 int p=0,q=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 i=1;
 while(i<=n)
 {
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a>=p){q=p,p=a;}
 	if(a<p&&a>q){p=p,q=a;}
 	if(a<=q){p=p,q=q;}
 	i=i+1;
 }
-printf("%d\n%d",p,q);
+my_printf("%d\n%d",p,q);
 	return 0;
 }

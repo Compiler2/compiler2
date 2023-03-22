@@ -30,7 +30,7 @@ int main_bench()
 			{
 				for(k=0;k<lb;k++)
 				{
-					printf("%c",b[k]);
+					my_printf("%c",b[k]);
 				}
 					i=i+la-1;
 					r=0;
@@ -40,7 +40,7 @@ int main_bench()
 		}
 		else
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 

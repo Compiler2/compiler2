@@ -5,9 +5,9 @@ int main_bench()
 {
 	int n,k,i,s;
 	s=1;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	if(n==2)
-		printf("7");
+		my_printf("7");
 	else
 	{
 		for(i=1;i<=n;i++)
@@ -15,6 +15,6 @@ int main_bench()
 			s=s*n;
 		}
 		s=s-n*k+k;
-		printf("%d",s);
+		my_printf("%d",s);
 	}
 }

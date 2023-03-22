@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a,b,c[100],d,e;
-	scanf("%d",&a);
-	for(b=0;b<a;b++)scanf("%d",&c[b]);
+	my_scanf("%d",&a);
+	for(b=0;b<a;b++)my_scanf("%d",&c[b]);
 	d=c[0];
 	for(b=0;b<a-1;b++)
 	{
@@ -17,5 +17,5 @@ int main_bench()
 		if(e>=c[b+1]||c[b+1]==d)e=e;
 		else e=c[b+1];
 	}
-	printf("%d\n%d",d,e);
+	my_printf("%d\n%d",d,e);
 }

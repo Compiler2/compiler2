@@ -12,11 +12,11 @@ int main_bench()
 		if (str[i]==' ')
 		{
 			for (j=i+1;j<k;j++)
-				printf("%c",str[j]);
+				my_printf("%c",str[j]);
 			k=i;
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	for (j=0;j<k;j++)
-		printf("%c",str[j]);
+		my_printf("%c",str[j]);
 }

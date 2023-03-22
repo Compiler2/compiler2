@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,ans=0,p,i;
 	int m[]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	if(y2-y1==0)
 	{
 		if(m2-m1==0)
@@ -40,7 +40,7 @@ int main_bench()
 				ans+=m[p-1];
 			ans+=d2;
 	}
-	printf("%d\n",ans);
+	my_printf("%d\n",ans);
 	return 0;
 }
 

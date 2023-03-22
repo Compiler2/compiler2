@@ -17,11 +17,11 @@ int main_bench()
 	int n,i,j,t,m,q,r;
 	char p[10];
 	int b[100],c[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++)
 	{
 		per[i].order=i;
-		scanf("%s %d",per[i].ID,&per[i].age);
+		my_scanf("%s %d",per[i].ID,&per[i].age);
 		b[i]=strlen(per[i].ID);
 	}
 	t=0;
@@ -77,13 +77,13 @@ int main_bench()
 	}
     for(i=0;i<=(t-1);i++)
 	{
-         printf("%s\n",elder[i].IDs);
+         my_printf("%s\n",elder[i].IDs);
 	}
 	for(i=0;i<=(n-1);i++)
 	{
 		if(per[i].age!=(-1))
 		{
-			printf("%s\n",per[i].ID);
+			my_printf("%s\n",per[i].ID);
 		}
 	}
 	return 0;  

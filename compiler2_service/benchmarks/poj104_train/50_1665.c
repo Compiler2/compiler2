@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int week;
-	scanf("%d",&week);
+	my_scanf("%d",&week);
 	int i;
 	int day=0;
 	int dy;
@@ -14,7 +14,7 @@ int main_bench()
 		dy=day+12+week;
 		if(dy%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}	if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
 		{
 			day=day+31;

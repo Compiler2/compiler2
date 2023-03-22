@@ -9,8 +9,8 @@ int main_bench()
 	char b[101];
 	char tmp[101];
 	gets(s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<strlen(s);i++)
 	{
 		if(s[i]!=' ')
@@ -23,15 +23,15 @@ int main_bench()
 			tmp[j]='\0';
 			j=0;
 			if(strcmp(tmp,a)==0)
-				printf("%s ",b);
+				my_printf("%s ",b);
 			else
-				printf("%s ",tmp);
+				my_printf("%s ",tmp);
 		}
 	}
 	tmp[j]='\0';
 	if(strcmp(tmp,a)==0)
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	else
-		printf("%s\n",tmp);
+		my_printf("%s\n",tmp);
 	return 0;
 }

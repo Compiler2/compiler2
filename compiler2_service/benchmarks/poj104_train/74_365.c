@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,i,temp,p,k,x=0,j;
 	int a[100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		j=2;
@@ -28,13 +28,13 @@ int main_bench()
 		}
 	}
 	if(x==0)
-		printf("no\n");
+		my_printf("no\n");
 	else
 	{
 		for(i=0;i<x-1;i++)
 
-			printf("%d,",a[i]);
-			printf("%d\n",a[x-1]);
+			my_printf("%d,",a[i]);
+			my_printf("%d\n",a[x-1]);
 
 	}
 }

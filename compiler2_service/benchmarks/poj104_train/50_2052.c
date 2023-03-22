@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[12]={0},w,i,j,d=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=0;i<12;i++)
 	{
 		for(j=1;j<i+1;j++)
@@ -22,7 +22,7 @@ int main_bench()
 	while(d<=365)
 	{
 		for(i=0;i<12;i++)
-			if(d==a[i])printf("%d\n",i+1);
+			if(d==a[i])my_printf("%d\n",i+1);
 		d+=7;
 	}
 	return 0;

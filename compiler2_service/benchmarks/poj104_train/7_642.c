@@ -21,9 +21,9 @@ int main_bench()
              } 
              if(tag)
              {
-                printf("%s",bth);
+                my_printf("%s",bth);
                 for(j=i+m;j<n;j++)
-                  printf("%c",zfc[j]);
+                  my_printf("%c",zfc[j]);
                 jieshu=0;  
                   
              }
@@ -31,7 +31,7 @@ int main_bench()
         }  
         if(jieshu)
         {
-              printf("%c",zfc[i]);
+              my_printf("%c",zfc[i]);
               
         }
         if(jieshu==0)

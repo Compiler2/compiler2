@@ -8,14 +8,14 @@ int main_bench()
     int a;
 	char shit[100][100];
 	int i,j;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int m=0;
 
 
 
 	for(i=0;i<a;i++)
 	{
-		scanf("%s",shit[i]);
+		my_scanf("%s",shit[i]);
 	}
 	for(i=0;i<a;i++)
 	{   m=0;
@@ -35,11 +35,11 @@ int main_bench()
 				m=1;
 		if(m==0)
 		{
-		printf("yes\n");
+		my_printf("yes\n");
 		}
 		else if(m==1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

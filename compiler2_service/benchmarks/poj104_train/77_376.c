@@ -6,7 +6,7 @@ int main_bench()
 	char f[10000]={0};
 	int n,i,j;
 	
-	scanf("%s",f);
+	my_scanf("%s",f);
 	n=strlen(f);
 
 	for(i=1;i<n;i++)
@@ -17,7 +17,7 @@ int main_bench()
 			{
 				if(f[j]==f[0])
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 					if(j!=0)
 						f[j]=0;
 					break;

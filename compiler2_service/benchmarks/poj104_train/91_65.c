@@ -12,7 +12,7 @@ int main_bench()
 		*(bud+i)=*(str+(i%n))+*(str+((i+1)%n));
 	}
 	for(i=0;i<n;i++){
-		printf("%c",*(bud+i));
+		my_printf("%c",*(bud+i));
 	}
 	return 0;
 }

@@ -4,8 +4,8 @@ int main_bench()
 {
     char a[251],b[251],c[251];
     int d,x,y,i;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     x=strlen(a);
     y=strlen(b);
     if(x>=y)             
@@ -54,6 +54,6 @@ int main_bench()
     }
    	if(c[0]=='\0')
    		c[0]='0';
-    printf("%s",c);
+    my_printf("%s",c);
     
 }                

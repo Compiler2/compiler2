@@ -9,12 +9,12 @@ main_bench()
 	{
 		if(a[i]!=' ')
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 			if(a[i+1]==' ')
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 		}
 	}
-	printf("%c",a[s-1]);
+	my_printf("%c",a[s-1]);
 }

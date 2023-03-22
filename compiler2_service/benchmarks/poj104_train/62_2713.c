@@ -14,6 +14,6 @@ for(a=1;a<=m;a++){
     an[b]=cc[a];
     b++;}
 }
-printf("%s",an);
+my_printf("%s",an);
 return 0;
 }

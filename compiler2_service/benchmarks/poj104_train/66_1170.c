@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,y,m,d,sum=0;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	y=y%2800;
 	for(i=1;i<y;i++){ 
 		if(i%4==0&&i%100!=0||i%400==0)
@@ -38,19 +38,19 @@ int main_bench()
 	sum+=d;
     n=sum%7;
 	switch(n){
-	case 1:printf("Mon.");
+	case 1:my_printf("Mon.");
 		break;
-	case 2:printf("Tue.");
+	case 2:my_printf("Tue.");
 		break;
-	case 3:printf("Wed.");
+	case 3:my_printf("Wed.");
 		break;
-	case 4:printf("Thu.");
+	case 4:my_printf("Thu.");
 		break;
-	case 5:printf("Fri.");
+	case 5:my_printf("Fri.");
 		break;
-	case 6:printf("Sat.");
+	case 6:my_printf("Sat.");
 		break;
-    case 0:printf("Sun.");
+    case 0:my_printf("Sun.");
 		break;
 	}
     

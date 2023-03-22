@@ -20,7 +20,7 @@ int main_bench()
 		
 	} 
 	m[i]=s;
-	if(i==1) printf("No");
+	if(i==1) my_printf("No");
 		else
 		{
 			max1=m[0];max2=-1;
@@ -32,7 +32,7 @@ int main_bench()
 				
 			}	
 		
-    	if(max1==max2||max2==-1) printf("No");
-    	else printf("%d",max2);
+    	if(max1==max2||max2==-1) my_printf("No");
+    	else my_printf("%d",max2);
 		}
 }

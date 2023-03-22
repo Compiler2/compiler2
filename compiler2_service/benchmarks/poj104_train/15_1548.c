@@ -5,12 +5,12 @@ int main_bench()
 	int n,sz[100][100];
 	int row,col,a=0,b=0,c=0,d=0,s=0,p=0;
 	int i,j,k,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 		for(col=0;col<n;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -54,6 +54,6 @@ int main_bench()
 		}
 	}
 	s=(c-a-1)*(d-b-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
     int a,b,c,d,e,n,x;
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     if (x<0&&x>99999)
-       printf("error\n");
+       my_printf("error\n");
        else if (x>=10000)
             n=5;
        else if (x>=1000)
@@ -23,15 +23,15 @@ int main_bench()
        e=(int)(x-a*10000-b*1000-c*100-d*10);
        switch(n)
       {
-       case 5:printf("%d%d%d%d%d",e,d,c,b,a);
+       case 5:my_printf("%d%d%d%d%d",e,d,c,b,a);
               break;
-       case 4:printf("%d%d%d%d",e,d,c,b);
+       case 4:my_printf("%d%d%d%d",e,d,c,b);
               break;
-       case 3:printf("%d%d%d",e,d,c);
+       case 3:my_printf("%d%d%d",e,d,c);
               break;
-       case 2:printf("%d%d",e,d);
+       case 2:my_printf("%d%d",e,d);
               break;
-       case 1:printf("%d",e);
+       case 1:my_printf("%d",e);
               break;  
       }
  }

@@ -3,10 +3,10 @@
 int main_bench()
 {
  int a[10001],b[10001],i,j,n,z=0,x,y=0,ma,mb,c;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%d%d",&a[i],&b[i]);
+  my_scanf("%d%d",&a[i],&b[i]);
  }
  ma=a[0];
  mb=b[0];
@@ -35,13 +35,13 @@ int main_bench()
  
  if(y==c)
   {
-  printf("%d %d",ma,mb);
+  my_printf("%d %d",ma,mb);
   }
  else
  {
-  printf("no");
+  my_printf("no");
  } 
  
- scanf(" ") ;
+ my_scanf(" ") ;
  return 0;
 }

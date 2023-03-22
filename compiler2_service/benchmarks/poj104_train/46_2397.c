@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int row,col;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	int array[100][100];
     for(int i=0;i<row;i++)
 	{
 		for(int j=0;j<col;j++)
 		{
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		}
 	}
 	int k,r,sum;
@@ -19,7 +19,7 @@ int main_bench()
 	{
 		if(sum==1)
 		{
-			printf("%d",array[r+1][r+1]);   
+			my_printf("%d",array[r+1][r+1]);   
 			sum--;
 		}
 		if(sum==0)
@@ -31,7 +31,7 @@ int main_bench()
 		{
 		    for(k=r;k<col-1;k++)
 			{
-			    printf("%d\n",array[r][k]);
+			    my_printf("%d\n",array[r][k]);
 			    sum--;
 				if(sum==0)
 				{
@@ -47,7 +47,7 @@ int main_bench()
 		{
 		    for(k=r;k<row-1;k++)
 			{
-			    printf("%d\n",array[k][col-1]);
+			    my_printf("%d\n",array[k][col-1]);
 			    sum--;
 				if(sum==0)
 				{
@@ -63,7 +63,7 @@ int main_bench()
 		{
 		    for(k=col-1;k>r;k--)
 			{
-			    printf("%d\n",array[row-1][k]);
+			    my_printf("%d\n",array[row-1][k]);
 			    sum--;
 				if(sum==0)
 				{
@@ -79,7 +79,7 @@ int main_bench()
 		{
 		    for(k=row-1;k>r;k--)
 			{
-			    printf("%d\n",array[k][r]);
+			    my_printf("%d\n",array[k][r]);
 			    sum--;
 				if(sum==0)
 				{

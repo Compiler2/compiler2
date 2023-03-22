@@ -5,14 +5,14 @@ int m,n;
 void f1()
 {
 	int i;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&str1[i]);
+		my_scanf("%d",&str1[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&str2[i]);
+		my_scanf("%d",&str2[i]);
 	}
 }
 void f2(int s[100],int k)
@@ -46,11 +46,11 @@ void f4(int s[200],int m,int n)
 	int i;
 	for(i=0;i<m+n;i++)
 	{
-		printf("%d",s[i]);
+		my_printf("%d",s[i]);
 		if(i<m+n-1)
-			printf(" ");
+			my_printf(" ");
 	}
-	printf("\n");
+	my_printf("\n");
 }
 	
 int main_bench()

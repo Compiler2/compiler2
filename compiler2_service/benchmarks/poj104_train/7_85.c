@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[257],b[257],c[257],d[530]={'\0'},e[257]={'\0'};
 	int i,m=0,j,t,len;
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
 	for(i=0;;i++)
 	{
 		if(a[i]=='\0'||b[m]=='\0') break;
@@ -42,11 +42,11 @@ int main_bench()
 		{
 			strcat(d,c);
 		}
-        printf("%s",d);
+        my_printf("%s",d);
 	}
 	else
 	{
-	    printf("%s",a);
+	    my_printf("%s",a);
 	}
  	return 0;
 }

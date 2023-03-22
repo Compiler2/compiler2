@@ -12,10 +12,10 @@ main_bench()
       };
       struct student stu[100000];
       struct student temp;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(p=0;p<n;p++)
       {
-          scanf("%d %d %d",&stu[p].id,&stu[p].yuwen,&stu[p].shuxue);
+          my_scanf("%d %d %d",&stu[p].id,&stu[p].yuwen,&stu[p].shuxue);
           stu[p].zongfen=stu[p].yuwen+stu[p].shuxue;
       }
       for(j=0;j<3;j++)
@@ -41,6 +41,6 @@ main_bench()
       }
       for(k=n-1;k>n-4;k--)
       {
-          printf("%d %d\n",stu[k].id,stu[k].zongfen);
+          my_printf("%d %d\n",stu[k].id,stu[k].zongfen);
       }
 }

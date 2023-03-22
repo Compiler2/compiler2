@@ -13,9 +13,9 @@ struct student temp;
 int main_bench()
 {
 	int i,j,n,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d%d%s%s%d",&stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s%d%d%s%s%d",&stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 		if(stu[i].qimo>80&&stu[i].lunwen>=1)
 			stu[i].money=stu[i].money+8000;
 		if(stu[i].qimo>85&&stu[i].banji>80)
@@ -38,5 +38,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[0].name,stu[0].money,sum);
+	my_printf("%s\n%d\n%d\n",stu[0].name,stu[0].money,sum);
 }

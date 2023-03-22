@@ -6,11 +6,11 @@ int main_bench()
 	int row,col;
 	int num[120][120];
 
-	scanf("%d %d", &row, &col);
+	my_scanf("%d %d", &row, &col);
 
 	for (int i = 0; i < row; i++)
 	{
-		for(int j = 0; j < col; j++)	scanf("%d", &num[i][j]);
+		for(int j = 0; j < col; j++)	my_scanf("%d", &num[i][j]);
 	}
 
 	for (int k = 0; k <= col + row - 1; k++)
@@ -24,7 +24,7 @@ int main_bench()
 
 		for (int i = minRow; i <= k; i++)
 		{
-			if((k-i) >= minCol)	printf("%d\n", num[i][k-i]);
+			if((k-i) >= minCol)	my_printf("%d\n", num[i][k-i]);
 		}
 	}
 

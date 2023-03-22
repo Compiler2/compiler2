@@ -4,14 +4,14 @@ int s(int a);
 main_bench()
 {
       int c,i,n,m;
-      scanf("%d",&c);
+      my_scanf("%d",&c);
       if(c<5)
-      printf("empty");
+      my_printf("empty");
       else
       {
       for(m=4;m<=c;m++)
       if(s(m)==1&&s(m-2)==1)
-      printf("%d %d\n",m-2,m);   
+      my_printf("%d %d\n",m-2,m);   
       } 
       
              

@@ -24,7 +24,7 @@ void change(int n,int m)
 	else
 	{
 		pp = 0;
-		printf("error");
+		my_printf("error");
 	}
 }
 
@@ -32,8 +32,8 @@ void print(int row)
 {
 	int j;
 	for (j=0;j<4;j++)
-		printf("%d ",array[row][j]);
-	printf("%d\n",array[row][4]);
+		my_printf("%d ",array[row][j]);
+	my_printf("%d\n",array[row][4]);
 }
 
 int main_bench()
@@ -42,8 +42,8 @@ int main_bench()
 
 	for (i=0;i<5;i++)
 		for (j=0;j<5;j++)
-			scanf("%d",&array[i][j]);
-	scanf("%d%d",&n,&m);
+			my_scanf("%d",&array[i][j]);
+	my_scanf("%d%d",&n,&m);
 	pp = 1;
 	change(n,m);
 

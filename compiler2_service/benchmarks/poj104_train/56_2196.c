@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int inPut, outPut;
-	scanf("%d",&inPut);
+	my_scanf("%d",&inPut);
 	if(inPut<10)
-		printf("%d",inPut);
+		my_printf("%d",inPut);
 	else if(inPut>=10&&inPut<100){
 		outPut=(inPut%10)*10+(inPut/10);
 	}
@@ -18,6 +18,6 @@ int main_bench()
 	else if(inPut>=10000&&inPut<100000){
 		outPut=(inPut%10)*10000+((inPut/10)%10)*1000+((inPut/100)%10)*100+((inPut/1000)%10)*10+(inPut/10000);
 	}
-	printf("%d",outPut);
+	my_printf("%d",outPut);
 	return 0;
 }

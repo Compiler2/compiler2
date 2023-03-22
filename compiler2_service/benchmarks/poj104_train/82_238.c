@@ -8,12 +8,12 @@ int main_bench()
 	int k=0;
 	int i=0;
 	int maxk=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int szsmall[n],szlarge[n],sz[n];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&szlarge[i]);
-		scanf("%d",&szsmall[i]);
+		my_scanf("%d",&szlarge[i]);
+		my_scanf("%d",&szsmall[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -58,6 +58,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",maxk);
+	my_printf("%d",maxk);
 	return 0;
 } 

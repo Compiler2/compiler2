@@ -6,7 +6,7 @@ int N, Sum = 0;
 int main_bench()
 {
 	int i, f, x;
-	scanf ("%d", &N);
+	my_scanf ("%d", &N);
 	for (i = 1; i <= N; i ++)
 	{
 		if (i % 7 == 0) continue;
@@ -19,7 +19,7 @@ int main_bench()
 		if (!f) continue;
 		Sum += i * i;
 	}
-	printf ("%d\n", Sum);
+	my_printf ("%d\n", Sum);
 
 	return 0;
 }

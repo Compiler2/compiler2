@@ -9,10 +9,10 @@ int main_bench(){
 	char num[11];
 	int age;
          }peo[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s %d",peo[i].num,&peo[i].age);
+		my_scanf("%s %d",peo[i].num,&peo[i].age);
 		if(peo[i].age>=60){
 			sixty[i]=peo[i].age;
 			
@@ -35,13 +35,13 @@ int main_bench(){
 	
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			if(sixty[i]==peo[j].age&&sixty[i]!=sixty[i-1]){      				printf("%s\n",peo[j].num);
+			if(sixty[i]==peo[j].age&&sixty[i]!=sixty[i-1]){      				my_printf("%s\n",peo[j].num);
 			}                                                            			
 		}
 	}
 	for(i=0;i<n;i++){
 		if(peo[i].age<60){
-			printf("%s\n",peo[i].num);
+			my_printf("%s\n",peo[i].num);
 		}
 	}
 	

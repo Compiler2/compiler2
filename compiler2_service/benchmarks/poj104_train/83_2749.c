@@ -17,18 +17,18 @@ int main_bench(){
 	int xuefen[100];
 	int xuefensum;
 	float score,GPA,scoresum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	xuefensum=0;
 	scoresum=0;
 	for(i=0;i<n;i++){
-		scanf("%d ",&xuefen[i]);
+		my_scanf("%d ",&xuefen[i]);
 	    xuefensum=xuefensum+xuefen[i];
 	}
 	for(i=0;i<n;i++){
-		scanf("%f",&score);
+		my_scanf("%f",&score);
 		scoresum=scoresum+jd(score)*xuefen[i];
 	}
 	GPA=scoresum/xuefensum;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 	return 0;
 }

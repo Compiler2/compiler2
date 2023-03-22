@@ -32,8 +32,8 @@ int main_bench()
 		count=count+1;
 		num[i]=wordsnumber(B[i]);
 		
-		if (count==1) printf("%d",num[i]);
-		else printf(",%d",num[i]);	
+		if (count==1) my_printf("%d",num[i]);
+		else my_printf(",%d",num[i]);	
 	}
-	printf("\n");
+	my_printf("\n");
 }

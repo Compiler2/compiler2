@@ -13,7 +13,7 @@ int main_bench()
 	for(i=0;i<l;i++)
 		s[i]=a[i];
 	for(i=0;i<l;i++)
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 
 		return 0;
 }

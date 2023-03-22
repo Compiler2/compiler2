@@ -21,9 +21,9 @@ if(b[l]==c[m]) {b[l]='0'; c[m]='0';}
 for(l=0;l<k;l++)
 if(b[l]=='0'&&c[l]=='0') l=l;
 else break;
-if(l==k) printf("YES\n");
-else printf("NO\n");
+if(l==k) my_printf("YES\n");
+else my_printf("NO\n");
 }
 else
-printf("NO\n");
+my_printf("NO\n");
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
         int i,j,m,n,a[10000],sum=0,k=0,b[10000],P,r=0,t;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		sum=0;
@@ -39,10 +39,10 @@ int main_bench()
 	}
 
 	if(r==0)
-		printf("no\n");
+		my_printf("no\n");
 			
 			for(i=0;i<r;i++)
 				if(i!=(r-1))
-					printf("%d,",b[i]);
-				else printf("%d",b[i]);
+					my_printf("%d,",b[i]);
+				else my_printf("%d",b[i]);
 }

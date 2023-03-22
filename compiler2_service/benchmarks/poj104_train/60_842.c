@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int z=0;
 	for(int i=3;i<=n;i++){
 		int x=0,y=0;
@@ -20,16 +20,16 @@ int main_bench(){
 			if(y==0){
 				z=z+1;
 				if(i==3){
-					printf("%d %d",i,i+2);
+					my_printf("%d %d",i,i+2);
 				}
 				else{
-					printf("\n%d %d",i,i+2);
+					my_printf("\n%d %d",i,i+2);
 				}
 			}
 		}
 	}
 	if(z==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

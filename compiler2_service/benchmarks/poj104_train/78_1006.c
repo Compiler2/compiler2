@@ -28,7 +28,7 @@ int main_bench()
                                 b[i]=b[i]-b[j];  
                                }
                       for(i=1;i<=4;i++)
-                        printf("%c %d\n",b[i],a[i]*10);
+                        my_printf("%c %d\n",b[i],a[i]*10);
                         return 0;
                      }
 return 0;

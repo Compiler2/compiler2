@@ -2,12 +2,12 @@
 
 int main_bench(){
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	int i;
 	int m;
 	double a=0,b=0,c=0,d=0;
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m>=1&&m<=18){
 			a++;
 		}
@@ -25,13 +25,13 @@ int main_bench(){
 	b=100*b/n;
 	c=100*c/n;
 	d=100*d/n;
-	printf("1-18: %.2lf",a);
-	printf("%%\n");
-	printf("19-35: %.2lf",b);
-	printf("%%\n");
-	printf("36-60: %.2lf",c);
-	printf("%%\n");
-	printf("60??: %.2lf",d);
-	printf("%%");
+	my_printf("1-18: %.2lf",a);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf",b);
+	my_printf("%%\n");
+	my_printf("36-60: %.2lf",c);
+	my_printf("%%\n");
+	my_printf("60??: %.2lf",d);
+	my_printf("%%");
 	return 0;
 }

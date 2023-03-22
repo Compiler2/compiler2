@@ -4,10 +4,10 @@ int main_bench(){
 	int N;
 	int e,i;
 	int m=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int sz[1000];
 	for(i=0;i<N;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(int k=N-1;k>0;k--){
 		for(i=0;i<k;i++){
@@ -25,10 +25,10 @@ int main_bench(){
 	}
 	for(i=0;i<=m;i++){
 		if(sz[i]%2!=0&&i<m){
-			printf("%d,",sz[i]);
+			my_printf("%d,",sz[i]);
 		}
 		if(i==m){
-			printf("%d",sz[m]);
+			my_printf("%d",sz[m]);
 		}
 	}
 	

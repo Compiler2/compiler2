@@ -32,12 +32,12 @@ int main_bench()
 		}
 		if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		if(a[i]<b[i])
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		
@@ -50,7 +50,7 @@ int main_bench()
 		}
 		if(t==lb)
 		{
-			printf("=");
+			my_printf("=");
 		}
 	}
 

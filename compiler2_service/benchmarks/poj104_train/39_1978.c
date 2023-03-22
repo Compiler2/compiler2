@@ -28,13 +28,13 @@ int deal(struct student stu)
 int main_bench()
 {
 	int n,i,total=0,top=0,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student stu[100];
 	for(i=0;i<n;i++)
-	{scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,&stu[i].value,&stu[i].cadre,&stu[i].west,&stu[i].paper);
+	{my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,&stu[i].value,&stu[i].cadre,&stu[i].west,&stu[i].paper);
 	stu[i].sum=deal(stu[i]);total+=stu[i].sum;
 	if(stu[i].sum>top)
 	{top=stu[i].sum;t=i;}
 	}
-	printf("%s\n%d\n%d",stu[t].name,top,total);
+	my_printf("%s\n%d\n%d",stu[t].name,top,total);
 }

@@ -6,11 +6,11 @@ int main_bench()
 	int state = 0;
 	int n, t, i, j,m,m1,m2;
 	int leftx, lefty, rightx, righty;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for ( i = 0; i < n; i++ ) {
 		for ( j = 0; j < n; j++ ) {
-			scanf("%d", &t);
+			my_scanf("%d", &t);
 			if ( t == 0 ) {
 				if ( state == 0 ) {
 					leftx = i;
@@ -26,7 +26,7 @@ int main_bench()
     m1 = (rightx-leftx-1);
 	m2 = (righty-lefty-1);
     m = m1*m2;
-	printf("%d", m);
+	my_printf("%d", m);
 	return 0;
 
 }

@@ -23,5 +23,5 @@ int main_bench()
 	len=strlen(line2);
 	if (line2[len-1]==' ')
 		line2[len-1]='\0';
-	printf("%s",line2);
+	my_printf("%s",line2);
 }

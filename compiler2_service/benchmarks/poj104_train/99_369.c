@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int a[100];
 	int one=0,two=0,three=0,four=0;
 	double o,t,e,f;
@@ -11,7 +11,7 @@ int main_bench()
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -37,9 +37,9 @@ int main_bench()
 	t=100.0*two/zong;
 	e=100.0*three/zong;
     f=100.0*four/zong;
-    printf("1-18: %.2lf%%\n",o);
-    printf("19-35: %.2lf%%\n",t);
-	printf("36-60: %.2lf%%\n",e);
-	printf("60??: %.2lf%%\n",f);
+    my_printf("1-18: %.2lf%%\n",o);
+    my_printf("19-35: %.2lf%%\n",t);
+	my_printf("36-60: %.2lf%%\n",e);
+	my_printf("60??: %.2lf%%\n",f);
 	return 0;
 }

@@ -12,6 +12,6 @@ int main_bench(){
 	}
 	bs[len-1]=as[0]+as[len-1];
 	bs[len]=0;
-	printf("%s",bs);
+	my_printf("%s",bs);
 	return 0;
 }

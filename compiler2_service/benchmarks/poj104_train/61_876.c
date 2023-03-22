@@ -9,10 +9,10 @@ int main_bench()
     a[1]=a[0];
    for(i=2;i<30;i++)    
     a[i]=a[i-2]+a[i-1];
-   scanf ("%d",&n);
+   my_scanf ("%d",&n);
    for(j=0;j<n;j++)
-      scanf("%d",&b[j]);
+      my_scanf("%d",&b[j]);
      for(j=0;j<n;j++)
-    printf("%d\n",a[b[j]-1]);       
+    my_printf("%d\n",a[b[j]-1]);       
    getchar(); getchar(); getchar();
 }

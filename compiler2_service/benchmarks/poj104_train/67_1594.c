@@ -3,18 +3,18 @@
 int main_bench(){
 	int n,x,y,i;
 	double jiwei,tmp;
-	scanf("%d",&n);
-	scanf("%d%d",&x,&y);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&x,&y);
 	jiwei=1.0*y/x;
 	for (i=1;i<n;i++)
 		{
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		tmp=1.0*y/x;
 		if (tmp-jiwei>0.05)
-			printf("better\n");
+			my_printf("better\n");
 		else if (jiwei-tmp>0.05)
-			printf("worse\n");
-			else printf("same\n");
+			my_printf("worse\n");
+			else my_printf("same\n");
 		}
 	return 0;
 }

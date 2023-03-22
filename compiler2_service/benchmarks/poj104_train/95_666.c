@@ -13,7 +13,7 @@ for(i=0;str2[i]!='\0';i++)
 if(strcmp(str1,str2)==0) k=0;
 if(strcmp(str1,str2)>0) k=1;
 if(strcmp(str1,str2)<0) k=-1;
-	if(k==0) printf("=\n");
-	else if(k==1) printf(">\n");
-	else if(k==-1) printf("<\n");
+	if(k==0) my_printf("=\n");
+	else if(k==1) my_printf(">\n");
+	else if(k==-1) my_printf("<\n");
 }

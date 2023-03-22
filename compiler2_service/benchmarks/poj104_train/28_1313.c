@@ -14,11 +14,11 @@ while(str[i]!='\0')
      {
         while(str[i+1]==' ')
         {i++;}
-        printf("%d,",a[j]),j++,k=0,i++;
+        my_printf("%d,",a[j]),j++,k=0,i++;
       }
   else 
       i++,k++,a[j]=k;
 }
-printf("%d",a[j]);
+my_printf("%d",a[j]);
 
 }

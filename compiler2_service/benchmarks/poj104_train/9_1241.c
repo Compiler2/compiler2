@@ -9,7 +9,7 @@ int main_bench()
 {
 	int n,i,m;
 	struct guahao temp,*p,*t,*p1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n;
 	struct guahao *bingren=(struct guahao*)malloc(sizeof(struct guahao)*n);
 	struct guahao *bingren1=(struct guahao*)malloc(sizeof(struct guahao)*m);
@@ -17,7 +17,7 @@ int main_bench()
 	p1=bingren1;
 	for(;p<bingren+n;p++,p1++)
 	{
-		scanf("%s %d",p->num,&p->year);
+		my_scanf("%s %d",p->num,&p->year);
 		*p1=*p;
 	}
 	p=bingren;
@@ -38,14 +38,14 @@ int main_bench()
 	{
 		if((*p).year>=60)
 		{
-			printf("%s\n",p->num);
+			my_printf("%s\n",p->num);
 		}
 	}
 	for(p1=bingren1;p1<bingren1+m;p1++)
 	{
 		if((*p1).year<60)
 		{
-			printf("%s\n",p1->num);
+			my_printf("%s\n",p1->num);
 		}
 	}
 	free(bingren);

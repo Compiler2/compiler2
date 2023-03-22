@@ -47,7 +47,7 @@ int main_bench()
 {
 	char buffer[21];
 	int n, i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	gets(buffer);
 
 	for (i = 0; i < n; i++)

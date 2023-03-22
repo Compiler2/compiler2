@@ -9,7 +9,7 @@ int main_bench()
 		b[i]=0;
 		c[i]=0;
 	}
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	for(i=0;i<n;i++)
 	{
@@ -26,20 +26,20 @@ int main_bench()
 	}
 	if(m==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	for(i=0;i<26;i++)
 	{
 		if(b[i]!=0)
 		{
-			printf("%c=%d\n",'A'+i,b[i]);
+			my_printf("%c=%d\n",'A'+i,b[i]);
 		}
 	}
 	for(i=0;i<26;i++)
 	{
 		if(c[i]!=0)
 		{
-			printf("%c=%d\n",'a'+i,c[i]);
+			my_printf("%c=%d\n",'a'+i,c[i]);
 		}
 	}
 	return 0;

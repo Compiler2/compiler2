@@ -9,8 +9,8 @@ int main_bench()
     }sub[500],*p1=sub,*p2;
     int i,j,k,n,len,counter=0,mark,flag,max=0;
     char str[501],*pstr1,*pstr2;
-    scanf("%d",&n);
-    scanf("%s",&str);
+    my_scanf("%d",&n);
+    my_scanf("%s",&str);
     len=strlen(str);
     pstr2=str;
     for(i=0;i<len+1-n;i++)
@@ -44,13 +44,13 @@ int main_bench()
                           (p1+i)->counter=mark;
     }
     if(max==1)
-    printf("NO");
+    my_printf("NO");
     else
     {
-        printf("%d\n",max);
+        my_printf("%d\n",max);
         for(i=0;i<counter;i++)
         if((p1+i)->counter==max)
-        printf("%s\n",(p1+i)->a);
+        my_printf("%s\n",(p1+i)->a);
     }
     return 0;
 }

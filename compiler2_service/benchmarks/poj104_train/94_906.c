@@ -7,10 +7,10 @@ int main_bench()
 	int j=0;
 	int n;
 	int e,m,u;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&u);
+		my_scanf("%d",&u);
 		if (u%2!=0)
 		{
 			s[j]=u;
@@ -35,11 +35,11 @@ int main_bench()
 	{
 		if (j!=m)
 		{
-			printf("%d,",s[j]);
+			my_printf("%d,",s[j]);
 		}
 		else
 		{
-            printf("%d",s[j]);
+            my_printf("%d",s[j]);
 		}
 	}
 	return 0;

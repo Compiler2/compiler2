@@ -2,13 +2,13 @@
 
 int main_bench()
 {   int a,c[300];
-    scanf("%d",&c[0]);
+    my_scanf("%d",&c[0]);
 	int n=1;
-	while(scanf(",%d",&a))
+	while(my_scanf(",%d",&a))
 	{   c[n]=a;
 	     n++;
 	}
-	if(n==1) printf("No");
+	if(n==1) my_printf("No");
 	else
 	{ int i,j,t;
 	  for(i=0;i<n-1;i++)
@@ -21,12 +21,12 @@ int main_bench()
 	  for(i=1;i<n;i++)
 	  {	 if(c[i]!=c[i-1])
 		  {
-		   printf("%d",c[i]);
+		   my_printf("%d",c[i]);
 		   break;
 	  }
 	  }
 	  if(c[0]==c[n-1])	   
-	  printf("No");
+	  my_printf("No");
 	  
 		  
 		 

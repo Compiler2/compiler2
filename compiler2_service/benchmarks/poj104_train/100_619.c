@@ -8,7 +8,7 @@ int main_bench()
 	int i,j;
 	int cishu[26]={0},zero=0;
 
-	scanf("%s",a);
+	my_scanf("%s",a);
 	length=strlen(a);
 
 	for(i=0;i<length;i++)
@@ -37,7 +37,7 @@ int main_bench()
 	{
 		if(cishu[j]!=0)
 		{		
-			printf("%c=%d\n",zimu,cishu[j]);
+			my_printf("%c=%d\n",zimu,cishu[j]);
 		}
 
 		zimu++;
@@ -53,7 +53,7 @@ int main_bench()
 
 	if(zero==26)
 	{
-		printf("No");
+		my_printf("No");
 	}
 
 	return 0;

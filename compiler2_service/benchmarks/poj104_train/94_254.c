@@ -5,9 +5,9 @@ int main_bench()
     int sz[500];
 	int N,i,j,k,m,n;
 	int a=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-	scanf("%d",&(sz[i]));
+	my_scanf("%d",&(sz[i]));
 	}
 	for(i=0;i<N;i++){
 	if(sz[i]%2!=0){
@@ -30,10 +30,10 @@ int main_bench()
 		{
 			m++;
 			if( m < a )
-			   printf("%d,",sz[n]);
+			   my_printf("%d,",sz[n]);
 			else
 			{
-				printf("%d",sz[n]);
+				my_printf("%d",sz[n]);
 				break;
 			}
 		}

@@ -10,11 +10,11 @@ int main_bench()
     struct patients patient[100];
     struct patients old[100];
     int i,j,n,first;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     first=0;
     for (i=0;i<n;i++){
-        scanf("%s",patient[i].id);
-        scanf ("%d",&patient[i].age);
+        my_scanf("%s",patient[i].id);
+        my_scanf ("%d",&patient[i].age);
         if (patient[i].age>=60){
             old[first]=patient[i];
             first=first+1;
@@ -30,11 +30,11 @@ int main_bench()
             }
         }
     for (i=0;i<first;i++){
-        printf("%s\n",old[i].id);
+        my_printf("%s\n",old[i].id);
         }
     for (i=0;i<n;i++){
         if (patient[i].age<60){
-            printf("%s\n",patient[i].id);
+            my_printf("%s\n",patient[i].id);
             }
         }
     return 0;

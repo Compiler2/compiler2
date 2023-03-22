@@ -10,7 +10,7 @@ int main_bench()
 	int t,num=1,i,j,k,l,a;
 	char c[10000];
 	struct cha x[26];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	gets(c);
 	for(i=0;i<t;i++)
 	{
@@ -42,13 +42,13 @@ int main_bench()
 		{
 			if(x[j].n==0)
 			{
-				printf("%c\n",x[j].zimu);
+				my_printf("%c\n",x[j].zimu);
 				a++;
 				break;
 			}
 		}
 		if(a==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,s[13];
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	s[1]=(w+12)%7;
 	s[2]=(s[1]+31)%7;
 	s[3]=(s[2]+28)%7;
@@ -18,7 +18,7 @@ int main_bench()
 	s[12]=(s[11]+30)%7;
 	for(int i=1;i<=12;i++)
 	{
-		if(s[i]==5)printf("%d\n",i);
+		if(s[i]==5)my_printf("%d\n",i);
 	}
 	return 0;
 }

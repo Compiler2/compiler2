@@ -5,7 +5,7 @@ int main_bench()
 int year,month,day,d=0;
 
 
-scanf("%d%d%d\n",&year,&month,&day);
+my_scanf("%d%d%d\n",&year,&month,&day);
 
 
 switch(month)
@@ -37,7 +37,7 @@ else if ((month>2)&&(year%100!=0)&&(year%4==0)){ d=d+1+day;}
 
 else {d=d+day;}
  
-printf("%d\n",d);
+my_printf("%d\n",d);
 
 return 0;
 }

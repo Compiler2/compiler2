@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,k,lena,lenb,x,y,tag=1;
 	char a[1000]={0},b[1000]={0},c[1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",a);
-        scanf("%s",b);
+		my_scanf("%s",a);
+        my_scanf("%s",b);
 	    lena=strlen(a);
 		lenb=strlen(b);
 		k=lenb;
@@ -44,8 +44,8 @@ int main_bench()
 			{
 
 				for(y=x;y<lena;y++)
-					printf("%c",c[y]);
-				printf("\n");
+					my_printf("%c",c[y]);
+				my_printf("\n");
 			;
 				tag=0;
 				break;
@@ -54,6 +54,6 @@ int main_bench()
 
 		}
 		if(tag==1)
-			printf("0\n");
+			my_printf("0\n");
 	}
 }

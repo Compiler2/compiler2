@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[500],sub[500],rep[500];
 	int i,j,shou,mo,k;
-	scanf("%s %s %s",str,sub,rep);
+	my_scanf("%s %s %s",str,sub,rep);
 	int len1=strlen(str);
 	int len2=strlen(sub);
 	int len3=strlen(rep);
@@ -27,7 +27,7 @@ int main_bench()
 		
 	}
 	if(j!=len2)
-	{printf("%s",str);}
+	{my_printf("%s",str);}
 	else{
 	if(len2>=len3)
 	{
@@ -52,6 +52,6 @@ int main_bench()
 			str[k]=rep[j];
 		}
 	}
-	printf("%s",str);}
+	my_printf("%s",str);}
 	return 0;
 }

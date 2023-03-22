@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,sum[30]={0},tot[30]={0},x=0;
 	char zfc[305];
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	for(i=0;i<strlen(zfc);i++)
 	{
 		if(zfc[i]<='Z'&&zfc[i]>='A')
@@ -16,7 +16,7 @@ int main_bench()
 	{
 		if(sum[i]!=0)
 		{
-			printf("%c=%d\n",i+'A',sum[i]);
+			my_printf("%c=%d\n",i+'A',sum[i]);
 			x=1;
 		}
 	}
@@ -31,13 +31,13 @@ int main_bench()
 	{
 		if(tot[i]!=0)
 		{
-			printf("%c=%d\n",i+'a',tot[i]);
+			my_printf("%c=%d\n",i+'a',tot[i]);
 			x=1;
 		}
 	}
 	if(x==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

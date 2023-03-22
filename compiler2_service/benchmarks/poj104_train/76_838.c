@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,k,min,max,sz1[50000],sz2[50000];
 	double e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&sz1[i],&sz2[i]);
+		my_scanf("%d %d",&sz1[i],&sz2[i]);
 		if(i==0){
 			max=sz2[i];
 			min=sz1[i];
@@ -24,13 +24,13 @@ int main_bench()
 				break;
 		}
 		if(k==n){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 		e++;
 	}
 	if(e>max)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	return 0;
 }
 			

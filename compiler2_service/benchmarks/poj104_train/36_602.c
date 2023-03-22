@@ -9,12 +9,12 @@ int main_bench()
 		a[i]=0;
 		b[i]=0;
 	}
-	scanf("%s",moto);
-	scanf("%s",genzai);
+	my_scanf("%s",moto);
+	my_scanf("%s",genzai);
 	x=strlen(moto);
 	y=strlen(genzai);
 	if(x!=y)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		for(i=0;i<x;i++)
@@ -26,9 +26,9 @@ int main_bench()
 			if(a[i]!=b[i])
 				break;
 		if(i==25)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }
 		

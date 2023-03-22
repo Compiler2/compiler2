@@ -6,9 +6,9 @@ int a[50000],b[5000];
 int s[10000];
 for(i=1;i<10000;i++){
 s[i]=1;}
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 for(j=a[i];j<b[i];j++){
 s[j]=0;}}
 max=b[0];
@@ -22,9 +22,9 @@ t=0;
 for(i=min;i<max;i++){
 if(s[i]==1){
 t=t+1;
-printf("no");
+my_printf("no");
 break;}}
 if(t==0){
-printf("%d %d",min,max);}
+my_printf("%d %d",min,max);}
 
 }

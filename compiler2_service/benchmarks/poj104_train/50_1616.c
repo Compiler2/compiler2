@@ -9,13 +9,13 @@ int main_bench()
 
 	int mon[14]={31,28,31,30,31,30,31,31,30,31,30,31};
 
-    scanf("%d",&we1);
+    my_scanf("%d",&we1);
 
     int judge(int x,int y);
 
 	for(i=1;i<13;i++){
 		if(judge(we1,i)==1)
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	}
 
 	return 0;

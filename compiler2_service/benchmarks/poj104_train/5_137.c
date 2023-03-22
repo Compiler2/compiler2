@@ -5,9 +5,9 @@ int main_bench(){
 	char asd[500],zxc[500];
 	int i,j;
 	double n;
-	scanf("%lf",&n);
-	scanf("%s",asd);
-	scanf("%s",zxc);
+	my_scanf("%lf",&n);
+	my_scanf("%s",asd);
+	my_scanf("%s",zxc);
 	int len1=strlen(asd);
 	int len2=strlen(zxc);
 	int a1=0;
@@ -23,7 +23,7 @@ int main_bench(){
 			a2++;
 	}
 	if(a1!=0||a2!=0||len1!=len2)
-		printf("error");
+		my_printf("error");
 	else
 	{
     	int d=0;
@@ -34,9 +34,9 @@ int main_bench(){
 		}
 	    double result=1.0*d/len1;
 	    if(result>n)
-		    printf("yes");
+		    my_printf("yes");
 	    else
-		    printf("no");
+		    my_printf("no");
 	}
 	return 0;
 }

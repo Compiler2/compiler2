@@ -10,7 +10,7 @@ int main_bench()
     char a[10000][81];
     int b[10000];
     p2=b;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
                     p1=(a[i]);
@@ -33,7 +33,7 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     {
-                    printf("%d\n",(*(p2+i)));
+                    my_printf("%d\n",(*(p2+i)));
     }
    
     return 0;

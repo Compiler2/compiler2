@@ -2,8 +2,8 @@
 
 int main_bench(){
   int n,a[10000],t=0; 
-  scanf("%d",&n);
-  if(n<5) printf("empty");
+  my_scanf("%d",&n);
+  if(n<5) my_printf("empty");
   else{
      for(int i=3;i<=n;i++){
          for(int j=2;j<i;j++){
@@ -18,7 +18,7 @@ int main_bench(){
 		 }
 	 }
 	 for(int r=1;r<t;r++){
-	    if(a[r]-a[r-1]==2) printf("%d %d\n",a[r-1],a[r]);
+	    if(a[r]-a[r-1]==2) my_printf("%d %d\n",a[r-1],a[r]);
 	 }
   }
   return 0;

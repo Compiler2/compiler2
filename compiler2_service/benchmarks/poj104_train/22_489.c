@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n,a[300],i,w,m,t,k=2;
-	scanf("%d",&a[1]);
-	for(n=2;scanf(",%d",&a[n]);n++)
+	my_scanf("%d",&a[1]);
+	for(n=2;my_scanf(",%d",&a[n]);n++)
 	for(i=1;i<n;i++)
 	{
 		for(m=n;m>i;m--)
@@ -12,7 +12,7 @@ int main_bench()
 			t=a[i],a[i]=a[m],a[m]=t;
 	}
 	if(a[1]==a[n-1])
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(i=1;i<=n;i++)
@@ -22,7 +22,7 @@ int main_bench()
 				k++;
 			else break;
 		}
-		printf("%d",a[k]);
+		my_printf("%d",a[k]);
 	}
 	return 0;
 }

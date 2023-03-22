@@ -4,7 +4,7 @@ int main_bench()
 { 
 int day,mn,yr,i,days=0,s,k; 
 int mont[13]={0,31,28,31,30,31,30,31,31,30,31,30,31}; 
-scanf("%d %d %d",&yr,&mn,&day); 
+my_scanf("%d %d %d",&yr,&mn,&day); 
 if (yr%4==0||yr%100==0||yr%400==0) 
 mont[2]=29; 
 else 
@@ -15,23 +15,23 @@ days+=day;
 s=yr-1+(int)((yr-1)/4)-(int)((yr-1)/100)+(int)((yr-1)/400)+days; 
 k=s%7; 
 if(k==0){
-printf("Sun.");
+my_printf("Sun.");
 }
 else if(k==1){
-printf("Mon.");
+my_printf("Mon.");
 }
 else if(k==2){
-printf("Tue.");
+my_printf("Tue.");
 }
 else if(k==3){
-printf("Wed.");
+my_printf("Wed.");
 }
 else if(k==4){
-printf("Thu.");
+my_printf("Thu.");
 }
 else if(k==5){
-printf("Fri.");}
+my_printf("Fri.");}
 else 
-printf("Sat.");
+my_printf("Sat.");
    return 0; 
 }

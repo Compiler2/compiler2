@@ -4,23 +4,23 @@ int main_bench()
 {
 	int max,min,n,x,y;
 	min=100;max=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==n)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		max=min=x;
 	}
 	n=n-1;
 	if(n==n)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		max=max>x?max:x;
 		min=min<x?min:x;
 	}
 	n=n-1;
 	for(n=n;n>0;n--)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		if(max==x)
 			max=x;min=min;
 		if(max!=x)
@@ -30,5 +30,5 @@ int main_bench()
 			min=min>y?min:y;
 		}
 	}
-	printf("%d\n%d",max,min);
+	my_printf("%d\n%d",max,min);
 }

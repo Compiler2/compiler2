@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n,a[100],t[100],i,j,c=1,b=1,e,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
     for(i=0;i<n;i++)
 	{
 		if(a[i]==2||a[i]==1)
 		{
-			printf("1\n");
+			my_printf("1\n");
 			
 		}
 		else
@@ -26,7 +26,7 @@ int main_bench()
 			    b=c+b;
 			    c=e;
 		    }
-		    printf("%d\n",t[l]);
+		    my_printf("%d\n",t[l]);
 		}
 	}
 	return 0;

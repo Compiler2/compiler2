@@ -13,7 +13,7 @@ int main_bench()
 	{
 		gets(str);
 		judge=legal(str);
-		printf("%d\n",judge);
+		my_printf("%d\n",judge);
 	}
 	
 	return 0;

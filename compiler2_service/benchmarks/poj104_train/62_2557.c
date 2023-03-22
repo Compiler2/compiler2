@@ -22,7 +22,7 @@ if(tra[i]!=' '){
 				yaode[j]=tra[i];
 				break;
 			}
-			printf("%s",yaode);
+			my_printf("%s",yaode);
 
 	return 0;
 }

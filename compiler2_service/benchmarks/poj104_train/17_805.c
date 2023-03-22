@@ -30,17 +30,17 @@ int main_bench()
                                                      s[i]='?';
                                          }
                        }
-                       printf("%s\n",c);
+                       my_printf("%s\n",c);
                        for(i=0;i<len;i++)
                        {
                                          if(s[i]=='?')
-                                         printf("?");
+                                         my_printf("?");
                                          else if(s[i]==40)
-                                         printf("$");
+                                         my_printf("$");
                                          else
-                                         printf(" ");
+                                         my_printf(" ");
                        }
-                       printf("\n");
+                       my_printf("\n");
     }
     return 0;
 }

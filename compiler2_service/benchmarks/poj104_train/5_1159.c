@@ -6,9 +6,9 @@ int main_bench()
 	double n,y;
 	char a[502],b[502];
 	x=0;
-	scanf("%lf",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	m=strlen(a);
 	c=strlen(b);
 	r=1;
@@ -24,7 +24,7 @@ k=1;
 		r=0;
 		}
 		if(r==0||k==0){
-			printf("error");
+			my_printf("error");
 			break;
 		}
 	}
@@ -36,10 +36,10 @@ k=1;
 		}
 		y=1.0*x/m;
 		if(y>n){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

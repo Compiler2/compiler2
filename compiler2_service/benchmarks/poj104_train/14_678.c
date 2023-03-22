@@ -13,14 +13,14 @@ struct stu a[100000],b;
 int main_bench()
 {
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a[i].num,&a[i].chi,&a[i].mat);
+		my_scanf("%d%d%d",&a[i].num,&a[i].chi,&a[i].mat);
 		a[i].tot=a[i].chi+a[i].mat;
 	}
 	qsort(a,n,sizeof(struct stu),comp);
 	for(i=0;i<3;i++)
-	printf("%d %d\n",a[i].num,a[i].tot);
+	my_printf("%d %d\n",a[i].num,a[i].tot);
 	return 0;
 }

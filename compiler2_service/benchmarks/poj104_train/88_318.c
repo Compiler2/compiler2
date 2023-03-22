@@ -6,12 +6,12 @@ int main_bench()
 	gets(n);
 	for(i=0;i<strlen(n);i++){
 		if(n[i]<='9'&&n[i]>='0'){
-		printf("%c",n[i]);
+		my_printf("%c",n[i]);
 		u=1;
 		}
 		else{
 			if(u)
-				printf("\n");
+				my_printf("\n");
 			u=0;
 		}
 	}

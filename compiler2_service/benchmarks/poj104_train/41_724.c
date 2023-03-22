@@ -24,10 +24,10 @@ int main_bench()
 						{
 							for (t=0;t<4;t++)
 							{
-								printf("%d ",a[t]);
+								my_printf("%d ",a[t]);
 
 							}
-							printf("%d",a[4]);
+							my_printf("%d",a[4]);
 						}
 					}
 				}

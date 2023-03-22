@@ -5,29 +5,29 @@ int oddoreven(int a);
 main_bench()
 {
       int a,b;
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       for(a;;)
       {
            if(oddoreven(a)==1)
            {   b=a/2;
                if(b==1)
-               {  printf("2/2=1\n");
-                  printf("End");
+               {  my_printf("2/2=1\n");
+                  my_printf("End");
                   break;
                }
                else
-               {  printf("%d/2=%d\n",a,b);
+               {  my_printf("%d/2=%d\n",a,b);
                   a=b;
                }
            }
            else
            { if(a==1)
-             {  printf("End");
+             {  my_printf("End");
                 break;
              }
              else   
              {  b=3*a+1;
-                printf("%d*3+1=%d\n",a,b);
+                my_printf("%d*3+1=%d\n",a,b);
                 a=b;
              } 
            }

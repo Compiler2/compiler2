@@ -7,14 +7,14 @@ int main_bench(){
 		int y;
 	}man[100];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char b[11];
 	int y;
 	int i,j;
 	char c[100][11];
 	int m=0,k=0;
 	for(i=0;i<n;i++){
-		scanf("%s%d",b,&y);
+		my_scanf("%s%d",b,&y);
 		if(y>=60){
 			strcpy(man[k].a,b);
 			man[k].y=y;
@@ -42,11 +42,11 @@ int main_bench(){
 	}
 	for(i=0;i<k;i++){
 		strcpy(b,man[i].a);
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 	for(i=0;i<m;i++){
 		strcpy(b,c[i]);
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,bai=0,wushi=0,ershi=0,shi=0,wu=0,yi=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	bai=n/100;
 	n=n%100;
 	wushi=n/50;
@@ -22,6 +22,6 @@ int main_bench()
 		n=n-5;
 	}
 	yi=n;
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",bai,wushi,ershi,shi,wu,yi);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",bai,wushi,ershi,shi,wu,yi);
 	return 0;
 }

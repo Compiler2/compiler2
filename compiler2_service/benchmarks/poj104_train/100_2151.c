@@ -4,14 +4,14 @@ int main_bench()
 {
 	char p[300],j;
 	int b,i,a=0;
-	scanf("%s",&p);
+	my_scanf("%s",&p);
 	for(i=0;p[i]!='\0';i++){
 		if((p[i]>='A'&&p[i]<='Z')||(p[i]>='a'&&p[i]<='z')){
 			a++;
 		}
 	}
 	if(a==0){
-		printf("No");
+		my_printf("No");
 	}
 	else{
 		for(j='A';j<='Z';j++)
@@ -28,7 +28,7 @@ int main_bench()
 			
 			if(b!=0)
 			{
-				printf("%c=%d\n",j,b);
+				my_printf("%c=%d\n",j,b);
 			}
 		}
         for(j='a';j<='z';j++)
@@ -45,7 +45,7 @@ int main_bench()
 			
 			if(b!=0)
 			{
-				printf("%c=%d\n",j,b);
+				my_printf("%c=%d\n",j,b);
 			}
 		}
 

@@ -22,11 +22,11 @@ int main_bench()
 		}
 	}
 	if (strcmp(syx, zxq) > 0)
-		printf(">\n");
+		my_printf(">\n");
 	else if (strcmp(syx, zxq) < 0)
-		printf("<\n");
+		my_printf("<\n");
 	else
-		printf("=\n");
+		my_printf("=\n");
 		
 	return 0;
 }

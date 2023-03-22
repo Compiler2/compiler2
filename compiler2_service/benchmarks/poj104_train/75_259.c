@@ -6,12 +6,12 @@ int main_bench()
   int i,n,s,t,j;
   char c;
 for(i=0;;i++)
-  { scanf("%d%c",&x[i],&c);
+  { my_scanf("%d%c",&x[i],&c);
     if(c!=',') break;
   } 
  n=i+1;
 for(i=0;;i++)
-  { scanf("%d%c",&y[i],&c);
+  { my_scanf("%d%c",&y[i],&c);
     if(c!=',') break;
   } 
   t=0;
@@ -23,7 +23,7 @@ for(i=0;;i++)
 	 }
 	 if(s>t) t=s;
  }
- printf("%d %d",n,t);
+ my_printf("%d %d",n,t);
 
 return 0;
 }

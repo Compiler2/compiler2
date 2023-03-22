@@ -3,19 +3,19 @@
 int main_bench()
 {
 	int n,comp,i,j,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[300],b[300];
 
 
 
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	
 	
 	
-	if(n==1)printf("%d",a[0]);
+	if(n==1)my_printf("%d",a[0]);
 	
 
 	
@@ -44,9 +44,9 @@ int main_bench()
 
 	for(i=0;i<=p-2;i++)
 	{
-		printf("%d,",b[i]);
+		my_printf("%d,",b[i]);
 	}
-	printf("%d",b[p-1]);
+	my_printf("%d",b[p-1]);
 }
 
 

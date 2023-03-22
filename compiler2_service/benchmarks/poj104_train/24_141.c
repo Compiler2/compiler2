@@ -46,8 +46,8 @@ int main_bench()
 		if(min==len[i])minno=i;
 	}
 	for(j=0;str2[maxno][j]!='\0';j++)
-		printf("%c",str2[maxno][j]);
-	printf("\n");
+		my_printf("%c",str2[maxno][j]);
+	my_printf("\n");
 	for(j=0;str2[minno][j]!='\0';j++)
-		printf("%c",str2[minno][j]);
+		my_printf("%c",str2[minno][j]);
 }

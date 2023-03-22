@@ -5,7 +5,7 @@ int main_bench()
 int a,b,c,u,v,w,e;
 int sum=0;
 int i,j,f[3000];
-scanf("%d%d%d\n%d%d%d",&a,&b,&c,&u,&v,&w);
+my_scanf("%d%d%d\n%d%d%d",&a,&b,&c,&u,&v,&w);
 e=u-a-1;
 switch(b)
 {
@@ -61,6 +61,6 @@ for(j=0;j<e;j++)
 		sum=sum+365;
 }
 }
-printf("%d",sum);
+my_printf("%d",sum);
 return 0;
 }

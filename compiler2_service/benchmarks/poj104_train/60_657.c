@@ -4,7 +4,7 @@ int main_bench()
 {
     int a[20000],b[20000];
     int N;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int i,k;
     for(i=2;i<=N;i++)
     {
@@ -29,12 +29,12 @@ int main_bench()
     {
         if((a[i-2]==a[i])&&(a[i-2]==1))
         {
-            printf("%d %d\n",b[i-2],b[i]);
+            my_printf("%d %d\n",b[i-2],b[i]);
         }
     }
     if(N<=4)
     {
-        printf("empty");
+        my_printf("empty");
     }
     getchar();
     getchar();

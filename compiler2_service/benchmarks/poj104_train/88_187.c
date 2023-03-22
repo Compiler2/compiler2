@@ -11,14 +11,14 @@ int main_bench()
     {
         if(*c>='0'&&*c<='9')
         {
-            printf("%c",*c);
+            my_printf("%c",*c);
             a=1;
         }
         else if(a==1)
 			for(p1=c;*p1!='\0';p1++)
 				if(*p1>='0'&&*p1<='9')
 				{ 
-					printf("\n");
+					my_printf("\n");
 					a=0;
 					break;
 				}

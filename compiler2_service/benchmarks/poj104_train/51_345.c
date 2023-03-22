@@ -8,7 +8,7 @@ int main_bench()
 	int d[250];
 	for(i=0;i<250;i++)
 		d[i]=0;
-	scanf("%d%c",&n,&c);
+	my_scanf("%d%c",&n,&c);
 	gets(a);
 	k=strlen(a);
 	for(i=0;i<=k-n;i++)
@@ -32,17 +32,17 @@ int main_bench()
 	p=d[i]+1;
 	for(i=0;i<=k-n;i++)
 		if(d[i]>p-1) p=d[i]+1;
-	if(p==1) printf("NO");
+	if(p==1) my_printf("NO");
 	else
 	{
-	printf("%d\n",p);
+	my_printf("%d\n",p);
 		for(i=0;i<k-n;i++)
 	{
 		if(d[i]==p-1)
 		{
 			for(j=0;j<n;j++)
-				printf("%c",b[i][j]);
-			printf("\n");
+				my_printf("%c",b[i][j]);
+			my_printf("\n");
 		}
 	}
 	}

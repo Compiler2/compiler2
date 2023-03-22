@@ -13,10 +13,10 @@ void change(int n,int m,int *p)
 int main_bench()
 {
 	int n,m,*p,i,q=0;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	p=(int *)malloc(sizeof(int)*n);
-	for(i=0;i<n;i++) scanf("%d",p+i);
+	for(i=0;i<n;i++) my_scanf("%d",p+i);
 	change(n,m,p);
-	for(i=0;i<n-1;i++) printf("%d ",*(p+i));
-	printf("%d\n",*(p+i));
+	for(i=0;i<n-1;i++) my_printf("%d ",*(p+i));
+	my_printf("%d\n",*(p+i));
 }

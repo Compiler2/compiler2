@@ -4,16 +4,16 @@ int main_bench()
 {
 	int n,i,m,j;
 	int data;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for( i = 1; i <= n; i++ )
 	{
 		int sum = 0;
 		int flag = 1;
 		int num = 0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for( j = 1; j <= m ; j++ )
 		{
-			scanf("%d",&data);
+			my_scanf("%d",&data);
 			if( data + num >= 60 && flag )
 			{
 				sum = 60 - num;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 		if( sum == 0 )
 			sum = 60 - num;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 
 	}
 	return 0;

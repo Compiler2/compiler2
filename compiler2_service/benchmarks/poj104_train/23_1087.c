@@ -19,12 +19,12 @@ int main_bench()
 			
 		}
         a[m][j]='\0';
-		printf("%s ",a[m]);
+		my_printf("%s ",a[m]);
 		b=i;
 		}
 	}
 	for(j=0;j<b;j++)
 		a[m+1][j]=c[j];
-	printf("%s",a[m+1]);
+	my_printf("%s",a[m+1]);
 }
 

@@ -19,7 +19,7 @@ int main_bench()
 			  if (str1[i]<str2[i]) k=-1;
 		  }
 	 }
-	 if (k>0) printf(">\n");
-	 if (k<0) printf("<\n");
-	 if (k==0) printf ("=");
+	 if (k>0) my_printf(">\n");
+	 if (k<0) my_printf("<\n");
+	 if (k==0) my_printf ("=");
 }

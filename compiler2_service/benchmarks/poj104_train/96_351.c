@@ -20,20 +20,20 @@ main_bench()
                  y=b[n-1]%13;
                  b[n-1]=b[n-1]/13;
                  if (n==1)
-                 printf("0");
+                 my_printf("0");
                  else if((b[1]==0)&&(n>=3))
                  {
                      for(i=2;i<=n-1;i++)
                      {
-                                        printf("%d",b[i]);
+                                        my_printf("%d",b[i]);
                      }
                  }
                  else
                  {
                      for(i=1;i<=n-1;i++)
                      {
-                                        printf("%d",b[i]);
+                                        my_printf("%d",b[i]);
                      }
                  }
-                 printf("\n%d\n",y);
+                 my_printf("\n%d\n",y);
 }

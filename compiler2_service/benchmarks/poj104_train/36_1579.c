@@ -24,6 +24,6 @@ int main_bench()
     b[l]='\0';
     bubble_sort(a,l);
     bubble_sort(b,l);
-    if(strcmp(a,b)) printf("NO\n");
-        else printf("YES\n");
+    if(strcmp(a,b)) my_printf("NO\n");
+        else my_printf("YES\n");
 }

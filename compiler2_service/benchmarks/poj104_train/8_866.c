@@ -4,11 +4,11 @@ int n,m,a[1000],b[1000],c[2000];
 void f1(void)
 {
 	int i;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<m;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void f2(void)
 {
@@ -53,13 +53,13 @@ void f4(void)
 	{
 		if(count==0)
 		{
-			printf("%d",c[i]);
+			my_printf("%d",c[i]);
 			count++;
 		}
 		else
-			printf(" %d",c[i]);
+			my_printf(" %d",c[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
 int main_bench()
 {

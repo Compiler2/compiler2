@@ -4,7 +4,7 @@
 int main_bench() 
 { 
     int m,a,b,c,d,e,p,x,y;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     a=m/10000;
     b=m%10000/1000;
     c=m%1000/100;
@@ -23,7 +23,7 @@ int main_bench()
     x=(10-d)/10;
     y=1-x;
     p=p/10*x+p*y;
-    printf("%d",p);
+    my_printf("%d",p);
 }
 
 

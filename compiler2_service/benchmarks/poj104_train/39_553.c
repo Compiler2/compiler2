@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j=0,max,N,mark1[150],mark2[150],p[150],s[150]={0},sum=0;
 	char name[150][20]={'0'},a[150]={'0'},b[150]={'0'};
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for (i=0;i<N;i++)
-	{	scanf("%s %d %d %s %s %d",name[i],&mark1[i],&mark2[i],&a[i],&b[i],&p[i]);}
+	{	my_scanf("%s %d %d %s %s %d",name[i],&mark1[i],&mark2[i],&a[i],&b[i],&p[i]);}
 	for (i=0;i<N;i++)
 	{
 		if (mark1[i]>80 && p[i]>=1)
@@ -29,6 +29,6 @@ int main_bench()
 		{   max=s[i];
 		    j=i;}
 	}
-	printf("%s\n%d\n",name[j],s[j]);
-	printf("%d\n",sum);
+	my_printf("%s\n%d\n",name[j],s[j]);
+	my_printf("%d\n",sum);
 }

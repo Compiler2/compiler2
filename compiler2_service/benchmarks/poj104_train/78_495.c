@@ -23,7 +23,7 @@ int main_bench()
     for (i=9; i>=1; i--)
     {
         if (a[i]!=' ')
-            printf("%c %d\n",a[i],i*10);
+            my_printf("%c %d\n",a[i],i*10);
     }
     return 0;
 }

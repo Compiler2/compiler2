@@ -9,10 +9,10 @@ struct patient
 int main_bench()
 {
 	int i,n,j,old=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	j=1;
 	for(i=1;i<=n;i++){
-		scanf("%s %d",&pa[i].id,&pa[i].age);
+		my_scanf("%s %d",&pa[i].id,&pa[i].age);
 		if(pa[i].age>=60){
 			que[j]=pa[i];
 			old+=1;
@@ -37,7 +37,7 @@ int main_bench()
 		}
 	}
 	for(i=1;i<=n;i++){
-		printf("%s\n",que[i].id);
+		my_printf("%s\n",que[i].id);
 	}
 	return 0;
 }

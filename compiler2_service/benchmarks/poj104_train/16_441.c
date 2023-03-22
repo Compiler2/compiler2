@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int i=1;
     int k;
     int sum=0;
     int x[10];
     if(n==0)
-    printf("0");
+    my_printf("0");
     else
     {
     while(n!=0)
@@ -23,7 +23,7 @@ int main_bench()
 
     for(k=1;k<=i;k++)
     {
-                     printf("%d", x[k]);
+                     my_printf("%d", x[k]);
     }
     }
 

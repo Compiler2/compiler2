@@ -5,11 +5,11 @@ int main_bench()
 	int n,i;
 	int year,month1,month2;
 	int day(int year,int month);
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d%d%d",&year,&month1,&month2);
-		if((day(year,month1)-day(year,month2))%7==0){printf("YES\n");}
-		else{printf("NO\n");}
+		my_scanf("%d%d%d",&year,&month1,&month2);
+		if((day(year,month1)-day(year,month2))%7==0){my_printf("YES\n");}
+		else{my_printf("NO\n");}
 	}
 	
 	return 0;

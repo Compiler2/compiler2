@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int b[1000];
     char a[1000][256];
     int i,j;
     for(i=0;i<n;i++)
     {
-        scanf("%s",a[i]); 
+        my_scanf("%s",a[i]); 
         b[i]=strlen(a[i]);
      }
      for(i=0;i<n;i++)
@@ -18,22 +18,22 @@ int main_bench()
         {
             if(a[i][j]=='A')
             {
-                printf("T");
+                my_printf("T");
              }
             if(a[i][j]=='T')
             {
-                printf("A");
+                my_printf("A");
              }
             if(a[i][j]=='G')
             {
-                printf("C");
+                my_printf("C");
              }
             if(a[i][j]=='C')
             {
-                printf("G");
+                my_printf("G");
              }
           }
-          printf("\n");
+          my_printf("\n");
        }
     return 0;
 }

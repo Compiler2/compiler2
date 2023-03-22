@@ -18,12 +18,12 @@ int main_bench(){
 				}
 			}
 		if(panduan==0&&k==0){
-			printf("%s",c);
+			my_printf("%s",c);
 			i+=j-1;
 			k=1;
 		}
 		else
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		
 		
 	}

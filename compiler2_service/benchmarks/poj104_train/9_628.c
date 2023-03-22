@@ -3,10 +3,10 @@
 main_bench()
 {     char temp_0[10],id[100][10];
       int i,j,n,max,age[100],num[100],yes[100],ncount=1,temp,num_1;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {num[i]=i;
-      scanf("%s %d",id[i],&age[i]);
+      my_scanf("%s %d",id[i],&age[i]);
       }
       for(j=0;j<n;j++)
                       {
@@ -24,7 +24,7 @@ main_bench()
                       }}
    for(i=0;i<n;i++)
    {if(age[i]>=60)
-   printf("%s\n",id[i]);
+   my_printf("%s\n",id[i]);
    }
    for(j=0;j<n;j++)
                    {for(i=0;i<n-j-1;i++)
@@ -42,7 +42,7 @@ main_bench()
                        }
     for(i=0;i<n;i++)
     {if(age[i]<60)
-    printf("%s\n",id[i]);}
+    my_printf("%s\n",id[i]);}
      }
 
 

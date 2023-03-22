@@ -18,10 +18,10 @@ int main_bench()
 	int i,j,k,n,min=50,max=0,maxt,mint;
 	int l[503]={0};
 	char c[203][50]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%s",c+i);
+		my_scanf("%s",c+i);
 		*(l+i)=strlen(c+i);
 	}
 
@@ -39,8 +39,8 @@ int main_bench()
 		}
 	}
 	if(min==max)
-		printf("%s\n%s",c,c);
+		my_printf("%s\n%s",c,c);
 	else
-		printf("%s\n%s",*(c+maxt),*(c+mint) );
+		my_printf("%s\n%s",*(c+maxt),*(c+mint) );
 
 }

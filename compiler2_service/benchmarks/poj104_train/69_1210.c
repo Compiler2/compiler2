@@ -70,18 +70,18 @@ int main_bench()
 			}
 		}
 		if(t==1){
-			printf("1");
+			my_printf("1");
 			puts(longer);
 		}else{
 			for(i=0;i<max;i++){
 				if(longer[i]!='0' || zeroPrefix == 1){
 
 				    zeroPrefix = 1;
-					printf("%c",longer[i]);
+					my_printf("%c",longer[i]);
 				}
 			}
 			if(zeroPrefix == 0)
-			printf("0");
+			my_printf("0");
 
 		}
 	}else{
@@ -104,17 +104,17 @@ int main_bench()
 			}
 		}
 		if(t==1){
-			printf("1");
+			my_printf("1");
 			puts(longer);
 		}else{
 			for(i=0;i<strlen(longer);i++){
 				if(longer[i]!='0' || zeroPrefix == 1){
 				    zeroPrefix = 1;
-					printf("%c",longer[i]);
+					my_printf("%c",longer[i]);
 				}
 			}
 			if(zeroPrefix == 0)
-			printf("0");
+			my_printf("0");
 
 		}
 	}

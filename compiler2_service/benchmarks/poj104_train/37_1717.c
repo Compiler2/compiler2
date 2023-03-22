@@ -6,10 +6,10 @@ int main_bench()
 	char s[100000];
 	int a[100000];
 	int num[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=1;m<=n;m++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		l=strlen(s);
 		for(i=0;i<=l-1;i++)
 		{
@@ -30,12 +30,12 @@ int main_bench()
 		{
 			if(num[i]==0)
 			{
-				printf("%c\n",s[i]);
+				my_printf("%c\n",s[i]);
 				break;
 			}
 		}
 		if(i==l)
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 }

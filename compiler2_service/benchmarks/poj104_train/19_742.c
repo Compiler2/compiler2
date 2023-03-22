@@ -44,5 +44,5 @@ main_bench()
           }
       }
       for(i=0;i<k-y;i++)
-          printf("%c",temp[i]);
+          my_printf("%c",temp[i]);
 }

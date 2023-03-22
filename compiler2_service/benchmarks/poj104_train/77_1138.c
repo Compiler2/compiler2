@@ -15,7 +15,7 @@ int main_bench()
 			{
 				if(a[j]==m)
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 					a[i]=' ';
 					a[j]=' ';
 					break;

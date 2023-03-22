@@ -13,9 +13,9 @@ int main_bench()
 			if(m[i]!=m[i-1]&&m[i]!=m[i-1]-32)
 			{
 				if(m[i-1]>='A'&&m[i-1]<='Z')
-					printf("(%c,%d)",m[i-1],j);
+					my_printf("(%c,%d)",m[i-1],j);
 				else if(m[i-1]>='a'&&m[i-1]<='z')
-					printf("(%c,%d)",m[i-1]-32,j);
+					my_printf("(%c,%d)",m[i-1]-32,j);
 				j=0;
 			}
 		}
@@ -24,18 +24,18 @@ int main_bench()
 			if(m[i]!=m[i-1]&&m[i]!=m[i-1]+32)
 			{
 				if(m[i-1]>='A'&&m[i-1]<='Z')
-					printf("(%c,%d)",m[i-1],j);
+					my_printf("(%c,%d)",m[i-1],j);
 				else if(m[i-1]>='a'&&m[i-1]<='z')
-					printf("(%c,%d)",m[i-1]-32,j);
+					my_printf("(%c,%d)",m[i-1]-32,j);
 				j=0;
 			}
 		}
 		j=j+1;
 	}
 	if(m[n-1]>='A'&&m[n-1]<='Z')
-		printf("(%c,%d)",m[n-1],j);
+		my_printf("(%c,%d)",m[n-1],j);
 	else
-		printf("(%c,%d)",m[n-1]-32,j);
+		my_printf("(%c,%d)",m[n-1]-32,j);
 	return 0;
 }
 			

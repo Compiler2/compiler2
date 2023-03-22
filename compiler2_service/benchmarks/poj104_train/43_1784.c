@@ -3,7 +3,7 @@
 main_bench()
 {
 	int m,a,b,x,y,i,j,p1,p2;
-	scanf("%d\n",&m);
+	my_scanf("%d\n",&m);
 	for(a=3;a<=(m/2);a=a+2)
 	{
 		b=m-a;
@@ -28,7 +28,7 @@ main_bench()
 			}
 		}
 		if(p1!=0&&p2!=0)
-			printf("%d %d\n",a,b);
+			my_printf("%d %d\n",a,b);
 	}
 	return 0;
 }

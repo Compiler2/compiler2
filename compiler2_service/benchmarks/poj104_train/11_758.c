@@ -16,13 +16,13 @@ main_bench()
       a[9]=31;
       a[10]=30;
       a[11]=31;
-      scanf("%d %d %d",&y,&m,&d);
+      my_scanf("%d %d %d",&y,&m,&d);
       if (y%4==0 && y%100 != 0) a[1]=29;
       if (y%400==0) a[1]=29;
       
       for (i=0;i<m-1;i++) n+= a[i];
       n=n+d;
-      printf("%d",n);
+      my_printf("%d",n);
       
 }
 

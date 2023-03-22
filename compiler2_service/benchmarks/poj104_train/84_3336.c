@@ -5,10 +5,10 @@ int main_bench()
 {  
 a=0;
 b=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 do
 {
-scanf("%d",&c);
+my_scanf("%d",&c);
 n=n-1;
 if(a>=b&&a>=c&&b>=c)
 {
@@ -26,7 +26,7 @@ else if(c>=a&&c>=b&&b>=a)
 {a=c;b=b;}
 }
 while(n>0);
-printf("%d\n",a);
-printf("%d\n",b);
+my_printf("%d\n",a);
+my_printf("%d\n",b);
 return 0;
 }

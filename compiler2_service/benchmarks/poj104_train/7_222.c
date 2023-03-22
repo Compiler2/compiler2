@@ -20,6 +20,6 @@ int main_bench()
 	   }
 	   if(j==strlen(sub)+i)break;
 	}
-    printf("%s",s);
+    my_printf("%s",s);
     return 0;
 }

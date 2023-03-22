@@ -8,9 +8,9 @@ int main_bench()
 {
     int i,j,k,n,a,b;
     int max=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-       scanf("%d %s",&bo[i].num,bo[i].writer);
+       my_scanf("%d %s",&bo[i].num,bo[i].writer);
        }
     for(i='Z';i>='A';i--){
         a=0;
@@ -26,11 +26,11 @@ int main_bench()
            b=i;
           }
        }
-     printf("%c\n%d\n",b,max);
+     my_printf("%c\n%d\n",b,max);
      for(j=0;j<n;j++){
          for(i=0;i<28;i++){
              if(bo[j].writer[i]==b){
-                printf("%d\n",bo[j].num);
+                my_printf("%d\n",bo[j].num);
                }
             }
         }

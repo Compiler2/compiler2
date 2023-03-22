@@ -10,10 +10,10 @@ int main_bench()
 	{
 		if(*(p+i)==' ') 
 		{
-			for(k=i+1;k<=j;k++) printf("%c%s",*(p+k),k==j? " ":"");
+			for(k=i+1;k<=j;k++) my_printf("%c%s",*(p+k),k==j? " ":"");
 			j=i-1;
 		}
 	}
-	for(i=0;*(p+i)!=' '&&*(p+i)!='\0';i++) printf("%c",*(p+i));
+	for(i=0;*(p+i)!=' '&&*(p+i)!='\0';i++) my_printf("%c",*(p+i));
 	
 }

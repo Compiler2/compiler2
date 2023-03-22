@@ -5,10 +5,10 @@ int main_bench()
 {   int n,i,j,len,sum,zm;
     char zfc[100000],zm1;
     char *p=zfc;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=0;j<n;j++){
     sum=0;
-    scanf("%s",zfc);
+    my_scanf("%s",zfc);
     len=strlen(zfc);
     for(zm=0;zm<len;zm++){
 	  for(i=0;i<len;i++){
@@ -23,9 +23,9 @@ int main_bench()
 	  sum=0;}
 	}
 	if(sum==1){
-	printf("%c\n",zm1);
+	my_printf("%c\n",zm1);
 	}else{
-	printf("no\n");
+	my_printf("no\n");
 	}
 	}
 	return 0;

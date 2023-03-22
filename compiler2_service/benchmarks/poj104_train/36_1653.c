@@ -21,16 +21,16 @@ char f(char a[])
 int main_bench()
 {
     char a1[1000],a2[1000];
-    scanf("%s %s",a1,a2);
+    my_scanf("%s %s",a1,a2);
     f(a1);
     f(a2);
     if(strcmp(a1,a2)==0)
     {
-        printf("YES");
+        my_printf("YES");
     }
     else
     {
-        printf("NO");
+        my_printf("NO");
     }
     return 0;
 }

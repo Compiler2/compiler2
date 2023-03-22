@@ -35,8 +35,8 @@ int main_bench()
     }
     for(p=0;p<k-1;p++)
     {
-          printf("%s ",word[p]);
+          my_printf("%s ",word[p]);
     }
-    printf("%s",word[k-1]);
+    my_printf("%s",word[k-1]);
     return 0;
 }

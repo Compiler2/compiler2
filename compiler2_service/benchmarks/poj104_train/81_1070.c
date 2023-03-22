@@ -14,20 +14,20 @@ int main_bench()
 	{
 		for (j=0;j<5;j++)
 		{
-			scanf("%d",&num[i][j]);
+			my_scanf("%d",&num[i][j]);
 		}
 		p[i]=&num[i][0];
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if (exchange(m,n)==0)
 	{
-		printf("error\n");
+		my_printf("error\n");
 	}
 	else
 	{
 		output();
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	return 0;
 }
 
@@ -46,11 +46,11 @@ void output()
 	int i,j;
 	for (i=0;i<5;i++)
 	{
-		printf("%d",*(p[i]));
+		my_printf("%d",*(p[i]));
 		for (j=1;j<5;j++)
 		{
-			printf(" %d",*(p[i]+j));
+			my_printf(" %d",*(p[i]+j));
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

@@ -11,9 +11,9 @@ int main_bench()
        }temp;
     struct student stu[100000];
     int i,j,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++){
-        scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].mathematics);
+        my_scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].mathematics);
         stu[i].sum=stu[i].chinese+stu[i].mathematics;
         }
     for (i=0;i<3;i++){
@@ -26,6 +26,6 @@ int main_bench()
             }
         }
     for (i=n-1;i>=n-3;i--){
-        printf("%d %d\n",stu[i].num,stu[i].sum);}
+        my_printf("%d %d\n",stu[i].num,stu[i].sum);}
     return 0;
     }

@@ -3,21 +3,21 @@
 int main_bench()
 {
 	int i,n,j,t[100000],a,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&t[i]);
+		my_scanf("%d",&t[i]);
 	}
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++){
 		if(t[i]!=k){
 			a=i;
-			printf("%d",t[i]);
+			my_printf("%d",t[i]);
 			break;
 		}
 	}
 	for(i=a+1;i<n;i++){
 		if(t[i]!=k){
-			printf(" %d",t[i]);
+			my_printf(" %d",t[i]);
 		}
 		
 	}

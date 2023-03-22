@@ -6,16 +6,16 @@ int main_bench()
 	int s[100][100];
 	int sum[100];
 	int sumr,sumc;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		sum[i]=0;
 		sumr=0;
 		sumc=0;
-		scanf("%d %d",&r,&c);
+		my_scanf("%d %d",&r,&c);
 		for(j=0;j<r;j++)
 			for(k=0;k<c;k++)
-				scanf("%d",&s[j][k]);
+				my_scanf("%d",&s[j][k]);
 			if(r!=1&&c!=1)
 			{
 			for(k=0;k<c;k++)
@@ -31,7 +31,7 @@ int main_bench()
 					if(c==1&&r==1)sum[i]=s[0][0];
 	}
 	      for(i=0;i<n;i++)
-		printf("%d\n",sum[i]);
+		my_printf("%d\n",sum[i]);
 			return 0;
 }
 

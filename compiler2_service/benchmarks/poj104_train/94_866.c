@@ -6,9 +6,9 @@ int main_bench()
 	a=0;
 	int sz[500];
 	int sc[500];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
-		scanf ("%d",&sz[i]);
+		my_scanf ("%d",&sz[i]);
 	for(i=0;i<n;i++)
 	{
 		if(sz[i]%2!=0)
@@ -40,7 +40,7 @@ int main_bench()
 		}
 	}
 	for (l=0;l<a-1;l++)
-		printf ("%d,",sc[l]);
-	printf ("%d\n",sc[a-1]);
+		my_printf ("%d,",sc[l]);
+	my_printf ("%d\n",sc[a-1]);
 	return 0;
 }

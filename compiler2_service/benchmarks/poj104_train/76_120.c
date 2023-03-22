@@ -3,10 +3,10 @@
 int main_bench(){
 int n,i,j,k,t,num,a,b,m,max;
 int x[50000][2];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (i=0;i<n;i++){
     for (j=0;j<2;j++){
-    scanf ("%d",&x[i][j]);
+    my_scanf ("%d",&x[i][j]);
     }
 } 
 for (k=1;k<=n;k++){
@@ -37,7 +37,7 @@ max=x[0][1];
 for (m=0;m<n;m++){
        if (x[m+1][0]>max){
           num++;
-         printf("no");
+         my_printf("no");
          break;
         }
         if(x[m+1][1]>max){
@@ -45,7 +45,7 @@ for (m=0;m<n;m++){
         } 
     }
 if (num==0){
-            printf("%d %d",x[0][0],max);
+            my_printf("%d %d",x[0][0],max);
 }
   return 0;
 }

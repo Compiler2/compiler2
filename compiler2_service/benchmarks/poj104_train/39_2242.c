@@ -6,11 +6,11 @@ int main_bench()
 	int N,score1,score2,k,i,money[100],totalmoney=0,x,n;
 	char name[100][20];
 	char c,d;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
 		money[i]=0;
-		scanf("%s %d %d %c %c %d",name[i],&score1,&score2,&c,&d,&k);
+		my_scanf("%s %d %d %c %c %d",name[i],&score1,&score2,&c,&d,&k);
 		if(score1>80&&k!=0)
 		{
 			money[i]=money[i]+8000;
@@ -47,9 +47,9 @@ int main_bench()
 
 		}
 	}
-	printf("%s\n",name[n]);
-	printf("%d\n",x);
-    printf("%d\n",totalmoney);
+	my_printf("%s\n",name[n]);
+	my_printf("%d\n",x);
+    my_printf("%d\n",totalmoney);
 	
 
 

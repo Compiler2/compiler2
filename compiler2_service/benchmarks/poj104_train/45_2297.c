@@ -5,8 +5,8 @@ int strpos(char *s,char *t);
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s%s",s,w);
-	printf("%d\n",strpos(w,s));
+	my_scanf("%s%s",s,w);
+	my_printf("%d\n",strpos(w,s));
 	return 0;
 }
 

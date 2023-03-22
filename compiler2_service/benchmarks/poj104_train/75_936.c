@@ -7,18 +7,18 @@ main_bench()
 	char a;
 	for(i=0;;i++)
 	{
-		scanf("%d",&in[i]);
-		scanf("%c",&a);
+		my_scanf("%d",&in[i]);
+		my_scanf("%c",&a);
 		if(a=='\n') break;
 	}
 	for(i=0;;i++)
 	{
-		scanf("%d",&out[i]);
-		scanf("%c",&a);
+		my_scanf("%d",&out[i]);
+		my_scanf("%c",&a);
 		if(a=='\n') break;
 	}
 	n=i+1;
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(t=0;t<1000;t++)
 	{
 		num=0;
@@ -26,5 +26,5 @@ main_bench()
 			if(t>=in[i]&&t<out[i]) num++;
 		if(num>max) max=num;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }

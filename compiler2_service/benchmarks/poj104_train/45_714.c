@@ -7,8 +7,8 @@ main_bench()
 	int i,j,m,n;
 	p1=a;
 	p2=b;
-	scanf("%s",p1);
-	scanf("%s",p2);
+	my_scanf("%s",p1);
+	my_scanf("%s",p2);
 	m=strlen(a);
 	n=strlen(b);
 	for (i=0;i<n;i++,p2++)
@@ -24,5 +24,5 @@ main_bench()
 		if (j==m)
 			break;
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 }

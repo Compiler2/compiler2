@@ -4,10 +4,10 @@ int main_bench(){
 int n,i,j,k,max,min,z,t;
 double d;
 z=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n],b[n];
 for(i=0;i<n;i++){
-    scanf("%d%d",&a[i],&b[i]);
+    my_scanf("%d%d",&a[i],&b[i]);
     }
 min=a[0];
 max=b[0];
@@ -28,8 +28,8 @@ for(d=min;d<=max;d=d+0.5){
 for(i=min;i<=2*max-min;i++){
     if(sz[i]==0){z++;}
 }
-if(z==0){printf("%d %d",min,max);}
-else printf("no");
+if(z==0){my_printf("%d %d",min,max);}
+else my_printf("no");
 return 0;
 }
 

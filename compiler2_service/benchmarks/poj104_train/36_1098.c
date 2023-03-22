@@ -5,13 +5,13 @@ int main_bench()
 	char a[100]={'\0'};
 	char b[100]={'\0'};
 	int i,j,m,n,h;
-	scanf("%s%s",&a,&b);
+	my_scanf("%s%s",&a,&b);
 	m=strlen(a);
 	n=strlen(b);
 	h=0;
 	if(m!=n)
 	{
-		printf("NO");
+		my_printf("NO");
 	}else{
 	for(i=0;i<m;i++)
 	{
@@ -28,10 +28,10 @@ int main_bench()
 	}
 	if(h==m)
 	{
-		printf("YES");
+		my_printf("YES");
 	}else
 	{
-		printf("NO");
+		my_printf("NO");
 	}}
 	return 0;
 

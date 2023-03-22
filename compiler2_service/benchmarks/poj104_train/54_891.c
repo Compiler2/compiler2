@@ -4,8 +4,8 @@ int sum(int x,int y);
 int main_bench()
 {
    int n,k;
-   scanf("%d %d",&n,&k);
-   printf("%d\n",sum(n,k));
+   my_scanf("%d %d",&n,&k);
+   my_printf("%d\n",sum(n,k));
 }
 int sum(int x,int y)
 {

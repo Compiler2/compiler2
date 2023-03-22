@@ -7,7 +7,7 @@ int main_bench()
 	int cir;
 	do
 	{
-		scanf("%c",&s[i]);
+		my_scanf("%c",&s[i]);
 		i++;
 		l++;
 	}while(s[i-1]!=10);
@@ -20,5 +20,5 @@ int main_bench()
 		s[i]+=s[i+1];
 	}
 	s[l-1]=cir;
-	printf("%s",s);
+	my_printf("%s",s);
 }

@@ -17,9 +17,9 @@ int main_bench(){
     
     for(i=0;i<=k;i++){
         if(i==0)
-            printf("%d",strlen(word[i]));
+            my_printf("%d",strlen(word[i]));
         else
-            printf(",%d",strlen(word[i]));
+            my_printf(",%d",strlen(word[i]));
         }
     return 0;
 }

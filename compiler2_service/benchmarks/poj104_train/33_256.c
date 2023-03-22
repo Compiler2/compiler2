@@ -4,10 +4,10 @@ int main_bench()
 {
 	char dna[1000],hubu[1000];
 	int n,length;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",dna);
+		my_scanf("%s",dna);
 		length=strlen(dna);
 		for(int j=0;j<length;j++)
 		{
@@ -28,8 +28,8 @@ int main_bench()
 				hubu[j]='G';
 			}
 		
-	    printf("%c",hubu[j]);}
-		printf("\n");
+	    my_printf("%c",hubu[j]);}
+		my_printf("\n");
 	}
 
 	return 0;

@@ -9,9 +9,9 @@ main_bench()
     while(str[i]!='\0')
     {
         if(str[i]==' '&&str[i+1]!=' ')
-    printf(" ");
+    my_printf(" ");
     if(str[i]!=' ')
-    printf("%c",str[i]);
+    my_printf("%c",str[i]);
     i++;
     }
 }

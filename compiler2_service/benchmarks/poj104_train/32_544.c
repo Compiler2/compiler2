@@ -5,10 +5,10 @@ int main_bench()
 	char a[101],b[101];
 	int c[100],d[100];
 	int i,l1,l2,n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
-		scanf("%s%s",a,b);
+		my_scanf("%s%s",a,b);
 		l1=strlen(a);
 		l2=strlen(b);
 		
@@ -29,8 +29,8 @@ int main_bench()
 		for(i=l1-1;i>=0;i--)
 		if(c[i]!=0) break;
 		for(j=i;j>=0;j--)
-		printf("%d",c[j]);
-		printf("\n");
+		my_printf("%d",c[j]);
+		my_printf("\n");
 	}
 		
 }

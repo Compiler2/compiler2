@@ -12,7 +12,7 @@ main_bench()
                           count++;
                           else count=0;
                           if(count<2)
-                          printf("%c",str[i]);
+                          my_printf("%c",str[i]);
       }
       getchar();
       getchar();

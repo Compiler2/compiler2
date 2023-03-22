@@ -9,12 +9,12 @@ int main_bench()
 		int y;
 		int z;
 	}*s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=(int*)malloc(sizeof(int)*n);
 	s=(struct pp*)malloc(sizeof(int)*3*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&s[i].x,&s[i].y,&s[i].z);
+		my_scanf("%d%d%d",&s[i].x,&s[i].y,&s[i].z);
 		b[i]=((s[i].y)+(s[i].z));
 	}
 	for(i=0;i<n;i++)
@@ -41,9 +41,9 @@ int main_bench()
 			r=i;}
 		}
 	}
-	printf("%d %d\n",s[p].x,b[p]);
-	printf("%d %d\n",s[q].x,b[q]);
-	printf("%d %d\n",s[r].x,b[r]);
+	my_printf("%d %d\n",s[p].x,b[p]);
+	my_printf("%d %d\n",s[q].x,b[q]);
+	my_printf("%d %d\n",s[r].x,b[r]);
 	return 0;
 }
 

@@ -20,15 +20,15 @@ int reverse(int num){
 int main_bench(){
 	int u[10],j;
 	for(j=0;j<6;j++){
-		scanf("%d",&u[j]);
+		my_scanf("%d",&u[j]);
 	}
 	for(j=0;j<6;j++){
-		if(u[j]==0) printf("%d\n",0);
+		if(u[j]==0) my_printf("%d\n",0);
 		if(u[j]>0){
-			printf("%d\n",reverse(u[j]));
+			my_printf("%d\n",reverse(u[j]));
 		}
 		if(u[j]<0){
-			printf("%d\n",-reverse(-u[j]));
+			my_printf("%d\n",-reverse(-u[j]));
 		}
 	}
 	return 0;

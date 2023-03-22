@@ -8,7 +8,7 @@ int main_bench()
    long number;
    do
        {
-           scanf("%ld",&num);
+           my_scanf("%ld",&num);
        }
    while(num<0||num>99999);
    count=0;
@@ -20,5 +20,5 @@ int main_bench()
        }
    while(number>0);
    for(i=0;i<count;i++)
-       printf("%ld",digit[i]);
+       my_printf("%ld",digit[i]);
 }

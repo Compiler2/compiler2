@@ -13,7 +13,7 @@ int main_bench(){
 	if(judge==0){name[count]=input[i];number[count]++;count++;}	
 	}
 	count--;
-	for(i=0;i<=count;i++){printf("(%c,%d)",name[i],number[i]);}
+	for(i=0;i<=count;i++){my_printf("(%c,%d)",name[i],number[i]);}
 return 0;
 
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char str1[100],str2[100],a1[100],a2[100];
 	int num1[100],num2[100];
 	int i,j,n1,n2;
-	scanf("%s %s",&str1,&str2);
+	my_scanf("%s %s",&str1,&str2);
 	n1=strlen(str1);
 	n2=strlen(str2);
 	for(i=0;i<n1;i++)
@@ -22,7 +22,7 @@ int main_bench()
 		num2[i]=0;
 	}
 	if(n1!=n2)
-		printf("NO");
+		my_printf("NO");
 	else
 		if(n1==n2)
 		{
@@ -39,9 +39,9 @@ int main_bench()
 				if(num1[i]!=num2[i])
 					break;
 			if(i>=n1)
-				printf("YES");
+				my_printf("YES");
 			else
 				if(i<n1)
-				printf("NO");
+				my_printf("NO");
 		}
 }

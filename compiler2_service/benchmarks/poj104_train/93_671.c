@@ -2,30 +2,30 @@
 
 int main_bench(){
     int i;
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     if((i%3==0)&&(i%5==0)&&(i%7==0)){
-    printf("%d %d %d",3,5,7);
+    my_printf("%d %d %d",3,5,7);
      }
      if((i%3==0)&&(i%5==0)&&(i%7!=0)){
-    printf("%d %d",3,5);
+    my_printf("%d %d",3,5);
      }
       if((i%3==0)&&(i%5!=0)&&(i%7==0)){
-    printf("%d %d",3,7);
+    my_printf("%d %d",3,7);
      }
       if((i%3!=0)&&(i%5==0)&&(i%7==0)){
-    printf("%d %d",5,7);
+    my_printf("%d %d",5,7);
      } 
     if((i%3==0)&&(i%5!=0)&&(i%7!=0)){
-      printf("%d",3);
+      my_printf("%d",3);
      } 
     if((i%3!=0)&&(i%5==0)&&(i%7!=0)){
-      printf("%d",5);
+      my_printf("%d",5);
      } 
     if((i%3!=0)&&(i%5!=0)&&(i%7==0)){
-      printf("%d",7);
+      my_printf("%d",7);
      }
     if((i%3!=0)&&(i%5!=0)&&(i%7!=0)){
-     printf("n");
+     my_printf("n");
      }
      return 0;
 }

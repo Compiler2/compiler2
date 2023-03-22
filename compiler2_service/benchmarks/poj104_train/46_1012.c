@@ -4,12 +4,12 @@ int dir[4][2]={0,1, 1,0, 0,-1, -1,0};
 int k,row,col,a[200][200];
 
 int main_bench(){
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for (int i=0;i<row;++i)
-		for (int j=0;j<col;++j) scanf("%d",&a[i][j]);
+		for (int j=0;j<col;++j) my_scanf("%d",&a[i][j]);
 	int k=0,i=0,j=0,i1,j1;
 	while (1>0){
-		printf("%d\n",a[i][j]);
+		my_printf("%d\n",a[i][j]);
 		a[i][j]=-1;
 		i1=i+dir[k][0];
 		j1=j+dir[k][1];

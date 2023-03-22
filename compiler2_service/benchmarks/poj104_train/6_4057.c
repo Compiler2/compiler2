@@ -11,16 +11,16 @@ int main_bench()
 	int i,j,k;
 	int x;
 	int m,n;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	while(x--)
 	{
 		memset(a,0,sizeof(a));
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(i=0;i<m;i++)
 		{
 			for(j=0;j<n;j++)
 			{
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 			}
 		}
 		int sum=0;
@@ -47,7 +47,7 @@ int main_bench()
 			sum+=a[i][n-1];
 			}
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

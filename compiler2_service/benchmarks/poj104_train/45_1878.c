@@ -6,7 +6,7 @@ char w[50];
 char z[200];
 char a[100];
 int i=0,ls,lw,k=0,t=1,m,n=0,len,ci=0;
-scanf("%s %s",s,w);
+my_scanf("%s %s",s,w);
 ls=strlen(s);
 lw=strlen(w);
 for(i=0;i<lw;i++){
@@ -30,7 +30,7 @@ for(i=0;i<lw;i++){
 }
       
 	if(t){
-	printf("%d",n);
+	my_printf("%d",n);
 	}
 
 	  

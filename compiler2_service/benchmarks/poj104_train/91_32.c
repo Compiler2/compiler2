@@ -15,6 +15,6 @@ int main_bench()
 		*pb=*pa+*(pa+1);
 	}
 	*pb=*pa+*a;
-	printf("%s\n",b);	
+	my_printf("%s\n",b);	
 	return 0;
 }

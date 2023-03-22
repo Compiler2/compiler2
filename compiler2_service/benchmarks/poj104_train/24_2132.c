@@ -27,10 +27,10 @@ int main_bench()
     
     
     while (words[indexmax] != '\0' && words[indexmax] != ' ') 
-        printf("%c", words[indexmax++]);
-    printf("\n");
+        my_printf("%c", words[indexmax++]);
+    my_printf("\n");
     while (words[indexmin] != '\0' && words[indexmin] != ' ') 
-        printf("%c", words[indexmin++]);
-    printf("\n");
+        my_printf("%c", words[indexmin++]);
+    my_printf("\n");
     return 0;
 }

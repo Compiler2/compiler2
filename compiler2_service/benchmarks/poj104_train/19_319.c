@@ -50,5 +50,5 @@ int main_bench()
 		ps++;
 	}
 	ps=s;
-	printf("%s",ps);
+	my_printf("%s",ps);
 }

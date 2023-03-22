@@ -4,8 +4,8 @@ int main_bench()
 {
 	char num[2][300]={'0'};
 	int a[300]={0};
-	scanf("%s",num[0]);
-	scanf("%s",num[1]);
+	my_scanf("%s",num[0]);
+	my_scanf("%s",num[1]);
 	int i,j;
 	i=strlen(num[0]);
 	j=strlen(num[1]);
@@ -37,7 +37,7 @@ int main_bench()
 		if(a[k]!=0) break;
 	}
 	for(;k>=0;k--){
-		printf("%d",a[k]);
+		my_printf("%d",a[k]);
 	}
 }
 

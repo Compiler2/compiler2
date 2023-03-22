@@ -20,7 +20,7 @@ int main_bench()
 				sssss(rsub);
 				rsub[plen]='\0';
 				if(strcmp(sub,rsub)==0)
-					printf("%s\n",sub);
+					my_printf("%s\n",sub);
 			}
 			
 		}

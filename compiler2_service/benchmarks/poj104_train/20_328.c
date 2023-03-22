@@ -13,9 +13,9 @@ int main_bench()
 			for (j=0;j<m-1-i;j++)
 			if (b[j]<b[j+1]) {t=b[j];b[j]=b[j+1];b[j+1]=t;}
 		for (i=0;i<m-1;i++) if (a[i]==b[0]) {k=i;break;}
-		for (i=0;i<=k;i++) printf("%c",a[i]);
-		for (i=n-3;i<n;i++) printf("%c",a[i]);
-		for (i=k+1;i<=m-1;i++) printf("%c",a[i]);printf("\n");
+		for (i=0;i<=k;i++) my_printf("%c",a[i]);
+		for (i=n-3;i<n;i++) my_printf("%c",a[i]);
+		for (i=k+1;i<=m-1;i++) my_printf("%c",a[i]);my_printf("\n");
 	    
 	}
 }

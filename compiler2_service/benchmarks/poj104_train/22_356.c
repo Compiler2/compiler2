@@ -10,7 +10,7 @@ int main_bench()
 			sum=sum+1;
 	if(sum==1)
 	{
-		printf("No");
+		my_printf("No");
 		goto loop;
 	}
 		i=0;
@@ -31,10 +31,10 @@ int main_bench()
 	for(i=1;i<sum;i++)
 		if(a[i]!=a[i+1])
 		{
-			printf("%d",a[i+1]);
+			my_printf("%d",a[i+1]);
 			goto loop;
 		}
-		printf("No");
+		my_printf("No");
 loop:;
 }
 		

@@ -11,6 +11,6 @@ for (i=0,j=0;t[i]!='\0';i++,j++){
 	else {j--;}
 }
 x[j]='\0';
-printf ("%s",x);
+my_printf ("%s",x);
 return 0;
 }

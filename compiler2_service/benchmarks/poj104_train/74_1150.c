@@ -37,8 +37,8 @@ return 0;
 main_bench()
 {
   int a,b,c[1000],l,k=0;
-  scanf("%d",&a);
-  scanf("%d",&b);
+  my_scanf("%d",&a);
+  my_scanf("%d",&b);
                  for(l=a;l<=b;l++)
                  {
                       if(checksu(l)==1&&checkhui(l)==1)
@@ -48,13 +48,13 @@ main_bench()
                       }
                  }
  if (k==0)
- printf("no\n");
+ my_printf("no\n");
  else
      {
        for (int p=0;p<=k-1;p++)
-       {printf("%d",c[p]);
+       {my_printf("%d",c[p]);
        if(p!=k-1)
-       printf(",");
+       my_printf(",");
        }
      }
 getchar();

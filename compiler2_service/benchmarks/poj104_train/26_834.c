@@ -29,7 +29,7 @@ int main_bench()
 		i++;
 	}
 	for(i=0;i<j;i++){
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	}
  
 	return 0;

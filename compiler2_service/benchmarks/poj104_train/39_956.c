@@ -14,12 +14,12 @@ int main_bench()
 {
 	 int n,i,max=0,SUM=0;
            struct stu xs[100],b;
-           scanf("%d",&n);
+           my_scanf("%d",&n);
            for(i=0;i<n;i++)
            {
-             scanf("%s",xs[i].name);    
+             my_scanf("%s",xs[i].name);    
              getchar();
-             scanf("%d %d %c %c %d",&xs[i].qm,&xs[i].bj,&xs[i].bgb,&xs[i].xb,&xs[i].lw);     
+             my_scanf("%d %d %c %c %d",&xs[i].qm,&xs[i].bj,&xs[i].bgb,&xs[i].xb,&xs[i].lw);     
              xs[i].sum=0;
              if(xs[i].qm>80&&xs[i].lw>0) xs[i].sum=xs[i].sum+8000;
              if(xs[i].qm>85&&xs[i].bj>80)  xs[i].sum+=4000;
@@ -36,6 +36,6 @@ int main_bench()
 			b=xs[i];
 		}
 	}
-	printf("%s\n%d\n%d",b.name,max,SUM);
+	my_printf("%s\n%d\n%d",b.name,max,SUM);
 	return 0;
 } 

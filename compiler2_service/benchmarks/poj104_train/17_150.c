@@ -6,12 +6,12 @@ int main_bench()
 	int n,i,j,k,m;
 	int len;
 	char c[101]={'0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
-      scanf("%s",c);
-	  printf("%s\n",c);
+      my_scanf("%s",c);
+	  my_printf("%s\n",c);
 	  len=strlen(c);
       for(j=len-1;j>=0;j--)
 	  {
@@ -44,7 +44,7 @@ int main_bench()
 		  if(c[j]=='(')
 			  c[j]='$';
 	  }
-	  printf("%s\n",c);
+	  my_printf("%s\n",c);
 	}
 	return 0;
 }

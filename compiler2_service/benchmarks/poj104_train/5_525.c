@@ -5,7 +5,7 @@ int main_bench()
 	double p;
 	int e=0,t=0,f=0,q=0;
 	char a[501],b[501];
-	scanf("%lf\n",&p);
+	my_scanf("%lf\n",&p);
 	gets(a);
 	gets(b);
 	if(strlen(a)!=strlen(b))q=1;
@@ -28,11 +28,11 @@ int main_bench()
 			t++;
 		}
 	}
-	if(q==1)printf("error");
+	if(q==1)my_printf("error");
 	else
 	{
-		if(p<1.0*e/t)printf("yes");
-		if(p>1.0*e/t)printf("no");
+		if(p<1.0*e/t)my_printf("yes");
+		if(p>1.0*e/t)my_printf("no");
 	}
 	return 0;
 }

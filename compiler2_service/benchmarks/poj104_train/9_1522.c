@@ -28,15 +28,15 @@ int main_bench() {
 	int i, num;
 	struct patient pat[100];
 
-	scanf("%d", &num);
+	my_scanf("%d", &num);
 	for (i = 0; i < num; ++i) {
 		pat[i].order = i;
-		scanf("%s %d", pat[i].id, &(pat[i].age));
+		my_scanf("%s %d", pat[i].id, &(pat[i].age));
 	}
 
 	qsort(pat, num, sizeof(struct patient), cmp);
 
 	for (i = 0; i < num; ++i) {
-		printf("%s\n", pat[i].id);
+		my_printf("%s\n", pat[i].id);
 	}
 }

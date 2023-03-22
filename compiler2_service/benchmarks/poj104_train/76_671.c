@@ -7,10 +7,10 @@ int main_bench()
 	int n,i,min,max,j;
 	min=10000;
 	max=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
     for(i=0;i<11000;i++)
     {
@@ -49,10 +49,10 @@ int main_bench()
 	}
 	if(i!=0)
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j;
 	char s[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n+1;i++)
 	{
 		gets(s);

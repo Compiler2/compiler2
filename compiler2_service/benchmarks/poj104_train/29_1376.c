@@ -4,11 +4,11 @@ int main_bench(){
 	int m;
 	int i,j;
 	double e,x,y;
-	scanf("%d",&m); 
+	my_scanf("%d",&m); 
 	int*sz
 		=(int*)malloc(sizeof(int)*m);
 	for(i=0;i<m;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<m;i++){
 		double sum=0;
@@ -20,7 +20,7 @@ int main_bench(){
 			y=x+y;
 			x=e;
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 
 	free(sz);

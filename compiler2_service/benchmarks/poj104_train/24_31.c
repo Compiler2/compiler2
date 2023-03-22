@@ -38,8 +38,8 @@ int main_bench()
 			smin=*(p+i)+1;
 		}
 	}
-	for(i=0;i<=max-1;i++) printf("%c",c[smax+i]);
-	printf("\n");
-	for(i=0;i<=min-1;i++) printf("%c",c[smin+i]);
-	printf("\n");
+	for(i=0;i<=max-1;i++) my_printf("%c",c[smax+i]);
+	my_printf("\n");
+	for(i=0;i<=min-1;i++) my_printf("%c",c[smin+i]);
+	my_printf("\n");
 }

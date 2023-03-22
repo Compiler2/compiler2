@@ -6,18 +6,18 @@ char a[100];
 char b[100];
 int c[100];
 int t,n,i=0,j=0,q,r;
-scanf("%s",a);
+my_scanf("%s",a);
 n=strlen(a);
 if (n==2)
 {
 
 r=(a[0]-'0')*10+a[1]-'0';
-printf("%d\n%d",r/13,r%13);
+my_printf("%d\n%d",r/13,r%13);
 }
 else if(n==1)
 {
 r=a[0]-'0';
-printf("%d\n%d",0,r);
+my_printf("%d\n%d",0,r);
 }
 
 
@@ -48,12 +48,12 @@ c[i]=t;
 int m;
 m=strlen(b);
 if(b[0]>'0')
-printf("%c",b[0]);
+my_printf("%c",b[0]);
 for(i=1;i<m,b[i]>='0';i++)
 {
-printf("%c",b[i]);
+my_printf("%c",b[i]);
 q=i;
 }
-printf("\n%d",c[q]);
+my_printf("\n%d",c[q]);
 }
 }

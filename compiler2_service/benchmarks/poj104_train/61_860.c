@@ -3,16 +3,16 @@
 main_bench()
 {
       int n,i,a,j;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&a);
+                      my_scanf("%d",&a);
                       int b[20]={0};
                       b[0]=1;
                       b[1]=1;
                       if(a<=2)
                       {
-                                    printf("%d\n",b[a-1]);
+                                    my_printf("%d\n",b[a-1]);
                       }
                       else
                       {
@@ -20,7 +20,7 @@ main_bench()
                           {
                                           b[j]=b[j-1]+b[j-2];
                           }
-                          printf("%d\n",b[a-1]);
+                          my_printf("%d\n",b[a-1]);
                       }
       }                
       getchar();                

@@ -16,12 +16,12 @@ return 0;
 int main_bench()
 {
 	int m,a;
-	scanf("%d",&m); 
+	my_scanf("%d",&m); 
 	for(a=3;a<=m/2;a++)
 	{           
 	   if(ss(a)&&ss(m-a))
 	   {
-	      printf("%d %d\n",a,m-a);
+	      my_printf("%d %d\n",a,m-a);
 	   }
 	}
 	return 0;

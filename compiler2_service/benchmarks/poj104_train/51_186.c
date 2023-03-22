@@ -9,7 +9,7 @@ int main_bench()
 	int i;
 	int j;
 	int k=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	int s;
 	s=strlen(a);
@@ -26,9 +26,9 @@ int main_bench()
 	int max=0;
 	for(i=0;i<k;i++)
 		if(count[i]>=max)  max=count[i];
-	if(max==1)printf("NO");
+	if(max==1)my_printf("NO");
 	else{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<k;i++)
 	{if(count[i]==max) 
 	puts(b[i]);

@@ -23,9 +23,9 @@ int main_bench(){
     }
     c[j]=k;
     for (i=0;i<j;i++){
-        printf("%d,",c[i]);
+        my_printf("%d,",c[i]);
     }
-    printf("%d",c[j]);
+    my_printf("%d",c[j]);
 return 0;
 }
 

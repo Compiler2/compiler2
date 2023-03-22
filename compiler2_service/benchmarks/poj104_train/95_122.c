@@ -23,14 +23,14 @@ int main_bench()
 			continue;
 		if(s1[i]>s2[i])
 		{
-			printf(">");
+			my_printf(">");
 			p=1;
 			break;
 			
 		}
 		if(s1[1]<s2[i])
 		{
-			printf("<");
+			my_printf("<");
 			q=1;
 			break;
 			
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	if(p==0&&q==0)
 	{
-		printf("=");
+		my_printf("=");
 	}
 	return 0;
 

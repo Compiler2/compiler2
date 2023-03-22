@@ -27,7 +27,7 @@ int main_bench()
 		strcpy(w[i],w2);
 	}
 	for(i=0;i<k;i++){
-		printf("%s ",w[i]);
-	}printf("%s",w[i]);
+		my_printf("%s ",w[i]);
+	}my_printf("%s",w[i]);
 	return 0;
 }

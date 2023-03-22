@@ -4,9 +4,9 @@ int arr(int a[],int x,int b[],int y)
 {
   int i;
   for(i=0;i<x;i++)
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
   for(i=0;i<y;i++)
-   scanf("%d",&b[i]);
+   my_scanf("%d",&b[i]);
    return 0;
 }
 int arr1(int a[],int x,int b[],int y)
@@ -44,8 +44,8 @@ int arr3(int c[],int t)
     int i;
     for(i=0;i<t;i++)
     {
-      printf("%d",c[i]);
-      if(i<t-1) printf(" ");
+      my_printf("%d",c[i]);
+      if(i<t-1) my_printf(" ");
       }
      return 0;
 }
@@ -53,7 +53,7 @@ int arr3(int c[],int t)
 {
       int x,y;
       int a[100],b[100],c[200];
-      scanf("%d%d",&x,&y);
+      my_scanf("%d%d",&x,&y);
       arr(a,x,b,y);
       arr1(a,x,b,y);
       arr2(a,x,b,y,c);

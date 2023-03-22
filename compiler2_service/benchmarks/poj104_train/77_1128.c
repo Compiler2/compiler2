@@ -9,11 +9,11 @@ void f(char a[],int n,char x,char y)
             for(j=i;j>=0;j--)
                 if(a[j]==x)
                 {
-                      printf("%d %d",j,i);
+                      my_printf("%d %d",j,i);
                       a[i]=0;
                       a[j]=0;
                       k+=2;
-                      if(k<n) printf("\n\n");
+                      if(k<n) my_printf("\n\n");
                       break;
                 }
      }

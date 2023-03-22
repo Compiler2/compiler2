@@ -3,17 +3,17 @@
 int main_bench()
 {
     int k;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     while(k--)
     {
         int m,n,sum=0;
-        scanf("%d %d",&m,&n);
+        my_scanf("%d %d",&m,&n);
         int i,j,a[100][100];
         for(i=0;i<m;i++)
         {
             for(j=0;j<n;j++)
             {
-                scanf("%d",&a[i][j]);
+                my_scanf("%d",&a[i][j]);
             }
         }
         for(i=0;i<m;i++)
@@ -26,7 +26,7 @@ int main_bench()
                     continue;
             }
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
     }
     return 0;
 }

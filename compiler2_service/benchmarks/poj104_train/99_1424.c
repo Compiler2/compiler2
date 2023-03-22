@@ -5,10 +5,10 @@ int main_bench()
 {
 	int i;
 	double b, c, d, e, a[100], sum=0, sum1=0, sum2=0, sum3=0, n;
-	scanf("%lf", &n);
+	my_scanf("%lf", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf", &a[i]);
+		my_scanf("%lf", &a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -33,10 +33,10 @@ int main_bench()
 	c=(sum1/n)*100.0;
 	d=(sum2/n)*100.0;
 	e=(sum3/n)*100.0;
-	printf("1-18: %.2lf%%\n", b);
-	printf("19-35: %.2lf%%\n", c);
-	printf("36-60: %.2lf%%\n", d);
-	printf("60??: %.2lf%%\n", e);
+	my_printf("1-18: %.2lf%%\n", b);
+	my_printf("19-35: %.2lf%%\n", c);
+	my_printf("36-60: %.2lf%%\n", d);
+	my_printf("60??: %.2lf%%\n", e);
 	
 	
 	return 0;

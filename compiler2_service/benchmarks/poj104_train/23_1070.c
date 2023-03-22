@@ -8,7 +8,7 @@ int main_bench()
 
 			while(1)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	    if ((a[i][0]>=65)&&(a[i][0]<=122))
 			;
 		else
@@ -18,8 +18,8 @@ int main_bench()
 	}
 	i--;
 	for (j=i;j>=1;j--)
-    printf("%s ",a[j]);
-    printf("%s",a[0]);
+    my_printf("%s ",a[j]);
+    my_printf("%s",a[0]);
     
 	return 0;
 }

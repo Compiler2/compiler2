@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n, i, k, a[101], zd=0, zdbh, cd=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 			zdbh=i;
 		}
 	}
-	printf("%d\n", zd);
+	my_printf("%d\n", zd);
 	a[zdbh]=0;
 	for(i=0;i<n;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 			cd=a[i];
 		}
 	}
-	printf("%d", cd);
+	my_printf("%d", cd);
 	return 0;
 }
 

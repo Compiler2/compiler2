@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int row,col,i,j,m,p;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	int a[100][100];
 	for (i=0;i<row;i++)
 	{
 		for (j=0;j<col;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
-		scanf("\n");
+		my_scanf("\n");
 	}
 
 
@@ -22,7 +22,7 @@ int main_bench()
 			for(p=0;p<=row-1&&p<=m;p++)
 			{
 			
-			printf("%d\n",a[p][m-p]);
+			my_printf("%d\n",a[p][m-p]);
 			}
 		}
 		
@@ -32,7 +32,7 @@ int main_bench()
 			for(p=m-col+1;p<=m&&p<=row-1;p++)
 			{
 			
-			printf("%d\n",a[p][m-p]);
+			my_printf("%d\n",a[p][m-p]);
 			}
 		}
 

@@ -5,14 +5,14 @@ main_bench()
       int n,i,j;
       char s[10];
       float k;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       struct 
       {
       char sex[10];
       float hei;
       } peo[n];
       for(i=0;i<n;i++)
-      scanf("%s %f",peo[i].sex,&peo[i].hei);
+      my_scanf("%s %f",peo[i].sex,&peo[i].hei);
       for(i=1;i<=n;i++)
       for(j=n-1;j>=i;j--)
       if(peo[j].hei<peo[j-1].hei)
@@ -26,12 +26,12 @@ main_bench()
       }
       for(i=0;i<n;i++)
       if(strcmp(peo[i].sex,"male")==0)
-      {printf("%.2f",peo[i].hei);break;}
+      {my_printf("%.2f",peo[i].hei);break;}
       for(i=i+1;i<n;i++)
       if(strcmp(peo[i].sex,"male")==0)
-      printf(" %.2f",peo[i].hei);
+      my_printf(" %.2f",peo[i].hei);
       
       for(i=n-1;i>=0;i--)
       if(strcmp(peo[i].sex,"female")==0)
-      printf(" %.2f",peo[i].hei);
+      my_printf(" %.2f",peo[i].hei);
 }

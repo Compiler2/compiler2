@@ -7,10 +7,10 @@ int main_bench()
 	int a[500]={0},b[300]={0};
 	double sum=0,ave=0,c=0,d=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=sum/n;
@@ -33,7 +33,7 @@ int main_bench()
 		}
 	}
 
-	if(j==1) printf("%d",b[0]);
+	if(j==1) my_printf("%d",b[0]);
 	else 
 	{
 		for(i=0;i<j-1;i++)
@@ -47,9 +47,9 @@ int main_bench()
 				}
 			}
 	for(i=0;i<j;i++)
-		if(i==0) printf("%d",b[i]);
+		if(i==0) my_printf("%d",b[i]);
 		else
-		printf(",%d",b[i]);
+		my_printf(",%d",b[i]);
 	}
 }
 

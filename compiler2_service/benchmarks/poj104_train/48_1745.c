@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m,n,a[82],b[82],i,j;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=0;i<81;i++)
     {
         a[i]=0;
@@ -41,9 +41,9 @@ int main_bench()
     {
        for(j=0;j<8;j++)
        {
-           printf("%d ",a[9*i+j]);
+           my_printf("%d ",a[9*i+j]);
        }
-       printf("%d\n",a[9*i+8]);
+       my_printf("%d\n",a[9*i+8]);
     }
     
     

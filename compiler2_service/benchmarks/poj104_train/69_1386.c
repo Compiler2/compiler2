@@ -3,7 +3,7 @@
 int main_bench()
 {char a[251],b[251];
 int al,bl,i,k;
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 al=strlen(a);
 bl=strlen(b);
 for(i=250;i>250-al;i--)
@@ -26,8 +26,8 @@ for(i=0;i<=250;i++)
 if(a[i]!=0){k=i;break;}
 if(k<251)
 {for(i=k;i<251;i++)
-printf("%d",a[i]);
-printf("\n");
+my_printf("%d",a[i]);
+my_printf("\n");
 }
-else printf("0\n");
+else my_printf("0\n");
 }

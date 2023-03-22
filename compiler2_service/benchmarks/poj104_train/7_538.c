@@ -22,14 +22,14 @@ int main_bench()
 			{
 				m=i;
 				for(k=0;k<m;k++)
-					printf("%c",s[k]);
-					printf("%s",s2);
+					my_printf("%c",s[k]);
+					my_printf("%s",s2);
 					for(k=i+b;k<a;k++)
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					break;
 			}
 		}
 	}
-	if(i==a)printf("%s",s);
+	if(i==a)my_printf("%s",s);
 }
 		

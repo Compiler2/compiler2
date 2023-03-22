@@ -13,7 +13,7 @@ main_bench()
    {
    n[3]=1;
    d=0;e=0;n[1]=5;n[5]=4;
-   n[2]=2;n[4]=3;c=0;for(i=1;i<=5;i++) {printf("%d",n[i]); if(i!=5) printf(" ");}
+   n[2]=2;n[4]=3;c=0;for(i=1;i<=5;i++) {my_printf("%d",n[i]); if(i!=5) my_printf(" ");}
    }
    if(c==0)
    {

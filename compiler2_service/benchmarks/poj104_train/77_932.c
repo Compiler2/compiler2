@@ -15,8 +15,8 @@ void pei(char a[250])
 				s--;
 			a[s]='0';
 			a[i]='0';
-			printf("%d %d",s,i);
-			printf("\n");
+			my_printf("%d %d",s,i);
+			my_printf("\n");
 		}
 		else
 			if(a[i]==')')
@@ -28,8 +28,8 @@ void pei(char a[250])
 				s--;
 			a[s]='0';
 			a[i]='0';
-			printf("%d %d",s,i);
-			printf("\n");
+			my_printf("%d %d",s,i);
+			my_printf("\n");
 		}
 			else
 				if(a[i]==']')
@@ -41,8 +41,8 @@ void pei(char a[250])
 				s--;
 			a[s]='0';
 			a[i]='0';
-			printf("%d %d",s,i);
-			printf("\n");
+			my_printf("%d %d",s,i);
+			my_printf("\n");
 		}
 				else
 						if(a[i]=='>')
@@ -54,15 +54,15 @@ void pei(char a[250])
 				s--;
 			a[s]='0';
 			a[i]='0';
-			printf("%d %d",s,i);
-			printf("\n");
+			my_printf("%d %d",s,i);
+			my_printf("\n");
 		}
 
 
 
 	}
 	i=0;
-printf("%d %d",i,t-1);
+my_printf("%d %d",i,t-1);
 }
 int main_bench()
 {

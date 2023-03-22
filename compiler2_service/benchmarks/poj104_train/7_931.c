@@ -6,7 +6,7 @@ int main_bench(){
 	char replacement[257];
 	int i,j,k;
 	int len1,len2;
-	scanf("%s%s%s",yuanchuan,zichuan,replacement);
+	my_scanf("%s%s%s",yuanchuan,zichuan,replacement);
 	len1=strlen(yuanchuan);
 	len2=strlen(zichuan);
 	k=len1;
@@ -24,14 +24,14 @@ int main_bench(){
 		}
 	}
 	if(k==len1){
-		printf("%s",yuanchuan);
+		my_printf("%s",yuanchuan);
 	}else{
 	    for(i=0;i<k;i++){
-		    printf("%c",yuanchuan[i]);
+		    my_printf("%c",yuanchuan[i]);
 		}
-	    printf("%s",replacement);
+	    my_printf("%s",replacement);
 		for(i=k+len2;i<len1;i++){
-			printf("%c",yuanchuan[i]);
+			my_printf("%c",yuanchuan[i]);
 		}
 	}
 	return 0;

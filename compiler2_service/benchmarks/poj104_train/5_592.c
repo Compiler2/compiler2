@@ -3,8 +3,8 @@
 int main_bench()
 {
     int p,q,i,flag=1;double m,c=0,d=0;char a[10086],b[10086];
-    scanf("%lf",&m);
-    scanf("%s",a);scanf("%s",b);
+    my_scanf("%lf",&m);
+    my_scanf("%s",a);my_scanf("%s",b);
     p=strlen(a);q=strlen(b);if(p!=q){flag=0;}
     for(i=0;a[i]!='\0';i++)
     {
@@ -18,10 +18,10 @@ int main_bench()
     {
                            if(a[i]==b[i]){c++;}d++;
                            }
-    if(flag==0){printf("error");}
+    if(flag==0){my_printf("error");}
     if(flag==1){
     if(c/d>=m){
-    printf("yes");}else{printf("no");}}
+    my_printf("yes");}else{my_printf("no");}}
     
     return 0;
 }

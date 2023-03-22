@@ -12,11 +12,11 @@ int main_bench()
 {
       int i,j,k;
 
-      scanf("%s%s",a,b);
+      my_scanf("%s%s",a,b);
       la=strlen(a);lb=strlen(b);
-      if(la!=lb){printf("NO");return(0);}
+      if(la!=lb){my_printf("NO");return(0);}
       for(i=0;i<la;i++)
-      if(appear(a[i])==0){printf("NO");return(0);}
-      printf("YES");
+      if(appear(a[i])==0){my_printf("NO");return(0);}
+      my_printf("YES");
       return(0);
 }

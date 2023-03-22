@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],b[100],A[128]={0},B[128]={0};
 	int i,k,n=0;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;i<strlen(a);i++)
 	{
 		k=a[i];
@@ -24,10 +24,10 @@ int main_bench()
 		}
 		else 
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}
 	}
-	if(n==128) printf("YES\n");
+	if(n==128) my_printf("YES\n");
 	return 0;
 }

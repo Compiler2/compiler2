@@ -23,24 +23,24 @@ int main_bench()
 	{
 	for(i=shu[m]+1;i<ch;i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
-	printf(" ");
+	my_printf(" ");
 	for(i=m-1;i>=1;i--)
 	{
 		for(j=shu[i]+1;j<shu[i+1];j++)
 		{
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=0;i<shu[1];i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	}
 	else
-	printf("%s",a);
+	my_printf("%s",a);
 
 	return 0;
 }

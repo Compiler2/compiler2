@@ -7,7 +7,7 @@ int main_bench()
     int n=0;
     for(i=0;i<100;i++)
     {
-        scanf("%s",a[i]);
+        my_scanf("%s",a[i]);
         n++;
         k=getchar();
         if(k=='\n')
@@ -25,6 +25,6 @@ int main_bench()
         if(strlen(c)<strlen(a[i]))
             strcpy(c,a[i]);
     }
-    printf("%s\n",c);
-    printf("%s\n",b);
+    my_printf("%s\n",c);
+    my_printf("%s\n",b);
 }

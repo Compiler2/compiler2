@@ -6,7 +6,7 @@ int main_bench()
 	char b[100];
 	for(i=0;i<=299;i++)
 	{
-		scanf("%d%c",&a[i],&b[i]);
+		my_scanf("%d%c",&a[i],&b[i]);
 		if(b[i]!=',')
 		{
 			counter=i+1;
@@ -25,9 +25,9 @@ int main_bench()
 			second=a[i];
 	}
 	if(second==largest||second==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",second);
+		my_printf("%d",second);
 	return 0;
 }
 	

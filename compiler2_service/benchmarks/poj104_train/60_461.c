@@ -3,14 +3,14 @@
 main_bench()
 {
 	int a,b,n,i,j,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<=4)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 	else if(n==5||n==6)
 	{
-		printf("3 5");
+		my_printf("3 5");
 	}
 	else
 	{
@@ -30,9 +30,9 @@ main_bench()
 			}
 			if(a!=1&&b!=1)
 			{
-				printf("%d",i);
-				printf(" ");
-				printf("%d\n",i+2);
+				my_printf("%d",i);
+				my_printf(" ");
+				my_printf("%d\n",i+2);
 			}
 			else
 				continue;

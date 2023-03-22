@@ -33,14 +33,14 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	k=pan(m,n);
     if(k==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -48,14 +48,14 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			printf("%d",a[i][j]);
+			my_printf("%d",a[i][j]);
 			if(j!=4)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 			else
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

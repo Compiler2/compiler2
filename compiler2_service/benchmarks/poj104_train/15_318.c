@@ -4,10 +4,10 @@
 int main_bench()
 {
   int n,a[100][100],i,j,i1,i2,j1,j2,k1=0,k2=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
    for(j=0;j<n;j++)
-    scanf("%d",&a[i][j]);
+    my_scanf("%d",&a[i][j]);
   for(i=0;i<n;i++)
    {
        for(j=0;j<n;j++)
@@ -32,7 +32,7 @@ int main_bench()
          }
        if(k2==1) break;
    }
-  printf("%d",((i2-i1-1)*(j2-j1-1)));
+  my_printf("%d",((i2-i1-1)*(j2-j1-1)));
 
   return 0;
 }

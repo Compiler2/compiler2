@@ -3,10 +3,10 @@
 int main_bench()
 {
     int b,n,k,i,c=0;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     int a[1000];
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
         
      
      for(b=0;b<n;b++)
@@ -22,9 +22,9 @@ int main_bench()
      
      
      if(c==n*(n-1))
-     printf("no");
+     my_printf("no");
      if(c!=n*(n-1))
-     printf("yes");
+     my_printf("yes");
      
      return 0;
      }

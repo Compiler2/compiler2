@@ -4,7 +4,7 @@ int main_bench()
 {
 	char l[1000];
 	int i,num[1000],j,rate,k,circle,a;
-	scanf("%s",&l);
+	my_scanf("%s",&l);
 	i=0;
 	rate=1;
 	int terminalnum[1000]={0};
@@ -50,7 +50,7 @@ int main_bench()
 	}
 	if(n==rate-1)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}else{
 		for(m=1;m<=rate;m++)
 		{
@@ -69,7 +69,7 @@ int main_bench()
 				 min=terminalnum[m];
 			}
 		}
-	printf("%d\n",min);
+	my_printf("%d\n",min);
 	}
 	return 0;
 }

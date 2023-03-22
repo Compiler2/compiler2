@@ -6,10 +6,10 @@ int main_bench()
 	int a[100],b[100];
 	int i,j,min,max,tmp1=0,tmp2=1;
 	float k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	min=a[0];
 	max=b[0];
@@ -39,8 +39,8 @@ int main_bench()
 		}
 	}
 	if(tmp2==1)
-		printf("%d %d\n",min,max);
+		my_printf("%d %d\n",min,max);
 	else
-		printf("no\n");
+		my_printf("no\n");
 	return 0;
 }

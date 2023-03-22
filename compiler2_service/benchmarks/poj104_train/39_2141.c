@@ -44,17 +44,17 @@ int main_bench()
 {
 	int n,len,i,*a,top,sum=0;
 	struct Student *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	len=sizeof(struct Student);
 	p=(struct Student *)calloc(len,n);
 	a=(int *)calloc(4,n);
 	for(i=1;i<=n;i++)
-		scanf("%s %d %d %c %c %d",(p+i-1)->name,&(p+i-1)->sco,&(p+i-1)->com,&(p+i-1)->cad,&(p+i-1)->prov,&(p+i-1)->num);
+		my_scanf("%s %d %d %c %c %d",(p+i-1)->name,&(p+i-1)->sco,&(p+i-1)->com,&(p+i-1)->cad,&(p+i-1)->prov,&(p+i-1)->num);
 	count_date(p,a,n);
 	top=compare_date(a,n);
 	for(i=1;i<=n;i++)
 		sum=sum+a[i-1];
-	printf("%s\n%d\n%d",(p+top-1)->name,a[top-1],sum);
+	my_printf("%s\n%d\n%d",(p+top-1)->name,a[top-1],sum);
 	return 0;
 }
 

@@ -7,7 +7,7 @@ int main_bench(){
 	int num1,num2;
 	char a[1000];
 	char b[1100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	while(a[i]!='\0'){
 		i++;
 	}
@@ -19,7 +19,7 @@ int main_bench(){
 	num2=i;
 	i=0;
 	if(num1!=num2){
-		printf("NO");
+		my_printf("NO");
 	}else{
 		for(i=1;i<=num1;i++){
 			for(j=0;j<num1-i;j++){
@@ -41,9 +41,9 @@ int main_bench(){
 			}
 		}
 		if(count==num1){
-			printf("YES");
+			my_printf("YES");
 		}else{
-			printf("NO");
+			my_printf("NO");
 		}
 	}
 	return 0;

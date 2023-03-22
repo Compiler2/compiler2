@@ -6,7 +6,7 @@ main_bench(){
 	for(;;){
 		p=1;
 		for(i=0; i<301; i++) mon[i]=2;
-		scanf("%d%d", &n, &m);
+		my_scanf("%d%d", &n, &m);
 		if(n==0) break;
 		else{
 			for(i=1; i<=n; i++) mon[i]=1;
@@ -22,7 +22,7 @@ main_bench(){
 			}
 			for(i=1; i<=n; i++){
 				if(mon[i]==1){
-					printf("%d\n", i);
+					my_printf("%d\n", i);
 					break;
 				}
 				else;

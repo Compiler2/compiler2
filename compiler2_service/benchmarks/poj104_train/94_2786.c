@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
           int sz[500];
 	for(int i=0;i<n;i++)
           {
-	      scanf("%d",&sz[i]);
+	      my_scanf("%d",&sz[i]);
 	}
 	int j=0,odd[500];
 	for(int i=0;i<n;i++)
@@ -33,8 +33,8 @@ int main_bench()
 	}
 	for(int i=0;i<j-1;i++)
           {
-	      printf("%d,",odd[i]);
+	      my_printf("%d,",odd[i]);
 	}
-	printf("%d",odd[j-1]);
+	my_printf("%d",odd[j-1]);
 return 0;
 }

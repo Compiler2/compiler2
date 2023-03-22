@@ -4,12 +4,12 @@ int main_bench()
 {
 	char a;
 	int x[300]={0},i,m,n,k;
-	scanf("%d",&x[0]);
-	scanf("%c",&a);
+	my_scanf("%d",&x[0]);
+	my_scanf("%c",&a);
 	for(i=1;a==',';i++)
 	{
-		scanf("%d",&x[i]);
-		scanf("%c",&a);
+		my_scanf("%d",&x[i]);
+		my_scanf("%c",&a);
 	}
 	i=i-1;
 	if(i>=1)
@@ -32,10 +32,10 @@ int main_bench()
 				break;
 		}
 			if(m<i)
-				printf("%d",x[m+1]);
+				my_printf("%d",x[m+1]);
 			else
-				printf("No");
+				my_printf("No");
 	}
 	else
-		printf("No");
+		my_printf("No");
 }

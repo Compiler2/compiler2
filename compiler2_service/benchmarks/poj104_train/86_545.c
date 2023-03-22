@@ -5,15 +5,15 @@ int main_bench(){
 	int result;
 	int zcs;
 	int m,cs[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		result=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0){
 			zcs=60;
 		}
 		for(k=0;k<m;k++){
-			scanf("%d",&cs[k]);
+			my_scanf("%d",&cs[k]);
 			for(j=m-1;j>=0;j--){
 			result=cs[j]+(j+1)*3;
 				if(result<=60){
@@ -27,7 +27,7 @@ int main_bench(){
 		}
 
 				
-		printf("%d\n",zcs);
+		my_printf("%d\n",zcs);
 	}
 	return 0;
 }

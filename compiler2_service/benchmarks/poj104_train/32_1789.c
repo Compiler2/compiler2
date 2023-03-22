@@ -5,11 +5,11 @@ int main_bench()
 	int n;
 	char cint1[101],cint2[101],result[101];
 	int length1,length2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n-->0){
 		getchar();
-		scanf("%s",cint1);
-		scanf("%s",cint2);
+		my_scanf("%s",cint1);
+		my_scanf("%s",cint2);
 		length1=strlen(cint1);
 		length2=strlen(cint2);
 		int k0=length1-1,i=length1-1,k=k0,j;
@@ -26,7 +26,7 @@ int main_bench()
 			if(result[k]!='0')
 				break;
 		while(k<=k0)
-			printf("%c",result[k++]);
-		printf("\n");
+			my_printf("%c",result[k++]);
+		my_printf("\n");
 	}
 }

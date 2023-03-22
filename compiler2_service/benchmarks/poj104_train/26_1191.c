@@ -7,7 +7,7 @@ gets(a);
 len=strlen(a);
 while(i<len)
 { if(w!=1||a[i]!=' ')
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
    if(a[i]==' ')
 		w=1;
 	else

@@ -2,16 +2,16 @@
 
 int main_bench(){
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char s[2][510];
 	int i;
 	int j,k;
 	k=0;
 	for(i=0;i<2;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	if(strlen(s[0])!=strlen(s[1])){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}else{
 		for(j=0;s[0][j]!='\0';j++){
@@ -22,7 +22,7 @@ int main_bench(){
 				s[0][j]!='C'&&s[0][j]!='G')||(
 				s[1][j]!='A'&&s[1][j]!='T'&&
 				s[1][j]!='C'&&s[1][j]!='G')){
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 		}
@@ -32,9 +32,9 @@ int main_bench(){
 	double w;
 	w=1.0*k/q;
 	if(w>=n){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 
 	return 0;

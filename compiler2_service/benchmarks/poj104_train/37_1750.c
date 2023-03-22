@@ -5,11 +5,11 @@ main_bench()
       int t,i,j,k,x;
       char a[100000],firstone;
       int c;
-      scanf ("%d",&t);
+      my_scanf ("%d",&t);
       for (i=0;i<t;i++)
       {
           c=0;
-          scanf("%s",&a);
+          my_scanf("%s",&a);
           for (j=0;a[j]!='\0';j++)
           {
               x=0;
@@ -24,7 +24,7 @@ main_bench()
               }
           }
           if (x!=1) c=c+1;
-          if (c==0) printf ("%c\n",firstone);
-          else printf ("no\n");
+          if (c==0) my_printf ("%c\n",firstone);
+          else my_printf ("no\n");
       }
 }

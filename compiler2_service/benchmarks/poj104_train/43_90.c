@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,n,flag1,flag2;
 	int x(int i);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n/2;i++)
 	{
 		flag1=0;
@@ -13,7 +13,7 @@ int main_bench()
 		flag2=x(n-i);
 		if(flag1==1&&flag2==1)
 		{
-			printf("%d %d\n",i,n-i);
+			my_printf("%d %d\n",i,n-i);
 		}
 
 

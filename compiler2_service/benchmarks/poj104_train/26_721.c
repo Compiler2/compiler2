@@ -13,6 +13,6 @@ int main_bench()
 		}
 	}
 		d[k]='\0';
-		printf("%s",d);
+		my_printf("%s",d);
 	return 0;
 }

@@ -2,7 +2,7 @@
 
 int main_bench(){
     int a,b,c,d,e,f,i,r=0;
-    scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+    my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
     
     while(a!=0){
         r=0;
@@ -16,8 +16,8 @@ int main_bench(){
             r++;
         }
         r=r+e*60+f;
-        printf("%d\n",r);
-        scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+        my_printf("%d\n",r);
+        my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
     }
     return 0;
 }

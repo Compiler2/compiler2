@@ -5,7 +5,7 @@ int main_bench()
 	int y1,m1,d1;
 	int y2,m2,d2;
 	int days=0,month,year;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
     for(year=y1+1;year<y2;year++)
 	{
 		if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) days=days+366;
@@ -56,5 +56,5 @@ int main_bench()
 		if((y2 % 4 == 0 && y2 % 100 != 0) || (y2 % 400 == 0)) days=days-366;
 		else days=days-365;
 	}
-    printf("%d\n",days);
+    my_printf("%d\n",days);
 }

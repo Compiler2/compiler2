@@ -50,7 +50,7 @@ int ma(char s[],int p,int le)
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char s1[101];
 	int t;
 	while(n)
@@ -59,8 +59,8 @@ int main_bench()
 	gets(s1);
 	puts(s1);
 	t=ma(s1,0,0);
-	printf("%s",s2);
-	if (n) printf("\n");
+	my_printf("%s",s2);
+	if (n) my_printf("\n");
 	}
 	return 0;
 }

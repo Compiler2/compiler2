@@ -10,8 +10,8 @@ int main_bench()
 		if((*p2)>='0'&&(*p2)<='9') 
 		{
 			for(p3=p2;(int)(*p3)-'0'>=0&&(int)(*p3)-'0'<=9;p3++)
-			printf("%c",*p3);
-			printf("\n");
+			my_printf("%c",*p3);
+			my_printf("\n");
 			p2=p3;
 			p2--;
 		}

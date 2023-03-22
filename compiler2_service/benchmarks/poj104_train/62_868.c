@@ -26,7 +26,7 @@ while(zf[i]){
 
 }
 
-printf("%s",zf);
+my_printf("%s",zf);
 
 return 0;
 }

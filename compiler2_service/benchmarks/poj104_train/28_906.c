@@ -20,8 +20,8 @@ int main_bench()
 		}
 	}        
 	for(i=0;i<m-1;i++){
-	     printf("%d,",sz[i]);
+	     my_printf("%d,",sz[i]);
 	}
-	printf("%d",sz[m-1]);
+	my_printf("%d",sz[m-1]);
 	return 0;
 }

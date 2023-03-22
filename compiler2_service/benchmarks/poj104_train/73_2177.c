@@ -7,7 +7,7 @@ int main_bench()
 		
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		
 	}
 	
@@ -36,11 +36,11 @@ int main_bench()
 		
 	if (re==0)
 	{tap=1;
-		printf("%d %d %d",i+1,k+1,max);
+		my_printf("%d %d %d",i+1,k+1,max);
 	}
 	}
 	if (tap==0)
-		printf("not found");
+		my_printf("not found");
 
 	
 	return 0;

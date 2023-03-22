@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,s1,s2,paper,i,money[100],m=0,sum=0,a;
 	char name[100][20],c1=0,c2=0;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
 	 for(i=0;i<n;i++)
 	 {  
 		money[i]=0;
-	    scanf("%s %d %d %c %c %d\n",name[i],&s1,&s2,&c1,&c2,&paper);
+	    my_scanf("%s %d %d %c %c %d\n",name[i],&s1,&s2,&c1,&c2,&paper);
 	    if(s1>80&&paper>=1)
 		{
 			money[i]=money[i]+8000;
@@ -37,7 +37,7 @@ int main_bench()
          sum=sum+money[i];
 	 
 	 }
-      printf("%s\n%d\n%d",name[a],m,sum);
+      my_printf("%s\n%d\n%d",name[a],m,sum);
 
 	return 0;
 }

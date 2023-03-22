@@ -11,7 +11,7 @@ int main_bench()
 
 	while( ch!='\n' )
 	{
-		scanf("%d",&xi[i]);
+		my_scanf("%d",&xi[i]);
 		ch=getchar();
 		i++;
 	}
@@ -19,7 +19,7 @@ int main_bench()
 	ch=',';
 	while( ch!='\n' )
 	{
-		scanf("%d",&yi[i]);
+		my_scanf("%d",&yi[i]);
 		ch=getchar();
 		i++;
 	}
@@ -35,7 +35,7 @@ int main_bench()
 	for(i=0;i<1001;i++)
 		if( time[i]>=max )
 			max=time[i];
-	printf("%d %d\n",n,max);
+	my_printf("%d %d\n",n,max);
 
 		
 

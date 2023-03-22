@@ -5,12 +5,12 @@ int a[100][100];
 int b[100];
 int m,j,r,n,k,p;
 
-scanf ("%d",&p);
+my_scanf ("%d",&p);
 for (m=0;m<p;m++){
-scanf ("%d %d",&n,&k);
+my_scanf ("%d %d",&n,&k);
 for (j=0;j<n;j++){
 	for (r=0;r<k;r++){
-scanf ("%d",&a[j][r]);
+my_scanf ("%d",&a[j][r]);
 	}
 }
 b[m]=0;
@@ -37,7 +37,7 @@ b[m]=b[m]+a[j][r];
 
 }
 for (m=0;m<p;m++){
-	printf("%d\n",b[m]);
+	my_printf("%d\n",b[m]);
 }
 
 return 0;

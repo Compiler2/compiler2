@@ -10,10 +10,10 @@ int main_bench()
 {
     int sum[100000];
     long i,j,n,t;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     for (i=0;i<n;i++)
     {
-        scanf ("%d %d %d",&stu[i].xuehao,&stu[i].yuwen,&stu[i].shuxue);
+        my_scanf ("%d %d %d",&stu[i].xuehao,&stu[i].yuwen,&stu[i].shuxue);
         sum[i]=stu[i].yuwen+stu[i].shuxue;
     }
     
@@ -25,7 +25,7 @@ int main_bench()
             if (sum[j+1]>sum[t])
             t=j+1;
         }
-        printf ("%d %d\n",stu[t].xuehao,sum[t]);
+        my_printf ("%d %d\n",stu[t].xuehao,sum[t]);
         sum[t]=0;
     }
     getchar();

@@ -10,7 +10,7 @@ int main_bench()
  l=strlen(p);
  for(i=0;i<l-1;i++)
  {
-   printf("%c",*(p+i)+*(p+i+1));
+   my_printf("%c",*(p+i)+*(p+i+1));
   }
- printf("%c",*p+*(p+l-1));
+ my_printf("%c",*p+*(p+l-1));
 }

@@ -4,7 +4,7 @@ int main_bench()
 { 
 	int sum=0,i,t;
 	char str[5]={0},str2[5]={0};
-	  scanf("%s",str);
+	  my_scanf("%s",str);
   for (i=0;str[i]!='\0';i++)
 	  sum=sum+1;
   for (i=sum-1;i>=0;i--)
@@ -12,6 +12,6 @@ int main_bench()
 	  t=sum-i-1;
 	  str2[t]=str[i];
   }
-  printf("%s",str2);
+  my_printf("%s",str2);
 
 }

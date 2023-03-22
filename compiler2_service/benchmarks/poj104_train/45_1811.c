@@ -6,7 +6,7 @@ int main_bench()
 	int i;
 	for(i=0;i<2;i++)
 	{
-		scanf("%s",shuru[i]);
+		my_scanf("%s",shuru[i]);
 	}
 	int len=strlen(shuru[1]);
 	int j;
@@ -14,7 +14,7 @@ int main_bench()
 	{
 		if(shuru[0][0]==shuru[1][j])
 		{
-			printf("%d",j);
+			my_printf("%d",j);
 			break;
 		}
 	}

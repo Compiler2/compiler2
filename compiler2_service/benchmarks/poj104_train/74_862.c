@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,p,flag,a,ok,w,b;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	ok=1;
 	for(i=m;i<=n;i++)
 	{
@@ -28,10 +28,10 @@ int main_bench()
 		}
 		if(a==i)
 		{
-			printf((!ok)?",%d":"%d",i);
+			my_printf((!ok)?",%d":"%d",i);
 			ok=0;
 		}
 	}
 	if(ok==1)
-		printf("no");
+		my_printf("no");
 }

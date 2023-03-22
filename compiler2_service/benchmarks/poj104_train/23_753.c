@@ -13,12 +13,12 @@ int main_bench()
 			j=i;
 			if(i==0)
 				for(;i<=k;i++)
-					printf("%c",str[i]);
+					my_printf("%c",str[i]);
 			else
 				for(i=i+1;i<=k;i++)
-					printf("%c",str[i]);
+					my_printf("%c",str[i]);
 			if(j>0)    
-				printf(" ");
+				my_printf(" ");
 			i=j;k=j-1;  
 		}
 	}

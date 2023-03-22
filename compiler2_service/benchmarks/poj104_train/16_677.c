@@ -3,29 +3,29 @@
 int main_bench()
 {
  int a,b,i;
- scanf("%d",&a);
+ my_scanf("%d",&a);
  b=a%10;
- printf("%d",b);
+ my_printf("%d",b);
  a=a/10;
  if (a!=0)
   {
     b=a%10;
-    printf("%d",b);
+    my_printf("%d",b);
     a=a/10;
      if (a!=0)
       {
         b=a%10;
-        printf("%d",b);
+        my_printf("%d",b);
         a=a/10;
          if (a!=0)
           {
             b=a%10;
-            printf("%d",b);
+            my_printf("%d",b);
             a=a/10;
              if (a!=0)
              {
               b=a%10;
-              printf("%d",b);
+              my_printf("%d",b);
               a=a/10;
               }
            }

@@ -6,7 +6,7 @@ main_bench() {
    int n;
    int a,b,c,i;
    int t=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=1;i<=n;i++) {
 if(i%7==0) a=0;
 else                    
@@ -23,5 +23,5 @@ else a=i;
   }
 }
 t=t+a*a;              }
-printf("%d",t);
+my_printf("%d",t);
 }

@@ -12,7 +12,7 @@ int main_bench()
 	{
 		if (s[i] != ' ')
 		{
-			printf("%c", s[i]);
+			my_printf("%c", s[i]);
 			flag = 1;
 		}
 		else if (s[i] == ' ')
@@ -21,7 +21,7 @@ int main_bench()
 				continue;
 			else
 			{
-				printf("%c", s[i]);
+				my_printf("%c", s[i]);
 				flag = 0;
 			}
 		}

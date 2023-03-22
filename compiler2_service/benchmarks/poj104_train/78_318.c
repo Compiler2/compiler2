@@ -47,10 +47,10 @@ for (i=0;i<4;i++)
         {
             switch (j)
             {
-               case 0:printf("z %d\n",t[0]);break;
-               case 1:printf("q %d\n",t[1]);break;
-               case 2:printf("s %d\n",t[2]);break;
-               case 3:printf("l %d\n",t[3]);break;
+               case 0:my_printf("z %d\n",t[0]);break;
+               case 1:my_printf("q %d\n",t[1]);break;
+               case 2:my_printf("s %d\n",t[2]);break;
+               case 3:my_printf("l %d\n",t[3]);break;
             }
         }
     }

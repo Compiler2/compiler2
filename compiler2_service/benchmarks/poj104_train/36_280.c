@@ -24,12 +24,12 @@ int main_bench()
 		k=strlen(a);
 		for(i=0;i<strlen(a)/2&&b[i]==a[i];i++);
 		if(i==strlen(a)/2)
-			printf("YES");
+			my_printf("YES");
 		else
-            printf("NO");
+            my_printf("NO");
 			
 	}
 
 	else
-		printf("NO");
+		my_printf("NO");
 }

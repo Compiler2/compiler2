@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int m[100],n[100],he[100];
 	int a[100][100];
 	int i,j,l,total;
 	
 	for(i=0;i<k;i++){
-		scanf("%d%d",&m[i],&n[i]);
+		my_scanf("%d%d",&m[i],&n[i]);
 		for(j=0;j<m[i];j++){
 			for(l=0;l<n[i];l++){
-				scanf("%d",&a[j][l]);
+				my_scanf("%d",&a[j][l]);
 			}
 		}
 		total=0;
@@ -26,9 +26,9 @@ int main_bench()
 	}
 
 	for(i=0;i<k-1;i++){
-		printf("%d\n",he[i]);
+		my_printf("%d\n",he[i]);
 	}
-	printf("%d",he[k-1]);
+	my_printf("%d",he[k-1]);
 		
 
 			

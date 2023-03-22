@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int max,sed,t,j,r,m,c;
-scanf("%d",&max);
-scanf("%d",&sed);
-scanf("%d",&c);
+my_scanf("%d",&max);
+my_scanf("%d",&sed);
+my_scanf("%d",&c);
 j=3;
 while(j<=n){
 	if(max<c){
@@ -19,7 +19,7 @@ while(j<=n){
 	sed=c;
 	}
 	j++;
-	scanf("%d",&c);
+	my_scanf("%d",&c);
 	
 }
 if(max<sed){
@@ -27,6 +27,6 @@ m=max;
 max=sed;
 sed=m;
 }
-printf("%d\n%d\n",max,sed);
+my_printf("%d\n%d\n",max,sed);
 return 0;
 }

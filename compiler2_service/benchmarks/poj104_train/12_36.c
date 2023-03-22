@@ -9,7 +9,7 @@ int main_bench(){
 	for(int i=0;i<15;i++)
 	{
 
-		scanf("%f",&s[i]);
+		my_scanf("%f",&s[i]);
 	if(s[i]==0)
 		break;
 	else
@@ -27,7 +27,7 @@ int b=0;
 		b=b+1;
 		}
 	}
-	printf("%d",b);
+	my_printf("%d",b);
 
 	return 0;
 }

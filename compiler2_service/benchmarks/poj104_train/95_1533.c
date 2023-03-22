@@ -13,10 +13,10 @@ int  main_bench()
 	for(int i=0;i<len2;i++)
 		b[i]=toupper(b[i]);
 	if(strcmp(a,b)>0)
-	   printf("%c",'>');
+	   my_printf("%c",'>');
 	else
 	   if(strcmp(a,b)<0)
-	      printf("%c",'<');
+	      my_printf("%c",'<');
 	   else
-	      printf("%c",'=');
+	      my_printf("%c",'=');
 }

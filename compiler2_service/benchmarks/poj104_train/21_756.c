@@ -6,10 +6,10 @@ int main_bench()
 	int n,i,j,k;
 	float average,c;
 	float sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		sum=sum+a[i];
 	}
 	for(j=0;j<n-1;j++)
@@ -26,10 +26,10 @@ int main_bench()
 	}
 	average=sum/(float)n;
 	if(average-a[0]>a[n-1]-average)
-		printf("%g",a[0]);
+		my_printf("%g",a[0]);
 	if(average-a[0]==a[n-1]-average)
-		printf("%g,%g",a[0],a[n-1]);
+		my_printf("%g,%g",a[0],a[n-1]);
 	if(average-a[0]<a[n-1]-average)
-		printf("%g",a[n-1]);
+		my_printf("%g",a[n-1]);
 	return 0;
 }

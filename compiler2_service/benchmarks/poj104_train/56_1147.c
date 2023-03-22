@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a;
 	int b[5];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int i;
     b[0]=a%10;
 	b[1]=((a%100)-b[0])/10;
@@ -13,7 +13,7 @@ int main_bench()
 	b[4]=a/10000;
 	for(i=0;i<5;i++){
 		if(b[i] != 0){
-			printf("%d", b[i]);
+			my_printf("%d", b[i]);
 		}
 	}
    return 0;

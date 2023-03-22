@@ -4,7 +4,7 @@ int main_bench()
 {
 	long s,n;
 	int a[5];
-	scanf("%ld",&n);
+	my_scanf("%ld",&n);
 	s=n;
 	a[0]=s%10;
 	s=s-a[0];
@@ -18,18 +18,18 @@ int main_bench()
 
 	if (n<10)
 	
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	
 	else if (n<100)
 	
-		printf("%1d%1d",a[0],a[1]);
+		my_printf("%1d%1d",a[0],a[1]);
 	
 	else if (n<1000)
-		printf("%1d%1d%1d",a[0],a[1],a[2]);
+		my_printf("%1d%1d%1d",a[0],a[1],a[2]);
 
 	else if (n<10000)
-		printf("%1d%1d%1d%1d",a[0],a[1],a[2],a[3]);
+		my_printf("%1d%1d%1d%1d",a[0],a[1],a[2],a[3]);
 
 	else 
-		printf("%1d%1d%1d%1d%1d",a[0],a[1],a[2],a[3],a[4]);
+		my_printf("%1d%1d%1d%1d%1d",a[0],a[1],a[2],a[3],a[4]);
 }

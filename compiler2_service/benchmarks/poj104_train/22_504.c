@@ -4,11 +4,11 @@ int main_bench()
 {
     int a,b,k;
     char i;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     b=-1;
     while((i=getchar())==',')
     {
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       if(k>a)
       {
       b=a;
@@ -18,8 +18,8 @@ int main_bench()
       b=k;
       }
       if(a==b||b==-1)
-      printf("No");
+      my_printf("No");
       else 
-      printf("%d",b);
+      my_printf("%d",b);
       return 0;
 }

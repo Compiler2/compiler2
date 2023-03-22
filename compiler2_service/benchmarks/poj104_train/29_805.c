@@ -13,11 +13,11 @@ int main_bench()
 	fz[0]=2;
 	fz[1]=3;
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<=m-1;j++)
 	{
 		sun=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		
 		for(i=2;i<=n-1;i++)
 		{
@@ -30,8 +30,8 @@ int main_bench()
 			fs[i]=fz[i]*1.0/fm[i];
 			sun+=fs[i];
 		}
-		printf("%.3lf",sun);
-		printf("\n");
+		my_printf("%.3lf",sun);
+		my_printf("\n");
 	}
 	
 	

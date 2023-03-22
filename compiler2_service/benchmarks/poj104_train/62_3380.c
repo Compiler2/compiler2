@@ -14,5 +14,5 @@ int main_bench()
      }
   }
   str[j]='\0';
-  printf("%s",str);
+  my_printf("%s",str);
 }

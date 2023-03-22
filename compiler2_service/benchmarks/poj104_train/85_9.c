@@ -5,14 +5,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i = 0;
 	char p[22];
 	int j;
 	int error;
 	do
 	{
-		scanf("%s",p);
+		my_scanf("%s",p);
 		j = 0;
 		error = 0;
 		do 
@@ -25,7 +25,7 @@ int main_bench()
 					{
 						if ( p[j] != '_')
 						{
-							printf("no\n");
+							my_printf("no\n");
 							error = 1;
 							break;
 						}
@@ -44,7 +44,7 @@ int main_bench()
 					{
 						if ( p[j] != '_')
 						{
-							printf("no\n");
+							my_printf("no\n");
 							error = 1;
 							break;
 						}
@@ -55,7 +55,7 @@ int main_bench()
 		}while ( p[j] != '\0' );
 		if ( error == 0 )
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		i++;
 	}while ( i < n );

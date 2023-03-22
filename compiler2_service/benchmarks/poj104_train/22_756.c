@@ -6,11 +6,11 @@ int main_bench()
 	char c;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		c=getchar();
 		if(c=='\n') break;
 	}
-	if(i==0) printf("No");
+	if(i==0) my_printf("No");
 	else{
 			for(j=0;j<i;j++)
 			{
@@ -18,7 +18,7 @@ int main_bench()
 					z++;
 			}
 			if(z==i)
-				printf("No");
+				my_printf("No");
 			else{
 	for(j=1;j<=i;j++)
 	{
@@ -35,12 +35,12 @@ int main_bench()
 	for(j=0;j<=i;j++)
 	{
 		if(x[j]>x[j+1])
-		{printf("%d",x[j+1]);
+		{my_printf("%d",x[j+1]);
 		y=1;break;}
 	}
 	if(y==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	}
 	}

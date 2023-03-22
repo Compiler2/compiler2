@@ -34,9 +34,9 @@ int main_bench()
 	int m=0;
 	int k=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",pat.ID,&pat.age);
+		my_scanf("%s %d",pat.ID,&pat.age);
 		if(pat.age>=60){
 			oldpat[m]=pat;
 			m++;
@@ -49,10 +49,10 @@ int main_bench()
 	paixu(oldpat,m);
 
 	for(i=0;i<m;i++){
-		printf("%s\n",oldpat[i].ID);
+		my_printf("%s\n",oldpat[i].ID);
 	}
 	for(i=0;i<k;i++){
-		printf("%s\n",youngpat[i].ID);
+		my_printf("%s\n",youngpat[i].ID);
 	}
 
 	return 0;

@@ -19,13 +19,13 @@ a[index][i++]=e[j];
 }
 index++;
 
-    scanf("%s",b);
-    scanf("%s",c);
+    my_scanf("%s",b);
+    my_scanf("%s",c);
     for(i=0;i<index;i++)
 {
-       if(strcmp(a[i],b)==0) printf("%s",c);
-       else printf("%s",a[i]);
-if(i!=index-1)printf(" ");
+       if(strcmp(a[i],b)==0) my_printf("%s",c);
+       else my_printf("%s",a[i]);
+if(i!=index-1)my_printf(" ");
 }
     return 0;
 }

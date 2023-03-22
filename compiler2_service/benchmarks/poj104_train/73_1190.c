@@ -7,7 +7,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&matrix[i][j]);
+			my_scanf("%d",&matrix[i][j]);
 		}
 	}
 	for(i=0;i<5;i++)
@@ -42,13 +42,13 @@ int main_bench()
 			if(max[i]==min[j])
 			{
 				k=1;
-				printf("%d %d %d",i+1,j+1,min[j]);
+				my_printf("%d %d %d",i+1,j+1,min[j]);
 			}
 		}
 	}
 	if(k==0)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

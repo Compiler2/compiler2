@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a,b,c,d,e,f,g;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a/10000;
 	c=a/1000-b*10;
 	d=a/100-c*10-b*100;
@@ -14,6 +14,6 @@ int main_bench(){
     if(d==0){g=g/10;}
     if(e==0){g=g/10;}
     if(f==0){g=g/10;}
-printf("%d",g);
+my_printf("%d",g);
 	return 0;
 }

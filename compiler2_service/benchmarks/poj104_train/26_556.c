@@ -9,17 +9,17 @@ int main_bench(){
 	judge=0;
 	for(i=0;i<len;i++){
 		if((str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z')){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 			judge=0;
 		}else if(str[i]=='.'){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 			judge=1;
 		}else if(str[i]==' '&&judge==0){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 			judge=1;
 		}else if(str[i]==' '&&judge==1){
 			continue;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

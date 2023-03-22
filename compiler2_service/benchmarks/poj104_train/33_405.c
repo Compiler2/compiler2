@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a,b,len;
 	char z[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<=n-1;a++)
 	{
-		scanf("%s",z);
+		my_scanf("%s",z);
 		len=strlen(z);
 		for(b=0;b<=len-1;b++)
 		{
@@ -32,7 +32,7 @@ int main_bench()
 				continue;
 			}
 		}
-		printf("%s\n",z);
+		my_printf("%s\n",z);
 	}
 	return 0;
 }

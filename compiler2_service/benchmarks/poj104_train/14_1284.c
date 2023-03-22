@@ -8,13 +8,13 @@ struct student
 int main_bench()
 {
 	int i,n,x,y;
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 	max1.z=-1;
 	max2.z=-1;
 	max3.z=-1;
 	for (i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&a.num,&x,&y);
+		my_scanf("%d %d %d",&a.num,&x,&y);
 		a.z=x+y;
 		if (a.z>max1.z)
 		{
@@ -32,5 +32,5 @@ int main_bench()
 			max3=a;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",max1.num,max1.z,max2.num,max2.z,max3.num,max3.z);
+	my_printf("%d %d\n%d %d\n%d %d\n",max1.num,max1.z,max2.num,max2.z,max3.num,max3.z);
 }

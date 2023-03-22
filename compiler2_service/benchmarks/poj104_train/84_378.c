@@ -3,9 +3,9 @@
 
 int main_bench()
 {    int a[100],i,m1,m2,n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 }
    m1=a[0];
     m2=0;
@@ -18,7 +18,7 @@ for(i=0;i<n;i++){
 
   for(i=0;i<n;i++)
 	   if(a[i]<m1&&m2<a[i])m2=a[i];
-	printf("%d\n%d",m1,m2);
+	my_printf("%d\n%d",m1,m2);
 
 
 

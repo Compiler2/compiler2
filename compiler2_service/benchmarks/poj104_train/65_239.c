@@ -6,9 +6,9 @@ int n;
 int x,y;
 x=0;
 y=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (int i=0;i<n;i++){
-scanf("%d %d\n",&a[i],&b[i]);
+my_scanf("%d %d\n",&a[i],&b[i]);
 }
 for (int i=0;i<n;i++){
 	if(a[i]==0){
@@ -26,8 +26,8 @@ for (int i=0;i<n;i++){
 		if (b[i]==0){x++;}
 		if (b[i]==1){y++;}
 }}
-if (x==y){printf("Tie");}
-if (x>y) {printf("A");}
-if (x<y) {printf("B");}
+if (x==y){my_printf("Tie");}
+if (x>y) {my_printf("A");}
+if (x<y) {my_printf("B");}
 	return 0;
 }

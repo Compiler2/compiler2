@@ -6,15 +6,15 @@ int main_bench(){
 	int i,j,k;
 	int count=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=1;i<n+1;i++){
 		for(j=1;j<n+2;j++){
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 		}
 	}
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(k=1;k<m;k++){
 		for(i=1;i<n+1;i++){
@@ -52,7 +52,7 @@ int main_bench(){
 		}
 	}
 
-	printf("%d",count);
+	my_printf("%d",count);
 
 	return 0;
 }

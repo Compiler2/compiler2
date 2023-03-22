@@ -12,16 +12,16 @@ int main_bench()
 		if(a[i]!=' ')
 		{
 			for(j=i+1;a[j]!=' '&&j<k;j++);
-			printf("%d",j-i);
+			my_printf("%d",j-i);
 			i=j;
 		}
 		else
 		{
 			for(j=i+1;a[j]==' '&&j<k;j++);
-			printf(",");
+			my_printf(",");
 			i=j;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

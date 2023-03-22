@@ -8,11 +8,11 @@ int main_bench()
 	int sum[100];
 	char c,d;
 	int s[5];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<5;j++) s[j]=0;
-		scanf("%s%d%d %c %c%d",name,&a,&b,&c,&d,&e);
+		my_scanf("%s%d%d %c %c%d",name,&a,&b,&c,&d,&e);
 		if(a>80&&e>=1) s[0]++;
 		if(a>85&&b>80) s[1]++;
 		if(a>90) s[2]++;
@@ -27,6 +27,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++) max2=max2+sum[i];
-	printf("%s\n%d\n%d\n",NAME,max1,max2);
+	my_printf("%s\n%d\n%d\n",NAME,max1,max2);
 	return 0;
 }

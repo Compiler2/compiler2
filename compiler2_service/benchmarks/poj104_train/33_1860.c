@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char d[256]={'\0'};
     for(i=0;i<n;i++)
 	{
 	    char a[256]={'\0'};
-		scanf("%s",&d);
+		my_scanf("%s",&d);
 		for(j=0;d[j]!='\0';j++)
 		{
 			if(d[j]=='A')
@@ -28,7 +28,7 @@ int main_bench()
 				a[j]='C';
 			}
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

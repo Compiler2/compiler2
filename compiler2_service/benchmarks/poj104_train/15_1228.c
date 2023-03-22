@@ -5,10 +5,10 @@ int main_bench()
     int zl[100][100];
     int i,j,k1=0,t1=0,k2=0,t2=0,r=0;
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
        for(j=0;j<n;j++){
-          scanf("%d",&zl[i][j]);
+          my_scanf("%d",&zl[i][j]);
        }
     }
     for(i=0;i<n;i++){
@@ -30,6 +30,6 @@ int main_bench()
             }
             }
             }
-    printf("%d",r);
+    my_printf("%d",r);
     return 0;
 }

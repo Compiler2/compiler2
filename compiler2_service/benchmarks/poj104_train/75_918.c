@@ -8,11 +8,11 @@ int main_bench()
     char tc;
     do
     {
-    scanf("%d%c",&t,&tc);
+    my_scanf("%d%c",&t,&tc);
     a[n]=t; n++;
 }while (tc!=10);
 
-for(i=0;i<n;i++) scanf("%d,",&b[i]);
+for(i=0;i<n;i++) my_scanf("%d,",&b[i]);
 int max=0,maxp=0;
 for(i=0;i<n;i++) if(b[i]>max) max=b[i];
 
@@ -23,6 +23,6 @@ for(i=0;i<n;i++) {if((a[i]<=t)&&(b[i]>t)) c++;}
 if (c>maxp) maxp=c;
 }
 
-printf("%d %d",n,maxp);
+my_printf("%d %d",n,maxp);
 
 }   

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,n,s,i,j;
 	char str[300];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	a=0;
 	n=(int)strlen(str);
 	for(i=97;i<123;i++){
@@ -17,14 +17,14 @@ int main_bench()
 			}
 		}
 		if(s!=0){
-			printf("%c=%d\n",(char)i,s);
+			my_printf("%c=%d\n",(char)i,s);
 		}
 		
 
 		
 	}
 	if(a==0){
-			printf("No\n");
+			my_printf("No\n");
 		
 	}
 	return 0;

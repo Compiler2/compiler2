@@ -21,15 +21,15 @@ if(str2[j]>='A'&&str2[j]<='Z')
 }
 if(strcmp(str1,str2)>0)
  {
-  printf(">");
+  my_printf(">");
  }
 else if(strcmp(str1,str2)<0)
  {
-  printf("<");
+  my_printf("<");
  }
  else if(strcmp(str1,str2)==0)
  {
-	 printf("=");
+	 my_printf("=");
  }
 
 

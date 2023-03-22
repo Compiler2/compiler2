@@ -17,7 +17,7 @@ void bigint2(int*a,int len)
 	while(a[k]==0&&k>0)
 		k--;
 	for(i=k;i>=0;i--)
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 }
 
 int bigint3(int*a,int alen,int*b,int blen,int*c)
@@ -45,15 +45,15 @@ int main_bench()
 	int a[300],b[300],c[300];
 	int alen,blen,clen;
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%s",s1,s2);
+		my_scanf("%s%s",s1,s2);
 		alen=bigint1(s1,a);
 		blen=bigint1(s2,b);
 		clen=bigint3(a,alen,b,blen,c);
 		bigint2(c,clen);
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

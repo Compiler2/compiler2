@@ -7,9 +7,9 @@ int main_bench(){
 	int c=0;
 	int d=0;
 	double o,p,q,w;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]<18||sz[i]==18){
@@ -39,14 +39,14 @@ int main_bench(){
 	p=(1.0*b/n)*100;
 	q=(1.0*c/n)*100;
 	w=(1.0*d/n)*100;
-	printf("1-18: %.2lf%",o);
-	printf("%%\n");
-	printf("19-35: %.2lf%",p);
-	printf("%%\n");
-	printf("36-60: %.2lf%",q);
-	printf("%%\n");
-	printf("60??: %.2lf%",w);
-	printf("%%\n");
+	my_printf("1-18: %.2lf%",o);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf%",p);
+	my_printf("%%\n");
+	my_printf("36-60: %.2lf%",q);
+	my_printf("%%\n");
+	my_printf("60??: %.2lf%",w);
+	my_printf("%%\n");
 	
 
     return 0;

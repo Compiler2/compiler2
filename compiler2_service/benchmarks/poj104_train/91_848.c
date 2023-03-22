@@ -13,6 +13,6 @@ int main_bench()
 	*(b+n-1)=*(a+n-1)+*a;
 	for(i=0;i<n;i++)
 	{
-		printf("%c",*(b+i));
+		my_printf("%c",*(b+i));
 	}
 }

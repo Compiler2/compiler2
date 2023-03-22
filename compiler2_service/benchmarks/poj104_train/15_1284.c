@@ -5,10 +5,10 @@ int main_bench(){
 	int m,n;
 	int k;
 	int a,b,c,d,e;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(m=0;m<k;m++){
 		for(n=0;n<k;n++){
-	scanf("%d",&(sa[m][n]));
+	my_scanf("%d",&(sa[m][n]));
 		}
 	}
 for(m=0;m<k;m++){
@@ -36,6 +36,6 @@ rr: 	c=m;
 				d=n;
 	
 e=(c-a-1)*(d-b-1);
-printf("%d",e);
+my_printf("%d",e);
 return 0;
 }	

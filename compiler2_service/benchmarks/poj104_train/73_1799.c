@@ -8,7 +8,7 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for (j=0;j<5;j++)
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 	}
 	for(i=0;i<5;i++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 				flag=0;
 			else 
 			{
-				printf("%d 1 %d\n", i+1, a[i][0]); 
+				my_printf("%d 1 %d\n", i+1, a[i][0]); 
 				count++;
 			}
 		}
@@ -35,7 +35,7 @@ int main_bench()
 				flag=0;
 			else 
 			{
-				printf("%d 2 %d\n", i+1, a[i][1]); 
+				my_printf("%d 2 %d\n", i+1, a[i][1]); 
 				count++;
 			}
 		}
@@ -50,7 +50,7 @@ int main_bench()
 				flag=0;
 			else 
 			{
-				printf("%d 3 %d\n", i+1, a[i][2]);
+				my_printf("%d 3 %d\n", i+1, a[i][2]);
 				count++;
 			}
 		}
@@ -65,7 +65,7 @@ int main_bench()
 				flag=0;
 			else 
 			{
-				printf("%d 4 %d\n", i+1, a[i][3]); 
+				my_printf("%d 4 %d\n", i+1, a[i][3]); 
 				count++;
 			}
 		}
@@ -80,13 +80,13 @@ int main_bench()
 				flag=0;
 			else 
 			{
-				printf("%d 5 %d\n", i+1, a[i][4]); 
+				my_printf("%d 5 %d\n", i+1, a[i][4]); 
 				count++;
 			}
 		}
 	}
 		if (flag==0&&count==0)
-			printf("not found\n");
+			my_printf("not found\n");
 return 0;
 }
 

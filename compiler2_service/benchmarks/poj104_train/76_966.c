@@ -6,9 +6,9 @@ int main_bench(){
 	struct range{
 		int s,e;
 	}r[50000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&r[i].s,&r[i].e);
+		my_scanf("%d %d",&r[i].s,&r[i].e);
 		for(j=r[i].s;j<r[i].e;j++){
 			axis[j]=1;
 		}
@@ -25,9 +25,9 @@ int main_bench(){
 		a+=axis[i];
 	}
 	if(a==r[me].e-r[ms].s){
-		printf("%d %d",r[ms].s,r[me].e);
+		my_printf("%d %d",r[ms].s,r[me].e);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

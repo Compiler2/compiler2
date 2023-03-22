@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[123]={0},d[123]={0};
 	char b[100]={'\0'},c[100]={'\0'};
-	scanf("%s %s",b,c);
+	my_scanf("%s %s",b,c);
 	int i=0,s=1;
 	if(strlen(b)!=strlen(c)) s=0;
 	else
@@ -18,7 +18,7 @@ int main_bench()
 	   for(i=65;i<=90;i++) s=s*(*(a+i)==*(d+i));
 	   for(i=97;i<=122;i++) s=s*(*(a+i)==*(d+i));
 	}
-	if(s==0) printf("NO");
-	else printf("YES");
+	if(s==0) my_printf("NO");
+	else my_printf("YES");
 	return 0;
 }

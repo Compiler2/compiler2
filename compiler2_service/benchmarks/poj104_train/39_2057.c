@@ -17,10 +17,10 @@ int main_bench()
   m=0;
   int a[110];
   int total;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-   scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,&stu[i].pinyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);                
+   my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,&stu[i].pinyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);                
   }
   for(i=0;i<n;i++)
   {a[i]=0;
@@ -39,11 +39,11 @@ int main_bench()
     {
        if(a[i]>m){strcpy(str,stu[i].name);m=a[i];}              
     }
-    printf("%s\n%d\n",str,m);
+    my_printf("%s\n%d\n",str,m);
     total=0;
     for(i=0;i<n;i++)
     {total+=a[i];}
-    printf("%d\n",total);
+    my_printf("%d\n",total);
   	
   return 0;
 }

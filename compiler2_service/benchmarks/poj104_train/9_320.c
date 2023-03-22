@@ -9,11 +9,11 @@ struct point{
 int main_bench(){
 	int n,i,j,o=0,s=0,t,m;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		char x[10]={'\0'};
 		t=0;
-		scanf("%s %d",x,&t);
+		my_scanf("%s %d",x,&t);
 		if(t>=60){
 			strcpy(old[o].id,x);
 			old[o].age=t;
@@ -40,9 +40,9 @@ int main_bench(){
 	}
 
 	for(i=o-1;i>=0;i--){
-		printf("%s\n",old[i].id);
+		my_printf("%s\n",old[i].id);
 	}
 	for(i=0;i<s;i++){
-		printf("%s\n",small[i].id);
+		my_printf("%s\n",small[i].id);
 	}
 }

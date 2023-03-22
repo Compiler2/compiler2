@@ -4,24 +4,24 @@ int main_bench(){
 	double a,e=0;
 	int i,d=0,f,g;
 	char b[500],c[500];
-	scanf("%lf\n",&a);
+	my_scanf("%lf\n",&a);
 	gets(b);
 	gets(c);
 	f=strlen(b);
 	g=strlen(c);
 	if(f!=g){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;i<f;i++){
 		if(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C'){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
 	for(i=0;i<g;i++){
 		if(c[i]!='A'&&c[i]!='T'&&c[i]!='G'&&c[i]!='C'){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -34,9 +34,9 @@ int main_bench(){
 
 
 	if(e>=a)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 
 
 

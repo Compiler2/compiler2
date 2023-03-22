@@ -12,17 +12,17 @@
 int main_bench()
 {
     int k,m,n;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     int a[100][100]={0};
     int *p,i1,i2,sum=0;
     
     for (; k>0; k--) {
         sum=0;
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
         for (i1=0; i1<m; i1++) {
             p=a[i1];
             for (i2=0; i2<n; i2++) {
-                scanf("%d",p);
+                my_scanf("%d",p);
                 sum=sum+*p;
                 p++;
             }
@@ -35,6 +35,6 @@ int main_bench()
                 p++;
             }
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
     }
 }

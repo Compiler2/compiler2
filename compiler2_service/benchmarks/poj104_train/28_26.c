@@ -18,6 +18,6 @@ int main_bench()
 			b[l]++;
 	}
 	for(i=0;i<m-1;i++)
-		printf("%d,",b[i]);
-	printf("%d",b[m-1]);
+		my_printf("%d,",b[i]);
+	my_printf("%d",b[m-1]);
 }

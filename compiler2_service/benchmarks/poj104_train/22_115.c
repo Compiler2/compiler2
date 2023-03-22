@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d%c",&d[i],&c);
+		my_scanf("%d%c",&d[i],&c);
 		i++;
 	}while(c==',');
 	n=i;
@@ -24,7 +24,7 @@ int main_bench()
 				max2=d[i];
 		}
 	}
-	if(max2==0)printf("No");
+	if(max2==0)my_printf("No");
 	else
-		printf("%d",max2);
+		my_printf("%d",max2);
 }

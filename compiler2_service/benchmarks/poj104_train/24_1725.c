@@ -45,8 +45,8 @@ strcpy(min,sl[0]);
            strcpy(min,sl[k]);
 		}
 }
-printf("%s\n",max);
-printf("%s\n",min);
+my_printf("%s\n",max);
+my_printf("%s\n",min);
 
 
 

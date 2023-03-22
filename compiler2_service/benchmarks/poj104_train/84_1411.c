@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int i,n,a,b,c,d,e;
-	scanf("%d\n%d",&n,&e);
+	my_scanf("%d\n%d",&n,&e);
 	b=e;
 	c=e;
 	for(i=2;i<=n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a>=b) {
 			d=b;	
 		    b=a;
@@ -17,6 +17,6 @@ int main_bench(){
 		if(e>c) c=e;
 	
 	}
-	printf("%d\n%d\n",b,c);
+	my_printf("%d\n%d\n",b,c);
 	return 0;
 }

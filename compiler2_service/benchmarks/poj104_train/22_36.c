@@ -15,7 +15,7 @@ int main_bench()
 	}
 	if(k==0)
 	{
-		printf("No");
+		my_printf("No");
 		return;
 	}
 	for(i=0;i<k;i++)
@@ -26,7 +26,7 @@ int main_bench()
 		}
 	if(p==0)
 	{
-		printf("No");
+		my_printf("No");
 		return;
 	}
 	for(i=0;i<=k;i++)
@@ -39,5 +39,5 @@ int main_bench()
 		else if(a[i]==submax) continue;
 		else if(a[i]>submax&&a[i]<max) submax=a[i];
 	}
-	printf("%d",submax);
+	my_printf("%d",submax);
 }

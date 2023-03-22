@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k;
 	int a[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<2*n;i=i+2)
-		scanf("%d %d",&a[i],&a[i+1]);
-	printf("\n");
+		my_scanf("%d %d",&a[i],&a[i+1]);
+	my_printf("\n");
 	for(i=0,j=0,k=0;i<2*n;i=i+2)
 	{
 		if(a[i]>=90&&a[i]<=140&&a[i+1]>=60&&a[i+1]<=90)
@@ -22,7 +22,7 @@ int main_bench()
 	if(j>k)
 		k=j;
 
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 
 	
 	return 0;

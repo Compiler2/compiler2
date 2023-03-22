@@ -10,10 +10,10 @@ k=strlen(a);
 for(i=0;i<k;i++){
 for(j=i;j<k;j++){
 if(a[j]>='0'&&a[j]<='9'&&a[j-1]!='-'){
-printf("%c",a[j]);
+my_printf("%c",a[j]);
 a[j]='*';
 if(a[j+1]<'0'||a[j+1]>'9'){
-printf("\n");
+my_printf("\n");
 break;
 }
 }

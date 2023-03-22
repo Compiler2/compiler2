@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[1000]={0},i,sum=0,j,b[1000]={0},temp,t;
 	float ave; 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=(float)sum/n;
@@ -38,11 +38,11 @@ int main_bench()
 	{
 		if(b[i+1]!=b[i])
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			break;
 		}
 		else
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 
 		
 	}

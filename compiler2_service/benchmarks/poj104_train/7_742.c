@@ -4,7 +4,7 @@ int main_bench()
 {
    char zf1[257],zf2[257],zf3[257];
    int len1,len2,len3,i,k,t,m,fa=0;
-   scanf("%s%s%s",zf1,zf2,zf3);
+   my_scanf("%s%s%s",zf1,zf2,zf3);
    len1=strlen(zf1);
    len2=strlen(zf2);
    len3=strlen(zf3);
@@ -36,17 +36,17 @@ int main_bench()
    {
     for(i=0;i<m;i++)
     {
-     printf("%c",zf1[i]);
+     my_printf("%c",zf1[i]);
     }
-    printf("%s",zf3);
+    my_printf("%s",zf3);
     for(i=m+len2;i<len1;i++) 
     {
-     printf("%c",zf1[i]);
+     my_printf("%c",zf1[i]);
     }
    }
    if(fa==0)
    {
-       printf("%s",zf1);
+       my_printf("%s",zf1);
    }
    return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
   char s[100],w[100];
   int i,k=0;
-  scanf("%s%s",s,w);
+  my_scanf("%s%s",s,w);
   for(i=0;w[i];i++)
     if(w[i]==s[k])
     {
@@ -14,5 +14,5 @@ int main_bench()
     }
     else
       k=0;
-  printf("%d\n",i-strlen(s)+2);
+  my_printf("%d\n",i-strlen(s)+2);
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,max,mac=-1;
-	scanf("%d",&max);
+	my_scanf("%d",&max);
 	while(getchar()!='\n')
 	{
-		scanf("%d",&i);
+		my_scanf("%d",&i);
 		if(i>max)
 		{
 			mac=max;
@@ -16,7 +16,7 @@ int main_bench()
 			mac=i;
 	}
 		if(mac!=-1&&mac!=max)
-			printf("%d",mac);
+			my_printf("%d",mac);
 		else
-			printf("No");
+			my_printf("No");
 }

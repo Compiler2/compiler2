@@ -2,10 +2,10 @@
 
  int main_bench(){
  int N,i=0,k=0,j=0;
- scanf("%d",&N);
+ my_scanf("%d",&N);
  int s[N];
  while(i<N){
-  scanf("%d",&s[i]);
+  my_scanf("%d",&s[i]);
   i=i+1;
   }
  i=0;
@@ -40,9 +40,9 @@
  i=i+1;
  }
  j=k-2;
- printf("%d",m[k-1]);
+ my_printf("%d",m[k-1]);
  while(j!=-1){
-  printf(",%d",m[j]);
+  my_printf(",%d",m[j]);
   j=j-1;
  }
  return 0;

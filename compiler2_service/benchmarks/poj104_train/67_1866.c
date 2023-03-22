@@ -4,12 +4,12 @@ int main_bench()
 {
 int n,i,j[100];
 double a[100],b[100],x,y[100];
-scanf("%d",&n);
-scanf("%lf %lf",&a[0],&b[0]);
+my_scanf("%d",&n);
+my_scanf("%lf %lf",&a[0],&b[0]);
 x=b[0]/a[0];
 for(i=1;i<n;i++)
 {
-	scanf("%lf %lf",&a[i],&b[i]);
+	my_scanf("%lf %lf",&a[i],&b[i]);
     y[i]=b[i]/a[i];
 	if(x-y[i]>0.05)
 		j[i]=1;
@@ -21,11 +21,11 @@ for(i=1;i<n;i++)
 for(i=1;i<n;i++)
 {
 	if(j[i]==1)
-		printf("worse\n");
+		my_printf("worse\n");
     if(j[i]==2)
-		printf("better\n");
+		my_printf("better\n");
 	if(j[i]==0)
-		printf("same\n");
+		my_printf("same\n");
 }
 return 0;
 }

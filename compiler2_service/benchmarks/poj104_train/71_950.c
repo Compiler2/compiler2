@@ -7,9 +7,9 @@ int main_bench(){
 	int i,j;
 	int y[201],m[201],d[201];	
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%d %d %d",&y[i],&m[i],&d[i]);
+		my_scanf("%d %d %d",&y[i],&m[i],&d[i]);
 	}
 	for (i=0;i<n;i++){
 		sum=0;
@@ -24,10 +24,10 @@ int main_bench(){
 				sum=sum+days[j];
 			}
 			if (sum%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else if (m[i]>d[i]){
@@ -35,10 +35,10 @@ int main_bench(){
 				sum=sum+days[j];
 			}
 			if (sum%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}

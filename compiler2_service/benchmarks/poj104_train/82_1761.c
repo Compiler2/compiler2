@@ -3,10 +3,10 @@
 int main_bench()
 {
     int a,b,n,hours1=0,hours2=0,max,i=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i=i+1)
 	{
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
         if(a>=90&&a<=140&&b>=60&&b<=90)
         hours1=hours1+1;
         else 
@@ -22,6 +22,6 @@ int main_bench()
     max=hours1;
     else
     max=hours2;
-    printf("%d",max);
+    my_printf("%d",max);
     return 0;
 }

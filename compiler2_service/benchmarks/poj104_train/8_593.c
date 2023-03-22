@@ -19,9 +19,9 @@ void get(int *p1,int*p2,int m1[],int m2[])
 {
 
     int i;
-    scanf("%d%d",p1,p2);
-    for(i=0;i<*p1;i++) scanf("%d",&m1[i]);
-    for(i=0;i<*p2;i++) scanf("%d",&m2[i]);
+    my_scanf("%d%d",p1,p2);
+    for(i=0;i<*p1;i++) my_scanf("%d",&m1[i]);
+    for(i=0;i<*p2;i++) my_scanf("%d",&m2[i]);
 }
 void sort(int*p,int m[])
 {
@@ -46,6 +46,6 @@ void cpy(int*p1,int*p2,int m1[],int m2[],int m[])
 void put(int *p1,int *p2,int m[])
 {
     int i;
-    printf("%d",m[0]);
-    for(i=1;i<*p1+*p2;i++) printf(" %d",m[i]);
+    my_printf("%d",m[0]);
+    for(i=1;i<*p1+*p2;i++) my_printf(" %d",m[i]);
 }

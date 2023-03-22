@@ -5,9 +5,9 @@ int main_bench()
    int a[100],i,e,k;
    char id[100][10],p[10];
    int n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-      scanf("%s%d",id[i],&a[i]);
+      my_scanf("%s%d",id[i],&a[i]);
    }
    for(k=1;k<=n;k++){
      for(i=n-1;i>k-1;i--){
@@ -22,7 +22,7 @@ int main_bench()
       }
    }
    for(i=0;i<n;i++){
-      printf("%s\n",id[i]);
+      my_printf("%s\n",id[i]);
    }
  return  0;
 }

@@ -21,13 +21,13 @@ return z;
 }
 int main_bench(){
      int m, n, i,j=0;
-	 scanf("%d%d",&m,&n);
+	 my_scanf("%d%d",&m,&n);
 	 for(i=m;i<n+1;i++){
 		 if(sushu(i)&&huiwen(i)){
 	       j++;
-		   if(j==1) printf("%d",i);
-		   else if(j>1) printf(",%d",i);
+		   if(j==1) my_printf("%d",i);
+		   else if(j>1) my_printf(",%d",i);
 		 }
 	 }
-	 if(j==0) printf("no");
+	 if(j==0) my_printf("no");
 }

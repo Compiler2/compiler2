@@ -4,10 +4,10 @@ int u[1000];
 int main_bench()
 {
 	int n,k,i,j;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&u[i]);
+		my_scanf("%d",&u[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,11 +25,11 @@ int main_bench()
 	}
 	if(i!=n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

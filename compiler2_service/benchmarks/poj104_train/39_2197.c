@@ -16,13 +16,13 @@ struct info *setup(void)
 	int t=0;
 	struct info *head,*p1,*p2;
 	head=p2=p1=(struct info*)malloc(sizeof(struct info));
-	scanf("%s %f %f %c %c %d",p1->name,&p1->finalscore,&p1->averscore,&p1->leader,&p1->westerner,&p1->essay);
+	my_scanf("%s %f %f %c %c %d",p1->name,&p1->finalscore,&p1->averscore,&p1->leader,&p1->westerner,&p1->essay);
 	while(t<n)
 	{
 		t++;
 		p1=(struct info*)malloc(sizeof(struct info));
 		p2->next=p1;
-		scanf("%s %f %f %c %c %d",p1->name,&p1->finalscore,&p1->averscore,&p1->leader,&p1->westerner,&p1->essay);
+		my_scanf("%s %f %f %c %c %d",p1->name,&p1->finalscore,&p1->averscore,&p1->leader,&p1->westerner,&p1->essay);
 		p2=p1;
 	}	
 	return head;
@@ -31,7 +31,7 @@ int main_bench()
 {
 	long max=0,total=0,t,i=0;
 	struct info *p,*excellent;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=setup();
 	for(i=0;i<n;i++)
 	{
@@ -54,6 +54,6 @@ int main_bench()
 		total+=t;
 		p=p->next;
 	}
-	printf("%s\n%ld\n%ld\n",excellent->name,max,total);
+	my_printf("%s\n%ld\n%ld\n",excellent->name,max,total);
 }
 

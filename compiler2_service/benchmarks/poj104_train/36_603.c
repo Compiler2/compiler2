@@ -5,7 +5,7 @@ int main_bench()
 	int i,j;
 	int m,n,k=0,t=0;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 
 	m=strlen(a);
 	n=strlen(b);
@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 
-	if(k==n&&m==n) printf("YES");
-	else printf("NO");
+	if(k==n&&m==n) my_printf("YES");
+	else my_printf("NO");
 }

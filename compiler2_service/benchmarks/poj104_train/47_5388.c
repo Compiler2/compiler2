@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,a[100],*p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=p+n-1;
 	for(;p>=a;p--)
-		scanf("%d ",p);
+		my_scanf("%d ",p);
 	p=a;
 	for(p=a;p<a+n-1;p++)
-		printf("%d ",*p);
-                  printf("%d",*p);
+		my_printf("%d ",*p);
+                  my_printf("%d",*p);
 }

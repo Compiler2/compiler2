@@ -3,9 +3,9 @@
 int main_bench(){
 	int i,j,c,k=1;
 	char s[300],w[300],t[300];
-	scanf("%s",w);
-	scanf("%s",s);
-	scanf("%s",t);
+	my_scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",t);
 	int l1=strlen(s);int l2=strlen(w);int l3=strlen(t);
 	for(i=0;i<l2;i++){
 		c=0;
@@ -17,7 +17,7 @@ int main_bench(){
 			k=0;
 		}
 	}
-	printf("%s",w);
+	my_printf("%s",w);
 	
 	return 0;
 }

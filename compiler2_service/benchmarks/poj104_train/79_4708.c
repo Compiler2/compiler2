@@ -11,11 +11,11 @@ int f(int m,int n){
 int main_bench(){
 	int a,b,i,re;
 	for(i=0;;i++){
-		scanf("%d%d",&b,&a);
+		my_scanf("%d%d",&b,&a);
 		if(a==0)
 			break;
 		re=f(a,b)+1;
-		printf("%d\n",re);
+		my_printf("%d\n",re);
 	}
 	return 0;
 

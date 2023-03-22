@@ -25,7 +25,7 @@ int main_bench(){
 		}
 		n-=s;
 	}
-	printf("%s\n",snt);
+	my_printf("%s\n",snt);
 	return 0;
 }
 

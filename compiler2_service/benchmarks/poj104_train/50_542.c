@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i, w, total[12], j;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(j=0; j<12; j++){
          total[j]=12;
 	 for( i=1; i<=j; i++)
@@ -24,12 +24,12 @@ int main_bench()
 	 }
      if(w<=5){
 	    if(total[j]%7==(5-w)){
-		 printf("%d\n",j+1);
+		 my_printf("%d\n",j+1);
 		}
      }
 	 if(w>5){
         if(total[j]%7==(12-w)){
-		 printf("%d\n",j+1);
+		 my_printf("%d\n",j+1);
 		}
 	 }
 	}

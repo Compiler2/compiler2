@@ -7,7 +7,7 @@ int main_bench()
            int a,b,c,d,e,f;
            }p[100];
     for(i=1;i<100;i++){
-                  scanf("%d%d%d%d%d%d",&p[i].a,&p[i].b,&p[i].c,&p[i].d,&p[i].e,&p[i].f);
+                  my_scanf("%d%d%d%d%d%d",&p[i].a,&p[i].b,&p[i].c,&p[i].d,&p[i].e,&p[i].f);
                   if(p[i].a==0 && p[i].b==0 && p[i].c==0 && p[i].d==0 && p[i].e==0 && p[i].f==0)
                      break;
                   }
@@ -37,8 +37,8 @@ int main_bench()
                         break;
                       }
     for(j=1;j<i-1;j++){
-                      printf("%d\n",s[j]);
+                      my_printf("%d\n",s[j]);
                       }
-    printf("%d",s[i-1]); 
+    my_printf("%d",s[i-1]); 
 return 0;
 }         

@@ -42,16 +42,16 @@ int main_bench()
 {
 
 	int i,j=1,n,year,month1,month2,day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&month1,&month2);
+		my_scanf("%d%d%d",&year,&month1,&month2);
 		day=Day(year,month1,month2,j,day);
 		if(day%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");		
+			my_printf("NO\n");		
 		}
 	}
 	return 0;

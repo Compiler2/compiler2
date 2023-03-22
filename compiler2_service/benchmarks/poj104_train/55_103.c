@@ -5,7 +5,7 @@ int main_bench()
 	unsigned long n=0,temp;
 	int f,a,b,l,i,j;
 	char c[100],r[100];
-	scanf("%d %s %d",&a,c,&b);
+	my_scanf("%d %s %d",&a,c,&b);
 	l=strlen(c);
 	for(i=0;i<l;i++)
 	{	f=0;
@@ -34,6 +34,6 @@ int main_bench()
 			f=0;
 		}
 	}
-	for(;i>=0;i--) printf("%c",r[i]);
-	printf("\n");
+	for(;i>=0;i--) my_printf("%c",r[i]);
+	my_printf("\n");
 }

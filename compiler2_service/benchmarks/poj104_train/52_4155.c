@@ -15,11 +15,11 @@ void make(int *p1,int n,int m)
 int main_bench()
 {
     int *p,a[100],i,n,m;
-    scanf("%d%d",&n,&m);
-    for (i=0;i<n;i++) scanf("%d",&a[i]);
+    my_scanf("%d%d",&n,&m);
+    for (i=0;i<n;i++) my_scanf("%d",&a[i]);
     make(a,n,m);
     p=a;
     for (i=0;i<n-1;i++)
-      printf("%d ",*p++);
-    printf("%d",*p);
+      my_printf("%d ",*p++);
+    my_printf("%d",*p);
 }

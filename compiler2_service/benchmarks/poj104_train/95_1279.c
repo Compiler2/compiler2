@@ -19,13 +19,13 @@ int main_bench()
 			y[i]+=32;
 	}
 	if(strcmp(x,y)>0)
-		printf(">");
+		my_printf(">");
 	else
 	{
 		if(strcmp(x,y)<0)
-			printf("<");
+			my_printf("<");
 		else 
-			printf("=");
+			my_printf("=");
 	}
 	return 0;
 }

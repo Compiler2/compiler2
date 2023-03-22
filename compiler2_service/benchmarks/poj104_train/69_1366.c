@@ -25,7 +25,7 @@ int main_bench()
 	char a[251]={'\0'},b[251]={'\0'};
 	int A[250]={0},B[250]={0},C[251]={0};
 	int i,j=0,x,y,z,count=0;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=250;i>=0;i--)
 	{
 		if(a[i]!='\0')
@@ -77,11 +77,11 @@ int main_bench()
 		if(C[i]!=0)
 		{
 			for(j=i;j>=0;j--)
-		    printf("%d",C[j]);
+		    my_printf("%d",C[j]);
 			break;
 		}
 	}
 	else
-		printf("0");
+		my_printf("0");
 	return 0;
 }

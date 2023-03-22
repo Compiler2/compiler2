@@ -23,10 +23,10 @@ int main_bench()
 		a[t].name='A'+t;
 		a[t].num=0;
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (t=0;t<m;t++)
 	{
-		scanf("%d %s",&book[t].no,book[t].wr);
+		my_scanf("%d %s",&book[t].no,book[t].wr);
 	}
 
 	for (t=0;t<m;t++)
@@ -59,10 +59,10 @@ int main_bench()
 	{
 		if (k==a[t].num) 
 		{
-			printf("%c",a[t].name);
-			printf("\n%d",a[t].num);
+			my_printf("%c",a[t].name);
+			my_printf("\n%d",a[t].num);
 			for (d=0;d<a[t].num;d++)
-			printf("\n%d",a[t].book[d]);
+			my_printf("\n%d",a[t].book[d]);
 			break;
 		}
 	}

@@ -6,7 +6,7 @@ int main_bench()
     int i,num[1000];
     while(0==0)
                  {
-                            scanf("%s",temp);
+                            my_scanf("%s",temp);
                             if(getchar()==' ')
                             {
                             strcat(s1,temp);
@@ -23,6 +23,6 @@ int main_bench()
     for(i=0;i<strlen(s1)-1;i++)
     s2[i]=num[i]+num[i+1];
     s2[strlen(s1)-1]=num[strlen(s1)-1]+num[0];
-    printf("%s",s2);
+    my_printf("%s",s2);
     return 0;
 }

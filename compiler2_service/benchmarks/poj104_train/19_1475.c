@@ -19,14 +19,14 @@ int main_bench()
 				k=k+1;
 			if((a[i-1]==' '||i==0)&&k==t&&(a[i+t]==' '||i==l-t))
 			{
-				printf("%s",c);
+				my_printf("%s",c);
 				i=i+t;
 			}
 		}
 		if(i>l-1)
 			break;
 		if((k!=t||(t==k&&(a[i-1]!=' '||i!=0)||a[i+t]!=' '||i!=l-t)))
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 		k=0;
 	}
 	return 0;

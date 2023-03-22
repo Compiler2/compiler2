@@ -22,18 +22,18 @@ int main_bench()
 	int i,j,x,y,r;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d %d",&x,&y);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d %d",&x,&y);
 	r=jz(a,x,y);
 	if(r==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
-				printf("%d ",a[i][j]);
-			printf("%d\n",a[i][4]);
+				my_printf("%d ",a[i][j]);
+			my_printf("%d\n",a[i][4]);
 		}
 	}
 	return 0;

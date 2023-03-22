@@ -5,14 +5,14 @@ int main_bench()
 	void sort(char x[], int n);
 	int m,n,r;
 	char a[50],b[50];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	sort(a,m);
 	sort(b,n); 
 	r=strcmp(a,b);
-	if(r==0) printf("YES");
-	else printf("NO");
+	if(r==0) my_printf("YES");
+	else my_printf("NO");
 }
 
 void sort(char x[], int n)

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,len,j;
 	char a[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		for(j=0;j<len;j++){
 			switch(a[j]){
@@ -19,7 +19,7 @@ int main_bench()
 
 			
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 
 

@@ -4,7 +4,7 @@ int main_bench()
 {
 	long a1,a2,a3,a4,a5,num,len;
 	a1=a2=a3=a4=a5=0;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	if (num>9) 
 	{
 		a1=num%10;
@@ -38,26 +38,26 @@ int main_bench()
 	if (a5) 
 	
 
-		printf("%d%d%d%d%d\n",a1,a2,a3,a4,a5);
+		my_printf("%d%d%d%d%d\n",a1,a2,a3,a4,a5);
 
 	else
 		if (a4)
 
 
-			printf("%d%d%d%d\n",a1,a2,a3,a4);
+			my_printf("%d%d%d%d\n",a1,a2,a3,a4);
 
 		else 
 			if (a3)
 
 
-				printf("%d%d%d\n",a1,a2,a3);
+				my_printf("%d%d%d\n",a1,a2,a3);
 
 			else 
 				if (a2)
 
 
-					printf("%d%d\n",a1,a2);
+					my_printf("%d%d\n",a1,a2);
 
-				else printf("%d\n",a1);
+				else my_printf("%d\n",a1);
 	return 0;
 }

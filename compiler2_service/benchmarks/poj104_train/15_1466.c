@@ -4,12 +4,12 @@ int main_bench()
 {
 	int i,j,n,c=0,q=0,t;
 	int m[1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&t);
+			my_scanf("%d",&t);
 			if(t==0)	
 			{
 				m[i]++;
@@ -22,5 +22,5 @@ int main_bench()
 		if(m[i]!=0)
 			q++;
 	}
-	printf("%d",(q-2)*(c-2*q)/2);
+	my_printf("%d",(q-2)*(c-2*q)/2);
 }

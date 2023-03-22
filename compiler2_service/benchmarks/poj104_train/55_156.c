@@ -6,7 +6,7 @@ int main_bench()
 	int sum=0,out=0;
 	char s[51];
 	
-	scanf("%d %s %d",&a,s,&b);
+	my_scanf("%d %s %d",&a,s,&b);
 	l=strlen(s);
 	
 	for(i=0;s[i]!='\0';i++)
@@ -48,8 +48,8 @@ int main_bench()
 	}
 	for(j=i;j<51;j++)
 	{
-		printf("%c",s[j]);
+		my_printf("%c",s[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[6];
 	int i;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	a[5]=i/10000;
 	a[4]=(i-a[5]*10000)/1000;
 	a[3]=(i-a[5]*10000-a[4]*1000)/100;
@@ -29,7 +29,7 @@ int main_bench()
 	}
 	for(k=n;k>=1;k--)
 	{
-		printf("%d",a[k]);
+		my_printf("%d",a[k]);
 	}
 	return 0;
 }

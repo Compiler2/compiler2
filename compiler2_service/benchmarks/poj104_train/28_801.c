@@ -16,6 +16,6 @@ int main_bench()
 	k=j;
 	for(j=0;j<k;j++)
 		if(n[j]!=0)
-		    printf("%d,",n[j]);
-	printf("%d\n",n[k]);
+		    my_printf("%d,",n[j]);
+	my_printf("%d\n",n[k]);
 }

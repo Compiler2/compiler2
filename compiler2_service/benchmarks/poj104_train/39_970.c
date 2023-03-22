@@ -61,10 +61,10 @@ void gxj(int k)
 int main_bench()
 {
     int i,max=0,maxn;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-                     scanf("%s %d %d %c %c %d",cl[i].name,&cl[i].qm,&cl[i].py,&cl[i].gb,&cl[i].xb,&cl[i].lw);
+                     my_scanf("%s %d %d %c %c %d",cl[i].name,&cl[i].qm,&cl[i].py,&cl[i].gb,&cl[i].xb,&cl[i].lw);
         ysj(i);
         if(cl[i].jxj>max)
         {
@@ -72,7 +72,7 @@ int main_bench()
                          maxn=i;
         }
     }
-    printf("%s\n%d\n%d",cl[maxn].name,cl[maxn].jxj,sum);
+    my_printf("%s\n%d\n%d",cl[maxn].name,cl[maxn].jxj,sum);
    
     return 0;
 }     

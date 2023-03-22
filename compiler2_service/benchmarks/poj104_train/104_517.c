@@ -5,7 +5,7 @@ int main_bench()
 	int a[12]={100,100,100,100,100,100,100,100,100,100,100,100},b[12]={99,99,99,99,99,99,99,99,99,99,99,99},i,c,d,e;
 	void x(int o[],int q);
 	void y(int p[],int w);
-	scanf("%d%d",&d,&e);
+	my_scanf("%d%d",&d,&e);
 	x(a,d);
 	y(b,e);
 	for(i=1;i<11;i++)
@@ -14,7 +14,7 @@ int main_bench()
 	   if(a[i+1]!=b[i+1])
 		   break;
 	}
-	printf("%d\n",a[i]);
+	my_printf("%d\n",a[i]);
 	return 0;
 }
 void x(int o[],int q)

@@ -14,5 +14,5 @@ memset(s1,0,sizeof(s1));
                 s1[i]=s[i]+s[i+1];
         }
         s1[l-1]=s[0]+s[l-1];
-        printf("%s\n",s1);
+        my_printf("%s\n",s1);
 }

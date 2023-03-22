@@ -2,7 +2,7 @@
 
 int main_bench()
 {  int q,m,n,i,j,a,b,k,u,flag,p=0;
-   scanf("%d%d",&m,&n);
+   my_scanf("%d%d",&m,&n);
    for(q=m;q<=n;q++)
      {u=q;a=q/10;b=q%10;j=0;
        while(u>0)
@@ -15,7 +15,7 @@ int main_bench()
         for(k=2;k<q/2;k++)
           {
           if(q%k==0) flag++;}
-            if(flag==0) {printf("%d",q);p++;break;}}
+            if(flag==0) {my_printf("%d",q);p++;break;}}
            }
   for(i=q+1;i<=n;i++)
      {u=i;a=i/10;b=i%10;j=0;
@@ -29,7 +29,7 @@ int main_bench()
         for(k=2;k<i/2;k++)
           {
           if(i%k==0) flag++;}
-            if(flag==0) {printf(",%d",i);p++;}}
+            if(flag==0) {my_printf(",%d",i);p++;}}
            }
-           if(p==0) printf("no");
+           if(p==0) my_printf("no");
 }

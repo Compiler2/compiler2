@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[501],t[501];
     int i,j,l,c,d,temp=0,m,n=0;
-    scanf("%s",s);
+    my_scanf("%s",s);
     l=strlen(s);
     for (i=1;i<=l;i++)
     {
@@ -33,7 +33,7 @@ int main_bench()
                         t[n+1]='\0';
                         n++;
                    }
-                    printf("%s\n",t); 
+                    my_printf("%s\n",t); 
                     n=0;                              
              }           temp=0; 
         }

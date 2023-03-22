@@ -31,11 +31,11 @@ int main_bench()
 	int sz[6],xsz[6];
 	int k;
 	for(k=0;k<6;k++){
-		scanf("%d",&sz[k]);
+		my_scanf("%d",&sz[k]);
 		xsz[k]=reverse(sz[k]);
 	}
 	for(k=0;k<6;k++){
-		printf("%d\n",xsz[k]);
+		my_printf("%d\n",xsz[k]);
 	}
 	return 0;
 }

@@ -6,13 +6,13 @@ int main_bench()
 	double n,result=0,result1;
 	char dna1[500];
 	char dna2[500];
-	scanf("%lf",&n);
-	scanf("%s%s",dna1,dna2);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",dna1,dna2);
 	len1=strlen(dna1);
 	len2=strlen(dna2);
 	if(len1!=len2)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	if(len1==len2)
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	if(x==0)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	if(x==1)
@@ -47,11 +47,11 @@ int main_bench()
 	result1=(double)1-(result/len1);
 	if((result1)>n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	if((result1)<=n)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	}
 	return 0;

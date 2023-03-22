@@ -4,7 +4,7 @@
 int main_bench()
 {
 int a,b,n,x,sum=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (a=0;a<=9;a++)
 {
 if (a==7) continue;
@@ -17,6 +17,6 @@ if (x>n) break;
 sum+=x*x;
 }
 }
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int z[100],n,i,max,min;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&z[i]);
+		my_scanf("%d",&z[i]);
 	for(i=1,max=z[0],min=z[0];i<n;i++)
 	{
 		if(z[i]>max)
@@ -15,6 +15,6 @@ int main_bench()
 		}
 		else if(z[i]<max&&z[i]>min) min=z[i];
 	}
-	printf("%d\n%d\n",max,min);
+	my_printf("%d\n%d\n",max,min);
 	return 0;
 }

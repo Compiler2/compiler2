@@ -3,7 +3,7 @@
 int main_bench()
 {
     int sum=0,y1,m1,d1,y2,m2,d2,m,month;
-    scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+    my_scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
     for(;y1<y2;y1++)
     {
         if((y1%4==0&&y1%100!=0)||(y1%400==0))sum+=366;
@@ -63,5 +63,5 @@ int main_bench()
         }
     }
     sum=sum+d2-d1;
-    printf("%d",sum);
+    my_printf("%d",sum);
 }

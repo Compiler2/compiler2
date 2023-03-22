@@ -12,7 +12,7 @@ int main_bench()
   "Thu.",
   "Fri.",
   "Sat."};
- scanf("%d %d %d",&year,&month,&day);
+ my_scanf("%d %d %d",&year,&month,&day);
  if ((year%4==0)&&(year%100!=0)||(year%400==0)) 
   mont[2]=29;
  else
@@ -22,6 +22,6 @@ int main_bench()
  days+=day;
  s=year-1+(int)((year-1)/4)-(int)((year-1)/100)+(int)((year-1)/400)+days;
  k=s%7;
- printf("%s",week[k]);
+ my_printf("%s",week[k]);
  return 0;
 } 

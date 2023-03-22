@@ -44,11 +44,11 @@ int main_bench()
 		int jiangjin;
 	}aw[100],temp;
 	int N,i,j,k,sum;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N;i++)
 	{
 		aw[i].jiangjin=0;
-		scanf("%s %d %d %c %c %d",&aw[i].name,&aw[i].qimocj,&aw[i].banpingcj,&aw[i].ynganbu,&aw[i].ynxibu,&aw[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",&aw[i].name,&aw[i].qimocj,&aw[i].banpingcj,&aw[i].ynganbu,&aw[i].ynxibu,&aw[i].lunwen);
 		aw[i].jiangjin=yuanshi(aw[i].qimocj,aw[i].lunwen)
 			          +wusi(aw[i].qimocj,aw[i].banpingcj)
 					  +chengji(aw[i].qimocj)
@@ -73,6 +73,6 @@ int main_bench()
 	{
 		sum=sum+aw[i].jiangjin;
 	}
-        printf("%s\n%d\n%d",aw[0].name,aw[0].jiangjin,sum);
+        my_printf("%s\n%d\n%d",aw[0].name,aw[0].jiangjin,sum);
 
 }

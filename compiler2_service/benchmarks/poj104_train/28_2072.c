@@ -15,8 +15,8 @@ int main_bench()
             if(n!=0)
             {
                 if(miao!=1)
-                    printf(",");
-                    printf("%d",n);
+                    my_printf(",");
+                    my_printf("%d",n);
                     miao++;
             }
             n=0;
@@ -24,7 +24,7 @@ int main_bench()
         else
         n++;
     }
-    printf("\n");
+    my_printf("\n");
     return 0;
 }
 

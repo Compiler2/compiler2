@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y1, m, d, no;
-	scanf("%d %d %d",&y1,&m,&d);
+	my_scanf("%d %d %d",&y1,&m,&d);
 	no=0;
 	if (y1%4==0){
 		if (y1%400==0){
@@ -81,6 +81,6 @@ int main_bench()
 		}			
 		
 	}
-printf("%d",no);
+my_printf("%d",no);
 return 0;
 }

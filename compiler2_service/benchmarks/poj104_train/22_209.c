@@ -7,7 +7,7 @@ int main_bench()
     k=0;
     for(i=0;;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         k++;
         c=getchar();
         if(c!=',')  break;
@@ -23,7 +23,7 @@ int main_bench()
        }
        if(www==0) w=1;
     }
-    if(w==1) printf("No");
+    if(w==1) my_printf("No");
     if(w==0)
     {
        max=0;
@@ -36,6 +36,6 @@ int main_bench()
        {
            if(a[i]>max2&&a[i]!=max) max2=a[i];
        }
-       printf("%d",max2);
+       my_printf("%d",max2);
    }
 }

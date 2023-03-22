@@ -2,9 +2,9 @@
 
 int main_bench(){
 int a,b=0,c=0,d,e,i=1;
-scanf("%d",&a);
+my_scanf("%d",&a);
 while(i<=a){
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	if(b<=d){
         e=b;
 		b=d;
@@ -20,6 +20,6 @@ while(i<=a){
 if(e>c){
 	c=e;
 }
-printf("%d\n%d\n",b,c);
+my_printf("%d\n%d\n",b,c);
 return 0;
 }

@@ -5,13 +5,13 @@ int main_bench()
 	int i,n,j,l=0,a;
 	char temp[4];
 	char temp1[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[100];
 	char result[100];
 	for(i=0;i<n;i++)
 	{
 		l=0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		a=strlen(s);
 		if (s[a-2]=='e'||s[a-2]=='l')
 		{
@@ -29,7 +29,7 @@ int main_bench()
 					result[j]=s[j];
 				}
 				result[j]='\0';
-				printf("%s\n",result);
+				my_printf("%s\n",result);
 			}
 			if (strcmp(temp,"ly")==0)
 			{
@@ -38,7 +38,7 @@ int main_bench()
 					result[j]=s[j];
 				}
 				result[j]='\0';
-				printf("%s\n",result);
+				my_printf("%s\n",result);
 			}
 		}
 		if (s[a-3]=='i')
@@ -57,7 +57,7 @@ int main_bench()
 					result[j]=s[j];
 				}
 				result[j]='\0';
-				printf("%s\n",result);
+				my_printf("%s\n",result);
 			}
 		}
 

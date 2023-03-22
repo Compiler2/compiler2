@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a[1000][1000],h1,h2,l1,l2,c=0,b=0;
 	int n,i,j,h,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(h=0;h<n;h++)
@@ -40,6 +40,6 @@ int main_bench()
 		}
 	if(b==1)  break;
 	}
-	printf("%d\n",(h2-h1-1)*(l2-l1-1));
+	my_printf("%d\n",(h2-h1-1)*(l2-l1-1));
 	return 0;
 }

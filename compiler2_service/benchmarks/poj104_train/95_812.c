@@ -16,7 +16,7 @@ int main_bench()
       if((cb[i]>=65)&&(cb[i]<=90))
         cb[i]=cb[i]+32;
     }
-  if(strcmp(ca,cb)>0) printf(">");
-  else if(strcmp(ca,cb)<0) printf("<");
-  else printf("=");
+  if(strcmp(ca,cb)>0) my_printf(">");
+  else if(strcmp(ca,cb)<0) my_printf("<");
+  else my_printf("=");
 }

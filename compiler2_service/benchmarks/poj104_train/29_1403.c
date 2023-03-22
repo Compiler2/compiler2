@@ -9,10 +9,10 @@ int main_bench()
 	a[1]=3;
 	b[0]=1;
 	b[1]=2;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int i=1;i<=m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1)
 		{
 			sum=2.000;
@@ -31,7 +31,7 @@ int main_bench()
 				sum+=a[q]/b[q];
 			}
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
         
 

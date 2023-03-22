@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],b[100];
 	int i,j,k=0,x;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 
 if(strlen(a)==strlen(b))
 {
@@ -21,12 +21,12 @@ if(strlen(a)==strlen(b))
 	}
 
 	if(k==strlen(a))
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }
 
 else
-printf("NO");
+my_printf("NO");
 
 }

@@ -3,24 +3,24 @@
 int main_bench(){
 	int n,i,j;
 	char a[256],b[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(j=0;a[j]!='\0';j++){
 			if(a[j]=='A'){
-				printf("T");
+				my_printf("T");
 			}
 			if(a[j]=='T'){
-				printf("A");
+				my_printf("A");
 			}
 			if(a[j]=='C'){
-				printf("G");
+				my_printf("G");
 			}
 			if(a[j]=='G'){
-				printf("C");
+				my_printf("C");
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 

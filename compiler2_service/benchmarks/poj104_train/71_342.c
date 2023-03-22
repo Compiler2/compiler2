@@ -5,16 +5,16 @@ int main_bench()
 	int fun(int x,int y);
 	int value(int x,int y);
 	int n,year,month1,month2,i,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&year,&month1,&month2);
+		my_scanf("%d %d %d",&year,&month1,&month2);
 		a=fun(year,month1);
 		b=fun(year,month2);
 		if((value(a,b))%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

@@ -13,10 +13,10 @@ int main_bench()
 	int lun[1000];
 	int jiang[1000];
 	int n,i,max,xue,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d %d %c %c %d",name[i],&fen[i],&ban[i],&gan[i],&xi[i],&lun[i]);
+		my_scanf("%s%d %d %c %c %d",name[i],&fen[i],&ban[i],&gan[i],&xi[i],&lun[i]);
 		jiang[i]=0;
 		if(fen[i]>80&&lun[i]>=1) jiang[i]=8000;
 		if(fen[i]>85&&ban[i]>80) jiang[i]=jiang[i]+4000;
@@ -39,8 +39,8 @@ int main_bench()
 	{
 		sum=sum+jiang[i];
 	}
-	printf("%s\n",name[xue]);
-	printf("%d\n",jiang[xue]);
-	printf("%d\n",sum);
+	my_printf("%s\n",name[xue]);
+	my_printf("%d\n",jiang[xue]);
+	my_printf("%d\n",sum);
 }
 		

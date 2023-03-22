@@ -21,9 +21,9 @@ int main_bench(){
 			sz[k]=j;
 		}
 	}
-	printf("%d",sz[0]);
+	my_printf("%d",sz[0]);
 	for(i=1;i<=k;i++){
-		printf(",%d",sz[i]);
+		my_printf(",%d",sz[i]);
 	}
 
 

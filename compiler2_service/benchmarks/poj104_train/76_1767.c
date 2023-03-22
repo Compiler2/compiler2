@@ -2,13 +2,13 @@
 
 int main_bench(){
     int n,i,j,a,b,c=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[100004];
 	for(i=0;i<100004;i++){
 	    sz[i]=0;
 	}
 	for(i=0;i<n;i++){
-	    scanf("%d%d",&a,&b);
+	    my_scanf("%d%d",&a,&b);
 		for(j=2*a;j<=2*b;j++){
 			sz[j]=1;
 		}
@@ -25,9 +25,9 @@ int main_bench(){
 		}
 	}
 	if(c==1){
-        printf("%d %d\n",a,b);
+        my_printf("%d %d\n",a,b);
     }else{
-	    printf("no\n");
+	    my_printf("no\n");
 	}
 	return 0;
 }

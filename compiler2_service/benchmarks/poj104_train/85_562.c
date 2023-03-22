@@ -5,13 +5,13 @@ int main_bench()
 {
  int n,i,j;
  char **string;
- scanf("%d", &n);
+ my_scanf("%d", &n);
  
  string=(char**)malloc(sizeof(char*)*n);
  for (i=0;i<n;i++)
  {
   string[i]=(char*)malloc(sizeof(char)*20);
-  scanf("%s",string[i]);
+  my_scanf("%s",string[i]);
  }
  
  for (i=0;i<n;i++)
@@ -20,7 +20,7 @@ int main_bench()
     (string[i][0]>='a' && string[i][0]<='z') ||
     string[i][0]=='_'))
   {
-   printf("no\n");
+   my_printf("no\n");
    continue;
   }
   for (j=1;string[i][j];j++)
@@ -34,8 +34,8 @@ int main_bench()
     break;
    }
   }
-  if (j) printf("yes\n");
-  else printf("no\n");
+  if (j) my_printf("yes\n");
+  else my_printf("no\n");
  }
  
  

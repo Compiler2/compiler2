@@ -9,14 +9,14 @@ int main_bench()
 int reverse(int num,int s);
 	for(i=0;i<6;i++)
 	{
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(num<0)
 		{
 			num=-num;
-			printf("-%d\n",reverse(num,0));
+			my_printf("-%d\n",reverse(num,0));
 		}
 		else
-			printf("%d\n",reverse(num,0));
+			my_printf("%d\n",reverse(num,0));
 	}
 	return 0;
 }

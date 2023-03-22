@@ -18,12 +18,12 @@ int main_bench()
 		}
 		if(str1[i]!=str2[i])
 		{
-			printf((str1[i]>str2[i])?">":"<");break;
+			my_printf((str1[i]>str2[i])?">":"<");break;
 		}
 	}
 	if(!str1[i]&&!str2[i])
 	{
-		printf("=");
+		my_printf("=");
 	}
 
 	return 0;

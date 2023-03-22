@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int k,n,i,j,*p,total,r;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		p=(int*)malloc(sizeof(int)*n);
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&p[j]);
+			my_scanf("%d",&p[j]);
 		}
 		if((p[n-1]+n*3)<=60)
 		{
@@ -33,7 +33,7 @@ int main_bench()
 			}
 			    
 		}
-		printf("%d\n",total);
+		my_printf("%d\n",total);
 		free(p);
 	}
 	return 0;

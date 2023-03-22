@@ -5,13 +5,13 @@ int main_bench()
 	int m,la,lb,x,i;
 	double r0,r1;
 	char a[505],b[505];
-	scanf("%lf",&r0);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&r0);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	la=strlen(a);
 	lb=strlen(b);
 	if(la!=lb)
-		printf("error\n");
+		my_printf("error\n");
 	else
 	{
 		x=1;
@@ -19,13 +19,13 @@ int main_bench()
 		{
 		    if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C')
 			{
-				printf("error\n");
+				my_printf("error\n");
 				x=0;
 				break;
 			}
 			else if(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C')
 			{
-				printf("error\n");
+				my_printf("error\n");
 				x=0;
 				break;
 			}
@@ -39,9 +39,9 @@ int main_bench()
 		if(x==1)
 		{
 			if(r1>r0)
-				printf("yes\n");
+				my_printf("yes\n");
 			else
-				printf("no\n");
+				my_printf("no\n");
 		}
 	}
 	return 0;

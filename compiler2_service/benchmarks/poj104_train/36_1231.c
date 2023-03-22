@@ -4,15 +4,15 @@
 int main_bench()
 {
 	char zifu[2][100];
-	scanf("%s",zifu[0]);
-	scanf("%s",zifu[1]);
+	my_scanf("%s",zifu[0]);
+	my_scanf("%s",zifu[1]);
 	int t;
 	t=strlen(zifu[0]);
 	int k;
 	k=strlen(zifu[1]);
 	if (t!=k)
 	{
-		printf("NO");
+		my_printf("NO");
 	
 		return 0;
 	}
@@ -30,7 +30,7 @@ int main_bench()
 			}
 			if (j==t-1&&zifu[0][i]!=zifu[1][j])
 			{
-				printf("NO");
+				my_printf("NO");
 				
 				return 0;
 
@@ -38,7 +38,7 @@ int main_bench()
 		}
 		if (i==t-1)
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 	}
 

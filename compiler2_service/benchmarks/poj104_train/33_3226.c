@@ -10,26 +10,26 @@ void com(char seq[])
            switch(seq[i])
            {
                          case 'A':
-                              printf("T");
+                              my_printf("T");
                               break;
                          case 'T':
-                              printf("A");
+                              my_printf("A");
                               break;
                          case 'G':
-                              printf("C");
+                              my_printf("C");
                               break;
                          case 'C':
-                              printf("G");
+                              my_printf("G");
                               break;
            }
      
-     printf("\n");
+     my_printf("\n");
 }
 
 int main_bench()
 {
     int n;
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     
     char seq[256];
     int i;

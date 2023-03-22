@@ -9,10 +9,10 @@ int main_bench()
     }
     a[100],x;
     int j,n,i,flag=1;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-      scanf("%d%d",&a[i].a,&a[i].b);	
+      my_scanf("%d%d",&a[i].a,&a[i].b);	
     }
     x=a[0];
     a[0].a=0;
@@ -62,9 +62,9 @@ int main_bench()
         flag=0;
     }
     if(flag)
-       printf("%d %d",x.a,x.b);
+       my_printf("%d %d",x.a,x.b);
       else
-        printf("no");
+        my_printf("no");
     return 0;
     
 }

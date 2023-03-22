@@ -3,7 +3,7 @@
 int main_bench()
 {
    unsigned long  a,m,d,i,d1,d2,t;
-   scanf("%u%u%u",&a,&m,&d);
+   my_scanf("%u%u%u",&a,&m,&d);
    d1=a/4-a/100+a/400;
    if((a%4==0&&a%100!=0)||a%400==0)
    {
@@ -46,13 +46,13 @@ int main_bench()
     t=i%7;
 	 switch(t)
 	{ 
-   case 0:printf("Sun.");break;
-   case 1:printf("Mon.");break;
-   case 2:printf("Tue.");break;
-   case 3:printf("Wed.");break;
-   case 4:printf("Thu.");break;
-   case 5:printf("Fri.");break;
-   case 6:printf("Sat.");break;
+   case 0:my_printf("Sun.");break;
+   case 1:my_printf("Mon.");break;
+   case 2:my_printf("Tue.");break;
+   case 3:my_printf("Wed.");break;
+   case 4:my_printf("Thu.");break;
+   case 5:my_printf("Fri.");break;
+   case 6:my_printf("Sat.");break;
   
 	}
 }

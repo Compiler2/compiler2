@@ -8,7 +8,7 @@ int main_bench()
                      k[i]=0;
                      for(j=0;j<=4;j++)
                      {
-                                      scanf("%d",&num[i][j]);
+                                      my_scanf("%d",&num[i][j]);
                                       if (num[i][j]>k[i]) 
                                       {
                                                           k[i]=num[i][j];
@@ -41,13 +41,13 @@ int main_bench()
                      {
                                       if (k[x]==h[y]) 
                                       {
-                                                      printf("%d %d %d\n",x+1,y+1,k[x]);
+                                                      my_printf("%d %d %d\n",x+1,y+1,k[x]);
                                                       m=1;
                                       }
                      }
                      
       }
       
-      if(m==0)printf("not found");               
+      if(m==0)my_printf("not found");               
       
 }      

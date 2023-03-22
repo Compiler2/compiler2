@@ -5,10 +5,10 @@ int main_bench(){
 int sz[100][100];
 int i,j;
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
   for(j=0;j<n;j++){
-  scanf("%d",&(sz[i][j]));
+  my_scanf("%d",&(sz[i][j]));
   }
 }
 
@@ -27,7 +27,7 @@ for(i=0;i<n;i++){
 s=s+c;
 }
 
-printf("%d",s);
+my_printf("%d",s);
 
 return 0;
 }

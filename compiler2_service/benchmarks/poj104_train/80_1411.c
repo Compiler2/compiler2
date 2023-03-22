@@ -3,7 +3,7 @@
 int main_bench()
 {
 int startyear,startmonth,startday,endyear,endmonth,endday,i,j,s,t,result,n=0,m=0;
-scanf("%d %d %d\n%d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+my_scanf("%d %d %d\n%d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
 for(i=1;i<=startmonth-1;i++)
 {
 if(i==1||i==3||i==5||i==7||i==8||i==10)
@@ -49,5 +49,5 @@ m=m+365;
 }
 m=m+endday;
 result=m-n;
-printf("%d",result);
+my_printf("%d",result);
 }

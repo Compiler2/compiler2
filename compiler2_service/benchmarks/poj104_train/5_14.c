@@ -6,13 +6,13 @@ int main_bench()
 	double n;
 	double sum=0,x,Len;
 	int len,i,len2,j;
-	scanf("%lf",&n);
-	scanf("%s%s",s[0],s[1]);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",s[0],s[1]);
 	len=strlen(s[0]);
 	len2=strlen(s[1]);
 	if(len!=len2) 
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	else
@@ -21,7 +21,7 @@ int main_bench()
 			for(j=0;j<len;j++){
 				if(s[i][j]!='A'&&s[i][j]!='T'&&s[i][j]!='G'&&s[i][j]!='C')
 				{
-					printf("error");
+					my_printf("error");
 					return 0;
 				}
 				else continue;
@@ -38,11 +38,11 @@ int main_bench()
 	x=sum/Len;
 	if(x>=n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

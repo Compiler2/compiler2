@@ -5,7 +5,7 @@
     int a[5][5],b[5],c[5],d[5],e[5];
     for(i=0;i<5;i++){
         for(j=0;j<5;j++){
-           scanf("%d",&a[i][j]);
+           my_scanf("%d",&a[i][j]);
            }
         }     
     for(i=0;i<5;i++){
@@ -35,13 +35,13 @@
            if(b[i]==d[j]&&c[i]==e[j]){
            m=b[i];
            n=c[i];
-           printf("%d %d %d",m+1,n+1,a[m][n]);
+           my_printf("%d %d %d",m+1,n+1,a[m][n]);
            x=1;
            }
            }
         }
         if(x==0){
-           printf("not found");
+           my_printf("not found");
            }    
     return 0;
 }

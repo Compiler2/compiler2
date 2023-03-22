@@ -18,12 +18,12 @@ int main_bench(){
 	
 	for(i=0;i<n;i++){
 		if(i>0)
-			printf(" ");
+			my_printf(" ");
 		if(strcmp(ss[i],a)==0)
-			printf("%s",b);
+			my_printf("%s",b);
 		else
-			printf(ss[i]);
+			my_printf(ss[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

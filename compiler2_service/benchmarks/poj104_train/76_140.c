@@ -2,10 +2,10 @@
 
 int main_bench()
 {int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int v[50000],w[50000],e,f,m,a,x,r;
 for(int i=0;i<n;i++)
- {scanf("%d %d",&(v[i]),&(w[i]));}
+ {my_scanf("%d %d",&(v[i]),&(w[i]));}
    for(int c=0;c<n-1;c++)
      {for( m=0;m<n-1-c;m++)
        {if(v[m]>v[m+1])
@@ -30,13 +30,13 @@ for(int g=0;g<n-1;g++)
          }
       }
      
-   else {printf("no");{break;}}
+   else {my_printf("no");{break;}}
 }
 
 if(r==n-2)
-{printf("%d %d",v[0],w[n-1]);}     
+{my_printf("%d %d",v[0],w[n-1]);}     
 
 
-scanf("%d",&x);
+my_scanf("%d",&x);
 return 0;
 }

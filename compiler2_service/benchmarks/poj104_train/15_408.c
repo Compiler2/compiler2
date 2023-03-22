@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int picture[1000][1000];
 	int hang[1000];
 	int i,j;
@@ -13,7 +13,7 @@ int main_bench()
 		hang[i]=0;
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&picture[i][j]);
+			my_scanf("%d",&picture[i][j]);
 			if(picture[i][j]==0)
 			{
 				hang[i]=hang[i]+1;
@@ -30,7 +30,7 @@ int main_bench()
 		}
 	}
 	number=(l-m-1)*(mg-2);
-	printf("%d",number);
+	my_printf("%d",number);
 
 	return 0;
 }

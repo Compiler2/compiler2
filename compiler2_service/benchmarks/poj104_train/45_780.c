@@ -4,7 +4,7 @@ int main_bench()
 {
 int i,j;
 char a[50],b[50];
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 for(j=0;b[j]!= '\0';j++)
 {
     i=0;
@@ -14,7 +14,7 @@ if(b[j]==a[i])
 continue;
         if(b[j++]==a[i++])
 {
-printf("%d",j-1);
+my_printf("%d",j-1);
 return 0;
             }
     }

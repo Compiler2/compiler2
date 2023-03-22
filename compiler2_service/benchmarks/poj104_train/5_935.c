@@ -6,9 +6,9 @@ int main_bench()
 	float a,b;
 	char ch1[600],ch2[600];
 	
-    scanf("%f",&a);
-	scanf("%s",ch1);
-	scanf("%s",ch2);
+    my_scanf("%f",&a);
+	my_scanf("%s",ch1);
+	my_scanf("%s",ch2);
 	m=strlen(ch1);
 	n=strlen(ch2);
 
@@ -36,12 +36,12 @@ int main_bench()
 	{
 	    b=(float)max/n;
 		if(b>a)
-			printf("yes");
+			my_printf("yes");
 	    else
-			printf("no");
+			my_printf("no");
 	}
 	else
-	    printf("error");
+	    my_printf("error");
 
 	return 0;
 }

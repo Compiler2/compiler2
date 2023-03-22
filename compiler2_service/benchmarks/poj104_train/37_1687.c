@@ -4,11 +4,11 @@ main_bench()
 {
       char c[100000];
       int m,i,j,t,b[150];
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       for(i=1;i<=m;i++)
       {
        memset(b,0,sizeof(b));
-      scanf("%s",c);
+      my_scanf("%s",c);
       j=0;
       while(c[j]!=0)
       {                   
@@ -19,11 +19,11 @@ main_bench()
       {
                    if(b[c[t]]==1)
                    {
-                   printf("%c\n",c[t]);
+                   my_printf("%c\n",c[t]);
                    break;
                    }
                    if(b[c[j-1]]!=1&&t==j-1)
-                   printf("%c%c\n",'n','o');
+                   my_printf("%c%c\n",'n','o');
                    }
                    }
 

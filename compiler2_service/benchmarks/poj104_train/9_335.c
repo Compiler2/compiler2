@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	char id[100][10];
 	int age[100];
@@ -11,8 +11,8 @@ int main_bench()
 	int oage[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",id[i]);
-		scanf("%d",&age[i]);
+		my_scanf("%s",id[i]);
+		my_scanf("%d",&age[i]);
 	}
          int k=0;
 	for(i=0;i<n;i++)
@@ -42,11 +42,11 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 	{
-		printf("%s\n",oid[i]);
+		my_printf("%s\n",oid[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		if(age[i]<60)printf("%s\n",id[i]);
+		if(age[i]<60)my_printf("%s\n",id[i]);
 	}
 	return 0;
 }

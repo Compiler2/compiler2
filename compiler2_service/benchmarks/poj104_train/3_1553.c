@@ -6,9 +6,9 @@ int main_bench()
 	int a[1000];
 	int i,j,e;
 	int s=0,q=0;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=n-1;j>0;j--){
 		for(i=0;i<j;i++){
@@ -19,10 +19,10 @@ int main_bench()
 		}
 	}
 	if(s==0){
-		printf("no");
+		my_printf("no");
 	}
 	else{
-		printf("yes");
+		my_printf("yes");
 	}
 	return 0;
 }

@@ -5,14 +5,14 @@ int main_bench()
 	int  i, flag=0, deadend=0;
 	double x;
 	char a[501], b[501];
-	scanf("%lf\n", &x);
-	scanf("%s\n", &a);
-	scanf("%s\n", &b);
+	my_scanf("%lf\n", &x);
+	my_scanf("%s\n", &a);
+	my_scanf("%s\n", &b);
 	for(i=0;i<strlen(a);i++)
 	{
 		if((a[i]!='A')&&(a[i]!='T')&&(a[i]!='G')&&(a[i]!='C'))
 		{
-			printf("error");
+			my_printf("error");
 			deadend=1;
 			break;
 		}
@@ -25,11 +25,11 @@ int main_bench()
 				flag++;
 		}
 		if((100*flag/(strlen(a)))<(100*x))
-			printf("no");
+			my_printf("no");
 		else
-			printf("yes");
+			my_printf("yes");
 	}
 	else if((strlen(a)!=strlen(b))&&(deadend==0))
-		printf("error");
+		my_printf("error");
 	return 0;
 }

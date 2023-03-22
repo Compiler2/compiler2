@@ -5,10 +5,10 @@ int main_bench()
 	int num[3],sum[3];
 	int i,j,k,t,n,m;
 	num[0]=num[1]=num[2]=sum[0]=sum[1]=sum[2]=-10000000;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++)
 	{
-		scanf("%d%d%d",&i,&j,&k);
+		my_scanf("%d%d%d",&i,&j,&k);
 		j+=k;
 		if(sum[2]<j)
 		{
@@ -35,6 +35,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<3;i++)
-		printf("%d %d\n",num[i],sum[i]);
+		my_printf("%d %d\n",num[i],sum[i]);
 	return 0;
 }

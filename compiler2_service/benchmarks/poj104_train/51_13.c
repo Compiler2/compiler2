@@ -4,7 +4,7 @@ main_bench()
 {
 	char c[501]={'\0'},ch[501][6]={{'\0'}};
 	int a[500]={0},i,j,n,len,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(c);
 	len=strlen(c);
@@ -41,7 +41,7 @@ main_bench()
 	}
 	if(max!=0)
 	{
-		printf("%d\n",max+1);
+		my_printf("%d\n",max+1);
     	for(i=0;i<len+1-n;i++)
 		{
 	    	if(a[i]==max)
@@ -49,6 +49,6 @@ main_bench()
 		}
 	}
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }

@@ -6,7 +6,7 @@ char c[30];
 int i;
 
 		for(i=0;i<30;i++)
-		{scanf("%c",&c[i]);
+		{my_scanf("%c",&c[i]);
 		switch(c[i])
 		{
 		case '1':
@@ -19,7 +19,7 @@ int i;
 		case '8':
          case '9':
 	     case '0':
-				printf("%c",c[i]);break;
+				my_printf("%c",c[i]);break;
 				default :
 					{switch(c[i-1])
 			       {
@@ -33,7 +33,7 @@ int i;
 				case '8':
 		          case '9':
 			     case '0':
-				printf("\n");break;
+				my_printf("\n");break;
 				   }
 					}
 			}}

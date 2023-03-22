@@ -14,5 +14,5 @@ main_bench()
       }
       }
       for(i=0;i<a;i++)
-      printf("%c",q[i]);
+      my_printf("%c",q[i]);
       }

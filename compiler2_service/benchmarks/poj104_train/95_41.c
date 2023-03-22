@@ -23,11 +23,11 @@ int main_bench()
         }
         if (s1[i] != s2[i]) 
         {
-            printf((s1[i] > s2[i]) ? ">" : "<");
+            my_printf((s1[i] > s2[i]) ? ">" : "<");
             return 0;
         }
     }
 
-    printf("=");
+    my_printf("=");
     return 0;
 }

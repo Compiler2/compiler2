@@ -19,10 +19,10 @@ int main_bench()
 			n=0;
 		}
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	if(num>1){
 		for(j=1;j<=num;j++){
-			printf(",%d",a[j]);
+			my_printf(",%d",a[j]);
 		}
 	}
 	return 0;

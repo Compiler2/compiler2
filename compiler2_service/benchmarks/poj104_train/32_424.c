@@ -14,18 +14,18 @@ main_bench()
       char b[100];
       char c[100];
       
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
       for(j=0;j<n;j++)
       
-    { scanf("%s",test1);
+    { my_scanf("%s",test1);
       x=strlen(test1);
       for(i=0;i<x;i++)
       a[i]=test1[x-i-1];
       for(i=x;i<100;i++)
       a[i]='0';
            
-      scanf("%s",test2);
+      my_scanf("%s",test2);
       y=strlen(test2);
       for(i=0;i<y;i++)
       b[i]=test2[y-i-1];
@@ -45,7 +45,7 @@ main_bench()
       
       
       for(i=x-1;i>=0;i--)
-      printf("%c",c[i]);
-      printf("\n");
+      my_printf("%c",c[i]);
+      my_printf("\n");
     } 
 }

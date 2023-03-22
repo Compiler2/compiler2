@@ -8,10 +8,10 @@ int main_bench(){
 	a[1]=3;
 	b[0]=1;
 	b[1]=2;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 	for(j=0;j<=m-1;j++){	
 		s=0;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
 	   if(n>=3){
 	    for(i=0;i<=n-3;i++){
 	     a[i+2]=a[i]+a[i+1];
@@ -28,7 +28,7 @@ int main_bench(){
 	   }
 	
 	for(k=0;k<m;k++){
-		printf("%.3lf\n",sz[k]);
+		my_printf("%.3lf\n",sz[k]);
 	}
 
 	return 0;

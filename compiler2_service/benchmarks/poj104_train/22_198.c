@@ -6,7 +6,7 @@ main_bench()
 	char c;
 	while (1)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if (num==0)
 		{
 			a[l]=c-'0';
@@ -28,7 +28,7 @@ main_bench()
 			sma=a[i];
 			flag=1;
 		}
-	if (flag==0) printf("No\n");
-	else printf("%d\n",sma);
+	if (flag==0) my_printf("No\n");
+	else my_printf("%d\n",sma);
 	return 0;
 }

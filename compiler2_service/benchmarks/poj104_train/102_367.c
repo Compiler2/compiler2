@@ -17,34 +17,34 @@ int Compare2(const void*elem1,const void*elem2)
 main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i,p,q;
 p=q=0;
 float m[n],f[n];
 for(i=0;i<n;i++)
 {
 char sex[7];
-scanf("%s",sex);
+my_scanf("%s",sex);
 if(sex[0]=='m')
 {
-scanf("%f",&m[p]);
+my_scanf("%f",&m[p]);
 p++;
 }
 if(sex[0]=='f')
 {
-scanf("%f",&f[q]);
+my_scanf("%f",&f[q]);
 q++;
 }
 }
 qsort(m,p,sizeof(float),Compare1);
 for(i=0;i<p;i++)
-printf("%.2f ",m[i]);
+my_printf("%.2f ",m[i]);
 qsort(f,q,sizeof(float),Compare2);
 for(i=0;i<q;i++)
 {
     if(i==q-1)
-printf("%.2f",f[i]);
+my_printf("%.2f",f[i]);
 else
-printf("%.2f ",f[i]);
+my_printf("%.2f ",f[i]);
 }
 }

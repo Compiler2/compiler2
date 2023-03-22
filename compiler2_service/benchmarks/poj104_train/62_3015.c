@@ -14,6 +14,6 @@ for(i=0;i<l-1;i++){
 	    m--;
 	}
 }
-for(i=0;i<m;i++){printf("%c",s[i]);}
+for(i=0;i<m;i++){my_printf("%c",s[i]);}
 return 0;
 }

@@ -10,34 +10,34 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=0; i<n; i++) {
         int m;
-        scanf("%d",&m);
+        my_scanf("%d",&m);
       
         if (m==0) {
-            printf("60\n");
+            my_printf("60\n");
             continue;
         }
         int num[100]={0};
         for (int j=1; j<=m; j++) {
-            scanf("%d",&num[j]);
+            my_scanf("%d",&num[j]);
             
         }
        
             if (num[m]+3*m<=60) {
-                printf("%d\n",(60-3*m));
+                my_printf("%d\n",(60-3*m));
                 
             }else{
                 int c=1;
                 for (int k=m; k>1; k--) {
                     if (num[k]+3*(k-1)<=60&&num[k]+3*k>60) {
-                        printf("%d\n",num[k]);
+                        my_printf("%d\n",num[k]);
                         c=0;
                         break;
                         
                     }else if(num[k-1]+3*(k-1)<60&&num[k]+3*(k-1)>60){
-                        printf("%d\n",(60-3*(k-1)));
+                        my_printf("%d\n",(60-3*(k-1)));
                         c=0;
                         break;
                         

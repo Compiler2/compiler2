@@ -58,8 +58,8 @@ int main_bench()
 	int i;
 	int sum=0;
 	int temp;
-	scanf("%d%d%d",&startYear,&startMonth,&startDay);
-	scanf("%d%d%d",&endYear,&endMonth,&endDay);
+	my_scanf("%d%d%d",&startYear,&startMonth,&startDay);
+	my_scanf("%d%d%d",&endYear,&endMonth,&endDay);
 	if(startYear==endYear)
 	{
 		if(runnian(startYear))
@@ -108,6 +108,6 @@ int main_bench()
 			sum=sum+count2(startMonth,startDay,endMonth,endDay);
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

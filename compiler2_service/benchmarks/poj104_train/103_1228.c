@@ -29,7 +29,7 @@ b[0]=s[0];
 a[0]=1;
 j=0;
 if(len==1)
-printf("(%c,%d)",b[0],a[0]);
+my_printf("(%c,%d)",b[0],a[0]);
 else
  {       
  for(i=1,j=0;i<len;i++)    
@@ -48,6 +48,6 @@ else
     }
      
  for(i=0;i<=j;i++)
- printf("(%c,%d)",b[i],a[i]);    
+ my_printf("(%c,%d)",b[i],a[i]);    
  }
 }

@@ -31,7 +31,7 @@ int main_bench()
 	{
 		strcat(STR,str3[i]);
 	}
-	printf("%s",STR);
+	my_printf("%s",STR);
 }
 		
 

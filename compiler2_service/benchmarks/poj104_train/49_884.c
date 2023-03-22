@@ -6,7 +6,7 @@
  int m,i,q,k,p,n;
  for (i=0;i<500;i++)
  {
-	 scanf("%c",&a[i]);
+	 my_scanf("%c",&a[i]);
 	 if (a[i]=='\n')
 		 break;
  }
@@ -23,9 +23,9 @@
 		 if(p==0)
 		 { for (k=i;k<i+m;k++)
 			 {
-				 printf("%c",a[k]);
+				 my_printf("%c",a[k]);
 			 }
-		 printf("\n");
+		 my_printf("\n");
 		 }
 		 p=0;
 	 }

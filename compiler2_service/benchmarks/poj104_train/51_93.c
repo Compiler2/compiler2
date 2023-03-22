@@ -7,8 +7,8 @@ int main_bench()
 {
 	int max,mark[700],n,i,len,k,j,num[700];
 	char sz[700],gram[700][10];
-	scanf("%d",&n);
-	scanf("%s",sz);
+	my_scanf("%d",&n);
+	my_scanf("%s",sz);
 	len=strlen(sz);
 	for(i=0;i<len;i++){
 		num[i]=1;
@@ -36,11 +36,11 @@ int main_bench()
 			mark[k]=i;
 		}
 	}
-	if(k==-1)printf("NO\n");
+	if(k==-1)my_printf("NO\n");
 	else{
 		for(i=0;i<=k;i++){
-			if(i==0)printf("%d\n%s\n",num[mark[0]],gram[mark[0]]);
-			else printf("%s\n",gram[mark[i]]);
+			if(i==0)my_printf("%d\n%s\n",num[mark[0]],gram[mark[0]]);
+			else my_printf("%s\n",gram[mark[i]]);
 		}
 	}
 	return 0;

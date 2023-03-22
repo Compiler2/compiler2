@@ -29,10 +29,10 @@ int main_bench()
     while(c[t-1]==0)
     t--;
     if(t==-1)
-    printf("0");
+    my_printf("0");
     else 
     for(i=t-1;i>=0;i--)
-    printf("%d",c[i]);
-    printf("\n");
+    my_printf("%d",c[i]);
+    my_printf("\n");
     return 0;
 }    

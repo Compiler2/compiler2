@@ -6,7 +6,7 @@ int main_bench()
 	int i;
 	double j=0,r=0,s=0;
 	double n;
-	scanf("%lf%s%s",&n,f,t);
+	my_scanf("%lf%s%s",&n,f,t);
 	for(i=0;f[i]!='\0';i++)
 	{
 		j++;
@@ -17,19 +17,19 @@ int main_bench()
 	}
 	if(j!=r)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
     for(i=0;f[i]!='\0';i++)
 	{
 		if(f[i]!='A'&&f[i]!='T'&&f[i]!='C'&&f[i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	    if(t[i]!='A'&&t[i]!='T'&&t[i]!='C'&&t[i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 	        return 0;
 		}
 	}
@@ -40,11 +40,11 @@ int main_bench()
 	}
 	if(s/j>n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	if(s/j<=n)
 	{
-		printf("no");
+		my_printf("no");
 	}
 
 	return 0;

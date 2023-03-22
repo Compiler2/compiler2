@@ -26,5 +26,5 @@ int main_bench()
 		if(strlen(str[j])>strlen(str[m]))m=j;
         if(strlen(str[j])<strlen(str[n]))n=j;
 	}
-	printf("%s\n%s\n",str[m],str[n]);
+	my_printf("%s\n%s\n",str[m],str[n]);
 }

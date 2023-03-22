@@ -5,8 +5,8 @@ int main_bench()
 	int y1,m1,d1,y2,m2,d2;
 	int i;
 	int x=0;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	i=y1;
 	for(i=y1;i<y2;i++){
 		if(((i%4==0)&&(i%100!=0))||(i%400==0))
@@ -47,6 +47,6 @@ int main_bench()
 		x=x-1;
     if((((y2%4==0)&&(y2%100!=0))||(y2%400==0))&&m2>2)
 		x=x+1;
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 	return 0;
 }

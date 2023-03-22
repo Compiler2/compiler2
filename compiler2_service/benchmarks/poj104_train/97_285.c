@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n;
-	scanf("%d",&n);
-	printf("%d\n",n/100);
-	printf("%d\n",(n%100)/50);
-    printf("%d\n",((n%100)%50)/20);
-	printf("%d\n",(((n%100)%50)%20)/10);
-	printf("%d\n",((((n%100)%50)%20)%10)/5);
-	printf("%d\n",(((((n%100)%50)%20)%10)%5)/1);
+	my_scanf("%d",&n);
+	my_printf("%d\n",n/100);
+	my_printf("%d\n",(n%100)/50);
+    my_printf("%d\n",((n%100)%50)/20);
+	my_printf("%d\n",(((n%100)%50)%20)/10);
+	my_printf("%d\n",((((n%100)%50)%20)%10)/5);
+	my_printf("%d\n",(((((n%100)%50)%20)%10)%5)/1);
 	return 0;
 }

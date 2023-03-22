@@ -3,7 +3,7 @@
 int main_bench()
 {
     char s[50],w[50];
-    scanf("%s%s",s,w);
+    my_scanf("%s%s",s,w);
     int same,i,k;
     for(i=0;w[i]!='\0';i++)
     { int result=1;
@@ -16,7 +16,7 @@ int main_bench()
          result=result*same;
       }
       if(result==1)
-      {printf("%d",i);
+      {my_printf("%d",i);
       break;}
     }
  

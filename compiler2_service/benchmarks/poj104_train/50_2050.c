@@ -5,7 +5,7 @@ int main_bench()
 
 	int n,i;
 	int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<7;i++)
 	{
 	  if((n+i)%7==5)
@@ -22,7 +22,7 @@ int main_bench()
 	  
 	  if(e%7==n)
 	  {
-	    printf("%d\n",i+1);
+	    my_printf("%d\n",i+1);
 	  }
 	}
 

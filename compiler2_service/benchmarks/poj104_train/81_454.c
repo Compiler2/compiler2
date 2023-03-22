@@ -8,8 +8,8 @@ int i,j,k,m,n,t;
 int a[5][5];
 for(i=0;i<5;i++)
    for(j=0;j<5;j++)
-	   scanf("%d",&a[i][j]);
-scanf("%d %d",&n,&m);
+	   my_scanf("%d",&a[i][j]);
+my_scanf("%d %d",&n,&m);
 if(check(a,n)==1&&check(a,m)==1)
 { for(i=0;i<5;i++)
   {
@@ -19,13 +19,13 @@ if(check(a,n)==1&&check(a,m)==1)
   }
 for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-	 { printf("%d",a[i][j]);
+	 { my_printf("%d",a[i][j]);
      if(j<4)
-		 printf(" ");}
-printf("\n");}
+		 my_printf(" ");}
+my_printf("\n");}
 }
 else
-printf("error");
+my_printf("error");
 }
 
 check(int b[5][5],int k)

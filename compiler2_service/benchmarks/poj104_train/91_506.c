@@ -17,7 +17,7 @@ int main_bench(){
 		}
 
 	}
-	printf("%s",ss);
+	my_printf("%s",ss);
 
 
 

@@ -3,10 +3,10 @@
 main_bench()
 {
     int m,n;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(int i=0;i<m;i++)
     {
-        scanf("%d",&n);
+        my_scanf("%d",&n);
         float sum=0;
         float x,y,t;
         x=2;
@@ -23,7 +23,7 @@ main_bench()
                 y=t;
             }
         }
-        printf("%.3f\n",sum);
+        my_printf("%.3f\n",sum);
         sum=0;
     }
 }

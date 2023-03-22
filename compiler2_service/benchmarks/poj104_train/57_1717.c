@@ -4,9 +4,9 @@ int main_bench()
 {
 	char zfc[100][50],gaiguo[100][50];
 	int n,l[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 		l[i]=strlen(zfc[i]);
 		if(zfc[i][l[i]-3]=='i' && zfc[i][l[i]-2]=='n' && zfc[i][l[i]-1]=='g'){
 			strncpy(gaiguo[i],zfc[i],l[i]-3);
@@ -20,7 +20,7 @@ int main_bench()
 		}
 	}
 	for(int j=0;j<n;j++){
-		printf("%s\n",gaiguo[j]);
+		my_printf("%s\n",gaiguo[j]);
 	}
     return 0;
 } 

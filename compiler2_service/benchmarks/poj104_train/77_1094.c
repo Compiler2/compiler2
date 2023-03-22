@@ -31,7 +31,7 @@ main_bench()
 	    	}
 	    	if(flag)break;
 	    }
-		printf("%d %d\n",e,f);
+		my_printf("%d %d\n",e,f);
 	}
 }
 

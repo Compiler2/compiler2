@@ -15,10 +15,10 @@ main_bench()
     }
     else if(a[i]==' '&&a[i-1]!=' ')
     {
-      printf("%d,",sum); 
+      my_printf("%d,",sum); 
       sum=0;
     }
     else continue;
   }
-  printf("%d",sum);
+  my_printf("%d",sum);
 }

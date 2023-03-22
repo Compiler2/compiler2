@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,x[1000],count=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(f(i)*g(i)==1)
@@ -11,13 +11,13 @@ int main_bench()
 		x[count]=i;
 		}		
 	}
-	if(count==0) printf("no");
-	if(count==1) printf("%d",x[1]);
+	if(count==0) my_printf("no");
+	if(count==1) my_printf("%d",x[1]);
 	if(count>=2)
 	{
 		for(i=1;i<count;i++)
-			printf("%d,",x[i]);
-		printf("%d",x[count]);
+			my_printf("%d,",x[i]);
+		my_printf("%d",x[count]);
 	}
 }
 

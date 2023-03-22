@@ -7,9 +7,9 @@ int main_bench()
 	struct  qujian{
 		int x, y;
 	} a[50000];
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	for (i = 0; i < n; i++){
-		scanf("%d %d\n", &a[i].x, &a[i].y);
+		my_scanf("%d %d\n", &a[i].x, &a[i].y);
 	}
 	for (i = 0; i<n; i++){
 		if (min>a[i].x){
@@ -30,12 +30,12 @@ int main_bench()
 	}
 	for (i = min; i <= max; i++){
 		if (sz[i] == 0){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 		else if (i == max){
 
-				printf("%d %d", min, max);
+				my_printf("%d %d", min, max);
 		 }
                   }
 

@@ -5,23 +5,23 @@ int main_bench()
     void f(int array[],int k);
     void g(int c[],int d[],int o,int p);
     int n,m,a[200],b[100],i,j,e[200],z;
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for(i=0;i<=n-1;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(j=0;j<=m-1;j++)
     {
-        scanf("%d",&b[j]);
+        my_scanf("%d",&b[j]);
     }
     f(a,n);
     f(b,m);
     g(a,b,n,m);
     for(z=0;z<n+m-1;z++)
     {
-        printf("%d ",a[z]);
+        my_printf("%d ",a[z]);
     }
-    printf("%d",a[n+m-1]);
+    my_printf("%d",a[n+m-1]);
 }
 void f(int array[],int k)
 {

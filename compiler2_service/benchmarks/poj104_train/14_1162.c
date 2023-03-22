@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     struct student{
            int id;
            int yu,shu;
@@ -13,7 +13,7 @@ int main_bench()
     int x1=0,x2=0,x3=0;
     for(i=0;i<n;i++)
     {
-     scanf("%d %d %d\n",&stu[i].id,&stu[i].yu,&stu[i].shu);
+     my_scanf("%d %d %d\n",&stu[i].id,&stu[i].yu,&stu[i].shu);
     } 
     int s,x;
      for(i=0;i<n;i++)
@@ -31,8 +31,8 @@ int main_bench()
       else if(s<s2&&s>s3)
       {s3=s;x3=x;}          
      }
-      printf("%d %d\n",x1,s1);
-      printf("%d %d\n",x2,s2);
-      printf("%d %d\n",x3,s3);   
+      my_printf("%d %d\n",x1,s1);
+      my_printf("%d %d\n",x2,s2);
+      my_printf("%d %d\n",x3,s3);   
 return 0;
 }

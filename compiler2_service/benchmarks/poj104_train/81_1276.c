@@ -4,14 +4,14 @@ int main_bench(){
 	int sz[5][5],a,b,m,n,i,zs[5];
 	for(a=0;a<5;a++){
 		for(b=0;b<5;b++){
-			scanf("%d ",&sz[a][b]);
+			my_scanf("%d ",&sz[a][b]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	if(0<=m&&m<=4&&0<=n&&n<5){
 		i=0;
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	if(i==0){
 		for(a=0;a<5;a++){
@@ -21,12 +21,12 @@ int main_bench(){
 		}for(a=0;a<5;a++){
 		for(b=0;b<5;b++){
 			if(b==0){
-				printf("%d",sz[a][b]);
+				my_printf("%d",sz[a][b]);
 			}else{
-				printf(" %d",sz[a][b]);
+				my_printf(" %d",sz[a][b]);
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 	}

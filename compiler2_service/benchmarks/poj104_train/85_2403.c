@@ -3,7 +3,7 @@
 int main_bench(){
     int n,i,j;
     char sz[21];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		gets(sz);
 		if((sz[0]=='_')||(sz[0]>='a'&&sz[0]<='z')||(sz[0]>='A'&&sz[0]<='Z')){
@@ -11,14 +11,14 @@ int main_bench(){
 				j=j;
 			}
 			if(sz[j]=='\0'){
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 			else{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 		else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

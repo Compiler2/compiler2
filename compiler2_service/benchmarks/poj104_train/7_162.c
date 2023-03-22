@@ -3,9 +3,9 @@
 int main_bench()
 {
 	char string1[256],string2[256],string3[256];
-	scanf("%s",string1);
-	scanf("%s",string2);
-	scanf("%s",string3);
+	my_scanf("%s",string1);
+	my_scanf("%s",string2);
+	my_scanf("%s",string3);
 	int length1,length2,length3,i,j,temp;
 	length1=strlen(string1);
 	length2=strlen(string2);
@@ -29,5 +29,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",string1);
+	my_printf("%s\n",string1);
 }

@@ -22,9 +22,9 @@ int main_bench()
 	{
 		if(num[i]!=0)
 		{
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 			if(i!=b)
-			printf(",");
+			my_printf(",");
 		}
 	}
 

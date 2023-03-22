@@ -38,22 +38,22 @@ int main_bench(){
 	{
 		for(i=0;i<D;i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 		for(i=0;b[i]!='\0';i++)
 		{
-			printf("%c",b[i]);
+			my_printf("%c",b[i]);
 		}
 		for(i=D+len;s[i]!='\0';i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	else
 		for(i=0;s[i]!='\0';i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

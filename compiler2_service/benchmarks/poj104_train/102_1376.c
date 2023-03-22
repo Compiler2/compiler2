@@ -3,13 +3,13 @@
 main_bench()
 {
       int n,i=0,j=0,h=0,p,q,m;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char string[]="male";
       char sex[n][6];
       float height[n],male[n],female[n];
       float change;
       while(i<n){
-                 scanf("%s %f",&sex[i],&height[i]);
+                 my_scanf("%s %f",&sex[i],&height[i]);
                  i++;
                  }
       for(i=0;i<n;i++){
@@ -45,9 +45,9 @@ main_bench()
                                    }
                        }
       for(p=0;p<j;p++){
-                       printf("%.2f ",male[p]);
+                       my_printf("%.2f ",male[p]);
                        }
       for(p=h-1;p>0;p--){
-                         printf("%.2f ",female[p]);
+                         my_printf("%.2f ",female[p]);
                          }
-      printf("%.2f",female[0]);}
+      my_printf("%.2f",female[0]);}

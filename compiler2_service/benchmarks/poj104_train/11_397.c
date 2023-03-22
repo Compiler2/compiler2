@@ -3,7 +3,7 @@
     int main_bench()
 {
 	int a,b,c,d;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	if(a%400==0)
 	{
 		if(b==1)
@@ -30,7 +30,7 @@
 			d=305+c;
            if(b==12)
 			d=335+c;
-		   printf("%d",d);
+		   my_printf("%d",d);
 	} 
 	else
 	{
@@ -60,7 +60,7 @@
 			d=305+c;
            if(b==12)
 			d=335+c;
-         printf("%d",d);
+         my_printf("%d",d);
 	} 
 	else
 	{
@@ -88,7 +88,7 @@
 			d=304+c;
            if(b==12)
 			d=334+c;
-        printf("%d",d);
+        my_printf("%d",d);
 	} 
 	}
 	return 0;

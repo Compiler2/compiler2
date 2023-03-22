@@ -34,9 +34,9 @@ int main_bench()
 
 	for(i=0; i<k; i++){
 		if(i<k-1)
-			printf("%s ", all[i].str);
+			my_printf("%s ", all[i].str);
 		else
-			printf("%s", all[i].str);
+			my_printf("%s", all[i].str);
 	}
 	
 	return 0;

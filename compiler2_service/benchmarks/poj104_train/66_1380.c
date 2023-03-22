@@ -2,7 +2,7 @@
 
 int main_bench(){
  int nian,yue,ri,i,j=0;
- scanf("%d%d%d",&nian,&yue,&ri);
+ my_scanf("%d%d%d",&nian,&yue,&ri);
 nian=nian%2800;
  for(i=1;i<nian;i++){
   if(i%400==0||i%100!=0&&i%4==0){
@@ -29,24 +29,24 @@ nian=nian%2800;
  j+=ri;
  j%=7;
  if(j==0){
-  printf("Sun.");
+  my_printf("Sun.");
  }else{
   if(j==1){
-   printf("Mon.");
+   my_printf("Mon.");
   }else{
    if(j==2){
-    printf("Tue.");
+    my_printf("Tue.");
    }else{
     if(j==3){
-     printf("Wen.");
+     my_printf("Wen.");
     }else{
      if(j==4){
-      printf("Thu.");
+      my_printf("Thu.");
      }else{
       if(j==5){
-       printf("Fri.");
+       my_printf("Fri.");
       }else{
-       printf("Sat.");
+       my_printf("Sat.");
       }
      }
     }

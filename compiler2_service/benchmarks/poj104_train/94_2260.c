@@ -2,11 +2,11 @@
 
 int main_bench(){
     int N=0;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int i=0;
     int zhengzhengshu[501]={0};
     for(i=0;i<N;i++){
-        scanf("%d",&zhengzhengshu[i]);
+        my_scanf("%d",&zhengzhengshu[i]);
     }
     int jishu[500]={0};
     int j=0,p=0;
@@ -28,10 +28,10 @@ int main_bench(){
         }
     }
     for(int b=0;b<p-1;b++){
-        printf("%d,",jishu[b]);
+        my_printf("%d,",jishu[b]);
     }
     int b=p-1;
-    printf("%d",jishu[b]);
+    my_printf("%d",jishu[b]);
     return 0;
 }
 

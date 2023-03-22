@@ -21,18 +21,18 @@ int main_bench()
 	int array[5][5],n,m,row,col;
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++)
-			scanf("%d",&array[row][col]);
+			my_scanf("%d",&array[row][col]);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(0 == SwapRow(array,n,m))
-		printf("error");
+		my_printf("error");
 	else{
 		for(row=0;row<5;row++){
 			for(col=0;col<5;col++){
 				if(col==4)
-					printf("%d\n", array[row][col]);
+					my_printf("%d\n", array[row][col]);
 				else
-					printf("%d ", array [row][col]);
+					my_printf("%d ", array [row][col]);
 			}
 		}
 	}

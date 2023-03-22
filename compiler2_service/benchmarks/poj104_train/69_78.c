@@ -86,9 +86,9 @@ void minus(char a[],char b[],char difference[])
 main_bench()
 {
       char a[1001],b[1001],sum[1001];
-      scanf("%s %s",a,b);
+      my_scanf("%s %s",a,b);
       if(a[0]=='0'&&a[1]==0&&b[0]=='0'&&b[1]==0)
-      printf("0");
+      my_printf("0");
       else
       {
           plus(a,b,sum);

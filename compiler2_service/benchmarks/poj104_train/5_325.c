@@ -2,11 +2,11 @@
 
 int main_bench(){
 double r;
-scanf("%lf",&r);
+my_scanf("%lf",&r);
 char zfc[500];
 char jiyin[500];
-scanf("%s",zfc);
-scanf("%s",jiyin);
+my_scanf("%s",zfc);
+my_scanf("%s",jiyin);
 int n=0;
 int i,k,L,N;
 for (i=0;zfc[i]!='\0';i++){
@@ -22,17 +22,17 @@ N=k;
 }
 N++;
 if(L!=N){
-printf("error");
+my_printf("error");
 }else {
 for(i=0;zfc[i]!='\0';i++){
 if(zfc[i]!='A'&&zfc[i]!='T'&&zfc[i]!='C'&&zfc[i]!='G'){
-printf("error");
+my_printf("error");
 return 0;
 }
 }
 for(i=0;jiyin[i]!='\0';i++){
 if(jiyin[i]!='A'&&jiyin[i]!='T'&&jiyin[i]!='C'&&jiyin[i]!='G'){
-printf("error");
+my_printf("error");
 return 0;
 }
 }
@@ -45,10 +45,10 @@ n++;
 }
 if (n*1.0/L>r)
 {
-          printf("yes");
+          my_printf("yes");
            }else 
 {
-           printf("no");
+           my_printf("no");
            }
 
 

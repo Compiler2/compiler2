@@ -30,9 +30,9 @@ int main_bench()
             j=0;
         }
     for(i=0;i<max;i++)
-        printf("%c",a[i]);
-    printf("\n");
+        my_printf("%c",a[i]);
+    my_printf("\n");
     for(i=0;i<min;i++)
-        printf("%c",b[i]);
+        my_printf("%c",b[i]);
     return 0;
 }

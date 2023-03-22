@@ -2,7 +2,7 @@
 
 int main_bench(){
     int array[1000],i,j,add=0,head,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     array[0]=1;
     head=1;
     for (i=0;i<n;i++)
@@ -25,6 +25,6 @@ int main_bench(){
         }}
     }
     for (i=head-1;i>=0;i--)
-        printf("%d",array[i]);
+        my_printf("%d",array[i]);
     return 0;
 }

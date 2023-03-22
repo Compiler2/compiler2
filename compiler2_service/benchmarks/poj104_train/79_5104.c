@@ -5,7 +5,7 @@ int main_bench()
    n=1;
    for (;n!=0;)
    {
-   scanf("%d %d",&n,&m);
+   my_scanf("%d %d",&n,&m);
    if (n!=0){
    for (i=1;i<=n;i++) a[i]=i;
    k=m;
@@ -27,7 +27,7 @@ int main_bench()
  
      }
 
-   printf("%d\n",a[1]);
+   my_printf("%d\n",a[1]);
 
 }}    
  

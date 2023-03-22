@@ -5,10 +5,10 @@ int main_bench()
 	char a[50],b[50]; 
 	int i=0,j,p; 
 	int flag=1; 
-	scanf("%s",b); 
-	printf(" ");
-	scanf("%s",a);
-	printf("\n"); 
+	my_scanf("%s",b); 
+	my_printf(" ");
+	my_scanf("%s",a);
+	my_printf("\n"); 
 	while(a[i] && flag) 
 	{ 
 		p=i; 
@@ -23,7 +23,7 @@ int main_bench()
 
 		} 
 		if(!flag) 
-		printf("%d\n",p); 
+		my_printf("%d\n",p); 
 
 		return 0;
 } 

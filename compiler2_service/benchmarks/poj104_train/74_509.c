@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int flag,e,m,n,i,j,a[100],s,k,count=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(k=m;k<=n;k++)
 	{
 		i=k;
@@ -32,14 +32,14 @@ int main_bench()
 	}
 		if(count==0)
 		{
-			printf("no");
+			my_printf("no");
 		}
 		if(count!=0)
 		{
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 			for(i=1;i<count;i++)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			}
 		}
 }

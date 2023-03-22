@@ -4,15 +4,15 @@
 int main_bench()
 {
     int n, i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 0; i < n; i++)
 	{
 		int j, t = 0, sum = 0, m, a = 0, b, flag = 1;
-		scanf("%d", &m);
+		my_scanf("%d", &m);
 		for (j = 0; j < m; j++)
 		{
 			b = a;
-			scanf("%d", &a);
+			my_scanf("%d", &a);
 			if (flag == 0)
 				continue;
 			t += a - b;
@@ -30,7 +30,7 @@ int main_bench()
 		}
 		if (t < 60 && flag == 1)
 			sum += 60 - t;
-		printf("%d\n", sum);
+		my_printf("%d\n", sum);
 	}
 	return 0;
 }

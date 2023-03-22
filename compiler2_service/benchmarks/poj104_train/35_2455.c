@@ -4,10 +4,10 @@ int main_bench()
 {
     int m,n,i,k,a,b,j,Y[1000],X;
     int sz[10][10];
-    scanf("%d,%d",&m,&n);
+    my_scanf("%d,%d",&m,&n);
     for(i=0;i<m;i++){
         for(k=0;k<n;k++){
-            scanf("%d",&sz[i][k]);
+            my_scanf("%d",&sz[i][k]);
         }
     }
     X=0;
@@ -26,10 +26,10 @@ int main_bench()
             }
         }
         if(Y[i]==1){
-            printf("%d+%d",a,b);
+            my_printf("%d+%d",a,b);
             X=1;
         }
     }
-    if(X==0){printf("No");}
+    if(X==0){my_printf("No");}
     return 0;
 }

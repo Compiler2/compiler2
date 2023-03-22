@@ -15,13 +15,13 @@ int main_bench(){
 	int hang,lie;
 	for(hang=0;hang<5;hang++){
 		for(lie=0;lie<5;lie++){
-			scanf("%d",&sz[hang][lie]);
+			my_scanf("%d",&sz[hang][lie]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int result=hanshu(m,n);
 	if(result==0){
-		printf("error");
+		my_printf("error");
 	}
 	else{
 		for(lie=0;lie<5;lie++){
@@ -30,7 +30,7 @@ int main_bench(){
 			sz[n][lie]=sz2[lie];
 		}
 		for(hang=0;hang<5;hang++){
-			printf("%d %d %d %d %d\n",sz[hang][0],sz[hang][1],sz[hang][2],sz[hang][3],sz[hang][4]);
+			my_printf("%d %d %d %d %d\n",sz[hang][0],sz[hang][1],sz[hang][2],sz[hang][3],sz[hang][4]);
 		}
 	}
 	return 0;

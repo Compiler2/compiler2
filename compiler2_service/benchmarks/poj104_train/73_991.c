@@ -8,7 +8,7 @@ main_bench()
       {
           for(j=0;j<=4;j++)
           {
-              scanf("%d",&a[i][j]);
+              my_scanf("%d",&a[i][j]);
           }
       }
       y=0;
@@ -35,12 +35,12 @@ main_bench()
           }
           if (m==0)
           {
-              printf ("%d %d %d\n",k+1,f+1,a[k][f]);
+              my_printf ("%d %d %d\n",k+1,f+1,a[k][f]);
               y=1;
               break;
           }
       }
       if (y==0)
-      printf ("not found\n");
+      my_printf ("not found\n");
 }
     

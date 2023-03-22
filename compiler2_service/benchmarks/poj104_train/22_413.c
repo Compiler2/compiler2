@@ -6,14 +6,14 @@ int main_bench()
 	char b[30000];
 	for(i=0;i<30000;i++)
 	{
-		scanf("%d%c",&a[i],&b[i]);
+		my_scanf("%d%c",&a[i],&b[i]);
 		if(b[i]==',')
 			continue;
 		else
 			break;
 	}
 	if(i==0)
-		printf("No");
+		my_printf("No");
 	else 
 	{
 		for(j=1;j<=i;j++)
@@ -22,7 +22,7 @@ int main_bench()
 				l++;
 		}
 		if(l==i)
-			printf("No");
+			my_printf("No");
 		else
 		{
 			for(j=1;j<=i;j++)
@@ -43,7 +43,7 @@ int main_bench()
 			  
 			  if(a[m-1]>a[m])
 			  {
-				  printf("%d",a[m]);
+				  my_printf("%d",a[m]);
 				  break;
 			  }
 			  else

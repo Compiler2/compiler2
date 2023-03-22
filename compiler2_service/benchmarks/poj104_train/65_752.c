@@ -3,10 +3,10 @@
 int main_bench(){
 int n,a[200],b[200],sa=0,sb=0,i;
 
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
-  scanf("%d%d",&(a[i]),&(b[i]));
+  my_scanf("%d%d",&(a[i]),&(b[i]));
 }
 
 for(i=0;i<n;i++)
@@ -35,11 +35,11 @@ for(i=0;i<n;i++)
   
 }
 if(sa>sb)
-printf("A");
+my_printf("A");
 if(sa<sb)
-printf("B");
+my_printf("B");
 if(sa==sb)
-printf("Tie");
+my_printf("Tie");
 
 return 0;
 }

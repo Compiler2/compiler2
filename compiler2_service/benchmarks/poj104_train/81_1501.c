@@ -6,10 +6,10 @@ int main_bench()
 	int x[5][5],a,b,i,j,c[5];
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&x[i][j]);
-		scanf("%d %d",&a,&b);
+			my_scanf("%d",&x[i][j]);
+		my_scanf("%d %d",&a,&b);
 		if(q(a,b)==0)
-			printf("error");
+			my_printf("error");
 	    if(q(a,b)==1)
 		{
 
@@ -23,13 +23,13 @@ int main_bench()
 	   {
 		for(j=0;j<4;j++)
 		{
-			printf("%d ",x[i][j]);
+			my_printf("%d ",x[i][j]);
 		}
 		if(j=4)
 		{
-			printf("%d",x[i][j]);
+			my_printf("%d",x[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	   }
 		}
 }

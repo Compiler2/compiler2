@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int a,i=0;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
 if(a==100)
-printf("001");
+my_printf("001");
 else
 {
 	while(a>0)
@@ -14,6 +14,6 @@ else
 		
 		a=a/10;
 	}
-     printf("%d",i);}
+     my_printf("%d",i);}
 	return(0);		
 }

@@ -15,12 +15,12 @@ int main_bench()
     k++;
     if(str[i+1]==' ')
     {
-     printf("%d,",k);
+     my_printf("%d,",k);
      k=0;
     }
     if(str[i+1]=='\0')
     {
-     printf("%d\n",k);
+     my_printf("%d\n",k);
     }
     }
   }

@@ -5,15 +5,15 @@ int main_bench()
 {
     int n,i,j,m,s,t;
     char a[102][102],b[102][102];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
 
 
 	for(i=1;i<=n;i++){     
-		scanf("%s",&(a[i][1]));  
+		my_scanf("%s",&(a[i][1]));  
 	}
 
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(j=0;j<n+2;j++){
         a[0][j]='#';
         a[n+1][j]='#';
@@ -57,7 +57,7 @@ int main_bench()
             }
         }
     }
-    printf("%d",t);
+    my_printf("%d",t);
     return 0;
 }
 

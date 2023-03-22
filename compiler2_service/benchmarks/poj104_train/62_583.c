@@ -10,12 +10,12 @@ int main_bench()
 	{
 		if(*(p+i)!=' ')
 		{
-			printf("%c",*(p+i));
+			my_printf("%c",*(p+i));
 			k=1;
 		}
 		if((k==1)&&(*(p+i)==' '))
 		{
-			printf(" ");
+			my_printf(" ");
 			k=0;
 		}
 	}

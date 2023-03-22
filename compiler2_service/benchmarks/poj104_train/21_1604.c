@@ -4,12 +4,12 @@ int main_bench()
 {
 	int ch1[350],n,i,ch2[350],j,k=1,l,r;
 	double max,sum=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<=n-2;i++)
-	{	scanf("%d ",&ch1[i]);
+	{	my_scanf("%d ",&ch1[i]);
 	sum=sum+ch1[i];
 	}
-	scanf("%d",&ch1[n-1]);
+	my_scanf("%d",&ch1[n-1]);
 	sum=sum+ch1[n-1];
 	float average=(float)(sum/n);
 
@@ -30,8 +30,8 @@ int main_bench()
 	}
 	}
 	for(l=0;l<k-1;l++)
-		printf("%d,",ch1[ch2[l]]);
-	printf("%d",ch1[ch2[k-1]]);
+		my_printf("%d,",ch1[ch2[l]]);
+	my_printf("%d",ch1[ch2[k-1]]);
 }
 
 

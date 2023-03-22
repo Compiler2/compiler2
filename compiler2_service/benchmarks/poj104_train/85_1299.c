@@ -9,9 +9,9 @@ int main_bench()
 
     int t[100][20];
     char s[100][20];
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     for (i=0;i<n;i++){
-        scanf ("%s",s[i]);
+        my_scanf ("%s",s[i]);
     }
     for (i=0;i<n;i++){
         for (j=0;s[i][j]!='\0';j++){
@@ -20,7 +20,7 @@ int main_bench()
     }
     for (i=0;i<n;i++){
         if (t[i][0]>=48&&t[i][0]<=57){
-            printf ("no\n");
+            my_printf ("no\n");
             
         }else {
             for (j=0;s[i][j]!=0;j++){
@@ -46,9 +46,9 @@ int main_bench()
             
             }
             if (c==1){
-                printf ("no\n");
+                my_printf ("no\n");
             }else {
-                printf ("yes\n");
+                my_printf ("yes\n");
             }
         }
     }

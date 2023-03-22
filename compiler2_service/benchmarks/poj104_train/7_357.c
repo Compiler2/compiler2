@@ -3,7 +3,7 @@
 int main_bench(){
   int le,len,lenn,i,j,k,a=0,b,m=0;
   char aa[256],bb[256],cc[256];
-  scanf("%s%s%s",aa,bb,cc);
+  my_scanf("%s%s%s",aa,bb,cc);
   le=strlen(aa);
   len=strlen(bb);
   lenn=strlen(cc);
@@ -19,8 +19,8 @@ int main_bench(){
 
      if(m==0) puts(aa);
      else{ 
-      for(i=0;i<b;i++){printf("%c",aa[i]);}
-      for(k=0;k<lenn;k++){printf("%c",cc[k]);}
-      for(i=b+len;i<le;i++){printf("%c",aa[i]);}
+      for(i=0;i<b;i++){my_printf("%c",aa[i]);}
+      for(k=0;k<lenn;k++){my_printf("%c",cc[k]);}
+      for(i=b+len;i<le;i++){my_printf("%c",aa[i]);}
           }
 return 0;}

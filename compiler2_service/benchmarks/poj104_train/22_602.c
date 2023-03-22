@@ -7,11 +7,11 @@ int main_bench()
 	{
 		if(i==0)
 		{
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 		}
 		else
 		{
-			scanf(",%d",&a[i]);
+			my_scanf(",%d",&a[i]);
 		}
 
 	}
@@ -55,13 +55,13 @@ int main_bench()
 	}
 	if(p!=j)
 	{
-    printf("%d\n",a[i+1]);
+    my_printf("%d\n",a[i+1]);
 	}
 	else
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	}
 	else
-		printf("No\n");
+		my_printf("No\n");
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char c[105][105];
 	int n,m,i,j,ans=0,a[105][105];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n+1;i++)
 	{
 		for(j=0;j<=n+1;j++)
@@ -17,11 +17,11 @@ int main_bench()
 	{
 		for(j=0;j<n+1;j++)
 		{
-			scanf("%c",&c[i][j]);
+			my_scanf("%c",&c[i][j]);
 			if(c[i][j]=='@'){a[i][j]=1;}
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	m--;
 	while(m--)
 	{
@@ -62,6 +62,6 @@ int main_bench()
 			if(c[i][j]=='@')ans++;
 		}
 	}
-	printf("%d",ans);
+	my_printf("%d",ans);
 	return 0;
 }

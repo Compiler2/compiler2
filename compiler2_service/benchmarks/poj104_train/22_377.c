@@ -23,8 +23,8 @@ int main_bench()
 		{ b=a;a=c[i];}
 		else if(a>c[i]&&b<c[i]) b=c[i];
 	}
-	if(b!=0) printf("%d\n",b);
-	else printf("No\n");
+	if(b!=0) my_printf("%d\n",b);
+	else my_printf("No\n");
 }
 int f(char t[])
 {

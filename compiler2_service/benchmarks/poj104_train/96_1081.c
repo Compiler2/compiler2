@@ -8,7 +8,7 @@ int main_bench()
   	{
   		s[b]='\0';
   	}
-  	scanf("%s",s);
+  	my_scanf("%s",s);
   	for(i=0;s[i]!='\0';i++)
   	{
     	a=a*10+s[i]-'0';
@@ -21,7 +21,7 @@ int main_bench()
   	}
   	s[j]=0;
   	if(j!=0) 
-  		printf("%s\n%d",s,a);
+  		my_printf("%s\n%d",s,a);
   	else 
-		printf("0\n%d",a);
+		my_printf("0\n%d",a);
 }

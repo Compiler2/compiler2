@@ -6,13 +6,13 @@ int main_bench()
 	int n,i,j,s,a,b,c,d;
 	s=0;
 	int shuzu[100][100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
 
@@ -55,7 +55,7 @@ int main_bench()
 		}
 	}
 
-	printf("%d",s);
+	my_printf("%d",s);
 
 	return 0;
 }

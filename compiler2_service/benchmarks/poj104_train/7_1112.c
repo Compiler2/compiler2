@@ -32,6 +32,6 @@ int main_bench()
 i=e;
 }
 
-printf("%s",s); 
+my_printf("%s",s); 
 return 0;
 }

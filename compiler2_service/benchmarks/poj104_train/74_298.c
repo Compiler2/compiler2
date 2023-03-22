@@ -49,19 +49,19 @@ int hui(int m)
 int main_bench()
 {
 	int m,n,count=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	while(m<=n)
 	{
 		if(su(m)&&hui(m))
 		{
 			if(count==0)
 			{
-				printf("%d",m);
+				my_printf("%d",m);
 				count=1;
 			}
 			else
 			{
-				printf(",%d",m);
+				my_printf(",%d",m);
 			}
 		}
 		m++;
@@ -69,7 +69,7 @@ int main_bench()
 	}
 	if(count==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

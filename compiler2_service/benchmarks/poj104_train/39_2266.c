@@ -16,7 +16,7 @@ for(i=0;i<100;i++){
 gets(num);
 n=atoi(num);
 for(i=0;i<n;i++){
-   scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].gpa,&stu[i].mate,&stu[i].official,&stu[i].west,&stu[i].paper);
+   my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].gpa,&stu[i].mate,&stu[i].official,&stu[i].west,&stu[i].paper);
    }
 for(i=0;i<n;i++){
    if(stu[i].gpa>80&&stu[i].paper>=1){
@@ -47,6 +47,6 @@ for(i=0;i<n;i++){
    if(sch[i]==max)
    break;
    }
-printf("%s\n%d\n%ld\n",stu[i].name,sch[i],sum);
+my_printf("%s\n%d\n%ld\n",stu[i].name,sch[i],sum);
 return 0;
 }

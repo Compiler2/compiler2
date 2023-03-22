@@ -23,6 +23,6 @@ while ( pSource[i] != 0 )
  }
  i++;
 }
-printf("%s\n" ,arrSentence);
+my_printf("%s\n" ,arrSentence);
 return 0;
 }

@@ -34,11 +34,11 @@ int main_bench()
 	{
 		if(num[i]!=max)
 		{
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 			break;
 		}
 		else if(i==index-1)
-			printf("No");
+			my_printf("No");
 	}
 	
 }

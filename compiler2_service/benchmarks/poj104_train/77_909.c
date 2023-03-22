@@ -17,7 +17,7 @@ main_bench()
 			if (x[i+j]==g) 
 			{
 				y[i]=0;y[i+j]=0;
-				printf("%d %d\n",i,i+j);
+				my_printf("%d %d\n",i,i+j);
 				i=-1;j=0;
 				a-=2;
 			}

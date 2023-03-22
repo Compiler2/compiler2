@@ -32,10 +32,10 @@ int main_bench()
 	int n,i,j,year,date1,date2,tem;
 	int day[201]={0};
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<n+1;i++)
 	{
-		scanf("%d%d%d",&year,&date1,&date2);
+		my_scanf("%d%d%d",&year,&date1,&date2);
 		month[2]=28;
 		if(run(year))
 			month[2]=29;
@@ -56,12 +56,12 @@ int main_bench()
 	{
 	
 		if(day[i]%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 
 			
 		else
 		
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	
 	

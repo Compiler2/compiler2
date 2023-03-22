@@ -20,7 +20,7 @@ main_bench()
 		n=0;j=0;
 		while (1)
 		{
-		    scanf("%c",&a);
+		    my_scanf("%c",&a);
 		    if (a=='\n')
 			    break;
 		    if (a=='-')
@@ -30,7 +30,7 @@ main_bench()
 		}
 	    n=reverse(n);
 	    if (j==1)
-		    printf("-");
-	    printf("%d\n",n);
+		    my_printf("-");
+	    my_printf("%d\n",n);
 	}
 }

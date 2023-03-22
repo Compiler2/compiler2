@@ -3,16 +3,16 @@
 int main_bench(){
 	char c[102][102]={' '};
 	int i,j,n,m,r=0,k=1;
-	scanf ("%d\n",&n);
+	my_scanf ("%d\n",&n);
 
 	for (i=1;i<=n;i++){
 	    for (j=1;j<=n;j++){
-			  scanf ("%c\n",&c[i][j]);
+			  my_scanf ("%c\n",&c[i][j]);
 		}
 	}
 	
 	
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 	
 	
 
@@ -46,6 +46,6 @@ int main_bench(){
 			;
 		}
 	}
-	printf ("%d",r);
+	my_printf ("%d",r);
 	return 0;
 }

@@ -36,7 +36,7 @@ int main_bench()
 				}
 				if(j==count0-1)
 				{
-					printf("%d",i);
+					my_printf("%d",i);
 					break;
 				}
 			}

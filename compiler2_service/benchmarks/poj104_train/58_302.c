@@ -33,12 +33,12 @@ main_bench()
      else break;
   }
   if(i==l||i==l+1)
-  printf("1\n");
+  my_printf("1\n");
   else
-  printf("0\n");
+  my_printf("0\n");
  }
   else
-  printf("0\n");
+  my_printf("0\n");
 }
 
   getchar();

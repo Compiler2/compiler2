@@ -11,10 +11,10 @@ int main_bench()
 		if(str[i]==' ') 
 		{
 			for(j=i+1;j<=a;j++)
-				printf("%c",str[j]);
-			    printf("%c",str[i]);
+				my_printf("%c",str[j]);
+			    my_printf("%c",str[i]);
 			a=i-1;
 		}
 	for(i=0;i<a+1;i++)
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 }

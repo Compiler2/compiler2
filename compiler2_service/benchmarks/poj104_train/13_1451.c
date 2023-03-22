@@ -4,10 +4,10 @@ int main_bench()
 {
     int u[20000];
     int a,n,i,j,k,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&u[i]);
+        my_scanf("%d",&u[i]);
     }
    k=0;
    for(i=0;i<n;i++)
@@ -37,13 +37,13 @@ int main_bench()
         {
             if(l<k-1)
             {
-                printf("%d ",u[i]);
+                my_printf("%d ",u[i]);
                 l++;
             }
         
         else
             {
-                printf("%d",u[i]);
+                my_printf("%d",u[i]);
             }
         }
     i++;

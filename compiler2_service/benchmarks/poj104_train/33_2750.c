@@ -4,23 +4,23 @@ int main_bench()
 {
 	int n,i;
 	char z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("\n");
+		my_scanf("\n");
 		do
 		{
-			scanf("%c",&z);
+			my_scanf("%c",&z);
 			if(z=='A')
-				printf("T");
+				my_printf("T");
 			else if(z=='T')
-				printf("A");
+				my_printf("A");
 			else if(z=='C')
-				printf("G");
+				my_printf("G");
 			else if(z=='G')
-				printf("C");
+				my_printf("C");
 		}while(z!='\n');
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

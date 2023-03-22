@@ -7,7 +7,7 @@ main_bench()
      int c[1000];
      for (int i=0;i<1000;i++)
      c[i]=1;
-     scanf ("%s",a);
+     my_scanf ("%s",a);
      int l;
      l=strlen(a);
      for (int i=0;i<l;i++)
@@ -35,7 +35,7 @@ main_bench()
      }
      for (int i=0;i<=n;i++)
      {
-         printf ("(%c,%d)",b[i],c[i]);
+         my_printf ("(%c,%d)",b[i],c[i]);
      }
      getchar ();
      getchar ();

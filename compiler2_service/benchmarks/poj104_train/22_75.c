@@ -7,8 +7,8 @@ int main_bench()
 	i=0;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&b[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&b[i]);
 		n=i+1;
 		if(b[i]!='\n')
 			continue;
@@ -16,7 +16,7 @@ int main_bench()
 			break;
 	}
 	if(n==0)
-		printf("No\n");
+		my_printf("No\n");
 	if(n>0)
 	{
 		for(i=0;i<n-1;i++)
@@ -34,7 +34,7 @@ int main_bench()
 		
 		temp=a[n-1];
 		if(a[0]==temp)
-			printf("No\n");
+			my_printf("No\n");
 		else
 		{
 		for(i=n-1;i>=0;i--)
@@ -45,7 +45,7 @@ int main_bench()
 				break;
 			}
 		}
-		printf("%d\n",a[k]);
+		my_printf("%d\n",a[k]);
 		}
 	}
 }

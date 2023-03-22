@@ -5,25 +5,25 @@ int main_bench(){
 	int w=3;
 	int z=5;
 	int x=7;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a%3;
 	c=a%5;
 	d=a%7;
 	if (b==0&&c==0&&d==0)
-		printf("%d %d %d",w,z,x);
+		my_printf("%d %d %d",w,z,x);
 	else if(b==0&&c==0)
-		printf("%d %d",w,z);
+		my_printf("%d %d",w,z);
 	else if(b==0&&d==0)
-		printf("%d %d",w,x);
+		my_printf("%d %d",w,x);
 	else if(c==0&&d==0)
-		printf("%d %d",z,x);
+		my_printf("%d %d",z,x);
 	      else if(b==0)
-			  printf("%d",w);
+			  my_printf("%d",w);
 		       else if(c==0)
-				   printf("%d",z);
+				   my_printf("%d",z);
 			        else if(d==0)
-						printf("%d",x);
-					      else printf("n");
+						my_printf("%d",x);
+					      else my_printf("n");
 	 return 0;
 						  
 }

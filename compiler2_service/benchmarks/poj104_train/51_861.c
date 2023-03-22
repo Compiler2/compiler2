@@ -5,8 +5,8 @@ int main_bench()
     int a,b,c,n,i,j;
     char s[500];
     int d[500]={0}; 
-    scanf("%d",&n);
-    scanf("%s",s);
+    my_scanf("%d",&n);
+    my_scanf("%s",s);
     a=strlen(s);
     if(n==3)
     {for(i=0;i<a-2;i++)
@@ -25,15 +25,15 @@ int main_bench()
                       b=d[i];
                       }
                       if(b==1)
-                      printf("NO");
+                      my_printf("NO");
                       else
                       {
-                      printf("%d\n",b);
+                      my_printf("%d\n",b);
         for(i=0;i<a-2;i++)
     {
         if(d[i]==b)
         {
-                   printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
+                   my_printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
                     for(j=0;j<a-2;j++)
                       {
                       if(s[j]==s[i]&&s[j+1]==s[i+1]&&s[j+2]==s[i+2])
@@ -59,15 +59,15 @@ int main_bench()
                       b=d[i];
                       }
                         if(b==1)
-                      printf("NO");
+                      my_printf("NO");
                       else
                       {
-                      printf("%d\n",b);
+                      my_printf("%d\n",b);
         for(i=0;i<a-1;i++)
     {
         if(d[i]==b)
         {
-                   printf("%c%c\n",s[i],s[i+1]);
+                   my_printf("%c%c\n",s[i],s[i+1]);
                     for(j=0;j<a-1;j++)
                       {
                       if(s[j]==s[i]&&s[j+1]==s[i+1])
@@ -93,15 +93,15 @@ int main_bench()
                       b=d[i];
                       }
                         if(b==1)
-                      printf("NO");
+                      my_printf("NO");
                       else
                       {
-                      printf("%d\n",b);
+                      my_printf("%d\n",b);
         for(i=0;i<a-3;i++)
     {
         if(d[i]==b)
         {
-                   printf("%c%c%c%c\n",s[i],s[i+1],s[i+2],s[i+3]);
+                   my_printf("%c%c%c%c\n",s[i],s[i+1],s[i+2],s[i+3]);
                     for(j=0;j<a-3;j++)
                       {
                       if(s[j]==s[i]&&s[j+1]==s[i+1]&&s[j+2]==s[i+2]&&s[j+3]==s[i+3])

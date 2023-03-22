@@ -19,8 +19,8 @@ int main_bench()
 	temp=str2;
 	while (temp<=p2)
 	{
-		printf("%c",*temp);
+		my_printf("%c",*temp);
 		temp=temp+1;
 	}
-	printf("\n");
+	my_printf("\n");
 }

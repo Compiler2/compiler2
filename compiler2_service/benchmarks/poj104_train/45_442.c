@@ -4,8 +4,8 @@
 int main_bench()
 {char a[100],b[100],*p1,*p2;
 int i,j,n,check=0;
-scanf("%s",a);p1=a;
-scanf("%s",b);p2=b;
+my_scanf("%s",a);p1=a;
+my_scanf("%s",b);p2=b;
   for(i=0;b[i]!='\0';i++)
     {
 	  if(a[0]==b[i])
@@ -15,6 +15,6 @@ scanf("%s",b);p2=b;
 		}
         
     }
-  if(check==1) printf("%d",n);
+  if(check==1) my_printf("%d",n);
 	return 0;
 }

@@ -12,10 +12,10 @@ int main_bench()
 	largen(s2);
 	flag=strcmp(s1,s2);
 	if(flag>0)
-		printf(">\n");
+		my_printf(">\n");
 	else if(flag<0)
-		printf("<\n");
-	else printf("=\n");
+		my_printf("<\n");
+	else my_printf("=\n");
 	return 0;
 }
 

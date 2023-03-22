@@ -2,14 +2,14 @@
 
 int main_bench()
 {
-	int N;scanf("%d",&N);
+	int N;my_scanf("%d",&N);
 	for(int n=0;n<N;n++)
 	{
 	int Ma[N][N];
 	for(int i=0;i<N;i++)
 	{
 		for(int j=0;j<N;j++)
-		scanf("%d",&Ma[i][j]);
+		my_scanf("%d",&Ma[i][j]);
 	}
 	int SUM=0;
 	for(int Now=1;Now<N;Now++)
@@ -38,6 +38,6 @@ int main_bench()
 		}
 		SUM+=Ma[Now][Now];
 	}
-	printf("%d\n",SUM);
+	my_printf("%d\n",SUM);
 	}
 }

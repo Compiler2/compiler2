@@ -26,16 +26,16 @@ int main_bench()
 		if (n[i]==m[i]) k++;
 		if (n[i]>m[i]) 
 		{
-			printf(">\n");
+			my_printf(">\n");
 			break;
 		}
 		if (n[i]<m[i])
 		{
-			printf("<\n");
+			my_printf("<\n");
 			break;
 		}
 	}
-	if (k==x) printf("=\n");
+	if (k==x) my_printf("=\n");
 	
 
 	return 0;

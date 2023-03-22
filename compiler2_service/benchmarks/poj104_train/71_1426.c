@@ -41,17 +41,17 @@ int main_bench()
 {
     int n,year,month1,month2;
     int a,i,sz[200];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d %d",&year,&month1,&month2);
+        my_scanf("%d %d %d",&year,&month1,&month2);
         if(month1>month2){
             swap(&month1,&month2);
         }
         a=DijiTian(year,month2,1)-DijiTian(year,month1,1);
         if(a%7==0){
-           printf("YES\n");
+           my_printf("YES\n");
         }
-        else printf("NO\n");
+        else my_printf("NO\n");
     }
     return 0;
 }

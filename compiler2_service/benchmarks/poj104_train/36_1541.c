@@ -4,12 +4,12 @@ int main_bench()
 {
 	char s1[100]={0},s2[100]={100};
 	int len1,len2,i,j,f[100]={0},flag;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
 	if(len1!=len2)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	for(i=0;i<len1;i++)
@@ -26,10 +26,10 @@ int main_bench()
 		}
 		if(flag==0)
 		{
-			printf("NO");
+			my_printf("NO");
 			return 0;
 		}
 	}
-	printf("YES\n");
+	my_printf("YES\n");
 	return 0;
 }

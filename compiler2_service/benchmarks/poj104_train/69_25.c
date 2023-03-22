@@ -12,7 +12,7 @@ int main_bench()
 		c[i]=0;
 	}
 
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
 	for(i=0;i<len1;i++)
@@ -20,7 +20,7 @@ int main_bench()
 	for(i=0;i<len2;i++)
 		b[len2-i-1]=s2[i]-'0';
 	if(a[0]==0&&b[0]==0&&len1==1&&len2==1)
-		printf("0");
+		my_printf("0");
 	else
 	{
 	for(i=0;i<len1||i<len2;i++)
@@ -42,8 +42,8 @@ int main_bench()
 	}
 
 	for(j=i;j>=0;j--)
-		printf("%d",c[j]);
-	printf("\n");
+		my_printf("%d",c[j]);
+	my_printf("\n");
 	}
 }
 

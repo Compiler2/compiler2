@@ -7,8 +7,8 @@ main_bench()
 	int a[5][5];
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-	          scanf("%d",&a[i][j]);
-	scanf("%d%d",&n,&m);
+	          my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&n,&m);
 	t=exist(n,m);
 	if(t==1)
 	{
@@ -16,13 +16,13 @@ main_bench()
 		   s=a[n][j],a[n][j]=a[m][j],a[m][j]=s;
 		for(i=0;i<5;i++)
 		{
-		    printf("%d",a[i][0]);
+		    my_printf("%d",a[i][0]);
 			for(j=1;j<5;j++)
-			printf(" %d",a[i][j]);
-			printf("\n");
+			my_printf(" %d",a[i][j]);
+			my_printf("\n");
 		}
 	}
-	else printf("error");
+	else my_printf("error");
 }
 
 int exist(int n,int m)

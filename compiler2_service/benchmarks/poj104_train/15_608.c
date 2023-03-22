@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,i,j,a[1000][1000],x,y,p,q,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -33,7 +33,7 @@ int main_bench()
 		}
 	}
 	s=(p-x-1)*(q-y-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }
 

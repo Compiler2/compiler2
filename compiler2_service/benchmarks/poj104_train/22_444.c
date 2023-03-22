@@ -35,7 +35,7 @@ void sort(int l,int r)
 int main_bench()
 {
     memset(a,0,sizeof(a));
-    scanf("%s",s);
+    my_scanf("%s",s);
     for(i = 0;i < strlen(s);++i)
     {
         t = s[i];
@@ -57,11 +57,11 @@ int main_bench()
     for(i = 2;i <= p;++i)
         if(a[i] != a[i - 1])
         {
-            printf("%d\n",a[i]);
+            my_printf("%d\n",a[i]);
             done = 1;
             break;    
         }
     if(done == 0)
-        printf("No\n");
+        my_printf("No\n");
     return 0;    
 }

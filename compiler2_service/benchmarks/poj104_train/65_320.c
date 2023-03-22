@@ -16,17 +16,17 @@ int main_bench()
    int i;
    int a,b;
    int flag=0;
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    for(i=0;i<n;i++)
    {
-           scanf("%d %d\n",&a,&b);
+           my_scanf("%d %d\n",&a,&b);
            flag=flag+f(a,b);
    }
    if(flag>0)
-   printf("A\n");
+   my_printf("A\n");
    else if(flag==0)
-   printf("Tie\n");
+   my_printf("Tie\n");
    else
-   printf("B\n");
+   my_printf("B\n");
        
 }

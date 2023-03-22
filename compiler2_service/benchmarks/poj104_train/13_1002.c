@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j,a[20000],b[20000];
-	scanf("%d",&n);
-	scanf("%d",&a[0]);
+	my_scanf("%d",&n);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	    for(j=0;j<i;j++)
 		{
 			b[i]=a[i]-a[j];
@@ -15,11 +15,11 @@ int main_bench()
 				break;
 		}
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=0;i<n;i++)
 	{
 		if(b[i]!=0)
-			printf(" %d",a[i]);
+			my_printf(" %d",a[i]);
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 int a,b,c,d,e,f,s;
-scanf("%d",&a);
+my_scanf("%d",&a);
 if(a<10) s=a;
 else if(a<100) 
 {
@@ -35,5 +35,5 @@ else if(a<100000)
 	f=(a-b-c*10-d*100-e*1000)/10000;
 	s=b*10000+c*1000+d*100+e*10+f;
 }
-printf("%d\n",s);
+my_printf("%d\n",s);
 }

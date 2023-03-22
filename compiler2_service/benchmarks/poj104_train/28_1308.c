@@ -10,14 +10,14 @@ int main_bench()
 	{  if(a[i]!=' ')
 		num=num+1;
 		if(a[i]==' '&&a[i-1]!=' ')
-		printf("%d,",num);
+		my_printf("%d,",num);
 		if(a[i]==' '&&a[i+1]!=' ') 
 	           num=0;
             	
             
 	
 
-		if(a[i+1]=='\0') printf("%d",num);
+		if(a[i+1]=='\0') my_printf("%d",num);
     }
 }
 	 

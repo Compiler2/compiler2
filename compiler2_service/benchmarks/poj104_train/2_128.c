@@ -5,10 +5,10 @@ int main_bench()
 {
     int maxc=0,i,j,n,a[1000],c;
     char maxp,b[1000][27],p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d%s",&a[i],b[i]);
+        my_scanf("%d%s",&a[i],b[i]);
     }
     for (p='A';p<='Z';p++)
     {
@@ -31,8 +31,8 @@ int main_bench()
             maxp=p;
         }
     }
-    printf("%c\n",maxp);
-    printf("%d\n",maxc);
+    my_printf("%c\n",maxp);
+    my_printf("%d\n",maxc);
 
 
 
@@ -44,7 +44,7 @@ int main_bench()
                 if(b[i][j]=='\0') break;
                 if(b[i][j]==maxp)
                 {
-                    printf("%d\n",a[i]);
+                    my_printf("%d\n",a[i]);
                 }
 
             }

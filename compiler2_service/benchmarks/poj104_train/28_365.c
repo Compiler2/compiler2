@@ -10,11 +10,11 @@ int main_bench()
 	{
 		if(*p==' ')
 		{
-			if(i!=0)printf("%d,",i);
+			if(i!=0)my_printf("%d,",i);
 			i=0;
 		}
 		else i++;
 		if(p==a+n-1)break;
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 }

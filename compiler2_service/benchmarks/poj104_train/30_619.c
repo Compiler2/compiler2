@@ -4,7 +4,7 @@ int main_bench(){
     int a,b,c;
 	int n;
     c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;10*a<=n;a++)
 	{
 		for(b=0;b<=9&&(10*a+b)<=n;b++)
@@ -15,6 +15,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",c);
+	my_printf("%d",c);
 	return 0;
 }

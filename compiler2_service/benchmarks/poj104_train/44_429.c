@@ -30,9 +30,9 @@ int main_bench()
 	int j=0,a=0,z=0;
 	for(j=0;j<6;j++)
 	{
-	  scanf("%d",&a);
+	  my_scanf("%d",&a);
 	  z=reverse(a);
-	  printf("%d\n",z);
+	  my_printf("%d\n",z);
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
     int m,n,i,j,p[26]={0},q[26]={0};
 	char a[300],b[300];
-    scanf("%s %s",&a,&b);
+    my_scanf("%s %s",&a,&b);
 	for (i=0;i<strlen(a);i++)
 	{
 		for(j=0;j<26;j++)
@@ -25,11 +25,11 @@ int main_bench()
 	{
 		if (p[i]!=q[i])
 		{
-			printf("NO");
+			my_printf("NO");
 			goto loop;
 		}
 	}
-	printf("YES");
+	my_printf("YES");
 loop:;
 }
 

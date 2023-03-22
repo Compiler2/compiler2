@@ -23,17 +23,17 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
-	if(replace(a,n,m)==0)printf("error\n");
+	my_scanf("%d %d",&n,&m);
+	if(replace(a,n,m)==0)my_printf("error\n");
 	else for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
 		{
-			if(j==4)printf("%d\n",a[i][j]);
-			else printf("%d ",a[i][j]);
+			if(j==4)my_printf("%d\n",a[i][j]);
+			else my_printf("%d ",a[i][j]);
 		}
 	}
 }

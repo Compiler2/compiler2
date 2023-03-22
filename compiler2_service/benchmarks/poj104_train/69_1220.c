@@ -35,11 +35,11 @@ int main_bench(){
 	}
     if(m==0){
 		for(i=clen;i>=1;i--)
-			printf("%d",c[i]);
+			my_printf("%d",c[i]);
 	}
     if(m!=0){
 		for(i=m;i>=1;i--)
-			printf("%d",c[i]); 
+			my_printf("%d",c[i]); 
 	}
-    printf("\n");     
+    my_printf("\n");     
 }

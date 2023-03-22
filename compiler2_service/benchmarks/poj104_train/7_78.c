@@ -3,7 +3,7 @@
 int main_bench(){
 	int i,j,t=0;
 	char str[260],sub[20],rep[20];
-	scanf("%s%s%s",str,sub,rep);
+	my_scanf("%s%s%s",str,sub,rep);
 	for(i=0;i<strlen(str);i++){
 		if(str[i]==sub[0]){
 			for(j=i+1;j<i+strlen(sub);j++){
@@ -21,6 +21,6 @@ int main_bench(){
 		
 	t=0;
 	}
-	printf("%s",str);
+	my_printf("%s",str);
 	return 0;
 }

@@ -13,5 +13,5 @@ int main_bench()
           else *q=*p+*p1;
       }
     for(q=s1;q<(s1+i);q++)
-       printf("%c",*q);
+       my_printf("%c",*q);
 }

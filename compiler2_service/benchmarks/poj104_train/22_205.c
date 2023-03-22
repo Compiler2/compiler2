@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[300],i=0,j,m1,m2=0,n=0;
 	int c;
-	while(scanf("%d",&a[i]))
+	while(my_scanf("%d",&a[i]))
 	{
 		c=getchar();
 		if(i==0)
@@ -22,6 +22,6 @@ int main_bench()
 		if(a[j]==m2)
 			n++;
 	if(n==0)
-		printf("No\n");
-	else printf("%d\n",m2);
+		my_printf("No\n");
+	else my_printf("%d\n",m2);
 }

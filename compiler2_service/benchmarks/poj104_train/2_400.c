@@ -11,10 +11,10 @@ struct
 int main_bench()
 {
 	int m,a[26]={0},i,j,t,max=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&book[i].num,book[i].au);
+		my_scanf("%d%s",&book[i].num,book[i].au);
 		int au_n=strlen(book[i].au);
 		for(j=0;j<au_n;j++)
 		{
@@ -31,7 +31,7 @@ int main_bench()
 		if(a[i]==max) 
 		{
 			char r=i+65;
-			printf("%c\n%d\n",r,max);
+			my_printf("%c\n%d\n",r,max);
 			break;
 		}
 	}
@@ -40,7 +40,7 @@ int main_bench()
 		int au_n=strlen(book[t].au);
 		for(j=0;j<au_n;j++)
 		{
-			if(book[t].au[j]==i+65) printf("%d\n",book[t].num);
+			if(book[t].au[j]==i+65) my_printf("%d\n",book[t].num);
 		}
 	}
 	return 0;

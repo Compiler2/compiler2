@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n;
 
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	
 	while(n--)
 	{

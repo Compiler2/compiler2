@@ -29,6 +29,6 @@ int main_bench(){
               min=a;
 		  }
 	  }
-	  printf("%s\n%s\n",ip[b],ip[c]);
+	  my_printf("%s\n%s\n",ip[b],ip[c]);
 	  return 0;
 }

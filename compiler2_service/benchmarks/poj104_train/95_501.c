@@ -14,10 +14,10 @@ int main_bench()
 			c2[i]=c2[i]-32;
 	}
 	if(strcmp(c1,c2)==0)
-		printf("=");
+		my_printf("=");
 	if(strcmp(c1,c2)<0)
-		printf("<");
+		my_printf("<");
 	if(strcmp(c1,c2)>0)
-		printf(">");
+		my_printf(">");
 	return 0;
 }

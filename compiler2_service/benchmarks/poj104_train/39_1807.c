@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,k,t,i,q,s[100],cm[100],atl[100],a[100],b,m;
 	char name[100][20],e[100][2],f[100][2],final[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++){
-		scanf("%s %d %d %s %s %d",&name[k],&s[k],&cm[k],&e[k],&f[k],&atl[k]);
+		my_scanf("%s %d %d %s %s %d",&name[k],&s[k],&cm[k],&e[k],&f[k],&atl[k]);
 	}
 	b=0;
 	for(t=0;t<n;t++){
@@ -37,6 +37,6 @@ int main_bench(){
 			strcpy(final,name[i]);
 		}
 	}
-	printf("%s\n%d\n%d",final,m,b);
+	my_printf("%s\n%d\n%d",final,m,b);
 	return 0;
 }

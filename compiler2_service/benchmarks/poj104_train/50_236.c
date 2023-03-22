@@ -5,7 +5,7 @@ void judge(int month,int w);
 int main_bench()
 {
 	int month,cha;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	month=1;
 	cha=13;
 	judge(month,cha);
@@ -47,5 +47,5 @@ void judge(int month,int cha)
 {
 	int x;
 	x=(w+cha-1)%7;
-	if(x==5) printf("%d\n",month);
+	if(x==5) my_printf("%d\n",month);
 }

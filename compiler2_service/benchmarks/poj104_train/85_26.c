@@ -3,17 +3,17 @@
 int main_bench()
 {
 	int i,n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
 		char s[21]={0};
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int k=strlen(s),w=0;
 		for(j=0;j<k;j++)
 		{
 			if(j==0&&s[j]>='0'&&s[j]<='9')
 			{
-				printf("no\n");
+				my_printf("no\n");
 				break;
 			}
 
@@ -23,9 +23,9 @@ int main_bench()
 		if(s[0]>='0'&&s[0]<='9')
 			continue;
 		if(w==k)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	
 	return 0;

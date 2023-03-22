@@ -5,9 +5,9 @@ int main_bench(){
 	int n;
 	int i;
 	int sz[9999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",&dc[i]);
+		my_scanf("%s",&dc[i]);
 	}
     for(i=0;i<n;i++){
 		sz[i]=strlen(dc[i]);
@@ -20,7 +20,7 @@ int main_bench(){
 		}else if(dc[i][sz[i]-1]=='g'&&dc[i][sz[i]-2]=='n'&&dc[i][sz[i]-3]=='i'){
 			dc[i][sz[i]-3]='\0';
 		}
-		printf("%s\n",dc[i]);
+		my_printf("%s\n",dc[i]);
 	}
 
 

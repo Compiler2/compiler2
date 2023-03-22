@@ -3,13 +3,13 @@
 int main_bench()
 {
  int ROW,COL,b[100][100],row,col;
- scanf("%d",&ROW);
- scanf("%d",&COL);
+ my_scanf("%d",&ROW);
+ my_scanf("%d",&COL);
  for(row=0;row<ROW;row++)
  {
   for(col=0;col<COL;col++)
   {
-   scanf("%d",&(b[row][col]));
+   my_scanf("%d",&(b[row][col]));
   }
  }
  row=0;
@@ -21,7 +21,7 @@ int main_bench()
   {
    if(b[row][col]!=0)
    {
-    printf("%d\n",b[row][col]);
+    my_printf("%d\n",b[row][col]);
     b[row][col]=0;
    }
    else
@@ -34,7 +34,7 @@ int main_bench()
   {
    if(b[row][col]!=0)
    {
-    printf("%d\n",b[row][col]);
+    my_printf("%d\n",b[row][col]);
     b[row][col]=0;
    }
    else
@@ -47,7 +47,7 @@ int main_bench()
   {
    if(b[row][col]!=0)
    {
-    printf("%d\n",b[row][col]);
+    my_printf("%d\n",b[row][col]);
     b[row][col]=0;
    }
    else
@@ -61,7 +61,7 @@ int main_bench()
   {
    if(b[row][col]!=0)
    {
-    printf("%d\n",b[row][col]);
+    my_printf("%d\n",b[row][col]);
     b[row][col]=0;
    }
    else

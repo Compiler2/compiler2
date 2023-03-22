@@ -6,10 +6,10 @@ int main_bench()
 {
 	char x[20],y[20],k,l;
     int n,a,b,c,sum,i,j,max=0,max2=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",x,&a,&b,&k,&l,&c);
+		my_scanf("%s %d %d %c %c %d",x,&a,&b,&k,&l,&c);
 	    sum=0;
 		if ((a>80) && (c!=0))
 			sum=sum+8000;
@@ -30,6 +30,6 @@ int main_bench()
 		max2=max2+sum;
 
 	}
-	printf("%s\n%d\n%d\n",y,max,max2);
+	my_printf("%s\n%d\n%d\n",y,max,max2);
 	return 0;
 }

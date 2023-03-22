@@ -17,9 +17,9 @@ int main_bench() {
 	toLowerCase(s2);
 	int res = strcmp(s1, s2);
 	if (res < 0)
-		printf("<");
+		my_printf("<");
 	else if (res == 0)
-		printf("=");
+		my_printf("=");
 	else
-		printf(">");
+		my_printf(">");
 }

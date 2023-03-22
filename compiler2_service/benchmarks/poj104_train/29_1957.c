@@ -8,7 +8,7 @@
 int main_bench()
 {
 	int m,M;
-	scanf("%d",&M);
+	my_scanf("%d",&M);
 	double a[5000],b[5000];
 	int i,j;
 	a[1]=2;a[2]=3;
@@ -21,13 +21,13 @@ int main_bench()
 	for(m=1;m<=M;m++)
 	{
 		int n,N;
-		scanf("%d",&N);
+		my_scanf("%d",&N);
 		double s=0;
 		for(n=1;n<=N;n++)
 		{
 			s=s+a[n]/b[n];
 		}
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 	}
 	return 0;
 }

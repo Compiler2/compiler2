@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,l,sum,yes;
     char m[301],a;
-    scanf("%s",m);
+    my_scanf("%s",m);
     l=strlen(m);
     for(i=0;i<l-1;i++){
                      for(j=0;j<l-i-1;j++)
@@ -20,12 +20,12 @@ int main_bench()
                      if((m[i]>='A'&&m[i]<='Z')||(m[i]>='a'&&m[i]<='z')){
                                                                         sum++;
                                                                         if(m[i]!=m[i+1]){
-                                                                                         printf("%c=%d\n",m[i],sum);
+                                                                                         my_printf("%c=%d\n",m[i],sum);
                                                                                          sum=0;
                                                                                          yes=1;
                                                                                          }
                                                                         }
                      }
-    if(yes==0) printf("No");
+    if(yes==0) my_printf("No");
     return 0;
 }

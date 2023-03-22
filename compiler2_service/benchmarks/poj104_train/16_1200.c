@@ -3,7 +3,7 @@
 main_bench()
 {
 	int a,b,c,d,e,f;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a/10000;
 	c=(a-10000*b)/1000;
 	d=(a-10000*b-1000*c)/100;
@@ -12,29 +12,29 @@ main_bench()
 	if (b!=0) 
 	{
 	
-	printf("%d%d%d%d%d",f,e,d,c,b);
+	my_printf("%d%d%d%d%d",f,e,d,c,b);
 	}
     else 
 	{
 		if(c!=0)
 	{
 	
-	printf("%d%d%d%d",f,e,d,c);
+	my_printf("%d%d%d%d",f,e,d,c);
 	}
 	else 
 	{
 		if(d!=0)
 	{
 	
-	printf("%d%d%d",f,e,d);
+	my_printf("%d%d%d",f,e,d);
 	}
 		else {
 			if(e!=0)
 			{
 			
-			printf("%d%d",f,e);
+			my_printf("%d%d",f,e);
 			}
-			else printf("%d",f);
+			else my_printf("%d",f);
 	}
 	}
 	}

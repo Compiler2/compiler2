@@ -2,14 +2,14 @@
 
  int main_bench(){
      int n;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      int i;
      struct qj{
        int a,b;       
      }*qjs,e;
      qjs=(struct qj*)malloc(sizeof(struct qj)*n);
      for(i=0;i<n;i++){
-       scanf("%d%d",&qjs[i].a,&qjs[i].b);
+       my_scanf("%d%d",&qjs[i].a,&qjs[i].b);
      }
      int k,t;
      for(k=1;k<=n;k++){
@@ -34,10 +34,10 @@
        }                 
      }
      if(c==0){
-       printf("%d %d",qjs[0].a,qjs[n-1].b);         
+       my_printf("%d %d",qjs[0].a,qjs[n-1].b);         
      }
      else{
-       printf("no");     
+       my_printf("no");     
      }
      free(qjs);
  return 0;

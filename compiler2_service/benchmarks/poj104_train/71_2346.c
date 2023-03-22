@@ -3,10 +3,10 @@
 main_bench()
 {
     int n,y,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=1;i<=n;i++)
     {
-        scanf("%d %d %d",&y,&a,&b);
+        my_scanf("%d %d %d",&y,&a,&b);
         int t[15];
         if(y%100==0)
             {
@@ -75,8 +75,8 @@ main_bench()
 
 
         if(   (t[a]-t[b]>0&&(t[a]-t[b])%7==0)    ||  (t[a]-t[b]<0&&(t[b]-t[a])%7==0)  )
-            printf("YES\n");
-        else printf("NO\n");
+            my_printf("YES\n");
+        else my_printf("NO\n");
     }
 
 }

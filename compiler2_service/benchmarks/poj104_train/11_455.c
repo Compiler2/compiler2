@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,sum;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if(m==1)
 		sum=d;
 	if(m==2)
@@ -53,6 +53,6 @@ int main_bench()
 		if(m==12)
 			sum=31+28+31+30+31+30+31+31+30+31+30+d;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

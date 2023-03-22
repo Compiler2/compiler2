@@ -4,7 +4,7 @@ main_bench()
 {
 int num1[52],num2[52],i,k,flag=1;
 char a[20],b[20],n1,n2;
-scanf("%s%s",a,b);
+my_scanf("%s%s",a,b);
 n1=strlen(a);
 n2=strlen(b);
   for(i=0;i<52;i++)
@@ -44,6 +44,6 @@ n2=strlen(b);
   if(num1[i]!=num2[i]) flag=0;
   
   }
-  if(flag) printf("YES");
-  else printf("NO");
+  if(flag) my_printf("YES");
+  else my_printf("NO");
 }

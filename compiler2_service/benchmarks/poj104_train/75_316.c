@@ -7,8 +7,8 @@ int main_bench()
 	i=0;
 	while(i<1002)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c);
 		if(c=='\n')
 		{
 			ren=i+1;
@@ -19,10 +19,10 @@ int main_bench()
 	i=0;
 	while(i<ren-1)
 	{
-		scanf("%d%c",&b[i],&c);
+		my_scanf("%d%c",&b[i],&c);
 		i++;
 	}
-	scanf("%d",&b[ren-1]);
+	my_scanf("%d",&b[ren-1]);
 	for(i=0,j=1;j<1000;i++,j++)
 	{
 		for(k=0;k<ren;k++)
@@ -38,6 +38,6 @@ int main_bench()
 		}
 		p=0;
 	}
-	printf("%d %d",ren,max);
+	my_printf("%d %d",ren,max);
 	return 0;
 }

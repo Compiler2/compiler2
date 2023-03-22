@@ -3,10 +3,10 @@
 int main_bench(){
 	int n, m=0, sz[100], i, j, sz2[100], e;
 	char zf[100][20], f[20], zf2[100][20];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%s", zf[i]);
-		scanf("%d", &sz[i]);
+		my_scanf("%s", zf[i]);
+		my_scanf("%d", &sz[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]>=60){
@@ -34,10 +34,10 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%s\n", zf2[i]);
+		my_printf("%s\n", zf2[i]);
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n", zf[i]);
+		my_printf("%s\n", zf[i]);
 	}
 	return 0;
 }

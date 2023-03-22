@@ -43,8 +43,8 @@ main_bench()
        a[i]=left(s[i],a[i]);
      puts(s);
      for(i=0;i<strlen(s);i++)
-       printf("%c",a[i]);
-       printf("\n");
+       my_printf("%c",a[i]);
+       my_printf("\n");
    }
   return 0;
 }

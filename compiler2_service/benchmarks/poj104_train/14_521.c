@@ -29,11 +29,11 @@ int main_bench()
 	int i;
 	int n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d %d %d",&stu[i].id,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].id,&stu[i].chinese,&stu[i].math);
 	bubble(stu,n);
 	for(p=stu;p<stu+3;p++)
-		printf("%d %d%c",p->id,p->chinese+p->math,(p==stu+n-1)?'\0':'\n');
+		my_printf("%d %d%c",p->id,p->chinese+p->math,(p==stu+n-1)?'\0':'\n');
 	return 0;
 }

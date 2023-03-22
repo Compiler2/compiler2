@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s1[256],s2[256],s3[256];
 	int i,j,length1,length2,k;
-	scanf("%s%s%s",s1,s2,s3);
+	my_scanf("%s%s%s",s1,s2,s3);
 	length1=strlen(s1);
 	length2=strlen(s2);
 	for(i=0;i<length1;i++)
@@ -19,6 +19,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%s",s1);
+	my_printf("%s",s1);
 	return 0;
 }

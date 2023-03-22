@@ -5,10 +5,10 @@ int main_bench()
  int n,j,s[250];
  int year,month1,month2,p;
  int monthday[12]={31,28,31,30,31,30,31,31,30,31,30,31};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(j=1;j<=n;j++)
 {
- scanf("%d %d %d",&year,&month1,&month2);
+ my_scanf("%d %d %d",&year,&month1,&month2);
  int i;
  int sum1=0;
  for(i=1;i<month1;i++)
@@ -32,8 +32,8 @@ for(k=1;k<month2;k++)
 }
 for(j=1;j<=n;j++)
 {if(s[j]==1)
- printf("YES\n");
- else printf("NO\n");
+ my_printf("YES\n");
+ else my_printf("NO\n");
 }
  return 0;
 }

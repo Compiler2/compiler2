@@ -16,11 +16,11 @@ int run(int year)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i = 1;i<=n;i++)
 	{
 		int year,m1,m2;
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		int m[13];
 		m[1] = 31;
 		m[2] = 28;
@@ -68,9 +68,9 @@ int main_bench()
 			}
 		}
 		if((p-q)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

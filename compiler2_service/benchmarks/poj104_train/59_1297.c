@@ -5,7 +5,7 @@ int main_bench()
 	int n,m;
 	int i,j,k,mark[102][102],markb[102][102];
 	char a[102][102];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n+1;i++)
 	{
 		for(j=0;j<=n+1;j++)
@@ -18,7 +18,7 @@ int main_bench()
 		getchar();
 		for(j=1;j<=n;j++)
 		{
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 			if(a[i][j]=='.')
 				mark[i][j]=0;
 			else if(a[i][j]=='@')
@@ -29,7 +29,7 @@ int main_bench()
 		}
 	}
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<m;k++)
 	{
 		for(i=1;i<=n;i++)
@@ -62,7 +62,7 @@ int main_bench()
 				count++;
 		}
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 
 	return 0;
 }

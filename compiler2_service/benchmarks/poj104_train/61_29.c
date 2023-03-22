@@ -15,11 +15,11 @@ int value(int a){
 }
 int main_bench(){
 	int a,i,n,result;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		result=value(a);
-		printf("%d\n",result);
+		my_printf("%d\n",result);
 	}
 	return 0;
 }

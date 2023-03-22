@@ -10,7 +10,7 @@ int main_bench()
 	
 	int m,n,k,mark=0,mark1,mark2;
 	
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(k=m;k<=n;k++)
 	{
 		mark1=huiwen(k);
@@ -19,13 +19,13 @@ int main_bench()
 		{
 			if(mark==0)
 			{
-				printf("%d",k);
+				my_printf("%d",k);
 				mark=1;
 			}
-			else printf(",%d",k);
+			else my_printf(",%d",k);
 		}
 	}
-	if(mark==0)printf("no\n");
+	if(mark==0)my_printf("no\n");
 }
 int huiwen(int k)
 {

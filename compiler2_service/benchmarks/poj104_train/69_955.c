@@ -48,15 +48,15 @@ int main_bench()
 	
 		if(start)
 		{
-			printf("%d",bb[i]);
+			my_printf("%d",bb[i]);
 		}
 		else if(bb[i]!=0)
 		{
-			printf("%d",bb[i]);
+			my_printf("%d",bb[i]);
 			start=1;
 		}
 	}
-	if(!start) printf("0");
+	if(!start) my_printf("0");
 
 }
 

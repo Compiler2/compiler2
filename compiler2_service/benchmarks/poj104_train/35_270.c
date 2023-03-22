@@ -4,10 +4,10 @@ int main_bench()
 {
 int row, line, l, r, t=9, s=9, q=9;
 	int a[8][8], max=0, min=100;
-	scanf("%d,%d", &row, &line);
+	my_scanf("%d,%d", &row, &line);
 	for(r=0;r<row;r++){
 		for(l=0;l<line;l++){
-			scanf("%d", &a[r][l]);
+			my_scanf("%d", &a[r][l]);
 		}
 	}
 	for(r=0;r<row;r++){
@@ -32,8 +32,8 @@ int row, line, l, r, t=9, s=9, q=9;
 		}
 	}
 	if(q!=9&&t!=9)
-		printf("%d+%d", q, t);
+		my_printf("%d+%d", q, t);
 	else 
-		printf("No");
+		my_printf("No");
 	return 0;
 }

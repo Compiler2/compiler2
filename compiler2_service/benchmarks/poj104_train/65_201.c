@@ -7,11 +7,11 @@ int main_bench()
     int x[201];
     int y[201];
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
    {
-      scanf("%d",&(x[i]));
-      scanf("%d",&(y[i]));
+      my_scanf("%d",&(x[i]));
+      my_scanf("%d",&(y[i]));
     }
   a=b=0;
   
@@ -41,12 +41,12 @@ int main_bench()
     }
 
 
-  if(a>b) printf("A");
+  if(a>b) my_printf("A");
 else
 {
-  if(a<b) printf("B");
+  if(a<b) my_printf("B");
 
-  else printf("Tie");
+  else my_printf("Tie");
 }
 
 

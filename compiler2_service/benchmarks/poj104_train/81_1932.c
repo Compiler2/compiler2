@@ -7,18 +7,18 @@ int t[5][5];
 int m,n,i,j,c;
 for(i=0;i<5;i++)
 for(j=0;j<5;j++)
-{scanf("%d",&t[i][j]);}
-scanf("%d%d",&m,&n);
+{my_scanf("%d",&t[i][j]);}
+my_scanf("%d%d",&m,&n);
 c=haha(m,n,t);
 if(c==0)
-printf("error");
+my_printf("error");
 else
 {
 for(i=0;i<5;i++)
 {for(j=0;j<4;j++)
-{printf("%d ",t[i][j]);}
-printf("%d",t[i][4]);
-printf("\n");}
+{my_printf("%d ",t[i][j]);}
+my_printf("%d",t[i][4]);
+my_printf("\n");}
 }
 return 0;
 }

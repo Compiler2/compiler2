@@ -7,10 +7,10 @@ int main_bench()
 	int dia[100];
 	int hours[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1,k=0,hour=0;i<=n;i++)
 	{
-		scanf("%d%d",&sys[i],&dia[i]);
+		my_scanf("%d%d",&sys[i],&dia[i]);
 		if(sys[i]<=140&&sys[i]>=90&&dia[i]<=90&&dia[i]>=60)
 		{
 			hour+=1;
@@ -32,6 +32,6 @@ int main_bench()
 			answer=answer;
 	}
 	answer=k;
-	printf("%d\n",answer);
+	my_printf("%d\n",answer);
 	return 0;
 }

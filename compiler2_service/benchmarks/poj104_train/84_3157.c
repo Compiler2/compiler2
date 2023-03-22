@@ -5,13 +5,13 @@ void operate(int a[],int n)
 	for(i=0;i<n;i++)
 	 if(a[i]>max) {pointer=i;max=a[i];}
 	a[pointer]=0;
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }
 int main_bench()
 {	int i,n,a[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	operate(a,n);
 	operate(a,n);
 }

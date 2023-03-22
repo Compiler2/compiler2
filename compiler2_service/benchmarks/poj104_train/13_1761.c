@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n,num,e[20001],i,j;
-    scanf("%d/n",&n);
+    my_scanf("%d/n",&n);
     if(n==1)
     {
-           scanf("%d",&num);
-           printf("%d",num);
+           my_scanf("%d",&num);
+           my_printf("%d",num);
     }else{ 
            for(i=1;i<=n;++i)
            {
-                     scanf("%d",&num);
+                     my_scanf("%d",&num);
                      e[i]=num;
                      if(i==1)
                      {
-                             printf("%d",e[1]);
+                             my_printf("%d",e[1]);
                      }else{
                             for(j=1;j<i;j++)
                             {
@@ -27,7 +27,7 @@ int main_bench()
                                                     }
                                                     if(e[i]!=0)
                                                     {
-                                                               printf(" %d",e[i]);
+                                                               my_printf(" %d",e[i]);
                                                                }
                                                                }
                                                                }

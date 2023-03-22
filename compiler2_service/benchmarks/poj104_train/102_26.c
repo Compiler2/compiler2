@@ -4,10 +4,10 @@ int main_bench(){
 	int i,n,j=0,l=0,k;
 	float h,x[100],y[100],e;
 	char a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a);
-		scanf("%f",&h);
+		my_scanf("%s",a);
+		my_scanf("%f",&h);
 		if(a[0]=='m'){
 			x[j]=h;
 			j++;}
@@ -34,12 +34,12 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%.2f",x[0]);
+	my_printf("%.2f",x[0]);
 	for(i=1;i<j;i++){
-		printf(" %.2f",x[i]);
+		my_printf(" %.2f",x[i]);
 	}
 	for(i=l-1;i>=0;i--){
-		printf(" %.2f",y[i]);
+		my_printf(" %.2f",y[i]);
 	}
 	return 0;
 }

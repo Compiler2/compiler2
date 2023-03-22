@@ -6,11 +6,11 @@ int la,lb;
 void read(int a[],int b[])
 {
 	int i;
-	scanf("%d %d",&la,&lb);
+	my_scanf("%d %d",&la,&lb);
 	for(i=0;i<la;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<lb;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 }
 
 void sort(int a[],int b[])
@@ -56,9 +56,9 @@ void print(int a[])
 	for(i=0;i<(la+lb);i++)
 	{
 		if (i!=(la+lb-1))
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 		else
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 	}
 }
 

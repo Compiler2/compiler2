@@ -16,7 +16,7 @@ struct in
 int main_bench()
 {
 	int n,num_;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct f *p2,*p3;
 	struct in *p1;
 	struct in*cr(int x);
@@ -28,12 +28,12 @@ int main_bench()
 	sort(p2,num_);
 	while(p2)
 	{
-		printf("%s\n",p2->id);
+		my_printf("%s\n",p2->id);
 		p2=p2->next;
 	}
 	while(p3)
 	{
-		printf("%s\n",p3->id);
+		my_printf("%s\n",p3->id);
 		p3=p3->next;
 	}	
 }
@@ -54,7 +54,7 @@ struct in*cr(int x)
 	for(i=0;i<x;i++)
 	{
 		p=(struct f*)malloc(sizeof (struct f));
-		scanf("%s %d",p->id_,&p->age);
+		my_scanf("%s %d",p->id_,&p->age);
 		if(p->age>=60)
 		{
 			p4->age=p->age;

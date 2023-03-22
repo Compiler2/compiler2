@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[100];
 	char res[100];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	int n= strlen(str);
 	int mod = 0;
 	int shang;
@@ -21,8 +21,8 @@ int main_bench()
 	}
 	res[n] = '\0';
 	if(n<=nLag)
-		printf("%s\n","0");
+		my_printf("%s\n","0");
 	else
-		printf("%s\n",res+nLag);
-	printf("%d\n",mod);
+		my_printf("%s\n",res+nLag);
+	my_printf("%d\n",mod);
 }

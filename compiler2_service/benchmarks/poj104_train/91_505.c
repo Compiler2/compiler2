@@ -16,7 +16,7 @@ int main_bench()
 		if(i+1==num)
 			b[i]=c[0]+c[i];
 		else b[i]=c[i]+c[i+1];
-			printf("%c",b[i]);
+			my_printf("%c",b[i]);
 	}
 	return 0;
 

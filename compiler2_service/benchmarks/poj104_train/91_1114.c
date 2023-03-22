@@ -10,7 +10,7 @@ int main_bench()
 		if(i!=n-1)
 		{ans[i]=c[i]+c[i+1];}
 		else ans[i]=c[i]+c[0];
-		printf("%c",ans[i]);
+		my_printf("%c",ans[i]);
 	}
 	return 0;
 }

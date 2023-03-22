@@ -4,9 +4,9 @@ int a[10000],b[10000],t[10000];
 double c[10000],p[10000];
 int main_bench(){
 	int m,i,j,maxt=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&t[i]);
+		my_scanf("%d",&t[i]);
 	}
 	for(i=0;i<m;i++){
 		if(t[i]>maxt){
@@ -29,7 +29,7 @@ int main_bench(){
 		for(j=0;j<t[i];j++){
 			p[i]+=c[j];
 		}
-		printf("%.3lf\n",p[i]);
+		my_printf("%.3lf\n",p[i]);
 	}
 	return 0;
 }

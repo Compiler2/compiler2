@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,i;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if (((y%4==0)&&(y%100!=0))||(y%400==0))
 	{
 
@@ -79,6 +79,6 @@ int main_bench()
 	
 	}
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	return 0;
 }

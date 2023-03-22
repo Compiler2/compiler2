@@ -3,9 +3,9 @@
 int main_bench(){
     char z[1000][1000],s[1000][1000];
 	int n,i,k,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%s\n",z[i]);
+		my_scanf("%s\n",z[i]);
 	}
 	for(i=0;i<=n-1;i++){
 		for(k=0;z[i][k]!=0;k++){
@@ -24,7 +24,7 @@ int main_bench(){
 		}
 	}
 		for(i=0;i<=n-1;i++){
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 		}
 	return 0;
 }

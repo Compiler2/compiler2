@@ -6,13 +6,13 @@ int main_bench()
 
     int i,j,k,l1,n,l2;
     double m;
-    scanf("%lf",&m);
-    scanf("%s",s1);
-    scanf("%s",s2);
+    my_scanf("%lf",&m);
+    my_scanf("%s",s1);
+    my_scanf("%s",s2);
     l1=strlen(s1);
     l2=strlen(s2);
    
-    if (l1!=l2) printf("error");
+    if (l1!=l2) my_printf("error");
     else 
     {   
         n=0;
@@ -20,13 +20,13 @@ int main_bench()
         {
           if (((s1[i]!='A')&&(s1[i]!='T')&&(s1[i]!='C')&&(s1[i]!='G'))||((s2[i]!='A')&&(s2[i]!='T')&&(s2[i]!='C')&&(s2[i]!='G')))
           {
-             printf("error");
+             my_printf("error");
               exit (0);            
              }
           if (s1[i]==s2[i]) n++;
           }
-         if (1.0*n/l1>=m) printf("yes");
-         else printf("no");
+         if (1.0*n/l1>=m) my_printf("yes");
+         else my_printf("no");
          }                                                                       
          return 0; 
 }

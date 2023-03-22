@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n1,n2,mianji,temp=0,a=0,b=0,n,c;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(n1=1;n1<=n;n1++)
 {
  for(n2=1;n2<=n;n2++)
    {
-     scanf("%d",&c);
+     my_scanf("%d",&c);
      if(c==0)
      b++;
     }
@@ -19,5 +19,5 @@ for(n1=1;n1<=n;n1++)
     }
 }
 mianji=(a-2)*(b/2-a);
-printf("%d",mianji);
+my_printf("%d",mianji);
 }

@@ -13,12 +13,12 @@ int main_bench()
 			{word=word+1;
 				}
 			else if(string[i+1]=='\0')
-			printf("%d",word+1);
+			my_printf("%d",word+1);
 			
 		}
 	else	if(c==' ')
 	      {if(string[i-1]!=' ')  
-	      {	printf("%d,",word);
+	      {	my_printf("%d,",word);
 	      	word=0;}
 	      	else ;
 	      }

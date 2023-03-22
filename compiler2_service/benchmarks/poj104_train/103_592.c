@@ -23,7 +23,7 @@ main_bench()
       }
       else
       {
-      printf("(%c,%d)",str[i],k);
+      my_printf("(%c,%d)",str[i],k);
       i=i+1;
       k=1;
       }

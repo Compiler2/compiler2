@@ -6,10 +6,10 @@ int main_bench()
     double c[1000];
     double sum=0;
     int n,m,i,j;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(j=0;j<m;j++)
     {
-        scanf("%d",&n);
+        my_scanf("%d",&n);
         a[0]=2,b[0]=1;
         sum=2.0;
         for(i=1;i<n;i++)
@@ -19,7 +19,7 @@ int main_bench()
            c[i]=a[i]/b[i];
            sum+=c[i];
         }
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
     }
     return 0;
 }

@@ -6,9 +6,9 @@ int main_bench(){
 		
 	
 		int i=0,j=0,k=0,flag=0,n=0,num=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 		
 		number[i]=strlen(word[i]);
 		
@@ -23,9 +23,9 @@ int main_bench(){
 		while(((num+number[i]+j)<=80)&&(!flag)){
 			
 			if((num+number[i]+number[i+1]+j)>=80){
-				printf("%s",word[i]);
+				my_printf("%s",word[i]);
 			}else {
-				printf("%s ",word[i]);
+				my_printf("%s ",word[i]);
 			}
 			num+=number[i];
 			i++;
@@ -33,9 +33,9 @@ int main_bench(){
 			if(i==n-1)flag=1;
 		}
 		if(i==n-1){
-			printf("%s\n",word[i]);
+			my_printf("%s\n",word[i]);
 		}else{
-			printf("\n");
+			my_printf("\n");
 		}
 		j=0;
 		num=0;

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,t1=0,t2=0,i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100];
 	
 			while(i<n)
 	{
-			scanf("%d",&sz[i]);
+			my_scanf("%d",&sz[i]);
             if(i==0)
 			{
 					t1=sz[i];
@@ -25,6 +25,6 @@ int main_bench()
 			}
 		i++;
 	}
-	printf("%d\n%d",t1,t2);
+	my_printf("%d\n%d",t1,t2);
 	return 0;
 }

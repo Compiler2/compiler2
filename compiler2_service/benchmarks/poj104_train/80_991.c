@@ -3,8 +3,8 @@
 int main_bench()
 {
     int sy,sm,sd,ey,em,ed,day,a,b,c,d,i;
-    scanf("%d%d%d",&sy,&sm,&sd);
-    scanf("%d%d%d",&ey,&em,&ed);
+    my_scanf("%d%d%d",&sy,&sm,&sd);
+    my_scanf("%d%d%d",&ey,&em,&ed);
 
     day=0;
 
@@ -194,7 +194,7 @@ int main_bench()
           {day=day;}
     }
     }
-    printf("%d",day);
+    my_printf("%d",day);
     return 0;
 }
 

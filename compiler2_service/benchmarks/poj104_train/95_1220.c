@@ -14,11 +14,11 @@ main_bench()
                                if(s2[i]>='a'&&s2[i]<='z') s2[i]=s2[i]-'a'+'A';
                                if(s1[i]!=s2[i]) 
                                {
-                                                printf((s1[i]>s2[i])?">":"<");
+                                                my_printf((s1[i]>s2[i])?">":"<");
                                                 break;
                                }
                                
       }
       if(!s1[i]&&!s2[i])
-      printf("=");
+      my_printf("=");
       }

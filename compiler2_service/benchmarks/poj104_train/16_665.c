@@ -3,16 +3,16 @@
 int main_bench()
 {
     int n,x,y,z,w,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<=9)
-        printf("%d",n);
+        my_printf("%d",n);
     else
     {    
         x=n%10;
         if(n<=99)
 	{    
 	    y=(n-x)/10;
-            printf("%d%d",x,y);
+            my_printf("%d%d",x,y);
 	}
         else
         {    
@@ -21,7 +21,7 @@ int main_bench()
             if(n<=999)
 	    {    
 	        z=(n-t)/100;
-                printf("%d%d%d",x,y,z);
+                my_printf("%d%d%d",x,y,z);
 	    }
             else
             {    
@@ -30,10 +30,10 @@ int main_bench()
                 if(n<=9999)
 		{     
 	            w=(n-t)/1000;
-                    printf("%d%d%d%d",x,y,z,w);
+                    my_printf("%d%d%d%d",x,y,z,w);
 		}
             	else
-                    printf("00001");
+                    my_printf("00001");
             }
         }
      }

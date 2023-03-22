@@ -3,7 +3,7 @@
 int main_bench()
 {
    char z1[51],z2[51];
-   scanf("%s %s",z1,z2);
+   my_scanf("%s %s",z1,z2);
    int p,q;
    p=strlen(z1);
    q=strlen(z2);
@@ -28,7 +28,7 @@ int main_bench()
 		   {
 			   if(h[k+1]==g[x+1])
 			   {
-				   printf("%d",k);
+				   my_printf("%d",k);
                    m=0;
 				   break;
 			   }

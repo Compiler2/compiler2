@@ -20,10 +20,10 @@ int main_bench(){
 	else if(a[h+1]-a[h]<a[j+1]-a[j]) j=h;
 	}
 	for(p=a[i];p<a[i+1]-1;p++)
-		printf("%c",b[p]);
-                   printf("\n");
+		my_printf("%c",b[p]);
+                   my_printf("\n");
 	for(p=a[j];p<a[j+1]-1;p++)
-		printf("%c",b[p]);
+		my_printf("%c",b[p]);
 
 	return 0;
 }

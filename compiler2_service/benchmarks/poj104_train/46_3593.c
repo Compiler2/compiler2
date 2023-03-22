@@ -4,17 +4,17 @@ int main_bench()
 {
 	int m,n,i,j,k,a,b,c;
 	int sz[100][100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0,a=0,b=1,j=0,k=0;i<m*n;i++,j+=a,k+=b)
 	{
-        printf("%d\n",sz[j][k]);
+        my_printf("%d\n",sz[j][k]);
 		if(a==0&&b==1&&j+k==n-1)
 		{
 			a=1;

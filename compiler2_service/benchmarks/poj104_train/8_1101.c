@@ -7,7 +7,7 @@ int*order(int*p,int k)
        p=(int*)malloc(k*sizeof(int));
        for(i=0;i<k;i++)
        {
-           scanf("%d",&p[i]);
+           my_scanf("%d",&p[i]);
        }
        for(i=k-1;i>=0;i--)
        {
@@ -40,15 +40,15 @@ int*merge(int*p,int*q,int m,int n)
 main_bench()
 {
       int m,n;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       int*a=(int*)malloc(m*sizeof(int));
       int*b=(int*)malloc(n*sizeof(int));
       a=order(a,m); 
       b=order(b,n);
       int*p=merge(a,b,m,n);
-      printf("%d",p[0]);
+      my_printf("%d",p[0]);
       for(int i=1;i<m+n;i++)
       {
-        printf(" %d",p[i]);
+        my_printf(" %d",p[i]);
       }
 }

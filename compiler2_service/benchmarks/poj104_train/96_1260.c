@@ -5,7 +5,7 @@ main_bench()
       char a[100];
       int c=0,l=0,i=0,j=0,d=0;
       int b[100]={0},f[100]={0};
-      scanf("%s",a);
+      my_scanf("%s",a);
       l=strlen(a);
       
       for(i=0;i<l;i++)    b[i]=a[i]-'0';
@@ -28,16 +28,16 @@ main_bench()
 			  j=d;   
 		  }
 		  if (f[0]!=0)
-          printf("%d",f[0]);
+          my_printf("%d",f[0]);
           for (i=1;i<l-1;i++)    
-		  printf("%d",f[i]); 
-          printf("\n%d",j);    
+		  my_printf("%d",f[i]); 
+          my_printf("\n%d",j);    
       }
       else if(l==2)
 	  { 
 	      c=b[0]*10+b[1];
-		  printf("%d\n%d",c/13,c%13); 
+		  my_printf("%d\n%d",c/13,c%13); 
 	  }
-	  else     printf("0\n%d",b[0]);
+	  else     my_printf("0\n%d",b[0]);
 
 }

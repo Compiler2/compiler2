@@ -14,11 +14,11 @@ int main_bench()
 {
 	static int n,i,j,m,k,g,sum=0,temp1[MAXN*MAXN+10],temp2[MAXN*MAXN+10],r;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		for(j=1;j<=n;j++)
 			a[i][j]=getAChar();
-	scanf("%d",&m);
+	my_scanf("%d",&m);
     for(k=1;k<m;k++){
 		r=1;
 		for(i=1;i<=n;i++)
@@ -47,7 +47,7 @@ int main_bench()
 			if(a[i][j]=='@'){sum+=1;}
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 	return 0;
 }

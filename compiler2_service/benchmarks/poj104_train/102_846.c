@@ -4,14 +4,14 @@ main_bench()
 {
       int n,i,p,q,t,Flag,j;
       double temp;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
     
       char a[100][6];
       p=0;q=0;
       double h[1000],g[1000],f[1000];
       for(i=0;i<n;i++)
       {Flag=0;
-             scanf("%s %lf",a[i],&h[i]);
+             my_scanf("%s %lf",a[i],&h[i]);
                     
                          if(a[i][0]=='m'&&a[i][1]=='a'&&a[i][2]=='l'&&a[i][3]=='e')
                               Flag=1;
@@ -49,15 +49,15 @@ main_bench()
      
      if(q==0)
      {for(i=0;i<p-1;i++)
-         printf("%.2lf ",g[i]);
-         printf("%.2lf",g[p-1]);}
+         my_printf("%.2lf ",g[i]);
+         my_printf("%.2lf",g[p-1]);}
      else
       {for(i=0;i<p;i++)
-         printf("%.2lf ",g[i]);
+         my_printf("%.2lf ",g[i]);
          }
       
       for(i=0;i<q-1;i++)
-         printf("%.2lf ",f[i]);
-         if(q>0) printf("%.2lf",f[q-1]);
+         my_printf("%.2lf ",f[i]);
+         if(q>0) my_printf("%.2lf",f[q-1]);
         
       }

@@ -4,8 +4,8 @@ int main_bench()
 {
 	int sty,stm,std,eny,enm,end;
 	int i,j,k,a,b;a=0;
-	scanf("%d %d %d",&sty,&stm,&std);
-	scanf("%d %d %d",&eny,&enm,&end);
+	my_scanf("%d %d %d",&sty,&stm,&std);
+	my_scanf("%d %d %d",&eny,&enm,&end);
 	int daysto1_1_(int n);
 	std=std+daysto1_1_(stm);
 	end=end+daysto1_1_(enm);
@@ -18,7 +18,7 @@ int main_bench()
     if ((enm>=2&&eny%4==0&&eny%100!=0)||eny%400==0)
 	{a++;}
 	b=end-std+a+365*(eny-sty);
-	printf("%d",b);
+	my_printf("%d",b);
 }
 int daysto1_1_(int n)
 {

@@ -4,25 +4,25 @@ main_bench()
 {
       int a[100][100],b[100][100],x1,y1,x2,y2,x3,y3,c,d,e[100][100];
       char i;
-      scanf ("%d %d",&x1,&y1);
+      my_scanf ("%d %d",&x1,&y1);
      
       for (c=0;c<=x1-1;c++)
       {
           for (d=0;d<=y1-1;d++)
           {
-          scanf("%d%c",&a[c][d],&i);
+          my_scanf("%d%c",&a[c][d],&i);
           if (i!=' ')
           break;
           else ;
           }
           
       }
-       scanf ("%d %d",&x2,&y2);
+       my_scanf ("%d %d",&x2,&y2);
       for (c=0;c<=x2-1;c++)
       {
           for (d=0;d<=y2-1;d++)
           {
-          scanf("%d%c",&b[c][d],&i);
+          my_scanf("%d%c",&b[c][d],&i);
           if (i!=' ')
           break;
           else ;
@@ -49,9 +49,9 @@ main_bench()
       {
           for (d=0;d<=y3-2;d++)
           {
-          printf("%d ",e[c][d]);
+          my_printf("%d ",e[c][d]);
           }
-      printf("%d\n",e[c][y3-1]);
+      my_printf("%d\n",e[c][y3-1]);
       }
       
       

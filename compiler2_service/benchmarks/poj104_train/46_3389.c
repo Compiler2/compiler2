@@ -4,12 +4,12 @@ int main_bench()
 {
 	int m,n,i,j,num[100][100];
 	int flag = -1;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0; j<n; j++)
 		{
-			scanf("%d", &num[i][j]);
+			my_scanf("%d", &num[i][j]);
 		}
 		
 
@@ -28,7 +28,7 @@ int main_bench()
 	{
 		if(num[i][j] != -10)
 		{
-			printf("%d\n", num[i][j]);
+			my_printf("%d\n", num[i][j]);
 			num[i][j] = -10;
 		}
 		else

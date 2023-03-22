@@ -13,7 +13,7 @@ for(i=0;i<=cout-2;i++){
 }
 b[cout-1]=(int)a[cout-1]+(int)a[0];
 for(i=0;i<=cout-1;i++)
-{printf("%c",b[i]);}
+{my_printf("%c",b[i]);}
 
 
 return 0;

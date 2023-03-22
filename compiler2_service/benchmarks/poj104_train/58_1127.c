@@ -5,7 +5,7 @@ int main_bench()
       char s[90];
       int i,n,j;
       
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       gets(s);
       for (i=0;i<n;i++)
       {
@@ -18,12 +18,12 @@ int main_bench()
                   else
                       break;
               if (j==strlen(s))
-                  printf("1\n");
+                  my_printf("1\n");
               else
-                  printf("0\n");
+                  my_printf("0\n");
           }
           else
-              printf("0\n");
+              my_printf("0\n");
       }
 }
 

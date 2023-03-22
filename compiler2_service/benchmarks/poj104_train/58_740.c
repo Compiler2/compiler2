@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,ans;
 	char s[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
 	{
 		gets(s);
@@ -16,7 +16,7 @@ int main_bench()
 				else continue;
 		else 
 			ans=0;
-		printf("%d\n",ans);
+		my_printf("%d\n",ans);
 	}
 	return 0;
 }

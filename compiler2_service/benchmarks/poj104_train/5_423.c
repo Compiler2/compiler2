@@ -7,28 +7,28 @@ z=0;
 u=0;
 char a[500];
 char b[500];
-scanf("%lf",&r);
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%lf",&r);
+my_scanf("%s",a);
+my_scanf("%s",b);
 for(i=0;a[i]!='\0';i++){
 if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C'){
-printf("error");
+my_printf("error");
 z=1;
 break;
 }
 if(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C'){
-printf("error");
+my_printf("error");
 z=1;
 break;
 }
 if(b[i]=='\0'){
-printf("error");
+my_printf("error");
 z=1;
 break;
 }
 }
 if(b[i]!='\0'&&z==0){
-printf("error");
+my_printf("error");
 }
 else if(z==0){
 for(k=0;k<i;k++){
@@ -38,10 +38,10 @@ u=u+1;
 }
 t=1.0*u/i;
 if(t>r){
-printf("yes");
+my_printf("yes");
 }
 if(t<=r){
-printf("no");
+my_printf("no");
 }
 }
 return 0;

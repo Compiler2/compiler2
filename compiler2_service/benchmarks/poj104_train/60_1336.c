@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int i,t,flag,x,y,z;
-	scanf("%d",&x);
-	if(x<5) printf("empty\n");
+	my_scanf("%d",&x);
+	if(x<5) my_printf("empty\n");
 	else
 	{
 	for( i=2; i<=x-2; i++)
@@ -29,7 +29,7 @@ int main_bench()
                     }
               }
               if((i+2)==y)
-              printf("%d %d\n",i,i+2);
+              my_printf("%d %d\n",i,i+2);
         }          
       
 	} 

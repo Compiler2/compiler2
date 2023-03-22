@@ -4,7 +4,7 @@ int main_bench()
 {
 	char beichu[110];
 	int shang[110];
-	scanf("%s",beichu);
+	my_scanf("%s",beichu);
 	int sheng,i;
 	sheng=beichu[0]-'0';
 	shang[0]=0;
@@ -27,12 +27,12 @@ int main_bench()
 		if(shang[i]!=0)
 			flag=1;
 		if(flag==1)
-		printf("%d",shang[i]);
+		my_printf("%d",shang[i]);
 
 	}
 	if(flag==0)
-		printf("0");
-	printf("\n%d\n",sheng);
+		my_printf("0");
+	my_printf("\n%d\n",sheng);
 	
 	return 0;
 }

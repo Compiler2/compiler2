@@ -36,14 +36,14 @@ int dingwei(char duan[50],char chang[50])
 int main_bench()
 {
 	char zfc[300],beiti[256],ti[256];
-	scanf("%s%s%s",zfc,beiti,ti);
+	my_scanf("%s%s%s",zfc,beiti,ti);
 	int lenzfc,lenbt,lent,weizhi,i;
 	lenzfc=strlen(zfc);
 	lenbt=strlen(beiti);
 	lent=strlen(ti);
 	weizhi=dingwei(beiti,zfc);
 	if(weizhi<0){
-		printf("%s\n",zfc);
+		my_printf("%s\n",zfc);
 	}else{
 		if(lenbt==lent){
 			for(i=0;i<lenbt;i++){
@@ -68,7 +68,7 @@ int main_bench()
 			}
 			zfc[lenzfc+lent-lenbt]='\0';
 		}
-		printf("%s\n",zfc);
+		my_printf("%s\n",zfc);
 	}
 	return 0;
 }

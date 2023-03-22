@@ -6,7 +6,7 @@ int main_bench()
     int startyear,startmonth,startday,endyear,endmonth,endday,i,sum;
     int a[13];
     sum=0;
-    scanf("%d%d%d\n%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+    my_scanf("%d%d%d\n%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
     for(i=1;i<=12;i++)
 	{
 		
@@ -67,6 +67,6 @@ int main_bench()
 					   }
                        sum+=endday;
 			  }
-   printf("%d",sum);
+   my_printf("%d",sum);
    return 0;
 }

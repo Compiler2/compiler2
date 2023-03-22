@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[100],n,i,j,m=0,k,x,b[100];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 for(i=0;i<n;i++)
 b[i]=a[i];
 for(j=0;j<n;j++)
@@ -28,7 +28,7 @@ for(j=0;j<n;j++)
 			}
 	}
 	for(i=0;i<n-m-1;i++)
-		printf("%d,",a[i]);
-	printf("%d",a[n-m-1]);
+		my_printf("%d,",a[i]);
+	my_printf("%d",a[n-m-1]);
 
 }

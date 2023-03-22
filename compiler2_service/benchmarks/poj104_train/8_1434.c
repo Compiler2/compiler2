@@ -6,9 +6,9 @@ void shuru(int a[],int b[],int m,int n)
     int *p=a,*q=b;
     int i,j;
     for(i=0;i<m;i++)
-    {scanf("%d",p);p++;}
+    {my_scanf("%d",p);p++;}
     for(j=0;j<n;j++)
-    {scanf("%d",q);q++;}
+    {my_scanf("%d",q);q++;}
 }
 void paixu(int a[],int m)
 {
@@ -39,16 +39,16 @@ void hebing(int a[],int b[],int c[],int m,int n)
 void shuchu(int a[],int b)
 {
     int c;
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for(c=1;c<b;c++)
     {
-        printf(" %d",a[c]);
+        my_printf(" %d",a[c]);
     }
 }
 int main_bench()
 {
     int a[1000]={0},b[1000]={0},c[2000]={0},m,n;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     shuru(a,b,m,n);
     paixu(a,m);paixu(b,n);
     hebing(a,b,c,m,n);

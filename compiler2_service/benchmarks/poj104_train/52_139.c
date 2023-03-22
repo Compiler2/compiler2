@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n, m, i, j, temp;
 	int * array;
-	scanf("%d %d", &n, &m);
+	my_scanf("%d %d", &n, &m);
 	array = (int *)malloc(sizeof(int)*n);
 	for (i=0; i<n; i++) {
-		scanf("%d", &array[i]);
+		my_scanf("%d", &array[i]);
 	}
 	m = m % n;
 	for (i=0; i<m; i++) {	
@@ -18,9 +18,9 @@ int main_bench()
 		*(array+0) = temp;
 	}
 	for (i=0; i<n-1; i++) {
-		printf("%d ", *(array+i));
+		my_printf("%d ", *(array+i));
 	}
-	printf("%d\n", *(array+i));
+	my_printf("%d\n", *(array+i));
 	free(array);
 	return 0;
 }

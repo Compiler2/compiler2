@@ -5,10 +5,10 @@ main_bench()
 {
       int n,i,j, c,d;
       int a=0,b=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
      for(i=0;i<n;i++)
      {
-      scanf("%d%d",&c,&d);
+      my_scanf("%d%d",&c,&d);
       if(c==0&&d==1)a++;
    if(c==0&&d==2)b++;
        if(c==1)
@@ -20,8 +20,8 @@ main_bench()
      if(d==1)b++;}
                           
      }
-                          if(a>b)printf("A");
-                          else if(a<b)printf("B");
-                          else printf("Tie");
+                          if(a>b)my_printf("A");
+                          else if(a<b)my_printf("B");
+                          else my_printf("Tie");
        }
 

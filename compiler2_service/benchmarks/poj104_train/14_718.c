@@ -12,10 +12,10 @@ int main_bench()
 	max1=max2=max3=0;
 	m1=m2=m3=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-        scanf("%s %d %d",stu.NUM,&(stu.Ma),&(stu.Ch));
+        my_scanf("%s %d %d",stu.NUM,&(stu.Ma),&(stu.Ch));
 		x=stu.Ma+stu.Ch;
 	    if(x>max1)
 		{
@@ -53,8 +53,8 @@ int main_bench()
 	}
 	}
 	
-	printf("%d %d\n",m1,max1);
-	printf("%d %d\n",m2,max2);
-	printf("%d %d\n",m3,max3);
+	my_printf("%d %d\n",m1,max1);
+	my_printf("%d %d\n",m2,max2);
+	my_printf("%d %d\n",m3,max3);
 	return 0;
 }

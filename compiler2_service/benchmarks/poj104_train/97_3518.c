@@ -4,7 +4,7 @@ int main_bench()
 {
     int deno[6] = {100,50,20,10,5,1};
     int money;
-    scanf("%d",&money);
+    my_scanf("%d",&money);
     int count[6];
     for (int i=0;i<6;++i) count[i] = 0;
     while (money!=0)
@@ -21,7 +21,7 @@ int main_bench()
     }
     for (int i=0;i<6;++i)
     {
-        printf("%d\n",count[i]);    
+        my_printf("%d\n",count[i]);    
     }        
     return 0;
 }

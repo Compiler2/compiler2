@@ -3,17 +3,17 @@
 int main_bench(){ 
 	int i=0,n;
 	int front=0,back=0; 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<3||n>50000) {  
-		printf("no");
+		my_printf("no");
 		return 0;
 	}
 	int *a=(int *)malloc(n*sizeof(int)); 
 	int *b=(int *)malloc(n*sizeof(int)); 
 	while(i<n) { 
-		scanf("%d %d",a+i,b+i); 
+		my_scanf("%d %d",a+i,b+i); 
 		if(a[i]>b[i])  {  
-			printf("input error");   
+			my_printf("input error");   
 			return 0;  
 		}
 		if((front!=back&&a[i]<front)||front==back) {  
@@ -31,11 +31,11 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){ 
 		if(a[i]<front||b[i]>back)  {
-			printf("no");
+			my_printf("no");
 			return 0;  
 }
  }
 	free(a);
 	free(b); 
-	printf("%d %d\n",front,back);
+	my_printf("%d %d\n",front,back);
 }

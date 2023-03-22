@@ -19,7 +19,7 @@ int sum1(int year,int month, int day)
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
-	scanf("%d%d%d %d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d%d%d %d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
 	int i,sum=0;
 	for(i=sy+1;i<ey;i++)
 	{  if(ryear(i)==1) sum+=366;
@@ -33,5 +33,5 @@ int main_bench()
 		sum=sum+end+365-start;
 	    if(ryear(sy)) sum++;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

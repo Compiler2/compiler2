@@ -6,9 +6,9 @@ int main_bench(){
 		int rp;
 	}qj[50000];
 	int n,i,j,maxr,minl,sig;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&qj[i].lp,&qj[i].rp);
+		my_scanf("%d %d",&qj[i].lp,&qj[i].rp);
 	}
 	minl=qj[0].lp;
 	maxr=qj[0].rp;
@@ -37,11 +37,11 @@ int main_bench(){
 		}
 	}
 	if(sig==0){
-		printf("no");
+		my_printf("no");
 	}
 	else{
 	
-	printf("%d %d",minl,maxr);
+	my_printf("%d %d",minl,maxr);
 	}
 	return 0;
 }

@@ -14,13 +14,13 @@ f(n/min, i);
 
 int main_bench() {
 int N,i,num,j;
-scanf("%d",&num);
+my_scanf("%d",&num);
 for(j=1;j<=num;j++){
 count = 0;
-scanf("%d",&N);
+my_scanf("%d",&N);
 for (i = 2; i <= N;i++)
 f(N, i);
-printf("%d\n",count);
+my_printf("%d\n",count);
 }
 return 0;
 }

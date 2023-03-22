@@ -8,7 +8,7 @@ int main_bench() {
 	int p=0;
 	while(i<5)
 	{
-		scanf("%d %d %d %d %d/n", &number[i][0], &number[i][1], &number[i][2], &number[i][3], &number[i][4]);
+		my_scanf("%d %d %d %d %d/n", &number[i][0], &number[i][1], &number[i][2], &number[i][3], &number[i][4]);
 		
 		i++;
 	}
@@ -48,7 +48,7 @@ int main_bench() {
 		}
 		if(x[0]==y[j])
 		{
-			printf("%d %d %d", (hang[0]+1),(lie[0]+1),x[0]);
+			my_printf("%d %d %d", (hang[0]+1),(lie[0]+1),x[0]);
 		}
 		else
 			p++;
@@ -68,7 +68,7 @@ int main_bench() {
 		}
 		if(x[1]==y[j])
 		{
-			printf("%d %d %d", (hang[1]+1),(lie[1]+1),x[1]);
+			my_printf("%d %d %d", (hang[1]+1),(lie[1]+1),x[1]);
 		}
 		else
 			p++;
@@ -87,7 +87,7 @@ int main_bench() {
 		}
 		if(x[2]==y[j])
 		{
-			printf("%d %d %d", (hang[2]+1),(lie[2]+1),x[2]);
+			my_printf("%d %d %d", (hang[2]+1),(lie[2]+1),x[2]);
 		}
 		else
 			p++;
@@ -106,7 +106,7 @@ int main_bench() {
 		}
 		if(x[3]==y[j])
 		{
-			printf("%d %d %d", (hang[3]+1),(lie[3]+1),x[3]);
+			my_printf("%d %d %d", (hang[3]+1),(lie[3]+1),x[3]);
 		}
 		else
 			p++;
@@ -125,13 +125,13 @@ int main_bench() {
 		}
 		if(x[4]==y[j])
 		{
-			printf("%d %d %d", (hang[4]+1),(lie[4]+1),x[4]);
+			my_printf("%d %d %d", (hang[4]+1),(lie[4]+1),x[4]);
 		}
 		else
 			p++;
 		if(p==5)
 		{
-			printf("not found");
+			my_printf("not found");
 		}
 
 			return 0;

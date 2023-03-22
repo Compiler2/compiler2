@@ -21,6 +21,6 @@ int main_bench()
 		}
 	}
 	s2[n][k]='\0';
-	for(i=n;i>0;i--)printf("%s ",s2[i]);
-	printf("%s",s2[0]);
+	for(i=n;i>0;i--)my_printf("%s ",s2[i]);
+	my_printf("%s",s2[0]);
 }

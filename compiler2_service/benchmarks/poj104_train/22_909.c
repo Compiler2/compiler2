@@ -6,7 +6,7 @@ int main_bench()
    char a;
    while(a!=10)
   {
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      a=getchar();
      k=k+1;
      r=r+1;
@@ -37,11 +37,11 @@ int main_bench()
           }
      }
     if(r==1)
-      printf("No");
+      my_printf("No");
     else if(p==q)
-      printf("No");
+      my_printf("No");
     else
-      printf("%d",p);
+      my_printf("%d",p);
    return 0;
 }
                  

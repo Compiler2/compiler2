@@ -23,13 +23,13 @@ int main_bench()
 	  }
   }
   if(strcmp(str1,str2)==0){
-	  printf("=\n");
+	  my_printf("=\n");
   }
   else if(strcmp(str1,str2)>0){
-	  printf(">\n");
+	  my_printf(">\n");
   }
 	else if(strcmp(str1,str2)<0){
-	  printf("<\n");
+	  my_printf("<\n");
   }
 	 return 0;
 }

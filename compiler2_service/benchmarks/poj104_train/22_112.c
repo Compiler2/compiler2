@@ -8,12 +8,12 @@ int main_bench()
 	int i,j;
 	int max=0,sec_max=0;
 
-	scanf("%d",&n[0]);
+	my_scanf("%d",&n[0]);
 
 	for(i=1;;i++)
 	{
 		if((c=getchar())!=',') break;
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 
 	for(j=0;j<i;j++)
@@ -31,6 +31,6 @@ int main_bench()
 		if(n[j]>sec_max) sec_max=n[j];
 	}
 
-    if(sec_max==0) printf("No");
-	else printf("%d",sec_max);
+    if(sec_max==0) my_printf("No");
+	else my_printf("%d",sec_max);
 }

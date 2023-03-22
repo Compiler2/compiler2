@@ -3,7 +3,7 @@
 main_bench()
 {
     char a[1000];
-scanf("%s",a);
+my_scanf("%s",a);
   int i,j;
    for(i=0;a[i]!='\0';)
               {    int kk=i;
@@ -24,7 +24,7 @@ scanf("%s",a);
                               if(a[ws]>=97)
                           a[ws]=a[ws]-32; 
                           
-                          printf("(%c,%d)",a[ws],ws-kk+1);
+                          my_printf("(%c,%d)",a[ws],ws-kk+1);
                           i=ws+1;     
                                 }
                        else{
@@ -32,7 +32,7 @@ scanf("%s",a);
                             
                               if(a[ws]>=97)
                           a[ws]=a[ws]-32; 
-                        printf("(%c,1)",a[ws]);
+                        my_printf("(%c,1)",a[ws]);
                            i++;}
 
 }

@@ -4,8 +4,8 @@ int main_bench()
 {
 	char str1[300],str2[300];
 	int i,j,m,n,leap=0,t;
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	m=strlen(str1);
 	n=strlen(str2);
 	if(m!=n)
@@ -33,10 +33,10 @@ int main_bench()
 	}
 	if(leap)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
-		printf("YES");
+		my_printf("YES");
 	}
 }

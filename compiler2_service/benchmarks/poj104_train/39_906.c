@@ -11,15 +11,15 @@ int main_bench()
 {
 	int N,i,max=0;
 	long int z=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s",a[i].x);
-		scanf("%d",&a[i].a1);
-		scanf("%d",&a[i].a2);
-		scanf(" %c",&a[i].g);
-		scanf(" %c",&a[i].s);
-		scanf("%d",&a[i].n);
+		my_scanf("%s",a[i].x);
+		my_scanf("%d",&a[i].a1);
+		my_scanf("%d",&a[i].a2);
+		my_scanf(" %c",&a[i].g);
+		my_scanf(" %c",&a[i].s);
+		my_scanf("%d",&a[i].n);
 	}
 	for(i=0;i<N;i++)
 		a[i].c=0;
@@ -47,7 +47,7 @@ int main_bench()
 	{
 		if(a[i].c==max)
 		{
-			printf("%s\n%d\n%ld",a[i].x,a[i].c,z);
+			my_printf("%s\n%d\n%ld",a[i].x,a[i].c,z);
 			break;
 		}
 	}

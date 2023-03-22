@@ -7,12 +7,12 @@ int main_bench()
  int zf[5][5];
  for(i=0;i<5;i++){
  	for(j=0;j<5;j++){
- 		scanf("%d",&zf[i][j]);
+ 		my_scanf("%d",&zf[i][j]);
  	}
  }
- scanf("%d %d", &n,&m);
+ my_scanf("%d %d", &n,&m);
  if((n>=5 || n<0) || (m>=5 || m<0)){
- 	printf("error");
+ 	my_printf("error");
  }else {
   for(i=0;i<5;i++){
   	if(i==n){
@@ -24,11 +24,11 @@ int main_bench()
   	}
   	for(j=0;j<5;j++){
   		if(j==0){
-  		printf("%d",zf[f][j]);
+  		my_printf("%d",zf[f][j]);
   		}else if(j==4){
-  		printf(" %d\n", zf[f][j]);
+  		my_printf(" %d\n", zf[f][j]);
   		}else {
-  		printf(" %d", zf[f][j]);
+  		my_printf(" %d", zf[f][j]);
   		}
   	}
   }

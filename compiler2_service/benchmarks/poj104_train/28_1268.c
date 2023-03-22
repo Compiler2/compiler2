@@ -18,6 +18,6 @@ for (i=0;(c=string[i])!='\0';i++)
            a[num-1]++;
    }
 for (i=0;i<num-1;i++)
-printf("%d,",a[i]);
-printf("%d",a[num-1]);
+my_printf("%d,",a[i]);
+my_printf("%d",a[num-1]);
 }

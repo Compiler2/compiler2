@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,judge=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int *b=(int *)malloc(n*sizeof(int));
     int i,j;
     for(i=2;i<=n;i++)
@@ -26,12 +26,12 @@ int main_bench()
     {
         if(b[k]+2==b[k+1])
         {
-            printf("%d %d\n",b[k],b[k+1]);
+            my_printf("%d %d\n",b[k],b[k+1]);
             count++;
         }
     }
     if(count==0)
     {
-        printf("empty");
+        my_printf("empty");
     }
 }

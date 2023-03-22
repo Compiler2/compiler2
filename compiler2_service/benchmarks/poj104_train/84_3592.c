@@ -8,12 +8,12 @@ int main_bench()
 	 int j,k,l,p;
 	 int max(int a,int b,int c), min(int a,int b,int c);
 
-	 scanf("%d\n",&num); 
+	 my_scanf("%d\n",&num); 
 
 	 for(i=0;i<=num-1;i++)
 	 {
 	
-		  scanf("%d\n",&s[i]);
+		  my_scanf("%d\n",&s[i]);
 	 }
 
 	 k=s[0];
@@ -30,7 +30,7 @@ int main_bench()
 	
 	
 
-	 printf("%d\n%d",k,j);
+	 my_printf("%d\n%d",k,j);
 
      return 0;
 }

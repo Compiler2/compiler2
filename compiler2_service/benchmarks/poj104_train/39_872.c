@@ -14,11 +14,11 @@ struct student
 int main_bench()
 {
 	int n,i,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s[i].name);
-		scanf("%d%d %c %c%d",&s[i].a,&s[i].b,&s[i].cla,&s[i].west,&s[i].paper);
+		my_scanf("%s",s[i].name);
+		my_scanf("%d%d %c %c%d",&s[i].a,&s[i].b,&s[i].cla,&s[i].west,&s[i].paper);
 		s[i].total=0;
 		if(s[i].a>80&&s[i].paper>=1)
 			s[i].total+=8000;
@@ -37,9 +37,9 @@ int main_bench()
 		if(s[i].total>s[0].total)
 			s[0]=s[i];
 	}
-	printf("%s\n",s[0].name);
-	printf("%d\n",s[0].total);
-	printf("%d",sum);
+	my_printf("%s\n",s[0].name);
+	my_printf("%d\n",s[0].total);
+	my_printf("%d",sum);
 	
 	return 0;
 }

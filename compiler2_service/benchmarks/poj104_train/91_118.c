@@ -11,7 +11,7 @@ void process(char *pt,int number)
 	*(pt+number-1)=*(pt+number-1)+head;
 	for(b=pt;b<pt+number;b++)
 	{
-		printf("%c",*b);
+		my_printf("%c",*b);
 	}
 }
 	

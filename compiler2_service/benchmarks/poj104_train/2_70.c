@@ -11,10 +11,10 @@ int main_bench()
 	int hao;
 	for(i=0;i<26;i++)
 		num[i]=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&hao,tem);
+		my_scanf("%d %s",&hao,tem);
 		j=0;
 		while(tem[j]!='\0')
 		{
@@ -35,8 +35,8 @@ int main_bench()
 		if(num[i]>num[max])
 			max=i;
 	}
-	printf("%c\n%d\n",wri[max],num[max]);
+	my_printf("%c\n%d\n",wri[max],num[max]);
 	for(i=0;i<num[max];i++)
-		printf("%d\n",shu[max][i]);
+		my_printf("%d\n",shu[max][i]);
 	return 0;
 }

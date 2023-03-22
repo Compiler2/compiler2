@@ -34,8 +34,8 @@ int main_bench()
     char point[5]={'\0'};
     char filed[400][5]={'\0'};
     int check[400]={0};
-    scanf("%d",&n);
-    scanf("%s",s);
+    my_scanf("%d",&n);
+    my_scanf("%s",s);
     
     len=strlen(s);
     for (i=0; i<=len-n; i++) {
@@ -52,15 +52,15 @@ int main_bench()
     }
     
     if (max==0) {
-        printf("NO");
+        my_printf("NO");
     }
     else
     {
-        printf("%d\n",max+1);
+        my_printf("%d\n",max+1);
         
         for (p=0; p<filedp; p++) {
             if (check[p]==max) {
-                printf("%s\n",filed[p]);
+                my_printf("%s\n",filed[p]);
             }
         }
     }

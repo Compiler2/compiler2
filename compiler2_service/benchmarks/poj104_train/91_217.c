@@ -17,6 +17,6 @@ int main_bench()
 		*p=*p+*(p+1);
 	}
 	*p = '\0';
-	printf("%s",str);
+	my_printf("%s",str);
 	return 0;
 }

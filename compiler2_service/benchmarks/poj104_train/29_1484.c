@@ -21,15 +21,15 @@ int main_bench()
 		i++;
 	}
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int k=1;
 
 	 while(k<=n)
 	 {
 		 int p;
-		 scanf("%d",&p);
-		 printf("%.3f\n",a[p]);
+		 my_scanf("%d",&p);
+		 my_printf("%.3f\n",a[p]);
 		 k++;
 	 }
 	 return 0;

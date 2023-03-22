@@ -22,16 +22,16 @@ int zhishu(int x)
 int main_bench()
 {
 	int l=1,n,m,i;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=n;i<=m;i++)
 	{
 		if(i==huiwen(i))
 			if(zhishu(i))
 			{
-				if(l==1){printf("%d",i);l++;}
-				else printf(",%d",i);
+				if(l==1){my_printf("%d",i);l++;}
+				else my_printf(",%d",i);
 			}
 	}
 	if(l==1)
-		printf("no");
+		my_printf("no");
 }

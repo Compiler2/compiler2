@@ -20,7 +20,7 @@ int main_bench()
 	double nan[200];
 	double nv[200];
 
-	scanf( "%d" , &ren );
+	my_scanf( "%d" , &ren );
 	getchar();
 
 	i_nan = i_nv = 0;
@@ -31,14 +31,14 @@ int main_bench()
 
 		if( c == 'e' ){
 			getchar();
-			scanf( "%lf" , &nan[i_nan++] );
+			my_scanf( "%lf" , &nan[i_nan++] );
 			getchar();
 		}
 
 		else{
 			for( k = 0 ; k < 3 ; k++ )
 				getchar();
-			scanf( "%lf" , &nv[i_nv++] );
+			my_scanf( "%lf" , &nv[i_nv++] );
 			getchar();
 		}
 	}
@@ -47,15 +47,15 @@ int main_bench()
 	qsort( (void*)nv , i_nv , sizeof( nv[0] ) , com  );
 
 	for( i = 0 ; i < i_nan ; i++ ){
-		printf( "%.2lf" , nan[i] );
-		printf( " " );
+		my_printf( "%.2lf" , nan[i] );
+		my_printf( " " );
 	}
 	for( j = i_nv-1 ; j >= 0 ; j-- ){
-		printf( "%.2lf" , nv[j] );
+		my_printf( "%.2lf" , nv[j] );
 		if( j != 0 )
-			printf( " " );
+			my_printf( " " );
 		else
-			printf( "\n" );
+			my_printf( "\n" );
 	}
 
 	return 0;

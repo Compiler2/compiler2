@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[300],i,j,m,num,n;
 	double ave,min,b[300],sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=sum/n;
@@ -55,9 +55,9 @@ int main_bench()
 	}
 	for (j=0;j<i;j++)
 	{
-		printf("%d",a[j]);
+		my_printf("%d",a[j]);
 		if(j!=i-1)
-			printf(",");
+			my_printf(",");
 	}
 	return 0;
 }

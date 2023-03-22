@@ -15,18 +15,18 @@ main_bench()
 {
 
     int i,j,n,y,m1,m2,t,s=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (j=0;j<n;j++)
     {
-        scanf("%d %d %d",&y,&m1,&m2);
+        my_scanf("%d %d %d",&y,&m1,&m2);
         if (m1>m2)
         s=ch(y,m1)-ch(y,m2);
         else
         s=ch(y,m2)-ch(y,m1);
         if (s%7!=0)
-        printf("NO\n");
+        my_printf("NO\n");
         else
-        printf("YES\n");
+        my_printf("YES\n");
         s=1;
     }
 }

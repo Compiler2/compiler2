@@ -16,8 +16,8 @@ int main_bench()
 {
 int startYear,startMonth,startDay;
 int endYear,endMonth,endDay;
-scanf("%d%d%d",&startYear,&startMonth,&startDay);
-scanf("%d%d%d",&endYear,&endMonth,&endDay);
+my_scanf("%d%d%d",&startYear,&startMonth,&startDay);
+my_scanf("%d%d%d",&endYear,&endMonth,&endDay);
 int daybetweendates = 0;
 int i,j,k;
 	if(endYear == startYear)
@@ -82,6 +82,6 @@ int i,j,k;
 	}
 	}	
 	}
-	printf("%d\n",daybetweendates);
+	my_printf("%d\n",daybetweendates);
 	return 0;
 }

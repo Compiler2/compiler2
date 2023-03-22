@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a;
 	int m,n,p,q,o,s;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a/10000!=0)
     {
 		m=a/10000;
@@ -40,7 +40,7 @@ int main_bench()
 	{	
 		s=a;
     }
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

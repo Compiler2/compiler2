@@ -5,7 +5,7 @@ int main_bench()
 	char s[1201];
 	int a[300]={0};
 	int i,j=0,c,k,max,d=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	for(i=0;s[i]!='\0';i=i+1)
 	{
 		switch(s[i])
@@ -42,11 +42,11 @@ int main_bench()
 		}
 		if(c==1)
 		{
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 			d=1;
 			break;
 		}
 	}
-	if(d==0) printf("No\n");
+	if(d==0) my_printf("No\n");
 }
 

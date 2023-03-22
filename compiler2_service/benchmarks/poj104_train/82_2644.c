@@ -5,7 +5,7 @@ int main_bench()
 {
     int n;
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     int *normal = (int *) malloc(sizeof(int) * n);
     
@@ -19,7 +19,7 @@ int main_bench()
     
     for(i = 0; i <= n - 1; i++)
     {
-          scanf("%d %d", &hi, &lo);
+          my_scanf("%d %d", &hi, &lo);
           if( (lo >= 60) && (lo <= 90) && (hi >= 90) && (hi <= 140) )
           {}
           else
@@ -36,7 +36,7 @@ int main_bench()
     if(len > max)
                      max = len;
                      
-    printf("%d", max);
+    my_printf("%d", max);
     
     
    

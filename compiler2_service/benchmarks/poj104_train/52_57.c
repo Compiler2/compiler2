@@ -6,13 +6,13 @@ int main_bench()
 
          int n,m,i,j;
 
-         scanf("%d%d",&n,&m);
+         my_scanf("%d%d",&n,&m);
 
          int * x=(int *)malloc(sizeof(int)*n);
 
          for(i=0;i<n;i++){
 
-                   scanf("%d",x+i);
+                   my_scanf("%d",x+i);
 
          }
 
@@ -40,11 +40,11 @@ int main_bench()
 
          for(i=0;i<n-1;i++){
 
-                   printf("%d ",*(x+i));
+                   my_printf("%d ",*(x+i));
 
          }
 
-         printf("%d",*(x+i));
+         my_printf("%d",*(x+i));
 
  
 

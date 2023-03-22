@@ -24,7 +24,7 @@ int main_bench()
 		
 		if(*p==*q)
 		{
-			printf("%d",m);
+			my_printf("%d",m);
 			break;
 		}
 		m++;

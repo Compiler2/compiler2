@@ -29,13 +29,13 @@ int main_bench()
 {
 	int m,n;
 	double hs;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int mm=0;mm<m;mm++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		hs=sum(n);
-		printf("%.3lf",hs);
+		my_printf("%.3lf",hs);
 		if(mm!=m-1){
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 

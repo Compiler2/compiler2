@@ -12,11 +12,11 @@ int main_bench()
         {
             if(z<s)
             {
-                printf("l %d\nq %d\ns %d\nz %d",l,q,s,z);
+                my_printf("l %d\nq %d\ns %d\nz %d",l,q,s,z);
 
             }
             else
-            printf("l %d\nq %d\nz %d\ns %d",l,q,z,s);
+            my_printf("l %d\nq %d\nz %d\ns %d",l,q,z,s);
         }
 
     }

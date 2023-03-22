@@ -34,8 +34,8 @@ int main_bench()
 	}
 	for(i=1;i<num;i++)
 	{
-		printf("%s ",word[i]);
+		my_printf("%s ",word[i]);
 	}
-	printf("%s",word[num]);
+	my_printf("%s",word[num]);
 }
 

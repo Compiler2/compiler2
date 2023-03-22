@@ -8,8 +8,8 @@ int main_bench()
 	{
 		c[i]=1;
 	}
-    scanf("%d",&n);
-	scanf("%s",a);
+    my_scanf("%d",&n);
+	my_scanf("%s",a);
 	int len=strlen(a);
 	for(k=0;k<len-n+1;k++)
 	{
@@ -38,20 +38,20 @@ int main_bench()
 	}
 	if(max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<len-n+1;i++)
 		{
 			if(c[i]==max)
 			{
 				for(j=i;j<i+n;j++)
 				{
-					printf("%c",a[j]);
+					my_printf("%c",a[j]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

@@ -12,7 +12,7 @@ int main_bench() {
 
 	for(i=0;i<2;i=i+1){
 		for(j=0;j<3;j=j+1){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 		
 	}
@@ -83,7 +83,7 @@ else{
 	
 
 	n=n+m+p;
-	printf("%d",n);
+	my_printf("%d",n);
 	
 	
 	

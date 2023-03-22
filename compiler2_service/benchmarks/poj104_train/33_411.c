@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j,x,pd;
 	char s[260]={0};
 	char *ps=s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		x=strlen(s);
 		for(j=0;j<x;j++){
 			pd=0;
@@ -28,10 +28,10 @@ int main_bench(){
 			}
 		}
 		if(i==0){
-			printf("%s",s);
+			my_printf("%s",s);
 		}
 		else {
-			printf("\n%s",s);
+			my_printf("\n%s",s);
 		}
 	}
 

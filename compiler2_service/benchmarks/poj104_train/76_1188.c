@@ -2,12 +2,12 @@
 
 int main_bench() {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[50000];
 	int b[50000];
 	int i,k,e;
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	for(k=1;k<=n;k++){
 		for(i=0;i<n-k;i++){
@@ -34,7 +34,7 @@ int main_bench() {
 		}
 	}
 	if(i!=n){
-		printf("no");
+		my_printf("no");
 	}
 	if(i==n){
 		for(k=0;k<i;k++){
@@ -42,7 +42,7 @@ int main_bench() {
 				hb2=b[i];
 			}
 		}
-		printf("%d %d",hb1,hb2);
+		my_printf("%d %d",hb1,hb2);
 	}
 	return 0;
 }

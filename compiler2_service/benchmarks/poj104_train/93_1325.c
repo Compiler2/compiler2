@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,i,m,e,f;
 	m=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=3;i<8;i=i+2)
 	{
 		if (a%i==0)
@@ -18,13 +18,13 @@ int main_bench()
 	}
 	switch (m){
 	case 0:
-		printf("n");break;
+		my_printf("n");break;
 	case 1:
-		printf("%d",e);break;
+		my_printf("%d",e);break;
 	case 2:
-        printf("%d %d",e,f);break;
+        my_printf("%d %d",e,f);break;
 	case 3:
-		printf("3 5 7");break;
+		my_printf("3 5 7");break;
 	}
 	return 0;
 }

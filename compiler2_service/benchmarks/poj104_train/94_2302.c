@@ -7,10 +7,10 @@ int k=0;
 int t=0;
 int e;
 int sz[500];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++)
 {
-scanf("%d",&num[i]);
+my_scanf("%d",&num[i]);
 
 if((num[i])%2!=0)
 {
@@ -35,9 +35,9 @@ sz[a]=e;}
 for(int b=0;b<k;b++)
 {
 if(b==k-1)
-printf("%d",sz[b]);
+my_printf("%d",sz[b]);
 else
-printf("%d,",sz[b]);
+my_printf("%d,",sz[b]);
 
 }
 return 0;

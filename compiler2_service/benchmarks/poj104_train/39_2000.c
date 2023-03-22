@@ -15,10 +15,10 @@ int main_bench()
 {
 	int n,i;
 	int all=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].cadre,&stu[i].west,&stu[i].eas);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].cadre,&stu[i].west,&stu[i].eas);
 		if((stu[i].final>80)&&(stu[i].eas>=1))
 			stu[i].sum=stu[i].sum+8000;
 		if((stu[i].final>85)&&(stu[i].cla>80))
@@ -40,5 +40,5 @@ int main_bench()
 		if(stu[i].sum>stu[most].sum)
 		most=i;
 	}
-	printf("%s\n%d\n%d\n",stu[most].name,stu[most].sum,all);
+	my_printf("%s\n%d\n%d\n",stu[most].name,stu[most].sum,all);
 }

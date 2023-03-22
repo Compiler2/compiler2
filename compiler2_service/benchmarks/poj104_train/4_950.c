@@ -3,10 +3,10 @@
 int main_bench(){
 	int shuzu[100][100];
 	int i,j,k,n,row,col,shuru;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
-			scanf("%d",&shuru);
+			my_scanf("%d",&shuru);
 			shuzu[i][j]=shuru;
 		}
 	}
@@ -14,7 +14,7 @@ int main_bench(){
 		for(i=0;i<row;i++){
 			for(j=0;j<col;j++){
 				if(i+j==k){
-					printf("%d\n",shuzu[i][j]);
+					my_printf("%d\n",shuzu[i][j]);
 				}
 			}
 		}

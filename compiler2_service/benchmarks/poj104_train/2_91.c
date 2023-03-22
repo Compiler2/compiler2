@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,i,l,x,maxnumber;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[1000];
     char k[1000][30]; 
     int author[27]={0};
     for(i=1;i<=n;i++)
     {
-                      scanf("%d %s",&a[i],k[i]);
+                      my_scanf("%d %s",&a[i],k[i]);
                       int m;
                       m=strlen(k[i]);
                       for(l=0;l<30;l++)
@@ -34,13 +34,13 @@ int main_bench()
     } 
     char who[10];
     who[0]='A'+maxnumber-1 ;
-    printf("%c\n",who[0]);
-    printf("%d\n",max);
+    my_printf("%c\n",who[0]);
+    my_printf("%d\n",max);
     for(i=1;i<=n;i++)
     {
                      for(l=0;l<=strlen(k[i]);l++)
                      if(k[i][l]==who[0])
-                     printf("%d\n",a[i]);
+                     my_printf("%d\n",a[i]);
     }
     return 0; 
 }  

@@ -21,18 +21,18 @@ int main_bench(){
     for(int j=0;j<=m;j++){
             if(strcmp(sub[j],a)==0){
                       if(j==0){
-                               printf("%s",b);
+                               my_printf("%s",b);
                       }
                       if(j!=0){
-                               printf(" %s",b);
+                               my_printf(" %s",b);
                       }
             }
             else{
                       if(j==0){
-                               printf("%s",sub[j]);
+                               my_printf("%s",sub[j]);
                       }
                       if(j!=0){
-                               printf(" %s",sub[j]);
+                               my_printf(" %s",sub[j]);
                       }
             }
     }

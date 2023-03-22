@@ -8,8 +8,8 @@ int main_bench()
     gets(s);
    for(i=0;i<strlen(s);i++)
    if(s[i]==' ') flag=0;
-   else {if(flag==0) printf(" ");
-           printf("%c",s[i]),flag=1;}
+   else {if(flag==0) my_printf(" ");
+           my_printf("%c",s[i]),flag=1;}
     return 0;
 }
  

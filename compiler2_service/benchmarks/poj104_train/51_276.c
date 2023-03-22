@@ -5,8 +5,8 @@ main_bench()
 	char x[501];
 	int y[501];
 	int i,j,k,l,h,n,m;
-	scanf("%d",&n);
-	scanf("%s",x);
+	my_scanf("%d",&n);
+	my_scanf("%s",x);
 	m=strlen(x);
 	m=m-n;
 	for(i=0;i<=m;i++)
@@ -28,18 +28,18 @@ main_bench()
 	{
 		if (y[i]>k) k=y[i];
 	}
-if (k==1) printf("NO");
+if (k==1) my_printf("NO");
 else{
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 	for(i=0;i<=m;i++)
 	{
 		if (k==y[i])
 		{
 			for (j=0;j<n;j++)
 			{
-				printf("%c",x[i+j]);
+				my_printf("%c",x[i+j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

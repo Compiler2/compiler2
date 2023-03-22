@@ -4,9 +4,9 @@
 int main_bench(){
 	int n,age[100],i,team[4]={0};
 	double per[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 	}
 	for(i=0;i<n;i++){
 		if (age[i]<19) team[0]++;
@@ -18,7 +18,7 @@ int main_bench(){
 	per[1]=(double)team[1]/n*100;
 	per[2]=(double)team[2]/n*100;
 	per[3]=(double)team[3]/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",per[0],per[1],per[2],per[3]);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",per[0],per[1],per[2],per[3]);
 
 	
 

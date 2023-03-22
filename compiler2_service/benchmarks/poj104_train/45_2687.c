@@ -4,8 +4,8 @@ int main_bench()
 {
     int i,count=0,k;
     char s[50],w[50];
-    scanf("%s",s);
-    scanf("%s",w);
+    my_scanf("%s",s);
+    my_scanf("%s",w);
     for(i=0;i<strlen(w);i++)
     {
                             if(w[i]==s[0])
@@ -16,7 +16,7 @@ int main_bench()
                                                                   count++;
                                           }
                                           if(count==strlen(s))
-                                          printf("%d",i);
+                                          my_printf("%d",i);
                             }
     }
     return 0;

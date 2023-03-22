@@ -17,8 +17,8 @@ int main_bench()
 	struct Student stu;
 	struct Student maxStu, smaxStu, tmaxStu;
 
-	scanf("%d",&n);
-	scanf("%d%d%d",&x,&y,&z);
+	my_scanf("%d",&n);
+	my_scanf("%d%d%d",&x,&y,&z);
 	stu.number = x;
 	stu.a = y;
 	stu.b = z;
@@ -28,7 +28,7 @@ int main_bench()
 	tmaxStu = stu;
 
 	for (i = 0; i < n-1; i++){
-		scanf("%d%d%d",&x,&y,&z);
+		my_scanf("%d%d%d",&x,&y,&z);
 		stu.number = x;
 		stu.a = y;
 		stu.b = z;
@@ -56,6 +56,6 @@ int main_bench()
 		}
 	}
 
-	printf ("%d %d\n%d %d\n%d %d",maxStu.number,maxStu.c,smaxStu.number,smaxStu.c,tmaxStu.number,tmaxStu.c);
+	my_printf ("%d %d\n%d %d\n%d %d",maxStu.number,maxStu.c,smaxStu.number,smaxStu.c,tmaxStu.number,tmaxStu.c);
 	return 0;
 }

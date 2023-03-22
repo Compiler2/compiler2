@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char string1[250],string2[250];
-	scanf("%s",string1);
-	scanf("%s",string2);
+	my_scanf("%s",string1);
+	my_scanf("%s",string2);
 	int a,b;
 	a=strlen(string1);
 	b=strlen(string2);
@@ -46,12 +46,12 @@ int main_bench()
 	}
 	if(string5[c]!=0)
 	{
-		printf("%d",string5[c]);
+		my_printf("%d",string5[c]);
 	    for(i=c-1;i>=0;i--)
 		{
-		printf("%d",string6[i]);
+		my_printf("%d",string6[i]);
 		}
-    	printf("\n");
+    	my_printf("\n");
 	}
 	else
 	{
@@ -63,9 +63,9 @@ int main_bench()
 		int m;
 		for(m=i;m>=0;m--)
 		{
-		printf("%d",string6[m]);
+		my_printf("%d",string6[m]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

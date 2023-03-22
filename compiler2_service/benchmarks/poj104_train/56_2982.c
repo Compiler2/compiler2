@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,sz[5],i,a=0,b,c[5],j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 b=n;
 for(i=0;b>0;i++){
 	b=b/10;
@@ -21,6 +21,6 @@ c[0]=sz[0];
 for(i=1;i<a;i++){
 	c[i]=sz[i]-(sz[i-1]*10);
 }
-for(i=a-1;i>=0;i--){printf("%d",c[i]);}
+for(i=a-1;i>=0;i--){my_printf("%d",c[i]);}
 return 0;
 }

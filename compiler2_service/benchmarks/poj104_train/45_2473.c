@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[100],w[100];
 	int i,j,l1,l2,k;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	l1=strlen(s);
 	l2=strlen(w);
 	i=0;
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		if (i==l1) break;
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 
 	return 0;
 }

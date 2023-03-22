@@ -5,7 +5,7 @@ int main_bench()
 
 {
     int n,i,j,k,z,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct Student
     {
        int num;
@@ -17,7 +17,7 @@ int main_bench()
     
     for(i=0;i<n;i++)
     {
-        scanf("%d%d%d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
+        my_scanf("%d%d%d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
         stu[i].zongfen=stu[i].yuwen+stu[i].shuxue;                
     }
     
@@ -49,7 +49,7 @@ int main_bench()
     
     for(j=0;j<3;j++)
     {
-        printf("%d %d\n",stu[n-1-j].num,stu[n-1-j].zongfen);            
+        my_printf("%d %d\n",stu[n-1-j].num,stu[n-1-j].zongfen);            
     }
     
     

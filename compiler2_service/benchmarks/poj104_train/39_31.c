@@ -53,12 +53,12 @@ int main_bench()
     int max = 0;
     int sum = 0;
     char ch1,ch2;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if ( n >=0 )
     for ( int i=0; i<n; i++ )
     {
-         scanf("%c",&ch1);
-         scanf("%s%d%d%c%c%c%c%d",student[i].name,&student[i].qm,&student[i].py,&ch1,&student[i].gb,&ch2,&student[i].xb,&student[i].lw);
+         my_scanf("%c",&ch1);
+         my_scanf("%s%d%d%c%c%c%c%d",student[i].name,&student[i].qm,&student[i].py,&ch1,&student[i].gb,&ch2,&student[i].xb,&student[i].lw);
          student[i].money = ysj(i) + wsj(i) + cjj(i) + xbj(i) + bjj(i);
          sum += student[i].money;
          if ( student[i].money > max )
@@ -68,6 +68,6 @@ int main_bench()
          }
          
     }
-    printf("%s\n%d\n%d\n",student[k].name,max,sum);
+    my_printf("%s\n%d\n%d\n",student[k].name,max,sum);
     return 0;
 }

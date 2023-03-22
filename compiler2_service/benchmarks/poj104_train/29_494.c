@@ -3,9 +3,9 @@
 int main_bench(){
 int m,n,a,b,e;
 double s=0;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(int i=1;i<=m;i++){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	a=1;
 	b=2;
 	for(int j=1;j<=n;j++){
@@ -14,7 +14,7 @@ for(int i=1;i<=m;i++){
 		a=b;
 		b=e+a;
 	}
-	printf("%.3lf\n",s);
+	my_printf("%.3lf\n",s);
 	s=0;
 }
 return 0;

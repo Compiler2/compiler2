@@ -28,11 +28,11 @@ p=word[0];
 for(k=0;k<j;k++)
 if(strlen(word[k+1])>strlen(p))
 p=word[k+1];
-printf("%s\n",p);
+my_printf("%s\n",p);
 q=word[0];
 for(k=0;k<j;k++)
 if(strlen(word[k+1])<strlen(q))
 q=word[k+1];
-printf("%s\n",q);
+my_printf("%s\n",q);
 return 0;
 }

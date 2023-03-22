@@ -13,10 +13,10 @@
    {
        struct stu h[100];
        int n,i,j,k,sum1;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        for(i=0;i<n;i++)
        {
-         scanf("%s %d%d %c %c%d",h[i].a,&h[i].b[0],&h[i].b[1],&h[i].c,&h[i].d,&h[i].e);
+         my_scanf("%s %d%d %c %c%d",h[i].a,&h[i].b[0],&h[i].b[1],&h[i].c,&h[i].d,&h[i].e);
          h[i].sum=0;
         if(h[i].b[0]>80&&h[i].e>=1)
          h[i].sum=h[i].sum+8000;
@@ -39,7 +39,7 @@
            k=i;
            sum1=sum1+h[i].sum;
          }
-         printf("%s\n%d\n%d\n",h[k].a,h[k].sum,sum1);
+         my_printf("%s\n%d\n%d\n",h[k].a,h[k].sum,sum1);
          return 0;
    }
          

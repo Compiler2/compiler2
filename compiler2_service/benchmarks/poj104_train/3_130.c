@@ -3,17 +3,17 @@
 int main_bench()
 {
 	int n,k,a[1000],i,j,t=0;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);}
+		my_scanf("%d",&a[i]);}
 	for(i=0;i<n/2+1;i++){
 		for(j=i+1;j<n;j++){
 			if(a[i]+a[j]==k) {t=1;break;}
 		}
 		if(t==1) break;
 	}
-	if(t==1)printf("yes");
-	else printf("no");
+	if(t==1)my_printf("yes");
+	else my_printf("no");
 	return 0;
 }
 

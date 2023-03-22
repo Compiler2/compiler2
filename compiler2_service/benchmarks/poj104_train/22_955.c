@@ -6,8 +6,8 @@ int main_bench()
 	char b[1000];
 	while(1)
 	{
-		scanf("%d",&a[i++]);
-		scanf("%c",&b[i]);
+		my_scanf("%d",&a[i++]);
+		my_scanf("%c",&b[i]);
 		if(b[i]!=',')break;
 	}
 for(j=1;j<=i-2;j++)
@@ -21,9 +21,9 @@ a[j]=t;}
 
 for(j=i-1;j>=2;j--)
 {
-	if(a[j]>a[j-1]){printf("%d",a[j-1]);p=1;break;}  
+	if(a[j]>a[j-1]){my_printf("%d",a[j-1]);p=1;break;}  
 }
-if(p==0)printf("No");
+if(p==0)my_printf("No");
 
   
 	return 0;

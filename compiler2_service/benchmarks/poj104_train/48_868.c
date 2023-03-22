@@ -19,13 +19,13 @@ void inf(int m)
 int main_bench()
 {
   int i,j;
-  scanf("%d%d",&a[5][5],&n);
+  my_scanf("%d%d",&a[5][5],&n);
   inf(1); 
   for(i = 1;i <= 9;i++)
   {     
      for(j = 1;j <= 8;j++)
-        printf("%d ",a[i][j]);
-     printf("%d\n",a[i][9]);
+        my_printf("%d ",a[i][j]);
+     my_printf("%d\n",a[i][9]);
   }
   return 0;    
 }

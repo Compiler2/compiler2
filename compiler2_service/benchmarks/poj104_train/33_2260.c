@@ -6,10 +6,10 @@ int i,n,m,j,k;
 char A[1000][256],B[1000][256]={0};
 int len[1000];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(j=0;j<n;j++){
-	scanf("%s",&A[j]);
+	my_scanf("%s",&A[j]);
 }
 for(j=0;j<n;j++){
 	len[j]=strlen(A[j]);
@@ -28,7 +28,7 @@ for(j=0;j<n;j++){
 
 for(j=0;j<n;j++){
 
-	printf("%s\n",B[j]);
+	my_printf("%s\n",B[j]);
 }
 
 

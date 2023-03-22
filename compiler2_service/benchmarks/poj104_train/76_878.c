@@ -5,9 +5,9 @@ int main_bench(){
 		int a,b;
 	}qj[50001];
 	int n,i,k,e,f,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&qj[i].a,&qj[i].b);
+		my_scanf("%d%d",&qj[i].a,&qj[i].b);
 	}
     for( k=1;k<=n;k++){
 	    for(i=0;i<n-k;i++){
@@ -31,10 +31,10 @@ int main_bench(){
 		}	
 	}
 	if(j==0){
-		printf("no");
+		my_printf("no");
 	}
     if(j!=0){
-		printf("%d %d",qj[0].a,qj[n-1].b);	
+		my_printf("%d %d",qj[0].a,qj[n-1].b);	
 	
 	}
 }

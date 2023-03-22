@@ -3,7 +3,7 @@
 int main_bench()
 {int a[11][11],b[11][11];
 int i,j,k,n,m;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for(i=0;i<11;i++)
 for(j=0;j<11;j++)
 a[i][j]=0;
@@ -22,10 +22,10 @@ a[i][j]=b[i][j];
 for(i=1;i<10;i++)
 {for(j=1;j<10;j++)
 {if((j==1)&&(i!=0))
-printf("\n");
-printf("%d",a[i][j]*m);
+my_printf("\n");
+my_printf("%d",a[i][j]*m);
 if(j!=9)
-printf(" ");
+my_printf(" ");
 }
 }
 getchar();

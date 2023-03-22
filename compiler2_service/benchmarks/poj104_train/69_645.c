@@ -6,8 +6,8 @@ int main_bench()
 	char a[251]={'\0'},b[251]={'\0'},c,temp[251],add[252]={'\0'};
 	int i,j,k,la,lb;
 
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 
 	la=strlen(a);
 	lb=strlen(b);
@@ -77,10 +77,10 @@ for(i=0;i<lb+1;i++)
 	{
 	     k=i;
 		for(i=k;i<lb+1;i++)
-			printf("%c",add[i]);
+			my_printf("%c",add[i]);
 	}
 	else
-		printf("0");
+		my_printf("0");
 	
 			return 0;
 }

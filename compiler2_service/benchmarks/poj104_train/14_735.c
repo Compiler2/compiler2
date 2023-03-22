@@ -9,10 +9,10 @@ int main_bench()
 {
 	int n,i,a=0,b=0,c=0,a1,b1,c1;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&stu[i].j,&stu[i].x,&stu[i].y);
+		my_scanf("%d%d%d",&stu[i].j,&stu[i].x,&stu[i].y);
 		stu[i].z=stu[i].x+stu[i].y;
 	}
 	for(i=0;i<n;i++)
@@ -40,6 +40,6 @@ int main_bench()
 	    	c1=i;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",stu[a1].j,stu[a1].z,stu[b1].j,stu[b1].z,stu[c1].j,stu[c1].z);
+	my_printf("%d %d\n%d %d\n%d %d\n",stu[a1].j,stu[a1].z,stu[b1].j,stu[b1].z,stu[c1].j,stu[c1].z);
 	return 0;
 }

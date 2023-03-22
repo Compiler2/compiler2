@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[99];
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int max,e;
 	max=0;
@@ -31,7 +31,7 @@ int main_bench()
 		sz[max]=sz[n-2];
 		sz[n-2]=e;
 	}
-	printf("%d\n",sz[n-1]);
-	printf("%d\n",sz[n-2]);
+	my_printf("%d\n",sz[n-1]);
+	my_printf("%d\n",sz[n-2]);
 	return 0;
 }

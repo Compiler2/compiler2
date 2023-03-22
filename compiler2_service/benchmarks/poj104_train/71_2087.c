@@ -5,11 +5,11 @@
 int main_bench()
 {
 	int n,i,year,month1,month2,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&month1,&month2);
+		my_scanf("%d%d%d",&year,&month1,&month2);
 		if(year%4==0 && year%100!=0 || year%400==0)
 		{
 			if(month1==1)
@@ -111,11 +111,11 @@ int main_bench()
 		
 			if((a-b)%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else
@@ -218,11 +218,11 @@ int main_bench()
 			}
 			if((a-b)%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}	

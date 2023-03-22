@@ -16,14 +16,14 @@ main_bench()
 		a[9]=31;
 		a[10]=30;
 		a[11]=31;
-		scanf("%d",&w);
+		my_scanf("%d",&w);
 		b[0]=(w+12)%7;
 		for(i=1;i<12;i++)
 		b[i]=(b[i-1]+a[i-1])%7;
 		for(i=0;i<12;i++)
 		{
 			if(b[i]==5)
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 		 
 }

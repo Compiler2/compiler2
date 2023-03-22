@@ -2,9 +2,9 @@
 
 int main_bench(){
     int a[1000],b[1000],i,n,x=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
         if(a[i]==b[i]){
         }
         else if(a[i]==0){
@@ -33,11 +33,11 @@ int main_bench(){
         }
     }
     if(x>0){
-        printf("A");
+        my_printf("A");
     }
     else if(x<0){
-        printf("B");
+        my_printf("B");
     }
-    else{printf("Tie");}
+    else{my_printf("Tie");}
 
 }

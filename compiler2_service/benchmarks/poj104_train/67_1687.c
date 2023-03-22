@@ -5,10 +5,10 @@ int main_bench() {
 	double p;
 	int a[100][2];
 	double s[100];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++){
 		for (j=0;j<2;j++){
-			scanf ("%d",&a[i][j]);
+			my_scanf ("%d",&a[i][j]);
 		}
 	}
     for (i=0;i<n;i++){
@@ -17,11 +17,11 @@ int main_bench() {
 	}
 	for (i=1;i<n;i++){
 		if (s[i]-p>0.05){
-			printf ("better\n");
+			my_printf ("better\n");
 		}if (p-s[i]>0.05){
-			printf ("worse\n");
+			my_printf ("worse\n");
 		}if (s[i]-p<=0.05&&p-s[i]<=0.05){
-			printf ("same\n");
+			my_printf ("same\n");
 		}
 	}
 	return 0;

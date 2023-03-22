@@ -4,13 +4,13 @@ int main_bench(){
 	int i,j,len1,len2,num=0,t=1;
         double rate;
 	char a[500],b[500];
-     scanf("%lf",&rate);
-     scanf("%s",a);
-    scanf("%s",b);
+     my_scanf("%lf",&rate);
+     my_scanf("%s",a);
+    my_scanf("%s",b);
     len1=strlen(a);
     len2=strlen(b);
     if(len1!=len2){
-      printf("error");
+      my_printf("error");
       }
      if(len1==len2){
        for(i=0;i<len1;i++){
@@ -24,12 +24,12 @@ b[i]!='C'&&b[i]!='G')){
        }
        }
       if(t==0)
-       printf("error");
+       my_printf("error");
       else {
         if(num*1.0/len1>rate)
-         printf("yes");
+         my_printf("yes");
         else 
-         printf("no");
+         my_printf("no");
       }
       
     }

@@ -14,7 +14,7 @@ int main_bench()
 			else j++;
 	    }
 	j1=j;
-	if(j1==1) printf("No\n");
+	if(j1==1) my_printf("No\n");
     else 
 	{
 		    if(a[1]==a[2]) y=a[1];
@@ -37,8 +37,8 @@ int main_bench()
 		        }
 		        if(a[j]<y&&a[j]>x)	x=a[j];
 	         }
-	    if(x==-1) printf("No\n");
-		else printf("%d\n",x);
+	    if(x==-1) my_printf("No\n");
+		else my_printf("%d\n",x);
 	}
 	return 0;	
 }

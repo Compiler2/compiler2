@@ -3,9 +3,9 @@
 int main_bench(){
 	char zfc[22];
 	int n,a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=0;j<n;j++){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		int len=strlen(zfc);
 	for(int i=0;i<len;i++){
 		if(i==0&&(zfc[i]>='0'&&zfc[i]<='9')){
@@ -23,8 +23,8 @@ int main_bench(){
 	}
 	}
 	for(int i=0;i<n;i++){
-		if(a[i]==0) printf("no\n");
-		else printf("yes\n");
+		if(a[i]==0) my_printf("no\n");
+		else my_printf("yes\n");
 	}	
 	return 0;
 }

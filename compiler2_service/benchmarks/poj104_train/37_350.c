@@ -4,10 +4,10 @@ int main_bench()
 {
 	int t,a[26],i,j,len;
 	char input[100000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		scanf("%s",input);
+		my_scanf("%s",input);
 		len=strlen(input);
 		for(j=0;j<26;j++)
 			a[j]=0;
@@ -20,8 +20,8 @@ int main_bench()
 			if(a[input[j]-'a']==1)break;
 		}
 		if(j<len-1)
-			printf("%c\n",input[j]);
-		else printf("no\n");
+			my_printf("%c\n",input[j]);
+		else my_printf("no\n");
 	}
 	return 0;
 }

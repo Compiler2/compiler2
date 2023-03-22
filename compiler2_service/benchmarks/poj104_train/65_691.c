@@ -4,10 +4,10 @@ int main_bench()
 {
   int n,i,j,s;
   int a[200][3];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-     scanf("%d %d",&(a[i][0]),&(a[i][1]));
+     my_scanf("%d %d",&(a[i][0]),&(a[i][1]));
   }
   j=0;s=0;
   for(i=0;i<n;i++)
@@ -19,10 +19,10 @@ int main_bench()
            s++;
   }
   if(j<s)
-	  printf("B");
+	  my_printf("B");
   if(j>s)
-	  printf("A");
+	  my_printf("A");
   if(j==s)
-	  printf("Tie");
+	  my_printf("Tie");
   return 0;
 }

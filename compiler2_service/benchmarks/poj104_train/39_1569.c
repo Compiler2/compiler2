@@ -14,10 +14,10 @@ int main_bench()
 {
 	int n,i,sum=0;
 	struct student ren[102]={0},max={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",ren[i].name,&ren[i].qimocj,&ren[i].banjicj,&ren[i].ganbu,&ren[i].xibu,&ren[i].lunwen);
+		my_scanf("%s%d%d %c %c%d",ren[i].name,&ren[i].qimocj,&ren[i].banjicj,&ren[i].ganbu,&ren[i].xibu,&ren[i].lunwen);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -51,7 +51,7 @@ int main_bench()
 			max=ren[i];
 		}
 	}
-	printf("%s\n%d\n%d\n",max.name,max.jiangjin,sum);
+	my_printf("%s\n%d\n%d\n",max.name,max.jiangjin,sum);
 	return 0;
 }
 

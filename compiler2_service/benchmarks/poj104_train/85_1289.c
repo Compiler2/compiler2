@@ -4,9 +4,9 @@
 char s[1000];
 int main_bench(){
 	int T,i;
-	scanf("%d",&T);
+	my_scanf("%d",&T);
 	while (T--){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		if (isalpha(s[0])||s[0]=='_'){
 			for (i=1;s[i];i++){
 				if (!isalpha(s[i])&&!isdigit(s[i])&&s[i]!='_'){

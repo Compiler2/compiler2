@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,str1[100]={0},str2[100]={0},len1,len2;
 	char a[100]={0},b[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%s",a,b);
+		my_scanf("%s%s",a,b);
 		len1=strlen(a),len2=strlen(b);
 		k=0;
 		for(j=len1-1;j>=0;j--)
@@ -29,8 +29,8 @@ int main_bench()
 			}
 		}
 		for(j=len1-1;j>=0;j--)
-			printf("%d",str1[j]);
-		printf("\n");
+			my_printf("%d",str1[j]);
+		my_printf("\n");
 		for(j=0;j<100;j++)
 		{
 			str1[j]=0;

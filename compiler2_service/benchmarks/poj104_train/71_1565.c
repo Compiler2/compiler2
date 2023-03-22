@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n,i,y,m1,m2,a,b,c;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
 		a=0;
-		scanf("%d%d%d", &y, &m1, &m2);
+		my_scanf("%d%d%d", &y, &m1, &m2);
 		if(m1>m2){
 			c=m2;
 			m2=m1;
@@ -27,8 +27,8 @@ int main_bench()
 				else a=a+30;}
 		}
 		if (a%7==0) 
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 	return 0;
 }

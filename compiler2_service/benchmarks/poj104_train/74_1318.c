@@ -31,13 +31,13 @@ int huiwen(int n)
 main_bench()
 {
 	int m,n,i,k,s=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		int x=sushu(i);int y=huiwen(i);
 		if(x==1&&y==1)
 		{
-			printf("%d",i);s++; 
+			my_printf("%d",i);s++; 
 			break;
 		}
 	}
@@ -46,9 +46,9 @@ main_bench()
 		int x=sushu(k);int y=huiwen(k);
 		if(x==1&&y==1)
 		{
-			printf(",%d",k);		
+			my_printf(",%d",k);		
 		}
 	}
-	if (s==0) printf("no");
+	if (s==0) my_printf("no");
 return 0;
 }

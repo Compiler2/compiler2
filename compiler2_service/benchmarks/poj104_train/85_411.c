@@ -3,12 +3,12 @@
 int i,n;
 char str[21],*q;
 int main_bench(){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",str);
+        my_scanf("%s",str);
         q=str;
         if((*q!=95)&&((*q<65)||(*q>90)&&(*q<97)||(*q>122))){
-            printf("no\n");
+            my_printf("no\n");
             continue;
         }
         
@@ -16,13 +16,13 @@ int main_bench(){
           q++;
           while(*q!='\0'){
             if((*q!=95)&&((*q<48)||(*q>57)&&(*q<65)||(*q>90)&&(*q<97)||(*q>122))){
-                printf("no\n");
+                my_printf("no\n");
                 break;
             }
             q++;
           }
         if(*q=='\0')
-            printf("yes\n");
+            my_printf("yes\n");
         }
     }
 

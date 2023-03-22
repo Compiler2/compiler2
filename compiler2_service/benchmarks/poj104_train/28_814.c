@@ -28,11 +28,11 @@ int main_bench()
 	{
 		if (i==0)
 		{
-	        printf("%d",cd[i]);
+	        my_printf("%d",cd[i]);
 		}
         if(i!=0&&cd[i]!=0)
 		{
-		    printf(",%d",cd[i]);
+		    my_printf(",%d",cd[i]);
 		}
 	}
 	return 0;

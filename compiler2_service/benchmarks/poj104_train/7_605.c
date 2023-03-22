@@ -30,17 +30,17 @@ int main_bench(){
                                                        if(result==0)
                                                        {
                                                                     strcpy(sz[i],replace);
-                                                                    printf("%s",sz[i]);
+                                                                    my_printf("%s",sz[i]);
                                                                     i+=n;
 break;
                                                                     }
                                                                     else{
-                                                                    printf("%c",yuan[i]);
+                                                                    my_printf("%c",yuan[i]);
                                                                     }
                                                                     }
                                        for(i=i;i<m;i++)
                                        {
-                                                        printf("%c",yuan[i]);
+                                                        my_printf("%c",yuan[i]);
                                                         }
                                        
                                                                       

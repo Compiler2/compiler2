@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,a[5][5],t[5],m[5],tag=0;
 	for(i=0;i<5;i++)
 	for(j=0;j<5;j++)
-	scanf("%d",&a[i][j]);
+	my_scanf("%d",&a[i][j]);
 	for(i=0;i<5;i++)
 	t[i]=a[i][0];
 	for(j=0;j<5;j++)
@@ -23,11 +23,11 @@ int main_bench()
 	{
 		if(a[i][j]==t[i]&&a[i][j]==m[j])
 		{
-			printf("%d %d %d\n",i+1,j+1,a[i][j]);
+			my_printf("%d %d %d\n",i+1,j+1,a[i][j]);
 			tag++;
 		}
 	}
 	if(tag==0)
-	printf("not found\n");
+	my_printf("not found\n");
 	return 0;
 }

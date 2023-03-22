@@ -6,17 +6,17 @@ void dosomething(int str[10000],int q);
 
 main_bench()
 {
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(int i=0;i<n;i++)
-        scanf("%d",&str1[i]);
+        my_scanf("%d",&str1[i]);
     for(int i=0;i<m;i++)
-        scanf("%d",&str2[i]);
+        my_scanf("%d",&str2[i]);
     dosomething(str1,n);
     dosomething(str2,m);
     for (int i=0;i<n;i++)
-        printf("%d ",str1[i]);
+        my_printf("%d ",str1[i]);
     for (int i=0;i<m;i++)
-        i==0?printf("%d",str2[i]):printf(" %d",str2[i]);
+        i==0?my_printf("%d",str2[i]):my_printf(" %d",str2[i]);
 
         }
 

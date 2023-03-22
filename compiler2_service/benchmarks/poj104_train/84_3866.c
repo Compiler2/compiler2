@@ -6,8 +6,8 @@ int main_bench()
 	int num[100]={0};
 	max1 = 0;
 	max2 = 0;
-	scanf("%d" , &n);
-	scanf("%d%d", &num[0],&num[1]);
+	my_scanf("%d" , &n);
+	my_scanf("%d%d", &num[0],&num[1]);
 	if (num[0] >= num[1])
 	{
 		max1 = num[0];
@@ -20,7 +20,7 @@ int main_bench()
 	}
     for (i = 2; i < n; i++)
 	{
-		scanf("%d" ,&num[i]);
+		my_scanf("%d" ,&num[i]);
 		if (num[i] > max1)
 		{
 			max2 = max1;
@@ -35,6 +35,6 @@ int main_bench()
 			continue;
 		}
 	}
-		printf("%d\n%d\n", max1,max2);
+		my_printf("%d\n%d\n", max1,max2);
 		return 0;
 }

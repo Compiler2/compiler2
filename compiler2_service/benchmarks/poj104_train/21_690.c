@@ -10,9 +10,9 @@ int main_bench()
 	int sum=0,temp;
 	float ave;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&m[i]);
+		my_scanf("%d",&m[i]);
 	for(i=0;i<n;i++)
 		sum=sum+m[i];
 	ave=(float)sum/(float)n;
@@ -29,9 +29,9 @@ int main_bench()
 		}
 	}
 	if ((ave-(float)m[0])>((float)m[n-1]-ave))
-		printf("%d",m[0]);
+		my_printf("%d",m[0]);
 	else if ((ave-(float)m[0])<((float)m[n-1]-ave))
-		printf("%d",m[n-1]);
+		my_printf("%d",m[n-1]);
 	else
-		printf("%d,%d",m[0],m[n-1]);
+		my_printf("%d,%d",m[0],m[n-1]);
 }

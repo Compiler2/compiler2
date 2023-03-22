@@ -5,7 +5,7 @@ int main_bench()
 	char yuanshi[500],bijiao[500],laji[3];
 	double cankao,shiji;
 	int jishu=0,i,m,n,panduan=0;
-	scanf("%lf",&cankao);
+	my_scanf("%lf",&cankao);
 	gets(laji);
 	gets(yuanshi);
 	gets(bijiao);
@@ -23,15 +23,15 @@ int main_bench()
 	if(m!=n||panduan!=0)
 	{
 		
-		printf("error");
+		my_printf("error");
 	}
 	else if(m==n&&panduan==0)
 	{
 		shiji=jishu*1.0/m;
 		if(shiji>cankao)
-			printf("yes");
+			my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 	
 

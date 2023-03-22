@@ -20,7 +20,7 @@
               a=a+n[b]*q;
               b++;
       }
-      printf("%d\n",a);
+      my_printf("%d\n",a);
 }
 main_bench()
  {
@@ -28,7 +28,7 @@ main_bench()
       int f(int );
       for(int c=0;c<6;c++)
       {
-         scanf("%d",&a);
+         my_scanf("%d",&a);
          f(a);
       }
       getchar();

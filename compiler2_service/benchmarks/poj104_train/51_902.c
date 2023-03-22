@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[1000];
 	int n,i,j,k,len,flag=0,w,max=0,b[1000]={1};
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	len=strlen(a);
 	for(i=0;i<1000;i++)b[i]=1;
 	for(i=0;i<len-n;i++)
@@ -42,17 +42,17 @@ int main_bench()
 	}
 	for(i=0;i<1000;i++)
 		if(max<b[i])max=b[i];
-	if(max==1)printf("NO");
+	if(max==1)my_printf("NO");
 	else
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<1000;i++)
 	{
 		if(b[i]==max)
 		{
 			for(j=i;j<i+n;j++)
-				printf("%c",a[j]);
-			printf("\n");
+				my_printf("%c",a[j]);
+			my_printf("\n");
 		}
 	}
 	}

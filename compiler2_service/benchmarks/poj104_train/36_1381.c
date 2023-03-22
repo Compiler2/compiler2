@@ -3,10 +3,10 @@
 int main_bench()
 {
 	char s1[100]={'\0'},s2[100]={'\0'},c;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	int i,j,l1=strlen(s1),l2=strlen(s2);
 	if(l1!=l2)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=1;i<=l1-1;i++)
@@ -34,8 +34,8 @@ int main_bench()
 			}
 		}
 		if(strcmp(s1,s2)==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }

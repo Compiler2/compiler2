@@ -10,10 +10,10 @@ int main_bench()
 		char id[10];
 		int age;
 	} bingren[100],t[100],l[100],c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%s%d",&bingren[i].id,&bingren[i].age);
+		my_scanf("%s%d",&bingren[i].id,&bingren[i].age);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -39,12 +39,12 @@ int main_bench()
 	
 	for(i=0;i<f;i++)
 	{
-		printf("%s\n",t[i].id);
+		my_printf("%s\n",t[i].id);
 	}
 
     for(i=0;i<m;i++)
 	{
-	    printf("%s\n",l[i].id);
+	    my_printf("%s\n",l[i].id);
 	}
 	return 0;
 }

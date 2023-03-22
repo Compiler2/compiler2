@@ -3,11 +3,11 @@
 int main_bench()
 {
  int N;
- scanf("%d",&N);   
+ my_scanf("%d",&N);   
  int a[N],b[N];
  int i,j,k,n,m = 0,flag;
  for(i = 0; i <= N; i++)
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
  for(i = 0; i < N; i++)
  {
   flag = 1;
@@ -23,7 +23,7 @@ int main_bench()
     m++;
    }
  }
- printf("%d",b[1]);
+ my_printf("%d",b[1]);
  for(i = 2; i <= m; i++)
-  printf(" %d",b[i]);
+  my_printf(" %d",b[i]);
 }

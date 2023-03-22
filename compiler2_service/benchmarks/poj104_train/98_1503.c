@@ -14,14 +14,14 @@ void judge(char s[],int *n,int *m)
 	{
 		if(*m!=1)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
-		printf("%s",word);
+		my_printf("%s",word);
 		*n=*n+k+1;
 		*m=*m+k+1;
 		if(*m>80)
 		{
-			printf("\n");
+			my_printf("\n");
 			*m=1;
 		}
 	}
@@ -29,14 +29,14 @@ void judge(char s[],int *n,int *m)
 	{	
 		if(k==80-*m+1)
 		{
-			printf(" ");
-			printf("%s\n",word);
+			my_printf(" ");
+			my_printf("%s\n",word);
 			*n=*n+k+1;
 			*m=1;
 		}
 		else
 		{
-			printf("\n%s",word);
+			my_printf("\n%s",word);
 			*n=*n+k+1;
 			*m=k+2;
 		}
@@ -48,7 +48,7 @@ int main_bench()
 	int n,now=0,line=1,i;
 	int *all=&now,*current=&line;
 	char para[2000],enter;
-	scanf("%d%c",&n,&enter);
+	my_scanf("%d%c",&n,&enter);
 	gets(para);
 	for(i=1;i<=n;i++)
 	{

@@ -45,10 +45,10 @@ int main_bench()
 {
     int n,i,j,x[210][3]={0},a,b;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-	    scanf("%d%d%d",&x[i][0],&x[i][1],&x[i][2]);
+	    my_scanf("%d%d%d",&x[i][0],&x[i][1],&x[i][2]);
 	}
 
 	for(i=0;i<n;i++)
@@ -58,16 +58,16 @@ int main_bench()
 		if(a>b)
 		{
 		    if((a-b)%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-            	printf("NO\n");
+            	my_printf("NO\n");
 		}
 		else
 		{
 		    if((b-a)%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-            	printf("NO\n");
+            	my_printf("NO\n");
 		}
 	}
 	return 0;

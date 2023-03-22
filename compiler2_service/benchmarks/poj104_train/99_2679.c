@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,p[100],a=0,b=0,c=0,d=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 	}
 	for(i=0;i<n;i++){
 		if(p[i]<=18){
@@ -21,9 +21,9 @@ int main_bench()
 			d++;
 		}
 	}
-	printf("1-18: %.2lf%%\n",(double)a/n*100);
-    printf("19-35: %.2lf%%\n",(double)b/n*100);
-    printf("36-60: %.2lf%%\n",(double)c/n*100);
-    printf("60??: %.2lf%%\n",(double)d/n*100);
+	my_printf("1-18: %.2lf%%\n",(double)a/n*100);
+    my_printf("19-35: %.2lf%%\n",(double)b/n*100);
+    my_printf("36-60: %.2lf%%\n",(double)c/n*100);
+    my_printf("60??: %.2lf%%\n",(double)d/n*100);
 	return 0;
 }

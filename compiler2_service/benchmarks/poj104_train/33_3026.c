@@ -3,9 +3,9 @@
 int main_bench(){
 int i,n,t;
 char a[1000][260],b[1000][260];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s",&a[i]);
+my_scanf("%s",&a[i]);
 }
 for(i=0;i<n;i++){
 	for(t=0;a[i][t]!='\0';t++){
@@ -20,7 +20,7 @@ for(i=0;i<n;i++){
 	}
 }
 for(i=0;i<n;i++)
-printf("%s\n",b[i]);
+my_printf("%s\n",b[i]);
 return 0;
 
 }

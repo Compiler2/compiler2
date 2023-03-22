@@ -29,8 +29,8 @@ int main_bench()
 	int number = 0;
 	for (i = 0; i < 6; i++)
 	{
-		scanf("%d", &number);
-		printf("%d\n", reverse(number));
+		my_scanf("%d", &number);
+		my_printf("%d\n", reverse(number));
 	}
 	return 0;
 }

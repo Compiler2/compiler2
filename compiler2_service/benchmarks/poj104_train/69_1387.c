@@ -31,12 +31,12 @@ int main_bench()
                                 }
     c[aa]='\0';
     char *cc = c;
-    if(c[0]-48>9){printf("1");c[0]=c[0]-10;}
+    if(c[0]-48>9){my_printf("1");c[0]=c[0]-10;}
     else
     {
         while (*cc == '0') ++cc;
         if (*cc == 0) --cc;
     }
-    printf("%s\n", cc);
+    my_printf("%s\n", cc);
     
     }

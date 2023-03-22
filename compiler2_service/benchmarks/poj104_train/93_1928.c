@@ -4,22 +4,22 @@
 int main_bench()
 {
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a%3==0)
 	{
 		if(a%5==0)
 		{
 			if(a%7==0)
-				printf("%d %d %d\n",3,5,7);
+				my_printf("%d %d %d\n",3,5,7);
 			else
-				printf("%d %d\n",3,5);
+				my_printf("%d %d\n",3,5);
 		}
 		else
 		{
 			if(a%7==0)
-				printf("%d %d\n",3,7);
+				my_printf("%d %d\n",3,7);
 			else
-				printf("%d\n",3);
+				my_printf("%d\n",3);
 		}
 	}
 	else
@@ -27,16 +27,16 @@ int main_bench()
      if(a%5==0)
 		{
 			if(a%7==0)
-				printf("%d %d\n",5,7);
+				my_printf("%d %d\n",5,7);
 			else
-				printf("%d\n",5);
+				my_printf("%d\n",5);
 		}
 		else
 		{
 			if(a%7==0)
-				printf("%d\n",7);
+				my_printf("%d\n",7);
 			else
-				printf("n\n");
+				my_printf("n\n");
 		}
 	}
 }

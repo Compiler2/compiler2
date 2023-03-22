@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sz[1000],n,k,i,j,sum;
-	scanf("%d %d", &n, &k);
+	my_scanf("%d %d", &n, &k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &sz[i]);
+		my_scanf("%d", &sz[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -15,8 +15,8 @@ int main_bench()
 			sum=sz[i]+sz[j];
 			if(sum==k)
 			{
-				printf("yes");
-				scanf(" ");
+				my_printf("yes");
+				my_scanf(" ");
 				return 0;
 			}
 		}
@@ -25,7 +25,7 @@ int main_bench()
 			break;
 		}
 	}
-	printf("no");
-	scanf(" ");
+	my_printf("no");
+	my_scanf(" ");
 	return 0;
 }

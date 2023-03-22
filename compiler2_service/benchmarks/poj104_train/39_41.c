@@ -14,12 +14,12 @@ int main_bench()
 	long total;
 	total=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
 		st[i].t=0;
-		scanf("%s",st[i].na);
-		scanf("%d %d %c %c %d",&st[i].ag,&st[i].cg,&st[i].gb,&st[i].x,&st[i].l);
+		my_scanf("%s",st[i].na);
+		my_scanf("%d %d %c %c %d",&st[i].ag,&st[i].cg,&st[i].gb,&st[i].x,&st[i].l);
 		if ((st[i].ag>85) && (st[i].x=='Y'))
 			st[i].t=st[i].t+1000;
 
@@ -49,7 +49,7 @@ int main_bench()
 	}
 	
 	if (num==1)
-		printf("%s\n%d\n%ld\n",st[re].na,st[re].t,total);
+		my_printf("%s\n%d\n%ld\n",st[re].na,st[re].t,total);
 	else 
 	{
 		num=0;
@@ -57,7 +57,7 @@ int main_bench()
 		{
 			if (st[i].t==max)
 			{
-				printf("%s\n%d\n%d\n",st[i].na,st[i].t,total);
+				my_printf("%s\n%d\n%d\n",st[i].na,st[i].t,total);
 				num++;
 			}
 		}

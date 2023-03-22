@@ -2,10 +2,10 @@
 
 int main_bench(){
 int n,i,j,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char z[n][20];
 for(i=0;i<n;i++){
-    scanf("%s",z[i]);
+    my_scanf("%s",z[i]);
 }
 for(i=0;i<n;i++){
   k=0;
@@ -18,8 +18,8 @@ for(i=0;i<n;i++){
              else {k++;}
             }
                                }
-    if(k==0){printf("yes\n");}
-    else printf("no\n");
+    if(k==0){my_printf("yes\n");}
+    else my_printf("no\n");
                          }
 return 0;
 }

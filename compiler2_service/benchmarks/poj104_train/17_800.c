@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,j,m,p,l;
 	char s[100][100];
 	int a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=1;i<=n;i++)
 	{
@@ -42,17 +42,17 @@ int main_bench()
 		{
 			if(a[j]==1)
 			{
-				printf("$");
+				my_printf("$");
 			}
 			if(a[j]==2)
 			{
-				printf("?");
+				my_printf("?");
 			}
 			if(a[j]==0)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	}

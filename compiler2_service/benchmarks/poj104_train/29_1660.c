@@ -14,11 +14,11 @@ int main_bench()
 			A[j]=A[j-1]+A[j-2];
 			B[j-1]=A[j]/A[j-1]+B[j-2];
 		}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
-		scanf("%d",&S[i]);
+		my_scanf("%d",&S[i]);
 	for(i=0;i<m;i++)
-		printf("%.3f\n",B[S[i]-1]);
+		my_printf("%.3f\n",B[S[i]-1]);
 
 	return 0;
 }

@@ -3,14 +3,14 @@
 int main_bench()
 {int i,j,n,s,t,a[301];
 char c;
-scanf("%d",&a[1]);
+my_scanf("%d",&a[1]);
 n=1;
 for(i=2;i<=300;i++)
 {c=getchar();
 n=i-1;
 if(c=='\n')
 break;
-scanf("%d",&a[i]);}
+my_scanf("%d",&a[i]);}
 for(j=1;j<=n-1;j++)
 for(i=1;i<=n-j;i++)
 if(a[i]>a[i+1])
@@ -21,7 +21,7 @@ if(a[j]<t)
 {t=a[j];
 break;}
 if(t==a[n])
-printf("No");
-else printf("%d",t);
+my_printf("No");
+else my_printf("%d",t);
 return 0;
 }

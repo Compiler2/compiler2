@@ -4,10 +4,10 @@ int main_bench(){
 	int i,j,t;
 	int n,k=0,m=0,s=0;
 	int sz[100][2],lx[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -31,7 +31,7 @@ int main_bench(){
 
 
 	
-	printf("%d",lx[0]);
+	my_printf("%d",lx[0]);
 
 
 

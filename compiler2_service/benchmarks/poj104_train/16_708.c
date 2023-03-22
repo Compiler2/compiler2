@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int x,y=0;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	if(x<10)
-		printf("%d",x);
+		my_printf("%d",x);
 	else
 	{
 	while(x>0)
@@ -14,9 +14,9 @@ int main_bench()
 			x=x/10;
 	}
 	if(x%10!=0)
-	printf("%d",y);
+	my_printf("%d",y);
 	else
-	printf("%03d",y);
+	my_printf("%03d",y);
 	}
 	return 0;
 }

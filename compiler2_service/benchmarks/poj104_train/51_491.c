@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,o[500],ji,max=0;
 	char a[502],b[6],cmp[6],c[500][6];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b[n]='\0';
 	cmp[n]='\0';
 	getchar();
@@ -50,7 +50,7 @@ int main_bench()
 	j=0;
 	if(max!=1)
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<ji;i++)
 		{
 			if(o[i]==max)
@@ -59,7 +59,7 @@ int main_bench()
 	}
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

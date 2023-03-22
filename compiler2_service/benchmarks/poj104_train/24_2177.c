@@ -14,7 +14,7 @@ int main_bench()
 			break;
 		}
 	}
-	if(c[i]=='\0')  {printf("%s\n",a[0]);printf("%s\n",a[0]);}
+	if(c[i]=='\0')  {my_printf("%s\n",a[0]);my_printf("%s\n",a[0]);}
 	else
 	{	for(m=1,i=k;;i++)
 	{	if(c[i]==' '||c[i]==',')
@@ -39,7 +39,7 @@ int main_bench()
 		d=strlen(a[i]);
 		if(d>l) strcpy(temp,a[i]);
 	}
-	printf("%s\n",temp);
+	my_printf("%s\n",temp);
 
     strcpy(temp,a[0]);
 	for(i=1;i<m;i++)
@@ -48,7 +48,7 @@ int main_bench()
 		d=strlen(a[i]);
 		if(d<l) strcpy(temp,a[i]);
 	}
-	printf("%s\n",temp);
+	my_printf("%s\n",temp);
 	}
 
 }

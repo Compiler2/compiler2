@@ -13,13 +13,13 @@ int main_bench()
     int startDay, xMonthThirteenth = 13;
     int whatDay, i;
 
-    scanf("%d", &startDay);
+    my_scanf("%d", &startDay);
     xMonthThirteenth += (startDay - 1); 
     for(i = 0; i < 12; i ++)
     {
         whatDay = xMonthThirteenth % 7;
         if(whatDay == 5)
-            printf("%d\n", i + 1);
+            my_printf("%d\n", i + 1);
         xMonthThirteenth += days[i];
     }
 

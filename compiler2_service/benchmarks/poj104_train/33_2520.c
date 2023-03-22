@@ -28,7 +28,7 @@ int main_bench()
 				c++;
 			}
 		}
-		printf("%s\n",cdna);
+		my_printf("%s\n",cdna);
 	}
 	return 0;
 }

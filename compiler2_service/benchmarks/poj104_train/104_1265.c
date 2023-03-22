@@ -7,7 +7,7 @@ int main_bench()
 	int x,y, i, j, ilenx=0, ileny=0;
 	int itemp;
 	int imin;
-	scanf("%d%d", &x, &y);
+	my_scanf("%d%d", &x, &y);
 	for (i=0; i<11; i++)
 	{
 		iaX[i]=-1;
@@ -54,7 +54,7 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d", iaX[--i]);
+	my_printf("%d", iaX[--i]);
 
 	return 0;
 }

@@ -20,12 +20,12 @@ int main_bench()
         {
              for(k=0;k<i;k++) 
              {
-                printf("%c",zfc[k]);
+                my_printf("%c",zfc[k]);
              }
-             printf("%s",re);
+             my_printf("%s",re);
              for(k=i+slen;k<len;k++)
              {
-                 printf("%c",zfc[k]);
+                 my_printf("%c",zfc[k]);
              }
              t=1;  
         }
@@ -36,7 +36,7 @@ int main_bench()
     }
     if(t==0)
     {
-            printf("%s",zfc);
+            my_printf("%s",zfc);
     }
     return 0;
 }

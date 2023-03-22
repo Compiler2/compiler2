@@ -4,11 +4,11 @@ int main_bench()
 {
 	int bian(int a,int b);
 	int n,i,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a,&b);
-		printf("%d\n",bian(a,b));
+		my_scanf("%d %d",&a,&b);
+		my_printf("%d\n",bian(a,b));
 	}
 	return 0;
 }
@@ -18,7 +18,7 @@ int bian(int a,int b)
 	int s=0;
 	for(p=c,i=0;i<a*b;i++,p++)
 	{
-		scanf("%d",p);
+		my_scanf("%d",p);
 	}
 	for(p=c,i=0;i<a*b;)
 	{

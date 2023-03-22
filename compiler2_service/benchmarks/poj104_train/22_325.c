@@ -4,12 +4,12 @@ main_bench()
 {
 	int a,b[301],i,j,m,d;
 	char c;
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	for(i=1;i<300;i++)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c==',')
-			scanf("%d",&b[i]);
+			my_scanf("%d",&b[i]);
 		else
 			break;
 	}
@@ -26,7 +26,7 @@ main_bench()
 			d=b[j];
 	}
 	if(d>=0)
-		printf("%d",d);
+		my_printf("%d",d);
 	else
-		printf("No");
+		my_printf("No");
 }

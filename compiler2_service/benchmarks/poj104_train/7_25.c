@@ -5,9 +5,9 @@ int main_bench()
 	int i,j,d,e,f,k;
 	char a[256],b[256],c[256];
 	gets(a);
-	scanf("\n");
+	my_scanf("\n");
 	gets(b);
-	scanf("\n");
+	my_scanf("\n");
 	gets(c);
 	d=strlen(a);
 	e=strlen(b);
@@ -30,7 +30,7 @@ int main_bench()
 			a[f+j-e]=a[j];
 		for(j=i;j<(i+f);j++)
 			a[j]=c[j-i];
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
-	else printf("%s\n",a);
+	else my_printf("%s\n",a);
 }

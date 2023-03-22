@@ -3,12 +3,12 @@
 int main_bench(){
 int n,i,j,t,z=1;
 int sa[50000],sb[50000],sz[10000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<10000;i++){
   sz[i]=0;
 }
 for(i=0;i<n;i++){
- scanf("%d%d",&(sa[i]),&(sb[i]));
+ my_scanf("%d%d",&(sa[i]),&(sb[i]));
  for(j=sa[i];j<sb[i];j++){
    sz[j]=1;
  }
@@ -32,8 +32,8 @@ for(i=sa[0];i<sb[n-1];i++){
 	  z=0;
 }
 if(z)
-printf("%d %d",sa[0],sb[n-1]);
+my_printf("%d %d",sa[0],sb[n-1]);
 else
-printf("no");
+my_printf("no");
 return 0;
 }

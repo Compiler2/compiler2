@@ -3,9 +3,9 @@
 int main_bench(){
 	int n, i, c, j;
 	char s[30];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=1;i<=n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		c=0;
 		j=0;
 		if((s[0]=='_')||('a'<=s[0]&&s[0]<='z')||('A'<=s[0]&&s[0]<='Z')){
@@ -15,11 +15,11 @@ int main_bench(){
 				}
 			}
 			if(c==j-1){
-				printf("yes\n");
+				my_printf("yes\n");
 			}
-			else 	printf("no\n");
+			else 	my_printf("no\n");
 		}
-	else printf("no\n");	 
+	else my_printf("no\n");	 
 	}
 	
 		return 0;

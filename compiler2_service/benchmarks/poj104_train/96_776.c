@@ -6,17 +6,17 @@ int num(char x);
 int main_bench()
 {
 	char z[105];
-	scanf("%s",z);
+	my_scanf("%s",z);
 	int i;
 	int mid=num(z[0]);
 	int m;
 	if((z[2]==0 && num(z[0])*10+num(z[1])<13))
 	{
-		printf("0\n%d",num(z[0])*10+num(z[1]));
+		my_printf("0\n%d",num(z[0])*10+num(z[1]));
 	}
 	else if(z[1]==0)
 	{
-		printf("0\n%d",num(z[0]));
+		my_printf("0\n%d",num(z[0]));
 	}
 	else
 	{
@@ -34,10 +34,10 @@ int main_bench()
 				m++;
 				mid-=13;
 			}
-			printf("%d",m);
+			my_printf("%d",m);
 		}
-		printf("\n");
-		printf("%d",mid);
+		my_printf("\n");
+		my_printf("%d",mid);
 	}
 	return 0;
 }

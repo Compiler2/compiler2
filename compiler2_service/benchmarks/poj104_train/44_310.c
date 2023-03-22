@@ -15,7 +15,7 @@ main_bench()
 {  
    int x[6],p[6],i;
    for (i=0;i<6;i++)
-   scanf ("%d",&x[i]); 
+   my_scanf ("%d",&x[i]); 
    for (i=0;i<6;i++)
    {
        if (x[i]>=0)
@@ -24,7 +24,7 @@ main_bench()
           p[i]=-reverse(-x[i]);
     }
      for (i=0;i<6;i++)
-    printf ("%d\n",p[i]);
+    my_printf ("%d\n",p[i]);
     getchar ();
     getchar ();
  }

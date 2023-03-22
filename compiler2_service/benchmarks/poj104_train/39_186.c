@@ -14,13 +14,13 @@ int main_bench()
     int n,i,temp,sum=0,max=0;
 	int money[100]={0};
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",stu[i].name);
-		scanf("%d%d",&stu[i].examgrade,&stu[i].appgrade);
-		scanf(" %c %c",&stu[i].a,&stu[i].b);
-		scanf("%d",&stu[i].thesis);
+		my_scanf("%s",stu[i].name);
+		my_scanf("%d%d",&stu[i].examgrade,&stu[i].appgrade);
+		my_scanf(" %c %c",&stu[i].a,&stu[i].b);
+		my_scanf("%d",&stu[i].thesis);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -50,6 +50,6 @@ int main_bench()
 			temp=i;
 		}
 	}
-	printf("%s\n",stu[temp].name);
-	printf("%d\n%d",max,sum);
+	my_printf("%s\n",stu[temp].name);
+	my_printf("%d\n%d",max,sum);
 }

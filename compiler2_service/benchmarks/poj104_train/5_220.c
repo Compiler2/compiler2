@@ -4,14 +4,14 @@ int main_bench(){
 int i,m,d,e,f,r;
 double a,g;
 r=0;
-scanf("%lf",&a);
+my_scanf("%lf",&a);
 char b[501],c[501];
 for(i=0;i<2;i++){
 	if(i==0){
-		scanf("%s",b);
+		my_scanf("%s",b);
         m=strlen(b);
 	}else{
-		scanf("%s",c);
+		my_scanf("%s",c);
 		d=strlen(c);
 	}
 }
@@ -35,12 +35,12 @@ e=0;
  if((m==d)&&(r==0)){
    g=1.0*e/m;
      if(g>a){
-			printf("yes");
+			my_printf("yes");
 	 }else{
-			printf("no");
+			my_printf("no");
 	 }
  }else{
-	printf("error");
+	my_printf("error");
  }
 
 

@@ -8,13 +8,13 @@ int main_bench()
 	char w1[20] = {0};
         char w2[20] = {0} ;
 
-	scanf("%s%s",w1,w2);	
+	my_scanf("%s%s",w1,w2);	
 	arrange(w1);
 		arrange(w2);
 		if (strcmp(w1,w2))
-			printf("NO\n");
+			my_printf("NO\n");
 		else
-			printf("YES\n");
+			my_printf("YES\n");
 	
 }
 

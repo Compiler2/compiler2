@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,input[50000][2],j,a,k,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-			scanf("%d",&input[i][j]);
+			my_scanf("%d",&input[i][j]);
 		}
 	}
 	for(i=0;i<n-1;i++)
@@ -38,8 +38,8 @@ int main_bench()
 		else break;
 	}
 	if(i<n-1)
-		printf("no");
-	else printf("%d %d",a,b);
+		my_printf("no");
+	else my_printf("%d %d",a,b);
 	return 0;
 }
 

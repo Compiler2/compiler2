@@ -110,7 +110,7 @@ int main_bench()
 
 	for(i=0;voids[i]!=0;i++)
 	{
-		printf("%c",voids[i]);
+		my_printf("%c",voids[i]);
 	}
 }
 

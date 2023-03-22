@@ -4,7 +4,7 @@ main_bench()
 {
 	char a[101]={0},re[100]={0};
 	int i,j,k=0,l,te;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	te=a[0]-'0';
 	for (i=1;i<l;i++)
@@ -18,8 +18,8 @@ main_bench()
      	te=te%13;
 	}
 	if ((l==1||l==2)&&re[0]==0)
-		printf("0\n%d",te);
+		my_printf("0\n%d",te);
 	else
-		printf("%s\n%d",re,te);
+		my_printf("%s\n%d",re,te);
 	
 }

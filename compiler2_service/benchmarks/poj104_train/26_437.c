@@ -19,6 +19,6 @@ int main_bench()
 			flag=1;
 		}
 		if(!(flag==0&&j>1))
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,l=0,s=100,p;
 	char a[200][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a[i]);
+		my_scanf("%s",&a[i]);
 		p=strlen(a[i]);
 		if(p>l)
 			l=p;

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a[6];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a[0]=(n-n%100)/100;
 	n=n-a[0]*100;
 	a[1]=(n-n%50)/50;
@@ -18,7 +18,7 @@ int main_bench()
 	int i;
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}
 	return 0;
 }

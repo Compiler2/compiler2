@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char sz[100];
 	int jg[100];
 	int i,j,len,e;
 	for(j=0;j<n;j++)
 	{
 		e=0;
-		scanf("%s",sz);
+		my_scanf("%s",sz);
 		len=strlen(sz);
 		if(sz[0]>='a'&&sz[0]<='z')
 		{
@@ -57,9 +57,9 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(jg[i]==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

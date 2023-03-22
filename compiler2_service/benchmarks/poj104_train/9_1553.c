@@ -8,10 +8,10 @@ struct oldpeople
 int main_bench()
 {
 	int n;int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",old[i].id,&old[i].year);
+		my_scanf("%s %d",old[i].id,&old[i].year);
 	}
 	int j=0;
 	for(i=0;i<n;i++)
@@ -34,12 +34,12 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		printf("%s\n",old60[i].id);
+		my_printf("%s\n",old60[i].id);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(old[i].year<60)
-		printf("%s\n",old[i].id);
+		my_printf("%s\n",old[i].id);
 	}
 	return 0;
 }

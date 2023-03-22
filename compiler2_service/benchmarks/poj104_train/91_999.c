@@ -10,6 +10,6 @@ l=strlen(s);
 for(i=0;i<l;i++)
 {*(s1+i)=*(s+i)+*(s+1+i);}
 *(s1+l)='\0';
-printf("%s",s1);
+my_printf("%s",s1);
 }
 

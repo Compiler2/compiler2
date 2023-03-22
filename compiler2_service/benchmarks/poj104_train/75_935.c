@@ -26,9 +26,9 @@ main_bench()
 		c[i]=0;
 	for(i=0;i<count;++i)
 		a[i]=convert(comma[i],comma[i+1],str);
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	for(i=1;i<count;++i)
-		scanf(",%d",&b[i]);
+		my_scanf(",%d",&b[i]);
 	for(i=0;i<1000;i++)
 		for(j=0;j<count;++j)
 			if(i>=a[j]&&i<b[j])
@@ -37,6 +37,6 @@ main_bench()
 	for(i=1;i<1000;++i)
 		if(c[i]>max)
 			max=c[i];
-	printf("%d %d",count,max);
+	my_printf("%d %d",count,max);
 }
 

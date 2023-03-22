@@ -9,8 +9,8 @@ int main_bench()
 	int la,lb,i,j;
 	char *pa,*pb;
 	char *x;
-	scanf("%s",a);pa=a;
-	scanf("%s",b);pb=b;
+	my_scanf("%s",a);pa=a;
+	my_scanf("%s",b);pb=b;
 	la=strlen(a);
 	lb=strlen(b);
 	for(;pb<b+lb;pb++)
@@ -31,7 +31,7 @@ int main_bench()
 			
 			if(pa==a+la && *(pb-1)==*(pa-1))
 			{
-				printf("%d",x-b);
+				my_printf("%d",x-b);
 				break;
 			}
 			else

@@ -19,9 +19,9 @@ main_bench()
 {
 	struct Interval a[50000];
 	int i,j=0,n,end=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d %d",&a[i].sta,&a[i].end);
+		my_scanf("%d %d",&a[i].sta,&a[i].end);
 	qsort(a,n,sizeof(struct Interval),compare);
 	for(i=0;i<n-1;i++)
 	{
@@ -34,6 +34,6 @@ main_bench()
 		else break;
 	}
 	if(j==n-1)
-		printf("%d %d\n",a[0].sta,end);
-	else printf("no");
+		my_printf("%d %d\n",a[0].sta,end);
+	else my_printf("no");
 }

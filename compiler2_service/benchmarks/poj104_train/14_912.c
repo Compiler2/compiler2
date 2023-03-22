@@ -15,10 +15,10 @@ struct stu
 int main_bench()
 {	int n,i;
 	struct stu tem;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&(stu_1[i].id),&(stu_1[i].ch),&(stu_1[i].mt));
+		my_scanf("%d %d %d",&(stu_1[i].id),&(stu_1[i].ch),&(stu_1[i].mt));
 		stu_1[i].total=stu_1[i].ch+stu_1[i].mt;
 		if(stu_1[i].total>top1.total){
 			top3=top2;top2=top1;top1=stu_1[i];
@@ -31,11 +31,11 @@ int main_bench()
 		}
 		else;
 		}
-		printf("%d %d\n",top1.id,top1.total);
+		my_printf("%d %d\n",top1.id,top1.total);
 		if((top2.id)!=0)
-			printf("%d %d\n",top2.id,top2.total);
+			my_printf("%d %d\n",top2.id,top2.total);
 		if((top3.id)!=0)
-			printf("%d %d\n",top3.id,top3.total);
+			my_printf("%d %d\n",top3.id,top3.total);
 	
 	return 0;
 }

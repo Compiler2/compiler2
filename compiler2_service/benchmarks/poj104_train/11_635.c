@@ -4,7 +4,7 @@
 int main_bench()
 {
   int year,month,day,leap,sum;
-  scanf("%d %d %d",&year,&month,&day);
+  my_scanf("%d %d %d",&year,&month,&day);
   if(year%4!=0) leap=0;
   if(year%4==0)
   {
@@ -48,7 +48,7 @@ int main_bench()
 	  case 12: sum=31+28+31+30+31+30+31+31+30+31+30+day;break; 
 	  }
   }
-  printf("%d",sum);
+  my_printf("%d",sum);
 }
 
 

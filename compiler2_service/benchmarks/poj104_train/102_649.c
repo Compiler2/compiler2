@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,a=0,b=0,k,q,p;
 	double sg[100],e,nan[100],nv[100];
 	char xb[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-       scanf("%s %lf",xb[i],&sg[i]);
+       my_scanf("%s %lf",xb[i],&sg[i]);
 	   p=strlen(xb[i]);
 	   if(p==4)
 	   {
@@ -48,17 +48,17 @@ int main_bench()
 	}
 	for(int r=0;r<a;r++)
 	{
-	    printf("%.2lf ",nan[a-r-1]);
+	    my_printf("%.2lf ",nan[a-r-1]);
 	}
 	for(int t=0;t<b;t++)
 	{
 	    if(t<b-1)
 		{
-		  printf("%.2lf ",nv[t]);
+		  my_printf("%.2lf ",nv[t]);
 		}
 		else
 		{
-                    printf("%.2lf",nv[t]);
+                    my_printf("%.2lf",nv[t]);
                    }
 	}
 	return 0;

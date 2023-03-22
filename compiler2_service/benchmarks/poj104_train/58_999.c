@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i, mm=0,j,len;
 	char s[90];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 	gets(s);len=strlen(s);
@@ -16,9 +16,9 @@ int main_bench()
 
 				
 	if(mm==0&&(s[0]=='_'||(s[0]>=65&&s[0]<=90)||  (s[0]>=97&&s[0]<=122) ))
-		printf("1\n");
+		my_printf("1\n");
 	else 
-	 printf("0\n");
+	 my_printf("0\n");
 	
 				}
 

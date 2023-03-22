@@ -4,7 +4,7 @@
 int main_bench(){
 	char zfc[300],i;
 	int dec=0,tag,cs[26]={0},m=0,j;
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	int n=strlen(zfc);
 	for(i='A';i<='Z';i++){
 		tag=0;
@@ -16,7 +16,7 @@ int main_bench(){
 			}
 		}
 		if(tag!=0){
-			printf("%c=%d\n",i,cs[m]);
+			my_printf("%c=%d\n",i,cs[m]);
 			m++;
 		}
 	}
@@ -30,12 +30,12 @@ int main_bench(){
 			}
 		}
 		if(tag!=0){
-			printf("%c=%d\n",i,cs[m]);
+			my_printf("%c=%d\n",i,cs[m]);
 			m++;
 		}
 	}
 	if(dec==0){
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

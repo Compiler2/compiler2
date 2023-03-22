@@ -5,10 +5,10 @@ int main_bench()
 	int n,num=0,amin, bmax,i,maxb=0;
 	int a[10000];
 	int b[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(int j=n-1;j>0;j--)
 	{
@@ -42,7 +42,7 @@ int main_bench()
 		}
 		if(a[m+1]>maxb)
 		{
-			printf("no");
+			my_printf("no");
 			num++;
 			break;
 		}
@@ -64,7 +64,7 @@ int main_bench()
 	bmax=b[n];
 	if(num==0)
 	{
-		printf("%d %d",amin,bmax);
+		my_printf("%d %d",amin,bmax);
 	}
 	return 0;
 }

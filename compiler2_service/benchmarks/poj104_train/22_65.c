@@ -22,10 +22,10 @@ int main_bench()
 	{
 		if(a[0]==a[i]) l=l+1;
 	}
-	if(l==k) printf("No");
+	if(l==k) my_printf("No");
 	else 
 	{
-		if(k==0) printf("No");
+		if(k==0) my_printf("No");
 	    else 
     	j=0;
     	for(i=1;i<=k;i++)
@@ -45,7 +45,7 @@ int main_bench()
 		{
 		   if(a[j]<a[i]) j=i;
 		}
-	    printf("%d",a[j]);
+	    my_printf("%d",a[j]);
 	}
 }
 

@@ -6,12 +6,12 @@ int main_bench(){
 	int b,c,d,i,e;
 	for(d=0;d<5;d++){
 		for(i=0;i<5;i++){
-			scanf("%d",&a[d][i]);
+			my_scanf("%d",&a[d][i]);
 		}
 	}
-	scanf("%d %d",&b,&c);
+	my_scanf("%d %d",&b,&c);
 	d=zai(b,c);
-	if(d==0) printf("error");
+	if(d==0) my_printf("error");
     else{
 		for(i=0;i<5;i++){
 			e=a[b][i];
@@ -19,9 +19,9 @@ int main_bench(){
 	        a[c][i]=e;}
 	for(d=0;d<5;d++){
 		for(i=0;i<4;i++){
-			printf("%d ",a[d][i]);
+			my_printf("%d ",a[d][i]);
 		}
-printf("%d\n",a[d][4]);
+my_printf("%d\n",a[d][4]);
 	}
 	}
 	return 0;

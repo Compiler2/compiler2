@@ -5,9 +5,9 @@ int n;
 int e;
 int i;
 int sz[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d",&(sz[i]));
+	my_scanf("%d",&(sz[i]));
 }
 if(n==2){
 	if(sz[0]<sz[1]){
@@ -30,7 +30,7 @@ if(n==2){
 			sz[1]=sz[i];
 		}
 	}
-printf("%d\n%d\n",sz[0],sz[1]);
+my_printf("%d\n%d\n",sz[0],sz[1]);
 return 0;
 	}
 	

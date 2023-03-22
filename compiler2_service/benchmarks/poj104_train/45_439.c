@@ -6,8 +6,8 @@ int main_bench()
 	char s[50],w[50],*p,*q;
 	p=w;
 	q=s;
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	for(;*(p+i)!='\0';i++)
 	{
 		if(*(p+i)==*q)
@@ -25,7 +25,7 @@ int main_bench()
 		
 			if(k)
 			{
-				printf("%d",re);
+				my_printf("%d",re);
 				break;
 			}
 		}

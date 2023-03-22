@@ -33,7 +33,7 @@ int main_bench()
 		}
 	}
 	if(clen==1){
-		printf("%d",c[clen]);
+		my_printf("%d",c[clen]);
 	}else{
 		for(i=clen;i>0;i--){
 			if(c[i]!=0){
@@ -43,8 +43,8 @@ int main_bench()
 		}
 	}
 	for(i=m;i>0;i--){
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

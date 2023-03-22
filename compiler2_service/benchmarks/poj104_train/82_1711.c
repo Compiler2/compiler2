@@ -3,10 +3,10 @@
 int main_bench()
 {
    int n,x,y,i=1,k=0,l=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    while(i<=n)
    {
-      scanf("%d%d",&x,&y);
+      my_scanf("%d%d",&x,&y);
       if(x>=90&&x<=140&&y>=60&&y<=90)
          k++;
       else
@@ -15,7 +15,7 @@ int main_bench()
          l=k;
       i++;
    }
-   printf("%d",l);
-   scanf("%d",&n);
+   my_printf("%d",l);
+   my_scanf("%d",&n);
    return 0;
 }

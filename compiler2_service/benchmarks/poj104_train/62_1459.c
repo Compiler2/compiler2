@@ -13,6 +13,6 @@ for(i=0,j=0;*(p0+i)!='\0';i++)
 else if(*(p0+i)!=' '&&*(p0+i+1)!=' ') {*(p1+j)=*(p0+i);j++;}
     else ;}
 *(p1+j)='\0';
-printf("%s",p1);
+my_printf("%s",p1);
 return 0;}
 

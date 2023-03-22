@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n100=0,n50=0,n20=0,n10=0,n5=0,n1=0,m=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	if (m>=100)
 	{
@@ -31,7 +31,7 @@ int main_bench()
 		m=m%(n5*5);
 	}
 	n1=m;
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
 	return 0;
 }
 

@@ -6,7 +6,7 @@ int main_bench()
     long number;
     int i,place=1;
 
-    scanf("%ld",&number);
+    my_scanf("%ld",&number);
     do {
     place=1;
     for(i=0;i<=4;i++) {
@@ -16,9 +16,9 @@ int main_bench()
             place+=1;
     }
     for(i=0;i<place;i++) 
-        printf("%d",num[i]);
-    printf("\n");
-    scanf("%ld",&number);
+        my_printf("%d",num[i]);
+    my_printf("\n");
+    my_scanf("%ld",&number);
     }while(number!=0);
     return 0;
 }

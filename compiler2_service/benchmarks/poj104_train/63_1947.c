@@ -4,19 +4,19 @@ int main_bench()
 {
 int m,q,n,i,j,p;
 int a[100][100],b[100][100],c[100][100];
-scanf("%d",&m);
-scanf("%d",&q);
+my_scanf("%d",&m);
+my_scanf("%d",&q);
 for(i=0;i<m;i++)
 {
 for(j=0;j<q;j++)
-{scanf("%d",&a[i][j]);}
+{my_scanf("%d",&a[i][j]);}
 }
-scanf("%d",&q);
-scanf("%d",&n);
+my_scanf("%d",&q);
+my_scanf("%d",&n);
 for(i=0;i<q;i++)
 {
 for(j=0;j<n;j++)
-{scanf("%d",&b[i][j]);}
+{my_scanf("%d",&b[i][j]);}
 }
 for(i=0;i<m;i++)
 {for(j=0;j<n;j++)
@@ -33,8 +33,8 @@ for(i=0;i<m;i++)
 for(j=0;j<n;j++)
 {
 if(j==n-1)
-printf("%d\n",c[i][j]);
+my_printf("%d\n",c[i][j]);
 else
-printf("%d ",c[i][j]);}
+my_printf("%d ",c[i][j]);}
 }
 }

@@ -16,12 +16,12 @@ int main_bench()
 {
 	int n,i;
 	long sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		if(f(i))
 			sum=sum+i*i;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

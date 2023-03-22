@@ -6,9 +6,9 @@ int main_bench()
     int i,c,j,k,o;
     int number2[40];
     char number[40],number1[40],number3[40];
-    scanf("%d",&a);
-    scanf("%s",number);
-    scanf("%d",&b);
+    my_scanf("%d",&a);
+    my_scanf("%s",number);
+    my_scanf("%d",&b);
 
     
      int q1,p1;

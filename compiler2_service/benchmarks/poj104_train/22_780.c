@@ -22,9 +22,9 @@ here:
 			k=0;
 	}
 	if(k==1)
-		printf("No");
+		my_printf("No");
 	else if(a[1]==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		max=a[0];
@@ -41,7 +41,7 @@ here:
 			else if(a[i]>max2)
 				max2=a[i];
 		}
-		printf("%d",max2);
+		my_printf("%d",max2);
 	}
 	return 0;
 }

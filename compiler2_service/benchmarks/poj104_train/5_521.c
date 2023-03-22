@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,sum=0,m,n;
 	double x;
-	scanf("%lf",&x);
+	my_scanf("%lf",&x);
 	char c1[501],c2[501];
-	scanf("%s",c1);
-	scanf("%s",c2);
+	my_scanf("%s",c1);
+	my_scanf("%s",c2);
     m=strlen(c1);
 	n=strlen(c2);
 	if(m==n){
@@ -17,7 +17,7 @@ int main_bench()
 			}
 		}
 		if(sum!=0){
-			printf("error");
+			my_printf("error");
 		}else{
 			for(i=0;i<m;i++){
 				if(c1[i]==c2[i]){
@@ -25,13 +25,13 @@ int main_bench()
 				}
 			}
 			if((double)sum/m>x){
-				printf("yes");
+				my_printf("yes");
 			}else{
-				printf("no");
+				my_printf("no");
 			}
 		}
 	}else if(m!=n){
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

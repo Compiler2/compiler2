@@ -3,7 +3,7 @@
 int main_bench()
 {
 int m,n100,n50,n20,n10,n5,n1;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(n100=0;m-100*n100>=0;n100++);
 n100=n100-1;
 m=m-100*n100;
@@ -22,5 +22,5 @@ m=m-5*n5;
 for(n1=0;m-1*n1>=0;n1++);
 n1=n1-1;
 m=m-1*n1;
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
 }

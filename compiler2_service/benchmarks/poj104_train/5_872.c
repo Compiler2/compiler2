@@ -6,12 +6,12 @@ int main_bench(){
     int i,c;
     c=0;
     char a[501],b[501];
-    scanf("%lf",&n);
-    scanf("%s%s",a,b);
+    my_scanf("%lf",&n);
+    my_scanf("%s%s",a,b);
     m=strlen(a);
     t=strlen(b);
     if(m!=t){
-        printf("error");
+        my_printf("error");
     }else{
         for(i=0;i<m;i++){
             if(((a[i]=='A')||(a[i]=='T')||(a[i]=='C')||(a[i]=='G'))&&((b[i]=='A')||(b[i]=='T')||(b[i]=='C')||(b[i]=='G'))){
@@ -24,12 +24,12 @@ int main_bench(){
         }
         y=x/m;
         if(c>0){
-            printf("error");
+            my_printf("error");
         }else{
             if(y>n){
-                printf("yes");
+                my_printf("yes");
             }else{
-                printf("no");
+                my_printf("no");
             }
         }
     }

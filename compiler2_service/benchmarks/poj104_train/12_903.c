@@ -3,7 +3,7 @@
 main_bench()
 {
 	int c[100][100],i=0,j=0,m,n,k,s=0;
-	while(scanf("%d",&c[i][j]))
+	while(my_scanf("%d",&c[i][j]))
 	{
 		if(c[i][j]!=0&&c[i][j]!=-1)
 			j++;
@@ -24,7 +24,7 @@ main_bench()
 					s++;
 			}
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 		s=0;
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
     double n,c;
     int b=0,p=1,i;
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     char a[2][501];
-    scanf("%s",a[0]);
-    scanf("%s",a[1]);
+    my_scanf("%s",a[0]);
+    my_scanf("%s",a[1]);
     for(i=0;i<501;i++){
                        if(a[0][i]=='\0'){
                                       if(a[1][i]!='\0'){
@@ -30,11 +30,11 @@ int main_bench()
                        }
     c=b*1.0/i;
     
-    if(p==0){printf("error");}
+    if(p==0){my_printf("error");}
     else{
-         if(c>n){printf("yes");}
+         if(c>n){my_printf("yes");}
          else{
-              printf("no");
+              my_printf("no");
               }
          }
          

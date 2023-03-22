@@ -24,17 +24,17 @@ int main_bench()
 {
 	char a[100],b[100];
 	int x,y,k;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	x=strlen(a);
 	y=strlen(b);
 	if(x!=y)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		k=than(a,b);
 		if(k)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }

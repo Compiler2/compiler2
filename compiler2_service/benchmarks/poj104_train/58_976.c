@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,len,o[1000],*po;
 	char m[1000][81],*pm[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	po=o;
 	for(i=0;i<n+1;i++){
 		pm[i]=m[i];
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	for(i=1;i<n+1;i++){
-		printf("%d\n",*(po+i));
+		my_printf("%d\n",*(po+i));
 	}
 	return 0;
 }

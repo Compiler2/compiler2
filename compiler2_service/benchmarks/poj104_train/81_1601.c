@@ -14,10 +14,10 @@ int main_bench()
 		{
 			for(j=0;j<5;j++)
 			{
-				scanf("%d", &a[i][j]);
+				my_scanf("%d", &a[i][j]);
 			}
 		}
-		scanf("%d %d", &n, &m);
+		my_scanf("%d %d", &n, &m);
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<5;j++)
@@ -34,7 +34,7 @@ int main_bench()
 		}		
 if(swit1==0 || swit2==0 || n>=5 || m>=5)
 		{
-			printf("error");	
+			my_printf("error");	
 return 0;
 	         }
 else
@@ -59,14 +59,14 @@ else
 				{
 					if(j!=4)
 					{
-						printf("%d ", a[i][j]);
+						my_printf("%d ", a[i][j]);
 					}
 					else if(j==4)
 					{
-						printf("%d", a[i][j]);
+						my_printf("%d", a[i][j]);
 					}
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 }

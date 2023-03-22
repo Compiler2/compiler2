@@ -9,11 +9,11 @@ int main_bench()
 	};
 	struct qujian quj[50000];
 	int n,i,j,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&quj[i].num1);
-		scanf("%d",&quj[i].num2);
+		my_scanf("%d",&quj[i].num1);
+		my_scanf("%d",&quj[i].num2);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -43,8 +43,8 @@ int main_bench()
 	}
 	if(i==n)
 	{
-		printf("%d %d",a,b);
+		my_printf("%d %d",a,b);
 	}
-	else printf("no");
+	else my_printf("no");
 	return 0;
 }

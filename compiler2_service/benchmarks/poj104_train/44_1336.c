@@ -36,8 +36,8 @@ main_bench()
     for (i=0;i<6;i++)
     {
         int n;
-        scanf("%d",&n);
-        printf("%d\n",reverse(n) );
+        my_scanf("%d",&n);
+        my_printf("%d\n",reverse(n) );
     }
     getchar();
     getchar();

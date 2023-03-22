@@ -23,16 +23,16 @@ main_bench()
 				b=p;
 				for(;p<=q;p++)
 				{
-				if(*p!=' ') printf("%c",*p);
+				if(*p!=' ') my_printf("%c",*p);
 				}
-				printf(" ");
+				my_printf(" ");
 				p=b-1;
 				q=b-1;
 			}
 		}
 		for(p=&a[0];*p!=' ';p++)
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 		}
 	}
 	else puts(a);

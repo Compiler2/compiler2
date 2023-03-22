@@ -8,13 +8,13 @@ int main_bench()
   int k,i,j;
   int a,b,c,d;
  
-  scanf("%d %d",&row,&col);
+  my_scanf("%d %d",&row,&col);
  
   for(k=0;k<row;k++)
   {
     for(i=0;i<col;i++)
  {
-   scanf("%d",&sz[k][i]);
+   my_scanf("%d",&sz[k][i]);
  }
   }
  
@@ -26,13 +26,13 @@ int main_bench()
   while(a<c&&d<b)
   {
     for(i=d; i<b; i++)
-  printf("%d\n",sz[a][i]);
+  my_printf("%d\n",sz[a][i]);
  for(j=a; j<c; j++)
-  printf("%d\n",sz[j][b]);
+  my_printf("%d\n",sz[j][b]);
  for(i=b; i>d; i--)
-  printf("%d\n",sz[c][i]);
+  my_printf("%d\n",sz[c][i]);
  for(j=c; j>a; j--)
-  printf("%d\n",sz[j][d]);
+  my_printf("%d\n",sz[j][d]);
  a++;
  b--;
  c--;
@@ -41,17 +41,17 @@ int main_bench()
   
 if(a==c && b==d)
 {
- printf("%d\n",sz[a][b]);
+ my_printf("%d\n",sz[a][b]);
 }
   if(b==d && a!=c)
   {
     for(i=a; i<=c; i++)
-  printf("%d\n",sz[i][b]);
+  my_printf("%d\n",sz[i][b]);
   }
   if(a==c && b!=d)
   {
     for(i=d; i<=b; i++)
-  printf("%d\n",sz[a][i]);
+  my_printf("%d\n",sz[a][i]);
   }
   return 0;
 }

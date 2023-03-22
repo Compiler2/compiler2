@@ -5,10 +5,10 @@ int main_bench()
     int i,j,n,r=0,y=0;
     char s[100][100];
     double b[100],m[100],w[100],temp;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<2*n;i++)
     {
-                    scanf("%s",s[i]);
+                    my_scanf("%s",s[i]);
     }
     for(i=0;i<2*n;i++)
     {
@@ -47,9 +47,9 @@ int main_bench()
                                        } 
                     }
     }
-    printf("%.2f",m[0]);
+    my_printf("%.2f",m[0]);
     for(i=1;i<r;i++) 
-    printf(" %.2f",m[i]);
+    my_printf(" %.2f",m[i]);
     for(i=0;i<y;i++) 
-    printf(" %.2f",w[i]);
+    my_printf(" %.2f",w[i]);
 }     

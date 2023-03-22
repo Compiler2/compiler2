@@ -3,16 +3,16 @@
 int pb(int n);
 int main_bench(){
 int i,a,n,k,s[1000];
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(i=0;i<k;i++){
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 s[i]=pb(n);
 }
 
 
 for(i=0;i<k;i++){
-printf("%d\n",s[i]);
+my_printf("%d\n",s[i]);
 }
 return 0;
 }

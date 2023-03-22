@@ -3,14 +3,14 @@
 int main_bench(){
 double c,w=0,n=0;
 char x[600],y[600];
-scanf("%lf",&c);
+my_scanf("%lf",&c);
 getchar();
 gets(x);
 gets(y);
 if (strlen(x)==strlen(y)){
 for (int j=0;j<strlen(x);j++){
     if ((x[j]!='A'&&x[j]!='T'&&x[j]!='G'&&x[j]!='C')||(y[j]!='A'&&y[j]!='T'&&y[j]!='G'&&y[j]!='C')){
-                  printf("error");
+                  my_printf("error");
                   n=1;
                   break;
     }
@@ -20,16 +20,16 @@ for (int j=0;j<strlen(x);j++){
  }
 }
 else {
-     printf("error");
+     my_printf("error");
      n=1;
 }
 if (n==0){
     w=w/strlen(x);
     if (c<w){
-              printf("yes");
+              my_printf("yes");
     }
     else {
-              printf("no");
+              my_printf("no");
     }
 }
 return 0;

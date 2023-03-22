@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,l,i,j,m,t,count[600]={0};
 	char str[600],gram[600][6],c[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(c);
 	gets(str);
 	l=strlen(str);
@@ -33,15 +33,15 @@ int main_bench()
 			}
 	if(count[0]==0)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	else
 	{
 		i=0;
-		printf("%d\n",count[0]+1);
+		my_printf("%d\n",count[0]+1);
 		while(count[i]==count[0])
 		{
-			printf("%s\n",gram[i]);
+			my_printf("%s\n",gram[i]);
 			i++;
 		}
 	}

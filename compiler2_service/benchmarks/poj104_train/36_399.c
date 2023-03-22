@@ -18,11 +18,11 @@ int main_bench()
  i=i-1;
  j=strlen(str2)-1;
  if(i!=j)
- printf("NO");
+ my_printf("NO");
  else 	{u=i; 
 	 for(k=0,y=0;k<=u;k++)
 		 if(comp(str1,str2,k,i)==0)
 		 {y=1;break;}
-	 if(y==0) printf("YES");
-	 else if(y==1) printf("NO\n");}
+	 if(y==0) my_printf("YES");
+	 else if(y==1) my_printf("NO\n");}
 }

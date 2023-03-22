@@ -6,15 +6,15 @@ int main_bench()
 	e=0;
 	n=0;
 	cishu=0;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(j=0;j<row;j++){
 		for(i=0;i<col;i++){
-			scanf("%d",&sz[j][i]);
+			my_scanf("%d",&sz[j][i]);
 		}
 	}if(row>1&&col>1){
 		for(i=0,j=0;;i++,j--){
 			if(i==0){m=j;}
-	    	printf("%d\n",sz[i][j]);
+	    	my_printf("%d\n",sz[i][j]);
 	     	cishu++;
 		    if(cishu==row*col){break;}
 	    	if((j==0||i==row-1)&&e==0){
@@ -30,7 +30,7 @@ int main_bench()
 	}else{	
 		for(j=0;j<row;j++){
 			for(i=0;i<col;i++){
-				printf("%d\n",sz[j][i]);
+				my_printf("%d\n",sz[j][i]);
 			}
 		}
 	}

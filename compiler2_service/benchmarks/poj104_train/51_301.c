@@ -3,8 +3,8 @@
 int main_bench(){
 	char a[500];
 	int n,max=0;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	int i,j,k,l,x;
 	l=strlen(a);
 	int c[500];
@@ -38,19 +38,19 @@ int main_bench(){
 	}
 	if(max>1)
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<=l-n;i++)
 	{
 		if(c[i]==max)
 		{
 			for(j=i;j<i+n;j++)
 			{
-				printf("%c",a[j]);
+				my_printf("%c",a[j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	}
-	else printf("NO");
-	scanf("\n");
+	else my_printf("NO");
+	my_scanf("\n");
 }

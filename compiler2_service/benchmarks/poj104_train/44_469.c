@@ -8,7 +8,7 @@ int main_bench()
   int k,i;
   for(i=0;i<6;i++)
   {
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       RevNum(k);
   }
      return 0;
@@ -19,7 +19,7 @@ int RevNum(int n)
 {
    int s=0,j=0;
    if(n==0||-0)
-   printf("0");
+   my_printf("0");
    else
    {
           if(n>0)
@@ -32,9 +32,9 @@ int RevNum(int n)
              {
               s=n%10;
               n=n/10;
-              printf("%d",s);
+              my_printf("%d",s);
              }
-            printf("%d\n",n);
+            my_printf("%d\n",n);
           }
            if(n<0)
            {
@@ -50,12 +50,12 @@ int RevNum(int n)
                  s=n%10;
                  n=n/10;
                  if(j==0)
-                 printf("-");
-                 printf("%d",s);
+                 my_printf("-");
+                 my_printf("%d",s);
                  j++;
                 }
 
-            printf("%d\n",n);
+            my_printf("%d\n",n);
 
            }
 

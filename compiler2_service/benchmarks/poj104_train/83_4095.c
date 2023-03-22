@@ -4,15 +4,15 @@ int main_bench()
 {
 	int numb,a[100],b[100],i,N=0,y,M=0,m=65535;
 	float c[100],S=0,t;
-	scanf("%d",&numb);
+	my_scanf("%d",&numb);
 	for (i=0;i<numb;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		N=N+a[i];
 	}
 	for (i=0;i<numb;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		if (b[i]<101&&b[i]>89)
 		c[i]=4.0;
 		if (b[i]<90&&b[i]>84)
@@ -36,6 +36,6 @@ int main_bench()
 		S=c[i]*a[i]+S;
 	}
 	t=S/N;
-	printf("%.2f",t);
+	my_printf("%.2f",t);
 	return 0;
 }

@@ -9,10 +9,10 @@ int main_bench(){
 	int i,k,n,l,r;
 	double j;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++){
-		scanf("%d%d",&p[i].a,&p[i].b);
+		my_scanf("%d%d",&p[i].a,&p[i].b);
 	}
 	l=p[0].a;
 	r=p[0].b;
@@ -35,12 +35,12 @@ int main_bench(){
 			}
 		}
 		if(k==n){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(j==r+0.5){
-		printf("%d %d",l,r);
+		my_printf("%d %d",l,r);
 	}
 
 

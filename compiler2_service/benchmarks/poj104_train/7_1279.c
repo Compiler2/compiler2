@@ -8,7 +8,7 @@ int main_bench()
     int i,j;
     int length1,length2,length3;
     int p;
-    scanf("%s%s%s",a,b,c);
+    my_scanf("%s%s%s",a,b,c);
     length1=strlen(a);
     length2=strlen(b);
     length3=strlen(c);
@@ -29,15 +29,15 @@ int main_bench()
             {
                 for(j=0;j<i;j++)
                 {
-                    printf("%c",a[j]);
+                    my_printf("%c",a[j]);
                 }
                 for(j=0;j<length3;j++)
                 {
-                    printf("%c",c[j]);
+                    my_printf("%c",c[j]);
                 }
                 for(j=i+length3;j<length1;j++)
                 {
-                    printf("%c",a[j]);
+                    my_printf("%c",a[j]);
                     
                 }
             p=2;
@@ -49,7 +49,7 @@ int main_bench()
     {
         for(i=0;i<length1;i++)
         {
-            printf("%c",a[i]);
+            my_printf("%c",a[i]);
         }
     }
     return 0;

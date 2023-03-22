@@ -10,10 +10,10 @@ int main_bench()
 {
 	char c;
 	int n=0,i=0,j=0,rec[26]={0},k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&book[i].num,book[i].name);
+		my_scanf("%d%s",&book[i].num,book[i].name);
 	}
 	for(i=0;i<26;i++)
 	{
@@ -34,11 +34,11 @@ int main_bench()
 		}
 	}
 	c='A'+j;
-	printf("%c\n%d\n",c,k);
+	my_printf("%c\n%d\n",c,k);
 	for(i=0;i<n;i++)
 	{
 		if(judge(book[i].name,j)==1)
-		{printf("%d\n",book[i].num);}
+		{my_printf("%d\n",book[i].num);}
 	}
 	return 0;
 }

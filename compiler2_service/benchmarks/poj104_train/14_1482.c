@@ -10,9 +10,9 @@ struct grade
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d %d %d",&student[i].No,&student[i].chinese,&student[i].math);
+	my_scanf("%d %d %d",&student[i].No,&student[i].chinese,&student[i].math);
     student[i].sum=student[i].chinese+student[i].math;
 	}
     for(i=0;i<3;i++){
@@ -25,7 +25,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<3;i++){
-	printf("%d %d\n",student[i].No,student[i].sum);
+	my_printf("%d %d\n",student[i].No,student[i].sum);
 	}
     return 0;
 }

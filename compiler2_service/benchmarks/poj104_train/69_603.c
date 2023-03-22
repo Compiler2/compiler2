@@ -3,8 +3,8 @@
 int main_bench(){
 	char a[255],b[255],c[255];
 	int i,j,d,e,f;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	f=strlen(a);
 	for(i=0;i<=f;i++){
 		a[254-i]=a[f-i];
@@ -32,8 +32,8 @@ int main_bench(){
 			c[j]=c[j+1];
 		}
 	}
-	if(strlen(c)==0) printf("0");
-	else printf("%s",c);
-	scanf("%d",&i);
+	if(strlen(c)==0) my_printf("0");
+	else my_printf("%s",c);
+	my_scanf("%d",&i);
 	return 0;
 }

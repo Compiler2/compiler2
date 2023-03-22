@@ -5,16 +5,16 @@ int y(int x);
 int main_bench()
 {
 	int n,i,z=0;
-	scanf("%d",&n);
-	if(n==1||n==2||n==3){printf("empty");}
+	my_scanf("%d",&n);
+	if(n==1||n==2||n==3){my_printf("empty");}
 	else{
 	for(i=2;i<n-1;i++){
 		if(y(i)&&y(i+2)){
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 			z++;
 		}
 	}
-	if(z==0){printf("empty");}
+	if(z==0){my_printf("empty");}
 	}
 	return 0;
 }

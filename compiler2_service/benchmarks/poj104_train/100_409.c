@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300], w[55]="abcdefghijklmnopqrstuvwxyz";
 	int i, n[27];
-	scanf("%s", a);
+	my_scanf("%s", a);
 	for(i=1;i<27;i++)
 	{
 		n[i]=0;
@@ -123,14 +123,14 @@ int main_bench()
 		if(n[i]>=1)
 		{
 
-		    printf("%c=%d",w[i-1],n[i]);
-                       printf("\n");
+		    my_printf("%c=%d",w[i-1],n[i]);
+                       my_printf("\n");
                          flag=1;
 		}
 	}
 if(flag==0)
 {
-       printf("No\n");
+       my_printf("No\n");
 }
 
 	return 0;

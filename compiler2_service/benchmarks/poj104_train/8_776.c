@@ -6,7 +6,7 @@ void get(int n,int* a)
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 }
 void order(int n,int*a)
@@ -32,17 +32,17 @@ void puttogether(int n,int*a,int m,int*b)
 	{
 		a[i]=b[i-n];
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<n+m;i++)
 	{
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 }
 int main_bench()
 {
 	int a[500],b[500];
 	int m,n;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	get(n,a);
 	get(m,b);
 	order(n,a);

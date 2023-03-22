@@ -47,7 +47,7 @@ int main_bench()
 		for(i=0;i<=strlen(c);i++)
 			c[i]=c[i+1];
 	}
-	if(c[0]=='\0')printf("0");
+	if(c[0]=='\0')my_printf("0");
 	else
-	printf("%s",c);
+	my_printf("%s",c);
 }

@@ -5,11 +5,11 @@ int main_bench()
 	int m,n,p[100]={0},q[100]={0},num=0;
 	int i,j,num1[200]={0},num2[200]={0};
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	if(m!=n)
-		printf("NO\n");
+		my_printf("NO\n");
 	else 
 	{
 		for(i=0;i<m;i++)
@@ -43,8 +43,8 @@ int main_bench()
 		}
 	
 		if(num==91)
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	
 	}
 }

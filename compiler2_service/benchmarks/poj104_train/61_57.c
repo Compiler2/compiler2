@@ -4,13 +4,13 @@ int main_bench()
 {
     int feb(int x);
     int n,i,j,a[1000],f;
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(j=0;j<n;j++)
     {
     f=feb(a[j]);
-    printf("%d\n",f);
+    my_printf("%d\n",f);
     }
     getchar();
     getchar();

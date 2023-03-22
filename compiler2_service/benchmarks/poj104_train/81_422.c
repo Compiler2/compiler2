@@ -7,9 +7,9 @@ int main_bench()
 	int (*p)[5]=str,k;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(p+i)+j);
-	scanf("%d %d",&m,&n);
-	if(!(m>=0&&m<=4&&n>=0&&n<=4)) printf("error\n");
+			my_scanf("%d",*(p+i)+j);
+	my_scanf("%d %d",&m,&n);
+	if(!(m>=0&&m<=4&&n>=0&&n<=4)) my_printf("error\n");
 	else
 	{
 		for(i=0;i<5;i++)
@@ -18,9 +18,9 @@ int main_bench()
 		   else if(i==m) k=n;
 		   else k=i;
 		   for(j=0;j<4;j++)
-			   printf("%d ",*(*(p+k)+j));
-		   printf("%d",*(*(p+k)+j));
-		   printf("\n");
+			   my_printf("%d ",*(*(p+k)+j));
+		   my_printf("%d",*(*(p+k)+j));
+		   my_printf("\n");
 
 	   }
 	}

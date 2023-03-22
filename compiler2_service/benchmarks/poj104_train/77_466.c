@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[101];
 	int i,a[100],c,j;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	i=c=0;
 	while(s[i]!='\0')
 	{
@@ -18,7 +18,7 @@ int main_bench()
 			if(s[j]==s[0])
 			{
 				s[j]=' ';
-				printf("%d %d\n",j,a[i]);
+				my_printf("%d %d\n",j,a[i]);
 				break;
 			}
 		}

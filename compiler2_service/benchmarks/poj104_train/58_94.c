@@ -4,13 +4,13 @@ int main_bench()
 {
 	int num,i,j,k,flag;
 	char a[81];
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	getchar();
 	for(i=0;i<num;i++)
 	{
 		for(j=0;j<81;j++)
 		{
-			scanf("%c",&a[j]);
+			my_scanf("%c",&a[j]);
 			if(a[j]=='\n')
 			{
 				break;
@@ -34,12 +34,12 @@ int main_bench()
 					break;
 				}
 			}
-			if(flag==1) printf("1\n");
-			else printf("0\n");
+			if(flag==1) my_printf("1\n");
+			else my_printf("0\n");
 		}
 		else
 		{
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 	return 0;

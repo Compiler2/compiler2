@@ -5,13 +5,13 @@ int main_bench()
 	unsigned int *p,*k;
 	int n,i,j=0,t,m=0,tmp;
 	double a=0,sum=0,*c,lar=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(unsigned int*)malloc(sizeof(unsigned int)*n);
 	c=(double*)malloc(sizeof(double)*n);
 	k=(unsigned int*)malloc(sizeof(unsigned int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%u",&p[i]);
+		my_scanf("%u",&p[i]);
 		sum=sum+(double)p[i];
 	}
 	a=sum/(double)n;
@@ -50,9 +50,9 @@ int main_bench()
 		k[i]=k[t];
 		k[t]=tmp;
 	}
-	printf("%u",k[0]);
+	my_printf("%u",k[0]);
 	for(i=1;i<t+1;i++)
-		printf(",%u",k[i]);
+		my_printf(",%u",k[i]);
 	free(p);
 	free(k);
 	free(c);

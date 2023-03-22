@@ -5,7 +5,7 @@ main_bench()
 {
       int a[10][10],b[10][10];
       int m,n;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(int j=1;j<=9;j++)
               {
                       for(int k=1;k<=9;k++)
@@ -45,8 +45,8 @@ main_bench()
               {
                       for(int k=1;k<=8;k++)
                       {
-                              printf("%d ",a[j][k]);
+                              my_printf("%d ",a[j][k]);
                       }
-                      printf("%d\n",a[j][9]);
+                      my_printf("%d\n",a[j][9]);
               }
 }

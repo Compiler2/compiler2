@@ -5,9 +5,9 @@ int main_bench(){
 	a=0;
 	b=0;
 	c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&high,&low);
+		my_scanf("%d %d",&high,&low);
 		if((high>=90)&&(high<=140)&&(low<=90)&&(low>=60)){
 			a++;
 			c=a;
@@ -25,9 +25,9 @@ int main_bench(){
 		}
 	}
 	if(c<b){
-		printf("%d",b);
+		my_printf("%d",b);
 	}else{
-		printf("%d",c);
+		my_printf("%d",c);
 	}
 	return 0;
 }

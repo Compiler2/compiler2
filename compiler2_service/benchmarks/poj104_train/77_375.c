@@ -14,7 +14,7 @@ int main_bench()
 		for(j=i+1;j<len;j++){
 			if(str[j]==a)break;
 			if(str[j]==b){
-				printf("%d %d\n",i,j);
+				my_printf("%d %d\n",i,j);
 				str[i]='$';
 				str[j]='$';
 				t=1;

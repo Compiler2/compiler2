@@ -21,10 +21,10 @@ int main_bench()
 	while(j!=n)
 	{
 		for(i=a[j+1]+1;i<a[j];i++)
-			printf("%c",c[i]);
-		printf(" ");
+			my_printf("%c",c[i]);
+		my_printf(" ");
 		j++;
 	}
 	for(i=0;i<a[n];i++)
-		printf("%c",c[i]);
+		my_printf("%c",c[i]);
 }

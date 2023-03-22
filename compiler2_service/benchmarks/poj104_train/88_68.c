@@ -11,8 +11,8 @@ main_bench()
 		if(a[i]>='0'&&a[i]<='9')
 		{
 			for(j=i;a[j]>='0'&&a[j]<='9';j++)
-			printf("%c",a[j]);
-			printf("\n");
+			my_printf("%c",a[j]);
+			my_printf("\n");
 			i=j+1;
 		}
 		else i++;

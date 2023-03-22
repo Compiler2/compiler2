@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,i,b,c,d,e,n,f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n/10000;
 	b=(n-10000*a)/1000;
 	c=(n-10000*a-1000*b)/100;
@@ -14,7 +14,7 @@ int main_bench()
 		if(f%10==0)
 			f=f/10;
 		}
-	    printf("%d",f);
+	    my_printf("%d",f);
 	
 	return 0;
 }

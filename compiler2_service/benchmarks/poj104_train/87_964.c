@@ -5,13 +5,13 @@ int main_bench(){
 	int i,sum;
 	int result;
     for(i=0;i<1000;i++){
-        scanf("%d %d %d %d %d %d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+        my_scanf("%d %d %d %d %d %d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 	    result=3600*(d[i]-a[i]+12)+60*(e[i]-b[i])+(f[i]-c[i]);
 		sum=a[i]+b[i]+c[i]+d[i]+e[i]+f[i];
 		if(sum==0){
 			break;
 		}else{
-			printf("%d\n",result);
+			my_printf("%d\n",result);
 		}
 	}
 	return 0;

@@ -40,7 +40,7 @@ int main_bench()
 	i=i;
 	do
 	{
-		printf("%d",q[i]);
+		my_printf("%d",q[i]);
 		i--;
 	}while(i>=0);
 	return 0;

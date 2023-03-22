@@ -4,11 +4,11 @@ int main_bench()
 {
  char a[80],b[80],c,k;
  int la,lb,i,j;
- scanf("%s",a);
- scanf("%s",b);
+ my_scanf("%s",a);
+ my_scanf("%s",b);
  la=strlen(a);
  lb=strlen(b);
- if(la!=lb) printf("NO");
+ if(la!=lb) my_printf("NO");
  else if(la=lb)
  { 
    for(i=0;i<la;i++)
@@ -31,7 +31,7 @@ int main_bench()
  {
   if(a[i]=b[i]) k=k+1;
  }
- if(k=la) printf("YES");
- else if(k!=la) printf("NO");
+ if(k=la) my_printf("YES");
+ else if(k!=la) my_printf("NO");
 }
 }

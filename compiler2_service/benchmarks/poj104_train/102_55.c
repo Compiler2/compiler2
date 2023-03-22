@@ -6,12 +6,12 @@ int main_bench()
 	char ch[50];
 	float b[41],g[41],height,temp;
     
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m1=-1;
 	m2=-1;
 	for(i=0;i<n;i++)
 	{
-	    scanf("%s%f",ch,&height);
+	    my_scanf("%s%f",ch,&height);
 		if(ch[0]=='m')
 		{
 		    m1++;
@@ -52,11 +52,11 @@ int main_bench()
 		}
 	}
 
-	printf("%.2f",b[0]);
+	my_printf("%.2f",b[0]);
 	for(i=1;i<=m1;i++)
-		printf(" %.2f",b[i]);
+		my_printf(" %.2f",b[i]);
 	for(i=0;i<=m2;i++)
-	    printf(" %.2f",g[i]);
+	    my_printf(" %.2f",g[i]);
 	
 	return 0;
 }

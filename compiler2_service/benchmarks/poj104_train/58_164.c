@@ -22,12 +22,12 @@ int main_bench()
                break;
            } 
            if (j==l)
-           printf ("%d\n",y);
+           my_printf ("%d\n",y);
            else
-           printf ("%d\n",x);       
+           my_printf ("%d\n",x);       
         }
         else
-        printf ("%d\n",x);
+        my_printf ("%d\n",x);
     }
     getchar ();
     getchar ();

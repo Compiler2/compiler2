@@ -10,7 +10,7 @@ main_bench()
                         shang[i]=0;
                         t[i]=0;
       }
-      scanf("%s",a);
+      my_scanf("%s",a);
       for(i=0;i<100;i++)
       {
                         if(a[i]=='\0')break;
@@ -36,7 +36,7 @@ main_bench()
                      {
                                     for(i=0;i<count-1;i++)
                                     {
-                                           printf("%d",shang[i]);
+                                           my_printf("%d",shang[i]);
                                     }
                      }
                      else
@@ -57,11 +57,11 @@ main_bench()
                                              {
                                                             for(i=0;i<count-2;i++)
                                                             {
-                                                                   printf("%d",shang[i]);
+                                                                   my_printf("%d",shang[i]);
                                                             }
                                              }
                                              else
-                                             printf("0");
+                                             my_printf("0");
                      } 
                                              
       }
@@ -69,8 +69,8 @@ main_bench()
       {
           for(i=0;i<count-1;i++)
           {
-                                printf("%d",shang[i]);
+                                my_printf("%d",shang[i]);
           }
       }
-      printf("\n%d",yu);
+      my_printf("\n%d",yu);
       }

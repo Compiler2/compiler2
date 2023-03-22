@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n=100;
 	int a,b,i;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	if(b>a){
 		int p;
 		p=b;
@@ -14,7 +14,7 @@ int main_bench()
 	for(i=3;i<n;i++)
 	{
 		int c,m,k;
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(c>b&&c<a)
 		{
 			m=a;
@@ -30,7 +30,7 @@ int main_bench()
 			b=k;
 		}
 	}
-	printf("%d\n%d\n",a,b);
+	my_printf("%d\n%d\n",a,b);
 	return 0;
 }
 

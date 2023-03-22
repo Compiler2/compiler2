@@ -2,9 +2,9 @@
 
 int main_bench(){
     int n,time[200][2],A=0,B=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int a=0;a<n;a++){
-        scanf("%d %d",&(time[a][0]),&(time[a][1]));
+        my_scanf("%d %d",&(time[a][0]),&(time[a][1]));
     }
     for(int a=0;a<n;a++){
         if((time[a][0]==0&&time[a][1]==2)){
@@ -20,8 +20,8 @@ int main_bench(){
                A++;
            }
     }
-    if(A==B){printf("Tie");}
-    if(A>B){printf("A");}
-    if(A<B){printf("B");}
+    if(A==B){my_printf("Tie");}
+    if(A>B){my_printf("A");}
+    if(A<B){my_printf("B");}
     return 0;
 }

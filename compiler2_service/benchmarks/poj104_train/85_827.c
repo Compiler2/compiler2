@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,t=0,b;
 	char s[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		b = 0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		if(isalpha(s[0])==0&&s[0]!='_')
 			b=1;
 		else
@@ -24,9 +24,9 @@ int main_bench()
 			}
 		}
 		if(b==0)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

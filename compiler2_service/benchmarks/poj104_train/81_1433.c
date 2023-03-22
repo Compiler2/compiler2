@@ -5,24 +5,24 @@ int main_bench(){
 	int n,m,x,y,i=0,j=0;
 	for(x=0;x<5;x++){
 		for(y=0;y<5;y++){
-			scanf("%d",&sz[x][y]);
+			my_scanf("%d",&sz[x][y]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(n>-1&&n<5&&m>-1&&m<5){
 		trans(m,n,sz);
 		for(x=0;x<5;x++){
 			for(y=0;y<5;y++){
 				if(y!=4)
-					printf("%d ",sz[x][y]);
+					my_printf("%d ",sz[x][y]);
 				else
-					printf("%d\n",sz[x][y]);
+					my_printf("%d\n",sz[x][y]);
 			}
 		}
 		return 1;
 	}
 	else{
-		printf("error");
+		my_printf("error");
 		return 0;
 
 	}

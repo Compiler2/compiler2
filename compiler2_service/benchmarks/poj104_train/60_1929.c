@@ -5,7 +5,7 @@
 main_bench()
 {
 	int n,count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int prime[100000]={0};
 	prime[0]=2;
 	int i ,j ,k;
@@ -28,11 +28,11 @@ main_bench()
 	{	
 		if(prime[i+1]-prime[i]==2)
 		{
-		printf("%d %d\n",prime[i],prime[i+1]);
+		my_printf("%d %d\n",prime[i],prime[i+1]);
 		count++;
 		}
 	}
 	if(count==0)
-	printf("empty");
+	my_printf("empty");
 
 } 

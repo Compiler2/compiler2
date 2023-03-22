@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n1,n2,j=1,k=1,a[1000],b[1000],i=1,m=1,number,break1;
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
 	if (n1==1||n2==1)
-		printf("1\n");
+		my_printf("1\n");
 	else
 	{
 		a[0]=n1;
@@ -46,7 +46,7 @@ int main_bench()
                if (break1==0)
 					break;
 		}
-				printf("%d",number);
+				my_printf("%d",number);
 	}
 	return 0;
 }

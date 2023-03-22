@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,age_1=0,age_2=0,age_3=0,age_4=0,age[100],i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -31,9 +31,9 @@ int main_bench()
 	double bilv_2=(double)age_2/n;
 	double bilv_3=(double)age_3/n;
 	double bilv_4=(double)age_4/n;
-	printf("1-18: %.2lf%%\n",bilv_1*100);
-	printf("19-35: %.2lf%%\n",bilv_2*100);
-	printf("36-60: %.2lf%%\n",bilv_3*100);
-	printf("60??: %.2lf%%",bilv_4*100);
+	my_printf("1-18: %.2lf%%\n",bilv_1*100);
+	my_printf("19-35: %.2lf%%\n",bilv_2*100);
+	my_printf("36-60: %.2lf%%\n",bilv_3*100);
+	my_printf("60??: %.2lf%%",bilv_4*100);
 	return 0;
 }

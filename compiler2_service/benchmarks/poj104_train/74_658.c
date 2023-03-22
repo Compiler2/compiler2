@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,k,hws=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int s=n-m+1;
 	int *a;
 	a = (int *)malloc(sizeof(int)*s);
@@ -38,13 +38,13 @@ int main_bench()
 			hws++;
 	}
     if(hws==0)
-		printf("no");
+		my_printf("no");
 	int c=0;
 	if(hws!=0){
 		for(i=m;i<=n;i++){
 			if(reversed_number[i-m]==i&&i!=1&&i!=2){
 				c=i;
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}
@@ -52,7 +52,7 @@ int main_bench()
 	if(hws!=0){
 		for(j=c+1;j<=n;j++){
 			if(reversed_number[j-m]==j&&j!=1&&j!=2)
-				printf(",%d",j);
+				my_printf(",%d",j);
 		}
 	}
 	return 0;

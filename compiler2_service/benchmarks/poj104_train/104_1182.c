@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,y,l1=0,l2=0,i,j,k=0;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	int s1[10]={0},s2[10]={0};
 	int level(int a);
 	l1=level(x);
@@ -24,7 +24,7 @@ int main_bench()
 			if(s1[i]==s2[j]&&s1[i]!=0&&s2[j]!=0) {k=s1[i];break;}
 		if(k!=0) break;
 	}
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 	return 0;
 }
 int level(int a)

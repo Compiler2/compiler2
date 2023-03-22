@@ -24,15 +24,15 @@ main_bench()
 	int a[N][N],i,j,n;
 	for(i=0;i<N;i++)
 		for(j=0;j<N;j++)
-			scanf("%d",*(a+i)+j);
+			my_scanf("%d",*(a+i)+j);
 	for(i=0;i<N;i++)
 	{
 		n=max(a[i]);
 		if(min(a,i,n))
 		{
-			printf("%d %d %d",i+1,n+1,a[i][n]);
+			my_printf("%d %d %d",i+1,n+1,a[i][n]);
 			return 0;
 		}
 	}
-	printf("not found");
+	my_printf("not found");
 }

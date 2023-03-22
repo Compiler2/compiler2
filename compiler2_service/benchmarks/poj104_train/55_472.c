@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,i=0,c=0,d,j=0,e,f,k,x;
 	char n[65],m[65]={0};
-	scanf("%d %s %d",&a,n,&b);
+	my_scanf("%d %s %d",&a,n,&b);
 	d=strlen(n);
 	while(n[i]!='\0')
 	{
@@ -39,6 +39,6 @@ int main_bench()
 		m[e-k-1]=m[k];
 		m[k]=x;
 	}
-	printf("%s",m);
+	my_printf("%s",m);
 }
 	

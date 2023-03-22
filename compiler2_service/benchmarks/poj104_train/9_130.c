@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,sz[100],zs[100],i,k=0,m,a;
 	char id[100][10],di[100][10],zfc[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",id[i],&(sz[i]));
+		my_scanf("%s %d",id[i],&(sz[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 	{
-		printf("%s\n",di[i]);
+		my_printf("%s\n",di[i]);
 	}
     return 0;
 }

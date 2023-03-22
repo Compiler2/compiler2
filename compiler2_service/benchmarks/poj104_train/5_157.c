@@ -6,9 +6,9 @@ int main_bench()
 	double r,ra;
 	char z[200];
 	char x[200];
-	scanf("%lf",&r);
-	scanf("%s",z);
-	scanf("%s",x);
+	my_scanf("%lf",&r);
+	my_scanf("%s",z);
+	my_scanf("%s",x);
 	len=strlen(z);
 	lena=strlen(x);
 	d=0;
@@ -20,7 +20,7 @@ int main_bench()
 	}
 	if(d==1) 
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	b=0;c=0;
@@ -30,7 +30,7 @@ int main_bench()
 		if(z[a]==x[a]) b++;
 	}
 	ra=b*1.0/c;
-	if (ra>r) printf("yes");
-		else printf("no");
+	if (ra>r) my_printf("yes");
+		else my_printf("no");
 	return 0;
 }

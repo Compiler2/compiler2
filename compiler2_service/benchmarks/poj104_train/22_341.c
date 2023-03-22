@@ -5,18 +5,18 @@ int main_bench()
 	int i=1,max,sec=0,j,s=0;
 	int a[301];
 	char c;
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for (;(c=getchar())==',';){
 		i++;
-		scanf("%d",&a[i]);}
+		my_scanf("%d",&a[i]);}
 	if (i==1)
-		printf("No\n");
+		my_printf("No\n");
 	else {
 		for (j=1;j<=i;j++)
 			if (a[j]==a[1])
 				s++;
 		if (s==i)
-			printf("No\n");
+			my_printf("No\n");
 		else {
 	max=a[1];
 	for (j=1;j<=i;j++)
@@ -28,7 +28,7 @@ int main_bench()
 	for (j=1;j<=i;j++)
 		if (a[j]>sec)
 			sec=a[j];
-	printf("%d\n",sec);
+	my_printf("%d\n",sec);
 		}
      }
 }

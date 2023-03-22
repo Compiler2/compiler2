@@ -9,13 +9,13 @@ int main_bench()
 	
 	for(i=0;i<100;i++)
 	{
-		scanf("%d",&n[i][0]);
+		my_scanf("%d",&n[i][0]);
 		if(n[i][0]==-1) break;
 		else 
 		{
 			for(j=1;j<100;j++)
 			{
-				scanf("%d",&n[i][j]);
+				my_scanf("%d",&n[i][j]);
 				if(n[i][j]==0){
 					num[i] = j;
 					break;
@@ -41,6 +41,6 @@ int main_bench()
 		}
 	}
 	for(p=0;p<i;p++)
-		printf("%d\n",s[p]);
+		my_printf("%d\n",s[p]);
 	return 0;
 }

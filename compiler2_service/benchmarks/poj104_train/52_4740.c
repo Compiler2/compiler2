@@ -16,11 +16,11 @@ int main_bench()
     int a[100]={0};
     int n,m;
     int i;
-    scanf("%d %d",&n,&m);
-    for(i=0;i<n;i++)scanf("%d",a+i);
+    my_scanf("%d %d",&n,&m);
+    for(i=0;i<n;i++)my_scanf("%d",a+i);
     while(m--)
     move(a,n);
-    for(i=0;i<n-1;i++)printf("%d ",*(a+i));
-    printf("%d",*(a+i));
+    for(i=0;i<n-1;i++)my_printf("%d ",*(a+i));
+    my_printf("%d",*(a+i));
 
 }

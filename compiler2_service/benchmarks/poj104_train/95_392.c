@@ -16,16 +16,16 @@ a[i]=a[i]+32;
 }
 for(i=0;i<100;i++){
 if(s[i]<a[i]){
-printf("<");
+my_printf("<");
 break;
 }
 else if(s[i]>a[i])
 {
-printf(">");
+my_printf(">");
 break;
 }
 else if(s[i]==a[i]&&s[i]=='\0'){
-printf("=");
+my_printf("=");
 break;
 }
 

@@ -5,9 +5,9 @@ int main_bench(){
 	int i=0;
 	int count=0;
 	int a[200][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i][0],&a[i][1]);
+		my_scanf("%d %d",&a[i][0],&a[i][1]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i][0]==0&&a[i][1]==1){
@@ -31,11 +31,11 @@ int main_bench(){
 		}
 	}
 	if(count==0){
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}else if(count>0){
-		printf("A\n");
+		my_printf("A\n");
 	}else{
-		printf("B\n");
+		my_printf("B\n");
 	}
 	return 0;
 }

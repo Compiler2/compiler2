@@ -5,12 +5,12 @@ int main_bench()
 {
 	int shuzu[1001],jilu[1001];
 	int a=0,b=0,c,n,i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(k=0;k<n;k++)
 		{
-		scanf("%d",&shuzu[k]);
+		my_scanf("%d",&shuzu[k]);
 		if(shuzu[k]==0)
 		{
 			jilu[a]=k;
@@ -24,6 +24,6 @@ int main_bench()
 		}
 		a=0;
 	}
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }

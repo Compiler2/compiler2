@@ -5,9 +5,9 @@ int main_bench()
 	int a,b,len,len2,i,j=0,m=1,k;
 	char c,str[50]={0},str2[50]={0};
 	long n=0;
-	scanf("%d",&a);
-	scanf("%s",str);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",str);
+	my_scanf("%d",&b);
 	len=strlen(str);
 	for(i=0;i<len;i++)
 	{
@@ -26,6 +26,6 @@ int main_bench()
 		j++;
 	}
 	len2=strlen(str2);
-	for(j=len2-1;j>=0;j--)printf("%c",str2[j]);
-	printf("\n");
+	for(j=len2-1;j>=0;j--)my_printf("%c",str2[j]);
+	my_printf("\n");
 }

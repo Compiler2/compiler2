@@ -15,7 +15,7 @@ int main_bench()
    {flag=0;break;}
    if(flag)
    {for(k=i;k<=i+j;k++)
-    printf("%c",*(p+k));
-    printf("\n");} }
+    my_printf("%c",*(p+k));
+    my_printf("\n");} }
   }
 }

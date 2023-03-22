@@ -18,6 +18,6 @@ int main_bench() {
         }
     }
     kg[m]='\0';
-    printf("%s",kg);
+    my_printf("%s",kg);
     return 0;
 }

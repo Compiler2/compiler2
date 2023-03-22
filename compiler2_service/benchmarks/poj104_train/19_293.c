@@ -12,12 +12,12 @@ int main_bench()
 	{
 		if (str[i]==' ')
 		{
-			if (flag!=0) printf(" ");
+			if (flag!=0) my_printf(" ");
 			flag=1;
 			word[j]='\0';
 			j=0;
-			if (strcmp(word,a)==0)	printf("%s",b);
-			else printf("%s",word);
+			if (strcmp(word,a)==0)	my_printf("%s",b);
+			else my_printf("%s",word);
 		}
 		else 
 		{
@@ -27,8 +27,8 @@ int main_bench()
 		i++;
 	}
 	word[j]='\0';
-	if (flag!=0) printf(" ");
-	if (strcmp(word,a)==0)	printf("%s",b);
-	else printf("%s",word);
+	if (flag!=0) my_printf(" ");
+	if (strcmp(word,a)==0)	my_printf("%s",b);
+	else my_printf("%s",word);
 	
 }

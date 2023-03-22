@@ -13,8 +13,8 @@ int main_bench()
 		}
 	}
 	i=strcmp(a,b);
-	if(i==0) printf("=\n");
-	if(i<0) printf("<\n");
-	if(i>0) printf(">\n");
+	if(i==0) my_printf("=\n");
+	if(i<0) my_printf("<\n");
+	if(i>0) my_printf(">\n");
 	return 0;
 }

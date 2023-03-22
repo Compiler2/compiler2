@@ -7,7 +7,7 @@ int main_bench()
     {
         for (j=0;j<5;j++)
         {
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
         }
     }
     for (i=0;i<5;i++)
@@ -21,9 +21,9 @@ int main_bench()
         {
             if (a[k][y]<x)   {x=0;break;}
         }
-        if (x!=0)  {printf("%d %d %d",i+1,y+1,x); t=1;}
+        if (x!=0)  {my_printf("%d %d %d",i+1,y+1,x); t=1;}
     }
-    if(t==0) printf("not found");
+    if(t==0) my_printf("not found");
     getchar();
     getchar();
     getchar();

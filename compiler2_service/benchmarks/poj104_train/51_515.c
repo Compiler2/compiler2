@@ -9,8 +9,8 @@ int main_bench()
 	char record[500][6],a[500],temp[6];
 	int num[500]={0};
 	
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	l=strlen(a);
 	for (i=0;i<=l-n;i++)
 	{
@@ -54,18 +54,18 @@ int main_bench()
 	}
 	if (max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 	return 0;
 	}
 	
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	
 	for (i=0;i<=count;i++)
 	{
 		if (num[i]==max)
 		{
 			
-			printf("%s\n",record[i]);
+			my_printf("%s\n",record[i]);
 			
 		}
 		

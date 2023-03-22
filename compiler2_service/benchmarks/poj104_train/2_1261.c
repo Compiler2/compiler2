@@ -14,19 +14,19 @@ void find ( int ii );
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int ii;
 	bb = ( struct book * ) malloc ( sizeof ( struct book ) * n );
 	for ( ii = 0; ii < n ; ii++ )
 	{
-		scanf("%d %s",&bb[ii].id,bb[ii].author);
+		my_scanf("%d %s",&bb[ii].id,bb[ii].author);
 	}
 	for ( ii = 0 ; ii < n ; ii++ )
 	{
 		find (ii);
 	}
-	printf("%c\n",maxn);
-	printf("%d\n",max);
+	my_printf("%c\n",maxn);
+	my_printf("%d\n",max);
 
 	int jj;
 	for ( ii = 0 ; ii < n ; ii++ )
@@ -35,7 +35,7 @@ int main_bench()
 		{
 			if ( bb[ii].author[jj] == maxn )
 			{
-				printf("%d\n",bb[ii].id);
+				my_printf("%d\n",bb[ii].id);
 			}
 		}
 	}

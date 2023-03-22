@@ -5,9 +5,9 @@ int main_bench()
 	int m,n,i,d=0,p=0;
 	double b;
 	char dna1[501],dna2[501];
-	scanf("%lf",&b);
-	scanf("%s",dna1);
-	scanf("%s",dna2);
+	my_scanf("%lf",&b);
+	my_scanf("%s",dna1);
+	my_scanf("%s",dna2);
 	m=strlen(dna1);
 	n=strlen(dna2);
 	for(i=0;dna1[i]&&dna2[i];i++)
@@ -34,15 +34,15 @@ int main_bench()
 	}
 	if((p*1.0/m)>b&&d==0)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	if(d!=0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	if((p*1.0/m)<=b&&d==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

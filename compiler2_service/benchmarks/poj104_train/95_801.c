@@ -16,11 +16,11 @@ int main_bench()
 		if(b[i]>='A'&&b[i]<='Z')b[i]=b[i]+32;
 		else b[i]=b[i];
 	}
-	if(strcmp(a,b)>0)printf(">");
+	if(strcmp(a,b)>0)my_printf(">");
 	else
 	{
-		if(strcmp(a,b)<0)printf("<");
-		else printf("=");
+		if(strcmp(a,b)<0)my_printf("<");
+		else my_printf("=");
 	}
 	return 0;
 }

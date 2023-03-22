@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,l,big,smaller;
 	int a[10011];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 	for(i=0;i<n-1;i++)
-	scanf("%d\n",&a[i]);
+	my_scanf("%d\n",&a[i]);
 	i=n-1;
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 
 	big=a[0];
 	smaller=a[0];
@@ -23,5 +23,5 @@ int main_bench()
 			smaller=a[l];
 	}
 	
-	printf("%d\n%d",big,smaller);
+	my_printf("%d\n%d",big,smaller);
 	}

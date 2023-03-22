@@ -15,7 +15,7 @@ int main_bench()
 	   if(a==5) j++;
 	   if(c!=1) j++;
 	   if(d==1) j++;
-	   if(j==2&&a==5&&b==2) printf("%d %d %d %d %d\n",a,b,c,d,e);
+	   if(j==2&&a==5&&b==2) my_printf("%d %d %d %d %d\n",a,b,c,d,e);
    }
 }
 

@@ -5,7 +5,7 @@ int main_bench(){
 	char a1[210]={0},a2[210]={0};
 	count=0;
 	judge=0;
-	scanf("%s%s",a1,a2);
+	my_scanf("%s%s",a1,a2);
 	l1=strlen(a1);
 	l2=strlen(a2);
 	for(i=210-l1;i<210;i++){
@@ -39,12 +39,12 @@ int main_bench(){
 			}
 		}
 		if(judge!=0){
-			printf("%d",re[i]);
+			my_printf("%d",re[i]);
 		}
 	}
 	if(b1[209]==0&&b2[209]==0){
-		printf("0");
+		my_printf("0");
 	}
-	scanf("%d",&stop);
+	my_scanf("%d",&stop);
 	return 0;
 }

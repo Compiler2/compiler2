@@ -5,15 +5,15 @@ int main_bench(){
 	int i,c,d,j=1;
 	double n,m,q=0;
     char a[501],b[501];
-	scanf("%lf",&n);
-	scanf("%s",a);
-    scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+    my_scanf("%s",b);
 	c=strlen(a);
 	d=strlen(b);
 	
 	for(i=0;a[i];i++){
 		if((a[i]!='T'&&a[i]!='A'&&a[i]!='G'&&a[i]!='C')||(b[i]!='A'&&b[i]!='G'&&b[i]!='T'&&b[i]!='C')||c!=d){
-            printf("error");
+            my_printf("error");
 			j=0;
 		break;}}
 	if(j==1){
@@ -22,9 +22,9 @@ int main_bench(){
 			m++;}}
 	q=m/c;
 	if(q>n){
-		printf("yes");}
+		my_printf("yes");}
 	else{
-		printf("no");}}
+		my_printf("no");}}
 
 			
 return 0;

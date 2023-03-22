@@ -5,30 +5,30 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	char base[256],*p;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&base);
+		my_scanf("%s",&base);
 		p=base;
 		for(;p<=&base[strlen(base)-1];p++)
 		{
 			if(*p=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}else if(*p=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}else if(*p=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}else
 			{
-				printf("C");
+				my_printf("C");
 			}	
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

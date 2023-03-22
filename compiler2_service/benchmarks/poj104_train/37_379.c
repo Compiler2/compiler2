@@ -5,9 +5,9 @@ int main_bench()
     int t,i,sum,temp;
     char s[100][100];
     char *p,*q;
-    scanf ("%d",&t);
+    my_scanf ("%d",&t);
     for (i=0;i<t;i++)
-    scanf ("%s",s[i]);
+    my_scanf ("%s",s[i]);
     for (i=0;i<t;i++)
     {
         temp=0;
@@ -21,12 +21,12 @@ int main_bench()
             }
             if (sum==1&&temp==0)
             {
-                                printf("%c\n",*p);
+                                my_printf("%c\n",*p);
                                 temp++;
             }
         }
         if (temp==0)
-        printf ("no\n");
+        my_printf ("no\n");
     }
     return 0;
 }

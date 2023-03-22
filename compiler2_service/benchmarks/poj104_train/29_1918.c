@@ -4,10 +4,10 @@ int main_bench()
 {
 	int m, n, i;
 	double a, b, x, f[100], sum;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m>0)
 	{
-		scanf("%d", &n);
+		my_scanf("%d", &n);
 		f[0]=2;
 		f[1]=3;
 		if(n==1)
@@ -29,7 +29,7 @@ int main_bench()
 			}
 		}
 		m--;
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 } 

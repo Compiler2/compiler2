@@ -10,11 +10,11 @@ int main_bench()
 	{
 		while(s[i]!=' '&&s[i]!='\0')
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 			i++;
 		}
 		if(s[i]!='\0')
-		    printf(" ");
+		    my_printf(" ");
 		while(s[i]==' ')
 		{
 			i++;

@@ -12,12 +12,12 @@ int main_bench()
 	{
 		if((*p>=48)&&(*p<=57))
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 		}
 		else
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

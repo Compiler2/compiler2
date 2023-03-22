@@ -53,19 +53,19 @@ main_bench()
                                                                              if((aa(x,y,z,t,k)==1)&&(cc(x,y,z,t,k)==0)&&(dd(x,y,z,t,k)==0)&&(ee(x,y,z,t,k)==0)&&(x==1||x==2))
                                                                              {
                                                                               if(x!=y&&x!=z&&x!=t&&x!=k&&y!=z&&y!=t&&y!=k&&z!=t&&k!=z&&k!=t&&(k!=2&&k!=3)&&(y==2))                                                                            
-                                                                             printf("%d %d %d %d %d\n",x,y,z,t,k);}
+                                                                             my_printf("%d %d %d %d %d\n",x,y,z,t,k);}
                                                                              else if((cc(x,y,z,t,k)==1)&&(aa(x,y,z,t,k)==0)&&(dd(x,y,z,t,k)==0)&&(ee(x,y,z,t,k)==0)&&(z==1||z==2))
                                                                              {
                                                                               if(x!=y&&x!=z&&x!=t&&x!=k&&y!=z&&y!=t&&y!=k&&z!=t&&k!=z&&k!=t&&(k!=2&&k!=3)&&(y==2))                                                                            
-                                                                             printf("%d %d %d %d %d\n",x,y,z,t,k);}
+                                                                             my_printf("%d %d %d %d %d\n",x,y,z,t,k);}
                                                                              else if((dd(x,y,z,t,k)==1)&&(aa(x,y,z,t,k)==0)&&(cc(x,y,z,t,k)==0)&&(ee(x,y,z,t,k)==0)&&(t==1||t==2))
                                                                              {
                                                                               if(x!=y&&x!=z&&x!=t&&x!=k&&y!=z&&y!=t&&y!=k&&z!=t&&k!=z&&k!=t&&(k!=2&&k!=3)&&(y==2))                                                                            
-                                                                             printf("%d %d %d %d %d\n",x,y,z,t,k);}
+                                                                             my_printf("%d %d %d %d %d\n",x,y,z,t,k);}
                                                                              else if((ee(x,y,z,t,k)==1)&&(aa(x,y,z,t,k)==0)&&(cc(x,y,z,t,k)==0)&&(dd(x,y,z,t,k)==0)&&(k==1||k==2))
                                                                              {
                                                                               if(x!=y&&x!=z&&x!=t&&x!=k&&y!=z&&y!=t&&y!=k&&z!=t&&k!=z&&k!=t&&(k!=2&&k!=3)&&(y==2))                                                                            
-                                                                             printf("%d %d %d %d %d\n",x,y,z,t,k);}
+                                                                             my_printf("%d %d %d %d %d\n",x,y,z,t,k);}
                                                                              
                                                                              
                                                                              

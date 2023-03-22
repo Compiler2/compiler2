@@ -19,12 +19,12 @@ int check(int M,int N)
 int main_bench()
 {
 	int i,j,judge=0;
-	scanf("%d,%d",&row,&line);
+	my_scanf("%d,%d",&row,&line);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<line;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<row;i++)
@@ -33,7 +33,7 @@ int main_bench()
 		{
 			if(check(i,j))
 			{
-				printf("%d+%d\n",i,j);
+				my_printf("%d+%d\n",i,j);
 				judge++;
 				break;
 			}
@@ -42,6 +42,6 @@ int main_bench()
 			break;
 	}
 	if(judge==0)
-		printf("No\n");
+		my_printf("No\n");
 	return 0;
 }

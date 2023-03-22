@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[505]={'\0'},s1[100]={'\0'},s2[100]={'\0'};
-	scanf("%s",s);
+	my_scanf("%s",s);
 	int l=strlen(s),i,i1,j,j1,k=0,a[500]={0},num[500]={0},max=0;
 	for(i=0;i<=l-n;i++)
 	{
@@ -34,17 +34,17 @@ int main_bench()
 	}
 	if(max>1)
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<=499;i++)
 		{
 			if((num[i]+1)==max)
 			{
 				for(j=i;j<=i+n-1;j++)
-					printf("%c",s[j]);
-				printf("\n");
+					my_printf("%c",s[j]);
+				my_printf("\n");
 			}
 		}
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 }

@@ -7,7 +7,7 @@ int main_bench()
 {
 	char sz[81];
 	int i,n,judge;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		judge=0;
 		if(i==0){
@@ -34,7 +34,7 @@ int main_bench()
 			}
 		}
 	
-	printf("%d\n",judge);
+	my_printf("%d\n",judge);
 
 	}
 

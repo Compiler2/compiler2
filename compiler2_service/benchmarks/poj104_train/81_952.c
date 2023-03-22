@@ -8,10 +8,10 @@ int main_bench()
     {
         for(k=0;k<5;k++)
         {
-            scanf("%d",&a[i][k]);
+            my_scanf("%d",&a[i][k]);
         }
     }
-    scanf("%d %d",&x,&y);
+    my_scanf("%d %d",&x,&y);
     e=hanshu(a,x,y);
     if(e==1)
     {
@@ -20,17 +20,17 @@ int main_bench()
             for(k=0;k<5;k++)
             {
                 if(k==0)
-                printf("%d",a[i][k]);
+                my_printf("%d",a[i][k]);
                 else
-                printf(" %d",a[i][k]);
+                my_printf(" %d",a[i][k]);
                 if(k==4)
-                printf("\n");
+                my_printf("\n");
             }
         }
     }
     if(e==0)
     {
-        printf("error");
+        my_printf("error");
     }
 }
 int hanshu(int juzhen[5][5],int m,int n)

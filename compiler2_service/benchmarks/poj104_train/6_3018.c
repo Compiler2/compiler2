@@ -4,7 +4,7 @@ int main_bench()
 {
 	int zong;
 	int sz[100][100],m,n,k,i,j,sum1=0,sum2=0,sum3=0,sum4=0,sum=0;
-	scanf("%d",&zong);
+	my_scanf("%d",&zong);
 	for(k=0;k<zong;k++)
 	{
 		int sum=0;
@@ -12,10 +12,10 @@ int main_bench()
 		sum2=0;
 		sum3=0;
 		sum4=0;
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		for(i=0;i<m;i++)
 		{
-			scanf("%d",&sz[0][i]);
+			my_scanf("%d",&sz[0][i]);
 			sum1+=sz[0][i];
 		}
 		
@@ -23,12 +23,12 @@ int main_bench()
 		{
 			for(j=0;j<m;j++)
 			{
-				scanf("%d",&sz[i][j]);
+				my_scanf("%d",&sz[i][j]);
 			}
 		}
 		for(i=0;i<m;i++)
 		{
-			scanf("%d",&sz[n-1][i]);
+			my_scanf("%d",&sz[n-1][i]);
 			sum2+=sz[n-1][i];
 		}
 		
@@ -43,7 +43,7 @@ int main_bench()
 		}
 		
 		sum=sum1+sum2+sum3+sum4;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 		sum=0;
 	}
 	return 0;

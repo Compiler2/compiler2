@@ -4,12 +4,12 @@ int sz[1000][1000];
 int main_bench()
 {
 	int n,i,j,x,y,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -29,6 +29,6 @@ int main_bench()
 	    	break;
 	}
 	s=(x-i-1)*(y-j-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

@@ -9,10 +9,10 @@ struct bing
 int main_bench()
 {
 	int i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",&bing[i].id,&bing[i].age);
+		my_scanf("%s %d",&bing[i].id,&bing[i].age);
 		bing[i].num=i+1;
 	}
 	for(j=0;j<=n;j++)
@@ -28,6 +28,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",bing[i].id);
+		my_printf("%s\n",bing[i].id);
 	return 0;
 }

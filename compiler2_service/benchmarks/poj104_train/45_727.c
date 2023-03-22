@@ -6,8 +6,8 @@ int main_bench()
 	char s1[50],s2[50];
 	int n,i,j,length1,length2,k;
 	k=0;
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	length1=strlen(s1);
 	length2=strlen(s2);
 	for(i=0;i<length2;i++)
@@ -20,6 +20,6 @@ int main_bench()
 		}
 		if(k)break;
 	}
-		printf("%d",k);
+		my_printf("%d",k);
 	
 }

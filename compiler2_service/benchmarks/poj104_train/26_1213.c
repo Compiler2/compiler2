@@ -18,6 +18,6 @@ int main_bench(){
 			}
 	}
 	b[m]='\0';
-	printf("%s", b);
+	my_printf("%s", b);
 	return 0;
 }

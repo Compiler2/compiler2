@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,a,b,c,s,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&a,&b,&c);
+		my_scanf("%d %d %d",&a,&b,&c);
 		if(((a%4==0)&&(a%100!=0))||((a%100==0)&&(a%400==0)))
 		{
 			if(b==1)
@@ -59,11 +59,11 @@ int main_bench()
 				t=1+31+29+31+30+31+30+31+31+30+31+30;
 			if((s-t)%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else
@@ -118,11 +118,11 @@ int main_bench()
 				t=1+31+28+31+30+31+30+31+31+30+31+30;
 			if((s-t)%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}

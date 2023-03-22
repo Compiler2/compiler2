@@ -3,9 +3,9 @@
 int main_bench(){
 	char a[100][11],c[100][11];
 	int i,j,n,b[100],m,e=-1,f=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",&a[i],&b[i]);
+		my_scanf("%s %d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(b[i]>=60){
@@ -26,7 +26,7 @@ int main_bench(){
 			f++;
 	}}
 	for(i=0;i<n;i++){
-		printf("%s\n",c[i]);
+		my_printf("%s\n",c[i]);
 	}
 	return 0;
 }

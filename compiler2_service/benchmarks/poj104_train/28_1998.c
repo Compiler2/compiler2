@@ -10,12 +10,12 @@ if(sz[i]!=' '){
 a=a+1;
 }else{
 if(a!=0){
-printf("%d",a);
-printf(",");
+my_printf("%d",a);
+my_printf(",");
 a=0;
 }
 }
 }
-printf("%d",a);
+my_printf("%d",a);
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench(){
 char str[260],*ps,str2[260];
 int n,i,k;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 
 for(k=0;k<n;k++){
    gets(str);
@@ -15,6 +15,6 @@ for(k=0;k<n;k++){
                     else str2[i]='G';
      i++;}
      str2[i] = '\0';
-    printf("%s\n",str2);}
+    my_printf("%s\n",str2);}
 return 0;
 }

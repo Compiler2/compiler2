@@ -10,7 +10,7 @@ int main_bench()
 		if(i!=k-1){zfc2[i]=zfc1[i+1]+zfc1[i];}
         else{zfc2[k-1]=zfc1[k-1]+zfc1[0];}
 	}for(i=0;i<k;i++){
-		printf("%c",zfc2[i]);
+		my_printf("%c",zfc2[i]);
 	}
 	return 0;
 }

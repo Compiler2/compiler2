@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,s[101][2],r[101],sum,a,sz[101],j,max;
 	sum=0;
 	j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&s[i][0],&s[i][1]);
+		my_scanf("%d %d",&s[i][0],&s[i][1]);
 	}
 	for(i=0;i<n;i++){
 		if((s[i][0]>=90)&&(s[i][0]<=140)&&(s[i][1]>=60)&&(s[i][1]<=90)){
@@ -44,6 +44,6 @@ int main_bench(){
 			a=0;
 		}
 	}
-	printf("%d",sum+a);
+	my_printf("%d",sum+a);
     return 0;
 }

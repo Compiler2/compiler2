@@ -5,10 +5,10 @@ int main_bench()
     int n,i,x,y;
 x=0;
 y=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],b[n];
     for(i=0;i<n;i++){
-        scanf("%d %d",&a[i],&b[i]);
+        my_scanf("%d %d",&a[i],&b[i]);
         }
     for(i=0;i<n;i++){
         if(a[i]==0&&b[i]==1){
@@ -25,11 +25,11 @@ y++;
 y++;}
 }
 if(x>y){
-printf("A");}
+my_printf("A");}
 else if(x==y){
-printf("Tie");}
+my_printf("Tie");}
 else if(x<y){
-printf("B");}
+my_printf("B");}
            return 0;
            }
 

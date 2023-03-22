@@ -3,11 +3,11 @@
 int main_bench()
 {int n,i,l,al,bl;
 char a[101],b[101];
-scanf("%d",&n);
+my_scanf("%d",&n);
 l=n;
 while(l>0)
-{scanf("%s",&a);
- scanf("%s",&b);
+{my_scanf("%s",&a);
+ my_scanf("%s",&b);
  al=strlen(a);
  bl=strlen(b);
  for(i=100;i>=101-al;i--)
@@ -26,10 +26,10 @@ while(l>0)
 		}
 	}
  if(a[101-al]!=0)
-	 printf("%d",a[101-al]);
+	 my_printf("%d",a[101-al]);
  for(i=102-al;i<=100;i++)
- printf("%d",a[i]);
- printf("\n");
+ my_printf("%d",a[i]);
+ my_printf("\n");
  l--;
 }
 }

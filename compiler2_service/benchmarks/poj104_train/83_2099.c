@@ -7,14 +7,14 @@ int main_bench()
   int a[10];
   int b[10];
   double c[10];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-     scanf("%d",&a[i]);
+     my_scanf("%d",&a[i]);
    }
   for(i=0;i<n;i++)
   {
-    scanf("%d",&b[i]);
+    my_scanf("%d",&b[i]);
   }
    for(i=0;i<n;i++)
   {
@@ -72,6 +72,6 @@ int main_bench()
       w+=a[i]*c[i];
      }
      s=w/y;
-    printf("%.2lf",s);
+    my_printf("%.2lf",s);
     return 0;
 }

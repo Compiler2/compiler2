@@ -39,6 +39,6 @@ str[i]=rep[j];
 }
 }
 }
-printf(str);
+my_printf(str);
 return 0;
 }

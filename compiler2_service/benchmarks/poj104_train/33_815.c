@@ -7,9 +7,9 @@ int main_bench()
 	int  n;
 	char a='A',t='T',g='G',c='C';
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%s",&zfc);
+		my_scanf("%s",&zfc);
 		for(int j=0;j<256;j++){
 			if(zfc[j]==a){
 				zfcsc[j]=t;
@@ -27,7 +27,7 @@ int main_bench()
 				zfcsc[j]='\0';
 			}
 		}
-		printf("%s\n",zfcsc);
+		my_printf("%s\n",zfcsc);
 	}
 	return 0;
 }

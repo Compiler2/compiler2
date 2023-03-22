@@ -11,7 +11,7 @@ int main_bench()
 		else {a[r][j]=s[i];j++;}
 	}
 	a[r][j]='\0';
-	printf("%s",a[r]);
+	my_printf("%s",a[r]);
 	for(i=r-1;i>0;i--)
-	printf(" %s",a[i]);
+	my_printf(" %s",a[i]);
 }

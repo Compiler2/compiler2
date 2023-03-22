@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[100],w[100],*p;
 	int i,bl,j=0;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	p=s;
 	do
 	{
@@ -13,7 +13,7 @@ int main_bench()
 			if (*(p+i)!=*(w+i+j)) bl=0;
 		if (bl)
 		{
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 			break;
 		} 
 		else j++;

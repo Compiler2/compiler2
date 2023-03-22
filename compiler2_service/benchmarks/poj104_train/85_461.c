@@ -5,16 +5,16 @@ int main_bench()
 {
 	int n,i,j,l;
 	char word[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word);
+		my_scanf("%s",word);
 		l=strlen(word);
 		if(word[0]<='z'&&word[0]>='a'||word[0]<='Z'&&word[0]>='A'||word[0]==' '||word[0]=='_')
 			;
 		else
 			{
-				printf("no\n");
+				my_printf("no\n");
 				continue;
 			}
 		for(j=1;j<l;j++)
@@ -23,12 +23,12 @@ int main_bench()
 					;
 				else
 				{
-					printf("no\n");
+					my_printf("no\n");
 					goto MQ;
 				}
 				
 		}
-		printf("yes\n");
+		my_printf("yes\n");
 MQ:;
 	}
 	return 0;

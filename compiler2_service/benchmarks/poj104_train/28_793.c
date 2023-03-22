@@ -11,8 +11,8 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if((*(p+i)!=' ')&&(*(p+i)!='\0'))s=s+1;
-		if((*(p+i)==' ')&&(*(p+i)!='\0')){if(s>0)printf("%d,",s);s=0;}
+		if((*(p+i)==' ')&&(*(p+i)!='\0')){if(s>0)my_printf("%d,",s);s=0;}
 		if(*(p+i)=='\0')break;
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 }

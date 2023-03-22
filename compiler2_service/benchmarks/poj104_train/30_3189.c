@@ -5,13 +5,13 @@ int main_bench()
 int n,i;
 unsigned long sum=0;
 int judge(int i);
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
 if(i%7!=0&&judge(i)==0)
 sum+=i*i;
 }
-printf("%ld\n",sum);
+my_printf("%ld\n",sum);
 return 0;
 }
 int judge(int i)

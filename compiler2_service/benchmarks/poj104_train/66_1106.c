@@ -35,7 +35,7 @@
      int year,month,day;
      int year1,total;
      int days2=0,days3;
-     scanf("%d%d%d",&year,&month,&day);
+     my_scanf("%d%d%d",&year,&month,&day);
      year1=(year%400==0?400:year%400);
      for(i=1;i<year1;i++){
        if(isRunNian(i)){
@@ -47,19 +47,19 @@
        days3=DiJiTian(year,month,day);
        total=days2+days3;
        if(total%7==0){
-        printf("Sun.");}
+        my_printf("Sun.");}
       if(total%7==1){
-        printf("Mon.");}
+        my_printf("Mon.");}
       if(total%7==2){
-        printf("Tue.");}
+        my_printf("Tue.");}
       if(total%7==3){
-        printf("Wen.");}  
+        my_printf("Wen.");}  
       if(total%7==4){
-        printf("Thu.");}
+        my_printf("Thu.");}
       if(total%7==5){
-        printf("Fri.");}
+        my_printf("Fri.");}
       if(total%7==6){
-        printf("Sat.");}
+        my_printf("Sat.");}
      
       return 0;
      }

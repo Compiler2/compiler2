@@ -4,7 +4,7 @@ int main_bench()
 { 
 int a,b,c,d,e,f,h,i,j,n;
  
- scanf("%d",&a);
+ my_scanf("%d",&a);
     
  
  if(a>=10000)
@@ -19,7 +19,7 @@ int a,b,c,d,e,f,h,i,j,n;
   i=h-j*10;
                 n=10000*i+1000*j+100*f+10*d+b;
 
-  printf("%05d",n);
+  my_printf("%05d",n);
  }
  else if(a>=1000)
  {
@@ -30,7 +30,7 @@ int a,b,c,d,e,f,h,i,j,n;
   f=e/10;
   h=e-f*10;
                 n=1000*h+100*f+10*d+b;
-  printf("%04d",n);
+  my_printf("%04d",n);
  }
  else if(a>=100)
  {
@@ -39,17 +39,17 @@ int a,b,c,d,e,f,h,i,j,n;
   d=c/10;
   e=c-10*d;
                 n=100*e+10*d+b;
-  printf("%03d",n);
+  my_printf("%03d",n);
  }
  else if(a>=10)
  {
   b=a/10;
   c=a-b*10;
                 n=10*c+b;
-  printf("%02d",n);
+  my_printf("%02d",n);
  }
  else if(a>=0)
-  printf("%d",a);
- printf("\n");
+  my_printf("%d",a);
+ my_printf("\n");
  return 0;
 }

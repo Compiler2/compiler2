@@ -6,12 +6,12 @@ int main_bench()
     int k,i,g,t,r;
     int s[100];
     int z[100];
-   scanf ("%d",&k);
+   my_scanf ("%d",&k);
     for (g=0;g<=k-1;g++){
-        scanf("%d %d",&s[g],&z[g]);
+        my_scanf("%d %d",&s[g],&z[g]);
         for (i=0;i<=s[g]-1;i++){
             for (t=0;t<=z[g]-1;t++){
-                scanf("%d",&sz[g][i][t]);
+                my_scanf("%d",&sz[g][i][t]);
             }
         }
     }
@@ -24,14 +24,14 @@ for (r=0,i=0;i<=s[g]-1;i++){
     for(t=1;t<=z[g]-2;t++){
         r=r+sz[g][0][t]+sz[g][s[g]-1][t];
     }
-    printf("%d\n",r);
+    my_printf("%d\n",r);
 }
   else {for(r=0,i=0;i<=s[g]-1;i++){
       for(t=0;t<=z[g]-1;t++){
           r=r+sz[g][i][t];
       }
   }
- printf ("%d\n",r); }
+ my_printf ("%d\n",r); }
 }
 
 return 0;

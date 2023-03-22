@@ -5,11 +5,11 @@ int main_bench()
 {
 	char a[1000][256];
 	int i, k, n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 		{
 			if(a[i][k]=='\0') 
 			{
-				printf("%s\n",a[i]);
+				my_printf("%s\n",a[i]);
 				break;
 			}
 			if(a[i][k]=='A') a[i][k]='T';

@@ -14,10 +14,10 @@ int main_bench()
     } else {
       if (origin[i-1]!=' ') {
         if (first==1) {
-          printf("%d", total);
+          my_printf("%d", total);
           first=0;
         } else {
-          printf(",%d", total);
+          my_printf(",%d", total);
         }
       }
       total=0;
@@ -25,9 +25,9 @@ int main_bench()
   }
   
   if (first==1) {
-    printf("%d",total);
+    my_printf("%d",total);
   } else {
-    printf(",%d",total);
+    my_printf(",%d",total);
   }
   return 0;
 }

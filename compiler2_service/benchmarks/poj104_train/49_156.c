@@ -4,7 +4,7 @@
 
 void pause()
 {int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 }
 
 void find_huiwen(char*str,int len,int n)
@@ -23,7 +23,7 @@ for(i=0;i<=n-len;i++)
 	huiwen[len]='\0';
 	reverse(huiwen,rev,len);
 	if(strcmp(rev,huiwen)==0)
-	printf("%s\n",huiwen);
+	my_printf("%s\n",huiwen);
 	}
 }
 void reverse(char*huiwen,char*rev,int geshu)
@@ -39,7 +39,7 @@ int main_bench()
 {
 char str[500];
 int n;
-scanf("%s",str);
+my_scanf("%s",str);
 n=strlen(str);
 
 int i;

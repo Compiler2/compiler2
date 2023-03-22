@@ -9,7 +9,7 @@ struct
 main_bench()
 {
 	int days;
-	scanf("%d%d%d",&date.year,&date.month,&date.day);
+	my_scanf("%d%d%d",&date.year,&date.month,&date.day);
 	switch(date.month)
 	{
 	case 1:days=date.day;      break;
@@ -26,6 +26,6 @@ main_bench()
 	case 12:days=date.day+334;  break;
 	}
 	if ((date.year%4==0&&date.year%100!=0||date.year%400==0)&&date.month>=3)days+=1;
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }

@@ -16,7 +16,7 @@ int main_bench()
 {
 	int n,i,j,e,moneyzong=0;
 	char name1[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student*a=(struct student*)malloc(sizeof(struct student)*n);
 	for(i=0;i<n;i++)
 	{
@@ -24,7 +24,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].pingyi,&a[i].ganbu,&a[i].xibu,&a[i].paper);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].pingyi,&a[i].ganbu,&a[i].xibu,&a[i].paper);
 		if(a[i].qimo>80&&a[i].paper>=1)
 			a[i].money+=8000;
 		if(a[i].qimo>85&&a[i].pingyi>80)
@@ -59,7 +59,7 @@ int main_bench()
 	}
 	
 
-	printf("%s\n%d\n%d\n",a[n-1].name,a[n-1].money,moneyzong);
+	my_printf("%s\n%d\n%d\n",a[n-1].name,a[n-1].money,moneyzong);
 	return 0;
 }
 

@@ -7,9 +7,9 @@ int main_bench()
 {
  int array[300],n,i,j;
  int p,q;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i=0;i<n;i++)
-  scanf("%d",&array[i]);
+  my_scanf("%d",&array[i]);
 
  for (p=0;p<n-1;p++)
  {
@@ -25,10 +25,10 @@ int main_bench()
    }
   }
  }
- printf("%d",array[0]);
+ my_printf("%d",array[0]);
  for (i=1;i<n;i++)
  {
-  printf(",%d",array[i]);
+  my_printf(",%d",array[i]);
  }
  return 0;
 }

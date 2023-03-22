@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a, max, sec=-1, i;
 	char s;
-	scanf("%d", &max);
+	my_scanf("%d", &max);
 	for(i=0;i<300;i++)
 	{
-		scanf("%c", &s);
+		my_scanf("%c", &s);
 		if(s=='\n') break;
-		scanf("%d", &a);
+		my_scanf("%d", &a);
 		if(a>max){sec=max;max=a;} 
 		else if(a==max) continue;
 		else
@@ -22,15 +22,15 @@ int main_bench()
 	}
 	if(sec==-1)
 	{	
-		printf("No");
+		my_printf("No");
 	}
 	else if(max==sec)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
-		printf("%d", sec);
+		my_printf("%d", sec);
 	}
 	return 0;
 }

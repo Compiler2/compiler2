@@ -5,7 +5,7 @@ char a[100];
 int i,n,m=1;
 int length;
 char *p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<n+1;i++){
 gets(a);
@@ -22,7 +22,7 @@ gets(a);
         
 	}
 	if(i>0){
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	}
 	m=1;
 }

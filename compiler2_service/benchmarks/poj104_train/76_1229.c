@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i,j,e,min,max,m;
 	int all[20000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int **sz=(int**)malloc(sizeof(int*)*n);
 	for(i=0;i<n;i++)
 	{
 		m=2;
 		sz[i]=(int*)malloc(sizeof(int)*m);
-		scanf("%d %d",&sz[i][0],&sz[i][1]);
+		my_scanf("%d %d",&sz[i][0],&sz[i][1]);
 		for(j=sz[i][0]*2;j<=sz[i][1]*2;j++)
 		{
 			all[j]=1;
@@ -45,11 +45,11 @@ int main_bench()
 	}
 	if(i!=max*2+1)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

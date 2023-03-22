@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,k;
 	char str2[100][100]={'\0'};	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 		minus(str2[k]);
 	for(k=0;k<n;k++)
-		printf("%s\n",str2[k]);
+		my_printf("%s\n",str2[k]);
 	
 
 
@@ -21,7 +21,7 @@ int minus(char str2[])
 {
 	int len1,len2,i;
 	char str[2][100]={'\0'};
-	scanf("%s%s",str[0],str[1]);
+	my_scanf("%s%s",str[0],str[1]);
 	len1=strlen(str[0]);
 	len2=strlen(str[1]);
 	for(i=len1-1;i>=len1-len2;i--)

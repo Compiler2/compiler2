@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,m,n;
 	char s[33];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-	scanf("%s",s);
+	my_scanf("%s",s);
     n=strlen(s)-1;
 	if(s[n]=='g'){
 		s[n-2]=0;
@@ -15,7 +15,7 @@ int main_bench()
 	}
 	else
 		s[n-1]=s[n]=0;
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 	}
 	return 0;
 }

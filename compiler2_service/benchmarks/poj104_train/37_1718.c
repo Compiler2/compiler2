@@ -4,13 +4,13 @@ int main_bench()
 {
       int t,l,m,n,j,no;
       char i;
-      scanf("%d\n",&t);
+      my_scanf("%d\n",&t);
       for(l=0;l<t;l++)
       {
                       no=0;
                       char a[100000];
                       int b[26]={0};
-                      scanf("%s",&a);
+                      my_scanf("%s",&a);
                       n=strlen(a);
                       for(i='a';i<='z';i++)
                       {
@@ -31,8 +31,8 @@ int main_bench()
                                   }
                           }
                       }
-                      if(no==1)printf("%c\n",a[n]);
-                      else printf("no\n");
+                      if(no==1)my_printf("%c\n",a[n]);
+                      else my_printf("no\n");
       }
       return 0;
       

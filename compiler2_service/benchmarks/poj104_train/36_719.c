@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n1,n2,b[100],i,j,p=0;
 	char s1[100],s2[100];
-    scanf("%s %s",s1,s2);
+    my_scanf("%s %s",s1,s2);
 	n1=strlen(s1);
 	n2=strlen(s2);
 	for(i=0;i<n1;i++)
@@ -13,7 +13,7 @@ int main_bench()
 	}
 	if(n1!=n2)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else 
 	{
@@ -33,7 +33,7 @@ int main_bench()
 			}
 			i++;
 		}
-		if(p==n1)printf("YES");
-		else printf("NO");
+		if(p==n1)my_printf("YES");
+		else my_printf("NO");
 	}
 }

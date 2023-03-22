@@ -16,7 +16,7 @@ yu=yu%13;
 b[a1]='\0';
 qu(b);
 puts(b);
-printf("%d",yu);
+my_printf("%d",yu);
 return 0;
 }
 void qu(char *b)

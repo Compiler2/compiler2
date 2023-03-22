@@ -5,9 +5,9 @@ main_bench()
 int n,i,k,t;
 int d[100];
 char c[100][10],e[10];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
-scanf("%s %d",c[i-1],&d[i-1]);
+my_scanf("%s %d",c[i-1],&d[i-1]);
 for(i=1;i<=n-1;i++)
 {
 for(k=n;k>=i+1;k--)
@@ -24,7 +24,7 @@ strcpy(c[k-1],e);
 }
 }
 for(i=1;i<=n;i++)
-printf("%s\n",c[i-1]);                                                   
+my_printf("%s\n",c[i-1]);                                                   
 getchar();
 getchar();  
 }

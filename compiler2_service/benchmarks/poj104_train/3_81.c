@@ -12,7 +12,7 @@ int main_bench()
 	int n,k;
 	int t;
 
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 
 	int *a;
 	a=(int *)malloc(sizeof(int )*n);
@@ -20,20 +20,20 @@ int main_bench()
 	int i,j;
 
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 	for(i=0;i<n;i++){
 		t=k-a[i];
 		for(j=0;j!=i&&j<n;j++){
 			if(t==a[j]){
-				printf("yes\n");
+				my_printf("yes\n");
 				return 0;
 			}
 		}
 	}
 
-	printf("no\n");
+	my_printf("no\n");
 
 	return 0;
 }

@@ -12,11 +12,11 @@ int main_bench()
 	int lunwen[100];
 	int i=0,sum[100]={0},sumz=0,k=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
+		my_scanf("%s%d%d %c %c%d",name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
 	}
 
 	for(i=0;i<n;i++)
@@ -39,7 +39,7 @@ int main_bench()
 	}
 	sumz=sumz+sum[0];
 	
-	printf("%s\n%d\n%d\n",name[k],sum[k],sumz);
+	my_printf("%s\n%d\n%d\n",name[k],sum[k],sumz);
 
 	return 0;
 }

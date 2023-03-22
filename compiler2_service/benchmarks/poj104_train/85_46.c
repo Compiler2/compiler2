@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j,leng;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	char s[100][20];
 	for (i=0;i<n;i++)
 	{
-		scanf ("%s",s[i]);
+		my_scanf ("%s",s[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -16,19 +16,19 @@ int main_bench()
 		{
 			if (s[i][j]!='_'&&j==0&&(s[i][j]<'A'||(s[i][j]>'Z'&&s[i][j]<'a')||(s[i][j]>'z')))
 			{
-				printf ("no\n");
+				my_printf ("no\n");
 				break;
 			}
             if (j!=0)
 			{
 			   if (s[i][j]!='_'&&s[i][j]<'0'||(s[i][j]>'9'&&s[i][j]<'A')||(s[i][j]>'Z'&&s[i][j]<'a')||(s[i][j]>'z'))
 			   {
-				  printf ("no\n");
+				  my_printf ("no\n");
 				  break;
 			   }
 			}
 		}
-		if (j==leng)printf("yes\n");
+		if (j==leng)my_printf("yes\n");
 	}
 	return 0;
 }

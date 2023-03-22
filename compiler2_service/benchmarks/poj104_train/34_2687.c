@@ -18,10 +18,10 @@ int odd(int a)
 int main_bench()
 {
 	int n,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1)
 	{
-		printf("End");
+		my_printf("End");
 		return;
 	}
 	while(1)
@@ -29,23 +29,23 @@ int main_bench()
 		if(n%2==0)
 		{
 			m=even(n);
-			printf("%d/2=%d\n",n,m);
+			my_printf("%d/2=%d\n",n,m);
 			n=m;
 			if(m==1)
 			{
-				printf("End");
+				my_printf("End");
 				break;
 			}
 		}
 		else
 		{
 			m=odd(n);
-			printf("%d*3+1=%d\n",n,m);
+			my_printf("%d*3+1=%d\n",n,m);
 			n=m;
 			continue;
 			if(m==1)
 			{
-				printf("End");
+				my_printf("End");
 				break;
 			}
 		}

@@ -5,9 +5,9 @@ int main_bench()
 int j,i,q=0,a,b,d=0,e=0,l,g;
 float c,n;
 char s1[500],s2[500];
-scanf("%f\n",&n);
-scanf("%s\n%s",s1,s2);
-if(strlen(s1)!=strlen(s2))printf("error");
+my_scanf("%f\n",&n);
+my_scanf("%s\n%s",s1,s2);
+if(strlen(s1)!=strlen(s2))my_printf("error");
 if(strlen(s1)==strlen(s2)){
 for(i=0;s1[i]!='\0';i++){
 	if(s1[i]!='A'&&s1[i]!='T'&&s1[i]!='G'&&s1[i]!='C'){
@@ -28,10 +28,10 @@ b=q;
 c=(float)b/(float)a;
 g=d+e;
 if(g!=0){
-	printf("error");
+	my_printf("error");
 }else{
-	if(c>=n)printf("yes");
-    if(c<n)printf("no");
+	if(c>=n)my_printf("yes");
+    if(c<n)my_printf("no");
 }
 }
 

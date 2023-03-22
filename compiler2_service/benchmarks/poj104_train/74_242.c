@@ -5,17 +5,17 @@ int hui(int x);
 int main_bench()
 {
 	int m,n,flag=0,x;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(x=m;x<=n;x++)
 	{
 		if(su(x)+hui(x)==2)
 		{
-			if(flag==1)printf(",");
-			printf("%d",x);
+			if(flag==1)my_printf(",");
+			my_printf("%d",x);
 			flag=1;
 		}
 	}
-	if(flag==0)printf("no");
+	if(flag==0)my_printf("no");
 }
 
 int su(int x)

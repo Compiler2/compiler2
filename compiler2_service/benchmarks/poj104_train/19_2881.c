@@ -26,15 +26,15 @@ for(i=0;i<strlen(s);i++){
 	}
 	if(sum==strlen(a)){
        for(j=0;j<strlen(b);j++){
-		printf("%c",b[j]);
+		my_printf("%c",b[j]);
 	   }
 	}
 	else{
     for(j=0;j<sum1;j++){
-		printf("%c",s[i-sum1+j]);
+		my_printf("%c",s[i-sum1+j]);
 	}
 	}
-	if(flag==0)printf("%c",' ');
+	if(flag==0)my_printf("%c",' ');
 	sum1=0;
 	sum=0;
 		

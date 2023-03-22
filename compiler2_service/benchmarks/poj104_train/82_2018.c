@@ -2,11 +2,11 @@
 
 int main_bench(){
     int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int sz[1000],dz[1000],a,i,sz3[1000],b;
 	a=0;
 	for(i=0 ; i<k ; i++){
-		scanf("%d %d",&sz[i],&dz[i]);
+		my_scanf("%d %d",&sz[i],&dz[i]);
 		
 		if(sz[i]>=90 && sz[i]<=140 && dz[i]<=90 && dz[i]>=60){
 		a=a+1;
@@ -24,7 +24,7 @@ int main_bench(){
 	}
 
 
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }
 

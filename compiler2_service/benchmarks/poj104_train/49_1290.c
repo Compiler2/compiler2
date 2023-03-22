@@ -15,7 +15,7 @@ int main_bench()
 	char c[200]={'\0'};
 	char a[200][200]={'\0'};
 	int i,j,k,l;
-	scanf("%s",c);
+	my_scanf("%s",c);
 	for (i=2;i<strlen(c);i++)
 	{
 		l=strlen(c)-i+1;
@@ -25,7 +25,7 @@ int main_bench()
 			{
 				*(*(a+j)+k)=*(c+j+k);
 			}
-		if (panduan(*(a+j),strlen(*(a+j)))==1)printf("%s\n",*(a+j));
+		if (panduan(*(a+j),strlen(*(a+j)))==1)my_printf("%s\n",*(a+j));
 		}
 	    
 	}

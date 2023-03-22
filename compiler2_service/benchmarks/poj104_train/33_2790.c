@@ -14,21 +14,21 @@ char anti_base(char base){
 }
 int main_bench(){
 	int n,i,j;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	char sequence[n][300],a;
 	for (i = 0; i < n; i ++){
-		scanf("%s",sequence[i]);
+		my_scanf("%s",sequence[i]);
 	}
 	for (i = 0;i < n;i ++){
 	for (j = 0;;j ++){
 		if(sequence[i][j] != 0 ){
 	     	a = anti_base(sequence[i][j]);
-	    	printf("%c",a);
+	    	my_printf("%c",a);
 		}
 		else
 			break;
 	}
-	 printf("\n");
+	 my_printf("\n");
 	}
 
 

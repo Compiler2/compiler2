@@ -6,14 +6,14 @@ double x=0,y=0,z=0;
 int main_bench(){
 
 for(i=0;i<100;i++){
-	scanf("%d %d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4],&a[i][5]);
+	my_scanf("%d %d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4],&a[i][5]);
         if(a[i][0]==0&&a[i][1]==0&&a[i][2]==0&&a[i][3]==0&&a[i][4]==0&&a[i][5]==0)break;
  }
 
 for(i=0;i<100;i++){
 	b[i]=(12-a[i][0]+a[i][3])*3600+(a[i][4]-a[i][1])*60+a[i][5]-a[i][2];
         if(a[i][0]==0&&a[i][1]==0&&a[i][2]==0&&a[i][3]==0&&a[i][4]==0&&a[i][5]==0)break;
- printf("%d\n",b[i]);
+ my_printf("%d\n",b[i]);
 }
 return 0;
 

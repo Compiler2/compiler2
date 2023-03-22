@@ -5,11 +5,11 @@ int main_bench()
 	char a[20];
 	int i,j;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int judge=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		strlen(a);
 		int m;
 		m=strlen(a);
@@ -34,9 +34,9 @@ int main_bench()
 			
 		}
 		if(judge==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

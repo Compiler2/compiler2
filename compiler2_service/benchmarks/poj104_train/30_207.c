@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,a,b,c,s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		a=i/100;
@@ -12,7 +12,7 @@ int main_bench()
 		if ((i%7==0)||(a==7)||(b==7)||(c==7)) continue;
 		else s=s+i*i;
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 
 
 

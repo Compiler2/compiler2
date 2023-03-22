@@ -5,7 +5,7 @@ int main_bench()
 	char str[101];
 	gets(str);
 	char a[101],b[101];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int n=strlen(str);
 	int i,k=0,j=0;
 	char c[101][101];
@@ -23,11 +23,11 @@ int main_bench()
 	for(i=0;i<k;i++)
 	{
 		if(i>0)
-		{printf(" ");}
+		{my_printf(" ");}
 		if(strcmp(c[i],a)==0)
-		{printf("%s",b);}
+		{my_printf("%s",b);}
 		else
-		{printf("%s",c[i]);}
+		{my_printf("%s",c[i]);}
 	}
 	return 0;
 }

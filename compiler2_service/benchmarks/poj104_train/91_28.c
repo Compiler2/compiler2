@@ -21,7 +21,7 @@ int main_bench()
 	}
 	for(i=0;i<len;i++)
 	{
-		printf("%c",*(q+i));
+		my_printf("%c",*(q+i));
 	}
 	return 0;
 }

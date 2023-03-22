@@ -3,7 +3,7 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       getchar();
       int i,j;
       char x[100];
@@ -14,13 +14,13 @@ main_bench()
                       {
                                                            if(x[1]=='\0')
                                                            {
-                                                                printf("1\n");
+                                                                my_printf("1\n");
                                                                 continue;
                                                            }
                       }                      
                       else
                       {
-                          printf("0\n");
+                          my_printf("0\n");
                           continue;         
                       }
                       for(i=1;x[i]!='\0';i++)
@@ -29,12 +29,12 @@ main_bench()
                                                       continue; 
                                              else
                                              {
-                                                      printf("0\n");
+                                                      my_printf("0\n");
                                                       break; 
                                              }
                       }
                       if(x[i]=='\0')
-                          printf("1\n"); 
+                          my_printf("1\n"); 
       }
 }
                           

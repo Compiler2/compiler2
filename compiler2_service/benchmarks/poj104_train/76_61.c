@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,a,b,min;
 	int sz[50000],sc[50000];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	min=n-1;
 	for (i=0;i<n;i++)
-		scanf ("%d %d",&sz[i],&sc[i]);
+		my_scanf ("%d %d",&sz[i],&sc[i]);
 	for (i=0;i<n;i++)
 	{
 		for (j=n-1;j>=i;j--)
@@ -37,11 +37,11 @@ int main_bench()
 		else 
 		{
 			b=1;
-			printf ("no\n");
+			my_printf ("no\n");
 			break;
 		}
 	}
 	if (b!=1)
-		printf ("%d %d\n",sz[0],sc[n-1]);
+		my_printf ("%d %d\n",sz[0],sc[n-1]);
 	return 0;
 }

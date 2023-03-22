@@ -11,7 +11,7 @@ struct stu
 int main_bench()
 {
 	int n,numt,cht,mat;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu *head,*now,*neww,*max;
 	int i;
 	for (i=1;i<=n;i++)
@@ -26,7 +26,7 @@ int main_bench()
                 now->next=neww;
                 now=neww; 
                }
-            scanf("%ld %ld %ld",&now->num,&now->ch,&now->ma);
+            my_scanf("%ld %ld %ld",&now->num,&now->ch,&now->ma);
 		    now->tot=now->ch  +   now->ma;
 		}	
   for (i=1;i<=3;i++) 
@@ -38,7 +38,7 @@ int main_bench()
               if (max->tot<now->tot) max=now; 
               now=now->next;
           }
-    printf("%d %d\n",max->num,max->tot);
+    my_printf("%d %d\n",max->num,max->tot);
     max->tot=-1;
   }	
   

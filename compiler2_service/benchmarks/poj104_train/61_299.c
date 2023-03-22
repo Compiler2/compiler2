@@ -4,7 +4,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int shulie[20];
     int i;
     shulie[0]=1;
@@ -14,10 +14,10 @@ int main_bench()
     }
     int ceshi[n];
     for(i=0;i<n;i++){
-        scanf("%d",&ceshi[i]);
+        my_scanf("%d",&ceshi[i]);
     }
     for(i=0;i<n;i++){
-        printf("%d\n",shulie[ceshi[i]-1]);
+        my_printf("%d\n",shulie[ceshi[i]-1]);
     }
   return 0;
 }

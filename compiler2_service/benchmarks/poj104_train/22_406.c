@@ -9,7 +9,7 @@ int main_bench()
 	char z;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&z);
+		my_scanf("%d%c",&a[i],&z);
 		if(z=='\n')
 		{k=i;break;}
 	}
@@ -24,9 +24,9 @@ int main_bench()
 	t2=a[j];
 	}
 	if(t2==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",t2);
-	printf("\n");
+		my_printf("%d",t2);
+	my_printf("\n");
 	return 0;
 }

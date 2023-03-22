@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,m[1000],j;
 	char s[1000][255];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&s[i]);
+		my_scanf("%s",&s[i]);
 		m[i]=strlen(s[i]);
 	}
 	for(i=0;i<n;i++)
@@ -17,33 +17,33 @@ int main_bench()
 		   for(j=0;j<m[i]-1;j++)
 		   {
 	 		    if(s[i][j]=='A')
-				   printf("T");
+				   my_printf("T");
 			    if(s[i][j]=='T')
-				   printf("A");
+				   my_printf("A");
 		      	if(s[i][j]=='G')
-				   printf("C");
+				   my_printf("C");
 			    if(s[i][j]=='C')
-				   printf("G");
+				   my_printf("G");
 		   }
 		   if(s[i][m[i]-1]=='A')
-			  printf("T\n");
+			  my_printf("T\n");
 		   if(s[i][m[i]-1]=='T')
-			  printf("A\n");
+			  my_printf("A\n");
 		   if(s[i][m[i]-1]=='G')
-			  printf("C\n");
+			  my_printf("C\n");
 		   if(s[i][m[i]-1]=='C')
-			  printf("G\n");
+			  my_printf("G\n");
 		}
 		else
 		{
 			 if(s[i][0]=='A')
-				   printf("T\n");
+				   my_printf("T\n");
 			 if(s[i][0]=='T')
-				   printf("A\n");
+				   my_printf("A\n");
 		     if(s[i][0]=='G')
-				   printf("C\n");
+				   my_printf("C\n");
 			 if(s[i][0]=='C')
-				   printf("G\n");
+				   my_printf("G\n");
 		}
 	}
 	return 0;

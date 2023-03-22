@@ -5,7 +5,7 @@ int main_bench()
 {
 	char a[1000],b[1000];
 	int i,j,k,p;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;b[i]!=0;i++)
 	{
 		int same=0;
@@ -17,7 +17,7 @@ int main_bench()
 				if(a[j]!=b[i+j]) {same=0 ;break;}
 			}
 			if(same==1) {
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

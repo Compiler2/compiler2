@@ -4,7 +4,7 @@ int sushu(int x);
 int main_bench(){
 	int i,j,m,n,k=0,t=0,l=0;
 	int sz[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sz[0]=1;
 	for(i=1;i<=n;i++){
 		if(sushu(i)){
@@ -12,10 +12,10 @@ int main_bench(){
 			sz[t]=i;}}
 	for(j=0;j<t;j++){
 		if(sz[j+1]-sz[j]==2){
-			printf("%d %d\n",sz[j],sz[j+1]);
+			my_printf("%d %d\n",sz[j],sz[j+1]);
 			l++;}}
 	if(l==0){
-		printf("empty");}
+		my_printf("empty");}
 	return 0;}
 
 

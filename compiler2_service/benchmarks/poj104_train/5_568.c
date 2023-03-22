@@ -5,9 +5,9 @@ int main_bench()
 	int i,n1,n2,p;
 	double rate,m=0.0;
 	char str1[501],str2[501];
-	scanf("%lf",&rate);
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%lf",&rate);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	n1=strlen(str1);
 	n2=strlen(str2);
 	p=0;
@@ -20,7 +20,7 @@ int main_bench()
 		    p=1;
 	   if(p==1)
 	   {
-		   printf("error");
+		   my_printf("error");
 		   break;
 	   }
 	   if(str1[i]==str2[i])
@@ -28,10 +28,10 @@ int main_bench()
 	   }
 	   if(p==0)
 	      if(m/n1>=rate)
-		   printf("yes");
-	      else printf("no");
+		   my_printf("yes");
+	      else my_printf("no");
 	}
-	else printf("error");
+	else my_printf("error");
 
 	return 0;
 }

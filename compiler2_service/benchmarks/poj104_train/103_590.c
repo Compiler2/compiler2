@@ -4,7 +4,7 @@ main_bench()
 {     int a,b,c,d;
       c=1;
       char str1[999],str2[999];
-      scanf("%s",str1);
+      my_scanf("%s",str1);
       a=strlen(str1);
       for(d=0;d<=a-1;d++)
       {
@@ -19,7 +19,7 @@ main_bench()
           c++;
           else
           {
-              printf("(%c,%d)",str2[b],c);
+              my_printf("(%c,%d)",str2[b],c);
               c=1;
           }
       }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 int x,y,i,j,k,max,n,t;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 i=1,j=1,k=1,max=0,t=0;
 for(i=1;i<=n;i++)
 {
-scanf("%d %d\n",&x,&y);
+my_scanf("%d %d\n",&x,&y);
 if(x>=90&&x<=140&&y>=60&&y<=90)
 {
 k=i;
@@ -23,6 +23,6 @@ k=i;
 j=i+1;
 }
 }
-printf("%d",max);
+my_printf("%d",max);
 return 0;
 }

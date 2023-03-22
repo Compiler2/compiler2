@@ -21,16 +21,16 @@ return(1);
 }
 int main_bench()
 {int i,j=0,m,n,a[1001]={0};
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 for(i=m;i<=n;i++)
 	{if(ss(i)*hw(i))
 	{a[j]=i;
 	j++;}}
 if(a[0]==0)
-	printf("no");
+	my_printf("no");
 else
 {
 for(i=0;i<j-1;i++)
-	printf("%d,",a[i]);
-printf("%d",a[j-1]);
+	my_printf("%d,",a[i]);
+my_printf("%d",a[j-1]);
 }}

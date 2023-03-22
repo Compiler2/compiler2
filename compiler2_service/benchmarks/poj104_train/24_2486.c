@@ -39,11 +39,11 @@ int min=word[0];
   
   
 for(i=0;i<max;i++)
-printf("%c",a[MAX][i]);
-printf("\n");
+my_printf("%c",a[MAX][i]);
+my_printf("\n");
 
 for(i=0;i<min;i++)
-printf("%c",a[MIN][i]);
+my_printf("%c",a[MIN][i]);
 
   
   

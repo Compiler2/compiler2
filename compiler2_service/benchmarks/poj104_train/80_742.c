@@ -11,8 +11,8 @@ int main_bench()
  int days,days1=0,days2=0; 
  int daytab[]={0,31,28,31,30,31,30,31,31,30,31,30,31}; 
  int i; 
- scanf("%d%d%d",&date1.year,&date1.month,&date1.day); 
- scanf("%d%d%d",&date2.year,&date2.month,&date2.day); 
+ my_scanf("%d%d%d",&date1.year,&date1.month,&date1.day); 
+ my_scanf("%d%d%d",&date2.year,&date2.month,&date2.day); 
  for(i=0;i<date1.month;i++)
  {
   days1 += daytab[i];
@@ -60,6 +60,6 @@ int main_bench()
 
  days=abs(days2-days1);
  
- printf("%d\n",days); 
+ my_printf("%d\n",days); 
  return 0;
 }

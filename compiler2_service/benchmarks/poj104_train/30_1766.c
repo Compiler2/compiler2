@@ -10,12 +10,12 @@ int have7(int i)
 int main_bench()
 {
     int n,i,s=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<=n;i++)
     {
         if ((i%7!=0)&&(have7(i)))
             s=s+i*i;
     }
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

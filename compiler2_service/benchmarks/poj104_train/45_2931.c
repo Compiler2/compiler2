@@ -22,5 +22,5 @@ main_bench()
 	       else continue;
 	     }
 	  }
-	  printf("%d",i);
+	  my_printf("%d",i);
 }

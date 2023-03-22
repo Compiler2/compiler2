@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int i,j,n,a[10009]={0},t,k,e=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&t,&k);
+		my_scanf("%d %d",&t,&k);
 		for(j=t+1;j<=k;j++){
 			a[j]++;
 		}
@@ -23,8 +23,8 @@ int main_bench()
 			e++;break;
 	}}
 	if(e!=0){
-		printf("no");
+		my_printf("no");
 	}
-	else printf("%d %d",t-1,k);
+	else my_printf("%d %d",t-1,k);
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	char c[52];
 	int d[52]={0},e[52]={0};
 	int j,i,m,n;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;i<26;i++)
 		c[i]=65+i;
 	for(i=26;i<52;i++)
@@ -35,7 +35,7 @@ int main_bench()
 			break;
 	}
 	if(i==52)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

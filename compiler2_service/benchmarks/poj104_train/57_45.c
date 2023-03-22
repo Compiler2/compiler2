@@ -6,10 +6,10 @@ int main_bench()
 	char input[100];
 	int n;
 	int len;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for(; n>0; n--){
-		scanf("%s", input);
+		my_scanf("%s", input);
 		len = strlen(input);
 		if ((input[len-2]=='e')&&(input[len-1]=='r'))
 			input[len-2] = 0;

@@ -5,7 +5,7 @@ int main_bench()
 	char a[300];
 	char b[200],c[200],d[200]={0};
 	int n1,n2,n3,i,j,k,result,p,w;
-	scanf("%s%s%s", a,b,c);
+	my_scanf("%s%s%s", a,b,c);
 	n1=strlen(a);
 	n2=strlen(b);
 	n3=strlen(c);
@@ -29,14 +29,14 @@ int main_bench()
 		}
 	}
 	if(k==10000)
-		printf("%s",a);
+		my_printf("%s",a);
 	else 
 	{
 		for(i=0;i<k;i++)
-			printf("%c", a[i]);
-		printf("%s",c);
+			my_printf("%c", a[i]);
+		my_printf("%s",c);
 		for(i=w;i<n1;i++)
-			printf("%c", a[i]);
+			my_printf("%c", a[i]);
 	}
 	return 0;
 }

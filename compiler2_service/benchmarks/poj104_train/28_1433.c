@@ -16,7 +16,7 @@ int main_bench()
 		}
 		else if(len2!=0)
 		{
-			printf("%d"",",len2);
+			my_printf("%d"",",len2);
 			i++;
 			len2=0;
 		}
@@ -26,7 +26,7 @@ int main_bench()
 		}
 		if(zfc[1][i+1]=='\0')
 		{
-			printf("%d",len2+1);
+			my_printf("%d",len2+1);
 			break;
 		}
 	}

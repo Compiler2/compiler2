@@ -48,7 +48,7 @@ return (t);
 int main_bench()
 {
 	int m,n,i,j,k,a[10000],b[10000],f,o,s,t;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	k=0;o=0;
 	for(i=m;i<=n;i++)
 	{   f=cont(i);
@@ -59,11 +59,11 @@ s=su(i);
 	}
 	o--;
 	if(o+1==0)
-		printf("no");
+		my_printf("no");
 	else {
 		for(i=0;i<o;i++)
-			printf("%d,",a[i]);
-		printf("%d",a[i]);
+			my_printf("%d,",a[i]);
+		my_printf("%d",a[i]);
 	}
 }
 

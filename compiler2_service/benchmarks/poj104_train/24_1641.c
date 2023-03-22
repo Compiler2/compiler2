@@ -23,7 +23,7 @@ int main_bench()
 	    if(strlen(len[k])<strlen(min))
 	    min=len[k];
      }
-		printf("%s\n%s",max,min);
+		my_printf("%s\n%s",max,min);
 		
 	return 0;
 }

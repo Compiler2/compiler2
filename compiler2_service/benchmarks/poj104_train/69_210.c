@@ -10,7 +10,7 @@ int main_bench()
 		b[i]='a';
 		c[i]='a';
 	}
-	scanf("%s\n%s",a,b);
+	my_scanf("%s\n%s",a,b);
 	d=strlen(a);
 	for(i=0;i<d/2;i++)
 	{
@@ -61,11 +61,11 @@ int main_bench()
 		}
 	}
 	if(k==-1)
-		printf("0");
+		my_printf("0");
 	else
 	{
 		for(i=k;i>=0;i--)
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 	}
 	return 0;
 }

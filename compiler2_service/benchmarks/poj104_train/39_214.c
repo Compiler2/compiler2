@@ -6,10 +6,10 @@ int main_bench()
 	int end[100],cls[100],esy[100],rmb[100];
 	int n,i,j,sum,temp2;
 	char a='Y';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",name[i],&end[i],&cls[i],&gan[i],&west[i],&esy[i]);
+		my_scanf("%s %d %d %c %c %d",name[i],&end[i],&cls[i],&gan[i],&west[i],&esy[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -39,8 +39,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",name[n-1]);
-	printf("%d\n",rmb[n-1]);
-	printf("%d\n",sum);
+	my_printf("%s\n",name[n-1]);
+	my_printf("%d\n",rmb[n-1]);
+	my_printf("%d\n",sum);
 }
 

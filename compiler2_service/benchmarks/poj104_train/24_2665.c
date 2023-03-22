@@ -8,11 +8,11 @@ int length[200]={0};
 int i,j,n,max=0,min=100,n1,n2;
 
 
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
 	for(j=0;;j++)
-	{scanf("%c",*(a+i)+j);
+	{my_scanf("%c",*(a+i)+j);
 	if(*(*(a+i)+j)==' '||*(*(a+i)+j)=='\n')
 	{*(*(a+i)+j)='\0';
 		break;}
@@ -35,7 +35,7 @@ for(i=0;i<n;i++)
 			n2=i;
 			}
 }
-  printf("%s\n%s",a+n1,a+n2);
+  my_printf("%s\n%s",a+n1,a+n2);
 
   return 0;
 }

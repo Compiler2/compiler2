@@ -27,20 +27,20 @@ main_bench()
 {
 int a[6],i,d;
 for(i=0;i<=5;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(i=0;i<=5;i++)
 {
 if(a[i]>0)
 {
 d=reverse(a[i]);
-    printf("%d\n",d);  
+    my_printf("%d\n",d);  
 }
 else if(a[i]==0)
-printf("0\n");
+my_printf("0\n");
 else
 {
 d=-reverse(-a[i]);
-printf("%d\n",d);
+my_printf("%d\n",d);
 }
 }
 getchar();

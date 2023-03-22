@@ -3,28 +3,28 @@
 int main_bench()
 {
 	int num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	if(num%3==0)
 	{
-		printf("3");
+		my_printf("3");
 		if(num%5==0)
 		{
-			printf(" %d",5);
+			my_printf(" %d",5);
 			if(num%7==0)
-				printf(" %d",7);
+				my_printf(" %d",7);
 		}
 		else if(num%7==0)
-			printf(" %d",7);
+			my_printf(" %d",7);
 	}
 	else if(num%5==0)
 		{
-			printf("%d",5);
+			my_printf("%d",5);
 			if(num%7==0)
-				printf(" %d",7);
+				my_printf(" %d",7);
 		}
 	else if(num%7==0)
-			printf("%d",7);
+			my_printf("%d",7);
 	else
-		printf("n");
+		my_printf("n");
 	return 0;
 }

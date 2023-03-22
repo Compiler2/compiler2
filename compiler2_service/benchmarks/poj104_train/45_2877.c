@@ -6,8 +6,8 @@ int main_bench()
 	int i,j,k,p;
 	char a[50],b[50];
 	char c[50][50];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	p=strlen(a);
 	for(i=0;i<50;i++)
 	{
@@ -19,7 +19,7 @@ int main_bench()
 	for(i=0;i<50;i++)
 	{
 		if(strcmp(a,c[i])==0)
-		{printf("%d",i);break;}
+		{my_printf("%d",i);break;}
     }
 
 }

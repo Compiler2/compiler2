@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,ls,num,z[100];
 	char s[200],x[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		ls=strlen(s);
 		for(j=0;j<ls-1;j++)
 		{
@@ -27,7 +27,7 @@ int main_bench()
 		   }
 	}
 	for(i=0;i<n;i++)
-	if(z[i]!=1)printf("%c\n",x[i]);
-	else printf("no\n");
+	if(z[i]!=1)my_printf("%c\n",x[i]);
+	else my_printf("no\n");
         return 0;
 }

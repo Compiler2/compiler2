@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[50],w[50];
 	char *p,*q;
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	p=s;
 	q=w;
 	do
@@ -13,7 +13,7 @@ int main_bench()
 		{
 			if(*p=='\0')
 			{
-				printf("%d",q-strlen(s)-w);
+				my_printf("%d",q-strlen(s)-w);
 				return;
 			}
 			else
@@ -26,7 +26,7 @@ int main_bench()
 		{
 			if(*p=='\0')
 			{
-				printf("%d",q-strlen(s)-w);
+				my_printf("%d",q-strlen(s)-w);
 				return;
 			}
 			else

@@ -6,9 +6,9 @@ int main_bench()
     double e,f,g,h;
     int sz[10000];
     int num[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
         if(sz[i]<19){
             a++;
             }else if(sz[i]<36){
@@ -23,18 +23,18 @@ int main_bench()
     f=1.0*b/n*100;
     g=1.0*c/n*100;
     h=1.0*d/n*100;
-    printf("1-18: ");
-    printf("%.2lf",e);
-    printf("%%\n");
-    printf("19-35: ");
-    printf("%.2lf",f);
-    printf("%%\n");
-    printf("36-60: ");
-    printf("%.2lf",g);
-    printf("%%\n");
-    printf("Over60: ");
-    printf("%.2lf",h);
-    printf("%%\n");
+    my_printf("1-18: ");
+    my_printf("%.2lf",e);
+    my_printf("%%\n");
+    my_printf("19-35: ");
+    my_printf("%.2lf",f);
+    my_printf("%%\n");
+    my_printf("36-60: ");
+    my_printf("%.2lf",g);
+    my_printf("%%\n");
+    my_printf("Over60: ");
+    my_printf("%.2lf",h);
+    my_printf("%%\n");
     return 0;
 }
 

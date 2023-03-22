@@ -4,13 +4,13 @@ int main_bench(){
 	int x[100],y[100];
 	int i,n,a=0;
 	double g=0,G;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(x[i]));
+		my_scanf("%d",&(x[i]));
 		a+=x[i];
 	}
     for(i=0;i<n;i++){
-		scanf("%d",&(y[i]));
+		my_scanf("%d",&(y[i]));
 	}
 	for(i=0;i<n;i++){
 		if(y[i]>=90&&y[i]<=100){
@@ -34,7 +34,7 @@ int main_bench(){
 		}
 	}
     G=g/a;
-    printf("%.2f",G);
+    my_printf("%.2f",G);
 
 
 	return 0;

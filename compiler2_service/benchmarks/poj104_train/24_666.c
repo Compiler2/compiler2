@@ -21,18 +21,18 @@ int main_bench(){
 			y=i;
 		}
 	}if(y==0){
-for(i=0;i<b[y];i++){printf("%c",a[i]);}                     
+for(i=0;i<b[y];i++){my_printf("%c",a[i]);}                     
 }else{
 	    for(i=b[y]-c[y]+1;i<b[y];i++){                  
-		printf("%c",a[i]);                          
+		my_printf("%c",a[i]);                          
 	    }}                                              
-printf("\n");
+my_printf("\n");
 if(x==0){
-             for(i=0;i<b[x];i++){printf("%c",a[i]);}
+             for(i=0;i<b[x];i++){my_printf("%c",a[i]);}
              
          }else{
 	    for(i=b[x]-c[x]+1;i<b[x];i++){
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}}
 	return 0;
 }

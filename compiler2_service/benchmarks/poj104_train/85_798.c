@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n,i,j,t,len[2000]={0};
 	char str[200][200];
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	for(i=0;i<n;i++)
 	{
 		gets(str[i]);
@@ -35,11 +35,11 @@ int main_bench()
 		}
 		if(t==0)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else if(t==1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

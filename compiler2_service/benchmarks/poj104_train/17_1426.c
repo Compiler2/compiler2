@@ -4,13 +4,13 @@ int main_bench()
 {
 	int h,i,j,k,l,m,n,len,left=0,t=0,c[101]={0};
 	char a[101],b[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int c[101]={0};
 		left=0;
 		t=0;
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		
 		
@@ -42,12 +42,12 @@ int main_bench()
 			}
 			
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 		for(h=0;h<len;h++)
 		{
-			printf("%c",b[h]);
+			my_printf("%c",b[h]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

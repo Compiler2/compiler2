@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[501],str1[501][5],str2[501];
 	int n,i,a,b,c,d,e,l,j,k,js[501];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	l=strlen(str);
 	for(i=0;i<l-n+1;i++)
@@ -30,10 +30,10 @@ int main_bench()
 				strcpy(str1[j],str1[j+1]);
 				strcpy(str1[j+1],str2);
 			}
-	if(js[0]==1) {printf("NO\n");}
+	if(js[0]==1) {my_printf("NO\n");}
 	else
 	{
-	printf("%d\n",js[0]);
+	my_printf("%d\n",js[0]);
 	for(i=0;i<l-n+1;i++)
 		if(js[i]==js[0]) puts(str1[i]);
 	}

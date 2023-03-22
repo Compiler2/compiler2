@@ -7,7 +7,7 @@ int main_bench()
  char sz[10000];
  char t;
  int d[300]={0};
- scanf("%s",sz);
+ my_scanf("%s",sz);
  k=strlen(sz)-1;
  for (i=0;sz[i]!='\0';i++){
        int great=0;
@@ -26,7 +26,7 @@ int main_bench()
 	   }
  }
  if (good==0){
-  printf("No");
+  my_printf("No");
  }
  else{
 	 for(;k>0;k--){
@@ -44,12 +44,12 @@ int main_bench()
      for (i=0;sz[i+1]!='\0';i++){
            if (d[i]!=0) 
 		   {
-               printf("%c=%d\n",sz[i],d[i]);
+               my_printf("%c=%d\n",sz[i],d[i]);
 		   }
      }
 	 k=strlen(sz)-1;
 	 if(d[k]!=0)
-	 printf("%c=%d",sz[k],d[k]);
+	 my_printf("%c=%d",sz[k],d[k]);
  }
  return 0;
 }

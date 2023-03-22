@@ -5,10 +5,10 @@ int main_bench()
 {
 	int a[100],b[100],n,i,j,p,q,d,x,y[100],k,s;
 	d=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0,j=0;i<n;i++,j++)
 	{
-		scanf("%d%d",&a[i],&b[j]);
+		my_scanf("%d%d",&a[i],&b[j]);
 	}
 	for(p=0;p<n;p++)
 	{
@@ -39,10 +39,10 @@ int main_bench()
 		}	
 		if(y[k]<a[i+1])
 		{
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d",x,y[n-1]);
+	my_printf("%d %d",x,y[n-1]);
 	return 0;
 }

@@ -12,7 +12,7 @@ int main_bench(){
     a=strlen(zfc[0]);
     b=strlen(zfc[1]);
     if(a!=b){
-        printf("error");
+        my_printf("error");
     }
     else{
         for(i=0;i<2;i++){
@@ -30,14 +30,14 @@ int main_bench(){
                 }
                 k=s/(a*1.0);
                 if(k>m){
-                    printf("yes");
+                    my_printf("yes");
                 }
                 else{
-                    printf("no");
+                    my_printf("no");
                 }
             }
             else{
-                printf("error");
+                my_printf("error");
             }
         }
         return 0;

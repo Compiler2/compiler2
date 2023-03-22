@@ -19,7 +19,7 @@ int main_bench()
 
 			if(p-strlen(t)!=str)
 				putchar(' ');
-			printf("%s",p1); 
+			my_printf("%s",p1); 
 			i=0;
 		}
 		else

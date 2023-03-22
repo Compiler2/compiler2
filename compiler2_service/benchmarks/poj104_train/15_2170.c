@@ -7,12 +7,12 @@ main_bench()
       int c[100][100]={0};
       int s[100]={0};
       int t[100]={0};
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
           for(j=0;j<n;j++)
           {   
-              scanf("%d",&c[i][j]);
+              my_scanf("%d",&c[i][j]);
           }
        } 
        for(i=0;i<n;i++)
@@ -70,7 +70,7 @@ main_bench()
       
       
       
-      printf("%d",counter1*counter2);
+      my_printf("%d",counter1*counter2);
 }
  
           

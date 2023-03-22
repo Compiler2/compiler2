@@ -10,7 +10,7 @@ int main_bench()
 	{
 		strcpy(lon,"Programming");
 		strcpy(sh,"C\0");
-    printf("%s\n%s",lon,sh);
+    my_printf("%s\n%s",lon,sh);
 	}
 	else{
 	for(i=0;i<=n;i++)
@@ -36,7 +36,7 @@ int main_bench()
 		if(strlen(b[i])<strlen(sh))
 			strcpy(sh,b[i]);
 	}
-	printf("%s\n%s\n",lon,sh);}
+	my_printf("%s\n%s\n",lon,sh);}
     return 0;  
 }
 

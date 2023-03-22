@@ -4,15 +4,15 @@ int main_bench()
 {
 	int n,i,sc,xuefen[10],S=0;
     float s=0,gpa,average;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&xuefen[i]);
+		my_scanf("%d",&xuefen[i]);
 		S=S+xuefen[i];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sc);
+		my_scanf("%d",&sc);
 	
 		    if(sc<=100&&sc>=90)
 			gpa=4.0;
@@ -37,7 +37,7 @@ int main_bench()
 			   s=s+xuefen[i]*gpa;
 	}
 	average=s/S;
-	printf("%.2f",average);
+	my_printf("%.2f",average);
 }
 
 

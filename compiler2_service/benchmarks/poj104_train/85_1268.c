@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[30];
 	int n,i,j,k;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(a);
@@ -24,9 +24,9 @@ int main_bench()
 			j++;
 		}
 		if(k)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

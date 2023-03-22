@@ -16,15 +16,15 @@ int main_bench()
 		fenmu[i]=fenmu[i-1]+fenmu[i-2];
 		a[i]=fenzi[i]/fenmu[i];
 	}
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(p=0;p<n;p++)
 	{
-		scanf("%d",&j);
+		my_scanf("%d",&j);
 		for(k=0;k<j;k++)
 		{
 			sum[p]+=a[k];
 		}
-		printf("%.3lf\n", sum[p]);
+		my_printf("%.3lf\n", sum[p]);
 	}
 	return 0;
 }

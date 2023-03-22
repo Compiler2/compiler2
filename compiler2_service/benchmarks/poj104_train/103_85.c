@@ -4,7 +4,7 @@ main_bench()
 {
       int l,i,j=0,c[26]={0};
       char a[10000],b[10000];
-      scanf("%s",a);
+      my_scanf("%s",a);
       l=strlen(a);
       if(a[0]>='a'&&a[0]<='z')
       a[0]=a[0]+'A'-'a';
@@ -18,13 +18,13 @@ main_bench()
                       c[j]=c[j]+1;
                       else
                       {
-                              printf("(%c,%d)",b[j],c[j]);
+                              my_printf("(%c,%d)",b[j],c[j]);
                               j=j+1;
                               b[j]=a[i];
                               c[j]=1;
                       }
       }
-      printf("(%c,%d)",b[j],c[j]);
+      my_printf("(%c,%d)",b[j],c[j]);
       getchar();
       getchar();
 }

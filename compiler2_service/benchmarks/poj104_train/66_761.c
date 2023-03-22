@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int year,mon,day,i,j,w;
-	scanf("%d%d%d",&year,&mon,&day);
+	my_scanf("%d%d%d",&year,&mon,&day);
 	w=(year-1)%7+(year-1)/4-(year-1)/100+(year-1)/400;
 	for(i=1;i<mon;i++){
 		if(i==2){
@@ -38,19 +38,19 @@ int main_bench(){
 	w=w+day;
 	j=w%7;
 	if(j==0){
-		printf("Sun.");
+		my_printf("Sun.");
 	}else if(j==1){
-		printf("Mon.");
+		my_printf("Mon.");
 	}else if(j==2){
-		printf("Tue.");
+		my_printf("Tue.");
 	}else if(j==3){
-		printf("Wed.");
+		my_printf("Wed.");
 	}else if(j==4){
-		printf("Thu.");
+		my_printf("Thu.");
 	}else if(j==5){
-		printf("Fri.");
+		my_printf("Fri.");
 	}else if(j==6){
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	return 0;
 }

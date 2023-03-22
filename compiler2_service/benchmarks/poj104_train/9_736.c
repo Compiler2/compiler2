@@ -8,9 +8,9 @@ int main_bench()
 		int age;
 	} a[100],m,k;
 	int i,j,n,num=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%s %d",a[i].id,&a[i].age);
+		my_scanf("%s %d",a[i].id,&a[i].age);
 	for (i=0;i<n;i++)
 	{
 		if(a[i].age>=60)
@@ -35,6 +35,6 @@ int main_bench()
 		}
 	}
 	for (i=0;i<n;i++)
-		printf("%s\n",a[i].id);
+		my_printf("%s\n",a[i].id);
 	return 0;
 }

@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(j=0;;j++)
 		{
-			scanf("%c",&c);
+			my_scanf("%c",&c);
 			if(c==' '||c==','||c=='\n')
 				break;
 			s[i][j]=c;
@@ -24,7 +24,7 @@ int main_bench()
 		strcpy(t,s[i]);}
 		if(c=='\n') break;
 	}
-	printf("%s\n",h);
-	printf("%s\n",t);
+	my_printf("%s\n",h);
+	my_printf("%s\n",t);
 	return 0;
 }

@@ -11,24 +11,24 @@ int main_bench()
 	int i,j,n,line;
 	struct word *p;
 	p=&word[0];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s",&p->w);
+		my_scanf("%s",&p->w);
 		p->a=strlen(p->w);
 		p++;
 	}
 	p=&word[0];
 	for(i=1;i<=n;i++){
 		if(i==1){
-			printf("%s",p->w);
+			my_printf("%s",p->w);
 			line=p->a;
 			p++;
 		}else if(line+p->a+1>80){
-			printf("\n%s",p->w);
+			my_printf("\n%s",p->w);
 			line=p->a;
 			p++;
 		}else{
-			printf(" %s",p->w);
+			my_printf(" %s",p->w);
 			line+=p->a+1;
 			p++;
 		}

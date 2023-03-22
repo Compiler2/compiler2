@@ -9,11 +9,11 @@ int main_bench()
 	float p[10];
 	int g[10];
 	int xuefen[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&xuefen[i]);
+		my_scanf("%d",&xuefen[i]);
 	for(i=0;i<n;i++){
-		scanf("%d",&g[i]);
+		my_scanf("%d",&g[i]);
 		if(g[i]>=90)
 			p[i]=4.0*xuefen[i];
 		else if(g[i]>=85)
@@ -39,6 +39,6 @@ int main_bench()
 		sumxuefen+=xuefen[i];
 	}
 	zong=(float)sump/sumxuefen;
-	printf("%.2f",zong);
+	my_printf("%.2f",zong);
 	return 0;
 }

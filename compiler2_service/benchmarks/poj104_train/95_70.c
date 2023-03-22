@@ -19,8 +19,8 @@ int main_bench()
 	}
 	int m;
 	m=strcmp(p,q);
-    if(m==0) printf("=");
-	else if(m>0) printf(">");
-	else if(m<0) printf("<");
+    if(m==0) my_printf("=");
+	else if(m>0) my_printf(">");
+	else if(m<0) my_printf("<");
 	return 0;
 }

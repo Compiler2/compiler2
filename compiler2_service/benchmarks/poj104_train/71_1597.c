@@ -62,14 +62,14 @@ int f(int year,int month,int day)
 main_bench()
 {
       int n,i;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
                       int year,month1,month2;
-                      scanf("%d %d %d",&year,&month1,&month2);
+                      my_scanf("%d %d %d",&year,&month1,&month2);
                       if((f(year,month1,1)-f(year,month2,1))%7==0||(f(year,month2,1)-f(year,month1,1))%7==0)
-                      printf("YES\n");
+                      my_printf("YES\n");
                       else
-                      printf("NO\n");
+                      my_printf("NO\n");
       }
 }

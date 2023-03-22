@@ -4,15 +4,15 @@ int F(int n);
 int main_bench()
 {
 	int n,m[999],j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%d",&m[j]);
+		my_scanf("%d",&m[j]);
 	}
 	j=0;
 	for(j=0;j<n;j++)
 	{
-		printf("%d\n",F(m[j]));
+		my_printf("%d\n",F(m[j]));
 	}
 	return 0;
 }

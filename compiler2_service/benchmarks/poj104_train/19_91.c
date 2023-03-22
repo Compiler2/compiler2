@@ -30,7 +30,7 @@ int main_bench()
 				strcat(str,str3);
 			else
 				strcat(str,str4);
-		printf("%s",str);
+		my_printf("%s",str);
 }
 
 

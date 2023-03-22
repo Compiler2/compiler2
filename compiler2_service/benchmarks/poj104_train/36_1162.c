@@ -4,10 +4,10 @@ int judge(char*a,char*b);
 int main_bench()
 {
 	char a[100]={'\0'},b[100]={'\0'};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	if(judge(a,b)==1)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 	return 0;
 }
 int judge(char*a,char*b)

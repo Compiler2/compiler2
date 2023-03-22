@@ -42,23 +42,23 @@ int main_bench()
     for(i=1; i<=12; i++)
         for(j=1; j<=i-1; j++)
             f2[i][j]=f2[j][i];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(i=1; i<=n; i++)
     {
-        scanf("%d %d %d", &year, &mon1, &mon2);
+        my_scanf("%d %d %d", &year, &mon1, &mon2);
         if(is_run(year)==1)
         {
             if(f2[mon1][mon2]==1)
-                printf("YES\n");
+                my_printf("YES\n");
             else
-                printf("NO\n");
+                my_printf("NO\n");
         }
         else
         {
             if(f1[mon1][mon2]==1)
-                printf("YES\n");
+                my_printf("YES\n");
             else
-                printf("NO\n");
+                my_printf("NO\n");
         }
     }
     return 0;

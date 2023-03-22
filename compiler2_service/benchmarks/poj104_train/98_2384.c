@@ -5,26 +5,26 @@ int main_bench()
 {
     int n, i, j, count;
     char a[50], b[50];
-    scanf("%d", &n);
-    scanf("%s", a);
-    printf("%s", a);
+    my_scanf("%d", &n);
+    my_scanf("%s", a);
+    my_printf("%s", a);
     count=strlen(a);
     for(i=2; i<=n; i++)
     {
-        scanf("%s", a);
+        my_scanf("%s", a);
         if(a[0]=='k')
-            printf("");
+            my_printf("");
         count=count+1+strlen(a);
         if(count<=80)
         {
-            printf(" %s", a);
+            my_printf(" %s", a);
         }
         else
         {
-            printf("\n%s", a);
+            my_printf("\n%s", a);
             count=strlen(a);
         }
     }
-    printf("\n");
+    my_printf("\n");
     return 0;
 }

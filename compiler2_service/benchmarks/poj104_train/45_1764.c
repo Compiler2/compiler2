@@ -5,7 +5,7 @@ int main_bench()
 	int n,i=0,j,m,good;
 	char a[50];
 	char b[50];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	n=strlen(a);
 	while (b[i]!='\0'){
         good=0;
@@ -15,7 +15,7 @@ int main_bench()
 			}
 		}
 		if (good==0){
-			printf("%d",j-m);
+			my_printf("%d",j-m);
 			break;
 		}
 		i++;

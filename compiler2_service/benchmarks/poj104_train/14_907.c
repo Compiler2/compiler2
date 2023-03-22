@@ -12,11 +12,11 @@ struct student
 int main_bench()
 {
 	int n,i,j,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student*stu=(struct student*)malloc(sizeof(struct student)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].ID,&stu[i].yuwen,&stu[i].shuxue);
+		my_scanf("%d %d %d",&stu[i].ID,&stu[i].yuwen,&stu[i].shuxue);
 		stu[i].zongfen=stu[i].yuwen+stu[i].shuxue;
 	}
 	for(i=1;i<4;i++)
@@ -35,7 +35,7 @@ int main_bench()
 		}
 	}
 	
-	printf("%d %d\n%d %d\n%d %d\n",stu[n-1].ID,stu[n-1].zongfen,stu[n-2].ID,stu[n-2].zongfen,stu[n-3].ID,stu[n-3].zongfen);
+	my_printf("%d %d\n%d %d\n%d %d\n",stu[n-1].ID,stu[n-1].zongfen,stu[n-2].ID,stu[n-2].zongfen,stu[n-3].ID,stu[n-3].zongfen);
 	return 0;
 }
 

@@ -4,7 +4,7 @@ main_bench()
 {
       int n,i,j,k;
       char a[90];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char s[2];
       gets(s);
       for(i=0;i<n;i++)
@@ -19,7 +19,7 @@ main_bench()
                                               continue;
                                               else 
                                               {
-                                                   printf("0\n");
+                                                   my_printf("0\n");
                                                    break;
                                               }
                                        }
@@ -28,14 +28,14 @@ main_bench()
                                             continue;
                                             else
                                             {
-                                                printf("0\n");
+                                                my_printf("0\n");
                                                 break;
                                             }
                                             }
                                        
                        }
                        if(k==j)
-                       printf("1\n");
+                       my_printf("1\n");
       }
       getchar();
       getchar();

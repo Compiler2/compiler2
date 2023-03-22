@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int x,y;int n1=0;int n2=0;int a[11];int i;
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	int m;
 	m=x;
 	while(m!=0)
@@ -21,7 +21,7 @@ int main_bench()
 		for(i=0;i<=n1-1;i++)
 		{
 			if(a[i]==m) 
-			{printf("%d",m);
+			{my_printf("%d",m);
 			return 0;}
 		}
 		if(m%2==0) m=m/2;

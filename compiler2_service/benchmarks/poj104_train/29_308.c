@@ -2,7 +2,7 @@
 
 int main_bench()
 { int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
  int sz[1000];
  double l[1000];
  double a=2.0000;
@@ -10,7 +10,7 @@ scanf("%d",&n);
   int i,j;
   double c;
   for(i=0;i<n;i++){
-	  scanf("%d",&sz[i]);
+	  my_scanf("%d",&sz[i]);
 	  l[i]=0;
   
   }
@@ -22,7 +22,7 @@ scanf("%d",&n);
    c=a;a=a+b;b=c;
   
   }
-  printf("%.3lf\n",l[i]);}
+  my_printf("%.3lf\n",l[i]);}
   return 0;
   
   }

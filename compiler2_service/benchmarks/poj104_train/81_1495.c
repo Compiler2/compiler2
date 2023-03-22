@@ -9,9 +9,9 @@ int main_bench()
 {
 	int x,y,i,j,a[5][5],c;
 	for(i=0;i<5;i++)
-		for(j=0;j<5;j++)scanf("%d",&a[i][j]);
-	scanf("%d%d",&x,&y);
-	if(!f(x,y)) printf("error");
+		for(j=0;j<5;j++)my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&x,&y);
+	if(!f(x,y)) my_printf("error");
 	else {
 		for(i=0;i<5;i++){
 			c=a[x][i];
@@ -20,10 +20,10 @@ int main_bench()
 		}
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				if(j==0)printf("%d",a[i][j]);
-				else printf(" %d",a[i][j]);
+				if(j==0)my_printf("%d",a[i][j]);
+				else my_printf(" %d",a[i][j]);
 			}
-			printf("\n");}
+			my_printf("\n");}
 	}
 }
 

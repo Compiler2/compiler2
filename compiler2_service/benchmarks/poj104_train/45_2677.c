@@ -2,8 +2,8 @@
 
 int main_bench(){
 	char s[100],w[10000];
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	int m,n,i,j,k,a;
     a=1;
 	m=strlen(s);
@@ -16,7 +16,7 @@ int main_bench(){
 						a=a+1;
 				}
 				if(a==m){
-					printf("%d",j);
+					my_printf("%d",j);
 					return 0;
 				}
 			}

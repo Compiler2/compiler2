@@ -4,7 +4,7 @@
 int main_bench()
 {
     char string[256], substring[256], replacement[256], buffer[256]={0}, result[256]={0};
-    scanf("%s %s %s", string, substring, replacement);
+    my_scanf("%s %s %s", string, substring, replacement);
     int mainlen=strlen(string), sublen=strlen(substring);
     int i;
     for (i=0;i<=mainlen-sublen;i++)
@@ -15,11 +15,11 @@ int main_bench()
    strncpy(result, string, i);
    strcat(result,replacement);
    strcat(result,(string+i+sublen));
-            printf("%s",result);
+            my_printf("%s",result);
             return 0;
         }
     }
- printf("%s",string);
+ my_printf("%s",string);
  return 0;
 }
 

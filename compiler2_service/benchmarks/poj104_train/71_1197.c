@@ -5,10 +5,10 @@ int main_bench()
 	 int total=0,y,m1,m2,i,j,n;
      int t1[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	 int t2[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
      for(i=0;i<n;i++)
 	 {
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		if((y%4==0 && y%100 !=0)||y%400==0)
 		{
 			if(m1>m2)
@@ -19,10 +19,10 @@ int main_bench()
 				  total+=t2[j-1];
 				}
 			    if(total%7==0){
-			      printf("YES\n");
+			      my_printf("YES\n");
 				}
 			    else 
-				  printf("NO\n");
+				  my_printf("NO\n");
 				
 			}
 			else if(m1<m2)
@@ -33,10 +33,10 @@ int main_bench()
 				  total+=t2[j-1];
 				}
 			    if(total%7==0){
-			      printf("YES\n");
+			      my_printf("YES\n");
 				}
 			    else 
-				  printf("NO\n");
+				  my_printf("NO\n");
 				
 			}
 		}
@@ -50,10 +50,10 @@ int main_bench()
 				  total+=t1[j-1];
 				}
 			    if(total%7==0){
-                  printf("YES\n");
+                  my_printf("YES\n");
 				}
 			    else {
-				  printf("NO\n");
+				  my_printf("NO\n");
 				}
 			}
 			else if(m1<m2)
@@ -64,10 +64,10 @@ int main_bench()
 				  total+=t1[j-1];
 				}
 			    if(total%7==0){
-			      printf("YES\n");
+			      my_printf("YES\n");
 				}
 			    else {
-				  printf("NO\n");
+				  my_printf("NO\n");
 				}
 			}
 		}

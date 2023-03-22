@@ -4,12 +4,12 @@ int main_bench()
 {
 	int i, j,d1,d2;
 	char str1[1000],str2[1000],c;
- scanf("%s", str1 );
-  scanf("%s", str2 );
+ my_scanf("%s", str1 );
+  my_scanf("%s", str2 );
   d1=strlen(str1);
   d2=strlen(str2);
   if (d1!=d2)
-	  printf("NO");
+	  my_printf("NO");
   else
   {
 	  
@@ -30,9 +30,9 @@ int main_bench()
  
  
 	if (strcmp(str1,str2)==0)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
   }
  
 

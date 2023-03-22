@@ -3,10 +3,10 @@
 int main_bench(){
 	int m,n,i,j,fenzi=2,fenmu=1;
 	double result[100]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		fenzi=2;
 		fenmu=1;
 		for(j=1;j<=n;j++){
@@ -17,7 +17,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",result[i]);
+		my_printf("%.3lf\n",result[i]);
 	}
 	return 0;
 }

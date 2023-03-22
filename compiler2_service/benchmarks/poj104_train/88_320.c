@@ -15,13 +15,13 @@ int main_bench()
 	{
 		if(c[i]=='1'||c[i]=='2'||c[i]=='3'||c[i]=='4'||c[i]=='5'||c[i]=='6'||c[i]=='7'||c[i]=='8'||c[i]=='9'||c[i]=='0')
 		{
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 		x=0;
 		}
 		else
 		{
 			if(x==0)
-			printf("\n");	
+			my_printf("\n");	
 			x=x+1;
 		}
 	}

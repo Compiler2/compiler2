@@ -13,10 +13,10 @@ int main_bench()
 		int jiangxuejin;
 	} stu[100];
 	int n,i,sum,max;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0,sum=0,max=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimochengji,&stu[i].banjipingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwenshu);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimochengji,&stu[i].banjipingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwenshu);
 		stu[i].jiangxuejin=0;
 		if(stu[i].qimochengji>80&&stu[i].lunwenshu>=1) stu[i].jiangxuejin=stu[i].jiangxuejin+8000;
 		if(stu[i].qimochengji>85&&stu[i].banjipingyi>80) stu[i].jiangxuejin=stu[i].jiangxuejin+4000;
@@ -26,7 +26,7 @@ int main_bench()
 		sum+=stu[i].jiangxuejin;
 		if(stu[max].jiangxuejin<stu[i].jiangxuejin) max=i;
 	}
-	printf("%s\n",stu[max].name);
-	printf("%d\n",stu[max].jiangxuejin);
-	printf("%d\n",sum);
+	my_printf("%s\n",stu[max].name);
+	my_printf("%d\n",stu[max].jiangxuejin);
+	my_printf("%d\n",sum);
 }

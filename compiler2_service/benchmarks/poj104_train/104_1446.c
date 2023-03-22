@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int exist=0,addressx[10]={0},addressy[10]={0},h,k,x,y,i=0,j=0;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	while (x>=1)
 	{
       addressx[i]=x;
@@ -26,7 +26,7 @@ int main_bench()
 		{
 			if (addressx[h]==addressy[k])
 			{
-				printf("%d",addressx[h]);
+				my_printf("%d",addressx[h]);
 				exist=1;
 				break;
 			}

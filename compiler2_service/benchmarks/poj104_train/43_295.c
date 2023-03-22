@@ -3,13 +3,13 @@
 int isprime(int p);
 int main_bench(){
 	int m,a,b,prime1,prime2;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(a=3;a<=m/2;a=a+2){
 		b=m-a;
 		prime1=isprime(a);
 		prime2=isprime(b);
 		if(prime1&&prime2)
-			printf("%d %d\n",a,b);
+			my_printf("%d %d\n",a,b);
 
 
 	}

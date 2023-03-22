@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,k,m,n,sum;
 	char a[110][110];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",a[i]);
-	scanf("%d",&m);
+		my_scanf("%s",a[i]);
+	my_scanf("%d",&m);
 	for(k=0;k<m-1;k++)
 	{
 		for(i=0;i<n;i++)
@@ -39,7 +39,7 @@ int main_bench()
 			if(a[i][j]=='@')
 				sum=sum+1;
 		}
-		printf("%d",sum);
+		my_printf("%d",sum);
 	
 	return 0;
 }

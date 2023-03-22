@@ -11,10 +11,10 @@ int main_bench()
 		char xibu;
 		int lunwen;
 		int sum;}s[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		s[i].sum=0;
-		scanf("%s %d %d %c %c %d",s[i].name,&s[i].qimo,&s[i].banji,&s[i].bangan,&s[i].xibu,&s[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",s[i].name,&s[i].qimo,&s[i].banji,&s[i].bangan,&s[i].xibu,&s[i].lunwen);
 	}
 		for(i=0;i<n;i++){
 		if((s[i].qimo>80)&&(s[i].lunwen>0))
@@ -33,8 +33,8 @@ int main_bench()
 				s[0].sum=s[i].sum;
 			s[0]=s[i];	}
 		}
-		printf("%s\n",s[0].name);
-		printf("%d\n",s[0].sum);
-		printf("%d",smax);
+		my_printf("%s\n",s[0].name);
+		my_printf("%d\n",s[0].sum);
+		my_printf("%d",smax);
 		return 0;
 	}

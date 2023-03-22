@@ -7,7 +7,7 @@ int main_bench(){
 	char jieguo[6][8];
 	char su[8];
 	for(j=0;j<6;j++){
-		scanf("%s",su);
+		my_scanf("%s",su);
 		c=strlen(su);
 		z=reverse(su);
 		switch(z){
@@ -49,7 +49,7 @@ int main_bench(){
 		}
 	}
 	for(j=0;j<6;j++){	
-		printf("%s\n",jieguo[j]);
+		my_printf("%s\n",jieguo[j]);
 	}
 	return 0;
 }

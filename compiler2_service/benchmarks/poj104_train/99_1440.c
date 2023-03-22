@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,age[101], a=0, b=0, c=0, d=0;
 	double af,bf,cf,df;
-	scanf ("%d", &n);
+	my_scanf ("%d", &n);
 	for (i=0;i<n; i++)
-		scanf ("%d", &age[i]);
+		my_scanf ("%d", &age[i]);
 
 	for (i=0; i<n; i++){
 		if (age[i]<=18) 
@@ -21,10 +21,10 @@ int main_bench()
 	bf=(double)100*b/n;
 	cf=(double)100*c/n;
 	df=(double)100*d/n;
-	printf("1-18: %.2lf%%", af);
-	printf ("\n19-35: %.2lf%%", bf);
-	printf ("\n36-60: %.2lf%%", cf);
-	printf ("\n60??: %.2lf%%", df);
+	my_printf("1-18: %.2lf%%", af);
+	my_printf ("\n19-35: %.2lf%%", bf);
+	my_printf ("\n36-60: %.2lf%%", cf);
+	my_printf ("\n60??: %.2lf%%", df);
 	return 0;
 }
 

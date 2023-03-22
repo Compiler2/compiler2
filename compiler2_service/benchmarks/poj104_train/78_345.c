@@ -27,10 +27,10 @@ int main_bench()
                l=a[3];
                if((((z+q)==(s+l))&&((z+l)>(s+q))&&((z+s)<q))==1)
                {
-               printf("l %d\n",l);
-               printf("q %d\n",q);
-               printf("z %d\n",z);
-               printf("s %d\n",s);
+               my_printf("l %d\n",l);
+               my_printf("q %d\n",q);
+               my_printf("z %d\n",z);
+               my_printf("s %d\n",s);
                }
               } 
        }
@@ -60,10 +60,10 @@ int main_bench()
                l=a[3];
                if((((z+q)==(s+l))&&((z+l)>(s+q))&&((z+s)<q))==1)
                {
-               printf("l %d\n",l);
-               printf("q %d\n",q);
-               printf("z %d\n",z);
-               printf("s %d\n",s);
+               my_printf("l %d\n",l);
+               my_printf("q %d\n",q);
+               my_printf("z %d\n",z);
+               my_printf("s %d\n",s);
                }
               } 
        }
@@ -93,10 +93,10 @@ int main_bench()
                l=a[3];
                if((((z+q)==(s+l))&&((z+l)>(s+q))&&((z+s)<q))==1)
                {
-                printf("l %d\n",l);
-               printf("q %d\n",q);
-               printf("z %d\n",z);
-               printf("s %d\n",s);
+                my_printf("l %d\n",l);
+               my_printf("q %d\n",q);
+               my_printf("z %d\n",z);
+               my_printf("s %d\n",s);
                }
               } 
        }
@@ -126,10 +126,10 @@ int main_bench()
                l=a[3];
                if((((z+q)==(s+l))&&((z+l)>(s+q))&&((z+s)<q))==1)
                {
-                printf("l %d\n",l);
-               printf("q %d\n",q);
-               printf("z %d\n",z);
-               printf("s %d\n",s);
+                my_printf("l %d\n",l);
+               my_printf("q %d\n",q);
+               my_printf("z %d\n",z);
+               my_printf("s %d\n",s);
                }
               } 
        }
@@ -159,10 +159,10 @@ int main_bench()
                l=a[3];
                if((((z+q)==(s+l))&&((z+l)>(s+q))&&((z+s)<q))==1)
                {
-               printf("l %d\n",l);
-               printf("q %d\n",q);
-               printf("z %d\n",z);
-               printf("s %d\n",s);
+               my_printf("l %d\n",l);
+               my_printf("q %d\n",q);
+               my_printf("z %d\n",z);
+               my_printf("s %d\n",s);
                }
               } 
        }

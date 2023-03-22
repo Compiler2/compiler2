@@ -15,21 +15,21 @@ int main_bench()
    for (i=82;i<=84;i++) a[i]=3.3;
    for (i=85;i<=89;i++) a[i]=3.7;
    for (i=90;i<=100;i++) a[i]=4;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    sumx=0;sumj=0;
    for (i=0;i<n;i++) 
-     {scanf("%d",&b[i]);
+     {my_scanf("%d",&b[i]);
       sumx=sumx+b[i];               
                      
      }
    for (i=0;i<n;i++)
-   {scanf("%d",&x);
+   {my_scanf("%d",&x);
     sumj=sumj+a[x]*b[i];   
        
    } 
    
    jd=sumj/sumx;
-   printf("%.2f",jd);
+   my_printf("%.2f",jd);
    return 0; 
     
     

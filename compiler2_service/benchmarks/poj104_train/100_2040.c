@@ -4,14 +4,14 @@ int main_bench()
 {
 	char arrey[300];
 	int k=0,i=0,num=0,j=0,n=0;
-	scanf("%s",arrey);
+	my_scanf("%s",arrey);
 	n=strlen(arrey);
 	for(i=0;i<n;i++)
 	{
 		if(arrey[i]<'A'||(arrey[i]>'Z'&&arrey[i]<'a')||arrey[i]>'z')
 			num++;
 		if(num==n)
-			printf("No\n");
+			my_printf("No\n");
 	}
 	num=0;
 	for(j=65;j<91;j++)
@@ -22,7 +22,7 @@ int main_bench()
 			num++;
 		}
 		if(num!=0)
-		printf("%c=%d\n",j,num);
+		my_printf("%c=%d\n",j,num);
 		num=0;
 	}
 	for(j=97;j<123;j++)
@@ -33,7 +33,7 @@ int main_bench()
 			num++;
 		}
 		if(num!=0)
-		printf("%c=%d\n",j,num);
+		my_printf("%c=%d\n",j,num);
 		num=0;
 	}
 	return 0;

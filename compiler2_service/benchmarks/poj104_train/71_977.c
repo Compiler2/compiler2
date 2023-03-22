@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a,b,c,sum;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		if((a%4==0&&a%100!=0)||a%400==0)
 		{
 			if(b<c)
@@ -22,9 +22,9 @@ int main_bench()
 						sum=sum+29;
 				}
 				if(sum%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-				    printf("NO\n");
+				    my_printf("NO\n");
 			}
 			else if(b>c)
 			{
@@ -38,12 +38,12 @@ int main_bench()
 						sum=sum+29;
 				}
 				if(sum%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-				    printf("NO\n");
+				    my_printf("NO\n");
 			}
 			else if(b==c)
-				printf("YES\n");
+				my_printf("YES\n");
 		}
 		else 
 		{
@@ -59,9 +59,9 @@ int main_bench()
 						sum=sum+28;
 				}
 				if(sum%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
                 else
-				    printf("NO\n");
+				    my_printf("NO\n");
 			}
             else if(b>c)
 			{
@@ -75,12 +75,12 @@ int main_bench()
 						sum=sum+28;
 				}
 				if(sum%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
                 else
-				    printf("NO\n");
+				    my_printf("NO\n");
 			}
 			else if(b==c)
-				printf("YES\n");
+				my_printf("YES\n");
 		}
 	}
 	return 0;

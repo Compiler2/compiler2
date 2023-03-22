@@ -7,11 +7,11 @@ int main_bench()
 	char c;
 	for(i=0;i<=300;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c);
 		if(c!=',')break;
 	}
-	if(i==0){printf("No\n");goto a;}
+	if(i==0){my_printf("No\n");goto a;}
 	else
 	{
 	for(j=i;j>=1;j--)
@@ -24,13 +24,13 @@ int main_bench()
 			}
 	}
 	if(a[0]==a[i])
-	{printf("No\n");goto a;}
+	{my_printf("No\n");goto a;}
 	else 
 		for(j=0;j<=i;j++)
 	{
 		if(a[j+1]<a[j])
 		{
-			printf("%d\n",a[j+1]);
+			my_printf("%d\n",a[j+1]);
 			break;
 		}
 	}

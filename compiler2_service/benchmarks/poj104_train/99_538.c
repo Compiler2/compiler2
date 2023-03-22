@@ -5,10 +5,10 @@
 	 int n,i;
 	 int a[100],b[4]={0,0,0,0};
 	 double c[4];
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 for (i=0;i<n;i++)
 	 {
-		 scanf("%d",&a[i]);
+		 my_scanf("%d",&a[i]);
 	 if (a[i]>=1 && a[i]<=18)
 		 b[0]++;
 	 else if (a[i]>=19 && a[i]<=35)
@@ -23,7 +23,7 @@
 		 
 		 c[i]=(double)b[i]/n*100;
 	 }
-	 printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",c[0],c[1],c[2],c[3]);
+	 my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",c[0],c[1],c[2],c[3]);
 	 return 0;
  }
 

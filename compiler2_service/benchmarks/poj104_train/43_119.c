@@ -16,13 +16,13 @@ int prime(int n)
 main_bench()
 {
     int n,i,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=3;i<=n/2;i+=2)
     {
         a=prime(i);
         b=prime(n-i);
         if(a==1&&b==1)
-            printf("%d %d\n",i,n-i);
+            my_printf("%d %d\n",i,n-i);
     }
     getchar();
     getchar();

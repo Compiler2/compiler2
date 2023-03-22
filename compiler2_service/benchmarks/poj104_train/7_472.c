@@ -37,6 +37,6 @@ int main_bench(){
             }
         }
     }
-    printf(ys);
+    my_printf(ys);
     return 0;
 }

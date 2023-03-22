@@ -8,7 +8,7 @@ int main_bench()
    int matrix[5][5];
    for( i = 0; i < 5; i++ )
 	   for( j = 0; j < 5; j++ )
-		   scanf( "%d", &matrix[i][j] );
+		   my_scanf( "%d", &matrix[i][j] );
 
    for( i = 0; i < 5; i++ )
    {
@@ -44,14 +44,14 @@ int main_bench()
    }
 
    if( len == 0 )
-	   printf( "not found\n" );
+	   my_printf( "not found\n" );
    else
    {
 	   for( i = 0; i < len; i++ )
 	   {
 		   int line = record[i];
 		   int column = lineMax[record[i]];
-		   printf("%d %d %d\n",(line+1),(column+1),matrix[line][column]);
+		   my_printf("%d %d %d\n",(line+1),(column+1),matrix[line][column]);
 	   }
    }
    return 0;

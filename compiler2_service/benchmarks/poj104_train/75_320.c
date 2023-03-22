@@ -7,14 +7,14 @@ int main_bench()
 	do
 	{
 		i=i+1;
-		scanf("%d%c",&s1[i],&c);
+		my_scanf("%d%c",&s1[i],&c);
 	}
 	while(c==',');
 	m=i;
 	do
 	{
 		j=j+1;
-		scanf("%d%c",&s2[j],&c);
+		my_scanf("%d%c",&s2[j],&c);
 	}
 	while(c==',');
 	n=j;
@@ -45,7 +45,7 @@ int main_bench()
 		if(a[t]>max1)
 			max1=a[t];
 	}
-	printf("%d %d",m,max1);
+	my_printf("%d %d",m,max1);
 }
 
 

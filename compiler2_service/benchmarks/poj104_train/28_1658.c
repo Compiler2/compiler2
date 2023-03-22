@@ -26,9 +26,9 @@ int main_bench()
 	{
 		if(num[j]!=0)
 		{
-		    printf("%d,",num[j]);
+		    my_printf("%d,",num[j]);
 		}
 	}
-	printf("%d",num[x]+1);
+	my_printf("%d",num[x]+1);
 	return 0;
 }

@@ -9,12 +9,12 @@ for(int i=2;i<21;i++){
         a[i]=a[i-1]+a[i-2];
         }
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int j=0;j<n;j++){
-    scanf("%d",&p);
-    printf("%d\n",a[p]);
+    my_scanf("%d",&p);
+    my_printf("%d\n",a[p]);
 }
         int hou;
-        scanf("%d",&hou);
+        my_scanf("%d",&hou);
 return 0;
 }

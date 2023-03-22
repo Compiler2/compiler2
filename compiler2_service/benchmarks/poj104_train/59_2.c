@@ -6,9 +6,9 @@ char a[100][100];
 int main_bench()
 {
     int m, n, i, j, k, count = 0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i = 0; i < n; i++) {
-       scanf("%s", a[i]);
+       my_scanf("%s", a[i]);
        for (j = 0; j < n; j++) {
            switch (a[i][j]) {
                case '@': a[i][j] = 1; count++; break;
@@ -17,7 +17,7 @@ int main_bench()
            }
        }
     }
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for (k = 1; k < m; k++) {
         for (i = 0; i < n; i++) {
             for (j = 0; j < n; j++) {
@@ -42,6 +42,6 @@ int main_bench()
             }
         }
     }
-    printf("%d", count);
+    my_printf("%d", count);
     return 0;
 }

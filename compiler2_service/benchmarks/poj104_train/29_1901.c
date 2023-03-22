@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[1000], b[1000], d[1000], m, i, j, t;
 	float c[1000], sum;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	a[1]=1;
 	a[2]=2;
 	b[1]=2;
@@ -12,7 +12,7 @@ int main_bench()
 	for(j=1;j<=m;j++)
 	{
         t=d[j];
-		scanf("%d", &t);
+		my_scanf("%d", &t);
 		sum=0;
 		for(i=1;i<=t;i++)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 		c[i]=(1.0*b[i])/a[i];
 		sum=sum+c[i];
 		}
-		printf("%.3f\n", sum);
+		my_printf("%.3f\n", sum);
 	}
 		
 }

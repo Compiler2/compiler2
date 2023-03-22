@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[400],small=0,smalln=0,big=0,bign=0,i;
 	float sum=0,average,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	average=sum/n;
@@ -32,25 +32,25 @@ int main_bench()
 	}
 	if(smalln==1&&bign==0)
 	{
-		printf("%d",small);
+		my_printf("%d",small);
 	}
 	if(smalln==0&&bign==1)
 	{
-		printf("%d",big);
+		my_printf("%d",big);
 	}
 	if(smalln==1&&bign==1)
 	{
 		if((big-average)>(average-small))
 		{
-			printf("%d",big);
+			my_printf("%d",big);
 		}
 		else if((big-average)<(average-small))
 		{
-			printf("%d",small);
+			my_printf("%d",small);
 		}
 		else
 		{
-			printf("%d,%d",small,big);
+			my_printf("%d,%d",small,big);
 		}
 	}
 }

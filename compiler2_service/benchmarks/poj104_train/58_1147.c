@@ -5,7 +5,7 @@ main_bench()
 int a,i,j,x,y=0,z;
 char s[81];
 char c;
-scanf("%d",&a);
+my_scanf("%d",&a);
 getchar();
 for (i=1;i<=a;i++)
 {
@@ -26,6 +26,6 @@ for (i=1;i<=a;i++)
        }
       
     }
-printf("%d\n",x);
+my_printf("%d\n",x);
  }
 }

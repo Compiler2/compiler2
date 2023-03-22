@@ -13,13 +13,13 @@ int main_bench()
 {
 int n,i,a[99];
 double ccc;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%d",&a[i]);
+{my_scanf("%d",&a[i]);
 }
 for(i=0;i<n;i++)
 {ccc=cao(a[i]);
-printf("%.3lf\n",ccc);
+my_printf("%.3lf\n",ccc);
 }
 return 0;
 }

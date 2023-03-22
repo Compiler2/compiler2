@@ -11,7 +11,7 @@ int ip(int x){
 int main_bench(){
 	int a,i,j,t,e,n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	
 	
@@ -19,7 +19,7 @@ int main_bench(){
 		
 		for(j=3;j<=i/2;j+=2){
 			if(ip(j)&&ip(i-j)){
-				printf("%d=%d+%d\n",i,j,i-j);
+				my_printf("%d=%d+%d\n",i,j,i-j);
 			j=i;
 			}
 		}

@@ -5,12 +5,12 @@ int main_bench()
 	int num[52]={0};
 	char  s[50],ss[50];
 	int l,ll,i,flag;
-	scanf("%s",s);
-	scanf("%s",ss);
+	my_scanf("%s",s);
+	my_scanf("%s",ss);
 	l=strlen(s);
 	ll=strlen(ss);
 	if(l!=ll)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<l;i++)
@@ -35,9 +35,9 @@ int main_bench()
 				break;
 			}
 		if(flag)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }
 

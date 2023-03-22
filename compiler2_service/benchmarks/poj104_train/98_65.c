@@ -5,21 +5,21 @@ int main_bench()
 {
   char a[50];
   int n,i,j,line,l;
-  scanf("%d",&n);
-  scanf("%s",a);
-  printf("%s",a);
+  my_scanf("%d",&n);
+  my_scanf("%s",a);
+  my_printf("%s",a);
   line=strlen(a);
   for(i=2;i<=n;i++)
   {
-      scanf("%s",a);
+      my_scanf("%s",a);
       line+=strlen(a)+1;
       if(line<=80)
       {
-          printf(" %s",a);
+          my_printf(" %s",a);
       }
       else
       {
-          printf("\n%s",a);
+          my_printf("\n%s",a);
           line=strlen(a);
       }
   }

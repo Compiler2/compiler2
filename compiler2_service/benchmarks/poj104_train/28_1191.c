@@ -16,6 +16,6 @@ int main_bench()
 		}
 		for(x=0;x<=j-1;x++)
 			if(a[x]!=0)
-			printf("%d,",a[x]);
-		    printf("%d",a[j]);
+			my_printf("%d,",a[x]);
+		    my_printf("%d",a[j]);
 }

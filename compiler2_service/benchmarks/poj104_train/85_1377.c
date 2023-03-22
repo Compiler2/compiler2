@@ -4,11 +4,11 @@
 
 int main_bench(){
 	int n,i,j=0,m=1;	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	char word[10000][22];
 	for(i=0;i<n;i++){
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 	}
 	for(i=0;i<n;i++){
 		j=0;
@@ -28,9 +28,9 @@ int main_bench(){
 			
 		}
 		if(m==1){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

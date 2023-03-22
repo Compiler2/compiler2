@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d" , &n);
+	my_scanf("%d" , &n);
 	float sz[100][2];
 	float q[100];
 
@@ -14,7 +14,7 @@ int main_bench()
 	{
 		for(k=0;k<2;k++)
 		{
-			scanf("%f" , &sz[i][k]);
+			my_scanf("%f" , &sz[i][k]);
 		}
 		q[i]=0;
 		q[i] = sz[i][1] / sz[i][0];
@@ -23,15 +23,15 @@ int main_bench()
 	{
 		if(q[0]-q[i]>0.05f)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if(q[i]-q[0]>0.05f)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		if((q[0]-q[i]<=0.05f)&&(q[i]-q[0]<=0.05f))
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

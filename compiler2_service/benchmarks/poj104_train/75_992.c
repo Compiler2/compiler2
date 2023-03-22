@@ -16,7 +16,7 @@ int main_bench()
 	{	
 		while(1)
 		{
-			scanf("%c",&p);
+			my_scanf("%c",&p);
 			if(p == '\n' || p == ',') 
 			{
 				
@@ -56,7 +56,7 @@ int main_bench()
 		if(max < flag[i])
 		max = flag[i] ; 
 	}
-	printf("%d %d\n",n ,max);
+	my_printf("%d %d\n",n ,max);
 	
 	return 0;
 }

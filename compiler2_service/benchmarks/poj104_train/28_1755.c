@@ -20,9 +20,9 @@ int main_bench(){
 	for(i=0;i<n;i++){
 		shuzu[i]=strlen(b[i]);
 	}
-	printf("%d",shuzu[0]);
+	my_printf("%d",shuzu[0]);
 	for(i=1;i<n;i++){
-		printf(",%d",shuzu[i]);
+		my_printf(",%d",shuzu[i]);
 	}
 	return 0;
 }

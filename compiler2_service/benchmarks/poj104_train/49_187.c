@@ -19,7 +19,7 @@ int main_bench()
 			{
 				for(m=0;m<i;m++)
 					putchar(a[j+m]);
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

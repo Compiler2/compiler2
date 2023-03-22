@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[10],b[10];
 	int numa[130]={0},numb[130]={0},i,flag=1;
-	scanf("%s %s",&a,&b);
+	my_scanf("%s %s",&a,&b);
 	for(i=0;i<(int)strlen(a);i++)
 		numa[a[i]]++;
 	for(i=0;i<(int)strlen(b);i++)
@@ -16,7 +16,7 @@ int main_bench()
 			break;
 		}
 		if(flag)
-			printf("YES");
-		else printf("NO");
+			my_printf("YES");
+		else my_printf("NO");
 		return 0;
 }

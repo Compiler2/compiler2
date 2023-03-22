@@ -4,19 +4,19 @@ int main_bench()
 {
 	int i,j,la,lb;
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
 	if(la!=lb)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	for(i=0;i<la;i++)
 	{
 		if(strchr(b,a[i])==0)
 		{
-			printf("NO");
+			my_printf("NO");
 			return 0;
 		}
 		else
@@ -34,7 +34,7 @@ int main_bench()
 
 	}
 	
-	printf("YES");
+	my_printf("YES");
 	return 0;
 }
 

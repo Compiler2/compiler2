@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n;
 	int v(int a);
-	scanf("%d",&n);
-	printf("%d",v(n));
+	my_scanf("%d",&n);
+	my_printf("%d",v(n));
 }
   int v(int a)
   {

@@ -2,7 +2,7 @@
 
 int main_bench(){
 int w,sz[12],m,i;
-scanf("%d\n",&w);
+my_scanf("%d\n",&w);
 sz[1]=w+12;
 sz[2]=w+12+31;
 sz[3]=w+12+31+28;
@@ -18,7 +18,7 @@ sz[12]=w+12+31+28+31+30+31+30+31+31+30+31+30;
 for(i=1;i<=12;i++){
 m=sz[i]%7;
 if(m==5){
-printf("%d\n",i);
+my_printf("%d\n",i);
 }
 }
 return 0;

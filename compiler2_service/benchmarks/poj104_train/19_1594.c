@@ -45,12 +45,12 @@ int main_bench()
 		{
 			for(j=0;j<l;j++)
 			{
-				printf("%c",b[j]);
+				my_printf("%c",b[j]);
 			}
 		}
 		if(k[i]==0)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	

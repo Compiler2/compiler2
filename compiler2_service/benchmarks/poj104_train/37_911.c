@@ -9,9 +9,9 @@ int main_bench()
 	int count=0;
 	int k=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",ltr);
+		my_scanf("%s",ltr);
 		for(p=ltr;p<ltr+strlen(ltr);p++){
 			for(t=ltr;t<ltr+strlen(ltr);t++){
 				if(*t==*p){
@@ -20,13 +20,13 @@ int main_bench()
 			}
 			if(count==1){
 				k++;
-				printf("%c\n",*p);
+				my_printf("%c\n",*p);
 				break;
 			}
 			count=0;
 		}
 		if(k==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		count=0;
 		k=0;

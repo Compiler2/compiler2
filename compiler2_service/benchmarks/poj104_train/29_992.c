@@ -5,13 +5,13 @@ int main_bench(){
 	int j,i,n,m;
     double result;
 
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for (j=0;j<m;j++){
 	result=0;	
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=3;i<n+3;i++){
 		result += F(i)/F(i-1);}
-	printf("%.3lf\n", result);}
+	my_printf("%.3lf\n", result);}
 	return 0;
 }
 double F(int n){

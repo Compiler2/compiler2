@@ -5,9 +5,9 @@ int main_bench()
  int n,i,j,k;
  int age[1000],a[1000],t;
  char ID[1000][1000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-  scanf("%s %d",&ID[i],&age[i]);
+  my_scanf("%s %d",&ID[i],&age[i]);
  j=n-1;
  k=0;
  for(i=n-1;i>=0;i--)
@@ -40,7 +40,7 @@ int main_bench()
   }
  }
  for(i=0;i<n;i++)
-  printf("%s\n",ID[a[i]]);
+  my_printf("%s\n",ID[a[i]]);
  getchar();
  getchar();
  getchar();

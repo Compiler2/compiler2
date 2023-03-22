@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j,a[400],b[400]={0},*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=a;
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
-	printf("%d",*p);
+		my_scanf("%d",p+i);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
 	{
 		for(j=i-1;j>=0;j--)
@@ -17,7 +17,7 @@ int main_bench()
 			
 		}
 		if(b[i]==i)
-		printf(",%d",*(p+i));
+		my_printf(",%d",*(p+i));
 		
 	}
 }

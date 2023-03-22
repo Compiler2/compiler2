@@ -4,7 +4,7 @@ int main_bench(){
 	int i,len1=0,len2=0,len=0,flag=0;
 	char dna1[501],dna2[501];
 	double rate,ra;
-	scanf("%lf%s%s",&rate,dna1,dna2);
+	my_scanf("%lf%s%s",&rate,dna1,dna2);
 	for(i=0;dna1[i];i++){
 		if((dna1[i]=='A')||(dna1[i]=='T')||(dna1[i]=='G')||(dna1[i]=='C')){
 			len1++;
@@ -22,7 +22,7 @@ int main_bench(){
 		}	
 	}
 	if((len1!=len2)||flag==1){
-		printf("error");	
+		my_printf("error");	
 	}else{
 		for(i=0;i<len1;i++){
 			if(dna1[i]==dna2[i]){
@@ -31,9 +31,9 @@ int main_bench(){
 		}
 		ra=(double)len/len1;
 		if(ra>rate){
-			printf("yes");	
+			my_printf("yes");	
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}	
 	return 0;	

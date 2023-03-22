@@ -6,7 +6,7 @@ int main_bench()
 	int a[10000];
 	int d[10000]={0};
 	int f[10000]={0};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for (i=m,k=0;i<=n;i++)
 	{
 		e=i;
@@ -43,9 +43,9 @@ int main_bench()
 	r=r-1;
 	for(i=0;i<=r;i++)
 	{
-		if (f[i+1]!=0) printf("%d,",f[i]);
-		if (f[i+1]==0&&f[i]!=0) printf("%d\n",f[i]);
+		if (f[i+1]!=0) my_printf("%d,",f[i]);
+		if (f[i+1]==0&&f[i]!=0) my_printf("%d\n",f[i]);
 	}
-	if (f[0]==0) printf("no\n");
+	if (f[0]==0) my_printf("no\n");
 	return 0;
 }

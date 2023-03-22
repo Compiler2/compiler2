@@ -5,9 +5,9 @@ int main_bench()
 int n,k,i,m,c;
 int num[500];
 int nu[500];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d",&num[i]);
+	my_scanf("%d",&num[i]);
 }
 k=0;
 i=0;
@@ -29,8 +29,8 @@ for(i=0;i<=k;i++){
 	}
 }
 for(i=k;i>0;i--){
-	printf("%d,",nu[k-i]);
+	my_printf("%d,",nu[k-i]);
 }
-printf("%d",nu[k]);
+my_printf("%d",nu[k]);
 	return 0;
 }

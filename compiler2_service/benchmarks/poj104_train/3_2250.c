@@ -2,9 +2,9 @@
 
 int main_bench()
 {int n,k,i,j,a[1009],t,l;
-scanf("%d%d",&n,&k);t=0;l=0;
+my_scanf("%d%d",&n,&k);t=0;l=0;
 for(i=1;i<=n;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(i=1;i<=n;i++)
 {
 	for(j=i+1;j<=n;j++)
@@ -19,7 +19,7 @@ t=t+1;
 }
 }
 if(t==n*(n-1)/2)
-printf("no");
+my_printf("no");
 else if(l>=1)
-printf("yes");
+my_printf("yes");
 }

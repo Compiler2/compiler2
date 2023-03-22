@@ -17,10 +17,10 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	if(define(m,n)==1)
 	{
 		for(i=0;i<=4;i++)
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		for(i=0;i<=3;i++)
 		{
-			printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
-		}printf("%d %d %d %d %d",a[4][0],a[4][1],a[4][2],a[4][3],a[4][4]);
-	}else printf("error");
+			my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+		}my_printf("%d %d %d %d %d",a[4][0],a[4][1],a[4][2],a[4][3],a[4][4]);
+	}else my_printf("error");
 }

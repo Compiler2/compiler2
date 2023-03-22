@@ -13,9 +13,9 @@ int main_bench(){
 int n,m,i,sum=0;
 int money[300];
 char a[20];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-  scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xisheng,&stu[i].lunwen);
+  my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xisheng,&stu[i].lunwen);
 }
 for(i=0;i<n;i++){
 		money[i]=0;
@@ -45,7 +45,7 @@ for(i=1;i<n;i++){
 		strcpy(a,stu[i].name);
 	}
 }
-printf("%s\n%d\n%d\n",a,m,sum);
+my_printf("%s\n%d\n%d\n",a,m,sum);
 
 return 0;
 }

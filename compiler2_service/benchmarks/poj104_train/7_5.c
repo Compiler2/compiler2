@@ -4,7 +4,7 @@ int main_bench()
 {
 	int sl,al,i,j,flag=0;
 	char s[256],a[256],b[256];
-	scanf("%s %s %s",s,a,b);
+	my_scanf("%s %s %s",s,a,b);
 	sl=strlen(s);
 	al=strlen(a);
 	for(i=0;i<sl;i++)
@@ -23,7 +23,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 }
 
 		

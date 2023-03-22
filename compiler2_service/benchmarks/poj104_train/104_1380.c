@@ -22,7 +22,7 @@ int main_bench()
 {
 	int point(int num);
 	int x,y;
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	int X[11]={x},Y[11]={y},i,j;
 	for(i=1;i<11;i++)
 	{
@@ -36,7 +36,7 @@ int main_bench()
 		{
 			if(X[i]==Y[j])
 			{
-				printf("%d\n",X[i]);
+				my_printf("%d\n",X[i]);
 				signal=1;
 				break;
 			}

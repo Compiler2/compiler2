@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n,i,j,k,s,p[999]={0},m,w[99],x,l;
 	char a[999];
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	l=strlen(a);
 	for(k=0;k<n;k++)
 	{
@@ -41,18 +41,18 @@ int main_bench()
 	}
 	if(m>=1)
 	{
-	printf("%d\n",m+1);
+	my_printf("%d\n",m+1);
 	for(i=0;i<=l-n;i++)
 	{
 		if(p[i]==m)
 		{
 			for(k=0;k<n;k++)
 			{
-				printf("%c",a[i+k]);
+				my_printf("%c",a[i+k]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

@@ -20,21 +20,21 @@ int main_bench()
 	int row,col;
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-			scanf("%d",&matrix[row][col]);
+			my_scanf("%d",&matrix[row][col]);
 		}
 	}
 	int n,m;
-	scanf("%d %d",&n, &m);
+	my_scanf("%d %d",&n, &m);
 	int judge;
 	judge=exchange(matrix,n,m);
 	if(judge==0)
-		printf("error");
+		my_printf("error");
 	if(judge==1){
 		for(row=0;row<5;row++){
 			for(col=0;col<4;col++){
-				printf("%d ",matrix[row][col]);
+				my_printf("%d ",matrix[row][col]);
 			}
-			printf("%d\n",matrix[row][4]);
+			my_printf("%d\n",matrix[row][4]);
 		}
 	}	
 	return 0;

@@ -5,9 +5,9 @@ int main_bench()
 {
   int n,i,j;
   int m,k;
-  scanf("%d%d",&n,&m);
+  my_scanf("%d%d",&n,&m);
   for(i=1;i<=n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
   for(i = m;i >= 1;i --)
   {
      k = a[n - i + 1];      
@@ -16,7 +16,7 @@ int main_bench()
     a[m - i + 1] = k;        
   }
   for(i = 1;i < n;i ++)
-     printf("%d ",a[i]);
-  printf("%d",a[n]);
+     my_printf("%d ",a[i]);
+  my_printf("%d",a[n]);
  return 0;
 }

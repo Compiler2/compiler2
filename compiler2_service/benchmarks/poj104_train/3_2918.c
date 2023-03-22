@@ -8,16 +8,16 @@ int main_bench()
     read();
     m=find();
     if (m==0)
-    printf("no");
-    else printf("yes");
+    my_printf("no");
+    else my_printf("yes");
     return 0;
 }
 int read()
 {
     int i;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for (i=1;i<=n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     return 0;
 }
 int find()

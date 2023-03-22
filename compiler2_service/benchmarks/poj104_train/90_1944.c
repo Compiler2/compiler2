@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int apple,n,i,plate,K;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&apple,&plate);
+		my_scanf("%d%d",&apple,&plate);
 		if(apple==1 || plate==1)
 		{
 			K=1;
@@ -127,7 +127,7 @@ int main_bench()
 		{
 			K=42;
 		}
-		printf("%d\n",K);
+		my_printf("%d\n",K);
 	}
 	return 0;
 }

@@ -7,8 +7,8 @@ int main_bench()
 	str[0]='.';
 	for(i=0,j=1;(c=str[j-1])!='\n';i++,j++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&str[j]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&str[j]);
 	}
 	n=i;
 	for(j=0;j<n-1;j++)
@@ -37,10 +37,10 @@ int main_bench()
 	}
 	if(j==n-1)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	else
 	{
-		printf("%d\n",sub);
+		my_printf("%d\n",sub);
 	}
 }

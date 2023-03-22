@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n, i, j, a[10000]; 
 	float sum=0, ave, max=0, b, c, d, e;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 		sum=sum+(float)a[i];
 	}
 	ave=sum/(float)n;
@@ -24,10 +24,10 @@ int main_bench()
 	d=c-ave;
 	e=ave-b;
 	if(d>e)
-	    printf("%d\n", (int)c);
+	    my_printf("%d\n", (int)c);
 	else if(d<e)
-		printf("%d\n", (int)b);
+		my_printf("%d\n", (int)b);
 	else
-		printf("%d,%d\n", (int)b, (int)c);
+		my_printf("%d,%d\n", (int)b, (int)c);
 	return 0;
 }

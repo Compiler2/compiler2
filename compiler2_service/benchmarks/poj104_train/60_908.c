@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,k=1,m=1,t,s[10000],g[10000][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		t=0;
@@ -32,13 +32,13 @@ int main_bench()
 	}
 	if(m==1)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 	else
 	{
 	    for(i=1;i<m;i++)
 		{
-		    printf("%d %d\n",g[i][1],g[i][2]);
+		    my_printf("%d %d\n",g[i][1],g[i][2]);
 		}
 	}
 	return 0;

@@ -4,7 +4,7 @@
 int main_bench()
 {
 int N;
-scanf("%d",&N);
+my_scanf("%d",&N);
 
 struct student
 {
@@ -20,7 +20,7 @@ int i;
 for(i=0;i<N;i++)
 {
 
-	scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].qm,&stu[i].py,&stu[i].gb,&stu[i].w,&stu[i].lw);
+	my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].qm,&stu[i].py,&stu[i].gb,&stu[i].w,&stu[i].lw);
 	stu[i].jj=0;
 	if(stu[i].qm>90)stu[i].jj+=2000;
 	if(stu[i].qm>80&&stu[i].lw>=1)stu[i].jj+=8000;
@@ -45,5 +45,5 @@ for(i=0;i<N-1;i++)
 	}
 }
 
- printf("%s\n%d\n%d\n",stu[N-1].name,stu[N-1].jj,total);         
+ my_printf("%s\n%d\n%d\n",stu[N-1].name,stu[N-1].jj,total);         
 }

@@ -4,17 +4,17 @@ int num[101][101];
 int main_bench()
 {
 	int i=0,j=1,k=1,x,y,row,col,n=1;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(x=0;x<=row-1;x++)
 	    for(y=0;y<=col-1;y++)
-	        scanf("%d",&num[x][y]);
-	printf("%d\n",num[0][0]);
+	        my_scanf("%d",&num[x][y]);
+	my_printf("%d\n",num[0][0]);
 	while(n<row*col)
 	{
 		int flag=0;
 		while(j>=0&&i<=row-1&&j<=col-1)
 		{
-			printf("%d\n",num[i][j]);
+			my_printf("%d\n",num[i][j]);
 			i++;
 			j--;
 			n++;

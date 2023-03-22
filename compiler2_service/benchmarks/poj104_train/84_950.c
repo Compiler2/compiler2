@@ -4,10 +4,10 @@ int main_bench()
 {
 	int sz[100];
 	int i,n,a,b,k,s;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	if (n>1&&n<100){
 	for(i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	for(k=0;k<n-1;k++)
 		if(sz[k]>sz[k+1]){
@@ -22,6 +22,6 @@ int main_bench()
 			sz[s]=b;
 		}
 	}
-	printf("%d\n%d\n",sz[n-1],sz[n-2]);
+	my_printf("%d\n%d\n",sz[n-1],sz[n-2]);
 	return 0;
 }

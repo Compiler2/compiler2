@@ -10,12 +10,12 @@ int idb[10000];
 void test(int x);
 int main_bench()
 {
-	scanf("%c",&a);
+	my_scanf("%c",&a);
 	s[0]=a;
 	int i;
 	for(i=1;;i++)
 	{
-		scanf("%c",&s[i]);
+		my_scanf("%c",&s[i]);
 		if(s[i]==a)
 		{
 			numa++;
@@ -30,7 +30,7 @@ int main_bench()
 	test(0);
 	for(i=0;i<(numa+numb)/2;i++)
 	{
-		printf("%d %d\n",ida[i],idb[i]);
+		my_printf("%d %d\n",ida[i],idb[i]);
 	}
 	return 0;
 }

@@ -4,16 +4,16 @@ int main_bench()
 {
     int n,i,j,count=0;
     char a[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%s",a[i]);
+                    my_scanf("%s",a[i]);
     }
     for(i=0;i<n;i++)
     {
                     int b=strlen(a[i]);
                     if((a[i][0]>='0')&&(a[i][0]<='9'))
-                                    printf("no\n");
+                                    my_printf("no\n");
                     else
                     {
                            for(j=0;j<b;j++)
@@ -22,8 +22,8 @@ int main_bench()
                                              count++;
                            }
                            if(count>0)
-                           printf("no\n");
-                           else printf("yes\n");
+                           my_printf("no\n");
+                           else my_printf("yes\n");
                            count=0;
                     }
                     

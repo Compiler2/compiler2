@@ -24,7 +24,7 @@ int kiss(char ch[], char b, char g, int l, int i){
 main_bench(){
 	char ch[5000], b, g;
 	int i, l, girl, boy;
-	scanf("%s", ch);
+	my_scanf("%s", ch);
 	l=strlen(ch);
 	b=ch[0];
 	for(i=1; i<l; i++){
@@ -39,7 +39,7 @@ main_bench(){
 		if(boy==-1) continue;
 		else{
 			girl=i;
-			printf("%d %d\n", boy, girl);
+			my_printf("%d %d\n", boy, girl);
 		}
 	}
 }

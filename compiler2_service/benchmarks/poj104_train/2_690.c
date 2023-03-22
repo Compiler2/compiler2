@@ -10,11 +10,11 @@ int main_bench()
 		char y[27];
 	}A[1000];
 
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int i,j;
 	for(i=0;i<N;i++)
 	{
-		scanf("%d%s",&A[i].x,A[i].y);
+		my_scanf("%d%s",&A[i].x,A[i].y);
 		for(j=0;A[i].y[j]!='\0';j++)
 		{
 			if(A[i].y[j]=='A')
@@ -138,13 +138,13 @@ int main_bench()
 	}
 	char d;
 	d=('A'+p);
-	printf ("%c\n%d\n",d,max);
+	my_printf ("%c\n%d\n",d,max);
 	for (i=0;i<N;i++)
 	{
 		for (j=0;A[i].y[j]!='\0';j++)
 		{
 			if (A[i].y[j]==(p+'A'))
-				printf("%d\n",A[i].x);
+				my_printf("%d\n",A[i].x);
 		}
 	}
 

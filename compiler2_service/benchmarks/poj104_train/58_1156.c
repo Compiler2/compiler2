@@ -3,7 +3,7 @@
 int main_bench(){
   int n,i;
   char *p;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   char s[n][81];
   for(i=0;i<n;i++)
     gets(s[i]);
@@ -22,7 +22,7 @@ int main_bench(){
       }
     else
       a=0;
-    printf("%d\n",a);
+    my_printf("%d\n",a);
     }
    
   }  

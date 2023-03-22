@@ -6,13 +6,13 @@ int main_bench()
 {
     int i,j,n,m,s;
     s=0; 
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=3;i<=m/2;i+=2)
     {
         if(szs(i)&&szs(m-i))
         {
-            if(s!=0) printf("\n");
-            printf("%d %d",i,m-i);
+            if(s!=0) my_printf("\n");
+            my_printf("%d %d",i,m-i);
             s=1; 
         }
     }

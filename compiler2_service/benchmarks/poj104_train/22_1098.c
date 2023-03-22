@@ -45,9 +45,9 @@ int main_bench()
 	}
 	a[n++]=num;
 	paixu(a,n);
-	if(find(a,n)==-1)	printf("No\n");
+	if(find(a,n)==-1)	my_printf("No\n");
 	else
-		printf("%d\n",find(a,n));
+		my_printf("%d\n",find(a,n));
 
 	return 0;
 }

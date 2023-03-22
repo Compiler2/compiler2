@@ -9,11 +9,11 @@ struct s{
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&s[i].num,&s[i].x,&s[i].y);
+		my_scanf("%d %d %d",&s[i].num,&s[i].x,&s[i].y);
 		s[i].z=s[i].x+s[i].y;
 	}
 	if(s[0].z>=s[1].z)
@@ -76,8 +76,8 @@ int main_bench()
 			s3=s[i];
 		}
 	}
-	printf("%d %d\n",s1.num,s1.z);
-	printf("%d %d\n",s2.num,s2.z);
-	printf("%d %d\n",s3.num,s3.z);
+	my_printf("%d %d\n",s1.num,s1.z);
+	my_printf("%d %d\n",s2.num,s2.z);
+	my_printf("%d %d\n",s3.num,s3.z);
 	return 0;
 }

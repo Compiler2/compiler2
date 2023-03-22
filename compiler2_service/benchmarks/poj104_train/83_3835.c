@@ -4,17 +4,17 @@ int main_bench(){
 	int a,i,b=0;
 	double c;
 	c=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	double sa[500];
 	int sb[500];
 	for(i=0;i<a;i++)
 	{
-		scanf("%d",&(sb[i]));
+		my_scanf("%d",&(sb[i]));
         b=b+sb[i];
 	}
 	for(i=0;i<a;i++)
 	{
-		scanf("%lf",&(sa[i]));
+		my_scanf("%lf",&(sa[i]));
 		if(sa[i]>=90){sa[i]=4.0;}
 		else if(sa[i]>=85){sa[i]=3.7;}
 		else if(sa[i]>=82){sa[i]=3.3;}
@@ -31,7 +31,7 @@ int main_bench(){
 		c=c+sa[i];
 	}
 	c=c/b;
-	printf("%.2lf",c);
+	my_printf("%.2lf",c);
 	return 0;
 }
 		

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,sz[12];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sz[0]=n+13-1;
 	sz[1]=sz[0]+31;
 	sz[2]=sz[1]+28;
@@ -20,7 +20,7 @@ int main_bench()
 	{
 		if(sz[i]%7==5)
 		{
-		 printf("%d\n",i+1);
+		 my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

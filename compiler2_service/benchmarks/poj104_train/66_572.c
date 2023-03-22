@@ -7,7 +7,7 @@ int main_bench()
 	int year ,month, day;
 	char out[7][5]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun."};
 	int i,days=1,temp;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	temp=year%400+400;
 	for(i=2;i<=temp;i++)
 	{
@@ -34,11 +34,11 @@ int main_bench()
 	days=(days+day-1)%7;
 	if(days==0)
 	{
-		printf("%s\n",out[6]);
+		my_printf("%s\n",out[6]);
 	}
 	else 
 	{
-		printf("%s\n",out[days-1]);
+		my_printf("%s\n",out[days-1]);
 	}
 }
 

@@ -6,10 +6,10 @@ int main_bench()
 {
 	int i;
 	double s,j,n,a[1000];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 	}
 	for(i=0;i<=n-1;i++)
 	{
@@ -19,7 +19,7 @@ int main_bench()
 			
 			s+=g(j)/f(j);
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

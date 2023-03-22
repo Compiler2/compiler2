@@ -4,7 +4,7 @@ main_bench()
 {
 	long n,m;
 	int a,b,c,d,e;
-	scanf("%ld",&n);
+	my_scanf("%ld",&n);
 	a=n%10;
 	b=(n-a)/10%10;
 	c=(n-a-10*b)/100%10;
@@ -15,5 +15,5 @@ main_bench()
 	else if(a*b*c!=0) m=100*a+10*b+c;
 	else if(a*b!=0) m=10*a+b;
 	else m=a;
-	printf("%ld",m);
+	my_printf("%ld",m);
 }

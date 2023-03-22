@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,i,s;
-scanf("%d",&n);
+my_scanf("%d",&n);
 s=0;
 i=0;
 while(i<=n){
@@ -13,6 +13,6 @@ else{
 	s=s+i*i;}
 i++;
 }
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

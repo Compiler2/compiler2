@@ -27,7 +27,7 @@ main_bench()
     {
                       g[i]=0;
     }
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     j=0;
     for (b=2;b<=a;b++)
     {
@@ -43,7 +43,7 @@ main_bench()
                     for (k=i;k<j;k++)
                     {
                         if (c==g[k])
-                        printf("%d %d\n",g[i],g[k]);
+                        my_printf("%d %d\n",g[i],g[k]);
                     }
     }
 }

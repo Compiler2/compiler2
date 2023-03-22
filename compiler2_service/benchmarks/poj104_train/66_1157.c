@@ -3,7 +3,7 @@
 int Runnian(int year);
 int main_bench(){
 	int year,month,day,total=0,i,k;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	for(i=1;i<month;i++){
 		if(i==1||i==3||i==5||i==7||i==8||i==10||i==12){
 			total+=31;
@@ -29,19 +29,19 @@ int main_bench(){
 	}
 	total+=day;
 	if(total%7==1){
-		printf("Mon.");
+		my_printf("Mon.");
 	}else if(total%7==2){
-		printf("Tue.");
+		my_printf("Tue.");
 	}else if(total%7==3){
-		printf("Wed.");
+		my_printf("Wed.");
 	}else if(total%7==4){
-		printf("Thu.");
+		my_printf("Thu.");
 	}else if(total%7==5){
-		printf("Fri.");
+		my_printf("Fri.");
 	}else if(total%7==6){
-		printf("Sat.");
+		my_printf("Sat.");
 	}else if(total%7==0){
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 { int n,i,b[100];
 float d[100],s=0,a[100],c=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
-{scanf("%f",&a[i]);}
+{my_scanf("%f",&a[i]);}
 for(i=0;i<n;i++)
-{scanf("%d",&b[i]);}
+{my_scanf("%d",&b[i]);}
 for(i=0;i<n;i++)
 {if(b[i]<=100&&b[i]>=90) d[i]=(float)(4.0*a[i]);
 else if(b[i]<=89&&b[i]>=85) d[i]=(float)(3.7*a[i]);
@@ -24,5 +24,5 @@ for(i=0;i<n;i++)
 {s=(float)(s+d[i]);c=(float)(c+a[i]);
 }
 s=(float)(s/c);
-printf("%.2f",s);
+my_printf("%.2f",s);
 }

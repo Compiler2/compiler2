@@ -3,7 +3,7 @@
 int main_bench()
 {int b,i,r,x,y,z,n;
 char a[600];
-scanf("%s",a);
+my_scanf("%s",a);
 n=strlen(a);
 for(i=2;i<=n;i++)
 {for(r=0;r<=n-i;r++)
@@ -14,9 +14,9 @@ for(y=0;y<=i/2;y++)
 }
 if(z==0)
 for(b=r;b<=r+i-1;b++)
-printf("%c",a[b]);
+my_printf("%c",a[b]);
 if(b==r+i-1)
-{printf("\n");b=0;}
+{my_printf("\n");b=0;}
 }
 }
 }

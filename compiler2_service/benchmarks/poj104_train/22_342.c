@@ -9,7 +9,7 @@ int main_bench()
 	i=0;j=0;
 	do
 	{
-		scanf("%c",&d);
+		my_scanf("%c",&d);
 		if(d=='\n') {c[i][j]='\0';break;}
 		else if(d==','){c[i][j]='\0';i++;j=0;}
 		else {c[i][j]=d;j++;}
@@ -43,6 +43,6 @@ int main_bench()
 		if(f[i]>a) {b=a;a=f[i];}
 		else if((f[i]<a)&&(f[i]>b)) b=f[i];
 	}
-	if(b==0) printf("No");
-	else printf("%d",b);
+	if(b==0) my_printf("No");
+	else my_printf("%d",b);
 }

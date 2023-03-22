@@ -7,13 +7,13 @@ int main_bench()
 	char tmp;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&tmp);
+		my_scanf("%d%c",&a[i],&tmp);
 		if(tmp=='\n') {n=i+1;break;}
 	}
 	for(i=0;i<n-1;i++)
 		if(a[i]==a[i+1]);
 		else break;
-	if(i==n-1) printf("No\n");
+	if(i==n-1) my_printf("No\n");
 	else
 	{
 		for(i=0;i<n-1;i++)
@@ -34,6 +34,6 @@ int main_bench()
 			if(a[i]==a[i+1]);
 			else break;
 		}
-		printf("%d\n",a[i+1]);
+		my_printf("%d\n",a[i+1]);
 	}
 }

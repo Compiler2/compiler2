@@ -14,8 +14,8 @@ void print(char a[],int m,int n)
 {
 	int i;
 	for(i=m;i<=n;i++)
-		printf("%c",a[i]);
-	printf("\n");
+		my_printf("%c",a[i]);
+	my_printf("\n");
 }
 int main_bench()
 {

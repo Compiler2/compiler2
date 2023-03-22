@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<10)
 	{
-		printf("%d",n);
+		my_printf("%d",n);
 	}
 	else if((10<n)&&(n<100))
 	{
@@ -14,7 +14,7 @@ int main_bench()
 	    i=n/10;
 	    j=n%10;
 	    k=10*j+i;
-	    printf("%d",k);
+	    my_printf("%d",k);
 	}
 	else if((100<n)&&(n<1000))
 	{
@@ -24,7 +24,7 @@ int main_bench()
 		c=b/10;
 		d=b%10;
 		e=100*d+10*c+a;
-		printf("%d",e);
+		my_printf("%d",e);
 	}
 	else if((1000<n)&&(n<10000))
 	{
@@ -36,19 +36,19 @@ int main_bench()
 		o=w/10;
 		p=w%10;
 		q=1000*p+100*o+10*m+f;
-		printf("%d",q);
+		my_printf("%d",q);
 	}
 	else if(n==10)
 	{
-		printf("01");
+		my_printf("01");
 	}
 		else if(n==100)
 	{
-		printf("001");
+		my_printf("001");
 	}
 		else if(n==1000)
 	{
-		printf("0001");
+		my_printf("0001");
 	}
 	return 0;
 }

@@ -6,10 +6,10 @@ int main_bench()
 	char c;
 	for(i=0;i<300;i++)
 	{
-	scanf("%d%c",&a[i],&c);n=n+1;
+	my_scanf("%d%c",&a[i],&c);n=n+1;
 	if(c!=',')i=300;
 	}
-	if(n==1){printf("No");}
+	if(n==1){my_printf("No");}
 	else
 	{
 		for(i=0;i<n;i++)
@@ -26,7 +26,7 @@ int main_bench()
 			{t=0;d=0;}
 			
 		}
-		if(d==n){printf("No");}
+		if(d==n){my_printf("No");}
 		else
 		{
 			t=0;
@@ -39,7 +39,7 @@ int main_bench()
 			}
 			if(t==n-d)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				break;
 			}
 			t=0;

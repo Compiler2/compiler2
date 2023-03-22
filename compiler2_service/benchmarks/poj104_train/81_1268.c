@@ -8,10 +8,10 @@ int main_bench()
 	int n,m,i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(hs(n,m)){
 		for(i=0;i<5;i++){
 	        s[i]=sz[n][i];
@@ -20,13 +20,13 @@ int main_bench()
 		}
 	   for(i=0;i<5;i++){
 		   for(j=0;j<4;j++){
-			   printf("%d ",sz[i][j]);
+			   my_printf("%d ",sz[i][j]);
 		   }
-                              printf("%d",sz[i][4]);
-			   printf("\n");
+                              my_printf("%d",sz[i][4]);
+			   my_printf("\n");
 	   }
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 }
 int hs(int n,int m){

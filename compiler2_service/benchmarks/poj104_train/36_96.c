@@ -4,14 +4,14 @@ int main_bench()
 {
 	char a[20],b[20],c[20]={""},*p;
 	int l1,l2,l,i,j;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	p=c;
 	l1=strlen(a);
 	l2=strlen(b);
 	l=l1;
 	if(l1!=l2)
-	printf("NO");
+	my_printf("NO");
 	else
 	{
 		for(i=0;i<l;i++)
@@ -21,9 +21,9 @@ int main_bench()
 					*(p+i)=a[i];
 		}
 		if(strcmp(a,c)==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }
 

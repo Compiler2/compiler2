@@ -23,5 +23,5 @@ int main_bench()
  for(i=0;i<=j;i++)
   c[b[i]]=' ';
  for(i=len;i>=1;i--)
-  printf("%c",c[i]);
+  my_printf("%c",c[i]);
 }

@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&alei[i][j]);
+			my_scanf("%d",&alei[i][j]);
 	    }
 	}
 	for(i=0;i<5;i++)
@@ -27,9 +27,9 @@ int main_bench()
 			if(n>alei[k][m]) {sign=1;break;}
 		}
 		if(sign==1)  {sign=0;continue;}
-		printf("%d %d %d\n",i+1,m+1,n); p+=1;
+		my_printf("%d %d %d\n",i+1,m+1,n); p+=1;
 	}
-    if(p==0) printf("not found\n");
+    if(p==0) my_printf("not found\n");
 
 }	
 	

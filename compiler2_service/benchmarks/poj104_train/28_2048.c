@@ -18,7 +18,7 @@ for(i=0;str[i]!='\0';i++){
       a=a+1;
       }
       else if((str[i]==' ')&&(str[i+1]!=' ')){
-          printf("%d,",a);
+          my_printf("%d,",a);
           a=0;
       }
     }
@@ -26,10 +26,10 @@ a=0;
 for(i=n-1;str[i]!=' ';i--){
         a=a+1;
     }
-    printf("%d",a);
+    my_printf("%d",a);
 }
 else if(b==0){
-    printf("%d",n);
+    my_printf("%d",n);
 }
     return 0;
 }

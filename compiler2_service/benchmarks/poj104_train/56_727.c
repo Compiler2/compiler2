@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,g,h,i,j;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a%10;
 	c=(a%100-b)/10;
 	d=(a%1000-10*c-b)/100;
@@ -14,13 +14,13 @@ int main_bench()
 	i=100*b+10*c+d;
 	j=10*b+c;
 	if(a>10000)
-	{printf("%d\n",g);}
+	{my_printf("%d\n",g);}
 	else if(a>1000)
-	{printf("%d\n",h);}
+	{my_printf("%d\n",h);}
 	else if(a>100)
-	{printf("%d\n",i);}
+	{my_printf("%d\n",i);}
 	else if(a>10)
-	{printf("%d\n",j);}
+	{my_printf("%d\n",j);}
 	else
-	{printf("%d\n",a);}
+	{my_printf("%d\n",a);}
 }

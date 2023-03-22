@@ -9,21 +9,21 @@ int main_bench()
 	int a[5][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	y=swap(a,n, m);
 	if(y==0)
-		printf("error\n");
+		my_printf("error\n");
 	if(y==1){	
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				printf("%d",a[i][j]);
+				my_printf("%d",a[i][j]);
                 if(j==4)
                 break;
-                printf(" ");
+                my_printf(" ");
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
     return 0;

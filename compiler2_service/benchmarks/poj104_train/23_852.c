@@ -28,5 +28,5 @@ for(i=0;i<s;i++)
 		 for (j=0;j<chang;j++)
 		   ch2[s-chang-k+j]=ch1[k+j];
 		
-    printf("%s",ch2);
+    my_printf("%s",ch2);
 }

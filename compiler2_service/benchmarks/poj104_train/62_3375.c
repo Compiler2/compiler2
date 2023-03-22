@@ -32,6 +32,6 @@ int main_bench()
 	}
 
 	for(i=0;i<j;i++)
-	{printf("%c",c[i]);}
+	{my_printf("%c",c[i]);}
 	return 0;
 }

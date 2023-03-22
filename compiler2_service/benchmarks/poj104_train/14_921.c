@@ -15,11 +15,11 @@ main_bench()
 {
       int n,i,k,c[10],j[10];
       int a[100001];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       struct Student std[100001];
       for(i = 0;i < n;i++)
       {
-            scanf("%d %d %d",&std[i].num,&std[i].chinese,&std[i].maths);
+            my_scanf("%d %d %d",&std[i].num,&std[i].chinese,&std[i].maths);
       }
       for(i = 0;i < n;i++)
       {
@@ -48,7 +48,7 @@ main_bench()
       }
       for(i = 0;i < 3;i++)
       {
-          printf("%d %d\n",st[i].num,st[i].zongfen);
+          my_printf("%d %d\n",st[i].num,st[i].zongfen);
       }
       getchar();
       getchar();

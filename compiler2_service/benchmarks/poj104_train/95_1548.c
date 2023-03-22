@@ -24,7 +24,7 @@ main_bench()
 	daxie(s2);
 
 	c=strcmp(s1,s2);
-	if(c==-1) printf("<");
-	if(c==0)  printf("=");
-	if(c==1) printf(">");
+	if(c==-1) my_printf("<");
+	if(c==0)  my_printf("=");
+	if(c==1) my_printf(">");
 }

@@ -11,12 +11,12 @@ int cmp(const void *a,const void *b)
 void input(int *a, int *b)
 {
     int i;
-    scanf("%d %d", &n, &m);
+    my_scanf("%d %d", &n, &m);
     for (i = 0; i < n; i++) {
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     }
     for (i = 0; i < m; i++) {
-        scanf("%d", &b[i]);
+        my_scanf("%d", &b[i]);
     }
 }
 
@@ -41,7 +41,7 @@ void output(int *c)
 {
     int i;
     for (i = 0;i < m + n; i++) {
-        printf("%d%s", c[i], i < m + n - 1 ? " " : "\n");
+        my_printf("%d%s", c[i], i < m + n - 1 ? " " : "\n");
     }
 }
 int main_bench()

@@ -7,29 +7,29 @@ int main_bench()
 	long years=0,days=0;
 	int i,result;
 
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 
 	if(year==4&&month==3&&day==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	else if(year==1111111111&&month==11&&day==11)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	else if(year==1111&&month==11&&day==11)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	else if(year==2000&&month==2&&day==29)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	else if(year==1921&&month==7&&day==1)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
-	else printf("hello");
+	else my_printf("hello");
 
 	return 0;
 }

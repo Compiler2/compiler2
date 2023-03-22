@@ -19,8 +19,8 @@ n++;}
 for(i=0;i<k;i++)
 {
 	if(s[i]!=0)
-	{printf("%d",s[i]);
+	{my_printf("%d",s[i]);
   if(i<k-1)
-	  printf(",");}
+	  my_printf(",");}
 }
 }

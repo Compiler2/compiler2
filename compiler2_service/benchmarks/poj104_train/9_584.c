@@ -4,9 +4,9 @@ int main_bench()
 {
       int n,i,j,t,m,x,k;
       char a[100][100],b[100],c[100],d[100][100],e[100],f[100][100],s[100];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
-      scanf("%s %d",a[i],&b[i]);
+      my_scanf("%s %d",a[i],&b[i]);
       k=0;
       for(i=0;i<n;i++)
       {
@@ -21,12 +21,12 @@ int main_bench()
                                           }
                       }
       for(i=0;i<k;i++)
-      printf("%s\n",d[i]);
+      my_printf("%s\n",d[i]);
       m=0;
       for(i=0;i<n;i++)
       {
                       if(b[i]<60){e[m]=b[i];strcpy(f[m],a[i]);m++;}
                         }
       for(i=0;i<m;i++)
-      printf("%s\n",f[i]);
+      my_printf("%s\n",f[i]);
       }

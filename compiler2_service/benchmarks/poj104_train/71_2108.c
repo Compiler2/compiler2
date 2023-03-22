@@ -8,9 +8,9 @@ int main_bench(){
 	int i;
 	int e;
 	int day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	         scanf("%d %d %d", &nian, &x, &y);
+	         my_scanf("%d %d %d", &nian, &x, &y);
 	         if(x<y){
 	                        e=x;
 		                    x=y;
@@ -18,9 +18,9 @@ int main_bench(){
 			 }
 	         day=DiJiTian(nian,x,1)-DiJiTian(nian,y,1);
 	         if(day%7==0){
-		              printf("YES\n");
+		              my_printf("YES\n");
 			 }else {
-	                	printf("NO\n");
+	                	my_printf("NO\n");
 			 }
 	}
 	return 0;

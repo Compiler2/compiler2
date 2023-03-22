@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,m;
 	char a[500],b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(j=1;j<=strlen(a);j++)
 		{
 			if(a[j-1]=='A')
@@ -21,9 +21,9 @@ int main_bench()
 				b[j-1]='C';
 		}
 		for(m=1;m<=strlen(a);m++)
-		{	printf("%c",b[m-1]);
+		{	my_printf("%c",b[m-1]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

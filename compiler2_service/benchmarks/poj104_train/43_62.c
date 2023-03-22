@@ -4,7 +4,7 @@ int judge(int x);
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n/2;i++)
 	{
 		if(judge(i)==1)
@@ -12,7 +12,7 @@ int main_bench()
 			j=n-i;
 			if(judge(j)==1)
 			{
-				printf("%d %d\n",i,j);
+				my_printf("%d %d\n",i,j);
 			}
 		}
 	}

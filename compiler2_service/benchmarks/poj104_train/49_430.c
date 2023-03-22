@@ -25,8 +25,8 @@ int main_bench()
             if(k==j+i+1)
             {
             for(k=j;k<=j+i;k++)
-                printf("%c",a[k]);
-            printf("\n");
+                my_printf("%c",a[k]);
+            my_printf("\n");
             }
       }
   }

@@ -15,14 +15,14 @@ int main_bench()
 {
 	int i,t,n,m,k;
 	int f(int m,int n);
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	if(t>=0&&t<=20)
 	{
 		for(i=1;i<=t;i++)
 		{
-			scanf("%d%d",&m,&n);
+			my_scanf("%d%d",&m,&n);
 			k=f(m,n);
-			printf("%d\n",k);
+			my_printf("%d\n",k);
 		}
 	}
 	return 0;

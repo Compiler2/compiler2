@@ -4,10 +4,10 @@
 int main_bench(){
 	int (sz[500]),(odd[500]);
 	int j,i,n,k,a,e,g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 a=0;
 	for(i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 		if((sz[i])%2!=0){
 			a+=1;
 		}
@@ -34,9 +34,9 @@ a=0;
 
 for(i=0;i<a;i++){
 	if(i<a-1){
-		printf("%d,",sz[i]);
+		my_printf("%d,",sz[i]);
 	}
-	else{printf("%d",sz[i]);}
+	else{my_printf("%d",sz[i]);}
 	}
 
 return 0;

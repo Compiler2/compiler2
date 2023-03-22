@@ -11,7 +11,7 @@ int main_bench()
 int a,b,n,i,j,d[100];
 long int k=0;
 char p[100],q[100];
-scanf("%d %s %d",&a,p,&b);
+my_scanf("%d %s %d",&a,p,&b);
 n=strlen(p);
 for(i=0;i<n;i++)
 {
@@ -46,6 +46,6 @@ for(j=0;j<=i;j++)
 	q[j]=d[j]-10+'A';
 	}
 for(j=i;j>=0;j--)
-printf("%c",q[j]);
+my_printf("%c",q[j]);
 return(0);
 }

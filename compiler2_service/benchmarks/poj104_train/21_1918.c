@@ -5,9 +5,9 @@ int main_bench()
     int n,c=0;
 	int i,j;
 	int a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for (i=0;i<n;i++){
 		for (j=0;j<n-i-1;j++){
@@ -41,12 +41,12 @@ int main_bench()
 		}
 		if (cha==tt){
 			if (c>0){
-				printf(",");
+				my_printf(",");
 			}
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			c++;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
     return 0;
 }

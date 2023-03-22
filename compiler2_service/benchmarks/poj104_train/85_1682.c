@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,m,i,j,a[2000];
 	char b[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",b);
+		my_scanf("%s",b);
 		m=strlen(b);
 		for(j=0;j<m;j++){
 			if(j==0&&((b[j]>=65&&b[j]<=90)||(b[j]>=97&&b[j]<=122)||b[j]=='_'))
@@ -20,9 +20,9 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(a[i])
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

@@ -4,11 +4,11 @@ main_bench()
 {
       int a[100],m,i,k;
       float n,a1,a2,a3;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       i=0;
       while(i<m)
       {
-                scanf("%d",&a[i]);
+                my_scanf("%d",&a[i]);
                 i=i+1;
       }
       i=0;
@@ -26,7 +26,7 @@ main_bench()
                     a1=a3;
                     k=k+1;
                     }
-                    printf("%.3f\n",n);
+                    my_printf("%.3f\n",n);
                     i=i+1;
                     }
                     getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();

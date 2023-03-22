@@ -5,7 +5,7 @@ int main_bench()
     int l,i,c;
     char a[200]={'\0'};
     char b[200]={'\0'};
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     if(l>=3)
     {
@@ -40,8 +40,8 @@ int main_bench()
         b[0]='0';
         c=a[0]-'0';
     }
-    printf("%s\n",b);
-    printf("%d",c);
+    my_printf("%s\n",b);
+    my_printf("%d",c);
     getchar();
     getchar();
 }                                   

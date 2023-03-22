@@ -78,8 +78,8 @@ main_bench()
 		}
 	}
 
-	if(judge(a,b)==0) printf("NO\n");
-	else printf("YES\n");
+	if(judge(a,b)==0) my_printf("NO\n");
+	else my_printf("YES\n");
 
 
 }

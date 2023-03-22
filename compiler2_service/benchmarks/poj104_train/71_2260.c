@@ -4,14 +4,14 @@ int main_bench()
 {
     int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,y,m1,m2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	int j,count=0;
 	for(i=0;i<n;i++)
 	{
 		count=0;
 		days[2]=28;
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		if((y%4==0)&&(y%100!=0)||(y%400==0))
 		{
 			days[2]++;
@@ -32,11 +32,11 @@ int main_bench()
 		}
 		if(count%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	

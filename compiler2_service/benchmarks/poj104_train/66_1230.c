@@ -4,31 +4,31 @@ int RunNian(int year);
 int DiJiTian(int year, int month, int day);
 int main_bench(){
         int y ,m ,d, d2,d3;
-        scanf("%d%d%d",&y,&m,&d);
+        my_scanf("%d%d%d",&y,&m,&d);
         d2=(y-1)+(y-1)/400*97+(y-1)%400/100*24+(y-1)%100/4;
         d2=d2%7;
         d3=DiJiTian(y, m, d)%7;
         d2=(d2+d3)%7;
         if(d2==0){
-                printf("Sun.");
+                my_printf("Sun.");
         }
         if(d2==1){
-                printf("Mon.");
+                my_printf("Mon.");
         }
         if(d2==2){
-				printf("Tue.");
+				my_printf("Tue.");
         }
         if(d2==3){
-                printf("Wed.");
+                my_printf("Wed.");
         }
         if(d2==4){
-                printf("Thu.");
+                my_printf("Thu.");
         }
         if(d2==5){
-                printf("Fri.");
+                my_printf("Fri.");
         }
         if(d2==6){
-                printf("Sat.");
+                my_printf("Sat.");
         }
 
         return 0;

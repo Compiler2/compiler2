@@ -3,7 +3,7 @@
 int main_bench(){
 	char str[257],substr[257],re[257];
 	int i=0,j=0,n=0,m=0,k=0;
-	scanf("%s\n%s\n%s\n",str,substr,re);
+	my_scanf("%s\n%s\n%s\n",str,substr,re);
     n=strlen(substr);
 	for(i=0;str[i]!='\0';i++){
 		if(str[i]==substr[j]){
@@ -21,6 +21,6 @@ int main_bench(){
 	  }
 	}
 	
-	printf("%s",str);
+	my_printf("%s",str);
 	return 0;
 }

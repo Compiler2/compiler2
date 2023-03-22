@@ -21,11 +21,11 @@ int main_bench()
 	int n,i;
 	int max1=0,max2=0,max3=0;
 	int maxnum1=0,maxnum2=0,maxnum3=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&student[i].num);
-		scanf("%d",&student[i].yuwen);
-		scanf("%d",&student[i].shuxue);
+		my_scanf("%d",&student[i].num);
+		my_scanf("%d",&student[i].yuwen);
+		my_scanf("%d",&student[i].shuxue);
 		total[i]=student[i].yuwen+student[i].shuxue;
 		if(total[i]>=max1){
 			if(total[i]==max1){
@@ -71,8 +71,8 @@ int main_bench()
 			}
 		}		
 	}
-	printf("%d %d\n",maxnum1,max1);
-	printf("%d %d\n",maxnum2,max2);
-	printf("%d %d",maxnum3,max3);
+	my_printf("%d %d\n",maxnum1,max1);
+	my_printf("%d %d\n",maxnum2,max2);
+	my_printf("%d %d",maxnum3,max3);
 	return 0;
 }

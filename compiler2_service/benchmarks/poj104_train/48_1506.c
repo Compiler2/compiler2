@@ -7,7 +7,7 @@ int main_bench()
 	const int sz=9;
 	int k,i,j,m,n,fx,fy;
 	int a[sz][sz],b[sz][sz];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	memset (a,0,sizeof (a));
 	a[sz/2][sz/2]=m;
 	for (k=0;k<n;k++)
@@ -31,8 +31,8 @@ memcpy (a,b, sizeof (a));
 for (i=0;i<sz;i++)
 {
 	for (j=0;j<sz-1;j++)
-		printf ("%d ",a[i][j]);
-	printf ("%d\n",a[i][sz-1]);
+		my_printf ("%d ",a[i][j]);
+	my_printf ("%d\n",a[i][sz-1]);
 }
 return 0;
 }

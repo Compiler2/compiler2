@@ -25,12 +25,12 @@ int main_bench()
 		if(k[max]<k[i])max=i;
 	}
 	for(l=m[max]-k[max];l<m[max]&&a[l]!=',';l++)
-		printf("%c",a[l]);
+		my_printf("%c",a[l]);
 	putchar('\n');
 	for(i=1;i<=j;i++)
 	{
 		if(k[min]>k[i])min=i;
 	}
 	for(l=m[min]-k[min];l<m[min]&&a[l]!=',';l++)
-		printf("%c",a[l]);
+		my_printf("%c",a[l]);
 }

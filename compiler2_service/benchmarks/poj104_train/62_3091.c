@@ -12,7 +12,7 @@ int main_bench(){
   z[m-1]=0;m--;i--;}
   }
   }}
-  printf("%s",z);
+  my_printf("%s",z);
 return 0;
 }
 

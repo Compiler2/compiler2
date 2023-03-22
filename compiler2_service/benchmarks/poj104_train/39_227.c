@@ -13,11 +13,11 @@ int main_bench()
 		int lun;
 		int qian;
 	}stu[100],mid;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(b=0;b<a;b++)
 	{
 		stu[b].qian=0;
-		scanf("%s%d%d %c %c%d",stu[b].xing,&stu[b].qi,&stu[b].ban,&stu[b].gan,&stu[b].xi,&stu[b].lun);
+		my_scanf("%s%d%d %c %c%d",stu[b].xing,&stu[b].qi,&stu[b].ban,&stu[b].gan,&stu[b].xi,&stu[b].lun);
 		if(stu[b].qi>80&&stu[b].lun>=1)
 			stu[b].qian=stu[b].qian+8000;
 		if(stu[b].qi>85&&stu[b].ban>80)
@@ -44,6 +44,6 @@ int main_bench()
 	c=0;
 	for(b=0;b<a;b++)
 		c=c+stu[b].qian;
-	printf("%s\n%d\n%d",stu[0].xing,stu[0].qian,c);
+	my_printf("%s\n%d\n%d",stu[0].xing,stu[0].qian,c);
 }
 

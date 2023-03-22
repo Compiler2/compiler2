@@ -3,15 +3,15 @@
 int main_bench()
 {
 int n,i,c,b;
-scanf("%d",&n);
-if(n==0)printf("0");
+my_scanf("%d",&n);
+if(n==0)my_printf("0");
 for(i=1;i<=n;)
 {
 	i=i*10;
 	c=n%i;
 	n=n-c;
 	b=c*10/i;
-	printf("%d",b);
+	my_printf("%d",b);
 }
-printf("\n");
+my_printf("\n");
 }

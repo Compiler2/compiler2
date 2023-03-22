@@ -5,7 +5,7 @@ int main_bench()
 	char s1[256],s2[256];
 	int c[256]={0};
 	int a,b,i,l1,l2,l=0;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	l1=(int)strlen(s1);
 	l2=(int)strlen(s2);
 	while(l1>0||l2>0){
@@ -18,6 +18,6 @@ int main_bench()
 	while (c[l]==0&&l>0)
 		l--;
 	for(i=l;i>=0;i--)
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 	return 0;
 }

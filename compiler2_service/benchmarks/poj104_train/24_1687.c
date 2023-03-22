@@ -34,9 +34,9 @@ int main_bench()
 		}
 	}
 	for(j=0;j<length[x];j++){
-		printf("%c",c[x][j]);
+		my_printf("%c",c[x][j]);
 	}
-	printf("\n");
+	my_printf("\n");
 
 		
 	min=length[0];
@@ -49,7 +49,7 @@ int main_bench()
 		}
 	}
 	for(j=0;j<length[y];j++){
-		printf("%c",c[y][j]);
+		my_printf("%c",c[y][j]);
 	}
 
 	return 0;

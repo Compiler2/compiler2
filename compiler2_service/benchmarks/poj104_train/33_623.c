@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,i,j;
 	char z[256],x[256],A,T,C,G;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		gets(z);
 		for(j=0;z[j];j++){
@@ -17,7 +17,7 @@ int main_bench(){
 				x[j]='C';
 		}
 		x[j]='\0';
-		printf("%s\n",x);
+		my_printf("%s\n",x);
 	}
 	return 0;
 }

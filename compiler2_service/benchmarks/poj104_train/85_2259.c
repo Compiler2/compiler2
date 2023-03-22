@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,m,k,p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zfc[n][21],a,b;
     for(i=0;i<n;i++){
-        scanf("%s",zfc[i]);
+        my_scanf("%s",zfc[i]);
         m=strlen(zfc[i]);
         p=0;
       for(k=0;k<m;k++){
@@ -16,8 +16,8 @@ int main_bench(){
            if((zfc[i][k]>='0'&&zfc[i][k]<='9')||(zfc[i][k]>='a'&&zfc[i][k]<='z')||(zfc[i][k]>='A'&&zfc[i][k]<='Z'||zfc[i][k]=='_')){p++;}
         }   
        }   
-             if(p==m){printf("yes\n");}
-             else{printf("no\n");}
+             if(p==m){my_printf("yes\n");}
+             else{my_printf("no\n");}
              
       }
              

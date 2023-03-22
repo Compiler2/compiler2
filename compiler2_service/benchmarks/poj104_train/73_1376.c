@@ -10,7 +10,7 @@ int main_bench()
 	{
 		for(n=0;n<5;n++)
 		{
-			scanf("%d",&a[m][n]);
+			my_scanf("%d",&a[m][n]);
 		}
 	}
 	for(i=0;i<5;i++)
@@ -41,14 +41,14 @@ int main_bench()
 		{
 			if(a[i][j]==b[i]&&a[i][j]==c[j])
 			{
-				printf("%d %d %d\n",i+1,j+1,a[i][j]);
+				my_printf("%d %d %d\n",i+1,j+1,a[i][j]);
 				sum=sum+1;
 			}
 		}
 	}
 	if(sum==0)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

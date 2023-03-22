@@ -12,7 +12,7 @@ int main_bench()
 		o[i]=(char *)malloc(110*sizeof(char));
 	gets(o[k]);
 	z=strlen(o[k]);
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	y=strlen(a);
 	x=strlen(b);
 	while(p==1)
@@ -42,6 +42,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<z;i++)
-		printf("%c",o[k][i]);
-	printf("\n");
+		my_printf("%c",o[k][i]);
+	my_printf("\n");
 }

@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,k,i=0,j,sign=1;
-    scanf("%d %d",&n,&k);
+    my_scanf("%d %d",&n,&k);
     int s[n];
 	while(i<n){
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		i=i+1;
 	}
 	i=0;
@@ -20,9 +20,9 @@ int main_bench(){
 		i=i+1;
 	}
 	if(sign==0){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

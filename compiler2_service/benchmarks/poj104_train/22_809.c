@@ -8,13 +8,13 @@ int main_bench()
     while(b==',')
 	{
 		i=i+1;
-		scanf("%d",&a[i]);
-		scanf("%c",&b);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&b);
 	}
 	n=i;
 	if(n==1)
 	{
-		printf("No");
+		my_printf("No");
 		goto loop;
 	}
 	for(i=n;i>=2;i--)
@@ -22,7 +22,7 @@ int main_bench()
 		if(a[i-1]!=a[i])
 			break;
 		if(a[i-1]==a[i]&&i==2)
-		{printf("No");
+		{my_printf("No");
 		goto loop;}
 	}
 	for(i=n;i>=2;i--)
@@ -35,6 +35,6 @@ int main_bench()
 		if(a[i-1]<a[i]&&a[i]!=a[1]||a[i-1]==a[1])
 		{tr=a[i-1];a[i-1]=a[i];a[i]=tr;}
 	}
-	printf("%d",a[2]);
+	my_printf("%d",a[2]);
 loop:return 0;
 }

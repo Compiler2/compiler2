@@ -4,10 +4,10 @@ int main_bench()
 {
 	char name[100][20],ganbu[100],xibu[100];
 	int qimo[100],banji[100],lunwen[100],i,n,sum[100]={0},flag=0,max=0,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
+		my_scanf("%s%d%d %c %c%d",name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -26,5 +26,5 @@ int main_bench()
 		}
 		total=total+sum[i];
 	}
-	printf("%s\n%d\n%d\n",name[flag],sum[flag],total);
+	my_printf("%s\n%d\n%d\n",name[flag],sum[flag],total);
 }

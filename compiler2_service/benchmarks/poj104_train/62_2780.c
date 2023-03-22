@@ -22,7 +22,7 @@ int main_bench(){
          s2[j]=s1[i];       
          }
     s2[n-c]='\0';
-    printf("%s",s2);
+    my_printf("%s",s2);
     return 0;
 }
                        

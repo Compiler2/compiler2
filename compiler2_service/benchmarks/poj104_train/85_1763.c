@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,i,j,m=0;
 	char s[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 m=0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		for(j=0;s[j];j++){
 			if(j==0){
 				if(!(s[j]=='_'||(s[j]>='a'&&s[j]<='z')||(s[j]>='A'&&s[j]<='Z'))){
@@ -19,9 +19,9 @@ m=0;
 			}
 		}
 		if(m==0){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

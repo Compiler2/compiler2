@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,a[10000],b[10000],i,s=0,p,x,y;
     double l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%d %d\n",&a[i],&b[i]);
+    my_scanf("%d %d\n",&a[i],&b[i]);
     x=a[0];
     y=b[0];
     for(i=0;i<n;i++)
@@ -34,8 +34,8 @@ int main_bench()
    }
    if(s==y-x)
    {
-       printf("%d %d\n",x,y);
+       my_printf("%d %d\n",x,y);
    }
-   else {printf("no");}
+   else {my_printf("no");}
    return 0;
 }

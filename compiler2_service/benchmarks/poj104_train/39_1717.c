@@ -11,11 +11,11 @@ int main_bench()
         char lead;
 		char west;
 		int essay;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=1;i<=N;i++)
 	{
         sch=0;
-		scanf("%s%d%d %c %c%d",name,&aver,&ping,&lead,&west,&essay);
+		my_scanf("%s%d%d %c %c%d",name,&aver,&ping,&lead,&west,&essay);
         if((aver>80)&&(essay>=1))sch=sch+8000;
         if((aver>85)&&(ping>80))sch=sch+4000;
 		if(aver>90)sch=sch+2000;
@@ -28,6 +28,6 @@ int main_bench()
 			strcpy(mname,name);
 		}
 	}
-    printf("%s\n%d\n%d\n",mname,msch,ssch);
+    my_printf("%s\n%d\n%d\n",mname,msch,ssch);
 	return 0;
 }

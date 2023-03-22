@@ -10,16 +10,16 @@ int main_bench(){
 		b=a;
 		a=a+c;
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++){
-		scanf("%d",&n[j]);
+		my_scanf("%d",&n[j]);
 		sum[j]=0;
 		for(k=0;k<n[j];k++){
 			sum[j]+=x[k];
 		}
 	}
 	for(j=0;j<m;j++){
-		printf("%.3lf\n",sum[j]);
+		my_printf("%.3lf\n",sum[j]);
 	}
 	return 0;
 }

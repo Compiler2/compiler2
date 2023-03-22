@@ -7,19 +7,19 @@ int main_bench()
 {
     int i, j, n, m;
     double n1, n2, t, sum;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for (j=0; j<m; j++) {
         sum = 0;
         n1 = 1;
         n2 = 2;
-        scanf("%d", &n);
+        my_scanf("%d", &n);
         for (i=0;i<n;i++) {
             sum += n2/n1;
             t = n1;
             n1 = n2;
             n2 = t + n2;
         }
-        printf("%.3lf\n", sum);
+        my_printf("%.3lf\n", sum);
     }
     return 0;
 }
@@ -72,6 +72,6 @@ char * output_dir = "data";
 
 void xbuild()
 {
-    printf(mn[xn]);
+    my_printf(mn[xn]);
     xn++;
 }

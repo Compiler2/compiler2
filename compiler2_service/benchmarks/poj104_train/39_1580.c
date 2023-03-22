@@ -12,9 +12,9 @@ int pa;
 int main_bench()
 {int n,i,sumt,j;
 int sum[100];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
-scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].a1,
+my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].a1,
 &stu[i].a2,&stu[i].pa);
 for(i=0;i<n;i++)
 {sum[i]=0;
@@ -38,5 +38,5 @@ if(sum[i]<sum[j])
 break;
 if(j==n)
 break;}
-printf("%s\n%d\n%d",stu[i].name,sum[i],sumt);
+my_printf("%s\n%d\n%d",stu[i].name,sum[i],sumt);
 }

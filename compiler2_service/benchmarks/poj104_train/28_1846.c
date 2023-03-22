@@ -31,9 +31,9 @@ int main_bench()
        }  
      for(i=0;i<k-1;i++)
        {
-          printf("%d,",q[i]-p[i]);            
+          my_printf("%d,",q[i]-p[i]);            
        }
-     printf("%d\n",q[k-1]-p[k-1]);      
+     my_printf("%d\n",q[k-1]-p[k-1]);      
     return 0;    
 }
 

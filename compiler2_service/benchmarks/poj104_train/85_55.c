@@ -3,9 +3,9 @@
 int main_bench(){
 	char s[220];
 	int n,i,j,l1=0,l2=0,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		l1=1;
 		for (m=0;m<=9;m++){
 			if (s[0]==48+m){
@@ -56,8 +56,8 @@ int main_bench(){
 			}
 		}
 		if (l2==1)
-			printf("yes\n");
-		else printf("no\n");
+			my_printf("yes\n");
+		else my_printf("no\n");
 	}
 	return 0;
 }

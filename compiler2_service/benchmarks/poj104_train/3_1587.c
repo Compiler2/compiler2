@@ -13,10 +13,10 @@ int main_bench()
 	int n, k;
 	int i;
 	int found = 0;
-	scanf("%d %d", &n, &k);
+	my_scanf("%d %d", &n, &k);
 	for(i = 0; i < n; ++i)
 	{
-		scanf("%d", &in[i]);
+		my_scanf("%d", &in[i]);
 	}
 	qsort(in,n,sizeof(int),mysort);
 
@@ -38,9 +38,9 @@ int main_bench()
 	}
 	if(found)
 	{
-		printf("yes\n");
+		my_printf("yes\n");
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 

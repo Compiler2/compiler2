@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,l,j;
 	char a[1100][256];
 	char b[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%s",b);
+		my_scanf("%s",b);
 		l=strlen(b);
 		for(j=0;j<=(l-1);j++)
 		{
@@ -24,5 +24,5 @@ int main_bench()
 		strcpy(a[i],b);
 	}
 	for(i=0;i<=(n-1);i++)
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 }

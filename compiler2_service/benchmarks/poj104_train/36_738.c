@@ -19,7 +19,7 @@ int main_bench()
 {
 	int l1,l2,k=0,i;
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	if(l1==l2)
@@ -30,8 +30,8 @@ int main_bench()
 		{
 			if(a[i]!=b[i])k=1;
 		}
-		if(k==0)printf("YES");
-		else printf("NO");
+		if(k==0)my_printf("YES");
+		else my_printf("NO");
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

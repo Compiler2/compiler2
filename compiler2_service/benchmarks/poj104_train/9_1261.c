@@ -13,10 +13,10 @@ int main_bench(){
 	int n,b=0,i,j,k,e;
 	char a[11];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s %d",people[i].id,&people[i].age);
+		my_scanf("%s %d",people[i].id,&people[i].age);
 		if(people[i].age>=60){
 			sixty[i].age=people[i].age;
 			strcpy(sixty[i].id,people[i].id);
@@ -40,12 +40,12 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<b;i++){
-		printf("%s\n",sixty[i].id);
+		my_printf("%s\n",sixty[i].id);
 			
 	}
 	for(i=0;i<n;i++){
 		if(people[i].age<60){
-			printf("%s\n",people[i].id);
+			my_printf("%s\n",people[i].id);
 		}
 	}
 	

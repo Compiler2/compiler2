@@ -8,10 +8,10 @@ struct student{
 int main_bench()
 { 
     int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student a[100000],e ;
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&a[i].num,&a[i].chinese,&a[i].math);		
+		my_scanf("%d %d %d",&a[i].num,&a[i].chinese,&a[i].math);		
 	}
 	for(i=0;i<n-1;i++){
 		if(a[i].chinese+a[i].math>=a[i+1].chinese+a[i+1].math){
@@ -35,7 +35,7 @@ int main_bench()
 		}
 	}
 	for(i=n-1;i>n-4;i--){
-		printf("%d %d\n",a[i].num,a[i].chinese+a[i].math);
+		my_printf("%d %d\n",a[i].num,a[i].chinese+a[i].math);
 	}
 	return 0;
 }

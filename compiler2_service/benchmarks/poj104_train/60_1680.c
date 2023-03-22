@@ -5,7 +5,7 @@ int main_bench()
 	int n;
 	int a[100000];
 	int i,j,k=0,num=0,sum=0,tot=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		num=0;
@@ -28,12 +28,12 @@ int main_bench()
 		if(a[j+1]-a[j]==2)
 		{
 			tot=tot+1;
-			printf("%d %d\n",a[j],a[j+1]);
+			my_printf("%d %d\n",a[j],a[j+1]);
 		}
 
 	}
 	if(tot==0)
-		printf("empty");
+		my_printf("empty");
 	return 0;
 		
 		

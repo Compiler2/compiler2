@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,sum=0,i,er;
-	scanf("%d%d%d", &y, &m, &d);
+	my_scanf("%d%d%d", &y, &m, &d);
 	if (y>2800)
 		y=y-y/2800*2800;
 	for (i=1;i<y;i++)
@@ -69,19 +69,19 @@ int main_bench()
 		break;
 	}
 	if (sum%7==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	if (sum%7==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	if (sum%7==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	if (sum%7==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	if (sum%7==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	if (sum%7==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	if (sum%7==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	return 0;
 }
 

@@ -6,7 +6,7 @@ int main_bench()
 	char c[300];
 	int num=0,i,j,flag=0,t;
 	for(i=0;i<300;i++){
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 		if(c[i]==',')
 			num++;
 		else
@@ -14,7 +14,7 @@ int main_bench()
 	}
 	num=num+1;
 	if(num==1){
-		printf("No\n");
+		my_printf("No\n");
 		goto end;
 	}
 	for(i=0;i<num;i++){
@@ -24,7 +24,7 @@ int main_bench()
 		}
 	}
 	if(flag==0){
-		printf("No\n");
+		my_printf("No\n");
 		goto end;
 	}
 	for(i=1;i<num;i++){
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	for(i=1;i<num;i++){
 		if(a[i]!=a[0]){
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 			break;
 		}
 	}

@@ -17,7 +17,7 @@ void chulie(int a)
 		{
 			if (ch[k].s==b && ch[k].t!=0)
 			{
-				printf("%d %d\n",ch[k].num,ch[a].num);
+				my_printf("%d %d\n",ch[k].num,ch[a].num);
 				ch[k].t=0;
 				ch[a].t=0;
 				break;
@@ -31,7 +31,7 @@ int main_bench()
 {
 	
 	int nb,ng,i,j,k,l,m;
-	scanf("%s",chr);
+	my_scanf("%s",chr);
 	b=chr[0];
 	for (i=0;chr[i]!='\0';i++)
 	{

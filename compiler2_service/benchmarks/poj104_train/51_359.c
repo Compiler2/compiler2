@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,len,j=0,k=0,l=0,c[505]={0},sum=0,max=2;
 	char zichuan[505],a[505][505];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     gets(zichuan);
 	len=strlen(zichuan);
 	for(i=0;i<len;i++)
@@ -40,7 +40,7 @@ int main_bench()
 	 }
 	if(sum==k)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -55,16 +55,16 @@ int main_bench()
 				continue;
 			}
 		}
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<k;i++)
 		{ 
 			    if(c[i]==max)
 				{
 					for(j=0;j<n;j++)
 				{
-					printf("%c",a[i][j]);
+					my_printf("%c",a[i][j]);
 				}
-					printf("\n");
+					my_printf("\n");
 				}
 		
 		}

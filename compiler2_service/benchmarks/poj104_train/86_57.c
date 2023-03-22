@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,m;
 	int k,i,j,l,s[100],r;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
-		if(m==0) printf("60\n");
+		my_scanf("%d",&m);
+		if(m==0) my_printf("60\n");
 		if(m!=0){
 			k=0;
 		    for(j=0;j<m;j++){
-			    scanf("%d",&s[j]);
+			    my_scanf("%d",&s[j]);
 		        if(s[j]<=60-(j+1)*3) continue;                       
 			    if((s[j]>60-(j+1)*3) && k==0){
                     k=1;
@@ -26,7 +26,7 @@ int main_bench(){
 				    r=s[l];
 			   }
 			}
-		    printf("%d\n",r);
+		    my_printf("%d\n",r);
 		}
 	}
     return 0;

@@ -2,14 +2,14 @@
 
 int main_bench() {
 int n, i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int sz1[n];
 int sz2[n];
 for(i=0; i<n; i++) {
-  scanf("%d",&sz1[i]);
+  my_scanf("%d",&sz1[i]);
   }
 for(i=0; i<n; i++) {
-  scanf("%d",&sz2[i]);
+  my_scanf("%d",&sz2[i]);
   }
 float score1[n];
 for(i=0; i<n; i++) {
@@ -48,6 +48,6 @@ for(i=0; i<n; i++) {
   }
 float GPA;
 GPA = sum1/sum2;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;
 }

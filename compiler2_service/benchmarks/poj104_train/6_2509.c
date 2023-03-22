@@ -5,14 +5,14 @@ int main_bench()
 	int n,i,j,sum[10000]={0};
 	int a[100][100]={0},k;
 	int *p=sum,x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
-		scanf("%d %d",&x,&y);
+		my_scanf("%d %d",&x,&y);
 		for(i=0;i<x;i++)
 		{
 			for(j=0;j<y;j++)
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 		}
 		if(x!=1)
 		{
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	for(;p<(sum+n);p++)
 	{
-		printf("%d\n",*p);
+		my_printf("%d\n",*p);
 	}
 	return 0;
 }

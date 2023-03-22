@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,a,b,c,i,m;
-scanf("%d\n%d\n%d\n",&n,&a,&b);
+my_scanf("%d\n%d\n%d\n",&n,&a,&b);
 i=2;
 if(a<b){
 	m=a;
@@ -11,7 +11,7 @@ if(a<b){
 	b=m;
 }
 while(i<n){
-	scanf("%d",&c);
+	my_scanf("%d",&c);
     i+=1;
 	if(c>=a){
 		b=a;
@@ -20,6 +20,6 @@ while(i<n){
 		b=c;
 	}
 }
-printf("%d\n%d\n",a,b);
+my_printf("%d\n%d\n",a,b);
 	return 0;
 }

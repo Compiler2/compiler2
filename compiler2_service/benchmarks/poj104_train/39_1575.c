@@ -12,10 +12,10 @@ int main_bench()
 {
 	int n,i,max,p,sum=0;
 	int scholar[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].endmark,&stu[i].mark,&stu[i].ganbu,&stu[i].xibu,&stu[i].essay);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].endmark,&stu[i].mark,&stu[i].ganbu,&stu[i].xibu,&stu[i].essay);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -38,5 +38,5 @@ int main_bench()
 	{
 		sum=sum+scholar[i];
 	}
-	printf("%s\n%d\n%d\n",stu[p].name,max,sum);
+	my_printf("%s\n%d\n%d\n",stu[p].name,max,sum);
 }

@@ -6,8 +6,8 @@ int main_bench()
     d=0;
     k=0;
     char g[1000][6],r[1000];
-    scanf("%d",&n);
-    scanf("%s",r);
+    my_scanf("%d",&n);
+    my_scanf("%s",r);
     m=strlen(r);
     for(i=0;i<m;i++)
     {   g[i][5]=1;
@@ -36,14 +36,14 @@ int main_bench()
     }
 if(d>1)
 {
-    printf("%d\n",d);
+    my_printf("%d\n",d);
     for(i=0;i<m;i++)
     {
        if(g[i][5]==d)
-       printf("%s\n",g[i]);
+       my_printf("%s\n",g[i]);
     }   
 }
 else
-printf("NO");
+my_printf("NO");
     return 0;
     }

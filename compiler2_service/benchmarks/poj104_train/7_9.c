@@ -6,9 +6,9 @@ int main_bench()
 	char b[256];
 	char c[256];
 	int i,j,k,l,m,n,sum=0;
-	scanf("%s",a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
 	m=strlen(a);
 	n=strlen(b);
 	for(i=0;i<m;i++)
@@ -24,8 +24,8 @@ int main_bench()
 		a[k]=c[k-i];
 	}
 	for(l=0;l<m;l++)
-		printf("%c",a[l]);
-	printf("\n");
+		my_printf("%c",a[l]);
+	my_printf("\n");
 	
 	
 }

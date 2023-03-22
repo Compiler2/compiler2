@@ -15,10 +15,10 @@ int main_bench()
 	int max=0;
 	char letter='A';
 	int b[26]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&a[i].num,a[i].author);
+		my_scanf("%d %s",&a[i].num,a[i].author);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -45,14 +45,14 @@ int main_bench()
 			letter=i+65;
 		}
 	}
-	printf("%c\n%d\n",letter,max);
+	my_printf("%c\n%d\n",letter,max);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<26;j++)
 		{
 			if(a[i].author[j]==letter)
 			{
-				printf("%d\n",a[i].num);
+				my_printf("%d\n",a[i].num);
 			}
 		}
 	}

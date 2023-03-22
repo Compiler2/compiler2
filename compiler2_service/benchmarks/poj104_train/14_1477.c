@@ -8,12 +8,12 @@ int main_bench()
 	int fir=0,sec=0,thi=0;
     int c=0,d=0,e=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(k=0;k<3;k++)
 		{
-			scanf("%d",&a[i][k]);
+			my_scanf("%d",&a[i][k]);
 		}
 			s[i]=a[i][1]+a[i][2];
 	}
@@ -48,9 +48,9 @@ int main_bench()
 				 
 			  }
 		
-	printf("%d %d\n",a[c][0],fir);
-	printf("%d %d\n",a[d][0],sec);
-	printf("%d %d\n",a[e][0],thi);
+	my_printf("%d %d\n",a[c][0],fir);
+	my_printf("%d %d\n",a[d][0],sec);
+	my_printf("%d %d\n",a[e][0],thi);
 	return 0;
 }
 

@@ -3,9 +3,9 @@
 int main_bench(){
     int N;
     int sz[500];
-    scanf("%d\n",&N);
+    my_scanf("%d\n",&N);
     for(int i=0;i<N;i++){
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
     }
     int odd[500],a=0;
     for(int x=0;x<N;x++){
@@ -29,9 +29,9 @@ int main_bench(){
         }
     }
     for(int z=0;z<a-1;z++){
-        printf("%d,",odd[z]);
+        my_printf("%d,",odd[z]);
     }
-    printf("%d",odd[a-1]);
+    my_printf("%d",odd[a-1]);
     return 0;
 } 
 

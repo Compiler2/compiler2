@@ -6,7 +6,7 @@ int main_bench()
 int i,n;
    for(i=0;i<50;i++)
    {
-     scanf("%s",a[i]);
+     my_scanf("%s",a[i]);
      }
    n=i;strcpy(max,a[0]);strcpy(min,a[0]);
    for(i=0;i<n;i++)
@@ -14,5 +14,5 @@ int i,n;
     if(strlen(max)<strlen(a[i]))strcpy(max,a[i]);
    if(strlen(min)>strlen(a[i]))strcpy(min,a[i]);
 }
-  printf("%s\n%s\n",max,min);
+  my_printf("%s\n%s\n",max,min);
 }

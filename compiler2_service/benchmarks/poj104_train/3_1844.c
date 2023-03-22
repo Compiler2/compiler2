@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,k;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	int i;
 	int sz[1000];
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int he[1000][1000];
 	int j;
@@ -23,7 +23,7 @@ int main_bench(){
 		for(i=0;i<n;i++){
 			if(i!=j){
 				if(he[i][j]==k){
-					printf("yes");
+					my_printf("yes");
 					d=0;
                                         break;
 				}
@@ -32,7 +32,7 @@ int main_bench(){
 		}
 	}
 	if(t==n*n){
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

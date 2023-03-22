@@ -8,9 +8,9 @@ int main_bench(){
 		int b;
 	};
 	struct qujian q[5000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d%d",&q[i].a,&q[i].b);
+		my_scanf("%d%d",&q[i].a,&q[i].b);
 	}
 	amin=q[1].a;
 	bmax=q[1].b;
@@ -35,12 +35,12 @@ int main_bench(){
 	for(i=amin;i<bmax;i++){
 		if(zqj[i][i]==0||zqj[i][i+1]==0){
 			t=1;
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(t==0){
-	    printf("%d %d",amin,bmax);
+	    my_printf("%d %d",amin,bmax);
 	}
 	return 0;
 }

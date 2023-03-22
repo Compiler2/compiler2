@@ -19,7 +19,7 @@ int main_bench()
 		if(j>k) {strcpy(ch,alei);k=j;}
 		if(j<m) {strcpy(sh,alei);m=j;}
 	}
-	printf("%s\n",ch);
-	printf("%s\n",sh);
+	my_printf("%s\n",ch);
+	my_printf("%s\n",sh);
 
 }

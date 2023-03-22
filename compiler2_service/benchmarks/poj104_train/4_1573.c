@@ -6,12 +6,12 @@ int main_bench()
     int i,row,col,rst=0,cst=0;
     int R,C;
     int a[100][100];
-    scanf("%d%d",&R,&C);
+    my_scanf("%d%d",&R,&C);
     for(row=0;row<R;row++)
     {
        for(col=0;col<C;col++)
        {
-          scanf("%d",&a[row][col]);
+          my_scanf("%d",&a[row][col]);
        }
     }
     
@@ -21,7 +21,7 @@ int main_bench()
        col=cst;
        while(row!=R&&col!=-1)
        {
-           printf("%d\n",a[row][col]);
+           my_printf("%d\n",a[row][col]);
            row++;
            col--;
        }

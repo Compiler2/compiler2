@@ -18,7 +18,7 @@ int main_bench()
 	}
 	else
 	{
-		printf("%d %d\n",boy[--i],a);
+		my_printf("%d %d\n",boy[--i],a);
 	}
 	a++;
     }

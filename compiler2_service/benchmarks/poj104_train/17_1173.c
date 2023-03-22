@@ -5,8 +5,8 @@ int main_bench()
 	int n;
 	int i;
 	int t;
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	char c[101]={0};
 	char d[101]={0};
     int j=0,k=0;
@@ -18,7 +18,7 @@ int main_bench()
 			d[j]=0;
 		}
 	
-	    scanf("%s",c);
+	    my_scanf("%s",c);
 		t=strlen(c);
 		for(j=0;j<t;j++)
 		{
@@ -52,11 +52,11 @@ int main_bench()
 			}
 		}
 	
-		printf("%s",d);
-		printf("\n");
-		printf("%s",c);
+		my_printf("%s",d);
+		my_printf("\n");
+		my_printf("%s",c);
 		
-		printf("\n");
+		my_printf("\n");
 	}
 		return 0;	
 }

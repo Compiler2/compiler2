@@ -9,7 +9,7 @@ int main_bench()
 	for(i=0;i<1000;i++)
 		for(j=0;j<10;j++)
 			b[i][j]='\0';
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	l=strlen(a);
 	for(i=0;i<l-n+2;i++)
@@ -30,21 +30,21 @@ int main_bench()
 	}
 	if(max==1)
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 	for(i=0;i<l-n+2;i++)
     {
 		if(max==1)
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 		if(sum[i]==max&&c[i]==0)
 		{
-			printf("%s\n",b[i]);
+			my_printf("%s\n",b[i]);
 			for(k=i;k<l-n+2;k++)
 			{
 				if(strcmp(b[k],b[i])==0)

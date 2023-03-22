@@ -11,10 +11,10 @@ int main_bench()
 	{
 		
 		d=*(org+i)+*(org+i+1);
-		printf("%c",d);
+		my_printf("%c",d);
 	}
 	d=*(org+i)+*org;
-	printf("%c\n",d);
+	my_printf("%c\n",d);
 }
 
 		

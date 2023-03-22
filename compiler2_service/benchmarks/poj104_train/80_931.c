@@ -5,7 +5,7 @@ int main_bench()
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int year1,year2,month1,month2,day1,day2,i,sum;
 	sum=0;
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
 	for(i=month1;i<=12;i++)
 	{
 		sum+=a[i-1];
@@ -42,7 +42,7 @@ int main_bench()
 	{
 		sum-=365;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 		

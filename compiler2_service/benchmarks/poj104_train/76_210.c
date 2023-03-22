@@ -2,12 +2,12 @@
 
 int main_bench()
 {int i,n,a,b,j,max=0,min=30000;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int l[10001];
 for (i=1;i<=10000;i++)
 l[i]=0;
 for (i=0;i<n;i++)
-{scanf ("%d %d",&a,&b);
+{my_scanf ("%d %d",&a,&b);
 if (max<b) max=b;
 if (min>a) min=a;
 for (j=a+1;j<b;j++)
@@ -21,7 +21,7 @@ l[min]=l[max]=1;
 j=1;
 for (i=min;i<=max;i++)
 if (l[i]!=1) {j=0;break;}
-if (j==1) printf ("%d %d\n",min,max);
-else printf ("no\n");
+if (j==1) my_printf ("%d %d\n",min,max);
+else my_printf ("no\n");
 return 0;
 }

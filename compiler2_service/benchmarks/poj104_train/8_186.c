@@ -5,11 +5,11 @@ int a[1000], b[1000], c[2000];
 
 void read() {
 	int i;
-	scanf("%d%d", &n, &m);
+	my_scanf("%d%d", &n, &m);
 	for(i = 0; i < n; ++ i)
-		scanf("%d", a + i);
+		my_scanf("%d", a + i);
 	for(i = 0; i < m; ++ i)
-		scanf("%d", b + i);
+		my_scanf("%d", b + i);
 }
 
 int cmp(const void * a, const void * b) {
@@ -31,9 +31,9 @@ void merge() {
 
 void output() {
 	int i;
-printf("%d",c[0]);
+my_printf("%d",c[0]);
 	for(i = 1; i < n + m; ++ i)
-		printf(" %d", c[i]);
+		my_printf(" %d", c[i]);
 }
 
 int main_bench() {

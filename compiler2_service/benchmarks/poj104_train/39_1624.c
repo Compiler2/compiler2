@@ -17,11 +17,11 @@ int main_bench()
     int n, max=0, sum=0;
     char *name;
     struct SCL *p;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 
     for(p=SCL; p<SCL+n; p++)
     {
-        scanf("%s %d %d %c %c %d", p->stu, &p->avg, &p->rev, &p->ldr, &p->wst, &p->ppr);
+        my_scanf("%s %d %d %c %c %d", p->stu, &p->avg, &p->rev, &p->ldr, &p->wst, &p->ppr);
         p->sum=0;
 
         if(p->avg>80 && p->ppr>0)
@@ -46,7 +46,7 @@ int main_bench()
         sum+=p->sum;
     }
 
-    printf("%s\n%d\n%d\n", name, max, sum);
+    my_printf("%s\n%d\n%d\n", name, max, sum);
 
     return 0;
 }

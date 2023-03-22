@@ -16,16 +16,16 @@ int main_bench()
 			s+=1;
 		else if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 	}
 	if(s==n)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

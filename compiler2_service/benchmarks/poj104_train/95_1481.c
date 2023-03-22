@@ -14,9 +14,9 @@ int main_bench()
 	if(a[i][j]==0)break;
    }
 
-   if(strcmp(a[0],a[1])==0)printf("=");
-   if(strcmp(a[0],a[1])>0)printf(">");
-   if(strcmp(a[0],a[1])<0)printf("<");
+   if(strcmp(a[0],a[1])==0)my_printf("=");
+   if(strcmp(a[0],a[1])>0)my_printf(">");
+   if(strcmp(a[0],a[1])<0)my_printf("<");
 
    
  

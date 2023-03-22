@@ -3,16 +3,16 @@
 int main_bench()
 {
    int n,i,a,b,c,x,y;
-      scanf("%d\n",&n);
+      my_scanf("%d\n",&n);
 	  i=1;
-      scanf("%d\n%d\n",&a,&b);
+      my_scanf("%d\n%d\n",&a,&b);
 	  if(a>b){
 		  x=a,y=b;
       }else{
 		  x=b,y=a;
 	  }
 	  while(i<=n-2){
-	  scanf("%d",&c);
+	  my_scanf("%d",&c);
 	  if(c>x){
           y=x,x=c;
 	  }
@@ -24,7 +24,7 @@ int main_bench()
 	  }i++;
 	  }
 
-	  printf ("%d\n%d",x,y);
+	  my_printf ("%d\n%d",x,y);
 	
 		
    return 0;

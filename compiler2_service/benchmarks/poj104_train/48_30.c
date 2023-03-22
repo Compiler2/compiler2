@@ -8,10 +8,10 @@ void output(int a[9][9])
 	{
 		for(y = 0;y <= 8;y ++)
 		{
-			printf("%d", a[x][y]);
-			if(y != 8)printf(" ");
+			my_printf("%d", a[x][y]);
+			if(y != 8)my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }
 
@@ -27,8 +27,8 @@ int main_bench()
 
 	int m , day;
 	int x, y;
-	scanf("%d", &m);
-	scanf("%d", &day);
+	my_scanf("%d", &m);
+	my_scanf("%d", &day);
 	a[4][4] = m;
 
 	for(i = 1;i <= day;i ++)

@@ -14,15 +14,15 @@ int main_bench()
 		c=a%13;
 	}
 	if((result[0]=='0' && n==1)||(result[1]=='0' && n==2))
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{for(i=0;i<3;i++)
 	{
 		if(result[i]!='0') {s=i;break;}
 	}
 	for(i=s;i<n;i++)
-		printf("%c",result[i]);
-	printf("\n");}
-	printf("%d",c);
+		my_printf("%c",result[i]);
+	my_printf("\n");}
+	my_printf("%d",c);
 	return 0;
 }

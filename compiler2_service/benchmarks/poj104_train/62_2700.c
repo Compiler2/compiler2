@@ -21,6 +21,6 @@ int main_bench()
     }
     zfc2[c]='\0';
     puts(zfc2);
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     return 0;
 }

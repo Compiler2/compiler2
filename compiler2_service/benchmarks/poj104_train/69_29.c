@@ -20,8 +20,8 @@ int main_bench()
 {
 	char a[500],b[500] ;
 	char *p;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	
 	strrev(a);
 	strrev(b);
@@ -44,10 +44,10 @@ int main_bench()
 	
 	for(p = a + 400; *p == 0 && p>=a; p--);
 	if(p < a)
-	printf("0");
+	my_printf("0");
 	for(;p>=a; p--)
-		printf("%d",(int)*p);
-	printf("\n");
+		my_printf("%d",(int)*p);
+	my_printf("\n");
 	
 	return 0; 
 }

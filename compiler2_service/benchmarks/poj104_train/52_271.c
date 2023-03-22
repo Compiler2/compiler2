@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,m,i,j,k;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int *p,*D;
 	p=(int *)malloc(sizeof(int) * n);
 	D=(int *)malloc(sizeof(int) * n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 	}
 	
 	for(j=0;j<n;j++)
@@ -24,9 +24,9 @@ int main_bench()
 	for(k=0;k<n;k++)
 	{
 		if(k<(n-1))
-		printf("%d ",D[k]);
+		my_printf("%d ",D[k]);
 		else
-			printf("%d",D[k]);
+			my_printf("%d",D[k]);
 
 	}
 	

@@ -4,15 +4,15 @@ int main_bench()
 {
 	int N,i,x[100],j,sum=0,t[100]={0},a[100],b[100],c[100],y;
 	char name[100][20]={'\0'},f[100],e[100];
-    scanf("%d",&N);
+    my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s",name[i]);
-		scanf("%d ",&a[i]);
-		scanf("%d ",&b[i]);
-		scanf("%c",&f[i]);
-		scanf(" %c",&e[i]);
-		scanf(" %d",&c[i]);
+		my_scanf("%s",name[i]);
+		my_scanf("%d ",&a[i]);
+		my_scanf("%d ",&b[i]);
+		my_scanf("%c",&f[i]);
+		my_scanf(" %c",&e[i]);
+		my_scanf(" %d",&c[i]);
 	}
     for(i=0;i<N;i++)
 	{
@@ -43,7 +43,7 @@ int main_bench()
 	for(i=0;i<N;i++)
 		if(x[i]==t[0])
 		{
-			printf("%s\n%d\n%d\n",name[i],t[0],sum);
+			my_printf("%s\n%d\n%d\n",name[i],t[0],sum);
 			break;
 		}
 

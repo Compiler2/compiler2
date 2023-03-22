@@ -7,14 +7,14 @@ int main_bench()
     int renshu,nianling[1000][2],bijiao[1000][2];
     char id[1000][1000];
         
-    scanf("%d",&renshu);
+    my_scanf("%d",&renshu);
     
     int i,j,k;
     j=0;
     k=0;
     for(i=0;i<renshu;i++)
    {
-    scanf("%s%d",id[i],&nianling[i][0]);
+    my_scanf("%s%d",id[i],&nianling[i][0]);
     }
     
     
@@ -65,7 +65,7 @@ int main_bench()
        for(j=0;j<renshu;j++)
        {
           if(bijiao[l-1-i][0]==nianling[j][0]&&bijiao[l-i-1][1]==nianling[j][1])
-          printf("%s\n",id[j]);
+          my_printf("%s\n",id[j]);
           else;                
        }                
     }
@@ -74,7 +74,7 @@ int main_bench()
        for(j=0;j<renshu;j++)
        {
           if(nianling[j][0]<60)
-          printf("%s\n",id[j]);
+          my_printf("%s\n",id[j]);
           else;                
        }             
     

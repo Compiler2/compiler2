@@ -7,11 +7,11 @@ int main_bench()
 	int age;
 	}patient[100],old[100],t;
 	int a,i=0,j=0,k=0,r,i1;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	getchar();
 	for(i=0;j+i<a;i++)
 	{
-		scanf("%s%d",patient[i].id,&patient[i].age);
+		my_scanf("%s%d",patient[i].id,&patient[i].age);
 		if(patient[i].age>=60)
 		{
 			old[j]=patient[i];
@@ -24,9 +24,9 @@ int main_bench()
 			if(old[k].age<old[k+1].age)
 			{t=old[k];old[k]=old[k+1];old[k+1]=t;}
 	for(r=0;r<j;r++)
-		printf("%s\n",old[r].id);
+		my_printf("%s\n",old[r].id);
 	for(r=0;r<i;r++)
-		printf("%s\n",patient[r].id);
+		my_printf("%s\n",patient[r].id);
 	return 0;
 }
 

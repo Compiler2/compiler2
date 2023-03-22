@@ -32,15 +32,15 @@ int main_bench()
 	int i;
 	for(i=0;i<6;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<0)
 		{
 			a=-a;
-			printf ("%d\n",-r(a,0));
+			my_printf ("%d\n",-r(a,0));
 		}
 		else
 		{
-			printf ("%d\n",r(a,0));
+			my_printf ("%d\n",r(a,0));
 		}
 	}
 		return 0;

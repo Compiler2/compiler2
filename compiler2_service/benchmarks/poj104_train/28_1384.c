@@ -23,8 +23,8 @@ for(i=0;i<strlen(a);i++)
 }
 b[m][n]='\0';
 for(i=0;i<m;i++)
-printf("%d,",strlen(b[i]));
-printf("%d",strlen(b[i]));
+my_printf("%d,",strlen(b[i]));
+my_printf("%d",strlen(b[i]));
 
 return 0;    
 }

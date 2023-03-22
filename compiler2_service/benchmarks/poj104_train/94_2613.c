@@ -2,9 +2,9 @@
 
 int main_bench(){
 int N,i,sz[500],m=0,e,js[500],j,p,k;
-scanf("%d",&N);
+my_scanf("%d",&N);
 for(i=0;i<N;i++){
-    scanf("%d",&(sz[i]));
+    my_scanf("%d",&(sz[i]));
 }
 j=0;
 p=0;
@@ -30,8 +30,8 @@ for(k=1;k<=p;k++){
     }
 }
 for(j=0;j<p-1;j++){
-printf("%d,",js[j]);
+my_printf("%d,",js[j]);
 }
-printf("%d",js[p-1]);
+my_printf("%d",js[p-1]);
 return 0;
 }

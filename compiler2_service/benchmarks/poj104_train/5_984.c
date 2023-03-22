@@ -5,9 +5,9 @@ int main_bench(){
     double bl,suande;
     char z1[100];
     char z2[100];
-    scanf("%lf",&bl);
-    scanf("%s",&z1);
-    scanf("%s",&z2);
+    my_scanf("%lf",&bl);
+    my_scanf("%s",&z1);
+    my_scanf("%s",&z2);
     for(i=0;z1[i]!='\0';i++){
         m++;
     }
@@ -15,7 +15,7 @@ int main_bench(){
         n++;
     }
     if(m!=n){
-        printf("error");
+        my_printf("error");
     }
     else{
         for(i=0;z1[i]!='\0';i++){
@@ -32,15 +32,15 @@ int main_bench(){
         }
         suande=1.0*total/zong;
         if((A==1)&&(suande<=bl)){
-            printf("no");
+            my_printf("no");
         }
         else if((A==1)&&(suande>bl)){
-            printf("yes");
+            my_printf("yes");
         }
         else if(A==0){
-            printf("error");
+            my_printf("error");
         }
-        else{printf("a");}
+        else{my_printf("a");}
     }
     
     

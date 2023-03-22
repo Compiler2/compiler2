@@ -6,7 +6,7 @@ main_bench()
 	gets(a);
 	for (b = a;*b != 0;b++)
 		if(!(*b == ' ' && *(b - 1) == ' '))
-			printf("%c",*b);
-	printf("\n");
+			my_printf("%c",*b);
+	my_printf("\n");
 	getchar();
 }

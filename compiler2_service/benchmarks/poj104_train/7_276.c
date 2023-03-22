@@ -4,7 +4,7 @@ int main_bench(){
 	char s[256],zi[256],r[256];
 	int lens,lenzi,lenr;
 	int i,k,p=2;
-	scanf("%s %s %s",&s,&zi,&r);
+	my_scanf("%s %s %s",&s,&zi,&r);
 	lens=strlen(s);
 	lenzi=strlen(zi);
 	lenr=strlen(r);
@@ -21,13 +21,13 @@ int main_bench(){
 				for(k=0;k<lenzi;k++){
                     s[i+k]=r[k];
 				}
-				printf("%s",s);
+				my_printf("%s",s);
 				break;
 			}
 		}
 	}
          if(p==2){
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	return 0;
 }

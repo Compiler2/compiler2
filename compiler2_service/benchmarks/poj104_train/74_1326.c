@@ -5,25 +5,25 @@ int main_bench()
 	int huiwen(int x);
 	int sushu(int x);
     int i,m,n,k=0,j;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(huiwen(i)==1&&sushu(i)==1)
 		{k++;}
 	}
-	if(k==0) printf("no\n");
+	if(k==0) my_printf("no\n");
 	else if(k!=1)
 	{
 		j=0;
 		for(i=m;j!=k-1;i++)
 		{
 		if(huiwen(i)==1&&sushu(i)==1)
-		{j++; printf("%d,",i);}
+		{j++; my_printf("%d,",i);}
 		}
 		for(;i<=n;i++)
 		{
         if(huiwen(i)==1&&sushu(i)==1)
-		{printf("%d\n",i);break;}
+		{my_printf("%d\n",i);break;}
 		}
 	}
 	else 
@@ -31,7 +31,7 @@ int main_bench()
         for(i=m;i<=n;i++)
 		{
         if(huiwen(i)==1&&sushu(i)==1)
-		{printf("%d\n",i);break;}
+		{my_printf("%d\n",i);break;}
 		}
 	}
 

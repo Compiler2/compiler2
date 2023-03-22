@@ -33,11 +33,11 @@ int main_bench()
 		e=strlen(word[l]);
 		if(l==0){
 			if(e!=0){
-			printf("%d",e);
+			my_printf("%d",e);
 			}
 		}else{
 			if(e!=0){
-			printf(",%d",e);
+			my_printf(",%d",e);
 			}
 		}
 	}

@@ -7,10 +7,10 @@ int DayCount(int, int, int);
 int main_bench()
 {
 	int i, n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=1; i<=12; i++)
 	{
-		if((DayCount(1,i,13)-(6-n))%7==0) printf("%d\n", i);
+		if((DayCount(1,i,13)-(6-n))%7==0) my_printf("%d\n", i);
 	}
 	return 0;
 }

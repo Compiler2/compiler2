@@ -3,8 +3,8 @@
 void input(int p,int q,int *num1,int *num2)
 {
      int i;
-     for(i=0;i<p;i++) scanf("%d",num1+i);
-     for(i=0;i<q;i++) scanf("%d",num2+i);
+     for(i=0;i<p;i++) my_scanf("%d",num1+i);
+     for(i=0;i<q;i++) my_scanf("%d",num2+i);
 }
 void sort(int p,int q,int *num1,int *num2)
 {
@@ -37,14 +37,14 @@ void sort(int p,int q,int *num1,int *num2)
 void print(int p,int q,int *num1,int *num2)
 {
      int i;
-     printf("%d",num1[0]);
-     for(i=1;i<p;i++) printf(" %d",num1[i]);
-     for(i=0;i<q;i++) printf(" %d",num2[i]);
+     my_printf("%d",num1[0]);
+     for(i=1;i<p;i++) my_printf(" %d",num1[i]);
+     for(i=0;i<q;i++) my_printf(" %d",num2[i]);
 }
 main_bench()
 {
      int p,q,*num1,*num2;
-     scanf("%d%d",&p,&q);
+     my_scanf("%d%d",&p,&q);
      num1=(int*)malloc(p*sizeof(int));
      num2=(int*)malloc(q*sizeof(int));
      input(p,q,num1,num2);

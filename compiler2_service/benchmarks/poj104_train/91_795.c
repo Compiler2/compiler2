@@ -19,6 +19,6 @@ int main_bench()
 	}
 	*p1=t+*p1;
 
-	printf("%s",p);
+	my_printf("%s",p);
 
 }

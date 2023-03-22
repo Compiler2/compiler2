@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[1000];
     int i=0,j=0,c=0,m=0,n=0,d=10,a,x;
-	scanf("%s",&a);
+	my_scanf("%s",&a);
 	x=getchar();
     gets(s);
 	
@@ -34,13 +34,13 @@ int main_bench()
 	}
 	while(s[m]!=' '&&s[m]!='\0')
 	{
-		printf("%c",s[m]);
+		my_printf("%c",s[m]);
 		m++;
 	}
-	printf("\n");
+	my_printf("\n");
 	while(s[n]!=' '&&s[n]!='\0')
 	{
-		printf("%c",s[n]);
+		my_printf("%c",s[n]);
 		n++;
 	}
 	return 0;

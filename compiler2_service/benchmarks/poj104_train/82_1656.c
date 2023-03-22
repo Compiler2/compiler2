@@ -3,9 +3,9 @@
 int main_bench(){
     int n;
     int beg[100],end[100],ti[100]={0},t=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d%d",&beg[i],&end[i]);
+        my_scanf("%d%d",&beg[i],&end[i]);
     }for(int i=0;i<n;i++){
         if(beg[i]>=90&&beg[i]<=140&&end[i]>=60&&end[i]<=90)
             ti[i]=1;
@@ -19,6 +19,6 @@ int main_bench(){
         if(t<ti[i])
             t=ti[i];
     }
-    printf("%d",t);
+    my_printf("%d",t);
     return 0;
 }

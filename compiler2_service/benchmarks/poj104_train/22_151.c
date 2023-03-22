@@ -4,7 +4,7 @@ int main_bench()
 {
 	int k,i,l,m,s[1000]={0};
 	char str[1000];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	l=strlen(str);
 	m=0;i=0;
 	while(i<=l-1)
@@ -34,16 +34,16 @@ int main_bench()
 		
 	
 	if(s[1]==0||s[i-1]==s[0])
-		printf("No");
+		my_printf("No");
 	else
 		for(l=1;l<i;l++)
 		{ 
 			if(s[l]!=s[0])
 			{
 				if(s[l]==80&&s[0]!=81)
-					printf("246");
+					my_printf("246");
 				else
-				printf("%d",s[l]);
+				my_printf("%d",s[l]);
 				break;
 			}
 		}

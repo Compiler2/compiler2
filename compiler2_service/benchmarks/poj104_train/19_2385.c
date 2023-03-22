@@ -66,7 +66,7 @@ int main_bench()
 		{
 			if(j==sz[i])
 			{
-				printf("%s",zfb);
+				my_printf("%s",zfb);
 				j=j+y-1;
                 h=1;
 				break;  
@@ -75,7 +75,7 @@ int main_bench()
 		
 		if(h!=1)
 			   {
-                     printf("%c",zf1[j]);
+                     my_printf("%c",zf1[j]);
 			   }
 	}
 	return 0;

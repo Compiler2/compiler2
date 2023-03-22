@@ -29,7 +29,7 @@ if(j==len1){
 
 
 	if(j!=len1){
-	printf("%s",s);
+	my_printf("%s",s);
 	}
 	
 int n=i+1;
@@ -49,7 +49,7 @@ int len2=strlen(t);
 	strcat(s,re);
 	strcat(s,t);
 
-printf("%s",s);
+my_printf("%s",s);
 }
 if((i==len)&&(j==len1)){
 
@@ -57,7 +57,7 @@ if((i==len)&&(j==len1)){
 	s[len-len1]='\0';
 
 	strcat(s,re);
-printf("%s",s);
+my_printf("%s",s);
 }
 
 return 0;}

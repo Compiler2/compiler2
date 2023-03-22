@@ -4,18 +4,18 @@ int main_bench()
 {
 	int th,i,to,s;
 	float c,r;
-	scanf("%d",&th);
-	scanf("%d %d",&to,&s);
+	my_scanf("%d",&th);
+	my_scanf("%d %d",&to,&s);
 	c=1.0*s/to;
 	for(i=0;i<th-1;i++){
-		scanf("%d %d",&to,&s);
+		my_scanf("%d %d",&to,&s);
 		r=1.0*s/to;
 		if(r>c&&r-c>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}else if(r<c&&c-r>0.05){
-			printf("worse\n");
+			my_printf("worse\n");
 		}else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

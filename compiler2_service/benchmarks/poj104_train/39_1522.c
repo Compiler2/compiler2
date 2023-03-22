@@ -19,9 +19,9 @@ int main_bench()
 	int money = 0;
 	struct Student stu[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i = 0; i < n; i++) {
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].grade,&stu
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].grade,&stu
 
 [i].eval,&stu[i].clasAsi,&stu[i].west,&stu[i].essay);
 		stu[i].total = 0;
@@ -50,10 +50,10 @@ int main_bench()
 	}
 	for (i = 0; i < n; i++) {
 		if(stu[i].total == money){
-			printf("%s\n%d\n",stu[i].name,money);
+			my_printf("%s\n%d\n",stu[i].name,money);
 			break;
 		}
 	}
-	printf("%d",totalMoney);
+	my_printf("%d",totalMoney);
 	return 0;
 }

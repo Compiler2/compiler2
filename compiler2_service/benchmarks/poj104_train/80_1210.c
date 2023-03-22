@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,num1,num2,num,k;
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	switch(m1)
 	{
 	case(1):
@@ -66,5 +66,5 @@ int main_bench()
 		num++;
 	if(((y2% 4 == 0 && y2 % 100 != 0) || (y2 % 400 == 0)) && m2>=3)
 		num++;
-	printf("%d",num);
+	my_printf("%d",num);
 }

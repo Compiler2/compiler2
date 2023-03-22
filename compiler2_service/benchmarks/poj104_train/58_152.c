@@ -3,7 +3,7 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);getchar();
+      my_scanf("%d",&n);getchar();
       for(;n>0;n--)
       {
       int i=0;
@@ -19,7 +19,7 @@ main_bench()
        {
              if((!isalnum(str[i]))&&str[i]!='_')
              {
-                 printf("%d\n",0);
+                 my_printf("%d\n",0);
                  goto hhh;
              }                    
        }
@@ -28,11 +28,11 @@ main_bench()
         
         if(isalpha(str[0])||str[0]=='_')
             {
-                printf("%d\n",1);
+                my_printf("%d\n",1);
             }          
          else
             {
-                printf("%d\n",0);
+                my_printf("%d\n",0);
             }   hhh:;
       }
 }

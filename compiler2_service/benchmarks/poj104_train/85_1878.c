@@ -10,10 +10,10 @@ int main_bench()
 	{
 		yn[i]=1;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		if((s[0]!='_')&&(s[0]<'A'||s[0]>'Z')&&(s[0]<'a'||s[0]>'z'))
 		{
 			yn[i]=0;
@@ -34,10 +34,10 @@ int main_bench()
 	{
 		if(yn[i]==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

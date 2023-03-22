@@ -26,21 +26,21 @@ void shuu(long  unsigned int s)
 {	
 	switch(s%7)
 	{
-	case 0:printf("Sat");break;
-	case 1:printf("Sun");break;
-	case 2:printf("Mon");break;
-	case 3:printf("Tue");break;
-	case 4:printf("Wed");break;
-	case 5:printf("Thu");break;
-	case 6:printf("Fri");break;
+	case 0:my_printf("Sat");break;
+	case 1:my_printf("Sun");break;
+	case 2:my_printf("Mon");break;
+	case 3:my_printf("Tue");break;
+	case 4:my_printf("Wed");break;
+	case 5:my_printf("Thu");break;
+	case 6:my_printf("Fri");break;
 	
-	}printf(".");
+	}my_printf(".");
 }
 
 int main_bench()
 {
 	 long unsigned int toshi,getsu,hi,l=0,s=0,a,b;
-	scanf("%d %d %d",&toshi,&getsu,&hi);
+	my_scanf("%d %d %d",&toshi,&getsu,&hi);
 	if(getsu>=3)
 	{	l=toshi/4-toshi/100+toshi/400;
 		b=toshi%7;

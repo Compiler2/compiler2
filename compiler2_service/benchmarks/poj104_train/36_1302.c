@@ -4,8 +4,8 @@ int main_bench()
 {
 int k,i,j;
 char a[20],b[20];
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%s",a);
+my_scanf("%s",b);
 k=0;
 for(i=0;i<strlen(a);i++)
 {
@@ -23,11 +23,11 @@ for(i=0;i<strlen(a);i++)
 	}
 }
 if(strlen(a)!=strlen(b))
-printf("NO");
+my_printf("NO");
 else{
 if(k==strlen(a))
-printf("YES");
-else printf("NO");
+my_printf("YES");
+else my_printf("NO");
 
 }
 

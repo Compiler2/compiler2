@@ -6,10 +6,10 @@ int main_bench(){
      maxR=0;
      m=0;
      int a[10000][2],c[10000];
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      for(i=0;i<n;i++){
           for(j=0;j<2;j++){
-               scanf("%d",&a[i][j]);
+               my_scanf("%d",&a[i][j]);
           }
      }
      minL=a[0][0];
@@ -29,13 +29,13 @@ int main_bench(){
      }
      for(t=minL;t<=maxR-1;t++){
           if(c[t]==0){
-             printf("no");
+             my_printf("no");
              m=1;
              break;
           }
      }
      if(m==0){
-        printf("%d %d",minL,maxR);
+        my_printf("%d %d",minL,maxR);
      }
      return 0;
 }

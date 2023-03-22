@@ -10,9 +10,9 @@ int main_bench()
 		m[i]='\0';
 		n[i]='\0';
 	}
-	scanf("%d",&a);
-	scanf("%s",n);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",n);
+	my_scanf("%d",&b);
 	for(i=50;i>=0;i--)
 	{
 		if(n[i]!='\0')
@@ -62,11 +62,11 @@ int main_bench()
 		if(m[i]!='\0')
 		{
 			for(j=i;j<=50;j++)
-				printf("%c",m[j]);
+				my_printf("%c",m[j]);
 			break;
 		}
 		if(i==50&&m[i]=='\0')
-			printf("0");
+			my_printf("0");
 	}
-	printf("\n");
+	my_printf("\n");
 }

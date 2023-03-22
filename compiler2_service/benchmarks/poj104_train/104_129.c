@@ -11,7 +11,7 @@ int f(int p)
 int main_bench()
 {
 	int x,y,n,i,a[1000],b[1000],k,j;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	a[0]=x;
 	b[0]=y;
 	for(i=0; ;i++)
@@ -34,12 +34,12 @@ int main_bench()
 	{
 		if(a[k-i]!=b[j-i])
 		{
-			printf("%d\n",a[k-i+1]);
+			my_printf("%d\n",a[k-i+1]);
 			break;
 		}
 		
 	}
 	if(i==n+1)
-		printf("%d\n",a[k-n]);
+		my_printf("%d\n",a[k-n]);
 	
 }

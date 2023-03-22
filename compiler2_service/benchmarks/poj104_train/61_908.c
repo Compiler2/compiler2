@@ -9,9 +9,9 @@ int fibo(int n){
 int main_bench()
 {
 	int n,cases;
-	scanf("%d",&cases);
+	my_scanf("%d",&cases);
 	while(cases--){
-		scanf("%d",&n);
-		printf("%d\n",fibo(n));
+		my_scanf("%d",&n);
+		my_printf("%d\n",fibo(n));
 	}
 }

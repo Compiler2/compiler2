@@ -7,11 +7,11 @@ int main_bench()
 	char c;
 	int i,j,t;
 	do{
-		scanf("%d%c",&a[n],&c);
+		my_scanf("%d%c",&a[n],&c);
 		n++;
 	}while(c!='\n');
 	if(n==1){
-		printf("No");
+		my_printf("No");
 	}
 	else{
 		for(i=0;i<n-1;i++){
@@ -22,12 +22,12 @@ int main_bench()
 			}
 		}
 		if(a[n-1]==a[0]){
-			printf("No");
+			my_printf("No");
 		}
 		else{
 			for(i=1;i<n;i++){
 				if(a[i]<a[i-1]){
-					printf("%d",a[i]);break;
+					my_printf("%d",a[i]);break;
 				}
 			}
 		}

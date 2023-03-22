@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,k,a[11][11]={0},b[11][11]={0};
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[5][5]=m;
 	for(k=0;k<n;k++)
 	{
@@ -24,11 +24,11 @@ int main_bench()
 		for(j=1;j<10;j++)
 		{
 			if(j==1)
-			    printf("%d",b[i][j]);
+			    my_printf("%d",b[i][j]);
 			else
-				printf(" %d",b[i][j]);
+				my_printf(" %d",b[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

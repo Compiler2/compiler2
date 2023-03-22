@@ -34,18 +34,18 @@ main_bench()
 {
 	int n,i;
 	char str[50],put[50][50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<=n-1;i++)
 	{
-		scanf("%s",str);
+		my_scanf("%s",str);
 		delend(str);
 		strcpy(put[i],str);
 	}
     for(i=0;i<=n-2;i++)
     {
-		printf("%s\n",put[i]);
+		my_printf("%s\n",put[i]);
 	}
-    	printf("%s\n",put[n-1]);
+    	my_printf("%s\n",put[n-1]);
 }
 
 	    

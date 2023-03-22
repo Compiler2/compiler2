@@ -5,11 +5,11 @@ int main_bench(){
     int m[10000];
     int h,i,a,b,p,s,j,o,k;
     double l;
-    scanf("%d",&h);
+    my_scanf("%d",&h);
     i=0;
     s=0;
     for(i=0;i<h;i++){
-        scanf("%d%d",&q[i],&m[i]);
+        my_scanf("%d%d",&q[i],&m[i]);
        
     }
     a=q[0];
@@ -29,8 +29,8 @@ int main_bench(){
         
     }
     if(s==b-a){
-        printf("%d %d",a,b);}
-        else {printf("no");}
+        my_printf("%d %d",a,b);}
+        else {my_printf("no");}
         return 0;
     }
     

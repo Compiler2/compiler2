@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char sz[400],*ps;
 for(int i=0;i<=n;i++){
 gets(sz);
@@ -18,6 +18,6 @@ if(*ps=='A'){
 *ps='C';
 }
 }
-printf("%s\n",sz);
+my_printf("%s\n",sz);
 }
 }

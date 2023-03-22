@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,n;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	if(a%400==0||(a%4==0&&a%100!=0))
 	{
 		switch (b){
@@ -135,6 +135,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 	}

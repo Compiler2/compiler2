@@ -7,7 +7,7 @@ int main_bench()
 	char fei=',';
 	while(fei==',')
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		fei=getchar();	
 		i++;
 	}
@@ -15,7 +15,7 @@ int main_bench()
 	fei=',';
 	while(fei==',')
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		fei=getchar();	
 		i++;
 	}
@@ -33,5 +33,5 @@ int main_bench()
 		if(t[i]>max)
 			max=t[i];
 	}
-	printf("%d %d",l,max);
+	my_printf("%d %d",l,max);
 }

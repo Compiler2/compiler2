@@ -3,11 +3,11 @@
 int main_bench()
 {
     int a[999];char r[999][26];int b[125]={0};int n,i,j,maxi,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%s",r[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%s",r[i]);
 		s=strlen(r[i])-1;
 		for(j=0;j<=s;j++)
 		{
@@ -19,8 +19,8 @@ int main_bench()
 	{
 		if(b[i]>b[maxi]) maxi=i;
 	}
-    printf("%c\n",maxi);
-    printf("%d\n",b[maxi]);
+    my_printf("%c\n",maxi);
+    my_printf("%d\n",b[maxi]);
 	for(i=0;i<=n-1;i++)
 	{
 		s=strlen(r[i])-1;
@@ -28,7 +28,7 @@ int main_bench()
 		{
 			if(r[i][j]==maxi)
 			{
-				printf("%d\n",a[i]);
+				my_printf("%d\n",a[i]);
 				break;
 			}
 		}

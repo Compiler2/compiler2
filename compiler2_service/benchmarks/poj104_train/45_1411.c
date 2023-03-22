@@ -10,8 +10,8 @@ int main_bench()
 
     int i,j,k;
 
-    scanf("%s",s1);
-    scanf("%s",s2);
+    my_scanf("%s",s1);
+    my_scanf("%s",s2);
 
     char *p1=s1;
     char *p2=s2;
@@ -38,6 +38,6 @@ int main_bench()
     }
    
     tt=s2;
-    printf("%d",p2-s2-strlen(s1));
+    my_printf("%d",p2-s2-strlen(s1));
 
     return 0;}

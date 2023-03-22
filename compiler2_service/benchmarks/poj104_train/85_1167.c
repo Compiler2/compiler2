@@ -3,7 +3,7 @@
 int main_bench(){
 	int n=0,k;
 	char suoyou[1000][21];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int i=0,jieguo[1000];
 	for(i=0;i<n;i++){
 		gets(suoyou[i]);
@@ -26,9 +26,9 @@ int main_bench(){
 	}
 		for(i=0;i<n;i++){
 			if(jieguo[i]!=0)
-				printf("no\n");
+				my_printf("no\n");
 			else
-				printf("yes\n");
+				my_printf("yes\n");
 		}
 		return 0;
 }

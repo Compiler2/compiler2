@@ -18,14 +18,14 @@ int main_bench()
 {
 	char a[20];
 	char b[20];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int al,bl;
 	al=strlen(a);
 	bl=strlen(b);
     swap(a,al);
 	swap(b,bl);
 	if(strcmp(a,b)==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	else 
-		printf("NO\n");
+		my_printf("NO\n");
 }

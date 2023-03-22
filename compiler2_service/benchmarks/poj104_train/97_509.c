@@ -2,7 +2,7 @@
 
 main_bench(){
 	int n,i,money;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	money=n;
 
 	for(i=0;money>0;i++){
@@ -12,7 +12,7 @@ main_bench(){
 		money+=100;
 		i--;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 
 	for(i=0;money>0;i++){
 		money-=50;
@@ -21,7 +21,7 @@ main_bench(){
 		money+=50;
 		i--;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 
 	for(i=0;money>0;i++){
 		money-=20;
@@ -30,7 +30,7 @@ main_bench(){
 		money+=20;
 		i--;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 
 	for(i=0;money>0;i++){
 		money-=10;
@@ -39,7 +39,7 @@ main_bench(){
 		money+=10;
 		i--;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 
 	for(i=0;money>0;i++){
 		money-=5;
@@ -48,7 +48,7 @@ main_bench(){
 		money+=5;
 		i--;
 	}
-	printf("%d\n",i);
-	printf("%d\n",money);
+	my_printf("%d\n",i);
+	my_printf("%d\n",money);
 	return 0;
 }

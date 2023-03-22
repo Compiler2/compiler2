@@ -19,15 +19,15 @@ int check(char s)
 }
 int main_bench()
 {
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for (i=0;i<n;i++)
     gets(st[i]);
     for (i=0;i<n;i++)
     {
         boo=check(i);
         if (boo==1)
-        printf("yes\n");
-        else printf("no\n");
+        my_printf("yes\n");
+        else my_printf("no\n");
     }
     return 0;
 }

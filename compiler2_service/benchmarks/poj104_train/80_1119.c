@@ -3,7 +3,7 @@
 int main_bench(){
 	int year1,year2,month1,month2,day1,day2,n=0;
 	int i,j,k;
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
 	for(i=year1;i<year2;i++){
 		if(i%4!=0||(i%100==0&&i%400!=0))
 			n+=365;
@@ -32,6 +32,6 @@ int main_bench(){
 			n+=29;
 	}
 	n+=day2;
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 }

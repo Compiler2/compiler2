@@ -4,7 +4,7 @@ int main_bench()
 {
 int a,b,c,m,n,j,k,sum;
 sum=0;
-scanf("%d%d%d",&a,&b,&c);
+my_scanf("%d%d%d",&a,&b,&c);
 m=(a-1)/4;
 n=(a-1)/100;
 k=(a-1)/400;
@@ -24,18 +24,18 @@ sum+=0;
 }
 sum+=c;
 if(sum%7==0)
-printf("Sun.");
+my_printf("Sun.");
 if(sum%7==1)
-printf("Mon.");
+my_printf("Mon.");
 if(sum%7==2)
-printf("Tue.");
+my_printf("Tue.");
 if(sum%7==3)
-printf("Wed.");
+my_printf("Wed.");
 if(sum%7==4)
-printf("Thu.");
+my_printf("Thu.");
 if(sum%7==5)
-printf("Fri.");
+my_printf("Fri.");
 if(sum%7==6)
-printf("Sat.");
+my_printf("Sat.");
 return 0;
 }

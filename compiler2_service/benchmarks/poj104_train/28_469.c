@@ -29,6 +29,6 @@ int main_bench()
 
 	}
 	for(i=0;i<p-1;i++)
-	printf("%d,",b[i]);
-	printf("%d",b[p-1]);
+	my_printf("%d,",b[i]);
+	my_printf("%d",b[p-1]);
 }

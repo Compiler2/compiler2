@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int shu,i,wei[5];
-	scanf("%d\n",&shu);
+	my_scanf("%d\n",&shu);
 	wei[0]=shu/10000;
 	wei[1]=(shu-shu/10000*10000)/1000;
 	wei[2]=(shu-shu/1000*1000)/100;
@@ -12,6 +12,6 @@ int main_bench()
 	for(i=4;i>=0;i--)
 	{
 		if(wei[i]!=0)
-	    printf("%d",wei[i]);
+	    my_printf("%d",wei[i]);
 	}
 }

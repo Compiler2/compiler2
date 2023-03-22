@@ -9,11 +9,11 @@ int main_bench()
 	int sz[6];
 
 	for(i=0;i<6;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 
 	for(i=0;i<6;i++){
-		printf("%d\n",reverse(sz[i]));
+		my_printf("%d\n",reverse(sz[i]));
 	}
 	
 	return 0;

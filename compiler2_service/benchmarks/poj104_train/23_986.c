@@ -12,11 +12,11 @@ int main_bench()
 		while(*p1!=' '&&p1>a) p1--;
 		if(p1!=a)
 		{
-			for(p=p1+1;p<p2;p++) printf("%c",*p);
-		    printf(" ");
+			for(p=p1+1;p<p2;p++) my_printf("%c",*p);
+		    my_printf(" ");
 		}
 		else
-			for(p=p1;p<p2;p++) printf("%c",*p);
+			for(p=p1;p<p2;p++) my_printf("%c",*p);
 		p2=p1;
 	}while(p1>a);
 	return 0;

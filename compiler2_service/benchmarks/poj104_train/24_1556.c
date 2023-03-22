@@ -21,12 +21,12 @@ for(i=0;i<len + 1;i++){
 		}
 	}
 	for(i=j1+1;i<i1;i++){
-		printf("%c",h[i]);
+		my_printf("%c",h[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=j2+1;i<i2;i++){
-		printf("%c",h[i]);
+		my_printf("%c",h[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

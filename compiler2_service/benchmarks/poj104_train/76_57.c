@@ -4,7 +4,7 @@
 int main_bench()
 {
     int n,i,j;
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
     struct region
     {
            int x;
@@ -13,7 +13,7 @@ int main_bench()
     a[n],re;
     for(i=0;i<=n-1;i++)
     {
-                       scanf("%d %d",&a[i].x,&a[i].y);
+                       my_scanf("%d %d",&a[i].x,&a[i].y);
     }
     re.x=a[0].x;
     re.y=a[0].y; 
@@ -34,12 +34,12 @@ int main_bench()
     {
                        if(re.x!=a[j].x||re.y!=a[j].y)
                        {
-                                   printf("no");
+                                   my_printf("no");
                                    
                                    return 0;
                        }
     }
-    printf("%d %d",re.x,re.y);
+    my_printf("%d %d",re.x,re.y);
   
     return 0;
 } 

@@ -4,13 +4,13 @@ int main_bench()
 {
 	int sz[100][100];
 	int k,i;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=1;i<=k;i++){
 		int m,n,a,b,sp=0;
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(a=0;a<=m-1;a++){
 			for(b=0;b<=n-1;b++){
-				scanf("%d",&(sz[a][b]));
+				my_scanf("%d",&(sz[a][b]));
 				sp=sp+sz[a][b];
 			}
 		}
@@ -25,7 +25,7 @@ int main_bench()
 		if(m==1||n==1){
 			sum=sp;
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

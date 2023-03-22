@@ -8,7 +8,7 @@ int main_bench(){
         
             for(j=0;j<6;j++)
             {
-                scanf("%d",&(a[i][j]));
+                my_scanf("%d",&(a[i][j]));
             }
         if(a[i][0]==0&&a[i][1]==0&&a[i][3]==0)
         {
@@ -23,7 +23,7 @@ int main_bench(){
     }
     for(i=0;i<n;i++)
     {
-        printf("%d\n",s[i]);
+        my_printf("%d\n",s[i]);
     }
 
     

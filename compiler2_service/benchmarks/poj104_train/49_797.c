@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,k,l,b,d=0;
 	for(i=0;;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]=='\n')
 			break;
 	}
@@ -37,7 +37,7 @@ int main_bench()
 		for(j=0;j<d;j++)
 		{
 			if(strlen(c[j])==i)
-				printf("%s\n",c[j]);
+				my_printf("%s\n",c[j]);
 		}
 	}
 	return 0;

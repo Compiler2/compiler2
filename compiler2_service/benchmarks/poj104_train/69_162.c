@@ -5,7 +5,7 @@ int main_bench()
 	char a1[252],b1[252];
 	int a[252],b[252],sum[252];
 	
-	scanf("%s",a1);scanf("%s",b1);
+	my_scanf("%s",a1);my_scanf("%s",b1);
 	int i,j;
 	for(i=0;i<252;i++)
 	{
@@ -36,11 +36,11 @@ int main_bench()
 		if(sum[i]!=0)
 			break;
 	}
-	if(i<0) printf("0");
+	if(i<0) my_printf("0");
 	else
 	for(j=i;j>=0;j--)
 	{
-		printf("%d",sum[j]);
+		my_printf("%d",sum[j]);
 	}
 	return 0;
 }

@@ -3,12 +3,12 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i;
       char a[10000][40];
       for (i=0;i<n;i++)
       {
-          scanf("%s",a[i]);                   
+          my_scanf("%s",a[i]);                   
       }
       int t,s=0;
       for (i=0;i<n;i++)
@@ -16,7 +16,7 @@ main_bench()
          if(i==0)
          {
            t=strlen(a[i]);
-           printf("%s",a[i]);                 
+           my_printf("%s",a[i]);                 
            s=s+t;
          }
          else
@@ -25,12 +25,12 @@ main_bench()
            s=s+t+1;
            if(s<=80)
            {
-               printf(" %s",a[i]);                
+               my_printf(" %s",a[i]);                
            }
            else
            {
-               printf("\n");
-               printf("%s",a[i]);             
+               my_printf("\n");
+               my_printf("%s",a[i]);             
                s=t;                          
            }
          }

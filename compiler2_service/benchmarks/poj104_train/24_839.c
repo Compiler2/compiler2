@@ -47,10 +47,10 @@ int main_bench()
 	}
 	
 	for(i=b[max1]+1;i<b[max1+1];i++)
-		printf("%c",a[i]);
-	printf("\n");
+		my_printf("%c",a[i]);
+	my_printf("\n");
 	for(i=b[min1]+1;i<b[min1+1];i++)
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	return 0;
 	
 	

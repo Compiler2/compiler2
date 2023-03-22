@@ -5,8 +5,8 @@ int main_bench(){
 	char b[10000];
 	int i,j;
 	char c;
-	scanf("%s %s",&a,&b);
-	if(strlen(a)!=strlen(b)) printf("NO");
+	my_scanf("%s %s",&a,&b);
+	if(strlen(a)!=strlen(b)) my_printf("NO");
 	else{
 		for(i=0;i<strlen(a);i++){
 			for(j=i;j<strlen(a);j++){
@@ -26,8 +26,8 @@ int main_bench(){
 				}
 			}
 		}
-		if(strcmp(a,b)==0) printf("YES");
-		else printf("NO");
+		if(strcmp(a,b)==0) my_printf("YES");
+		else my_printf("NO");
 	}
 	return 0;
 }

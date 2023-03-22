@@ -1,9 +1,9 @@
 #include <header.h>
 
-void main_bench()
+int main_bench()
 {
 	int n, k, m, l, i;
-	scanf("%d %d", &n, &k);
+	my_scanf("%d %d", &n, &k);
 	m = n - 1;
 	do
 	{
@@ -18,5 +18,5 @@ void main_bench()
 	}
 	while(l % (n - 1) != 0);
 	l = l * n /(n - 1) + k;
-	printf("%d",l);
+	my_printf("%d",l);
 }

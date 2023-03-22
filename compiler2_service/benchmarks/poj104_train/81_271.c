@@ -20,13 +20,13 @@ int main_bench()
 	int a[5][5],n,m,i,j;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d %d",&n,&m);
-	if(cube(a,n,m)==0) printf("error");
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d %d",&n,&m);
+	if(cube(a,n,m)==0) my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
 			for(j=0;j<5;j++)
-				printf("%d%c",a[i][j],(j<4)?' ':'\n');
+				my_printf("%d%c",a[i][j],(j<4)?' ':'\n');
 	}
 }

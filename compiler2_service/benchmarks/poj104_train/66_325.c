@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int y,m,d,a,b,c,e,f,g;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	f=(y-1)/100;g=(y-1)/400;
 	if((y>4)&&(y%4!=0)){a=(y-1)+y/4-f+g;}
   	     else if ((y>4)&&(y%4==0)&&(y!=100)){a=(y-1)+(y-1)/4-f+g;}
@@ -29,12 +29,12 @@ c=b;
 if(c<=7){c=c;}
 else if(c>7){c=c%7;}
 
-if(c==0){printf("Sun.");}
-else if (c==1){printf("Mon.");}
-else if (c==2){printf("Tue.");}
-else if (c==3){printf("Wed.");}
-else if (c==4){printf("Thu.");}
-else if (c==5){printf("Fri.");}
-else if (c==6){printf("Sat.");}
+if(c==0){my_printf("Sun.");}
+else if (c==1){my_printf("Mon.");}
+else if (c==2){my_printf("Tue.");}
+else if (c==3){my_printf("Wed.");}
+else if (c==4){my_printf("Thu.");}
+else if (c==5){my_printf("Fri.");}
+else if (c==6){my_printf("Sat.");}
 return 0;
 }

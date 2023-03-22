@@ -4,20 +4,20 @@ int main_bench()
 {
     int n,row,col,m,k,N[100],d;
     char a[100][100],b[100][100];
-    scanf("%d",&n);
-    scanf("\n");
+    my_scanf("%d",&n);
+    my_scanf("\n");
     N[1]=0;
     for(row=1;row<=n;row++){
         for(col=1;col<=n;col++){
-            scanf("%c",&a[row][col]);
+            my_scanf("%c",&a[row][col]);
             b[row][col]=a[row][col];
             if(a[row][col]=='@'){
                 N[1]++;
             }
         }
-        scanf("\n");
+        my_scanf("\n");
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(row=0;row<=n+1;row++){
         for(col=0;col<=n+1;col++){
             if(row==0||row==n+1||col==0||col==n+1){
@@ -60,6 +60,6 @@ int main_bench()
            }
        }
     }
-    printf("%d",N[m]);
+    my_printf("%d",N[m]);
     return 0;
 } 

@@ -9,7 +9,7 @@ int main_bench()
     c=0;
     d=0;
     e=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(a=2;a<=n;a++)
     {
                      d=0;
@@ -31,9 +31,9 @@ int main_bench()
                      if(d<=2) c=100;
                      if(c==0) 
                      {
-                              printf("%d %d\n",d,a);
+                              my_printf("%d %d\n",d,a);
                               e=100;
                      } 
     }
-    if(e==0) printf("empty");
+    if(e==0) my_printf("empty");
 }

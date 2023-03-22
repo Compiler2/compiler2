@@ -25,7 +25,7 @@ int main_bench()
 				f[j]=a[i+n2+j];
 			}
 			f[j]=0;
-			printf("%s%s%s",d,e,f);
+			my_printf("%s%s%s",d,e,f);
 			m=0;
                            break;
 		}

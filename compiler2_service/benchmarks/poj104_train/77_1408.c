@@ -14,7 +14,7 @@ void f(int m,char a,char b)
 	{
 		if(str[j]==a)
 		{
-			printf("%d %d\n",j,i);
+			my_printf("%d %d\n",j,i);
 			str[i]='*';
 			str[j]='*';
 			break;
@@ -26,7 +26,7 @@ void f(int m,char a,char b)
 }
 int main_bench()
 {
-	scanf("%s",str);
+	my_scanf("%s",str);
 	n=strlen(str);
 	f(n/2,str[0],str[n-1]);
 	return 0;

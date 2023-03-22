@@ -3,16 +3,16 @@
 int main_bench()
 {
     int row, col,n,i,j,k,a[120][120];
-    scanf("%d %d", &row, &col);
+    my_scanf("%d %d", &row, &col);
     for(i=1;i<=row;i++){
                         for(j=1;j<=col;j++)
-                                           {scanf("%d", &a[i][j]);}
+                                           {my_scanf("%d", &a[i][j]);}
                         }
     for(i=1;i<=col;i++){
                         k=i;
                         j=1;
                         while(k>=1&&j<=row){
-                                    printf("%d\n", a[j][k]);
+                                    my_printf("%d\n", a[j][k]);
                                     j++;
                                     k--;
                                     }
@@ -21,7 +21,7 @@ int main_bench()
                                      k=col;
                                      i=j;
                                      while(j<=row&&k>=1){
-                                                       printf("%d\n", a[j][k]);
+                                                       my_printf("%d\n", a[j][k]);
                                                        j++;
                                                        k--;
                                                        }

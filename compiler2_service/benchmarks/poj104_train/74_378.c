@@ -45,18 +45,18 @@ int main_bench()
      int sushu (int);
      int a,b,c,i,j;
      c=0;
-     scanf("%d %d",&a,&b);
+     my_scanf("%d %d",&a,&b);
 	 for (i=a;i<=b;i++)
 	 {
 		 if (huiwen(i)*sushu(i)!=0) 
 		 {
-			 if (c==1) printf(",");
-			 printf("%d",i);
+			 if (c==1) my_printf(",");
+			 my_printf("%d",i);
 			 c=1;
 	
 			  
 		 }
 		
 	 }
-	 if (c==0) printf("no\n");
+	 if (c==0) my_printf("no\n");
 }

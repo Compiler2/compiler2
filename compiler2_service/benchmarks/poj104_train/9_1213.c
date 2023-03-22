@@ -9,9 +9,9 @@ int main_bench(){
 	int n,i,j,d,k;
         j=-1;
 		d=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%s %d",patients[i].id,&patients[i].age);
+		my_scanf("%s %d",patients[i].id,&patients[i].age);
 	}
     for(i=0;i<n;i++){
 		if(patients[i].age>=60){
@@ -33,10 +33,10 @@ int main_bench(){
 	 }
 	}
    for(i=0;i<=d;i++){
-        printf("%s\n",old[i].id);
+        my_printf("%s\n",old[i].id);
    }
    for(i=0;i<=j;i++){
-         printf("%s\n",young[i].id);
+         my_printf("%s\n",young[i].id);
    }
 return 0;
 }

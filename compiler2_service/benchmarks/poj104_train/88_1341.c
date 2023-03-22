@@ -17,8 +17,8 @@ int main_bench() {
         while (isDigit(*(++p)) == 0) {} 
         p--;
         while (isDigit(*(++p)) == 1)
-            printf("%c", *p);
-        printf("\n");
+            my_printf("%c", *p);
+        my_printf("\n");
     } while (*p != '\0');
     return 0;
 }

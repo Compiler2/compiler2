@@ -42,9 +42,9 @@ int main_bench()
 		}
 	}
 	for(i=0;i<max;i++)
-		printf("%c",c[mark1+i]);
-	printf("\n");
+		my_printf("%c",c[mark1+i]);
+	my_printf("\n");
 	for(i=0;i<min;i++)
-		printf("%c",c[mark2+i]);
-	printf("\n");
+		my_printf("%c",c[mark2+i]);
+	my_printf("\n");
 }

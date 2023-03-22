@@ -4,9 +4,9 @@ int main_bench(){
     int n,g,p,w,u,v;
     double e;
     int a[10000],b[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-     scanf("%d %d",&(a[i]),&(b[i]));
+     my_scanf("%d %d",&(a[i]),&(b[i]));
     }
    u=a[0];
    for(g=1;g<n;g++){
@@ -23,10 +23,10 @@ int main_bench(){
             }
             if(w==0)
         {
-            printf("no");
+            my_printf("no");
             return 0;
         }}
-     printf("%d %d",u,v);
+     my_printf("%d %d",u,v);
     return 0;
 }
 

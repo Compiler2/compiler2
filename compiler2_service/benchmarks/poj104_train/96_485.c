@@ -29,7 +29,7 @@ main_bench()
 	}
 	sh[ws]='\0';
 	puts(sh);
-	printf("%d",ys);
+	my_printf("%d",ys);
 	return 0;
 }
 	

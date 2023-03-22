@@ -10,9 +10,9 @@ int f(int n,int min){
 int main_bench()
 {
 	int cases,a;
-	scanf("%d",&cases);
+	my_scanf("%d",&cases);
 	while(cases--){
-		scanf("%d",&a);
-		printf("%d\n",f(a,2));
+		my_scanf("%d",&a);
+		my_printf("%d\n",f(a,2));
 	}
 }

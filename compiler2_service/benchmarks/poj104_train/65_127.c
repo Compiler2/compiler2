@@ -2,9 +2,9 @@
 
 int main_bench(){
     int i,a=0,A,b=0,B,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&A,&B);
+        my_scanf("%d%d",&A,&B);
         if(A==B){
             continue;
         }

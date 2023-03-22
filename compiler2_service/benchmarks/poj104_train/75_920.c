@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a,b,c=0,d=0,e=0,f,g,h,i,j,r[2][10000],t[1001]={0};
 	char s1[20000],s2[20000];
-	scanf("%s",&s1);a=strlen(s1);
-	scanf("%s",&s2);j=strlen(s2);
+	my_scanf("%s",&s1);a=strlen(s1);
+	my_scanf("%s",&s2);j=strlen(s2);
 	r[0][0]=r[1][0]=0;
 	for(b=0;b<=a;b++)
 	{
@@ -29,5 +29,5 @@ int main_bench()
 	h=0;
 	for(i=0;i<1000;i++)
 	{if(h<t[i])h=t[i];}
-	printf("%d %d",e,h);
+	my_printf("%d %d",e,h);
 }

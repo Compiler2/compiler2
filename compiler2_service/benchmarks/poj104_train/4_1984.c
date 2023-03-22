@@ -4,12 +4,12 @@ int main_bench()
 {
 	int row,col,k,i,j;
 	int a[100][100]={{0},{0}};
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 		for(i=0;i<row;i++)
 		{
 			for(j=0;j<col;j++)
 			{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			}
 		}
 		for(k=0;k<row+col-1;)
@@ -20,7 +20,7 @@ int main_bench()
 				{
 				if(i+j==k)
 				{
-					printf("%d\n",a[i][j]);
+					my_printf("%d\n",a[i][j]);
 				}
 				}
 			}

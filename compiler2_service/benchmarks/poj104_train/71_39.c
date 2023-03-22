@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,year,m1,m2,i,a[13],date;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
         date=0;
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		if(((year%4==0&&year%100!=0)||year%400==0)==1)
 		{
 			a[1]=31;
@@ -31,18 +31,18 @@ int main_bench()
 					date=date+a[m2];
 				}
 			if(date%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else 
-				printf("NO\n");}
+				my_printf("NO\n");}
 			else
 			{for(;m1<m2;m1++)
 				{
 					date=date+a[m1];
 				}
 			if(date%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else 
-				printf("NO\n");}
+				my_printf("NO\n");}
 		}
 		else
 		{
@@ -66,18 +66,18 @@ int main_bench()
 					date=date+a[m2];
 				}
 			if(date%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else 
-				printf("NO\n");}
+				my_printf("NO\n");}
 			else
 			{for(;m1<m2;m1++)
 				{
 					date=date+a[m1];
 				}
 			if(date%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else 
-				printf("NO\n");}
+				my_printf("NO\n");}
 		}
 	}
 

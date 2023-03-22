@@ -5,7 +5,7 @@ int main_bench()
   i=1;
   while(i<5)
   {	
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   q=n/10000;
   w=(n-10000*q)/1000;
   e=(n-10000*q-1000*w)/100;
@@ -17,6 +17,6 @@ int main_bench()
    else a[i]=t*10000+r*1000+e*100+w*10+q;
    i=i+1;
   }
-	printf("%d\n%d\n%d\n%d\n",a[1],a[2],a[3],a[4]);
+	my_printf("%d\n%d\n%d\n%d\n",a[1],a[2],a[3],a[4]);
    return 0;
 }

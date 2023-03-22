@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int jz[100][100];
 	int m,n;
 	
@@ -10,11 +10,11 @@ int main_bench(){
 	int i,j,q;
 	
 	for(q=0;q<k;q++){
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		 for(i=0;i<m;i++){
 			 for(j=0;j<n;j++){
 		   
-			    scanf("%d",&(jz[i][j]));
+			    my_scanf("%d",&(jz[i][j]));
 			}  
 		}
 	    for(i=0;i<m;i++){
@@ -31,9 +31,9 @@ int main_bench(){
 		}
     	s[q]=s[q]-(jz[0][0])-(jz[0][n-1])-(jz[m-1][0])-(jz[m-1][n-1]);
 	    if(q==k-1){
-	     	printf("%d",s[q]);
+	     	my_printf("%d",s[q]);
 		}else{
-	    	printf("%d\n",s[q]);
+	    	my_printf("%d\n",s[q]);
 		}
 		m=0;
 		n=0;

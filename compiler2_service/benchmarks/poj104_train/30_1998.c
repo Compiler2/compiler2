@@ -15,13 +15,13 @@
 int main_bench(){
     int n;
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;i<=n;i++){
 		if(wuSeven(i)){
 			sum=sum+i*i;
 	}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 

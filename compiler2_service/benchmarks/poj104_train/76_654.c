@@ -3,11 +3,11 @@
 
 int main_bench(){
     int i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int x[n];
 	int y[n];
 	for(i=0;i<n;i++){
-       scanf("%d %d",&(x[i]),&(y[i]));
+       my_scanf("%d %d",&(x[i]),&(y[i]));
     }
 	int min,max;
 	for(j=0;j<n;j++){
@@ -29,13 +29,13 @@ int main_bench(){
 	int arc=y[0];
 	int m=0;
 	for(i=0;i<n-1;i++){
-		if(arc<x[i+1]){printf("no"); 
+		if(arc<x[i+1]){my_printf("no"); 
 		               break;
 		}
 		else{if(arc<y[i+1]){arc=y[i+1];}
 		   m++;
 		}
-		if(m==n-1){printf("%d %d",e,f);}
+		if(m==n-1){my_printf("%d %d",e,f);}
 	}
 return 0;
 }

@@ -3,9 +3,9 @@
 
 int main_bench(){
     int n,num[100],i,a,j,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d",&num[i]);
+                     my_scanf("%d",&num[i]);
                      }
                      if(n%2!=0){
                                b=(n-1)/2;
@@ -20,9 +20,9 @@ int main_bench(){
                                                           }
                                                                                                                     
                                                           for(i=0;i<n-1;i++){
-                                                          printf("%d ",num[i]);
+                                                          my_printf("%d ",num[i]);
                                                           }
-                                                          printf("%d",num[n-1]);
+                                                          my_printf("%d",num[n-1]);
 
                                                           return 0;
                                                           }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,j,sum=0,k,len,h=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[100005];
 	for(i=0;i<n;i++)
 	{
-		scanf("\n%s",s);
+		my_scanf("\n%s",s);
 		len=strlen(s);
 		h=0;
 		for(j=0;j<len;j++)
@@ -24,14 +24,14 @@ int main_bench()
 			}	
 			if(sum==0)
 			{
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				h++;
 				break;	
 			}
 		}
 		if(h==0)
 		{
-			printf("no\n");	
+			my_printf("no\n");	
 		}
 	}
 

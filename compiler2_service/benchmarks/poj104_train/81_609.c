@@ -26,19 +26,19 @@ int i, j;
 int n, m;
 for (i=0; i<5; i++){
 for (j=0; j<5; j++){
-scanf("%d", &Matrix[i][j]);
+my_scanf("%d", &Matrix[i][j]);
 }
 }
-scanf("%d %d", &n, &m);
+my_scanf("%d %d", &n, &m);
 if (FindAndExchange(Matrix, n, m)) {
 for (i=0; i<5; i++){
-if (i>0) printf("\n");
+if (i>0) my_printf("\n");
 for (j=0; j<5; j++){
-if (j>0) printf(" ");
-printf("%d", Matrix[i][j]);
+if (j>0) my_printf(" ");
+my_printf("%d", Matrix[i][j]);
 }
 }
 } else
-printf("error");
+my_printf("error");
 return 0;
 }

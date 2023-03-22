@@ -25,11 +25,11 @@ int main_bench()
 	{
 		int a;
 		a=strlen(sz[i]);
-		printf("%d,",a);
+		my_printf("%d,",a);
 	}
 	int b;
 	b=strlen(sz[j]);
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }
 

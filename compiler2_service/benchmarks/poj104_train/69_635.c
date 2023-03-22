@@ -4,8 +4,8 @@ int main_bench()
 {
 	int i,a,b,c,k;
 	char z[500],x[500],y[500];
-	scanf("%s",x);
-	scanf("%s",y);
+	my_scanf("%s",x);
+	my_scanf("%s",y);
 	a=strlen(x);
 	b=strlen(y);
 	if(a>=b)
@@ -79,11 +79,11 @@ int main_bench()
 		if(z[i]!='0')break;
 		if(i==c-1)
 		{
-			printf("0");
+			my_printf("0");
 			i++;
 		}
 	}
 	for(;i<c;i++)
-		printf("%c",z[i]);
+		my_printf("%c",z[i]);
 	return 0;
 }

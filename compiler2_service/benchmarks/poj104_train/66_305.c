@@ -25,15 +25,15 @@ int xinqi(int z,int x,int w)
 int main_bench()
 {
    int year,mon,day,days;
-   scanf("%d%d%d",&year,&mon,&day);
+   my_scanf("%d%d%d",&year,&mon,&day);
    year=year%200000;
    
    days=xinqi(year,mon,day);
-   if(days==0) printf("Mon.");
-   if(days==1) printf("Tue.");
-   if(days==2) printf("Wed.");
-   if(days==3) printf("Thu.");
-   if(days==4) printf("Fri.");
-   if(days==5) printf("Sat.");
-   if(days==6) printf("Sun.");
+   if(days==0) my_printf("Mon.");
+   if(days==1) my_printf("Tue.");
+   if(days==2) my_printf("Wed.");
+   if(days==3) my_printf("Thu.");
+   if(days==4) my_printf("Fri.");
+   if(days==5) my_printf("Sat.");
+   if(days==6) my_printf("Sun.");
    }

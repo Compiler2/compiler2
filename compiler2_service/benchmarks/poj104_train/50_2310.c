@@ -4,7 +4,7 @@ int main_bench(){
     int m,i,t,w;
 	int sz[20];
 	t=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	w=(m+12)%7;
 	sz[1]=w;
 	sz[2]=(w+31)%7;
@@ -19,7 +19,7 @@ int main_bench(){
 	sz[11]=(sz[10]+31)%7;
 	sz[12]=(sz[11]+30)%7;
 	for(i=1;i<=12;i++){
-		if(sz[i]==5){printf("%d\n",i);t=1;}
+		if(sz[i]==5){my_printf("%d\n",i);t=1;}
 	}
 	return 0;
 }

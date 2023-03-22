@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int m=0,n=0,a=0,count=0,num=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n;
 	int *sz=(int *) malloc(sizeof(int) *n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		for(int t=0;t<i;t++){
 			if(sz[i]==sz[t]){
 				a=1;
@@ -20,7 +20,7 @@ int main_bench(){
 	}
 	for(int k=0;k<n;k++){
 		if(sz[k]!=0){
-			printf("%d,",sz[k]);
+			my_printf("%d,",sz[k]);
 			count++;
 			num=k;
 		}
@@ -30,7 +30,7 @@ int main_bench(){
 	}
 	for(int j=num+1;j<n;j++){
 		if(sz[j]!=0){
-			printf("%d",sz[j]);
+			my_printf("%d",sz[j]);
 			break;
 		}
 	}

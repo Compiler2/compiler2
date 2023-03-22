@@ -4,7 +4,7 @@ int main_bench()
 { char zi[50],mu[50];
   int i,j,flag=0,zichang,muchang;
  
- scanf("%s %s",zi,mu);
+ my_scanf("%s %s",zi,mu);
  zichang=strlen(zi);
  muchang=strlen(mu);
  for(i=0;i<=muchang-zichang;i++)
@@ -13,7 +13,7 @@ int main_bench()
      {flag=1;break;}
     }
    if(flag!=1)
-   { printf("%d",i);
+   { my_printf("%d",i);
      break;}
    flag=0;}
  getchar();

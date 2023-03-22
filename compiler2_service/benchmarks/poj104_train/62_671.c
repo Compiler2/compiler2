@@ -16,6 +16,6 @@ if (a[i]==32) t++;
 i++; 
 }
 b[n]='\0';
-printf ("%s\n",b);
+my_printf ("%s\n",b);
 return 0;
 }

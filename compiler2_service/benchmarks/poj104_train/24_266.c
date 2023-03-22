@@ -68,7 +68,7 @@ int main_bench()
 		for (k=0;k<=i;k++) *(mins+k)=*(temp+k);
 		min=i;
 	}		
-	for (k=0;k<max;k++) printf("%c",*(maxs+k));
-	printf("\n");
-	for (k=0;k<min;k++) printf("%c",*(mins+k));
+	for (k=0;k<max;k++) my_printf("%c",*(maxs+k));
+	my_printf("\n");
+	for (k=0;k<min;k++) my_printf("%c",*(mins+k));
 }

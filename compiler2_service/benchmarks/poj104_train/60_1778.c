@@ -19,14 +19,14 @@ int main_bench()
      j=1;
 	 x=x+1;}
   int n; 
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   if(n<5)
-    printf("empty");
+    my_printf("empty");
   else  
      {for(i=1;i<1500;i++)
         {if(s[i]>n)
       	   break;
          if(s[i]-s[i-1]==2)
-      	  printf("%d %d\n",s[i-1],s[i]);}}
+      	  my_printf("%d %d\n",s[i-1],s[i]);}}
   return 0;
 }  

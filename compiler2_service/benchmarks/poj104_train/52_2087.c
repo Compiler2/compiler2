@@ -4,18 +4,18 @@ int main_bench()
 {
 	void move(int num[],int m,int n);
 	int num[100],m,n,i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	}
 	move(num,m,n);
-	printf("%d",num[0]);
+	my_printf("%d",num[0]);
 	for(i=1;i<m;i++)
 	{
-		printf(" %d",num[i]);
+		my_printf(" %d",num[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
 void move(int num[],int m,int n)
 {

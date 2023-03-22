@@ -6,7 +6,7 @@ int main_bench()
 	gets(num);
 	for(int i=strlen(num)-1;i>=0;i--)
 	{
-		printf("%c",num[i]);
+		my_printf("%c",num[i]);
 	}
 	getchar();
 	getchar();

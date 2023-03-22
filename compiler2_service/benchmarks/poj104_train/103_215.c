@@ -18,11 +18,11 @@ main_bench()
               b=b+1;
               else 
               {
-                   printf("(%c,%d)",a[i-1],b);
+                   my_printf("(%c,%d)",a[i-1],b);
                    b=1;
               }
       }
-      printf("(%c,%d)",a[i-1],b);
+      my_printf("(%c,%d)",a[i-1],b);
       getchar();
       getchar();
 }

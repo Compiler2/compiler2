@@ -3,7 +3,7 @@
 main_bench()
 {
       int i,j,w;
-      scanf("%d",&w);
+      my_scanf("%d",&w);
       int a[12];
       a[0]=13;
       for(i=1;i<=11;i++)
@@ -20,14 +20,14 @@ main_bench()
       for(i=0;i<=11;i++)
       {j=6-w;
       if((a[i]-j)%7==0)
-      printf("%d\n",i+1);
+      my_printf("%d\n",i+1);
       }      
       }
       else
       {for(i=0;i<=11;i++)
       {j=13-w;
       if((a[i]-j)%7==0)
-      printf("%d\n",i+1);
+      my_printf("%d\n",i+1);
       }
       } 
      

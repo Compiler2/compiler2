@@ -4,9 +4,9 @@ int main_bench()
 {int k,N;
 int sz[500],js[100];
 int i,sum=0,e,m;
-scanf("%d",&N);
+my_scanf("%d",&N);
 for(k=0;k<N;k++)
-                {scanf("%d",&m);
+                {my_scanf("%d",&m);
 	if(m%2!=0)
     {    sz[sum]=m;
     sum++;
@@ -22,9 +22,9 @@ for(k=1; k<=sum; k++)
 	}
 }
 for(i=0;i<sum;i++)
-                  {printf("%d",sz[i]);
+                  {my_printf("%d",sz[i]);
                   if(i!=sum-1)
-                  {printf(",");
+                  {my_printf(",");
                   }
                        }
 

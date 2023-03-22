@@ -16,10 +16,10 @@ int main_bench()
 	        str2[i]=c;
 	}
 	if(strcmp(str1,str2)>0)
-		printf(">\n");
+		my_printf(">\n");
 	if(strcmp(str1,str2)<0)
-	printf("<\n");
+	my_printf("<\n");
 if(strcmp(str1,str2)==0)
-printf("=\n");
+my_printf("=\n");
 return 0;
 }

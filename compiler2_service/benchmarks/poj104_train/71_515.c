@@ -10,9 +10,9 @@ int main_bench()
     int f(int p,int m,int n),i,p=0;
     
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%d%d%d",&date[i].year,&date[i].m1,&date[i].m2);
+    my_scanf("%d%d%d",&date[i].year,&date[i].m1,&date[i].m2);
                     
     for(i=0;i<n;i++)   
     {            
@@ -29,7 +29,7 @@ int f(int p,int m,int n)
 {
     int a[13]={1,32,60,91,121,152,182,213,244,274,305,335};
     if((abs(a[m-1]-a[n-1])+p)%7==0)
-    printf("YES\n");
+    my_printf("YES\n");
     else
-    printf("NO\n");
+    my_printf("NO\n");
 }

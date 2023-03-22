@@ -6,7 +6,7 @@ int main_bench()
 	int num=0,i,j;
 	for(i=0;i<101;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		num++;
 		if(a[i]=='\n')
 			break;
@@ -22,6 +22,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<num;i++)
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	return 0;
 }

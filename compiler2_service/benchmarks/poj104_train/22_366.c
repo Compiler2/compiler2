@@ -17,14 +17,14 @@ else
 t[d]=t[d]*10+s[i]-'0';
 }
 if(d==1)
-printf("No");
+my_printf("No");
 else
 {
 j=t[0];
 for(a=1;a<d;a++)
 if(t[a]>=j)
 {j=t[a];e++;}
-if(e==d)printf("No");
+if(e==d)my_printf("No");
 else
 {
 m=0;
@@ -32,7 +32,7 @@ for(a=0;a<d;a++)
 {
 if(t[a]>m&&t[a]<j)m=t[a];
 }
-printf("%d",m);
+my_printf("%d",m);
 }
 }
 }

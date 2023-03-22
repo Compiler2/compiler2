@@ -24,10 +24,10 @@ int main_bench(){
 			strcpy(w[j],b);
 		}
 		if(j==0){
-		    printf("%s",w[j]);
+		    my_printf("%s",w[j]);
 		}
 		else{
-			printf(" %s",w[j]);
+			my_printf(" %s",w[j]);
 		}
 	}
 	return 0;

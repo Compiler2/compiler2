@@ -5,10 +5,10 @@ int main_bench()
       char store[300],add1[300]={'\0'},add2[300]={'\0'},sum[300]={'\0'};
       int i,l,j,l1,l2;
       
-      scanf("%s",store);
+      my_scanf("%s",store);
       l=strlen(store)-1;
       for(i=l;i>=0;i--) add1[l-i]=store[i];
-      scanf("%s",store);
+      my_scanf("%s",store);
       l=strlen(store)-1;
       for(i=l;i>=0;i--) add2[l-i]=store[i];
       
@@ -34,6 +34,6 @@ int main_bench()
             
       l=strlen(sum);
       for(i=l-1;i>=0;i--) if(sum[i]!='0' || i==0) break;
-      for(;i>=0;i--) printf("%c",sum[i]);
+      for(;i>=0;i--) my_printf("%c",sum[i]);
       return 0;
 } 

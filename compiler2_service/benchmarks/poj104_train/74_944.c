@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int m, n,a,i,j,temp,x,y;
-	scanf("%d",&m);
-	scanf("%d",&n);
+	my_scanf("%d",&m);
+	my_scanf("%d",&n);
 	for(j=0;m<=n;m++)
 	{
 		if(m==1)
@@ -29,12 +29,12 @@ int main_bench()
 			{   
 				j=j+1;        
 				if(j==1)
-					printf("%d",m);
+					my_printf("%d",m);
 			    else
-					printf(",%d",m);
+					my_printf(",%d",m);
 			}
 		}
 	}
 	if(j==0)
-		printf("no");
+		my_printf("no");
 }

@@ -9,10 +9,10 @@ int main_bench()
 	}a[999];
     char wr[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 	int g[26]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&a[i].num,a[i].wrt);
+		my_scanf("%d%s",&a[i].num,a[i].wrt);
 		c=strlen(a[i].wrt);
         for(j=0;j<c;j++)
 		{
@@ -31,7 +31,7 @@ int main_bench()
 	  }
 	}
 
-	printf("%c\n%d\n",wr[d],f);
+	my_printf("%c\n%d\n",wr[d],f);
 	for(i=0;i<n;i++)
 	{
         c=strlen(a[i].wrt);
@@ -39,7 +39,7 @@ int main_bench()
 		{
 			if(a[i].wrt[j]==wr[d])
 			{
-				printf("%d\n",a[i].num);
+				my_printf("%d\n",a[i].num);
 				break;
 			}
 		}

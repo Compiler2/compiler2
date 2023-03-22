@@ -6,9 +6,9 @@ int main_bench()
 	int a[302]={0},r[301]={0};
 	int i,j,count=0,tag=0,temp;
 	float aver,max=0,sum=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 		sum+=a[i];
 	aver=sum/n;
@@ -48,12 +48,12 @@ int main_bench()
 		}
 	}
 	if(count==1)
-		printf("%d",r[1]);
+		my_printf("%d",r[1]);
 else
 {
 	for(i=1;i<count;i++)
-		printf("%d,",r[i]);
-	printf("%d\n",r[i]);
+		my_printf("%d,",r[i]);
+	my_printf("%d\n",r[i]);
 }
 }
 

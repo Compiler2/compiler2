@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,sz[1000],k,p=0,h[1000][1000],i,j;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);}
+		my_scanf("%d",&sz[i]);}
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n-i-1;j++){
 			h[i][j]=sz[i]+sz[j];
@@ -14,8 +14,8 @@ int main_bench()
 		}
 	}
 	if(p==0){
-		printf("no");}
+		my_printf("no");}
 	else if(p==1){
-		printf("yes");}
+		my_printf("yes");}
 	return 0;
 }

@@ -8,10 +8,10 @@ int main_bench()
 		int num, ch, ma, grade;
     }sum[100000], h, m, t;
 	int i, n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d", &sum[i].num, &sum[i].ch, &sum[i].ma);
+		my_scanf("%d%d%d", &sum[i].num, &sum[i].ch, &sum[i].ma);
 	    sum[i].grade=sum[i].ch+sum[i].ma;
 	}
 	h.grade=m.grade=t.grade=0;
@@ -31,6 +31,6 @@ int main_bench()
 		else if(sum[i].grade>t.grade)
 			t=sum[i];
 	}
-	printf("%d %d\n%d %d\n%d %d\n", h.num, h.grade, m.num, m.grade, t.num, t.grade);
+	my_printf("%d %d\n%d %d\n%d %d\n", h.num, h.grade, m.num, m.grade, t.num, t.grade);
 	return 0;
 }

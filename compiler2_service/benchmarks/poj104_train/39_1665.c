@@ -12,12 +12,12 @@ int schsum[200];
 int main_bench(){
 	int n,i,num,whole;
 	char str1[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		int j;
 		char str2[21],x4,x5;
 		int x2,x3,x6;
-		scanf("%s %d %d %c %c %d",str2,&x2,&x3,&x4,&x5,&x6);
+		my_scanf("%s %d %d %c %c %d",str2,&x2,&x3,&x4,&x5,&x6);
 		for (j=0;j<21;j++) name[i][j]=str2[j];
 		qmg[i]=x2;
 		cg[i]=x3;
@@ -45,14 +45,14 @@ int main_bench(){
 	for(i=0;i<21;i++) str1[i]=name[num][i];
 
 	puts(str1);
-	printf("%d\n" ,schsum[num]);
+	my_printf("%d\n" ,schsum[num]);
 
 	whole=0;
 	for(i=0;i<n;i++){
 		whole+=schsum[i];
 	}
 	
-	printf("%d",whole);
+	my_printf("%d",whole);
 	
 	return 0;
 }

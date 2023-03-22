@@ -3,16 +3,16 @@
  int main_bench(){
  	int n,m,h,l,i,e,a;
  	char s[200][200],w[200][200];
- 	scanf("%d",&n);
+ 	my_scanf("%d",&n);
  	for(h=0;h<n;h++){
- 			scanf("%s",s[h]);
+ 			my_scanf("%s",s[h]);
  		}
  	for(h=0;h<n;h++){
  		for(l=0;l<n;l++){
  			w[h+1][l+1]=s[h][l];
  		}
  	}
- 	scanf("%d",&m);
+ 	my_scanf("%d",&m);
  	for(e=1;e<m;e++){
  		for(h=1;h<n+1;h++){
  		    for(l=1;l<n+1;l++){
@@ -49,7 +49,7 @@
  			}
  		}
  	}
- 		 printf("%d\n",a);
+ 		 my_printf("%d\n",a);
   
    
 	

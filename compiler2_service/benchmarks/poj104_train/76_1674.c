@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,a[50000],b[50000],c[50000],i,e,f,j,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
     {
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
     }
     e=a[0];
     f=b[0];
@@ -31,7 +31,7 @@ int main_bench(){
     {
         sum+=c[i];
     }
-    if(sum==1){printf("%d %d",e, f);}
-    else printf("no");
+    if(sum==1){my_printf("%d %d",e, f);}
+    else my_printf("no");
 	return 0;
 }

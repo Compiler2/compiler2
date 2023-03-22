@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,i,j,a,b,k[100],m,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<100;i++){k[i]=0;}
 	m=0;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if((a>=90&&a<=140)&&b>=60&&b<=90){
 			k[m]++;
 		}
@@ -21,6 +21,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",k[m]);
+	my_printf("%d",k[m]);
 	return 0;
 }

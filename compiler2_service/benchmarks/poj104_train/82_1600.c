@@ -6,9 +6,9 @@ int main_bench()
 	y=0;
 	x=0;
 	i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a>=90&&a<=140&&b>=60&&b<=90){
 			x=x+1;
 			i=i+1;
@@ -25,9 +25,9 @@ int main_bench()
 	}
 		    	if(y<x){
 				y=x;
-				printf("%d",y);
+				my_printf("%d",y);
 				}else{
-			     printf("%d",y);
+			     my_printf("%d",y);
 				}
 
 

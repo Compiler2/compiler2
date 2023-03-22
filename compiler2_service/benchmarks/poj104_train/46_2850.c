@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int row,col,i,j,array[101][101],count=0;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 		for(j=0;j<col;j++)
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		int num=row+col-1;
 		for(i=1;i<=num;i++)
 		{
@@ -19,7 +19,7 @@ int main_bench()
 					{
 						for(j=i/4;j<col-i/4;j++)
 						{
-							printf("%d\n",array[i/4][j]);
+							my_printf("%d\n",array[i/4][j]);
 							count+=1;
 						}
 						break;
@@ -28,7 +28,7 @@ int main_bench()
 					{
 						for(j=i/4+1;j<row-i/4;j++)
 						{
-							printf("%d\n",array[j][col-i/4-1]);
+							my_printf("%d\n",array[j][col-i/4-1]);
 							count+=1;
 						}
 						break;
@@ -37,7 +37,7 @@ int main_bench()
 					{
 						for(j=col-2-i/4;j>=i/4;j--)
 						{
-							printf("%d\n",array[row-1-i/4][j]);
+							my_printf("%d\n",array[row-1-i/4][j]);
 							count+=1;
 						}
 						break;
@@ -46,7 +46,7 @@ int main_bench()
 					{
 						for(j=row-1-i/4;j>=i/4;j--)
 						{
-							printf("%d\n",array[j][i/4-1]);
+							my_printf("%d\n",array[j][i/4-1]);
 							count+=1;
 						}
 						break;

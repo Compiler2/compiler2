@@ -20,9 +20,9 @@ int main_bench()
   i++;
  }while(c!='\0');
  memcpy(p,str+l1,max);
- printf("%s\n",p);
+ my_printf("%s\n",p);
  memcpy(p,"",50);
  memcpy(p,str+l2,min);
- printf("%s\n",p);
+ my_printf("%s\n",p);
  return 0;
 }

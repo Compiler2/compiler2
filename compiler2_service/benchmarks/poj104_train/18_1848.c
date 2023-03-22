@@ -6,7 +6,7 @@ void getmap()
      int i,j;
      for(i=1;i<=n;i++)
      for(j=1;j<=n;j++)
-     scanf("%d",&map[i][j]);
+     my_scanf("%d",&map[i][j]);
 }
 int minh(int x)
 {
@@ -59,7 +59,7 @@ int main_bench()
     int i,j,y=1; 
     int v,u;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     { sum=0;
     getmap(); 
@@ -81,9 +81,9 @@ int main_bench()
                  
     }
     if(y==0)
-    printf("\n%d",sum);
+    my_printf("\n%d",sum);
     else
-    printf("%d",sum);
+    my_printf("%d",sum);
     y=0;
     }     
     

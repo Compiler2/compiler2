@@ -7,7 +7,7 @@ int main_bench()
     int i=0,j;
     while(c!='\n')
     {
-        scanf("%d%c",&s[i],&c);
+        my_scanf("%d%c",&s[i],&c);
         i++;
     }
     for(j=0;j<i;j++)
@@ -21,8 +21,8 @@ int main_bench()
         continue;
     }
     if(second)
-    printf("%d",second);
+    my_printf("%d",second);
     else
-    printf("No");
+    my_printf("No");
     return 0;
 }

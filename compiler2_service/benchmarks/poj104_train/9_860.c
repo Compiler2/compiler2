@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a[100],j=0,c[100],z,r;
 	char s[100][10],b[100][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",s[i],&a[i]);
+		my_scanf("%s %d",s[i],&a[i]);
 		if(a[i]>=60){
 			c[j]=a[i];
 			strcpy(b[j],s[i]);
@@ -32,12 +32,12 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		printf("%s\n",b[i]);
+		my_printf("%s\n",b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(a[i]<60){
-			printf("%s\n",s[i]);
+			my_printf("%s\n",s[i]);
 		}
 	}
 	return 0;

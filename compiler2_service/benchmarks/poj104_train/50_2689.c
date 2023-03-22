@@ -3,7 +3,7 @@
 main_bench()
 {
    int b[12],c[12],i,k,w;
-   scanf("%d",&w);
+   my_scanf("%d",&w);
    for(i=0;i<12;i++)
    {
      if(i==0||i==2||i==4||i==6||i==7||i==9||i==11)b[i]=31;
@@ -17,7 +17,7 @@ main_bench()
    for(i=0;i<12;i++)
    {  
      if((c[i]+w)%7==0)
-     {printf("%d\n",i+1);}
+     {my_printf("%d\n",i+1);}
      c[i+1]=c[i]+b[i];
    }
    } 

@@ -4,7 +4,7 @@ main_bench()
 {
       char a[1001];
       int n,i,x,count;
-      scanf("%s",a);
+      my_scanf("%s",a);
       n=strlen(a);
       for(i=0;i<n;i++)
       {
@@ -19,12 +19,12 @@ main_bench()
            }
            else
            {
-               printf("(%c,%d)",x,count);
+               my_printf("(%c,%d)",x,count);
                count=1;
                x=a[i];
            }
            if(i==n-1)
-           printf("(%c,%d)",x,count);
+           my_printf("(%c,%d)",x,count);
       }
       getchar();
       getchar();

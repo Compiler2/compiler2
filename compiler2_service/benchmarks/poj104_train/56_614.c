@@ -5,7 +5,7 @@ int main_bench()
     int x,y,a,b,c,d,e;
     int p,q,r;
     int h,i,j,k;
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     a=x/10000;
     p=x%10000;
     b=p/1000;
@@ -23,14 +23,14 @@ int main_bench()
       if(i==0)
         if(j==0)
           if(k==0)
-            printf("%d",e);
+            my_printf("%d",e);
           else
-            printf("%d%d",e,d);
+            my_printf("%d%d",e,d);
         else
-          printf("%d%d%d",e,d,c);
+          my_printf("%d%d%d",e,d,c);
       else
-        printf("%d%d%d%d",e,d,c,b);
+        my_printf("%d%d%d%d",e,d,c,b);
     else
-      printf("%d%d%d%d%d",e,d,c,b,a);
+      my_printf("%d%d%d%d%d",e,d,c,b,a);
     return 0;
 }

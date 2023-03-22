@@ -13,15 +13,15 @@ main_bench(){
     char a;    
     n=0;
     do{
-	scanf("%s",word[++n]);
+	my_scanf("%s",word[++n]);
 	a=getchar();
     }while(a!='\n');
-    scanf("%s%s",fw,tw);
+    my_scanf("%s%s",fw,tw);
     for(i=1;i<=n;i++){
-	if(strcmp(fw,word[i])==0)printf("%s",tw);
-	else printf("%s",word[i]);
-	if(i<n)printf(" ");
-	else printf("\n");
+	if(strcmp(fw,word[i])==0)my_printf("%s",tw);
+	else my_printf("%s",word[i]);
+	if(i<n)my_printf(" ");
+	else my_printf("\n");
     }
     
     return 0;

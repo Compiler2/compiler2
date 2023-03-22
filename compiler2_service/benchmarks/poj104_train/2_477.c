@@ -8,9 +8,9 @@ int main_bench() {
     } book[999];
     int time[26]={0};
     int n, i, j, k, maxi, sign=0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0;i<n;i++) {
-        scanf("%d%s", &book[i].num, book[i].author);
+        my_scanf("%d%s", &book[i].num, book[i].author);
     }
     for (i=0;i<n;i++) {
         for (j=0;book[i].author[j]!='\0';j++) {
@@ -28,11 +28,11 @@ int main_bench() {
             maxi=i;
         }
     }
-    printf("%c\n%d\n", 'A'+maxi, time[maxi]);
+    my_printf("%c\n%d\n", 'A'+maxi, time[maxi]);
     for (i=0;i<n&&sign==0;i++) {
         for (j=0;book[i].author[j]!='\0';j++) {
             if (book[i].author[j]=='A'+maxi) {
-                printf("\n%d", book[i].num);
+                my_printf("\n%d", book[i].num);
                 sign=1;
                 break;
             }
@@ -41,7 +41,7 @@ int main_bench() {
     for (;i<n;i++) {
         for (j=0;book[i].author[j]!='\0';j++) {
             if (book[i].author[j]=='A'+maxi) {
-                printf("\n%d", book[i].num);
+                my_printf("\n%d", book[i].num);
                 break;
             }
         }

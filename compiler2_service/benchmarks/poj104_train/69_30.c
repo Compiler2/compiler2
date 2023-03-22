@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[252],b[252],f[252],g[252];
 	int i,c,d,t=0,n=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	c=strlen(a);
 	d=strlen(b);\
 	if(c>d)
@@ -51,6 +51,6 @@ int main_bench()
 		g[i]=f[n-1-i];
 	}
 	g[n]='\0';
-	printf("%s\n",g);
+	my_printf("%s\n",g);
 	return 0;
 }

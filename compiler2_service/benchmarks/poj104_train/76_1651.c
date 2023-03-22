@@ -9,10 +9,10 @@ int main_bench()
 		int a;
 		int b;
 	}q[50000],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&q[i].a,&q[i].b);
+		my_scanf("%d%d",&q[i].a,&q[i].b);
 
 	}
 	for(i=0;i<n;i++)
@@ -31,7 +31,7 @@ int main_bench()
 	{
 		if(q[i+1].a>q[i].b)
 		{
-			printf("no\n");
+			my_printf("no\n");
 			k=0;
 			break;
 		}
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	if(k)
 	{
-		printf("%d %d\n",q[n-1].a,q[n-1].b);
+		my_printf("%d %d\n",q[n-1].a,q[n-1].b);
 	}
 	return 0;
 }

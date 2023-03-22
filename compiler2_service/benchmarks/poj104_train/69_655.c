@@ -38,17 +38,17 @@ main_bench()
             else;
         }
         if(a==r+1)
-        printf("0");
+        my_printf("0");
         else;
         {
             for(b=a;b<=r;b++)
-            printf("%d",z[b]);
+            my_printf("%d",z[b]);
         }
     }
     else
     {
-        printf("%d",m);
+        my_printf("%d",m);
         for(a=0;a<=r;a++)
-        printf("%d",z[a]);
+        my_printf("%d",z[a]);
     }
 }

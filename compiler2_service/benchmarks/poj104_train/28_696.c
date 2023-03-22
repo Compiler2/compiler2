@@ -24,10 +24,10 @@ int main_bench()
       if(p==0)
           continue;
       else
-      printf("%d,",p);
+      my_printf("%d,",p);
     }
 	p=strlen(word[n-1]);
-      printf("%d",p);
+      my_printf("%d",p);
       return 0;
 
 }

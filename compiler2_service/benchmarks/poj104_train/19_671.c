@@ -56,6 +56,6 @@ int main_bench()
 				}
 			}
 		ans[tempans] = '\0';
-	printf("%s", ans);
+	my_printf("%s", ans);
 	return 0;
 }

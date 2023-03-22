@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 		i++;
 	}while(c!='\n');
@@ -15,7 +15,7 @@ int main_bench()
 	for(i=0;i<n;i++) m=a[i]>m?a[i]:m;
 	r=1;
 	for(i=0;i<n;i++) if(a[i]!=m) {r=0;break;}
-	if(r==1) printf("No\n");
+	if(r==1) my_printf("No\n");
 	else
 	{		
 		for(i=0;i<n;i++)
@@ -27,7 +27,7 @@ int main_bench()
 				if((m-a[i])<=(m-a[j])&&a[i]!=m) r=1;
 				else {r=0;break;}
 			}
-			if(r==1) {printf("%d\n",a[i]);break;}
+			if(r==1) {my_printf("%d\n",a[i]);break;}
 		}
 	}
 }

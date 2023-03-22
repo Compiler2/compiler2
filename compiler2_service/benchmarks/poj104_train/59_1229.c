@@ -2,7 +2,7 @@
 
 int main_bench(){
     int n,i,m,k,t,renshu=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char sushe[n][n+1];
     int biao[n+2][n+2];
     for(i=0;i<n+2;i++){
@@ -11,9 +11,9 @@ int main_bench(){
         }
     }
     for(i=0;i<n;i++){
-       scanf("%s",&sushe[i]);
+       my_scanf("%s",&sushe[i]);
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<n;i++){
         for(k=0;k<n;k++){
             if(sushe[i][k]=='@'){
@@ -59,6 +59,6 @@ int main_bench(){
             }
         }
     }
-    printf("%d",renshu);
+    my_printf("%d",renshu);
     return 0;
 }

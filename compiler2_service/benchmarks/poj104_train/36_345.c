@@ -6,7 +6,7 @@ int main_bench()
 	char e;
 	int i,n,m,p=0;
 	int c1[26],c2[26],d1[26],d2[26];
-	scanf("%s %s",&c,&d);
+	my_scanf("%s %s",&c,&d);
 	 m=strlen(d);
 	 n=strlen(c);
 	 for(i=0;i<n;i++)
@@ -40,6 +40,6 @@ int main_bench()
 			p++;
 		else p--;
 	}
-	    if(p==26)   printf("YES\n");
-		else     printf("NO\n");
+	    if(p==26)   my_printf("YES\n");
+		else     my_printf("NO\n");
 }

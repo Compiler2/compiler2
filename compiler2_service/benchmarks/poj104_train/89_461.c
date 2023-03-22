@@ -3,11 +3,11 @@
 int main_bench()
 {
     int i,n,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[100000][2],b[100000]={0};
     for(i=0;i<100000;i++)
     {
-      scanf("%d %d",&a[i][0],&a[i][1]);
+      my_scanf("%d %d",&a[i][0],&a[i][1]);
       if(a[i][0]==0&&a[i][1]==0)
       break;
       else
@@ -19,12 +19,12 @@ int main_bench()
     {
       if(b[i]==n-1)
       {
-       printf("%d",i);
+       my_printf("%d",i);
        break;
       }              
     }
     if(i==n)
-    printf("NOT FOUND");
+    my_printf("NOT FOUND");
     getchar();
     getchar();
 }

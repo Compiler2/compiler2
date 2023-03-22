@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n, i, a[200], b[200], c[200], sum=0, d, e;
-     scanf("%d", &n);
+     my_scanf("%d", &n);
      for (sum=0,i=0; i<n; i++) {
-	     scanf("%d%d%d", &a[i], &b[i], &c[i]);
+	     my_scanf("%d%d%d", &a[i], &b[i], &c[i]);
 		 if (b[i]>c[i]) {
 			 d=c[i];
 			 c[i]=b[i];
@@ -36,10 +36,10 @@ int main_bench()
 				}
 			 }
 				 if(sum%7==0) {
-					 printf("YES\n");
+					 my_printf("YES\n");
 				 }
 					 else {
-						 printf("NO\n");
+						 my_printf("NO\n");
 					 }
 			 
 		 }
@@ -69,10 +69,10 @@ int main_bench()
 				}
 				   }
 				 if(sum%7==0) {
-					 printf("YES\n");
+					 my_printf("YES\n");
 				 }
 					 else {
-						 printf("NO\n");
+						 my_printf("NO\n");
 					 }
 			 
 			 }

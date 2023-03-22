@@ -18,7 +18,7 @@ main_bench()
 	break;
 	if(j==m&&s[m]==' ')
 	{
-	 printf("%s",b);
+	 my_printf("%s",b);
 	 i=i+m;
 	}
    }
@@ -28,11 +28,11 @@ main_bench()
 	  if(s[i+j+1]!=a[j]) break;
 	  if(j==m&&(s[i+j+1]==' '||s[i+j+1]=='\0'))
 	  {
-		printf(" %s",b);
+		my_printf(" %s",b);
 		i=i+m+1;
 	  }
 	 }
 	 if(s[i]!='\0') 
-		 printf("%c",s[i]);
+		 my_printf("%c",s[i]);
  }
  }

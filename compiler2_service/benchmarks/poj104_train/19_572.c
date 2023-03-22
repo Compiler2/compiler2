@@ -13,10 +13,10 @@ int main_bench()
 			d[j]=c[i];
 		d[j]='\0';
 		if(strcmp(d,a)==0)
-			printf("%s",b);
+			my_printf("%s",b);
 		else for(k=0;k<j;k++)
-				printf("%c",d[k]);
-		if(c[i]!='\0') printf(" ");
+				my_printf("%c",d[k]);
+		if(c[i]!='\0') my_printf(" ");
 		else break;
 		i++;
 	}

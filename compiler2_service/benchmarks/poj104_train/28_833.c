@@ -14,10 +14,10 @@ for(i=0;i<len;i++)
 	if(str[i]==' '&&str[i+1]!=' '){a[k]=i;k++;}
 	if(str[i]!=' '&&(str[i+1]==' '||str[i+1]=='\0')){b[j]=i;j++;}
 }
-printf("%d",b[0]-a[0]);
+my_printf("%d",b[0]-a[0]);
 for(i=1;i<k;i++)
 {
-	printf(",%d",b[i]-a[i]);
+	my_printf(",%d",b[i]-a[i]);
 }
 return 0;
 }

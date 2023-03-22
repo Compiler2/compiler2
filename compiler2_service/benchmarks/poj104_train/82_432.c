@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,xue,shu,i,h[500],e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	h[0]=0;
 	for(i=1;i<=n;i++){
-		scanf("%d %d",&xue,&shu);
+		my_scanf("%d %d",&xue,&shu);
 		if(xue>=90&&xue<=140&&shu>=60&&shu<=90){
 			h[i]=h[i-1]+1;
 		}else{
@@ -18,6 +18,6 @@ int main_bench(){
 			e=h[i];
 		}
 	}
-	printf("%d",e);
+	my_printf("%d",e);
 	return 0;
 }

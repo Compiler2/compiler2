@@ -3,22 +3,22 @@
 int main_bench()
 {
     int x1,x2,y1,y2;
-    scanf("%d %d",&x1,&y1);
+    my_scanf("%d %d",&x1,&y1);
     int a[100][100];
     for(int i=0;i<=x1-1;i++)
     {
         for(int j=0;j<=y1-1;j++)
         {
-            scanf("%d",&a[i][j]);    
+            my_scanf("%d",&a[i][j]);    
         }    
     }
-    scanf("%d %d",&x2,&y2);
+    my_scanf("%d %d",&x2,&y2);
     int b[100][100];
     for(int k=0;k<=x2-1;k++)
     {
         for(int l=0;l<=y2-1;l++)
         {
-            scanf("%d",&b[k][l]);    
+            my_scanf("%d",&b[k][l]);    
         }    
     }
     int c[100][100];
@@ -37,9 +37,9 @@ int main_bench()
     {
         for(int q=0;q<=y2-2;q++)
         {
-            printf("%d ",c[p][q]);    
+            my_printf("%d ",c[p][q]);    
         }    
-        printf("%d\n",c[p][y2-1]);
+        my_printf("%d\n",c[p][y2-1]);
     }
     return 0;
 } 

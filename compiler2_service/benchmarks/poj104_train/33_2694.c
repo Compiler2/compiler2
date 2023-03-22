@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char zfc[1000];
 gets(zfc);
 	for(int j=0;j<n;j++)
@@ -13,28 +13,28 @@ gets(zfc);
 	{
 		if(zfc[i]=='A')
 		{
-			printf("T");
+			my_printf("T");
 			continue;
 		}
         if(zfc[i]=='T')
 		{
-			printf("A");
+			my_printf("A");
 			continue;
 		}
 		if(zfc[i]=='C')
 		{
-			printf("G");
+			my_printf("G");
 			continue;
 		}
 		if(zfc[i]=='G')
 		{
-			printf("C");
+			my_printf("C");
 			continue;
 		}
 		
         if(zfc[i]=='\0')
 		{
-			printf("\n");
+			my_printf("\n");
         	break;
 		}
 	}

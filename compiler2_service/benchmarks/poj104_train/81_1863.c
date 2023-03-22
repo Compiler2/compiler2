@@ -9,10 +9,10 @@ int main_bench()
 	for(i=0;i<=4;i++){
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);		
+			my_scanf("%d",&a[i][j]);		
 		}	
 	}
-	scanf("%d %d", &n,&m);
+	my_scanf("%d %d", &n,&m);
 	if(n>=0 && n<=4 && m>=0 && m<=4)
 	{
 		temp[0]=a[n][0];
@@ -36,38 +36,38 @@ int main_bench()
 
 		for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[0][j]);
+				my_printf("%d ",a[0][j]);
 			}
-		printf("%d",a[0][4]);
-		printf("\n\n");
+		my_printf("%d",a[0][4]);
+		my_printf("\n\n");
 
 			for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[1][j]);
+				my_printf("%d ",a[1][j]);
 			}
-			printf("%d",a[1][4]);
-		printf("\n\n");
+			my_printf("%d",a[1][4]);
+		my_printf("\n\n");
 
 		for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[2][j]);
+				my_printf("%d ",a[2][j]);
 			}
-		printf("%d",a[2][4]);
-		printf("\n\n");
+		my_printf("%d",a[2][4]);
+		my_printf("\n\n");
 
 		for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[3][j]);
+				my_printf("%d ",a[3][j]);
 			}
-		printf("%d",a[3][4]);
-		printf("\n\n");
+		my_printf("%d",a[3][4]);
+		my_printf("\n\n");
 
 		for(j=0;j<=3;j++)
 			{
-				printf("%d ",a[4][j]);
+				my_printf("%d ",a[4][j]);
 			}
-		printf("%d",a[4][4]);
-		printf("\n\n");
+		my_printf("%d",a[4][4]);
+		my_printf("\n\n");
 
 
 
@@ -80,7 +80,7 @@ int main_bench()
 		}
 	
 	else
-		printf("error\n");
+		my_printf("error\n");
 
 return 0;
 }

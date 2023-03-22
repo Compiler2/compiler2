@@ -19,22 +19,22 @@ int main_bench()
 		{
 			if(str[num[k]+i]==' ' || str[num[k]+i]=='\0')
 			{
-				printf(" ");
+				my_printf(" ");
 				break;
 			}
 			else
-				printf("%c",str[num[k]+i]);
+				my_printf("%c",str[num[k]+i]);
 		}	
 	}
 	for(i=0;;i++)
 		{
 			if(str[num[0]+i]==' ' || str[num[0]+i]=='\0')
 			{
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 			else
-				printf("%c",str[num[0]+i]);
+				my_printf("%c",str[num[0]+i]);
 		}
 	return 0;
 }

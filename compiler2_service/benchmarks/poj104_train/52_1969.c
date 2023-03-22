@@ -3,9 +3,9 @@
 int main_bench()
 {
     int n,m,a[100],*p,i,t;
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for(p=a;p<a+n;p++)
-    scanf("%d",p);
+    my_scanf("%d",p);
     
     for(i=0;i<n-m;i++)
     {
@@ -15,6 +15,6 @@ int main_bench()
     	a[n-1]=t;
     }
     for(p=a;p<a+n-1;p++)
-    printf("%d ",*p);
-    printf("%d",a[n-1]);
+    my_printf("%d ",*p);
+    my_printf("%d",a[n-1]);
 }

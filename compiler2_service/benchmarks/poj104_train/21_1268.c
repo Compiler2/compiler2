@@ -9,10 +9,10 @@ int main_bench()
 {
 	int n,i,j,o=0,h;
     float k,s=0,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&d[i].a);
+		my_scanf("%d",&d[i].a);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -66,8 +66,8 @@ int main_bench()
 	}
 	for(i=0;i<o;i++)
 	{
-		printf("%d,",d[i].a);
+		my_printf("%d,",d[i].a);
 	}
-	printf("%d\n",d[i].a);
+	my_printf("%d\n",d[i].a);
 	return 0;
 }

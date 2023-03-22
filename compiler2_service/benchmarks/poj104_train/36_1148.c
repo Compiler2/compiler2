@@ -3,17 +3,17 @@
 int main_bench()
 {
 	char a[10000],b[10000],c;
-	scanf("%s %s",&a,&b);
+	my_scanf("%s %s",&a,&b);
 	int i,j,m,n;
 	m=strlen(a);
 	n=strlen(b);
 	if(m!=n)
-		printf("NO");
+		my_printf("NO");
 	if(m==n&&m==1){
 	if(a[0]==b[0])
-		printf("YES");
+		my_printf("YES");
 	if(a[0]!=b[0])
-		printf("NO");
+		my_printf("NO");
 	}
 	if(m==n&&m>1){
 	for(j=m-1;j>0;j--){
@@ -36,9 +36,9 @@ int main_bench()
 	}
 	m=strcmp(a,b);
 	if(m==0)
-		printf("YES");
+		my_printf("YES");
 	if(m==1)
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

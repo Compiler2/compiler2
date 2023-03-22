@@ -4,12 +4,12 @@ int main_bench()
 {
     int i;
     double n,j=0;
-    scanf("%lf\n",&n);
+    my_scanf("%lf\n",&n);
     char a[501],b[501];
-    scanf("%s\n",a);
-    scanf("%s\n",b);
+    my_scanf("%s\n",a);
+    my_scanf("%s\n",b);
     if(strlen(a)!=strlen(b)){
-        printf("error");
+        my_printf("error");
     }else{
     for(i=0;a[i]!='\0';i++){
         if((b[i]=='A'||b[i]=='T'||b[i]=='C'||b[i]=='G')&&(a[i]=='A'||a[i]=='T'||a[i]=='C'||a[i]=='G')){
@@ -17,16 +17,16 @@ int main_bench()
             j++;
         }
     }else{
-        printf("error");
+        my_printf("error");
         return 0;
     }
     }
     i=strlen(a);
     j=j/i;
     if(j>n){
-        printf("yes");
+        my_printf("yes");
     }else{
-        printf("no");
+        my_printf("no");
     }
     }
     return 0;

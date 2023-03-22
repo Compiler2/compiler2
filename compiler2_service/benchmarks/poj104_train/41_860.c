@@ -25,7 +25,7 @@ int main_bench(){
                                         for(e=1;e<=5&&!flag;e++)
                                               if(a!=e&&b!=e&&c!=e&&d!=e&&e!=2&&e!=3){
                                                    if(isok(a,b,c,d,e)){
-                                                        printf("%d %d %d %d %d\n",a,b,c,d,e);
+                                                        my_printf("%d %d %d %d %d\n",a,b,c,d,e);
                                                         flag=1;
                                                         break;
                                                         }

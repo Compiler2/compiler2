@@ -18,8 +18,8 @@ int main_bench()
 		}
 	}
 
-	for (i=(place-max+1);i<=place;i++) printf("%c",sentence[i]);
-	 printf("\n");
+	for (i=(place-max+1);i<=place;i++) my_printf("%c",sentence[i]);
+	 my_printf("\n");
 	
     int j,lenth2=0,place2=0,min=100;
 	for(j=0;sentence[j]!='\0';j++)
@@ -36,7 +36,7 @@ int main_bench()
 		
 	}
 
-    for (j=(place2-min);j<place2;j++)   printf("%c",sentence[j]);
-	printf("\n");
+    for (j=(place2-min);j<place2;j++)   my_printf("%c",sentence[j]);
+	my_printf("\n");
 
 }

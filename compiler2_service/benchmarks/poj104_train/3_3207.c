@@ -6,10 +6,10 @@ double s[1000],si;
 int main_bench()
 {
  int i,j,n,m,s=0;
- scanf("%d%d",&m,&n);
+ my_scanf("%d%d",&m,&n);
  for(i=0;i<m;i++)
 
-        scanf("%d",&t[i]);
+        my_scanf("%d",&t[i]);
 
          
         
@@ -20,7 +20,7 @@ int main_bench()
         s=1;
 
 
-        s?printf("yes"):printf("no");
+        s?my_printf("yes"):my_printf("no");
         return 0;
 }
 

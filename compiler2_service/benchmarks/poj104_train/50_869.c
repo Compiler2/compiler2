@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	int a[365];
 	for(i=1;i<365;i++)
 	{
@@ -65,51 +65,51 @@ int main_bench()
 	{
 		if(a[i]==5&&i==12)
 		{
-			printf("1\n");
+			my_printf("1\n");
 		}
 		if(a[i]==5&&i==43)
 		{
-			printf("2\n");
+			my_printf("2\n");
 		}
 if(a[i]==5&&i==71)
 		{
-			printf("3\n");
+			my_printf("3\n");
 		}
 		if(a[i]==5&&i==102)
 		{
-			printf("4\n");
+			my_printf("4\n");
 		}
 		if(a[i]==5&&i==132)
 		{
-			printf("5\n");
+			my_printf("5\n");
 		}
 		if(a[i]==5&&i==163)
 		{
-			printf("6\n");
+			my_printf("6\n");
 		}
 		if(a[i]==5&&i==193)
 		{
-			printf("7\n");
+			my_printf("7\n");
 		}
 		if(a[i]==5&&i==224)
 		{
-			printf("8\n");
+			my_printf("8\n");
 		}
 		if(a[i]==5&&i==255)
 		{
-			printf("9\n");
+			my_printf("9\n");
 		}
 		if(a[i]==5&&i==285)
 		{
-			printf("10\n");
+			my_printf("10\n");
 		}
 		if(a[i]==5&&i==316)
 		{
-			printf("11\n");
+			my_printf("11\n");
 		}
 		if(a[i]==5&&i==346)
 		{
-		    printf("12\n");
+		    my_printf("12\n");
 		}
 	}
 return 0;

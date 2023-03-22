@@ -12,6 +12,6 @@ for(i=0;s[i]!='\0';i++){
  }
 }
 s0[k]='\0';
-printf("%s",s0);
+my_printf("%s",s0);
 return 0;
 }

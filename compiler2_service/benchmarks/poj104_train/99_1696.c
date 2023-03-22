@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i;
 	float zu1=0,zu2=0,zu3=0,zu4=0,a[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%f",&a[i]);
+	my_scanf("%f",&a[i]);
 	}
 
 for(i=0;i<n;i++){
@@ -22,9 +22,9 @@ for(i=0;i<n;i++){
 	zu4+=1;
 	} 
 	}
-printf("1-18: %.2f%%\n",zu1/n*100);
-printf("19-35: %.2f%%\n",zu2/n*100);
-printf("36-60: %.2f%%\n",zu3/n*100);
-printf("60??: %.2f%%\n",zu4/n*100);
+my_printf("1-18: %.2f%%\n",zu1/n*100);
+my_printf("19-35: %.2f%%\n",zu2/n*100);
+my_printf("36-60: %.2f%%\n",zu3/n*100);
+my_printf("60??: %.2f%%\n",zu4/n*100);
 return 0;
 }

@@ -3,10 +3,10 @@
 
 int main_bench(){
 	int tumour[256][256],n,i,j,x1=-1,y1,x2=-1,y2,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&tumour[i][j]);
+			my_scanf("%d",&tumour[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -36,6 +36,6 @@ int main_bench(){
 		break;
 	}
 	s=(x2-x1-1)*(y2-y1-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

@@ -3,11 +3,11 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int shou[n];
     int zhang[n];
     for(int i=0;i<n;i++){
-        scanf("%d %d",&(shou[i]),&(zhang[i]));
+        my_scanf("%d %d",&(shou[i]),&(zhang[i]));
     }
     int a=0;
     int e=0;
@@ -17,6 +17,6 @@ int main_bench(){
            if(a>e){e=a;}
        }else{a=0;}
     }
-    printf("%d",e);
+    my_printf("%d",e);
     return 0;
 }

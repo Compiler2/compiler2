@@ -8,7 +8,7 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 	}
 	for(i=0;i<5;i++)
 	{
@@ -30,12 +30,12 @@ int main_bench()
 		}
 		if(min==a[i][lie])
 		{
-			printf("%d %d %d\n",i+1,lie+1,a[i][lie]);
+			my_printf("%d %d %d\n",i+1,lie+1,a[i][lie]);
 			m=1;
 		}
 	}
 	if(m==0)
-	printf("not found\n");
+	my_printf("not found\n");
 	
 	return 0;
 } 

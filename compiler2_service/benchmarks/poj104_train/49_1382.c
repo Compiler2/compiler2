@@ -25,7 +25,7 @@ main_bench()
 		for(j=0;j<=len-i;j++){
 			for(k=0;k<i;k++)
 				temp[k]=s[j+k];
-			if(reverse(temp,i)==1) printf("%s\n",temp);
+			if(reverse(temp,i)==1) my_printf("%s\n",temp);
 		}
 	
 }

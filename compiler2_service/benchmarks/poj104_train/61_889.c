@@ -19,11 +19,11 @@ int a(int n)
 main_bench()
 {
       int n,i,j;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&j);
-                      printf("%d\n",a(j));
+                      my_scanf("%d",&j);
+                      my_printf("%d\n",a(j));
       }
       getchar();
       getchar();

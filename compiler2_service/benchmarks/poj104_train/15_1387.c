@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,j,k,l,a[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
     {
-        for (j=0;j<n;j++) scanf("%d",&a[i][j]);
+        for (j=0;j<n;j++) my_scanf("%d",&a[i][j]);
     }
     for (i=1;i<n;i++)
     {
@@ -24,6 +24,6 @@ int main_bench()
     if(a[k][l+1]==255&&a[k+1][l]==255&&a[k][l]==0) 
     break;
     }
-    printf("%d",(k-i)*(l-j));
+    my_printf("%d",(k-i)*(l-j));
 }
 

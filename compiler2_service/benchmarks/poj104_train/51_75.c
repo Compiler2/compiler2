@@ -8,8 +8,8 @@ int main_bench(){
 	int ximax[500];
 	int n,m,i,t,k,max,a,d,e;
 	t=0;d=0;
-	scanf("%d",&n);
-	scanf("%s",&zfc);
+	my_scanf("%d",&n);
+	my_scanf("%s",&zfc);
 	m=strlen(zfc);
 	for(i=0;i<=m-n;i++){
 		for(k=i;k<i+n;k++){
@@ -57,12 +57,12 @@ int main_bench(){
 			}
 	}
 }
-	if(max<=0){printf("NO");}
-	else{printf("%d\n",max+1);
+	if(max<=0){my_printf("NO");}
+	else{my_printf("%d\n",max+1);
 	for(i=0;i<t;i++){
 		for(k=0;k<n;k++){
-			if(k==n-1){printf("%c\n",ng[imax[i]][k]);}
-			else{printf("%c",ng[imax[i]][k]);}
+			if(k==n-1){my_printf("%c\n",ng[imax[i]][k]);}
+			else{my_printf("%c",ng[imax[i]][k]);}
 		}
 	}
 	}

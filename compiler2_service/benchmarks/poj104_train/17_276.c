@@ -22,7 +22,7 @@ int main_bench()
 		for(j=0; j<1000; j++)
 			s[j]='\0'; 
 		temp=0;
-		printf("%s\n",str[i]);
+		my_printf("%s\n",str[i]);
 		for(j=0; j< (strlen(str[i])); j++)
 		{
 			if(str[i][j]=='(')
@@ -45,6 +45,6 @@ int main_bench()
 			else
 				s[j]=' ';
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	}
 }

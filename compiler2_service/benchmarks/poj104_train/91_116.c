@@ -12,6 +12,6 @@ int main_bench()
 	}
 	*(b+n-1)=*(a+n-1)+*(a);
 	*(b+n)='\0';
-	printf("%s",b);
+	my_printf("%s",b);
 	return 0;
 }

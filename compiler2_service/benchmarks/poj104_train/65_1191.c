@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int sz1[200],sz2[200],n,a=0,b=0,c=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
-	{scanf("%d%d",&(sz1[i]),&(sz2[i]));}
+	{my_scanf("%d%d",&(sz1[i]),&(sz2[i]));}
     for(int k=0;k<n;k++)
 {	if(((sz1[k]-sz2[k])==1)||((sz2[k]-sz1[k])==2))
 	{b++;}
@@ -15,11 +15,11 @@ int main_bench()
 	{c++;}
 }
 	if(a>b)
-	{printf("A");}
+	{my_printf("A");}
     if(b>a)
-    {printf("B");}
+    {my_printf("B");}
     if(a==b)
-    {printf("Tie");}
+    {my_printf("Tie");}
 	return 0;
 }
 

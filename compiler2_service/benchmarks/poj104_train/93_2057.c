@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,tot=0,b=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(!(n%3))  tot++;
     if(!(n%5))  tot++;
     if(!(n%7))  tot++;
     if(!(n%3))
     {
-        printf("3");
+        my_printf("3");
         if(tot-1)
         {
             putchar(' ');
@@ -19,7 +19,7 @@ int main_bench()
     }
     if(!(n%5))
     {
-        printf("5");
+        my_printf("5");
         if(tot-1)
         {
             putchar(' ');
@@ -29,7 +29,7 @@ int main_bench()
     }
     if(!(n%7))
     {
-        printf("7");
+        my_printf("7");
         if(tot-1)
         {
             putchar(' ');

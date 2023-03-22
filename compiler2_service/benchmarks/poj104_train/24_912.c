@@ -39,8 +39,8 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n",word[max1]);
-	printf("%s\n",word[min1]);
+	my_printf("%s\n",word[max1]);
+	my_printf("%s\n",word[min1]);
 
 	return 0;
 }

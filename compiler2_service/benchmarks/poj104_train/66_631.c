@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year2,year1,year,month,day,count,c;
 
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 
 	year2=((year-1)/4-(year-1)/100+(year-1)/400)*(366%7);
 
@@ -46,29 +46,29 @@ int main_bench()
 	switch(c)
 	{
 	case 1:
-			printf("Mon.");
+			my_printf("Mon.");
 		break;
 	case 2:
-			printf("Tue.");
+			my_printf("Tue.");
         break;
 	case 3:
 		
-			printf("Wed.");
+			my_printf("Wed.");
 		break;
 	case 4:
-			printf("Thu.");
+			my_printf("Thu.");
 		break;
 	case 5:
-			printf("Fri.");
+			my_printf("Fri.");
 		break;
 	case 6:
-            printf("Sat.");
+            my_printf("Sat.");
 		break;
 	case 0:
-            printf("Sun.");
+            my_printf("Sun.");
 		break;
 	default:
-		printf("%d",c);
+		my_printf("%d",c);
 	}
 	return 0;
 }

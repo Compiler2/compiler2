@@ -6,11 +6,11 @@ int main_bench()
 	a=1;
 	while(a>=1)
 	{
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a!=0||b!=0||c!=0||d!=0||e!=0||f!=0)
 		{
 			s=(d+12)*60*60+e*60+f-a*60*60-b*60-c;
-			printf("%d\n",s);
+			my_printf("%d\n",s);
 		}
 		else
 		{

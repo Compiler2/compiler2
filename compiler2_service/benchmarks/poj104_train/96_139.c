@@ -34,15 +34,15 @@ main_bench()
                                  f[k]='\0';
                       }
                       puts(f);
-                      printf("%d",e);
+                      my_printf("%d",e);
                       }
       if(n==2&x<13) 
       {
-                    printf("0\n");printf("%d",x);
+                    my_printf("0\n");my_printf("%d",x);
                     }
       if(n==1)
       {
-              printf("0\n");printf("%d",b[0]);
+              my_printf("0\n");my_printf("%d",b[0]);
               }
       
       getchar();getchar();getchar();getchar();getchar();getchar();

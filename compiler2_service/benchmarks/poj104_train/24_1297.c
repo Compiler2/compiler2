@@ -32,11 +32,11 @@ int main_bench()
 		}
 	}
 	for(i=0;*(max+i)!=' '&&*(max+i);i++)
-		printf("%c",*(max+i));
-	printf("\n");
+		my_printf("%c",*(max+i));
+	my_printf("\n");
 	for(i=0;*(min+i)!=' '&&*(min+i);i++)
-		printf("%c",*(min+i));
-	printf("\n");
+		my_printf("%c",*(min+i));
+	my_printf("\n");
 
 
 

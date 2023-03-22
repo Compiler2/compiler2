@@ -5,7 +5,7 @@ int main_bench()
 	char a[50];
 	char b[50];
 	int i,j,k,l,m=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	for(i=0;a[i]!='\0';i++)
 		;
 	for(j=0;b[j]!='\0';j++)
@@ -22,6 +22,6 @@ int main_bench()
 		}
 		if(m==1)break;
 	}
-	if(k!=j)printf("%d\n",k);
+	if(k!=j)my_printf("%d\n",k);
 	
 }

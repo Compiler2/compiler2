@@ -11,28 +11,28 @@
 
 int main_bench(){
     int num,i=1;
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     if (num%3==0) {
-        printf("3");
+        my_printf("3");
         i=0;
     }
     if (num%5==0) {
         if (i==0) {
-            printf(" ");
+            my_printf(" ");
         }
-        printf("5");
+        my_printf("5");
         i=0;
     }
     if (num%7==0) {
         if (i==0) {
-            printf(" ");
+            my_printf(" ");
         }
 
-        printf("7");
+        my_printf("7");
         i=0;
     }
     if (i==1) {
-        printf("n");
+        my_printf("n");
     }    return 0;
         
     

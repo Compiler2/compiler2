@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j=0,t;
 	char a[6];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(i=0;i<6;i++)
 	{
 		if(a[i]=='\0')
@@ -21,7 +21,7 @@ int main_bench()
 	{
 		if(a[i]=='\0')
 			break;
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	return 0;
 }

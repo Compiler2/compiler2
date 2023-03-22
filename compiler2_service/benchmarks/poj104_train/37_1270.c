@@ -2,9 +2,9 @@
 
 int main_bench(){
 int n,j,i,m,k,r,d[30],x;char z,s[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(j=0;j<n;j++){
-  scanf("%s",s);
+  my_scanf("%s",s);
   r=0;
   for(z='a';z<='z';z++){
     m=0;
@@ -18,13 +18,13 @@ for(j=0;j<n;j++){
       d[r]=k;r++;
     }
   }
-  if(r==0){printf("no\n");}
+  if(r==0){my_printf("no\n");}
   else if(r>0){
   x=d[0];
   for(i=0;i<r;i++){
     if(d[i]<x){x=d[i];}
   }
-  printf("%c\n",s[x]);
+  my_printf("%c\n",s[x]);
   }
 }
 return 0;

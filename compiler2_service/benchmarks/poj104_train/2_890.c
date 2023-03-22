@@ -11,9 +11,9 @@ int main_bench()
 	char c;
 	int writer[26];
 	char max(int *p);
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-	scanf("%d%s",&shu[i].num,shu[i].author);}
+	my_scanf("%d%s",&shu[i].num,shu[i].author);}
 	for(c='A',writer[c-'A']=0;c<='Z';c++){
 		writer[c-'A']=0;
 		for(i=0;i<m;i++){
@@ -21,11 +21,11 @@ int main_bench()
 				if(c==shu[i].author[b]){
 	writer[c-'A']++;}}}}
 	p=writer;
-	printf("%c\n%d\n",max(p),writer[max(p)-'A']);
+	my_printf("%c\n%d\n",max(p),writer[max(p)-'A']);
 		for(i=0;i<m;i++){
 			for(b=0;shu[i].author[b]!='\0';b++){
 				if(max(p)==shu[i].author[b]){
-					printf("%d\n",shu[i].num);}}}
+					my_printf("%d\n",shu[i].num);}}}
 
 	return 0;
 }

@@ -9,9 +9,9 @@ int main_bench()
 {
 	int i,n,j,max,num=0;
 	struct patient a[110],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d",a[i].id,&a[i].age);
+		my_scanf("%s%d",a[i].id,&a[i].age);
 	for(i=0;i<n;i++)
 	{
 		if(a[i].age>=60)
@@ -33,6 +33,6 @@ int main_bench()
 		a[i]=t;
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",a[i].id);
+		my_printf("%s\n",a[i].id);
 	return 0;
 }

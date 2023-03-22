@@ -4,22 +4,22 @@ int main_bench()
 {
 	int year1,year2,month1,month2,day1,day2,a,b,c,d,tempyear,tempmonth,tempday;
 	d = 0;
-	scanf("%d %d %d",&year1,&month1,&day1);
-	scanf("%d %d %d",&year2,&month2,&day2);
+	my_scanf("%d %d %d",&year1,&month1,&day1);
+	my_scanf("%d %d %d",&year2,&month2,&day2);
 	int montha[12]={0,31,60,91,121,152,182,213,244,274,305,335};
 	int monthb[12]={0,31,59,90,120,151,181,212,243,273,304,334};
     if(year1==year2)
 	{
 		if (month1 == month2)
 		{
-			printf("%d",day2-day1);
+			my_printf("%d",day2-day1);
 		}
 		else
 		{
 			if ((year1%4==0)&&(year1%100!=0)||(year1%400==0))
-				printf("%d",montha[month2-1]-montha[month1-1]+day2-day1);
+				my_printf("%d",montha[month2-1]-montha[month1-1]+day2-day1);
 			else
-				printf("%d",monthb[month2-1]-monthb[month1-1]+day2-day1);
+				my_printf("%d",monthb[month2-1]-monthb[month1-1]+day2-day1);
 		}
 	}
 	else
@@ -62,7 +62,7 @@ int main_bench()
 		else
 			c+=(monthb[month2-1]+day2);
 
-		if (d == 0) printf("%d",c);
-		else printf("%d",0-c);
+		if (d == 0) my_printf("%d",c);
+		else my_printf("%d",0-c);
 	}
 }

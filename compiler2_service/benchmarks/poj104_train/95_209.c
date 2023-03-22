@@ -19,11 +19,11 @@ int main_bench()
 	{
 		if(b[i]>64&&b[i]<91) b[i]=b[i]+32;
 	}
-	if(strcmp(a,b)>0) printf(">\n");
+	if(strcmp(a,b)>0) my_printf(">\n");
 	else
 	{
-		if(strcmp(a,b)<0) printf("<\n");
-		else printf("=\n");
+		if(strcmp(a,b)<0) my_printf("<\n");
+		else my_printf("=\n");
 	}
 }
 

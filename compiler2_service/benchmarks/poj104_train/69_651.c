@@ -37,9 +37,9 @@ int main_bench()
 	{
 		if(n[i]==0&&f==0)
 			continue;
-		printf("%d",n[i]);
+		my_printf("%d",n[i]);
 		f=1;
 	}
 	if(l1==1&&l2==1&&n[255]==0)
-		printf("0");
+		my_printf("0");
 }

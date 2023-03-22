@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a,i,b,first,second,c,d;
-	scanf("%d",&a);
-	scanf("%d%d",&c,&d);
+	my_scanf("%d",&a);
+	my_scanf("%d%d",&c,&d);
 	if (c>d)
 		first=c;
 	    second=d;
@@ -13,7 +13,7 @@ int main_bench()
 	    second=c;
     for(i=3;i<=a;i++)
 	{
-        scanf("%d",&b);
+        my_scanf("%d",&b);
 		if(b>first)
 		{
 			second=first;
@@ -22,6 +22,6 @@ int main_bench()
 		else if(b>second)
 			second=b;
 	}
-	printf("%d\n%d",first,second);
+	my_printf("%d\n%d",first,second);
 	return 0;
 }

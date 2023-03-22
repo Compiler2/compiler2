@@ -4,17 +4,17 @@ int main_bench()
 {
 	char a[102][102]={'0'},b[102][102]={'0'};
 	int n,m,i,j,k,sum;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("%c",&b[i][j]);
+			my_scanf("%c",&b[i][j]);
 			a[i][j]=b[i][j];
 		}
-		scanf("\n");
+		my_scanf("\n");
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=0;k<m-1;k++)
 	{
 		for(i=1;i<=n;i++)
@@ -62,6 +62,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

@@ -9,14 +9,14 @@ int main_bench(){
 	int xw;
 	while(1){
 		
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a==0){
 			break;
 		}
 		sw=(12-a)*3600-b*60-c;
 		xw=d*3600+e*60+f;
 		int ans=sw+xw;
-		printf("%d\n",ans);
+		my_printf("%d\n",ans);
 	}
 	return 0;
 }

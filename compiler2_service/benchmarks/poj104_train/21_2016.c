@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[100],i,j,o,k=0,c[100];
 	float sum=0,b[100],t,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	t=sum/n;
@@ -34,6 +34,6 @@ int main_bench()
 			k++;
 		}
 		for(i=0;i<k-1;i++)
-			printf("%d,",c[i]);
-		printf("%d",c[k-1]);
+			my_printf("%d,",c[i]);
+		my_printf("%d",c[k-1]);
 }

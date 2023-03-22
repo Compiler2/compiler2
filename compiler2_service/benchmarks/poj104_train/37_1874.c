@@ -4,7 +4,7 @@ main_bench()
 {
       int t[100000],i,j,k,q,count,mark;
       char a[100000];
-      scanf("%d\n",&q);
+      my_scanf("%d\n",&q);
       mark=0;
       for(i=0;i<q;i++)
       {
@@ -32,10 +32,10 @@ mark=0;
                       {
                                           if(t[j]==1)
                                           {
-                                                     printf("%c\n",a[j]);mark=1;break;
+                                                     my_printf("%c\n",a[j]);mark=1;break;
                                           }
 
                       }
-                      if(mark==0)printf("no\n");
+                      if(mark==0)my_printf("no\n");
       }
       }

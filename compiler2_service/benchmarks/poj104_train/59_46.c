@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j,m,k,count=0;
 	char a[100][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a[i]);
+		my_scanf("%s",&a[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if (m==1)
 	{
 		for(i=0;i<n;i++)
@@ -18,7 +18,7 @@ int main_bench()
 			if (a[i][j]=='@')
 				count++;
 		}
-		printf("%d",count);
+		my_printf("%d",count);
 	}
 	else 
 	{
@@ -73,7 +73,7 @@ int main_bench()
 			if (a[i][j]=='@')
 				count++;
 		}
-		printf("%d",count);
+		my_printf("%d",count);
 	}
 }
 		

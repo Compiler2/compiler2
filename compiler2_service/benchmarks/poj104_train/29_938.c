@@ -11,11 +11,11 @@ int main_bench()
     a[i]=a[i-1]+a[i-2];
     for(i=0;i<40;i++)
       b[i]=(float)a[i+1]/a[i]+b[i-1];
-      scanf("%d",&m);
+      my_scanf("%d",&m);
     for(i=0;i<m;i++)
     {
-    scanf("%d",&n);
-    printf("%.3f\n",b[n-1]);
+    my_scanf("%d",&n);
+    my_printf("%.3f\n",b[n-1]);
     } 
      return 0;
 }

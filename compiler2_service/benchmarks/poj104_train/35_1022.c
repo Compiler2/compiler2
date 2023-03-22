@@ -3,11 +3,11 @@
 int main_bench()
 {
     int i,j,k,n,m,t=0,p=0,q=0;
-    scanf("%d,%d",&n,&m);
+    my_scanf("%d,%d",&n,&m);
     int a[n][m],b[n],c[m];
     for(i=0;i<n;i++)
      for(j=0;j<m;j++)
-       scanf("%d",&a[i][j]);
+       my_scanf("%d",&a[i][j]);
     for(i=0;i<n;i++)
      {
        for(j=0;j<m;j++)
@@ -31,13 +31,13 @@ int main_bench()
           if((p==0)&&(t==0))
            {
            q=1;
-           printf("%d+%d\n",i,j);
+           my_printf("%d+%d\n",i,j);
            }
           p=0;
           t=0;
         }
        }
      if(q==0)
-     printf("No\n");  
+     my_printf("No\n");  
      return 0;
 }

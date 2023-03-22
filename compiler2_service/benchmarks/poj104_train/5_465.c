@@ -5,7 +5,7 @@ int main_bench()
 	int i,m,p,f=1;
 	double x,bl;
 	char a[502],b[502];
-	scanf("%lf\n",&bl);
+	my_scanf("%lf\n",&bl);
 	gets(a);
 	gets(b);
 	m=strlen(a);
@@ -21,7 +21,7 @@ int main_bench()
 		}
 	}
 	if(m!=p||f==0){
-		printf("error");
+		my_printf("error");
 	}else if(m==p&&f==1){
 		int n=0;
 	    for(i=0;i<m;i++){
@@ -31,9 +31,9 @@ int main_bench()
 		}
 		x=1.0*n/m;
 		if(x>bl){
-			printf("yes");
+			my_printf("yes");
 		}else if(x<=bl){
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

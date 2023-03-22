@@ -5,7 +5,7 @@ int main_bench()
 	int i,y,m,d,D;
 	int total=0;
 	
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	for(i=1;i<m;i++)
 	{
 		if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
@@ -29,6 +29,6 @@ int main_bench()
 		}
 	}
 	D=total+d;
-	printf("%d",D);
+	my_printf("%d",D);
 	return 0;
 }

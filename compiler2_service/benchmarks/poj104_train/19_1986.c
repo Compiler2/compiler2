@@ -88,7 +88,7 @@ for(i=0;i<len1-len2+1;i++)
 	}
 	for(i=0;i<=len1-1-len2*(u-1)+len3*(u-1);i++)
 	{
-		printf("%c",whole[i]);
+		my_printf("%c",whole[i]);
 	}
 	}
 	else
@@ -99,7 +99,7 @@ for(i=0;i<len1-len2+1;i++)
 	}
 	for(i=0;i<=len1-1-len2*(v-1)+len3*(v-1);i++)
 	{
-		printf("%c",whole[i]);
+		my_printf("%c",whole[i]);
 	}
 	}
 

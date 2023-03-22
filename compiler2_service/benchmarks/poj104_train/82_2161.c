@@ -4,10 +4,10 @@ int main_bench(){
 	int a,b,n,z[100],i,e,r;
 	r=0;
 	e=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<100;i++) z[i]=0;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a>=90&&a<=140&&b>=60&&b<=90){z[i]=1;r=1;}
 	}
 	for(i=e+1;i<n-1;i++){
@@ -19,7 +19,7 @@ int main_bench(){
 			if(r<e-i+1) r=e-i+1;
 		}
 	}
-	printf("%d",r);
+	my_printf("%d",r);
 	return 0;
 }
 

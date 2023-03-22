@@ -4,11 +4,11 @@ int main_bench()
 {
 	char p,a[100005],b[100005];
 	int count=0,i;
-	scanf("%c",&p);
+	my_scanf("%c",&p);
 	while(p!='\n')
 	{
 		a[count]=p;
-		scanf("%c",&p);
+		my_scanf("%c",&p);
 		count++;
 	}
 	for(i=1;i<=count-1;i++)
@@ -16,5 +16,5 @@ int main_bench()
 		b[i-1]=a[i-1]+a[i];
 	}
 	b[count-1]=a[count-1]+a[0];
-	printf("%s",b);
+	my_printf("%s",b);
 }

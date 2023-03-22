@@ -8,7 +8,7 @@ int main_bench()
 	int length;
 	int result;
 	char identifier[90];
-	scanf("%d", &case_num);
+	my_scanf("%d", &case_num);
 	gets(identifier);
 	while(case_num --) {
 		gets(identifier);
@@ -20,7 +20,7 @@ int main_bench()
 			if (!(identifier[i] == '_' || isalpha((int)identifier[i]) || isdigit((int)identifier[i])))
 				result = 0;
 		}
-		printf("%d\n", result);
+		my_printf("%d\n", result);
 	}
 	return 0;
 }

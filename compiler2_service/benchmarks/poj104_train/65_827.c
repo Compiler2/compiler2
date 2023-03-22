@@ -4,9 +4,9 @@ int main_bench()
 {  int n,i,m,k;
    int a[100];
    int s=0,l=0,t=0;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(i=0;i<n;i++){
-  scanf("%d%d",&m,&k);
+  my_scanf("%d%d",&m,&k);
   if(m==k){a[i]=2;}
   if((m==0&&k==1)||(m==1&&k==2)||(m==2&&k==0)){a[i]=1;}
   if((k==0&&m==1)||(k==1&&m==2)||(k==2&&m==0)){a[i]=0;}
@@ -17,11 +17,11 @@ int main_bench()
 	  if(a[i]==2){t=t+1;}
   }
   if(s==l||t==n){
-      printf("Tie");
+      my_printf("Tie");
   }
   if(s>l){
-      printf("A");
+      my_printf("A");
   }
-  if(s<l){printf("B");}
+  if(s<l){my_printf("B");}
    return 0;
 }

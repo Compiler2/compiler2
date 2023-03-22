@@ -14,15 +14,15 @@ return (t);
 int main_bench()
 {int n,i,j,k;
 k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=2;i<n-1;i++)
 {if(su(i)==1&&su(i+2)==1)
 {k=1;
-printf("%d %d\n",i,i+2);
+my_printf("%d %d\n",i,i+2);
 }
 }
 if(k==0)
-printf("empty");
+my_printf("empty");
 return 0;
 }
 

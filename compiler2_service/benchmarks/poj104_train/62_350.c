@@ -6,12 +6,12 @@ int main_bench(){
     char str[MAXN];
     gets(str);
     int i;
-    printf("%c", str[0]);
+    my_printf("%c", str[0]);
     for (i = 1; i < strlen(str); ++ i)
         if (str[i - 1] == ' ' && str[i] == ' ')
            continue;
         else
-            printf("%c", str[i]);
-    printf("\n");
+            my_printf("%c", str[i]);
+    my_printf("\n");
     return 0;
 }

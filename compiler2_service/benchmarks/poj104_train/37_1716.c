@@ -7,12 +7,12 @@
 int main_bench()
 {
 	int T,t;
-	scanf("%d",&T);
+	my_scanf("%d",&T);
 	for(t=1;t<=T;t++)
 	{
 		char s[1000];
 		int n,i,j,k=0,g=0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		n=strlen(s);
 		for(i=0;i<=n-1;i++)
 		{
@@ -27,12 +27,12 @@ int main_bench()
 			}
 			if(k==1)
 			{
-				printf("%c\n",s[i]);
+				my_printf("%c\n",s[i]);
 				g=1;
 				break;
 			}
 		}
-		if(g==0)printf("no\n");
+		if(g==0)my_printf("no\n");
 	}
 }
 

@@ -13,12 +13,12 @@ int main_bench()
 {
 	struct student *p;
 	int i,j,num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
     p=(struct student*)malloc(num*sizeof(struct student));
 	for(i=0;i<num;i++)
 	{
 		
-		scanf("%s%d%d %c %c%d",p[i].Name,&p[i].agrades,&p[i].bgrades,&p[i].a,&p[i].b,&p[i].n);
+		my_scanf("%s%d%d %c %c%d",p[i].Name,&p[i].agrades,&p[i].bgrades,&p[i].a,&p[i].b,&p[i].n);
 		
 	}
 	int *p1,*p2;
@@ -71,9 +71,9 @@ int main_bench()
 		if(max==p2[i])
 			break;
 	}
-	printf("%s\n",p[i].Name);
-	printf("%d\n",p2[i]);
-	printf("%d",sum);
+	my_printf("%s\n",p[i].Name);
+	my_printf("%d\n",p2[i]);
+	my_printf("%d",sum);
 
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
   int n[1000],m,k,i,a=2,b=1,c;
   double sum[1000],y=0;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(i=0;i<m;i++){
-      scanf("%d",&n[i]);
+      my_scanf("%d",&n[i]);
   }
   for(i=0;i<m;i++){
       y=0;
@@ -19,7 +19,7 @@ int main_bench(){
 	 sum[i]=y;
 	}
   for(i=0;i<m;i++){
-      printf("%.3lf\n",sum[i]);
+      my_printf("%.3lf\n",sum[i]);
   }
   return 0;
 }

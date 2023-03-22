@@ -29,17 +29,17 @@ int main_bench()
 		{ 	
 			  if(m==0) 
 			  {
-			  	 printf("%d",a[m]);
+			  	 my_printf("%d",a[m]);
 			  	 tag=1;
 			  }
 	          else
 	          {
 	          	 if(tag==0) 
 	          	 {
-	          	 	 printf("%d",a[m]);
+	          	 	 my_printf("%d",a[m]);
 	          	 	 tag=1;
 	          	 }
-	          	 else  printf(",%d",a[m]);
+	          	 else  my_printf(",%d",a[m]);
 	          } 
 		}
 	}

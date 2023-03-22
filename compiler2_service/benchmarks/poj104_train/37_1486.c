@@ -6,13 +6,13 @@ main_bench()
       int n; 
       int i,count,j; 
       char str[100001];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
       for (count=0;count<n;count++)
       { 
       
       for (j='a';j<='z';j++)c[j]=0; 
-      scanf("%s",str);
+      my_scanf("%s",str);
       i=0;
       while(str[i]!='\0')
       {
@@ -23,9 +23,9 @@ main_bench()
       flag=0;
       while(str[i]!='\0')
       {
-                 if (c[str[i]]==1){printf("%c\n",str[i]);flag=1;break;} 
+                 if (c[str[i]]==1){my_printf("%c\n",str[i]);flag=1;break;} 
                  i++; 
       } 
-      if(flag!=1)printf("no\n"); 
+      if(flag!=1)my_printf("no\n"); 
       } 
 } 

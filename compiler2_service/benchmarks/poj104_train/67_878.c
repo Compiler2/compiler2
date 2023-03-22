@@ -4,27 +4,27 @@ int main_bench()
 {
 	int n,a,b,i,sz[100],zs[100];
 	float x,y[100];
-	scanf("%d",&n);
-	scanf("%d%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&a,&b);
 	x=(float)b/a*100;
 	for(i=0;i<n-1;i++)
 	{
-		scanf("%d%d",&sz[i],&zs[i]);
+		my_scanf("%d%d",&sz[i],&zs[i]);
 		y[i]=(float)zs[i]/sz[i]*100;	
 	}
 	for(i=0;i<n-1;i++)
 	{
 	    if(y[i]-x>5)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else if(x-y[i]>5)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

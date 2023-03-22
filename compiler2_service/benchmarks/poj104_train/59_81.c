@@ -3,11 +3,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char p[102][102];
 	for(int i=1;i<=n;i++){
 		for(int j=1;j<=n;j++){
-			scanf("%c",&p[i][j]);
+			my_scanf("%c",&p[i][j]);
 			if(p[i][j]=='\n') {
 				j--;
 			}
@@ -17,7 +17,7 @@ int main_bench(){
 		p[0][i]=p[n+1][i]=p[i][0]=p[i][n+1]='#';
 	}
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m>1){
 		for(int i=1;i<=n;i++){
 			for(int j=1;j<=n;j++){
@@ -50,7 +50,7 @@ int main_bench(){
 		}
 	}
 	
-	printf("%d",count);
+	my_printf("%d",count);
 	
 	
 	return 0;

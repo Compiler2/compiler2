@@ -5,7 +5,7 @@ int main_bench()
 	int n,m,i,j,a[100];
 	double c;
 	c=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	a[1]=1;
 	a[2]=2;
 	for(i=3;i<100;i++)
@@ -14,12 +14,12 @@ int main_bench()
 }
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=1;j<=n;j++)
 		{
 			c=c+(double)a[j+1]/a[j];
 		}
-		printf("%.3lf\n",c);
+		my_printf("%.3lf\n",c);
 c=0;
 	}
 	return 0;

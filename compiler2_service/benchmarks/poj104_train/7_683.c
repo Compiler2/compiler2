@@ -4,7 +4,7 @@ int main_bench()
 {
 	char string[500],substring[50],replacement[50];
 	int same,i,k,c;
-	scanf("%s%s%s",string,substring,replacement);
+	my_scanf("%s%s%s",string,substring,replacement);
 	for (i=0;i<strlen(string);i++)
 	{
 		same=1;
@@ -17,19 +17,19 @@ int main_bench()
 		}
 		if(same==1)
 		{
-			printf("%s",replacement);
+			my_printf("%s",replacement);
 			c=i;
 			break;
 		}
 		else
 		{
-			printf("%c",string[i]);
+			my_printf("%c",string[i]);
 		}
 	
 	}
 	for(i=c+strlen(substring);i<strlen(string);i++)
 	{
-		printf("%c",string[i]);
+		my_printf("%c",string[i]);
 	}
 	return 0;
 }

@@ -9,12 +9,12 @@ int main_bench()
  double average=0.0;
  int a[300]={0},c[300]={-1},d[300]={0};
  double b[300]={0.0};
- scanf("%lf",&n);
+ my_scanf("%lf",&n);
 
  for(i=0;i<n;i++)
  {
 	 c[i]=i;
-	 scanf("%d",a+i);
+	 my_scanf("%d",a+i);
 	 sum=sum+*(a+i);
  }
  average=sum/n;
@@ -43,7 +43,7 @@ int main_bench()
 	  break;
  }
  if(flag==1)
-	 printf("%d",a[c[0]]);
+	 my_printf("%d",a[c[0]]);
  else
  {
  
@@ -66,8 +66,8 @@ int main_bench()
 	  }
 	 }
  for(i=0;i<flag-1;i++)
-     printf("%d,",d[i]);
+     my_printf("%d,",d[i]);
  if(i==flag-1)
-	 printf("%d",d[i]);
+	 my_printf("%d",d[i]);
  }
 }

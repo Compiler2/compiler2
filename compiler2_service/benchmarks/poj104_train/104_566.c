@@ -3,7 +3,7 @@
 main_bench()
 {
      int xx,yy;
-     scanf("%d %d",&xx,&yy);
+     my_scanf("%d %d",&xx,&yy);
      int x[10],y[10];
      x[0]=xx;
      y[0]=yy;
@@ -27,7 +27,7 @@ main_bench()
             for(int b=0;b<=j;b++)
             if(x[a]==y[b]) 
             {
-               printf("%d",x[a]);
+               my_printf("%d",x[a]);
                bl=1;
                break;              
             }

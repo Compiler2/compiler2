@@ -10,19 +10,19 @@ int panduan(int a,int b){
 }
 int main_bench(){
 	int n,a,b,x=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	while(n--){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		x+=panduan(a,b);
 	}
 
 	if(x>0)
-		printf("A\n");
+		my_printf("A\n");
 	else if(x==0)
-		printf("Tie\n");
+		my_printf("Tie\n");
 	else
-		printf("B\n");
+		my_printf("B\n");
 	
 	return 0;
 }

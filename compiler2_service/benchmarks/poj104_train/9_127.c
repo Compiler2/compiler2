@@ -28,9 +28,9 @@ int main_bench()
 	int age[100], Age_[100]={0}, age_[100];
 	int n, i;
 	char id[100][10], Id_[100][10]={0}, id_[100][10]={0}, empty[10]={0};
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
-		scanf("%s%d", id[i], &age[i]);
+		my_scanf("%s%d", id[i], &age[i]);
 	for(i=0; i<n; i++)
 	{
 		if(age[i]>=60)
@@ -50,14 +50,14 @@ int main_bench()
 		if(strcmp(Id_[i], empty)==0)
 			continue;
 		else
-			printf("%s\n", Id_[i]);
+			my_printf("%s\n", Id_[i]);
 	}
 	for(i=0;i<n; i++)
 	{
 		if(strcmp(id_[i], empty)==0)
 			continue;
 		else
-			printf("%s\n", id_[i]);
+			my_printf("%s\n", id_[i]);
 	}
 	return 0;
 }

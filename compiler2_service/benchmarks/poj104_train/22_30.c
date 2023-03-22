@@ -25,8 +25,8 @@ int main_bench()
 		}
 	}
 	if(c[n]==c[0])
-		printf("No");
+		my_printf("No");
 	else {for(i=1;c[i]==c[0];i++)
 	{}
-	printf("%d",c[i]);}
+	my_printf("%d",c[i]);}
 }

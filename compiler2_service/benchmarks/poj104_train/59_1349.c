@@ -5,13 +5,13 @@ int main_bench()
     int i,j,k,n,count,time;
 	
     char a[2][100][101]; 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++){
 		gets(a[0][i]);
 		strcpy(a[1][i],a[0][i]);
 	}
-	scanf("%d",&time);
+	my_scanf("%d",&time);
 	for(k=0;k<(time-1);k++){ 
 		for(i=0;i<n;i++){
 			for(j=0;j<n;j++){
@@ -52,6 +52,6 @@ int main_bench()
 				}
 			}
 	}
-	printf("%d",count);
+	my_printf("%d",count);
     return 0;
 }

@@ -6,12 +6,12 @@ int main_bench()
 	int n,row,col;
 	int sum=0,i=0;
 	int SUM=0,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 		for(col=0;col<n;col++)
 		{
-			scanf("%d",&points[row][col]);
+			my_scanf("%d",&points[row][col]);
 		}
 	}
 	for(row=0;row<n;row++)
@@ -34,6 +34,6 @@ int main_bench()
 	    if(SUM<n*255)
 			j++;
 	}
-	printf("%d",(i-2)*(j-2));
+	my_printf("%d",(i-2)*(j-2));
 	return 0;
 }

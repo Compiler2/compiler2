@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[300]={'\0'},b[300]={'\0'};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int i,j,k=1,x=0,y=0,m,n;
 	m=strlen(a);
 	n=strlen(b);
@@ -26,11 +26,11 @@ int main_bench()
 	}
 	if(x==m&&m==n)
 	{
-		printf("YES");
+		my_printf("YES");
 	}
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

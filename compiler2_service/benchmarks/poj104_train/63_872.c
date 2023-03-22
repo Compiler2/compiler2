@@ -5,15 +5,15 @@ int main_bench()
     int m,n,p,i,j,k;
     int a[101][101],b[101][101],c[101][101];
     
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     for(i=1;i<=m;i++)
        for(j=1;j<=n;j++)
-          scanf("%d",&a[i][j]);
+          my_scanf("%d",&a[i][j]);
     
-    scanf("%d%d",&n,&p);   
+    my_scanf("%d%d",&n,&p);   
     for(i=1;i<=n;i++)
        for(j=1;j<=p;j++)
-          scanf("%d",&b[i][j]);
+          my_scanf("%d",&b[i][j]);
     
     for(i=1;i<=m;i++)
        for(j=1;j<=p;j++)
@@ -26,8 +26,8 @@ int main_bench()
     for(i=1;i<=m;i++)
     {
        for(j=1;j<p;j++)
-          printf("%d ",c[i][j]);
-        printf("%d\n",c[i][p]);   
+          my_printf("%d ",c[i][j]);
+        my_printf("%d\n",c[i][p]);   
     }   
     
     return 0;

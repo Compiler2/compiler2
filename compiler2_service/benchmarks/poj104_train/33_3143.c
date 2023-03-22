@@ -4,11 +4,11 @@ int main_bench(){
 	char jaji[1000][256];
 	int n,i,j;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",jaji[i]);
+		my_scanf("%s",jaji[i]);
 	}
 
 	for(i=0;i<n;i++){
@@ -34,7 +34,7 @@ int main_bench(){
 
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",jaji[i]);
+		my_printf("%s\n",jaji[i]);
 	
 	}
 	return 0;

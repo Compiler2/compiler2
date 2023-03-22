@@ -19,7 +19,7 @@ int main_bench()
 	d[n]=32;
 	sscanf(d,"%[^ ]",e);
 	puts(e);
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	return 0;
 }
 	

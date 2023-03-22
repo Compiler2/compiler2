@@ -5,13 +5,13 @@ int main_bench()
 {
 	int n,i;
 	float xg[1000],a,b,x;
-	scanf("%d",&n);
-	scanf("%f%f",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%f%f",&a,&b);
 	x=(b/a)*100;
          for(i=0;i<n-1;i++)
 	{
                   float p,q,y;
-		scanf("%f%f",&p,&q);
+		my_scanf("%f%f",&p,&q);
 		y=(q/p)*100;
 		xg[i]=y;
 	}
@@ -19,14 +19,14 @@ int main_bench()
 	{
 		if((x-xg[i])>5)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else if((xg[i]-x)>5)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else{
-                           printf("same\n");
+                           my_printf("same\n");
 		}
 	}
 	return 0;

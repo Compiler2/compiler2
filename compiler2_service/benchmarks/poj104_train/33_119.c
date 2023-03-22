@@ -5,11 +5,11 @@ int main_bench()
 	int n,b[1000];
 	char u[1000][256];
 	char a='A',t='T',g='G',c='C';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",u[i]);
+		my_scanf("%s",u[i]);
 	}
 		for(i=0;i<n;i++)
 	{	
@@ -28,7 +28,7 @@ int main_bench()
 }
 	for(i=0;i<n;i++)
 	{	
-	printf("%s\n",u[i]);
+	my_printf("%s\n",u[i]);
 	}
 return 0;
 }

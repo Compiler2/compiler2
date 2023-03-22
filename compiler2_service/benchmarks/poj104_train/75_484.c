@@ -7,7 +7,7 @@ int main_bench()
     char str;
     int temp=0,i,max=0,tmp,j;
     n=0;
-    scanf("%c",&str);
+    my_scanf("%c",&str);
     while(str != '\n')
     {
          if(str==',')
@@ -17,14 +17,14 @@ int main_bench()
                n++;   
          }
          else temp=temp*10+str-'0';  
-         scanf("%c",&str);        
+         my_scanf("%c",&str);        
     }
     num1[n]=temp;
     n++;
     for(i=0;i<n;i++)
     {
-          scanf("%d",&num2[i]);
-          scanf("%c",&str);          
+          my_scanf("%d",&num2[i]);
+          my_scanf("%c",&str);          
     }
    
    for(i=0;i<1000;i++)
@@ -36,7 +36,7 @@ int main_bench()
          if(tmp>max)
             max=tmp;             
    }
-   printf("%d %d",n,max);
+   my_printf("%d %d",n,max);
     
     return 0;
 }

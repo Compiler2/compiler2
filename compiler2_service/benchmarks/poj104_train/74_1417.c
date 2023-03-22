@@ -5,7 +5,7 @@ int main_bench()
 	int zhishu(int x);
 	int inttostr(int y);
 	int m,n,i,num[100]={0},v=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(zhishu(i)==1)
@@ -18,18 +18,18 @@ int main_bench()
 	}
 	if(num[0]==0)
 	{
-		printf("no");
+		my_printf("no");
 		return 0;
 	}
 	for(i=0;i<v;i++)
 	{
 		if(i==0)
 		{
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 		}
 		else
 		{
-			printf(",%d",num[i]);
+			my_printf(",%d",num[i]);
 		}
 	}
 	return 0;

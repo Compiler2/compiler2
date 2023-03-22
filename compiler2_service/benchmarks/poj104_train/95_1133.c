@@ -12,15 +12,15 @@ for(n=0,m=0;s1[n]!='\0';n++)
 if(s1[n]==s2[n]||s1[n]-s2[n]==32||s1[n]-s2[n]==-32)m++,b=m;
 if((s1[n]>s2[n]&&s1[n]-s2[n]>32)||(s1[n]<s2[n]&&s1[n]-s2[n]>-32))
 {
-	printf(">");
+	my_printf(">");
 	break;
 }
 if((s1[n]>s2[n]&&s1[n]-s2[n]<32)||(s1[n]<s2[n]&&s1[n]-s2[n]<-32))
 {
-	printf("<");
+	my_printf("<");
 	break;
 }
 }
-if(a==b-1)printf("=");
+if(a==b-1)my_printf("=");
 return 0;
 }

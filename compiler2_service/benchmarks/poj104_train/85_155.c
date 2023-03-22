@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j,t,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[20];
 	for(i=0;i<n;i++)
 	{
 		t=0;
-       scanf("%s",s);
+       my_scanf("%s",s);
 	   len=strlen(s);
 	   if(s[0]=='_'||s[0]>='A'&&s[0]<='Z'||s[0]>='a'&&s[0]<='z')
             t++;
@@ -18,9 +18,9 @@ int main_bench()
 					t++;
 			}	
 		if(t==len)
-		printf("yes\n");
+		my_printf("yes\n");
 		else
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 }

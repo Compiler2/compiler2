@@ -6,11 +6,11 @@ int main_bench()
 	int alpha[26],t,i, flag = 0,out = 0;
 	char a[10001],*p;	
 
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 
 	while(t>0)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 
 		for(i=0;i<26;i++)
 			alpha[i]=0;
@@ -32,7 +32,7 @@ int main_bench()
 				{
 					flag = 1;
 					out = 1;
-					printf("%c\n", 'a'+i);
+					my_printf("%c\n", 'a'+i);
 					break;
 				}
 			}
@@ -41,7 +41,7 @@ int main_bench()
 		}
 
 		if(0 == flag)
-			printf("no\n");	
+			my_printf("no\n");	
 		
 
 		t--;

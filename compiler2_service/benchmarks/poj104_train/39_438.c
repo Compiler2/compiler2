@@ -13,9 +13,9 @@ int main_bench()
     int m;
   }s[100];
   int n,i,max=0,t,sum=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-  scanf("%s %d %d %s %s %d\n",s[i].name,&s[i].a,&s[i].b,s[i].c,s[i].d,&s[i].e);
+  my_scanf("%s %d %d %s %s %d\n",s[i].name,&s[i].a,&s[i].b,s[i].c,s[i].d,&s[i].e);
   for(i=0;i<n;i++)
   s[i].m=0;
   for(i=0;i<n;i++)
@@ -41,8 +41,8 @@ int main_bench()
   }
   for(i=0;i<n;i++)
   sum+=s[i].m;
-  printf("%s\n",s[t].name);
-  printf("%d\n",max);
-  printf("%d\n",sum);
+  my_printf("%s\n",s[t].name);
+  my_printf("%d\n",max);
+  my_printf("%d\n",sum);
   return 0;
 }

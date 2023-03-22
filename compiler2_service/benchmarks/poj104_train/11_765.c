@@ -21,7 +21,7 @@ int m(int n)
 main_bench()
 {
       int a,b,c,x;
-      scanf("%d %d %d",&a,&b,&c);
+      my_scanf("%d %d %d",&a,&b,&c);
       if(m(a)==1)
       {
                  if(b==1)
@@ -48,7 +48,7 @@ main_bench()
                  x=305+c;
                  if(b==12)
                  x=335+c;
-              printf("%d",x);
+              my_printf("%d",x);
       }
       else
       {
@@ -76,7 +76,7 @@ main_bench()
                  x=304+c;
                  if(b==12)
                  x=334+c;
-                printf("%d",x);
+                my_printf("%d",x);
       }
       getchar();
       getchar();

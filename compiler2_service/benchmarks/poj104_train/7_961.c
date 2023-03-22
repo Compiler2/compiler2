@@ -47,6 +47,6 @@ int main_bench()
 		index2++;
 		index1++;
 	}
-	printf("%s",result);
+	my_printf("%s",result);
 	return 0;
 }

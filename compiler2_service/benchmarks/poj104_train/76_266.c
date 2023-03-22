@@ -10,10 +10,10 @@ struct couple
 int main_bench()
 {
   int n,i,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   struct couple line[n],temp;
   for (i=0;i<=n-1;i++)
-      scanf("%d%d",&line[i].x,&line[i].y);
+      my_scanf("%d%d",&line[i].x,&line[i].y);
   int min=line[0].x,max=line[0].y;
   for (i=0;i<=n-1;i++)
   {
@@ -37,8 +37,8 @@ int main_bench()
       flag=0;
   }
   if (flag==0)
-  printf("no");
+  my_printf("no");
   else
-  printf("%d %d",min,max);         
+  my_printf("%d %d",min,max);         
   return 0;
 }

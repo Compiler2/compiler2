@@ -12,10 +12,10 @@ for(t=2;t<30;t++){
 	i=i+j;
 	j=e;
 }
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(t=0;t<n;t++){
-	scanf("%d",&a);
-	printf("%d\n",sz[a-1]);
+	my_scanf("%d",&a);
+	my_printf("%d\n",sz[a-1]);
 }
 return 0;
 }

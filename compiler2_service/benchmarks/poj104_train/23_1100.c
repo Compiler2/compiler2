@@ -14,7 +14,7 @@ int main_bench()
 			c[d]=i;
 			for(j=i+1;j<c[d-1];j++)
 				putchar(str[j]);
-            printf(" ");
+            my_printf(" ");
 		}
 	for(i=0;i<c[d];i++)
 		putchar(str[i]);

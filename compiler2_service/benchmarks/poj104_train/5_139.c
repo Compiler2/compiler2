@@ -6,7 +6,7 @@ int main_bench(){
 	double r,odd;
 	dif=0;
 	error=0;
-	scanf("%lf",&odd);
+	my_scanf("%lf",&odd);
 	getchar();
 	gets(a);
 	gets(b);
@@ -23,14 +23,14 @@ int main_bench(){
 	r=1.0*dif/lengtha;
 
 	if(error>0||lengtha!=lengthb){
-		printf("error");
+		my_printf("error");
 	}else{
 		if(r>odd){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
-	scanf("%d",&stop);
+	my_scanf("%d",&stop);
 	return 0;
 }

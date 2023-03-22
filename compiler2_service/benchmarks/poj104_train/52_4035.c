@@ -6,15 +6,15 @@ void right_shift_array(int* a,int n,int m);
 
 int main_bench() {
 	int n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int* a=(int *)calloc(n,sizeof(int));
 	int i;
 	for(i=0;i<n;i++)
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	right_shift_array(a,n,m);
 	for(i=0;i<n-1;i++)
-		printf("%d ",a[i]);
-	printf("%d",a[n-1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d",a[n-1]);
 	free(a);
 	return 0;
 }

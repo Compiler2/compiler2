@@ -9,13 +9,13 @@ int main_bench()
 {
 	int n,i,j,k,t=0,r=0;
 	int a[200]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct a b[100];
 	struct a c[100];
 	struct a temp;
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%s %d",p[i].id,&p[i].year);
+		my_scanf("%s %d",p[i].id,&p[i].year);
 	}
 	for(i=0;i<=n-1;i++)
 	{
@@ -47,13 +47,13 @@ int main_bench()
 
 	for(i=0;i<=t-1;i++)
 	{
-		printf("%s\n",c[i].id);
+		my_printf("%s\n",c[i].id);
 	}
 	for(i=0;i<=n-1;i++)
 	{
 		if(p[i].year<60)
 		{
-			printf("%s\n",p[i].id);
+			my_printf("%s\n",p[i].id);
 		}
 	}
 	return 0;

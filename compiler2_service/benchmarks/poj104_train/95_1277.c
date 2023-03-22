@@ -23,18 +23,18 @@ int main_bench()
   {
       if (a[i]<b[j])
       {
-         printf("<");
+         my_printf("<");
          flag=0;
          break;
       }
       else if (a[i]>b[j])
       {
-           printf(">");
+           my_printf(">");
            flag=0;
            break;
       }
   }
   if (flag==1)
-  printf("="); 	
+  my_printf("="); 	
   return 0;
 }

@@ -49,7 +49,7 @@ main_bench()
 
       int a,i;
 
-      scanf("%d",&a);
+      my_scanf("%d",&a);
 
       getchar();
 

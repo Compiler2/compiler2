@@ -44,8 +44,8 @@ int main_bench()
 			if (f(i,j)==1)
 			{
 				for (k=i;k<i+j-1;k++)
-					printf("%c",s[k]);
-				printf("%c\n",s[i+j-1]);
+					my_printf("%c",s[k]);
+				my_printf("%c\n",s[i+j-1]);
 			}
 			
 			return 0;

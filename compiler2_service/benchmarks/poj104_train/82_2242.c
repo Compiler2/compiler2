@@ -3,9 +3,9 @@
 
 int main_bench() {
 int a=0,i,n,s1[100],s2[100],h=0,s3[100]={0},max=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for ( i=0;i<n;i++) {
-    scanf("%d %d",&s1[i],&s2[i]);
+    my_scanf("%d %d",&s1[i],&s2[i]);
 }
  for (i=0;i<n;i++) {
      if (s1[i]>=90&&s1[i]<=140&&s2[i]>=60&&s2[i]<=90) {
@@ -19,7 +19,7 @@ for ( i=0;i<n;i++) {
                     a++;  
                       }
                       if (a==n) {
-                                printf("0");
+                                my_printf("0");
                               
                                 return 0;                                }
                       }
@@ -34,7 +34,7 @@ for ( i=0;i<n;i++) {
              h=1;
              }
              }
-              printf("%d",max);
+              my_printf("%d",max);
 
 
 

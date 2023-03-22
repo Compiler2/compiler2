@@ -5,7 +5,7 @@ int main_bench()
 	int p=0,k=0,l=0,j=0,i=0,num[300]={0};
 	char in[1000];
 	for(i=0;i<1000;i++) in[i]=0;
-	scanf("%s",in);
+	my_scanf("%s",in);
 	i=0;
 	while(in[i])
 	{
@@ -39,11 +39,11 @@ int main_bench()
 		}
 		else 
 		{
-			printf("%d\n",num[i]);
+			my_printf("%d\n",num[i]);
 			break;
 		}
 
 	}
-	if(l==j) printf("No\n");
+	if(l==j) my_printf("No\n");
 }
 	

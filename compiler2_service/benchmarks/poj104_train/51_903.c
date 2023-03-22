@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,l,n,c[1000]={0},m=0;
 	char a[1000],b[1000][5];
-	scanf("%d%s",&n,a);
+	my_scanf("%d%s",&n,a);
 	l=strlen(a);
 	memset(b,0,sizeof(b));
     for(i=0;i<l-n+1;++i)
@@ -19,13 +19,13 @@ int main_bench()
 					m=c[i];
 			}
     if(m==0)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
-		printf("%d\n",m+1);
+		my_printf("%d\n",m+1);
 		for(i=0;i<l-n+1;++i)
 			if(c[i]==m)
-				printf("%s\n",b[i]);
+				my_printf("%s\n",b[i]);
 	}
 	return 0;
 }

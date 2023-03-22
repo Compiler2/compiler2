@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int*)malloc(sizeof(int)*n);
     int *js=(int*)malloc(sizeof(int)*n);
 	int p=0;
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		
 		if((sz[i]%2)==1){
 			js[p]=sz[i];
@@ -28,9 +28,9 @@ int main_bench(){
 	}
 	for(int y=0;y<(p);y++){
 		if(y<p-1){
-			printf("%d,",js[y]);
+			my_printf("%d,",js[y]);
 		}else{
-			printf("%d",js[y]);
+			my_printf("%d",js[y]);
 		}
 	}
 	

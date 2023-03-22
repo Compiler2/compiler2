@@ -15,11 +15,11 @@ main_bench()
 	}
  words[d1][d2]='\0';
  p=words;
- scanf("%s",subed);
- scanf("%s",sub);
+ my_scanf("%s",subed);
+ my_scanf("%s",sub);
  for(i=0;i<n;i++)
 	 if(strcmp(*(p+i),subed)==0)strcpy(*(p+i),sub);
  for(i=0;i<n-1;i++)
-	 printf("%s ",p+i);
- printf("%s",p+n-1);
+	 my_printf("%s ",p+i);
+ my_printf("%s",p+n-1);
 }

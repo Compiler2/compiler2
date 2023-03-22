@@ -3,7 +3,7 @@
 main_bench()
 {
       int n,i,j,count=0,l;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char s[n][80];
       char string[80];
       gets(string);
@@ -25,9 +25,9 @@ main_bench()
                 }                               
             }
             if(count==l)
-                 printf("1\n");
+                 my_printf("1\n");
             else
-                 printf("0\n");
+                 my_printf("0\n");
                 count=0;
       }
       getchar();

@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n,i,j,a,b,c,d,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	c=0;
 	for(i=1;i<=n;i++)
 	{
 		a=0;
 		for(j=1;j<=n;j++)
 		{
-			scanf("%d",&k);
+			my_scanf("%d",&k);
 			if(j<n)
-				scanf(" ");
+				my_scanf(" ");
 			if(k==0)
 				a=a+1;
 		}
@@ -22,6 +22,6 @@ int main_bench()
 			c=c+1;
 	}
 	d=(b-2)*(c-2);
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n, i, j, a1, a2, b1, b2, m;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int num[1000][1000];
 	for(i=0; i<n; i++)
 		for(j=0; j<n; j++)
-			scanf("%d", &num[i][j]);
+			my_scanf("%d", &num[i][j]);
 	for(i=0; i<n; i++)
 		for(j=0; j<n; j++)
 			if(num[i][j]==0){
@@ -20,7 +20,7 @@ int main_bench(){
 				b2=j;
 			}
 	m = (a1-b1-1)*(a2-b2-1);
-	printf("%d", m);
+	my_printf("%d", m);
 	return 0;
 }
 

@@ -5,9 +5,9 @@ int main_bench()
 {
   int n,i,j,b=1;
   char a[100][20];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-                   scanf("%s",a[i]);
+                   my_scanf("%s",a[i]);
                    }
   for(i=0;i<n;i++)
   {
@@ -20,7 +20,7 @@ int main_bench()
 			  }
 			  else if(a[i][j]!='\0')
 			  {
-				  printf("no\n");
+				  my_printf("no\n");
 				  b=0;
 				  break;
 			  }
@@ -28,12 +28,12 @@ int main_bench()
 				  break;
 		  }
 		  if(b==1)
-		  {printf("yes\n");}
+		  {my_printf("yes\n");}
 		  b=1;
 	  }
 	  else
 	  {
-		  printf("no\n");
+		  my_printf("no\n");
 	  }
   }
 

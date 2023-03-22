@@ -11,9 +11,9 @@ int main_bench(){
     };
     struct student nerd[100];
     int n,i,j,blame[100]={0},max=0,sin=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++){
-		scanf("%s %d %d %c %c %d",nerd[i].name,&nerd[i].grade1,&nerd[i].grade2,&nerd[i].jerk,&nerd[i].west,&nerd[i].paper);
+		my_scanf("%s %d %d %c %c %d",nerd[i].name,&nerd[i].grade1,&nerd[i].grade2,&nerd[i].jerk,&nerd[i].west,&nerd[i].paper);
 	}
     for(i=0;i<n;i++){
         if(nerd[i].grade1>80&&nerd[i].paper>=1){
@@ -39,7 +39,7 @@ int main_bench(){
         }
         sin+=blame[i];
     }
-    printf("%s\n",nerd[j].name);
-    printf("%d\n%d",max,sin);
+    my_printf("%s\n",nerd[j].name);
+    my_printf("%d\n%d",max,sin);
     return 0;
 }

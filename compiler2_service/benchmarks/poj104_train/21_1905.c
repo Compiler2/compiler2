@@ -11,13 +11,13 @@ int main_bench()
 	
 
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	float avg = 0;
 	float data[400];
 	for (int i = 0;i < n; i++)
 	{
-		scanf("%f", &data[i]);
+		my_scanf("%f", &data[i]);
 		avg += data[i];
 	}
 	avg /= n;
@@ -61,7 +61,7 @@ int main_bench()
 
 	for (int i = 0; i < sp; i++)
 	{
-		printf("%d%c", result[i], i==sp-1 ? '\n' : ',');
+		my_printf("%d%c", result[i], i==sp-1 ? '\n' : ',');
 	}
 
 	return 0;

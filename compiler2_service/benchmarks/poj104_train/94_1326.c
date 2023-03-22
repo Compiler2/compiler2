@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int N,sz[501],i=0,j=0,e,k=1,m;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 	}
 	for(k=0;k<=N;k++){
 		for(j=0;j<N;j++){
@@ -19,9 +19,9 @@ int main_bench(){
 	for(j=0;j<=N;j++){
 		if(sz[j]%2==1){
 			if(m==0){
-				printf("%d",sz[j]);
+				my_printf("%d",sz[j]);
 			}else{
-			printf(",%d",sz[j]);}
+			my_printf(",%d",sz[j]);}
 		m++;
 		}
 	}

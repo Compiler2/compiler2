@@ -58,12 +58,12 @@ int main_bench()
 	{
 		if(q==w[m])
 		{
-			printf("%s",c);
+			my_printf("%s",c);
 			q+=l_sub;
 			m++;
 		}
 		if(q!=l)
-		{printf("%c",a[q]);}
+		{my_printf("%c",a[q]);}
 		q++;
 	}
 	}

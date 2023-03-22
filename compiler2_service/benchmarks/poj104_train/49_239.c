@@ -18,8 +18,8 @@ for(j=1;j<=n;(j=j+2))
      if(sum==j/2+1)
      { 
             for(k=i;k<=i+j;k++)
-            printf("%c",s[k]);
-            printf("\n");
+            my_printf("%c",s[k]);
+            my_printf("\n");
      }
      sum=0;
    }

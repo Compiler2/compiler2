@@ -14,16 +14,16 @@ int main_bench()
 		if (b[i]<97) b[i]=b[i]+32;}
 	if(c==d){
     for(i=0;i<c;i++){
-		if (a[i]>b[i]){printf(">");break;}
-        else if (a[i]<b[i]){printf("<");break;}
+		if (a[i]>b[i]){my_printf(">");break;}
+        else if (a[i]<b[i]){my_printf("<");break;}
 		else {n=n+1;}
 	}
-	if(n==c){printf("=");}
+	if(n==c){my_printf("=");}
 	}
 	if(c!=d){if(c>d){e=c;} if(c<d){e=d;}
 	for(i=0;i<e;i++){
-		if (a[i]>b[i]){printf(">");break;}
-        else if (a[i]<b[i]){printf("<");break;}
+		if (a[i]>b[i]){my_printf(">");break;}
+        else if (a[i]<b[i]){my_printf("<");break;}
 	}
 	}
 	return 0;

@@ -3,15 +3,15 @@
 int main_bench(){
 	double p,q;
 	int a,b,m=0,brak=0;
-	scanf("%lf",&p);
+	my_scanf("%lf",&p);
 	char k[600],kk[600];
-	scanf("%s",k);
-	scanf("%s",kk);
+	my_scanf("%s",k);
+	my_scanf("%s",kk);
 	a=strlen(k);
 	b=strlen(kk);
 	for(int h=0;;h++){
 		if(a!=b){
-		printf("error");
+		my_printf("error");
 		break;
 		}
 		for(int c=0;c<a;c++){
@@ -19,7 +19,7 @@ int main_bench(){
             if(!(kk[c]=='A'||kk[c]=='T'||kk[c]=='C'||kk[c]=='G')){brak++;}
 		}
 		if(brak!=0){
-			printf("error");
+			my_printf("error");
 		    break;
 		}
 		for(int i=0;i<a;i++){
@@ -29,10 +29,10 @@ int main_bench(){
 		}
         q=m/(a*1.0);
         if(q>=p){
-			printf("yes");
+			my_printf("yes");
 		}
 		if(q<p){
-			printf("no");
+			my_printf("no");
 		}
 		break;
 	}

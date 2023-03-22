@@ -3,19 +3,19 @@
 int main_bench(){
   double a,b,e,s;
   int m,n;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(int i=1;i<=m;i++){
 	s=0;
 	a=1;
 	b=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=1;j<=n;j++){
 		s=s+b/a;
 		e=a+b;
 		a=b;
 		b=e;
 	}
-	printf("%.3lf\n",s);
+	my_printf("%.3lf\n",s);
 }
 	return 0;
 }

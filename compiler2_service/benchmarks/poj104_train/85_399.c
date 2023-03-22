@@ -25,7 +25,7 @@ int main_bench()
 {
 	int i, n, result[100];
 	char c[50];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	gets(c);
 	for(i=0; i<n; i++)
 	{
@@ -34,16 +34,16 @@ int main_bench()
 	}
 
 	if(result[0])
-			printf("yes");
+			my_printf("yes");
 	else
-			printf("no");
+			my_printf("no");
 
 	for(i=1; i<n; i++)
 	{
 		if(result[i])
-			printf("\nyes");
+			my_printf("\nyes");
 		else
-			printf("\nno");
+			my_printf("\nno");
 	}
 	return 0;
 }

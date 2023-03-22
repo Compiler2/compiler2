@@ -4,11 +4,11 @@ int main_bench()
 {
 	int t,i,j,l;
 	char s[100000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{	
 		char yici[100000]={'0'};
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int len=strlen(s);
 		int a=0;
 		for(j=0;s[j];j++)
@@ -40,11 +40,11 @@ int main_bench()
 		}
 		if(yici[0]=='0')
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else
 		{
-			printf("%c\n",yici[0]);
+			my_printf("%c\n",yici[0]);
 		}
 	}
 	return 0;

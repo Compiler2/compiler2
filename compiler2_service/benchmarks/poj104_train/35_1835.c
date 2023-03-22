@@ -6,12 +6,12 @@ int main_bench()
     int a,b,i,j,u,x,k,l;
 	int e=0,f=0;
 	char c='+',d;
-    scanf("%d,%d",&a,&b);
+    my_scanf("%d,%d",&a,&b);
 	for(i=0;i<a;i++)
 	{
 		for(j=0;j<b;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<a;i++)
@@ -36,14 +36,14 @@ int main_bench()
 		}
 		if(e==0)
 		{
-			printf("%d%c%d\n",l,c,k);
+			my_printf("%d%c%d\n",l,c,k);
 			f=f+1;
 			break;
 		}
 	}
 	if(f==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	return 0;
 }

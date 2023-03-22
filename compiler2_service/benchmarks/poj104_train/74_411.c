@@ -30,7 +30,7 @@ int main_bench(){
  int m,n,i,j,k=0,b,c,v=0;
 
 
- scanf("%d %d",&m,&n);
+ my_scanf("%d %d",&m,&n);
 
 
  for(i=m;i<=n;i++){
@@ -41,7 +41,7 @@ int main_bench(){
 
 
   
-  if(b*c){printf("%d",i);k=1;v=i;break;}}
+  if(b*c){my_printf("%d",i);k=1;v=i;break;}}
 
 if(v==0) v=m;
 
@@ -53,10 +53,10 @@ for(i=v+1;i<=n;i++){
 
 
   
-  if(b*c){printf(",%d",i);k=1;}}
+  if(b*c){my_printf(",%d",i);k=1;}}
   
 
- if(k==0)printf("no");
+ if(k==0)my_printf("no");
 
 
    }

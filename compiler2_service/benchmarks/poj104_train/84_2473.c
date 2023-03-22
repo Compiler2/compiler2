@@ -5,9 +5,9 @@ int main_bench()
 int ax[100];
 int a=0;
 int i;
-scanf("%d",&i);
+my_scanf("%d",&i);
 while (a<=i-1)
-{scanf("%d",&ax[a]);
+{my_scanf("%d",&ax[a]);
 a++;
 }
 int b=0,c,k=1;
@@ -24,6 +24,6 @@ while (k<i)
 	 }
 k++;
 }
-printf("%d\n%d",ax[i-1],ax[i-2]);
+my_printf("%d\n%d",ax[i-1],ax[i-2]);
 return 0;
 }

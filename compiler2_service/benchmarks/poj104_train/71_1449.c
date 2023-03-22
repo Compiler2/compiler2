@@ -21,10 +21,10 @@ int main_bench()
 {
 	int year[200],month1[200],month2[200],day1[200],day2[200];
 	int n,i,day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
+		my_scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
 		day1[i]=days(year[i],month1[i]);
 		day2[i]=days(year[i],month2[i]);
 		
@@ -32,9 +32,9 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if((day1[i]-day2[i])%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

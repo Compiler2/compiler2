@@ -5,7 +5,7 @@ int main_bench()
     int c[60]={0};
     int i,j=1,len,tem;
     char str[301];
-    scanf("%s",str);
+    my_scanf("%s",str);
     len=strlen(str);
     for(i=0;i<len;i++)
     {           
@@ -21,12 +21,12 @@ int main_bench()
     {
         if(c[i]!=0)
         {
-        printf("%c=%d\n",'A'+i,c[i]); 
+        my_printf("%c=%d\n",'A'+i,c[i]); 
                     }   
 }           
         if(j)
          {
-         printf("No");
+         my_printf("No");
                      }
 
      return 0; 

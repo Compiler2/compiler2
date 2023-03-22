@@ -3,7 +3,7 @@
 
 main_bench() {
        char s[50],targets[50];
-       scanf("%s %s",&s,&targets);
+       my_scanf("%s %s",&s,&targets);
        int slen=strlen(s);
        int targetslen=strlen(targets);
        int i,j;
@@ -17,7 +17,7 @@ main_bench() {
                                 }
                             }
                             if (check==1) {
-                                            printf("%d",i);
+                                            my_printf("%d",i);
                                             done=1;
                             }
            } 

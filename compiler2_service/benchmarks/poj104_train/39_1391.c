@@ -15,10 +15,10 @@ struct asd
 int main_bench()
 {
 	int i,n,max,m,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d", stu[i].str, &stu[i].a, &stu[i].b, &stu[i].x, &stu[i].y, &stu[i].c);
+		my_scanf("%s %d %d %c %c %d", stu[i].str, &stu[i].a, &stu[i].b, &stu[i].x, &stu[i].y, &stu[i].c);
 		stu[i].sum=0;
 	}
 
@@ -49,5 +49,5 @@ int main_bench()
 		{max=stu[i].sum;t=i;}
 	}
 
-	printf("%s\n%d\n%d\n", stu[t].str, max, m);
+	my_printf("%s\n%d\n%d\n", stu[t].str, max, m);
 }

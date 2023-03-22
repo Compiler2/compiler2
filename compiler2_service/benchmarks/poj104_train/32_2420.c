@@ -3,10 +3,10 @@
 int main_bench()
 {int n,i,j,p,q,m;
   char a[100],b[100],c[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%s",a);
-	  scanf("%s",b);
+	{my_scanf("%s",a);
+	  my_scanf("%s",b);
        p=strlen(a);
        q=strlen(b);		
      for(j=0;j<q;j++)
@@ -19,7 +19,7 @@ int main_bench()
 	 for(j=0;j<p;j++)
 	  if(c[j]!='0')break;
 	 for(;j<p;j++)
-	  printf("%c",c[j]);
-	printf("\n");
+	  my_printf("%c",c[j]);
+	my_printf("\n");
 	  }
 }

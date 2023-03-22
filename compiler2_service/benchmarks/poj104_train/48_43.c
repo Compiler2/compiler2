@@ -5,7 +5,7 @@ int A[11][11], tmp[11][11];
 int N;
 int main_bench()
 {
-	scanf ("%d %d", &A[5][5], &N);
+	my_scanf ("%d %d", &A[5][5], &N);
 	for (int i = 0; i < N; i ++)
 	{
 		memset(tmp, 0, sizeof(tmp));
@@ -27,8 +27,8 @@ int main_bench()
 	for (int i = 1; i < 10; i ++)
 	{
 		for (int j = 1; j < 9; j ++)
-			printf ("%d ", A[i][j]);
-		printf ("%d\n", A[i][9]);
+			my_printf ("%d ", A[i][j]);
+		my_printf ("%d\n", A[i][9]);
 	}
 	return 0;
 }

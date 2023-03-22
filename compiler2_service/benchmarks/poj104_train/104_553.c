@@ -75,6 +75,6 @@ int erchashu(int x,int y)
 int main_bench()
 {
 	int x,y;
-	scanf("%d%d",&x,&y);
-	printf("%d\n",erchashu(x,y));
+	my_scanf("%d%d",&x,&y);
+	my_printf("%d\n",erchashu(x,y));
 }

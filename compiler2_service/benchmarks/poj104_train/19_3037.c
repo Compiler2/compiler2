@@ -17,16 +17,16 @@ int main_bench()
 				break;}
 				if(flag==0){
 					for(k=0;k<q;k++)
-						printf("%c",c[k]);
+						my_printf("%c",c[k]);
 					i=i+n-1;
 				}
 			else{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 				flag=0;
 			}
 		}
 			else{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 				flag=0;
 			}
 	}

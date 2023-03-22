@@ -29,16 +29,16 @@ int main_bench()
     int n;
 	int n0;
 	int a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
-	printf("%d",a[0]);
+    my_scanf("%d",&a[i]);
+	my_printf("%d",a[0]);
 	for(i=0;;i++)
 	{
 		n0=n;
 		n=num(a,n);
 		cut(a,n0);
-		printf(",%d",a[0]);
+		my_printf(",%d",a[0]);
 		
 		if(num(a,n)==0)
 			break;

@@ -3,11 +3,11 @@
 int shuzu[1000000];
 int main_bench(){
     int n,k,x,num=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int t=0;t<n;t++){
-        scanf("%d",&shuzu[t]);
+        my_scanf("%d",&shuzu[t]);
     }
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for (int j=0;j<n;j++){
            if (shuzu[j]==k){
                 for (int i=j;i<=n-1;i++){
@@ -23,10 +23,10 @@ int main_bench(){
     }          
     for (int m=0;m<n;m++){
             if (m==0){
-            printf("%d",shuzu[m]);
+            my_printf("%d",shuzu[m]);
             }
             else {
-                   printf(" %d",shuzu[m]);    
+                   my_printf(" %d",shuzu[m]);    
                    }
     } 
 return 0;    

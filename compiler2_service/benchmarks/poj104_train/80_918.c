@@ -7,8 +7,8 @@ int main_bench()
 	{
 		int year;int month;int day;
 	}date1,date2;
-	scanf("%d%d%d",&date1.year,&date1.month,&date1.day);
-	scanf("%d%d%d",&date2.year,&date2.month,&date2.day);
+	my_scanf("%d%d%d",&date1.year,&date1.month,&date1.day);
+	my_scanf("%d%d%d",&date2.year,&date2.month,&date2.day);
 	s+=(date2.year-date1.year)*365;
 	s+=(date2.month-date1.month)*30;
 	s+=(date2.day-date1.day);
@@ -47,5 +47,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 }

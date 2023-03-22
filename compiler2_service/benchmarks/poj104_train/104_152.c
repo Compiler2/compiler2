@@ -7,7 +7,7 @@ int main_bench()
 	int d[12];
 	int e[12];
 	int f[12];
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	 c[11]=a;
 	for(i=10;i>=0;i--)
 	{
@@ -63,6 +63,6 @@ int main_bench()
 		}
 		else break;
 	}
-	printf("%d",q);
+	my_printf("%d",q);
 	
 }

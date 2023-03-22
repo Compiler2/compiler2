@@ -4,14 +4,14 @@ int main_bench()
 {
 	int panduan(int x);
     int m,i,j,a,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=3;i<=m/2;i=i+2)
 	{
 		j=m-i;
 		a=panduan(i);
 		b=panduan(j);
 		if((a==1)&&(b==1))
-			printf("%d %d\n",i,j);
+			my_printf("%d %d\n",i,j);
 	}
     return 0;
 }

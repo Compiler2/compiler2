@@ -5,10 +5,10 @@ int main_bench()
     int a[20000],b[20000];
 	a[20000]='\0';
 	b[20000]='\0';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     
 	for(i=0;i<n;i=i+1)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	
 	a[0]=b[0];
 	m=1;
@@ -21,6 +21,6 @@ int main_bench()
 	t=1;}
     
 	for(i=0;i<m-1;i=i+1)
-		printf("%d ",a[i]);
-printf("%d",a[m-1]);
+		my_printf("%d ",a[i]);
+my_printf("%d",a[m-1]);
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int num,a,b,c,d,e,n;
 	int mun;
 
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 
 	a=num/10000;
 	b=(num%10000)/1000;
@@ -22,5 +22,5 @@ int main_bench()
 
 	mun=(a*1+b*10+c*100+d*1000+e*10000)/n;
 	
-	printf("%d\n",mun);
+	my_printf("%d\n",mun);
 }

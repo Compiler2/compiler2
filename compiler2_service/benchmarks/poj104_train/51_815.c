@@ -5,8 +5,8 @@ int main_bench()
 	int n;
 	char moto[510];
 	char (*a)[7];
-	scanf("%d", &n);
-	scanf("%s", moto);
+	my_scanf("%d", &n);
+	my_scanf("%s", moto);
 	int len;
 	len = strlen(moto);
 	int i, j;
@@ -49,13 +49,13 @@ int main_bench()
 	}
 	if (max > 1)
 	{
-		printf("%d\n", max);
+		my_printf("%d\n", max);
 		for (i = 0; i < len; i++)
 		{
 			if (*(t + i) == max)
-				printf("%s\n", *(a + i));
+				my_printf("%s\n", *(a + i));
 		}
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 }

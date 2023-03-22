@@ -5,8 +5,8 @@ int main_bench()
 	int startyear,startmonth,startday,endyear,endmonth,endday;
 	int m[13],y[3001];
 	int i,j,k,p;
-	scanf("%d%d%d",&startyear,&startmonth,&startday);
-	scanf("%d%d%d",&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d",&startyear,&startmonth,&startday);
+	my_scanf("%d%d%d",&endyear,&endmonth,&endday);
 	for(i=1;i<=12;i++)
 	{
 		if(i==1||i==3||i==5||i==7||1==8||i==10||i==12)
@@ -62,6 +62,6 @@ int main_bench()
 			k=k+y[i];
 		}
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 	return 0;
 }

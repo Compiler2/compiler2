@@ -12,10 +12,10 @@ int main_bench()
 		int fee;
 	}stu[102];
 	int i,sum=0,n,max;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d\n",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d %d %c %c %d\n",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 	}
 	for(i=0;i<102;i++)
 	{
@@ -44,7 +44,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(stu[i].fee==max)
-		{printf("%s\n%d\n%d",stu[i].name,stu[i].fee,sum);
+		{my_printf("%s\n%d\n%d",stu[i].name,stu[i].fee,sum);
 		break;}
 	}
 	return 0;

@@ -32,7 +32,7 @@ int main_bench()
 						    break;
 							if(e!=1&&d==1)
 							break;
-							printf("%d %d %d %d %d",a,b,c,d,e);
+							my_printf("%d %d %d %d %d",a,b,c,d,e);
 						}
 						
 					}

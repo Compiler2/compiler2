@@ -6,7 +6,7 @@ int main_bench()
     char a[52]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",temp;
     for(i=0;i<300;i++)
     {
-        scanf("%c",&temp);
+        my_scanf("%c",&temp);
         if(temp=='\n') break;
         for(j=0;j<52;j++)
         {
@@ -17,12 +17,12 @@ int main_bench()
             }
         }
     }
-    if(t==0) printf("No\n");
+    if(t==0) my_printf("No\n");
     else
     for(i=0;i<52;i++)
     {
         if(b[i])
-        printf("%c=%d\n",a[i],b[i]);
+        my_printf("%c=%d\n",a[i],b[i]);
     }
     return 0;
 }

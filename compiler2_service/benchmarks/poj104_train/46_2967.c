@@ -5,17 +5,17 @@ const int y[5]={0,1,0,-1,0};
 int f[1000][1000];
 int main_bench(){
 int m,n,k=1;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for (int i=1; i<=m; i++){
 for (int j=1; j<=n; j++){
-scanf("%d",&f[i][j]);
+my_scanf("%d",&f[i][j]);
 }
 }
 int dx=1,dy=1;
 int dm=m,dn=n,cm=1,cn=1;
 int count=0;
 while (count<(m*n)){
-printf("%d\n",f[dx][dy]);
+my_printf("%d\n",f[dx][dy]);
 count++;
 int tx=dx+x[k];
 int ty=dy+y[k];

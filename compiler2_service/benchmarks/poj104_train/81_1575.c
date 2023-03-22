@@ -6,11 +6,11 @@ int main_bench()
 	int m,n,i,j,c,b[5],a[5][5],k;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d %d",&m,&n);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d %d",&m,&n);
 	c=change(m,n);
 	if(c==0)
-		printf("error\n");
+		my_printf("error\n");
 	if(c==1)
 	{
 		for(k=0;k<5;k++)
@@ -21,7 +21,7 @@ int main_bench()
 		}
 		for(i=0;i<5;i++)
 		{
-			printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+			my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
 		}
 	}
 }

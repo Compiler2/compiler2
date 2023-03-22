@@ -20,12 +20,12 @@ loop:for(;i<t;i++)
 		 if(*(*(p+i)+j)==*(*(p+i)+k)&&j!=k)
 			 sum=1;
 		 if(sum==0)
-		 {printf("%c\n",*(*(p+i)+j));
+		 {my_printf("%c\n",*(*(p+i)+j));
 		 i++;
 		 goto loop;}
 	     sum=0;
 	}
-	 printf("no");
-	 printf("\n");
+	 my_printf("no");
+	 my_printf("\n");
 	 }
 }

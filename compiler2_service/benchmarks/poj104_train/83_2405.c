@@ -4,17 +4,17 @@
  {
   float GPA,s=0;
   int i,n,m,o,t=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[n],b[n];
   float c[n];
   for(m=1;m<=n;m++)
     {
-       scanf("%d ",&a[m]);
+       my_scanf("%d ",&a[m]);
     t=t+a[m];
     }
   for(i=1;i<=n;i++)
     {
-      scanf("%d ",&b[i]);
+      my_scanf("%d ",&b[i]);
       if(b[i]>=90&&b[i]<=100)
 	   c[i]=4.0;
    if(b[i]>=85&&b[i]<=89)
@@ -41,6 +41,6 @@
   s=s+a[o]*c[o];
   }
   GPA=s/t;
-  printf("%.2f",GPA);
+  my_printf("%.2f",GPA);
   return 0;
  }

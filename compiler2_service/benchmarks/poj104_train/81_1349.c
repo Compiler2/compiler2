@@ -23,15 +23,15 @@ int n,m;
  for (i=0;i<5;i++)
  for(j=0;j<5;j++)
 {
-scanf("%d",&value[i][j]);
+my_scanf("%d",&value[i][j]);
 }
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 if (trans(value,n,m)==0)
-printf("error\n");
+my_printf("error\n");
 else
 {
  for (i=0;i<5;i++)
-printf("%d %d %d %d %d\n",value[i][0],value[i][1],value[i][2],value[i][3],value[i][4]);
+my_printf("%d %d %d %d %d\n",value[i][0],value[i][1],value[i][2],value[i][3],value[i][4]);
 }
 return 0;
 }

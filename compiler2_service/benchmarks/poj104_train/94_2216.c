@@ -2,11 +2,11 @@
 
 int main_bench()
 {int n,jn=0,mid;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int shuzu[n],jishu[n];
 for (int i1=0;i1<n;i1++)
 {
-scanf("%d",&shuzu[i1]);
+my_scanf("%d",&shuzu[i1]);
 if (shuzu[i1]%2==1)
 {
 jn=jn+1;
@@ -24,8 +24,8 @@ jishu[i2]=mid;
 }
 for (int i3=1;i3<jn;i3++)
 {
-printf("%d,",jishu[i3]);
+my_printf("%d,",jishu[i3]);
 }
-printf("%d",jishu[jn]);
+my_printf("%d",jishu[jn]);
 return 0;
 }

@@ -5,10 +5,10 @@ int main_bench()
     int c,d,e,f,n,i;
     char a[100][10];
     int b[100];
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     for (i=0;i<n;i++)
     {
-        scanf ("%s %d",a[i],&b[i]);
+        my_scanf ("%s %d",a[i],&b[i]);
     }
     for (c=0;c<n;c++)
     {       
@@ -26,7 +26,7 @@ int main_bench()
       }
          if(e!=-1)
          {
-           printf ("%s\n",a[f]);
+           my_printf ("%s\n",a[f]);
            b[f]=0;
          }
     }
@@ -34,7 +34,7 @@ int main_bench()
     {
         if (b[i]!=0)
        {
-           printf ("%s\n",a[i]);
+           my_printf ("%s\n",a[i]);
        }
     }
     getchar();

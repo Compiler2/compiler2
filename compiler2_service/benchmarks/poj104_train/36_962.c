@@ -6,8 +6,8 @@ int main_bench()
 	char A[100],B[100];
 	int x[100]={0};
 	int flag=0;
-	scanf("%s",&A);
-	scanf("%s",&B);
+	my_scanf("%s",&A);
+	my_scanf("%s",&B);
 	if (strlen(A)==strlen(B))
 	{
 	for(i=0;i<=strlen(A);i++)
@@ -23,9 +23,9 @@ int main_bench()
 	{
 		if(x[i]==0) flag=1;
 	}
-	if (flag==1) printf("NO");
-	else printf("YES");
+	if (flag==1) my_printf("NO");
+	else my_printf("YES");
 	}
-	else printf("NO");
+	else my_printf("NO");
 	return 0;
 }

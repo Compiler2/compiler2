@@ -5,12 +5,12 @@ int main_bench()
 	int a[1000][1000];
 	int n;
 	int i,j,k,r;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
 		for(j=0;j<=n-1;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<=n-1;i++)
@@ -37,6 +37,6 @@ int main_bench()
 			}
 		}
 	}
-A:  printf("%d\n",(k-2)*(r-2));
+A:  my_printf("%d\n",(k-2)*(r-2));
 	return 0;
 }

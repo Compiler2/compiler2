@@ -5,10 +5,10 @@ int main_bench()
 	int m,n,i,j;
 	int a1,a2;
 	double e,x,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		sum=0;
 		a1=a2=1;
         for(j=0;j<m;j++)
@@ -19,7 +19,7 @@ int main_bench()
 			x=1.0*a2/a1;
 			sum+=x;
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

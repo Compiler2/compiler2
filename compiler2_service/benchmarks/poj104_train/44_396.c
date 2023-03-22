@@ -29,7 +29,7 @@ int reverse(int num){
 }
 int main_bench(){
 	int a,b,c,d,e,f;
-	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
-	printf("%d\n%d\n%d\n%d\n%d\n%d",reverse(a),reverse(b),reverse(c),reverse(d),reverse(e),reverse(f));
+	my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d",reverse(a),reverse(b),reverse(c),reverse(d),reverse(e),reverse(f));
 return 0;
 }

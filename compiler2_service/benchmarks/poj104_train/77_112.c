@@ -5,7 +5,7 @@ int main_bench()
 {
     char s1,s2,a[100],p;
     int i,j,k,n,flag,tj,ttj;
-    scanf("%s",a);
+    my_scanf("%s",a);
 
     for(i=0;;i++)
     {
@@ -53,7 +53,7 @@ int main_bench()
 
         if(s1!=s2)
         {
-            printf("%d %d\n",tj,ttj);
+            my_printf("%d %d\n",tj,ttj);
 
             a[tj]='0';
             a[ttj]='0';

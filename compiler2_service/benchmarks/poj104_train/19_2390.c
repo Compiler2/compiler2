@@ -68,7 +68,7 @@ int main_bench()
 	i = 0 ;
 	while(i<strlen(str)-1)
 	{
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 		i++;
 	}
 

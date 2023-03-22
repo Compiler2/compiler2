@@ -3,7 +3,7 @@
 int main_bench()
 {
   int year,month,day,i,sum=0,m=0;
-  scanf("%d%d%d",&year,&month,&day);
+  my_scanf("%d%d%d",&year,&month,&day);
   if((year%4==0&&year%100!=0)||year%400==0)
   {
     int M[13];
@@ -31,7 +31,7 @@ int main_bench()
     }
     sum=m+day;
    }
-  printf("%d",sum);
+  my_printf("%d",sum);
   return 0;
 }
 

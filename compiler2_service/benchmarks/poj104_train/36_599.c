@@ -1,23 +1,23 @@
 #include <header.h>
 
 void ex(char a[], char b[]);
-void main_bench()
+int main_bench()
 {
 	char a[100], b[100];
 	int i, j, l;
-	scanf("%s%s", a, b);
+	my_scanf("%s%s", a, b);
 	ex(a, b);
 	if(strlen(a) == strlen(b))
 	{
 		l = strlen(a);
 		i = strcmp(a, b); 
 		if(i == 0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 }
 
 void ex(char a[], char b[])

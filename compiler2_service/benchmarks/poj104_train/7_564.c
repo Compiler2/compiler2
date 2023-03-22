@@ -27,12 +27,12 @@ for (i=0; i<=(int)strlen(s); i++,flag=0) {
 }
 for(i=0;i<strlen(s);i++){
 	if(i==k){
-		printf("%s",b);
+		my_printf("%s",b);
 		i=i+lenb-1;
 		continue;
 	}
 	else
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 
 }
 return 0;

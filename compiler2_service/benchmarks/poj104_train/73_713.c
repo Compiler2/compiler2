@@ -15,7 +15,7 @@ int main_bench()
    int i,j;
    for (i=0;i<5;i++)
      for (j=0;j<5;j++)
-       scanf("%d",&a[i][j]);
+       my_scanf("%d",&a[i][j]);
    for (i=0;i<5;i++)
      for (j=0;j<5;j++)
        if (check(a,i,j))
@@ -26,8 +26,8 @@ int main_bench()
          }
 
     if (que!=30302)
-      printf("%d %d %d",posh,posl,que);
-    else printf("not found");
+      my_printf("%d %d %d",posh,posl,que);
+    else my_printf("not found");
   return 0;
 
 }

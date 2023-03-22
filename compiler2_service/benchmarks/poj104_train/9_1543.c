@@ -38,15 +38,15 @@ int main_bench()
 {
 	int n,i;
 	struct p a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",a[i].id,&a[i].age);
+		my_scanf("%s%d",a[i].id,&a[i].age);
 	}
 	bubble(a,n);
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",a[i].id);
+		my_printf("%s\n",a[i].id);
 	}
 	return 0;
 }

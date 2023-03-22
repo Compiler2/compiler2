@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int m,u;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	int n,i;
 	for(u=0;u<m;u++){
 		double s=0;
                   	double a=2,b=1;
-		scanf("%d", &n);
+		my_scanf("%d", &n);
 		for(i=0;i<n;i++){
 			double t=0;
 			s+=a/b;
@@ -16,7 +16,7 @@ int main_bench()
 			a+=b;
 			b=t;
 		}
-		printf("%.3lf\n", s);
+		my_printf("%.3lf\n", s);
 	}
 	return 0;
 }

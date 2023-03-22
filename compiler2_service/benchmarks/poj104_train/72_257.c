@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int i=0,j=0;
 	int **pp;
 	pp=(int **)malloc(sizeof (int *)*(m+2));
@@ -15,7 +15,7 @@ int main_bench()
 	for(j=0;j<n+2;j++)
 	{
 		if((i*j)!=0&&i!=(m+1)&&j!=(n+1))
-		scanf("%d",&pp[i][j]);
+		my_scanf("%d",&pp[i][j]);
 		else
 		pp[i][j]=0;
 	}
@@ -33,7 +33,7 @@ int main_bench()
 			if(pp[i][j]>=pp[i][j+1])
 			k=k+1;
 			if(k==4)
-			printf("%d %d\n",i-1,j-1);
+			my_printf("%d %d\n",i-1,j-1);
 			k=0;	
 		}	
 	}

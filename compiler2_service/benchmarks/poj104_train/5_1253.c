@@ -11,18 +11,18 @@ int main_bench(){
 	double b;
 	int c;
 	c=0;
-	scanf("%lf",&n);
-	scanf("%s",zzd);
-	scanf("%s",hzy);
+	my_scanf("%lf",&n);
+	my_scanf("%s",zzd);
+	my_scanf("%s",hzy);
 	b=strlen(zzd);
 	for(i=0;i<b;i++){
 		if(zzd[i]!='A'&&zzd[i]!='G'&&zzd[i]!='C'&&zzd[i]!='T'){
-			printf("error");
+			my_printf("error");
 			c++;
 			break;
 		}
 		else if(hzy[i]!='A'&&hzy[i]!='G'&&hzy[i]!='C'&&hzy[i]!='T'){
-			printf("error");
+			my_printf("error");
 			c++;
 			break;
 		}
@@ -33,10 +33,10 @@ int main_bench(){
 	if(c==0){
 	v=a/b;
 	if(v>=n){
-		printf("yes");
+		my_printf("yes");
 	}
 	else if(v<n){
-		printf("no");
+		my_printf("no");
 	}
 	}
 	return 0;

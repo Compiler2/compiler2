@@ -5,8 +5,8 @@ int main_bench()
 	char s[100],a[100],d[100],b[100][50];
 	int i,j=0,k=0,n,m,l;
 	gets(s);
-	scanf("%s",a);
-	scanf("%s",d);
+	my_scanf("%s",a);
+	my_scanf("%s",d);
 	n=strlen(s);
 	for(i=0;i<n;i++)
 	{
@@ -27,8 +27,8 @@ int main_bench()
 	{
 		l=strcmp(a,b[m]);
 		if(l==0) strcpy(b[m],d);
-		if(m==0) printf("%s",b[m]);
-		else printf(" %s",b[m]);
+		if(m==0) my_printf("%s",b[m]);
+		else my_printf(" %s",b[m]);
 	}
 	return 0;
 }

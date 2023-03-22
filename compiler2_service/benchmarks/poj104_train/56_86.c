@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[5]={11,11,11,11,11};
 	int i=0,b,j;
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	while(b>0)
 	{
 		a[i]=b%10;
@@ -14,8 +14,8 @@ int main_bench()
 	for (j=0;j<5;j++)
 	{
 		if (a[j]<10)
-			printf("%d",a[j]);
+			my_printf("%d",a[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

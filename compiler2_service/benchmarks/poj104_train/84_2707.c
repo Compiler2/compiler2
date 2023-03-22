@@ -15,15 +15,15 @@ int max(int a[100],int n,int m)
 int main_bench()
 {
 	int a[100],n,i,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
     m= max(a,n,0);
-    printf("%d\n",m);
+    my_printf("%d\n",m);
 	m= max(a,n,m);
-    printf("%d\n",m);
+    my_printf("%d\n",m);
 	return 0;
 }
     

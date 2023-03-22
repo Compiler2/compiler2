@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,a,b,c=0,i,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int*za=(int*)malloc(sizeof(int)*n);
 	for(i=2;i<=n;i++){
 		b=0;
@@ -19,11 +19,11 @@ int main_bench(){
 	for(i=0;i<k-1;i++){
 		if(za[i+1]-za[i]==2){
 			c++;
-			printf("%d %d\n",za[i],za[i+1]);
+			my_printf("%d %d\n",za[i],za[i+1]);
 		}
 	}
 	if(c==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	free(za);
 	return 0;

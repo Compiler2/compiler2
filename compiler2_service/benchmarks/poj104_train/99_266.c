@@ -8,10 +8,10 @@ int main_bench(){
 	
 	int ew[100];
 	double a=0,b=0,c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&ew[i]);
+		my_scanf("%d",&ew[i]);
 	}
 
 
@@ -34,7 +34,7 @@ int main_bench(){
 	c=(C*1.0/n)*100;
 	d=(D*1.0/n)*100;
 
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",a,b,c,d);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",a,b,c,d);
 	return 0;
 }
 

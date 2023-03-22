@@ -5,8 +5,8 @@ int main_bench()
 	int startyear,startmonth,startday,endyear,endmonth,endday;
 	int m[24]={31,28,31,30,31,30,31,31,30,31,30,31,31,28,31,30,31,30,31,31,30,31,30,31};
 	int a,days,i,j;
-	scanf("%d%d%d",&startyear,&startmonth,&startday);
-	scanf("%d%d%d",&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d",&startyear,&startmonth,&startday);
+	my_scanf("%d%d%d",&endyear,&endmonth,&endday);
 	a=endyear-startyear;
 	if(startmonth==endmonth)
 		days=365*a;
@@ -36,7 +36,7 @@ int main_bench()
 		days=days-1;
 	if(((endyear%4==0&&endyear%100!=0)||(endyear%400==0))&&(endmonth<2))
 		days=days-1;
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }
 

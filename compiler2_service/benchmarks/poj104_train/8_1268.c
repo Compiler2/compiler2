@@ -5,12 +5,12 @@ int M,N;
 void x()
 {
 	int i;
-	scanf("%d",&M);
-	scanf("%d",&N);
+	my_scanf("%d",&M);
+	my_scanf("%d",&N);
 	for(i=0;i<=M-1;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<=N-1;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 };
 void y()
 {
@@ -54,8 +54,8 @@ void u()
 {
 	int i;
 	for(i=0;i<=M+N-2;i++)
-		printf("%d ",c[i]);
-	printf("%d",c[M+N-1]);
+		my_printf("%d ",c[i]);
+	my_printf("%d",c[M+N-1]);
 };
 int main_bench()
 {

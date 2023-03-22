@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,i,j,k=1,a=0,number,reversed_number=0,remainder=0;
 	int prime[10000]={0},reversed[10000]={0},result[10000];
 
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	for(i=m;i<=n;i++)
 	{
@@ -59,7 +59,7 @@ int main_bench()
 	{
 		if(result[i]!=0)
 		{
-			printf("%d",result[i]);
+			my_printf("%d",result[i]);
 			j=i;
             a=1;
 			break;
@@ -67,7 +67,7 @@ int main_bench()
 	}
     if(a==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
 	{
@@ -75,7 +75,7 @@ int main_bench()
 		{
 			if(result[i]!=0)
 			{
-				printf(",%d",result[i]);
+				my_printf(",%d",result[i]);
 			}
 		}
 	}

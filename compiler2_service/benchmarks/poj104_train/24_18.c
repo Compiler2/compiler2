@@ -40,10 +40,10 @@ int main_bench()
 		}
 	}
 	for (i=0;i<max;i++)
-		printf("%c",c[i]);
-	printf("\n");
+		my_printf("%c",c[i]);
+	my_printf("\n");
     for (i=0;i<min;i++)
-		printf("%c",d[i]);
+		my_printf("%c",d[i]);
 	return 0;
 }
 

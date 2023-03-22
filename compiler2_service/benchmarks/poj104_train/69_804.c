@@ -52,15 +52,15 @@ int main_bench()
 		{	
 			if (E[i]!=48 )
 			{
-			printf("%c",E[i]);
+			my_printf("%c",E[i]);
 			c=1;
 			}
 			if (E[i]==48 && c==1)
-			printf("%c",E[i]);
+			my_printf("%c",E[i]);
 		}
 		if (c==0)
-			printf("0");
-		printf("\n");
+			my_printf("0");
+		my_printf("\n");
 	}
 	else  
 	{
@@ -96,16 +96,16 @@ int main_bench()
 		{
 			if (E[i]!=48 )
 			{
-			printf("%c",E[i]);
+			my_printf("%c",E[i]);
 			c=1;
 			}
 			if (E[i]==48 && c==1)
-			printf("%c",E[i]);
+			my_printf("%c",E[i]);
 			
 		}
 		if (c==0)
-			printf("0");
-		printf("\n");
+			my_printf("0");
+		my_printf("\n");
 	}
 
 

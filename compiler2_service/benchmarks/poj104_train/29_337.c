@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int z=0;z<m;z++)
 	{
 		int n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
                   if(n==1)
                   {
-                      printf("2.000\n");
+                      my_printf("2.000\n");
                            continue;
                    }
 		int a=2,b=1,c=3,d=2,c1,d1;
@@ -26,7 +26,7 @@ int main_bench()
 			b=d1;
 			s=s+(float)c/(float)d;
 		}
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 	}
 	return 0;
 }

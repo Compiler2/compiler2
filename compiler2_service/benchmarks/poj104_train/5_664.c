@@ -2,11 +2,11 @@
 
 int main_bench(){
     double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char a[502],b[502];
 	int c,j,x=0;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if (strlen(a)!=strlen(b)){c=0;}
 	else  {
 		for (j=0;a[j];j++){
@@ -22,11 +22,11 @@ int main_bench(){
 		
 	}
 	if (c==0){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
-	if (strlen(a)==strlen(b)&&1.00*x/strlen(a)>=n){printf("yes");}
-		else {printf("no");}
+	if (strlen(a)==strlen(b)&&1.00*x/strlen(a)>=n){my_printf("yes");}
+		else {my_printf("no");}
 	
 	return 0;
 }

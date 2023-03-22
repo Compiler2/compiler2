@@ -10,11 +10,11 @@ main_bench()
       { if (i>j) f[i][j]=f[j][j];
         else f[i][j]=f[i-1][j]+f[i][j-i];
       }
-      scanf("%d",&num);
+      my_scanf("%d",&num);
       for (i=0;i<num;i++)
       {
-          scanf("%d %d",&m,&n);
-          printf("%d\n",f[n][m]);
+          my_scanf("%d %d",&m,&n);
+          my_printf("%d\n",f[n][m]);
       }
 
 }

@@ -13,10 +13,10 @@ int main_bench()
 {
 	int n,i,s[100]={0},sum=0,k,max;
 	struct student *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(p=stu,i=0;p<stu+n;p++,i++)
 	{
-		scanf("%s %d %d %c %c %d",p->name,&p->qimo,&p->banji,&p->ganbu,&p->xibu,&p->paper);
+		my_scanf("%s %d %d %c %c %d",p->name,&p->qimo,&p->banji,&p->ganbu,&p->xibu,&p->paper);
         if(p->qimo>80&&p->paper>=1)
 			s[i]+=8000;
 		if(p->qimo>85&&p->banji>80)
@@ -38,5 +38,5 @@ int main_bench()
 			k=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[k].name,s[k],sum);
+	my_printf("%s\n%d\n%d\n",stu[k].name,s[k],sum);
 }

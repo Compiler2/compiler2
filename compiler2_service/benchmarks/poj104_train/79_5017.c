@@ -9,7 +9,7 @@ p=0;
 w=0;
 do
 {
-	scanf("%d %d",&n[p],&m[p]);
+	my_scanf("%d %d",&n[p],&m[p]);
 	p++;
 }
 while(n[p-1]!=0);
@@ -20,7 +20,7 @@ for(j=2;j<=n[i];j++)
 { 
 w=(w+m[i])%j;
 }
-   printf ("%d\n", w+1);
+   my_printf ("%d\n", w+1);
    w=0;
 }
 return 0;

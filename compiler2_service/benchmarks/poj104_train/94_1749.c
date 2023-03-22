@@ -11,15 +11,15 @@ main_bench()
 {
       int i,j=0,n,x;
       int *b;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       b=(int*)malloc(n*sizeof(int));
       for(i=0;i<n;i++)
       {
-           scanf("%d",&x);
+           my_scanf("%d",&x);
            if(f(x)){ b[j]=x;j++;}
       }
       qsort(b,j,sizeof(int),cmp);
-      for(i=0;i<j-1;i++) printf("%d,",b[i]);
-      printf("%d",b[i]);
+      for(i=0;i<j-1;i++) my_printf("%d,",b[i]);
+      my_printf("%d",b[i]);
  
 }

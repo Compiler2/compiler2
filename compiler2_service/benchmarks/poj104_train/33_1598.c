@@ -4,10 +4,10 @@ int main_bench()
 {
     char zs[257];
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",zs);
+        my_scanf("%s",zs);
         for(j=0;zs[j]!='\0';j++)
         {
             if(zs[j]=='A')
@@ -36,7 +36,7 @@ int main_bench()
               }
             }
         }
-     printf("%s\n",zs); 
+     my_printf("%s\n",zs); 
     }
     
 

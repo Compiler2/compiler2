@@ -34,10 +34,10 @@ int main_bench()
     }
     c = a[i-1];
     for(k=0; b[k]==0; k++);
-    if(b[k] == -1 ) printf("0");
+    if(b[k] == -1 ) my_printf("0");
     else
     for(i=k; b[i]!=-1; i++)
-        printf("%d", b[i]);
-    printf("\n%d\n", c);
+        my_printf("%d", b[i]);
+    my_printf("\n%d\n", c);
     return 0;
 }

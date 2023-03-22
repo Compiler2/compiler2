@@ -11,13 +11,13 @@ int isodd( int n)
 
 int forodd(int n)
 {
-        printf("%d/2=%d\n", n, n/2);
+        my_printf("%d/2=%d\n", n, n/2);
         return n/2;
 }
 
 int fornot(int n)
 {
-        printf("%d*3+1=%d\n", n, n*3+1);
+        my_printf("%d*3+1=%d\n", n, n*3+1);
         return (n*3+1);
 }
 
@@ -26,13 +26,13 @@ int main_bench()
         int a = 0;
    
 
-        scanf("%d\n", &a);
+        my_scanf("%d\n", &a);
         while (a != 1) {
                 if (isodd(a))
                         a = forodd(a);
                 else
                         a = fornot(a);
         }
-        printf("End");
+        my_printf("End");
         return 0;
 }

@@ -17,9 +17,9 @@ for(j=0;j<p;j++){
 	if(r>=97&&r<=122) {r=r-32;b[j]=(char)r;}
 }
 x=strcmp(a,b);
-if(x>0) printf(">");
-else if(x==0) printf("=");
-else if(x<0) printf("<");
+if(x>0) my_printf(">");
+else if(x==0) my_printf("=");
+else if(x<0) my_printf("<");
 	return 0;
 }
 

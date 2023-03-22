@@ -21,10 +21,10 @@ gets(s);
 	}
 for (i=0; i<n; i++) {
 if (i > 0) {
-printf(",");
+my_printf(",");
 }
 
-printf("%d", strlen(pr[i]));
+my_printf("%d", strlen(pr[i]));
 
 
 }

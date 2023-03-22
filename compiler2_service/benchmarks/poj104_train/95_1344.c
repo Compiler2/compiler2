@@ -7,6 +7,6 @@ int main_bench()
         if(a[i]>='A'&&a[i]<='Z')a[i]+=32;
     for(i=0,gets(b);i<80,b[i];i++)
         if(b[i]>='A'&&b[i]<='Z')b[i]+=32;
-    printf("%c",'='+strcmp(a,b));
+    my_printf("%c",'='+strcmp(a,b));
     return 0;
 }

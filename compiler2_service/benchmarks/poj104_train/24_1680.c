@@ -42,16 +42,16 @@ int main_bench()
 		}
 	}
 	if(r[a]!=r[a-1]){
-         printf("%s\n",d[a]);
+         my_printf("%s\n",d[a]);
 	}
 	else{
 		for(i=0;i<a;i++){
 			if (r[i]==r[a]){
-                printf("%s\n",d[i]);
+                my_printf("%s\n",d[i]);
 				break;
 			}
 		}
 	}
-	printf("%s",d[0]);
+	my_printf("%s",d[0]);
 	return 0;
 }

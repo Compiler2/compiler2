@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[500];
 	int n,max,i,j,k,len,t[500]={0},f;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	len=strlen(str);
 	for (i=0;i<=len-n;i++)
@@ -21,13 +21,13 @@ int main_bench()
 	max=0;
 	for (i=0;i<=len-n;i++)
 		if (t[i]>max) max=t[i];
-	if (max<=1) printf("NO");
-	else printf("%d\n",max);
+	if (max<=1) my_printf("NO");
+	else my_printf("%d\n",max);
 	for (i=0;i<=len-n;i++)
 		if (t[i]==max && t[i]>1)
 		{
 			for (k=0;k<n;k++)
-				printf("%c",str[i+k]);
+				my_printf("%c",str[i+k]);
 			putchar(10);
 		}
 }

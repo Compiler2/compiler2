@@ -15,6 +15,6 @@ int main_bench()
 		s[len-(i+1)] = s[i];
 		s[i] = t;
 	}
-	printf("%s", s);
+	my_printf("%s", s);
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	char x[1000][41];
 	int a,b,i;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%s",x[i]);
+		my_scanf("%s",x[i]);
 	}
 	x[a][0]='\0';
 	b=strlen(x[0]);
@@ -16,15 +16,15 @@ int main_bench()
 		b+=strlen(x[i+1]);
 		if(b>=80)
 		{
-			printf("%s\n",x[i]);
+			my_printf("%s\n",x[i]);
 			b=strlen(x[i+1]);
 		}
 		else if(i==a-1)
 		{
-			printf("%s",x[i]);
+			my_printf("%s",x[i]);
 		}
 		else 
-		{printf("%s ",x[i]);
+		{my_printf("%s ",x[i]);
 		b++;}
 
 	}

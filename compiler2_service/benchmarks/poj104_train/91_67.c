@@ -13,6 +13,6 @@ int main_bench()
 	}
 	*p+=first;
 	*(p+1)='\0';
-	printf("%s",sz);
+	my_printf("%s",sz);
 	return 0;
 }

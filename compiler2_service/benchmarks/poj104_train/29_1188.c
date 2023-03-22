@@ -6,9 +6,9 @@ int main_bench(){
 	int m;
 	double sum=0;
 	int n[500];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&(n[i]));
+		my_scanf("%d",&(n[i]));
 	}
 	i=0;
 	for(i=0;i<m;i++){
@@ -24,7 +24,7 @@ int main_bench(){
 			  }
 			  sum+=a[j]*1.0/b[j];
 	  }
-	  printf("%.3lf\n",sum);
+	  my_printf("%.3lf\n",sum);
 	}
 
 

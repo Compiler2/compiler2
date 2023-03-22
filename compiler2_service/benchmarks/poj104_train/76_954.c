@@ -7,12 +7,12 @@ int main_bench()
     int a[5000],b[5000];
     int i,j,p;
     double t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
                  
 for(i=0;i<n;i++)
           {
-                      scanf("%d %d",&a[i],&b[i]);
+                      my_scanf("%d %d",&a[i],&b[i]);
                           }
            
            
@@ -46,12 +46,12 @@ for(t=min+0.5,p=0;t<=max-0.5;t++,p++){
                               if(sz[p]==0)
                               {
                                           x=0;
-                                          printf("no");
+                                          my_printf("no");
                                           }
                               
                               }
 if(x==1){
-         printf("%d %d",min,max);
+         my_printf("%d %d",min,max);
          }
   
          return 0;

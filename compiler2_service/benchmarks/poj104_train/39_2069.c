@@ -13,13 +13,13 @@ int main_bench()
 		int schol;
 	};
 	struct list *start,*p1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	start=(struct list*)calloc(n,sizeof(struct list));
 	p1=start;
 	for(i=0;i<n;i++){
-		scanf("%s", &(p1->name) );
-		scanf("%d %d %c %c %d", &(p1->score), &(p1->rate), &(p1->leader), &(p1->west), &(p1->pap));
+		my_scanf("%s", &(p1->name) );
+		my_scanf("%d %d %c %c %d", &(p1->score), &(p1->rate), &(p1->leader), &(p1->west), &(p1->pap));
 		getchar();
 		p1 -> schol=0;
 		if( p1->score > 80 && p1->pap > 0 )
@@ -39,6 +39,6 @@ int main_bench()
 			}
 		p1++;
 	}
-	printf("%s\n%d\n%d\n", (start+maxi) -> name, (start+maxi) -> schol, total);
+	my_printf("%s\n%d\n%d\n", (start+maxi) -> name, (start+maxi) -> schol, total);
 	return 0;
 }

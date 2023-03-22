@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	char s1[100][40]={0};
 	double s2[40]={0};
@@ -15,7 +15,7 @@ int main_bench()
 	k=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %lf",s1[i],&s2[i]);
+		my_scanf("%s %lf",s1[i],&s2[i]);
 		if(strcmp(s1[i],"male")==0)
 		{
 			a[j]=s2[i];
@@ -59,16 +59,16 @@ int main_bench()
 	{
 		for(i=2;i<=j+1;i++)
 		{
-			printf("%.2lf ",a[i]);
+			my_printf("%.2lf ",a[i]);
 		}
 	}
 	if(k!=0)
 	{
 		for(i=0;i<k-1;i++)
 		{
-			printf("%.2lf ",b[i]);
+			my_printf("%.2lf ",b[i]);
 		}
-		printf("%.2lf",b[k-1]);
+		my_printf("%.2lf",b[k-1]);
 	}
 
 	return 0;

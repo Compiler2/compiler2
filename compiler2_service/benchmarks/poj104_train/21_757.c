@@ -5,10 +5,10 @@ int main_bench()
 
 	int a[300], n, i,j,sum=0, t;
 	float aver, c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 		sum=sum+a[i];
 	}
 	aver=(float)sum/n;
@@ -23,11 +23,11 @@ int main_bench()
 			}
 		}
 		if(aver-a[0]>a[n-1]-aver)
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 		else if(aver-a[0]<a[n-1]-aver)
-			printf("%d",a[n-1]);
+			my_printf("%d",a[n-1]);
 		else
-			printf("%d,%d",a[0],a[n-1]);
+			my_printf("%d,%d",a[0],a[n-1]);
 
 
 	return 0;

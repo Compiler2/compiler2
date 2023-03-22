@@ -15,9 +15,9 @@ int main_bench()
 	struct abb acc[300];
 	struct abb add;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
-	scanf("%s",s);
+	my_scanf("%s",s);
 
 	len=strlen(s);
 
@@ -52,16 +52,16 @@ int main_bench()
 
    i=0;
    if(acc[i].num!=1){
-   printf("%d\n",acc[i].num);
-   printf("%s\n",acc[i].c);
+   my_printf("%d\n",acc[i].num);
+   my_printf("%s\n",acc[i].c);
 
    while(acc[i+1].num==acc[i].num)
-   { printf("%s\n",acc[i+1].c);
+   { my_printf("%s\n",acc[i+1].c);
    i++;}
    }
 
    else
-	   printf("NO");
+	   my_printf("NO");
    return 0;
 }
 

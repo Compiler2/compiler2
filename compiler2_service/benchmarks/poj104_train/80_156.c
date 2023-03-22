@@ -5,8 +5,8 @@ int main_bench()
 	int sy,sm,sd,ey,em,ed,i,sum=0;
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int b[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&sy,&sm,&sd);
-	scanf("%d %d %d",&ey,&em,&ed);
+	my_scanf("%d %d %d",&sy,&sm,&sd);
+	my_scanf("%d %d %d",&ey,&em,&ed);
     for(i=sy;i<=ey;i++)
 	{
 		sum=sum+365;
@@ -29,5 +29,5 @@ int main_bench()
 		else sum=sum-a[i];}
 	
 	sum=sum+ed-sd;
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

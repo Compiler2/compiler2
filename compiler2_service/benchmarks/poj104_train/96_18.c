@@ -6,7 +6,7 @@ char line[maxn+10];
 int main_bench()
 {
     int i,j=0;
-    scanf("%s",line);
+    my_scanf("%s",line);
     int len=strlen(line);
     int a[maxn+10]={0},b;
     int temp=0;
@@ -18,16 +18,16 @@ int main_bench()
         temp=temp%13;
     }
     int m=0;
-    if(len==1)printf("0");
-    if((len<=2)&&(((line[0]-'0')*10+(line[1]-'0'))<13))printf("0");
+    if(len==1)my_printf("0");
+    if((len<=2)&&(((line[0]-'0')*10+(line[1]-'0'))<13))my_printf("0");
     for(i=0;i<len;i++)
     {
         if(a[i]!=0){m=1;}
-        if(m==1)printf("%d",a[i]);
+        if(m==1)my_printf("%d",a[i]);
         
         
     }
-    printf("\n%d",temp);
+    my_printf("\n%d",temp);
     return 0;
 }
 

@@ -8,13 +8,13 @@ int main_bench()
 		a[i]=i;
 	for(i=1;i<1001;i++)
 	{
-		scanf("%d%c",&x[i],&c);
+		my_scanf("%d%c",&x[i],&c);
 			k+=1;
 		if(c!=',')
 			break;
 	}
 	for(i=1;i<=k;i++)
-		scanf("%d%c",&y[i],&c);
+		my_scanf("%d%c",&y[i],&c);
 	for(i=1;i<=k;i++)
 		for(j=x[i];j<y[i];j++)
 			b[j]+=1;
@@ -24,6 +24,6 @@ int main_bench()
 		if(b[i]>m)
 			m=b[i];
 	}
-	printf("%d %d\n",k,m);
+	my_printf("%d %d\n",k,m);
 	return 0;
 }

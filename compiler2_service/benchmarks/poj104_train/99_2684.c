@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,a[10000],b,c,d,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		for(i=0;i<n;i++)
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 		b=0;c=0;d=0;e=0;
 		for(i=0;i<n;i++)
 		
@@ -21,8 +21,8 @@ int main_bench()
 				d++;
 			else e++;
 		}
-		printf("1-18: %.2f%\n",(float)b/n*100);
-        printf("19-35: %.2f%\n",(float)c/n*100);
-        printf("36-60: %.2f%\n",(float)d/n*100);
-        printf("60??: %.2f%\n",(float)e/n*100);
+		my_printf("1-18: %.2f%\n",(float)b/n*100);
+        my_printf("19-35: %.2f%\n",(float)c/n*100);
+        my_printf("36-60: %.2f%\n",(float)d/n*100);
+        my_printf("60??: %.2f%\n",(float)e/n*100);
 }

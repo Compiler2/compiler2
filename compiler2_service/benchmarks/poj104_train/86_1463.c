@@ -3,13 +3,13 @@
 
 int main_bench(){
 	int i,n,m,x[110],ctr,time;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--){
 		ctr=0;
 		time=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(i=1;i<=m;i++){
-			scanf("%d",&x[i]);
+			my_scanf("%d",&x[i]);
 			if(time+x[i]-ctr<=60)
 			{
 				time+=x[i]-ctr+3;
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 		if(time<60)
 			ctr+=60-time;
-		printf("%d\n",ctr);
+		my_printf("%d\n",ctr);
 	}
 	return 0;
 }

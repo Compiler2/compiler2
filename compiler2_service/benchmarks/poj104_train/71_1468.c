@@ -4,10 +4,10 @@ int u[100],p[100],w[100];
 int main_bench()
 {
 	int n,i,j,sum=0,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&u[i],&p[i],&w[i]);
+		my_scanf("%d%d%d",&u[i],&p[i],&w[i]);
 		if(p[i]>w[i])
 		{
 			e=p[i];
@@ -31,12 +31,12 @@ int main_bench()
 		}
 		if(sum%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 			sum=0;
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			sum=0;
 		}
 	}

@@ -5,11 +5,11 @@ int main_bench(){
  int n,i,j,t,num;
  int br[100];
  int count[100][61]={0};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i=0;i<n;i++){
-  scanf("%d",&br[i]);
+  my_scanf("%d",&br[i]);
   for (j=0;j<br[i];j++){
-   scanf("%d",&t);
+   my_scanf("%d",&t);
    count[i][t]=1;
   }
  }
@@ -24,7 +24,7 @@ int main_bench(){
     if (j>=60) break;
    };
   }
-  printf("%d\n",num);
+  my_printf("%d\n",num);
  }
  return 0;
 }

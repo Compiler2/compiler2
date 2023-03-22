@@ -11,13 +11,13 @@ int main_bench(){
 	}
 	for(i=0;i<=strlen(zfc);i++){
 		if((zfc[i]==' '&&zfc[i-1]!=' ')||i==strlen(zfc)){
-			printf("%d",j);
+			my_printf("%d",j);
 			j=0;
 			l--;
-			if(l>=0) printf(",");
+			if(l>=0) my_printf(",");
 		}
 		if(zfc[i]!=' ') j++;
 	}
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	return 0;
 }

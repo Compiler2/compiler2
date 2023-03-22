@@ -3,7 +3,7 @@
 
 int main_bench(){
 	int a[1024][1024],i,j,n,c1,c2,k1,k2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<1024;i++)
 	{
 		for(j=0;j<1024;j++)
@@ -15,7 +15,7 @@ int main_bench(){
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=1;i<=n;i++)
@@ -34,6 +34,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d\n",(c2-c1)*(k2-k1));
+	my_printf("%d\n",(c2-c1)*(k2-k1));
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 int n,result=0;
 char x[1000][21];
-scanf("%d",&n);
+my_scanf("%d",&n);
  for(int i=0;i<n;i++){
-    scanf("%s",x[i]);
+    my_scanf("%s",x[i]);
  }
   for(int j=0;j<n;j++){
     if(((x[j][0]>='a')&&(x[j][0]<='z'))||((x[j][0]>='A')&&(x[j][0]<='Z'))||(x[j][0]=='_')){
@@ -22,7 +22,7 @@ scanf("%d",&n);
      else{
           result=1;
       }
-   if(result==0){printf("yes\n");}else{printf("no\n");};
+   if(result==0){my_printf("yes\n");}else{my_printf("no\n");};
   result=0;
   }
  return 0;

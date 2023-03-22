@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a,b,c,d,p,q,n,i;
-	scanf("%d%d%d%d",&n,&a,&b,&c);
+	my_scanf("%d%d%d%d",&n,&a,&b,&c);
 	if(a>b&&a>c&&b>c){
 		p=a;
 		q=b;
@@ -24,7 +24,7 @@ int main_bench(){
 	}
 	i=4;
 	while(i<=n){
-		scanf("%d",&d);
+		my_scanf("%d",&d);
 		if(d>p){
 		    q=p;	
 			p=d;
@@ -33,6 +33,6 @@ int main_bench(){
 		}
 		i++;
 	}
-	printf("%d\n%d\n",p,q);
+	my_printf("%d\n%d\n",p,q);
 	return 0;
 }

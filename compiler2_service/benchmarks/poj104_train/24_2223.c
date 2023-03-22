@@ -29,6 +29,6 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%s\n%s\n",c1,c2);
+	my_printf("%s\n%s\n",c1,c2);
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench(){
 	double x,y;
 	int n=0,i,c,d,m=0;
 	char a[502],b[502];
-	scanf("%lf %s %s",&x,a,b);
+	my_scanf("%lf %s %s",&x,a,b);
 	c=strlen(a);
 	d=strlen(b);
 
@@ -21,7 +21,7 @@ int main_bench(){
 		}
 	}
 	if(m==1||c!=d){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;a[i],b[i];i++){
 			if(a[i]==b[i]){
@@ -30,9 +30,9 @@ int main_bench(){
 		}
 		y=1.0*n/c;
 		if(y>x){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

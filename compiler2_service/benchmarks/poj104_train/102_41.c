@@ -6,12 +6,12 @@ int main_bench(){
 	double a1[40]={0},b1[40]={0};
 	char p[40]="male";
 	char q[40]="female";
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=1;i<=n;i++){
 		char s[40];
-		scanf("%s",s);
-		scanf("%lf",&h);
+		my_scanf("%s",s);
+		my_scanf("%lf",&h);
 		if(strcmp(s,p)==0){
 			a1[a]=h;
 			a++;
@@ -42,13 +42,13 @@ int main_bench(){
 		}
 	}
 
-	printf("%.2lf",a1[0]);
+	my_printf("%.2lf",a1[0]);
 	for(i=1;i<a;i++){
-		printf(" %.2lf",a1[i]);
+		my_printf(" %.2lf",a1[i]);
 	}
 
 	for(i=b-1;i>=0;i--){
-		printf(" %.2lf",b1[i]);
+		my_printf(" %.2lf",b1[i]);
 	}
 	
 	return 0;

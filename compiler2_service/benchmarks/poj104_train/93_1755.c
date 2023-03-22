@@ -4,25 +4,25 @@ int main_bench()
 {
 	int x;
 
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	if(x%3==0&&x%5==0&&x%7==0)
-	{printf("%d %d %d\n",3,5,7);}
+	{my_printf("%d %d %d\n",3,5,7);}
 else	if(x%3==0&&x%5==0)
-	{printf("%d %d\n",3,5);}
+	{my_printf("%d %d\n",3,5);}
 else	if(x%3==0&&x%7==0)
-	{printf("%d %d\n",3,7);}
+	{my_printf("%d %d\n",3,7);}
 else	if(x%5==0&&x%7==0)
-	{	printf("%d %d",5,7);}
+	{	my_printf("%d %d",5,7);}
 	else if(x%3==0)
-	{printf("%d",3);}
+	{my_printf("%d",3);}
 else if(x%5==0)
-	{printf("%d",5);}
+	{my_printf("%d",5);}
 
 else if(x%7==0)
 
-{printf("%d",7);}
+{my_printf("%d",7);}
 else if(x%3!=0&&x%5!=0&&x%7!=0)
-{printf("n");}
+{my_printf("n");}
 }
 
 

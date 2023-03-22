@@ -8,7 +8,7 @@ int main_bench()
     int sy, sm, sd, s=0;
     int ey, em, ed, e=0;
     int d, i;
-    scanf("%d %d %d", &sy, &sm, &sd);
+    my_scanf("%d %d %d", &sy, &sm, &sd);
 
     if((sy%4==0&&sy%100!=0)||(sy%400==0))
     {
@@ -24,7 +24,7 @@ int main_bench()
     }
    
     
-    scanf("%d %d %d", &ey, &em, &ed);
+    my_scanf("%d %d %d", &ey, &em, &ed);
     if((ey%4==0&&ey%100!=0)||(ey%400==0))
     {
         for(i=0; i<em-1; i++)
@@ -46,6 +46,6 @@ int main_bench()
          else
          e+=365;
     }
-    printf("%d", e-s);
+    my_printf("%d", e-s);
     return 0;
 }

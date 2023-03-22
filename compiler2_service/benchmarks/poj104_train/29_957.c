@@ -21,9 +21,9 @@ int main_bench()
  }
 
  double zhi,sum=0;
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(q=0;q<m;q++){
-	 scanf("%d",&shumu);
+	 my_scanf("%d",&shumu);
 	 for(i=0;i<shumu;i++){
 		 zhi=1.0*a[i+1]/a[i];
 		 sum+=zhi;
@@ -32,7 +32,7 @@ int main_bench()
 	 sum=0;
  }
  for(i=0;i<m;i++){
-	 printf("%.3lf\n",k[i]);
+	 my_printf("%.3lf\n",k[i]);
  }
 
 	return 0;

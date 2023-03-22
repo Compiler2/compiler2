@@ -5,9 +5,9 @@ int main_bench(){
 	m=0;
 	p=0;
 	int sz[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(a-b==1||b-a==2){
 			sz[m]=0;
 			m++;
@@ -20,11 +20,11 @@ int main_bench(){
 		p+=sz[i];
 	}
 	if((p*2)>m){
-		printf("A");
+		my_printf("A");
 	}else if((p*2)==m){
-		printf("Tie");
+		my_printf("Tie");
 	}else{
-		printf("B");
+		my_printf("B");
 	}
 	return 0;
 }

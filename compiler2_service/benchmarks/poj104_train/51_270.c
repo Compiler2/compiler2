@@ -3,7 +3,7 @@
 main_bench()
 {
 	int n,i,j,p,q,r,delta=1,max=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char a[500]={'\0'};
 	int num[500]={0};
 	gets(a);
@@ -31,13 +31,13 @@ main_bench()
 		delta=1;
 		}
 	}
-	if(max==1) printf("NO");
+	if(max==1) my_printf("NO");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(r=0;r<l-n;r++)
 			if((num[r]+1)==max)
-			printf("%s\n",b[r]);
+			my_printf("%s\n",b[r]);
 	}
 	return 0;
 }

@@ -10,7 +10,7 @@ int main_bench()
         x[i]=0;
         for (j=0;j<20;j++)
         {
-            scanf ("%d",&a[i][j]);
+            my_scanf ("%d",&a[i][j]);
             if (a[i][j]==0){n++;break;}
             if (a[i][j]==-1)break;
          }
@@ -28,7 +28,7 @@ int main_bench()
      }
      for (i=0;i<n;i++)
      {
-         printf ("%d\n",x[i]);
+         my_printf ("%d\n",x[i]);
       }
      return 0;
 }

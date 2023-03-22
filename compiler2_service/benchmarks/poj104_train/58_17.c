@@ -6,7 +6,7 @@ int main_bench()
 	int n,i,flag;
 	char str[81], *p;
 	
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     
 	i=0;
 	while (i<n)
@@ -25,7 +25,7 @@ int main_bench()
 			else flag=0;	
 			p++;
 		}
-		printf("%d\n",flag);
+		my_printf("%d\n",flag);
 		i++;
 	
 	}

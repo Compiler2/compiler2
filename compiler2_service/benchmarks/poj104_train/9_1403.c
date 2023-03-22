@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n,i,t,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char a[100][10],c[11];
 int b[100];
 for(i=0;i<n;i++){
-scanf("%s %d",a[i],&b[i]);
+my_scanf("%s %d",a[i],&b[i]);
 if(b[i]<60){
  b[i]=0;
 }
@@ -24,7 +24,7 @@ for(i=0;i<n-k;i++){
 }
 }
 for(i=0;i<n;i++){
-printf("%s\n",a[i]);
+my_printf("%s\n",a[i]);
 }
 return 0;
 }

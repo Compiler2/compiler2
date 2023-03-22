@@ -33,19 +33,19 @@ int sushu(int m)
 int main_bench()
 {
 	int m,n,o=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(;m<=n;m++)
         if(huiwen(m)&&sushu(m))
 		{
 			if(o!=0)
 			{
-			 printf(",");
+			 my_printf(",");
 		
 			}
 					o++;
-		printf("%d",m);
+		my_printf("%d",m);
 		}
 		if(o==0)
-			printf("no");
+			my_printf("no");
 
 }

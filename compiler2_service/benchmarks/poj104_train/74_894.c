@@ -5,7 +5,7 @@ int main_bench()
 int m,n,k=0;
 int i;
 int sushu(int x);
-scanf("%d  %d",&m,&n);
+my_scanf("%d  %d",&m,&n);
 i=m;
     for(;i<=n;i++)
 	{  b=i;
@@ -15,10 +15,10 @@ i=m;
 	    b=b/10;
 	   }
 	   if((c==i)&&(sushu(c)==1))
-{if(k==0){printf("%d",c);k=1;}
-else printf(",%d",c);}
+{if(k==0){my_printf("%d",c);k=1;}
+else my_printf(",%d",c);}
 	  	}if(k==0) 
-printf("no");
+my_printf("no");
 }
 
 

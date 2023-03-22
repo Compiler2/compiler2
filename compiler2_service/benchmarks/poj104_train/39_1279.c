@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,a[200],b[200],c[200],m[200],s=0,max,maxj;
     char d[200][40],e[200],f[200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s%d%d %c %c %d",d[i],&a[i],&b[i],&e[i],&f[i],&c[i]);
+        my_scanf("%s%d%d %c %c %d",d[i],&a[i],&b[i],&e[i],&f[i],&c[i]);
     }
     for(i=0;i<n;i++){
         m[i]=0;
@@ -37,6 +37,6 @@ int main_bench()
             maxj=i;
         }
     }
-    printf("%s\n%d\n%d",d[maxj],max,s);
+    my_printf("%s\n%d\n%d",d[maxj],max,s);
     return 0;
 } 

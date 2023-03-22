@@ -4,10 +4,10 @@ int main_bench()
 {
 	int x,i,n,m=0,j=0,k=0,s,l1,l2,l3;
 	int a[100000],b[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d%d%d",&x,&(a[i]),&(b[i]));
+		my_scanf("%d%d%d",&x,&(a[i]),&(b[i]));
 		s=a[i]+b[i];
 		if(s>m)
 		{
@@ -26,9 +26,9 @@ int main_bench()
 		{	k=s;
 		l3=i;}
 	}
-	printf("%d %d\n",l1,m);
-	printf("%d %d\n",l2,j);
-	printf("%d %d\n",l3,k);
+	my_printf("%d %d\n",l1,m);
+	my_printf("%d %d\n",l2,j);
+	my_printf("%d %d\n",l3,k);
 	return 0;
 }
 

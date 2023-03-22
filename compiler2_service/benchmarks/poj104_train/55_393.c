@@ -4,7 +4,7 @@ main_bench()
 {
     long a,b,c,i,m,j;
     char n[33];
-    scanf("%ld %s %ld",&a,n,&b);
+    my_scanf("%ld %s %ld",&a,n,&b);
     c=strlen(n);
     for(i=0,m=0;i<c;i++)
     {
@@ -27,5 +27,5 @@ main_bench()
 		if(m==0)
 			break;
     }
-    printf("%s",n);
+    my_printf("%s",n);
 }

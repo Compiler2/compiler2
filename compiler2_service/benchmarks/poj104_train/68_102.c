@@ -16,7 +16,7 @@ int f(int x){
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int i,j;	
 	int t1,t2;
@@ -30,7 +30,7 @@ int main_bench()
 			t2=f(x);
 			if(t1==1 && t2==1)
 			{
-				printf("%d=%d+%d\n",i,j,x);
+				my_printf("%d=%d+%d\n",i,j,x);
 				break;
 			}
 		}

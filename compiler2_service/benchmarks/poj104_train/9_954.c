@@ -7,8 +7,8 @@ main_bench()
      int age;
     } p[101];
     int n,i,j,k,m=0;
-    scanf("%d",&n);
-    for(i=1;i<=n;i++) scanf("%s %d",&p[i].num,&p[i].age);
+    my_scanf("%d",&n);
+    for(i=1;i<=n;i++) my_scanf("%s %d",&p[i].num,&p[i].age);
     struct q
     {char num[100];
      int age;
@@ -26,7 +26,7 @@ main_bench()
                                         }
                      }
     }
-    printf("%s",q[1].num);
-    for(i=2;i<=m;i++) printf("\n%s",q[i].num);
-    for(i=1;i<=n;i++) if(p[i].age<60) printf("\n%s",p[i].num);
+    my_printf("%s",q[1].num);
+    for(i=2;i<=m;i++) my_printf("\n%s",q[i].num);
+    for(i=1;i<=n;i++) if(p[i].age<60) my_printf("\n%s",p[i].num);
 }

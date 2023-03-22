@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int m,d,w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	m=1;
 	d=1;
     for(i=1;i<=364;i++){
@@ -21,7 +21,7 @@ int main_bench(){
 		w++;
 		w=w%7;
 		if(d==13&&w==5){
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 		}
 	}
 	return 0;

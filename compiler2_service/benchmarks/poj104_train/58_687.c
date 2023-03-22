@@ -23,10 +23,10 @@ int main_bench(){
                         }
             }
             if(bar==0){
-                 printf("0\n");
+                 my_printf("0\n");
             }
             if(bar==1){
-                 printf("1\n");
+                 my_printf("1\n");
            }
     }   
     return 0;

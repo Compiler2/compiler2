@@ -4,22 +4,22 @@ int main_bench()
 {
     int n,i,j;
     char an[1000][1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-       scanf("%s",&an[i]);
+       my_scanf("%s",&an[i]);
         for(j=0;an[i][j]!=0;j++)
         {
             if(an[i][j]=='A')
-			   printf("T");
+			   my_printf("T");
 		   else if(an[i][j]=='T')
-			   printf("A");
+			   my_printf("A");
 		   else if(an[i][j]=='C')
-			   printf("G");
+			   my_printf("G");
 		   else if(an[i][j]=='G')
-			   printf("C");
+			   my_printf("C");
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }

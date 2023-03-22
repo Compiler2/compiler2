@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,t;
 	char s[50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(t=0;t<n;t++)
 	{
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		int l;
 		l=strlen(s);
 		if((s[l-1]=='r'&&s[l-2]=='e')||(s[l-1]=='y'&&s[l-2]=='l'))
@@ -19,7 +19,7 @@ int main_bench()
 		{
 			s[l-3]='\0';
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	}
 	return 0;
 }

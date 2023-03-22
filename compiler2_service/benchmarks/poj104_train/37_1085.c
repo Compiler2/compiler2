@@ -24,13 +24,13 @@ int main_bench()
 			}
 			if(m==1)
 			{
-				printf("%c\n",a[j]);
+				my_printf("%c\n",a[j]);
 				break;
 			}
 		}
 		if(a[j]=='\0')
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

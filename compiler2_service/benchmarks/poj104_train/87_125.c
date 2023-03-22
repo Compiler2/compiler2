@@ -3,7 +3,7 @@
 int main_bench(){
 	int a,b,c,d,e,f,zs;
 	while(a!=0){
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a==0){return 0;}
 		d+=12;
 		if((e>=b)&&(f>=c)){
@@ -15,7 +15,7 @@ int main_bench(){
 		}else if((e<b)&&(f<c)){
 			zs=(d-a-1)*3600+(e-b+59)*60+(f-c+60);
 		}
-		printf("%d\n",zs);
+		my_printf("%d\n",zs);
 	}
 	return 0;
 }

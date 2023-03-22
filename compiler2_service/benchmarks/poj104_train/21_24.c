@@ -5,10 +5,10 @@ int main_bench()
 {
 	int a[300],max,min,n,sum=0,i;
 	float ave,sub1,sub2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++) 
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=(float)sum/n;
@@ -24,7 +24,7 @@ int main_bench()
 	sub1=(float)max-ave;
 	sub2=ave-(float)min;
 	if(sub1==sub2)
-		printf("%d,%d",min,max);
+		my_printf("%d,%d",min,max);
 	else
-		printf("%d",(sub1>sub2)?max:min);
+		my_printf("%d",(sub1>sub2)?max:min);
 }

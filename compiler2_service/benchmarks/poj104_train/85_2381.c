@@ -31,10 +31,10 @@ int main_bench()
 		}
         if(a==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}else if(a==1)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

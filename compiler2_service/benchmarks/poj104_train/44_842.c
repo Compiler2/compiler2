@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int h,i,j,k,l,m;
-	scanf("%d%d%d%d%d%d",&h,&i,&j,&k,&l,&m);
+	my_scanf("%d%d%d%d%d%d",&h,&i,&j,&k,&l,&m);
 	int reverse(int x); 
 	h=reverse(h);
     i=reverse(i);
@@ -11,7 +11,7 @@ int main_bench()
 	k=reverse(k);
 	l=reverse(l);
 	m=reverse(m);
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",h,i,j,k,l,m);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",h,i,j,k,l,m);
 }
 int reverse(int x)
 {

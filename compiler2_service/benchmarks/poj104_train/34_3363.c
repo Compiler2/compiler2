@@ -7,11 +7,11 @@ int proc(int i)
 	if(i%2==1)
 	{
 		ans=i*3+1;
-		printf("%d*3+1=",i);
+		my_printf("%d*3+1=",i);
 	}
 	else {
 		ans=i/2;
-		printf("%d/2=",i);
+		my_printf("%d/2=",i);
 	}
 	return ans;
 }
@@ -20,11 +20,11 @@ int proc(int i)
 
 int main_bench() {
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (n>1) {
 		n=proc(n);
-		printf("%d\n",n);
+		my_printf("%d\n",n);
 	}
-	printf("End");
+	my_printf("End");
     return 0;
 }

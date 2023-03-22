@@ -55,13 +55,13 @@ int main_bench()
 			j[k+1]='1';
 	}
 	if (j[0]=='0'&&j[1]=='\0')
-		printf("0");
+		my_printf("0");
 	c=strlen(j);
 	for (i=c-1;i>=0;i--)
 	{
 		if (j[i]!='0'||p==1)
 		{
-			printf("%c", j[i]);
+			my_printf("%c", j[i]);
 			p=1;
 		}
 		

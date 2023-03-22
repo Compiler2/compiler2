@@ -29,7 +29,7 @@ main_bench()
      int g[6];
      for (j=0;j<6;j++)
      {
-         scanf("%d",&g[j]);
+         my_scanf("%d",&g[j]);
      }
      for (j=0;j<6;j++)
      {
@@ -38,12 +38,12 @@ main_bench()
      {
              c=c*(-1);
              d=fan (c);
-             printf("-%d\n",d);
+             my_printf("-%d\n",d);
      }
      else 
      {
           d=fan(c);
-          printf("%d\n",d);
+          my_printf("%d\n",d);
      }
      }
      getchar ();

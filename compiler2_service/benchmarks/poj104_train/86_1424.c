@@ -3,11 +3,11 @@
 int main_bench(){
 int n,time,cs,num;
 int a[1000],b[1000][60];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (int i=0;i<n;i++){
-            scanf ("%d",&a[i]);
+            my_scanf ("%d",&a[i]);
      for (int j=0;j<a[i];j++){
-             scanf("%d",&b[i][j]);
+             my_scanf("%d",&b[i][j]);
      }    
 }
 for (int k=0;k<n;k++){
@@ -15,7 +15,7 @@ for (int k=0;k<n;k++){
      cs=0;
      num=0;
      if (a[k]==0){
-            printf("60\n");
+            my_printf("60\n");
             continue;
      }
      for (int m=0;m<=a[k];m++){
@@ -25,7 +25,7 @@ for (int k=0;k<n;k++){
                  break;
             }
             if(time<=0){
-                 printf("%d\n",cs);
+                 my_printf("%d\n",cs);
                   num=1;
                  break;
             }

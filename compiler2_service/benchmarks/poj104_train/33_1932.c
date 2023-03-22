@@ -4,9 +4,9 @@ int main_bench()
 {
 	char a[10000][255],b[10000][255];
 	int i,n,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		len=strlen(a[i]);
 		for(j=0;j<len;j++){
 			if(a[i][j]=='A'){
@@ -22,7 +22,7 @@ int main_bench()
 				b[i][j]='G';
 			}
 		}
-	    printf("%s\n",b[i]);
+	    my_printf("%s\n",b[i]);
 	}
 	return 0;
 }

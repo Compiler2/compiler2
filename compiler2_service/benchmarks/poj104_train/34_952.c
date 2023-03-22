@@ -10,12 +10,12 @@ int hanshu(int number)
 	    if(number%2!=0)
 		{
            m=number*3+1;
-		   printf("%d*3+1=%d\n",number,m);
+		   my_printf("%d*3+1=%d\n",number,m);
 		}
 	    else if(number%2==0)
 		{
 		   m=number/2;
-	       printf("%d/2=%d\n",number,m);
+	       my_printf("%d/2=%d\n",number,m);
 		}
 	}
 	return hanshu(m);
@@ -23,11 +23,11 @@ int hanshu(int number)
 int main_bench()
 {
     int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a==1)
-		printf("End\n");
+		my_printf("End\n");
 	else if(hanshu(a)==1)
-        printf("End\n");
+        my_printf("End\n");
 	return 0;
 }
 		

@@ -21,7 +21,7 @@ int main_bench()
 	int i;
 	
 	gets(former);
-	scanf("%s%s",zhao,huan);
+	my_scanf("%s%s",zhao,huan);
 	char *p0,*p1;
 	p0=former;
 	for(;*p0!='\0';p0++)
@@ -43,7 +43,7 @@ int main_bench()
 		char p3[100];
 		strcpy(p3,p2);
 		strcat(huan,p3);
-		printf("%s",huan);
+		my_printf("%s",huan);
 		return 0;
 	
 						
@@ -53,7 +53,7 @@ int main_bench()
 
 	
 
-	printf("%s\n",former);
+	my_printf("%s\n",former);
 
 
 

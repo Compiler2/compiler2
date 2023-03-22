@@ -5,11 +5,11 @@ int main_bench(){
     int row, col;
     for (row=0;row<5;row++){
         for (col=0; col<5;col++){
-            scanf("%d", &sz[row][col]);
+            my_scanf("%d", &sz[row][col]);
         }
     }
     int n, m;
-    scanf("%d %d", &n, &m);
+    my_scanf("%d %d", &n, &m);
     int o, p, q, r, s;
     int i;
     if (n<=4&&n>=0&&m<=4&&m>=0){
@@ -28,13 +28,13 @@ int main_bench(){
         sz[m][4]=s;
         for(row=0; row<5;row++){
             for (col=0;col<4; col++){
-                printf("%d ", sz[row][col]);
+                my_printf("%d ", sz[row][col]);
             }
-            printf("%d\n",sz[row][4]);
+            my_printf("%d\n",sz[row][4]);
         }
     }
     else {
-        printf("error");
+        my_printf("error");
     }
     return 0;
 }

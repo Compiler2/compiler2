@@ -28,10 +28,10 @@ int main_bench()
   l[j]=strlen(zsz[j]);
   if(l[j]!=0){
    if(j!=0){
-    printf(",%d",l[j]);
+    my_printf(",%d",l[j]);
    }
       else {
-       printf("%d",l[j]);
+       my_printf("%d",l[j]);
    }
   }
  }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n;
 	a=n%10;
 	n=n/10;
@@ -12,12 +12,12 @@ int main_bench()
 	c=n%10;
 	n=n/10;
 	d=n%10;
-	if(m<10) printf("%d",m);
+	if(m<10) my_printf("%d",m);
 		else
-		if(m<100) printf("%d%d",a,b);
+		if(m<100) my_printf("%d%d",a,b);
 		else
-			if(m<1000) printf("%d%d%d",a,b,c);
+			if(m<1000) my_printf("%d%d%d",a,b,c);
 			else
-				if(m<10000) printf("%d%d%d%d",a,b,c,d);
+				if(m<10000) my_printf("%d%d%d%d",a,b,c,d);
 				return 0;
 }

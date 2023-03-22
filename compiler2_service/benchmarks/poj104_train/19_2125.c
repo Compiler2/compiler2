@@ -9,20 +9,20 @@ int main_bench()
     p1=r;p2=s;n=strlen(s);
     for(i=0;*(p1+i)!='\0';)
     {
-        if(*(p1+i)!=*p2) {printf("%c",*(p1+i));i++;}
+        if(*(p1+i)!=*p2) {my_printf("%c",*(p1+i));i++;}
         else
         {
             for(j=1,w=1;j<n;j++)
             {
                 if(*(p1+i+j)!=*(p2+j))
                 {
-                    for(m=0;m<j;m++) printf("%c",*(p1+i+m));break;
+                    for(m=0;m<j;m++) my_printf("%c",*(p1+i+m));break;
                 }
                 w++;
             }
             if (w==n)
-            {if(((*(p1+i+n)==' '||*(p1+i+n)=='\0')&&*(p1+i-1)==' ')||((i==0)&&*(p1+n)==' ')) printf("%s",t);
-            else printf("%s",s);
+            {if(((*(p1+i+n)==' '||*(p1+i+n)=='\0')&&*(p1+i-1)==' ')||((i==0)&&*(p1+n)==' ')) my_printf("%s",t);
+            else my_printf("%s",s);
             i=i+n;}
             else i=i+j;
         }

@@ -3,7 +3,7 @@
 main_bench()
 {
 	char a[5];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	int l=strlen(a);
 	char *p;
 	
@@ -18,5 +18,5 @@ main_bench()
 		*(p+l-i)=b;
 	}
 	for(i=0;i<l;i++)
-		printf("%c",*(p+i));
+		my_printf("%c",*(p+i));
 }

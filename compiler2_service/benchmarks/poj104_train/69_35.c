@@ -4,7 +4,7 @@ int main_bench()
 {
     char ca[250],cb[250];
 	int  *a,*b,*c,l,i,j;
-	scanf("%s %s",ca,cb);
+	my_scanf("%s %s",ca,cb);
 	l=strlen(ca);
 	if(strlen(cb)>strlen(ca))
 		l=strlen(cb);
@@ -43,11 +43,11 @@ int main_bench()
 		}
 	}
 	if(j<0)
-		printf("0");
+		my_printf("0");
 	else
 		for(i=j;i>=0;i--)
-			printf("%d",c[i]);
-		printf("\n");
+			my_printf("%d",c[i]);
+		my_printf("\n");
 
 
 

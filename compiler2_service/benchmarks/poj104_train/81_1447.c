@@ -6,20 +6,20 @@ int main_bench()
 	int i,j,sz1[5][5],y,n1,m1;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&(sz1[i][j]));
+			my_scanf("%d",&(sz1[i][j]));
 		}
 	}
-	scanf("%d %d",&n1,&m1);
+	my_scanf("%d %d",&n1,&m1);
 	y=reverse(sz1,m1,n1);
 	if(y==0){
-	printf("error");
+	my_printf("error");
 	}else if(y==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<4;j++){
-				printf("%d ",sz1[i][j]);
+				my_printf("%d ",sz1[i][j]);
 			}
-			printf("%d",sz1[i][4]);
-			printf("\n");
+			my_printf("%d",sz1[i][4]);
+			my_printf("\n");
 		}
 	}
 return 0;

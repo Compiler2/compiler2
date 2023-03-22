@@ -5,7 +5,7 @@ int main_bench()
 	void shuru(int array[100],int x);
 	void paixu(int array[100],int x);
 	int i,m,n,a[100],b[100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	shuru(a,m);
 	shuru(b,n);
 	paixu(a,m);
@@ -13,20 +13,20 @@ int main_bench()
 
 	for(i=0;i<m;i++)
 	{
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	}
 	for(i=0;i<n-1;i++)
 	{
-		printf("%d ",b[i]);
+		my_printf("%d ",b[i]);
 	}
-	printf("%d",b[n-1]);
+	my_printf("%d",b[n-1]);
 }
 void shuru(int array[100],int x)
 {
 	int i;
 	for(i=0;i<x;i++)
 	{
-		scanf("%d",&array[i]);
+		my_scanf("%d",&array[i]);
 	}
 }
 void paixu(int array[100],int x)

@@ -10,10 +10,10 @@ main_bench()
         int chinese;
         int a;
       }stu[100000];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-           scanf("%d %d %d",&stu[i].ID,&stu[i].math,&stu[i].chinese);
+           my_scanf("%d %d %d",&stu[i].ID,&stu[i].math,&stu[i].chinese);
            stu[i].a=stu[i].math+stu[i].chinese;
       }
       for(i=0;i<n;i++)
@@ -33,5 +33,5 @@ main_bench()
          if(stu[i].a>t[2])
          {t[2]=stu[i].a;u[2]=i;}
       }
-      printf("%d %d\n%d %d\n%d %d\n",stu[u[0]].ID,t[0],stu[u[1]].ID,t[1],stu[u[2]].ID,t[2]);
+      my_printf("%d %d\n%d %d\n%d %d\n",stu[u[0]].ID,t[0],stu[u[1]].ID,t[1],stu[u[2]].ID,t[2]);
 }

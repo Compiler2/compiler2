@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,n,len,count=0;
 	char s[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	while(n--)
 	{
@@ -13,7 +13,7 @@ int main_bench()
 		if((s[0]>='a'&&s[0]<='z')||(s[0]>='A'&&s[0]<='Z')||s[0]=='_')
 		{
 			if(len==1)
-				printf("1\n");
+				my_printf("1\n");
 			else if(len>1)
 			{
 				for(i=1;i<len;i++)
@@ -24,11 +24,11 @@ int main_bench()
 					}
 				}
 				if(count==len-1)
-					printf("1\n");
-				else printf("0\n");
+					my_printf("1\n");
+				else my_printf("0\n");
 			}
 		}
-		else printf("0\n");
+		else my_printf("0\n");
 		count=0;
 	}
 }

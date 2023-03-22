@@ -6,10 +6,10 @@ int main_bench()
     int max,min,i,j;
     double k;
     int e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d",&(a[i]),&(b[i]));
+        my_scanf("%d %d",&(a[i]),&(b[i]));
         c[i]=a[i];
         d[i]=b[i];
     }
@@ -47,7 +47,7 @@ int main_bench()
             else
             {
                if(j==n-1){
-                   printf("no");
+                   my_printf("no");
                    return 0;
                }
                else{
@@ -57,6 +57,6 @@ int main_bench()
         }
         
     }
-    printf("%d %d",min,max);
+    my_printf("%d %d",min,max);
     return 0;
 }

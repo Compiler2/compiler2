@@ -3,7 +3,7 @@
 int main_bench()
 {int a,b,l,i,t=0;
  char n[100],m[100];
- scanf("%d %s %d",&a,n,&b);
+ my_scanf("%d %s %d",&a,n,&b);
  l=strlen(n);
  for(i=0;i<l;i++)
  {t*=a;
@@ -23,9 +23,9 @@ int main_bench()
   t=(t-t%b)/b;
  }
  for(t=i-1;t>=0;t--)
-	 printf("%c",m[t]);
- printf("\n");
+	 my_printf("%c",m[t]);
+ my_printf("\n");
  }
  else
- printf("0\n");
+ my_printf("0\n");
 }

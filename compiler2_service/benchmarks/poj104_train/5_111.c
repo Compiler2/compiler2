@@ -4,12 +4,12 @@
 int main_bench()
 {
 	double bill;
-	scanf("%lf",&bill);
+	my_scanf("%lf",&bill);
 
 	char s1[500]={0};
 	char s2[500]={0};
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 
 	int lens1,lens2,flag;
 	flag=0;
@@ -17,7 +17,7 @@ int main_bench()
 	lens2=strlen(s2);
 	if(lens1!=lens2) 
 	{
-		printf("error");
+		my_printf("error");
 		flag=1;
 	}
 
@@ -34,7 +34,7 @@ int main_bench()
 					{
 						if(s1[i]!='G')
 						{
-							printf("error");
+							my_printf("error");
 							flag=1;
 							break;
 						}
@@ -56,7 +56,7 @@ int main_bench()
 					{
 						if(s2[i]!='G')
 						{
-							printf("error");
+							my_printf("error");
 							flag=1;
 							break;
 						}
@@ -80,11 +80,11 @@ int main_bench()
 		avg=num/(double)lens1;
 		if(avg>bill)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		if(avg<=bill)
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 

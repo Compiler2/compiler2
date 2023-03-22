@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,n;
 	char a[256],b[5];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(b);
 	for(i=0;i<n;i++)
 	{

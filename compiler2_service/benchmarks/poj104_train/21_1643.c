@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,sum=0,i,m[350],max,j,cha[350];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m[i]);
+		my_scanf("%d",&m[i]);
 		sum=sum+m[i];
 	}
 	cha[0]=abs(m[0]*n-sum);
@@ -27,11 +27,11 @@ int main_bench()
 		{
 			if(i==j)
 			{
-				printf("%d",m[i]);
+				my_printf("%d",m[i]);
 			}
 			else
 			{
-				printf(",%d",m[i]);
+				my_printf(",%d",m[i]);
 			}
 		}
 	}

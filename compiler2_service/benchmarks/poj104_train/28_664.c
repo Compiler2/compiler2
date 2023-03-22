@@ -24,12 +24,12 @@ int main_bench(){
     for(i=0;i<n-1;i++){
 		len[i]=strlen(words[i]);
 		if(len[i]!=0){
-		    printf("%d,",len[i]);
+		    my_printf("%d,",len[i]);
 		}
 	}
 	len[n-1]=strlen(words[n-1]);
 	if(len[n-1]!=0){
-	    printf("%d",len[n-1]);
+	    my_printf("%d",len[n-1]);
 	}
 	return 0;
 }

@@ -45,15 +45,15 @@ int main_bench()
 			 t=pan(s[i],strlen(s[i]));
 			for(j=0;j<=t;j++)
 			{	
-				printf("%c",s[i][j]);
+				my_printf("%c",s[i][j]);
 			}
 			m=strlen(s[i]);
-			printf("%c%c%c",s[i][m-3],s[i][m-2],s[i][m-1]);
+			my_printf("%c%c%c",s[i][m-3],s[i][m-2],s[i][m-1]);
 			for(j=t+1;j<kong(s[i],m);j++)
 			{
-				printf("%c",s[i][j]);
+				my_printf("%c",s[i][j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	

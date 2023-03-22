@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int haart[1000][2];
 	for(i=0;i<=n-1;i++){
 		for(k=0;k<=1;k++){
-			scanf("%d",&(haart[i][k]));
+			my_scanf("%d",&(haart[i][k]));
 		}
 	}
 	float sta;
@@ -16,11 +16,11 @@ int main_bench()
 	for(i=1;i<=n-1;i++){
 		cmp=(float)haart[i][1]/(float)haart[i][0];
 		if(sta-cmp>0.05){
-			printf("worse\n");
+			my_printf("worse\n");
 		}else if(cmp-sta>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

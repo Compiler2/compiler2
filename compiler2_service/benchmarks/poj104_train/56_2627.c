@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int d,a;
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	if(d/10000)
 		a=d%10*10000+d/10%10*1000+d/100%10*100+d/1000%10*10+d/10000;
 	else if(d/1000)
@@ -14,5 +14,5 @@ int main_bench()
 		a=d%10*10+d/10;
 	else 
 		a=d;
-	printf("%d",a);
+	my_printf("%d",a);
 }

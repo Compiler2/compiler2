@@ -11,10 +11,10 @@ int main_bench()
     int num[300];
     int n,i,flag=1;
     int sum=0,max=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-    scanf("%d",&num[i]);
+    my_scanf("%d",&num[i]);
     sum+=num[i];
     }
     for(i=1;i<=n;i++)
@@ -27,18 +27,18 @@ int main_bench()
                      if(max==sum-num[i]*n)
                      {
                                           if(flag==0)
-                                          printf(",");
+                                          my_printf(",");
                                           flag=0;
-                     printf("%d",num[i]);
+                     my_printf("%d",num[i]);
                      }
     }
     for(i=1;i<=n;i++)
     {
                      if(max==-sum+num[i]*n)
                      {                    if(flag==0)
-                                          printf(",");
+                                          my_printf(",");
                                           flag=0;
-                     printf("%d",num[i]);
+                     my_printf("%d",num[i]);
                      }
     }
     return 0;

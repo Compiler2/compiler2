@@ -6,10 +6,10 @@ int main_bench()
     int id,chinese,math,total;
 
 	int n,i,a=0,b=0,c=0,x=0,y=0,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-        scanf("%d%d%d",&id,&chinese,&math);
+        my_scanf("%d%d%d",&id,&chinese,&math);
 		total=chinese+math;
 		if(total>a)
 		{
@@ -36,8 +36,8 @@ int main_bench()
 	
 	}
 	
-    printf("%d %d\n",x,a);
-	printf("%d %d\n",y,b);
-    printf("%d %d\n",z,c);
+    my_printf("%d %d\n",x,a);
+	my_printf("%d %d\n",y,b);
+    my_printf("%d %d\n",z,c);
 	return 0;
 }

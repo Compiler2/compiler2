@@ -14,12 +14,12 @@ int main_bench(){
 	int sz[5][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(f(n,m)==0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<5;i++){
 			a[i]=sz[m][i];
@@ -28,8 +28,8 @@ int main_bench(){
 		}
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				if(j<=3) printf("%d ",sz[i][j]);
-				else printf("%d\n",sz[i][j]);
+				if(j<=3) my_printf("%d ",sz[i][j]);
+				else my_printf("%d\n",sz[i][j]);
 			}
 			
 		}

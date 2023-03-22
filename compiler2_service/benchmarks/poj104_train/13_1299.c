@@ -3,9 +3,9 @@
 int hs(int a);
 int main_bench(){
 	int n,b[20002],i,j,pd,js;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	js=n;
 	for(i=1;i<=n;i++){
@@ -24,15 +24,15 @@ int main_bench(){
 			}
 		}
 		if(pd==1&&js!=1){
-			printf("%d ",b[i]);
+			my_printf("%d ",b[i]);
 			js--;
 		}
 		else if(pd==1&&js==1){
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 			break;
 		}
 		pd=1;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	return 0;
 }

@@ -11,12 +11,12 @@ main_bench()
 {
 	int n,i,j,k,e,h;
 	int yx[100],byx[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	j=0;
 	k=0;
 	for(i=0;i<n;i++){
-		scanf("%s %d",&pt[i].id,&pt[i].old);
+		my_scanf("%s %d",&pt[i].id,&pt[i].old);
 		if(pt[i].old>=60){
 			yx[j]=i;
 			j++;
@@ -39,9 +39,9 @@ main_bench()
 	}
 
 	for(i=0;i<j;i++){
-		printf("%s\n",pt[yx[i]].id);
+		my_printf("%s\n",pt[yx[i]].id);
 	}
 	for(i=0;i<k;i++){
-		printf("%s\n",pt[byx[i]].id);
+		my_printf("%s\n",pt[byx[i]].id);
 	}
 }

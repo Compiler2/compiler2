@@ -4,7 +4,7 @@ int main_bench(){
     int money;
 	int a,b,c,d,e,f;
 	int g,h,i,j,k,l;
-	scanf("%d",&money);
+	my_scanf("%d",&money);
 	a=money-money%100;
 	b=money-(money-a)%50-a;
 	c=money-(money-a-b)%20-a-b;
@@ -17,6 +17,6 @@ int main_bench(){
 	j=d/10;
 	k=e/5;
 	l=f/1;
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",g,h,i,j,k,l);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",g,h,i,j,k,l);
 	return 0;
 }

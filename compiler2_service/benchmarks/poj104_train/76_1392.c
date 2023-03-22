@@ -3,8 +3,8 @@
 int main_bench(){
     int n,q[5000],h[5000],star=0,end=0,i,a,k,e;
 
-    scanf("%d",&n);
-    for(i=0;i<n;i++){scanf("%d%d",&q[i],&h[i]);}
+    my_scanf("%d",&n);
+    for(i=0;i<n;i++){my_scanf("%d%d",&q[i],&h[i]);}
     for (k=1;k<n;k++){
 		for(i=0;i<n-k;i++){
 			if(q[i]>q[i+1]){
@@ -32,7 +32,7 @@ int main_bench(){
                 }
      }
      if(end==h[n-1]){
-     printf("%d %d",star,end);}
-     else{printf("no");}
+     my_printf("%d %d",star,end);}
+     else{my_printf("no");}
      return 0;
 }

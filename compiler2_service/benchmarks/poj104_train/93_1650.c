@@ -6,7 +6,7 @@ int main_bench()
 	int result[4]={0};
 	char c='n';
 
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 
 	if(a%3==0)
 	{
@@ -38,44 +38,44 @@ int main_bench()
 
 	if (result[1]!=0 && result[2]==0 && result[3]==0)
 	{
-		printf("%d",result[1]);
+		my_printf("%d",result[1]);
 	}
 
 	if (result[1]==0 && result[2]!=0 && result[3]==0)
 	{
-		printf("%d",result[2]);
+		my_printf("%d",result[2]);
 	}
 
 	if (result[1]==0 && result[2]==0 && result[3]!=0)
 	{
-		printf("%d",result[3]);
+		my_printf("%d",result[3]);
 	}
 
 	if (result[1]!=0 && result[2]!=0 && result[3]==0)
 	{
-		printf("%d %d",result[1],result[2]);
+		my_printf("%d %d",result[1],result[2]);
 	}
 
 	if (result[1]!=0 && result[2]==0 && result[3]!=0)
 	{
-		printf("%d %d",result[1],result[3]);
+		my_printf("%d %d",result[1],result[3]);
 	}
 
 	if (result[1]==0 && result[2]!=0 && result[3]!=0)
 	{
-		printf("%d %d",result[2],result[3]);
+		my_printf("%d %d",result[2],result[3]);
 	}
 
 	if (result[1]!=0 && result[2]!=0 && result[3]!=0)
 	{
-		printf("%d %d %d",result[1],result[2],result[3]);
+		my_printf("%d %d %d",result[1],result[2],result[3]);
 	}
 
 
 
 	if (result[1]==0 && result[2]==0 && result[3]==0)
 	{
-		printf("%c",c);
+		my_printf("%c",c);
 	}
 
 	return 0;

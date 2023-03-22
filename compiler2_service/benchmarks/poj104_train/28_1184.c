@@ -14,10 +14,10 @@ int main_bench()
 		else
 		{
 		    if(num!=0)
-			{printf("%d,",num);
+			{my_printf("%d,",num);
 			num=0;}
 		}
 
 	}	
-    printf("%d",num);
+    my_printf("%d",num);
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char str1[50],str2[50],a,b;
 	int i,j,n,l1,l2;
 	j=0;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	l1=strlen(str1);
 	l2=strlen(str2);
 	for(i=0;((a=str1[i])!='\0');i++)
@@ -15,5 +15,5 @@ int main_bench()
 			if(a==b) {j=j+1;break;};
 		}
 	}
-	printf("%d\n",j-l1);
+	my_printf("%d\n",j-l1);
 }

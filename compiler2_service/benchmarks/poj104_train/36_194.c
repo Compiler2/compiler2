@@ -20,9 +20,9 @@ int main_bench()
 {
 	int i,j;
 	char a[1000],b[1000];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	change(a);
 	change(b);
-	if(strcmp(a,b)==0) printf("YES\n");
-	else printf("NO\n");
+	if(strcmp(a,b)==0) my_printf("YES\n");
+	else my_printf("NO\n");
 }

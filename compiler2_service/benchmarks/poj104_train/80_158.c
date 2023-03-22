@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int sY,sM,sD,eY,eM,eD,d1,i,d2,j,d3,k,d;
-	scanf("%d%d%d\n",&sY,&sM,&sD);
-	scanf("%d%d%d",&eY,&eM,&eD);
+	my_scanf("%d%d%d\n",&sY,&sM,&sD);
+	my_scanf("%d%d%d",&eY,&eM,&eD);
 	d1=(sM-1)*31+sD;
 	sM=sM-1;
 	for(i=0;sM>=1;sM=sM-1)
@@ -55,7 +55,7 @@ int main_bench()
 		}
 	d3=d3+k;
 	d=d3-d1-d2;
-	printf("%d",d);
+	my_printf("%d",d);
 }
 	
 	

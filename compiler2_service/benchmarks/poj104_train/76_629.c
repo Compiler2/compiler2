@@ -2,14 +2,14 @@
 
 int main_bench(){
 int n,i,k,e,w,j,min,max;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int a[n],b[n];
 for(i=0;i<n;i++){
 if(i==n-1){
-scanf("%d %d",&(a[i]),&(b[i]));
+my_scanf("%d %d",&(a[i]),&(b[i]));
 }
 else{
-scanf("%d %d\n",&(a[i]),&(b[i]));
+my_scanf("%d %d\n",&(a[i]),&(b[i]));
 }
 }
 for(k=1;k<n;k++){
@@ -51,10 +51,10 @@ for(i=1;i<n;i++){
 }
 }
 if(j==0){
-printf("no");
+my_printf("no");
 }
 else{
-printf("%d %d",min,max);
+my_printf("%d %d",min,max);
 }
 return 0;
 }

@@ -16,14 +16,14 @@ return 0;
 }
 void input()
 {
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(int i=0;i<m;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(int j=0;j<n;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 }
 void sort()
@@ -70,9 +70,9 @@ void output()
 {
 	for(int i=0;i<(m+n);i++)
 	{
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 		if(i<(m+n-1))
-			printf(" ");
+			my_printf(" ");
 	}
 }
 

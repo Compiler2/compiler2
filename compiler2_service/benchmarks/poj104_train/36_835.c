@@ -4,17 +4,17 @@ int main_bench()
 {
 	int check(char a1[],char a2[]);
 	char a1[100],a2[100];
-	scanf("%s%s",a1,a2);
+	my_scanf("%s%s",a1,a2);
 	int m,n,re;
 	m=strlen(a1);
 	n=strlen(a2);
 	if(m!=n)
-		printf("NO\n");
+		my_printf("NO\n");
 	else re=check(a1,a2);
 	if (re==1)
-		printf("YES\n");
+		my_printf("YES\n");
 	else if (re==0)
-		printf("NO\n");
+		my_printf("NO\n");
 }
 int check(char a1[],char a2[])
 {

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[50]={'\0'};char b[50]={'\0'};
 	int i,j;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if (strlen(a)!=strlen(b)) goto null;
 	for (i=0;i<strlen(a);i++)
 	{
@@ -16,8 +16,8 @@ int main_bench()
 			}
 		if (j==strlen(b)) goto null;
 	}
-	printf("YES\n");
+	my_printf("YES\n");
 	goto allright;
-null: printf("NO\n");
+null: my_printf("NO\n");
 allright:;
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char c[10000];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c);
-		printf("%s\n",c);
+		my_scanf("%s",c);
+		my_printf("%s\n",c);
 	    int j,x;
 		x=strlen(c);
 		for(j=0;j<x;j++)
@@ -46,7 +46,7 @@ int main_bench()
 				c[j]='?';
 			}
 		}
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 	}
 	return 0;
 }

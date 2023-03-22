@@ -3,7 +3,7 @@
 
 int main_bench() {
 	char part[50], full[50];
-	scanf("%s %s",part,full);
+	my_scanf("%s %s",part,full);
 	int partlen=strlen(part);
 	int fulllen=strlen(full);
 	int which=0;
@@ -24,7 +24,7 @@ int main_bench() {
 
 	}
 
-	printf("%d",which);
+	my_printf("%d",which);
 
 	return 0;
 }

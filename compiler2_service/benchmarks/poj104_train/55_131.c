@@ -5,7 +5,7 @@ int main_bench()
 	char a[32]={0},b[32]={0};
 	long int n=0;
 	int i,k,j1,j2;
-	scanf("%d%s%d",&j1,a,&j2);
+	my_scanf("%d%s%d",&j1,a,&j2);
 	for (i=0;a[i]!=0;i++)
 		if (a[i]>='0'&&a[i]<='9')
 			n=n*j1+a[i]-'0';
@@ -14,7 +14,7 @@ int main_bench()
 		else if (a[i]>='a'&&a[i]<='z')
 			n=n*j1+a[i]-'a'+10;
 	if (n==0)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 		for (i=0;i<=31,n>0;i++)
@@ -29,7 +29,7 @@ int main_bench()
 	    while (b[i]==0)
 		    i--;
 	    for (;i>=0;i--)
-		    printf("%c",b[i]);
-	    printf("\n");
+		    my_printf("%c",b[i]);
+	    my_printf("\n");
 	}
 }

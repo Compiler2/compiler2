@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[100],i=0,k=1,M=1,m=2;
 		double sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 			sum+=(double)m/M;
 			}
 	}
-				printf("%.3lf\n",sum);
+				my_printf("%.3lf\n",sum);
 				m=2;
 				M=1;
 				sum=0;

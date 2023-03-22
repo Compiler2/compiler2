@@ -5,10 +5,10 @@ int main_bench()
 	int m,n,i,k,a,b,j;
 	int x[100],y[100];
 	double result;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	  for(k=0;k<n;k++)
 	  {
                 result=0;
@@ -31,7 +31,7 @@ int main_bench()
 
 	  }
 	
-	 printf("%.3lf\n",result);
+	 my_printf("%.3lf\n",result);
 	}	
 	return 0;
 }

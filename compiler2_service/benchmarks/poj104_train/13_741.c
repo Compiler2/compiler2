@@ -3,17 +3,17 @@
 int main_bench()
 {
     int i,j,s,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
     {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     }
     
     for(i=0;i<n;i++)
     {
     if(i==0)
-    {printf("%d",a[0]);}
+    {my_printf("%d",a[0]);}
     else
     {                
     for(j=0;j<=i-1;j++)
@@ -25,10 +25,10 @@ int main_bench()
     }
     }
     if(a[i])
-    {printf(" %d",a[i]);}
+    {my_printf(" %d",a[i]);}
     }
     }
-printf("\n");
+my_printf("\n");
 getchar();
 getchar();
 getchar();

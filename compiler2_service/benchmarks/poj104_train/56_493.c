@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,y=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>9)
 	{
 		y=y+n-n/10*10;
@@ -11,7 +11,7 @@ int main_bench()
 		y*=10;
 	}
 	y=y+n;
-	printf("%d\n",y);
+	my_printf("%d\n",y);
 	return 0;
 }
 

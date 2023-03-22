@@ -9,13 +9,13 @@ main_bench()
       for(i=0;i<l;i++)
       {
                      if(a[i]!=' ')
-                       printf("%c",a[i]);
+                       my_printf("%c",a[i]);
                       if(a[i]==' ')
                       {
                                  if(a[i-1]==' ')
                                  continue;
                                  else
-                                printf(" ");
+                                my_printf(" ");
                       }
       }
       getchar();

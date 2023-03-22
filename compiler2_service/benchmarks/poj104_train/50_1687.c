@@ -4,11 +4,11 @@ int pd(int x,int y);
 int main_bench()
 {
 int n,c;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=1;i<=12;i++){
 c=pd(i,n);
 if(c==0){
-printf("%d\n",i);
+my_printf("%d\n",i);
 }
 }
 return 0;

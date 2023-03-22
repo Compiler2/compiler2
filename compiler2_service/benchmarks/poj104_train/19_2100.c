@@ -6,8 +6,8 @@ int main_bench()
 	char a[110],b[110];
 	int i,n,k,j;
 	gets(words);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	n=strlen(words);
 	k=0;
 	j=0;
@@ -34,20 +34,20 @@ int main_bench()
 	{
 		if(strcmp(zfcsz[i],a)==0)
 		{
-			printf("%s ",b);
+			my_printf("%s ",b);
 		}
 		else
 		{
-			printf("%s ",zfcsz[i]);
+			my_printf("%s ",zfcsz[i]);
 		}
 	}
 	if(strcmp(zfcsz[k-1],a)==0)
 	{
-		printf("%s",b);
+		my_printf("%s",b);
 	}
 	else
 	{
-		printf("%s",zfcsz[i]);
+		my_printf("%s",zfcsz[i]);
 	}
 	return 0;
 }

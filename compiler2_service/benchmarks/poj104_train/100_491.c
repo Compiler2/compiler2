@@ -7,7 +7,7 @@ int main_bench()
     char ti[28]="abcdefghijklmnopqrstuvwxyz";
     int a[26]={0};
     b=0;
-    scanf("%s",word);
+    my_scanf("%s",word);
     n=(int)strlen(word);
     for(i=0;i<n;i++)
     {
@@ -23,13 +23,13 @@ int main_bench()
     {
         if(a[j]!=0)
         {
-            printf("%c=%d\n",ti[j],a[j]);           
+            my_printf("%c=%d\n",ti[j],a[j]);           
         }
         b=b+a[j];                 
     }
     if(b==0)
     {
-        printf("No");        
+        my_printf("No");        
     }
     return 0;
 }

@@ -6,13 +6,13 @@ int main_bench()
 	char c[300]=" ";
 	do
 	{
-	  scanf ("%d%c",&a[i],&c[i]);
+	  my_scanf ("%d%c",&a[i],&c[i]);
 	  i++;
 	}while (c[i-1]!='\n');
 	k=i;
 
     	if (k==1)
-	     	printf("No\n");
+	     	my_printf("No\n");
 else	{
         for (i=0;i<=k-1;i++)
 				    if (a[i]>max)
@@ -35,9 +35,9 @@ else	{
 	  
 	    
 	      if(cida==0)
-            printf("No\n");
+            my_printf("No\n");
 		  else
-			  printf("%d\n",cida);
+			  my_printf("%d\n",cida);
 		}
 		
 }

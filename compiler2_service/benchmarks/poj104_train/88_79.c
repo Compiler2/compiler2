@@ -19,8 +19,8 @@ main_bench()
               if (k!=0)
               {
                        for (int j=0;j<k;j++)
-                          printf("%c",num[j]);
-                       printf("\n");
+                          my_printf("%c",num[j]);
+                       my_printf("\n");
                        k=0;
               }
               else k=0;
@@ -29,8 +29,8 @@ main_bench()
       if (k!=0)
       {
          for (int j=0;j<k;j++)
-            printf("%c",num[j]);
-         printf("\n");
+            my_printf("%c",num[j]);
+         my_printf("\n");
       }
       getchar();
       getchar();

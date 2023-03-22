@@ -2,9 +2,9 @@
 
 int main_bench()
 {   int b,a[500],i=0,c=0,d[500],e,f=0;
-    scanf("%d",&b);
+    my_scanf("%d",&b);
     for(i=0;i<b;i++){
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
 	}
 
 	for(i=0;i<b;i++){
@@ -24,8 +24,8 @@ int main_bench()
 	    
 	}
 	for(i=0;i<c;i++){
-		if(i==c-1){printf("%d",d[i]);}else{
-			printf("%d,",d[i]);}
+		if(i==c-1){my_printf("%d",d[i]);}else{
+			my_printf("%d,",d[i]);}
 	}	
 	return 0;
 }

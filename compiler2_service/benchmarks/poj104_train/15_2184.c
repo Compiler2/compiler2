@@ -4,12 +4,12 @@ int main_bench()
 {
     int a[1001][1001];
     int n,i,j,k,s=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
     	for(j=1;j<=n;j++)
     	{
-    		scanf("%d",&a[i][j]);
+    		my_scanf("%d",&a[i][j]);
     	}
     }
     for(i=1;i<=n;i++)
@@ -29,6 +29,6 @@ int main_bench()
     		}
     	}
     }
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

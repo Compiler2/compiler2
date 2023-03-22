@@ -3,7 +3,7 @@
 int main_bench()
 {   
 	int a,t1,t2,t3,t4,t5,w;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a/10000>0)w=5;
 	else if(a/1000>0)w=4;
 	else if(a/100>0)w=3;
@@ -17,10 +17,10 @@ int main_bench()
 
 	switch(w)
 	{
-	case 5:printf("%d%d%d%d%d\n",t5,t4,t3,t2,t1);break;
-	case 4:printf("%d%d%d%d\n",t5,t4,t3,t2);break;
-	case 3:printf("%d%d%d\n",t5,t4,t3);break;
-	case 2:printf("%d%d\n",t5,t4);break;
-	case 1:printf("%d\n",t5);break;
+	case 5:my_printf("%d%d%d%d%d\n",t5,t4,t3,t2,t1);break;
+	case 4:my_printf("%d%d%d%d\n",t5,t4,t3,t2);break;
+	case 3:my_printf("%d%d%d\n",t5,t4,t3);break;
+	case 2:my_printf("%d%d\n",t5,t4);break;
+	case 1:my_printf("%d\n",t5);break;
     }
 }

@@ -12,10 +12,10 @@ int main_bench()
           if(str2[i]<='Z'&&str2[i]>='A')str2[i]=str2[i]+32;
           
        if(str1[i]>str2[i])
-           {printf(">");break;}
+           {my_printf(">");break;}
        else if(str1[i]<str2[i])
-           {printf("<");break;}
-       if(str1[i+1]=='\0'||str2[i+1]=='\0')printf("=");   
+           {my_printf("<");break;}
+       if(str1[i+1]=='\0'||str2[i+1]=='\0')my_printf("=");   
          }
          
      

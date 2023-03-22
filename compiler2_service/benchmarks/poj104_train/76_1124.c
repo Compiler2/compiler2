@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n=0,i,s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct qujian{
 		int x,y;
 	}e,qujians[50000];
 	for(i=0;i<n;i++){
-		scanf("%d%d",&qujians[i].x,&qujians[i].y);
+		my_scanf("%d%d",&qujians[i].x,&qujians[i].y);
 	}
 	int k;
 	for(k=1;k<=n;k++){
@@ -49,9 +49,9 @@ int main_bench(){
 	}
 
 	if(s==1){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("%d %d",p,m);
+		my_printf("%d %d",p,m);
 	}
 	return 0;
 

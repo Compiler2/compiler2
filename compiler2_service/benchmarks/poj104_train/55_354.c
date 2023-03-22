@@ -8,7 +8,7 @@ int main_bench()
     long int i,j,k,l,n,m,y=0,x,t=0;
     long int hhh(int q, int p); 
     char b[10000];                
-    scanf("%d %s %d",&n,a,&x);
+    my_scanf("%d %s %d",&n,a,&x);
     l=strlen(a);
     for(i=0;i<l;i++)
        {if(a[i]>96&&a[i]<123)
@@ -37,10 +37,10 @@ int main_bench()
     if(t==0)
     {
     for(i=y-1;i>=0;i--)
-       printf("%c",b[i]);
+       my_printf("%c",b[i]);
     }
     if(t==1)
-        printf("0");
+        my_printf("0");
 
 }
 long int hhh(int q, int p)

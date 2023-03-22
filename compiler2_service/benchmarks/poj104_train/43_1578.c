@@ -4,7 +4,7 @@ int main_bench()
 {
     int number,i,j,f,g,s;
     int k=1;
-    scanf("%d",&number);
+    my_scanf("%d",&number);
     int num[20000];
     for(i=2;i<number;i++)
     {  s=i-1;
@@ -19,7 +19,7 @@ int main_bench()
  {
                   for(g=1;g<=f;g++)
                   {if(num[f]+num[g]==number)
-                  printf("%d %d\n",num[g],num[f]);}}
+                  my_printf("%d %d\n",num[g],num[f]);}}
   getchar();
   getchar();
   return 0;

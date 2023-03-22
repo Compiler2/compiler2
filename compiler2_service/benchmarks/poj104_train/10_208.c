@@ -33,11 +33,11 @@ void fun(int x,int m)
 int main_bench()
 {
 	int i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	fun(n,0);
-	printf("%d",max);
+	my_printf("%d",max);
 }

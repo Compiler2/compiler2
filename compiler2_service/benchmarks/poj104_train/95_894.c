@@ -36,15 +36,15 @@ int main_bench()
 	b[1][j]='\0';  
 	if (strcmp(b[0],b[1])>0)
 	{
-		printf(">");
+		my_printf(">");
 	}
 	else if (strcmp(b[0],b[1])<0)
 	{
-		printf("<");
+		my_printf("<");
 	}
 	else if (strcmp(b[0],b[1])==0)
 	{
-		printf("=");
+		my_printf("=");
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		char name[20];
@@ -15,7 +15,7 @@ int main_bench()
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&s[i].name,&s[i].scores1,&s[i].scores2,&s[i].a,&s[i].b,&s[i].paper);
+		my_scanf("%s %d %d %c %c %d",&s[i].name,&s[i].scores1,&s[i].scores2,&s[i].a,&s[i].b,&s[i].paper);
 	}
 	int sum;
 	for(i=0;i<n;i++)
@@ -57,7 +57,7 @@ int main_bench()
 	{
 		if(p[i]==max)
 		{
-			printf("%s\n%d\n%d\n",s[i].name,p[i],c);
+			my_printf("%s\n%d\n%d\n",s[i].name,p[i],c);
 			break;
 		}
 	}

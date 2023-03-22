@@ -39,11 +39,11 @@ int main_bench()
 {
 	int n,m,king;
 	do{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(n!=0&&m!=0)
 		{
 		    king=calculate(n,m);
-		    printf("%d\n",king);
+		    my_printf("%d\n",king);
 		}
 	}while(n!=0&&m!=0);
 }

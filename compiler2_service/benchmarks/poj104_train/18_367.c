@@ -33,14 +33,14 @@ void xj(int m)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,k;
 
 	for (k=1; k<=n; k++)
 	{
 		for (i=0; i<n; i++)
 			for (j=0; j<n; j++)
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 
 		int sum=0;
 		for (i=n; i>1; i--)
@@ -49,7 +49,7 @@ int main_bench()
 			sum+=a[1][1];
 			xj(i);
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 
 	return 0;

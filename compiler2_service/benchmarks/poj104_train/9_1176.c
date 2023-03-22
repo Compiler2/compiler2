@@ -8,10 +8,10 @@ int main_bench()
 {
 	patient a[100],b[100],c[100],temp;
 	int n,i,j,k=0,l=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",a[i].id,&a[i].age);
+		my_scanf("%s %d",a[i].id,&a[i].age);
 		if(a[i].age>=60) 
 		{for(j=0;j<20;j++)
 		 {b[k].id[j]=a[i].id[j];
@@ -32,7 +32,7 @@ int main_bench()
 	    }
  	}
  	for(i=0;i<k;i++)
-	 printf("%s\n",b[i].id);
+	 my_printf("%s\n",b[i].id);
     for(i=0;i<l;i++)
-      printf("%s\n",c[i].id);
+      my_printf("%s\n",c[i].id);
 }

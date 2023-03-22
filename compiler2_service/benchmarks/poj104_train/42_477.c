@@ -3,12 +3,12 @@
 int main_bench()
 {
 		long a[1000000],t=0,i,j,n,m;
-		scanf ("%ld\n",&n);
+		my_scanf ("%ld\n",&n);
 for (i=0;i<n;i++)
 {
-	scanf ("%ld",&a[i]);
+	my_scanf ("%ld",&a[i]);
 }
-scanf ("%ld",&m);
+my_scanf ("%ld",&m);
 for (i=0,t=0;i<n;i++)
 {
 	if (a[i]==m) continue;
@@ -16,8 +16,8 @@ for (i=0,t=0;i<n;i++)
 }
 for (i=n;i<n+t-1;i++)
 {
-	printf ("%ld ",a[i]);
+	my_printf ("%ld ",a[i]);
 }
 if (t!=0)
-printf ("%ld",a[n+t-1]);
+my_printf ("%ld",a[n+t-1]);
 }

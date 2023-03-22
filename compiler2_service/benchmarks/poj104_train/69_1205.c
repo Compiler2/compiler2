@@ -12,7 +12,7 @@ int main_bench()
 		d[i]='\0';
 		max[i]='\0';
 	}
-	scanf("%s%s", a, b);
+	my_scanf("%s%s", a, b);
 	for(i=0; i<=strlen(a)-1; i++)
 	{
 		if(a[i]=='0')
@@ -56,7 +56,7 @@ int main_bench()
 			up++;
 		}
 	}
-	if (up!=0) printf("1%s\n", d);
-	else printf("%s\n", d);
+	if (up!=0) my_printf("1%s\n", d);
+	else my_printf("%s\n", d);
 	return 0;
 }

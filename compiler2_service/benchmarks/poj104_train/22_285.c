@@ -5,7 +5,7 @@ main_bench()
       int num[300],n,N,i,max;
       char ch;
       n=0;
-      do { scanf("%d%c",&num[n],&ch);
+      do { my_scanf("%d%c",&num[n],&ch);
            n=n+1;}
       while(ch==',');
       N=n;
@@ -21,7 +21,7 @@ main_bench()
         if(num[i]>max)
           max=num[i];
       if(max!=0)
-       printf("%d",max);
+       my_printf("%d",max);
       else
-       printf("No");
+       my_printf("No");
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 char A[1000][300],B[300]={'\0'};
 int n,a,i,b;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-   scanf("%s",A[i]);
+   my_scanf("%s",A[i]);
    a=strlen(A[i]);
    for(b=0;b<a;b++){
        if(A[i][b]=='T'){
@@ -18,7 +18,7 @@ else if(A[i][b]=='C'){
          B[b]='G';}
       }
     B[b]='\0';
-    printf("%s\n",B);
+    my_printf("%s\n",B);
    }
 return 0;
 }

@@ -5,7 +5,7 @@ void trans(int (*m)[5],int p,int q)
  int s,i,j;
  if(p>4||q>4)
  {
-  printf("error");
+  my_printf("error");
  }
  else
  {
@@ -19,8 +19,8 @@ void trans(int (*m)[5],int p,int q)
   for(i=0;i<5;i++)
   {
      for (j=0;j<4;j++)
-         printf("%d ",*(*(m+i)+j));
-     printf("%d\n",*(*(m+i)+4));
+         my_printf("%d ",*(*(m+i)+j));
+     my_printf("%d\n",*(*(m+i)+4));
   }
  }
 }
@@ -32,9 +32,9 @@ int main_bench()
  p=a;
  for(i=0;i<5;i++)
   for(j=0;j<5;j++)
-   scanf("%d",(*(p+i)+j));
+   my_scanf("%d",(*(p+i)+j));
 
- scanf("%d %d",&n,&m);
+ my_scanf("%d %d",&n,&m);
  trans(p,n,m);
  return 0;
 }

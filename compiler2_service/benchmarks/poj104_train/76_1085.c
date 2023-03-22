@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,e=0,y=0,c=0,g=0,qs[50000],zz[50000];
 	
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=0;i<n-1;i++){
-		scanf("%d %d\n",&(qs[i]),&(zz[i]));
+		my_scanf("%d %d\n",&(qs[i]),&(zz[i]));
 	}
-	scanf("%d %d",&(qs[n-1]),&(zz[n-1]));
+	my_scanf("%d %d",&(qs[n-1]),&(zz[n-1]));
 	for(int j=0;j<n;j++){
 		if(qs[j]<qs[e]){
 			e=j;
@@ -37,10 +37,10 @@ int main_bench()
 
 	}
 	if(g==1){
-		printf("no");
+		my_printf("no");
 	}
 	else{
-		printf("%d %d",qs[e],zz[y]);
+		my_printf("%d %d",qs[e],zz[y]);
 	}
 
 return 0;

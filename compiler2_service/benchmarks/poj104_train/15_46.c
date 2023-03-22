@@ -7,14 +7,14 @@ main_bench()
 	int x[1000][1000];
 	int y[1000];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		y[i]=0;
 		a=0;
 		for (j=1;j<=n;j++)
 		{
-			scanf("%d",&x[i][j]);
+			my_scanf("%d",&x[i][j]);
 			if(x[i][j]==0)
 			{
 				a=a+1;
@@ -40,7 +40,7 @@ main_bench()
 		}
 	}
 	s=(b-2)*(c-2);
-	printf("%d",s);
+	my_printf("%d",s);
 
 
 	

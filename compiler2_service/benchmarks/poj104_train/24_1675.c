@@ -29,7 +29,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",b);
+	my_printf("%s\n",b);
 for(i=0;i<=len;i++)
 	{
 		if(a[i]!=' '&&a[i]!=','&&a[i]!='\0')
@@ -53,7 +53,7 @@ for(i=0;i<=len;i++)
 			}
 		}
 	}
-	printf("%s\n",d);
+	my_printf("%s\n",d);
 
 				
 	

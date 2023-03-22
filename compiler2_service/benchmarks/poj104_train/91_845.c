@@ -8,9 +8,9 @@ int main_bench()
   p1=&a[0];
   p2=&a[1];
   for (i=0;i<=(n-2);i++)
-    {printf("%c",*p1+*p2);p1++;p2++;}
+    {my_printf("%c",*p1+*p2);p1++;p2++;}
   p1=&a[0];p2=&a[n-1];
-  printf("%c",*p1+*p2);
+  my_printf("%c",*p1+*p2);
 
 
 }

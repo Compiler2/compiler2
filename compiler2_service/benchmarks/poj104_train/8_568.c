@@ -4,14 +4,14 @@ int m,n,a[500]={0},b[500]={0};
 void scanarray()
 {
 	int i;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<=m-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 }
 void shengxu(int x[],int len)
@@ -41,10 +41,10 @@ void hebing(int x[],int y[],int lenx,int leny)
 void printarray(int x[],int len)
 {
 	int i;
-	printf("%d",x[0]);
+	my_printf("%d",x[0]);
 	for(i=1;i<=len-1;i++)
 	{
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 	putchar('\n');
 }

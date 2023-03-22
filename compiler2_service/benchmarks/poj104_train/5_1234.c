@@ -3,10 +3,10 @@
 int main_bench()
 {
 	double bl,jl;
-	scanf("%lf",&bl);
+	my_scanf("%lf",&bl);
 	char dna1[501],dna2[501];
-	scanf("%s",dna1);
-	scanf("%s",dna2);
+	my_scanf("%s",dna1);
+	my_scanf("%s",dna2);
 	int i,k=0,l,n=0;
 	l=strlen(dna1);
 	for(i=0;i<l;i++)
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	if(k>0)
 	{
-		printf("error\n");
+		my_printf("error\n");
 	}
 	else
 	{
@@ -32,11 +32,11 @@ int main_bench()
 		jl=1.0*n/(l-1);
 		if(jl>bl)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

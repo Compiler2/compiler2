@@ -9,10 +9,10 @@ struct s
   int y;
  };
 struct s sz[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	sz[i].x=x;
 	sz[i].y=y;
 }
@@ -22,15 +22,15 @@ for(i=1;i<n;i++)
     c=sz[i].y *1.0 /sz[i].x; 
     if (c-b>0.05)
 	{
-        printf ("better\n");
+        my_printf ("better\n");
 	}
     else if (b-c>0.05)
 	{
-        printf("worse\n");
+        my_printf("worse\n");
 	}
 	else
 	{
-		printf("same\n");
+		my_printf("same\n");
 	}
 
 }

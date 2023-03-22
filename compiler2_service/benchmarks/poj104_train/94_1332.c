@@ -10,9 +10,9 @@ int main_bench(){
 	int t;
 	int z;
 	int u;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	while (i<n){
-        scanf ("%d",&s[i]);
+        my_scanf ("%d",&s[i]);
 		z=s[i]%2;
 		if (z==1){
 			m=m+1;
@@ -39,11 +39,11 @@ int main_bench(){
 	j=0;
 	while (j<m){
 		if (j==m-1){
-			printf ("%d",q[j]);
+			my_printf ("%d",q[j]);
 
 		}	else {
 
-	     	printf ("%d"",",q[j]);
+	     	my_printf ("%d"",",q[j]);
 		}
 	    j++;
 	}

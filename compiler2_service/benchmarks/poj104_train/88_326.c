@@ -15,12 +15,12 @@ int main_bench()
         if(input[i] >= '0' && input[i] <= '9')
         {
            
-            printf("%c", input[i]);
+            my_printf("%c", input[i]);
 			
         }
         else
         {
-            printf("\n");
+            my_printf("\n");
         }
 
         return 0;

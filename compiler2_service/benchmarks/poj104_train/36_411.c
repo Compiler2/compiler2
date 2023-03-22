@@ -18,11 +18,11 @@ int main_bench()
 {
 	int m,n;
 	char a[20],b[20];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	 sort(a,m);
 	 sort(b,n);
-	 if(strcmp(a,b)==0) printf("YES\n");
-	 else printf("NO\n");
+	 if(strcmp(a,b)==0) my_printf("YES\n");
+	 else my_printf("NO\n");
 }

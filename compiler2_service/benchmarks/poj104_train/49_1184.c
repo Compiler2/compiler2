@@ -5,7 +5,7 @@ int main_bench()
     int b,i,m,n,x,y=0;
     char a[500];
     for(i=0;i<500;i++)
-  {  scanf("%c",&a[i]);
+  {  my_scanf("%c",&a[i]);
   if(a[i]=='\n')
   break;}
                     for(n=2;n<=i;n++)
@@ -20,7 +20,7 @@ int main_bench()
                                     break;}}
                                     if(y==0)
                                     {for(b=m;b<m+n;b++)
-                                    printf("%c",a[b]);}
-printf("\n");
+                                    my_printf("%c",a[b]);}
+my_printf("\n");
                                     x=0;}m=0;}
                                     return 0;}

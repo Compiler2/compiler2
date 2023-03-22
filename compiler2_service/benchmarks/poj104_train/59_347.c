@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,m,sum,k,p,q;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	char a[100][100];
 	char b[100][100];
@@ -12,17 +12,17 @@ int main_bench()
 	
 
 	
-	scanf("%c",&zds);
+	my_scanf("%c",&zds);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%c",&a[i][j]);
-    	scanf("%c",&zds);
+			my_scanf("%c",&a[i][j]);
+    	my_scanf("%c",&zds);
 	}
 
 
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=0;i<n;i++)
 	{
@@ -85,7 +85,7 @@ int main_bench()
 
 
 	
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 	return 0;
 }

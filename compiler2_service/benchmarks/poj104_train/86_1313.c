@@ -4,15 +4,15 @@
 int main_bench()
 {
   int n,i,m,j,ans,t,tmp;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for (i=1;i<=n;i++)
   {
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     t=0;
     ans=60;
     for (j=1;j<=m;j++)
     {
-       scanf("%d",&tmp);
+       my_scanf("%d",&tmp);
        if (tmp+t<=60)
        {
           t+=3;
@@ -22,6 +22,6 @@ int main_bench()
             ans-=3;
        }
     }
-    printf("%d\n",ans);
+    my_printf("%d\n",ans);
   }
 }

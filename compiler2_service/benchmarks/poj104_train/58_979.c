@@ -5,7 +5,7 @@ int main_bench()
 	int n,m,i,j,pd;
 	char bsf[81],*p;
 	p=bsf;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++){
 		pd=1;
@@ -19,7 +19,7 @@ int main_bench()
 					pd=0;
 			}
 		}
-		printf("%d\n",pd);
+		my_printf("%d\n",pd);
 	}
 	return 0;
 }

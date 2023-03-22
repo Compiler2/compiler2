@@ -3,11 +3,11 @@
 int main_bench()
 {int zu[100][100];
  int n,a,b,c,d;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int i,j;
     for(i=0;i<n;i++)
 	{  for(j=0;j<n;j++)
-	{  scanf("%d",&zu[j][i]);
+	{  my_scanf("%d",&zu[j][i]);
 	}
 	}
 	 for(i=0;i<n;i++)
@@ -41,7 +41,7 @@ int main_bench()
 	 }
 	 int mian;
 	 mian=(c-a-1)*(d-b-1);
-		 printf("%d",mian);
+		 my_printf("%d",mian);
 		 return 0;
 }
 

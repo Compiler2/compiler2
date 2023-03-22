@@ -5,12 +5,12 @@ int main_bench()
 	void line(int a[],int b[],int m,int n);
 	int m,n,i,j,t;
 	int a[1000],b[1000];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
-	scanf("%d",&a[i]);
-	scanf("\n");
+	my_scanf("%d",&a[i]);
+	my_scanf("\n");
 	for(i=0;i<n;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 	line(a,b,m,n);
 }
 void line(int a[],int b[],int m,int n)
@@ -33,8 +33,8 @@ void line(int a[],int b[],int m,int n)
 				b[i+1]=t;
 			}
 	for(i=0;i<m;i++)
-	printf("%d ",a[i]);
+	my_printf("%d ",a[i]);
 	for(i=0;i<n-1;i++)
-	printf("%d ",b[i]);
-	printf("%d",b[n-1]);
+	my_printf("%d ",b[i]);
+	my_printf("%d",b[n-1]);
 	}

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,j,h,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     i=0;
     j=3;
     
@@ -20,13 +20,13 @@ int main_bench()
                        k++;
                  }
                                   if(k==j-2)
-                                  {printf("%d %d\n",j,j+2);
+                                  {my_printf("%d %d\n",j,j+2);
                                   i++;
                                   }
                                   j++;
        }
     if(i==0)
-    printf("empty");
+    my_printf("empty");
     
     
      getchar();

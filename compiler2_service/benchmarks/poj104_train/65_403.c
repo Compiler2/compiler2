@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,i,j,k,a=0,b=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int fight[n][2];
     for(i=0;i<n;i++)
     {
-   scanf("%d%d",&fight[i][0],&fight[i][1]);}
+   my_scanf("%d%d",&fight[i][0],&fight[i][1]);}
    for(i=0;i<n;i++)
    {
            if(fight[i][0]==fight[i][1]);
@@ -31,9 +31,9 @@ int main_bench()
        
             }      
        }
-       if(a>b)printf("A\n");
-       if(a<b)printf("B\n");
-       if(a==b)printf("Tie\n");
+       if(a>b)my_printf("A\n");
+       if(a<b)my_printf("B\n");
+       if(a==b)my_printf("Tie\n");
                   
                     
     

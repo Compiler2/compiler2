@@ -12,7 +12,7 @@ main_bench()
     char str[110];
     int a[110]={0},b[110]={0};
     int i,j,k,n;
-    scanf("%s",str);
+    my_scanf("%s",str);
     trans(str,a);
     n=strlen(str);
     for(i=0;i<n-1;i++)
@@ -29,12 +29,12 @@ main_bench()
         }
     }
     if(k==0)
-        printf("0\n");
+        my_printf("0\n");
     else
     {
         for(i=j;i<n;i++)
-            printf("%d",b[i]);
-        printf("\n");
+            my_printf("%d",b[i]);
+        my_printf("\n");
     }    
-    printf("%d\n",a[n-1]);
+    my_printf("%d\n",a[n-1]);
     }

@@ -4,7 +4,7 @@ int main_bench()
 {
  unsigned long  year,month,day,i,n,a,b,total,c;
  unsigned long  s[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
- scanf("%d %d %d",&year,&month,&day);
+ my_scanf("%d %d %d",&year,&month,&day);
  n=(year-1)/4-(year-1)/100+(year-1)/400;
  if((year%4==0&&year%100!=0)||year%400==0)
   s[2]=29;
@@ -16,25 +16,25 @@ int main_bench()
 switch (c)
  {
  case 0:
-  printf("Sun.");
+  my_printf("Sun.");
   break;
  case 1:
-  printf("Mon.");
+  my_printf("Mon.");
   break;
  case 2:
-  printf("Tue.");
+  my_printf("Tue.");
   break;
  case 3:
-  printf("Wed.");
+  my_printf("Wed.");
   break;
  case 4:
-  printf("Thu.");
+  my_printf("Thu.");
   break;
  case 5:
-  printf("Fri.");
+  my_printf("Fri.");
   break;
  case 6:
-  printf("Sat.");
+  my_printf("Sat.");
   break;
  }
 return 0;

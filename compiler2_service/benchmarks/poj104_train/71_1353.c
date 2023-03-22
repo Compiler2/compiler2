@@ -25,13 +25,13 @@ int main_bench()
 {
 	int n,i;
 	int year[200],month1[200],month2[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
+		my_scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
 
 	for (i=0;i<n;i++)
 		if (abs(daycount(year[i],month1[i])-daycount(year[i],month2[i]))%7==0)
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	return 0;
 }

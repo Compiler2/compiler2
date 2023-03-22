@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct qujian {
 		int a,b;
 	}qujian[50001];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d %d",&(qujian[i].a),&(qujian[i].b));
+		my_scanf("%d %d",&(qujian[i].a),&(qujian[i].b));
 	}
 	int max,min;
 	min=qujian[0].a;
@@ -36,11 +36,11 @@ int main_bench(){
 			}
 		}
 		if(m==0){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 		if(s==max){
-			printf("%d %d",min,max);
+			my_printf("%d %d",min,max);
 		}
 	}
 	return 0;

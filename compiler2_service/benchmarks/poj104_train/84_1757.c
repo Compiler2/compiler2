@@ -9,9 +9,9 @@ int main_bench()
 	int x=0;
 	int y=0;
 
-	scanf ("%d", &n);
+	my_scanf ("%d", &n);
 	for (i=0; i<n; i++) {
-		scanf ("%d", &a[i]);
+		my_scanf ("%d", &a[i]);
 	}
 	for (i=0; i<n; i++) {
 		b=a[i];
@@ -30,8 +30,8 @@ int main_bench()
 			y=b;
 		}
 	}
-	printf("%d\n",x);
-	printf("%d\n",y);
+	my_printf("%d\n",x);
+	my_printf("%d\n",y);
 	return 0;
 }
 

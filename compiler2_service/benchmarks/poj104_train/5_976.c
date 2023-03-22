@@ -4,15 +4,15 @@ int main_bench(){
 	double n;
 	char s1[501];
 	char s2[501];
-	scanf("%lf",&n);
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	int i,len1,len2,sum=0;
 	double gl;
 	len1=strlen(s1);
 	len2=strlen(s2);
 	if(len1!=len2){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	else{
@@ -22,16 +22,16 @@ int main_bench(){
 					sum+=1;
 				}
 			}else{
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 		}
 		gl=1.0*sum/len1;
 		if(gl>n){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");		
+			my_printf("no");		
 		}
 	}
 	return 0;

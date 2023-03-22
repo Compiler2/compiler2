@@ -54,12 +54,12 @@ int main_bench()
 	{
 		switch(d[k])
 		{
-			case 1:printf("$");break;
-			case 2:printf("?");break;
-			case 3:printf(" ");break;
+			case 1:my_printf("$");break;
+			case 2:my_printf("?");break;
+			case 3:my_printf(" ");break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }
 	
 }

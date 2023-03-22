@@ -8,7 +8,7 @@ char current[1024];
 
 int main_bench() {
 	gets(buffer);
-	scanf("%s %s", word, replace);
+	my_scanf("%s %s", word, replace);
 
 	int buffer_len = strlen(buffer);
 	char *buffer_ptr = buffer;
@@ -19,9 +19,9 @@ int main_bench() {
 		if (*buffer_ptr == ' ') {
 			*current_ptr = '\0';
 			if (strcmp(word, current) == 0)
-				printf("%s ", replace);
+				my_printf("%s ", replace);
 			else
-				printf("%s ", current);
+				my_printf("%s ", current);
 			current_ptr = current;
 		} else {
 			*current_ptr = *buffer_ptr;
@@ -31,9 +31,9 @@ int main_bench() {
 	}
 	*current_ptr = '\0';
 	if (strcmp(word, current) == 0)
-		printf("%s", replace);
+		my_printf("%s", replace);
 	else
-		printf("%s", current);
+		my_printf("%s", current);
 
 	return 0;
 }

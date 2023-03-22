@@ -11,9 +11,9 @@ int main_bench()
    {  c1=*(p+i);
    c2=*(p+i+1);
       if(c1>47&c1<58)
-      {printf("%c",c1);
+      {my_printf("%c",c1);
       if(c2<48||c2>57)
-      printf("\n");
+      my_printf("\n");
       } 
       }              
 }

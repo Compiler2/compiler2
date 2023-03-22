@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int num,i,j,l;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	struct inf  
 	{
 		char str[10];
@@ -16,7 +16,7 @@ int main_bench()
 	}old[101];
 	for(i=0;i<num;i++)
 	{
-		scanf("%s %d",infs[i].str,&infs[i].age);
+		my_scanf("%s %d",infs[i].str,&infs[i].age);
 	}
 	for(i=0,j=0;i<num;i++)
 		if(infs[i].age>=60) 
@@ -39,9 +39,9 @@ int main_bench()
 			}
 	}
 	for(i=0;i<end;i++)
-		printf("%s\n",old[i].p1);
+		my_printf("%s\n",old[i].p1);
 	for(i=0;i<num;i++)
 		if(infs[i].age<60)
-		printf("%s\n",infs[i].str);
+		my_printf("%s\n",infs[i].str);
 }
 

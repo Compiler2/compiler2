@@ -12,10 +12,10 @@ int main_bench()
 	int n, i, j, k;
 	struct patient p[100];	
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for(i=0; i<n; i++)
-		scanf("%s%d", p[i].id, &p[i].age);
+		my_scanf("%s%d", p[i].id, &p[i].age);
 
 	for(i=1; i<n; i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 	}
 
 	for(i=0; i<n; i++)
-		printf("%s\n", p[i].id);
+		my_printf("%s\n", p[i].id);
 	
 	return 0;
 }

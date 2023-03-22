@@ -4,9 +4,9 @@ int main_bench()
 {
  int j,i,n,l,t=0;
  char s[10000][20];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-  scanf("%s",&s[i]);
+  my_scanf("%s",&s[i]);
  for(i=0;i<n;i++)
  {
   l=strlen(s[i]);               
@@ -19,16 +19,16 @@ int main_bench()
     else
     {
      t=1;                                                                                                          
-     printf("no\n");
+     my_printf("no\n");
      break;
     }                
    }
    if(t==0)
-   printf("yes\n");                                                                             
+   my_printf("yes\n");                                                                             
   }
   else
   {
-   printf("no\n");
+   my_printf("no\n");
   }
  } 
   getchar();

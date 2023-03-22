@@ -9,10 +9,10 @@ int main_bench()
         int a,b;
     } q[5000],c;
     int star,end,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d%d",&q[i].a,&q[i].b);
+        my_scanf("%d%d",&q[i].a,&q[i].b);
     }
     for(i=1;i<n;i++)
     {
@@ -45,8 +45,8 @@ int main_bench()
         }
     }
     if(e==0)
-    printf("no");
+    my_printf("no");
     if(e==1)
-    printf("%d %d",star,end);
+    my_printf("%d %d",star,end);
     return 0;
 }

@@ -10,10 +10,10 @@ int main_bench()
 		int sum;
 	}a[100000];
 	int n,i,j,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&a[i].num,&a[i].scorechinese,&a[i].scoremath);
+		my_scanf("%d %d %d",&a[i].num,&a[i].scorechinese,&a[i].scoremath);
 		a[i].sum=a[i].scorechinese+a[i].scoremath;
 	}
 	for(i=0;i<3;i++)
@@ -26,7 +26,7 @@ int main_bench()
 				temp=a[i].num,a[i].num=a[j].num,a[j].num=temp;
 			}
 		}
-		printf("%d %d\n",a[i].num,a[i].sum);
+		my_printf("%d %d\n",a[i].num,a[i].sum);
 	}
 	return 0;
 }

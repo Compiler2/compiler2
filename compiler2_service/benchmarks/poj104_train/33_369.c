@@ -3,7 +3,7 @@
 int main_bench()
 {
 int i,j,n;
-scanf("%d\n",&n);char a[3000];
+my_scanf("%d\n",&n);char a[3000];
 for(j=0;j<n;j++)
 {
   

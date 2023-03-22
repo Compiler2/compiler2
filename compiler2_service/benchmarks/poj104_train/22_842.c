@@ -15,10 +15,10 @@ int main_bench()
 		if(b=='\n') break;
 		i++;
 	}
-	if(i==0) {printf("No\n");exit(0);}
+	if(i==0) {my_printf("No\n");exit(0);}
 	for(j=0;j<=i;j++)
 		if(a[j]==a[k]) t++;
-	if(t==i+1) {printf("No\n");exit(0);}
+	if(t==i+1) {my_printf("No\n");exit(0);}
 	for(j=0;j<=i;j++)
 		if(a[j]>a[k]) k=j;
 	t=a[k];
@@ -26,6 +26,6 @@ int main_bench()
 		if(a[j]==t) a[j]=0;
 	for(j=0;j<=i;j++)
 		if(a[j]>a[k]) k=j;
-	printf("%d\n",a[k]);
+	my_printf("%d\n",a[k]);
 }
 	

@@ -7,7 +7,7 @@ int main_bench()
 int a[9][9], b[9][9];
     
     
-    scanf("%d%d", &m, &n);
+    my_scanf("%d%d", &m, &n);
     memset(a, 0, sizeof(a));
     a[x / 2][x / 2] = m;
     
@@ -27,8 +27,8 @@ int a[9][9], b[9][9];
     
     for (i = 0; i < x; i++) {
         for (j = 0; j < x - 1; j++)
-            printf("%d ", a[i][j]);
-        printf("%d\n", a[i][x - 1]);
+            my_printf("%d ", a[i][j]);
+        my_printf("%d\n", a[i][x - 1]);
     }
     
     return 0;

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int org[100],opp[100];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&org[i]);
+		my_scanf("%d",&org[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -21,8 +21,8 @@ int main_bench()
 	int k;
 	for(k=0;k<n-1;k++)
 	{
-		printf("%d ",opp[k]);
+		my_printf("%d ",opp[k]);
 	}
-	printf("%d",opp[n-1]);
+	my_printf("%d",opp[n-1]);
 	return 0;
 }

@@ -7,7 +7,7 @@ int main_bench()
 	int times[500]={0};
 	int num=0;
 	int n,i,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(a);
 	len=strlen(a);
@@ -34,10 +34,10 @@ int main_bench()
 	for(i=0;i<num;i++)if(times[i]>max)max=times[i];
 	if(max==1)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		goto Eof;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<num;i++)if(times[i]==max)puts(x[i]);
 Eof:;
 	return 0;

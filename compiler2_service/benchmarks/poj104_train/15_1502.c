@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int m,a,b,i,x,e,c,d;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	x=m*m;
 	for(i=1;i<=x;i++)
 	{
-		scanf("%d",&e);
+		my_scanf("%d",&e);
 		if(e==0)
 		{
 			a=i;
@@ -16,7 +16,7 @@ int main_bench()
 	}
 	for(i=a+1;i<=x;i++)
 	{
-		scanf("%d",&e);
+		my_scanf("%d",&e);
 		if(e==0)
 		{
 			b=i;
@@ -28,6 +28,6 @@ int main_bench()
 	a=a/m;
 	b=b/m;
 	d=b-a-1;
-	printf("%d",c*d);
+	my_printf("%d",c*d);
 	return 0;
 }

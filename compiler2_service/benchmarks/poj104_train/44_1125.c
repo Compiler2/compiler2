@@ -5,9 +5,9 @@ int main_bench()
 	int n,m,k=0;
 	for(k=1;k<7;k++)
 	{
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	m=reverse(n);
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	}
 	return 0;
 }

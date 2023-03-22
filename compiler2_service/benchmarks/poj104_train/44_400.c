@@ -6,7 +6,7 @@ int main_bench()
 	int a,n;
 	for(a=0;a<=5;a++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		n=reverse(n);
 		
 	}
@@ -19,11 +19,11 @@ int reverse(int n)
 	if(n<0)
 	{
 		n=-n;
-		printf("-");
+		my_printf("-");
 	}
 	if(n==0) 
 	{
-		printf("0\n");
+		my_printf("0\n");
 		return 0;
 	}
 	for(a=0;a<=9;a++)
@@ -53,11 +53,11 @@ int reverse(int n)
 		if((z[a]!=0)&&(b==0))
 		{
 			b=1;
-			printf("%d",z[a]);
+			my_printf("%d",z[a]);
 			continue;
 		}
-		if(b==1) printf("%d",z[a]);
+		if(b==1) my_printf("%d",z[a]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

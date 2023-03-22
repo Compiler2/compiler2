@@ -13,10 +13,10 @@ int main_bench()
   {n++;
    a[n]=i;
    }}
- scanf("%d",&k);
+ my_scanf("%d",&k);
  j=0;
  for(i=0;a[i]<=k-2;i++)
   if(a[i+1]==a[i]+2)
-  {printf("%d %d\n",a[i],a[i+1]);j++;}
- if(j==0) printf("empty"); 
+  {my_printf("%d %d\n",a[i],a[i+1]);j++;}
+ if(j==0) my_printf("empty"); 
 }

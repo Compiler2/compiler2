@@ -3,10 +3,10 @@
 int main_bench()
 { int leap(int n);
 int n,sum=0,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 { if(i%7!=0&&leap(i)) sum=sum+i*i;}
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 return 0;
 }
 int leap(int n)

@@ -11,9 +11,9 @@ int main_bench() {
 	double temp11=0;
 
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++) {
-		scanf("%s",cal[i]);
+		my_scanf("%s",cal[i]);
 		m=strlen(cal[i]);
 		for(j=0;j<=m;j++) {
 			if(cal[i][j]=='A') {
@@ -42,7 +42,7 @@ int main_bench() {
 
 
 	for(i=1;i<=n;i++) {
-		printf("%s\n",cal[i]);
+		my_printf("%s\n",cal[i]);
 	}
 
 	return 0;

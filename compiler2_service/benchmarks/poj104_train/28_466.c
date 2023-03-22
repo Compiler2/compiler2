@@ -7,8 +7,8 @@ int main_bench()
 	gets(c);
 	for(i=0;i<=strlen(c);i++) 
 	{
-		if (i==strlen(c)) {printf("%d",k);break;}
+		if (i==strlen(c)) {my_printf("%d",k);break;}
 		else if(c[i]!=' ') {k++;b=1;}
-		else if(b==1) {printf("%d,",k);k=0;b=0;}
+		else if(b==1) {my_printf("%d,",k);k=0;b=0;}
 	}
 }

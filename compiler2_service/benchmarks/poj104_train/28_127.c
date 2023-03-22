@@ -13,7 +13,7 @@ int main_bench()
 			j++;
 	}
 	for(i=0;i<j;i++)
-		printf("%d,",b[i]);
-	printf("%d",b[j]);
+		my_printf("%d,",b[i]);
+	my_printf("%d",b[j]);
 
 }

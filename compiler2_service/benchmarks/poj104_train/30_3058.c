@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,a,b,i;
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n<10)
 	{
 		for(i=0;i<=n;i++)
 		if(i%7!=0)
 			sum=sum+i*i;
-    printf("%d",sum);
+    my_printf("%d",sum);
     }
 	else
     {
@@ -23,7 +23,7 @@ int main_bench()
         
 				sum=sum+i*i;
 		}
-	          printf("%d",sum);
+	          my_printf("%d",sum);
 	}
 	return 0;
 }

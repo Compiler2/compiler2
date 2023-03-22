@@ -7,9 +7,9 @@ int main_bench()
     }points[50002],tmp;
     int i,j,n;
     int a,b,c=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++) 
-    {scanf("%d%d",&a,&b);
+    {my_scanf("%d%d",&a,&b);
     points[i].a=a;
     points[i].b=b;}
     for(j=n-1;j>0;j--)    
@@ -27,8 +27,8 @@ int main_bench()
      else {c=0;break;}
       }
     if(c!=0)
-    {printf("%d %d",points[0].a,points[0].b);} 
-     else{printf("no\n");} 
+    {my_printf("%d %d",points[0].a,points[0].b);} 
+     else{my_printf("no\n");} 
      return 0;
 }
 

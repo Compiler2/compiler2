@@ -4,7 +4,7 @@ int main_bench()
 {
     char str[1000];
 int i,X,s=0,j,n[26]={0};
-scanf("%s",str);
+my_scanf("%s",str);
 X=strlen(str);
 for (i=0;i<X;i++)
 {
@@ -16,7 +16,7 @@ for (i=0;i<X;i++)
   s=s+1;
   if (str[i+1]!=str[i])
   {
-                       printf("(%c,%d)",str[i],s);
+                       my_printf("(%c,%d)",str[i],s);
                              s=0;
                              } 
       

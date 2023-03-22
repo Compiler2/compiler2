@@ -4,13 +4,13 @@ main_bench()
 {int i,j,l;
 	int k,n,m,a[100][100]={0},(*p)[100]=a,t=0;
 	
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(l=1;l<=k;l++)
 {
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<=n-1;i++)
 		for(j=0;j<=m-1;j++)
-	scanf("%d",*(p+i)+j);
+	my_scanf("%d",*(p+i)+j);
 		
 	for(j=0;j<=m-1;j++)
 	{if(n!=1)
@@ -29,6 +29,6 @@ for(l=1;l<=k;l++)
 	else
         t+=*(*(p+i));
 	}
-		printf("%d\n",t);t=0;
+		my_printf("%d\n",t);t=0;
 }
 }

@@ -2,15 +2,15 @@
 
 int main_bench(){
 	int n,i,m,j,s[100],t,total,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-scanf("%d",&m);
+my_scanf("%d",&m);
 t=0;
 k=0;
 total=60;
 if(m!=0){
 for(j=0;j<m;j++){
-	scanf("%d",&(s[j]));
+	my_scanf("%d",&(s[j]));
 }
 for(j=0;j<m;j++){
 	t=s[j]+k;
@@ -27,7 +27,7 @@ k+=3;
 
 }
 }
-printf("%d\n",total);
+my_printf("%d\n",total);
 	}
 return 0;
 }

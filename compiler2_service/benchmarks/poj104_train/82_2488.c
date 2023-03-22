@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,a[100],b[100],p[100],e[100],j,m=0,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d%d",&a[i],&b[i]);
+	my_scanf("%d%d",&a[i],&b[i]);
 	if((a[i]<=140)&&(a[i]>=90)&&(b[i]<=90)&&(b[i]>=60)){
 	    p[i]=1;
 	}
@@ -29,7 +29,7 @@ int main_bench(){
 		max=e[i];
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	
 
 

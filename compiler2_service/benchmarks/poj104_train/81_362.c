@@ -7,17 +7,17 @@ int main_bench()
 	for(d=0;d<5;d++)
 	{
 		for(e=0;e<5;e++)
-			scanf("%d",&a[d][e]);
+			my_scanf("%d",&a[d][e]);
 	}
-	scanf("%d%d",&b,&c);
+	my_scanf("%d%d",&b,&c);
 	d=huanh(a,b,c);
 	if(d==0)
-		printf("error");
+		my_printf("error");
 	if(d!=0)
 	{
 		for(d=0;d<5;d++)
 			for(e=0;e<5;e++)
-				printf("%d%c",a[d][e],e<4?' ':'\n');
+				my_printf("%d%c",a[d][e],e<4?' ':'\n');
 	}
 }
 int huanh(int z[][5],int x,int y)

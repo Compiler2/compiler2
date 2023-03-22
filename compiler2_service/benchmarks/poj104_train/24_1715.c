@@ -31,7 +31,7 @@ int main_bench()
 			strcpy(c,a);
 		}
 	}
-	printf("%s\n",b);
-	printf("%s\n",c);
+	my_printf("%s\n",b);
+	my_printf("%s\n",c);
 	return 0;
 }		

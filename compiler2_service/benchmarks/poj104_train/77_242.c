@@ -9,7 +9,7 @@ void change(char str[],char w,char m)
 		{if(str[ctr1]!=' ')break;}
 		if(str[ctr1]==w)
 		{
-			printf("%d %d\n",ctr,ctr1);str[ctr]=str[ctr1]=' ';
+			my_printf("%d %d\n",ctr,ctr1);str[ctr]=str[ctr1]=' ';
 			break;}
 	}
 		

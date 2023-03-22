@@ -7,9 +7,9 @@ int main_bench(){
     len=strlen(s);
     for(p=s;p<s+len;p++){
         if(p==s-1+len)
-            printf("%c",(*p)+s[0]);
+            my_printf("%c",(*p)+s[0]);
         else
-            printf("%c",(*p)+*(p+1));
+            my_printf("%c",(*p)+*(p+1));
     }
     return 0;
 } 

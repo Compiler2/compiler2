@@ -10,10 +10,10 @@ int main_bench()
 {   
 	float ave,num,s;
 	int m,j,k,i,a[300]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	s=0;
 	for(i=0;i<m;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
     for(i=0;i<m;i++)
 		s=s+a[i];
 	ave=s/m;
@@ -31,11 +31,11 @@ int main_bench()
             j=a[i];
     }
 		  if(j==0)
-		printf("%d",k);
+		my_printf("%d",k);
 	else
 		if(k>j)
-			printf("%d,%d",j,k);
+			my_printf("%d,%d",j,k);
 		else
-            printf("%d,%d",k,j);
+            my_printf("%d,%d",k,j);
 
 }

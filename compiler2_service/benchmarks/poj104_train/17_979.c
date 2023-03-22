@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i,j,num,p,q;
 	for(i=0;i<n;i++)
 	{
 		char a[101],b[101];
-		scanf("%s", &a);
+		my_scanf("%s", &a);
 		num=strlen(a);
 		for(j=0;j<num;j++)
 		{
@@ -44,15 +44,15 @@ int main_bench()
 		for(j=0;j<num;j++)
 		{
 			
-			printf("%c", a[j]);
+			my_printf("%c", a[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		for(j=0;j<num;j++)
 		{
 			
-			printf("%c", b[j]);
+			my_printf("%c", b[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		p=0;
 		q=0;
 	}

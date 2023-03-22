@@ -3,26 +3,26 @@
 int main_bench()
 {
     int i;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	if(i%3==0)
 
 	 {
- printf("3");
+ my_printf("3");
      if(i%5==0)
-		 printf(" 5");
+		 my_printf(" 5");
 	      if(i%7==0)
-		    printf(" 7");
+		    my_printf(" 7");
 	 }
 	 if(i%3>0)
      {if(i%5==0)
-	 {printf("5");
+	 {my_printf("5");
 	      if(i%7==0)
-			  printf(" 7");}
+			  my_printf(" 7");}
 	 if(i%5>0)
 	 {if(i%7==0)
-			  printf("7");}
+			  my_printf("7");}
 	 }
 	 if(i%3!=0 && i%5!=0 && i%7!=0)
-		 printf("n"); 
+		 my_printf("n"); 
 return 0;
 }

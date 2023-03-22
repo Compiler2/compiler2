@@ -34,7 +34,7 @@ int main_bench()
 
 
 	if(r==1||a[0]==a[r])
-		printf("No");
+		my_printf("No");
 	else
 	{
 	
@@ -44,7 +44,7 @@ int main_bench()
 				break;
 		}
 		
-		printf("%d",a[p]);
+		my_printf("%d",a[p]);
 	}
 
 

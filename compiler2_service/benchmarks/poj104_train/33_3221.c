@@ -6,7 +6,7 @@ int main_bench()
 	    int n,i,j,m;
 		char A,T,C,G;
 		char a[10000],b[10000];
-		scanf("%d\n",&n);
+		my_scanf("%d\n",&n);
 		for(i=1;i<=n;i++)
 		{
 			for(j=0;1;j++)

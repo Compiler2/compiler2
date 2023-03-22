@@ -17,9 +17,9 @@ main_bench()
 			n++;
 		}
 	}
-	printf("%s",b[n-1]);
+	my_printf("%s",b[n-1]);
 	for(i=n-2;i>=0;i--)
-		printf(" %s",b[i]);
+		my_printf(" %s",b[i]);
 }
 
 

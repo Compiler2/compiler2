@@ -5,13 +5,13 @@ int main_bench()
 	int array[100][100];
 	int n,row,col,i,j,k=0,r,t,x=0;
 	float m;
-	scanf("%d",&row);
-	scanf("%d",&col);
+	my_scanf("%d",&row);
+	my_scanf("%d",&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-	    	scanf("%d",&array[i][j]);
+	    	my_scanf("%d",&array[i][j]);
 		}
 	}
 	if(row>col)
@@ -26,7 +26,7 @@ int main_bench()
 			{
 				if(x!=row*col)
 				{
-					printf("%d\n",array[k][j]);
+					my_printf("%d\n",array[k][j]);
 					x++;
 				}
 			}
@@ -34,7 +34,7 @@ int main_bench()
 			{
 				if(x!=row*col)
 				{
-					printf("%d\n",array[i][col-k-1]);
+					my_printf("%d\n",array[i][col-k-1]);
 					x++;
 				}
 			}
@@ -42,7 +42,7 @@ int main_bench()
 			{
 				if(x!=row*col)
 				{
-					printf("%d\n",array[row-k-1][t]);
+					my_printf("%d\n",array[row-k-1][t]);
 					x++;
 				}
 			}
@@ -50,7 +50,7 @@ int main_bench()
 			{
 				if(x!=row*col)
 				{
-					printf("%d\n",array[r][k]);
+					my_printf("%d\n",array[r][k]);
 					x++;
 				}
 			}

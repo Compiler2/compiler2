@@ -51,13 +51,13 @@ void add(char* a,char* b,char* c)
 int main_bench()
 {
 	char a[300],b[300],c[300];
-	scanf("%s %s",a,b);
-	if((a[0]=='0')&&(a[1]=='\0')&&(b[1]=='\0')&&(b[0]=='0')) printf("0");
+	my_scanf("%s %s",a,b);
+	if((a[0]=='0')&&(a[1]=='\0')&&(b[1]=='\0')&&(b[0]=='0')) my_printf("0");
 	add(a,b,c);
 	char*p,*p1;
 	p=c;
 	if((*p=='0')&&(*(p++)!='0')&&(strlen(c)>1)) p++;
 	for(p1=p;p1<c+strlen(c);p1++)
-	printf("%c",*p1);
+	my_printf("%c",*p1);
 	return 0;
 }

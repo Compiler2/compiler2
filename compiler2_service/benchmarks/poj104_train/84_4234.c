@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,n,m1=2,m2=0;
 	int zzz[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&zzz[i]);
+		my_scanf("%d",&zzz[i]);
 	}
 	for(i=0;i<n;i++){
 		if(zzz[i]>m1){
@@ -24,6 +24,6 @@ int main_bench()
 			m2=zzz[i];
 		}
 	}
-	printf("%d\n%d\n",m1,m2);
+	my_printf("%d\n%d\n",m1,m2);
 	return 0;
 }

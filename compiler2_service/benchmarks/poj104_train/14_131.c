@@ -14,10 +14,10 @@ int main_bench()
     struct student student[100001];
     int n,i,*p,k;
     p=(int *)calloc(100001,sizeof(int));
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%d %d %d",&student[i].id,&student[i].ch,&student[i].math);
+                    my_scanf("%d %d %d",&student[i].id,&student[i].ch,&student[i].math);
                     (*(p+i))=(student[i].ch+student[i].math);
                     
     }
@@ -50,7 +50,7 @@ void shuchu(int *p,int n,int k,struct student student[100001])
                      if((*(p+i))==k)
                      {
                                    
-                                   printf("%d %d\n",student[i].id,k);
+                                   my_printf("%d %d\n",student[i].id,k);
                                    (*(p+i))=0;
                                    break;
                      }

@@ -8,10 +8,10 @@ int main_bench()
     int n, i, j;
     
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0; i<n; i++) {
         for (j=0; j<n; j++) {
-            scanf("%d", &a[i][j]);
+            my_scanf("%d", &a[i][j]);
         }
     }
     
@@ -44,6 +44,6 @@ int main_bench()
     }
     
     area=(x2-x1-1)*(y2-y1-1);
-    printf("%d", area);
+    my_printf("%d", area);
     return 0;
 }

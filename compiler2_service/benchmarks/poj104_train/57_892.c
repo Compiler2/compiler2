@@ -3,11 +3,11 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char str[100][100];
 int i;
 for(i=0;i<n;i++)
-scanf("%s",str[i]);
+my_scanf("%s",str[i]);
 for(i=0;i<n;i++)
 {
 if(str[i][strlen(str[i])-1]=='r'&&str[i][strlen(str[i])-2]=='e')
@@ -19,7 +19,7 @@ str[i][strlen(str[i])-3]='\0';
 }
 
 for(int j=0;j<n;j++)
-printf("%s\n",str[j]);
+my_printf("%s\n",str[j]);
 
 return 0;
 }

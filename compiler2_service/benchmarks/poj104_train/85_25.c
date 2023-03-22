@@ -5,10 +5,10 @@ int main_bench()
 	int n,i;
 	char a[100];
 	int m=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		int j=1;
 		if((a[0]>=65&&a[0]<=90)||(a[0]>=97&&a[0]<=122)||a[0]==95)
 		{
@@ -22,12 +22,12 @@ int main_bench()
 				j++;
 			}
 			if(m==1)
-				printf("yes\n");
+				my_printf("yes\n");
 			if(m==0)
-				printf("no\n");
+				my_printf("no\n");
 		}
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

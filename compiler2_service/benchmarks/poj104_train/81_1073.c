@@ -21,19 +21,19 @@ int main_bench()
 	int i,j,flag,n,m;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(a+i)+j);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",*(a+i)+j);
+	my_scanf("%d %d",&n,&m);
 	flag=f(n,m,a);
 	if(flag==0)
-		printf("error\n");
+		my_printf("error\n");
 	else
 	{
 		for(i=0;i<5;i++)
 			for(j=0;j<5;j++)
 			{
-				printf("%d",a[i][j]);
-				if(j==4) printf("\n");
-				else printf(" ");
+				my_printf("%d",a[i][j]);
+				if(j==4) my_printf("\n");
+				else my_printf(" ");
 			}
 	}
 	return 0;

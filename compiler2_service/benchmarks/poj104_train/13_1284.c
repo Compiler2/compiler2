@@ -9,11 +9,11 @@ int main_bench()
 	}
 	a[20000];
 	int n,i,j,count;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	count=n;
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i].num);
+		my_scanf("%d",&a[i].num);
 		a[i].status=1;
 	}
 	for (i=0;i<n;i++)
@@ -32,13 +32,13 @@ int main_bench()
 	{
 		if (a[i].status && j!=count-1)
 		{
-			printf("%d ",a[i].num);
+			my_printf("%d ",a[i].num);
 			j++;
 			continue;
 		}
 		if (a[i].status && j==count-1)
 		{
-			printf("%d\n",a[i].num);
+			my_printf("%d\n",a[i].num);
 			break;
 		}
 	}

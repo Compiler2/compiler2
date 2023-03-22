@@ -4,7 +4,7 @@ int main_bench()
 {
     int la,lb,i,j,n,k,x,p;
 	char a[100],b[100],c[100],d[100];
-	scanf("%s %s %s",a,b,d);
+	my_scanf("%s %s %s",a,b,d);
 	la=strlen(a);
 	lb=strlen(b);
 	n=la-lb;
@@ -35,7 +35,7 @@ int main_bench()
 	}
 
 
-printf("%s",a);
+my_printf("%s",a);
 				return 0;
 	
 }

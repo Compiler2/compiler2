@@ -5,7 +5,7 @@ int main_bench()
 int y,m,d,hh;
 int pn,rn,sum;
 int a,b,c,nianq;
-scanf("%d%d%d",&y,&m,&d);
+my_scanf("%d%d%d",&y,&m,&d);
 a=(y-1)/4;
 b=(y-1)/100;
 c=(y-1)/400;
@@ -42,12 +42,12 @@ else
 	if(m==12){hh=334+d;}
 }
 sum=(hh+nianq)%7;
-if(sum==0){printf("Sun.");}
-if(sum==1){printf("Mon.");}
-if(sum==2){printf("Tue.");}
-if(sum==3){printf("Wed.");}
-if(sum==4){printf("Thu.");}
-if(sum==5){printf("Fri.");}
-if(sum==6){printf("Sat.");}
+if(sum==0){my_printf("Sun.");}
+if(sum==1){my_printf("Mon.");}
+if(sum==2){my_printf("Tue.");}
+if(sum==3){my_printf("Wed.");}
+if(sum==4){my_printf("Thu.");}
+if(sum==5){my_printf("Fri.");}
+if(sum==6){my_printf("Sat.");}
 return 0;
 }

@@ -8,8 +8,8 @@ int main_bench()
 	double f, g;
 	a=0;
 	d=0;
-	scanf("%lf", &f);
-	scanf("%s%s", sen[0], sen[1]);
+	my_scanf("%lf", &f);
+	my_scanf("%s%s", sen[0], sen[1]);
 	for(i=0; i<2&&d==0; i++)
 	{
 		for(j=0; j<strlen(sen[i])&&d==0; j++)
@@ -29,15 +29,15 @@ int main_bench()
 			}
 			g=1.0*a/strlen(sen[0]);
 			if(g>=f)
-				printf("yes");
+				my_printf("yes");
 			else
-				printf("no");
+				my_printf("no");
 	}
 	else
-		printf("error");
+		my_printf("error");
 	}
 	else
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 

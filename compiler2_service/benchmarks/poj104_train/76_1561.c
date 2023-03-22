@@ -7,9 +7,9 @@ int i,n,m,s,p,q=1;
 for(i=0;i<10001;i++){
 	c[i]=1;
 }
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-    scanf("%d%d",&a[i],&b[i]);
+    my_scanf("%d%d",&a[i],&b[i]);
 	for(m=a[i];m<b[i];m++){
 	c[m]=0;
 	}
@@ -33,9 +33,9 @@ for(i=s;i<p;i++){
 	}
 }
 if(q==0){
-	printf("no");
+	my_printf("no");
 }else{
-    printf("%d %d",s,p);
+    my_printf("%d %d",s,p);
 }
 
 		return 0;

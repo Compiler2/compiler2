@@ -31,7 +31,7 @@ int main_bench()
 		if(a[i]!=0) {r=i; break;}
 
     for(i=r;i<=k;i++)  
-	printf("%d",a[i]);
-	printf("\n");
+	my_printf("%d",a[i]);
+	my_printf("\n");
 
 }

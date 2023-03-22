@@ -28,11 +28,11 @@ int main_bench()
 	}
 	if(t!=-2){
 		for(i=0;i<t;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
-	printf("%s",b);
+	my_printf("%s",b);
 		for(i=t+lengthb;i<lengths;i++){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	else{

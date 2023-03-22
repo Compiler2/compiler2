@@ -4,9 +4,9 @@ int main_bench()
 {
     char s0[257],s1[257],s2[257];
     int i,j,k0,k1,k2,l;
-    scanf("%s",s0);
-    scanf("%s",s1);
-    scanf("%s",s2);
+    my_scanf("%s",s0);
+    my_scanf("%s",s1);
+    my_scanf("%s",s2);
     for(i=0;s0[i]!='\0';i++)
     {
         j=0;
@@ -29,7 +29,7 @@ int main_bench()
     l=0;
     while(s0[l]!='\0')
     {
-        printf("%c",s0[l]);
+        my_printf("%c",s0[l]);
         l++;
     }
 

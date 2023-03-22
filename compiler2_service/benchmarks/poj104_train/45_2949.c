@@ -4,8 +4,8 @@ int main_bench()
 {
 	char str1[100],str2[100];
 	int n,m,i,j,index=1;
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	for(i=0;i<strlen(str2);i++)
 	{
 		if(str1[0]==str2[i])
@@ -17,7 +17,7 @@ int main_bench()
 			}
 			if(index=strlen(str1))
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				return 0;
 			}
 		}

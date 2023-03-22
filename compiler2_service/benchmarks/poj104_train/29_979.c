@@ -5,14 +5,14 @@ double F(int r);
 int main_bench(){    
 	int m,n[100],i,r;
 	double result;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
     for(i=0;i<m;i++){
 		r=n[i];
 		result=F(r);
-		printf("%.3lf\n",result);
+		my_printf("%.3lf\n",result);
 	}
 	return 0;
 }

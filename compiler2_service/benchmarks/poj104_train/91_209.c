@@ -16,7 +16,7 @@ int main_bench()
 	*(s1+n-1)=(char)(*s+*(s+n-1));
 	for(i=0;i<n;i++)
 	{
-		printf("%c",*(s1+i));
+		my_printf("%c",*(s1+i));
 	}
 	return 0;
 }

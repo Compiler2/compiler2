@@ -4,10 +4,10 @@ int main_bench()
 {
 	int x[100][100];
 	int h,l,i,j,d=0,maxh,minl,y,p=0;
-	scanf("%d,%d",&h,&l);
+	my_scanf("%d,%d",&h,&l);
 	for(i=0;i<h;i++){
 		for(j=0;j<l;j++){
-			scanf("%d",&x[i][j]);}}
+			my_scanf("%d",&x[i][j]);}}
 			
 	for(i=0;i<h;i++){
 		y=0;
@@ -22,13 +22,13 @@ int main_bench()
 		if(x[maxh][minl]>x[m][minl])
 			y++;}
 		if(y==0)
-			printf("%d+%d",maxh,minl);
+			my_printf("%d+%d",maxh,minl);
 	         break;
 	}
 	                        
 	
 if(y>0)
-		printf("No");
+		my_printf("No");
 	return 0;
 }
 	

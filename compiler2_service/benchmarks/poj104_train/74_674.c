@@ -31,20 +31,20 @@ int p(int n)
 int main_bench()
 {
 	int i,m,n,t=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(k(i)==1&&p(i)==1)
 		{
 			t++;
 			if(t==1)
-			printf("%d",i);
+			my_printf("%d",i);
 			else
-				printf(",%d",i);
+				my_printf(",%d",i);
 		}
 	}
 	if(t==0)
-		printf("no");
+		my_printf("no");
 }
 
 

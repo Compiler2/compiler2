@@ -5,29 +5,29 @@ int main_bench()
 {
 	int n;
 	int t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n % 3==0){
-		printf("%d",3);
+		my_printf("%d",3);
 		t++;
 	}
     if (n % 5==0){
 		if (t){
-			printf(" ");
+			my_printf(" ");
 		}
-		printf("5");
+		my_printf("5");
 		t++;
 	}
 	if (n % 7==0){
         if (t){
-			printf(" ");
+			my_printf(" ");
 		}
-		printf("%d",7);
+		my_printf("%d",7);
 		t++;
 	}
 	if (t==0){
-		printf("n");
+		my_printf("n");
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

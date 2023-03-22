@@ -6,8 +6,8 @@ int main_bench()
 	int y1,m1,d1,y2,m2,d2,a,i,gap,y;
 	int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};	
 	
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	gap=0;
 
 	if(y1>y2){
@@ -46,7 +46,7 @@ int main_bench()
 	}
 	gap+=d2;
 
-	printf("%d",gap);
+	my_printf("%d",gap);
 
 	return 0;
 }

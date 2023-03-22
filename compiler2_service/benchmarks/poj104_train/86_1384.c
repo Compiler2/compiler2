@@ -3,13 +3,13 @@
 
 int main_bench(){
 	int i,j,k=0,n,nt,total,flag;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		flag = 0;
 		for(j=0;j<=n;j++){
 			if(j<n){
-				scanf("%d",&nt);
+				my_scanf("%d",&nt);
 				if((nt+3*j)>=57&&(nt+3*j)<=60){
 					total = nt;
 					flag = 1;
@@ -27,6 +27,6 @@ int main_bench(){
 				}
 			}
 		}
-		printf("%d\n",total);
+		my_printf("%d\n",total);
 	}
 }

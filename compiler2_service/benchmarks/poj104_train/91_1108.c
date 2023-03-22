@@ -28,7 +28,7 @@ int main_bench()
 
 	for(i=0;i<n;i++)
 	{
-		printf("%c",qin[i]);
+		my_printf("%c",qin[i]);
 	}
 	return 0;
 }

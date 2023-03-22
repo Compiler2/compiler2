@@ -8,8 +8,8 @@ int main_bench()
     char *a=(char *)malloc(sizeof(char)*100);
     char *b=(char *)malloc(sizeof(char)*100);
     gets(x);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     int length=strlen(x);
     int l1=strlen(a);
     int l2=strlen(b);
@@ -57,7 +57,7 @@ int main_bench()
             yc++;
         }
     }
-    printf("%s\n",y);
+    my_printf("%s\n",y);
 
     return 0;
 }

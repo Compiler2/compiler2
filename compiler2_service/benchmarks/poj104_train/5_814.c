@@ -3,11 +3,11 @@
 int main_bench(){
     double rate,result;
     int p=2,num=0;
-    scanf("%lf\n",&rate);
+    my_scanf("%lf\n",&rate);
     char dna1[510],dna2[510];
-    scanf("%s",dna1);
-    scanf("\n");
-    scanf("%s",dna2);
+    my_scanf("%s",dna1);
+    my_scanf("\n");
+    my_scanf("%s",dna2);
         for(int i=0;i<strlen(dna1);i++){
         if((dna1[i]!='A'&&dna1[i]!='T'&&dna1[i]!='C'&&dna1[i]!='G')||(dna2[i]!='A'&&dna2[i]!='T'&&dna2[i]!='C'&&dna2[i]!='G')){
             p=0;
@@ -26,10 +26,10 @@ int main_bench(){
         }
         result=1.0*num/strlen(dna1);
         if(result>=rate){
-            printf("yes");
-        }else printf("no");
+            my_printf("yes");
+        }else my_printf("no");
     }
     if(p==0)
-        printf("error");
+        my_printf("error");
     return 0;
 }

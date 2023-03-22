@@ -5,7 +5,7 @@ main_bench()
 	int matrix[5][5];
 	for (int i=0;i<=4;i++)
 		for (int m=0;m<=4;m++)
-			scanf ("%d",&matrix[i][m]);
+			my_scanf ("%d",&matrix[i][m]);
 	int c=0;
 	for (int n=0;n<=4;n++)
 		for (int l=0;l<=4;l++)
@@ -28,11 +28,11 @@ main_bench()
 					}
 				if (max==matrix[n][l]&&min==matrix[n][l])
 				{
-				printf("%d %d %d",n+1,l+1,max);
+				my_printf("%d %d %d",n+1,l+1,max);
 				c++;
 			    }
 			} 
 	if (c==0)
-	printf ("not found");
+	my_printf ("not found");
 		
 }

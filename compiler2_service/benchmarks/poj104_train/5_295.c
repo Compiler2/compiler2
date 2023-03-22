@@ -7,8 +7,8 @@ int main_bench()
 	int y=0;
 	int i;
 	char a[501],b[501];
-	scanf("%lf",&x);
-         scanf("%s\n%s",a,b);
+	my_scanf("%lf",&x);
+         my_scanf("%s\n%s",a,b);
 	for(i=0;a[i];i++){
 		if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C'){
 			y++;
@@ -24,16 +24,16 @@ int main_bench()
 	}if(m!=n){
 		y++;
 	}if(y!=0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;a[i];i++){
 			if(a[i]==b[i]){
 				z++;
 			}
 		}if(z/n>x){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

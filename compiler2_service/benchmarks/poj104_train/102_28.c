@@ -7,10 +7,10 @@ int main_bench()
 	int n,i,j=0,w=0,k;
 	float b[40],c[40],d[40],e;
 	char a[40][7];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%f",a[i],&b[i]);
+		my_scanf("%s%f",a[i],&b[i]);
 		if(strcmp(a[i],"male")==0)
 		{
 			c[j]=b[i];
@@ -47,10 +47,10 @@ for(k=1;k<=w;k++)
 		}
 	}
 }
-printf("%.2f",c[0]);
+my_printf("%.2f",c[0]);
 for(i=1;i<j;i++)
-{printf(" %.2f",c[i]);}
+{my_printf(" %.2f",c[i]);}
 for(i=0;i<w;i++)
-{printf(" %.2f",d[i]);}
+{my_printf(" %.2f",d[i]);}
 return 0;
 }

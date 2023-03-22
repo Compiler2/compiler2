@@ -15,8 +15,8 @@ int main_bench()
 		      {a[4]=m;
 			  if(pai(a)==1)
 			    {for(t=0;t<5;t++)
-				   {printf("%d",a[t]);
-				     if(t<4) printf(" ");
+				   {my_printf("%d",a[t]);
+				     if(t<4) my_printf(" ");
 				   }
 				   break;
 				   

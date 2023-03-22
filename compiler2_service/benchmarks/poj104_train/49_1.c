@@ -10,8 +10,8 @@ int main_bench()
 	for (i=2; i<=len; i++) 
 		for (j=0; j<=len-i; j++)
 			if (comp(j,i)==1) {
-				for (p=j; p<=j+i-1; p++) printf("%c",s[p]);
-				printf("\n");
+				for (p=j; p<=j+i-1; p++) my_printf("%c",s[p]);
+				my_printf("\n");
 			}
 	return 0;
 }

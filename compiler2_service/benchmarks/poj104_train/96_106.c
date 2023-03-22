@@ -16,7 +16,7 @@ main_bench()
                      q[k]=0;
                      }
 
-                     scanf("%s",a); 
+                     my_scanf("%s",a); 
                      for(j=0;;j++)
                      if (a[j]=='\0') break;
                      l=j;
@@ -38,39 +38,39 @@ main_bench()
                      }
                      r=b[j-1];
                      
-                     if (q[0]=='0' && q[1]=='\0') printf("0\n");
-                     if (q[0]=='0' && q[1]=='0' && q[2]=='\0') printf("0\n");
+                     if (q[0]=='0' && q[1]=='\0') my_printf("0\n");
+                     if (q[0]=='0' && q[1]=='0' && q[2]=='\0') my_printf("0\n");
                      if (q[0]=='0' && q[1]=='0' && q[2]!='\0') 
                      {
                                    j=2;
                                    while(q[j]!='\0') 
                                    {
-                                                     printf("%c",q[j]);
+                                                     my_printf("%c",q[j]);
                                                      j++;
                                    }
-                                   printf("\n");
+                                   my_printf("\n");
                      }
                      if (q[0]=='0' && q[1]!='0' && q[1]!='\0') 
                      {
                                    j=1;
                                    while(q[j]!='\0') 
                                    {
-                                                     printf("%c",q[j]);
+                                                     my_printf("%c",q[j]);
                                                      j++;
                                    }
-                                   printf("\n");
+                                   my_printf("\n");
                      }
                      if(q[0]!='0')
                      {
                                    j=0;
                                    while(q[j]!='\0')
                                     {
-                                                     printf("%c",q[j]);
+                                                     my_printf("%c",q[j]);
                                                      j++;
                                    }
-                                   printf("\n");
+                                   my_printf("\n");
                      }
                      
-                     printf("%d\n",r);                     
+                     my_printf("%d\n",r);                     
       
 }

@@ -5,20 +5,20 @@ int huiwen(int s);
 main_bench()
 {
       int m,n,num=0,i;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=m;i<=n;i++)
       {
                if((sushu(i)==0)&&(huiwen(i)==0))
                {
                     num++;
                     if(num==1)
-                    printf("%d",i);
+                    my_printf("%d",i);
                     else
-                    printf(",%d",i);
+                    my_printf(",%d",i);
                }    
       }
       if(num==0)
-      printf("no\n");
+      my_printf("no\n");
       getchar();
       getchar();
 }

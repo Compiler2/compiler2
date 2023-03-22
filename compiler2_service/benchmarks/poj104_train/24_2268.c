@@ -30,11 +30,11 @@ int main_bench()
 	{
 		if(x[i+1]>x[y]) y=i+1;
 	}
-	printf("%s\n",b[y]);
+	my_printf("%s\n",b[y]);
 	y=1;
 	for(i=1;i<s;i++)
 	{
 		if(x[i+1]<x[y]) y=i+1;
 	}
-	printf("%s\n",b[y]);
+	my_printf("%s\n",b[y]);
 }

@@ -6,7 +6,7 @@ int main_bench()
 {
     char worda[51], wordb[51];
     
-    scanf("%s%s", worda, wordb);
+    my_scanf("%s%s", worda, wordb);
     int i,j;
     i=0;
     while(i<strlen(wordb))
@@ -23,7 +23,7 @@ int main_bench()
                                           break;
                       i++;
                                           }
-    printf("%d", i-j);
+    my_printf("%d", i-j);
     return 0;
 }     
 

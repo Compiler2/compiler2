@@ -26,12 +26,12 @@ for(k=0;a[k]!='\0';k++){
 	  }
 	}
 	if(x==0){
-		printf("NO");
+		my_printf("NO");
 		break;
 	}
-if(a[k+1]=='\0')printf("YES");
+if(a[k+1]=='\0')my_printf("YES");
   }
 }else{
-	printf("NO");
+	my_printf("NO");
 }
 }

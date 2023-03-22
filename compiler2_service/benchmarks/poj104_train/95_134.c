@@ -13,18 +13,18 @@ int main_bench()
 		if(str2[i]<97)str2[i]=str2[i]+32;
 		if(str1[i]<str2[i])
 		{
-			printf("<");
+			my_printf("<");
 			n=1;
 			break;
 		}
 		if(str1[i]>str2[i])
 		{
-			printf(">");
+			my_printf(">");
 			n=1;
 			break;
 		}
 	}
-	if(n==0)printf("=");
+	if(n==0)my_printf("=");
 	return 0;
 }
 

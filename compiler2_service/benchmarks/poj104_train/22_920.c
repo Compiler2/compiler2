@@ -6,7 +6,7 @@ int main_bench()
     int num[300];
     int i=0,j=0,s=1,k=0,m=0;
     int a,b;
-    scanf("%s",c);
+    my_scanf("%s",c);
     do
     {
         if(c[i]!=','&&c[i]!='\0')
@@ -42,9 +42,9 @@ int main_bench()
         b=(b<num[k])? num[k]:b;
     }                              
     if(b==-1)
-		printf("No");
+		my_printf("No");
     else 
-		printf("%d",b);
+		my_printf("%d",b);
     
     
 }

@@ -7,10 +7,10 @@ int i;
 int min=10000,max=-1,total=0;
 int main_bench()
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		if(num[i]<min)
 			min=num[i];
 		if(num[i]>max)
@@ -18,12 +18,12 @@ int main_bench()
 		total+=num[i];
 	}
 	if(total-min*n==max*n-total)
-		printf("%d,%d\n",min,max);
+		my_printf("%d,%d\n",min,max);
 	else
 		if(total-min*n<max*n-total)
 		{
-			printf("%d\n",max);
+			my_printf("%d\n",max);
 		}
 		else if(total-min*n>max*n-total)
-			printf("%d\n",min);
+			my_printf("%d\n",min);
 }

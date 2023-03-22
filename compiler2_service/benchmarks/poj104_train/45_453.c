@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,athena,zeus;
 	char a[50],b[50],*pa,*pb; 
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	pa=a;pb=b;
     athena=0;
     for(i=0;i<strlen(b)&&athena!=1;i++,pb++)
@@ -20,6 +20,6 @@ int main_bench()
 			pa=a;pb=&b[i];
 		}
 		if(athena)
-			printf("%d",i);
+			my_printf("%d",i);
 	}
 }

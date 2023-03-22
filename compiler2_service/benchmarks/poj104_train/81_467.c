@@ -7,20 +7,20 @@ int main_bench()
     int i,j,t,m,n;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-		scanf("%d %d",&m,&n);
+			my_scanf("%d",&a[i][j]);
+		my_scanf("%d %d",&m,&n);
 		t=change(a,m,n);
        if(t==1)
 		  	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
 			if(j==4)
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 			else
-				printf("%d ",a[i][j]);
+				my_printf("%d ",a[i][j]);
 		}
 		if(t==0)
-			printf("error");
+			my_printf("error");
 }	
 
 int change(int a[5][5],int m,int n)

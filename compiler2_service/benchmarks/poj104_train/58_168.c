@@ -5,7 +5,7 @@ int main_bench()
 {
     int n,i=0,sum;
     char c[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     gets(c);
     char a[n][81];
     for (i=0;i<n;i++)
@@ -30,9 +30,9 @@ int main_bench()
               sum=sum+1;
           }
           if (sum!=0)
-          printf("1\n");
+          my_printf("1\n");
           else 
-          printf("0\n");
+          my_printf("0\n");
     }
 
 }

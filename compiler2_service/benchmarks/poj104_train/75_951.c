@@ -4,7 +4,7 @@ int main_bench()
 {
 	int x[1010]={0},y[1010]={0},i=0,a=0,k=0,b=0,j,g[1010]={0},max;
 	char str1[100000],str2[100000];
-	scanf("%s",str1);
+	my_scanf("%s",str1);
 	while(str1[i]!='\0')
 	{
 		if(str1[i]!=',')
@@ -13,7 +13,7 @@ int main_bench()
 		i++;
 	}
 	i=0;
-	scanf("%s",str2);
+	my_scanf("%s",str2);
 	while(str2[i]!='\0')
 	{
 		if(str2[i]!=',')
@@ -21,7 +21,7 @@ int main_bench()
 		else b++;
 		i++;
 	}
-	printf("%d ",a+1);
+	my_printf("%d ",a+1);
 
 for(i=0;i<a+1;i++)
     for(j=x[i];j<y[i];j++)
@@ -31,6 +31,6 @@ for(i=0;i<a+1;i++)
 	for(i=0;i<1010;i++)
    if(g[i]>max)
 	   max=g[i];
-	printf("%d",max);
+	my_printf("%d",max);
 }
         

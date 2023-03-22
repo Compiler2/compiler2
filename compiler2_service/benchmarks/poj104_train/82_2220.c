@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i=0,h[100],l[100],t[101]={-1,0},len[100],j=0;
 	int max=0,r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&h[i],&l[i]);
+		my_scanf("%d%d",&h[i],&l[i]);
 	}
 	i=0;
 	while(h[i],l[i])
@@ -24,6 +24,6 @@ int main_bench()
 		if(len[max]<len[r])
 			max=r;
 	}
-	printf("%d",len[max]);
+	my_printf("%d",len[max]);
 	return 0;
 }

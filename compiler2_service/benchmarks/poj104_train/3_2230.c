@@ -3,9 +3,9 @@
 int main_bench(){
 	int sz[1100];
 	int n,k,i,j,x;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -15,10 +15,10 @@ int main_bench(){
 		if(x==k)break;
 	}
 	
-	   if(x==k) printf("yes\n");
+	   if(x==k) my_printf("yes\n");
 	
 	if(x!=k)
-		printf("no\n");
+		my_printf("no\n");
 	return 0;
 
 }

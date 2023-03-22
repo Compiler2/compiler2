@@ -9,5 +9,5 @@ int main_bench()
 	for(p=s;p<s+strlen(s);p++)
 		*p+=*(p+1);
 	*(p-1)='\0';
-	printf("%s",s);
+	my_printf("%s",s);
 }

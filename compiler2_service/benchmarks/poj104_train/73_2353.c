@@ -5,7 +5,7 @@ int main_bench()
 	int a[5][5],i,j,m,n,t,k,l,p,z=1;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(m=0;m<5;m++)
 	{
 		t=a[m][0];
@@ -27,9 +27,9 @@ int main_bench()
 			}
 		}
 		if(k){
-			printf("%d %d %d",m+1,p+1,a[m][p]);z=0;}
+			my_printf("%d %d %d",m+1,p+1,a[m][p]);z=0;}
 	}
 	if(z)
-		printf("not found");
+		my_printf("not found");
 	return 0;
 }

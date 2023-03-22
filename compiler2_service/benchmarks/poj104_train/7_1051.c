@@ -3,9 +3,9 @@
 int main_bench()
 {
 	char a[256],b[256],c[256];
-	scanf("%s",a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
 	int lenth1,lenth2,i,j,t;
 	lenth1=strlen(a);
 	lenth2=strlen(b);
@@ -31,5 +31,5 @@ int main_bench()
 	for(j=0;j<lenth2;j++,i++)
 		a[i]=c[j];
 	for(i=0;i<lenth1;i++)
-	printf("%c",a[i]);
+	my_printf("%c",a[i]);
 }

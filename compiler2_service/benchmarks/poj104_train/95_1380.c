@@ -12,7 +12,7 @@ int main_bench()
         if(s2[i]>='A'&&s2[i]<='Z') s2[i]=s2[i]-'A'+'a';
     if(l1>l2) l1=l2;
     while(t<l1&&s1[t]==s2[t]) t++;
-    if(s1[t]>s2[t]) printf(">");
-        else if(s1[t]<s2[t]) printf("<");
-            else printf("=");
+    if(s1[t]>s2[t]) my_printf(">");
+        else if(s1[t]<s2[t]) my_printf("<");
+            else my_printf("=");
 }

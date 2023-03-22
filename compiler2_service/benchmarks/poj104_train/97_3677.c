@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n, x, a, b, c, d, e, f;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	x=n;
 	a=0;
 	b=0;
@@ -38,6 +38,6 @@ int main_bench()
 		e=e+1;
 	}
 	f=x;
-	printf("%d\n%d\n%d\n%d\n%d\n%d", a, b, c, d, e, f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d", a, b, c, d, e, f);
 	return 0;
 }

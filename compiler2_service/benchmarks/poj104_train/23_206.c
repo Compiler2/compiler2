@@ -32,8 +32,8 @@ int main_bench()
 	}
 	for(i=word;i>=0;i--)
 	{
-		printf("%s",s1[i]);
-		if(i!=0)printf("%s",kong[i-1]);
+		my_printf("%s",s1[i]);
+		if(i!=0)my_printf("%s",kong[i-1]);
 	}
 
 

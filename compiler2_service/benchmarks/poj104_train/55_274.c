@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],f[100],p;
 	int n,m,i,k=-1,sum=1,s=0,b[100],j,msum=0;
-	scanf("%d %s %d",&n,a,&m);
+	my_scanf("%d %s %d",&n,a,&m);
 	for(i=0;a[i]!='\0';i++){
 		k++;
 	}
@@ -46,9 +46,9 @@ int main_bench()
 	else if(msum>=10&&msum<36){
 		p=msum+55;
 	}
-	printf("%c",p);
+	my_printf("%c",p);
 	for(i=s-1;i>=0;i--){
-	    printf("%c",f[i]);
+	    my_printf("%c",f[i]);
 	}
 	return 0;
 }

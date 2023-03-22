@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(j=0;j<100;j++)
 		{
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 			if((a[i][j]==' ')||(a[i][j]=='\n'))
 				break;
 		}
@@ -25,11 +25,11 @@ int main_bench()
 	{
 		for(j=0;j<=(strlen(a[i])-1);j++)
 		{
-			printf("%c",a[i][j]);
+			my_printf("%c",a[i][j]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(j=0;j<=(strlen(a[i])-1);j++)
-	printf("%c",a[0][j]);
+	my_printf("%c",a[0][j]);
 	return 0;
 }

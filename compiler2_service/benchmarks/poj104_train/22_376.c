@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[350];
 	int a[110],i=0,num=0,same=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	a[0]=0;
           
 	
@@ -19,8 +19,8 @@ int main_bench()
 {
    if(a[i]==a[0]) same++;
 }
-           if(num==0) printf("No");
-         else if(same==num+1) printf("No");
+           if(num==0) my_printf("No");
+         else if(same==num+1) my_printf("No");
    else
 {
 	int max=0,secmax=0;
@@ -36,7 +36,7 @@ int main_bench()
 	{
 		if(a[i]>=secmax) secmax=a[i];
 	}
-	printf("%d",secmax);
+	my_printf("%d",secmax);
        }	
 	
   

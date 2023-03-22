@@ -3,22 +3,22 @@
 int main_bench(){
 	int n,i,j,count;
 	char dna[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(dna);
 	for(i=0;i<n;i++){
 		gets(dna);
 		count=strlen(dna);
 		for(j=0;j<count;j++){
 			if(dna[j]=='A')
-				printf("T");
+				my_printf("T");
 			else if(dna[j]=='T')
-				printf("A");
+				my_printf("A");
 			else if(dna[j]=='C')
-				printf("G");
+				my_printf("G");
 			else if(dna[j]=='G')
-				printf("C");
+				my_printf("C");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

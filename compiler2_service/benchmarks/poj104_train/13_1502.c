@@ -3,10 +3,10 @@
 int main_bench()
 {
 int a[10000],i,j,n,t,count;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 }
 for(i=0;i<n;i++)
 {t=0;count=0;
@@ -18,10 +18,10 @@ for(i=0;i<n;i++)
 	}
 	if(t==0&&count==1)
 	{
-		printf("%d",a[i]);}
+		my_printf("%d",a[i]);}
 	else if((t==0)&&(count!=1)) 
 	{
-        printf(" %d",a[i]);
+        my_printf(" %d",a[i]);
 	}
      
 } 

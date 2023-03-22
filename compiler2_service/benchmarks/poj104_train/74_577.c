@@ -6,23 +6,23 @@ int main_bench()
 {
     int m,n,i;
     int first=1,flag=1;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
     {
          if(hui(i)&&sushu(i))
          {
               if(first)
               {
-                  printf("%d",i);
+                  my_printf("%d",i);
                   first=0;
                }
                else
-               printf(",%d",i);
+               my_printf(",%d",i);
                flag=0;
          }
     }
     if(flag)
-    printf("no");
+    my_printf("no");
     return 0;
 }
 int hui(int n)

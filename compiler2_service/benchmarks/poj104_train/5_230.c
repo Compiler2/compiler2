@@ -5,20 +5,20 @@ int main_bench(){
 	double jg,bl;
 	char a[2][501];
 
-	scanf("%lf",&bl);
+	my_scanf("%lf",&bl);
 	for(i=0;i<2;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	l0=strlen(a[0]);
     l1=strlen(a[1]);
 	if(l1!=l0){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(j=0;j<2;j++){
         for(i=0;i<l1;i++){
 		    if((a[j][i]!='A')&&(a[j][i]!='T')&&(a[j][i]!='C')&&(a[j][i]!='G')){
-			   printf("error");
+			   my_printf("error");
 			   return 0;
 			}
 		}
@@ -30,9 +30,9 @@ int main_bench(){
 	}
 	jg=1.0*js/l1;
 	if(jg>bl){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

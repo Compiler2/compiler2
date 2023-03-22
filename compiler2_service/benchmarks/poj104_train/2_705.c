@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct writer{
 		int sum;
 		char c;
@@ -15,7 +15,7 @@ int main_bench()
 	int i,j,k;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&data[i].id,&data[i].name);
+		my_scanf("%d%s",&data[i].id,&data[i].name);
 		for(j=0;data[i].name[j]!='\0';j++)
         {
 			for(k=0;k<26;k++)
@@ -35,13 +35,13 @@ int main_bench()
 			lit[i]=tmp;
 		}
 	}
-	printf("%c\n%d\n",lit[25].c,lit[25].sum);
+	my_printf("%c\n%d\n",lit[25].c,lit[25].sum);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;data[i].name[j]!='\0';j++)
 		{
 			if(data[i].name[j]==lit[25].c)
-				printf("%d\n",data[i].id);
+				my_printf("%d\n",data[i].id);
 		}
 	}
 	return 0;

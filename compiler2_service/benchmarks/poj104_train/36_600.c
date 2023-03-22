@@ -7,7 +7,7 @@ int main_bench()
 	char a[100],b[100];
 	int x[2][52]={0};
 
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 
 	for(i=0;i<(signed)strlen(a);i++)
 	{
@@ -34,8 +34,8 @@ int main_bench()
 		}
 	}
 	if(u==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }
 

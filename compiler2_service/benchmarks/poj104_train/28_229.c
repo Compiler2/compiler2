@@ -24,10 +24,10 @@ int main_bench()
     for(k=0;k<i-1;k++)
 	{
 	
-		printf("%d,",l[k]+1);
+		my_printf("%d,",l[k]+1);
 		
 	}
-	printf("%d\n",l[i-1]+1);
+	my_printf("%d\n",l[i-1]+1);
     
 	}
 

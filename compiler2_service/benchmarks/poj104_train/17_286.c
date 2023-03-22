@@ -6,7 +6,7 @@ int main_bench()
 	char kuohao[101]={0};
 	int i,j,len;
 	char ch;
-	while(scanf("%s",s)>0){
+	while(my_scanf("%s",s)>0){
 		for(i=0; ;i++){
 			if(s[i]=='(') kuohao[i]=1;
 			else if(s[i]==')'){
@@ -20,14 +20,14 @@ int main_bench()
 			}
 			else if(s[i]=='\0') break;
 		}
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 	len=strlen(s);
 	for(i=0;i<len;i++){
-		if(kuohao[i]==0) printf(" ");
-		else if(kuohao[i]==1) printf("$");
-		else if(kuohao[i]==3) printf("?");
+		if(kuohao[i]==0) my_printf(" ");
+		else if(kuohao[i]==1) my_printf("$");
+		else if(kuohao[i]==3) my_printf("?");
 	} 
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<len;i++) kuohao[i]=0;
 	}
 	return 0;

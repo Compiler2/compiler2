@@ -11,9 +11,9 @@ struct student
 int main_bench()
 {
 	int i,n,max1=0,max2=0,max3=0,fir,sec,thi;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d %d %d",&stu[i].num,&stu[i].yw,&stu[i].sx);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].yw,&stu[i].sx);
 		stu[i].zong=stu[i].yw+stu[i].sx;
 		if(stu[i].zong>max1){
 			max3=max2;
@@ -33,9 +33,9 @@ int main_bench()
 		}
 	}
 
-	printf("%d %d\n",stu[fir].num,stu[fir].zong);
-	printf("%d %d\n",stu[sec].num,stu[sec].zong);
-	printf("%d %d\n",stu[thi].num,stu[thi].zong);
+	my_printf("%d %d\n",stu[fir].num,stu[fir].zong);
+	my_printf("%d %d\n",stu[sec].num,stu[sec].zong);
+	my_printf("%d %d\n",stu[thi].num,stu[thi].zong);
 	return 0;
 }
 

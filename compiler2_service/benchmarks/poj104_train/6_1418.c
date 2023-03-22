@@ -3,15 +3,15 @@
 int main_bench(){
 	int k,m,n,a,b,c,d;
 	c=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int sz[100][100];
 	int yi[100];
 	int er[100];
 	for(c=0;c<k;c++){
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
 	for(a=0;a<m;a++){
 		for(b=0;b<n;b++){
-			scanf("%d",&sz[a][b]);
+			my_scanf("%d",&sz[a][b]);
 		}
 	}
         d=0;
@@ -32,7 +32,7 @@ int main_bench(){
             d+=sz[b][n-1];
 		}
 
-		printf("%d\n",d);
+		my_printf("%d\n",d);
 		
 	}
 	return 0;

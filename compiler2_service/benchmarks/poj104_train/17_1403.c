@@ -6,9 +6,9 @@ main_bench()
     int i,j,n;
     for(;;)
     {
-    scanf("%s",c2);
+    my_scanf("%s",c2);
     if(c2[0]=='\n')break;
-    printf("%s\n",c2);
+    my_printf("%s\n",c2);
     for(i=0,n=0;c2[i]!='\0';i++)
     {
         if(c2[i]=='(') n=i;
@@ -29,11 +29,11 @@ main_bench()
     }
     for(i=0;c2[i]!='\0';i++)
     {
-        if(c2[i]=='(')printf("$");
-        else if(c2[i]==')')printf("?");
-        else printf(" ");
+        if(c2[i]=='(')my_printf("$");
+        else if(c2[i]==')')my_printf("?");
+        else my_printf(" ");
     }
-    printf("\n");
+    my_printf("\n");
     c2[0]='\n';
     }
 }

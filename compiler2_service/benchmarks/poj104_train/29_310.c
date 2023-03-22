@@ -8,14 +8,14 @@ int main_bench()
     int d[200];
     double m,n,sum=3.500;
     int k,i,j;
-    scanf("%d\n",&k);
+    my_scanf("%d\n",&k);
     for(j=0;j<k;j++){
-        scanf("%d\n",&(d[j]));
+        my_scanf("%d\n",&(d[j]));
         if(d[j]==1){
-           printf("2.000\n");
+           my_printf("2.000\n");
         }
        else if(d[j]==2){
-           printf("3.500\n");
+           my_printf("3.500\n");
         }
         else{
         for(i=3;i<=d[j];i++){
@@ -31,7 +31,7 @@ int main_bench()
         
         }
   
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
         sum=3.500;
      }
     }

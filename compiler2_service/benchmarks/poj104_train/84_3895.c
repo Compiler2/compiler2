@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n, i, k, sz[100],max,max1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<=n-1;i++){
-	scanf("%d\n", &(sz[i]));
+	my_scanf("%d\n", &(sz[i]));
 	}
 	max=max1=sz[0];
 		for(i=0; i<n; i++){
@@ -18,6 +18,6 @@ int main_bench()
             max1=sz[i];
 			}
 		}
-	printf("%d\n%d", max, max1);
+	my_printf("%d\n%d", max, max1);
 	return 0;
 }

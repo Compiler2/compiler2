@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,e,i,k;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int sz[n];
     e=0;
     while(e<n){
-        scanf("%d",&sz[e]);
+        my_scanf("%d",&sz[e]);
         e=e+1;
     }
     if(n%2==0){
@@ -20,10 +20,10 @@ int main_bench(){
         }
         e=0;
         while(e<n-1){
-            printf("%d ",sz[e]);
+            my_printf("%d ",sz[e]);
             e=e+1;
         }
-        printf("%d",sz[n-1]);
+        my_printf("%d",sz[n-1]);
     }else if(n%2==1){
         e=0;
         k=n-1;
@@ -36,10 +36,10 @@ int main_bench(){
         }
         e=0;
         while(e<n-1){
-            printf("%d ",sz[e]);
+            my_printf("%d ",sz[e]);
             e=e+1;
         }
-        printf("%d",sz[n-1]);
+        my_printf("%d",sz[n-1]);
     }
     return 0;
 }

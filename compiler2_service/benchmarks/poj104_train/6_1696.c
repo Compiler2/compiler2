@@ -6,13 +6,13 @@ b=0;
 c=0;
 d=0;
 e=0;
-scanf("%d",&k);
+my_scanf("%d",&k);
 
 for(a=0;a<k;a++){
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
     for(i=0;i<m;i++){
 	    for(j=0;j<n;j++){
-	    scanf("%d",&(sz[i][j]));
+	    my_scanf("%d",&(sz[i][j]));
 		}
 
 	}
@@ -33,7 +33,7 @@ d=0;
 e=0;
 }
 for(a=0;a<k;a++){
-printf("%d\n",sum[a]);
+my_printf("%d\n",sum[a]);
 }
 return 0;
 }

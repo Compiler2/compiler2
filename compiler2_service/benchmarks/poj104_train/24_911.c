@@ -33,10 +33,10 @@ int main_bench()
     if(mas<num) {mas=num;s=i;}	
     if(min>num) {min=num;_s=i;}	
     for(i=s-mas;i<s;i++) 
-    printf("%c",str[i]);	
-    printf("\n");
+    my_printf("%c",str[i]);	
+    my_printf("\n");
     for(i=_s-min;i<_s;i++) 
-    printf("%c",str[i]);
+    my_printf("%c",str[i]);
 	
     return 0;
     }

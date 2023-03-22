@@ -4,10 +4,10 @@
 int main_bench(){
 	int a[101][101];
 	int i,j,row,col,rowc,colc;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<row+col-1;i++){
@@ -23,7 +23,7 @@ int main_bench(){
 			if(col>=row&&rowc==row){
 				break;
 			}
-			printf("%d\n",a[rowc][colc]);
+			my_printf("%d\n",a[rowc][colc]);
 		}
 	}
 	return 0;

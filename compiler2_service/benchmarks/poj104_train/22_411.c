@@ -7,13 +7,13 @@ int main_bench()
 	char c;
 
 	for(i=0;;)
-	{scanf("%d%c",&shu[i],&c);
+	{my_scanf("%d%c",&shu[i],&c);
 	 i++;
 	 if(c!=',')
 		 break;
 	}
 	if(i==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 
@@ -41,10 +41,10 @@ int main_bench()
 	}
 
 	if(s[1]==0&&s[2]==0)
-		printf("No");
+		my_printf("No");
 
 
-	else printf("%d",s[1]);
+	else my_printf("%d",s[1]);
 	}
 	return 0;
 }

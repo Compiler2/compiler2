@@ -11,16 +11,16 @@ int main_bench(){
 	{
 		for(q=p;q<f(p);q++)
 		{
-			printf("%c",*q);
+			my_printf("%c",*q);
 		}
-		printf("\n");
+		my_printf("\n");
 		p=f(p)+1;
 	}
 	for(q=p;q<c+strlen(c);q++)
 	{
-		printf("%c",*q);
+		my_printf("%c",*q);
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 }
 
 char *f(char *p)

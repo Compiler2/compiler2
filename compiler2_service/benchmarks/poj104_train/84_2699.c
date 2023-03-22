@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i, t, x, max, secondmax;
-	scanf("%d", &t);
+	my_scanf("%d", &t);
 	max=secondmax=t;
 	for (i=1;i<n;i++)
 	{
-		scanf("%d", &x);
+		my_scanf("%d", &x);
 		
 		if (x>max)
 		{
@@ -21,6 +21,6 @@ int main_bench()
 			secondmax=x;
 
 		}
-	}printf("%d\n%d\n", max, secondmax);
+	}my_printf("%d\n%d\n", max, secondmax);
 	return 0;
 }

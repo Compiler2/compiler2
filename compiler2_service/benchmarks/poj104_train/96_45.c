@@ -9,7 +9,7 @@ int main_bench()
 		a[i] = '\0';
 		b[i] = 0;
 	}
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n = strlen(a);
 	for(i=0;a[i]!='\0';i++)
 	{
@@ -25,14 +25,14 @@ int main_bench()
 		}
 	}
 	if(b[1]==0&&b[2]==0)
-		printf("0");
+		my_printf("0");
 	else if(b[1]==0&&b[2]!=0)
 		for(i=2;i<n;i++)
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 	else
 		for(i=1;i<n;i++)
-			printf("%d",b[i]);
-	printf("\n");
-	printf("%d\n",c);
+			my_printf("%d",b[i]);
+	my_printf("\n");
+	my_printf("%d\n",c);
 return 0;
 }

@@ -3,7 +3,7 @@
 main_bench()
 {
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	int i,j,k,BL;
 	char a[85];
@@ -39,6 +39,6 @@ main_bench()
 		}
 		else 
 			BL=0;
-		printf("%d\n",BL);
+		my_printf("%d\n",BL);
 	}
 }

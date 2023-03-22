@@ -37,7 +37,7 @@ int main_bench()
         break;
         }
 
-        printf("%s\n",max);
-        printf("%s",min);
+        my_printf("%s\n",max);
+        my_printf("%s",min);
     return 0;
 }

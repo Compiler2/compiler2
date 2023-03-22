@@ -3,11 +3,11 @@
 int main_bench()
 {
 int N,sz[500];
-scanf("%d",&N);
+my_scanf("%d",&N);
 int i;
 for(i=0;i<N;i++)
 {
- scanf("%d",&sz[i]);
+ my_scanf("%d",&sz[i]);
 }
 i=0;
 int j=0;
@@ -39,10 +39,10 @@ sz[j]=e;
 int m=0;
 while(m<LEN-1)
 {
-printf("%d,",sz[m]);
+my_printf("%d,",sz[m]);
 m++;
 }
-printf("%d",sz[LEN-1]);
+my_printf("%d",sz[LEN-1]);
 return 0;
 
 }

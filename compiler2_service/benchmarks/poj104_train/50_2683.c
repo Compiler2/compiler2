@@ -14,7 +14,7 @@ int main_bench()
 {
 	int days[13][32];
 	int i,j,w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		for(j=1;;j++)
@@ -40,7 +40,7 @@ int main_bench()
 	j=13;
 	for(i=1;i<=12;i++)
 	{
-		if(weekday[i][j]==5)printf("%d\n",i);
+		if(weekday[i][j]==5)my_printf("%d\n",i);
 	}
 
 

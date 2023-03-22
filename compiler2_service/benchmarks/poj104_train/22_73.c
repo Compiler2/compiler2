@@ -4,13 +4,13 @@ int main_bench()
 {
 	int a[300],i,j,k,max,maxj,n,d=0,flag;
 	char ch;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(n=1;ch=getchar()!='\n';n++)
-	{	scanf(",");scanf("%d",&a[n]);}
+	{	my_scanf(",");my_scanf("%d",&a[n]);}
 	
 	
 	if(n==1)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		
@@ -18,7 +18,7 @@ int main_bench()
 		if(a[i]!=a[0])
 			d++;
 		if(d==0)
-			printf("No\n");
+			my_printf("No\n");
 		else{
 
 		max=a[0];
@@ -31,7 +31,7 @@ int main_bench()
 			for(k=n-1;k>=0;k--)
 				if(a[k]>=maxj&&a[k]<max)
 					maxj=a[k];
-				printf("%d\n",maxj);
+				my_printf("%d\n",maxj);
 		}
 
 								}

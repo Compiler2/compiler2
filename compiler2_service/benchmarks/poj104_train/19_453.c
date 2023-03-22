@@ -29,9 +29,9 @@ for(i=0;i<n;i++)
   strcpy(*(p+i),p2);
 
 for (i=0;i<k-1;i++)
-{printf("%s",*(p+i));
-printf(" ");}
-printf("%s",*(p+k-1));
+{my_printf("%s",*(p+i));
+my_printf(" ");}
+my_printf("%s",*(p+k-1));
 
 
 }

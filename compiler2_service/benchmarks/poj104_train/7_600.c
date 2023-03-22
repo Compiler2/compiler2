@@ -20,24 +20,24 @@ int main_bench()
 	{
 		for(j=0;j<i;j++)
 		{
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
 		for(j=0;j<k;j++)
 		{
-			printf("%c",c[j]);
+			my_printf("%c",c[j]);
 		}
 		for(j=i+k;j<n;j++)
 		{
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
 	}
 	else
 	{
 		for(i=0;i<n;i++)
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

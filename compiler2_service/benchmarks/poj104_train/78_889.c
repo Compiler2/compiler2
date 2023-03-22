@@ -38,24 +38,24 @@ int main_bench()
 							if(i==0)
 							{
 								if(a[i]==z)
-									printf("z %d",z);
+									my_printf("z %d",z);
 								else if(a[i]==q)
-									printf("q %d",q);
+									my_printf("q %d",q);
 								else if(a[i]==s)
-									printf("s %d",s);
+									my_printf("s %d",s);
 								else
-									printf("l %d",l);
+									my_printf("l %d",l);
 							}
 							else
 							{
 								if(a[i]==z)
-									printf("\nz %d",z);
+									my_printf("\nz %d",z);
 								else if(a[i]==q)
-									printf("\nq %d",q);
+									my_printf("\nq %d",q);
 								else if(a[i]==s)
-									printf("\ns %d",s);
+									my_printf("\ns %d",s);
 								else
-									printf("\nl %d",l);	
+									my_printf("\nl %d",l);	
 							}
 						}
 					}

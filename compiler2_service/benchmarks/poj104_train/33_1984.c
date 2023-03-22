@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=0;
 	do
 	{
 		char s[256];
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int k,len;
 		len=strlen(s);
 		for(k=0;k<len;k++)
@@ -30,7 +30,7 @@ int main_bench()
 				s[k]=s[k]-'C'+'G';
 			}
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 		i++;
 	}while(i<n);
 	return 0;

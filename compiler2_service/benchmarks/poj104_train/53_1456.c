@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[n];
     int ssz[n],count=0;
     for(i=0;i<n;i++){
-        scanf("%d ",&sz[i]);
+        my_scanf("%d ",&sz[i]);
         }
     for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){
@@ -21,9 +21,9 @@ int main_bench(){
             count++;
         }
     }
-    printf("%d",ssz[0]);
+    my_printf("%d",ssz[0]);
     for(i=1;i<count;i++){
-        printf(",%d",ssz[i]);
+        my_printf(",%d",ssz[i]);
         }
     return 0;
 }

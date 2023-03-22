@@ -6,9 +6,9 @@ int main_bench()
 	int u[500];
 	int i,a=0,n,p,k,e;
 	int s=0,z=0,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]%2!=0){
@@ -27,14 +27,14 @@ int main_bench()
 		}
 	}
 	for(i=0;i<a-1;i++){
-		printf("%d,",u[i]);
+		my_printf("%d,",u[i]);
 		s+=u[i];
 	}
 	for(i=0;i<a;i++){
 		z+=u[i];
 	}
 	sum=z-s;
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 	return 0;
 }

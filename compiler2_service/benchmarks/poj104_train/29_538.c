@@ -12,10 +12,10 @@ int main_bench(){
 	double s2=s1+(3*1.0/2);
 	int i,m,j,n;
 	double sz[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
 		s=s2;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1){
 			sz[i]=s1;
 		}
@@ -33,8 +33,8 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m-1;i++){
-		printf("%.3lf\n",sz[i]);
+		my_printf("%.3lf\n",sz[i]);
 	}
-	printf("%.3lf",sz[i]);
+	my_printf("%.3lf",sz[i]);
 	return 0;
 }

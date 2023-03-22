@@ -6,7 +6,7 @@ int main_bench()
 {
 	int n,i,count,x,sum;
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n-2;i++){
 		for(x=2,count=0;x<i;x++){
 			if(i%x!=0){count++;}
@@ -16,9 +16,9 @@ int main_bench()
 			if((i+2)%x!=0){count++;}
 	}
 	if(count==i){
-	printf("%d %d\n",i,i+2);
+	my_printf("%d %d\n",i,i+2);
 	sum++;}}}
 	if(sum==0){
-	printf("empty");}
+	my_printf("empty");}
 	return 0;
 }

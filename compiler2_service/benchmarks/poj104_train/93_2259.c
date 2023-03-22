@@ -9,13 +9,13 @@ int main_bench()
     int a3 = 0, a5 = 0, a7 = 0;
     int n;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     a3 = (n%3)==0?1:0;
     a5 = (n%5)==0?1:0;
     a7 = (n%7)==0?1:0;
 
     if (a3+a5+a7 == 0) {
-        printf("n");
+        my_printf("n");
         return 0;
     }
 
@@ -30,9 +30,9 @@ void print(int a, int num)
 {
     if (a) {
         if (flag)
-            printf(" %d", num);
+            my_printf(" %d", num);
         else
-            printf("%d", num);
+            my_printf("%d", num);
         flag = 1;
     }
 }

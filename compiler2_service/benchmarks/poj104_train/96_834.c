@@ -11,14 +11,14 @@ int main_bench(){
             b[i]=(b[i-1]*10+b[i])%13;
             }
     if(strlen(a)==1||(strlen(a)==2&&c[2]==0))
-    printf("0");
+    my_printf("0");
     else{
     if(c[2]>0)
-    printf("%d",c[2]);
+    my_printf("%d",c[2]);
     for(int i=3;i<=strlen(a);i++){
-    printf("%d",c[i]);
+    my_printf("%d",c[i]);
 }
 }
-    printf("\n%d",b[strlen(a)]);
+    my_printf("\n%d",b[strlen(a)]);
     return 0;
 }

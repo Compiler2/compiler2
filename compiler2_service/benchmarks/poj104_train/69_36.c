@@ -9,7 +9,7 @@ int main_bench()
 			a[i]=0;b[i]=0;c[i]=0;
 		}
 		
-		scanf("%s%s",s,t);
+		my_scanf("%s%s",s,t);
 		lena=strlen(s);
 		lenb=strlen(t);
 		if(lena<lenb){
@@ -35,9 +35,9 @@ int main_bench()
 			if(c[k]!=0&&p==0)
 				p=1;
 			if(p==1)
-				printf("%d",c[k]);
+				my_printf("%d",c[k]);
 		}
-		if(p==0) printf("0");
-		printf("\n");
+		if(p==0) my_printf("0");
+		my_printf("\n");
 		return 0;
 }

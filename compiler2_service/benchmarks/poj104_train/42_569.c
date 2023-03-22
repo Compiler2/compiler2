@@ -5,12 +5,12 @@ int main_bench()
       int a[1000000];
       int i,n,del,j;
 int *p;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-       scanf("%d",&a[i]);
+       my_scanf("%d",&a[i]);
        }
-       scanf("%d",&del);
+       my_scanf("%d",&del);
       p=a;
        for(i=0;i<n;i++)
       {
@@ -22,6 +22,6 @@ int *p;
                              n--;}
        }
       for(i=0;i<n-1;i++,p++)
-      printf("%d ",*p);
-      printf("%d",*p);
+      my_printf("%d ",*p);
+      my_printf("%d",*p);
 }

@@ -7,8 +7,8 @@ int main_bench()
    gets(str);
    for(i=0;i<strlen(str);i++)
    {
-	 if(str[i]!=' ')  printf("%c",str[i]);
-	 if(str[i]==' '&&str[i+1]!=' ')  printf(" ");
+	 if(str[i]!=' ')  my_printf("%c",str[i]);
+	 if(str[i]==' '&&str[i+1]!=' ')  my_printf(" ");
    }
 	   
 	return 0;

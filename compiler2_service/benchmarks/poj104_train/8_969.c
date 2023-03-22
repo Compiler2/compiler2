@@ -3,7 +3,7 @@
 int scan()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	return m;
 }
 int fuzhi(int a[],int n)
@@ -11,7 +11,7 @@ int fuzhi(int a[],int n)
 	int i,k;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		a[i]=k;
 	}
 	return 0;
@@ -38,14 +38,14 @@ int print(int c[],int d[],int m3,int m4)
 	int i=0;
 	for(i=0;i<m3;i++)
 	{
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	}
 	for(i=0;i<m4;i++)
 	{
-		printf("%d",d[i]);
+		my_printf("%d",d[i]);
 		if(i!=m4-1)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

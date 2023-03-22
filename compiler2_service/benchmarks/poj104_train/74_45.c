@@ -24,19 +24,19 @@ int f2(int i)
 int main_bench()
 {
 	int n,m,i,c=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
     
 	for(i=m;i<=n;i++)
 	{
 	if(f1(i)&&f2(i))
 	{if(c==0)
-	{printf("%d",i);c=1;}
+	{my_printf("%d",i);c=1;}
 	else
-		printf(",%d",i);
+		my_printf(",%d",i);
     }
 	}
 	if(c==0)
-		printf("no");
-	printf("\n");
+		my_printf("no");
+	my_printf("\n");
 	
 }

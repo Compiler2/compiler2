@@ -18,7 +18,7 @@ int main_bench()
 {
 	int n,i,N,dd1,dd2,j,min;
 	int row[100][100],col[100][100],sum[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	N=n;
 	for(i=0;i<N;i++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 		{
 			for(dd2=0;dd2<N;dd2++)
 			{
-				scanf("%d",&row[dd1][dd2]);
+				my_scanf("%d",&row[dd1][dd2]);
 			}
 		}
 		sum[i]=0;
@@ -93,7 +93,7 @@ int main_bench()
 	}
 	for(i=0;i<N;i++)
 	{
-		printf("%d\n",sum[i]);
+		my_printf("%d\n",sum[i]);
 	}
 	return 0;
 }

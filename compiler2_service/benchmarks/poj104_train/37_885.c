@@ -5,7 +5,7 @@ void tc(int);
 int main_bench()
 {
     int a[27],i,t,k,q;
-    scanf("%d\n",&k);
+    my_scanf("%d\n",&k);
     while(k)
     {
         q=0;
@@ -23,12 +23,12 @@ int main_bench()
         {
             if(s[i]!=1)
             {
-                printf("%c\n",s[i]);
+                my_printf("%c\n",s[i]);
                 q=1;
                 break;
             }
         }
-        if(q==0) printf("no\n");
+        if(q==0) my_printf("no\n");
         k--;
     }
     return 0;

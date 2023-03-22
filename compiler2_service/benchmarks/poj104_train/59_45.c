@@ -6,11 +6,11 @@ char map[128][128];
 int ans,m,n;
 int main_bench()
 {	int i,j,l=0,r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
 		{
-			scanf(" %c",&map[i][j]); 
+			my_scanf(" %c",&map[i][j]); 
 			
 			if (map[i][j]=='@')
 			{
@@ -20,7 +20,7 @@ int main_bench()
 				r++;
 			}
 		}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	ans=r;
 	int xt, yt;
 	while (r>l)
@@ -37,6 +37,6 @@ int main_bench()
 		}
 		l++;
 	}
-	printf("%d\n",ans);
+	my_printf("%d\n",ans);
 	return 0;
 }

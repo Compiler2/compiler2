@@ -6,7 +6,7 @@ main_bench()
  long temp;
  char s[10];
  char p[10];
- scanf("%d %s %d",&a,s,&b);
+ my_scanf("%d %s %d",&a,s,&b);
  n=strlen(s);
  temp=0;
  for(i=0;i<n;i++)
@@ -27,6 +27,6 @@ main_bench()
   if (temp==0) break;
  }
  for(i=x-1;i>=0;i--)
-  printf("%c",p[i]);
+  my_printf("%c",p[i]);
 } 	 
     

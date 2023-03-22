@@ -16,17 +16,17 @@ int main_bench()
 {
 	int nstu=4;
 	int total=0;
-	scanf("%d",&nstu);
+	my_scanf("%d",&nstu);
 	struct student *p=(struct student*)malloc(nstu*sizeof(struct student));
 	int i;
 	for(i=0;i<nstu;i++)
 	{
-		scanf("%s",p[i].name);
-		scanf("%d",&(p[i].finalscore));
-		scanf("%d ",&(p[i].clascore));
-		scanf("%c ",&p[i].position);
-		scanf("%c",&p[i].westen);
-		scanf("%d",&(p[i].essaynum));
+		my_scanf("%s",p[i].name);
+		my_scanf("%d",&(p[i].finalscore));
+		my_scanf("%d ",&(p[i].clascore));
+		my_scanf("%c ",&p[i].position);
+		my_scanf("%c",&p[i].westen);
+		my_scanf("%d",&(p[i].essaynum));
 		p[i].reward=0;
 	}
 	for(i=0;i<nstu;i++)
@@ -56,9 +56,9 @@ int main_bench()
 		if(p[j].reward==money)
 			break;
 	}
-	printf("%s\n",p[j].name);
-	printf("%d\n",p[j].reward);
-	printf("%d\n",total);
+	my_printf("%s\n",p[j].name);
+	my_printf("%d\n",p[j].reward);
+	my_printf("%d\n",total);
 	return 0;
 }
 

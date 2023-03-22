@@ -9,7 +9,7 @@ int main_bench()
 	d=0;
 	e=0;
 	f=0;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
     if(x%10<5)
 	{
 		f=x%10;
@@ -49,7 +49,7 @@ int main_bench()
 			c=(n-d)/2;
 		}
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 
 	return 0;
 }

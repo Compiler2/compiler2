@@ -5,9 +5,9 @@ int main_bench(){
 	int a[10000],b[10000];
 	int i,k,e,t,min,max,s=1;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-			scanf("%d %d",&a[i],&b[i]);
+			my_scanf("%d %d",&a[i],&b[i]);
 	}
 
 	for(k=1;k<=n;k++){
@@ -30,12 +30,12 @@ int main_bench(){
 	for(i=0;i<n;i++){
 		if(b[i]<a[i+1]){
 			s=0;
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(s!=0){
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 
 	return 0;

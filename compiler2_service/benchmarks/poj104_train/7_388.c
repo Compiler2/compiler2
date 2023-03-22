@@ -26,10 +26,10 @@ int main_bench()
 	for(i=0;i<a;i++){
 
 			if(i>=m&&i<b+m&&c==1){
-				printf("%c",replacement[i-m]);
+				my_printf("%c",replacement[i-m]);
 			}
 			else {
-				printf("%c",string[i]);
+				my_printf("%c",string[i]);
 			}
 	}
 	return 0;

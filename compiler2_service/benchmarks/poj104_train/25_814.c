@@ -3,7 +3,7 @@
 main_bench()
 {
 int n,i,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
    int v[1001]={0};
      v[0]=1;
      while(n--)
@@ -26,7 +26,7 @@ for(i=1000;i>=0;i--)
      if(v[i]!=0)
        { for(k=i;k>=0;k--)
 
-        printf("%d",v[k]);
+        my_printf("%d",v[k]);
   
 
 flag=1;

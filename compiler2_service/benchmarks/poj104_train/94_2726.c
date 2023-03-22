@@ -2,10 +2,10 @@
 
  int main_bench(){
      int n,t=0,e;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      int s[n];
      for(int i=1;i<=n;i++){
-         scanf("%d",&s[i]);
+         my_scanf("%d",&s[i]);
          if(s[i]%2==0){
              s[i]=0;
              t+=1;
@@ -22,9 +22,9 @@
          }
      }
      for(int i=n-t+1;i<n;i++){
-         printf("%d,",s[i]);
+         my_printf("%d,",s[i]);
      }
-     printf("%d",s[n]);
+     my_printf("%d",s[n]);
      return 0;
  }
    

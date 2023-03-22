@@ -18,7 +18,7 @@ int main_bench()
 	{
 		c[j][i]=change(c[j][i]);
 	}
-	if(strcmp(c[0],c[1])>0) printf(">");
-	else if(strcmp(c[0],c[1])<0) printf("<");
-	else printf("=");
+	if(strcmp(c[0],c[1])>0) my_printf(">");
+	else if(strcmp(c[0],c[1])<0) my_printf("<");
+	else my_printf("=");
 }

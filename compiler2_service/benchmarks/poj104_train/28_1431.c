@@ -13,7 +13,7 @@ int main_bench()
 			k++;}
 	}
 	if(k==1){
-		printf("%d",n);}
+		my_printf("%d",n);}
 	else{
 	for(i=0;i<k;i++){
 		if(i==0){
@@ -28,9 +28,9 @@ int main_bench()
 	for(i=0;i<k;i++){
 		if(dc[i]!=0){
 		if(i!=k-1){
-			printf("%d,",dc[i]);}
+			my_printf("%d,",dc[i]);}
 		else {
-			printf("%d",dc[i]);}
+			my_printf("%d",dc[i]);}
 		}
 	}
 	}

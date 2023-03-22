@@ -16,7 +16,7 @@ int main_bench()
 		if(s1[i]!=s2[i]&&s1[i]-s2[i]!=32&&s2[i]-s1[i]!=32)break;
 
 	if(i>=n)
-		printf("=\n");
+		my_printf("=\n");
 	else
 	{
 		if(s1[i]<'a')
@@ -25,8 +25,8 @@ int main_bench()
 			s2[i]=s2[i]+32;
 
 		if(s1[i]>s2[i])
-			printf(">\n");
+			my_printf(">\n");
 		else
-			printf("<\n");
+			my_printf("<\n");
 	}
 }

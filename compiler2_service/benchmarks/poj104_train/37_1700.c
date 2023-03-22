@@ -5,10 +5,10 @@ main_bench()
       int t,i,b,j,k,m;
       m=0;
       char a[100001];
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       for(i=1;i<=t;i++)
       {
-          scanf("%s",a);
+          my_scanf("%s",a);
           b=strlen(a);
           for(j=0;j<=b-1;j++)
            {
@@ -24,12 +24,12 @@ main_bench()
                   
                 if(m==b-1&&i!=t)
                   {
-                     printf("%c\n",a[j]);
+                     my_printf("%c\n",a[j]);
                      break;
                   }
                 else if (m==b-1&&i==t)
                   {
-                     printf("%c",a[j]);
+                     my_printf("%c",a[j]);
                      break;
                   }
                   m=0;
@@ -38,9 +38,9 @@ main_bench()
                 
            }
            if(j==b&&i!=t)
-           printf("no\n");
+           my_printf("no\n");
            if(j==b&&i==t)
-           printf("no");
+           my_printf("no");
            m=0;
       }
       }             

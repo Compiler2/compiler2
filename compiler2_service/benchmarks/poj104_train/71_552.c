@@ -6,7 +6,7 @@ int main_bench()
     int day[13];
     int sum;
     int run(int x); 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     day[1]=31; 
     day[3]=31; 
     day[5]=31; 
@@ -20,7 +20,7 @@ int main_bench()
     day[11]=30;
     for (i=1;i<=n;i++)
         {
-                      scanf("%d %d %d",&year,&m1,&m2);
+                      my_scanf("%d %d %d",&year,&m1,&m2);
                       if (run(year)==1)
                          day[2]=29;
                          else
@@ -35,9 +35,9 @@ int main_bench()
                       for (j=m1;j<=m2-1;j++)
                           sum=sum+day[j];
                       if (sum%7==0)
-                         printf("YES\n");
+                         my_printf("YES\n");
                          else
-                         printf("NO\n");
+                         my_printf("NO\n");
         }
     
 }

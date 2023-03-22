@@ -4,9 +4,9 @@ int main_bench()
 {
      int n,a[50000],b[50000],m[10000],max,min,sum=0;
      int i,j,k;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      for(i=1;i<=n;i++){
-             scanf("%d%d",&a[i],&b[i]);
+             my_scanf("%d%d",&a[i],&b[i]);
              }
      for(i=1;i<=10000;i++){
              m[i]=0;}
@@ -28,8 +28,8 @@ int main_bench()
                          sum++;}
                          }
      if(sum==0){
-                printf("%d %d",min-1,max);}
-        else printf("no");
+                my_printf("%d %d",min-1,max);}
+        else my_printf("no");
 
      return 0;
 }                                                                                  

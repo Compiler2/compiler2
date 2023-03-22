@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i,p,j,c;
 	char s[1000],a[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(c=0;c<1000;c++){
 			s[c]=0;
 			a[c]=0;
 		}
-		scanf("%s",s);
+		my_scanf("%s",s);
 		p=strlen(s);
 		for(j=0;j<p;j++){
 			if(s[j]=='A'){
@@ -23,7 +23,7 @@ int main_bench()
 				a[j]='G';
 			}
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

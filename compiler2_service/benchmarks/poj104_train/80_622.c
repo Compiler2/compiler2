@@ -18,7 +18,7 @@ int day(int year,int month,int day)
 int main_bench()
 {
 	int Y,M,D,y,m,d,a,b,c,x=0,j;
-	scanf("%d%d%d%d%d%d",&Y,&M,&D,&y,&m,&d);
+	my_scanf("%d%d%d%d%d%d",&Y,&M,&D,&y,&m,&d);
 	if(Y>y||Y==y&&M>m||Y==y&&M==m&&D>d)
 	{
 		a=Y;
@@ -37,7 +37,7 @@ int main_bench()
 		else x=x+365;
 	}
 	x=x+day(y,m,d)-day(Y,M,D);
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 }
 	
 

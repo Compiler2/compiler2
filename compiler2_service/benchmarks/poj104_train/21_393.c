@@ -6,10 +6,10 @@ int main_bench()
 	float ave,total,y[300],max=0;
 	total=0;
 	p=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<=k-1;i++)	
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		total+=x[i];
 	}
 	ave=total/k;
@@ -39,8 +39,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",z[0]);
+	my_printf("%d",z[0]);
 	for(i=1;i<=p-1;i++)
-		printf(",%d",z[i]);
+		my_printf(",%d",z[i]);
 	return 0;
 }

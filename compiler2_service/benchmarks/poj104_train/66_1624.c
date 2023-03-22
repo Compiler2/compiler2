@@ -3,7 +3,7 @@
 
 int main_bench(){
     int a,b,c,s=0,m;
-    scanf("%d%d%d",&a,&b,&c);
+    my_scanf("%d%d%d",&a,&b,&c);
     a=(a-1)%400+1;
     for(int i=1;i<a;i++){
       if(i%400==0 || (i%4==0 && i%100!=0)){s+=2;}
@@ -28,12 +28,12 @@ int main_bench(){
 	  s=s+c;
       m=s%7;
 
-    if(m==1){printf("Mon.");}
-    if(m==2){printf("Tue.");}
-    if(m==3){printf("Wed.");}
-    if(m==4){printf("Thu.");}
-    if(m==5){printf("Fri.");}
-    if(m==6){printf("Sat.");}
-    if(m==0){printf("Sun.");}
+    if(m==1){my_printf("Mon.");}
+    if(m==2){my_printf("Tue.");}
+    if(m==3){my_printf("Wed.");}
+    if(m==4){my_printf("Thu.");}
+    if(m==5){my_printf("Fri.");}
+    if(m==6){my_printf("Sat.");}
+    if(m==0){my_printf("Sun.");}
      return 0;
 }

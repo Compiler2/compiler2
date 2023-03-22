@@ -7,21 +7,21 @@ int main_bench(){
 	int x,y,a;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d ",&sz[i][j]);
+			my_scanf("%d ",&sz[i][j]);
 		}
 		
 	}
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	a=h(x,y);
 	if(a==0){
-		printf("error");
+		my_printf("error");
 	}
 	else{
 		for(i=0;i<5;i++){
 		    for(j=0;j<4;j++){
-			   printf("%d ",sz[i][j]);
+			   my_printf("%d ",sz[i][j]);
 			}
-			printf("%d\n",sz[i][4]);
+			my_printf("%d\n",sz[i][4]);
 		}
 	}
 return 0;
@@ -29,10 +29,10 @@ return 0;
 int h(int m,int n){
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if(m<0||m>4||n<0||n>4){
 		return 0 ;
 	}

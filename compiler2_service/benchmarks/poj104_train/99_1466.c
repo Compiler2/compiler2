@@ -6,9 +6,9 @@ int main_bench()
 	int n=0,i;
 	int age[100]={0};
 	double a=0,b=0,c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 		if(age[i]<19){
 			a++;
 		}
@@ -29,7 +29,7 @@ int main_bench()
 	q=b/n;
 	r=c/n;
 	s=d/n;
-	printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%\n",p*100,q*100,r*100,s*100);
+	my_printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%\n",p*100,q*100,r*100,s*100);
 
 
 	return 0;

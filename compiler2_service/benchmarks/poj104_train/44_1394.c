@@ -5,13 +5,13 @@ int main_bench()
 int a,b,i;
 int inverse(int num);
 for(i=0;i<6;i++){
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    if(a>=0){
    b=inverse(a);
-   printf("%d\n",b);
+   my_printf("%d\n",b);
      }else{
            b=inverse(a);
-           printf("-%d\n",b);
+           my_printf("-%d\n",b);
            }      
    }
 return 0;

@@ -3,7 +3,7 @@
 main_bench()
 {   int n,i,j,k,l,len,max[501],da;
     char s[501],a[501][6];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
      gets(s);
       for(i=0;i<501;i++)
      max[i]=1;
@@ -24,8 +24,8 @@ main_bench()
         for(j=1;j<=len-n;j++)
         if(max[j]>da)
           da=max[j];
-            if(da<=1)printf("NO");
-            else{   printf("%d\n",da);
+            if(da<=1)my_printf("NO");
+            else{   my_printf("%d\n",da);
         for(j=0;j<=len-n+1;j++)
         {        if(max[j]==da)
          puts(a[j]);}

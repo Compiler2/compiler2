@@ -6,26 +6,26 @@ int main_bench()
  a=3;
  b=5;
  c=7;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   if (n%3==0){
-    printf("%d",a);
+    my_printf("%d",a);
     if(n%5==0){
-     printf(" %d",b);
+     my_printf(" %d",b);
      if (n%7==0)
-      printf(" %d",c);
+      my_printf(" %d",c);
  }
    else if(n%7==0)
-     printf(" %d",c);
+     my_printf(" %d",c);
   }
   else if(n%5==0){
-     printf("%d",b);
+     my_printf("%d",b);
      if (n%7==0)
-      printf(" %d",c);
+      my_printf(" %d",c);
    }
   else if(n%7==0)
-    printf("%d",c);
+    my_printf("%d",c);
   else
-  printf("n\n"); 
+  my_printf("n\n"); 
   
    return 0;
 }  

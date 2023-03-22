@@ -5,7 +5,7 @@ int main_bench()
 	char a[1000][10],b[500],*p;
 	int n,num[1000];
 	int i,j,len,wei,q;
-	scanf("%d %s",&n,b);
+	my_scanf("%d %s",&n,b);
 	len=strlen(b);
 	p=b;
 	for(i=0;i<100;i++)
@@ -31,12 +31,12 @@ int main_bench()
 	{
 		if(q<num[i]) q=num[i];
 	}
-	if(q==1) printf("NO");
+	if(q==1) my_printf("NO");
 	else{
-		printf("%d\n",q);
+		my_printf("%d\n",q);
 		for(i=0;i<len-n;i++)
 		{
-			if(num[i]==q) printf("%s\n",a[i]);
+			if(num[i]==q) my_printf("%s\n",a[i]);
 		}
 	}
 }

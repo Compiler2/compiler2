@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,a[300],i,j,k;
 	int *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=a;
 	for(i=0;i<n-1;i++)
-		scanf("%d ",p+i);
-	scanf("%d",p+n-1);
-	printf("%d",*p);
+		my_scanf("%d ",p+i);
+	my_scanf("%d",p+n-1);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
 	{
 		for(j=0;j<i;j++)
@@ -20,7 +20,7 @@ int main_bench()
 				k=1;break;
 			}
 		if(k==0)
-			printf(",%d",*(p+i));
+			my_printf(",%d",*(p+i));
 	}
-    printf("\n");
+    my_printf("\n");
 }

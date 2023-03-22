@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int m;
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 	int a[1000];
 	char s[1000][26];
 	int i,j;
 	for (i=0;i<m;i++)
 	{
-		scanf ("%d %s",&a[i],s[i]);
+		my_scanf ("%d %s",&a[i],s[i]);
 	}
 	char x;
 	int max=0;
@@ -27,14 +27,14 @@ int main_bench()
 	   }
 	   if (l>max){max=l;maxx=x;}
 	}
-	printf ("%c\n%d\n",maxx,max);
+	my_printf ("%c\n%d\n",maxx,max);
 	for (i=0;i<m;i++)
 	{
 	     for (j=0;j<26;j++)
 		 {
 			  if(s[i][j]==maxx)break;
 		 }
-		   if (j!=26)printf ("%d\n",a[i]);
+		   if (j!=26)my_printf ("%d\n",a[i]);
 	}
 	return 0;
 }

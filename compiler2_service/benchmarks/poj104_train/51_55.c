@@ -5,8 +5,8 @@ int main_bench(){
    char z[1000],x[20];
    int i,j,k,l;
    int n,h[1000],p;
-   scanf("%d",&n);
-   scanf("%s",z);
+   my_scanf("%d",&n);
+   my_scanf("%s",z);
    int len=strlen(z);
    for(i=0;i<=len-n;i++)
    {
@@ -42,7 +42,7 @@ int main_bench(){
 	   }
 	   if(count==len-n+1&&dount!=0)
 	   {
-		   printf("%d\n",h[i]);
+		   my_printf("%d\n",h[i]);
 		   m++;
 	       break;
 	   }
@@ -65,10 +65,10 @@ int main_bench(){
 			   x[j]=z[j+i];
 		   }
 		   x[n]=0;
-		   printf("%s\n",x);
+		   my_printf("%s\n",x);
 	   }
    }
    if(m==0)
-	   printf("NO");
+	   my_printf("NO");
    return 0;
 }

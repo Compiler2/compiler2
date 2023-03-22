@@ -3,9 +3,9 @@
 int main_bench()
 {
  char s1[257*2],a[257],b[257];
- scanf("%s",s1);
- scanf("%s",a);
- scanf("%s",b);
+ my_scanf("%s",s1);
+ my_scanf("%s",a);
+ my_scanf("%s",b);
  int i,j,k,st,end;
  st=0;
  end=0;
@@ -53,6 +53,6 @@ int main_bench()
 		 }
 	 }
  }
- printf("%s",s1);
+ my_printf("%s",s1);
  return 0;
 }

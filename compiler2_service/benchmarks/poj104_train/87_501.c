@@ -3,7 +3,7 @@
 int main_bench(){
 int a,b,c,d,e,f,m,i;
 for(i=0;i<=100;i++){
-scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0){
     return 0;
 }else{
@@ -19,7 +19,7 @@ if(f>=c){
 }else{
     m=m+f-c;
 }
-printf("%d\n",m);
+my_printf("%d\n",m);
 }
 }
 return 0;

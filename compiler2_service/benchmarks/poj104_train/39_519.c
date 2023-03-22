@@ -5,11 +5,11 @@ int main_bench()
 	int n,i,r;
 	char a[101][50],b[101],c[101];
 	int d[101],e[101],f[101],g[150];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
 		g[i]=0;
-		scanf("%s %d %d %c %c %d",a[i],&d[i],&e[i],&b[i],&c[i],&f[i]);
+		my_scanf("%s %d %d %c %c %d",a[i],&d[i],&e[i],&b[i],&c[i],&f[i]);
 		if (d[i]>80&&f[i]>=1)
 			g[i]=g[i]+8000;
 		if (d[i]>85&&e[i]>80)
@@ -32,8 +32,8 @@ int main_bench()
 
 	}
 	
-	printf("%s\n",a[r]);
-	printf("%d\n",g[101]);
-	printf("%d\n",g[102]);
+	my_printf("%s\n",a[r]);
+	my_printf("%d\n",g[101]);
+	my_printf("%d\n",g[102]);
 
 }

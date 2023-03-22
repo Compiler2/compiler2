@@ -7,7 +7,7 @@ int main_bench()
 {
 	int shuzu1[200],shuzu2[200];
 	int geshu1,geshu2;
-	scanf("%d%d",&geshu1,&geshu2);
+	my_scanf("%d%d",&geshu1,&geshu2);
 	f1(shuzu1,geshu1);
 	f1(shuzu2,geshu2);
 	f2(shuzu1,geshu1);
@@ -19,7 +19,7 @@ void f1(int a[],int e)
 	int i;
 	for(i=0;i<e;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 }
 void f2(int b[],int f)
@@ -43,11 +43,11 @@ void f3(int c[],int h,int d[],int l)
 	int z;
 	for(z=0;z<h;z++)
 	{
-		printf("%d ",c[z]);
+		my_printf("%d ",c[z]);
 	}
 	for(z=0;z<l-1;z++)
 	{
-		printf("%d ",d[z]);
+		my_printf("%d ",d[z]);
 	}
-	printf("%d",d[l-1]);
+	my_printf("%d",d[l-1]);
 }

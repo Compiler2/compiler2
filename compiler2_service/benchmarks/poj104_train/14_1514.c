@@ -11,9 +11,9 @@ int main_bench()
     };
     struct student student[100000];
     int n,i,max,maxID;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
-        scanf("%d %d %d",&student[i].ID,&student[i].yuwen,&student[i].shuxue);
+        my_scanf("%d %d %d",&student[i].ID,&student[i].yuwen,&student[i].shuxue);
     for(i=1;i<=n;i++)
         student[i].zongfen=student[i].yuwen+student[i].shuxue;
     for(int j=1;j<=3;j++)
@@ -26,7 +26,7 @@ int main_bench()
                 maxID=student[i].ID;
                 max=student[i].zongfen;
             }
-        printf("%d %d\n",maxID,max);
+        my_printf("%d %d\n",maxID,max);
         student[maxID].zongfen=0;
     }
 }

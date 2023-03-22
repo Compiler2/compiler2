@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a[10000],i=1,m,max,max2=0;
 	char b;
-	scanf("%d%c",&a[1],&b);
+	my_scanf("%d%c",&a[1],&b);
 	max=a[1];
 	while(b==',')
 	{
 		i++;
-		scanf("%d%c",&a[i],&b);
+		my_scanf("%d%c",&a[i],&b);
 		if(max<a[i])
 		max=a[i];
 	}
@@ -23,7 +23,7 @@ int main_bench()
 		}
 	}
 	if(max2==0)
-	printf("No");
+	my_printf("No");
 	else
 	{
 		for(m=1;m<=i;m++)
@@ -36,7 +36,7 @@ int main_bench()
 				max2=a[m];
 			}
 		}
-		printf("%d",max2);
+		my_printf("%d",max2);
 	}
 	return 0;
 } 

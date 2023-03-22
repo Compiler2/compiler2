@@ -18,11 +18,11 @@ f4(b,n);
  
 void f1()
 {int i;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for (i=0;i<m;i++)
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
 for (i=0;i<n;i++)
-  scanf("%d",&b[i]);
+  my_scanf("%d",&b[i]);
 
 }
 
@@ -43,15 +43,15 @@ void f3(int p[],int t)
 {
 int i,j;
 for (i=0;i<t;i++)
- printf("%d ",p[i]);
+ my_printf("%d ",p[i]);
 }
 
 void f4(int p[],int t)
 {
 int i,j;
 for (i=0;i<t-1;i++)
-  printf("%d ",p[i]);
-printf("%d",p[t-1]);
+  my_printf("%d ",p[i]);
+my_printf("%d",p[t-1]);
  
 
 

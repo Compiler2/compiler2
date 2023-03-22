@@ -6,7 +6,7 @@ int main_bench(){
     int i,j,a=0;
     int b=0;
     for (i=0;i<2;i++){
-        scanf("%s",word[i]);
+        my_scanf("%s",word[i]);
         }
     for(i=0;i<50;i++){
                       if(word[0][i]!='\0'){
@@ -24,7 +24,7 @@ int main_bench(){
                                                                     }
                                                                     }
                                                                     if(b==a){
-                                                                            printf("%d",i);  
+                                                                            my_printf("%d",i);  
                                                                             }
                                                                             else{
                                                                                  b=0;

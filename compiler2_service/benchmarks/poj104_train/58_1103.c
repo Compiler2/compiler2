@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[80];
 	int n,i,k=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while (n>0)
 	{
 		k=0;
@@ -15,11 +15,11 @@ int main_bench()
 			{
 				if(a[i]==0) break; 
 				if (!((a[i]>='a'&&a[i]<='z')||(a[i]>='A'&&a[i]<='Z')||(a[i]>='0'&&a[i]<='9')||(a[i]=='_')))
-				 {printf("0\n");k+=1;break;}
+				 {my_printf("0\n");k+=1;break;}
 			}
-			if (k==0) printf("1\n");
+			if (k==0) my_printf("1\n");
 		}
-		else printf("0\n");
+		else my_printf("0\n");
 		n--;
 		memset(a, 0, 20);
 

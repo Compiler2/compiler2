@@ -33,7 +33,7 @@ int daysfromfirst(int startyear,int endyear,int endmonth,int endday)
 int main_bench()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday;
-	scanf("%d %d %d %d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
-	printf("%d",daysfromfirst(startyear,endyear,endmonth,endday)-daysfromfirst(startyear,startyear,startmonth,startday));
+	my_scanf("%d %d %d %d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+	my_printf("%d",daysfromfirst(startyear,endyear,endmonth,endday)-daysfromfirst(startyear,startyear,startmonth,startday));
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench(){
     int n,i,e;
     double d;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int ai[n],bi[n];
     for(i=0;i<n;i++){
-        scanf("%d %d",&(ai[i]),&(bi[i]));
+        my_scanf("%d %d",&(ai[i]),&(bi[i]));
     }
     int AI[n],BI[n];
     for(i=0;i<n;i++){
@@ -34,12 +34,12 @@ int main_bench(){
             }
         }
         if(i==n){
-            printf("no");
+            my_printf("no");
             break;
         }
     }    
     if(d>BI[n-1]){
-        printf("%d %d",AI[0],BI[n-1]);
+        my_printf("%d %d",AI[0],BI[n-1]);
     }
     return 0;
 }

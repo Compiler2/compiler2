@@ -7,7 +7,7 @@ int main_bench()
     char *p[1000],*p0;
     int n,i,flag;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<=n;i++){
         gets(str[i]);
         p[i] = str[i];
@@ -16,12 +16,12 @@ int main_bench()
     for (i=1;i<=n;i++){
         p0 = p[i];
         if(*p0<'A'||*p0>'z'||(*p0>'Z'&&*p0<'a'&&*p0!='_')){
-           printf("0\n");
+           my_printf("0\n");
            continue;
         }
         else{
-            if (stri(p0)==1) printf("1\n");
-            else printf("0\n");
+            if (stri(p0)==1) my_printf("1\n");
+            else my_printf("0\n");
 		}
     }
 }

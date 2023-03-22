@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n, m, temp1, temp2, i, j, a, b, k, c, d, e;
 	int sz[100][100];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	temp1=0;
 	temp2=0;
 	for(i=0; i<n; i++)
 	{
 		for(j=0; j<n; j++)
-			scanf("%d", &sz[i][j]);
+			my_scanf("%d", &sz[i][j]);
 	}
 	for(i=0; i<n&&temp1==0; i++)
 	{
@@ -37,7 +37,7 @@ int main_bench()
 		}
 	}
 	e=(c-a-1)*(d-b-1);
-	printf("%d", e);
+	my_printf("%d", e);
 	return 0;
 }
 

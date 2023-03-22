@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n[1000],m,i,j;
 	double jg[100], sum[1000];
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d", &n[i]);
+		my_scanf("%d", &n[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 			jg[j+1]=1+(1*1.0/jg[j]);
 			sum[i]+=jg[j+1];	
 		}
-		printf("%.3lf\n", sum[i]);
+		my_printf("%.3lf\n", sum[i]);
 	}
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,a[100],i,m;
     char word[101][101];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-    	scanf("%s",word[i]);
+    	my_scanf("%s",word[i]);
         a[i]=strlen(word[i]);  
     }
     for(i=0;i<n;i++)
@@ -17,7 +17,7 @@ int main_bench()
     		if(word[i][a[i]-2]=='e')
     		{
     			word[i][a[i]-2]='\0';
-    		    printf("%s\n",word[i]);
+    		    my_printf("%s\n",word[i]);
     		}
     	}
     	if(word[i][a[i]-1]=='g')
@@ -27,7 +27,7 @@ int main_bench()
     			if(word[i][a[i]-3]=='i')
     			{
     				word[i][a[i]-3]='\0';
-    				printf("%s\n",word[i]);
+    				my_printf("%s\n",word[i]);
     			}
     		}
     	}
@@ -36,7 +36,7 @@ int main_bench()
     		if(word[i][a[i]-2]=='l')
     		{
     			    word[i][a[i]-2]='\0';
-    				printf("%s\n",word[i]);
+    				my_printf("%s\n",word[i]);
     		}
     	}
     }

@@ -5,11 +5,11 @@ int main_bench()
 	int n,a,b,c,i,j;
 	int e[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int f[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int d=0;
-		scanf("\n%d%d%d",&a,&b,&c);
+		my_scanf("\n%d%d%d",&a,&b,&c);
 		if((a%100!=0&&a%4==0)||(a%100==0&&a%400==0))
 		{
 			if(b>c)
@@ -28,9 +28,9 @@ int main_bench()
 				
 			}
 			if(d%7==0)
-			{printf("\nYES");}
+			{my_printf("\nYES");}
 			else
-			{printf("\nNO");}
+			{my_printf("\nNO");}
 		}
 		else
 		{
@@ -50,9 +50,9 @@ int main_bench()
 				
 			}
 			if(d%7==0)
-			{printf("\nYES");}
+			{my_printf("\nYES");}
 			else
-			{printf("\nNO");}
+			{my_printf("\nNO");}
 		}
 	}
 	return 0;    

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x,a1,a2,a3,a4,a5,t;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	a1=x/10000;
 	a2=(x-10000*a1)/1000;
 	a3=(x-10000*a1-1000*a2)/100;
@@ -29,10 +29,10 @@ int main_bench()
 	
 	t=a4;a4=a5;a5=t;
 	if(a1*a2*a3*a4*a5!=0)
-	printf("%d%d%d%d%d\n",a1,a2,a3,a4,a5);
-	else if(a2*a3*a4*a1!=0) printf("%d%d%d%d\n",a1,a2,a3,a4);
-	else if(a3*a2*a1!=0) printf("%d%d%d\n",a1,a2,a3);
-	else if(a2*a1!=0) printf("%d%d\n",a1,a2);
-	else if(a1!=0) printf("%d\n",a1);
-	else printf("0");
+	my_printf("%d%d%d%d%d\n",a1,a2,a3,a4,a5);
+	else if(a2*a3*a4*a1!=0) my_printf("%d%d%d%d\n",a1,a2,a3,a4);
+	else if(a3*a2*a1!=0) my_printf("%d%d%d\n",a1,a2,a3);
+	else if(a2*a1!=0) my_printf("%d%d\n",a1,a2);
+	else if(a1!=0) my_printf("%d\n",a1);
+	else my_printf("0");
 }

@@ -3,12 +3,12 @@
 int main_bench(){
 int n,y,sz[1000],x;
 
-scanf("%d",&n);
-scanf("%d",&y);
+my_scanf("%d",&n);
+my_scanf("%d",&y);
 
 for(int j=0;j<n;j++){
 
-   scanf("%d",&sz[j]);
+   my_scanf("%d",&sz[j]);
 }
  
 
@@ -32,13 +32,13 @@ for(int k=0;k<=n-1;k++){
 
                      
 	if(x==1){
-	printf("yes");
+	my_printf("yes");
 	
 	break;
 	}
 
     if((k==n-1)&&(x==0)){
-	printf("no");
+	my_printf("no");
 	
 	
 	}

@@ -3,12 +3,12 @@
 int main_bench(){
 int n;
 int a[1000],b[1000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i,c,d;
 c=0;
 d=0;
 for(i=0;i<n;i++){
-   scanf("%d %d",&a[i],&b[i]);
+   my_scanf("%d %d",&a[i],&b[i]);
    if(a[i]-b[i]==0){
       c+=0;
 	  }else if((b[i]-a[i]==1)||((a[i]==2)&&(b[i]==0))){
@@ -18,11 +18,11 @@ for(i=0;i<n;i++){
 	  }
 }
  if(c>d){
- printf("A");
+ my_printf("A");
  }else if(c<d){
-	 printf("B");
+	 my_printf("B");
  }else{
-	 printf("Tie");
+	 my_printf("Tie");
  }
 return 0;
 }

@@ -3,27 +3,27 @@
 int main_bench()
 {
 	int n,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n%3==0)
 	{
-		printf("3");
+		my_printf("3");
 		flag=1;
 	}
 	if(n%5==0)
 	{
 		if(flag)
-			printf(" ");
-		printf("5");
+			my_printf(" ");
+		my_printf("5");
 		flag=1;
 	}
 	if(n%7==0)
 	{
 		if(flag)
-			printf(" ");
-		printf("7");
+			my_printf(" ");
+		my_printf("7");
 		flag=1;
 	}
 	if(flag==0)
-		printf("n");
+		my_printf("n");
 	return 0;
 }

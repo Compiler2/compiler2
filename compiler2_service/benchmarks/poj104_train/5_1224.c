@@ -5,22 +5,22 @@ int main_bench(){
 	int i,num=0,a1,b1,t=1;
 	char a[500],b[500];
 	double n;
-	scanf("%lf",&n); 
-    scanf("%s%s",a,b);
+	my_scanf("%lf",&n); 
+    my_scanf("%s%s",a,b);
 	a1=strlen(a);
 	b1=strlen(b);
 	if(a1!=b1){
-	printf("error");
+	my_printf("error");
 	
 	t=0;}
     else {
 	  for(i=0;i<a1;i++){
 		  if(a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G'){
-		  printf("error");t=0;
+		  my_printf("error");t=0;
 		  break;
 		  }
 		  if(b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G'){
-		  printf("error");t=0;
+		  my_printf("error");t=0;
 		  break;
 
 		  }
@@ -35,10 +35,10 @@ int main_bench(){
 			}
 		}
 		if(1.0*num/a1>n){
-		   printf("yes");
+		   my_printf("yes");
 		}
 		else{
-		  printf("no");
+		  my_printf("no");
 		}
 	}
 

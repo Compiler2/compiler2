@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,num,b1,b2,pd,b0[100];
 	char a[100],e,b3;
-	scanf("%d\n",&num);
+	my_scanf("%d\n",&num);
 	for(i=0;i<num;i++)
 	{
 		b1=0;
@@ -65,7 +65,7 @@ int main_bench()
 	for(i=0;i<num;i++)
 	{
 		e=b0[i];
-		printf("%d\n",e);
+		my_printf("%d\n",e);
 	}
 	
 	return 0;

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n=0,y1,m1,d1,y2,m2,d2,i;
-	scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d\n%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
  
     if(y1==y2)
      {
@@ -76,5 +76,5 @@ int main_bench()
 	  for(i=1;i<=d2;i++)
 		n++;
      }
-    printf("%d",n);
+    my_printf("%d",n);
 }

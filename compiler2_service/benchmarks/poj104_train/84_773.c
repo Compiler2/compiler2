@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[100],max,imax,i,n,temp;
-	scanf("%d/n",&n);
+	my_scanf("%d/n",&n);
 	for (i=0;i<n;i++)
 	{
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	}
   max=0;
   for (i=0;i<n;i++)
@@ -31,6 +31,6 @@ imax=a[1];
   imax=a[i];
    }
   }
-printf("%d\n%d",a[0],imax);
+my_printf("%d\n%d",a[0],imax);
 	return 0;
 }

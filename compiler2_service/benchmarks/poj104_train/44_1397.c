@@ -4,14 +4,14 @@ int main_bench()
 {int reverse(int num); 
 int a[6],i;
 for(i=0;i<6;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(i=0;i<6;i++)
 {
 while(a[i]%10==0)
 {a[i]=a[i]/10;}
 }
 for(i=0;i<6;i++)
-printf("%d\n",reverse(a[i]));
+my_printf("%d\n",reverse(a[i]));
 }
 int reverse(int num)
 {

@@ -26,5 +26,5 @@ int main_bench()
         if (strlen(word[i])>strlen(word[max])) max=i;
         if (strlen(word[i])<strlen(word[min])) min=i;
     }
-    printf("%s\n%s",word[max],word[min]);
+    my_printf("%s\n%s",word[max],word[min]);
 }

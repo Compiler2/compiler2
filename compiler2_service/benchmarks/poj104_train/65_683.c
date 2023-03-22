@@ -3,9 +3,9 @@
 int main_bench(){
 int n,i,j=0,k=0;
 int a[200],b[200];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 if(a[i]==b[i]){
 j=j;
 k=k;
@@ -17,9 +17,9 @@ else
 k++;
 }
 if(j==k){
-printf("Tie");
+my_printf("Tie");
 }else if(j>k){
-printf("A");
-}else printf("B");
+my_printf("A");
+}else my_printf("B");
 return 0;
 }

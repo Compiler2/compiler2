@@ -3,10 +3,10 @@
 main_bench()
 {
 	int n,i,cur,s=0,sq,starow,stacol,endrow,endcol;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n*n;i++)
 	{
-		scanf("%d",&cur);
+		my_scanf("%d",&cur);
 		if (s==0&&cur==0)
 		{
 			s=1;
@@ -20,6 +20,6 @@ main_bench()
 		}
 	}
 	sq=(endrow-starow-1)*(endcol-stacol-1);
-	printf("%d\n",sq);
+	my_printf("%d\n",sq);
 	return 0;
 }

@@ -8,7 +8,7 @@ int main_bench()
     int p=0;
     while (1)
     {  
-        scanf("%c",&ch);
+        my_scanf("%c",&ch);
         if (ch=='\n') 
         {
             num[p]=tempnum;
@@ -36,9 +36,9 @@ int main_bench()
         if (num[i]>max) 
             max=num[i];
     if(max==0)
-        printf("No\n");
+        my_printf("No\n");
     else
-        printf("%d",max);
+        my_printf("%d",max);
     getchar();
     getchar();
     return 0;

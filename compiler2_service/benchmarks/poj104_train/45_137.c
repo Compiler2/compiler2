@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[50], w[50];
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	char*p,*l,*t;
 	int m,n;
 	
@@ -25,7 +25,7 @@ int main_bench()
 		if(m==k)
 		{
 			
-			printf("%d",n);
+			my_printf("%d",n);
 			break;
 		}
 	

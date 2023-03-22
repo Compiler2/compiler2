@@ -27,9 +27,9 @@ int main_bench()
 danci[n][k] = '\0';
 for(i=0;i<n;i++)
 {
-	printf("%s ",danci[i]);
+	my_printf("%s ",danci[i]);
 }
-printf("%s",danci[i]);
+my_printf("%s",danci[i]);
 
 	return 0;
 }

@@ -5,9 +5,9 @@ int main_bench(){
 	int i=1;
 	int max=0;
 	int time=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d %d\n",&x,&y);
+		my_scanf("%d %d\n",&x,&y);
 		if(x>=90 && x<=140 && y>=60 && y<=90){
 			time+=1;
 			if(time>=max){
@@ -17,6 +17,6 @@ int main_bench(){
 			time=0;
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

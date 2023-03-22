@@ -3,9 +3,9 @@
 int main_bench(){
 	int t,i,r,sz[10000];
 	double cz[10000],jz[10000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<t;i++){
 		double sum=0;
@@ -21,7 +21,7 @@ int main_bench(){
 				sum=sum+cz[r]/jz[r];
 			}
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 		return 0;
 }

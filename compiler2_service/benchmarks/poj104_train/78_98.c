@@ -13,7 +13,7 @@ int main_bench()
 				{
 					if(z+q==s+l&&z+l>s+q&&z+s<q)
 					{
-						printf("l %d\nq %d\nz %d\ns %d",l,q,z,s);
+						my_printf("l %d\nq %d\nz %d\ns %d",l,q,z,s);
 					}
 				}
 			}

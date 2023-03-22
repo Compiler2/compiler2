@@ -6,9 +6,9 @@ int main_bench()
 	int d[100];
 	int c[100];
 	float sum;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		d[0]=2;
 		c[0]=1;
 		sum=(float)d[0]/c[0];
@@ -17,7 +17,7 @@ int main_bench()
 			c[j]=d[j-1];
 			sum+=(float)d[j]/c[j];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

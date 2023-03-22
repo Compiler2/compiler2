@@ -8,10 +8,10 @@ char d[101][10];
 int a[101];
 int b[101];
 int c[101];
-scanf("%d",&n);
+my_scanf("%d",&n);
 old=0;
 for(i=1;i<=n;i++)
-scanf("%s %d",d[i],&a[i]);
+my_scanf("%s %d",d[i],&a[i]);
 for(i=1;i<=n;i++)
 {
 b[i]=0;
@@ -44,12 +44,12 @@ b[w]=2;
 for(l=1;l<=old;l++)
 {
 q=c[l];
-printf("%s\n",d[q]);
+my_printf("%s\n",d[q]);
 }
 for(l=1;l<=n;l++)
 {
 if(b[l]==0)
-printf("%s\n",d[l]);
+my_printf("%s\n",d[l]);
 }
 getchar();
 getchar();

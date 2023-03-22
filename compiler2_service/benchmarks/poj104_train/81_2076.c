@@ -6,7 +6,7 @@ int main_bench(){
     int te[5];
     for(h=0;h<5;h++){
         for(l=0;l<5;l++){
-        scanf("%d",&jz[h][l]);
+        my_scanf("%d",&jz[h][l]);
         }
     }
     
@@ -14,7 +14,7 @@ int main_bench(){
                 
             
     
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     if(n>-1&&n<5&&m>-1&&m<5){
         re=1;
     }
@@ -23,7 +23,7 @@ int main_bench(){
     }
     
     if(re==0){
-        printf("error");
+        my_printf("error");
     }
     else if(re==1){
         for(i=0,l=0;i<5;i++,l++){
@@ -37,14 +37,14 @@ int main_bench(){
         }
         for(h=0;h<4;h++){
             for(l=0;l<4;l++){
-                printf("%d ",jz[h][l]);
+                my_printf("%d ",jz[h][l]);
             }
-            printf("%d\n",jz[h][4]);
+            my_printf("%d\n",jz[h][4]);
         }
         for(l=0;l<4;l++){
-            printf("%d ",jz[4][l]);
+            my_printf("%d ",jz[4][l]);
         }
-        printf("%d",jz[4][4]);
+        my_printf("%d",jz[4][4]);
     }
     return 0;
 }

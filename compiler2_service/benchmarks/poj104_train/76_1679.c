@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[50001],b[50001],n,i,m,f,s;
 	double e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	s=a[0];
 	for(i=0;i<n;i++)
@@ -42,9 +42,9 @@ int main_bench()
 	}
 	if(f==1)
 	{
-		printf("%d %d",s, m);
+		my_printf("%d %d",s, m);
 	}else {
-	printf("no");
+	my_printf("no");
 	}
     return 0;
 }

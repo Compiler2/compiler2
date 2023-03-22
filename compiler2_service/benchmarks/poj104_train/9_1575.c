@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,i,j,k=0,t=0,y[100],x,a[100]={0},b[100];
     char s[100][20],temp[20],s1[100][20],s2[100][20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-     scanf("%s %d",s[i],&y[i]);
+     my_scanf("%s %d",s[i],&y[i]);
      }
     for(i=0;i<n;i++)
     {
@@ -32,7 +32,7 @@ int main_bench()
         strcpy(s1[j+1],temp);
       }
      for(i=0;i<k;i++)
-     printf("%s\n",s1[i],a[i]);
+     my_printf("%s\n",s1[i],a[i]);
        for(i=0;i<n;i++)
     {
       if(y[i]<60)
@@ -42,6 +42,6 @@ int main_bench()
         }
       }
      for(i=0;i<t;i++)
-     printf("%s\n",s2[i]);
+     my_printf("%s\n",s2[i]);
      return 0;
 }

@@ -20,11 +20,11 @@ int main_bench()
 	if(k==b)
 	{
 	for (j=0;j<i;j++)
-		printf("%c",p[j]);
-	printf("%s",r);
+		my_printf("%c",p[j]);
+	my_printf("%s",r);
 	for (j=i+b;j<a;j++)
-		printf("%c",p[j]);
+		my_printf("%c",p[j]);
 	}
-	else printf("%s",p);
+	else my_printf("%s",p);
 }
 	

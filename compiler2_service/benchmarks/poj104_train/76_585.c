@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,i,a,b,s,t;
     double l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int q[n],p[n];
     for(i=0;i<n;i=i+1){
-        scanf("%d%d",&(q[i]),&(p[i]));
+        my_scanf("%d%d",&(q[i]),&(p[i]));
     }
     a=q[0];
     for(i=0;i<n;i=i+1){
@@ -34,9 +34,9 @@ int main_bench()
         }
     }
     if(s==b-a){
-        printf("%d %d\n",a,b);
+        my_printf("%d %d\n",a,b);
     }else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

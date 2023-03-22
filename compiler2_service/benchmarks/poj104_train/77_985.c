@@ -5,7 +5,7 @@ int main_bench()
 	char c[100];
 	int boy[100]={0},girl[100]={0};
 	int i,j,k=0,r;
-    scanf("%s",c);
+    my_scanf("%s",c);
 	r=strlen(c);
 	for(i=0;i<r;i++)
 	{
@@ -25,5 +25,5 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k;i++)
-		printf("%d %d\n",boy[i],girl[i]);
+		my_printf("%d %d\n",boy[i],girl[i]);
 }

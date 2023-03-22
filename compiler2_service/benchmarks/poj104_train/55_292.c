@@ -5,7 +5,7 @@ int main_bench()
     int n,m,i,j,t=0,b=0;
     char s[80],s0[80];
     char s1[80]={"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-    scanf("%d %s %d",&n,s,&m);
+    my_scanf("%d %s %d",&n,s,&m);
     for(i=0;s[i]!='\0';i++)
     {
            if(s[i]>='a'&&s[i]<='z')
@@ -32,9 +32,9 @@ int main_bench()
    }
    for(i=b-1;i>=0;i--)
    {
-       printf("%c",s0[i]);
+       my_printf("%c",s0[i]);
    }
-    printf("\0");
+    my_printf("\0");
     return 0;
 }
      

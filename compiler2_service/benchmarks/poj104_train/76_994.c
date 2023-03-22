@@ -7,12 +7,12 @@ struct qujian{
  int y;
 } sz[50000],e;
  int n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int i;
 for(i=0;i<n;i++)
  {
- scanf("%d",&sz[i].x);
- scanf("%d",&sz[i].y);
+ my_scanf("%d",&sz[i].x);
+ my_scanf("%d",&sz[i].y);
   }
 int j,k;
 for(k=1;k<=n;k++)
@@ -40,13 +40,13 @@ for(i=0;i<n-1;i++)
       }
    else if(sz[i].y<sz[i+1].x)
      {
-      printf("no");
+      my_printf("no");
       return 0;
       }
  }
  if(i==n-1)
   {
-  printf("%d %d",sz[n-1].x,sz[n-1].y);
+  my_printf("%d %d",sz[n-1].x,sz[n-1].y);
   }
 return 0;
 }

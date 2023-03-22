@@ -6,15 +6,15 @@ int main_bench()
 	char c=',';
 	for(i=0;c==',';i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 	}
 	for(j=0;j<i;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 		c=getchar();
 	}
-	printf("%d ",i);
+	my_printf("%d ",i);
 	n=i;
 	k=0;
 	for(t=0;t<=999;t++)
@@ -34,6 +34,6 @@ int main_bench()
 			q=p[i];
 		else;
 	}
-	printf("%d",q);
+	my_printf("%d",q);
 	return 0;
 }

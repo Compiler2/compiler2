@@ -3,12 +3,12 @@
 int main_bench()
 {	
 int n;	
-scanf("%d",&n);	
+my_scanf("%d",&n);	
 int x,y,a;	
 int i=0,b=0;	
 if(n==1)	
 {	  
-scanf("%d %d",&x,&y);	  
+my_scanf("%d %d",&x,&y);	  
 if(x<90||x>140||y<60||y>90)	 
  {	 
    b=0; 
@@ -29,7 +29,7 @@ if(i==n+1)
 		  b=n;	
 	  break;	
 	}		
-scanf("%d %d",&x,&y);	
+my_scanf("%d %d",&x,&y);	
 	if(x<90||x>140||y<60||y>90)	
 	{		
   a=i;		
@@ -47,4 +47,4 @@ scanf("%d %d",&x,&y);
     b=n-a;		
 	break;		
   }		  else	
-	  {		    b=b;			break;		  }		}		scanf("%d %d",&x,&y);		if(x<90||x>140||y<60||y>90)		{		  if(i-a-1>b)		  {		    b=i-a-1;			a=i;		  }		  else		  {		    b=b;			a=i;		  }		}	  }	}	printf("%d",b);	return 0;}
+	  {		    b=b;			break;		  }		}		my_scanf("%d %d",&x,&y);		if(x<90||x>140||y<60||y>90)		{		  if(i-a-1>b)		  {		    b=i-a-1;			a=i;		  }		  else		  {		    b=b;			a=i;		  }		}	  }	}	my_printf("%d",b);	return 0;}

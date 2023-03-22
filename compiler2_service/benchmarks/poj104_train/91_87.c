@@ -15,7 +15,7 @@ int main_bench()
 	for(j=0;j<k;j++)
 	{
 		c[j]=(char)b[j];
-	    printf("%c",c[j]);
+	    my_printf("%c",c[j]);
 	}
 	return 0;
 }

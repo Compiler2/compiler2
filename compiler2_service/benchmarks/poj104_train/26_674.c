@@ -18,5 +18,5 @@ int main_bench()
 
     }
     for(i=0;i<flag;i++)
-    printf("%c",b[i]);
+    my_printf("%c",b[i]);
 }

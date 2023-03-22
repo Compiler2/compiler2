@@ -11,8 +11,8 @@ int main_bench(){
 			end=start+len2-1;
 			for(i=start;i<=end;i++){if(input[i]!=input[end+start-i]){judge=0;}}
 			if(judge==1){
-				for(i=start;i<=end;i++){printf("%c",input[i]);}
-				printf("\n");			
+				for(i=start;i<=end;i++){my_printf("%c",input[i]);}
+				my_printf("\n");			
 			}}}
 return 0;
 }

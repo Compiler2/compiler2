@@ -11,9 +11,9 @@ main_bench()
 {
     int i,a[6],b[6];
     for(i=0;i<6;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<6;i++)
     b[i]=invert(a[i]);
     for(i=0;i<6;i++)
-    printf("%d\n",b[i]);
+    my_printf("%d\n",b[i]);
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int j,k,l,n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     j=2;
     k=2;
     if(n>=5)
@@ -20,11 +20,11 @@ int main_bench()
              j=k;
              k=l;
              if(k-j==2)
-                printf("%d %d\n",j,k);
+                my_printf("%d %d\n",j,k);
           }
        }
     }
     else
-    printf("empty");           
+    my_printf("empty");           
     return 0;
 }       

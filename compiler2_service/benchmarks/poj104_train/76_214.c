@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,a[50000],b[50000];
 	int i,count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int min=10000,max=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]<min)
 			min=a[i];
 		if(b[i]>max)
@@ -16,7 +16,7 @@ int main_bench()
 	}
 	double k;
 	if(min==max)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	else
 	{
 		for(k=min+0.5;k<max;k++)
@@ -34,8 +34,8 @@ int main_bench()
 				count++;
 		}
 		if(count==(max-min))
-			printf("%d %d",min,max);
-		else printf("no");
+			my_printf("%d %d",min,max);
+		else my_printf("no");
 	}
 	return 0;
 }

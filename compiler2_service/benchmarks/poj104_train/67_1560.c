@@ -4,21 +4,21 @@ main_bench()
 {
     int n,i;
     float a[100],b[100],c[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%f",&a[i]);
-        scanf("%f",&b[i]);
+        my_scanf("%f",&a[i]);
+        my_scanf("%f",&b[i]);
         c[i]=b[i]/a[i];
     }
     for(i=1;i<n;i++)
     {
         if(c[i]-c[0]>0.05)
-        printf("better");
+        my_printf("better");
         else if(c[i]-c[0]<-0.05)
-        printf("worse");
+        my_printf("worse");
         else
-        printf("same");
-        printf("\n");
+        my_printf("same");
+        my_printf("\n");
     }
 }

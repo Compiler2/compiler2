@@ -7,7 +7,7 @@ int main_bench()
     gets(num);
     int i;
     for (i=1;i<=strlen(num);i++)
-        printf("%c",num[strlen(num)-i]);
-    printf("\n");
+        my_printf("%c",num[strlen(num)-i]);
+    my_printf("\n");
     
 }

@@ -14,9 +14,9 @@ int main_bench(){
 	int n,i;
 	struct student *pointer1;
 	pointer1=stu;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].pingjun,&stu[i].banyi,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].pingjun,&stu[i].banyi,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
 	}
 	scholar(pointer1,n);
 	return 0;
@@ -47,6 +47,6 @@ void scholar(struct student *p,int a){
 			jishu=j;
 		}
 	}
-	printf("%s\n%d\n%d",(p+jishu)->name,max,sum);
+	my_printf("%s\n%d\n%d",(p+jishu)->name,max,sum);
 
 }

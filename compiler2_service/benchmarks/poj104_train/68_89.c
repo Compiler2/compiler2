@@ -19,7 +19,7 @@ int ss(int n)
 int main_bench()
 {
 	int m,k,j,p;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=6;k<=m;k=k+2)
 	{
 		for(j=3;j<=k/2;j+=2)
@@ -29,7 +29,7 @@ int main_bench()
 				p=k-j;
 				if(ss(p))
 				{
-					printf("%d=%d+%d\n",k,j,p);
+					my_printf("%d=%d+%d\n",k,j,p);
 					break;
 				}
 			}

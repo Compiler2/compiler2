@@ -6,10 +6,10 @@ int main_bench()
 	float sum,chu;
 	float a[100]={1,2};
 	float b[100]={2,3};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=0;i<m;i++)
 	{
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 		sum=0;
 		for (j=0;j<c[i];j++)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 			chu=b[j]/a[j];
 			sum=sum+chu;
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

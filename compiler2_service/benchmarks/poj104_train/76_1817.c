@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,a,b;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int shuzu[10000],Shuzu[10000],p,q,num=0;
 for(int i=0;i<n;i++)
-scanf("%d%d",&shuzu[i],&Shuzu[i]);
+my_scanf("%d%d",&shuzu[i],&Shuzu[i]);
 a=shuzu[0];
 for(int j=1;j<n;j++) 
 if(a>shuzu[j]) a=shuzu[j];
@@ -28,9 +28,9 @@ for(int x=1;x<=n;x++,num=0)
   if(x==n) break;
  }
 if(num==n-1)
-printf("%d %d",a,b);
+my_printf("%d %d",a,b);
 else
-printf("no");
+my_printf("no");
 return 0;
 }
 

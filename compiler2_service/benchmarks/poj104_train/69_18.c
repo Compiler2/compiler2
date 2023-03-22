@@ -13,8 +13,8 @@ int main_bench()
 		c[i] = 0;
 	}
 
-	scanf ( "%s", s1);
-	scanf ( "%s", s2);
+	my_scanf ( "%s", s1);
+	my_scanf ( "%s", s2);
 
 	len1 = strlen (s1);
 	len2 = strlen (s2);
@@ -52,7 +52,7 @@ int main_bench()
 
 	for ( i = len; i > 0; i--)
 	{
-		printf ("%d", a[i-1]);
+		my_printf ("%d", a[i-1]);
 	}
 }
 

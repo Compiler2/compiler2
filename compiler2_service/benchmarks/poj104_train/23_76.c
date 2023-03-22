@@ -20,6 +20,6 @@ int main_bench()
     word[num][j++]='\0';}
     }
 for(i=num;i>1;i--)
-printf("%s ",word[i]);
-printf("%s",word[1]);
+my_printf("%s ",word[i]);
+my_printf("%s",word[1]);
 }

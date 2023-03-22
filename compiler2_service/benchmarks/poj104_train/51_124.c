@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[501],c[500][6];
 int n,i,k,j,m;
-scanf("%d%s",&n,a);
+my_scanf("%d%s",&n,a);
 k=strlen(a);
 int b[500];
 for(i=0;i<=k-n;i++)
@@ -19,9 +19,9 @@ for(j=i+1;j<=k-n;j++)
 m=b[0];
 for(i=1;i<k-n;i++)
 {if(b[i]>m)m=b[i];}
-if(m==1)printf("NO");
-else {printf("%d\n",m);
+if(m==1)my_printf("NO");
+else {my_printf("%d\n",m);
 for(i=0;i<k-n;i++)
-{if(b[i]==m)printf("%s\n",c[i]);}
+{if(b[i]==m)my_printf("%s\n",c[i]);}
 }
 }

@@ -34,9 +34,9 @@ int main_bench()
  }
  for(i=0;i<t-1;i++)
  {
-	printf("%s ",zj[i]);
+	my_printf("%s ",zj[i]);
  }
- printf("%s",zj[i]);
+ my_printf("%s",zj[i]);
  return 0;
 }
  

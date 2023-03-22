@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int a, b, c, l, i;
 	for(i=0; i<n; i++){
-		scanf("%d%d%d", &a, &b, &c);
+		my_scanf("%d%d%d", &a, &b, &c);
 		if((a%400==0)||(a%4==0&&a%100!=0))
 			l=29;
 		else
@@ -34,9 +34,9 @@ int main_bench()
 			}
 		}
 		if(sum%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

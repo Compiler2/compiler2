@@ -2,9 +2,9 @@
 
 int main_bench()
 {int a[100][2],n,i,j,kai;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<=n-1;i++)
-{scanf("%d",&a[i][0]);a[i][1]=0;}
+{my_scanf("%d",&a[i][0]);a[i][1]=0;}
 
 for(i=0;i<=n-1;i++)
 {
@@ -15,9 +15,9 @@ for(i=0;i<=n-1;i++)
 for(i=0,kai=0;i<=n-1;i++)
 {
                          if(a[i][1]==0&&kai==0)
-                         {printf("%d",a[i][0]);kai=1;continue;}
+                         {my_printf("%d",a[i][0]);kai=1;continue;}
                          if(a[i][1]==0&&kai==1)
-                         printf(",%d",a[i][0]);
+                         my_printf(",%d",a[i][0]);
 }
 
                        

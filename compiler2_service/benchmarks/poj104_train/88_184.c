@@ -10,10 +10,10 @@ int main_bench()
 	for(p=a;*p!='\0';p++)
 		if(*p>=48&&*p<=57)
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 			if(*(p+1)<48||*(p+1)>57)
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 }

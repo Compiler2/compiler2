@@ -6,10 +6,10 @@ int main_bench()
 	int n,i,a[300],s=0;
 	double t,max=0;
 	int x,y,flag;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	t=(float)s/n;
@@ -29,14 +29,14 @@ int main_bench()
 	}
 	if(flag){
 		if(x>y){
-			printf("%d,%d",y,x);
+			my_printf("%d,%d",y,x);
 		}
 		else{
-			printf("%d,%d",x,y);
+			my_printf("%d,%d",x,y);
 		}
 	}
 	else{
-		printf("%d",x);
+		my_printf("%d",x);
 	}
 	return 0;
 

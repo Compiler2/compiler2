@@ -6,9 +6,9 @@ int main_bench()
 {
 	char a[256],b[256],c[256];
 	int la,lb,lc,i,j,p=0;
-	scanf ("%s",a);
-	scanf ("%s",b);
-	scanf ("%s",c);
+	my_scanf ("%s",a);
+	my_scanf ("%s",b);
+	my_scanf ("%s",c);
 	la=strlen(a);
 	lb=strlen(b);
 	lc=strlen(c);
@@ -31,6 +31,6 @@ int main_bench()
 			}
 		}
 	}
-	printf ("%s",a);
+	my_printf ("%s",a);
 	return 0;
 }

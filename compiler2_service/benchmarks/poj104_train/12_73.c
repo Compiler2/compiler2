@@ -9,9 +9,9 @@ int main_bench()
 		int a=0;
 		for(int i=0;i<16;i++)
 		{
-			scanf("%f",&s[i]);
-			if(s[0]==-1||scanf(""))
-				printf("");
+			my_scanf("%f",&s[i]);
+			if(s[0]==-1||my_scanf(""))
+				my_printf("");
 			else
 			{
 				u+=1;
@@ -32,10 +32,10 @@ int main_bench()
 						b++;
 				}
 			}
-			printf("%d\n",b);
+			my_printf("%d\n",b);
 			g++;
 			if(g==u)
-			printf("");
+			my_printf("");
 		}
 	  
 	return 0;

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,j,k,m=0,h=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sushu=(int *)malloc(sizeof(int) * n);
 	for(i=3;i<=n;i++)
 	{
@@ -25,12 +25,12 @@ int main_bench()
 	{
 		if(sushu[i+1]-sushu[i]==2)
 		{
-			printf("%d %d\n",sushu[i],sushu[i+1]);h=1;
+			my_printf("%d %d\n",sushu[i],sushu[i+1]);h=1;
 		}
 	}
 	if(h==0)
 {
-printf("empty\n");
+my_printf("empty\n");
 }
 
 	return 0;

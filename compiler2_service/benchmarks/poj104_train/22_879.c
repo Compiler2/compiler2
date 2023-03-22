@@ -4,11 +4,11 @@ int main_bench()
 {
     int a,b,max,min,n,s=0;
     char c;
-    scanf("%d%c",&a,&c);
+    my_scanf("%d%c",&a,&c);
     if (c=='\n')
-    printf("No");
+    my_printf("No");
     else
-    {  scanf("%d%c",&b,&c);
+    {  my_scanf("%d%c",&b,&c);
     if (a>b)
     {max=a;
     min=b;
@@ -23,7 +23,7 @@ int main_bench()
     s=0;}
     for (;c==',';)
     {
-             scanf("%d%c",&n,&c);
+             my_scanf("%d%c",&n,&c);
              if (n!=a||n!=b)
              s=1;
               if (n>min&&n<max)
@@ -36,8 +36,8 @@ int main_bench()
     }
 
     if (s==0)
-    printf("No");
+    my_printf("No");
     else
-    printf("%d",min);}
+    my_printf("%d",min);}
        return 0;
 }

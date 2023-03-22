@@ -4,7 +4,7 @@
 int main_bench(){
     char asd[300],zxc[300];
 	int n=0,m=0,i,j,k;
-	scanf("%s",asd);
+	my_scanf("%s",asd);
 	int len=strlen(asd);
 	m=asd[0]-48;
 	for(i=1;i<len;i++)
@@ -31,6 +31,6 @@ int main_bench(){
 		zxc[0]='0';
 		zxc[1]='\0';
 	}
-	printf("%s\n%d\n",zxc,m);
+	my_printf("%s\n%d\n",zxc,m);
 	return 0;
 }

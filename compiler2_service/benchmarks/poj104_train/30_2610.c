@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[100],i,n,j=-1,s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		if(i%7==0) continue;
@@ -13,5 +13,5 @@ int main_bench()
 	}
 	for(i=0;i<=j;i++)
 		s=s+a[i]*a[i];
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,j,l,shou[100],shu[100],total[100]={0},k=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-     scanf("%d%d",&shou[i],&shu[i]);
+     my_scanf("%d%d",&shou[i],&shu[i]);
   }
   for(j=0;j<n;j++){
 	 if(shou[j]>=90&&shou[j]<=140&&shu[j]>=60&&shu[j]<=90){
@@ -21,6 +21,6 @@ int main_bench()
 	    max=total[l];
 	  }
   }
-  printf("%d",max);
+  my_printf("%d",max);
   return 0;
 }

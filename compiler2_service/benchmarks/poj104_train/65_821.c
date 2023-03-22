@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n;
 	int a,b,x=0,y=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
-	{scanf("%d%d",&a,&b);
+	{my_scanf("%d%d",&a,&b);
 		if(a==0)
 		{
 			if(b==1)
@@ -40,10 +40,10 @@ int main_bench()
 		}
 	}
 if(x>y)
-printf("A");
+my_printf("A");
 if(x==y)
-printf("Tie");
+my_printf("Tie");
 if(x<y)
-printf("B");
+my_printf("B");
 return 0;
 }

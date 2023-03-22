@@ -14,5 +14,5 @@ int main_bench()
     *p+=c;
     p=a;
     for(i=0;i<l;i++){
-       printf("%c",*(p++));}
+       my_printf("%c",*(p++));}
 }

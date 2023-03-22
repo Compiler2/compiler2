@@ -10,10 +10,10 @@ int main_bench()
 	{
 		if(a[i]>='a')a[i]=a[i]-'a'+'A';
 		if(b[i]>='a')b[i]=b[i]-'a'+'A';
-	    if(a[i]>b[i]){printf(">"); k=1;break;}
-	    if(a[i]<b[i]){printf("<");k=1;break;}
+	    if(a[i]>b[i]){my_printf(">"); k=1;break;}
+	    if(a[i]<b[i]){my_printf("<");k=1;break;}
 		i++;
 	} 
-	if(k==0)printf("=");
+	if(k==0)my_printf("=");
 	return 0;
 }

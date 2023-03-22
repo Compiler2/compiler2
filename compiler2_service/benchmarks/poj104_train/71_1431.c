@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	int y;
 	int m1,m2;
@@ -12,7 +12,7 @@ int main_bench()
 	int j;
 	for(i=1;i<=n;i++)
 	{
-	    scanf("%d%d%d",&y,&m1,&m2);
+	    my_scanf("%d%d%d",&y,&m1,&m2);
 		if(m1>m2) {
 			e=m1;
 			m1=m2;
@@ -32,9 +32,9 @@ int main_bench()
 				else d+=28;
 			}
 		}
-		if(d%7==0) printf("YES\n");
+		if(d%7==0) my_printf("YES\n");
 		else {
-                  printf("NO\n");}
+                  my_printf("NO\n");}
 	}
 	return 0;
 }

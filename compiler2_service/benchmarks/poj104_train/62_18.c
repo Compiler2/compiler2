@@ -9,8 +9,8 @@ main_bench()
               if (a[i]==0) break;
               else
               {
-              if(a[i]!=' ') printf("%c",a[i]);
-              if(a[i]==' ' && a[i+1]!=' ') printf("%c",a[i]);
+              if(a[i]!=' ') my_printf("%c",a[i]);
+              if(a[i]==' ' && a[i+1]!=' ') my_printf("%c",a[i]);
               }
       }
 }

@@ -12,7 +12,7 @@ int main_bench()
 		if(a[k]==' ')
 			l++;
 	}
-	if(l==1)printf("%s",a);
+	if(l==1)my_printf("%s",a);
 	else
 	{
 	for(i=1;i<=l-1;i++)
@@ -22,14 +22,14 @@ int main_bench()
 			k--;
 		
 		for(h=k+1;h<=j-1;h++)
-			printf("%c",a[h]);
-		printf(" ");
+			my_printf("%c",a[h]);
+		my_printf(" ");
 		j=k;
 	}
 	i=0;
 	while(a[i]!=' ')
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 		i++;
 	}
 	}

@@ -22,10 +22,10 @@ int main_bench()
 		}
 		if(st[k-2]=='\0')break;
 	}
-	printf("%s",swst[i-1]);
+	my_printf("%s",swst[i-1]);
 
 	for(t=i-2;t>=0;t--)
-		printf(" %s",swst[t]);
-	printf("\n");
+		my_printf(" %s",swst[t]);
+	my_printf("\n");
 	return 0;
 }

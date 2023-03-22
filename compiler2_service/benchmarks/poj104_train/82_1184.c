@@ -7,9 +7,9 @@ int main_bench(){
 	for(int k=0;k<=120;k++){
 	sb[k]=0;
 	}
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 
 		if(a<=140&&a>=90&&b>=60&&b<=90){
 			s++;
@@ -23,7 +23,7 @@ int main_bench(){
 		if(sb[j+1]<sb[j])
 			sb[j+1]=sb[j];
 	}
-	printf("%d",sb[119]);
+	my_printf("%d",sb[119]);
 			
 
 

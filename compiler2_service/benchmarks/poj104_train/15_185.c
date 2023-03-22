@@ -3,11 +3,11 @@
 int main_bench()
 { int p[100][100];
 int n,i,j,h,k,m,l,a=0,b=0,sum;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
 	for(j=0;j<n;j++)
-	{scanf("%d",&p[i][j]);
+	{my_scanf("%d",&p[i][j]);
 	}
 }
 for(h=0;h<n;h++)
@@ -26,6 +26,6 @@ for(m=0;m<n;m++)
 	if(b!=0) break;
 }
 sum=(a-2)*(b-2);
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 }
 

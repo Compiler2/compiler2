@@ -4,10 +4,10 @@ main_bench()
 {
      int i,j,x,y=0,z,a,b,q;
      char c[40];
-     scanf ("%d %s %d",&a,c,&b);
+     my_scanf ("%d %s %d",&a,c,&b);
      i=strlen (c);
      if (c[0]=='0')
-     printf ("0\n");
+     my_printf ("0\n");
      else 
      {
           for (j=0;j<i;j++)
@@ -40,7 +40,7 @@ main_bench()
                          h[i-j-1]=k[j]+'0';
                     }
               for (j=0;j<i;j++)
-              printf ("%c",h[j]);       
+              my_printf ("%c",h[j]);       
               
 }
     getchar ();

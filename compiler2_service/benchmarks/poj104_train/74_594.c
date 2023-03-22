@@ -7,7 +7,7 @@ int main_bench()
 	char s1[20],s2[20];
 	int amount=0;
 
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	for(i=m;i<=n;i++)
 	{
@@ -41,18 +41,18 @@ int main_bench()
 
 	if(amount==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
     else
 	{
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	    for(p=1;p<amount;p++)
 		{
-	    	printf(",%d",a[p]);
+	    	my_printf(",%d",a[p]);
 		} 
 	}
 
-	printf("\n");
+	my_printf("\n");
 
     return 0;
 }

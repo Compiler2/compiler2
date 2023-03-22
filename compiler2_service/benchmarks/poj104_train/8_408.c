@@ -21,19 +21,19 @@ void hb(int a[],int m,int b[],int n)
 	for (j=m;j<=m+n-1;j++)
 		c[j]=b[j-m];
 	for (k=0;k<m+n-1;k++)
-		printf("%d ",c[k]);
-	printf("%d",c[m+n-1]);
+		my_printf("%d ",c[k]);
+	my_printf("%d",c[m+n-1]);
 }
 main_bench()
 {
 	int m,n,i,j;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int a[1000];
 	for (i=0;i<=m-1;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	int b[1000];
 	for (j=0;j<=n-1;j++)
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	px(a,m);px(b,n);
 	hb(a,m,b,n);
 	return 0;

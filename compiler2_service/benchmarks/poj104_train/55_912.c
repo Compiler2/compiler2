@@ -8,7 +8,7 @@ int main_bench()
 	long int x = 0, y;
 	char num1[100], num2[100], c;
 	
-	scanf("%d%s%d", &a, &num1, &b);
+	my_scanf("%d%s%d", &a, &num1, &b);
 	
 	for ( i = 0; i < strlen(num1); i ++ ){
 		if ( num1[i] >= 'a' && num1[i] <= 'z' )
@@ -19,7 +19,7 @@ int main_bench()
 			 x = x * a + num1[i] - '0';
 	}
 	if ( x == 0 ){
-		printf("0");
+		my_printf("0");
 		return 0;
 	}
 	i = 0;
@@ -29,11 +29,11 @@ int main_bench()
 	}
 	for ( ; i > 0; i-- ){
 		if ( num2[i - 1] >= 0 && num2[i - 1] <= 9 )
-			printf("%d", num2[i - 1]);
+			my_printf("%d", num2[i - 1]);
 		if ( num2[i - 1] >9)
-			printf("%c", num2[i - 1] - 10 + 'A');
+			my_printf("%c", num2[i - 1] - 10 + 'A');
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

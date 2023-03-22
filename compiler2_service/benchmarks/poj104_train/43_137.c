@@ -4,7 +4,7 @@
 int main_bench()
 {
   int m;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   int a,i;
   for(a=3;a<=(m/2);a=a+2)
   {
@@ -19,7 +19,7 @@ int main_bench()
      
      
      if(c==0&&d==0)
-    printf("%d %d\n",a,m-a);  
+    my_printf("%d %d\n",a,m-a);  
   }
   getchar();
   getchar(); 

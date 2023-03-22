@@ -6,9 +6,9 @@ int main_bench(){
 		int y,a;
 		char id[10];
 	}p[100],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",p[i].id,&p[i].y);
+		my_scanf("%s %d",p[i].id,&p[i].y);
 		p[i].a=i+1;
 	}
 	for(i=0;i<n;i++){
@@ -40,7 +40,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",p[i].id);
+		my_printf("%s\n",p[i].id);
 	}
 return 0;
 }

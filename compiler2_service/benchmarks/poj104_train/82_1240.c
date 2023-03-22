@@ -3,9 +3,9 @@
 int main_bench() {
 	int n,a,b,c=0,i=0,j=0,m=0;
 	int sz[72];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<n){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a<=140&&a>=90&&b<=90&&b>=60){
 			j+=1;
 		}else{
@@ -21,6 +21,6 @@ int main_bench() {
 	if(c<j){
 		c=j;
 	}
-	printf("%d",c);
+	my_printf("%d",c);
 	return 0;
 }

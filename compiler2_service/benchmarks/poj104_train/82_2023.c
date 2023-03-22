@@ -3,13 +3,13 @@
 int main_bench(){
     int n,i,x=0,c=0;
     int num[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct xueya{
         int a;
         int b;
     }xy[100];
     for(i=0;i<n;i++){
-        scanf("%d %d",&xy[i].a,&xy[i].b);
+        my_scanf("%d %d",&xy[i].a,&xy[i].b);
     }
     for(i=0;i<n-1;i++){
         if(90<=xy[i].a&&xy[i].a<=140&&60<=xy[i].b&&xy[i].b<=90){
@@ -41,7 +41,7 @@ int main_bench(){
             }
         }
     }
-    printf("%d\n",num[c-1]);
+    my_printf("%d\n",num[c-1]);
 return 0;
 }
 

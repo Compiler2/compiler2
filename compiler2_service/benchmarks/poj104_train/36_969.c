@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str1[100],str2[100];
 	int count1[500]={0},count2[500]={0},i,n,m;
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	n=strlen(str1);
 	m=strlen(str2);
 	for(i=0;i<n;i++)
@@ -33,11 +33,11 @@ int main_bench()
 	{
 		if(count1[i]!=count2[i])
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 	}
 	if(i>=500)
-		printf("YES");
+		my_printf("YES");
 }
 	

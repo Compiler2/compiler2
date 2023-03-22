@@ -6,20 +6,20 @@ int main_bench()
 {
     for (i=0;i<5;i++)
         for (j=0;j<5;j++)
-            scanf("%d",&a[i][j]);
-    scanf("%d %d",&x,&y);
+            my_scanf("%d",&a[i][j]);
+    my_scanf("%d %d",&x,&y);
     b[x]=y;
     b[y]=x;
     if (x<0 || x>4 || y<0 || y>4)
     {
-        printf("error\n");
+        my_printf("error\n");
         return 0;
     }
     for (i=0;i<5;i++)
     {
         for (j=0;j<4;j++)
-            printf("%d ",a[b[i]][j]);
-        printf("%d\n",a[b[i]][j]);
+            my_printf("%d ",a[b[i]][j]);
+        my_printf("%d\n",a[b[i]][j]);
     }
     return 0;
 }

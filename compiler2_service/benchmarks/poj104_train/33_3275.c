@@ -11,12 +11,12 @@ int main_bench()
     for(i=0;i<n;i++){
                     for(j=0;str[i][j]!='\0';j++){
                                                  if(str[i][j]=='A'||str[i][j]=='T'){
-                                                    printf("%c",149-str[i][j]);
+                                                    my_printf("%c",149-str[i][j]);
                                                  }else{
-                                                    printf("%c",138-str[i][j]);
+                                                    my_printf("%c",138-str[i][j]);
                                                     }
                                                  }
-                    printf("\n");
+                    my_printf("\n");
                      }
     
     return 0;

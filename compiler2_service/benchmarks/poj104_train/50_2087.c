@@ -16,12 +16,12 @@ int main_bench()
 	a[11]=316;
 	a[12]=346;
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		if((a[i]+w)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

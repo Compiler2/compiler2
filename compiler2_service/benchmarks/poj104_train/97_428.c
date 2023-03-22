@@ -2,7 +2,7 @@
 
 int main_bench(){
    int a,b,c,d,e,f,g,x,y,z,h,i,j;
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    z=a%100;
    x=a-z;
    b=x/100;
@@ -20,6 +20,6 @@ int main_bench(){
    x=z-y;
    f=x/5;
    g=y;
-   printf("%d\n%d\n%d\n%d\n%d\n%d\n",b,c,d,e,f,g);
+   my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",b,c,d,e,f,g);
 return 0;
 }

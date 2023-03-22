@@ -5,9 +5,9 @@ int main_bench()
 int n,i;
 double t,s,h,y,lt,ls,lh,ly;
 int k[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d ",&k[i]);
+my_scanf("%d ",&k[i]);
 if(k[i]<=18)
 t++;
 else if(k[i]>18&&k[i]<=35)
@@ -25,9 +25,9 @@ lt=100*t;
 ls=100*s;
 lh=100*h;
 ly=100*y;
-printf("1-18: %.2lf%\n",lt);
-printf("19-35: %.2lf%\n",ls);
-printf("36-60: %.2lf%\n",lh);
-printf("60??: %.2lf%\n",ly);
+my_printf("1-18: %.2lf%\n",lt);
+my_printf("19-35: %.2lf%\n",ls);
+my_printf("36-60: %.2lf%\n",lh);
+my_printf("60??: %.2lf%\n",ly);
 return 0;
 }

@@ -5,27 +5,27 @@ int main_bench()
   int n,i;
   double x,y;
   int zs[100],yx[100];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)  
   {
-  	scanf("%d%d",&zs[i],&yx[i]);
+  	my_scanf("%d%d",&zs[i],&yx[i]);
   }
   x=1.0*yx[0]/zs[0];
    for(i=1;i<n;i++)  {
    	y=1.0*yx[i]/zs[i];
   	if(y-x>0.05)
   	{
-  		printf("better");
-  		printf("\n");
+  		my_printf("better");
+  		my_printf("\n");
   	}
   	else if(x-y>0.05)
   	{
-  	    printf("worse");
-  	    printf("\n");
+  	    my_printf("worse");
+  	    my_printf("\n");
   	}
   	else
   	{
-  		printf("same\n");
+  		my_printf("same\n");
   	}
   }
 return 0;

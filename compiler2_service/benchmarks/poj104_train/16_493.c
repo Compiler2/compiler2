@@ -4,8 +4,8 @@ int main_bench()
 {
 	char s[20];
 	int l, i;
-	scanf("%s", s);
+	my_scanf("%s", s);
 	l = strlen(s);
-	for (i = l - 1; i >= 0; i--) printf("%c", s[i]);
+	for (i = l - 1; i >= 0; i--) my_printf("%c", s[i]);
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	char a[100][100];
 	int j,n,i,count=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	scanf("%s",&a[i]);
+	my_scanf("%s",&a[i]);
 	for(j=0;j<strlen(a[i]);j++)
 	{
 		if((int)a[i][0]>47&&(int)a[i][0]<58)
@@ -16,8 +16,8 @@ int main_bench()
         	continue;
     	else count++;}
 	   if(count==0)
-		printf("yes\n");
-		else printf("no\n");
+		my_printf("yes\n");
+		else my_printf("no\n");
 		count=0; 
 	}
 	

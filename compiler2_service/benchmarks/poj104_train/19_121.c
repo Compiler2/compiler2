@@ -26,19 +26,19 @@ int main_bench()
 		{
 			temp[j]='\0';
 			if(strcmp(temp,a)==0)
-				printf("%s ",b);
+				my_printf("%s ",b);
 			else
-				printf("%s ",temp);
+				my_printf("%s ",temp);
 			flag=0;
 			j=0;
 		}
 		else
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 	}		
 	temp[j]='\0';
 	if(strcmp(temp,a)==0)
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	else
-		printf("%s\n",temp);
+		my_printf("%s\n",temp);
    return 0;
 }

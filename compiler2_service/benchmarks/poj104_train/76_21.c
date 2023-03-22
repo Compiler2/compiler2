@@ -5,10 +5,10 @@ int main_bench()
 	int a[100][2];
 	int n;
 	int x,y,d=0,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i][0],&a[i][1]);
+		my_scanf("%d %d",&a[i][0],&a[i][1]);
 	}
 	x=a[1][0];
 	y=a[1][1];
@@ -71,11 +71,11 @@ int main_bench()
 	}
 	if(d==2)
 	{
-		printf("%d %d",x,y);
+		my_printf("%d %d",x,y);
 	}
 	if(d!=2)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

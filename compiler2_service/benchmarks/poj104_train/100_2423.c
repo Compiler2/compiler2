@@ -10,7 +10,7 @@ int main_bench()
 {
 	char s[301];
 	int i,sign=0,j;
-	scanf("%s",s);
+	my_scanf("%s",s);
 
 	for(i=0;i<=25;i++)
 	{	w[i].a=65+i;
@@ -33,7 +33,7 @@ int main_bench()
 		}
 	}
 	if(sign==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=0;i<52;i++)
@@ -42,7 +42,7 @@ int main_bench()
 				continue;
 			else
 			{
-				printf("%c=%d\n",w[i].a,w[i].n);
+				my_printf("%c=%d\n",w[i].a,w[i].n);
 			}
 		}
 	}

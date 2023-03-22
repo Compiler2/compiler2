@@ -5,18 +5,18 @@ int main_bench()
 	int max(int a[],int n);
 	int min(int a[],int n);
 	int a[1000],b[1000],i=1,j,c[1000]={0},count=0,n,maxa,maxb,mina,minb,max_,min_,max0,maxman;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	while(getchar()==',')
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 	}
 	n=i;
 	i=1;
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	while(getchar()==',')
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		i++;
 	}
 	maxa=max(a,n);
@@ -40,7 +40,7 @@ int main_bench()
 	{
 		if(c[i]>=maxman)maxman=c[i];
 	}
-	printf("%d %d\n",n,maxman);
+	my_printf("%d %d\n",n,maxman);
 }
 
 int max(int a[],int n)

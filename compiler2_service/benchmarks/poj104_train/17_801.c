@@ -6,14 +6,14 @@ int main_bench()
     int i,j,k,n;
     void pipei(char c[110]);
     int print(char c[110]); 
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
                     gets(c[i]);
     }
     for(i=0;i<n;i++)
     {
-                    printf("%s\n",c[i]);
+                    my_printf("%s\n",c[i]);
                     pipei(c[i]);
     }
     return 0;
@@ -69,10 +69,10 @@ int print(char c[110])
      int i;
      for(i=0;i<strlen(c);i++)
      {
-                             if(c[i]=='(') printf("$");
-                             else if(c[i]==')') printf("?");
-                             else printf(" ");
+                             if(c[i]=='(') my_printf("$");
+                             else if(c[i]==')') my_printf("?");
+                             else my_printf(" ");
      }
-     printf("\n");
+     my_printf("\n");
      return 0;
 }

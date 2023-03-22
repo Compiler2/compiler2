@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[600],b[600][10]={0};
 	int n,i,j,k=0,max=0,len,c[600]={0};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);len=strlen(a);
 	for(i=0;i<=len-n;i++)
 	{
@@ -22,10 +22,10 @@ int main_bench()
 	}
 	if(max>1)
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<k;i++)
 		if(c[i]==max)puts(b[i]);
 	}
-	else printf("NO");
+	else my_printf("NO");
 	return 0;
 }

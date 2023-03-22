@@ -12,10 +12,10 @@ int main_bench()
 	int n,m;
 	int i,j=0,k=0;
 	struct patient a[100],b[100],c[100],t[1];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",a[i].ID,&a[i].age);
+		my_scanf("%s%d",a[i].ID,&a[i].age);
 		if(a[i].age>=60)
 		{
 			strcpy(b[j].ID,a[i].ID);
@@ -47,8 +47,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m;i++)
-		printf("%s\n",b[i].ID);
+		my_printf("%s\n",b[i].ID);
 	for(i=0;i<k;i++)
-		printf("%s\n",c[i].ID);
+		my_printf("%s\n",c[i].ID);
 	return 0;
 }

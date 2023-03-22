@@ -16,23 +16,23 @@ double ck(int x)
 }
 int main_bench()
 {
-	while(scanf("%d",&n)==1)
+	while(my_scanf("%d",&n)==1)
 	{
 		int sum1=0;
 		double sum2=0;
 		for(int i=0;i<n;i++) 
 		{
-			scanf("%d",a+i);
+			my_scanf("%d",a+i);
 			sum1+=a[i];
 		}
 		for(int i=0;i<n;i++)
 		{
 			int tmp;
-			scanf("%d",&tmp);
+			my_scanf("%d",&tmp);
 			sum2+=ck(tmp)*a[i];
 		}
 		
-		printf("%.2f\n",sum2/sum1);
+		my_printf("%.2f\n",sum2/sum1);
 	}
 	return 0;
 }

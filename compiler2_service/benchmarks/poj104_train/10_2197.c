@@ -22,9 +22,9 @@ main_bench()
 {
       int k,i,j;
       static int x[25],sum[25];
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       for(i=0;i<k;i++)
-         scanf("%d",&x[i]);
+         my_scanf("%d",&x[i]);
        sum[k-1]=1;
       for(i=k-2;i>=0;i--)
       { for(j=i+1;j<=k-1;j++)
@@ -36,5 +36,5 @@ main_bench()
       for(i=1;i<k;i++)
          if(sum[i]>m)
            m=sum[i];
-      printf("%d",m);
+      my_printf("%d",m);
 } 

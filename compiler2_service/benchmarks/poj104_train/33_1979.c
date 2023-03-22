@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n, i, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	char jjd[1000][256];
 	int*len=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s", jjd[i]);
+		my_scanf("%s", jjd[i]);
 		len[i]=strlen(jjd[i]);
 	}
 	for(i=0;i<n;i++)
@@ -41,9 +41,9 @@ int main_bench()
 	}
 	for(i=0;i<n-1;i++)
 	{
-		printf("%s\n", jjd[i]);
+		my_printf("%s\n", jjd[i]);
 	}
-	printf("%s", jjd[n-1]);
+	my_printf("%s", jjd[n-1]);
 	free(len);
 	return 0;
 }

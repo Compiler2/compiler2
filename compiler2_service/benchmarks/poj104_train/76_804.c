@@ -11,9 +11,9 @@ int main_bench(){
     
 	int a[100000]={0},first,last,A=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%d%d",&qujian[i].begin,&qujian[i].end);
+		my_scanf("%d%d",&qujian[i].begin,&qujian[i].end);
 	}
 	
 	first=qujian[0].begin;
@@ -49,9 +49,9 @@ int main_bench(){
 	
 	}
 	if(A==9){
-	   printf("no");
+	   my_printf("no");
 	}else{
-	   printf("%d %d",first/10,last/10);
+	   my_printf("%d %d",first/10,last/10);
 	}
 	return 0;
 }

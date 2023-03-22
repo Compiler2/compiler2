@@ -23,7 +23,7 @@ int main_bench()
 			b[k]=a[i];
 		}
 	}
-	printf("%s",b);
+	my_printf("%s",b);
 	return 0;
 }
 

@@ -3,13 +3,13 @@
  int *p,*q,m,n;
 void shuru()
 {   
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     p=(int*)malloc(m*sizeof(int));
     q=(int*)malloc(n*sizeof(int));
 	for (int i=0;i<m;i++) 
-	scanf("%d",p+i);
+	my_scanf("%d",p+i);
 	for (int i=0;i<n;i++) 
-	scanf("%d",q+i);
+	my_scanf("%d",q+i);
 }
 static int cmp(const void *a, const void *b)
 {
@@ -18,10 +18,10 @@ static int cmp(const void *a, const void *b)
 void shuchu()
 {
 	for(int i=0;i<m;i++)
-    printf("%d ",*(p+i));
+    my_printf("%d ",*(p+i));
 	for(int i=0;i<n-1;i++)
-	printf("%d ",*(q+i));
-	printf("%d",*(q+n-1)); 
+	my_printf("%d ",*(q+i));
+	my_printf("%d",*(q+n-1)); 
 }
 main_bench()
 {   

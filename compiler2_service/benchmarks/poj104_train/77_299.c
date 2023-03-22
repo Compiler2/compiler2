@@ -11,7 +11,7 @@ void shuchu(struct dui a[100],int n)
 	{
 		if(a[i].nannv ==0)
 		{
-			printf("%d %d\n",a[i-1].weizhi-1 ,a[i].weizhi-1 );
+			my_printf("%d %d\n",a[i-1].weizhi-1 ,a[i].weizhi-1 );
 			if(i<n)
 			{
 				for(j=i;j<=n;j++)
@@ -34,7 +34,7 @@ int main_bench()
 {
 	int i,n,j=0,k=0;
 	char s[100],nan;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	n=strlen(s);
 	nan=s[0];
 	for(i=1;i<=n;i++)

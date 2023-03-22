@@ -6,10 +6,10 @@ int main_bench()
 	int a[301],c[300];
 	float b[301];
 	float average,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s=s+a[i];
 	}
 	average=(float)s/n;
@@ -34,7 +34,7 @@ int main_bench()
 			j++;
 		}
 	}
-	if(j==1) printf("%d",c[0]);
+	if(j==1) my_printf("%d",c[0]);
 	else
 	{
 		for(k=1;k<=j-1;k++)
@@ -46,8 +46,8 @@ int main_bench()
 			}
 		}
 		for(i=0;i<=j-2;i++)
-			printf("%d,",c[i]);
-		printf("%d\n",c[j-1]);
+			my_printf("%d,",c[i]);
+		my_printf("%d\n",c[j-1]);
 	}
 }
 

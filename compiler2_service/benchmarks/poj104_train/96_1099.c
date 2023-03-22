@@ -6,9 +6,9 @@ int main_bench()
     int str2[1000]={0};
     int m,n,i,no,a,c;
     no=1;
-    scanf("%s",str1);
+    my_scanf("%s",str1);
     a=str1[0]-48;
-    if(a<10&&str1[1]=='\0')printf("%c\n%d",'0',a);
+    if(a<10&&str1[1]=='\0')my_printf("%c\n%d",'0',a);
     else
     {
      for(i=0;;i++)
@@ -25,14 +25,14 @@ int main_bench()
                     if(no==1)
                           {
                                    if(str2[i]==0&&str2[i+1]!=0) continue;
-                                   else if(str2[i]==0&&str2[i+1]==0) printf("%d",str2[i]);
-                                   else printf("%d",str2[i]);
+                                   else if(str2[i]==0&&str2[i+1]==0) my_printf("%d",str2[i]);
+                                   else my_printf("%d",str2[i]);
                                    no=0;
                           }
-                    else printf("%d",str2[i]);
+                    else my_printf("%d",str2[i]);
      }
-     printf("\n");
-     printf("%d",c);
+     my_printf("\n");
+     my_printf("%d",c);
     }
     return 0;
 }

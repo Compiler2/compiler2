@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int w,sum=0,a;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(int i=0;i<12;i++){
 		if(i==0){
 			sum=0;
@@ -15,7 +15,7 @@ int main_bench(){
 		}
 		a=(sum+13-1+w-7)%7;
 		if(a==5){
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

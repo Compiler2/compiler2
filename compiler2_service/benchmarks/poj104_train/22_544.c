@@ -38,13 +38,13 @@ int main_bench()
 	
 
 	if(n==1||a[0]==a[n-1])
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(r=0;r<n;r++)
 			if(a[r]!=a[0])
 			{
-				printf("%d\n",a[r]);
+				my_printf("%d\n",a[r]);
 				break;
 			}
 	}

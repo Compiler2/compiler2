@@ -28,12 +28,12 @@ if(l){
 			if(m==48){m=17;}
 			if(j==m){
 				for(e=0;z[e]!='\0';e++){
-				printf("%c",z[e]);
+				my_printf("%c",z[e]);
 				}
 				j=m+n-1;
 			}
 			else {
-				printf("%c",a[j]);}
+				my_printf("%c",a[j]);}
 		}
 }
 		

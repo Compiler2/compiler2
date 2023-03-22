@@ -20,12 +20,12 @@ int main_bench()
 			for(q=0;q<k;q++)
 			{	
 				if(a[q]<b[q])
-				{printf("<");break;}
+				{my_printf("<");break;}
 			    if(a[q]>b[q])
-				{printf(">");break;}
+				{my_printf(">");break;}
 		
 			}
-			if(q==k)printf("=");
+			if(q==k)my_printf("=");
 			return 0;
 			
 }

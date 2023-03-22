@@ -22,8 +22,8 @@
 	}
 int main_bench(){
 	int sy,sm,sd,ey,em,ed,m;
-	scanf("%d%d%d%d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d%d%d%d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
 	m=num(ey,em,ed)-num(sy,sm,sd);
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

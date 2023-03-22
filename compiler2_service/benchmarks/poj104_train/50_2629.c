@@ -4,7 +4,7 @@ main_bench()
 {
        int n;
        int a[12],i,j,s,k;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        a[0]=0;
        a[1]=31;
        a[2]=28;
@@ -26,7 +26,7 @@ main_bench()
                   }
                   k=s-1+n;
                   if(k%7==5)
-                  printf("%d\n",i);                  
+                  my_printf("%d\n",i);                  
       }
        
 }

@@ -3,7 +3,7 @@
 int main_bench(){
    int n,c,i;
    c=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=1;i<=n;i++){
 	   if(i<70&&i%10!=7&&i%7!=0){
 		   c+=i*i;
@@ -11,6 +11,6 @@ int main_bench(){
 		   c+=i*i;
 	   }
    }
-   printf("%d",c);
+   my_printf("%d",c);
    return 0;
 }

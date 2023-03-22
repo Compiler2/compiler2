@@ -8,10 +8,10 @@ struct patient{
 int main_bench()
 {
  int n,i;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  struct patient pat1[100],pat2[100];
  for(i=0;i<n;i++){
-  scanf("%s %d",pat1[i].num,&pat1[i].age);
+  my_scanf("%s %d",pat1[i].num,&pat1[i].age);
   strcpy(pat2[i].num,pat1[i].num);
   pat2[i].age=pat1[i].age;
  }
@@ -31,12 +31,12 @@ int main_bench()
  }
  for(i=0;i<n;i++){
 	 if(pat1[i].age>=60){
-		printf("%s\n",pat1[i].num);
+		my_printf("%s\n",pat1[i].num);
 	 }
  }
  for(i=0;i<n;i++){
 	 if(pat2[i].age<60){
-		printf("%s\n",pat2[i].num);
+		my_printf("%s\n",pat2[i].num);
 	 }
  }
  return 0;

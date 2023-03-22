@@ -29,8 +29,8 @@ int main_bench()
 		for(j=1;j<=s;j++)
 			if(num[j]!=num[0])
 			{ x=j;  y=1;   break;}
-			if(y==1)  printf("%d",num[x]);
-			if(y==0)  printf("No");  
+			if(y==1)  my_printf("%d",num[x]);
+			if(y==0)  my_printf("No");  
 
 }
 

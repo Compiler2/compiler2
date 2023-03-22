@@ -8,7 +8,7 @@ int main_bench()
 	int s[100];
 	for(f=0;f<100;f++)
 	{s[f]=0;}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{b=i/10;
      c=i-b*10;
@@ -20,7 +20,7 @@ int main_bench()
 	for(j=1;j<=n;j++)
 	{m=m+s[j]*s[j];
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }
 

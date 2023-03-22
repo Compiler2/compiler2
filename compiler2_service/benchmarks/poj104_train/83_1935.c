@@ -5,15 +5,15 @@ int main_bench()
 int n,a,c;
 float m[100],s[100],j[100];
 float GPA,sum=0,w=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(a=0;a<n;a++)
 {
-scanf("%f\n",&s[a]);
+my_scanf("%f\n",&s[a]);
 w+=s[a];
 }
 for(a=0;a<n;a++)
 {
-scanf("%f",&j[a]);
+my_scanf("%f",&j[a]);
 if(j[a]>=90&&j[a]<=100)
 {
 m[a]=4.0;
@@ -60,6 +60,6 @@ for(c=0;c<n;c++)
 sum+=m[c]*s[c] ;
 }
 GPA=sum/w;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;	
 }

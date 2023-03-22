@@ -18,7 +18,7 @@ int main_bench()
 	*p2='\0';
 
 
-	printf("%s",zfc2);
+	my_printf("%s",zfc2);
 	return 0;
 }
 

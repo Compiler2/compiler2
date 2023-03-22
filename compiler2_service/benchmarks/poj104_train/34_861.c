@@ -6,7 +6,7 @@ int main_bench()
 {
 	int n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(;;)
 	{
 		if(n==1) break;
@@ -14,7 +14,7 @@ int main_bench()
 		else n=isjishu(n);
 		
 	}
-	printf("End");
+	my_printf("End");
 	return 0;
 }
 
@@ -23,13 +23,13 @@ int isjishu(int x)
 {
 	int temp1=x;
 	x=x*3+1;
-	printf("%d*3+1=%d\n",temp1,x);
+	my_printf("%d*3+1=%d\n",temp1,x);
 	return x;
 }
 int isoushu(int y)
 {
 	int temp2=y;
 	y=y/2;
-	printf("%d/2=%d\n",temp2,y);
+	my_printf("%d/2=%d\n",temp2,y);
 	return y;
 }

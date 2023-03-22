@@ -4,10 +4,10 @@ int main_bench(){
 	char N[101],s[100];
 	int i,p;
 	int j=0,ys=0;
-	scanf("%s",N);
+	my_scanf("%s",N);
 
 	if(strlen(N)==1){
-		printf("0\n%s",N);
+		my_printf("0\n%s",N);
 		return 0;
 	}
 	
@@ -31,6 +31,6 @@ int main_bench(){
 		s[0]='0';
 		s[1]='\0';
 	}
-	printf("%s\n%d",s,ys);
+	my_printf("%s\n%d",s,ys);
 	return 0;
 }

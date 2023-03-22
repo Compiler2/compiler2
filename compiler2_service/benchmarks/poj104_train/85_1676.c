@@ -3,10 +3,10 @@
 int main_bench(){
     char a[1000][21];
     int b,i,k;
-    scanf("%d",&b);
+    my_scanf("%d",&b);
     for(i=0;i<b;i++){
 
-            scanf("%s",&a[i]);
+            my_scanf("%s",&a[i]);
 
     }
     for(i=0;i<b;i++){
@@ -18,12 +18,12 @@ int main_bench(){
                     break;
             }
             if(a[i][k]!='\0')
-                printf("no\n");
+                my_printf("no\n");
             else
-                printf("yes\n");
+                my_printf("yes\n");
         }
         else
-            printf("no\n");
+            my_printf("no\n");
     }
 return 0;
 }

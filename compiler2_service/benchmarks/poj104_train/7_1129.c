@@ -5,7 +5,7 @@ int main_bench()
 {
 	char a[256],b[256],c[256];
 	int la,i,j,lb,lc,h=300,p;
-	scanf ("%s %s %s",a,b,c);
+	my_scanf ("%s %s %s",a,b,c);
     la=strlen (a);
 	lb=strlen (b);
 	lc=strlen (c);
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for (i=0;i<la;i++)
 	{
-	     printf ("%c",a[i]);
+	     my_printf ("%c",a[i]);
 	}
     
 

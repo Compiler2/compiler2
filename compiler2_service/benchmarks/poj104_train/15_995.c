@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	int a[1000][1000];
 	int b,start1,start2,end1,end2;
 	b=0;
@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for (j=0;j<n;j++)
 		{
-			scanf ("%d",&a[i][j]);
+			my_scanf ("%d",&a[i][j]);
 			if (a[i][j]==0&&b==0)
 			{
 				start1=i+1;
@@ -28,7 +28,7 @@ int main_bench()
 	}
 	int area;
 	area=(end1-start1-1)*(end2-start2-1);
-	printf("%d",area);
+	my_printf("%d",area);
 	return 0;
 }
 

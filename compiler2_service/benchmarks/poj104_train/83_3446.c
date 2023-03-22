@@ -5,14 +5,14 @@ int main_bench() {
     double gpa,sum1,sum2,GPA;
 	sum1=0;
 	sum2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int sz[n];
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	    sum2=sum2+sz[i];
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&grade);
+		my_scanf("%d",&grade);
 	if(grade>=90)
 	       gpa=4.0;
 	if((grade>=85)&&(grade<=89))
@@ -36,6 +36,6 @@ int main_bench() {
     sum1=sum1+gpa*sz[i];
     }
 	GPA=sum1/sum2;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 	return 0;
 }

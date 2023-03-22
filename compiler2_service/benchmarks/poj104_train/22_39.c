@@ -7,13 +7,13 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 		c=getchar();
 	}while(c!='\n');
 	l=i;
 	if(l==1)
-		printf("No");
+		my_printf("No");
 	else 
 	{
 	m=0;
@@ -27,8 +27,8 @@ int main_bench()
 		if(a[i]<a[t]&&a[i]>a[m])
 			m=i;
 		if(a[m]==a[t]||m==l)
-			printf("No");
+			my_printf("No");
 		else
-			printf("%u\n",a[m]);
+			my_printf("%u\n",a[m]);
 	}
 }

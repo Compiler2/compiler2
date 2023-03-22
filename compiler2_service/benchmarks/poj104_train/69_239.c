@@ -4,8 +4,8 @@
 int main_bench(){
     int i,m,n,carry=0;
     char a[252],b[252],A[252],B[252],ADD[252],add[252];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
 
     while(1){
         if(a[0]!='0')
@@ -79,7 +79,7 @@ int main_bench(){
         add[strlen(ADD)]=0;
     }
     
-    printf("%s\n",add);
+    my_printf("%s\n",add);
     
     return 0;
 }

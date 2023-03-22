@@ -4,7 +4,7 @@ int main_bench(){
 	int i,a=0,b=0;               
 	int y,m,d;
 	int s,t,n,x,c;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 
 	s=y%400;
 
@@ -54,14 +54,14 @@ default:n=334+d;
 	t=c+n;
 	x=t%7;
 		switch(x)
-	{case 1:printf("Sat.");break;
+	{case 1:my_printf("Sat.");break;
 
-     case 2:printf("Sun.");break;
-     case 3:printf("Mon.");break;
-     case 4:printf("Tue.");break;
-     case 5:printf("Wed.");break;
-     case 6:printf("Thu.");break;
-	 default:printf("Fri.");
+     case 2:my_printf("Sun.");break;
+     case 3:my_printf("Mon.");break;
+     case 4:my_printf("Tue.");break;
+     case 5:my_printf("Wed.");break;
+     case 6:my_printf("Thu.");break;
+	 default:my_printf("Fri.");
 	}
 	
 	

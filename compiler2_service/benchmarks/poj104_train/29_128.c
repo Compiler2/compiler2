@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,m[1000],k,f0=1,f1=2,f2;
 	double q[1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	   scanf("%d",&m[i]);
+	   my_scanf("%d",&m[i]);
 	}
     for(i=0;i<n;i++){
 f0=1,f1=2;
@@ -17,7 +17,7 @@ f0=1,f1=2;
 		}
 	}
 for(i=0;i<n;i++){
-	printf("%.3lf\n",q[i]);
+	my_printf("%.3lf\n",q[i]);
 }
            return 0;
 }

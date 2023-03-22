@@ -3,12 +3,12 @@
 
 void input(int *M,int *N,int a[],int b[])             
 {
-	scanf("%d %d",M,N);                     
+	my_scanf("%d %d",M,N);                     
 	int i;
 	for(i=0;i<*M;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<*N;i++)
-		scanf("%d",&b[i]); 
+		my_scanf("%d",&b[i]); 
 	
 	return;                           
 } 
@@ -42,8 +42,8 @@ void output(int M,int N,int c[])
 {
 	int i;
 	for(i=0;i<M+N-1;i++)
-		printf("%d ",c[i]);
-	printf("%d",c[M+N-1]);
+		my_printf("%d ",c[i]);
+	my_printf("%d",c[M+N-1]);
 }
 
 int main_bench()

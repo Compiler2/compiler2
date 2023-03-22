@@ -5,21 +5,21 @@ int main_bench()
     int n,i,j;
     int m,a,a0,time,result,k;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(i=0;i<n;i++)
     {
-    	scanf("%d",&m);
+    	my_scanf("%d",&m);
     	time=0;
     	a0=0;
     	for(j=1;j<=m;j++)
     	{
-	    	scanf("%d",&a);
+	    	my_scanf("%d",&a);
 	    	time=time+(a-a0)+3;
 	    	if(time>=60)
 	    	{
 	    		for(k=j+1;k<=m;k++)
-	    			scanf("%d",&a);
+	    			my_scanf("%d",&a);
 	    	    break;	
 	    	}
  	        a0=a;
@@ -43,7 +43,7 @@ int main_bench()
 	    		else result=60-(j-1)*3;
 	    	}
 	    }
-	    printf("%d\n",result);
+	    my_printf("%d\n",result);
     }
 	return 0;
 }

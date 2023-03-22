@@ -8,22 +8,22 @@ int main_bench()
 	for (i=0;i<=4;i++)
 	{
 		for (j=0;j<=4;j++)
-			scanf("%d",&c[i][j]);
+			my_scanf("%d",&c[i][j]);
 	}
-	scanf("%d",&m);
-	scanf("%d",&n);
+	my_scanf("%d",&m);
+	my_scanf("%d",&n);
 	p=check(c,m,n);
 	if (p==1)
 	{
 		for (i=0;i<=4;i++)
 		{
 			for (j=0;j<=3;j++)
-				printf("%d ",c[i][j]);
-			printf("%d\n",c[i][4]);
+				my_printf("%d ",c[i][j]);
+			my_printf("%d\n",c[i][4]);
 		}
 	}
 	else if (p==0)
-		printf("error\n");
+		my_printf("error\n");
 }
 
 int check(int c[][5],int m,int n)

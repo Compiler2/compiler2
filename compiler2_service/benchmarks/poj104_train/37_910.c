@@ -3,12 +3,12 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char a[100000];
       int m;
       for (m=1;m<=n;m++)
       {
-          scanf("%s",a);
+          my_scanf("%s",a);
           int count1,count2;
           int i,j;
           count2=0;
@@ -27,7 +27,7 @@ main_bench()
                             }
                             if (count1==1)
                             {
-                                          printf("%c\n",a[i]);
+                                          my_printf("%c\n",a[i]);
                                           count2++;
                                           break;
                             }
@@ -35,7 +35,7 @@ main_bench()
           }
           if (count2==0)
           {
-               printf("no");
+               my_printf("no");
           }
       }
 getchar();getchar();getchar();getchar();getchar();

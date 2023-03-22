@@ -24,11 +24,11 @@ int check2(int i)
 main_bench()
 {
 	int m,n,i,j;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
-		if(check1(i)&&check2(i)) {printf("%d",i);break;}
-		else if(i==n) printf("no\n");
+		if(check1(i)&&check2(i)) {my_printf("%d",i);break;}
+		else if(i==n) my_printf("no\n");
 	for(j=i+1;j<=n;j++)
-		if(check1(j)&&check2(j)) printf(",%d",j);
-	printf("\n");
+		if(check1(j)&&check2(j)) my_printf(",%d",j);
+	my_printf("\n");
 }

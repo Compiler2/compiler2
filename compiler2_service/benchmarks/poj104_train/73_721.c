@@ -15,7 +15,7 @@ int main_bench()
     {
         for(j=0;j<=4;j++)
         {
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
         }
     }
     for(a1=0;a1<=4;a1++)
@@ -47,14 +47,14 @@ int main_bench()
             }
             if(judge1==1&&judge2==1)
             {
-                printf("%d %d %d",a1+1,a2+1,a[a1][a2]);
+                my_printf("%d %d %d",a1+1,a2+1,a[a1][a2]);
                 count++;
             }
         }
     }
     if(count==0)
     {
-        printf("not found")
+        my_printf("not found")
         ;
     }
 }

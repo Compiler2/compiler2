@@ -7,7 +7,7 @@ int main_bench()
 	for(i=0;i<5;i++)
 		for(j=0;j<300;j++)
 			t[j][i]='\0';
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(s);
 	strcpy(temp,s);
 	
@@ -29,12 +29,12 @@ int main_bench()
 			if(c[i]>max) max=c[i];
 	if(max==0)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
-	printf("%d\n",max+1);
+	my_printf("%d\n",max+1);
 	for(i=0;i<=len-n;i++)
-		if(c[i]==max) printf("%s\n",t[i]);
+		if(c[i]==max) my_printf("%s\n",t[i]);
 	
 	return 0;
 	}

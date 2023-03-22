@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int extent[10001],n,i,min,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int a,b,j;
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(i==0) 
 		{
 			min=a;
@@ -23,6 +23,6 @@ int main_bench()
 	}
 	for(i=2*min-1;i<=2*max-1;i++)
 		if(!extent[i]) break;
-	if(i==2*max) printf("%d %d\n",min,max);
-	else printf("no");
+	if(i==2*max) my_printf("%d %d\n",min,max);
+	else my_printf("no");
 }

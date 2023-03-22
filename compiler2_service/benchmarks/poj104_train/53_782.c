@@ -9,12 +9,12 @@ int g[300];
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int k = 0;
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",g+k);
+		my_scanf("%d",g+k);
 		for(int j=0;j<k;j++)
 		{
 			if(g[j]==g[k])
@@ -26,9 +26,9 @@ int main_bench()
 		k++;
 	}
 
-	printf("%d",g[0]);
+	my_printf("%d",g[0]);
 	for(int j=1;j<k;j++)
-		printf(",%d",g[j]);
+		my_printf(",%d",g[j]);
 
 	return 0;
 }

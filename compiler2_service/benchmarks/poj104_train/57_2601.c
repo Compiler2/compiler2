@@ -8,10 +8,10 @@ int main_bench()
 	char s3[4];
 	char _s[4] = {'i','n','g','\0'};
 	int n,i,j,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		j = strlen(s);
 		t = 0;
 		s3[0] = s[j-3];
@@ -23,17 +23,17 @@ int main_bench()
 		{
 			for(i = 0;i < j-3;i++)
 			{
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 		else
 		{
 			for(i = 0;i < j-2;i++)
 			{
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

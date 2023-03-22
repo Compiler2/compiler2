@@ -4,11 +4,11 @@
 int main_bench()
 {
          int s[100][100],n,i,j,result,a=-1,b=-1,c=-1,d=-1;
-         scanf("%d",&n);
+         my_scanf("%d",&n);
          for(i=0;i<n;i++)
          {
                    for(j=0;j<n;j++)
-                            scanf("%d",&s[i][j]);
+                            my_scanf("%d",&s[i][j]);
          }
  
          for(i=0;i<n;i++)
@@ -38,6 +38,6 @@ int main_bench()
                    if (c>=0) break;
          }
          result=(c-a-1)*(d-b-1);
-         printf("%d",result);
+         my_printf("%d",result);
          return 0;
 }

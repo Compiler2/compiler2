@@ -2,7 +2,7 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a,b,c,d,e,f;
      a=b=c=d=e=f=0;
     while(n>=100){
@@ -29,6 +29,6 @@ int main_bench(){
        f=n;
        break;
       }
-  printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+  my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 return 0;
 }

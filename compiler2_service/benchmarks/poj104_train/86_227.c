@@ -3,22 +3,22 @@
 int main_bench()
 {
     int i,n,m,flag,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0; i<n; i++){
 		flag=1;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for (int j=0;j<m; j++){
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if (((a+j*3)>=60)&&(flag)){
 				flag=0;
-				printf("%d\n",60-3*j);
+				my_printf("%d\n",60-3*j);
 			}else if (((a+j*3+3>=60))&&(flag)){
 				flag=0;
-				printf("%d\n",a);
+				my_printf("%d\n",a);
 			}
 		}
 		if (flag) {
-			printf("%d\n",60-3*m);
+			my_printf("%d\n",60-3*m);
 		}
 	}
 	return 0;

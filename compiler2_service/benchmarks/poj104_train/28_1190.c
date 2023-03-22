@@ -23,6 +23,6 @@ int main_bench()
 		  }
 	  } 
 	for (i=0;i<=num-1;i++)
-	{printf("%d",a[i]);
-	if (i<num-1) printf(",");}
+	{my_printf("%d",a[i]);
+	if (i<num-1) my_printf(",");}
 }

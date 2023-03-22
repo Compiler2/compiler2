@@ -5,7 +5,7 @@ int main_bench()
     char zfc[105];
     char sign[105];
     char present[105];
-    while(scanf("%s",zfc)>0)
+    while(my_scanf("%s",zfc)>0)
     {
         
         strcpy(sign,zfc);

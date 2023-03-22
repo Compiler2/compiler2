@@ -10,14 +10,14 @@ struct grade
 int main_bench()
 {
 	int n, i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d ", &G[i].classgrade);
+		my_scanf("%d ", &G[i].classgrade);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &G[i].finalgrade);
+		my_scanf("%d", &G[i].finalgrade);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -53,6 +53,6 @@ int main_bench()
 		allcG=allcG+G[i].classgrade;
 	}
 	float g=allG/allcG;
-	printf("%.2f", g);
+	my_printf("%.2f", g);
 	return 0;
 }

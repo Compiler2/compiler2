@@ -10,11 +10,11 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d", &from[i][j]);
+			my_scanf("%d", &from[i][j]);
 		}
 	}
     int n,m;
-    scanf("%d %d", &n,&m);
+    my_scanf("%d %d", &n,&m);
 	if(n<5&&m<5)
 	{
 		int a[5];
@@ -30,19 +30,19 @@ int main_bench()
 			{
 				if(j!=4)
 				{
-				printf("%d ", from[i][j]);
+				my_printf("%d ", from[i][j]);
 				}
 				else if(j==4)
 				{
-				printf("%d", from[i][j]);
+				my_printf("%d", from[i][j]);
 				}
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	else
 	{
-		printf("error");
+		my_printf("error");
 	}
 }
 	

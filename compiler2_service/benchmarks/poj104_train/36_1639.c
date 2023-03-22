@@ -6,12 +6,12 @@ int main_bench()
 	int x[300]={0},y[300]={0};
 	int i,j;
 	char p[300],q[300];
-	scanf("%s%s",p,q);
+	my_scanf("%s%s",p,q);
 	length=strlen(p);
 	a=strlen(q);
 	if(a!=length)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	for(i=0;i<length;i++)
@@ -27,7 +27,7 @@ int main_bench()
 		}
 		if(x[i]==0)
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 	}
@@ -36,7 +36,7 @@ int main_bench()
 		if(!x[i])
 			c++;
 	if(c==0)
-		printf("YES");
+		my_printf("YES");
 	return 0;
 }
 		

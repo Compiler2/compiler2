@@ -12,10 +12,10 @@ int main_bench()
 	long int n;
 	int i,j,k,m,a=0,b=0,c=0,A,B,C;
 	A=B=C=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
 		k=stu[i].score1+stu[i].score2;
 		if(k>c)
 		{
@@ -41,5 +41,5 @@ int main_bench()
 			A=m;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d",A,a,B,b,C,c);
+	my_printf("%d %d\n%d %d\n%d %d",A,a,B,b,C,c);
 }

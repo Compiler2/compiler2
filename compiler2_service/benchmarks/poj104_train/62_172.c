@@ -8,7 +8,7 @@ main_bench()
          b[i]=0;
       for(i=0;;i++)
       {
-                   scanf("%c",&a[i]);
+                   my_scanf("%c",&a[i]);
                    if(a[i]=='\n')
                    break;
       } 
@@ -21,6 +21,6 @@ main_bench()
       for(i=0;i<num;i++)
       {
                         if(b[i]==0)
-                        printf("%c",a[i]);
+                        my_printf("%c",a[i]);
       }
 }

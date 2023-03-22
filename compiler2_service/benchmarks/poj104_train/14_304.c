@@ -13,12 +13,12 @@
   
   int num,math,chin;
   long n,i;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1;i<=n;i++)
   {
-    scanf("%d",&num);
-    scanf("%d",&math);                                 
-    scanf("%d",&chin);
+    my_scanf("%d",&num);
+    my_scanf("%d",&math);                                 
+    my_scanf("%d",&chin);
     STUDENT_NUM[i].num=num;
     STUDENT_NUM[i].math=math;
     STUDENT_NUM[i].chin=chin;
@@ -71,9 +71,9 @@
     }
     
     
-   printf("%d %d\n",first.num,first.total);
-   printf("%d %d\n",second.num,second.total);
-   printf("%d %d\n",third.num,third.total);
+   my_printf("%d %d\n",first.num,first.total);
+   my_printf("%d %d\n",second.num,second.total);
+   my_printf("%d %d\n",third.num,third.total);
     getchar();
     getchar();
     getchar();

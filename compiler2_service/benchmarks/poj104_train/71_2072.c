@@ -5,10 +5,10 @@ int main_bench()
 	int n,year,a,b,i,j,Temp,days=0;
 	int Month1[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int Month2[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i < n;i++)
 	{
-		scanf("%d%d%d",&year,&a,&b);
+		my_scanf("%d%d%d",&year,&a,&b);
 		if (a>b){
                            Temp=a;
 			a=b;
@@ -27,9 +27,9 @@ int main_bench()
 				days=days +Month1[j];
 		}
 		if(days%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

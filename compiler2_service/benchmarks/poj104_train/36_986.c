@@ -7,7 +7,7 @@ int main_bench()
 	char e;
 	char a[50]={'\0'};
 	char b[50]={'\0'};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	alen=strlen(a);
 	blen=strlen(b);
 
@@ -40,11 +40,11 @@ int main_bench()
 	}
 	if(strcmp(a,b)==0)
 	{
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	else
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	return 0;
 }

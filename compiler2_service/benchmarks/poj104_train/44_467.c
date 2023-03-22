@@ -27,24 +27,24 @@ main_bench()
     int d;
     int e;
     int f;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    scanf("%d",&d);
-    scanf("%d",&e);
-    scanf("%d",&f);
-    printf("%d",reverse(a));
-    printf("\n");
-    printf("%d",reverse(b));
-    printf("\n");
-    printf("%d",reverse(c));
-    printf("\n");
-    printf("%d",reverse(d));
-    printf("\n");
-    printf("%d",reverse(e));
-    printf("\n");
-    printf("%d",reverse(f));
-    printf("\n");
+    my_scanf("%d",&a);
+    my_scanf("%d",&b);
+    my_scanf("%d",&c);
+    my_scanf("%d",&d);
+    my_scanf("%d",&e);
+    my_scanf("%d",&f);
+    my_printf("%d",reverse(a));
+    my_printf("\n");
+    my_printf("%d",reverse(b));
+    my_printf("\n");
+    my_printf("%d",reverse(c));
+    my_printf("\n");
+    my_printf("%d",reverse(d));
+    my_printf("\n");
+    my_printf("%d",reverse(e));
+    my_printf("\n");
+    my_printf("%d",reverse(f));
+    my_printf("\n");
 }
 
  

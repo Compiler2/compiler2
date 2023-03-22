@@ -3,17 +3,17 @@
 int main_bench()
 {
  char a,b,c,d,e,x,y;
- scanf("%c%c%c%c%c",&a,&b,&c,&d,&e);
+ my_scanf("%c%c%c%c%c",&a,&b,&c,&d,&e);
  if(c=='\n')
   {x=a;
    a=b;
    b=x;
-   printf("%c%c",a,b);}
+   my_printf("%c%c",a,b);}
  else if(d=='\n')
    {x=a;
     a=c;
     c=x;
-    printf("%c%c%c",a,b,c); }
+    my_printf("%c%c%c",a,b,c); }
 else if(e=='\n')
    {x=a;
     a=d;
@@ -21,13 +21,13 @@ else if(e=='\n')
     y=b;
     b=c;
     c=y;
-    printf("%c%c%c%c",a,b,c,d);}
+    my_printf("%c%c%c%c",a,b,c,d);}
 else {x=a;
       a=e;
       e=x;
       y=b;
       b=d;
       d=y;
-     printf("%c%c%c%c%c",a,b,c,d,e);}
+     my_printf("%c%c%c%c%c",a,b,c,d,e);}
 }
 

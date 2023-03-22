@@ -5,8 +5,8 @@ int main_bench()
 	char c[500][5];
 	char d[501];
 	int n,m,i,j;
-	scanf("%d\n",&n);
-	scanf("%s",d);
+	my_scanf("%d\n",&n);
+	my_scanf("%s",d);
 	memset(c,0,sizeof(c));
 	int l;
 	l=strlen(d);
@@ -38,13 +38,13 @@ int main_bench()
 	}
 	if(q>1)
 	{
-		printf("%d\n",q);
+		my_printf("%d\n",q);
 		for(i=0;i<m;i++)
 		if(b[i]==q&&c[i][0]>='a'&&c[i][0]<='z')
-			printf("%s\n",c[i]);
+			my_printf("%s\n",c[i]);
 	
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 	return 0;
 }

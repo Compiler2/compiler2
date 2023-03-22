@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,a,b,c,d,e;
-scanf("%d",&n);
+my_scanf("%d",&n);
 a=b=c=d=e=0;
 while(n>=100)
 {
@@ -30,6 +30,6 @@ while(n>=5)
 n-=5;
 e++;
 }
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,n);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,n);
 return 0;
 }

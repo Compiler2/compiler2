@@ -6,10 +6,10 @@ int main_bench()
 	float n,sum=0;
 	float a[100]={0},b[100]={0};
 	int c[100]={0};
-	scanf("%f",&n);
+	my_scanf("%f",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		sum+=a[i];
 	}
 	sum=sum/n;
@@ -44,8 +44,8 @@ int main_bench()
 	}
 	for(i=0;i<r;i++)
 	{
-		printf("%d",c[i]);
-		if(i!=r-1) printf(",");
+		my_printf("%d",c[i]);
+		if(i!=r-1) my_printf(",");
 	}
 
 }

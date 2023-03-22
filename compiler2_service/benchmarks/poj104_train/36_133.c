@@ -2,8 +2,8 @@
 
 int main_bench()
 {char a[50],b[50];int c[256]={0},d[256]={0};
- scanf("%s",a);
- scanf("%s",b);
+ my_scanf("%s",a);
+ my_scanf("%s",b);
  int i,j,k;
  for(i=0;a[i]!='\0';i++)
   {j=a[i];
@@ -15,7 +15,7 @@ int main_bench()
   if(c[i]!=d[i])
     break;
  if(i<255)
-  printf("NO");
+  my_printf("NO");
  else
-  printf("YES");
+  my_printf("YES");
 }

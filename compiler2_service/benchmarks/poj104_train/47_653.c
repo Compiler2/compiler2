@@ -6,12 +6,12 @@
 int main_bench()
 {
     int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int sz[n];
 	int i,x,y;
     for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
     x=n-1;
 	y=x/2;
@@ -26,10 +26,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{   if(i!=n-1)
-	{printf("%d ",sz[i]);}
+	{my_printf("%d ",sz[i]);}
 	else
 	{
-		printf("%d",sz[i]);
+		my_printf("%d",sz[i]);
 	}
 	}
 	return 0;

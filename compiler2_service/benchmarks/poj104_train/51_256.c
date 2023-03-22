@@ -8,7 +8,7 @@ int main_bench()
 	int flag;
 	char ss[5];
 	
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 	gets(s);
 	len=strlen(s);
 	i=0;
@@ -43,17 +43,17 @@ int main_bench()
 		if(m[i]>max) 
           max=m[i];
 	if(max<=1)
-      printf("NO");
+      my_printf("NO");
 	else
 	{
 		int flag=1;
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<t;i++)
 			if(m[i]==max)
 			{
 				if(flag==0)
-                  printf("\n");
-				printf("%s",w[i]);
+                  my_printf("\n");
+				my_printf("%s",w[i]);
 				if(flag)
                   flag=0;
 			}

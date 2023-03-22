@@ -11,20 +11,20 @@ int main_bench()
 
 	}
 	sz[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&sz[i].a,&sz[i].b);
+		my_scanf("%d %d",&sz[i].a,&sz[i].b);
 		sz[i].x=(float)1.0*sz[i].b/sz[i].a*100.0;
 	}
 	for(i=1;i<n;i++)
 	{
 		if(sz[i].x-sz[0].x>5)
-			printf("better\n");
+			my_printf("better\n");
 		else if(sz[0].x-sz[i].x>5)
-			printf("worse\n");
+			my_printf("worse\n");
 		else
-			printf("same\n");
+			my_printf("same\n");
 	}
 	return 0;
 }

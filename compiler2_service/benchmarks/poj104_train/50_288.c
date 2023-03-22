@@ -12,8 +12,8 @@ int day(int m)
 int main_bench()
 {
 	int i,a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=1;i<13;i++)
-		if((a+day(i)-1)%7==5)printf("%d\n",i);
+		if((a+day(i)-1)%7==5)my_printf("%d\n",i);
 	return 0;
 }

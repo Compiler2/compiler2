@@ -6,7 +6,7 @@ main_bench()
 	char sub[1000][50];
 	int s[1000]={0};
 	int k,t,n=0,m=0,i,j;
-	scanf("%d",&n);getchar();
+	my_scanf("%d",&n);getchar();
 	gets(w);
 	
 	t=strlen(w);
@@ -26,13 +26,13 @@ main_bench()
 	}
 	for(i=0;i<t-n;i++)
 		if(s[i]>m)m=s[i];
-if(m==1)printf("NO\n");
+if(m==1)my_printf("NO\n");
 else{
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 for(i=0;i<=t-n;i++)
 
 if(s[i]==m)
-printf("%s\n",sub[i]);
+my_printf("%s\n",sub[i]);
 }
 
 

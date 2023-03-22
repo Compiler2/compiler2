@@ -11,7 +11,7 @@ int year(int y)
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i,j,k;
       int a[100];
          a[1]=31;
@@ -29,7 +29,7 @@ main_bench()
       for(i=0;i<n;i++)
       {
                       int sum=0;
-         scanf("%d %d %d",&y,&m1,&m2);
+         my_scanf("%d %d %d",&y,&m1,&m2);
         
          if(year(y)==0) a[2]=29;
          else a[2]=28;
@@ -43,8 +43,8 @@ main_bench()
          {
                sum=sum+a[j];           
          }
-         if(sum%7==0) printf("YES\n");
-         else printf("NO\n");
+         if(sum%7==0) my_printf("YES\n");
+         else my_printf("NO\n");
          
       }
       }

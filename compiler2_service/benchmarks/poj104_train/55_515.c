@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b;
 	char n[100];
-	scanf("%d %s %d",&a,n,&b);
+	my_scanf("%d %s %d",&a,n,&b);
 	int i,j=0;
 	int ten[100];
 	for(i=0;n[i]!='\0';i++)
@@ -28,7 +28,7 @@ int main_bench()
 	int ben[100];
 	j=0;
 	if(t==0)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 	for(i=0;t!=0;i++)
@@ -45,7 +45,7 @@ int main_bench()
 			m[i]=ben[j-1-i]+55;
 	}
 	for(i=0;i<j;i++)
-		printf("%c",m[i]);
-	printf("\n");
+		my_printf("%c",m[i]);
+	my_printf("\n");
 	}
 }

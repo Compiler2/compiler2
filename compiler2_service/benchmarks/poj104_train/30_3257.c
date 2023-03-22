@@ -6,13 +6,13 @@ int is_relativeto_7(int n);
 int main_bench()
 {
     int n, i, sum = 0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 
     for (i=1; i<=n; i++)
         if (!is_relativeto_7(i)) 
             sum += i*i;
 
-    printf("%d", sum);
+    my_printf("%d", sum);
     return 0;
 }
 

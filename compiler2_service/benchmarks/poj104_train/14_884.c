@@ -13,10 +13,10 @@ int main_bench()
 	stu1.total=0;
 	stu2.total=0;
 	stu3.total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&temp.ID,&temp.chinese,&temp.math);
+		my_scanf("%d%d%d",&temp.ID,&temp.chinese,&temp.math);
 		temp.total=temp.chinese+temp.math;
 		if(temp.total>stu1.total)
 		{
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		else if(temp.total<=stu2.total&&temp.total>stu3.total)stu3=temp;
 	}
-	printf("%d %d\n",stu1.ID,stu1.total);
-	printf("%d %d\n",stu2.ID,stu2.total);
-	printf("%d %d\n",stu3.ID,stu3.total);
+	my_printf("%d %d\n",stu1.ID,stu1.total);
+	my_printf("%d %d\n",stu2.ID,stu2.total);
+	my_printf("%d %d\n",stu3.ID,stu3.total);
 }

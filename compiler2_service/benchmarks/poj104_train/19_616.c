@@ -43,10 +43,10 @@ int main_bench()
 	for(i=0;i<num;i++)
 	{
 		for(j=0;x[i][j]!='\0';j++)
-			printf("%c",x[i][j]);
-		printf(" ");
+			my_printf("%c",x[i][j]);
+		my_printf(" ");
 	}
 	for(j=0;x[num][j]!='\0';j++)
-		printf("%c",x[num][j]);
+		my_printf("%c",x[num][j]);
 
 }

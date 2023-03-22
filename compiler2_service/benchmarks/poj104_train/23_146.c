@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main_bench()
+int main_bench()
 {
 	int i, num, j, l;
 	char c[101], a[50][30];
@@ -24,6 +24,6 @@ void main_bench()
 	}
 	a[num][j] = '\0';
 	for(i = num;i > 0;i --)
-		printf("%s ",a[i]);
-	printf("%s",a[0]);
+		my_printf("%s ",a[i]);
+	my_printf("%s",a[0]);
 }

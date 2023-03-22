@@ -16,10 +16,10 @@ int main_bench()
 	int n,q=0;
 	struct student stu[100];
 	int i,j,k,r,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 
 
 
@@ -46,9 +46,9 @@ int main_bench()
 	{
 		if(stu[i].jiangjin==m)
 		{
-			printf("%s\n",stu[i].name);
-			printf("%d\n",m);
-			printf("%d",q);
+			my_printf("%s\n",stu[i].name);
+			my_printf("%d\n",m);
+			my_printf("%d",q);
 			break;
 
 		}

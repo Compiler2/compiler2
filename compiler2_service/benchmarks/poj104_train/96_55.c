@@ -6,20 +6,20 @@ int main_bench()
     int b[110];
     char c[110];
     int i,l,s,y;
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     for(i=0;i<l;i++)
         b[i]=a[i]-'0';
     if(l==1)
     {
-        printf("0\n");
-        printf("%d\n",b[0]);
+        my_printf("0\n");
+        my_printf("%d\n",b[0]);
         return (0);
     }
     if(l==2&&b[0]==1&&b[1]<=2)
     {
-        printf("0\n");
-        printf("%d%d\n",b[0],b[1]);
+        my_printf("0\n");
+        my_printf("%d%d\n",b[0],b[1]);
         return (0);
     }
     else
@@ -36,8 +36,8 @@ int main_bench()
                 y=s%13;
             }
             c[l-2]='\0';
-            printf("%s\n",c);
-            printf("%d\n",y);
+            my_printf("%s\n",c);
+            my_printf("%d\n",y);
         } 
         else
         {
@@ -51,8 +51,8 @@ int main_bench()
                 y=s%13;
             }
             c[l-1]='\0';
-            printf("%s\n",c);
-            printf("%d\n",y);
+            my_printf("%s\n",c);
+            my_printf("%d\n",y);
         }
     }
 }

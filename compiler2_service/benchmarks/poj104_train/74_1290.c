@@ -33,7 +33,7 @@ int hui(int n){
 int main_bench()
 {
 	int m,n,i,a[10000],k=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++){
 		if(su(i)==1&&hui(i)==1){
 			a[k]=i;
@@ -41,14 +41,14 @@ int main_bench()
 		}
 	}
 	if(k==0){
-		printf("no");
+		my_printf("no");
 	}
 	else{
 		for(i=0;i<k-1;i++){
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 		}
-		printf("%d",a[k-1]);
+		my_printf("%d",a[k-1]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

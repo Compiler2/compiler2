@@ -4,7 +4,7 @@ main_bench()
 {
       int num=0,i;
       char str[1000],b,a;
-      scanf("%s",str);
+      my_scanf("%s",str);
       for(i=0;i<strlen(str);i++)
         {
           for(b='A';b<='Z';b++)
@@ -17,7 +17,7 @@ main_bench()
           }
           if(str[i+1]!=b && str[i+1]!=b+32)
           {
-            printf("(%c,%d)",b,num);
+            my_printf("(%c,%d)",b,num);
             num=0;
           }
         }

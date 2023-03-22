@@ -3,11 +3,11 @@
 int main_bench(){
 int n,i,m,e,f,g;
 double p;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int a[n],b[n];
 for(i=0;i<n;i++){
-scanf("%d",&a[i]);
-scanf("%d\n",&b[i]);
+my_scanf("%d",&a[i]);
+my_scanf("%d\n",&b[i]);
 }
 e=b[0];
 for(i=1;i<n;i++){
@@ -43,11 +43,11 @@ tz[i-f]=tz[i-f]+1;
 }
 for(i=0;i<=e-f;i++){
 if(sz[i]==n||tz[i]==n){
-printf("no");
+my_printf("no");
 return 0;
 }
 }
-printf("%d ",f);
-printf("%d",e);
+my_printf("%d ",f);
+my_printf("%d",e);
 return 0;
 }

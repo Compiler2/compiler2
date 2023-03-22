@@ -7,12 +7,12 @@ int main_bench()
  long t=0;
  char s[11],x[11]={""};
  int a,b,i,k,n;
- scanf("%d %s %d",&a,s,&b);
+ my_scanf("%d %s %d",&a,s,&b);
  n=strlen(s);
  for (i=0;i<=n-1;i++)
    t=f1(s[i])+t*a;
  n=0;
- if (t==0) printf("0");
+ if (t==0) my_printf("0");
  while(t!=0)
  { k=t%b;
    t=(t-k)/b;
@@ -20,8 +20,8 @@ int main_bench()
    n++;
  }
  for (i=n-1;i>=0;i--)
-	 printf("%c",x[i]);
-printf("\n");
+	 my_printf("%c",x[i]);
+my_printf("\n");
 }
 
 

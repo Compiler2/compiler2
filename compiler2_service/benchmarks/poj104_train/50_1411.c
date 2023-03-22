@@ -2,7 +2,7 @@
 
 int main_bench()
 {int w,i,day,k,t;
-scanf("%d",&w);
+my_scanf("%d",&w);
 
 for(i=1;i<=12;i++){
  day=0;
@@ -17,7 +17,7 @@ for(i=1;i<=12;i++){
    t=w+(day-1)%7;
    if(t>7){t=t-7;}
    if(t==5){  
-     printf("%d\n",i);}
+     my_printf("%d\n",i);}
 }
 return 0;
 }

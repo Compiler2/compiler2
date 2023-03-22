@@ -7,10 +7,10 @@ int main_bench()
 	int sum,num;
 	int lon,wid;
 	int c[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		for(i=0;i<n;i++){
 			for(j=0;j<n;j++){
-				scanf("%d",&(c[i][j]));
+				my_scanf("%d",&(c[i][j]));
 		}
 		}
 		for(i=0;i<n;i++){
@@ -33,7 +33,7 @@ int main_bench()
 		            }
 		}
 			m=(lon-2)*(wid-2);
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 }
 
  

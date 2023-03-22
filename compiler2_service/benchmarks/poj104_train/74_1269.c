@@ -15,10 +15,10 @@ m=m/10;}
 return(t);}
 int main_bench()
 {int m,n,i,j,t=0;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for(i=m;i<=n;i++)
 {if(sushu(i)&&(i==huiwen(i)))
-{if(t==0)printf("%d",i);
-else printf(",%d",i);
+{if(t==0)my_printf("%d",i);
+else my_printf(",%d",i);
 t++;}}
-if(t==0)printf("no");}
+if(t==0)my_printf("no");}

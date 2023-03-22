@@ -4,11 +4,11 @@ int main_bench()
 {
    int m,n;
 
-scanf("%d",&m);
+my_scanf("%d",&m);
 int i;
 double a,b,c;
 for(i=0;i<m;i+=1){
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int j;
 	double s=0;
 	a=2;
@@ -19,7 +19,7 @@ for(i=0;i<m;i+=1){
 	 a=a+b;
 	b=c;}
 
-printf("%.3lf\n",s);
+my_printf("%.3lf\n",s);
 }
 return 0;
 }

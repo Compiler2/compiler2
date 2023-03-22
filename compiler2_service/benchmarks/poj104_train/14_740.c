@@ -7,10 +7,10 @@ int main_bench()
     {
            int m,x,y;
            }a[100000],aa;
-           scanf ("%d",&n);
+           my_scanf ("%d",&n);
            for (i=0;i<n;i++)
            {
-               scanf ("%d%d%d",&a[i].m,&a[i].x,&a[i].y);
+               my_scanf ("%d%d%d",&a[i].m,&a[i].x,&a[i].y);
                }
            for(i=0;i<3;i++)
            {
@@ -26,7 +26,7 @@ int main_bench()
                                    }
                                    for (i=0;i<3;i++)
                                    {
-                                       printf ("%d %d\n",a[i].m,(a[i].x+a[i].y));
+                                       my_printf ("%d %d\n",a[i].m,(a[i].x+a[i].y));
                                        }
                                
                                        return 0;

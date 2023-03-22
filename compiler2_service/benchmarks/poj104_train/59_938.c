@@ -9,11 +9,11 @@ for(i=0;i<150;i++)
    for(j=0;j<150;j++)
     {p[i][j]='0';a[i][j]='0';}
   
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     i=1;j=1;
 for(i=1;i<n+1;i++)
     
-      {scanf("%s",p[i]);
+      {my_scanf("%s",p[i]);
           for(j=n;j>=1;j--)
              {
                            p[i][j]=p[i][j-1];
@@ -23,7 +23,7 @@ for(i=1;i<n+1;i++)
       
       }
 
-scanf("%d",&m);
+my_scanf("%d",&m);
 
    for(k=0;k<m-1;k++)
     {
@@ -44,6 +44,6 @@ for(i=1;i<n+1;i++)
   for(j=1;j<n+1;j++)
    if(p[i][j]=='@')
     sum++;
-    printf("%d",sum);
+    my_printf("%d",sum);
     
 }

@@ -9,7 +9,7 @@ int main_bench()
     }
     for(p=0;p<100;p++)
     {
-                    scanf("%d %d %d %d %d %d",&a[p],&b[p],&c[p],&d[p],&e[p],&f[p]);
+                    my_scanf("%d %d %d %d %d %d",&a[p],&b[p],&c[p],&d[p],&e[p],&f[p]);
                     i++;
                     if(a[p]==0&&b[p]==0&&c[p]==0&&d[p]==0&&e[p]==0&&f[p]==0)
                     {
@@ -40,7 +40,7 @@ int main_bench()
     }
     for(p=0;p<i-1;p++)
     {
-                    printf("%d\n",s[p]);
+                    my_printf("%d\n",s[p]);
     }
     return 0;
 }

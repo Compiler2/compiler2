@@ -6,7 +6,7 @@ int main_bench()
 	int le(char);
 	int n,i,len;
 	char str[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	while(n--)
 	{
@@ -14,15 +14,15 @@ int main_bench()
 	  len=strlen(str);
 	  if(!le(str[0]))
 	  {
-  		printf("0\n"); continue;
+  		my_printf("0\n"); continue;
   	  }	
   	  for(i=0;i<len;i++)
   	  {
   	  	if((!le(str[i]))&&(!num(str[i])))
   	  	  break;
   	  }
-  	  if(i==len) printf("1\n");
-  	  else printf("0\n");
+  	  if(i==len) my_printf("1\n");
+  	  else my_printf("0\n");
 	}
 }
 int le(char c)

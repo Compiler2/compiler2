@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int row,col;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	int a[100][100];
 	int i,t;
 	int count=0;
@@ -11,7 +11,7 @@ int main_bench()
 	{
 		for(t=0;t<col;t++)
 		{
-			scanf("%d",&a[i][t]);
+			my_scanf("%d",&a[i][t]);
 		}
 	}
 	
@@ -22,14 +22,14 @@ int main_bench()
 	{
 		for(j=k;j<=(col-1-k);j++)
 		{
-			printf("%d\n",a[k][j]);
+			my_printf("%d\n",a[k][j]);
 			count++;
 		}
 		if(count==row*col)
 			break;
 		for(m=k+1;m<=row-2-k;m++)
 		{
-			printf("%d\n",a[m][col-1-k]);
+			my_printf("%d\n",a[m][col-1-k]);
 			count++;
 		}
 			if(count==row*col)
@@ -37,14 +37,14 @@ int main_bench()
 
 		for(j=col-1-k;j>=k;j--)
 		{
-			printf("%d\n",a[row-1-k][j]);
+			my_printf("%d\n",a[row-1-k][j]);
 			count++;
 		}		
 		    if(count==row*col)
 			break;
 		for(m=row-2-k;m>=k+1;m--)
 		{
-			printf("%d\n",a[m][k]);
+			my_printf("%d\n",a[m][k]);
 			count++;
 
 		}
@@ -60,7 +60,7 @@ int main_bench()
 		{
 		for(j=k;j<=col-1-k;j++)
 		{
-			printf("%d\n",a[k][j]);
+			my_printf("%d\n",a[k][j]);
 			count++;
 		}
 			if(count==(row+1)*col)
@@ -69,7 +69,7 @@ int main_bench()
 			}
 		for(m=k+1;m<=row-k-1;m++)
 		{
-			printf("%d\n",a[m][col-1-k]);
+			my_printf("%d\n",a[m][col-1-k]);
 			count++;
 		}			
 		    if(count==(row+1)*col)
@@ -78,7 +78,7 @@ int main_bench()
 			}
 		for(j=col-1-k;j>=k;j--)
 		{
-			printf("%d\n",a[row-k][j]);
+			my_printf("%d\n",a[row-k][j]);
 			count++;
 		}			
 		    if(count==(row+1)*col)
@@ -87,7 +87,7 @@ int main_bench()
 			}
 		for(m=row-1-k;m>=k+1;m--)
 		{
-			printf("%d\n",a[m][k]);
+			my_printf("%d\n",a[m][k]);
 			count++;
 		}
 			if(count==(row+1)*col)

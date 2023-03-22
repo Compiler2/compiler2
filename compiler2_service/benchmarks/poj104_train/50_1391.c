@@ -2,7 +2,7 @@
 
 int main_bench(){
     int w,i,b,c;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	int sz[12];
 	sz[0]=13;
 	sz[1]=44;
@@ -40,7 +40,7 @@ int main_bench(){
 	for(i=0;i<12;i++){
 		b=sz[i]%7;
 		if(b==c){
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
     	

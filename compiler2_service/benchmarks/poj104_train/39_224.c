@@ -14,11 +14,11 @@ struct m mo;
 int main_bench()
 {
 	int n,i,j,zo=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		la[i].z=0;
-		scanf("%s %d %d %c %c %d",&la[i].l,&la[i].a,&la[i].b,&la[i].x,&la[i].y,&la[i].z);
+		my_scanf("%s %d %d %c %c %d",&la[i].l,&la[i].a,&la[i].b,&la[i].x,&la[i].y,&la[i].z);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -44,5 +44,5 @@ int main_bench()
 			}
 	for(i=0;i<n;i++)
 		zo=zo+la[i].s;
-	printf("%s\n%d\n%d\n",la[0].l,la[0].s,zo);
+	my_printf("%s\n%d\n%d\n",la[0].l,la[0].s,zo);
 }

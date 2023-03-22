@@ -3,11 +3,11 @@
 int main_bench(){
 	char a[100],b[100],mid;
 	int i,j,l1,l2,judge;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	if(l1!=l2){
-		printf("NO");
+		my_printf("NO");
 	}else{
 		for(i=1;i<=l1;i++){
 			for(j=0;j<l1-i;j++){
@@ -29,9 +29,9 @@ int main_bench(){
 		}
 		judge=strcmp(a,b);
 		if(judge==0){
-			printf("YES");
+			my_printf("YES");
 		}else{
-			printf("NO");
+			my_printf("NO");
 		}
 	}
 }

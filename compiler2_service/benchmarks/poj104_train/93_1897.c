@@ -8,23 +8,23 @@ int main_bench()
  char d='7';
  char e='n';
 
- scanf("%d", &a);
+ my_scanf("%d", &a);
  if(a%3==0 && a%5==0 && a%7==0)
-	 printf("%s","3 5 7");
+	 my_printf("%s","3 5 7");
  else if(a%3==0 && a%5==0)
-	 printf("%s","3 5");
+	 my_printf("%s","3 5");
  else if(a%5==0 && a%7==0)
-	 printf("%s", "5 7");
+	 my_printf("%s", "5 7");
  else if(a%3==0 && a%7==0)
-	 printf("%s", "3 7");
+	 my_printf("%s", "3 7");
  else if(a%3==0)
-	 printf("%c",b);
+	 my_printf("%c",b);
  else if(a%5==0)
-	 printf("%c",c);
+	 my_printf("%c",c);
  else if(a%7==0)
-	 printf("%c",d);
+	 my_printf("%c",d);
  else
-	 printf("%c",e);
+	 my_printf("%c",e);
  
  return 0;
 

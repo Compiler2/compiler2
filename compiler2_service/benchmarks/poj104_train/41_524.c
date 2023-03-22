@@ -88,7 +88,7 @@ main_bench()
                                         }
                                         if(t[0]==1&&t[1]==1&&t[2]==1&&t[3]==1&&t[4]==1&&t[5]==1)
                                         {
-                                            printf("%d %d %d %d %d\n",i1,i2,i3,i4,i5);
+                                            my_printf("%d %d %d %d %d\n",i1,i2,i3,i4,i5);
                                         }
                                     }
                                 }

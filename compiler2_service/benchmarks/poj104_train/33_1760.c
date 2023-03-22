@@ -6,10 +6,10 @@ struct point{
 };
 int main_bench(){
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point chain[n];
 	for(i=0;i<n;i++){
-		scanf("%s",&(chain[i].A));
+		my_scanf("%s",&(chain[i].A));
 	}
 	for(i=0;i<n;i++){
 		for(j=0;chain[i].A[j];j++){
@@ -28,7 +28,7 @@ int main_bench(){
 		}chain[i].B[j]='\0';
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",chain[i].B);
+		my_printf("%s\n",chain[i].B);
 	}
 	return 0;
 }

@@ -24,7 +24,7 @@ int main_bench()
 	{
         if(kid[i].c!=kid[i+1].c)
 		{
-			printf("%d %d\n",kid[i].num,kid[i+1].num);
+			my_printf("%d %d\n",kid[i].num,kid[i+1].num);
 			
 			for(j=i;j<n-2;j++)
 			{kid[j]=kid[j+2];}

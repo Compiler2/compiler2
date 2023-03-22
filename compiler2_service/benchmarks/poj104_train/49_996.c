@@ -16,7 +16,7 @@ void f(char s[502],int m)
 		else break;
 	}
 	if(k==m)
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 }
 int main_bench()
 {

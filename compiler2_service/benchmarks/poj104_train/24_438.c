@@ -19,14 +19,14 @@ int main_bench()
 			if(strlen(*(b+i))>=strlen(*(b+k)))
 				p++;
 		}
-		if(p==j){ printf("%s\n",*(b+i));break;}
+		if(p==j){ my_printf("%s\n",*(b+i));break;}
 	}
 	for(i=0;i<j;i++){
 		for(k=0,p=0;k<j;k++){
 			if(strlen(*(b+i))<=strlen(*(b+k)))
 				p++;
 		}
-		if(p==j){ printf("%s\n",*(b+i));break;}
+		if(p==j){ my_printf("%s\n",*(b+i));break;}
 	}
 }
 

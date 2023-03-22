@@ -5,10 +5,10 @@ int main_bench()
 
     int n,i,j,flag=0,length=0;
     char a[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",a);
+        my_scanf("%s",a);
         length=strlen(a);
         if('0'<=a[0]&&a[0]<='9') flag=1;
         for(j=0;j<length;j++)
@@ -19,8 +19,8 @@ int main_bench()
             else if(a[j]=='_') continue;
             else flag=1;
         }
-        if(flag==0) printf("yes\n");
-        else printf("no\n");
+        if(flag==0) my_printf("yes\n");
+        else my_printf("no\n");
         flag=0;
     }
     return 0;

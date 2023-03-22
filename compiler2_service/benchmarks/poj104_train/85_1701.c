@@ -3,9 +3,9 @@
 int main_bench(){
 char sz[100][20];
     int n,len[20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-      scanf("%s",sz[i]);
+      my_scanf("%s",sz[i]);
       len[i]=strlen(sz[i]);
     }
     for(int i=0;i<n;i++){
@@ -14,15 +14,15 @@ char sz[100][20];
           if((sz[i][j]>='A'&&sz[i][j]<='Z')||(sz[i][j]>='a'&&sz[i][j]<='z')||(sz[i][j]=='_')||(sz[i][j]>='0'&&sz[i][j]<='9')){
             continue;
           }else if(sz[i][j]=='\0'){
-            printf("yes\n");
+            my_printf("yes\n");
             break;
           }else{
-            printf("no\n");
+            my_printf("no\n");
             break;
           }
         }
       }else{
-        printf("no\n");
+        my_printf("no\n");
       }
     }
 return 0;

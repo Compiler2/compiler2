@@ -3,9 +3,9 @@
 int main_bench(){
 	int n;
 	int sz[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int e;
 	for(int z=1;z<=n;z++){
@@ -29,12 +29,12 @@ int main_bench(){
   for(int d=0;d<=n-1;d++){
 
 		if(sz[d]<a&&sz[d]%2!=0){
-    printf("%d,",sz[d]);
+    my_printf("%d,",sz[d]);
 	}
 
 }
 
-	printf("%d",a);
+	my_printf("%d",a);
 	
 
 	return 0;

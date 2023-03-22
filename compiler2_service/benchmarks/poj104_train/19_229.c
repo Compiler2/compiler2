@@ -44,10 +44,10 @@ int main_bench()
 		m++;
 		if(m!=k)
 		{
-			printf("%s ",t);
+			my_printf("%s ",t);
 		}
 		if(m==k)
-		{printf("%s\n",t);}
+		{my_printf("%s\n",t);}
 	}
 	return 0;
 }

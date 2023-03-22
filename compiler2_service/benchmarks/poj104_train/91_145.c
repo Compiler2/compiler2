@@ -10,6 +10,6 @@ int main_bench()
 	for(i=0;i<l;i++)
 		*(p+i)=*(p+i)+*(p+i+1);
 	*(p+l)=*(p+l)+j;
-	printf("%s\n",p);
+	my_printf("%s\n",p);
 	return 0;
 }

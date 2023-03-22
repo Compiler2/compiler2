@@ -6,11 +6,11 @@ int istarget(int);
 int main_bench()
 {
     int num,i;
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     for (i=2;i<=num/2;i++)
     {
         if (istarget(i)==1 && istarget(num-i)==1)
-            printf("%d %d\n",i,num-i);
+            my_printf("%d %d\n",i,num-i);
     }
 
     return 0;

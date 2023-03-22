@@ -73,7 +73,7 @@ main_bench()
                     {
                         a[4]=m;
                         if(con(a))
-                        printf("%d %d %d %d %d\n",a[0],a[1],a[2],a[3],a[4]);
+                        my_printf("%d %d %d %d %d\n",a[0],a[1],a[2],a[3],a[4]);
                     }
                 }
             }

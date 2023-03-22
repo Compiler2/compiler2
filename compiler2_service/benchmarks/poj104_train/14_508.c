@@ -30,17 +30,17 @@ int main_bench()
 {
 	int n,i;
 	struct Student stu[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>3)
 	{
 		for(i=0;i<3;i++)
 		{
-	    	scanf("%d%d%d",&stu[i].No,&stu[i].Chinese,&stu[i].Maths);
+	    	my_scanf("%d%d%d",&stu[i].No,&stu[i].Chinese,&stu[i].Maths);
 	    	stu[i].Total=stu[i].Chinese+stu[i].Maths;
 		}
         for(i=3;i<n;i++)
 		{
-		    scanf("%d%d%d",&stu[3].No,&stu[3].Chinese,&stu[3].Maths);
+		    my_scanf("%d%d%d",&stu[3].No,&stu[3].Chinese,&stu[3].Maths);
 			stu[3].Total=+stu[3].Chinese+stu[3].Maths;
 			bubble(stu,4);
 		}
@@ -49,11 +49,11 @@ int main_bench()
 	{	
 		for(i=0;i<n;i++)
 		{
-	    	scanf("%d%d%d",&stu[i].No,&stu[i].Chinese,&stu[i].Maths);
+	    	my_scanf("%d%d%d",&stu[i].No,&stu[i].Chinese,&stu[i].Maths);
 	    	stu[i].Total=stu[i].No+stu[i].Chinese+stu[i].Maths;
 		}
 		bubble(stu,n);
 	}
-	for(i=0;i<n&&i<3;i++)printf("%d %d\n",stu[i].No,stu[i].Total);
+	for(i=0;i<n&&i<3;i++)my_printf("%d %d\n",stu[i].No,stu[i].Total);
 	return 0;
 }

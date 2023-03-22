@@ -10,11 +10,11 @@ struct student
 main_bench()
 {
       int n,i,first=0,ifirst,second=0,isecond,third=0,ithird;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       struct student STUDENT_NUM[n];
       for(i=0;i<n;i++)
       {
-                      scanf("%d %d %d",&STUDENT_NUM[i].ID,&STUDENT_NUM[i].Chinese,&STUDENT_NUM[i].Math);
+                      my_scanf("%d %d %d",&STUDENT_NUM[i].ID,&STUDENT_NUM[i].Chinese,&STUDENT_NUM[i].Math);
                       STUDENT_NUM[i].Score=STUDENT_NUM[i].Chinese+STUDENT_NUM[i].Math; 
       }
       for(i=0;i<n;i++)
@@ -41,9 +41,9 @@ main_bench()
                                      ithird=i;
                       }
       }
-      printf("%d %d\n",STUDENT_NUM[ifirst].ID,first);
-      printf("%d %d\n",STUDENT_NUM[isecond].ID,second);
-      printf("%d %d\n",STUDENT_NUM[ithird].ID,third);
+      my_printf("%d %d\n",STUDENT_NUM[ifirst].ID,first);
+      my_printf("%d %d\n",STUDENT_NUM[isecond].ID,second);
+      my_printf("%d %d\n",STUDENT_NUM[ithird].ID,third);
       
       
       

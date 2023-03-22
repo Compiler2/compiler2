@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		char name[100];
@@ -16,7 +16,7 @@ int main_bench()
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].qi,&a[i].ping,&a[i].gan,&a[i].xi,&a[i].lun);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].qi,&a[i].ping,&a[i].gan,&a[i].xi,&a[i].lun);
 	}
 	int d[1000]={0};
 	for(i=0;i<n;i++)
@@ -41,7 +41,7 @@ int main_bench()
 		if(d[z]<d[i])
 		{z=i;}
 	}
-	printf("%s\n%d\n%d",a[z].name,d[z],sum);
+	my_printf("%s\n%d\n%d",a[z].name,d[z],sum);
 	return 0;
 }
 

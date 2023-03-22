@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int sz[500],i,n,m,max,e,js[500],j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0,j=0;i<=n-1;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		if(sz[i]%2==1){
 			js[j]=sz[i];
 			j++;
@@ -25,10 +25,10 @@ int main_bench(){
 	  }
          }
 	for(i=0;i<j-1;i++){
-		printf("%d,",js[i]);
+		my_printf("%d,",js[i]);
 	}
 	if(i==j-1){
-		printf("%d",js[i]);
+		my_printf("%d",js[i]);
 	}
 	return 0;
 }

@@ -5,7 +5,7 @@ int i ,len,sum,p;
 int flag;
 int main_bench()
 {
-	scanf("%s",s);
+	my_scanf("%s",s);
 	len = strlen(s);
 	sum = 0 ; flag = 1;
 	for (i = 0; i < len ; ++i)
@@ -15,9 +15,9 @@ int main_bench()
 		sum = sum%13;
 		if (!p && flag) continue;
 		flag = 0;
-		printf("%d",p);
+		my_printf("%d",p);
 	}
-	if (flag) printf("%d",0);
-	printf("\n");
-	printf("%d\n",sum);
+	if (flag) my_printf("%d",0);
+	my_printf("\n");
+	my_printf("%d\n",sum);
 }

@@ -23,14 +23,14 @@ int main_bench(){
 		   max=j;
 		}
 	}
-	printf("%s\n",str2[max]);
+	my_printf("%s\n",str2[max]);
     min=0;
     for(j=0;j<i+1;j++){
 		if((strlen(str2[j])<strlen(str2[min]))&&(strlen(str2[j])!=0)){
 		   min=j;
 		}
 	}
-	printf("%s",str2[min]);
+	my_printf("%s",str2[min]);
 return 0;
 }
 

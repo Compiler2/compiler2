@@ -6,9 +6,9 @@
     int y[100];
     int biaoji[100];
     int jilu[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-      scanf("%d %d",&x[i],&y[i]);
+      my_scanf("%d %d",&x[i],&y[i]);
       if(x[i]<141&&x[i]>89&&y[i]<91&&y[i]>59){
         biaoji[i]=1;                                        
       } else{
@@ -40,9 +40,9 @@
             max=jilu[i];                    
         }                
       }
-      printf("%d",max); 
+      my_printf("%d",max); 
       }else{
-       printf("%d",biaoji[0]);     
+       my_printf("%d",biaoji[0]);     
       }
   return 0;    
  }

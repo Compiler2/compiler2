@@ -5,9 +5,9 @@ int main_bench()
     double n,m;
     int i,k=0;
     char a[500],b[500];
-    scanf("%lf%s%s",&n,a,b);
+    my_scanf("%lf%s%s",&n,a,b);
     if(strlen(a)!=strlen(b))
-        printf("error");
+        my_printf("error");
     else{
         int p=1;
     for(i=0;i<strlen(a);i++){
@@ -15,14 +15,14 @@ int main_bench()
         {
              if(a[i]==b[i])
                  k++;}
-        else   {p=0;printf("error");break;}
+        else   {p=0;my_printf("error");break;}
     }
     if(p==1){
     m=(double)k/strlen(a);
     if(m>n)
-        printf("yes");
+        my_printf("yes");
     else
-        printf("no");
+        my_printf("no");
     }}
     return 0;
 }

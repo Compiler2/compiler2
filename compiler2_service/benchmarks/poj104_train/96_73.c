@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[100],c[100];
     int l,b[100]={0};
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     for(int i=0;i<l;i++)
     b[i]=a[i]-'0';
@@ -21,10 +21,10 @@ int main_bench()
                  for(int k=1;k<l;k++)
                  a[k-1]=a[k];
     }
-    printf("%s\n%d",a,b[l-1]);
+    my_printf("%s\n%d",a,b[l-1]);
     }
     else
-    printf("0\n%d",b[0]);
+    my_printf("0\n%d",b[0]);
     getchar();
     getchar();
 }

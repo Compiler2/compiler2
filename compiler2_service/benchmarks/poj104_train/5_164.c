@@ -5,9 +5,9 @@ int main_bench(){
     int m,n,i,c=0;
     int r=0;
     char a[505],b[505];
-    scanf("%lf",&x);
-    scanf("%s",a);
-    scanf("%s",b); 
+    my_scanf("%lf",&x);
+    my_scanf("%s",a);
+    my_scanf("%s",b); 
     n=strlen(a);
     m=strlen(b);
     if(m!=n){
@@ -25,13 +25,13 @@ int main_bench(){
     }
     y=1.0*r/n;
     if((y>x)&&(c==0)){
-                        printf("yes");                    
+                        my_printf("yes");                    
     }
     if((y<=x)&&(c==0)){
-                        printf("no");                    
+                        my_printf("no");                    
     }
     if(c==3){
-             printf("error");         
+             my_printf("error");         
     }
 
     return 0;

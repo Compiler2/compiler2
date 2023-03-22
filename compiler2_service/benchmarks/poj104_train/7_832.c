@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char str[256],sub[256],rep[256],sz[256];
-	scanf("%s%s%s",str,sub,rep);
+	my_scanf("%s%s%s",str,sub,rep);
 	int a,b,c,tag;
 	a=strlen(sub);
 	c=strlen(str);
@@ -26,17 +26,17 @@ int main_bench()
 	if(tag==1){
     	for(i=0;i<b;i++)
 		{
-	    	printf("%c",str[i]);
+	    	my_printf("%c",str[i]);
 		}
-    	printf("%s",sub);
+    	my_printf("%s",sub);
     	for(i=b+a;i<c;i++)
 		{
- 	    	printf("%c",str[i]);
+ 	    	my_printf("%c",str[i]);
 		}
 	}
 	else
 	{
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	return 0;
 }

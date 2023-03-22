@@ -6,7 +6,7 @@
       for(i=1;i<=6;i++)
      {
       int a,x,y;
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       if(a<0)
         {
              a=-a;
@@ -16,7 +16,7 @@
                                 y=10*y+x;
              }
              y=-y;
-             printf("%d\n",y);
+             my_printf("%d\n",y);
         }
       else
         {
@@ -25,7 +25,7 @@
                                 x=a%10;
                                 y=10*y+x;
              }
-             printf("%d\n",y);
+             my_printf("%d\n",y);
         }
      }
 }

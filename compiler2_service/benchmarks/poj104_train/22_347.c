@@ -4,15 +4,15 @@ main_bench()
 {
 	int a[300],i,j,k,t,u,p;
 	char c;
-	scanf("%d%c",&a[0],&c);
+	my_scanf("%d%c",&a[0],&c);
 	if(c=='\n')
-		printf("No");
+		my_printf("No");
 	else
 	{
 		i=1;
 		while(c!='\n')
 		{
-			scanf("%d%c",&a[i],&c);
+			my_scanf("%d%c",&a[i],&c);
 			i++;
 		}
 		for(j=0;j<=i-3;j++)
@@ -34,8 +34,8 @@ main_bench()
 			{p=0;break;}
 		}
 		if(p==0)
-			printf("%d",a[u-1]);
-		else printf("No");
+			my_printf("%d",a[u-1]);
+		else my_printf("No");
 	}
 }
 

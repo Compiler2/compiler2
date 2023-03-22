@@ -4,13 +4,13 @@ int main_bench()
 {
 	int a,y,i;
 	float m,n,p,q;
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	m=0;
 	n=0;
 	p=0;
 	q=0;
 	for(i=0;i<y;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<=18){
 			m++;
 		}
@@ -24,6 +24,6 @@ int main_bench()
 			q++;
 		}
 	}
-	printf("1-18: %.2f%%\n19-35: %.2f%%\n36-60: %.2f%%\n60??: %.2f%%\n",m*100/y,n*100/y,p*100/y,q*100/y);
+	my_printf("1-18: %.2f%%\n19-35: %.2f%%\n36-60: %.2f%%\n60??: %.2f%%\n",m*100/y,n*100/y,p*100/y,q*100/y);
 	return 0;
 }

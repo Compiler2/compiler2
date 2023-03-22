@@ -3,11 +3,11 @@
 main_bench()
 {
       int t,i,j,k,num,lop;
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       for(i=1;i<=t;i++)
       {
              char p[100871]={0};
-             scanf("%s",p);
+             my_scanf("%s",p);
              lop=strlen(p);
              for(j=0;j<=lop-1;j++)
              {
@@ -16,7 +16,7 @@ main_bench()
                                   if(p[j]==p[k]) num++;
                                   if(num==1) break;
              }
-             if(num==1) printf("%c\n",p[j]);
-             else printf("no\n");
+             if(num==1) my_printf("%c\n",p[j]);
+             else my_printf("no\n");
       }
 }

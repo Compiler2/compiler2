@@ -6,8 +6,8 @@ int main_bench()
     char s[300],t[300];
     memset(s,0,sizeof(s));
     memset(res,0,sizeof(res));
-    scanf("%s",s);
-    scanf("%s",t);
+    my_scanf("%s",s);
+    my_scanf("%s",t);
     {
         ls=strlen(s);
         lt=strlen(t);
@@ -34,10 +34,10 @@ int main_bench()
         }
     }
     for (i=res[0];res[i]==0;i--);
-    if (i==0)printf("0");else
+    if (i==0)my_printf("0");else
     for (;i>=1;i--)
-        printf("%d",res[i]);
+        my_printf("%d",res[i]);
 
-    printf("\n");
+    my_printf("\n");
     return 0;
 }

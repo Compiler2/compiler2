@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,i,m,j,a,e;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     int sz[n],b[n];
     j=0;
     for (i=0;i<n;i++){
-        scanf ("%d",&sz[i]);
+        my_scanf ("%d",&sz[i]);
         a=sz[i]%2;
         if(a==1){
         b[j]=sz[i] ;
@@ -23,8 +23,8 @@ int main_bench(){
         }
     }
 for (i=0;i<j-1;i++){
-    printf("%d,",b[i]);
+    my_printf("%d,",b[i]);
 }
-printf("%d",b[j-1]);
+my_printf("%d",b[j-1]);
 return 0;
 }

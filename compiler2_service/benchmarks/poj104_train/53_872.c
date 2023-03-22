@@ -8,10 +8,10 @@ int main_bench()
 	int i,j;
 	int n;
 	int count=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		flag[i]=0;
 	}
 	new[0]=sz[0];
@@ -26,13 +26,13 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",new[0]);
+	my_printf("%d",new[0]);
 	for(j=1,i=1;j<n&&i<n;i++)
     {
 		if(flag[i]==0)
 		{
 			new[j]=sz[i];
-			printf(",%d",new[j]);
+			my_printf(",%d",new[j]);
 			j++;
 		}
 	}

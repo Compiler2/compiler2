@@ -9,9 +9,9 @@ int main_bench()
  i=strlen(a);
 
  for(p=a;p<a+i-1;p++){
-                            printf("%c",*p+*(p+1));
+                            my_printf("%c",*p+*(p+1));
                             }
- printf("%c",*p+*head);
-   scanf("%d",&i);
+ my_printf("%c",*p+*head);
+   my_scanf("%d",&i);
 return 0;
 }

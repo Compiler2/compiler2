@@ -25,9 +25,9 @@ int main_bench()
 		min=word;
 		n=i;}
 		for(i=(m-max);i<m;i++){
-		printf("%c",a[i]);}
-	printf("\n");
+		my_printf("%c",a[i]);}
+	my_printf("\n");
 	for(j=(n-min);j<n;j++){
-		printf("%c",a[j]);}
+		my_printf("%c",a[j]);}
 	return 0;
 }

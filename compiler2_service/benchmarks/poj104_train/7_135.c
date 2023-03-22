@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[256],b[256],c[256];
-	scanf("%s %s %s",a,b,c);
+	my_scanf("%s %s %s",a,b,c);
 	char *p;
 	p=strstr(a,b);
 	if(p)
@@ -15,19 +15,19 @@ int main_bench()
         int m=0;
 	    for(i=0;i<n;i++)
 		{
-		   printf("%c",a[i]);
+		   my_printf("%c",a[i]);
 		}
 	    for(i=n;i<n+l;i++)
 		{
-			printf("%c",c[m]);
+			my_printf("%c",c[m]);
 			m++;
 		}
 		for(i=n+k;i<(strlen(a));i++)
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 	else
-	{printf("%s\n",a);}
+	{my_printf("%s\n",a);}
 	return 0;
 }

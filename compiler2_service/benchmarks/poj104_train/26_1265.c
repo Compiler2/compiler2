@@ -27,7 +27,7 @@ j++;
 i++;
 }
 cs[j+1]='\0';
-printf("%s",cs);
+my_printf("%s",cs);
 return 0;
 }
 

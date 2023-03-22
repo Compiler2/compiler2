@@ -6,10 +6,10 @@ int main_bench()
 	int *p;
 	p=a;
 	int i,m,k,n,l=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&k);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
 	{
 		if(a[i]==k)
@@ -21,7 +21,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n-l;i++)
-		if(i<n-(l+1))printf("%d ",a[i]);
-	else printf("%d",a[i]);
+		if(i<n-(l+1))my_printf("%d ",a[i]);
+	else my_printf("%d",a[i]);
 	return 0;
 }

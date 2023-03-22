@@ -48,8 +48,8 @@ int main_bench()
 		}
 	 }
 
-	 printf("%s\n",a[b]);
-     printf("%s\n",a[c]);
+	 my_printf("%s\n",a[b]);
+     my_printf("%s\n",a[c]);
 	 
 	 return 0;
 }

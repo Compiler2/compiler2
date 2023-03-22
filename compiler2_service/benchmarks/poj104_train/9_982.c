@@ -11,10 +11,10 @@ int main_bench()
 	};
 	struct Patient p[100],p2[100],temp;
 	int n,i,t=0,k,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",&p[i].id,&p[i].age);
+		my_scanf("%s %d",&p[i].id,&p[i].age);
 		p[i].flag=0;
 		if(p[i].age>=60)
 		{
@@ -36,11 +36,11 @@ int main_bench()
 	  }
 	for(i=0;i<t;i++)
 	{
-		printf("%s\n",p[i].id);
+		my_printf("%s\n",p[i].id);
 	}
 	for(i=0;i<n;i++)
 	{
-		if(p2[i].flag==0) printf("%s\n",p2[i].id);
+		if(p2[i].flag==0) my_printf("%s\n",p2[i].id);
 	}
 	return 0;
 }

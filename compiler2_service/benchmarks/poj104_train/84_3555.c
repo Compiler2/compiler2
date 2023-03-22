@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a, b=-1,c=-2;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int d;
 	for(int i=0;i<a;i++){
-		scanf("%d",&d);
+		my_scanf("%d",&d);
 		if(d>b){
 			c = b;
 			b = d;
@@ -15,6 +15,6 @@ int main_bench()
 			c = d;
 		}
 	}
-    printf("%d\n%d",b,c);
+    my_printf("%d\n%d",b,c);
 	return 0;
 }

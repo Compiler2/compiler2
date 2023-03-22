@@ -13,10 +13,10 @@ struct student stu[100];
 int main_bench()
 {
 	int i,j,k,m,n,a[100],sum=0,t,add=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco,&stu[i].pin,&stu[i].gan,&stu[i].xi,&stu[i].lun);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco,&stu[i].pin,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 		a[i]=0;
 	}
 	for(i=1;i<=n;i++)
@@ -48,6 +48,6 @@ int main_bench()
 	for(i=1;i<=n;i++)
 	{add=add+a[i];}
 
-	printf("%s\n%d\n%d",stu[t].name,sum,add);
+	my_printf("%s\n%d\n%d",stu[t].name,sum,add);
 	
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	 int n;
-	 scanf("%d\n",&n);
+	 my_scanf("%d\n",&n);
      int a,i,sum,som;
      for(i=0;i<n;i++){
-         scanf("%d\n",&a);
+         my_scanf("%d\n",&a);
 		 if(i==0){
 			 sum=a;
 			 som=0;
@@ -21,7 +21,7 @@ int main_bench()
 				 som=som;
 		 }
 	 }
-		 printf("%d\n%d\n",sum,som);
+		 my_printf("%d\n%d\n",sum,som);
 		 return 0;
 }
 		 

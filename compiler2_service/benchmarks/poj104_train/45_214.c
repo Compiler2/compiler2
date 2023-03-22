@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,k,l1,l2,word;
 	char a[100],b[100],c[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	for(i=0;i<=l2-l1;i++)
@@ -22,7 +22,7 @@ int main_bench()
 		} 
 		if(word==1)
 			{
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 	}

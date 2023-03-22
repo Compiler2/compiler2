@@ -5,11 +5,11 @@ int b[10000]={0};
 int main_bench()
 {
 	int n=1,i,j,k,a[10000];
-    scanf("%d",&a[1]);
+    my_scanf("%d",&a[1]);
 	do
 	{
 		++n;
-	}while(scanf(",%d",&a[n]));
+	}while(my_scanf(",%d",&a[n]));
 	for(i=1;i<n;++i)
 	{
 		b[a[i]]++;
@@ -20,10 +20,10 @@ int main_bench()
 		if(b[j]>0) k=k+1;
 		if(k==2) 
 		{
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 			break;
 		}
 	}
-	if(j==0) printf("No\n");
+	if(j==0) my_printf("No\n");
 	return(0);
 }

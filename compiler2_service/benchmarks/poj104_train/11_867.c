@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,a,b,c,sum=0;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
     if(b==1)
 		sum=0;
 	else if(b==2)
@@ -23,6 +23,6 @@ int main_bench()
 	}
 	}
 	sum=sum+c;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

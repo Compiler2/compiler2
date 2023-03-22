@@ -3,7 +3,7 @@
 int main_bench()
 {
 char str[256],sub[256],rep[256];
-scanf("%s%s%s",str,sub,rep);
+my_scanf("%s%s%s",str,sub,rep);
 int m,n,i,j,e,k;
 n=strlen(str);
 m=strlen(sub);
@@ -18,9 +18,9 @@ if(e==m)break;
 }
 if(e==m)
 {
-for(k=0;k<i;k++)printf("%c",str[k]);
-printf("%s",rep);
-for(k=i+m;k<n;k++)printf("%c",str[k]);
-}else{printf("%s",str);}
+for(k=0;k<i;k++)my_printf("%c",str[k]);
+my_printf("%s",rep);
+for(k=i+m;k<n;k++)my_printf("%c",str[k]);
+}else{my_printf("%s",str);}
 return 0;
 }

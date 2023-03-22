@@ -2,7 +2,7 @@
 
 int main_bench()
 {  int m,a=3,b,i,j;
-scanf("%d",&m);
+my_scanf("%d",&m);
 loop:while(a<=m/2)
 {i=2;
 	 j=2;
@@ -21,7 +21,7 @@ b=m-a;
 	}
 	else  j++;
 	}
-printf("%d %d\n",a,b);
+my_printf("%d %d\n",a,b);
 a++;
 	}
 return 0;

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,i,j=0,k=0,r,o=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char renming[200][20],ganbu[200],xibu[200];
 	int a[200],b[200],c[200],total[200];
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",&renming[i],&a[i],&b[i],&ganbu[i],&xibu[i],&c[i]);}
+		my_scanf("%s %d %d %c %c %d",&renming[i],&a[i],&b[i],&ganbu[i],&xibu[i],&c[i]);}
 	for(i=0;i<n;i++){
 		total[i]=0;
 		if(a[i]>80&&c[i]>0){total[i]+=8000;}
@@ -16,6 +16,6 @@ int main_bench(){
 		if(b[i]>80&&ganbu[i]=='Y'){total[i]+=850;}
 		if(total[i]>j){j=total[i];r=i;}
 		o+=total[i];
-	}printf("%s\n%d\n%d",renming[r],j,o);
+	}my_printf("%s\n%d\n%d",renming[r],j,o);
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,n,year[200],m1[200],m2[200],run=0,sum[200]={0},j,k,t,s;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d%d%d",&year[i],&m1[i],&m2[i]);}
+	my_scanf("%d%d%d",&year[i],&m1[i],&m2[i]);}
 for(i=0;i<n;i++){
 	run=0;
 	if(year[i]%400 == 0 ||(year[i]%4==0 && year[i]%100!=0)){
@@ -65,10 +65,10 @@ for(i=0;i<n;i++){
 	}
 for(i=0;i<n;i++){
 	if(sum[i]%7==0){
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else if(sum[i]%7!=0){
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 }
 

@@ -91,6 +91,6 @@ int main_bench()
   if(t[i]>x)
    x=t[i];
  }
- printf("%d %d",k+1,x);
+ my_printf("%d %d",k+1,x);
  return 0;
 }

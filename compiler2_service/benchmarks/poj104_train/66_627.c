@@ -5,7 +5,7 @@ int main_bench()
 	int i,k,n,m,sum=0;
 	
 	
-	scanf("%d%d%d",&n,&m,&k);
+	my_scanf("%d%d%d",&n,&m,&k);
 	
 	sum = ((n-1)/400)*97+365*(n-1)-(n-1)/3200+(n-1)/172800;
 	for(i=((n-1)/400)*400+1;i<n;i++)
@@ -24,6 +24,6 @@ int main_bench()
 	char week[7][5] = {"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
 	if (n == 1111111111)
 		sum = 6;
-	printf("%s\n",week[sum%7]);
+	my_printf("%s\n",week[sum%7]);
 	return 0;
 }

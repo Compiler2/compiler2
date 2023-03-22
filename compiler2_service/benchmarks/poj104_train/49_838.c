@@ -23,8 +23,8 @@ int main_bench()
 			if(m==i+j)
 			{
 				for(m=j;m<=j+i-1;m++)
-				{printf("%c",a[m]);}
-				printf("\n");
+				{my_printf("%c",a[m]);}
+				my_printf("\n");
 			}
 			j=j+1;
 		}

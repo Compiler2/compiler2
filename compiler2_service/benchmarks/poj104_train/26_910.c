@@ -7,9 +7,9 @@ int main_bench(){
     n=strlen(s);
     for(i=0;i<n;i++){
                      if(!(s[i]==' ')){
-                                printf("%c",s[i]);
+                                my_printf("%c",s[i]);
                      }else if(!(s[i+1]==' ')){
-                           printf(" ");
+                           my_printf(" ");
                      }
     }
     return 0;

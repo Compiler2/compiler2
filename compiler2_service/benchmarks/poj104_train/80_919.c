@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,d=0,m=0,i;
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	if(y1==y2)
 	{
 		if(m1==m2)
@@ -55,6 +55,6 @@ int main_bench()
 	}
 	if(d>366)
 	d++;
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

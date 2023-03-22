@@ -6,13 +6,13 @@ int main_bench()
 		int i,n ,j,sum=0,m,k,x;
 		int edge[100][100];
 
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&edge[i][j]);
+			my_scanf("%d",&edge[i][j]);
 		}
 	}
  
@@ -46,6 +46,6 @@ int main_bench()
 	x=(k-2)*(m-2);
 
 
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 	return 0;
 }

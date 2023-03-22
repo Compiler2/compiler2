@@ -46,14 +46,14 @@ free (Monkey);
 int main_bench(){
     int king[100];
     int a,b,n=0,k=0;
-    scanf("%d%d",&a,&b);
+    my_scanf("%d%d",&a,&b);
     while(a!=0&&b!=0)
     {
        king[n]=King(a,b);
        n++;
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
 
     }
-    for(k=0;k<n;k++) printf("%d\n",*(king+k));
+    for(k=0;k<n;k++) my_printf("%d\n",*(king+k));
     return 0;
     }

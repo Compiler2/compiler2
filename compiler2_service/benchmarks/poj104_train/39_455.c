@@ -18,12 +18,12 @@ int main_bench()
 {
 	int n,i,sum=0;
 	struct student Max;
-	scanf("%d" ,&n);
+	my_scanf("%d" ,&n);
 	struct student *stu;
 	stu = (struct student *)malloc(n*sizeof(struct student));
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %s %s %d" ,stu[i].name,&stu[i].exam,&stu[i].result,&stu[i].gan,&stu[i].xibu,&stu[i].lecture);
+		my_scanf("%s %d %d %s %s %d" ,stu[i].name,&stu[i].exam,&stu[i].result,&stu[i].gan,&stu[i].xibu,&stu[i].lecture);
 
 	}
 	for(i=0;i<n;i++)
@@ -56,13 +56,13 @@ int main_bench()
 		if(stu[i].bonus>Max.bonus)
 			Max=stu[i];
 	}
-	printf("%s\n" ,Max.name);
-    printf("%d\n" ,Max.bonus);
+	my_printf("%s\n" ,Max.name);
+    my_printf("%d\n" ,Max.bonus);
 	for(i=0;i<n;i++)
 	{
 		sum+=stu[i].bonus;
 	}
-	printf("%d\n" ,sum);
+	my_printf("%d\n" ,sum);
 	free(stu);
 }
 

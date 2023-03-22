@@ -19,14 +19,14 @@ int main_bench()
 		else 
 		{
 			for(j=0;j<k;j++) 
-				printf("%c",*(p+j+1));
-			printf(" ");
+				my_printf("%c",*(p+j+1));
+			my_printf(" ");
 			k=0;
 			p--;
 		}
         if((q-i)==w) 
            for(j=0;j<k;j++)
-			   printf("%c",*(p+j+1));
+			   my_printf("%c",*(p+j+1));
 	}
 	return 0;
 }

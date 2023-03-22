@@ -12,11 +12,11 @@ struct student
 int main_bench()
 {
     int n,i,p[100]={0},sum=0,max;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-    scanf("%s",stu[i].name);
-    scanf("%d %d %c %c %d",&stu[i].a,&stu[i].b,&stu[i].c1,&stu[i].c2,&stu[i].d);
+    my_scanf("%s",stu[i].name);
+    my_scanf("%d %d %c %c %d",&stu[i].a,&stu[i].b,&stu[i].c1,&stu[i].c2,&stu[i].d);
     }
     for(i=0;i<n;i++)
     {
@@ -42,11 +42,11 @@ int main_bench()
  {
                    if(p[i]==max)
                    {
-                               printf("%s\n",stu[i].name);
-                               printf("%d\n",p[i]);
+                               my_printf("%s\n",stu[i].name);
+                               my_printf("%d\n",p[i]);
                                break;
                    }
                    }
-                   printf("%d\n",sum);
+                   my_printf("%d\n",sum);
                    return 0;
  }

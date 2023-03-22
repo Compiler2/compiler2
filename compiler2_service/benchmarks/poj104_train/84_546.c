@@ -5,9 +5,9 @@ int main_bench() {
 	int e=0;
 	int maxi=0;
 	int a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]>maxi){
 			f=maxi;			
 			maxi=a[i];
@@ -16,12 +16,12 @@ int main_bench() {
 			e=a[i];
 		}
 	}
-	printf("%d\n",maxi);	
+	my_printf("%d\n",maxi);	
 	if(f>e){
-		printf("%d\n",f);
+		my_printf("%d\n",f);
 	}
 	else{
-		printf("%d\n",e);
+		my_printf("%d\n",e);
 	}
 	return 0;
 }

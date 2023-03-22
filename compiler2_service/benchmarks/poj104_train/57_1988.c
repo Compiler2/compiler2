@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i = 0;i < n;i++){
         char a[15],*b;
         int l;
         b = a;
-        scanf("%s\n",b);
+        my_scanf("%s\n",b);
         l = strlen(a);
         b = &a[l-1];
         if(strcmp(b,"r") == 0||strcmp(b,"y") == 0){
@@ -18,8 +18,8 @@ int main_bench()
            a[l-3] = 0;
            }
          b = a;
-         printf(b);
-         printf("\n");
+         my_printf(b);
+         my_printf("\n");
      }
     return 0;
 }

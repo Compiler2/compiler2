@@ -22,18 +22,18 @@ void sum(char str1[],char str2[],int m,int n)
          }               
       } 
       for(i=0;;i++) {if(str3[i]=='0') y++;else break;}
-      if (y==n) printf("%c",'0');
+      if (y==n) my_printf("%c",'0');
       else
       {for(i=y;i<n;i++)
-       printf("%c",str3[i]);
+       my_printf("%c",str3[i]);
       }
 }     
 main_bench()
 {
      char str1[251],str2[251],str3[251],str4[251];
      int i,m=0,n=0,b;
-     scanf("%s",str1);
-     scanf("%s",str2);
+     my_scanf("%s",str1);
+     my_scanf("%s",str2);
      for(i=0;str1[i]!='\0';i++)
      {
        m=m+1;

@@ -6,8 +6,8 @@ int main_bench()
 	int i,j,ya,yb,num=0,count=0;
 	
     
-		scanf("%s",a);
-		scanf("%s",&b);
+		my_scanf("%s",a);
+		my_scanf("%s",&b);
     ya=strlen(a);
 	yb=strlen(b);
 
@@ -30,11 +30,11 @@ int main_bench()
 		 num=num+count;
 	 }
 	 if(num==ya)
-		 printf("YES");
-		 else printf("NO");
+		 my_printf("YES");
+		 else my_printf("NO");
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 }
 
 		 

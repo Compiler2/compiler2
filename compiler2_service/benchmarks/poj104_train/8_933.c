@@ -8,12 +8,12 @@ void p1(void)
 {
 	int i;
 	
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
     for(i=0;i<n1;i++){
-		scanf("%d",&num1[i]);
+		my_scanf("%d",&num1[i]);
 	}
 	for(i=0;i<n2;i++){
-		scanf("%d",&num2[i]);
+		my_scanf("%d",&num2[i]);
 	}
 }
 
@@ -59,9 +59,9 @@ void p3(int num1[100],int num2[100],int n1,int n2)
 void p4(int out[200],int n)
 {
 	int i;
-	printf("%d",out[0]);
+	my_printf("%d",out[0]);
 	for(i=1;i<n;i++){
-		printf(" %d",out[i]);
+		my_printf(" %d",out[i]);
 	}
 }
 int main_bench()

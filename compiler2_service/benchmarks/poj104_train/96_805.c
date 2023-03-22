@@ -23,24 +23,24 @@ int main_bench(){
 		}
 		if(j<n-2)
 		{
-			printf("%d",s);
+			my_printf("%d",s);
 		}
 		else if(j==n-2)
 		{
-			printf("%d\n",s);
-			printf("%d\n",a);
+			my_printf("%d\n",s);
+			my_printf("%d\n",a);
 		}
 	}
 
 	if(n==1)
 	{
-	printf("0\n");
-	printf("%d\n",SZ[0]);	
+	my_printf("0\n");
+	my_printf("%d\n",SZ[0]);	
 	}
 	if(n==2&&SZ[0]*10+SZ[1]<13)
 	{
-	printf("0\n");
-	printf("%d\n",SZ[0]*10+SZ[1]);	
+	my_printf("0\n");
+	my_printf("%d\n",SZ[0]*10+SZ[1]);	
 	}
 	
 	return 0;

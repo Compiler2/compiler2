@@ -3,12 +3,12 @@
 main_bench()
 {
   int n,k,i,j,a[100000],*p;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   p=a;
   for(i=0;i<n;i++)
-    scanf("%d",p++);
+    my_scanf("%d",p++);
   p=a;
-  scanf("%d",&k);
+  my_scanf("%d",&k);
   for(i=0;i<n;i++)
   {
     if(*(p+i)==k)
@@ -21,7 +21,7 @@ main_bench()
     if(*(p+i)==k)break;
   }
   for(j=0;j<i-1;j++)
-    printf("%d ",*p++);
+    my_printf("%d ",*p++);
   p=a;
-  printf("%d",*(p+i-1));
+  my_printf("%d",*(p+i-1));
 }

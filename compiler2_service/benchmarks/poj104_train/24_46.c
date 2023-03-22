@@ -43,9 +43,9 @@ int main_bench()
 		}
 	}
 	puts(a[nma]);
-	scanf("\n");
+	my_scanf("\n");
 	puts(a[nmi]);
-	scanf("\n");
+	my_scanf("\n");
 	return 0;
 }
 

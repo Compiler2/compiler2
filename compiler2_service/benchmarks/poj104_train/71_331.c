@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,year,m1,m2,temp,s[12]={0},h=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=12;i++)
 		{
 		if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
@@ -14,7 +14,7 @@ int main_bench()
 		}
 	for(j=0;j<n;j++)
 	{
-		scanf("%d%d%d",&year,&m1,&m2);
+		my_scanf("%d%d%d",&year,&m1,&m2);
 		if(m1>m2)
 		{
 			temp=m2;
@@ -28,9 +28,9 @@ int main_bench()
 		for(i=m1;i<m2;i++)
 			h=h+s[i-1];
 		if(h%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		h=0;
 	}
 	return 0;

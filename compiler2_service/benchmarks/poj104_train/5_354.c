@@ -11,13 +11,13 @@ int main_bench()
 	double alike,n;
 	char jj1[500]={0};
 	char jj2[500]={0};
-	scanf("%lf",&n);
-	scanf("%s",jj1);
-	scanf("%s",jj2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",jj1);
+	my_scanf("%s",jj2);
 	int result1=strlen(jj1);
 	int result2=strlen(jj2);
 	if(result1!=result2){
-		printf("error");
+		my_printf("error");
 		
 	    return 0;
 }
@@ -31,7 +31,7 @@ int main_bench()
 }
 			
 			else{
-				printf("error");
+				my_printf("error");
 return 0;
 			
 			}
@@ -39,10 +39,10 @@ return 0;
 	}
 		alike=1.0*num/result1;
 		if(alike>=n)
-		{	printf("yes");
+		{	my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 
 

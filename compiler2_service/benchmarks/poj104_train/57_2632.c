@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,t,n,l,k;
 	char a[30],b[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<30;j++)
 		a[j]='\0';
 	for(j=0;j<1000;j++)
@@ -13,7 +13,7 @@ int main_bench()
 	{
 		for(j=0;j<30;j++)
 			a[j]='\0';
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l=strlen(a);
 		if(a[l-1]=='r'&&a[l-2]=='e')
 		{
@@ -44,5 +44,5 @@ int main_bench()
 			k=k+l+1;
 		}
 	}
-			printf("%s",b);
+			my_printf("%s",b);
 }

@@ -8,7 +8,7 @@ int main_bench()
     int i,n;
     for(i=0;*(p+i-1)!='\n';i++)
     {
-                            scanf("%c",(p+i));
+                            my_scanf("%c",(p+i));
                             
     }
     n=i;
@@ -18,7 +18,7 @@ int main_bench()
     {
                          if(((*p!=' ')&&(*(p+1)==' '))||((*p==' ')&&(*(p+1)!=' '))||((*p!=' ')&&(*(p+1)!=' '))||((*p!=' ')&&(*(p+1)=='\0')))
                          {
-                                      printf("%c",*p);
+                                      my_printf("%c",*p);
                         }}
     return 0;
 }

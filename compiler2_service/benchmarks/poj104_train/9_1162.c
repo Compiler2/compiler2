@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,m,j,k=0,a,b,c,winnum=0,win=2,year;
 	char old[150][100]={0},id[100][100]={0},id0[100]={0},huiche[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",&id0,&year);
+		my_scanf("%s%d",&id0,&year);
 		if(year>=60)
 		{
 			if(old[year][0]==0)
@@ -31,14 +31,14 @@ int main_bench()
 	{
 		if(old[i][0]!=0)
 		{
-			printf("%s\n",old[i]);
+			my_printf("%s\n",old[i]);
 		}
 	}
 	for(i=0;i<n;i++)
 	{
 		if(id[i]!=0)
 		{
-			printf("%s\n",id[i]);
+			my_printf("%s\n",id[i]);
 		}
 	}
 	return 0;

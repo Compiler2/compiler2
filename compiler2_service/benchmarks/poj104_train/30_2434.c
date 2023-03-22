@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int s=0,n,a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i ;
 	for(i=0;i<n;i++){
 		a[i]=i+1;
@@ -11,6 +11,6 @@ int main_bench()
 			continue;}
 		else
 			s+=a[i]*a[i];}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

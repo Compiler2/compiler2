@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[50000],b[50000],zuo,you,x,h=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	zuo=a[0];
 	you=b[0];
@@ -27,9 +27,9 @@ int main_bench(){
 		
 	} 
 	if(h==0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("%d %d",zuo,you);
+		my_printf("%d %d",zuo,you);
 	}
 
 		return 0;

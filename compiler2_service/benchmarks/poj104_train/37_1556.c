@@ -4,18 +4,18 @@ int main_bench()
 {
     char check(char string[]);
     int t;
-    scanf("%d", &t);
+    my_scanf("%d", &t);
     int i;
     char v;
     char string[100][1000];
     for(i=1;i<=t;i++)
     {
-                     scanf("%s", string[i]);
+                     my_scanf("%s", string[i]);
                      v=check(string[i]);
                      if(v=='+')
-                     printf("no\n");
+                     my_printf("no\n");
                      else
-                     printf("%c\n", v);
+                     my_printf("%c\n", v);
     }
     return 0;
 }

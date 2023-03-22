@@ -13,23 +13,23 @@ int main_bench()
 {
 	int i=1,n;
 	char c;
-	scanf("%d",&a[0][i]);
+	my_scanf("%d",&a[0][i]);
 	c=getchar();
 	i++;
 	while(c!='\n')
 	{	
-		scanf("%d",&a[0][i]);
+		my_scanf("%d",&a[0][i]);
 		c=getchar();
 		i++;
 	}
-	printf("%d ",i-1);
+	my_printf("%d ",i-1);
 	i=1;
-	scanf("%d",&a[1][i]);
+	my_scanf("%d",&a[1][i]);
 	c=getchar();
 	i++;
 	while(c!='\n')
 	{	
-		scanf("%d",&a[1][i]);
+		my_scanf("%d",&a[1][i]);
 		c=getchar();
 		i++;
 	}
@@ -41,5 +41,5 @@ int main_bench()
 		if(result<temp)
 			result=temp;
 	}
-	printf("%d",result);
+	my_printf("%d",result);
 }

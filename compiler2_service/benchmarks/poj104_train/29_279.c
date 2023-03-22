@@ -3,9 +3,9 @@
 int main_bench(){
 int m,n,a[100],s[100],i,j;
 double b[200],c[200],d[200],sum=0;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<m;i++){
-	scanf("%d",&s[i]);
+	my_scanf("%d",&s[i]);
 }
 b[0]=2;
 c[0]=1;
@@ -17,7 +17,7 @@ for(i=0;i<m;i++){
 		sum+=d[j];
 		
 	}
-printf("%.3f\n",sum+2.0);
+my_printf("%.3f\n",sum+2.0);
 sum=0;
 }
 

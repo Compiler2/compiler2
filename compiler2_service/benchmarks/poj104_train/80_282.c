@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int year1, year2, mon1, mon2, date1, date2;
-	scanf("%d %d %d", &year1, &mon1, &date1);
-    scanf("%d %d %d", &year2, &mon2, &date2);
+	my_scanf("%d %d %d", &year1, &mon1, &date1);
+    my_scanf("%d %d %d", &year2, &mon2, &date2);
 	int y[3000]={0};
 	int n, i;
 	n=year2-year1;
@@ -265,7 +265,7 @@ int main_bench()
 	
 	
 	if(n==0)sum=sum-y[0];
-	printf("%d\n", sum+1);
+	my_printf("%d\n", sum+1);
 	return 0;
 
 

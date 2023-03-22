@@ -5,7 +5,7 @@ int main_bench()
 	int a[6];
 	int b[6]={100,50,20,10,5,1};
 	int n,i,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a[0]=n/100;
 	for(i=1;i<6;i++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 	}
 	for (i=0;i<6;i++)
 	{
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}
 	return 0;
 }

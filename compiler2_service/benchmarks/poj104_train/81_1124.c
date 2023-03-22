@@ -18,7 +18,7 @@ int main_bench()
 
 for(j=0;j<5;j++)
 					{for(k=0;k<5;k++)
-					{scanf("%d",&B[j][k]);
+					{my_scanf("%d",&B[j][k]);
 
 			}
 
@@ -26,7 +26,7 @@ for(j=0;j<5;j++)
 
 			}
 
-scanf("%d %d",&M,&N);
+my_scanf("%d %d",&M,&N);
 
 if(M>=0&&M<5&&N>=0&&N<5)
 {for(i=0;i<5;i++)
@@ -37,15 +37,15 @@ PAN=1;}
 else PAN=0;
 
 if(PAN==0)
-printf("error");
+my_printf("error");
 else 
 		for(w=0;w<5;w++)
 		{
-			printf("%d",B[w][0]);
+			my_printf("%d",B[w][0]);
 				for(e=1;e<5;e++)
 
-			printf(" %d",B[w][e]);
-				printf("\n");
+			my_printf(" %d",B[w][e]);
+				my_printf("\n");
 					}
 		return 0;
 }

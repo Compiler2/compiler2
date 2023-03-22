@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,a=0,b=0,c=0,d=0,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		if(k<19){
 		a++;	
 		}else if(k<36){
@@ -15,13 +15,13 @@ int main_bench(){
 			d++;
 		}
 	}
-	printf("1-18: %.2lf",100.0*a/n);
-	printf("%%\n");
-	printf("19-35: %.2lf",100.0*b/n);
-		printf("%%\n");
-	printf("36-60: %.2lf",100.0*c/n);
-		printf("%%\n");
-	printf("60??: %.2lf",100.0*d/n);
-		printf("%%");
+	my_printf("1-18: %.2lf",100.0*a/n);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf",100.0*b/n);
+		my_printf("%%\n");
+	my_printf("36-60: %.2lf",100.0*c/n);
+		my_printf("%%\n");
+	my_printf("60??: %.2lf",100.0*d/n);
+		my_printf("%%");
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,a[50000][2],b[50000][2],i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-     scanf("%d %d",&a[i][0],&a[i][1]);
+     my_scanf("%d %d",&a[i][0],&a[i][1]);
                     }
     int min,max;              
     int p,q;
@@ -62,12 +62,12 @@ int main_bench()
 					 }
 					 if ((a[0][0]==min)&&(a[0][1]==max))
 					 {
-					  				    printf("%d %d",min,max);			  				 
+					  				    my_printf("%d %d",min,max);			  				 
 									    break;}
                     }
      if (a[i][1]==max)
      i=1;
      else
-     printf("no");
+     my_printf("no");
     return 0;
     } 

@@ -30,10 +30,10 @@ int main_bench()
 	d[m][j]='\0';
 	for (i=0;i<m;i++){
 		if (r[i]!=0){
-		  printf("%d,",r[i]);
+		  my_printf("%d,",r[i]);
 		}
 	}
-	printf("%d",r[m]);
+	my_printf("%d",r[m]);
 	return 0;
 }
 	

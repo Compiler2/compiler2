@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int A,B,C,D,E,y,x1,x2,x3,x4,x;
-	scanf("%d\n",&x1);
-	scanf("%d\n",&x2);
-    scanf("%d\n",&x3);
-	scanf("%d\n",&x4);
+	my_scanf("%d\n",&x1);
+	my_scanf("%d\n",&x2);
+    my_scanf("%d\n",&x3);
+	my_scanf("%d\n",&x4);
 	x=x1;
 	if(x<10)
 		y=x;
@@ -43,7 +43,7 @@ int main_bench()
 			}
 		}
 	}
-printf("%d\n",y);
+my_printf("%d\n",y);
 	x=x2;
 if(x<10)
 		y=x;
@@ -80,7 +80,7 @@ if(x<10)
 			}
 		}
 	}
-printf("%d\n",y);
+my_printf("%d\n",y);
 x=x3;
 if(x<10)
 		y=x;
@@ -117,7 +117,7 @@ if(x<10)
 			}
 		}
 	}
-printf("%d\n",y);
+my_printf("%d\n",y);
  x=x4;
 if(x<10)
 		y=x;
@@ -154,6 +154,6 @@ if(x<10)
 			}
 		}
 	}
-printf("%d",y);
+my_printf("%d",y);
 
 	return 0;}

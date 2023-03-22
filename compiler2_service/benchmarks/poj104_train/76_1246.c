@@ -6,11 +6,11 @@ int main_bench()
 	
 	int n,x,y,i,j,p,q,m=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		d[i]=a[i];
 		e[i]=b[i];
 	}
@@ -60,10 +60,10 @@ int main_bench()
 	}
 	if(m==0)
 	{
-		printf("%d %d",p,q);
+		my_printf("%d %d",p,q);
 	}else
 	{
-		printf("no");
+		my_printf("no");
 	}
 
 	return 0;

@@ -3,7 +3,7 @@
 int main_bench(){
 	int ai[100];
 	int i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	ai[99]=1;
 	for(i=0;i<99;i++){
 		ai[i]=0;
@@ -20,7 +20,7 @@ int main_bench(){
 	for(i=0;i<100;i++){
 		if(ai[i]!=0){
 			for(j=i;j<100;j++){
-			printf("%d",ai[j]);
+			my_printf("%d",ai[j]);
 			}
 			break;
 		}

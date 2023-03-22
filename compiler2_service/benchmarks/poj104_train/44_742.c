@@ -26,8 +26,8 @@ int reverse(int n)
 	  int i,c;
 	  for(i=1;i<=6;i++)
 	  {
-		  scanf("%d",&c);
-	      printf("%d\n",reverse(c));
+		  my_scanf("%d",&c);
+	      my_printf("%d\n",reverse(c));
 	  }
   return 0;
   }

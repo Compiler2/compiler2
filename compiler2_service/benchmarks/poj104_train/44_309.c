@@ -43,9 +43,9 @@ int reverse (int num){
 int main_bench(){
  int n,i,r;
  for(i=0;i<6;i++){
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 r=reverse(n);
-	 printf("%d\n",r);
+	 my_printf("%d\n",r);
  }
  return 0;
 }

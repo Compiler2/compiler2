@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,h,l,s,i,j,p,sum,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sum=0;
 	j=0;
 	for(h=1;h<=n;h++)
@@ -11,7 +11,7 @@ int main_bench()
 		i=0;
 		for(l=1;l<=n;l++)
 		{			
-			scanf("%d",&s);  
+			my_scanf("%d",&s);  
 			if(s==0)
 				i++;
 		}
@@ -20,12 +20,12 @@ int main_bench()
 			j++;
 	}
 	if(j<=2||sum<=2*j)
-		printf("0");
+		my_printf("0");
 	else
 	{
 		p=(sum-2*j)/2;
 		m=p*(j-2);
-		printf("%d",m);
+		my_printf("%d",m);
 	}
 	return 0;
 }

@@ -8,10 +8,10 @@ int main_bench()
     m=0;
     l=0;
     t=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s %d",a[i],&b[i]);
+        my_scanf("%s %d",a[i],&b[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -45,9 +45,9 @@ int main_bench()
             }
     }
     for(i=0;i<m;i++)
-    printf("%s\n",c[i]);
+    my_printf("%s\n",c[i]);
     for(i=0;i<l;i++)
-    printf("%s\n",f[i]);
+    my_printf("%s\n",f[i]);
     
     
     

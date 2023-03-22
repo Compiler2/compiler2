@@ -5,7 +5,7 @@ int main_bench()
  char zfc[2][51];
  int a,b,i;
 	 for(i=0;i<2;i++){
-		 scanf("%s",zfc[i]);
+		 my_scanf("%s",zfc[i]);
 	 }
 	 a=strlen(zfc[1]);
 	 b=strlen(zfc[0]);
@@ -14,6 +14,6 @@ int main_bench()
 	        break;
 		 }
 	 }
-	 printf("%d",i);
+	 my_printf("%d",i);
 	  return 0;
 }

@@ -3,17 +3,17 @@
 int dijitian(int y,int m,int d);
 int main_bench(){
     int n,k,year,month1,month2,cha;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++){
-	   scanf("%d %d %d",&year,&month1,&month2);
+	   my_scanf("%d %d %d",&year,&month1,&month2);
        cha=dijitian(year,month1,1)-dijitian(year,month2,1);
 	   if(cha<0){
 	      cha=-cha;
 	   }
 	   if(cha%7==0){
-	      printf("YES\n");
+	      my_printf("YES\n");
 	   }else{
-	      printf("NO\n");
+	      my_printf("NO\n");
 	   }
 	}
 return 0;

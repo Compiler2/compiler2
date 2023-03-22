@@ -8,22 +8,22 @@ int main_bench()
     int sz[5][5],n,m,i,j;
     for(i=0;i<5;i++){
                      for(j=0;j<5;j++){
-                                      scanf("%d",&sz[i][j]);
+                                      my_scanf("%d",&sz[i][j]);
                                       }                     
                      }
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     if(judge(sz,n,m)==0){
-                         printf("error\n");
+                         my_printf("error\n");
                          }
     else{
          for(i=0;i<5;i++){
                           for(j=0;j<4;j++){
-                                           printf("%d ",sz[i][j]);
+                                           my_printf("%d ",sz[i][j]);
                                            }
                           for(j=4;j<5;j++){
-                                           printf("%d",sz[i][j]);
+                                           my_printf("%d",sz[i][j]);
                                            }                                                                
-                          printf("\n");
+                          my_printf("\n");
                           }
          }
    

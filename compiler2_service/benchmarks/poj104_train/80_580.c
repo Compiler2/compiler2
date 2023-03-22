@@ -4,10 +4,10 @@ int main_bench()
 {
 	int f(int y,int m,int d);
 	int y1,y2,m1,m2,d1,d2,s1,s2;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	s1=f(y1,m1,d1);
 	s2=f(y2,m2,d2);
-	printf("%d",s2-s1);
+	my_printf("%d",s2-s1);
 }
 int f(int y,int m,int d)
 {	int i,s=0;

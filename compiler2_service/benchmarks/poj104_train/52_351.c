@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a,b,c,d,n,i,e;
-	scanf("%d%d",&n,&a);
+	my_scanf("%d%d",&n,&a);
 	int score[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		score[i]=b;
 	}
 	for(i=0;i<a;i++)
@@ -27,9 +27,9 @@ int main_bench()
 	}
 	for(i=0;i<n-1;i++)
 	{
-		printf("%d ",score[i]);
+		my_printf("%d ",score[i]);
 	}
-	printf("%d",score[n-1]);
+	my_printf("%d",score[n-1]);
 	return 0;
 }
 

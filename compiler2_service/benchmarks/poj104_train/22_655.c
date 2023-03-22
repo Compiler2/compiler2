@@ -6,7 +6,7 @@ int main_bench()
      int j=1,i,m,n,k=2,a[1000],t;
      for(i=1;i<=1000;i++)
     {
-        scanf("%d%c",&a[i],&c[i]);
+        my_scanf("%d%c",&a[i],&c[i]);
         if(c[i]==',')
         j++;
         else if(c[i]=='\n')
@@ -19,7 +19,7 @@ int main_bench()
           t=a[i],a[i]=a[m],a[m]=t;
      }
     if(a[1]==a[j])
-         printf("No\n");
+         my_printf("No\n");
     else
     {
        for(i=1;i<=j;i++)
@@ -29,7 +29,7 @@ int main_bench()
           k++;
           else break;
        }
-    printf("%d",a[k]);
+    my_printf("%d",a[k]);
 }
 }
 

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int l1,l2,i,b,n,j,m,jg[100];
 	char a1[100],a2[100];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (j=0;j<n;j++)
 	{
 		gets (a1);
@@ -37,13 +37,13 @@ int main_bench()
 			{
 				for (m=i;m<l1;m++)
 				{
-					printf ("%d",jg[m]);
+					my_printf ("%d",jg[m]);
 					
 				}
 				break;
 			}
 		};
-		printf("\n");
+		my_printf("\n");
 						
 	}
 

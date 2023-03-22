@@ -11,7 +11,7 @@ b=temp;}
 return sum;}
 int main_bench()
 {int m,i,n[1000];
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<m;i++)
-{scanf("%d",&n[i]);
-printf("%.3f\n",cal(n[i]));}}
+{my_scanf("%d",&n[i]);
+my_printf("%.3f\n",cal(n[i]));}}

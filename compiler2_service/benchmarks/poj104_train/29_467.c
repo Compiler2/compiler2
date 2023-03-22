@@ -20,13 +20,13 @@ int main_bench(){
 
 	int m,n,j;
 	double sum=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=0;j<n;j++){
 			sum+=c[j];
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 		sum=0;
 	}
 	

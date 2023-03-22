@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[50],S[50];
 	int i,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		for(j=0;s[j]!='\0';j++)
 		{
 			if ((s[j]=='e'&&s[j+1]=='r'&&s[j+2]=='\0')||
@@ -22,7 +22,7 @@ int main_bench()
 				S[j]=s[j];
 			}
 		}
-		printf("%s\n",S);
+		my_printf("%s\n",S);
 	}
 
 

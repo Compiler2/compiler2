@@ -6,13 +6,13 @@ int main_bench(){
 	int nz[500],mz[500];
 	int s=0;
 	for (int i=0;i<500;i++){
-		scanf("%d %d",&nz[i],&mz[i]);
+		my_scanf("%d %d",&nz[i],&mz[i]);
 		s++;
 		if (nz[i]==0&&mz[i]==0){break;}}
 
 	for (int i=0;i<s;i++){
 		while (nz[i]!=0&&mz[i]!=0){
-			printf("%d\n",ysf(nz[i],mz[i]));
+			my_printf("%d\n",ysf(nz[i],mz[i]));
 			break;	
 		}
 	}

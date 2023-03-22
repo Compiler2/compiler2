@@ -9,11 +9,11 @@ int main_bench()
     
     int array[100][100];
     
-    scanf("%d %d", &row, &col);
+    my_scanf("%d %d", &row, &col);
     
     for(i = 0; i <= row - 1; i++)
           for(j = 0; j <= col - 1; j++)
-                scanf("%d", &array[i][j]);
+                my_scanf("%d", &array[i][j]);
     
     
     
@@ -24,13 +24,13 @@ int main_bench()
     {
               i = x;
               j = y;
-              printf("%d\n", array[i][j]);
+              my_printf("%d\n", array[i][j]);
               
               while(i + 1 <= row - 1 && j - 1 >= 0)
               {
                       i = i + 1;
                       j = j - 1;
-                      printf("%d\n", array[i][j]);
+                      my_printf("%d\n", array[i][j]);
               }
               
               y = y + 1;
@@ -42,13 +42,13 @@ int main_bench()
     {
               i = x;
               j = y;
-              printf("%d\n", array[i][j]);
+              my_printf("%d\n", array[i][j]);
               
               while(i + 1 <= row - 1 && j - 1 >= 0)
               {
                       i = i + 1;
                       j = j - 1;
-                      printf("%d\n", array[i][j]);
+                      my_printf("%d\n", array[i][j]);
               }
               
               x = x + 1;

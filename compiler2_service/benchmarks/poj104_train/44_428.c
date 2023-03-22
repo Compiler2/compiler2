@@ -5,9 +5,9 @@ int main_bench(){
 	int i;
 	for(i=0;i<6;i++){
 					 int n,result;
-					 scanf("%d",&n);
+					 my_scanf("%d",&n);
 					 if(n<0){
-					 		 printf("-");
+					 		 my_printf("-");
 					 		 n=-n;
 							  }
 				  reverse(n);
@@ -17,7 +17,7 @@ int main_bench(){
 
 int reverse(int num){
 	if(num==0){
-			   printf("0");
+			   my_printf("0");
 			   }
     else{
 	int r,x=0,a[1000],weishu;
@@ -46,9 +46,9 @@ int reverse(int num){
 									   }							 
 							 }	
 	for(r=x;r<weishu;r++){
-					  printf("%d",a[r]);
+					  my_printf("%d",a[r]);
 					  }	
-	printf("\n");	  
+	my_printf("\n");	  
 						 }
     return 0;
 }

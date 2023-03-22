@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for (j=0;;j++)
 		{
-			scanf("%c",&s[i][j]);
+			my_scanf("%c",&s[i][j]);
 			if (s[i][j]==' ') 
 			{
 				s[i][j]='\0';
@@ -38,8 +38,8 @@ int main_bench()
 	}
 	for (k=0;k<=i;k++)
 	{
-		if (k==0) printf("%s",s[k]);
-		else printf(" %s",s[k]);
+		if (k==0) my_printf("%s",s[k]);
+		else my_printf(" %s",s[k]);
 	}
 	return 0;
 }

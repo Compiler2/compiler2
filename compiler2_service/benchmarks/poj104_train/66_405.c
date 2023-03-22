@@ -4,7 +4,7 @@ int main_bench()
 {
 	int j,year,month,day,runnian=0,pingnian=0;
 	int sumday=0,xingqiji;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	sumday=(year-1)*(365%7)+(year-1)/4-(year-1)/100+(year-1)/400;
 	for(j=1;j<month;j++)
 	{
@@ -29,28 +29,28 @@ int main_bench()
 	xingqiji=sumday%7;
 	if(xingqiji==0)
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	else if(xingqiji==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	else if(xingqiji==2)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	else if(xingqiji==3)
 	{
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	else if(xingqiji==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	else if(xingqiji==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
-	else printf("Sat.");
+	else my_printf("Sat.");
 	return 0;
 }

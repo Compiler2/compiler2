@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n,shu[100],i,j,a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&shu[i]);
+		my_scanf("%d",&shu[i]);
 	}
 	for(i=1;i<3;i++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 	}
 	for(i=1;i<3;i++)
 	{
-		printf("%d\n",shu[n-i]);
+		my_printf("%d\n",shu[n-i]);
 	}
 	return 0;
 }

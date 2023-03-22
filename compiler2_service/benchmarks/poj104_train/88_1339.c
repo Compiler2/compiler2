@@ -33,6 +33,6 @@ int main_bench()
         i++;
     }
     for(i=0;i<30;i++)
-        if(a[i]!=-1)printf("%d\n",a[i]);
+        if(a[i]!=-1)my_printf("%d\n",a[i]);
     return 0;
 }

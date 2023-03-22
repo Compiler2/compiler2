@@ -15,10 +15,10 @@ int main_bench()
 
 	int i,j,m,t1=0;
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%s%d%d %c %c%d",stu[i].s,&stu[i].m1,&stu[i].m2,&stu[i].c1,&stu[i].c2,&stu[i].n);stu[i].t=0;
+		my_scanf("%s%d%d %c %c%d",stu[i].s,&stu[i].m1,&stu[i].m2,&stu[i].c1,&stu[i].c2,&stu[i].n);stu[i].t=0;
         if(stu[i].m1>80&&stu[i].n>0)
 			stu[i].t+=8000;
 		if(stu[i].m1>85&&stu[i].m2>80)
@@ -45,7 +45,7 @@ int main_bench()
 {
       t1+=stu[i].t;
 }
-	printf("%s\n%d\n%d\n",stu[0].s,stu[0].t,t1);
+	my_printf("%s\n%d\n%d\n",stu[0].s,stu[0].t,t1);
 }
 
 

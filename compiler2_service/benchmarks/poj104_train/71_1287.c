@@ -33,19 +33,19 @@ int DiJiTian(int year, int month, int day){
 int main_bench()
 {int n;
    int sz[200][3];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int a=0;
    int b=0;
 
    for(int i=0;i<n;i++){
-	   scanf("%d %d %d",&sz[i][0],&sz[i][1],&sz[i][2]);
+	   my_scanf("%d %d %d",&sz[i][0],&sz[i][1],&sz[i][2]);
 	   a=DiJiTian(sz[i][0],sz[i][1],1)-DiJiTian(sz[i][0],sz[i][2],1);
        b=a%7;
 	   if(b==0){
-		   printf("YES\n");
+		   my_printf("YES\n");
 	   }
 	   else{
-		   printf("NO\n");
+		   my_printf("NO\n");
 	   }
 	   
 	   

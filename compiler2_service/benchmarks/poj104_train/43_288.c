@@ -19,14 +19,14 @@ int main_bench()
 			k++;
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;a[i]<=m;i++)
 	{
 		for(j=i;a[j]<=m-a[i];j++)
 		{
 			if(a[i]+a[j]==m)
 			{
-				printf("%d %d\n",a[i],a[j]);
+				my_printf("%d %d\n",a[i],a[j]);
 			}
 		}
 	}

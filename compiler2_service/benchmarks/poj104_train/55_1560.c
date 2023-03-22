@@ -6,7 +6,7 @@ int main_bench()
     int a,b,c,d,e,f,g,h,i,j,k;
     long int n;
     char str1[40],str2[40];
-    scanf("%d %s %d",&a,str1,&b);
+    my_scanf("%d %s %d",&a,str1,&b);
     c=strlen(str1);
     n=0;
     for(i=c-1,j=0;i>=0,j<=c-1;i--,j++)
@@ -49,6 +49,6 @@ int main_bench()
      }
 g=strlen(str2);
 for(h=g-1;h>=0;h--)
-printf("%c",str2[h]); 
+my_printf("%c",str2[h]); 
 
 }

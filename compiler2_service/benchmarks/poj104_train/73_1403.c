@@ -5,7 +5,7 @@ int main_bench(){
     int sz[5][5];
     for(int row=0;row<5;row++){
 		for(int col=0;col<5;col++){
-            scanf("%d",&sz[row][col]);
+            my_scanf("%d",&sz[row][col]);
 		}
 	}
 	
@@ -25,7 +25,7 @@ int main_bench(){
 				}
 			}
 						if(p==4&&q==4){
-				printf("%d %d %d",row+1,col+1,sz[row][col]);
+				my_printf("%d %d %d",row+1,col+1,sz[row][col]);
                 y+=1;
 		
 			}
@@ -33,7 +33,7 @@ int main_bench(){
     }
 	
 	if(y==0){
-		printf("not found");
+		my_printf("not found");
    
 		}
 

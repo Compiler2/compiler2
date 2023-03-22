@@ -4,8 +4,8 @@
 int main_bench()
 {
 	char s[100],t[100];
-	scanf("%s",s);
-	scanf("%s",t);
+	my_scanf("%s",s);
+	my_scanf("%s",t);
 	int len1,len2;
 	int tag=0 ,tag1;                                                                                                                                                                     ;
 	len1=strlen(s);
@@ -44,7 +44,7 @@ int main_bench()
 			else 
 				break;
 		}
-			printf("%d",tag1);
+			my_printf("%d",tag1);
 
 	
 

@@ -4,12 +4,12 @@ int fc(int year,int mon1,int mon2);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
 		int year,mon1,mon2;
-	    scanf("%d%d%d",&year,&mon1,&mon2);
+	    my_scanf("%d%d%d",&year,&mon1,&mon2);
     	if(mon1>mon2)
 		{
 		    int tmp;
@@ -18,9 +18,9 @@ int main_bench()
 	    	mon2=tmp;
 		}
 	    if(fc(year,mon1,mon2)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

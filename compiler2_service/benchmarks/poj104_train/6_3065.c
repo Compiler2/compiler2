@@ -12,7 +12,7 @@ int main_bench() {
 
 
 
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 
 
 
@@ -20,11 +20,11 @@ int main_bench() {
 
 
 	for(temp2=1;temp2<=k;temp2++) {
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		tempr=0;
 		for(i=1;i<=m;i++) {
 			for(j=1;j<=n;j++) {
-				scanf("%d",&temp1);
+				my_scanf("%d",&temp1);
 				if(i==1||i==m||j==1||j==n) {
 					tempr+=temp1;
 				}
@@ -37,7 +37,7 @@ int main_bench() {
 
 
 	for(i=1;i<=k;i++) {
-		printf("%d\n",result[i]);
+		my_printf("%d\n",result[i]);
 	}
 
 	return 0;

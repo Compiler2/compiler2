@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,len,i,j,book[1000],num[26]={0},k=0,t,m=0;
 	char w[1000][27],c='A';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&book[i],w[i]);
+		my_scanf("%d %s",&book[i],w[i]);
 		len=strlen(w[i]);
 		for(j=0;j<len;j++)
 		{
@@ -31,8 +31,8 @@ int main_bench()
 		}
 	}
 	c='A'+k;
-	printf("%c\n",c);
-	printf("%d\n",num[k]);
+	my_printf("%c\n",c);
+	my_printf("%d\n",num[k]);
 	for(i=0;i<n;i++)
 	{
         len=strlen(w[i]);
@@ -40,7 +40,7 @@ int main_bench()
 		{
 			if(w[i][j]==c)
 			{
-				printf("%d\n",book[i]);
+				my_printf("%d\n",book[i]);
 				break;
 			}
 		}

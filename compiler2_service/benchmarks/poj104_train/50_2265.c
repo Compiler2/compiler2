@@ -4,7 +4,7 @@
 main_bench()
 {
       int w;
-      scanf("%d",&w);
+      my_scanf("%d",&w);
       
       int day[13];
       
@@ -24,7 +24,7 @@ main_bench()
 for (int i=1;i<=12;i++)
      {  
          
-         if ((13+w-1)%7==5)printf("%d\n",i);
+         if ((13+w-1)%7==5)my_printf("%d\n",i);
          w=(w+day[i])%7;
      }
       

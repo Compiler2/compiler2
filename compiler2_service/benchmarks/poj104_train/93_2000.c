@@ -7,7 +7,7 @@ int main_bench()
 	int seven(int x);
 	int print(int a,int b,int c);
 	int a,b,c,x;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	a=three(x);
 	b=five(x);
 	c=seven(x);
@@ -31,22 +31,22 @@ int seven(int x){
 }
 int print(int a,int b,int c){
 	if(a==1){
-		printf("3");
+		my_printf("3");
 		if(b==1||c==1){
-			printf(" ");
+			my_printf(" ");
 		}
 	} 
 	if(b==1){
-		printf("5");
+		my_printf("5");
 		if(c==1){
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	if(c==1){
-		printf("7");
+		my_printf("7");
 	}
 	if(a==0&&b==0&&c==0){
-		printf("n");
+		my_printf("n");
 	}
 	return 0;
 }

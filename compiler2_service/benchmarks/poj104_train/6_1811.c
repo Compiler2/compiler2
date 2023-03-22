@@ -4,17 +4,17 @@ int main_bench()
 {
 	int k,m,n,i,j,l,s;
 	int sz[100][100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int *sf=(int*)malloc(sizeof(int)*k);
 	for(i=0;i<k;i++)
 	{
 		s=0;
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		 for(j=0;j<m;j++)
 		 {
 			 for(l=0;l<n;l++)
 			 {
-				 scanf("%d",&sz[j][l]);
+				 my_scanf("%d",&sz[j][l]);
 			 }
 		 }
 		 if(m==1)
@@ -47,7 +47,7 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 	{
-		printf("%d\n",sf[i]);
+		my_printf("%d\n",sf[i]);
 	}
 	return 0;
 }

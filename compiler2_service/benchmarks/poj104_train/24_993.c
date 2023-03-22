@@ -48,7 +48,7 @@ int main_bench()
 	{
 		for(i=0,pz=zfc;i<sum[0]-1;i++,pz++)
 		{
-			printf("%c",*pz);
+			my_printf("%c",*pz);
 		}
 	}
 	if (max!=0)
@@ -57,16 +57,16 @@ int main_bench()
 		{
 			if(i>=sum[max-1]&&i<(sum[max]-1))
 			{
-				printf("%c",*pz);
+				my_printf("%c",*pz);
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	if (min==0)
 	{
 		for(i=0,pz=zfc;i<sum[0]-1;i++,pz++)
 		{
-			printf("%c",*pz);
+			my_printf("%c",*pz);
 		}
 	}
 	if (min!=0)
@@ -75,7 +75,7 @@ int main_bench()
 		{
 			if(i>=sum[min-1]&&i<(sum[min]-1))
 			{
-				printf("%c",*pz);
+				my_printf("%c",*pz);
 			}
 		}
 	}

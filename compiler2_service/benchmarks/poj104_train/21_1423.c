@@ -6,10 +6,10 @@ int main_bench()
 	int p=0;
 	int sz[301];
 	double q,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		p+=sz[i];
 	}
 	q=(double)p/n;
@@ -37,15 +37,15 @@ int main_bench()
 	d=q-b;
 	if(c>d)
 	{
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	else if(c<d)
 	{
-		printf("%d",b);
+		my_printf("%d",b);
 	}
 	else if(c==d)
 	{
-		printf("%d,%d",b,a);
+		my_printf("%d,%d",b,a);
 	}
 	return 0;
 }

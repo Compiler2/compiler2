@@ -6,23 +6,23 @@ void fill(int p);
 int main_bench()
 {
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%s",&a[i]);
-	printf("%s",a[0]);
+		my_scanf("%s",&a[i]);
+	my_printf("%s",a[0]);
 	tot=strlen(a[0]);
 	for (i=1;i<n;i++)
 	{
 		len=strlen(a[i]);
 	    if (tot+len+1<=80)
 		{
-			printf(" %s",a[i]);
+			my_printf(" %s",a[i]);
 			tot+=len+1;
 		}
 		else
 		{
-			printf("\n");
-			printf("%s",a[i]);
+			my_printf("\n");
+			my_printf("%s",a[i]);
 			tot=len;
 		}
 	}

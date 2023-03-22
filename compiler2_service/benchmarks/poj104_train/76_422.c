@@ -2,10 +2,10 @@
 
 int main_bench(){
 int a[50000],b[50000],c[50000],d[50000],n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i;
 for(i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 c[i]=a[i];
 }
 int k,m,l;
@@ -32,8 +32,8 @@ for(t=1;t<n;t++){
 	if(c[t]<=d[y]) u+=1;
 	else u=u;}
 	if(u>1) u=0;
-	else {printf("no");return 0;}
+	else {my_printf("no");return 0;}
 }
-printf("%d %d",c[0],b[0]);
+my_printf("%d %d",c[0],b[0]);
 return 0;
 }

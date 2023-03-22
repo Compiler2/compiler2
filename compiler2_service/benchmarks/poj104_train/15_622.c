@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a;
-         scanf ("%d",&a);
+         my_scanf ("%d",&a);
 	if (a==9)
-	    printf ("9\n");
+	    my_printf ("9\n");
 	else if (a==6)
-		printf ("2\n");
+		my_printf ("2\n");
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
     int n=0,i,t;
     char c[10001];
-    scanf("%s",c);
+    my_scanf("%s",c);
     for(i=0;;i++)
     {
                  if(c[i]!='\0')
@@ -31,7 +31,7 @@ int main_bench()
                                  c[n-1-i]=t;
               }
     }
-    printf("%s",c);
+    my_printf("%s",c);
     getchar();
     getchar();
     getchar();

@@ -5,7 +5,7 @@ main_bench(){
 	int a[100],b[100];
 	int blength,i,alength,sum,zero,test;
 	char s[100];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	alength=strlen(s);
 	blength=0;
 	zero=0;
@@ -54,13 +54,13 @@ main_bench(){
 		b[0]=0;
 	}
 	for(i=1;i<=blength;i++){
-		printf("%d",b[i-1]);
+		my_printf("%d",b[i-1]);
 		
 	}
 	if(zero!=0&&test==1){
 		for(i=1;i<=zero;i++){
-			printf("0");
+			my_printf("0");
 		}
 	}
-	printf("\n%d",a[alength-1]);
+	my_printf("\n%d",a[alength-1]);
 } 

@@ -7,15 +7,15 @@ char s;
 for(i=0;i<100;i++){
 ans[i]='\0';
 }
-scanf("%s",num);
+my_scanf("%s",num);
 for(i=0;num[i]!='\0';i++){
 }
 if(i<=1)
-printf("0\n%s",num);
+my_printf("0\n%s",num);
 else{
 j=(num[0]-'0')*10+num[1]-'0';
 if((i==2)&&(j<=13))
-printf("0\n%s",num);
+my_printf("0\n%s",num);
 else{
 for(j=0;j<i-2;j++){
 k=(num[j]-'0')*10+num[j+1]-'0';
@@ -35,7 +35,7 @@ for(j=0;j<100;j++){
 ans[j]=ans[j+1];
 }
 }
-printf("%s\n%d",ans,t);
+my_printf("%s\n%d",ans,t);
 }
 }
 }

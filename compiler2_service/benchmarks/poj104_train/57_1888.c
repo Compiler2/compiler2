@@ -4,30 +4,30 @@ int main_bench()
 {
 	int n,len;
 	char a[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		if(a[len-1]=='r')
 		{
 			for(int j=0;j<len-2;j++)
-				printf("%c",a[j]);
+				my_printf("%c",a[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		if(a[len-1]=='y')
 		{
 			for(int p=0;p<len-2;p++)
-				printf("%c",a[p]);
+				my_printf("%c",a[p]);
 		}
-         printf("\n");
+         my_printf("\n");
 		if(a[len-1]=='g')
 		{
 			for(int q=0;q<len-3;q++)
-				printf("%c",a[q]);
+				my_printf("%c",a[q]);
 		}
-        printf("\n");
+        my_printf("\n");
 
 	}
 

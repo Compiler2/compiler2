@@ -18,11 +18,11 @@ int main_bench()
 	int zh;
 	long int all=0;
 	char du1,du2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu a[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].sco,&a[i].scob,&du1,&du2,&a[i].lw);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].sco,&a[i].scob,&du1,&du2,&a[i].lw);
 		if(du1=='Y')
 			a[i].gb=1;
 		else
@@ -52,5 +52,5 @@ int main_bench()
 		}
 		all+=a[i].mon;
 	}
-	printf("%s\n%d\n%lu",a[zh].name,a[zh].mon,all);
+	my_printf("%s\n%d\n%lu",a[zh].name,a[zh].mon,all);
 }

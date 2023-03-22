@@ -18,10 +18,10 @@ int main_bench()
 	int i;
 	int yuanshi[101]={0},wusi[101]={0},youxiu[101]={0},
 		xibu[101]={0},gongxian[101]={0},total[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",student[i].name,&student[i].final,
+		my_scanf("%s %d %d %c %c %d",student[i].name,&student[i].final,
 			&student[i].judge,&student[i].leader,&student[i].west,
 			&student[i].paper);
 		if(student[i].final>80&&student[i].paper>0)
@@ -38,7 +38,7 @@ int main_bench()
 		N+=total[i];
 	}
 	k=max(total,n);
-	printf("%s\n%d\n%d\n",student[k].name,total[k],N);
+	my_printf("%s\n%d\n%d\n",student[k].name,total[k],N);
 	return 0;
 }
 

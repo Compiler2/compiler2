@@ -6,9 +6,9 @@ int main_bench()
 	int i,j,c[100],d[100],f[100],sum[100]={0};
 	int   l=0,m=0,max;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	    scanf("%s %d %d %c %c %d",str[i],&c[i],&d[i],&a[i],&b[i],&f[i]);
+	    my_scanf("%s %d %d %c %c %d",str[i],&c[i],&d[i],&a[i],&b[i],&f[i]);
 	for(i=0;i<n;i++)
 	{
 		if(c[i]>80 && f[i]>=1) sum[i]=sum[i]+8000;
@@ -25,6 +25,6 @@ int main_bench()
 	 m=m+sum[i];
  }
  for(i=0;i<n;i++)
-	 if(max==sum[i]){printf("%s\n%d\n%d\n",str[i],max,m);break;}
+	 if(max==sum[i]){my_printf("%s\n%d\n%d\n",str[i],max,m);break;}
  
 }

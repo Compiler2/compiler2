@@ -13,7 +13,7 @@ int main_bench()
         int sz[1000];
         int numofking=0;
         int c=0;
-        scanf("%d%d",&n,&m);
+        my_scanf("%d%d",&n,&m);
         if(n==0||m==0)
             break;
         c=n;
@@ -45,7 +45,7 @@ int main_bench()
                 break;
             }
         }
-        printf("%d\n",numofking);
+        my_printf("%d\n",numofking);
     }
     return 0;
 }

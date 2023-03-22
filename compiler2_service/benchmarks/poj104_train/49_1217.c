@@ -18,7 +18,7 @@ int main_bench()
 			}
 			temp[i]='\0';
 			temp2[i]='\0';
-			if(strcmp(temp,temp2)==0) printf("%s\n",temp);
+			if(strcmp(temp,temp2)==0) my_printf("%s\n",temp);
 		}
 	}
 	

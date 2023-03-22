@@ -3,14 +3,14 @@
 
 int main_bench()
 {  int N;
-    scanf("%d",&N); 
+    my_scanf("%d",&N); 
 int zs[N];
      
 	int i,j;
     for(i=0;i<N;i++)
 			
 	{
-	 scanf("%d\n",&j);
+	 my_scanf("%d\n",&j);
           zs[i]=j;
 	}
 	int m;
@@ -25,7 +25,7 @@ int zs[N];
 		}
 		
 	} 
-	printf("%d\n",zs[N-1]);
+	my_printf("%d\n",zs[N-1]);
   	int n;
          for(n=0;n<N-2;n++)
  	{
@@ -38,7 +38,7 @@ int zs[N];
 		}
 		
 	} 
-	printf("%d",zs[N-2]);
+	my_printf("%d",zs[N-2]);
 
 	return 0;
 }

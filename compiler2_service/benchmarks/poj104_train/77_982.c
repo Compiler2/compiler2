@@ -16,7 +16,7 @@ int main_bench()
             for (j=i;j>=0;j--)
                 if (str[j]==y)
                 {
-                    printf("%d %d\n",j,i);
+                    my_printf("%d %d\n",j,i);
                     str[j]=' ';
                     break;
                 }

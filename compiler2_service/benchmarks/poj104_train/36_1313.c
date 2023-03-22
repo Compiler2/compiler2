@@ -5,11 +5,11 @@ int main_bench()
 {
 	char a[100],b[100];
 	int ans,e,lena,lenb,k,i;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	if(lena!=lenb)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(k=1;k<lena;k++)
@@ -38,8 +38,8 @@ int main_bench()
 		}
 		ans=strcmp(a,b);
 		if(ans==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }

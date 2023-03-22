@@ -17,7 +17,7 @@ int main_bench()
 		{
 		   if(p!=0)
 		   {
-			   printf("%d,",p);
+			   my_printf("%d,",p);
 		       p=0;
 		   }
 		}
@@ -25,7 +25,7 @@ int main_bench()
 		{
 		   if(p!=0)
 		   {
-			   printf("%d",p);
+			   my_printf("%d",p);
 		       p=0;
 		   }
 		}

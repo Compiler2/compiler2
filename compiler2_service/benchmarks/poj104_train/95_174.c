@@ -26,17 +26,17 @@ int main_bench()
 	{
 		if(s1[b]>s2[b]) 
 		{
-			printf(">");
+			my_printf(">");
 			c=1;
 			break;
 		}
 		else if(s1[b]<s2[b])
 		{
-			printf("<");
+			my_printf("<");
 			c=1;
 			break;
 		}
 	}
-	if(c==0) printf("=");
+	if(c==0) my_printf("=");
 }
 	

@@ -27,9 +27,9 @@ int main_bench()
 	int j,n,m;
 	for(j=0;j<5;j++)
 		gets(a[j]);
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
     if(jiaohuan(n,m)==0)
-		printf("error");
+		my_printf("error");
 	else
 	{   
 		for(j=0;j<5;j++)

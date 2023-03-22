@@ -5,10 +5,10 @@ int main_bench(){
 	int n,i;
 	gets(a);
 	for(i=0;a[i]!='\0';i++){
-		if(i==0)printf("%c",a[i]);
+		if(i==0)my_printf("%c",a[i]);
 		else if(a[i-1]==' '&&a[i]!=' ')
-			printf(" %c",a[i]);
-		else if(a[i]!=' ')printf("%c",a[i]);
+			my_printf(" %c",a[i]);
+		else if(a[i]!=' ')my_printf("%c",a[i]);
 	}
 	
 	return 0;

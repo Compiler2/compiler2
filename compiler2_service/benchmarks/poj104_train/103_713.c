@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j;
     char c,s[1000];
-    scanf("%s", s);
+    my_scanf("%s", s);
     for (i=0;i<=999;i++)
     {
 		if (s[i]>'Z')
@@ -17,7 +17,7 @@ int main_bench()
             j++;
             else 
             {  
-				printf("(%c,%d)",c,j);
+				my_printf("(%c,%d)",c,j);
 	            j=1;c=s[i];
 	  
             }

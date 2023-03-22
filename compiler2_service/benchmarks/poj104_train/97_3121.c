@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,sum;
-	scanf("%d",&sum);
+	my_scanf("%d",&sum);
     if(sum<1000)
 	{
 		a=sum/100;
@@ -18,7 +18,7 @@ int main_bench()
 		sum=sum-5*e;
 		f=sum;
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 	
 return 0;
 }

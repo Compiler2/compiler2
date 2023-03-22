@@ -34,17 +34,17 @@ int dijitian(int year,int month,int day){
 int main_bench(){
 	int n,i;
 	int year,month1,month2,a,b,day=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d ",&year);
-		scanf("%d ",&month1);
-		scanf("%d\n",&month2);
+		my_scanf("%d ",&year);
+		my_scanf("%d ",&month1);
+		my_scanf("%d\n",&month2);
 		a=dijitian(year,month1,day);
 		b=dijitian(year,month2,day);
 		if((b-a)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

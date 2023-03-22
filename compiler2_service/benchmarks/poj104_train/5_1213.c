@@ -11,14 +11,14 @@ int main_bench(){
 	gets (b);
 	q=strlen(a);
 	if (strlen(a)!=strlen(b)){
-printf("error");
+my_printf("error");
 return 0;
 	}
 else {
    for (i=0;a[i]!='\0';i=i+1){
 	   if (a[i]>97||b[i]>97){
 
-		   printf("error");
+		   my_printf("error");
 	   return 0;
 	   }
 	     else {
@@ -35,12 +35,12 @@ else {
 
 
           if (n<0)
-                printf ("yes");
+                my_printf ("yes");
           else{
 			  if (t/(q*1.00)>n)
-                printf ("yes");
+                my_printf ("yes");
               else 
-                printf ("no");
+                my_printf ("no");
 		  }
 
 return 0;

@@ -24,7 +24,7 @@ for(i=0;i<strlen(s);i++)
  int m;
 for(m=0;m<j;m++)
     {
-    printf("%c",ss[m]);
+    my_printf("%c",ss[m]);
      }
  return 0;
 }

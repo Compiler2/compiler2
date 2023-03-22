@@ -3,11 +3,11 @@
 int main_bench()
 {
 	char sz[100];
-	scanf ("%s",sz);
+	my_scanf ("%s",sz);
 	int i,j,m,n,len,len1,len2;
 
 	char as[100],az[100];
-	scanf ("%s%s",as,az);
+	my_scanf ("%s%s",as,az);
 
 	len=strlen(sz);
 	len1=strlen(as);
@@ -25,7 +25,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s",sz);
+	my_printf("%s",sz);
 	return 0;
 }
 

@@ -3,9 +3,9 @@
 int main_bench(){
     char asz[300][300];
 	int len[300],n=0,i,bsz[300],j,fsz[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",asz[i]);
+		my_scanf("%s",asz[i]);
 		len[i]=strlen(asz[i]);
 	}
 	for(i=0;i<n;i++){
@@ -25,10 +25,10 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(fsz[i]==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 
 	}	

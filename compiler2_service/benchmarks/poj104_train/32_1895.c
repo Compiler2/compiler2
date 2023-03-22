@@ -4,13 +4,13 @@ int main_bench()
 {
     int n,i,j,an[100][102]={0},bn[100][102]={0};
     char a[100][102]={0},b[100][102]={0};
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
         int k=0;
         gets(a[i]);
         gets(b[i]);
-        scanf("\n");
+        my_scanf("\n");
         for(j=strlen(a[i])-1;j>=0;j--)
             an[i][k++]=a[i][j]-'0';
      
@@ -41,9 +41,9 @@ int main_bench()
         {
             if(an[i][j]==0&&notzero==0)
                 continue;
-            else {printf("%d",an[i][j]); notzero++;}
+            else {my_printf("%d",an[i][j]); notzero++;}
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }

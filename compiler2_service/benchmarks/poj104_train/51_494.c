@@ -4,8 +4,8 @@ int main_bench()
 {
  char ori[500], a[500][6];
  int num[500] = {0}, i, n, j, count = 0;
- scanf("%d", &n);
- scanf("%s", ori);
+ my_scanf("%d", &n);
+ my_scanf("%s", ori);
  int l = strlen(ori);
  for(i = 0; i < l - n + 1; i++)
  {
@@ -42,14 +42,14 @@ int main_bench()
  }
  if(max == 1) 
  {
-  printf("NO");
+  my_printf("NO");
   return 0;
  }
- printf("%d\n", max);
+ my_printf("%d\n", max);
  for(i = 0; i < count; i++)
  {
   if(num[i] == max)
-   printf("%s\n", a[i]);
+   my_printf("%s\n", a[i]);
  }
 
  return 0;

@@ -3,11 +3,11 @@
 int main_bench()
 {
     int x,y,t,flag=0;
-    scanf("%d%d", &x, &y);
+    my_scanf("%d%d", &x, &y);
     int a[10000]={0}, b[10000]={0},i=0,k=0,m,q,j;
     if(x==y)
     {
-                    printf("%d", x);
+                    my_printf("%d", x);
     }
     else
     {
@@ -39,7 +39,7 @@ int main_bench()
                      {
                                       if(a[t]==b[j])
                                       {
-                                      printf("%d", a[t]);
+                                      my_printf("%d", a[t]);
                                       flg=1;
                                       break;
                                       }
@@ -49,7 +49,7 @@ int main_bench()
     }
     
     if(flg==0)
-    printf("1");
+    my_printf("1");
 }
 
     return 0;

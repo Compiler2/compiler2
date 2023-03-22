@@ -11,8 +11,8 @@ int main_bench()
  if(b[i]<91&&b[i]>64) b[i]+=32;
  }
  d=strcmp(a,b);
- if(d>0) printf(">");
- else if(d<0) printf("<");
- else printf("=");
+ if(d>0) my_printf(">");
+ else if(d<0) my_printf("<");
+ else my_printf("=");
  return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 {
 	int a,b=0,c;
 	char d;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(;;)
 	{
 		d=getchar();
@@ -14,7 +14,7 @@ int main_bench()
 			break;
 		else
 		{
-			scanf("%d",&c);
+			my_scanf("%d",&c);
 			if(c>a)
 			{
 				b=a;
@@ -27,9 +27,9 @@ int main_bench()
 		}
 	}
 	if(b==0)
-		printf("No");
+		my_printf("No");
 	else 
-		printf("%d",b);
+		my_printf("%d",b);
 return 0;
 }
 

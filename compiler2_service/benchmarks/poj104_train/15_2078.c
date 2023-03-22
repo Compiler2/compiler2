@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,b1,b2,c1,c2,flag,flag1,result;
-scanf("%d\n",&a);
+my_scanf("%d\n",&a);
 flag1=1;
 flag=1;
 for(b=1;b<=a;b++)
@@ -15,7 +15,7 @@ for(b=1;b<=a;b++)
 		{
 			if(c<=a-1)
 			{
-				scanf("%d ",&d);
+				my_scanf("%d ",&d);
 				e=e+d;
 				if(d==0&&flag==1)
 				{
@@ -30,7 +30,7 @@ for(b=1;b<=a;b++)
 			}
 			else
 			{
-				scanf("%d\n",&d);
+				my_scanf("%d\n",&d);
 				e=e+d;
 				if(d==0&&flag==1)
 				{
@@ -51,7 +51,7 @@ for(b=1;b<=a;b++)
 		{
 			if(c<=a-1)
 			{
-				scanf("%d ",&d);
+				my_scanf("%d ",&d);
 				e=e+d;
 				if(d==0&&flag==1)
 				{
@@ -66,7 +66,7 @@ for(b=1;b<=a;b++)
 			}
 			else
 			{
-				scanf("%d",&d);
+				my_scanf("%d",&d);
 				e=e+d;
 				if(d==0&&flag==1)
 				{
@@ -92,6 +92,6 @@ for(b=1;b<=a;b++)
 	}
 }
 result=(c2-c1-3)*(b2-b1-2);
-printf("%d",result);
+my_printf("%d",result);
 return 0;
 }

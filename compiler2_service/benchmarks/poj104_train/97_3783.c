@@ -3,7 +3,7 @@
 int sort(int a,int b);
 int main_bench(){
     int money;
-    scanf("%d",&money);
+    my_scanf("%d",&money);
     money=sort(money,100);
     money=sort(money,50);
     money=sort(money,20);
@@ -13,6 +13,6 @@ int main_bench(){
     return 0;
 }
 int sort(int a,int b){
-    printf("%d\n",a/b);
+    my_printf("%d\n",a/b);
     return a%b;
 }

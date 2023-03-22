@@ -3,13 +3,13 @@
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s ",a);
-	scanf("%s",b);
+	my_scanf("%s ",a);
+	my_scanf("%s",b);
 	int lo,lon;
 	lo=strlen(a);
 	lon=strlen(b);
 	if(lo!=lon)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		int c,d,e,f,counta[100]={0},countb[100]={0};
@@ -52,7 +52,7 @@ int main_bench()
 			numb++;
 		}
 		if(numa!=numb)
-			printf("NO");
+			my_printf("NO");
 		else
 		{
 			int x,y,z=0;
@@ -65,9 +65,9 @@ int main_bench()
 				}
 			}
 			if(z==numa)
-				printf("YES");
+				my_printf("YES");
 			else
-				printf("NO");
+				my_printf("NO");
 		}
 	}
 	return 0;

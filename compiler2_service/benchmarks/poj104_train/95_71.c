@@ -23,9 +23,9 @@ int main_bench()
 	}
 	int d;
 	d=strcmp(s1,s2);
-	if(d==0)printf("=\n");
-    if(d<0)printf("<\n");
-    if(d>0)printf(">\n");
+	if(d==0)my_printf("=\n");
+    if(d<0)my_printf("<\n");
+    if(d>0)my_printf(">\n");
 	return 0;
 }
 

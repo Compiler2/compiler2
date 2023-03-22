@@ -27,7 +27,7 @@ main_bench(){
 int i,n;
 i=0;
 for(i=0;i<6;i++){
-scanf("%d",&n);
-printf("%d\n",reverse(n));
+my_scanf("%d",&n);
+my_printf("%d\n",reverse(n));
 }
 }

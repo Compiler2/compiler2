@@ -4,7 +4,7 @@ main_bench()
 {     
      int i,j,k,m=0,n,n1,n2;
      char s1[60],s2[60];
-     scanf("%s %s",s1,s2);
+     my_scanf("%s %s",s1,s2);
      n1=strlen(s1);
      n2=strlen(s2);
      for(j=0;j<n2;j++)
@@ -19,6 +19,6 @@ main_bench()
      k++;
      if(i==n1-1)
      {m=1;break;}}}}
-     printf("%d",j-1);
+     my_printf("%d",j-1);
      
       }

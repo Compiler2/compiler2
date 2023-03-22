@@ -10,12 +10,12 @@ int main_bench()
 	};
 	struct stu m[100000],temp;
 	int j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu *p=m;
 	struct stu *q;
 	for(;p<m+n;p+=1)
 	{
-		scanf("%d%d%d",&(*p).i,&(*p).chi,&(*p).ma);
+		my_scanf("%d%d%d",&(*p).i,&(*p).chi,&(*p).ma);
 		(*p).sum=(*p).chi+(*p).ma;
 	}
 	for(p=m;p<m+n-1;p++)
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for(p=m;p<m+3;p++)
 	{
-		printf("%d %d\n",(*p).i,(*p).sum);
+		my_printf("%d %d\n",(*p).i,(*p).sum);
 	}
 	return 0;
 }

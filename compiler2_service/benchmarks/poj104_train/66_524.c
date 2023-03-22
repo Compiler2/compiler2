@@ -4,30 +4,30 @@ int isrunnian (int year);
 int dijitian (int year,int month,int day);
 int main_bench(){
 int year,month,day,a,i,r;
-scanf("%d %d %d",&year,&month,&day);
+my_scanf("%d %d %d",&year,&month,&day);
 getchar();
 a=dijitian(year,month,day);
 r=(year-2+(year-1)/400+(year-1)/4-(year-1)/100+a)%7;
 if(r==0){
-           printf("Mon.");
+           my_printf("Mon.");
            getchar();
            }else if(r==1){
-           printf("Tue.");
+           my_printf("Tue.");
            getchar();
            }else if(r==2){
-           printf("Wed.");
+           my_printf("Wed.");
            getchar();
            }else if(r==3){
-           printf("Thu.");
+           my_printf("Thu.");
            getchar();
            }else if(r==4){
-           printf("Fri.");
+           my_printf("Fri.");
            getchar();
            }else if(r==5){
-           printf("Sat.");
+           my_printf("Sat.");
            getchar();
            }else if(r==6){
-           printf("Sun.");
+           my_printf("Sun.");
            getchar();
            }                     
 return 0;

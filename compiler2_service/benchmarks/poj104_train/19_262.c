@@ -109,7 +109,7 @@ int main_bench()
 	
 	for(i=0;i<=num+1;i++)
 	{
-		printf("%s",sen[i].w);
+		my_printf("%s",sen[i].w);
 	}
 	return 0;
 }

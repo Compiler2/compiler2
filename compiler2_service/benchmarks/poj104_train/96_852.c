@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,m,n,a[500];
 	char str[100];
 	gets(str);
-	if(strlen(str)==2&&(str[0]-48)*10+(str[1]-48)<13||strlen(str)==1)printf("0\n%s",str);
+	if(strlen(str)==2&&(str[0]-48)*10+(str[1]-48)<13||strlen(str)==1)my_printf("0\n%s",str);
 	else{
 	m=str[0]-48;
 	for(i=1;i<strlen(str);i++)
@@ -21,13 +21,13 @@ int main_bench()
 	}
 	for(;i<strlen(str);i++)
 	{
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 
 	}
 	
 
-	printf("\n");
-	printf("%d",m);
+	my_printf("\n");
+	my_printf("%d",m);
 	}
 
 

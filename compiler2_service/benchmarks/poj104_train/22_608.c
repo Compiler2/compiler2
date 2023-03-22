@@ -8,11 +8,11 @@ int main_bench()
     int x,count,i;
     
   
-    scanf("%d%c",&x,&ch);
+    my_scanf("%d%c",&x,&ch);
     while(ch==',')
     {
         f[x]=1;          
-        scanf("%d%c",&x,&ch);
+        my_scanf("%d%c",&x,&ch);
               
     }
     f[x]=1; 
@@ -27,11 +27,11 @@ int main_bench()
        }
        if(count==2)
        {
-         printf("%d",i);
+         my_printf("%d",i);
          return 0;          
        }
     }
-    printf("No");
+    my_printf("No");
      return 0;    
 }
 

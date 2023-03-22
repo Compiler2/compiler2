@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,N;
 	double total;
 	total=1.0;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     if(N==0){
              total=1;}
     if(N!=0){
@@ -13,8 +13,8 @@ int main_bench()
                      total*=2;
                      }
     }
-    printf("%.0lf",total);                
-	scanf("%d",&n);
+    my_printf("%.0lf",total);                
+	my_scanf("%d",&n);
 	return 0;
 }
 

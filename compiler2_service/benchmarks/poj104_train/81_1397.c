@@ -10,23 +10,23 @@ int main_bench()
 	
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&M[i][j]);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",&M[i][j]);
+	my_scanf("%d %d",&n,&m);
 
 	k=f(M,n,m);
 	if(k==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",M[i][j]);
+				my_printf("%d",M[i][j]);
 				d+=1;
 				if(d%5==0)
-					printf("\n");
-                                else printf(" ");
+					my_printf("\n");
+                                else my_printf(" ");
 			}
 		}
 	}

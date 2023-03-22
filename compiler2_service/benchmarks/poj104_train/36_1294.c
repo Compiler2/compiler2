@@ -8,12 +8,12 @@ int main_bench()
 {
 	int i;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 int la= strlen(a);
 int lb= strlen(b);
 	if(la!=lb)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -25,8 +25,8 @@ int lb= strlen(b);
 		    	break;
 		}
     	if(i==strlen(a))
-	    	printf("YES");
+	    	my_printf("YES");
     	else
-		    printf("NO");
+		    my_printf("NO");
 	}
 }

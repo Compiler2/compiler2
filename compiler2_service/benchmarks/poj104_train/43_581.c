@@ -3,7 +3,7 @@
 main_bench()
 {
 	int m,i,j,p1=0,p2=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m>5&&m%2==0&&m<10001)
 	for(i=3;i<=m/2;i=i+2)
 	{
@@ -23,7 +23,7 @@ main_bench()
 				break;
 			}
 		}
-		if(p1==0&&p2==0) printf("%d %d\n",i,m-i);
+		if(p1==0&&p2==0) my_printf("%d %d\n",i,m-i);
 		p1=0;
 		p2=0;
 	}

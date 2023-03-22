@@ -5,9 +5,9 @@ int main_bench(){
 	int ai[50000];
 	int bi[50000];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&(ai[i]),&(bi[i]));
+		my_scanf("%d %d",&(ai[i]),&(bi[i]));
 	}
 
 	for(i=0;i<n-1;i++){
@@ -32,16 +32,16 @@ int main_bench(){
 		}
 	
 		if(bi[i]<ai[k]){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 		l=k;
 		i=l;
 		if(bi[i]>bi[n-1]){
-			printf("%d %d",ai[0],bi[i]);
+			my_printf("%d %d",ai[0],bi[i]);
 		}
 		else if(i==n-1){
-			printf("%d %d",ai[0],bi[n-1]);
+			my_printf("%d %d",ai[0],bi[n-1]);
 		}
 	}
 return 0;

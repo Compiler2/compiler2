@@ -10,10 +10,10 @@ int main_bench()
 	int m,i,len[1000],num[128]={0},j,max,p=0;
 	char maxi;
 	int boo[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&book[i].na,book[i].au);
+		my_scanf("%d%s",&book[i].na,book[i].au);
 		len[i]=strlen(book[i].au);
 		for(j=0;j<len[i];j++)
 			num[book[i].au[j]]++;
@@ -28,15 +28,15 @@ int main_bench()
 			maxi=j;
 		}
 	}
-	printf("%c\n",maxi);
-	printf("%d\n",max);
+	my_printf("%c\n",maxi);
+	my_printf("%d\n",max);
 	for(i=0;i<m&&p<max;i++)
 	{
 		for(j=0;j<len[i];j++)
 		{
 			if(book[i].au[j]==maxi)
 			{
-				printf("%d\n",book[i].na);
+				my_printf("%d\n",book[i].na);
 				p++;
 				break;
 			}

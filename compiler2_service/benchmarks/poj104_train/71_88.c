@@ -19,11 +19,11 @@ int max(int m1,int m2)
 int main_bench()
 {
     int n,i,b,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],m1[n],m2[n];
     for(i=0;i<n;i++)
     {
-    scanf("%d%d%d",&a[i],&m1[i],&m2[i]);
+    my_scanf("%d%d%d",&a[i],&m1[i],&m2[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -50,9 +50,9 @@ int main_bench()
              } 
              b=b%7;
              if(b==0)
-             {printf("YES\n");}
+             {my_printf("YES\n");}
              else
-             {printf("NO\n");} 
+             {my_printf("NO\n");} 
          }
          else
          {
@@ -72,9 +72,9 @@ int main_bench()
              }
              b=b%7;
              if(b==0)
-             {printf("YES\n");}
+             {my_printf("YES\n");}
              else
-             {printf("NO\n");} 
+             {my_printf("NO\n");} 
          } 
     }
     return 0; 

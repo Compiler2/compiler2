@@ -6,8 +6,8 @@ int main_bench()
 	int a[5][5],i,m,n;
 	int *p=*a,*q=*(a+4)+4;
 	for(;p<=q;)
-		scanf("%d",p++);
-	scanf("%d%d",&m,&n);
+		my_scanf("%d",p++);
+	my_scanf("%d%d",&m,&n);
 	if(f(m,n))
 	{
 		for(i=0;i<5;i++)
@@ -21,12 +21,12 @@ int main_bench()
 			q=p+5;
 			q--;
 			for(;p<q;p++)
-				printf("%d ",*p);
-			printf("%d\n",*p);
+				my_printf("%d ",*p);
+			my_printf("%d\n",*p);
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 
 }
 int f(int m, int n)

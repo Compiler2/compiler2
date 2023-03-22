@@ -3,7 +3,7 @@
 main_bench()
 {
   int n;
-  scanf ("%d",&n);
+  my_scanf ("%d",&n);
   int count=0 ;
   int t1,t2,t3;
   if (n%3==0)
@@ -44,19 +44,19 @@ main_bench()
 
   if (count==3)
   {
-   printf ("%d %d %d",t1,t2,t3);
+   my_printf ("%d %d %d",t1,t2,t3);
   }
   else if (count==2)
   {
-    printf ("%d %d",t1,t2);
+    my_printf ("%d %d",t1,t2);
   }
   else if (count==1)
   {
-  printf ("%d",t1);
+  my_printf ("%d",t1);
   }
   else if (count==0)
   {
-  printf ("n");
+  my_printf ("n");
   }
 	
 }

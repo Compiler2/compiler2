@@ -14,7 +14,7 @@ int main_bench()
 		k++;
 		j++;
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 	k=0;
 	while(*(p+j)==' ')
 		j++;
@@ -26,7 +26,7 @@ int main_bench()
 		{
 			if(*(p+i-1)!=' ')
 			{
-			   printf(",%d",k);
+			   my_printf(",%d",k);
 			    k=0;
 			}
 			if(*(p+i-1)==' ')

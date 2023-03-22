@@ -3,11 +3,11 @@
 int main_bench(){
  int n,a[50000],b[50000],i,j,t1,t2,c,d,k;
  char e='x';
- scanf("%d",&n);
+ my_scanf("%d",&n);
  d=0;
  i=0;
  while(i<n){
-  scanf("%d%d",&a[i],&b[i]);
+  my_scanf("%d%d",&a[i],&b[i]);
   i=i+1;
  }
  for(j=0;j<n-1;j=j+1){
@@ -34,10 +34,10 @@ int main_bench(){
                i=i+1;
     }
     if(e=='y'){
-                        printf("no");
+                        my_printf("no");
     }
     if(e=='x'){ 
-     printf("%d %d",a[0],b[n-1]);
+     my_printf("%d %d",a[0],b[n-1]);
     }
  return 0;
 }

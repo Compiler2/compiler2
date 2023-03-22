@@ -22,10 +22,10 @@ int main_bench()
 {
 	int n;
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>50000)
 	{
-		printf("??????50000??\n");
+		my_printf("??????50000??\n");
 	}
 	else
 	{
@@ -43,7 +43,7 @@ int main_bench()
 					m=i-j;
 					if(isprime(m)==1)
 					{
-						printf("%d=%d+%d\n",i,j,m);
+						my_printf("%d=%d+%d\n",i,j,m);
 						break;
 					}
 				}

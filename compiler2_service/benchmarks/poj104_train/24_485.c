@@ -28,5 +28,5 @@ int main_bench()
 		if(strlen(b[i])<strlen(shortstr))
 			strcpy(shortstr,b[i]);
 	}
-	printf("%s\n%s\n",longstr,shortstr);
+	my_printf("%s\n%s\n",longstr,shortstr);
 }

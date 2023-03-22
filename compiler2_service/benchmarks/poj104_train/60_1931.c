@@ -4,7 +4,7 @@ main_bench()
 {
       int n,s;
       int i,j;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int *a=(int*)malloc(((n+1)/2)*sizeof(int));
       for (i=0;i<(n+1)/2;i++)
       a[i]=1;
@@ -25,9 +25,9 @@ main_bench()
           if((a[i-1]==1)&&(a[i]==1))
           {
               s=1;
-              printf("%d %d\n",2*i-1,2*i+1);
+              my_printf("%d %d\n",2*i-1,2*i+1);
           }
       }
-      if(s==0) printf("empty");
+      if(s==0) my_printf("empty");
       free(a);
 }

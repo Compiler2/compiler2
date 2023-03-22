@@ -4,9 +4,9 @@ char s[1000],v[10000];
 int main_bench()
 {
   int a,b,j,i,l,t=0;
-  scanf("%d",&a);
-  scanf("%s",s);  
-  scanf("%d",&b);
+  my_scanf("%d",&a);
+  my_scanf("%s",s);  
+  my_scanf("%d",&b);
   l=strlen(s);
   int m=1;  
   for(j=0;j<l;j++)
@@ -35,8 +35,8 @@ int main_bench()
       v[i]+=('A'-10);
   }
   for(i=m-1;i>=0;i--)
-  printf("%c",v[i]);
+  my_printf("%c",v[i]);
   if(m==0)
-   printf("0");
+   my_printf("0");
   return 0;    
 }

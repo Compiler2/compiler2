@@ -28,20 +28,20 @@ int ishuiwen(int n)
 int main_bench()
 {
     int count = 0, i, m, n;
-    scanf("%d%d", &m, &n);
+    my_scanf("%d%d", &m, &n);
     for (i=m; i<=n; i++)
     {
         if (isprime(i) && ishuiwen(i))
         {
             count++;
             if (count == 1)
-                printf("%d", i);
+                my_printf("%d", i);
             else
-                printf(",%d",i);
+                my_printf(",%d",i);
         }
     }
     if (count == 0)
-        printf("no");
+        my_printf("no");
     return 0;
 }
 

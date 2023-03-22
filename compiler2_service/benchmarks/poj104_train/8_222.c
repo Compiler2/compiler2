@@ -6,15 +6,15 @@ int main_bench()
 {
     int n, m, i, j;
     int a[1000],b[1000];
-    scanf ("%d %d\n", &n, &m);
+    my_scanf ("%d %d\n", &n, &m);
     for (i=0;i<n;i++)
     {
-        scanf ("%d\n",&a[i]);
+        my_scanf ("%d\n",&a[i]);
     }
     
     for (j=0;j<m;j++)
     {
-        scanf ("%d",&b[j]);
+        my_scanf ("%d",&b[j]);
     }
     pai1 (a,n);
 	pai2 (b,m);
@@ -41,13 +41,13 @@ int pai1(int x[] ,int y)
 	{  
 		if (flag==0)
 		{
-			printf("%d" , x[i]);
+			my_printf("%d" , x[i]);
 			flag=1;
 			continue;
 		}
 		if (flag==1)
 		{
-			printf(" %d" , x[i]);
+			my_printf(" %d" , x[i]);
 		}
 	}
 	return 0;
@@ -69,7 +69,7 @@ int pai2(int x[] ,int y)
             }
     }
     for(i=0;i<y;i++)
-        printf(" %d" , x[i]);    
+        my_printf(" %d" , x[i]);    
 	return 0;
 } 
 

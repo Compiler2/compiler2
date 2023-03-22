@@ -3,13 +3,13 @@
 int main_bench()
 {
 int n,i,a;
-scanf("%d",&n);
+my_scanf("%d",&n);
 while(n>0)
 {
 a=n%10;
 n=n/10;
 i++;
-printf("%d",a);
+my_printf("%d",a);
 }
 return 0;
 }

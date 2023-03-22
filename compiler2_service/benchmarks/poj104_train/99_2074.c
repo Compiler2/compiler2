@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,b,c,d,e;
 	int a[100];
 	double w,x,y,z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	b=0;
 	c=0;
 	d=0;
@@ -23,8 +23,8 @@ int main_bench()
 	x=(double)c*100/n;
 	y=(double)d*100/n;
 	z=(double)e*100/n;
-	printf("1-18: %.2lf%%\n",w);
-	printf("19-35: %.2lf%%\n",x);
-	printf("36-60: %.2lf%%\n",y);
-	printf("60??: %.2lf%%",z);
+	my_printf("1-18: %.2lf%%\n",w);
+	my_printf("19-35: %.2lf%%\n",x);
+	my_printf("36-60: %.2lf%%\n",y);
+	my_printf("60??: %.2lf%%",z);
 }

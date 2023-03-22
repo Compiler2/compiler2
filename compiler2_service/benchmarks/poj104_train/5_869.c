@@ -9,9 +9,9 @@ char string[100];
 char no[100]={"no"};
 char y[100]={"yes"};
 char e[100]={"error"};
-    scanf("%lf\n",&n);
-    scanf("%s\n",s1);
-    scanf("%s\n",s2);
+    my_scanf("%lf\n",&n);
+    my_scanf("%s\n",s1);
+    my_scanf("%s\n",s2);
     p=strlen(s1);
     q=strlen(s2);
    if(p==q){
@@ -38,7 +38,7 @@ char e[100]={"error"};
     }
   }
 }  
-   printf("%s",string);
+   my_printf("%s",string);
     return 0;
 }
 

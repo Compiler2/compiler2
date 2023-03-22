@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,i,s=0,m,j[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point
 	{
 		int a;
@@ -10,7 +10,7 @@ int main_bench(){
 	}
 	c[100];
 	for (i=0;i<n;i++){
-		scanf("%d%d",&c[i].a,&c[i].b);
+		my_scanf("%d%d",&c[i].a,&c[i].b);
 		if (c[i].a>=90 && c[i].a<=140 && c[i].b>=60 && c[i].b<=90){
 			s++;
 			j[i]=s;
@@ -26,6 +26,6 @@ int main_bench(){
 			j[i-1]=m;
 		}
 	}
-	printf("%d\n",j[n-1]);
+	my_printf("%d\n",j[n-1]);
 	return 0;
 }

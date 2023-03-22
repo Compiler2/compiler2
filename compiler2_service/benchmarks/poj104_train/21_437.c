@@ -4,10 +4,10 @@ main_bench()
 {
 	float a[300],b[300],s=0,ave,m,t,r;
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		s=s+a[i];
 	}
 	ave=s/n;
@@ -34,11 +34,11 @@ main_bench()
 			}
 		}
 	}
-	printf("%.0f",a[0]);
+	my_printf("%.0f",a[0]);
 	for(i=0;i<n-1;i++)
 	{
 		if(b[i]==b[i+1])
-			printf(",%.0f",a[i+1]);
+			my_printf(",%.0f",a[i+1]);
 		else
 			break;
 	}

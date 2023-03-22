@@ -6,10 +6,10 @@ int main_bench()
 	int  a[101]={0},b[101]={0},c[101]={0};
 	int n,i=0,j=0;
 	int f=0,g=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",s[i],&a[i]);
+		my_scanf("%s %d",s[i],&a[i]);
 		if(a[i]>=60)
 		{
 			b[f]=a[i];
@@ -42,11 +42,11 @@ int main_bench()
 	}
 	for(i=0;i<f;i++)
 	{
-		printf("%s\n",p[i]);
+		my_printf("%s\n",p[i]);
 	}
 	for(j=0;j<g;j++)
 	{
-		printf("%s\n",q[j]);
+		my_printf("%s\n",q[j]);
 	}
 	return 0;
 }

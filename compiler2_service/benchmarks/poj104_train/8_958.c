@@ -5,9 +5,9 @@ void f1(int a[1000],int b[1000])
 {
 	int i;
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<m;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void f2(int a[1000],int b[1000])
 {
@@ -35,13 +35,13 @@ void f4(int a[1000])
 {
 	int i;
 	for(i=0;i<(n+m);i++)
-	{printf("%d",a[i]);
-	if(i!=(n+m-1)) printf(" ");}
+	{my_printf("%d",a[i]);
+	if(i!=(n+m-1)) my_printf(" ");}
 }
 int main_bench()
 {
 	int a[1000],b[1000];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	f1(a,b);
 	f2(a,b);
 	f3(a,b);

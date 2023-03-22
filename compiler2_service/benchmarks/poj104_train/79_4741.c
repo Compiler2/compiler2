@@ -3,7 +3,7 @@
 int main_bench(){
 	int i,j,row=0,count=0,check,zeronum,n[100],m[300],arr[300];
 	for(i=0;i<300;i++){
-		scanf("%d%d",&n[i],&m[i]);
+		my_scanf("%d%d",&n[i],&m[i]);
 		if(n[i]==0||m[i]==0){
 			break;
 		}
@@ -35,7 +35,7 @@ int main_bench(){
 
 		for(j=0;j<n[i];j++){
 			if(arr[j]!=0){
-				printf("%d\n",arr[j]);
+				my_printf("%d\n",arr[j]);
 			}
 		}
 	}

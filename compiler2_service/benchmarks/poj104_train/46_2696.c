@@ -3,12 +3,12 @@
 int main_bench()
 {
   int array[100][100],s[10000],row,col,i,j,k,l,h,a,b,c;
-  scanf("%d%d",&row,&col);
+  my_scanf("%d%d",&row,&col);
   for(i=0;i<row;i++)
   {
     for(j=0;j<col;j++)
      {
-        scanf("%d",&array[i][j]);
+        my_scanf("%d",&array[i][j]);
      }
   }
   b=row;
@@ -54,7 +54,7 @@ int main_bench()
   }
 for(k=0;k<row*col;k++)
 {
-  printf("%d\n",s[k]);
+  my_printf("%d\n",s[k]);
 }
 return 0;
 }

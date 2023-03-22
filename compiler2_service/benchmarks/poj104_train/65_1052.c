@@ -5,10 +5,10 @@ int main_bench(){
 	int n,i,ta,tb;
 	int a[200],b[200],x[200];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for (i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 
 	ta=0;
@@ -24,11 +24,11 @@ int main_bench(){
 	}
 
 	if(ta<tb){
-		printf("B\n");
+		my_printf("B\n");
 	}else if(ta==tb){
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}else{
-		printf("A\n");
+		my_printf("A\n");
 	}
 
 	return 0;

@@ -5,9 +5,9 @@ int main_bench()
 {
 	char str1[55];
 	char str2[55];
-	scanf("%s",str1);
+	my_scanf("%s",str1);
 	getchar();
-	scanf("%s",str2);
+	my_scanf("%s",str2);
 	int l1,l2;
 	l1=strlen(str1);
 	l2=strlen(str2);
@@ -22,7 +22,7 @@ int main_bench()
 					count++;
 			}
 			if(count==l1-1)
-				printf("%d",i);
+				my_printf("%d",i);
 		}
 	}
 	return 0;

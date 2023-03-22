@@ -9,9 +9,9 @@ main_bench()
 {
       int i=0,j=0,k=0,w=0,n;
       float b[40],c[40],tmp=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<=n-1;i++)
-      scanf("%s%f",a[i].s,&a[i].h);
+      my_scanf("%s%f",a[i].s,&a[i].h);
       for(i=0;i<=n-1;i++)
       {
                          
@@ -37,10 +37,10 @@ main_bench()
        c[i]=tmp;
                      }}}
                      for(i=0;i<=j-1;i++)
-                     printf("%.2f ",b[i]);
+                     my_printf("%.2f ",b[i]);
                       for(i=0;i<=k-2;i++)
-                     printf("%.2f ",c[i]);
-                     printf("%.2f",c[i]);
+                     my_printf("%.2f ",c[i]);
+                     my_printf("%.2f",c[i]);
                                                      
       getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();
 }

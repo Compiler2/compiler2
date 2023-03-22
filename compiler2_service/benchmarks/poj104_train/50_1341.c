@@ -13,17 +13,17 @@ int month(int i)
 int main_bench()
 {
 	int k,i;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	k=k+12;
 	k=k%7;
 	if(k==5)
-		printf("1\n");
+		my_printf("1\n");
 	for(i=1;i<12;i++)
 	{
 		k+=month(i);
 		k=k%7;
 		if(k==5)
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 	}
 return 0;
 }

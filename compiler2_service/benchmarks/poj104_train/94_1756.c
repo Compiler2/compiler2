@@ -5,9 +5,9 @@ int main_bench(){
 	int n,i,max=1,point=1;
 	char x;
 	x=',';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&an[i]);
+		my_scanf("%d",&an[i]);
 	for(i=0;i<n;i++){
 		if(an[i]>max&&an[i]%2==1)
 			max=an[i];
@@ -15,7 +15,7 @@ int main_bench(){
 	while(point<=max-2){
 		for(i=0;i<n;i++){
 			if(an[i]==point){
-				printf("%d%c",an[i],x);
+				my_printf("%d%c",an[i],x);
 				break;
 			}
 		}
@@ -23,7 +23,7 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(an[i]==point){
-			printf("%d",an[i]);
+			my_printf("%d",an[i]);
 			break;
 		}
 	}

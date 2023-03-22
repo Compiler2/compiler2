@@ -5,11 +5,11 @@ int main_bench()
     int n,flag,bigflag=0;
 	long int len,i,j;
 	char s[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		bigflag=0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		len=strlen(s);
 		for(i=0;i<len-1;i++)
 		{ 
@@ -27,15 +27,15 @@ int main_bench()
 
             if(flag==0) 
 			{
-				printf("%c\n",s[i]);
+				my_printf("%c\n",s[i]);
 				bigflag=1;
 				break;
 			}
 		}
 		if(bigflag==0)
 		{
-			printf("no");
-			printf("\n");
+			my_printf("no");
+			my_printf("\n");
 		}
 	}
 	return 0;

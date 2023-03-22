@@ -4,11 +4,11 @@ main_bench()
 {
     int n,i=0,j=0,k=0;
     int a[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char word[10000];
     do
     {
-        scanf("%s",&word[i]);
+        my_scanf("%s",&word[i]);
         i=strlen(word);
         word[i]=' ';
         j=j+1;
@@ -40,10 +40,10 @@ main_bench()
     {
         if(i==a[j])
         {
-            printf("\n");
+            my_printf("\n");
             j=j+1;
         }
-        else printf("%c",word[i]);
+        else my_printf("%c",word[i]);
         i=i+1;
     }
     while(word[i+1]!=0);

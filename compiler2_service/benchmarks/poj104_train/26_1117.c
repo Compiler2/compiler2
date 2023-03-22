@@ -17,7 +17,7 @@ int main_bench()
 		}
 		
 	}
-	printf("%s",tra);
+	my_printf("%s",tra);
 
 	return 0;
 }

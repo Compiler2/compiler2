@@ -5,7 +5,7 @@ int main_bench()
 	void reserve(int num);
 	int x[6],i;
 	for(i=0;i<6;i++)
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	for(i=0;i<6;i++)
 		reserve(x[i]);
 	
@@ -16,11 +16,11 @@ void reserve(int a)
 {
 	int j,p[1000],q,m;
 	if(a==0)
-		printf("0");
+		my_printf("0");
 	else 
 	{if(a<0)
 	{
-		printf("-");
+		my_printf("-");
 		a=-a;
 	}
 	for(j=0;;j++)
@@ -36,9 +36,9 @@ void reserve(int a)
 	{
 		if(p[j]==0&&q==0)
 			continue;
-		printf("%d",p[j]);
+		my_printf("%d",p[j]);
 		q=1;
 	}
 	}
-	printf("\n");
+	my_printf("\n");
 }

@@ -6,19 +6,19 @@ char a[500],b[10000];
 int main_bench()
 {
 	double xg;
-	scanf("%lf",&xg);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&xg);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i;
 	int x=0;
 	int e=0;
 	if(strlen(a)!=strlen(b))
-		printf("error");
+		my_printf("error");
 	else{
 	for(i=0;a[i]!='\0';i++)
 	{
 		if((a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C')||(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C'))
-		{printf("error");
+		{my_printf("error");
 		e=1;
 		break;}
 		else
@@ -35,9 +35,9 @@ int main_bench()
 	else
 	{
 	if((x*1.0)/(strlen(a))>xg)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 	}
 	}
 	return 0;

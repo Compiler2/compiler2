@@ -4,7 +4,7 @@ int main_bench(){
 int sz[5][5],i,j,a,x=5,y=5,m=0,n=0;
 for(i=0;i<5;i++){
     for(j=0;j<5;j++){
-    scanf("%d",&(sz[i][j]));
+    my_scanf("%d",&(sz[i][j]));
     }
 
 
@@ -47,10 +47,10 @@ for(i=0;i<5;i++){
 }
 
 if(x==5){
-printf("not found");
+my_printf("not found");
 }
 else{
-printf("%d %d %d",x,y,sz[x-1][y-1]);
+my_printf("%d %d %d",x,y,sz[x-1][y-1]);
 }
 return 0;
 

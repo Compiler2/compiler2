@@ -6,7 +6,7 @@ main_bench()
     int f(int a,int b);
     int a,b,i,n,sum=0;
     char s[999];
-    scanf("%d %s %d",&a,s,&b);
+    my_scanf("%d %s %d",&a,s,&b);
     n=strlen(s);
     for(i=0;i<n;i++)
     {if(s[i]>=97&&s[i]<=122)
@@ -29,8 +29,8 @@ main_bench()
     for(i=i;i>=0;i--)
     {
     	if(s[i]>9)
-    	printf("%c",s[i]);
-    	else printf("%d",s[i]);
+    	my_printf("%c",s[i]);
+    	else my_printf("%d",s[i]);
     }
 }
 int f(int a,int b)

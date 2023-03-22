@@ -3,14 +3,14 @@
 
 int main_bench(){
 	int i,n,m,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct br{
 		char x[10];
 		int y;
 	}*b,c[100],e;
 	b=(struct br*)malloc(sizeof(struct br)*n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",b[i].x,&(b[i].y));
+		my_scanf("%s%d",b[i].x,&(b[i].y));
 	}
 	for(i=0,m=0;i<n;i++){
 		if(b[i].y>=60){
@@ -29,11 +29,11 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-			printf("%s\n",c[i].x);	
+			my_printf("%s\n",c[i].x);	
 	}
 	for(i=0;i<n;i++){
 		if(b[i].y!=-1){
-			printf("%s\n",b[i].x);
+			my_printf("%s\n",b[i].x);
 		}
 	}
 	return 0;

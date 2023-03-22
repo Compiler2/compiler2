@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[98];
 	int i=0;
 	while(i<n){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 		i ++;
 	}
 	
@@ -24,10 +24,10 @@ int main_bench()
 	
 	int l=0;
 	while(l<n-1){
-		printf("%d ",sz[l]);
+		my_printf("%d ",sz[l]);
 		l ++;
 	}
-	printf("%d",sz[n-1]);
+	my_printf("%d",sz[n-1]);
 	return 0;
 	
 }

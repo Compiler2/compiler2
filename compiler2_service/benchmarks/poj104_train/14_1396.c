@@ -13,16 +13,16 @@ int main_bench()
    int tempSum;
    int tempMax;
    int rank[3]={0};
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    
    
    for(i=0;i<n;i++)
    {
         tempSum = 0;
-           scanf("%d",&stu[i].num);
+           my_scanf("%d",&stu[i].num);
            stu[i].sum = 0;
            for(j=0;j<2;j++){
-            scanf("%d",&tempSum);
+            my_scanf("%d",&tempSum);
             stu[i].sum += tempSum;
            }
    }
@@ -44,7 +44,7 @@ int main_bench()
        stu[rank[b]].sum = t;
    }
    for(a=0;a<3;a++)
-   printf("%d %d\n",stu[a].num,stu[a].sum);
+   my_printf("%d %d\n",stu[a].num,stu[a].sum);
 
   return 0;
 }

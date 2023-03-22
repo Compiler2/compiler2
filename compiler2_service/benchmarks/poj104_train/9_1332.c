@@ -16,10 +16,10 @@ int main_bench()
 	struct info patient[101];
 	struct info1 old[101];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0,j=0;i<n;i++){
-		scanf("%s %d",&patient[i].num,&patient[i].age);
+		my_scanf("%s %d",&patient[i].num,&patient[i].age);
 		if(patient[i].age>=60){
 			strcpy(old[j].num1,patient[i].num);
 			old[j].age1=patient[i].age;
@@ -37,11 +37,11 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%s\n",old[i].num1);
+		my_printf("%s\n",old[i].num1);
 	}
 	for(i=0;i<n;i++){
 		if(patient[i].age<60){
-			printf("%s\n",patient[i].num);
+			my_printf("%s\n",patient[i].num);
 		}
 	}
 	return 0;

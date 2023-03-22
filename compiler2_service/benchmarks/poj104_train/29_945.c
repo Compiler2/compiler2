@@ -3,9 +3,9 @@
 int main_bench(){
 	int a[10000],b[10000],m,n[10000],i,max=0,e;
 	double c[10000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if(max<n[i])  max=n[i];
 	}
     a[0]=2;
@@ -22,7 +22,7 @@ int main_bench(){
 	}
 	for(i=0;i<m;i++){
         e=n[i]-1;
-		printf("%.3lf\n",c[e]);
+		my_printf("%.3lf\n",c[e]);
 	}
 	return 0;
 }

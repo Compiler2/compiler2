@@ -4,8 +4,8 @@ int main_bench()
 {
    int input[300]={0},i=0,n=0,num[1000]={0};
   
-   scanf("%d",&n);
-   for(i=0;i<n;i++) scanf("%d",&input[i]);
+   my_scanf("%d",&n);
+   for(i=0;i<n;i++) my_scanf("%d",&input[i]);
    for(i=0;i<n;i++)
    {
       num[input[i]]++;
@@ -14,12 +14,12 @@ int main_bench()
 
 
 
-   printf("%d",input[0]);
+   my_printf("%d",input[0]);
 
    for(i=1;i<n;i++)
    {
-      if(input[i]) printf(",%d",input[i]);
+      if(input[i]) my_printf(",%d",input[i]);
    }
-   printf("\n");
+   my_printf("\n");
 }
 

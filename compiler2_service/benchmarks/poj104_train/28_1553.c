@@ -16,8 +16,8 @@ int main_bench(){
 			zfc[i]=0;
 	}
 	for(i=0;i<k-1;i++)
-		printf("%d,",strlen(&zfc[sz[i]]));
-	printf("%d",strlen(&zfc[sz[k-1]]));
+		my_printf("%d,",strlen(&zfc[sz[i]]));
+	my_printf("%d",strlen(&zfc[sz[k-1]]));
 	return 0;
 }
 

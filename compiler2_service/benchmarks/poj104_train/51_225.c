@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[500],b[501][6]={0};
 	int n,i,j,k,l,m,x,y,z;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	k=strlen(a);
 	l=1;
 	for(i=0;i<n;i++) b[0][i]=a[i];
@@ -42,10 +42,10 @@ int main_bench()
 			}
 		}
 	}
-	if(b[0][4]==1) printf("NO");
+	if(b[0][4]==1) my_printf("NO");
 	else
 	{
-	printf("%d",b[0][4]);
+	my_printf("%d",b[0][4]);
 	z=1;
 	for(i=1;i<l;i++)
 	{
@@ -65,8 +65,8 @@ int main_bench()
 	}
 	for(i=0;i<z;i++) 
 	{
-		printf("\n");
-		for(j=0;j<n;j++) printf("%c",b[i][j]); 
+		my_printf("\n");
+		for(j=0;j<n;j++) my_printf("%c",b[i][j]); 
 	}
 	}
 	return 0;

@@ -5,7 +5,7 @@ int main_bench()
 	long b,i,c,d,e=0,f;
 	char a[50],s[50];
 	long z[50];
-	scanf("%d%s%d",&b,a,&c);
+	my_scanf("%d%s%d",&b,a,&c);
 	d=strlen(a);
 	for(i=0;i<d;i++)
 	{
@@ -54,7 +54,7 @@ char t[50];
 	for(i=0;i<w;i++)
 	{
 		if(t[i]!='\0')
-	printf("%c",t[i]);
+	my_printf("%c",t[i]);
 		else break;
 	}
 	

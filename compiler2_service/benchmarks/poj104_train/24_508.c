@@ -24,7 +24,7 @@ int main_bench()
     }
     for(i=0;i<=k;i++)
     {if(t[i]==0)
-    {printf("%s\n",w[i]);
+    {my_printf("%s\n",w[i]);
     break;}
     }
     for(i=0;i<=k;i++)
@@ -35,7 +35,7 @@ int main_bench()
     }
     for(i=0;i<=k;i++)
     {if(p[i]==0)
-    {printf("%s\n",w[i]);
+    {my_printf("%s\n",w[i]);
     break;}
     }    
 }

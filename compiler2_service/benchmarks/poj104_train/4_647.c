@@ -3,12 +3,12 @@
 int main_bench()
 {
 int a[100][100],row,col,i,j;
-scanf("%d %d",&row,&col);
+my_scanf("%d %d",&row,&col);
 for(i=0;i<row;i++)
   {
      for(j=0;j<col;j++)
        {
-          scanf("%d",&a[i][j]);
+          my_scanf("%d",&a[i][j]);
        }
   }
 for(i=0;i<row+col-1;i++)
@@ -17,14 +17,14 @@ for(i=0;i<row+col-1;i++)
      {
        for(j=col-1;j>=i-row+1&&j>=0;j--)
          {
-           printf("%d\n",a[i-j][j]);
+           my_printf("%d\n",a[i-j][j]);
          }
      }    
      else
      {
        for(j=i;j>=i-row+1&&j>=0;j--)
          {
-           printf("%d\n",a[i-j][j]);
+           my_printf("%d\n",a[i-j][j]);
          }
      }
   }

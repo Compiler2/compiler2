@@ -13,9 +13,9 @@ if (!(*(a+i)>='0'&&*(a+i)<='9'))
 }
 else 
 {
-if (ok) printf("\n");
+if (ok) my_printf("\n");
 ok=0;
-printf("%c",*(a+i));
+my_printf("%c",*(a+i));
 }
 return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	double zbl[100],yxbl[100];
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%lf%lf",&zbl[i],&yxbl[i]);
+		my_scanf("%lf%lf",&zbl[i],&yxbl[i]);
 	}
 	double yxl[100];
 	for(i=0;i<n;i++){
@@ -13,13 +13,13 @@ int main_bench(){
 	}
 	for(i=1;i<n;i++){
 		if(yxl[0]-yxl[i]>0.05){
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if(yxl[i]-yxl[0]>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else if(yxl[0]-yxl[i]<=0.05&&yxl[i]-yxl[0]<=0.05){
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

@@ -4,9 +4,9 @@
 int main_bench() {
     int n, i, j, sign,counter;
     int a[20000];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0;i<n;i++) {
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     }
     counter=0;
     for (i=0;i<n&&counter==0;i++) {
@@ -17,7 +17,7 @@ int main_bench() {
             }
         }
         if (sign==0) {
-            printf("%d", a[i]);
+            my_printf("%d", a[i]);
             counter=counter+1;
         }
     }
@@ -29,7 +29,7 @@ int main_bench() {
             }
         }
         if (sign==0) {
-            printf(" %d", a[i]);
+            my_printf(" %d", a[i]);
         }
     }
 

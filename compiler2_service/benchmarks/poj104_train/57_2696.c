@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int len[100];
 	char word[100][20];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 		len[i]=strlen(word[i]);
 		
 	}
@@ -22,9 +22,9 @@ int main_bench()
 		{
 			for(i=0;i<(len[j]-2);i++)
 			{
-				printf("%c",word[j][i]);
+				my_printf("%c",word[j][i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 		else
 		{
@@ -32,9 +32,9 @@ int main_bench()
 			{
 				for(i=0;i<(len[j]-2);i++)
 				{
-					printf("%c",word[j][i]);
+					my_printf("%c",word[j][i]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 			else
 			{
@@ -42,9 +42,9 @@ int main_bench()
 				{
 					for(i=0;i<(len[j]-3);i++)
 					{
-						printf("%c",word[j][i]);
+						my_printf("%c",word[j][i]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 				else
 				{

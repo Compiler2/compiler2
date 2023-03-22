@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int a,b,c;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	if(a==1111,b==11,c==11){
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}else{
 	int x1=(a-1)/4;
 	int x2=(a-1)/100;
@@ -68,19 +68,19 @@ int main_bench(){
 	int result=res1+res2+res3;
 	int d=result%7;
 	if(d==1){
-	     printf("Mon.\n");
+	     my_printf("Mon.\n");
 	}else if(d==2){
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}else if(d==3){
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}else if(d==4){
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}else if(d==5){
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}else if(d==6){
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}else if(d==0){
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 	}
 	return 0;

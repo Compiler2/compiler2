@@ -20,7 +20,7 @@ main_bench()
    {i--;break;}
   }
   }
-  printf("%c",str[j]);
+  my_printf("%c",str[j]);
 
  }
 }

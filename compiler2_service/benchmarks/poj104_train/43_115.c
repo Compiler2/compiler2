@@ -4,7 +4,7 @@ main_bench()
 {
       int n,a,b,c,d,x,y;
       int f(int a);
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       c=n/2;
       for(b=3;b<=c;b++)
       {
@@ -12,7 +12,7 @@ main_bench()
             x=f(b);
             y=f(d);
             if(x==2&&y==2)
-            printf("%d %d\n",b,d);
+            my_printf("%d %d\n",b,d);
       }
 }
 int f(int a)

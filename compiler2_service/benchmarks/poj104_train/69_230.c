@@ -4,8 +4,8 @@ int main_bench(){
     char a[255],b[255];
     int n,m,i,j,x,y,z,k=0;
     int c[255]={0};
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     m=strlen(a);
     n=strlen(b);
     x=m-1;
@@ -39,14 +39,14 @@ int main_bench(){
      if(c[k-1]>10){
                 z=c[k-1];
                 c[k-1]=z%10;
-                printf("%d",(z/10));            
+                my_printf("%d",(z/10));            
     }
     for(i=k-1;i>=0;i--){
                         if(c[i]!=0||k==1){break;}
                         if(c[i]==0){k--;}                                                           
     }
     for(i=k-1;i>=0;i--){
-                        printf("%d",c[i]); 
+                        my_printf("%d",c[i]); 
     }                       
 
     return 0;    

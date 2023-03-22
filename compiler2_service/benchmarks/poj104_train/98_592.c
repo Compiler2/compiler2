@@ -7,20 +7,20 @@ int i,j,k=0,l,m,n;
 	
 char word[40];
 	
-scanf("%d",&n);
+my_scanf("%d",&n);
 	
-scanf("%s",word);
+my_scanf("%s",word);
 	
 k=k+strlen(word)+1;
 	
-printf("%s",word);
+my_printf("%s",word);
 	
 for(i=2;i<=n;i++)
 	
 {
 	
 	
-scanf("%s",word);
+my_scanf("%s",word);
 	
 	
 k=k+strlen(word)+1;
@@ -33,11 +33,11 @@ if(k<=81)
 	
 	
 	
-printf(" ");
+my_printf(" ");
 	
 	
 	
-printf("%s",word);
+my_printf("%s",word);
 	
 	
 }
@@ -50,7 +50,7 @@ else
 	
 	
 	
-printf("\n%s",word);
+my_printf("\n%s",word);
 	
 	
    k=strlen(word)+1;

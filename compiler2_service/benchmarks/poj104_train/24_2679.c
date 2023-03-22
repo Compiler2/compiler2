@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[300],s1[300],s2[300];
-	scanf("%s",s1);
+	my_scanf("%s",s1);
 	strcpy(s2,s1);
 	int l,l1,l2;
 	l1=l2=strlen(s1);
@@ -13,8 +13,8 @@ int main_bench()
 	while(n)
 	{
 		n=n-1;
-		scanf("\n");
-		scanf("%s",s);
+		my_scanf("\n");
+		my_scanf("%s",s);
 		l=strlen(s);
 		if (l<l1)
 		{
@@ -28,6 +28,6 @@ int main_bench()
 		}
 	}
 puts(s2);
-printf("%s",s1);
+my_printf("%s",s1);
 return 0;
 }

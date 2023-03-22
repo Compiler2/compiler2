@@ -9,7 +9,7 @@ main_bench()
       {
           for (j=0;j<5;j++)
           {
-              scanf("%d",&a[i][j]);
+              my_scanf("%d",&a[i][j]);
           }
       }
       int s;
@@ -61,11 +61,11 @@ main_bench()
       }
       if(count==0)
       {
-                  printf("not found");
+                  my_printf("not found");
       }
       else
       {
-          printf("%d %d %d",x,y,b);
+          my_printf("%d %d %d",x,y,b);
       }
       getchar();getchar();getchar();getchar();getchar();
 }

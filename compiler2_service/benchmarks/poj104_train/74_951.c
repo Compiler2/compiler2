@@ -6,7 +6,7 @@ int main_bench()
 	int m, n;
 	int a[100000];
 	int temp, i, k, l, p, q, c, w=0;
-	scanf("%d%d", &m, &n);
+	my_scanf("%d%d", &m, &n);
 	k=n-m;
 
 	for(i=0;i>=0&&i<=k;i++)
@@ -34,15 +34,15 @@ int main_bench()
 			{
 				w++;
 				if(w==1)
-					printf("%d", a[i]);
+					my_printf("%d", a[i]);
 				else
-					printf(",%d", a[i]);
+					my_printf(",%d", a[i]);
 			}
 		}
 		
 	}
 	if(w==0)
-		printf("no");
-	printf("\n");
+		my_printf("no");
+	my_printf("\n");
 	return 0;
 }

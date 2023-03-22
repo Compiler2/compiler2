@@ -4,18 +4,18 @@
 int main_bench()
 {
 	int a,b,c;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if (a<10)
-		printf("%d",a);
+		my_printf("%d",a);
 	else 
 		{
 while (a/10!=0)
 		{
 			b=a/10;
 			c=a-10*b;
-			printf("%d",c);
+			my_printf("%d",c);
 			a=b;
 		}
-		printf("%d",a);
+		my_printf("%d",a);
 }
 }

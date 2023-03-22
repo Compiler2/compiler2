@@ -4,10 +4,10 @@ int main_bench()
 {
 	struct r{int a;int b;int c;}r[99999];
 	int i,n,x=0,y=0,z=0,m1=0,m2=0,m3=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%d%d",&r[i].a,&r[i].b,&r[i].c);
+		my_scanf("%d%d%d",&r[i].a,&r[i].b,&r[i].c);
 	}
     for(i=1;i<=n;i++)
 	{
@@ -45,9 +45,9 @@ int main_bench()
 		    z=i;
 		}
 	}
-    printf("%d %d\n",x,m1);
-	printf("%d %d\n",y,m2);
-	printf("%d %d\n",z,m3);
+    my_printf("%d %d\n",x,m1);
+	my_printf("%d %d\n",y,m2);
+	my_printf("%d %d\n",z,m3);
      
 	return 0;
 }

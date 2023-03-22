@@ -3,11 +3,11 @@
 int main_bench(){
 int n,i,x[10000],y[10000],all=0;
 double GPA,a[10000],t=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d",&(x[i]));}
+	my_scanf("%d",&(x[i]));}
 for(i=0;i<n;i++){
-scanf("%d",&(y[i]));}
+my_scanf("%d",&(y[i]));}
 for(i=0;i<n;i++){
 	if(90<=y[i]){a[i]=4.0;}
 	else if(85<=y[i]&&y[i]<90){a[i]=3.7;}
@@ -25,6 +25,6 @@ for(i=0;i<n;i++){
 for(i=0;i<n;i++){
 	t +=x[i]*a[i];}
 GPA=t/all;
-printf("%.2lf\n ",GPA);
+my_printf("%.2lf\n ",GPA);
 return 0;
 }

@@ -6,7 +6,7 @@ int main_bench(){
 	char s[2000];
 	char m;
 	int i,k;
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	if (strlen(s)==strlen(w))
 	{
 		for (i=0;s[i]!='\0';i++)
@@ -24,17 +24,17 @@ int main_bench(){
 		}
 		if (strcmp(s,w)==0)
 		{
-			printf("YES");
+			my_printf("YES");
 		} 
 		else
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 
 	} 
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

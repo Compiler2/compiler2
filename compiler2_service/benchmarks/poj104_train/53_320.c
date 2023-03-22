@@ -4,11 +4,11 @@ int main_bench()
 {
 int a[300],b[300];
 int i,j,k,m,sum=1,z=1;
-scanf("%d",&k);
+my_scanf("%d",&k);
 b[0]=a[0];
   for (i=0;i<=k-1;i++)
   {
- 	scanf("%d",&a[i]);
+ 	my_scanf("%d",&a[i]);
   }
   
    for (i=1;i<=k-1;i++)
@@ -27,7 +27,7 @@ b[0]=a[0];
    }
     b[0]=a[0];
    for(i=0;i<z-1;i++)
-   printf("%d,",b[i]);
-   printf("%d\n",b[z-1]);
+   my_printf("%d,",b[i]);
+   my_printf("%d\n",b[z-1]);
    }
 

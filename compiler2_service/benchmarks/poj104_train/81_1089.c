@@ -17,14 +17,14 @@ int main_bench()
 	int i,j,t;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	t=f(m,n);
-	if(t==0)printf("error\n");
+	if(t==0)my_printf("error\n");
 	else for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			printf("%d%c",a[i][j],j==4?'\n':' ');
+			my_printf("%d%c",a[i][j],j==4?'\n':' ');
 		}
 	}
 }

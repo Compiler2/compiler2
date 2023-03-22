@@ -6,7 +6,7 @@ int sushu(int n);
 int main_bench()
 {
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
     int first=1,flag=1;
 	for(int j=m;j<=n;j++)
 	{
@@ -14,19 +14,19 @@ int main_bench()
 		{
 			if(first==1)
 			{
-				printf("%d",j);
+				my_printf("%d",j);
 				first=0;
 			}
 			else
 			{
-				printf(",%d",j);
+				my_printf(",%d",j);
 			}
 			flag=0;
 		}
 	}
 	if(flag==1)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

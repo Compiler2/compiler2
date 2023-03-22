@@ -3,11 +3,11 @@
 int f(int x);
 int main_bench(){
 	int w,i;
-    scanf("%d",&w);
+    my_scanf("%d",&w);
     for(i=1;i<=12;i++){
 
         if(f(i)%7+w-1==5||f(i)%7+w-1==12){
-		printf("%d\n",i);
+		my_printf("%d\n",i);
 		}
 	}
 	return 0;

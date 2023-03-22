@@ -8,12 +8,12 @@ int main_bench()
 	int b[100];
 	int c[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	max=0;
 	s=0;
 	c[0]=0;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&(a[i]),&(b[i]));
+		my_scanf("%d%d",&(a[i]),&(b[i]));
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90){
 			c[s]++;
 		}else{
@@ -27,6 +27,6 @@ int main_bench()
 				max=c[s];
 			}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }

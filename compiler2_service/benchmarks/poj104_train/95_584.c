@@ -21,8 +21,8 @@ int main_bench()
 			t[j]=t[j]-32;
 	}
 	if (strcmp(s,t)>0)
-		printf(">\n");
+		my_printf(">\n");
 	else if (strcmp(s,t)<0)
-		printf("<\n");
-	else printf("=\n");
+		my_printf("<\n");
+	else my_printf("=\n");
 }

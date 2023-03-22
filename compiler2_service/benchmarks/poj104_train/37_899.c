@@ -12,7 +12,7 @@ int main_bench()
 	int i, k;
 	char temp;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	
 	for (i = 0; i < n; i++) {
@@ -40,13 +40,13 @@ int main_bench()
 		}
 		for (k = 0; k < 26; k++) {
 			if (seqs == word[k].sequence) {
-				printf("%c\n",(char)k+97);
+				my_printf("%c\n",(char)k+97);
 				yesOrNo = 1;
 				break;
 			}
 		}
 		if (yesOrNo == 0) {
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

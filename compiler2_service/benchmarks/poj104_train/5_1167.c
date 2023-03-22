@@ -3,9 +3,9 @@
 int main_bench(){
 	double a;
 	char b[501],c[501];
-	scanf("%lf\n",&a);
-	scanf("%s\n",b);
-	scanf("%s",c);
+	my_scanf("%lf\n",&a);
+	my_scanf("%s\n",b);
+	my_scanf("%s",c);
 	int i;
 	int t=0;
 	for(i=0;i<strlen(b);i++){
@@ -14,7 +14,7 @@ int main_bench(){
 	for(i=0;i<strlen(c);i++){
 		if(c[i]!='A' && c[i]!='T' && c[i]!='C' && c[i]!='G') t=1;
 	}
-	if(strlen(b)!=strlen(c) || t==1) printf("error");
+	if(strlen(b)!=strlen(c) || t==1) my_printf("error");
 		else{
 
 		int i,sum=0;
@@ -25,8 +25,8 @@ int main_bench(){
 		int m;
 		m=strlen(b);
 		d=sum*1.0/m;
-		if(d>a) printf("yes");
-		else printf("no");
+		if(d>a) my_printf("yes");
+		else my_printf("no");
 	}
 	
 	return 0;

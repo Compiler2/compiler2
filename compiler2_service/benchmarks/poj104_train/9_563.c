@@ -6,12 +6,12 @@ main_bench()
       int b[1000];
       char B[1000][100],C[1000][100],d[1000][100];
       char a[1000];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       y=0;
       k=0;
       for(i=0;i<=n-1;i++)
     {
-      scanf("%s %d",a,&age);
+      my_scanf("%s %d",a,&age);
       if(age<60)
      {
           strcpy(B[y],a);

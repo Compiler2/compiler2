@@ -4,7 +4,7 @@ int main_bench()
 {
     int au(int x,int y);
     int x,y;
-    scanf("%d%d",&x,&y);
+    my_scanf("%d%d",&x,&y);
     au(x,y);
 
 }
@@ -13,11 +13,11 @@ int au(int x,int y)
     int a[100],b[100],i,j,m,n;
     for(i=0;i<x;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(j=0;j<y;j++)
     {
-        scanf("%d",&b[j]);
+        my_scanf("%d",&b[j]);
     }
     for(i=0;i<x;i++)
     {
@@ -49,7 +49,7 @@ int au(int x,int y)
     }
     for(m=0;m<x+y-1;m++)
     {
-        printf("%d ",a[m]);
+        my_printf("%d ",a[m]);
     }
-    printf("%d",a[x+y-1]);
+    my_printf("%d",a[x+y-1]);
 }

@@ -5,10 +5,10 @@ int main_bench()
  int n,p,i,j,end[100],class[100],issue[100],k[100],sum=0;
  char monitor[100],province[100],name[100][20];
  int max;
- scanf("%d\n",&n); 
+ my_scanf("%d\n",&n); 
  
  for(i=0;i<n;i++)
-  scanf("%s %d %d %c %c %d",&name[i],&end[i],&class[i],&monitor[i],&province[i],&issue[i]);
+  my_scanf("%s %d %d %c %c %d",&name[i],&end[i],&class[i],&monitor[i],&province[i],&issue[i]);
  
  for(i=0;i<n;i++)
   k[i]=0;
@@ -34,8 +34,8 @@ int main_bench()
   }
  }
 
-  printf("%s\n",name[p]);
- printf("%d\n%d",max,sum);
+  my_printf("%s\n",name[p]);
+ my_printf("%d\n%d",max,sum);
 
 return 0;
 }

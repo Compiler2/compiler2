@@ -11,5 +11,5 @@ int main_bench(){
             a[strlen(a)-1]='\0';}
     
     }}}
-    printf("%s",a);
+    my_printf("%s",a);
 return 0;}

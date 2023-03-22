@@ -5,11 +5,11 @@ main_bench()
 	char str1[1000],str2[1000];
 	int n,m,i,l;
 	int com(char,char yy[],int);
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	m=strlen(str1);
 	n=strlen(str2);
 	if(m!=n)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0,l=0;i<m;i++)
@@ -23,9 +23,9 @@ main_bench()
 				break;
 		}
 		if(l<m)
-			printf("NO");
+			my_printf("NO");
 		else
-			printf("YES");
+			my_printf("YES");
 	}
 }
 

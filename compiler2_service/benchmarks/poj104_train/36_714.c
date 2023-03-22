@@ -5,13 +5,13 @@ int main_bench()
 	void change(char a[],int n);
 	int n;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	n=strlen(a);
 	change(a,n);
 	change(b,n);
 	if(strcmp(a,b)==0)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 }
 void change(char a[],int n)
 {

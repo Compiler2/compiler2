@@ -29,9 +29,9 @@ int main_bench()
         }
     }
     if(t==-1)
-        printf("<");
+        my_printf("<");
     else if(t==1)
-        printf(">");
-    else printf("=");
+        my_printf(">");
+    else my_printf("=");
     return 0;
 }

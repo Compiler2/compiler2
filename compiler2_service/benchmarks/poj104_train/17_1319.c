@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int i,n,c,d,e,f,g,k,j,l,b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[1000][150],h[1000][150];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		b[i]=strlen(a[i]);
 		e=0;
 		for(j=0;j<b[i];j++)
@@ -59,14 +59,14 @@ int main_bench()
 		}
 		for(j=0;j<b[i];j++)
 		{
-			printf("%c",a[i][j]);
+			my_printf("%c",a[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		for(j=0;j<b[i];j++)
 		{
-			printf("%c",h[i][j]);
+			my_printf("%c",h[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		
 	}	
 	return 0;

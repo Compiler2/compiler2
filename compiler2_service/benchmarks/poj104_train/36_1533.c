@@ -4,10 +4,10 @@ int main_bench()
 {
 	char a[100],b[100],c;
 	int n1,n2,i,j;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	n1=strlen(a);
 	n2=strlen(b);
-	if(n1!=n2) printf("NO");
+	if(n1!=n2) my_printf("NO");
 	else{
 	for(i=0;i<n1-1;i++)
 	{
@@ -20,8 +20,8 @@ int main_bench()
 		}
 		}
 	}
-	if(b[n1-1]==a[n1-1]) printf("YES");
-	else printf("NO");
+	if(b[n1-1]==a[n1-1]) my_printf("YES");
+	else my_printf("NO");
 	}
 	return 0;
 }

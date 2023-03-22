@@ -27,13 +27,13 @@ int main_bench()
 {
 	int flag,n;
 	flag=0;
-	while (scanf("%d",&n)==1) 
+	while (my_scanf("%d",&n)==1) 
 	{
 		if (n<0) 
 		{
 			n=n*(-1);
-			printf("-");
+			my_printf("-");
 		}
-		printf("%d\n",reverse(n));
+		my_printf("%d\n",reverse(n));
 	}
 }

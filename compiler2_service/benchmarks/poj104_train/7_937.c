@@ -16,18 +16,18 @@ int main_bench(){
                              }
                      }
                      if(bar==0&&min==0){
-                             printf("%s",re);
+                             my_printf("%s",re);
                              i=i+len2;
                              min=1;
                      }
                      else{
-                             printf("%c",str[i]);
+                             my_printf("%c",str[i]);
                              i=i+1;
                              bar=0;
                      }
             }
             else{
-                 printf("%c",str[i]);
+                 my_printf("%c",str[i]);
                  i=i+1;
             }
     }

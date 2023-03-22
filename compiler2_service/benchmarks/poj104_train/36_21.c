@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[20],b[20];
 	int i,k=1,t[20]={0},j;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if((strlen(a))!=(strlen(b)))
 		k=0;
 	else 
@@ -33,9 +33,9 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf("YES");
+		my_printf("YES");
 	if(k==0)
-		printf("NO");
+		my_printf("NO");
 }
 		
 

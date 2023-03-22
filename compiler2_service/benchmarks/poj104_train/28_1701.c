@@ -12,10 +12,10 @@ void check(char *ps)
 			if(ss==0)
 			{
 				ss=1;
-				printf("%d",k);
+				my_printf("%d",k);
 			}
 			else
-				printf(",%d",k);
+				my_printf(",%d",k);
 		m=0;
 		k=0;
 		}

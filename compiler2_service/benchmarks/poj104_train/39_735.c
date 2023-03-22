@@ -14,14 +14,14 @@ int main_bench()
    int s;
    int sum[101];
    char maxn[30];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-   {scanf("%s",stu[i].nam);
-   	scanf("%d",&stu[i].sco1);
-   	scanf("%d",&stu[i].sco2);
-   	scanf("%s",stu[i].a);
-   	scanf("%s",stu[i].b);
-   	scanf("%d",&stu[i].num);
+   {my_scanf("%s",stu[i].nam);
+   	my_scanf("%d",&stu[i].sco1);
+   	my_scanf("%d",&stu[i].sco2);
+   	my_scanf("%s",stu[i].a);
+   	my_scanf("%s",stu[i].b);
+   	my_scanf("%d",&stu[i].num);
    	sum[i]=0;
    	if(stu[i].sco1>80&&stu[i].num>=1)
    	sum[i]=sum[i]+8000;
@@ -43,7 +43,7 @@ int main_bench()
   		strcpy(maxn,stu[i].nam);}
   	s=s+sum[i];
   }
-  printf("%s\n",maxn);
-  printf("%d\n",max);
-  printf("%d\n",s);
+  my_printf("%s\n",maxn);
+  my_printf("%d\n",max);
+  my_printf("%d\n",s);
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,n,a[1000],b[1000],emp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	
 	for(i=n-1;i>0;i--)
@@ -23,7 +23,7 @@ int main_bench()
 	{
 		if(b[i]<a[i+1])
 		{
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 		else 
@@ -39,6 +39,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d",a[n-1],b[n-1]);
+	my_printf("%d %d",a[n-1],b[n-1]);
 	return 0;
 }

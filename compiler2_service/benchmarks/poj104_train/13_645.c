@@ -3,13 +3,13 @@
 main_bench()
 {
       int i,j,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[20000];
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&a[i]);
+                      my_scanf("%d",&a[i]);
                       }
-      printf("%d",a[0]);
+      my_printf("%d",a[0]);
       for(i=1;i<n;i++)
       {
                       int k;
@@ -19,7 +19,7 @@ main_bench()
                                       if(a[j]!=a[i]) k++;
                                       else break;
                                       }
-                                      if(k==i) printf(" %d",a[i]);
+                                      if(k==i) my_printf(" %d",a[i]);
                       }
       getchar();getchar();getchar();getchar();getchar();
       } 

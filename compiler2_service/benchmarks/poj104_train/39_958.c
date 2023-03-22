@@ -18,11 +18,11 @@ int main_bench()
 	struct stu st[100];
 	int n,i,max=0;
 	int tot=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{  
-	  scanf("%s",st[i].str0);
-	scanf("%d%d %c %c%d",&st[i].gr1,&st[i].gr2,&st[i].is1,&st[i].is2,&st[i].lun);
+	  my_scanf("%s",st[i].str0);
+	my_scanf("%d%d %c %c%d",&st[i].gr1,&st[i].gr2,&st[i].is1,&st[i].is2,&st[i].lun);
 	st[i].total=0;
 	if(num(st[i])==1)
 		st[i].total+=8000;
@@ -43,7 +43,7 @@ int main_bench()
      for(i=0;i<n;i++)
 	 {
 		 if(st[i].total==max)
-		 {printf("%s\n%d\n%d",st[i].str0,max,tot);
+		 {my_printf("%s\n%d\n%d",st[i].str0,max,tot);
 		 break;
 		 }
 	 }

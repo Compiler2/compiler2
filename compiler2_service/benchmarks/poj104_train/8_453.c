@@ -4,11 +4,11 @@ int a[101],b[101],m,n;
 int input()
 {
 	int i;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=1;i<=m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=1;i<=n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	return(0);
 }
 int pai()
@@ -44,10 +44,10 @@ int print()
 {
 	int i;
 	for(i=1;i<=m;i++)
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	for(i=1;i<n;i++)
-		printf("%d ",b[i]);
-	printf("%d",b[n]);
+		my_printf("%d ",b[i]);
+	my_printf("%d",b[n]);
 	return(0);
 }
 int main_bench()

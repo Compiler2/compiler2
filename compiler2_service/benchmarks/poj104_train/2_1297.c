@@ -5,10 +5,10 @@ int main_bench()
 {char s[999][3][27];
 int m,i,j,k,Nn[27],ctrl;
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<=m;k++){
-		scanf("%s",s[k][1]);
-     	scanf("%s",s[k][2]);
+		my_scanf("%s",s[k][1]);
+     	my_scanf("%s",s[k][2]);
 	}
 
 	for(i=1;i<=26;i++)
@@ -57,15 +57,15 @@ int Nmax=0,zimuxu;
 			if (Nn[i]>Nmax){Nmax=Nn[i];zimuxu=i;}
 		}
 
-		printf("%c\n",'A'+zimuxu-1);
-		printf("%d\n",Nmax);
+		my_printf("%c\n",'A'+zimuxu-1);
+		my_printf("%d\n",Nmax);
 
 		for(j=1;j<=m;j++){
 			ctrl=0;
 			for(k=0;s[j][2][k]!='\0';k++){
 				if(s[j][2][k]=='A'+zimuxu-1)ctrl++;
 			}
-			if(ctrl!=0)printf("%s\n",s[j][1]);
+			if(ctrl!=0)my_printf("%s\n",s[j][1]);
 		}
 return 0;
 	}

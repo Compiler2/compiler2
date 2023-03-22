@@ -4,15 +4,15 @@ int main_bench()
 {
     int n, i, j, badall, all;
     int total[100]={60};
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 	j=0;
     for(i=0;i<n;i++)
     {
-        scanf("%d", &badall);
+        my_scanf("%d", &badall);
 		if(badall!=0)
 		{
         for(j=0;j<badall;j++)
-            scanf("%d", &total[j]);
+            my_scanf("%d", &total[j]);
         for(j=badall-1;j>=0;j--)
         {
             if(total[j]+j*3<=60)
@@ -25,7 +25,7 @@ int main_bench()
         }
 		}
 		else all = 60;
-        printf("%d\n", all);
+        my_printf("%d\n", all);
     }
     return 0;
 }

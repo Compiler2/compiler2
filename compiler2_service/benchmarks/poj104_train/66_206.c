@@ -7,7 +7,7 @@ int main_bench()
 	int total1=0,total2=0,total3=0,total;
 	int i,j,a;
 
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	a=(y-1)%400;
 	for(j=1;j<=a;j++)
 	{
@@ -31,31 +31,31 @@ int main_bench()
 	total=total1+total2+total3;
 	if(total%7==1)
 	{
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	}
 	else if(total%7==2)
 	{
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}
 	else if(total%7==3)
 	{
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}
     else if(total%7==4)
 	{
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}
 	else if(total%7==5)
 	{
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}
 	else if(total%7==6)
 	{
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}
 	else if(total%7==7)
 	{
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 
 	return 0;

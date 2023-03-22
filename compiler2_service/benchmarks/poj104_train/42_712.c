@@ -2,17 +2,17 @@
 
 int main_bench()
 {int n,a[100000],k,i,j;
- scanf("%d",&n);
+ my_scanf("%d",&n);
   for(i=0;i<n;i++)
-   scanf("%d",&a[i]);
-  scanf("%d",&k);
+   my_scanf("%d",&a[i]);
+  my_scanf("%d",&k);
    for(i=0;i<n;i++)
    if(a[i]==k) a[i]=65500;
     for(i=0;i<n;i++)
     if(a[i]!=65500)
-   {printf("%d",a[i]);break;}
+   {my_printf("%d",a[i]);break;}
     for(j=i+1;j<n;j++)
     if(a[j]!=65500)
-    printf(" %d",a[j]);
+    my_printf(" %d",a[j]);
    return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,year=0,month=0,j,days;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(a/4==0)
 		year=a-1;
 	else if(a/4!=0&&a/100==0)
@@ -42,18 +42,18 @@ int main_bench()
 	}
 	days=year+month+c;
 	if(days%7==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	if(days%7==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	if(days%7==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	if(days%7==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	if(days%7==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	if(days%7==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	if(days%7==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	return 0;
 }

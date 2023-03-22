@@ -2,30 +2,30 @@
 
 int main_bench(){
 int n,i,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char a[n][1000];
 for(i=0;i<n;i++){
-   scanf("%s",a[i]);
+   my_scanf("%s",a[i]);
    }
 for(i=0;i<n;i++){
     for(j=0;a[i][j]!='\0';j++){
        if(a[i][j]=='A'){
-          printf("T");
+          my_printf("T");
           }
        if(a[i][j]=='C'){
-          printf("G");
+          my_printf("G");
           }
        if(a[i][j]=='G'){
-          printf("C");
+          my_printf("C");
           }
        if(a[i][j]=='T'){
-          printf("A");
+          my_printf("A");
           }
        }
     if(a[i][j]=='\0')
-    printf("\n");
+    my_printf("\n");
     }
-scanf("%d",&i);
+my_scanf("%d",&i);
 return 0;
 }
 

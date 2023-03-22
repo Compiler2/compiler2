@@ -6,10 +6,10 @@ int main_bench()
 	int n,m,i,j,temp;
 	int x[100]={0};
 	char c;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%c",&x[i],&c);
+		my_scanf("%d%c",&x[i],&c);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -20,10 +20,10 @@ int main_bench()
 		}
 		x[0]=temp;
 	}
-	printf("%d",x[0]);
+	my_printf("%d",x[0]);
 	for(i=1;i<n;i++)
 	{
-		printf(" %d",x[i]);
+		my_printf(" %d",x[i]);
 	}
 	putchar('\n');
 

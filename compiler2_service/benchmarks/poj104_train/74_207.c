@@ -25,17 +25,17 @@ int huiwen(int p)
 main_bench()
 {
 	int n,m;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(;m<=n;m++)
 	{	
 		if(sushu(m)&&huiwen(m))
 			{
-				printf("%d",m);
+				my_printf("%d",m);
 				break;
 			}
 	}
-	if(m>n)printf("no");
+	if(m>n)my_printf("no");
 	m++;
 	for(;m<=n;m++)
-		if(sushu(m)&&huiwen(m))printf(",%d",m);
+		if(sushu(m)&&huiwen(m))my_printf(",%d",m);
 }

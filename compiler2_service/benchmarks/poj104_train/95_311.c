@@ -23,16 +23,16 @@ int main_bench()
 		c=b;
 	for(i=0;i<c;i++){
 		if(s[i]>m[i]){
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if(s[i]<m[i]){
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		k++;
 	}
 	if(k==c)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

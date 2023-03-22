@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int m,a,k,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	if(m==6)
-		printf("3 3\n");
+		my_printf("3 3\n");
 	else
 	{
 		for(k=1;4*k+2<=m;k++)
@@ -29,7 +29,7 @@ int main_bench()
 				j++;
 			}
 
-			if(i*i>a&&j*j>b) printf("%d %d\n",a,b);
+			if(i*i>a&&j*j>b) my_printf("%d %d\n",a,b);
 		}
 	}
 

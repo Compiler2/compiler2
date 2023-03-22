@@ -5,7 +5,7 @@ int main_bench()
 {
 	char a[50],b[50];
 	int num1[52]={0},num2[52]={0},len1,len2,l,m,i;
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	for(i=0;i<=len1-1;i++)
@@ -29,9 +29,9 @@ int main_bench()
 	while(num1[i]==num2[i]&&i<=51)
 		i++;
 	if(i==52)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }
 	
 		

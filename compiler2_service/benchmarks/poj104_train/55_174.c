@@ -9,7 +9,7 @@ int main_bench()
 	int i,k;
 	long sum=0;
 	int q=0,w[64];
-	scanf("%d %s %d",&a,c,&b);
+	my_scanf("%d %s %d",&a,c,&b);
 	for(i=0;c[i];i++)
 	{if(c[i]>='0'&&c[i]<='9')
 	    k=c[i]-'0';
@@ -19,7 +19,7 @@ int main_bench()
 		k=c[i]-'a'+10;
 	sum=sum*a+k;}
     if(sum==0)
-		printf("0\n");
+		my_printf("0\n");
 	if(sum!=0)
 	{while(sum>0)
 	{w[q]=sum%b;
@@ -29,7 +29,7 @@ int main_bench()
 	{r[q-1-i]=zhuan[w[i]];
 	}
 	for(i=0;i<q;i++)
-		printf("%c",r[i]);}
+		my_printf("%c",r[i]);}
 	
     return 0;
 }

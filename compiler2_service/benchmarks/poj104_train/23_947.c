@@ -19,6 +19,6 @@ int main_bench()
             *r++=*(q+i);
         p=q;
     }
-    for (i=0;i<len;i++) printf("%c",*(ans+i));
+    for (i=0;i<len;i++) my_printf("%c",*(ans+i));
     return 0;
 }

@@ -18,7 +18,7 @@ main_bench()
 {
 	char s[1000];
 	int i,j,t,a[500],count=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	i=0;
 	while(s[i]!='\0')
 	{
@@ -40,7 +40,7 @@ main_bench()
 		}
 	}
 	if(count==1)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(i=0;i<count-1;i++)
@@ -54,8 +54,8 @@ main_bench()
 			i--;
 		}
 		if(i<0)
-			printf("No\n");
+			my_printf("No\n");
 		else
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 	}
 }

@@ -15,11 +15,11 @@ int main_bench()
                 if((47<s[i][j]&&s[i][j]<58)||(64<s[i][j]&&s[i][j]<91)||(96<s[i][j]&&s[i][j]<123)||s[i][j]=='_')   
                     num++;
             if(num==strlen(s[i]))
-                printf("1\n");
+                my_printf("1\n");
             else
-                printf("0\n");
+                my_printf("0\n");
         }
         else
-            printf("0\n");    
+            my_printf("0\n");    
     } 
 }

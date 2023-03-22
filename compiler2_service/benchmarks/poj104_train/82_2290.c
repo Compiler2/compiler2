@@ -6,10 +6,10 @@ int main_bench()
 	int n,i,k=0;
 	int shou,shu,max;
 	int sz[1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&shou,&shu);
+		my_scanf("%d%d",&shou,&shu);
 		if(normal(shou,shu))
 		{
 			sz[k]++;
@@ -27,7 +27,7 @@ int main_bench()
 			max=sz[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }
 int normal(int shou,int shu)

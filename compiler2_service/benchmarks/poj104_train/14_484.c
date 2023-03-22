@@ -11,17 +11,17 @@
    struct Stu stu[5];
    struct Stu temp;
    int i,j,n,m,k;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    if(n>=3)
   {
    for(i=0;i<3;i++)
    {
-     scanf("%d%d%d",&stu[i].num,&stu[i].sco[0],&stu[i].sco[1]);
+     my_scanf("%d%d%d",&stu[i].num,&stu[i].sco[0],&stu[i].sco[1]);
      stu[i].sum=stu[i].sco[0]+stu[i].sco[1];
     }
     for(k=1;k<=n-3;k++)
      {
-      scanf("%d%d%d",&stu[3].num,&stu[3].sco[0],&stu[3].sco[1]);
+      my_scanf("%d%d%d",&stu[3].num,&stu[3].sco[0],&stu[3].sco[1]);
       stu[3].sum=stu[3].sco[0]+stu[3].sco[1];
       m=0;
       for(j=1;j<=2;j++)
@@ -50,6 +50,6 @@
      stu[j]=temp;
      }
     for(i=0;i<3;i++)
-    printf("%d %d\n",stu[i].num,stu[i].sum);
+    my_printf("%d %d\n",stu[i].num,stu[i].sum);
     return 0;
 }

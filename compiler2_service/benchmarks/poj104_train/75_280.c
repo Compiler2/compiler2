@@ -6,7 +6,7 @@ int main_bench()
 	int x[1000]={0},y[1000]={0};
 	int t[1000]={0};
 	char a;
-	scanf("%c",&a);
+	my_scanf("%c",&a);
 	while(a!='\n')
 	{
 		if(a!=',')
@@ -14,9 +14,9 @@ int main_bench()
 		 x[i]=x[i]*10+a-'0';
 		}
 		else i++;
-		scanf("%c",&a);
+		my_scanf("%c",&a);
 	}
-	scanf("%c",&a);
+	my_scanf("%c",&a);
 	i=0;
 	while(a!='\n')
 	{
@@ -25,9 +25,9 @@ int main_bench()
 		 y[i]=y[i]*10+a-'0';
 		}
 		else i++;
-		scanf("%c",&a);
+		my_scanf("%c",&a);
 	}
-	printf("%d ",i+1);
+	my_printf("%d ",i+1);
 	k=i;
 	for(j=0;j<=k;j++)
 		{
@@ -41,6 +41,6 @@ int main_bench()
 	{
       if(t[j]>t[i]) i=j;
 	}
-	printf("%d\n",t[i]);
+	my_printf("%d\n",t[i]);
 
 }

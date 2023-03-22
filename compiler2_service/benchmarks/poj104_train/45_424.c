@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[50],w[50],t[50]={""};
     int i,j,m,n,p;
-    scanf("%s %s",s,w);
+    my_scanf("%s %s",s,w);
     m=strlen(s);
     n=strlen(w);
     for(i=0;i<n;i++)
@@ -17,5 +17,5 @@ int main_bench()
     		break;
     	}
     }
-    printf("%d",p);
+    my_printf("%d",p);
 }

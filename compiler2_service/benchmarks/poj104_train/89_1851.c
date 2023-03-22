@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n,a[20000]={0},b[20000]={0},q,j,mark[20000]={0},m,s,temp[20000],i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==64)
 	{
-		printf("22");
+		my_printf("22");
 		goto end;
 	}
 	for(i=0;i<20000;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		if(a[i]==0&&b[i]==0)
 			break;
 	}
@@ -43,12 +43,12 @@ int main_bench()
 		}
 		if(s>=n)
 		{
-			printf("%d",temp[i]);
+			my_printf("%d",temp[i]);
 			goto end;
 		}
 	}
 	if(i>=q)
-		printf("NOT FOUND");
+		my_printf("NOT FOUND");
 end:;
 }
 

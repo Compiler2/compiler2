@@ -15,7 +15,7 @@ int main_bench()
         }
         else k++;
     
-    for(i=max_end-max_len;i<max_end;i++) printf("%c",s[i]);
-    printf("\n");
-    for(i=min_end-min_len;i<min_end;i++) printf("%c",s[i]);
+    for(i=max_end-max_len;i<max_end;i++) my_printf("%c",s[i]);
+    my_printf("\n");
+    for(i=min_end-min_len;i<min_end;i++) my_printf("%c",s[i]);
 }

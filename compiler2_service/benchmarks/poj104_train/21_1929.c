@@ -6,10 +6,10 @@ int main_bench()
 	double aver,temp2;
 	double dis[300];
 	int a[300];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -58,10 +58,10 @@ if(count>=2)
 {
 	for(i=n-1;i>=n-count+1;i--)
 	{
-		printf("%d,", a[i]);
+		my_printf("%d,", a[i]);
 	}
-        printf("%d", a[n-count]);
+        my_printf("%d", a[n-count]);
 }
 else
-	printf("%d", a[n-count]);
+	my_printf("%d", a[n-count]);
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int ts,rnd,frnd,year,qt,month,day;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	rnd=((year-1)/4-(year-1)/100+(year-1)/400)*(366%7);
     frnd=(year-1-((year-1)/4-(year-1)/100+(year-1)/400))*(365%7);
 	if((year%400)==0||((year%4)==0&&(year%100)!=0))
@@ -40,12 +40,12 @@ int main_bench()
 	}
 	ts=qt+rnd+frnd+day;
 
-	if(ts%7==1){printf("Mon.");}
-	if(ts%7==2){printf("Tue.");}
-	if(ts%7==3){printf("Wed.");}
-	if(ts%7==4){printf("Thu.");}
-	if(ts%7==5){printf("Fri.");}
-	if(ts%7==6){printf("Sat.");}
-	if(ts%7==0){printf("Sun.");}
+	if(ts%7==1){my_printf("Mon.");}
+	if(ts%7==2){my_printf("Tue.");}
+	if(ts%7==3){my_printf("Wed.");}
+	if(ts%7==4){my_printf("Thu.");}
+	if(ts%7==5){my_printf("Fri.");}
+	if(ts%7==6){my_printf("Sat.");}
+	if(ts%7==0){my_printf("Sun.");}
 	return 0;
 }

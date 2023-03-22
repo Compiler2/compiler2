@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n, i, j, m, b, p, q;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int a[1000][1000], s;
 	for (i=0;i<n;i++)
 	{
 		for (j=0;j<n;j++)
 		{
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 		}
 	}
 	for (i=0;i<(n/2);i++)
@@ -38,6 +38,6 @@ int main_bench()
 		}
 	}
 	s=(p-m+1)*(q-b+1)-(2*(p+q-m-b));
-	printf("%d\n", s);
+	my_printf("%d\n", s);
 	return 0;
 }

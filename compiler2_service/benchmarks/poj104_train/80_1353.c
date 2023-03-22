@@ -3,7 +3,7 @@
 int main_bench()
 {
 int syear,smonth,sday,eyear,emonth,eday;
-scanf("%d %d %d\n%d %d %d",&syear,&smonth,&sday,&eyear,&emonth,&eday);
+my_scanf("%d %d %d\n%d %d %d",&syear,&smonth,&sday,&eyear,&emonth,&eday);
 int y,s1,leapy,s2=0,s3=0,s;
 s1=365*(eyear-syear);
 for(y=syear,leapy=0;y<eyear;y++){
@@ -49,7 +49,7 @@ s3=s3+eday;
 		s3=s3+1;
 	}
 s=s1+s3-s2;
-printf("%d\n",s);
+my_printf("%d\n",s);
 return 0;
 }
 

@@ -21,11 +21,11 @@ void tran(char s[])
 int main_bench()
 {
 	char a[50],b[50];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	tran(a);
 	tran(b);
 	if (strcmp(a,b)==0)
-		printf("YES\n");
-	else printf("NO\n");
+		my_printf("YES\n");
+	else my_printf("NO\n");
 }
 

@@ -2,12 +2,12 @@
 
 int main_bench() {
 	int n,a,i,p,q,result;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 
 		if((a==1)||(a==2)){
-			printf("1\n");
+			my_printf("1\n");
 		}
 
 		else{
@@ -18,7 +18,7 @@ int main_bench() {
 				p=q;
 				q=result;
 			}
-			printf("%d\n",result);
+			my_printf("%d\n",result);
 		}
 
 	}

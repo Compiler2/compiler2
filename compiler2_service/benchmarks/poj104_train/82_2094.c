@@ -3,10 +3,10 @@
 int main_bench()
 {
     int i,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int shousuo[101],shuzhang[101],count,Max,a[101];
     for(i=0;i<n;i++){
-        scanf("%d %d",&shousuo[i],&shuzhang[i]);
+        my_scanf("%d %d",&shousuo[i],&shuzhang[i]);
         if(shousuo[i]>=90&&shousuo[i]<=140&&60<=shuzhang[i]&&90>=shuzhang[i]){
             a[i+1]=1;
         }else{a[i+1]=0;}
@@ -25,7 +25,7 @@ int main_bench()
             }
         
     }
-    printf("%d",Max);
+    my_printf("%d",Max);
     return 0;
 }
    

@@ -17,17 +17,17 @@ int main_bench()
 		else{
 			temp[m]='\0';
 			if(strcmp(temp,word)==0)
-				printf("%s ",exchange);
+				my_printf("%s ",exchange);
 			else
-				printf("%s ",temp);
+				my_printf("%s ",temp);
 			m=0;
 		}
 		if(i==n-1){
 			temp[m]='\0';
 			if(strcmp(temp,word)==0)
-				printf("%s\n",exchange);
+				my_printf("%s\n",exchange);
 			else
-				printf("%s\n",temp);
+				my_printf("%s\n",temp);
 			m=0;
 		}
 

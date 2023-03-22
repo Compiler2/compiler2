@@ -25,11 +25,11 @@ int main_bench()
 
 	int n[6],newn[6];
 	for(int i=0;i<6;i++)
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	for(int i=0;i<6;i++)
 	{
 		newn[i]=reverse(n[i]);
-		printf("%d\n",newn[i]);
+		my_printf("%d\n",newn[i]);
 	}
 	return 0;
 }

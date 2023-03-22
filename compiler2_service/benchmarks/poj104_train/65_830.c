@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	int A,B;
 	int Aw=0,Bw=0;
 	for(i=0;i<n;i++){
-		scanf("%d %d",&A,&B);
+		my_scanf("%d %d",&A,&B);
 		if(A==0&&B==1){
 	    	Aw += 1;
 		}else if(A==0&&B==2){
@@ -23,11 +23,11 @@ int main_bench(){
 		}
 	}
 	if(Aw>Bw){
-		printf("A\n");
+		my_printf("A\n");
 	}else if(Aw<Bw){
-		printf("B\n");
+		my_printf("B\n");
 	}else if(Aw=Bw){
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}
 	return 0;
 }

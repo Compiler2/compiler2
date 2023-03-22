@@ -18,8 +18,8 @@ int find(char *a, int n)
 			while(k>=j);
 			if(t==n/2||t==n/2+1)
 			{
-				for(j=i;j<=i+n-1;j++) printf("%c",a[j]);
-				printf("\n");
+				for(j=i;j<=i+n-1;j++) my_printf("%c",a[j]);
+				my_printf("\n");
 			}
 		}
 	}

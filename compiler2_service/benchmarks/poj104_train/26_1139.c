@@ -9,7 +9,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(a[i]!=' ')
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		else
 		{
 			do
@@ -18,7 +18,7 @@ int main_bench()
 			}
 			while(a[i]==' ');
 			i=i-1;
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 return 0;

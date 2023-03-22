@@ -14,11 +14,11 @@ int main_bench()
 		else (str[i][j])=(str[i][j]);
 	}
 	if(strcmp(str[0],str[1])>0)
-		printf(">");
+		my_printf(">");
 	else if(strcmp(str[0],str[1])<0)
-		printf("<");
+		my_printf("<");
 	else if(strcmp(str[0],str[1])==0)
-		printf("=");
+		my_printf("=");
 	
 }
 

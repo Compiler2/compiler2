@@ -4,9 +4,9 @@ int main_bench()  {
 	int result=0,p=0;
 	int num,n;
 	int i=1;
-       scanf("%d", &n);
+       my_scanf("%d", &n);
 	while(i<=n&&n<=100){
-		scanf("%d", &num);
+		my_scanf("%d", &num);
 	      if(i == 1){
 			 result = num;			
 		} 
@@ -19,6 +19,6 @@ int main_bench()  {
 	      }
 		   i++;
 	}
-	printf("%d\n%d", result,p);
+	my_printf("%d\n%d", result,p);
 	return 0;
 }

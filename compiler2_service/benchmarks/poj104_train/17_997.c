@@ -26,17 +26,17 @@ int main_bench()
 
             }
         }
-        puts(a);printf("\n");
+        puts(a);my_printf("\n");
         for(i=0;i<n;i++)
         {
             if(b[i]==0)
-                printf(" ");
+                my_printf(" ");
             else if(b[i]==1)
-                printf("$");
-            else printf("?");
+                my_printf("$");
+            else my_printf("?");
         }
 
-        printf("\n");
+        my_printf("\n");
 
 
 

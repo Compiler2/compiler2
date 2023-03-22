@@ -26,9 +26,9 @@ int main_bench()
 		}
 	}
 	for(i=pl;i<pl+lest;i++)
-		printf("%c",a[i]);
-	printf("\n");
+		my_printf("%c",a[i]);
+	my_printf("\n");
 	for(i=ps;i<ps+sest;i++)
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	return 0;
 }

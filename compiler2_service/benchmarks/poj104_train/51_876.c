@@ -7,8 +7,8 @@ int main_bench() {
 	char s[1000];
 	char str[500][500];
 	char result[500][500];
-	scanf("%d", &n);
-	scanf("%s", s);
+	my_scanf("%d", &n);
+	my_scanf("%s", s);
 	int i, j, k;
 	int len = strlen(s) - n + 1;
 	for (i = 0; i < len; i++) {
@@ -40,10 +40,10 @@ int main_bench() {
 		}
 	}
 	if (max <= 1) {
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
-	printf("%d\n", max);
+	my_printf("%d\n", max);
 	int num = 0;
 	count = 1;
 	for (i = 1; i < len; i++) {
@@ -69,7 +69,7 @@ int main_bench() {
 		}
 	}
 for (i = 0; i < num; i++) {
-		printf("%s\n", result[i]);
+		my_printf("%s\n", result[i]);
 	}
 
 	return 0;

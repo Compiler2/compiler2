@@ -4,16 +4,16 @@
 int main_bench()
 {
     int n,i,grade;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     float credit[10],a=0,b=0,GPA;
     for(i=1;i<=n;i++)
     { 
-                    scanf("%f",&credit[i]);
+                    my_scanf("%f",&credit[i]);
                     a+=credit[i];
     }
     for(i=1;i<=n;i++)
     {
-    scanf("%d",&grade);
+    my_scanf("%d",&grade);
     if(90<=grade&&grade<=100)
     b+=credit[i]*4.0;
     else if(85<=grade&&grade<=89)
@@ -36,6 +36,6 @@ int main_bench()
     b+=credit[i]*0;
     }
     GPA=b/a;
-    printf("%.2f",GPA);
+    my_printf("%.2f",GPA);
 }
     

@@ -29,5 +29,5 @@ int main_bench()
 			
 		}
 	}
-	printf("%s",org);
+	my_printf("%s",org);
 }

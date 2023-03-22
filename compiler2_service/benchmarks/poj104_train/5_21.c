@@ -4,8 +4,8 @@ int main_bench(){
 	int i,k=0,la,lb;
 	double n,s=0;
 	char a[500],b[500];
-	scanf("%lf",&n);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",a,b);
 	la=strlen(a),lb=strlen(b);
 	if(la!=lb){
 			k=2;
@@ -31,9 +31,9 @@ int main_bench(){
 		}
 	}
 	if(k==1)
-		printf("no");
-	if(k==0) printf("yes");
-	if(k==2) printf("error");
+		my_printf("no");
+	if(k==0) my_printf("yes");
+	if(k==2) my_printf("error");
 	return 0;
 }
 	

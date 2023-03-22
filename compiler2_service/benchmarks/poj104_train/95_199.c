@@ -21,9 +21,9 @@ int main_bench()
 		}
 	}
 	if (strcmp(str1,str2)>0)
-	printf(">\n");
+	my_printf(">\n");
 	if (strcmp(str1,str2)==0)
-	printf("=\n");
+	my_printf("=\n");
 	if (strcmp(str1,str2)<0)
-	printf("<\n");
+	my_printf("<\n");
 }

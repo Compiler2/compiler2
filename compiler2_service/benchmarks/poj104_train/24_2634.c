@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,k;
 	char a[1000][50];
 	int b[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		b[i]=strlen(a[i]);
 	}
 	for(i=1;i<n;i++)
@@ -26,11 +26,11 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		k=strlen(a[i]);
-		if(k==b[n-1]){printf("%s\n",a[i]);break;}
+		if(k==b[n-1]){my_printf("%s\n",a[i]);break;}
 	}
 	for(i=0;i<n;i++)
 	{
 		k=strlen(a[i]);
-		if(k==b[0]){printf("%s",a[i]);break;}
+		if(k==b[0]){my_printf("%s",a[i]);break;}
 	}
 }

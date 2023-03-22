@@ -4,9 +4,9 @@ int mark[300];
 int main_bench(){
 	int n,i,sz[300];
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++){
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 	}
 
 for(i=0;i<n;i++){
@@ -19,10 +19,10 @@ for(i=0;i<n;i++){
 	}
 	
 }
-printf("%d",sz[0]);
+my_printf("%d",sz[0]);
 for(i=1;i<n;i++){
 	if(mark[i]==0){
-		printf(",%d",sz[i]);
+		my_printf(",%d",sz[i]);
 	}
 }
 return 0;

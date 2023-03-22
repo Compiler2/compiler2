@@ -6,8 +6,8 @@ int main_bench()
 	int len1,len2;
 	int i,j,temp,num=0;
 	int a[1000],b[1000];
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 	for(i=0;i<len1;i++)
@@ -39,15 +39,15 @@ int main_bench()
 	{
 		if(len1!=len2)
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 		if(a[i]==b[i])
 			num++;
 	}
 	if(num==len1)
-		printf("YES");
+		my_printf("YES");
 	if(num!=len1&&num!=0)
-	    printf("NO");
+	    my_printf("NO");
 	return 0;
 }

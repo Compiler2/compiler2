@@ -5,8 +5,8 @@ int main_bench()
     char x0[4000],y0[4000];
     int x[1000]={0},y[1000]={0},people,i,j=0,num[1000]={0},nummax=0,c=0;
     int min=2000,max=0;
-    scanf("%s",x0);
-    scanf("%s",y0);
+    my_scanf("%s",x0);
+    my_scanf("%s",y0);
     for(i=0;i<=(strlen(x0)-1);i++)
     {
      if((x0[i]>='0')&&(x0[i]<='9'))
@@ -59,5 +59,5 @@ int main_bench()
      if(num[i]>nummax)
       nummax=num[i];
     }
-    printf("%d %d",people,nummax);
+    my_printf("%d %d",people,nummax);
 }

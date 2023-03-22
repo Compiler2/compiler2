@@ -11,8 +11,8 @@ int main_bench(){
 	for(i=0;i<l;i++){
 		if(b[i]>=97)b[i]=b[i]-32;
 	}
-	if(strcmp(a,b)>0)printf(">");
-	if(strcmp(a,b)<0)printf("<");
-	if(strcmp(a,b)==0) printf("=");
+	if(strcmp(a,b)>0)my_printf(">");
+	if(strcmp(a,b)<0)my_printf("<");
+	if(strcmp(a,b)==0) my_printf("=");
 	return 0;
 }

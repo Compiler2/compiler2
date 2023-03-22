@@ -4,7 +4,7 @@ int main_bench()
 {
 	void a(int b,int n);
 	int c,d;
-	scanf("%d",&c);
+	my_scanf("%d",&c);
 	a(c,5);
 }
 
@@ -12,7 +12,7 @@ int main_bench()
 void a(int b,int n)
 {
 	if (n==1)
-	{if(b%10!=0) printf("%d",b%10);
+	{if(b%10!=0) my_printf("%d",b%10);
 	}
-	else {if(b%10!=0) {printf("%d",b%10);}b=b/10;a(b,n-1);}
+	else {if(b%10!=0) {my_printf("%d",b%10);}b=b/10;a(b,n-1);}
 }

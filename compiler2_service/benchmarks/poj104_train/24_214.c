@@ -44,16 +44,16 @@ int main_bench()
 		{
 		
 		for(j=a[i]-b[i];j<a[i];j++)
-			printf("%c",c[j]);
-		printf("\n");
+			my_printf("%c",c[j]);
+		my_printf("\n");
 		break;}
 	for(i=0;i<=k;i++)
 		if(b[i]==MIN)
 		{
 		
 		for(j=a[i]-b[i];j<a[i];j++)
-			printf("%c",c[j]);
-		printf("\n");
+			my_printf("%c",c[j]);
+		my_printf("\n");
 		break;
 		}
 }

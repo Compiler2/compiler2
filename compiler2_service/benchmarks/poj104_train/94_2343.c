@@ -5,9 +5,9 @@ int N;
 int i=0;
 int sz[500];
 int js[500];
-scanf("%d",&N);
+my_scanf("%d",&N);
 for(int m=0;m<N;m++){
-   scanf("%d",&(sz[m]));
+   my_scanf("%d",&(sz[m]));
    if(sz[m]%2!=0){
        js[i]=sz[m];
        i++;
@@ -24,8 +24,8 @@ for(int n=1;n<=i;n++){
     }
 }
 for(int a=0;a<i;a++){
-    if(a<i-1){printf("%d,",js[a]);}
-    if(a==i-1){printf("%d",js[a]);}
+    if(a<i-1){my_printf("%d,",js[a]);}
+    if(a==i-1){my_printf("%d",js[a]);}
 }
 return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,p,q;
 	char s[51];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	   scanf("%s",s);
+	   my_scanf("%s",s);
 	   q=0;
 	   for(p=0;s[p]!='\0';p++){
 		   q++;
@@ -17,7 +17,7 @@ int main_bench(){
 	   }else if(s[q-2]=='l'&&s[q-1]=='y'){
 		   s[q-2]='\0';
 	   }
-	   printf("%s\n",s);
+	   my_printf("%s\n",s);
 	   }
 	return 0;
 }

@@ -28,7 +28,7 @@ main_bench()
       int sushu(int i);
       int n,i,a,b,x;
       x=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
       for(i=2;i<=n-2;i++)
       {
@@ -38,12 +38,12 @@ main_bench()
                        
                         if(a==1&&b==1)
                         {
-                       printf("%d %d\n",i,i+2);
+                       my_printf("%d %d\n",i,i+2);
                        x=1;
                        }
                        }
                        if(x==0)
-                       printf("empty");
+                       my_printf("empty");
                        
                        
                        }

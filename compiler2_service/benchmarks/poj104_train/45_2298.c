@@ -5,14 +5,14 @@ int main_bench()
 {
 	char w1[50]={0},w2[50]={0};
 	int i=0,n,k,flag;
-	scanf("%s%s",w1,w2);
+	my_scanf("%s%s",w1,w2);
 	n=strlen(w1);
 	for(i=0;i<50;i++)
 	{
 		if(n==1)
 		{	if(w2[i]==w1[0])
 			{
-			  printf("%d",i);
+			  my_printf("%d",i);
 			  goto end;
 			}
 		}
@@ -29,7 +29,7 @@ int main_bench()
 			}
 			if(flag==0)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				goto end;
 			}
 		}

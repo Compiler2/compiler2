@@ -4,7 +4,7 @@
 int main_bench()
 {
   int m,i,j,flag1,flag2;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for (i=3;i<=m/2;i+=2)
   {
       flag1=1;
@@ -20,7 +20,7 @@ int main_bench()
           {flag2=0;break;}
       }
       if ((flag1==1)&&(flag2==1))
-      printf("%d %d\n",i,m-i);
+      my_printf("%d %d\n",i,m-i);
   }
 	
   return 0;

@@ -6,20 +6,20 @@ int array[5][5],i,j,n,m;
 int exchange(int array[5][5],int n,int m);
 for(i=0;i<5;i++){
    for(j=0;j<5;j++){
-      scanf("%d",&array[i][j]);
+      my_scanf("%d",&array[i][j]);
       }
    }
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 if(exchange(array,n,m)){
              for(i=0;i<5;i++){
                 for(j=0;j<4;j++){
-                   printf("%d ",array[i][j]);
+                   my_printf("%d ",array[i][j]);
                    }
-                   printf("%d",array[i][4]); 
-                printf("\n");
+                   my_printf("%d",array[i][4]); 
+                my_printf("\n");
                 } 
              }else{
-                   printf("error");
+                   my_printf("error");
                    }
 return 0;
 }

@@ -7,7 +7,7 @@ void reverse(int num);
 
 for(i=0;i<6;i++)
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	reverse(n);
 }
 
@@ -19,7 +19,7 @@ void reverse(int num)
 
     if(num<0)
 	{
-		printf("-");
+		my_printf("-");
 		num=num*-1;
 		k=0;
 			while(num/10!=0)
@@ -30,11 +30,11 @@ void reverse(int num)
 				}
 				if(k!=0)
 				{
-				printf("%d",num%10);
+				my_printf("%d",num%10);
 				}	num=num/10;
 			}
 			if(num<10&&num>0)
-			{printf("%d\n",num);}
+			{my_printf("%d\n",num);}
 	}else if(num>0)
 	{
        k=0;
@@ -46,16 +46,16 @@ void reverse(int num)
 				}
 				if(k!=0)
 				{
-				printf("%d",num%10);
+				my_printf("%d",num%10);
 				
 				}num=num/10;
 			}
 		if(num<10&&num>0)
-			{printf("%d\n",num);}
+			{my_printf("%d\n",num);}
 	
 	}else if(num==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
 
 }

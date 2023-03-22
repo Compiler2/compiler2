@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,k,a[400];
 	for(i=0;i<400;i++)
 		a[i]=10000;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 	{
 		if(a[i]!=10000)
@@ -22,7 +22,7 @@ int main_bench()
 		if(a[i]!=10000)h++;
 	for(i=0;i<n;i++)
 	{
-		if(a[i]!=10000){printf("%d",a[i]);h--;if(h)printf(",");}	
+		if(a[i]!=10000){my_printf("%d",a[i]);h--;if(h)my_printf(",");}	
 	}
 	return 0;
 }

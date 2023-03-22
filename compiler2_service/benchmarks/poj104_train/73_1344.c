@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(lie=0;lie<5;lie++)
 		{
-			scanf("%d",&sz[hang][lie]);
+			my_scanf("%d",&sz[hang][lie]);
 		}
 	}
 	for(i=0,p=1;i<5;i++)
@@ -25,13 +25,13 @@ int main_bench()
 		
 			if(e<=sz[0][n]&&e<=sz[1][n]&&e<=sz[2][n]&&e<=sz[3][n]&&e<=sz[4][n])
 			{
-				printf("%d %d %d\n",i+1,n+1,e);
+				my_printf("%d %d %d\n",i+1,n+1,e);
 				p=p*0;
 			}
 	}
 	if(p==1)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 

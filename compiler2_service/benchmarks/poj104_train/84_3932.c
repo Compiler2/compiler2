@@ -8,11 +8,11 @@ int main_bench()
 	int secMax = 0;
 	int temp = 0;
 
-	scanf("%d", &n);	
+	my_scanf("%d", &n);	
 
 	for (int i = 0; i < n; i++)
 	{
-		scanf("%d", &temp);
+		my_scanf("%d", &temp);
 		if (temp > maxNum)
 		{
 			secMax = maxNum;
@@ -27,5 +27,5 @@ int main_bench()
 		}
 	}
 
-	printf("%d\n%d\n", maxNum, secMax);
+	my_printf("%d\n%d\n", maxNum, secMax);
 }

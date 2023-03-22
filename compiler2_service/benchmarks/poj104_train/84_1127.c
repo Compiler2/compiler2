@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a,b,c,n,i;
 	float d,e;
-	scanf("%d",&n);
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&n);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
 	for(i=1;i<=(n-2);i++)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		d=(float)(a+b)/2;
 		e=(float)(a-b)/2;
 		if(c>=a)
@@ -37,5 +37,5 @@ int main_bench()
 		if(b>=c)b=b;
 		else b=c;
 	}
-	printf("%d\n%d",a,b);
+	my_printf("%d\n%d",a,b);
 }

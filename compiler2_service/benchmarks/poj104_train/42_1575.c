@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,a,u[100000];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&u[i]);
+		my_scanf("%d",&u[i]);
 		}
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 	         
 		for(int i=0;i<n;i++){
 			if(u[i]==a){
@@ -17,10 +17,10 @@ int main_bench(){
 				n--;}}
 		for(int i=0;i<n;i++){
 			if(i==n-1){
-				printf("%d",u[i]);}
+				my_printf("%d",u[i]);}
 			else{ 
-      		printf("%d ",u[i]);}
+      		my_printf("%d ",u[i]);}
 			  }
-			scanf("%d",&n);
+			my_scanf("%d",&n);
 	return 0;
 	}

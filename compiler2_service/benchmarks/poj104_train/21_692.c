@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,sum,a,i,min,max,ci,ca;
 	float ave;
-	scanf("%d",&n);
-	scanf("%d",&a);
+	my_scanf("%d",&n);
+	my_scanf("%d",&a);
 	min=max=sum=a;
 	ci=ca=1;
 	for(i=1;i<n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a>max)
 		{
 			max=a;
@@ -31,21 +31,21 @@ int main_bench()
 	if(2*ave>(max+min))
 	{
 		for(i=0;i<ci-1;i++)
-			printf("%d,",min);
-		printf("%d\n",min);
+			my_printf("%d,",min);
+		my_printf("%d\n",min);
 	}
 	else if(2*ave<(max+min))
 	{
 		for(i=0;i<ca-1;i++)
-			printf("%d,",max);
-		printf("%d\n",max);
+			my_printf("%d,",max);
+		my_printf("%d\n",max);
 	}
 	else
 	{
 		for(i=0;i<ci;i++)
-			printf("%d,",min);
+			my_printf("%d,",min);
 		for(i=0;i<ca-1;i++)
-			printf("%d,",max);
-		printf("%d\n",max);
+			my_printf("%d,",max);
+		my_printf("%d\n",max);
 	}
 }

@@ -32,7 +32,7 @@ int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2;
 	int a,b,c=0,result,temp,i;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	a=dijitian(y1,m1,d1);
 	b=dijitian(y2,m2,d2);
 	if(y1==y2)
@@ -66,5 +66,5 @@ int main_bench()
 		}
 		result=a+b+c;
 	}
-	printf("%d",result);
+	my_printf("%d",result);
 }

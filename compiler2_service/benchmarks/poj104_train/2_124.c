@@ -12,10 +12,10 @@ int main_bench()
    int num,maxnum=0;
    char c;
 
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    for(i=0;i<a;i++)
    {
-      scanf("%d%s",&n[i],s[i]);
+      my_scanf("%d%s",&n[i],s[i]);
    }
 
    for(j='A';j<='Z';j++)
@@ -43,10 +43,10 @@ int main_bench()
        }
    }
 
-   printf("%c\n%d\n",c,maxnum);
+   my_printf("%c\n%d\n",c,maxnum);
    for(p=1;p<=maxnum;p++)
    {
-       printf("%d\n",maxh[p]);
+       my_printf("%d\n",maxh[p]);
    }
    return 0;
 

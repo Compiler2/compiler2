@@ -5,7 +5,7 @@ int main_bench()
 {
 	char a[100],b[100];
 	int d[255]={0},c[255]={0},i,lena,lenb;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	for (i=0;i<lena;i++)
@@ -15,9 +15,9 @@ int main_bench()
 	for (i=65;i<=122;i++)
 		if (d[i]!=c[i])
 		{
-			printf("NO");
+			my_printf("NO");
 			return 0;
 		}
-	printf("YES");
+	my_printf("YES");
 	return 0;
 }

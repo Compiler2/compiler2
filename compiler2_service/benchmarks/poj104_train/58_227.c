@@ -19,7 +19,7 @@ int main_bench()
 	int panduan(char a);
 	int first(char b);
 	char s[81];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		gets(s);
 		len=strlen(s);
@@ -35,10 +35,10 @@ int main_bench()
 			}
 		}
 		if(flag==1){
-			printf("1\n");
+			my_printf("1\n");
 		}
 		else{
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 	return 0;

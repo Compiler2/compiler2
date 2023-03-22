@@ -11,6 +11,6 @@ int main_bench()
     for(i=j+1;i<strlen(a);i++){
         if(a[i]==a[0]){
         k=i;break;}}
-   printf("%d",k-j-1);
+   my_printf("%d",k-j-1);
    return 0;
 }

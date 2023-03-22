@@ -5,9 +5,9 @@ int main_bench(){
 	char output[10000][300];
 	int n;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",input[i]);
+		my_scanf("%s",input[i]);
 	    int m=strlen(input[i]);
 		  for(int j=0;j<m;j++){
 			if(input[i][j]=='A')
@@ -19,7 +19,7 @@ int main_bench(){
 			else if(input[i][j]=='G')
 				output[i][j]='C';
 		}
-		printf("%s\n",output[i]);
+		my_printf("%s\n",output[i]);
 	}
 	getchar();
 	getchar();

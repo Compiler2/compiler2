@@ -26,7 +26,7 @@ int main_bench()
 			{
 				for(l=i;l<i+j;l++)
 				{
-					printf("%c",a[l]);
+					my_printf("%c",a[l]);
 				}
 				putchar('\n');
 			}	

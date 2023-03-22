@@ -7,9 +7,9 @@ int main_bench() {
   char *tmp;
   int i;
   int ok;
-  scanf("%d", &n);
+  my_scanf("%d", &n);
   for (i = 0; i < n; ++i) {
-    scanf("%s", buf);
+    my_scanf("%s", buf);
     ok = 1;
     tmp = buf;
     if (isdigit(*tmp)) {
@@ -24,9 +24,9 @@ int main_bench() {
       }
     }
     if (ok == 1)
-      printf("yes\n");
+      my_printf("yes\n");
     else
-      printf("no\n");
+      my_printf("no\n");
   }
   return 0;
 }

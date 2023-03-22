@@ -38,13 +38,13 @@ int main_bench(){
 				if(i==0) t=0;
 				else t=1;
 				for(j=t;d[i][j]!='\0';j++){
-					printf("%c",d[i][j]);
+					my_printf("%c",d[i][j]);
 				}
 			}
 		if(w==2) break;
 	}
 
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<k;i++){
 
 		if(a[i]==min){
@@ -52,7 +52,7 @@ int main_bench(){
 			if(i==0) t=0;
 			else t=1;
 			for(j=t;d[i][j]!='\0';j++){
-				 printf("%c",d[i][j]);
+				 my_printf("%c",d[i][j]);
 			}
 		}
 		if(w==0) break;

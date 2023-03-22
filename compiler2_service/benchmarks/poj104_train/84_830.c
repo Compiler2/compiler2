@@ -4,16 +4,16 @@
 int main_bench()
 {
 int n,e,i,m,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a,b,c;
-scanf("%d %d",&a,&b);
+my_scanf("%d %d",&a,&b);
 if(a<b){
 t=a;
 b=a;
 a=t;
 }
 for(i=0;i<n-2;i++){
-scanf("%d",&c);
+my_scanf("%d",&c);
 if(c>a){
 
 e=b;
@@ -29,7 +29,7 @@ b=c;
 c=m;
 }
 }
-printf("%d\n%d\n",a,b);
+my_printf("%d\n%d\n",a,b);
 
 	return 0;
 }

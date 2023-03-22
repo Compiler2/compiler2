@@ -5,12 +5,12 @@ int main_bench()
 	int n,a,b,p,q,s,e,f;
 	int m=0;
 	int sz[50000][2];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(b=0;b<n;b++)
     {
 		for(a=0;a<2;a++)
         {
-			scanf("%d",&sz[b][a]);
+			my_scanf("%d",&sz[b][a]);
 		}
 	}
 	
@@ -52,13 +52,13 @@ int main_bench()
            
             else  
 			{   m=0;
-				printf("no");
+				my_printf("no");
 			    break;
 			}
 
 	}
      
 	if(m!=0) 
-		printf("%d %d",p,q);
+		my_printf("%d %d",p,q);
 return 0;
 }

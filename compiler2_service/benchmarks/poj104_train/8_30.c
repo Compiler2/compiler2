@@ -4,12 +4,12 @@ int m,n,a[20],b[20];
 void len()
 {
 	int i;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void change()
 {
@@ -40,11 +40,11 @@ void prin()
 {
 	int i;
     for(i=0;i<m;i++)
-	printf("%d ",a[i]);
+	my_printf("%d ",a[i]);
 	for(i=m;i<m+n-1;i++)
-		printf("%d ",b[i-m]);
+		my_printf("%d ",b[i-m]);
 	if(i=m+n-1)
-	printf("%d",b[n-1]);
+	my_printf("%d",b[n-1]);
 }
 int main_bench()
 { len();

@@ -16,7 +16,7 @@ int main_bench(){
         }
     }
      jg[m]='\0';
-      printf("%s\n",jg);
+      my_printf("%s\n",jg);
     return 0;
 }
 

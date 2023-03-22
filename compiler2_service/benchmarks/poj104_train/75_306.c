@@ -7,14 +7,14 @@ int main_bench()
 	char space;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&temp,&space);
+		my_scanf("%d%c",&temp,&space);
 		in[i]=temp;
 		if(space!=',') break;
 	}
 	num=i+1;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&temp,&space);
+		my_scanf("%d%c",&temp,&space);
 		out[i]=temp;
 		if(space!=',') break;
 	}
@@ -28,7 +28,7 @@ int main_bench()
 		if(time[i]>max)
 			max=time[i];
 	}
-	printf("%d %d",num,max);		  
+	my_printf("%d %d",num,max);		  
 }
 
 

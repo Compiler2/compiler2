@@ -4,10 +4,10 @@ main_bench()
 {
       int n,m=0,i,j;
       char a[101],b[100];
-      scanf("%s",a);
+      my_scanf("%s",a);
       n=strlen(a);
       if(n==1||(n==2&&a[0]-'0'==1&&a[1]-'0'<3))
-       printf("0\n%s",a);
+       my_printf("0\n%s",a);
       else
       {
       for(i=0;i<=n-1;i++)
@@ -17,11 +17,11 @@ main_bench()
       }
       if(b[1]=='0')
       for(i=2;i<=n-1;i++)
-      printf("%c",b[i]);
+      my_printf("%c",b[i]);
       else 
       for(i=1;i<=n-1;i++)
-      printf("%c",b[i]);
-      printf("\n%d",m);
+      my_printf("%c",b[i]);
+      my_printf("\n%d",m);
       }
       getchar();
       getchar();

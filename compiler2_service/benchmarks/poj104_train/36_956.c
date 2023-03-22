@@ -5,10 +5,10 @@ int main_bench()
 	int rearrange(char s1[],char s2[]);
 	char s1[300],s2[300];
 	int k;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	k=rearrange(s1,s2);
-	if(k)printf("YES\n");
-	else printf("NO\n");
+	if(k)my_printf("YES\n");
+	else my_printf("NO\n");
 }
 int rearrange(char s1[],char s2[])
 {

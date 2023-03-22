@@ -5,7 +5,7 @@ int main_bench()
 	int a[300],i,n,k,j;
 	for(i=0;i<=300;i++)
 	{
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	if(a[i]==-1) break;
 	}
 	for(k=0;k<=300;k++)
@@ -22,7 +22,7 @@ int main_bench()
 			if(a[i]==2*a[j]||a[j]==2*a[i]) n=n+1;
 		}
 			}
-			printf("%d\n",n);
+			my_printf("%d\n",n);
 		}
 	}
 }

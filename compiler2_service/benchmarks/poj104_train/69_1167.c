@@ -27,7 +27,7 @@ main_bench()
     char b[260];
     char c[260];
     int l1,l2,l3,l,t,m,i;
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
    
     l1=strlen(a);
     l2=strlen(b);
@@ -55,7 +55,7 @@ else c[l+1]='\0';
 
 l3=strlen(c);
 h(c,l3);
-printf("%s",c);
+my_printf("%s",c);
 getchar();
 getchar();
 } 

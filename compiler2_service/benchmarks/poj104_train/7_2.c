@@ -11,7 +11,7 @@ int main_bench()
 	
 	str1 = strlen(sub);
 	str2 = strlen(s1);
-	printf("%s, len = %d\n", sub, str1);
+	my_printf("%s, len = %d\n", sub, str1);
 	for (i=0;i<str1;i++)
 		if (sub[i] == s1[0])
 		{
@@ -24,6 +24,6 @@ int main_bench()
 				break;
 			}
 		}
-	printf("%s\n", sub);
+	my_printf("%s\n", sub);
 	return 0;
 }

@@ -10,13 +10,13 @@ for(i=1;i<=n;i++)
 {t=s[i-1];
 tt=s[i];
 ttt=t+tt;
-printf("%c",ttt);
+my_printf("%c",ttt);
 }
 if(i==n)
 {t=s[i-1];
 tt=s[0];
 ttt=t+tt;
-printf("%c",ttt);
+my_printf("%c",ttt);
 }
 }
 return 0;

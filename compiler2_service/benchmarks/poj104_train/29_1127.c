@@ -5,9 +5,9 @@ int main_bench(){
 	int n[100];
 	double a[100],b[100];
 	double c=0,s=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	a[0]=2;
 	a[1]=3;
@@ -30,7 +30,7 @@ int main_bench(){
             c=a[k]/b[k];
 			s=s+c;
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
     return 0;
 }

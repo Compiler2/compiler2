@@ -8,12 +8,12 @@ int main_bench()
 		char name[100];
 	}*list,tmp;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	list = (struct wordName *)malloc(sizeof(struct wordName)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",list[i].name);
+		my_scanf("%s",list[i].name);
 	}
 
 	for(i=0;i<n;i++)
@@ -35,7 +35,7 @@ int main_bench()
 
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",list[i].name);
+		my_printf("%s\n",list[i].name);
 	}
 
 	return 0;

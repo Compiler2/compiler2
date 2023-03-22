@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,j,m;
 	float a[300],jun,sum,max,k,t;
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		sum=sum+a[i];
 	}
 	for(j=0;j<n-1;j++){
@@ -34,7 +34,7 @@ int main_bench()
 			k=0-k;
 		}
 		if(k==max){
-			printf("%d",(int)a[i]);
+			my_printf("%d",(int)a[i]);
 			break;
 		}
 	}
@@ -45,7 +45,7 @@ int main_bench()
 			k=0-k;
 		}
 		if(k==max){
-			printf(",%d",(int)a[i]);
+			my_printf(",%d",(int)a[i]);
 		}
 	}
 	return 0;

@@ -6,7 +6,7 @@ int main_bench()
 	char s[100];
 	char str[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int c[100];
-	scanf("%d%s%d",&a,s,&b);
+	my_scanf("%d%s%d",&a,s,&b);
 	n=strlen(s);
 	for(i=0;i<n;i++){
 		if(s[i]>='a'&&s[i]<='z')
@@ -23,7 +23,7 @@ int main_bench()
 	}
 	j=0;
 	if(k==0)
-	printf("0");
+	my_printf("0");
 	else{
 	  while(k!=0){
 		s[j]=str[k%b];
@@ -32,6 +32,6 @@ int main_bench()
 	    }
 	}
 	for(i=j-1;i>=0;i--){
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
 }

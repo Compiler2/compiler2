@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,i,k,d;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct qj{
         int a;
         int b;
     }qj[n],c;
     for(i=0;i<n;i++){
-        scanf("%d%d",&(qj[i].a),&(qj[i].b));
+        my_scanf("%d%d",&(qj[i].a),&(qj[i].b));
     }
     d=qj[0].b;
     for(i=0;i<n;i++){
@@ -33,9 +33,9 @@ int main_bench()
        }
    }
    if(qj[0].b==d){
-       printf("%d %d",qj[0].a,qj[0].b);
+       my_printf("%d %d",qj[0].a,qj[0].b);
    }else{
-       printf("no");
+       my_printf("no");
    }
    return 0;
 }

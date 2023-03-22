@@ -27,8 +27,8 @@ int main_bench()
 		x++;
 		}
 	for(i=0;i<x;i++){
-		if(i<x-1) printf("%d,",sz[i]);
-		else printf("%d",sz[i]);
+		if(i<x-1) my_printf("%d,",sz[i]);
+		else my_printf("%d",sz[i]);
 		}
  	
     return 0;

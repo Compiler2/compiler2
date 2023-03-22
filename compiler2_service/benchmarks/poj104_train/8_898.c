@@ -10,7 +10,7 @@ int main_bench()
 	int b[1000];
 	int c[2000];
 	int al,bl;
-	scanf("%d%d",&al,&bl);
+	my_scanf("%d%d",&al,&bl);
 	take(a,al);
 	take(b,bl);
 	rank(a,al);
@@ -24,7 +24,7 @@ void take(int x[1000],int l)
 	int i;
 	for(i=0;i<l;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	}
 }
 void rank(int x[1000],int l)
@@ -61,9 +61,9 @@ void com(int a[1000],int b[1000],int c[2000],int al,int bl)
 void prin(int c[2000],int l)
 {
 	int i;
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	for(i=1;i<l;i++)
 	{
-		printf(" %d",c[i]);
+		my_printf(" %d",c[i]);
 	}
 }

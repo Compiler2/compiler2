@@ -13,10 +13,10 @@ int main_bench()
 	
 	int a,b,c,num1,num2,num3;
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -63,9 +63,9 @@ int main_bench()
 				    num3=i+1;
 				}
 	}
-	printf("%d %d\n",num1,a);
-	printf("%d %d\n",num2,b);
-	printf("%d %d\n",num3,c);
+	my_printf("%d %d\n",num1,a);
+	my_printf("%d %d\n",num2,b);
+	my_printf("%d %d\n",num3,c);
 	return 0;
 }
 

@@ -17,12 +17,12 @@ int main_bench()
 		{
 			if (s1[i] < s2[i])
 			{
-				printf ("<\n");
+				my_printf ("<\n");
 				break;
 			}
 			else if (s1[i] > s2[i])
 			{
-				printf (">\n");
+				my_printf (">\n");
 				break;
 			}
 		}
@@ -30,12 +30,12 @@ int main_bench()
 		{
 			if (s1[i] < s2[i])
 			{
-				printf ("<\n");
+				my_printf ("<\n");
 				break;
 			}
 			else if (s1[i] > s2[i])
 			{
-				printf (">\n");
+				my_printf (">\n");
 				break;
 			}
 		}
@@ -43,12 +43,12 @@ int main_bench()
 		{
 			if (s1[i] + 32 < s2[i])
 			{
-				printf ("<\n");
+				my_printf ("<\n");
 				break;
 			}
 			else if (s1[i] + 32 > s2[i])
 			{
-                printf (">\n");
+                my_printf (">\n");
 				break;
 			}
 		}
@@ -56,19 +56,19 @@ int main_bench()
 		{
 			if (s1[i] - 32 < s2[i])
 			{
-				printf ("<\n");
+				my_printf ("<\n");
 				break;
 			}
 			else if (s1[i] - 32 > s2[i])
 			{
-                printf (">\n");
+                my_printf (">\n");
 				break;
 			}
 		}
 	}
 	if (i = 80)
 	{
-		printf ("=\n");
+		my_printf ("=\n");
 	}
 	return 0;
 }

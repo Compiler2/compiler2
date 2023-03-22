@@ -7,18 +7,18 @@ int main_bench()
     int n=0,m=0,k;
     int a=0,b=1;
     int i,j;
-    scanf ("%d %d", &row, &col);
+    my_scanf ("%d %d", &row, &col);
     for (i=0;i<=row-1;i++)
     {
         for (j=0;j<=col-1;j++)
         {
-            scanf ("%d", &s[i][j]);
+            my_scanf ("%d", &s[i][j]);
         }
     }
     k=row*col;
     for (i=1;i<=k;i++)
     {
-        printf ("%d\n", s[n][m]);
+        my_printf ("%d\n", s[n][m]);
         if (n==b-1 && m<col-1)
         {
                     m=m+1;

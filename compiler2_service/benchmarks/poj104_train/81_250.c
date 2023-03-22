@@ -6,8 +6,8 @@ int main_bench()
 	int i, j, n, m;
 	for (i = 0;i <= 4;i++)
 		for (j = 0;j <= 4;j++)
-			scanf("%d",&a[i][j]);			
-	scanf("%d%d",&n,&m);
+			my_scanf("%d",&a[i][j]);			
+	my_scanf("%d%d",&n,&m);
 	if (n >= 0 && n <= 4 && m >= 0 && m <= 4)
 	{
 		for (i = 0;i <= 4;i++) 
@@ -20,11 +20,11 @@ int main_bench()
 		for (i = 0;i <= 4;i++)
 			for (j = 0;j <= 4;j++)
 			{
-				if (j < 4)	printf("%d ",a[i][j]);
-				else if (i < 4) printf("%d\n",a[i][j]);
-				else printf("%d",a[i][j]);
+				if (j < 4)	my_printf("%d ",a[i][j]);
+				else if (i < 4) my_printf("%d\n",a[i][j]);
+				else my_printf("%d",a[i][j]);
 			}
 	}
-	else printf("error"); 
+	else my_printf("error"); 
 	return 0;
 }

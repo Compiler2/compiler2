@@ -50,19 +50,19 @@ int main_bench()
 		   if(flag2==0)
 		   {
                  if(j==0)
-					 printf("%s",e);
+					 my_printf("%s",e);
 				 else
-					 printf(" %s",e);
+					 my_printf(" %s",e);
 		   }
 		   else
 		   {
 			   if(j==0)
                  for(l=d[j];l<d[j]+c[j];l++)
-					 printf("%c",a[l]);
+					 my_printf("%c",a[l]);
 				 else
-				 {printf(" ");
+				 {my_printf(" ");
                    for(l=d[j];l<d[j]+c[j];l++)
-					   printf("%c",a[l]);}
+					   my_printf("%c",a[l]);}
 		   }
            flag2=0;
 	   }
@@ -70,11 +70,11 @@ int main_bench()
 	   {
 		   if(j==0)
                  for(l=d[j];l<d[j]+c[j];l++)
-					 printf("%c",a[l]);
+					 my_printf("%c",a[l]);
 				 else
-				 {printf(" ");
+				 {my_printf(" ");
                    for(l=d[j];l<d[j]+c[j];l++)
-					   printf("%c",a[l]);}
+					   my_printf("%c",a[l]);}
 	   }
    }
 

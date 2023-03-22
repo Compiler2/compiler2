@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j=0,an[500],bn[500],max,l,out;
 	char x;
 	x=',';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&bn[i]);
+		my_scanf("%d",&bn[i]);
 	for(i=0;i<n;i++){
 		if(bn[i]%2==1){
 			an[j]=bn[i];
@@ -23,11 +23,11 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",an[0]);
+	my_printf("%d",an[0]);
     out=an[0];
 	for(i=0;i<l;i++){
 		if(an[i]!=out){
-			printf("%c%d",x,an[i]);
+			my_printf("%c%d",x,an[i]);
 			out=an[i];
 		}
 	}

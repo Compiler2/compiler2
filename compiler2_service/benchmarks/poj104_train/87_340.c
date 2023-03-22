@@ -5,7 +5,7 @@ int main_bench(){
 	int A[100];
 	int i=0,k=0;
 	while(i<100){
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a==0){
 			break;
 		}
@@ -19,7 +19,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<k;i++){
-    printf("%d\n",A[i]);
+    my_printf("%d\n",A[i]);
 	}
 
 

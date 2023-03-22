@@ -29,6 +29,6 @@ int main_bench()
 		
 	}
 
-for(i=1;i<=ci-1;i++)printf("%d,",a[i]);
-printf("%d\n",a[ci]);
+for(i=1;i<=ci-1;i++)my_printf("%d,",a[i]);
+my_printf("%d\n",a[ci]);
 }

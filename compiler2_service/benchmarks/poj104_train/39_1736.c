@@ -12,17 +12,17 @@ int main_bench()
 	}stu[100];
 	int m[100]={0},n,i,max=0,num=0;
 	long sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",stu[i].name);
-		scanf("%d",&stu[i].gpa);
-		scanf("%d",&stu[i].cgpa);
+		my_scanf("%s",stu[i].name);
+		my_scanf("%d",&stu[i].gpa);
+		my_scanf("%d",&stu[i].cgpa);
 		getchar();
-		scanf("%c",&stu[i].official);
+		my_scanf("%c",&stu[i].official);
 		getchar();
-		scanf("%c",&stu[i].west);
-		scanf("%d",&stu[i].paper);
+		my_scanf("%c",&stu[i].west);
+		my_scanf("%d",&stu[i].paper);
 		if(stu[i].gpa>80&&stu[i].paper>0) m[i]=m[i]+8000;
 		if(stu[i].gpa>85&&stu[i].cgpa>80) m[i]=m[i]+4000;
 		if(stu[i].gpa>90) m[i]=m[i]+2000;
@@ -35,5 +35,5 @@ int main_bench()
 			num=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[num].name,max,sum);
+	my_printf("%s\n%d\n%d\n",stu[num].name,max,sum);
 }

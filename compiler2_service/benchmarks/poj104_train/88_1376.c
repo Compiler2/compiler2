@@ -8,7 +8,7 @@ int main_bench()
     { 
               if(!isdigit(ch) && flag) 
               { 
-                      printf("%d\n", num); 
+                      my_printf("%d\n", num); 
                       count++; 
                       num = flag = 0; 
               } 

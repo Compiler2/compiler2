@@ -35,7 +35,7 @@ int main_bench()
 	for(t=0;t<k;t++)
 		if(max==c[t])
 		{
-	       printf("%s\n",b[t]);
+	       my_printf("%s\n",b[t]);
 		   break;
 		}
 	    
@@ -43,7 +43,7 @@ int main_bench()
 		for(t=0;t<k;t++)
 			if(min==c[t])
 			{
-				printf("%s\n",b[t]);
+				my_printf("%s\n",b[t]);
 		        break;
 			}
 }

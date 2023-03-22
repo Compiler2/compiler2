@@ -5,9 +5,9 @@ int main_bench(){
 	int a[10001];
 	int b[10001];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&(a[i]),&(b[i]));
+		my_scanf("%d %d",&(a[i]),&(b[i]));
 	}
 	for(int k=1;k<=n;k++){
 	for(int i=0;i<n-k;i++){
@@ -33,9 +33,9 @@ int main_bench(){
 		}
 	}
 	if(c==n-1){
-		printf("%d %d",a[0],d);
+		my_printf("%d %d",a[0],d);
 	}else{
-		printf("no");
+		my_printf("no");
 	}	
 	return 0;
 }

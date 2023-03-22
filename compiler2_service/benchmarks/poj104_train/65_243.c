@@ -3,10 +3,10 @@
 int main_bench(){
    int n,i,a,b;
    int sz[2][200];
-   scanf ("%d",&n);
+   my_scanf ("%d",&n);
    for (i=0;i<=n-1;i++){
-     scanf("%d",&sz[0][i]);
-     scanf("%d",&sz[1][i]);
+     my_scanf("%d",&sz[0][i]);
+     my_scanf("%d",&sz[1][i]);
                         }
    for (i=0,a=0,b=0;i<=n-1;i++){
     if(sz[0][i]!=0&&sz[1][i]!=0&&sz[0][i]!=sz[1][i])
@@ -19,9 +19,9 @@ int main_bench(){
     else if(sz[1][i]==0&&sz[0][i]==1){b=b+1;}
     else if(sz[1][i]==0&&sz[0][i]==2){a=a+1;}
     }
-  if(a>b){printf("A");}
-  else if(a<b){printf("B");}
-  else if(a==b){printf("Tie");}
+  if(a>b){my_printf("A");}
+  else if(a<b){my_printf("B");}
+  else if(a==b){my_printf("Tie");}
   return 0;
 }
 

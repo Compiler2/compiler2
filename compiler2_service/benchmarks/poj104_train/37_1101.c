@@ -6,10 +6,10 @@ int main_bench()
 	char ch[10000]={0};
 	int a=0;
 	char c,c1[1];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(q=0;q<=n-1;q++)
 	{
-		scanf("%s",ch);
+		my_scanf("%s",ch);
         r=strlen(ch);
 		for(i=0;i<=r-2;i++)
 		{
@@ -23,7 +23,7 @@ int main_bench()
 			}
 			if(a==1)
 			{
-				printf("%c\n",c);
+				my_printf("%c\n",c);
 				t++;
 				a=0;
 				break;
@@ -32,7 +32,7 @@ int main_bench()
 		}
 
 		
-	    if(t==0) {printf("no");}
+	    if(t==0) {my_printf("no");}
 		 t=0;
 		
 	}

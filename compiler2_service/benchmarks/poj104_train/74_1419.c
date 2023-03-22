@@ -36,18 +36,18 @@ int judge2(int n)
 int main_bench()
 {
 	int m,n,i,u=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 		if(judge1(i)&&judge2(i))
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			u=1;
 			break;
 		}
 	i=i+1;
 	for(;i<=n;i++)
 		if(judge1(i)&&judge2(i))
-			printf(",%d",i);
+			my_printf(",%d",i);
 	if(u==0)
-		printf("no");
+		my_printf("no");
 }

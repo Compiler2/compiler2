@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,k;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	int p=0;
 	int shuzu[1000];
 	for(int i=0;i<=n-1;i++)
 	{
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 	}
 	for(int a=0;a<=n-1;a++)
 	{
@@ -17,8 +17,8 @@ int main_bench()
 			if(shuzu[a]+shuzu[b]==k)p=1;
 		}
 	}
-	if(p==1)printf("yes");
-	if(p==0)printf("no");
+	if(p==1)my_printf("yes");
+	if(p==0)my_printf("no");
 	return 0;
 }
 

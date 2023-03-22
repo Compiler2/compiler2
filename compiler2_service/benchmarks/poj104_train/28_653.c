@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<p-1;i++)
-		printf("%d,",end[i]-begin[i]+1);
-	printf("%d",end[p-1]-begin[p-1]+1);
+		my_printf("%d,",end[i]-begin[i]+1);
+	my_printf("%d",end[p-1]-begin[p-1]+1);
 }

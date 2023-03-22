@@ -12,21 +12,21 @@ int main_bench()
 {
 	void choose(struct patient *p,int n);
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%s%d",pat[i].id,&pat[i].age);}
+	my_scanf("%s%d",pat[i].id,&pat[i].age);}
 	choose(pat,n);
 	for(j=1;j<=m;j++){
 		if(over60[m-j]!=over60[m-j-1]){
 	for(i=0;i<n;i++){
 		
 		if(pat[i].age==over60[m-j]){
-			printf("%s\n",pat[i].id);
+			my_printf("%s\n",pat[i].id);
 	}}}}
 
 	for(i=0;i<n;i++){
 		if(pat[i].age<60){
-			printf("%s\n",pat[i].id);}}
+			my_printf("%s\n",pat[i].id);}}
 	return 0;
 }
 	void choose(struct patient *p,int n){

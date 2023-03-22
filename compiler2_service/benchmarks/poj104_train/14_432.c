@@ -12,10 +12,10 @@ int main_bench()
 {
 	int i,n,p,q,r,b=0,c=0,d=0;
 	struct student a[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a[i].num,&a[i].Chinese,&a[i].math);
+		my_scanf("%d%d%d",&a[i].num,&a[i].Chinese,&a[i].math);
 		a[i].sum=a[i].Chinese+a[i].math;
 		if(i==0)
 			p=q=r=a[i].sum;
@@ -44,5 +44,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",a[b].num,a[b].sum,a[c].num,a[c].sum,a[d].num,a[d].sum);
+	my_printf("%d %d\n%d %d\n%d %d\n",a[b].num,a[b].sum,a[c].num,a[c].sum,a[d].num,a[d].sum);
 }

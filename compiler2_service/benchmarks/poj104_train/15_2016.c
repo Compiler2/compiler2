@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,s[1000][1000],i,j,S;
 	int a[2],b[2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-		    scanf("%d",&s[i][j]);
+		    my_scanf("%d",&s[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 	S=(a[1]-a[0]-1)*(b[1]-b[0]-1);
-	printf("%d",S);
+	my_printf("%d",S);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int nn(int x);
 int main_bench(){
 	int h[12],i,y,r=0;
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	for(i=1;i<=12;i++){
 		if((nn(i)-5-(7-y+1))%7==0){
 			h[r]=i;
@@ -11,7 +11,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<r;i++){
-		printf("%d\n",h[i]);
+		my_printf("%d\n",h[i]);
 	}
 		return 0;
 }

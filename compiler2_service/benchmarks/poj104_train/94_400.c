@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,e;
 	int k=1,s=0;
 	int a[500],b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,11 +32,11 @@ int main_bench()
 		}
 		if(s-j!=1)
 		{
-		printf("%d,",b[s-j]);
+		my_printf("%d,",b[s-j]);
 		}
 		if(s-j==1)
 		{
-			printf("%d",b[s-j]);
+			my_printf("%d",b[s-j]);
 		}
 	}
 	return 0;

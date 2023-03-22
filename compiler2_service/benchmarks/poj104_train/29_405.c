@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a[100],k,c[100],d[100];
 	double b[100],e[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	c[0]=1;
 	d[0]=1;
@@ -21,7 +21,7 @@ int main_bench()
 			e[i]=(double)c[i]/d[i];
 			b[k]=b[k]+e[i];
 		}
-		printf("%.3lf\n",b[k]);
+		my_printf("%.3lf\n",b[k]);
 	}
 	return 0;
 }

@@ -6,8 +6,8 @@ int main_bench()
 	int i,j,a;
 	i=1;
 	j=1;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	int leap;
 	long int yi;
 	yi=0;
@@ -148,7 +148,7 @@ case 11 :yj=yj+31+28+31+30+31+30+31+31+30+31+d2;break;
 case 12 :yj=yj+31+28+31+30+31+30+31+31+30+31+30+d2;break;
 		}
 	a=yj-yi;
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 
 }

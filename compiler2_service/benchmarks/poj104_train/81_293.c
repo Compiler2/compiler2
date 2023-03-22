@@ -6,10 +6,10 @@ int main_bench()
 	int a[5][5],b,m,n,change(int m,int n),i,j;
 	for(i=0;i<5;i++)
 	for(j=0;j<5;j++)
-	scanf("%d",&a[i][j]);
-	scanf("%d %d",&m,&n);
+	my_scanf("%d",&a[i][j]);
+	my_scanf("%d %d",&m,&n);
 	if(change(m,n)==0)
-	printf("error");
+	my_printf("error");
 	if(change(m,n)==1)
 	{for(i=0;i<5;i++)
 	{b=a[m][i];
@@ -18,7 +18,7 @@ int main_bench()
 	
 		for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-		{printf("%d%c",a[i][j],(j!=4)?' ':'\n');
+		{my_printf("%d%c",a[i][j],(j!=4)?' ':'\n');
 		}}
 	
 }

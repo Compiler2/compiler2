@@ -24,17 +24,17 @@ int main_bench()
 	char b[1002];
 	int i,j,num;
 	for(i=0;;i++)
-	{	scanf("%d%c",&N1[i],&b[i]);
+	{	my_scanf("%d%c",&N1[i],&b[i]);
 	    if(b[i]!=',') {num=i+1;break;}
 	}
 	for(i=0;i<num;i++)
-		scanf("%d%c",&N2[i],&b[i]);
-    printf("%d ",num);
+		my_scanf("%d%c",&N2[i],&b[i]);
+    my_printf("%d ",num);
 	int min=fxiao(N1,num),max=fda(N2,num);
 	int N[1001]={0},k;
 	for(i=min;i<=max;i++)
 		for(j=0;j<num;j++)
 		{if(i>=N1[j]&&i<N2[j])N[i]++;}
 	int p=fda(N,max-min+1);
-	printf("%d\n",p);
+	my_printf("%d\n",p);
 }

@@ -6,10 +6,10 @@ int main_bench()
 	int a,b,c,i;
 	int n,m;
 	double sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (n>0)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		sum=0;
 		a=1;b=2;
 		for (i=1;i<=m;i++)
@@ -19,7 +19,7 @@ int main_bench()
 			a=b;
 			b=c;
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 		n--;
 	}
 }

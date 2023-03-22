@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,n=1,max,k,d;
 	int a[300]={0};
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;getchar()!='\n';i++)
-	{scanf("%d",&a[i]);
+	{my_scanf("%d",&a[i]);
 	n++;}
 	
 	max=a[0];
@@ -22,12 +22,12 @@ int main_bench()
 		if(a[i]>k)
 			k=a[i];
 		if(n==1)
-			printf("No");
+			my_printf("No");
 	
 		else if(k!=0)
-		printf("%d",k);
+		my_printf("%d",k);
 		else
-		printf("No");
+		my_printf("No");
 
 
 

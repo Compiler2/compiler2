@@ -5,7 +5,7 @@ int main_bench()
 char sr[1000];
 gets(sr);
 char a[1000],b[1000];
-scanf("%s%s",a,b);
+my_scanf("%s%s",a,b);
 int len,ken;
 len=strlen(sr);
 ken=strlen(a);
@@ -21,7 +21,7 @@ for(i=0;i<len;i++)
 	}
 	if(m==1)  break;
 }
-if(m==0){printf("%s",sr);}
+if(m==0){my_printf("%s",sr);}
 char c[1000],d[1000];
 if(m==1)
 {
@@ -29,13 +29,13 @@ if(m==1)
 		{c[i]=sr[i];}
 	c[j]='\0';
 	if(j+ken==len)
-		{printf("%s%s",c,b);}
+		{my_printf("%s%s",c,b);}
 	if(j+ken<len)
 	{
 		for(i=j+ken;i<len;i++)
 			{d[i-j-ken]=sr[i];}
 			d[len-j-ken]='\0';
-			printf("%s%s%s",c,b,d);
+			my_printf("%s%s%s",c,b,d);
 	}
 }
 return 0;

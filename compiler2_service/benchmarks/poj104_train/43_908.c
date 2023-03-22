@@ -3,7 +3,7 @@
 int main_bench()
 {
  int m,a,b,i,j,mult;
- scanf("%d",&m);
+ my_scanf("%d",&m);
  a=2;
  while(a<=(m+1)/2)
  {
@@ -23,7 +23,7 @@ int main_bench()
 			 }
 			 if(mult!=0)
 			 {
-				 printf("%d %d\n",a,b);
+				 my_printf("%d %d\n",a,b);
 			 }
 		 }
 	a++;

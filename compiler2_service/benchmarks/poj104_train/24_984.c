@@ -33,7 +33,7 @@ for(i=0;i<j;i++)
 if(sz[i]<sz[min]){min=i;}
 if(sz[i]>sz[max]){max=i;}
 }
-printf("%s\n",dc[max]);
-printf("%s\n",dc[min]);
+my_printf("%s\n",dc[max]);
+my_printf("%s\n",dc[min]);
 return 0;
 }

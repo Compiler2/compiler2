@@ -10,14 +10,14 @@ int main_bench()
 {
 	int i, n, a[1000], b[1000];
 
-	while(scanf("%d", &n) && n!=0)
+	while(my_scanf("%d", &n) && n!=0)
 	{
 		int res=0, a1=0, a2=n-1, b1=0, b2=n-1;
 		
 		for(i=0; i<n; i++)
-			scanf("%d", &a[i]);
+			my_scanf("%d", &a[i]);
 		for(i=0; i<n; i++)
-			scanf("%d", &b[i]);
+			my_scanf("%d", &b[i]);
 
 		qsort(a, n, sizeof(int), compare);
 		qsort(b, n, sizeof(int), compare);
@@ -50,6 +50,6 @@ int main_bench()
 			}
 		}
 
-		printf("%d\n", res*200);
+		my_printf("%d\n", res*200);
 	}
 }

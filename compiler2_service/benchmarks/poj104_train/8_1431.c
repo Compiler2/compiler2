@@ -7,7 +7,7 @@ int main_bench()
     void read(int array1[],int array2[]);
     void sort(int array[],int x);
     void print(int array5[],int array6[]);
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     read(a,b);
     sort(a,m);
     sort(b,n);
@@ -17,9 +17,9 @@ void read(int array1[],int array2[])
 {
     int i;
     for(i=0;i<m;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<n;i++)
-    scanf("%d",&b[i]);
+    my_scanf("%d",&b[i]);
 }
 void sort(int array[],int x)
 {
@@ -35,8 +35,8 @@ void print(int array5[],int array6[])
 {
     int j;
     for(j=0;j<m;j++)
-    printf("%d ",array5[j]);
+    my_printf("%d ",array5[j]);
     for(j=0;j<n-1;j++)
-    printf("%d ",array6[j]);
-    printf("%d",array6[n-1]);
+    my_printf("%d ",array6[j]);
+    my_printf("%d",array6[n-1]);
 }

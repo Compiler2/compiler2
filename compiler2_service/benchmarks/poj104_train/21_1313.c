@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,t[300],s=0,temp,k=0,y=0,d[300];
 	float f[100],m,av;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&t[i]);
+		my_scanf("%d",&t[i]);
 		s=s+t[i];
 	}
 	av=(float)s/n;
@@ -44,10 +44,10 @@ d[k-1]=t[i];
 	{
 	
 		
-			printf("%d",d[i]);
+			my_printf("%d",d[i]);
 			y++;
 			if(y>=1&&y<k)
-				printf(",");
+				my_printf(",");
 		
 	}
 	return 0;

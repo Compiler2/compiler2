@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,i,j;
 	int m,n,temp;
 	int x,flag,y=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	flag=0;
 	for(i=m;i<=n;i++)    
 	{
@@ -27,8 +27,8 @@ int main_bench()
 			if(x==i)
 			{
 			    if(y>0)
-			    printf(",");	
-			    printf("%d",b);
+			    my_printf(",");	
+			    my_printf("%d",b);
 			    flag=1;
 				y++;
 				
@@ -36,5 +36,5 @@ int main_bench()
 		}
 	}
 	if(flag==0)
-		printf("no\n");
+		my_printf("no\n");
 }

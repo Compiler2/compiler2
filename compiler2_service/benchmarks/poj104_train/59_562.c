@@ -3,9 +3,9 @@
 int main_bench(){
     int n,m,i,a,b,jm[102][102]={0},next[102][102]={0},s=0;
     char mz[102][102];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%s",mz[i]);
+                     my_scanf("%s",mz[i]);
                      for(b=0;b<n;b++){
                                       if(mz[i][b]=='@'){
                                                         jm[i+1][b+1]=2;
@@ -15,7 +15,7 @@ int main_bench(){
                                                              }
                                                              }
                                                              }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=1;i<m;i++){
                      for(a=1;a<=n;a++){
                                        for(b=1;b<=n;b++){
@@ -37,6 +37,6 @@ int main_bench(){
                                                                                      }
                                                                                      }
                                                                                      }
-    printf("%d",s);                           
+    my_printf("%d",s);                           
     return 0;
 }

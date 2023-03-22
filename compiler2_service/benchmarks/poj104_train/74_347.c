@@ -24,11 +24,11 @@ main_bench()
 {
 
  int i,j,m,n,e=0;
- scanf("%d%d",&m,&n);
+ my_scanf("%d%d",&m,&n);
  for(i=m;i<=n;i++)
  if(f1(i)==1&&f2(i)==1)
-  {if(e==0){printf("%d",i);e++;}
-   else printf(",%d",i);
+  {if(e==0){my_printf("%d",i);e++;}
+   else my_printf(",%d",i);
   }
-  if(e==0)printf("no");
+  if(e==0)my_printf("no");
 }

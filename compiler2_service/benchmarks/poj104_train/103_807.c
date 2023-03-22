@@ -23,7 +23,7 @@ int main_bench()
 	int i;
 	char temp_char;
 	char st[1024];   
-	scanf("%s",st);
+	my_scanf("%s",st);
 	change(st);
 	
 	l=strlen(st);
@@ -35,7 +35,7 @@ int main_bench()
 			temp_num++;
 		else
 		{
-			printf("(%c,%d)",temp_char,temp_num);
+			my_printf("(%c,%d)",temp_char,temp_num);
 			temp_char=st[i];
 			temp_num=1;
 		}

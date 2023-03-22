@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[50],b[50];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i,k,t=1;
 	for(k=0;k<=(int)strlen(b);k++)
 	{
@@ -20,8 +20,8 @@ int main_bench()
 			break;
 	}
 	if(t==0)
-		printf("0");
+		my_printf("0");
 	else
-		printf("%d",k);
-    printf("\n");
+		my_printf("%d",k);
+    my_printf("\n");
 }

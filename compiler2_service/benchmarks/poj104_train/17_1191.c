@@ -6,11 +6,11 @@ int main_bench(){
 	while(1){
 		char a[100];
 		a[0]='\0';
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l=strlen(a);
 		if(l==0)
 			break;
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 		for(i=0;i<l;i++){
 			if(a[i]=='(')
 				b[i]='$';
@@ -37,8 +37,8 @@ int main_bench(){
 			}
 		}
 		for(i=0;i<l;i++){
-			printf("%c",b[i]);
+			my_printf("%c",b[i]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

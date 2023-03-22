@@ -6,9 +6,9 @@ int main_bench()
 	int i,num,jieguo;
 	for(i=1;i<=6;i++)
 	{
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		jieguo=reverse(num);
-		printf("%d\n",jieguo);
+		my_printf("%d\n",jieguo);
 	}
 	return 0;
 }

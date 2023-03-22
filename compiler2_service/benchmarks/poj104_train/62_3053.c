@@ -12,6 +12,6 @@ char jz[2][1001];
 }
 }
 jz[1][k]='\0';
-printf("%s",jz[1]);
+my_printf("%s",jz[1]);
 return 0;
 }

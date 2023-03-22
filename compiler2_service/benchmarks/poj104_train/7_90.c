@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,a,b,c,m,d,k,v=0;
 	char str[100],substr[100],rep[100];
-	scanf("%s%s%s",str,substr,rep);
+	my_scanf("%s%s%s",str,substr,rep);
 	a=strlen(str);
 	b=strlen(substr);
 	for(i=0;i<a;i++)
@@ -30,6 +30,6 @@ int main_bench()
 		   }
 		   if(v==1)
 			   break;
-	} printf("%s",str);
+	} my_printf("%s",str);
 	return 0;
 }

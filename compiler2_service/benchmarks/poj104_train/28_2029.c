@@ -12,8 +12,8 @@ int main_bench(){
         }else{wordlen++;}
     }a[k]=wordlen;
     for(i=0;i<k;i++){
-        printf("%d,",a[i]);
-    }printf("%d",a[k]);
+        my_printf("%d,",a[i]);
+    }my_printf("%d",a[k]);
         return 0;
     }
 

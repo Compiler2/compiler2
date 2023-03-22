@@ -21,11 +21,11 @@ int main_bench()
 
 	int judge=strcmp(ch1,ch2);
 	if(judge<0)
-		printf("<");
+		my_printf("<");
 	else if(judge>0)
-		printf(">");
+		my_printf(">");
 	else if(judge==0)
-		printf("=");
+		my_printf("=");
 }
 
 

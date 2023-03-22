@@ -10,9 +10,9 @@ int main_bench()
 	for(i=0;i<n-1;i++)
 	{
 		m=(int)(*(s+i))+(int)(*(s+i+1));
-		printf("%c",m);
+		my_printf("%c",m);
 	}
 	m=(int)(*(s+n-1))+(int)(*(s+0));
-	printf("%c",m);
+	my_printf("%c",m);
 }
 

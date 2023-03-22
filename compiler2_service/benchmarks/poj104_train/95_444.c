@@ -24,13 +24,13 @@ int main_bench()
 		if (s[k]!=S[k])
 		{b=1;}
 		 if (s[k]>S[k])
-		{printf (">");break;}
+		{my_printf (">");break;}
 		  if (s[k]<S[k])
-		{printf ("<");break;}
+		{my_printf ("<");break;}
 		
 	}
 	if (b==0)
-	{printf("=");}
+	{my_printf("=");}
 	  return 0;
 }
 

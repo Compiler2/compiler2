@@ -2,14 +2,14 @@
 
 int main_bench(){
     int n,i,k,s,t,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct q
     {
         int a,b;
     }
     m[n],e;
     for(i=0;i<n;i++){
-        scanf("%d %d",&(m[i].a),&(m[i].b));
+        my_scanf("%d %d",&(m[i].a),&(m[i].b));
     }
     for(k=1;k<=n;k++){
         for(i=0;i<n-k;i++){
@@ -43,9 +43,9 @@ int main_bench(){
         }
     }
     if(s>0){
-        printf("no");
+        my_printf("no");
     }else{
-        printf("%d %d",m[0].a,t);
+        my_printf("%d %d",m[0].a,t);
     }
     return 0;
 }

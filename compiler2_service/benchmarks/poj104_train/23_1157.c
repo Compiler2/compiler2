@@ -10,13 +10,13 @@ for(i=strlen(str)-1;i>=0;i--)
    {
 	if(str[i]==' ')
 	{for(j=i+1;j<a;j++)
-	 printf("%c",str[j]);
-	 printf(" ");
+	 my_printf("%c",str[j]);
+	 my_printf(" ");
 	 a=i;
 	}
    }
 for(i=0;i<strlen(str);i++)
 if(str[i]==' ')break;
 for(j=0;j<i;j++)
-printf("%c",str[j]);
+my_printf("%c",str[j]);
 }

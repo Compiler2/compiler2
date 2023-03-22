@@ -4,12 +4,12 @@ main_bench()
 {
     char a[1000],b[1000]; 
     int r,i,l,m;
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     if(l==1)
-    printf("0\n%d",a[0]-'0'); 
+    my_printf("0\n%d",a[0]-'0'); 
     else if(l==2&&a[0]-'0'==1&&a[1]-'0'<3)
-    printf("0\n%d",10+a[1]-'0');         
+    my_printf("0\n%d",10+a[1]-'0');         
     else               
          {
                     if(a[0]-'0'==1&&a[1]-'0'<=2)
@@ -38,7 +38,7 @@ main_bench()
                               }   
                           b[l-1]='\0';
                         }
-                   printf("%s\n%d",b,r);
+                   my_printf("%s\n%d",b,r);
          }
    getchar();
    getchar();     

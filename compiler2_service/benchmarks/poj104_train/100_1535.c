@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300],i;
 	int k,x,n,y=0;
-	scanf("%s",a);
+	my_scanf("%s",a);
     n=strlen(a);
 	for(i='A';i<='Z';i++){
 		k=0;
@@ -13,7 +13,7 @@ int main_bench()
 				k++;
 		}
 		if(k!=0){
-			printf("%c=%d\n",i,k);
+			my_printf("%c=%d\n",i,k);
 			y=1;
 		}
 	}
@@ -24,10 +24,10 @@ int main_bench()
 				k++;
 		}
 			if(k!=0){
-			printf("%c=%d\n",i,k);
+			my_printf("%c=%d\n",i,k);
 			y=1;}
 	}
 	if(y==0)
-		printf("No");
+		my_printf("No");
 	return 0;
 }

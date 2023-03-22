@@ -3,14 +3,14 @@
 int main_bench()
 {
 int n,m,i,j,a[1000],time=0,s=0,temp;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(j=0;j<=100;j++) a[j]=0;
  for(j=1;j<=m;j++)
  {
-  scanf("%d",&temp);
+  my_scanf("%d",&temp);
   a[temp]=1;
  }          
  for(j=1;j<=100;j++)
@@ -19,9 +19,9 @@ for(i=1;i<=n;i++)
   if(a[j]==1) time+=3;
   if(time>=60) break;
  }
- printf("%d\n",s);
+ my_printf("%d\n",s);
  s=0;time=0;
 }
-scanf("%d",&n);
+my_scanf("%d",&n);
 return 0;
 }

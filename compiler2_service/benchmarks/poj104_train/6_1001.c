@@ -3,19 +3,19 @@
 int main_bench()
 {
     int i,k,row,col,ROW,sz[100][100],COL,sum[100];
-    scanf("%d", &k);
+    my_scanf("%d", &k);
     for(i=0;i<k;i++)
     {
                     sum[i]=0;
                     }
     for(i=0;i<k;i++)
     {
-                     scanf("%d %d", &ROW, &COL);  
+                     my_scanf("%d %d", &ROW, &COL);  
                      for(row=0;row<ROW;row++)
                      {
                                               for(col=0;col<COL;col++)
                                               {
-                                                                      scanf("%d", &sz[row][col]);
+                                                                      my_scanf("%d", &sz[row][col]);
                                               }
                                               }
                     if(ROW==1&&COL==1)
@@ -37,8 +37,8 @@ int main_bench()
     }
     for(i=0;i<k;i++)
     {
-    printf("%d\n", sum[i]);
+    my_printf("%d\n", sum[i]);
     }
-scanf("%d", &k);
+my_scanf("%d", &k);
 return 0;
 }

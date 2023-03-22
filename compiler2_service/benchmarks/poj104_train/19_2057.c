@@ -25,17 +25,17 @@ int main_bench(){
     
 	for(i=0;i<j;i++){
 		if(strcmp(zfc[i],bth)==0){
-			printf("%s ",th);
+			my_printf("%s ",th);
 		}
 		else{
-			printf("%s ",zfc[i]);
+			my_printf("%s ",zfc[i]);
 		}
 	}
 	if(strcmp(zfc[j],bth)==0){
-		printf("%s",th);
+		my_printf("%s",th);
 	}
 	else{
-		printf("%s",zfc[j]);
+		my_printf("%s",zfc[j]);
 	}
 	return 0;
 }

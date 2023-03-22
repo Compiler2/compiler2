@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
         int y,m1,m2,m=0,j,sum=0;
-        scanf("%d%d%d",&y,&m1,&m2);
+        my_scanf("%d%d%d",&y,&m1,&m2);
         if(m1>m2)
         {
             m=m1;
@@ -23,9 +23,9 @@ int main_bench()
                 sum=sum+mon[j];
             }
             if(sum%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
             else
-            printf("NO\n");
+            my_printf("NO\n");
         }
         else if((y%4!=0)||(y%100==0&&y%400!=0))
         {
@@ -35,9 +35,9 @@ int main_bench()
                 sum=sum+mon[j];
             }
             if(sum%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
             else
-            printf("NO\n");
+            my_printf("NO\n");
         }
     }
     

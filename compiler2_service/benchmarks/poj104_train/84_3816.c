@@ -11,12 +11,12 @@ int main_bench()	{
 
 	int n;
 	int m[101];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	for(i = 0; i < n; ++i)	{
-		scanf("%d", &m[i]);
+		my_scanf("%d", &m[i]);
 	}
 	qsort(m, n, sizeof(m[0]), cmp);
-	printf("%d\n%d\n", m[0], m[1]);
+	my_printf("%d\n%d\n", m[0], m[1]);
 	return 0;
 };

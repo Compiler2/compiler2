@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>9999)
 		y=5;
 	else if(n>999)
@@ -19,11 +19,11 @@ int main_bench()
 	d=(n-a*1000-b*100-c*10);
 	switch(y)
 	{
-	case 5:printf("10000");break;
-	case 4:printf("%d%d%d%d",d,c,b,a);break;
-	case 3:printf("%d%d%d",d,c,b);break;
-	case 2:printf("%d%d",d,c);break;
-	case 1:printf("%d",d);
+	case 5:my_printf("10000");break;
+	case 4:my_printf("%d%d%d%d",d,c,b,a);break;
+	case 3:my_printf("%d%d%d",d,c,b);break;
+	case 2:my_printf("%d%d",d,c);break;
+	case 1:my_printf("%d",d);
 	}
 	return 0;
 }

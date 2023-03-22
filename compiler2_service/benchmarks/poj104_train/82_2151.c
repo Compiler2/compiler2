@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,j,a,max=0,y=0,sz[100][2];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&(sz[i][0]),&(sz[i][1]));
+		my_scanf("%d%d",&(sz[i][0]),&(sz[i][1]));
 	}
 	for(j=0;j<n;j++){
 		y=0;
@@ -23,6 +23,6 @@ int main_bench(){
 			max=y;
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

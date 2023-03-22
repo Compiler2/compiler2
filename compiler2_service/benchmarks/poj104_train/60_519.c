@@ -3,7 +3,7 @@
 int main_bench()
 {
       int n,k,i,t,j,b = 0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[n+10];
       for (j = 1;j < n;j++)
         a[j] = 0;
@@ -20,12 +20,12 @@ int main_bench()
       {
           if((a[i+2] - 2) == i && a[i] == i)
           {
-             printf("%d %d\n",i,i+2);
+             my_printf("%d %d\n",i,i+2);
              b = b + 1;
           }
       }
       if (b == 0)
-        printf("empty");
+        my_printf("empty");
 return 0;
 }
 

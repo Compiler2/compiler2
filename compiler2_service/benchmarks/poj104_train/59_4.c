@@ -5,7 +5,7 @@ int main_bench(){
 	int a[103][103];
 	int i,j,count=0;
 	char c[103];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n+2;i++){
 		a[0][i]=-1;
 		a[n+1][i]=-1;
@@ -14,7 +14,7 @@ int main_bench(){
 	}
 
 	for(i=1;i<=n;i++){
-		scanf("%s",c);
+		my_scanf("%s",c);
 		for(j=0;j<n;j++){
 			if(c[j]=='.')
 				a[i][j+1]=0;
@@ -27,7 +27,7 @@ int main_bench(){
 		}
 	
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int k=2;
 	for(k=2;k<=m;k++){
 		for(i=1;i<=n;i++){
@@ -50,7 +50,7 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d\n",count);
+	my_printf("%d\n",count);
 	
 	return 0; 
 }

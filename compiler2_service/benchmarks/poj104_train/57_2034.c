@@ -5,13 +5,13 @@ int main_bench()
 	int n,m,i,j,l;
 	char a[50];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l=strlen(a);
-		if (a[l-1]=='g') {for (j=0;j<=l-4;j++) printf("%c",a[j]);printf("\n");}
-		else {for (j=0;j<=l-3;j++) printf("%c",a[j]);printf("\n");}
+		if (a[l-1]=='g') {for (j=0;j<=l-4;j++) my_printf("%c",a[j]);my_printf("\n");}
+		else {for (j=0;j<=l-3;j++) my_printf("%c",a[j]);my_printf("\n");}
 	}
 
 

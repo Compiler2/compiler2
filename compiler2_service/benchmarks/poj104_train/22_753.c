@@ -6,8 +6,8 @@ int main_bench()
 	char c;
 	for(i=1;i>0;)
 	{
-		scanf("%d",&a);
-		scanf("%c",&c);
+		my_scanf("%d",&a);
+		my_scanf("%c",&c);
 		if(a>m)
 		{
 			n=m;
@@ -16,8 +16,8 @@ int main_bench()
 		else if(a>n&&a<m) n=a;
 		if (c=='\n') break;
 	}
-	if(n!=0) printf("%d",n);
-	else printf("No");
+	if(n!=0) my_printf("%d",n);
+	else my_printf("No");
 
 	return 0;
 }

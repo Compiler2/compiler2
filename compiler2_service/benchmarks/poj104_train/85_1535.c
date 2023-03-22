@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,sum[100],c;
 	char str[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -35,9 +35,9 @@ int main_bench()
 		c=strlen(str[i]);
 		if(sum[i]==c)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 		return 0;

@@ -10,7 +10,7 @@ main_bench()
       {
         for(j=0;j<5;j++)
         {
-           scanf("%d",&a[i][j]);
+           my_scanf("%d",&a[i][j]);
         } 
       }
       for(i=0;i<5;i++)
@@ -42,10 +42,10 @@ main_bench()
         if(y[x[i]]==i)
         {
           k++;
-          printf("%d %d %d\n",i+1,x[i]+1,a[i][x[i]]);
+          my_printf("%d %d %d\n",i+1,x[i]+1,a[i][x[i]]);
         } 
       }
       if(k==0)                                  
-      printf("not found");
+      my_printf("not found");
 
 }

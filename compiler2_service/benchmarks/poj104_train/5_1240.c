@@ -3,12 +3,12 @@
 int main_bench(){
 	double e;
 	char zf[2][501],count=0,c,w=0;
-    scanf("%lf%c",&e,&c);
+    my_scanf("%lf%c",&e,&c);
 	gets(zf[0]);
 	gets(zf[1]);
     int a=strlen(zf[0]),b=strlen(zf[1]);
 	if(a!=b){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(int m=0;m<a;m++){
 			for(int o=0;o<2;o++){
@@ -18,7 +18,7 @@ int main_bench(){
 			}
 		}
 		if(w!=0){
-			printf("error");
+			my_printf("error");
 		}else{
 		for(int i=0;i<a;i++){
 			if(zf[0][i]==zf[1][i]){
@@ -26,9 +26,9 @@ int main_bench(){
 			}
 		}
 		if(1.0*count/a>e){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 		}
 	}

@@ -18,10 +18,10 @@ int main_bench()
 		ch[a]=1;
 	
 	}
-	scanf("%d",&c);
+	my_scanf("%d",&c);
 	for(d=2;d<=(c/2);d++)
     {    if(ch[d]*ch[c-d]==1)
-			printf("%d %d\n",d,c-d);
+			my_printf("%d %d\n",d,c-d);
 
 	}
 	return 0;

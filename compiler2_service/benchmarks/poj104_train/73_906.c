@@ -9,7 +9,7 @@ main_bench()
      {
             for(b=0;b<=4;b++)
             {
-                scanf("%d",&x[a][b]);
+                my_scanf("%d",&x[a][b]);
             }
         }
       for(a=0;a<=4;a++)
@@ -36,12 +36,12 @@ main_bench()
             }
             if(e==5)
             {
-                printf("%d %d %d\n",a+1,b+1,x[a][b]);
+                my_printf("%d %d %d\n",a+1,b+1,x[a][b]);
                 f=1;
             }
             else;
         }
         if(f==0)
-        printf("not found");
+        my_printf("not found");
         else;
 }

@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int a,b,c,d,max,second,n;
-	scanf("%d%d",&n,&b);
+	my_scanf("%d%d",&n,&b);
 	a=1;
 	max=b;
 	second=0;
 	while(a<n){
-         scanf("%d",&c);
+         my_scanf("%d",&c);
 		 if(c>=max){
 			d=max;
 			max=c;
@@ -20,7 +20,7 @@ int main_bench(){
 		 
 		 a+=1;
 	}
-	printf("%d\n%d\n",max,second);
+	my_printf("%d\n%d\n",max,second);
 	return 0;
 }
 

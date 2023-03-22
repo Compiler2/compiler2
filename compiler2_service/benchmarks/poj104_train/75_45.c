@@ -6,13 +6,13 @@ int main_bench()
 	char x=',';
 	while(x!='\n')
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
         x=getchar();
 		i++;
 	}
 	n=i;
 	for(i=0;i<n;i++)
-		scanf("%d%c",&b[i],&x);
+		my_scanf("%d%c",&b[i],&x);
 	min=a[0];max=b[0];
 	for(i=0;i<n;i++)
 	{
@@ -26,6 +26,6 @@ for(i=min;i<=max;i++)
 			if(k>s)s=k;
 			k=0;
 	}	
-	printf("%d %d",n,s);
+	my_printf("%d %d",n,s);
 }
 

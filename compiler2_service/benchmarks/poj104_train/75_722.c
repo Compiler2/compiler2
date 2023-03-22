@@ -11,14 +11,14 @@ int main_bench()
 	char c=',';
 	while(c==',')      
 	{
-	    scanf("%d%c",&d,&c);
+	    my_scanf("%d%c",&d,&c);
 	    inout[n][0]=d;
 	    n++;
 	}
-	scanf("%d",&inout[0][1]);
+	my_scanf("%d",&inout[0][1]);
 	for(i=1;i<n;i++)             
 	{
-		scanf(",%d",&inout[i][1]);
+		my_scanf(",%d",&inout[i][1]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -34,6 +34,6 @@ int main_bench()
 		if(max<num[i])
 			max=num[i];
 	}
-	printf("%d %d",n,max);
+	my_printf("%d %d",n,max);
 	return 0;
 }

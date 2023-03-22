@@ -31,14 +31,14 @@ main_bench()
 	a[1]=0;
 	for(i=2;i<=1000000;i++) if (a[i]==1)
 		for(j=2;j<=1000000/i;j++) a[i*j]=0;
-	scanf("%ld %ld",&m,&n);
+	my_scanf("%ld %ld",&m,&n);
 	flag=0;
 	for(i=m;i<=n;i++) if ((a[i]!=0)&&check(i)) 
 	{
-		if (flag==0) printf("%ld",i);
-		else printf(",%ld",i);
+		if (flag==0) my_printf("%ld",i);
+		else my_printf(",%ld",i);
 		flag=1;
 	}
-	if (flag==0) printf("no");
-	printf("\n");
+	if (flag==0) my_printf("no");
+	my_printf("\n");
 }	

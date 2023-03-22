@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,x1,y1,x2,y2,situ=1;
 	int a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if(a[i][j]==0){
 				y2=i;x2=j;
 			}
@@ -24,7 +24,7 @@ int main_bench()
 		}
 	}
 	n=(x2-x1+1)*(y2-y1+1)-(2*(x2-x1+1)+2*(y2-y1+1)-4);
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 
 }

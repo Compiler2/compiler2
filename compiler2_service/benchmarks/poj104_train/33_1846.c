@@ -3,9 +3,9 @@
 int main_bench(){
 	int n;
 	char DNA[1000][256],*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%s",DNA[i]);
+		my_scanf("%s",DNA[i]);
 		for(p=DNA[i];*p!='\0';p++){
 			if(*p=='A'){
 				*p='T';
@@ -23,7 +23,7 @@ int main_bench(){
 	}
 	
 	for(int j=0;j<n;j++){
-		printf("%s\n",DNA[j]);
+		my_printf("%s\n",DNA[j]);
 	}
 
 	return 0;

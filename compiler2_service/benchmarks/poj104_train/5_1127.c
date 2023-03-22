@@ -4,12 +4,12 @@ int main_bench(){
 	int sum=0,lena,lenb,i,c;
 	char yi[501],er[501];
 	double rate,a;
-	scanf("%lf",&a);
-	scanf("%s%s",yi,er);
+	my_scanf("%lf",&a);
+	my_scanf("%s%s",yi,er);
 	lena=strlen(yi);
 	lenb=strlen(er);
 	if(lenb!=lena){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<lena;i++){
 			if(yi[i]==0){
@@ -22,16 +22,16 @@ int main_bench(){
 				}
 			}else{
 				c=1;
-				printf("error");
+				my_printf("error");
 				break;
 			}
 		}
 		rate=sum*1.0/lena;
 		if(c!=1){
 		if(rate>a){
-			printf("yes");
+			my_printf("yes");
 		}else if(rate<=a){
-			printf("no");
+			my_printf("no");
 		}
 		}
 	}

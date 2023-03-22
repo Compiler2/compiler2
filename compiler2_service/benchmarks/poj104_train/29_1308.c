@@ -5,17 +5,17 @@ double f(double y);
 int main_bench()
 {
 	int m,i;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++)
 	{
 		double a=0.0,n;
-		scanf("%lf",&n);
+		my_scanf("%lf",&n);
 		int k=1;
 		for(k=1;k<=n;k++)
 		{
 			a=a+(F(k)/f(k));
 		}
-		printf("%.3lf\n",a);
+		my_printf("%.3lf\n",a);
 	}
 	return 0;
 }

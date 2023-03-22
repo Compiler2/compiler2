@@ -4,19 +4,19 @@ int main_bench()
 {
 char n[100];
 int a,b[100],c[99],i,j,p,q;
-scanf("%s",n);
+my_scanf("%s",n);
 a=strlen(n);
 for(i=0;i<a;i++)
 b[i]=n[i]-'0';
 if(a==1)
 {
-printf("0\n");
-printf("%d",b[0]);
+my_printf("0\n");
+my_printf("%d",b[0]);
 }
 else if(a==2&&10*b[0]+b[1]<13)
 {
-printf("0\n");
-printf("%d",10*b[0]+b[1]);
+my_printf("0\n");
+my_printf("%d",10*b[0]+b[1]);
 }
 else
 {
@@ -33,10 +33,10 @@ for(i=0;i<a-1;i++)
 if(i==0&&c[i]==0)
 continue;
 else if(i==a-2)
-printf("%d\n",c[i]);
+my_printf("%d\n",c[i]);
 else
-printf("%d",c[i]);
+my_printf("%d",c[i]);
 }
-printf("%d",q);
+my_printf("%d",q);
 }
 }

@@ -27,7 +27,7 @@ int main_bench()
 		{
 			answer=0;
 		}
-		printf("%d\n",answer);
+		my_printf("%d\n",answer);
 	}
 	return 0;
 }

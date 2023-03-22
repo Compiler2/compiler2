@@ -5,8 +5,8 @@ int main_bench()
 {
 	int i,j,k,l1,l2,l3,e=0,sum=0;
 	char s[300],z[300],h[300];
-	scanf("%s",z); 
-	scanf("%s",s);
+	my_scanf("%s",z); 
+	my_scanf("%s",s);
 
 	l2=strlen(s);  
 	l1=strlen(z);
@@ -25,7 +25,7 @@ int main_bench()
 	
 		if (e==l1)
 		{
-            printf("%d",i);
+            my_printf("%d",i);
 			sum++;
 			break;
 
@@ -33,6 +33,6 @@ int main_bench()
 		}
 	}
 	if (sum==0)
-		printf(" ");
+		my_printf(" ");
 	return 0;
 }

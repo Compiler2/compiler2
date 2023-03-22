@@ -4,10 +4,10 @@
 main_bench()
 {
       int n,a[100],b[100],A=0,B=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(int i=0;i<n;i++)
       {
-              scanf("%d%d",&a[i],&b[i]);
+              my_scanf("%d%d",&a[i],&b[i]);
               if(a[i]==b[i])
               {
               A=A+1;
@@ -27,10 +27,10 @@ main_bench()
               B=B+1;
       }
       if(A>B)
-      printf("A");
+      my_printf("A");
       else if(A<B)
-      printf("B");
+      my_printf("B");
       else
-      printf("Tie");
+      my_printf("Tie");
       
       }

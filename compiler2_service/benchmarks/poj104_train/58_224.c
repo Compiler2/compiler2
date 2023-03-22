@@ -32,7 +32,7 @@ void judge2(char *p)
 int main_bench()
 {
 	int num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 
 	int i;
 	char (*p)[30];
@@ -47,11 +47,11 @@ int main_bench()
 		judge2(*p);
 		if(judge==0)
 		{
-			printf("0\n");
+			my_printf("0\n");
 		}
 		if(judge==1)
 		{
-			printf("1\n");
+			my_printf("1\n");
 		}	
 	}
 	return 0;

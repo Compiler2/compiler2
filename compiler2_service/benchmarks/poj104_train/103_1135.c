@@ -20,6 +20,6 @@ int main_bench()
 			a[j]++;
 		}
 	for(i=0;i<=j;i++)
-		printf("(%c,%d)",c[i],a[i]);
+		my_printf("(%c,%d)",c[i],a[i]);
 	return 0;
 }

@@ -2,23 +2,23 @@
 
 int main_bench(){
  int n,i,j;
- scanf("%d",&n);
- scanf("\n");
+ my_scanf("%d",&n);
+ my_scanf("\n");
  char str[256];
  for(i=0;i<n;i++){
-  scanf("%s",str);
+  my_scanf("%s",str);
   for(j=0;str[j];j++){
    if(str[j]=='A'){
-    printf("T");
+    my_printf("T");
    }else if(str[j]=='T'){
-   printf("A");
+   my_printf("A");
    }else if(str[j]=='C'){
-   printf("G");
+   my_printf("G");
    }else if(str[j]=='G'){
-   printf("C");
+   my_printf("C");
    }
   }
-  printf("\n");
+  my_printf("\n");
 }
   return 0;
  }

@@ -16,17 +16,17 @@ int main_bench()
   
     if (a[i]>b[i])
     {    
-         printf(">");
+         my_printf(">");
          break;
     }    
      
     else
     if(a[i]<b[i])
     {
-        printf("<");
+        my_printf("<");
        break;
      }
   }      
   if(i>=len)
-    printf("=");
+    my_printf("=");
 }

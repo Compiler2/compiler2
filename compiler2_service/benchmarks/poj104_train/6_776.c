@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int m,n;
 	int a[100][100];
 	int i;
@@ -12,12 +12,12 @@ int main_bench()
     int sum[100]={0};
 	for(e=0;e<k;e++)
 	{
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
 		for(i=0;i<m;i++)
 		{
 			for(j=0;j<n;j++)
 			{	
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 			}
 		}
 		for(j=0;j<n;j++)
@@ -39,7 +39,7 @@ int main_bench()
 	}
     for(e=0;e<k;e++)
 	{
-		printf("%d\n",sum[e]);
+		my_printf("%d\n",sum[e]);
 	}
 	return 0;
 }

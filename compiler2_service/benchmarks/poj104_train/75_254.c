@@ -6,18 +6,18 @@ int main_bench()
 	char c;
 	while(1)
 	{
-		n++;scanf("%d",&a[n]);scanf("%c",&c);
+		n++;my_scanf("%d",&a[n]);my_scanf("%c",&c);
 		if(c=='\n')
 			break;
 	}
 	for(k=1;k<=n;k++)
 	{
 		if(k!=n)
-			scanf("%d,",&b[k]);
+			my_scanf("%d,",&b[k]);
 		else
-			scanf("%d",&b[k]);
+			my_scanf("%d",&b[k]);
 	}
-	printf("%d ",n);
+	my_printf("%d ",n);
 	int i,j;
 	int s[1001]={0},max=0;
 	for(i=0;i<=999;i++)
@@ -30,6 +30,6 @@ int main_bench()
 		if(s[i]>max)
 			max=s[i];
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 
 }

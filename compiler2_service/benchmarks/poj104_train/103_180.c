@@ -24,18 +24,18 @@ main_bench()
             }
             else 
             {
-                 printf("(%c,%d)",a[i],p);
+                 my_printf("(%c,%d)",a[i],p);
                  p=1;
             }
             if (a[i+2]=='\0')
             {
                  if (a[i]==a[i+1])
                  {
-                 printf("(%c,%d)",a[i],p); 
+                 my_printf("(%c,%d)",a[i],p); 
                  }
                  else
                  {
-                 printf("(%c,%d)",a[i+1],p);
+                 my_printf("(%c,%d)",a[i+1],p);
                  }
             }
             i++;
@@ -45,11 +45,11 @@ main_bench()
                      if   (a[0]>='a'&&a[0]<='z')
                      {
                             a[0]=a[0]+'A'-'a';
-                            printf("(%c,%d)",a[0],1);
+                            my_printf("(%c,%d)",a[0],1);
                      }
                      else     
                      {
-                            printf("(%c,%d)",a[0],1);
+                            my_printf("(%c,%d)",a[0],1);
                      }
        }
       getchar();getchar();getchar();getchar();getchar();

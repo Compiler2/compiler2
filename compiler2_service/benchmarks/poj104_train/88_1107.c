@@ -11,9 +11,9 @@ int main_bench()
 		{
 			while((s[i]>='0')&&(s[i]<='9')&&(i<strlen(s)))
 			{
-				printf("%c",s[i++]);
+				my_printf("%c",s[i++]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

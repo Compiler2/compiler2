@@ -3,7 +3,7 @@
 int main_bench()
 {int i,j,k,max=0,t,len,n,b[501]={0};
 char a[501]={'\0'};
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 gets(a);
 len=strlen(a);
@@ -29,15 +29,15 @@ for(i=0;i<len-n+1;i++)
 	break;
 	}
 if(!t)
-	{printf("NO");
+	{my_printf("NO");
 	return;
 	}
-printf("%d\n",max);
+my_printf("%d\n",max);
 for(i=0;i<len-n+1;i++)
 	if(b[i]==max)
 	{	for(j=0;j<n;j++)
-		{printf("%c",a[i+j]);
+		{my_printf("%c",a[i+j]);
 		}
-	printf("\n");
+	my_printf("\n");
 	}
 }

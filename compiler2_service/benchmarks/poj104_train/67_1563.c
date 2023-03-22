@@ -4,11 +4,11 @@ main_bench()
 {
       int n ;
       double x,y;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(int i=0;i<n;i++)
       {
          int a,b;
-         scanf("%d %d",&a,&b);
+         my_scanf("%d %d",&a,&b);
          if(i==0)
          { 
             x=(double)b/a;
@@ -19,11 +19,11 @@ main_bench()
               y=(double)b/a;
          }
          if(y-x>0.05)
-         printf("better\n");
+         my_printf("better\n");
          else if(x-y>0.05)
-         printf("worse\n");
+         my_printf("worse\n");
          else
-          printf("same\n");
+          my_printf("same\n");
       }
     getchar();
     getchar(); 

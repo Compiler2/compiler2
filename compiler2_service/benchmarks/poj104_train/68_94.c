@@ -40,7 +40,7 @@ void AllPrimes(int n)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int j;
 	
 	AllPrimes(n);
@@ -57,7 +57,7 @@ int main_bench()
 			isPrime2 = isPrimeNumber(j-i);
 			if( isPrime1 && isPrime2 )
 			{
-				printf("%d=%d+%d\n", j, i, j-i);
+				my_printf("%d=%d+%d\n", j, i, j-i);
 				break;
 			}
 		}

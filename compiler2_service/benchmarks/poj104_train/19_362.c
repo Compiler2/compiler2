@@ -53,8 +53,8 @@ int main_bench()
 	}
 	for (d=0;d<e;d++)
 	{
-		printf("%s ",c[d]);
+		my_printf("%s ",c[d]);
 	}
-	printf("%s\n",c[e]);
+	my_printf("%s\n",c[e]);
 }
 	

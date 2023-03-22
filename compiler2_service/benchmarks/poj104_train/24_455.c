@@ -37,6 +37,6 @@ int main_bench()
 		}
 	}
 	
-	printf("%s\n",a[maxnum]);
-	printf("%s\n",a[minnum]);
+	my_printf("%s\n",a[maxnum]);
+	my_printf("%s\n",a[minnum]);
 }

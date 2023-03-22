@@ -5,7 +5,7 @@ main_bench()
       int t,i,j,k;
       char c[100000];
       int a[26];
-      scanf("%d\n",&t);
+      my_scanf("%d\n",&t);
       for(i=0;i<t;i++)
       {
                    int a[26]={0};   
@@ -46,12 +46,12 @@ main_bench()
                    {
                                                                  if(a[c[j]-97]==1)
                                                                  {
-                                                                                  printf("%c\n",c[j]);
+                                                                                  my_printf("%c\n",c[j]);
                                                                                   k++;
                                                                                   break;
                                                                  }
                    }
-                   if(k==0)printf("no\n");
+                   if(k==0)my_printf("no\n");
                    
       }
 }                                                 

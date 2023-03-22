@@ -4,14 +4,14 @@
 main_bench()
 {
       char a[100];
-      scanf("%s",a);
+      my_scanf("%s",a);
       char b[100]={0};
       int i,n,c,d;
       n=strlen(a);
       if(n==1)
-         printf("0\n%c\n",a[0]);
+         my_printf("0\n%c\n",a[0]);
       else if(n==2&&(a[0]-'0')*10+a[1]-'0'<13)
-         printf("0\n%c%c\n",a[0],a[1]);
+         my_printf("0\n%c%c\n",a[0],a[1]);
       else
       {
       c=(a[0]-'0')*10+(a[1]-'0');
@@ -33,8 +33,8 @@ main_bench()
              break;
       }
       for(k=j;k<n;k++)
-         printf("%c",b[k]);
-      printf("\n");
-      printf("%d\n",d);
+         my_printf("%c",b[k]);
+      my_printf("\n");
+      my_printf("%d\n",d);
       }
       }

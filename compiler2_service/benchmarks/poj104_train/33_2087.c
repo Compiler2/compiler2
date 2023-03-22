@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int len[n];
     char sz[n][300];
     for(i=0;i<n;i++){
-    scanf("%s\n",sz[i]);
+    my_scanf("%s\n",sz[i]);
     }
     int j;
     for(i=0;i<n;i++){
@@ -28,7 +28,7 @@ int main_bench()
               sz[i][j]='C';          
            }
         }
-        printf("%s\n",sz[i]);
+        my_printf("%s\n",sz[i]);
      }
      return 0;
 }

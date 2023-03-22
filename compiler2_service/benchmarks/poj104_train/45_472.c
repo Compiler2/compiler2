@@ -7,7 +7,7 @@ int main_bench()
 	int n,m1,m2;
 	p1=c1;
 	p2=c2;
-	scanf("%s%s",p1,p2);
+	my_scanf("%s%s",p1,p2);
 	m1=strlen(p1);
 	m2=strlen(p2);
 	for (q=p2;q<=p2+m2-1;q++)
@@ -22,7 +22,7 @@ int main_bench()
 			}
 			if (n==0)
 			{
-				printf("%d\n",q-p2);
+				my_printf("%d\n",q-p2);
 				break;
 			}
 		}

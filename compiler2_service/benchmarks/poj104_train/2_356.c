@@ -9,10 +9,10 @@ struct book
 int main_bench()
 {   char zm,max;
 	int n,i,k,num,cishu=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-                scanf("%d %s",&book[i].num,&book[i].peo);
+                my_scanf("%d %s",&book[i].num,&book[i].peo);
 	}
    for(zm='A';zm<='Z';zm++){
 	  	 num=0;
@@ -27,12 +27,12 @@ int main_bench()
 		     max=zm;	 
 		   }
 		}
-	printf("%c\n",max);
-	printf("%d\n",cishu);
+	my_printf("%c\n",max);
+	my_printf("%d\n",cishu);
          for(i=0;i<n;i++){
             for(k=0;k<26;k++){
                    if(book[i].peo[k]==max)
-           	   printf("%d\n",book[i].num);
+           	   my_printf("%d\n",book[i].num);
 		}
 	}
 	return 0;

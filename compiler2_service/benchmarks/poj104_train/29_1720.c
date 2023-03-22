@@ -10,16 +10,16 @@ double f(int n)
 int main_bench()
 {
     int m,n,i,j;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++)
 	{
 		double s=0.0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=1;j<=n;j++)
 		{
 			s+=f(j);
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

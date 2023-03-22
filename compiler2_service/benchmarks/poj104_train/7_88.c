@@ -20,18 +20,18 @@ int main_bench()
           t=i;
           if(t!=0){
              for(k=0;k<t;k++){
-                printf("%c",s[k]);
+                my_printf("%c",s[k]);
                 q=1;
                 }
              }
           for(l=0;l<n;l++){
-             printf("%c",b[l]);
+             my_printf("%c",b[l]);
              }
           if(s[m+t]!='\0'){
              for(k=m+t;k<p;k++){
-                printf("%c",s[k]);
+                my_printf("%c",s[k]);
                 }
-                printf('\0');
+                my_printf('\0');
                 q=1;
              }
           if(q==1)  break;
@@ -40,7 +40,7 @@ int main_bench()
        }
        if(q==1)  break;
        }
-       if(q==0)  printf("%s",s);
-       scanf("%d",&o);
+       if(q==0)  my_printf("%s",s);
+       my_scanf("%d",&o);
     return 0;
 }           

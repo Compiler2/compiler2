@@ -27,18 +27,18 @@ int lie(int l)
 int main_bench()
 {
 	int i,j;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	for(i=0;i<m;i++)
 		if(lie(hang(i))==i)
 		{
-			printf("%d+%d",i,hang(i));
+			my_printf("%d+%d",i,hang(i));
 			break;
 		}
 	if(i==m)
-		printf("No");
+		my_printf("No");
 }

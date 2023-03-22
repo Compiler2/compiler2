@@ -4,11 +4,11 @@ int a[1000][1000];
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int i,j;
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	int a1=-1,a2=-1,b1=-1,b2=-1;
@@ -34,5 +34,5 @@ int main_bench()
 			if(a[i][j]!=0) sum+=1;
 		}
 	}
-	printf("%d\n",sum);	
+	my_printf("%d\n",sum);	
 }

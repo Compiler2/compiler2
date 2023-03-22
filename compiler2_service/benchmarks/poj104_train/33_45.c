@@ -4,20 +4,20 @@ int main_bench()
 {
 	int n,i,j=0;
 	char s[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		j=0;
-		scanf("%s",s);
+		my_scanf("%s",s);
 	while(s[j]!='\0')
 	{
-		if(s[j]=='A')printf("T");
-		if(s[j]=='T')printf("A");
-		if(s[j]=='G')printf("C");
-		if(s[j]=='C')printf("G");
+		if(s[j]=='A')my_printf("T");
+		if(s[j]=='T')my_printf("A");
+		if(s[j]=='G')my_printf("C");
+		if(s[j]=='C')my_printf("G");
 		j++;
 	}
-	printf("\n");
+	my_printf("\n");
 }
 	return 0;
 }

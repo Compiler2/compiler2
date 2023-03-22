@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y,m,d;
 	int c,h,l;
-	scanf("%d%d%d%d%d%d",&y,&m,&d,&c,&h,&l);
+	my_scanf("%d%d%d%d%d%d",&y,&m,&d,&c,&h,&l);
 	int day=0;
 	int a[13];
 	a[1]=31;
@@ -50,6 +50,6 @@ int main_bench()
 		}
 	}
 	day=day-d+l;
-	printf("%d",day);
+	my_printf("%d",day);
 	return 0;
 }

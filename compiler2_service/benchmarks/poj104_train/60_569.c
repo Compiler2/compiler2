@@ -3,7 +3,7 @@
 main_bench()
 {
    int n,i,j,*a,c=0,t;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    a=(int*)calloc(n+1,sizeof(int));
    for(i=1;i<=n;i++)
     *(a+i)=0;
@@ -15,13 +15,13 @@ main_bench()
    }
    for(i=3;i<n-1;i+=2)
    if(*(a+i)==1&&*(a+i+2)==1)c++;
-   if(c==0)printf("empty");
+   if(c==0)my_printf("empty");
    if(c!=0)
    for(i=3;i<n-1;i+=2)
    if(*(a+i)==1&&*(a+i+2)==1)
-   {  printf("%d %d",i,i+2);
+   {  my_printf("%d %d",i,i+2);
       c--;
-      if(c>0)printf("\n");
+      if(c>0)my_printf("\n");
    }
 
 }

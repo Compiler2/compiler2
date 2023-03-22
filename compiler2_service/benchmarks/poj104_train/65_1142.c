@@ -5,10 +5,10 @@ int main_bench()
 	int n,a=0,b=0;
 	int sz1[201],sz2[201];
 	int i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i;i<=n;i++)
 	{
-		scanf("%d%d",&sz1[i],&sz2[i]);
+		my_scanf("%d%d",&sz1[i],&sz2[i]);
 	}
 	i=0;
 	for(i;i<=n;i++)
@@ -27,11 +27,11 @@ int main_bench()
 			b+=1;
 	}
 		if(a>b)
-			printf("A");
+			my_printf("A");
 		if(a<b)
-			printf("B");
+			my_printf("B");
 		if(a==b)
-			printf("Tie");
+			my_printf("Tie");
 		return 0;
 }
 

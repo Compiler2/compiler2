@@ -18,7 +18,7 @@ int main_bench(){
         }
     }
     if(b!=0){
-        printf("error");
+        my_printf("error");
     }else{
         for(i=0;i<n;i++){
             if(q[i]==w[i]){
@@ -27,9 +27,9 @@ int main_bench(){
         }
         c=c/n;
         if(c>a){
-            printf("yes");
+            my_printf("yes");
         }else{
-            printf("no");
+            my_printf("no");
         }
     }
     return 0;

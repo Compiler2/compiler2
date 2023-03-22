@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,a[500],i,j,k,t,max;
 	char s[500];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(s);
 	for(i=0;i<strlen(s);i++){
 		a[i]=1;
@@ -23,18 +23,18 @@ int main_bench(){
 			break;
 		}
 	if(t==0)
-		printf("NO");
+		my_printf("NO");
 	else{
 		max=2;
 		for(i=0;i<strlen(s);i++)
 			if(a[i]>max)
 				max=a[i];
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<strlen(s);i++)
 			if(a[i]==max){
 				for(j=i;j<i+n;j++)
-					printf("%c",s[j]);
-				printf("\n");
+					my_printf("%c",s[j]);
+				my_printf("\n");
 			}
 	}
 	return 0;

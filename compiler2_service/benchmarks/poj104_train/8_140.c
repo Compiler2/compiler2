@@ -4,17 +4,17 @@ int main_bench()
 {
  void f(int a[2][200],int m,int n);
  int i,j,a[2][200],m,n;
- scanf("%d%d",&m,&n);
+ my_scanf("%d%d",&m,&n);
  for(i=0,j=0;j<m;j++)
-  scanf("%d",&a[0][j]);
+  my_scanf("%d",&a[0][j]);
  for(i=1,j=0;j<n;j++)
-  scanf("%d",&a[1][j]);
+  my_scanf("%d",&a[1][j]);
  f(a,m,n);
  for(i=0,j=0;j<m;j++)
-  printf("%d ",a[0][j]);
+  my_printf("%d ",a[0][j]);
  for(i=1,j=0;j<n-1;j++)
-  printf("%d ",a[1][j]);
- printf("%d",a[1][n-1]);
+  my_printf("%d ",a[1][j]);
+ my_printf("%d",a[1][n-1]);
 }
 void f(int a[2][200],int m,int n)
 {

@@ -6,7 +6,7 @@ int main_bench()
  int i,j=1;
  int c=0;
  long a=-100000,b=-100000;
- scanf("%s",t);
+ my_scanf("%s",t);
  for(i=0;;i++)
     {if(t[i]==','||t[i]=='\0')
 	    {if(c>a){b=a;a=c;}
@@ -16,7 +16,7 @@ int main_bench()
      if(t[i]=='\0')break;
      c=c*10+(int)(t[i]-'0');
 	}
- if(b==-100000)printf("No");
- else printf("%d",b);
+ if(b==-100000)my_printf("No");
+ else my_printf("%d",b);
  return 0;
 }

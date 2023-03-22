@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int y,m,d,a=0,i;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	if (y>2800){
 		y=y-(y/2800)*2800;
 	}
@@ -31,25 +31,25 @@ int main_bench(){
 	}
 	a+=d;
 	if(a%7==1){
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	}
 	else if(a%7==2){
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}
 	else if(a%7==3){
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}
 	else if(a%7==4){
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}
 	else if(a%7==5){
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}
 	else if(a%7==6){
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}
 	else if(a%7==0){
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 	return 0;
 }

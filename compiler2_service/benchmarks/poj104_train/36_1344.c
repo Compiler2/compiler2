@@ -4,13 +4,13 @@ int main_bench()
 {
 	char ch[101],str[101];
 	int i,j,k,m,n;
-	scanf("%s",ch);
+	my_scanf("%s",ch);
 	m=strlen(ch);
-	scanf("%s",str);
+	my_scanf("%s",str);
 	n=strlen(str);
 	k=0;
 	if (m!=n)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for (i=0;i<m;i++)
@@ -26,9 +26,9 @@ int main_bench()
 			}
 		}
 		if (k==m)
-		printf("YES");
+		my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 	return 0;
 }

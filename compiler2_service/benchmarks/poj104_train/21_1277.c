@@ -5,9 +5,9 @@ int main_bench()
 	int i,n,m,j=0,c=0;
 	unsigned int a[300],b[300];
 	double av,cha,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=a[i]+sum;
 	}
 	av=sum/n;
@@ -31,9 +31,9 @@ int main_bench()
             c++;
 		}
 	}
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;i<=c;i++){
-	printf(",%d",b[i]);
+	my_printf(",%d",b[i]);
 
 	}
 	return 0;

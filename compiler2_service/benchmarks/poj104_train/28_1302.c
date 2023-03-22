@@ -8,7 +8,7 @@ int main_bench()
 	int length[300] = {0};
 	while (1)
 	{
-		scanf("%c", &ch);
+		my_scanf("%c", &ch);
 		if (ch == '\n')
 		{
 			length[i] = conuter;
@@ -33,8 +33,8 @@ int main_bench()
 	}
 	for (j = 0; j < i; j++)
 	{
-		printf("%d,", length[j]);
+		my_printf("%d,", length[j]);
 	}
-	printf("%d", length[j]);
+	my_printf("%d", length[j]);
 	return 0;
 }

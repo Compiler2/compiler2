@@ -6,11 +6,11 @@ int a[5000][2];
 int i,j;
 int r;
 int t0,t1;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 { for(j=0;j<2;j++)
 { 
-scanf("%d ",&a[i][j]);
+my_scanf("%d ",&a[i][j]);
 }
 }
 for(i=0;i<n-1;i++)
@@ -33,14 +33,14 @@ for(i=0;i<n;i++)
 if(a[i][1]>r){r=a[i][1];
 }
 if(r<a[i+1][0])
-{printf("no");
+{my_printf("no");
 }
 if(r<a[i+1][0])
 {break;
 }
 }
 if(r>=a[i+1][0])
-{printf("%d %d",a[0][0],r);
+{my_printf("%d %d",a[0][0],r);
 }
 return 0;
 }

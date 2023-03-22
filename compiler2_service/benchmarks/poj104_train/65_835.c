@@ -2,9 +2,9 @@
 
 int main_bench(){
 int a[201],b[201],i,n,j=0,k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 }
 for(i=0;i<n;i++){
 if((a[i]<b[i]&&b[i]-a[i]!=2)||a[i]-b[i]==2){
@@ -13,10 +13,10 @@ if((a[i]>b[i]&&a[i]-b[i]!=2)||b[i]-a[i]==2){
 k++;}
 }
 if(j>k){
-printf("A");}
+my_printf("A");}
 if(j<k){
-printf("B");}
+my_printf("B");}
 if(j==k){
-printf("Tie");}
+my_printf("Tie");}
 return 0;
 }

@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int a[1000],*p,n,i,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=a;
 	for(i=0;i<n;i++,p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 	for(i=n-1;i>0;i--)
-		printf("%d ",*(p+i-n));
-	printf("%d",*(p-n));
+		my_printf("%d ",*(p+i-n));
+	my_printf("%d",*(p-n));
 }
 
 

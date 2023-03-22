@@ -3,16 +3,16 @@
 int test(int *,int *,int);
 int main_bench(){
 	int n,integer[300],aux,*curp,i;
-	scanf("%d%d",&n,integer);
+	my_scanf("%d%d",&n,integer);
 	n--;
 	for(curp=integer;n>0;n--){
-		scanf("%d",&aux);
+		my_scanf("%d",&aux);
 		if(test(integer,curp,aux)){
 			curp++;
 			*curp=aux;}}
 	for(i=0;integer+i<curp;i++)
-		printf("%d,",*(integer+i));
-	printf("%d\n",*curp);
+		my_printf("%d,",*(integer+i));
+	my_printf("%d\n",*curp);
 	return 0;}
 int test(int *p1,int *p2,int aux){
 	for(;p2>=p1;p2--){

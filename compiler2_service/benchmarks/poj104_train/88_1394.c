@@ -14,6 +14,6 @@ int main_bench()
         if(str[i]=='\0') str[j]='\0';
         }
         for(j=0;str[j]!='\0';j++)
-        printf("%c",str[j]);
+        my_printf("%c",str[j]);
         return 0;
         }

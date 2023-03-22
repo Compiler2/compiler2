@@ -9,11 +9,11 @@ int main_bench()
     for (i=0;i<l-1;i++)
     {
         if (isdigit(s[i]))
-        printf("%c",s[i]);
+        my_printf("%c",s[i]);
         if (isdigit(s[i])&&isdigit(s[i+1])==0)
-        printf("\n");
+        my_printf("\n");
     }
     if (isdigit(s[l-1]))
-    printf("%c",s[l-1]);
+    my_printf("%c",s[l-1]);
     return 0;
 }

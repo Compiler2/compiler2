@@ -4,9 +4,9 @@ int main_bench()
 {
 	char a[20],b[20],*p1,*p2;
 	int i=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	if(strlen(a)!=strlen(b))
-		printf("NO");
+		my_printf("NO");
 	else
 	{
         for(p1=a;p1<a+strlen(a);p1++)
@@ -17,9 +17,9 @@ int main_bench()
 			if(*p1=='0')
 				i++;
 		if(i==strlen(a))
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 	return 0;
 }

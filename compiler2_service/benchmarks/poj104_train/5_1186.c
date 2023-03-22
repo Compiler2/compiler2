@@ -4,13 +4,13 @@ int main_bench(){
 char zfc1[500],zfc2[500];
 int i,j,t,len1,len2;
 double n;
-   scanf("%lf",&n);
-   scanf("%s %s",zfc1,zfc2);
+   my_scanf("%lf",&n);
+   my_scanf("%s %s",zfc1,zfc2);
    len1=strlen(zfc1);
    len2=strlen(zfc2);
    for(i=0;zfc1[i];i++){
    if (len2!=len1||(zfc1[i]!='A'&&zfc1[i]!='T'&&zfc1[i]!='G'&&zfc1[i]!='C')||(zfc2[i]!='A'&&zfc2[i]!='T'&&zfc2[i]!='G'&&zfc2[i]!='C')){
-   printf("error");
+   my_printf("error");
    return 0;}
    }
 
@@ -25,10 +25,10 @@ double n;
 		t++;}
 	}
 	if(1.0*t/len1>n){
-	printf("yes");
+	my_printf("yes");
 	return 0;}
 	else {
-	printf("no");}
+	my_printf("no");}
 
      
 

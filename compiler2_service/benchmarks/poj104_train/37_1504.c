@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
 		char s[10002];
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int len;
 		len=strlen(s);
 		int k;
@@ -26,12 +26,12 @@ int main_bench()
 			}
 			if(number==1)
 			{
-				printf("%c\n",s[k]);
+				my_printf("%c\n",s[k]);
 				break;
 			}
 			if(k==len-1&&number!=1)
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 
 		}

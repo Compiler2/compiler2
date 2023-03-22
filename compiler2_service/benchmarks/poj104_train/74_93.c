@@ -18,14 +18,14 @@ int hui(int a)
 
 int main_bench()
 {
-	int m,n;scanf("%d %d",&m,&n);
+	int m,n;my_scanf("%d %d",&m,&n);
 	int i,l=0,a[100],*x=a;
 	
 	for(i=m;i<=n;i++)
 		{if(su(i)*hui(i)==1){l++;*x=i;x++;}
 		 else;}
-	if(x-a==0)printf("no");
+	if(x-a==0)my_printf("no");
 	else{
-		printf("%d",a[0]);
-	for(i=1;i<l;i++)printf(",%d",a[i]);
+		my_printf("%d",a[0]);
+	for(i=1;i<l;i++)my_printf(",%d",a[i]);
 }}

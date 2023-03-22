@@ -4,13 +4,13 @@ int main_bench(){
 	int first,second,tmp;
 	int n;
 	int i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
     first=-10000;
 	second=-100000;
 		do{
 			i++;
-		scanf("%d",&tmp);
+		my_scanf("%d",&tmp);
 	     if (tmp>first)
 		 {second=first;
 		 first=tmp;
@@ -24,6 +24,6 @@ int main_bench(){
 
 
 
-printf("%d\n%d",first,second);
+my_printf("%d\n%d",first,second);
 return 0;
 }

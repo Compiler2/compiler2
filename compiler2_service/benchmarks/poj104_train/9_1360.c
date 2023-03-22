@@ -10,12 +10,12 @@ int main_bench(){
 	int i,n,k,max,count;
 	struct patient inter;
 	struct patient *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct patient *sick=(struct patient*)malloc(sizeof(struct patient)*n);
 	struct patient *waitlist=(struct patient*)malloc(sizeof(struct patient)*n);
 	count=0;
 	for(i=0;i<n;i++){
-		scanf("%s %d",sick[i].A,&sick[i].age);
+		my_scanf("%s %d",sick[i].A,&sick[i].age);
 	}
 	p=waitlist;
 	for (i=0;i<n;i++)
@@ -49,7 +49,7 @@ int main_bench(){
 	}
 	for (i=0;i<n;i++)
 	{
-		printf("%s\n",waitlist[i].A);
+		my_printf("%s\n",waitlist[i].A);
 	}
 	return 0;
 }

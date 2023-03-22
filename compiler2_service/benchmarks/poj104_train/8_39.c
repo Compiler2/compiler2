@@ -4,14 +4,14 @@ int a[100],b[100],c[100],m,n;
 void input()
 {
 	int i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 }
 void az()
@@ -59,9 +59,9 @@ void output()
 	int i;
 	for(i=0;i<m+n-1;i++)
 	{
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	}
-	printf("%d",c[m+n-1]);
+	my_printf("%d",c[m+n-1]);
 }
 int main_bench()
 {

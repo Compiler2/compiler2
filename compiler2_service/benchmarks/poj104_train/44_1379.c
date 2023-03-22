@@ -6,7 +6,7 @@ int main_bench()
 {
     int sz[6],i; 
     for(i=0;i<6;i++)
-                    scanf("%d",&sz[i]);
+                    my_scanf("%d",&sz[i]);
     for(i=0;i<6;i++)
                     reverse(sz[i]);
    
@@ -18,21 +18,21 @@ int reverse(int num)
      int start=0,temp,value;
      
      if(num==0)
-               printf("0");
+               my_printf("0");
      else{
           if(num<0)
-                   printf("-");
+                   my_printf("-");
           value=fabs(num);
           do{
              temp=value%10;
              if(temp!=0)
                         start=1;
              if(start==1)
-                         printf("%d",temp);
+                         my_printf("%d",temp);
              value=value/10;
           }while(value>0);
      }
-     printf("\n");
+     my_printf("\n");
      return 0;
      
 }

@@ -7,10 +7,10 @@ int main_bench(){
     b=0;
     c=0;
     d=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int sz[n];
     for(i=0;i<n;i++){
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
     }
     for(i=0;i<n;i++){
         if(sz[i]<=18){
@@ -32,10 +32,10 @@ int main_bench(){
     y=f/m;
     z=g/m;
     t=h/m;
-    printf("1-18: %.2lf%%\n",x*100);
-    printf("19-35: %.2lf%%\n",y*100);
-    printf("36-60: %.2lf%%\n",z*100);
-    printf("Over60: %.2lf%%\n",t*100);
+    my_printf("1-18: %.2lf%%\n",x*100);
+    my_printf("19-35: %.2lf%%\n",y*100);
+    my_printf("36-60: %.2lf%%\n",z*100);
+    my_printf("Over60: %.2lf%%\n",t*100);
     return 0;
 }
 

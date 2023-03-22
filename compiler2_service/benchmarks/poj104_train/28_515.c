@@ -24,10 +24,10 @@ int main_bench()
 		else index=index;
 	}
 	if(n==0)
-		printf("%d",num[0]);
+		my_printf("%d",num[0]);
 	else{
 	for(i=0;i<n;i++)
-		printf("%d,",num[i]);
-	printf("%d",num[n]);
+		my_printf("%d,",num[i]);
+	my_printf("%d",num[n]);
 }
 }

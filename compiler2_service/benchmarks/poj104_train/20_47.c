@@ -36,7 +36,7 @@ int main_bench()
 			str[i][j]=s[j-p-4];
 		for(j=length[i]-1;j<40;j++)
 			str[i][j]='\0';
-		printf("%s\n",str[i]);
+		my_printf("%s\n",str[i]);
 	}
 }
 	

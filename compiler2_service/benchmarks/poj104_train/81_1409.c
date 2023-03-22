@@ -6,25 +6,25 @@ int main_bench(){
 	int n,m,i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(check(n,m)==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				printf("%d",array[i][j]);
+				my_printf("%d",array[i][j]);
 				if(j!=4){
-					printf(" ");
+					my_printf(" ");
 				}
 			}
 			if(i!=4){
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}
 	else if(check(n,m)==0){
-		printf("error\n");
+		my_printf("error\n");
 	}
 }
 

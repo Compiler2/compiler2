@@ -4,15 +4,15 @@ main_bench()
 {
 	char a[100][100]={0},b[100][100]={0};
 	int n,m,i,j,c[100][100],k,l;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(l=0;l<k;l++)
 	{
-	scanf("%s",a[l]);
+	my_scanf("%s",a[l]);
 	
-	scanf("%s",b[l]);
+	my_scanf("%s",b[l]);
 	
 	}
-	printf("\n");
+	my_printf("\n");
 	for(l=0;l<k;l++)
 	{
 	n=strlen(a[l]);
@@ -33,8 +33,8 @@ main_bench()
 	}
 	
 	for(i=0;i<n;i++)
-		printf("%d",c[l][i]);
-	printf("\n");
+		my_printf("%d",c[l][i]);
+	my_printf("\n");
 	}
 	return 0;
 }

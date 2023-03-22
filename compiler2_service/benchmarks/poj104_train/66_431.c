@@ -3,7 +3,7 @@
 int main_bench()
 {
 int w,c,y,m,d,Y;
-scanf("%d%d%d",&Y,&m,&d);
+my_scanf("%d%d%d",&Y,&m,&d);
 if(m==1)
 {
 Y=Y-1;
@@ -29,13 +29,13 @@ w=w%7;
 
 switch(w)
 {
-case 0:printf("Sun.\n");break;
-case 1:printf("Mon.\n");break;
-case 2:printf("Tue.\n");break;
-case 3:printf("Wed.\n");break;
-case 4:printf("Thu.\n");break;
-case 5:printf("Fri.\n");break;
-case 6:printf("Sat.\n");break;
+case 0:my_printf("Sun.\n");break;
+case 1:my_printf("Mon.\n");break;
+case 2:my_printf("Tue.\n");break;
+case 3:my_printf("Wed.\n");break;
+case 4:my_printf("Thu.\n");break;
+case 5:my_printf("Fri.\n");break;
+case 6:my_printf("Sat.\n");break;
 }
 }
 else{
@@ -43,13 +43,13 @@ else{
 
 switch(w)
 {
-case 6:printf("Sun.\n");break;
-case 0:printf("Mon.\n");break;
-case 1:printf("Tue.\n");break;
-case 2:printf("Wed.\n");break;
-case 3:printf("Thu.\n");break;
-case 4:printf("Fri.\n");break;
-case 5:printf("Sat.\n");break;
+case 6:my_printf("Sun.\n");break;
+case 0:my_printf("Mon.\n");break;
+case 1:my_printf("Tue.\n");break;
+case 2:my_printf("Wed.\n");break;
+case 3:my_printf("Thu.\n");break;
+case 4:my_printf("Fri.\n");break;
+case 5:my_printf("Sat.\n");break;
 }
 }
 return 0;

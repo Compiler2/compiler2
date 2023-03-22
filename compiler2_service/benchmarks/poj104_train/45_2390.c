@@ -19,7 +19,7 @@ int judge(int n1,int x)
 
 int main_bench()
 {
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	int i,n1=strlen(s),n2=strlen(w);
 	for(i=0;i<n2;i++)
 	{
@@ -29,6 +29,6 @@ int main_bench()
 			if(judge(n1,i)) break;
 		}
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 	return 0;
 }

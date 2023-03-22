@@ -92,7 +92,7 @@ int main_bench()
 		 if(s ==6)
 		 {
 			 a[1] = 5;a[2] = 2;a[3] = 1;a[4] = 3;a[5]  = 4;
-			 printf("%d %d %d %d %d",a[1],a[2],a[3],a[4],a[5]);
+			 my_printf("%d %d %d %d %d",a[1],a[2],a[3],a[4],a[5]);
 			 return 0;
 		 }
 		 else

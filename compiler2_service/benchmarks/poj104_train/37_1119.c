@@ -5,10 +5,10 @@ int main_bench()
 	
 	char a[10000]={0};
 	int i,j,k, n,lenth,num=-1;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		lenth=strlen(a);
 		for(j=0;j<lenth;j++)
 			for(k=0;k<lenth;k++)
@@ -24,7 +24,7 @@ int main_bench()
 				}
 				else if(j==lenth-1&&j!=k&&a[j]==a[k])
 				{
-					printf("no");
+					my_printf("no");
 					break;
 				}
 				else if(j==lenth-1&&k==lenth-1)
@@ -33,9 +33,9 @@ int main_bench()
 				}
 			}
 			if(num!=-1)
-				printf("%c\n",a[num]);
+				my_printf("%c\n",a[num]);
 			else
-				printf("no\n");
+				my_printf("no\n");
 			
 			
 			

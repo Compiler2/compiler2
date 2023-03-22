@@ -6,7 +6,7 @@ int main_bench()
   int a,b,c,i;
   int s = 1,t = 0;
   char w[7][6]={{'S','u','n','.'},{'M','o','n','.'},{'T','u','e','.'},{'W','e','d','.'},{'T','h','u','.'},{'F','r','i','.'},{'S','a','t','.'}};
-  scanf("%d%d%d",&a,&b,&c);
+  my_scanf("%d%d%d",&a,&b,&c);
   for(i = 1;i <= 400;i++)
   {
     t+=365;
@@ -29,6 +29,6 @@ int main_bench()
   s += c;
   s--;
   s%=7;
-  printf("%s\n",w[s]);
+  my_printf("%s\n",w[s]);
   return 0;    
 }

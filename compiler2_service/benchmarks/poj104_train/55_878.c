@@ -13,7 +13,7 @@ int main_bench()
    sum10=0;
    zhi=0;
    char n[50],r[50];
-   scanf("%d%s%d",&a,n,&b);
+   my_scanf("%d%s%d",&a,n,&b);
    long m[50][2],o[50][2],n2[50];
    length=strlen(n);
   
@@ -44,7 +44,7 @@ int main_bench()
     }
    
    if(sum10==0)
-   printf("0");
+   my_printf("0");
    else
    {   
    k=sum10;

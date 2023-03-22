@@ -2,7 +2,7 @@
 
 int main_bench()
 {int y,m,dt,dy,i;
-scanf("%d%d%d",&y,&m,&dt);
+my_scanf("%d%d%d",&y,&m,&dt);
 y=y%2800;
 if(y==0) y=2800;
 dy=(y-1)*365+(y-1)/4-(y-1)/100+(y-1)/400;
@@ -27,31 +27,31 @@ dy+=dt;
 dy=dy%7;
 switch(dy){
     case 1:{
-	printf("Mon.");
+	my_printf("Mon.");
 	break;
 	}
 	case 2:{
-	printf("Tue.");
+	my_printf("Tue.");
 	break;
 	}
 	case 3:{
-	printf("Wed.");
+	my_printf("Wed.");
 	break;
 	}
 	case 4:{
-	printf("Thu.");
+	my_printf("Thu.");
 	break;
 	}
 	case 5:{
-	printf("Fri.");
+	my_printf("Fri.");
 	break;
 	}
 	case 6:{
-	printf("Sat.");
+	my_printf("Sat.");
 	break;
 	}
 	case 0:{
-	printf("Sun.");
+	my_printf("Sun.");
 	break;}
 }
 

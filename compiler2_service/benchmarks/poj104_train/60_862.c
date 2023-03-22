@@ -7,7 +7,7 @@ int main_bench()
 {
 	int n,i,j=0,m=0;
 	int sz[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		if(sushu(i))
@@ -21,13 +21,13 @@ int main_bench()
 		if(sz[i+1]-sz[i]==2)
 		{
 			m++;
-			printf("%d",sz[i]);
-			printf(" %d\n",sz[i+1]);
+			my_printf("%d",sz[i]);
+			my_printf(" %d\n",sz[i+1]);
 		}
 	}
 	if(m==0)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 
 	return 0;

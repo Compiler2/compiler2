@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,a[300],i,m,j;
 	double aver,b[300],max=0,former;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	aver=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		aver=aver+a[i];
 	}
 	aver=aver/n;
@@ -39,18 +39,18 @@ int main_bench()
 			j++;
 			if(j==1)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				former=a[i];
 			}
 			else
 			{
 				if(a[i]!=former)
 				{
-					printf(",%d",a[i]);
+					my_printf(",%d",a[i]);
 					former=a[i];
 				}
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

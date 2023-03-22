@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j,judge=0,n,a[20000]={0},count1=0,count2=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=3;i<=n;i+=2)
 	{
 		count1=0;
@@ -21,10 +21,10 @@ int main_bench()
 	{
 		if((a[i+1]-a[i])==2)
 		{
-			printf("%d %d\n", a[i],a[i+1]);
+			my_printf("%d %d\n", a[i],a[i+1]);
 			judge=1;
 		}
 	}
-	if(judge==0) printf("empty\n");
+	if(judge==0) my_printf("empty\n");
     return 0;
 }

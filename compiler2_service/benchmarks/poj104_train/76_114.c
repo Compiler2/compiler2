@@ -3,11 +3,11 @@
 int main_bench(){ 
     int n,e,q;
     int sz[50000][2];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(int row=0;row<n;row++){
 		for(int col=0;col<2;col++){
-            scanf("%d",&sz[row][col]);
+            my_scanf("%d",&sz[row][col]);
 		}
 	}
     for(int m=n;m>0;m--){
@@ -30,7 +30,7 @@ int main_bench(){
 				break;
 			}
 			if(i==m){
-				printf("no");
+				my_printf("no");
 			
 				return 0;
 			}
@@ -42,7 +42,7 @@ int main_bench(){
 				q=sz[i][1];				
 			}
 		}
-    printf("%d %d",sz[0][0],q);
+    my_printf("%d %d",sz[0][0],q);
 
         return 0; 
   } 

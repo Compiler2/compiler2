@@ -12,9 +12,9 @@ int main_bench()
         if((str2[i]>='A')&&(str2[i]<='Z'))str2[i]=str2[i]+32;
 		if((str1[i]=='\0')&&(str2[i]=='\0'))break;
 	}
-	    if(strcmp(str1,str2)>0)printf(">\n");
-		else if(strcmp(str1,str2)<0)printf("<\n");
-		else printf("=\n");
+	    if(strcmp(str1,str2)>0)my_printf(">\n");
+		else if(strcmp(str1,str2)<0)my_printf("<\n");
+		else my_printf("=\n");
         return 0;
 }
 

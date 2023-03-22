@@ -27,8 +27,8 @@ int main_bench()
 			strcpy(word[j],bb);
 	}
 	for(j=0;j<num-1;j++)
-		printf("%s ",word[j]);
-	printf("%s",word[j]);
+		my_printf("%s ",word[j]);
+	my_printf("%s",word[j]);
 }
 		
 

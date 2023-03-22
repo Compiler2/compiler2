@@ -14,7 +14,7 @@ main_bench()
       b[i][j]=0;
       
       int m,n;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       a[4][4]=m;
       if(n==1)
       {
@@ -26,10 +26,10 @@ main_bench()
           for(j=0;j<9;j++)
           {
           if(j!=8)
-          printf("%d ",b[i][j]);
+          my_printf("%d ",b[i][j]);
           else
             {
-              printf("%d",b[i][j]);printf("\n"); 
+              my_printf("%d",b[i][j]);my_printf("\n"); 
             }
           
           }
@@ -50,10 +50,10 @@ main_bench()
           for(j=0;j<9;j++)
           {
           if(j!=8)
-          printf("%d ",b[i][j]);
+          my_printf("%d ",b[i][j]);
           else
             {
-              printf("%d",b[i][j]);printf("\n");
+              my_printf("%d",b[i][j]);my_printf("\n");
             }
           
           }
@@ -80,10 +80,10 @@ main_bench()
           for(j=0;j<9;j++)
           {
           if(j!=8)
-          printf("%d ",b[i][j]);
+          my_printf("%d ",b[i][j]);
           else
             {
-              printf("%d",b[i][j]);printf("\n");
+              my_printf("%d",b[i][j]);my_printf("\n");
             }
           
           }
@@ -137,10 +137,10 @@ main_bench()
           for(j=0;j<9;j++)
           {
           if(j!=8)
-          printf("%d ",b[i][j]);
+          my_printf("%d ",b[i][j]);
           else
             {
-              printf("%d",b[i][j]);printf("\n");
+              my_printf("%d",b[i][j]);my_printf("\n");
             }
           
           }

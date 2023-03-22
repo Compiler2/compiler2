@@ -36,13 +36,13 @@ int main_bench()
   int a[100];
   for(int i=0;i<=5;i++)
  { 
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
   if(a[i]>0)
-  {printf("%d\n",dao(a[i]));}
-  else{printf("%d\n",-dao(a[i]));}
+  {my_printf("%d\n",dao(a[i]));}
+  else{my_printf("%d\n",-dao(a[i]));}
   
   }
-  int y;scanf("%d",&y);
+  int y;my_scanf("%d",&y);
   return 0;
 
 }

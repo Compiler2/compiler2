@@ -9,7 +9,7 @@ int main_bench()
 	int b=0;
 	char temp;
 
-	scanf("%s %s",a[0],a[1]);
+	my_scanf("%s %s",a[0],a[1]);
 	l[0]=strlen(a[0]);
 	l[1]=strlen(a[1]);
 	if (l[0]!=l[1])
@@ -37,7 +37,7 @@ int main_bench()
 			b=1;
 	}
 	if (b==0)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

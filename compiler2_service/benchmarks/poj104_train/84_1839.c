@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a,b,max=0,sec;
 	int number[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&number[i]);
+		my_scanf("%d",&number[i]);
 		if(number[i]>max){
 			max=number[i];
 		}
@@ -21,7 +21,7 @@ int main_bench()
 		}
 	
 		b=a-sec;
-		printf("%d\n",a);
-		printf("%d\n",b);
+		my_printf("%d\n",a);
+		my_printf("%d\n",b);
 		return 0;
 	}

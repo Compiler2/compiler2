@@ -11,12 +11,12 @@ int main_bench()
 		}
 		if(c[i]==' '){
 			if(sum!=0){
-				printf("%d,",sum);
+				my_printf("%d,",sum);
 				sum=0;
 			}
 		}
 		if(c[i]=='\0'){
-			printf("%d",sum);
+			my_printf("%d",sum);
 		}
 	}
 	return 0;

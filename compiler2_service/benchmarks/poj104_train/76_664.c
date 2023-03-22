@@ -9,9 +9,9 @@ struct qj jg[50000];
 int n,i,m;
 double j;
 int sz1[50000],sz2[50000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d %d",&jg[i].a,&jg[i].b);
+	my_scanf("%d %d",&jg[i].a,&jg[i].b);
 	sz1[i]=jg[i].a;
 	sz2[i]=jg[i].b;
 }
@@ -35,12 +35,12 @@ for(j=sz1[0];j<sz2[0];j+=0.5){
 		}
 	}
 	if(m==1){
-		printf("no");
+		my_printf("no");
 		break;
 	}
 }
 if(m==0){
-	printf("%d %d",sz1[0],sz2[0]);
+	my_printf("%d %d",sz1[0],sz2[0]);
 }
 return 0;
 }

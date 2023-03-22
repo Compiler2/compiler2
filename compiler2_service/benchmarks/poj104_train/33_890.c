@@ -3,9 +3,9 @@
 int main_bench(){
 	char str[1000][256];
 	int i,p=0,n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 		for(j=0;str[i][j]!='\0';j++){
 			switch(str[i][j]){
 			case('A'):str[i][j]='T';
@@ -20,7 +20,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",str[i]);
+		my_printf("%s\n",str[i]);
 	}
 	return 0;
 }

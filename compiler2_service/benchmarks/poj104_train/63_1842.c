@@ -9,7 +9,7 @@ void scan(int x1,int y1,int a[100][100])
  for(i=0;i<x1;i++)
     {
         for(j=0;j<y1;j++)
-        scanf("%d",&a[i][j]);
+        my_scanf("%d",&a[i][j]);
      }       
       
        
@@ -29,9 +29,9 @@ int main_bench()
 {
 int x1,y1,x2,y2,i,j,k,s;
 int a[100][100]={0},b[100][100]={0},c[100][100]={0};
-scanf("%d%d",&x1,&y1);
+my_scanf("%d%d",&x1,&y1);
 scan(x1,y1,a);
-scanf("%d%d",&x2,&y2);
+my_scanf("%d%d",&x2,&y2);
 scan(x2,y2,b);  
 s=x2-1; 
 for(i=0;i<x1;i++)
@@ -46,12 +46,12 @@ for(i=0;i<x1;i++)
 for(i=0;i<x1;i++)
     {
         
-        printf("%d",c[i][0]);
+        my_printf("%d",c[i][0]);
         for(j=1;j<y2;j++)
                 {
-                    printf(" %d",c[i][j]);
+                    my_printf(" %d",c[i][j]);
                 }
-        printf("\n");
+        my_printf("\n");
     }       
 return 0;
 }

@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i,j,k,sum,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[100];
 	for(i=0;i<n;i++){
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		for(j=0;j<len;j++){
 			sum=0;
@@ -15,12 +15,12 @@ int main_bench(){
                                       }
                              }
 			if(sum==1){
-				printf("%c\n",a[j]);
+				my_printf("%c\n",a[j]);
 				break;
                              }
                    }
                    if(sum!=1){
-                                  printf("no\n"); 
+                                  my_printf("no\n"); 
                              } 
                     
           }

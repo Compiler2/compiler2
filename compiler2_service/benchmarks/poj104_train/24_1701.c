@@ -40,8 +40,8 @@ int main_bench()
 	}
 	if(pan==0)
 	{
-		printf("%s\n",b[0]);	
-		printf("%s\n",b[0]);
+		my_printf("%s\n",b[0]);	
+		my_printf("%s\n",b[0]);
 
 	}
 	else
@@ -72,7 +72,7 @@ int main_bench()
 		{
 			if(strlen(b[pp])==max)
 			{
-				printf("%s\n",b[pp]);
+				my_printf("%s\n",b[pp]);
 				break;
 			}
 		}
@@ -80,7 +80,7 @@ int main_bench()
 		{
 			if(strlen(b[pp])==min)
 			{
-				printf("%s\n",b[pp]);
+				my_printf("%s\n",b[pp]);
 				break;
 			}
 		}

@@ -6,9 +6,9 @@ int n,m,i;
 int reverse(int num);
 for(i=0;i<6;i++)
      {
-         scanf("%d",&n);
+         my_scanf("%d",&n);
          m=reverse(n);
-         printf("%d\n",m);
+         my_printf("%d\n",m);
      }
 getchar();getchar();getchar();
 }

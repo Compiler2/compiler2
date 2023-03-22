@@ -3,11 +3,11 @@
 int main_bench()
 {
   int n,a;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int year,mon1,mon2,day[12]={0};
   for (a=0;a<n;a++)
   {
-    scanf("%d %d %d",&year,&mon1,&mon2);
+    my_scanf("%d %d %d",&year,&mon1,&mon2);
     int i,j,sum;
     if ((year%4==0&&year%100!=0)||year%400==0)
     {
@@ -29,7 +29,7 @@ int main_bench()
        day[i]=sum+1;
       }
     }
-     if ((day[mon2]-day[mon1])%7==0||(day[mon1]-day[mon2])%7==0) printf("YES\n");
-     else printf("NO\n");
+     if ((day[mon2]-day[mon1])%7==0||(day[mon1]-day[mon2])%7==0) my_printf("YES\n");
+     else my_printf("NO\n");
    }
 }

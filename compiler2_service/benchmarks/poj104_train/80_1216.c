@@ -5,7 +5,7 @@ int main_bench()
 	int sY,sM,sD,eY,eM,eD;
 	int DiJiTian(int y,int m,int d);
     int isRunNian(int year);
-	scanf("%d%d%d%d%d%d",&sY,&sM,&sD,&eY,&eM,&eD);
+	my_scanf("%d%d%d%d%d%d",&sY,&sM,&sD,&eY,&eM,&eD);
 	int x,days=DiJiTian(eY,eM,eD)-DiJiTian(sY,sM,sD);
 	for(x=sY;x<eY;x++)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 		else
 			days=days+365;
 	}
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }
 int DiJiTian(int y,int m,int d)

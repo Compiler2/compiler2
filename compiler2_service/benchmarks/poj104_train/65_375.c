@@ -3,10 +3,10 @@
 main_bench()
 {
    int n,A,B,Aw=0,Bw=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    while(n--)
    {
-     scanf("%d%d",&A,&B);
+     my_scanf("%d%d",&A,&B);
      if(A==0)
       {
        if(B==1)
@@ -30,9 +30,9 @@ main_bench()
       }
    }
   if(Aw>Bw)
-    printf("A");
+    my_printf("A");
   else if(Aw<Bw)
-    printf("B");
+    my_printf("B");
   else
-    printf("Tie");
+    my_printf("Tie");
 }

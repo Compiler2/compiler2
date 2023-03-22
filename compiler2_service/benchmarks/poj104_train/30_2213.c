@@ -4,7 +4,7 @@ int main_bench()
 {
  int b,i;
  int a=0,s=0,k=0,d=0,x=0,r=0;
- scanf("%d",&b);
+ my_scanf("%d",&b);
  for (i=1;i<=b;i++)
  {
   if (i%7==0)
@@ -20,6 +20,6 @@ int main_bench()
   r+=i*i;
  }
  x=r-a;
- printf("%d",x);
+ my_printf("%d",x);
  return 0;
 }

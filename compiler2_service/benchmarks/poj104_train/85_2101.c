@@ -3,9 +3,9 @@
 int main_bench(){
     char s[21];
     int n,i,j,p[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",s);
+        my_scanf("%s",s);
         p[i]=1;
         for(j=1;j<strlen(s);j++){
             if(s[0]=='_'||s[0]>='a'&&s[0]<='z'||s[0]>='A'&&s[0]<='Z'){
@@ -22,9 +22,9 @@ int main_bench(){
     } 
        for(i=0;i<n;i++){
            if(p[i]){
-               printf("yes\n");
+               my_printf("yes\n");
            }else{
-               printf("no\n");
+               my_printf("no\n");
            }
        }
        return 0;

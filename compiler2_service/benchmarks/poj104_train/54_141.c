@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m=1,n,k,s=1,t,i;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=1;i<=n;i++)
 	{
 		m=m*n;
@@ -11,5 +11,5 @@ int main_bench()
 	}
 	t=(n-1)*k/s+1;
 	m=t*m-(n-1)*k;
-	printf("%d",m);
+	my_printf("%d",m);
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int m,n=0,i,a[6]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 		if(m<10)
 		{ n=m;
-        printf("%d\n",n);}
+        my_printf("%d\n",n);}
 		else 
 		{
 			for(i=1;i<=5;i++)
@@ -24,5 +24,5 @@ int main_bench()
 		n=a[2]+a[1]*10;
 	else
 		n=a[1];
-       printf("%d\n",n);}
+       my_printf("%d\n",n);}
 }

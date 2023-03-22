@@ -9,9 +9,9 @@ struct student
 int main_bench()
 {
 	int n,i,j,sum[100000]={0},h1=0,h2=0,h3=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&student[i].id,&student[i].chinese,&student[i].math);
+		my_scanf("%d%d%d",&student[i].id,&student[i].chinese,&student[i].math);
 	}
 	int first=0;
 	int sec=0;
@@ -51,6 +51,6 @@ int main_bench()
 			h3=student[j].id;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d",h1,first,h2,sec,h3,thi);
+	my_printf("%d %d\n%d %d\n%d %d",h1,first,h2,sec,h3,thi);
 }
 

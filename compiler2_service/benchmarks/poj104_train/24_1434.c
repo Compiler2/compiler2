@@ -48,7 +48,7 @@ int main_bench()
 			}
 	}
    }
-    printf("%s\n",v[0]); 
+    my_printf("%s\n",v[0]); 
    for(s=1;s<=w;s++)
    {
 	for(t=0;t<w-s;t++)
@@ -65,6 +65,6 @@ int main_bench()
 	}
    }
     
-    printf("%s",v[0]);
+    my_printf("%s",v[0]);
         return 0;
  }

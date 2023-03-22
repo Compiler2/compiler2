@@ -3,11 +3,11 @@
 int main_bench(){
 int n,i,A,B;
 int a[100],b[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 A=0;
 B=0;
 for(i=1;i<=n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 }
 for(i=1;i<=n;i++){
 if(a[i]-b[i]==1||b[i]-a[i]==2){
@@ -18,13 +18,13 @@ B=B+1;
 	  }
 }
 if(A>B){
-	printf("A\n");
+	my_printf("A\n");
 }
 else if(A==B){
-	printf("Tie\n");
+	my_printf("Tie\n");
 }
 else{
-	printf("B\n");
+	my_printf("B\n");
 }
 	return 0;
 }

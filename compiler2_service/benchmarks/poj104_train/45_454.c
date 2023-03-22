@@ -7,8 +7,8 @@ int main_bench()
 	int flag;
 	ps=s;
 	pw=w;
-	scanf("%s",ps);
-	scanf("%s",pw);
+	my_scanf("%s",ps);
+	my_scanf("%s",pw);
 	pmove=pw;
 	while (*pmove++!='\0')
 	{
@@ -22,7 +22,7 @@ int main_bench()
 				ps++;
 				pmove++;
 			}
-			if (flag)	{printf("%d",pin-pw); break;}
+			if (flag)	{my_printf("%d",pin-pw); break;}
 			pmove=pin;
 			ps=s;
 		}

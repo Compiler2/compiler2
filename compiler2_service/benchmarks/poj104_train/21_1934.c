@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,i,flag=0,j=0,d[100]={0};
 	float sum=0,aver=0,max=0,t=0,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	float a[100],b[100]={0},c[100]={0};
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -53,10 +53,10 @@ int main_bench()
 	for(i=0;i<flag;i++)
 		d[i]=(int)c[i];
 	
-	printf("%d",d[0]);
+	my_printf("%d",d[0]);
 			for(j=1;j<flag;j++)
 	{
-			printf(",%d",d[j]);
+			my_printf(",%d",d[j]);
 	}
 	return 0;
 }

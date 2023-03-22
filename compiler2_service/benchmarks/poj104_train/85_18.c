@@ -5,17 +5,17 @@ int main_bench()
 	char a[21];
 	int n,i,j,a1;
 	int m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		m=0;
-		scanf("%s",a);
+		my_scanf("%s",a);
 		a1=strlen(a);
 		for(j=0;j<a1;j++)
 		{
 			if(a[0]<='9'&&a[0]>='0')
 			{
-				printf("no\n");
+				my_printf("no\n");
 				m+=1;
 				break;
 			}
@@ -29,13 +29,13 @@ int main_bench()
 			}
 			if(m==1)
 			{
-				printf("no\n");
+				my_printf("no\n");
 				break;
 			}
 		}
 		if(m==0)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

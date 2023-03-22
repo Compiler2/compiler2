@@ -7,20 +7,20 @@ int main_bench()
 	int n[1000];
     double sum=3.500;
 	double a=3,b=5,t;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(j=0;j<m;j++)
 	{
 		if(n[j]==1)
 		{
-			printf("2.000\n");
+			my_printf("2.000\n");
 		}
 		if(n[j]==2)
 		{
-			printf("3.500\n");
+			my_printf("3.500\n");
 		}
 		if(n[j]>2)
 		{
@@ -31,7 +31,7 @@ int main_bench()
 				a=b;
 				b=t+b;
 			}
-			printf("%.3lf\n",sum);
+			my_printf("%.3lf\n",sum);
 		}
 		sum=3.500;
 		a=3,b=5;

@@ -3,12 +3,12 @@
 int main_bench(){
 int p,q,i,j,k,n,a[100],b[100];
 double c[100],GPA,m,r;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 }
 for(j=0;j<n;j++){
-scanf("%d",&(b[j]));
+my_scanf("%d",&(b[j]));
 }
 for(k=0;k<n;k++){
 	if((b[k])>=90&&b[k]<=100){
@@ -51,6 +51,6 @@ for(q=0;q<n;q++){
 r=r+a[q];
 }
 GPA=(double)m/r;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;
 }

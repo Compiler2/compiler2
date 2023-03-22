@@ -2,10 +2,10 @@
 
 int main_bench() {
     int n,i,a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zfc[n][21];
     for(i=0;i<n;i++) {
-        scanf("%s",zfc[i]);
+        my_scanf("%s",zfc[i]);
     }
     int len,result;
     for(i=0;i<n;i++) {
@@ -39,10 +39,10 @@ int main_bench() {
             }
         }
         if(result==0) {
-            printf("yes\n");
+            my_printf("yes\n");
         }
         if(result!=0) {
-            printf("no\n");
+            my_printf("no\n");
         }
     }
     return 0;

@@ -4,18 +4,18 @@ int main_bench()
 {
   int count=0,t,n,i,j,m;
   char a[1000][1000],b[1000][1000];
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for (i=0;i<n;i++)
   {
    for (j=0;j<n;j++)
     {
         if (j==n-1)
-        scanf("%c\n",&a[i][j]);
+        my_scanf("%c\n",&a[i][j]);
         else
-        scanf("%c",&a[i][j]);
+        my_scanf("%c",&a[i][j]);
     }
   }
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for ( t=1;t<m;t++)
   {
    for (i=0;i<n;i++)
@@ -55,6 +55,6 @@ int main_bench()
              }
          }
     
-printf("%d",count);
+my_printf("%d",count);
 }
 

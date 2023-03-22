@@ -13,8 +13,8 @@ int main_bench(){
         }
     }
     for(k=0;k<j;k++){
-    printf("%d,",sz[k]);
+    my_printf("%d,",sz[k]);
     }
-    printf("%d",sz[j]);
+    my_printf("%d",sz[j]);
     return 0;
 }

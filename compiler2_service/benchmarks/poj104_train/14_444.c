@@ -9,11 +9,11 @@ int main_bench()
    }stu[100000];
    int n,i,max1,max2,max3,maxn1,maxn2,maxn3;
    int sum[100000];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-   {scanf("%d",&stu[i].num);
-   	scanf("%d",&stu[i].chi);
-   	scanf("%d",&stu[i].mat);
+   {my_scanf("%d",&stu[i].num);
+   	my_scanf("%d",&stu[i].chi);
+   	my_scanf("%d",&stu[i].mat);
    	sum[i]=stu[i].chi+stu[i].mat;
    }
     max1=sum[0];
@@ -26,7 +26,7 @@ int main_bench()
             maxn1=stu[i].num;
         }
     }
-       printf("%d %d\n",maxn1,max1) ;
+       my_printf("%d %d\n",maxn1,max1) ;
     max2=sum[0];
     maxn2=stu[0].num;
         for(i=1;i<n;i++)
@@ -37,7 +37,7 @@ int main_bench()
             maxn2=stu[i].num;
         }
     }
-       printf("%d %d\n",maxn2,max2) ;
+       my_printf("%d %d\n",maxn2,max2) ;
     max3=sum[0];
     maxn3=stu[0].num;
         for(i=1;i<n;i++)
@@ -48,5 +48,5 @@ int main_bench()
             maxn3=stu[i].num;
         }
     }
-       printf("%d %d\n",maxn3,max3) ;
+       my_printf("%d %d\n",maxn3,max3) ;
 }

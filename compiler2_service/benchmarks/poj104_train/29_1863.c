@@ -10,12 +10,12 @@ int main_bench(){
 		s[i]=s[i-1]+s[i-2];
 
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m--){
-		scanf("\n%d",&n);
+		my_scanf("\n%d",&n);
 		sum=0;
 		for (int i=1 ; i<=n ; i++ )sum+=s[i+1]/s[i];
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

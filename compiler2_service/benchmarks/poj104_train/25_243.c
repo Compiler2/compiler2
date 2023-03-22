@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j,k,n,e=0,a[50]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a[0]=1;
 	for(i=1;i<=n;i++){
 		for(j=0;j<50;j++){
@@ -17,11 +17,11 @@ int main_bench()
 		}
 	}
 	for(i=49;i>=0;i--){if(e==1){
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		}
 		if(a[i]!=0){
 			if(e==0){
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				e=1;
 			}
 		}

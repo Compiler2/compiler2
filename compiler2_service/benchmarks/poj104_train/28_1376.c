@@ -18,9 +18,9 @@ line:while(s[j]!='\0')
 			goto line;
 		}
 		if(s[j]==' ')
-			printf("%d,",num);
+			my_printf("%d,",num);
 		if(s[j]=='\0')
-			printf("%d",num);
+			my_printf("%d",num);
 		j++;
 		num=0;
 	}

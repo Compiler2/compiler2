@@ -12,7 +12,7 @@ main_bench()
 		*(b+i)=0;
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",*(a+i)+j);
+			my_scanf("%d",*(a+i)+j);
 			if(*(b+i)<*(*(a+i)+j))
 				*(b+i)=*(*(a+i)+j);
 		}
@@ -26,11 +26,11 @@ main_bench()
 						l++;
 				if(l==5)
 				{
-					printf("%d %d %d",i+1,j+1,*(b+i));
+					my_printf("%d %d %d",i+1,j+1,*(b+i));
 					m++;
 				}
 				l=0;
 			}
 	if(m==0)
-		printf("not found");
+		my_printf("not found");
 }

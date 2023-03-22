@@ -24,9 +24,9 @@ int main_bench()
 {
 	char str[20],str1[20];
 	int c;
-	scanf("%s%s",str,str1);
+	my_scanf("%s%s",str,str1);
 	c=f(str,str1);
 	if(c==1)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 }

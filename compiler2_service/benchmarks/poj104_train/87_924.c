@@ -4,7 +4,7 @@ int main_bench(){
 	int s1,f1,m1,s2,f2,m2,z,n,a,b,i,s,f,m,j;
 
 	for(i=0;i<100000;i++){
-    scanf("%d %d %d %d %d %d",&s1,&f1,&m1,&s2,&f2,&m2);	
+    my_scanf("%d %d %d %d %d %d",&s1,&f1,&m1,&s2,&f2,&m2);	
 	 if((s1==0)&&(f1==0)&&(m1==0)&&(s2==0)&&(f2==0)&&(m2==0))
 		 break;
 	 else {
@@ -31,7 +31,7 @@ int main_bench(){
 		 }
          s=s2+12-s1;
 	 z=m+f*60+s*3600;
-	 printf("%d\n",z);
+	 my_printf("%d\n",z);
 	 
 	 }
 	 continue;

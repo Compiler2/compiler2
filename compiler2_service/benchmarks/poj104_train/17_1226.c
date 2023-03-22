@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i;
 	char s[1000],s1[5];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(s1);
 	for(i=1;i<=n;i++)
 	{
@@ -65,9 +65,9 @@ void peidui(char str[],int len)
 	for(m=0;m<=len-1;m++)
 	{
 		if(mark[m]=='m')
-			printf("%c",' ');
+			my_printf("%c",' ');
 		else
-			printf("%c",mark[m]);
+			my_printf("%c",mark[m]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

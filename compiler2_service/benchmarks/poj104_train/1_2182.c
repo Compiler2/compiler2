@@ -24,11 +24,11 @@ int main_bench()
 {
     int fen(int m,int k);
     int n,i,x;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-         scanf("%d",&x);
-         printf("%d\n",fen(x,1));
+         my_scanf("%d",&x);
+         my_printf("%d\n",fen(x,1));
      }
     
  }    

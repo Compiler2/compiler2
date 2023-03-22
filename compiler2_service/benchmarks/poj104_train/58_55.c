@@ -3,7 +3,7 @@
 main_bench()
 {
 	int n,i,j,m,k=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char **a;
 	char *b[100];
 	for(i=0;i<n;i++)
@@ -20,8 +20,8 @@ main_bench()
 			if(j>0&&((*(*(a+i)+j)>='0'&&*(*(a+i)+j)<='9')||(*(*(a+i)+j)>='A'&&*(*(a+i)+j)<='Z')||(*(*(a+i)+j)>='a'&&*(*(a+i)+j)<='z')||(*(*(a+i)+j)=='_')))
 				k++;
 		}
-		if(k==m) printf("1\n");
-		else printf("0\n");
+		if(k==m) my_printf("1\n");
+		else my_printf("0\n");
 		k=0;
 	}
 }

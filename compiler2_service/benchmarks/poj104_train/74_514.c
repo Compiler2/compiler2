@@ -4,7 +4,7 @@ int main_bench()
 {
 	int q=0,m,n,i,k=0,l,s=0,d,t,p=1,h,j,a[100];
 
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<=n-m;i++)
 	{
 		t=m+i;
@@ -34,9 +34,9 @@ int main_bench()
 	if(q>0)
 	{
 		for(i=0;i<q-1;i++)
-		printf("%d,",a[i]);
-	printf("%d",a[q-1]);
+		my_printf("%d,",a[i]);
+	my_printf("%d",a[q-1]);
 	}
-	else printf("no");
+	else my_printf("no");
 }
 		

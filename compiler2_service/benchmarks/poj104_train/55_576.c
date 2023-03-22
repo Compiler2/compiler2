@@ -6,9 +6,9 @@ int main_bench()
 	int a, b;
 	char s[100]={0};
          int i;
-	scanf("%d", &a);
-	scanf("%s", s);
-	scanf("%d", &b);
+	my_scanf("%d", &a);
+	my_scanf("%s", s);
+	my_scanf("%d", &b);
          for(i=0;i<strlen(s);i++)
          {if(s[i]>='a') s[i]=s[i]-'a'+'A';}
 	numchange(a,b,s);
@@ -40,5 +40,5 @@ void numchange(int x, int y, char c[100])
 		if(s==0) break;
 	}
 	for(i=k-1;i>=0;i--)
-		printf("%c", m[i]);
+		my_printf("%c", m[i]);
 }

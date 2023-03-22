@@ -5,14 +5,14 @@ int main_bench()
 {
 	int n[1000][1000]={0};
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int i,j;
 	int zuoi=0,zuoj=0,youi=0,youj=0,jump1=0,jump2=0;
 	for(i=0;i<a;i++)
 	{
 		for(j=0;j<a;j++)
 		{
-			scanf("%d",&n[i][j]);
+			my_scanf("%d",&n[i][j]);
 		}
 	}
 	for(i=0;i<a;i++)
@@ -54,6 +54,6 @@ int main_bench()
 	{
 		num=(youi-zuoi-1)*(youj-zuoj-1);
 	}
-	printf("%d",num);
+	my_printf("%d",num);
 	return 0;
 }

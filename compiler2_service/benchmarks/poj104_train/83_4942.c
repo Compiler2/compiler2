@@ -15,18 +15,18 @@ int main_bench()
    for(i=85;i<=89;i++) k[i]=3.7;
    for(i=90;i<=100;i++) k[i]=4.0;
 
-  scanf("%d\n",&n);  
+  my_scanf("%d\n",&n);  
   for(i=1;i<=n;i++)
-      scanf("%d",&b[i]);   
-   scanf("\n");
+      my_scanf("%d",&b[i]);   
+   my_scanf("\n");
    for(i=1;i<=n;i++)
    {
-     scanf("%d",&p);
+     my_scanf("%d",&p);
      a[i]=k[p];
      GPA=GPA+a[i]*b[i];
      sum=sum+b[i];
    }
 
   GPA=GPA/sum;
-  printf("%.2f",GPA);
+  my_printf("%.2f",GPA);
 }

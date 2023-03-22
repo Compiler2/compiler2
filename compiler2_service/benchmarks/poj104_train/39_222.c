@@ -12,8 +12,8 @@ struct student
 }stu[100];
 int main_bench()
 {
-	int n,i,ssum=0,tsum=0,ti;scanf("%d",&n);
-	for(i=0;i<n;i++)scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].pscore,&stu[i].gjud,&stu[i].wjud,&stu[i].paper),stu[i].sum=0;
+	int n,i,ssum=0,tsum=0,ti;my_scanf("%d",&n);
+	for(i=0;i<n;i++)my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].pscore,&stu[i].gjud,&stu[i].wjud,&stu[i].paper),stu[i].sum=0;
 	for(i=0;i<n;i++)
 	{
 		if(stu[i].score>80&&stu[i].paper>=1)stu[i].sum+=8000;
@@ -24,7 +24,7 @@ int main_bench()
 		ssum+=stu[i].sum;	
 	}
 	for(i=0;i<n;i++)if(stu[i].sum>tsum)tsum=stu[i].sum,ti=i;
-	printf("%s\n%d\n%d",stu[ti].name,tsum,ssum);
+	my_printf("%s\n%d\n%d",stu[ti].name,tsum,ssum);
 }
 
 

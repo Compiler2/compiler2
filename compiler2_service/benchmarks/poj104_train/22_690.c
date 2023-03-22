@@ -9,14 +9,14 @@ int main_bench()
 	char c;
 while(1)
 {
-	scanf("%d",&num[sr++]);
-	scanf("%c",&c);
+	my_scanf("%d",&num[sr++]);
+	my_scanf("%c",&c);
 	if(c=='\n')
 		break;
 }
 if(sr==1)
 {
-	printf("No");
+	my_printf("No");
 	return 0;
 }
 y=num[0];
@@ -37,10 +37,10 @@ for(i=0;i<sr;i++)
 }
  if(y==r)
 {
-	printf("No");
+	my_printf("No");
  }
  else 
-    printf("%d",r);
+    my_printf("%d",r);
 
 return 0;
 

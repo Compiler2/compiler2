@@ -4,7 +4,7 @@ int main_bench()
 {
     int m,n,i,j,e,a;
 	char s[10000],w[10000];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	m=strlen(s);
 	n=strlen(w);
 	for(j=0;j<n;j++)
@@ -18,7 +18,7 @@ int main_bench()
 				if(s[i]!=w[e]){a=1;break;}
 		 		
 			}
-			if(a==0){printf("%d",j);break;}
+			if(a==0){my_printf("%d",j);break;}
 			
 
 		}

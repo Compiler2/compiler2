@@ -6,14 +6,14 @@ int main_bench()
 	int n,i,j,h,l,M;
 	void JUbian(int N,int JU[100][100]);
 	void JUxiao(int N,int JU[100][100]);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		M=0;
 		for(h=0;h<n;h++)
 		{
 			for(l=0;l<n;l++)
-			{scanf("%d",&JU[h][l]);}
+			{my_scanf("%d",&JU[h][l]);}
 		}
 		for(j=n;j>1;j--)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 			M=M+JU[1][1];
 			JUxiao(j,JU);
 		}
-		printf("%d\n",M);
+		my_printf("%d\n",M);
 	}
 	return 0;
 }

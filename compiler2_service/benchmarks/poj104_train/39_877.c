@@ -24,10 +24,10 @@ int main_bench()
     s[i].lw=0;
     s[i].jj=0;
 		}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{ scanf("%s",s[i].name);
-	  scanf("%d %d %c %c %d",&s[i].qm,&s[i].py,&s[i].gb,&s[i].xb,&s[i].lw);
+	{ my_scanf("%s",s[i].name);
+	  my_scanf("%d %d %c %c %d",&s[i].qm,&s[i].py,&s[i].gb,&s[i].xb,&s[i].lw);
 	  if(s[i].qm>80&&s[i].lw>=1) s[i].jj=s[i].jj+8000;
 	  if(s[i].qm>85&&s[i].py>80) s[i].jj=s[i].jj+4000;
 	  if(s[i].qm>90) s[i].jj=s[i].jj+2000;
@@ -37,9 +37,9 @@ int main_bench()
 		a[i]=i;
 		}
 	pai(s,n,a);
-	printf("%s\n",s[a[0]].name);
-	printf("%d\n",s[a[0]].jj);
-	printf("%d",sum);	
+	my_printf("%s\n",s[a[0]].name);
+	my_printf("%d\n",s[a[0]].jj);
+	my_printf("%d",sum);	
 	
 	
 	return(0);

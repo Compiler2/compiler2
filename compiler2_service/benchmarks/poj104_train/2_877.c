@@ -14,10 +14,10 @@ int main_bench()
 	int n,zimu,a,b,i,j;
 	int sz[26];
 	char m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].name);
+		my_scanf("%d %s",&book[i].num,book[i].name);
 	}
     for(i=0;i<n;i++)
 	{
@@ -39,15 +39,15 @@ int main_bench()
 
 	}
     m=a+65;
-	printf("%c\n",m);
-	printf("%d\n",b);
+	my_printf("%c\n",m);
+	my_printf("%d\n",b);
     for(i=0;i<n;i++)
 	{
 		for(j=0;j<26;j++)
 		{
 			if(book[i].name[j]==m)
 			{
-			   printf("%d\n",book[i].num);
+			   my_printf("%d\n",book[i].num);
 			}
 		}
 	}

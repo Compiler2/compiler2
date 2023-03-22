@@ -26,7 +26,7 @@ main_bench()
       int i,c[6];
       for(i=0;i<6;i++)
       {
-             scanf("%d",&c[i]);
-             printf("%d\n",reverse(c[i]));
+             my_scanf("%d",&c[i]);
+             my_printf("%d\n",reverse(c[i]));
       }
 }   

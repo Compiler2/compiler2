@@ -15,10 +15,10 @@ int main_bench()
 	int i,n,sum=0;
 	struct student max;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].num,&stu[i].scor1,&stu[i].scor2,&stu[i].g,&stu[i].x,&stu[i].lun);
+		my_scanf("%s %d %d %c %c %d",stu[i].num,&stu[i].scor1,&stu[i].scor2,&stu[i].g,&stu[i].x,&stu[i].lun);
 		stu[i].ss=0;
 	}
 
@@ -47,7 +47,7 @@ int main_bench()
 			max=stu[i];
 		sum+=stu[i].ss;
 	}
-	printf("%s\n",max.num);
-	printf("%d\n",max.ss);
-	printf("%d\n",sum);
+	my_printf("%s\n",max.num);
+	my_printf("%d\n",max.ss);
+	my_printf("%d\n",sum);
 }

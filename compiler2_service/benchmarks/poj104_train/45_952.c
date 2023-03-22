@@ -22,7 +22,7 @@ void func(char* pat)
 int main_bench()
 {
 	char str[51], pat[51];
-	scanf("%s%s", pat, str);
+	my_scanf("%s%s", pat, str);
 	func(pat);
 	int str_len = strlen(str);
 	int pat_len = strlen(pat);
@@ -43,5 +43,5 @@ int main_bench()
 		}
 	}
 	if(j == pat_len)
-		printf("%d", i-pat_len);
+		my_printf("%d", i-pat_len);
 }

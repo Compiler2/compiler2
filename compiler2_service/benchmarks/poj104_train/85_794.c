@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,len,k;
 	char str[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1; i<=n;i++)
 	{
         k=0;
-		scanf("%s",str);
+		my_scanf("%s",str);
 		len=strlen(str);
 		if(((str[0]>64)&&(str[0]<91))||((str[0]>96)&&(str[0]<123))||(str[0]=='_'))
 		{
@@ -21,16 +21,16 @@ int main_bench()
 			}
 			if(k==0)
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 			else
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

@@ -4,7 +4,7 @@
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int k;
   for(k=0;k<n;k++)
   {
@@ -15,7 +15,7 @@ int main_bench()
   for(i=0;i<n;i++)
   {
 	  for(j=0;j<n;j++)
-    scanf("%d",&a[i][j]);
+    my_scanf("%d",&a[i][j]);
   }
   
   for(l=0;l<n-1;l++)
@@ -67,6 +67,6 @@ int main_bench()
   {
     sum=sum+s[i];
   }
-  printf("%d\n",sum);
+  my_printf("%d\n",sum);
 }
 }

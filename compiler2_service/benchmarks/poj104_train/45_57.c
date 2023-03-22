@@ -3,7 +3,7 @@
 int main_bench(){
 	char m[60],n[60];
 	int k,t,s,a;
-	scanf("%s %s",&m,&n);		
+	my_scanf("%s %s",&m,&n);		
 	for(t=0;n[t]!='\0';t++){
 	    if(m[0]==n[t]){
 			a=t;
@@ -16,6 +16,6 @@ int main_bench(){
 		}
 		if(k!=0) break;
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

@@ -13,7 +13,7 @@ int main_bench()
           for(s=i;s<=m/2-1+i;s++)
             if(str[s]!=str[m-s-1+i+i])break;
           if(s==m/2+i)
-            {for(s=i;s<=i+j;s++)printf("%c",str[s]);printf("\n");}
+            {for(s=i;s<=i+j;s++)my_printf("%c",str[s]);my_printf("\n");}
         }
       }
     return 0;

@@ -5,19 +5,19 @@ int main_bench()
     int n,m,i,j;
     double sum=3.500;
     int a[1000],b[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
    {
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       if(m==1)
       {
-        printf("2.000");
-        printf("\n");
+        my_printf("2.000");
+        my_printf("\n");
       }
       else if(m==2)
       {
-        printf("3.500");
-        printf("\n");
+        my_printf("3.500");
+        my_printf("\n");
       }
       else
       {
@@ -37,7 +37,7 @@ int main_bench()
           b[1]=b[2+j];
           b[2]=b[3+j];
          }
-         printf("%.3lf\n",sum);
+         my_printf("%.3lf\n",sum);
         }
        }
        sum=3.500;

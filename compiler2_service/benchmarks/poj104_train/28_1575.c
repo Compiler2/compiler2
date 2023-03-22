@@ -4,14 +4,14 @@ int main_bench(){
     int len;
     char sp,word[300][20];
     for(int i=0;i<300;i++){
-         scanf("%s%c",word[i],&sp);
+         my_scanf("%s%c",word[i],&sp);
          len=strlen(word[i]);
          if(len==0){
              break;
                       }
           if(i==0){ 
-            printf("%d",len);
-           }else{printf(",%d",len);}
+            my_printf("%d",len);
+           }else{my_printf(",%d",len);}
          }
             return 0;
     } 

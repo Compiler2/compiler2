@@ -28,7 +28,7 @@ int main_bench()
 			zfc[j]=z2[j-i];
 		}
 	}
-  	printf("%s",zfc);
+  	my_printf("%s",zfc);
 	return 0;
 }
 

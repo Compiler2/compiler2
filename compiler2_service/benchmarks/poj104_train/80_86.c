@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,e,f,g,h,i,j,d1,d2,o;
-	scanf("%d  %d %d %d %d %d",&a,&b,&c,&e,&f,&g);   
+	my_scanf("%d  %d %d %d %d %d",&a,&b,&c,&e,&f,&g);   
 	h=0;
 	j=0;
 	for(i=a+1;i<e;i++)   
@@ -29,7 +29,7 @@ int main_bench()
             case 9: d1=31*5+30*3+29;break;
             case 10: d1=31*6+30*3+29;break;
             case 11: d1=31*6+30*4+29;break;
-		    default: printf("error\n");
+		    default: my_printf("error\n");
 			}
 	}
 	else
@@ -48,7 +48,7 @@ int main_bench()
 			case 9: d1=31*5+30*3+28;break;
 			case 10: d1=31*6+30*3+28;break;
             case 11: d1=31*6+30*4+28;break;
-			default: printf("error\n");
+			default: my_printf("error\n");
 			}
 	}
 	if((e%4==0&&e%100!=0)||e%400==0)   
@@ -67,7 +67,7 @@ int main_bench()
 			case 9: d2=31*5+30*3+29;break;
 			case 10: d2=31*6+30*3+29;break;
             case 11: d2=31*6+30*4+29;break;
-		    default: printf("error\n");
+		    default: my_printf("error\n");
 		    }
 	}
 	else
@@ -86,12 +86,12 @@ int main_bench()
 			case 9: d2=31*5+30*3+28;break;
 			case 10: d2=31*6+30*3+28;break;
             case 11: d2=31*6+30*4+28;break;
-	        default: printf("error\n");
+	        default: my_printf("error\n");
 			}
 	}
 	if(a==e) o=d2+g-d1-c;  
 	else 
 		{ if((a%4==0&&a%100!=0)||a%400==0) o=365*j+h+d2+g+(366-d1-c);  
 		else o=365*j+h+d2+g+(365-d1-c);}  
-	printf("%d",o);
+	my_printf("%d",o);
 }

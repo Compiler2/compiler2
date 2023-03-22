@@ -3,7 +3,7 @@
 int main_bench()
 {
     char a[100][100];
-    scanf("%s",a[0]);
+    my_scanf("%s",a[0]);
     int n;
     n=strlen(a[0]);
     int b[100][100];
@@ -18,7 +18,7 @@ int main_bench()
         {
             if(a[i][j]!=a[i][j+1])
             {
-                printf("%d %d\n",b[i][j],b[i][j+1]);
+                my_printf("%d %d\n",b[i][j],b[i][j+1]);
                 for(k=0;k<j;k++)
                 {
                     a[i+1][k]=a[i][k];

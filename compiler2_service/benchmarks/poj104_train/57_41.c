@@ -5,7 +5,7 @@ main_bench()
 {
 	int n,i,len;
 	char str[50][100],*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++)
 	{
 		gets(str[i]);

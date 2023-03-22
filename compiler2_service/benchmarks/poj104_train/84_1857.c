@@ -6,10 +6,10 @@ int main_bench()
 	int i,j,k;
 	int a[100];
 	int max,cimax;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
 	}
 	max=0;
 	cimax=0;
@@ -20,7 +20,7 @@ int main_bench()
 	      max=a[j];
 	   }
 	}
-    printf("%d\n",max);
+    my_printf("%d\n",max);
 	for(k=0;k<n;k++)
 	{
 	   if(a[k]>cimax && a[k]!=max)
@@ -28,6 +28,6 @@ int main_bench()
 	      cimax=a[k];
 	   }
 	}
-	printf("%d\n",cimax);
+	my_printf("%d\n",cimax);
 	return 0;
 }

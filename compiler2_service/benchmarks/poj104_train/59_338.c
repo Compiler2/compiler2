@@ -6,17 +6,17 @@ int main_bench()
 	int n,m,i,j,s=0;
 	char str[101][101];
 	int a[101][101];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			if(j!=n-1) scanf("%c",&str[i][j]);
-			else scanf("%c\n",&str[i][j]);
+			if(j!=n-1) my_scanf("%c",&str[i][j]);
+			else my_scanf("%c\n",&str[i][j]);
             a[i][j]=0;
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m>1)
 	{
 		f(n,str,a);
@@ -29,7 +29,7 @@ int main_bench()
 			if(str[i][j]=='@') s++;
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 }
 void f(int n,char str[][101],int a[][101])
 {

@@ -24,7 +24,7 @@ for(a=0;a<y;a++)
 if(*(*(x+z)+2)<min){min=*(*(x+z)+2);q=z;}
 }
 for(p=*(*(x+q)+0);p<=*(*(x+q)+1);p++)
-printf("%c",*(s+p));printf("\n");*(*(x+q)+2)=501;
+my_printf("%c",*(s+p));my_printf("\n");*(*(x+q)+2)=501;
 }
 
 

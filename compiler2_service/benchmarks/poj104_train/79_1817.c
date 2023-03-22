@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m,k,n,a[300],i,j,h;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     do
     {
     for(j=1;j<=n;j++)
@@ -22,8 +22,8 @@ int main_bench()
             a[h]=a[h+1];
             }
         }
-    printf("%d\n",a[1]);
-        scanf("%d%d",&n,&m);
+    my_printf("%d\n",a[1]);
+        my_scanf("%d%d",&n,&m);
     }
     while(n!=0);
     return 0;

@@ -7,10 +7,10 @@ int main_bench()
 	int n,y,m1,m2;
 	int i;
 	int e,da;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		if(m1>m2)
 		{
 			e=m1;
@@ -24,8 +24,8 @@ int main_bench()
 		else 
 			da=day(m2)-day(m1);
 	if(da%7==0)
-		printf("YES\n");
-	else printf("NO\n");
+		my_printf("YES\n");
+	else my_printf("NO\n");
 	}
 	return 0;
 }

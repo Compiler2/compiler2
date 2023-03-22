@@ -4,9 +4,9 @@
 main_bench()
 {
       int i,j,k,l,m,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[n],b[n];
-      for(i=0;i<n;i++) scanf("%d %d",&a[i],&b[i]);
+      for(i=0;i<n;i++) my_scanf("%d %d",&a[i],&b[i]);
       int res1,res2;
       res1=res2=0;
       for(i=0;i<n;i++)
@@ -27,8 +27,8 @@ main_bench()
                                  if(b[i]==1) res2++;
                       }
       }
-      if(res1==res2) printf("Tie");
-      if(res1>res2) printf("A");
-      if(res1<res2) printf("B");
+      if(res1==res2) my_printf("Tie");
+      if(res1>res2) my_printf("A");
+      if(res1<res2) my_printf("B");
       
 }

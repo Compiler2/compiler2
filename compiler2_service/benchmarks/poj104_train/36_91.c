@@ -4,8 +4,8 @@ int main_bench()
 {
   int l,r=0;
   char *p,*q,a[100],b[100];
-  scanf("%s %s",a,b);
-  if(strlen(a)!=strlen(b)) printf("NO");
+  my_scanf("%s %s",a,b);
+  if(strlen(a)!=strlen(b)) my_printf("NO");
   else
   {
     l=strlen(a);
@@ -21,7 +21,7 @@ int main_bench()
         }
       }
     }
-    if(r==l) printf("YES");
-    else printf("NO");
+    if(r==l) my_printf("YES");
+    else my_printf("NO");
   }
 }

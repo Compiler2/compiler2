@@ -6,8 +6,8 @@ int main_bench()
 	gets(a);
 	l=strlen(a);
 	for(i=0;i<l;i++){if(a[i]!=' ')b[j][h++]=a[i];else {b[j][h]=0;j++;h=0;}}b[j][h]=0;
-	printf("%s",b[j]);
-	for(i=j-1;i>=0;i--)printf("%c%s",c,b[i]);
-	printf("\n");
+	my_printf("%s",b[j]);
+	for(i=j-1;i>=0;i--)my_printf("%c%s",c,b[i]);
+	my_printf("\n");
 
 }

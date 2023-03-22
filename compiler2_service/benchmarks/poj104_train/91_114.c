@@ -11,6 +11,6 @@ int main_bench()
     }
     qinpeng[strlen(c)-1]=c[0]+c[strlen(c)-1];
     qinpeng[strlen(c)]='\0';
-    printf("%s\n",qinpeng);
+    my_printf("%s\n",qinpeng);
     return 0;
 }

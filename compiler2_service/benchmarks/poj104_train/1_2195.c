@@ -15,13 +15,13 @@ int mini(int k,int i)
 int main_bench()
 {
 	int N,n;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(n=0;n<=N-1;n++)
 	{
 		int M;
-		scanf("%d",&M);
+		my_scanf("%d",&M);
 		mini(M,2);
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 		t=0;
 	}
 }

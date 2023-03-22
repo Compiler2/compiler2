@@ -2,13 +2,13 @@
 
 int main_bench(){
 int k,n,i,m,x,y,z,c;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n];
 int b[n];
 x=0;
 y=0;
 for(i=0;i<n;i++){
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 }
 for(i=0;i<n;i++){
 for(m=0;m<n;m++){
@@ -27,14 +27,14 @@ y=0;
 }
 for(i=0;i<n;i++){
 if(b[i]%2!=0){
-printf("%d",b[i]);
+my_printf("%d",b[i]);
 c=i;
 break;
 }
 }
 for(i=c+1;i<n;i++){
 if(b[i]%2!=0){
-printf(",%d",b[i]);
+my_printf(",%d",b[i]);
 }
 }
 return 0;

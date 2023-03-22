@@ -3,12 +3,12 @@
 int main_bench() 
 {
 	int n,i,j,a[200][3],b[12]={31,28,31,30,31,30,31,31,30,31,30,31},s,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<3;j++)
 		{
-		    scanf("%d",&a[i][j]);
+		    my_scanf("%d",&a[i][j]);
 		}
 		if(a[i][1]>a[i][2])
 		{
@@ -29,10 +29,10 @@ int main_bench()
 			}
 			if(s%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 		else
 		{
@@ -43,10 +43,10 @@ int main_bench()
 			}
 			if(s%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

@@ -4,17 +4,17 @@ int main_bench()
 {
 	int i,j,row,col,x,y;
 	int a[100][100];
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	for(i=0;i<row;i++)
 		for(j=0;j<col;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<=col-1;i++)
 	{
 		x=0;
 		y=i;
 		do
 		{
-			printf("%d\n",a[x][y]);
+			my_printf("%d\n",a[x][y]);
 			x++;
 			y--;
 		}
@@ -26,7 +26,7 @@ int main_bench()
 		y=col-1;
 		do
 		{
-			printf("%d\n",a[x][y]);
+			my_printf("%d\n",a[x][y]);
 			x++;
 			y--;
 		}

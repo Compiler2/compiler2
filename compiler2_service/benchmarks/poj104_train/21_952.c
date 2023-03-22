@@ -6,11 +6,11 @@ float sum=0;
 float ave;
 int main_bench()
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	ave=(float)sum/n;
@@ -24,8 +24,8 @@ int main_bench()
 			if(a[i]==a[0]||a[i]==a[n-1])
 			{
 				if(i!=0)
-					printf(",");
-				printf("%d",a[i]);
+					my_printf(",");
+				my_printf("%d",a[i]);
 			}
 		}
 	}
@@ -36,8 +36,8 @@ int main_bench()
 			if(a[i]==a[0])
 			{
 				if(i!=0&&a[i+1]==a[i])
-					printf(",");
-				printf("%d",a[i]);
+					my_printf(",");
+				my_printf("%d",a[i]);
 			}
 		}
 	}
@@ -48,8 +48,8 @@ int main_bench()
 			if(a[i]==a[n-1])
 			{
                 if(flag!=0)
-					printf(",");
-				printf("%d",a[i]);
+					my_printf(",");
+				my_printf("%d",a[i]);
 				flag=1;
 			}
 		}

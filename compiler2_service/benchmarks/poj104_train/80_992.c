@@ -3,8 +3,8 @@
 int main_bench()
 {
  int y1,y2,m1,m2,d1,d2,x,n1,n2,i;
- scanf("%d%d%d",&y1,&m1,&d1);
- scanf("%d%d%d",&y2,&m2,&d2);
+ my_scanf("%d%d%d",&y1,&m1,&d1);
+ my_scanf("%d%d%d",&y2,&m2,&d2);
  if(y1==y2 && m1==m2) x=abs(d1-d2);
  if(y1==y2 && m1!=m2)
   {
@@ -112,6 +112,6 @@ int main_bench()
        }
   x=x+n2-n1;
   }
- printf("%d",x);
+ my_printf("%d",x);
  return 0;
 }

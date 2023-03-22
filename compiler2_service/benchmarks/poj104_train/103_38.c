@@ -2,15 +2,15 @@
 
 main_bench()
 {  char a[1020];
-   scanf("%s",a);
+   my_scanf("%s",a);
    int t,j;
    t=strlen(a);
    int i;
    int b[1020],k,h=0;
    if(t==1&&(a[0]-'a')>=0)
-   printf("(%c,%d)",a[0]-32,1);
+   my_printf("(%c,%d)",a[0]-32,1);
    else if (t==1&&(a[0]-'a')<=0)
-   printf("(%c,%d)",a[i],1);      
+   my_printf("(%c,%d)",a[i],1);      
    else
   { for(i=0;i<=t-2;)
   { for(i=h,k=1;i<=t-2;i++)
@@ -24,8 +24,8 @@ main_bench()
                       }
       h=i+1;  
    if(a[i]-'a'>=0)
-    printf("(%c,%d)",a[i]-32,k);
+    my_printf("(%c,%d)",a[i]-32,k);
     else
-    printf("(%c,%d)",a[i],k);                    
+    my_printf("(%c,%d)",a[i],k);                    
 }                 
    }    }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,n;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	int one[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int another[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int i;
@@ -20,7 +20,7 @@ int main_bench()
 		}
 		n=m+c;
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }
 
 

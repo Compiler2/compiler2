@@ -4,9 +4,9 @@ int main_bench(){
 int y,q,n,i,m,l;
 double p,k;
 char sz[500],dz[500];
-scanf("%lf",&p);
-scanf("%s",sz);
-scanf("%s",dz);
+my_scanf("%lf",&p);
+my_scanf("%s",sz);
+my_scanf("%s",dz);
 m=0;
 y=0;
 n=0;
@@ -15,17 +15,17 @@ n=strlen(sz);
 q=0;
 m=strlen(dz);
 if(m!=n){
-printf("error");
+my_printf("error");
 }else{
     for(i=0;i<n;i++){
         if(sz[i]!='A'&&sz[i]!='T'&&sz[i]!='C'&&sz[i]!='G'){
 			y++;
-			printf("error");
+			my_printf("error");
 			break;
 		}
 		if(dz[i]!='A'&&dz[i]!='T'&&dz[i]!='C'&&dz[i]!='G'){
 			l++;
-    	   printf("error");
+    	   my_printf("error");
 		   break;
 		}
 	}
@@ -37,9 +37,9 @@ for(i=0;i<n;i++){
 }
 k=1.0*q/n;
 if(k>p){
-printf("yes");
+my_printf("yes");
 }else{
-printf("no");
+my_printf("no");
 }
 }
 }

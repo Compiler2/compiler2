@@ -34,8 +34,8 @@ int main_bench()
 	}
 	for(i=lans1-1;i>=0;i--)
 	{
-		printf("%s",ans1[i]);
-		if(i!=0)printf("%s",ans2[i-1]);
+		my_printf("%s",ans1[i]);
+		if(i!=0)my_printf("%s",ans2[i-1]);
 	}
 	
 	

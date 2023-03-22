@@ -5,8 +5,8 @@ int main_bench()
 	int n,i,j;
 	char s[501]={'0'};
 	char a[501][6]={{0,0,0,0,0,0}};
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	int l;
 	l=strlen(s)-n+1;
 	int p=0,m;
@@ -47,20 +47,20 @@ int main_bench()
 	}
     if(max==1)
 	{
-			printf("NO\n");
+			my_printf("NO\n");
 			return 0;
 	}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 	}
 	for(i=0;i<l;i++)
 	{	
 	    if(count[i]==max && max!=1)
 		{
 			for(j=0;j<n;j++)
-				printf("%c",a[i][j]);
-			printf("\n");
+				my_printf("%c",a[i][j]);
+			my_printf("\n");
 		}
 	}
 	return 0;

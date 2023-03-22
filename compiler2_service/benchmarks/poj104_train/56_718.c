@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a,b,c,d,e,m,n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m<=0)
-		printf("please inpue an int >0");
+		my_printf("please inpue an int >0");
 	else if(m<=9)
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 	else if(m<=99)
 	{d=m/10;e=m-10*d;
       n=10*e+d;
@@ -29,5 +29,5 @@ int main_bench()
 	e=m-10000*a-1000*b-100*c-10*d;
 	n=10000*e+1000*d+100*c+10*b+a;
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }

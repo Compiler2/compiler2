@@ -9,12 +9,12 @@ int main_bench()
 	struct stu m[102],temp;
 	int i,j,k,n;
 	char a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu *p=m;
 	struct stu *q;
 	for(;p<m+n;p++)
 	{
-		scanf("%s%d%d %c %c%d",(*p).name,&i,&j,&a,&b,&k);
+		my_scanf("%s%d%d %c %c%d",(*p).name,&i,&j,&a,&b,&k);
 		(*p).sum=0;
 		if(i>80 && k>0)
 			(*p).sum+=8000;
@@ -40,6 +40,6 @@ int main_bench()
 			*q=temp;
 		}
 	}
-	printf("%s\n%d\n%d\n",m->name,m->sum,i);
+	my_printf("%s\n%d\n%d\n",m->name,m->sum,i);
 	return 0;
 }

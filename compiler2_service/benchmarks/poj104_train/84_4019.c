@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int max=0,mbx=0,i,x;
-	scanf("%d\n",&i);
+	my_scanf("%d\n",&i);
 	while(i>=0){
-		scanf("%d\n",&x);
+		my_scanf("%d\n",&x);
 		i--;
 		if(i>=0){
 			if(max>x&&mbx<x)mbx=x;
@@ -16,6 +16,6 @@ int main_bench(){
 			}
 		}
 	}
-		printf("%d\n%d\n",max,mbx);
+		my_printf("%d\n%d\n",max,mbx);
 	return 0;
 }

@@ -4,11 +4,11 @@
 main_bench()
 {
       int n,ai=0,bi=0,c;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a,b;
       for(c=0;c<n;c++)
       {
-        scanf("%d %d",&a,&b);
+        my_scanf("%d %d",&a,&b);
         if(a==b)
                 ;
         else
@@ -30,12 +30,12 @@ main_bench()
         }
       }
       if (ai>bi)
-      printf("A");
+      my_printf("A");
       else ;
       if (ai==bi)
-      printf("Tie");
+      my_printf("Tie");
       else ;
       if (ai<bi)
-      printf("B");
+      my_printf("B");
       else ;
 }

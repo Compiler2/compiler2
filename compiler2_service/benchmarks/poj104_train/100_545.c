@@ -7,7 +7,7 @@ int main_bench()
     for(i=0;i<26;i++)
         b[i]=0;
     p = a;
-    scanf("%s",p);
+    my_scanf("%s",p);
     c = strlen(a);
     for(i=0;i<c+1;i++){
         for(k=0;k<26;k++){
@@ -17,11 +17,11 @@ int main_bench()
     }
     for(i =0;i<26;i++){
         if(b[i]!=0){
-            printf("%c=%d\n",i+'a',b[i]);
+            my_printf("%c=%d\n",i+'a',b[i]);
             j++;
          }
      }
      if(j==0)
-         printf("No");
+         my_printf("No");
      return 0;
 }

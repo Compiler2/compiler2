@@ -4,38 +4,38 @@ int main_bench()
 {
 	int x,d=0;
 	int a=3,b=5,c=7;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	if(x%a==0&&x%b==0&&x%c==0)
 	{
-		printf("3 5 7");
+		my_printf("3 5 7");
 	}
 	else if(x%a==0&&x%b==0&&x%c!=0)
 	{
-		printf("3 5");
+		my_printf("3 5");
 	}
 	else if(x%a==0&&x%b!=0&&x%c==0)
 	{
-		printf("3 7");
+		my_printf("3 7");
 	}
 	else if(x%a!=0&&x%b==0&&x%c==0)
 	{
-		printf("5 7");
+		my_printf("5 7");
 	}
 	else if(x%a==0&&x%b!=0&&x%c!=0)
 	{
-		printf("3");
+		my_printf("3");
 	}
 	else if(x%a!=0&&x%b==0&&x%c!=0)
 	{
-		printf("5");
+		my_printf("5");
 	}
 	else if(x%a!=0&&x%b!=0&&x%c==0)
 	{
-		printf("7");
+		my_printf("7");
 	}
 	else if(x%a!=0&&x%b!=0&&x%c!=0)
 	{
-		printf("n");
+		my_printf("n");
 	}
 	return 0;
 }

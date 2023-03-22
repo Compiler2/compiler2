@@ -27,18 +27,18 @@ void gather(int str1[],int str2[])
 int main_bench()
 {
 	int i,n1,n2,str1[100],str2[100];
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
 	for(i=0;i<n1;i++)
-		scanf("%d",&str1[i]);
-	scanf("\n");
+		my_scanf("%d",&str1[i]);
+	my_scanf("\n");
 	for(i=0;i<n2;i++)
-		scanf("%d",&str2[i]);
+		my_scanf("%d",&str2[i]);
 	sort(str1,n1);
 	sort(str2,n2);
 	gather(str1,str2);
 	for(i=0;i<(n1+n2-1);i++)
-		printf("%d ",str1[i]);
-	printf("%d",str1[n1+n2-1]);
+		my_printf("%d ",str1[i]);
+	my_printf("%d",str1[n1+n2-1]);
 	
 }
 

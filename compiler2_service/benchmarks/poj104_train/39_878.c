@@ -15,10 +15,10 @@ struct student temp;
 int main_bench()
 {
 	int i,N,j,sum=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",st[i].name,&st[i].ave,&st[i].cla,&st[i].mon,&st[i].pro,&st[i].essay);
+		my_scanf("%s %d %d %c %c %d",st[i].name,&st[i].ave,&st[i].cla,&st[i].mon,&st[i].pro,&st[i].essay);
 		st[i].scholar=0;
 		if(st[i].ave>80&&st[i].essay!=0)
 			st[i].scholar=st[i].scholar+8000;
@@ -39,5 +39,5 @@ int main_bench()
 			temp=st[j];st[j]=st[j+1];st[j+1]=temp;
 		}
 	}
-	printf("%s\n%d\n%d\n",st[N-1].name,st[N-1].scholar,sum);
+	my_printf("%s\n%d\n%d\n",st[N-1].name,st[N-1].scholar,sum);
 }

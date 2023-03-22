@@ -13,11 +13,11 @@ int main_bench(){
     int n;
     int* num;
     int i,j;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     num = (int*)malloc(sizeof(int)*n);
     j = n; i = 0;
     while (j--) {
-        scanf("%d", &num[i]);
+        my_scanf("%d", &num[i]);
         i++;
     }
     for (i = 0; i <= (n-1)/2; i++) {
@@ -27,9 +27,9 @@ int main_bench(){
     }
     for (i = 0; i < n; i++) {
         if(i!=0)
-            printf(" ");
-        printf("%d", num[i]);
+            my_printf(" ");
+        my_printf("%d", num[i]);
     }
-    printf("\n");
+    my_printf("\n");
     return 0;
 }

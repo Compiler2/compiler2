@@ -9,12 +9,12 @@ int main_bench()
 	char c[300];
 	for (i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 		if (c[i]=='\n') break;
 	}
 	num=i;
 	if (i==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for (i=0;i<=num;i++)
@@ -29,9 +29,9 @@ int main_bench()
 		for (i=0;i<=num;i++)
 			if (a[i]>n) n=a[i];
 		if (n==m||n==-10000)
-			printf("No");
+			my_printf("No");
 		else	
-			printf("%d",n);
+			my_printf("%d",n);
 	}
 	return 0;
 }

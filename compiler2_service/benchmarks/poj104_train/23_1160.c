@@ -29,7 +29,7 @@ int main_bench()
 			continue;
 	}
 	*(s-1)='\0';
-	printf("%s",str1);
+	my_printf("%s",str1);
 }
 			
 

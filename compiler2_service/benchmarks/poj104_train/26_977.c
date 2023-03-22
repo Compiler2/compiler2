@@ -15,6 +15,6 @@ int main_bench()
 
 
 
-printf("%s\n",zfc2);
+my_printf("%s\n",zfc2);
 return 0;
 }

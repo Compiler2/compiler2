@@ -5,7 +5,7 @@ main_bench()
       int N,a;
       int odd(int x);
       int even(int x);
-      scanf("%d",&N);
+      my_scanf("%d",&N);
       while(N!=1)
       {
            
@@ -13,16 +13,16 @@ main_bench()
            {
                      a=N;
                      N=odd(N);
-                     printf("%d*3+1=%d\n",a,N);                     
+                     my_printf("%d*3+1=%d\n",a,N);                     
            }
            else
            {
                      a=N;
                      N=even(N);
-                     printf("%d/2=%d\n",a,N);
+                     my_printf("%d/2=%d\n",a,N);
            }
       }
-      printf("End\n");
+      my_printf("End\n");
   
             }
       

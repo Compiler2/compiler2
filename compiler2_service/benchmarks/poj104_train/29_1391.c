@@ -4,11 +4,11 @@ double fei(int n);
 int main_bench(){
 	int i,m,n;
 	double result=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		result=fei(n);
-		printf("%.3lf\n",result);
+		my_printf("%.3lf\n",result);
 	}
 	return 0;
 }

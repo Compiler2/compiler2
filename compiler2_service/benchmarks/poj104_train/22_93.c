@@ -4,7 +4,7 @@ int main_bench()
 {
 	int le,max,s,i,j,k,t;
 	char a[1500]="\0";	
-	scanf("%s",a);
+	my_scanf("%s",a);
 	le=strlen(a);
 	max=0;
 	s=0;
@@ -38,5 +38,5 @@ int main_bench()
 		max=j;
 	}
 	if((j>s)&&(j!=max)) s=j;
-	if(s==0) printf("No\n"); else printf("%d\n",s);
+	if(s==0) my_printf("No\n"); else my_printf("%d\n",s);
 }

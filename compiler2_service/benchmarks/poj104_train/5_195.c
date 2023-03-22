@@ -11,7 +11,7 @@ int main_bench(){
     int p=strlen(a[0]);
     int q=strlen(a[1]);
     if (p!=q){
-        printf("error");
+        my_printf("error");
         return 0;
     }
     else { 
@@ -19,7 +19,7 @@ int main_bench(){
             if(!(a[0][i]=='A'||a[0][i]=='T'||a[0][i]=='G'||a[0][i]=='C'&&a[1][i]=='A'||a[1][i]=='T'||
 
                 a[1][i]=='G'||a[1][i]=='C')){
-                printf("error");
+                my_printf("error");
                 return 0;
             }
             else{
@@ -30,10 +30,10 @@ int main_bench(){
         }
     }
     if(1.0*b/p>n){
-        printf("yes");
+        my_printf("yes");
     }
     else  {
-        printf("no");
+        my_printf("no");
     }
 
 

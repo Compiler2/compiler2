@@ -5,10 +5,10 @@ int main_bench()
 	int m,i,j,e;
 	int a[100];
 	float s,q,w;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=0;i<m;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		q=2,w=1,s=0;
 	    for (j=1;j<=a[i];j++)
 		{
@@ -17,7 +17,7 @@ int main_bench()
 	   	  q=q+w;
 	   	  w=e;
 		}
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 	}
     return 0;
 }

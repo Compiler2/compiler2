@@ -6,9 +6,9 @@ int main_bench()
 	int a[1000];
 	int s[1000];
 	int n,k=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
      for(i=0;i<n;i++){
 		 if(a[i]%2!=0){
@@ -27,10 +27,10 @@ int main_bench()
 	}
 	for(i=0;i<k;i++){
 		if(i==0){
-		printf("%d",s[i]);
+		my_printf("%d",s[i]);
 		}
 		else 
-			printf(",%d",s[i]);
+			my_printf(",%d",s[i]);
 	}
 	return 0;
 }

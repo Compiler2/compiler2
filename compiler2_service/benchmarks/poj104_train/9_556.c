@@ -4,9 +4,9 @@ int main_bench()
 {
 int n,i,j,a[100],b[100],c[100];
 char d[100][100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%s %d",d[i],&a[i]);
+my_scanf("%s %d",d[i],&a[i]);
 for(j=0;j<=n;j++)
 if(a[j]>=60)
 b[j]=a[j]*1000-j;
@@ -20,5 +20,5 @@ c[i]++;
 for(i=0;i<n;i++)
 for(j=0;j<n;j++)
 if(c[j]==i+1)
-printf("%s\n",d[j]);
+my_printf("%s\n",d[j]);
 }

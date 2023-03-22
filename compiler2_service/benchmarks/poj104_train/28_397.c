@@ -36,8 +36,8 @@ int main_bench()
 		}
 	}
 	for(pnum=num;pnum<num+n;pnum++)
-		printf("%d,",*pnum);
-	printf("%d",*pnum);
+		my_printf("%d,",*pnum);
+	my_printf("%d",*pnum);
 }
 
 

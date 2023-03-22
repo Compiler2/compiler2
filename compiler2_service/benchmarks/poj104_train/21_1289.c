@@ -6,11 +6,11 @@ int main_bench()
 {  int n;
    int c[300];
 
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int i; int sum=0;
   for(i=0;i<n;i++)
   {
-	  scanf("%d",&c[i]);
+	  my_scanf("%d",&c[i]);
   sum+=c[i];
 
 
@@ -56,7 +56,7 @@ int main_bench()
   for(i=0;i<n;i++)
   {
      if(d[i]==largest)
-	 {printf("%d",c[i]);
+	 {my_printf("%d",c[i]);
 	 d[i]=0;
 	 break;}
 
@@ -65,7 +65,7 @@ int main_bench()
   } for(i=0;i<n;i++)
   {
      if(d[i]==largest)
-	 {printf(",%d",c[i]);
+	 {my_printf(",%d",c[i]);
 	 }
 
 

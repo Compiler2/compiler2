@@ -5,7 +5,7 @@ int main_bench()
 	int i,a,b;
 	int reverse(int);
 	for(i=0;i<6;i++){
-		scanf("%d", &a);
+		my_scanf("%d", &a);
 		if(a>=0){
 		b=reverse(a);
 		}
@@ -13,8 +13,8 @@ int main_bench()
 		a=-a;
 		b=-reverse(a);
 		}
-		printf("%d", b);
-                if(i<5) printf("\n");
+		my_printf("%d", b);
+                if(i<5) my_printf("\n");
 	}
 	return 0;
 }

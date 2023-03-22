@@ -22,11 +22,11 @@ int main_bench(){
                                            }
                             }
     if(flag==1){
-                for(i=0;i<n;i++) printf("%c",s[i]);
-                printf("%s",a1);
-                for(i=n+len;s[i]!='\0';i++) printf("%c",s[i]);
+                for(i=0;i<n;i++) my_printf("%c",s[i]);
+                my_printf("%s",a1);
+                for(i=n+len;s[i]!='\0';i++) my_printf("%c",s[i]);
                 }
-    if(flag==0) printf("%s",s);
+    if(flag==0) my_printf("%s",s);
     
     
     

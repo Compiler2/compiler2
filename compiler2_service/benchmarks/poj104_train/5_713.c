@@ -5,7 +5,7 @@ int main_bench(){
 	double xg;
 	int i,l,e,k,c;
 	char a[501],b[501];
-	scanf("%lf%s%s",&bl,&a,&b);
+	my_scanf("%lf%s%s",&bl,&a,&b);
 	l=strlen(a);
 	k=strlen(b);
 	c=0;
@@ -28,13 +28,13 @@ int main_bench(){
 	}
 	xg=1.0*e/l;
 	if(xg>bl){
-		printf("yes");
+		my_printf("yes");
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}}
 	else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

@@ -31,8 +31,8 @@ int main_bench()
 	B[10]=30;
 	B[11]=31;
 
-	scanf("%d%d%d",&startyear,&startmonth,&startday);
-	scanf("%d%d%d",&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d",&startyear,&startmonth,&startday);
+	my_scanf("%d%d%d",&endyear,&endmonth,&endday);
 	total=0;
 	for(i=startyear;i<endyear;i++)
 	{
@@ -54,7 +54,7 @@ int main_bench()
 				total=total+B[j-1];
 			}
 			total=total+endday-startday;
-			printf("%d",total);
+			my_printf("%d",total);
 		}
 		if(endmonth<startmonth)
 		{
@@ -63,7 +63,7 @@ int main_bench()
 				total=total-B[j-2];
 			}
 			total=total+endday-startday;
-			printf("%d",total);
+			my_printf("%d",total);
 		}
 	}
 	else 
@@ -75,7 +75,7 @@ int main_bench()
 				total=total+A[j-1];
 			}
 			total=total+endday-startday;
-			printf("%d",total);
+			my_printf("%d",total);
 		}
 		if(endmonth<startmonth)
 		{
@@ -84,7 +84,7 @@ int main_bench()
 				total=total-A[j-2];
 			}
 			total=total+endday-startday;
-			printf("%d",total);
+			my_printf("%d",total);
 		}
 	}
 	return 0;

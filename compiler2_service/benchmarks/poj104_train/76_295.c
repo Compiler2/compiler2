@@ -7,10 +7,10 @@ int main_bench(){
   int tmp,tmp2;
   int d=1;
 
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-    scanf("%d %d",&s[0][i],&s[1][i]);
+    my_scanf("%d %d",&s[0][i],&s[1][i]);
   }
   for(k=1;k<n;k++)
   {
@@ -47,9 +47,9 @@ int main_bench(){
    }
   }
   if(d==0){
-	  printf("no");
+	  my_printf("no");
   }else{
-	  printf("%d %d",s[0][0],s[1][n-1]);
+	  my_printf("%d %d",s[0][0],s[1][n-1]);
   }
   return 0;
 }

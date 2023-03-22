@@ -24,7 +24,7 @@ int main_bench()
 			
 			if(j==length_a)
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				i--;
 			
 			}
@@ -33,14 +33,14 @@ int main_bench()
 			{
 				while(k<=i)
 				{
-					printf("%c",s[k]);
+					my_printf("%c",s[k]);
 					k++;
 				}
 			}
 			
 		}
 		else 
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 	}
 	
 	return 0;

@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[20],b[20];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int aa,bb,i,j,t,p,q,x,m[58]={ 0 };
 	x=0;
 	aa=strlen(a);
@@ -40,8 +40,8 @@ int main_bench()
 			}
 		}
 		if((t!=0)&&(x==0))
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	}
-	else printf("NO\n");
+	else my_printf("NO\n");
 }

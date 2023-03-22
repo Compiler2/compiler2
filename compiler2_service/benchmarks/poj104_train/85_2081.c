@@ -5,7 +5,7 @@ int main_bench()
     char a[21];
     int i,j,n,k=0;
     int len;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=1;i<=n;i++)
     { 
      k=0;               
@@ -22,13 +22,13 @@ int main_bench()
          k++;
       }
       if(k==len-1)
-       printf("yes\n"); 
+       my_printf("yes\n"); 
       else
-       printf("no\n");
+       my_printf("no\n");
       }
      else
       { 
-        printf("no\n");
+        my_printf("no\n");
         continue;
       }
      

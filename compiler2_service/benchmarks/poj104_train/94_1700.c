@@ -6,9 +6,9 @@ main_bench(){
     int n,i,j,k,p,q;
     x=',';
     n=0;
-    scanf("%d",&q);
+    my_scanf("%d",&q);
     for(i=0;i<q;i++){
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       if(a[i]%2==1){
         sz[n]=a[i];
         n++;
@@ -27,10 +27,10 @@ main_bench(){
     }
     for(i=0;i<=n;i++){
       if(i<n){
-        printf("%d",sz[i]);
-        printf("%c",x);
+        my_printf("%d",sz[i]);
+        my_printf("%c",x);
       }else{
-        printf("%d",sz[i]);
+        my_printf("%d",sz[i]);
       }
     }
 return 0;

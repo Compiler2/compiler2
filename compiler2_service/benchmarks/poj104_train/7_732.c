@@ -23,17 +23,17 @@ int main_bench()
 			{
 				for(e=0;e<k;e++)
 				{
-                    			printf("%c",w[e]);
+                    			my_printf("%c",w[e]);
 				}
-				printf("%s",t);
+				my_printf("%s",t);
 				for(e=k+m;e<n;e++){
-					printf("%c",w[e]);
+					my_printf("%c",w[e]);
 				}
 				return 0;
 			}
 			f=1;
 		}
 	}
-    printf("%s",w);
+    my_printf("%s",w);
 	return 0;
 }

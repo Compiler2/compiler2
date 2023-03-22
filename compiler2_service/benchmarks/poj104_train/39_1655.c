@@ -14,11 +14,11 @@ int main_bench()
 {
 	int i,j,k,m,n,a[100],sum=0;
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		a[i]=0;
-		scanf("%s %d %d %c %c %d",stu[i].num,&stu[i].sco,&stu[i].pin,&stu[i].gan,&stu[i].xi,&stu[i].pap);
+		my_scanf("%s %d %d %c %c %d",stu[i].num,&stu[i].sco,&stu[i].pin,&stu[i].gan,&stu[i].xi,&stu[i].pap);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -42,10 +42,10 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(a[i]==k)
 			break;
-		printf("%s\n%d",stu[i].num,a[i]);
+		my_printf("%s\n%d",stu[i].num,a[i]);
 	for(i=0;i<n;i++)
 		sum=sum+a[i];
-	printf("\n%d",sum);
+	my_printf("\n%d",sum);
 
 	
 	

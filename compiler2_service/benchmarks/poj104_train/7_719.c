@@ -24,11 +24,11 @@ int main_bench()
 	if(m==1)
 	{
 		for(i=0;i<l;i++)
-		{printf("%c",s[i]);}
-		printf("%s",b);
+		{my_printf("%c",s[i]);}
+		my_printf("%s",b);
 		for(n=l+strlen(a);n<strlen(s);n++)
-		{printf("%c",s[n]);}
+		{my_printf("%c",s[n]);}
 	}
-	else if(m==0){printf("%s",s);}
+	else if(m==0){my_printf("%s",s);}
 	return 0;
 }

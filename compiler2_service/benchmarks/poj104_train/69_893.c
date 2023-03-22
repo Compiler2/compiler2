@@ -59,7 +59,7 @@ main_bench()
       for(i=0;i<=t;i++) str[i]=str[i+l];
       }
       else if(l==t) str[0]='0',str[1]='\0';
-      printf("%s",str);
+      my_printf("%s",str);
 
 }
         

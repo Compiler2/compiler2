@@ -8,10 +8,10 @@ int main_bench()
         int y;
     } sz[100];
     int n,i,a=0,b=0,cs[100],max;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d%d",&sz[i].x,&sz[i].y);
+        my_scanf("%d%d",&sz[i].x,&sz[i].y);
         if(sz[i].x>=90&&sz[i].x<=140&&sz[i].y>=60&&sz[i].y<=90)
         {
             a+=1;
@@ -36,7 +36,7 @@ int main_bench()
             if(cs[i]>max)
             max=cs[i];            
     }
-    printf("%d",max);
+    my_printf("%d",max);
     return 0;
 }
 

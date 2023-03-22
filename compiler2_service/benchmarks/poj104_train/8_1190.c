@@ -42,19 +42,19 @@ void F(int a[],int b[])
     G(a);
     g(b);
     int n,m;
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for(n=1;n<j;n++)
-         printf(" %d",a[n]);
+         my_printf(" %d",a[n]);
     for(m=0;m<k;m++)
-         printf(" %d",b[m]);
+         my_printf(" %d",b[m]);
 }
 int main_bench()
 {
      int n,m;
      int a[5000],b[5000];
-     scanf("%d %d",&j,&k);
-     for(n=0;n<j;n++)scanf("%d",&a[n]);
-     for(m=0;m<k;m++)scanf("%d",&b[m]);
+     my_scanf("%d %d",&j,&k);
+     for(n=0;n<j;n++)my_scanf("%d",&a[n]);
+     for(m=0;m<k;m++)my_scanf("%d",&b[m]);
      F(a,b);
      return 0;
 }

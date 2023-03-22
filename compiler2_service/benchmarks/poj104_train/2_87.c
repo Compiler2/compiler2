@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,num[1000],l[1000],count[128],m,max;
 	char edi[1000][26],au[128];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("\n%d",&num[j]);
+		my_scanf("\n%d",&num[j]);
 		gets(edi[j]);
 		l[j]=strlen(edi[j]);
 	}
@@ -31,13 +31,13 @@ int main_bench()
 			m=i;
 		}
 	}
-	printf("%c\n%d",au[m],max);
+	my_printf("%c\n%d",au[m],max);
 	for(j=0;j<n;j++)
 	{
 		for(i=1;i<l[j];i++)
 		{
 			if(edi[j][i]==au[m])
-				printf("\n%d",num[j]);
+				my_printf("\n%d",num[j]);
 		}
 	}
 	return 0;

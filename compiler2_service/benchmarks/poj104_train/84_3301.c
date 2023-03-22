@@ -4,10 +4,10 @@ int yu7wuguan(int i);
 int main_bench(){
     int sz[100],i,n,k;
     int max,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-       scanf("%d",&sz[i]);
+       my_scanf("%d",&sz[i]);
        }
     for(k=1;k<=2;k++)
     {
@@ -25,7 +25,7 @@ int main_bench(){
              sz[max]=sz[n-k];
              sz[n-k]=e;
              }
-           printf("%d\n",sz[n-k]); 
+           my_printf("%d\n",sz[n-k]); 
              }
                  
                 return 0;

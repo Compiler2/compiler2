@@ -23,6 +23,6 @@ int main_bench(){
             strcpy(chang,danci[i]);}
         if(strlen(danci[i])<min){min=strlen(danci[i]);
             strcpy(duan,danci[i]);}}
-    printf("%s\n%s",chang,duan);
+    my_printf("%s\n%s",chang,duan);
 return 0;
 }

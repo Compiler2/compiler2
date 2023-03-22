@@ -5,8 +5,8 @@ int main_bench()
 	char s[31],w[31];
 	char *pin,*ps,*pw;
 	int flag,ls,lw;
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	ls=strlen(s);
 	lw=strlen(w);
 	ps=s;
@@ -24,7 +24,7 @@ int main_bench()
 				}
 			if (flag)
 			{
-				printf("%d",pin-w);
+				my_printf("%d",pin-w);
 				break;
 			}
 			pw=pin;

@@ -5,7 +5,7 @@
      char a[2000];
      int b=1;
      int i,j;
-     scanf("%s",a);
+     my_scanf("%s",a);
      for(i=0;a[i]!='\0';i++)
      {
                         if(a[i]>='a'&&a[i]<='z')
@@ -17,7 +17,7 @@
                         b=b+1;
                         else
                         {
-                            printf("(%c,%d)",a[j],b);
+                            my_printf("(%c,%d)",a[j],b);
                             b=1;
                         }
      }

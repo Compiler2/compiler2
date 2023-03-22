@@ -4,7 +4,7 @@
 int main_bench(){
     char a[50],b[50];
     int count[50];
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
     int n=strlen(a);
     int m=strlen(b);
     int i,j,k=0,l,o,result;
@@ -21,7 +21,7 @@ int main_bench(){
                                                               l++;
                                                               }
                                       if(l==n-1){
-                                                 printf("%d",count[o]);
+                                                 my_printf("%d",count[o]);
                                                  result=1;
                                                  }
                                       }

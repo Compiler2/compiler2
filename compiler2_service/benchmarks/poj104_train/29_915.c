@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,k;
 	int shuzu[1000];
 	double sum,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(shuzu[i]));
+		my_scanf("%d",&(shuzu[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 				sum=sum+a;
 			}
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 		return 0;
 	

@@ -52,5 +52,5 @@ int main_bench()
 	{
 		if(t[i]>max) max=t[i];
 	}
-	printf("%d %d",k+1,max);
+	my_printf("%d %d",k+1,max);
 }

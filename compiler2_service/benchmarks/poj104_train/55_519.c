@@ -4,7 +4,7 @@ int main_bench()
 {
 	int temp=0,a,b,k,i,o,p,j;
 	char c[40],s[40];
-	scanf("%d%s%d",&a,c,&b);
+	my_scanf("%d%s%d",&a,c,&b);
 	k=strlen(c);
 	for(i=0;i<k;i++)
 	{
@@ -18,9 +18,9 @@ int main_bench()
 	if(temp<b)
 	{
 		if(temp<=9)
-		printf("%c",temp+'0');
+		my_printf("%c",temp+'0');
 		else
-			printf("%c",temp-10+'A');
+			my_printf("%c",temp-10+'A');
 	}
 	else
 	{
@@ -45,8 +45,8 @@ int main_bench()
 		s[p+1]=temp-10+'A';
 	for(j=0;j<=p+1;j++)
 	{
-		printf("%c",s[p+1-j]);
+		my_printf("%c",s[p+1-j]);
 	}
 	}
-	printf("\n");
+	my_printf("\n");
 }

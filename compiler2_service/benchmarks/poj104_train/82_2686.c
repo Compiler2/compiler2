@@ -11,10 +11,10 @@ int main_bench()
    {
        int c,d;
    }b[200];
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%d %d",&b[i].c,&b[i].d);
+      my_scanf("%d %d",&b[i].c,&b[i].d);
    }
    for(i=0;i<n;i++)
 	   if(b[i].c>=90 && b[i].c<=140 && b[i].d>=60 && b[i].d<=90)
@@ -48,6 +48,6 @@ int main_bench()
 		  }
 	  }
 	}
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 return 0;
 }

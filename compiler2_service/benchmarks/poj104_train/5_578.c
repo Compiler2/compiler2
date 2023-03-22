@@ -14,7 +14,7 @@ int main_bench()
     len=strlen(s);
     len1=strlen(t);
     if(len!=len1)
-    printf("error");
+    my_printf("error");
     else
     {
         for(i=0;i<len;i++)
@@ -24,7 +24,7 @@ int main_bench()
           f=1;
         }
         if(f)
-        printf("error");
+        my_printf("error");
         else{
         for(i=0;i<len;i++)
         {
@@ -32,9 +32,9 @@ int main_bench()
           h++;
         }
         if(h/len>n1) 
-        printf("yes");
+        my_printf("yes");
         else
-        printf("no");
+        my_printf("no");
         }
     }
         return 0;

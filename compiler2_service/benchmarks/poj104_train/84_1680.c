@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,a[101],i,max,second;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		{scanf("%d",&a[i]);}
+		{my_scanf("%d",&a[i]);}
 	if(a[1]>a[2])
 		{max=a[1];
 		second=a[2];}
@@ -13,8 +13,8 @@ int main_bench()
 		max=a[2];
 		second=a[1];
 	if(n<=2)
-		{printf("%d\n",max);
-		printf("%d\n",second);}
+		{my_printf("%d\n",max);
+		my_printf("%d\n",second);}
 	else
 	{	for(i=3;i<=n;i++)
 		{	if(a[i]>max)
@@ -23,7 +23,7 @@ int main_bench()
 			else if(max>a[i]&&second<a[i])
 				second=a[i];
 		}
-		printf("%d\n",max);
-		printf("%d\n",second);}
+		my_printf("%d\n",max);
+		my_printf("%d\n",second);}
 	return 0;
 }

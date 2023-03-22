@@ -23,24 +23,24 @@ void fanxu(char a[]){
 }
 void show(char a[]){
 	if ((a[0]=='-')&&(a[1]=='0')&&(a[2]==0)){
-		printf("%d\n",0);
+		my_printf("%d\n",0);
 		return;
 	}
 if ((a[0]=='0')&&(a[1]==0)){
-		printf("%d\n",0);
+		my_printf("%d\n",0);
 		return;
 	}
 	int i,t=0;
-	if (a[0]=='-') {printf("%c",a[0]);}
+	if (a[0]=='-') {my_printf("%c",a[0]);}
 	else
 	{
 	t=1;
 	}
 	for(i=1-t;a[i]=='0';i++);
 	for(;a[i]!='\0';i++){
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
 
 

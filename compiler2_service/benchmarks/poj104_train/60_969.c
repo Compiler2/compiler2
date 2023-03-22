@@ -3,7 +3,7 @@
 int main_bench()
 {
    int n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int i,k,t=0,sz[10000];
    for(i=1;i<10000;i++){
 	   sz[i]=1;
@@ -21,16 +21,16 @@ int main_bench()
 
 	   if(sz[i]==1){
 		   if(i==n-2){
-			   printf("%d %d",i,i+2);
+			   my_printf("%d %d",i,i+2);
 			   t=1;
 		   }else{
-			   printf("%d %d\n",i,i+2);
+			   my_printf("%d %d\n",i,i+2);
 			   t=1;
 		   }
 	   }
    }
    if(t==0){
-	   printf("empty");
+	   my_printf("empty");
    }
    return 0;
 }

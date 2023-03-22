@@ -28,9 +28,9 @@ int main_bench()
 	   if(strcmp(p,s2)==0){
 		   strcpy(p,s3);
 	   }
-	   printf("%s",p);
+	   my_printf("%s",p);
 	   if(y<n-1)
-		   printf(" ");
+		   my_printf(" ");
 	
 	}
 	

@@ -4,15 +4,15 @@ void gui0(char[],int n);
 int main_bench()
 {
 	int num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	char a[101],b[101];
 	char**pp=(char**)malloc(num*sizeof(char*));
 	for(int k=0;k<num;k++)
 	{
 		gui0(a,101);
 		gui0(b,101);
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 		int m=strlen(a);
 		int n=strlen(b);
 		int j=n-1;
@@ -42,8 +42,8 @@ int main_bench()
 			else
 				break;
 		for(;i<strlen(pp[r]);i++)
-			printf("%c",pp[r][i]);
-		printf("\n");
+			my_printf("%c",pp[r][i]);
+		my_printf("\n");
 	}
 	return 0;
 }

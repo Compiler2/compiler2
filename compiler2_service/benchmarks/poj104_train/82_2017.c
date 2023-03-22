@@ -7,9 +7,9 @@ int main_bench()
     int sz[100];
     int a=0;
     int e=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d%d",&ss[i],&sz[i]);
+        my_scanf("%d%d",&ss[i],&sz[i]);
     }
     ss[n]=0;sz[n]=0;
     for(int i=0;i<n+1;i++){
@@ -25,7 +25,7 @@ int main_bench()
                     
         }
     }
-    printf("%d",e);
+    my_printf("%d",e);
     return 0;
 }
 

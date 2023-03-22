@@ -24,9 +24,9 @@ int main_bench()
 	while((str1[i]==str2[i])&&(str1[i]!='\0'))
 		i++;
 	if(str1[i]=='\0'&&str2[i]=='\0')
-		printf("=");
+		my_printf("=");
 	else if(str1[i]>str2[i])
-		printf(">");
-	else printf("<");
+		my_printf(">");
+	else my_printf("<");
 	return 0;
 }

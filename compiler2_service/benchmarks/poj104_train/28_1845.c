@@ -9,10 +9,10 @@ int main_bench()
 
 	for(i=0;i<300;i++)
 	{	
-		scanf("%s",sen[i]);
-		printf("%d",strlen(sen[i]));
+		my_scanf("%s",sen[i]);
+		my_printf("%d",strlen(sen[i]));
 		if(getchar()!='\n')
-			printf(",");
+			my_printf(",");
 		else
 			break;
 

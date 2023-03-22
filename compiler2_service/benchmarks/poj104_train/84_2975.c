@@ -3,11 +3,11 @@
 int main_bench()
 {
 	long int k,i=0,a,b,c=0,d;
-	scanf("%d\n",&k);
+	my_scanf("%d\n",&k);
 	k=k-1;
 	for (;i<=k;i++)
 	{
-		scanf("%d\n",&a);
+		my_scanf("%d\n",&a);
 		if(a<b)
 		{
 			if(a>c)
@@ -21,5 +21,5 @@ int main_bench()
 			else
 				c=c,b=a;
 	}
-	printf("%ld\n%ld\n",b,c);
+	my_printf("%ld\n%ld\n",b,c);
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int maxlndex,e,i,k,n,t=0;
 	int sz[500];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
     for(k=1;k<n+1; k++){
 	maxlndex=0;
@@ -37,9 +37,9 @@ int main_bench()
 	{
 		if(sz[i]%2!=0)
 		{if(i!=t)
-		{printf("%d,",sz[i]);
+		{my_printf("%d,",sz[i]);
 		}else		{
-			printf("%d",sz[i]);
+			my_printf("%d",sz[i]);
 		}
 		}
 	}

@@ -32,7 +32,7 @@ int main_bench()
   e[j-i-strlen(b)]=a[j];
   e[j-i-strlen(b)]='\0';
   strcat(d,e);
-  printf("%s",d);
+  my_printf("%s",d);
 }
     return 0;    
 }

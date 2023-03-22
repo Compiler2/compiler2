@@ -7,9 +7,9 @@ void f(char *p)
      for (i=0;i<=29;i++)
      {
      if ((*p)>='0'&&(*p)<='9')
-     printf("%c",*p);
+     my_printf("%c",*p);
      else if (*(p+1)>='0'&&*(p+1)<='9')
-     printf("\n");
+     my_printf("\n");
      p++;
      }
 }

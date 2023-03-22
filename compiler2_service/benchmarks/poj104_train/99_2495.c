@@ -3,11 +3,11 @@
 int main_bench() 
 {
     double a,b,c,d,x,y,n;
-    scanf("%lf",&x);
+    my_scanf("%lf",&x);
     y=1;
     a=0,b=0,c=0,d=0;
     while(x>=y){
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     if (n<=18){
     a=a+1;
     }
@@ -26,7 +26,7 @@ int main_bench()
     b=1.0*b/x*100.0;
     c=1.0*c/x*100.0;
     d=1.0*d/x*100.0;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a,b,c,d);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a,b,c,d);
     return 0;
 }
 

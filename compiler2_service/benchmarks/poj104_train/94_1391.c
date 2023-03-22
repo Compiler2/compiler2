@@ -3,9 +3,9 @@
 int main_bench()
 {
 int i,j,t,n,m=0,a[500],b[500];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(i=0;i<n;i++)
 if(a[i]%2==1)
 {
@@ -22,9 +22,9 @@ b[i+1]=t;
 }
 for(i=0;i<m;i++)
 {
-printf("%d",b[i]);
+my_printf("%d",b[i]);
 if(i!=m-1)
-printf(",");
+my_printf(",");
 }
 return 0;
 }

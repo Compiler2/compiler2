@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,i,k,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zf[n][21];
     int judge[n];
     
     for(i=0;i<n;i++){
-        scanf("%s",zf[i]);}
+        my_scanf("%s",zf[i]);}
 
     for(i=0;i<n;i++){
         for(j=0;zf[i][j]!='\0';j++){
@@ -26,8 +26,8 @@ int main_bench(){
        }
  
    for(i=0;i<n;i++){
-      if(judge[i]==1){printf("yes\n");}
-                 else{printf("no\n");}}
+      if(judge[i]==1){my_printf("yes\n");}
+                 else{my_printf("no\n");}}
 
 }
 

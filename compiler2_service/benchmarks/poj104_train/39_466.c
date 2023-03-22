@@ -14,11 +14,11 @@ int main_bench()
 	struct student stu[200];
 	int n,i,count[200],count2[200],k,j,temp,l,all,max;
 	all=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		count[i]=0;
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].ave,&stu[i].cla,&stu[i].leader,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].ave,&stu[i].cla,&stu[i].leader,&stu[i].west,&stu[i].paper);
 		if(stu[i].ave>80&&stu[i].paper>=1)
 			count[i]=count[i]+8000;
 		if(stu[i].ave>85&&stu[i].cla>80)
@@ -41,5 +41,5 @@ int main_bench()
 		for(l=0;l<n;l++)
 			if(count2[l]==max)
 				break;
-		printf("%s\n%d\n%d\n",stu[l].name,max,all);
+		my_printf("%s\n%d\n%d\n",stu[l].name,max,all);
 }

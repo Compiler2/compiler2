@@ -8,7 +8,7 @@ int daycount(int month);
 int main_bench()
 {
     int day=0;
-    scanf("%d",&day);
+    my_scanf("%d",&day);
 	
 	int remainder=0;
 	if(day>5)
@@ -19,7 +19,7 @@ int main_bench()
 	for(;month<=12;month++)
 	{
 		if(daycount(month)%7==remainder)
-			printf("%d\n",month);
+			my_printf("%d\n",month);
 	}
 
 

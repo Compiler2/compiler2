@@ -4,9 +4,9 @@ char mb[30000][300],fy[30000][300];
 int main_bench(){
 	
 	int i=0,j=0,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",mb[i]);
+		my_scanf("%s",mb[i]);
 		}
 	for(i=0;i<n;i++){
 		for(j=0;j<strlen(mb[i]);j++){
@@ -23,9 +23,9 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<strlen(mb[i]);j++){
-			printf("%c",fy[i][j]);
+			my_printf("%c",fy[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
  return 0;   
 }

@@ -31,9 +31,9 @@ int main_bench()
 		sz[i]=strlen(zfc[i]);
 	}
 	 for(i=0;i<h;i++){
-		 printf("%d,",sz[i]);
+		 my_printf("%d,",sz[i]);
 	 }
-	 printf("%d",sz[h]);
+	 my_printf("%d",sz[h]);
 	return 0;
 }
 

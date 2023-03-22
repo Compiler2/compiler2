@@ -11,14 +11,14 @@ for(i=0;i<n-1;i++){
             continue;
         }
         else{
-            printf(" ");
+            my_printf(" ");
         }
     }
     else{
-        printf("%c",sz[i]);
+        my_printf("%c",sz[i]);
     }
 }
-printf("%c",sz[n-1]);
+my_printf("%c",sz[n-1]);
 return 0;
 }
 

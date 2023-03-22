@@ -9,18 +9,18 @@ int main_bench()
 
  int n,i;
  char buffer[256];
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
  for(i=0;i<n;i++)
  {
 	gets(buffer);
 	if(identf(buffer))
 		 {
-	printf("1\n");
+	my_printf("1\n");
 		}
 	else
 	{
-		printf("0\n");
+		my_printf("0\n");
 	}
  }
  return 0;

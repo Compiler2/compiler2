@@ -13,14 +13,14 @@ int main_bench()
 	int len,n,i,sc1,sc2,pap,sum=0;
 	char mon,wes;
 	len = sizeof (struct stu);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu *head,*p0;
 	for (i=1;i<=n;i++)
 	{
 		p0 = (struct stu*)malloc(len);
 		if (i==1)
 			head = p0;
-		scanf("%s %d %d %c %c %d",&p0->nam,&sc1,&sc2,&mon,&wes,&pap);
+		my_scanf("%s %d %d %c %c %d",&p0->nam,&sc1,&sc2,&mon,&wes,&pap);
 		p0->sch=0;
 		if (sc1>80 && pap>0)
 			p0->sch = p0->sch + 8000;
@@ -36,6 +36,6 @@ int main_bench()
 		if (p0->sch > head->sch)
 			head = p0;
 	}
-	printf("%s\n%d\n%d\n",head->nam,head->sch,sum);
+	my_printf("%s\n%d\n%d\n",head->nam,head->sch,sum);
 
 }

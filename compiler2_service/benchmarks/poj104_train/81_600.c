@@ -5,7 +5,7 @@ void go(int a[5][5],int n,int m)
 {
 	int b[5],i,j;
 	if(n<0||n>4||m<0||m>4)
-	{printf("error");}
+	{my_printf("error");}
 	else
 	{
 		for(i=0;i<5;i++)
@@ -18,10 +18,10 @@ void go(int a[5][5],int n,int m)
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",a[i][j]);
-				if(j!=4)printf(" ");
+				my_printf("%d",a[i][j]);
+				if(j!=4)my_printf(" ");
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 		
 
@@ -37,12 +37,12 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 		
 
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	go(a,n,m);
 	
 	return 0;

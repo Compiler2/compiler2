@@ -37,7 +37,7 @@ main_bench()
                   {
                      a[0]=x1;a[1]=x2;a[2]=x3;a[3]=x4;a[4]=x5;
                      s[t]=f(a);
-                     if(s[t]=='t') {for(int j=0;j<5;j++) {if(j!=4)printf("%d ",a[j]+1); else printf("%d\n",a[j]+1);}}
+                     if(s[t]=='t') {for(int j=0;j<5;j++) {if(j!=4)my_printf("%d ",a[j]+1); else my_printf("%d\n",a[j]+1);}}
                      t++;
                   }
                }

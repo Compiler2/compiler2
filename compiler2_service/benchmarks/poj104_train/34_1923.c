@@ -4,22 +4,22 @@
 main_bench()
 {
       int a,b,c;
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       while(a>=2)
       {
                      if(a%2==1)
                      {b=3*a+1;
-                     printf("%d*3+1=%d\n",a,b);
+                     my_printf("%d*3+1=%d\n",a,b);
                      c=b;a=c;a=b;
                      continue;
                      }
                      else 
                      {b=a/2;
-                     printf("%d/2=%d\n",a,b);
+                     my_printf("%d/2=%d\n",a,b);
                      c=b;a=c;a=b;
                      continue;}
                      }
                      
-                     printf("End\n");
+                     my_printf("End\n");
       
       }

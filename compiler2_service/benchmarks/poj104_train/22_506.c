@@ -6,7 +6,7 @@ int main_bench()
 	char c[300];
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 		amount=amount+1;
 		if(c[i]=='\n')
 			break;
@@ -16,7 +16,7 @@ int main_bench()
 	int sum=0;
 	if(amount==1)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else if(amount!=1)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 		}
 		if(sum==0)
 		{
-			printf("No");
+			my_printf("No");
 		}
 		else 
 		{
@@ -53,7 +53,7 @@ int main_bench()
 					continue;
 				else
 				{
-					printf("%d",a[j-1]);
+					my_printf("%d",a[j-1]);
 					break;
 				}
 

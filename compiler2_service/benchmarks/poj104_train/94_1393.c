@@ -14,10 +14,10 @@ void bubble_sort(int a[],int n){
 }
 int main_bench(){
  int Num,i,N=0,j=0;
- scanf("%d",&Num);
+ my_scanf("%d",&Num);
  int a[Num];
  for(i=0;i<Num;i++){
-  scanf("%d",&(a[i]));
+  my_scanf("%d",&(a[i]));
   if(a[i]%2==1){
    N++;
   }
@@ -31,10 +31,10 @@ int main_bench(){
  }
  bubble_sort(b,N);
  for(j=0;j<N-1;j++){
-  printf("%d,",b[j]);
+  my_printf("%d,",b[j]);
  }
  j=N-1;
- printf("%d",b[j]);
+ my_printf("%d",b[j]);
  return 0;
 }
  

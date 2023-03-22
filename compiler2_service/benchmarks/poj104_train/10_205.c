@@ -16,9 +16,9 @@ int Intercept(int i,int j){
 int main_bench()
 {
 	int i,j,max=1,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&missle[i]);
+		my_scanf("%d",&missle[i]);
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
 			if(missle[j]<=missle[i]){
@@ -29,6 +29,6 @@ int main_bench()
 		    sum=0;
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }
 

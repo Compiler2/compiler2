@@ -17,7 +17,7 @@ int main_bench()
     for(i=strlen(w)+1;i<strlen(s);i++)
 		if(k[i]==0)
         {
-			printf("%d",i-strlen(w)-1);
+			my_printf("%d",i-strlen(w)-1);
 			break;
 		}
 }

@@ -7,9 +7,9 @@ int main_bench()
 	char c;
     do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 	}
 	while(c!='\n');
 	for(j=0;j<i-1;j++)
@@ -20,8 +20,8 @@ int main_bench()
 			break;
 		}
 	}
-	if(i==1||z==1)printf("No\n");
-	else printf("%d\n",second(a,i));
+	if(i==1||z==1)my_printf("No\n");
+	else my_printf("%d\n",second(a,i));
 }
 int second(int b[],int t)
 {

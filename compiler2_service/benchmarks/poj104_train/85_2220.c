@@ -3,7 +3,7 @@
 
 int main_bench(){
    int n,i,j,p;
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    char str[22];
    for (i=0;i<n;i++){
       gets(str);
@@ -23,8 +23,8 @@ int main_bench(){
             else {p=p;}  
          }
       }
-      if (p==j){printf("yes\n");}
-      else {printf("no\n");}
+      if (p==j){my_printf("yes\n");}
+      else {my_printf("no\n");}
    }
    return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
 	struct xy{
 		int ssy,szy;
 	}xy[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&(xy[i].ssy),&(xy[i].szy));
+		my_scanf("%d%d",&(xy[i].ssy),&(xy[i].szy));
 	}
 	for(i=0;i<n;i++){
 		if((xy[i].ssy>=90)&&(xy[i].ssy<=140)&&(xy[i].szy<=90)&&(xy[i].szy>=60)){
@@ -20,6 +20,6 @@ int main_bench()
 			d=a;
 		}
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

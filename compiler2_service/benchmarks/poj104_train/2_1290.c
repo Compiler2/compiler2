@@ -9,10 +9,10 @@ int main_bench()
      int a;
      char s[80];
      }tope[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %s",&tope[i].a,tope[i].s);
+        my_scanf("%d %s",&tope[i].a,tope[i].s);
     }
        for(k=0;k<26;k++)
            {
@@ -35,14 +35,14 @@ int main_bench()
               c=i;
           }
     }
-    printf("%c\n%d\n",g[c],t);
+    my_printf("%c\n%d\n",g[c],t);
    for(i=0;i<n;i++)
   {
       for(j=0;tope[i].s[j]!='\0';j++)
       {
             if(tope[i].s[j]==g[c])
             {
-                printf("%d\n",tope[i].a);
+                my_printf("%d\n",tope[i].a);
              }
        }
    }

@@ -4,13 +4,13 @@ int main_bench()
 {
 	int a[300],i,j,k=1,t;
 	char comma;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	do
 	{
-		scanf("%c",&comma);
+		my_scanf("%c",&comma);
 		if(comma!=',')
 			break;
-		scanf("%d",&a[k]);
+		my_scanf("%d",&a[k]);
 		k=k+1;
 	}while(k<=300);
 	
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	if(a[0]==a[k-1])
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=1;i<=k-1;i++)
@@ -37,7 +37,7 @@ int main_bench()
 			a[i]=100000;
 			if(a[i]<100000)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				break;
 			}
 		}

@@ -44,12 +44,12 @@ int main_bench()
     char a[100][100];
     int i,j;
     int n;
-    scanf("%d",&n);
-    for(i=0; i<n; i++)scanf("%s",a[i]);
+    my_scanf("%d",&n);
+    for(i=0; i<n; i++)my_scanf("%s",a[i]);
     int day;
-    scanf("%d",&day);
+    my_scanf("%d",&day);
     while(--day)
     one_day(a,n);
-    printf("%d\n",count(a,n));
+    my_printf("%d\n",count(a,n));
 
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,x,sum;
 	int panduan(int);
 	int jisuan(int);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sum=0;
 	for(i=1;i<=n;i++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 			sum=sum+jisuan(i);
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
     return 0;
 }
 int panduan(int y)

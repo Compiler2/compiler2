@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i, a[6]={0}, m;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	while(m/100>0)
 	{
 		a[0]++;
@@ -33,7 +33,7 @@ int main_bench()
 	a[5] = m;
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n", a[i]);
+		my_printf("%d\n", a[i]);
 	}
 	return 0;
 }

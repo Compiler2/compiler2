@@ -12,10 +12,10 @@ int main_bench()
     char temp[6];
 	m=exam1[0];
 	f=exam2[0];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-        scanf("%s %f",&temp,&high);
+        my_scanf("%s %f",&temp,&high);
 			cn=temp[0];
 		if(cn==m)
 		{
@@ -62,16 +62,16 @@ int main_bench()
 
 for(i=0;i<male;i++)
 {
-    printf("%.2f",an[i]);
-	printf(" ");
+    my_printf("%.2f",an[i]);
+	my_printf(" ");
 }
 for(i=0;i<female-1;i++)
 
 {
-	printf("%.2f",bn[i]);
-	printf(" ");
+	my_printf("%.2f",bn[i]);
+	my_printf(" ");
 }
-printf("%.2f",bn[female-1]);
+my_printf("%.2f",bn[female-1]);
 
 
 	

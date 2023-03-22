@@ -25,7 +25,7 @@ int main_bench()
 		}
 
 for(i=1;i<n;i++)
-if(a[i]<a[0]){printf("%d\n",a[i]);q=1;break;}
-if(q==0)printf("No\n");
+if(a[i]<a[0]){my_printf("%d\n",a[i]);q=1;break;}
+if(q==0)my_printf("No\n");
 
 }

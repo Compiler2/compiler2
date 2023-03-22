@@ -3,7 +3,7 @@
 int main_bench()
 {
 int x,a,b,c,d,e,f;
-scanf("%d",&x);
+my_scanf("%d",&x);
 a=(x-x%100)/100;
 x=x-100*a;
 b=(x-x%50)/50;
@@ -14,6 +14,6 @@ d=(x-x%10)/10;
 x=x-10*d;
 e=(x-x%5)/5;
 f=x-5*e;
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 return 0;
 }

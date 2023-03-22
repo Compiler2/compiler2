@@ -2,7 +2,7 @@
 
 int main_bench(){
     int n,m,i,s,k,p;
-    scanf("%d %d\n",&n,&m);
+    my_scanf("%d %d\n",&n,&m);
     while(n!=0&&m!=0){
         int a[n];
         for(p=0;p<n;p++){
@@ -26,10 +26,10 @@ int main_bench(){
         for(i=0;i<n;i++){
             if(a[i]==1){
                 i=i+1;
-                printf("%d\n",i);
+                my_printf("%d\n",i);
             }
         }  
-        scanf("%d %d\n",&n,&m);
+        my_scanf("%d %d\n",&n,&m);
     }
     return 0;
 }

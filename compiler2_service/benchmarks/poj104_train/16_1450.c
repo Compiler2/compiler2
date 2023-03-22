@@ -12,6 +12,6 @@ int main_bench()
 	}
 	i=i-1;                 
 	for(k=i;k>=1;k--)      
-		printf("%c",a[k]);
+		my_printf("%c",a[k]);
 	return 0;
 }

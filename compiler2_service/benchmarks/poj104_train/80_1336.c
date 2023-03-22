@@ -6,12 +6,12 @@ int main_bench()
 	int leap_days[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
 	int sum,sum1,sum2;
 	int startyear,startmonth,startday,endyear,endmonth,endday;
-	scanf("%d %d %d\n%d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+	my_scanf("%d %d %d\n%d %d %d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
 	int totalfromfirstday (int year1,int month1,int day1,int year2,int month2,int day2);
     sum1=totalfromfirstday(startyear,1,1,startyear,startmonth,startday);
 	sum2=totalfromfirstday(startyear,1,1,endyear,endmonth,endday);
 	sum=sum2-sum1;
-	printf("%d",sum);
+	my_printf("%d",sum);
 }
 int totalfromfirstday (int year1,int month1,int day1,int year2,int month2,int day2)
 {

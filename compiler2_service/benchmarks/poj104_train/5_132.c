@@ -6,12 +6,12 @@ int main_bench()
 	int num,i;
 	int same=0,judge=1;
 	double standard,actual;
-	scanf("%lf",&standard);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&standard);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if(strlen(a)!=strlen(b))
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -20,7 +20,7 @@ int main_bench()
 		{
 			if(((a[i]!='A')&&(a[i]!='T')&&(a[i]!='G')&&(a[i]!='C'))||((b[i]!='A')&&(b[i]!='T')&&(b[i]!='G')&&(b[i]!='C')))
 			{
-				printf("error");
+				my_printf("error");
 				judge=0;
 				break;
 			}
@@ -37,11 +37,11 @@ int main_bench()
 			actual=1.0*same/num;
 			if(actual>standard)
 			{
-				printf("yes");
+				my_printf("yes");
 			}
 			else
 			{
-				printf("no");
+				my_printf("no");
 			}
 		}
 	}

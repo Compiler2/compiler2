@@ -59,8 +59,8 @@ void output(int len, char inp[1000])
 	for(i=0;i<k;i++)
 	{
 		for(j=0;j<lenm[i]+3;j++)
-			printf("%c",lin3[i][j]);
-		printf("\n");
+			my_printf("%c",lin3[i][j]);
+		my_printf("\n");
 	}
 }
 

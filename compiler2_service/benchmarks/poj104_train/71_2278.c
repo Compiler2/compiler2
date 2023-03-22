@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(m=0;m<n;m++)
 	{
       int year, month1,month2, total1,total2;
-	   scanf("%d%d%d", &year, &month1,&month2);
+	   my_scanf("%d%d%d", &year, &month1,&month2);
 	    total1 = 0,total2=0;
 	  
         for( i=1; i<month1; i++)
@@ -49,9 +49,9 @@ int main_bench()
 	
 
 		if((total1-total2)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 
 	

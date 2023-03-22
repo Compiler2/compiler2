@@ -3,9 +3,9 @@
 int main_bench(){
 	int a=1,b=1,m,n,i;
 	double sum=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		int j;
 		for(j=0;j<n;j++){
 			if(j%2==0){
@@ -17,7 +17,7 @@ int main_bench(){
 				a=a+b;
 			}
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 		sum=0;
 		a=1,b=1;
 	}

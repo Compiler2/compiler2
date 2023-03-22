@@ -13,8 +13,8 @@ int main_bench()
 			}
 			if(t==0){
 				for(j=i;j<=i+k;j++)
-					printf("%c",str[j]);
-				printf("\n");
+					my_printf("%c",str[j]);
+				my_printf("\n");
 			}
 		}
 	return 0;

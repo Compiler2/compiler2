@@ -6,7 +6,7 @@ int main_bench()
 	int sum,i,e,n;
 	sum=0;
 
-	scanf("%d",&e);
+	my_scanf("%d",&e);
 
 	for(i=1;i<=e;i++){
 
@@ -44,6 +44,6 @@ int main_bench()
 			continue;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

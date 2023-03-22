@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,k,a[1000],b[1001],i,q;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b[i+1]=a[i];
 	}
 	for(i=0;i<n;i++)
@@ -13,7 +13,7 @@ int main_bench()
 		for(q=1;q<n+1;q++)
 		{
 			if(a[i]+b[q]==k){
-				printf("yes\n");
+				my_printf("yes\n");
 				if(q==n){
 					q--;
 				}
@@ -24,7 +24,7 @@ int main_bench()
 			break;
 		if(i==n-1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		
 	}

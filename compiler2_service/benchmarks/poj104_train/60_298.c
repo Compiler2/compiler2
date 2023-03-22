@@ -3,9 +3,9 @@
 int main_bench()
 {
     int a[10000],d,m,n,i,j,s,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n==1||n==2||n==3||n==4)
-    printf("empty\n");
+    my_printf("empty\n");
     else
     {
     for(i=2,m=0;i<=n;i++)
@@ -24,11 +24,11 @@ int main_bench()
     for(d=0,b=0;d<m;d++)
     {
     if(a[d+1]==a[d]+2)
-    printf("%d %d\n",a[d],a[d+1]);
+    my_printf("%d %d\n",a[d],a[d+1]);
     b=b+1;
     }
     if(b==0)
-    printf("empty\n");
+    my_printf("empty\n");
     getchar();
     getchar();
     getchar(); 

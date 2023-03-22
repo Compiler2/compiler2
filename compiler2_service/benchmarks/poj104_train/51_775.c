@@ -3,9 +3,9 @@
 int main_bench()
 {
  int n,changdu;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  char gram[501],bijiao[500];
- scanf("%s",&gram);
+ my_scanf("%s",&gram);
  changdu=strlen(gram);
  int paohui[500]={0};
  for(int i=0;i<changdu-(n-1);i++)
@@ -54,15 +54,15 @@ int main_bench()
   }
  }
  if(cishu==1)
-  printf("NO\n");
+  my_printf("NO\n");
  else
  {
-  printf("%d\n",cishu);
+  my_printf("%d\n",cishu);
   for(int i=0;i<jige;i++)
   {
    for(int r=0;r<n;r++)
-    printf("%c",gram[zuiduo[i]+r]);
-   printf("\n");
+    my_printf("%c",gram[zuiduo[i]+r]);
+   my_printf("\n");
   }
  }
  return 0;

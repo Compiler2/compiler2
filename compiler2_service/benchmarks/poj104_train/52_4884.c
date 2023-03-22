@@ -4,13 +4,13 @@ int main_bench()
 {
  void de(int x[],int n, int m);
     int n,m,i,x[100];
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<=n-1;i++)
-    scanf("%d",&x[i]);
+    my_scanf("%d",&x[i]);
     de(x,n,m);
-    printf("%d",x[0]);
+    my_printf("%d",x[0]);
     for(i=1;i<=n-1;i++)
-    printf(" %d",x[i]);
+    my_printf(" %d",x[i]);
 return 0;
 }
 void de(int x[],int n, int m)

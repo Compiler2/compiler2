@@ -33,9 +33,9 @@ int main_bench()
   {
    
     for(x=0;x<c[m];x++)
-    printf("%c",b[m][x]);
-   printf(" ");
+    my_printf("%c",b[m][x]);
+   my_printf(" ");
   }
   for(y=0;y<c[0];y++)
-  printf("%c",b[0][y]);
+  my_printf("%c",b[0][y]);
 }

@@ -24,11 +24,11 @@ int main_bench()
 	{
 		if(*(q+i)!='\0')
 		{
-			printf("%c",*(q+i));
+			my_printf("%c",*(q+i));
 		}else{
 			break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

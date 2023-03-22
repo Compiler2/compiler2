@@ -6,13 +6,13 @@ int c[500];
 void putin()
 {
 	int i;
-	scanf("%d %d",&A,&B);
+	my_scanf("%d %d",&A,&B);
 	a=(int*)malloc(A*sizeof(int));
 	b=(int*)malloc(B*sizeof(int));
 	for(i=0;i<A;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(i=0;i<B;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 }
 void replace()
 {
@@ -40,9 +40,9 @@ void print()
 	for(i=0;i<A+B;i++)
 	{
 		if(i==0)
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 		else
-		printf(" %d",c[i]);
+		my_printf(" %d",c[i]);
 		}
 	
 }

@@ -2,17 +2,17 @@
 
 int main_bench(){
 	int sz[100][100],m,n,k,i,j,q,s;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int*sum
 		=(int*)malloc(sizeof(int)*k);
 	s=0;
 	
 	for(q=0;q<k;q++){
 		sum[q]=0;
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(i=0;i<m;i++){
 			for(j=0;j<n;j++){
-				scanf("%d",&sz[i][j]);
+				my_scanf("%d",&sz[i][j]);
 			}
 		}
 	
@@ -33,7 +33,7 @@ int main_bench(){
 		sum[q]-=sz[m-1][0];
 		sum[q]-=sz[m-1][n-1];
 		
-		printf("%d\n",sum[q]);
+		my_printf("%d\n",sum[q]);
 		
 	}
 	

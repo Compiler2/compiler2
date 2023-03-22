@@ -5,16 +5,16 @@ int ss(int n);
 int main_bench()
 {
     int n,i=0,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<5)
-    printf("empty");
+    my_printf("empty");
     else  
     {
         for(i=2;i<(n-1);i++)
         {
             a=ss(i);
             if(a==2)
-            printf("%d %d\n",i,i+2);
+            my_printf("%d %d\n",i,i+2);
         }      
     }
     return 0;

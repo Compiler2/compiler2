@@ -9,11 +9,11 @@ int main_bench()
 	int n,day;
 	int i,j,t;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year[i],&yue1[i],&yue2[i]);
+		my_scanf("%d%d%d",&year[i],&yue1[i],&yue2[i]);
 		if(year[i]%400==0||year[i]%4==0&&year[i]%100!=0)
 		{
 			if(yue1[i]>yue2[i])
@@ -29,10 +29,10 @@ int main_bench()
 			}
 			if(day%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 			
 			
 		}
@@ -51,10 +51,10 @@ int main_bench()
 			}
 			if(day%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 		}
 
 	}

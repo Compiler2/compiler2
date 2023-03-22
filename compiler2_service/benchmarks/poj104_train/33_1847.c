@@ -3,11 +3,11 @@
 int main_bench()
 {
 	char s[255]={'\0'},s1[255]={'\0'};int n,i,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {   
 	char s[255]={'\0'};char s1[255]={'\0'}; 
-	scanf("%s",s);
+	my_scanf("%s",s);
     for(j=0;s[j]!='\0';j++)
 	{
 	  if(s[j]=='A')
@@ -19,7 +19,7 @@ for(i=0;i<n;i++)
 	  if(s[j]=='G')
 	  {s1[j]='C';}
 	}
-  printf("%s\n",s1); 
+  my_printf("%s\n",s1); 
 
 }    
 

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,n,m,j,flag=0,temp=0,a,b,c,d,e,f,k,p,t=-1,x[19];
 	char s[7];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=n;i<=m;i++)
 	{
 		for(j=2;j<i;j++)
@@ -85,12 +85,12 @@ int main_bench()
 		 
 	}
 	if(t==-1)
-		printf("no");
+		my_printf("no");
 	else
 	{
 	for(k=0;k<t;k++)
-		 printf("%d,",x[k]);
-	printf("%d",x[t]);
+		 my_printf("%d,",x[k]);
+	my_printf("%d",x[t]);
 	}
 }
 		

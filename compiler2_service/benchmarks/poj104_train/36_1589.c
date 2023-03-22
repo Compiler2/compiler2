@@ -13,10 +13,10 @@ void f(char a[],int l)
 main_bench()
 {
 	char a[500]={0},b[500]={0};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int la=strlen(a),lb=strlen(b);
 	f(a,la);
 	f(b,lb);
-	if(strcmp(a,b)==0) printf("YES\n");
-	else printf("NO\n");
+	if(strcmp(a,b)==0) my_printf("YES\n");
+	else my_printf("NO\n");
 }

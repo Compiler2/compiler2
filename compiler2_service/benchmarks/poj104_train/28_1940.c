@@ -12,12 +12,12 @@ int main_bench()
             num++;
             if(i==strlen(a)-1)
             {
-                printf("%d",num);
+                my_printf("%d",num);
             }
         }
         else if(a[i]==' '&&a[i+1]!=' ')
         {
-            printf("%d,",num);
+            my_printf("%d,",num);
             num=0;
         }
     }   

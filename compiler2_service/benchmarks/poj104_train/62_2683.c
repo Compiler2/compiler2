@@ -16,6 +16,6 @@ int main_bench(){
 		modified[j+1]=0;
 	}else
 		modified[j]=0;
-	printf("%s\n",modified);
+	my_printf("%s\n",modified);
 	return 0;
 }

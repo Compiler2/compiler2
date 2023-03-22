@@ -4,7 +4,7 @@
 	{
 		char a[3000],b[30000];
 		int i,x=0,y,n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(y=0;y<=n;y++)
 		{
 			gets(a);

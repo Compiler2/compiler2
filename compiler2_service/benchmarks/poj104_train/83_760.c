@@ -7,11 +7,11 @@ main_bench()
     struct {int xf,fs;
     	float jd;
     }a[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%d",&a[i].xf);
+    my_scanf("%d",&a[i].xf);
     for(i=0;i<n;i++)
-    scanf("%d",&a[i].fs);
+    my_scanf("%d",&a[i].fs);
      for(i=0;i<n;i++)
      {
      	
@@ -42,7 +42,7 @@ main_bench()
       	sum2+=a[i].xf;
       }
       gpa=sum1/sum2;
-      printf("%.2f",gpa);
+      my_printf("%.2f",gpa);
       return 0;
     
 }

@@ -27,7 +27,7 @@ main_bench()
                                             {
                                              if(a!=b&&a!=c&&a!=d&&a!=e&&b!=c&&b!=d&&b!=e&&c!=d&&c!=e&&d!=e)
                                             {
-                                                printf("%d %d %d %d %d\n",a,b,c,d,e);
+                                                my_printf("%d %d %d %d %d\n",a,b,c,d,e);
                                             }
                                         }
                                     }

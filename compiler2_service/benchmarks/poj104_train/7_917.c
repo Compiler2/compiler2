@@ -27,13 +27,13 @@ int main_bench()
 		 }
 		 if (k==0)
 		 {
-			 for (j=0;j<l;j++) printf ("%c",c[j]);
-			 for (i=t+l;i<m;i++) printf ("%c",a[i]);
+			 for (j=0;j<l;j++) my_printf ("%c",c[j]);
+			 for (i=t+l;i<m;i++) my_printf ("%c",a[i]);
 			 break;
 		 }
 		 if (k==1)
 		 {
-			 printf ("%c",a[i]);
+			 my_printf ("%c",a[i]);
 		 }
 	 }
 	 return 0;

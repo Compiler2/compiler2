@@ -31,7 +31,7 @@ int main_bench()
       
         
            
-         printf("%d\n",m);  
+         my_printf("%d\n",m);  
                                   
   }    
   getchar();

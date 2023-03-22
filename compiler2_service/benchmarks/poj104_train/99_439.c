@@ -13,11 +13,11 @@ int main_bench()
   w = 0;
   e = 0;
   r = 0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[n];
   for(i=0;i<n;i++)
   {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     if(1<=a[i]&&a[i]<=18)
     {
      sum1++;
@@ -40,7 +40,7 @@ int main_bench()
     w=(double)sum2/(double)sum;
     e=(double)sum3/(double)sum;
     r=(double)sum4/(double)sum;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",q*100,w*100,e*100,r*100);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",q*100,w*100,e*100,r*100);
     return 0;
  }
 

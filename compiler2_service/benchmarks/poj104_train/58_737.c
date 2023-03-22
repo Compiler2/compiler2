@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,m;
 	char c[800];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
 		gets(c);
@@ -15,34 +15,34 @@ int main_bench()
 			{
 				if(c[j]==' ')
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 				if(c[j]<48)
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 				if(c[j]>57&&c[j]<65)
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 				if(c[j]>91&&c[j]<95)
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 				if(c[j]>95&&c[j]<97)
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 				if(c[j]>122)
 				{
-					printf("0\n");break;
+					my_printf("0\n");break;
 				}
 			}
 			if(j==m)
-				printf("1\n");
+				my_printf("1\n");
 		}
 		else
-			printf("0\n");
+			my_printf("0\n");
 	}
 	return 0;
 }

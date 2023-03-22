@@ -7,7 +7,7 @@ int main_bench()
  int t,i; 
  char c[10][10]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
  int s[12]={0,31,28,31,30,31,30,31,31,30,31,31};
- scanf("%d%d%d",&year,&month,&days);
+ my_scanf("%d%d%d",&year,&month,&days);
 
  sum=year%7+year/4-year/100+year/400;
 
@@ -24,7 +24,7 @@ int main_bench()
        sum=sum-1;
  
  t=sum%7;
- printf("%s\n",c[t]);
+ my_printf("%s\n",c[t]);
  return 0;
 }
 

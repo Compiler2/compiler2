@@ -6,7 +6,7 @@ int main_bench()
     int a[11][11]={0},b[11][11]={0};
     int n,t;
     int i,j;
-    scanf("%d%d",&t,&n);
+    my_scanf("%d%d",&t,&n);
     a[5][5]=t;
     while (n>0)
     {
@@ -22,8 +22,8 @@ int main_bench()
     }
     for (i=1;i<=9;i++)
     {
-        for (j=1;j<=8;j++) printf("%d ",a[i][j]);
-        printf("%d\n",a[i][9]);
+        for (j=1;j<=8;j++) my_printf("%d ",a[i][j]);
+        my_printf("%d\n",a[i][9]);
     }
     return 0;
 }

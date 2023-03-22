@@ -15,10 +15,10 @@ int money;
 
 long int i,N,max=0;
 long int all=0;
-scanf("%d\n",&N);
+my_scanf("%d\n",&N);
 struct person *stu=(struct person *)malloc(N*sizeof(struct person));
 for(i=0;i<N;i++){
-scanf("%s%d%d %c %c %d\n",&stu[i].name,&stu[i].pro1,&stu[i].pro2,&stu[i].c1,&stu[i].c2,&stu[i].papers);
+my_scanf("%s%d%d %c %c %d\n",&stu[i].name,&stu[i].pro1,&stu[i].pro2,&stu[i].c1,&stu[i].c2,&stu[i].papers);
 stu[i].money=0;
 if(stu[i].papers>=1&&stu[i].pro1>80)stu[i].money=stu[i].money+8000;
 if(stu[i].pro1>85&&stu[i].pro2>80)stu[i].money=stu[i].money+4000;
@@ -29,7 +29,7 @@ if(max<stu[i].money) max=stu[i].money;
 all=all+stu[i].money;}
 for(i=0;i<N;i++)
 {if(stu[i].money==max)
-{printf("%s\n%d\n%d",stu[i].name,stu[i].money,all);
+{my_printf("%s\n%d\n%d",stu[i].name,stu[i].money,all);
 break;}
 }
 return(0);

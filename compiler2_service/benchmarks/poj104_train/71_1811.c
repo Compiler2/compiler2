@@ -12,12 +12,12 @@ int run ( int x )
 int main_bench()
 {
 	int i , n , j , day = 0 ;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for ( i = 0 ; i < n ; i ++)
 	{
 		int year , mona ,monb , max , min;
 		int run(int x);
-		scanf ("%d %d %d" , &year , &mona , &monb);
+		my_scanf ("%d %d %d" , &year , &mona , &monb);
 		if (mona > monb)
 		{
 			max = mona ;
@@ -57,8 +57,8 @@ int main_bench()
 			}	
 		}
 
-		if ( day % 7 == 0 )  printf("YES\n");
-		else printf("NO\n");
+		if ( day % 7 == 0 )  my_printf("YES\n");
+		else my_printf("NO\n");
 		day = 0 ;
 
 

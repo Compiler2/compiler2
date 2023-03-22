@@ -3,9 +3,9 @@
 int main_bench(){
 int n,i,m,result=0;
 char bsf[1000][21];
-scanf("%d",&n);
+my_scanf("%d",&n);
  for(i=0;i<n;i++){
-    scanf("%s",bsf[i]);
+    my_scanf("%s",bsf[i]);
  }
   for(i=0;i<n;i++){
     if(((bsf[i][0]>='a')&&(bsf[i][0]<='z'))||((bsf[i][0]>='A')&&(bsf[i][0]<='Z'))||(bsf[i][0]=='_')){
@@ -20,7 +20,7 @@ scanf("%d",&n);
      else{
           result=1;
       }
-   if(result==0){printf("yes\n");}else{printf("no\n");};
+   if(result==0){my_printf("yes\n");}else{my_printf("no\n");};
   result=0;
   }
  return 0;

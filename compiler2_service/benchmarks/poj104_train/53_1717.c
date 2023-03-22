@@ -7,10 +7,10 @@ int main_bench()
 	int t;
 	int n;
 	int num;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		for(j=0;j<i;j++)
 		{
 			t=1;
@@ -26,12 +26,12 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf("%d\n",a[0]);
+		my_printf("%d\n",a[0]);
 	else
 	{
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 		for(i=1;i<k;i++)
-			printf(",%d",a[i]);
+			my_printf(",%d",a[i]);
 		putchar('\n');
 	}
 	return 0;

@@ -8,15 +8,15 @@ int main_bench()
     char c;
     do
     {
-      scanf("%d",&x[i]);
+      my_scanf("%d",&x[i]);
       y[i]=1;
       i++;  
     }
     while((c=getchar())!='\n');
-    printf("%d ",i);
+    my_printf("%d ",i);
     do
     {
-      scanf("%d",&x[i]);
+      my_scanf("%d",&x[i]);
       x[i]--;
       y[i]=-1;
       i++; 
@@ -39,7 +39,7 @@ int main_bench()
     s+=y[j];
     imax=max(imax,s);
     }
-    printf("%d",imax);
+    my_printf("%d",imax);
     return 0;
 }
 

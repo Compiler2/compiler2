@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int nianling[100];
 	int i;
 	int sum[4]={0};
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&nianling[i]);
+		my_scanf("%d",&nianling[i]);
 		if(nianling[i]>=1&&nianling[i]<=18)
 			sum[0]++;
 		if(nianling[i]>=19&&nianling[i]<=35)
@@ -25,10 +25,10 @@ int main_bench()
 	{
 		bai[j]=((double)sum[j]/(double)n)*100;
 	}
-	printf("1-18: %.2lf%%\n",bai[0]);
-	printf("19-35: %.2lf%%\n",bai[1]);
-	printf("36-60: %.2lf%%\n",bai[2]);
-	printf("60??: %.2lf%%",bai[3]);
+	my_printf("1-18: %.2lf%%\n",bai[0]);
+	my_printf("19-35: %.2lf%%\n",bai[1]);
+	my_printf("36-60: %.2lf%%\n",bai[2]);
+	my_printf("60??: %.2lf%%",bai[3]);
 	return 0;
 }
 

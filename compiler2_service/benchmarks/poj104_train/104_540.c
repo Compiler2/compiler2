@@ -4,14 +4,14 @@ int main_bench()
 {
 	int searchjoint(int x,int y);
 	int x,y,flag;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	if(x==y)
 		flag=x;
 	else if(x>y)
 		flag=searchjoint(y,x);
 	else 
 		flag=searchjoint(x,y);
-	printf("%d",flag);
+	my_printf("%d",flag);
 	return 0;
 }
 int searchjoint(int x,int y)

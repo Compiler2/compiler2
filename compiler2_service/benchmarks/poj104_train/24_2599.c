@@ -10,10 +10,10 @@ int main_bench()
 	char a[50],max[50],min[50];
 	large=0;
 	small=50;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	{
-			scanf("%s",&a);
+			my_scanf("%s",&a);
 			l=strlen(a);
 			small=l;
 			large=l;
@@ -30,7 +30,7 @@ int main_bench()
 				}
 		for(j=2;j<=n;j++)
 		{
-			scanf("%s",&a);
+			my_scanf("%s",&a);
 			l=strlen(a);
 			if (l<small)
 			{
@@ -56,10 +56,10 @@ int main_bench()
 		}
 		
 		for (i=0;i<=large-1;i++)
-			printf("%c",max[i]);
-		printf("\n");
+			my_printf("%c",max[i]);
+		my_printf("\n");
 		for (i=0;i<=small-1;i++)
-			printf("%c",min[i]);
+			my_printf("%c",min[i]);
 	}	
 	
 	return 0;

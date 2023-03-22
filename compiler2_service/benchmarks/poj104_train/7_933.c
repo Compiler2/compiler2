@@ -2,7 +2,7 @@
 
 int main_bench(){
     char s[256],z[256],p[256];
-    scanf("%s%s%s",s,z,p);
+    my_scanf("%s%s%s",s,z,p);
     int i,ls,lz,lp,j,t=0,loc=-1;
     ls=strlen(s);
     lz=strlen(z);
@@ -31,13 +31,13 @@ int main_bench(){
     
     else{
          for(i=0;i<loc;i++){
-                            printf("%c",s[i]);
+                            my_printf("%c",s[i]);
                             }
          for(i=0;i<lp;i++){
-                           printf("%c",p[i]);
+                           my_printf("%c",p[i]);
                            }
          for(i=loc+lp;i<ls;i++){
-                                printf("%c",s[i]);
+                                my_printf("%c",s[i]);
                                 }
          }
         return 0;

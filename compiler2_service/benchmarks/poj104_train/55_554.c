@@ -3,7 +3,7 @@
 int main_bench()
 {	long i,k=0,a1,a2,x;
 	char a[32],b[80];
-	scanf("%d%s%d",&a1,a,&a2);
+	my_scanf("%d%s%d",&a1,a,&a2);
 	for(i=0;a[i]!='\0';i++)
 	{if(a[i]>='0'&&a[i]<='9')
 			k=a1*k+a[i]-'0';
@@ -12,7 +12,7 @@ int main_bench()
 		if(a[i]<='Z'&&a[i]>='A')
 			k=a1*k+a[i]-'A'+10;
 	}
-	if(k==0)printf("0");
+	if(k==0)my_printf("0");
 	for(i=0;k!=0;i++)
 	{
 		x=k%a2;
@@ -25,6 +25,6 @@ int main_bench()
 	while(i)
 	{
 		i--;
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	}
 	return 0;}

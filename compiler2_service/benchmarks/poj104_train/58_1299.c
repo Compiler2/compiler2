@@ -9,7 +9,7 @@ int main_bench()
                      flag=1; 
                      gets(str);ptr=str;
                      if(*ptr!='_' &&(*ptr>90 || *ptr<65)&&(*ptr>122 || *ptr<97)){
-                                  printf("0\n");
+                                  my_printf("0\n");
                                   flag=0;
                      }else{
                            for(ptr=str+1;*ptr !='\0';ptr++){
@@ -17,12 +17,12 @@ int main_bench()
                                                     (*ptr>57 || *ptr<48)&&
                                                     (*ptr>90 || *ptr<65)&&
                                                     (*ptr>122 || *ptr<97)){
-                                                    printf("0\n");
+                                                    my_printf("0\n");
                                                     flag=0;
                                                     break;}
                                                     }
                            } 
-                     if(flag) printf("1\n");
+                     if(flag) my_printf("1\n");
                      }
     return 0;
 }

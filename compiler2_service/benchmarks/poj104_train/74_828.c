@@ -28,7 +28,7 @@ int circle(int s){
 int main_bench(){
 	int m,n,i,yn=1,k,a[1000],counter=0;
 	
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++){
 		yn=1;									
 		for(k=2;k<=i-1;k++){
@@ -49,10 +49,10 @@ int main_bench(){
 	
 	if(counter!=0){
 		for(i=1;i<=counter-1;i++){
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 		}
-		printf("%d",a[counter]);
-	}else	printf("no");
+		my_printf("%d",a[counter]);
+	}else	my_printf("no");
 	
 	return 0;
 }

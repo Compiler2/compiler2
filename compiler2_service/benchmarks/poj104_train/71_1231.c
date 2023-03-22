@@ -5,13 +5,13 @@ int main_bench()
 {
 	int m[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,i,y,a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&y);
-		scanf("%d",&a);
-		scanf("%d",&b);
+		my_scanf("%d",&y);
+		my_scanf("%d",&a);
+		my_scanf("%d",&b);
 
 		if(y%400==0||(y%100!=0&&y%4==0))
 			m[1]=29;
@@ -31,8 +31,8 @@ int main_bench()
 			a++;
 		}
 		if(b%7==0)
-			printf("YES\n");
-		else printf("NO\n");       
+			my_printf("YES\n");
+		else my_printf("NO\n");       
 	}
 	return 0;
 }

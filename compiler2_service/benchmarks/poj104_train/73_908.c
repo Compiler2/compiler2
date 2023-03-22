@@ -10,7 +10,7 @@ int main_bench()
 	{
 		for (j=0;j<5;j++)
 		{
-			scanf ("%d",&a[i][j]);
+			my_scanf ("%d",&a[i][j]);
 		}
 	}
 	int max[5];
@@ -44,10 +44,10 @@ int main_bench()
 		b=lie[i];
 		if (hang[b]==i)
 		{      
-			printf("%d %d %d\n",i+1,b+1,max[i]);
+			my_printf("%d %d %d\n",i+1,b+1,max[i]);
 			w++;
 		}
 	}
 	if (w==0)
-	printf ("not found");
+	my_printf ("not found");
 }

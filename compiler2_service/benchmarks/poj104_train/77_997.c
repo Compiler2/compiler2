@@ -18,7 +18,7 @@ int main_bench()
 			}
 			str[j]='0';
 			a=j;b=i;
-			printf("%d %d\n",a,b);
+			my_printf("%d %d\n",a,b);
 		}
 		else continue;
 	}

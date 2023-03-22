@@ -14,8 +14,8 @@ int main_bench()
 			c[j]=a[i];
 		c[j]='\0';
 		if(k==0)
-			printf("%d",strlen(c));
-		else printf(",%d",strlen(c));
+			my_printf("%d",strlen(c));
+		else my_printf(",%d",strlen(c));
 		i++;
 		k++;
 		}

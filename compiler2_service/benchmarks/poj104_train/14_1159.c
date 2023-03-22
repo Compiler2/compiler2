@@ -10,10 +10,10 @@ int main_bench()
 		int c;
 	}stu[100000];
 
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d%d%d",&stu[i].a,&stu[i].b,&stu[i].c);
+		my_scanf ("%d%d%d",&stu[i].a,&stu[i].b,&stu[i].c);
 		
 	}
 	for (i=0;i<3;i++)
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for (i=0;i<3;i++)
 	{
-		printf ("%d %d\n",stu[i].a,(stu[i].b+stu[i].c));
+		my_printf ("%d %d\n",stu[i].a,(stu[i].b+stu[i].c));
 	}
 	return 0;
 }

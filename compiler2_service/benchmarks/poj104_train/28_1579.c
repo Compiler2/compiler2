@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 	for(p1=len;(*(p1+1))!=0;p1++)
-		printf("%d,",*p1);
-	printf("%d\n",*p1);
+		my_printf("%d,",*p1);
+	my_printf("%d\n",*p1);
 }

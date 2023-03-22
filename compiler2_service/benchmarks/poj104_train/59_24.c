@@ -4,13 +4,13 @@ int main_bench()
 {
 	char state[100][101],str[100][101];
 	int n,m,i,j,count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
 		gets(state[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	m=m-1;
 	for(i=0;i<n;i++)
 	{
@@ -60,6 +60,6 @@ int main_bench()
 				count++;
 		}
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	return 0;
 }

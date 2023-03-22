@@ -10,9 +10,9 @@ int main_bench(){
 	struct shu s[301],t;
     int n,i,j,c=1;
 	double avg,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&s[i].a);
+		my_scanf("%d",&s[i].a);
 	}
 	for(i=0;i<n;i++){
 		sum=sum+s[i].a;}
@@ -41,6 +41,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",s[0].a);
-	if(c>1){for(i=1;i<c;i++) printf(",%d",s[i].a);}
+	my_printf("%d",s[0].a);
+	if(c>1){for(i=1;i<c;i++) my_printf(",%d",s[i].a);}
 }

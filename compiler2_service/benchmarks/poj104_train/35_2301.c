@@ -8,12 +8,12 @@ int main_bench()
 	int flag2[100][100]={0};
 	int p,q;
 	int point=0;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<m;i++)
@@ -39,7 +39,7 @@ int main_bench()
 			{
 			    if(flag1[i][j]==0&&flag2[i][j]==0)
 			    {
-			    	printf("%d+%d\n",i,j);
+			    	my_printf("%d+%d\n",i,j);
 			    	point=point+1;
 			    }
 
@@ -47,6 +47,6 @@ int main_bench()
 		}
 
 		if(point==0)
-			printf("No");
+			my_printf("No");
 		return 0;
 }

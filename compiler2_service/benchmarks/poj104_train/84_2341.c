@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a;
 	int big1,big2,big;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int b[100];
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	big1=b[0];
-	scanf("%d",&b[1]);
+	my_scanf("%d",&b[1]);
 	big2=b[1];
 	if (big2>big1) 
 	{
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for (int i=2;i<=a-1;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		if(b[i]>big2)
 		{
 			big2=b[i];
@@ -30,6 +30,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n%d\n",big1,big2);
+	my_printf("%d\n%d\n",big1,big2);
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 {
 	int i,j,l1,l2;
 	char w1[20],w2[20];
-	scanf("%s %s",w1,w2);
+	my_scanf("%s %s",w1,w2);
 	l1=strlen(w1);
 	l2=strlen(w2);
 	if(l1==l2)
@@ -19,14 +19,14 @@ int main_bench()
 					w2[j]=0;
 					goto Q;
 				}
-			printf("NO");
+			my_printf("NO");
 			goto M;
 Q:;
 		}
-		printf("YES");
+		my_printf("YES");
 M:;
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 	return 0;
 }

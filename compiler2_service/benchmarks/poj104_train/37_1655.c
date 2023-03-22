@@ -3,9 +3,9 @@
 int main_bench(){
 	char zfc[100001];
 	int t,i,k,x;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		for(k=0;k<strlen(zfc)-1;k++){
 			for(x=0;x<strlen(zfc);x++){
 				if(x!=k&&zfc[x]==zfc[k]){
@@ -13,7 +13,7 @@ int main_bench(){
 				}
 			}
 			if(x==strlen(zfc)){
-				printf("%c\n",zfc[k]);
+				my_printf("%c\n",zfc[k]);
 				break;
 			}
 		}
@@ -24,10 +24,10 @@ int main_bench(){
 				}
 			}
 			if(x==strlen(zfc)){
-				printf("%c\n",zfc[k]);
+				my_printf("%c\n",zfc[k]);
 				break;
 			}else{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 	}

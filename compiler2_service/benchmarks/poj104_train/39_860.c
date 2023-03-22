@@ -20,10 +20,10 @@ int main_bench()
 	int n,i;
 	int sum=0,max;
 	struct stu s[101],boss;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",s[i].name,&s[i].final,&s[i].pingyi,&s[i].leader,&s[i].west,&s[i].essay);
+		my_scanf("%s%d%d %c %c%d",s[i].name,&s[i].final,&s[i].pingyi,&s[i].leader,&s[i].west,&s[i].essay);
 		s[i].total=0;
 		if (yuanshi(s[i]))
 			s[i].total+=8000;
@@ -47,7 +47,7 @@ int main_bench()
 		}
 		sum+=s[i].total;
 	}
-	printf("%s\n%d\n%d\n",boss.name,boss.total,sum);
+	my_printf("%s\n%d\n%d\n",boss.name,boss.total,sum);
 	return 0;
 }
 

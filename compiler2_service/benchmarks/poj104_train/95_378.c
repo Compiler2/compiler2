@@ -18,9 +18,9 @@ main_bench(){
  char str1[80],str2[80];
  gets(str1);
  gets(str2);
- if(strcmp(str1,str2)>0)printf(">\n");
- else if(strcmp(str1,str2)==0)printf("=\n");
- else printf("<\n");
+ if(strcmp(str1,str2)>0)my_printf(">\n");
+ else if(strcmp(str1,str2)==0)my_printf("=\n");
+ else my_printf("<\n");
 
 
  return 0;

@@ -10,7 +10,7 @@ main_bench()
       for(i=0;i<=99;i++)  
       st[i]=0;
       sp=0;
-      scanf("%s",a);
+      my_scanf("%s",a);
       if(a[0]=='\0')
       break;
       strcpy(b,a);
@@ -50,7 +50,7 @@ main_bench()
          else
          b[i]=' ';
       }   
-      printf("%s\n",a);
+      my_printf("%s\n",a);
       n=l-1;
       for(i=l-1;i>=0;i--)
       {
@@ -70,10 +70,10 @@ main_bench()
       t=0;
       for(i=m;i<=n;i++)
       {
-         printf("%c",b[i]);
+         my_printf("%c",b[i]);
          t++;
       }
-      printf("\n");
+      my_printf("\n");
       a[0]='\0';
    }                
 }

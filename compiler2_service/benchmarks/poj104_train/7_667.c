@@ -28,17 +28,17 @@ int main_bench()
 			if(j==n1-1)
 			{
 				for(j=0;j<i;j++)
-					printf("%c",a[j]);
-				printf("%s",c);
+					my_printf("%c",a[j]);
+				my_printf("%s",c);
 				for(j=i+n2;a[j]!='\0';j++)
-					printf("%c",a[j]);
+					my_printf("%c",a[j]);
 				k++;
 				
 			}
 		}if(k!=0)break;
 	}
 
-if(k==0)printf("%s",a);
+if(k==0)my_printf("%s",a);
 
 
 }

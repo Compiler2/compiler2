@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[50],b[50];int c,d,i,j,t,k;
-    scanf("%s %s",&a,&b);
+    my_scanf("%s %s",&a,&b);
 	c=strlen(a);
 	d=strlen(b);
 	a[c]='\0';
@@ -19,7 +19,7 @@ int main_bench()
 			break;
 	}
 	if(j<=d-c)
-		printf("%d",j); 
+		my_printf("%d",j); 
 	else if(j==d-c+1)
 	{
 		for(k=0;k<=c;k++)
@@ -28,7 +28,7 @@ int main_bench()
 				break;
 		}
 		if(k==c+1)
-			printf("%d",d-c);
+			my_printf("%d",d-c);
 	}
 }
 

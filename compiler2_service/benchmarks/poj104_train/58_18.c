@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,j,y;
 	char *p,*q;
 	p=q=(char *)malloc(100*sizeof(char));
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(p);
 	for(i=0;i<n;i++)
 	{
@@ -26,6 +26,6 @@ int main_bench()
 					break;
 				}
 		}
-		printf("%d%s",y,i==n-1?"":"\n");
+		my_printf("%d%s",y,i==n-1?"":"\n");
 	}
 }

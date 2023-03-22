@@ -5,11 +5,11 @@ int main_bench()
     int a[100],b[100],m,n[100],i,j;
 	double result[100];
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&(n[i]));
+		my_scanf("%d",&(n[i]));
 	}
 	
 	a[0]=2;
@@ -25,7 +25,7 @@ int main_bench()
 			result[i]=result[i-1]+(double)a[i]/(double)b[i];
 		}
 		
-		printf("%.3lf\n",result[i-1]);
+		my_printf("%.3lf\n",result[i-1]);
 	}
 	return 0;
 }

@@ -9,16 +9,16 @@ int main_bench()
 {
 
    int i,n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
     for(i=0;i<n;i++)
 
-    scanf("%d",&t[i]);
+    my_scanf("%d",&t[i]);
     qsort(t,n,sizeof(int),comp);
     for(i=0;t[i]%2;i++)
-    printf("%d",t[i]);
+    my_printf("%d",t[i]);
     for(;i<n;i++)
     if(t[i]%2)
-    printf(",%d",t[i]);
+    my_printf(",%d",t[i]);
     return 0;
 }
 

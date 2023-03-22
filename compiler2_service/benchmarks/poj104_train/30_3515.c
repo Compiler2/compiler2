@@ -5,7 +5,7 @@ main_bench()
       int n,i,k=0,sum=0;
       int c,b;
       int a[100]={0};
-      scanf("%d",&n); 
+      my_scanf("%d",&n); 
       for(i=1;i<=n;i++)
       {
           b=i/10;
@@ -18,5 +18,5 @@ main_bench()
       }
       for(k=0;a[k]!=0;k++)
       sum=sum+a[k]*a[k];
-      printf("%d",sum);
+      my_printf("%d",sum);
 } 

@@ -51,18 +51,18 @@ int main_bench(){
     int n;
     double p,q;
     double GPA;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int xuefen[100];
     int defen[101];
     for(int i=0;i<n;i++){
-        scanf("%d",&xuefen[i]);
+        my_scanf("%d",&xuefen[i]);
     }
     for(int i=0;i<n;i++){
-        scanf("%d",&defen[i]);
+        my_scanf("%d",&defen[i]);
     }
     p=Jidian(defen,xuefen,n);
     q=1.0*Xuefen(xuefen,n);
-    printf("%.2lf",p/q);
+    my_printf("%.2lf",p/q);
     return 0;
 }
 

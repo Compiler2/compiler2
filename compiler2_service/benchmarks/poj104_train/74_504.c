@@ -22,12 +22,12 @@ int sui(int a)
 int main_bench()
 {
 	int m,n,i,j,a[100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m,j=0;i<=n;i++) if(hui(i)==1&&sui(i)==1) a[j++]=i;
-	if(j==0) printf("no\n");
+	if(j==0) my_printf("no\n");
 	else
 	{
-		for(i=0;i<j-1;i++) printf("%d,",a[i]);
-	    printf("%d\n",a[j-1]);
+		for(i=0;i<j-1;i++) my_printf("%d,",a[i]);
+	    my_printf("%d\n",a[j-1]);
 	}
 }

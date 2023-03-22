@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i = 1;
 	for(i;i<=n;i++)
 	{
 		int p,q;
-		scanf("%d %d",&p,&q);
+		my_scanf("%d %d",&p,&q);
 		int a[10000];
 for(int j = 0;j<p*q;j++)
-scanf("%d",&a[j]);
+my_scanf("%d",&a[j]);
 		int sum = 0;
 		int m=0;
 		while(m<q)
@@ -37,7 +37,7 @@ scanf("%d",&a[j]);
 			sum = sum +a[q*m-1];
 			m++;
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

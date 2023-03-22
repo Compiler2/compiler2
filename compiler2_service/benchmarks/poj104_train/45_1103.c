@@ -4,7 +4,7 @@ int main_bench(){
 	int i,j,k,len[2];
 	char word[2][50];
     for(i=0;i<2;i++){
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 		len[i]=strlen(word[i]);
 	}
 	int n=100;
@@ -23,6 +23,6 @@ int main_bench(){
 		}
 	}
 	if(n!=100)
-		printf("%d\n",n-len[0]+1);
+		my_printf("%d\n",n-len[0]+1);
 	return 0;
 }

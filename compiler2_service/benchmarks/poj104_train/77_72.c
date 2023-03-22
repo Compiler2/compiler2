@@ -47,7 +47,7 @@ int main_bench()
 	sort(out,k);
 	
 	for(i = 0;i<k;i++)
-		printf("%d %d\n",out[i].boy,out[i].girl);
+		my_printf("%d %d\n",out[i].boy,out[i].girl);
 }
 
 void sort(OUT *out,int k)

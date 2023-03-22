@@ -10,9 +10,9 @@ int main_bench()
 	{
 		if(i!=len-1)
 		{
-			printf("%c",str[i]+str[i+1]);
+			my_printf("%c",str[i]+str[i+1]);
 		}else{
-			printf("%c",str[len-1]+str[0]);
+			my_printf("%c",str[len-1]+str[0]);
 		}
 	}
 	return 0;

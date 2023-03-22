@@ -8,8 +8,8 @@ int main_bench()
 	int d,a,i,x,j,c=0;
 
 	for(i=1;n[i-1]!=0&&m[i-1]!=0;i++){	  
-	  scanf("%d",&n[i]);
-	  scanf("%d",&m[i]);
+	  my_scanf("%d",&n[i]);
+	  my_scanf("%d",&m[i]);
 	  c++;
 	}
 
@@ -32,7 +32,7 @@ int main_bench()
 				}
 			}
 		}
-		printf("%d\n",a);
+		my_printf("%d\n",a);
 	
 	} 
 return 0;

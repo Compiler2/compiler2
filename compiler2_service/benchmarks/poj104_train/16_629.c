@@ -3,9 +3,9 @@
 int main_bench()
 {
  int a,b,c,d,e,f;
- scanf("%d",&a);
+ my_scanf("%d",&a);
  if (a/10==0)
-  printf("%d",a);
+  my_printf("%d",a);
  else
   if (a/100==0)
   {
@@ -13,9 +13,9 @@ int main_bench()
    c=a/10;
    d=10*b+c;
     if (b==0)
-     printf("0%d",d);
+     my_printf("0%d",d);
     else
-     printf("%d",d);
+     my_printf("%d",d);
   }
   else
    if (a/1000==0)
@@ -26,11 +26,11 @@ int main_bench()
     e=100*b+10*d+c;
      if (b==0)
       if (d==0)
-       printf("00%d",e);
+       my_printf("00%d",e);
       else
-       printf("0%d",e);
+       my_printf("0%d",e);
      else
-     printf("%d",e);
+     my_printf("%d",e);
    }
    else
     if (a/10000==0)
@@ -43,15 +43,15 @@ int main_bench()
      if (b==0)
       if (e==0)
        if (d==0)
-        printf("000%d",f);
+        my_printf("000%d",f);
        else
-        printf("00%d",f);
+        my_printf("00%d",f);
       else
-       printf("0%d",f);
+       my_printf("0%d",f);
      else
-      printf("%d",f);
+      my_printf("%d",f);
     }
     else
-     printf("00001");
+     my_printf("00001");
  return 0;
 }

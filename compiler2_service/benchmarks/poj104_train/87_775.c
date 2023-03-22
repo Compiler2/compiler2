@@ -5,7 +5,7 @@ int main_bench()
   int a,b,c,d,e,f,s,m,h,sum[100],i,k=0;
   for(i+0;i<=100;i++)
   {
-  scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+  my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
   if(a==0)
 	  break;
   else
@@ -33,7 +33,7 @@ int main_bench()
   }
   for(i=0;i<k;i++)
   {
-  printf("%d\n",sum[i]);
+  my_printf("%d\n",sum[i]);
   }
 return 0;
 }

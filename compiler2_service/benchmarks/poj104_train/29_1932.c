@@ -5,15 +5,15 @@ int main_bench()
 	float sum[10000],K,a[10000],b[10000];
 	int m,n[10000];
 	int i,l;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++)
 	{
 		if(n[i]==1)
 		{
-			printf("2.000\n");
+			my_printf("2.000\n");
 		}
 		else
 		{
@@ -26,7 +26,7 @@ int main_bench()
 				K=sum[l];
 			}
 
-			printf("%.3f\n",K);
+			my_printf("%.3f\n",K);
 		}
 	}
 			

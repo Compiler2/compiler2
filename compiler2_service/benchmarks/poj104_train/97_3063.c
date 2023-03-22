@@ -4,7 +4,7 @@ int a[10] = {100,50,20,10,5,1};
 int main_bench()
 {
   int n,k,i;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   k = 0;
  for(i = 0;i < 6;i ++)
 {
@@ -13,7 +13,7 @@ int main_bench()
       n -= a[i];
       k ++;
     }
-  printf("%d\n",k);
+  my_printf("%d\n",k);
   k = 0;    
 }
  return 0;

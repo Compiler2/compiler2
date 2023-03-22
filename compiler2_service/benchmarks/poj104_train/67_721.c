@@ -4,10 +4,10 @@ int main_bench()
 {
     int a[100],b[100],i,n;
 	double d[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&(a[i]),&(b[i]));
+		my_scanf("%d%d",&(a[i]),&(b[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -18,15 +18,15 @@ int main_bench()
 	{
 		if(d[i]>0.05)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		if(d[i]<-0.05)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if(d[i]<=0.05&&d[i]>=-0.05)
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 

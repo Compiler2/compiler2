@@ -4,11 +4,11 @@ int main_bench()
 {
  int b,c,i;
  char a[100];
- scanf("%s",a);
+ my_scanf("%s",a);
  b=a[0]-'0';
  if(a[1]=='\0'||(a[2]=='\0'&&(a[2]-'0')<3&&(a[0]-'0')==1))
  {
-   printf("0");
+   my_printf("0");
  }
  for(i=1;a[i]!='\0';i++)
  {
@@ -19,8 +19,8 @@ int main_bench()
   {
       continue;
   }
-  printf("%d",c);
+  my_printf("%d",c);
  }
-  printf("\n%d",b);
+  my_printf("\n%d",b);
  return 0;
 }

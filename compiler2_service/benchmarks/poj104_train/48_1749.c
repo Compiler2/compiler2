@@ -9,8 +9,8 @@ int main_bench()
     for(i=0;i<=10;i++)
         for(j=0;j<=10;j++)
             b[i][j]=0;
-    scanf("%d",&a[5][5]);
-    scanf("%d",&n);
+    my_scanf("%d",&a[5][5]);
+    my_scanf("%d",&n);
     for(x=1;x<=n;x++)
     {    for(i=1;i<=9;i++)
              for(j=1;j<=9;j++)
@@ -21,10 +21,10 @@ int main_bench()
     }
     for(i=1;i<=9;i++)
     {
-                     printf("%d",b[i][1]);
+                     my_printf("%d",b[i][1]);
                      for(j=2;j<=9;j++)
-                         printf(" %d",b[i][j]);
-                     printf("\n");
+                         my_printf(" %d",b[i][j]);
+                     my_printf("\n");
     }
     return 0;
 }

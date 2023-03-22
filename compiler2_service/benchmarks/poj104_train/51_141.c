@@ -8,7 +8,7 @@ main_bench(){
  char word[510][5];
  int num[510];
  
- scanf("%d%s",&n,str);
+ my_scanf("%d%s",&n,str);
  p1=p2=str;
  len=strlen(str);
  for(i=0;i<len-n+1;i++){
@@ -32,11 +32,11 @@ main_bench(){
  for(i=1;i<len-n+1;i++){
 	 if(max<num[i]) max=num[i];
  }
- if(max<=1) printf("NO");
+ if(max<=1) my_printf("NO");
  else{
-	printf("%d",max);
+	my_printf("%d",max);
 	for(i=0;i<len-n+1;i++){
-	 if(num[i]==max) printf("\n%s",word[i]);
+	 if(num[i]==max) my_printf("\n%s",word[i]);
 	 }
 	}
 }

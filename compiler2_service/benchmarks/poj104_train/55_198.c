@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,t,i,j,n;
 	char s1[33],s2[33],temp;
-	scanf("%d %s %d",&a,s1,&b);
+	my_scanf("%d %s %d",&a,s1,&b);
 	n=strlen(s1);
 	t=0;
 	for(i=0;i<n;i++)
@@ -29,5 +29,5 @@ int main_bench()
 		s2[j]=s2[i-1-j];
 		s2[i-1-j]=temp;
 	}
-	printf("%s",s2);
+	my_printf("%s",s2);
 }

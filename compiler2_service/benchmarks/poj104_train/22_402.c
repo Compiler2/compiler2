@@ -18,7 +18,7 @@ main_bench()
 	}
 
     if(l==1)
-		printf("No");
+		my_printf("No");
     else
 	{
 		for(i=0;i<=j-2;i++)
@@ -26,7 +26,7 @@ main_bench()
 		if(a[i]!=a[i+1])
 			break;}
     if(i==j-1)
-		printf("No");
+		my_printf("No");
    else
    {
 	   for(i=0;i<=j-2;i++)
@@ -38,7 +38,7 @@ main_bench()
     for(i=0;i<=j-2;i++)
 	{
 		if(a[i]!=a[i+1])
-		{printf("%d",a[i+1]);
+		{my_printf("%d",a[i+1]);
 		break;}
 	}}
 }

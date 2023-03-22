@@ -5,11 +5,11 @@ int main_bench()
 	char a[100],b[100];
 	int i,l1,l2,j;
 	int m=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	if(l1!=l2)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<l1;i++)
@@ -25,9 +25,9 @@ int main_bench()
 					m=0;
 			}
 		if(m)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 	
 }

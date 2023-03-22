@@ -12,13 +12,13 @@ int main_bench()
 		int e;
 	}str[101];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[101];
 	for(int k=1;k<=n;k++){
 		a[k]=0;}
 	int sum=0;
 	for(int i=1;i<=n;i++){
-		scanf("%s %d %d %c %c %d",&str[i].name,&str[i].a,&str[i].b,&str[i].c,&str[i].d,&str[i].e);}
+		my_scanf("%s %d %d %c %c %d",&str[i].name,&str[i].a,&str[i].b,&str[i].c,&str[i].d,&str[i].e);}
 	for(int j=1;j<=n;j++){
 		if(str[j].a>80&&str[j].e>=1){
 			a[j]+=8000;}
@@ -38,8 +38,8 @@ int main_bench()
 
 			q=t;}
 	}
-	printf("%s\n",str[q].name);
-	printf("%d\n",a[q]);
-	printf("%d\n",sum);
+	my_printf("%s\n",str[q].name);
+	my_printf("%d\n",a[q]);
+	my_printf("%d\n",sum);
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,a,b,i,sum1,sum2;
 	sum1=sum2=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(a=3;a<(m/2+1);a=a+2)
 	{
 		b=m-a;
@@ -32,7 +32,7 @@ int main_bench()
 		}
 		if((sum1==b-2)&&(sum2==a-2))
 		{
-			printf("%d %d\n\n",a,b);
+			my_printf("%d %d\n\n",a,b);
 		}
 		sum1=sum2=0;
 	}

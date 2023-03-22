@@ -5,8 +5,8 @@ int main_bench()
 {
 	int n,i,j,l;
 	char a[100],max[100],min[100];
-	scanf("%d",&n);
-	scanf("%s", a);
+	my_scanf("%d",&n);
+	my_scanf("%s", a);
 	int minl=strlen(a),maxl=strlen(a);
 	l=strlen(a);
 	for(i=0;i<l;i++)
@@ -16,7 +16,7 @@ int main_bench()
 	}
 	for(i=1;i<n;i++)
 	{
-		scanf("%s", a);
+		my_scanf("%s", a);
 		l=strlen(a);
 		if(l>maxl)
 		{
@@ -36,8 +36,8 @@ int main_bench()
 		}
 	}
 	max[maxl] = '\0';
-	for(i=0;i<maxl;i++)	printf("%c",max[i]);
-	printf("\n");
+	for(i=0;i<maxl;i++)	my_printf("%c",max[i]);
+	my_printf("\n");
 	min[minl] = '\0';
-	for(i=0;i<minl;i++)	printf("%c",min[i]);
+	for(i=0;i<minl;i++)	my_printf("%c",min[i]);
 }

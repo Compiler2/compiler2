@@ -5,11 +5,11 @@ int main_bench()
     int max(int x,int y);
 	int a[100];
 	int m=0,x=0,j,i=1;
-	scanf("%d",&a[1]);
+	my_scanf("%d",&a[1]);
 	while(getchar()==',')
 	{
 		i++;
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
 	}
     if(i!=1)
 	{
@@ -23,11 +23,11 @@ int main_bench()
 		for(j=1;j<=i;j++)
 			x=max(x,a[j]);
 		if(x!=0)
-			printf("%d\n",x);
+			my_printf("%d\n",x);
 		else
-			printf("No\n");
+			my_printf("No\n");
 	}
-	else printf("No\n");
+	else my_printf("No\n");
 }
 int max(int x,int y)
 {

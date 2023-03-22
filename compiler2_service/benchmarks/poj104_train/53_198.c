@@ -8,9 +8,9 @@ int main_bench()
 	int temp;
 	short flag;
 	
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++){
-		scanf("%d", &temp);
+		my_scanf("%d", &temp);
 		flag = 0;
 		for (j=0; j<m; j++){
 			if (content[j]==temp)
@@ -21,9 +21,9 @@ int main_bench()
 	}
 	
 	for(i=0; i<m; i++){
-		printf("%d", content[i]);
+		my_printf("%d", content[i]);
 		if (i<m-1)
-			printf(",");
+			my_printf(",");
 	}
 	
 	return 0;

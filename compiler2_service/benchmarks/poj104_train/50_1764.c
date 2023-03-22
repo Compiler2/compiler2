@@ -4,11 +4,11 @@ int month(int m);
 int main_bench()
 {
 	int w,m,result=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(m=0;m<12;m++){
 		result+=month(m);
 		if((w+result)%7==0){
-			printf("%d\n",m+1);
+			my_printf("%d\n",m+1);
 		}
 	}
 	return 0;

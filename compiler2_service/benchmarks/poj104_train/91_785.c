@@ -21,7 +21,7 @@ int main_bench()
 *q=*p+*str;
 q=str1;
 for(i=0;i<m;i++,q++)
-printf("%c",*q);
+my_printf("%c",*q);
 }
 
 

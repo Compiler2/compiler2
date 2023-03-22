@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sz[200]={0},carry=0,i,k,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	if(n==0)
 	{
-		printf("1");
+		my_printf("1");
 		return 0;
 	}
 	sz[0]=2;
@@ -29,7 +29,7 @@ int main_bench()
 		{
 			for(i=i;i>=0;i--)
 			{
-				printf("%d",sz[i]);
+				my_printf("%d",sz[i]);
 			}
 		    break;
 		}

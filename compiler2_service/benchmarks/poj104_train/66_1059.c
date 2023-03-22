@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 	}
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(a%400!=0)
 	{
 	a=a%400;
@@ -73,31 +73,31 @@ int main_bench()
 	s=s%7;
 	if(s==1)
 	{
-	printf("Mon.");
+	my_printf("Mon.");
 	}
 	if(s==2)
 	{
-	printf("Tue.");
+	my_printf("Tue.");
 	}
 	if(s==3)
 	{
-	printf("Wed.");
+	my_printf("Wed.");
 	}
 	if(s==4)
 	{
-	printf("Thu.");
+	my_printf("Thu.");
 	}
 	if(s==5)
 	{
-	printf("Fri.");
+	my_printf("Fri.");
 	}
 	if(s==6)
 	{
-	printf("Sat.");
+	my_printf("Sat.");
 	}
 	if(s==0)
 	{
-	printf("Sun.");
+	my_printf("Sun.");
 	}
     return 0;
 }

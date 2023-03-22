@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(int i = 3;i < n;i++)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 	{
 		if((n-i)%k == 0) goto There;
 	}
-	if(i <= n-i) printf("%d %d\n",i,n-i);
+	if(i <= n-i) my_printf("%d %d\n",i,n-i);
 	There:;
 	} 
 	return 0;

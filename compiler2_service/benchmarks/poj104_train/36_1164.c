@@ -15,7 +15,7 @@ int main_bench()
 	}
 	int k=0;
 	char a[50], b[50];
-	scanf("%s %s", a,b);
+	my_scanf("%s %s", a,b);
 
 	for(i=0;i<strlen(a);i++)
 		count[a[i]-'A']++;
@@ -27,8 +27,8 @@ int main_bench()
 		if (count[i]==countie[i])
 			k++;
 	if (k==100)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 
 	return 0;
 }

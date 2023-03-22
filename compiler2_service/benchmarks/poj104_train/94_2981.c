@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,index,temp;
     int js=0,js1=0,i,j,k,p,q;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(k=0;k<=n-2;k++){
         index=k;
         for(p=k+1;p<n;p++){
@@ -24,9 +24,9 @@ int main_bench()
         if(a[j]%2!=0&&js1<js){
             js1++;
             if(js1!=js)
-            printf("%d,",a[j]);
+            my_printf("%d,",a[j]);
             if(js1==js)
-            printf("%d",a[j]);
+            my_printf("%d",a[j]);
         }    
     }
     return 0;

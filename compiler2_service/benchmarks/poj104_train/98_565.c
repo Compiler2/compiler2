@@ -4,23 +4,23 @@ int main_bench()
 {
   char a[20];
   int n,i,k=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   getchar();
-  scanf("%s",a);
-  printf("%s",a);
+  my_scanf("%s",a);
+  my_printf("%s",a);
   k=strlen(a);
   for(i=1;i<n;i++)
   {
-       scanf("%s",a);
+       my_scanf("%s",a);
        k=k+1+strlen(a);
        if(k>80)
        {
-            printf("\n%s",a);
+            my_printf("\n%s",a);
             k=strlen(a);
             continue;
        }
        if(k<=80)
-       printf(" %s",a);
+       my_printf(" %s",a);
   }
   return 0;
 }

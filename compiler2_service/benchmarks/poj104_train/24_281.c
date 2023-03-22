@@ -15,7 +15,7 @@ int main_bench()
 	
 	
 
-	while(scanf("%s",&a[i])>0 && strlen(a[i])>0)
+	while(my_scanf("%s",&a[i])>0 && strlen(a[i])>0)
 	{
 		k++;
 		i++;
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	}
 	
-	printf("%s\n", a[imax]);
-	printf("%s\n", a[imin]);
+	my_printf("%s\n", a[imax]);
+	my_printf("%s\n", a[imin]);
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
 {
 	int N, i, num1[100]={0}, num2[100]={0}, scholar[100]={0}, x, y, sum;
 	char name[100][20], condition[100][7];
-	scanf("%d", &N);
+	my_scanf("%d", &N);
 	for(i=0;i<N;i++){
-		scanf("%s%d%d", name[i], &num1[i], &num2[i]);
+		my_scanf("%s%d%d", name[i], &num1[i], &num2[i]);
 		gets(condition[i]);
 	}
 	for(i=0;i<N;i++){
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		sum+=scholar[i];
 	}
-	printf("%s\n%d\n%d", name[y], x, sum);
+	my_printf("%s\n%d\n%d", name[y], x, sum);
 }
 
 

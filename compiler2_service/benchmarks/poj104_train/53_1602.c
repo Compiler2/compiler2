@@ -2,9 +2,9 @@
 
 int main_bench(){
     int n,number[300],i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d",&number[i]);
+                     my_scanf("%d",&number[i]);
                      }
     for(i=0;i<n;i++){
                      for(j=i+1;j<n;j++){
@@ -12,10 +12,10 @@ int main_bench(){
                                         number[j]=-3;
                                         }
                      }
-    printf("%d",number[0]);
+    my_printf("%d",number[0]);
     for(i=1;i<n;i++){
                      if(number[i]>-1)
-                     printf(",%d",number[i]);
+                     my_printf(",%d",number[i]);
                      }
     return 0;
 }

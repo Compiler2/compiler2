@@ -7,8 +7,8 @@ int main_bench(){
 		char z;
 	}b[100][27];
 	int n,i,j,k,m,g[100];
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	for(i=0;i<n;i++){
 		gets(a[i]);	
 		b[i][0].z=a[i][0];
@@ -29,13 +29,13 @@ int main_bench(){
 	for(i=0;i<n;i++){
 		for(m=0,j=0;j<g[i];j++){
 			if(b[i][j].s==1){
-				printf("%c\n",b[i][j].z);
+				my_printf("%c\n",b[i][j].z);
 				break;
 			}else{
 				m++;
 			}
 			if(m==g[i])
-				printf("no\n");
+				my_printf("no\n");
 	}}
 	return 0;
 }

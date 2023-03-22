@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,j,k;
 	int a[4];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	j=n;
 	if(j<10)
 		k=1;
@@ -21,16 +21,16 @@ int main_bench()
 	switch(k)
 	{
 	case 1:
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 		break;
 	case 2:
-		printf("%d%d",a[0],a[1]);
+		my_printf("%d%d",a[0],a[1]);
 		break;
 	case 3:
-		printf("%d%d%d",a[0],a[1],a[2]);
+		my_printf("%d%d%d",a[0],a[1],a[2]);
 		break;
 	case 4:
-		printf("%d%d%d%d",a[0],a[1],a[2],a[3]);
+		my_printf("%d%d%d%d",a[0],a[1],a[2],a[3]);
 		break;
 	}
 	return 0;

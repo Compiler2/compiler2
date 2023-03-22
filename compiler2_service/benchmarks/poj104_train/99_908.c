@@ -5,9 +5,9 @@
     double b,c,d,e;
     int w=0,x=0,y=0,z=0;
     int age[100];
-	scanf("%d",&f);
+	my_scanf("%d",&f);
     for(i=0;i<f;i++){
-    scanf("%d",&(age[i]));}
+    my_scanf("%d",&(age[i]));}
     for(i=0;i<f;i++){
     if(age[i]<19&&0<age[i]){
     w=w+1;}
@@ -21,6 +21,6 @@
     c=1.0*x/f*100;
     d=1.0*y/f*100;
     e=1.0*z/f*100;
-    printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%",b,c,d,e);
+    my_printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%",b,c,d,e);
     return 0;
 }

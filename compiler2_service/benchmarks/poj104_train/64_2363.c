@@ -17,9 +17,9 @@ int main_bench()
 int read()
 {
     int i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=1;i<=n;i++)
-        scanf ("%d%d%d",&x[i],&y[i],&z[i]);
+        my_scanf ("%d%d%d",&x[i],&y[i],&z[i]);
     return 0;
 }
 void calculate()
@@ -59,7 +59,7 @@ int print()
                     }
                 }
             }
-        printf("(%d,%d,%d)-(%d,%d,%d)=%.2lf\n",x[k],y[k],z[k],x[l],y[l],z[l],a[k][l]);
+        my_printf("(%d,%d,%d)-(%d,%d,%d)=%.2lf\n",x[k],y[k],z[k],x[l],y[l],z[l],a[k][l]);
         a[k][l]=-100;
         p--;
     }

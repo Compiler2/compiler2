@@ -5,12 +5,12 @@
 int main_bench()
 {
 	int n,m,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n*n;
 	int i,j=0,k,x=0,a,b,c,d,e;
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d",&p);
+		my_scanf("%d",&p);
 		if(i%n==1)
 		{
 			j++;
@@ -36,6 +36,6 @@ int main_bench()
 		}
 	}
 	e=(c-a-1)*(d-b-1);
-	printf("%d\n",e);
+	my_printf("%d\n",e);
 	return 0;
 }

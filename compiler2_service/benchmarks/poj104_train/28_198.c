@@ -23,6 +23,6 @@ int main_bench()
       else{k=0;}  
 	 }
 	for(i=0;i<j;i++)
-		printf("%d,",lon(b[i]));
-	printf("%d",lon(b[j]));
+		my_printf("%d,",lon(b[i]));
+	my_printf("%d",lon(b[j]));
 }

@@ -10,6 +10,6 @@ int main_bench()
 	for (i=0;i<strlen(x)-1;i++)
 		y[i]=x[i]+x[i+1];
 	y[strlen(x)-1]=x[0]+x[strlen(x)-1];
-	printf("%s",y);
+	my_printf("%s",y);
 	return(0);
 }

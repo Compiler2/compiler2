@@ -14,11 +14,11 @@ int main_bench()
 		int paper;
 	};
 	struct student stu[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		s=0;
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].AP,&stu[i].EP,&stu[i].L,&stu[i].D,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].AP,&stu[i].EP,&stu[i].L,&stu[i].D,&stu[i].paper);
 		if(stu[i].AP>80&&stu[i].paper>0)
 			s=s+8000;
 		if(stu[i].AP>85&&stu[i].EP>80)
@@ -37,5 +37,5 @@ int main_bench()
 		sum=sum+A[i];
 
 	}
-	printf("%s\n%.lf\n%.lf\n",stu[max].name,A[max],sum);
+	my_printf("%s\n%.lf\n%.lf\n",stu[max].name,A[max],sum);
 }

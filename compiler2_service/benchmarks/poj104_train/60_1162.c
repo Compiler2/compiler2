@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,s,m,i,k,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 if(n>=5){
 for(i=3;i<n-1;i++){
 s=0;
@@ -21,13 +21,13 @@ m++;
 }
 }
 if(m==i){
-printf("%d %d\n",i,t);
+my_printf("%d %d\n",i,t);
 }
 }
 }
 }
 if(n<5){
-printf("empty");
+my_printf("empty");
 }
 return 0;
 }

@@ -57,7 +57,7 @@ int main_bench()
 	char a[50]={0},b[50]={0};
 	int n1,n2,len,i;
 	long s;
-	scanf("%d%s%d",&n1,a,&n2);
+	my_scanf("%d%s%d",&n1,a,&n2);
 	
 	s=change1(a,n1);
 	
@@ -66,11 +66,11 @@ int main_bench()
 	if(len>0)
 	{
 	for(i=0;i<len;i++)
-	   printf("%c",b[i]);
-	printf("\n");
+	   my_printf("%c",b[i]);
+	my_printf("\n");
 	}
 	if(len==0)
-		printf("0\n");
+		my_printf("0\n");
 }
 
 

@@ -4,9 +4,9 @@ int main_bench(){
   int n,i,cqa[200],cqb[200],a,b;
   a=0;
   b=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-    scanf("%d%d",&cqa[i],&cqb[i]);
+    my_scanf("%d%d",&cqa[i],&cqb[i]);
   }
   for(i=0;i<n;i++){
     if(cqa[i]==cqb[i]){
@@ -30,13 +30,13 @@ int main_bench(){
 	  b=b;
 	}}
 	if(a==b){
-	  printf("Tie");
+	  my_printf("Tie");
 	}
 	if(a<b){
-	  printf("B");
+	  my_printf("B");
 	}
 	if(a>b){
-	  printf("A");
+	  my_printf("A");
 	}
 return 0;
 }

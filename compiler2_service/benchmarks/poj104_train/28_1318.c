@@ -15,7 +15,7 @@ int main_bench()
 	  {   		 
 		  if(b==1)n[b]=i-k;
 		  else n[b]=i-k-1;
-           if (n[b]!=0)printf("%d,",n[b]);
+           if (n[b]!=0)my_printf("%d,",n[b]);
 		  k=i;
 		  b+=1;	  
 	  }
@@ -23,5 +23,5 @@ int main_bench()
    }
    if(b==1) n[b]=a-k;
    else n[b]=a-k-1;
-   printf("%d\n",n[b]);
+   my_printf("%d\n",n[b]);
 }

@@ -7,10 +7,10 @@ int main_bench()
 	double by=0;
 	double x_1=0,x_2=0,x_3=0,x_4=0;
 	double l1,l2,l3,l4;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&by);
+		my_scanf("%lf",&by);
 		if(by<=18)
 			x_1++;
 		if(by<=35&&by>=19)
@@ -24,8 +24,8 @@ int main_bench()
 	l2=100*x_2/n;
 	l3=100*x_3/n;
 	l4=100*x_4/n;
-	printf("1-18: %.2lf%%\n",l1);
-	printf("19-35: %.2lf%%\n",l2);
-	printf("36-60: %.2lf%%\n",l3);
-	printf("60??: %.2lf%%\n",l4);
+	my_printf("1-18: %.2lf%%\n",l1);
+	my_printf("19-35: %.2lf%%\n",l2);
+	my_printf("36-60: %.2lf%%\n",l3);
+	my_printf("60??: %.2lf%%\n",l4);
 }

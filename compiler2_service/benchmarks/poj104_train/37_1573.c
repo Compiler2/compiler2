@@ -7,10 +7,10 @@ int main_bench()
 	int state;
 	int status;
 	char str[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",str);
+		my_scanf("%s",str);
 		status=1;
 		for (j=0;j<strlen(str);j++)
 		{
@@ -35,14 +35,14 @@ int main_bench()
 		{
 			if (str[j]!=1)
 			{
-				printf("%c\n",str[j]);
+				my_printf("%c\n",str[j]);
 				status=0;
 				break;
 			}
 		}
 		if (status)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

@@ -9,10 +9,10 @@ int main_bench()
 {	
 	int n,b[91][1000],max=0,i,j,k,s,m,writer;
 	struct book bk[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&bk[i].num,bk[i].wr);
+		my_scanf("%d%s",&bk[i].num,bk[i].wr);
 	}
 	for(i=0;i<26;i++)
 	{
@@ -36,8 +36,8 @@ int main_bench()
 			writer=i;
 		}
 	}
-	printf("%c\n%d",writer+65,max);
+	my_printf("%c\n%d",writer+65,max);
 	for(i=0;i<max;i++)
-		printf("\n%d",b[writer][i]);
+		my_printf("\n%d",b[writer][i]);
 	return 0;
 }

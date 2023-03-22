@@ -20,7 +20,7 @@ if(j>=k)return(1);else return(0);}
 int main_bench()
 {
 int m,n,i,k=0;
-scanf("%d%d",&m,&n);
-for(i=m;i<=n;i++)if(max(i)==1&&nax(i)==1){printf("%d",i);k++;break;}
-for(i=i+1;i<=n;i++)if(max(i)==1&&nax(i)==1){printf(",%d",i);k++;};if(k==0)printf("no");
+my_scanf("%d%d",&m,&n);
+for(i=m;i<=n;i++)if(max(i)==1&&nax(i)==1){my_printf("%d",i);k++;break;}
+for(i=i+1;i<=n;i++)if(max(i)==1&&nax(i)==1){my_printf(",%d",i);k++;};if(k==0)my_printf("no");
 }

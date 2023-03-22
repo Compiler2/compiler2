@@ -4,7 +4,7 @@ int main_bench(){
 	char a[101];
 	int	b[100]={0};
 	int i,n,m,x;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	
 	
@@ -25,9 +25,9 @@ int main_bench(){
 		m=n-1;
 	}
 	for(i=0;i<m-1;i++){
-		printf("%d",b[i]);
+		my_printf("%d",b[i]);
 	}
-	printf("%d\n",b[m-1]);
-	printf("%d",x);
+	my_printf("%d\n",b[m-1]);
+	my_printf("%d",x);
 	return 0;
 }

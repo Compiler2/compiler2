@@ -9,13 +9,13 @@ int n,i,j,t;
 
 char q=',';
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
 int s[500],z[500]={100};
 
 for(i=0;i<n;i++)
 {
-scanf("%d ",&s[i]);
+my_scanf("%d ",&s[i]);
 if(s[i]%2!=0)
 {
 z[i]=s[i];
@@ -45,12 +45,12 @@ if(z[i]==0)continue;
 
 if(z[i]!=0&&m==0)
 {
-printf("%d",z[i]);
+my_printf("%d",z[i]);
 
 m=1;
 }
 
-         else printf("%c%d",q,z[i]);
+         else my_printf("%c%d",q,z[i]);
 }
 
 return 0;

@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[100],b[100],i,sy[100],P=0,A=0,B=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]==b[i]){
 			sy[i]=0;P++;}
 		else if(a[i]-b[i]==-1 || a[i]-b[i]==2){
@@ -14,12 +14,12 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(A>B){
-			printf("A\n");break;}
+			my_printf("A\n");break;}
 		else if(A<B){
-			printf("B\n");
+			my_printf("B\n");
 			break;
 		}else{
-			printf("Tie\n");
+			my_printf("Tie\n");
 			break;
 		}
 	}

@@ -21,12 +21,12 @@ int cross_out(int *q,int n)
 int main_bench()
 {
 	int m,n,i,a[301],*p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	m=cross_out(p,n);
 	for(i=0;i<n-m-1;i++)
-		printf("%d,",*(p+i));
-	printf("%d",*(p+i));
+		my_printf("%d,",*(p+i));
+	my_printf("%d",*(p+i));
 	
 }

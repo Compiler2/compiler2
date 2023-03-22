@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int m,n,i,k,a,b,t,count=0,x=0;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	int s[m][n];
 	for(i=0;i<m;i++){
 		for(k=0;k<n;k++){
-			scanf("%d",&s[i][k]);
+			my_scanf("%d",&s[i][k]);
 		}
 	}
 	for(i=0;i<m;i++){
@@ -20,12 +20,12 @@ int main_bench(){
 				count++;
 		}
 		if(count==0){
-			printf("%d+%d",a,b);
+			my_printf("%d+%d",a,b);
 			x++;
 		}
 	}
 	if(x==0)
-		printf("No");
+		my_printf("No");
 	return 0;
 }
 

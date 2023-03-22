@@ -12,9 +12,9 @@ struct stu{
 int main_bench()
 {
 	int n,i,s=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].gb,&stu[i].we,&stu[i].lw);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].gb,&stu[i].we,&stu[i].lw);
 	for(i=0;i<n;i++){stu[i].jj=0;
 		if(stu[i].s1>80&&stu[i].lw>=1)
 			stu[i].jj+=8000;
@@ -31,9 +31,9 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 		if(stu[i].jj==max){
-			printf("%s\n%d\n",stu[i].name,stu[i].jj);
+			my_printf("%s\n%d\n",stu[i].name,stu[i].jj);
 			break;
 		}
-	printf("%d",s);
+	my_printf("%d",s);
     return 0;
 }

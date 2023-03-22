@@ -9,7 +9,7 @@ int main_bench()
     int sum;
     int flag;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(k=0;k<n;k++)
     {
         
@@ -17,7 +17,7 @@ int main_bench()
         {
             for(j=0;j<n;j++)
             {
-                scanf("%d",&a[i][j]);
+                my_scanf("%d",&a[i][j]);
             }
         }
         
@@ -102,7 +102,7 @@ int main_bench()
             
             
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
     }
 	return 0;
 }

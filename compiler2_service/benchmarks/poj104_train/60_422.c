@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n;
 	int i, j, sign;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int judge;
 	if((n==1)||(n==2)||(n==3))
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 	else
 	{
@@ -29,13 +29,13 @@ int main_bench()
 		    if((sign==1)&&((i+2)<=n))
 			{
 				judge=1;
-		    	printf("%d %d\n", i, i+2);
+		    	my_printf("%d %d\n", i, i+2);
 			}
 	    	
 		}
     	if(judge==0)
 		{
-	    	printf("empty");
+	    	my_printf("empty");
 		} 
 	}
 	return 0;

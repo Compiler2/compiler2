@@ -4,10 +4,10 @@ int main_bench(){
 	int n,i,k,sum=0,m,l,p,q;
 	int a=0,b=0;
 	int sz[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(k=0;k<n;k++){
-	scanf("%d",&sz[i][k]);
+	my_scanf("%d",&sz[i][k]);
 		}
 	}
 	for(i=1;i<n-1;i++){
@@ -33,7 +33,7 @@ int main_bench(){
 	}
 	}
 	sum=(p-m-1)*(q-l-1);
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 	return 0;
 }

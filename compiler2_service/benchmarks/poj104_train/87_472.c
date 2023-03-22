@@ -6,7 +6,7 @@ int main_bench()
 	for(i=1;i<=999;i++)
 	{
 		sum=0;
-		scanf("%d%d%d%d%d%d",&a[i][1],&a[i][2],&a[i][3],&a[i][4],&a[i][5],&a[i][6]);
+		my_scanf("%d%d%d%d%d%d",&a[i][1],&a[i][2],&a[i][3],&a[i][4],&a[i][5],&a[i][6]);
 		if(a[i][1]==0&&a[i][2]==0&&a[i][3]==0&&a[i][4]==0&&a[i][5]==0&&a[i][6]==0)
 			break;
 		else
@@ -27,7 +27,7 @@ int main_bench()
 			else
 				sum=sum+(a[i][5]-a[i][2])*60;
 			sum=sum+(a[i][4]-a[i][1])*3600;
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 		}
 	}
 	return 0;

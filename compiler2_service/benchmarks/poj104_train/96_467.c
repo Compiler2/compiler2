@@ -4,18 +4,18 @@ main_bench()
 {
       char c[100],v[100];
       int a,b,d,e,i,m;
-      scanf("%s",c);
+      my_scanf("%s",c);
       if(c[1]=='\0')
       {
-      printf("0\n");
-      printf("%c\n",c[0]);
+      my_printf("0\n");
+      my_printf("%c\n",c[0]);
       }
       else            
       if((c[2]=='\0')&&(((c[0]-'0')*10+c[1]-'0')<=13))
       {
-                  printf("0\n");
+                  my_printf("0\n");
                   m=(c[0]-'0')*10+c[1]-'0'; 
-                  printf("%d\n",m);
+                  my_printf("%d\n",m);
       }
       else
       if(((c[0]-'0')*10+c[1]-'0')>=13)
@@ -31,16 +31,16 @@ main_bench()
                   v[i-1]=b+'0';
       }
       v[i-1]='\0';
-      printf("%s\n",v);
-      printf("%d\n",a);
+      my_printf("%s\n",v);
+      my_printf("%d\n",a);
       }
       else
       if(c[3]=='\0')
       {
       d=((c[0]-'0')*100+(c[1]-'0')*10+c[2]-'0')/13;
       e=((c[0]-'0')*100+(c[1]-'0')*10+c[2]-'0')%13;
-      printf("%d\n",d);
-      printf("%d\n",e);
+      my_printf("%d\n",d);
+      my_printf("%d\n",e);
       }
       else
       {
@@ -56,8 +56,8 @@ main_bench()
                             v[i-2]=d+'0';
           }
           v[i-2]='\0';
-          printf("%s\n",v);
-          printf("%d\n",e);
+          my_printf("%s\n",v);
+          my_printf("%d\n",e);
       }
       getchar();
       getchar();

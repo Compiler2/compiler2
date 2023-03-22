@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,len,sum=0;
 	char a[300],b[300];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(j=0;j<n;j++)
 {
-scanf("%s",a);
+my_scanf("%s",a);
         for(i=0;a[i]!='\0';i++)
 		  {
 	if(a[i]=='A')
@@ -19,7 +19,7 @@ scanf("%s",a);
 			else if(a[i]=='G')
 		a[i]='C' ;
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 }
 	return 0;
 }

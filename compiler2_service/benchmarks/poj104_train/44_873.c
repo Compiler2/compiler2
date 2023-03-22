@@ -6,10 +6,10 @@ int main_bench()
     
     int a[6],b[6],i;
     for(i=0;i<6;i++)
-     {scanf("%d",&a[i]);
+     {my_scanf("%d",&a[i]);
     b[i] = reverse(a[i]);}
     for(i=0;i<6;i++)
-    printf("%d\n",b[i]);
+    my_printf("%d\n",b[i]);
     getchar();
     getchar();
 }

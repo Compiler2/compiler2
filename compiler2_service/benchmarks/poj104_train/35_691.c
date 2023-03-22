@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int col,row,COL,ROW,n[8][8],max,min,a=0,geshu=0,b=0;
-	scanf("%d,%d",&ROW,&COL);
+	my_scanf("%d,%d",&ROW,&COL);
 	for(row=0;row<ROW;row++){
 		for(col=0;col<COL;col++){
-			scanf("%d",&n[row][col]);
+			my_scanf("%d",&n[row][col]);
 		}
 	}
 	for(row=0;row<ROW;row++){
@@ -27,13 +27,13 @@ int main_bench()
 		if(max!=min){
 			continue;
 		}else{
-			printf("%d+%d",b,a);
+			my_printf("%d+%d",b,a);
 			geshu+=1;
 			break;
 		}
 	}
 	if(geshu==0){
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

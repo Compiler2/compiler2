@@ -18,7 +18,7 @@ main_bench()
       else count=1;            
       for(i=count;i<count2;i++)
       {
-                               printf("%d",shang[i]);
+                               my_printf("%d",shang[i]);
       }
-      printf("\n%d",yu);
+      my_printf("\n%d",yu);
 }

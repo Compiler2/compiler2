@@ -35,9 +35,9 @@ void k(void)
 	{
 		if(b[i]==36) f36(i);
 	}
-	printf("%s\n",a);
-	for(i=0;i<l;i++) printf("%c",b[i]);
-	printf("\n");
+	my_printf("%s\n",a);
+	for(i=0;i<l;i++) my_printf("%c",b[i]);
+	my_printf("\n");
 	a[0]=0;
 }
 int main_bench()

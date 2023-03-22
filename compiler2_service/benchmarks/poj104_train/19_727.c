@@ -37,10 +37,10 @@ int main_bench(){
 		}
 	}
 
-	printf("%s",zfc[0]);
+	my_printf("%s",zfc[0]);
 	for(i=1;i<n;i++)
 	{
-		printf(" %s",zfc[i]);
+		my_printf(" %s",zfc[i]);
 	}
 
 	return 0;

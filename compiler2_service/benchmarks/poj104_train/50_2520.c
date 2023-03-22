@@ -5,7 +5,7 @@ int i, num;
 main_bench()
 {
     int w;
-    scanf("%d",&w);
+    my_scanf("%d",&w);
     i=1;
     num=(13+w-1);
     panduan( i, num);i++;
@@ -37,6 +37,6 @@ void panduan(int i,int num)
 {
 
     if(num%7==5)
-    {printf("%d\n",i);
+    {my_printf("%d\n",i);
     }
 }

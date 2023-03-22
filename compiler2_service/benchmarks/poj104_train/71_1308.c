@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i;
 	int year,mon1,mon2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&year,&mon1,&mon2);
+		my_scanf("%d%d%d",&year,&mon1,&mon2);
 		if((year%100!=0&&year%4==0)||(year%100==0&&year%400==0)){
 			if(mon1>mon2){
 				int t;
@@ -29,10 +29,10 @@ int main_bench(){
 				m=m+1;
 			}
 			if(days%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else{
@@ -58,10 +58,10 @@ if(mon1>mon2){
 				m=m+1;
 			}
 			if(days%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}

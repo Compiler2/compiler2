@@ -17,15 +17,15 @@ void jiaohuan(int a[],int i,int n,int m)
 int main_bench()
 {
 	int a[110],m,n,i;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<=n-1;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<=m-1;i++)
 		jiaohuan(a,i,n,m);
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<=n-1;i++)
-		printf(" %d",a[i]);
-	printf("\n");
+		my_printf(" %d",a[i]);
+	my_printf("\n");
 	return 0;
 }
 

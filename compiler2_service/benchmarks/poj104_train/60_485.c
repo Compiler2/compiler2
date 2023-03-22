@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,k,m,n,p;
     k=0;p=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=3;i<n-1;i++)
     {
                       k=0;m=0;
@@ -28,18 +28,18 @@ int main_bench()
                                       
                                       if(p==1)
                                       {
-                                              printf("%d %d",i,i+2);
+                                              my_printf("%d %d",i,i+2);
                                       }
                                       else
                                       {
-                                          printf("\n%d %d",i,i+2);
+                                          my_printf("\n%d %d",i,i+2);
                                       }
                       }
                       
     }
     if(p==0)
     {
-            printf("empty");
+            my_printf("empty");
     }
         return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char a[300],b[300];
 	int sa[128]={0},sb[128]={0};
 	int i,j=0,k=1,n;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)!=strlen(b))k=0;
 	else
 		for(i=0;i<strlen(a);i++)
@@ -23,7 +23,7 @@ int main_bench()
 				break;
 			}
 		}
-	if(k==0)printf("NO");
+	if(k==0)my_printf("NO");
 	else
-		printf("YES");
+		my_printf("YES");
 }

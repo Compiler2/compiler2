@@ -14,7 +14,7 @@ int main_bench()
      str[i]=str[n-1-i];
      str[n-1-i]=t;
     }
-     for(i=0;i<n;i++) printf("%c",str[i]);
+     for(i=0;i<n;i++) my_printf("%c",str[i]);
 }
 
 

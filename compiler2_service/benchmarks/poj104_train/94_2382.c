@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,i,k,f,g;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int A[n],B[n];
     i=0,k=0;
     while(i<n){
-        scanf("%d",&A[i]);
+        my_scanf("%d",&A[i]);
         if(A[i]%2!=0){
             B[k]=A[i];
             k++;
@@ -29,9 +29,9 @@ int main_bench(){
     }
     i=0;
     while(i<k-1){
-       printf("%d,",B[i]);
+       my_printf("%d,",B[i]);
        i++;
     }
-    printf("%d",B[k-1]);
+    my_printf("%d",B[k-1]);
     return 0;
 }

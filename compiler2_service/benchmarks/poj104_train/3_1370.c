@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,k,sz[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	int i=0;
 	while(i<n)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		i++;
 	}
 
@@ -41,10 +41,10 @@ int main_bench()
 		}
 	if(sum==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
-		printf("yes");
+		my_printf("yes");
 	
 	return 0;
 

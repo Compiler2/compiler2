@@ -5,9 +5,9 @@ int main_bench()
 {
 	int i,j,k,l,n=0,m=1,z=0,t=1,g;
 	char q[256],p[256],w[256];
-	scanf("%s",q);
-	scanf("%s",p);
-	scanf("%s",w);
+	my_scanf("%s",q);
+	my_scanf("%s",p);
+	my_scanf("%s",w);
 	k=strlen(q);l=strlen(p);
 	for(i=0;i<k;i++)
 	{
@@ -34,13 +34,13 @@ int main_bench()
 	{
 		for(j=0;j<m;j++)
 		{
-			printf("%c",q[j]);
+			my_printf("%c",q[j]);
 		}
-		printf("%s",w);
+		my_printf("%s",w);
 		for(j=m+l;j<k;j++)
-			printf("%c",q[j]);
+			my_printf("%c",q[j]);
 	}
 	else
-		printf("%s",q);
+		my_printf("%s",q);
 	return 0;
 }

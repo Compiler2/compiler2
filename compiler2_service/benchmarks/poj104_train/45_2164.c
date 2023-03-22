@@ -3,7 +3,7 @@
 int main_bench(){
 	char a[20], b[20], c[20];
 	int i, j, k, sum1, sum2, num;
-	scanf("%s%s", a, b);
+	my_scanf("%s%s", a, b);
 	sum1=strlen(a);
 	sum2=strlen(b);
 	for(i=0;i<=(sum2-sum1);i++){
@@ -14,6 +14,6 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%d", num);
+	my_printf("%d", num);
 	return 0;
 }

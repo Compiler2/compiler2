@@ -5,12 +5,12 @@ int main_bench()
 	int n, a[100]={0}, b[100]={0}, c[100]={0}, l1, l2, i, j;
 	char begin1[101]={0}, begin2[101]={0};
 	int compare(int a, int b);
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	for(i=0;i<n;i++){
-		scanf("%s", begin1);
-		scanf("%s", begin2);
+		my_scanf("%s", begin1);
+		my_scanf("%s", begin2);
 		if(i!=n-1)
-		    scanf("\n");
+		    my_scanf("\n");
 		l1 = strlen(begin1);
 		l2 = strlen(begin2);
 		for(j=0;j<compare(l1, l2);j++){
@@ -34,14 +34,14 @@ int main_bench()
 			}
 		}
 		for(j=0;j<compare(l1, l2);j++){
-			printf("%d", c[j]);
+			my_printf("%d", c[j]);
 			c[j]=0;
 			begin1[j]='\0';
 			begin2[j]='\0';
 			a[j]=0;
 			b[j]=0;
 		}
-		printf("\n");
+		my_printf("\n");
 		
 	}
 	return 0;

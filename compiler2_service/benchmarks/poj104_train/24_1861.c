@@ -30,7 +30,7 @@ int main_bench()
 		}
 	
 	
-	for(i=r1.n;i<=r1.n+r1.l-1;i++) printf("%c",s[i]);
-	printf("\n");
-	for(i=r2.n;i<=r2.n+r2.l-1;i++) printf("%c",s[i]);
+	for(i=r1.n;i<=r1.n+r1.l-1;i++) my_printf("%c",s[i]);
+	my_printf("\n");
+	for(i=r2.n;i<=r2.n+r2.l-1;i++) my_printf("%c",s[i]);
 }

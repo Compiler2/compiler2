@@ -3,15 +3,15 @@
 int is_sushu(int i);
 int main_bench(){
 	int n,s=0;
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 		for(int i=2;i<=n-2;i++){
 			if(is_sushu(i)&&is_sushu(i+2)){
-				printf("%d %d\n",i,i+2);
+				my_printf("%d %d\n",i,i+2);
 				s++;
 			}
 		}
 		if(s==0)
-			printf("empty");
+			my_printf("empty");
 return 0;
 }
 int is_sushu(int i){

@@ -17,7 +17,7 @@ main_bench()
 	     j=0;
 		}
 	}while(*p);
- printf("%d",count[0]);
+ my_printf("%d",count[0]);
  for(j=1;j<i;j++)
-	 printf(",%d",count[j]);
+	 my_printf(",%d",count[j]);
 }

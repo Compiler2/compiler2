@@ -35,9 +35,9 @@ int main_bench()
 			t2[i]=c2[i];
 	}
 	if(strcmp(t1,t2)<0)
-		printf("<");
+		my_printf("<");
 	else if(strcmp(t1,t2)==0)
-		printf("=");
+		my_printf("=");
 	else if(strcmp(t1,t2)>0)
-		printf(">");
+		my_printf(">");
 }

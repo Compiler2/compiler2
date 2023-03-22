@@ -24,10 +24,10 @@ int main_bench()
 		}
 	for(i=1;i<m;i++)	
 	{
-		printf("%d",b[i]);
+		my_printf("%d",b[i]);
 	}
-	printf("\n");
-	printf("%d",yushu);
+	my_printf("\n");
+	my_printf("%d",yushu);
  }
  else
  {
@@ -39,20 +39,20 @@ int main_bench()
 		}
 	for(i=2;i<m;i++)	
 	{
-		printf("%d",b[i]);
+		my_printf("%d",b[i]);
 	}
-	printf("\n");
-	printf("%d",yushu);
+	my_printf("\n");
+	my_printf("%d",yushu);
  }
 }
 if(m==2)
 {
-	printf("%d\n",(a[0]*10+a[1])/13);
-	printf("%d",(a[0]*10+a[1])%13);
+	my_printf("%d\n",(a[0]*10+a[1])/13);
+	my_printf("%d",(a[0]*10+a[1])%13);
 }
 if(m==1)
 {
-	printf("0\n");
-	printf("%d",a[0]);
+	my_printf("0\n");
+	my_printf("%d",a[0]);
 } 	
 }

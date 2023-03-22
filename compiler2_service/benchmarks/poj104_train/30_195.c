@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,sum;
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
         int r,shiwei;
@@ -18,6 +18,6 @@ int main_bench()
 					 sum=sum+0;
 			      else sum=sum+i*i;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

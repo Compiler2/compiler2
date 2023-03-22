@@ -13,7 +13,7 @@ int main_bench()
 {
 	int x,y,i,j,nx,ny;
 	int x_row[10],y_row[10];
-	scanf("%d %d\n",&x,&y);
+	my_scanf("%d %d\n",&x,&y);
 	for(i=1;1;i++)
 	{
 		if(x<f(i))
@@ -50,6 +50,6 @@ int main_bench()
 		if(y_row[j]==x_row[i])
 			break;
 	}
-	printf("%d\n",y_row[j]);
+	my_printf("%d\n",y_row[j]);
 	return 0;
 }

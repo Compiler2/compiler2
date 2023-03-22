@@ -3,7 +3,7 @@
 int main_bench()
 {
   int a,b,c,d,e=0,f,i,Syear,Smonth,Sday,Eyear,Emonth,Eday;
-  scanf("%d%d%d%d%d%d",&Syear,&Smonth,&Sday,&Eyear,&Emonth,&Eday);
+  my_scanf("%d%d%d%d%d%d",&Syear,&Smonth,&Sday,&Eyear,&Emonth,&Eday);
   a=Eyear-Syear;
   switch(Smonth)
   {
@@ -41,6 +41,6 @@ int main_bench()
   if((Syear%4==0&&Syear%100!=0)||(Syear%400==0)&&(Smonth>=3)) e+=1;
   if((Eyear%4==0&&Eyear%100!=0)||(Eyear%400==0)&&(Emonth>=3)) e+=1;
   f=365*a+c-b+d+e;
-  printf("%d",f);
-  printf("\n");
+  my_printf("%d",f);
+  my_printf("\n");
 }

@@ -4,11 +4,11 @@ int m[1000][1000];
 int main_bench()
 {
 int n,i,j=0,p,x=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 	for(j=0;j<n;j++)
 	{
-	scanf("%d",&m[j][i]);
+	my_scanf("%d",&m[j][i]);
 	}
 }
 
@@ -29,6 +29,6 @@ for(i=0;i<n;i++)
 	x=x+p;
 	}
 	
-printf("%d\n",x);
+my_printf("%d\n",x);
 return 0;
 }

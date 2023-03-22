@@ -10,10 +10,10 @@ int main_bench()
 	
 	double b=0,c;
 	int a[100];
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 	
 		for(k=1;k<=m;k++)
@@ -26,11 +26,11 @@ int main_bench()
 			l=s;
 			s=t;
 		}
-		printf("%.3f", b);
+		my_printf("%.3f", b);
 		b=0;
 		s=2;
 		l=1;
-		printf("\n");
+		my_printf("\n");
 		}
 		return 0;
 }

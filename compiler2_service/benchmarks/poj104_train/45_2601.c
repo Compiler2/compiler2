@@ -5,8 +5,8 @@ int main_bench()
 {   char s[50],w[50],k[50];
     int i,j,t;
 	unsigned int n1,n2;
-	scanf("%s",s);
-    scanf("%s",w);
+	my_scanf("%s",s);
+    my_scanf("%s",w);
     n1=strlen(s);
     n2=strlen(w);
 	
@@ -19,7 +19,7 @@ int main_bench()
 	           if (s[j]!=w[i+j]) 
                   t=t*0;
 	}if(t==1) 
-		{	printf("%d\n",i);
+		{	my_printf("%d\n",i);
 	      break;
 		  }
 	}

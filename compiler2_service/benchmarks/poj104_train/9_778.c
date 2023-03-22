@@ -9,10 +9,10 @@ struct bing bing[1000];
 int main_bench()
 {
     int n,i,j=1,v=1,k,t[1000],m,p[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-     scanf("%s%d",&bing[i].a,&bing[i].age);
+     my_scanf("%s%d",&bing[i].a,&bing[i].age);
      if(bing[i].age>=60)
      {
         t[j]=i;
@@ -38,9 +38,9 @@ int main_bench()
             }
     }
     for(i=1;i<=j;i++)
-    printf("%s\n",bing[t[i]].a);
+    my_printf("%s\n",bing[t[i]].a);
     for(i=1;i<=v;i++)
-    printf("%s\n",bing[p[i]].a);
+    my_printf("%s\n",bing[p[i]].a);
     getchar();
     getchar();
     getchar();

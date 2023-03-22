@@ -7,7 +7,7 @@ int reverse(char num[15])
     int count=0;
     if(num[0]=='-')
     {
-        printf("%c",'-');
+        my_printf("%c",'-');
     }
     for(i=14;i>=0;i--)
     {
@@ -15,16 +15,16 @@ int reverse(char num[15])
         {
             if(count>0)
             {
-                printf("%c",num[i]);
+                my_printf("%c",num[i]);
             }
             else if(num[i]!='0')
             {
                  count++;
-                 printf("%c",num[i]);
+                 my_printf("%c",num[i]);
             }
         }               
     }
-    printf("\n");
+    my_printf("\n");
 }
 main_bench()
 {

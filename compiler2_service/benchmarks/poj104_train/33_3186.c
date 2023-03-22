@@ -5,12 +5,12 @@ int main_bench()
 {                                                                                                            
 	int n,i,j,sum=0,len;
 	char  a[260];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	  for(j=0;j<n;j++)
 	 {
 		  len=0;
-      scanf("%s",&a);
+      my_scanf("%s",&a);
        len=strlen(a);
 	for(i=0;i<len;i++)
 	{
@@ -19,40 +19,40 @@ int main_bench()
 		{
 	  if (a[i]=='A')
 	  {
-        printf("T");
+        my_printf("T");
 	  }
 	  else if(a[i]=='T')
 	  {
-        printf("A");
+        my_printf("A");
 	  }
 	  else if(a[i]=='G')
 	  {
-        printf("C");
+        my_printf("C");
 
 	  }
       else if(a[i]=='C')
 	  {
-        printf("G");
+        my_printf("G");
 	  }
 		}
 		else
 			{
 	  if (a[i]=='A')
 	  {
-        printf("T\n");
+        my_printf("T\n");
 	  }
 	  else if(a[i]=='T')
 	  {
-        printf("A\n");
+        my_printf("A\n");
 	  }
 	  else if(a[i]=='G')
 	  {
-        printf("C\n");
+        my_printf("C\n");
 
 	  }
       else if(a[i]=='C')
 	  {
-        printf("G\n");
+        my_printf("G\n");
 	  }
 		}
     }

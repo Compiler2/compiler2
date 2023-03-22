@@ -12,7 +12,7 @@ int main_bench()
 		else i++;
 	}
 	if(i==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		int max=0;
@@ -27,8 +27,8 @@ int main_bench()
 			if(a[j]>max)
 				max=a[j];
 		if(max!=0)
-			printf("%d",max);
-		else printf("No");
+			my_printf("%d",max);
+		else my_printf("No");
 	}
 }
 				

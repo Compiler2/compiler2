@@ -2,13 +2,13 @@
 
 int main_bench()
 {int a[100][100],row,col,i,j,k;
- scanf("%d%d",&row,&col);
+ my_scanf("%d%d",&row,&col);
  for(i=0;i<row;i++)
 	 for(j=0;j<col;j++)
-		 scanf("%d",&a[i][j]);
+		 my_scanf("%d",&a[i][j]);
 if(row==1)
 {for(j=0;j<col;j++)
-printf("%d\n",a[0][j]);
+my_printf("%d\n",a[0][j]);
 
 }
 else
@@ -16,7 +16,7 @@ else
  {   i=0;
      k=j;
 	 while(k>=0&&i<row)
- {     printf("%d\n",a[i][k]);
+ {     my_printf("%d\n",a[i][k]);
 	   k--;
 	   i++;
  }
@@ -25,11 +25,11 @@ else
  {   j=col-1;
      k=i;
      while(j>=0&&k<row)
-	 { printf("%d\n",a[k][j]);
+	 { my_printf("%d\n",a[k][j]);
 	   j--;
 	   k++;
 	 }
  }
- printf("%d\n",a[row-1][col-1]);
+ my_printf("%d\n",a[row-1][col-1]);
 }
 }

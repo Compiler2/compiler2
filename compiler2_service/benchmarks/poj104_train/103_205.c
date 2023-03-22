@@ -9,7 +9,7 @@ main_bench()
           x[i]='\0';
           z[i]='\0';
           }
-      scanf("%s",x);
+      my_scanf("%s",x);
       
       for (i=0;x[i]!='\0';i++)
       {
@@ -23,7 +23,7 @@ main_bench()
           if (z[i]==z[i+1])
           n++;
           else
-          {printf("(%c,%d)",z[i],n);
+          {my_printf("(%c,%d)",z[i],n);
           n=1;}
       }
       getchar();

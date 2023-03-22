@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n1,n2,l,t;long s=0;char number1[40],number2[40],*p;
-	scanf("%d %s %d",&n1,number1,&n2);
+	my_scanf("%d %s %d",&n1,number1,&n2);
 	l=strlen(number1);
 	for(p=number1;p<number1+l;p++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 			break;
 	}
 	for(;p>=number2;p--)
-		printf("%c",*p);
-	printf("\n");
+		my_printf("%c",*p);
+	my_printf("\n");
 	return 0;
 }

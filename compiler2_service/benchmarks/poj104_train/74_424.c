@@ -5,7 +5,7 @@ int main_bench()
   int huiwen(int x);
   int sushu(int x);
   int m,n,x,p,q,i,j,c[1000];
-  scanf("%d %d",&m,&n);
+  my_scanf("%d %d",&m,&n);
   i=0;
   for (x=m;x<=n;x++)
   {
@@ -18,15 +18,15 @@ int main_bench()
     }
   }
   if (i==0)
-    printf("no\n");
+    my_printf("no\n");
   else
   {
     for (j=0;j<i;j++)
     {
       if (j!=i-1)
-        printf("%d,",c[j]);
+        my_printf("%d,",c[j]);
       else
-        printf("%d\n",c[j]);
+        my_printf("%d\n",c[j]);
     }
   }
 }

@@ -8,11 +8,11 @@ int main_bench()
   max[0]='\0';  
   while(1)
     {
-        scanf("%s",s); 
+        my_scanf("%s",s); 
         if(strlen(min)>strlen(s)) strcpy(min,s);  
         if(strlen(max)<strlen(s)) strcpy(max,s);
         c=getchar();  if(c=='\n') break;
     } 
-  printf("%s\n",max);
-  printf("%s\n",min);
+  my_printf("%s\n",max);
+  my_printf("%s\n",min);
 }

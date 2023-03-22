@@ -41,6 +41,6 @@ int main_bench(){
 			min=k;
 		}
 	}
-	printf("%s\n%s",word[max],word[min]);
+	my_printf("%s\n%s",word[max],word[min]);
 	return 0;
 }

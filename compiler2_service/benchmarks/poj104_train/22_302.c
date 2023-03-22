@@ -13,7 +13,7 @@ int main_bench()
 		{b[q]=i;q++;}
 	}
 	b[q]=k;
-	if(q==1)printf("No");
+	if(q==1)my_printf("No");
 	else{
 	for(i=0;i<q;i++){
 		for(j=b[i]+1;j<b[i+1];j++){
@@ -33,9 +33,9 @@ int main_bench()
 	for(i=0;i<q;i++){
 		if(c[i]>max2&&c[i]!=max)max2=c[i];
 	}
-	if(max2==-10000){printf("No");}
+	if(max2==-10000){my_printf("No");}
 	else
-	printf("%d",max2);
+	my_printf("%d",max2);
 	
 	}
 }

@@ -23,7 +23,7 @@ int main_bench()
 	p=s;
 	for (i=0;i<len;i++,p++)
 	{
-		printf("%c",*p);
+		my_printf("%c",*p);
 	}
 	return 0;
 }

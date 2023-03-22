@@ -25,14 +25,14 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d%c",&x[num++],&c);
+		my_scanf("%d%c",&x[num++],&c);
 	}while(c!='\n');
 	num=0;
 	do
 	{
-		scanf("%d%c",&y[num++],&c);
+		my_scanf("%d%c",&y[num++],&c);
 	}while(c!='\n');
-	printf("%d ",num);
+	my_printf("%d ",num);
 	int max=max_people(x,y,num);
-	printf("%d",max);
+	my_printf("%d",max);
 }

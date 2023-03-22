@@ -5,7 +5,7 @@ int main_bench()
     int n,m,a[1000]={0},i,j,sum=0,num;
   for(j=0;j<1000;j++)
     {
-       scanf("%d %d",&n,&m);
+       my_scanf("%d %d",&n,&m);
        num=n;
        if(m==0)
          break;
@@ -33,7 +33,7 @@ int main_bench()
       }
        for(i=0;i<n;i++)
         {if(a[i]==0)
-         printf("%d\n",i+1);
+         my_printf("%d\n",i+1);
         }
     }
     sum=0;

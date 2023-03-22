@@ -4,11 +4,11 @@ int main_bench()
 {
 char fang[101][101];
 int n,i,k,bing=0,m,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s",fang[i]);
+my_scanf("%s",fang[i]);
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<n;i++){
 for(k=0;k<n;k++){
 	if(fang[i][k]=='@'){
@@ -59,7 +59,7 @@ bing++;
 	}
 }
 }
-printf("%d",bing);
+my_printf("%d",bing);
 		return 0;
 }
 

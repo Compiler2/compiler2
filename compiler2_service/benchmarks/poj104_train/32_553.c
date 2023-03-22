@@ -4,11 +4,11 @@ int main_bench()
 {
 	char bjs[100],js[100];
 	int n,l1,l2,i,j,cha,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-			scanf("%s",bjs);
-			scanf("%s",js);
+			my_scanf("%s",bjs);
+			my_scanf("%s",js);
 		l1=strlen(bjs);
 		l2=strlen(js);
         cha=l1-l2;
@@ -24,8 +24,8 @@ int main_bench()
 				bjs[j+cha]=bjs[j+cha]-js[j]+'0';
 		}
 		for(j=0;j<l1;j++)
-		printf("%c",bjs[j]);
-		printf("\n");
-		printf("\n");
+		my_printf("%c",bjs[j]);
+		my_printf("\n");
+		my_printf("\n");
 	}
 }

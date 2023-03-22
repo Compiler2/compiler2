@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,j,k,sz[300],flag;
 	double xsz[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	xsz[0]=sz[0];
 	for(i=1;i<n;i++){
@@ -24,10 +24,10 @@ int main_bench(){
 			xsz[k]=sz[i];
 		}
 	}
-	printf("%.lf",xsz[0]);
+	my_printf("%.lf",xsz[0]);
          for(j=1;j<i;j++){
 		if(xsz[j]!=0.1){
-			printf(",%.lf",xsz[j]);
+			my_printf(",%.lf",xsz[j]);
 		}
 	}
 	return 0;

@@ -5,19 +5,19 @@ int main_bench()
      int q(int i);
     int m,n,i,t,s;
     t=0;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=m;i<=n;i++)
     {  if(p(i)==0 && q(i)==0) t++;
      }
      s=0;
      for(i=m;i<=n;i++)
     {  if(p(i)==0 && q(i)==0) {
-           printf("%d",i);
+           my_printf("%d",i);
             s++;
-         if(s!=t) printf(","); 
+         if(s!=t) my_printf(","); 
              }
      }
-    if(t==0) printf("no");
+    if(t==0) my_printf("no");
 
    return 0;
 }

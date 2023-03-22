@@ -6,9 +6,9 @@ int main_bench( ){
     for(i=0;i<50000;i++){
     z[i]=0;
     }
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-    scanf("%d %d\n",&(x[i]),&(y[i]));
+    my_scanf("%d %d\n",&(x[i]),&(y[i]));
     }
  for(i=0;i<n;i++){
  for(j=x[i];j<y[i];j++){
@@ -43,9 +43,9 @@ for(i=x[0];i<=y[0];i++){
     sum+=z[i];
 }
  if(result==sum){
-        printf("%d %d",x[0],y[0]);
+        my_printf("%d %d",x[0],y[0]);
     }else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

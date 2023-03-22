@@ -14,12 +14,12 @@ int main_bench()
         {
           if ((s1[i]==' ')&&(n>0)) 
           {
-             printf("%d,",n);
+             my_printf("%d,",n);
              n=0;
              }
            else if (s1[i]!=' ') n++;
            }       
-        printf("%d",n);                                                         
+        my_printf("%d",n);                                                         
         
          return 0; 
 }

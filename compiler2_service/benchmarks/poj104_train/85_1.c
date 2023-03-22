@@ -25,18 +25,18 @@ int main_bench()
     char name[33];
     int n;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     while (n--)
     {
-        scanf("%s", name);
+        my_scanf("%s", name);
 
         if (isidentifor(name))
         {
-            printf("yes\n");
+            my_printf("yes\n");
         }
         else 
         {
-            printf("no\n");
+            my_printf("no\n");
         }
     }
     return 0;

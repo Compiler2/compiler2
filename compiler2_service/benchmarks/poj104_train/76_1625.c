@@ -6,9 +6,9 @@ int n,t,w;
 int a[50000],c[50000],d[50000],e[50000];
 int b[50000];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++){
-	scanf("%d %d",&a[i],&b[i]);
+	my_scanf("%d %d",&a[i],&b[i]);
 	c[i]=a[i];
     d[i]=b[i];}
 for(int g=0;g<n-1;g++){
@@ -35,10 +35,10 @@ for(int g=0;g<n-1;g++){
 
 	for(int z=c[n-1]+1;z<d[n-1]+1;z++){
 		if (e[z]==0){
-		printf("no");
+		my_printf("no");
 		break;}
 		else if (z==d[n-1]){
-		printf("%d %d",c[n-1],d[n-1]);}
+		my_printf("%d %d",c[n-1],d[n-1]);}
 	}
 		return 0;
 

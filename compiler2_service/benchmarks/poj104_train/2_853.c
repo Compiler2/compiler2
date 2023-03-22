@@ -9,9 +9,9 @@ int n,m,i,j,k;
 char str[30];
 int main_bench(){
     memset(p,0,sizeof(p));
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%s",&m,str);
+        my_scanf("%d%s",&m,str);
         for(j=strlen(str)-1;j>=0;j--)
             if(str[j]>='A'&&str[j]<='Z'){
                 k=p[str[j]-'A'].num++;
@@ -22,9 +22,9 @@ int main_bench(){
     for(i=1;i<26;i++)
         if(p[i].num>p[m].num)
             m=i;
-    printf("%c\n",'A'+m);
-    printf("%d\n",p[m].num);
+    my_printf("%c\n",'A'+m);
+    my_printf("%d\n",p[m].num);
     for(i=0;i<p[m].num;i++)
-        printf("%d\n",p[m].book[i]);
+        my_printf("%d\n",p[m].book[i]);
     return 0;
 }

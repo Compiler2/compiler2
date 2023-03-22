@@ -7,9 +7,9 @@ int main_bench() {
     for(n=0;data[n]!='\0';n++);
     for(i=0;i<n;i++) {
         if(data[i]<='9'&&data[i]>='0') {
-            printf("%c",data[i]);
+            my_printf("%c",data[i]);
         } else {
-            printf("\n");
+            my_printf("\n");
         }
     }
     return 0;

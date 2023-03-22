@@ -13,10 +13,10 @@ main_bench()
 			b[i]=0;
 		for (i=0;i<14;i++)
 			c[i]='\0';
-		scanf("%s",a);
+		my_scanf("%s",a);
 		if (a[0]=='\0')
 			break;
-		scanf("%s",b);
+		my_scanf("%s",b);
 		p=a[0];
 		k=0;
 		for (i=0;a[i]!='\0';i++)
@@ -33,6 +33,6 @@ main_bench()
 			c[k+i]=b[i];
 		for (i=k;a[i]!='\0';i++)
 			c[i+3]=a[i];
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 	}
 }

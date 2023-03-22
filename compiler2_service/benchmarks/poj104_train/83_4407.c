@@ -7,12 +7,12 @@ double GPA(int c);
 void average(int n);
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i1=0;i1<n;i1++){
-		scanf("%d",&(b[i1]));
+		my_scanf("%d",&(b[i1]));
 	}
     for(int i2=0;i2<n;i2++){
-		scanf("%d",&(a[i2]));
+		my_scanf("%d",&(a[i2]));
 	}
 	for(int i3=0;i3<n;i3++){
 		g[i3]=GPA(a[i3]);
@@ -42,5 +42,5 @@ void average(int n){
 		sum2+=b[i4];
 	}
 	aver=sum1/sum2;
-	printf("%.2lf\n",aver);
+	my_printf("%.2lf\n",aver);
 }

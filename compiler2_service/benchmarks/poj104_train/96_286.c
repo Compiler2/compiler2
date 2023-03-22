@@ -4,7 +4,7 @@ int main_bench()
 {
   char str[101],result[100]={"0"};
   int i,tem,max=0;
-  scanf("%s",str);
+  my_scanf("%s",str);
   for (i=1;str[i]!='\0';i++)
   {
     if (str[i-2]=='1') i--;
@@ -27,13 +27,13 @@ int main_bench()
    
   if (result[0]=='0')
     if (result[1]=='\0')
-      printf("0\n");
-    else printf("%s\n",&result[1]);
-  else  printf("%s\n",result);
+      my_printf("0\n");
+    else my_printf("%s\n",&result[1]);
+  else  my_printf("%s\n",result);
   for (i=0;str[i]!='\0';i++);
   if (str[i-2]!='1')
-    printf("%d",str[i-1]-'0');
+    my_printf("%d",str[i-1]-'0');
   else
-    printf("%d%d",1,str[i-1]-'0');
+    my_printf("%d%d",1,str[i-1]-'0');
   return 0;
 }

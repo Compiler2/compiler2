@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,a,b,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int z[200000];
 	for(a=1;a<=n;a++)
 	{
-		scanf("%d",&z[a]);
+		my_scanf("%d",&z[a]);
 	}
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	d=0;
 	a=n;
 	while(z[a]==b)
@@ -22,9 +22,9 @@ int main_bench()
 		if (z[a]!=b)
 		{
 			if(a<n)
-		printf("%d ",z[a]);
+		my_printf("%d ",z[a]);
 			else
-	printf("%d",z[a]);
+	my_printf("%d",z[a]);
 		}
 	}
 	return 0;

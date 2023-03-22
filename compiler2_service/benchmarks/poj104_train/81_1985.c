@@ -7,17 +7,17 @@ int main_bench()
 
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(a+i)+j);
-		printf("\n");
-		scanf("%d%d",&n,&m);
+			my_scanf("%d",*(a+i)+j);
+		my_printf("\n");
+		my_scanf("%d%d",&n,&m);
 		c=f(n,m,a);
-		if(c==0)printf("error");
+		if(c==0)my_printf("error");
 		else for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
 			
-			 printf("%d ",a[i][j]);
-			 printf("%d\n",a[i][4]);
+			 my_printf("%d ",a[i][j]);
+			 my_printf("%d\n",a[i][4]);
 		}
 			
 }

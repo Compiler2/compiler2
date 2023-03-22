@@ -10,7 +10,7 @@ int main_bench()
    a[3]=10;
    a[4]=5;
    a[5]=1;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<6;i++)
    { 
 	 m=n;
@@ -18,7 +18,7 @@ int main_bench()
 	 n=n%a[i];
   };
   for(i=0;i<6;i++)
-	  printf("%d\n",b[i]);
+	  my_printf("%d\n",b[i]);
   
 	return 0;
 }

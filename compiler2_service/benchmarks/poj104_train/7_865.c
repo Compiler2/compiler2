@@ -21,9 +21,9 @@ int main_bench()
 				if(yuan[i+e]==huan[e]) count++;
             if(count==len2)
 	       	{
-         			for(k=0;k<i;k++) printf("%c", yuan[k]);
-           			for(k=i;k<len3+i;k++) printf("%c", hou[k-i]);
-	          		for(k=i+len2;k<len1;k++) printf("%c", yuan[k]);
+         			for(k=0;k<i;k++) my_printf("%c", yuan[k]);
+           			for(k=i;k<len3+i;k++) my_printf("%c", hou[k-i]);
+	          		for(k=i+len2;k<len1;k++) my_printf("%c", yuan[k]);
 	          		p=1;
 		         	break;
 	       	}
@@ -31,6 +31,6 @@ int main_bench()
 		}
  	}
  	
- 	if (p==0) printf("%s",yuan);
+ 	if (p==0) my_printf("%s",yuan);
 	return 0;
 }

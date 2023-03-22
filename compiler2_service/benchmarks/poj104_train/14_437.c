@@ -11,12 +11,12 @@
     int main_bench()
     {
     	int n,i,j,k;
-    	scanf("%d",&n);
+    	my_scanf("%d",&n);
     	
 
     	for(i=0;i<n;i++)
     	{
-    		scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].math);
+    		my_scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].math);
     	    stu[i].math=stu[i].yuwen+stu[i].math;
     	}
     	for(i=0;i<3;i++)
@@ -28,5 +28,5 @@
     		temp=stu[k];stu[k]=stu[i];stu[i]=temp;
     	}
     	for(i=0;i<3;i++)
-    	printf("%d %d\n",stu[i].num,stu[i].math);
+    	my_printf("%d %d\n",stu[i].num,stu[i].math);
     }

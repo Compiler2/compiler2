@@ -25,6 +25,6 @@ int main_bench()
 		if(a[i]>max)
 			max=a[i];
 	if(max==0)
-		printf("No");
-	else printf("%d",max);
+		my_printf("No");
+	else my_printf("%d",max);
 }

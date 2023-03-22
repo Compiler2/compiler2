@@ -6,7 +6,7 @@ int judge(int s,int e,char a[]);
 void print(int s,int e,char a[]);
 int n,m=1,i,j;
 char a[500];
-scanf("%s",a);
+my_scanf("%s",a);
 n=strlen(a);
 
 
@@ -19,7 +19,7 @@ for(i=1;i<=n-1;i++)
     if(q==1&&m==1)
         {print(j,j+i,a);m++;}
     else if(q==1&&m!=1)
-        {printf("\n");print(j,j+i,a);}
+        {my_printf("\n");print(j,j+i,a);}
     }
 
 }
@@ -40,7 +40,7 @@ void print (int s,int e,char a[])
 {
     int i;
     for(i=s;i<=e;i++)
-    printf("%c",a[i]);
+    my_printf("%c",a[i]);
 }
 
 

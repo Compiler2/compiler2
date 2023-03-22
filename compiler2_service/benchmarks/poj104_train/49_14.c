@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[500];
 	int n,i,j,t,k;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	n=strlen(s);
 	if(n%2==0)
 	{
@@ -22,9 +22,9 @@ int main_bench()
 				{
 					for(k=j;k<j+2*i;k++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
                 }
 			}
 		}
@@ -42,9 +42,9 @@ int main_bench()
 				{
 					for(k=j;k<j+2*i+1;k++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}
@@ -65,9 +65,9 @@ int main_bench()
 				{
 					for(k=j;k<j+2*i;k++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
                 }
 			}
 		}
@@ -85,9 +85,9 @@ int main_bench()
 				{
 					for(k=j;k<j+2*i+1;k++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}

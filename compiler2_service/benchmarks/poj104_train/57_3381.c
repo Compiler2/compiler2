@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i;
 	char s[33];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=1;i<=n;i++)
 	{
 		gets(s);

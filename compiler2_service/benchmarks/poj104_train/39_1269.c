@@ -15,10 +15,10 @@ int main_bench()
 	int n,i,total=0,c1,c2,c3;
 	struct student stu[100];
     struct student *p,*m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=stu;p<stu+n;p++)
 	{
-		scanf("%s%d%d%c%c%c%c%c%d",&((*p).name),&((*p).qmpj),&((*p).bjpy),&c1,&((*p).gb),&c2,&((*p).xb),&c3,&((*p).paper));
+		my_scanf("%s%d%d%c%c%c%c%c%d",&((*p).name),&((*p).qmpj),&((*p).bjpy),&c1,&((*p).gb),&c2,&((*p).xb),&c3,&((*p).paper));
 		p->money=0;
 	}
     for(p=stu;p<stu+n;p++)
@@ -41,5 +41,5 @@ int main_bench()
 			m=p;
 		total=p->money+total;
 	}
-	printf("%s\n%d\n%d\n",m->name,m->money,total);
+	my_printf("%s\n%d\n%d\n",m->name,m->money,total);
 }

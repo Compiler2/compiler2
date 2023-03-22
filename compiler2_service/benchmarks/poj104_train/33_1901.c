@@ -3,10 +3,10 @@
 char a[10000][255];
 int main_bench()
 {   int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++){
-        scanf("%s",a[i]);
+        my_scanf("%s",a[i]);
 		int l=0;
 		l=strlen(a[i]);
 		for(j=0;j<l;j++){
@@ -19,7 +19,7 @@ int main_bench()
 			else if(a[i][j]=='C')
 				a[i][j]='G';
 		}
-	printf("%s\n",a[i]);
+	my_printf("%s\n",a[i]);
 	}
 	return 0;
 }

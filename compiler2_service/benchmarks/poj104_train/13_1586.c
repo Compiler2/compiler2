@@ -5,25 +5,25 @@ int main_bench() {
 
 
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	int visit[101] = {0};
 
 	int i;
 	for(i = 0; i < n; i++) {
 		int num;
-		scanf("%d", &num);
+		my_scanf("%d", &num);
 		if(visit[num] == 1) {
 
 		} else {
 			if(i != 0) {
-				printf(" ");
+				my_printf(" ");
 			}
-			printf("%d", num);
+			my_printf("%d", num);
 			visit[num] = 1;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 
 
 	return 0;

@@ -13,14 +13,14 @@ int fb(int a){
 int main_bench(){
 	int m;
 	double sum=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i,n,k;
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(k=1;k<=n;k++){
 			sum+=1.0*fb(k+1)/fb(k);
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 		sum=0.0;
 	}
 	return 0;

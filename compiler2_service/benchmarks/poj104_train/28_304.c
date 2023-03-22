@@ -20,7 +20,7 @@ int main_bench()
 	}
 	n=j;
     for(j=0;j<n;j++)
-		printf("%d,",b[j]);
-	printf("%d",b[n]);
+		my_printf("%d,",b[j]);
+	my_printf("%d",b[n]);
 
 }

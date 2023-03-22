@@ -4,7 +4,7 @@ int main_bench()
 {
 long a,b,c=0,k,i;
 char an[100],*p,bn[100]="";
-scanf("%d %s %d",&a,an,&b);
+my_scanf("%d %s %d",&a,an,&b);
 for(p=an;*p!='\0';p++)
 {
 if((*p>='a')&&(*p<='z'))
@@ -26,6 +26,6 @@ if((c>=0)&&(c<9)) bn[i]=c+48;
 else
 bn[i]=c+55;
 for(;i>=0;i--)
-printf("%c",bn[i]);
+my_printf("%c",bn[i]);
 return 0;
 }

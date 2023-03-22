@@ -5,7 +5,7 @@ int main_bench()
 	while(1)
 	{
 		int n,m;
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n==0)break;
 	    int a[301],p=1,i,num,ren;
         ren=n;
@@ -19,7 +19,7 @@ int main_bench()
 		   if(a[i]==0)num++;
 		 }
 	     a[i-1]=1;
-	     if(ren==1)printf("%d\n",i-1);
+	     if(ren==1)my_printf("%d\n",i-1);
 	     ren=ren-1;
 	     p=i;
 		}

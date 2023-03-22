@@ -8,9 +8,9 @@ int main_bench()
 	c[0]=1;
 	b[1]=3;
 	c[1]=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 	{
 		sum[i]=0;
@@ -24,7 +24,7 @@ int main_bench()
 			d[k]=b[k]/(double)(c[k]);
 			sum[i]+=d[k];
 		}
-		printf("%.3f\n",sum[i]);
+		my_printf("%.3f\n",sum[i]);
 	}
 	return 0;
 }

@@ -31,11 +31,11 @@ int main_bench()
 						   }
 						   }
 					for(i=t[g];i<t[g]+c[g]-1;i++){
-													printf("%c",str[i]);
+													my_printf("%c",str[i]);
 													}
-													printf("%c\n",str[t[g]+c[g]-1]);
+													my_printf("%c\n",str[t[g]+c[g]-1]);
 					for(i=t[k];str[i]!=0&&str[i]!=' ';i++){
-													printf("%c",str[i]);
+													my_printf("%c",str[i]);
 													} 						
   
   return 0;

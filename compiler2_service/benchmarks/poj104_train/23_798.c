@@ -15,11 +15,11 @@ int main_bench()
 		}
 		for(k=++i;k<i+j;k++)
 		{
-			printf("%c",str[k]);
+			my_printf("%c",str[k]);
 		}
-		if(i!=0)printf(" ");
+		if(i!=0)my_printf(" ");
 		i--;
 		j=0;
 	}
-	printf("\n");
+	my_printf("\n");
 }

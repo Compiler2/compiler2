@@ -19,6 +19,6 @@ int main_bench()
              c[i+k]=c[j+k-1];
         }
     }
-    printf("%s",c);
+    my_printf("%s",c);
     getchar();
 }

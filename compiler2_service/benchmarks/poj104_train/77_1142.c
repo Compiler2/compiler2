@@ -3,7 +3,7 @@
 int main_bench()
 {
 char string[101];
-scanf("%s",string);
+my_scanf("%s",string);
 int len=strlen(string);
 int i;
 int a[100]={0};
@@ -15,12 +15,12 @@ for(i=0;i<len;i++){
 	if(string[i]!=string[0]){
 		for(j=num-1;j>=0;j--){
 			if(a[j]!=-1) {
-				printf("%d",a[j]);
+				my_printf("%d",a[j]);
 				a[j]=-1;
 				break;
 			}
 		}
-		printf(" %d\n",i);
+		my_printf(" %d\n",i);
 	}
 	
 }

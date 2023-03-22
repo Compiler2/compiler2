@@ -50,7 +50,7 @@ submax=-1;
 
 for(i=1;i<=t;i++)
 if (b[i]!=max&&b[i]>submax)submax=b[i];
-if(submax!=-1)printf("%d",submax);else printf("No");
+if(submax!=-1)my_printf("%d",submax);else my_printf("No");
 }
 
 

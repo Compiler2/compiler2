@@ -18,10 +18,10 @@ int f5(int a,char b);
 int main_bench()
 {
 	int n=0,i=0,sum=0,k=0,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].e);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].e);
 		stu[i].sum=0;
 	}
 	for(i=0;i<n;i++)
@@ -61,7 +61,7 @@ int main_bench()
 			k=stu[i].sum;
 		}
 	}
-	printf("%s\n%d\n%d",stu[j].name,stu[j].sum,sum);
+	my_printf("%s\n%d\n%d",stu[j].name,stu[j].sum,sum);
 	return 0;
 }
 int f1(int a,int b)

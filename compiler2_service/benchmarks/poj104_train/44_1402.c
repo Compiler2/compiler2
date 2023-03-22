@@ -6,13 +6,13 @@ int  main_bench()
      int x,t=6,i=0;
 for(i;i<t;i++)
 {
-     scanf("%d",&x);
+     my_scanf("%d",&x);
      if(x>0)
-     printf("%d\n",bianxu(x));
+     my_printf("%d\n",bianxu(x));
      if(x<0)
-     printf("-%d\n",bianxu((-x)));
+     my_printf("-%d\n",bianxu((-x)));
      if(x==0)
-     printf("0\n");
+     my_printf("0\n");
     } 
 }
 int bianxu(int x)

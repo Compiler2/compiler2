@@ -19,7 +19,7 @@ int main_bench()
 {
 	int n,i,j,flag;
 	char str[81];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	
 	for(i=0;i<n;i++)
 	{
@@ -44,8 +44,8 @@ int main_bench()
 			flag=0;
 		
 		}	
-	if(flag==1) printf("1\n");
-    else printf("0\n");
+	if(flag==1) my_printf("1\n");
+    else my_printf("0\n");
 	}
 
 	return 0;

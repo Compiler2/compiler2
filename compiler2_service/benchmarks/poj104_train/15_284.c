@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,a,s=1,m,l;long i=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(1)
 	{
 		i+=1;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
 			break;
 	}
@@ -15,7 +15,7 @@ int main_bench()
 	while(1)
 	{
 		i+=1;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
 			s+=1;
 		if(a!=0)
@@ -25,13 +25,13 @@ int main_bench()
 	while(1)
 	{
 		i+=1;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
 			s+=1;
 		if(i>=n*n)
 			break;
 	}
-	printf("%d\n",((s-(l-m+1)*2)/2)*(l-m-1));
+	my_printf("%d\n",((s-(l-m+1)*2)/2)*(l-m-1));
 
 	return 0;
 	

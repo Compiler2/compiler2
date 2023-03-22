@@ -40,6 +40,6 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%d",strlen(e));
+	my_printf("%d",strlen(e));
 	return 0;
 }

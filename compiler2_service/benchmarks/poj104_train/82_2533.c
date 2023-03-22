@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,k=0,a[100],b[100],c[100]={0},m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90){c[k]++;}
@@ -14,7 +14,7 @@ int main_bench(){
 	for(i=0;i<k+1;i++){
 		if(m<c[i]){m=c[i];}
 	}
-	if(m==0){printf("%d",m);}
-	else{printf("%d",m);}
+	if(m==0){my_printf("%d",m);}
+	else{my_printf("%d",m);}
 	return 0;
 }

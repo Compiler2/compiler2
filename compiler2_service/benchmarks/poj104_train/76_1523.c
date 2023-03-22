@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n,a[50000],b[50000],i,k,d,e,f;
-	scanf("%d",&n);
-	for(i=1;i<=n;i++) scanf("%d %d",&(a[i]),&b[i]);
+	my_scanf("%d",&n);
+	for(i=1;i<=n;i++) my_scanf("%d %d",&(a[i]),&b[i]);
 	for(k=1;k<n;k++)
 	{
 		for(i=1;i<=n-k;i++)
@@ -35,14 +35,14 @@ int main_bench()
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 			f=0;
 			break;
 		}
 	}
 	if(f==1)
 	{
-		printf("%d %d",d,e);
+		my_printf("%d %d",d,e);
 	}
 	return 0;
 }

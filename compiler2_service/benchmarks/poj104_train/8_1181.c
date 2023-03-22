@@ -10,7 +10,7 @@ int main_bench()
 	void D(int str[],int str2[]);
 	
 	int i,j,k;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	
 	D(a,b);
 	A(a,m);
@@ -22,9 +22,9 @@ void D(int str[],int str2[])
 {
 int i;
 for(i=0;i<m;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 for(i=0;i<n;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 }
 
 void A(int str[],int m)
@@ -39,8 +39,8 @@ void A(int str[],int m)
 void B(int str3[],int str2[])
 {	int i;
 	for(i=0;i<m;i++)
-		printf("%d ",str3[i]);
+		my_printf("%d ",str3[i]);
 	for(i=0;i<n-1;i++)
-		printf("%d ",str2[i]);
-	printf("%d",str2[n-1]);
+		my_printf("%d ",str2[i]);
+	my_printf("%d",str2[n-1]);
 }

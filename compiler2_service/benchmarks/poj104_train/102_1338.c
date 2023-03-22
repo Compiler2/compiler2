@@ -5,16 +5,16 @@ main_bench()
 {
     int n,c=0,d=0,e,f,g,h,i,a[40],a1[40],b[40],b1[40];
     char gender[7];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for( ;d+c<=n-1; )
    {
-    scanf("%s ",gender);
+    my_scanf("%s ",gender);
     if (gender[0]=='m')
-    {scanf("%d.%d",&a1[c],&a[c]);
+    {my_scanf("%d.%d",&a1[c],&a[c]);
      c++;
      }
    else
-    {scanf("%d.%d",&b1[d],&b[d]);
+    {my_scanf("%d.%d",&b1[d],&b[d]);
      d++;
      }
    }
@@ -51,22 +51,22 @@ main_bench()
     for(e=0;e<=c-1;e++)
 {
     if(a[e]>=10)
-    printf("%d.%d ",a1[e],a[e]);
+    my_printf("%d.%d ",a1[e],a[e]);
     else
-    printf("%d.0%d ",a1[e],a[e]);
+    my_printf("%d.0%d ",a1[e],a[e]);
 }
     for(e=0;e<=d-2;e++)
 {
     if(b[e]>=10)
-    printf("%d.%d ",b1[e],b[e]);
+    my_printf("%d.%d ",b1[e],b[e]);
     else
-    printf("%d.0%d ",b1[e],b[e]);
+    my_printf("%d.0%d ",b1[e],b[e]);
     
 }
     
 if(b[e]>=10)
-    printf("%d.%d\n",b1[e],b[e]);
+    my_printf("%d.%d\n",b1[e],b[e]);
     else
-    printf("%d.0%d\n",b1[e],b[e]);
+    my_printf("%d.0%d\n",b1[e],b[e]);
 
 }

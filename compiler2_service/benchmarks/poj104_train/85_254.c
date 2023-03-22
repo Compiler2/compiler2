@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,temp[1000] = {0};
 	char cr[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",&cr);
+		my_scanf("%s",&cr);
 		if((cr[0] >='a' &&cr[0]<='z') || (cr[0] >='A' &&cr[0]<='Z')|| cr[0] == '_')
 		{
 			for (j=1;j<20;j++)
@@ -35,9 +35,9 @@ int main_bench()
 	for (i=0;i<n;i++)
 	{
 		if (temp[i] == 1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

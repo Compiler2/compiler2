@@ -6,7 +6,7 @@ int main_bench()
 	
     int a,b,c;
 	int s=0,sum=0,i,v;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 a=(a-1)%400+1;
 	for(i=1;i<=a-1;i++)
 	{
@@ -42,31 +42,31 @@ a=(a-1)%400+1;
 	sum+=c;
 	if(sum%7==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	if(sum%7==2)
 	{
-           printf("Tue.");
+           my_printf("Tue.");
 	}
 	if(sum%7==3)
 	{
-		printf("Wen.");
+		my_printf("Wen.");
 	}
 	if(sum%7==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	if(sum%7==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	if(sum%7==6)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	if(sum%7==0)
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

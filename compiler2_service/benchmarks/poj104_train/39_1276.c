@@ -16,10 +16,10 @@ int main_bench()
 	}stu[100];
 	int num,i,j;
 	int a[100]={0};
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++)
 	{
-		scanf("%s%d%d %c %c%d",stu[i].nam,&stu[i].ave,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].wen);
+		my_scanf("%s%d%d %c %c%d",stu[i].nam,&stu[i].ave,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].wen);
 stu[i].all = 0;
 memset(stu[i].total, 0, sizeof(stu[i].total));
 	}
@@ -60,7 +60,7 @@ memset(stu[i].total, 0, sizeof(stu[i].total));
 	{
 		whole+=stu[i].all;
 	}
-	printf("%s\n%d\n%d",stu[j].nam,max,whole);
+	my_printf("%s\n%d\n%d",stu[j].nam,max,whole);
 	
 	return 0;
 }

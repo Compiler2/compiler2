@@ -15,8 +15,8 @@ return (c);
  }
 main_bench()
 {int n,d;
-scanf("%d",&n);
+my_scanf("%d",&n);
 d=fun(n);
-printf("%d",d);
+my_printf("%d",d);
 return 0;
 }

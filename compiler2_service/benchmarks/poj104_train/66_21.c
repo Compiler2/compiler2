@@ -6,7 +6,7 @@ int main_bench()
 	int y,m,d,i,j,k,n,y1;
 	int a=-1;
 	int mo,z;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	y1=(y%400);
 	if(y1!=0){
     for(i=0;i<y1;i++){
@@ -74,19 +74,19 @@ int main_bench()
 		n=mo+j+k-1;
 		z=(n%7);
 		switch(z){
-		case 0:printf("Mon.");
+		case 0:my_printf("Mon.");
 			break;
-		case 1:printf("Tue.");
+		case 1:my_printf("Tue.");
 			break;
-		case 2:printf("Wed.");
+		case 2:my_printf("Wed.");
 			break;
-		case 3:printf("Thu.");
+		case 3:my_printf("Thu.");
 			break;
-		case 4:printf("Fri.");
+		case 4:my_printf("Fri.");
 			break;
-		case 5:printf("Sat.");
+		case 5:my_printf("Sat.");
 			break;
-		case 6:printf("Sun.");
+		case 6:my_printf("Sun.");
 			break;
 		}
 	}else{
@@ -119,19 +119,19 @@ int main_bench()
 		n=mo+4;
 		z=(n%7);
         switch(z){
-		case 0:printf("Mon.");
+		case 0:my_printf("Mon.");
 			break;
-		case 1:printf("Tue.");
+		case 1:my_printf("Tue.");
 			break;
-		case 2:printf("Wed.");
+		case 2:my_printf("Wed.");
 			break;
-		case 3:printf("Thu.");
+		case 3:my_printf("Thu.");
 			break;
-		case 4:printf("Fri.");
+		case 4:my_printf("Fri.");
 			break;
-		case 5:printf("Sat.");
+		case 5:my_printf("Sat.");
 			break;
-		case 6:printf("Sun.");
+		case 6:my_printf("Sun.");
 			break;
 		}
 	}

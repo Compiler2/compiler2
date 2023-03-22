@@ -5,7 +5,7 @@ int main_bench()
 	char *str,*p,*start;
 	str=(char *)calloc(1000,sizeof(char));
 	for (p=str;*(p-1)!='\n';p++)
-		scanf("%c",p);
+		my_scanf("%c",p);
 	int countspace=0;
 	start=str;
 
@@ -24,6 +24,6 @@ int main_bench()
 			}
 		}
 	for(p=str;*(p-1)!='\n';p++)
-		printf("%c",*p);
+		my_printf("%c",*p);
 	return 0;
 }

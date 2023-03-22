@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j=0,k=0,x[20],y[20];
-	scanf("%d%d",&x[0],&y[0]);
+	my_scanf("%d%d",&x[0],&y[0]);
 	for(i=0;x[i]!=1;i++)
 	{
 		x[i+1]=x[i]/2;
@@ -19,5 +19,5 @@ int main_bench()
 		k--;
 		j--;
 	}
-		printf("%d",x[k+1]);
+		my_printf("%d",x[k+1]);
 }

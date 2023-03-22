@@ -6,9 +6,9 @@ int main_bench()
 	char string[256],sub[256],replace[256],s[256],p[256];
 	int i,j,k,a,k0,k1,k2,flag = 0;
 
-	scanf("%s",string);
-	scanf("%s",sub);
-	scanf("%s",replace);
+	my_scanf("%s",string);
+	my_scanf("%s",sub);
+	my_scanf("%s",replace);
 	k0 = strlen(string);
 	k1 = strlen(sub);
 	k2 = strlen(replace);
@@ -42,9 +42,9 @@ int main_bench()
 	  {
 		  for(i = 0;i < k0 + k2 - k1;i ++)
 	   {
-	      printf("%c",s[i]);
+	      my_printf("%c",s[i]);
 	   }
-	      printf("\n");
+	      my_printf("\n");
 	  }
 	  if(flag == 0)
 		  puts(string);

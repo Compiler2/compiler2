@@ -5,7 +5,7 @@ int main_bench()
    char str1[100][100],str2[100][100]={'\0'};	
    int i,j,k,l1,l2,t[100],l;	
    for(i=0;i<100;i++)	
-   {   scanf("%s",str1[i]);
+   {   my_scanf("%s",str1[i]);
        k=strlen(str1[i]);
 	   if(k==0) break;
        puts(str1[i]);

@@ -5,10 +5,10 @@ int main_bench()
 {
 	int i,j=0,N,a[301]={0},b[100]={0},p,q,temp;
 	int sum=0,max;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 
@@ -22,7 +22,7 @@ int main_bench()
 	for(p=0;p<j-1;p++)
 		for(q=p+1;q<j;q++)if(b[q]<b[p]){temp=b[p];b[p]=b[q];b[q]=temp;}
 	for(i=0;i<j-1;i++)
-		printf("%d,",b[i]);
-	printf("%d\n",b[i]);
+		my_printf("%d,",b[i]);
+	my_printf("%d\n",b[i]);
 
 }

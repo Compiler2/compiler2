@@ -13,7 +13,7 @@ int main_bench(){
     for(i=0;i<e;i++){
         if(z1[i]=='1'){  
         }else{
-            printf("%c",z1[i]);
+            my_printf("%c",z1[i]);
         }
     }
     return 0;

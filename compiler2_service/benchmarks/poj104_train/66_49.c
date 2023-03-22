@@ -18,7 +18,7 @@ int main_bench()
 		int w;
 	int k[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if(y%4==0&&y%100!=0||y%400==0)k[1]=29;
 	y %= 400;
 	if (y == 0) y = 400;
@@ -32,25 +32,25 @@ int main_bench()
 		switch(w)
 		{
 			  case 0:  
-				   printf("Sun.");  
+				   my_printf("Sun.");  
 				   break;  
 			  case 1:  
-				   printf("Mon.");  
+				   my_printf("Mon.");  
 				   break;  
 			  case 2:  
-				   printf("Tue.");  
+				   my_printf("Tue.");  
 				   break;  
 			  case 3:  
-				   printf("Wed.");  
+				   my_printf("Wed.");  
 				   break;  
 			case 4:  
-				  printf("Thu.");   
+				  my_printf("Thu.");   
 					break;  
 			case 5:  
-				  printf("Fri.");   
+				  my_printf("Fri.");   
 					break;  
 			case 6:  
-				  printf("Sat.");   
+				  my_printf("Sat.");   
 					break;  
 		}
 	return 0;

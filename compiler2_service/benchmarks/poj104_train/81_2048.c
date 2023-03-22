@@ -24,9 +24,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	p1=a[n];p2=a[m];
 	v=change(p1,p2,n,m);
 	if(v)
@@ -34,11 +34,11 @@ int main_bench()
 		for(i=0;i<5;i++,p++)
 		{
 			for(j=0;j<4;j++,p++)
-			printf("%d ",*(p));
-			printf("%d",*(p));
-			printf("\n");
+			my_printf("%d ",*(p));
+			my_printf("%d",*(p));
+			my_printf("\n");
 		}
 	}
-	else printf("error");
+	else my_printf("error");
 }
 

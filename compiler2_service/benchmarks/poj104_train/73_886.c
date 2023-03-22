@@ -28,14 +28,14 @@ main_bench()
           for(j=1;j<=5;j++)
           {
               
-              scanf("%d",&a[i][j]);
+              my_scanf("%d",&a[i][j]);
           }
           
       }
       for(i=1;i<=5;i++)
       {
           j=max(i);
-          if( min(j)==i ) {printf("%d %d %d\n",i,j,a[i][j]);x=1;}
+          if( min(j)==i ) {my_printf("%d %d %d\n",i,j,a[i][j]);x=1;}
       }
-      if(x==0) printf("not found\n");
+      if(x==0) my_printf("not found\n");
 }

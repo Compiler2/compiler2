@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int all[100],eff[100];
 	double r[100];
 
 	int k=0;
 	while(k<n){
-		scanf("%d %d",&all[k],&eff[k]);
+		my_scanf("%d %d",&all[k],&eff[k]);
 		k++;
 	}
 	r[0]=(1.0*(eff[0])*100)/(1.0*(all[0]));
@@ -19,24 +19,24 @@ int main_bench()
 		r[i]=(1.0*eff[i]*100)/(1.0*all[i]);
 		if(r[i]-r[0]>5){
 			if(i==1){
-				printf("better");
+				my_printf("better");
 			}else{
-				printf("\nbetter");
+				my_printf("\nbetter");
 			}
 			
 		}else{
 			if(r[0]-r[i]>5){
 				if(i==1){
-					printf("worse");
+					my_printf("worse");
 				}else{
-					printf("\nworse");
+					my_printf("\nworse");
 			}
 				
 			}else{
 				if(i==1){
-					printf("same");
+					my_printf("same");
 				}else{
-					printf("\nsame");
+					my_printf("\nsame");
 			}
 				
 			}

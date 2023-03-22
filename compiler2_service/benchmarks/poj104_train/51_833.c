@@ -8,8 +8,8 @@ int main_bench()
 	int *pt1=a;
 	char *pt2=str,(*pt3)[6]=str2;
 	int i,j,n,p,flag,t,k;
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	t=strlen(str)-n;
 	for(i=0;i<=t;i++)
 	{
@@ -49,18 +49,18 @@ int main_bench()
 	}
 	if(k>1)
 	{
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 		for(i=0;i<=t;i++)
 		{
 			if(*(pt1+i)==k)
 			{
-				printf("%s\n",*(pt3+i));
+				my_printf("%s\n",*(pt3+i));
 			}
 		}
 	}
 	else if(k=1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

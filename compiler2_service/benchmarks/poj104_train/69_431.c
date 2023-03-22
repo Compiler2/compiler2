@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[260],b[260],c[260];
     int t,i,j,n,m,ca;
-        scanf("%s\n%s",a,b);
+        my_scanf("%s\n%s",a,b);
         m=strlen(a);
         n=strlen(b);
         if(m<n)
@@ -29,9 +29,9 @@ int main_bench()
                 { if(a[i]!=0)break;}
                  int q=i;
                  if (q==m)
-                 printf("0");
+                 my_printf("0");
                  else
                  for(i=q;i<m;i++)
-                 printf("%d",a[i]);
-              printf("\n"); 
+                 my_printf("%d",a[i]);
+              my_printf("\n"); 
     }

@@ -13,7 +13,7 @@ for (i=0;i<128;i++)
 {n1[i]=0;
 n2[i]=0;}
 
-scanf("%s %s",st1,st2);
+my_scanf("%s %s",st1,st2);
 
 for (i=0;i<100;i++)
 {n=st1[i];
@@ -27,9 +27,9 @@ for (i=0;i<128;i++)
 	n=n+1;
 }
 if (n==128)
-printf("YES\n");
+my_printf("YES\n");
 else
-printf("NO\n");
+my_printf("NO\n");
 
 
 }

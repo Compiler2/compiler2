@@ -10,7 +10,7 @@ int panduan(char i,int k)
 main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i=0,k=1;
     char a[100];
     for(i=0;i<=n;i++)
@@ -25,13 +25,13 @@ main_bench()
                  k=panduan(a[j],k);
              }
              if(k==1)
-             printf("1\n");
+             my_printf("1\n");
              else
-             printf("0\n");
+             my_printf("0\n");
              k=1;
         }
         else
-        printf("0\n");
+        my_printf("0\n");
     }
     return 0;
 }

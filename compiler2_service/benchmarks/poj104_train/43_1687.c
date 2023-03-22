@@ -14,9 +14,9 @@ int main_bench()
 	for(i=0;i<10000;i++)
 		if(a[i])
 			a[i]=i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<n/2+1;i++)
 	if(a[i]&&(a[n-a[i]]))
-		printf("%d %d\n",a[i],n-a[i]);
+		my_printf("%d %d\n",a[i],n-a[i]);
 
 }

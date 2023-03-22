@@ -20,9 +20,9 @@ int main_bench()
     }
     b[n][k]='\0';
     for(i=0;i<n;i++){
-        printf("%d,",(strlen(b[i])));
+        my_printf("%d,",(strlen(b[i])));
     }
-    printf("%d",(strlen(b[n])));   
+    my_printf("%d",(strlen(b[n])));   
     return 0;
 }     
           

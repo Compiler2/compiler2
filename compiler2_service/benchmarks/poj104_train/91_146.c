@@ -9,7 +9,7 @@ int main_bench()
 	p1=a;
 	p2=a+1;
 	do{  
-         printf("%c",*p1+*p2);
+         my_printf("%c",*p1+*p2);
 		 p1=p2;
 		 if(p2==a+len-1){
 			 p2=a;

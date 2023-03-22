@@ -19,8 +19,8 @@ int main_bench()
 
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&array[i][j]);
-	scanf("%d%d",&m,&n);
+			my_scanf("%d",&array[i][j]);
+	my_scanf("%d%d",&m,&n);
 
 
 	if(right(m,n))
@@ -40,10 +40,10 @@ int main_bench()
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
-				printf("%d ",array[i][j]);
-			printf("%d\n",array[i][4]);
+				my_printf("%d ",array[i][j]);
+			my_printf("%d\n",array[i][4]);
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 }

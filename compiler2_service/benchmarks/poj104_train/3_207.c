@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,k,he=0, shu[1000],i,j,c=0,d=0;
-	scanf ("%d %d", &n, &k);
+	my_scanf ("%d %d", &n, &k);
 	for (i=0; i<n; i++)
-		scanf ("%d", &shu[i]);
+		my_scanf ("%d", &shu[i]);
     for (i=0;i<n; i++){
 		for (j=i+1;j<n;j++){
 			he=shu[i]+shu[j];
@@ -15,9 +15,9 @@ int main_bench()
 			}
 	}
 	if (d==0)
-		printf ("no");
+		my_printf ("no");
 	else 
-		printf ("yes");
+		my_printf ("yes");
 	return 0;
 }
 

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i;
 	double n,m=0,t=0,x=0,y=0,age[100];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
     for(i=0;i<n;i++)
-	scanf("%lf",&age[i]);
+	my_scanf("%lf",&age[i]);
 	for(i=0;i<n;i++)
 	{if(age[i]<=18)
 	{
@@ -23,9 +23,9 @@ int main_bench()
 		y=y+1;
 	}
 	}
-	printf("1-18: %.2lf",m/n*100);printf("%%\n");
-	printf("19-35: %.2lf",t/n*100);printf("%%\n");
-	printf("36-60: %.2lf",x/n*100);printf("%%\n");
-	printf("60??: %.2lf",y/n*100);printf("%%\n");
+	my_printf("1-18: %.2lf",m/n*100);my_printf("%%\n");
+	my_printf("19-35: %.2lf",t/n*100);my_printf("%%\n");
+	my_printf("36-60: %.2lf",x/n*100);my_printf("%%\n");
+	my_printf("60??: %.2lf",y/n*100);my_printf("%%\n");
     return 0;
 }

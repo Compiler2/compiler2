@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,k,i,j,m=0;
 	int sz[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(j=0;j<n-1;j++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 		{
 			if(sz[i]+sz[j]==k)
 			{
-				printf("yes");
+				my_printf("yes");
 				m++;
 				break;
 			}
@@ -26,7 +26,7 @@ int main_bench()
 		}
 		if(j==n-2&&m==0)
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 return 0;

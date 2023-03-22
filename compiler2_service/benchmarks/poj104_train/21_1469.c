@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a[1000],j,t;
 	float aver,x,y,sum=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	aver=sum/n;
@@ -25,8 +25,8 @@ int main_bench()
 	}
 	x=aver-a[1];
 	y=a[n]-aver;
-	if(x==y) printf("%d,%d",a[1],a[n]);
-	if(x>y) printf("%d",a[1]);
-	if(x<y) printf("%d",a[n]);
+	if(x==y) my_printf("%d,%d",a[1],a[n]);
+	if(x>y) my_printf("%d",a[1]);
+	if(x<y) my_printf("%d",a[n]);
 	return 0;
 }

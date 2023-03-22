@@ -4,10 +4,10 @@ int f(int,int,int);
 int main_bench()
 {
 int w,a;
-scanf("%d",&w);
+my_scanf("%d",&w);
 for(a=1;a<13;a++)
 	{if(f(a,13,w))
-	printf("%d\n",a);}
+	my_printf("%d\n",a);}
 return 0;
 }
 int f(int a,int b,int c)

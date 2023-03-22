@@ -4,12 +4,12 @@ int main_bench()
 {
     int n,i,j,k,m,q=0;
     char hb[102][102],tmp[102][102];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-    scanf("%s",hb[i]);
+    my_scanf("%s",hb[i]);
     strcpy(tmp[i],hb[i]);
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(k=1;k<m;k++){
     for(i=0;i<n;i++){
                       for(j=0;j<n;j++){
@@ -39,6 +39,6 @@ int main_bench()
                       }
                       }
                       }
-    printf("%d",q);
+    my_printf("%d",q);
     return 0;
 }

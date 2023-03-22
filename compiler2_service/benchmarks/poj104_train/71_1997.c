@@ -7,14 +7,14 @@ int main_bench()
 	struct {
 		int y,m1,m2;
 	}an[200];
-	scanf ("%d\n",&n);
+	my_scanf ("%d\n",&n);
 	s=0;
 		
 
 	for (i=0;i<n;i++)
 	{
 	
-		scanf ("%d%d%d",&an[i].y,&an[i].m1,&an[i].m2);
+		my_scanf ("%d%d%d",&an[i].y,&an[i].m1,&an[i].m2);
 		if ((an[i].y%4==0&&an[i].y%100!=0)||(an[i].y%400==0)) {b[2]=29;}
 		else b[2]=28;
 		if (an[i].m2<an[i].m1)
@@ -31,9 +31,9 @@ int main_bench()
 		}
 		if (s%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
-		if (s%7!=0) printf ("NO\n");
+		if (s%7!=0) my_printf ("NO\n");
 		s=0;
 	}
 	

@@ -4,10 +4,10 @@ int sz[1000][1000];
 int main_bench()
 {
 int n,i,j,a,b,c,d,e=0,h=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 	for(j=0;j<n;j++){
-		scanf("%d",&(sz[i][j]));
+		my_scanf("%d",&(sz[i][j]));
 	}
 }
 for(i=0;i<n;i++){
@@ -32,7 +32,7 @@ for(i=0;i<n;i++){
 	}
 }
 e=(c-a-1)*(d-b-1);
-printf("%d",e);
+my_printf("%d",e);
 return 0;
 }
 

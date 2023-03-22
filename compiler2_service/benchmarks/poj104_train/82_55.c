@@ -8,9 +8,9 @@ int main_bench(){
 	for (i=0;i<100;i++)
 	{l[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-	{scanf("%d %d",&j,&k);
+	{my_scanf("%d %d",&j,&k);
 	   if (j>=90 && j<=140 && k>=60 && k<=90)
 	   {h++;
 	   l[i]=h;
@@ -23,6 +23,6 @@ int main_bench(){
 			max=i;
 		}
 	}
-	printf("%d",l[max]);
+	my_printf("%d",l[max]);
 	return 0;
 }

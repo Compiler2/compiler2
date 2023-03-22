@@ -11,10 +11,10 @@ int main_bench(){
 	}	
 	int head,tail,max=0;
 	char d='y';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);             
+		my_scanf("%d%d",&a,&b);             
 		if(b>r[a])
 		{
 			r[a]=b;
@@ -42,7 +42,7 @@ int main_bench(){
 		        if(tail<r[i]){tail=r[i];}
 		}
 	}
-	if(d=='y'){printf("%d %d",head,tail);}  
-	if(d=='n'){printf("no");}
+	if(d=='y'){my_printf("%d %d",head,tail);}  
+	if(d=='n'){my_printf("no");}
 	return 0;
 }

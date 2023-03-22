@@ -4,9 +4,9 @@ int main_bench()
 {
 	int rnfeb(int year);
 	int n,year,month1,month2,e,i,j,day,num=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		for(i=0;i<n;i++){
-			scanf("%d %d %d",&year,&month1,&month2);
+			my_scanf("%d %d %d",&year,&month1,&month2);
 			if(month1<month2){
 				e=month1;
 				month1=month2;
@@ -26,9 +26,9 @@ int main_bench()
 				num+=day;
 			}
 			if(num%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}else{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	return 0;

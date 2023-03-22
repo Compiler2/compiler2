@@ -13,10 +13,10 @@ int main_bench()
 	struct s stu[100];
 	int n,i,p,m[100],j;
 	double t=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].q,&stu[i].b,&stu[i].x,&stu[i].w,&stu[i].l);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].q,&stu[i].b,&stu[i].x,&stu[i].w,&stu[i].l);
 		m[i]=0;
 		if(stu[i].q>80&&stu[i].l!=0)m[i]=m[i]+8000;
 		if(stu[i].q>85&&stu[i].b>80)m[i]=m[i]+4000;
@@ -34,8 +34,8 @@ int main_bench()
 		}
 		t=m[i]+t;	
 	}
-	printf("%s\n",stu[j].name);
-	printf("%d\n%.0f\n",p,t);
+	my_printf("%s\n",stu[j].name);
+	my_printf("%d\n%.0f\n",p,t);
 }
 
 

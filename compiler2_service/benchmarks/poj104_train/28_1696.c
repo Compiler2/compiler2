@@ -20,6 +20,6 @@ int main_bench()
 	for(i--;b[i]!=' '&&i>=0;i--)
 		a[j]++;
 	for(i=0;i<j;i++)
-		printf("%d,",a[i]);
-	printf("%d\n",a[j]);
+		my_printf("%d,",a[i]);
+	my_printf("%d\n",a[j]);
 }

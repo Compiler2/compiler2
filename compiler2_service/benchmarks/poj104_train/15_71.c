@@ -8,12 +8,12 @@ int main_bench()
 	int i,j;
 	int c=1000,d=1000;
 	int num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&num);
+			my_scanf("%d",&num);
 			if(num==0)
 			{
 				if(a<i)
@@ -27,5 +27,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",(a-c-1)*(b-d-1));
+	my_printf("%d\n",(a-c-1)*(b-d-1));
 }

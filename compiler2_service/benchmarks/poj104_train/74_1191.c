@@ -13,7 +13,7 @@ int change(int num)
 main_bench()
 {
       int m,n,i,j,a=0;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=m;i<=n;i++)
       {
                        for(j=2;j<i;j++)
@@ -27,14 +27,14 @@ main_bench()
                              {
                                              a=a+1;
                                              if(a==1)
-                                             printf("%d",i);
+                                             my_printf("%d",i);
                                              else
-                                             printf(",%d",i);         
+                                             my_printf(",%d",i);         
                              }  
                           }
       }
       if(a==0)
-      printf("no\n");
+      my_printf("no\n");
       getchar();
       getchar();
       

@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a,b,i,num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	   if(i==1){
 	        a=num;
 			b=num;
@@ -17,6 +17,6 @@ int main_bench(){
 		}
 	
 	}
-printf("%d\n%d\n",a,b);
+my_printf("%d\n%d\n",a,b);
 	return 0;
 }

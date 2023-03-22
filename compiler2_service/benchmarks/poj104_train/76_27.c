@@ -8,9 +8,9 @@ int main_bench()
 		int b;
 	}qj[50000],temp;
 	int n,i,j,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&qj[i].a,&qj[i].b);
+		my_scanf("%d%d",&qj[i].a,&qj[i].b);
 	}
 	for(i=n-1;i>0;i--){
 		for(j=0;j<i;j++){
@@ -30,12 +30,12 @@ int main_bench()
 			max=qj[i].b;
 		}
 		if(max<qj[i+1].a){
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(i==n-1){
-		printf("%d %d",qj[0].a,max);
+		my_printf("%d %d",qj[0].a,max);
 	}
 	return 0;
 }

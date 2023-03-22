@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,x,y,z,m,t=1,n;
 	char a[300],b[300],c[300];
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
     x=strlen(a);
 	y=strlen(b); 
 	z=strlen(c);
@@ -21,7 +21,7 @@ int main_bench()
 				if(j==y-1)
 				{
 					for(m=0;m<z;m++)
-					printf("%c",c[m]);
+					my_printf("%c",c[m]);
 					i=i+y-1;
 					t=0;
 				}
@@ -29,12 +29,12 @@ int main_bench()
 		}
 		if(j<y-1)
 		{
-             printf("%c",a[i]);
+             my_printf("%c",a[i]);
 		}
 		if(t==0)
 			break;
 
 	}for(n=i+1;n<x;n++)
-	printf("%c",a[n]);
+	my_printf("%c",a[n]);
 	return 0;
 }

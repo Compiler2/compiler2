@@ -6,10 +6,10 @@ int main_bench()
 int n;
     flag=0;
     char str1[20000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-                     scanf("%d",&str1[i-1]);
+                     my_scanf("%d",&str1[i-1]);
                      if(i>=2)
                      {
                             flag=0;
@@ -23,12 +23,12 @@ int n;
                                                                        }
                                                                        if(flag==0)
                                                                        {
-                                                                                  printf(" %d",str1[i-1]);
+                                                                                  my_printf(" %d",str1[i-1]);
                                                                                   }
                                                                                   }
                                                                                   else
                                                                                   {
-                                                                                      printf("%d",str1[0]);
+                                                                                      my_printf("%d",str1[0]);
                                                                                       }
                                                                                   }
                                                                                   return 0;

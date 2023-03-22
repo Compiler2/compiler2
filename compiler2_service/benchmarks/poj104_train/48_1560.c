@@ -18,7 +18,7 @@ void work(int x,int y,char s)
 int main_bench()
 {
 	int m,n,k,i,j;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
     a[4][4]=m;
     for (k=1;k<=n;k++)
 		if (k%2==1)
@@ -45,15 +45,15 @@ int main_bench()
 		for (i=0;i<9;i++)
 		{
 			for (j=0;j<8;j++)
-				printf("%d ",b[i][j]);
-			printf("%d\n",b[i][j]);
+				my_printf("%d ",b[i][j]);
+			my_printf("%d\n",b[i][j]);
 		}
 	else
 		for (i=0;i<9;i++)
 		{
 			for (j=0;j<8;j++)
-				printf("%d ",a[i][j]);
-			printf("%d\n",a[i][j]);
+				my_printf("%d ",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 		}
 
     return 0;

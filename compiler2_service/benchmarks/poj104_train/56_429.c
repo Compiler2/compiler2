@@ -8,7 +8,7 @@ int main_bench()
 	int i,n[5];
 	
 	
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	if (num>0 && num<10)
 	{
 	for (i=0;i<1;i++)
@@ -19,7 +19,7 @@ int main_bench()
 			break;
 	}
 	
-	printf("%d\n",n[0]);
+	my_printf("%d\n",n[0]);
 	
 	return 0;
 	}
@@ -33,7 +33,7 @@ int main_bench()
 			break;
 	}
 	
-	printf("%d%d\n",n[0],n[1]);
+	my_printf("%d%d\n",n[0],n[1]);
 	
 	return 0;
 	}
@@ -47,7 +47,7 @@ int main_bench()
 			break;
 	}
 	
-	printf("%d%d%d\n",n[0],n[1],n[2]);
+	my_printf("%d%d%d\n",n[0],n[1],n[2]);
 	
 	return 0;
 	}
@@ -61,7 +61,7 @@ int main_bench()
 			break;
 	}
 	
-	printf("%d%d%d%d\n",n[0],n[1],n[2],n[3]);
+	my_printf("%d%d%d%d\n",n[0],n[1],n[2],n[3]);
 	
 	return 0;
 	}
@@ -75,7 +75,7 @@ int main_bench()
 			
 	}
 	
-	printf("%d%d%d%d%d\n",n[0],n[1],n[2],n[3],n[4]);
+	my_printf("%d%d%d%d%d\n",n[0],n[1],n[2],n[3],n[4]);
 	
 	return 0;
 	}

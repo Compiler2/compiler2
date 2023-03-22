@@ -6,7 +6,7 @@ int main_bench()
 	char s[10000], w[10000];
 	int i, j, k;
 	int next[10000];
-	scanf("%s%s", s, w);
+	my_scanf("%s%s", s, w);
 	int ls=strlen(s), lw=strlen(w);
 	
 	
@@ -39,5 +39,5 @@ int main_bench()
 		if (j>=ls)
 			break;
 	}
-	printf("%d", i-ls);
+	my_printf("%d", i-ls);
 }

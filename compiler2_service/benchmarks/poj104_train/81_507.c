@@ -5,17 +5,17 @@ int main_bench()
 int i,j,m,n,a[5][5];
 for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-scanf("%d",&a[i][j]);}
-scanf("%d %d",&m,&n);
+my_scanf("%d",&a[i][j]);}
+my_scanf("%d %d",&m,&n);
 if(jiaohuan(a,m,n))
 {for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-{printf("%d",a[i][j]);
-if(j!=4)printf(" ");}
-printf("\n");}}
+{my_printf("%d",a[i][j]);
+if(j!=4)my_printf(" ");}
+my_printf("\n");}}
 else
-printf("error");
-printf("\n");}
+my_printf("error");
+my_printf("\n");}
 
 
 int jiaohuan(int array[][5],int m,int n)

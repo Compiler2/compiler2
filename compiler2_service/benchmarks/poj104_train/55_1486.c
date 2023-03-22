@@ -20,7 +20,7 @@ int main_bench()
     long nn=0;
     int a,b,i;
     char n[500];
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     int length=strlen(n);
     int k=1;
     for(i=length-1;i>=0;i--)
@@ -37,6 +37,6 @@ int main_bench()
             j++;
     }
     while(nn>=1);
-    for(i=j-1;i>=0;i--)printf("%c",g(m[i]));
+    for(i=j-1;i>=0;i--)my_printf("%c",g(m[i]));
     
 }

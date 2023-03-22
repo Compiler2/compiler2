@@ -25,18 +25,18 @@ int prime(int n){
 int main_bench(){
     int n;
     int p=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i;
     for (i=2; i<=n; i++) {
         if (prime(i)==1){
             if (prime(i+2)==1&&i+2<=n) {
-                printf("%d %d\n",i,i+2);
+                my_printf("%d %d\n",i,i+2);
                 p=1;
             }
         }
     }
     if (p==0) {
-        printf("empty");
+        my_printf("empty");
     }
     return 0;
 }

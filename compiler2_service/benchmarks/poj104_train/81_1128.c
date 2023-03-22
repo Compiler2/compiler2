@@ -13,28 +13,28 @@ int main_bench()
 	int i,m,n,z,a[5][5],s1,s2,s3,s4,s0;
 	for(i=0;i<=4;i++)
 	{
-		scanf("%d",&a[0][i]);
+		my_scanf("%d",&a[0][i]);
 	}
 	for(i=0;i<=4;i++)
 	{
-		scanf("%d",&a[1][i]);
+		my_scanf("%d",&a[1][i]);
 	}
 	for(i=0;i<=4;i++)
 	{
-		scanf("%d",&a[2][i]);
+		my_scanf("%d",&a[2][i]);
 	}
 	for(i=0;i<=4;i++)
 	{
-		scanf("%d",&a[3][i]);
+		my_scanf("%d",&a[3][i]);
 	}
 	for(i=0;i<=4;i++)
 	{
-		scanf("%d",&a[4][i]);
+		my_scanf("%d",&a[4][i]);
 	}
-    scanf("%d",&n);
-	scanf("%d",&m);
+    my_scanf("%d",&n);
+	my_scanf("%d",&m);
 	z=f(n,m);
-	if(z==0)printf("error");
+	if(z==0)my_printf("error");
 	if(z==1)
 	{
 		s0=a[m][0];
@@ -54,29 +54,29 @@ int main_bench()
 		a[n][4]=s4;
 		for(i=0;i<=3;i++)
 		{
-		printf("%d ",a[0][i]);
+		my_printf("%d ",a[0][i]);
 		}
-		printf("%d\n",a[0][4]);
+		my_printf("%d\n",a[0][4]);
 		for(i=0;i<=3;i++)
 		{
-		printf("%d ",a[1][i]);
+		my_printf("%d ",a[1][i]);
 		}
-		printf("%d\n",a[1][4]);
+		my_printf("%d\n",a[1][4]);
 		for(i=0;i<=3;i++)
 		{
-		printf("%d ",a[2][i]);
+		my_printf("%d ",a[2][i]);
 		}
-		printf("%d\n",a[2][4]);
+		my_printf("%d\n",a[2][4]);
 		for(i=0;i<=3;i++)
 		{
-		printf("%d ",a[3][i]);
+		my_printf("%d ",a[3][i]);
 		}
-		printf("%d\n",a[3][4]);
+		my_printf("%d\n",a[3][4]);
 		for(i=0;i<=3;i++)
 		{
-		printf("%d ",a[4][i]);
+		my_printf("%d ",a[4][i]);
 		}
-		printf("%d",a[4][4]);
+		my_printf("%d",a[4][4]);
 	}
 }
 

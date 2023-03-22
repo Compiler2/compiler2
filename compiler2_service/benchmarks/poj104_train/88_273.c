@@ -10,12 +10,12 @@ int main_bench()
 	{
 		if(s[i]>='0' && s[i]<='9')
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 			k=0;
 		}
 		else if(k==0)
 		{
-			printf("\n");
+			my_printf("\n");
 			k=1;
 		}
 	}

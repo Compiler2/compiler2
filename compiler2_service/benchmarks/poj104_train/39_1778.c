@@ -13,9 +13,9 @@ struct qian
 int main_bench()
 {
 	int n,k,x,y=0,total=0,i,sum[100]={0};
-	scanf("%d",&n); 
+	my_scanf("%d",&n); 
 	for(i=0;i<n;i++)
-		scanf("%s%d%d%c%c%c%c%d",stu[i].a,&stu[i].b[0],&stu[i].c[0],&stu[i].d[0],&stu[i].d[1],&stu[i].e[0],&stu[i].e[1],&stu[i].f[0]); 
+		my_scanf("%s%d%d%c%c%c%c%d",stu[i].a,&stu[i].b[0],&stu[i].c[0],&stu[i].d[0],&stu[i].d[1],&stu[i].e[0],&stu[i].e[1],&stu[i].f[0]); 
 	for(i=0;i<n;i++)
 	{  
 		k=0;
@@ -37,5 +37,5 @@ int main_bench()
 			y=i;
 		} 
 	}
-	printf("%s\n%d\n%d\n",stu[y].a,x,total);
+	my_printf("%s\n%d\n%d\n",stu[y].a,x,total);
 }

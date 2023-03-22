@@ -42,9 +42,9 @@ int main_bench()
 		{
 			if(k==0)
 
-			printf("%s",a[k]);
+			my_printf("%s",a[k]);
 			else
-			printf(" %s",a[k]);
+			my_printf(" %s",a[k]);
 		}
 	}
 

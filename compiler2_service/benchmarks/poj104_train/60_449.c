@@ -14,15 +14,15 @@ int sushu(int n)
 int main_bench()
 {
 	int n,i,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=5;i<=n;i++)
 	{
 		if((sushu(i)>0)&&(sushu(i-2)>0))
 		{
-			printf("%d %d\n",i-2,i);
+			my_printf("%d %d\n",i-2,i);
 			k=k++;
 		}
 	}
 	if(k==0)
-		printf("empty");
+		my_printf("empty");
 }

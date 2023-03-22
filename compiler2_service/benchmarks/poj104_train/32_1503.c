@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,k,a,b,carry;
 	char str1[100],str2[100],str3[100]={'\0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		
@@ -13,8 +13,8 @@ int main_bench()
 		{
 			str3[j]='\0';
 		}
-		scanf("%s",&str1);
-		scanf("%s",&str2);
+		my_scanf("%s",&str1);
+		my_scanf("%s",&str2);
 	
 	    a=strlen(str1);
 	    b=strlen(str2);
@@ -48,9 +48,9 @@ int main_bench()
 				str3[j]=str3[j+1];
 			}
 		}
-		printf("%s",str3);
+		my_printf("%s",str3);
 		if(i!=n-1)
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

@@ -6,8 +6,8 @@ char a[200],b[200];
 int main_bench()
 {
 	gets(w);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int p=0,q=0,r;
 	for(r=0;w[r]!='\0';r++)
 	{
@@ -33,10 +33,10 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s",m[0]);
+	my_printf("%s",m[0]);
 	for(i=1;i<p+1;i++)
 	{
-		printf(" %s",m[i]);
+		my_printf(" %s",m[i]);
 	}
 
 	return 0;

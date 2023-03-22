@@ -40,7 +40,7 @@ int main_bench()
 	int i,j,k,n;
 	int minor;
 	int sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int hang,lie;
 	for(i=1;i<=n;i++)
 	{	
@@ -53,7 +53,7 @@ int main_bench()
 		{
 			for(k=1;k<=n;k++)
 			{
-				scanf("%d",p+101*(j-1)+k-1);
+				my_scanf("%d",p+101*(j-1)+k-1);
 			}
 		}
 		
@@ -101,7 +101,7 @@ int main_bench()
 			}
 			lie--;
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

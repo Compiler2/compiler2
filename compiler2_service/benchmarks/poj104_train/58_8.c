@@ -4,7 +4,7 @@ int main_bench()
 {
 	char *p[100];
 	int i,j,n,m;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
 		*(p+i)=(char *)malloc(80*sizeof(char));
 	for (i=0;i<n;i++)
@@ -25,7 +25,7 @@ int main_bench()
 				}
 			}
 		}
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 	}
 	return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int d1,d2,sum=0,n,a[100][100],i,j,x1,y1,x2,y2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 		for(i=0;i<n;i++)
 		{
@@ -33,5 +33,5 @@ int main_bench()
 		}
 		d1=x2-x1+1;d2=y2-y1+1;
 		sum=(d1-2)*(d2-2);
-		printf("%d",sum);
+		my_printf("%d",sum);
 }

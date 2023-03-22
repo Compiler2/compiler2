@@ -12,7 +12,7 @@ int main_bench()
 		i++;
 		count++;
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	while(s[i]!='\0'&&s[i]!='\0')
 	{
 		if(s[i]!=' ')
@@ -23,7 +23,7 @@ int main_bench()
 			   count++;
 			   i++;
 			}
-			printf(",%d",count);
+			my_printf(",%d",count);
 		}
 		else
 		{

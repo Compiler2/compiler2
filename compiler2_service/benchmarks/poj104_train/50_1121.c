@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,j,m,sum[13],da[13]={0},x;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=12;i++)
 	{
 		if(i==1||i==3||i==5||i==7||i==8||i==10)
@@ -21,7 +21,7 @@ int main_bench()
 	for(i=1;i<=12;i++)
 	{
 		x=m+da[i]%7;
-		if(x==5||x==12)printf("%d\n",i);
+		if(x==5||x==12)my_printf("%d\n",i);
 	}
 }
 

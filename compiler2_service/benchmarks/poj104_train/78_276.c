@@ -13,13 +13,13 @@ int main_bench()
 						for(i=50;i>0;i=i-10)
 						{
 							if(i==z)
-							printf("z %d\n",z);
+							my_printf("z %d\n",z);
 							if(i==q)
-							printf("q %d\n",q);
+							my_printf("q %d\n",q);
 							if(i==s)
-							printf("s %d\n",s);
+							my_printf("s %d\n",s);
 							if(i==l)
-							printf("l %d\n",l);
+							my_printf("l %d\n",l);
 						}
 
 					

@@ -21,13 +21,13 @@ int main_bench()
 				}
 			}
 			if(b==0){
-				printf("%c\n",a[j]);
+				my_printf("%c\n",a[j]);
 				c=1;
 				break;
 			}
 		}
 		if(c==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 

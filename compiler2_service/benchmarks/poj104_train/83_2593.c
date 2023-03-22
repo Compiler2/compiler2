@@ -4,14 +4,14 @@ int main_bench()
 {
       int i,b,n;
       float GPA,e;
-      scanf("%d ",&n);
+      my_scanf("%d ",&n);
       float sz[n],xy[n],mm[n];
       for(i=0;i<n;i++){
-      scanf("%f",&sz[i]);
+      my_scanf("%f",&sz[i]);
       e+=sz[i];
       }
       for(i=0;i<n;i++){
-      scanf("%f",&xy[i]);
+      my_scanf("%f",&xy[i]);
       }
       for(i=0;i<n;i++){
       if(xy[i]>=90)
@@ -46,6 +46,6 @@ int main_bench()
       for(i=0;i<n;i++){
       GPA+=sz[i]*mm[i]/e;
       }
-      printf("%.2f",GPA);
+      my_printf("%.2f",GPA);
       return 0;
 }

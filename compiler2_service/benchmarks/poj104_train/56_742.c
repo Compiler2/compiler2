@@ -4,7 +4,7 @@
 int main_bench() 
 { 
    int x,a,b,c,d,e,m=0;
-   scanf("%d",&x);
+   my_scanf("%d",&x);
    a=x%10;m=10*m+a;
    b=(x/10)%10;m=10*m+b;
    c=(x/100)%10;m=10*m+c;
@@ -17,5 +17,5 @@ int main_bench()
    if(e==0,d==0,c==0) m=m/10;
    else m=m;
    if(e==0,d==0,c==0,b==0) m=m/10;
-   else m=m;printf("%d",m);
+   else m=m;my_printf("%d",m);
 }

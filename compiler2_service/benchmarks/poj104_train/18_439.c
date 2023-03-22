@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n,i,b,j,k,a,su[100][100],result;
-scanf("%d",&n);
+my_scanf("%d",&n);
 b=n;
 for(i=0;i<n;i++){
 	result=0;
 	for(j=0;j<n;j++)
 		for(k=0;k<n;k++)
-			scanf("%d",&su[j][k]);
+			my_scanf("%d",&su[j][k]);
 		
 		while(n>1){
 for(j=0;j<n;j++){
@@ -43,7 +43,7 @@ su[j][k]=su[j+1][k+1];
 }}
 n--;
 }
-printf("%d\n",result);
+my_printf("%d\n",result);
 n=b;
 }
 return 0;

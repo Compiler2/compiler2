@@ -9,10 +9,10 @@ int main_bench()
 	int m;
 	int a[100];
 	
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i = 0; i < m; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 	for(i = 0; i < m; i++)
 	{
@@ -20,13 +20,13 @@ int main_bench()
 		if(a[i] == 1)
 		{
 			sum = 2.000;
-			printf("%.3lf\n", sum);
+			my_printf("%.3lf\n", sum);
 		}
 		else
 		{
 			for(j = 1; j <= a[i]; j++)
 				sum += (feibonaqi(j+1)*1.0)/feibonaqi(j);
-			printf("%.3lf\n", sum);
+			my_printf("%.3lf\n", sum);
 		}
 	}
 	

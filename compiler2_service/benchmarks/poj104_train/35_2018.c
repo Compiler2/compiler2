@@ -6,7 +6,7 @@ int main_bench()
 	int flag;
 	flag=0;
 	int hang,lie;
-	scanf("%d,%d",&hang,&lie);
+	my_scanf("%d,%d",&hang,&lie);
 
 	int i,j;
 	int shuzu[100][100]={0};
@@ -14,7 +14,7 @@ int main_bench()
 	{
 		for(j=0;j<lie;j++)
 		{
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
 
@@ -63,7 +63,7 @@ int main_bench()
 		{
 			if(tiaoxini[i][0]==tiaoxini[j][0]&&tiaoxini[i][1]==tiaoxini[j][1])
 			{
-				printf("%d+%d",tiaoxini[i][0],tiaoxini[i][1]);
+				my_printf("%d+%d",tiaoxini[i][0],tiaoxini[i][1]);
 				flag++;
 				break;
 			}
@@ -74,7 +74,7 @@ int main_bench()
 
 	if(flag==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 
 	return 0;

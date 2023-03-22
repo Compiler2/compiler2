@@ -39,5 +39,5 @@ int main_bench()
 			min_len = strlen(word[i]);
 		}
 	}
-	printf("%s\n%s\n", word[max_index], word[min_index]);
+	my_printf("%s\n%s\n", word[max_index], word[min_index]);
 }

@@ -5,7 +5,7 @@ main_bench()
      int a,b,c,d,i,j;
      char f[90];
      char g[20];
-     scanf("%d",&a);
+     my_scanf("%d",&a);
      gets(g);
      for(i=0;i<a;i++)
      {
@@ -20,13 +20,13 @@ main_bench()
                                      break;
                                      else
                                      {
-                                          printf("0\n");
+                                          my_printf("0\n");
                                           d=1;
                                           break;
                                      }
                                      }
                      if (d==0)                    
-                     printf("1\n");            
+                     my_printf("1\n");            
                      }
                      else if ((f[0]>='a' && f[0]<='z')|| (f[0]>='A' && f[0] <='Z'))
                      {
@@ -38,16 +38,16 @@ main_bench()
                                      break;
                                      else
                                      {
-                                          printf("0\n");
+                                          my_printf("0\n");
                                           d=1;
                                           break;
                                      }
                                      }
                      if (d==0)                    
-                     printf("1\n");            
+                     my_printf("1\n");            
                      }
                      else 
-                     printf("0\n");
+                     my_printf("0\n");
      }
      getchar();
      getchar();

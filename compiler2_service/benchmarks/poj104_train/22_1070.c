@@ -34,8 +34,8 @@ int main_bench()
 			}
 	}
 	if(a[1]==0)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",a[1]);
+		my_printf("%d",a[1]);
 	return 0;
 }

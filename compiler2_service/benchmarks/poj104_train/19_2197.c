@@ -28,12 +28,12 @@ int main_bench(){
 	}
 	if(flag==1){
 	    for(i=0;i<k;i++){
-		    printf("%s ",a[i]);
+		    my_printf("%s ",a[i]);
 		}
-	    printf("%s",a[k]);
+	    my_printf("%s",a[k]);
 	}
 	else if(flag==0){
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	return 0;
 }

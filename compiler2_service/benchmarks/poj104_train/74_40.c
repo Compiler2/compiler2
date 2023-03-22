@@ -31,16 +31,16 @@ int check2(int x)
 }
 int main_bench()
 {	int m,n,i,j,flag=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 		if(check1(i)==1&&check2(i)==1)
-		{printf("%d",i);
+		{my_printf("%d",i);
 		flag=1;
 		break;
 		}
 	for(j=i+1;j<=n;j++)
 		if(check1(j)==1&&check2(j)==1)
-		printf(",%d",j);
-	if(flag==0)printf("no");
-	printf("\n");
+		my_printf(",%d",j);
+	if(flag==0)my_printf("no");
+	my_printf("\n");
 }

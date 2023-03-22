@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a1,b1,c1,d1,a2,b2,c2,d2,r1=0,i,d;
-	scanf("%d%d%d",&a1,&b1,&c1);
-	scanf("%d%d%d",&a2,&b2,&c2);
+	my_scanf("%d%d%d",&a1,&b1,&c1);
+	my_scanf("%d%d%d",&a2,&b2,&c2);
 	for(i=a1+1;i<=a2-1;i++)
 	{
 		if((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
@@ -66,5 +66,5 @@ int main_bench()
 		d=d2-d1+r1+365*(a2-a1);
 	else
 		d=d2-d1+r1;
-	printf("%d",d);
+	my_printf("%d",d);
 }

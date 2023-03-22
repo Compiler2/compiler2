@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[1000],b[1000][1000];
 	int n,i,j,len[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(a);
 	for(i=0;i<n;i++)
 	{
@@ -35,9 +35,9 @@ int main_bench()
 	{
 		for(j=0;j<len[i];j++)
 		{
-			printf("%c",b[i][j]);
+			my_printf("%c",b[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

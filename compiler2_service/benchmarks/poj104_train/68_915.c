@@ -4,7 +4,7 @@ int main_bench()
 {
     int p[50001];
     int n,i,j,count=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(i=1;i<=n;i++)
     {
@@ -25,7 +25,7 @@ int main_bench()
     {
                       for (j=2;j<=n/2;j++)
                       if (p[j]&&p[i-j])
-                      {printf("%d=%d+%d\n",i,j,i-j);break;}
+                      {my_printf("%d=%d+%d\n",i,j,i-j);break;}
     }
     
 }

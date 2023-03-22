@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a[300]={0},n,i=1,temp,m,j;
-	scanf("%d",&a[0]);
-	while(scanf(",%d",&m))
+	my_scanf("%d",&a[0]);
+	while(my_scanf(",%d",&m))
 	{
 		a[i]=m;
 		i++;
@@ -26,10 +26,10 @@ int main_bench()
 	{
 		if(a[i]!=a[0]&&a[i]!=0)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			break;
 		}
 	}
 	if(i>=n)
-		printf("No");
+		my_printf("No");
 }

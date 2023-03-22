@@ -3,9 +3,9 @@
 int main_bench()
 {	int n,i,num[300],s=0,u=0,m;
 	float aver,t[300],max,sum=0,min;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d,",&num[i]);
+		my_scanf("%d,",&num[i]);
 	for(i=0;i<n;i++)
 		sum=sum+(float)(num[i]);
 	aver=sum/(float)(n);
@@ -29,11 +29,11 @@ int main_bench()
 	}
 	
 	}if(t[s]+t[u]<0)
-		printf("%d",num[u]);
+		my_printf("%d",num[u]);
 	else if(t[s]+t[u]>0)
-		printf("%d",num[s]);
+		my_printf("%d",num[s]);
 	else
-		printf("%d,%d",num[s],num[u]);
+		my_printf("%d,%d",num[s],num[u]);
 
 
 }

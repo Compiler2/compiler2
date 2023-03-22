@@ -22,8 +22,8 @@ void f(int number,int length)
 	if(length <= 0 )
 	{
 		for(j = i ; j <= i + l - 1 ; j ++)
-			printf("%c", str[j])  ;
-			printf("\n");
+			my_printf("%c", str[j])  ;
+			my_printf("\n");
 	}
 	else if( str[number] == str[number + length - 1] )
 		f(number + 1 , length - 2);

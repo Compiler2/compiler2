@@ -3,15 +3,15 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[1000][1000];
     int i;
     for(i=0;i<n;i++){
                      int j;
                      for(j=0;j<n;j++){
-                                      scanf("%d",&sz[i][j]);
+                                      my_scanf("%d",&sz[i][j]);
                                       }
-                      printf("\n");               
+                      my_printf("\n");               
                      }
     int k;
     int sum=0;
@@ -35,6 +35,6 @@ int main_bench()
                      }
                                       
     int jieguo=(sum-2)*(sum1-2);
-    printf("%d",jieguo);
+    my_printf("%d",jieguo);
     return 0;
 }

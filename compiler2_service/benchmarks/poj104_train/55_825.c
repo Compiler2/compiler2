@@ -7,7 +7,7 @@ int main_bench()
     int q[1000]; 
     int p[1000];
     char m[1000];
-    scanf("%d %s %d",&a,s,&b);
+    my_scanf("%d %s %d",&a,s,&b);
     for(i=0;s[i]!='\0';i++)
     n=n+1;
     for(i=0;i<=n-1;i++)
@@ -29,7 +29,7 @@ int main_bench()
     sum=sum*a;            
     }
     if(t==0)
-    printf("0");
+    my_printf("0");
     q[0]=t;
     for(i=0;q[i]!=0;i++)
        q[i+1]=q[i]/b;      
@@ -48,7 +48,7 @@ int main_bench()
     for(i=0;i<=n-1;i++)
     m[i]=p[n-i-1];
     m[n]='\0';
-    printf("%s",m);
+    my_printf("%s",m);
     getchar();
     getchar();
 }

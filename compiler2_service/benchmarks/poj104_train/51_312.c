@@ -5,7 +5,7 @@ int main_bench()
 	char a[501],b[500][5];
 
 	int i,n,k=0,m,j,count[500]={0},mark[500]={0},max=1;
-	scanf("%d\n",&m);
+	my_scanf("%d\n",&m);
 	gets(a);
 	n=strlen(a);
 	for(i=0;i<n-m+1;i++)
@@ -41,13 +41,13 @@ int main_bench()
 		}
 	}
 	if(max==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d",max);
+		my_printf("%d",max);
 		for(i=0;i<k;i++)
 		{
-			printf("\n%s",b[mark[i]]);
+			my_printf("\n%s",b[mark[i]]);
 		}
 	}
 

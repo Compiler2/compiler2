@@ -11,17 +11,17 @@ int main_bench() {
 	int i;
 	for(i = 0; i < len; i++) {
 		if(ch[i] != ' ') {
-			printf("%c" , ch[i]);
+			my_printf("%c" , ch[i]);
 		} else {
 			if(ch[i-1] == ' ') {
 
 			} else {
-				printf(" ");
+				my_printf(" ");
 			}
 		}
 	}
 
-	printf("\n");
+	my_printf("\n");
 
 
 	return 0;

@@ -35,12 +35,12 @@ int main_bench()
 	}
 	for(t=j-1;t>=0;t--)
 	{
-		printf("%s",b[t]);
+		my_printf("%s",b[t]);
 		if(t!=0)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

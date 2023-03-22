@@ -29,16 +29,16 @@ int main_bench()
 	}
 	while(words[maxstart]!='\0'&&words[maxstart]!=' ')
 	{
-		printf("%c",words[maxstart]);
+		my_printf("%c",words[maxstart]);
 		maxstart++;
 	}
-	printf("\n");
+	my_printf("\n");
 	while(words[minstart]!='\0'&&words[minstart]!=' ')
 	{
-		printf("%c",words[minstart]);
+		my_printf("%c",words[minstart]);
 		minstart++;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

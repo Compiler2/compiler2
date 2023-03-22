@@ -35,20 +35,20 @@ int main_bench()
 
                     if(a==1&&e==1)
                     {
-                        if(b==2&&a!=5&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(c==2&&b!=2&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&a!=5&&c!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&a!=5&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(c==2&&b!=2&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&a!=5&&c!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(b==1&&b==2)
                     {
-                        if(e!=1&&a!=5&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(e!=1&&a!=5&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(c==1&&a==5)
                     {
                         
-                        if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&e!=1&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(a==2&&e==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                 }
             }
@@ -86,20 +86,20 @@ int main_bench()
 
                     if(a==1&&e==1)
                     {
-                        if(b==2&&a!=5&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(c==2&&b!=2&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&a!=5&&c!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&a!=5&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(c==2&&b!=2&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&a!=5&&c!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(b==1&&b==2)
                     {
-                        if(e!=1&&a!=5&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(e!=1&&a!=5&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(c==1&&a==5)
                     {
                         
-                        if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&e!=1&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(a==2&&e==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                 }
             }
@@ -136,20 +136,20 @@ int main_bench()
 
                     if(a==1&&e==1)
                     {
-                        if(b==2&&a!=5&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(c==2&&b!=2&&c==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&a!=5&&c!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&a!=5&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(c==2&&b!=2&&c==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&a!=5&&c!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(b==1&&b==2)
                     {
-                        if(e!=1&&a!=5&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(e!=1&&a!=5&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                     if(c==1&&a==5)
                     {
                         
-                        if(b==2&&e!=1&&c==1&&d!=1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(a==2&&e==1) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
-                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(b==2&&e!=1&&c==1&&d!=1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(a==2&&e==1) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
+                        if(d==2&&c==1&&b!=2&&e!=1&&a!=5) {my_printf("%d %d %d %d %d",a,b,c,d,e);o=1;break;}
                     }
                 }
             }

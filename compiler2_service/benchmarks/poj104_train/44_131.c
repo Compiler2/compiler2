@@ -7,9 +7,9 @@ int main_bench()
 	int s[6]={0},z[6]={0},i;
     for (i=0;i<6;i++)
 	{
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		z[i]=reverse (s[i]);
-	    printf("%d\n",z[i]);
+	    my_printf("%d\n",z[i]);
 	}
 return 0;
 }

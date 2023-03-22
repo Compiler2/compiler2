@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char zfc[1002]={0},t;
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	int i,sum=0,n=strlen(zfc),m='A'-'a';
 	for(i=0;i<n;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 	{
 		if(zfc[i]!=t)
 		{
-			printf("(%c,%d)",t,sum);
+			my_printf("(%c,%d)",t,sum);
 			sum=1;
 			t=zfc[i];
 		}

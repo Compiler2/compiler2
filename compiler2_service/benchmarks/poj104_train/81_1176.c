@@ -6,24 +6,24 @@ int n,m;
 int sw(int csz[5][5],int *x,int *y);
 for (int i=0;i<5;i++){
     for (int j=0;j<5;j++){
-        scanf("%d",&sz[i][j]);
+        my_scanf("%d",&sz[i][j]);
     }    
 }
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 if (sw(sz,&n,&m)==1){
     for (int i=0;i<5;i++){
         for (int j=0;j<5;j++){
            if (j==4){
-                  printf("%d\n",sz[i][j]);
+                  my_printf("%d\n",sz[i][j]);
            }
            else {
-                  printf("%d ",sz[i][j]);
+                  my_printf("%d ",sz[i][j]);
            }           
         }    
      }
 }
 else {
-      printf("error");
+      my_printf("error");
 }
 return 0;    
 }

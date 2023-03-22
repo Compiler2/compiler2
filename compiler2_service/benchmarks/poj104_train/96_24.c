@@ -4,17 +4,17 @@ main_bench()
 {
    char c[100];
    int i,len,flag;
-   scanf("%s",c);
+   my_scanf("%s",c);
    len=strlen(c);
    int a,b;
    b=0;
-   if(len==1) printf("0\n%d",c[0]-'0');
+   if(len==1) my_printf("0\n%d",c[0]-'0');
    else
    {
 	   flag=(c[0]-'0')*10+c[1]-'0';
 	   if(len==2&&flag<13)
 	   {
-	   printf("0\n%d",flag);
+	   my_printf("0\n%d",flag);
 	   }
    else
    {
@@ -35,16 +35,16 @@ main_bench()
    if(flag>=13)
    {
 	   for(i=1;i<len;i++)
-		   printf("%c",c[i]);
-	   printf("\n%d",b);
+		   my_printf("%c",c[i]);
+	   my_printf("\n%d",b);
    }
    else
    {
 	   for(i=2;i<len;i++)
-		   printf("%c",c[i]);
-	    printf("\n%d",b);
+		   my_printf("%c",c[i]);
+	    my_printf("\n%d",b);
    }
-   printf("\n");
+   my_printf("\n");
    }
 }
 }

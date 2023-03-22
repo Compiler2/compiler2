@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int a,b,c,n,i,e;
-	scanf("%d",&n);
-	scanf("%d",&b);
-	scanf("%d",&c);
+	my_scanf("%d",&n);
+	my_scanf("%d",&b);
+	my_scanf("%d",&c);
 	if(b>c)
 	{
 		e=b;
@@ -16,7 +16,7 @@ int main_bench()
 
 	for(i=3;i<=n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 
 		if(a>c)
 		{
@@ -35,6 +35,6 @@ int main_bench()
 
 	}
 
-	printf("%d\n%d\n",c,b);
+	my_printf("%d\n%d\n",c,b);
 	return 0;
 }

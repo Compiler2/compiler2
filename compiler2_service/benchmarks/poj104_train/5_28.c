@@ -2,24 +2,24 @@
 
 int main_bench(){
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char zfc[500],sz[500];
-	scanf("%s%s",zfc,sz);
+	my_scanf("%s%s",zfc,sz);
 	int a=strlen(zfc);
 	int b=strlen(sz);
 	int m;
-    if(a!=b){printf("error");}
+    if(a!=b){my_printf("error");}
 	else{
 		m=a;
 		int k=0;
 		int y;
 		for(y=0;y<m;y++){
 			if(zfc[y]!='A'&&zfc[y]!='T'&&zfc[y]!='C'&&zfc[y]!='G'&&zfc[y]!='\0'){
-				printf("error");
+				my_printf("error");
 			k=1;
 			break;}
 			if(sz[y]!='A'&&sz[y]!='T'&&sz[y]!='C'&&sz[y]!='G'&&zfc[y]!='\0'){
-				printf("error");
+				my_printf("error");
 			k=1;
 			break;}
 		}
@@ -32,8 +32,8 @@ int main_bench(){
 		}
 	}
 	double s=c*1.0/m;
-	if(s>n){printf("yes");}
-	else{printf("no");}
+	if(s>n){my_printf("yes");}
+	else{my_printf("no");}
 	}
 		}
 	return 0;

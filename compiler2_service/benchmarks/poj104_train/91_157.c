@@ -22,7 +22,7 @@ int main_bench()
 	}
 	b[i]=hh(s[0],s[i]);
 	for(i=0;b[i]!=0;i++)
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	return 0;
 	
 }

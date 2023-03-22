@@ -6,10 +6,10 @@ int main_bench()
 	int result[1000];
 	int n,flag = 0;
 	int k,i,index = 0,j;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i = 0; i < k; i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j = 0; j < index; j++)
 		{
 			if(result[j] == n)
@@ -27,9 +27,9 @@ int main_bench()
 	}
 	for(i = 0; i < index - 1; i++)
 	{
-		printf("%d,",result[i]);
+		my_printf("%d,",result[i]);
 	}
-	printf("%d",result[index - 1]);
+	my_printf("%d",result[index - 1]);
 	return 0;
 }
 

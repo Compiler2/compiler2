@@ -7,10 +7,10 @@ int main_bench()
              for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
           p=&a[0][0];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	if((m>=0)&&(m<=4)&&(n>=0)&&(n<=4))
 	{
        for(i=0;i<5;i++)
@@ -20,8 +20,8 @@ int main_bench()
 		*(p+5*n+i)=t;
 	   }
 	   for(i=0;i<5;i++)
-		printf("%d %d %d %d %d\n",*(a[i]+0),*(a[i]+1),*(a[i]+2),*(a[i]+3),*(a[i]+4));
+		my_printf("%d %d %d %d %d\n",*(a[i]+0),*(a[i]+1),*(a[i]+2),*(a[i]+3),*(a[i]+4));
 	}
 	else
-		printf("error");
+		my_printf("error");
 }

@@ -4,25 +4,25 @@ int main_bench()
 {
    int n,i;
    double a[10000],b[10000],c[10000];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
 	{
-     scanf("%lf %lf",&a[i],&b[i]);
+     my_scanf("%lf %lf",&a[i],&b[i]);
      c[i]=b[i]/a[i];
     }
     for(i=1;i<n;i++)
 	{
      if((c[i]-c[0]<=0.05)&&(c[i]-c[0]>=-0.05)) 
 	 {
-        printf("same\n");
+        my_printf("same\n");
      }
      if(c[i]-c[0]>0.05)
 	 {
-        printf("better\n");
+        my_printf("better\n");
      }
      if(c[i]-c[0]<-0.05)
 	 {
-        printf("worse\n");
+        my_printf("worse\n");
      }
     }
  return 0;

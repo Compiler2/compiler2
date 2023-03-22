@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[10000];
 	int b,i,c;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	b=strlen(a);
 	i=0;
 	if(b%2==0)
@@ -27,6 +27,6 @@ int main_bench()
 				i++;
 			}
 	}
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 	return 0;
 }

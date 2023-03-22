@@ -30,7 +30,7 @@ int main_bench()
 				        break;}
 	}
 		for(i=0;i<k;i++)
-			printf("%d %d\n",bag[i].g,bag[i].b);
+			my_printf("%d %d\n",bag[i].g,bag[i].b);
 
 		return 0;
 	}

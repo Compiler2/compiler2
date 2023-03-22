@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int i,j,a[100][100]={{0},{0}},s=0,b,t=0,r=0,c=0,R,rmin=0,C,cmin=0;
-	scanf("%d%d",&R,&C);
+	my_scanf("%d%d",&R,&C);
 	for(i=0;i<R;i++)
 	{
 		for(j=0;j<C;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			t=t+1;
 		}
 	}
@@ -16,7 +16,7 @@ int main_bench()
 	{
 		for(c=cmin;c<C;c++)
 		{
-			printf("%d\n",a[r][c]);
+			my_printf("%d\n",a[r][c]);
 			s=s+1;
 			if(s==t)
 				return 0;
@@ -26,7 +26,7 @@ int main_bench()
 		rmin+=1;
 		for(r=rmin;r<R;r++)
 		{
-			printf("%d\n",a[r][c]);
+			my_printf("%d\n",a[r][c]);
 			s=s+1;	
 			if(s==t)
 				return 0;
@@ -35,7 +35,7 @@ int main_bench()
 		r-=1;
 		for(c=C-1;c>=cmin;c--)
 		{
-			printf("%d\n",a[r][c]);
+			my_printf("%d\n",a[r][c]);
 			s=s+1;	
 			if(s==t)
 				return 0;
@@ -43,7 +43,7 @@ int main_bench()
 		c+=1;
 		for(r=R-1;r>=rmin;r--)
 		{
-			printf("%d\n",a[r][c]);
+			my_printf("%d\n",a[r][c]);
 			s=s+1;		
 			if(s==t)
 				return 0;

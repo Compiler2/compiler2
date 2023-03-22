@@ -5,14 +5,14 @@
 int main_bench()
 {
     int m,n,i,j,t,s;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     s=0;
     for (i=1;i<=10;i++)
     {
         t=n;
         for(j=1;j<=10;j++)
         {
-                          if (m==t) {printf("%d",m);s=2;break;}
+                          if (m==t) {my_printf("%d",m);s=2;break;}
                           t=t/2; 
                           
         }

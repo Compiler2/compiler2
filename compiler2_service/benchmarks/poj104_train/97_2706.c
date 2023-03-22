@@ -6,7 +6,7 @@ int main_bench()
 
 int a,n100=0,n50=0,n20=0,n10=0,n5=0,n1=0;
 
-scanf("%d", &a);
+my_scanf("%d", &a);
 
 while(a/100>0)
 {
@@ -40,7 +40,7 @@ while(a/5>0)
 
 n1=a;
 
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",n100,n50,n20,n10,n5,n1);
 
 return 0;
 }

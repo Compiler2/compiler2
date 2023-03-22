@@ -7,10 +7,10 @@ int main_bench()
 	int i,j=0;
 	int sum[100]={0};
 	int a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90)
 			c[i]=1;
 	}
@@ -29,7 +29,7 @@ int main_bench()
 	}
 	for(i=0;i<=j;i++)
 		if(max<sum[i])max=sum[i];
-	printf("%d",max);
+	my_printf("%d",max);
 
 		
 

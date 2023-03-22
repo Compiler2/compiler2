@@ -3,12 +3,12 @@
 int main_bench()
 {
    int h,z,i,sz[100][100],k;
-   scanf("%d %d",&h,&z);
+   my_scanf("%d %d",&h,&z);
    for(i=0;i<h;i++)
    {
        for(k=0;k<z;k++)
        {
-            scanf("%d",&sz[i][k]);
+            my_scanf("%d",&sz[i][k]);
        }
    }
    for(i=0;i<=h+z-2;i++)
@@ -21,7 +21,7 @@ int main_bench()
           } 
           else
           {                                
-              printf("%d\n",sz[k][i-k]);
+              my_printf("%d\n",sz[k][i-k]);
           }
        }                
    }

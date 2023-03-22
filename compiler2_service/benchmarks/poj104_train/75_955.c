@@ -4,7 +4,7 @@ int main_bench()
 {
     int i=0,j,k,a[1000][2],b[1002]={0},l,m=0,n=0,max=0;
 	char c[2][5000];
-	scanf("%s%s",c[0],c[1]);a[0][0]=0;a[0][1]=0;
+	my_scanf("%s%s",c[0],c[1]);a[0][0]=0;a[0][1]=0;
 	for(i=0;i<strlen(c[0]);i++)
 	{
 		
@@ -24,7 +24,7 @@ int main_bench()
 		}
 		else{a[n][1]=a[n][1]*10+(c[1][i]-48);}
 	}
-	printf("%d ",m+1);
+	my_printf("%d ",m+1);
 	for(i=0;i<=m;i++)
 	{
 		for(j=a[i][0];j<a[i][1];j++)
@@ -36,5 +36,5 @@ int main_bench()
 	{
 		if(b[i]>max)max=b[i];
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 }

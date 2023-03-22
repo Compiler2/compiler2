@@ -4,14 +4,14 @@ int main_bench(){
 	int n,m,k,i,j,mid,judge,timer,l[100],r[100],stop;
 	mid=0;
 	judge=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0){
 			r[k]=60;
 		}
 		for(i=0;i<m;i++){
-			scanf("%d",&l[i]);
+			my_scanf("%d",&l[i]);
 		}
 		l[m]=60-l[m-1];
 		for(i=m-1;i>0;i--){
@@ -47,11 +47,11 @@ int main_bench(){
 	}
 	for(k=0;k<n;k++){
 		if(k<n-1){
-			printf("%d\n",r[k]);
+			my_printf("%d\n",r[k]);
 		}else{
-			printf("%d",r[k]);
+			my_printf("%d",r[k]);
 		}
 	}
-	scanf("%d",&stop);
+	my_scanf("%d",&stop);
 	return 0;
 }

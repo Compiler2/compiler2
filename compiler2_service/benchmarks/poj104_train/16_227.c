@@ -13,7 +13,7 @@ int main_bench()
 	int i=0;
 	int t=0;
 	int n=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	if(N!=0)
 	{while(N%(1*e(i))!=N)
 		{
@@ -22,10 +22,10 @@ int main_bench()
 		}
 	    while(t<=i-1)
 		{
-		    printf("%d",a[t]);
+		    my_printf("%d",a[t]);
 		    t++;
 	}}
 	else
-		printf("0\n");
+		my_printf("0\n");
 	return 0;
 }

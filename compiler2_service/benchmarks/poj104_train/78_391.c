@@ -47,7 +47,7 @@ int main_bench()
 								m3=a[i];n3=b[i];a[i]=0;break;
 							}
 						}
-						printf("%c %d\n%c %d\n%c %d\n%c %d\n",n0,m0,n1,m1,n2,m2,n3,m3);
+						my_printf("%c %d\n%c %d\n%c %d\n%c %d\n",n0,m0,n1,m1,n2,m2,n3,m3);
 					}
 				}
 			}

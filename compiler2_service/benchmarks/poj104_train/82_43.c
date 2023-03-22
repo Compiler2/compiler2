@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,j,i,max,f[100],g[100],k[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&f[i],&g[i]);
+		my_scanf("%d %d",&f[i],&g[i]);
 	}
 	j=0;
 	max=0;
@@ -30,6 +30,6 @@ int main_bench()
 			max=i;
 		}
 	}
-	printf("%d\n",k[max]);
+	my_printf("%d\n",k[max]);
 	return 0;
 }

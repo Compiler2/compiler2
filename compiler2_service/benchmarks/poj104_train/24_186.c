@@ -6,10 +6,10 @@ int main_bench()
 	char str[50][20],strmax[20],strmin[20],z;
 	for(i=0;;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 		a[i]=strlen(str[i]);
 		num++;
-		scanf("%c",&z);
+		my_scanf("%c",&z);
 		if(z=='\n') break;
 	}
 	max=a[0];
@@ -29,5 +29,5 @@ int main_bench()
 			strcpy(strmin,str[i]);
 		}
 	}
-	printf("%s\n%s",strmax,strmin);
+	my_printf("%s\n%s",strmax,strmin);
 }

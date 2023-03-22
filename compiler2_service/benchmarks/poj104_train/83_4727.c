@@ -3,13 +3,13 @@
 int main_bench(){
 	int a[1000],b[1000],i,j,n,s1=0;
 	double s=0,c[1000]={0},sum,s2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c[i]=a[i];
 		s2+=c[i];
 	}for(i=0;i<n;i++){
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(b[i]>=90&&b[i]<=100){
@@ -35,6 +35,6 @@ int main_bench(){
 		}
 	}
 	sum=s/s2*1.00;
-	printf("%.2lf",sum);
+	my_printf("%.2lf",sum);
 	return 0;
 }

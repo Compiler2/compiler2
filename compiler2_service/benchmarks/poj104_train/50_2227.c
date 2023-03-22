@@ -11,7 +11,7 @@ int check(int a)
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int m[12];
     int i;
     m[0]=12%7+n;
@@ -34,5 +34,5 @@ int main_bench()
     }
     for(i=1;i<=12;i++)
    if(m[i-1]==5)
-    printf("%d\n",i);
+    my_printf("%d\n",i);
 }

@@ -21,10 +21,10 @@ int compare(int s, int a[20000], int n)
 int main_bench()
 {
 	int n, a[20000], i, j, w=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 		if(compare(a[i], a, i)==1)
 			a[i]=-1;
 		else
@@ -37,12 +37,12 @@ int main_bench()
 		else
 		{
 			if(w==0)			
-				printf("%d", a[i]);
+				my_printf("%d", a[i]);
 			else
-				printf(" %d", a[i]);
+				my_printf(" %d", a[i]);
 			w++;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

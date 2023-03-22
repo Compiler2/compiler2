@@ -3,10 +3,10 @@
 main_bench()
 {
 	int a[300],i=0,j,first,second,t=0,mid;
-	scanf("%d",&a[i++]);
-	while(scanf(",%d",&a[i++])==1);
+	my_scanf("%d",&a[i++]);
+	while(my_scanf(",%d",&a[i++])==1);
 	if(i==2)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		first=a[0];
@@ -20,7 +20,7 @@ main_bench()
 			}
 		}
 		if(t==0)
-			printf("No");
+			my_printf("No");
 		else
 		{
 			if(first<second)
@@ -37,7 +37,7 @@ main_bench()
 					second=first;
 					first=a[j];
 				}
-			printf("%d",second);
+			my_printf("%d",second);
 		}
 	}
 }

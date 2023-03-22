@@ -4,9 +4,9 @@ int main_bench()
 {
  int n,k,i,m,x,y=0,p;
  int sz[1000],s[1000],z[1000000];
- scanf("%d%d",&n,&k);
+ my_scanf("%d%d",&n,&k);
  for(i=0;i<n;i++){
-     scanf("%d",&(sz[i]));
+     my_scanf("%d",&(sz[i]));
  }
  for(i=0;i<n;i++){
      s[i]=sz[i];
@@ -25,9 +25,9 @@ int main_bench()
      }
  }
  if(y!=0){
-     printf("yes");
+     my_printf("yes");
  }else if(y==0){
-     printf("no");
+     my_printf("no");
  }
  return 0;
  

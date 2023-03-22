@@ -5,14 +5,14 @@ int yf(int k);
 int main_bench()
 {
 	int i,n,w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=0;i<12;i++){
 		n=(yf(i)+12)%7+w;
 		if(n>7){
 			n=n-7;
 		}
 		if(n==5){
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

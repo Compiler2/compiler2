@@ -15,12 +15,12 @@ int main_bench()
 	 }
 	 for(k=m-1;k>=0;k--)
 	 { for(i=b[k]+1;a[i]!=' '&&a[i]!='\0';i++)
-			 printf("%c",a[i]);
-	 printf(" ");
+			 my_printf("%c",a[i]);
+	 my_printf(" ");
 	 }
 	 i=0;
 	 while(a[i]!=' '&&a[i]!='\0')
-	 { printf("%c",a[i]);
+	 { my_printf("%c",a[i]);
 	   i++;
 	 }
 }

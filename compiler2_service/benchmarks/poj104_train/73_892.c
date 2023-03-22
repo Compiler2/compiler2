@@ -20,9 +20,9 @@ int b[5],c[5];
 int i,j,r=0;
 for(i=0;i<5;i++)
   {   for(j=0;j<5;j++)
-      scanf("%d",&a[i][j]);  }
+      my_scanf("%d",&a[i][j]);  }
 
-printf("\n");  
+my_printf("\n");  
 for(i=0;i<5;i++)      
   b[i]=max(a[i][0],max(a[i][1],max(a[i][2],max(a[i][3],a[i][4]))));
 for(j=0;j<5;j++)      
@@ -34,10 +34,10 @@ for(i=0;i<5;i++)
        {
           if(b[i]==c[j]) 
           {
-            printf("%d %d %d",i+1,j+1,b[i]);
+            my_printf("%d %d %d",i+1,j+1,b[i]);
             r=1;
           } 
        }   
   }          
-if(r==0)  printf("not found");
+if(r==0)  my_printf("not found");
 }

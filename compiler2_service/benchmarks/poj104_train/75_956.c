@@ -55,7 +55,7 @@ int main_bench()
 		if(num>high)
 			high=num;
 	}
-	printf("%d %d\n",count,high);
+	my_printf("%d %d\n",count,high);
 }
 
 

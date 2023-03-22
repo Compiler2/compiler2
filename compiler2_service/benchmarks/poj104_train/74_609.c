@@ -5,7 +5,7 @@ int main_bench()
     int i,n,m,j,k,nx,f,ix,flag;
     int a[100000]={0};
     int s[100000]={0};
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     flag=0;
     for (i=m;i<=n;i++)
     {
@@ -41,18 +41,18 @@ int main_bench()
             }
             if (f==0&&flag==0)
             {
-                printf("%d",i);
+                my_printf("%d",i);
                 flag=1;
             }
             else if (f==0)
             {
-                printf(",%d",i);
+                my_printf(",%d",i);
                 flag=1;
             }
         }
     }
-    if (flag==0) printf("no");
-    printf("\n");
+    if (flag==0) my_printf("no");
+    my_printf("\n");
     return 0;
 }
 

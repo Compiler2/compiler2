@@ -3,8 +3,8 @@
 main_bench()
 {
       char a[250]={'0'},b[250]={'0'};
-      scanf("%s",a);
-      scanf("%s",b);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
       int la,lb,l,c[251]={0},x=0,sum;
       la=strlen(a);
       lb=strlen(b);
@@ -42,9 +42,9 @@ main_bench()
               {
                          
                          for (int j=i;j<l;j++)
-                         printf("%d",c[j]);
+                         my_printf("%d",c[j]);
                          break;
               }
       }
-      printf("%d",c[l]);
+      my_printf("%d",c[l]);
       }

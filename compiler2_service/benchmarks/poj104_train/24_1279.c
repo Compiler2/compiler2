@@ -44,12 +44,12 @@ int main_bench()
 			if(t!=0)
 			{
 			for(i1=*(b+t-1);i1<(*(b+t)-1);i1++)
-				printf("%c",*(p+i1));
+				my_printf("%c",*(p+i1));
 			}
 			else
 				for(i1=0;i1<*(b+t)-1;i1++)
-					printf("%c",*(p+i1));
-			printf("\n");
+					my_printf("%c",*(p+i1));
+			my_printf("\n");
 
            t=0;
 			min=*a;
@@ -62,12 +62,12 @@ int main_bench()
 			if(t!=0)
 			{
 			for(i1=*(b+t-1);i1<(*(b+t)-1);i1++)
-				printf("%c",*(p+i1));
+				my_printf("%c",*(p+i1));
 			}
 			else
 				for(i1=0;i1<*(b+t)-1;i1++)
-					printf("%c",*(p+i1));
-			printf("\n");
+					my_printf("%c",*(p+i1));
+			my_printf("\n");
 
 			
 

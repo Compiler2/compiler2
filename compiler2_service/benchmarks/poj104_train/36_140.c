@@ -20,7 +20,7 @@ int main_bench()
 	gets(a);
 	len=strlen(a);
 	if(len%2==0)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 	n=(len-1)/2;
@@ -34,8 +34,8 @@ int main_bench()
 	for(i=0;b[i]==c[i]&&i<n;)
 		i++;
 	if(i==n)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }
 }	

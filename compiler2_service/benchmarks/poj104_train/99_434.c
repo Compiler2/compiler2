@@ -4,14 +4,14 @@ int main_bench()
 { 
 	int a[100],n,i,b,c,d,e;
     double o,p,q,r;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=0;
 	c=0;
 	d=0;
 	e=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	
  	for(i=0;i<n;i++)
@@ -49,9 +49,9 @@ int main_bench()
 	p=(double)100*c/n;
 	q=(double)100*d/n;
 	r=(double)100*e/n;
-	printf("1-18: %.2lf%%\n",o);
-    printf("19-35: %.2lf%%\n",p);
-    printf("36-60: %.2lf%%\n",q);
-    printf("60??: %.2lf%%",r);
+	my_printf("1-18: %.2lf%%\n",o);
+    my_printf("19-35: %.2lf%%\n",p);
+    my_printf("36-60: %.2lf%%\n",q);
+    my_printf("60??: %.2lf%%",r);
 	return 0;
 }

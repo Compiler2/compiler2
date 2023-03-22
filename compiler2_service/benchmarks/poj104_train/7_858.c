@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[256],a[256],b[256],c[256];
-	scanf("%s%s%s",s,a,b);
+	my_scanf("%s%s%s",s,a,b);
 	int i,j,n,k,m=0,max;
 	for(i=0;i<strlen(s)-strlen(a)+1;i++)
 		{
@@ -38,11 +38,11 @@ int main_bench()
 						}
 						s[i+j]=b[j];
 					}
-					printf("%s",s);
+					my_printf("%s",s);
 		}
 		else
 		{
-			printf("%s",s);
+			my_printf("%s",s);
 		}
 	return 0;
 }

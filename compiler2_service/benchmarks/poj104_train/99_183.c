@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,e=0,d=0,f=0,g=0,k=0,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<=18){
 			e++;
 		}
@@ -24,10 +24,10 @@ int main_bench(){
     y=(double)d/k*100;
     z=(double)f/k*100;
     w=(double)g/k*100;
-	printf("1-18: %.2lf%%\n",x);
-    printf("19-35: %.2lf%%\n",y);
-    printf("36-60: %.2lf%%\n",z);
-    printf("60??: %.2lf%%\n",w);
+	my_printf("1-18: %.2lf%%\n",x);
+    my_printf("19-35: %.2lf%%\n",y);
+    my_printf("36-60: %.2lf%%\n",z);
+    my_printf("60??: %.2lf%%\n",w);
 	return 0;
 }
 		

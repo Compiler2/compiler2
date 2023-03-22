@@ -6,7 +6,7 @@ void write(int n1,int n2,int s1[],int s2[]);
 int main_bench()
 {
     int n1,n2,s1[101],s2[101];
-    scanf("%d%d",&n1,&n2);
+    my_scanf("%d%d",&n1,&n2);
     read(n1,n2,s1,s2);
     bubble_sort(s1,n1);
     bubble_sort(s2,n2);
@@ -17,8 +17,8 @@ void read(int n1,int n2,int s1[],int s2[])
 {
     int i;
 
-    for(i=0;i<n1;i++) scanf("%d",&s1[i]);
-    for(i=0;i<n2;i++) scanf("%d",&s2[i]);
+    for(i=0;i<n1;i++) my_scanf("%d",&s1[i]);
+    for(i=0;i<n2;i++) my_scanf("%d",&s2[i]);
 }
 void bubble_sort(int s[],int n)
 {
@@ -35,7 +35,7 @@ void bubble_sort(int s[],int n)
 void write(int n1,int n2,int s1[],int s2[])
 {
     int i;
-    printf("%d",s1[0]);
-    for(i=1;i<n1;i++) printf(" %d",s1[i]);
-    for(i=0;i<n2;i++) printf(" %d",s2[i]);
+    my_printf("%d",s1[0]);
+    for(i=1;i<n1;i++) my_printf(" %d",s1[i]);
+    for(i=0;i<n2;i++) my_printf(" %d",s2[i]);
 }

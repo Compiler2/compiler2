@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,len;
 	char dna[1000][256],cdna[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",dna[i]);
+		my_scanf("%s",dna[i]);
 	}
 	for(i=0;i<n;i++){
 		len=strlen(dna[i]);
@@ -27,7 +27,7 @@ int main_bench()
 		cdna[i][j]='\0';
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",cdna[i]);
+		my_printf("%s\n",cdna[i]);
 	}
 	return 0;
 }

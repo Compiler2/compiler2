@@ -3,7 +3,7 @@
 int main_bench()
 {
  int N;
- scanf("%d",&N);
+ my_scanf("%d",&N);
  struct std
  {
   char name[21];
@@ -16,7 +16,7 @@ int main_bench()
  int i;
  for(i=0;i<N;i++)
  {
-  scanf("%s %d %d %c %c %d",std[i].name,&std[i].pin,&std[i].yi,&std[i].gan,&std[i].west,&std[i].n);
+  my_scanf("%s %d %d %c %c %d",std[i].name,&std[i].pin,&std[i].yi,&std[i].gan,&std[i].west,&std[i].n);
  }
  int sum[100];
  for(i=0;i<N;i++)
@@ -44,9 +44,9 @@ int main_bench()
    k=i;
   }
  }
- printf("%s\n",std[k].name);
- printf("%d\n",max);
- printf("%d\n",he);
+ my_printf("%s\n",std[k].name);
+ my_printf("%d\n",max);
+ my_printf("%d\n",he);
  return 0;
 }
 

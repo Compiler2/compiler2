@@ -13,16 +13,16 @@ int main_bench()
     		for(j=i+1;;j++)
 		    {
     			if(j>=l||s[j]==' ')break;
-		    	printf("%c",s[j]);
+		    	my_printf("%c",s[j]);
 		    }
-			printf(" ");
+			my_printf(" ");
 		}
 		else if(i==0)
 			for(j=0;;j++)
 		    	{
     				if(j>=l||s[j]==' ')break;
-					printf("%c",s[j]);
+					my_printf("%c",s[j]);
 		    	}
 	}
-	printf("\n");
+	my_printf("\n");
 }

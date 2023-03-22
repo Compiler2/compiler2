@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,i,k,m=0,*a,*c;
 	double t,s=0,*b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(int *)malloc(sizeof(int)*n);
 	b=(double *)malloc(sizeof(double)*n);
 	c=(int *)malloc(sizeof(int)*n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	s=s/n;
@@ -29,8 +29,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m-1;i++)
-		printf("%d,",c[i]);
-	printf("%d",c[m-1]);
+		my_printf("%d,",c[i]);
+	my_printf("%d",c[m-1]);
 	free(a);
 	free(b);
 	free(c);

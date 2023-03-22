@@ -2,12 +2,12 @@
 
 int main_bench(){
 int n,sum=0,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(k=1;k<=n;k++){
 if (yuqiwuguan(k)==1){
 sum+=k*k;}
 }
-printf("%d",sum);
+my_printf("%d",sum);
 return 0;
 }
 int yuqiwuguan(int number){ 

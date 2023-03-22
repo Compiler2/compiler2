@@ -5,7 +5,7 @@ main_bench()
 	int a,b,len,i,j;
 	long mi,middle=0;
 	char str[33] ;
-	scanf("%d%s%d",&a,str,&b);
+	my_scanf("%d%s%d",&a,str,&b);
 	len=strlen(str);
 	for(i=0;i<len;++i)
 	
@@ -34,8 +34,8 @@ main_bench()
 		if(str[i-j]>9)
 		{
 			str[i-j]=str[i-j]-9+64;
-			printf("%c",str[i-j]);
+			my_printf("%c",str[i-j]);
 		}
-		else printf("%d",str[i-j]);
+		else my_printf("%d",str[i-j]);
 	}
 }

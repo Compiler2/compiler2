@@ -15,7 +15,7 @@ main_bench()
       int a[7],b[7],c[7],i=1,m;
       for (;i<=6;i++)
       {
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       if (a[i]>=0)
       {
       m=a[i];
@@ -30,7 +30,7 @@ main_bench()
       }
       }
       for(i=1;i<=6;i++)
-      printf("%d\n",c[i]);
+      my_printf("%d\n",c[i]);
             return 0;
       }
       

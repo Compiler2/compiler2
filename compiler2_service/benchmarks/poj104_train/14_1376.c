@@ -6,7 +6,7 @@ int compare (const void * a, const void * b);
 int main_bench()
 {
 	int i,j=0,n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	struct stu{
 			int num;
 			int chi;
@@ -17,7 +17,7 @@ int main_bench()
 	struct stu *a=p;
 	int *tot=(int *)calloc( n, sizeof(int) );
 	for(i=0;i<n;i++){
-		scanf("%d %d %d", &p->num, &p->chi, &p->math);
+		my_scanf("%d %d %d", &p->num, &p->chi, &p->math);
 		*(tot+i) = p->total = p->chi + p->math;
 		p++;	
 	}
@@ -25,7 +25,7 @@ int main_bench()
 	for(i=0;i<3;i++,j=0){
 		while( (a+(j++))->total != *(tot+i) )
 			;
-		printf("%d %d\n", (a+j-1)->num, (a+j-1)->total);
+		my_printf("%d %d\n", (a+j-1)->num, (a+j-1)->total);
 		(a+j-1)->total=-1;
 	}
 	

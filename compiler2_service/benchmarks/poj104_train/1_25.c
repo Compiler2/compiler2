@@ -6,17 +6,17 @@ int fff(int w,int t,int x);
 int main_bench()
 {
     int i,j,q,p,n,m,y;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(p=0;p<n;p++)
        {q=1;l=0;
-        scanf("%d",&x);
+        my_scanf("%d",&x);
         for(i=2;i<=x;i++)
            if(x%i==0)
              {a[q]=i;
              q++;
              }
         fff(q-1,1,x);
-        printf("%d\n",l,x);
+        my_printf("%d\n",l,x);
        }
 }
 int fff(int w,int t,int x)

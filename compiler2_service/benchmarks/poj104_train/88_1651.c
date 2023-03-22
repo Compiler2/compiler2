@@ -5,11 +5,11 @@ int main_bench()
 	char c;
 	while (c != '\n')
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c >= '0' && c <= '9')
-			printf("%c",c);
+			my_printf("%c",c);
 		else
-			printf("\n");	
+			my_printf("\n");	
 	}
 	return 0;
 }

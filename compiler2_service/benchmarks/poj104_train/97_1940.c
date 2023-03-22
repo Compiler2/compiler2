@@ -9,7 +9,7 @@ int main_bench()
 	d=0;
 	e=0;
 	f=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m>=100)
 	{
 		m=m-100;
@@ -40,11 +40,11 @@ int main_bench()
 		m=m-1;
 		f=f+1;
 	}
-	printf("%d\n",a);
-	printf("%d\n",b);
-	printf("%d\n",c);
-	printf("%d\n",d);
-	printf("%d\n",e);
-	printf("%d\n",f);
+	my_printf("%d\n",a);
+	my_printf("%d\n",b);
+	my_printf("%d\n",c);
+	my_printf("%d\n",d);
+	my_printf("%d\n",e);
+	my_printf("%d\n",f);
 	return 0;
 }

@@ -12,14 +12,14 @@ int main_bench()
 
 	int mj[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	
 
 	for(i=1;i<=n;i++)
 	{
 		a=0;
-		scanf("%d %d %d",&year,&month1,&month2);
+		my_scanf("%d %d %d",&year,&month1,&month2);
 
 		if((year%4==0&&year%100!=0)||year%400==0)
 		{
@@ -37,9 +37,9 @@ int main_bench()
 
 			}
 			if(a%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 
 		}
 		else
@@ -58,9 +58,9 @@ int main_bench()
 
 			}
 			if(a%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 
 
 		}

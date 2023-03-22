@@ -4,8 +4,8 @@ int main_bench(){
 	double n,m;
 	int i,a,b,c,d,e;
 	char w[501],f[501];
-	scanf("%lf",&n);
-	scanf("%s%s",w,f);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",w,f);
 	a=0;
 	b=0;
 	c=strlen(w);
@@ -28,7 +28,7 @@ int main_bench(){
 			}
 		}
 	}
-	if (e==1){printf("error");
+	if (e==1){my_printf("error");
 	}
 	else{
 		for(i=0;i<d;i++){
@@ -38,9 +38,9 @@ int main_bench(){
 			b++;
 		}
 		m=1.0*a/b;
-		if(m>=n){printf("yes");
+		if(m>=n){my_printf("yes");
 		}
-		else if(m<n){printf("no");
+		else if(m<n){my_printf("no");
 		}
 	}
 	return 0;

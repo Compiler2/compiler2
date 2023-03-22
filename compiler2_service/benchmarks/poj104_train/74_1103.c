@@ -42,22 +42,22 @@ int sushu(int a)
 int main_bench()
 {
 	int a,b,i,s=0;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	if(a>b)
 	{
 		for(i=b;i<=a;i++)
-			if(huiwen(i)&&sushu(i)) {s=s+1;printf("%d",i);break;}
+			if(huiwen(i)&&sushu(i)) {s=s+1;my_printf("%d",i);break;}
 
 		for(i=i+1;i<=a;i++)
-            if(huiwen(i)&&sushu(i)) {s=s+1;printf(",%d",i);}
-		if(s==0) printf("no");
+            if(huiwen(i)&&sushu(i)) {s=s+1;my_printf(",%d",i);}
+		if(s==0) my_printf("no");
 	}
 	else
 	{
 		for(i=a;i<=b;i++)
-			if(huiwen(i)&&sushu(i)) {s=s+1;printf("%d",i);break;}
+			if(huiwen(i)&&sushu(i)) {s=s+1;my_printf("%d",i);break;}
 		for(i=i+1;i<=b;i++)
-            if(huiwen(i)&&sushu(i)) {s=s+1;printf(",%d",i);}
-		if(s==0) printf("no");
+            if(huiwen(i)&&sushu(i)) {s=s+1;my_printf(",%d",i);}
+		if(s==0) my_printf("no");
 	}
 }

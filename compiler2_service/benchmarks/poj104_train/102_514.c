@@ -5,10 +5,10 @@ int main_bench()
     int n,i,j,nan=0,nv=0;
     char s[10];
     double h,male[40],female[40];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-         scanf("%s%lf",s,&h);
+         my_scanf("%s%lf",s,&h);
          if(strlen(s)==4)
          {
              nan++;
@@ -44,14 +44,14 @@ int main_bench()
              }
          }
     }
-    printf("%.2lf",male[0]);
+    my_printf("%.2lf",male[0]);
     for(i=1;i<nan;i++)
     {
-                      printf(" %.2lf",male[i]);
+                      my_printf(" %.2lf",male[i]);
     }
     for(i=0;i<nv;i++)
     {
-                      printf(" %.2lf",female[i]);
+                      my_printf(" %.2lf",female[i]);
     }
     return 0;
 }

@@ -12,7 +12,7 @@ int main_bench()
 	len_a=strlen(a);
 	len_b=strlen(b);
 	if(len_a==1&&len_b==1&&a[0]=='0'&&b[0]=='0')
-		printf("%s",a);
+		my_printf("%s",a);
 	max=len_a;min=len_b;
 	if(len_b>len_a)
 	{
@@ -56,7 +56,7 @@ c[86]='3';
 	}
 	if(c[j-1]!='0')
 	{	for(i=j-1;i>=0;i--)
-	printf("%c",c[i]);
+	my_printf("%c",c[i]);
 	}
 	else
 	{
@@ -64,9 +64,9 @@ c[86]='3';
 		{if(c[i]!='0')
 		break;}
 		for(k=i;k>=0;k--)
-			printf("%c",c[k]);
+			my_printf("%c",c[k]);
 	}
-	printf("\n");
+	my_printf("\n");
 
 
 	return 0;

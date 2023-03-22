@@ -4,16 +4,16 @@ void NX();
 int n;
 int sz[100],nx[100];
 int main_bench(){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     NX();
     for(int i=0;i<n;i++){
         if(i<n-1){
-        printf("%d ",nx[i]);
+        my_printf("%d ",nx[i]);
         }else{
-            printf("%d",nx[i]);
+            my_printf("%d",nx[i]);
         }
     }
     return 0;

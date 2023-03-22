@@ -3,9 +3,9 @@
 int main_bench(){
 int q,i,j;
 char ZF[100][260];
-scanf("%d",&q);
+my_scanf("%d",&q);
     for(i=0;i<q;i++){
-			scanf("%s",ZF[i]);
+			my_scanf("%s",ZF[i]);
 	}
     for(i=0;i<q;i++){
 	    for(j=0;ZF[i][j]!='\t';j++){
@@ -19,7 +19,7 @@ scanf("%d",&q);
 		}
 	}
 	for(i=0;i<q;i++){
-			printf("%s\n",ZF[i]);
+			my_printf("%s\n",ZF[i]);
 	}	
 	return 0;
 }

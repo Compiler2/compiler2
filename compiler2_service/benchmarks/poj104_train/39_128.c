@@ -4,10 +4,10 @@ int main_bench()
 {
 	char name[1000][1000],leader,west,tem[1000];
 	int n,i,all=0,j,a,b,t,money[5],sum[1000],paper;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
 	  for(i=0;i<n;i++)
 	  {
-		  scanf("%s %d %d %c %c %d",name[i],&a,&b,&leader,&west,&paper);
+		  my_scanf("%s %d %d %c %c %d",name[i],&a,&b,&leader,&west,&paper);
           if(a>80&&paper>0)money[0]=8000;else money[0]=0;
 		  if(a>85&&b>80)money[1]=4000;else money[1]=0;
 		  if(a>90)money[2]=2000;else money[2]=0;
@@ -28,7 +28,7 @@ int main_bench()
 				   strcpy(name[i],name[i+1]);
 				   strcpy(name[i+1],tem);
 			  }
-			  printf("%s\n%d\n%d",name[0],sum[0],all);
+			  my_printf("%s\n%d\n%d",name[0],sum[0],all);
 
 
 			return 0;

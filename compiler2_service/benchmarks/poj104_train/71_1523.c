@@ -5,9 +5,9 @@ int main_bench()
 	int year[200],month1[200],month2[200],month11[200],month22[200];
 	int n;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
+		my_scanf("%d%d%d",&year[i],&month1[i],&month2[i]);
 	}
 	for(i=0;i<n;i++){
 		if(year[i]%4==0&&year[i]%100!=0){
@@ -40,9 +40,9 @@ int main_bench()
 			case 12:month22[i]=0+31+29+31+30+31+30+31+31+30+31+30;break;
 			}
 			if((month11[i]-month22[i])%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else if((month11[i]-month22[i])%7!=0)
-				printf("NO\n");
+				my_printf("NO\n");
 		}
 		else if(year[i]%400==0){
 			switch (month1[i]){
@@ -74,9 +74,9 @@ int main_bench()
 			case 12:month22[i]=0+31+29+31+30+31+30+31+31+30+31+30;break;
 			}
 			if((month11[i]-month22[i])%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else if((month11[i]-month22[i])%7!=0)
-				printf("NO\n");
+				my_printf("NO\n");
 		}
 		else{
 			switch (month1[i]){
@@ -108,9 +108,9 @@ int main_bench()
 			case 12:month22[i]=0+31+28+31+30+31+30+31+31+30+31+30;break;
 			}
 			if((month11[i]-month22[i])%7==0)
-				printf("YES\n");
+				my_printf("YES\n");
 			else if((month11[i]-month22[i])%7!=0)
-				printf("NO\n");
+				my_printf("NO\n");
 		}
 	}
 	return 0;

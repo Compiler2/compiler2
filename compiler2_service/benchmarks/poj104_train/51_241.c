@@ -6,7 +6,7 @@ int main_bench()
 	char ch[500][5];
 	char y[5]="";
 	int i,j,m=-1,flag,k,n,l,p,q,t,r,max,count[500]={0};
-	scanf("%d ",&n);
+	my_scanf("%d ",&n);
 	gets(x);
 	l=strlen(x);
 	for(i=0;i<l-n+1;i++)
@@ -49,14 +49,14 @@ int main_bench()
 			if(count[i]<max)
 				break;
 		}
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(j=i+1;j<=m;j++)
 		{	
 			for(r=0;r<n;r++)
-				printf("%c",ch[j][r]);
-			printf("\n");
+				my_printf("%c",ch[j][r]);
+			my_printf("\n");
 		}
 	}
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }

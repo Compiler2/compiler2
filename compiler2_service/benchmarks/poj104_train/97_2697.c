@@ -9,7 +9,7 @@ int main_bench()
 	int d=0;
 	int e=0;
 	int f=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(n-n%100)/100;
 	n=n-100*a;
 	b=(n-n%50)/50;
@@ -21,11 +21,11 @@ int main_bench()
 	e=(n-n%5)/5;
 	n=n-5*e;
 	f=n;
-	printf("%d\n",a);
-    printf("%d\n",b);
-	printf("%d\n",c);
-	printf("%d\n",d);
-	printf("%d\n",e);
-    printf("%d\n",f);
+	my_printf("%d\n",a);
+    my_printf("%d\n",b);
+	my_printf("%d\n",c);
+	my_printf("%d\n",d);
+	my_printf("%d\n",e);
+    my_printf("%d\n",f);
     return 0;
 }

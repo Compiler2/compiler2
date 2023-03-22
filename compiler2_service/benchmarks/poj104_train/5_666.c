@@ -5,14 +5,14 @@ int main_bench(){
 	double q,p;
 	char a[501],b[501];
 	n=0;
-	scanf("%lf",&p);
-    scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&p);
+    my_scanf("%s",a);
+	my_scanf("%s",b);
 	l=strlen(a);
 	L=strlen(b);
 	
 	if(l!=L){
-		printf("error\n");
+		my_printf("error\n");
 	}
 	else {
 		t=1;
@@ -28,10 +28,10 @@ int main_bench(){
 	}	
 	if(t==1){
     q=1.0*n/l;
-	if(q>p){printf("yes\n");}
-	else {printf("no\n");}
+	if(q>p){my_printf("yes\n");}
+	else {my_printf("no\n");}
 	}
-    if(t==0){printf("error\n");}
+    if(t==0){my_printf("error\n");}
 	}
 	return 0;
 }

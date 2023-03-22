@@ -7,10 +7,10 @@ int main_bench(){
 	int i,c,wz=500,x=0,d=0;
 	char st[100],en[100];
 
-    scanf("%s",b);
+    my_scanf("%s",b);
 	   
-	scanf("%s",a);
-	scanf("%s",news);
+	my_scanf("%s",a);
+	my_scanf("%s",news);
    
 	for(i=0;i<strlen(b);i++){
 		x=0;

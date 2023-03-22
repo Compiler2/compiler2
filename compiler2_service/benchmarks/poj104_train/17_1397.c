@@ -39,15 +39,15 @@ int main_bench()
 			}
 		}
 		for(i=0;i<n;i++)
-		printf("%c",a[i]);
-		printf("\n");
+		my_printf("%c",a[i]);
+		my_printf("\n");
 		for(i=0;i<n;i++)
 		{
-		if(b[i]==0)printf(" ");
-		if(b[i]==1)printf("$");
-		if(b[i]==2)printf("?");
+		if(b[i]==0)my_printf(" ");
+		if(b[i]==1)my_printf("$");
+		if(b[i]==2)my_printf("?");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }
 

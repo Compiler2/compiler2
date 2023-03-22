@@ -6,7 +6,7 @@ int main_bench()
 	char b;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b=getchar();
 		if(b=='\n')
 		{
@@ -16,12 +16,12 @@ int main_bench()
 
 	}
 	if(m==1)
-		printf("No");
+		my_printf("No");
 	for(i=0;i<m;i++)
 		if(a[i]==a[i+1])
 			n++;
 		if(n==m)
-			printf("No");
+			my_printf("No");
 		else
 		{
 	max=a[0];	
@@ -34,6 +34,6 @@ int main_bench()
 	for(i=1;i<=m;i++)
 		if(s<a[i]&&a[i]<max)
 			s=a[i];
-		printf("%d",s);
+		my_printf("%d",s);
 		}
 }

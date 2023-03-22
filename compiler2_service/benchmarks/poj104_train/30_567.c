@@ -2,7 +2,7 @@
 
 int main_bench()
 {int n,a,c;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i=1;
 int s=0;
 while(i<=n){
@@ -12,6 +12,6 @@ int b=(int)(i/10);
 if((a!=7)&&(b!=7)&&(c!=0)){
 	s=s+i*i;}
 i++;}
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

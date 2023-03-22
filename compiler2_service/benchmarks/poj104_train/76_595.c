@@ -3,9 +3,9 @@
 int main_bench(){
 int l[10000],r[10000];
 int n,i,d,e,k,p,q;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++){
-scanf("%d%d\n",&l[i],&r[i]);
+my_scanf("%d%d\n",&l[i],&r[i]);
 }
 for(k=1;k<n;k++){
 for(i=0;i<n-1;i++){
@@ -29,7 +29,7 @@ e=0;break;
 }
 e=1;
 }
-if(e==0){printf("no");}
+if(e==0){my_printf("no");}
 else{for(i=1,e=l[0];i<n;i++){
 if(l[i]<e){
 e=l[i];
@@ -40,7 +40,7 @@ if(r[i]>d){
 d=r[i];
 }
 }
-printf("%d %d",e,d);}
+my_printf("%d %d",e,d);}
 return 0;
 
 }

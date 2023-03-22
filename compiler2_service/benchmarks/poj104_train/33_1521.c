@@ -5,9 +5,9 @@ int main_bench(){
     char A,T,C,G;
     char jj[500];
     char pd[500];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-        scanf("%s",&jj);
+        my_scanf("%s",&jj);
         t=strlen(jj);
         
         for(c=0;c<t;c++){
@@ -25,7 +25,7 @@ int main_bench(){
             }
         }
         pd[t]='\0';
-        printf ("%s\n",pd);
+        my_printf ("%s\n",pd);
     }
     return 0;
 }

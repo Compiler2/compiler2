@@ -3,9 +3,9 @@
  int main_bench() 
 {
      int n,y=0;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      char a[500];
-     scanf("%s",a);
+     my_scanf("%s",a);
      int b[500];
      int s=strlen(a);
      for(int i=0;i<s-n+1;i++)
@@ -36,11 +36,11 @@
                        
                        if(b[e]>1){y++;
                        if(y==1)
-                       printf("%d\n",b[e]);
+                       my_printf("%d\n",b[e]);
                        for(int p=0;p<n;p++)
-                       {printf("%c",a[e+p]);}
-                       printf("\n");}
-                       else { printf("NO\n");break;}
+                       {my_printf("%c",a[e+p]);}
+                       my_printf("\n");}
+                       else { my_printf("NO\n");break;}
              }
      }
          

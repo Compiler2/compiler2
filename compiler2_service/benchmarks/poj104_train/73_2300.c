@@ -6,7 +6,7 @@ int main_bench(){
 	q=0;
 	for (i=1;i<=5;i++){
 		for (j=1;j<=5;j++){
-		scanf ("%d",&a[i][j]);
+		my_scanf ("%d",&a[i][j]);
 		}
 	}
 	for (r=1;r<6;r++){
@@ -27,13 +27,13 @@ int main_bench(){
 	}
 	
 		if (y==r) {
-		printf ("%d %d %d",s,y,a[s][y]);
+		my_printf ("%d %d %d",s,y,a[s][y]);
 		q=1;
 		}
 	}
 	}
 
 	if (q==0)
-	{printf ("not found");}
+	{my_printf ("not found");}
 return 0;
 }

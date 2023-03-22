@@ -6,9 +6,9 @@
    int sum1,sum2;
    int result;
    
-   scanf("%d %d %d",&year1,&month1,&day1);
+   my_scanf("%d %d %d",&year1,&month1,&day1);
    
-   scanf("%d %d %d",&year2,&month2,&day2);
+   my_scanf("%d %d %d",&year2,&month2,&day2);
    j=(year1-1)/4-(year1-1)/100+(year1-1)/400;
    if((year1%4==0&&year1%100!=0)||(year1%400==0))
    a=1;
@@ -70,5 +70,5 @@ else
    m=334+b;
 sum2=year2*365+m+day2+n;}
     result=fabs(sum1-sum2);
-    printf("%d",result);
+    my_printf("%d",result);
 }

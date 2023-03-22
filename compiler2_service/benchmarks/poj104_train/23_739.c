@@ -6,11 +6,11 @@ int main_bench()
 	int i,j;
 	for(i=1;;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		b=getchar();
 		if(b!=' ') break;
 	}
-	printf("%s",a[i]);
+	my_printf("%s",a[i]);
 	for(j=i-1;j>=1;j--)
-		printf(" %s",a[j]);
+		my_printf(" %s",a[j]);
 }

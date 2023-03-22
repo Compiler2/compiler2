@@ -4,11 +4,11 @@ int main_bench(){
 	int i,m=0,s;
 	double n,x;
 	char one[500],two[500];
-	scanf("%lf",&n);
-	scanf("%s%s",one,two);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",one,two);
 	s=strlen(one);
 	if(strlen(one)!=strlen(two))
-		printf("error");
+		my_printf("error");
 	else{
 		for(i=0;one[i]!='\0';i++){
 			if((one[i]!='A'&&one[i]!='G'&&one[i]!='T'&&one[i]!='C')||(two[i]!='A'&&two[i]!='T'&&two[i]!='C'&&two[i]!='G')){
@@ -21,11 +21,11 @@ int main_bench(){
 		}
 		x=1.0*m/s;
 		if(s==0)
-			printf("error");
+			my_printf("error");
 		else if(x>n)
-			printf("yes");
+			my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 	return 0;
 }

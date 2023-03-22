@@ -28,15 +28,15 @@ void f(int a[],int n)
 main_bench()
 {
       int n,i,outcome=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[40];
       for(i=1;i<=n;i++)
       {
-                       scanf("%d",&a[i]);
+                       my_scanf("%d",&a[i]);
       }
       f(a,n);
       for(i=1;i<=n;i++)
       outcome=max(outcome,result[i]);
-      printf("%d\n",outcome);
+      my_printf("%d\n",outcome);
 }
        

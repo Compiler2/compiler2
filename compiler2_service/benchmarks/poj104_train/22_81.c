@@ -22,9 +22,9 @@ for(j=0;j<n-1-i;j++)
 	b[j+1]=temp;
    }
 
-  if(b[0]==b[n-1])printf("No");
+  if(b[0]==b[n-1])my_printf("No");
  else 
  { for(i=n-1;i>=0;i--)
     if(b[i]!=b[i-1])
-	{ printf("%d",b[i-1]);break;}
+	{ my_printf("%d",b[i-1]);break;}
 }}

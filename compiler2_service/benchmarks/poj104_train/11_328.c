@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,y;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
     if ((a%4==0)&&(a%100!=0))
 		{
         if(b==1)
@@ -57,7 +57,7 @@ int main_bench()
 		{
 			y=31+29+31+30+31+30+31+31+30+31+30+c;
 		}
-		printf("%d",y);
+		my_printf("%d",y);
 	}
 
     else if (a%400==0)
@@ -113,7 +113,7 @@ int main_bench()
 		{
 			y=31+29+31+30+31+30+31+31+30+31+30+c;
 		}
-		printf("%d",y);
+		my_printf("%d",y);
 	}	
 	else 
 	{
@@ -168,7 +168,7 @@ int main_bench()
 		{
 			y=31+28+31+30+31+30+31+31+30+31+30+c;
 		}
-		printf("%d",y);
+		my_printf("%d",y);
 	}
 return 0;
 }

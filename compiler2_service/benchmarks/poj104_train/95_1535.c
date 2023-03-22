@@ -18,8 +18,8 @@ int main_bench()
   d=strlen(b);
   f(a,i,c);
   f(b,i,d);
-  if(strcmp(a,b)==0) printf("=");
-  else if(strcmp(a,b)>0) printf(">");
-  else printf("<");
+  if(strcmp(a,b)==0) my_printf("=");
+  else if(strcmp(a,b)>0) my_printf(">");
+  else my_printf("<");
   return 0;
 }

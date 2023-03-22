@@ -8,11 +8,11 @@ int main_bench()
     int m[6];
     for(int i=0;i<=5;i++)
     {
-        scanf("%d",&m[i]);
+        my_scanf("%d",&m[i]);
     }
     for(int j=0;j<=5;j++)
     {
-        printf("%d\n",f(m[j]));
+        my_printf("%d\n",f(m[j]));
     }
 }
 int count(int m)

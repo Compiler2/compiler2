@@ -4,10 +4,10 @@ int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,s,i;
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	if((y1==y2)&&(m1==m2))
-		printf ("%d",d2-d1);
+		my_printf ("%d",d2-d1);
 	else
 	{
 	s=0;
@@ -27,7 +27,7 @@ int main_bench()
 	if(((y2%4==0)&&(y2%100!=0))||(y2%400==0))
 		if((m2>2)&&((y1<y2)||(m1<m2)))
 			s=s+1;
-	printf("%d",s);
+	my_printf("%d",s);
 	}
 	return 0;
 }

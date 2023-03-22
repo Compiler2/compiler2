@@ -2,11 +2,11 @@
 
 int main_bench(){
     int r,c;
-    scanf("%d %d",&r,&c);
+    my_scanf("%d %d",&r,&c);
     int sz[100][100];
     for(int i=0;i<r;i++){
         for(int j=0;j<c;j++){
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
             }
         }
     int i=0,j=0;
@@ -14,7 +14,7 @@ int main_bench(){
     int n=0;
     while(i<=r/2&&j<=c/2){
     while(q<c-j){
-         printf("%d\n",sz[p][q]);
+         my_printf("%d\n",sz[p][q]);
          q++;
          n++;
          }
@@ -24,7 +24,7 @@ int main_bench(){
          q=q-1;
          p=p+1;
     while(p<r-i){
-         printf("%d\n",sz[p][q]);
+         my_printf("%d\n",sz[p][q]);
          p++;
          n++;
          }
@@ -34,7 +34,7 @@ int main_bench(){
          p=p-1;
          q=q-1;
     while(q>=j){
-         printf("%d\n",sz[p][q]);
+         my_printf("%d\n",sz[p][q]);
          q--;
          n++;
          }
@@ -45,7 +45,7 @@ int main_bench(){
          p=p-1;
          i=i+1;
     while(p>=i){
-          printf("%d\n",sz[p][q]);
+          my_printf("%d\n",sz[p][q]);
           p--;
           n++;
           }

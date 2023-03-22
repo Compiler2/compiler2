@@ -5,9 +5,9 @@ main_bench()
       int a,b,c,i,j,d,k;
       b=0;
      
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       if(a==6)
-      printf("3 3");
+      my_printf("3 3");
       else
       {d=a/2;
           for(i=3;i<=d;i++)
@@ -22,7 +22,7 @@ main_bench()
                            if(c%k==0) 
                            b=1;
                            if(b==0)
-                           printf("%d %d\n",i,(a-i));}
+                           my_printf("%d %d\n",i,(a-i));}
                              
                              }
                              }

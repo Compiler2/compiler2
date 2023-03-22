@@ -4,10 +4,10 @@ int main_bench()
 {
  unsigned int a[301],i,j,k,n,t;  
                   float av,cha[301],temp,sum=0;  
-scanf("%d",&n);
+my_scanf("%d",&n);
 	for(i=0;i<n;i++)
            {
-              scanf("%d",&a[i]);
+              my_scanf("%d",&a[i]);
               sum=sum+a[i];
 	} 
    	av=sum/n;   
@@ -21,12 +21,12 @@ scanf("%d",&n);
                     cha[k+1]=temp;a[k+1]=t;}
  
       if(cha[0]!=cha[1])
-           printf("%d",a[0]);
+           my_printf("%d",a[0]);
       else
         {if(a[0]>a[1])
-           printf("%d,%d",a[1],a[0]);
+           my_printf("%d,%d",a[1],a[0]);
         else
-			printf("%d,%d",a[0],a[1]);}
+			my_printf("%d,%d",a[0],a[1]);}
 }
 
 

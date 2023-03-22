@@ -6,7 +6,7 @@ main_bench()
       int b[5][5]={0},c[5][5]={0},d[5][5];
       for(i=0;i<5;i++)
       {
-                      scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
+                      my_scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
       }
       for(i=0;i<5;i++)
       {
@@ -30,7 +30,7 @@ main_bench()
                       {
                                       d[i][j]=b[i][j]*c[i][j];
                                       if(d[i][j]==1)
-                                      printf("%d %d %d\n",i+1,j+1,a[i][j]);
+                                      my_printf("%d %d %d\n",i+1,j+1,a[i][j]);
                       }
       }
       for(i=0;i<5;i++)
@@ -43,6 +43,6 @@ main_bench()
                       }
       }
       if(k==25)
-      printf("not found");
+      my_printf("not found");
       
 }

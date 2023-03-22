@@ -11,10 +11,10 @@ int main_bench()
 	int s;
 	char swap[10];
 	struct sick all[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",&all[i].num);
-		scanf("%d",&all[i].age);
+		my_scanf("%s",&all[i].num);
+		my_scanf("%d",&all[i].age);
 	}
 	for(i=1;i<n;i++){
 		for(j=i;j>0;j--){

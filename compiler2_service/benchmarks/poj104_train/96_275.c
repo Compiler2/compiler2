@@ -7,16 +7,16 @@ int main_bench()
   {
      char n[101],answer[100];
 	 int a=1,b=1,c=1,i=0;
-     scanf("%s",n);
+     my_scanf("%s",n);
 	 
 	 if(strlen(n)<2)
 	 {
-		printf("0\n%c",n[0]);
+		my_printf("0\n%c",n[0]);
 	 }
 	 else if(strlen(n)<3)
 	 {
          c=10*(n[0]-'0')+(n[1]-'0');
-		 printf("%d\n%d",c/chushu,c%chushu);
+		 my_printf("%d\n%d",c/chushu,c%chushu);
 	 }
 	 else
 	 {
@@ -50,7 +50,7 @@ int main_bench()
 		
 			 
 
-	 printf("%s\n%d",answer,a);
+	 my_printf("%s\n%d",answer,a);
 	 
 	 } 
 	 return 0;

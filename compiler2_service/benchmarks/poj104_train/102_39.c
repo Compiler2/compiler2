@@ -4,9 +4,9 @@ int main_bench(){
   int n,i,t=0,m=0,j;
   double gao[40],b[40],e,c[40];
   char a[40][7];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-   scanf("%s%lf",a[i],&gao[i]);
+   my_scanf("%s%lf",a[i],&gao[i]);
   }
   for(i=0;i<n;i++){
 	  if(a[i][0]=='m'){b[t]=gao[i];t++;}
@@ -27,8 +27,8 @@ int main_bench(){
 	  }
   }
    for(i=0;i<t;i++){
-   printf("%.2lf ",b[i]);}
-   printf("%.2lf",c[0]);
+   my_printf("%.2lf ",b[i]);}
+   my_printf("%.2lf",c[0]);
     for(i=1;i<m;i++){
-   printf(" %.2lf",c[i]);}
+   my_printf(" %.2lf",c[i]);}
 return 0;}

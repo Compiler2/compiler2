@@ -32,7 +32,7 @@ main_bench()
             s[i]=re[k];
         }
     }
-    printf("%s\n",s);
+    my_printf("%s\n",s);
 }
 
 

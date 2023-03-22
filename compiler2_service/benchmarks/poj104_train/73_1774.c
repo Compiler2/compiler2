@@ -5,7 +5,7 @@ int main_bench()
 	int a[5][5],i,j,k=0,p=0,h[5][3]={0},l[5][3]={0};
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&a[i][j]);}}
+			my_scanf("%d",&a[i][j]);}}
     
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
@@ -26,8 +26,8 @@ k=100000;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
 			if(h[i][2]==l[j][2]&&h[i][0]==l[j][0]&&h[i][1]==l[j][1]){
-				printf("%d %d %d\n",h[i][0]+1,h[i][1]+1,h[i][2]),p++;}}
+				my_printf("%d %d %d\n",h[i][0]+1,h[i][1]+1,h[i][2]),p++;}}
 	}
-	if(p==0)printf("not found");
+	if(p==0)my_printf("not found");
         
 }

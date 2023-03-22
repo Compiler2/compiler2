@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n,i,a[400];
-	scanf("%d",&n);
-    for(i=0;i<n;i++) scanf("%d",&a[i]);
+	my_scanf("%d",&n);
+    for(i=0;i<n;i++) my_scanf("%d",&a[i]);
 	int sum=0;
 	for(i=0;i<n;i++) sum=sum+a[i];
 	int dis[400];
@@ -21,9 +21,9 @@ int main_bench()
 		{ans[num]=a[i];
 		 num=num+1;
 		}
-    if(num==1)printf("%d",ans[0]);
+    if(num==1)my_printf("%d",ans[0]);
 	if(num==2) 
-	{if(ans[1]>ans[0]) printf("%d,%d",ans[0],ans[1]);
-	 else printf("%d,%d",ans[1],ans[0]);
+	{if(ans[1]>ans[0]) my_printf("%d,%d",ans[0],ans[1]);
+	 else my_printf("%d,%d",ans[1],ans[0]);
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[50000],b[50000],min=10000,max=0,e=1,p=0;
 float j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<=n-1;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		if(a[i]<min)min=a[i];
 		if(b[i]>max)max=b[i];
 	}
@@ -24,10 +24,10 @@ float j;
 		}
 	j=j+0.5;
 	}
-	if(p==1)printf("no");
+	if(p==1)my_printf("no");
 	else
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

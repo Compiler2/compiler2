@@ -3,7 +3,7 @@
 int main_bench()
 {
 unsigned long a,b,c,n,d,D,x;
-scanf("%d%d%d",&a,&b,&c);
+my_scanf("%d%d%d",&a,&b,&c);
 if((a%4==0&&a%100!=0)||a%400==0)
 {
 switch(b)
@@ -49,13 +49,13 @@ x=D%7;
 }
 switch(x)
 {
-case 1: printf("Mon.");break;
-case 2: printf("Tue.");break;
-case 3: printf("Wed.");break;
-case 4: printf("Thu.");break;
-case 5: printf("Fri.");break; 
-case 6: printf("Sat.");break;
-case 0: printf("Sun.");break;
+case 1: my_printf("Mon.");break;
+case 2: my_printf("Tue.");break;
+case 3: my_printf("Wed.");break;
+case 4: my_printf("Thu.");break;
+case 5: my_printf("Fri.");break; 
+case 6: my_printf("Sat.");break;
+case 0: my_printf("Sun.");break;
 }
 
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[257],s[257],r[257];
 	int len1,len2,len3,i,j,k,c,flag=0;
-	scanf("%s%s%s",str,s,r);
+	my_scanf("%s%s%s",str,s,r);
 	len1=strlen(str);
 	len2=strlen(s);
 	len3=strlen(r);
@@ -33,12 +33,12 @@ int main_bench()
 			if(flag)
 			{
 				for(k=0;k<c;k++)
-				printf("%c",str[k]);
-				printf("%s",r);
+				my_printf("%c",str[k]);
+				my_printf("%s",r);
 				for(k=c+len2;k<len1;k++)
-				printf("%c",str[k]);
+				my_printf("%c",str[k]);
 			}
 			else
-			printf("%s",str);
+			my_printf("%s",str);
 			return 0;
 		}

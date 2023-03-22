@@ -7,21 +7,21 @@ int main_bench()
 	x=1.0;
 	char aa[1000];
 	char bb[1000];
-	scanf("%lf",&std);
-	scanf("%s",aa);
-	scanf("%s",bb);
+	my_scanf("%lf",&std);
+	my_scanf("%s",aa);
+	my_scanf("%s",bb);
 	n=strlen(aa);
 	m=strlen(bb);
 	if(m!=n)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;i<n;i++)
 	{
 		if((aa[i]!='A')&&(aa[i]!='T')&&(aa[i]!='G')&&(aa[i]!='C')&&(bb[i]!='A')&&(bb[i]!='T')&&(bb[i]!='C')&&(bb[i]!='G'))
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -36,11 +36,11 @@ int main_bench()
 	z=x/y;
 	if(z>std)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

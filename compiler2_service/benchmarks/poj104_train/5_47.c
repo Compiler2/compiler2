@@ -22,15 +22,15 @@ int main_bench()
 	m=1.0*same/strlen(a);
 	if((strlen(a)!=strlen(b))||flag==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
     else if(m<=n)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else if(m>n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	return 0;
 }

@@ -12,11 +12,11 @@ int main_bench()
 	int n,i,k,j,l,a=0,b=0,e;
 	int sz1[1000],sz2[1000];
 	char zfc1[1000][11],zfc2[1000][11],f[11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&p[i].ID);
-		scanf(" %d",&p[i].age);
+		my_scanf("%s",&p[i].ID);
+		my_scanf(" %d",&p[i].age);
 	}
 	for(i=0,j=0,l=0;i<n;i++)
 	{
@@ -52,11 +52,11 @@ int main_bench()
 	}
 	for(j=0;j<a;j++)
 	{
-		printf("%s\n",zfc1[j]);
+		my_printf("%s\n",zfc1[j]);
 	}
 	for(l=0;l<b;l++)
 	{
-		printf("%s\n",zfc2[l]);
+		my_printf("%s\n",zfc2[l]);
 	}
 	return 0;
 }

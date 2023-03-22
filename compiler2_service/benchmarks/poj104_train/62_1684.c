@@ -10,12 +10,12 @@ int main_bench()
 	{
 		if(a[i]!=' ')
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 			kongge=0;
 		}
 		else if(kongge==0)
 		{
-			printf(" ");
+			my_printf(" ");
 			kongge+=1;
 		}
 	}

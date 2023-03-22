@@ -16,13 +16,13 @@ int lie(int a[][110],int n,int j,int h)
 int main_bench()
 {
 	int n,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
 		int i,j,h,s=0,hm,lm,a[110][110]={0};
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 		for(h=1;h<n;h++)
 			{hm=hang(a[0],n,h);a[0][0]-=hm;
 			for(j=h;j<n;j++)a[0][j]-=hm;
@@ -35,5 +35,5 @@ int main_bench()
 			{lm=lie(a,n,j,h);a[0][j]-=lm;
 			for(i=h;i<n;i++)a[i][j]-=lm;}
 			s+=a[h][h];}
-		printf("%d\n",s);}
+		my_printf("%d\n",s);}
 }

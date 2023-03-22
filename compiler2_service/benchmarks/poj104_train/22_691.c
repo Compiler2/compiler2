@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c;
 char d;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 b=0;
 c=0;
 for( ; ; )
@@ -12,7 +12,7 @@ for( ; ; )
 d=getchar();
 if(d!=',')
 break;
-scanf("%d",&b);
+my_scanf("%d",&b);
 if(b>a)
 {c=a;
 a=b;}
@@ -20,8 +20,8 @@ if(b<a&&b>c)
 c=b;
 }
 if(c==0)
-printf("No");
+my_printf("No");
 else
-printf("%d",c);
+my_printf("%d",c);
 	return 0;
 }

@@ -7,16 +7,16 @@ int main_bench()
 	char c[300];
 	for(i=0,n=0;c[i-1]!='\n' && i<300;i++,n++)
 	{
-		scanf("%d%c",&num[i],&c[i]);
+		my_scanf("%d%c",&num[i],&c[i]);
 	}
-	if(n<=1) printf("No\n");
+	if(n<=1) my_printf("No\n");
 	else
 	{
 		for(i=1;i<n;i++)
 		{
 			if(num[i]!=num[0]) break;
 		}
-		if(i==n) printf("No\n");
+		if(i==n) my_printf("No\n");
 		else
 		{
 			for(i=0;i<n;i++)
@@ -30,7 +30,7 @@ int main_bench()
 			}
 			for(i=1;i<n;i++)
 			{
-				if(num[i]!=num[0])	{printf("%d\n",num[i]);break;}
+				if(num[i]!=num[0])	{my_printf("%d\n",num[i]);break;}
 			}
 		}
 	}

@@ -3,9 +3,9 @@
 int main_bench() {
 	int n,i;
 	char a[9999][256],*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 
 	}
          	for(i=0;i<n;i++){

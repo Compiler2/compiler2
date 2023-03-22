@@ -21,8 +21,8 @@ int main_bench()
 		i=i+1;
 	}
 	s=strcmp(a,b);
-	if(s<0) printf("<\n");
-    if(s==0) printf("=\n");	
-    if(s>0) printf(">\n");
+	if(s<0) my_printf("<\n");
+    if(s==0) my_printf("=\n");	
+    if(s>0) my_printf(">\n");
 	return 0;
 }

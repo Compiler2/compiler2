@@ -12,5 +12,5 @@ int main_bench()
         *s=*t+*(t+1);
     }
     *s=*t+*p;
-    printf("%s",family);
+    my_printf("%s",family);
 }

@@ -2,7 +2,7 @@
 
 int main_bench()
 {int n,s[7],i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 if(n<1000){
 	s[1]=n/100;
 	s[2]=(n-s[1]*100)/50;
@@ -10,7 +10,7 @@ if(n<1000){
 	s[4]=(n-s[1]*100-s[2]*50-s[3]*20)/10;
 	s[5]=(n-s[1]*100-s[2]*50-s[3]*20-s[4]*10)/5;
 	s[6]=n%5;
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",s[1],s[2],s[3],s[4],s[5],s[6]);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",s[1],s[2],s[3],s[4],s[5],s[6]);
 }
 return 0;
 }

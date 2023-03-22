@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char jj[n][256];
     for(i=0;i<n;i++){
-        scanf("%s",&jj[i]);
+        my_scanf("%s",&jj[i]);
         for(k=0;jj[i][k]!='\0';k++){
             if(jj[i][k]=='A'){
                 jj[i][k]='T';
@@ -17,7 +17,7 @@ int main_bench(){
                 jj[i][k]='C';
             }
         }
-        printf("%s\n",jj[i]);
+        my_printf("%s\n",jj[i]);
        
     }
     return 0;    

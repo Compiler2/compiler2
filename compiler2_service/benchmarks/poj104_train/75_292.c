@@ -34,6 +34,6 @@ int main_bench()
 	for(i=0;i<t;i++)
 		if(d[i]>j)
 			j=d[i];
-	printf("%d %d",n,j);
+	my_printf("%d %d",n,j);
 	return 0;
 }

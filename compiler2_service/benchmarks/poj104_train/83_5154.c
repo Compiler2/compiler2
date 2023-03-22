@@ -2,19 +2,19 @@
 
 int main_bench(){
     int n,a=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int xf[n-1],cj[n-1];
     double jd[n-1],GPA,z=0;
     for(int i=0;i<n;i++){
         if(i==n-1){
-            scanf("%d\n",&xf[i]);
+            my_scanf("%d\n",&xf[i]);
         }
         else{
-            scanf("%d",&xf[i]);
+            my_scanf("%d",&xf[i]);
         }
     } 
     for(int i=0;i<n;i++){
-        scanf("%d\n",&cj[i]);
+        my_scanf("%d\n",&cj[i]);
     }
     for(int i=0;i<n;i++){
         if(cj[i]<=100&&cj[i]>=90){
@@ -62,7 +62,7 @@ int main_bench(){
         a+=xf[i] ;
     }
     GPA=z/a;
-    printf("%.2lf",GPA);
+    my_printf("%.2lf",GPA);
     return 0;
 }
 

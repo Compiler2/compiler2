@@ -6,11 +6,11 @@ int main_bench()
 	void f(char a[],int b[]);
 	int c[26]={0},d[26]={0};
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	f(a,c);
 	f(b,d);
-	if(g(c,d,0)==1) printf("YES\n");
-	else printf("NO\n");
+	if(g(c,d,0)==1) my_printf("YES\n");
+	else my_printf("NO\n");
 }
 int g(int a[],int b[],int n)
 {

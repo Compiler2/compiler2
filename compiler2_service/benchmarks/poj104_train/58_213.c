@@ -4,7 +4,7 @@ main_bench()
 {
       int n,l,p1,p2,p3,p4,c=2;
       char a[100];
-      scanf("%d",&n);getchar ();
+      my_scanf("%d",&n);getchar ();
       for(int i=1;i<=n;i++)
       {
               
@@ -25,15 +25,15 @@ main_bench()
                                     }
                             }
                             else
-                            printf("1\n");
+                            my_printf("1\n");
                             
                   }
               if(c==1)
-                  printf("1\n");
+                  my_printf("1\n");
               else
                  { 
                   if(l!=1)
-              printf("0\n");}
+              my_printf("0\n");}
               c=2;
       }
       getchar();getchar();getchar();getchar();getchar();getchar();getchar();

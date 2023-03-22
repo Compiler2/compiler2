@@ -15,16 +15,16 @@ int main_bench()
 {
 	int m,x,num;
 	num=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(x=2;x<=m-2;x++)
 	{
 		if(sushu(x)+sushu(x+2)==4)
 		{
-			printf("%d %d\n",x,x+2);
+			my_printf("%d %d\n",x,x+2);
 		    num++;
 		}
 	}
 	if(num==0)
-	    printf("empty");
+	    my_printf("empty");
     return 0;
 }

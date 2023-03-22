@@ -3,12 +3,12 @@
 int num[1000][1000];
 int main_bench(){
 	int k,i,j;
-	scanf("%d", &k);
+	my_scanf("%d", &k);
 	for(i=0;i<k;i++)
 	{
 		for(j=0;j<k;j++)
 		{
-		    scanf("%d", &num[i][j]);
+		    my_scanf("%d", &num[i][j]);
 		}
 	}
 	int m,n,p,q,s,w;
@@ -42,6 +42,6 @@ int main_bench(){
 		}
 	}
 	s=(n-2)*(q-2);
-	printf("%d", s);
+	my_printf("%d", s);
 	return 0;
 }

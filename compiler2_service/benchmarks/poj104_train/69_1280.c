@@ -7,12 +7,12 @@ int main_bench()
     for(int i=0;i<252;i++)
     c[i]=0;
     int x[251],y[251];
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
     int la=strlen(a);
     int lb=strlen(b);
     if(la==1&&lb==1&&a[0]=='0'&&b[0]=='0')
     {
-      printf("0\n");
+      my_printf("0\n");
       return 0;
     }
     int len=la>lb?la:lb;
@@ -49,8 +49,8 @@ int main_bench()
     for(i=len;i>=0;i--)
     if(c[i]!='0'&&c[i]!=0)break;
     for(;i>=0;i--)
-    printf("%c",c[i]);
-    printf("\n");
+    my_printf("%c",c[i]);
+    my_printf("\n");
     
     return 0;
 }

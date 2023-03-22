@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	int t=0,m,l,k;
 	int i=strlen(s)-1;
 	int j=strlen(w)-1;
@@ -24,5 +24,5 @@ int main_bench()
 			break;
 
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 }

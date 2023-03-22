@@ -3,18 +3,18 @@
 int a,b,c[20],d[20],s[20],l,i,j;
 void shuru()
 {
-  scanf("%d%d",&a,&b);
+  my_scanf("%d%d",&a,&b);
   for(i=0;i<a;i++)
-  scanf("%d",&c[i]);
+  my_scanf("%d",&c[i]);
   for(i=0;i<b;i++)
-  scanf("%d",&d[i]);
+  my_scanf("%d",&d[i]);
 
 }
 int shuchu(int s[])
 {
   for(i=0;i<a+b-1;i++)
-  printf("%d ",s[i]);
-  printf("%d",s[a+b-1]);
+  my_printf("%d ",s[i]);
+  my_printf("%d",s[a+b-1]);
 return 0;
 }
 int paixu (int f[],int k)

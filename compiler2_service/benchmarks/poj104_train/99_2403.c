@@ -6,9 +6,9 @@ int main_bench()
  int sz[100];
  int i;
  int a=0,b=0,c=0,d=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-      scanf("%d",&sz[i]);
+      my_scanf("%d",&sz[i]);
       if(sz[i]>=1&&sz[i]<=18){
        a+=1;
       }else if(sz[i]>18&&sz[i]<=35){
@@ -21,9 +21,9 @@ int main_bench()
 
  }
 
- printf("1-18: %.2lf%%\n",(double)a*100/n);
- printf("19-35: %.2lf%%\n",(double)b*100/n);
- printf("36-60: %.2lf%%\n",(double)c*100/n);
- printf("60??: %.2lf%%",(double)d*100/n);
+ my_printf("1-18: %.2lf%%\n",(double)a*100/n);
+ my_printf("19-35: %.2lf%%\n",(double)b*100/n);
+ my_printf("36-60: %.2lf%%\n",(double)c*100/n);
+ my_printf("60??: %.2lf%%",(double)d*100/n);
  return 0;
 }

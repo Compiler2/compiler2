@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,s[500],i,z[500],m=0,k,j,r,l=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(s[i]));
+		my_scanf("%d",&(s[i]));
 		if((s[i])%2==1){
 			z[l]=s[i];
 			m++;
@@ -24,10 +24,10 @@ int main_bench(){
 	}
 	for(k=0;k<m;k++){
 		if(k<m-1){
-	printf("%d,",z[k]);
+	my_printf("%d,",z[k]);
 	}
 		if(k==m-1){
-			printf("%d",z[k]);
+			my_printf("%d",z[k]);
 	}
 	}
 		return 0;

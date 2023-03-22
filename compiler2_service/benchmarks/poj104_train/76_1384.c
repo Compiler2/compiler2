@@ -3,9 +3,9 @@
 int main_bench()
 {
 int x[100],y[100],n,i,j,a,b,c,d,p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %d",&x[i],&y[i]);}
+my_scanf("%d %d",&x[i],&y[i]);}
 for(i=n-1;i>=0;i--){
 for(j=0;j<i;j++){
 if(x[j]>x[j+1]){
@@ -24,9 +24,9 @@ for(i=0;i<n;i++){
 if(k>=x[i]&&k<=y[i])
 p++;}
 if(p==0){
-printf("no");
+my_printf("no");
 return 0;}
 }
-printf("%d %d",c,d);
+my_printf("%d %d",c,d);
 return 0;
 }

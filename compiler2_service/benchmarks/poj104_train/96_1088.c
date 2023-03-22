@@ -5,14 +5,14 @@ main_bench()
 {
       char bei[100]={'\0'},shang[100]={'\0'};
       int i,wei,a;
-      scanf("%s",bei);
+      my_scanf("%s",bei);
       for(i=0;;i++)
       {if(bei[i+1]=='\0')
       {wei=i;
       break;}}
       
       if(wei<1)
-      {printf("0\n%c\n",bei[0]);}
+      {my_printf("0\n%c\n",bei[0]);}
       
       if(wei>=1)
       {a=10*(bei[0]-'0')+bei[1]-'0';
@@ -32,8 +32,8 @@ main_bench()
                   shang[wei-1]='\0';}   
        
        
-       printf("%s\n",shang);
-       printf("%d\n",a);
+       my_printf("%s\n",shang);
+       my_printf("%d\n",a);
        }
    
       }

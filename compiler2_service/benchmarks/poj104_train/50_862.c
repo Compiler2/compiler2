@@ -5,7 +5,7 @@ int main_bench()
     int w;
     int week[11];
     int i;
-    scanf("%d", &w);
+    my_scanf("%d", &w);
     week[0]=w;
     week[1]=(week[0]+3)%7;
     week[2]=week[1];
@@ -26,7 +26,7 @@ int main_bench()
     for(i=0;i<12;i++)
     {
         if(week[i]==7)
-            printf("%d\n", i+1);
+            my_printf("%d\n", i+1);
     }
 	return 0;
 }

@@ -20,8 +20,8 @@ void insert(char a[15])
 			a[l+i]=c;
 		}
 		for(i=0;i<j-2;i++)
-			printf("%c",a[i]);
-		    printf("%c\n",a[j-2]);
+			my_printf("%c",a[i]);
+		    my_printf("%c\n",a[j-2]);
 }
 int main_bench()
 {

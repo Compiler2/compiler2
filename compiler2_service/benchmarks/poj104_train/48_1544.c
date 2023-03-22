@@ -34,16 +34,16 @@ void printarray(int a[11][11])
     for (i=1;i<=9;i++)
         for (j=1;j<=9;j++)
         {
-            printf("%d",a[i][j]);
-            if (j!=9) printf(" ");
-            else printf("\n");
+            my_printf("%d",a[i][j]);
+            if (j!=9) my_printf(" ");
+            else my_printf("\n");
         }
 }
 
 int main_bench()
 {
     int m,n,i;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int a[11][11]={0},b[11][11]={0};
     a[5][5]=m;
     for (i=0;i<=n;i++)

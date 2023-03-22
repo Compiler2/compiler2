@@ -5,7 +5,7 @@ int main_bench()
 	int **sl,a,b,i,j,m,c,d;
 	int row,col;
     int n=0;
-	scanf("%d,%d",&row,&col);
+	my_scanf("%d,%d",&row,&col);
 	sl=(int**)malloc(row*sizeof(int*));
 
 	for(i=0;i<row;i++)
@@ -13,7 +13,7 @@ int main_bench()
 		sl[i]=(int*)malloc(col*sizeof(int));
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&sl[i][j]);
+			my_scanf("%d",&sl[i][j]);
 		}
 	}
 	for(i=0;i<row;i++)
@@ -35,7 +35,7 @@ int main_bench()
 						   break;
 					   if(d==row-1)
 					   {
-						   printf("%d+%d\n",a,b);
+						   my_printf("%d+%d\n",a,b);
 						   n++;
 					   }
 				   }
@@ -43,6 +43,6 @@ int main_bench()
 		   }
 		}
 	}
-	if(n==0)printf("No\n");
+	if(n==0)my_printf("No\n");
 
 }

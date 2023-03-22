@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,shousuo[101],shuzhang[101],xiaoshi[101],k=0,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 		for(i=0;i<n;i++){
-			scanf("%d%d",&shousuo[i],&shuzhang[i]);
+			my_scanf("%d%d",&shousuo[i],&shuzhang[i]);
 		}
 				for(i=0;i<n;i++){
 xiaoshi[i]=0;
@@ -24,7 +24,7 @@ xiaoshi[0]=xiaoshi[i];
 xiaoshi[i]=t;
 		}
 		}
-		printf("%d",xiaoshi[0]);
+		my_printf("%d",xiaoshi[0]);
 	return 0;
 		}
 

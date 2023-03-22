@@ -10,11 +10,11 @@ void swap(int*a,int*b);
 int main_bench()
 {
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=0,j=0,total[1000000];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&student[i].xuehao,&student[i].yuwen,&student[i].shuxue);
+		my_scanf("%d%d%d",&student[i].xuehao,&student[i].yuwen,&student[i].shuxue);
 		total[i]=student[i].yuwen+student[i].shuxue;
 	}
 	for(i=0;i<3;i++)
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	for(i=0;i<3;i++)
 	{
-		printf("%d %d\n",student[i].xuehao,total[i]);
+		my_printf("%d %d\n",student[i].xuehao,total[i]);
 	}
 	return 0;
 }

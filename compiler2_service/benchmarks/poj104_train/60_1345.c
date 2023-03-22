@@ -4,14 +4,14 @@ int main_bench()
 {
     int sushu(int x);
     int N,n;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     if(N<=4)
-    printf("empty");
+    my_printf("empty");
     else
     {for(n=1;n<=(N-2);n++)
     if(sushu(n)==1)
     if(sushu(n+2)==1)
-    printf("%d %d\n",n,(n+2));}        
+    my_printf("%d %d\n",n,(n+2));}        
 }
 int sushu(int x)
 {

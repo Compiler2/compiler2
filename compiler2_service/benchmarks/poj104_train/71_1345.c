@@ -7,10 +7,10 @@ int main_bench(){
 	int n,i;
 	int year[200],mon1[200],mon2[200],a[200];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&year[i],&mon1[i],&mon2[i]);
+		my_scanf("%d %d %d",&year[i],&mon1[i],&mon2[i]);
 	}
 
 	for(i=0;i<n;i++){
@@ -20,10 +20,10 @@ int main_bench(){
 
 	for(i=0;i<n;i++){
 		if(a[i]%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 

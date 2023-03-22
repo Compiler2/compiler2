@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,g;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=(a-a%100)/100;
 	a=a-100*b;
 	
@@ -22,7 +22,7 @@ int main_bench()
 
 	g=a;
 
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",b,c,d,e,f,g);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",b,c,d,e,f,g);
 
 	return 0;
 }

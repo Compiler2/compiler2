@@ -3,10 +3,10 @@
 int main_bench()
 {
   int i,j,n,k,l=0,s[1000],h[1000][1000];
-  scanf("%d %d",&n,&k);
+  my_scanf("%d %d",&n,&k);
   for(i=0;i<n;i++)
   {
-    scanf("%d",&s[i]);
+    my_scanf("%d",&s[i]);
   }
   for(i=0;i<n;i++)
   {
@@ -27,11 +27,11 @@ int main_bench()
   }
   if(l>0)
   {
-    printf("yes");
+    my_printf("yes");
   }
   else
   {
-    printf("no");
+    my_printf("no");
   }
   return 0;
 } 

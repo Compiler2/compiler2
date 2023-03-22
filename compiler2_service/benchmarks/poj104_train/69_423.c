@@ -7,7 +7,7 @@ int main_bench()
       int a[1000],b[1000],c[1000];
       char stra[1000],strb[1000];
        
-      scanf("%s%s",stra,strb);
+      my_scanf("%s%s",stra,strb);
       
       la=strlen(stra);
       lb=strlen(strb);
@@ -47,9 +47,9 @@ int main_bench()
             
            
             if(b[0]==1)
-            printf("%d",1);
+            my_printf("%d",1);
             for (i=t;i<la;i++)
-            {printf("%d",a[i]-2*'0');}
+            {my_printf("%d",a[i]-2*'0');}
             
       }
         if(la<lb)
@@ -86,7 +86,7 @@ int main_bench()
                   }         
                    
              for(i=t;i<l;i++)
-            {printf("%d",strb[i]-'0');}}
+            {my_printf("%d",strb[i]-'0');}}
             else
             {    
                  c[l]=1;
@@ -113,13 +113,13 @@ int main_bench()
                         t=t+1;
                   }
                  if (c[0]==1)
-                 printf("%d",1);
+                 my_printf("%d",1);
                  for(i=t;i<l;i++)
-                 printf("%d",strb[i]-'0');               
+                 my_printf("%d",strb[i]-'0');               
                 
             }
              for (i=0;i<la;i++)
-            {printf("%d",a[i]-2*'0');}
+            {my_printf("%d",a[i]-2*'0');}
             
       }
         
@@ -153,7 +153,7 @@ int main_bench()
                t=t+1;}
                         
              for(i=t;i<l;i++)
-            {printf("%d",stra[i]-'0');}}
+            {my_printf("%d",stra[i]-'0');}}
             else
             {    
                  c[l]=1;
@@ -174,13 +174,13 @@ int main_bench()
                  }
                  
                  if (c[0]==1)
-                 printf("%d",1);
+                 my_printf("%d",1);
                  for(i=0;i<l;i++)
-                 printf("%d",stra[i]-'0');               
+                 my_printf("%d",stra[i]-'0');               
                 
             }
              for (i=0;i<lb;i++)
-            {printf("%d",a[i]-2*'0');}
+            {my_printf("%d",a[i]-2*'0');}
             
       }
         
@@ -188,7 +188,7 @@ int main_bench()
     
     
     if((la==1)&&(lb==1)&&(stra[0]=='0')&&(strb[0]=='0'))
-    printf("%d",0);
+    my_printf("%d",0);
     
     
     

@@ -7,7 +7,7 @@ int main_bench(){
 	int sz2[100];
 	int m1,m2,i,t,a;
 		a=0;
-	scanf("%s %s",&zfc1,&zfc2);
+	my_scanf("%s %s",&zfc1,&zfc2);
 	m1=strlen(zfc1);
 	m2=strlen(zfc2);
 	for(i=0;i<52;i++){
@@ -31,7 +31,7 @@ int main_bench(){
 			a=a+1;
 		}
 	}
-	if(a==52){printf("YES");}
-	else{printf("NO");}
+	if(a==52){my_printf("YES");}
+	else{my_printf("NO");}
 	return 0;
 }

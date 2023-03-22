@@ -3,19 +3,19 @@
 int main_bench()
 {
  int n,i,s=0;
- scanf("%d",&n);
- printf("\n");
+ my_scanf("%d",&n);
+ my_printf("\n");
  int a[n],b[n];
  double c[n],sum=0,x;
  for(i=0;i<n;i++)
  {
-  scanf("%d ",&a[i]);
+  my_scanf("%d ",&a[i]);
   s=s+a[i];
  }
- printf("\n");
+ my_printf("\n");
  for(i=0;i<n;i++)
  {
-  scanf("%d ",&b[i]);
+  my_scanf("%d ",&b[i]);
   if(b[i]>89) c[i]=4.0;
   else if(b[i]>84) c[i]=3.7;
   else if(b[i]>81) c[i]=3.3;
@@ -28,9 +28,9 @@ int main_bench()
   else c[i]=0;
   sum=sum+c[i]*a[i];
  }
-  printf("\n");
+  my_printf("\n");
   x=sum/s;
-  printf("%.2lf\n",x);
+  my_printf("%.2lf\n",x);
   return 0;
 }
  

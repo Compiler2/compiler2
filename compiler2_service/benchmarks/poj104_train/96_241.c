@@ -21,7 +21,7 @@ main_bench()
       k=i;
       if(k==0||(k==1&&a[0]=='1'&&a[1]<='2'))
       {
-          printf("0\n");
+          my_printf("0\n");
           puts(a);
       }
       else
@@ -35,15 +35,15 @@ main_bench()
           }
           i=1;
           if(b[0]!='0')
-          printf("%c",b[0]);
+          my_printf("%c",b[0]);
           while(i<k)
           {
-          printf("%c",b[i]);
+          my_printf("%c",b[i]);
           i++;
           }
           if(b[k]!='0')
-          printf("%c",b[k]);
-          printf("\n%c",a[k]);
+          my_printf("%c",b[k]);
+          my_printf("\n%c",a[k]);
       }
       getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();
 }

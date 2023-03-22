@@ -5,11 +5,11 @@ main_bench()
 {
       int i,j,k=0,n,m,a,b,c;
       int pm[13]={0,31,28,31,30,31,30,31,31,30,31,30,31},rm[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=1;i<=n;i++)
       {
 k=0;
-                       scanf("%d %d %d",&a,&b,&c);
+                       my_scanf("%d %d %d",&a,&b,&c);
                        if(c<b)
                        {
                               m=c;
@@ -22,9 +22,9 @@ k=0;
                                         for(j=b;j<c;j++)
                                         k=k+rm[j];
                                         if(k%7==0)
-                                        printf("YES\n");
+                                        my_printf("YES\n");
                                         else
-                                        printf("NO\n");   
+                                        my_printf("NO\n");   
                                  
                                            }
                       
@@ -33,9 +33,9 @@ k=0;
                              for(j=b;j<c;j++)
                              k=k+pm[j];
                              if(k%7==0)
-                                        printf("YES\n");
+                                        my_printf("YES\n");
                                         else
-                                        printf("NO\n"); 
+                                        my_printf("NO\n"); 
                                                           
                        }
       

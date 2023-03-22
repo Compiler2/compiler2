@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,m,i,j,sum,temp,k,f,d,e; 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     sum=0;
@@ -11,10 +11,10 @@ int main_bench()
                     f=0;
                     d=0;
                     e=0;
-                    scanf("%d",&m);
+                    my_scanf("%d",&m);
                     for(j=0;j<m;j++)
                     {
-                                    scanf("%d",&k);
+                                    my_scanf("%d",&k);
                                     if((k+d*3+1)<59)
                                     {
                                                     d++;
@@ -33,7 +33,7 @@ int main_bench()
                                     }
                     }
                     sum=60-(3*m)+temp+(2*f)+3*e;
-                    printf("%d\n",sum);
+                    my_printf("%d\n",sum);
     }
     return 0;
 }

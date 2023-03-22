@@ -2,10 +2,10 @@
 
 int main_bench()
 {int n,i,j,chan,countor;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int* num=(int*)malloc(n*sizeof(int));
  for(i=0;i<n;i++)
-    scanf("%d",num+i);
+    my_scanf("%d",num+i);
  
  for(i=0;i<n;i++)
     for(j=0;j<n-i-1;j++)
@@ -30,8 +30,8 @@ for(i=0,countor=0;i<n;i++)
 	 else
 	 {  
 		 countor--;
-		 if(countor==0) printf("%d",*(num+i));
-		 else printf("%d,",*(num+i));
+		 if(countor==0) my_printf("%d",*(num+i));
+		 else my_printf("%d,",*(num+i));
 	 }
  }
 return 0;

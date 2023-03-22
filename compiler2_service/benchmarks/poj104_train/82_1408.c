@@ -5,9 +5,9 @@ int main_bench(){
 	int sz[200];
 	x=0;
 	c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=(n*2);i++){
-		scanf(" %d",&sz[i]);
+		my_scanf(" %d",&sz[i]);
 	}
 	for(i=1;i<=(n*2-1);i+=2){
 		if(sz[i]>=90&&sz[i]<=140&&sz[(i+1)]<=90&&sz[(i+1)]>=60){
@@ -24,7 +24,7 @@ int main_bench(){
 			c=x;
 		x=0;
 	}
-		printf("%d", c);
+		my_printf("%d", c);
 		return 0;
 
 	}

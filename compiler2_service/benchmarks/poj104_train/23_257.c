@@ -12,9 +12,9 @@ int main_bench()
         {
            j=i+1;
            while(j<n)
-           {printf("%c",str[j]);
+           {my_printf("%c",str[j]);
             j=j+1;}
-          printf(" ");
+          my_printf(" ");
           str[i]='\0';
          }
         if(i==0)

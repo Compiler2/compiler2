@@ -13,9 +13,9 @@ int main_bench()
 		else
 		length=length+1;
 		if(ch[i]!=' '&&ch[i+1]==' ')
-		printf("%d,",length);
+		my_printf("%d,",length);
 		if(ch[i]!=' '&&ch[i]!='\0'&&ch[i+1]=='\0')
-		printf("%d",length);
+		my_printf("%d",length);
 	}
 	
 }

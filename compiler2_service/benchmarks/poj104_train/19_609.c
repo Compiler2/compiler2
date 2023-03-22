@@ -32,6 +32,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k-1;i++)
-	printf("%s ",str4[i]);
-	printf("%s\n",str4[k-1]);
+	my_printf("%s ",str4[i]);
+	my_printf("%s\n",str4[k-1]);
 }

@@ -5,15 +5,15 @@ int main_bench()
 	int num,m,n;
 	n=0;
 	char c;
-	scanf("%d%c",&m,&c);
+	my_scanf("%d%c",&m,&c);
 	if(c!=',')
-		printf("No");
+		my_printf("No");
 	
 	else
 	{
 	while(c==',')
 	{
-		scanf("%d%c",&num,&c);
+		my_scanf("%d%c",&num,&c);
 		if (num>m)
 		{
 		     n=m;
@@ -26,11 +26,11 @@ int main_bench()
 		}
 	}
 	if (n==0)
-		printf("No");
+		my_printf("No");
 	else if(m!=n)
-		printf("%d",n);
+		my_printf("%d",n);
 	else
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

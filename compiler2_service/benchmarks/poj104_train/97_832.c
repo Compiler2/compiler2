@@ -3,7 +3,7 @@
 int main_bench()
 {
  int n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int bai,wushi,ershi,shi,wu,yi;
  int yu1,yu2,yu3,yu4,yu5;
  bai=(n-n%100)/100;
@@ -30,12 +30,12 @@ int main_bench()
  yu5=yu4-wu*5;
  yi=yu5;
 
- printf("%d\n",bai);
- printf("%d\n",wushi);
- printf("%d\n",ershi);
- printf("%d\n",shi);
- printf("%d\n",wu);
- printf("%d\n",yi);
+ my_printf("%d\n",bai);
+ my_printf("%d\n",wushi);
+ my_printf("%d\n",ershi);
+ my_printf("%d\n",shi);
+ my_printf("%d\n",wu);
+ my_printf("%d\n",yi);
     return 0;
 }
 

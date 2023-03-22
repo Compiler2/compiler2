@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,p=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[10000];
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(int k=1;k<n;k++)
 	{
 		for(int m=0;m<k;m++)
@@ -22,7 +22,7 @@ int main_bench()
 		}
 		if(p==0)
 			{
-			printf(",%d",a[k]);
+			my_printf(",%d",a[k]);
 			}
 		else
 			{

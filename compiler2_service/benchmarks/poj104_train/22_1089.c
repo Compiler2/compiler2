@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c!=',')
 			break;
 	}
@@ -25,9 +25,9 @@ int main_bench()
 	}
 	if(a[max]==sec||sec==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
-	printf("%d",sec);
+	my_printf("%d",sec);
 	return 0;
 } 

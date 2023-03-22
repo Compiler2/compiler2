@@ -4,10 +4,10 @@ int main_bench()
 {
 	char a[100]={0},b[100]={0},t;
 	int i,j,l;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if (strlen(a)!=strlen(b)) 
-		printf("NO");
+		my_printf("NO");
 	else 
 		{
 			l=strlen(a);
@@ -19,8 +19,8 @@ int main_bench()
 						b[i]=b[j];
 						b[j]=t;
 					}
-			if (strcmp(a,b)==0) printf("YES");
-			else printf("NO");
+			if (strcmp(a,b)==0) my_printf("YES");
+			else my_printf("NO");
 		}
 	return 0;
 }

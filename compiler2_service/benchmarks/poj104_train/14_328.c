@@ -11,10 +11,10 @@ struct student
 int main_bench()
 {
     int i,n,j,s=0,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d %d",&student[i].num,&student[i].yw,&student[i].sx);
+        my_scanf("%d %d %d",&student[i].num,&student[i].yw,&student[i].sx);
         student[i].he=student[i].yw+student[i].sx;
     }
     for(i=0;i<n;i++)
@@ -28,7 +28,7 @@ int main_bench()
         for(j=0;j<n;j++)
         {
             if(student[j].he==m)
-            {printf("%d %d\n",student[j].num,student[j].he);
+            {my_printf("%d %d\n",student[j].num,student[j].he);
 			student[j].he=0;s=s+1;if(s==3)
             {goto guiyi;}}
             

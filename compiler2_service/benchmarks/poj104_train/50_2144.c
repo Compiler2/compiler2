@@ -4,11 +4,11 @@ int main_bench()
 {
 	int day(int m,int w);
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		if(day(i,w))
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	}
 }
 

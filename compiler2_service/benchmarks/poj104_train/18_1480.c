@@ -43,15 +43,15 @@ int main_bench()
 {
 int n,i,j,k;
 int matrix[100][100]={{0}},sum=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(k=1;k<=n;k++)
 {
 sum=0;
 for(i=0;i<=n-1;i++)
 {
 for(j=0;j<=n-1;j++)
-scanf("%d",&matrix[i][j]);
+my_scanf("%d",&matrix[i][j]);
 }
-printf("%d\n",func(matrix,n,sum));
+my_printf("%d\n",func(matrix,n,sum));
 }
 }

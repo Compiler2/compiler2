@@ -7,9 +7,9 @@ main_bench()
 		float yuwen,shuxue,sum;
 	}stu[100000],t;
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	  {scanf("%d %f %f",&stu[i].id,&stu[i].yuwen,&stu[i].shuxue);
+	  {my_scanf("%d %f %f",&stu[i].id,&stu[i].yuwen,&stu[i].shuxue);
 	   stu[i].sum=stu[i].yuwen+stu[i].shuxue;}
     for(i=0;i<3;i++)
       for(j=n-1;j>i;j--)
@@ -20,5 +20,5 @@ main_bench()
        	stu[j-1]=t;
        }
     for(i=0;i<3;i++)
-     printf("%d %g\n",stu[i].id,stu[i].sum);
+     my_printf("%d %g\n",stu[i].id,stu[i].sum);
 }

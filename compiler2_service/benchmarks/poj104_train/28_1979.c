@@ -42,8 +42,8 @@ int main_bench()
     }
  }
  for(l=0;l<f;l++){
-   printf("%d,",h[l]);
+   my_printf("%d,",h[l]);
  }
- printf("%d",h[f]);
+ my_printf("%d",h[f]);
  return 0;
 }

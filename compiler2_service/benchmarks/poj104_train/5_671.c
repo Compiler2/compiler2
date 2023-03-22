@@ -4,20 +4,20 @@ int main_bench(){
  int i,q=0;
  double n,A,B,p=0.0;
  char a[500],b[500];
- scanf("%lf",&n);
+ my_scanf("%lf",&n);
  char c=getchar();
  gets(a);
  gets(b);
  A=strlen(a);
  B=strlen(b);
 if(A!=B){
-  printf("error");
+  my_printf("error");
  }
  if(A==B){
   for(i=0;i<A;i++){
    if((a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G')||(b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G')){
     q=1;
-    printf("error");
+    my_printf("error");
     break;
    }
   }
@@ -28,9 +28,9 @@ if(A!=B){
     }
    }
    if((p/A)>n){
-    printf("yes");
+    my_printf("yes");
             }else{
-    printf("no");
+    my_printf("no");
    }
   }
  }

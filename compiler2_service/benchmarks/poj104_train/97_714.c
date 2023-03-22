@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a1=0,a2=0,a3=0,a4=0,a5=0,a6=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(;;)
 	{
 		if(n-100>=0)
@@ -58,11 +58,11 @@ int main_bench()
 		}
 		else break;
 	}
-	printf("%d\n",a1);
-	printf("%d\n",a2);
-	printf("%d\n",a3);
-	printf("%d\n",a4);
-	printf("%d\n",a5);
-	printf("%d\n",a6);
+	my_printf("%d\n",a1);
+	my_printf("%d\n",a2);
+	my_printf("%d\n",a3);
+	my_printf("%d\n",a4);
+	my_printf("%d\n",a5);
+	my_printf("%d\n",a6);
 	return 0;
 } 

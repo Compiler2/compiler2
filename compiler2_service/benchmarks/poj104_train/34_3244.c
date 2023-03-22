@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int num1,num2;
-	scanf("%d",&num1);
+	my_scanf("%d",&num1);
 	if (num1==1)
-		printf("End");
+		my_printf("End");
 	else
 	{
 		if (num1%2==0)
@@ -15,9 +15,9 @@ int main_bench()
 		while (num2!=1)
 		{
 			if (num1%2==0)
-				printf("%d/2=%d\n",num1,num2);
+				my_printf("%d/2=%d\n",num1,num2);
 			else
-				printf("%d*3+1=%d\n",num1,num2);
+				my_printf("%d*3+1=%d\n",num1,num2);
 			num1=num2;
 			if (num1%2==0)
 				num2=num1/2;
@@ -25,10 +25,10 @@ int main_bench()
 				num2=num1*3+1;
 		}
 		if (num1%2==0)
-			printf("%d/2=%d\n",num1,num2);
+			my_printf("%d/2=%d\n",num1,num2);
 		else
-			printf("%d*3+1=%d\n",num1,num2);
-		printf("End");
+			my_printf("%d*3+1=%d\n",num1,num2);
+		my_printf("End");
 	}
 	return 0;
 }

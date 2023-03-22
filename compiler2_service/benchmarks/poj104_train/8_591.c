@@ -5,14 +5,14 @@ int main_bench()
 	void abc(int c[],int p);
 	int m,n,i,j;
 	int a[100],b[100];
-	scanf("%d",&m);
-	scanf("%d",&n);
+	my_scanf("%d",&m);
+	my_scanf("%d",&n);
 	for(i=0;i<m;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(j=0;j<n;j++)
-	scanf("%d",&b[j]);
+	my_scanf("%d",&b[j]);
 	abc(a,m);
-	printf(" ");
+	my_printf(" ");
 	
 	abc(b,n);
     
@@ -33,7 +33,7 @@ void abc(int c[],int p)
 	}
 	}
 	for(i=0;i<p-1;i++)
-	printf("%d ",c[i]);
-	printf("%d",c[i]);
+	my_printf("%d ",c[i]);
+	my_printf("%d",c[i]);
 	
 }

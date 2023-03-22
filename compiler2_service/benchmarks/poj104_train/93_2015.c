@@ -3,24 +3,24 @@
 int main_bench()
 {
 	int k,flag3=0,flag5=0,flag7=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	if(k%3==0)
-	{printf("3");
+	{my_printf("3");
 	flag3=1;
 	}
 	if(k%5==0)
 	{flag5=1;
-		if(flag3==0) printf("5");
-		else printf(" 5");
+		if(flag3==0) my_printf("5");
+		else my_printf(" 5");
 	}
 	if(k%7==0)
 	{flag7=1;
 		if(flag3==1||flag5==1)
-			printf(" 7");
-		else printf("7");
+			my_printf(" 7");
+		else my_printf("7");
 	}
-	if(flag3==0&&flag5==0&&flag7==0) printf("n");
-	printf("\n");		
+	if(flag3==0&&flag5==0&&flag7==0) my_printf("n");
+	my_printf("\n");		
 }
 
 

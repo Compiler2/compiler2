@@ -46,22 +46,22 @@ int main_bench()
 	{
 		if(num[i]==a[n-1]&&i!=0)
 		{for(k=b[i-1]+1;k<b[i];k++)
-		printf("%c",str[k]);break; 	}
+		my_printf("%c",str[k]);break; 	}
 		if(num[i]==a[n-1]&&i==0)
 		{for(k=0;k<b[i];k++)
-		printf("%c",str[k]);break; 	}
+		my_printf("%c",str[k]);break; 	}
 
 	}
-     	printf("\n");   
+     	my_printf("\n");   
 	for(i=0;i<n;i++)
 	{		
 		if(num[i]==a[0]&&i!=0)
 		{for(k=b[i-1]+1;k<b[i];k++)
-		printf("%c",str[k]);break;}
+		my_printf("%c",str[k]);break;}
 		if(num[i]==a[0]&&i==0)
 		{for(k=0;k<b[i];k++)
-		printf("%c",str[k]);break; 	}
+		my_printf("%c",str[k]);break; 	}
 		
 	}
-	printf("\n");
+	my_printf("\n");
 }

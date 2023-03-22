@@ -5,11 +5,11 @@ int main_bench()
 	int m,i,j,c;
 	int a,b;
 	double s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int *sz=(int*)malloc(sizeof(int)*m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -24,7 +24,7 @@ int main_bench()
 			a=c;
 			c=0;
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

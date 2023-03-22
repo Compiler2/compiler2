@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,i,j,a[101][2],s=0,b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-		   scanf("%d",&a[i][j]);
+		   my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -37,7 +37,7 @@ int main_bench(){
 		b=s;
 	}
 	
-		printf("%d",b);
+		my_printf("%d",b);
 
 
 	return 0;

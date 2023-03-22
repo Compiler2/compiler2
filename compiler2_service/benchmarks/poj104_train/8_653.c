@@ -19,13 +19,13 @@ void hanshu()
 	int temp;
 	int z,d,s;
 
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 	for(j=0;j<n;j++)
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 
 	for(k=1;k<n;k++)
 	{
@@ -59,10 +59,10 @@ void hanshu()
 	for(s=m;s<m+n;s++)
 		c[s]=b[s-m];
 
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 
 	for(z=1;z<n+m;z++)
-		printf(" %d",c[z]);
+		my_printf(" %d",c[z]);
 
 }
 

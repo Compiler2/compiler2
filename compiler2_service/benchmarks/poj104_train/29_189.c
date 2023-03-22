@@ -16,12 +16,12 @@ int main_bench(){
 		i++;
 	}
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int o,j=0;
 	while(j<n){
-		scanf("%d",&sc[j]);
+		my_scanf("%d",&sc[j]);
 		o=sc[j]-1;
-		printf("%.3f\n",sz[o]);
+		my_printf("%.3f\n",sz[o]);
 		j++;
 	}
 

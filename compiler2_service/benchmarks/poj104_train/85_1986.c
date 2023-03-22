@@ -3,10 +3,10 @@
 
 int main_bench(){
     int n,i,s[100],j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char a[n][20];
     for(i=0;i<n;i++){
-        scanf("%s",a[i]);
+        my_scanf("%s",a[i]);
          }
          for(i=0;i<n;i++){
              s[i]=0;
@@ -17,7 +17,7 @@ int main_bench(){
                  }
                  else if((a[i][j]>='A'&&a[i][j]<='Z')||(a[i][j]>='a'&&a[i][j]<='z')||(a[i][j]=='_')||(a[i][j]>='0'&&a[i][j]<='9')) s[i]=1;
                  else {s[i]=0; break;}
-             }     if(s[i]==0) printf("no\n");else printf("yes\n"); 
+             }     if(s[i]==0) my_printf("no\n");else my_printf("yes\n"); 
          }
          
          return 0;

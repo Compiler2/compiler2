@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int max=0,submax=0,i,n,x;
-	scanf("%d/n",&n);
+	my_scanf("%d/n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 	if (i==0)
 	{
 		max=x;
@@ -39,7 +39,7 @@ int main_bench()
 
 	}
 	}
-    printf("%d\n",max);
-	printf("%d\n",submax);
+    my_printf("%d\n",max);
+	my_printf("%d\n",submax);
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
   char zfc[100][100];
   int i,j,len,k=1,wz[100];
   gets(s);
-  scanf("%s%s",a,b);
+  my_scanf("%s%s",a,b);
   len= strlen(s);
   wz[0]=0-1;
   for ( i = 0; i<len; i++ ){
@@ -22,18 +22,18 @@ int main_bench()
 	  zfc[i][j-wz[i]-1]='\0';
   }
   if(strcmp(zfc[0],a)!=0){
-		  printf("%s",zfc[0]);
+		  my_printf("%s",zfc[0]);
 	  
 	  }else{
-		  printf("%s",b);
+		  my_printf("%s",b);
 	  }			 
    
   for(i=1;i<k;i++){
 	  if(strcmp(zfc[i],a)!=0){
-		  printf(" %s",zfc[i]);
+		  my_printf(" %s",zfc[i]);
 	  
 	  }else{
-		  printf(" %s",b);
+		  my_printf(" %s",b);
 	  }	
   }
 

@@ -5,7 +5,7 @@ int main_bench()
      int y1,m1,d1,y2,m2,d2;
 	 int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	 int i,j,l1=0,l2=0;
-	 scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	 my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 
 	 for(i=1;i<m1;i++)
 	     l1+=m[i];
@@ -35,7 +35,7 @@ int main_bench()
 		 }
 	 }
 
-	 printf("%d",l2-l1);
+	 my_printf("%d",l2-l1);
 
          
 }

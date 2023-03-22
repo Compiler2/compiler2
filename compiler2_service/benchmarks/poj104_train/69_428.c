@@ -56,9 +56,9 @@ int main_bench()
      if(k<251)
      {for(i=k;i<251;i++)
       {c[i]=c[i]+48;
-       printf("%c",c[i]);}}
+       my_printf("%c",c[i]);}}
      else
-     printf("0");
+     my_printf("0");
       
       
       return 0;

@@ -16,19 +16,19 @@ int main_bench()
         d[j]='\0';
         if(strcmp(b,d)==0)
 		{
-			printf("%s",c);
+			my_printf("%s",c);
 		}
         else
         {
-			printf("%s",d);
+			my_printf("%s",d);
         }
 		if(i==k)
 		{
-			printf("\0");
+			my_printf("\0");
 		}
 		else 
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

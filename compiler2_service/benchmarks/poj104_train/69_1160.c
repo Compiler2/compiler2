@@ -13,7 +13,7 @@ int main_bench()
 		c[i]='0';
 	for(i=0;;i++,la++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]=='\n')
 		{
 			a[i]='0';
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	for(i=0;;i++,lb++)
 	{
-		scanf("%c",&b[i]);
+		my_scanf("%c",&b[i]);
 		if(b[i]=='\n')
 		{
 			b[i]='0';
@@ -45,7 +45,7 @@ int main_bench()
 		if(c[i]=='0')
 			continue;
 		for(;i<250;i++)
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 	}
-	printf("%c\n",c[250]);
+	my_printf("%c\n",c[250]);
 }

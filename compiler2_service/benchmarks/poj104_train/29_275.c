@@ -4,16 +4,16 @@ int main_bench()
 {
     int n,i,j,a,p=1,q=1,e;
     float  sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
-        scanf("%d",&a);
+        my_scanf("%d",&a);
         for(j=1;j<=a;j++){
            e=p;
            p=p+q;
            q=e;
            sum+=(float)p/q;  
         }
-        printf("%.3f\n",(float)sum);
+        my_printf("%.3f\n",(float)sum);
         sum=0;
         p=1;
         q=1;

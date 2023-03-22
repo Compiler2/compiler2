@@ -16,7 +16,7 @@ int main_bench()
 	while((a[i]==b[i])&&(a[i]!='\0'))
 		i++;
 	if((a[i]=='\0')&&(b[i]=='\0'))
-     printf("=\n");
-	else if(a[i]>b[i]) printf(">\n");
-		else printf("<\n");
+     my_printf("=\n");
+	else if(a[i]>b[i]) my_printf(">\n");
+		else my_printf("<\n");
 }

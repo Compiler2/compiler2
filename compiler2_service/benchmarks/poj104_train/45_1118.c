@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char m[50],n[50];
-	scanf("%s %s",m,n);
+	my_scanf("%s %s",m,n);
     int t,i,p,r,j,k,w=0;
 	t=strlen(m);
 	r=strlen(n);
@@ -24,7 +24,7 @@ int main_bench()
 		}
 		if(p==1)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			w=1;
 		}
 	}

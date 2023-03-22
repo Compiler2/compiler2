@@ -14,7 +14,7 @@ int f(int max,int i,int sum)
 }
 int main_bench()
 {
-	int i;scanf("%d",&n);
-	for(i=0;i<n;i++)scanf("%d",&k[i]);
-	printf("%d",f(2147483647,0,0));
+	int i;my_scanf("%d",&n);
+	for(i=0;i<n;i++)my_scanf("%d",&k[i]);
+	my_printf("%d",f(2147483647,0,0));
 }

@@ -3,10 +3,10 @@
 int main_bench(){
 
 int n,a,b,x=0,y=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(int i=0;i<n;i++){
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
 	if(a==0&&b==0){
 		x=x;
 	}if(a==0&&b==1){
@@ -28,13 +28,13 @@ for(int i=0;i<n;i++){
 	}
 }
 if(x>y){
-	printf("A");
+	my_printf("A");
 }
 if(x<y){
-	printf("B");
+	my_printf("B");
 }
 if(x==y){
-	printf("Tie");
+	my_printf("Tie");
 }
 
 return 0;

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,a[1000],b[1000],k=0,c[1000]={0},max;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	if((a[i]>=90)&&(a[i]<=140)&&(b[i]>=60)&&(b[i]<=90))
 	{
 		k=k+1;
@@ -25,6 +25,6 @@ int main_bench()
 			max=c[i];
 	}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 return 0;
 }

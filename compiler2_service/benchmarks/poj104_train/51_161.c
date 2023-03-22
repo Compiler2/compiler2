@@ -22,10 +22,10 @@ void ngram(char str[],int n)
 			max=count;
 	}
 	if(max==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<Len-n+1;i++)
 		{
 			count=1;
@@ -35,7 +35,7 @@ void ngram(char str[],int n)
 					count++;
 			}
 			if(count==max)
-				printf("%s\n",ng[i]);
+				my_printf("%s\n",ng[i]);
 		}
 	}
 }
@@ -43,6 +43,6 @@ int main_bench()
 {
 	int n;
 	char str[500];
-	scanf("%d%s",&n,str);
+	my_scanf("%d%s",&n,str);
 	ngram(str,n);
 }

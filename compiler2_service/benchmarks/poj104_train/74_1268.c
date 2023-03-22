@@ -8,7 +8,7 @@ int main_bench()
  int j=0;
  int ifhw(int num);
  int ifs(int num);
- scanf("%d%d",&m,&n);
+ my_scanf("%d%d",&m,&n);
  for(i=m;i<=n;i++)
  { if (ifhw(i))
 	 if (ifs(i))
@@ -17,11 +17,11 @@ int main_bench()
 
  j--;
  if(t[0]==0)
-  printf("no");
+  my_printf("no");
   else
   {for(i=0;i<j;i++)
-   printf("%d,",t[i]);
-   printf("%d\n",t[j]);}
+   my_printf("%d,",t[i]);
+   my_printf("%d\n",t[j]);}
 }
 
 

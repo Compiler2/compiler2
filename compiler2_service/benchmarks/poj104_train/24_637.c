@@ -33,7 +33,7 @@ int main_bench(){
 		n=i;
 		n1=j;
 	}
-	printf("%s\n%s",w[m1],w[n1]);
+	my_printf("%s\n%s",w[m1],w[n1]);
 }
 	
 

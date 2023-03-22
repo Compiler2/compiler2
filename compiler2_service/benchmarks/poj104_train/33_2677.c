@@ -5,11 +5,11 @@
 int main_bench()
 {
 	int n,x;
-	scanf("%d ",&n);
+	my_scanf("%d ",&n);
 	for(x=0;x<n;x++)
 	{
 		char c[256]={'\0'};
-		scanf("%s",c);
+		my_scanf("%s",c);
 		int i,len;
 		len=strlen(c);
 		for(i=0;i<len;i++)
@@ -36,9 +36,9 @@ int main_bench()
 			}
 		}
 		if(x<n-1)
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 		else
-			printf("%s",c);
+			my_printf("%s",c);
 	}
 	return 0;
 }

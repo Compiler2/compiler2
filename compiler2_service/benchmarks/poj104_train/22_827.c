@@ -18,8 +18,8 @@ int main_bench()
 {
 	int a[300],i=0,t1,t2,t,k;
 	char s[300];
-	scanf("%d",&a[0]);
-	scanf("%c",&s[0]);
+	my_scanf("%d",&a[0]);
+	my_scanf("%c",&s[0]);
 	t1=a[0];
 	t2=a[0];
 	if(s[0]==',')
@@ -27,8 +27,8 @@ int main_bench()
 		i=1;
 		do
 		{
-			scanf("%d",&a[i]);
-			scanf("%c",&s[i]);
+			my_scanf("%d",&a[i]);
+			my_scanf("%c",&s[i]);
 			if(a[i]==t1||a[i]==t2)
 			{
 				i++;
@@ -47,11 +47,11 @@ int main_bench()
 			}
 		}while(s[i-1]==',');
 		if(t1==t2)
-			printf("No");
+			my_printf("No");
 		else
-			printf("%d",t2);
+			my_printf("%d",t2);
 	}
 	else
-		printf("No");
+		my_printf("No");
     return 0;
 }

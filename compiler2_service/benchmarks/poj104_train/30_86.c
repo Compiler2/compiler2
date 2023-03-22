@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,sum=0,sum1=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<7)
 	{
 		for(i=1;i<=n;i++)
@@ -24,5 +24,5 @@ int main_bench()
 		}
 		sum=sum-sum1+91;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

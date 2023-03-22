@@ -90,8 +90,8 @@ int main_bench()
 
 		}
 	}
-	printf("%s\n",d);
-	printf("%s\n",x);
+	my_printf("%s\n",d);
+	my_printf("%s\n",x);
 }
 
 	

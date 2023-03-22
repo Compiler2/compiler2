@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,j,a,b,flag=0,z[10000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         if(a-b==0)z[a-1]=1;
         for(j=a;j<b;j++)z[j]=1;
     }
@@ -31,7 +31,7 @@ int main_bench(){
             break;
         }
     }
-    if(flag!=2) printf("no");
-    else printf("%d %d",a,b);
+    if(flag!=2) my_printf("no");
+    else my_printf("%d %d",a,b);
     return 0;
 }

@@ -37,10 +37,10 @@ int main_bench()
 	}
 	  
 		for(i=*(b+k)+1;i<*(b+k+1);i++)
-			printf("%c",*(p+i));
-			printf("\n");
+			my_printf("%c",*(p+i));
+			my_printf("\n");
 		for(i=*(b+t)+1;i<*(b+t+1);i++)	
-	    printf("%c",*(p+i));
+	    my_printf("%c",*(p+i));
 		return 0;
 	}
 		

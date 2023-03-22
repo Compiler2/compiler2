@@ -9,12 +9,12 @@ main_bench()
     };
     int n,a,b,m;
     double c;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct line *p=(struct line *)malloc(n*sizeof(struct line));
     for(a=0;a<=n-1;a++)
     {
-        scanf("%s",((p+a)->x));
-        scanf("%lf",&((p+a)->y));
+        my_scanf("%s",((p+a)->x));
+        my_scanf("%lf",&((p+a)->y));
     }
     for(a=0;a<=n-2;a++)
     {
@@ -56,7 +56,7 @@ main_bench()
     for(a=0;a<=n-1;a++)
     {
         if(*((p+a)->x)=='m')
-        printf("%.2lf ",((p+a)->y));
+        my_printf("%.2lf ",((p+a)->y));
         else;
     }
     for(a=0;a<=n-1;a++)
@@ -70,9 +70,9 @@ main_bench()
         if(*((p+a)->x)=='f')
         {
             if(a!=m)
-            printf("%.2lf ",((p+a)->y));
+            my_printf("%.2lf ",((p+a)->y));
             else
-            printf("%.2lf",((p+a)->y));
+            my_printf("%.2lf",((p+a)->y));
         }
         else;
     }

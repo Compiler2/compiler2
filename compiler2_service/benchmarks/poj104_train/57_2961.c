@@ -4,10 +4,10 @@ int main_bench()
 {
   char str[100];
   int n,i,d,c,m;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
    {
-     scanf("%s",str);
+     my_scanf("%s",str);
      m=strlen(str);
 	   c=strlen(str)-2;
 	   d=strlen(str)-3;
@@ -15,7 +15,7 @@ int main_bench()
         str[c]='\0';
      else if(str[d]=='i') 
          str[d]='\0';
-     printf("%s\n",str);
+     my_printf("%s\n",str);
   }
    return 0;
 }

@@ -18,7 +18,7 @@ int main_bench()
 {
 	int y,m,d;
 	char month[7][5]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
-	scanf("%d%d%d",&y,&m,&d);
-	printf("%s",month[week(y,m,d)]);
+	my_scanf("%d%d%d",&y,&m,&d);
+	my_printf("%s",month[week(y,m,d)]);
 	return 0;
 }

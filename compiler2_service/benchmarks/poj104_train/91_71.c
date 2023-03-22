@@ -14,8 +14,8 @@ int main_bench()
 		a[i]=*p+*(p+1);
 		if(p==ch+len-1)
 		a[i]=*(p)+ch[0];
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 		i++;
-	}printf("\n");
+	}my_printf("\n");
 	return 0;
 }

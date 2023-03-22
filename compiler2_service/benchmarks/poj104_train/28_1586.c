@@ -29,9 +29,9 @@ int main_bench()
 	}
 	for(i=0;i<e;i++)
 	{
-		printf("%d,",s[i]);
+		my_printf("%d,",s[i]);
 	}
-	printf("%d\n",s[e]);
+	my_printf("%d\n",s[e]);
 	return 0;
 }
 

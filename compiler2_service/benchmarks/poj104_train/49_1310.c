@@ -20,8 +20,8 @@ main_bench()
             if(m==0)
             {
                 for(c=b;c<=b+a;c++)
-                printf("%c",x[c]);
-                printf("\n");
+                my_printf("%c",x[c]);
+                my_printf("\n");
             }
             else;
         }

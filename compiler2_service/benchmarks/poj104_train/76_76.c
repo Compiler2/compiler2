@@ -9,9 +9,9 @@ int main_bench(){
 	a=0;
 	result=0;
 	int line1[100],line2[100],minus[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&line1[i],&line2[i]);
+		my_scanf("%d %d",&line1[i],&line2[i]);
 	}
 	for(i=1;i<=n;i++){
 		for(j=0;j<n-i;j++){
@@ -67,12 +67,12 @@ int main_bench(){
 		if((line1[result]<=line1[i])&&(line2[result]>=line2[i])){
 			a++;
 		}else{
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(a==n){
-		printf("\n%d %d",line1[result],line2[result]);
+		my_printf("\n%d %d",line1[result],line2[result]);
 	}
 	return 0;
 }

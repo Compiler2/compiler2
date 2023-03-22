@@ -12,11 +12,11 @@ int main_bench()
 	for(ps=s;*ps!='\0';ps++)
 	{	
 		if(*ps>='0' && *ps<='9')
-			printf("%c",*ps);
+			my_printf("%c",*ps);
 		else
 		{
 			if(*(ps+1)<58 && *(ps+1)>47)
-				printf("\n");
+				my_printf("\n");
 		}
 
 	}

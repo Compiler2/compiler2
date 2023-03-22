@@ -7,6 +7,6 @@ int main_bench()
 	m=strlen(s);
 	for(i=0;i<m;i++)
 	{
-		if(s[i]>='0'&&s[i]<='9') printf("%c",s[i]);
-		if((s[i]>='0'&&s[i]<='9')&&(!(s[i+1]>='0'&&s[i+1]<='9'))) printf("\n");  
+		if(s[i]>='0'&&s[i]<='9') my_printf("%c",s[i]);
+		if((s[i]>='0'&&s[i]<='9')&&(!(s[i+1]>='0'&&s[i+1]<='9'))) my_printf("\n");  
 }}

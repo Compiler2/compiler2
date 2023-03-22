@@ -8,7 +8,7 @@ main_bench()
       if(c[1]=='\0')
       {
                     a=c[0]-'0';
-                    printf("0\n%d",a);
+                    my_printf("0\n%d",a);
       }
       else
       {
@@ -28,7 +28,7 @@ main_bench()
                                            c[i]=c[i+1];
                     }
           }
-          printf("%s\n%d",c,a);
+          my_printf("%s\n%d",c,a);
       }
 }               
                                

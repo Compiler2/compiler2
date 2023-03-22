@@ -20,10 +20,10 @@ int main_bench(){
 	wz2[k]=strlen(str)-1;
 
 	for(i=0;i<j-1;i++){
-	  printf("%d,",wz2[i]-wz1[i]+1);
+	  my_printf("%d,",wz2[i]-wz1[i]+1);
 	  
 	}
-	printf("%d",wz2[k]-wz1[j-1]+1);
+	my_printf("%d",wz2[k]-wz1[j-1]+1);
 	
 	return 0;
 }

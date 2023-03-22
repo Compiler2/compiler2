@@ -3,12 +3,12 @@
 int main_bench()
 {
  int n,i,j,a[100][100],m1,n1,m2,n2,t=0,S;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
 	 for(j=0;j<n;j++)
 	 {
-		 scanf("%d",&a[i][j]);
+		 my_scanf("%d",&a[i][j]);
 	 }
  }
  for(i=0;i<n;i++)
@@ -41,6 +41,6 @@ for(j=0;j<n;j++)
 	 }
  }
 S=(m2-m1-1)*(n2-n1-1);
-printf("%d",S);
+my_printf("%d",S);
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,t,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n/2;i++){
 		t=0;
 		p=0;
@@ -21,7 +21,7 @@ int main_bench()
 			}
 			if(p==1)break;
 		}
-		if(t==0&&p==0)printf("%d %d\n",i,n-i);
+		if(t==0&&p==0)my_printf("%d %d\n",i,n-i);
 	}
 	return 0;
 }

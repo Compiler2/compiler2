@@ -5,14 +5,14 @@ int main_bench()
 {
 	char a[101][101];
 	int n,i,j,m;
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 	for (i=0;i<n;i++){
 		for (j=0;j<n;j++){
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 	                  if('\n'==a[i][j]){--j;}
                                     }
 	                 }
-	scanf("%d",&m);
+	my_scanf("%d",&m);
          while(--m>0)
         {
 	for (i=0;i<n;i++)
@@ -72,7 +72,7 @@ int main_bench()
 
  
 
-    printf("%d\n",sum);
+    my_printf("%d\n",sum);
 
  
 

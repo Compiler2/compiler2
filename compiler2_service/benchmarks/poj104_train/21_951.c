@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,max,sum=0,b1=0,b2=0;
 	float ave;
 	unsigned int a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	ave=(float)sum/n;
@@ -24,8 +24,8 @@ int main_bench()
 			}
 		}
 	}
-	if((a[b2]-ave)>(ave-a[b1])) printf("%d",a[b2]);
-	else if((a[b2]-ave)<(ave-a[b1])) printf("%d",a[b1]);
-	else printf("%d,%d",a[b1],a[b2]);
+	if((a[b2]-ave)>(ave-a[b1])) my_printf("%d",a[b2]);
+	else if((a[b2]-ave)<(ave-a[b1])) my_printf("%d",a[b1]);
+	else my_printf("%d,%d",a[b1],a[b2]);
 	return 0;
 }

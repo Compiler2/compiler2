@@ -4,12 +4,12 @@
 int main_bench()
 {
     int n, i, max;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int len[250], a[250];
     char str[250][100];
 	for(i=0;i<n;i++)
 	{
-     scanf("%s", &str[i]);
+     my_scanf("%s", &str[i]);
 	 len[i]=strlen(str[i]);
 	
       a[i]=len[i];
@@ -22,11 +22,11 @@ int main_bench()
 	}
      for(i=0;i<sum;i++)
     {
-		if(a[i]==len[sum-1]){printf("%s\n", str[i]);break;}
+		if(a[i]==len[sum-1]){my_printf("%s\n", str[i]);break;}
 	}
 	   for(i=0;i<sum;i++)
     {
-		if(a[i]==len[0]){printf("%s\n", str[i]);break;}
+		if(a[i]==len[0]){my_printf("%s\n", str[i]);break;}
 	}
 	return 0;
 }

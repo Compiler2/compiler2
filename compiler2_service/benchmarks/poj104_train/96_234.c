@@ -9,7 +9,7 @@ main_bench()
     length=strlen(a);
     if((length==1)||((length==2)&&(a[0]=='1')&&(a[1]<'3')))
     {
-        printf("0\n");
+        my_printf("0\n");
         puts(a);
     }
     else
@@ -28,10 +28,10 @@ main_bench()
         }
             for(i=1;i<length-1;i++)
             {
-                printf("%c",b[i]);
+                my_printf("%c",b[i]);
 
             }
-            printf("\n%d",a[length-1]-'0');                
+            my_printf("\n%d",a[length-1]-'0');                
 
         }
         else
@@ -43,9 +43,9 @@ main_bench()
         }
             for(i=0;i<length-1;i++)
             {
-                printf("%c",b[i]);
+                my_printf("%c",b[i]);
             }
-            printf("\n%d",a[length-1]-'0');                
+            my_printf("\n%d",a[length-1]-'0');                
 
         }
 

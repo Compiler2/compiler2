@@ -24,20 +24,20 @@ int main_bench(){
 	        int result=strcmp(fz[k],z);
 		    if(result==0){
 			    strcpy(fz[k],t);
-			    printf("%s ",fz[k]);
+			    my_printf("%s ",fz[k]);
 			}
 		    else{
-			    printf("%s ",fz[k]);
+			    my_printf("%s ",fz[k]);
 			}
 		}
 		if(k==num-1){
             int result=strcmp(fz[k],z);
 		    if(result==0){
 			    strcpy(fz[k],t);
-			    printf("%s",fz[k]);
+			    my_printf("%s",fz[k]);
 			}
 		    else{
-			    printf("%s",fz[k]);
+			    my_printf("%s",fz[k]);
 			}
 		}
 

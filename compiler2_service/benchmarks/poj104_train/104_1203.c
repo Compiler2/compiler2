@@ -4,15 +4,15 @@
 int main_bench()
 {
 int x[1000],y[1000],i,j,a,b,m,n,p=0;
- scanf ("%d %d",&a,&b);
+ my_scanf ("%d %d",&a,&b);
  x[0]=a;y[0]=b;
 if (a==1||b==1)
 {
-  printf("1");
+  my_printf("1");
 }
 else if (a==b)
 { 
-	printf("%d",a);
+	my_printf("%d",a);
 
 } 
 
@@ -63,7 +63,7 @@ for (j=1;b>0;j++)
    {
      if (x[i]==y[j])
 	 {
-	    printf("%d",x[i]);
+	    my_printf("%d",x[i]);
         p=1;
 	 }
     if (p==1)

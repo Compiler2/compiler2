@@ -28,16 +28,16 @@ main_bench()
 	int a[5][5],i,j,n,m;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(change(n,m,a)==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<4;j++)
-				printf("%d ",c[i][j]);
-			printf("%d\n",c[i][4]);
+				my_printf("%d ",c[i][j]);
+			my_printf("%d\n",c[i][4]);
 		}
 	}
 	else
-		printf("error\n");
+		my_printf("error\n");
 }

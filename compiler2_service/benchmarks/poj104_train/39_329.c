@@ -12,10 +12,10 @@ int main_bench()
 	int grade_1,grade_2,paper;
 	char a,b;
 	char *winner;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&stu[i].name,&grade_1,&grade_2,&a,&b,&paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&grade_1,&grade_2,&a,&b,&paper);
 		stu[i].money=0;
 		if(grade_1>80&&paper>0)
 			stu[i].money+=8000;
@@ -37,5 +37,5 @@ int main_bench()
 			winner=stu[i].name;
 		}
 	}			
-	printf("%s\n%d\n%d",winner,max,sum);
+	my_printf("%s\n%d\n%d",winner,max,sum);
 }

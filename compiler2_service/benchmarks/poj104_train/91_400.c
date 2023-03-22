@@ -14,7 +14,7 @@ for(i=0;i<n;i++){
 	
 }
 s[n-1]=c;	
-printf("%s\n",s);
+my_printf("%s\n",s);
 return 0;
 }
 

@@ -9,9 +9,9 @@ main_bench(){
 		int l;
 	};
 	struct book bk[1000];
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=0; i<m; i++){
-		scanf("%d %s", &bk[i].num, bk[i].au);
+		my_scanf("%d %s", &bk[i].num, bk[i].au);
 		bk[i].l=strlen(bk[i].au);
 		for(j=0; j<bk[i].l; j++){
 			switch(bk[i].au[j]){
@@ -51,11 +51,11 @@ main_bench(){
 		}
 		else;
 	}
-	printf("%c\n%d", p+65, max);
+	my_printf("%c\n%d", p+65, max);
 	for(i=0; i<m; i++){
 		for(j=0; j<bk[i].l; j++){
 			if(bk[i].au[j]==p+65){
-				printf("\n%d", bk[i].num);
+				my_printf("\n%d", bk[i].num);
 				break;
 			}
 			else;

@@ -3,7 +3,7 @@
   int main_bench()
  {
   int a,b,c,x,y,z,i,n=0,e,f,h;
-  scanf("%d %d %d\n%d %d %d",&a,&b,&c,&x,&y,&z);
+  my_scanf("%d %d %d\n%d %d %d",&a,&b,&c,&x,&y,&z);
   for (i=a;i<x;i++)
   {if ((i%4==0&&i%100!=0)||(i%400==0)) n++;}
   {if ((a%4==0&&a%100!=0)||(a%400==0))
@@ -18,6 +18,6 @@
  else switch(y)
 {case 1:f=0;break;case 2:f=31;break;case 3:f=59;break;case 4:f=90;break;case 5:f=120;break;case 6:f=151; break;case 7:f=181;break; case 8:f=212;break; case 9:f=243;break;case 10:f=273; break;case 11:f=304; break;case 12:f=334;break;}}
 h=365*(x-a)+n+f+z-e-c;
- printf ("%d",h);
+ my_printf ("%d",h);
 }
   

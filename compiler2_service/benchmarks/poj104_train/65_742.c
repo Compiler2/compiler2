@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int sz[200],sc[200],n,i,a=0,b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&sz[i],&sc[i]);
+		my_scanf("%d %d",&sz[i],&sc[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]==sc[i]-1||sz[i]==sc[i]+2){
@@ -13,10 +13,10 @@ int main_bench(){
 			b++;}
 	}
 	if(a>b){
-		printf("A");}
+		my_printf("A");}
 	if(a<b){
-		printf("B");}
+		my_printf("B");}
 	if(a==b){
-		printf("Tie");}
+		my_printf("Tie");}
 	return 0;
 }

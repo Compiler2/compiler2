@@ -17,8 +17,8 @@ m=0;
   }
 s[j]=m;
 for(i=0;i<j;i++){
-printf("%d,",s[i]);
+my_printf("%d,",s[i]);
 }
-printf("%d",s[j]);
+my_printf("%d",s[j]);
 return 0;
    }

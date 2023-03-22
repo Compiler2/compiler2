@@ -2,14 +2,14 @@
 
 int main_bench()
 {int n,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int d[n],a[n];
 double GPA,k=0,y=0,j[n],x[n];
 for(i=0;i<n;i++){
- scanf("%lf ",&x[i]);
+ my_scanf("%lf ",&x[i]);
 }
 for(i=0;i<n;i++){
-  scanf("%d ",&d[i]);}
+  my_scanf("%d ",&d[i]);}
 for(i=0;i<n;i++){
   if(d[i]>=90&&d[i]<=100)
      j[i]=4.0;
@@ -36,6 +36,6 @@ for(i=0;i<n;i++){
  k+=j[i]*x[i];
  y+=x[i];}
 GPA=k/y;
-printf("%.2lf",GPA);
+my_printf("%.2lf",GPA);
 return 0;
 }

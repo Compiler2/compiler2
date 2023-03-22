@@ -5,7 +5,7 @@ int main_bench()
 	
 	int w,a,b,i;
 	
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	
 	for(i=1;i<=12;i++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==2)
@@ -24,7 +24,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==3)
@@ -33,7 +33,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==4)
@@ -42,7 +42,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==5)
@@ -51,7 +51,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==6)
@@ -60,7 +60,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==7)
@@ -69,7 +69,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==8)
@@ -78,7 +78,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==9)
@@ -87,7 +87,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==10)
@@ -96,7 +96,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==11)
@@ -105,7 +105,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 		if(i==12)
@@ -114,7 +114,7 @@ int main_bench()
 			b=a%7;
 			if(b==5)
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 

@@ -20,20 +20,20 @@ int main_bench()
 {
 	char a,s1[100],s2[100];
 	int i,s,j,k;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	j=strlen(s1);
 	k=strlen(s2);
 	if(j!=k)
-		printf("NO");
+		my_printf("NO");
 	else 
 	{
 			for(a='!';a<='~';a++)
 			{
 				s=compare(a,s1,s2);
 				if(s==0)
-				{printf("NO");break;}
+				{my_printf("NO");break;}
 			}
 			if(s==1)
-				printf("YES");
+				my_printf("YES");
 	}
 }

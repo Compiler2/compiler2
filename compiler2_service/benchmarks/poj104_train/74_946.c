@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,j,i,k=0,h,d,x,y,z;
 	int a[2000],b[10];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		for(j=2;j<i;j++)
@@ -38,12 +38,12 @@ int main_bench()
 				break;
 			if(j==5-d)
 			{z=z+1;
-			if(z==1)printf("%d",a[i]);
-			if(z>1)printf(",%d",a[i]);
+			if(z==1)my_printf("%d",a[i]);
+			if(z>1)my_printf(",%d",a[i]);
 			}
 		}
 	}
-	if(z==0)printf("no");
+	if(z==0)my_printf("no");
 
-	printf("\n");
+	my_printf("\n");
 }

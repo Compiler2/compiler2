@@ -47,17 +47,17 @@ int main_bench()
  int day(unsigned long,int,int);
  unsigned long y;
  int m,d,w;
- scanf("%ld %d %d",&y,&m,&d);
+ my_scanf("%ld %d %d",&y,&m,&d);
  w=(day(y,m,d)+y-1+(y-1)/4-(y-1)/100+(y-1)/400)%7;
  switch(w)
   {
-   case 1: printf("Mon.");break;
-   case 2: printf("Tue.");break;
-   case 3: printf("Wed.");break;
-   case 4: printf("Thu.");break;
-   case 5: printf("Fri.");break;
-   case 6: printf("Sat.");break;
-   case 0: printf("Sun.");break;
+   case 1: my_printf("Mon.");break;
+   case 2: my_printf("Tue.");break;
+   case 3: my_printf("Wed.");break;
+   case 4: my_printf("Thu.");break;
+   case 5: my_printf("Fri.");break;
+   case 6: my_printf("Sat.");break;
+   case 0: my_printf("Sun.");break;
   }
 
 }

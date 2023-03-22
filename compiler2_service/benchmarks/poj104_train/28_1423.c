@@ -19,10 +19,10 @@ int main_bench()
 		}
 		if(s[i]==' ')
 		{
-			printf("%d",a);	
+			my_printf("%d",a);	
 			if(i<k)
 			{
-				printf(",");
+				my_printf(",");
 			}
 		}
 		if(s[i]==' '&&s[i+1]!=' ')

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n, i, s;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int a[6];
 	a[0]=100;
 	a[1]=50;
@@ -18,7 +18,7 @@ int main_bench()
 	{
 		b[i]=(s-s%a[i])/a[i];
 		s=s-b[i]*a[i];
-		printf("%d\n", b[i]);
+		my_printf("%d\n", b[i]);
 	}
 	return 0;
 }

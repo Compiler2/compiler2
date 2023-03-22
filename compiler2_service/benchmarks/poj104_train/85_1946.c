@@ -2,10 +2,10 @@
 
 int main_bench(){
     int i,n,k,s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zfc[100][21];
     for(i=0;i<n;i++){
-        scanf("%s",zfc[i]);
+        my_scanf("%s",zfc[i]);
         if(zfc[i][0]==95||(zfc[i][0]>=65&&zfc[i][0]<=90)||(zfc[i][0]>=97&&zfc[i][0]<=122)){
             s=0;
             for(k=0;k<strlen(zfc[i]);k++){              
@@ -14,10 +14,10 @@ int main_bench(){
                 
             }  
             if(s==strlen(zfc[i])){
-                    printf("yes\n");
-                }else{printf("no\n");}
+                    my_printf("yes\n");
+                }else{my_printf("no\n");}
         }
-        else{printf("no\n");}
+        else{my_printf("no\n");}
     }
   return 0;  
 }

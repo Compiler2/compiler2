@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int k,i,num[500],s=0,num1[500],j,ex,t;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	for(i=0;i<k;i++)
 	{
 		if(num[i]%2==1)
@@ -27,8 +27,8 @@ int main_bench()
 	for(t=0;t<s;t++)
 	{
 		if(t!=0)
-			printf(",");
-		printf("%d",num1[t]);
+			my_printf(",");
+		my_printf("%d",num1[t]);
 	}
 	return 0;
 }

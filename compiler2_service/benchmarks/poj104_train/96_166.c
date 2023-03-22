@@ -4,7 +4,7 @@ int main_bench()
 {
      int m,n,i=0,k,t;
      char a[100]={0},b[100]={0};
-     scanf("%s",a);
+     my_scanf("%s",a);
      t=strlen(a);
      
      if(t==1)
@@ -35,9 +35,9 @@ int main_bench()
         }i=i-1;
      }
      for(k=0;k<=i;k++)
-     printf("%c",b[k]);
-     printf("\n");
-     printf("%d",n);
+     my_printf("%c",b[k]);
+     my_printf("\n");
+     my_printf("%d",n);
      getchar();getchar();
 }    
 

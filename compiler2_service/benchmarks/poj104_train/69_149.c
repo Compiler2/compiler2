@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s1[251],s2[251];
 	int  a1[251]={0},a2[251]={0},len1,len2,len,t[251]={0},i;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
 	if(len1>len2)len=len1;
@@ -29,7 +29,7 @@ int main_bench()
 		else break;
 	}
 	for(i=len-1;i>=0;i--)
-	printf("%d",t[i]);
+	my_printf("%d",t[i]);
 	return 0;
 }
 		

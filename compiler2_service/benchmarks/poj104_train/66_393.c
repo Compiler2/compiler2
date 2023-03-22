@@ -4,7 +4,7 @@ int Dijitian(int Y,int M,int D);
 int isRunNian(int Y);
 int main_bench(){
 int Y,M,D;
-scanf("%d%d%d",&Y,&M,&D);
+my_scanf("%d%d%d",&Y,&M,&D);
 int X1=0;
 int X2=0;
 int X;
@@ -15,22 +15,22 @@ X1 = X1% 7;
 X2=Dijitian(Y,M,D);
 X=X1+X2;
 if(X%7==1){
-printf("Mon.");
+my_printf("Mon.");
 }else if(X%7==2){
-printf("Tue.");
+my_printf("Tue.");
 }else if(X%7==3){
-printf("Wed.");
+my_printf("Wed.");
 }
 else if(X%7==4){
-printf("Thu.");
+my_printf("Thu.");
 }
 else if(X%7==5){
-printf("Fri.");
+my_printf("Fri.");
 }
 else if(X%7==6){
-printf("Sat.");
+my_printf("Sat.");
 }else if(X%7==0){
-printf("Sun.");
+my_printf("Sun.");
 }
 return 0;
 }

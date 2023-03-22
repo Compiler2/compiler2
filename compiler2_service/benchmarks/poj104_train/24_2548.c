@@ -6,11 +6,11 @@ int main_bench()
 	int max,min,p,q;
 	int len[200]={0};
 	char word[200][20];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 	}
     for(i=0;i<n;i++)
 	{
@@ -31,7 +31,7 @@ int main_bench()
 			 q=i;
 		}
 	}
-	printf("%s\n",word[p]);
-	printf("%s\n",word[q]);
+	my_printf("%s\n",word[p]);
+	my_printf("%s\n",word[q]);
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i=1,b=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n)
 	{
 		if(i!=17)
@@ -30,6 +30,6 @@ int main_bench()
 	}
 	
 	
-       printf("%d",b);
+       my_printf("%d",b);
 	   return 0;
 }

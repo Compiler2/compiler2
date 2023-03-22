@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,k,i,j,a=0,b,s1,s2; 
 	int x,y;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=1;a==0;i++)
 	{
 	   x=n*i+k;
@@ -25,5 +25,5 @@ int main_bench()
         
     }
 	
-	printf("%d\n",y);
+	my_printf("%d\n",y);
 }

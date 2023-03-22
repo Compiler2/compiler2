@@ -8,10 +8,10 @@ int main_bench(){
    for(i=0;i<n;i++){
        if(a[i]!=' '){
            j++;
-           if(i==n-1){printf("%d",j);}
+           if(i==n-1){my_printf("%d",j);}
        }
        else if(j!=0){
-           printf("%d,",j);
+           my_printf("%d,",j);
            j=0;
        }
    }

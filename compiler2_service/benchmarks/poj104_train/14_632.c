@@ -5,7 +5,7 @@ int main_bench()
 	  int n,i,j;
 	  float one=0,two=0,three=0,yi=0,er=0,san=0;
 	  float a[100000][2];
-	  scanf("%d",&n);
+	  my_scanf("%d",&n);
 	  struct Student
 	  {
 		  float xuehao;
@@ -13,7 +13,7 @@ int main_bench()
 		  float shuxue;
 	  } student;
 	  for (i=0;i<n;i++){
-		  scanf("%f %f %f",&student.xuehao,&student.yuwen,&student.shuxue);
+		  my_scanf("%f %f %f",&student.xuehao,&student.yuwen,&student.shuxue);
 		  for (j=0;j<2;j++){
 			  a[i][1]=student.yuwen+student.shuxue;  
 	          a[i][0]=i+1;
@@ -34,8 +34,8 @@ int main_bench()
 		  {		  three=a[i][1];
 		  san=a[i][0];  }
 	  }
-	   printf("%.0f %.0f\n",yi,one);
-	   printf("%.0f %.0f\n",er,two);
-	   printf("%.0f %.0f\n",san,three);
+	   my_printf("%.0f %.0f\n",yi,one);
+	   my_printf("%.0f %.0f\n",er,two);
+	   my_printf("%.0f %.0f\n",san,three);
 	   return 0;
 }

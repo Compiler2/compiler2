@@ -4,14 +4,14 @@
 int main_bench()
 {   
  int w;
- scanf("%d",&w);
+ my_scanf("%d",&w);
  int i,a,b;
  a=12; 
 b=a%7+w;
 b=b%7;
  if(b==5)
  {
- printf("1\n");
+ my_printf("1\n");
  }
 
  for(i=1;i<12;i++)
@@ -23,7 +23,7 @@ b=b%7;
 	b=b%7;
 
 		if(b==5)
-		printf("%d\n",i+1);
+		my_printf("%d\n",i+1);
     
 	}
 
@@ -34,7 +34,7 @@ b=b%7;
 		b=b%7;
 
        if(b==5)
-		printf("%d\n",i+1);
+		my_printf("%d\n",i+1);
 	}
 		else
 	{
@@ -42,7 +42,7 @@ b=b%7;
 	    b=a%7+b;
 		b=b%7;
        if(b==5)
-		printf("%d\n",i+1);
+		my_printf("%d\n",i+1);
 	}
 
 

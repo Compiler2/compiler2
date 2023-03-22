@@ -35,6 +35,6 @@ int houzi(int n,int k,int m)
 int main_bench()
 {
 	int n,k;
-	scanf("%d%d",&n,&k);
-	printf("%d",houzi(n,k,n));
+	my_scanf("%d%d",&n,&k);
+	my_printf("%d",houzi(n,k,n));
 }

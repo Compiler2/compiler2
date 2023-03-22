@@ -5,9 +5,9 @@ int main_bench(){
 	int nianlin[100];
 	int a=0,b=0,c=0,d=0;
 	double e,f,g,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&nianlin[i]);
+		my_scanf("%d",&nianlin[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,9 +32,9 @@ int main_bench(){
 	f=b*1.0/n*100;
 	g=c*1.0/n*100;
 	h=d*1.0/n*100;
-	printf("1-18: %.2lf%%\n",e);
-	printf("19-35: %.2lf%%\n",f);
-	printf("36-60: %.2lf%%\n",g);
-	printf("60??: %.2lf%%\n",h);
+	my_printf("1-18: %.2lf%%\n",e);
+	my_printf("19-35: %.2lf%%\n",f);
+	my_printf("36-60: %.2lf%%\n",g);
+	my_printf("60??: %.2lf%%\n",h);
 	return 0;
 }

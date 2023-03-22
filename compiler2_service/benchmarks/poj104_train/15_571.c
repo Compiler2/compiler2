@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int n,a,b=0,c=0,d=0,i,k,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(k=1;k<=n;k++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a==0)
 			{
 				b++;
@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 	max=((b-2*c)/2)*(c-2);
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }

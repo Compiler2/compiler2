@@ -6,7 +6,7 @@ main_bench()
   char a[100],b[100],c[30][100];
   int n,i,j,m1,m2;
 
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
  
   for(i=0;i<n;i++)
   {
@@ -32,8 +32,8 @@ main_bench()
   for(i=0;i<n;i++)
   {
 	  for(j=0;c[i][j]<10;j++)
-	     printf("%d",c[i][j]);
-	  printf("\n");
+	     my_printf("%d",c[i][j]);
+	  my_printf("\n");
   }
   
 }

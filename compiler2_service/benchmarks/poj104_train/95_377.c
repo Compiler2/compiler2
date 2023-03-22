@@ -21,15 +21,15 @@ int main_bench()
 	}
 	if(strcmp(s1,s2)==0)
 	{
-		printf("=\n");
+		my_printf("=\n");
 	}
 	else if(strcmp(s1,s2)<0)
 	{
-		printf("<\n");
+		my_printf("<\n");
 	}
 	else
 	{
-		printf(">\n");
+		my_printf(">\n");
 	}
 	return 0;
 }

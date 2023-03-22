@@ -5,19 +5,19 @@ int main_bench()
 	void swap(char str[]);
 	char a[100],b[100];
 	int len1,len2;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	if(len1!=len2)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		swap(a);
 		swap(b);
 		if(strcmp(a,b)==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 	}
 }
 

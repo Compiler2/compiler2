@@ -24,7 +24,7 @@ int main_bench()
 				}
 			}
 		}
-		printf("%d\n",judge);
+		my_printf("%d\n",judge);
 	}
 	return 0;
 }

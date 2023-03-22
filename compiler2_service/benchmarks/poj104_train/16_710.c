@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,e,f,g,h,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n%10;
 	e=n-a;
 	f=e/10;
@@ -19,14 +19,14 @@ int main_bench()
 		if(c==0)
 		{
 			if(b==0)
-				printf("%d",a);
+				my_printf("%d",a);
 			else
-				printf("%d%d",a,b);
+				my_printf("%d%d",a,b);
 		}
 		else
-			printf("%d%d%d",a,b,c);
+			my_printf("%d%d%d",a,b,c);
 	}
 	else
-		printf("%d%d%d%d",a,b,c,d);
+		my_printf("%d%d%d%d",a,b,c,d);
 	return 0;
 }

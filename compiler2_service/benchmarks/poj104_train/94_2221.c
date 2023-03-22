@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,max=1,m;
 	int sz[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{  
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		if(sz[i]>max&&sz[i]%2!=0)
 			max=sz[i];
 	}
@@ -15,13 +15,13 @@ int main_bench()
 	{   
 		
 		if(j==max)
-				printf("%d",j);
+				my_printf("%d",j);
 		else
 		{
 		for(m=0;m<n;m++)
 		{
 		     if(sz[m]==j)
-				printf("%d,",j);
+				my_printf("%d,",j);
 		}
 		}
 	}

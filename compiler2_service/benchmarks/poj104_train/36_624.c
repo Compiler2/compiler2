@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j,m,k=0;
 	char a[100],b[100],c;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	m=strlen(a);
 	n=strlen(b);
 	if(m!=n)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 	   for(i=0;i<m;i++)
@@ -34,8 +34,8 @@ int main_bench()
 			 break;
 	   }
 	   if(k==1)
-		   printf("YES");
+		   my_printf("YES");
 	   else
-		   printf("NO");
+		   my_printf("NO");
 	   }
 }

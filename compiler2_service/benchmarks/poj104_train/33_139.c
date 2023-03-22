@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char zfc[1000][300];
 	int k[1000];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 		k[i]=strlen(zfc[i]);
 	}
 	for(i=0;i<n;i++)
@@ -32,7 +32,7 @@ int main_bench()
 				zfc[i][j]='G';
 			}
 		}
-		printf("%s\n",zfc[i]);
+		my_printf("%s\n",zfc[i]);
 	}
 	return 0;
 }

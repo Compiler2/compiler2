@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,a;
 	char word[50][100];
 	char*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&word[i]);
+		my_scanf("%s",&word[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",word[i]);
+		my_printf("%s\n",word[i]);
 	}
 	return 0;
 }

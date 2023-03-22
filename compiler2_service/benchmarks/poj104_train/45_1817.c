@@ -3,7 +3,7 @@
 int main_bench(){
 	char word1[100],word2[100],*p1,*p2;
 	int i=0,len,j,num=0,a=0;
-	scanf("%s%s",word1,word2);
+	my_scanf("%s%s",word1,word2);
 	p1=word1;
 	len=strlen(word1);
 	for(p2=word2;*p2!='\0';p2++)
@@ -26,7 +26,7 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }
 		

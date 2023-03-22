@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,i=1,max,submax;
 	char p;
-	while(scanf("%d%c",&a,&p)&&p!='\n')
+	while(my_scanf("%d%c",&a,&p)&&p!='\n')
 	{
 		if(i==1)
 		{
@@ -30,7 +30,7 @@ int main_bench()
 	}
 	if(i==1)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
@@ -48,11 +48,11 @@ int main_bench()
 		}
 		if(submax==0)
 		{
-			printf("No");
+			my_printf("No");
 		}
 		else
 		{
-			printf("%d",submax);
+			my_printf("%d",submax);
 		}
 	}
 }

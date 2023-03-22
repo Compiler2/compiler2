@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,i,j,n,m,t=0,r=0,s=0;
 	int c[1000]={0};
     int d[1000]={0};
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	for(i=0;;i++)
 	{r++;
 		c[i]=a;
@@ -33,5 +33,5 @@ int main_bench()
 		}
 		}
 	}
-print:	printf("%d\n",t);
+print:	my_printf("%d\n",t);
 }

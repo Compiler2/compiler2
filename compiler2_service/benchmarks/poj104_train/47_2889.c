@@ -7,9 +7,9 @@ int main_bench()
    int *p,*p1;
    p=a;
    p1=b;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-   {  scanf("%d",p);
+   {  my_scanf("%d",p);
       *p1=*p;
 	  p1++;
       p++;
@@ -21,9 +21,9 @@ int main_bench()
    { *p=*(p1+n-1-i);
    }
   p=a;
-   printf("%d",*p);
+   my_printf("%d",*p);
    for(i=1;i<n;i++)
-	   printf(" %d",*(++p));
+	   my_printf(" %d",*(++p));
 
 	return 0;
 }

@@ -31,9 +31,9 @@ main_bench()
       int n;
       for(int i=1;i<=6;i++)
       {
-                       scanf("%d",&n);
+                       my_scanf("%d",&n);
                        n=reverse(n);
-                       printf("%d\n",n);
+                       my_printf("%d\n",n);
       }
 
 }

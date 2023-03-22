@@ -27,11 +27,11 @@ int main_bench()
 		len[i]=strlen(w[i]);
 		if(i!=t-1)
 		{
-		   printf("%d,",len[i]);
+		   my_printf("%d,",len[i]);
 		}
 		else
 		{
-			printf("%d",len[i]);
+			my_printf("%d",len[i]);
 		}
 	}
 	return 0;

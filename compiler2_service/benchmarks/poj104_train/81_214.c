@@ -24,14 +24,14 @@ int main_bench(){
 	
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 
 	exc(n,m);
 	if(exc(n,m)==0){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(j=0;j<5;j++){
 			e=sz[n][j];
@@ -40,9 +40,9 @@ int main_bench(){
 		}
 		for(row=0;row<5;row++){
 	    	for(col=0;col<4;col++){
-	    		printf("%d ",sz[row][col]);
+	    		my_printf("%d ",sz[row][col]);
 			}
-			printf("%d\n",sz[row][4]);
+			my_printf("%d\n",sz[row][4]);
 		}
 	}
 

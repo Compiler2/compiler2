@@ -3,10 +3,10 @@
 int main_bench()
 {
 	char str[100],str1[100];
-	scanf("%s %s",str,str1);
+	my_scanf("%s %s",str,str1);
 	int i,j,len = strlen(str),len1 = strlen(str1);
 	if(len != len1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else{
 		for(i = 0;i < len - 1;i++){
 			for(j = i + 1;j < len;j++){
@@ -27,9 +27,9 @@ int main_bench()
 			}
 		}
 		if(strcmp(str,str1) == 0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

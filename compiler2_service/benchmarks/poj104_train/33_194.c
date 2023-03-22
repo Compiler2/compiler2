@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,len,i,j;
 	char a[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a);
+		my_scanf("%s",&a);
 		len=strlen(a);
 		for(j=0;j<len;j++)
 		{
@@ -20,7 +20,7 @@ int main_bench()
 			}
 		}
 		a[len]=0;
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

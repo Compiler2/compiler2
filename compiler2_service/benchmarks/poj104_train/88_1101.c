@@ -9,7 +9,7 @@ int main_bench()
 	{
 		if(*a>='0'&&*a<='9')
 		{
-			printf("%c",*a);
+			my_printf("%c",*a);
 		}
 		else
 		{
@@ -21,11 +21,11 @@ int main_bench()
 			{
 				if(*(a-1)>='0'&&*(a-1)<='9')
 				{
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

@@ -4,8 +4,8 @@ int main_bench()
 {
         int year1,month1,day1,year2,month2,day2;
         int passday1,passday2;
-        scanf("%d%d%d",&year1,&month1,&day1);
-        scanf("%d%d%d",&year2,&month2,&day2);
+        my_scanf("%d%d%d",&year1,&month1,&day1);
+        my_scanf("%d%d%d",&year2,&month2,&day2);
 
         int Feb1,Feb2;
         int passday=0;
@@ -110,6 +110,6 @@ int main_bench()
 			else
 				passday -= 365;
 		}
-        printf("%d",passday);
+        my_printf("%d",passday);
         return 0;
 }

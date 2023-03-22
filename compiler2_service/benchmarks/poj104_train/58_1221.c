@@ -26,10 +26,10 @@ for(i=0;i<n;i++){
 		k=0;
 	}
 	if(k==len){
-		printf("1\n");
+		my_printf("1\n");
 	}
 	else{
-		printf("0\n");
+		my_printf("0\n");
 	}
 }
 return 0;

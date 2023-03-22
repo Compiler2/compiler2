@@ -14,7 +14,7 @@ int main_bench(){
                 i++;
             }
             *(p+i) = 0;
-            printf("%s\n", q);
+            my_printf("%s\n", q);
         }
     }
     return 0;

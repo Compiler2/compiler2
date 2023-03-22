@@ -4,10 +4,10 @@ int main_bench()
 {
 	char book[1000][20]={'\0'},name[1000][30]={'\0'};
 	int length,n,i,j,number[30]={0},memory,largest,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %s",book[i],name[i]);
+		my_scanf("%s %s",book[i],name[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 			memory=i;
 		}
 	}
-	printf("%c\n%d\n",'A'+memory,number[memory]);
+	my_printf("%c\n%d\n",'A'+memory,number[memory]);
 	for(i=0;i<n;i++)
 	{
 		length=strlen(name[i]);
@@ -35,7 +35,7 @@ int main_bench()
 		{
 			if(name[i][j]=='A'+memory)
 			{
-				printf("%s\n",book[i]);
+				my_printf("%s\n",book[i]);
 			}
 		}
 	}

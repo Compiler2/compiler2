@@ -8,9 +8,9 @@ struct patient{
 int main_bench(){
 
 	int i,j=0,m=0,n,k,p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf ("%s%d",pat[i].id,&pat[i].age);
+		my_scanf ("%s%d",pat[i].id,&pat[i].age);
 	}
 	for(i=0;i<n;i++){
 		if (pat[i].age>=60){
@@ -33,11 +33,11 @@ int main_bench(){
 				}
 			}
 			for(q=0;q<j;q++){
-			printf("%s",order[q].id);
-			printf ("\n");}
+			my_printf("%s",order[q].id);
+			my_printf ("\n");}
 			for(i=0;i<m;i++){
-			printf("%s",buffer[i].id);
-         	printf("\n");}
+			my_printf("%s",buffer[i].id);
+         	my_printf("\n");}
 
 		}
 		

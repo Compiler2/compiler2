@@ -17,6 +17,6 @@ int main_bench()
 	}
 	}
 	strncpy(string,str,n);
-	printf("%s",string);
+	my_printf("%s",string);
 	return 0;
 }

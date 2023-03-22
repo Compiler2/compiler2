@@ -18,11 +18,11 @@ int f(int a,int b)
 int main_bench()
 {
 	int n,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		int result = f(m,2);
-		printf("%d\n",result);
+		my_printf("%d\n",result);
 	}
 }

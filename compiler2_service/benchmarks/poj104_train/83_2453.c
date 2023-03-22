@@ -5,11 +5,11 @@ int main_bench(){
 
 int s,i,z=0,q,n,w;
 float a=0,d;
-scanf("%d",&n);int grade[n],num[n];float g[n];
+my_scanf("%d",&n);int grade[n],num[n];float g[n];
 for(i=0;i<n;i++){
-                  scanf("%d",&num[i]);
+                  my_scanf("%d",&num[i]);
                   }for(i=0;i<n;i++)
-                  {scanf("%d",&grade[i]);}
+                  {my_scanf("%d",&grade[i]);}
 for(i=0;i<n;i++){
           if(grade[i]<101&&grade[i]>89)g[i]=4.0;
     if(grade[i]<90&&grade[i]>84)
@@ -27,6 +27,6 @@ for(i=0;i<n;i++){
               z+=num[i];
               }       
                d=a/z;
-               printf("%.2f",d);                
+               my_printf("%.2f",d);                
 
 return 0;}

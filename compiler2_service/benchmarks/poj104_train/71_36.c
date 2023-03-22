@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[13];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a[1]=31;
 	a[2]=0;
 	a[3]=31;
@@ -22,7 +22,7 @@ int main_bench()
 	int sum=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&y1,&y2);
+		my_scanf("%d%d%d",&year,&y1,&y2);
 		if(y1>y2)
 		{
 			tmp=y1;
@@ -38,9 +38,9 @@ int main_bench()
 			}
 			if(sum%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
-			else 	printf("NO\n"); 
+			else 	my_printf("NO\n"); 
 
 			sum=0;
 		}
@@ -54,9 +54,9 @@ int main_bench()
 			}
 			if(sum%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
-			else 	printf("NO\n"); 
+			else 	my_printf("NO\n"); 
 
 			sum=0;
 		}

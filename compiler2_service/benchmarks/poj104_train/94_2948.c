@@ -3,9 +3,9 @@
 int main_bench(){
 	int i,j,k,s,maxIndex,N,e,m;
 	int sz[500];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-			scanf("%d",&(sz[i]));
+			my_scanf("%d",&(sz[i]));
 	}
 	for(k=1;k<=N;k++){
 		maxIndex=0;
@@ -22,13 +22,13 @@ int main_bench(){
 	}
 	for(s=0;s<N;s++){
 		if(sz[s]%2!=0){
-			printf("%d",sz[s]);
+			my_printf("%d",sz[s]);
 			break;
 		}
 	}
 	for(m=s+1;m<N;m++){
 		if(sz[m]%2!=0){
-			printf(",%d",sz[m]);
+			my_printf(",%d",sz[m]);
 		}
 	}
 		return 0;

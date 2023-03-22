@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,c[500]={0},max=0,i,j;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 char a[510];
 gets(a);
 int la=strlen(a);
@@ -27,10 +27,10 @@ if(c[i]>max)
 max=c[i];
 }
 if(max==1)
-printf("NO");
+my_printf("NO");
 else
 {
-printf("%d\n",max);
+my_printf("%d\n",max);
 for(i=0;i<=la-n;i++)
 {
 	if(c[i]==max)

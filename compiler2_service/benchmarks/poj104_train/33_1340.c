@@ -4,9 +4,9 @@
 int main_bench(){
     int n,i,j,k;
     char a[256],b[256];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",&a);
+        my_scanf("%s",&a);
         for(j=0;a[j]!='\0';j++){
             if(a[j]=='A'){
                 b[j]='T';
@@ -23,7 +23,7 @@ int main_bench(){
             b[j]='\0';
         }
     }
-     printf("%s\n",b);
+     my_printf("%s\n",b);
     }
     return 0;
 }

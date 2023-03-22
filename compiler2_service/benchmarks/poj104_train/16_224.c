@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int f;
-	scanf("%d",&f);
+	my_scanf("%d",&f);
 	if(f==10000)
-	{printf("00001\n");}
+	{my_printf("00001\n");}
 	else if(f>999&&f<=9999)
 	{int a,b,c,d;
 	a=1;
@@ -20,7 +20,7 @@ int main_bench()
 		d=1;c=c-1;
 	while(f-a*1000-b*100-c*10-d*1>=0)
 	{d++;}d=d-1;
-	printf("%d%d%d%d",d,c,b,a);}
+	my_printf("%d%d%d%d",d,c,b,a);}
     else if (f>99&&f<=999)
 		{int a,b,c;
 	a=1;
@@ -33,7 +33,7 @@ int main_bench()
 	while(f-a*100-b*10-c*1>=0)
 	{c++;}
 		c=c-1;
-		printf("%d%d%d",c,b,a);}
+		my_printf("%d%d%d",c,b,a);}
 	else if (f>9&&f<=99)
 		{int a,b;
 	a=1;
@@ -43,8 +43,8 @@ int main_bench()
 	while(f-a*10-b*1>=0)
 	{b++;}
 		b=b-1;
-		printf("%d%d",b,a);}
+		my_printf("%d%d",b,a);}
 	else 
-	{printf("%d",f);}
+	{my_printf("%d",f);}
 	return 0;
 }

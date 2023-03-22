@@ -4,9 +4,9 @@ int main_bench()
 {
 	int ori[300], fin[300];
 	int i, j, k, a, n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
-		scanf("%d", &ori[i]);
+		my_scanf("%d", &ori[i]);
 	fin[0]=ori[0];
 	k=1;
 	for(i=1; i<n; i++)
@@ -24,7 +24,7 @@ int main_bench()
 		}
 	}
 	for(i=0; i<k-1; i++)
-		printf("%d,", fin[i]);
-	printf("%d", fin[i]);
+		my_printf("%d,", fin[i]);
+	my_printf("%d", fin[i]);
          return 0;
 }

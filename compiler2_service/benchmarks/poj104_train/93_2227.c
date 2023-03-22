@@ -4,26 +4,26 @@ int main_bench()
 {
 	int i,a,b,c;
 	a=3;b=5;c=7;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	if(i%3==0)
 	{
 		if(i%5==0&&i%7==0)
-			printf("%d %d %d",a,b,c);
+			my_printf("%d %d %d",a,b,c);
 		else if(i%5==0&&i%7!=0)
-			printf("%d %d",a,b);
+			my_printf("%d %d",a,b);
 		else if(i%5!=0&&i%7==0)
-			printf("%d %d",a,c);
-		else printf("%d",a);
+			my_printf("%d %d",a,c);
+		else my_printf("%d",a);
 	}
 	else if(i%5==0)
 	{
 		if(i%7==0)
-			printf("%d %d",b,c);
-		else printf("%d",b);
+			my_printf("%d %d",b,c);
+		else my_printf("%d",b);
 	}
 	else if(i%7==0)
 	{
-		printf("%d",c);
+		my_printf("%d",c);
 	}
-	else printf("n");
+	else my_printf("n");
 }

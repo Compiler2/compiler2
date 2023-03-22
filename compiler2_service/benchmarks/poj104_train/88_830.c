@@ -7,11 +7,11 @@ int main_bench(){
 	gets(p);
 	for (i=0;i<strlen(p);i++)
 		if (*(p+i)>=48 && *(p+i)<=57) {
-			f=0;sum=0;printf("%c",*(p+i));
+			f=0;sum=0;my_printf("%c",*(p+i));
 		}
 		else {
 			sum++;
-			if (sum==1 && f==0) printf("\n");
+			if (sum==1 && f==0) my_printf("\n");
 		}
 	free(p);
 }

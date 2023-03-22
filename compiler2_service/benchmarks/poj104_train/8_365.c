@@ -7,7 +7,7 @@ int main_bench()
   void merge(int*,int,int*,int,int*);
   void print(int*,int);
   int a[1000],b[1000],c[1000],A,B;
-  scanf("%d %d",&A,&B);
+  my_scanf("%d %d",&A,&B);
   pre(a,A);bubble_sort(a,A);
   pre(b,B);bubble_sort(b,B);
   merge(a,A,b,B,c);
@@ -17,7 +17,7 @@ void pre(int*a,int A)
 {
 	int i;
 	for(i=0;i<A;i++)
-	scanf("%d",a+i);
+	my_scanf("%d",a+i);
 }
 void bubble_sort(int* a,int A)
 {
@@ -44,7 +44,7 @@ void merge(int* a,int A,int* b,int B,int* c)
 void print(int* c,int C)
 {
 	int i;
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	for(i=1;i<C;i++)
-	printf(" %d",c[i]);
+	my_printf(" %d",c[i]);
 }

@@ -6,13 +6,13 @@ int main_bench()
 	int Matrix[100][100]={{0},{0}};
 	int a = 0, b = 0, c = 0, d = 0;
 	int total = 0,extra = 0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (l < n)
 	{
-		scanf("%d %d", &row, &line);
+		my_scanf("%d %d", &row, &line);
 		for (int i = 0; i < row; i ++)
 			for(int j = 0; j < line; j ++)
-				scanf("%d", &Matrix[i][j]);
+				my_scanf("%d", &Matrix[i][j]);
 		if(row == 1|| line ==1)
 			for(int i=0;i<row;i++)
 				for(int j=0;j<line;j++)
@@ -32,7 +32,7 @@ int main_bench()
 			}
 			total = a + b + c + d - extra;
 		}
-			printf("%d\n", total);
+			my_printf("%d\n", total);
 			l ++;
 			a = 0;b = 0;c = 0;d = 0;
 	}

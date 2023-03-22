@@ -11,7 +11,7 @@ int main_bench()
 	{
 		for(j=0;j<16;j++)
 		{
-			scanf("%d",&m);
+			my_scanf("%d",&m);
 			if(m==0)
 			{
 				break;
@@ -48,7 +48,7 @@ int main_bench()
 	}
 	for(i=0;i<=num;i++)
 	{
-		printf("%d\n",result[i]);
+		my_printf("%d\n",result[i]);
 	}
 	return 0;
 }

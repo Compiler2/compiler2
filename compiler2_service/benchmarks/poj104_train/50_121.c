@@ -6,7 +6,7 @@ int main_bench()
    int n,day,yu,i,k;
    int sum=0;
    int monthday[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<12;i++){
 		sum=0;
 		for(k=0;k<i;k++){
@@ -22,7 +22,7 @@ int main_bench()
 		}
 		else;
 		if(day==5){
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 

@@ -3,12 +3,12 @@
 
 int main_bench(){
 	int n,i,m,j,mistake[100],k,result[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		result[i]=60;
 		for(j=0;j<m;j++){
-			scanf("%d",&mistake[j]);
+			my_scanf("%d",&mistake[j]);
 		}
 		for(j=0;j<m;j++){
 			for(k=0;k<=3;k++){
@@ -25,7 +25,7 @@ int main_bench(){
 		result[i]-=3*j;
 	}
 	for(i=0;i<n;i++){
-		printf("%d\n",result[i]);
+		my_printf("%d\n",result[i]);
 	}
 	return 0;
 }

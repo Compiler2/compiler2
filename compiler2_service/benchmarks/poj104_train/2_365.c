@@ -7,10 +7,10 @@ int main_bench(){
     };
     int n,i,j,a[26]={0},len[1000],k,max=0;
     struct book list[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&list[i].num);
-        scanf("%s",list[i].name);
+        my_scanf("%d",&list[i].num);
+        my_scanf("%s",list[i].name);
         len[i]=strlen(list[i].name);
     }
     for(i=0;i<26;i++){
@@ -29,12 +29,12 @@ int main_bench(){
             k=i;
         }
     }
-    printf("%c\n",k+65);
-    printf("%d\n",max);
+    my_printf("%c\n",k+65);
+    my_printf("%d\n",max);
     for(i=0;i<n;i++){
         for(j=0;j<len[i];j++){
             if(list[i].name[j]==k+65){
-                printf("%d\n",list[i].num);
+                my_printf("%d\n",list[i].num);
             }
         }
     }

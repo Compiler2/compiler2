@@ -43,7 +43,7 @@ int main_bench()
 
 		}
 	}
-	printf("%s\n", word[maxindex]);
-	printf("%s", word[minindex]);
+	my_printf("%s\n", word[maxindex]);
+	my_printf("%s", word[minindex]);
 	return 0;
 }

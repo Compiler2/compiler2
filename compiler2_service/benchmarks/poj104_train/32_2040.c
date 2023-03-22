@@ -6,7 +6,7 @@ int main_bench()
     void substract(char a[],char b[],char c[]);
     char a[101],b[101],c[101];
     int i,j,t,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     getchar();

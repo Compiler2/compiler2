@@ -5,11 +5,11 @@ int main_bench()
 {
 	int i,j,n,f,brk[100],num[100],t[100],bkt[10];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&brk[i]);
+		my_scanf("%d",&brk[i]);
 		if(brk[i]==0)
 		{
 			num[i]=60;
@@ -20,7 +20,7 @@ int main_bench()
 		f=0;
 		for(j=0;j<brk[i];j++)
 		{
-			scanf("%d",&bkt[j]);
+			my_scanf("%d",&bkt[j]);
 			if(f==0)
 			{
 				t[i]+=3+bkt[j];
@@ -46,7 +46,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",num[i]);
+		my_printf("%d\n",num[i]);
 	}
 
 	return 0;

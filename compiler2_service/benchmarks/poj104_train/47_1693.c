@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,u,a[100];
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&u);
+		my_scanf("%d",&u);
 		a[n-1-i]=u;
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<=n-1;i++){
-		printf(" %d",a[i]);	
+		my_printf(" %d",a[i]);	
 	}
 	return 0;
 }

@@ -20,10 +20,10 @@ int main_bench(){
 	for(i=0;i<n;i++){
 		a=strlen(zfc[i]);
 		if(a!=0){
-            printf("%d,",a);
+            my_printf("%d,",a);
 		}
 	}
-	printf("%d",strlen(zfc[n]));
+	my_printf("%d",strlen(zfc[n]));
 	
 }
 

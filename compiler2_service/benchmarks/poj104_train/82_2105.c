@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[n][2],i;
     for(i=0;i<n;i++){
-        scanf("%d%d",&sz[i][1],&sz[i][2]);
+        my_scanf("%d%d",&sz[i][1],&sz[i][2]);
     }
     int sz2[n],j=0;
         for(i=0;i<=n;i++){
@@ -28,7 +28,7 @@ int main_bench(){
         }
     }
 
-    printf("%d",max);
+    my_printf("%d",max);
 
     return 0;
 }

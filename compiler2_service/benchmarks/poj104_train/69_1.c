@@ -17,8 +17,8 @@ int main_bench()
 		if(n3[i]>9){n3[i]=n3[i]-10;n3[i-1]++;}
 	for(i=0;i<299;i++)
 	{
-		if(n3[i]!=0&&k==0){printf("%d",n3[i]);k++;}
-		else if(k==1) printf("%d",n3[i]);
+		if(n3[i]!=0&&k==0){my_printf("%d",n3[i]);k++;}
+		else if(k==1) my_printf("%d",n3[i]);
 	}
-		printf("%d",n3[299]);
+		my_printf("%d",n3[299]);
 }

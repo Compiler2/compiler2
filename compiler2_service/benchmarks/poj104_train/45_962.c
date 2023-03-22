@@ -5,7 +5,7 @@
 int main_bench()
 {
   char s[52],w[52];
-  scanf("%s%s",s,w);
+  my_scanf("%s%s",s,w);
   int len1,len2,i,m,num; 
   len1=strlen(s);
   len2=strlen(w);
@@ -21,7 +21,7 @@ int main_bench()
                                         break;}
                                         }
                                         
-  printf("%d\n",i);
+  my_printf("%d\n",i);
   
   return 0;
 }

@@ -33,20 +33,20 @@ int main_bench()
 {
     int k1,k2,i;
     int count=0,ncount=0;
-    scanf("%d%d",&k1,&k2);
+    my_scanf("%d%d",&k1,&k2);
     for(i=k1;i<=k2;i++){
         if(fs(i)==1&&fh(i)==1&&count==0){
-        printf("%d",i);
+        my_printf("%d",i);
         count++;
         ncount++;
         }
         else if(fs(i)==1&&fh(i)==1&&count!=0){
-            printf(",%d",i);
+            my_printf(",%d",i);
             count++;
             ncount++;
             }
         }
-        if(ncount==0)printf("no\n");
+        if(ncount==0)my_printf("no\n");
         return 0;
 
     }

@@ -5,10 +5,10 @@ int main_bench()
 {
 	double a=0,b=0,c=0,d=0;
 	int n,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d",&u[i]);
+my_scanf("%d",&u[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -25,9 +25,9 @@ a=a/n*100;
 b=b/n*100;
 c=c/n*100;
 d=d/n*100;
-printf("1-18: %.2f%%\n",a);
-printf("19-35: %.2f%%\n",b);
-printf("36-60: %.2f%%\n",c);
-printf("60??: %.2f%%\n",d);
+my_printf("1-18: %.2f%%\n",a);
+my_printf("19-35: %.2f%%\n",b);
+my_printf("36-60: %.2f%%\n",c);
+my_printf("60??: %.2f%%\n",d);
 	   return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     char a[200];
-    scanf("%s",a);
+    my_scanf("%s",a);
     int i,j,k;
     int len=strlen(a);
     char b=a[0];
@@ -17,7 +17,7 @@ int main_bench()
                 {
                     a[j]=0;
                     a[i]=0;
-                    printf("%d %d\n",j,i);
+                    my_printf("%d %d\n",j,i);
                     break;
                 }
             }

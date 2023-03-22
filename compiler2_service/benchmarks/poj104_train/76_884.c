@@ -5,9 +5,9 @@ struct qj{
 }q[50001];
 int main_bench() 
 { int n,i,j,m,z;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-	  scanf("%d %d",&q[i].a,&q[i].b);
+	  my_scanf("%d %d",&q[i].a,&q[i].b);
   }
   for(i=n;i>1;i--){
 	  for(j=0;j<i-1;j++){
@@ -24,7 +24,7 @@ int main_bench()
   m=q[0].b;
   while(i<n-1){
 	  if(m<q[i+1].a){
-		  printf("no");
+		  my_printf("no");
 		  return 0;
 	  }
 	  else{
@@ -34,6 +34,6 @@ int main_bench()
 	  }
 	  i+=1;
   }
-  printf("%d %d",q[0].a,m);
+  my_printf("%d %d",q[0].a,m);
   return 0;
 } 

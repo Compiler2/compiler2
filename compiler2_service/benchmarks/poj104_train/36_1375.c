@@ -6,13 +6,13 @@ int main_bench()
 	int i,j,p=0,x,y;
 	for(i=0;i<=100;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]==' ')
 			break;
 	}
 	for(i=0;i<=100;i++)
 	{
-		scanf("%c",&b[i]);
+		my_scanf("%c",&b[i]);
 		if(b[i]=='\n')
 			break;
 	}
@@ -33,8 +33,8 @@ int main_bench()
 				break;
 		}
 	if(p==1)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 	return 0;
 }

@@ -5,7 +5,7 @@ main_bench()
       char a[150];
       char b [150];
       int i,l,c,d,e,f;
-      scanf("%s",a);
+      my_scanf("%s",a);
       l=strlen(a);
       if (l>2)
       {
@@ -21,8 +21,8 @@ main_bench()
               }
       b[l-1]='\0';
       f=c-(b[l-2]-'0')*13; 
-      printf("%s\n",b);
-      printf("%d\n",f);
+      my_printf("%s\n",b);
+      my_printf("%d\n",f);
       }
       else
       {
@@ -36,8 +36,8 @@ main_bench()
           }
       b[l-2]='\0';
       f=c-(b[l-3]-'0')*13;
-      printf("%s\n",b);
-      printf("%d\n",f);
+      my_printf("%s\n",b);
+      my_printf("%d\n",f);
       }
       }
       else {if(l==2)
@@ -45,8 +45,8 @@ main_bench()
           b[0]=((a[0]-'0')*10+(a[1]-'0'))/13+'0';
           b[1]='\0';
           f=((a[0]-'0')*10+(a[1]-'0'))%13;
-          printf("%s\n",b);
-          printf("%d\n",f);
+          my_printf("%s\n",b);
+          my_printf("%d\n",f);
           
       }
       else 
@@ -55,8 +55,8 @@ main_bench()
           b[0]=(a[0]-'0')/13+'0';
           b[1]='\0';
           f=a[0]-'0';
-          printf("%s\n",b);
-          printf("%d\n",f);
+          my_printf("%s\n",b);
+          my_printf("%d\n",f);
       }}
            
       

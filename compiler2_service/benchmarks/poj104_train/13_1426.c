@@ -1,10 +1,10 @@
 #include <header.h>
 
 
-void main_bench()
+int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int i,k=0,a[90],b[20000];
 
@@ -12,7 +12,7 @@ void main_bench()
 		a[i]=i+10;
 
 	for(i=0;i<=n-1;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 
 	for(i=0;i<=n-1;i++)
 	{
@@ -22,9 +22,9 @@ void main_bench()
 			if(b[i]==a[j])
 			{
 				if(k==0)
-					printf("%d",a[j]);
+					my_printf("%d",a[j]);
 				else
-					printf(" %d",a[j]);
+					my_printf(" %d",a[j]);
 				a[j]=0;
 				k++;
 				break;
@@ -32,5 +32,5 @@ void main_bench()
 		}
 	}
 
-	printf("\n");
+	my_printf("\n");
 }

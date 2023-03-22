@@ -5,16 +5,16 @@ int main_bench()
 	int str[500]={0
 	};
 	int n,i,j,k,flag;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(k=0;k<n;k++)
 	{
-		scanf("%d",&str[k]);
+		my_scanf("%d",&str[k]);
 	}
     for(i=0;i<n;i++)
 	{
 		if(i==0)
 		{
-			printf("%d",str[0]);
+			my_printf("%d",str[0]);
         }
 		if(i!=0) 
 		{
@@ -29,7 +29,7 @@ int main_bench()
 			}
 			if(flag==1)
 			{
-				printf(",%d",str[i]);
+				my_printf(",%d",str[i]);
 			}
 		}
 	

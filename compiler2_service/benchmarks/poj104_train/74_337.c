@@ -5,10 +5,10 @@ int main_bench()
 {
 	int m,n,i;
 	void func(int num);
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 		func(i);
-	if(FLAG==0) printf("no\n");
+	if(FLAG==0) my_printf("no\n");
 	
 	
 }
@@ -33,8 +33,8 @@ void func(int num)
 		flag=0;
 		if(num!=back(num))
 			flag=0;
-		if(TAG&&flag) {printf("%d",num);FLAG=1;TAG=0;}
-		else if(flag) {printf(",%d",num);FLAG=1;}
+		if(TAG&&flag) {my_printf("%d",num);FLAG=1;TAG=0;}
+		else if(flag) {my_printf(",%d",num);FLAG=1;}
 }
 
 

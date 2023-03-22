@@ -3,9 +3,9 @@
 int main_bench(){
 	int n, m;
 	int i=0, max1=0, max2=0, tmp=0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
    	for(i=0; i<n; i++){
-		scanf("%d", &m);
+		my_scanf("%d", &m);
 		if(m>max1){
 			tmp = max1;
 			max1 = m;
@@ -22,7 +22,7 @@ int main_bench(){
 			}
 	}
 	}
-	printf("%d\n", max1);
-         printf("%d\n", max2);
+	my_printf("%d\n", max1);
+         my_printf("%d\n", max2);
 	return 0;
 }

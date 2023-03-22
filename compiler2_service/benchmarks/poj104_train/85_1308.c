@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char zfc[100][20];
 int i,j;
 int e;
 for(i=0;i<n;i++){
-scanf("%s",zfc[i]);
+my_scanf("%s",zfc[i]);
 } 
 int k;
 
@@ -43,16 +43,16 @@ for(i=0;i<n;i++)
 	{
 		if(i==(n-1))
 		{
-			printf("yes");
+			my_printf("yes");
 		}
-		else{printf("yes\n");}
+		else{my_printf("yes\n");}
 	}
 	else
 	{
 		if(i==(n-1))
-		{printf("no");}
+		{my_printf("no");}
 		else{
-			printf("no\n");}
+			my_printf("no\n");}
 	}
 
 }

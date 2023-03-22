@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,ge,shi,bai,qian,wan,place=1,j=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=9;i<=10000;i=i*10+9){
 		if(n>i) place=j;
                 j=j+1;
@@ -15,22 +15,22 @@ int main_bench()
         ge=n-wan*10000-qian*1000-bai*100-shi*10;
 	switch(place){
 	case 5:
-		printf("%d%d%d%d%d",ge,shi,bai,qian,wan);
+		my_printf("%d%d%d%d%d",ge,shi,bai,qian,wan);
 		break;
 	case 4:
-        printf("%d%d%d%d",ge,shi,bai,qian);
+        my_printf("%d%d%d%d",ge,shi,bai,qian);
 		break;
 	case 3:
-        printf("%d%d%d",ge,shi,bai);
+        my_printf("%d%d%d",ge,shi,bai);
 		break;
 	case 2:
-        printf("%d%d",ge,shi);
+        my_printf("%d%d",ge,shi);
 		break;
 	case 1:
-		printf("%d",n);
+		my_printf("%d",n);
 		break;
     default:
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,k,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char jj[256];
     for(i=0;i<n;i++){
-        scanf("%s",jj);
+        my_scanf("%s",jj);
         l=strlen(jj);
         for(k=0;k<l;k++){
             if(jj[k]=='A'){
@@ -24,7 +24,7 @@ int main_bench(){
                 continue;
             }
         }
-        printf("%s\n",jj);
+        my_printf("%s\n",jj);
     }
     
     

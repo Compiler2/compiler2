@@ -15,10 +15,10 @@ int main_bench()
 	struct award stu[100];
 	struct award max;
 	int n,i,sum=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].leader,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].leader,&stu[i].west,&stu[i].paper);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -54,7 +54,7 @@ int main_bench()
 		}
 	}
 	puts(max.name);
-	printf("%d\n",max.money);
-	printf("%d\n",sum);
+	my_printf("%d\n",max.money);
+	my_printf("%d\n",sum);
 	return 0;
 }

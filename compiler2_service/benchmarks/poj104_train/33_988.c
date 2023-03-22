@@ -5,11 +5,11 @@ int main_bench()
 char a;
 char x[300],y[300];
 x[0]='q';y[0]='o';
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for(i=1;i<=n;i++)
 {for(j=1;j<=300;j++)
-{scanf("%c",&a);
+{my_scanf("%c",&a);
 x[j]=a;
 if(a=='\n')break;}
 for(g=1;g<=300;g++)
@@ -22,7 +22,7 @@ for(g=1;g<=300;g++)
 }
 }
 for(l=1;l<=j-1;l++)
-{printf("%c",y[l]);}
-printf("\n");}
+{my_printf("%c",y[l]);}
+my_printf("\n");}
 
 return 0;}

@@ -4,11 +4,11 @@ int main_bench()
 {
 	int m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int y,m1,m2,n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int sum=0;
-		scanf("%d%d%d",&y,&m1,&m2);
+		my_scanf("%d%d%d",&y,&m1,&m2);
 		if((y%100!=0&&y%4==0)||(y%400==0))
 		{
 			m[2]=29;
@@ -20,11 +20,11 @@ int main_bench()
 				}
 				if(sum%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else if(sum%7!=0)
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 			}
 			else if(m1>m2)
@@ -35,16 +35,16 @@ int main_bench()
 				}
 				if(sum%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else if(sum%7!=0)
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 			}
 			else if(m1==m2)
 			{
-				printf("YES");
+				my_printf("YES");
 			}
 		}
 		else 
@@ -58,11 +58,11 @@ int main_bench()
 				}
 				if(sum%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else if(sum%7!=0)
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 			}
 			else if(m1>m2)
@@ -73,16 +73,16 @@ int main_bench()
 				}
 				if(sum%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else if(sum%7!=0)
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 			}
 			else if(m1==m2)
 			{
-				printf("YES");
+				my_printf("YES");
 			}
 		}
 	}

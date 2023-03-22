@@ -6,7 +6,7 @@ int main_bench()
 	int l=0,max=0,n,len,i,j,k,check,flag;
 	char str[500];
 	char ans[500][500];
-	scanf("%d%s",&n,str);
+	my_scanf("%d%s",&n,str);
 	len=strlen(str);
 	for (i=0;i<=len-n;i++)
 	{
@@ -32,17 +32,17 @@ int main_bench()
 				count[l]=1;
 			}
 	}
-	if (max==0) printf("NO\n");
+	if (max==0) my_printf("NO\n");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for (i=1;i<=l;i++)
 		{
 			if (count[i]==max) 
 			{
 				for (j=0;j<n;j++)
-					printf("%c",ans[i][j]);
-				printf("\n");
+					my_printf("%c",ans[i][j]);
+				my_printf("\n");
 			}
 		}
 	}

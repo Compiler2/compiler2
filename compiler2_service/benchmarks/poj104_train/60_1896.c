@@ -3,10 +3,10 @@
 	int main_bench()
 	{
 	    int n,m,a,b,p,q;
-	    scanf("%d",&n);
+	    my_scanf("%d",&n);
 	    if(n<5)
 	    {
-	      printf("empty");
+	      my_printf("empty");
             }
 	    else
 	    a=3;
@@ -33,7 +33,7 @@
               if(b>n)
               break;
               else
-              printf("%d %d\n",a,b);
+              my_printf("%d %d\n",a,b);
               a=a+1;
               b=b+1;
               m=2;

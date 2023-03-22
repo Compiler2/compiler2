@@ -6,9 +6,9 @@ int main_bench(){
 	int len;
 	int sz[100];
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",bsf);
+		my_scanf("%s",bsf);
 		len=strlen(bsf);
 		for(k=0;k<len;k++){
 			if((bsf[0]<'A')||
@@ -32,9 +32,9 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]==0){
-			printf("no\n");
+			my_printf("no\n");
 		}else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	

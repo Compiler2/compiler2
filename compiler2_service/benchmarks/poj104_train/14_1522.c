@@ -11,11 +11,11 @@ int main_bench()
 {
 	int n,i;
 	struct student *p,*stu,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	stu=(struct student *)calloc(n,sizeof(struct student));
 	for(p=stu;p-stu<n;p++)
 	{
-		scanf("%d%d%d",&p->no,&p->yuwen,&p->shuxue);
+		my_scanf("%d%d%d",&p->no,&p->yuwen,&p->shuxue);
 		p->total=p->yuwen+p->shuxue;
 	}
 	for(i=0;i<3;i++)
@@ -29,7 +29,7 @@ int main_bench()
 				*(p-1)=temp;
 			}
 		}
-		printf("%d %d\n",p->no,p->total);
+		my_printf("%d %d\n",p->no,p->total);
 	}
 	free(stu);
 }

@@ -7,7 +7,7 @@ int main_bench()
     char c[30];
     for(i=0;i<30;i++)
     {
-        scanf("%c",&c[i]);
+        my_scanf("%c",&c[i]);
     }
     pt=&c[0];
     m=strlen(c);
@@ -20,12 +20,12 @@ int main_bench()
     {
         if(a[i]==1)
         {
-            printf("%c",c[i]);
+            my_printf("%c",c[i]);
             flag=1;
         }
         if(a[i]==0&&flag==1)
         {
-            printf("\n");
+            my_printf("\n");
             flag=0;
         }
     }

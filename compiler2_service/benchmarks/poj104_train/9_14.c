@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,j,t,x[110],k,x2[110];
 	char id[110][20], temp[20], id2[100][20];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	k=0;
 	for (i=1;i<=n;i++){
-		scanf("%s %d" , &id[i],&x[i]);
+		my_scanf("%s %d" , &id[i],&x[i]);
 		if (x[i]>=60){
 			k++;
 			x2[k] = x[i];
@@ -28,11 +28,11 @@ int main_bench()
 		}
 	}
 	for (i=1;i<=k;i++){
-		printf("%s\n", id2[i]);
+		my_printf("%s\n", id2[i]);
 	}
 	for (i=1;i<=n;i++){
 		if (x[i]<60)
-			printf("%s\n", id[i]);
+			my_printf("%s\n", id[i]);
 	}
 
 	return 0;

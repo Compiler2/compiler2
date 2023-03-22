@@ -14,10 +14,10 @@ int main_bench()
 	struct stu aswap;
 	int b[102];
 	char rr,tt;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++){
-		scanf("%s",a[i].name);
-		scanf("%d%d%c%c%c%c%d",&a[i].score,&a[i].cscore,&rr,&a[i].l,&tt,&a[i].w,&a[i].p);
+		my_scanf("%s",a[i].name);
+		my_scanf("%d%d%c%c%c%c%d",&a[i].score,&a[i].cscore,&rr,&a[i].l,&tt,&a[i].w,&a[i].p);
 	}
 	
 	for (i=1;i<=n;i++){
@@ -37,9 +37,9 @@ int main_bench()
 			}
 		}
 	}
-    printf("%s\n",a[1].name);
-	printf("%d\n",b[1]);
-	printf("%d\n",tot);
+    my_printf("%s\n",a[1].name);
+	my_printf("%d\n",b[1]);
+	my_printf("%d\n",tot);
 	return 0;
 }
 

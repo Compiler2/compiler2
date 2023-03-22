@@ -51,9 +51,9 @@ int main_bench()
      int y2,m2,d2,a,e;
      int T=0;
     
-       scanf("%d%d%d",&y2,&m2,&d2);
+       my_scanf("%d%d%d",&y2,&m2,&d2);
           
           T+= DiJiTian(y2,m2,d2);          
-           printf ("%d\n",T);
+           my_printf ("%d\n",T);
 return 0;
 }

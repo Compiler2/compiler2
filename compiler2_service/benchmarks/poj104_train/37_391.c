@@ -11,7 +11,7 @@ int main_bench()
 	char key='-';
 	int min=100001;
 	int i;
-	scanf("%d%c",&n,&cc);
+	my_scanf("%d%c",&n,&cc);
 
 	while(n--){
 		gets(s);
@@ -33,9 +33,9 @@ int main_bench()
 			}
 		}
 		if(key=='-')
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("%c\n",key);
+			my_printf("%c\n",key);
 	}
 
 	return 0;

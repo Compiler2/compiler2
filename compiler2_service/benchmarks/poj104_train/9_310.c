@@ -4,10 +4,10 @@ int main_bench(){
 int n,i;
     int age[100],a,m=0,tmp1[100],d=0;
 char zfc[100][11],tmp2[100][11];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s",zfc[i]);
-    scanf("%d",&age[i]);
+my_scanf("%s",zfc[i]);
+    my_scanf("%d",&age[i]);
 }
 for(i=0;i<n;i++){
 if(age[i]>=60){
@@ -31,11 +31,11 @@ tmp1[d+1]=y;
 }
 }
 for(a=0;a<m;a++){
-printf("%s\n",tmp2[a]);
+my_printf("%s\n",tmp2[a]);
 }
 for(i=0;i<n;i++){
 if(age[i]<60){
-printf("%s\n",zfc[i]);
+my_printf("%s\n",zfc[i]);
 }
 }
 return 0; 

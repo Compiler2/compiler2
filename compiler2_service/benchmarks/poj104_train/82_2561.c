@@ -7,10 +7,10 @@ int main_bench(){
 	int n;
 	int k=0;
 	int e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -32,7 +32,7 @@ int main_bench(){
 			b[i]=e;
 		}
 	}
-	printf("%d",b[k-1]);
+	my_printf("%d",b[k-1]);
 	return 0;
 }
 

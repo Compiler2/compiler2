@@ -6,8 +6,8 @@ int main_bench()
 	char str2[501][6]={'\0'};
 	int a[503];
 	int i,j,n,p,flag,t,k;
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	t=strlen(str)-n;
 	for(i=0;i<=502;i++)
 	{
@@ -51,18 +51,18 @@ int main_bench()
 	}
 	if(k>1)
 	{
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 		for(i=0;i<=t;i++)
 		{
 			if(a[i]==k)
 			{
-				printf("%s\n",str2[i]);
+				my_printf("%s\n",str2[i]);
 			}
 		}
 	}
 	else if(k=1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

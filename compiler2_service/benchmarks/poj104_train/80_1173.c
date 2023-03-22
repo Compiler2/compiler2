@@ -7,8 +7,8 @@ int main_bench()
 	int t;
 	int year(int a[],int b[]);
 	int month(int a[],int b[]);
-	scanf("%d %d %d",&a[0],&a[1],&a[2]);
-    scanf("%d %d %d",&b[0],&b[1],&b[2]);
+	my_scanf("%d %d %d",&a[0],&a[1],&a[2]);
+    my_scanf("%d %d %d",&b[0],&b[1],&b[2]);
 	t=0;
     if(b[0]>=a[0])
 		t=t+year(a,b);
@@ -18,8 +18,8 @@ int main_bench()
 	else t=t-month(a,b);
 	t=t+b[2]-a[2];
 	if(t<0)
-		printf("wrong input");
-	else printf("%d",t);
+		my_printf("wrong input");
+	else my_printf("%d",t);
 }
 int year(int a[],int b[])
 {

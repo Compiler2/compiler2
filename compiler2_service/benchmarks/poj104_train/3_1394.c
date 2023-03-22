@@ -4,10 +4,10 @@ int main_bench(){
 int i,j,n,k,a,b,c=0;
 int sz1[1000],sz2[1000];
 
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 
 	for(i=1;i<=n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		sz1[i]=a;
 		sz2[i]=a;
 	}
@@ -22,9 +22,9 @@ int sz1[1000],sz2[1000];
 		}
 	}
 	if(c==1){
-	printf("yes");
+	my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 
 	return 0;

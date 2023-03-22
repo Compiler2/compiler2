@@ -5,19 +5,19 @@ int main_bench()
   int an[5][5],*q=an[0],i,n,m;
   int rev(int n,int x,int an[5][5]);
   for(i=0;i<25;i++)
-	  scanf("%d",q+i);
-  scanf("%d%d",&n,&m);
+	  my_scanf("%d",q+i);
+  my_scanf("%d%d",&n,&m);
   if(rev(n,m,an)==1) 
   {
 	  q=an[0];
 	  for(i=0;i<25;i++)
 	  {
-		  printf("%d",*(q+i));
-		  if(i%5!=4)printf(" ");
-		  else printf("\n");
+		  my_printf("%d",*(q+i));
+		  if(i%5!=4)my_printf(" ");
+		  else my_printf("\n");
 	  }
   }
-  else printf("error\n");
+  else my_printf("error\n");
          
 
 return 0;

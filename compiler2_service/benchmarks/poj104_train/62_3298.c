@@ -12,8 +12,8 @@ main_bench()
   else 
   {
    if(space==0)   
-   { space=1;printf(" ");}
-      printf("%c",a[i]);
+   { space=1;my_printf(" ");}
+      my_printf("%c",a[i]);
   }
  }
 }

@@ -37,25 +37,25 @@ int main_bench(){
                                }
                                if(d==-1){
                                         for(i=0;i<b[0]-1;i++){
-                                  printf("%c",a[i]);
+                                  my_printf("%c",a[i]);
                                   }
-                                  printf("%c\n",a[i]);
+                                  my_printf("%c\n",a[i]);
                                   }
                                   else {
     for(i=b[d]+1;i<b[d+1]-1;i++){
-                                 printf("%c",a[i]);
+                                 my_printf("%c",a[i]);
                                  }
                                  
-    printf("%c\n",a[i]);
+    my_printf("%c\n",a[i]);
 }
     if(x==-1){
               for(i=0;i<b[0];i++){
-                                  printf("%c",a[i]);
+                                  my_printf("%c",a[i]);
                                   }
                                   }
     else {
          for(i=b[x]+1;i<b[x+1];i++){
-                                    printf("%c",a[i]);
+                                    my_printf("%c",a[i]);
                                     }
                                     }
     return 0;

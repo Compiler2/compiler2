@@ -51,5 +51,5 @@ int main_bench()
   j=0;
   pa=a;
   for(j=0;j<n;j++)
-printf("%d\n",* (pa+j));	
+my_printf("%d\n",* (pa+j));	
 }

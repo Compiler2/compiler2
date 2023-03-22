@@ -2,12 +2,12 @@
 
 int main_bench(){
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(int i=1;i<=n;i++){
     int a;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     if(a==1||a==2){
-      printf("1\n");
+      my_printf("1\n");
     }else{
       int x=1,y=1,z;
       for(int m=3;m<=a;m++){
@@ -15,7 +15,7 @@ int main_bench(){
          x=y;
          y=z;
       }
-      printf("%d\n",y);
+      my_printf("%d\n",y);
     }
    }
    return 0;

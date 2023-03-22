@@ -14,12 +14,12 @@ main_bench()
 {
 	int l,i,j,t,l1,l2;
 	char s1[50],s2[50],*p;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	
 	p=s2;
 	l2=strlen(s2);l1=strlen(s1);
 	for(i=0;i<l2;i++)
-	{ if(pd(p+i,l1,s1))  {printf("%d",i);break;}
+	{ if(pd(p+i,l1,s1))  {my_printf("%d",i);break;}
 	}
 }
 

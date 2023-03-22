@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n;
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<=n;i++)
 	{
 		if(yuqiwuguan(i))
@@ -13,7 +13,7 @@ int main_bench()
 			sum+=i*i;
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 int yuqiwuguan(int i)

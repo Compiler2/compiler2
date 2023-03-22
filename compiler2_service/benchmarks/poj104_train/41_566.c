@@ -34,7 +34,7 @@ int main_bench()
 					   case 5: E=i; break;
 					 }
 				  }
-				  printf("%d %d %d %d %d\n",A,B,C,D,E);
+				  my_printf("%d %d %d %d %d\n",A,B,C,D,E);
 				  return 0;
 				}
 			  }

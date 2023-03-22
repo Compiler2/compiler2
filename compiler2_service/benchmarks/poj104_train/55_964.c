@@ -9,7 +9,7 @@ int main_bench()
 
     int number[100],remainder[100],sum=0,a,b,i,t,l,g=1;
 
-    scanf("%d %s %d",&a,input,&b);
+    my_scanf("%d %s %d",&a,input,&b);
 	l=strlen(input);
 
     for(i=0;i<l;i++)
@@ -68,7 +68,7 @@ for(i=0;i<100;i++)
 
 }
   output[t]=0;
-printf("%s\n",output);
+my_printf("%s\n",output);
 
 return 0;
 

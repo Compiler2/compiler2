@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,a;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if(y%4!=0){
 		switch(m){
 		case 1:a=d;break;
@@ -19,7 +19,7 @@ int main_bench()
 		case 11:a=31+28+31+30+31+30+31+31+30+31+d;break;
 		case 12:a=31+28+31+30+31+30+31+31+30+31+30+d;break;
 		}
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	else if(y%400==0){
 		switch(m){
@@ -36,7 +36,7 @@ int main_bench()
 		case 11:a=31+29+31+30+31+30+31+31+30+31+d;break;
 		case 12:a=31+29+31+30+31+30+31+31+30+31+30+d;break;
 		}
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	else if(y%4==0&&y%100==0&&y%400!=0){
 		switch(m){
@@ -53,7 +53,7 @@ int main_bench()
 		case 11:a=31+28+31+30+31+30+31+31+30+31+d;break;
 		case 12:a=31+28+31+30+31+30+31+31+30+31+30+d;break;
 		}
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	else if(y%4==0&&y%100!=0){
 		switch(m){
@@ -70,7 +70,7 @@ int main_bench()
 		case 11:a=31+29+31+30+31+30+31+31+30+31+d;break;
 		case 12:a=31+29+31+30+31+30+31+31+30+31+30+d;break;
 		}
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	return 0;
 }

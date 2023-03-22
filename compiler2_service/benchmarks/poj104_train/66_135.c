@@ -3,7 +3,7 @@
 int main_bench()
 {
 	unsigned int b,m,d,a,l,w,q;
-	scanf("%d%d%d",&b,&m,&d);
+	my_scanf("%d%d%d",&b,&m,&d);
 	if((b%4==0&&b%100!=0)||(b%400==0))
 	{
 		switch(m)
@@ -49,12 +49,12 @@ w= (b-1)+ (b-1)/4 - (b-1)/100 + (b-1)/400 + l ;
 q=w%7;
 switch(q)
 	{
-	case 1:printf("Mon.\n");break;
-	case 2:printf("Tue.\n");break;
-	case 3:printf("Wed.\n");break;
-	case 4:printf("Thu.\n");break;
-	case 5:printf("Fri.\n");break;
-	case 6:printf("Sat.\n");break;
-	case 0:printf("Sun.\n");break;
+	case 1:my_printf("Mon.\n");break;
+	case 2:my_printf("Tue.\n");break;
+	case 3:my_printf("Wed.\n");break;
+	case 4:my_printf("Thu.\n");break;
+	case 5:my_printf("Fri.\n");break;
+	case 6:my_printf("Sat.\n");break;
+	case 0:my_printf("Sun.\n");break;
 	}
 }

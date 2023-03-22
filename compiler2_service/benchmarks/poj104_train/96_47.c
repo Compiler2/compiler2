@@ -18,8 +18,8 @@ for(i=0;i<len;i++)
 	temp=(temp*10+str[i]-'0')%13;
 	j++;}
 }
-if(j==0)printf("0\n%d",temp);
+if(j==0)my_printf("0\n%d",temp);
 else {str2[j]=0; 
-printf("%s\n%d",str2,temp);}
+my_printf("%s\n%d",str2,temp);}
 return(0);}
 

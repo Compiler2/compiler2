@@ -4,11 +4,11 @@ int main_bench()
 {
 	int sz[1000];
 	int t,i,n,m,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=1;a<=n;a++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(i=0;i<m;i++){
-			scanf("%d",&sz[i]);
+			my_scanf("%d",&sz[i]);
 		}
 		if(m==0) t=60;
 		else{
@@ -27,7 +27,7 @@ int main_bench()
 			}
 		}
 		}
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 	}
 	return 0;
 }

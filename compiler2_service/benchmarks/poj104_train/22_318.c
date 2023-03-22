@@ -28,7 +28,7 @@ int main_bench()
 
 		
 		if(flag==1)
-			printf("%d",max2);
+			my_printf("%d",max2);
 		else
-			printf("No");
+			my_printf("No");
 }

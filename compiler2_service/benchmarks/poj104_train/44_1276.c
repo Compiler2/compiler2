@@ -31,8 +31,8 @@ main_bench()
     int dis(int x),s,k;
     for(k=0;k<6;k++)
     {
-       scanf("%d",&s);
-       printf("%d\n",dis(s));
+       my_scanf("%d",&s);
+       my_printf("%d\n",dis(s));
     }
    getchar();
 }

@@ -5,12 +5,12 @@ int main_bench(){
 	int w;
 	int i,k=13;
 	int m=1;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		k+=yue(i-1);
 
 		if(w+(k%7)==6||w+(k%7)==13){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 

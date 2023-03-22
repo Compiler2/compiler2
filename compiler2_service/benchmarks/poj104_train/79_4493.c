@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,a,b,c;
 	int hz[300];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	while((n!=0)&&(m!=0))
 	{
 		c=0;
@@ -12,8 +12,8 @@ int main_bench()
 		{
 			c=(c+m)%a;
 		}
-		printf("%d\n",c+1);
-		scanf("%d%d",&n,&m);
+		my_printf("%d\n",c+1);
+		my_scanf("%d%d",&n,&m);
 	}
 	return 0;
 }

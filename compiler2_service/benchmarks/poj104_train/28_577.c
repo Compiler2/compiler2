@@ -26,13 +26,13 @@ int main_bench()
 	if(a[0]==' ')
 	{
 		for(i=1;i<=j-1;i++)
-			printf("%d,",b[i]);
-		printf("%d",b[j]);
+			my_printf("%d,",b[i]);
+		my_printf("%d",b[j]);
 	}
 	else
 	{
 		for(i=0;i<=j-1;i++)
-			printf("%d,",b[i]);
-		printf("%d",b[j]);
+			my_printf("%d,",b[i]);
+		my_printf("%d",b[j]);
 	}
 }

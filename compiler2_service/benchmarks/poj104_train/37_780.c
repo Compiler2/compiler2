@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,string,i,j,len,re=0;
 	char str[100000],output='Z';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(string=0;string<n;string++)
 	{
-		scanf("%s",&str);
+		my_scanf("%s",&str);
 		len=strlen(str);
 		for(j=0;j<len;j++)
 		{
@@ -25,7 +25,7 @@ int main_bench()
 				if(i==len-1)
 				{
 					output=str[j];
-					printf("%c\n",output);
+					my_printf("%c\n",output);
 				}
 			}
 			re=0;
@@ -34,7 +34,7 @@ int main_bench()
 				output='Z';
 				break;
 			}else if(j==len-1&&output=='Z')
-				printf("no\n");
+				my_printf("no\n");
 		}
 	}
 	return 0;

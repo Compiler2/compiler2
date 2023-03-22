@@ -9,16 +9,16 @@ int main_bench()
 	int temp;
 	int inputcount=0;
 	int result[102400];
-	scanf("%d",&n);
-	scanf("%d",&m);
+	my_scanf("%d",&n);
+	my_scanf("%d",&m);
 while(m!=0 && n!=0)
 {
         if(m==1)
         {
            result[inputcount] = n;
            inputcount++;
-	   scanf("%d",&n);
-	   scanf("%d",&m);
+	   my_scanf("%d",&n);
+	   my_scanf("%d",&m);
            continue;
         }
 	int *monkey = (int*)malloc(sizeof(int)*n);
@@ -55,13 +55,13 @@ while(m!=0 && n!=0)
 	}
 	result[inputcount]=monkey[0];
     inputcount++;
-	scanf("%d",&n);
-	scanf("%d",&m);
+	my_scanf("%d",&n);
+	my_scanf("%d",&m);
 	free(monkey);
 	free(tempmonkey);
 }
 for(count=0; count<inputcount; count++)
-  printf("%d\n",result[count]);
+  my_printf("%d\n",result[count]);
 	return 0;
 }
 

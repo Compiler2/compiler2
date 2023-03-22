@@ -5,10 +5,10 @@ int main_bench()
     int i,j,k,js,l;
     char c[600],d[600];
     double a,b;
-    scanf("%lf%s%s",&a,c,d);
+    my_scanf("%lf%s%s",&a,c,d);
     if (strlen(c)!=strlen(d))
     {
-                  printf ("error");
+                  my_printf ("error");
                   return 0;           
     }
     l=strlen(c);
@@ -22,15 +22,15 @@ int main_bench()
         }
         else 
         {
-             printf ("error");
+             my_printf ("error");
                   return 0;
         }        
     } 
     b=1.0*js/l;
     if (b>=a)
-    printf ("yes");
+    my_printf ("yes");
     else 
-    printf ("no");
+    my_printf ("no");
     
     
     

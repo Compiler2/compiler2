@@ -4,9 +4,9 @@ int main_bench(){
 	int left=0,right=0,a=0,get=0,i;
 	double m,q;
 	char l[520],r[520];
-	scanf("%lf",&m);
-	scanf("%s",l);
-	scanf("%s",r);
+	my_scanf("%lf",&m);
+	my_scanf("%s",l);
+	my_scanf("%s",r);
 	for(i=0;l[i];i++){
 		left++;
 		if(l[i]!='A'&&l[i]!='G'&&l[i]!='T'&&l[i]!='C'){
@@ -20,7 +20,7 @@ int main_bench(){
 		}
 	}
 	if(a==1||left!=right){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;l[i];i++){
 			if(l[i]==r[i]){
@@ -29,9 +29,9 @@ int main_bench(){
 		}
 		q=1.0*get/left;
 		if(q>m){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

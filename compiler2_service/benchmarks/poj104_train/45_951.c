@@ -2,8 +2,8 @@
 
 char q[100],a[100],b[100],xc[50][100];
 main_bench(){
-    scanf("%s",&q);
-	scanf("%s",&a);
+    my_scanf("%s",&q);
+	my_scanf("%s",&a);
 	int i=0,j=0,k=0,s=0,p=0,qc,ac,bc,r;
 	qc=strlen(q);
 	ac=strlen(a);
@@ -24,7 +24,7 @@ main_bench(){
 		}
 	}
 	
-	printf("%d",r);
+	my_printf("%d",r);
 	return 0;
 
 }

@@ -20,11 +20,11 @@ int main_bench()
 				j++;
 				if (j==1)
 				{
-					printf("%d",t);
+					my_printf("%d",t);
 				}
 				else 
 				{
-					printf(",%d",t);
+					my_printf(",%d",t);
 				}
 				
 				return 0;
@@ -37,11 +37,11 @@ int main_bench()
 			j++;
 			if (j==1)
 			{
-				printf("%d",t);
+				my_printf("%d",t);
 			}
 			else 
 			{
-				printf(",%d",t);
+				my_printf(",%d",t);
 			}
 			t=0;
 		}

@@ -6,7 +6,7 @@ int main_bench()
   int i,j;
   for(i=0;i<=100;i++)
   {
-    scanf("%s",a[i]); 
+    my_scanf("%s",a[i]); 
     t=getchar();
     if(t!=' ')
     {
@@ -16,12 +16,12 @@ int main_bench()
   }
   gets(b);
   gets(c);  
-  if(strcmp(a[0],b)==0) printf("%s",c);
-     else printf("%s",a[0]);             
+  if(strcmp(a[0],b)==0) my_printf("%s",c);
+     else my_printf("%s",a[0]);             
   for(i=1;i<=j;i++)
    {
-     if(strcmp(a[i],b)==0)printf(" %s",c);
-     else printf(" %s",a[i]);                  
+     if(strcmp(a[i],b)==0)my_printf(" %s",c);
+     else my_printf(" %s",a[i]);                  
    }
 
   return 0;

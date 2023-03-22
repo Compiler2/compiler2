@@ -6,7 +6,7 @@ main_bench()
       int n,i,j,k;
       int s=0;
       j=i+2;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=1;i<=(n-2);i++)
       {
                            j=i+2;
@@ -21,12 +21,12 @@ main_bench()
                                         {
                                         s=s+1;
                                       
-                                                             printf("%d %d\n",i,j);
+                                                             my_printf("%d %d\n",i,j);
                                                              }
                                                              
                                                              }
                                                              if(s==0)
-                                                             printf("empty");
+                                                             my_printf("empty");
                                                              
                                                          
                                                              

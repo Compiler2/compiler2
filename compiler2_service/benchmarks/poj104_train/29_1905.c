@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,m;
 	double s,f[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m--)
 	{
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	f[1]=1;f[2]=2;
 	for(i=3;i<=n+1;i++) 
@@ -20,7 +20,7 @@ int main_bench()
 		s+=f[i+1]/f[i];
 	}
 
-    printf("%.3lf\n",s);
+    my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

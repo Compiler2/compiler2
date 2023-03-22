@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,max,min,p;
 	float av,sum=0,a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	for(i=0;i<n;i++)
 		sum=sum+a[i];
 	av=sum/n;
@@ -18,9 +18,9 @@ int main_bench()
 	}
 	p=max+min;
 	if(2*av==p)
-		printf("%d,%d\n",min,max);
+		my_printf("%d,%d\n",min,max);
 	else if(2*av>p)
-		printf("%d\n",min);
+		my_printf("%d\n",min);
 	else if(2*av<p)
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 }

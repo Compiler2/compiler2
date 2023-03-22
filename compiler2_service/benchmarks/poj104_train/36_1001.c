@@ -17,9 +17,9 @@ int main_bench()
   int n,j,k,l1,l2,o,i;
   char a[51],b[51];
 
-  scanf("%s %s",a,b);
-  if(rearrange(a,b)!=0)   printf("YES");
-  else printf("NO");
+  my_scanf("%s %s",a,b);
+  if(rearrange(a,b)!=0)   my_printf("YES");
+  else my_printf("NO");
 
 
 

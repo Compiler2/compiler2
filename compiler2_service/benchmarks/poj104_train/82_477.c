@@ -7,9 +7,9 @@ int main_bench()
 	int gy[100];
 	int dy[100];
 	int tx[100];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&gy[i],&dy[i]);
+		my_scanf("%d%d",&gy[i],&dy[i]);
 		if(gy[i]>=90&&gy[i]<=140&&dy[i]>=60&&dy[i]<=90){
 			t++;
 			tx[i]=t;
@@ -29,7 +29,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",tx[0]);
+	my_printf("%d",tx[0]);
 return 0;
 }
 

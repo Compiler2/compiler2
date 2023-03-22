@@ -24,12 +24,12 @@ int main_bench()
 				k=j;
 		}
 		for(j=0;j<=k;j++)
-			printf("%c",s[i][j]);
+			my_printf("%c",s[i][j]);
 		for(j=lon[i]-3;j<lon[i];j++)
-			printf("%c",s[i][j]);
+			my_printf("%c",s[i][j]);
 		for(j=k+1;s[i][j]!=32;j++)
-			printf("%c",s[i][j]);
-		printf("\n");
+			my_printf("%c",s[i][j]);
+		my_printf("\n");
 	}
 }
 

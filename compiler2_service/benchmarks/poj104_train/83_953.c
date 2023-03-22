@@ -3,12 +3,12 @@
 int main_bench()
 {   int n,i;
 double c[10],sum1=0,sum2=0,b[10],a[10],GPA;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%lf",&a[i]);
+	{my_scanf("%lf",&a[i]);
 	sum2+=a[i];}
     for(i=0;i<n;i++)
-	{scanf("%lf",&b[i]);
+	{my_scanf("%lf",&b[i]);
 	if(b[i]>=90&&b[i]<=100)
 		c[i]=4.0*a[i];
 	else if(b[i]>=85&&b[i]<=89)
@@ -31,6 +31,6 @@ double c[10],sum1=0,sum2=0,b[10],a[10],GPA;
 		c[i]=0;
 	sum1+=c[i];}
 	GPA=sum1/sum2;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 	return 0;
 }

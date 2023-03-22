@@ -17,15 +17,15 @@ main_bench()
  int  i,j,k,m,sum,n,u,p,t[1000], q[1000],c[1000];
  for(u=0;u<=1000;u++)
  {
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(n==0) {break;}
  for(i=0;i<=n-1;i++)
     {
-       scanf("%d",&t[i]);
+       my_scanf("%d",&t[i]);
     }  
  for(i=0;i<=n-1;i++)
     {
-       scanf("%d",&q[i]);                
+       my_scanf("%d",&q[i]);                
     }
  for(i=0;i<=n-1;i++){c[i]=-9;}
  paixu(n,t);
@@ -44,7 +44,7 @@ main_bench()
     }
  for(sum=0,i=0;i<=n-1;i++)
  {sum=sum+c[i];}
- printf("%d\n",sum);
+ my_printf("%d\n",sum);
 }
  
  

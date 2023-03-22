@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n1,n2,i,j,k;
 	char str1[50]={'\0'},str2[50]={'\0'};
-	scanf("%s%s",&str1,&str2);
+	my_scanf("%s%s",&str1,&str2);
 	n1=strlen(str1);
 	n2=strlen(str2);
 	k=0;
@@ -20,9 +20,9 @@ int main_bench()
 			}
 	}
 	if(k==n1&&k==n2)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 
 	return 0;
 }

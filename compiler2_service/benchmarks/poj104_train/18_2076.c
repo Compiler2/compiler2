@@ -7,7 +7,7 @@ int check()
     int c,i,j,mi,mj,r=0;
     for(i=n-1;i>=0;i--)
         for(j=n-1;j>=0;j--)
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
     for(c=n;c>1;c--)
     {
         for(i=0;i<c;i++)
@@ -34,8 +34,8 @@ int check()
 int main_bench()
 {
     int z;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(z=0;z<n;z++)
-        printf("%d\n",check());
+        my_printf("%d\n",check());
     return 0;
 }

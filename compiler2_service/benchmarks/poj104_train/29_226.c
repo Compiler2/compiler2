@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		int j,a=1,b=2,c=3;
 		double sum=0,shu;
 		for(j=1;j<=num;j++){
@@ -17,7 +17,7 @@ int main_bench()
 			}
 			sum+=shu;
 		}
-		printf("%0.3lf\n",sum);
+		my_printf("%0.3lf\n",sum);
 	}
 	return 0;
 }

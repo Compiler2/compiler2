@@ -11,7 +11,7 @@ int grow(int i,int j)
 main_bench()
 {
       int n,m,i,j,k;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
   
       for(i=0;i<11;i++)
        for(j=0;j<11;j++)
@@ -30,9 +30,9 @@ main_bench()
       for(i=1;i<=9;i++)
           for(j=1;j<=9;j++) 
          { if(j==9)
-           printf("%d\n",b[i][j]);
+           my_printf("%d\n",b[i][j]);
            else
-           printf("%d ",b[i][j]);
+           my_printf("%d ",b[i][j]);
          }
 
 }  

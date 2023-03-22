@@ -12,8 +12,8 @@ int main_bench()
 	int o=0;
 	int count=0;
 	int highesta,highestb;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	lena=(int)strlen(a);
 	lenb=(int)strlen(b);
 	len=(lena>lenb)? lena:lenb;
@@ -94,9 +94,9 @@ int main_bench()
 	}
 	for (i=count;i<lenc-1;i++)
 	{
-		printf("%c",c[i]);
+		my_printf("%c",c[i]);
 	}
-	printf("%c\n",c[lenc-1]);
+	my_printf("%c\n",c[lenc-1]);
 	return 0;
 }
 int add(char x,char y)

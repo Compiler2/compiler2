@@ -5,9 +5,9 @@ int main_bench()
 double g=0,s=0,b=0,c=0;
 	int n,i;
 	int a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 	if(a[i]>=1&&a[i]<=18)s=s+1;
@@ -18,10 +18,10 @@ double g=0,s=0,b=0,c=0;
     m=(g*100)/n;	l=(s*100)/n;
 	q=(b*100)/n;
 	p=(c*100)/n;
-		printf("1-18: %.2lf%%\n",l);
-			printf("19-35: %.2lf%%\n",m);
-			printf("36-60: %.2lf%%\n",q);
-printf("60??: %.2lf%%\n",p);
+		my_printf("1-18: %.2lf%%\n",l);
+			my_printf("19-35: %.2lf%%\n",m);
+			my_printf("36-60: %.2lf%%\n",q);
+my_printf("60??: %.2lf%%\n",p);
 
 return 0;
 

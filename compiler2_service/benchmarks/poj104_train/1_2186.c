@@ -4,18 +4,18 @@ int main_bench()
 {
 int digui(int p,int q); 
 int n,i,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
 int a,sum=1;
-scanf("%d",&a);
+my_scanf("%d",&a);
 for(j=2;j<a;j++)
 {if(j*j>a)
 break;
 else if(a%j==0)
 sum=sum+digui(j,a/j);
 }
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 }
 }
 int digui(int p,int q)

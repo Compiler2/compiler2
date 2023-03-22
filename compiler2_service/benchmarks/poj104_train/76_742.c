@@ -3,13 +3,13 @@
 int main_bench(){
 	int a[10010]={0};
 	int n,i,j,le,ri,st,en,bo=1;
-	scanf("%d",&n);
-	scanf("%d %d",&le,&ri);
+	my_scanf("%d",&n);
+	my_scanf("%d %d",&le,&ri);
 	for(i=le;i<ri;i++){
 		a[i]=1;
 	}
 	for(i=1;i<=n-1;i++){ 
-			scanf("%d %d",&st,&en);
+			my_scanf("%d %d",&st,&en);
 		if(st<le){
 			le=st;
 		}
@@ -27,9 +27,9 @@ int main_bench(){
 		}
 	}
 	if(bo==0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("%d %d",le,ri);
+		my_printf("%d %d",le,ri);
 	}
 	return 0;
 }

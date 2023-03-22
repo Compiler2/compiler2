@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,max,min,e,k;
 	i=0;
 	k=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int number[n];
 	for(i=0;i<=n-1;i++){
-		scanf("%d\n",&(number[i]));
+		my_scanf("%d\n",&(number[i]));
 	}
 	for(k=1;k<=n;k++){
 		for(i=0;i<=n-1-k;i++){
@@ -19,6 +19,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n%d\n",number[n-1],number[n-2]);
+	my_printf("%d\n%d\n",number[n-1],number[n-2]);
 	return 0;
 }

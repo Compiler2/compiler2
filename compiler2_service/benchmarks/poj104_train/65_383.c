@@ -49,23 +49,23 @@ int  f(int a,int b)
 {
     int a,b;  
     int i=0,j=0,n=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0,j=0;i<n;i++)
     {
     int a,b; 
-     scanf("%d %d",&a,&b);  
+     my_scanf("%d %d",&a,&b);  
     
      j=j+f(a,b); 
     } 
      
      if(j>0)
-     printf("A");
+     my_printf("A");
      else
      {
       if(j==0)
-      printf("Tie");
+      my_printf("Tie");
      else
-     printf("B");
+     my_printf("B");
      }
       
            }

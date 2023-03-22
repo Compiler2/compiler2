@@ -3,11 +3,11 @@
 int main_bench(){
     int n,i,k,a1,a2,b1,b2,f=-1,s=0;
     int (sz[1000][1000]);
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     for(i=0;i<n;i++){
         for(k=0;k<n;k++){
-            scanf("%d",&(sz[i][k]));
+            my_scanf("%d",&(sz[i][k]));
             getchar();
             if(((sz[i][k])==0)&&(f==-1)){
                  a1=i;
@@ -22,7 +22,7 @@ int main_bench(){
     }
     
     s=(b2-b1-1)*(a2-a1-1);
-    printf("%d\n",s);
+    my_printf("%d\n",s);
     getchar();
     return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,n;
 	char sz[10000][260];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	    scanf("%s",sz[i]);
+	    my_scanf("%s",sz[i]);
 		for(j=0;sz[i][j]!='\0';j++)
 		{
 				if(sz[i][j]-'A'==0)
@@ -19,7 +19,7 @@ int main_bench()
 				else if(sz[i][j]-'G'==0)
 					sz[i][j]='C';
 		}
-		printf("%s\n",sz[i]);
+		my_printf("%s\n",sz[i]);
 	}
 	return 0;
 }

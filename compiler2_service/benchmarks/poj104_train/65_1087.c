@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,a=0,b=0,x[200],y[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(int i=0;i<n;i++){
-		scanf("%d%d",&(x[i]),&(y[i]));
+		my_scanf("%d%d",&(x[i]),&(y[i]));
 		if(y[i]-x[i]==1||x[i]-y[i]==2){
 			a++;
 		}else if(x[i]-y[i]==1||y[i]-x[i]==2){
@@ -15,11 +15,11 @@ int main_bench(){
 		}
 	}
 	if(a==b){
-		printf("Tie");
+		my_printf("Tie");
 	}else if(a>b){
-		printf("A");
+		my_printf("A");
 	}else if(a<b){
-		printf("B");
+		my_printf("B");
 	}
 	
 	return 0;

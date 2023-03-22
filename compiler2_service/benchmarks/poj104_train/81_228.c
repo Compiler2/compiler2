@@ -8,13 +8,13 @@ int main_bench()
 	{
 		for(k=0;k<5;k++)
 		{
-			scanf("%d",&shuzu1[j][k]);
+			my_scanf("%d",&shuzu1[j][k]);
 		}
 	}
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	if(jzhh(shuzu1,x,y)==0)
 	{
-		printf("error");
+		my_printf("error");
 	}else
 	{
 		for(j=0;j<5;j++)
@@ -23,10 +23,10 @@ int main_bench()
 			{
 				if(k==4)
 				{
-					printf("%d\n",shuzu1[j][k]);
+					my_printf("%d\n",shuzu1[j][k]);
 				}else
 				{
-					printf("%d ",shuzu1[j][k]);
+					my_printf("%d ",shuzu1[j][k]);
 				}				
 			}
 		}

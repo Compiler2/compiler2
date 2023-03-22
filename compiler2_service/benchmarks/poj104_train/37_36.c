@@ -4,7 +4,7 @@
 int main_bench(){
     int i,j,ii,jj,flag,word[2][30];
     int c,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     c=getchar();
     for (i=1;i<=n;i++){
         for (ii=0;ii<=25;ii++) 
@@ -22,8 +22,8 @@ int main_bench(){
                                              min=word[1][j];
                                              cc=j;
                                              }
-        if (cc!=-1) printf("%c\n",cc+97);
-          else printf("no\n");
+        if (cc!=-1) my_printf("%c\n",cc+97);
+          else my_printf("no\n");
         }
 }
         

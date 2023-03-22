@@ -10,10 +10,10 @@ int biao(char a){
 int main_bench(){
 	int n;
 	char zfc[100][21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	int L;
 	int k,l=0;
@@ -25,9 +25,9 @@ int main_bench(){
 			}
 		}
 		if((zfc[i][0]<'0'||zfc[i][0]>'9')&&l==L){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		l=0;
 	}

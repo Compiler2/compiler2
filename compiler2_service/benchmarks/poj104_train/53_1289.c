@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,sz[300],i,j,a[300],p=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	a[0]=sz[0];
 	for(i=1;i<n;i++){
@@ -18,9 +18,9 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<p;i++){
-		printf("%d,",a[i]);
+		my_printf("%d,",a[i]);
 	}
-	printf("%d",a[p]);
+	my_printf("%d",a[p]);
 	return 0;
 }
 

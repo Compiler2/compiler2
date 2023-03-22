@@ -30,7 +30,7 @@ int main_bench()
 int sr()
 {
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	return (a);
 }
 int px(int a[100],int x,int k)
@@ -57,12 +57,12 @@ void hb(int a[100],int b[100],int x,int y)
 	for(i=0;i<x;i++)
 	{
 		if(i==0)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		else
-			printf(" %d",a[i]);
+			my_printf(" %d",a[i]);
 	}
 	for(i=0;i<y;i++)
 	{
-			printf(" %d",b[i]);
+			my_printf(" %d",b[i]);
 	}
 }

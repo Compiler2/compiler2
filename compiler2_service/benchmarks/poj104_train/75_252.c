@@ -8,19 +8,19 @@ int main_bench()
 	char e,d;
 
 	for(i=1;;i++){
-		scanf("%d%c",&a[i],&e);
+		my_scanf("%d%c",&a[i],&e);
 		if(e=='\n'){
 			break;
 		}
 	}
 
 	for(j=1;;j++){
-		scanf("%d%c",&b[j],&d);
+		my_scanf("%d%c",&b[j],&d);
 		if(d=='\n'){
 			break;
 		}
 	}
-	printf("%d ",i);
+	my_printf("%d ",i);
 	m=i;
 	
 		for(j=1;j<1000;j++){
@@ -35,6 +35,6 @@ int main_bench()
 				c[1]=c[i];
 			}
 		}
-		printf("%d",c[1]);
+		my_printf("%d",c[1]);
 	return 0;
 }

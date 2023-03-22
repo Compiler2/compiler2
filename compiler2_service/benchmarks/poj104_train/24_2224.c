@@ -49,6 +49,6 @@ int main_bench()
 			rmin=j;
 		}
 	}
-	printf ("%s\n",word[rmax]);
-	printf ("%s\n",word[rmin]);
+	my_printf ("%s\n",word[rmax]);
+	my_printf ("%s\n",word[rmin]);
 }

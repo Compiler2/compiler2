@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,a[10000],x,y,z,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	x=a[1];y=a[2];
 	if(x<y) {x=a[2];y=a[1];}
@@ -24,6 +24,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n%d",x,y);
+	my_printf("%d\n%d",x,y);
 
 }

@@ -40,16 +40,16 @@ int main_bench()
 
 
 if(flag==0){
-printf("%s",words[0]);
+my_printf("%s",words[0]);
 for(i=1;i<n;i++){
-   printf(" %s",words[i]);
+   my_printf(" %s",words[i]);
 
 
 }
 
 }
 if(flag==1){
-  printf("%s",d);
+  my_printf("%s",d);
 
 }
 	return 0;

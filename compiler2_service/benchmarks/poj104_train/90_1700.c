@@ -4,10 +4,10 @@ int main_bench()
 {
     int way(int x,int y);
     int t,i,m[100],n[100],p[100];
-    scanf("%d", &t);
-    for(i=1;i<=t;i++){scanf("%d%d", &m[i],&n[i]);
+    my_scanf("%d", &t);
+    for(i=1;i<=t;i++){my_scanf("%d%d", &m[i],&n[i]);
                       p[i]=way(m[i],n[i]);
-                      printf("%d\n", p[i]);}
+                      my_printf("%d\n", p[i]);}
     return 0;
     }
     

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int year1,year2,month1,month2,day1,day2,s1=0,s2=0,s3=0;
-	scanf("%d %d %d\n",&year1,&month1,&day1);
-	scanf("%d %d %d",&year2,&month2,&day2);
+	my_scanf("%d %d %d\n",&year1,&month1,&day1);
+	my_scanf("%d %d %d",&year2,&month2,&day2);
 	int num(int year,int month,int day);
 	int laf(int a,int b);
 	s1=num(year1,month1,day1);
 	s2=num(year2,month2,day2);
 	s3=laf(year1,year2);
-	printf("%d\n",s3+s2-s1);
+	my_printf("%d\n",s3+s2-s1);
 }
 int num(int year,int month,int day)
 {

@@ -3,9 +3,9 @@
 int main_bench(){
 	int i=0,j=0,k=0,n,f[101][102]={0},l[101],g;
 	char s[101][102],a[102];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 		l[i]=strlen(s[i]);
 		for(j=l[i]-1;j>=0;j--){
 			if(s[i][j]=='(')
@@ -22,16 +22,16 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 		for(j=0;j<l[i];j++){
 			if(s[i][j]=='('&&f[i][j]==0)
-				printf("$");
+				my_printf("$");
 			else if(s[i][j]==')'&&f[i][j]==0)
-				printf("?");
+				my_printf("?");
 			else
-				printf(" ");
+				my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

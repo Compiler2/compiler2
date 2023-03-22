@@ -7,19 +7,19 @@ int main_bench()
 	int n,m;
 	for(n=0;n<5;n=n+1)
 		for(m=0;m<5;m=m+1)
-			scanf("%d",&a[n][m]);
-	scanf("%d%d",&n,&m);
+			my_scanf("%d",&a[n][m]);
+	my_scanf("%d%d",&n,&m);
 	if(exchange(a,n,m)==1)
 	{
         for(n=0;n<5;n=n+1)
 	   {
             for(m=0;m<4;m=m+1)
-			    printf("%d ",a[n][m]);
-	        printf("%d\n",a[n][4]);
+			    my_printf("%d ",a[n][m]);
+	        my_printf("%d\n",a[n][4]);
 	   }
 	}
 	else
-		printf("error\n");
+		my_printf("error\n");
 }
 int exchange(int a[5][5],int n,int m)
 {

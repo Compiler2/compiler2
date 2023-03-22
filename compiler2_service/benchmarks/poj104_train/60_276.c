@@ -4,10 +4,10 @@ main_bench()
 {
       int n,m,i,j,k=1;
       int a[10000];
-      scanf("%d",&n);
-      if(n<5)printf("empty");
+      my_scanf("%d",&n);
+      if(n<5)my_printf("empty");
 else{
-      printf("3 5");
+      my_printf("3 5");
       for(i=5;i<=n-2;i=i+2)
       {
                          for(j=3;j<i;j=j+2)
@@ -25,7 +25,7 @@ else{
                                                      break;
                                    }
                                    if(k==i+2)
-                                   printf("\n%d %d",i,i+2);
+                                   my_printf("\n%d %d",i,i+2);
                          }
       }}
 }

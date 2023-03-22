@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i,n,m=1,c,g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=5;i++)
 	{
 		m=m*10;
@@ -19,15 +19,15 @@ int main_bench()
 		g=n%10;
 		if (g==0)
 		{
-			printf("0");
+			my_printf("0");
 		}
 		else 
 		{
-			printf("%d",g);
+			my_printf("%d",g);
 		}
 		n=n/10;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

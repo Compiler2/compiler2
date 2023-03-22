@@ -14,10 +14,10 @@ int F(int x){
 		int n;
 		int i;
 		int sa[100];
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++){
-			scanf("%d",&sa[i]);
-		printf("%d\n",F(sa[i]));
+			my_scanf("%d",&sa[i]);
+		my_printf("%d\n",F(sa[i]));
 		}
 	return 0;
 }

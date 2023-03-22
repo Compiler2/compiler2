@@ -9,6 +9,6 @@ int main_bench()
 	n=strlen (c);
 	for (i=0;i<n;i++)
 	if (*(c+i)>=48&&*(c+i)<=57)  { s=s*10+(*(c+i)-48); p=1;}
-    else if (p) {printf ("%d\n",s); s=0;p=0;}
-	 if (p) printf ("%d\n",s);  
+    else if (p) {my_printf ("%d\n",s); s=0;p=0;}
+	 if (p) my_printf ("%d\n",s);  
 }

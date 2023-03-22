@@ -40,8 +40,8 @@ int main_bench()
 			else if(b[i]==')')
 				b[i]='?';
 		}
-		printf("%s\n",c);
-		printf("%s\n",b);
+		my_printf("%s\n",c);
+		my_printf("%s\n",b);
 	}
 	return 0;
 }

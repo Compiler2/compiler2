@@ -21,7 +21,7 @@ int main_bench()
 	 *(p1+n-1)=*(p+n-1)+a[0];
 	 for(i=0;i<n;i++)
 	 {
-	 printf("%c",*(p1+i));
+	 my_printf("%c",*(p1+i));
 	 }
 	 return 0;
 }

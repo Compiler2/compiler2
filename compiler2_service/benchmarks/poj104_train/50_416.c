@@ -3,11 +3,11 @@
 int main_bench(){
     int m[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     int i,w,a,b,c,d;
-    scanf("%d",&w);
+    my_scanf("%d",&w);
     a=w+12;
     if(a%7==5)
     {
-        printf("1\n") ;   
+        my_printf("1\n") ;   
     }
     for(i=0;i<11;i++)
     {
@@ -15,7 +15,7 @@ int main_bench(){
         if(a%7==5)
       {
             d=i+2;
-        printf("%d\n",d) ;   
+        my_printf("%d\n",d) ;   
       }
       b=m[i+1] ;
       c=m[i]; 

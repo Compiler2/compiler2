@@ -16,7 +16,7 @@
 int main_bench()
 {
 	int n,i,max=0,m=0,gong=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	struct point *s;
 	s=(struct point*)malloc(sizeof(struct point)*n);
@@ -24,7 +24,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{ 
 		s[i].sum=0;
-		scanf("%s %d %d %c %c %d",s[i].a,&s[i].x,&s[i].y,&s[i].xue,&s[i].xi,&s[i].z);
+		my_scanf("%s %d %d %c %c %d",s[i].a,&s[i].x,&s[i].y,&s[i].xue,&s[i].xi,&s[i].z);
 	}	
 
 	for(i=0;i<n;i++)
@@ -43,8 +43,8 @@ int main_bench()
 		{max=s[i].sum;m=i;}
 	}
 
-	printf("%s\n",s[m].a);
-	printf("%d\n",max);
+	my_printf("%s\n",s[m].a);
+	my_printf("%d\n",max);
 
 
 	
@@ -53,7 +53,7 @@ int main_bench()
 		gong=gong+s[i].sum;
 	
 	}
-	printf("%d\n",gong);
+	my_printf("%d\n",gong);
 
 	free (s);
 	return 0;

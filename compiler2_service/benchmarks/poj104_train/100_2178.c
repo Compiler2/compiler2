@@ -3,7 +3,7 @@
 int main_bench() 
 {
   char s[300];
-  scanf("%s",s);
+  my_scanf("%s",s);
   int i=0,up[26]={0},down[26]={0},a=0;
   while(s[i]!='\0')
   {
@@ -19,17 +19,17 @@ int main_bench()
 	  i++;
   }
   if(a==i){
-	  printf("No");
+	  my_printf("No");
   }
   for(i=0;i<26;i++) 
   {
     if(up[i]!=0)
-      printf("%c=%d\n",i+'A',up[i]);
+      my_printf("%c=%d\n",i+'A',up[i]);
   }
   for(i=0;i<26;i++)
   {
 	  if(down[i]!=0)
-      printf("%c=%d\n",i+'a',down[i]);
+      my_printf("%c=%d\n",i+'a',down[i]);
   }
   return 0;
 }

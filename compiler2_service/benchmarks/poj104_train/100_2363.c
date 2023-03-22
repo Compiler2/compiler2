@@ -4,7 +4,7 @@ main_bench()
 {
 	int k[52]={0},i,j,n,m,h=0;
 	char a[300];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	for(j=0;j<26;j++)
 	{
@@ -17,7 +17,7 @@ main_bench()
 		}
 		
 		if(m>0)
-			printf("%c=%d\n",'A'+j,m);
+			my_printf("%c=%d\n",'A'+j,m);
 	}
       for(j=0;j<26;j++)
 	{  
@@ -29,9 +29,9 @@ main_bench()
 			h++;}
 		}
 		if(m>0)
-			printf("%c=%d\n",'a'+j,m);
+			my_printf("%c=%d\n",'a'+j,m);
 	}
 	  if(h==0)
-		  printf("No");
+		  my_printf("No");
 }
         

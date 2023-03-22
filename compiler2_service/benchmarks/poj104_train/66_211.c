@@ -12,7 +12,7 @@ int main_bench()
 	{'F','r','i'},
 	{'S','a','t'}
 	};
-	scanf("%d %d %d",&yr,&mn,&day);
+	my_scanf("%d %d %d",&yr,&mn,&day);
 	if(yr%4==0||yr%100==0||yr%400==0)
 		mont[2]=29;
 	else
@@ -22,6 +22,6 @@ int main_bench()
 	days+=day;
 	s=yr-1+(int)((yr-1)/4)-(int)((yr-1)/100)+(int)((yr-1)/400)+days;
 	k=s%7;
-	printf("%s.\n",wek[k]); 
+	my_printf("%s.\n",wek[k]); 
    return 0; 
 }

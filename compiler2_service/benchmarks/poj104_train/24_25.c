@@ -42,7 +42,7 @@ int main_bench()
          len=strlen(str[i]);
 		if(max==len)
 		{
-			printf("%s\n",str[i]);
+			my_printf("%s\n",str[i]);
 			break;
 		}
 	}
@@ -52,7 +52,7 @@ int main_bench()
 		if(min==len)
 
 		{	
-			printf("%s\n",str[i]);
+			my_printf("%s\n",str[i]);
 			break;
 		}
 	}

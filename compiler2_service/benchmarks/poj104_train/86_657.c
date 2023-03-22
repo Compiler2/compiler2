@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int n,i,j,sum,u[100],x,b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int m,a,time=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
 			sum=60;
 		else
 		{
 			for(j=0;j<m;j++)
 			{   
-				scanf("%d",&a);
+				my_scanf("%d",&a);
 				time=time+3;
 				x=time+a;
 				b[j]=x;
@@ -42,7 +42,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",u[i]);
+		my_printf("%d\n",u[i]);
 	}
 	return 0;
 }

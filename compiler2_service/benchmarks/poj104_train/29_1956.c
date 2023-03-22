@@ -12,12 +12,12 @@ int feii(int n)
 int main_bench()
 {
 	int n,m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(m--)
 	{
 		int i,j;
 		float sum=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=1;i<=n+1;i++)
 			feii(i);
 		for(i=1;i<=n;i++)
@@ -26,6 +26,6 @@ int main_bench()
 				fen[i]=(float)feibo[i+1]/(float)feibo[i];
 			sum+=fen[i];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 } 

@@ -3,14 +3,14 @@
 int main_bench()
 {
     int n,a[200000],i,b[200000],j=1,d=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-                     scanf("%d",&a[i]);
+                     my_scanf("%d",&a[i]);
                      b[j]=a[i];
                      j++;
     }
-                     printf("%d",b[1]);
+                     my_printf("%d",b[1]);
     for(j=2;j<=n;j++)
     {
                      d=0;
@@ -20,7 +20,7 @@ int main_bench()
                                       {d++;}
                      }
                      if(d==0)
-                     printf(" %d",b[j]);
+                     my_printf(" %d",b[j]);
     }
     getchar();
     getchar();

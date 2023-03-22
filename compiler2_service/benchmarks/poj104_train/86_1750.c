@@ -4,18 +4,18 @@ int tiaosheng(int m,int *a);
 int main_bench()
 {
     int *a,i,j,k,l,m,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                    
-                    scanf("%d",&m);
+                    my_scanf("%d",&m);
                    if(m==0)
                    {
-                           printf("60\n");continue;
+                           my_printf("60\n");continue;
                    }
                     a=(int*)malloc(m*sizeof(int));
-                    for(j=0;j<m;j++)scanf("%d",&a[j]);
-                    printf("%d\n",tiaosheng(m,a));
+                    for(j=0;j<m;j++)my_scanf("%d",&a[j]);
+                    my_printf("%d\n",tiaosheng(m,a));
     }
     return 0;
 }

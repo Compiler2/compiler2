@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d=0,i,t;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	if(((a-1)%400)==0)
 		d=0;
 		else
@@ -54,12 +54,12 @@ int main_bench()
   t=d%7;
   switch(t)
   {
-  case 0:printf("Mon.");break;
-  case 1:printf("Tue.");break;
-  case 2:printf("Wed.");break;
-  case 3:printf("Thu.");break;
-  case 4:printf("Fri.");break;
-  case 5:printf("Sat.");break;
-  case 6:printf("Sun.");break;
+  case 0:my_printf("Mon.");break;
+  case 1:my_printf("Tue.");break;
+  case 2:my_printf("Wed.");break;
+  case 3:my_printf("Thu.");break;
+  case 4:my_printf("Fri.");break;
+  case 5:my_printf("Sat.");break;
+  case 6:my_printf("Sun.");break;
   }
 }		

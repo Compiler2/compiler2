@@ -25,7 +25,7 @@ int main_bench()
     
     for(i=dancishu-1;i>0;i--)
     { 
-    	printf("%s ",d[i]);
+    	my_printf("%s ",d[i]);
     }
-    printf("%s",d[0]);
+    my_printf("%s",d[0]);
 }

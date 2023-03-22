@@ -74,7 +74,7 @@ int main_bench()
 	}
 	for(j=1;j<=i-1;j++)
 	{
-		printf("%s\n%s\n",a[j],b[j]);
+		my_printf("%s\n%s\n",a[j],b[j]);
 	}
 	return 0;
 }

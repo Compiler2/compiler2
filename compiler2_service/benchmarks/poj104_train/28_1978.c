@@ -9,7 +9,7 @@ int main_bench()
     for(i=0;s[i]!='\0';i++){
         if(s[i]==' '){
             if(s[i+1]!=' '){
-                printf("%d,",n);
+                my_printf("%d,",n);
                 n=0;
             }
             else{continue;}
@@ -18,7 +18,7 @@ int main_bench()
             n++;
         }
     }
-    printf("%d",n);
+    my_printf("%d",n);
     return 0;
 }
 

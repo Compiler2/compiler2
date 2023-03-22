@@ -3,8 +3,8 @@
 int main_bench()
 {
   int n,a[100],i,max,secondmax;
-  scanf("%d",&n);
-  for(i=0;i<n;i++)scanf("%d",&a[i]);
+  my_scanf("%d",&n);
+  for(i=0;i<n;i++)my_scanf("%d",&a[i]);
   max=a[0];
   for(i=0;i<n;i++)
   {
@@ -27,6 +27,6 @@ int main_bench()
       if(a[i]<max&&a[i]>secondmax)secondmax=a[i];
     }
   }
-  printf("%d\n",max);
-  printf("%d\n",secondmax);
+  my_printf("%d\n",max);
+  my_printf("%d\n",secondmax);
 }

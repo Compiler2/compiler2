@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int i,j,k=1,n,result[300],tem[300];
-	scanf("%d",&n);
-	scanf("%d",&tem[0]);
+	my_scanf("%d",&n);
+	my_scanf("%d",&tem[0]);
 	result[0]=tem[0];
 	for (i=1;i<n;i++)
 	{
-		scanf("%d",&tem[i]);
+		my_scanf("%d",&tem[i]);
 		for(j=0;j<i;j++)
 		{
 			if(tem[i]==result[j])
@@ -22,8 +22,8 @@ int main_bench()
 	}
 	for (i=0;i<k-1;i++)
 	{
-		printf("%d,",result[i]);
+		my_printf("%d,",result[i]);
 	}
-	printf("%d",result[k-1]);
+	my_printf("%d",result[k-1]);
 	return 0;
 }

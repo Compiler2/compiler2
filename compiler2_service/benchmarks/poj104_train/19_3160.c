@@ -10,8 +10,8 @@ int main_bench()
     int i,j,k;  
     while(gets(s)){
         int t=0;
-		scanf("%s",a);
-        scanf("%s",b);
+		my_scanf("%s",a);
+        my_scanf("%s",b);
 		getchar();
 		l=strlen(s);
 		i=0;
@@ -36,7 +36,7 @@ int main_bench()
 				strcpy(d[i],b);
 		}
 		for(i=0;i<j-1;i++)
-			printf("%s ",d[i]);
-		printf("%s\n",d[i]);}
+			my_printf("%s ",d[i]);
+		my_printf("%s\n",d[i]);}
 	return 0;
 }

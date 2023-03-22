@@ -5,14 +5,14 @@ int main_bench()
 	int r,c,i,j,t,n;
 	t=0;
 	int a[100][100]={0};
-	scanf("%d%d",&r,&c);
+	my_scanf("%d%d",&r,&c);
 
 
 	for(i=0;i<r;i++)
 	{
 		for(j=0;j<c;j++)
 		{
-			scanf("%d",&(a[i][j]));
+			my_scanf("%d",&(a[i][j]));
 		}
 	}
 
@@ -21,7 +21,7 @@ int main_bench()
 
 	while(1)
 	{
-		printf("%d",a[i0][j0]);
+		my_printf("%d",a[i0][j0]);
 		t++;
 
 		if(t==r*c)
@@ -31,7 +31,7 @@ int main_bench()
 		i=i0;
 		for(j=j0+1;j<j0+c0;j++)
 		{
-			printf("\n%d",a[i][j]);
+			my_printf("\n%d",a[i][j]);
 			t++;
 		}
 		if(t==r*c)
@@ -42,7 +42,7 @@ int main_bench()
 		j--;
 		for(i=i+1;i<i0+r0+1;i++)
 		{
-			printf("\n%d",a[i][j]);
+			my_printf("\n%d",a[i][j]);
 			t++;
 		}
 
@@ -55,7 +55,7 @@ int main_bench()
 
 		for(j=j-1;j>=j0;j--)
 		{
-			printf("\n%d",a[i][j]);
+			my_printf("\n%d",a[i][j]);
 			t++;
 		}
 
@@ -67,7 +67,7 @@ int main_bench()
 		j++;
 		for(i=i-1;i>i0;i--)
 		{
-			printf("\n%d",a[i][j]);
+			my_printf("\n%d",a[i][j]);
 			t++;
 		}
 		if(t==r*c)
@@ -76,7 +76,7 @@ int main_bench()
 		}
 		else
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 		c0--;
 		i0=i+1;

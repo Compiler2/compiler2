@@ -28,10 +28,10 @@ int main_bench()
 	{
 		if(n[j] != 0)
 		{
-			printf("%d,",n[j]);
+			my_printf("%d,",n[j]);
 	
 		}
 	}
-	printf("%d",n[l]);
+	my_printf("%d",n[l]);
 	return 0;
 }

@@ -8,14 +8,14 @@ int main_bench()
   	void hebing(int a[],int b[],int n,int m);
 	void print(int c[],int n,int m);
 	int n,m,a[100],b[100],i;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
     
 	to(a,b,n,m);
@@ -69,7 +69,7 @@ void print(int c[],int n,int m)
 	int i;
 	for(i=0;i<n+m-1;i++)
 	{
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	}
-	printf("%d\n",c[n+m-1]);
+	my_printf("%d\n",c[n+m-1]);
 }

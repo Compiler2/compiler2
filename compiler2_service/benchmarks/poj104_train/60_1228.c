@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,i,j,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *zs;
 	zs=(int*)malloc(sizeof(int)*n);
 	for(i=3;i<=n;i++){
@@ -22,12 +22,12 @@ int main_bench(){
 		for(j=i;j<k;j++){
 			if(zs[j]-zs[i]==2){
 				count++;
-				printf("%d %d\n",zs[i],zs[j]);
+				my_printf("%d %d\n",zs[i],zs[j]);
 			}
 		}
 	}
 	if(count==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	free(zs);
 	return 0;

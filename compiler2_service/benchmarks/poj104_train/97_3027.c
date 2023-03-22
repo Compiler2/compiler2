@@ -9,7 +9,7 @@ int main_bench(){
         d=0;
         e=0;
         f=0;
-        scanf("%d",&m);
+        my_scanf("%d",&m);
         for(i=m;i>0;i-=100){
                 if(i>=100){
                         a++;
@@ -39,6 +39,6 @@ int main_bench(){
                 }
         }
         f=m%5;
-        printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+        my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
         return 0;
 }

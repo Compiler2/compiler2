@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	char a[2000];
 	for(i=0;i<=n;i++)
@@ -31,9 +31,9 @@ int j;
 		int k;
 		for(k=0;k<strlen(a);k++)
 		{
-			printf("%c",a[k]);
+			my_printf("%c",a[k]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

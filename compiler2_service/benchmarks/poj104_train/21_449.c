@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,n,x[300],max,min,s=0;
 	float aver;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	for(i=0;i<n;i++)
 	{
 		s=s+x[i];
@@ -20,11 +20,11 @@ int main_bench()
 		else if(x[i]<min)
 			min=x[i];
 	}
-	if(max==min)printf("%d",min);
+	if(max==min)my_printf("%d",min);
 	else if((max-aver)>(aver-min))
-		printf("%d",max);
+		my_printf("%d",max);
 	else if((max-aver)<(aver-min))
-		printf("%d",min);
+		my_printf("%d",min);
 	else
-		printf("%d,%d",min,max);
+		my_printf("%d,%d",min,max);
 }

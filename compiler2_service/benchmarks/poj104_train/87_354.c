@@ -3,7 +3,7 @@
 int main_bench(){
 	int a[999],b[999],c[999],d[999],e[999],f[999],z[999],i;
 	for(i=0;;i++){
-		scanf("%d %d %d %d %d %d",&(a[i]),&(b[i]),&(c[i]),&(d[i]),&(e[i]),&(f[i]));
+		my_scanf("%d %d %d %d %d %d",&(a[i]),&(b[i]),&(c[i]),&(d[i]),&(e[i]),&(f[i]));
 		if(a[i]==0){
 			break;
 		}
@@ -13,7 +13,7 @@ int main_bench(){
 		if(a[i]==0){
 			break;
 		}
-		printf("%d\n",z[i]);
+		my_printf("%d\n",z[i]);
 	}
 	return 0;
 }

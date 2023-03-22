@@ -4,24 +4,24 @@ int main_bench()
 {
 	int f(int i);
 	int m,n,i,h=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(f(i)==1)
 		{
 			if(h==0)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				h=1;
 			}
 			else
 			{
-				printf(",%d",i);
+				my_printf(",%d",i);
 			}
 		}
 	}
 	if(h==0)
-		printf("no");
+		my_printf("no");
 }
 int f(int i)
 {

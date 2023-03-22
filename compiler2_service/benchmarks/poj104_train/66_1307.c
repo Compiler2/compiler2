@@ -6,7 +6,7 @@ int main_bench()
 	int year,month,day,y,d,num4,num100,x;
 	int a[13]={0,0,31,59,90,120,151,181,212,243,273,304,334};
 	int b[13]={0,0,31,60,91,121,152,182,213,244,274,305,335};
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	y=year%400;
 	if(y==0) y=400;
 	num4=(y-1)/4;
@@ -16,12 +16,12 @@ int main_bench()
 	if(y%4!=0||y==100||y==200||y==300)	d=d+a[month]+day;
 	if(y%4==0&&y!=100&&y!=200&&y!=300)  d=d+b[month]+day;
 	x=d%7;
-	if(x==0) printf("Sun.\n");
-	if(x==1) printf("Mon.\n");
-	if(x==2) printf("Tue.\n");
-	if(x==3) printf("Wed.\n");
-	if(x==4) printf("Thu.\n");
-	if(x==5) printf("Fri.\n");
-	if(x==6) printf("Sat.");
+	if(x==0) my_printf("Sun.\n");
+	if(x==1) my_printf("Mon.\n");
+	if(x==2) my_printf("Tue.\n");
+	if(x==3) my_printf("Wed.\n");
+	if(x==4) my_printf("Thu.\n");
+	if(x==5) my_printf("Fri.\n");
+	if(x==6) my_printf("Sat.");
 	return 0;
 }

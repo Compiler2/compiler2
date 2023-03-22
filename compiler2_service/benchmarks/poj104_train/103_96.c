@@ -10,7 +10,7 @@ int main_bench()
     int count=0;
     char b;
     int i,j;
-    scanf("%s",a);
+    my_scanf("%s",a);
     n=strlen(a);
     for(i=0;i<n;i++)
     {
@@ -20,7 +20,7 @@ int main_bench()
     
           b=a[0];
           count++;
-          if(n==1)printf("(%c,%d)",b,count);
+          if(n==1)my_printf("(%c,%d)",b,count);
           else 
           for(j=1;j<n;j++)
           {
@@ -28,15 +28,15 @@ int main_bench()
                           {
                           count++;
                           if(j==n-1)
-                          printf("(%c,%d)",a[j],count);}
+                          my_printf("(%c,%d)",a[j],count);}
                           else
                           {
                               
-                              printf("(%c,%d)",a[j-1],count);
+                              my_printf("(%c,%d)",a[j-1],count);
                               count=1;
                               b=a[j];
                               if(j==n-1)
-                              printf("(%c,%d)",a[j],count);
+                              my_printf("(%c,%d)",a[j],count);
                               
                           }          
      }

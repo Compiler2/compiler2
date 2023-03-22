@@ -18,8 +18,8 @@ int main_bench()
     for ( i = 0; i < 300 && count[i] == 0; i++ )
         ;
     if ( i == 300 )
-        printf("YES");
+        my_printf("YES");
     else
-        printf("NO");
+        my_printf("NO");
     return 0;
 }

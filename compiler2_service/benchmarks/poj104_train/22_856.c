@@ -9,12 +9,12 @@ int main_bench()
   next_max=0;
   do
   {i+=1;
-   scanf("%d%c",&num[i],&c);
+   my_scanf("%d%c",&num[i],&c);
    if (num[i]>max)
 	 max=num[i];
    }while(c==',');
   if (i==1)
-	 printf("%s\n","No");
+	 my_printf("%s\n","No");
   else
   {
 	 for (j=1;j<=i;j++)
@@ -26,9 +26,9 @@ int main_bench()
 	   else {}
 	 }
 	 if (0==next_max)
-		 printf("%s\n","No");
+		 my_printf("%s\n","No");
 	 else
-		 printf("%d\n",next_max);
+		 my_printf("%d\n",next_max);
     
   }
 	

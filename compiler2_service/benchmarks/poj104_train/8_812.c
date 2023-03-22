@@ -5,11 +5,11 @@ void f(int n1,int n2)
 	int a[100],b[100],i,j,k,l,m,n,p,q,term=0;
 	for(i=0;i<n1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=0;j<n2;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 	for(k=0;k<n1;k++)
 	{
@@ -37,18 +37,18 @@ void f(int n1,int n2)
 	}
 	for(p=0;p<n1;p++)
 	{
-		printf("%d ",a[p]);
+		my_printf("%d ",a[p]);
 	}
 	for(q=0;q<n2-1;q++)
 	{
-		printf("%d ",b[q]);
+		my_printf("%d ",b[q]);
 	}
-	printf("%d",b[n2-1]);
+	my_printf("%d",b[n2-1]);
 }
 int main_bench()
 {
 	int n1,n2;
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
 	f(n1,n2);
 	return 0;
 }

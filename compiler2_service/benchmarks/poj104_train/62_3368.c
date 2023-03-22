@@ -9,10 +9,10 @@ int main_bench()
   { 
 	  if(s[i]!=' ')
 	  {leap=1;
-		  printf("%c",s[i]);
+		  my_printf("%c",s[i]);
 	  }
 	  if(s[i]==' '&&leap==1)
-	  { printf(" ");
+	  { my_printf(" ");
 	   leap=0;
 	  }
   }

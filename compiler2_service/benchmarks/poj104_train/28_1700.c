@@ -18,6 +18,6 @@ int main_bench()
 	}
 	n=j+1;
 	for(j=0;j<n-1;j++)
-		printf("%d,",a[j]);
-	printf("%d",a[j]);
+		my_printf("%d,",a[j]);
+	my_printf("%d",a[j]);
 }

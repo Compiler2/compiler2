@@ -4,7 +4,7 @@ int main_bench()
 {
     int a,b,c,d,e,f,g,h,i,j,k;
     int sum=0;
-    scanf("%d %d %d",&a,&b,&c);
+    my_scanf("%d %d %d",&a,&b,&c);
     a=a-1;
     d=a/400;
     e=a%400;
@@ -59,31 +59,31 @@ int main_bench()
    k=g+sum+c;
    if (k%7==0)
    {
-   printf("Sun.");
+   my_printf("Sun.");
    }
    else if (k%7==1)
    {
-   printf("Mon.");
+   my_printf("Mon.");
    }
    else if (k%7==2)
    {
-   printf("Tue.");
+   my_printf("Tue.");
     }
    else if (k%7==3)
    {
-   printf("Wed.");
+   my_printf("Wed.");
    }
    else if (k%7==4)
    {
-   printf("Thu.");
+   my_printf("Thu.");
    }
    else if (k%7==5)
    {
-   printf("Fri.");
+   my_printf("Fri.");
    }
    else 
    {
-   printf("Sat.");
+   my_printf("Sat.");
    }
    return 0;
 }

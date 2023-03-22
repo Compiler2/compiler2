@@ -4,9 +4,9 @@ int main_bench()
 {
 	char s1[256],s2[256],s3[256];
 	int i,j,a=1,n,m,k;
-	scanf("%s",s1);
-	scanf("%s",s2);
-	scanf("%s",s3);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
+	my_scanf("%s",s3);
 	n=strlen(s1);
 	m=strlen(s2);
 	for(i=0;i<n;i++)
@@ -20,15 +20,15 @@ int main_bench()
 			if(a==m)
 			{
 				for(k=0;k<i;k++)
-					printf("%c",s1[k]);
+					my_printf("%c",s1[k]);
 				for(k=0;k<m;k++)
-					printf("%c",s3[k]);
+					my_printf("%c",s3[k]);
 				for(k=i+m;k<n;k++)
-					printf("%c",s1[k]);
-				printf("\n");
+					my_printf("%c",s1[k]);
+				my_printf("\n");
 				break;
 			}	
 		}
-	if(a!=m) printf("%s\n",s1);
+	if(a!=m) my_printf("%s\n",s1);
 	return 0;
 }

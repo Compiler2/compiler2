@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int row,col;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	int a[100][100]={0};
 	int i,j;
 	for(i=0;i<row;i++)
-	{for(j=0;j<col;j++)scanf("%d",&a[i][j]);} 
+	{for(j=0;j<col;j++)my_scanf("%d",&a[i][j]);} 
 
 	int step=0;
 	i=0;
 	j=0;
 	int t;
 
-	if(row*col>0){printf("%d",a[0][0]);step++;}
+	if(row*col>0){my_printf("%d",a[0][0]);step++;}
 
 	while(step<row*col)            
 	{
@@ -27,7 +27,7 @@ int main_bench()
 			i=j;
 			j=t+1;             
 			if(i<row&&j<col)   
-			{printf("\n%d",a[i][j]);
+			{my_printf("\n%d",a[i][j]);
 			step++;}
 		}
 		else
@@ -35,7 +35,7 @@ int main_bench()
 			i=i+1;
 			j=j-1;
 			if(i<row&&j<col)     
-			{printf("\n%d",a[i][j]);
+			{my_printf("\n%d",a[i][j]);
 			step++;}
 		}
 		

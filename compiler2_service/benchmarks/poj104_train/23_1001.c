@@ -22,5 +22,5 @@ int main_bench()
 		}
 	}
 	r=inversed;
-	printf("%s",r);
+	my_printf("%s",r);
 }

@@ -26,13 +26,13 @@ int main_bench()
 
     char s[600],t[600];
 
-    scanf("%lf%s%s",&n,s,t);
+    my_scanf("%lf%s%s",&n,s,t);
 
     int len1 = strlen(s), len2 = strlen(t);
 
     if(len1 != len2)
 
-        printf("error\n");
+        my_printf("error\n");
 
     else
 
@@ -50,15 +50,15 @@ int main_bench()
 
         if(flag)
 
-            printf("error\n");
+            my_printf("error\n");
 
         else
 
         {
 
-            if(1.0*icount/len1>=n)printf("yes\n");
+            if(1.0*icount/len1>=n)my_printf("yes\n");
 
-            else printf("no\n");
+            else my_printf("no\n");
 
         }
 

@@ -28,9 +28,9 @@ c=i;
 d=k;}
 }
 for(j=b+1;j<a;j++){
-printf("%c",str[j]);}
-printf("\n");
+my_printf("%c",str[j]);}
+my_printf("\n");
 for(j=d+1;j<c;j++){
-printf("%c",str[j]);}
+my_printf("%c",str[j]);}
 return 0;
 }

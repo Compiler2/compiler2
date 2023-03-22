@@ -20,12 +20,12 @@ int  main_bench()
 {  
 	int n,i; 
 	int A[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	    scanf("\n%d",&A[i]);
+	    my_scanf("\n%d",&A[i]);
 	}
 	bubblesort(A,n);
-	printf("%d\n%d\n", A[n],A[n-1]);
+	my_printf("%d\n%d\n", A[n],A[n-1]);
      return 0;
  }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,n,m,k=0,max[8]={0},min[8];
 	int sz[8][8];
-	scanf("%d,%d",&n,&m);
+	my_scanf("%d,%d",&n,&m);
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -38,13 +38,13 @@ int main_bench()
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
 			if(sz[i][j]==1){
-				printf("%d+%d",i,j);
+				my_printf("%d+%d",i,j);
 				k++;
 			}
 		}
 	}
 	if(k==0){
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

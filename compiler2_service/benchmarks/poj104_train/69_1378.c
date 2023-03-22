@@ -30,7 +30,7 @@ for(i=250;i>=0;i--)
 {for(i=0;i<=250;i++)
   { if(z[i]!='0') {p=&z[i];break;}}
 if(i==251)
-  printf("0");
+  my_printf("0");
 else
-printf("%s",p);}
+my_printf("%s",p);}
 }

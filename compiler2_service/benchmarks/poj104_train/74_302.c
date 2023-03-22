@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int m,i,n,a,num=0,p,q,su;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(a=m;a<=n;a++)
 	{   su=1;
 		for(i=2;i<a/2;i++)
@@ -30,13 +30,13 @@ int main_bench()
 			{
 				num++;
 				if(num==1)
-					printf("%d",a);
+					my_printf("%d",a);
 				if(num>1)
-					printf(",%d",a);
+					my_printf(",%d",a);
 			}
 		}
 	}
 	if(num==0)
-		printf("no");
+		my_printf("no");
 }
 

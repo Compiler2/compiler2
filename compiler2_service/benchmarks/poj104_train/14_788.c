@@ -7,7 +7,7 @@ int main_bench()
 	int sum[100000];
 	int max=0,second=0,third=0;
 	int a=0,b=0,c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		int id;
@@ -17,7 +17,7 @@ int main_bench()
 	struct student wangchong[100000];
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&wangchong[i].id,&wangchong[i].chi,&wangchong[i].math);
+		my_scanf("%d%d%d",&wangchong[i].id,&wangchong[i].chi,&wangchong[i].math);
 		sum[i]=wangchong[i].chi+wangchong[i].math;
 		if (sum[i]>third)
 		{
@@ -47,6 +47,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",a,max,b,second,c,third);
+	my_printf("%d %d\n%d %d\n%d %d\n",a,max,b,second,c,third);
 	return 0;
 }

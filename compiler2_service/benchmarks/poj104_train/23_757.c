@@ -14,13 +14,13 @@ int turn(char *a)
         else
         {
             for (q=p+1;q<=p+i;q++)
-                printf("%c",*q);
-            printf(" ");
+                my_printf("%c",*q);
+            my_printf(" ");
             i=0;
         }
         if (p==a)
             for (q=p;q<p+i;q++)
-                printf("%c",*q);
+                my_printf("%c",*q);
     }
     
 }

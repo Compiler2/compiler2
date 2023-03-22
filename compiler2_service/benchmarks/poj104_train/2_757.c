@@ -10,13 +10,13 @@ int main_bench()
 	};
 	int i,j,k,l,m,z[26]={0},max,n;
 	struct writer *p1,*p2,*p,*head;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	head=p1=p2=(struct writer *)malloc(sizeof(struct writer));
-	scanf("%d %s",&p1->num,&p1->name);
+	my_scanf("%d %s",&p1->num,&p1->name);
 	for (i=0;i<n-1;i++)
 	{
 		p1=(struct writer *)malloc(sizeof(struct writer));
-		scanf("%d %s",&p1->num,&p1->name);
+		my_scanf("%d %s",&p1->num,&p1->name);
 		p2->next=p1;
 		p2=p1;
 	}
@@ -46,7 +46,7 @@ int main_bench()
 				j=i;     
 		}
 	}
-	printf("%c\n%d\n",65+j,max);   
+	my_printf("%c\n%d\n",65+j,max);   
 	p=head;
 	for (i=0;i<n;i++)   
 	{
@@ -54,7 +54,7 @@ int main_bench()
 		{
 			if (p->name[k]==(char)(65+j))
 			{
-				printf("%d\n",p->num);
+				my_printf("%d\n",p->num);
 				break;
 			}
 		}

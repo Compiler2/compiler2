@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int m,n[1000][1000],ai,aj,zi,zj,i,j,s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=0;i<m;i++)
 	{
 	for(j=0;j<m;j++)
 	{
-	scanf("%d",&n[i][j]);
+	my_scanf("%d",&n[i][j]);
 		if (n[i][j]==0)
 		{
 		zi=i;zj=j;
@@ -29,6 +29,6 @@ int main_bench()
 	}
 	}
     s=(zj-aj-1)*(zi-ai-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

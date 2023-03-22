@@ -16,8 +16,8 @@ int main_bench()
 		if(x[i-1]==' '&&x[i]!=' ')
 			y[k++]=x[i];
 	}
-	printf("%c",x[0]);
+	my_printf("%c",x[0]);
 	for(i=0;i<k;i++)
-		printf("%c",y[i]);
+		my_printf("%c",y[i]);
 	return 0;
 }

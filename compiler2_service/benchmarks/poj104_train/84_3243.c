@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int p[100];
 	int i;
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 	}
 	int max,max2;
 	max=0;
@@ -25,6 +25,6 @@ int main_bench()
 			max2=p[i];
 		}
 	}
-	printf("%d\n%d\n",max,max2);
+	my_printf("%d\n%d\n",max,max2);
 	return 0;
 }

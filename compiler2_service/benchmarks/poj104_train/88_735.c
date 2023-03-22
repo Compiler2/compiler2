@@ -9,9 +9,9 @@ int main_bench()
      while(*(str+i)!='\0')
 	 {	 
 		 if((*(str+i)<=57&&*(str+i)>=48)&&(*(str+i+1)>57||*(str+i+1)<48))
-			 printf("%c\n",*(str+i));
+			 my_printf("%c\n",*(str+i));
 		 if((*(str+i)<=57&&*(str+i)>=48)&&(*(str+i+1)<=57&&*(str+i+1)>=48))
-			 printf("%c",*(str+i));
+			 my_printf("%c",*(str+i));
 		 i=i+1;
 	 }
 }

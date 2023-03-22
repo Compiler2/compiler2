@@ -19,10 +19,10 @@ int main_bench()
 		for(j=0;j<n-4;j++)
 		{if(a[i][j]>max) {max=a[i][j];p=j;}}
 		for(j=0;j<=p;j++)
-		{printf("%c",a[i][j]);}
-		printf("%c%c%c",a[i][n-3],a[i][n-2],a[i][n-1]);
+		{my_printf("%c",a[i][j]);}
+		my_printf("%c%c%c",a[i][n-3],a[i][n-2],a[i][n-1]);
 		for(j=p+1;j<n-4;j++)
-		{printf("%c",a[i][j]);}
-		printf("\n");
+		{my_printf("%c",a[i][j]);}
+		my_printf("\n");
 	}
 }

@@ -5,9 +5,9 @@ int main_bench(){
 	int i,e,f,c,d,m;
 	int sum=0;
 	int a[50000],b[50000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(int k=1;k<=n;k++){
 		for(i=0;i<n-k;i++){
@@ -35,9 +35,9 @@ int main_bench(){
 		}
 	}
 	if(d==m){
-		printf("%d %d",c,d);
+		my_printf("%d %d",c,d);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

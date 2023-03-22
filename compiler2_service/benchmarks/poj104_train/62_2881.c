@@ -7,8 +7,8 @@ int main_bench()
 	gets(a);
 	while(a[i]!='\0')
 	{
-		if(a[i]!=' ')printf("%c", a[i]);
-		else if(a[i+1]!=' ')printf(" ");
+		if(a[i]!=' ')my_printf("%c", a[i]);
+		else if(a[i+1]!=' ')my_printf(" ");
 		i++;
 }
 	return 0;

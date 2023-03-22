@@ -12,10 +12,10 @@ int main_bench()
   struct student s[100];
   int n,i,j;
   long t,g[100],m; 
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for (i=0;i<=(n-1);i++)
-    { scanf("%s",&s[i].name);    
-      scanf("%d%d %c %c%d",&s[i].jun,&s[i].ping,&s[i].gan,&s[i].xi,&s[i].lun);
+    { my_scanf("%s",&s[i].name);    
+      my_scanf("%d%d %c %c%d",&s[i].jun,&s[i].ping,&s[i].gan,&s[i].xi,&s[i].lun);
      }
   for  (i=0;i<=(n-1);i++)
    {  g[i]=0;
@@ -30,5 +30,5 @@ int main_bench()
    { t=t+g[i];
      if (m<g[i]) {m=g[i];j=i;}
     }
-  printf("%s\n%d\n%ld",s[j].name,m,t);
+  my_printf("%s\n%d\n%ld",s[j].name,m,t);
 }

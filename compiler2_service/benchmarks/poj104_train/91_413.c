@@ -15,7 +15,7 @@ int main_bench()
 	    i++;}
 	str1[j-1]=*(p+j-1)+*p;
 	for (i=0;i<j;i++)
-		printf("%c",str1[i]);
+		my_printf("%c",str1[i]);
 	return 0;
 }
 

@@ -12,9 +12,9 @@ int main_bench()
 	{
 		for(j=0;j<=4;++j)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
-		scanf("\n");
+		my_scanf("\n");
 	}
 	for(i=0;i<=4;++i)
 	{
@@ -45,11 +45,11 @@ int main_bench()
 		{
 			if(max[i]==min[j])
 			{
-				printf("%d %d %d\n",i+1,j+1,max[i]);
+				my_printf("%d %d %d\n",i+1,j+1,max[i]);
 				k++;
 			}
 		}
 	}
-	if(k==0) printf("not found\n");
+	if(k==0) my_printf("not found\n");
 	return 0;
 }

@@ -7,9 +7,9 @@ int main_bench()
 	int f2;
     float b;
   
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-       scanf("%d",&a);  
+       my_scanf("%d",&a);  
 	   float sum=0.000;
        int f0=1;
        int f1=1;
@@ -20,7 +20,7 @@ int main_bench()
           b=(float)f1/f0;
           sum+=b;
        }
-	   printf("%.3f\n",sum);
+	   my_printf("%.3f\n",sum);
     }
     return 0;
 }

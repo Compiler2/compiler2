@@ -30,16 +30,16 @@ int main_bench()
 	int n,i,count=0;
 	int *XueFen,*Marks;
 	float GPA=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	XueFen=(int*)malloc(sizeof(int)*n);
 	Marks=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&XueFen[i]);
+		my_scanf("%d",&XueFen[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&Marks[i]);
+		my_scanf("%d",&Marks[i]);
 	}
 
 	
@@ -48,7 +48,7 @@ int main_bench()
 		GPA=GPA+XueFen[i]*GradePoint(Marks[i]);
 		count+=XueFen[i];
 	}
-	printf("%3.2f",GPA/count);
+	my_printf("%3.2f",GPA/count);
 
 	
 

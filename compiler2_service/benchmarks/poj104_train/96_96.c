@@ -8,11 +8,11 @@ int main_bench()
     len=strlen(a);
     char b[101];
     int c,i,d,m;
-    if(len==1)    {printf("0\n");
-                printf("%c",a[0]);}
+    if(len==1)    {my_printf("0\n");
+                my_printf("%c",a[0]);}
           else{      c=(a[0]-'0')*10+a[1];
- if(c-'0'<13&&len==2)  {printf("0\n");
-                      printf("%d",c-'0');}
+ if(c-'0'<13&&len==2)  {my_printf("0\n");
+                      my_printf("%d",c-'0');}
  else{  
     
     c=(a[0]-'0')*10+a[1];
@@ -25,8 +25,8 @@ int main_bench()
                                    d=d%13;
                                    }   
                          b[len-1]='\0';
-                         printf("%s\n",b);    
-                         printf("%d",d);      
+                         my_printf("%s\n",b);    
+                         my_printf("%d",d);      
                                    }
 if(c-'0'<13){           for(i=0,d=0;i<=len-1;i++)
                              {      m=0;
@@ -38,8 +38,8 @@ if(c-'0'<13){           for(i=0,d=0;i<=len-1;i++)
                        b[len-2]='\0';
                        
                       
-                        printf("%s\n",b);
-                        printf("%d",d);     
+                        my_printf("%s\n",b);
+                        my_printf("%d",d);     
                  }
               
                                           

@@ -8,10 +8,10 @@ int main_bench()
     int i,m,n,j,o,p,q;
     memset(s,0,sizeof(s));
     memset(a,0,sizeof(a));
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<=n-1;i++)
-    scanf("%s",s[i]);
-    scanf("%d",&m);
+    my_scanf("%s",s[i]);
+    my_scanf("%d",&m);
     
     for (o=1;o<=m-1;o++)
     {
@@ -34,7 +34,7 @@ int main_bench()
     for (i=0;i<=n-1;i++)
         for (j=0;j<=n-1;j++)   
         if (s[i][j]=='@')  p++;
-        printf("%d",p);
+        my_printf("%d",p);
         
         return 0;
 }            

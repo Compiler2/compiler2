@@ -8,7 +8,7 @@ int main_bench()
     long sum=0;
     int temp;
     char ans[100];
-    scanf("%d %s %d",&a,num,&b);
+    my_scanf("%d %s %d",&a,num,&b);
     int len;
     len=strlen(num);
     for(i=0;i<len;i++)
@@ -27,7 +27,7 @@ int main_bench()
     }
     for(int j=i;j>=0;j--)
     {
-        printf("%c",ans[j]);
+        my_printf("%c",ans[j]);
     }
 
 

@@ -6,7 +6,7 @@ int main_bench()
 	i=0;
 	while(i<1001)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		i++;
 		if(c=='\n')
 		{
@@ -15,9 +15,9 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%c",&b[i],&c);
+		my_scanf("%d%c",&b[i],&c);
 	}
-	printf("%d ",n);
+	my_printf("%d ",n);
 	int t=0,m=0;
 	for(i=0;i<1000;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 		}
 		t=0;
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }
 

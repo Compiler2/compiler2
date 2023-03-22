@@ -4,14 +4,14 @@ int fei(int n);
 int main_bench()
 {
 	int n,i,j,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		double s=0;
 		for(j=1;j<=a;j++){
 			s+=(double)(1.0*fei(j+1)/fei(j));
 		}
-		printf("%0.3lf\n",s);
+		my_printf("%0.3lf\n",s);
 	}
 	return 0;
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
     int n;
     int i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char sz[21];
     for(i=0;i<n;i++)
     {
         int zs=1;
-        scanf("%s",sz);
+        my_scanf("%s",sz);
         if(sz[0]>='0'&&sz[0]<='9')
         {
             zs=0;
@@ -24,11 +24,11 @@ int main_bench()
         }
         if(zs==1)
             {
-                printf("yes\n");
+                my_printf("yes\n");
             }
           if(zs==0)
             {
-                printf("no\n");
+                my_printf("no\n");
             }
     }
     return 0;

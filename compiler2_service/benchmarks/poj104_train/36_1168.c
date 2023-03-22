@@ -6,8 +6,8 @@ char b[100]={0};
 int main_bench(){
 	int i,j;
 	char e;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<strlen(a);i++){
 		if(a[i]!=b[i]){
 			for(j=i+1;j<strlen(a);j++){
@@ -19,13 +19,13 @@ int main_bench(){
 			}
 		}
 		if(a[i]!=b[i]){
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 	}
-	if(!strcmp(a,b)) printf("YES");
+	if(!strcmp(a,b)) my_printf("YES");
 	else{
-		if(i==strlen(a)) printf("NO"); 
+		if(i==strlen(a)) my_printf("NO"); 
 	}
 	return 0;	
 }

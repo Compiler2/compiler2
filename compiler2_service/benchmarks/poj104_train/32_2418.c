@@ -7,14 +7,14 @@ int main_bench()
         char s1[201], s2[201];
     int a[201], b[201], maxx, l1, l2,i,j;
     N = maxx = l1 = l2 = 0;
-    scanf("%d", &N);
+    my_scanf("%d", &N);
     for (int n = 0; n < N; n++) {
         memset(s1, 0, sizeof(s1));
         memset(s2, 0, sizeof(s2));
         memset(a, 0, sizeof(a));
         memset(b, 0, sizeof(b));
-        scanf("%s", s1);
-        scanf("%s", s2);
+        my_scanf("%s", s1);
+        my_scanf("%s", s2);
         l1 = strlen(s1);
         l2 = strlen(s2);
         maxx = maxlen(l1, l2);
@@ -36,8 +36,8 @@ int main_bench()
         while (a[i] == 0)
             i ++;
         for (; i<maxx + 1; i++)
-            printf("%d", a[i]);
-            printf("\n");
+            my_printf("%d", a[i]);
+            my_printf("\n");
     }
     
     return 0;

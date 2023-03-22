@@ -7,20 +7,20 @@ int main_bench()
 	int k;
 	int a[1001],b[1001];
     k=1;
-	scanf("%d",&a[k]);
+	my_scanf("%d",&a[k]);
 	while((c=getchar())==',')
 	{
 		k++;
-		scanf("%d",&a[k]);
+		my_scanf("%d",&a[k]);
 	}
 	k=1;
-	scanf("%d",&b[k]);
+	my_scanf("%d",&b[k]);
 	while((c=getchar())==',')
 	{
 		k++;
-		scanf("%d",&b[k]);
+		my_scanf("%d",&b[k]);
 	}
-	printf("%d ",k);
+	my_printf("%d ",k);
 	int t=0;
 	for (i=0;i<=1000;i++)
 	{
@@ -32,5 +32,5 @@ int main_bench()
 		if (t<sum)
 			t=sum;
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 }

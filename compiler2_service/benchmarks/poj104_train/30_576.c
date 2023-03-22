@@ -4,7 +4,7 @@ int main_bench()
 {
    int n;
    int sum=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    while(n>0)   
   {
        if(n%7==0 || n%10==7 || n/10==7) 
@@ -18,6 +18,6 @@ int main_bench()
          n=n-1;
         
   }
-   printf("%d",sum);
+   my_printf("%d",sum);
    return 0;
 }

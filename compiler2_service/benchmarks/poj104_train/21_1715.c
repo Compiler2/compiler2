@@ -4,10 +4,10 @@ int main_bench()
 {
 	int num[300],i,k=0,n,j;
 	float aver,sub[300],sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		sum=sum+num[i];
 	}
 	aver=sum/n;
@@ -25,8 +25,8 @@ int main_bench()
 				num[i]=num[k];
 				num[k]=j;
 			}
-			printf("%d,",num[i]);
+			my_printf("%d,",num[i]);
 			break;
 		}
-	printf("%d\n",num[k]);
+	my_printf("%d\n",num[k]);
 }

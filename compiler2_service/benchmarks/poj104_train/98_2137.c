@@ -4,9 +4,9 @@
 main_bench()
 {	char words[500][40];
 	int n,i,j,numwords[500]={0},num=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-  	{scanf("%s",words[i]);}
+  	{my_scanf("%s",words[i]);}
 	
 	for(i=0;i<n;i++)
 	{	for(j=0;words[i][j]!='\0';j++)
@@ -17,20 +17,20 @@ main_bench()
 					 
 	for(i=0;i<n-1;i++)
 	{	if((numwords[i]+num)>80)
-		{	printf("\n");
-			printf("%s ",words[i]);
+		{	my_printf("\n");
+			my_printf("%s ",words[i]);
 			num=numwords[i]+1;
 		 						}					 
 	 	else if((numwords[i+1]+num+numwords[i]+1)>80)
-	 	{	printf("%s",words[i]);
+	 	{	my_printf("%s",words[i]);
 	 		num=num+numwords[i]+1;
 		 						}			
 		else
-		{	printf("%s ",words[i]);
+		{	my_printf("%s ",words[i]);
 	 		num=num+numwords[i]+1;
 		 						}						 
 					 }
-  	  printf("%s",words[n-1]); 
+  	  my_printf("%s",words[n-1]); 
 		 
 			 }
 

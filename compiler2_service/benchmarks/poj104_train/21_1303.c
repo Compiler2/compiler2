@@ -5,9 +5,9 @@ int main_bench()
 {
 	int n,i,t,num[300],sum=0,k,m;
 	float a,c[300],mc=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&t);
+		my_scanf("%d",&t);
 		num[i]=t;
 		sum+=num[i];
 	}
@@ -31,10 +31,10 @@ int main_bench()
 		}
 	}
 	if(m==k)
-		printf("%d",num[k]);
+		my_printf("%d",num[k]);
 	else if(num[k]>num[m])
-		printf("%d,%d",num[m],num[k]);
+		my_printf("%d,%d",num[m],num[k]);
 	else
-		printf("%d,%d",num[k],num[m]);
+		my_printf("%d,%d",num[k],num[m]);
 	return 0;
 }

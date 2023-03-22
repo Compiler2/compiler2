@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100][100];
 	int i,j;
 	int chang1[100];
@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(j=0,chang1[i]=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if(a[i][j]==0)
 			{
 				chang1[i]=chang1[i]+1;
@@ -36,7 +36,7 @@ int main_bench()
 	}
 	int jieguo;
 	jieguo=kuan*(chang-2);
-	printf("%d",jieguo);
+	my_printf("%d",jieguo);
 	return 0;
 }
 

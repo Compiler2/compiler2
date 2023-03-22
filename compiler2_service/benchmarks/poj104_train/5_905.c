@@ -7,9 +7,9 @@ int main_bench()
     char a[500];
     char b[500];
     
-    scanf("%lf",&n);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%lf",&n);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     
     int i,x;
     x=0;
@@ -49,13 +49,13 @@ int main_bench()
     
     j=w/k;
     
-    if(j<=n) printf("no");
-    else printf("yes");
+    if(j<=n) my_printf("no");
+    else my_printf("yes");
         }
-        else printf("error");
+        else my_printf("error");
     }
     
-    else printf("error");
+    else my_printf("error");
     
     return 0;
 }

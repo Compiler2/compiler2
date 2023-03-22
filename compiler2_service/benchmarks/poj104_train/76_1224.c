@@ -6,8 +6,8 @@ int a[50000],b[50000];
 int main_bench()
 {
 	int n,i,k=1,a0,b0,result=1;
-	scanf("%d",&n);
-	for(i=0;i<n;i++) scanf("%d %d",&a[i],&b[i]);
+	my_scanf("%d",&n);
+	for(i=0;i<n;i++) my_scanf("%d %d",&a[i],&b[i]);
 	a0=a[0];
 	b0=b[0];
 	for(;k<n-1;)
@@ -37,7 +37,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++) if(a[i]<a0||b[i]>b0) result=0;
-	if(result==1) printf("%d %d",a0,b0);
-	else printf("no");
+	if(result==1) my_printf("%d %d",a0,b0);
+	else my_printf("no");
 	return 0;
 }

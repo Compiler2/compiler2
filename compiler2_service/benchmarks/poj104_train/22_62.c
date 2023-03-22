@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,k,i,m,n,tof,l;
 	char e[1600];
 	int g[1201],h[1201];
-	scanf("%s",e);
+	my_scanf("%s",e);
 	l=strlen(e);
 	a=0;b=0;m=0;tof=0;
 	for(i=0;i<l;i++)
@@ -22,14 +22,14 @@ int main_bench()
 	if(g[k]<g[k+1])
 	{b=g[k];g[k]=g[k+1];g[k+1]=b;}
 	}
-	if(a==1) printf("No\n");
+	if(a==1) my_printf("No\n");
 	else
 	{
 	for(i=0;i<a-1;i++)
 	{
 		if(g[i]!=g[i+1]) 
-		{printf("%d\n",g[i+1]);break;}
-		if(i==a-2) printf("No\n");
+		{my_printf("%d\n",g[i+1]);break;}
+		if(i==a-2) my_printf("No\n");
 	}
 	}
 }

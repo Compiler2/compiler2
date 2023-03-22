@@ -3,9 +3,9 @@
 int main_bench(){
 	int n[500],i,j,m,a[500];
 	double b[500];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
     a[0]=1;
 	a[1]=2;
@@ -16,7 +16,7 @@ int main_bench(){
 		for(j=0;j<n[i];j++){
 			b[i]+=a[j+1]*1.0/a[j];
 		}
-		printf("%.3lf\n",b[i]);
+		my_printf("%.3lf\n",b[i]);
 	}
 	return 0;
 }

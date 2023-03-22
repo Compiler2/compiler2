@@ -6,9 +6,9 @@ int main_bench(){
     int pz[100];
     int n;
     int a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d %d",&cz[i],&sz[i]);
+        my_scanf("%d %d",&cz[i],&sz[i]);
     }
     int sum=0;
     for(int i=0;i<n;i++){
@@ -25,6 +25,6 @@ int main_bench(){
         a=pz[i];
         }
     }
-    printf("%d\n",a);
+    my_printf("%d\n",a);
     return 0;
 }

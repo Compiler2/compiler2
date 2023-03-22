@@ -8,8 +8,8 @@ int main_bench()
 	}as[100];
 	int n,i,j,k,m;
 	int b[100];
-	scanf("%d",&n);
-	for(i=0;i<n;i++) scanf("%d%d",&as[i].x,&as[i].y);
+	my_scanf("%d",&n);
+	for(i=0;i<n;i++) my_scanf("%d%d",&as[i].x,&as[i].y);
 	j=0;b[j]=0;
 	for(i=0;i<n;i++)
 	{
@@ -24,7 +24,7 @@ int main_bench()
 		{
 			if(b[j]<b[i]) m=1;
 		}
-		if(m==0){printf("%d",b[j]);break;}
+		if(m==0){my_printf("%d",b[j]);break;}
 	}
 	return 0;
 }

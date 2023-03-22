@@ -5,11 +5,11 @@ int main_bench()
 	int first,second,in;
 	char c;
 	second=0;
-	scanf("%d",&first);
-	scanf("%c",&c);
+	my_scanf("%d",&first);
+	my_scanf("%c",&c);
 	while(c==',')
 	{
-		scanf("%d",&in);
+		my_scanf("%d",&in);
 		if(in>first)
 		{
 			second=first;
@@ -25,11 +25,11 @@ int main_bench()
 				second=in;
 			}
 		}
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 	}
 	if(second==0)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",second);
+		my_printf("%d",second);
 	
 }

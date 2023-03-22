@@ -8,7 +8,7 @@ int main_bench()
    int m,n,i;
    int a[500];
    int k=0;
-   scanf("%d %d",&m,&n);
+   my_scanf("%d %d",&m,&n);
 	   for(i=m;i<=n;i++)
    {
      if(su(i)&&hui(i))
@@ -20,10 +20,10 @@ int main_bench()
 	   int j;
    if(k>0)
    {
-	   printf("%d",a[0]);
-	   for(j=1;j<k;j++) printf(",%d",a[j]);
+	   my_printf("%d",a[0]);
+	   for(j=1;j<k;j++) my_printf(",%d",a[j]);
    }
-   else printf("no");
+   else my_printf("no");
 }
 
 int wei(int c)

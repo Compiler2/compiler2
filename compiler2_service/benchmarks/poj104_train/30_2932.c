@@ -15,12 +15,12 @@ return 0;}
 int main_bench()
 { 
      int i,n,sum;	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 for(i=1,sum=0;i<=n;i++)
 {if (mm(i)==1)
 { sum+=i*i;
 }
 }
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

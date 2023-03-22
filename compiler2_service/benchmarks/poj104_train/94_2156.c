@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[500],n,i,j=0,b,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		if(b%2!=0)
 		{
 			a[k]=b;
@@ -27,8 +27,8 @@ int main_bench()
 	}
 	for(i=0;i<k-1;i++)
 	{
-		printf("%d,",a[i]);
+		my_printf("%d,",a[i]);
 	}
-	printf("%d",a[k-1]);
+	my_printf("%d",a[k-1]);
 	return 0;
 }

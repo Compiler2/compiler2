@@ -8,13 +8,13 @@ int t,i,n,j,p,y;
 char a[1000];
 char s;
 int b[1000];
-scanf("%d",&p);
+my_scanf("%d",&p);
 for(y=0;y<p;y++)
 { 
 memset(a,0,1000*sizeof(char));
          
        t=0;
-       scanf("%s",a);
+       my_scanf("%s",a);
        n=strlen(a);
        for(i=0;i<n;i++)
        b[i]=0;
@@ -30,13 +30,13 @@ memset(a,0,1000*sizeof(char));
        for(i=0;i<n;i++)
                        {
                        if(b[i]==1)
-                                  {printf("%c\n",a[i]);
+                                  {my_printf("%c\n",a[i]);
                                   t=1;
                                   break;}
                        }
        
        if(t==0)
-       printf("no\n");
+       my_printf("no\n");
 }      
 }
                               

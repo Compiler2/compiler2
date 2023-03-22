@@ -22,7 +22,7 @@ int main_bench()
 		p=p+1;
 	}
 	for(i=0;i<m;i++)
-	    printf("%d,",num[i]);
-	printf("%d",num[m]);
+	    my_printf("%d,",num[i]);
+	my_printf("%d",num[m]);
 return 0;
 }

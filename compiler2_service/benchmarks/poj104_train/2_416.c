@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,a[999],i,k[27]={0},j,t,m;
     char b[999][27];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %s",&a[i],b[i]);
+        my_scanf("%d %s",&a[i],b[i]);
         for(j=0;b[i][j];j++)
         k[b[i][j]-65]++;
     }
@@ -16,14 +16,14 @@ int main_bench()
     {
         if(k[j]>t) {t=k[j];m=j;}
     }
-    printf("%c\n%d\n",m+65,t);
+    my_printf("%c\n%d\n",m+65,t);
     for(i=0;i<n;i++)
     {
         for(j=0;b[i][j];j++)
         {
             if(b[i][j]==m+65)
             {
-                printf("%d\n",a[i]);
+                my_printf("%d\n",a[i]);
                 break;
             }
         }

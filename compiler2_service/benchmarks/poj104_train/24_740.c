@@ -19,10 +19,10 @@ int main_bench()
     if(p<min) {min=p;y=i-p;}
 		
 	for(i=x;*(s+i)!=' '&&*(s+i)!='\0';i++)
-		printf("%c",*(s+i));
-	printf("\n");
+		my_printf("%c",*(s+i));
+	my_printf("\n");
 	for(i=y;*(s+i)!=' '&&*(s+i)!='\0';i++)
-		printf("%c",*(s+i));
+		my_printf("%c",*(s+i));
 	
 
 }

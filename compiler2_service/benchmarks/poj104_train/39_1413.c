@@ -53,16 +53,16 @@ int main_bench()
 	struct student a[100];
 	struct scholar *p;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
 		if(i==0)
 		{
-			scanf("%s %d %d %c %c %d",a[i].name,&a[i].score,&a[i].cla,&a[i].leader,&a[i].west,&a[i].paper);
+			my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].score,&a[i].cla,&a[i].leader,&a[i].west,&a[i].paper);
 		}
 		else
-			scanf("\n%s %d %d %c %c %d",a[i].name,&a[i].score,&a[i].cla,&a[i].leader,&a[i].west,&a[i].paper);
+			my_scanf("\n%s %d %d %c %c %d",a[i].name,&a[i].score,&a[i].cla,&a[i].leader,&a[i].west,&a[i].paper);
 	}
 
 	p=scholar(a,n);
@@ -80,7 +80,7 @@ int main_bench()
 			m=(p+i)->money;
 		}
 	}
-	printf("%s\n%d\n%d\n",a[r].name,m,sum);
+	my_printf("%s\n%d\n%d\n",a[r].name,m,sum);
 }
 
 

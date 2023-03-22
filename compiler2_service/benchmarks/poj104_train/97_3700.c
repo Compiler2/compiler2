@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[6]={0};
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int wor[6]={100,50,20,10,5,1};
 	int num[6];
 	for(i=0;i<=5;i++)
@@ -14,7 +14,7 @@ int main_bench()
 	}
 	for(i=0;i<=5;i++)
 	{
-		printf("%d\n",num[i]);
+		my_printf("%d\n",num[i]);
 	}
 	return 0;
 }

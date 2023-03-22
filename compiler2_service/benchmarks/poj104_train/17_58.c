@@ -8,7 +8,7 @@ while(gets(sen))
 {
 	z=0;y=0;
 	l=strlen(sen);
-	printf("%s\n",sen);
+	my_printf("%s\n",sen);
 
     for(i=0;i<l;i++)
 	{
@@ -50,18 +50,18 @@ while(gets(sen))
 	{
 		if(sen[i]=='(')
 		{
-			printf("$");
+			my_printf("$");
 		}
 		else if(sen[i]==')')
 		{
-			printf("?");
+			my_printf("?");
 		}
 		else if((sen[i]!='(')&&(sen[i]!=')'))
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	}
 return 0;
 }

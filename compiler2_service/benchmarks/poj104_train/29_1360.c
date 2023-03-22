@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int sz[1000];
 	int t;
 	for(t=2;t<1000;t++){
@@ -18,14 +18,14 @@ int main_bench()
 	int i;
 	for(i=1;i<=m;i++){
 		int n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		int j;
 		for(j=2;j<=n+1;j++){
 			szp[i]+=1.0*sz[j]/sz[j-1];
 		}
 	}
 	for(i=1;i<=m;i++){
-		printf("%.3lf\n",szp[i]);
+		my_printf("%.3lf\n",szp[i]);
 	}
 	return 0;
 }

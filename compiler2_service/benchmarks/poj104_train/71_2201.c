@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,flag[300],r[300];
 	int year[300],m1[300],m2[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&year[i],&m1[i],&m2[i]);
+		my_scanf("%d %d %d",&year[i],&m1[i],&m2[i]);
 		if(year[i]%4==0&&year[i]%100!=0||year[i]%400==0)
 			flag[i]=1;
 		else flag[i]=0;
@@ -71,8 +71,8 @@ int main_bench(){
 		else
 			r[i]=m2[i]-m1[i];
 		if(r[i]%7==0)
-			  printf("YES\n");
-		else printf("NO\n");
+			  my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 	return 0;
 }

@@ -42,8 +42,8 @@ int main_bench()
 			c++;
 	}
 	if(b==n)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }

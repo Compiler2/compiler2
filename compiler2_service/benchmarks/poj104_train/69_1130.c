@@ -14,8 +14,8 @@ int main_bench()
     int max(int a,int b);
     int i,n,x=0;
     char str1[252],str2[252],str3[252],str4[252];char s[252];
-    scanf("%s",str3);
-    scanf("%s",str4);
+    my_scanf("%s",str3);
+    my_scanf("%s",str4);
     for(i=0;i<strlen(str3);i++)
     str1[strlen(str3)-i-1]=str3[i];
     for(i=strlen(str3);i<251;i++)
@@ -40,12 +40,12 @@ int main_bench()
         if(s[i]!='0')
         {
             for(i=i;i>=0;i--)
-            printf("%c",s[i]);
+            my_printf("%c",s[i]);
             x++;
         }
     }
     if(x==0)
-    printf("%d",x);
+    my_printf("%d",x);
 
     return 0;
 }

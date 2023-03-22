@@ -2,41 +2,41 @@
 
 int main_bench(){
   int w,d=12,a;
-  scanf("%d",&w);
+  my_scanf("%d",&w);
   a=12%7;
-  if((a+w)%7==5){printf("1\n");}
+  if((a+w)%7==5){my_printf("1\n");}
   d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("2\n");}
+  if((a+w)%7==5){my_printf("2\n");}
   d+=28;
   a=d%7;
-  if((a+w)%7==5){printf("3\n");}
+  if((a+w)%7==5){my_printf("3\n");}
   d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("4\n");}
+  if((a+w)%7==5){my_printf("4\n");}
   d+=30;
   a=d%7;
-  if((a+w)%7==5){printf("5\n");}
+  if((a+w)%7==5){my_printf("5\n");}
    d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("6\n");}
+  if((a+w)%7==5){my_printf("6\n");}
   d+=30;
   a=d%7;
-  if((a+w)%7==5){printf("7\n");}
+  if((a+w)%7==5){my_printf("7\n");}
   d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("8\n");}
+  if((a+w)%7==5){my_printf("8\n");}
   d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("9\n");}
+  if((a+w)%7==5){my_printf("9\n");}
    d+=30;
   a=d%7;
-  if((a+w)%7==5){printf("10\n");}
+  if((a+w)%7==5){my_printf("10\n");}
    d+=31;
   a=d%7;
-  if((a+w)%7==5){printf("11\n");} 
+  if((a+w)%7==5){my_printf("11\n");} 
   d+=30;
   a=d%7;
-  if((a+w)%7==5){printf("12\n");}
+  if((a+w)%7==5){my_printf("12\n");}
 return 0;
 }

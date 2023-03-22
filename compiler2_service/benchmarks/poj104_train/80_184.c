@@ -28,8 +28,8 @@ int Dijitian(int year,int month,int day)
 int main_bench()
 {
 	int startYear,startMonth,startDay,endYear,endMonth,endDay;
-	scanf("%d %d %d",&startYear,&startMonth,&startDay);
-    scanf("%d %d %d",&endYear,&endMonth,&endDay);
+	my_scanf("%d %d %d",&startYear,&startMonth,&startDay);
+    my_scanf("%d %d %d",&endYear,&endMonth,&endDay);
 	int num=0;
 	if(startYear==endYear)
 		num=Dijitian(endYear,endMonth,endDay)-Dijitian(startYear,startMonth,startDay);
@@ -45,6 +45,6 @@ int main_bench()
 		}
 		num+=Dijitian(endYear,endMonth,endDay)-Dijitian(startYear,startMonth,startDay);
 	}
-	printf("%d\n",num);
+	my_printf("%d\n",num);
 	return 0;
 }

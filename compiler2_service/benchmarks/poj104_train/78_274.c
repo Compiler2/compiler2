@@ -48,7 +48,7 @@ main_bench()
                        a[g].name=T;            
                     }  
             }
-            printf("%c %d\n",a[g].name,a[g].w*10);
+            my_printf("%c %d\n",a[g].name,a[g].w*10);
       }
       getchar();
       getchar();

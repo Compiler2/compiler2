@@ -16,4 +16,4 @@ int main_bench()
 {char s[1000];
 gets(s);
 convert(s);
-printf("%s",str);}
+my_printf("%s",str);}

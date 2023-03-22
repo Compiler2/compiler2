@@ -7,12 +7,12 @@ int i,j,m,n,b;
 int a[6][5];
 for(i=0;i<5;i++)
 for(j=0;j<5;j++)
-scanf("%d",&a[i][j]);
-scanf("%d %d",&m,&n);
+my_scanf("%d",&a[i][j]);
+my_scanf("%d %d",&m,&n);
 b=decide(m,n);
 
 if(b==0)
-printf("error");
+my_printf("error");
 else
 {
 	for(j=0;j<5;j++)
@@ -24,10 +24,10 @@ else
 for(i=0;i<5;i++){
 for(j=0;j<5;j++)
 	{
-	if(j!=4)  printf("%d ",a[i][j]);
-    if(j==4)  printf("%d",a[i][j]);
+	if(j!=4)  my_printf("%d ",a[i][j]);
+    if(j==4)  my_printf("%d",a[i][j]);
 	}
-  printf("\n");
+  my_printf("\n");
 }
 }
 return 0;

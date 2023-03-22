@@ -5,9 +5,9 @@ int main_bench()
 {int n,a(int num),s,i=0;
 while(i<6)
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=a(n);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	i++;
 }
 	return 0;

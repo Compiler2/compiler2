@@ -9,10 +9,10 @@ int main_bench()
 	struct ILL ill[100];
     int n,i,k,j=0,Age[100],x;
 	char a[100][10],b[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%s",ill[i].id);
-	    scanf("%d",&ill[i].age);
+		my_scanf("%s",ill[i].id);
+	    my_scanf("%d",&ill[i].age);
 	    if (ill[i].age>=60)
 		{ strcpy(a[j],ill[i].id);
 		  Age[j]=ill[i].age;
@@ -36,7 +36,7 @@ int main_bench()
 	}
 	for (i=0;i<n;i++){
 		if (ill[i].age<60){
-			printf("%s\n",ill[i].id);
+			my_printf("%s\n",ill[i].id);
 		}
 	}
 	return 0;

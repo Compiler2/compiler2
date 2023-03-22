@@ -83,5 +83,5 @@ int main_bench()
     f(b,a,c);
     else
     f(a,b,c);
-    printf("%s\n",c);
+    my_printf("%s\n",c);
 }

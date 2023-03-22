@@ -21,8 +21,8 @@ int main_bench()
 			i = i - 1;
 		}
 	}
-		printf("%d", sum[0]);
+		my_printf("%d", sum[0]);
 		for(i = 1; i <= j; i++)
-			printf(",%d", sum[i]);
+			my_printf(",%d", sum[i]);
 	return 0;
 }

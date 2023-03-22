@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	
 		if(a>999)
 			{
@@ -14,7 +14,7 @@ int main_bench()
 			e=(a/10)-100*c-10*d;
 			f=a-1000*c-100*d-10*e;
 			
-			printf("%d%d%d%d",f,e,d,c);
+			my_printf("%d%d%d%d",f,e,d,c);
 			}
 		else
 			if(a>99)
@@ -24,7 +24,7 @@ int main_bench()
 					e=(a/10)-10*d;
 					f=a-100*d-10*e;
 					
-					printf("%d%d%d",f,e,d);
+					my_printf("%d%d%d",f,e,d);
 					}
 			else
 				if(a>9)
@@ -33,12 +33,12 @@ int main_bench()
 						e=(a/10);
 						f=a-10*e;
 						
-						printf("%d%d",f,e);
+						my_printf("%d%d",f,e);
 					}
 				else	
 					{
 						
-						printf("%d",a);
+						my_printf("%d",a);
 					}
 	
 				

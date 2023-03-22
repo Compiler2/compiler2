@@ -22,9 +22,9 @@ int main_bench()
           s[i]=0;
       }
       
-      scanf("%d ",&a);
-      scanf("%s",p);
-      scanf(" %d",&b);          
+      my_scanf("%d ",&a);
+      my_scanf("%s",p);
+      my_scanf(" %d",&b);          
       
       for (j=0;j<64;j++)
       {
@@ -55,7 +55,7 @@ int main_bench()
       {
           if (r[l]>=0 && r[l]<=9) s[l]=r[l]+48;
           if (r[l]>=10 && r[l]<=35) s[l]=r[l]+55;  
-          printf("%c",s[l]);        
+          my_printf("%c",s[l]);        
       }
 
 }

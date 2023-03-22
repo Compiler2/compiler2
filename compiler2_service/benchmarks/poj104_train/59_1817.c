@@ -4,14 +4,14 @@ int main_bench(){
 	char a[102][102],c[102][102];
 	int n,i,j,m,t,r=0,x,y;
 	memset (a,'@',sizeof a);
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++){ 
 	  for(j=1;j<=n;j++){ 
-	    scanf("%c\n",&a[i][j]);
+	    my_scanf("%c\n",&a[i][j]);
 	    c[i][j]=a[i][j];
 	  }  
 	} 
-	scanf("%d\n",&m);
+	my_scanf("%d\n",&m);
 for(t=1;t<m;t++){
 	for(i=1;i<=n;i++)
 	for(j=1;j<=n;j++){
@@ -31,6 +31,6 @@ for(j=1;j<=n;j++){
 	if(a[i][j]=='@')
 	r+=1;
 }
-printf("%d\n",r);
+my_printf("%d\n",r);
 return 0; 
 }

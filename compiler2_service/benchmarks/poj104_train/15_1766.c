@@ -6,10 +6,10 @@ int sz[Row][Col];
 int n;
 int row1;int row2;int i;
 int col1;int col2;int k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 for(k=0;k<n;k++){
-scanf("%d",&sz[i][k]);}}
+my_scanf("%d",&sz[i][k]);}}
 int judge=0;
 for(i=0;judge==0&&i<n;i++){
 for(k=0;judge==0&&k<n;k++){
@@ -29,6 +29,6 @@ col2=k;
 judge=0;}}}
 int s;
 s=(row2-row1-1)*(col2-col1-1);
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

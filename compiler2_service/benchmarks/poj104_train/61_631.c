@@ -4,13 +4,13 @@ int main_bench() {
 	int n,i,j,a,b,t;
 	int p[1000];
 	int s;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++){
-		scanf ("%d",&p[i]);
+		my_scanf ("%d",&p[i]);
 	}
 for (i=0;i<n;i++){
 		if (p[i]==1||p[i]==2){
-				printf ("1\n");
+				my_printf ("1\n");
 			}
 			else {
 				s=0;a=1;b=1;
@@ -23,7 +23,7 @@ for (i=0;i<n;i++){
 			
 		}
 		
-		printf ("%d\n",s);
+		my_printf ("%d\n",s);
 			}
 		
 

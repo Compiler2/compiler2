@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m,n;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int germ[11][11]={0};
     int a[11][11]={0};
     int i,j,k,x;
@@ -42,9 +42,9 @@ int main_bench()
     {
                     for(j=1;j<9;j++)
                     {
-                                    printf("%d ",germ[i][j]);                
+                                    my_printf("%d ",germ[i][j]);                
                     }                
-                    printf("%d\n",germ[i][9]);
+                    my_printf("%d\n",germ[i][9]);
     }
 
 }

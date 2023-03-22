@@ -7,7 +7,7 @@ int main_bench()
 	
 	for(;;)
 	{
-	    scanf("%s",a[i]);
+	    my_scanf("%s",a[i]);
 		if((m=getchar())==' ')
 		{
 			i=i+1;
@@ -23,8 +23,8 @@ int main_bench()
 	for(i=1;i<n;i++)
 	{
 		t=strlen(a[i]);
-		printf("%d,",t);
+		my_printf("%d,",t);
 	}
     t=strlen(a[n]);
-    printf("%d",t);
+    my_printf("%d",t);
 }

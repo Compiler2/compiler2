@@ -15,13 +15,13 @@ int findmax(int a[100])
 int main_bench()
 {
 	int hang,lie;
-	scanf("%d,%d",&hang,&lie);
+	my_scanf("%d,%d",&hang,&lie);
 	int a[100][100];
 	int i,j;
 	for(i=0;i<hang;i++)
 	{
 		for(j=0;j<lie;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	int max,k,flag;
 	for(i=0;i<hang;i++)
@@ -39,10 +39,10 @@ int main_bench()
 					if(a[k][j]<a[i][j] )
 						flag=0;
 				}
-				if(flag) {printf("%d+%d",i,j);break;}
+				if(flag) {my_printf("%d+%d",i,j);break;}
 			}
 		}
 		if(flag) break;
 	}
-	if(flag==0) printf("No");
+	if(flag==0) my_printf("No");
 }

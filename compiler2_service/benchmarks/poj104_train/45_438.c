@@ -6,7 +6,7 @@ int main_bench()
     int i,j,m,n,p;
     char *wp;char *tp;
     wp=w;tp=t;
-    scanf("%s %s",s,w);
+    my_scanf("%s %s",s,w);
     m=strlen(s);
     n=strlen(w);
     for(i=0;i<n;i++)
@@ -19,5 +19,5 @@ int main_bench()
     		break;
     	}
     }
-    printf("%d",p);
+    my_printf("%d",p);
 }

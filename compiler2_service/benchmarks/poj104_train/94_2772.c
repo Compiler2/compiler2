@@ -3,11 +3,11 @@
 int main_bench(){
 	int N,i,e,h,j,k,m;
 	h=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int sz[501],js[501];
 	for(i=0;i<N;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		if(sz[i]%2==1)
 		{
 			js[h]=sz[i];
@@ -27,8 +27,8 @@ int main_bench(){
 		};
 	};
 	for(k=0;k<h-1;k++){
-		printf("%d,",js[k]);
+		my_printf("%d,",js[k]);
 	};
-	printf("%d",js[k]);
+	my_printf("%d",js[k]);
 	return 0;
 }

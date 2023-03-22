@@ -33,11 +33,11 @@ int main_bench()
 	struct student stu[100],*p;
 	int n,i,a[100]={0},*ap,b=0,k,m;
 	p=stu;ap=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		
-		scanf("%s %d %d %c %c %d",p->name,&p->qimo,&p->banji,&p->xs,&p->xb,&p->lw);
+		my_scanf("%s %d %d %c %c %d",p->name,&p->qimo,&p->banji,&p->xs,&p->xb,&p->lw);
 		p=p+1;
 	}
 	p=stu;
@@ -55,5 +55,5 @@ int main_bench()
 		if(a[i]>k)
 		{	k=a[i];m=i;}
 	}
-	printf("%s\n%d\n%d\n",(stu+m)->name,k,b);
+	my_printf("%s\n%d\n%d\n",(stu+m)->name,k,b);
 }

@@ -5,9 +5,9 @@ int main_bench(){
 	int i=0,j=0,k=0;
 	int sz[500];
 	int js[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	for(i=0;i<n;i++){
 		if(sz[i]%2!=0){
 				js[j]=sz[i];
@@ -26,7 +26,7 @@ int main_bench(){
 			}
 		}
 			for(i=0;i<j-1;i++)
-				printf("%d,",js[i]);
-			printf("%d",js[j-1]);
+				my_printf("%d,",js[i]);
+			my_printf("%d",js[j-1]);
 			return 0;
 }

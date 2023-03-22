@@ -18,10 +18,10 @@ int bj(int a,char b);
 int main_bench()
 {
 	int n=0,i=0,sum=0,k=0,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].fs,&stu[i].cs,&stu[i].gb,&stu[i].xb,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].fs,&stu[i].cs,&stu[i].gb,&stu[i].xb,&stu[i].paper);
 		stu[i].sch=0;
 	}
 	for(i=0;i<n;i++)
@@ -61,7 +61,7 @@ int main_bench()
 			k=stu[i].sch;
 		}
 	}
-	printf("%s\n%d\n%d",stu[j].name,stu[j].sch,sum);
+	my_printf("%s\n%d\n%d",stu[j].name,stu[j].sch,sum);
 	return 0;
 }
 int ys(int a,int b)

@@ -9,19 +9,19 @@ int main_bench()
         {
             iday[i][j]=200;
         }
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
         for(j=0;j<n;j++)
         {
-            scanf("%c",&room[i][j]);
+            my_scanf("%c",&room[i][j]);
             while((room[i][j]==' ')||(room[i][j]=='\n'))
             {
-                scanf("%c",&room[i][j]);
+                my_scanf("%c",&room[i][j]);
             }
             if(room[i][j]=='@')
                 iday[i][j]=1;
         }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(day=2;day<=m;day++)
     {
         for(i=0;i<n;i++)
@@ -68,6 +68,6 @@ int main_bench()
             if(room[i][j]=='@')
                 count++;
         }
-    printf("%d\n",count);
+    my_printf("%d\n",count);
     
 }

@@ -2,14 +2,14 @@
 
 int main_bench(){
 int n,a;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i,t,I;
 int c[10000];
 int k=0;
 for(I=0;I<n;I++){
 	int x=1;
     int sum=1;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if((a==2)||(a==1)){
 		c[k]=1;
 		k++;
@@ -24,7 +24,7 @@ for(I=0;I<n;I++){
 	}
 }int j;
 for(j=0;j<k;j++){
-	printf("%d\n",c[j]);}
+	my_printf("%d\n",c[j]);}
     return 0;
 }	
 

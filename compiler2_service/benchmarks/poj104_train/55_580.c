@@ -5,9 +5,9 @@ main_bench()
 	long int p=0;
 	int m,n,e=1,i,q,N;
 	char a[100],b[100];
-	scanf ("%d",&m);
-	scanf ("%s",a);
-	scanf ("%d",&n);
+	my_scanf ("%d",&m);
+	my_scanf ("%s",a);
+	my_scanf ("%d",&n);
 	N=strlen(a);
 	for(i=0;i<=N-1;i++)
 	{
@@ -36,8 +36,8 @@ main_bench()
     for (i=q;i>=0;i--)
 	{
 		if (b[i]>=0&&b[i]<=9)
-			printf ("%c",b[i]+'0');
+			my_printf ("%c",b[i]+'0');
 		else 
-			printf ("%c",b[i]-10+'A');
+			my_printf ("%c",b[i]-10+'A');
 	}
 }

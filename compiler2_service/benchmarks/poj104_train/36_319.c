@@ -23,17 +23,17 @@ int main_bench()
 {
 	char a[100],b[100],*i,*j;
 	int flag=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	i=&a[0];j=&b[0];
 	rank(i);rank(j);
 	for(i=&a[0],j=&b[0];*i!='\0';i++,j++)
 	{
 		if(*i!=*j)
 		{
-			printf("NO");
+			my_printf("NO");
 			flag=1;
 			break;
 		}
 	}
-	if(flag==0)printf("YES");
+	if(flag==0)my_printf("YES");
 }

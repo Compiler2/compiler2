@@ -61,22 +61,22 @@ void print(int a[100][100],int m)
 	{
 		for(j=0;j<m;j++)
 		{
-			printf("%d ",a[i][j]);
+			my_printf("%d ",a[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }
 int main_bench()
 {
 	int n,i,j,k,a[100][100]={0},m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int b=0;
 		for(j=0;j<n;j++)
 			for(k=0;k<n;k++)
 			{
-				scanf("%d",&a[j][k]);
+				my_scanf("%d",&a[j][k]);
 			}
 		m=n;
 		for(j=0;j<n-1;j++)
@@ -87,7 +87,7 @@ int main_bench()
 			del(a,m);
 			m--;
 		}
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	}
 	return 0;
 }

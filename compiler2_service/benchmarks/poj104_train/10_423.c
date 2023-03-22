@@ -20,11 +20,11 @@ int dp(int i, int k) {
 }
 
 int main_bench() {
-	scanf("%d", &N);
+	my_scanf("%d", &N);
 	for(int i = 0; i < 40; i++) for(int j = 0; j < 40; j++)
 		memo[i][j] = -1;
 	for(int i = 0; i < N; i++) {
-		scanf("%d", &H[i]);
+		my_scanf("%d", &H[i]);
 	}
-	printf("%d\n", dp(0, 30));
+	my_printf("%d\n", dp(0, 30));
 }

@@ -9,34 +9,34 @@
 int main_bench()
 {
 	int t;
-	scanf("%d", &t);
+	my_scanf("%d", &t);
 	char in[256];
 	while(t--)
 	{
-		scanf("%s", in);
+		my_scanf("%s", in);
 		char *pnt = in;
 		while(*pnt)
 		{
 			switch(*pnt)
 			{
 			case 'A':
-				printf("T");
+				my_printf("T");
 				break;
 			case 'T':
-				printf("A");
+				my_printf("A");
 				break;
 			case 'C':
-				printf("G");
+				my_printf("G");
 				break;
 			case 'G':
-				printf("C");
+				my_printf("C");
 				break;
 			default:
 				break;
 			}
 			pnt++;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

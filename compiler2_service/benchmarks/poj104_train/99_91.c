@@ -4,10 +4,10 @@ int main_bench()
 {
 	int p[100]={0},n1=0,n2=0,n3=0,n4=0,i,n;
     double b1=0,b2=0,b3=0,b4=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -24,13 +24,13 @@ int main_bench()
 b2=(double)n2/n*100;
 b3=(double)n3/n*100;
 b4=(double)n4/n*100;
-printf("1-18: %.2f",b1);
-printf("%%\n");
-printf("19-35: %.2f",b2);
-printf("%%\n");
-printf("36-60: %.2f",b3);
-printf("%%\n");
-printf("60??: %.2f",b4);
-printf("%%");
+my_printf("1-18: %.2f",b1);
+my_printf("%%\n");
+my_printf("19-35: %.2f",b2);
+my_printf("%%\n");
+my_printf("36-60: %.2f",b3);
+my_printf("%%\n");
+my_printf("60??: %.2f",b4);
+my_printf("%%");
 }
 

@@ -10,10 +10,10 @@ int main_bench()
 		int size;
 		int mark;
 	}num[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
-		scanf("%d",&num[i].size);
+		my_scanf("%d",&num[i].size);
 
 	for(i=0;i<n;i++)
 		num[i].mark=1;
@@ -33,11 +33,11 @@ int main_bench()
 		if(num[i].mark==1)
 		{
 			if(flag==1)
-				printf(",");
+				my_printf(",");
 			flag=1;
-			printf("%d",num[i].size);
+			my_printf("%d",num[i].size);
 		}
 	}
 
-printf("\n");
+my_printf("\n");
 }

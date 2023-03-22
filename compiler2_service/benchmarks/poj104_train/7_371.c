@@ -40,7 +40,7 @@ int main_bench()
 														}
 														}
 														}
-														printf(str);        
+														my_printf(str);        
   
   return 0;
 }

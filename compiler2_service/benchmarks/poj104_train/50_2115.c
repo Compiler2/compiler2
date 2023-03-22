@@ -3,7 +3,7 @@
 int main_bench()
 {
     int w,i;
-    scanf("%d", &w);
+    my_scanf("%d", &w);
     int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
     int b[13];
     b[1]=w;
@@ -20,8 +20,8 @@ int main_bench()
     {
                       if(b[i]==0||b[i]==7)
                       {
-                      printf("%d", i);
-                      printf("\n");
+                      my_printf("%d", i);
+                      my_printf("\n");
                       }
     }                      
 

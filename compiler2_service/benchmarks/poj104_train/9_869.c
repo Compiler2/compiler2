@@ -5,9 +5,9 @@ int main_bench(){
    int i, n,j=0,e,x,a=0,k;
    int y[100],year[100];
    char id[10],t[100][10],ee[10],p[100][10];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-     scanf("%s %d",id,&x);
+     my_scanf("%s %d",id,&x);
 	 if(x>=60){
 	   y[j]=x;
 	   strcpy(t[j],id);
@@ -40,10 +40,10 @@ int main_bench(){
 
 for(i=0;i<j;i++){
 	
-		printf("%s\n",t[i]);
+		my_printf("%s\n",t[i]);
 }
 for(k=0;k<a;k++){
-   printf("%s\n",p[k]);
+   my_printf("%s\n",p[k]);
 }
    
 	return 0;

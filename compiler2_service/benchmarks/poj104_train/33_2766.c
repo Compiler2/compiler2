@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,m,i,j;
     char s[256];
-    scanf("%d",&n);
-    scanf("\n");
+    my_scanf("%d",&n);
+    my_scanf("\n");
     for(i=0;i<n;i++){
-        scanf("%s",&s);
-        scanf("\n");
+        my_scanf("%s",&s);
+        my_scanf("\n");
         m=strlen(s);
         for(j=0;j<m;j++){
             if(s[j]=='A'){
@@ -28,8 +28,8 @@ int main_bench()
                 continue;
             }
         }
-        printf("%s",s);
-        printf("\n");
+        my_printf("%s",s);
+        my_printf("\n");
     }
     return 0;
 }

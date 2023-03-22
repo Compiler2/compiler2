@@ -4,7 +4,7 @@
 int main_bench(){
     int i,j,n,s=0;
     char name;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
         name=getchar();
     for(i=0;i<n;i++)
     {
@@ -25,11 +25,11 @@ int main_bench(){
             }
             name=getchar();
         }while(name!='\n');
-        printf("\n");
+        my_printf("\n");
         if(s==0)
-           printf("yes\n");
+           my_printf("yes\n");
         else
-           printf("no\n");
+           my_printf("no\n");
         
     }
     

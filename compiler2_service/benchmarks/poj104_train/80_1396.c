@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a=0,m;
 	int Ori[2][3];
-	scanf("%d %d %d",&Ori[0][0],&Ori[0][1],&Ori[0][2]);
-	scanf("%d %d %d",&Ori[1][0],&Ori[1][1],&Ori[1][2]);
+	my_scanf("%d %d %d",&Ori[0][0],&Ori[0][1],&Ori[0][2]);
+	my_scanf("%d %d %d",&Ori[1][0],&Ori[1][1],&Ori[1][2]);
 	int sy,sm=Ori[0][1],ey=Ori[1][0],em=Ori[1][1];
 	for(sy=Ori[0][0];sy<Ori[1][0];sy++){
 		if(Ori[0][1]<=2){
@@ -29,7 +29,7 @@ int main_bench()
 		}
 	a+=(Ori[1][2]-Ori[0][2]);
 	if(((ey%4==0&&ey%100!=0)||(ey%100==0&&ey%400==0))&&(Ori[0][1]<=2&&Ori[1][1]>2)) a+=1;
-	printf("%d",a);
+	my_printf("%d",a);
     }
 	else{
 		if(Ori[0][1]!=Ori[1][1]){
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	a-=(Ori[0][2]-Ori[1][2]);
 	if(((ey%4==0&&ey%100!=0)||(ey%100==0&&ey%400==0))&&(Ori[1][1]<=2&&Ori[0][1]>2)) a-=1;
-	printf("%d",a);
+	my_printf("%d",a);
 	}
     return 0;
 }

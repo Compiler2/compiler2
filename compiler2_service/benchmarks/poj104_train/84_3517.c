@@ -5,9 +5,9 @@ int main_bench(){
 	i=1;
 	max1=0;
 	max2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(i==1){max1=num;}
 		else if(i==2){
 			if(max1>=num){
@@ -27,7 +27,7 @@ int main_bench(){
 			}
 		}
 	}
-		printf("%d\n%d\n",max1,max2);
+		my_printf("%d\n%d\n",max1,max2);
 		return 0;
 	}
 

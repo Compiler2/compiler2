@@ -6,10 +6,10 @@ int data[10010];
 
 int main_bench(){
     int i,t,j;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     M = 0;
     for (i = 1;i <= N ; i++){
-        scanf("%d",&t);
+        my_scanf("%d",&t);
         if (t%2) data[M++] = t;
     }
     for (i = M-1 ; i >= 0; i--){
@@ -23,9 +23,9 @@ int main_bench(){
     }
 
     for (i = 0;i <= M-2; i++){
-        printf("%d,",data[i]);
+        my_printf("%d,",data[i]);
     }
-    printf("%d\n",data[i]);
+    my_printf("%d\n",data[i]);
 
     return 0;
 }

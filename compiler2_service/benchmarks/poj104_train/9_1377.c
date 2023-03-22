@@ -10,9 +10,9 @@ int main_bench()
 	ppatient=&patient;
 	int n,i,j,k,num,m=0;
 	char id[11],ID_1[100][11],age_1[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%s %d",patient.ID[i],&patient.age[i]);
+	my_scanf("%s %d",patient.ID[i],&patient.age[i]);
 	}
 	j=0;
 	for(i=0;i<n;i++){
@@ -36,11 +36,11 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m;i++){
-	printf("%s\n",ID_1[i]);
+	my_printf("%s\n",ID_1[i]);
 	}
 	for(i=0;i<n;i++){
 	if((*ppatient).age[i]<60)
-		printf("%s\n",(*ppatient).ID[i]);
+		my_printf("%s\n",(*ppatient).ID[i]);
 	}
 	return 0;
 }

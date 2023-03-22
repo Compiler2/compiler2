@@ -5,8 +5,8 @@ int main_bench()
 	char a[500],b[500];
 	int i,len,n=0,x,y;
 	double m,p;
-	scanf("%lf",&m);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&m);
+	my_scanf("%s%s",a,b);
 	x=strlen(a);
 	y=strlen(b);
 	len=strlen(a);
@@ -14,11 +14,11 @@ int main_bench()
 	{
 		if(a[i]>'Z'||a[i]<'A')
 		{
-			printf("error");
+			my_printf("error");
 			return 0;}
 	}
 	if(x!=y)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		len=strlen(a);
@@ -33,10 +33,10 @@ int main_bench()
 	p=(double)n/len;
 	if(p>m)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else if(p<=m)
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

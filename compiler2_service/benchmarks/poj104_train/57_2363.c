@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k;
 	char w[10];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s", w);
+		my_scanf("%s", w);
 		for (k=0;w[k]!='\0';k++)
 		{
 		}
@@ -15,7 +15,7 @@ int main_bench()
 			w[k-2]='\0';
 		else
 			w[k-3]='\0';
-		printf("%s\n", w);
+		my_printf("%s\n", w);
 	}
 	return 0;
 }

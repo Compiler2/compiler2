@@ -9,9 +9,9 @@ int main_bench()
 	for(i=0;i<l-1;i++)
 	{
 		*(s1+i)=*(s+i)+*(s+i+1);
-		printf("%c",*(s1+i));
+		my_printf("%c",*(s1+i));
 	}
     *(s1+l-1)=*(s+l-1)+*s;
-	printf("%c",*(s1+l-1));
+	my_printf("%c",*(s1+l-1));
 
 	}

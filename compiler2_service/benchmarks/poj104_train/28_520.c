@@ -18,9 +18,9 @@ int main_bench()
 			j++;
 	}
 
-	printf("%d",len[0]);
+	my_printf("%d",len[0]);
 	for(i=1;i<=j;i++)
-		printf(",%d",len[i]);
+		my_printf(",%d",len[i]);
 
-	printf("\n");
+	my_printf("\n");
 }

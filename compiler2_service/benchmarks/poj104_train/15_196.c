@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,i,j,a,b,q=0,m=0,number;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int s[100][100];
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&s[i][j]);}
+			my_scanf("%d",&s[i][j]);}
 		if(j==(n-1)){
-			scanf("%d\n",&s[i][j]);}
+			my_scanf("%d\n",&s[i][j]);}
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -27,7 +27,7 @@ if (q!=0)
 		}
 	
 	number=(q-2)*(m-2);
-  printf("%d",number);
+  my_printf("%d",number);
 	
 	return 0;
 

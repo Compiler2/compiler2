@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,i=0,j=0,k=0,x=0,y=0,l=0,sushu[100000],a[10],aaa,bbb;
 	for(i=0;i<100000;i++) sushu[i]=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		for(j=2;j<=i/2;j++)
@@ -37,18 +37,18 @@ int main_bench()
 	{
 		if(sushu[i]==1) break;
 	}
-	if(i==n+1) printf("no\n");
+	if(i==n+1) my_printf("no\n");
 	else
 	{
 		
 		
 		
-		printf("%d",i++);
+		my_printf("%d",i++);
 		for(;i<=n;i++)
 		{
-			if(sushu[i]==1) printf(",%d",i);
+			if(sushu[i]==1) my_printf(",%d",i);
 		}
 	
-	printf("\n");
+	my_printf("\n");
 	}
 }

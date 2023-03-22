@@ -12,8 +12,8 @@ int main_bench()
 			for(j=i;s[j]>47&&s[j]<58;j++) a[j-i]=s[j];
 			a[j-i]='\0';
 			i=j-1;
-			if(strcmp(a,"111111111111")==0)printf("1");
-			else printf("%s\n",a);
+			if(strcmp(a,"111111111111")==0)my_printf("1");
+			else my_printf("%s\n",a);
 		}
 		else
 		{

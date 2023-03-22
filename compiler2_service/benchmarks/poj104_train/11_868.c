@@ -18,7 +18,7 @@ int leap(int n)
 int main_bench()
 {
 	int year,month,day,x;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	if(leap(year)==1)
 	{
 		if(month==1)
@@ -121,5 +121,5 @@ int main_bench()
 			x=day+334;
 		}
 	}
-	printf("%d",x);
+	my_printf("%d",x);
 }

@@ -7,11 +7,11 @@ int main_bench()
  for(i=0;i<=4;i++)
  {
   for(j=0;j<=4;j++)
-   scanf("%d",&a[i][j]);
+   my_scanf("%d",&a[i][j]);
  }
- scanf("%d %d",&n,&m);
+ my_scanf("%d %d",&n,&m);
  if(zhh(n,m)==0)
-  printf("error");
+  my_printf("error");
  else  
  {	 for(i=0;i<=4;i++)
  {
@@ -20,9 +20,9 @@ int main_bench()
   for(j=0;j<=4;j++)
   {
 	  if(j<4)
-  printf ("%d ",a[i][j]);
-	  else printf("%d",a[i][j]);
-  if(j==4)printf("\n");
+  my_printf ("%d ",a[i][j]);
+	  else my_printf("%d",a[i][j]);
+  if(j==4)my_printf("\n");
   }
   if(i==n)i=m;
   else if(i==m)i=n;

@@ -2,7 +2,7 @@
 
 int main_bench()
 {
-    int n;scanf("%d\n",&n);
+    int n;my_scanf("%d\n",&n);
     char a[250];gets(a); int len=strlen(a);int i=0,j=0,k=0,v[250]={0};char b[250][5]={0};
     for(i=0;i<=len-n;i++)
     {
@@ -34,15 +34,15 @@ int main_bench()
     {
 
 
-    printf("%d\n",m);
+    my_printf("%d\n",m);
     for(i=0;i<k;i++)
     {
         if(v[i]==m)
         {
-            printf("%s\n",b[i]);
+            my_printf("%s\n",b[i]);
         }
     }
     }
-    else{printf("NO");}
+    else{my_printf("NO");}
     return 0;
 }

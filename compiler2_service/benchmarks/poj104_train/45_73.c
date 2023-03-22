@@ -4,8 +4,8 @@ int main_bench()
 {
     int i,j,l,count=0;
 	char y[50],x[50];
-	scanf ("%s",x);
-	scanf ("%s",y);
+	my_scanf ("%s",x);
+	my_scanf ("%s",y);
 	l=strlen(x);
     for (i=0,j=0;i<l;){
 		if (x[i]==y[j]){
@@ -17,7 +17,7 @@ int main_bench()
 			count++;
 		}
 	}
-    printf("%d",count);
+    my_printf("%d",count);
 	
 	return 0;
 }

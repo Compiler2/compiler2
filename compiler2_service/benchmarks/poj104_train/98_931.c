@@ -4,7 +4,7 @@ int main_bench()
 {
 	char c[2000];
 	int l,n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(c);
 	char *p1=c,*p2,*pointer=c;
 	l=strlen(c);
@@ -19,11 +19,11 @@ int main_bench()
 		{
 			if(p2-pointer>80)
 			{
-				printf("\n");
+				my_printf("\n");
 				pointer=(p1+1);
 				p1=(p1+1);
 			}
-			for(p1=p1;p1<p2;p1++) printf("%c",*p1);
+			for(p1=p1;p1<p2;p1++) my_printf("%c",*p1);
 		}
 	}
 	return 0;

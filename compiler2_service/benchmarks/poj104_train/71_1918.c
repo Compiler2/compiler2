@@ -3,17 +3,17 @@
 int main_bench(){
  int n,i,year[200],mouth1[200],mouth2[200],result[200];
  int djt(int year , int mouth);
- scanf("%d", &n);
+ my_scanf("%d", &n);
  for(i=0;i<n;i++){
-  scanf("%d %d %d", &year[i], &mouth1[i], &mouth2[i]);
+  my_scanf("%d %d %d", &year[i], &mouth1[i], &mouth2[i]);
   result[i]= djt( year[i],  mouth1[i]) - djt( year[i],  mouth2[i]);
  }
 for(i=0;i<n;i++){
  if(result[i]%7==0){
-  printf("YES\n");
+  my_printf("YES\n");
  }
  else{
-  printf("NO\n");
+  my_printf("NO\n");
  }
 }
 return 0;

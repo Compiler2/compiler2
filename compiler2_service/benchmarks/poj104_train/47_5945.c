@@ -5,15 +5,15 @@ int main_bench()
 { void sort(int *p,int m);
 	int i,n;
 	int a[101],*p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
   
   for(i=0;i<n;i++)
-	  scanf("%d",&a[i]);
+	  my_scanf("%d",&a[i]);
   p=&a[0];
   sort(p,n);
 for(i=0;i<n-1;i++)
-  printf("%d ",a[i]);
-printf("%d",a[n-1]);
+  my_printf("%d ",a[i]);
+my_printf("%d",a[n-1]);
 }
 void sort(int *p,int m)
 {

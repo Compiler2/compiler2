@@ -4,8 +4,8 @@ int main_bench()
 {
 	int f1(int n,int m);
 	int m,n;
-	scanf("%d%d",&n,&m);
-	printf("%d\n",f1(n,m));
+	my_scanf("%d%d",&n,&m);
+	my_printf("%d\n",f1(n,m));
 }
 
 int f1(int n,int m)

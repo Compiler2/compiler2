@@ -12,17 +12,17 @@ int main_bench()
 	int a[5][5],m,n,b,i,j;
 	for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-	{scanf("%d",&a[i][j]);}
+	{my_scanf("%d",&a[i][j]);}
 	}
-	scanf("%d",&m);
-    scanf("%d",&n);
+	my_scanf("%d",&m);
+    my_scanf("%d",&n);
 	if(judge(m,n)==0)
-	{printf("error");}
+	{my_printf("error");}
 	else {for(j=0;j<5;j++)
 	{b=a[m][j];a[m][j]=a[n][j];a[n][j]=b;}
 	for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-		{printf("%d",a[i][j]);
-		if(j==4)printf("\n");
-		else printf(" ");}}}
+		{my_printf("%d",a[i][j]);
+		if(j==4)my_printf("\n");
+		else my_printf(" ");}}}
 }

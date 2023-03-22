@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int days[11]={31,0,31,30,31,30,31,31,30,31,30},year=0,month1=0,month2=0,i=0,j=0,n=0,mid=0,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&month1,&month2);
+		my_scanf("%d%d%d",&year,&month1,&month2);
 		if((year%400==0)||((year%4==0)&&(year%100!=0)))
 			days[1]=29;
 		else days[1]=28;
@@ -25,17 +25,17 @@ int main_bench()
 		{
 			if(total%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
-			else printf("NO\n");
+			else my_printf("NO\n");
 		}
 		if(i==n-1)
 		{
 			if(total%7==0)
 			{
-				printf("YES");
+				my_printf("YES");
 			}
-			else printf("NO");
+			else my_printf("NO");
 		}
 	}
 	return 0;

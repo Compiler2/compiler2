@@ -3,9 +3,9 @@
 int main_bench(){
 	char str[257],sub[257],rep[257];
 	int i,r1,r2,r3,j,q,h=0,result=0;
-	scanf("%s",str);
-	scanf("%s",sub);
-	scanf("%s",rep);
+	my_scanf("%s",str);
+	my_scanf("%s",sub);
+	my_scanf("%s",rep);
 	r1=strlen(str);
 	r2=strlen(sub);
 	r3=strlen(rep);
@@ -22,13 +22,13 @@ int main_bench(){
 					str[q]=rep[h];
 					h++;
 				}
-				printf("%s",str);
+				my_printf("%s",str);
 				break;
 			}
 		}
 
 	}
 	if(result==0)
-		printf("%s",str);
+		my_printf("%s",str);
 	return 0;
 }

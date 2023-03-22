@@ -2,7 +2,7 @@
 
 int main_bench()
 {  int sy=0,sm=0,sd=0,ey=0,em=0,ed=0,sum1=0,sum2=0,i=0,m1=0,m2=0,c=0,t=0;
-    scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+    my_scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
     for(i=1;i<sm;i++)
     { switch(i)
      { case 1:
@@ -50,7 +50,7 @@ int main_bench()
 		t=(ey-1)/4-(ey-1)/100+(ey-1)/400;
 		sum2=(ey-1)*365+t+m2+ed;
 		c=sum2-sum1;
-		printf("%d",c);
+		my_printf("%d",c);
     
 				return(0);
 	}

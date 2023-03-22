@@ -3,7 +3,7 @@
 int main_bench(){
 	char str1[1000][256],str2[1000][256];
 	int n,i,j;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++) gets(str1[i]);
 	for(i=0;i<n;i++){
 		for(j=0;str1[i][j]!='\0';j++){

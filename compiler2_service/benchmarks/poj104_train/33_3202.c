@@ -5,9 +5,9 @@ int main_bench(){
   char range[10000][256];
   char vice[10000][256];
   int lenth[10000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-     scanf("%s",range[i]); 
+     my_scanf("%s",range[i]); 
      lenth[i]=strlen(range[i]);           
   }   
   for(i=0;i<n;i++){
@@ -19,8 +19,8 @@ int main_bench(){
    }                 
   } 
   for(i=0;i<n-1;i++){
-    printf("%s\n",vice[i]);                 
+    my_printf("%s\n",vice[i]);                 
   } 
-    printf("%s",vice[n-1]);
+    my_printf("%s",vice[n-1]);
     return 0;
 }

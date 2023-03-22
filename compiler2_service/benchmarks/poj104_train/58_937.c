@@ -29,7 +29,7 @@ int main_bench()
 		}
 	}
     for (i=0;i<n;i++){
-		printf("%d\n",numa[i]);
+		my_printf("%d\n",numa[i]);
 	}
 	return 0;
 }

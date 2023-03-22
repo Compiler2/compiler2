@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a[100][100]={2};
 	int i,j,n,n1=-1,n2=-1,n3,n4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -31,7 +31,7 @@ int main_bench()
 		}
 	}
 
-	printf("%d",(n3-n1-1)*(n4-n2-1));
+	my_printf("%d",(n3-n1-1)*(n4-n2-1));
 	return 0;
 }
 

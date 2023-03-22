@@ -5,9 +5,9 @@ int main_bench()
 {
 	char z[2][650];
 	double res;
-	scanf("%lf",&res);
-	scanf("%s",z[0]);
-	scanf("%s",z[1]);
+	my_scanf("%lf",&res);
+	my_scanf("%s",z[0]);
+	my_scanf("%s",z[1]);
 	int n=strlen(z[0]);
 	int n2=strlen(z[1]);
 	res=res*1.0*n;
@@ -16,13 +16,13 @@ int main_bench()
 	{
 		if(z[0][i]!='A' && z[0][i]!='T' && z[0][i]!='G' && z[0][i]!='C') 
 		{
-			printf("error");
+			my_printf("error");
 			refer=1;
 			break;
 		}
 		 else if(z[1][i]!='A' && z[1][i]!='T' && z[1][i]!='G' && z[1][i]!='C')
 		{
-			printf("error");
+			my_printf("error");
 			refer=1;
 			break;
 		}
@@ -32,14 +32,14 @@ int main_bench()
 		}
 	}
 	if(refer==0){
-		if(n!=n2) printf("error");
+		if(n!=n2) my_printf("error");
 		else if(h>=res)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

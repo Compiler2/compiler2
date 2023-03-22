@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n; 
-scanf("%d",&n);
+my_scanf("%d",&n);
 double m[40],f[40];
 int nm=0,nf=0;
 int i;
@@ -11,7 +11,7 @@ for (i=0; i<n; i++)
 {
 char sex[7]; 
 double h;
-scanf("%s%lf",sex,&h);
+my_scanf("%s%lf",sex,&h);
 if (sex[0]=='m') 
 {
 nm++;
@@ -43,11 +43,11 @@ f[i]=f[j];
 f[j]=t;
 }
 
-for (i=0; i<nm; i++) printf("%.2lf ",m[i]);
+for (i=0; i<nm; i++) my_printf("%.2lf ",m[i]);
 for (i=0; i<nf; i++) 
 {
-printf("%.2lf",f[i]);
-if (i<nf-1) printf(" "); else printf("\n");
+my_printf("%.2lf",f[i]);
+if (i<nf-1) my_printf(" "); else my_printf("\n");
 }
 
 return 0;

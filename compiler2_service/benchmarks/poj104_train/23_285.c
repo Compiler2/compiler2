@@ -15,12 +15,12 @@ int main_bench()
 			else
 				begin=i+1;
 			for (j=begin;j<=end;j++)
-				printf("%c",str[j]);
+				my_printf("%c",str[j]);
 			if (i!=0)
-				printf(" ");
+				my_printf(" ");
 			end=i-1;
 		}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 	

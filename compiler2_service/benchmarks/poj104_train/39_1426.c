@@ -15,10 +15,10 @@ int main_bench()
 	int i;
 	
 	int sum[101]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d%c%c%c%c%d",stu[i].a,&stu[i].b[0],&stu[i].c[0],&stu[i].d[0],&stu[i].d[1],&stu[i].e[0],&stu[i].e[1],&stu[i].f[0]);
+		my_scanf("%s%d%d%c%c%c%c%d",stu[i].a,&stu[i].b[0],&stu[i].c[0],&stu[i].d[0],&stu[i].d[1],&stu[i].e[0],&stu[i].e[1],&stu[i].f[0]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -39,9 +39,9 @@ int main_bench()
 			y=i;
 		}
 	}
-	printf("%s\n",stu[y].a);
+	my_printf("%s\n",stu[y].a);
 	
-	printf("%d\n%d",x,total);
+	my_printf("%d\n%d",x,total);
 	
 }
 int exin(int A,int B,char C,char D,int E)

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,p=0,k=0;
 	int a[350],num[350],index[350]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -26,8 +26,8 @@ int main_bench()
 	}
 	for (i=0;i<k-1;i++)
 	{
-		printf("%d,",num[i]);
+		my_printf("%d,",num[i]);
 	}
-	printf("%d",num[k-1]);
+	my_printf("%d",num[k-1]);
 }
 

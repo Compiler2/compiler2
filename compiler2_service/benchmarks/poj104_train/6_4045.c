@@ -7,16 +7,16 @@ int main_bench()
 {
  	int k;
  	int A[MAX][MAX];
- 	scanf("%d", &k);
+ 	my_scanf("%d", &k);
  	for(int i = 0; i < k; i++)
 	{
 	 		int m, n;
-	 		scanf("%d%d", &m, &n);
+	 		my_scanf("%d%d", &m, &n);
 	 		for(int i = 0; i < m; i++)
 	 		{
 			 		for(int j = 0; j < n; j++)
 			 		{
-					 		scanf("%d", &A[i][j]);	
+					 		my_scanf("%d", &A[i][j]);	
 			 		}			 		
 	 		}
 	 		int sum = 0;
@@ -51,7 +51,7 @@ int main_bench()
 	   	  		   sum += A[i][j]; 
 		   		  }
 	  }
-            printf("%d\n", sum);
+            my_printf("%d\n", sum);
   }
 	 	return 0;
 }

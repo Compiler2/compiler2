@@ -20,21 +20,21 @@ void daopai(char *pt)
 	if(m!=0)
 	{
 		for(;*(index[m])!='\0';index[m]++)
-		printf("%c",*(index[m]));
-	printf(" ");
+		my_printf("%c",*(index[m]));
+	my_printf(" ");
 	for(i=(m-1);i>0;i--)
 	{
 		for(;*(index[i])!=' ';index[i]++)
-			printf("%c",*(index[i]));
-		printf(" ");
+			my_printf("%c",*(index[i]));
+		my_printf(" ");
 	}
 	for(;*(index[0])!=' ';index[0]++)
-		printf("%c",*(index[0]));
+		my_printf("%c",*(index[0]));
 	}
 	else
 	{
 		for(;*(index[0])!='\0';index[0]++)
-			printf("%c",*(index[0]));
+			my_printf("%c",*(index[0]));
 	}
 }
 int main_bench()

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,a[500],t=0,p;
 	double aver=0,b[500],max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		aver+=a[i];
 	}
 	aver/=n;
@@ -36,11 +36,11 @@ int main_bench()
 		{
 			t++;
 			if(t==1)
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 			else
 			{
-				printf(",");
-				printf("%d",a[i]);
+				my_printf(",");
+				my_printf("%d",a[i]);
 			}
 		}
 		return 0;

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,j;
 	char p[1000][256],p1[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",p[i]);
+		my_scanf("%s",p[i]);
 		for(j=0;p[i][j]!='\0';j++){
 			switch(p[i][j])
 			{
@@ -23,7 +23,7 @@ int main_bench(){
 					break;
 			}
 		}
-		printf("%s\n",p1[i]);
+		my_printf("%s\n",p1[i]);
 	}
 
 

@@ -6,7 +6,7 @@ int main_bench()
   int c[500]={0},i,j,k=0,n;
   char a[500]={'\0'};
   char b[500][5]={'\0'};
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   getchar();
   gets(a);
   for(i=0;a[i+n-1]!='\0';i++)
@@ -28,14 +28,14 @@ int main_bench()
       k=c[i];
   }
   if(k==1)
-  printf("NO");
+  my_printf("NO");
   else
   {
-  printf("%d\n",k);
+  my_printf("%d\n",k);
   for(i=0;a[i+n-1]!='\0';i++)
   {
        if(c[i]==k)
-       printf("%s\n",b[i]);
+       my_printf("%s\n",b[i]);
   }}
   return 0;
 }

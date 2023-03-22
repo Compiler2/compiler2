@@ -2,7 +2,7 @@
 
 int main_bench(){
  int n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  struct xinxi{
   char id[10];
   int year;
@@ -11,7 +11,7 @@ int main_bench(){
  int i,j,k,a=0,c=0;
  
  for(i=0;i<n;i++){
-   scanf("%s %d",xinxi[i].id,&(xinxi[i].year)); 
+   my_scanf("%s %d",xinxi[i].id,&(xinxi[i].year)); 
  }
  
  for(i=0;i<n;i++){
@@ -31,11 +31,11 @@ int main_bench(){
     }    
    }
  for(j=0;j<a;j++){
-   printf("%s\n",b[j].id);
+   my_printf("%s\n",b[j].id);
  }
  for(i=0;i<n;i++){
   if((xinxi[i].year)<60){
-   printf("%s\n",xinxi[i].id);  
+   my_printf("%s\n",xinxi[i].id);  
   }
  }
   return 0;

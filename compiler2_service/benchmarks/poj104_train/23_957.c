@@ -14,6 +14,6 @@ int main_bench()
   else i++,j=0;
  }
  for(k=i;k>0;k--)
- printf("%s ",*(q+k));
- printf("%s",*q);
+ my_printf("%s ",*(q+k));
+ my_printf("%s",*q);
 }

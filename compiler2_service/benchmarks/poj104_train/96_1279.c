@@ -20,6 +20,6 @@ main_bench()
                                      for(i=0;i<l;i++)
                                      res[i]=res[i+1];
       }
-      printf("%s\n",res);
-      printf("%d",tem);
+      my_printf("%s\n",res);
+      my_printf("%d",tem);
 }

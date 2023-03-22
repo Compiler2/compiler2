@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n;
 	int t,i,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{ 
 		if(i%7==0) continue;
@@ -14,6 +14,6 @@ int main_bench()
     	else t=i;
         sum+=t*t;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

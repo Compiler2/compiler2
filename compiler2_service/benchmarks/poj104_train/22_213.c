@@ -28,13 +28,13 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 		if(c[i]!=max)min=(min>=c[i])?min:c[i];
-	if(min==0)printf("No");
+	if(min==0)my_printf("No");
 	else
 	{
 		for(i=0;i<j;i++)
 			if(c[i]==min)
 			{
-				printf("%d",c[i]);
+				my_printf("%d",c[i]);
 				break;
 			}
 	}

@@ -9,10 +9,10 @@ struct Student
 int main_bench()
 {
 	int n,i,j,s[100000],t[100000],c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<=(n-1);i++)
 	{
-	   scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
+	   my_scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
 	}
     for(i=0;i<=(n-1);i++)
 	{
@@ -37,9 +37,9 @@ int main_bench()
 	{
 		if(t[i]==s[n-1])
 		{
-			printf("%d %d",stu[i].num,t[i]);
+			my_printf("%d %d",stu[i].num,t[i]);
 			d[c]=stu[i].num;
-	        printf("\n");
+	        my_printf("\n");
 			c=c+1;
             if(c==3)break;
 		}
@@ -50,9 +50,9 @@ int main_bench()
         if(t[i]==s[n-2])
 		{   
 			if(stu[i].num==d[0]||stu[i].num==d[1]||stu[i].num==d[2])break;
-			printf("%d %d",stu[i].num,t[i]);
+			my_printf("%d %d",stu[i].num,t[i]);
 	        d[c]=stu[i].num;
-			printf("\n");
+			my_printf("\n");
 			c=c+1;
 		    if(c==3)break;
 		}
@@ -63,9 +63,9 @@ int main_bench()
         if(t[i]==s[n-3])
 		{
 			if(stu[i].num==d[0]||stu[i].num==d[1]||stu[i].num==d[2])break;
-			printf("%d %d",stu[i].num,t[i]);
+			my_printf("%d %d",stu[i].num,t[i]);
             d[c]=stu[i].num;
-	        printf("\n");
+	        my_printf("\n");
 			c=c+1;
 		    if(c==3)break;
 		}

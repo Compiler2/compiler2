@@ -27,9 +27,9 @@ main_bench()
                                   else
                                   p=1;
                                   if(p==0)
-                                  printf("1\n");
+                                  my_printf("1\n");
                                   else
-                                  printf("0\n");
+                                  my_printf("0\n");
                   }
 }
 

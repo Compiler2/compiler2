@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,n1,n2,count1[26]={0},count2[26]={0},count={0};
 	char s[50],w[50];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	for(i=0;s[i]!='\0';i++){
 		n1=s[i]-'a';
 		count1[n1]++;
@@ -20,10 +20,10 @@ int main_bench()
 			count++;
 	}
 	if(count==26){
-		printf("YES");
+		my_printf("YES");
 	}
 	else{
-		printf("NO");
+		my_printf("NO");
 	}
 			
 	return 0;

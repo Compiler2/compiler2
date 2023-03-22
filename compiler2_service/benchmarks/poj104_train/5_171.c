@@ -5,14 +5,14 @@ int main_bench(){
     int i,l1,l2;
     char dna1[500],dna2[500];
     
-    scanf("%f",&std);
-    scanf("%s %s",dna1,dna2);
+    my_scanf("%f",&std);
+    my_scanf("%s %s",dna1,dna2);
     l1=strlen(dna1);
     l2=strlen(dna2);
     sign=0;
     
     if(l1!=l2) {
-               printf("error");
+               my_printf("error");
                return 0;
                }
 
@@ -22,23 +22,23 @@ int main_bench(){
                                           case'T':break;
                                           case'G':break;
                                           case'C':break;
-                                          default:printf("error");return 0;
+                                          default:my_printf("error");return 0;
                                           }
                           switch(dna2[i]){
                                           case'A':break;
                                           case'T':break;
                                           case'G':break;
                                           case'C':break;
-                                          default:printf("error");return 0;
+                                          default:my_printf("error");return 0;
                                           }
                           if(dna1[i]==dna2[i]) sign++;
                       }
     rate=sign/l1;
     
-    if(rate>=std) printf("yes");
-    else printf("no");
+    if(rate>=std) my_printf("yes");
+    else my_printf("no");
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
                                                             
 } 

@@ -5,10 +5,10 @@ int main_bench()
     int *input(int n),*a,*b,*c,n1,n2;
     void paixu(int *a,int n),display(int *c,int n);
     int *hebing(int *a,int *b,int n1,int n2);
-    scanf("%d %d",&n1,&n2);
+    my_scanf("%d %d",&n1,&n2);
     a=input(n1);
     b=input(n2);
-    printf("\n"); 
+    my_printf("\n"); 
     paixu(a,n1);
     paixu(b,n2);
     c=hebing(a,b,n1,n2);
@@ -22,7 +22,7 @@ int *input(int n)
     p=(int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++)
     {
-                    scanf("%d",&p[i]);
+                    my_scanf("%d",&p[i]);
     }
     return (p);
 }
@@ -64,7 +64,7 @@ void display(int *c,int n)
      int i;
      for(i=0;i<n;i++)
      {
-                     if(i) printf(" ");
-                     printf("%d",c[i]);
+                     if(i) my_printf(" ");
+                     my_printf("%d",c[i]);
      }
 }

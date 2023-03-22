@@ -18,13 +18,13 @@ for(i=0;i<1000;i++){
 	 }
  }
 
-  scanf("%d",&zhishu);
+  my_scanf("%d",&zhishu);
 for(i=0;i<zhishu;i++){
-scanf("%d",&shu);
+my_scanf("%d",&shu);
 b[i]=a[shu-1];
 }
 for(i=0;i<zhishu;i++){
-printf("%d\n",b[i]);
+my_printf("%d\n",b[i]);
 }
 return 0;
 }

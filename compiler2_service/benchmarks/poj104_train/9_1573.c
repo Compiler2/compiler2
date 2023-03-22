@@ -10,9 +10,9 @@ struct student stu[100];
 struct student st[100];
 struct student temp;
 int n,i,j,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%s %d",stu[i].as,&stu[i].ag);
+my_scanf("%s %d",stu[i].as,&stu[i].ag);
 j=0;
 for(i=0;i<n;i++){
 	if(stu[i].ag>59){
@@ -31,10 +31,10 @@ for(k=1;k<j;k++){
 	}
 }
 for(i=0;i<j;i++)
-printf("\n%s",st[i].as);
+my_printf("\n%s",st[i].as);
 for(i=0;i<n;i++)
 	if(stu[i].ag!=0)
-	printf("\n%s",stu[i].as);
+	my_printf("\n%s",stu[i].as);
 return 0;
 }
 

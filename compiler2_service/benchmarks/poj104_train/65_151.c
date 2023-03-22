@@ -6,9 +6,9 @@ int main_bench()
     as=0;
     bs=0;
     tie=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         if(a==0&&b==1){
             as++;}
         else if(a==0&&b==0){
@@ -23,8 +23,8 @@ int main_bench()
             tie++;}
     }
     bs=n-as-tie;
-    if(as>bs){printf("A");}
-    else if(as-bs==0){printf("Tie");}
-    else if(as<bs){printf("B");}
+    if(as>bs){my_printf("A");}
+    else if(as-bs==0){my_printf("Tie");}
+    else if(as<bs){my_printf("B");}
     return 0;
 }

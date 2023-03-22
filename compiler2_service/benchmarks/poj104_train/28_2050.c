@@ -19,9 +19,9 @@ int main_bench(){
     }
     for(i=0;i<=n;i++){
         if(i<n){
-        printf("%d,",a[i]);
+        my_printf("%d,",a[i]);
         }else if(i==n){
-            printf("%d",a[n]);
+            my_printf("%d",a[n]);
         }
     }
     return 0;

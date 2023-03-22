@@ -29,14 +29,14 @@ main_bench()
       int i,n;
       for (i=0;i<=5;i++)
       {
-          scanf("%d",&n);
+          my_scanf("%d",&n);
           if (n<0)
           {
-              printf("-");
+              my_printf("-");
               n=-n;
           }
           n=reverse(n);
-          printf("%d\n",n);
+          my_printf("%d\n",n);
       }
       getchar();
       getchar();

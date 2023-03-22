@@ -25,12 +25,12 @@ int main_bench()
 			b[i]+=32;
      	if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if(a[i]<b[i])
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		else
@@ -40,7 +40,7 @@ int main_bench()
 	}
 	if(i>=c)
 	{
-		printf("=\n");
+		my_printf("=\n");
 	}
 	return 0;
 }

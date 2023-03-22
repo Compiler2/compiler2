@@ -6,7 +6,7 @@ int main_bench()
 int n,m,i,j,s,x[1000],y[1000];
                                             
                                   
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
                                       while(n!=0&&m!=0)
                                       {
 
@@ -49,8 +49,8 @@ for (i=0;i<=n-j-2;i++)
 
 
 
-printf("%d\n",x[0]) ;
-scanf("%d %d",&n,&m);
+my_printf("%d\n",x[0]) ;
+my_scanf("%d %d",&n,&m);
                                                                 }
 
     

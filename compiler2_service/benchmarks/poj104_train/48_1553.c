@@ -3,8 +3,8 @@
 main_bench()
 {
     int m,n,i,j,k;
-    scanf("%d",&m);
-    scanf("%d",&n);
+    my_scanf("%d",&m);
+    my_scanf("%d",&n);
     int a[11][11];
     int b[9][9];
     for(i=0;i<11;i++)
@@ -43,8 +43,8 @@ main_bench()
         {
             for(j=0;j<8;j++)
             {
-                printf("%d ",b[i][j]);
+                my_printf("%d ",b[i][j]);
             }
-            printf("%d\n",b[i][8]);
+            my_printf("%d\n",b[i][8]);
         }
 }

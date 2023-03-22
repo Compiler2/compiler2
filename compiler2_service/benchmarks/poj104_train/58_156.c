@@ -4,11 +4,11 @@ int indent(char zfc[81]);
 int main_bench()
 {   int n,s,i;
     char zfc[81];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 	gets(zfc);
     s=indent(zfc);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	}
 	return 0;
 }

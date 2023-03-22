@@ -22,7 +22,7 @@ int hw(int n)
 int main_bench()
 {
 	int n,m,i,k=0,a[100];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=n;i<=m;i++)
 		if(ss(i)&&hw(i))
 		{
@@ -30,11 +30,11 @@ int main_bench()
 			k++;
 		}
 	if(k==0)
-		printf("no");
+		my_printf("no");
 	else	
 	{
 		for(i=0;i<k-1;i++)
-			printf("%d,",a[i]);
-		printf("%d",a[k-1]);
+			my_printf("%d,",a[i]);
+		my_printf("%d",a[k-1]);
 	}
 }

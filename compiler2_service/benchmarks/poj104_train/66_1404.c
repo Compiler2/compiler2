@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int year,month,day;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	int j;
 	int zong=0;
 	int xingqi;
@@ -26,18 +26,18 @@ int main_bench()
     zong+=(year-1)+(year-1)/4-(year-1)/100+(year-1)/400;
 	xingqi=zong%7;
 	if(xingqi==1)
-		printf("Mon.");
+		my_printf("Mon.");
     if(xingqi==2)
-		printf("Tue.");
+		my_printf("Tue.");
     if(xingqi==3)
-		printf("Wed.");
+		my_printf("Wed.");
     if(xingqi==4)
-		printf("Thu.");
+		my_printf("Thu.");
     if(xingqi==5)
-		printf("Fri.");
+		my_printf("Fri.");
     if(xingqi==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	if(xingqi==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	return 0;
 }

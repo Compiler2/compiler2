@@ -6,9 +6,9 @@ int main_bench()
 	int a[100];
 	double youerbili,chengrenbili,zhongnianbili,laonianbili;
 	int youer=0,chengren=0,zhongnian=0,laonian=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	for(i=0;i<n;i++)
 	{
 		if(a[i]<=18)
@@ -24,9 +24,9 @@ int main_bench()
 	chengrenbili=(double)chengren/(double)n*100;
 	zhongnianbili=(double)zhongnian/(double)n*100;
 	laonianbili=(double)laonian/(double)n*100;
-	printf("1-18: %.2lf%%\n",youerbili);
-	printf("19-35: %.2lf%%\n",chengrenbili);
-	printf("36-60: %.2lf%%\n",zhongnianbili);
-	printf("60??: %.2lf%%\n",laonianbili);
+	my_printf("1-18: %.2lf%%\n",youerbili);
+	my_printf("19-35: %.2lf%%\n",chengrenbili);
+	my_printf("36-60: %.2lf%%\n",zhongnianbili);
+	my_printf("60??: %.2lf%%\n",laonianbili);
 	return 0;
 }

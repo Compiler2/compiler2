@@ -8,12 +8,12 @@
 int main_bench()
 {
 	int a[100][100],n,i,j,m=0,k=0,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;++i)
 	{
 		for(j=0;j<=n-1;++j)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<=n-1;++i)
@@ -41,6 +41,6 @@ int main_bench()
 		}
 	}
 	s=m-k;
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

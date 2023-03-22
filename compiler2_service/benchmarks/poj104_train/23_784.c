@@ -20,8 +20,8 @@ i=i+j-1;
 for(i=count;i>=0;i--)
 {
 if(i!=0)
-printf("%s ",b[i]);
+my_printf("%s ",b[i]);
 else
-printf("%s",b[i]);
+my_printf("%s",b[i]);
 }
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	
 	int n,s=0,a,i,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
 	else 
 	{
@@ -27,9 +27,9 @@ int main_bench()
 		{
 			if(j==0)
 			{break;}
-			printf("0");
+			my_printf("0");
 		}
-		printf("%d",s);
+		my_printf("%d",s);
 	}
 	return 0;
 }

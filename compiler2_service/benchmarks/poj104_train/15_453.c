@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,s,a1=0,b1=0,a2=0,b2=0,c[1001][1001];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&c[i][j]);
+			my_scanf("%d",&c[i][j]);
 
 	for(i=0;i<n;i++)
 	{
@@ -38,6 +38,6 @@ int main_bench()
 	}
 
 	s=(a2-a1-1)*(b2-b1-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

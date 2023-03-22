@@ -19,11 +19,11 @@ int main_bench()
 			}
 		}
 		for(i=0;i<=m;i++)
-			printf("%c",*(p+i));
-		printf("%c%c%c",*(p+l-3),*(p+l-2),*(p+l-1));
+			my_printf("%c",*(p+i));
+		my_printf("%c%c%c",*(p+l-3),*(p+l-2),*(p+l-1));
 		for(i=m+1;*(p+i)!=' ';i++)
-			printf("%c",*(p+i));
-		printf("\n");
+			my_printf("%c",*(p+i));
+		my_printf("\n");
 	}
 return 0;
 }

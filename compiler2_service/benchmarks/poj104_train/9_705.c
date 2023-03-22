@@ -8,10 +8,10 @@ int main_bench()
 		int age;
 	}pat[100];
 	int n,i,m,b[100],l=0,p,q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%s%d",pat[i].a,&pat[i].age);
+		my_scanf("%s%d",pat[i].a,&pat[i].age);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -44,9 +44,9 @@ int main_bench()
 	for(i=1;i<=l;i++)
 	{
 		for(m=0;m<n;m++)
-			if(pat[m].age==b[i])printf("%s\n",pat[m].a);
+			if(pat[m].age==b[i])my_printf("%s\n",pat[m].a);
 	}
 	for(i=0;i<n;i++)
-		if(pat[i].age<60)printf("%s\n",pat[i].a);
+		if(pat[i].age<60)my_printf("%s\n",pat[i].a);
 	return 0;
 }

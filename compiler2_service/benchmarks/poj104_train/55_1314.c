@@ -4,7 +4,7 @@ int main_bench()
 {
     char str[100000];
     long int k,t,n,m,a,i,j;
-    scanf("%d%s%d",&k,str,&t);
+    my_scanf("%d%s%d",&k,str,&t);
     n=strlen(str);
     for(i=0;i<n;i++)
     {
@@ -25,7 +25,7 @@ int main_bench()
         m=m+(str[i]-48)*a;
     }
     if(m==0)
-    printf("0");
+    my_printf("0");
     else
     {i=0;
     while(m>0)
@@ -38,6 +38,6 @@ int main_bench()
         m=(m-j)/t;
     }
     for(j=i-1;j>=0;j--)
-    printf("%c",str[j]);}
+    my_printf("%c",str[j]);}
     return 0;
 }

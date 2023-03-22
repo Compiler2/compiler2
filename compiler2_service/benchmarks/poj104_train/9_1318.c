@@ -10,9 +10,9 @@ int main_bench()
 {
 	int n,i,j=0,k=0,x=0,t;
 	char e[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",per[i].str,&per[i].age);
+		my_scanf("%s %d",per[i].str,&per[i].age);
 		if(per[i].age>=60){
 			strcpy(per1[j].str,per[i].str);
 			per1[j].age=per[i].age;
@@ -37,10 +37,10 @@ int main_bench()
 		}
 	}
 	for(i=0;i<j;i++){
-		printf("%s\n",per1[i].str);
+		my_printf("%s\n",per1[i].str);
 	}
 	for(i=0;i<k;i++){
-		printf("%s\n",per2[i].str);
+		my_printf("%s\n",per2[i].str);
 	}
 
 	return 0;

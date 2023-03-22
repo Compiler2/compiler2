@@ -13,15 +13,15 @@ char peidui(char x){
 int main_bench(){
    int n,i,j,len;
    char jianji[256];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
    len=0;
-   scanf("%s",jianji);
+   my_scanf("%s",jianji);
    len=strlen(jianji);
    for(j=0;j<len;j++){
-   printf("%c",peidui(jianji[j]));
+   my_printf("%c",peidui(jianji[j]));
                }
-   printf("\n");
+   my_printf("\n");
    }
    
    return 0;

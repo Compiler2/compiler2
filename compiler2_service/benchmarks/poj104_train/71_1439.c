@@ -4,15 +4,15 @@ int DiJiTian(int year,int month);
 int main_bench()
 {
 	int  n,year,m1,m2,c,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&m1,&m2);
+		my_scanf("%d%d%d",&year,&m1,&m2);
 		c=abs(DiJiTian(year,m1)-DiJiTian(year,m2));
 		if(c%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 		return 0;

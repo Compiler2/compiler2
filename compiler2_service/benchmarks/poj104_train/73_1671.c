@@ -6,7 +6,7 @@ int i,j,k,y,f,x;
 k=0;
 for(i=0;i<5;i++){
 for(j=0;j<5;j++){
-scanf("%d",&(a[i][j]));
+my_scanf("%d",&(a[i][j]));
 }
 }
 for(i=0;i<5;i++){
@@ -24,12 +24,12 @@ k=1;
 }
 }
 if(k==0){
-printf("%d %d %d",i+1,x+1,a[i][x]);
+my_printf("%d %d %d",i+1,x+1,a[i][x]);
 break;
 }
 k=0;
 if(i==4){
-printf("not found");
+my_printf("not found");
 }
 }
 return 0;

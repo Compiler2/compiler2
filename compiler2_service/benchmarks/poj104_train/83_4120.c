@@ -3,12 +3,12 @@
 int main_bench()
 {int n,i,j,k,l,max=-1,min=999,p=0; double nn=0,s=0,xx;
 int a[10];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for (i=1;i<=n;i++) 
-  {scanf("%d",&a[i]); s+=a[i];} 
+  {my_scanf("%d",&a[i]); s+=a[i];} 
 	for (i=1;i<=n;i++)   
 	{
-		  scanf("%d",&k);
+		  my_scanf("%d",&k);
 		  if (90<=k) xx=4.0;
 		   else if (85<=k) xx=3.7;
 		      else if (82<=k) xx=3.3;
@@ -22,6 +22,6 @@ int a[10];
    nn+=xx*a[i];
 	}
 
-  printf("%.2lf",nn/s);
+  my_printf("%.2lf",nn/s);
   return 0;
 }

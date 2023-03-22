@@ -8,13 +8,13 @@ int main_bench(){
 	int i;
 	int j=0;
 	int m;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++){
 		t[i]=0;
 	}
 	
 	for (i=0;i<n;i++){
-		scanf ("%d %d",&s[i],&q[i]);
+		my_scanf ("%d %d",&s[i],&q[i]);
 		if (s[i]>=90&&s[i]<=140&&q[i]<=90&&q[i]>=60){
 			t[j]++;
 			
@@ -43,7 +43,7 @@ int main_bench(){
 
 	
 
-    printf ("%d",t[n-1]);
+    my_printf ("%d",t[n-1]);
 
 
 

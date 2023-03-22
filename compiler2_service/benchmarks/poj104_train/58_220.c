@@ -28,7 +28,7 @@ int main_bench()
    n=atoi(s);
 	for(i=0;i<n;i++){
 	    gets(c);
-	    printf("%d\n",f(c));
+	    my_printf("%d\n",f(c));
 	}
 	
 	return 0;

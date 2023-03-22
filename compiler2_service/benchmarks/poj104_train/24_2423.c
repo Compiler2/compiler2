@@ -6,7 +6,7 @@ char b[30],m1[30],m2[30];
 int max=0,min=40;
 for (int i=0;;i++)
 {
-scanf("%c",&b[i]);
+my_scanf("%c",&b[i]);
 if (b[i]=='\n'||b[i]==0) 
     {
     b[i]=0;
@@ -23,7 +23,7 @@ if (b[i]==' '||b[i]==',')
     i=-1;
     }
 }
-printf("%s",m1);
-printf("\n");
-printf("%s",m2);
+my_printf("%s",m1);
+my_printf("\n");
+my_printf("%s",m2);
 }

@@ -5,9 +5,9 @@ int main_bench()
 	char sz1[256];
 	char sz2[256];
 	char sz3[256];
-	scanf("%s",sz1);
-	scanf("%s",sz2);
-	scanf("%s",sz3);
+	my_scanf("%s",sz1);
+	my_scanf("%s",sz2);
+	my_scanf("%s",sz3);
 	int len1,len2;
 	len1=strlen(sz1);
 	len2=strlen(sz2);
@@ -37,6 +37,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%s",sz1);
+	my_printf("%s",sz1);
 	return 0;
 }

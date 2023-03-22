@@ -24,6 +24,6 @@ main_bench()
 		else 
 			a='=';
 	}
-    printf("%c",a);
+    my_printf("%c",a);
 	return 0;
 }

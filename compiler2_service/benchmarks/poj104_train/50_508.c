@@ -3,7 +3,7 @@
 int main_bench()
 {
 int w,a[12],i,b[12];
-scanf("%d",&w);
+my_scanf("%d",&w);
 if(w<3) w=w+5;
 else w=w-2;
     a[0]=7;
@@ -22,7 +22,7 @@ else b[i]=0;
 }
 for(i=0;i<=11;i++){
 if(b[i]!=0)
-printf("%d\n",b[i]);
+my_printf("%d\n",b[i]);
 }
 return 0;
 }

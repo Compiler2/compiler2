@@ -5,7 +5,7 @@ int main_bench()
 	int from,to,i,j;
 	long sum=0;
 	char in[255],out[255]="0";
-	scanf ("%d%s%d",&from,in,&to);
+	my_scanf ("%d%s%d",&from,in,&to);
 	char s10[100],s[]="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	for (i='0';i<='9';i++)
 		s10[i]=i-'0';
@@ -22,6 +22,6 @@ int main_bench()
 		if (sum==0) break;
 	}
 	for (j=i;j>=0;j--)
-		printf ("%c",out[j]);
+		my_printf ("%c",out[j]);
 	return 0;
 }

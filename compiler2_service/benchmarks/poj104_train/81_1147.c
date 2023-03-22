@@ -12,10 +12,10 @@ int main_bench(){
 	int sz[5][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	panduan=exchange(n,m);
 	if(panduan){
 		for(k=0;k<5;k++){
@@ -26,14 +26,14 @@ int main_bench(){
 		for(i=0;i<5;i++){
 		    for(j=0;j<5;j++){
 				if(j<4){
-			    printf("%d ",sz[i][j]);
+			    my_printf("%d ",sz[i][j]);
 				}else if(j=4){
-					printf("%d\n",sz[i][j]);
+					my_printf("%d\n",sz[i][j]);
 				}
 		    }
 	    }
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

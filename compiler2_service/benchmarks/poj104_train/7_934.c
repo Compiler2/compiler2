@@ -27,14 +27,14 @@ int main_bench()
                                                     }
                                if(j == strlen(str2))
                                {
-                                   printf("%s",str3);
+                                   my_printf("%s",str3);
                                    break;
                                    }
                                else
-                                   printf("%c", str1[i]);
+                                   my_printf("%c", str1[i]);
     }
     if(i!=strlen(str1))
                        for(i=k;i<strlen(str1);i++)
-                                                  printf("%c", str1[i]);    
+                                                  my_printf("%c", str1[i]);    
     return 0;
 }

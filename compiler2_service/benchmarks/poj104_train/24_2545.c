@@ -6,10 +6,10 @@ int main_bench()
 	int n,m,i,j,max=0,min=100;
 	char str[201][255];
 	int a[201];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 		getchar();
 		a[i]=strlen(str[i]);
         if(a[i]>max)  max=a[i];
@@ -20,7 +20,7 @@ int main_bench()
 	{
 		if(a[i]==max)  {
 		 puts(str[i]);
-	  printf("\n");
+	  my_printf("\n");
 	  break;
 		}
 	}
@@ -29,7 +29,7 @@ int main_bench()
 	 if(a[i]==min)  
 	 {
 		puts(str[i]);
-	 printf("\n");
+	 my_printf("\n");
 	 break;
 	 }
 	}

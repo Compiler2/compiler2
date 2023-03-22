@@ -6,8 +6,8 @@ char pure(int n,int a[],int topnum,int topcheck);
 main_bench()
 {
      int n,i,j;
-     scanf("%d",&n);
-     if (n<=4) printf("empty");
+     my_scanf("%d",&n);
+     if (n<=4) my_printf("empty");
      else
      {
          int a[1300];
@@ -22,7 +22,7 @@ main_bench()
                 topnum++;
                 a[topnum]=i;
                 if (a[topnum]==a[topnum-1]+2)
-                   printf("%d %d\n",a[topnum-1],a[topnum]);
+                   my_printf("%d %d\n",a[topnum-1],a[topnum]);
              }
          }
      }

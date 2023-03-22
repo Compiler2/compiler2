@@ -31,17 +31,17 @@ int main_bench()
 	sum=j;
 	if(sum!=0)
 	for(k=1;k<length[sum];k++)
-		printf("%c",ch[sum][k]);
+		my_printf("%c",ch[sum][k]);
 
 	for(j=sum-1;j>=1;j--)
 	{
         for(k=0;k<length[j];k++)
-			printf("%c",ch[j][k]);
+			my_printf("%c",ch[j][k]);
 	}
 	if(sum!=0)
-	printf(" ");
+	my_printf(" ");
 	for(k=0;k<length[0];k++)
-		printf("%c",ch[0][k]);
+		my_printf("%c",ch[0][k]);
 
 
 }

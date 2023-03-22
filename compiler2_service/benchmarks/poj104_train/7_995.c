@@ -5,9 +5,9 @@ main_bench()
       char a[1000],b[1000],c[1000];
       int d[1000];
       int i,j=0,k,m,n;
-      scanf("%s",a);
-      scanf("%s",b);
-      scanf("%s",c);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
+      my_scanf("%s",c);
       for(i=0;;i++)
       {
                    if(a[i]=='\0') break;
@@ -20,7 +20,7 @@ main_bench()
                                      }
                    }
       }
-      if(j==0) printf("%s",a);
+      if(j==0) my_printf("%s",a);
       else 
     {m=j;
       for(i=0;;i++)
@@ -41,7 +41,7 @@ main_bench()
       {
                       a[i+d[j]]=c[i];
       }
-      printf("%s",a);
+      my_printf("%s",a);
     }
 }
                       

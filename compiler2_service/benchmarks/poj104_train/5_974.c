@@ -5,14 +5,14 @@ int main_bench()
 	int i,m,n,x=0;
 	double p,y;
 	char a[500],b[500];
-	scanf("%lf\n",&p);
+	my_scanf("%lf\n",&p);
 	gets(a);
 	gets(b);
 	m=strlen(a);
 	n=strlen(b);
 	if(m!=n)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	else
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C'||b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C')
 			{
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 			else
@@ -35,11 +35,11 @@ int main_bench()
 		y=(double)x/m;
 		if(y>p)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 		return 0;
 	}

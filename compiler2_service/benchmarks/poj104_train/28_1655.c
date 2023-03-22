@@ -25,11 +25,11 @@ int main_bench()
 		{
 			if(i==n-1)
 			{
-				printf("%d",b[i]);
+				my_printf("%d",b[i]);
 			}
 			else
 			{
-				printf("%d,",b[i]);
+				my_printf("%d,",b[i]);
 			}
 		}
 		return 0;

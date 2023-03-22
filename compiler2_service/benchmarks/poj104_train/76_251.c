@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n,i,k,q,l;
-scanf("%d",&n);
+my_scanf("%d",&n);
 struct qujian{
 int x,y;
 }asd[50001];
 for(i=0;i<n;i++)
-{scanf("%d %d",&(asd[i].x),&(asd[i].y));
+{my_scanf("%d %d",&(asd[i].x),&(asd[i].y));
 }
 for(i=0;i<n;i++)
 {for(l=0;l<n-1;l++)
@@ -36,10 +36,10 @@ if((i<=asd[l+1].x)&&(i>=asd[l].y))
 }
 }
 if(q==1)
-{printf("%d %d",asd[0].x,asd[n-1].y);}
+{my_printf("%d %d",asd[0].x,asd[n-1].y);}
 
 else if(q==0)
-{printf("no");}
+{my_printf("no");}
 
 return 0;
 }

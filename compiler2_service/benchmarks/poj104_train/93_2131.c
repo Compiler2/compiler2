@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a,k=0,i=0,j=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a%3==0)
 	{
 		k=1;
@@ -20,20 +20,20 @@ int main_bench()
 	
 	}
 	if(k==0&&i==0&&j==0)
-    printf("n");
+    my_printf("n");
 	if(k==1)
-	printf("3");
+	my_printf("3");
 	if(i==1)
 	{
 		if(k==1)
-		printf(" 5");
-		else printf("5");
+		my_printf(" 5");
+		else my_printf("5");
 	}
 	if(j==1)
 	{
 		if(i==1||k==1)
-		printf(" 7");
-		else printf("7");
+		my_printf(" 7");
+		else my_printf("7");
 	}
 
 

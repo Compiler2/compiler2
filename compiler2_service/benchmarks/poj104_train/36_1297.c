@@ -6,7 +6,7 @@ int main_bench()
 	char s1[100],s2[100];
 	int i,j,c,d;
 	char t;
-	scanf ("%s %s",s1,s2);
+	my_scanf ("%s %s",s1,s2);
     c=strlen(s1);
 	d=strlen(s2);
 	for (i=0;i<c;i++)
@@ -27,8 +27,8 @@ int main_bench()
 	}
 	}
 	}
-    if (strcmp(s1,s2)==0) printf("YES");
-	else printf("NO");
+    if (strcmp(s1,s2)==0) my_printf("YES");
+	else my_printf("NO");
           
 
 

@@ -18,10 +18,10 @@ int main_bench()
 	int i,j;
 	int count=0;
 	double max=0,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].final,&a[i].classmate,&a[i].leader,&a[i].westerner,&a[i].paper);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].final,&a[i].classmate,&a[i].leader,&a[i].westerner,&a[i].paper);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -46,8 +46,8 @@ int main_bench()
 			count=i;
 		}
 	}
-	printf("%s\n",a[count].name);
-	printf("%.0lf\n",a[count].sum);
-	printf("%.lf\n",total);
+	my_printf("%s\n",a[count].name);
+	my_printf("%.0lf\n",a[count].sum);
+	my_printf("%.lf\n",total);
 	return 0;
 }

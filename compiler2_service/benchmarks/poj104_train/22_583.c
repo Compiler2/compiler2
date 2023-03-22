@@ -6,8 +6,8 @@ int main_bench()
 	char c;
 	while(1)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c);
 		m++;
 		if(c=='\n') break;
 		i++;
@@ -21,10 +21,10 @@ int main_bench()
 		}
 		else if(z<a[i]&&a[i]!=k) z=a[i]; 
 	}
-	if(m==1) printf("No");
+	if(m==1) my_printf("No");
 	else
 	{
-		if(z!=0) printf("%d",z);
-		else printf("No");
+		if(z!=0) my_printf("%d",z);
+		else my_printf("No");
 	}
 }

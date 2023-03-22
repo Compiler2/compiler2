@@ -13,8 +13,8 @@ int main_bench()
 		else if(m!=0){a[t]=m;t=t+1;m=0;} 
 		                             
 		for(j=0;j<t;j=j+1)
-			 printf("%d,",a[j]);
+			 my_printf("%d,",a[j]);
 		
-			 printf("%d",m);
+			 my_printf("%d",m);
 
 }

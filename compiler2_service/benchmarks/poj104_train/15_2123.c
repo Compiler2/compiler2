@@ -5,12 +5,12 @@ int main_bench()
 {
   int n,m,k=0,i,j;
   int *a;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   a=(int*)(malloc(n*sizeof(int)));
   for(i=0;i<n;i++) 
   {
    for(j=0;j<n;j++)
-   scanf("%d",&a[j]);
+   my_scanf("%d",&a[j]);
    for(j=0;j<n;j++)
    {
       if(a[j]==0)
@@ -22,6 +22,6 @@ int main_bench()
       break;}
       }
    }
-   printf("%d",k);	
+   my_printf("%d",k);	
   return 0;
 }

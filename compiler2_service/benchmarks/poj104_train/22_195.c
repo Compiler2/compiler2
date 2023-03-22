@@ -9,7 +9,7 @@ main_bench()
 	n=1;
 	while(1)
 	{
-		scanf("%c",&ch);
+		my_scanf("%c",&ch);
 		if (ch==',') {n++; continue;}
 		if (ch=='\n') break;
 		rec[n]=rec[n]*10+ch-'0';
@@ -18,6 +18,6 @@ main_bench()
 	for(i=1;i<=n;i++) if (rec[i]>max) max=rec[i];
 	res=0;
 	for(i=1;i<=n;i++) if ((rec[i]>res)&&(rec[i]<max)) res=rec[i];
-	if ((res==0)||(res==max)) printf("No");
-	else printf("%d\n",res);
+	if ((res==0)||(res==max)) my_printf("No");
+	else my_printf("%d\n",res);
 }

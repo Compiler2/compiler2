@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,a,b,av,bv;
 	av=0;
 	bv=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-	scanf("%d%d", &a, &b);
+	my_scanf("%d%d", &a, &b);
 	switch (a){
 	case 0:
 		if(b==1){
@@ -30,10 +30,10 @@ int main_bench()
 	}
 	}
 	if(av>bv){
-	printf("A");}
+	my_printf("A");}
 	if(av==bv){
-	printf("Tie");}
+	my_printf("Tie");}
 	if(av<bv){
-	printf("B");}
+	my_printf("B");}
 	return 0;
 }

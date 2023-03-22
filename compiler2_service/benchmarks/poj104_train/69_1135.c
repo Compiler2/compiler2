@@ -5,7 +5,7 @@ int main_bench()
 	int i,la,lb,max;
 	char a[260],b[260];
 	int	a2[260]={0},b2[260]={0},c[260]={0};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
 	for(i=0;i<la;i++)
@@ -36,7 +36,7 @@ int main_bench()
 
 	for(i=max-1;i>=0;i--)
 	{
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 
 	}
 }

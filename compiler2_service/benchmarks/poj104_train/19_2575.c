@@ -21,11 +21,11 @@ int main_bench()
 			}
 			if(k==0) 
 			{
-				printf(" ");
-				for(j=0;j<z;j++) printf("%c",b[j]);
+				my_printf(" ");
+				for(j=0;j<z;j++) my_printf("%c",b[j]);
 			    i=i+y;
 			}
-			if(k==1) printf("%c",s[i]);
+			if(k==1) my_printf("%c",s[i]);
 		}
 		else if(i==0)
 		{
@@ -36,10 +36,10 @@ int main_bench()
 			}
 			if(k==0) 
 			{
-				for(j=0;j<z;j++) printf("%c",b[j]);
+				for(j=0;j<z;j++) my_printf("%c",b[j]);
 			    i=y-1;
 			}
-			if(k==1) printf("%c",s[0]);
+			if(k==1) my_printf("%c",s[0]);
 		}
 	}
 	return 0;

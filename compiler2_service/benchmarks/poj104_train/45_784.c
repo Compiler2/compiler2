@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[100],w[100];
     int ns,nw,i=0,j=0,sum=0,z;
-    scanf("%s%s",&s,&w);
+    my_scanf("%s%s",&s,&w);
     ns=strlen(s);
     nw=strlen(w);
     while(i<ns&&j<nw)
@@ -20,7 +20,7 @@ int main_bench()
     if(sum==ns)
     {
     z=j-sum;
-    printf("%d\n",z);}
+    my_printf("%d\n",z);}
 }
 
             

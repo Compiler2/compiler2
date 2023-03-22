@@ -8,14 +8,14 @@ int main_bench()
     {
         for(int col=0;col<5;col++)
         {
-            scanf("%d",&shuzu[row][col]);
+            my_scanf("%d",&shuzu[row][col]);
         }
     }
     int n,m;
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     if(m>4||n>4)
     {
-        printf("error");
+        my_printf("error");
         return 0;
     }
     else if(m<5&&n<5)
@@ -32,10 +32,10 @@ int main_bench()
     {
         for(int col=0;col<4;col++)
         {
-            printf("%d ",shuzu[row][col]);
+            my_printf("%d ",shuzu[row][col]);
         }
-        printf("%d",shuzu[row][4]);
-        printf("\n");
+        my_printf("%d",shuzu[row][4]);
+        my_printf("\n");
     }
     return 0;
 }

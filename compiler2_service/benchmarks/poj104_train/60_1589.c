@@ -5,7 +5,7 @@ int main_bench(){
    int n,i,issushu1,issushu2;
    int a=0;
    int sz[10000];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
 	   sz[i]=i+1;
    }
@@ -13,12 +13,12 @@ int main_bench(){
 	   issushu1=issushu(sz[i]);
 	   issushu2=issushu(sz[i+2]);
 	   if(issushu1&&issushu2){
-		   printf("%d %d\n",sz[i],sz[i+2]);
+		   my_printf("%d %d\n",sz[i],sz[i+2]);
 		   a++;
 	   }
    }
    if(a==0){
-	   printf("empty");
+	   my_printf("empty");
    }
    return 0;
 }

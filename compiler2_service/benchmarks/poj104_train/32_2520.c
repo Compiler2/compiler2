@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,s,j,k,t,sum=0,c[200]={0},d[200]={0},e[200]={0};
 	char a[200]={0},b[200]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",a);
-        scanf("%s",b);
+		my_scanf("%s",a);
+        my_scanf("%s",b);
 		s=strlen(a);
 		t=strlen(b);
 		int e[200]={0},c[200]={0},d[200]={0};
@@ -25,11 +25,11 @@ int main_bench()
 		}
 		for(j=k;j>=0;j--)
 		{
-			printf("%d",e[j]);
+			my_printf("%d",e[j]);
 		}
 		for(j=0;j<=s-1;j++){if(e[j]==0) sum++;}
-		if(sum==s) printf("0");
-		printf("\n");	
+		if(sum==s) my_printf("0");
+		my_printf("\n");	
 	}
     return 0;
 }

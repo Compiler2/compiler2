@@ -3,15 +3,15 @@
 int main_bench()
 {
   int n,m,s;
-  scanf("%d %d\n",&n,&m);
+  my_scanf("%d %d\n",&n,&m);
   int a[n];
   int i,j,k;
-  scanf("%d",&a[0]);
+  my_scanf("%d",&a[0]);
   for(i=1;i<n;i++)
   {
-   scanf(" %d",&a[i]);
+   my_scanf(" %d",&a[i]);
   }
-  scanf("\n");
+  my_scanf("\n");
   for(j=1;j<=m;j++)
   {
 	s=a[n-1];
@@ -21,10 +21,10 @@ int main_bench()
 	}
 	a[0]=s;
   }
-  printf("%d",a[0]);
+  my_printf("%d",a[0]);
   for(i=1;i<n;i++)
   {
-	  printf(" %d",a[i]);
+	  my_printf(" %d",a[i]);
   }
 return 0;
 }

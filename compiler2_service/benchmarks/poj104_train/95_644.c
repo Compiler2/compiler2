@@ -19,11 +19,11 @@ int main_bench()
 			
 				for(i=0;i<len;i++)
 				{
-					if(s1[i]<s2[i]){printf("<");break;}
-					if(s1[i]>s2[i]){printf(">");break;}			
+					if(s1[i]<s2[i]){my_printf("<");break;}
+					if(s1[i]>s2[i]){my_printf(">");break;}			
 				}	
 				
-				if(i==len)printf("=");
+				if(i==len)my_printf("=");
 			
 			
 			return 0;

@@ -4,10 +4,10 @@ int main_bench()
 { 
 	int n,brs[103],i;
 	double a=0,b=0,c=0,d=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&brs[i]);
+		my_scanf("%d",&brs[i]);
 		if(brs[i]<19)
 		{
 			a=a+1;
@@ -29,14 +29,14 @@ int main_bench()
 	b=(100.0*b)/n;
 	c=(100.0*c)/n;
 	d=(100.0*d)/n;
-    printf("1-18: %.2lf",a);
-	printf("%%\n");
-	printf("19-35: %.2lf",b);
-	printf("%%\n");
-	printf("36-60: %.2lf",c);
-	printf("%%\n");
-	printf("60??: %.2lf",d);
-	printf("%%\n");
+    my_printf("1-18: %.2lf",a);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf",b);
+	my_printf("%%\n");
+	my_printf("36-60: %.2lf",c);
+	my_printf("%%\n");
+	my_printf("60??: %.2lf",d);
+	my_printf("%%\n");
 	return 0;
 }
 

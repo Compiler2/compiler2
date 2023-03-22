@@ -3,20 +3,20 @@
 main_bench()
 {
       int a;
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       while (a>1) {
             if (a%2==0) {
-            printf("%d",a);
+            my_printf("%d",a);
             a=a/2;
-            printf("/2=%d\n",a);
+            my_printf("/2=%d\n",a);
             }
             else {
-            printf("%d",a);
+            my_printf("%d",a);
             a=a*3+1;
-            printf("*3+1=%d\n",a);
+            my_printf("*3+1=%d\n",a);
             }
             }
-      printf("End\n");
+      my_printf("End\n");
             getchar();
             getchar();
             getchar();

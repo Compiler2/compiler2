@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a=0,m;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	while (n>0)
 	{
 		if (n%7==0)
@@ -17,6 +17,6 @@ int main_bench()
 		else 
 		{a=n*n+a;n--;}
 	}
-	printf("%d\n",a);
+	my_printf("%d\n",a);
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,n,a[100],m,cm,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	m=0;
 
@@ -24,6 +24,6 @@ int main_bench()
 		if(a[i]>a[cm])
 			cm=i;
 	}
-	printf("%d\n%d\n",max,a[cm]);
+	my_printf("%d\n%d\n",max,a[cm]);
 }
 

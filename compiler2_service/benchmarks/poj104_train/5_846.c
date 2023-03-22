@@ -9,12 +9,12 @@ int main_bench(){
     gets(a);
     gets(b);
     if(strlen(a)!=strlen(b)){
-        printf("error");
+        my_printf("error");
         return 0;
     }
     for(i=0;a[i]!='\0';i++){
         if((a[i]!='A'&&a[i]!='G'&&a[i]!='C'&&a[i]!='T')||(b[i]!='A'&&b[i]!='G'&&b[i]!='C'&&b[i]!='T')){
-            printf("error");
+            my_printf("error");
             return 0;
         }
     }
@@ -26,9 +26,9 @@ int main_bench(){
     }
     R=(1.0*c)/strlen(a);
     if(R>=r){
-        printf("yes");
+        my_printf("yes");
     }else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int x,y;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	do{
 		y=x%10;
-		printf("%d",y);
+		my_printf("%d",y);
 		x/=10;
 	}while(x);
 	return 0;

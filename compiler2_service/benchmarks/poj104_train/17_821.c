@@ -57,7 +57,7 @@ int main_bench()
 			s[i]=' ';
 	}
 
-	printf("%s\n",S);
+	my_printf("%s\n",S);
 	puts(s);
 	}while(1);
 

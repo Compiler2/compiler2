@@ -3,9 +3,9 @@
 int main_bench(){
     
     int n,i,j,e,a[50000],b[50000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-            scanf("%d %d",&a[i],&b[i]);
+            my_scanf("%d %d",&a[i],&b[i]);
     }
     for(j=1;j<=n;j++){
             for(i=0;i<n-j;i++){
@@ -32,13 +32,13 @@ int main_bench(){
     for(i = 1; i < n; i++)
     {
         if(a[i] > tmp) 
-            {printf("no\n");return 0;}
+            {my_printf("no\n");return 0;}
         if(tmp < b[i])
             tmp = b[i]; 
     }
     
     
-    printf("%d %d",a[0],tmp);
+    my_printf("%d %d",a[0],tmp);
     
     return 0;
 }

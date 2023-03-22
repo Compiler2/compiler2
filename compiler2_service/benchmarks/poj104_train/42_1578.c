@@ -2,11 +2,11 @@
 
 int main_bench(){
     int x,n,i,j,k,sz[100000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-            scanf("%d",&sz[i]);
+            my_scanf("%d",&sz[i]);
     }
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     k=0;
     for(i=0;i<n;i++){
            if(sz[i]==x){
@@ -19,9 +19,9 @@ int main_bench(){
            }
     } 
     for(i=0;i<n-k;i++){
-           if(i==n-k-1) printf("%d",sz[i]);
-           else printf("%d ",sz[i]);
+           if(i==n-k-1) my_printf("%d",sz[i]);
+           else my_printf("%d ",sz[i]);
     }
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     return 0;
 }

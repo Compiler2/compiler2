@@ -27,14 +27,14 @@ main_bench()
 		   b[i]=b[i]-32;}
           for(i=0;i<m;i++)
 		  {if(a[i]>b[i])
-			  {printf(">");
+			  {my_printf(">");
 			  k=1;break;}
 			  else
 				  if(a[i]<b[i])
-				  {printf("<");
+				  {my_printf("<");
 				  k=1;break;}}
 		  if(k==0)
-			  printf("=");
+			  my_printf("=");
 		  
 	}
 				 

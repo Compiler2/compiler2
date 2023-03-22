@@ -7,11 +7,11 @@ int main_bench()
 	char a[6][10];
     for(i=0;i<6;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n",reverse(a[i]));
+		my_printf("%d\n",reverse(a[i]));
 	}
 	return 0;
 }

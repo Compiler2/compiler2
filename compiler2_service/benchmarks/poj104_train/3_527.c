@@ -6,10 +6,10 @@ int main_bench()
 	int s=0;
 	int i,j;
 	int a[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-	     scanf("%d",&a[i]);
+	     my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -27,13 +27,13 @@ int main_bench()
 				j++;
 				if(k==s)
 				{
-					printf("yes");
+					my_printf("yes");
 					goto label;
 				}
 			};
 		};
 		if((i==n-1)&&(s!=k))
-			printf("no");
+			my_printf("no");
 	}
     label:
 	return(0);

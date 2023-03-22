@@ -10,11 +10,11 @@ int main_bench()
     for(i=0;i<n;i++,p++,q++)
     {
                     if(i!=n-1)
-                    printf("%c",* p+* q);
+                    my_printf("%c",* p+* q);
                     if(i==n-1)
                     {
                       q=str;        
-                    printf("%c",* p+* q);
+                    my_printf("%c",* p+* q);
                     }
      }
      return 0;

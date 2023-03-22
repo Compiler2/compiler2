@@ -7,10 +7,10 @@ int i,j;
 int len;
 int k;
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {   k=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	len=strlen(s);
 	if((s[0]=='_')||((s[0]>='A')&&(s[0]<='Z'))||((s[0]>='a')&&(s[0]<='z')))
 	{
@@ -21,14 +21,14 @@ for(i=0;i<n;i++)
 		}
 		if(k==(len-1))
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		if(k!=(len-1))
-		{printf("no\n");}
+		{my_printf("no\n");}
 	}
 	else
 	{
-		printf("no\n");
+		my_printf("no\n");
 	}
 }
 return 0;

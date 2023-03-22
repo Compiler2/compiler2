@@ -4,7 +4,7 @@ int j(int x);
 int main_bench()
 {
 int e,k,n,i,l,a[1000],b[1000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 a[0]=n;
 k=n;
 l=0;
@@ -34,12 +34,12 @@ while(1)
 }
 if(e==1)
 {
-	printf("End");
+	my_printf("End");
 }
 if(e==2)
 {
-	printf("%d/2=%d\n",2,1);
-	printf("End");
+	my_printf("%d/2=%d\n",2,1);
+	my_printf("End");
 	return 0;
 
 }
@@ -49,28 +49,28 @@ for(i=0;i<e-1;i++)
 	{
 	    if(b[i]==0)
 		{
-	    	printf("%d/2=%d\n",k,a[i]);
+	    	my_printf("%d/2=%d\n",k,a[i]);
 		}
     	else
 		{
-	    	printf("%d*3+1=%d\n",k,a[i]);
+	    	my_printf("%d*3+1=%d\n",k,a[i]);
 		}
 	}
 	else if(i>=1&&i<e-2)
 	{
 		if(b[i]==0)
 		{
-	    	printf("%d/2=%d\n",a[i-1],a[i]);
+	    	my_printf("%d/2=%d\n",a[i-1],a[i]);
 		}
 	     else
 		 {
-	    	printf("%d*3+1=%d\n",a[i-1],a[i]);
+	    	my_printf("%d*3+1=%d\n",a[i-1],a[i]);
 		 }
 	}
 	else if(i==e-2)
 	{
-		printf("%d/2=%d\n",a[i-1],a[i]);
-		printf("End");
+		my_printf("%d/2=%d\n",a[i-1],a[i]);
+		my_printf("End");
 		return 0;
 	}
 }

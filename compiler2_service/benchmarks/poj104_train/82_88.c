@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int j,n,i,zu[100]={0},su[2][100],tu[100]={0};
- scanf("%d",&n);
+ my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d %d",&su[0][i],&su[1][i]);
+my_scanf("%d %d",&su[0][i],&su[1][i]);
 if(su[0][i]<=140 && su[0][i]>=90 && su[1][i]>=60 && su[1][i]<=90)
 zu[i]=1;
 }
@@ -18,6 +18,6 @@ break;}
 for(i=0;i<n;i++)
 if(tu[i]>tu[0])
 tu[0]=tu[i];
-printf("%d",tu[0]);
+my_printf("%d",tu[0]);
 return 0;
 }

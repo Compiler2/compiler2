@@ -20,7 +20,7 @@ main_bench()
   }
   for(i=t;i>=0;i--)
   { for(j=0;j<c[i];j++)
-     printf("%c",a[i][j]);
-    if(i>=1)printf(" ");
+     my_printf("%c",a[i][j]);
+    if(i>=1)my_printf(" ");
   }
 }

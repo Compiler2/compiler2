@@ -23,10 +23,10 @@ int main_bench()
 		i++;
 		}
 		while (*p2!=' '&&*p2!='\0');
-		if(strcmp(s1,temp)==0) printf("%s",s2);
-		else printf("%s",temp);
+		if(strcmp(s1,temp)==0) my_printf("%s",s2);
+		else my_printf("%s",temp);
 		if(*p2==' ') 
-		{p2++;printf(" ");}
+		{p2++;my_printf(" ");}
 		
 	}
 	return 0;

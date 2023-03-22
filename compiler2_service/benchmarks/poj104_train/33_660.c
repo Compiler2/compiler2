@@ -3,9 +3,9 @@
 int main_bench(){
    int a,n,i;
    char *b,x[1000][300],y[1000][300];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(a=0;a<n;a++)
-   {  scanf("%s",x[a]);
+   {  my_scanf("%s",x[a]);
       	
        for(b=x[a],i=0;*b!='\0';b++,i++)
        {  
@@ -18,7 +18,7 @@ int main_bench(){
           if(*b=='T')
            y[a][i]='A';
         }
-    printf("%s\n",y[a]);
+    my_printf("%s\n",y[a]);
 	}
 	  return 0;
     

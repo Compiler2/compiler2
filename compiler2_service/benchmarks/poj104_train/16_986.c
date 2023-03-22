@@ -7,7 +7,7 @@ int main_bench()
 	int i;
 	for(i=0;i<6;i++)
 	{
-		scanf("%c", p);
+		my_scanf("%c", p);
 		if(*p=='\n')
 		{
 			*p=0;
@@ -18,7 +18,7 @@ int main_bench()
 	for(i=i-1;i>=0;i--)
 	{
 		p--;
-		printf("%c", *p);
+		my_printf("%c", *p);
 	}
 	return 0;
 }

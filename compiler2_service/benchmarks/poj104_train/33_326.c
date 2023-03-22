@@ -5,10 +5,10 @@ int len;
 int main_bench()
 {
 	int n, i, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s", chaina[i]);
+		my_scanf("%s", chaina[i]);
 		len=strlen(chaina[i]);
 		for(j=0; j<len; j++)
 		{
@@ -29,6 +29,6 @@ int main_bench()
 		}
 	}
 	for(i=0; i<n; i++)
-		printf("%s\n", chainb[i]);
+		my_printf("%s\n", chainb[i]);
 	return 0;
 }

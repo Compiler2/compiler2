@@ -14,12 +14,12 @@ int main_bench()
 {
 	int n,i,j,t;
 	char ch[50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",ch);
+		my_scanf("%s",ch);
 		t=1;
-		if(first(ch[0])==0)printf("no\n");
+		if(first(ch[0])==0)my_printf("no\n");
 		else
 		{
 			for(j=1;j<strlen(ch);j++)
@@ -30,8 +30,8 @@ int main_bench()
 					break;
 				}
 			}
-			if(t==1)printf("yes\n");
-			else printf("no\n");
+			if(t==1)my_printf("yes\n");
+			else my_printf("no\n");
 		}
 	}
 	return 0;

@@ -9,6 +9,6 @@ l=strlen(s);
 ch=s[0];
 for (i=0;i<l-1;i++) s[i]=s[i]+s[i+1];
 s[l-1]+=ch;
-printf("%s",s);
+my_printf("%s",s);
 }
 

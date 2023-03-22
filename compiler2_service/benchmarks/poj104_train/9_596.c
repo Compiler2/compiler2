@@ -8,9 +8,9 @@ int main_bench()
     int age2[100];
     char string[100][11];
     int line[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 for(i=0;i<=n-1;i++)
-    scanf("%s %d",string[i],&age[i]);
+    my_scanf("%s %d",string[i],&age[i]);
     for(i=0;i<=n-1;i++)
     {
             if (age[i]>=60)
@@ -34,13 +34,13 @@ for(i=0;i<=n-1;i++)
                                       t=j;
                                  }
                            }
-                        printf("%s\n",string[line[t]]);
+                        my_printf("%s\n",string[line[t]]);
                         age2[t]=0;
         }
     for(i=0;i<n;i++)
     {
         if(age[i]!=0)
-        printf("%s\n",string[i]);
+        my_printf("%s\n",string[i]);
     }
     getchar();
     getchar();

@@ -3,7 +3,7 @@
 int num[100];
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int i,j;
     num[99]=1;
     for(j=0;j<n;j++){
@@ -21,7 +21,7 @@ int main_bench(){
             j++;
 		}
 		if(j!=0){
-            printf("%d",num[i]);
+            my_printf("%d",num[i]);
 		}
 	 }
 	 return 0;

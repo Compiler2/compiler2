@@ -21,16 +21,16 @@ int main_bench()
 		if (s[i]>sl[i]) 
 		{
 			p = 0;
-			printf (">");
+			my_printf (">");
 			break;
 		}
 		else if (s[i]<sl[i])
 		{
 			p = 0;
-			printf ("<");
+			my_printf ("<");
 			break;
 		}
 	}
-	if (p) printf ("=");	
+	if (p) my_printf ("=");	
 	return 0;
 }

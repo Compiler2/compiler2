@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,i=1,j=1,m,n,x[11],y[11];
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	x[0]=a;y[0]=b;
 	while(a>1)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 		{
 			if(x[m]==y[n])
 			{
-				printf("%d",x[m]);
+				my_printf("%d",x[m]);
 				return 0;
 			}
 		}

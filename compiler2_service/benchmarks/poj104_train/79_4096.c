@@ -5,9 +5,9 @@ int main_bench()
 {   int f[100],h[100];
     int m,n,b,c,d,e,g,i,j;
     i=0;
-    scanf("%d%d",f+i,h+i);
+    my_scanf("%d%d",f+i,h+i);
     while(f[i]!=0&&h[i]!=0)
-    {i++,scanf("%d%d",f+i,h+i);}
+    {i++,my_scanf("%d%d",f+i,h+i);}
     
     
     g=0;
@@ -47,7 +47,7 @@ int main_bench()
      i=0;
      while(a[i]!=1)
        i++;
-    printf("%d\n",i+1); 
+    my_printf("%d\n",i+1); 
     g++;
     }
           

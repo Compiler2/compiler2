@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int k,i,j,a,b,c,m,n,p;
-	scanf("%d\n",&k);
+	my_scanf("%d\n",&k);
 	m=0;
 	p=0;
     for(i=1;i<=k;i++)
 	{   
-		scanf("%d\n",&a);
+		my_scanf("%d\n",&a);
 		  if(a>=m)
 			{ n=a;
 		      if(p>m)
@@ -28,6 +28,6 @@ int main_bench()
 			
 		
 	}
-	printf("%d\n%d\n",n,j);
+	my_printf("%d\n%d\n",n,j);
 	
 }

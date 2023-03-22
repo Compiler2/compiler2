@@ -4,9 +4,9 @@ int main_bench(){
 	int a[50000],b[50000],c[10002],d[10000];
 	int i,n,j,k=0,l=1,x;
 	double z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<10002;i++){
 		c[i]=0;
@@ -41,15 +41,15 @@ int main_bench(){
 				continue;
 			}
 			if(x==0){
-				printf("no");
+				my_printf("no");
 				break;
 			}
 		}
 		if(x!=0){
-		printf("%d %d",d[2],d[3]);
+		my_printf("%d %d",d[2],d[3]);
 		}
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

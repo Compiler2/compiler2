@@ -4,11 +4,11 @@ int main_bench()
 {
 	char a[20], b[20];
 	int a_, b_, isbreak=0, i, j;
-	scanf("%s%s", a, b);
+	my_scanf("%s%s", a, b);
 	a_ = strlen(a);
 	b_ = strlen(b);
 	if(a_!=b_)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 	for(i=0; i<a_; i++)
@@ -30,9 +30,9 @@ int main_bench()
 			break;
 	}
 	if(isbreak==1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	return 0;
 }

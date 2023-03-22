@@ -15,12 +15,12 @@ int main_bench()
 			{
 				if(a[i+j]>47&&a[i+j]<58)
 				{
-					printf("%c",s[i+j]);
+					my_printf("%c",s[i+j]);
 					continue;
 				}
 				else
 				{
-					printf("\n");
+					my_printf("\n");
 					break;
 				}
 			}

@@ -16,11 +16,11 @@ int main_bench(){
     
 	if(j!=i-1){
     for(t=0;t<i;t++)
-    printf("%c",su[t]);
-    printf("%s",tu);
+    my_printf("%c",su[t]);
+    my_printf("%s",tu);
     for(t=j;t<strlen(su);t++)
-		printf("%c",su[t]);}
+		my_printf("%c",su[t]);}
 	else
-		printf("%s",su);
+		my_printf("%s",su);
     return 0;
     } 

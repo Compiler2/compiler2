@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int x,x1,a=0,b=-1,flag=0;
-	scanf("%d",&x1);
+	my_scanf("%d",&x1);
 	a=x1;
-	while((scanf(",%d",&x))==1)
+	while((my_scanf(",%d",&x))==1)
 	{
 	 
 		if(a<x)
@@ -18,9 +18,9 @@ int main_bench()
 		flag=1;
    	}
 	if(a>b&&b!=-1)
- printf("%d",b);
+ my_printf("%d",b);
 	if(flag=0||b==a||b==-1)
-	printf("No");
+	my_printf("No");
  return 0;
 }
 

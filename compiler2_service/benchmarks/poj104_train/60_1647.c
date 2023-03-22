@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,a[20000],b,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++)
 		a[i]=0;
 	if(n<5)
-		printf("empty");
+		my_printf("empty");
 	else{
 		for(i=2;i<=n;i++)
 		{
@@ -25,7 +25,7 @@ int main_bench()
 		for(i=1;i<n-1;i++)
 		{
 			if(a[i]!=0&&a[i+2]!=0)
-				printf("%d %d\n",a[i],a[i+2]);
+				my_printf("%d %d\n",a[i],a[i+2]);
 		}
 	}
 	return 0;

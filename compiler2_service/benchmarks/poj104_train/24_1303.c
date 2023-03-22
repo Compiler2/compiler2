@@ -35,8 +35,8 @@ int main_bench()
 		}
 	}
 	for(;*(tmax)!=' '&&*(tmax)!='\0';tmax++)
-		printf("%c",*tmax);
-	printf("\n");
+		my_printf("%c",*tmax);
+	my_printf("\n");
 	for(;*(tmin)!=' '&&*(tmin)!='\0';tmin++)
-		printf("%c",*tmin);
+		my_printf("%c",*tmin);
 }

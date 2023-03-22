@@ -11,9 +11,9 @@ int main_bench()
 	e=0;
 	int tol[1000]={0};
 	int own[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d%s",&(book[i].num),book[i].author);
+		my_scanf("%d%s",&(book[i].num),book[i].author);
 	}
 	for(k='A';k<='Z';k++){
 		for(i=0;i<=n-1;i++){
@@ -32,10 +32,10 @@ int main_bench()
 	}
 	for(k='A';k<='Z';k++){
 		if(tol[k]==e){
-			printf("%c\n%d\n",k,tol[k]);
+			my_printf("%c\n%d\n",k,tol[k]);
 			for(p=0;p<=n-1;p++){
 				if(own[k][p]!=0){
-					printf("%d\n",own[k][p]);
+					my_printf("%d\n",own[k][p]);
 				}
 			}
 			break;

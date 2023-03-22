@@ -3,9 +3,9 @@
 int main_bench()
 {
     char a[256],b[256],c[256];
-    scanf("%s",a);
-    scanf("%s",b);
-    scanf("%s",c);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
+    my_scanf("%s",c);
     int i,j;
     int count1=0,count2=0;
     for(i=0;a[i]!='\0';i++)
@@ -46,7 +46,7 @@ int main_bench()
                 }
                 for(p=0;p<=count1-1;p++)
                 {
-                     printf("%c",a[p]);
+                     my_printf("%c",a[p]);
                 }
                 judge1=1;
                 break;
@@ -60,7 +60,7 @@ int main_bench()
     if(judge1==0)
     {
                  for(int z=0;z<=count1-1;z++)
-                 printf("%c",a[z]);
+                 my_printf("%c",a[z]);
 
     }
     getchar();

@@ -5,11 +5,11 @@
 int main_bench()
 {
 	int num[300],copy[300],sNum,i,count=0,j,flag=0;
-	scanf("%d",&sNum);
+	my_scanf("%d",&sNum);
 	for (i=0;i<sNum; i++)
 	{
 		flag=0;
-		scanf("%d", &num[i]);
+		my_scanf("%d", &num[i]);
 		for (j=0;j<i;j++)
 		{
 			if (num[i]==copy[j])
@@ -27,10 +27,10 @@ int main_bench()
 
 	for(j=0;j<count;j++)
 	{
-		printf("%d",copy[j]);
+		my_printf("%d",copy[j]);
 		if (j<count-1)
-			printf(",");
+			my_printf(",");
 	}
-printf("\n");
+my_printf("\n");
 return 0;
 }

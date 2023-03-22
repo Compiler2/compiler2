@@ -42,13 +42,13 @@ int main_bench(){
       str2[e]=str[i];
    }
    str2[a-m-b]='\0';
-   printf("%s%s%s",str1,rep,str2);
+   my_printf("%s%s%s",str1,rep,str2);
 
 
 
    }
  else{
-      printf("%s",str);
+      my_printf("%s",str);
    }
 
 return 0;

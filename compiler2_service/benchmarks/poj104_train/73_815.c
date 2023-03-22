@@ -27,13 +27,13 @@ main_bench()
 {
       for (int i=0;i<5;i++)
       for (int j=0;j<5;j++)
-      scanf("%d",&a[i][j]);
+      my_scanf("%d",&a[i][j]);
       int s=0,I,J;
       for (int i=0;i<5;i++)
       for (int j=0;j<5;j++)
       if (max(i,j)==1 && min(i,j)==1)
       {s=a[i][j];I=i;J=j;}
       if (s!=0)
-      printf("%d %d %d\n",I+1,J+1,s);
-      else printf("not found\n");
+      my_printf("%d %d %d\n",I+1,J+1,s);
+      else my_printf("not found\n");
 }

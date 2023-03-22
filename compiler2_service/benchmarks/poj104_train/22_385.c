@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j=0,max=0,next=0;
 	int a[300]={0},b[300]={0};
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<300;i++)
-		scanf(",%d",&a[i]);
+		my_scanf(",%d",&a[i]);
 	for(i=0;i<300;i++)
 	{
 		if(max<a[i])
@@ -26,8 +26,8 @@ int main_bench()
 			next=b[j];
 	}
 	if(next!=0)
-		printf("%d",next);
+		my_printf("%d",next);
 	else
-		printf("No");
+		my_printf("No");
 	return 0;
 }

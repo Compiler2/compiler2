@@ -3,7 +3,7 @@
 int main_bench()
 {   char c;
 	int count=0,i=0,a[301],j;    for(j=0;j<301;j++)   a[j]=0;
-	do{    scanf("%c",&c);
+	do{    my_scanf("%c",&c);
 	if(c!=' ') { if(count==0)
 	
 		{
@@ -21,8 +21,8 @@ int main_bench()
 			}
                }while(c!='\n');
 			for(j=0;j<i;j++)
-			 printf("%d,",a[j]-1);
-			printf("%d",a[i]-2);
+			 my_printf("%d,",a[j]-1);
+			my_printf("%d",a[i]-2);
 }
  
 

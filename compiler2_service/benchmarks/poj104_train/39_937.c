@@ -14,10 +14,10 @@ int main_bench()
 {
 	struct student s[100];
 	int i,N,k=0,p,q=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",s[i].name,&s[i].qm,&s[i].bj,&s[i].x,&s[i].xi,&s[i].lun);
+		my_scanf("%s %d %d %c %c %d",s[i].name,&s[i].qm,&s[i].bj,&s[i].x,&s[i].xi,&s[i].lun);
 		s[i].award=0;
 	
 	}
@@ -48,12 +48,12 @@ int main_bench()
 			if(k==0)
 			{
 				k=k+1;
-				printf("%s\n",s[i].name);
-				printf("%d\n",p);
+				my_printf("%s\n",s[i].name);
+				my_printf("%d\n",p);
 			}
 		}
 		q=q+s[i].award;
 	}
-	printf("%d",q);
+	my_printf("%d",q);
 }
 			

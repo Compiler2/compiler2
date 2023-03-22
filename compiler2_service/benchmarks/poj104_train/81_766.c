@@ -5,10 +5,10 @@ int main_bench(){
   int i,j,n,m,a[5][5];
   for(i=0;i<5;i++){
 	  for(j=0;j<5;j++){
-	    scanf("%d",&a[i][j]);
+	    my_scanf("%d",&a[i][j]);
 	  }
   }
-  scanf("%d%d",&n,&m);
+  my_scanf("%d%d",&n,&m);
   if(ab(n,m)) {
 	  for(j=0;j<5;j++){
 	     int tmp;
@@ -18,13 +18,13 @@ int main_bench(){
 	  }
       for(i=0;i<5;i++){
 	    for(j=0;j<5;j++){
-	      printf("%d",a[i][j]);
-		  if(j<4) printf(" ");
-		  if(j==4) printf("\n");
+	      my_printf("%d",a[i][j]);
+		  if(j<4) my_printf(" ");
+		  if(j==4) my_printf("\n");
 		}
 	  }
   }
-  else printf("error");
+  else my_printf("error");
   return 0;
 }
 int ab(int n,int m){

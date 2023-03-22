@@ -12,13 +12,13 @@ main_bench()
 	struct abc s1,s2;
 	int i,j;
 
-	scanf("%s %s",s1.s,s2.s);
+	my_scanf("%s %s",s1.s,s2.s);
 	len1=strlen(s1.s);
 	len2=strlen(s2.s);
 	
 
 	if(len1!=len2)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<len1;i++)
@@ -32,7 +32,7 @@ main_bench()
 		for(i=0;i<len1;i++)
 			if(s2.a[i]==0) break;
 
-		if(i==len1) printf("YES");
-		else printf("NO");
+		if(i==len1) my_printf("YES");
+		else my_printf("NO");
 	}
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int a[26],i,n,j,x,t,flag;
 	char ch,set[26];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<26;j++)
@@ -22,7 +22,7 @@ int main_bench()
 			if(a[t]==1)
 				set[x++]=t+'a';
 		if(x==0)
-			printf("no\n");
+			my_printf("no\n");
 		else
 		{
 			for(j=0;s[j];j++)
@@ -30,7 +30,7 @@ int main_bench()
 				for(x=0;set[x];x++)
 					if(s[j]==set[x])
 					{
-						printf("%c\n",s[j]);
+						my_printf("%c\n",s[j]);
 						flag=1;
 						break;
 					}

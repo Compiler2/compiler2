@@ -23,14 +23,14 @@ int main_bench()
 	for(k=0;k<n;k++)
 	{if(i==l)break;
 	if(*(p+k)==0)l++;}
-	printf("%s\n",p+k);
+	my_printf("%s\n",p+k);
          l=0;
 	for(i=0;i<=j;i++)
 		if(min==*(q+i))break;
 	for(k=0;k<n;k++)
 	{if(i==l)break;
 	if(*(p+k)==0)l++;}
-	printf("%s",p+k);
+	my_printf("%s",p+k);
 
 
 }

@@ -3,12 +3,12 @@
 main_bench()
 {
   int i,n,y,m1,m2;char year;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
     int a[7]={1,3,5,7,8,10,12};
     int s=0;int t=0;
-    scanf("%d %d %d",&y,&m1,&m2);
+    my_scanf("%d %d %d",&y,&m1,&m2);
     if((y%4==0&&y%100!=0)||y%400==0) year='t';
     else year='f';
     if(year=='f')
@@ -73,8 +73,8 @@ main_bench()
          }
        }
     }
-   if(s%7==0)    printf("YES\n");
-   else  printf("NO\n");
+   if(s%7==0)    my_printf("YES\n");
+   else  my_printf("NO\n");
   }
   getchar();
   getchar();

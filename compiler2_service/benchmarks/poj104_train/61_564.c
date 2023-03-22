@@ -17,11 +17,11 @@ int p(int m)
 int main_bench()
 {
  	int m,n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	 	scanf("%d",&m);
-		printf("%d\n",p(m));
+	 	my_scanf("%d",&m);
+		my_printf("%d\n",p(m));
 	}	  
  	return 0;
 } 

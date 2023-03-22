@@ -6,14 +6,14 @@ int main_bench()
 	void m1(int n,int a[100][100]);
 	void m2(int n,int a[100][100]);
 	void deal(int n,int a[100][100]);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	k=n;
 	while(k--)
 	{
 		sum=0;
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 		p=n-1;
 		while(p)
 		{
@@ -22,7 +22,7 @@ int main_bench()
 			deal(p+1,a);
 			p--;
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

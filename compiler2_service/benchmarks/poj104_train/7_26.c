@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,a=1,m,k;
 	char s1[258],s2[258],s3[258];
-	scanf("%s",s1);
-	scanf("%s",s2);
-	scanf("%s",s3);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
+	my_scanf("%s",s3);
 	for(i=0;s1[i]!='\0';i++)
 	{
 		if(a==1)
@@ -34,6 +34,6 @@ int main_bench()
 			i++;
 		}
 	}
-	printf("%s",s1);
+	my_printf("%s",s1);
 	return 0;
 }

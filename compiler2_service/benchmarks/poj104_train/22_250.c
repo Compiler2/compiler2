@@ -15,6 +15,6 @@ int main_bench()
 		if(sum[i]>max) max=sum[i];
     for(i=0;i<=num;i++)
 		if(sum[i]>s&&sum[i]<max) s=sum[i];
-    if(s==0) printf("No");
-	else printf("%d",s);
+    if(s==0) my_printf("No");
+	else my_printf("%d",s);
 }

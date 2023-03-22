@@ -7,13 +7,13 @@ int main_bench()
    int sum=0;
    int n=0;
    int i,j;
-   scanf("%s",a);
-   scanf("%s",b);
+   my_scanf("%s",a);
+   my_scanf("%s",b);
    length1=strlen(a);
    length2=strlen(b);
    if(length1!=length2)
    {
-       printf("NO");
+       my_printf("NO");
    }
    else
    {
@@ -32,11 +32,11 @@ int main_bench()
    }
     if(n==sum)
    {
-       printf("YES");
+       my_printf("YES");
    }
    else
    {
-       printf("NO");
+       my_printf("NO");
    }
    }
     return 0;

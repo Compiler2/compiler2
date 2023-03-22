@@ -16,10 +16,10 @@ int main_bench()
 	}stu[100],*p;
 	p=stu;
     int i,n,sum=0,mark,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++,p++)
 	{   
-		scanf("%s%d%d %c %c%d",&p->name,&p->as,&p->cs,&p->pos,&p->xibu,&p->paper);
+		my_scanf("%s%d%d %c %c%d",&p->name,&p->as,&p->cs,&p->pos,&p->xibu,&p->paper);
 		p->money=0;
 		if(p->as>80&&p->paper>=1)
 			p->money=p->money+8000;
@@ -42,6 +42,6 @@ int main_bench()
 			mark=i;
 		}
 	}
-	printf("%s\n%d\n%d",stu[mark].name,max,sum);
+	my_printf("%s\n%d\n%d",stu[mark].name,max,sum);
 
 }

@@ -25,14 +25,14 @@ int main_bench()
 	int n;
 	int a,i;
     int sz[100];
-    scanf("%d",&a);
+    my_scanf("%d",&a);
 	for (i=0;i<a;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<a;i++)
 	{
-		printf("%.3f\n",yzs(sz[i]));
+		my_printf("%.3f\n",yzs(sz[i]));
 	}
 	return 0;
 }

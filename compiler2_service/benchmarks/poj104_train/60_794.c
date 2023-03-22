@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int i,j,n,sz[10000],a,b=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=2;i<=n;i++){
 		for(j=2;j<i;j++){
             a=i%j;
@@ -16,11 +16,11 @@ int main_bench(){
 		}
 	}
 	if(b==1||b==0){
-		printf("empty\n");
+		my_printf("empty\n");
 	}else{
 	    for(i=1;i<b;i++){
 		     if(sz[i]-sz[i-1]==2){
-			      printf("%d %d\n",sz[i-1],sz[i]);
+			      my_printf("%d %d\n",sz[i-1],sz[i]);
 			 }
 		}
 	}

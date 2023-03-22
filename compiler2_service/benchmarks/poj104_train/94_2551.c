@@ -4,9 +4,9 @@ int main_bench()
 {
     int N,e;
 	int sz[501];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(int i=0;i<N;i++)
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	for(int k=1;k<=N;k++)
 	{
 		for(int i=0;i<N-k;i++)
@@ -26,11 +26,11 @@ int main_bench()
         {
             if (flag == 0)
             {
-		    	printf("%d",sz[i]);
+		    	my_printf("%d",sz[i]);
                 flag = 1;
             }
             else
-                printf(",%d", sz[i]);
+                my_printf(",%d", sz[i]);
 	    }
 	}
 	return 0;

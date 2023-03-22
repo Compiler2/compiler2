@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,a,j,fz[1000],fm[1000];
 	double fs[1000],zh=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	fz[0]=2;
 	fz[1]=3;
 	fm[0]=1;
@@ -14,10 +14,10 @@ int main_bench()
 	zh=fs[0]+fs[1];
 	for(j=0;j<n;j++)
 	{
-		scanf("%d",&a);	
+		my_scanf("%d",&a);	
 		if(a==1)
 		{
-			printf("2.000\n");
+			my_printf("2.000\n");
 			continue;
 		}
 		else if(a>1)
@@ -29,7 +29,7 @@ int main_bench()
 				fs[i]=(double)fz[i]/fm[i];
 				zh=zh+fs[i];
 			}
-			printf("%.3lf\n",zh);
+			my_printf("%.3lf\n",zh);
 			zh=fs[0]+fs[1];
 		}
 	}

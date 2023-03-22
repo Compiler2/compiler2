@@ -11,10 +11,10 @@ int main_bench()
 		char iswest;
 		int paper;
 	}stu[100];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].results,&stu[i].dis,&stu[i].iscadre,&stu[i].iswest,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].results,&stu[i].dis,&stu[i].iscadre,&stu[i].iswest,&stu[i].paper);
 		sum[i]=0;
 		if(stu[i].results>80&&stu[i].paper>0)
 			sum[i]+=8000;
@@ -38,7 +38,7 @@ int main_bench()
 			sum[0]=sum[i];
 		}
 	}
-	printf("%s\n",stu[order].name);
-	printf("%d\n",sum[0]);
-	printf("%d\n",total);
+	my_printf("%s\n",stu[order].name);
+	my_printf("%d\n",sum[0]);
+	my_printf("%d\n",total);
 }

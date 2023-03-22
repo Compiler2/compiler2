@@ -22,7 +22,7 @@ int main_bench()
 			   temp1[q]=temp[i-q-1];
 		   }
 			if(strcmp(temp1,temp)==0)
-		   printf("%s\n",temp);
+		   my_printf("%s\n",temp);
 			
 		}
 }

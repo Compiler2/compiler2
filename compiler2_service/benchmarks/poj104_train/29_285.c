@@ -4,9 +4,9 @@ int main_bench()
 {
 int n,m[1000],i,j,a[1000],b[1000];
 double c[1000],sum[1000]={0};
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%d",&m[i]);
+	my_scanf("%d",&m[i]);
 }
 
 
@@ -30,7 +30,7 @@ for(i=0;i<n;i++){
 		 }
 	    
 	
-	printf("%.3lf\n",sum[i]);
+	my_printf("%.3lf\n",sum[i]);
 }
 return 0;
 }

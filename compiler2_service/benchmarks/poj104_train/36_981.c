@@ -5,17 +5,17 @@ int len1;
 int len2;
 int main_bench()
 {
-    scanf("%s %s",s,w);
+    my_scanf("%s %s",s,w);
     len1=strlen(s);
     len2=strlen(w);
     void paixu(char x[],int len);
-    if(len1!=len2) printf("NO");
+    if(len1!=len2) my_printf("NO");
     else
     {
         paixu(s,len1);
         paixu(w,len2);
-        if(strcmp(s,w)==0) printf("YES");
-        else printf("NO");
+        if(strcmp(s,w)==0) my_printf("YES");
+        else my_printf("NO");
     }
 }
 

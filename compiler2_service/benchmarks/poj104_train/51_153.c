@@ -7,7 +7,7 @@ int main_bench()
 	int c[500]={0};
 	char d[500][5]={'\0'};
 	int n,i,j,max=0,k,z=-1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	k=strlen(a);
 	for(i=0;i<=k-n;i++)
@@ -36,13 +36,13 @@ int main_bench()
 		}
 		if(max<c[z])max=c[z];
 	}
-	if(max==1)printf("NO");
+	if(max==1)my_printf("NO");
 	else 
 	{
-	printf("%d",max);
+	my_printf("%d",max);
 	for(i=0;i<=z;i++)
 	{
-		if(c[i]==max)printf("\n%s",d[i]);
+		if(c[i]==max)my_printf("\n%s",d[i]);
 	}
 	}
 }

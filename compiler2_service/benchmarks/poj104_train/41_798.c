@@ -21,7 +21,7 @@ int main_bench()
 							t[d]=(c!=1);
 							t[e]=(d==1);
 							if(t[1]==1&&t[2]==1&&t[3]!=1&&t[4]!=1&&t[5]!=1)
-								printf("%d %d %d %d %d",a,b,c,d,e);
+								my_printf("%d %d %d %d %d",a,b,c,d,e);
 							else continue;
 						}	
 					}

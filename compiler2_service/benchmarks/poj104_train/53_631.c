@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,a[300],b[300],*pa,*pb,i,j,im=0,m=0,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	pa=&a[0];
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",pa);
+		my_scanf("%d",pa);
 		pa++;
 	}
 	pa=&a[0];
@@ -39,8 +39,8 @@ int main_bench()
 	pb=&b[0];
 	for (i=0;i<m;i++)
 	{
-		printf("%d,",*pb);
+		my_printf("%d,",*pb);
 		pb++;
 	}
-	printf("%d",*pb);
+	my_printf("%d",*pb);
 }

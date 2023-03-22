@@ -13,7 +13,7 @@ int main_bench()
 	num=0;
 	while(i<a-1){
 		if(ju[i]==' '){
-			printf("%d",num);
+			my_printf("%d",num);
 			pan=1;
 			i++;
 			num=0;
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	while(i<a-1){
 		if(ju[i-1]!=' '&&ju[i]==' '){
-			printf(",%d",num);
+			my_printf(",%d",num);
 			i++;
 			num=0;
 		}else if(ju[i]!=' '){
@@ -33,8 +33,8 @@ int main_bench()
 			i++;
 		}else i++;
 	}
-	if(pan==1)printf(",%d\n",num+1);
-	else printf("%d\n",num+1);
+	if(pan==1)my_printf(",%d\n",num+1);
+	else my_printf("%d\n",num+1);
 	return 0;
 }
 

@@ -25,12 +25,12 @@ for(i=0;i<n;i++){
 }
 b[m][k]='\0';
 if(p==1){
-printf("%d" ,strlen(b[0]));
+my_printf("%d" ,strlen(b[0]));
 }else{
 for(i=0;i<p-1;i++){
-printf("%d," ,strlen(b[i]));
+my_printf("%d," ,strlen(b[i]));
 }
-printf("%d" ,strlen(b[p-1]));
+my_printf("%d" ,strlen(b[p-1]));
 }
 
 return 0;

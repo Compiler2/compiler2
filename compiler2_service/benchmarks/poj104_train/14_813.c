@@ -13,12 +13,12 @@ int main_bench()
 	int i,k,j;
 	struct Student student[100000];
 	struct Student temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&student[i].num);
-		scanf("%d",&student[i].chinese);
-		scanf("%d",&student[i].math);
+		my_scanf("%d",&student[i].num);
+		my_scanf("%d",&student[i].chinese);
+		my_scanf("%d",&student[i].math);
 		student[i].score=student[i].chinese+student[i].math;
 	}
 	for(i=0;i<3;i++)
@@ -37,7 +37,7 @@ int main_bench()
 	}
 	for(i=0;i<3;i++)
 	{
-		printf("%d %d\n",student[i].num,student[i].score);
+		my_printf("%d %d\n",student[i].num,student[i].score);
 	}
 	return 0;
 }

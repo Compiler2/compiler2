@@ -9,14 +9,14 @@ int n;
 int s[100];
 int a[100];
 int b[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 
 for(i=0;i<n;i++){
   b[i]=sl(i,a[i]);
-printf("%d\n",b[i]);
+my_printf("%d\n",b[i]);
 }
 return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	m=a[0][0];k=0;
 	for(j=0;j<5;j++)
@@ -29,7 +29,7 @@ int main_bench()
 		else;
 	}
 	if(p==0)
-		printf("1 %d %d",k+1,a[0][k]);
+		my_printf("1 %d %d",k+1,a[0][k]);
 	else
 		s++;
 
@@ -54,7 +54,7 @@ int main_bench()
 		else;
 	}
 	if(p==1)
-		printf("2 %d %d",k+1,a[1][k]);
+		my_printf("2 %d %d",k+1,a[1][k]);
 	else
 		s++;
 
@@ -79,7 +79,7 @@ int main_bench()
 		else;
 	}
 	if(p==2)
-		printf("3 %d %d",k+1,a[2][k]);
+		my_printf("3 %d %d",k+1,a[2][k]);
 	else
 		s++;
 
@@ -104,7 +104,7 @@ int main_bench()
 		else;
 	}
 	if(p==3)
-		printf("4 %d %d",k+1,a[3][k]);
+		my_printf("4 %d %d",k+1,a[3][k]);
 	else
 		s++;
 
@@ -129,10 +129,10 @@ int main_bench()
 		else;
 	}
 	if(p==4)
-		printf("5 %d %d",k+1,a[4][k]);
+		my_printf("5 %d %d",k+1,a[4][k]);
 	else
 		s++;
 	if(s==5)
-		printf("not found");
+		my_printf("not found");
 	return 0;
 }

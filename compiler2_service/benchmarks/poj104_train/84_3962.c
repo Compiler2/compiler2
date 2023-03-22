@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if(n<=1||n>=100)
 	{
 		return 0;
@@ -11,8 +11,8 @@ int main_bench()
 	
 	int temp;
 	int max, lmax;
-	scanf("%d", &max);
-	scanf("%d", &lmax);
+	my_scanf("%d", &max);
+	my_scanf("%d", &lmax);
 	if(lmax > max)
 	{
 		temp=lmax;
@@ -23,7 +23,7 @@ int main_bench()
 	int i=3;
 	while(i<=n)
 	{
-		scanf("%d", &temp);
+		my_scanf("%d", &temp);
 		if(temp>max)
 		{
 			lmax=max;
@@ -35,7 +35,7 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%d\n", max);
-	printf("%d", lmax);
+	my_printf("%d\n", max);
+	my_printf("%d", lmax);
 	return 0;
 }

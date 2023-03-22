@@ -5,12 +5,12 @@ int main_bench()
 	int m,n,i,j;
 	int q=0;
 	int sz[100][100];
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<m;i++)
@@ -35,14 +35,14 @@ int main_bench()
 		}
 		if(max==min)
 		{
-			printf("%d+%d",i,k);
+			my_printf("%d+%d",i,k);
 		    q=1;
 		}
 	}
  
 	if(q==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

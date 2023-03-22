@@ -19,7 +19,7 @@ void shu(int a,int b)
 	}
     for(j=0;j<a;j++)
 	{
-		if(monkey[j]!=0)  {printf("%d\n",j+1);break;}
+		if(monkey[j]!=0)  {my_printf("%d\n",j+1);break;}
 	}
 }
 int main_bench()
@@ -27,7 +27,7 @@ int main_bench()
 	int n,m;
 	while(1)
 	{
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n>0)
 			shu(n,m);
 		else break;

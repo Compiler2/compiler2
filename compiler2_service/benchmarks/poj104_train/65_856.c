@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int b[n][2];
 int i,j,a=0,c=0;
 for(i=0;i<n;i++){
-     scanf("%d%d",&b[i][0],&b[i][1]);
+     my_scanf("%d%d",&b[i][0],&b[i][1]);
 	}
 
 for(i=0;i<n;i++){
@@ -27,11 +27,11 @@ for(i=0;i<n;i++){
 	}
 }
 if(a>c){
-	printf("A");
+	my_printf("A");
 }else if(a<c){
-	printf("B");
+	my_printf("B");
 }else if(a==c){
-	printf("Tie");
+	my_printf("Tie");
 }
 return 0;
 

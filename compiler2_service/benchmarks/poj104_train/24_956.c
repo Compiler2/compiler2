@@ -37,7 +37,7 @@ int main_bench()
 			g=i;
 		}
 	}
-    printf("%s\n%s",words[j],words[g]);
+    my_printf("%s\n%s",words[j],words[g]);
 	return 0;
 }
 

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int left[100],right[100],n,i,j,t,k,l,r[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&left[i],&right[i]);
+		my_scanf("%d %d",&left[i],&right[i]);
 	}
 	for(i=1;i<=n;i++)
 	{
@@ -32,7 +32,7 @@ int main_bench()
 	{
 		if(right[i]<left[i+1])
 		{
-			printf("no\n");
+			my_printf("no\n");
 			break;
 		}
 		else
@@ -47,7 +47,7 @@ int main_bench()
 	}
 
 	if(k==n-1)
-		printf("%d %d\n",left[0],r[1]);
+		my_printf("%d %d\n",left[0],r[1]);
 	return 0;
 }
 

@@ -22,12 +22,12 @@ main_bench()
 	{	
 		for(j=0;j<=d[i];j++)
 		{		
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		}
 	}
 	for(i=0,j=0;j<=d[i]-1;j++)
 	{		
-		printf("%c",c[i][j]);
+		my_printf("%c",c[i][j]);
 	}
 
 }

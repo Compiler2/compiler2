@@ -5,7 +5,7 @@ main_bench()
 	int t,k=0,i,j=0,len;
 	int a[300]={0};
 	char str[1000];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	len=strlen(str);
 	for(i=0;i<len;i++)
 	{
@@ -13,7 +13,7 @@ main_bench()
 			a[j]=a[j]*10+str[i]-'0';
 		else j++;
 	}
-	if(j==0) printf("No\n");
+	if(j==0) my_printf("No\n");
 	else
 	{
 		for(i=0;i<=j;i++)
@@ -29,8 +29,8 @@ main_bench()
 	    for(i=0;i<=j;i++)
 		{
 			if(a[i]!=a[0])
-			{printf("%d\n",a[i]);break;}
-			else if(i==j) printf("No\n");
+			{my_printf("%d\n",a[i]);break;}
+			else if(i==j) my_printf("No\n");
 		}
 	    
 	}

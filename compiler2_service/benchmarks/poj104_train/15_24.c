@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,a,b,c,d,z;
 	int point[100][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&point[i][j]);
+			my_scanf("%d",&point[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -26,7 +26,7 @@ int main_bench()
 		}
 	}
 	z=(c-a-1)*(d-b-1);
-	printf("%d",z);
+	my_printf("%d",z);
 	
 	return 0;
 }

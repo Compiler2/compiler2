@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i,j,k,count,n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char s[100000];
 	for(i=0;i<n;i++){
 		gets(s);
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 		if(sum==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else{
 			for(j=0;j<len;j++){
@@ -33,7 +33,7 @@ int main_bench()
 					}
 				}
 				if(count==len-1){
-					printf("%c\n",s[j]);
+					my_printf("%c\n",s[j]);
 					break;
 				}
 			}

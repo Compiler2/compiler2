@@ -2,19 +2,19 @@
 
 int main_bench()
 {  int a,b,c;
-   scanf("%d %d %d",&a,&b,&c);
+   my_scanf("%d %d %d",&a,&b,&c);
   switch (a){
    case 4:
-   printf("Mon.");
+   my_printf("Mon.");
    break;
    case 2000:
-   printf("Tue.");
+   my_printf("Tue.");
    break;
    case 1921:
-   printf("Fri.");
+   my_printf("Fri.");
    break;
    default:
-   printf("Sat.");
+   my_printf("Sat.");
    break;
   }
    return 0;

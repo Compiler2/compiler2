@@ -7,10 +7,10 @@ int main_bench()
 	float	juli[300];
 	int n,i,w=0,j=0;
 	float aver,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	}
 	aver=average(num,n);
 	for(i=0;i<n;i++)
@@ -32,8 +32,8 @@ int main_bench()
 		}
 
 	if(w==2)
-		printf("%d,%d\n",output[0],output[1]);
-	else printf("%d\n",output[0]);
+		my_printf("%d,%d\n",output[0],output[1]);
+	else my_printf("%d\n",output[0]);
 
 			
 	

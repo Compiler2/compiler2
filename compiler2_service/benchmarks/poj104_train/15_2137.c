@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int i,j,n,c[1000][1000],count=0,mark;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&c[i][j]);
+			my_scanf("%d",&c[i][j]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,5 +25,5 @@ int main_bench()
 				count++;
 		}
 	}
-	printf("%d\n",count);
+	my_printf("%d\n",count);
 }

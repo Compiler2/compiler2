@@ -14,7 +14,7 @@ int Is_Runinian(int year)
 int main_bench()
 {
 	int year,month,day;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	int i,j,k;
 	k=(year-1)%400;
 	int m=0;
@@ -54,31 +54,31 @@ int main_bench()
 	m=m%7;
 	if(m==0)
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	else if(m==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	else if(m==2)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	else if(m==3)
 	{
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	else if(m==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	else if(m==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	else
 	{	
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	return 0;
 }

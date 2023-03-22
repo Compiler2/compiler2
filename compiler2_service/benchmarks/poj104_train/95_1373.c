@@ -21,18 +21,18 @@ int main_bench()
 			b[i]+=32;
 		if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			e--;
 			break;
 		}
 		else if(a[i]<b[i])
 		{
-			printf("<");
+			my_printf("<");
 			e--;
 			break;
 		}
 	}
 	if(e)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

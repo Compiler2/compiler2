@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,m=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	struct p{
 		char num[10000];
 		int age;
@@ -15,7 +15,7 @@ int main_bench()
 	int i,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d\n",p[i].num,&p[i].age);
+		my_scanf("%s%d\n",p[i].num,&p[i].age);
 		if(p[i].age>=60)
 		{
 			strcpy(p1[m].num1,p[i].num);
@@ -43,13 +43,13 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%s\n",p1[i].num1);
+		my_printf("%s\n",p1[i].num1);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(p[i].age<60)
 		{
-			printf("%s\n",p[i].num);
+			my_printf("%s\n",p[i].num);
 		}
 	}
 	return 0;

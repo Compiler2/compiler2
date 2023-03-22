@@ -10,7 +10,7 @@ int main_bench()
 {
   int w[13],a[13];
   int i,d;
-  scanf ("%d",&w[1]);
+  my_scanf ("%d",&w[1]);
   a[1]=a[3]=a[5]=a[7]=a[8]=a[10]=a[12]=31;
   a[2]=28;
   a[4]=a[6]=a[9]=a[11]=30;
@@ -20,6 +20,6 @@ int main_bench()
   {
     d=day (w[i]+5);
     if (d==5)
-      printf ("%d\n",i);
+      my_printf ("%d\n",i);
   }
 }

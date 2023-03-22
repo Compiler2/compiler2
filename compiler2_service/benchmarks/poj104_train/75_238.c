@@ -61,7 +61,7 @@ int main_bench()
 			max=z[i];
 		}
 	}
-	printf("%d %d",e,max);
+	my_printf("%d %d",e,max);
 
 
 }

@@ -2,14 +2,14 @@
 
 int main_bench(){
         int n,i,j,k;
-        scanf("%d",&n);
+        my_scanf("%d",&n);
 
         char id[100][10];
         int old[100];
 
         for(i=0;i<n;i++){
-                scanf("%s",id[i]);
-                scanf("%d",&old[i]);
+                my_scanf("%s",id[i]);
+                my_scanf("%d",&old[i]);
         }
          
         int e;
@@ -27,7 +27,7 @@ int main_bench(){
 	}
 	}
         for(i=0;i<n;i++){
-                printf("%s\n",id[i]);
+                my_printf("%s\n",id[i]);
         }
 
 

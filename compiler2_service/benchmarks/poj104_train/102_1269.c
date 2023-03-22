@@ -7,20 +7,20 @@ int main_bench()
 	float d;
 	float m[100],n[100];
 	char c[100];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	p=0;
 	k=0;
 	for(i=0;i<=N-1;i++)
 	{
-		scanf("%s",&c);
+		my_scanf("%s",&c);
 		if(c[0]=='m')
 		{
-		scanf("%f",&m[p]);
+		my_scanf("%f",&m[p]);
 		p++;
 		}
 		else
 		{
-		scanf("%f",&n[k]);
+		my_scanf("%f",&n[k]);
 		k++;
 		}
 	}
@@ -49,9 +49,9 @@ int main_bench()
 		}
 	}
 	for(i=0;i<=p-1;i++)
-	printf("%.2f ",m[i]);
+	my_printf("%.2f ",m[i]);
 	for(i=0;i<=k-2;i++)
-	printf("%.2f ",n[i]);
-	printf("%.2f",n[k-1]);
+	my_printf("%.2f ",n[i]);
+	my_printf("%.2f",n[k-1]);
 	return 0;
 }

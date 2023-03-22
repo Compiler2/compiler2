@@ -5,12 +5,12 @@ int main_bench()
 	int a[1000][1000],n,i,j,heng,shu;
 	heng=0;
 	shu=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -31,8 +31,8 @@ int main_bench()
 		}
 		if((a[j][i]==0)&&(a[j+1][i]!=0))break;
 	}
-	if(heng!=shu)printf("%d\n",abs(heng-shu)+1);
+	if(heng!=shu)my_printf("%d\n",abs(heng-shu)+1);
          else
-         printf("%d\n",(heng-2)*(heng-2));	
+         my_printf("%d\n",(heng-2)*(heng-2));	
 return 0;
 }

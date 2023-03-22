@@ -4,7 +4,7 @@ main_bench()
 {
   char x[100],y[100]={'\0'};
   int  i,a,b,c,d;
-  scanf("%s",x);
+  my_scanf("%s",x);
     if(x[1]=='\0')
     y[0]='0';
    c=x[0]-'0';
@@ -29,6 +29,6 @@ main_bench()
     for(i=0;y[i]!='\0';i++)
     y[i]=y[i+1];             
   }  
-  printf("%s\n%d",y,c); 
+  my_printf("%s\n%d",y,c); 
 
 }

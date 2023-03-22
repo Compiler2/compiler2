@@ -8,8 +8,8 @@ int main_bench()
 	int a[13]={31,28,31,30,31,30,31,31,30,31,30,31};
     int day;
 	int i=0;
-	scanf("%d%d%d",&startyear,&startmonth,&startday);
-	scanf("%d%d%d",&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d",&startyear,&startmonth,&startday);
+	my_scanf("%d%d%d",&endyear,&endmonth,&endday);
 	day=0;
 	for(year=startyear;year<endyear;++year)
 	{
@@ -39,6 +39,6 @@ int main_bench()
 	if(((endyear % 4 == 0 && endyear % 100 != 0) || (endyear % 400 == 0))&&(endmonth<2))
 		i=i-1;
 	day=day+i;
-	printf("%d\n",day);
+	my_printf("%d\n",day);
 	return 0;
 }

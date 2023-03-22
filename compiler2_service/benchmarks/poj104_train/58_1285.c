@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,s,j,l;
 	char *a=(char *)malloc(sizeof(char)*81);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++){
 		gets(a);
@@ -30,8 +30,8 @@ int main_bench()
 			}
 			}
 		}
-		if(l==0) printf("0\n");
-		else printf("1\n");
+		if(l==0) my_printf("0\n");
+		else my_printf("1\n");
 	}
 	return 0;
 }

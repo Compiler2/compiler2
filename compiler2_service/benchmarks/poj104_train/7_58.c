@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,len[2],result=1,wzy=0,weizhi;
 
 
-	scanf("%s%s%s",word[1],word[0],chan);
+	my_scanf("%s%s%s",word[1],word[0],chan);
 	len[0]=strlen(word[0]);
 	len[1]=strlen(word[1]);
 
@@ -47,7 +47,7 @@ int main_bench()
 	
 	for(i=0;i<len[1];i++)
 	{
-		printf("%c",word[1][i]);
+		my_printf("%c",word[1][i]);
 	}
 
 	return 0;

@@ -6,21 +6,21 @@ int main_bench()
     int a[5][5];
     int i,j,m,n;
     i=0;j=0;
-    scanf("%d %d %d %d %d\n",&a[0][0],&a[0][1],&a[0][2],&a[0][3],&a[0][4]);
-    scanf("%d %d %d %d %d\n",&a[1][0],&a[1][1],&a[1][2],&a[1][3],&a[1][4]);
-    scanf("%d %d %d %d %d\n",&a[2][0],&a[2][1],&a[2][2],&a[2][3],&a[2][4]);
-    scanf("%d %d %d %d %d\n",&a[3][0],&a[3][1],&a[3][2],&a[3][3],&a[3][4]);
-    scanf("%d %d %d %d %d\n",&a[4][0],&a[4][1],&a[4][2],&a[4][3],&a[4][4]);
+    my_scanf("%d %d %d %d %d\n",&a[0][0],&a[0][1],&a[0][2],&a[0][3],&a[0][4]);
+    my_scanf("%d %d %d %d %d\n",&a[1][0],&a[1][1],&a[1][2],&a[1][3],&a[1][4]);
+    my_scanf("%d %d %d %d %d\n",&a[2][0],&a[2][1],&a[2][2],&a[2][3],&a[2][4]);
+    my_scanf("%d %d %d %d %d\n",&a[3][0],&a[3][1],&a[3][2],&a[3][3],&a[3][4]);
+    my_scanf("%d %d %d %d %d\n",&a[4][0],&a[4][1],&a[4][2],&a[4][3],&a[4][4]);
     while(i<=4)
     {    m=max(a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
          while(j<=4)
          {    n=min(a[0][j],a[1][j],a[2][j],a[3][j],a[4][j]);
              if(a[i][j]==m&&a[i][j]==n)
-             {printf("%d %d %d",i+1,j+1,a[i][j]);i=10;j=10;}
+             {my_printf("%d %d %d",i+1,j+1,a[i][j]);i=10;j=10;}
              j++;} 
          j=0;i++;}
          if(i==5)
-         printf("not found");
+         my_printf("not found");
     return 0;
 }
       int max(int q_1,int q_2,int q_3,int q_4,int q_5)

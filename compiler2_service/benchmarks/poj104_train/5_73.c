@@ -5,13 +5,13 @@ int main_bench()
 	char a[500],b[500];
 	int len,lmn,sum=0,i,flag=1;
 	double n;
-	scanf("%lf",&n);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",a,b);
 	len=strlen(a);
 	lmn=strlen(b);
 	if(len!=lmn)
 	{
-		printf("error");
+		my_printf("error");
 	}
 else
 
@@ -19,7 +19,7 @@ for(i=0;i<len;i++)
 {
   if((a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G')||(b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G'))
 { flag=0;
-  printf("error");
+  my_printf("error");
 break;
 }
 }
@@ -32,9 +32,9 @@ for(i=0;i<len;i++)
 		sum+=1;
 }
 if((double)sum/len>n)
-printf("yes");
+my_printf("yes");
 else
-printf("no");
+my_printf("no");
 }
 
 

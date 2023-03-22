@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[1000]="",b[1000]="";
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int counta,countb;
 	int i,j;
 	for(i=0;i<=127;i++)
@@ -15,7 +15,7 @@ int main_bench()
 			if(b[j]==i)countb++;
 		if(counta!=countb)break;
 	}
-	if(i==128)printf("YES");
-	else printf("NO");
+	if(i==128)my_printf("YES");
+	else my_printf("NO");
 	return 0;
 }

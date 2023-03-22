@@ -11,9 +11,9 @@ struct student temp;
 int n,i,j,t=1;
 double s=0.0;
 double max=0.0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%lf",&stu[i].a);
+	my_scanf("%lf",&stu[i].a);
 	s+=stu[i].a;
 }
 s=s/n;
@@ -37,11 +37,11 @@ max=stu[i].b;
 for(i=0;i<n;i++){
 	if(stu[i].b==max){
 		if(t==1){
-		printf("%.0lf",stu[i].a);
+		my_printf("%.0lf",stu[i].a);
 		t=2;
 		}
 		else 
-			printf(",%.0lf",stu[i].a);
+			my_printf(",%.0lf",stu[i].a);
 	}
 }
 	return 0;

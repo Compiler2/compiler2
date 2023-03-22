@@ -2,12 +2,12 @@
 
 int main_bench() {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--) {
 		char t1[1000],t2[1000];
 		int num1[1000]={0},num2[1000]={0};
-		scanf("%s",&t1);
-		scanf("%s",&t2);
+		my_scanf("%s",&t1);
+		my_scanf("%s",&t2);
 	int i;
 	int k=0;
 	  for(i=strlen(t1)-1;i>=0;i--){
@@ -32,12 +32,12 @@ int main_bench() {
 	  int check=0;
   for(i=strlen(t1)-1;num1[i]==0;i--);
   for(;i>=0;i--){
-	  printf("%d",num1[i]);
+	  my_printf("%d",num1[i]);
 	  check=1;
   }
-  printf("\n");
+  my_printf("\n");
 
-  if ((check==0)&&(i==-1)) printf("%d",0);
+  if ((check==0)&&(i==-1)) my_printf("%d",0);
 	}
 	return 0;
 }

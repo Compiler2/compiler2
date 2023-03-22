@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,k,l,c=0,ucount[26]={0},lcount[26]={0},cmp=65;
 	char hao[301];
-	scanf("%s",hao);
+	my_scanf("%s",hao);
 	l=strlen(hao);
 	for(i=0;i<26;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		if(ucount[i]!=0)
 		{
-		   printf("%c=%d\n",cmp+i,ucount[i]);
+		   my_printf("%c=%d\n",cmp+i,ucount[i]);
 		}
 	}
 	for(i=32;i<58;i++)
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		if(lcount[i-32]!=0)
 		{
-		  printf("%c=%d\n",cmp+i,lcount[i-32]);
+		  my_printf("%c=%d\n",cmp+i,lcount[i-32]);
 		}
 	}
 	for(i=0;i<26;i++)
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	if(c==26)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

@@ -8,17 +8,17 @@ int main_bench()
     int sl[500]={0};
     char s[500];
     
-    scanf("%s",s);
+    my_scanf("%s",s);
     
     for (i=0; s[i]!='\0'; i++) {                 
         if (s[i]==s[i+1]) {
-            printf("%c%c\n",s[i],s[i+1]);
+            my_printf("%c%c\n",s[i],s[i+1]);
             pl[i]=pl[i+1]=2;
         }
     }
     for (i=0; s[i]!='\0'; i++) {
         if (s[i]==s[i+2]) {
-            printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
+            my_printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
             sl[i+1]=3;
         }
     }
@@ -34,9 +34,9 @@ int main_bench()
                 {
                     for (i1=i; i1<i+d-1; i1++)
                     {
-                        printf("%c",s[i1]);
+                        my_printf("%c",s[i1]);
                     }
-                    printf("%c\n",s[i+d-1]);
+                    my_printf("%c\n",s[i+d-1]);
                     pl[i+d/2-1]=pl[i+d/2]=d;
                 }
             }
@@ -49,9 +49,9 @@ int main_bench()
                 {
                     for (i1=i; i1<i+d-1; i1++)
                     {
-                        printf("%c",s[i1]);
+                        my_printf("%c",s[i1]);
                     }
-                    printf("%c\n",s[i+d-1]);
+                    my_printf("%c\n",s[i+d-1]);
                     sl[i+d/2]=d;
                 }
             }

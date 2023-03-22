@@ -11,7 +11,7 @@ int main_bench()
   {
 	  for(j=0;j<5;j++)
 	  {
-		  scanf("%d",&a[i][j]);
+		  my_scanf("%d",&a[i][j]);
 	  }
   }
   for(i=0;i<5;i++)
@@ -42,7 +42,7 @@ int main_bench()
 		 }
 		 if(status==1)
 		 {
-			 printf("%d %d %d",col+1,row+1,a[col][row]);
+			 my_printf("%d %d %d",col+1,row+1,a[col][row]);
 			 status=0;
 			 judge=1;
 			
@@ -50,7 +50,7 @@ int main_bench()
 		  cmp=0;
   }
 	 if(judge==0)
-	 printf("not found");
+	 my_printf("not found");
 	 return 0;
   }
 

@@ -27,15 +27,15 @@ main_bench()
 for (int kk=1;kk<=6;kk++)
 {
 int n,m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 if (n<0) m=0-n; else m=n;
-if (m==0) printf("0\n");
+if (m==0) my_printf("0\n");
 else 
 {
 m=rev(m);
 if (n<0)
-printf("-");
-printf("%d\n",m);
+my_printf("-");
+my_printf("%d\n",m);
 }
 }
 }

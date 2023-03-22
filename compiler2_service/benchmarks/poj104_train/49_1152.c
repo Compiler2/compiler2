@@ -12,7 +12,7 @@ int main_bench()
 	{	if(s[a]==s[a+1])
 		{	z[a][a+1]=1;
 	        print(a,a+1);
-			 printf("\n");
+			 my_printf("\n");
 		}
 	    z[a][a]=1;
     }
@@ -23,7 +23,7 @@ int main_bench()
 		if((z[b+1][c-1]==1)&&(s[b]==s[c]))
 		{  z[b][c]=1;
 		   print(b,c);
-		   printf("\n");
+		   my_printf("\n");
 		}
 		}
     return 0;
@@ -32,7 +32,7 @@ int main_bench()
 void print(int n1,int n2)
 {
 	while(n1<=n2)
-	{	printf("%c",s[n1]);
+	{	my_printf("%c",s[n1]);
 		n1++;
 	}
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int i,n,m,*p;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	p=(int *)malloc(n*sizeof(int));
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	for(i=n-m;i<n;i++)
-		printf("%d ",*(p+i));
+		my_printf("%d ",*(p+i));
 	for(i=0;i<n-m-1;i++)
-		printf("%d ",*(p+i));
-	printf("%d\n",*(p+i));
+		my_printf("%d ",*(p+i));
+	my_printf("%d\n",*(p+i));
 }

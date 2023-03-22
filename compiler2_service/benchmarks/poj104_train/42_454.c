@@ -4,10 +4,10 @@ int main_bench()
 {
 int a[100000];
 int n,k,i,j,m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%d",&a[i]);
-scanf("%d",&k);
+my_scanf("%d",&a[i]);
+my_scanf("%d",&k);
 m=n;
 for(i=0;i<m;i++)
 {
@@ -22,6 +22,6 @@ m--;
 for(i=m;i<=n-1;i++)
 a[i]='*';
 for(i=0;i<m-1;i++)
-printf("%d ",a[i]);
-printf("%d",a[m-1]);
+my_printf("%d ",a[i]);
+my_printf("%d",a[m-1]);
 }

@@ -7,7 +7,7 @@ int main_bench()
   int a,b;
   int sum=0;
 
-  scanf("%d",&x);
+  my_scanf("%d",&x);
   for (i=2;i<x-1;i++)
   {
       a=1;
@@ -23,11 +23,11 @@ int main_bench()
           b=0;
       }
       if ((a*b)!=0)
-      {printf("%d %d\n",i,i+2);
+      {my_printf("%d %d\n",i,i+2);
       sum++;}
   }
   if (sum==0)
-  printf("empty");
+  my_printf("empty");
   return 0;
 
 

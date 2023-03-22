@@ -4,9 +4,9 @@ int main_bench(){
 int i,j,k,N;
 j=0;
 int sz[10000];
-scanf("%d",&N);
+my_scanf("%d",&N);
 for(i=0;i<N;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 }
 for(i=0;i<N;i++){
    if(sz[i]%2!=0){
@@ -28,9 +28,9 @@ if(maxIndex!=j-k){
    sz[j-k]=e;
 }
 }
-printf("%d", sz[0]);
+my_printf("%d", sz[0]);
 for(i=1;i<j;i++){
-  printf(",%d",sz[i]);}
+  my_printf(",%d",sz[i]);}
 return 0;
 }
 

@@ -4,18 +4,18 @@ int main_bench() {
 	int n;
 	int len, i;
 	char s[300];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n--) {
-		scanf("%s", s);
+		my_scanf("%s", s);
 		len = strlen(s);
 		for(i=0; i<len; i++) 
 			switch(s[i]) {
-				case 'A': printf("T");break;
-				case 'T': printf("A");break;
-				case 'G': printf("C");break;
-				case 'C': printf("G");break;
+				case 'A': my_printf("T");break;
+				case 'T': my_printf("A");break;
+				case 'G': my_printf("C");break;
+				case 'C': my_printf("G");break;
 			}
-		printf("\n");
+		my_printf("\n");
 	}
 				
 	return 0;

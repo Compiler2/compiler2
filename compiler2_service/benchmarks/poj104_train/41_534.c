@@ -57,9 +57,9 @@ main_bench()
                         {
                             for(i=1;i<5;i++)
                             {
-                                printf("%d ",c[i].minci);
+                                my_printf("%d ",c[i].minci);
                             }
-                            printf("%d",c[i].minci);
+                            my_printf("%d",c[i].minci);
                         }
                     }
                     if(m<2)

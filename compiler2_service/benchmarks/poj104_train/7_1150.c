@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char st[256],sub[256],rep[256];
-	scanf("%s%s%s",st,sub,rep);
+	my_scanf("%s%s%s",st,sub,rep);
 	int lenst,lensub,i,j;
 	lenst=strlen(st);
 	lensub=strlen(sub);
@@ -41,5 +41,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s",st);
+	my_printf("%s",st);
 }

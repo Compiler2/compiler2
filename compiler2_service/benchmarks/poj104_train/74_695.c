@@ -7,7 +7,7 @@ int main_bench()
     int a[100000]={0};
     int i,j,m,n,t=0;
     
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     
     for(i=m;i<=n;i++)
     {
@@ -45,19 +45,19 @@ int main_bench()
         }
         if(f==0&&t!=0)
         {
-             printf(",%d",i);
+             my_printf(",%d",i);
              t=1;
         }
         if(f==0&&t==0)
         {
-           printf("%d",i);
+           my_printf("%d",i);
            t=1;
         }
         }
         
     }
     if(t==0)
-    printf("no");
+    my_printf("no");
            
     return 0;
 }

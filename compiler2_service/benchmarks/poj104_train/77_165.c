@@ -13,7 +13,7 @@ int main_bench()
 {
 	char line[100];
 	int line1[100],i,j,k,line3[50][2]={0};
-	scanf("%s",line);
+	my_scanf("%s",line);
 	k=strlen(line)/2-1;
 	for(i=0;i<strlen(line);i++)
 	{
@@ -35,7 +35,7 @@ int main_bench()
 				}
 	}
 	for(i=0;i<strlen(line)/2;i++)
-		printf("%d %d\n",line3[i][0],line3[i][1]);
+		my_printf("%d %d\n",line3[i][0],line3[i][1]);
 	return 0;
 }
 

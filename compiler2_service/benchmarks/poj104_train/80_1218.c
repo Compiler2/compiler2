@@ -5,11 +5,11 @@ int main_bench()
 
 {
 	int syear,smonth,sday,eyear,emonth,eday,tday1,tday2;
-	scanf("%d %d %d",&syear,&smonth,&sday);
-	scanf("%d %d %d",&eyear,&emonth,&eday);
+	my_scanf("%d %d %d",&syear,&smonth,&sday);
+	my_scanf("%d %d %d",&eyear,&emonth,&eday);
 	tday1=calday(syear,smonth,sday);
 	tday2=calday(eyear,emonth,eday);
-	printf("%d\n",tday2-tday1);
+	my_printf("%d\n",tday2-tday1);
 	return 0;
 }
 

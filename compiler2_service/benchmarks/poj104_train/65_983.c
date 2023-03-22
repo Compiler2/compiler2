@@ -2,14 +2,14 @@
 
 int main_bench(){
     int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point{
 		int a,b;
 	}
 	sz[200];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&sz[i].a,&sz[i].b);
+		my_scanf("%d%d",&sz[i].a,&sz[i].b);
 	}
 	int x=0;
 	for(i=0;i<n;i++){
@@ -34,13 +34,13 @@ int main_bench(){
 	}
 
 	if(x>0){
-		printf("B\n");
+		my_printf("B\n");
 	}
 	else if(x==0){
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}
 	else if(x<0){
-		printf("A\n");
+		my_printf("A\n");
 	}
 	return 0;
 }

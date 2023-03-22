@@ -17,9 +17,9 @@ int main_bench()
 			num++;
 			i++;
 		}
-		if(i!=len-1){printf("%d,",num);}
-		else{printf("%d",num+1);}
+		if(i!=len-1){my_printf("%d,",num);}
+		else{my_printf("%d",num+1);}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

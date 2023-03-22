@@ -7,9 +7,9 @@ int s[200];
 int p[200];
 a=0;
 b=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d%d",&s[i],&p[i]);
+my_scanf("%d%d",&s[i],&p[i]);
 if(s[i]==0&&p[i]==1||s[i]==1&&p[i]==2||s[i]==2&&p[i]==0){
 a++;
 }
@@ -22,13 +22,13 @@ b=b;
 }
 }
 if(a>b){
-printf("A");
+my_printf("A");
 }
 if(a<b){
-printf("B");
+my_printf("B");
 }
 if(a==b){
-printf("Tie");
+my_printf("Tie");
 }
 return 0;
 }

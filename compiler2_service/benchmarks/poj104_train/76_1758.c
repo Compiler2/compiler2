@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,a[5000],b[5000],sum[10001]={0},max=0,min,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		c=a[i];
 	    d=b[i];
 		for(;c<d;c++)
@@ -20,10 +20,10 @@ int main_bench()
 	}
 	for(i=min;i<max;i++){
 		if(sum[i]==0){
-			printf("no");
+			my_printf("no");
 		     return 0;                                                    
 		}
 	}
-	 printf("%d %d",min,max);
+	 my_printf("%d %d",min,max);
 return 0;
 }

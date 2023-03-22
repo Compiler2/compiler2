@@ -25,11 +25,11 @@ int main_bench()
 	{
 		l2=strlen(a[j]);
 		for(k=0;k<l2;k++)
-			printf("%c",a[j][k]);
+			my_printf("%c",a[j][k]);
 		if(j!=1)
-			printf(" ");
+			my_printf(" ");
 		else
-			printf("\n");
+			my_printf("\n");
 	}
 }
 	

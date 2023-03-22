@@ -6,15 +6,15 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&a[n]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[n]);
+		my_scanf("%c",&c);
 		n++;
 	} while (c==',');
 	n=0;
 	do
 	{
-		scanf("%d",&b[n]);
-		scanf("%c",&c);
+		my_scanf("%d",&b[n]);
+		my_scanf("%c",&c);
 		n++;
 	} while (c==',');
 	am=a[0];
@@ -31,6 +31,6 @@ int main_bench()
 			if (k>=a[i] && k<b[i]) t++;
 		if (t>max) max=t;
 	}
-	printf("%d %d",n,max);
+	my_printf("%d %d",n,max);
 }
 

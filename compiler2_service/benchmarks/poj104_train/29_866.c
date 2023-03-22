@@ -9,9 +9,9 @@ int main_bench(){
     num[2]=n2;
     num[3]=n1+n2;
     num[4]=n2+num[3];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=1;i<=m;i++){
-        scanf("%d",&n[i]);
+        my_scanf("%d",&n[i]);
     }
     for(i=1;i<=m;i++){
         sum=0;
@@ -21,7 +21,7 @@ int main_bench(){
         for(j=1;j<=n[i];j++){
             sum+=1.0*num[j+1]/num[j];
             }
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
     }
     return 0;
 }

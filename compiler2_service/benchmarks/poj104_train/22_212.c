@@ -13,7 +13,7 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		n++;
 		c=getchar();
 		if(c=='\n') break;
@@ -24,7 +24,7 @@ int main_bench()
 		if(a[i]!=max) break;
 	}
 	k=i;
-	if(k==n) printf("No\n");
+	if(k==n) my_printf("No\n");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -32,6 +32,6 @@ int main_bench()
 			if(a[i]==max) continue;
 			if(a[i]>a[k]) k=i;
 		}
-		printf("%d\n",a[k]);
+		my_printf("%d\n",a[k]);
 	}
 }

@@ -5,11 +5,11 @@ int main_bench()
 	char name[100][100],student[100][5],west[100][5];
 	int final[100], clas[100], essay[100],scholarship[100]={0};
 	int n,total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d%s%s%d",&name[i],&final[i],&clas[i],&student[i],&west[i],&essay[i]);
+		my_scanf("%s%d%d%s%s%d",&name[i],&final[i],&clas[i],&student[i],&west[i],&essay[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -34,6 +34,6 @@ int main_bench()
 			k=i;
 		}
 	}
-	printf("%s\n",name[k]);
-	printf("%d\n%d\n",scholarship[k],total);
+	my_printf("%s\n",name[k]);
+	my_printf("%d\n%d\n",scholarship[k],total);
 }

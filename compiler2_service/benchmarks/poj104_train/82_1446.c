@@ -6,9 +6,9 @@ int main_bench(){
 		sc[i]=0;
 	}
 	e=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&ss,&sz);
+		my_scanf("%d%d",&ss,&sz);
 		if((ss>=90)&&(ss<=140)&&(sz>=60)&&(sz<=90)){
 			sc[e]++;
 		}
@@ -25,6 +25,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",sc[0]);
+	my_printf("%d",sc[0]);
 	return 0;
 }

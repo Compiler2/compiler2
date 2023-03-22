@@ -5,9 +5,9 @@ int main_bench()
 {
 	int n,sp,dp,dur,h=0,max=0;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d%d",&sp,&dp);
+		my_scanf("%d%d",&sp,&dp);
 		if(sp>=90&&sp<=140&&dp>=60&&dp<=90){
 			h++;
 			dur=h;
@@ -19,5 +19,5 @@ int main_bench()
 		else 
 			max=dur;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 }

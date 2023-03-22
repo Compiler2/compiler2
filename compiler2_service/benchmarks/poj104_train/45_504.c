@@ -5,7 +5,7 @@ int main_bench()
 	char a[50],b[50];
 	char *m,*n,*k;
 	int i,j,p;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	n=a;
 	for(m=b,i=0;*m!='\0';m++,i++)
 	{
@@ -22,5 +22,5 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d\n",p);
+	my_printf("%d\n",p);
 }

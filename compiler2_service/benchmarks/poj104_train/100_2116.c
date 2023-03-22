@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[301],*ps;
 	int i,j,s=0;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(i=65,j=0;i<91;i++)
 	{
 		for(ps=a;*ps!='\0';ps++)
@@ -19,7 +19,7 @@ int main_bench()
 		}
 		if(j!=0)
 		{
-			printf("%c=%d\n",i,j);
+			my_printf("%c=%d\n",i,j);
 			j=0;
 		}
 		
@@ -39,7 +39,7 @@ int main_bench()
 		}
 		if(j!=0)
 		{
-			printf("%c=%d\n",i,j);
+			my_printf("%c=%d\n",i,j);
 			j=0;
 		}
 	
@@ -48,7 +48,7 @@ int main_bench()
 	}
 	if(s==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

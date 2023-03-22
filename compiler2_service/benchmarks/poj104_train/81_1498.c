@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(change(n,m))
 	{
 		for(j=0;j<=4;j++)
@@ -24,14 +24,14 @@ int main_bench()
 		{
 		    for(j=0;j<=4;j++)
 			{
-		  	    printf("%d",a[i][j]);
-				if(j!=4) printf(" ");
+		  	    my_printf("%d",a[i][j]);
+				if(j!=4) my_printf(" ");
 			}
-			printf("\n");
+			my_printf("\n");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
-	else printf("error\n");
+	else my_printf("error\n");
 }
 int change(int n,int m)
 {

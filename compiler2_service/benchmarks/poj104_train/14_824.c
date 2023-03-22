@@ -5,12 +5,12 @@ int main_bench()
 {
     int n,num,math,china,z,i;
 	int num1=2,num2=1,num3=0,m1=0,m2=0,m3=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&num);
-		scanf("%d",&math);
-		scanf("%d",&china);
+		my_scanf("%d",&num);
+		my_scanf("%d",&math);
+		my_scanf("%d",&china);
 		z=math+china;
 		if(z>num3)
 		{
@@ -35,8 +35,8 @@ int main_bench()
 			m1=i;
 		}
 	}
-	printf("%ld %ld\n",m3,num3);
-	printf("%ld %ld\n",m2,num2);
-    printf("%ld %ld\n",m1,num1);
+	my_printf("%ld %ld\n",m3,num3);
+	my_printf("%ld %ld\n",m2,num2);
+    my_printf("%ld %ld\n",m1,num1);
 	return 0;
 }

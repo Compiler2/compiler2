@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[82],*p=a;
 	int n,i,j,k,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
@@ -19,9 +19,9 @@ int main_bench()
 				k++;
 		}
 		if(k==l)
-			printf("1\n");
+			my_printf("1\n");
 		else
-			printf("0\n");
+			my_printf("0\n");
 	}
 	return 0;
 }

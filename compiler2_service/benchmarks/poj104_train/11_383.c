@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x;
 	
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 
 	d=31+c;
 	e=59+c;
@@ -31,48 +31,48 @@ int main_bench()
 
 
 	if(b==1)
-		printf("%d",c);
+		my_printf("%d",c);
 	if(b==2)
-		printf("%d",d);
+		my_printf("%d",d);
 	if((b==3)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",e);
+		my_printf("%d",e);
 	if((b==4)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",f);
+		my_printf("%d",f);
 	if((b==5)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",g);
+		my_printf("%d",g);
 	if((b==6)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",h);
+		my_printf("%d",h);
 	if((b==7)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",i);
+		my_printf("%d",i);
 	if((b==8)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",j);
+		my_printf("%d",j);
 	if((b==9)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",k);
+		my_printf("%d",k);
 	if((b==10)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",l);
+		my_printf("%d",l);
 	if((b==11)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-		printf("%d",m);
+		my_printf("%d",m);
 	if((b==12)&&(a%100!=0&&a%4!=0||a%100==0&&a%400!=0))
-	    printf("%d",n);
+	    my_printf("%d",n);
 	if((b==3)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",o);
+		my_printf("%d",o);
 	if((b==4)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",p);
+		my_printf("%d",p);
 	if((b==5)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",q);
+		my_printf("%d",q);
 	if((b==6)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",r);
+		my_printf("%d",r);
 	if((b==7)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",s);
+		my_printf("%d",s);
 	if((b==8)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",t);
+		my_printf("%d",t);
 	if((b==9)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",u);
+		my_printf("%d",u);
 	if((b==10)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",v);
+		my_printf("%d",v);
 	if((b==11)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",w);
+		my_printf("%d",w);
 	if((b==12)&&(a%100!=0&&a%4==0||a%400==0))
-		printf("%d",x);
+		my_printf("%d",x);
     return 0;
 }

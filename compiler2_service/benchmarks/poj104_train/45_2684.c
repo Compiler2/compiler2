@@ -14,7 +14,7 @@ int main_bench()
 {
 	int i,j,m,n,len1,len2,c=0,d;
 	char s[50],w[50],a[50]={0};
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	len1=strlen(s);
 	len2=strlen(w);
 	for(j=0,i=0;j<len2;j++){
@@ -32,6 +32,6 @@ int main_bench()
 		}
 	}
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

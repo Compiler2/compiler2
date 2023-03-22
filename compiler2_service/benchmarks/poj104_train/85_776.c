@@ -17,14 +17,14 @@ int main_bench()
 {
 	int n,j,m,i;
 	char a[500][20]={0};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=1;i<=n;i++)
 	{
 		gets(a[i]);
 		m=strlen(a[i]);
 		if (decide(a[i][0])!=1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		else
@@ -38,9 +38,9 @@ int main_bench()
 					j=j+1;
 			}
 			if (j==m)
-				printf("yes\n");
+				my_printf("yes\n");
 			else
-				printf("no\n");
+				my_printf("no\n");
 		}
 	}
 return 0;

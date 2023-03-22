@@ -3,27 +3,27 @@
 int main_bench(){
     int n,i,j;
 	char q[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",&q);
+		my_scanf("%s",&q);
 		for(j=0;q[j]!='\0';j++){
      		if(q[j]=='A'){
-                printf("T");
+                my_printf("T");
             }else{
 				if(q[j]=='T'){
-					printf("A");
+					my_printf("A");
 				}else{
 					if(q[j]=='C'){
-						printf("G");
+						my_printf("G");
 					}else{
 						if(q[j]=='G'){
-							printf("C");
+							my_printf("C");
 						}
 					}
 				}
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
     return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int t=0,i,n,a[10],b[10];float sum,aver,c[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     for(i=0;i<n;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 	sum=0;aver=0;
 	for(i=0;i<n;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
         t=t+a[i];
 	}
 	aver=sum/t;
-	printf("%.2f",aver);
+	my_printf("%.2f",aver);
 }
 
      

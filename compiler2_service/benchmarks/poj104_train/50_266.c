@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int date,l=0,a[12],mouth[13]={0,31,28,31,30,31,30,31,31,30,31,30,31},i,j,k,b[100],*p;
-	scanf("%d",&date);
+	my_scanf("%d",&date);
 	p=a;
 	if(6-date>0)
 		b[0]=6-date;
@@ -25,6 +25,6 @@ int main_bench()
 			else b[i]=b[i]-mouth[j];
 		}
 	for(i=0;i<l-1;i++)
-		printf("%d\n",a[i]);
-	printf("%d\n",a[l-1]);
+		my_printf("%d\n",a[i]);
+	my_printf("%d\n",a[l-1]);
 }

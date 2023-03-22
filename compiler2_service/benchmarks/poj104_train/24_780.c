@@ -23,8 +23,8 @@ else
 p++;
 }while(p!=&a[n+1]);
 for(p=q-max;p<q;p++)
-printf("%c",*p);printf("\n");
+my_printf("%c",*p);my_printf("\n");
 for(p=r-min;p<r;p++)
-printf("%c",*p);printf("\n");
+my_printf("%c",*p);my_printf("\n");
 }
 

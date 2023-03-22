@@ -6,19 +6,19 @@ int main_bench()
    int sum;
    char a[100]={0};
    char b[100]={0};    
-   scanf("%s",a);
+   my_scanf("%s",a);
    l=strlen(a);
    for(n=0;n<=l-1;n++)
    {a[n]=a[n]-'0';}
    a[l]='\0';
    if(l==1)
-      printf("0\n%d",a[0]);
+      my_printf("0\n%d",a[0]);
    else if(l==2&&a[0]*10+a[1]<13)
-      printf("0\n%d",a[0]*10+a[1]);
+      my_printf("0\n%d",a[0]*10+a[1]);
    else if(l==2&&a[0]*10+a[1]>=13)
      {
       sum=a[0]*10+a[1];
-      printf("%d\n%d",sum/13,sum%13);
+      my_printf("%d\n%d",sum/13,sum%13);
      }
    else if(l>2&&a[0]*10+a[1]<13)
      {
@@ -32,7 +32,7 @@ int main_bench()
     for(n=0;n<=l-3;n++)
        b[n]=b[n]+'0';
     b[l-2]='\0';
-    printf("%s\n%d",b,sum);
+    my_printf("%s\n%d",b,sum);
    } 
    else
    {
@@ -48,7 +48,7 @@ int main_bench()
            b[n]=b[n]+'0';               
        }
        b[l-1]='\0';
-       printf("%s\n%d",b,sum);
+       my_printf("%s\n%d",b,sum);
    }
    
    

@@ -4,13 +4,13 @@ int main_bench()
 {
 	int m,n,i,j;
 	double sum[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 		sum[i]=0;
 	
 
 	for(i=0;i<m;i++){
-        scanf("%d",&n);
+        my_scanf("%d",&n);
 		int a=2;
 		int b=1;
 	
@@ -19,7 +19,7 @@ int main_bench()
 		a=a+b;
 		b=a-b;
 		}
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	
 	}
 	

@@ -3,22 +3,22 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     float a[n],b[n],s;
-    scanf("%f %f",&a[0],&b[0]);
+    my_scanf("%f %f",&a[0],&b[0]);
     s=b[0]/a[0];
     for(i=1;i<n;i++)
     {
-      scanf("%f %f",&a[i],&b[i]);
+      my_scanf("%f %f",&a[i],&b[i]);
       if(fabs(b[i]/a[i]-s)>0.05)
       {
         if(b[i]/a[i]-s>0)
-        printf("better\n");
+        my_printf("better\n");
         else
-        printf("worse\n");
+        my_printf("worse\n");
       }
       else
-      printf("same\n");
+      my_printf("same\n");
     }
     getchar();
     getchar();

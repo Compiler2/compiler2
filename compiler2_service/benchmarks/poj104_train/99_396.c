@@ -4,9 +4,9 @@ int main_bench(){
 	int n;
 	int i;
 	int old[9999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&old[i]);
+		my_scanf("%d",&old[i]);
 	}
 	int one=0,two=0,three=0,four=0;
 	for(i=0;i<n;i++){
@@ -24,7 +24,7 @@ int main_bench(){
 	twolv=(double)two/n*100;
 	threelv=(double)three/n*100;
 	fourlv=(double)four/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",onelv,twolv,threelv,fourlv);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",onelv,twolv,threelv,fourlv);
 	return 0;
 }
 

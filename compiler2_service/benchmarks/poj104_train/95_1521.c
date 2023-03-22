@@ -12,9 +12,9 @@ for(i=0;str2[i]!='\0';i++)
 if((str2[i]>='a')&&(str2[i]<='z'))
 str2[i]=str2[i]-'a'+'A';
 if(strcmp(str1,str2)>0)
-printf(">");
+my_printf(">");
 else 
 if(strcmp(str1,str2)<0)
-printf("<");
+my_printf("<");
 else
-printf("=");}
+my_printf("=");}

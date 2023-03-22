@@ -36,18 +36,18 @@ int main_bench()
 			{
 				for(i=c[j];i<c[j]+d-1;i++)
 			{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 			}
-			printf("%c\n",a[c[j]+d-1]);
+			my_printf("%c\n",a[c[j]+d-1]);
 			}
 			else
 			{
 
 			for(i=c[j]+1;i<c[j]+d;i++)
 			{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 			}
-			printf("%c\n",a[c[j]+d]);
+			my_printf("%c\n",a[c[j]+d]);
 			}
 			break;
 		}
@@ -60,9 +60,9 @@ int main_bench()
 			{
 				for(i=c[j];i<c[j]+e-1;i++)
 			{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 			}
-			printf("%c\n",a[c[j]+e-1]);
+			my_printf("%c\n",a[c[j]+e-1]);
 			}
 			else
 			{
@@ -70,9 +70,9 @@ int main_bench()
 		
 			for(i=c[j]+1;i<c[j]+e;i++)
 			{
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 			}
-			printf("%c\n",a[c[j]+e]);
+			my_printf("%c\n",a[c[j]+e]);
 		}
 			break;
 	}

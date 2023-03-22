@@ -12,11 +12,11 @@ int main_bench()
 	char ganbu[105];
 	int money[105]={0};
 	int i,j,k,l,m,n,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for (i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
+		my_scanf("%s %d %d %c %c %d",&name[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
 	}
 	for (i=1;i<=n;i++)
 	{
@@ -49,17 +49,17 @@ int main_bench()
 	{
 		if (money[i]==max)
 		{
-			printf("%s\n",name[i]);
+			my_printf("%s\n",name[i]);
 			break;
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	m=0;
 	for (i=1;i<=n;i++)
 	{
 		m=m+money[i];
 	}
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 
 	return 0;
 }

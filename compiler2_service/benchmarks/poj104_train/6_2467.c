@@ -5,16 +5,16 @@ int main_bench()
 	int c[10000],i,k,a,b,n,s=0;
 	int *p,*q;
 	p=c;q=p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 for(k=0;k<n;k++)
 {
     p=c;q=p;s=0;
-	scanf("%d %d",&b,&a);
+	my_scanf("%d %d",&b,&a);
     	
         for(i=0;i<a*b;i++)
 	{
 	
-		  scanf("%d",&*p);
+		  my_scanf("%d",&*p);
 		  p++;
 	}
 	p=q;
@@ -49,7 +49,7 @@ for(k=0;k<n;k++)
 		
 	}
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 
 
 }

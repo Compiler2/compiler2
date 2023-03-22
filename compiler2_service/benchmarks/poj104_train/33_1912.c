@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char DNA[256];
     for(i=0;i<n;i++){
-		scanf("%s",DNA);
+		my_scanf("%s",DNA);
 		len=strlen(DNA);
 		for(j=0;j<len;j++){
 			if(DNA[j]=='A')
@@ -18,7 +18,7 @@ int main_bench()
 			else if(DNA[j]=='G')
 				DNA[j]='C';
 		}
-		printf("%s\n",DNA);
+		my_printf("%s\n",DNA);
 	}
 	return 0;
 }

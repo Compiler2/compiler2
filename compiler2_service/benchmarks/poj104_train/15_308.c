@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,str[500][500],len1=0,len2=0,t1,t2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	   for(j=0;j<n;j++)
-				scanf("%d",&str[i][j]);
+				my_scanf("%d",&str[i][j]);
 		for(i=0;i<n;i++)
 		{
 			for(j=0;j<n;j++)
@@ -19,7 +19,7 @@ int main_bench()
 						len1++;
 					while(str[t1-2][t2++]==0)
 						len2++;
-					printf("%d\n",(len1-2)*(len2-2));
+					my_printf("%d\n",(len1-2)*(len2-2));
 			     	break;
 				}
 			}

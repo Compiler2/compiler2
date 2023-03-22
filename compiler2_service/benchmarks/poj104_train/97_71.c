@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n,a,b,c,d,e,f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     a=n/100;
     b=(n%100)/50;
     c=(n%50)/20;
     d=(n-100*a-50*b-20*c)/10;
     e=(n%10)/5;
     f=n%5;
-    printf("%d\n",a);
-    printf("%d\n",b);
-    printf("%d\n",c);
-    printf("%d\n",d);
-    printf("%d\n",e);
-    printf("%d\n",f);
+    my_printf("%d\n",a);
+    my_printf("%d\n",b);
+    my_printf("%d\n",c);
+    my_printf("%d\n",d);
+    my_printf("%d\n",e);
+    my_printf("%d\n",f);
     return 0;
     
     

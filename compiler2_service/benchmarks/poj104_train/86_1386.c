@@ -3,29 +3,29 @@
 int main_bench()
 {
   int n,i;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
     int m,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	 int *a=(int*)malloc(sizeof(int*)*m);
 	for(j=0;j<m;j++)
     {
-	  scanf("%d",&a[j]); 				
+	  my_scanf("%d",&a[j]); 				
     }
     if(m==0)
     {
-	  printf("60\n"); 		
+	  my_printf("60\n"); 		
     }
     else if(m==1)
     {
 	  if(a[0]<=57)
 	  {
-	    printf("57\n");				
+	    my_printf("57\n");				
 	  }
 	  else
 	  {
-	  	printf("%d\n",a[0]);   
+	  	my_printf("%d\n",a[0]);   
       } 	 
     }
     else if(m>1)
@@ -35,7 +35,7 @@ int main_bench()
 	    if((a[m-1]+3*m)<=60)
 	    {
 		  int e=60-3*m;
-		  printf("%d\n",e); 
+		  my_printf("%d\n",e); 
 		  break;				  
 	    }
 	    if((a[m-1]+3*m)>60)
@@ -45,11 +45,11 @@ int main_bench()
 		    if((a[j+1]+3*(j+1))>60)
 		    {
 		      int e=60-3*(j+1);
-			  printf("%d\n",e); 						 
+			  my_printf("%d\n",e); 						 
 		    }
 		    else
 		    {
-		      printf("%d\n",a[j+1]); 	  
+		      my_printf("%d\n",a[j+1]); 	  
 	        } 										   
 	      }
 	    } 				

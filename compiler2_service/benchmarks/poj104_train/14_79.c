@@ -11,13 +11,13 @@ struct student
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student stu[100000];
 	struct student *p,*p1,*t1,*t2,*t3;
 	int tem,tem1;
 	for(p=stu;p<stu+n;p++)
 	{
-		scanf("%d %d %d",&p->num,&p->score1,&p->score2);
+		my_scanf("%d %d %d",&p->num,&p->score1,&p->score2);
 		p->score=p->score1+p->score2;
 	}
 	int max;
@@ -35,9 +35,9 @@ int main_bench()
 		if((p==t1)||(p==t2)) continue;
 		if(p->score>max) {t3=p;max=p->score;}
 	}
-	printf("%d %d\n",t1->num,t1->score);
-	printf("%d %d\n",t2->num,t2->score);
-	printf("%d %d\n",t3->num,t3->score);
+	my_printf("%d %d\n",t1->num,t1->score);
+	my_printf("%d %d\n",t2->num,t2->score);
+	my_printf("%d %d\n",t3->num,t3->score);
 }
 
 

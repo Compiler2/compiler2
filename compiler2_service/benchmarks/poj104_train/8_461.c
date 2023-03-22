@@ -4,14 +4,14 @@ int a[100],b[100],n,m,c[1000];
 void input(int a[],int b[])
 {
 	int i,j;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=0;j<=m-1;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 }
 void charge(int a[],int b[])
@@ -55,9 +55,9 @@ void print(int a[])
 	int i;
 	for(i=0;i<=m+n-2;i++)
 	{
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	}
-	printf("%d\n",a[m+n-1]);
+	my_printf("%d\n",a[m+n-1]);
 }
 main_bench()
 {

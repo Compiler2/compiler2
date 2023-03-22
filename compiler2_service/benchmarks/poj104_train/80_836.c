@@ -19,8 +19,8 @@ int main_bench()
 	int monthdays[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int startYear, startMonth, startDay;
 	int endYear, endMonth, endDay;
-	scanf("%d %d %d",&startYear,&startMonth,&startDay);
-	scanf("%d %d %d",&endYear,&endMonth,&endDay);
+	my_scanf("%d %d %d",&startYear,&startMonth,&startDay);
+	my_scanf("%d %d %d",&endYear,&endMonth,&endDay);
 	if(judge_year(startYear))  
 	{
 		monthdays[2]=29;  
@@ -30,7 +30,7 @@ int main_bench()
 		if(startMonth==endMonth)   
 		{
 			sumdays=endDay-startDay;
-			printf("%d",sumdays);
+			my_printf("%d",sumdays);
 			return 0;
 		}
 		else
@@ -41,7 +41,7 @@ int main_bench()
 			}
 			sumdays+=monthdays[startMonth]-startDay;
 			sumdays+=endDay;
-			printf("%d",sumdays);
+			my_printf("%d",sumdays);
 			return 0;
 		}
 	}
@@ -68,6 +68,6 @@ int main_bench()
 		sumdays+=monthdays[i];
 	}
 	sumdays+=endDay;
-	printf("%d",sumdays);
+	my_printf("%d",sumdays);
 	return 0;
 }

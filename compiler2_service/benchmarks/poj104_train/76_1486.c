@@ -7,10 +7,10 @@ int main_bench()
 	int i, k, e, n;
 	double j;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d%d", &a[i], &b[i]);
+		my_scanf("%d%d", &a[i], &b[i]);
 		c[i] = a[i];
 		d[i] = b[i];
 	}
@@ -48,13 +48,13 @@ int main_bench()
 		}
 		if(k == 1)
 		{
-			printf("no");
+			my_printf("no");
 			break;
 		}
 	}
 	if(k == 0)
 	{
-	printf("%d %d", c[0], c[n-1]);
+	my_printf("%d %d", c[0], c[n-1]);
 	}
 
 

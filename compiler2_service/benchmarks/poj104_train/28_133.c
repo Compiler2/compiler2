@@ -19,8 +19,8 @@ int main_bench()
 		else
 		{
 			if (flag==0) flag=1;
-			else printf(",");
-			printf("%d",i);
+			else my_printf(",");
+			my_printf("%d",i);
 		}
 		p++;
 	}

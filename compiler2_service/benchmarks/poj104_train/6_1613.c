@@ -5,14 +5,14 @@ int main_bench()
 {int m,n,k,sum=0,a;
 int i,j,q,b[100];
 int s[100][100];
-scanf("%d",&k);
+my_scanf("%d",&k);
 
 
 for(q=1;q<=k;q++)
-{scanf("%d%d",&m,&n);
+{my_scanf("%d%d",&m,&n);
 for(i=1;i<=m;i++)
 {for(j=1;j<=n;j++)
-{scanf("%d",&s[i][j]);}
+{my_scanf("%d",&s[i][j]);}
 }
 for(j=1;j<=n;j++)
 {sum+=s[1][j];
@@ -28,6 +28,6 @@ b[q]=sum;
 sum=0;
 }
 for(q=1;q<=k;q++)
-{printf("%d\n",b[q]);}
+{my_printf("%d\n",b[q]);}
 return 0;
 }

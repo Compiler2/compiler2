@@ -13,14 +13,14 @@ main_bench()
                                                              {
                                                                                 if(z+q==s+l&&z+l>s+q&&z+s<q)
                                                                                 {
-                                                                                                            printf("l ");
-                                                                                                            printf("%d\n",l*10);
-                                                                                                            printf("q ");
-                                                                                                            printf("%d\n",q*10);
-                                                                                                            printf("z ");
-                                                                                                            printf("%d\n",z*10);
-                                                                                                            printf("s ");
-                                                                                                            printf("%d\n",s*10);
+                                                                                                            my_printf("l ");
+                                                                                                            my_printf("%d\n",l*10);
+                                                                                                            my_printf("q ");
+                                                                                                            my_printf("%d\n",q*10);
+                                                                                                            my_printf("z ");
+                                                                                                            my_printf("%d\n",z*10);
+                                                                                                            my_printf("s ");
+                                                                                                            my_printf("%d\n",s*10);
                                                                                 }
                                                              }
                                           }

@@ -3,17 +3,17 @@
 int main_bench()
 {
 	double xgx,n;
-	scanf("%lf",&xgx);
+	my_scanf("%lf",&xgx);
 	int i,j,k,l=0,m=0;
 	char jy1[10086],jy2[10086];
-	scanf("%s",jy1);
-	scanf("%s",jy2);
+	my_scanf("%s",jy1);
+	my_scanf("%s",jy2);
 	j=strlen(jy1);
 	k=strlen(jy2);
 	jy1[j]='\0';
 	jy2[k]='\0';
 	if(j!=k){
-		printf("error\n");
+		my_printf("error\n");
 	}
 	else{
 		for(i=0;i<j;i++){
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 			if(l!=0){
-				printf("error\n");
+				my_printf("error\n");
 			}
 			else{
 				for(i=0;i<j;i++){
@@ -32,10 +32,10 @@ int main_bench()
 				}
 			n=1.0*m/j;
 			if(n>xgx){
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 			else{
-				printf("no\n");
+				my_printf("no\n");
 			}
 			}
 	}

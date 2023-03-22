@@ -25,11 +25,11 @@ int main_bench()
 	s4[i]='\0';
 	
 	if (strcmp(s3,s4)>0)
-		printf("%c\n",'>');
+		my_printf("%c\n",'>');
 	if (strcmp(s3,s4)==0)
-		printf("%c\n",'=');
+		my_printf("%c\n",'=');
 	if (strcmp(s3,s4)<0)
-		printf("%c\n",'<');
+		my_printf("%c\n",'<');
 	return 0;
 }
 

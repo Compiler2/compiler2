@@ -61,10 +61,10 @@ int main_bench()
 	for(i=0;i<k;i++)
 	{
 		if(i==0)
-		printf("%d",wlen[i]);
+		my_printf("%d",wlen[i]);
 		else
-		printf(",%d",wlen[i]);
+		my_printf(",%d",wlen[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

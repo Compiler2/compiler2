@@ -5,7 +5,7 @@
 main_bench()
 {
  int i, j, k, n, s, flag=9;
- scanf("%d", &n);
+ my_scanf("%d", &n);
  s=0;
  
  for (i=2; i<n-1; i++)
@@ -25,12 +25,12 @@ main_bench()
    }        
    if (flag==0)
    {   
-    printf("%d %d\n", i, i+2);
+    my_printf("%d %d\n", i, i+2);
     s++;
    } 
   }
  }
  if (s==0)
-      printf("empty\n");
+      my_printf("empty\n");
 
 }

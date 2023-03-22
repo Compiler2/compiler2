@@ -47,12 +47,12 @@ int main_bench()
     
     for(i=1;i<=6;i++)
     {
-    	scanf("%d",&a[i]);
+    	my_scanf("%d",&a[i]);
     }
-    printf("%d",reverse(a[1]));
+    my_printf("%d",reverse(a[1]));
     for(i=2;i<=6;i++)
     {
-    	printf("\n%d",reverse(a[i]));
+    	my_printf("\n%d",reverse(a[i]));
     }
     return 0;
 }

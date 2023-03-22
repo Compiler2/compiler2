@@ -4,7 +4,7 @@ int main_bench()
 {
     char q[1000],t[1000][10];
     int n,i,j,l,s[1000],f[1000],m,F;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     gets(q);
     gets(q);
     l=strlen(q);
@@ -55,14 +55,14 @@ int main_bench()
     }
     if(s[f[F]]<=1)
     {
-    printf("NO");
+    my_printf("NO");
     }
     else
     {
-    printf("%d\n",m);
+    my_printf("%d\n",m);
     for(i=0;i<=F;i++)
     {
-    printf("%s\n",t[f[i]]);
+    my_printf("%s\n",t[f[i]]);
     }
     }
     return 0;

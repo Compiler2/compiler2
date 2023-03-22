@@ -5,11 +5,11 @@ int time[100000];
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int k=0;
 	while(k<n)
 	{
-		scanf("%s",x);
+		my_scanf("%s",x);
 		int len=strlen(x);
 		strcpy(y,x);
 		char t;
@@ -47,7 +47,7 @@ int main_bench()
 			}
 		}
 		int ting=0;
-		if(biaoji==0)printf("no\n");
+		if(biaoji==0)my_printf("no\n");
 		else
 		{
 			for(i=0;i<len;i++)
@@ -56,7 +56,7 @@ int main_bench()
 				{
 					if(x[i]==range[j])
 					{
-						printf("%c\n",x[i]);
+						my_printf("%c\n",x[i]);
 						ting=1;
 						break;
 					}

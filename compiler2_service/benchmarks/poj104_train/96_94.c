@@ -5,15 +5,15 @@ int main_bench()
 {
     char a[100];
     int b[100];
-    scanf("%s",a);
+    my_scanf("%s",a);
     int l,t,i;
     l=strlen(a);
     for (i=0;i<l;i++)
          a[i]=a[i]-'0';
     if (l==1)
-       printf ("0\n%d",a[0]);
+       my_printf ("0\n%d",a[0]);
     else if   ( l==2&&a[0]==1&&a[1]<3)
-       printf("0\n%d%d",a[0],a[1]);
+       my_printf("0\n%d%d",a[0],a[1]);
     else{ 
     if (a[0]==1&&a[1]<3)
          {
@@ -25,8 +25,8 @@ int main_bench()
                 t=t%13;
                 }   
              for (i=0;i<l-2;i++)
-               printf("%d",b[i]);
-             printf("\n%d",t);      
+               my_printf("%d",b[i]);
+             my_printf("\n%d",t);      
          }
     else 
          {
@@ -38,8 +38,8 @@ int main_bench()
                  t=t%13;
              }
              for (i=0;i<l-1;i++)
-                printf("%d",b[i]);
-             printf("\n%d",t);   
+                my_printf("%d",b[i]);
+             my_printf("\n%d",t);   
          }
          }
 }

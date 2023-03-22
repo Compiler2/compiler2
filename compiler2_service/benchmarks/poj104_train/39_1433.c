@@ -16,11 +16,11 @@ int main_bench()
 	struct student stu[100];
 
 	int i,m=0,sum=0,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{	
-	    scanf("%s",stu[i].name);
-	 scanf("%d %d %c %c %d",&stu[i].qipin,&stu[i].banpin,&stu[i].ganbu,&stu[i].xixue,&stu[i].lunwen);
+	    my_scanf("%s",stu[i].name);
+	 my_scanf("%d %d %c %c %d",&stu[i].qipin,&stu[i].banpin,&stu[i].ganbu,&stu[i].xixue,&stu[i].lunwen);
 	 stu[i].jj=0;
 	if(stu[i].qipin>80&&stu[i].lunwen>0)
 		 stu[i].jj=stu[i].jj+8000;
@@ -38,7 +38,7 @@ int main_bench()
 	sum=sum+stu[i].jj;
 	m=max(stu,n);
     puts(stu[0].name);
-   printf("%d\n%d\n",m,sum);
+   my_printf("%d\n%d\n",m,sum);
 }
 int max(struct student s[100],int n)
 {

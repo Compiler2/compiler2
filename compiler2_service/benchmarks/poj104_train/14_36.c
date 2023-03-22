@@ -14,10 +14,10 @@ int n;
 int i, j, e;
 int x;
 struct student a[100000];
-scanf("%d", &n);
+my_scanf("%d", &n);
 for(i=0; i<n; i++)
 {
-scanf("%d %d %d", &a[i].num, &a[i].chn, &a[i].math);
+my_scanf("%d %d %d", &a[i].num, &a[i].chn, &a[i].math);
 a[i].sum=a[i].chn+a[i].math;
 }
 for(i=1; i<=3; i++)
@@ -37,7 +37,7 @@ for(i=1; i<=3; i++)
    }
 for(i=0; i<=2; i++)
 {
- printf("%d %d\n", a[i].num, a[i].sum);
+ my_printf("%d %d\n", a[i].num, a[i].sum);
 }
 return 0;
 }

@@ -5,10 +5,10 @@ int main_bench()
 	int n,a,b,c,d;
 	int z[1000];
 	int x[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<=n-1;a++)
 	{
-		scanf("%d",&z[a]);
+		my_scanf("%d",&z[a]);
 	}
 	a=0;
 	b=0;
@@ -36,8 +36,8 @@ int main_bench()
 	for(a=0;a<=b-1;a++)
 	{
 		if (a<=b-2)
-		printf("%d,",x[a]);
-		else printf("%d",x[a]);
+		my_printf("%d,",x[a]);
+		else my_printf("%d",x[a]);
 	}
 	return 0;
 }

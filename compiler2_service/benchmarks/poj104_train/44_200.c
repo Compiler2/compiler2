@@ -8,7 +8,7 @@ main_bench()
     int n;
     for(n=1;n<=6;n++)
     {
-        scanf("%d",&a);        
+        my_scanf("%d",&a);        
         if(a>=0)
         {
             a=qiufan(a);        
@@ -18,7 +18,7 @@ main_bench()
             a=0-a;
             a=0-qiufan(a);        
         }
-        printf("%d\n",a);    
+        my_printf("%d\n",a);    
     }
     return 0;    
 }

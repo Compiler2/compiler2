@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,m;
 	char cz[10000][32];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&cz[i]);
+		my_scanf("%s",&cz[i]);
         m=strlen(cz[i]);
 			if(cz[i][m-1]=='r'&&cz[i][m-2]=='e')
 				cz[i][m-2]=0;
@@ -23,7 +23,7 @@ int main_bench()
 	}
 	for(j=0;j<n;j++)
 	{
-		printf("%s\n",cz[j]);
+		my_printf("%s\n",cz[j]);
 	}
 	return 0;
 }

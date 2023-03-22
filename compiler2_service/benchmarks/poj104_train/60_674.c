@@ -4,7 +4,7 @@ main_bench()
 {
   int n,i,a,count=0,b,x=0,m=0;
   int s[10000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 
   for(i=3;i<=n;i++)
   {
@@ -34,11 +34,11 @@ main_bench()
    {
        if(s[b+1]==s[b]+2)
        {
-           printf("%d %d\n",s[b],s[b+1]);
+           my_printf("%d %d\n",s[b],s[b+1]);
            x=x+1;
        }
     }
    if(x==0)
-   printf("empty");
+   my_printf("empty");
 
 }

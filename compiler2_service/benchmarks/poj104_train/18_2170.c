@@ -35,11 +35,11 @@ int main_bench() {
     int i, j;
     int t;
     int sum;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (t = 0; t < n; t++) {
         for (i = 0; i < n; i++) {
             for (j = 0; j < n; j++) {
-                scanf("%d", &a[i][j]);
+                my_scanf("%d", &a[i][j]);
             }
         }
         sum = 0;
@@ -51,6 +51,6 @@ int main_bench() {
             sum += a[1][1];
             reduce();
         }
-        printf("%d\n", sum);
+        my_printf("%d\n", sum);
     }
 }

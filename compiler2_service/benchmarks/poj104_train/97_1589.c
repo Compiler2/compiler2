@@ -5,7 +5,7 @@ int main_bench()
 	int n,m,p;
 	int hun,fif,twenty,ten,five,one;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     hun=n/100;
 	n=n%100;
 
@@ -36,7 +36,7 @@ int main_bench()
 		one=p;
 	}
 
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",hun,fif,twenty,ten,five,one);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",hun,fif,twenty,ten,five,one);
 	 
 	return 0;
 }

@@ -11,7 +11,7 @@ int main_bench()
 
   unsigned long int year, month, day,b,c,d,e;
   unsigned long int f;
-  scanf("%d %d %d", &year, &month, &day);  
+  my_scanf("%d %d %d", &year, &month, &day);  
   int n = 0;  
   int i; 
   for (i = 1; i < month; i++) 
@@ -36,17 +36,17 @@ int main_bench()
    f=(e-1)*2+(year-e)*1+n+1;
  }
   if (f%7==1)
-  printf("Mon.\n");
+  my_printf("Mon.\n");
   if (f%7==2)
-  printf("Tue.\n");
+  my_printf("Tue.\n");
   if (f%7==3)
-  printf("Wed.\n");
+  my_printf("Wed.\n");
   if (f%7==4)
-  printf("Thu.\n");
+  my_printf("Thu.\n");
   if (f%7==5)
-  printf("Fri.\n");
+  my_printf("Fri.\n");
   if (f%7==6)
-  printf("Sat.\n");
+  my_printf("Sat.\n");
   if (f%7==0)
-  printf("Sun.\n");
+  my_printf("Sun.\n");
 }

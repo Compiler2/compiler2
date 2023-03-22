@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,m,j,k=1,l=0;
 	char c[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c);
+		my_scanf("%s",c);
 		m=strlen(c);
 		for(j=0;j<m;j++)
 		{
@@ -23,21 +23,21 @@ int main_bench()
 		{
 			if(l==0)
 			{
-				printf("yes");
+				my_printf("yes");
 				l=1;
 			}
 			else
-			printf("\nyes");
+			my_printf("\nyes");
 		}
 		else
 		{
 			if(l==0)
 			{
-				printf("no");
+				my_printf("no");
 				l=1;
 			}
 			else
-			printf("\nno");
+			my_printf("\nno");
 		}
 		k=1;
 	}

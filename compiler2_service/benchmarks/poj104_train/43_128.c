@@ -5,7 +5,7 @@ int ss(int a);
 main_bench()
 {
       int m;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       int a,b;
       int i,j;
       for(a=3;a<=m/2;a++)
@@ -16,7 +16,7 @@ main_bench()
               b=m-a;
               j=ss(b);
               if(j==0)
-              printf("%d %d\n",a,b);    
+              my_printf("%d %d\n",a,b);    
           }                  
       }
       return 0;

@@ -17,10 +17,10 @@ int main_bench()
 			if(len2==1)
 			{
 				for(m=0;m<i;m++)
-					printf("%c",st[m]);
-				printf("%s",re);
+					my_printf("%c",st[m]);
+				my_printf("%s",re);
 				for(m=m+1;m<len1;m++)
-					printf("%c",st[m]);
+					my_printf("%c",st[m]);
 				control=1;
 				break;
 			}
@@ -38,11 +38,11 @@ int main_bench()
 			if(j==len2-1)
 			{
 				for(m=0;m<i-j;m++)
-					printf("%c",st[m]);
-				printf("%s",re);
+					my_printf("%c",st[m]);
+				my_printf("%s",re);
 				for(m=m+len2;m<len1;m++)
-					printf("%c",st[m]);
-				printf("\n");
+					my_printf("%c",st[m]);
+				my_printf("\n");
 				control=1;
 				break;
 			}

@@ -45,7 +45,7 @@ struct stu *create(int n)
 			head=p1;
 		else p2->next=p1;
 		p2=p1;
-		scanf("%s %d %d %c %c %d",p2->name,&p2->final,&p2->rate,
+		my_scanf("%s %d %d %c %c %d",p2->name,&p2->final,&p2->rate,
 			&p2->leader,&p2->west,&p2->paper);
 		p2->money=prize(p2);
 		if(p2->money>max->money)
@@ -74,10 +74,10 @@ int main_bench()
 {
 	int n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p1=create(n);
-	printf("%s\n%d\n",max->name,max->money);
-	printf("%d",sum(p1));
+	my_printf("%s\n%d\n",max->name,max->money);
+	my_printf("%d",sum(p1));
 
 
 }

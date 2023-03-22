@@ -5,11 +5,11 @@ int main_bench(){
 	char str[5];
 	int i, count;
 
-	scanf( "%s", str );
+	my_scanf( "%s", str );
 
 	count = strlen(str);
 	for ( i = count - 1; i >= 0; i-- ){
-		printf( "%c", str[i] );
+		my_printf( "%c", str[i] );
 	}
 	
 	return 0;

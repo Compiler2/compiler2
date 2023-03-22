@@ -22,12 +22,12 @@ main_bench()
 	gets(a);
 	len=strlen(a);
 	b=checkend(a,checkbegin(a,i))-checkbegin(a,i);
-	printf("%d",b);
+	my_printf("%d",b);
 	i=checkend(a,checkbegin(a,i))+1;
 	while(i<=len)
 	{
 		b=checkend(a,checkbegin(a,i))-checkbegin(a,i);
-		printf(",%d",b);
+		my_printf(",%d",b);
 		i=checkend(a,checkbegin(a,i))+1;
 	}
 }

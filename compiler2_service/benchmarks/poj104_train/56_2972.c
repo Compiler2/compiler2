@@ -11,12 +11,12 @@ void print(int n)
                          int temp=p/10;
                          p=p-10*temp;
          }
-         printf("%d",p);
+         my_printf("%d",p);
          n=n/10;
          print(n);
       }
       else
-      printf("%d",n);
+      my_printf("%d",n);
 }
      
 
@@ -24,7 +24,7 @@ void print(int n)
 main_bench()
 {
       int number,i;
-      scanf("%d",&number);
+      my_scanf("%d",&number);
       print(number);
     }
 

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct book{
 		short int a;
 		char s[27];
@@ -12,7 +12,7 @@ int main_bench()
 	short int w[26]={0},p,t,m;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&b[i].a,b[i].s);
+		my_scanf("%d %s",&b[i].a,b[i].s);
 	}
 	for(i=0;i<n;i++)
 			for(j=0;b[i].s[j]!='\0';j++)
@@ -34,11 +34,11 @@ int main_bench()
 			
 			if(w[i]==q[0])
 				m=i;
-			printf("%c\n",(char)(m+65));
-			printf("%d\n",w[m]);
+			my_printf("%c\n",(char)(m+65));
+			my_printf("%d\n",w[m]);
 				for(i=0;i<n;i++)
 				   for(j=0;b[i].s[j]!='\0';j++)
 					   if(b[i].s[j]==m+65)
-						   printf("%d\n",b[i].a);
+						   my_printf("%d\n",b[i].a);
 					   return 0;
 }

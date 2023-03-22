@@ -21,15 +21,15 @@ k=0;
 		if(j==0&&s[j]==0){
 			continue;
 		}
-		printf("%d",s[j]);
+		my_printf("%d",s[j]);
 	}
 if(k<=12&&(i==1||i==0)){
-printf("0");
+my_printf("0");
 if(k==0){
 t=zxc[0]-'0';
 }
 }
-	printf("\n");
-	printf("%d",t);
+	my_printf("\n");
+	my_printf("%d",t);
 return 0;
 }

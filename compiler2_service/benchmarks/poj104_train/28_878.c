@@ -15,25 +15,25 @@ int main_bench()
 		}
 	}
 	if(sum==0)
-		printf("%d",n);
+		my_printf("%d",n);
 	if(sum==1)
 	{
 		if(a[0]!=0)
-			printf("%d,",a[0]);
+			my_printf("%d,",a[0]);
 		if(n-a[0]-1!=0)
-		   printf("%d",n-a[0]-1);
+		   my_printf("%d",n-a[0]-1);
 	}
 	if(sum>=2)
 	{
 		if(a[0]!=0)
-		   printf("%d,",a[0]);
+		   my_printf("%d,",a[0]);
 		for(i=1;i<=sum-1;i++)
 		{
 			if(a[i]-a[i-1]-1!=0)
-			   printf("%d,",a[i]-a[i-1]-1);
+			   my_printf("%d,",a[i]-a[i-1]-1);
 		}
 		if(n-a[sum-1]-1!=0)
-		   printf("%d",n-a[sum-1]-1);
+		   my_printf("%d",n-a[sum-1]-1);
 	}
 	return 0;
 }

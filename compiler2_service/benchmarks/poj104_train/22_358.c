@@ -7,7 +7,7 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&a[n]);
+		my_scanf("%d",&a[n]);
 		n++;
 	}
 	while((c=getchar())!='\n');
@@ -19,7 +19,7 @@ int main_bench()
 		}
 		else b=0;
 	}
-	if(n==1||b==0) printf("No\n");
+	if(n==1||b==0) my_printf("No\n");
 	else
 	{
 	    int m1=0,m2=1;
@@ -33,7 +33,7 @@ int main_bench()
 		   }
 		   else continue;
 		}
-		printf("%d\n",m1);
+		my_printf("%d\n",m1);
 	}
 	
 }

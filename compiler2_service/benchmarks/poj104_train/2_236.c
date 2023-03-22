@@ -10,11 +10,11 @@ int main_bench()
     int m,h,i,j,k,max,length;
 	int t[26];
 	char a;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
     struct book book[1000];
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&book[i].mark,book[i].name);
+		my_scanf("%d%s",&book[i].mark,book[i].name);
 	}
 	for(i=0;i<26;i++)
 	{
@@ -43,14 +43,14 @@ int main_bench()
 		}
 	}
 	a='A'+k;
-	printf("%c\n%d\n",a,t[k]);
+	my_printf("%c\n%d\n",a,t[k]);
 	for(i=0;i<m;i++)
 	{
 		length=strlen(book[i].name);
 		for(j=0;j<26;j++)
 		{
 			if('A'+k==book[i].name[j])
-				printf("%d\n",book[i].mark);
+				my_printf("%d\n",book[i].mark);
 		}
 	}
     return 0;

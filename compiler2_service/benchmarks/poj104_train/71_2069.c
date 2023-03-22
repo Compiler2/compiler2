@@ -11,13 +11,13 @@ int f(int a)
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i;
       for(i=0;i<n;i++)
       {
                       int days[12]={31,28,31,30,31,30,31,31,30,31,30,31};
                       int m;
-                      scanf("%d",&m);
+                      my_scanf("%d",&m);
                       if(f(m)==1)
                       days[1]=29;
                       
@@ -25,7 +25,7 @@ main_bench()
                       days[1]==28;
                       
                       int a,b;
-                      scanf("%d %d",&a,&b);
+                      my_scanf("%d %d",&a,&b);
                       int t;
                       if(a>b)
                       {
@@ -40,9 +40,9 @@ main_bench()
                                       s+=days[j-1];
                       }
                       if(s%7==0)
-                      printf("YES\n");
+                      my_printf("YES\n");
                       else
-                      printf("NO\n");
+                      my_printf("NO\n");
       }
       getchar();
       getchar();

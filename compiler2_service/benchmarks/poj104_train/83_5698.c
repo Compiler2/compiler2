@@ -4,14 +4,14 @@ int main_bench(){
 int n,a=0;
 double s=0;
 float GPA;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int x[n],y[n];
 for(int i=0;i<n;i++){
-    scanf("%d",&x[i]);
+    my_scanf("%d",&x[i]);
     a=a+x[i];
 }
 for(int i=0;i<n;i++){
-    scanf("%d",&y[i]);
+    my_scanf("%d",&y[i]);
 }
 for(int i=0;i<n;i++){
     if(y[i]>=90&&y[i]<=100){
@@ -35,7 +35,7 @@ for(int i=0;i<n;i++){
     }
 }
     GPA=s/a;
-    printf("%.2f",GPA);
+    my_printf("%.2f",GPA);
     return 0;
 }
 

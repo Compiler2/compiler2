@@ -14,7 +14,7 @@ int main_bench()
 	{
 		for(col=0;col<5;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	for(row=0;row<5;row++)
@@ -24,13 +24,13 @@ int main_bench()
 			if(sz[row][col]==max(sz[row][0],sz[row][1],sz[row][2],sz[row][3],sz[row][4]) && sz[row][col]==min(sz[0][col],sz[1][col],sz[2][col],sz[3][col],sz[4][col]))
 			{
 				refer=1;
-				printf("%d %d %d\n",row+1,col+1,sz[row][col]);
+				my_printf("%d %d %d\n",row+1,col+1,sz[row][col]);
 			}
 		}
 	}
 	if(refer==0)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 } 

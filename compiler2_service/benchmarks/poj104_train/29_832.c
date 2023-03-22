@@ -4,9 +4,9 @@ int main_bench(){
  int m,sz[1000];
  double sum,e,f,d,jieguo[1000];
  int a,b,c,g; 
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(a=0;a<m;a++){
-  scanf("%d",&sz[a]);                 
+  my_scanf("%d",&sz[a]);                 
  }
  for(b=0;b<m;b++){
   sum=0.0;
@@ -22,8 +22,8 @@ int main_bench(){
   jieguo[b]=sum;                 
  }
  for(g=0;g<m-1;g++){
-  printf("%.3lf\n",jieguo[g]);                   
+  my_printf("%.3lf\n",jieguo[g]);                   
  } 
- printf("%.3lf",jieguo[m-1]);
+ my_printf("%.3lf",jieguo[m-1]);
  return 0;  
 }

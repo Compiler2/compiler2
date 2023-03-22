@@ -5,7 +5,7 @@ main_bench()
    char s[100];
      int a[100],i,j,len,c;
      long b;
-    scanf("%s",s);
+    my_scanf("%s",s);
     b=0;
     len=strlen(s);
    for (i=0;i<len;i++)
@@ -61,9 +61,9 @@ main_bench()
 		      }
 		while (a[i]==0);
 		 for (j=i;j<len-1;j++)
-		   printf("%d",a[j]);
-		   printf("%d\n",a[len-1]);
-		   printf("%d\n",b);
+		   my_printf("%d",a[j]);
+		   my_printf("%d\n",a[len-1]);
+		   my_printf("%d\n",b);
 		   getchar();
 		   getchar(); 
 		   }

@@ -13,16 +13,16 @@ int main_bench()
 		yushu=m%13;
 		if(n>2&& i<2&& shang==0)
 		{
-			printf("");
+			my_printf("");
 		}
 		else if(n==2 && i==0)
 		{
-			printf("");
+			my_printf("");
 		}
 		else
 		{
-			printf("%d",shang);
+			my_printf("%d",shang);
 		}
 	}
-	printf("\n%d",yushu);
+	my_printf("\n%d",yushu);
 }

@@ -23,8 +23,8 @@ int main_bench()
             if(t==1)
 			{
 				for(k=i;k<=i+j;k++)
-                printf("%c",s[k]);
-                printf("\n");
+                my_printf("%c",s[k]);
+                my_printf("\n");
 			}
 		}
 	}

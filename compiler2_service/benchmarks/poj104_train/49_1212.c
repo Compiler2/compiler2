@@ -5,7 +5,7 @@ int main_bench()
 	char c;
 	char str[501];
 	int i,j,r,flag,t,k;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	for(i=0;str[i]!='\0';i++)
 	{
 		t=i+1;
@@ -26,9 +26,9 @@ int main_bench()
 			{
 				for(r=i;r<=i+j-1;r++)
 				{
-					printf("%c",str[r]);
+					my_printf("%c",str[r]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

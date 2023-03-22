@@ -4,11 +4,11 @@ int main_bench()
 {
 	char book[1000][30];
 	int n,i,j,k,r,len[1000],a[26][1000]={0},b[26]={0},max,s,c[26];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++)
 	{
 		gets(book[i]);
-		scanf("\n");
+		my_scanf("\n");
 	}
 	for(i=0;i<=n;i++)
 		for(j=0;book[i][j]!=' ';j++)
@@ -39,13 +39,13 @@ int main_bench()
 			s=i;
 		}
 	}
-	printf("%c\n",s+65);
-	printf("%d\n",max);
+	my_printf("%c\n",s+65);
+	my_printf("%d\n",max);
 	for(i=0;i<c[s];i++)
 	{
 		for(j=0;j<=len[a[s][i]];j++)
-			printf("%c",book[a[s][i]][j]);
-		printf("\n");
+			my_printf("%c",book[a[s][i]][j]);
+		my_printf("\n");
 	}
 }
 

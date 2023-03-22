@@ -16,11 +16,11 @@ return 0;
 int main_bench(){
 char s[50],w[50];
 int i;
-scanf("%s %s",s,w);
+my_scanf("%s %s",s,w);
 for(i=0;i<=strlen(w)-strlen(s);i++)
 {
    if(isright(s,w,i))
-     {printf("%d",i);break;}
+     {my_printf("%d",i);break;}
 }
 return 0;
 }

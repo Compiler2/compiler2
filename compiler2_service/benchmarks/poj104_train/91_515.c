@@ -18,7 +18,7 @@ int main_bench(){
                       }
     
     puts(w);
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
                                                             
 } 

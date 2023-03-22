@@ -15,14 +15,14 @@ w[i]=0;
 
 if(len==1)
  {
-          printf("0\n");
-          printf("%d",s[0]);
+          my_printf("0\n");
+          my_printf("%d",s[0]);
  }
  
 else if(len==2&&(10*s[0]+s[1])<13)
  {
-          printf("0\n");
-          printf("%d",s[0]*10+s[1]);
+          my_printf("0\n");
+          my_printf("%d",s[0]*10+s[1]);
  }
 
 else
@@ -61,7 +61,7 @@ else
 for(i=0;i<k;i++) 
 if(w[i]!=0){x=i;break;}
 for(i=x;i<k;i++)
-printf("%d",w[i]);
-printf("\n%d",s[len-1]);
+my_printf("%d",w[i]);
+my_printf("\n%d",s[len-1]);
 }                    
 } 

@@ -11,10 +11,10 @@ int main_bench()
 	} p[100];
 	struct ren t;
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",p[i].id,&p[i].age);
+		my_scanf("%s %d",p[i].id,&p[i].age);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -29,7 +29,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++)
-	printf("%s\n",p[i].id);
+	my_printf("%s\n",p[i].id);
 	
 	return 0;
 } 

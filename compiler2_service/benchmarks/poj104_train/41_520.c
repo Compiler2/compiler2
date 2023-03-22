@@ -54,7 +54,7 @@ main_bench()
                                             if(a[3]!=1)
                                             break;
                                         }
-                                        printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
+                                        my_printf("%d %d %d %d %d",a[0],a[1],a[2],a[3],a[4]);
                                     }
                                 }
                             }

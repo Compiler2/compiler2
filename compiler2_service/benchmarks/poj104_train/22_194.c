@@ -32,12 +32,12 @@ int main_bench()
 		
 		for(j=1;j<total;j++)
 		if(b[j]<b[0])
-		{printf("%d\n",b[j]);
+		{my_printf("%d\n",b[j]);
 			break;}
 			
 		
 		if(b[0]==b[total-1])
-		printf("No");
+		my_printf("No");
 		
 	}
 

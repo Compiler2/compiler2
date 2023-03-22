@@ -4,12 +4,12 @@ main_bench()
 {
    int N,i,A,B;
    int a[1000000],b[1000000];
-   scanf("%d",&N);                     
+   my_scanf("%d",&N);                     
    int c[N];
    for(i=0;i<N;i++)
    {c[i]=N;}
    i=0;
-   while(scanf("%d %d",&A,&B)&&((A*A+B*B)!=0)) 
+   while(my_scanf("%d %d",&A,&B)&&((A*A+B*B)!=0)) 
    {  
       c[A]=0;             
       a[i]=A;
@@ -24,12 +24,12 @@ main_bench()
     for(i=0;i<N;i++)
     {
     if(c[i]==1)
-    printf("%d",i);
+    my_printf("%d",i);
      else
      k++;            
         }              
     if(k==N)
-    printf("NOT FOUND") ;
+    my_printf("NOT FOUND") ;
     
     
     getchar();      

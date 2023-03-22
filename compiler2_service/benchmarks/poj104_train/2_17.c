@@ -11,9 +11,9 @@ int main_bench()
 		int num;
 		char a[100];
 	}book[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	   scanf("%d %s",&book[i].num,book[i].a);
+	   my_scanf("%d %s",&book[i].num,book[i].a);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;book[i].a[j];j++)
@@ -34,8 +34,8 @@ int main_bench()
 		 }
 	}
 	c1=maxzm+65;
-	printf("%c\n",c1);
-	printf("%d\n",maxbk);
+	my_printf("%c\n",c1);
+	my_printf("%d\n",maxbk);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;book[i].a[j];j++)
@@ -50,7 +50,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<w;i++)
-		printf("%d\n",lm[i]);
+		my_printf("%d\n",lm[i]);
 
 		
 		

@@ -3,8 +3,8 @@
  int main_bench()
  {
      int a,b,c,d,e,f,x=0,i,j;
-     scanf("%d %d %d",&a,&b,&c);
-     scanf("%d %d %d",&d,&e,&f);
+     my_scanf("%d %d %d",&a,&b,&c);
+     my_scanf("%d %d %d",&d,&e,&f);
      if(a==d){
               if(b==e){
                        x=f-c;}
@@ -138,7 +138,7 @@
              }
             
              }
-     printf("%d",x);
+     my_printf("%d",x);
      return 0;
      }          
                              

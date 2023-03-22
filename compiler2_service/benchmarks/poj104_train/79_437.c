@@ -7,7 +7,7 @@ int main_bench()
 
 		
 
-	scanf("%d%d", &m, &n);
+	my_scanf("%d%d", &m, &n);
 	while(m!=0 && n!= 0)
 	{
 		
@@ -41,13 +41,13 @@ int main_bench()
 				r[time] = i;
 		}
 
-		scanf("%d%d", &m, &n);
+		my_scanf("%d%d", &m, &n);
 		time ++;
 	}
 
 	for(i=0; i<time; i++)
 	{
-		printf("%d\n", r[i]+1);
+		my_printf("%d\n", r[i]+1);
 	}
 	
 	return 0;

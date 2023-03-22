@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(;n>=0;n--){
 		switch(n){
 		case 7:
@@ -22,7 +22,7 @@ int main_bench()
 			s=s+n*n;}
 
 
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,m,k,leap=0,x=0;
 	int a[30000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<=4)
-	{	printf("empty\n");
+	{	my_printf("empty\n");
 	    leap=1;
 	}
 	k=0;
@@ -28,14 +28,14 @@ int main_bench()
 	for(i=0;i<=k;i++)
 	{
 		if(a[i]==a[i+1]-2)
-		{	printf("%d %d\n",a[i],a[i+1]);
+		{	my_printf("%d %d\n",a[i],a[i+1]);
 	     	x=1;
 		}
 		    
 	}
 	}
 	if(x==0&&leap==0)
-		printf("empty\n");
+		my_printf("empty\n");
 	return 0;
 }
 

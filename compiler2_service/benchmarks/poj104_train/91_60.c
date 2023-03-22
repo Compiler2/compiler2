@@ -20,7 +20,7 @@ int main_bench()
 		output[count]=*p1+input[0];
 
 	for(i=0;i<=count;i++)
-		printf("%c",output[i]);
+		my_printf("%c",output[i]);
 	
 	return 0;
 }

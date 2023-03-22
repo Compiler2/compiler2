@@ -5,10 +5,10 @@ int main_bench()
 	int b,c,n,i;
 	char d[200],e[232],f[232];
 	int max=0,min=100;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",d);
+		my_scanf("%s",d);
 		b=strlen(d);
 		if(b>max)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 			strcpy(f,d);
 		}
 	}
-	printf("%s\n",e);
-	printf("%s\n",f);
+	my_printf("%s\n",e);
+	my_printf("%s\n",f);
 	return 0;
 }

@@ -3,9 +3,9 @@
 main_bench()
 {
       char a[260],b[260],c[260];
-      scanf("%s",a);
-      scanf("%s",b);
-      scanf("%s",c);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
+      my_scanf("%s",c);
       for(int i=0;a[i]!='\0';i++)
       {
               int k=0;

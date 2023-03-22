@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,s,h,l,n,a,e;
 	int t[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=0;
 
 	for(i=0;i<100;i++)
@@ -13,7 +13,7 @@ int main_bench()
 
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d",&h,&l);
+		my_scanf("%d %d",&h,&l);
 		if((h<=140)&&(h>=90)&&(l<=90)&&(l>=60))
 		{
 			s++;
@@ -36,6 +36,6 @@ int main_bench()
 		}
 	}
 
-	printf("%d\n",t[99]);
+	my_printf("%d\n",t[99]);
 	return 0;
 }

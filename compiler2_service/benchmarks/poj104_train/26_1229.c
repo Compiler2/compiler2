@@ -14,5 +14,5 @@ for(i=0;zf[i]!='\0';i++){
     jg[k]=zf[i];
     k++;    
 }jg[k]='\0';
-printf("%s",jg);
+my_printf("%s",jg);
 return 0;}

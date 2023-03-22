@@ -7,7 +7,7 @@ int main_bench()
 	char c;
 	for(n=0;1;n++)
 	{
-		scanf("%d%c",&a[n],&c);
+		my_scanf("%d%c",&a[n],&c);
 		if(a[n]>max)
 		{
 			secondmax=max;
@@ -21,8 +21,8 @@ int main_bench()
 			break;						
 	}
 	if(secondmax==0)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",secondmax);
+		my_printf("%d\n",secondmax);
 	return 0;
 }

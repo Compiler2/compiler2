@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,c[300],k;
     double a=0,b[300];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-    scanf("%d",&c[i]);
+    my_scanf("%d",&c[i]);
     a+=c[i];
  }
  a/=n;
@@ -22,10 +22,10 @@ int main_bench()
   }
  }
  if(b[n-1]==0-b[0])
-  printf("%.0lf,%.0lf",b[0]+a,b[n-1]+a);
+  my_printf("%.0lf,%.0lf",b[0]+a,b[n-1]+a);
  else if(b[n-1]<0-b[0])
-  printf("%.0lf",b[0]+a);
+  my_printf("%.0lf",b[0]+a);
 else if(b[n-1]>0-b[0])
-  printf("%.0lf",b[n-1]+a);
+  my_printf("%.0lf",b[n-1]+a);
  return 0;
 }

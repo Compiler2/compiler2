@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[55],b[55],*p=a,*q=b;
 int z;
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 
 int l,i;
 for(i=0;i<strlen(b);i++)
@@ -21,6 +21,6 @@ if(*p==b[i])
 }
 else continue;
 if(z==0) continue;
-else {printf("%d\n",l);goto loop;}
+else {my_printf("%d\n",l);goto loop;}
 }
 loop:;}

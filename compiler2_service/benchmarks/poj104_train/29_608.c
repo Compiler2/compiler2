@@ -2,14 +2,14 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);int m;float a[100];int b[100][100];int c[100][100];
+my_scanf("%d",&n);int m;float a[100];int b[100][100];int c[100][100];
 
 
 for(int d=0;d<n;d++)
 {a[d]=3.5000000;}
 
 for(int i=0;i<n;i++){
-scanf("%d",&m);
+my_scanf("%d",&m);
   for(int j=0;j<m;j++)
   {
 	  if(j==0){b[i][j]=2;}
@@ -24,7 +24,7 @@ scanf("%d",&m);
 
 for(int o=0;o<n;o++)
 {
-printf("%.3f\n",a[o]);
+my_printf("%.3f\n",a[o]);
 
 }
 

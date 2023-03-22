@@ -17,8 +17,8 @@ int main_bench()
    }
 for(int j=0;j<=strlen(v)-1;j++)
 {   
- printf("%c",c[j]);
+ my_printf("%c",c[j]);
 } 
-int u;scanf("%d",&u);    
+int u;my_scanf("%d",&u);    
    return 0;          
 }

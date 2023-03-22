@@ -5,9 +5,9 @@ int main_bench()
 {
 int p,i,n,l,a[10000],k;
 char q[10000][20];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%s",q[i]);
+{my_scanf("%s",q[i]);
 a[i]=1;}
 for(i=0;i<n;i++)
 {k=strlen(q[i]);
@@ -31,9 +31,9 @@ break;}
 }
 for(i=0;i<n;i++)
 {if(a[i]==1)
-{printf("yes\n");}
+{my_printf("yes\n");}
 else if(a[i]==0)
-{printf("no\n");}
+{my_printf("no\n");}
 }
 
 

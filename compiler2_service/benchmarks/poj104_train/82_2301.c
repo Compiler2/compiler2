@@ -3,12 +3,12 @@
 int main_bench()
 {	
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i=0,hour=0,j=0,max=0;
 	int a[100]={0},b[100]={0},c[100]={0};
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 		hour=0;
 
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }
 

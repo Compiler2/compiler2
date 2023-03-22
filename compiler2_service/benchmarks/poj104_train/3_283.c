@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,k;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	int i,j,p=0,q;
     int num[1000];
 	for(i=0;i<n;i++)
 	{
          int num1;
-         scanf("%d",&num1);
+         my_scanf("%d",&num1);
          num[i]=num1;
 	}
     for(q=0;q<n;q++)
@@ -27,9 +27,9 @@ int main_bench()
 
 	if(p==0)
 	{
-		printf("no");
+		my_printf("no");
 	}else{
-	printf("yes");
+	my_printf("yes");
 		}
 return 0;
 }

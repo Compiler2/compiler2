@@ -11,8 +11,8 @@ int main_bench()
 
 
 
-    scanf("%s",s);
-    scanf("%s",w);
+    my_scanf("%s",s);
+    my_scanf("%s",w);
 
 	k=strlen(w);
 	t=strlen(s);
@@ -20,7 +20,7 @@ int main_bench()
 
 	p=strstr(w,s);
 
-	printf("%d",p-w);
+	my_printf("%d",p-w);
 
 
 }

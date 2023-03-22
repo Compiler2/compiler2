@@ -31,9 +31,9 @@ main_bench()
                           }
           }
           if(x==0)
-          printf("0\n");
+          my_printf("0\n");
           else
-          printf("1\n");
+          my_printf("1\n");
       }
       getchar();
       getchar();

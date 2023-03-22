@@ -5,10 +5,10 @@ int main_bench(){
 	int a[50000];
 	int b[50000];
 	int j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (i<n)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 		i++;
 	}
 		
@@ -45,10 +45,10 @@ int main_bench(){
 	}
 	if(j==0)
 	{
-		printf("%d %d",a[n-1],b[n-1]);
+		my_printf("%d %d",a[n-1],b[n-1]);
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

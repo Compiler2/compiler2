@@ -36,18 +36,18 @@ int main_bench()
 
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++)
-			scanf("%d",*(a+i)+j);
+			my_scanf("%d",*(a+i)+j);
 	}
 
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
 			if(row_max(a,i,j)&&col_min(a,i,j)){
 				flag=1;
-				printf("%d %d %d\n",i+1,j+1,*(*(a+i)+j));
+				my_printf("%d %d %d\n",i+1,j+1,*(*(a+i)+j));
 			}
 		}
 	}
 
 	if(!flag)
-		printf("not found\n");
+		my_printf("not found\n");
 }

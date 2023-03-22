@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,k,m,n,*p,l1,l2,c=0;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
-	if(l2!=l1)printf("NO");
+	if(l2!=l1)my_printf("NO");
 	else 
 		{
 			for(i=0;i<l1;i++)
@@ -18,7 +18,7 @@ int main_bench()
 				b[j]='\0';
 				break;
 			}
-	if(c==l1)printf("YES");
-	else printf("NO");
+	if(c==l1)my_printf("YES");
+	else my_printf("NO");
 	}
 }

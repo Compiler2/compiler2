@@ -3,12 +3,12 @@
 int main_bench(){
 	char a[260],b[260];
 	int n,i,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(t=0;t<260;t++){
 		b[t]='\0';
 	}
 	for(i=0;i<n;i++){
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(t=0;a[t]!='\0';t++){
 			if(a[t]=='A'){
 				b[t]='T';
@@ -24,7 +24,7 @@ int main_bench(){
 			}
 		}
 		b[t]='\0';
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 		return 0;
 }

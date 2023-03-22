@@ -38,9 +38,9 @@ int main_bench()
 	{
 		if(i!=0)
 		{
-			printf(",");
+			my_printf(",");
 		}
-		printf("%d",sz[i]);
+		my_printf("%d",sz[i]);
 	}
 
 

@@ -5,9 +5,9 @@ int i;
 char d[3][501];
 double n,m,a,b,c,x;
 x=0;
-scanf("%lf",&a);
-scanf("%s",&d[1]);
-scanf("%s",&d[2]);
+my_scanf("%lf",&a);
+my_scanf("%s",&d[1]);
+my_scanf("%s",&d[2]);
 n=strlen(d[1]);
 m=strlen(d[2]);
 for(i=0;i<n;i++){
@@ -16,7 +16,7 @@ for(i=0;i<n;i++){
 	}
 }
 if(m!=n||x>0){
-	printf("error");
+	my_printf("error");
 }else{
 for(i=0;i<n;i++){
 	if(d[1][i]==d[2][i]){
@@ -25,9 +25,9 @@ for(i=0;i<n;i++){
 }
 c=b/n;
 if(c>a){
-	printf("yes");
+	my_printf("yes");
 }else{
-	printf("no");
+	my_printf("no");
 }
 }
 return 0;

@@ -25,9 +25,9 @@ int main_bench()
 	word[j][k]='\0';
 	for(i=0;i<j;i++)
 	{
-		printf("%s ",word[i]);
+		my_printf("%s ",word[i]);
 	}
-	printf("%s\n",word[j]);
+	my_printf("%s\n",word[j]);
 	return 0;
 }
 

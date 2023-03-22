@@ -2,10 +2,10 @@
 
 int main_bench()
 {int n=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i=0,as[100];
     while(i<n)
-	{scanf("%d",&as[i]);
+	{my_scanf("%d",&as[i]);
 	i++;
 	}
 int zx[100];
@@ -18,8 +18,8 @@ while(i<n)
 i=n-1;
 while(i>0)
 {
-	printf("%d ",zx[i]);
+	my_printf("%d ",zx[i]);
 		i--;
 }
-printf("%d",zx[0]);
+my_printf("%d",zx[0]);
 }

@@ -15,7 +15,7 @@ int main_bench()
 	sum++;
 	for(q=b;q<b+sum;q++)
 	{
-		printf("%c",*q);
+		my_printf("%c",*q);
 	}
    return 0;
 }

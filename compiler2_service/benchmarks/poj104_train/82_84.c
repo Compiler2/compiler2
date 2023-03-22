@@ -3,14 +3,14 @@
 int main_bench(){
 
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 int sz[100][2];
 int panduan[100];
 int i,j;
 for(i=0;i<n;i++){
 	for(j=0;j<2;j++){
-	scanf("%d",&(sz[i][j]));
+	my_scanf("%d",&(sz[i][j]));
 	
 	}
 }
@@ -46,7 +46,7 @@ for(k=1;k<100;k++){
 	}
 }	
 	
-printf("%d",cx[0]);
+my_printf("%d",cx[0]);
 
 return 0;
 }

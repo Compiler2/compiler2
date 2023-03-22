@@ -3,7 +3,7 @@
 main_bench()
 {
       int i,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[n];
       int b[20];
       b[0]=1;
@@ -12,8 +12,8 @@ main_bench()
       b[i]=b[i-1]+b[i-2];
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&a[i]);
-                      printf("%d\n",b[a[i]-1]);
+                      my_scanf("%d",&a[i]);
+                      my_printf("%d\n",b[a[i]-1]);
       }
 
 }

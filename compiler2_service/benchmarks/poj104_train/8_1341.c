@@ -8,18 +8,18 @@ void oh( )
 
    {
     int i;  
-    scanf("%d %d",&x,&y);
+    my_scanf("%d %d",&x,&y);
   
         
     for(i=0;i<x-1;i++)
-    scanf("%d ",&a[i]);
+    my_scanf("%d ",&a[i]);
     
-    scanf("%d\n",&a[x-1]);
+    my_scanf("%d\n",&a[x-1]);
     
     for(i=0;i<y-1;i++)
-    scanf("%d ",&b[i]);
+    my_scanf("%d ",&b[i]);
     
-    scanf("%d\n",&b[y-1]);    
+    my_scanf("%d\n",&b[y-1]);    
     
   }
 
@@ -73,10 +73,10 @@ void ba( )
   for(i=0;i<x+y-1;i++)
   {
   
-   printf("%d ",c[i]);
+   my_printf("%d ",c[i]);
    }
    
-   printf("%d",c[x+y-1]);
+   my_printf("%d",c[x+y-1]);
  
    
 }

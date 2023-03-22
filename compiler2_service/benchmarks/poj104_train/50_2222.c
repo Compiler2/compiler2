@@ -19,7 +19,7 @@ main_bench()
    b[10]=b[9]+31;
    b[11]=b[10]+30;
    b[12]=b[11]+31;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    
    for(i=0;i<12;i++)
    {
@@ -29,7 +29,7 @@ main_bench()
    
    for(i=0;i<12;i++)
    {if(a[i]==5)
-   printf("%d\n",i+1);
+   my_printf("%d\n",i+1);
    }
    
 }

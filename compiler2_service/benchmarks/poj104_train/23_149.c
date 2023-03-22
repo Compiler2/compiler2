@@ -12,6 +12,6 @@ int main_bench()
 		else {k++;j=i+1;}
 	}
 	for(k-1;k>0;k--)
-		printf("%s ",a[k]);
-	printf("%s",a[0]);
+		my_printf("%s ",a[k]);
+	my_printf("%s",a[0]);
 }

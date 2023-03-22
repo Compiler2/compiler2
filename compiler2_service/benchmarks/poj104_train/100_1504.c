@@ -5,7 +5,7 @@ int main_bench()
     char ch[350];
 	int i,j,n;
 	int a[123];
-	scanf("%s",ch);
+	my_scanf("%s",ch);
 	n=strlen(ch);
     
 	for(i=0;i<123;i++)
@@ -18,17 +18,17 @@ int main_bench()
     for(i=65;i<=90;i++)
 		if(a[i]>0)
 		{
-		  printf("%c=%d\n",i,a[i]);
+		  my_printf("%c=%d\n",i,a[i]);
 		  j=0;
 		}
     for(i=97;i<=122;i++)
 		if(a[i]>0)
 		{
-		  printf("%c=%d\n",i,a[i]);
+		  my_printf("%c=%d\n",i,a[i]);
 		  j=0;
 		}
     if(j)
-		printf("No");
+		my_printf("No");
 		
 	return 0;
 }

@@ -4,47 +4,47 @@ int main_bench()
 {
 	int n,a,b,i,c,d,e,f;
 	double p,q,o;
-	scanf("%d",&n);
-	scanf("%d%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&a,&b);
 	p=(double)b/a;
 	for(i=0;i<n-2;i++)
 	{
-		scanf("%d%d",&c,&d);
+		my_scanf("%d%d",&c,&d);
 		q=(double)d/c;
 		if(p-q>0.05)
 		{
-			printf("worse");
-                        printf("\n");
+			my_printf("worse");
+                        my_printf("\n");
 		}
 		else
 		{
 			if(q-p>0.05)
 			{
-				printf("better");
-                                printf("\n");
+				my_printf("better");
+                                my_printf("\n");
 			}
 			else
 			{
-				printf("same");
-                                printf("\n");
+				my_printf("same");
+                                my_printf("\n");
 			}
 		}
 	}
-        scanf("%d%d",&e,&f);
+        my_scanf("%d%d",&e,&f);
         o=(double)f/e;
         if(p-o>0.05)
         {
-		printf("worse");
+		my_printf("worse");
 	}
 	else
 	{
 		if(o-p>0.05)
 		{
-			printf("better");
+			my_printf("better");
 		}
 		else
 		{
-			printf("same");
+			my_printf("same");
 		}
 	}
 	return 0;

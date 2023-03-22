@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[100],n,m,e,b,c,d;
 	double p,q,k,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	e=0;
 	b=0;
 	c=0;
@@ -15,7 +15,7 @@ int main_bench()
 	i=0;
 	for(m=1;m<=n;m++)
 	{
-		scanf("%d",&a[m]);
+		my_scanf("%d",&a[m]);
 		{
 			if(1<=a[m]&&a[m]<=18)
 				e++;
@@ -40,8 +40,8 @@ int main_bench()
 		}
 					i=100*(double)d/n;
 	}
-	printf("1-18: %.2f%%\n",p);
-	printf("19-35: %.2f%%\n",q);
-	printf("36-60: %.2f%%\n",k);
-	printf("60??: %.2f%%\n",i);
+	my_printf("1-18: %.2f%%\n",p);
+	my_printf("19-35: %.2f%%\n",q);
+	my_printf("36-60: %.2f%%\n",k);
+	my_printf("60??: %.2f%%\n",i);
 }

@@ -27,21 +27,21 @@ int main_bench()
 {
 	int n,i,*pp[2],sumPOINT=0;
 	double sumGPA=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	pp[0]=(int*)malloc(sizeof(int)*n);
 	pp[1]=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",pp[0]+i);
+		my_scanf("%d",pp[0]+i);
 		sumPOINT+=*(pp[0]+i);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",pp[1]+i);
+		my_scanf("%d",pp[1]+i);
 		sumGPA+=judge(*(pp[1]+i))**(pp[0]+i);
 	}
 	free(pp[0]);
 	free(pp[1]);
-	printf("%.2f\n",sumGPA/sumPOINT);
+	my_printf("%.2f\n",sumGPA/sumPOINT);
 	return 0;
 }

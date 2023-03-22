@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,e,sum,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n%10;
 	b=(n%100-a)/10;
 	c=(n%1000-n%100)/100;
@@ -20,7 +20,7 @@ int main_bench()
 		m=sum/10;
 	else
 		m=sum;
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	return 0;
 }
 

@@ -6,9 +6,9 @@ int main_bench(){
 	int i;
 	int sections[50001][2];
 	int mark[50001];
-	scanf("%d" , &n);
+	my_scanf("%d" , &n);
 	for(i = 0; i < n; i++){
-		scanf("%d %d" , &sections[i][0] , &sections[i][1]);
+		my_scanf("%d %d" , &sections[i][0] , &sections[i][1]);
 		mark[i] = 0;
 	}
 	int left;
@@ -58,10 +58,10 @@ int main_bench(){
 		temp = count;
 	}
 	if(flag == 1){
-		printf("no");
+		my_printf("no");
 	}
 	else{
-		printf("%d %d" , left , right);
+		my_printf("%d %d" , left , right);
 	}
 	return 0;
 }

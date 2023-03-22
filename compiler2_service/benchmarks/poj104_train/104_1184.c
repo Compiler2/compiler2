@@ -7,9 +7,9 @@ int main_bench()
 	{
 		f[k]=0;
 	}
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(a==1||b==1)
-			printf("1");
+			my_printf("1");
 		else{
 		if(a!=b)
 		{
@@ -37,9 +37,9 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",f[0]);
+	my_printf("%d",f[0]);
 		}
-		else printf("%d",a);
+		else my_printf("%d",a);
 		}
 	
 

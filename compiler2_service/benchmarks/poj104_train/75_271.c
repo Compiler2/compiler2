@@ -6,17 +6,17 @@ int main_bench()
 	char b=',';
 	for(n=0;b==',';n++)
 	{
-		scanf("%d",&a[n]);
+		my_scanf("%d",&a[n]);
 		b=getchar();
 	}
-	scanf("\n");
+	my_scanf("\n");
 	b=',';
 	for(n=0;b==',';n++)
 	{
-		scanf("%d",&c[n]);
+		my_scanf("%d",&c[n]);
 		b=getchar();
 	}
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(m=0;m<1000;m++)
 	{
 		t[m]=0;
@@ -27,6 +27,6 @@ int main_bench()
 	{
 		if(s<t[m])s=t[m];
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

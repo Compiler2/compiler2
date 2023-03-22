@@ -4,9 +4,9 @@ int main_bench(){
 double sum[100];
 int a=1,b=2,c,d;
 int n,i,j[100],k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d",&j[i]);
+my_scanf("%d",&j[i]);
 }
 for(i=0;i<n;i++){
 	sum[i]=0;
@@ -19,7 +19,7 @@ for(i=0;i<n;i++){
 	a=c;
 	b=d;
 	}   
-	printf("%.3lf\n",sum[i]/100000);
+	my_printf("%.3lf\n",sum[i]/100000);
 }
 
 

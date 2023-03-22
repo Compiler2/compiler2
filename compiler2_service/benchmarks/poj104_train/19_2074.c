@@ -13,11 +13,11 @@ int main_bench()
       same=0;
      }
      if((same==1&&str[i-1]==' ')||(same==1&&i==0))
-     { printf("%s",repl);
+     { my_printf("%s",repl);
        i+=strlen(sub)-1;
      }
      else
-     printf("%c",str[i]);
+     my_printf("%c",str[i]);
 
    }
    return 0;

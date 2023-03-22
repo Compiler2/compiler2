@@ -4,8 +4,8 @@ int main_bench()
 {
     char a[501]={0};
     int n;
-	scanf("%d", &n);
-	scanf("%s", a);
+	my_scanf("%d", &n);
+	my_scanf("%s", a);
 	int num=0,i=0;
 	char b[500][5]={0},c[5];
     num=strlen(a);
@@ -47,15 +47,15 @@ int main_bench()
 	}
 	if(p==0)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-    printf("%d\n", p+1);
+    my_printf("%d\n", p+1);
 	for(q=0;q<i;q++)
 	{
 		if(sum[q]==p)
 		{
-	    printf("%s\n", b[q]);
+	    my_printf("%s\n", b[q]);
 		}
 	}
 }

@@ -25,9 +25,9 @@ int main_bench()
 	}
 	switch(a)
 	{
-	case 0: printf("=\n");break;
-	case 1: printf(">\n");break;
-	case 2: printf("<\n");break;
+	case 0: my_printf("=\n");break;
+	case 1: my_printf(">\n");break;
+	case 2: my_printf("<\n");break;
 	}
 	return 0;
 }

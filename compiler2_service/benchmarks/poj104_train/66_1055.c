@@ -4,28 +4,28 @@ int isrunnian(int m);
 int dijitian(int a,int b,int c);
 int main_bench(){
 	int x,y,z,k,p=0;
-	scanf("%d%d%d",&x,&y,&z);
+	my_scanf("%d%d%d",&x,&y,&z);
 	p=x+dijitian(x,y,z)+(x-1)/4-(x-1)/100+(x-1)/400-1;
 	if(p%7==1){
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	if(p%7==2){
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	if(p%7==3){
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	if(p%7==4){
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	if(p%7==5){
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	if(p%7==6){
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	if(p%7==0){
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

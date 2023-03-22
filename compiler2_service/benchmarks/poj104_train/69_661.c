@@ -6,7 +6,7 @@ int main_bench()
 	int a[201],b[201],sum[201];
 	int lena,lenb,len,jinwei=0;
 	int i,j;
-	scanf("%s %s",as,bs);
+	my_scanf("%s %s",as,bs);
 	lena=strlen(as);
 	lenb=strlen(bs);
 	len=lena>lenb?lena:lenb;
@@ -26,11 +26,11 @@ int main_bench()
 		if(sum[i]!=0)
 		{
 			for(j=i;j<=200;j++)
-				printf("%d",sum[j]);
+				my_printf("%d",sum[j]);
                        break;
 		}
 else if(i==200)
-printf("0\n");	
+my_printf("0\n");	
 	}
 }
 

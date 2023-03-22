@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,l,max[5],min[5],sz[5][5],sum=0,big[5];
 	for(i=0;i<=4;i++){
-		scanf("%d %d %d %d %d",&sz[i][0],&sz[i][1],&sz[i][2],&sz[i][3],&sz[i][4]);
+		my_scanf("%d %d %d %d %d",&sz[i][0],&sz[i][1],&sz[i][2],&sz[i][3],&sz[i][4]);
 	}
 	for(i=0;i<5;i++){
 		max[i]=sz[i][0];
@@ -29,10 +29,10 @@ int main_bench()
 	}
 	for(i=0;i<5;i++){
 		if(max[i]==min[big[i]]){
-			printf("%d %d %d\n",i+1,big[i]+1,max[i]);
+			my_printf("%d %d %d\n",i+1,big[i]+1,max[i]);
 				sum++;
 		}if(i==4&&sum==0){
-			printf("not found");
+			my_printf("not found");
 		}
 	}
 	return 0;

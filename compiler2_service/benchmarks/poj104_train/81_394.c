@@ -5,8 +5,8 @@ int main_bench()
 	int ch(int a[5][5],int n,int m);
     int b[5][5],x,y,i,j,t;
     for(i=0;i<5;i++)
-		for(j=0;j<5;j++) scanf("%d",&b[i][j]);
-	scanf("%d %d",&x,&y);
+		for(j=0;j<5;j++) my_scanf("%d",&b[i][j]);
+	my_scanf("%d %d",&x,&y);
 	if(ch(b,x,y))
 	{
 		for(j=0;j<5;j++)
@@ -17,11 +17,11 @@ int main_bench()
 	  }
 		for(i=0;i<5;i++)
 		{
-			for(j=0;j<4;j++) printf("%d ",b[i][j]);
-			printf("%d\n",b[i][4]);
+			for(j=0;j<4;j++) my_printf("%d ",b[i][j]);
+			my_printf("%d\n",b[i][4]);
 		}
 	}
-	else printf("error");
+	else my_printf("error");
 
 }
 int ch(int a[5][5],int n,int m)

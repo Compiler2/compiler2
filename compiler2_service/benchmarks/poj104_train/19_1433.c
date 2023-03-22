@@ -21,8 +21,8 @@ int main_bench()
 		}
 	}
 	danci[n][k]='\0';
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int e;
 	for(i=0;i<n+1;i++){
 		if(strcmp(danci[i],a)==0){
@@ -30,8 +30,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s ",danci[i]);
+		my_printf("%s ",danci[i]);
 	}
-	printf("%s",danci[n]);
+	my_printf("%s",danci[n]);
 return 0;
 }

@@ -11,7 +11,7 @@ int main_bench()
 	char str[500]={0};
 	int a[500]={0};
 
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	m=strlen(str);
 
@@ -46,13 +46,13 @@ int main_bench()
 		}
 	}
 
-	if(max==1) printf("NO");
+	if(max==1) my_printf("NO");
 	else
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<m-n+1;i++)
 	{
-		if(a[i]==max) printf("%s\n",tmp[i]);
+		if(a[i]==max) my_printf("%s\n",tmp[i]);
 	}
 	}
 	return 0;

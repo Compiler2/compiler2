@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,area[9][9]={0},area1[9][9]={0};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	area[4][4]=m;
 	int i,j;
 
@@ -51,9 +51,9 @@ int main_bench()
 		for(j=0;j<8;j++)
 		{
 			
-			printf("%d ",area[i][j]);
+			my_printf("%d ",area[i][j]);
 		}
-		printf("%d\n",area[i][8]);
+		my_printf("%d\n",area[i][8]);
 	}
 	
 	return 0;

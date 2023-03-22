@@ -6,11 +6,11 @@ int main_bench()
 	int n,i,j,h=0,k=1,b=0;
 	char a[120][20],c[120][20];
 	int y[120],Z[155][100]={0},cy[120];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d",a[i],&y[i]);
+		my_scanf("%s %d",a[i],&y[i]);
 	}
 
 	for(i=60;i<=150;i++)
@@ -46,13 +46,13 @@ int main_bench()
 			if(Z[i][h]==0) break;
 		    else
 			{
-				printf("%s\n",a[Z[i][h]]);
+				my_printf("%s\n",a[Z[i][h]]);
 			}
 		}
 	}
 	for(i=1;i<=b;i++)
 	{
-		printf("%s\n",c[i]);
+		my_printf("%s\n",c[i]);
 	}
 	return 0;
 

@@ -17,15 +17,15 @@ main_bench()
 	{
 		stu[i].su=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",stu[i].na);
-		scanf("%d",&stu[i].sc);
-		scanf("%d ",&stu[i].op);
-		scanf("%c ",&stu[i].ga);
-		scanf("%c",&stu[i].we);
-		scanf("%d",&stu[i].nu);
+		my_scanf("%s",stu[i].na);
+		my_scanf("%d",&stu[i].sc);
+		my_scanf("%d ",&stu[i].op);
+		my_scanf("%c ",&stu[i].ga);
+		my_scanf("%c",&stu[i].we);
+		my_scanf("%d",&stu[i].nu);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -50,5 +50,5 @@ main_bench()
 	}
 	for (i=0;i<n;i++)
 		sum+=stu[i].su;
-	printf("%s\n%d\n%d\n",stu[k].na,sut,sum);
+	my_printf("%s\n%d\n%d\n",stu[k].na,sut,sum);
 }

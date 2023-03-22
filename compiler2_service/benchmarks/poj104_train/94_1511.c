@@ -6,11 +6,11 @@ int main_bench()
 	int a[500];
 	int t[500];
 	int j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 	
@@ -46,9 +46,9 @@ int main_bench()
 
 	for(j=0;j<LEN-1;j++)
 	{
-		printf("%d,",t[j]);
+		my_printf("%d,",t[j]);
 	}
-	printf("%d",t[LEN-1]);
+	my_printf("%d",t[LEN-1]);
 
 
 

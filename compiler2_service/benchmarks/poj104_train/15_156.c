@@ -4,7 +4,7 @@ int main_bench()
 {
     int p[1000][1000];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	int m=0;
 	int l=0;
@@ -13,7 +13,7 @@ int main_bench()
 	for (i=0;i<n;i++){
 		for (j=0;j<n;j++){
 		int x;
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		p[i][j]=x;
 	}
 	}
@@ -41,6 +41,6 @@ int main_bench()
 		}
 	} 
     S=h*L;
-	printf("%d",S);
+	my_printf("%d",S);
 	return 0;
 }

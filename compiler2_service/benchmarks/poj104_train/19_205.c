@@ -27,10 +27,10 @@ int main_bench()
 	if(strcmp(word,a)==0) 
 	{
 		
-	    printf("%s",b);
+	    my_printf("%s",b);
 	}
 	else
-		printf("%s",word);
+		my_printf("%s",word);
 	n=i;
 while(s[i]!='\0')
 {
@@ -47,10 +47,10 @@ while(s[i]!='\0')
     if(strcmp(word,a)==0) 
 	{
 		
-	    printf(" %s",b);
+	    my_printf(" %s",b);
 	}
 	else
-		printf(" %s",word);
+		my_printf(" %s",word);
 	
 	
 n=i;

@@ -10,7 +10,7 @@ int main_bench()
 
 	int fah=-1,fal=-1;
 
-	scanf("%d,%d",&h,&l);
+	my_scanf("%d,%d",&h,&l);
 
 	int i,j;
 	
@@ -34,7 +34,7 @@ int main_bench()
 
 	for(i=0;i<h;i++){
 		for(j=0;j<l;j++){
-			scanf("%d",&word[i][j]);
+			my_scanf("%d",&word[i][j]);
 			if(max[i]<word[i][j]){
 				max[i]=word[i][j];
 				al[i]=j;
@@ -58,10 +58,10 @@ int main_bench()
 	}
 
 	if(fah!=-1||fal!=-1){
-		printf("%d+%d\n",fah,fal);
+		my_printf("%d+%d\n",fah,fal);
 	}
 	else{
-		printf("No\n");
+		my_printf("No\n");
 	}
 
 	free(*word);

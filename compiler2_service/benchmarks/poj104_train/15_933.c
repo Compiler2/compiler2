@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[1000][1000],n,i,j,col1=0,row1=0,col2=0,row2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for (i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{if(a[i][j]==0){col1=i;row1=j;break;
@@ -17,6 +17,6 @@ int main_bench()
 			}
 		}
 
-	printf("%d",(col1-col2-1)*(row2-row1-1));
+	my_printf("%d",(col1-col2-1)*(row2-row1-1));
 	return 0;
 }

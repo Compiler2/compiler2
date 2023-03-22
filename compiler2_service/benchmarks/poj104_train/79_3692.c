@@ -6,10 +6,10 @@ main_bench()
 	do
 	{
 		i++;
-		scanf("%d%d",&s[i][0],&s[i][1]);
+		my_scanf("%d%d",&s[i][0],&s[i][1]);
 	}while(s[i][1]!=0);
 	t=i-1;
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<=t;i++)
 	{if(s[i][1]!=1)
 	{   for(j=0;j<s[i][0];j++)
@@ -30,8 +30,8 @@ main_bench()
 		 
 		}
 		for(j=0;j<s[i][0];j++)
-		if(a[j]!=0)printf("%d\n",a[j]);
+		if(a[j]!=0)my_printf("%d\n",a[j]);
 	}  
 	
-	else printf("%d\n",s[i][0]);}
+	else my_printf("%d\n",s[i][0]);}
 }

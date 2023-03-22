@@ -8,11 +8,11 @@ int main_bench()
     gets(c);
     for (p = c; p < c + strlen(c); p++) {
         if (*p >= '0' && *p <= '9') {
-            printf("%c", *p);
+            my_printf("%c", *p);
             if (p < c + strlen(c) - 1 && *(p+1) >= '0' && *(p+1) <= '9' ) {
                 continue;
             }
-            printf("\n");
+            my_printf("\n");
         }
     }
     return 0;

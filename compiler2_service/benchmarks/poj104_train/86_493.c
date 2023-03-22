@@ -4,14 +4,14 @@ int main_bench()
 {
     int n,i,j,a[100],m,b[100];
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(i=1;i<=n;i++){
 
-       scanf("%d",&m);
+       my_scanf("%d",&m);
 
        for(j=0;j<m;j++){
-          scanf("%d",&a[j]);
+          my_scanf("%d",&a[j]);
           
 	   }
 
@@ -31,7 +31,7 @@ int main_bench()
 
 	}
 	   for(i=1;i<=n;i++){
-		   printf("%d\n",b[i-1]);
+		   my_printf("%d\n",b[i-1]);
        }
       return  0;
 }

@@ -5,14 +5,14 @@ int main_bench()
 	int a[300],i,j,k,t;
 	for(i=0;;i++)
 	{   
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if (getchar()=='\n')
 		{i++;
 		break;}
 	}
 	
 	if(i==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(j=0;j<(i-1);j++)
@@ -28,11 +28,11 @@ int main_bench()
 	 {
 		 if(a[k-1]<a[k])
 		 {
-			 printf("%d",a[k-1]);
+			 my_printf("%d",a[k-1]);
 			 break;
 		 }
 	 }
 	 if(k==0)
-		 printf("No");
+		 my_printf("No");
 	}
 }

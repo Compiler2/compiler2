@@ -6,7 +6,7 @@ int main_bench()
   
   
   int n, point[2001];
-  scanf("%d", &n);
+  my_scanf("%d", &n);
   int i;
   int left = 2001;
   int right = 0;
@@ -15,7 +15,7 @@ int main_bench()
   for (i = 1; i <= n; i++)
     {
       int a, b;
-      scanf("%d%d", &a, &b);
+      my_scanf("%d%d", &a, &b);
       if (a < left)
 	left = a; 
       if (b > right)
@@ -39,9 +39,9 @@ int main_bench()
       if (in == 1)
 	in = 0;
   if (num == 1)
-    printf("%d %d\n", left, right);
+    my_printf("%d %d\n", left, right);
   else
-    printf("no\n");
+    my_printf("no\n");
 
   return 0;
 }

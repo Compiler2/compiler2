@@ -14,10 +14,10 @@ struct stdudent
        int n,i,j;
        int w,h,l;
        int k; 
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        for(i=0;i<n;i++)
        {
-                       scanf("%d %d %d",&d[i].ID,&d[i].a,&d[i].b);
+                       my_scanf("%d %d %d",&d[i].ID,&d[i].a,&d[i].b);
                        d[i].c=d[i].a+d[i].b;
        
                        }
@@ -75,9 +75,9 @@ struct stdudent
                         else if(k>l)
                         third=j;
                                        }
-printf("%d %d\n",d[first].ID,d[first].c);
-printf("%d %d\n",d[second].ID,d[second].c);
-printf("%d %d\n",d[third].ID,d[third].c);         
+my_printf("%d %d\n",d[first].ID,d[first].c);
+my_printf("%d %d\n",d[second].ID,d[second].c);
+my_printf("%d %d\n",d[third].ID,d[third].c);         
   getchar();
   getchar();                     
       }

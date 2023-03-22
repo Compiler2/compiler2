@@ -10,10 +10,10 @@
  int main_bench()
  { int n,i,j=0,k=0,biao,maxzuozhe,p,geshu[26]={0},max=0,maxdeshu[999];
  
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    for(i=0;i<=n-1;i++)
-   { scanf("%d",&ren[i].num);
-    scanf("%s",ren[i].name);
+   { my_scanf("%d",&ren[i].num);
+    my_scanf("%s",ren[i].name);
    }
    
    for(i=0;i<=25;i++)
@@ -40,10 +40,10 @@
          break;}
       }
     }
-    printf("%c\n",maxzuozhe);
-    printf("%d\n",p);
+    my_printf("%c\n",maxzuozhe);
+    my_printf("%d\n",p);
     for(i=0;i<=p-1;i++)
-    printf("%d\n",maxdeshu[i]);
+    my_printf("%d\n",maxdeshu[i]);
 
     getchar();
     

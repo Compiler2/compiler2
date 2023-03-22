@@ -9,15 +9,15 @@ return *((int*)y)-*((int*)x);
 int main_bench()
 {
   int n; 
-  while(scanf("%d",&n)&&(n!=0)) 
+  while(my_scanf("%d",&n)&&(n!=0)) 
   {
    int i,*tj,*qw,sum=0;
    tj=(int*)malloc(4*n);
    qw=(int*)malloc(4*n);
    for(i=0;i<n;i++)
-   scanf("%d",tj+i);
+   my_scanf("%d",tj+i);
    for(i=0;i<n;i++)
-   scanf("%d",qw+i);                     
+   my_scanf("%d",qw+i);                     
    qsort(tj,n,4,bijiao);                    
    qsort(qw,n,4,bijiao);                    
    
@@ -44,7 +44,7 @@ int main_bench()
       } 
                                       
    }
-   printf("%d\n",sum);                                        
+   my_printf("%d\n",sum);                                        
    free(tj);
    free(qw);                    
   }

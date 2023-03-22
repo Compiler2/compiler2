@@ -7,7 +7,7 @@ int main_bench()
 	gets(c);
 	for(i=0;c[i]!='\0';i++)
 		if(c[i]!=' ')
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 		else if(c[i]==' '&&c[i+1]!=' ')
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 }

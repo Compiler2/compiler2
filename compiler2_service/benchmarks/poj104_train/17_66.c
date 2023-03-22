@@ -58,8 +58,8 @@ int main_bench()
 			   break;
 	   }
 	   for(x=p;x<=k;x++)
-		   printf("%c",b[x]);
-	   printf("\n");
+		   my_printf("%c",b[x]);
+	   my_printf("\n");
 	}
 	return 0;
 }

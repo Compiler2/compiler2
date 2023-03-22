@@ -17,7 +17,7 @@ int main_bench(){
 		}
 	}
 	for(k=0;k<j;k++){
-		printf("%c",dy[k]);
+		my_printf("%c",dy[k]);
 	}
 
 

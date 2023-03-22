@@ -3,12 +3,12 @@
 int main_bench()
 {
 int i,j,n,k,a=0;
-scanf("%d",&n);
-scanf("%d",&k);
+my_scanf("%d",&n);
+my_scanf("%d",&k);
 int *sz=(int *)malloc(sizeof(int)*n);
 for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		
 	}
 for(i=0;i<n;i++)
@@ -22,8 +22,8 @@ for(i=0;i<n;i++)
 		{a++;}}
 }
 if(a>0)
-{printf("yes");}
+{my_printf("yes");}
 if(a==0)
-{printf("no");}
+{my_printf("no");}
 	return 0;
 }

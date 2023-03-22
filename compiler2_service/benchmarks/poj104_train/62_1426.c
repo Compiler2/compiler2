@@ -8,7 +8,7 @@ int main_bench()
    s=(char*)malloc(1000*sizeof(char));
    
    for(i=0;i<1000;i++)
-	   scanf("%c",s+i);
+	   my_scanf("%c",s+i);
    for(i=0;*(s+i)!='\0';i++)
    {
 	   if(*(s+i)==' ')
@@ -23,7 +23,7 @@ int main_bench()
 	   }
    }
        for(i=0;*(s+i)!='\0';i++)
-	   printf("%c",*(s+i));
+	   my_printf("%c",*(s+i));
   
  }
 

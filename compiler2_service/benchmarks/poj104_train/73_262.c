@@ -7,7 +7,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++) 
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<5;i++)
@@ -44,9 +44,9 @@ int main_bench()
 		
 		if(c[b[i]]==i)
 		{o++;
-		printf("%d %d %d\n",i+1,b[i]+1,a[i][b[i]]);}
+		my_printf("%d %d %d\n",i+1,b[i]+1,a[i][b[i]]);}
 	}
-	if(o==0) printf("not found");
+	if(o==0) my_printf("not found");
 	
 	return 0;
 }

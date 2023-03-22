@@ -22,7 +22,7 @@ int main_bench(){
 	for(i=0;i<=n;i++){
 		result[i]=strlen(sz[i]);
 	}for(i=0;i<n;i++){
-		printf("%d,",result[i]);
-	}printf("%d",result[n]);
+		my_printf("%d,",result[i]);
+	}my_printf("%d",result[n]);
 	return 0;
 }

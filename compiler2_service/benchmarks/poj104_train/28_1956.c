@@ -14,9 +14,9 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<=count;i++){
-		printf("%d",num[i]);
+		my_printf("%d",num[i]);
 		if(i!=count){
-			printf(",");
+			my_printf(",");
 		}
 	}
 	return 0;

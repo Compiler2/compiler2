@@ -6,13 +6,13 @@ int main_bench()
    int i;
    for(i=0;i<50;i++)
   {
-   scanf("%c",&x[i]);
+   my_scanf("%c",&x[i]);
    if (x[i]==32)
    break;
    }
    for(i=0;i<50;i++)
   {
-   scanf("%c",&y[i]);
+   my_scanf("%c",&y[i]);
    if (y[i]==32)
    break;
    }
@@ -23,6 +23,6 @@ int main_bench()
       { a=i;
     break;}
     }
-   printf("%d",a);  
+   my_printf("%d",a);  
    return 0; 
 }

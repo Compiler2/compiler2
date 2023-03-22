@@ -3,12 +3,12 @@
  
 int main_bench()
 {int h,n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(h=1;h<=n;h++)
 {int i,j,k,t,sum=0,a[105][105];
 for(i=0;i<n;i++)
 for(j=0;j<n;j++)
-scanf(" %d",&a[i][j]);
+my_scanf(" %d",&a[i][j]);
 for(t=n;t>1;t--)
 {for(i=0;i<t;i++)
 {k=a[i][0];
@@ -33,7 +33,7 @@ for(i=2;i<=t;i++)
 for(j=2;j<=t;j++)
 a[i-1][j-1]=a[i][j];
 }
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 
 }
 return 0;

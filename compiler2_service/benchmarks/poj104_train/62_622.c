@@ -13,9 +13,9 @@ int main_bench(){
 	}
 	for(i=0;i<b;i++){
 		if(c[i]==0&&(c[i+1]==0||a[i+1]=='\n'))
-	    printf("%c",a[i]);
+	    my_printf("%c",a[i]);
 	    else if(c[i]==0&&c[i+1]==1)
-	    printf("%c ",a[i]);
+	    my_printf("%c ",a[i]);
 }
 	return 0;
 }

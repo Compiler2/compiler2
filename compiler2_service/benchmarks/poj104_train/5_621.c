@@ -3,12 +3,12 @@
 
 int main_bench(){
     double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char s[1000],j[1000];
-	scanf("%s",s);
-	scanf("%s",j);
+	my_scanf("%s",s);
+	my_scanf("%s",j);
 	if(strlen(s)!=strlen(j)){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	int k;
@@ -18,11 +18,11 @@ int main_bench(){
 	int i;
 	for(i=0;s[i]!='\0';i++){
 		if(s[i]!='A'&&s[i]!='G'&&s[i]!='C'&&s[i]!='T'){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 		if(j[i]!='A'&&j[i]!='G'&&j[i]!='C'&&j[i]!='T'){
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 		
@@ -32,9 +32,9 @@ int main_bench(){
 	}
 	rate=1.0*sum/k;
 	if(rate>n){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
     return 0;
 }

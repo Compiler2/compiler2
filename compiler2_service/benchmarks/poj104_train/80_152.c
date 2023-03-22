@@ -30,8 +30,8 @@ int month(int m)
 int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,i,ds=0;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	for(i=y1;i<y2;i++) ds=ds+year(i);
 	for(i=1;i<m1;i++) ds=ds-month(i);
 	for(i=1;i<m2;i++) ds=ds+month(i);
@@ -45,5 +45,5 @@ int main_bench()
 		if(year(y1)==366&&m1>2) ds=ds-1;
 	    if(year(y2)==366&&m2>2) ds=ds+1;
 	}
-	printf("%d\n",ds);
+	my_printf("%d\n",ds);
 }

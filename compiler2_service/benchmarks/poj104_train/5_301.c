@@ -17,14 +17,14 @@ int main_bench() {
 	double c,d,e ;
 	int j;
 	char a[1000],b[1000];
-    scanf("%lf",&c);
-	scanf("%s",a);
-	scanf("%s",b);
+    my_scanf("%lf",&c);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if (strlen(a)!=strlen(b)){
-		printf("error");
+		my_printf("error");
 	}
 	else if(h(a)||h(b)){
-		printf("error");
+		my_printf("error");
 	}
 	else {
 		e=0;
@@ -35,10 +35,10 @@ int main_bench() {
 		}
 		d=e/strlen(a);
 		if (d>=c){
-			printf("yes");
+			my_printf("yes");
 		}
 		else {
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

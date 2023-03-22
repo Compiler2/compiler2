@@ -17,14 +17,14 @@ int main_bench()
     int sushu(int x);
     int N,n;
     int Flag=0;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     {
         for(n=1;n<=(N-2);n++)
         if(sushu(n)==1)
         if(sushu(n+2)==1)
-        {printf("%d %d\n",n,(n+2));
+        {my_printf("%d %d\n",n,(n+2));
         Flag=1;}
     }
     if(Flag==0)
-    printf("empty");        
+    my_printf("empty");        
 }

@@ -37,7 +37,7 @@ int main_bench()
 			e=i;
 		}
 	}
-	printf("%s\n",word[w]);
-	printf("%s\n",word[e]);
+	my_printf("%s\n",word[w]);
+	my_printf("%s\n",word[e]);
 	return 0;
 }

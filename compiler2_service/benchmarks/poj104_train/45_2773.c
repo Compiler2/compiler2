@@ -4,8 +4,8 @@ int locate(char [],char []);
 int main_bench()
 {
     char a[100],b[100];
-    scanf("%s",a);scanf("%s",b);
-    printf("%d",locate(a,b));
+    my_scanf("%s",a);my_scanf("%s",b);
+    my_printf("%d",locate(a,b));
     return 0;
 }
 

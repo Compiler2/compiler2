@@ -24,13 +24,13 @@ int re(int num){
 int main_bench(){
     int num[6],i;
     for(i=0;i<6;i++){
-                     scanf("%d",&num[i]);
+                     my_scanf("%d",&num[i]);
                      num[i]=re(num[i]);                                                            
                      }
     for(i=0;i<6;i++){
-                     if(i==5) printf("%d",num[i]);
-                     else printf("%d\n",num[i]);
+                     if(i==5) my_printf("%d",num[i]);
+                     else my_printf("%d\n",num[i]);
                      }
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
 }

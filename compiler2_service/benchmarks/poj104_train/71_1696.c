@@ -7,9 +7,9 @@ int main_bench()
                     31, 31, 30, 31, 30, 31    };
     int i, n, y, m, d,x1;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 	for (i = 0; i < n; i++) {
-        scanf("%d %d %d", &y, &m, &d);
+        my_scanf("%d %d %d", &y, &m, &d);
         days[2] = (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) ? 29 : 28;
 		if(m>d){
 			x1=d;
@@ -20,9 +20,9 @@ int main_bench()
 			for(j=m;j<d;j++)
              sum+=days[j];
 			 if(sum%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
         else
-            printf("NO\n");
+            my_printf("NO\n");
     }
     return 0;
 }

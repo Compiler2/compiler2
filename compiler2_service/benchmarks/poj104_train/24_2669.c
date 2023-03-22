@@ -4,10 +4,10 @@ main_bench()
 {
 int n,l,s,ln=0,sn=30,i=0;
 char a[200][30];
-scanf("%d",&n);
+my_scanf("%d",&n);
 while(n--)
 {
-scanf("%s",a[i]);
+my_scanf("%s",a[i]);
 if(ln<strlen(a[i]))
 {
 ln=strlen(a[i]);
@@ -20,5 +20,5 @@ s=i;
 }
 i++;
 }
-printf("%s\n%s",a[l],a[s]);
+my_printf("%s\n%s",a[l],a[s]);
 }

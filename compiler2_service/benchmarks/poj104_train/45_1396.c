@@ -5,7 +5,7 @@ int main_bench()
 	char s[50],w[50];
 	int i,j,k,a=0,b=0,c=0;
 	int lens=0,lenw=0;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	a=strlen(s);
 	b=strlen(w);
 	for(i=0;i<a;i++)
@@ -22,6 +22,6 @@ int main_bench()
 			}break;
 		}break;
 	}
-	printf("%d",c);
+	my_printf("%d",c);
 	return 0;
 }

@@ -10,9 +10,9 @@ int main_bench()
     int max (int age[100],int n);
 	int n,i,k;
 int age[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",pat[i].name,&pat[i].age);
+		my_scanf("%s %d",pat[i].name,&pat[i].age);
 		if(pat[i].age>=60)
         age[i]=200+pat[i].age;
         else
@@ -21,7 +21,7 @@ int age[100];
 	for(i=0;i<n;i++)
 	{
                     k=max (age,n);
-                    printf("%s\n",pat[k].name);
+                    my_printf("%s\n",pat[k].name);
     }
     return 0;
 }

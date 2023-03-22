@@ -4,9 +4,9 @@ int main_bench()
 {
 	float b[400],sum,a[400],large,c[40],d,de[40];
 	int i,max,u,t,n,judge,m,fin,final;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	sum=0;
 	for(i=0;i<n;i++)
 		sum=sum+a[i];
@@ -47,9 +47,9 @@ int main_bench()
             if(judge==1)
                   {
                    for(i=0;i<final-1;i++)
-                     printf("%.0f,",de[i]);
-		  printf("%.0f",de[i]);
+                     my_printf("%.0f,",de[i]);
+		  my_printf("%.0f",de[i]);
                   }
-            else printf("%.0f",de[final-1]);
+            else my_printf("%.0f",de[final-1]);
 }
 	    

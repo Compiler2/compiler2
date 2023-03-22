@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		int num;
@@ -14,7 +14,7 @@ int main_bench()
 	int i=0;;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&a[i].num,&a[i].yu,&a[i].shu);
+		my_scanf("%d %d %d",&a[i].num,&a[i].yu,&a[i].shu);
 		d[i]=a[i].yu+a[i].shu;
 	}
 	int q,w,e,h;
@@ -41,8 +41,8 @@ int main_bench()
 			e=i;
 		}
 	}
-	printf("%d %d\n",a[q].num,d[q]);
-	printf("%d %d\n",a[w].num,d[w]);
-	printf("%d %d\n",a[e].num,d[e]);
+	my_printf("%d %d\n",a[q].num,d[q]);
+	my_printf("%d %d\n",a[w].num,d[w]);
+	my_printf("%d %d\n",a[e].num,d[e]);
 	return 0;
 }

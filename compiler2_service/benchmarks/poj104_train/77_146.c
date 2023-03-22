@@ -6,7 +6,7 @@ int main_bench()
     char x,y;
     int a[100];
     char s[100];
-    scanf("%s",s);
+    my_scanf("%s",s);
     j=0;
     for(i=0;i<100;i++)
         a[i]=-1;
@@ -19,7 +19,7 @@ int main_bench()
         }
         else
         {
-            printf("%d %d\n",a[j-1],i);
+            my_printf("%d %d\n",a[j-1],i);
             j--;
             a[j]=-1;
         }

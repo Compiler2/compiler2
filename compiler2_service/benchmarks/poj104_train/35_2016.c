@@ -7,14 +7,14 @@ int i,j,max,a,d,c;
 int main_bench()
 {
  good=0;
- scanf("%d,%d",&m,&n);
+ my_scanf("%d,%d",&m,&n);
  for (i=0;i<m;i++)
  {
   for (j=0;j<n-1;j++)
   {
-   scanf("%d ",&sz[i][j]);
+   my_scanf("%d ",&sz[i][j]);
   }
-  scanf("%d",&sz[i][n-1]);
+  my_scanf("%d",&sz[i][n-1]);
  }
  for (i=0;i<m;i++)
  {
@@ -35,12 +35,12 @@ int main_bench()
    }
   } 
   if (good==0){
-      printf("%d+%d",c,d);
+      my_printf("%d+%d",c,d);
 	  break;
   }
  }
  if (good!=0){
-	  printf("No");
+	  my_printf("No");
   }
     return 0;
 }

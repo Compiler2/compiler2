@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i=0;
 	char a[10],b[10];
-	scanf("%s",&a);
+	my_scanf("%s",&a);
 	while(a[i]!='\0')
 	{
 		i++;
@@ -14,5 +14,5 @@ int main_bench()
 	{
 		b[i]=a[n-i];		
 	}
-	b[n+1]='\0';	printf("%s\n",b);
+	b[n+1]='\0';	my_printf("%s\n",b);
 }

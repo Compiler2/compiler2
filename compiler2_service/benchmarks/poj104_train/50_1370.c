@@ -2,7 +2,7 @@
 
 int main_bench(){
 int i,j,w,day,rq[31];
-scanf("%d",&w);
+my_scanf("%d",&w);
 for(i=1;i<=12;i++){
 	if(i==1||i==3||i==5||i==7||i==8||i==10||i==12)
 		day=31;
@@ -25,7 +25,7 @@ for(i=1;i<=12;i++){
 		}
 	}
         if(rq[12]==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
       
 		}
 	

@@ -10,8 +10,8 @@ int main_bench()
 	for(i=0;i<n;i++)
 		b[i]=a[i];
 	for(i=0;i<n-1;i++)
-		printf("%c",b[i]+b[i+1]);
-	printf("%c",b[n-1]+b[0]);
+		my_printf("%c",b[i]+b[i+1]);
+	my_printf("%c",b[n-1]+b[0]);
 	
 
 	return 0;

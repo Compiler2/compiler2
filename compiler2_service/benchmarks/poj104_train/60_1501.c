@@ -4,18 +4,18 @@ int main_bench()
 {
 	int n,i,f=0;
 	int isSuShu(int i);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<n-1;i++)
 	{
 		if(isSuShu(i)) 
 		{
 			if(isSuShu(i+2))
-			printf("%d %d\n",i,i+2),f=1;
+			my_printf("%d %d\n",i,i+2),f=1;
 			else continue;
 			}
 		else continue;		
 		}
-		if(f==0) printf("empty");
+		if(f==0) my_printf("empty");
 		return 0;
 	}
 	

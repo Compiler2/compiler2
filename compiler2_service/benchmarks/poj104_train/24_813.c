@@ -9,7 +9,7 @@ int main_bench()
 		for(j=0;;j++)
 		{
 
-				scanf("%c",&word[m][j]);
+				my_scanf("%c",&word[m][j]);
 				if(word[m][j]==32) break;
 				if(word[m][j]==10) goto loop;
 		}
@@ -39,12 +39,12 @@ loop:	for(i=0;i<=m;i++)
 		for(i=0;;i++)
 		{
 			if(word[c][i]==32||word[c][i]==10) break;
-			printf("%c",word[c][i]);
+			my_printf("%c",word[c][i]);
 		}
-		printf("\n");
+		my_printf("\n");
 		for(i=0;;i++)
 		{
 			if(word[d][i]==32||word[d][i]==10) break;
-         	printf("%c",word[d][i]);
+         	my_printf("%c",word[d][i]);
 		}
 }

@@ -3,7 +3,7 @@
 int isRunNian(int y);
 int main_bench(){
  int y,m,d,a,b;
- scanf("%d%d%d",&y,&m,&d);
+ my_scanf("%d%d%d",&y,&m,&d);
  if (1.0*(y-1)/400==0){
  a=(97*2+303)*(y-1)/400;
  }
@@ -36,25 +36,25 @@ int main_bench(){
  total += d; 
  b=a+total;
  if (b%7==1){
-  printf("Mon.");
+  my_printf("Mon.");
  }
  else if (b%7==2){
-  printf("Tue.");
+  my_printf("Tue.");
  }
  else if (b%7==3){
-  printf("Wed.");
+  my_printf("Wed.");
  }
  else if (b%7==4){
-  printf("Thu.");
+  my_printf("Thu.");
  }
  else if (b%7==5){
-  printf("Fri.");
+  my_printf("Fri.");
  }
  else if (b%7==6){
-  printf("Sat.");
+  my_printf("Sat.");
  }
  else {
-  printf("Sun.");
+  my_printf("Sun.");
  }
  return 0;
 }

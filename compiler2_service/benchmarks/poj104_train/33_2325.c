@@ -5,7 +5,7 @@ int main_bench()
 	void hanshu();
 	int n,i;
 	
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 
 	for(i=0;i<n;i++)
 		hanshu();

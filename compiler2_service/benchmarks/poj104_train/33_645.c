@@ -4,9 +4,9 @@ int main_bench()
 {
     int i,n,j,l;
     char yuan[256],bu[256];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",yuan);
+        my_scanf("%s",yuan);
         l=strlen(yuan);
         for(j=0;j<=l;j++){
             if(yuan[j]=='A')

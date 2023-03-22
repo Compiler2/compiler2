@@ -27,10 +27,10 @@ int main_bench()
 	for (;m>0;m--)  
 	{
 		for (j=0;j<b[m]-1;j++)
-			printf("%c",a[m][j]);
-		printf("%c ",a[m][b[m]-1]);
+			my_printf("%c",a[m][j]);
+		my_printf("%c ",a[m][b[m]-1]);
 	}
 	for (j=0;j<b[0];j++)  
-			printf("%c",a[0][j]);
+			my_printf("%c",a[0][j]);
 	return 0;
 }

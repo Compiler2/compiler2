@@ -3,10 +3,10 @@
 int main_bench(){
     int i,j=0,k,m,n,e,x,s[100],t[100],v=0;
     char zfc[100][10],jg[100][10],h[100][10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",zfc[i]);
-        scanf("%d",&s[i]);
+        my_scanf("%s",zfc[i]);
+        my_scanf("%d",&s[i]);
     }
     for(i=0;i<n;i++){
        if(s[i]>=60){

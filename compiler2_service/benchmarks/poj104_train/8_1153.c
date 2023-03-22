@@ -20,20 +20,20 @@ void changeplace(int n,int a[])
 main_bench()
 {
 	int n1,n2,k;
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
 	int *p=(int*)malloc(n1*sizeof(int));
 	int *q=(int*)malloc(n2*sizeof(int));
 	for(k=0;k<n1;k++)
-	scanf("%d",&p[k]);
+	my_scanf("%d",&p[k]);
 	for(k=0;k<n2;k++)
-	scanf("%d",&q[k]);
+	my_scanf("%d",&q[k]);
 	changeplace(n1,p);
 	changeplace(n2,q);
 	for(k=0;k<n1;k++)
-	printf("%d ",p[k]);
+	my_printf("%d ",p[k]);
 	for(k=0;k<n2-1;k++)
-	printf("%d ",q[k]);
-	printf("%d",q[n2-1]);
+	my_printf("%d ",q[k]);
+	my_printf("%d",q[n2-1]);
 	
 	
 }

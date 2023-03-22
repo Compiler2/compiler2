@@ -2,18 +2,18 @@
 
 int main_bench(){
     int n,b,j,i,k;
-    scanf ("%d",&n);    
+    my_scanf ("%d",&n);    
     char c[102][102],d[102][102],ttt;
-scanf ("%c",&ttt);
+my_scanf ("%c",&ttt);
     for (i=1;i<=n;i++)
     {
         for (j=1;j<=n;j++)
         {
-            scanf ("%c",&c[i][j]);
+            my_scanf ("%c",&c[i][j]);
         }
-        scanf ("%c",&ttt);
+        my_scanf ("%c",&ttt);
     }
-    scanf ("%d",&b);
+    my_scanf ("%d",&b);
     for (i=1;i<=n;i++)
         {
             for (j=1;j<=n;j++)
@@ -57,6 +57,6 @@ scanf ("%c",&ttt);
             js++;
         }
     }
-    printf ("%d",js);
+    my_printf ("%d",js);
     return 0;
 }

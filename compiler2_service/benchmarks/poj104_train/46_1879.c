@@ -4,12 +4,12 @@ int main_bench()
 {
 	int m,n,i,j,g,h,k,l;
 	int a[100][100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	    g=0;
@@ -25,7 +25,7 @@ int main_bench()
 		{break;}
 			
 		
-		    printf("%d\n",a[i][j]);
+		    my_printf("%d\n",a[i][j]);
 			l++;
        if(l==m*n)
 		{break;}
@@ -38,7 +38,7 @@ int main_bench()
 		{break;}
 			
 		
-			printf("%d\n",a[g][j]);
+			my_printf("%d\n",a[g][j]);
 			l++;
         if(l==m*n)
 		{break;}
@@ -52,7 +52,7 @@ int main_bench()
 			
 		
 			
-			printf("%d\n",a[k][j]);
+			my_printf("%d\n",a[k][j]);
 			l++;
        if(l==m*n)
 		{break;}
@@ -65,7 +65,7 @@ int main_bench()
 			
 		
 			
-			printf("%d\n",a[h][i]);
+			my_printf("%d\n",a[h][i]);
 			l++;
        if(l==m*n)
 		{break;}

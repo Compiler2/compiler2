@@ -19,9 +19,9 @@ int main_bench(){
 			}
 			if(t==1){
 				for(m=0;d[m]!='\0';m++){
-					printf("%c",d[m]);}i=i+k;n=1;
+					my_printf("%c",d[m]);}i=i+k;n=1;
 			}
 		}
-		if(s[i]!='\0'){printf("%c",s[i]);}
+		if(s[i]!='\0'){my_printf("%c",s[i]);}
 	}
 }

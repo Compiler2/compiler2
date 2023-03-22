@@ -19,17 +19,17 @@ int main_bench()
     int a[101];
     int i, first=1;
     int n, m;
-        scanf("%d%d", &n, &m);
+        my_scanf("%d%d", &n, &m);
     for(i=0; i<n; i++)
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     move(a, n, m);
     for(i=0; i<n; i++)
 	{
 		if(first)
 			first=0;
-		else printf(" ");
-		printf("%d", a[i]);
+		else my_printf(" ");
+		my_printf("%d", a[i]);
 	}
-    printf("\n");
+    my_printf("\n");
     return 0;
 }

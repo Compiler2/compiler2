@@ -36,9 +36,9 @@ int main_bench()
 	for(i=1,k=0;i<=n;i++)
 		if(strlen(s[k])<strlen(s[i]))
 			k=i;
-	printf("%s\n",s[k]);
+	my_printf("%s\n",s[k]);
 	for(i=1,k=0;i<=n;i++)
 		if(strlen(s[k])>strlen(s[i]))
 			k=i;
-	printf("%s",s[k]);
+	my_printf("%s",s[k]);
 }

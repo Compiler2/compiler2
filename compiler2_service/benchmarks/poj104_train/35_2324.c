@@ -3,10 +3,10 @@
 int main_bench(){
 	int a,b,c,d[8][8],e,f=0,h,i,j;
 	char l='c';
-	scanf("%d,%d",&a,&b);
+	my_scanf("%d,%d",&a,&b);
 	for(c=0;c<a;c++){
 		for(e=0;e<b;e++){
-			scanf("%d",&d[c][e]);
+			my_scanf("%d",&d[c][e]);
 		}
 	}
 	for(c=0;c<a;c++){
@@ -37,10 +37,10 @@ int main_bench(){
 		}
 	}
 	if(f==1){
-		printf("%d+%d",i,j);
+		my_printf("%d+%d",i,j);
 	}
 	else{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

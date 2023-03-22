@@ -6,8 +6,8 @@ int main_bench()
 	char s[501];
 	char son[500][5];
 	int cnt[500]={0},rd[500];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i+n-1<=l-1;i++)
 	{
@@ -27,13 +27,13 @@ int main_bench()
 		}
 	}
 	if(max==1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<=l-n+1;i++)
 			if(cnt[i]==cnt[t])
-				printf("%s\n",son[i]);
+				my_printf("%s\n",son[i]);
 	}
 	return 0;
 }

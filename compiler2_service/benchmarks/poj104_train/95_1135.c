@@ -20,10 +20,10 @@ int main_bench()
         if(b[i]>='A'&&b[i]<='Z')
         continue;
     }
-    if(strcmp(a,b)<0) printf("<");
-    else if(strcmp(a,b)>0) printf(">");
-    else printf("=");
+    if(strcmp(a,b)<0) my_printf("<");
+    else if(strcmp(a,b)>0) my_printf(">");
+    else my_printf("=");
     
-    printf("\n");
+    my_printf("\n");
     return 0;
 }

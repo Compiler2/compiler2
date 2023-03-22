@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,m[1000],i,j,s[1000],q[1000];
 	double c[1000],S=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     s[0]=2,s[1]=3,q[0]=1,q[1]=2;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m[i]);
+		my_scanf("%d",&m[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 		{
 			S=S+c[j];
 		}
-		printf("%.3lf\n",S);
+		my_printf("%.3lf\n",S);
 S=0;
 	}
 	return 0;

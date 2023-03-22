@@ -28,16 +28,16 @@ int main_bench()
 		if(t>=len2)
 		{
 		for(j=0;j<i-t;j++)
-	        printf("%c",a[j]);
+	        my_printf("%c",a[j]);
 		for(j=0;j<len3;j++)
-			printf("%c",c[j]);
+			my_printf("%c",c[j]);
 		for(j=i-t+len2;j<len1;j++)
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
 		if(t<len2)
 		{
 			for(j=0;j<len1;j++)
-				printf("%c",a[j]);
+				my_printf("%c",a[j]);
 		}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {char str1[5000];
  int a[1000]={0},n,i,j=0,m=0,b,max,t,c;
- scanf("%s",str1);
+ my_scanf("%s",str1);
  n=strlen(str1);
  str1[n]='i';
  n=n+1;
@@ -25,7 +25,7 @@ int main_bench()
     	m=m+1;
     }
  if(m==1)
-    printf("No");
+    my_printf("No");
  else 
  	{max=a[0];
      for(i=0;i<=999;i++)
@@ -45,7 +45,7 @@ int main_bench()
            c=1;
         }
      if(c==1)
-       printf("No");
+       my_printf("No");
      else
      {
      a[t]=0;
@@ -56,7 +56,7 @@ int main_bench()
     	   t=i;
     	  }
         }
-     printf("%d",max);
+     my_printf("%d",max);
      }
  	}
 }

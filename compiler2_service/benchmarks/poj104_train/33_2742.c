@@ -6,10 +6,10 @@ int main_bench()
 	int n,len,i,j;
 	char str[256],s;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str);
+		my_scanf("%s",str);
 		len=strlen(str);
 		for(j=0;j<len;j++)
 		{
@@ -22,9 +22,9 @@ int main_bench()
 			if(str[j]=='G')
 				s='C';
 			if(j<len-1)
-				printf("%c",s);
+				my_printf("%c",s);
 			else
-				printf("%c\n",s);
+				my_printf("%c\n",s);
 		}
 
 	}

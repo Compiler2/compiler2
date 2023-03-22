@@ -5,10 +5,10 @@ int prime(int x);
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n<=4)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 	else
 	{
@@ -16,7 +16,7 @@ int main_bench()
 		{
 			if (prime(i) && prime(i+2))
 			{
-				printf("%d %d\n",i,i+2);
+				my_printf("%d %d\n",i,i+2);
 			}
 		}
 	}

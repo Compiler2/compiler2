@@ -13,9 +13,9 @@ int main_bench()
 	int x[300],n,i,geshu=1;
 	float ave,sum=0.0,d;
 	int p1,p2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 
 		
 	for(i=0;i<n;i++)
@@ -35,9 +35,9 @@ int main_bench()
 			p2=x[i];
 		}
 if(p1>p2)
-printf("%d,%d",p2,p1);
+my_printf("%d,%d",p2,p1);
 else if(p1<p2)
-printf("%d,%d",p1,p2);
-else printf("%d",p1);
+my_printf("%d,%d",p1,p2);
+else my_printf("%d",p1);
 	}
 

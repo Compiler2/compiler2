@@ -13,12 +13,12 @@ int main_bench()
 {
 	int n,i,x,y,z,t,q,w,e;
 	int b[100000];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d ",&a[i].ID);
-		scanf("%d ",&a[i].c);
-        scanf("%d",&a[i].m);
+		my_scanf("%d ",&a[i].ID);
+		my_scanf("%d ",&a[i].c);
+        my_scanf("%d",&a[i].m);
 	}
 	for(i=0;i<n;i++)
 		b[i]=a[i].c+a[i].m;
@@ -100,9 +100,9 @@ int main_bench()
 			e=i+1;
 		}
 	}
-	printf("%d %d\n",q,x);
-	printf("%d %d\n",w,y);
-	printf("%d %d\n",e,z);
+	my_printf("%d %d\n",q,x);
+	my_printf("%d %d\n",w,y);
+	my_printf("%d %d\n",e,z);
 
 	return 0;
 }

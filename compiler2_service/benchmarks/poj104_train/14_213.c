@@ -4,7 +4,7 @@
 int main_bench()
 {
     int n,i,j,t,First=0,FirstNum,Second=0,SecondNum,Third=0,ThirdNum;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct Student
     {
        int Chinese;
@@ -14,7 +14,7 @@ int main_bench()
     }Student[n+1];
     for (i=1;i<=n;i++)
       {
-         scanf("%d %d %d",&Student[i].Num,&Student[i].Chinese,&Student[i].Math);
+         my_scanf("%d %d %d",&Student[i].Num,&Student[i].Chinese,&Student[i].Math);
          Student[i].Sum=Student[i].Chinese+Student[i].Math;
       }
     for (i=1;i<=n;i++)
@@ -41,9 +41,9 @@ int main_bench()
              ThirdNum=i;
          }
       }
-    printf("%d %d\n",FirstNum,First);
-    printf("%d %d\n",SecondNum,Second);
-    printf("%d %d\n",ThirdNum,Third);
+    my_printf("%d %d\n",FirstNum,First);
+    my_printf("%d %d\n",SecondNum,Second);
+    my_printf("%d %d\n",ThirdNum,Third);
     
 }
     

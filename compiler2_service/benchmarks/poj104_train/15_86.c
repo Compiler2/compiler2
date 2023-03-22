@@ -3,13 +3,13 @@
 int main_bench(){
 	int n,i,j,k,p=0,q=0;
 	int mianji;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int shu[n];
 	int ge[n];
 	for(i=0;i<n;i++){
 		k=0;
 		for(j=0;j<n;j++){
-			scanf("%d ",&shu[j]);
+			my_scanf("%d ",&shu[j]);
 			if(shu[j]==0)
 				k++;
 		}
@@ -24,6 +24,6 @@ int main_bench(){
 		}
 	}
 	mianji=(p-2)*(q-2);
-	printf("%d\n",mianji);
+	my_printf("%d\n",mianji);
 	return 0;
 }

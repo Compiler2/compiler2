@@ -38,12 +38,12 @@ int main_bench(){
          }
     if(b[x-2]==0){
                   for(i=0;i<x-1;i++){
-                                     printf("%c",b[i]);
+                                     my_printf("%c",b[i]);
                                      }
                   }
     else{
          for(i=0;i<x;i++){
-                                     printf("%c",b[i]);
+                                     my_printf("%c",b[i]);
                                      }
          }
     return 0;

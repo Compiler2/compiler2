@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,c=0,p=0,q=0;
 	int a[200],b[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i]==0){
@@ -36,10 +36,10 @@ int main_bench(){
 			c++;
 	}
 	if(c==n||p==q)
-		printf("Tie");
+		my_printf("Tie");
 	if(p>q)
-		printf("A");
+		my_printf("A");
 	if(p<q)
-		printf("B");
+		my_printf("B");
 	return 0;
 }

@@ -12,7 +12,7 @@ int main_bench()
 	int month,day,j;
      long year;
 	float total;
-	scanf("%ld%d%d",&year,&month,&day);
+	my_scanf("%ld%d%d",&year,&month,&day);
 		total=(year-1)*365+(year-1)/4-(year-1)/100+(year-1)/400;
 		if(month<=2)
 			total+=(month-1)*31+day;
@@ -31,13 +31,13 @@ int main_bench()
 		
 		switch(j)
 		{
-		case 0:printf("Sun.\n");break;
-		case 1:printf("Mon.\n");break;
-		case 2:printf("Tue.\n");break;
-		case 3:printf("Wed.\n");break;
-		case 4:printf("Thu.\n");break;
-		case 5:printf("Fri.\n");break;
-		case 6:printf("Sat.\n");break;
+		case 0:my_printf("Sun.\n");break;
+		case 1:my_printf("Mon.\n");break;
+		case 2:my_printf("Tue.\n");break;
+		case 3:my_printf("Wed.\n");break;
+		case 4:my_printf("Thu.\n");break;
+		case 5:my_printf("Fri.\n");break;
+		case 6:my_printf("Sat.\n");break;
 		}
 	
 	return 0;

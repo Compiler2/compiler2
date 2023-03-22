@@ -6,9 +6,9 @@ int main_bench()
 	int n,a[1000];
 	int i,j,k,o=0,p=1;
 	double b=1,c=2,w=3,s[100],y=0,e[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	do{
 		s[o]=1;
@@ -28,17 +28,17 @@ int main_bench()
 	}
 	for(i=0;i<n;i++){
 		if(a[i]==1){
-			printf("%.3lf\n",(double)c/b);
+			my_printf("%.3lf\n",(double)c/b);
 		}
 		if(a[i]==2){
 			e[i]=c/b+w/c;
-			printf("%.3lf\n",e[i]);
+			my_printf("%.3lf\n",e[i]);
 		}
 		if(a[i]>2){
 			for(j=0;j<a[i];j++){
 				e[i]+=s[j+1]/s[j];
 			}
-			printf("%.3lf\n",e[i]);
+			my_printf("%.3lf\n",e[i]);
 		}
 	}
 	return 0;

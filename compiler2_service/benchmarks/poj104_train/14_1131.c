@@ -10,12 +10,12 @@ int main_bench()
 {
 	int n,max1=0,max2=0,max3=0,stu1=0,stu2=0,stu3=0;
 	struct Student student[100000],*stu;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(stu=student;stu<student+n;stu++){
-		scanf("%d",&stu->num);
-		scanf("%d",&stu->yuwen);
-		scanf("%d",&stu->shuxue);
+		my_scanf("%d",&stu->num);
+		my_scanf("%d",&stu->yuwen);
+		my_scanf("%d",&stu->shuxue);
 		(stu->sum)=(stu->yuwen)+(stu->shuxue);
 		if(stu->sum>=max3){
 			if(stu->sum>=max2){
@@ -60,7 +60,7 @@ int main_bench()
 		}
 	}
 	stu=student;
-	printf("%d %d\n",(stu+stu1-1)->num,(stu+stu1-1)->sum);
-	printf("%d %d\n",(stu+stu2-1)->num,(stu+stu2-1)->sum);
-	printf("%d %d\n",(stu+stu3-1)->num,(stu+stu3-1)->sum);
+	my_printf("%d %d\n",(stu+stu1-1)->num,(stu+stu1-1)->sum);
+	my_printf("%d %d\n",(stu+stu2-1)->num,(stu+stu2-1)->sum);
+	my_printf("%d %d\n",(stu+stu3-1)->num,(stu+stu3-1)->sum);
 }

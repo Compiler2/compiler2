@@ -3,10 +3,10 @@
 int main_bench(){
   int n,a[300],i,min,max;
   float ave,sum=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
    sum=sum+a[i];
   }
   ave=sum/n;
@@ -24,11 +24,11 @@ int main_bench(){
   }
 
   if((max+min)>2*ave)
-  printf("%d",max);
+  my_printf("%d",max);
   else if((max+min)<2*ave)
-  printf("%d",min);
+  my_printf("%d",min);
   else
-  printf("%d,%d",min,max);
+  my_printf("%d,%d",min,max);
 
 
      }

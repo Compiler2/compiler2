@@ -11,11 +11,11 @@ int main_bench()
 	int n,i,p,q,result;
 	int k=0,t=0;
 	int temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",pat[i].num);
-		scanf("%d",&pat[i].age);
+		my_scanf("%s",pat[i].num);
+		my_scanf("%d",&pat[i].age);
 		if(pat[i].age>=60)
 		{
 			old[k].age=pat[i].age;
@@ -45,11 +45,11 @@ int main_bench()
 	}
 	for(result=0;result<k;result++)
 	{
-		printf("%s\n",old[result].num);
+		my_printf("%s\n",old[result].num);
 	}
 	for(result=0;result<t;result++)
 	{
-		printf("%s\n",you[result].num);
+		my_printf("%s\n",you[result].num);
 	}
 
 	return 0;

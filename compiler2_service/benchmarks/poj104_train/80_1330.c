@@ -6,7 +6,7 @@ int main_bench()
     int y1, y2, m1, m2, d1, d2, n1=0, n2, n3, num;
     int ly=0, i, a=0, b=0;
 
-    scanf("%d %d %d\n%d %d %d", &y1, &m1, &d1, &y2, &m2, &d2);
+    my_scanf("%d %d %d\n%d %d %d", &y1, &m1, &d1, &y2, &m2, &d2);
     if(y2-y1>0)
     {
         for(i=y1;i<y2;i++)
@@ -64,7 +64,7 @@ int main_bench()
     
     num=n1+n2+n3;
     
-    printf("%d\n", num);
+    my_printf("%d\n", num);
 
     return 0;
 }

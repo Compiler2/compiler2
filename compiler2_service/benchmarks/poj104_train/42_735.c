@@ -8,14 +8,14 @@ int *p;
 p=a;
 int n,m,i,k;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%d",p+i);
-scanf("%d",&m);
+my_scanf("%d",p+i);
+my_scanf("%d",&m);
 k=del(p,n,m);
 for(i=0;i<n-k-1;i++)
-printf("%d ",*(p+i));
-printf("%d",*(p+n-k-1));
+my_printf("%d ",*(p+i));
+my_printf("%d",*(p+n-k-1));
 }
 	int del(int *x,int n,int m)
 	{int i,j,k=0;

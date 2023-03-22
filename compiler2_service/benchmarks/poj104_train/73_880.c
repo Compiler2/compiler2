@@ -9,7 +9,7 @@ int main_bench()
     {
                     for(j=0;j<5;j++)
                     {
-                                    scanf("%d",&a[i][j]);
+                                    my_scanf("%d",&a[i][j]);
                                     b[i][j]=0;
                     }
     }
@@ -32,11 +32,11 @@ int main_bench()
                                           
                                           if(b[i][j]==2)
                                           {
-                                                        printf("%d %d %d",i+1,j+1,a[i][j]);flag=1;
+                                                        my_printf("%d %d %d",i+1,j+1,a[i][j]);flag=1;
                                           }
                     }
-                    printf("\n");
+                    my_printf("\n");
     }
-    if(!flag)printf("not found");
+    if(!flag)my_printf("not found");
     return 0;
 }

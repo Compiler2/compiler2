@@ -13,14 +13,14 @@ main_bench()
 }
 void r()
 {
-	scanf("%d%d",&c,&d);
+	my_scanf("%d%d",&c,&d);
 }
 void m(int s)
 {
 	int i,j,t;
 	for(i=0;i<s;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<s;i++)
 	{
@@ -36,12 +36,12 @@ void m(int s)
 	}
 	for(i=0;i<s;i++)
 	{
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 		if(i<s-1)
 			kg();
 	}
 }
 void kg()
 {
-	printf(" ");
+	my_printf(" ");
 }

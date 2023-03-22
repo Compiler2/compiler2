@@ -24,7 +24,7 @@ int main_bench()
                         if(((e==1 ||e==2)&&es) ||((e!=1&&e!=2)&&(es==0)))
                         if(e!=2&&e!=3)
                         {
-                                       printf("%d %d %d %d %d",a,b,c,d,e);
+                                       my_printf("%d %d %d %d %d",a,b,c,d,e);
                                        }
                                        }
                                        }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *q;
 	q=(int *)malloc(n*sizeof(int));
 	char *str;
@@ -37,8 +37,8 @@ int main_bench()
 	   }
 	  }
 	for(i=0;i<(n-1);i++)
-		printf("%d\n",*(q+i));
-	printf("%d",*(q+i));
+		my_printf("%d\n",*(q+i));
+	my_printf("%d",*(q+i));
 }
 
 

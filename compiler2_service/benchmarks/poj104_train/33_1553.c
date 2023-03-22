@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 char a[n][256];
 char b[n][256];
 
 int i;
 for(i=1;i<=n;i++){
-scanf("%s\n",a[i-1]);
+my_scanf("%s\n",a[i-1]);
 int x=1;
 int t;
 for(t=1;t!=0;x++){
@@ -21,8 +21,8 @@ if(a[i-1][x-1]==0){t=0;}
 
 }
 
-for(int i=1;i<n;i++){printf("%s\n",b[i-1]);}
-printf("%s",b[n-1]);
+for(int i=1;i<n;i++){my_printf("%s\n",b[i-1]);}
+my_printf("%s",b[n-1]);
 return 0;
 }
 

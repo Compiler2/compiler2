@@ -4,15 +4,15 @@ int main_bench()
 {
 int su(int a);
 int n,i,q=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n-2;i++)
 if(su(i)==1&&su(i+2)==1)
 {
-printf("%d %d\n",i,i+2);
+my_printf("%d %d\n",i,i+2);
 q=1;
 }
 if(q==0)
-printf("empty");
+my_printf("empty");
 }
 int su(int a)
 {

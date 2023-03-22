@@ -5,9 +5,9 @@ int main_bench(){
 	int N,e,h;
 	int s[500],j[500];
 	int i=0,k=0,g=1;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-		scanf("%d",&(s[i]));
+		my_scanf("%d",&(s[i]));
 		if(s[i]%2!=0){
 			j[k]=s[i];
 			k++;
@@ -29,10 +29,10 @@ int main_bench(){
 	  
 
            if(k<h-1){
-		  printf("%d,",j[k]);
+		  my_printf("%d,",j[k]);
 	  }
 	  if(k==h-1){
-		  printf("%d",j[k]);
+		  my_printf("%d",j[k]);
 
 	  }
 	}

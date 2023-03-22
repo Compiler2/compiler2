@@ -3,8 +3,8 @@
 int main_bench()
 {
     int s1,s2,s3,e1,e2,e3,i,count=0;
-    scanf("%d %d%d",&s1,&s2,&s3);
-    scanf("%d%d%d",&e1,&e2,&e3);
+    my_scanf("%d %d%d",&s1,&s2,&s3);
+    my_scanf("%d%d%d",&e1,&e2,&e3);
     if(s1==e1)
     {
         if(s2==e2)
@@ -163,7 +163,7 @@ int main_bench()
             count=count+e3;
         }
     }
-    printf("%d",count);
+    my_printf("%d",count);
     return 0;
 }
 

@@ -3,20 +3,20 @@
 int main_bench()
 {
 int a,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 if(n<10)
-printf("%d",n);
+my_printf("%d",n);
 else if(n==10)
-printf("1");
+my_printf("1");
 else
 {do
 {a=n%10;
-printf("%d",a);
+my_printf("%d",a);
 n=(n-a)/10;
 }
 while(n>=10);
 a=n;
-printf("%d",a);
+my_printf("%d",a);
 }
 return 0;
 }

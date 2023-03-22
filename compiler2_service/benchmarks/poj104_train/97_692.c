@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int money;
-	scanf("%d",&money);
+	my_scanf("%d",&money);
 	int a,b,c,d,e,f;
 	a=money/100;
 	b=money%100/50;
@@ -11,10 +11,10 @@ int main_bench()
 	d=(money%50-c*20)/10;
 	e=money%10/5;
 	f=money%10-e*5;
-	printf("%d\n",a);
-	printf("%d\n",b);
-	printf("%d\n",c);
-	printf("%d\n",d);
-	printf("%d\n",e);
-	printf("%d\n",f);
+	my_printf("%d\n",a);
+	my_printf("%d\n",b);
+	my_printf("%d\n",c);
+	my_printf("%d\n",d);
+	my_printf("%d\n",e);
+	my_printf("%d\n",f);
 }

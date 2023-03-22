@@ -5,7 +5,7 @@ int main_bench()
 	int i=0,j,n,b,a[300];
 	char d,c[10000];
 	b=0;
-	scanf("%s",c);
+	my_scanf("%s",c);
 	for(j=0;j<strlen(c);j++)
 	{d=c[j];
 	
@@ -19,8 +19,8 @@ int main_bench()
 	for(i=0;i<n;i++)if(a[i]>b)b=a[i];
 	j=0;
 	for(i=0;i<n;i++)if(a[i]>j&&a[i]<b)j=a[i];
-	if(j==0)printf("No");
-	else printf("%d",j);
+	if(j==0)my_printf("No");
+	else my_printf("%d",j);
 }
 
 		

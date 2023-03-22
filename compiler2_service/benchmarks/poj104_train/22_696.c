@@ -9,7 +9,7 @@ int main_bench(){
 	i=0;
 	while(i<=300)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]>max)
 		{
 			min=max;
@@ -23,6 +23,6 @@ int main_bench(){
 		if(getchar()!=',')
 		break;
 	}
-	if(min==-1) printf("No");
-	else printf("%d",min);
+	if(min==-1) my_printf("No");
+	else my_printf("%d",min);
 }

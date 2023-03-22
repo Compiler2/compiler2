@@ -13,9 +13,9 @@ struct
 int main_bench()
 {
 	int N, i, max=0, p=0, total=0, sch[101]={0};
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].gb,&stu[i].xb,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banji,&stu[i].gb,&stu[i].xb,&stu[i].paper);
 	for(i=0;i<N;i++)
 	{  
 		if(stu[i].qimo>80&&stu[i].paper>0)
@@ -39,5 +39,5 @@ int main_bench()
 		}
 		total=total+sch[i];
 	}
-	printf("%s\n%d\n%d\n",stu[p].name,sch[p],total);
+	my_printf("%s\n%d\n%d\n",stu[p].name,sch[p],total);
 }

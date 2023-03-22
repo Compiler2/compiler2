@@ -18,8 +18,8 @@ int main_bench()
      {b[i]=(char)b[i]+32;}
   }
   c=strcmp(a,b);
-  if(c>0)printf(">\n");
-  else if(c==0)printf("=\n");
-  else if(c<0)printf("<\n");
+  if(c>0)my_printf(">\n");
+  else if(c==0)my_printf("=\n");
+  else if(c<0)my_printf("<\n");
   return 0;
 }

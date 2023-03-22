@@ -8,10 +8,10 @@ int main_bench()
 
     a=c=e=g=h=j=31;
     d=f=i=k=30;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(x=0;x<n;x++)
 	{
-	scanf("%d%d%d",&year,&m1,&m2);
+	my_scanf("%d%d%d",&year,&m1,&m2);
 
 	if((year%4!=0)||(year%100==0&&year%400!=0))
 		b=28;
@@ -47,9 +47,9 @@ int main_bench()
 	case 12:day2=a+b+c+d+e+f+g+h+i+j+k+date;break;}
 
 	if((day-day2)%7==0)
-	printf("YES\n");
+	my_printf("YES\n");
 	else
-	printf("NO\n");}
+	my_printf("NO\n");}
 	return 0;
 }
 

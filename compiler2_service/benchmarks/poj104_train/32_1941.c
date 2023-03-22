@@ -4,11 +4,11 @@ int main_bench()
 {
 	char a[101],b[101],c[101],d[101];
 	int n,i,j,n1,n2,k,m,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
 		memset(c,0,sizeof(c));
-		scanf("%s%s",a,b);
+		my_scanf("%s%s",a,b);
 		n1=strlen(a);
 		n2=strlen(b);
 		for (i=0;i<n1;i++)
@@ -55,13 +55,13 @@ int main_bench()
 		}
 		if (i==n1)
 		{
-			printf("0\n");
+			my_printf("0\n");
 			continue;
 		}
 		m=i;
 		for(i=m;i<n1;i++)
-			printf("%d",c[i]);
-		printf("\n");
+			my_printf("%d",c[i]);
+		my_printf("\n");
 	}
 	return 0;
 }

@@ -11,10 +11,10 @@ int main_bench()
 	int n,i,p=0,j;
 	float sum=0,t=0;
 	int a[301],b[301];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	sum=sum/n;
@@ -42,11 +42,11 @@ int main_bench()
 		}
 	}
 	if (p==1)
-		printf("%d",b[1]);
+		my_printf("%d",b[1]);
 	else
 	{
-		printf("%d",b[1]);
+		my_printf("%d",b[1]);
 		for (i=2;i<=p;i++)
-			printf(",%d",b[i]);
+			my_printf(",%d",b[i]);
 	}
 }

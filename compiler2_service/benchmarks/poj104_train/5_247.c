@@ -3,14 +3,14 @@
 
 int main_bench(){
 	double k;
-	scanf("%lf",&k);
+	my_scanf("%lf",&k);
 	char moban[500],hubu[500];
-	scanf("%s",moban);
-	scanf("%s",hubu);
+	my_scanf("%s",moban);
+	my_scanf("%s",hubu);
 	int m,n;
 	m=strlen(moban);
 	n=strlen(hubu);
-	if(m!=n) printf("error");
+	if(m!=n) my_printf("error");
 	else{
 		int count=0;
 		for(int i=0;i<n;i++){
@@ -19,7 +19,7 @@ int main_bench(){
 			
 		
 		}
-		if(count!=0) printf("error");
+		if(count!=0) my_printf("error");
 		else{
 			int sum=0;
 			for(int i=0;i<n;i++){
@@ -28,8 +28,8 @@ int main_bench(){
 				
 				}
 				double result=(double)sum/n;
-				if(result>k)printf("yes");
-				else printf("no");
+				if(result>k)my_printf("yes");
+				else my_printf("no");
 			
 			
 			}

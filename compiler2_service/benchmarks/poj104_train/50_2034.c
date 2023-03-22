@@ -4,7 +4,7 @@ int main_bench()
 {
 	int w,i,j;
 	int a[13][32];
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	a[0][0]=w;
 	for(i=1;i<=12;i++)
 	{
@@ -46,7 +46,7 @@ int main_bench()
 	{
 		if(a[i][13]==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

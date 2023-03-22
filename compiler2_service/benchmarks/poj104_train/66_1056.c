@@ -8,7 +8,7 @@ int isrunnian(int year){
 int main_bench(){
     int i,year,month,date,sum;
     int montha[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-    scanf("%d%d%d",&year,&month,&date);
+    my_scanf("%d%d%d",&year,&month,&date);
     sum=(year%7+year/4-year/100+year/400);
     for(i=1;i<month;i++){
                          sum+=montha[i];
@@ -23,19 +23,19 @@ int main_bench(){
 
     
     if(d==1)
-    printf("Mon.");
+    my_printf("Mon.");
     if(d==2)
-    printf("Tue.");
+    my_printf("Tue.");
     if(d==3)
-    printf("Wed.");
+    my_printf("Wed.");
     if(d==4)
-    printf("Thu.");
+    my_printf("Thu.");
     if(d==5)
-    printf("Fri.");
+    my_printf("Fri.");
     if(d==6)
-    printf("Sat.");
+    my_printf("Sat.");
     if(d==0)
-    printf("Sun.");
+    my_printf("Sun.");
     
 
     

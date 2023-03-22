@@ -16,6 +16,6 @@ int main_bench(){
         }
     }
     a[n-q]='\0';
-    printf("%s",a);
+    my_printf("%s",a);
     return 0;
 }

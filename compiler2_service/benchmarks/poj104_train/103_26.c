@@ -20,7 +20,7 @@ main_bench()
            count++;
            else
            {
-               printf("(%c,%d)",a[i],count);
+               my_printf("(%c,%d)",a[i],count);
            i=j;
            break;
            }

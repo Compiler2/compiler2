@@ -34,7 +34,7 @@ int main_bench()
 {
     int n,m,i,j,w,c;
     int **p;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     p=(int **)malloc(m*sizeof(int *));
     for(i=0;i<m;i++)
     *(p+i)=(int *)malloc(m*sizeof(int));
@@ -43,7 +43,7 @@ int main_bench()
         n=m;
         for(i=0;i<n;i++)
         for(j=0;j<n;j++)
-        scanf("%d",*(p+i)+j);
+        my_scanf("%d",*(p+i)+j);
         for(i=0;i<n;i++)
         zero1(p[i],n);
         for(i=0;i<n;i++)
@@ -59,7 +59,7 @@ int main_bench()
             zero2(p,n,j);
             c+=p[1][1];
         }
-        printf("%d\n",c);
+        my_printf("%d\n",c);
     }
     for(i=0;i<n;i++)
     free(p[i]);

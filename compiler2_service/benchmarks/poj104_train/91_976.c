@@ -17,5 +17,5 @@ int main_bench()
 	}
 	b[i]=a[0]+*p;
 	b[i+1]='\0';
-	printf("%s",b);
+	my_printf("%s",b);
 }

@@ -6,12 +6,12 @@ int main_bench()
 {
 	int i,j,n,day,k=1,num=0;
 	char a[101][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 again:;
 	for(i=0;i<n;i++)
 	{
@@ -57,5 +57,5 @@ again:;
 			}
 		}
 	}
-	printf("%d",num);
+	my_printf("%d",num);
 }

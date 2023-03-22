@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int A,B,C,a,b,c,d,e,f,g,h,i,j,k,l,m;
-	scanf("%d%d%d",&A,&B,&C);
+	my_scanf("%d%d%d",&A,&B,&C);
 	a=31;
 	if((A%4==0 && A%100!=0) || A%400==0)
 			b=29;
@@ -44,6 +44,6 @@ int main_bench()
 		m=C+a+b+c+d+e+f+g+h+i+j;
     if(B==12)
 		m=C+a+b+c+d+e+f+g+h+i+j+k;
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	return 0;
 }

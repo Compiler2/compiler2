@@ -9,7 +9,7 @@ int main_bench()
 		t_max=0;
 		for(j=0;j<5;j++)
 		{
-			scanf("%d ",&t);
+			my_scanf("%d ",&t);
 			map[i][j]=t;
 			if(t_max<t)
 			{
@@ -27,11 +27,11 @@ int main_bench()
 		}
 		if(j==5)
 		{
-			printf("%d %d %d\n",i+1,max[i]+1,map[i][max[i]]);
+			my_printf("%d %d %d\n",i+1,max[i]+1,map[i][max[i]]);
 			b=0;
 		}
 	}
 	if(b)
-		printf("not found\n");
+		my_printf("not found\n");
 	return 0;
 }

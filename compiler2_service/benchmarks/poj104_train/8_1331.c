@@ -3,13 +3,13 @@
 void input(int *p1, int *p2, int **pA, int **pB)
 {
 int i;
-scanf("%d %d", p1, p2);
+my_scanf("%d %d", p1, p2);
 *pA=(int*)malloc((*p1)*sizeof(int));
 *pB=(int*)malloc((*p2)*sizeof(int));  
  for (i=0; i<*p1; i++)
-scanf("%d", *pA+i);
+my_scanf("%d", *pA+i);
  for (i=0; i<*p2; i++)
-scanf("%d", *pB+i);    
+my_scanf("%d", *pB+i);    
 }
 void sort(int p, int *pX)
 {
@@ -42,8 +42,8 @@ void output(int p, int *pC)
 {
  int i;
  for (i=0; i<p-1; i++)
-     printf("%d ", pC[i]);
- printf("%d\n", pC[p-1]);
+     my_printf("%d ", pC[i]);
+ my_printf("%d\n", pC[p-1]);
  free(pC);  
 }
 main_bench()

@@ -6,17 +6,17 @@ int main_bench()
 	int n,k,j;
 	for(j=0;j<6;j++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	if(n<0)
 	{
 		n=-n;
 	    k=reverse(n);
-	    printf("-%d\n",k);
+	    my_printf("-%d\n",k);
 	}
 	else
 	{
 		 k=reverse(n);
-	    printf("%d\n",k);
+	    my_printf("%d\n",k);
 	}
 	}
 	return 0;

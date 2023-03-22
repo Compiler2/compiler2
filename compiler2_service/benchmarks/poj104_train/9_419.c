@@ -9,10 +9,10 @@ pa[100];
 struct P pb[100];
 int main_bench(){
 	int n,r=0,s=0,i,o,p,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct P temp;
 	for(i=0;i<n;i++){
-              scanf("%s%d",temp.id,&(temp.age));
+              my_scanf("%s%d",temp.id,&(temp.age));
 			  if(temp.age>=60){
 				  pb[r]=temp;
 				  r++;
@@ -31,10 +31,10 @@ int main_bench(){
 				  }
 			  }
 			  for(j=0;j<r;j++){
-				  printf("%s\n",pb[j].id);
+				  my_printf("%s\n",pb[j].id);
 			  }
 			  for(k=0;k<s;k++){
-				  printf("%s\n",pa[k].id);
+				  my_printf("%s\n",pa[k].id);
 			  }
 	return 0;
 }

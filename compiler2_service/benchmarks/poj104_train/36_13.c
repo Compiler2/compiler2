@@ -14,9 +14,9 @@ int main_bench()
 char b[100];
 int i;
 for(i=0;i<0;i++) {a[i]='\0';b[i]='\0';}
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 change(a);
 change(b);
-for(i=0;a[i]!='\0';i++) {if(a[i]!=b[i]) {printf("NO");break;}}
-if(a[i]=='\0') printf("YES");
+for(i=0;a[i]!='\0';i++) {if(a[i]!=b[i]) {my_printf("NO");break;}}
+if(a[i]=='\0') my_printf("YES");
 }

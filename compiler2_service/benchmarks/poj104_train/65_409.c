@@ -20,12 +20,12 @@ int cai(int a,int b)
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[200],b[200];
       int i,j,k;
       j=0;k=0;
       for(i=0;i<n;i++)
-      scanf("%d %d",&a[i],&b[i]);
+      my_scanf("%d %d",&a[i],&b[i]);
       for(i=0;i<n;i++)
       {
                       if(cai(a[i],b[i])==1)
@@ -34,9 +34,9 @@ main_bench()
                       k++;
       }
       if(j==k)
-      printf("Tie");
+      my_printf("Tie");
       else if(j>k)
-      printf("A");
+      my_printf("A");
       else
-      printf("B");
+      my_printf("B");
       }

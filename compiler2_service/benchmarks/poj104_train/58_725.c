@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j=0,t,n,r;
     char str[100]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	getchar();
 	do{
 		r=0;
@@ -34,9 +34,9 @@ int main_bench()
 			}
 		}
 		if(r==t)
-			printf("1\n");
+			my_printf("1\n");
 		else
-			printf("0\n");
+			my_printf("0\n");
 		j++;
 	}while(j<n);
 	return 0;

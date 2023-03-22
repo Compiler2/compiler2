@@ -28,7 +28,7 @@ int main_bench()
 	if(n==1&&flag==1)
 		flag=0;
 	if(flag==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -43,7 +43,7 @@ int main_bench()
 			if(a[i]>max2)
 				max2=a[i];
 		}
-		printf("%d",max2);
+		my_printf("%d",max2);
 	}
 	return 0;
 }

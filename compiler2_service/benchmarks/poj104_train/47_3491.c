@@ -14,10 +14,10 @@ int main_bench()
 int read()
 {
     int i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=1;i<=n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     return 0;
 }
@@ -35,9 +35,9 @@ void print()
     int i;
     for (i=1;i<n;i++)
     {
-        printf("%d ",b[i]);
+        my_printf("%d ",b[i]);
     }
-    printf("%d",b[n]);
+    my_printf("%d",b[n]);
     return;
 }
 

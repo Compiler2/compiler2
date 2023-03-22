@@ -11,12 +11,12 @@ int main_bench()
 {
 	int n,i,j;
 	struct student stu[4],temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<3;i++)
 	stu[i].total=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&stu[3].num,&stu[3].yuwen,&stu[3].math);
+		my_scanf("%d%d%d",&stu[3].num,&stu[3].yuwen,&stu[3].math);
 		stu[3].total=stu[3].yuwen+stu[3].math;
 		temp=stu[3];
 		for(j=2;j>=0;j--)
@@ -32,6 +32,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<3;i++)
-	printf("%d %d\n",stu[i].num,stu[i].total);
+	my_printf("%d %d\n",stu[i].num,stu[i].total);
 	return 0;
 }

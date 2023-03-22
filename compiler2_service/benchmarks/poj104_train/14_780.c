@@ -12,10 +12,10 @@ int main_bench()
         int a1,b1,a2,b2,a3,b3;
 		int c1,c2;
 		int max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&students[i].number,&students[i].chinese,&students[i].math);
+		my_scanf("%d%d%d",&students[i].number,&students[i].chinese,&students[i].math);
 		students[i].sum=students[i].chinese+students[i].math;
 	}
 	max=0;
@@ -50,9 +50,9 @@ int main_bench()
 			b3=students[i].sum;
 		}
 	}
-	printf("%d %d\n",a1,b1);
-    printf("%d %d\n",a2,b2);
-    printf("%d %d\n",a3,b3);
+	my_printf("%d %d\n",a1,b1);
+    my_printf("%d %d\n",a2,b2);
+    my_printf("%d %d\n",a3,b3);
 	return 0;
 }
 

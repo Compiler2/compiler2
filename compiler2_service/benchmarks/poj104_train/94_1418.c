@@ -3,9 +3,9 @@
 int main_bench(){
 int sz[500];
 int e,k,i,m,n,x,a,sum=0;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(n=1;n<=m;n++){
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a%2!=0){
 		sum+=1;
 		sz[sum-1]=a;
@@ -21,8 +21,8 @@ for(k =1;k<=sum;k++){
 	}
 }
 for(x=1;x<=sum-1;x++){
-	printf("%d,",sz[x-1]);
+	my_printf("%d,",sz[x-1]);
 }
-printf("%d",sz[sum-1]);
+my_printf("%d",sz[sum-1]);
     return 0;
 }

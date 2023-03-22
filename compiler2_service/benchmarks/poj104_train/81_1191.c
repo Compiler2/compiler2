@@ -8,14 +8,14 @@ int main_bench(){
 	int i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	result=judge(n,m);
 	int k[5];
 	if(result==0){
-		printf("error");
+		my_printf("error");
 	}else if(result==1){
 		for(i=0;i<5;i++){
 			k[i]=sz[n][i];
@@ -25,9 +25,9 @@ int main_bench(){
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
 				if(j!=4){
-					printf("%d ",sz[i][j]);
+					my_printf("%d ",sz[i][j]);
 				}else{
-					printf("%d\n",sz[i][4]);
+					my_printf("%d\n",sz[i][4]);
 				}
 			}
 		}

@@ -12,7 +12,7 @@ int main_bench()
 	long int a,b,i,j,l,t,y,k;
 	unsigned long  temp=0,x;
 	char p[100]={0},re[100]={0};
-	scanf("%d %s %d",&a,p,&b);
+	my_scanf("%d %s %d",&a,p,&b);
 	l=strlen(p);
 	for (i=0;i<l;i++)
 	{
@@ -41,6 +41,6 @@ int main_bench()
 			re[j-1-k]='0'+t;
 		temp-=x*t;
 	}
-	printf("%s",re);
+	my_printf("%s",re);
 	return (0);
 }

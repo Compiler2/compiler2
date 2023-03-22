@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,n,a,b,c,p,m,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		p=0;
-		scanf("%d %d %d",&a,&b,&c);
+		my_scanf("%d %d %d",&a,&b,&c);
 		m=(b>c)?b:c;
 		q=(b<c)?b:c;
         if((a%4==0)&&(a%100!=0)||(a%400==0)){
@@ -25,9 +25,9 @@ int main_bench()
 	           p+=30;	           
         }
         if(p%7==0)
-        	printf("YES\n");
+        	my_printf("YES\n");
 		if(p%7!=0)
-		    printf("NO\n");         		
+		    my_printf("NO\n");         		
 	}
 	
 }

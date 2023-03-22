@@ -3,10 +3,10 @@
 int main_bench(){
     int n,i,j,len;
     char a[33],b[33];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
                      len=0;
-                     scanf("%s\n",a);
+                     my_scanf("%s\n",a);
                      len=strlen(a);
                      if(a[len-1]=='r'){
                                        for(j=0;j<len-2;j++){
@@ -20,7 +20,7 @@ int main_bench(){
                                        for(j=0;j<len-3;j++){
                                                             b[j]=a[j];}
                                        b[len-3]='\0';}
-                     printf("%s\n",b);
+                     my_printf("%s\n",b);
                      }
     return 0;
 }

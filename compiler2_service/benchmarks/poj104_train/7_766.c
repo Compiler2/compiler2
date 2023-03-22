@@ -17,11 +17,11 @@ int main_bench()
 			if(strcmp(word,sub)==0){
 				strcpy(word,rep);
 				for(j=0;j<i;j++){
-					printf("%c",str[j]);
+					my_printf("%c",str[j]);
 				}
-				printf("%s",word);
+				my_printf("%s",word);
 				for(j=i+len;str[j]!=0;j++){
-					printf("%c",str[j]);
+					my_printf("%c",str[j]);
 				}
 				a=1;
 				break;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 	}
 	if(a==0){
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	return 0;
 }

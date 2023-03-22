@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,j;
 	int n,m;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	int *a=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",a+i);
+		my_scanf("%d",a+i);
 	}
 	int t,t1;
 	for(j=0;j<m;j++)
@@ -23,8 +23,8 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d",a[i]);
-		if(i<n-1)printf(" ");
+		my_printf("%d",a[i]);
+		if(i<n-1)my_printf(" ");
 	}
 	return 0;
 }

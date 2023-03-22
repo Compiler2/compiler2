@@ -7,5 +7,5 @@ int main_bench()
  for(p=x;*(p+1)!='\0';p++)
 	 *p=*p+*(p+1);
  *p=*p+fir;
- printf("%s",x);
+ my_printf("%s",x);
 }

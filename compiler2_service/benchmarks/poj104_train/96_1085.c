@@ -5,7 +5,7 @@ int main_bench()
     char str1[100];
     int n1[100],s[100];
     int i,n,y;
-    scanf("%s",&str1);
+    my_scanf("%s",&str1);
     n=strlen(str1);
     for(i=0;i<n;i++)
         n1[i]=str1[i]-'0';
@@ -15,16 +15,16 @@ int main_bench()
         s[i-1]=(y*10+n1[i])/13;
         y=(y*10+n1[i])%13;
     }
-    if(n==1) printf("0\n");
+    if(n==1) my_printf("0\n");
     else{
     if(s[0]==0)
         for(i=1;i<n-2;i++)
-            printf("%d",s[i]);
+            my_printf("%d",s[i]);
     else
         for(i=0;i<n-2;i++)
-            printf("%d",s[i]);
-    printf("%d\n",s[n-2]);}
-    printf("%d\n",y);
+            my_printf("%d",s[i]);
+    my_printf("%d\n",s[n-2]);}
+    my_printf("%d\n",y);
     return 0;
 }
     

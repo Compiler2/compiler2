@@ -15,7 +15,7 @@ int main_bench(){
 	*q=*(p-1)+*t;
 
 	for(p=s1;p<s1+strlen(s);p++){
-		printf("%c",*p);
+		my_printf("%c",*p);
 	}
 
 	return 0;

@@ -6,7 +6,7 @@ int main_bench()
 	long a,b,temp,temp1=0,temp2,temp3;
 	int n,i,j,k=0;
 	char str[1000];
-	scanf("%d%s%d",&a,&str,&b);
+	my_scanf("%d%s%d",&a,&str,&b);
 	n=strlen(str);
 	for(i=0;i<n;i++)
 	{
@@ -43,28 +43,28 @@ int main_bench()
 		{
 			if(temp1/mizhi(b,k-i)<=9)
 			{
-		printf("%ld",temp1/mizhi(b,k-i));
+		my_printf("%ld",temp1/mizhi(b,k-i));
 		temp1=temp1%mizhi(b,k-i);
 			}
 			else
 			{
-			printf("%c",55+temp1/mizhi(b,k-i));
+			my_printf("%c",55+temp1/mizhi(b,k-i));
 		temp1=temp1%mizhi(b,k-i);
 			}
 		}
 		else if(temp1<b&&k-i!=0)
 		{
-			printf("0");
+			my_printf("0");
 		}
 		else
 		{
 			if(temp1<=9)
 			{
-		printf("%ld",temp1);
+		my_printf("%ld",temp1);
 			}
 			else
 			{
-			printf("%c",55+temp1);
+			my_printf("%c",55+temp1);
 			}
 			break;
 		}

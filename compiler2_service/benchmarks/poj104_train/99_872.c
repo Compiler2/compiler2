@@ -5,10 +5,10 @@ int main_bench()
 	int n,i;
 	double a,b,c,d;
 	double x,y,z,u;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100];
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]<=18)
@@ -24,5 +24,5 @@ int main_bench()
 	y=(double)(b/n*100);
 	z=(double)(c/n*100);
 	u=(double)(d/n*100);
-	printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%\n",x,y,z,u);
+	my_printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\n60??: %.2lf%\n",x,y,z,u);
 }

@@ -9,16 +9,16 @@ main_bench()
 	int min=1000,max=0;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(a[i]<min) min=a[i];
 		if(c=='\n') break;
 	}
 	m=i+1;
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%c",&b[i],&c);
+		my_scanf("%d%c",&b[i],&c);
 		if(b[i]>max) max=b[i];
-	}printf("%d",m);
+	}my_printf("%d",m);
 	int t[1500],M;
 	for(i=min;i<=max;i++)
 	{
@@ -33,5 +33,5 @@ main_bench()
 	{
 		if(t[i]>M) M=t[i];
 	}
-	printf(" %d",M);
+	my_printf(" %d",M);
 }

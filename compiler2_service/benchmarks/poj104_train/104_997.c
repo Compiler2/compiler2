@@ -7,7 +7,7 @@ static int a[16];
 static int b[16];
 a[0]=10000;
 b[0]=20000;
-scanf("%d %d",&x,&y);
+my_scanf("%d %d",&x,&y);
 a[1]=x;
 b[1]=y;
 for(i=2;x>1;i++)
@@ -23,7 +23,7 @@ do{
      m--;
      n--;
    }while(a[m]==b[n]);
-printf("%d",a[m+1]);
+my_printf("%d",a[m+1]);
 }
 
   

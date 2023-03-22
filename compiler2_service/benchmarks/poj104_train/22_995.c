@@ -7,7 +7,7 @@ int main_bench()
 	char c=',';
 	for(i=0;c!='\0'&&c!='\n';i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 	}
 	max=a[0];
 	n=i;
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	m=j;
 	if(m==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		second=b[0];
@@ -36,7 +36,7 @@ int main_bench()
 			if(second<b[j])
 				second=b[j];
 		}
-		printf("%d",second);
+		my_printf("%d",second);
 	}
 	return 0;
 }

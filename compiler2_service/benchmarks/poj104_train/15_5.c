@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int a,b[100][100]={1};
-	scanf ("%d\n",&a);
+	my_scanf ("%d\n",&a);
 	int i,j;
 	for (  i=0;i<=a-1;i++)
 	{
 		for (  j=0;j<=a-1;j++)
 		{
-			scanf ("%d",&b[i][j]);
+			my_scanf ("%d",&b[i][j]);
 		};
 	}
 	int s=0,l=0;
@@ -40,5 +40,5 @@ int main_bench()
 	}
 	
 	int sum=l*k;
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

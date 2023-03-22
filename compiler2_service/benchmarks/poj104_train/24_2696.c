@@ -6,9 +6,9 @@ int main_bench() {
     int max_len = 0;
     int min_len = N;
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while (n-->0) {
-        scanf("%s",s);
+        my_scanf("%s",s);
         int len = strlen(s);
         if ( len > max_len) {
             max_len = len;
@@ -19,5 +19,5 @@ int main_bench() {
             strcpy(min,s);
         }
     }
-    printf("%s\n%s\n",max,min );
+    my_printf("%s\n%s\n",max,min );
 }

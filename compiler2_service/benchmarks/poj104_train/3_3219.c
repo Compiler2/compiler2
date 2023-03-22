@@ -4,9 +4,9 @@ int main_bench(){
 	int n,k,i,a,b;
 	int sz[1000];
 	int ew[1000][1000];
-	scanf("%d%d\n",&n,&k);
+	my_scanf("%d%d\n",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(a=0;a<n-1;a++){
 		for(b=a+1;b<n;b++){
@@ -20,7 +20,7 @@ int main_bench(){
 	for(a=0;a<n-1;a++){
 		for(b=a+1;b<n;b++){
 			if(ew[a][b]==k){
-			    printf("yes");
+			    my_printf("yes");
 				break;
 			}
 		}
@@ -30,7 +30,7 @@ int main_bench(){
 		}
 	}
 	if((a==n-1)&&(b==n)){
-	    printf("no");
+	    my_printf("no");
 	}
 	return 0;
 }

@@ -13,11 +13,11 @@ int main_bench()
 	}stu[100];
 	int n,i,max,all=0;
 	int reward[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		reward[i]=0;
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].num1,&stu[i].num2,&stu[i].isstu,&stu[i].iswest,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].num1,&stu[i].num2,&stu[i].isstu,&stu[i].iswest,&stu[i].paper);
 	for(i=0;i<n;i++)
 	{
 		if(stu[i].num1>80&&stu[i].paper>=1)
@@ -40,6 +40,6 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(max==reward[i])
 			break;
-	printf("%s\n%d\n%d\n",stu[i].name,reward[i],all);
+	my_printf("%s\n%d\n%d\n",stu[i].name,reward[i],all);
 }
 	

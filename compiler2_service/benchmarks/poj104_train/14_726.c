@@ -10,9 +10,9 @@ int main_bench()
 {
 	int n, i, temp1, temp2;
 	student a[100002];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 0; i < n; i++) {
-		scanf("%d%d%d", &a[i].d, &temp1, &temp2);
+		my_scanf("%d%d%d", &a[i].d, &temp1, &temp2);
 		a[i].score = temp1 + temp2;
 	}
 
@@ -35,10 +35,10 @@ int main_bench()
 		}
 	}
 
-	printf("%d %d\n", max1.d, max1.score);
+	my_printf("%d %d\n", max1.d, max1.score);
 	if (max2.d != -1)
-		printf("%d %d\n", max2.d, max2.score);
+		my_printf("%d %d\n", max2.d, max2.score);
 	if (max3.d != -1)
-		printf("%d %d\n", max3.d, max3.score);
+		my_printf("%d %d\n", max3.d, max3.score);
 	return 0;
 } 

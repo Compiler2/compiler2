@@ -8,8 +8,8 @@ int main_bench()
        int now;
        int answer;
    }a[11][11];
-  scanf("%d",&m);
-  scanf("%d",&n);
+  my_scanf("%d",&m);
+  my_scanf("%d",&n);
   for (i=0;i<11;i++)
   for (j=0;j<11;j++)
   a[i][j].now=0;
@@ -26,7 +26,7 @@ int main_bench()
      for (i=1;i<10;i++)
     { 
      for (j=1;j<9;j++)
-     printf("%d ",a[i][j].now);
-     printf("%d\n",a[i][9].now);
+     my_printf("%d ",a[i][j].now);
+     my_printf("%d\n",a[i][9].now);
     }
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int flag,i,j,k=0,l,b[100]={0},p;
 	int a[20000]={0};
 	int v,w,x,y,z;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		flag=1;
@@ -49,14 +49,14 @@ int main_bench()
 		}
 	}
 	
-	if (o==0)printf("no");
+	if (o==0)my_printf("no");
 	else 
 	{
 		for(p=0;p<o-1;p++)
 		{
-			printf("%d,",b[p]);
+			my_printf("%d,",b[p]);
 		}
-		printf("%d",b[o-1]);
+		my_printf("%d",b[o-1]);
 	}
 
 }

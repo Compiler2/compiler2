@@ -25,7 +25,7 @@ int main_bench()
 	m=j;
 	for(m=j;m>=1;m--)
 	{
-		printf("%s ",s[m]);
+		my_printf("%s ",s[m]);
 	}
-	printf("%s",s[0]);
+	my_printf("%s",s[0]);
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int i,s=0,k=0,n,b,c,a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {k++;
      a=k%7 ;
@@ -14,6 +14,6 @@ int main_bench()
        s+=i*i;
       }
     }
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

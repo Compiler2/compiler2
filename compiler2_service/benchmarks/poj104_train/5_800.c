@@ -5,13 +5,13 @@ int main_bench(){
 double n,r;
 int m=0,i,s=0;
 char a[500],b[500];
-scanf("%lf",&n);
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%lf",&n);
+my_scanf("%s",a);
+my_scanf("%s",b);
 int x=strlen(a);
 int y=strlen(b);
 if(x!=y){
-         printf("error");
+         my_printf("error");
          }else{
                for(i=0;i<x;i++){
                                  if(!(((a[i]=='A')||(a[i]=='T')||(a[i]=='C')||(a[i]=='G'))
@@ -22,7 +22,7 @@ if(x!=y){
                                                                                         }
                
                                  if(s!=0){
-                                          printf("error");
+                                          my_printf("error");
                                           }else{
                                                 for(i=0;i<x;i++){
                                  if(a[i]==b[i]){
@@ -32,9 +32,9 @@ if(x!=y){
                                                                                          }
                                                                                          r=1.0*m/x;
                                                                                          if(r>=n){
-                                                                                                  printf("yes");
+                                                                                                  my_printf("yes");
                                                                                                   }else{
-                                                                                                        printf("no");
+                                                                                                        my_printf("no");
                                                                                                         }
                                                                                                         
                                                                                                         }

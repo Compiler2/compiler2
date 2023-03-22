@@ -7,9 +7,9 @@ int main_bench(){
     r=0;
     q=0;
     p=-1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-           scanf("%d %d",&high[i],&low[i]);
+           my_scanf("%d %d",&high[i],&low[i]);
     }
     for(i=0;i<n;i++){
            if(high[i]>=90&&high[i]<=140&&low[i]>=60&&low[i]<=90){
@@ -31,6 +31,6 @@ int main_bench(){
                             }
            }
     }
-    printf("%d",r);
+    my_printf("%d",r);
     return 0;
 }

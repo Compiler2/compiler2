@@ -16,13 +16,13 @@ int zhishu(int n)
 int main_bench()
 {
     int n,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=3;i<=n/2;i++)
     {
             a=zhishu(i);
             b=zhishu(n-i);
             if (a==1&&b==1)
-             printf("%d %d\n",i,n-i);
+             my_printf("%d %d\n",i,n-i);
     }
     getchar();
     getchar();

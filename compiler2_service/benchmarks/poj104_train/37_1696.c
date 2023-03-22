@@ -6,10 +6,10 @@ int main_bench()
 	char a[100010];
 	int b[26];
 	int c[26];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(j=0;j<26;j++)
 			b[j]=0;
 		for(j=0;j<26;j++)
@@ -57,9 +57,9 @@ int main_bench()
 			}
 		}
 		if(get==0)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("%c\n",min+'a');
+			my_printf("%c\n",min+'a');
 	}
 	return 0;
 }

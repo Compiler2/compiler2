@@ -5,9 +5,9 @@ int main_bench(){
 	int i,n,h,j,k,l;
 	char m[3];
 	m[0]='a';
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
 	for(i=0;i<n;i++){
 		   for(j=0;j<n;j++){
@@ -16,7 +16,7 @@ int main_bench(){
                    m[1]='e';
 				   m[2]='s';
 				   for(l=0;l<3;l++){
-				       printf("%c",m[l]);
+				       my_printf("%c",m[l]);
 				   }
 				   break;
 			   }
@@ -29,7 +29,7 @@ int main_bench(){
 		m[0]='n';
 		m[1]='o';
 		for(l=0;l<2;l++){
-		    printf("%c",m[l]);
+		    my_printf("%c",m[l]);
 		}
 	}
 	return 0;

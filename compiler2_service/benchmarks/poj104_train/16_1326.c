@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,i,s=0,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     if(n%10==0) 
        {
-       	if(n==0) printf("");
+       	if(n==0) my_printf("");
         else
-        {printf("0");
+        {my_printf("0");
 	for(n=n/10;n%10==0;n=n/10)
-	   {printf("0");}
+	   {my_printf("0");}
 	for(;n>=1;n=n/10)
 	{
 	i=n%10;
@@ -24,6 +24,6 @@ int main_bench()
 	i=n%10;
 	s=s*10+i;
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 return 0;
 }

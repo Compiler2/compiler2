@@ -3,9 +3,9 @@
 int main_bench(){
 int sz[300],nsz[300];
 int n,i,j,a,b=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d",&sz[i]);
+my_scanf("%d",&sz[i]);
 }
 for(j=1;j<n;j++){
 	for(a=j;a>0;a--){
@@ -14,13 +14,13 @@ for(j=1;j<n;j++){
 		else if((sz[j]!=sz[a-1])&&(a!=1)){continue;}
 	}
 }
-printf("%d,",sz[0]);
+my_printf("%d,",sz[0]);
 
 for(int c=0;c<b;c++){
 	if(c==b-1){
-		printf("%d",nsz[c]);
+		my_printf("%d",nsz[c]);
 	}else{
-		printf("%d,",nsz[c]);
+		my_printf("%d,",nsz[c]);
 	}
 }
 return 0;

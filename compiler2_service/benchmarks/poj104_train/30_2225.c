@@ -6,7 +6,7 @@ int isnum(int);
 int main_bench()
 {
 int n,sum=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=1;i<=n;i++)
 {
 if (isnum(i)==1)
@@ -14,7 +14,7 @@ if (isnum(i)==1)
 	sum+=i*i;
 }
 }
-printf("%d",sum);
+my_printf("%d",sum);
 return 0;
 }
 

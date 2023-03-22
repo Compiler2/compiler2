@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int i,j,n,year,m1,m2,a,b,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int month1[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int month2[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	for(i=0;i<n;i++)
 	{
 		sum=0;
 
-		scanf("%d%d%d",&year,&m1,&m2);
+		my_scanf("%d%d%d",&year,&m1,&m2);
 		if(m1>m2)
 		{
 			a=m2;
@@ -33,9 +33,9 @@ int main_bench()
 				}
 			}
 				if(sum%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else 
-					printf("NO\n");
+					my_printf("NO\n");
 		
 	}
 		return 0;

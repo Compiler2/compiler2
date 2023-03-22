@@ -9,10 +9,10 @@ int main_bench()
   double sum=0;
   int buffer=0;
 
-  scanf("%d", &n);
+  my_scanf("%d", &n);
   for (int i=1; i<=n; ++i)
   {
-    scanf("%d", &buffer);
+    my_scanf("%d", &buffer);
 	if (buffer>=1 && buffer<=18)
 	{
 	  ++a;
@@ -32,9 +32,9 @@ int main_bench()
 	
   }
   sum = a+b+c+d;
-  printf("1-18: %.2lf%%\n", a/sum*100);
-  printf("19-35: %.2lf%%\n", b/sum*100);
-  printf("36-60: %.2lf%%\n", c/sum*100);
-  printf("60??: %.2lf%%\n", d/sum*100);
+  my_printf("1-18: %.2lf%%\n", a/sum*100);
+  my_printf("19-35: %.2lf%%\n", b/sum*100);
+  my_printf("36-60: %.2lf%%\n", c/sum*100);
+  my_printf("60??: %.2lf%%\n", d/sum*100);
   return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	unsigned long year,month,date;
 	unsigned long i,days,total=0;
     unsigned long sumrun=0;	
-	 scanf("%d%d%d",&year,&month,&date);
+	 my_scanf("%d%d%d",&year,&month,&date);
 	 
 
 	 days=(year-1)*(365%7)+(year-1)/4-(year-1)/100+(year-1)/400;
@@ -43,18 +43,18 @@ int main_bench()
 	 }
 	 
 	 if(total%7==1){
-		 printf("Mon.");}
+		 my_printf("Mon.");}
 	 if(total%7==2){
-		 printf("Tue.");}
+		 my_printf("Tue.");}
 	 if(total%7==3){
-		 printf("Wed.");}
+		 my_printf("Wed.");}
 	 if(total%7==4){
-		 printf("Thu.");}
+		 my_printf("Thu.");}
 	 if(total%7==5){
-		 printf("Fri.");}
+		 my_printf("Fri.");}
 	 if(total%7==6){
-		 printf("Sat.");}
+		 my_printf("Sat.");}
 	 if(total%7==0){
-		 printf("Sun.\n");}
+		 my_printf("Sun.\n");}
 	 return 0;
 }

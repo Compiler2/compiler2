@@ -6,7 +6,7 @@ int main_bench()
     int a1,b1,i,j;
     int k=0;
     int a[20]={0},b[20]={0};
-    scanf("%d%d",&a1,&b1);
+    my_scanf("%d%d",&a1,&b1);
     for (i=0; a1!=0||b1!=0; a1/=2,b1/=2)
     {
         a[i]=a1;
@@ -27,6 +27,6 @@ int main_bench()
             break;
         }
     }
-    printf("%d",b[j]);
+    my_printf("%d",b[j]);
     
 }

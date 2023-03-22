@@ -8,7 +8,7 @@ int main_bench()
 	char temp[5];
 	int b[501];
 	int max=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	
     m=strlen(a);
@@ -23,15 +23,15 @@ int main_bench()
 	   if(strcmp(str[i],str[j])==0)  b[i]++;
 	  if(b[i]>max)  max=b[i];
    }
-    if(max==1)   printf("NO");
+    if(max==1)   my_printf("NO");
 	else if(max>1)
 	{
-    printf("%d\n",max);
+    my_printf("%d\n",max);
 	for(i=0;i<=m-n;i++)
 	  if(b[i]==max) 
 	  {
-	   printf("%s",str[i]);
-	   printf("\n");
+	   my_printf("%s",str[i]);
+	   my_printf("\n");
 	  }
     }
 	return 0;

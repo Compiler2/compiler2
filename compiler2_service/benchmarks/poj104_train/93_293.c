@@ -3,26 +3,26 @@
 int main_bench()
 {
     int x;
-    scanf("%d",&x); 
+    my_scanf("%d",&x); 
     if (x%3==0)
     {  
        if (x%5==0)
        {
          if (x%7==0)
             { 
-                 printf("3 5 7");
+                 my_printf("3 5 7");
              }
           else {
-                printf("3 5");
+                my_printf("3 5");
                 }
          }
         else {
             if (x%7==0)
               {
-               printf("3 7");
+               my_printf("3 7");
               }
             else {
-                 printf("3");
+                 my_printf("3");
                  }
             }
        }
@@ -31,22 +31,22 @@ int main_bench()
             { 
                if (x%7==0)
                 { 
-                 printf("5 7");
+                 my_printf("5 7");
                  }
                else {
-                  printf("5");
+                  my_printf("5");
                     }
             }
             else {
                  if (x%7==0)
                   {
-                    printf("7");
+                    my_printf("7");
                   }
                   else {
-                       printf("n");
+                       my_printf("n");
                        }
                  }
           }                     
-         scanf("%d",&x); 
+         my_scanf("%d",&x); 
     return 0;
 }

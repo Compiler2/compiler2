@@ -3,9 +3,9 @@
 int main_bench(){
     int min, max, n, i, j, x=0;
     int a[10000], b[10000], c[10000]={0};
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(i=0;i<n;i++){
-        scanf("%d%d", &a[i], &b[i]);
+        my_scanf("%d%d", &a[i], &b[i]);
     }
     for(i=0;i<n;i++){
         for(j=a[i];j<b[i];j++){
@@ -25,7 +25,7 @@ int main_bench(){
             x=1;
         }
     }
-    if(x==1){printf("no");}else{
-    printf("%d %d", min, max);}
+    if(x==1){my_printf("no");}else{
+    my_printf("%d %d", min, max);}
     return 0;
 }

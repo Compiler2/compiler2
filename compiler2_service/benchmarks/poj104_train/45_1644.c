@@ -5,7 +5,7 @@ int main_bench()
 	char a[50],b[50];
 	int i,j,m,n;
 	int flag;
-	scanf("%s%s",&a,&b);
+	my_scanf("%s%s",&a,&b);
 	for(i=1;;i++)
 	{
 		if(a[i]=='\0')
@@ -36,7 +36,7 @@ int main_bench()
 			}
 			if(flag==m)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

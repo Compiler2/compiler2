@@ -5,7 +5,7 @@ int main_bench()
 {
   int i,j,k,n,m,x=0;
   char a[80]={'\0'};
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(j=0;j<n;j++)
   {char a[80]={'\0'};
   gets(a);
@@ -28,6 +28,6 @@ int main_bench()
                    if(m=80)x=x;
                }}
        }
-  printf("%d\n",x);}
+  my_printf("%d\n",x);}
   return 0;
 }

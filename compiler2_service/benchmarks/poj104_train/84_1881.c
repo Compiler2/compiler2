@@ -4,8 +4,8 @@ int main_bench()
 {
 	int an[100];
 	int a,b,M,m,n,i;
-	scanf("%d",&n);
-	scanf("%d\n%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d\n%d",&a,&b);
 	if(a>=b){
 		M=a;
 		m=b;
@@ -15,7 +15,7 @@ int main_bench()
 		M=b;
 	}
 	for(i=2;i<n;i++){
-		scanf("%d\n",&an[i]);
+		my_scanf("%d\n",&an[i]);
 		if(an[i]>M){
 			m=M;
 			M=an[i];
@@ -24,6 +24,6 @@ int main_bench()
 			m=an[i];
 		}
 	}
-	printf("%d\n%d",M,m);
+	my_printf("%d\n%d",M,m);
 	return 0;
 }

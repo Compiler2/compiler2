@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,a[100][100],row,col,ROW1,COL1,ROW2,COL2,sum;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(row=0;row<n;row++){
 			for(col=0;col<n;col++){
-				scanf("%d",&a[row][col]);
+				my_scanf("%d",&a[row][col]);
 			}
 		}
 
@@ -33,7 +33,7 @@ for(row=n-1;row>=0&&!flag;row--){
 		}
 sum=(ROW2-ROW1-1)*(COL2-COL1-1);
 
-printf("%d\n",sum);
+my_printf("%d\n",sum);
 
 
 	return 0;

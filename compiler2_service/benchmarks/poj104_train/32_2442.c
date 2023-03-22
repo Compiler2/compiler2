@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,j,k,m,g,h,temp;
 	char a[1000]={'0'},b[1000]={'0'};
 	int c[1000],d[1000]={0},f[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>0)
 	{
 	    memset(a,'0',sizeof(a));
@@ -16,8 +16,8 @@ int main_bench()
 		        c[m]=0;
 		        d[m]=0;
 		    }
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 	    j=strlen(a);
 		k=strlen(b);
 		for(m=0;m<j;m++)
@@ -43,8 +43,8 @@ int main_bench()
 
 		}
 		for(m=g;m<j-1;m++)
-			printf("%d",f[m]);
-		printf("%d\n",f[j-1]);
+			my_printf("%d",f[m]);
+		my_printf("%d\n",f[j-1]);
         n--;
 	}
 

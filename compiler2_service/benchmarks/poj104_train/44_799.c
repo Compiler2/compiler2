@@ -6,9 +6,9 @@ main_bench()
  void re(char x[99999]);
  void xl(char x[99999]);
  for(i=0;i<6;i++)
- {scanf("%s",a[i]);re(a[i]);xl(a[i]);}
+ {my_scanf("%s",a[i]);re(a[i]);xl(a[i]);}
  for(i=0;i<6;i++)
-  printf("%s\n",a[i]);
+  my_printf("%s\n",a[i]);
 
 }
  

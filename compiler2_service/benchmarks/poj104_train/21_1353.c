@@ -6,9 +6,9 @@ main_bench()
 	float p,q;
 	int a[300]={0},c[10];
 	float b[300]={0.0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	p=(float)s/n;
@@ -30,8 +30,8 @@ main_bench()
 		}
 	}
 	for(i=0;i<w-1;i++)
-		printf("%d,",a[c[i]]);
-	printf("%d",a[c[w-1]]);
+		my_printf("%d,",a[c[i]]);
+	my_printf("%d",a[c[w-1]]);
 	return 0;
 }
 

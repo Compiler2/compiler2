@@ -4,21 +4,21 @@ int main_bench()
 {
 	int m,i,j,k=0;
 	char q;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
 		for(j=0;j<200;j++){
-				scanf("%c",&q);
+				my_scanf("%c",&q);
 		 switch(q)
 			{
-			case'A':printf("T");
+			case'A':my_printf("T");
 				break;
-			case'T':printf("A");
+			case'T':my_printf("A");
 				break;
-			case'C':printf("G");
+			case'C':my_printf("G");
 				break;
-			case'G':printf("C");
+			case'G':my_printf("C");
 				break;
-	 			default :printf("\n");
+	 			default :my_printf("\n");
 				}
 		}
 	}		

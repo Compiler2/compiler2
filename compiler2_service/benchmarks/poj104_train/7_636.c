@@ -7,9 +7,9 @@ int main_bench()
 	char c[100];
 	int i,j,m,k;
     int n=0;
-	scanf("%s",a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
     m=strlen(b);
 	for(i=0;a[i]!='\0';i++){
 		if(a[i]==b[0]){
@@ -22,17 +22,17 @@ int main_bench()
 	}
 if(m==n){
 	for(k=0;k<i;k++){
-		printf("%c",a[k]);
+		my_printf("%c",a[k]);
 	}
-    printf("%s",c);
+    my_printf("%s",c);
 	for(k=i+m;a[k]!='\0';k++){
-		printf("%c",a[k]);
+		my_printf("%c",a[k]);
 	}
 }
 	
 	
 	if(n!=m)
-		printf("%s",a);
+		my_printf("%s",a);
 	return 0;
 }
 	

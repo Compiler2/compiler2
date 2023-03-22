@@ -8,11 +8,11 @@ main_bench()
  char string[11];
  char stm[100][11];
  char str[100][11];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%s",stm[i]);
-  scanf("%d",&num[i]);
+  my_scanf("%s",stm[i]);
+  my_scanf("%d",&num[i]);
   }
   j=0;
   for(i=0;i<n;i++)
@@ -41,11 +41,11 @@ main_bench()
         }              
     }              
     for(i=0;i<=t;i++)
-      printf("%s\n",str[i]);              
+      my_printf("%s\n",str[i]);              
     for(i=0;i<n;i++)
     {
     if(num[i]<60)
-    printf("%s\n",stm[i]);
+    my_printf("%s\n",stm[i]);
     } 
     getchar();
     getchar();

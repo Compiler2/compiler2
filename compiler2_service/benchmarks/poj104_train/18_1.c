@@ -9,7 +9,7 @@ int main_bench()
     int i, j, k, m, n;
     int min, sum;
 
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for (k=0; k<m; k++) {
         
         n = m;
@@ -17,7 +17,7 @@ int main_bench()
         
         for (i=0; i<n; i++) {
             for (j=0; j<n; j++) {
-                scanf("%d", &a[i][j]);
+                my_scanf("%d", &a[i][j]);
             }
         }
         while (n>1) {
@@ -63,7 +63,7 @@ int main_bench()
             n--;
         }
         
-        printf("%d\n", sum);
+        my_printf("%d\n", sum);
     }
     return 0;
 }
@@ -89,14 +89,14 @@ void xbuild()
 {
     int i, j, k, n;
     n = mn[xn];
-    printf("%d\n", n);
+    my_printf("%d\n", n);
     for (k=0; k<n; k++) {
         for (i=0; i<n; i++) {
-            printf("%d", rnd(1, n*n));
+            my_printf("%d", rnd(1, n*n));
             for (j=1; j<n; j++) {
-                printf(" %d", rnd(1, n*n));
+                my_printf(" %d", rnd(1, n*n));
             }
-            printf("\n");
+            my_printf("\n");
         }
     }
     xn++;

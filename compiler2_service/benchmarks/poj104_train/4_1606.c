@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int num[100][100];int line,row,i,j,m,n;
-	scanf("%d %d",&row,&line);
+	my_scanf("%d %d",&row,&line);
 	for(i=0;i<=row-1;i++)
 	{
 		for(j=0;j<=line-1;j++)
 		{
-			scanf("%d",&num[i][j]);
+			my_scanf("%d",&num[i][j]);
 		}
 	}
 	for(j=0;j<=line-1;j++)
@@ -17,7 +17,7 @@ int main_bench()
 		m=0;n=j;
 	do
 	{
-		printf("%d\n",num[m][n]);
+		my_printf("%d\n",num[m][n]);
 		m++;n--;
 	}
 	while (n!=-1&&m<row);
@@ -27,7 +27,7 @@ int main_bench()
 		m=i;n=line-1;
 		do
 		{
-			printf("%d\n",num[m][n]);
+			my_printf("%d\n",num[m][n]);
 			m++;n--;
 		}
 		while (n!=-1&&m<row);

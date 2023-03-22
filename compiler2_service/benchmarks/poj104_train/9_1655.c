@@ -14,13 +14,13 @@ int main_bench()
 	struct patient temp;
 	struct patient *p;
 	struct patient a[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=a;
 	u=0;
 	for(;p<a+n;p++)
 	{
-		scanf("%s",id1);
-		scanf("%d",&age1);
+		my_scanf("%s",id1);
+		my_scanf("%d",&age1);
 		strcpy(p->id,id1);
 		p->age=age1;
 		p->num=u;
@@ -48,7 +48,7 @@ int main_bench()
 	for(;p<a+n;p++)
 	{
 	
-			printf("%s\n",p->id);
+			my_printf("%s\n",p->id);
 	}
 
 	return 0;

@@ -11,11 +11,11 @@ int main_bench()
 {
 	int n,i,j,k,tmp1,tmp2;
 	char c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		{
 			a[i-1].sum=0;
-			scanf("%d%d%d",&a[i-1].nu,&a[i-1].b,&a[i-1].c);
+			my_scanf("%d%d%d",&a[i-1].nu,&a[i-1].b,&a[i-1].c);
 			a[i-1].sum=a[i-1].b+a[i-1].c;
 	}
 	for(i=0;i<3;i++)
@@ -34,6 +34,6 @@ int main_bench()
 		a[tmp1]=tmp;
 	}
 	for(i=0;i<3;i++)
-		printf("%d %d\n",a[i].nu,a[i].sum);
+		my_printf("%d %d\n",a[i].nu,a[i].sum);
 	return 0;
 }

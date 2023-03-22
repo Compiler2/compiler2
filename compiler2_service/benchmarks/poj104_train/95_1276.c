@@ -21,10 +21,10 @@ main_bench()
                       }
      k=strcmp(s1,s2);
      if(k==0)
-     printf("=");
+     my_printf("=");
      else if(k>0)
-     printf(">");
+     my_printf(">");
      else
-     printf("<");
+     my_printf("<");
      
 }

@@ -6,7 +6,7 @@ int main_bench()
     int n,i,j,k,s;
     int l;
     char shuru[2000];
-    scanf("%s",shuru);                
+    my_scanf("%s",shuru);                
    i=strlen(shuru);
    k=0;
    l=0;
@@ -19,7 +19,7 @@ int main_bench()
    }
    if(i==1)
    {
-       printf("(%c,1)",shuru[k])  ;   
+       my_printf("(%c,1)",shuru[k])  ;   
    }
    else
    {
@@ -36,20 +36,20 @@ int main_bench()
                  
                }
                 while(shuru[k]==shuru[k+s]); 
-                printf("(%c,%d)",shuru[k],s); 
+                my_printf("(%c,%d)",shuru[k],s); 
                 
                 k=k+s;                                                     
         }
         else
         {
-            printf("(%c,1)",shuru[k]);
+            my_printf("(%c,1)",shuru[k]);
             k++;
             l++;
         }
        
         
         if(k==i-1)
-        printf("(%c,1)",shuru[k]);
+        my_printf("(%c,1)",shuru[k]);
         else;
         
           

@@ -6,7 +6,7 @@ int ans[10000], a[100];
 int main_bench()
 {
 	int l, r, i, s, anses=0, bo, t;
-	scanf("%d%d", &l, &r);
+	my_scanf("%d%d", &l, &r);
 	while (l<=r)
 	{
 		bo=1;
@@ -16,7 +16,7 @@ int main_bench()
 		if (bo) ans[++anses]=l;
 		l++;
 	}
-	if (anses==0) printf("no");
-	for (i=1; i<anses; i++) printf("%d,", ans[i]);
-	if (anses) printf("%d", ans[anses]);
+	if (anses==0) my_printf("no");
+	for (i=1; i<anses; i++) my_printf("%d,", ans[i]);
+	if (anses) my_printf("%d", ans[anses]);
 }

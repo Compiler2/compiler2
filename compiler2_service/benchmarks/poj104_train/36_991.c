@@ -17,11 +17,11 @@ int main_bench()
 {
 	char s1[20],s2[20];
 	int i,n,m;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	n=strlen(s2);
 	m=strlen(s1);
 	if(n!=m)
-		printf("NO");
+		my_printf("NO");
 	if(n==m)
 	{
 		for(i=0;i<n;i++)
@@ -29,9 +29,9 @@ int main_bench()
 		for(i=0;i<n;i++)
 		if(s1[i]!=',')
 		{
-				printf("NO");
+				my_printf("NO");
 				break;
 		}
-		if(i==n)printf("YES");
+		if(i==n)my_printf("YES");
 	}
 }

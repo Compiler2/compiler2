@@ -22,7 +22,7 @@ int main_bench()
 	}
     string[strNnum][strMnum]='\0';
 	for(i=strNnum;i>0;i--)
-		printf("%s ",string[i]);
-	printf("%s",string[0]);
+		my_printf("%s ",string[i]);
+	my_printf("%s",string[0]);
 
 }

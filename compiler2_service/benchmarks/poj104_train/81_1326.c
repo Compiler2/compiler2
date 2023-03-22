@@ -28,11 +28,11 @@ void diaohuan(int a[5][5],int n,int m)
 			{
 				if(j==4)
 				{
-					printf("%d\n",a[i][j]);
+					my_printf("%d\n",a[i][j]);
 				}
 				else
 				{
-					printf("%d ",a[i][j]);
+					my_printf("%d ",a[i][j]);
 				}
 			}
 		}
@@ -45,13 +45,13 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&juzhen[i][j]);
+			my_scanf("%d",&juzhen[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(panduan(juzhen,n,m)==0)
 	{
-		printf("error\n");
+		my_printf("error\n");
 	}
 	else if(panduan(juzhen,n,m)==1)
 	{

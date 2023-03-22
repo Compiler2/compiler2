@@ -4,8 +4,8 @@ int main_bench()
 {
     int i,n,sum,u,j,k;
     char a[1000],b[1000][8];
-    scanf("%d",&n);
-    scanf("%s",a);
+    my_scanf("%d",&n);
+    my_scanf("%s",a);
     sum=strlen(a);
     for(i=0;i<=sum-n;i++)
     {
@@ -34,7 +34,7 @@ int main_bench()
     }
     if(max>=2)
     {
-              printf("%d\n",max);
+              my_printf("%d\n",max);
               for(i=0;i<=sum-n;i++)
               {
                                    if(c[i]==max)
@@ -44,8 +44,8 @@ int main_bench()
               }
     }
     else 
-    printf("NO");
-    scanf("%d",&u);
+    my_printf("NO");
+    my_scanf("%d",&u);
     return 0;
 }
                          

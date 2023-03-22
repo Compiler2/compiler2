@@ -4,13 +4,13 @@ int main_bench()
 {	int huiwen(int a);
 	int sushu(int b);
 	int m,n,i,t=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
-		if(huiwen(i)==1&&sushu(i)==1) {printf("%d",i);t++;break;}
+		if(huiwen(i)==1&&sushu(i)==1) {my_printf("%d",i);t++;break;}
 	for(i=i+1;i<=n;i++)
-		if(huiwen(i)==1&&sushu(i)==1) printf(",%d",i);
-	if(t==0) printf("no");
-	scanf("%d",&n);
+		if(huiwen(i)==1&&sushu(i)==1) my_printf(",%d",i);
+	if(t==0) my_printf("no");
+	my_scanf("%d",&n);
 }
 int huiwen(int a)
 {	int k,t=0,s;

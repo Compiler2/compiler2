@@ -5,7 +5,7 @@ int main_bench(){
    double s[101];
    int i;
    
-   scanf("%d",&n);
+   my_scanf("%d",&n);
 
    s[0]=1;
    s[1]=2;
@@ -13,7 +13,7 @@ int main_bench(){
 	   s[i]=s[i-1]*2;
    }
 		
-   printf("%.0lf",s[n]);
+   my_printf("%.0lf",s[n]);
    
 
 	return 0;

@@ -27,9 +27,9 @@ char str[10000];
 				}
 		}
 	}
-	printf("%d",b[1]);
+	my_printf("%d",b[1]);
 	for(i=2;i<=s;i++)
-		printf(",%d",b[i]);
+		my_printf(",%d",b[i]);
 }
 
 

@@ -27,7 +27,7 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%s\n", s[0]);
+	my_printf("%s\n", s[0]);
 	for(k=1;k<=sum;k++){
 		for(i=0;i<sum-k;i++){
 			if(strlen(s[i])>strlen(s[i+1])){
@@ -43,6 +43,6 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%s", s[0]);
+	my_printf("%s", s[0]);
 	return 0;
 }

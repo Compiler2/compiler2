@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],b[100];
 	int i,temp,lengtha,lengthb;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	lengtha=strlen(a);
 	for(i=0;i<100;i++)
 	{
@@ -46,25 +46,25 @@ int main_bench()
 				}
 			}
 		}
-	printf("%s\n",b);
-	printf("%d",temp);
+	my_printf("%s\n",b);
+	my_printf("%d",temp);
 	}
 	else if(lengtha==1)
 	{
-	printf("0\n");
-	printf("%c",a[0]);
+	my_printf("0\n");
+	my_printf("%c",a[0]);
 	}
 	else if(lengtha==2)
 	{
 		if(10*(a[0]-'0')+a[1]-'0'>=13)
 		{
-			printf("%d\n",(10*(a[0]-'0')+a[1]-'0')/13);
-			printf("%d",(10*(a[0]-'0')+a[1]-'0')%13);
+			my_printf("%d\n",(10*(a[0]-'0')+a[1]-'0')/13);
+			my_printf("%d",(10*(a[0]-'0')+a[1]-'0')%13);
 		}
 		else
 		{
-			printf("0\n");
-			printf("%d",10*(a[0]-'0')+a[1]-'0');
+			my_printf("0\n");
+			my_printf("%d",10*(a[0]-'0')+a[1]-'0');
 		}
 	}
 return 0;

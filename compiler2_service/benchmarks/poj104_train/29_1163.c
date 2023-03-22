@@ -6,14 +6,14 @@ int main_bench()
 	int a[10000]={1,2};
 	double b[10000];
 	int n[10000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=2;k<10000;k++)
 	{
 		a[k]=a[k-2]+a[k-1];
 	}
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.3lf\n",b[i]);
+		my_printf("%.3lf\n",b[i]);
 	}
 	return 0;
 }

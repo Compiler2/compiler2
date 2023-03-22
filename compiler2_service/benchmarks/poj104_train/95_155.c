@@ -12,9 +12,9 @@ int main_bench()
 	for(i=0;two[i]!='\0';i++)	
 	{   if(two[i]>='A'&&two[i]<='Z') two[i]+=32;
      }
-	if(strcmp(one,two)>0) printf(">");
-	if(strcmp(one,two)==0) printf("=");
-	if(strcmp(one,two)<0) printf("<");
+	if(strcmp(one,two)>0) my_printf(">");
+	if(strcmp(one,two)==0) my_printf("=");
+	if(strcmp(one,two)<0) my_printf("<");
     gets(one);
 	return 0;
 }

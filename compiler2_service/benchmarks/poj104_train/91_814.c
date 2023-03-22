@@ -16,5 +16,5 @@ int main_bench()
 		q++;
 	}
 	*p=*p+a;
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 }

@@ -9,16 +9,16 @@ int main_bench()
 	int b,c;
 	int s=0;
 	p=&a[0];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=1;j<=m;j++)
 	{
-		scanf("%d %d",&b,&c);
+		my_scanf("%d %d",&b,&c);
 		
 		for(k=1;k<=b;k++)
 		{
 			for(i=1;i<=c;i++)
 			{
-				scanf("%d",p);
+				my_scanf("%d",p);
 				if((k==1&&i!=1&&i!=c)||(k==b&&i!=1&&i!=c)||i==1||i==c)
 				{
 					s=s+*p;
@@ -27,7 +27,7 @@ int main_bench()
 			}
 
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 		s=0;
 		p=&a[0];
 

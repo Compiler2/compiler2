@@ -26,10 +26,10 @@ int main_bench(){
     for (i=0;i<n+1;i++){
         l[i]=strlen(dc[i]);
     }
-    printf("%d",l[0]);
+    my_printf("%d",l[0]);
     getchar();
     for (i=1;i<n+1;i++){
-        printf(",%d",l[i]);
+        my_printf(",%d",l[i]);
         getchar();
     }
     return 0;

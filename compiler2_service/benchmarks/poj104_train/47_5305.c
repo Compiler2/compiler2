@@ -7,12 +7,12 @@ int main_bench(){
 	int i,n;
 	int e;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
-	scanf("%d",&sz[0]);
+	my_scanf("%d",&sz[0]);
 
 	for(i=1;i<n;i++){
-	  scanf(" %d",&sz[i]);
+	  my_scanf(" %d",&sz[i]);
 	}
 
 	if(n%2==0){
@@ -30,10 +30,10 @@ int main_bench(){
 		}
 	}
 
-    printf("%d",sz[0]);
+    my_printf("%d",sz[0]);
 
 	for(i=1;i<n;i++){
-	  printf(" %d",sz[i]);
+	  my_printf(" %d",sz[i]);
 	}
 	return 0;
 }

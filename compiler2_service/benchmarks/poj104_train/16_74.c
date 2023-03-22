@@ -4,12 +4,12 @@ int main_bench()
 {
  int i=0;
  char str[10000];
- scanf("%s",str);
+ my_scanf("%s",str);
  while(str[i]!='\0')
   i++;
  for(i--;i>=0;i--)
- printf("%c",str[i]);
- printf("\n");
+ my_printf("%c",str[i]);
+ my_printf("\n");
  getchar();
  getchar();
  getchar();

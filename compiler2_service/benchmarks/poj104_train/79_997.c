@@ -10,7 +10,7 @@ int main_bench()
 	struct node *head,*p1,*p2;
 	for(i=1;;i++)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(n==0)
 			break;
 		p1=(struct node*)malloc(sizeof(struct node));
@@ -34,6 +34,6 @@ int main_bench()
 			p1->next=head->next;
 			head=head->next;
 		}
-		printf("%d\n",head->a);
+		my_printf("%d\n",head->a);
 	}
 }

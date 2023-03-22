@@ -5,10 +5,10 @@ int main_bench()
 {
 int a[1000][1000];
 int i,j,n,t,i1=0,j1=0,i2=0,j2=0;
-scanf("%d",&n); 
+my_scanf("%d",&n); 
 for(i=0;i<=n-1;i++)
     {for(j=0;j<=n-1;j++)
-         scanf("%d",&a[i][j]);
+         my_scanf("%d",&a[i][j]);
     }
 for(i=0;i<=n-1;i++)
  {  
@@ -35,6 +35,6 @@ for(i=n-1;i>=i1;i--)
   }
  }
 t=(i2-i1-1)*(j2-j1-1);
-printf("%d",t);
+my_printf("%d",t);
 return 0;
 }

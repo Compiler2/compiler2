@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i,j;
 	double sz[999],r[999]={0};
 	for(i=1;i<=m;i++)
 	{
-		scanf("%lf",&sz[i]);
+		my_scanf("%lf",&sz[i]);
 	}
 	int a1,a2,b1,b2,e1,e2;
 	for(i=1;i<=m;i++)
@@ -30,7 +30,7 @@ int main_bench()
 			b1=e1;
 			b2=e2;
 		}
-		printf("%.3lf\n",r[i]);
+		my_printf("%.3lf\n",r[i]);
 	}
 	return 0;
 }

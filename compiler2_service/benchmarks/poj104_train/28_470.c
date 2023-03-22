@@ -20,7 +20,7 @@ int main_bench()
   for (i=1;i<=p-1;i++)
   {
 	  if ((a[i]-a[i-1]-1)!=0)
-    printf("%d,",a[i]-a[i-1]-1);  
+    my_printf("%d,",a[i]-a[i-1]-1);  
   }
-  printf("%d",x-a[p-1]-1);
+  my_printf("%d",x-a[p-1]-1);
 }

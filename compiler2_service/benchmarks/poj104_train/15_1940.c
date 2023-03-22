@@ -6,10 +6,10 @@ int a[100][100];
 int x1, y1, x2, y2, area=0;
 int n, i, j;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (i=0; i<n; i++) {
 for (j=0; j<n; j++) {
-scanf("%d", &a[i][j]);
+my_scanf("%d", &a[i][j]);
 }
 }
 
@@ -42,6 +42,6 @@ break;
 }
 
 area=(x2-x1-1)*(y2-y1-1);
-printf("%d", area);
+my_printf("%d", area);
 return 0;
 }

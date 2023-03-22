@@ -13,10 +13,10 @@ int main_bench()
 	int year,mon1,mon2;
 	int mon[]={0,3,0,3,2,3,2,3,3,2,3,2,3};
 	int i,j,n,temp,day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&mon1,&mon2);
+		my_scanf("%d%d%d",&year,&mon1,&mon2);
 		if(mon1>mon2)
 		{
 			temp=mon1;
@@ -31,9 +31,9 @@ int main_bench()
 			day+=mon[j];
 		}
 		if(day%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		if(leap(year))
 			mon[2]--;
 	}

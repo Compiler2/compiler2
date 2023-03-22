@@ -43,11 +43,11 @@ int main_bench(){
 		}
 	}
 	for(i=0;z[w][i]!='!';i++){
-	printf("%c",z[w][i]);
+	my_printf("%c",z[w][i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=0;z[m][i]!='!';i++){
-	printf("%c",z[m][i]);
+	my_printf("%c",z[m][i]);
 	}
 
 return 0;}

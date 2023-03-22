@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,l,j;
 	char dna[256],change[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",&dna);
+		my_scanf("%s",&dna);
 		l = strlen(dna);
 		for (j=0;j<l;j++)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 				change[j] = 'C';
 		}
 		change[l] = '\0';
-		printf("%s\n",change);
+		my_printf("%s\n",change);
 	}
 	return 0;
 }

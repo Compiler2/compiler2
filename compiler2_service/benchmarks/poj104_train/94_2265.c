@@ -7,9 +7,9 @@ int main_bench(){
     int m=0;
     int j=0;
     char c=',';
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     
     for(int i=0;i<n;i++){
@@ -29,8 +29,8 @@ int main_bench(){
 
 for(int i=0;i<j;i++){
     if(i<j-1){
-    printf("%d%c",a[i],c);}
-    else{printf("%d",a[i]);
+    my_printf("%d%c",a[i],c);}
+    else{my_printf("%d",a[i]);
     
     }
 }

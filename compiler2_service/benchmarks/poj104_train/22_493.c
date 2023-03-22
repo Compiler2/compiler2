@@ -9,8 +9,8 @@ int main_bench()
 
 	for(i=1;;i++)                  
 	{                               
-		scanf("%d",&a[i-1]);       
-		scanf("%c",&c);            
+		my_scanf("%d",&a[i-1]);       
+		my_scanf("%c",&c);            
 		if(c=='\n')break;                                             
 	}
 
@@ -31,11 +31,11 @@ int main_bench()
 		if(a[i-1]!=a[i])
 		break;
 	}
-    if(i<num-1)printf("%d",a[i]);
+    if(i<num-1)my_printf("%d",a[i]);
     else 
 	{
-		if(i==num-1)printf("%d",a[i]);
-		else printf("No");
+		if(i==num-1)my_printf("%d",a[i]);
+		else my_printf("No");
 	}
 	return 0;
 }

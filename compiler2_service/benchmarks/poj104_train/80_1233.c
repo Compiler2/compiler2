@@ -11,7 +11,7 @@ int main_bench(){
 	int x,y;
 	int i;
 	int e,f,g;
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
 	if(year1>year2){
 		e=year1;
 		year1=year2;
@@ -33,7 +33,7 @@ int main_bench(){
 		}
 	}
 	xiangchaday=zongday+y-x;
-	printf("%d",xiangchaday);
+	my_printf("%d",xiangchaday);
 	return 0;
 }
 int DiJiTian(int year, int month, int day){

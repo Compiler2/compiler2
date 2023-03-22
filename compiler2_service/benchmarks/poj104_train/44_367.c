@@ -20,9 +20,9 @@ int re(int n){
 int main_bench(){
 	int i,z,f;
 	for(i=0;i<6;i++){
-		scanf("%d",&z);
+		my_scanf("%d",&z);
 		f=re(z);
-		printf("%d\n",f);
+		my_printf("%d\n",f);
 	}
 	return 0;
 }

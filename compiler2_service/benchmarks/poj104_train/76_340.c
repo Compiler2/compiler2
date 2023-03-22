@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,a,b,t,l=0;
     int ai[50000],bi[50000],sz[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d",&ai[i],&bi[i]);
+        my_scanf("%d %d",&ai[i],&bi[i]);
         }
     for(t=0;t<10000;t++){
         sz[t]=0;
@@ -31,13 +31,13 @@ int main_bench()
     sz[b-1]=1;
     for(t=a-1;t<b;t++){
         if(sz[t]==0){
-           printf("no");
+           my_printf("no");
            l=1;
            break;
         }
     }
     if(l==0)
-    printf("%d %d",a,b);    
+    my_printf("%d %d",a,b);    
 
     return 0;
 }

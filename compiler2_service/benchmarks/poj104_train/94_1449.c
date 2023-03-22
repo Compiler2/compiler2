@@ -8,9 +8,9 @@ int a=0;
 int b=0;
 int c,d,e;
 int max[1000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(d=0;d<n;d++){
-    scanf("%d",&c);
+    my_scanf("%d",&c);
 	if(c%2==1){
 		bidaxiao[i]=c;
 		i++;
@@ -32,8 +32,8 @@ a=0;
 b++;
 }
 for(i=0;i<e-1;i++)
-printf("%d,",max[e-i-1]);
-printf("%d",max[0]);
+my_printf("%d,",max[e-i-1]);
+my_printf("%d",max[0]);
 return 0;
 }
 

@@ -18,11 +18,11 @@ for (i=0;i<strlen(b);i++)
   }
 
   if (strcmp(a,b)==0)
-	  printf("=");
+	  my_printf("=");
 	  if (strcmp(a,b)>0)
-	  printf(">");
+	  my_printf(">");
 	  if (strcmp(a,b)<0)
-	  printf("<");
+	  my_printf("<");
 
 }
 

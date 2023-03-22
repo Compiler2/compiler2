@@ -16,7 +16,7 @@ int main_bench()
 	{
 		if(z[j]!=z[0])break;
 	}
-	if(j==i+1)printf("No");
+	if(j==i+1)my_printf("No");
 	else
 	{
 		for(k=0;k<=i;k++)
@@ -41,7 +41,7 @@ int main_bench()
 			}
 			if(s==i+1)break;
 		}
-		printf("%d",z[t]);
+		my_printf("%d",z[t]);
 	}
 }
 

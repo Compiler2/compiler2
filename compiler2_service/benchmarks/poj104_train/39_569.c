@@ -17,10 +17,10 @@ int main_bench()
     int i,n;
     int total[200]={0},all=0;
     int a,b,temp;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].com,&stu[i].offi,&stu[i].west,&stu[i].arc);
+        my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].com,&stu[i].offi,&stu[i].west,&stu[i].arc);
     }
     for(i=0;i<n;i++)
     {
@@ -52,6 +52,6 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     all=all+total[i];
-    printf("%s\n%d\n%d\n",stu[0].name,total[0],all);
+    my_printf("%s\n%d\n%d\n",stu[0].name,total[0],all);
     return 0;
 }

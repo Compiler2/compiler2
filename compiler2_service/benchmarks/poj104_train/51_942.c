@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[600];
 	int n,i,j,lenth,len[600]={0};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	char word[600][7]={{'\0'}};
 	lenth=strlen(str);
@@ -54,14 +54,14 @@ int main_bench()
 	}
 	if(max<=1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}else{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<=log;i++)
 	{
 		if(len[i]==max)
 		{
-			printf("%s\n",zifu[i]);
+			my_printf("%s\n",zifu[i]);
 		}
 	}
 	}

@@ -3,13 +3,13 @@
 int main_bench() 
 { 
   int i,t1,t2,n,num,max1,max2; 
-  scanf("%d",&n); 
+  my_scanf("%d",&n); 
 
 max1=max2=0; 
     t1=t2=0; 
     for(i=1;i<=n;i++) 
     { 
-      scanf("%d",&num); 
+      my_scanf("%d",&num); 
       if(num>max1) 
       { 
         t2=t1; 
@@ -23,5 +23,5 @@ max1=max2=0;
         t2=i; 
       } 
     }      
-   printf("%d\n%d\n", max1, max2);
+   my_printf("%d\n%d\n", max1, max2);
 } 

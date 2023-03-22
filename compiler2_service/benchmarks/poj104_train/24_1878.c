@@ -4,7 +4,7 @@ int main_bench()
 {
   char s[1500],*ps,l[1500];
   int a[200]={0},i=0,n,m,c=0,d=0,k;
-  scanf("%s",s);
+  my_scanf("%s",s);
   strcpy(l,s);
   gets(s);
   strcat(l,s);
@@ -26,15 +26,15 @@ int main_bench()
   if(*ps==' '||*ps==','){
       i++;}
   if(i==d){i=1000;if(*ps==' '||*ps==','){ps++;}}
-  if(i==1000){printf("%c",*ps);}
+  if(i==1000){my_printf("%c",*ps);}
  }
- printf("\n");
+ my_printf("\n");
  i=0;
  for(ps=l;*ps!=0;ps++){
   if(*ps==' '||*ps==','){
       i++;}
   if(i==c){i=1000;if(*ps==' '||*ps==','){ps++;}}
-   if(i==1000){printf("%c",*ps);}
+   if(i==1000){my_printf("%c",*ps);}
   }
  return 0;
 }

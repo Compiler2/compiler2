@@ -11,15 +11,15 @@ int j(int a,int b)
 int main_bench()
 {
     int n,s=0,i,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-    scanf("%d%d",&a,&b);
+    my_scanf("%d%d",&a,&b);
     s+=j(a,b);
     }
-    if(s<0)printf("B");
-    else if(s==0)printf("Tie");
-    else printf("A");
+    if(s<0)my_printf("B");
+    else if(s==0)my_printf("Tie");
+    else my_printf("A");
     return 0;
 }
 

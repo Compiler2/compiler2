@@ -36,6 +36,6 @@ int main_bench()
 		else if(l<min) {min=l;jmin=j;}
 	}
 	
-	printf("%s\n%s\n",b[jmax],b[jmin]);
+	my_printf("%s\n%s\n",b[jmax],b[jmin]);
 }
 	

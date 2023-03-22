@@ -3,11 +3,11 @@
 int main_bench(){
 	int m,n,s,i,a[200],b[200];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 s=0;
 m=0;
 for(i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 if(a[i]==1&&b[i]==0)
 		s++;
 if(a[i]==0&&b[i]==2)
@@ -22,11 +22,11 @@ if(a[i]==2&&b[i]==0)
 		m++;
 }
 if(s>m)
-	printf("B");
+	my_printf("B");
 if(s==m)
-	printf("Tie");
+	my_printf("Tie");
 if(s<m)
-	printf("A");
+	my_printf("A");
 		
     
 return 0;

@@ -5,9 +5,9 @@ int main_bench()
     int i,j,len1,len2,m=0;
     double a,n,b;
     char jy1[501],jy2[501];
-    scanf("%lf",&a);
-    scanf("%s\n",jy1);
-    scanf("%s\n",jy2);
+    my_scanf("%lf",&a);
+    my_scanf("%s\n",jy1);
+    my_scanf("%s\n",jy2);
     len1=strlen(jy1);
     len2=strlen(jy2);
     for(i=0;i<len1;i++)
@@ -20,7 +20,7 @@ int main_bench()
     }
     if(m>0)
     {
-        printf("error");
+        my_printf("error");
     }
     else if(len1==len2)
     {
@@ -31,9 +31,9 @@ int main_bench()
         b=n/len1;
         if(b>a)
         {
-            printf("yes");
+            my_printf("yes");
         }
-        else printf("no");
+        else my_printf("no");
     }
-    else printf("error");
+    else my_printf("error");
 }

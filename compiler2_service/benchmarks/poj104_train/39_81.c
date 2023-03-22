@@ -13,9 +13,9 @@ int main_bench()
 	int n,i,max,p,sum=0;
 	int sch[]={8000,4000,2000,1000,850};
 	int a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].banyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].paper);
     for(i=0;i<n;i++)
 	{
 		if(stu[i].qimo>80&&stu[i].paper>=1)
@@ -40,6 +40,6 @@ int main_bench()
 		}
 		sum+=a[i];
 	}
-    printf("%s\n%d\n%d",stu[p].name,max,sum);
+    my_printf("%s\n%d\n%d",stu[p].name,max,sum);
 }
 

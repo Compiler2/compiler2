@@ -30,10 +30,10 @@ int main_bench()
 	int n,i,j;
 	long int all=0;
 	struct student s[100],*p[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&s[i].name,&s[i].final,&s[i].cla,&s[i].stu,&s[i].west,&s[i].paper);
+		my_scanf("%s %d %d %c %c %d",&s[i].name,&s[i].final,&s[i].cla,&s[i].stu,&s[i].west,&s[i].paper);
 		p[i]=&s[i];
 		s[i].sch=award(p[i]);
 		all+=s[i].sch;
@@ -51,7 +51,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n%d\n%ld",s[0].name,s[0].sch,all);
+	my_printf("%s\n%d\n%ld",s[0].name,s[0].sch,all);
 	return 0;
 }
 

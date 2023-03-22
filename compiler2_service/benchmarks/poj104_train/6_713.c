@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int sum[100]={0},i,j,k,h,a[100],b[100],juzhen[100][100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(h=0;h<k;h++)
 	{
-		scanf("%d%d",&(a[h]),&(b[h]));
+		my_scanf("%d%d",&(a[h]),&(b[h]));
 		for(i=0;i<a[h];i++)
 		{
 			for(j=0;j<b[h];j++)
 			{
-				scanf("%d",&(juzhen[i][j]));
+				my_scanf("%d",&(juzhen[i][j]));
 			}
 		}
 		for(i=0;i<a[h];i++)
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	for(h=0;h<k;h++)
 	{
-		printf("%d\n",sum[h]);
+		my_printf("%d\n",sum[h]);
 	}
 	return 0;
 }

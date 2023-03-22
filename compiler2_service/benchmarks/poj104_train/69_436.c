@@ -54,7 +54,7 @@ int main_bench()
 {
 	char a[1000];
 	char b[1000];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	
 	
 	if((strlen(a)==1)&&(strlen(b)==1)&&(a[0]=='0')&&(b[0]=='0'));
@@ -95,12 +95,12 @@ int main_bench()
 	if(c[0]=='0')
 	{
 		for(int j=1;j<=max;j++)
-			printf("%c",c[j]);
-		printf("\n");
+			my_printf("%c",c[j]);
+		my_printf("\n");
 	}
 	else
 	{
-    printf("%s\n",c);
+    my_printf("%s\n",c);
 	}
 	
 	

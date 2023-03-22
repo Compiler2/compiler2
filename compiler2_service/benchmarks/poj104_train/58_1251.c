@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j,out;
     char s[100],r;
-	scanf("%d%c",&n,&r);
+	my_scanf("%d%c",&n,&r);
 	while(n--)
 	{
         gets(s);
@@ -21,7 +21,7 @@ int main_bench()
 			}
 			if(s[i]=='\0') out=1;
 		}
-		printf("%d\n",out);
+		my_printf("%d\n",out);
 	}
 	return 0;
 }

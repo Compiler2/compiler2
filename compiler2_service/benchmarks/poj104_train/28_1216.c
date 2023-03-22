@@ -31,7 +31,7 @@ int main_bench()
 			a[i]=a[i]+1;
 	}
 	for(j=0;j<i;j++)
-		printf("%d,",a[j]);
-	printf("%d",a[i]);
+		my_printf("%d,",a[j]);
+	my_printf("%d",a[i]);
 	return 0;
 }

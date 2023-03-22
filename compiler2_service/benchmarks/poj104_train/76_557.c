@@ -4,13 +4,13 @@
 int main_bench()
 {
     int n,i,j,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     int b[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&(a[i]));
-        scanf("%d",&(b[i]));
+        my_scanf("%d",&(a[i]));
+        my_scanf("%d",&(b[i]));
     }
     
     for(i=0;i<n;i++)
@@ -42,7 +42,7 @@ int main_bench()
         
         if(s==0) 
         {
-            printf("no");
+            my_printf("no");
             break;
         
         }
@@ -81,7 +81,7 @@ int main_bench()
    
     if(s==1) 
     {
-        printf("%d %d",a[0],b[n-1]);
+        my_printf("%d %d",a[0],b[n-1]);
     
     }
     

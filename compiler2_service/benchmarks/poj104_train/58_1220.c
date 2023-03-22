@@ -19,7 +19,7 @@ int main_bench(){
 				}
 				else
 				{
-					printf("0\n");
+					my_printf("0\n");
 					want=0;
 	                break;
 				}
@@ -27,12 +27,12 @@ int main_bench(){
 		}
 		else
 		{
-			printf("0\n");
+			my_printf("0\n");
 			want=0;
 		}
         if(want==-1)
 		{
-			printf("1\n");
+			my_printf("1\n");
 		}
 	}
 	return 0;

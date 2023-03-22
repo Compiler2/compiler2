@@ -9,12 +9,12 @@ int main_bench()
 	int A[6],i;
 	for (i=0;i<6;i++)
 	{
-		scanf("%d",&A[i]);
+		my_scanf("%d",&A[i]);
 	}
 	for (i=0;i<6;i++)
 	{
 		int v=reverse(A[i]);
-		printf("%d\n",v);
+		my_printf("%d\n",v);
 	}
 	return 0;
 }

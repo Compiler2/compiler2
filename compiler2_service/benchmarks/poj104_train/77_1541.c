@@ -29,6 +29,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<len/2;i++)
-	    printf("%d %d\n",b[0][i],b[1][i]);
+	    my_printf("%d %d\n",b[0][i],b[1][i]);
 	return 0;
 }

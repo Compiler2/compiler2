@@ -21,16 +21,16 @@ void range(int n,int m,int *p)
 int main_bench()
 {
 	int n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int num[100];
 	int *p=num;
 	int i;
 	for(i=0;i<n;i++)
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	range(n,m,p);
 	for(i=0;i<n-1;i++)
-		printf("%d ",num[i]);
-	printf("%d",num[n-1]);
+		my_printf("%d ",num[i]);
+	my_printf("%d",num[n-1]);
 }
 
 

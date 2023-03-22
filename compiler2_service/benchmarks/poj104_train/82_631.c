@@ -5,10 +5,10 @@ int main_bench()
    int n,a[100],b[100],i,c[100],j,d,p,q;
    j=0;
    d=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-    scanf("%d %d",&(a[i]),&(b[i]));
+    my_scanf("%d %d",&(a[i]),&(b[i]));
     if((90<=a[i])&&(a[i]<=140)&&(60<=b[i])&&(b[i])<=90)
 	{
            j++;
@@ -36,7 +36,7 @@ int main_bench()
 		 max=c[p];
 	 }
 	 }
-  printf("%d",max);
+  my_printf("%d",max);
   }
  else
  {int max=0;
@@ -50,7 +50,7 @@ int main_bench()
 		 max=c[p];
 	 }
 	 }
-   printf("%d",max);
+   my_printf("%d",max);
  }
  
  return 0;

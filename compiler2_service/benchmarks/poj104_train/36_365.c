@@ -44,9 +44,9 @@ for (i=0;i<(n-1)/2;i++)
    {m=1;
    break;}
 if(m==0)
-  printf("YES");
+  my_printf("YES");
 else 
-printf("NO");
+my_printf("NO");
 }
-else printf("NO");
+else my_printf("NO");
 }

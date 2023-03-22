@@ -7,13 +7,13 @@ int main_bench(){
 	char dna2[501];
 	t=0;
 	d=0;
-	scanf("%lf",&a);
+	my_scanf("%lf",&a);
 	getchar();
-	scanf("%s",&dna1);
-	scanf("%s",&dna2);
+	my_scanf("%s",&dna1);
+	my_scanf("%s",&dna2);
     m1=strlen(dna1);
 	m2=strlen(dna2);
-	if(m1!=m2){printf("error");d=1;}
+	if(m1!=m2){my_printf("error");d=1;}
 	else{
 		for(i=0;i<m1;i++){
 			if(dna1[i]==dna2[i]){t=t+1;}
@@ -21,18 +21,18 @@ int main_bench(){
 	}
 	b=1.000000*t/m1;
 	if(d==0){for(i=0;i<m1;i++){
-		if((dna1[i]!='A')&&(dna1[i]!='T')&&(dna1[i]!='C')&&(dna1[i]!='G')){printf("error");
+		if((dna1[i]!='A')&&(dna1[i]!='T')&&(dna1[i]!='C')&&(dna1[i]!='G')){my_printf("error");
 		d=1;
 		break;}
 	}
 	}
 	if(d==0){for(i=0;i<m2;i++){
-		if((dna2[i]!='A')&&(dna2[i]!='T')&&(dna2[i]!='C')&&(dna2[i]!='G')){printf("error");}
+		if((dna2[i]!='A')&&(dna2[i]!='T')&&(dna2[i]!='C')&&(dna2[i]!='G')){my_printf("error");}
 	}
 	}
 	if((m1==m2)&&(d==0)){
-		if(b>a){printf("yes");}
-		else{printf("no");}
+		if(b>a){my_printf("yes");}
+		else{my_printf("no");}
 	}
 	return 0;
 }

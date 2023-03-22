@@ -6,7 +6,7 @@ int main_bench(){
 
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&num[i],&c);
+		my_scanf("%d%c",&num[i],&c);
 		n=n+1;
 		if(c=='\n')
 			break;
@@ -15,7 +15,7 @@ int main_bench(){
      
 	if(n==1)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else 
 	{
@@ -28,7 +28,7 @@ int main_bench(){
 		}
 		if(num[0]==num[n-1])
 		{
-			printf("No");
+			my_printf("No");
 		}
 		else
 		{
@@ -39,7 +39,7 @@ int main_bench(){
 			}
 		
 	
-		printf("%d",sec);
+		my_printf("%d",sec);
 		}
 	}
 	 

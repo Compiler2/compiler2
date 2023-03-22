@@ -8,17 +8,17 @@ int main_bench()
 	c[1]=2.0;
 	d[0]=2.0;
 	d[1]=3.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		sum=3.5;
 		if(a[i]==1){
-			printf("2.000\n");
+			my_printf("2.000\n");
 		}
 		else if(a[i]==2){
-			printf("3.500\n");
+			my_printf("3.500\n");
 		}
 		else{
 		for(j=2;j<a[i];j++){
@@ -27,7 +27,7 @@ int main_bench()
 			b[j]=d[j]/c[j];
 			sum=sum+b[j];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 		}
 	}
 	return 0;

@@ -4,7 +4,7 @@ void sword(void);
 int main_bench()
 {
     int love;
-    scanf("%d\n",&love);
+    my_scanf("%d\n",&love);
     
     int t;
     for(t=0;t<love;t++){
@@ -53,14 +53,14 @@ void sword(void)
     int miao=0;
     for(j=0;j<26;j++){
                       if(counter[j]==1 && loc[j]==min){
-                      printf("%c\n",haha+j);miao++;}
+                      my_printf("%c\n",haha+j);miao++;}
                       
                       
                       
                       }
     
     if(miao==0)
-    printf("no\n");   
+    my_printf("no\n");   
    
 
 

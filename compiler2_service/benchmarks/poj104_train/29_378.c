@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	double sum;
 	int i,j;
 	int a1,a2,ta,b1,b2,tb;
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		sum=0;
 		for(j=0;j<m;j++){
 			if(j==0){
@@ -24,7 +24,7 @@ int main_bench(){
 				sum+=(double)a2/(double)b2;
 			}
 		}
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

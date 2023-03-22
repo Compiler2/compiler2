@@ -26,10 +26,10 @@ int main_bench()
 {
 	int year,month,day,run,pin;
 	int i,a,t,y,r,total=0;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	i=year-1;
 	if(year==1111111111&&month==11&&day==11){
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	else{
 		if(i>=100){
@@ -50,19 +50,19 @@ int main_bench()
 		total+=a;
 		total%=7;
 		if(total==1)
-			printf("Mon.");
+			my_printf("Mon.");
 		if(total==2)
-			printf("Tue.");
+			my_printf("Tue.");
 		if(total==3)
-			printf("Wed.");
+			my_printf("Wed.");
 		if(total==4)
-			printf("Thu.");
+			my_printf("Thu.");
 		if(total==5)
-			printf("Fri.");
+			my_printf("Fri.");
 		if(total==6)
-			printf("Sat.");
+			my_printf("Sat.");
 		if(total==0)
-			printf("Sun.");
+			my_printf("Sun.");
 	}
 	return 0;
 }

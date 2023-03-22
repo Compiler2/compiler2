@@ -10,10 +10,10 @@ int main_bench()
 {
 	int a=0,b=0,c=0,p=0,n=0;
 	int q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&a,&b,&c);
+		my_scanf("%d %d %d",&a,&b,&c);
 		if(b>c)
 		{
 			q=b;
@@ -35,9 +35,9 @@ int main_bench()
 			}
 		}
 		if(p%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else 
-			printf("NO\n");
+			my_printf("NO\n");
 		p=0;
 	}
 	return 0;

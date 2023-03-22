@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,n,num[301],sum=0;
 	char a[301];
 	char letter[27]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	for(i=0;i<27;i++)
 	{
@@ -25,13 +25,13 @@ int main_bench()
 	{
 		if(num[i]!=0)
 		{
-			printf("%c=%d\n",letter[i],num[i]);
+			my_printf("%c=%d\n",letter[i],num[i]);
 			sum++;
 		}
 	}
 	if(sum==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

@@ -10,9 +10,9 @@ struct stu
 int main_bench()
 {
 	int n,i,a,b,c,a1,b1,c1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&score[i].num,&score[i].yuwen,&score[i].shuxue);
+		my_scanf("%d%d%d",&score[i].num,&score[i].yuwen,&score[i].shuxue);
 		score[i].sum=score[i].shuxue+score[i].yuwen;
 	}a=0;
 	b=0;
@@ -37,6 +37,6 @@ int main_bench()
 			c=score[i].sum;
 			c1=score[i].num;
 		}
-	}printf("%d %d\n%d %d\n%d %d",a1,a,b1,b,c1,c);
+	}my_printf("%d %d\n%d %d\n%d %d",a1,a,b1,b,c1,c);
 	return 0;
 }

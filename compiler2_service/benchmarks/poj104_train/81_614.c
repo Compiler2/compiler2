@@ -13,14 +13,14 @@ int main_bench(){
 	for(i=0;i<5;i++){
 		for(r=0;r<5;r++){
 			if(r<4){
-			scanf("%d ",&s[i][r]);
+			my_scanf("%d ",&s[i][r]);
 			}
 			if(r==4){
-			scanf("%d",&s[i][r]);
+			my_scanf("%d",&s[i][r]);
 			}
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	if(has(m,n)){
 		int tmp;
 		for(i=0;i<5;i++){
@@ -29,10 +29,10 @@ int main_bench(){
 			s[n][i]=tmp;
 		}
 		for(i=0;i<5;i++){
-			printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
+			my_printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
 		}
 	}else{
-		printf("error\n");
+		my_printf("error\n");
 	}
 	return 0;
 }

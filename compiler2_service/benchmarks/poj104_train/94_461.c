@@ -5,9 +5,9 @@ int main_bench()
 	int n;
 	int sz[500];
 	int m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++){
-		scanf("%d",&(sz[m]));
+		my_scanf("%d",&(sz[m]));
 	}
 	int e;
 	for(int k=1;k<=n;k++){
@@ -33,9 +33,9 @@ int main_bench()
 	}
 	int c=0;
 	for(c=0;c<a-1;c++){
-		printf("%d,",j[c]);
+		my_printf("%d,",j[c]);
 	}
-    printf("%d",j[c]);
+    my_printf("%d",j[c]);
 	return 0;
 }
 

@@ -6,7 +6,7 @@ int main_bench()
 	int daysb[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int y,m,d;
 	int num=0;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	int i;
 	if((y%4==0&&y%100!=0)||(y%400==0))
 	{
@@ -24,6 +24,6 @@ int main_bench()
 		}
 	    num=num+d;
 	}
-	printf("%d\n",num);
+	my_printf("%d\n",num);
 	return 0;
 }

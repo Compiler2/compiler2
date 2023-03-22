@@ -17,7 +17,7 @@ int main_bench()
       int a,b,i,t,w,r,n;
       int c[1001],d[1001];
 
-      scanf("%d%d",&a,&b);
+      my_scanf("%d%d",&a,&b);
 
 
       i=so(a);t=so(b);
@@ -36,12 +36,12 @@ int main_bench()
 	}
 
 if(c[0]==d[0])
-printf("%d",c[0]);
+my_printf("%d",c[0]);
 else {       
  for(n=0;n<=t;n++)
 			if(c[i-n-1]!=d[t-n-1])
 			{
-				printf("%d",c[i-n]);
+				my_printf("%d",c[i-n]);
                 break;
 			}
 		

@@ -2,8 +2,8 @@
 
 int main_bench()
 {int startYear,startMonth,startDay,endYear,endMonth,endDay,i,s=0,a=0;
-scanf("%d %d %d\n",&startYear,&startMonth,&startDay);
-scanf("%d %d %d",&endYear,&endMonth,&endDay);
+my_scanf("%d %d %d\n",&startYear,&startMonth,&startDay);
+my_scanf("%d %d %d",&endYear,&endMonth,&endDay);
 for(i=startYear+1;i<endYear;i++){
  if((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
   s=s+1;
@@ -77,7 +77,7 @@ if((startYear % 4 == 0 &&startYear % 100 != 0) || (startYear % 400 == 0))
  s=s+366-a;
 else
  s=s+365-a;
-printf("%d",s);    
+my_printf("%d",s);    
 return 0;
 }
 

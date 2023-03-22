@@ -2,7 +2,7 @@
 
 int main_bench()
 {int year,month,startYear ,startMonth ,startDay ,endYear ,endMonth ,endDay,TOTAL1=0,TOTAL2=0;
-scanf("%d %d %d\n%d %d %d",&startYear ,&startMonth ,&startDay,&endYear ,&endMonth ,&endDay);
+my_scanf("%d %d %d\n%d %d %d",&startYear ,&startMonth ,&startDay,&endYear ,&endMonth ,&endDay);
 for(year=1;year<startYear;year++)
 {if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
   TOTAL1+=366;
@@ -32,6 +32,6 @@ else TOTAL2+=30;
 }
 TOTAL2+=endDay;
 
-printf("%d",TOTAL2-TOTAL1);
+my_printf("%d",TOTAL2-TOTAL1);
 return 0;
 }

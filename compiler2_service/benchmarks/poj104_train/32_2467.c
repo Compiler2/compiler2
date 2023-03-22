@@ -5,12 +5,12 @@ int main_bench()
   char a[100],b[100],c[100],f[100],e[100];
   int i,m,k,n;
   int d[100];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   while(n>0)
   {
-  scanf("%s",a);
+  my_scanf("%s",a);
   m=strlen(a);
-  scanf("%s",b);
+  my_scanf("%s",b);
   k=strlen(b);
   for(i=0;i<m;i++)
   f[i]=a[m-1-i];
@@ -34,12 +34,12 @@ int main_bench()
   int num=0;
   for(i=m-1;i>=0;i--)
   {if(num)
-  {printf("%c",c[i]);continue;}
+  {my_printf("%c",c[i]);continue;}
    if(c[i]!='0')
-  {printf("%c",c[i]);
+  {my_printf("%c",c[i]);
   num=1;}
   }
-  printf("\n");
+  my_printf("\n");
   n--;
 }
   

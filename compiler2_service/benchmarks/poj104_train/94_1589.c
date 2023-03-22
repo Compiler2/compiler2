@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int first[500], n, i, a, b;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++){
-		scanf("%d", &(first[i]));
+		my_scanf("%d", &(first[i]));
 	}
 	for(i=0; i<n; i++){
 		if(first[i]%2==0){
@@ -24,14 +24,14 @@ int main_bench(){
 	}
 	for(i=0; i<b; i++){
 		if(first[i]!=0){
-			printf("%d", first[i]);
+			my_printf("%d", first[i]);
 			i++;
 			break;
 		}
 	}
 	while(i<b){
 		if(first[i]!=0){
-			printf(",%d", first[i]);
+			my_printf(",%d", first[i]);
 		}
 		i++;
 	}

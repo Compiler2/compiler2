@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j;
 	char str[20],str1[20],str2[20];
-	scanf("%s%s",str,str1);
+	my_scanf("%s%s",str,str1);
 	if(strlen(str)<strlen(str1))
 	{
 		strcpy(str2,str);
@@ -24,10 +24,10 @@ int main_bench()
 	{
 		if(str1[i]!='0')
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}
 	}
 	if(i>strlen(str)-1)
-		printf("YES\n");
+		my_printf("YES\n");
 }

@@ -22,18 +22,18 @@ int hui(int num)
 int main_bench()
 {
 	int m,n,flag=0,i,a[20],k=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 		if(su(i)==1&&hui(i)==1)
 		{
 			flag=1;
 			a[k++]=i;
 		}
-	if(flag==0) printf("no");
+	if(flag==0) my_printf("no");
 	else
 	{
-		for(i=0;i<k-1;i++) printf("%d,",a[i]);
-		printf("%d",a[i]);
+		for(i=0;i<k-1;i++) my_printf("%d,",a[i]);
+		my_printf("%d",a[i]);
 	}
 }
 

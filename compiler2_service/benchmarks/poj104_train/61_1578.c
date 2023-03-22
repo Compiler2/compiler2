@@ -4,10 +4,10 @@ int f(int a);
 int main_bench()
 {
 int n,a,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++){
-scanf("%d",&a);
-printf("%d\n",(f(a)));
+my_scanf("%d",&a);
+my_printf("%d\n",(f(a)));
 }
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int f,i,num,sum=0;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=1;i<=num;i++)
 	{
 		if(i%7==0)
@@ -24,6 +24,6 @@ int main_bench()
 		}
 		sum+=f*f;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

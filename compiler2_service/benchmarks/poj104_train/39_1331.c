@@ -14,12 +14,12 @@ int main_bench()
 	int panduan(struct std x);
 	int n,i,*a,max,sum=0;
 	struct std*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(int*)malloc(n*sizeof(int));
 	p=(struct std*)malloc(n*sizeof(struct std));
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%s %d%d %c %c %d",p[i].name,&p[i].qi,&p[i].ban,&p[i].xue,&p[i].xi,&p[i].lun);
+		my_scanf("%s %d%d %c %c %d",p[i].name,&p[i].qi,&p[i].ban,&p[i].xue,&p[i].xi,&p[i].lun);
 		a[i]=panduan(p[i]);
 	}
     for(i=0,max=0;i<=n-1;i++)
@@ -32,11 +32,11 @@ int main_bench()
 	{
 		if(a[i]==max)
 		{
-			printf("%s\n%d\n",p[i].name,max);
+			my_printf("%s\n%d\n",p[i].name,max);
 			break;
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 int panduan(struct std x)

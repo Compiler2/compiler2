@@ -4,17 +4,17 @@ int cmp(const void * a, const void * b);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *arr =  (int *) malloc (sizeof(int) * n);
 	int i;
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d",&arr[i]);
+		my_scanf("%d",&arr[i]);
 	}
 	qsort(arr,n,sizeof(arr[0]),cmp);
-	printf("%d\n",arr[n-1]);
-	printf("%d\n",arr[n-2]);
-	scanf("%d",&n);
+	my_printf("%d\n",arr[n-1]);
+	my_printf("%d\n",arr[n-2]);
+	my_scanf("%d",&n);
 	return 0;
 }
 int cmp(const void * a, const void * b)

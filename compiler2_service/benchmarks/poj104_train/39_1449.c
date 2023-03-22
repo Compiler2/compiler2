@@ -13,13 +13,13 @@ int main_bench()
 {
 	int n,i,t,total=0,money[100]={0},max=0;
 	struct inf c[100];
-	scanf("%d",&n);	
+	my_scanf("%d",&n);	
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c[i].name);
-		scanf("%d %d",&c[i].s1,&c[i].s2);
-		scanf(" %c %c ",&c[i].a,&c[i].b);
-		scanf("%d",&c[i].num);
+		my_scanf("%s",c[i].name);
+		my_scanf("%d %d",&c[i].s1,&c[i].s2);
+		my_scanf(" %c %c ",&c[i].a,&c[i].b);
+		my_scanf("%d",&c[i].num);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -43,9 +43,9 @@ int main_bench()
 		}
 		total+=money[i];
 	}
-	printf("%s\n",c[t].name);
-	printf("%d\n",max);
-	printf("%d",total);
+	my_printf("%s\n",c[t].name);
+	my_printf("%d\n",max);
+	my_printf("%d",total);
 }
 
 

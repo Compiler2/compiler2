@@ -3,11 +3,11 @@
 int main_bench()
 {
   int sY,sM,sD,eY,eM,eD,sN,eN,N,num(int Y,int M,int D);
-  scanf("%d%d%d\n%d%d%d",&sY,&sM,&sD,&eY,&eM,&eD);
+  my_scanf("%d%d%d\n%d%d%d",&sY,&sM,&sD,&eY,&eM,&eD);
   sN=num(sY,sM,sD);
   eN=num(eY,eM,eD);
   N=eN-sN;
-  printf("%d",N);
+  my_printf("%d",N);
   return 0;
 }
 

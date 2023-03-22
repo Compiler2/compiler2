@@ -38,14 +38,14 @@ int main_bench()
 	for(i=0;word[i][0]!='\0';i++)
 	{
 		if(len[i]==max)
-		{	printf("%s\n",word[i]);
+		{	my_printf("%s\n",word[i]);
 		break;}
 	}
 
 	for(i=0;word[i][0]!='\0';i++)
 	{
 		if(len[i]==min)
-		{	printf("%s\n",word[i]);
+		{	my_printf("%s\n",word[i]);
 		break;}
 	}
 

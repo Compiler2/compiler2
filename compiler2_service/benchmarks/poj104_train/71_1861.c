@@ -5,10 +5,10 @@ int main_bench(){
 	int n,i,k,e;
 	int year,month1,month2;
 	int day;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
                   day=0;
-		scanf("%d %d %d", &year, &month1, &month2);
+		my_scanf("%d %d %d", &year, &month1, &month2);
 		if(month1>month2){
 			e=month2;
 			month2=month1;
@@ -29,9 +29,9 @@ int main_bench(){
 		}
 		}
 		if(day%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else if(day%7!=0){
-			printf("NO\n");
+			my_printf("NO\n");
 			}
 		}
 

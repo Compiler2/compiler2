@@ -24,6 +24,6 @@ int main_bench()
 			continue;
 	}
 	for(i=0;i<k;i++)
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	return 0;
 }

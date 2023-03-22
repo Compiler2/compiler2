@@ -13,7 +13,7 @@ int main_bench()
 {
 	int Year,Month,Day,Week;
 	int i;
-	scanf("%d%d%d",&Year,&Month,&Day);
+	my_scanf("%d%d%d",&Year,&Month,&Day);
 	int sum=(((Year-1)/4-(Year-1)/100+(Year-1)/400)%7)*366+((Year-1-(((Year-1)/4-(Year-1)/100+(Year-1)/400)%7))%7)*365;
 	for(i=0;i<Month-1;i++)
 	{
@@ -29,8 +29,8 @@ int main_bench()
 			sum=sum+1;
 	}
 	Week=sum%7;
-	printf("%s",week[Week]);
-	printf("\n");
+	my_printf("%s",week[Week]);
+	my_printf("\n");
 	return 0;
 }
 

@@ -6,10 +6,10 @@ int main_bench()
 	int i;
 	for(i=0;;i++)
 	{
-		scanf("%s",&str[i]);
+		my_scanf("%s",&str[i]);
 	    c=getchar();
 		if(c!=' ') break;
-		printf("%d,",strlen(str[i]));
+		my_printf("%d,",strlen(str[i]));
 	}
-	printf("%d",strlen(str[i]));
+	my_printf("%d",strlen(str[i]));
 }

@@ -4,12 +4,12 @@ int F(int a);
 int main_bench()
 {
 	int n,a,i,sz[20],result;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		
 		result=F(a);
-		printf("%d\n",result);
+		my_printf("%d\n",result);
 	}
 	return 0;
 }

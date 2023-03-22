@@ -4,11 +4,11 @@ int main_bench()
 {
 	int m,n,i,j;
 	float a,b,c,s,d;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	j=1;
 	while(j<=m)
 	{
-		scanf("%d\n",&n);
+		my_scanf("%d\n",&n);
 		i=1;
 		a=1,b=2;
 		s=0;
@@ -20,7 +20,7 @@ int main_bench()
 			b=a+b;
 			a=d;
 			i++;}
-		printf("%.3f\n",s);
+		my_printf("%.3f\n",s);
 		j++;}
 	return 0;
 }

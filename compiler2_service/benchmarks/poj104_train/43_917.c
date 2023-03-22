@@ -4,7 +4,7 @@
 int main_bench()
 {
   int m,i,j,n,k;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(i=3;i<=m/2;i++)
   {   
 	 n=0,k=0;
@@ -17,7 +17,7 @@ int main_bench()
          k=j;}
        }
     if(k==(m-i-1))
-      printf("%d %d\n",i,m-i);
+      my_printf("%d %d\n",i,m-i);
   }
  
   return 0;

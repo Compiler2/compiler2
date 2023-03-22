@@ -5,7 +5,7 @@ int main_bench()
 	char a[1001],b[1001];
 	int c[100]={0};
 	int i,n=0,l1,l2;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	if(l1==l2)
@@ -18,13 +18,13 @@ int main_bench()
 		{
 			if(c[i]!=0)
 			{
-				printf("NO");
+				my_printf("NO");
 				n=1;
 				break;
 			}
 		}
-	    if(n==0)printf("YES");
+	    if(n==0)my_printf("YES");
 	}
-	else printf("NO");
+	else my_printf("NO");
 	return 0;
 }

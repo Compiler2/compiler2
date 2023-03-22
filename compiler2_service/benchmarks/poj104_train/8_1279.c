@@ -13,15 +13,15 @@ int combine(int a[],int b[],int n,int m,int c[]){
 }
 int input(int n,int a[]){
 	int i;
-	for(i=0;i<n;i++) scanf("%d",&a[i]);
+	for(i=0;i<n;i++) my_scanf("%d",&a[i]);
 }
 int output(int n,int a[]){
 	int i;
-	for(i=0;i<n;i++)  {printf("%d",a[i]);if(i<n-1) printf(" ");}
+	for(i=0;i<n;i++)  {my_printf("%d",a[i]);if(i<n-1) my_printf(" ");}
 }
 int main_bench(){
 	int n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int a[n],b[m],c[n+m];
 	input(n,a);
 	input(m,b);

@@ -5,15 +5,15 @@ int main_bench()
 	int n,i;
 	float gpa,score[10]={0},g[10]={0},pow[10]={0},sg,ave,s;
 	s=0;ave=0;sg=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%f",&pow[i]);
+		my_scanf("%f",&pow[i]);
 		s=s+pow[i];
 	}
 	for (i=0;i<n;i++)
 	{
-		scanf("%f",&score[i]);
+		my_scanf("%f",&score[i]);
 		if(score[i]<=100.0&&score[i]>=90.0)
 			g[i]=4.0;
 		else if(score[i]<=89.0&&score[i]>=85.0)
@@ -36,6 +36,6 @@ int main_bench()
 		sg=sg+g[i]*pow[i];
 	}
 	gpa=sg/s;
-	printf("\n%.2f",gpa);
+	my_printf("\n%.2f",gpa);
 	return 0;
 }

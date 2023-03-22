@@ -10,7 +10,7 @@ int main_bench()
 	
 	memset(a,0,sizeof(a));
 	memset(b,0,sizeof(b));
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	len1=strlen(a);
     len2=strlen(a);
 	qsort(a,len1,sizeof(char),compare);
@@ -18,8 +18,8 @@ int main_bench()
    
 
 		if(strcmp(a,b)==0)
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 		
 return 0;
 }

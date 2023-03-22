@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int num[100000],n,del,rem;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<=n-1;i++)
-	scanf("%d",&num[i]);
-	scanf("%d",&del);
+	my_scanf("%d",&num[i]);
+	my_scanf("%d",&del);
 	rem=n;
 	int g;
 	for(g=n-1;num[g]==del;g--)
@@ -30,9 +30,9 @@ int main_bench()
 	int m;
 	for(m=0;m<=rem-1;m++)
 	{
-		printf("%d",num[m]);
+		my_printf("%d",num[m]);
 		if(m<=rem-2)
-			printf(" ");
+			my_printf(" ");
 	}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 	return 0;
 }

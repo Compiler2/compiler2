@@ -4,11 +4,11 @@ int main_bench()
 {
     int m,n,i;
     int r=0,a=0,t=0,e=0;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     int year[m];
     for(i=0;i<m;i++)
     {
-        scanf("%d",&year[i]);
+        my_scanf("%d",&year[i]);
     }
     for(i=0;i<m;i++)
     {
@@ -24,6 +24,6 @@ int main_bench()
         }
     }
     double rn=1.0*r/m*100,an=1.0*a/m*100,tn=1.0*t/m*100,en=1.0*e/m*100;
-    printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\nOver60: %.2lf%\n",rn,an,tn,en);
+    my_printf("1-18: %.2lf%\n19-35: %.2lf%\n36-60: %.2lf%\nOver60: %.2lf%\n",rn,an,tn,en);
     return 0;
 }

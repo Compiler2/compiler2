@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int z=0;z<n;z++)
     {
             int m;
-            scanf("%d",&m);
+            my_scanf("%d",&m);
             if(m==1||m==2)
-            {printf("1\n");break;}
+            {my_printf("1\n");break;}
             int a=1,b=1,d,c;
             for(int i=2;i<m;i++)
             {
@@ -18,6 +18,6 @@ int main_bench()
                     b=c;
                     a=d;
             }
-            printf("%d\n",b);
+            my_printf("%d\n",b);
     }
 }

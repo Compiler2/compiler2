@@ -17,9 +17,9 @@ int main_bench()
 	int n,i,p=0,q=0,len1,len2,k;
 	char id[100];
 	int age;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",id, &age);
+		my_scanf("%s%d",id, &age);
 		if(age>=60){
 			old[p].age=age;
 			strcpy(old[p].id,id);
@@ -42,10 +42,10 @@ int main_bench()
 		}
 	}
 	for(i=0;i<len1;i++){
-		printf("%s\n",old[i].id);
+		my_printf("%s\n",old[i].id);
 	}
 	for(i=0;i<len2;i++){
-		printf("%s\n",young[i].id);
+		my_printf("%s\n",young[i].id);
 	}
 	return 0;
 }

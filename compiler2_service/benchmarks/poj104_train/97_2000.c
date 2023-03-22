@@ -9,7 +9,7 @@ int main_bench()
 	int q=0;
 	int x=0;
 	int y=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>=100)
 	{
 		n=n-100;
@@ -17,7 +17,7 @@ int main_bench()
 		a1=i;
 	}
 	
-	printf("%d\n",a1);
+	my_printf("%d\n",a1);
 	while(n>=50&&n<100)
 	{
 		n=n-50;
@@ -25,7 +25,7 @@ int main_bench()
 		a2=l;
 	}
 	
-	printf("%d\n",a2);
+	my_printf("%d\n",a2);
 	while(n>=20&&n<50)
 	{
 		n=n-20;
@@ -33,7 +33,7 @@ int main_bench()
 		a3=k;
 	}
 	
-		printf("%d\n",a3);
+		my_printf("%d\n",a3);
 	while(n>=10&&n<20)
 	{
 		n=n-10;
@@ -41,7 +41,7 @@ int main_bench()
 		a4=x;
 	}
 	
-		printf("%d\n",a4);
+		my_printf("%d\n",a4);
 	while(n>=5&&n<10)
 	{
 		n=n-5;
@@ -49,7 +49,7 @@ int main_bench()
 		a5=q;
 	}
 	
-		printf("%d\n",a5);
+		my_printf("%d\n",a5);
 	while(n>0&&n<5)
 	{
 		n=n-1;
@@ -57,7 +57,7 @@ int main_bench()
 		a6=y;
 	}
 	
-		printf("%d\n",a6);
+		my_printf("%d\n",a6);
 	
 		return 0;
 }

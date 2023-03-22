@@ -3,9 +3,9 @@
 int main_bench(){
    char id[100][10];
    int n,age[100],i,k=0,m,len,p;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-       scanf("%s %d",&(id[i]),&(age[i]));
+       my_scanf("%s %d",&(id[i]),&(age[i]));
    }
    char e[100][10],kong[10];
    int xin[100];
@@ -27,11 +27,11 @@ int main_bench(){
         }
     }
     for(k=0;k<len;k++){
-         printf("%s\n",e[k]);
+         my_printf("%s\n",e[k]);
     }
     for(i=0;i<n;i++){
        if(age[i]<60){
-          printf("%s\n",id[i]);
+          my_printf("%s\n",id[i]);
        }
     }
 return 0;

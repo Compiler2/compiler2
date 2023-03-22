@@ -18,13 +18,13 @@ int diji( int month, int day){
 }
 int main_bench(){
 	int n,days,mon,date,m,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=1;j<=12;j++){
 	days=0;
     days=diji(j,13);
 	m=days%7;
 	if((m+n-1==5)||((m+n-1)%7==5)){
-		printf("%d\n",j);
+		my_printf("%d\n",j);
 	}
 	}
 	return 0;

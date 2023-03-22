@@ -10,11 +10,11 @@ struct patient
 int main_bench()
 {
     int n, i, j;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(i=1;i<=n;i++)
     {
-        scanf("%s", &line[i].name);
-        scanf("%d", &line[i].age);
+        my_scanf("%s", &line[i].name);
+        my_scanf("%d", &line[i].age);
     }
     for(i=1;i<=n;i++)
     {
@@ -33,7 +33,7 @@ int main_bench()
     for(i=1;i<=n;i++)
     {
         
-            printf("%s\n", line[i].name);
+            my_printf("%s\n", line[i].name);
         
     }
     return 0;

@@ -4,18 +4,18 @@ int main_bench()
 {
     int n;
 	char str[500];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (int i = 1; i <= n; i++)
 	{
-		scanf("%s", str);
+		my_scanf("%s", str);
 		if ((str[0] < 'a' || str[0] > 'z') && (str[0] < 'A' || str[0] > 'Z') && (str[0] != '_'))
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		else if(strlen(str) == 1)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else
 		{
@@ -27,9 +27,9 @@ int main_bench()
 					break;
 			}
 			if (j == len)
-				printf("yes\n");
+				my_printf("yes\n");
 			else
-				printf("no\n");
+				my_printf("no\n");
 		}
 	}
 	return 0;

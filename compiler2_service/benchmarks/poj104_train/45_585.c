@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[50],b[50],*p1,*p2;
 	int m,n,c,i,j,flag;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	p1=a;
 	p2=b;
 	m=strlen(a);
@@ -22,7 +22,7 @@ int main_bench()
 		}
 		if(flag==1)
 		{
-			printf("%d",c);
+			my_printf("%d",c);
 			break;
 		}
 	}

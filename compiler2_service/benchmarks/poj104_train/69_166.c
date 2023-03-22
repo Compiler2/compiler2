@@ -4,7 +4,7 @@ int main_bench()
 {
 	int al,bl,j,i,m,n=0;
 	char a[255],b[255],ab[255],c=62;
-	scanf("%s%c%s",&a,&c,&b);
+	my_scanf("%s%c%s",&a,&c,&b);
 	al=strlen(a);
 	bl=strlen(b);
 	if(al>bl)
@@ -34,8 +34,8 @@ int main_bench()
 	}
 	if(n)
 	{
-		printf("1");
-		printf("%s\n",b);
+		my_printf("1");
+		my_printf("%s\n",b);
 	}
 	else
 	{
@@ -44,12 +44,12 @@ int main_bench()
 			if(b[i]!='0')
 			{
 				for(j=i;j<bl;j++)
-					printf("%c",b[j]);
+					my_printf("%c",b[j]);
 				break;
 			}
 			else
 				if(i==0 && bl==1)
-					printf("0\n");
+					my_printf("0\n");
 		}
 	}
 	return 0;

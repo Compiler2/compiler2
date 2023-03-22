@@ -5,7 +5,7 @@ int change(int a[5][5],int m,int n)
 	int c,i,k;
 	if(m>4||n>4)
 	{
-		printf("error\n");
+		my_printf("error\n");
 		return(0);
 	}
 	else
@@ -23,12 +23,12 @@ int change(int a[5][5],int m,int n)
 	}
 		for(i=0;i<5;i++)
 		{
-            printf("%d",a[i][0]);
+            my_printf("%d",a[i][0]);
 			for(k=1;k<5;k++)
 			{
-				printf(" %d",a[i][k]);
+				my_printf(" %d",a[i][k]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
         return(1);
 	}
@@ -39,9 +39,9 @@ int main_bench()
 	{
 		for(k=0;k<5;k++)
 		{
-			scanf("%d",&b[i][k]);
+			my_scanf("%d",&b[i][k]);
 		}
 	}
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	change(b,x,y);
 }

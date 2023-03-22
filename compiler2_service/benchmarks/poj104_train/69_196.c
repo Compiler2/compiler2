@@ -34,6 +34,6 @@ int main_bench()
        continue;
     else
       {flag=1;
-		  printf("%d",c[j]);}}
-	printf("%d",c[0]);
+		  my_printf("%d",c[j]);}}
+	my_printf("%d",c[0]);
 }

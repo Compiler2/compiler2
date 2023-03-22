@@ -4,15 +4,15 @@
 int main_bench()
 {
 	int n,i,x,y,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	x=0;
 	y=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	y=a;
 	for (i=2;i<=n;i++)
 	{
 		int ai;
-		scanf("%d\n",&ai);
+		my_scanf("%d\n",&ai);
 		if (ai>=x)
 		{
 			x=ai;
@@ -25,8 +25,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",x);
-	printf("%d\n",y);
+	my_printf("%d\n",x);
+	my_printf("%d\n",y);
 	return 0;
 }
 

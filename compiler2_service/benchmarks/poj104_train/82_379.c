@@ -4,10 +4,10 @@
 int main_bench(){
 	int i=0,sz1[100],sz2[100],n,sz[100],sza[100],b=1,c,max;
 	sz[0]=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++){
-		scanf("%d %d",&sz1[i],&sz2[i]);
+		my_scanf("%d %d",&sz1[i],&sz2[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz1[i]<90||sz1[i]>140||sz2[i]<60||sz2[i]>90){
@@ -18,9 +18,9 @@ int main_bench(){
 	}
 	if(n==1){
 		if(b==2){
-			printf("0");
+			my_printf("0");
 		}
-		else {printf("1");}
+		else {my_printf("1");}
 	}
 	else {
 		
@@ -37,11 +37,11 @@ int main_bench(){
 			max=sza[i];
 		}
 	}
-	printf("%d",max-1);
+	my_printf("%d",max-1);
 	}
 	
 	else {
-		printf("%d",n);
+		my_printf("%d",n);
 	
 			
 			

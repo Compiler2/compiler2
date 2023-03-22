@@ -25,8 +25,8 @@ for (i=1;i<=n;i++)
   {if (len[i]>max) {max=len[i];p1=i;}
   if (len[i]<min) {min=len[i];p2=i;}
   }
-if (max==min) {for (i=1;i<=len[1];i++) printf("%c",word[1][i]);printf("\n");for (i=1;i<=len[1];i++) printf("%c",word[1][i]);}
- else {for (i=1;i<=len[p1];i++) printf("%c",word[p1][i]);
-          printf("\n");
-         for (i=1;i<=len[p2];i++) printf("%c",word[p2][i]);}
+if (max==min) {for (i=1;i<=len[1];i++) my_printf("%c",word[1][i]);my_printf("\n");for (i=1;i<=len[1];i++) my_printf("%c",word[1][i]);}
+ else {for (i=1;i<=len[p1];i++) my_printf("%c",word[p1][i]);
+          my_printf("\n");
+         for (i=1;i<=len[p2];i++) my_printf("%c",word[p2][i]);}
 }

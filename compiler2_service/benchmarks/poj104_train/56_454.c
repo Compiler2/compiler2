@@ -6,7 +6,7 @@ int main_bench()
     int a,i=0,A,B,C,D,E;
    
 
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	
 		A=a/10000;
 	B=(a-A*10000)/1000;
@@ -19,6 +19,6 @@ int main_bench()
 	{i=B*1+C*10+D*100+E*1000;}
 		else if (a<1000&&a>99)
 	{i=C*1+D*10+E*100;}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	return 0;
 }

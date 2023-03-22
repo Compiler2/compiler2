@@ -21,8 +21,8 @@ int main_bench()
   if((j==t+1)||(j==t+2))
   {
   for(k=i;k<=i+n-1;k++)
-  printf("%c",str[k]);
-  printf("\n");
+  my_printf("%c",str[k]);
+  my_printf("\n");
   }
      }
  }

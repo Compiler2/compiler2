@@ -27,11 +27,11 @@ void sequence(struct hospital matrix[],int n)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",all[i].ID,&all[i].age);
+		my_scanf("%s %d",all[i].ID,&all[i].age);
 	}
 	int oi=0,yi=0;
 	for(i=0;i<n;i++)
@@ -50,11 +50,11 @@ int main_bench()
 	sequence(old,oi);
 	for(i=0;i<oi;i++)
 	{
-		printf("%s\n",old[i].ID);
+		my_printf("%s\n",old[i].ID);
 	}
 	for(i=0;i<yi;i++)
 	{
-		printf("%s\n",young[i].ID);
+		my_printf("%s\n",young[i].ID);
 	}
 	return 0;
 }

@@ -19,11 +19,11 @@ int f(int x)
 int main_bench()
 {
     int n,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int y,m1,m2;
     while(n--)
     {
-    scanf("%d %d %d",&y,&m1,&m2);
+    my_scanf("%d %d %d",&y,&m1,&m2);
     mo2=28;
     if (y%400==0||(y%4==0)&&(y%100!=0))
     mo2=29;
@@ -31,8 +31,8 @@ int main_bench()
     m=f(m1)-f(m2);
     else m=f(m2)-f(m1);
     if(m%7==0)
-    printf("YES\n");
-    else printf("NO\n");
+    my_printf("YES\n");
+    else my_printf("NO\n");
     }
 }
 

@@ -7,16 +7,16 @@ int main_bench()
     int n,m,j,i;
     float sum;
     a[1]=1;a[2]=2;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(j=1;j<=m;j++)
     {sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(i=3;i<=n+1;i++)
     a[i]=a[i-1]+a[i-2];
     for(i=1;i<=n;i++)
     {
                 sum=sum+a[i+1]/a[i];     }
-               printf("%.3f\n",sum) ;
+               my_printf("%.3f\n",sum) ;
                }
               getchar();getchar(); }

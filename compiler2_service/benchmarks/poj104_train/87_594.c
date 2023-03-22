@@ -6,7 +6,7 @@ int main_bench()
 	int z[99];
 	for(i=0;a[i]!=0;i++)
 	{
-	    scanf("%d %d %d %d %d %d\n",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+	    my_scanf("%d %d %d %d %d %d\n",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 	}
 		for(i=0;a[i]!=0;i++)
 		{
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		for(i=0;a[i]!=0;i++)
 		{
-		     printf("%d\n",z[i]);
+		     my_printf("%d\n",z[i]);
 		}
 return 0;
 }

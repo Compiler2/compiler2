@@ -3,7 +3,7 @@
 main_bench()
 {
       char c[1200],m;
-      scanf("%s",c);
+      my_scanf("%s",c);
       int i,j,a = 0,b,l;
       l = strlen(c);
       if(c[0]>='a' && c[0]<='z')
@@ -18,7 +18,7 @@ main_bench()
               a++;
           else
            {
-             printf("(%c,%d)",m,a);
+             my_printf("(%c,%d)",m,a);
              a = 0;
              if(c[i]>='a' && c[i]<='z')
              m = c[i] -'a'+'A';
@@ -26,7 +26,7 @@ main_bench()
              a++;
            }
       }
-      printf("(%c,%d)",m,a);
+      my_printf("(%c,%d)",m,a);
       getchar();
       getchar();
       getchar();

@@ -10,9 +10,9 @@ struct Student
 int main_bench()
 {   
     int N,i,j,s,t,m;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N;i++)
-        scanf("%d%d%d",&sdu[i].num,&sdu[i].chinese,&sdu[i].math);
+        my_scanf("%d%d%d",&sdu[i].num,&sdu[i].chinese,&sdu[i].math);
         
     for(j=0;j<3;j++){
         for(i=0;i<N-j-1;i++)
@@ -23,5 +23,5 @@ int main_bench()
             }      
     }
     for(i=0;i<3;i++)
-    printf("%d %d\n",sdu[N-1-i].num,sdu[N-1-i].chinese+sdu[N-1-i].math);      
+    my_printf("%d %d\n",sdu[N-1-i].num,sdu[N-1-i].chinese+sdu[N-1-i].math);      
 }

@@ -9,10 +9,10 @@ int main_bench()
 {
         int m, n;
         int i, j;
-        scanf("%d%d", &m, &n);
+        my_scanf("%d%d", &m, &n);
         for (i = 1; i <= m ; i++)
                 for (j = 1; j <= n; j++) {
-                        scanf("%d", &matrix[i][j]);
+                        my_scanf("%d", &matrix[i][j]);
                 }
         transform(m, n);
 
@@ -32,28 +32,28 @@ void transform(int m, int n)
                         case 0:
                                 x++;y++;
                                 while ( y < n - times[1] ) {
-                                        printf("%d\n", matrix[x][y]);
+                                        my_printf("%d\n", matrix[x][y]);
                                         y++;
                                         index++;
                                 }
                                 break;
                         case 1:
                                 while ( x < m - times[2]) {
-                                        printf("%d\n", matrix[x][y]);
+                                        my_printf("%d\n", matrix[x][y]);
                                         x++;
                                         index++;
                                 }
                                 break;
                         case 2:
                                 while ( y > times[3] + 1 ) {
-                                        printf("%d\n", matrix[x][y]);
+                                        my_printf("%d\n", matrix[x][y]);
                                         y--;
                                         index++;
                                 }
                                 break;
                         case 3:
                                 while ( x > times[0] ) {
-                                        printf("%d\n", matrix[x][y]);
+                                        my_printf("%d\n", matrix[x][y]);
                                         x--;
                                         index++;
                                 }
@@ -63,7 +63,7 @@ void transform(int m, int n)
                 }
                 if (total - index == 1) {
                         if (dir == 3) x++, y++;
-                        printf("%d\n", matrix[x][y]);
+                        my_printf("%d\n", matrix[x][y]);
                         index++;
                 }
                 times[dir]++;

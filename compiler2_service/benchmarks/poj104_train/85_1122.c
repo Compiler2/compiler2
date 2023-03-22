@@ -37,8 +37,8 @@ int main_bench()
 		gets(juzi);
 		int len=strlen(juzi);
 		if(islegal(juzi,len)==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 }

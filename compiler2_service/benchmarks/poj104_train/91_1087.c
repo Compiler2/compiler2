@@ -15,6 +15,6 @@ int main_bench()
 			c[i]=s[i]+s[i+1];
 		i++;
 	}
-	printf("%s",c);
+	my_printf("%s",c);
 	return 0;
 }

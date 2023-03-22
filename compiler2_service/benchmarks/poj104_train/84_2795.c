@@ -6,12 +6,12 @@ int main_bench()
  int number, largest, second, counter,n;
  counter = 1;
 
- scanf("%d",&n);
+ my_scanf("%d",&n);
  largest=-10000000; second=largest;
  while ( counter <= n )
  {
   
-  scanf ( "%d", &number );
+  my_scanf ( "%d", &number );
 
   if ( number >= largest )
   {
@@ -25,6 +25,6 @@ int main_bench()
   
   counter++;
  }
- printf ( "%d\n", largest );
- printf ( "%d\n", second);
+ my_printf ( "%d\n", largest );
+ my_printf ( "%d\n", second);
 } 

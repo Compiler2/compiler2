@@ -8,16 +8,16 @@ int main_bench()
 	int xuefen[100];
 	float score[100];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&xuefen[i]);
+		my_scanf("%d",&xuefen[i]);
 		
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&score[i]);
+		my_scanf("%f",&score[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -70,7 +70,7 @@ int main_bench()
 	}
 	GPA=sum1/sum2;
 
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 }
 
 

@@ -9,21 +9,21 @@ int main_bench()
     
  
    i=1; 
-   scanf("%d%c",&x[1],&ch);
+   my_scanf("%d%c",&x[1],&ch);
    while(ch==',')
    {
       i++;
-      scanf("%d%c",&x[i],&ch);                           
+      my_scanf("%d%c",&x[i],&ch);                           
    }  
    
    n=i;
-   printf("%d ",n);
+   my_printf("%d ",n);
    i=1; 
-   scanf("%d%c",&y[1],&ch);
+   my_scanf("%d%c",&y[1],&ch);
    while(ch==',')
    {
       i++;
-      scanf("%d%c",&y[i],&ch);                           
+      my_scanf("%d%c",&y[i],&ch);                           
    }  
    
    for(i=0;i<=1000;i++)
@@ -36,7 +36,7 @@ int main_bench()
    for(i=0;i<=1000;i++)
      if(f[i]>ans)
        ans=f[i];
-   printf("%d",ans);  
+   my_printf("%d",ans);  
   
    return 0;                        
 }

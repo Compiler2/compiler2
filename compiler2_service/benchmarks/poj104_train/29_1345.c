@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,m,n,j;
 	float sl[1000],add[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		sl[0]=1;
 		sl[1]=2;
 		add[j]=0;
@@ -19,7 +19,7 @@ int main_bench()
 	}
 	for(j=0;j<m;j++)
 	{
-		printf("%.3f\n",add[j]);
+		my_printf("%.3f\n",add[j]);
 	}
 	return 0;
 }

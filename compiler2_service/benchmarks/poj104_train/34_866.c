@@ -4,9 +4,9 @@ int xx(int k);
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1)
-		printf("End");
+		my_printf("End");
 	else
 	{
 		for(i=n;i>1;i=xx(i))
@@ -14,15 +14,15 @@ int main_bench()
 			if(i%2==0)
 			{
 				
-				printf("%d/2=%d\n",i,i/2);
+				my_printf("%d/2=%d\n",i,i/2);
 			}
 			if(i%2==1)
 			{
 				
-				printf("%d*3+1=%d\n",i,i*3+1);
+				my_printf("%d*3+1=%d\n",i,i*3+1);
 			}
 		}
-		printf("End");
+		my_printf("End");
 	}
 	return 0;
 }

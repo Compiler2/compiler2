@@ -31,10 +31,10 @@ if(m==1)
 		zfc[k]=rep[k-n];
 	}
 
-	printf("%s",zfc);}
+	my_printf("%s",zfc);}
 
 else
-printf("%s",zfc);
+my_printf("%s",zfc);
 return 0;
 }
 

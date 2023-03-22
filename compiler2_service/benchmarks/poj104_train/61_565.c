@@ -24,11 +24,11 @@ int main_bench()
 	a[19]=4181;
 	a[20]=6765;
 	int n,j,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&j);
-		printf("%d\n",a[j]);
+		my_scanf("%d",&j);
+		my_printf("%d\n",a[j]);
 	}
 	return 0;
 }

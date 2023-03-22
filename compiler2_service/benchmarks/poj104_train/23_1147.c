@@ -20,15 +20,15 @@ int main_bench()
 	else
 	{
 	for(m=b[l]+1;m<strl;m++)
-		printf("%c",a[m]);
+		my_printf("%c",a[m]);
 	for(j=l;j>1;j--)
 	{
 		for(k=b[j-1];k<b[j];k++)
-			printf("%c",a[k]);
+			my_printf("%c",a[k]);
 	}
-	printf(" ");
+	my_printf(" ");
 	for(n=0;n<b[1];n++)
-		printf("%c",a[n]);
+		my_printf("%c",a[n]);
 	}
 	return 0;
 }

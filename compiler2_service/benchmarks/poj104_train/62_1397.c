@@ -10,9 +10,9 @@ int main_bench()
     p=a;
     for(i=0;i<strlen(a);i++)
     {if(*p!=' ')
-    {printf("%c",*p);k=0;}
+    {my_printf("%c",*p);k=0;}
     if(*p==' '&&k==0)
-    {printf(" ");
+    {my_printf(" ");
     k++;}
     p++;
     }

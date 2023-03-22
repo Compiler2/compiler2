@@ -7,7 +7,7 @@ int  main_bench( )
 {
 	int i,n,w,xq[13];
 	n=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	n+=w-1;
 	xq[1]=13;
 	xq[2]=31+13;
@@ -24,7 +24,7 @@ int  main_bench( )
 	for(i=1;i<13;i++){
 		xq[i]+=n;
 		if(xq[i]%7==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

@@ -12,10 +12,10 @@ int main_bench()
 	int temp;
 	float ave;
 	float max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=(float)sum/n;
@@ -49,8 +49,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<t-1;i++)
-		printf("%d,",c[i]);
-	printf("%d",c[t-1]);
+		my_printf("%d,",c[i]);
+	my_printf("%d",c[t-1]);
 	return 0;
 }
 

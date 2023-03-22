@@ -37,14 +37,14 @@ int f(int x)
 main_bench()
 {
       int a,b,c,d,e,g;
-      scanf("%d\n%d\n%d\n%d\n%d\n%d",&a,&b,&c,&d,&e,&g);
+      my_scanf("%d\n%d\n%d\n%d\n%d\n%d",&a,&b,&c,&d,&e,&g);
       a=f(a);
       b=f(b);
       c=f(c);
       d=f(d);
       e=f(e);
       g=f(g);
-      printf("%d\n%d\n%d\n%d\n%d\n%d",a,b,c,d,e,g);
+      my_printf("%d\n%d\n%d\n%d\n%d\n%d",a,b,c,d,e,g);
       getchar();
       getchar();
 }

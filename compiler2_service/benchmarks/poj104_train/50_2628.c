@@ -3,10 +3,10 @@
 main_bench()
 {
     int n,ans;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     ans = (n+12)%7;
     if (ans == 5)
-        printf("1\n");
+        my_printf("1\n");
     for (int i = 1;i <= 11;i ++)
     {
         if (i==1||i==3||i==5||i==7||i==8||i==10||i==12)
@@ -16,7 +16,7 @@ main_bench()
         else
             ans=(ans+30)%7;
         if (ans==5)
-            printf("%d\n",i+1);
+            my_printf("%d\n",i+1);
     }
         
 }

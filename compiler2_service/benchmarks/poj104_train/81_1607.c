@@ -32,12 +32,12 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if (matrix(shuzu,n,m)==0)
-		printf("error");
+		my_printf("error");
 	else if (matrix(shuzu,n,m)==1)
 	{
 		for(i=0;i<5;i++)
@@ -50,13 +50,13 @@ int main_bench()
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",shuzu[k][j]);
+				my_printf("%d",shuzu[k][j]);
 				if(j<4)
 				{
-					printf(" ");
+					my_printf(" ");
 				}
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

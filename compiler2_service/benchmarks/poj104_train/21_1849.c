@@ -11,10 +11,10 @@ int main_bench()
 {
 	int n,a[400],s=0,max=0,min,count=0,i;
 	float aver;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s=s+a[i];
 	}
 	aver=((float)s)/n;
@@ -26,9 +26,9 @@ int main_bench()
 			min=a[i];
 	}
 	if(((float)max-aver)>(-(float)min+aver))
-		printf("%d",max);
+		my_printf("%d",max);
     if(((float)max-aver)<(-(float)min+aver))
-		printf("%d",min);
+		my_printf("%d",min);
 	if(((float)max-aver)==(-(float)min+aver))
-		printf("%d,%d",min,max);
+		my_printf("%d,%d",min,max);
 }

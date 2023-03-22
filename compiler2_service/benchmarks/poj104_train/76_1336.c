@@ -5,13 +5,13 @@
 int main_bench(){
     int n,i,j,min,max,sum;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     int a[n];
     int b[n];
     
     for(i=0;i<n;i++){
-        scanf("%d %d",&a[i],&b[i]);
+        my_scanf("%d %d",&a[i],&b[i]);
     }
     
     min=a[0];
@@ -46,10 +46,10 @@ int main_bench(){
     }
 
     if(sum==0){
-        printf("%d %d",min,max);
+        my_printf("%d %d",min,max);
     }
     if(sum!=0){
-        printf("no");
+        my_printf("no");
     }
     
     

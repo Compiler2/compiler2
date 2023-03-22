@@ -6,9 +6,9 @@ int main_bench()
 {
 	int re_num,num,i;
 	for(i=0;i<6;i++){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		re_num=reverse(num);
-		printf("%d\n",re_num);
+		my_printf("%d\n",re_num);
 	}
 	return 0;
 }

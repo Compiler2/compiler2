@@ -3,7 +3,7 @@
 int main_bench(){
 int money[6]={100,50,20,10,5,1};
 int n,y;
-scanf("%d",&n);
+my_scanf("%d",&n);
 y=n;
 int h[6]={0,0,0,0,0,0};
 for(int i=0;i<6;i++){
@@ -13,7 +13,7 @@ y=y%money[i];
 }
   }
 for(int i=0;i<6;i++){
-printf("%d\n",h[i]);
+my_printf("%d\n",h[i]);
 }
 return 0;
 }

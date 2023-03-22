@@ -20,10 +20,10 @@ int main_bench()
 	
 	for(i=0;str1[i]==str2[i] && str1[i]!='\0' && str2[i]!='\0';i++);
 	if(str1[i]>str2[i])
-		printf(">\n");
+		my_printf(">\n");
 	else if(str1[i]<str2[i]) 
-		printf("<\n");
+		my_printf("<\n");
 	else
-		printf("=");
+		my_printf("=");
 	return 0;
 }

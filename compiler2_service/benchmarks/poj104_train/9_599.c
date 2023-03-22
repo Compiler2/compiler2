@@ -10,12 +10,12 @@ int main_bench()
     w=0;
     int n;
     int i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
                      int y;
                      char x[100][1000];
-                     scanf("%s %d",x,&y);
+                     my_scanf("%s %d",x,&y);
                      if(y>=60)
                      {
                               strcpy(a[q],x[0]);
@@ -48,9 +48,9 @@ int main_bench()
     for(i=0;i<q;i++)
     {
                       
-                      printf("%s\n",a[i]);
+                      my_printf("%s\n",a[i]);
                       
     }
     for(i=0;i<w;i++)
-    printf("%s\n",c[i]);
+    my_printf("%s\n",c[i]);
 }

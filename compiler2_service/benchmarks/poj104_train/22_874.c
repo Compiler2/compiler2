@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int a,b,c,d=0,m=0,n=0;
-	scanf("%d",&a);
-    if(scanf(",%d",&c)=='\n')
-		printf("No");
+	my_scanf("%d",&a);
+    if(my_scanf(",%d",&c)=='\n')
+		my_printf("No");
 	else
 	{
-	while(scanf(",%d",&b)!=0)
+	while(my_scanf(",%d",&b)!=0)
 	{
 		m=0;
 		n=b;
@@ -37,9 +37,9 @@ int main_bench()
 		a=m;
 	}
 	if(d==1)
-	printf("%d",c);
+	my_printf("%d",c);
 	else
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

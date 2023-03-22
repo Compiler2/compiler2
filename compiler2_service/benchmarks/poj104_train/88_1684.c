@@ -24,10 +24,10 @@ void prt(char a[],int n)
 	case '7':
 	case '8':
 	case '9':
-	case '0':printf("%c",a[i]);t=0;break;
+	case '0':my_printf("%c",a[i]);t=0;break;
   default:
 	  if(i<n-1)
-	  {if(t==0) {t=1;printf("\n");}}
+	  {if(t==0) {t=1;my_printf("\n");}}
 	  break;
    }
     

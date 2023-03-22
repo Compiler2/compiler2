@@ -3,10 +3,10 @@
 int main_bench(){
     int n;
     int a[100]={0};
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     char bsf[n][21];
     for (int i=0;i<n;i++){
-        scanf("%s",(bsf[i]));
+        my_scanf("%s",(bsf[i]));
     }
     for (int i=0;i<n;i++){
         for(int m=0;bsf[i][m]!=0;m++){
@@ -25,9 +25,9 @@ int main_bench(){
     }
     for(int i=0;i<n;i++){
         if(a[i]>0){
-            printf("no\n");
+            my_printf("no\n");
         }else{
-            printf("yes\n");
+            my_printf("yes\n");
         }
     }
 return 0;  

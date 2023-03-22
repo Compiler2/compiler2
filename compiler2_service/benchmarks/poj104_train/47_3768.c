@@ -6,18 +6,18 @@ int main_bench()
 {
 	int a[100];
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
      for(j=n-1;j>=0;j--)
 	{
-		printf("%d",a[j]);
+		my_printf("%d",a[j]);
 		if(j!=0)
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

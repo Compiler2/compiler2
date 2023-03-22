@@ -6,7 +6,7 @@ s=0;
 int sz[5][5],max[5],min[5];	
 for(h=0;h<5;h++)	{	
 	for(z=0;z<5;z++)	
-	{			scanf("%d",&sz[h][z]);		}	}		for(h=0;h<5;h++){			
+	{			my_scanf("%d",&sz[h][z]);		}	}		for(h=0;h<5;h++){			
 max[h]=sz[h][0];			
 for(z=0;z<5;z++){			
 	if(sz[h][z]>max[h]){		
@@ -25,12 +25,12 @@ for(z=0;z<5;z++){
 for(h=0;h<5;h++){		
 for(z=0;z<5;z++){		
 	if(min[z]==max[h]){	
-			printf("%d %d %d",h+1,z+1,max[h]);
+			my_printf("%d %d %d",h+1,z+1,max[h]);
 				s++;		
 	}	
 	}
 	}	
 if(s==0){		
-printf("not found");	}	
+my_printf("not found");	}	
 return 0;
 }

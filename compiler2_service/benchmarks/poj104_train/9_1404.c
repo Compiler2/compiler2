@@ -6,12 +6,12 @@ int main_bench()
 	struct old{char ido[10];int ao;}olds[100];
 	struct young{char idy[10];int ay;}youngs[100];
 	int n,y=0,o=0,so=0,sy=0,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char f[10];
 	for(int j=0;j<n;j++)
 	{
-		scanf("%s",patients[j].id);
-		scanf("%d",&patients[j].a);
+		my_scanf("%s",patients[j].id);
+		my_scanf("%d",&patients[j].a);
 		if(patients[j].a<60)
 		{
 			strcpy(youngs[y].idy,patients[j].id);
@@ -42,11 +42,11 @@ int main_bench()
 		}
 		for(int l=0;l<=o-1;l++)
 		{
-			printf("%s\n",olds[l].ido);
+			my_printf("%s\n",olds[l].ido);
 		}
 		for(int m=0;m<=y-1;m++)
 		{
-			printf("%s\n",youngs[m].idy);
+			my_printf("%s\n",youngs[m].idy);
 		}
 	return 0;
 }

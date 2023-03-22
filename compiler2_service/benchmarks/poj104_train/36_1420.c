@@ -11,7 +11,7 @@ main_bench()
       }
 
       char str_1[1000],str_2[1000];
-      scanf("%s %s",str_1,str_2);
+      my_scanf("%s %s",str_1,str_2);
       
       for(i = 0;i <= strlen(str_1);i++)
             a[(int)str_1[i]]++;
@@ -23,7 +23,7 @@ main_bench()
                     j++;
       
       if(j == 128)
-           printf("YES");
+           my_printf("YES");
       else
-          printf("NO");
+          my_printf("NO");
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,sza[50000],szb[50000],szxa[50000],szxb[50000],j,t,i;
 	double m;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&sza[i],&szb[i]);
+		my_scanf("%d%d",&sza[i],&szb[i]);
 		szxa[i]=sza[i];
 		szxb[i]=szb[i];
 	}
@@ -49,7 +49,7 @@ int main_bench(){
 		}
 	}
 	if(m==szxb[n-1]+0.5){
-		printf("%d %d",szxa[0],szxb[n-1]);
+		my_printf("%d %d",szxa[0],szxb[n-1]);
 	}
 	return 0;
 }

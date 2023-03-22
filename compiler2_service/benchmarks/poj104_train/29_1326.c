@@ -8,9 +8,9 @@ int main_bench(){
 	double s[100];
 	double z[100];
 	double rt[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(a=0;a<m;a++){
-		scanf("%d",&sz[a]);
+		my_scanf("%d",&sz[a]);
 	}
 	
 	a=0;
@@ -37,7 +37,7 @@ int main_bench(){
 			c+=rt[b];
 		   
 		}
-		printf("%.3f\n",c);
+		my_printf("%.3f\n",c);
 		c=0;
 		a++;
 		

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int q,i;
 
-	scanf("%d",&q);
+	my_scanf("%d",&q);
 
 	i=0;
 	if(q>=100)
@@ -14,7 +14,7 @@ int main_bench()
 			q-=100;
 		}
 	}
-    printf("%d\n",i);
+    my_printf("%d\n",i);
 	i=0;
 
 	if(q>=50)
@@ -27,7 +27,7 @@ int main_bench()
 	
 	}
 
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	i=0;
 
 
@@ -41,7 +41,7 @@ int main_bench()
 		
 	}
 
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	i=0;
 
 
@@ -53,7 +53,7 @@ int main_bench()
 		}
 		
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	i=0;
 
 
@@ -65,10 +65,10 @@ int main_bench()
 			q-=5;
 		}
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	i=0;
 
-	printf("%d",q);
+	my_printf("%d",q);
 
 	return 0;
 }

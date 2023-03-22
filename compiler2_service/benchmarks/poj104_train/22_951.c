@@ -14,7 +14,7 @@ int main_bench()
 			 else a[j]=a[j]*10+s[i]-'0';
 	 }
      if (j==0) 
-		 printf("No");
+		 my_printf("No");
 
 
 	 else
@@ -38,8 +38,8 @@ int main_bench()
 				 break;
 			 }
 		 }
-		 if (p) printf("%d",a[i]);
-		   else printf("No");
+		 if (p) my_printf("%d",a[i]);
+		   else my_printf("No");
 	 }
 	 
 		

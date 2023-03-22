@@ -5,13 +5,13 @@ int main_bench()
  int w=0,g=0;
  double n;
  char v[100],c[100];
- scanf("%lf",&n);
- scanf("%s",v);
- scanf("%s",c);
+ my_scanf("%lf",&n);
+ my_scanf("%s",v);
+ my_scanf("%s",c);
  char A,T,G,C;
  if(strlen(v)!=strlen(c))
   {
-    printf("error");                     
+    my_printf("error");                     
   }
  else
     {
@@ -19,7 +19,7 @@ int main_bench()
         { 
           if(((v[i]!='A')&&(v[i]!='G')&&(v[i]!='C')&&(v[i]!='T'))||((c[i]!='A')&&(c[i]!='G')&&(c[i]!='C')&&(c[i]!='T')))
           {     g=1;
-               printf("error");
+               my_printf("error");
                break;                                                                                    
           }
           else if(v[i]==c[i])
@@ -29,9 +29,9 @@ int main_bench()
         } 
        
       double l=1.0*w/strlen(v);
-      if((l>n)&&(g==0)){printf("yes");}
-      else if((l<=n)&&(g==0)){printf("no");}                                   
+      if((l>n)&&(g==0)){my_printf("yes");}
+      else if((l<=n)&&(g==0)){my_printf("no");}                                   
     }
-int u;scanf("%d",&u);    
+int u;my_scanf("%d",&u);    
    return 0;          
 }

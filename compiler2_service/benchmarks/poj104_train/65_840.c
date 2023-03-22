@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,A[200],B[200],V=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&A[i],&B[i]);
+		my_scanf("%d%d",&A[i],&B[i]);
 		if(A[i]==2&&B[i]==0)
 			V++;
 		else if(A[i]==0&&B[i]==2)

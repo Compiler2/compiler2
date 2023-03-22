@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str1[50],str2[50],*p;
 	int a,b,i,j,c[20],d=0;
-	scanf("%s%s",&str1,&str2);
+	my_scanf("%s%s",&str1,&str2);
 	a=strlen(str1);
 	b=strlen(str2);
 p=str2;
@@ -20,10 +20,10 @@ for(i=0;i<a;i++)
 	{if(c[i]==0)
 {d=1;break;}}
 if(d==1)
-{printf("NO");}
+{my_printf("NO");}
 else
-printf("YES");
+my_printf("YES");
 }
 	else
-		printf("NO");
+		my_printf("NO");
 }

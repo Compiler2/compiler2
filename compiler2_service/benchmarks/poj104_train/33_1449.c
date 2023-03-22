@@ -26,7 +26,7 @@ int main_bench(){
   }else{
       zfc[k]='\0';
   }}
- printf("%s\n",zfc); 
+ my_printf("%s\n",zfc); 
  }
 return 0;
 }

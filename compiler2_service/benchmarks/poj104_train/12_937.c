@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,k,sz[17],n=0;
 	for(i=0;i<17;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		if(sz[i]==-1)
 			break;
 		else{
@@ -18,7 +18,7 @@ int main_bench()
 				}
 				}
 				else{
-					printf("%d\n",n);
+					my_printf("%d\n",n);
 					n=0;
 					i=0;
 					j=0;

@@ -7,8 +7,8 @@ int main_bench()
     int n,i,j,l,t,flag=0,point=1;
 
 
-    scanf("%d",&n);
-    scanf("%s",s);
+    my_scanf("%d",&n);
+    my_scanf("%s",s);
     l=strlen(s);    for(i=0;i<l-n+1;i++)
     {
         t=0;
@@ -66,15 +66,15 @@ int main_bench()
         else
         break;
     }
-    printf("%d\n",sum[0]);
+    my_printf("%d\n",sum[0]);
     for(i=1;i<=point;i++)
     {
-        printf("%s\n",a[i-1]);
+        my_printf("%s\n",a[i-1]);
     }
     }
     else
     {
-        printf("NO\n");
+        my_printf("NO\n");
     }
  return 0;
 

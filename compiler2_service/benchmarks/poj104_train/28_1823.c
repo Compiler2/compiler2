@@ -12,13 +12,13 @@ int main_bench()
 	{	
 		
 		if(sen[i]==' '&&k!=0)
-		{	printf("%d,",k);
+		{	my_printf("%d,",k);
 			k=0;
 		
 		}
 		else if(i==len-1)
 		{
-			printf("%d",k+1);
+			my_printf("%d",k+1);
 			k=0;
 		}
 		else {if(sen[i]!=' ')k++;}

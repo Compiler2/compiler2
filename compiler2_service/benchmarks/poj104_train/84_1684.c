@@ -4,10 +4,10 @@ int main_bench()
 {
  int arr[100];
  int n=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(int i=0;i<n;i++)
  {
-  scanf("%d",&arr[i]);
+  my_scanf("%d",&arr[i]);
  }
  int max=-10000;
  for(int s=0;s<n;s++)
@@ -23,7 +23,7 @@ if(arr[j]>sm)
 sm=arr[j];
   }
  }
- printf("%d\n",max);
- printf("%d",sm);
+ my_printf("%d\n",max);
+ my_printf("%d",sm);
  return 0;
 }

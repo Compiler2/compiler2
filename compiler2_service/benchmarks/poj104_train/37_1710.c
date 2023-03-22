@@ -4,10 +4,10 @@ main_bench()
 {
       char a[100001];
       int n,i,x,y,b[100001]={0},key=100002,count,t;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(t=1;t<=n;t++)
       {
-          scanf("%s",a);               
+          my_scanf("%s",a);               
      
       count=strlen(a);
           for(x=0;x<count;x++)
@@ -28,9 +28,9 @@ main_bench()
           }
           }
           if(key==100002)
-          printf("no\n");
+          my_printf("no\n");
           else
-          printf("%c\n",a[key]);
+          my_printf("%c\n",a[key]);
           
           key=100002; 
           for(i=0;i<100001;i++)

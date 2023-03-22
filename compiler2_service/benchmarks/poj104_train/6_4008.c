@@ -11,13 +11,13 @@ int main_bench(){
 	int res;
 	int r;
 	int arr[10000];
-	scanf("%d",&time);
+	my_scanf("%d",&time);
 	for(i=0;i<time;i++){
 		res = 0;
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 
 		for(j=0;j<m*n;j++){
-			scanf("%d",&r);
+			my_scanf("%d",&r);
 			
 			arr[j]=r;
 		}
@@ -30,7 +30,7 @@ int main_bench(){
 				if((y==(n-1))&&(x!=0)&&(x!=(m-1)))
 					res+=arr[x*n+y];
 			}
-		printf("%d\n",res);
+		my_printf("%d\n",res);
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,x[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100][100]={0};
 	int sum;
 	for(i=0;i<100;i++)
@@ -15,10 +15,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		for(j=0;j<x[i];j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -34,6 +34,6 @@ int main_bench()
 		{
 			sum=sum-(60-(a[i][j]+3*j));
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 }

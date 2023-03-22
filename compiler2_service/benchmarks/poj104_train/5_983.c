@@ -7,11 +7,11 @@ int main_bench(){
 	char a[510],b[510];
 	s=0;
 
-	scanf("%lf%s%s",&rate,a,b);
+	my_scanf("%lf%s%s",&rate,a,b);
 	x=strlen(a);
 	y=strlen(b);
     if(x!=y){
-	     printf("error");
+	     my_printf("error");
 	}
 	else{
         for(i=0;i<x;i++){
@@ -26,13 +26,13 @@ int main_bench(){
     t=rate*x;
 	if(g==0){
 		if(s>t){
-	      printf("yes");
+	      my_printf("yes");
 	   }
 	   else{
-	      printf("no");
+	      my_printf("no");
 	   }
 	}
-	else{printf("error");}
+	else{my_printf("error");}
 	   
 	}
 

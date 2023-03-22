@@ -16,16 +16,16 @@ int turn(int *pt,int p,int q)
 int main_bench()
 {int a[5][5],m,n,i,*pa=a;
  for(i=0;i<25;i++)
- {scanf("%d",pa++);
+ {my_scanf("%d",pa++);
  }
  pa=a;
- scanf("%d%d",&n,&m);
+ my_scanf("%d%d",&n,&m);
  if(turn(pa,n,m))
  {for(i=1;i<=25;i++)
  {
-	 printf("%d",*(pa++));
-     if(i%5==0)printf("\n");
-	 else printf(" ");
+	 my_printf("%d",*(pa++));
+     if(i%5==0)my_printf("\n");
+	 else my_printf(" ");
  }}
- else printf("error");
+ else my_printf("error");
 }

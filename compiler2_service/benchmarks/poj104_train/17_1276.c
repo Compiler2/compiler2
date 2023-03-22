@@ -4,7 +4,7 @@
 int main_bench()
 {
     char a[110],b[110];
-	while(scanf("%s",&a)==1)
+	while(my_scanf("%s",&a)==1)
 	{
 		strcpy(b,a);
 		int len=strlen(a);
@@ -34,18 +34,18 @@ int main_bench()
 
 		}
 		for(i=0;i<len;i++)
-			printf("%c",b[i]);
-		printf("\n");
+			my_printf("%c",b[i]);
+		my_printf("\n");
 		for(i=0;i<len;i++)
 		{
 			if(a[i]=='(')
-				printf("$");
+				my_printf("$");
 			else if(a[i]==')')
-				printf("?");
+				my_printf("?");
 			else 
-				printf(" ");
+				my_printf(" ");
 		}
-			printf("\n");
+			my_printf("\n");
 	
 		
 	}

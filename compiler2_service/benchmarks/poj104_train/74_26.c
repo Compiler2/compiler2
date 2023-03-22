@@ -21,8 +21,8 @@ int huiw(int n)
 
 int main_bench()
 {
-  scanf("%d%d",&a,&b);
+  my_scanf("%d%d",&a,&b);
   l=0; for (k=a;k<=b;k++)if(prime(k)&&huiw(k))
-  {if (l>0) printf(","); l++;printf("%d",k);}
-  if (l==0)printf("no");
+  {if (l>0) my_printf(","); l++;my_printf("%d",k);}
+  if (l==0)my_printf("no");
 }

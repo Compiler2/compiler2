@@ -33,7 +33,7 @@ int main_bench()
         {
             b[i]=b[i]-32;
         }
-        printf("(%c,%d)",b[i],a[i]);
+        my_printf("(%c,%d)",b[i],a[i]);
     }
     return 0;
 }

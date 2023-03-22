@@ -14,6 +14,6 @@ int main_bench()
 			*pf=*p+*(p+m-1);
 		}
 	}
-	printf("%s\n",f);
+	my_printf("%s\n",f);
 	return 0;
 }

@@ -13,14 +13,14 @@ int main_bench()
        int wen;
 	}s[100];
 	int n,i,j,money=0,mon=0,mona=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for (i=0;i<n;i++){
-		scanf("%s",s[i].name);
-        scanf("%d",&s[i].fen);
-		scanf("%d",&s[i].ban);
-		scanf("%s",s[i].gan);
-		scanf("%s",s[i].xi);
-		scanf("%d",&s[i].wen);
+		my_scanf("%s",s[i].name);
+        my_scanf("%d",&s[i].fen);
+		my_scanf("%d",&s[i].ban);
+		my_scanf("%s",s[i].gan);
+		my_scanf("%s",s[i].xi);
+		my_scanf("%d",&s[i].wen);
 		if (s[i].fen>80&&s[i].wen>=1)
 			money=money+8000;
 		if (s[i].fen>85&&s[i].ban>80)
@@ -38,8 +38,8 @@ int main_bench()
 		mona=mona+money;
 		money=0;
 	}
-		printf("%s\n",s[j].name);
-        printf("%d\n",mon);
-        printf("%d\n",mona);
+		my_printf("%s\n",s[j].name);
+        my_printf("%d\n",mon);
+        my_printf("%d\n",mona);
 	return 0;
 }

@@ -7,11 +7,11 @@ int main_bench()
           int b[10]={0},a[10]={0}; float c[10]={0};
           
         
-          scanf("%d",&n);
+          my_scanf("%d",&n);
          
            for(j=0;j<n;j++)
            {
-               scanf("%d",&b[j]);          }
+               my_scanf("%d",&b[j]);          }
                
                 sum=0;
                 for(l=0;l<n;l++){
@@ -23,7 +23,7 @@ int main_bench()
                
                
             for(k=0;k<n;k++){
-               scanf("%d",&a[k]); 
+               my_scanf("%d",&a[k]); 
                if(a[k]<60)
                    c[k]=0;
                else if(a[k]<=63)
@@ -53,7 +53,7 @@ int main_bench()
                
                
                GPA=bb/sum;
-                  printf("%.2f",GPA); 
+                  my_printf("%.2f",GPA); 
                   
               
 

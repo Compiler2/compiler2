@@ -28,8 +28,8 @@ int main_bench()
 {
     int i,j,n,l;
     char S[600],t[10];
-    scanf("%d",&n);
-    scanf("%s",S);
+    my_scanf("%d",&n);
+    my_scanf("%s",S);
     l=strlen(S);
     for (i=0;i<l-n+1;i++)
     {
@@ -40,13 +40,13 @@ int main_bench()
     }
     if (max==1)
     {
-       printf("NO\n");
+       my_printf("NO\n");
        return 0;
     }
-    printf("%d\n",max);
+    my_printf("%d\n",max);
     for (i=0;i<m;i++)
         if (s[i].n==max)
-           printf("%s\n",s[i].s);
+           my_printf("%s\n",s[i].s);
     getchar();
     getchar();
     return 0;

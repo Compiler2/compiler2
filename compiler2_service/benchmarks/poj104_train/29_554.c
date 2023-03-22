@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n[100],i,k;
 	double  sum[100],a[100]={0,2};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	
 
 	for(i=2;i<100;i++)
@@ -15,7 +15,7 @@ int main_bench()
 	
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&(n[i]));
+		my_scanf("%d",&(n[i]));
 	}
 
 	for(i=0;i<m;i++)
@@ -25,7 +25,7 @@ int main_bench()
 		{
 			sum[i]+=a[k];
 		}
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	
 

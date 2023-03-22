@@ -4,7 +4,7 @@ int main_bench()
 {const int d=10;
 	int a[d][d],b[d][d];
 int i,j,k,m,n,fx,fy;
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 memset(a,0,sizeof(a));
 a[5][5]=m;
 for(i=0;i<n;i++)
@@ -22,8 +22,8 @@ for(i=0;i<n;i++)
 	memcpy(a,b,sizeof(a));}
 	for(i=1;i<d;i++)
 	{ for(j=1;j<d-1;j++)
-	printf("%d ",a[i][j]);
-	printf("%d\n",a[i][d-1]);
+	my_printf("%d ",a[i][j]);
+	my_printf("%d\n",a[i][d-1]);
 	}
 	return 0;
 }

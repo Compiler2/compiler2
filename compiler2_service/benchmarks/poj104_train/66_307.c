@@ -15,17 +15,17 @@ int judm(int m)
 }
 void g(int a)
 {
-	if(a==0)printf("Sun.\n");
-	if(a==1)printf("Mon.\n");
-	if(a==2)printf("Tue.\n");
-	if(a==3)printf("Wed.\n");
-	if(a==4)printf("Thu.\n");
-	if(a==5)printf("Fri.\n");
-	if(a==6)printf("Sat.\n");
+	if(a==0)my_printf("Sun.\n");
+	if(a==1)my_printf("Mon.\n");
+	if(a==2)my_printf("Tue.\n");
+	if(a==3)my_printf("Wed.\n");
+	if(a==4)my_printf("Thu.\n");
+	if(a==5)my_printf("Fri.\n");
+	if(a==6)my_printf("Sat.\n");
 }
 int main_bench()
 {
-	int i,t;scanf("%d%d%d",&y,&m,&d);sum=0;t=y%400;
+	int i,t;my_scanf("%d%d%d",&y,&m,&d);sum=0;t=y%400;
 	for(i=1;i<t;i++)sum+=1+judy(i);if(t==0)sum=-2;
 	for(i=1;i<m;i++)sum+=judm(i);
 	sum+=d;sum%=7;g(sum);

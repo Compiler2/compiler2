@@ -13,10 +13,10 @@ int main_bench()
 
     
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-     scanf("%d%d%d",&stu[i].num,&stu[i].chi,&stu[i].mat);
+     my_scanf("%d%d%d",&stu[i].num,&stu[i].chi,&stu[i].mat);
      stu[i].tot=stu[i].chi+stu[i].mat;
     }
                                      
@@ -27,7 +27,7 @@ int main_bench()
     {
                     max(stu,n);
                     if(k<2)
-                    printf("\n");
+                    my_printf("\n");
                    
     }
 }
@@ -43,6 +43,6 @@ void max(struct student stu[],int n)
         j=i;
         }
 
-     printf("%d %d",stu[j].num,max);
+     my_printf("%d %d",stu[j].num,max);
      stu[j].tot=-1;
 }

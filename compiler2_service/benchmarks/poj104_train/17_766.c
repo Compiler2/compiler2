@@ -4,10 +4,10 @@ char input[150], output[150];
 int main_bench()
 {
         int n,j;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(j=0;j<n;j++)
 		{
-			scanf("%s",input);
+			my_scanf("%s",input);
             memset(output,0,sizeof(output));
             int count1=0,count2=0;
             int i;
@@ -30,7 +30,7 @@ int main_bench()
                 }
                 else if(input[i]==')') count2++;
             }
-            printf("%s\n%s\n",input,output);
+            my_printf("%s\n%s\n",input,output);
         }
         return 0;
 }

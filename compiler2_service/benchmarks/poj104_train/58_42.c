@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int num,i;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	char **p; 
 	int judge(char *x);
 	p=(char **)malloc(num*sizeof (char *));
@@ -13,7 +13,7 @@ int main_bench()
 		gets(*(p+i));
 	}
 	for(i=1;i<num+1;i++)
-		printf("%d\n",judge(*(p+i)));
+		my_printf("%d\n",judge(*(p+i)));
 }
 int judge(char *x)
 {

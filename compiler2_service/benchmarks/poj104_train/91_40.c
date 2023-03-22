@@ -19,7 +19,7 @@ int main_bench()
 	*t=*p+*s;
 
 	for(t=s1;t<s1+n;t++){
-		printf("%c",*t);
+		my_printf("%c",*t);
 	}
 	return 0;
 }

@@ -5,12 +5,12 @@ int main_bench()
 int flag(char x[100],char y[100]);
 char stro[100],strt[100];
 int f;
-scanf("%s%s",stro,strt);
+my_scanf("%s%s",stro,strt);
 f=flag(stro,strt);
 if(f==0)
-printf("YES");
+my_printf("YES");
 else
-printf("NO");
+my_printf("NO");
 }
 
 int flag(char x[100],char y[100])

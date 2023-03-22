@@ -2,8 +2,8 @@
 
 int main_bench(){
     int y1,y2,m1,m2,d1,d2,days=0,i;
-    scanf("%d %d %d",&y1,&m1,&d1);
-    scanf("%d %d %d",&y2,&m2,&d2);
+    my_scanf("%d %d %d",&y1,&m1,&d1);
+    my_scanf("%d %d %d",&y2,&m2,&d2);
     if(y1<y2){
     for(i=y1+1;i<y2;i++){
                          if((i%4==0&&i%100!=0)||i%400==0)
@@ -64,7 +64,7 @@ int main_bench(){
                    }
     else
     days=d2-d1;
-    printf("%d",days);
+    my_printf("%d",days);
     return 0;
 }
     

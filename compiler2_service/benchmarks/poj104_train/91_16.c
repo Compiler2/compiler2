@@ -15,7 +15,7 @@ int main_bench()
 	}
 	*(b+len-1)=*(s+len-1)+*(s+0);
 	for(i=0;i<len;i++){
-		printf("%c",*(b+i));
+		my_printf("%c",*(b+i));
 	}
 	return 0;
 }

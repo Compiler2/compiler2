@@ -6,10 +6,10 @@ int main_bench()
 	int d[500];
 	int i=0;
 	int a,sum,num,w;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	do
 	{
-		scanf("%s",c[i]);
+		my_scanf("%s",c[i]);
 		i++;
 	}while(i<a);
 	i=0;
@@ -19,13 +19,13 @@ int main_bench()
 		i++;}
 	while(i<a);
 	i=0;
-	printf("%s",c[0]);
+	my_printf("%s",c[0]);
 	do
 	{   
 		sum=0;
 		num=0;
 		if(w==1)
-		{printf("%s",c[i]);
+		{my_printf("%s",c[i]);
 		sum+=d[i];i++;num++;}
 		w=0;
 		do
@@ -33,13 +33,13 @@ int main_bench()
 		if(i==0)
 		{sum+=d[i];i++;num++;}
 		sum+=d[i];
-		printf(" %s",c[i]);
+		my_printf(" %s",c[i]);
 		i++;
 		if(i==a)
 		{break;}
 		num++;
 		}while(sum+d[i]+num<=80);
-		printf("\n");w++;
+		my_printf("\n");w++;
 	}while(i<a);
 	return 0;
 }

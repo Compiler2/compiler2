@@ -5,8 +5,8 @@ int main_bench()
 	char a[52];
 	char b[52];
     int i=0;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(int c=0;c<strlen(b);c++)
 	{
 			if(a[0]==b[c])
@@ -20,7 +20,7 @@ int main_bench()
 				}
 			if(i==strlen(a))
 			{
-				printf("%d",c);
+				my_printf("%d",c);
 			}
 			}
 

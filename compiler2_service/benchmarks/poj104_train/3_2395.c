@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int sz[1000],n,k;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for (int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int i,j;
 	int ss[1000];
@@ -20,9 +20,9 @@ int main_bench(){
 		}
 	}
 	if (c==0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("yes");
+		my_printf("yes");
 	}
 	return 0;
 }

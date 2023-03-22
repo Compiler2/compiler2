@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a,b,c,i,m[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		if((a%4==0&&a%100!=0)||(a%400==0))
 			m[2]=29;
 		else
@@ -22,9 +22,9 @@ int main_bench()
 			
 			}
 			if(s%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-					printf("NO\n");
+					my_printf("NO\n");
 		}
 		if(c>b)
 		{
@@ -35,9 +35,9 @@ int main_bench()
 			
 			}
 			if(s%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-					printf("NO\n");
+					my_printf("NO\n");
 		}
 	}
 	return 0;

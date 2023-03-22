@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,i,j,k,l,m,p,q;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char sz[102][102];
     char ss[102][102];
     for(i=1;i<n+1;i++){
         for(j=1;j<n+1;j++){
-            scanf(" %c",&sz[i][j]);
+            my_scanf(" %c",&sz[i][j]);
             ss[i][j]=sz[i][j];
         }
     }
@@ -23,7 +23,7 @@ int main_bench(){
         sz[n+1][j]='#';
         ss[n+1][j]='#';
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(p=0;p<m-1;p++){
         for(i=1;i<n+1;i++){
             for(j=1;j<n+1;j++){
@@ -45,6 +45,6 @@ for(i=1;i<n+1;i++){
         if(sz[i][j]=='@'){q=q+1;}
     }
 }
-printf("%d",q);
+my_printf("%d",q);
 return 0;
 }

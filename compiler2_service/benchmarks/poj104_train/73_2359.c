@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(n=0;n<5;n++)
@@ -34,13 +34,13 @@ int main_bench()
 		}
 		if(s==m)
 		{
-			printf("%d %d %d\n",n+1,k+1,m);
+			my_printf("%d %d %d\n",n+1,k+1,m);
 			counter++;
 		}
 	}
 	if(counter==0)
 	{
-		printf("not found\n");
+		my_printf("not found\n");
 	}
 	return 0;
 }

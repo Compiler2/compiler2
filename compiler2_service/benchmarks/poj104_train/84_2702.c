@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n,i,a,b,c;
-	scanf("%d",&n);
-	scanf("%d %d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d %d",&a,&b);
 	if(b>a)
 			c=b,b=a,a=c;
 	for(i=1;i<=(n-2);i++)
 	{
-	    scanf("%d",&c);
+	    my_scanf("%d",&c);
 		if(c>a) b=a,a=c;
 		else if(c>b) b=c;
 	}
-	printf("%d\n%d\n",a,b);	
+	my_printf("%d\n%d\n",a,b);	
 }

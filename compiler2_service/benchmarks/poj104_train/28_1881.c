@@ -22,10 +22,10 @@ for (int i=0;i<strlen(dc);i++){
 for (int j=0;j<x;j++){
       if (dcs[j]!=0){
           if (j!=x-1){
-                 printf("%d,",dcs[j]);
+                 my_printf("%d,",dcs[j]);
           }
           else {
-                 printf("%d",dcs[j]);
+                 my_printf("%d",dcs[j]);
                  break;
           }
       }

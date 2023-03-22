@@ -25,11 +25,11 @@ int main_bench()
 			break; 
 	}
 	if(strcmp(str[0],str[1])>0)
-		printf(">");
+		my_printf(">");
 	else
 		if(strcmp(str[0],str[1])==0)
-			printf("=");
+			my_printf("=");
 		else
-			printf("<");
+			my_printf("<");
 	return 0;
 }

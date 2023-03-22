@@ -5,9 +5,9 @@ int main_bench(){
 	int a[50005],b[50005],c[50005],d[50005];
 	double x;
 	int f,g=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		c[i]=a[i];
 		d[i]=b[i];
 	}
@@ -37,9 +37,9 @@ int main_bench(){
 		}
 	}
 	if(g==(d[n]-c[1])*2+1){
-		printf("%d %d",c[1],d[n]);
+		my_printf("%d %d",c[1],d[n]);
 	}else{
-		printf("no");
+		my_printf("no");
 	}	
 	return 0;
 }

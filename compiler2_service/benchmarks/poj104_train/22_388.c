@@ -9,14 +9,14 @@ int main_bench()
 	int i;
 	for(i=1;i<=300;i++)
 	{
-		if(i==1) scanf("%u",&a[1]);
+		if(i==1) my_scanf("%u",&a[1]);
 		else 
 		{
 			ch[i]=getchar();
 			if(ch[i]!=',') break;
 			else 
 			{
-				scanf("%u",&a[i]);
+				my_scanf("%u",&a[i]);
 				s=s+1;
 			}
 		}
@@ -33,19 +33,19 @@ int main_bench()
 				a[k]=exchange;
 			}
 		}
-	if(s==1) printf("No");
+	if(s==1) my_printf("No");
 	else
 	{
 		for(i=1;i<=s-1;i++)
 		{
 		    if(a[i]!=a[i+1]) 
 			{
-				printf("%d",a[i+1]);
+				my_printf("%d",a[i+1]);
 				break;
 			}
 		    else 
 			{
-				if(i==s-1) printf("No");
+				if(i==s-1) my_printf("No");
                 else continue;
 			}
 		}

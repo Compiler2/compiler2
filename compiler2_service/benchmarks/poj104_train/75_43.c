@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int time[1000]={0},a[5000],b[5000],i=1,m,max=0,k,n;
-	scanf("%d",&a[0]);
-	while(scanf(",%d",&m))
+	my_scanf("%d",&a[0]);
+	while(my_scanf(",%d",&m))
 	{
 		a[i]=m;
 		i++;
 	}
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	i=1;
-	while(scanf(",%d",&m))
+	while(my_scanf(",%d",&m))
 	{
 		b[i]=m;
 		i++;
@@ -29,6 +29,6 @@ int main_bench()
 		if(time[i]>max)
 			max=time[i];
 	}
-	printf("%d %d",n,max);
+	my_printf("%d %d",n,max);
 }
 

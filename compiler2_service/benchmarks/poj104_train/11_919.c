@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int year,mounth,day,count=0,t=0;
-	scanf("%d%d%d",&year,&mounth,&day);
+	my_scanf("%d%d%d",&year,&mounth,&day);
 	if(year%400==0||(year%4==0&&year%100!=0))
 	{
 		count=1;
@@ -47,6 +47,6 @@ int main_bench()
 		case 12: t=334+day;break;
 		}
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 
 }

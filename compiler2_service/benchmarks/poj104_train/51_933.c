@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[500],b[500][5]={'\0'};
 	int n,i,j,k,t,p=0,m[500]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(a);
 	
@@ -48,14 +48,14 @@ int main_bench()
 	}
 
 	if(p==k-n+1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 		for(i=0;i<k-n+1;i++)
 		{
 			if(m[i]==t)
-				printf("%s\n",b[i]);
+				my_printf("%s\n",b[i]);
 		}
 	}
 

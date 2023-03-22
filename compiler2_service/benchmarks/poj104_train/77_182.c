@@ -6,7 +6,7 @@ int main_bench()
 	int k,n=0;
 	for(k=0;k<10000;k++)
 	{
-		scanf("%c",&a[k]);
+		my_scanf("%c",&a[k]);
 		if(a[k]==' ')
 			break;
 		n+=1;
@@ -24,7 +24,7 @@ int main_bench()
 				m-=1;
 			if(m==0)
 			{
-				printf("%d %d\n",i,k);
+				my_printf("%d %d\n",i,k);
 				break;
 			}
 		}

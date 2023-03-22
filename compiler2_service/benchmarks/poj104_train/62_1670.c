@@ -14,7 +14,7 @@ int main_bench()
 	{
 		if(a[n]!=' ')
 		{
-			printf("%c", a[n]);
+			my_printf("%c", a[n]);
 		}
 		if(a[n]==' ')
 		{
@@ -29,7 +29,7 @@ int main_bench()
 					break;
 				}
 			}
-			printf(" ");
+			my_printf(" ");
 			n+=count-1;
 			count=0;
 		}

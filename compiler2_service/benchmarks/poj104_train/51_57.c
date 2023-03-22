@@ -4,8 +4,8 @@ int main_bench()
 {
     int n,i,j,k,sum=0,b[1000],max=0,maxi=0;
 	char a[1000];
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	for(i=0;i<1000;i++)
 		b[i]=0;
 	for(i=0;i<strlen(a);i++)
@@ -36,21 +36,21 @@ int main_bench()
 		}
 	}
 	if(max!=0){
-	printf("%d\n",max+1);
+	my_printf("%d\n",max+1);
 	for(i=0;i<strlen(a);i++)
 	{
 		if(b[i]==max)
 		{
 			for(j=0;j<n;j++)
 			{
-		        printf("%c",a[i+j]);
+		        my_printf("%c",a[i+j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}}
 	else
 	{
-        printf("NO");
+        my_printf("NO");
     }
 	
 	return 0;

@@ -5,10 +5,10 @@ int main_bench()
 {
     char a[100][100],b[100][100];
 	int n,i,k,q,j,w,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++) 
-		scanf("%s",a[i]);
-	scanf("%d",&k);
+		my_scanf("%s",a[i]);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 				b[i][j]=a[i][j];
@@ -45,7 +45,7 @@ int main_bench()
 			}
 	}
 	 
-		printf("%d",x);
+		my_printf("%d",x);
 
 
 	

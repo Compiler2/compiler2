@@ -42,7 +42,7 @@ int main_bench()
 {
     int f(int n);
 	int m,n,i,a[100000],l=0,x=0,b[100000];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
     for(i=0;i<100000;i++)
 	{
 		a[i]=-1;
@@ -66,11 +66,11 @@ int main_bench()
 	{
 	     for (i=0;i<(x-1);i++)
 		 { 
-		    printf("%d,",b[i]);
+		    my_printf("%d,",b[i]);
 		 }
-	        printf("%d\n",b[x-1]);
+	        my_printf("%d\n",b[x-1]);
 	}
-	else printf("no\n");
+	else my_printf("no\n");
 }
 	
 	

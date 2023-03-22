@@ -5,11 +5,11 @@ int main_bench()
 {
 
 int N,x[500],y[500],t;
-scanf("%d",&N);
+my_scanf("%d",&N);
 int b=0;
 for(int a=0;a<N;a++)
 {
-	scanf("%d",&x[a]);
+	my_scanf("%d",&x[a]);
 if(x[a]%2==1)
 {y[b]=x[a];b++;}
 }
@@ -29,8 +29,8 @@ m=0;
 
 
 for(int d=1;d<=b;d++){
-if(d<b){printf("%d,",y[d]);}
-else{printf("%d",y[d]);}
+if(d<b){my_printf("%d,",y[d]);}
+else{my_printf("%d",y[d]);}
 
 
 

@@ -117,17 +117,17 @@ int main_bench()
 	{
 		if(a[i]<b[i])
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		else if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if(a[i]=='\0')
 		{
-			printf("=");
+			my_printf("=");
 			break;
 		}
 			

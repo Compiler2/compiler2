@@ -3,7 +3,7 @@
 int main_bench()
 {
    int w,n;
-   scanf("%d",&w);
+   my_scanf("%d",&w);
    int i=1,x=0;
    while(i<=12){
      if(i==1){
@@ -19,7 +19,7 @@ int main_bench()
        n=((12+x)%7+w)%7;
      }
      if(n==5){
-       printf("%d\n",i);
+       my_printf("%d\n",i);
      }
      i++;
    }

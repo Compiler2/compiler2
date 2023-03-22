@@ -17,7 +17,7 @@ for(i=1;i<c;i++)
 j++;}}
 for(i=0;i<101;i++)
 {if(b[i]!=0)
-printf("%c",b[i]);}
+my_printf("%c",b[i]);}
 
 return 0;
 }

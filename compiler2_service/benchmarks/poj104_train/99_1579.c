@@ -9,10 +9,10 @@ int main_bench()
 	b=0;
 	c=0;
 	d=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 
 	for (i=0;i<n;i++){
-		scanf ("%d",&nian);
+		my_scanf ("%d",&nian);
 
 		if (nian<=18) a++;
 		else if (nian<=35) b++;
@@ -25,7 +25,7 @@ int main_bench()
 	C=(double )100*c/n;
 	D=(double )100*d/n;
 
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",A,B,C,D);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",A,B,C,D);
 	return 0;
 }
 

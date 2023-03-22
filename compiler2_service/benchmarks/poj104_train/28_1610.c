@@ -13,12 +13,12 @@ int main_bench()
 		}
 		if(s[i]==' '&&s[i-1]!=' ')
 		{
-			printf("%d,",sum);
+			my_printf("%d,",sum);
 			sum=0;
 		}
 		if(s[i]=='\0'&&s[i-1]!=' ')
 		{
-			printf("%d",sum);
+			my_printf("%d",sum);
 		}
 	}
 	return 0;

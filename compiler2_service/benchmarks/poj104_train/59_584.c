@@ -4,10 +4,10 @@ char map[105][105];
 int main_bench()
 {
     int n,m,ans=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++)
-        scanf("%s",map[i]);
-    scanf("%d",&m);
+        my_scanf("%s",map[i]);
+    my_scanf("%d",&m);
     m--;
     while(m--)
     {
@@ -48,6 +48,6 @@ int main_bench()
         }
        
     }
-    printf("%d\n",ans);
+    my_printf("%d\n",ans);
     return 0;
 }

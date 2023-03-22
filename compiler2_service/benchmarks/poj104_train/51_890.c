@@ -5,11 +5,11 @@ int main_bench()
     int n;
     int i,j,k;
     int length;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int p,temp;
     char a[10005];
     int b[10005]={0};
-    scanf("%s",a);
+    my_scanf("%s",a);
     length=strlen(a);
     for(i=0;i<length-n+1;i++)
     {
@@ -46,20 +46,20 @@ int main_bench()
     
     if(temp==0)
     {
-        printf("NO");
+        my_printf("NO");
     }
     else
     {
-        printf("%d\n",temp+1);
+        my_printf("%d\n",temp+1);
     for(i=0;i<length;i++)
     {
         if(b[i]==temp)
         {
           for(k=0;k<n;k++)
           {
-              printf("%c",a[i+k]);
+              my_printf("%c",a[i+k]);
           }
-          printf("\n");
+          my_printf("\n");
         }
     }
     }

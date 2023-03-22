@@ -42,7 +42,7 @@ int main_bench(){
 			want2=i;
 		}
 	}
-	printf("%s\n",b[want1]);
-	printf("%s",b[want2]);
+	my_printf("%s\n",b[want1]);
+	my_printf("%s",b[want2]);
 	return 0;
 }

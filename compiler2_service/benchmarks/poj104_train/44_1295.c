@@ -4,10 +4,10 @@ int main_bench()
 {
 	int x,i,e,k,m;
 	for(k=1;k<7;k++){
-	   scanf("%d",&x);
-	   if(x==0){printf("0\n");}
+	   my_scanf("%d",&x);
+	   if(x==0){my_printf("0\n");}
 	   if(x<0){
-		   printf("-");
+		   my_printf("-");
 		   x=-x;
 	   }if(x!=0){
 		     for(i=1;;i++){
@@ -16,10 +16,10 @@ int main_bench()
 			   }else{break;}
 			 }for(i=1;;i++){
 		       e=x%10;
-		       printf("%d",e);
+		       my_printf("%d",e);
 		       x=x/10;
 		       if(x==0){break;}
-			 }printf("\n");
+			 }my_printf("\n");
 	   }
 	}return 0;
 }

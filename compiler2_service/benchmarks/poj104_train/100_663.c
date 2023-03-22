@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char n[300];
-	scanf("%s",n);
+	my_scanf("%s",n);
 	int zm[26];
 	int i,j,cd,jg=0;
 	for(i=0;i<26;i++){
@@ -24,11 +24,11 @@ int main_bench(){
 		}
 	}
 	if(jg==0){
-		printf("No\n");
+		my_printf("No\n");
 	}else{
 		for(i=0;i<26;i++){
 			if(zm[i]>0){
-				printf("%c=%d\n",'a'+i,zm[i]);
+				my_printf("%c=%d\n",'a'+i,zm[i]);
 			}
 		}
 	}

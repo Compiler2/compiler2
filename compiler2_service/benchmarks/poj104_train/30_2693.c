@@ -3,7 +3,7 @@
 int main_bench(){
     int sum=0;
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int num=1;num<=n;num++)
     {
                        
@@ -14,7 +14,7 @@ int main_bench(){
             sum+=num*num;
             
     } 
-    printf("%d",sum);
+    my_printf("%d",sum);
     getchar();getchar();
     return 0;
 }

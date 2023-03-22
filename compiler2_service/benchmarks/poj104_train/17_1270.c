@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	
 	int i;
 	char s[1001];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s", s);
+		my_scanf("%s", s);
 		
 		char t[1001]={0};
 		int j,k;
@@ -73,28 +73,28 @@ int main_bench()
 		{
 			if(s[j]==0)
 			{
-				printf("(");
+				my_printf("(");
 			}
 			else if(s[j]==1)
 			{
-				printf(")");
+				my_printf(")");
 			}
 			else 
-				printf("%c",s[j]);
+				my_printf("%c",s[j]);
 		}
 		
-		printf("\n");
+		my_printf("\n");
 		for(j=0;j<len;j++)
 		{
 			if(t[j]=='?'||t[j]=='$')
 			{
-				printf("%c", t[j]);
+				my_printf("%c", t[j]);
 			}
 			else 
-				printf(" ");
+				my_printf(" ");
 		}
 		
-		printf("\n");
+		my_printf("\n");
 		
 	}
 	

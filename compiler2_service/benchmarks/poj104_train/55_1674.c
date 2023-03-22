@@ -4,9 +4,9 @@ int main_bench()
 {
     char a[100000]={0},b[100000]={0};
     int i,n=0,ta,tb;
-    scanf("%d ",&ta);
-    scanf("%s",a);
-    scanf("%d",&tb);
+    my_scanf("%d ",&ta);
+    my_scanf("%s",a);
+    my_scanf("%d",&tb);
     
     for(i=0;i<strlen(a);i++)
         if(a[i]>=97&&a[i]<=122)
@@ -20,7 +20,7 @@ int main_bench()
     }
     
     
-    if(n==0) printf("0");
+    if(n==0) my_printf("0");
     else  for(i=0;n>0;i++)  
     {
         if(n%tb<10)
@@ -30,6 +30,6 @@ int main_bench()
     }
         
         for(i=strlen(b)-1;i>=0;i--)
-            printf("%c",b[i]);
+            my_printf("%c",b[i]);
         return 0;
 }

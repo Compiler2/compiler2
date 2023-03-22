@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[1000],n,k,i,j,l,m;
-	scanf("%d",&n);
-	scanf("%d",&k);
+	my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	l=0;
 	for(i=0;i<n;i++)
 	{
@@ -28,8 +28,8 @@ int main_bench()
 			break;
 	}
 	if(l==0)
-		printf("no");
+		my_printf("no");
 	else
-		printf("yes");
+		my_printf("yes");
 	return 0;
 }

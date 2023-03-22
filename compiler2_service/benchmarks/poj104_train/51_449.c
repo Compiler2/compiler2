@@ -19,7 +19,7 @@ int main_bench()
 {
 	int i,j,l,k,n,sum,max=0;
 	char a[501]={'\0'},b[6]={'\0'},c[100][6]={'\0'};
-	scanf ("%d\n",&n);
+	my_scanf ("%d\n",&n);
 	gets (a);
 	l=strlen(a);
 	for (i=0;i<=l-n;i++)
@@ -55,10 +55,10 @@ int main_bench()
 	}
 	if (max==1)
 	{
-		printf ("NO");
+		my_printf ("NO");
 		return ;
 	}
-	printf ("%d\n",max);
+	my_printf ("%d\n",max);
 	for (i=0;i<k;i++)
-		printf ("%s\n",c[i]);
+		my_printf ("%s\n",c[i]);
 }

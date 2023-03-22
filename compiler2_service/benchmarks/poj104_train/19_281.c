@@ -42,15 +42,15 @@ int main_bench()
 
 	if(n)
 	{
-		printf("%s",c);
+		my_printf("%s",c);
 		for(i=x;a[i]!='\0';i++)
 		{
-		   if(a[i]>='A'&&a[i]<='z')printf("%c",a[i]);
+		   if(a[i]>='A'&&a[i]<='z')my_printf("%c",a[i]);
 		   else if(a[i]=='0')continue;
 		   else 
 		   {
-			if(a[i]==' '&&a[i+1]=='0')printf(" %s",c);
-			else printf(" ");
+			if(a[i]==' '&&a[i+1]=='0')my_printf(" %s",c);
+			else my_printf(" ");
 		   }
 		}
 	}
@@ -60,12 +60,12 @@ int main_bench()
 	else
 	for(i=0;a[i]!='\0';i++)
 	{
-		if(a[i]>='A'&&a[i]<='z')printf("%c",a[i]);
+		if(a[i]>='A'&&a[i]<='z')my_printf("%c",a[i]);
 		else if(a[i]=='0')continue;
 		else
 		{
-			if(a[i]==' '&&a[i+1]=='0')printf(" %s",c);
-			else printf(" ");
+			if(a[i]==' '&&a[i+1]=='0')my_printf(" %s",c);
+			else my_printf(" ");
 		}
 	}
 	return 0;

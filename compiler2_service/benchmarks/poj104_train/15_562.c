@@ -6,12 +6,12 @@ int main_bench()
 	int a[1000][1000];
 	int t,i,j,x=0,b=0,m=0,n=0,s,s1,s2;
 
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
 		for(j=0;j<t;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<t;i++)
@@ -48,7 +48,7 @@ int main_bench()
 	s1=m-x-1;
 	s2=n-b-1;
 	s=s1*s2;
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

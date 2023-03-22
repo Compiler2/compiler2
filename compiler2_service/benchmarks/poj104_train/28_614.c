@@ -10,7 +10,7 @@ int main_bench()
 	{
 		if(a[i]!=' ')num++;
 		else if(a[i]==' '&&num!=0)
-		{printf("%d",num);if(i!=n-1)printf(",");num=0;}
-		if(i==n-1)printf("%d",num);
+		{my_printf("%d",num);if(i!=n-1)my_printf(",");num=0;}
+		if(i==n-1)my_printf("%d",num);
 	}
 }

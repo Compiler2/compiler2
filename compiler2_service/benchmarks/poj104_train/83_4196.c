@@ -3,13 +3,13 @@
 int main_bench(){
 	int a[100],b[100],n,i,s,xfh=0;
 	double jd,jdh=0,gpa;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		xfh+=a[i];
 	}
 	for(s=0;s<n;s++){
-		scanf("%d",&b[s]);
+		my_scanf("%d",&b[s]);
 		if ((b[s]<=100)&&(b[s]>=90)){
 			jd=4.0*a[s];
 		}else if ((b[s]<=89)&&(b[s]>=85)){
@@ -34,6 +34,6 @@ int main_bench(){
 		jdh+=jd;
 	}
 	gpa=jdh/xfh;
-	printf ("%.2lf",gpa);
+	my_printf ("%.2lf",gpa);
 	return 0;
 }

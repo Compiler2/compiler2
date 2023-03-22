@@ -6,7 +6,7 @@ int main_bench()
   int n,i,j,k,p,q=0,flag=0;
   char a[100000];
   int b[26];
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(i=1;i<=n;i++)
   {
     
@@ -27,7 +27,7 @@ int main_bench()
       
       if(q==1)
       {
-        printf("%c\n",a[j]);
+        my_printf("%c\n",a[j]);
         flag=1;
         break;        
       } 
@@ -37,7 +37,7 @@ int main_bench()
     
     if(flag==0)
     {
-      printf("no\n");           
+      my_printf("no\n");           
     }
     for(j=0;j<k;j++)a[j]='\0';
     flag=0;

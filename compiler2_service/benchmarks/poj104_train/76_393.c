@@ -6,10 +6,10 @@ int main_bench()
 {
 	int i,j,k=0,n;
 	int A[5000],B[5000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&A[i],&B[i]);
+		my_scanf("%d %d",&A[i],&B[i]);
 	}
 	for(j=n-1;j>0;j--)
 	{
@@ -47,9 +47,9 @@ int main_bench()
 	}
 	if(k==n-1)
 	{
-		printf("%d %d\n",A[0],B[n-1]);
+		my_printf("%d %d\n",A[0],B[n-1]);
 	}else {
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

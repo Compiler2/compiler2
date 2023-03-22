@@ -3,7 +3,7 @@
 int main_bench()
 {
    char str1[50],str2[50];
-   scanf("%s %s",str1,str2);
+   my_scanf("%s %s",str1,str2);
    int len1,len2;
    len1=strlen(str1);
    len2=strlen(str2);
@@ -16,7 +16,7 @@ int main_bench()
 				   break;
 		   }
 		   if ( i == len1){
-				printf("%d\n",j);
+				my_printf("%d\n",j);
 				break;
 		   }
 

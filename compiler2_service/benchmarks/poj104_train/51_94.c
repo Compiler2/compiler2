@@ -3,8 +3,8 @@
 int main_bench(){
     char a[600],b[600][6]={0};
     int n,i,j,k,l,o,p,count[600]={0},max;
-    scanf("%d",&n);
-    scanf("%s",a);
+    my_scanf("%d",&n);
+    my_scanf("%s",a);
     l=strlen(a);
     
     for(k=0;k<=l-n;k++){
@@ -32,13 +32,13 @@ int main_bench(){
             max=count[i]+1;            
             }
         }
-    if(max==1) printf("NO");
+    if(max==1) my_printf("NO");
     else{
-        printf("%d\n",max);
+        my_printf("%d\n",max);
         for(i=0;i<=l-n;i++){
-            if(max==count[i]+1)  printf("%s\n",b[i]);            
+            if(max==count[i]+1)  my_printf("%s\n",b[i]);            
             }
         }
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

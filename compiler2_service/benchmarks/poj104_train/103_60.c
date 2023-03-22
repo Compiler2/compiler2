@@ -8,7 +8,7 @@ struct p
 main_bench()
 {
       char str[1100],i,L,j,s,t=0,count=0;
-      scanf("%s",str);
+      my_scanf("%s",str);
       L=strlen(str);
       str[L]='\0';
       for(i=0;i<L;i++)
@@ -40,7 +40,7 @@ main_bench()
               }
       }
       for(i=0;i<t;i++)
-      printf("(%c,%d)",p[i].c,p[i].x);
+      my_printf("(%c,%d)",p[i].c,p[i].x);
      
       
 }

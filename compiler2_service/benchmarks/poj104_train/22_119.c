@@ -5,10 +5,10 @@
 int main_bench()
 {
 	int a[300],i,j,k,x;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;getchar()==',';i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	k=i;
 	for(j=0;j<k-1;j++)
@@ -26,6 +26,6 @@ int main_bench()
 			break;
 		}
 	}
-	if(x==-1)printf("No");
-	else printf("%d",x);
+	if(x==-1)my_printf("No");
+	else my_printf("%d",x);
 }

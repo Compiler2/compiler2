@@ -10,9 +10,9 @@ main_bench()
         char gender[7];
         float height;
     }person[40];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%s%f",person[i].gender,&person[i].height);
+        my_scanf("%s%f",person[i].gender,&person[i].height);
     for(i=0;i<n;i++)
     {
         if(strlen(person[i].gender)==4) m[i]=person[i].height;
@@ -32,13 +32,13 @@ main_bench()
     }
     i=0;
     do{i++;}while(m[i]==0);
-    printf("%.2f",m[i]);
+    my_printf("%.2f",m[i]);
     x=i;
-    for(i=x+1;i<40;i++) printf(" %.2f",m[i]);
+    for(i=x+1;i<40;i++) my_printf(" %.2f",m[i]);
     i=0;
     while(f[i]!=0)
     {
-        printf(" %.2f",f[i]);
+        my_printf(" %.2f",f[i]);
         i++;
     }
 }

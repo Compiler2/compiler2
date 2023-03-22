@@ -3,7 +3,7 @@
 int main_bench()
 {
     int date,i,j,day[13]={0},month[13];
-	scanf("%d",&date);
+	my_scanf("%d",&date);
 	for (i=1;i<=12;i++)
 	{
 		if (i==1)
@@ -34,7 +34,7 @@ int main_bench()
 	{
 		if ((day[j]+13-1+date)%7==5)
 		{
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 		}
 	}
 	return 0;

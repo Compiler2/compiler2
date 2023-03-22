@@ -3,10 +3,10 @@
 int main_bench()
 {
 int n,x,y,z,m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 x=0;y=0;z=0;
 for (n=n;n>0;n=n-1)
-	{scanf("%d",&x);
+	{my_scanf("%d",&x);
 		if (x>=y)
 		{z=y;
 		y=x;}
@@ -16,7 +16,7 @@ for (n=n;n>0;n=n-1)
 		z=x;
 		}
 	}
-if (n==0) {printf("%d\n",y);printf("%d",z);}
+if (n==0) {my_printf("%d\n",y);my_printf("%d",z);}
 x=0;y=0;z=0;
 return 0;
 }

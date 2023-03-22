@@ -5,11 +5,11 @@ int main_bench()
 {
     int num[101][100];
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	i=j=0;
 	for(i=0;i<n;i++)
 	{for(j=0;j<n;j++)
-	scanf("%d",&num[i][j]);
+	my_scanf("%d",&num[i][j]);
 	}
 	int a,b,c,d;
 	a=b=c=d=0;
@@ -35,7 +35,7 @@ int main_bench()
 	}while(i<n);
 	int s;
 	s=(c-a-1)*(d-b);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
    return 0;
 }
 

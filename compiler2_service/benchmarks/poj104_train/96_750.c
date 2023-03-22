@@ -5,7 +5,7 @@ int main_bench()
 	char number[100];
 	char result[100];
 	int a=0,b=0,lenght=0,flag=0;
-	scanf("%s",number);
+	my_scanf("%s",number);
 	lenght=strlen(number);
 	b=number[0]-'0';
 	for(int i=0;i<lenght-1;i++)
@@ -29,6 +29,6 @@ int main_bench()
 				break;
 			}
 	}
-	printf("%s\n%d\n",result+flag,b);
+	my_printf("%s\n%d\n",result+flag,b);
 	return 0;
 }

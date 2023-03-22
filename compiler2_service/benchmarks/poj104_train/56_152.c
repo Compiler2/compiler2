@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,i,k,p[5];
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	i=0;
 	do
 	{
@@ -12,7 +12,7 @@ int main_bench()
 	while(y/10<10&&y/10>=1);
 	p[i]=y;
 	for(k=0;k<=i;k++) 
-		printf("%d",p[k]);
+		my_printf("%d",p[k]);
 
 	return 0;
 }

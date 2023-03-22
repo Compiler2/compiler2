@@ -7,7 +7,7 @@ int main_bench()
 	long int y;
 	int i,j,sum=0,m,d;
 	char week[8][5]={"Mon.","Tue.","Wed.","Thu.","Fri.","Sat.","Sun"};
-	scanf("%ld %d %d",&y,&m,&d);
+	my_scanf("%ld %d %d",&y,&m,&d);
 	if ((y%4==0&&y%100!=0)||(y%400==0))
 	{
 		for (i=0;i<m-1;i++)
@@ -23,7 +23,7 @@ int main_bench()
 y=y-1;
 	sum=sum+y+y/4-y/100+y/400;
 	j=sum%7;
-	printf("%s\n",week[j]);
+	my_printf("%s\n",week[j]);
 return 0;
 }
 

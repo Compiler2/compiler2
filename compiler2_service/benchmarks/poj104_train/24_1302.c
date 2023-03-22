@@ -44,7 +44,7 @@ int main_bench()
 	{
 		if(max==lon[i])
 		{
-			printf("%s\n",word[i]);
+			my_printf("%s\n",word[i]);
 			break;
 		}
 	}
@@ -52,7 +52,7 @@ int main_bench()
 	{
 		if(min==lon[i])
 		{
-			printf("%s\n",word[i]);
+			my_printf("%s\n",word[i]);
 			break;
 		}
 	}

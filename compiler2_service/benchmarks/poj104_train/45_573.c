@@ -6,7 +6,7 @@ int main_bench()
 	char a[100],b[100];
 	char *q;
 	char *p;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	q=a;
@@ -17,7 +17,7 @@ int main_bench()
 	}
 
 	
-		printf("%d",p-len1+1-b);
+		my_printf("%d",p-len1+1-b);
 
 	
 

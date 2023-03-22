@@ -25,15 +25,15 @@ int main_bench(){
 				}
 			}
 		}
-		printf("%s\n",t);
+		my_printf("%s\n",t);
 		for(aa=0;aa<len;aa++){
 			if(s[aa]==1&&t[aa]=='(')
-				printf("$");
+				my_printf("$");
 			else if(s[aa]==1&&t[aa]==')')
-				printf("?");
+				my_printf("?");
 			else
-				printf(" ");
+				my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

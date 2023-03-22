@@ -18,8 +18,8 @@ int main_bench()
 			int i,j,n=6;
 			while(n>0)
 			{
-				scanf("%d",&i);
-				printf("%d\n",transfer(i));				
+				my_scanf("%d",&i);
+				my_printf("%d\n",transfer(i));				
 				n--;
 				}
 			return 0;

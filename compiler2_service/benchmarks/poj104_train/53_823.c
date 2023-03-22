@@ -4,12 +4,12 @@ int main_bench()
 {
 
 int n,i,j,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int ys[300];
 int sc[300];
 for(i=0;i<n;i++)
 {
-	scanf("%d",&ys[i]);
+	my_scanf("%d",&ys[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -36,9 +36,9 @@ for(i=0;i<k;i++)
 {
 if(i!=0)
 	{
-		printf(",");
+		my_printf(",");
 	}
-	printf("%d",sc[i]);
+	my_printf("%d",sc[i]);
 }
 
 

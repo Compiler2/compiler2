@@ -20,6 +20,6 @@
         *(d-1)=*c+e;
         
         d=dd;
-        printf("%s",d);
+        my_printf("%s",d);
         return 0;
     }

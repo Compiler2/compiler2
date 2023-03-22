@@ -39,9 +39,9 @@ main_bench()
 	{
 		t+=*(c+m)-'0';
 		if(t)
-		{printf("%c",*(c+m));
+		{my_printf("%c",*(c+m));
 		n++;}
 	}
 	if(n==0)
-		printf("0");
+		my_printf("0");
 }

@@ -3,17 +3,17 @@
 int main_bench()
 {
     int n,i,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[100]={0};
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     a[k]=a[k]+1;
-    printf("%d",k);
+    my_printf("%d",k);
    for(i=2;i<=n;i++)
    {
-     scanf("%d",&k);
+     my_scanf("%d",&k);
      a[k]=a[k]+1;
      if(a[k]==1)
-     printf(" %d",k);
+     my_printf(" %d",k);
     }
      return 0;
 }

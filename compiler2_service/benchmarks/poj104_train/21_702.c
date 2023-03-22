@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,a[300],k=0;
 	double ave=0.0,max=0.0,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		ave+=a[i];
 	}
 	ave/=n;
@@ -17,6 +17,6 @@ int main_bench(){
 		}
 		else if(fabs(x)==fabs(max)) k++;
 	}
-	if(k==0) printf("%d",(int)(max+ave));
-	else printf("%d,%d",(int)(ave-fabs(max)),(int)(ave+fabs(max)));
+	if(k==0) my_printf("%d",(int)(max+ave));
+	else my_printf("%d,%d",(int)(ave-fabs(max)),(int)(ave+fabs(max)));
 }

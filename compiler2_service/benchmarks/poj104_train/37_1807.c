@@ -6,12 +6,12 @@ int main_bench()
 {
     int t,i;
     char a[200][10000];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
-    scanf("%s",&a[i]);
+    my_scanf("%s",&a[i]);
     com(a[i]);
-    printf("\n");
+    my_printf("\n");
     }
 }
 void com(char str[])
@@ -38,15 +38,15 @@ void com(char str[])
         if (flag==1)
         {
           f=1;
-          printf("%c",str[i]);
+          my_printf("%c",str[i]);
           break;
               }
  }
         if( f!=1)
         {
         if (str[k]!='0')
-        printf("%c\n",str[k]);
+        my_printf("%c\n",str[k]);
         else
-        printf("no\n");
+        my_printf("no\n");
         }
  }

@@ -8,7 +8,7 @@ int i,ans = 0,year1,year2,month1,month2,day1,day2,
 
 int main_bench()
 {
-    scanf("%d%d%d%d%d%d",&year1,&month1,&day1,
+    my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,
                          &year2,&month2,&day2);
     for(i = year1 + 1;i < year2;++i)
         if(i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
@@ -23,6 +23,6 @@ int main_bench()
         ++ans;
     if((year2 % 4 == 0 && year2 % 100 != 0 || year2 % 400 == 0) && month2 > 2)
         ++ans;
-    printf("%d\n",ans);
+    my_printf("%d\n",ans);
     return 0;    
 }

@@ -29,6 +29,6 @@ int main_bench()
 			strcpy(duan,danci[i]);
 		}
 	}
-	printf("%s\n%s\n",chang,duan);
+	my_printf("%s\n%s\n",chang,duan);
 	return 0;
 }

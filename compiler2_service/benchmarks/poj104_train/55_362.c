@@ -7,7 +7,7 @@ main_bench()
 	long j;
 	for(i=0;i<100;i++)
 		b[i]=0;
-	scanf("%d %s %d",&m,a,&n);
+	my_scanf("%d %s %d",&m,a,&n);
 	i=0;
 	j=0;
          t=0;
@@ -52,9 +52,9 @@ main_bench()
 		if(!((c[j]>='0'&&c[j]<='9')||(c[j]>='A'&&c[j]<='Z')))
 			c[j]=0;
 	}
-	printf("%s\n",c);
+	my_printf("%s\n",c);
     }
     else
-    printf("0\n");
+    my_printf("0\n");
 }
 

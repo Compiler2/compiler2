@@ -10,9 +10,9 @@ int main_bench(){
 
 
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 		for(i=0;i<m;i++){
-			scanf("%d",&sm[i]);
+			my_scanf("%d",&sm[i]);
 		}
 		fz[0]=2;
 		fm[0]=1;
@@ -26,7 +26,7 @@ int main_bench(){
 			sum+=a;
 			
 			}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

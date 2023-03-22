@@ -7,13 +7,13 @@ int main_bench(){
 	int xf[10];
 	int df[10];
 	float jd[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&xf[i]);
+		my_scanf("%d",&xf[i]);
 		xfh+=xf[i];
 	}
 	for(k=0;k<n;k++){
-		scanf("%d",&df[k]);
+		my_scanf("%d",&df[k]);
 	}
 	for(p=0;p<n;p++){
 		if(df[p]>89){
@@ -51,6 +51,6 @@ int main_bench(){
 		jdh+=xf[t]*jd[t];
 	}
 	float zjd=jdh/xfh;
-	printf("%.2f",zjd);
+	my_printf("%.2f",zjd);
 	return 0;
 }

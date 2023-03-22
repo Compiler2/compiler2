@@ -5,9 +5,9 @@ int main_bench(){
 	int n;
 	int i,j;
 	int sz[9999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",&zfc[i]);
+		my_scanf("%s",&zfc[i]);
 	}
     for(i=0;i<n;i++){
 		sz[i]=strlen(zfc[i]);
@@ -25,7 +25,7 @@ int main_bench(){
 			}
 		}
 		zfc[i][sz[i]]='\0';
-		printf("%s\n",zfc[i]);
+		my_printf("%s\n",zfc[i]);
 
 	}
 

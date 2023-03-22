@@ -4,10 +4,10 @@ int main_bench()
 {
     int n, a, b, c, i, sum=0, max=0, m[100]={0}, result[100];
     char p, q, name[20], s[20];
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     for(i=0;i<n;i++)
     {
-        result[i] = scanf("%s %d %d %c %c %d\n", s, &a, &b, &p, &q, &c);
+        result[i] = my_scanf("%s %d %d %c %c %d\n", s, &a, &b, &p, &q, &c);
         if(a>80 && c>0) m[i]+=8000;
         if(a>85 && b>80) m[i]+=4000;
         if(a>90) m[i]+=2000;
@@ -20,6 +20,6 @@ int main_bench()
         }
         sum+=m[i];            
     }
-    printf("%s\n%d\n%d\n", name, max, sum);
+    my_printf("%s\n%d\n%d\n", name, max, sum);
     return 0;
 }

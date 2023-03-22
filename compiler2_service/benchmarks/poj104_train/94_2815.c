@@ -15,18 +15,18 @@ void bubble(int a[],int n)
 int main_bench()
 {
 	int n, a[500],i,b[500],j=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 0; i <= n - 1; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 		if (a[i] % 2 != 0){ b[j] = a[i]; j += 1; }
 	}
 	bubble(b, j);
-	printf("%d", b[0]);
+	my_printf("%d", b[0]);
 	for (i = 1; i < j; i++)
 	{
-		printf(",%d", b[i]);
+		my_printf(",%d", b[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

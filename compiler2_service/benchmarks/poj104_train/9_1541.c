@@ -20,16 +20,16 @@ return 0;
 int main_bench()
 {
 int i,j,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 {
-scanf("%s %d",&a[i].s,&a[i].age);
+my_scanf("%s %d",&a[i].s,&a[i].age);
 a[i].no=i;
 }
 for(i=1;i<n;i++)
  for(j=i+1;j<=n;j++)
   if(check(i,j)==1){b=a[i];a[i]=a[j];a[j]=b;}
 for(i=1;i<=n;i++)
-printf("%s\n",a[i].s);
+my_printf("%s\n",a[i].s);
 return 0;
 }

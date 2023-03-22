@@ -43,7 +43,7 @@ int main_bench()
 			j=cd[i];
 		}
 	}
-	printf("%s\n%s",words[x],words[y]);
+	my_printf("%s\n%s",words[x],words[y]);
 	return 0;
 
 

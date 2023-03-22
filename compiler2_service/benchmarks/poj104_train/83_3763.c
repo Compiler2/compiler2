@@ -3,16 +3,16 @@
 int main_bench(){
 	int n,i,zxuefen;
 	float GPA,zxfjd;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int *xuefen=(int*)malloc(sizeof(xuefen)* n);
 	int *chengji=(int*)malloc(sizeof(chengji)* n);
 	float *jidian=(float*)malloc(sizeof(jidian)* n);
 	float *xfjd=(float*)malloc(sizeof(xfjd)* n);
 	for(i=0;i<n;i++){
-		scanf("%d",&xuefen[i]);
+		my_scanf("%d",&xuefen[i]);
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&chengji[i]);
+		my_scanf("%d",&chengji[i]);
 	}
 	for(i=0;i<n;i++){
 		if(chengji[i]>=90){
@@ -49,6 +49,6 @@ int main_bench(){
 	}
 	
 	GPA=zxfjd/zxuefen;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 	return 0;
 }

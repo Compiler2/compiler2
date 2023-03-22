@@ -4,13 +4,13 @@ void inv(int[],int,int);
 int main_bench()
 {
     int a[100],n,m,i,*p=a;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<n;i++)
-        scanf("%d",p++);
+        my_scanf("%d",p++);
     p=a;inv(p,n,m);
     for(i=0;i<n-1;i++)
-        printf("%d ",*(p+i));
-    printf("%d",*(p+n-1));
+        my_printf("%d ",*(p+i));
+    my_printf("%d",*(p+n-1));
 }
 void inv(int p[],int n,int m)
 {

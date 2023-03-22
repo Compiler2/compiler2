@@ -32,8 +32,8 @@ main_bench()
 		k++;}
 	}
 	if(k==0)
-		printf("No");
-	else printf("%d",maxi);
+		my_printf("No");
+	else my_printf("%d",maxi);
     
 
 

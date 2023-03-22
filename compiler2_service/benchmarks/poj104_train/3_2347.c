@@ -6,11 +6,11 @@ int main_bench()
 	int js[1001];
 	int n,i,k,a,b;
 	b=0;
-	scanf("%d",&n);
-	scanf("%d",&k);
+	my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -28,8 +28,8 @@ int main_bench()
 		}
 	}
 	if(b==(n*(n-1))/2)
-		printf("no");
+		my_printf("no");
 	else
-		printf("yes");
+		my_printf("yes");
 	return 0;
 }

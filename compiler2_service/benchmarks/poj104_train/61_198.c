@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,j,max,tran;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++){
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     max=a[0];
     for(i=0;i<n;i++){
@@ -20,7 +20,7 @@ int main_bench(){
         F[i+2]=F[i]+F[i+1];
     }
     for(i=0;i<n;i++){
-        printf("%d\n",F[a[i]-1]);
+        my_printf("%d\n",F[a[i]-1]);
     }
     return 0;
 }

@@ -40,7 +40,7 @@ int main_bench() {
 
 	}
 
-	printf("%s",full);
+	my_printf("%s",full);
 
 	return 0;
 }

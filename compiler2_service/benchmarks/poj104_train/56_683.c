@@ -11,7 +11,7 @@ long fang(long x);
  
  sum=0; 
  
- scanf("%d",&a); 
+ my_scanf("%d",&a); 
  
  i=4; 
  
@@ -55,7 +55,7 @@ long fang(long x);
  
  
  
- printf("%d",sum); 
+ my_printf("%d",sum); 
  
  } 
  

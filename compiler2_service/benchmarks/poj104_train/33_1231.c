@@ -10,12 +10,12 @@ int n,i;
 	
 
 	
-scanf("%d",&n);
+my_scanf("%d",&n);
 	
 for(i=0;i<n;i++){
 	
 	
-scanf("%s",in[i]);
+my_scanf("%s",in[i]);
 	
    int m=strlen(in[i]);
 	
@@ -57,7 +57,7 @@ else{out[i][j]='C';}
 }
 	
 	
-printf("%s\n",out[i]);
+my_printf("%s\n",out[i]);
 	
 }
 	

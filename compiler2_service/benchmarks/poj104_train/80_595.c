@@ -3,7 +3,7 @@
 int main_bench()
 {int a[2],b[2],c[2],m[12]={31,28,31,30,31,30,31,31,30,31,30,31},r=29;
  int i,k=0,total=0,num,sum[2];
- scanf("%d %d %d %d %d %d",&a[0],&b[0],&c[0],&a[1],&b[1],&c[1]);
+ my_scanf("%d %d %d %d %d %d",&a[0],&b[0],&c[0],&a[1],&b[1],&c[1]);
  for(i=a[0];i<a[1]+1;i++)
 	 if((i%4==0&&i%100!=0)||(i%400==0)) k++;
  total=366*k+365*(a[1]+1-a[0]-k);
@@ -21,5 +21,5 @@ int main_bench()
 	sum[1]+=m[i];
  sum[1]=sum[1]-c[1];
  num=total-sum[0]-sum[1];
- printf("%d\n",num);
+ my_printf("%d\n",num);
 }

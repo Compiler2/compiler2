@@ -34,7 +34,7 @@ int main_bench()
 	}
 	if(e==0)
 	{
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	}
 	else
 	{
@@ -43,11 +43,11 @@ int main_bench()
 			d1=strlen(c[i]);
 			for(j=0;j<d1;j++)
 			{
-				printf("%c",c[i][j]);
+				my_printf("%c",c[i][j]);
 			}
-				printf("%c",' ');
+				my_printf("%c",' ');
 		}
-		printf("%s\n",c[n-1]);
+		my_printf("%s\n",c[n-1]);
 	}
 	return 0;
 }

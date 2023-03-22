@@ -67,10 +67,10 @@ switch(b[i]){
 	}
 
 
-	if(strcmp(a,b)<0)printf("<");
-	if(strcmp(a,b)==0)printf("=");
+	if(strcmp(a,b)<0)my_printf("<");
+	if(strcmp(a,b)==0)my_printf("=");
 
-	if(strcmp(a,b)>0)printf(">");
+	if(strcmp(a,b)>0)my_printf(">");
 		return 0;
 }
 

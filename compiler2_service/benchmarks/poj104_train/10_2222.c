@@ -3,10 +3,10 @@
 main_bench()
 {
 	int a[256][256],b[256],i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for (j=1;j<=n;j++)
 	{
@@ -41,7 +41,7 @@ main_bench()
 	{
 		if (b[1]<b[i]) b[1]=b[i];
 	}
-	printf("%d\n",b[1]+1);
+	my_printf("%d\n",b[1]+1);
 }
 
 

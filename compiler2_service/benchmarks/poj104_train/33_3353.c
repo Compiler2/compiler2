@@ -29,7 +29,7 @@ int main_bench()
 			if(a[i][j]=='c') a[i][j]='C';
 			if(a[i][j]=='g') a[i][j]='G';
 		}
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 	}
 	return 0;
 }

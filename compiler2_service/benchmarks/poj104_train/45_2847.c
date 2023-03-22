@@ -4,8 +4,8 @@ int main_bench()
 {
  char str1[60];
  char str2[60];
- scanf("%s",&str1);
- scanf("%s",&str2);
+ my_scanf("%s",&str1);
+ my_scanf("%s",&str2);
 int n,m;	
 n=strlen(str1);
 m=strlen(str2);
@@ -31,6 +31,6 @@ for(i=0;i<m;i++)
 	}
 }
 i=i-n+1;
-printf("%d",i);
+my_printf("%d",i);
 return 0;
 }

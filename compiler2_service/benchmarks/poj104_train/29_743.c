@@ -10,13 +10,13 @@ int main_bench()
 {
 	int n,i,k,j,b,a;
 	double sum=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int geshu[100];
 
     
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		geshu[i]=k;
 	}
 
@@ -43,7 +43,7 @@ int main_bench()
 			} 
 			sum=sum+szz[j]*1.0/sz[j];
 		}
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
 		sum=0.0;
 	}
 	return 0;

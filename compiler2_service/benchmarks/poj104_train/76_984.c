@@ -7,11 +7,11 @@ int main_bench()
   b=0;
   x=0;
   y=10000;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-	  scanf("%d ",&c[i]);
-   scanf("%d",&m[i]);
+	  my_scanf("%d ",&c[i]);
+   my_scanf("%d",&m[i]);
   }
   for(i=0;i<n;i++)
   {
@@ -33,10 +33,10 @@ int main_bench()
 	  }
   }
 	  if(i==x)  {
-		  printf("%d %d",y,x);
+		  my_printf("%d %d",y,x);
 	  }
 	  else {
-		  printf("no");
+		  my_printf("no");
 	  }
 return 0;
 }

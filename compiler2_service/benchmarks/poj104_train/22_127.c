@@ -38,6 +38,6 @@ int main_bench()
 	{
 		if(a[i]>max){max=a[i];}
 	}
-	if(max!=-1){printf("%d",max);}
-	else printf("No");
+	if(max!=-1){my_printf("%d",max);}
+	else my_printf("No");
 }

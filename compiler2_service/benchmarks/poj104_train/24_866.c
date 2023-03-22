@@ -6,7 +6,7 @@ int main_bench()
   char dc[51][50],zc[50],zd[50];
   for(i=0;i<20;i++)
   {
-               scanf("%s",&dc[i]);
+               my_scanf("%s",&dc[i]);
                if((dc[i][0]>='a'&&dc[i][0]<='z')||(dc[i][0]>='A'&&dc[i][0]<='Z'))
                {
                                                                                  

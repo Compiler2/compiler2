@@ -7,6 +7,6 @@ int main_bench()
 	gets(s);
 	for(;*s!='\0';s++)
 	   if((*s!=' ')||((*s==' ')&&(*(s-1)!=' ')))
-	     printf("%c",*s);
-    printf("\n");
+	     my_printf("%c",*s);
+    my_printf("\n");
 }

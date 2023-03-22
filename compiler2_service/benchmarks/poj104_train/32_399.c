@@ -4,11 +4,11 @@ main_bench()
 {
    char a[100],b[100],c[20][100];
    int n,i,j,j1,j2,lena,lenb;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%s",a);
-	  scanf("%s",b);
+      my_scanf("%s",a);
+	  my_scanf("%s",b);
 	  lena=strlen(a);
 	  lenb=strlen(b);
 	  j=0;
@@ -33,6 +33,6 @@ main_bench()
 	  c[i][j2]='\0';
    }
    for(i=0;i<n;i++)
-     printf("%s\n",c[i]);
+     my_printf("%s\n",c[i]);
    
 }

@@ -5,12 +5,12 @@ main_bench()
       int a,b,c,d,e,i;
       char f[1000];
       char g[1000];
-      scanf("%s",f);
+      my_scanf("%s",f);
       a=strlen(f);
       if (a==1)
       {
-               printf("0\n");
-               printf("%s",f);
+               my_printf("0\n");
+               my_printf("%s",f);
       }
       else
       {
@@ -50,8 +50,8 @@ main_bench()
               g[i]=g[i]+'0';
           }
       }
-      printf("%s\n",g);
-      printf("%d\n",b);
+      my_printf("%s\n",g);
+      my_printf("%d\n",b);
       }
       getchar ();
       getchar ();

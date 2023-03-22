@@ -9,7 +9,7 @@ int main_bench()
 	int last;
 	while(1>0)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if((n==0)||(m==0))
 			break;
 		else
@@ -39,7 +39,7 @@ int main_bench()
 			
 			   
 			}
-			printf("%d\n",in[1]);
+			my_printf("%d\n",in[1]);
 		}
 	}
 	return 0;

@@ -5,9 +5,9 @@
     char a[10000],b[10000];
     int c,d,m=0,z=0;
     double e,f,g,h;
-    scanf("%lf",&h);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%lf",&h);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
         for(int i=0;a[i]!='\0';i++)
     {
         if((a[i]=='A')||(a[i]=='T')||(a[i]=='C')||(a[i]=='G'))
@@ -39,15 +39,15 @@
         e=f/g;
         if(e>=h&&z==2*c)
         {
-            printf("yes");
+            my_printf("yes");
         }
         else if(e<h&&z==2*c){
-            printf("no");
+            my_printf("no");
         }        
     }
     if(c!=d||z!=2*c)
     {
-        printf("error");
+        my_printf("error");
     }
     return 0;
 }

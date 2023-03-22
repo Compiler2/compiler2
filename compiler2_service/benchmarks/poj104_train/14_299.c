@@ -17,10 +17,10 @@ int main_bench()
     int i=0,j,zong,c=0;
     int a[3]={0},b[3]={0};
     int t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<3;i++)
     {
-                    scanf("%d %d %d",&s.id,&s.ch,&s.ma);
+                    my_scanf("%d %d %d",&s.id,&s.ch,&s.ma);
                     a[i]=i+1;
                     b[i]=s.ma+s.ch;           
     }
@@ -34,7 +34,7 @@ int main_bench()
    }
     for(i=3;i<n;i++)
     {
-                      scanf("%d %d %d",&s.id,&s.ch,&s.ma);
+                      my_scanf("%d %d %d",&s.id,&s.ch,&s.ma);
                       zong= s.ch+s.ma;
                       for(j=0;j<3;j++)
                       {
@@ -66,6 +66,6 @@ int main_bench()
     }
     for(i=2;i>=0;i--)
     {
-                    printf("%d %d\n",a[i],b[i]);
+                    my_printf("%d %d\n",a[i],b[i]);
     }
 }

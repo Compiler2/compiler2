@@ -9,9 +9,9 @@ int main_bench()
 	int n;
 	int a,b,m,p;
 	int sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d %d",&sz[i][0],&sz[i][1],&sz[i][2]);
+		my_scanf("%d %d %d",&sz[i][0],&sz[i][1],&sz[i][2]);
 	}
 	for(int q=0;q<n;q++){
 		if((sz[q][0]%400==0)||(sz[q][0]%100!=0&&sz[q][0]%4==0)){
@@ -43,10 +43,10 @@ int main_bench()
 			}
 		}
 		if(sum%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

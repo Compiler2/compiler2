@@ -21,19 +21,19 @@ int main_bench()
     {
     	if(strcmp(words[i],a)==0)
     	{
-    	printf("%s ",b);
+    	my_printf("%s ",b);
     	}
     	else 
     	{
-    	printf("%s ",words[i]);
+    	my_printf("%s ",words[i]);
     	}
     }
     if(strcmp(words[n-1],a)==0)
     	{
-    	printf("%s",b);
+    	my_printf("%s",b);
     	}
     	else 
     	{
-    	printf("%s",words[n-1]);
+    	my_printf("%s",words[n-1]);
     	}
 }

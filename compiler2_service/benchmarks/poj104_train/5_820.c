@@ -5,7 +5,7 @@ int main_bench(){
 char a[501],b[501];
 double q,p;
 int i,s,l1,l2,o;
-scanf("%lf%s%s",&p,a,b);
+my_scanf("%lf%s%s",&p,a,b);
 l1=strlen(a);
 l2=strlen(b);
 o=0;
@@ -14,14 +14,14 @@ for (i=0;i<l1;i++)
 if (yn(a[i])==1) {o=1;break;}
 for (i=0;i<l2;i++)
 if (yn(b[i])==1) {o=1;break;}
-if (o==1) printf("error");
+if (o==1) my_printf("error");
 else {
 s=0;
 for (i=0;i<l1;i++)
 if ((a[i])==b[i]) s=s+1;
 q=1.0*s/l1;
-if (q>p) printf("yes");
-else printf("no");
+if (q>p) my_printf("yes");
+else my_printf("no");
 }
 return 0;
 }

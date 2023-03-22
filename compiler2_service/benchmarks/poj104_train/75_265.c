@@ -40,7 +40,7 @@ int main_bench()
 	for(i=0;i<=1000;i++)
 		if(a[i]>m)
 			m=a[i];
-	printf("%d %d",n+1,m);
+	my_printf("%d %d",n+1,m);
 
 
 }

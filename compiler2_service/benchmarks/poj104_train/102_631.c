@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j,q=-1,p=-1;
 	double sh[100],fe[120],me[120],t,min1,min2;
 	char a[100][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %lf",a[i],&sh[i]);
+		my_scanf("%s %lf",a[i],&sh[i]);
 	}
 	for(i=0;i<n;i++){
 		if(strcmp(a[i],"male")==0){
@@ -31,11 +31,11 @@ int main_bench(){
 				t=fe[i];
 				fe[i]=fe[j];
 				fe[j]=t;}
-	printf("%.2lf",me[0]);
+	my_printf("%.2lf",me[0]);
 	for(i=1;i<=p;i++)
-		printf(" %.2lf",me[i]);
+		my_printf(" %.2lf",me[i]);
 	for(i=0;i<=q;i++)
-		printf(" %.2lf",fe[i]);
+		my_printf(" %.2lf",fe[i]);
     return 0;
 		
 }

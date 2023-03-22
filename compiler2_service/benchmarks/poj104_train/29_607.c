@@ -11,11 +11,11 @@ int main_bench()
         number[i]=number[i-1]+number[i-2];
 	}
 	int n,a[100],k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-        scanf("%d",&a[i]);
-		printf("\n");
+        my_scanf("%d",&a[i]);
+		my_printf("\n");
 	}
     for(k=0;k<n;k++)
 	{
@@ -24,7 +24,7 @@ int main_bench()
 			c[i]=number[i+1]*1.0/number[i];
 			d=d+c[i];
 		}
-		printf("%.3lf\n",d);
+		my_printf("%.3lf\n",d);
 		d=0;
         for(i=0;i<a[k]-1;i++)
 		{

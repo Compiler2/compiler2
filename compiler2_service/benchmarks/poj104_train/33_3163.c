@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n, i;
 	char s[255];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s", s);
+		my_scanf("%s", s);
 		int len=strlen(s);
 		char s1[255]={'\0'};
 		for(int j=0;j<len;j++)
@@ -29,7 +29,7 @@ int main_bench()
 				s1[j]='C';
 			}
 		}
-		printf("%s\n", s1);
+		my_printf("%s\n", s1);
 	}
 	return 0;
 }

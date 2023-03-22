@@ -3,22 +3,22 @@
 int main_bench()
 {
  int a,b,c,d;
-scanf("%d",&d);
+my_scanf("%d",&d);
  a=3;
  b=5;
  c=7;
-if(d%3==0&&d%5==0&&d%7==0) printf("%d %d %d",a,b,c);
-else if(d%3!=0&&d%5!=0&&d%7!=0) printf("n");
+if(d%3==0&&d%5==0&&d%7==0) my_printf("%d %d %d",a,b,c);
+else if(d%3!=0&&d%5!=0&&d%7!=0) my_printf("n");
 else if(d%3==0&&d%5!=0&&d%7!=0) 
-	 printf("%d",a);
+	 my_printf("%d",a);
 else if (d%3!=0&&d%5==0&&d%7!=0)
-	 printf("%d",b);
+	 my_printf("%d",b);
 else if (d%3!=0&&d%5!=0&&d%7==0)
-	 printf("%d",c);
+	 my_printf("%d",c);
 else if(d%3==0&&d%5==0&&d%7!=0)
-	 printf("%d %d",a,b);
+	 my_printf("%d %d",a,b);
 else if(d%3==0&&d%5!=0&&d%7==0)
-	 printf("%d %d",a,c);
+	 my_printf("%d %d",a,c);
 else if(d%3!=0&&d%5==0&&d%7==0)
-	 printf("%d %d",b,c);
+	 my_printf("%d %d",b,c);
 }

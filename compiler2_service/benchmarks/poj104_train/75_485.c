@@ -6,8 +6,8 @@ int main_bench() {
 	int i,j,max,c,n=0;
 	char x;
 	while(1){
-		scanf("%d",&p[n]);
-		scanf("%c",&x);
+		my_scanf("%d",&p[n]);
+		my_scanf("%c",&x);
 		n++;
 		if(x!=','){		
 			break;
@@ -16,10 +16,10 @@ int main_bench() {
 	}
 	c=n;
 	for(i=n;i<=2*n-2;i++){
-		scanf("%d",&p[i]);
-		scanf("%c",&x);
+		my_scanf("%d",&p[i]);
+		my_scanf("%c",&x);
 	}
-	scanf("%d",&p[i]);	
+	my_scanf("%d",&p[i]);	
 	memset(t,0,1005);
 	for(i=0;i<c;i++){
 		for(j=p[i];j<p[i+c];j++)
@@ -30,7 +30,7 @@ int main_bench() {
 		if(max<t[i])
 			max=t[i];
 	}
-	printf("%d %d",c,max);
+	my_printf("%d %d",c,max);
     return 0; 
 } 
 

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char st[300],sub[300],re[300],c[300],sz[300];
 	int i,j,k,t,u;
-	scanf("%s%s%s",st,sub,re);
+	my_scanf("%s%s%s",st,sub,re);
 	for(i=0;i<=strlen(st)-strlen(sub);i++)
 	{
 		u=0;
@@ -24,13 +24,13 @@ int main_bench()
 				sz[j]=re[t];
 				t++;
 			}
-			printf("%s",sz);
+			my_printf("%s",sz);
 			u=1;
 			break;
 		}
 	}
 	if(u==0)
 	{
-		printf("%s",st);
+		my_printf("%s",st);
 	}
 }

@@ -9,9 +9,9 @@ struct pat
 int main_bench()
 {
     int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	    scanf("%s %d",p[i].num,&p[i].age);
+	    my_scanf("%s %d",p[i].num,&p[i].age);
 		if(p[i].age>=60) p[i].x=p[i].age;
 		else p[i].x=0;
 	}
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
     for(i=0;i<n;i++){
-	printf("%s\n",P[i].num);
+	my_printf("%s\n",P[i].num);
 	}
 return 0;
 }

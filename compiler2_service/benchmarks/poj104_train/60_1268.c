@@ -13,14 +13,14 @@
 }
 main_bench()
 {     int a,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if (n<5)
-      printf("empty");
+      my_printf("empty");
       else
 {
       for  (a = 2;a<=(n-2);a++)
 {     if ((p(a)==1)&&(p(a+2)==1))
-      printf("%d %d\n",a,a+2);
+      my_printf("%d %d\n",a,a+2);
 }
 };
 }

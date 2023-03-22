@@ -8,12 +8,12 @@ int main_bench()
 	n=strlen(c);
 	for(i=0;i<n;i++)
 	{
-		if(c[i]!=' ') printf("%c",c[i]);
+		if(c[i]!=' ') my_printf("%c",c[i]);
 		else if(c[i]==' ') 
 		{
-			if(c[i-1]!=' ') printf(" ");
+			if(c[i-1]!=' ') my_printf(" ");
 		}
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	return 0;
 }

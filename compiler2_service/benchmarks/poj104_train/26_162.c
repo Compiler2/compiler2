@@ -12,7 +12,7 @@ for(i=0;i<l;i++,str++)
 	if(*str==' '&&*(str+1)==' ') i=i;
 	else
 	
-		printf("%c",*str);
+		my_printf("%c",*str);
 	
 	
 	}

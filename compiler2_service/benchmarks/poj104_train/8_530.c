@@ -4,9 +4,9 @@ void duqu(int a[],int b[],int M,int N)
 {
 	int i;
 	for (i=0;i<M;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for (i=0;i<N;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 void paixu(int a[],int b[],int M,int N)
 {
@@ -45,8 +45,8 @@ void shuchu(int C[],int M,int N)
 {
 	int i;
 	for (i=0;i<M+N-1;i++)
-		printf("%d ",C[i]);
-	printf("%d",C[M+N-1]);
+		my_printf("%d ",C[i]);
+	my_printf("%d",C[M+N-1]);
 }
 
 	
@@ -54,7 +54,7 @@ int main_bench()
 {
 	int m,n;
 	int a1[100],a2[100],a3[100]={0};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	duqu(a1,a2,m,n);
 	paixu(a1,a2,m,n);
 	hebing(a1,a2,a3,m,n);

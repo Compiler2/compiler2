@@ -3,12 +3,12 @@
 int main_bench(){
 	int shu[100000];
 	int i,j,n=0,shan,shuru,a;
-	scanf("%d",&shuru);
+	my_scanf("%d",&shuru);
 	for(i=0;i<shuru;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		shu[i]=a;
 	}
-	scanf("%d",&shan);
+	my_scanf("%d",&shan);
 	if(shuru==1){
 		if(shu[0]==shan){
 			n=0;
@@ -35,10 +35,10 @@ int main_bench(){
 	if(n!=0){
 	for(i=0;i<n;i++){
 		if(i==n-1){
-		    printf("%d",shu[i]);
+		    my_printf("%d",shu[i]);
 		}
 		else{
-			printf("%d ",shu[i]);
+			my_printf("%d ",shu[i]);
 		}
 	}	
 	

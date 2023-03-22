@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,n;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	while(a>0)
 	{
-		scanf("%d%d%d%d%d",&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d",&b,&c,&d,&e,&f);
 	
          n=(d+12-a)*3600;
 		 n=n+(e-b)*60;
 		 n=n+f-c;
-		 printf("%d\n",n);
-		 scanf("%d",&a);
+		 my_printf("%d\n",n);
+		 my_scanf("%d",&a);
 		 
 	}
 }

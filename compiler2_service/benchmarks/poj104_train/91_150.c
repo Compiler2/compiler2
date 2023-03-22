@@ -16,7 +16,7 @@ else
 break;
 }
 }
-printf("%s",s1);
+my_printf("%s",s1);
 return 0;
 
 }

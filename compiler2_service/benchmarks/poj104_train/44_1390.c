@@ -8,7 +8,7 @@ main_bench()
     int i=0;
     do
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         b[i]=fan(a[i]);
         i=i+1;
     }
@@ -16,7 +16,7 @@ main_bench()
     i=0;
     do
     {
-        printf("%d\n",b[i]);
+        my_printf("%d\n",b[i]);
         i=i+1;
     }
     while(i<6);

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,x,y,h,i,k,e,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	h=0;
 	max=0;
 	if(n<100)
 	{
 	  for(i=1;i<=n;i++)
 	  {
-	     scanf("%d%d",&x,&y);
+	     my_scanf("%d%d",&x,&y);
 	     if(x<=140&&x>=90&&y>=60&&y<=90&&n!=i)
 	       {
 		  h+=1;
@@ -29,7 +29,7 @@ int main_bench()
 			   max=h;
 			}
 		}
-	  }printf("%d",max);
+	  }my_printf("%d",max);
 	}
 	return 0;
 }

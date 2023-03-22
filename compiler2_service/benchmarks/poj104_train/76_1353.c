@@ -4,13 +4,13 @@ int main_bench(){
     int N=100000;
     int sum=1;
     int n;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int a[n];
     int b[n];
     int c[n];
     int d[n];
     for(int i=1;i<=n;i++){
-        scanf("%d %d\n",&a[i-1],&b[i-1]);
+        my_scanf("%d %d\n",&a[i-1],&b[i-1]);
         c[i-1]=a[i-1];d[i-1]=b[i-1];
     }
    
@@ -28,7 +28,7 @@ int main_bench(){
         for(int t=(2*c[i-1]-1);t<=(2*d[i-1]-1);t++){sz[t-1]=1;}
     }
     for(int i=(2*left-1);i<=(2*right-1);i++){if(sz[i-1]==0){sum=0;}}
-    if(sum==0){printf("no");}
-    if(sum==1){printf("%d %d",left,right);}
+    if(sum==0){my_printf("no");}
+    if(sum==1){my_printf("%d %d",left,right);}
     return 0;
 }

@@ -5,20 +5,20 @@ int main_bench(){
 	int min(int a[],int n);
 	char s[200][50];
 	int n,i,j,b[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 		b[i]=strlen(s[i]);
 	}
 	for(i=0;i<n;i++){
 		if(b[i]==max(b,n)){
-			printf("%s\n",s[i]);
+			my_printf("%s\n",s[i]);
 			break;
 		}
 	}
 	for(i=0;i<n;i++){
 		if(b[i]==min(b,n)){
-			printf("%s\n",s[i]);
+			my_printf("%s\n",s[i]);
 			break;
 		}
 	}

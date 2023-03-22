@@ -4,7 +4,7 @@ main_bench()
 {
 	char a[100];
 	char b[100];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	int l=strlen(a);
 	int m=0;
 	int i;
@@ -16,13 +16,13 @@ main_bench()
 	b[i]='\0';
 	strcpy(b,b+1);
 	if(b[0]=='\0'||b[0]=='0'&&b[1]=='\0')
-		printf("0\n%d",m);
+		my_printf("0\n%d",m);
 	else if(b[0]=='0')
 	{
 		strcpy(b,b+1);
-		printf("%s\n%d",b,m);
+		my_printf("%s\n%d",b,m);
 	}
 	else
-		printf("%s\n%d",b,m);
+		my_printf("%s\n%d",b,m);
 
 }

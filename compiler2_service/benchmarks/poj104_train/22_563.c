@@ -4,13 +4,13 @@ main_bench()
 {
 	int i,n=1,m1,m2,a[100];
 	char d;
-	scanf("%d",&a[0]);
-	while(scanf("%c",&d),d==',')
+	my_scanf("%d",&a[0]);
+	while(my_scanf("%c",&d),d==',')
 	{
-		scanf("%d",&a[n]);
+		my_scanf("%d",&a[n]);
 		n++;
 	}
-	if (n==1) printf("No");
+	if (n==1) my_printf("No");
 	else
 	{
 		m1=a[0];m2=a[0];
@@ -40,6 +40,6 @@ main_bench()
 			}
 		}
 	
-	if (m1==m2) printf("No");
-	else printf("%d",m2);
+	if (m1==m2) my_printf("No");
+	else my_printf("%d",m2);
 }}

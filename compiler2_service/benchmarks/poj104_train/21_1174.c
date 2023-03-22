@@ -9,10 +9,10 @@ int main_bench()
 	double max=0.0;
 	int b[300]={0};
 	int temp=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{  
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		ave=ave+a[i];
 	}
 	ave=ave/n;
@@ -44,10 +44,10 @@ int main_bench()
 		  }
 		  
 	}
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for (k=1;k<j;k++)
 	{
-		printf(",%d",b[k]);
+		my_printf(",%d",b[k]);
 	}
 	return 0;
 }

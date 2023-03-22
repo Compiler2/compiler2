@@ -5,30 +5,30 @@ int main_bench()
 	int i,n;
 	int count=0,flag=0;
 	char word[40];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word);
+		my_scanf("%s",word);
 		if(count+strlen(word)+1<=80)
 		{
 			if(flag==0)
 			{
-				printf("%s",word);
+				my_printf("%s",word);
 				flag=1;
 				count+=strlen(word);
 			}
 			else
 			{
-				printf(" ");
-				printf("%s",word);
+				my_printf(" ");
+				my_printf("%s",word);
 				count+=strlen(word)+1;
 			}
 			
 		}
 		else
 		{
-			printf("\n");
-			printf("%s",word);
+			my_printf("\n");
+			my_printf("%s",word);
 			count=strlen(word);
 		}
 	}

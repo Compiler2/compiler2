@@ -6,7 +6,7 @@ int main_bench()
 	int sj[9][9];
 
 	int a,n,row,col,r,m,x,y;
-	scanf("%d %d",&a,&n);
+	my_scanf("%d %d",&a,&n);
 	for(row=0;row<9;row++)
 	{
 		for(col=0;col<9;col++)
@@ -48,9 +48,9 @@ int main_bench()
 		{
 			for(y=0;y<8;y++)
 			{
-				printf("%d ",sj[x][y]);
+				my_printf("%d ",sj[x][y]);
 			}
-			printf("%d\n",sj[x][y]);
+			my_printf("%d\n",sj[x][y]);
 		}
 	
 	}
@@ -86,9 +86,9 @@ int main_bench()
 		{
 			for(y=0;y<8;y++)
 			{
-				printf("%d ",sz[x][y]);
+				my_printf("%d ",sz[x][y]);
 			}
-			printf("%d\n",sz[x][y]);
+			my_printf("%d\n",sz[x][y]);
 		}
 
 	}
@@ -126,9 +126,9 @@ int main_bench()
 		{
 			for(y=0;y<8;y++)
 			{
-				printf("%d ",sj[x][y]);
+				my_printf("%d ",sj[x][y]);
 			}
-			printf("%d\n",sj[x][y]);
+			my_printf("%d\n",sj[x][y]);
 		}
 
 	}
@@ -166,9 +166,9 @@ int main_bench()
 		{
 			for(y=0;y<8;y++)
 			{
-				printf("%d ",sz[x][y]);
+				my_printf("%d ",sz[x][y]);
 			}
-			printf("%d\n",sz[x][y]);
+			my_printf("%d\n",sz[x][y]);
 		}
 	
 	}

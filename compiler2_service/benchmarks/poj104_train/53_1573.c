@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a[500],b=1,c,d,f=1,g=0,i=2,j=1,k=1,x=2,y=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(b<=n)
 	{
-		scanf("%d",&a[b]);
+		my_scanf("%d",&a[b]);
 		b++;
 	}
 	b=b-2;
@@ -37,10 +37,10 @@ int main_bench()
 	}
 	while(f<=d+1)
 	{
-		printf("%d",a[f]);
+		my_printf("%d",a[f]);
 		g++;
 		if(g!=d+1)
-			printf(",");
+			my_printf(",");
 		f++;
 	}
 return 0;

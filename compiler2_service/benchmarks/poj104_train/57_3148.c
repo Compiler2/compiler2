@@ -3,11 +3,11 @@
 int main_bench()
 {
   int n,i,j,k;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   char da[n][32];
   for(i=0;i<n;i++)
   {
-	  scanf("%s",da[i]);
+	  my_scanf("%s",da[i]);
   }
   for(i=0;i<n;i++)
   {

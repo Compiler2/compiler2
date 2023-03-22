@@ -5,14 +5,14 @@ int main_bench()
 {
     char a[100][20]={0};
     int n, i, j, flag=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%s",a[i]);
+        my_scanf("%s",a[i]);
     for(i=0;i<n;i++)
     {
         if(a[i][0]>='0'&&a[i][0]<='9')
         {
-            printf("no\n");
+            my_printf("no\n");
             continue;
         }
         for(j=0;j<strlen(a[i]);j++)
@@ -23,14 +23,14 @@ int main_bench()
             }
             else
             {
-                printf("no\n");
+                my_printf("no\n");
                 flag=0;
                 break;
             }
         }
         if(flag==strlen(a[i]))
         {
-            printf("yes\n");
+            my_printf("yes\n");
             flag=0;
         }
     }

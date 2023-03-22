@@ -5,13 +5,13 @@ int main_bench(){
 	int x[5][5],n,m,i,e,c,j,a;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&x[i][j]);
+			my_scanf("%d",&x[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m); 
+	my_scanf("%d %d",&n,&m); 
 	c=hanshu(n,m);
 	if(c==0){
-		printf("error");
+		my_printf("error");
 	}
 	else{
 		for(i=0;i<5;i++){
@@ -22,13 +22,13 @@ int main_bench(){
 		for(a=0;a<5;a++){
 		for(j=0;j<5;j++){
 			if(j<4){
-			printf("%d ",x[a][j]);
+			my_printf("%d ",x[a][j]);
 			}
 			else{
-				printf("%d",x[a][j]);
+				my_printf("%d",x[a][j]);
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	}
 	return 0;

@@ -19,19 +19,19 @@ void  hebing(int d[],int e[],int x,int y)
 {
     int i;
     for(i=0;i<x;i++)
-    printf("%d ",d[i]);
+    my_printf("%d ",d[i]);
     for(i=0;i<y-1;i++)
-    printf("%d ",e[i]);
-    printf("%d",e[y-1]);
+    my_printf("%d ",e[i]);
+    my_printf("%d",e[y-1]);
 }
 int   main_bench()
 {
     int i,j;
-   scanf("%d %d",&n,&m);
+   my_scanf("%d %d",&n,&m);
    for(i=0;i<n;i++)
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
    for(j=0;j<m;j++)
-   scanf("%d",&b[j]);
+   my_scanf("%d",&b[j]);
     sort(a,n);
     sort(b,m);
     hebing(a,b,n,m);

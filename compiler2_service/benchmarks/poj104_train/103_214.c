@@ -25,7 +25,7 @@ int main_bench()
         }
         else
         {
-            printf("(%c,%d)",a[i],j);
+            my_printf("(%c,%d)",a[i],j);
             j=1;
         }
         i=i+1;

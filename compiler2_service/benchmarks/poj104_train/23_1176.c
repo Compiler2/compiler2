@@ -22,20 +22,20 @@ int main_bench()
 			{
 				
                               for(i=0;i<n;i++)
-		            printf("%c",str[i]);
+		            my_printf("%c",str[i]);
 			}
 			else
 			{
 			for(i=b[m-1]+1;i<n;i++)
-		printf("%c",str[i]);
-		printf(" ");
+		my_printf("%c",str[i]);
+		my_printf(" ");
 		for(k=m-1;k>0;k--)
 		{
 			for(i=b[k-1]+1;i<=b[k];i++)
-				printf("%c",str[i]); 
+				my_printf("%c",str[i]); 
 		}
 			for(i=0;i<b[0];i++)
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 			}
 }
 	      

@@ -12,9 +12,9 @@ int main_bench(){
 	a1=0;
 	a2=0;
 	a3=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++){
-		scanf("%d%d%d",&students.nID,&students.nChinese,&students.nMath);
+		my_scanf("%d%d%d",&students.nID,&students.nChinese,&students.nMath);
 		t=students.nChinese+students.nMath;
 		if (t>t1){
 			t3=t2;
@@ -35,8 +35,8 @@ int main_bench(){
 					a3=students.nID;
 				}
 	}
-	printf("%d%s%d\n",a1," ",t1);
-	printf("%d%s%d\n",a2," ",t2);
-	printf("%d%s%d\n",a3," ",t3);
+	my_printf("%d%s%d\n",a1," ",t1);
+	my_printf("%d%s%d\n",a2," ",t2);
+	my_printf("%d%s%d\n",a3," ",t3);
 }
 

@@ -3,9 +3,9 @@
 int main_bench()
 {
    int n,t,e,max,smax; 
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(int i=0;i<n;i++){
-   scanf("%d",&t);
+   my_scanf("%d",&t);
    if(i==0){
    max=t;}
    if(i==1){
@@ -30,6 +30,6 @@ int main_bench()
    }
  }
    }
-   printf("%d\n%d",max,smax);
+   my_printf("%d\n%d",max,smax);
    return 0;
 }

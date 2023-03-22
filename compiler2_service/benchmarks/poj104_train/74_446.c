@@ -33,20 +33,20 @@ int huiwenshu(int num){
 }
 int main_bench(){
 	int m,n,i,t=1,k=1;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<n+1;i++){
 		if(zhishu(i)==1 && huiwenshu(i)==1){
 			if(t){
-				printf("%d",i);
+				my_printf("%d",i);
 				t=0;
 				k=0;
 			}else{
-				printf(",%d",i);
+				my_printf(",%d",i);
 			}
 		}
 	}
 	if(k){
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

@@ -21,8 +21,8 @@ int main_bench(){
 			}
 		
 		}
-		if(c==0) printf("yes\n");
-		else printf("no\n");
+		if(c==0) my_printf("yes\n");
+		else my_printf("no\n");
 	
 	}
 	return 0;

@@ -3,8 +3,8 @@
 main_bench()
 {    char string[502],str[502][6];
      int a[502],x,u,n,v,max,t,p;
-     scanf("%d",&n);
-     scanf("%s",&string);
+     my_scanf("%d",&n);
+     my_scanf("%s",&string);
      x=strlen(string);
       for(u=0;u<x-n+1;u++)
       {
@@ -27,10 +27,10 @@ main_bench()
         }
       
       if(max>1)
-      { printf("%d\n",max);
+      { my_printf("%d\n",max);
         p=1;
         if(a[0]==max&&p==1)
-        printf("%s\n",&str[0]);
+        my_printf("%s\n",&str[0]);
         for(u=1;u<x-n+1;u++)
         {p=0;
          for(v=u-1;v>=0;v--)
@@ -42,9 +42,9 @@ main_bench()
            }
           }
          if(a[u]==max&&p==1)
-         printf("%s\n",&str[u]);
+         my_printf("%s\n",&str[u]);
         }
       }
       if(max==1)
-      printf("NO\n");
+      my_printf("NO\n");
 }

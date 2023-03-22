@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<=4;j++)
 		{
-	        scanf("%d",&a[i][j]);
+	        my_scanf("%d",&a[i][j]);
 			site[i][j]=0;
 		}
 	}
@@ -51,13 +51,13 @@ int main_bench()
 		{
 			if(site[i][j]==1)
 			{
-				printf("%d %d %d\n",i+1,j+1,a[i][j]);
+				my_printf("%d %d %d\n",i+1,j+1,a[i][j]);
 				s++;
 				break;
 			}
 		}
 	}
-	if(s==0) printf("not found");
+	if(s==0) my_printf("not found");
 
 	return 0;
 }

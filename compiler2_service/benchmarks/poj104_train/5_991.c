@@ -4,15 +4,15 @@ int main_bench(){
     double n,p;
     int m,i,j,c=0,q,d=0,f=0,k=0;
     char u[2][1000];
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     for(i=0;i<2;i++){
-    scanf("%s",u[i]);
+    my_scanf("%s",u[i]);
 }
 
 q=strlen(u[1]);
 m=strlen(u[0]);
 if(m!=q){
-         printf("error");
+         my_printf("error");
          return 0;
          }
 
@@ -28,7 +28,7 @@ f++;
 }
 
 if(f!=0){
-printf("error");
+my_printf("error");
 return 0;
 }
 
@@ -40,10 +40,10 @@ c++;
 
 p=(1.0*c)/m;
 if(p>=n){
-        printf("yes");
+        my_printf("yes");
         }
 if(p<n){
-              printf("no");
+              my_printf("no");
               }
               return 0;
               }

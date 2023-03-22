@@ -6,10 +6,10 @@ int main_bench()
 {
 	int n,a[50000],b[50000],c[50000],i,t,temp,sum=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&(a[i]),&(b[i]));
+		my_scanf("%d%d",&(a[i]),&(b[i]));
 		
 		
 	}
@@ -59,11 +59,11 @@ int main_bench()
 	}
 if(sum==b[n-1]-a[0])
 	{
-		printf("%d %d",a[0],c[n-1]);
+		my_printf("%d %d",a[0],c[n-1]);
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	
 

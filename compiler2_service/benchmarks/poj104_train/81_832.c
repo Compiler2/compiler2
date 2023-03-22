@@ -5,13 +5,13 @@ int main_bench(){
 	for(a=0;a<5;a++){
 		for(b=0;b<5;b++){
 			if(b<4){
-				scanf("%d",&sz[a][b]);
+				my_scanf("%d",&sz[a][b]);
 			}else{
-				scanf("%d\n",&sz[a][b]);
+				my_scanf("%d\n",&sz[a][b]);
 			}
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(0<=n&&n<=4&&0<=m&&m<=4){
 		for(b=0;b<5;b++){
 			t=sz[n][b];
@@ -21,14 +21,14 @@ int main_bench(){
 		for(a=0;a<5;a++){
 			for(b=0;b<5;b++){
 				if(b<4){
-					printf("%d ",sz[a][b]);
+					my_printf("%d ",sz[a][b]);
 				}else{
-					printf("%d\n",sz[a][b]);
+					my_printf("%d\n",sz[a][b]);
 				}
 			}
 		}
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int sushu(int b);
 int main_bench(){
 int p;
-scanf("%d",&p);
+my_scanf("%d",&p);
 for(int i=1;i<=12;i++){
 	if((sushu(i)+p)%7==5)
-		printf("%d\n",i);
+		my_printf("%d\n",i);
 }
 return 0;
 	}

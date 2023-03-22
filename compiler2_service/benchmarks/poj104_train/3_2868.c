@@ -4,10 +4,10 @@
 int main_bench()
 {
 int n,k,a[1010],s,i,u=0;
-scanf("%d%d",&n,&k);
+my_scanf("%d%d",&n,&k);
 for (i=0;i<=n-1;i++)
 {
-scanf("%d",&s);
+my_scanf("%d",&s);
 if (s<k)
 {
 a[u]=s;u++;
@@ -19,9 +19,9 @@ for (s=0;s<=i-1;s++)
 {
 if (a[s]==k-a[i])
 {
-printf("yes\n");return 0;
+my_printf("yes\n");return 0;
 }
 }
 }
-printf("no\n");return 0;
+my_printf("no\n");return 0;
 }

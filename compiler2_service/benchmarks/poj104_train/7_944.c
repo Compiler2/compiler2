@@ -36,7 +36,7 @@ i++;
 }
 for(i=0;i<e;i++)
 {
-printf("%c",s[i]);
+my_printf("%c",s[i]);
 }
 return 0;
 } 

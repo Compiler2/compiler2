@@ -17,8 +17,8 @@ int main_bench()
 		if(b[j]>='a'&&b[j]<='z')
 			b[j]=b[j]-32;
 	}
-	if(strcmp(a,b)==0) printf("=");
-	if(strcmp(a,b)>0) printf(">");
-	if(strcmp(a,b)<0) printf("<"); 
+	if(strcmp(a,b)==0) my_printf("=");
+	if(strcmp(a,b)>0) my_printf(">");
+	if(strcmp(a,b)<0) my_printf("<"); 
 	return 0;
 }

@@ -22,22 +22,22 @@ int main_bench()
  {
   for(j=0;j<h;j++)
    {if(a[j]>b[j])
-     {printf(">");break;}
+     {my_printf(">");break;}
     if(a[j]<b[j])
-     {printf("<");break;}
+     {my_printf("<");break;}
     }
    if(j==h)
-   printf("=");
+   my_printf("=");
   }
  if(l<h)
  {
   for(j=0;j<l;j++)
    {if(a[j]>b[j])
-     {printf(">");break;}
+     {my_printf(">");break;}
     if(a[j]<b[j])
-     {printf("<");break;}
+     {my_printf("<");break;}
    }
     if(j==l)
-   printf("=");
+   my_printf("=");
  }
 }

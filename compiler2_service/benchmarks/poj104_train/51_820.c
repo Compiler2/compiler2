@@ -11,7 +11,7 @@ int main_bench()
     struct zimu temp;
     char s[501]={'\0'};
     int n,k,i,j,p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     gets(s);
     k=strlen(s);
@@ -54,17 +54,17 @@ int main_bench()
     }
     if(r[0].b>1)
     {
-    printf("%d\n",r[0].b);
+    my_printf("%d\n",r[0].b);
     for(i=0;i<k+n-1;i++)
     {
                         if(r[i].b==r[0].b)
                         {
-                                          printf("%s\n",r[i].a);
+                                          my_printf("%s\n",r[i].a);
                         }
     }
     }
     else
-    printf("NO");
+    my_printf("NO");
    
   
     return 0;

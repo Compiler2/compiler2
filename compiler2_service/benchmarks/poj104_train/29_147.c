@@ -22,18 +22,18 @@ int k(int n)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
 		int num;
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		double sum=2;
 		for(j=2;j<=num;j++)
 		{
 			sum=sum+((double)k(j)/(double)k(j-1));
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 }
 

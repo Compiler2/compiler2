@@ -4,10 +4,10 @@ int main_bench()
 {
 	char sen[500]={0},hb[500]={0};
 	int n,len,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",sen);
+		my_scanf("%s",sen);
 		len=strlen(sen);                         
 		for(j=0;j<len;j++)
 		{            
@@ -30,9 +30,9 @@ int main_bench()
 		}
 		for(j=0;j<len;j++)
 		{
-			printf("%c",hb[j]);
+			my_printf("%c",hb[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

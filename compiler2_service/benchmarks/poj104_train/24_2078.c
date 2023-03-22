@@ -23,7 +23,7 @@ int main_bench(){
 		if(a[i]>max){max=a[i];max1=i;}
 		if(a[i]<min){min=a[i];min1=i;}
 	}
-	printf("%s\n%s",s[max1],s[min1]);
+	my_printf("%s\n%s",s[max1],s[min1]);
 
 	
 	return 0;

@@ -3,17 +3,17 @@
 int main_bench()
 {
 	int a,b,g,s,h,q,w;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a<10)
 	{
-		printf("%d",a);
+		my_printf("%d",a);
 	}
  if(a<=10&&a<100)
  {
 		g=a/10;
 	    s=a%10;
 		b=10*s+g;
-		printf("%d",b);
+		my_printf("%d",b);
  }
 	 if(a>=100&&a<1000)
 	 {
@@ -22,7 +22,7 @@ int main_bench()
 		s=a/10;
         h=a%10;
 		b=100*h+10*s+g;
-		printf("%d",b);
+		my_printf("%d",b);
 	 }
 	 if(a>=1000&&a<10000)
 	 {
@@ -33,7 +33,7 @@ int main_bench()
 		h=a/10;
 		q=a%10;
 		b=1000*q+100*h+10*s+g;
-		printf("%d",b);
+		my_printf("%d",b);
 	 }
 	 if(a>=10000&&a<100000)
 	 {
@@ -46,7 +46,7 @@ int main_bench()
 		q=a/10;
 		w=a%10;
 		b=10000*w+1000*q+100*h+10*s+g;
-		printf("%d",b);
+		my_printf("%d",b);
 	 }
 return 0;
 }

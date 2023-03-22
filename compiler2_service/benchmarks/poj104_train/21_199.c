@@ -5,13 +5,13 @@ int main_bench()
     int n,i,j;
     int a[100];
     double max,s,p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     max=0;
     s=0;
     j=0;
     for(i=1;i<=n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         s=s+a[i];
     }
     p=s/n;
@@ -22,9 +22,9 @@ int main_bench()
             j=i;
         }
     if (j!=0)
-        printf("%d",a[j]);
+        my_printf("%d",a[j]);
     for(i=1;i<=n;i++)
         if (fabs(p-a[i])==max && i!=j)
-            printf(",%d",a[i]);
+            my_printf(",%d",a[i]);
     return 0;
 }

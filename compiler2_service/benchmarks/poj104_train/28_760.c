@@ -27,9 +27,9 @@ int main_bench()
 	
 	for(k=0;k<s-1;k++)
 	{
-		printf("%d,",*(a+k));
+		my_printf("%d,",*(a+k));
 	}
-	printf("%d",*(a+s-1));
+	my_printf("%d",*(a+s-1));
 }
 
 

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int w , i ,days = 12;
-	scanf("%d" , &w);
+	my_scanf("%d" , &w);
 	for ( i = 1 ; i <= 12 ; i ++)
 	{
 		if ( i == 1)
@@ -16,7 +16,7 @@ int main_bench()
 		else days += 31;
 
 		if ((days+w-5)%7 == 0)
-			printf("%d\n" , i);
+			my_printf("%d\n" , i);
 	}
 
 	return 0;

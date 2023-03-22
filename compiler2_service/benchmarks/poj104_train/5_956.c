@@ -6,12 +6,12 @@ int main_bench()
 	float n;
 	char a[501]={'\0'},b[501]={'\0'};
 	int i,sum=0,m=0;
-	scanf("%f",&n);
+	my_scanf("%f",&n);
 	getchar();
 	gets(a);
 	gets(b);
 	if(strlen(a)!=strlen(b))
-	printf("error\n");
+	my_printf("error\n");
 	else
 	{
 		for(i=0;a[i]!='\0';i++)
@@ -26,7 +26,7 @@ int main_bench()
 			}
 			else
 			{
-				printf("error\n");
+				my_printf("error\n");
 				m=1;
 				break;
 			}
@@ -34,9 +34,9 @@ int main_bench()
 		if(m==0)
 		{
 			if(((float)sum/strlen(a))>n)
-			printf("yes\n");
+			my_printf("yes\n");
 			else
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

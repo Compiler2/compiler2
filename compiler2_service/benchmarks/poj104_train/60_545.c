@@ -11,13 +11,13 @@ int su(int x)
 main_bench()
 {
 	int i,n,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i+2<=n;i++)
 		if(su(i)==1&&su(i+2)==1)
 		{
 			z++;
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		}
 	if(z==0)
-		printf("empty");
+		my_printf("empty");
 }

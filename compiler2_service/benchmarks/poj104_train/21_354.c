@@ -58,10 +58,10 @@ int main_bench()
 	float b[300][2]={0};
 	int n, i, count;
 	float average;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%f", &a[i][0]);
+		my_scanf("%f", &a[i][0]);
 		sum=sum+a[i][0];
 	}
 	average=(float)sum/n;
@@ -76,10 +76,10 @@ int main_bench()
 	for(i=0; i<count; i++)
 	{
 		if(i==0)
-			printf("%.0f", b[i][0]);
+			my_printf("%.0f", b[i][0]);
 		else
-			printf(",%.0f", b[i][0]);
+			my_printf(",%.0f", b[i][0]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

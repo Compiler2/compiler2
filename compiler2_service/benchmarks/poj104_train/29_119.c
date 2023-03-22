@@ -3,9 +3,9 @@
 int main_bench(){
   int m,i,j,n,w;
   double sum[100];
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(i=0;i<m;i++){
-    scanf("%d",&j);
+    my_scanf("%d",&j);
     n=j;
 if(n==1){
     sum[i]=2.0/1;}
@@ -20,7 +20,7 @@ else if(n>=2){sum[i]=2.0/1+3.0/2;}
       sz2[w]=sz2[w-1]+sz2[w-2];
       sum[i]=sum[i]+sz1[w]/sz2[w];
       }
-    printf("%.3lf\n",sum[i]);
+    my_printf("%.3lf\n",sum[i]);
 }
     return 0;
 } 

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int c[100];
 	int i=0;
 	for(i=0;i<n;i++){
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	}
 	int j=2;
 	int x=0;
@@ -31,7 +31,7 @@ int main_bench(){
 		}
 	}
 	
-	printf("%d\n%d\n", x,y);
+	my_printf("%d\n%d\n", x,y);
 	return 0;
 }
 

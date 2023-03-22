@@ -5,9 +5,9 @@ int main_bench()
 	int i,j,k,a=0,l=0;
 	double m,n;
 	char zf[2][10000];
-	scanf("%lf",&m);
-	scanf("%s",zf[0]);
-	scanf("%s",zf[1]);
+	my_scanf("%lf",&m);
+	my_scanf("%s",zf[0]);
+	my_scanf("%s",zf[1]);
 	j=strlen(zf[0]);
 	k=strlen(zf[1]);
 	for(i=0;zf[0][i]!='\0'&&zf[1][i]!='\0';i++)
@@ -19,7 +19,7 @@ int main_bench()
 	}
 	if(j!=k||l>0)
 	{
-		printf("error");
+		my_printf("error");
 	}else
 	{
 		for(i=0;zf[0][i]!='\0';i++)
@@ -32,10 +32,10 @@ int main_bench()
 			n=1.0*a/j;
 			if(n>=m)
 			{
-				printf("yes");
+				my_printf("yes");
 			}else
 			{
-				printf("no");
+				my_printf("no");
 			}
 	}
 

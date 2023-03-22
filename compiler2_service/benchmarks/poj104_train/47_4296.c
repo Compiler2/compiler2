@@ -5,10 +5,10 @@ int main_bench()
 	int i,j,k,m,n;
 	int*p;
 	p=(int*)malloc(200*sizeof(int));
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
 	for(i=0;i<n/2;i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for(i=0;i<n-1;i++)
 	{
-		printf("%d ",*(p+i));
+		my_printf("%d ",*(p+i));
 	}
-	printf("%d",*(p+n-1));
+	my_printf("%d",*(p+n-1));
 }

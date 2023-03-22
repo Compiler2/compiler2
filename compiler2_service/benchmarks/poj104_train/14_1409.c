@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,ta,tb,ts,tnum;
 	int	*a,*b,*s,*num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(int*)malloc(sizeof(int)*n);
 	b=(int*)malloc(sizeof(int)*n);
 	s=(int*)malloc(sizeof(int)*n);
@@ -12,7 +12,7 @@ int main_bench()
 	
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%d%d",&num[i],&a[i],&b[i]);
+		my_scanf("%d%d%d",&num[i],&a[i],&b[i]);
 		s[i]=a[i]+b[i];
     }
     for(j=0;j<3;j++){
@@ -25,6 +25,6 @@ int main_bench()
 		}
 		}		
 	}
-    printf("%d %d\n%d %d\n%d %d\n",num[1],s[1],num[2],s[2],num[3],s[3]);
+    my_printf("%d %d\n%d %d\n%d %d\n",num[1],s[1],num[2],s[2],num[3],s[3]);
 	return 0;
 }

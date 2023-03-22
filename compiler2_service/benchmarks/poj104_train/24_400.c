@@ -51,7 +51,7 @@ int main_bench()
 		k++;
 	}
 	s[k]='\0';
-	printf("%s\n%s\n",l,s);
+	my_printf("%s\n%s\n",l,s);
 	return 0;
 }
 

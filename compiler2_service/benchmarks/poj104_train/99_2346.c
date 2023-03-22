@@ -5,12 +5,12 @@ int main_bench()
 	int n,i;
 	int a=0,b=0,c=0,d=0;
 	double rate[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *age=(int *)malloc(sizeof(int)*n);
 	
 	for(i=0;i<n;i++)
 	{
-			scanf("%d",&(age[i]));
+			my_scanf("%d",&(age[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -27,10 +27,10 @@ int main_bench()
 	rate[1]=(double)b/(double)n*100;
 	rate[2]=(double)c/(double)n*100;
 	rate[3]=(double)d/(double)n*100;
-    printf("1-18: %.2lf%%\n",rate[0]);
-    printf("19-35: %.2lf%%\n",rate[1]);
-    printf("36-60: %.2lf%%\n",rate[2]);
-    printf("60??: %.2lf%%\n",rate[3]);
+    my_printf("1-18: %.2lf%%\n",rate[0]);
+    my_printf("19-35: %.2lf%%\n",rate[1]);
+    my_printf("36-60: %.2lf%%\n",rate[2]);
+    my_printf("60??: %.2lf%%\n",rate[3]);
 	free(age);
 	return 0;
 }

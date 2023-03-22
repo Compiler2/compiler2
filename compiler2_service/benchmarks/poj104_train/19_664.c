@@ -41,7 +41,7 @@ int main_bench()
 	}
 	for(i=0;i<ls;i++)
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
 	return 0;
 }

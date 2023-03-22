@@ -12,7 +12,7 @@ int su(int p)
 main_bench()
 {
 int m,i,j,k;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for (i=3;i<m/2+1;i++)
- if ((su(i)==1)&&(su(m-i)==1)) printf("%d %d\n",i,m-i);
+ if ((su(i)==1)&&(su(m-i)==1)) my_printf("%d %d\n",i,m-i);
  }

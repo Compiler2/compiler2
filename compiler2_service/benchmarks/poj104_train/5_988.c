@@ -6,7 +6,7 @@ int main_bench(){
     double m,w;
     n=0;
     r=0;
-    scanf("%lf %s %s",&m,a,b);
+    my_scanf("%lf %s %s",&m,a,b);
     q=strlen(a);
     e=strlen(b);
     for(i=0;a[i]!='\0';i++){
@@ -20,7 +20,7 @@ int main_bench(){
         }
     }
     if(q!=e||r!=0){
-        printf("error");
+        my_printf("error");
     }
     else{
     for(i=0;a[i]!='\0';i++){
@@ -31,10 +31,10 @@ int main_bench(){
     }
     w=1.0*n/q;
     if(w>m){
-        printf("yes");
+        my_printf("yes");
     }
     else{
-        printf("no");
+        my_printf("no");
     }
     }
     return 0;

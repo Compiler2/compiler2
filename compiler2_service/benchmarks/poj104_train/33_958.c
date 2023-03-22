@@ -7,23 +7,23 @@ void f(char s[260],int n)
 	{
 		switch(s[i])
 		{
-		case 'A':printf("T");
+		case 'A':my_printf("T");
 			     break;
-		case 'T':printf("A");
+		case 'T':my_printf("A");
 			     break;
-		case 'G':printf("C");
+		case 'G':my_printf("C");
 			     break;
-		case 'C':printf("G");
+		case 'C':my_printf("G");
 			     break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }
 int main_bench()
 {
 	int t,n,i;
 	char s[260];
-	scanf("%d\n",&t);
+	my_scanf("%d\n",&t);
 	for(i=0;i<t;i++)
 	{
 		gets(s);

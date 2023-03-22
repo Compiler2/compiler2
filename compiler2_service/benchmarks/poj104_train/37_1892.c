@@ -3,11 +3,11 @@
 main_bench()
 {int t,i,j,k=0,z,y,m=0,c[100000];
 	char s[100000];
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	for(z=0;z<y;z++)
 {
 	m=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	
 	 
 	for(i=0;s[i];i++)c[i]=0;
@@ -23,9 +23,9 @@ main_bench()
 	for(i=0;s[i];i++)
 	{
 		if(c[i]==1) {
-		printf("%c\n",s[i]);m++;break;}
+		my_printf("%c\n",s[i]);m++;break;}
 	}
-	if(m==0)printf("no\n");
+	if(m==0)my_printf("no\n");
  
 }
 }

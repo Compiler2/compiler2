@@ -19,13 +19,13 @@ for(i=0;i<n;i++){
 			}
 		}
 		if(m==0){
-			printf("%c\n",z[j]);
+			my_printf("%c\n",z[j]);
 			b=1;
 			break;
 		}
 	}
 	   if(b==0){
-	    	printf("no\n");
+	    	my_printf("no\n");
 	   }
 
 }

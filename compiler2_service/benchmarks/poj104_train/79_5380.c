@@ -25,9 +25,9 @@ int remain(int start[],int n,int m)
 int main_bench()
 {
 	int k,n[100],m[100],i,j;
-	scanf("%d %d",&n[0],&m[0]);
+	my_scanf("%d %d",&n[0],&m[0]);
 	for(k=1;n[k-1]!=0&&m[k-1]!=0;k++)
-		scanf("%d %d",&n[k],&m[k]);
+		my_scanf("%d %d",&n[k],&m[k]);
 	int a[100][100];
 	for(j=0;j<k-1;j++)
 	{
@@ -35,6 +35,6 @@ int main_bench()
 			a[j][i]=1;
 	}
 	for(i=0;i<k-1;i++)
-		printf("%d\n",remain(a[i],n[i],m[i]));
+		my_printf("%d\n",remain(a[i],n[i],m[i]));
 	return(0);
 }

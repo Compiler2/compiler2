@@ -6,8 +6,8 @@ int main_bench()
 	char c[300],a[500][5]={'\0'},(*p)[5],*q;
 	int n,s,i,j,k;
 	int max[500]={0},da=0;
-	scanf("%d",&n);
-	scanf("%s",c);
+	my_scanf("%d",&n);
+	my_scanf("%s",c);
 	p=a;q=c;
 	for(s=0;*q!='\0';q++)
 		s++;
@@ -33,14 +33,14 @@ int main_bench()
 			da=max[i];
 	}
 	if(da==0)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",da+1);
+		my_printf("%d\n",da+1);
 		for(i=0;i<k;i++)
 		{
 			if(da==max[i])
-				printf("%s\n",a[i]);
+				my_printf("%s\n",a[i]);
 		}
 	}
 	return 0;

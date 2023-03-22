@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year,month,day;
 	int sum=0;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	switch(month)
 	{
 	    case 1:sum=day;break;
@@ -21,6 +21,6 @@ int main_bench()
 		case 12:sum=31+28+31+30+31+30+31+31+30+31+31+day;break;
 	}
     if(month>2&&((year%4==0&&year%100!=0)||year%400==0))sum=sum+1;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

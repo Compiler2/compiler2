@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,k,n,m;
 	char a[200],b[200]={'0'},*kuoh[200];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(k=0;k<n;k++){
 		gets(a);
 		m=strlen(a);

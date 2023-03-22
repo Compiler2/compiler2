@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int startYear,startMonth,startDay,endYear,endMonth,endDay,y,a,n,m,b,b2,x;
-	scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);
+	my_scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);
     y=startYear;
 	a=0;
 	while(y<=endYear)
@@ -134,5 +134,5 @@ int main_bench()
 	}
 
 	x=366-b-startDay+b2+endDay+366*a+(endYear-startYear-1-a)*365;
-    printf("%d",x);
+    my_printf("%d",x);
 }

@@ -7,7 +7,7 @@ void pp(int s[],int ss[],int m,int n);
 int m,n;
 int s[100]={0};
 int ss[100]={0};
-scanf("%d %d\n",&m,&n);
+my_scanf("%d %d\n",&m,&n);
 st(s,m);
 st(ss,n);
 cha(s,m);
@@ -18,7 +18,7 @@ return 0;
 void st(int k[],int i)
 {int j;
 for(j=1;j<=i;j++)
-scanf("%d",&k[j]);
+my_scanf("%d",&k[j]);
 }
 void cha(int k[],int i)
 {int j,m,temp;
@@ -31,11 +31,11 @@ for(j=1;j<i;j++)
 }
 void pp(int s[],int ss[],int m,int n)
 {int i=2;
-	printf("%d",s[1]);
+	my_printf("%d",s[1]);
 for(i=2;i<=m+n;i++)
 {if(i<=m)
-printf(" %d",s[i]);
+my_printf(" %d",s[i]);
 else 
-printf(" %d",ss[i-m]);
+my_printf(" %d",ss[i-m]);
 }
 }

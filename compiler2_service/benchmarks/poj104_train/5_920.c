@@ -3,10 +3,10 @@
 int main_bench(){
 double n;
 int i;
-scanf("%lf",&n);
+my_scanf("%lf",&n);
 char sza[600],szb[600];
-scanf("%s",sza);
-scanf("%s",szb);
+my_scanf("%s",sza);
+my_scanf("%s",szb);
 int a=0;
 int b=strlen(sza);
 int c=strlen(szb);
@@ -23,7 +23,7 @@ for(i=0;i<b;i++){
 double d=0;
 double e;
 if(a==1){
-  printf("error");
+  my_printf("error");
 }else{
 	for(i=0;i<b;i++){
 		if(sza[i]==szb[i]){
@@ -32,9 +32,9 @@ if(a==1){
 	}
     e=d/b;
 	if(e>n){
-	  printf("yes");
+	  my_printf("yes");
 	}else{
-	  printf("no");
+	  my_printf("no");
 	}
 }
 return 0;

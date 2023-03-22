@@ -5,8 +5,8 @@ int common(int a,int b);
 int main_bench()
 {
     int x,y;
-	scanf("%d %d",&x,&y);
-	printf("%d",common(x,y));
+	my_scanf("%d %d",&x,&y);
+	my_printf("%d",common(x,y));
 }
 int common(int a,int b)
 {

@@ -17,11 +17,11 @@ int main_bench()
                       if(i%2==0)a[i]=a[i-1]+31;
                       else a[i]=a[i-1]+30;
      }
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      n=6-n%7;
      for(i=0;i<12;i++)
      {
-                      if(a[i]%7==n)printf("%d\n",i+1);
+                      if(a[i]%7==n)my_printf("%d\n",i+1);
                       else ;
      }
      return 0;

@@ -8,10 +8,10 @@ int main_bench(){
 	int sum;
 	char a;
 	int std=0;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(k=1;k<=t;k++){
 		std=0;
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
         len=strlen(zfc);
 		for(i=0;i<len;i++){
 			if(zfc[i]=='0'){
@@ -26,13 +26,13 @@ int main_bench(){
 				}
 			}
 			if(sum==1){
-				printf("%c\n",a);
+				my_printf("%c\n",a);
                 std=1;
 				break;
 			}
 		}
 		if(std==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

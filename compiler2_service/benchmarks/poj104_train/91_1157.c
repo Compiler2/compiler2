@@ -15,6 +15,6 @@ int main_bench()
   }
   a[strlen(a)-1]=a[strlen(a)-1]+b;
   for (i=0;i<=strlen(a)-1;i++)
-      printf("%c",a[i]);
+      my_printf("%c",a[i]);
   return 0;
 }

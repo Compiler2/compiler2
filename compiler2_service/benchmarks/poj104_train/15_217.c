@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,i,k,line=0,row=0,mianji;
 	int p[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(k=0;k<n;k++)
-			scanf("%d",&p[i][k]);
+			my_scanf("%d",&p[i][k]);
 		
 	}
 
@@ -31,7 +31,7 @@ int main_bench()
 		}
 	}
 	mianji=(line/2-1)*(row/2-1);
-	printf("%d",mianji);
+	my_printf("%d",mianji);
 	return 0;
 }
 

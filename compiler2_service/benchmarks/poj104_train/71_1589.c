@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,total1[200],total2[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int year[200],mon1[200],mon2[200];
 	for(i=0;i<n;i++){
-    scanf("%d %d %d",&(year[i]),&(mon1[i]),&(mon2[i]));
+    my_scanf("%d %d %d",&(year[i]),&(mon1[i]),&(mon2[i]));
 }
 	for(i=0;i<n;i++){
  total1[i]=0;
@@ -45,9 +45,9 @@ int main_bench()
 }
     for(i=0;i<n;i++){
     if((total1[i]-total2[i])%7==0)
-    printf("YES\n");
+    my_printf("YES\n");
     else
-    printf("NO\n");
+    my_printf("NO\n");
 
 }
     return 0;

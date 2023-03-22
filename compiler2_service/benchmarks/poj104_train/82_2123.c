@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[100];
 int b[100];
 for(int i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 }
 int s[100];
 for(int m=0;m<n;m++){
@@ -29,6 +29,6 @@ if(s[p]>=max){
 max=s[p];
 }
 }
-printf("%d",max);
+my_printf("%d",max);
 return 0;
 }

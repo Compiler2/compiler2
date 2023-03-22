@@ -5,20 +5,20 @@ int main_bench()
 {
 	int matrix[5][5],*p;
 	for(p=matrix[0];p-matrix[0]<25;p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 	if(exchange(matrix))
 	{
 		for(p=matrix[0];p-matrix[0]<25;p++)
-			printf("%d%c",*p,(p-matrix[0]+1)%5?' ':'\n');
+			my_printf("%d%c",*p,(p-matrix[0]+1)%5?' ':'\n');
 	}
 	else
-		printf("error\n");
+		my_printf("error\n");
 	return 0;             
 }                         
 int exchange(int (*matrix)[5])
 {
 	int n,m;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(n<0||n>4||m<0||m>4)
 		return 0;
 	else

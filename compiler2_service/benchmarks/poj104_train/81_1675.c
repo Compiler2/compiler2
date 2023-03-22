@@ -7,10 +7,10 @@
     for(int i=0;i<5;i++)
     {
         for (int k=0;k<5;k++)
-        scanf("%d",&(sz[i][k]));
+        my_scanf("%d",&(sz[i][k]));
     }
     int m,n;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     if(m<=4&&m>=0&&n<=4&&n>=0)
     {
         for(int i=0;i<5;i++)
@@ -25,18 +25,18 @@
             {
                 if(k==4)
                 {
-                    printf("%d\n",sz[i][k]);
+                    my_printf("%d\n",sz[i][k]);
                 }
                 else
                 {
-                    printf("%d ",sz[i][k]);
+                    my_printf("%d ",sz[i][k]);
                 }
             }
         }
     }
     else
     {
-        printf("error");
+        my_printf("error");
     }
     return 0;
 }

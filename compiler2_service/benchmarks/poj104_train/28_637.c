@@ -12,7 +12,7 @@ main_bench()
 		{
 			i++;
 		}
-		printf("%d",i);
+		my_printf("%d",i);
 		while(i<=l-1)
 		{
 			if(str[i]==' '&&str[i+1]!=' '&&i<=l-2)
@@ -23,13 +23,13 @@ main_bench()
 					num++;
 					i++;
 				}
-				printf(",%d",num);
+				my_printf(",%d",num);
 				num=0;
 				i--;
 			}
 			i++;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	else
 	{
@@ -43,7 +43,7 @@ main_bench()
 			num++;
 			i++;
 		}
-		printf("%d",num);
+		my_printf("%d",num);
 		i--;
 		num=0;
 		while(i<=l-1)
@@ -56,12 +56,12 @@ main_bench()
 					num++;
 					i++;
 				}
-				printf(",%d",num);
+				my_printf(",%d",num);
 				num=0;
 				i--;
 			}
 			i++;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

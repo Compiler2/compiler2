@@ -6,9 +6,9 @@ int main_bench()
 { 
 	int n,j,m;
 	int year[200],month[200][2],a[200];
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	for(m=0;m<n;m++){
-		scanf("%d %d %d",&year[m],&month[m][0],&month[m][1]);
+		my_scanf("%d %d %d",&year[m],&month[m][0],&month[m][1]);
 		if((DI(year[m],month[m][1])-DI(year[m],month[m][0]))%7==0)
 			a[m]=1;
 		else 
@@ -16,9 +16,9 @@ int main_bench()
 	}	
 	for( j=0;j<n;j++){
 		if(a[j]==1)
-	printf("YES\n");
+	my_printf("YES\n");
 		else
-	printf("NO\n");}
+	my_printf("NO\n");}
 return 0;
 }
 

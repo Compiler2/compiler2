@@ -3,17 +3,17 @@
 int ss(int x);
 int main_bench(){
 	int n,j,a,b,c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=3;j<n-1;j+=2){
 		a=ss(j);
 		b=ss(j+2);
 		if(a>0&&b>0){
-			printf("%d %d\n",j,j+2);
+			my_printf("%d %d\n",j,j+2);
 			c++;
 		}
 	}
 	if(c==0){
-		printf("empty");
+		my_printf("empty");
 	}
 
   	return 0;

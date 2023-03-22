@@ -20,20 +20,20 @@ int main_bench()
 	int shuzu[5][5],i,j,n,m,t;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	t=huanhang(shuzu,n,m);
 	if(t==0){
-		printf("error");
+		my_printf("error");
 	}
 	if(t==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<4;j++){
-				printf("%d ",shuzu[i][j]);
+				my_printf("%d ",shuzu[i][j]);
 			}
-			printf("%d\n",shuzu[i][4]);
+			my_printf("%d\n",shuzu[i][4]);
 		}
 	}
 	return 0;

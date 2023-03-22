@@ -4,17 +4,17 @@ int main_bench()
 {
 int i,n;
 int num [100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 i=0;
 while(i<n){
-	scanf("%d",&num [i]);
+	my_scanf("%d",&num [i]);
 	i++;
 }
 i=n-1;
 while(i>0){
-	printf("%d ",num [i]);
+	my_printf("%d ",num [i]);
 	i--;
 }
-printf("%d",num [0]);
+my_printf("%d",num [0]);
 return 0;
 }

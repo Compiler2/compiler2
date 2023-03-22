@@ -9,11 +9,11 @@ main_bench()
  zhuan(b);
  int i,j=0,m,n;
  for(i=0;(a[i]!='\0')&&(b[i]!='\0');i++)
-   {if(a[i]>b[i]) {printf(">");j=1;break;}
-    else if(a[i]<b[i]) {printf("<");j=1;break;}
+   {if(a[i]>b[i]) {my_printf(">");j=1;break;}
+    else if(a[i]<b[i]) {my_printf("<");j=1;break;}
     else if(a[i]==b[i]) continue;
    }
- if(j==0) printf("=");
+ if(j==0) my_printf("=");
 
 
 }

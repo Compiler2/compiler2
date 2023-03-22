@@ -2,7 +2,7 @@
 
 int main_bench()
 {
-	int N;scanf("%d",&N);
+	int N;my_scanf("%d",&N);
 	getchar();
 	char str[550];
 	gets(str);
@@ -28,9 +28,9 @@ int main_bench()
 	}
 	if(max==1)
 	{
-		printf("NO");return 0;
+		my_printf("NO");return 0;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(int i=0;i<=strl-N;i++) if(max==strn[i]) puts(strm[i]);
 	return 0;
 }

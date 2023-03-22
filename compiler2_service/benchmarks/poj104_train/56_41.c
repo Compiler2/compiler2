@@ -4,12 +4,12 @@
 int main_bench()
 {
     int a,b,c,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n/100;
 	b=(n-100*a)/10;
 	c=n-100*a-10*b;
 	int m;
 	m=100*c+10*b+a;
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	return 0;
 }

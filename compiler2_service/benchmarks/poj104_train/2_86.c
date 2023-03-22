@@ -10,9 +10,9 @@ int main_bench()
 	}book[999];
 	int author1[30]={0}, author2[30]={0};
 	char k;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=0;i<m;i++)
-		scanf("%d %s", &book[i].no, &book[i].name);
+		my_scanf("%d %s", &book[i].no, &book[i].name);
 	for(i=0;i<m;i++){
 		a = strlen(book[i].name);
 		for(j=0;j<a;j++){
@@ -36,13 +36,13 @@ int main_bench()
 	}
 	for(i=0;i<26;i++){
 		if(author2[i] == author1[0]){
-			printf("%c\n", (char)(65+i));
-			printf("%d\n", author1[0]);
+			my_printf("%c\n", (char)(65+i));
+			my_printf("%d\n", author1[0]);
 			for(j=0;j<m;j++){
 				a = strlen(book[j].name);
 				for(n=0;n<a;n++){
 					if(book[j].name[n]==(char)(65+i)){
-						printf("%d\n", book[j].no);
+						my_printf("%d\n", book[j].no);
 						break;
 					}
 				}

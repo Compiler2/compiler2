@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,row,col;
 	int sz[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 		for(col=0;col<n;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	int a=0;
@@ -44,6 +44,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

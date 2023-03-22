@@ -4,11 +4,11 @@ int main_bench()
 {
 	int m,n,i,j,k;
 	char s[100],t[100],p[100],q[10];
-	scanf("%s%s",s,t);
+	my_scanf("%s%s",s,t);
 	m=strlen(s);
 	n=strlen(t);
 	if(m!=n)
-		printf("NO");
+		my_printf("NO");
 	else 
 	{
 		for(i=0;i<n;i++)
@@ -22,10 +22,10 @@ int main_bench()
 				else k++;
 			}
 			if(k==n)
-			{printf("NO");break;}
+			{my_printf("NO");break;}
 			else j++;
 		}
 		if(j==m)
-			printf("YES");
+			my_printf("YES");
 	}
 }

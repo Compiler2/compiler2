@@ -3,7 +3,7 @@
 int main_bench(){
 	char s[110],a[110],b[110];
 	gets(s);
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int n=strlen(s);
 	int na=strlen(a);
 	int i,j,ans[30],c=0;
@@ -27,18 +27,18 @@ int main_bench(){
 	}
 
 	if(c==0)
-		printf("%s",s);
+		my_printf("%s",s);
 	else{
 		int p=0;
 		for(i=0;i<=c-1;i++){
 			for(j=p;j<ans[i];j++){
-				printf("%c",s[j]);
+				my_printf("%c",s[j]);
 			}
-			printf("%s",b);
+			my_printf("%s",b);
 			p=ans[i]+na;
 		}
 		for(j=p;j<n;j++){
-			printf("%c",s[j]);
+			my_printf("%c",s[j]);
 		}
 	}
 }

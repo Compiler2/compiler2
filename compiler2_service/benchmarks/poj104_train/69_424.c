@@ -38,9 +38,9 @@ main_bench()
       if(i==n+1)
       break;
       if(i==n+1)
-      printf("0");
+      my_printf("0");
       for(;i<n+1;i=i+1)
-      printf("%c",a[i]+'0');
+      my_printf("%c",a[i]+'0');
       
       
       
@@ -71,7 +71,7 @@ main_bench()
       ;
       
       for(;i<m+1;i=i+1)
-      printf("%c",b[i]+'0');
+      my_printf("%c",b[i]+'0');
       
       }
    

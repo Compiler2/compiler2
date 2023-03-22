@@ -8,9 +8,9 @@ int main_bench()
 	float temp;
 	float max1,max2;
 	float a,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%f",&num[i]);
+		my_scanf("%f",&num[i]);
 	for(i=0;i<n;i++)
 		sum=sum+num[i];
 	a=sum/(float)n;
@@ -37,10 +37,10 @@ int main_bench()
 			max2=num[i];
 	}
 	if((a-max1)==(max2-a))
-		printf("%.0f,%.0f",max1,max2);
+		my_printf("%.0f,%.0f",max1,max2);
 	else if((a-max1)>(max2-a))
-		printf("%.0f",max1);
+		my_printf("%.0f",max1);
 	else
-		printf("%.0f",max2);
+		my_printf("%.0f",max2);
 	
 }

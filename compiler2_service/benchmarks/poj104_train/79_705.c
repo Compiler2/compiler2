@@ -4,7 +4,7 @@ int main_bench()
 {
  int a[300];
  int c,p,i,j,k,n,m;
- while(scanf("%d%d",&n,&m)&&n!=0&&m!=0)
+ while(my_scanf("%d%d",&n,&m)&&n!=0&&m!=0)
   {
     for(i=0;i<n;i++) a[i]=1;
     p=0;
@@ -21,5 +21,5 @@ int main_bench()
             {p=(p+n-1)%n;
              p++;}
          }
-      printf("%d\n",p);
+      my_printf("%d\n",p);
 }}

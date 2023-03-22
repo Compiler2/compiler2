@@ -4,11 +4,11 @@ main_bench()
 {
 char s[100000];
 int t0,t;
-scanf("%d",&t);
+my_scanf("%d",&t);
 for(t0=1;t0<=t;t0++)
 {
   int i,j1,j2,k,m=0;
-  scanf("%s",s);
+  my_scanf("%s",s);
   k=strlen(s);
   int a[k];
   memset(a,0,4*k);
@@ -26,7 +26,7 @@ for(t0=1;t0<=t;t0++)
           {  m++;  break;  }   
       }
       
-  if(m==0)  printf("no\n"); 
-  else      printf("%c\n",s[i]); 
+  if(m==0)  my_printf("no\n"); 
+  else      my_printf("%c\n",s[i]); 
 }     
 }

@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int m,n,i,k;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	float b[9999],as[9999],c;
 	for(k=0;k<m;k++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		as[0]=1;
 		as[1]=2;
 		c=0;
@@ -14,6 +14,6 @@ int main_bench(){
 			b[i]=as[i+1]/as[i];
 			c+=b[i];
 		}
-		printf("%.3f\n",c);
+		my_printf("%.3f\n",c);
 	}return 0;
 }

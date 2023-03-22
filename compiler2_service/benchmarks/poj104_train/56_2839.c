@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,m=0,a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n!=a){
 		a=n%10;
 		if(a==n)
@@ -13,6 +13,6 @@ int main_bench(){
 		n=n/10;
 	}
 	m=m+a;
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

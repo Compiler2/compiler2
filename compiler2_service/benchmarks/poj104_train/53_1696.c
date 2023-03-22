@@ -3,12 +3,12 @@
 int main_bench()
 {
        int n;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        int list1[300];
        int list2[300];
        int i,j,count=0;
        for(i=0;i<n;i++)
-         scanf("%d",&list1[i]);
+         my_scanf("%d",&list1[i]);
 
        for(i=0;i<n-1;i++)
 		if(list1[i]==0)
@@ -28,7 +28,7 @@ int main_bench()
        }
                  
        for(i=0;i<count-1;i++)
-                  printf("%d,",list1[list2[i]]);
-       printf("%d",list1[list2[count-1]]);
+                  my_printf("%d,",list1[list2[i]]);
+       my_printf("%d",list1[list2[count-1]]);
        return 0;
 }

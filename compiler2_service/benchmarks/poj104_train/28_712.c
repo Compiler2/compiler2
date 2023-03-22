@@ -20,7 +20,7 @@ for(j=0;j<=len;j++)
      i++;
      a=strlen(temp);
      if(a!=0)
-     printf("%d,",a);
+     my_printf("%d,",a);
      k=0;
    }
    if(str[j]=='\0')
@@ -33,7 +33,7 @@ for(j=0;j<=len;j++)
      }
      temp[k]='\0';
      a=strlen(temp);
-     printf("%d",a);
+     my_printf("%d",a);
    }
 }
 return 0;

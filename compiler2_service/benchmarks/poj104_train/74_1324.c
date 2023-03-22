@@ -21,18 +21,18 @@ int su(int n)
 int main_bench()
 {
 	int m,n,i,j,t;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		t=0;
 		if(i%2==1&&judge(i)==i&&su(i))
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 		    for(j=i+1;j<=n;j++)
 			{
 			    if(j%2==1&&judge(j)==j&&su(j)) t++;
 			}
-		    if(t>0) printf(",");
+		    if(t>0) my_printf(",");
 		}
 	}
 	t=0;
@@ -40,5 +40,5 @@ int main_bench()
 	{
 		if(i%2==1&&judge(i)==i&&su(i)) t++;
 	}
-	if(t==0) printf("no");
+	if(t==0) my_printf("no");
 }

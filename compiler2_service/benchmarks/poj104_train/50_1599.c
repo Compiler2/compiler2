@@ -20,7 +20,7 @@ int main_bench()
 {
 	int w,i,t,a;
 
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 
 	for(i=1;i<=12;i++){
 		t=0;
@@ -31,7 +31,7 @@ int main_bench()
 			a=a-7;	
 		}
 		if(a==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

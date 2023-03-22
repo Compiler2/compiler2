@@ -24,10 +24,10 @@ int main_bench()
 {
 	int n,i,j=0,a[305];
 	float aver=0,x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
          aver+=a[i];
     }
     aver/=n;
@@ -36,10 +36,10 @@ int main_bench()
     y=a[n-1]-aver;
     if(x-y>0.01)
     {
-        printf("%d",a[0]);
+        my_printf("%d",a[0]);
         for(i=1;i<n;i++)
         {
-             if(a[i]==a[0]) printf(",%d",a[i]);
+             if(a[i]==a[0]) my_printf(",%d",a[i]);
              else break;
         }
     }
@@ -49,20 +49,20 @@ int main_bench()
         {
              if(a[i]==a[n-1])
              {
-                  printf("%d",a[i]);
+                  my_printf("%d",a[i]);
                   break;
              }
         }
         if(i!=n-1)
         {
         for(i=i+1;i<n;i++)
-             if(a[i]==a[n-1]) printf(",%d",a[i]);
+             if(a[i]==a[n-1]) my_printf(",%d",a[i]);
         }
     }
     if(fabs(x-y)<1e-6)
     {
-        printf("%d",a[0]);
+        my_printf("%d",a[0]);
         for(i=1;i<n;i++)
-            if(a[i]==a[0]||a[i]==a[n-1]) printf(",%d",a[i]);
+            if(a[i]==a[0]||a[i]==a[n-1]) my_printf(",%d",a[i]);
     }
 }

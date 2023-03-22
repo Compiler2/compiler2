@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,age[100],i,j;
 	char id[100][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int k=0;
 	char shuchu[100][10];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",id[i],&age[i]);
+		my_scanf("%s %d",id[i],&age[i]);
 		if(age[i]<60)
 			strcpy(shuchu[k++],id[i]);
 	}
@@ -35,10 +35,10 @@ int main_bench()
 	else
 	{
 		for(i=0;age[i]>=60;i++)
-			printf("%s\n",id[i]);
+			my_printf("%s\n",id[i]);
 	}
 E:;	
 	for(i=0;i<k;i++)
-		printf("%s\n",shuchu[i]);
+		my_printf("%s\n",shuchu[i]);
 	return 0;
 }

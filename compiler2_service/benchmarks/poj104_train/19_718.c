@@ -6,8 +6,8 @@ int main_bench()
     int lenb,lena,len;
     int i=0,j,k,flag;
     gets(c);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     len=strlen(c);
     lena=strlen(a);
     lenb=strlen(b);
@@ -18,11 +18,11 @@ int main_bench()
             t[j++]=c[i++];
         t[j]='\0';
         if(strcmp(t,a))
-            printf("%s",t);
+            my_printf("%s",t);
         else
-            printf("%s",b);
+            my_printf("%s",b);
         if(c[i])
-            printf("%c",c[i++]);
+            my_printf("%c",c[i++]);
     }
     return 0;
 }

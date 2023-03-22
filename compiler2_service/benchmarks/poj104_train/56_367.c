@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int A,a,b,c,d,e,x;
-	scanf("%d",&A);
+	my_scanf("%d",&A);
 	if(A/10000!=0)
 	{
 		a=A/10000;
@@ -36,6 +36,6 @@ int main_bench()
 	}
 	else
 		x=A;
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }

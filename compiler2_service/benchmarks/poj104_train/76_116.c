@@ -5,10 +5,10 @@ int main_bench()
  	int sz[50000][2];
  	int n,row,col,max,min,a;
  	double i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(row=0;row<n;row++){
 		for(col=0;col<2;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 			}
 		}
 	for(row=0;row<n;row++){
@@ -37,14 +37,14 @@ int main_bench()
 				break;
 				}
 			else if(row==n-1){
-				printf("no");
+				my_printf("no");
 				return 0;
 				}
 			}
-		if(i==max) printf("%d %d",min,max);
+		if(i==max) my_printf("%d %d",min,max);
 		}
 	
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
 }
 

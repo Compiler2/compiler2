@@ -5,7 +5,7 @@ main_bench()
       char a[100001]={0};
       int n,la,count;
       int b[26];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(int i=0;i<n;i++)
       {
               count=0;
@@ -13,7 +13,7 @@ main_bench()
               b[j]=0;
               for (int j=0;j<100001;j++)
               a[j]=0;
-              scanf("%s",a);
+              my_scanf("%s",a);
               for(int j=0;;j++)
               {
                       if(a[j]==0) 
@@ -27,12 +27,12 @@ main_bench()
               {
                       if(b[a[j]-'a']==1)
                       {
-                                        printf("%c\n",a[j]);
+                                        my_printf("%c\n",a[j]);
                                         count=1;
                                         break;
                       }
               }
               if(count==0)
-              printf("no\n");
+              my_printf("no\n");
       }
 }

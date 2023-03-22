@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	int j;
 	int chang[1000]={0};
@@ -11,7 +11,7 @@ int main_bench()
 	   char jianji2[1000][285]={0};
       for(i=0; i<n; i++)
 	{
-	   scanf("%s", &jianji1[i]);
+	   my_scanf("%s", &jianji1[i]);
 	}
     for(i=0; i<n; i++)
 	{
@@ -42,11 +42,11 @@ int main_bench()
 		{
 			if(j==chang[i]-1)
 			{
-				printf("%c\n", jianji2[i][j]);
+				my_printf("%c\n", jianji2[i][j]);
 			}
 			else
 			{
-			    printf("%c", jianji2[i][j]);
+			    my_printf("%c", jianji2[i][j]);
 			}
 		}
 		

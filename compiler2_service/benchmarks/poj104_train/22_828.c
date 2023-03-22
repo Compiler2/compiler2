@@ -7,20 +7,20 @@ int main_bench()
 	int i,max,lmax,leap=0,n,t;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c!=',')
 		break;
 	}
 	n=i+1;
 	if(n==1)
-	printf("No");
+	my_printf("No");
 	else 
 	{
 		for(i=1;i<n;i++)
 		    if(a[i]!=a[i-1])
 		    leap=1;
 		if(leap==0)
-		printf("No");
+		my_printf("No");
 	    else
 		{
 			max=a[0];
@@ -45,7 +45,7 @@ int main_bench()
 			if(a[i]>lmax&&a[i]!=max)
 			lmax=a[i];
 		}
-		printf("%d",lmax);
+		my_printf("%d",lmax);
 	    }
 	}
 }

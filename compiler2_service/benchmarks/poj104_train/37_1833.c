@@ -4,10 +4,10 @@ int main_bench()
 {
 	int t,cycle,i,j,l,k;
 	char s[100000],c[100];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(cycle=1;cycle<=t;cycle++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		l=strlen(s);
 		memset(c,0,100*sizeof(char));
 		k=0;
@@ -32,9 +32,9 @@ int main_bench()
 			}
 		}
 		if(i<l)
-			printf("%c\n",s[i]);
+			my_printf("%c\n",s[i]);
 		else
-			printf("no\n");	
+			my_printf("no\n");	
 	}
 	return 0;
 }

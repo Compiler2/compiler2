@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k;
 	char s[10000][256],sd[10000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -33,8 +33,8 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s",sd[i]);
-		printf("\n");
+		my_printf("%s",sd[i]);
+		my_printf("\n");
 	}
 	return 0;
 }

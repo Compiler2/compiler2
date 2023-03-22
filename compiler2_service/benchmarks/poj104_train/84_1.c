@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int MAX1,MAX2;
 	int a,b;
-	scanf("%d",&a);
-    scanf("%d",&b);
+	my_scanf("%d",&a);
+    my_scanf("%d",&b);
 	MAX1=a;
 	MAX2=b;
 	int x,y;
@@ -22,7 +22,7 @@ int main_bench()
 	for(i=2;i<n;i++)
 	{
 		int j;
-		scanf("%d",&j);
+		my_scanf("%d",&j);
 		if (j>MAX1)
 		{
 			MAX2=MAX1;
@@ -33,6 +33,6 @@ int main_bench()
 			MAX2=j;
 		}
 	}
-	printf("%d\n%d",MAX1,MAX2);
+	my_printf("%d\n%d",MAX1,MAX2);
 	return 0;
 }

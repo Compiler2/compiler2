@@ -15,13 +15,13 @@ for(i=n-1,m=n;i>=0;i--)
 		{
 			for(j=i+1;j<m;j++)
 				{
-				printf("%c",str[j]);
+				my_printf("%c",str[j]);
 				}
-			printf(" ");
+			my_printf(" ");
 			m=i;
 		}
 
 	}
 	for(i=0;i<m;i++)
-	printf("%c",str[i]);
+	my_printf("%c",str[i]);
 }

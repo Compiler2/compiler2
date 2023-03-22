@@ -4,10 +4,10 @@ main_bench()
 {
 	int a[300],n,i,sum=0,b[300]={0},j=0,en,d;
 	float x,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	x=sum/(float)(n);
@@ -41,7 +41,7 @@ main_bench()
 			}
 		}
 	}
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;b[i]!=0;i++)
-	    printf(",%d",b[i]);
+	    my_printf(",%d",b[i]);
 }

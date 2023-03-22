@@ -35,7 +35,7 @@ main_bench()
       {
                       for(j=0;j<5;j++)
                       {
-                                      scanf("%d",&a[i][j]);
+                                      my_scanf("%d",&a[i][j]);
                       }
       }
       for(i=0;i<5;i++)
@@ -51,9 +51,9 @@ main_bench()
                       for(j=0;j<5;j++)
                       {
                                       if(b[i]==c[j])
-                                      {z=1;printf("%d %d %d\n",i+1,j+1,b[i]);}
+                                      {z=1;my_printf("%d %d %d\n",i+1,j+1,b[i]);}
                       }
       } 
       if(z==0)
-      printf("not found\n");
+      my_printf("not found\n");
 }

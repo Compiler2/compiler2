@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,i,j,k,t,max,temp,sum=0,a[300],b[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 		sum=sum+a[i];
 	if((a[0]*n)>sum)
@@ -38,6 +38,6 @@ int main_bench()
 				}
 		}
 		for(j=1;j<k;j++)
-			printf("%d,",b[j]);
-		printf("%d",b[k]);
+			my_printf("%d,",b[j]);
+		my_printf("%d",b[k]);
 }

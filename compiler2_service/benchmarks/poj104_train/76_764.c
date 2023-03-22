@@ -11,10 +11,10 @@ int main_bench()
 	}
 	min=10001;
 	max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(min>a)
 		{
 			min=a;
@@ -51,8 +51,8 @@ int main_bench()
 		}
 	}
 	if(i<max+1)
-		printf("no");
+		my_printf("no");
 	if(i==max+1)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 }
 

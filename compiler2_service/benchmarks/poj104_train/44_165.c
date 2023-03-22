@@ -6,9 +6,9 @@ int main_bench()
     int reserve(int num);
     for(m=0;m<6;m++)
     {
-     scanf("%d",&a[m]);
+     my_scanf("%d",&a[m]);
      b[m]=reserve(a[m]);
-     printf("%d\n",b[m]);
+     my_printf("%d\n",b[m]);
     }
      getchar();
      getchar();  

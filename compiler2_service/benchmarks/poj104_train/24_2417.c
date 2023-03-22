@@ -19,9 +19,9 @@ int main_bench()
     }
     for(k=0;k<max;k++)putchar(a[maxpl+k]);
 
-    printf("\n");
+    my_printf("\n");
     for(k=0;k<min;k++)putchar(a[minpl+k]);
 
-    printf("\n");
+    my_printf("\n");
 
 }

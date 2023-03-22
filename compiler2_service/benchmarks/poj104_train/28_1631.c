@@ -23,8 +23,8 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		if(i==0) printf("%d",(int)strlen(s[i]));
-		else printf(",%d",(int)strlen(s[i]));
+		if(i==0) my_printf("%d",(int)strlen(s[i]));
+		else my_printf(",%d",(int)strlen(s[i]));
 	}
         return 0;
 }

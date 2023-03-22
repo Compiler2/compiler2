@@ -5,13 +5,13 @@ int main_bench()
     char a[501],b[501];
     double n,d,c,r;
     int i,k,s;
-    scanf("%lf",&n);
-    scanf("%s\n%s",a,b);
+    my_scanf("%lf",&n);
+    my_scanf("%s\n%s",a,b);
     d=strlen(a);
     c=strlen(b);
     k=0;
     if(c!=d){
-        printf("error");
+        my_printf("error");
     return 0;
     }
     else{
@@ -22,7 +22,7 @@ int main_bench()
                 k++;
         }
         if(k!=0){
-            printf("error");
+            my_printf("error");
             return 0;
         }
     }
@@ -33,8 +33,8 @@ int main_bench()
     }
     r=s/d;
     if(r<=n)
-        printf("no");
+        my_printf("no");
     if(r>n)
-        printf("yes");
+        my_printf("yes");
     return 0;
 }

@@ -15,10 +15,10 @@ int main_bench()
 {
 	struct student stu[100],temp;
 	int n,i,j,r=1,final=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d%d %c %c %d",stu[i].name,&stu[i].chengji,&stu[i].pingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d%d %c %c %d",stu[i].name,&stu[i].chengji,&stu[i].pingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 		stu[i].sum=0;
         if(stu[i].chengji>80&&stu[i].lunwen>0)
 			stu[i].sum+=8000;
@@ -49,6 +49,6 @@ int main_bench()
 			break;
 	}
 
-	printf("%s\n%d\n%d\n",stu[0].name,stu[0].sum,final);
+	my_printf("%s\n%d\n%d\n",stu[0].name,stu[0].sum,final);
 	return 0;
 }

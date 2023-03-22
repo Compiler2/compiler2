@@ -7,12 +7,12 @@ int main_bench()
 		int zen,xiao;
 	} a[10000];
 	int i,n,b,c,t,j,min,max,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	t=0;
 	max=0;
 	m=0;
     for (i=1;i<=n;i++){
-	   scanf("%d %d",&b,&c);
+	   my_scanf("%d %d",&b,&c);
 		   if (t==0){
 			   min=b;
 		       t=1;
@@ -29,9 +29,9 @@ int main_bench()
       for (j=min;j<max;j++)
 		   if ((a[j].zen!=1) || (a[j].xiao!=1)){
 			   m=1;
-			   printf("no\n");
+			   my_printf("no\n");
 			   break;
 		   }
-       if (m==0) printf("%d %d\n",min,max);
+       if (m==0) my_printf("%d %d\n",min,max);
 	return 0;
 }

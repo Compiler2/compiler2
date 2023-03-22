@@ -3,14 +3,14 @@
 int main_bench()
 {
    int n,a,b,c,d,i;
-	scanf("%d\n%d\n%d\n",&n,&a,&b);
+	my_scanf("%d\n%d\n%d\n",&n,&a,&b);
 	if(a<b){
 		c=a;
 		b=a;
 		a=c;
 	}
 	for(i=3;i<n;i++){
-		scanf("%d\n",&d);
+		my_scanf("%d\n",&d);
 		if(d>=a){
 			b=a;
 			a=d;
@@ -19,7 +19,7 @@ int main_bench()
 			b=d;
 		}
 	}
-scanf("%d",&d);
+my_scanf("%d",&d);
 		if(d>=a){
 			b=a;
 			a=d;
@@ -27,6 +27,6 @@ scanf("%d",&d);
 		else if(d>=b){
 			b=d;
 		}
-	printf("%d\n%d\n",a,b);
+	my_printf("%d\n%d\n",a,b);
    return 0;
 }

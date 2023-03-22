@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,w,a,b,day,s=0;
 
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<13;i++)
 	{
 		switch (i)
@@ -32,7 +32,7 @@ int main_bench()
 		a=12+s;
 		b=a%7+w;
 		if (b%7==5){
-			printf("%d\n",i);}
+			my_printf("%d\n",i);}
 	}
 
 	return 0;

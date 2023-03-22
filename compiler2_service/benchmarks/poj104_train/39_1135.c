@@ -13,9 +13,9 @@ int main_bench()
 	 char b;
 	 int sum;
 	}stu[100];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d", stu[i].name, &stu[i].ave, &stu[i].mar, &stu[i].a, &stu[i].b, &stu[i].es);
+		my_scanf("%s %d %d %c %c %d", stu[i].name, &stu[i].ave, &stu[i].mar, &stu[i].a, &stu[i].b, &stu[i].es);
 	
 	for(i=0;i<n;i++)
 	{
@@ -36,9 +36,9 @@ int main_bench()
 	{
 		if(stu[i].sum==s)
 		{	
-			printf("%s\n%d\n", stu[i].name, stu[i].sum);
+			my_printf("%s\n%d\n", stu[i].name, stu[i].sum);
 		    break;}
 	}
-	printf("%d", total);
+	my_printf("%d", total);
 	return 0;
 }

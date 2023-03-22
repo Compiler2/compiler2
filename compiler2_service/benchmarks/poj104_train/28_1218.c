@@ -10,7 +10,7 @@ int main_bench()
 			k++;
 			for(i=0;zjy[k]!=' '&&zjy[k]!='\0';k++)i++ ;
 			if(i!=0)
-                            {if(zjy[k]==' ')printf("%d,",i);
-			 else printf("%d\n",i);}
+                            {if(zjy[k]==' ')my_printf("%d,",i);
+			 else my_printf("%d\n",i);}
 		}
 }

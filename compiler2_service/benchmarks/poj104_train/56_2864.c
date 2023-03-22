@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>10000&&n<1000000){
 		a=n%10;
 		b=(n/10)%10;
@@ -33,6 +33,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",n);
+	my_printf("%d",n);
     return 0;
 }

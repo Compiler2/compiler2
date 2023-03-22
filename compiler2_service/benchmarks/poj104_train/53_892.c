@@ -2,9 +2,9 @@
 
 int main_bench() {
 	int n,sz[350],szy[350],a,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	szy[0]=sz[0];
 	m=1;
@@ -21,8 +21,8 @@ int main_bench() {
 		}
 	}
 	for(int q=0;q<m-1;q++){
-		printf("%d,",szy[q]);
+		my_printf("%d,",szy[q]);
 	}
-	printf("%d",szy[m-1]);
+	my_printf("%d",szy[m-1]);
 	return 0;
 }

@@ -5,8 +5,8 @@ int main_bench()
 	int num,i;
 	int reverse(int num);
 	for(i=1;i<=6;i++){
-		scanf("%d",&num);
-		printf("%d\n",reverse(num));
+		my_scanf("%d",&num);
+		my_printf("%d\n",reverse(num));
 	}
 	return 0;
 }

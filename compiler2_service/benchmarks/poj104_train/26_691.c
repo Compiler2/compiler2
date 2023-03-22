@@ -20,5 +20,5 @@ for(i=0;i<strlen(str);i++)
 	}
 	
 }
-printf("%s",str);
+my_printf("%s",str);
 }

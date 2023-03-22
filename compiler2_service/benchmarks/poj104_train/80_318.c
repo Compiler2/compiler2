@@ -23,12 +23,12 @@ int main_bench()
 	int runnian(int y);
 	int dijitian(int year,int month,int day);
 	int i,sum=0,final,y1,m1,d1,y2,m2,d2;
-	scanf("%d %d %d %d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d %d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	
 	for(i=y1;i<y2;i++){
 		sum=sum+365+runnian(i);
 	}
 	final=sum+dijitian(y2,m2,d2)-dijitian(y1,m1,d1);
-	printf("%d",final);
+	my_printf("%d",final);
 	return 0;
 }

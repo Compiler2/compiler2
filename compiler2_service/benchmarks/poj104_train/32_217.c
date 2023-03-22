@@ -3,13 +3,13 @@
 main_bench()
 {
 	int p;
-	scanf("%d",&p);
+	my_scanf("%d",&p);
 	while(p>0)
 	{
 	char a[101],b[101],c[101]={0},a1[101]={0},b1[101]={0};int lena,lenb;
 	int i,j;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	
@@ -48,8 +48,8 @@ main_bench()
 	}
 
 	for(i=temp;i<101;i++)
-			printf("%c",c[i]);
-	printf("\n");
+			my_printf("%c",c[i]);
+	my_printf("\n");
 	p--;
 	}
 }

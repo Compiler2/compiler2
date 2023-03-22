@@ -15,5 +15,5 @@ int main_bench()
 
 	*(a+i)='\0';
 	for(i=0;*(a+i)!='\0';i++)
-		printf("%c",*(a+i));
+		my_printf("%c",*(a+i));
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int month[12]={31,28,31,30,31,30,31,31,30,31,30,31},n,m,first[12],i;
-	scanf("%d",&first[0]);
+	my_scanf("%d",&first[0]);
 	for(i=0;i<12;i++)
 	{
 		switch(month[i])
@@ -43,7 +43,7 @@ int main_bench()
 			first[i]=first[i]+12-14;
 		if(first[i]==5)
 		{
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

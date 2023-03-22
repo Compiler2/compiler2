@@ -10,7 +10,7 @@ main_bench()
            b[i]='0'; 
       for(i=0;i<251;i++)
            sum[i]='0';      
-      scanf("%s\n%s",a,b);
+      my_scanf("%s\n%s",a,b);
       x=strlen(a);
       y=strlen(b);            
       for(i=0;i<x;i++) 
@@ -56,11 +56,11 @@ main_bench()
            }                    
       }
       if(l==252)      
-           printf("%c",sum[0]);
+           my_printf("%c",sum[0]);
       else     
       {
            for(i=k;i<251;i++)
-                printf("%c",sum[i]);
+                my_printf("%c",sum[i]);
       }      
       
       }

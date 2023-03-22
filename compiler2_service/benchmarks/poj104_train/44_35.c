@@ -26,7 +26,7 @@ int reverse(int num)
  int i;
  for(i=0; i<6; i++)
    {
-    scanf("%d", &a[i]);
+    my_scanf("%d", &a[i]);
    }
  for(i=0; i<6; i++)
    {
@@ -34,12 +34,12 @@ int reverse(int num)
      {
       a[i]=-a[i];
       rev=reverse(a[i]);
-      printf("%d\n", -rev);
+      my_printf("%d\n", -rev);
      }
  else
     {
      rev=reverse(a[i]);
-     printf("%d\n", rev);
+     my_printf("%d\n", rev);
     }
    }
  return 0;

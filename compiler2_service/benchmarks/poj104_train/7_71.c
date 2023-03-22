@@ -27,9 +27,9 @@ int main_bench()
         if (s[i] == '@') {
             while (s[i] == '@') i++;
             i--; 
-            printf("%s", rep);
+            my_printf("%s", rep);
         } else {
-            printf("%c", s[i]);
+            my_printf("%c", s[i]);
         }
 
     return 0;

@@ -6,7 +6,7 @@ char b;
 int i,j,max,second,kai,min;
 for(i=1;i<=300;i++)
 {      
-       scanf("%d%c",&a[i-1],&b);
+       my_scanf("%d%c",&a[i-1],&b);
        if(b=='\n')
        break;
 }
@@ -33,9 +33,9 @@ for(j=0,kai=0;j<=i-1;j++)
 }               
     
 if(kai==0||i==1)
-printf("No");
+my_printf("No");
 else
-printf("%d",second);
+my_printf("%d",second);
       
              
                     

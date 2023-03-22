@@ -6,11 +6,11 @@ int main_bench()
 {
    int n,i,j,len[1111];
    char zfc[1111][256];
-   scanf("%d", &n);
+   my_scanf("%d", &n);
    for(i=0;i<n;i++)
    {
 	   
-	   scanf("%s", zfc[i]);
+	   my_scanf("%s", zfc[i]);
 	   len[i]=strlen(zfc[i]);
 		
    }
@@ -27,7 +27,7 @@ int main_bench()
 	   else if(zfc[i][j]=='G')
 		   zfc[i][j]='C';
 	   }
-	   printf("%s\n", zfc[i]);
+	   my_printf("%s\n", zfc[i]);
    }
 
    

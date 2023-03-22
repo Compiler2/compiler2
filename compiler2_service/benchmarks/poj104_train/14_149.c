@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     struct student
     {
         int num;
@@ -14,9 +14,9 @@ int main_bench()
     int i,b[100000]={0};
     for (i=0;i<n;i++)
     {
-        scanf("%d",&a[i].num);
-        scanf("%d",&a[i].chinese);
-        scanf("%d",&a[i].maths);
+        my_scanf("%d",&a[i].num);
+        my_scanf("%d",&a[i].chinese);
+        my_scanf("%d",&a[i].maths);
     }
     
     for (i=1;i<n;i++)
@@ -28,7 +28,7 @@ int main_bench()
             a[i]=temp;
         }
     }
-    printf("%d %d\n",a[0].num,a[0].chinese+a[0].maths);
+    my_printf("%d %d\n",a[0].num,a[0].chinese+a[0].maths);
     
     for (i=2;i<n;i++)
     {
@@ -39,7 +39,7 @@ int main_bench()
             a[i]=temp;
         }
     }
-    printf("%d %d\n",a[1].num,a[1].chinese+a[1].maths);
+    my_printf("%d %d\n",a[1].num,a[1].chinese+a[1].maths);
 
     for (i=3;i<n;i++)
     {
@@ -50,6 +50,6 @@ int main_bench()
             a[i]=temp;
         }
     }
-    printf("%d %d\n",a[2].num,a[2].chinese+a[2].maths);
+    my_printf("%d %d\n",a[2].num,a[2].chinese+a[2].maths);
     return 0;
 } 

@@ -5,13 +5,13 @@ int main_bench()
 	int panduan(char *a,char *b,int lenyi);
 	char yi[50],er[50],*a=yi,*b=er;
 	int i,lenyi,lener;
-	scanf("%s %s",yi,er);
+	my_scanf("%s %s",yi,er);
 	lenyi=strlen(yi);
 	lener=strlen(er);
 	for(i=0;i<lener;i++){
 		if(er[i]==yi[0]){
 			if(panduan(a,b+i,lenyi)){
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

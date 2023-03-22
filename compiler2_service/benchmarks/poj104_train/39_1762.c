@@ -14,9 +14,9 @@ int main_bench()
 	int N,i,num;
 	int a[100]={0};
 	int sumall=0,summax=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
-	scanf("%s%d%d %c %c %d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].a,&stu[i].b,&stu[i].num);
+	my_scanf("%s%d%d %c %c %d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].a,&stu[i].b,&stu[i].num);
 	
 
 	for(i=0;i<N;i++)
@@ -40,5 +40,5 @@ int main_bench()
 	break;}
 	}
 
-	printf("%s\n%d\n%d\n",stu[num].name,a[num],sumall);
+	my_printf("%s\n%d\n%d\n",stu[num].name,a[num],sumall);
 }

@@ -33,6 +33,6 @@ int main_bench()
     h++;
 	}
 	d[h]='\0';
-	printf("%s\n",d);
+	my_printf("%s\n",d);
     return 0;  
 }

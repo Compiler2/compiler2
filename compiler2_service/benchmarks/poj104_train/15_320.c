@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,a[1000],i,j,k,s1=0,s2,t1,t2,square;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for (j=1;j<=n;j++)
-			scanf("%d",&a[j]);
+			my_scanf("%d",&a[j]);
 		if (s1==0)
 		{
 		   for (j=1;j<=n;j++)
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
 	square=(s2-s1-1)*(t2-t1-1);
-	printf("%d",square);
+	my_printf("%d",square);
 	return 0;
 }
 

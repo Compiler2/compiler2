@@ -5,7 +5,7 @@ int main_bench()
 	int t,num[200],i=0,j,n;
 	do
 	{
-		scanf("%d",&num[i]);i++;
+		my_scanf("%d",&num[i]);i++;
 	}
 	while(getchar()!='\n');
 	n=i;
@@ -26,5 +26,5 @@ int main_bench()
 		if(num[i]<t) break;
 	}
 	if(i==n) puts("No");
-	if(i<n) printf("%d",num[i]);
+	if(i<n) my_printf("%d",num[i]);
 }

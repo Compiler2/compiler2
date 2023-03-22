@@ -7,10 +7,10 @@ int main_bench()
 	struct p {
 		char a[256];
 	}p[10000];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s\n",p[i].a);
+		my_scanf("%s\n",p[i].a);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",p[i].a);
+		my_printf("%s\n",p[i].a);
 	}
 	return 0;
 }

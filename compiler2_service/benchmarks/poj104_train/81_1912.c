@@ -26,25 +26,25 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(f(s,n,m)==1)
 	{
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
 			{
-				printf("%d ",s[i][j]);
+				my_printf("%d ",s[i][j]);
 			}
-			printf("%d",s[i][4]);
-			printf("\n");
+			my_printf("%d",s[i][4]);
+			my_printf("\n");
 		}
 	}
 	if(f(s,n,m)==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

@@ -9,10 +9,10 @@ int main_bench()
 	int i,j;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-		scanf("%d",&su[i][j]);		
+		my_scanf("%d",&su[i][j]);		
 		}	
 	}
-	scanf("%d %d",&hang1,&hang2);
+	my_scanf("%d %d",&hang1,&hang2);
 	reverse(su,hang1,hang2);
 	return 0;
 }
@@ -31,12 +31,12 @@ void reverse(int a[5][5],int b,int c){
 	if(panduan){
 		for(k=0;k<5;k++){
 			for(l=0;l<4;l++){
-				printf("%d ",a[k][l]);		
+				my_printf("%d ",a[k][l]);		
 			}
-			printf("%d\n",a[k][4]);
+			my_printf("%d\n",a[k][4]);
 		}	
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 
 

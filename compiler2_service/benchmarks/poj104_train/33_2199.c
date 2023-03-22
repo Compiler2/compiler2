@@ -3,11 +3,11 @@
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   while(n--){
   char s[256];
   int i;
-  scanf("%s",s);
+  my_scanf("%s",s);
   int len=strlen(s);
   for(i=0;i<len;i++){
   if(s[i]=='A')
@@ -19,7 +19,7 @@ int main_bench()
   else if(s[i]=='G')
 	  s[i]='C';
   }
-  printf("%s\n",s);
+  my_printf("%s\n",s);
 
   }
   return 0;

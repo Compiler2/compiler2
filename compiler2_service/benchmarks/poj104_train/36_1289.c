@@ -4,12 +4,12 @@ int main_bench()
 {
     int la,lb,i,j,count=0;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
     la=strlen(a);
 	lb=strlen(b);
 	if(la!=lb)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
@@ -28,11 +28,11 @@ int main_bench()
 		}
 		if(count==la)
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 		else
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 	}
 

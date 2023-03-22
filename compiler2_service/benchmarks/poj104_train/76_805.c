@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,min,max=0,j=1,k,t=0;
 	int a[10001][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i][0],&a[i][1]);
+		my_scanf("%d %d",&a[i][0],&a[i][1]);
 	}
 	min=a[0][0];
 	for(i=0;i<n;i++){
@@ -40,9 +40,9 @@ int main_bench(){
 		
 	}
 	if(j==0){
-		printf("no\n");
+		my_printf("no\n");
 	}else{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

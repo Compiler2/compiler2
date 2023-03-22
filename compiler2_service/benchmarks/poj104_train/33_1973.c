@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,m,len;
     char a[256];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(m=0;m<n;m++){
-                     scanf("%s",a);
+                     my_scanf("%s",a);
                      len=strlen(a);
                      for(i=0;i<len;i++){
                                         switch(a[i]){
@@ -16,8 +16,8 @@ int main_bench()
                                                      case 'G':a[i]='C';
                                                      }
                                                      }
-                     for(i=0;i<len;i++) printf("%c",a[i]);
-                     printf("\n");
+                     for(i=0;i<len;i++) my_printf("%c",a[i]);
+                     my_printf("\n");
                      }
                                                      
     

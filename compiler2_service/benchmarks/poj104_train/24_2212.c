@@ -24,6 +24,6 @@ int main_bench()
 		if(strlen(b[max])<strlen(b[i]))max=i;
 		if(strlen(b[min])>strlen(b[i]))min=i;
 	}
-	printf("%s\n%s\n",b[max],b[min]);
+	my_printf("%s\n%s\n",b[max],b[min]);
 	return 0;
 }

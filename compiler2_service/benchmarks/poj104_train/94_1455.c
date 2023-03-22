@@ -3,9 +3,9 @@
 int main_bench(){
 int shulie[500],jishu[500];
 int n,t=0,i=0,j=0,a=0,c=0,k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-  scanf("%d",&shulie[i]);
+  my_scanf("%d",&shulie[i]);
 for(i=0;i<n;i++){
   if(shulie[i]%2!=0)
    c++;
@@ -28,8 +28,8 @@ for(i=0;i<c-1;i++){
 			jishu[j]=t;
 		}
 	}
-	printf("%d,",jishu[i]);
+	my_printf("%d,",jishu[i]);
 }
-printf("%d",jishu[c-1]);
+my_printf("%d",jishu[c-1]);
 return 0;
 }

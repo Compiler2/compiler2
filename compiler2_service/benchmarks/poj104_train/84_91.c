@@ -8,19 +8,19 @@ int max(int num[],int n)
 			result=num[i];
 		return(result);
 }
-void main_bench()
+int main_bench()
 {
 	int n,num[100],m1,m2,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%d",&num[i]);
+	my_scanf("%d",&num[i]);
 	m1=max(num,n);
-	printf("%d\n",m1);
+	my_printf("%d\n",m1);
 	for(i=0;i<n;i++)
 		if(num[i]==m1)
 			num[i]=-100;
 		m2=max(num,n);
-		printf("%d\n",m2);
+		my_printf("%d\n",m2);
 }
 
 

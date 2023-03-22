@@ -4,9 +4,9 @@ int main_bench()
 {
     int m=0,n,i,j,a[300],s=0,d[300],t;
 	double ave,c[300],max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	ave=(double)s/n;
@@ -25,7 +25,7 @@ int main_bench()
 				d[i]=d[i+1];
 				d[i+1]=t;
 			}
-    printf("%d",d[0]);
-	for(i=1;i<m;i++) printf(",%d",d[i]);
+    my_printf("%d",d[0]);
+	for(i=1;i<m;i++) my_printf(",%d",d[i]);
 	return 0;
 }

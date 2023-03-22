@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int i,j,n,m,a[100],t;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	int *p=a;
 	for(i=n-m-1;i>=0;i--)
@@ -21,10 +21,10 @@ int main_bench()
 			p++;
 		}
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<n;i++)
 	{
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 	return 0;
 }

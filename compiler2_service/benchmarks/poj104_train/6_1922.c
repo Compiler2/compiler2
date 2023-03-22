@@ -4,11 +4,11 @@ int main_bench()
 {
    int jvzhen();
    int n,i,a;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=1;i<=n;i++)
    {
        a = jvzhen();
-       printf("%d\n",a);
+       my_printf("%d\n",a);
    }
    
  
@@ -19,11 +19,11 @@ int jvzhen()
 {
     int m,n,i,j,sum;
     sum=0;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int b[100][100];
     for(i=1;i<=m;i++)
     {
-      for(j=1;j<=n;j++) scanf("%d",*(b+i)+j);
+      for(j=1;j<=n;j++) my_scanf("%d",*(b+i)+j);
     }
    
     for(i=1;i<=n;i++) 

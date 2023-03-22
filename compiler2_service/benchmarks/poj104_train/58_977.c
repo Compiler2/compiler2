@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,j,k;
     char a[100],b[12];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     gets(b);
     for(i=0;i<n;i++)
       {
@@ -19,12 +19,12 @@ int main_bench()
       if(j==l)     
        {
            if((a[0]<='z'&&a[0]>='A')||a[0]=='_')
-          printf("1\n");
+          my_printf("1\n");
       else
-           printf("0\n");
+           my_printf("0\n");
            }
       else
-         printf("0\n");
+         my_printf("0\n");
      }
      getchar();
      getchar();

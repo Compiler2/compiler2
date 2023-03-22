@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,e,f,g,m,n,t,q;
-	scanf("%d %d %d\n %d %d %d", &a,&b,&c,&e,&f,&g);
+	my_scanf("%d %d %d\n %d %d %d", &a,&b,&c,&e,&f,&g);
 	
 	m=0;n=0;q=0;
 		
@@ -49,5 +49,5 @@ int main_bench()
 		while(a<=e);
 		}
 
-	printf("%d",q);
+	my_printf("%d",q);
 }

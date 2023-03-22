@@ -4,24 +4,24 @@
 int main_bench()
 {
 	int n=0, x;
-	scanf("%d", &x);
+	my_scanf("%d", &x);
 	if(x%3==0)
 	{
-		printf("3");
+		my_printf("3");
 		n++;
 	}
 	if(x%5==0)
 	{
-		if(n!=0) printf(" ");
-		printf("5");
+		if(n!=0) my_printf(" ");
+		my_printf("5");
 		n++;
 	}
 	if(x%7==0)
 	{
-		if(n!=0) printf(" ");
-		printf("7");
+		if(n!=0) my_printf(" ");
+		my_printf("7");
 		n++;
 	}
-	if(n==0) printf("n");
+	if(n==0) my_printf("n");
 	return 0;
 }

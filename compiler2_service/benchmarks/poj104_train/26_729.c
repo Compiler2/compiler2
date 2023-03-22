@@ -29,7 +29,7 @@ int main_bench()
 		if(str[k]=='0')
 			continue;
 		else
-			printf("%c",str[k]);
+			my_printf("%c",str[k]);
 	}
 	return 0;
 }

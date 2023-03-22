@@ -5,9 +5,9 @@ int main_bench()
     int n;
     char zf[100][100];
     int i,j,sum[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char ddd;
-    scanf("%c",&ddd);
+    my_scanf("%c",&ddd);
     for(i=0;i<n;i++)gets(zf[i]);
     for(i=0;i<n;i++){
         sum[i]=0;
@@ -36,9 +36,9 @@ int main_bench()
         }
         }
         if(sum[i]==0) 
-        printf("no\n");
+        my_printf("no\n");
         if(sum[i]==1)
-        printf("yes\n");
+        my_printf("yes\n");
     }
     
     

@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,k;
 	int x[300]={0},y[300]={0};
 	for(;;){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a==0)
 			break;
 		else{
@@ -25,7 +25,7 @@ int main_bench()
 				n=n-1;
 			}
 			while(n>1);
-			printf("%d\n",x[0]);
+			my_printf("%d\n",x[0]);
 		}
 	}
 	return 0;

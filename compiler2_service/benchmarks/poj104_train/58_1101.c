@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,l,a;
 	char s[81],*p;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		a=1;
 		gets(s);
@@ -26,7 +26,7 @@ int main_bench()
 				break;
 			}
 		}
-		printf("%d\n",a);
+		my_printf("%d\n",a);
 	}
 	return 0;
 }

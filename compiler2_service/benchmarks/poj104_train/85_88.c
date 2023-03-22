@@ -19,14 +19,14 @@ int legal(char s[20])
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		char s[20];
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		if(legal(s)==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 		}
     return 0;
 }

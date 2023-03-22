@@ -18,7 +18,7 @@ int main_bench()
 
 		
 	
-	    printf("%d\n",judge(p,strlen(p)));
+	    my_printf("%d\n",judge(p,strlen(p)));
 	}
 	
 	return 0;

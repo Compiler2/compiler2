@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,sum=0,len,i,t,r;
 	char s[100];
-	scanf("%d %s %d", &a, s ,&b);
+	my_scanf("%d %s %d", &a, s ,&b);
 	len=strlen(s);
 	for (i=0; i<len; i++)
 	{
@@ -14,7 +14,7 @@ int main_bench()
 		sum = sum*a+t;
 	}
 	i=0;
-	if (sum==0) printf("0\n");
+	if (sum==0) my_printf("0\n");
 	else
 	{
 		while (sum!=0)
@@ -29,8 +29,8 @@ int main_bench()
 		i=strlen(s)-1;
 		while (s[i]=='0') i--;
 		for (; i>=0; i--)
-			printf("%c",s[i]);
-		printf("\n");
+			my_printf("%c",s[i]);
+		my_printf("\n");
 	}
 
 	return 0;

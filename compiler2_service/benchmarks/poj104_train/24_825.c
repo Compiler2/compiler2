@@ -34,14 +34,14 @@ int main_bench()
 	i=max;
 	while((s[i]>='a' && s[i]<='z') || (s[i]>='A' && s[i]<='Z')) 
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 		i++;
 	}
-	printf("\n");
+	my_printf("\n");
     i=min;
 	while((s[i]>='a' && s[i]<='z') || (s[i]>='A' && s[i]<='Z')) 
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 		i++;
 	}
 	return 0;

@@ -13,6 +13,6 @@ for (;*pt!='\0';pt++,px++){
 
 }
 *px='\0';
-printf ("%s",x);
+my_printf ("%s",x);
 return 0;
 }

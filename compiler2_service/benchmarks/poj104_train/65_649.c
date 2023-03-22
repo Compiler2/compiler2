@@ -9,10 +9,10 @@ int main_bench(){
 	b=0;
 	int zzd[202];
 	int hzy[202];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&zzd[i]);
-		scanf("%d",&hzy[i]);
+		my_scanf("%d",&zzd[i]);
+		my_scanf("%d",&hzy[i]);
 	}
 	for(i=0;i<n;i++){
 		if(zzd[i]==0&&hzy[i]==1){
@@ -44,13 +44,13 @@ int main_bench(){
 		}
 	}
 	if(a>b){
-	printf("A");
+	my_printf("A");
 	}
 	else if(a<b){
-	printf("B");
+	my_printf("B");
 	}
 	else if(a=b){
-	printf("Tie");
+	my_printf("Tie");
 	}
 	return 0;
 }

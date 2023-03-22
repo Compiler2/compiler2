@@ -2,15 +2,15 @@
 
  int main_bench(){
   int a, b, c, n;
-  scanf("%d", &n);
+  my_scanf("%d", &n);
  int i;
  for(i=1;i<=n;i++){
   if(i==1){ 
-    scanf("%d", &a);
+    my_scanf("%d", &a);
 }else if(i==2){
-    scanf("%d", &b);
+    my_scanf("%d", &b);
 }else{
-  scanf("%d", &c);
+  my_scanf("%d", &c);
 }
  if(a>=b && a>=c && b>=c){
    a = a;
@@ -33,6 +33,6 @@
                               b = b;
                               }
 }
-printf("%d\n%d\n", a, b);
+my_printf("%d\n%d\n", a, b);
 return 0;
 }

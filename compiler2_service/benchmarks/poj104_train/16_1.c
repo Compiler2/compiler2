@@ -5,10 +5,10 @@
 int main_bench()
 {
 	int i;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	while(i)
 	{
-		printf("%d",i%10);
+		my_printf("%d",i%10);
 		i=i/10;
 	}
 }

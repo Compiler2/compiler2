@@ -15,9 +15,9 @@ struct stu
 int main_bench()
 {
 	int n,i,j,sum=0,len,max=0,num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].g,&stu[i].x,&stu[i].l);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].g,&stu[i].x,&stu[i].l);
 		stu[i].m=0;
 		if(stu[i].s1>80&&stu[i].l>=1){
 			stu[i].m+=8000;
@@ -40,6 +40,6 @@ int main_bench()
 			num=i;
 		}
 	}
-	printf("%s\n%d\n%d",stu[num].name,stu[num].m,sum);
+	my_printf("%s\n%d\n%d",stu[num].name,stu[num].m,sum);
 	return 0;
 }

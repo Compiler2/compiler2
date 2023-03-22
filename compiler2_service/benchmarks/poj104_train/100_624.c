@@ -7,7 +7,7 @@ int main_bench()
 	
 	for(i=0;;i++){
 		
-           	scanf("%c",&a[i]);
+           	my_scanf("%c",&a[i]);
 	           t++;
 			   
             if(a[i]=='\n')
@@ -19,7 +19,7 @@ int main_bench()
 		}
 	}
 	if(s==0)
-		printf("No");
+		my_printf("No");
 	
 	
 	for(j=0;j<26;j++){
@@ -35,7 +35,7 @@ int main_bench()
 			
 	   }
 	   if(n!=0){         
-		 printf("%c=%d\n",b[j],n);
+		 my_printf("%c=%d\n",b[j],n);
 	   }
 	   
 	}

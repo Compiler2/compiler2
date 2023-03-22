@@ -3,7 +3,7 @@
 int main_bench(){
 	char s[256],sub[256],re[256];
 	int t,i,k;
-	scanf("%s\n%s\n%s",s,sub,re);
+	my_scanf("%s\n%s\n%s",s,sub,re);
 	t=strlen(sub);
 	for(i=0;i<strlen(s)-t+1;i++){
 		int x=0;
@@ -19,6 +19,6 @@ int main_bench(){
 		    break;
 		}
 	}
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

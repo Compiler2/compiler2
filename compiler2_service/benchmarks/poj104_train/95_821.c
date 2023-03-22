@@ -18,10 +18,10 @@ int main_bench()
         b[i]=tolower(b[i]);
     }
     if (strcmp(a,b)>0)
-    printf(">");
+    my_printf(">");
     if (strcmp(a,b)<0)
-    printf("<");
+    my_printf("<");
     if (strcmp(a,b)==0)
-    printf("=");
+    my_printf("=");
     return 0;
 }

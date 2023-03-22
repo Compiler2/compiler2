@@ -27,10 +27,10 @@ int main_bench()
 		h=1;
 	}} 
 	if(h==0)
-		printf("=");
+		my_printf("=");
 	else if(h==1)
-		printf("<");
+		my_printf("<");
 	else if(h==2)
-		printf(">");
+		my_printf(">");
 	return(0);
 	}

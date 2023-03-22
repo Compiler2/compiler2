@@ -12,10 +12,10 @@ int pd(int a)
 main_bench()
 {
        int i,y,a,b,n,l,m,s,t;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        for(i=1;i<=n;i++)
        {
-          scanf("%d %d %d",&y,&a,&b);
+          my_scanf("%d %d %d",&y,&a,&b);
           if(a<b)
           {
              t=a;
@@ -30,9 +30,9 @@ main_bench()
                 for(b;b<a;b++)
                    s=s+pd(b);
                 if(s%7==0)
-                   printf("YES\n");
+                   my_printf("YES\n");
                 else
-                   printf("NO\n");
+                   my_printf("NO\n");
              }
              else if(b<=2&&a>2)
              {
@@ -40,12 +40,12 @@ main_bench()
                    s=s+pd(b);
                 s++;
                 if(s%7==0)
-                   printf("YES\n");
+                   my_printf("YES\n");
                 else
-                   printf("NO\n");
+                   my_printf("NO\n");
              }
              else
-                printf("NO\n");
+                my_printf("NO\n");
           }
           else
           {
@@ -53,9 +53,9 @@ main_bench()
              for(;b<a;b++)
                    s=s+pd(b);
                 if(s%7==0)
-                   printf("YES\n");
+                   my_printf("YES\n");
                 else
-                   printf("NO\n");
+                   my_printf("NO\n");
           }
        }     
 }

@@ -6,10 +6,10 @@ int main_bench()
 	r=0;
 	s=0;
 	t=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0,j=0;i<n,j<n;i++,j++)
 	{
-		scanf("%d%d",&a[i],&b[j]);
+		my_scanf("%d%d",&a[i],&b[j]);
 	}
 	for(i=0,j=0;i<n;i++,j++)
 	{
@@ -28,15 +28,15 @@ int main_bench()
 	}
     if(r>t)
 	{
-		printf("A");
+		my_printf("A");
 	}
 	if(t>r)
 	{
-		printf("B");
+		my_printf("B");
 	}
 	if(r==t)
 	{
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

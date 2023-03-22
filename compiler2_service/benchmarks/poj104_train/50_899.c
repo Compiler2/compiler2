@@ -4,7 +4,7 @@
 int main_bench()
 {
     int x,y[12],i;
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     y[0]=x+12%7;
     y[1]=x+43%7;
     y[2]=x+71%7;
@@ -21,7 +21,7 @@ int main_bench()
         if (y[i]>7) y[i]=y[i]%7;
                         }
     for (i=0;i<=11;i++){
-        if (y[i]==5) printf("%d\n",i+1);
+        if (y[i]==5) my_printf("%d\n",i+1);
         }
 
     return 0;

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char **a;
 	a=(char **)malloc(sizeof(char *)*n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
 		a[i]=(char *)malloc(sizeof(char)*100);
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		
 	}
 	
@@ -26,16 +26,16 @@ int main_bench()
 					continue;
 				else
 				{
-					printf("no\n");
+					my_printf("no\n");
 					break;
 				}
 			}
 			if(j==(int)strlen(a[i]))
-			   printf("yes\n");
+			   my_printf("yes\n");
 		}
 
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

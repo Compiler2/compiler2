@@ -45,7 +45,7 @@ int main_bench()
 		m=strlen(a[j]);
 		if(m==b[i])
 		{
-	     printf("%s\n",a[j]);
+	     my_printf("%s\n",a[j]);
 		 break;
 		}
 	}
@@ -63,7 +63,7 @@ int main_bench()
 		m=strlen(a[j]);
 		if(m==b[i])
 		{
-	     printf("%s\n",a[j]);
+	     my_printf("%s\n",a[j]);
 		 break;
 		}
 	}

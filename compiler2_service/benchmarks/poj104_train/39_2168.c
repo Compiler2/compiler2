@@ -12,10 +12,10 @@ int lun;
 int jiang;
 }a[100];
 	int n,i,max,k,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].fen,&a[i].pin,&a[i].gan,&a[i].sheng,&a[i].lun);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].fen,&a[i].pin,&a[i].gan,&a[i].sheng,&a[i].lun);
 		a[i].jiang=0;
 		if(a[i].fen>80&&a[i].lun>0)
 			a[i].jiang=a[i].jiang+8000;
@@ -35,5 +35,5 @@ int jiang;
 			max=a[i].jiang;
 			k=i;
 		}
-		printf("%s\n%d\n%d",a[k].name,a[k].jiang,sum);
+		my_printf("%s\n%d\n%d",a[k].name,a[k].jiang,sum);
 }

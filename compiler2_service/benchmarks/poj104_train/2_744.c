@@ -8,7 +8,7 @@ int main_bench()
 		zhe[i]=0;
 	}
 	char s[26];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	struct
 	{
 		int num;
@@ -16,7 +16,7 @@ int main_bench()
 	}shu[1000];
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&shu[i].num,shu[i].s);
+		my_scanf("%d%s",&shu[i].num,shu[i].s);
 	}
 for(i=0;i<m;i++)
 {
@@ -62,14 +62,14 @@ for(i=0;i<m;i++)
 			}
 		}
 			name='A'+x;
-			printf("%c\n",name);
-		printf("%d\n",t);
+			my_printf("%c\n",name);
+		my_printf("%d\n",t);
 		for(i=0;i<m;i++)
 		{
 			for(j=0;j<26;j++)
 			{
 			if(shu[i].s[j]==name)
-				printf("%d\n",shu[i].num);
+				my_printf("%d\n",shu[i].num);
 			}
 		}
 

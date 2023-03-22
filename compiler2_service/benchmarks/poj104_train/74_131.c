@@ -29,17 +29,17 @@ int judge_h(int m)
 int main_bench()
 {
 	int m,n,i,j=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
         if(judge_p(i)&&judge_h(i)&&j)
-			printf(",%d",i);
+			my_printf(",%d",i);
 		if(judge_p(i)&&judge_h(i)&&!j)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			j++;
 		}
 	}
 	if(!j)
-		printf("no");
+		my_printf("no");
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int m,n,rn=0,r=0,i=0,j=0,a,l=0,num,k=-1,re[1000]={0};
 
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	for(i=m;i<=n;i++)
 	{
@@ -39,12 +39,12 @@ int main_bench()
 			}
 		}
 	}
-	if(k==-1)printf("no");
+	if(k==-1)my_printf("no");
 	else{
 	    for(i=0;i<=k;i++)
 		{
-			if(i==k)printf("%d",re[k]);
-			else printf("%d,",re[i]);
+			if(i==k)my_printf("%d",re[k]);
+			else my_printf("%d,",re[i]);
 		}
 	}
 	

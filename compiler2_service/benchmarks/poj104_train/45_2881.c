@@ -5,8 +5,8 @@ int main_bench()
     char c1[51],c2[51];
     char *pc1,*pc2;
     int f=0,i,j,F=0;
-    scanf("%s",c1);
-    scanf("%s",c2);
+    my_scanf("%s",c1);
+    my_scanf("%s",c2);
     pc1=c1;
     pc2=c2;
    for(i=0;c2[i]!='\0';i++)
@@ -18,7 +18,7 @@ int main_bench()
            {
                if(j==(strlen(c1)-1))
                   {
-               printf("%d",f);
+               my_printf("%d",f);
                F=1;
                break;
                   }

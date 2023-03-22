@@ -18,7 +18,7 @@ int main_bench()
 	*(p+n-1)=b+*(p+n-1);
 	for(i=0;i<n;i++)
 	{
-		printf("%c",*(p+i));
+		my_printf("%c",*(p+i));
 	}
 }
 	

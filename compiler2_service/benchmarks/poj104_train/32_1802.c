@@ -7,10 +7,10 @@ int main_bench()
 	int n,i,j,k,a[105]={0},b[105]={0},c[105]={0},l1,l2,l,cha;
 	char s1[105],s2[105];
 
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (k=1;k<=n;k++)
 	{
-	   scanf("%s %s",s1,s2);
+	   my_scanf("%s %s",s1,s2);
        l1=strlen(s1);
        l2=strlen(s2);
        
@@ -37,10 +37,10 @@ int main_bench()
 	   }
 	   for (i=l1;i>=0;i--)
 	   {
-	     printf("%d",c[i]);
+	     my_printf("%d",c[i]);
 		 
 	   }
-	   printf ("\n");
+	   my_printf ("\n");
 	   for (i=0;i<=104;i++)
 	   {
 	   a[i]=0;b[i]=0;c[i]=0;

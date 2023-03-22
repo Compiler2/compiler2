@@ -14,17 +14,17 @@ int main_bench()
 		b[y]=b[y-2]+b[y-1];
 		y++;
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(i<=m)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		z = 0; j =0;
 		while(j<n)
 		{
 			z=z+a[j]/b[j];
 			j++;
 		}
-		printf("%.3lf\n",z);
+		my_printf("%.3lf\n",z);
 		i++;
 	}
 	return 0;

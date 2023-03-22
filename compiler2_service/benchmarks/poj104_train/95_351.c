@@ -13,22 +13,22 @@ int main_bench()
 			s2[i]-='a'-'A';
 
 		if( s1[ i ] > s2[ i ] )
-		{	printf(">");
+		{	my_printf(">");
 		return 0 ;}
 		else
 		if( s1[ i ] < s2[ i ] )
-		{	printf("<");
+		{	my_printf("<");
 		return 0 ;}
 		}
 	if( s1[ i ] == 0 )
 	{
 		if ( s2[ i ] == 0 )
-			printf("=");
+			my_printf("=");
 		else
-			printf("<");
+			my_printf("<");
 	}
 	else
-		printf(">");
+		my_printf(">");
 	
 	return 0;
 }

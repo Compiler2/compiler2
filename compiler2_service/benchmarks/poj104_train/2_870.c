@@ -4,13 +4,13 @@ int main_bench()
 {
 	int m,i,a[1000]={0},count[30]={0},temp,j,max=-999,flag;
 	char s[1000][30]={0},cha;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 		for(j=1;j<30;j++)
 		{
-			scanf("%c", &s[i][j]);
+			my_scanf("%c", &s[i][j]);
 			if(s[i][j]==' ') 
 			{
 				s[i][j]=0;
@@ -33,7 +33,7 @@ int main_bench()
 			max=count[i];
 		}
 	}
-	printf("%c\n%d\n", flag+64,max);
+	my_printf("%c\n%d\n", flag+64,max);
 	cha='A'+flag-1;
 	for(i=1;i<=m;i++)
 	{
@@ -41,7 +41,7 @@ int main_bench()
 		{
 			if(s[i][j]==cha)
 			{
-				printf("%d\n", a[i]);
+				my_printf("%d\n", a[i]);
 			}
 		}
 	}

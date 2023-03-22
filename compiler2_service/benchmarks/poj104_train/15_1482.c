@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a[1000][1000],i,j;
 	int n,s1,s2,l1,l2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	for(i=1;i<n-1;i++)
 	{
@@ -26,6 +26,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",(s2-s1)*(l2-l1));
+	my_printf("%d",(s2-s1)*(l2-l1));
 	return 0;
 }

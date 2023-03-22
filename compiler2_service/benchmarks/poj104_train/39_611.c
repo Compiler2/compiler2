@@ -13,10 +13,10 @@ int main_bench()
 {
 	int n,s[150]={0},i,sum=0,max=0;
 	char name[25];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d%s%s%d",a[i].name,&a[i].qimo,&a[i].banji,a[i].ganbu,a[i].xibu,&a[i].lunwen);
+		my_scanf("%s%d%d%s%s%d",a[i].name,&a[i].qimo,&a[i].banji,a[i].ganbu,a[i].xibu,&a[i].lunwen);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -40,5 +40,5 @@ int main_bench()
 		}
 		sum+=s[i];
 	}
-	printf("%s\n%d\n%d\n",name,max,sum);
+	my_printf("%s\n%d\n%d\n",name,max,sum);
 }

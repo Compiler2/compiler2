@@ -3,9 +3,9 @@
 
 int main_bench(){
 	int n,i,j=1,xy[100][2],zc[100],k,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&xy[i][1],&xy[i][2]);
+		my_scanf("%d %d",&xy[i][1],&xy[i][2]);
 	}
 	zc[1]=0;
 	for(i=0;i<n;i++){
@@ -22,7 +22,7 @@ int main_bench(){
 		if(max<zc[k])
 			max=zc[k];
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 
 	return 0;
 }

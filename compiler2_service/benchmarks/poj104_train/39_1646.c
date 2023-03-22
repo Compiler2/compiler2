@@ -9,7 +9,7 @@ int main_bench()
 	int temp_name;
 	int all_money=0;
 	int i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for(i=0;i<n;i++)
 	{
@@ -19,12 +19,12 @@ int main_bench()
 		char xi_bu;
 		int lun_wen;
 
-		scanf("%s", name[i]);
+		my_scanf("%s", name[i]);
 
-		scanf("%d", &qi_mo);
-		scanf("%d", &ping_yi);
-		scanf(" %c %c", &gan_bu, &xi_bu);
-		scanf("%d", &lun_wen);
+		my_scanf("%d", &qi_mo);
+		my_scanf("%d", &ping_yi);
+		my_scanf(" %c %c", &gan_bu, &xi_bu);
+		my_scanf("%d", &lun_wen);
 		if((qi_mo>80)&&(lun_wen>=1))
 			temp += 8000;
 		if((qi_mo>85)&&(ping_yi>80))
@@ -43,7 +43,7 @@ int main_bench()
 		all_money += temp;
 		temp = 0;
 	}
-	printf("%s\n",name[temp_name]);
-	printf("%d\n",temp_money);
-	printf("%d\n",all_money);
+	my_printf("%s\n",name[temp_name]);
+	my_printf("%d\n",temp_money);
+	my_printf("%d\n",all_money);
 }

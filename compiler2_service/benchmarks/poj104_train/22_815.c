@@ -24,6 +24,6 @@ int main_bench()
      k++;
     }
      if(next!=-1) 
-     printf("%d",next);
-     else printf("No");
+     my_printf("%d",next);
+     else my_printf("No");
 }

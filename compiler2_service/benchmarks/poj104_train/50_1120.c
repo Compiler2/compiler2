@@ -5,7 +5,7 @@ int main_bench()
 {
 	int w,i,j,day,x,y;
 	int a[12];
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	a[0]=31;
 	a[2]=31;
 	a[4]=31;
@@ -27,7 +27,7 @@ int main_bench()
 		x=day%7;
 		y=x+w;
 		if(y%7==5)
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 	}
 	return 0;
 }

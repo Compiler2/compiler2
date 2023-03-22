@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,s100,s50,s20,s10,s5,s1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     s100=n/100;
     int m=n-s100*100;
     if(m>=90){
@@ -117,7 +117,7 @@ int main_bench()
     s5=0;
     s1=m;}
     }
-    printf("%d\n%d\n%d\n%d\n%d\n%d\n",s100,s50,s20,s10,s5,s1);
+    my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",s100,s50,s20,s10,s5,s1);
     return 0;
 }
 

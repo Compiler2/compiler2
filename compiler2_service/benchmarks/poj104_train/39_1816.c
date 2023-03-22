@@ -13,11 +13,11 @@ main_bench()
 {
 	struct stud xx[100];
 	int n,i,my[100],max,sum=0,re;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d %d %c %c %d",xx[i].a,&xx[i].sco1,&xx[i].sco2,&xx[i].mon,&xx[i].west,&xx[i].ess);
+		my_scanf("%s%d %d %c %c %d",xx[i].a,&xx[i].sco1,&xx[i].sco2,&xx[i].mon,&xx[i].west,&xx[i].ess);
 		getchar();
 		my[i]=0;
         if(xx[i].sco1>80&&xx[i].ess>0)
@@ -41,5 +41,5 @@ main_bench()
 			re=i;
 		}
 	}
-	printf("%s\n%d\n%d",xx[re].a,max,sum);
+	my_printf("%s\n%d\n%d",xx[re].a,max,sum);
 }

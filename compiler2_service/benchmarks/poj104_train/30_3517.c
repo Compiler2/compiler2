@@ -13,8 +13,8 @@ int judge(int num)
 int main_bench()
 {
     int i,num,sum=0;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=1;i<=num;i++)
 		if(judge(i)==1) sum+=i*i;
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }

@@ -47,7 +47,7 @@ void day()
 int main_bench()
 {
 	int n,m;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	start(n);
 	while (m--)
 	{
@@ -58,9 +58,9 @@ int main_bench()
 	{
 		for (int j=1;j<9 ;j++ )
 		{
-			printf("%d ",a[i][j]);
+			my_printf("%d ",a[i][j]);
 		}
-		printf("%d\n",a[i][9]);
+		my_printf("%d\n",a[i][9]);
 	}
 	return 0;
 }

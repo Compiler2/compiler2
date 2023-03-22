@@ -10,8 +10,8 @@ int main_bench()
 	{
 		if (a[i]==' ')
 		{	
-			for(j=i+1;a[j]!=' '&&a[j]!='\0';j++) printf("%c",a[j]); printf(" ");
+			for(j=i+1;a[j]!=' '&&a[j]!='\0';j++) my_printf("%c",a[j]); my_printf(" ");
 		}
 	}
-	for (i=0;a[i]!=' '&&a[i]!='\0';i++) printf("%c",a[i]);
+	for (i=0;a[i]!=' '&&a[i]!='\0';i++) my_printf("%c",a[i]);
 }

@@ -16,17 +16,17 @@ int main_bench()
 	struct list stu[100];
 	int all(struct list stu);
 	int i,k,n,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].gb,&stu[i].xb,&stu[i].lw);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].g1,&stu[i].g2,&stu[i].gb,&stu[i].xb,&stu[i].lw);
 	}
 	for (i=0;i<n;i++) {stu[i].total=all(stu[i]);sum=sum+stu[i].total;}
 	for (k=n-1,i=n-2;i>=0;i--)
 	{
 		if (stu[k].total<=stu[i].total) k=i;
 	}
-	printf("%s\n%d\n%d\n",stu[k].name,stu[k].total,sum);
+	my_printf("%s\n%d\n%d\n",stu[k].name,stu[k].total,sum);
 }
 
 int all(struct list stu)

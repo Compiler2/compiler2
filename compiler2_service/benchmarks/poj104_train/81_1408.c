@@ -9,12 +9,12 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&jz[i][j]);
+			my_scanf("%d",&jz[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(exchange(jz,n,m)==0)
-		printf("error\n");
+		my_printf("error\n");
 	return 0;
 }
 int exchange(int row[5][5],int n,int m)
@@ -37,9 +37,9 @@ int exchange(int row[5][5],int n,int m)
 		{
 			for(j=0;j<4;j++)
 			{
-			    printf("%d ",row[i][j]);
+			    my_printf("%d ",row[i][j]);
 			}
-			printf("%d\n",row[i][4]);
+			my_printf("%d\n",row[i][4]);
 		}
         return (1);
 	}

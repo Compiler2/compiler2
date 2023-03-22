@@ -4,12 +4,12 @@ int main_bench()
 {
 int n,m,i,k,l,j=0,*p;
 int a[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 p=a;
 for(i=0;i<n;i++)
-scanf("%d",p++);
+my_scanf("%d",p++);
 p=a;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<n-j;i++)
 {
 if(*(p+i)==m)
@@ -22,7 +22,7 @@ i--;
 }
 }
 for(i=0;i<n-j-1;i++)
-{printf("%d ",*p);p++;}
+{my_printf("%d ",*p);p++;}
 p=a;
-printf("%d",*(p+n-j-1));
+my_printf("%d",*(p+n-j-1));
 }

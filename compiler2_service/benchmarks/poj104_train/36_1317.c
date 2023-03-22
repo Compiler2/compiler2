@@ -6,13 +6,13 @@ int main_bench()
 
 	int len1,len2;
 	char a[200],b[200];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	sort(a,len1);
 	sort(b,len2);
-	if(strcmp(a,b)==0) printf("YES");
-	else printf("NO");
+	if(strcmp(a,b)==0) my_printf("YES");
+	else my_printf("NO");
     return 0;
 }
 void sort(char c[],int n)

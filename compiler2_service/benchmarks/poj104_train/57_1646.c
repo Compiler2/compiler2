@@ -2,11 +2,11 @@
 
 int main_bench()
 {   int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		char s[100];
 		int k;
-		scanf("%s",s);
+		my_scanf("%s",s);
 		k=strlen(s);
 		char s1[4],s2[3];
 		s1[0]=s[k-3];s1[1]=s[k-2];s1[2]=s[k-1];s1[3]='\0';
@@ -18,7 +18,7 @@ int main_bench()
 				s3[j]=s[j];
 			}
 			s3[k-3]='\0';
-			printf("%s\n",s3);
+			my_printf("%s\n",s3);
 		}
 		else if((strcmp(s2,"ly")==0)||(strcmp(s2,"er")==0)){
 			char s4[100];
@@ -27,7 +27,7 @@ int main_bench()
 				s4[h]=s[h];
 			}
 			s4[k-2]='\0';
-			printf("%s\n",s4);
+			my_printf("%s\n",s4);
 		}
 	}
 	return 0;

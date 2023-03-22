@@ -11,7 +11,7 @@ int main_bench()
  memset(a,0,100);
 
 
- scanf("%s",a);
+ my_scanf("%s",a);
  gets(s);
 
  l=strlen(a);
@@ -33,7 +33,7 @@ int main_bench()
 
   if(e==0)
   {
-   printf("%d",i-1);
+   my_printf("%d",i-1);
    break;
   }
 

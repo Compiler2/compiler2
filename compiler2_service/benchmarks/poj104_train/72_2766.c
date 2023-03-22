@@ -4,7 +4,7 @@
 int main_bench()
 {
     int m,n;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int hei[m][n];
     int top[m][n];
     
@@ -13,7 +13,7 @@ int main_bench()
     {
         for(j=0;j<n;j=j+1)
         {
-            scanf("%d",&(hei[i][j]));
+            my_scanf("%d",&(hei[i][j]));
             top[i][j]=1;
         }
     }
@@ -33,7 +33,7 @@ int main_bench()
     {
         for(j=0;j<n;j=j+1)
         {
-            if(top[i][j]==1){printf("%d %d\n",i,j);}
+            if(top[i][j]==1){my_printf("%d %d\n",i,j);}
         }
     }
     

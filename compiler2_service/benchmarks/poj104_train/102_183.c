@@ -14,23 +14,23 @@ int main_bench()
 	float f[41]={0};
 
 	int i=1,j=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	while(n--)
 	{
 			
 		
 
-			scanf("%s",s);
+			my_scanf("%s",s);
 
 			if(s[0]=='m') 	
 			{
-				scanf("%f",&m[mi++]);
+				my_scanf("%f",&m[mi++]);
 
 			}
 			else
 			{
-				scanf("%f",&f[fi++]);
+				my_scanf("%f",&f[fi++]);
 
 			}
 
@@ -54,7 +54,7 @@ int main_bench()
 
 	for(i=1;i<mi;i++)
 		{
-			printf("%.2f ",m[i]);
+			my_printf("%.2f ",m[i]);
 		}
 
 
@@ -70,9 +70,9 @@ int main_bench()
 
 		for(i=1;i<fi-1;i++)
 		{
-			printf("%.2f ",f[i]);
+			my_printf("%.2f ",f[i]);
 		}
-	printf("%.2f\n",f[i]);
+	my_printf("%.2f\n",f[i]);
 
 
 

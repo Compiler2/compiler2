@@ -13,10 +13,10 @@ int main_bench()
 		int lw;
 		int sch;
 	}stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		stu[i].sch=0;
-		scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].mc,&stu[i].bc,&stu[i].bg,&stu[i].xb,&stu[i].lw);
+		my_scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].mc,&stu[i].bc,&stu[i].bg,&stu[i].xb,&stu[i].lw);
 		if(stu[i].mc>80&&stu[i].lw>0){
 			stu[i].sch=8000;
 			sum+=8000;
@@ -45,6 +45,6 @@ int main_bench()
 			b=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[b].name,stu[b].sch,sum);
+	my_printf("%s\n%d\n%d\n",stu[b].name,stu[b].sch,sum);
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int S[300],a,b,c,i,j,k;
 	for(i=0;i<300;i++)
 		{
-			scanf("%d",&S[i]);
+			my_scanf("%d",&S[i]);
 			if (getchar()=='\n')
 				break;
 		};
@@ -31,9 +31,9 @@ int main_bench()
 			a=S[k];
 		}
 	if (b!=c&&i!=0)
-		printf("%d\n",a);
+		my_printf("%d\n",a);
 	else
-		printf("No");
+		my_printf("No");
 	
 	return 0;
 	

@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100]={0};
 	int b,c;
 	int i,j=0;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&b,&c);
+		my_scanf("%d%d",&b,&c);
 		if(b<=140&&b>=90&&c<=90&&c>=60){
 			a[j]++;
 		}
@@ -21,6 +21,6 @@ int main_bench(){
 			b=a[i];
 		}
 	}
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }

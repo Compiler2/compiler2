@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,a1,a2,a3,a4,b;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	a1=a/1000;
 	b=a-a1*1000;
 	a2=b/100;
@@ -14,33 +14,33 @@ int main_bench()
 	if(a>999)
 	{
 	if(b>999)
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	else if(b>99)
-		printf("0%d\n",b);
+		my_printf("0%d\n",b);
 	else if(b>9)
-		printf("00%d\n",b);
-	else printf("000%d\n",b);
+		my_printf("00%d\n",b);
+	else my_printf("000%d\n",b);
 	}
 	else if(a>99)
 	{
 	b=b/10;
 	if(b>99)
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	else if(b>9)
-		printf("0%d\n",b);
-	else printf("00%d\n",b);
+		my_printf("0%d\n",b);
+	else my_printf("00%d\n",b);
 	}
 	else if(a>9)
 	{
 	b=b/100;
     if(b>9)
-		printf("%d\n",b);
-	else printf("0%d\n",b);
+		my_printf("%d\n",b);
+	else my_printf("0%d\n",b);
 	}
 	else 
 	{
 		b=b/1000;
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	}
 	return 0;
 }

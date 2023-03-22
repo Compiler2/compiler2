@@ -37,14 +37,14 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 		}
 	}
-	scanf("%d %d", &n ,&m);
+	my_scanf("%d %d", &n ,&m);
 	c=jiaohuan(a, n, m);
 	if(c==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	if(c==1)
 	{	
@@ -52,10 +52,10 @@ int main_bench()
 		{
 			for(j=0;j<4;j++)
 			{
-				printf("%d ", a[i][j]);
+				my_printf("%d ", a[i][j]);
 			}
-			printf("%d", a[i][4]);
-			printf("\n");
+			my_printf("%d", a[i][4]);
+			my_printf("\n");
 		}
 	}
 	return 0;

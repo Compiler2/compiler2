@@ -4,12 +4,12 @@ int main_bench()
 {
 	int array[100][100];
 	int i,j,k,row,col,sum;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		}
 	}
 	if(row==col)
@@ -18,7 +18,7 @@ int main_bench()
 		{
 		    for(i=0;i<=k;i++)
 			{
-			    printf("%d\n",array[i][k-i]);
+			    my_printf("%d\n",array[i][k-i]);
 			}
 		}
 	    sum=row;
@@ -26,7 +26,7 @@ int main_bench()
 		{
 		    for(j=k;j<row;j++)
 			{
-			    printf("%d\n",array[j][sum-j]);
+			    my_printf("%d\n",array[j][sum-j]);
 			}
 		    sum++;
 		}
@@ -37,14 +37,14 @@ int main_bench()
 		{
 		    for(i=0;i<=k;i++)
 			{
-			    printf("%d\n",array[i][k-i]);
+			    my_printf("%d\n",array[i][k-i]);
 			}
 		}
 		for(k=row;k<col;k++)
 		{
 			for(i=0;i<row;i++)
 			{
-				printf("%d\n",array[i][k-i]);
+				my_printf("%d\n",array[i][k-i]);
 			}
 		}
         sum=col-1;
@@ -52,7 +52,7 @@ int main_bench()
 		{
 		    for(j=k;j<row;j++)
 			{
-			    printf("%d\n",array[j][sum+k-j]);
+			    my_printf("%d\n",array[j][sum+k-j]);
 			}
 		}
 	}
@@ -62,14 +62,14 @@ int main_bench()
 		{
 		    for(i=0;i<=k;i++)
 			{
-			    printf("%d\n",array[i][k-i]);
+			    my_printf("%d\n",array[i][k-i]);
 			}
 		}
 		for(k=col;k<row;k++)
 		{
 			for(i=col-1;i>=0;i--)
 			{
-				printf("%d\n",array[k-i][i]);
+				my_printf("%d\n",array[k-i][i]);
 			}
 		}
 		sum=0;
@@ -77,7 +77,7 @@ int main_bench()
 		{
 			for(i=col-1;i>sum;i--)
 			{
-				printf("%d\n",array[k-i][i]);
+				my_printf("%d\n",array[k-i][i]);
 			}
 			sum++;
 		}

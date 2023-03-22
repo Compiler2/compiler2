@@ -4,10 +4,10 @@ void swap(int a[],int j);
 int main_bench()
 {
 	int i,j,m,n,a[101];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=1;i<=m;i++)
 	{
@@ -18,8 +18,8 @@ int main_bench()
 	}
 	for(i=1;i<=n;i++)
 	{
-		if(i==1) printf("%d",a[i]);
-		else printf(" %d",a[i]);
+		if(i==1) my_printf("%d",a[i]);
+		else my_printf(" %d",a[i]);
 	}
 }
 void swap(int a[],int j)

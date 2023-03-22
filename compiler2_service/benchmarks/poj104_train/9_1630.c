@@ -4,7 +4,7 @@ int main_bench()
 {
     int n;
     int p,q;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     struct patient{
            char id[20];
            int age;
@@ -12,7 +12,7 @@ int main_bench()
     int i;
     for(i=0;i<n;i++)
     {
-                    scanf("%s%d", pa1[i].id, &pa1[i].age);
+                    my_scanf("%s%d", pa1[i].id, &pa1[i].age);
     }
      for(i=0;i<n;i++)
     {
@@ -76,7 +76,7 @@ int main_bench()
                     {
                               if(pa2[p].age==a[h])
                               {
-                                        printf("%s\n", pa2[p].id);
+                                        my_printf("%s\n", pa2[p].id);
                               }
                     }
       }
@@ -89,7 +89,7 @@ int main_bench()
     {
                     if(pa2[p].age<60)
                     {
-                                     printf("%s\n", pa2[p].id);
+                                     my_printf("%s\n", pa2[p].id);
                     }
     }
   

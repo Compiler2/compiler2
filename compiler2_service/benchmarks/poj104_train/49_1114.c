@@ -12,7 +12,7 @@ int main_bench()
 				if(a[m]==a[n]) B=1;
 				else  {B=0;break;}
 			}
-		if(B==1) {for(i=j,x=0;x<k;i++,x++) printf("%c",a[i],m,n);printf("\n");}
+		if(B==1) {for(i=j,x=0;x<k;i++,x++) my_printf("%c",a[i],m,n);my_printf("\n");}
 		}
 	}
 	return 0;

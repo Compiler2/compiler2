@@ -24,8 +24,8 @@ int arr(char a[100],char b[100])
 int main_bench()
 {
     char a[100],b[100];
-    scanf("%s %s",a,b);
-    if(arr(a,b)==0) printf("NO");
-    if(arr(a,b)==1) printf("YES");
+    my_scanf("%s %s",a,b);
+    if(arr(a,b)==0) my_printf("NO");
+    if(arr(a,b)==1) my_printf("YES");
     return 0;
 }

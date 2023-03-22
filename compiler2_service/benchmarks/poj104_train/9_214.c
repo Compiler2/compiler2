@@ -9,13 +9,13 @@ struct data{
 };
 int main_bench() {
 	int i,j,n,max,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct data *head=(struct data*)malloc(sizeof(struct data));
 	struct data *p,*pp,*de;
 	pp=head;
 	for(i=0;i<n;i++) {
 		p=(struct data*)malloc(sizeof(struct data));
-		scanf("%s %d",p->c,&p->w);
+		my_scanf("%s %d",p->c,&p->w);
 		p->old=0;
 		pp->next=p;
 		pp=p;
@@ -45,12 +45,12 @@ int main_bench() {
 			}
 			pp=pp->onext;
 		}
-		printf("%s\n",de->c);
+		my_printf("%s\n",de->c);
 		de->w=-1;
 	}
 	pp=head->next;
 	for(i=0;i<n;i++) {
-		if(pp->old==0) printf("%s\n",pp->c);
+		if(pp->old==0) my_printf("%s\n",pp->c);
 		pp=pp->next;
 
 	}

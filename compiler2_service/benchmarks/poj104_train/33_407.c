@@ -5,14 +5,14 @@ int main_bench()
     int n;
     int t;
 	char dna[10000],hbl[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(t=0;t<n;t++){
                      
                      int i,k=0;
                      for(i=0;i<10000;i++){
                                          dna[i]='0';
                                          }
-                     scanf("%s",dna);
+                     my_scanf("%s",dna);
                      for(i=0;i<10000;i++){
                                          if(dna[i]!='0'){
                                                          k++;
@@ -34,7 +34,7 @@ int main_bench()
                                                          }
                                          }
                      hbl[k-1]='\0';
-		   printf("%s\n",hbl);		
+		   my_printf("%s\n",hbl);		
 	}               
     return 0;
 }         

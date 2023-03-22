@@ -3,9 +3,9 @@
 int main_bench(){
     char zfc[100][21];
     int n,i,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    {scanf("%s",zfc[i]);
+    {my_scanf("%s",zfc[i]);
     }
     for(i=0;i<n;i++)
     {if((zfc[i][0]>='A'&&zfc[i][0]<='Z')||zfc[i][0]>='a'&&zfc[i][0]<='z'||zfc[i][0]=='_')
@@ -18,10 +18,10 @@ int main_bench(){
         }
     
         }if(c==(m-1)){
-            printf("yes\n");
-        }else{printf("no\n");}
+            my_printf("yes\n");
+        }else{my_printf("no\n");}
     }else{
-        printf("no\n");      
+        my_printf("no\n");      
          }
     }
       return 0;  

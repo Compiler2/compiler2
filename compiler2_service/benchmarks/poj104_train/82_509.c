@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,i,t=0,s=0,h,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int ss[100],sz[100],xs[100]={0};
 	xs[0]=0;
     for(i=0;i<n;i++){
-        scanf("%d %d",&(ss[i]),&(sz[i]));
+        my_scanf("%d %d",&(ss[i]),&(sz[i]));
         if((ss[i]<=140)&&(ss[i]>=90)&&(sz[i]<=90)&&(sz[i]>=60)){
            s++;
            xs[t]=s;}
@@ -20,6 +20,6 @@ int main_bench()
         if(h<(xs[t]))
         h=xs[t];
         }              
-    printf("%d",h);      
+    my_printf("%d",h);      
     return 0;
 }

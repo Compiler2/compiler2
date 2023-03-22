@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,j,m,k;
 	int a[50000][2],b[10000],qj[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i][0],&a[i][1]);
+		my_scanf("%d%d",&a[i][0],&a[i][1]);
 	}
 	for(i=0;i<10000;i++){
 		b[i]=0;
@@ -29,8 +29,8 @@ k=0;
 k++;}
 	}
 	if(k==0){
-printf("%d %d",qj[0],(qj[m-1]+1));}
+my_printf("%d %d",qj[0],(qj[m-1]+1));}
 	else{
-printf("no");}
+my_printf("no");}
 	return 0;
 }

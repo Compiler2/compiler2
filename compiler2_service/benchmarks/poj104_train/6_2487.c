@@ -5,10 +5,10 @@ int m()
 	int m,n,a[10000],i,j,s=0;
 	int *p;
 	p=a;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m*n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -32,11 +32,11 @@ int m()
 int main_bench()
 {
 	int k,i,sum;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=1;i<=k;i++)
 	{
 		sum=m();
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

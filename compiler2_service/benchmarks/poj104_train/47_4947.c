@@ -5,15 +5,15 @@ int main_bench()
 {
 	void change(int *a,int n);
 	int i,n,a[100],*p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++,p++)
-		scanf("%d",p);
-	printf("\n");
+		my_scanf("%d",p);
+	my_printf("\n");
 	p=a;
 	change(p,n);
 	for(p=a;p<a+n-1;p++)
-		printf("%d ",*p);
-	printf("%d",*p);
+		my_printf("%d ",*p);
+	my_printf("%d",*p);
 }
 
 void change(int *a,int n)

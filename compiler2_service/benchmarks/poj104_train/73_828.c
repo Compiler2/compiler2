@@ -8,7 +8,7 @@ int max,min,t,c;
 int i,j;
 for(i=0;i<5;i++)
 for(j=0;j<5;j++)
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 for(i=0;i<5;i++)
 {
 max=a[i][0];
@@ -29,9 +29,9 @@ min=a[j][t];
 break;}
 }
 if(max==min)
-{printf("%d %d %d",i+1,t+1,max);
+{my_printf("%d %d %d",i+1,t+1,max);
 p=1;}
 }
 if(p==0)
-printf("not found");
+my_printf("not found");
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str1[100],str2[100],term;
 	int i,j,len1,len2,k;
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	
 	len1=strlen(str1);
 	len2=strlen(str2);
@@ -33,7 +33,7 @@ int main_bench()
 					for(i=0;i<len1;i++){
 						if((str1[i]-'0')!=(str2[i]-'0'))k=1;}
 	}
-	if((len1!=len2)||k==1)printf("NO");
-	else printf("YES");
+	if((len1!=len2)||k==1)my_printf("NO");
+	else my_printf("YES");
 }
 

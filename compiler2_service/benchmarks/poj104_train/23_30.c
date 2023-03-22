@@ -10,10 +10,10 @@ main_bench()
   for(i=l+1;i>=0;i--)
   { 
 	  if(*(p+i)==' ')
-	  {printf("%s ",p+i+1);
+	  {my_printf("%s ",p+i+1);
 	  *(p+i)='\0';}
   
   }
-  printf("%s",p);
+  my_printf("%s",p);
 
 }

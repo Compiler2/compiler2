@@ -6,9 +6,9 @@ int main_bench()
 	struct qj{
 		int a,b;
 	}d[50000],e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&d[i].a,&d[i].b);
+		my_scanf("%d %d",&d[i].a,&d[i].b);
 	}
 	for(k=1;k<=n;k++){
 		for(i=0;i<n-k;i++){
@@ -32,9 +32,9 @@ int main_bench()
 		}
 	}
 	if(flag==0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("%d %d",d[0].a,d[n-1].b);
+		my_printf("%d %d",d[0].a,d[n-1].b);
 	}
 	return 0;
 }

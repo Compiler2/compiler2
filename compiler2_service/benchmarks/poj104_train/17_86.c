@@ -13,14 +13,14 @@ int main_bench()
     }
     for(i=0;i<100;i++)
     {
-                      scanf("%s",a[i]);
+                      my_scanf("%s",a[i]);
                       n++;
                       if(a[i][0]=='\0')
                       break;
     }
     for(i=0;i<n;i++)
     {
-                      printf("%s\n",a[i]);
+                      my_printf("%s\n",a[i]);
                       for(k=0;k<strlen(a[i]);k++)
                       {
                                                  if(a[i][k]==')')
@@ -46,7 +46,7 @@ int main_bench()
                                                  b[i][k]='?';
 }
                       b[i][strlen(a[i])]='\0';
-                      printf("%s\n",b[i]);
+                      my_printf("%s\n",b[i]);
     }
     return 0;
 } 

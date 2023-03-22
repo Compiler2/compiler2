@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j=1,t2,k,n,a,b=0;
 	float t1;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	do{
 		t2=n*j+k;
 		t1=(float)t2;
@@ -21,7 +21,7 @@ int main_bench()
 	   j++;
 	}while(b<n-1);
 	t2=(int)t1;
-	printf("%d",t2);
+	my_printf("%d",t2);
 	return 0;
 }
 

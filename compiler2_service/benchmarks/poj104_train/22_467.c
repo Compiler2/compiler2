@@ -10,8 +10,8 @@ int main_bench()
 	b=0;
 	while(a==0)
 	{
-		scanf("%d",&m[b]);
-		scanf("%c",&str[0]);
+		my_scanf("%d",&m[b]);
+		my_scanf("%c",&str[0]);
 		if(str[0]=='\n')
 		{
 			a=1;
@@ -44,13 +44,13 @@ int main_bench()
 		}
 		else
 		{
-			printf("%d",m[a]);
+			my_printf("%d",m[a]);
 				a=b;
 				c=1;
 		}
 	}
 	if(c==0)
-		printf("No");
+		my_printf("No");
 
 	return 0;
 }

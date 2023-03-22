@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[501],b[2000][501];
 	int i,j,k,l,p,q,t=0;
-	scanf("%s",a);
+	my_scanf("%s",a);
     l=strlen(a);
 	for(i=0;i<=l-1;i++)       
 	{
@@ -36,8 +36,8 @@ int main_bench()
 		{
 			if(strlen(b[j])==i)
 			{
-				printf("%s",b[j]);
-				printf("\n");
+				my_printf("%s",b[j]);
+				my_printf("\n");
 			}
 		}
 	}

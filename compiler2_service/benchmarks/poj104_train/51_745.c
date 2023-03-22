@@ -12,8 +12,8 @@ void zi(char a[])
 }
 main_bench()
 {
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	zi(a);
 	int m,c[505]={0},i,j,max;
     m=strlen(a);
@@ -26,13 +26,13 @@ main_bench()
     if(c[i]>max)
     max=c[i];
     if(max==0)
-    printf("NO\n");
+    my_printf("NO\n");
     else
     {
-        printf("%d\n",max+1);
+        my_printf("%d\n",max+1);
         for(i=0;i<=m-n;i++)
         if(c[i]==max)
-        printf("%s\n",b[i]);
+        my_printf("%s\n",b[i]);
     }
 
 }

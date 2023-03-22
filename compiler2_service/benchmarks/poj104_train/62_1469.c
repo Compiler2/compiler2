@@ -11,6 +11,6 @@ int main_bench()
     {
         if (*p==' '&&*(p+1)==' ')
             continue;
-        printf("%c",*p);
+        my_printf("%c",*p);
     }
    }

@@ -3,7 +3,7 @@
 int main_bench(){
   char s[55],w[55];int i,j;
   int e=0;
-  scanf("%s %s",s,w);
+  my_scanf("%s %s",s,w);
   for( i=0;i<=strlen(w)-1;i++)
    {
      for( j=0;j<=strlen(s)-1;j++)
@@ -18,10 +18,10 @@ int main_bench(){
           break;
          }
       }  
-      if(e==strlen(s)){printf("%d",i);break;}
+      if(e==strlen(s)){my_printf("%d",i);break;}
                      
    }
-   int y;scanf("%d",&y);
+   int y;my_scanf("%d",&y);
    return 0;
    
     

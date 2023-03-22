@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int n,k,t=0;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	int a[1001];
 	for(int i=1;i<=n;i++){
-		scanf("%d",&a[i]);}
+		my_scanf("%d",&a[i]);}
 	for(int q=1;q<=n-1;q++){
 		for(int r=q+1;r<=n;r++){
 			if(a[q]+a[r]==k){
-				printf("yes");
+				my_printf("yes");
 				t++;
 				break;}
 		}
@@ -19,7 +19,7 @@ int main_bench()
 			break;}
 	}
 	if(t==0){
-		printf("no");}
+		my_printf("no");}
 
 
 	return 0;

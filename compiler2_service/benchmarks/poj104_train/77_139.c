@@ -6,7 +6,7 @@ char str[1000],c1,c2;
 
 int main_bench(){
     int i,j,t=1;
-    scanf("%s",str);
+    my_scanf("%s",str);
     n=strlen(str);
     c1=str[0];
     c2=str[n-1];
@@ -15,7 +15,7 @@ int main_bench(){
         if(str[i]==c2){
             for(j=i-1;j>=0;j--){
                 if(str[j]==c1){
-                    printf("%d %d\n",j,i);
+                    my_printf("%d %d\n",j,i);
                     str[i]=' ';
                     str[j]=' ';
                     break;

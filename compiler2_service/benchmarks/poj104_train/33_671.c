@@ -5,7 +5,7 @@ int main_bench(){
 	char hb[1000][1001];
 	int n;
 	int i,k;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 		for(i=1;i<=n;i++){
 			gets(jj[i]);
 		}

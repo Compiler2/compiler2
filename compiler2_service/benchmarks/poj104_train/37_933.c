@@ -30,9 +30,9 @@ void find(char *str)
 
     if(count==0)
     {
-        printf("no\n");
+        my_printf("no\n");
     }else{
-        printf("%c\n", *num);
+        my_printf("%c\n", *num);
     }
 }
 
@@ -41,7 +41,7 @@ int main_bench()
     int n, i;
     char str[100000];
 
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     for(i=0; i<n; i++)
     {
         gets(str);

@@ -7,7 +7,7 @@ int main_bench() {
 	int len;
 	int m;
 	int n;
-	scanf("%s", s);
+	my_scanf("%s", s);
 	len = strlen(s);
 	m = 0;
 	for(i=0, j=0; i<len; i++) {
@@ -28,6 +28,6 @@ int main_bench() {
 		j=1;
 	}
 	s1[j] = '\0';
-	printf("%s\n%d\n", s1, m);
+	my_printf("%s\n%d\n", s1, m);
 	return 0;
 }

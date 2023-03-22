@@ -8,10 +8,10 @@ int main_bench()
  gets(a1);
  gets(a2);
     t=MyStrCmp(a1,a2);
- if(t==1)printf(">");
- if(t==0)printf("=");
- if(t==-1)printf("<");
- printf("\n");
+ if(t==1)my_printf(">");
+ if(t==0)my_printf("=");
+ if(t==-1)my_printf("<");
+ my_printf("\n");
  return 0;
 }
 

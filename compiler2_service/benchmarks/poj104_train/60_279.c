@@ -3,9 +3,9 @@
 int main_bench()
 {
     int n,i,j,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<=4)
-    printf("empty");
+    my_printf("empty");
     else
     {
         for(i=3;i<=n-2;i++)
@@ -17,7 +17,7 @@ int main_bench()
                 for(k=2;k<=i+1;k++)
                     if((i+2)%k==0)break;
                 if(k>i+1)
-                    printf("%d %d\n",i,i+2);
+                    my_printf("%d %d\n",i,i+2);
                 else;
             }
             else;

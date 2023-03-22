@@ -3,8 +3,8 @@
 main_bench()
 {
 	char a[252],b[252],c[252];
-	scanf ("%s",a);
-	scanf ("%s",b);
+	my_scanf ("%s",a);
+	my_scanf ("%s",b);
 	int i,k,m,n,p,d,e;
 	d=strlen(a);
 	e=strlen(b);
@@ -56,14 +56,14 @@ main_bench()
     {c[0]='1';
      c[1]=c[1]-10;
 	 for (int l=0;l<m+1;l++)
-	 printf ("%c",c[l]);}
+	 my_printf ("%c",c[l]);}
 	else if (c[1]=='0'&&m==01)
-	printf ("0");
+	my_printf ("0");
 	else
 	{for (int l=1;l<m+1;l++)
 	 {if (c[l]!='0')
 	 {p=l;
 	 break;}}
 	 for (i=p;i<m+1;i++)
-	 printf ("%c",c[i]);}
+	 my_printf ("%c",c[i]);}
 	 }

@@ -22,12 +22,12 @@ int main_bench()
 {
    int l1,l2,l;    
    int j;    
-   scanf("%s",a);
+   my_scanf("%s",a);
    l1 = strlen(a); 
    getchar();
    for(j = 0;j < l1;j ++)
        b[l1-j-1] = a[j] - '0';
-   scanf("%s",a);
+   my_scanf("%s",a);
    l2 = strlen(a); 
    for(j = 0;j < l2;j ++)
        c[l2-j-1] = a[j] - '0';
@@ -35,7 +35,7 @@ int main_bench()
    while(b[l-1] == 0 && l)
    l--;  
    for(j = l-1;j >= 0;j--)
-   printf("%c",b[j]+'0');
-   if(l == 0) printf("0");
+   my_printf("%c",b[j]+'0');
+   if(l == 0) my_printf("0");
   return 0;    
 }

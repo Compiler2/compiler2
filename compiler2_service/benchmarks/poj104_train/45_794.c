@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[50],w[50],m[50];
 	int i,j,l,t;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	l=strlen(s);
 	t=strlen(w);
 	for(i=0;i<t;i++)
@@ -16,7 +16,7 @@ int main_bench()
 			m[j]='\0';
 			if(strcmp(m,s)==0)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

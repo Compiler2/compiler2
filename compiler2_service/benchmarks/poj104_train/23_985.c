@@ -19,12 +19,12 @@ int main_bench()
 		if(a[i]==' ')
 		{
 			for(j=i+1;a[j]!=' ';j++)
-				printf("%c",a[j]);
-			printf(" ");
+				my_printf("%c",a[j]);
+			my_printf(" ");
 		}
 		if(i==0)
 			for(j=0;a[j]!=' ';j++)
-				printf("%c",a[j]);
+				my_printf("%c",a[j]);
 		i--;
 	}
 	return 0;

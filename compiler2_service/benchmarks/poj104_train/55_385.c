@@ -6,7 +6,7 @@ char A[200],B[200];
 int a,b,i=0,m=0;
 long int n=0,k=0;
 
-scanf("%d%s%d",&a,A,&b);
+my_scanf("%d%s%d",&a,A,&b);
 
 while (A[i]!='\0')
 {
@@ -19,7 +19,7 @@ while (A[i]!='\0')
 
 k=n;
 i=0;
-if(k==0) printf("%ld",k);
+if(k==0) my_printf("%ld",k);
 
 
 while (n>0)
@@ -45,7 +45,7 @@ while (i>=0)
 	i--;
 }
 
-printf("%s\n",B);
+my_printf("%s\n",B);
 
 
 }

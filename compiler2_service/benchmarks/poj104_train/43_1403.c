@@ -7,7 +7,7 @@ main_bench()
 	int m;
 	int i,j;
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	prime[1]=1;
 	for(i=2;i<=100;i++)
 		for(j=i+1;j<=m;j++)
@@ -15,5 +15,5 @@ main_bench()
 
 	for(j=3;j<=m/2;j=j+2)
 		if(prime[j]==0&&prime[m-j]==0)
-			printf("%d %d\n\n",j,m-j);
+			my_printf("%d %d\n\n",j,m-j);
 }

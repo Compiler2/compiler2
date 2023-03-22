@@ -7,8 +7,8 @@ main_bench()
 	int m,n;
 	int y1,m1,d1,y2,m2,d2;
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	if(y1!=y2)
 	{
 		if((y1 % 4 == 0 && y1 % 100 != 0) || (y1 % 400 == 0))
@@ -97,5 +97,5 @@ main_bench()
 			sum+=365;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 } 

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int func(int x);
 	int n,a,b,c=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<=n-2;i++)
 	{
 		a=func(i);
@@ -12,12 +12,12 @@ int main_bench()
 		if(a==1&&b==1)
 		{
 			c++;
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		}
 	}
 	if(c==0)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 	return 0;
 }

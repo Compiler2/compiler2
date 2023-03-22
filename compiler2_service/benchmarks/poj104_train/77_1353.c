@@ -22,7 +22,7 @@ int match(int i,int l)
 			if(line[j]==boy)
 			{
 				
-				printf("%d %d\n",j,i);
+				my_printf("%d %d\n",j,i);
 				line[j]=' ';
 				break;   
 			}
@@ -35,7 +35,7 @@ int main_bench()
 {
 	int l;
 	int i;
-	scanf("%s",line);
+	my_scanf("%s",line);
 	l=strlen(line);
 	boy=line[0];         
 	for(i=1;i<l;i++)

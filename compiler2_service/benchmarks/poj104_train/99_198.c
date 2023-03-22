@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	double patient[100];
 	for(int m=0;m<n;m++){
-		scanf("%lf",&patient[m]);
+		my_scanf("%lf",&patient[m]);
 	}
 	double a=0,b=0,c=0,d=0;
 	double p;
@@ -20,9 +20,9 @@ int main_bench(){
 		if(p>60)
 			d++;
 	}
-	printf("1-18: %.2lf%%\n",a/(a+b+c+d)*100);
-	printf("19-35: %.2lf%%\n",b/(a+b+c+d)*100);
-	printf("36-60: %.2lf%%\n",c/(a+b+c+d)*100);
-	printf("60??: %.2lf%%",d/(a+b+c+d)*100);
+	my_printf("1-18: %.2lf%%\n",a/(a+b+c+d)*100);
+	my_printf("19-35: %.2lf%%\n",b/(a+b+c+d)*100);
+	my_printf("36-60: %.2lf%%\n",c/(a+b+c+d)*100);
+	my_printf("60??: %.2lf%%",d/(a+b+c+d)*100);
 	return 0;
 }

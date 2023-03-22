@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,b;
 	char a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for( i = 0; i < n; i++)
 	{
-		scanf("%s", a);
+		my_scanf("%s", a);
 		char *p;
 		b=strlen(a);
 		p=&a[b-2];
@@ -18,7 +18,7 @@ int main_bench()
 		p=&a[b-3];
 		if(strcmp(p,"ing")==0)
 			a[b-3]=0;
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

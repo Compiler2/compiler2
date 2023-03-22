@@ -67,16 +67,16 @@ int f2(int n)
 int main_bench()
 {
     int y,mon,d,a;
-    scanf("%d%d%d",&y,&mon,&d);
+    my_scanf("%d%d%d",&y,&mon,&d);
     if(y%4!=0||(y%100==0&&y%400!=0))
     {
         a=f1(mon)+d;
-        printf("%d",a);
+        my_printf("%d",a);
     }
     else
     {
         a=f2(mon)+d;
-        printf("%d",a);
+        my_printf("%d",a);
     }
     getchar();
     getchar();

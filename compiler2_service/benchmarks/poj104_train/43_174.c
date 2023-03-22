@@ -17,11 +17,11 @@ int is(int x)
 int main_bench()
 {
     int i=3,input;
-    scanf("%d",&input);
+    my_scanf("%d",&input);
     while(i<=input/2)
     {
         if(is(i)==0||is(input-i)==0);
-        else printf("%d %d\n",i,input-i);
+        else my_printf("%d %d\n",i,input-i);
         i++;
     }
 

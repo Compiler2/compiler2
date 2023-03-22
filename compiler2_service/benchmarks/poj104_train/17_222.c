@@ -24,17 +24,17 @@ int main_bench()
           }
       }
     }
-    printf("%s\n",a);
+    my_printf("%s\n",a);
     for(i=0;i<200;i++)
     {
     if(a[i]=='\0') break;
-    if(a[i]=='('&& b[i]==1) printf("$");
+    if(a[i]=='('&& b[i]==1) my_printf("$");
     else
-    if(a[i]==')'&&b[i]==1) printf("?");
-    else printf(" ");
+    if(a[i]==')'&&b[i]==1) my_printf("?");
+    else my_printf(" ");
     
     }
-    printf("\n");
+    my_printf("\n");
     
   }
   return 0;

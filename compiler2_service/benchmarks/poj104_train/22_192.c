@@ -3,10 +3,10 @@
 main_bench()
 {
 	int a[301],i=1,n,t=0,p=0,j;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	while(getchar()!='\n')
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 		n=i;
 	}
@@ -20,11 +20,11 @@ main_bench()
 	{
 		if(a[0]>a[i])
 		{
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 			p=1;
 			break;
 		}
 	}
 	if(p==0)
-		printf("No\n");
+		my_printf("No\n");
 }

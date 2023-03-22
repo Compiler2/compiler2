@@ -46,10 +46,10 @@ int main_bench()
     int n;
 	int i, j, index;
 	int max=0, sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s %d %d %c %c %d", student[i].name, &student[i].final, &student[i].assess, &student[i].servant, &student[i].west, &student[i].pub);
+		my_scanf("%s %d %d %c %c %d", student[i].name, &student[i].final, &student[i].assess, &student[i].servant, &student[i].west, &student[i].pub);
 		student[i].bonus=0;
 	}
 	medium=student;
@@ -70,6 +70,6 @@ int main_bench()
 		}
 		sum=sum+student[i].bonus;
 	}
-	printf("%s\n%d\n%d", student[index].name, max, sum);
+	my_printf("%s\n%d\n%d", student[index].name, max, sum);
 	return 0;
 }

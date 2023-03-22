@@ -4,23 +4,23 @@
 int main_bench()
 {
 	int x1,y1,X,Y,i;
-	scanf("%d%d",&x1,&y1);
+	my_scanf("%d%d",&x1,&y1);
 	int a[100][100];
 	for(X=0;X<x1;X++)
 	{
 		for(Y=0;Y<y1;Y++)
 		{
-			scanf("%d",&a[X][Y]);
+			my_scanf("%d",&a[X][Y]);
 		}
 	}
 	int x2,y2;
-	scanf("%d%d",&x2,&y2);
+	my_scanf("%d%d",&x2,&y2);
 	int b[100][100];
 	for(X=0;X<x2;X++)
 	{
 		for(Y=0;Y<y2;Y++)
 		{
-			scanf("%d",&b[X][Y]);
+			my_scanf("%d",&b[X][Y]);
 		}
 	}
 	int c[100][100];
@@ -44,9 +44,9 @@ int main_bench()
 		for(Y=0;Y<y2;Y++)
 		{
 			if((Y+1)%y2!=0)
-				printf("%d ",c[X][Y]);
+				my_printf("%d ",c[X][Y]);
 			else
-				printf("%d\n",c[X][Y]);
+				my_printf("%d\n",c[X][Y]);
 		}
 	}
 	return 0;

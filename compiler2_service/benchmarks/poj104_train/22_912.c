@@ -7,13 +7,13 @@ int main_bench()
 	char c;
 	while(1)
 	{
-		scanf("%d",&a[i++]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i++]);
+		my_scanf("%c",&c);
 		if(c=='\n') break;
 	}
 	if(i==1) 
 	{
-		printf("No\n");
+		my_printf("No\n");
 		return 0;
 	}
 	for(j=0;j<i-1;j++)
@@ -34,11 +34,11 @@ int main_bench()
 		if(a[j]>a[j+1])
 		{
 			t=1;
-			printf("%d",a[j+1]);
+			my_printf("%d",a[j+1]);
 			break;
 		}
 	}
-	if(t==0) printf("No\n");
+	if(t==0) my_printf("No\n");
 	return 0;
 }
 		

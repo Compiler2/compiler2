@@ -4,8 +4,8 @@ int main_bench()
 {
 	int year1,year2,month1,month2,day1,day2,a,a1=0,a2;
 	int date(int year,int a);
-	scanf("%d%d%d",&year1,&month1,&day1);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d",&year1,&month1,&day1);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 	for(;year1<year2||(year1==year2&&month1<month2);)
 	{
 		a1+=date(year1,month1);
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	a2=day2-day1;
 	a=a1+a2;
-	printf("%d\n",a);
+	my_printf("%d\n",a);
 	return 0;
 }
 

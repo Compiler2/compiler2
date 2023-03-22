@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n1,y1,r1,n2,y2,r2,i,d0,d1,d2,d3,d;
-	scanf("%d %d %d %d %d %d",&n1,&y1,&r1,&n2,&y2,&r2);
+	my_scanf("%d %d %d %d %d %d",&n1,&y1,&r1,&n2,&y2,&r2);
 	for(i=n1,d0=0;i<n2;i++)
 	{
        if((i%4==0&&i%100!=0)||i%400==0)
@@ -65,6 +65,6 @@ int main_bench()
 	}
 	d3=r2-r1;
 	d=d0-d1+d2+d3;
-	printf("%d\n",d);
+	my_printf("%d\n",d);
 	return 0;
 }

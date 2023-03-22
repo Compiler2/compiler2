@@ -16,7 +16,7 @@ int huiwen(char *a){
 int main_bench(){
     char a[501],tmp[501];
     int i,j,k,len;
-    scanf("%s",a);
+    my_scanf("%s",a);
     len=strlen(a);
     
     if(len<=1) return 0;
@@ -32,7 +32,7 @@ int main_bench(){
              tmp[k]='\0';
              
              
-          if(huiwen(tmp)==1) printf("%s\n",tmp);
+          if(huiwen(tmp)==1) my_printf("%s\n",tmp);
                             
        
        }   

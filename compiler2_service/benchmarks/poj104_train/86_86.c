@@ -4,14 +4,14 @@
  int main_bench()
  {
 	 int n;
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 int i;
 	 int *s,*r;
 	 s=(int *)malloc(sizeof(int)*n);                         
 	 r=(int *)malloc(sizeof(int)*n);
 	 for (i=0;i<n;i++)
 	 {
-		 scanf("%d",&s[i]);
+		 my_scanf("%d",&s[i]);
 		 if (s[i]==0)r[i]=60;
 		 else 
 		 {
@@ -20,7 +20,7 @@
 			 e=(int *)malloc(sizeof(int)*s[i]);
 			 for (j=0;j<s[i];j++)
 			 {
-				 scanf("%d",&e[j]);
+				 my_scanf("%d",&e[j]);
 			 }
 			 if (3*s[i]+e[j-1]<=60)
 				 r[i]=60-3*s[i];
@@ -36,7 +36,7 @@
 	 }
 	 for (i=0;i<n;i++)
 	 {
-		 printf("%d\n",r[i]);
+		 my_printf("%d\n",r[i]);
 	 }
 	 return 0;
  }

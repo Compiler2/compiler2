@@ -6,7 +6,7 @@
 int main_bench()
 {
     char s1[256],s2[256];
-    scanf("%s %s",s1,s2);
+    my_scanf("%s %s",s1,s2);
     int a,b,l1,l2,l=0;
     int c[256]={0};
     
@@ -26,6 +26,6 @@ int main_bench()
     while (c[l]==0&&l>0)
         l--;
     for (int i=l; i>=0; i--)
-        printf("%d",c[i]);
+        my_printf("%d",c[i]);
     return 0;
 }

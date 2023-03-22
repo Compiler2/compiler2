@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int LEN,sz[1000],i,j[500],l=0;
-	scanf("%d",&LEN);
+	my_scanf("%d",&LEN);
 	for(i=0;i<LEN;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(int k = 1; k <= LEN; k++){
 		int e;
@@ -24,9 +24,9 @@ int main_bench(){
 			l++;
 		}
 	}
-printf("%d",j[0]);
+my_printf("%d",j[0]);
 	for(i=1;i<l;i++){
-		printf(",%d",j[i]);
+		my_printf(",%d",j[i]);
 	}
 	return 0;
 }

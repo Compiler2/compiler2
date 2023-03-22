@@ -4,8 +4,8 @@ int main_bench()
 {
 	char s[50],w[50];
 	int slen,wlen,total,i,j,k;
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	slen=strlen(s);
 	wlen=strlen(w);
 	for(i=0;i<=wlen-slen;i++)
@@ -20,7 +20,7 @@ int main_bench()
 			}
 			if(total==slen)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

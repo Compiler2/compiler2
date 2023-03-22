@@ -5,7 +5,7 @@ int main_bench()
     char a[1001];
     int i,j,l,y;
     int x[100]={0};
-    scanf("%s",a);  
+    my_scanf("%s",a);  
     l=strlen(a);
     for(i=0;i<l;i++)
     {if(a[i]>='a'&&a[i]<='z') a[i]=a[i]-'a'+'A';}
@@ -14,7 +14,7 @@ int main_bench()
      x[y]++;
      if(a[i]==a[i+1]) continue;
      else
-     {printf("(%c,%d)",a[i],x[y]);
+     {my_printf("(%c,%d)",a[i],x[y]);
        x[y]=0;
       }}
     getchar();

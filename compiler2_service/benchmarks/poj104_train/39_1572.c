@@ -19,12 +19,12 @@ int main_bench()
 	char c11,c12;
 	struct student *p;
 	p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(;p<a+n;p++)
 	{
-		scanf("%s",s1);
+		my_scanf("%s",s1);
 		strcpy(p->name,s1);
-		scanf("%d %d %c %c %d",&score1,&judge1,&c11,&c12,&num1);
+		my_scanf("%d %d %c %c %d",&score1,&judge1,&c11,&c12,&num1);
 		p->c1=c11;
 		p->c2=c12;
 		p->judge=judge1;
@@ -52,10 +52,10 @@ int main_bench()
 	{
 		if(p->money==max) 
 		{
-			printf("%s\n%d\n",p->name,p->money);
+			my_printf("%s\n%d\n",p->name,p->money);
 			break;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }

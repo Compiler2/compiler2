@@ -4,9 +4,9 @@ int main_bench(){
 	int i,n,x1=0,x2=0,x3=0,x4=0;
 	double y1,y2,y3,y4;
 	int sz[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 		if(sz[i]<=18){
 			x1=x1++;
 		}
@@ -24,6 +24,6 @@ int main_bench(){
 	y2=(double)x2*100/n;
 	y3=(double)x3*100/n;
 	y4=(double)x4*100/n;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",y1,y2,y3,y4);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",y1,y2,y3,y4);
 	return 0;
 }

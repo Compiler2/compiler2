@@ -5,13 +5,13 @@ int main_bench()
 	char str1[300],str2[300];
 	int i,len1,len2,flag=0;
 	void rank(char str[300]);
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	rank(str1);
 	rank(str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 	if(len1!=len2)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		for(i=0;i<len1;i++)
@@ -22,9 +22,9 @@ int main_bench()
 			}
 	
 	if(flag==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 }
 void rank(char str[300])

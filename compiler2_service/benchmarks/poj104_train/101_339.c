@@ -74,7 +74,7 @@ int main_bench()
 				{
 					for(i=2;i>=0;i--)
 					{
-						printf("%c",name[i]);
+						my_printf("%c",name[i]);
 					}
 				}
 			}

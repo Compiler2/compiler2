@@ -12,10 +12,10 @@ struct stu
     int i,j1,j2,j3,k,max;
     struct stu student[100000]={0};
     struct stu temp;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=0;i<=k-1;i++)
     {
-    scanf("%d%d%d",&student[i].num,&student[i].ch,&student[i].ma); 
+    my_scanf("%d%d%d",&student[i].num,&student[i].ch,&student[i].ma); 
     student[i].to=student[i].ch+student[i].ma;
     }
     max=0;
@@ -27,8 +27,8 @@ struct stu
                             j1=i;               
                       }
     }
-     printf("%d ",student[j1].num);
-     printf("%d\n",student[j1].to);
+     my_printf("%d ",student[j1].num);
+     my_printf("%d\n",student[j1].to);
     max=0;
     for(i=0;i<=k-1;i++)
     {
@@ -39,8 +39,8 @@ struct stu
                             j2=i;               
                       }
     }
-     printf("%d ",student[j2].num);
-     printf("%d\n",student[j2].to);max=0;
+     my_printf("%d ",student[j2].num);
+     my_printf("%d\n",student[j2].to);max=0;
     max=0;
     for(i=0;i<=k-1;i++)
     {
@@ -51,7 +51,7 @@ struct stu
                             j3=i;               
                       }
     }
-     printf("%d ",student[j3].num);
-     printf("%d\n",student[j3].to);
+     my_printf("%d ",student[j3].num);
+     my_printf("%d\n",student[j3].to);
 return 0;
 }

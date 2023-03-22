@@ -7,9 +7,9 @@ struct zuobiao
 int main_bench()
 {
 	int t,i,j,releft,reright;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
-		scanf("%d %d",&zuo[i].left,&zuo[i].right);
+		my_scanf("%d %d",&zuo[i].left,&zuo[i].right);
 	for(i=1;i<t;i++)
 		for(j=0;j<t-i;j++)
 			if(zuo[j].left>zuo[j+1].left)
@@ -25,14 +25,14 @@ int main_bench()
 			{
 				if(zuo[i].left>reright)
 				{
-					printf("no\n");
+					my_printf("no\n");
 					break;
 				}
 				else if(zuo[i].left<=reright&&zuo[i].right>=reright)
 					reright=zuo[i].right;
 				i++;
 			}
-			if(i==t)printf("%d %d\n",releft,reright);
+			if(i==t)my_printf("%d %d\n",releft,reright);
 
 	
 	return 0;

@@ -4,9 +4,9 @@ int j=0;
 void shuchu(int k)
 {
   if(k!=0)
-  printf("yes\n");
+  my_printf("yes\n");
  else
-  printf("no\n");
+  my_printf("no\n");
 }
 void decide(char t[])
 {
@@ -38,12 +38,12 @@ else
 int main_bench()
 {
   int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i;
 char u[100][100];
 for(i=0;i<n;i++)
 {
-  scanf("%s",u[i]);
+  my_scanf("%s",u[i]);
 }
 for(i=0;i<n;i++)
 {

@@ -3,8 +3,8 @@
 main_bench()
 {
    int t;
-   scanf("%d",&t);
-   scanf("\n");
+   my_scanf("%d",&t);
+   my_scanf("\n");
    while(t--)
    {
      char c[100000];
@@ -22,11 +22,11 @@ main_bench()
          }
         if(j==len)
             {
-              printf("%c\n",c[i]);
+              my_printf("%c\n",c[i]);
               break;
             }
        }
       if(i==len)
-        printf("no\n");
+        my_printf("no\n");
    } 
 }

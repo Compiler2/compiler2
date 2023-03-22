@@ -4,25 +4,25 @@ int main_bench()
 {
     int n,i,wl,len=0;
     char w[64],p[64]="";
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
-         printf(p);
-         scanf("%s",w);
+         my_printf(p);
+         my_scanf("%s",w);
          wl=strlen(w);
          if(len+wl>80)
          {
-             printf("\n");
+             my_printf("\n");
              len=0;
          }
          else if(i>0)
          {
-              printf(" ");
+              my_printf(" ");
          }
          len+=wl+1;
          strcpy(p,w);
     } 
-         printf(p);
+         my_printf(p);
          getchar();
          getchar();
          getchar();

@@ -5,8 +5,8 @@ int main_bench()
   char s[51];
   char w[51];
   int i,j,jd;
-  scanf("%s",s);
-  scanf("%s",w);
+  my_scanf("%s",s);
+  my_scanf("%s",w);
   for (i=0;i<=(strlen(w)-strlen(s));i++){
       jd=0;
       if (w[i]==s[0]){
@@ -17,7 +17,7 @@ int main_bench()
             else jd=1;
             }
         if (jd==0){
-            printf("%d",i);
+            my_printf("%d",i);
             break;
             }
         }

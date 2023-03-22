@@ -3,14 +3,14 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int m=0;
       int b1[100000],c1[100000];
       int b2[n],c2[n];
       int i;
       for(i=0;i<100000;i++)
       {
-                     scanf("%d %d",&b1[i],&c1[i]);
+                     my_scanf("%d %d",&b1[i],&c1[i]);
                      m++;
                      if(b1[i]==0&&(c1[i]==0))
                      break;
@@ -42,7 +42,7 @@ main_bench()
       {
                        if((b2[h]==0)&&(c2[h]==n-1))
                        {
-                                                   printf("%d\n",h);
+                                                   my_printf("%d\n",h);
                        }
                        if((b2[h]!=0)||(c2[h]!=n-1))
                        {
@@ -50,5 +50,5 @@ main_bench()
                        }
       }
       if(count==n)
-      printf("NOT FOUND");
+      my_printf("NOT FOUND");
 }

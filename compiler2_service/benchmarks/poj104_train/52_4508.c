@@ -5,18 +5,18 @@ int main_bench()
 {
 	int n,i,k;
 	int a[100];
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	pai(a,n,k);
 	for(i=0;i<=(n-1);i++)
 	{
 		if(i==0)
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 		else
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 }
 int pai(int a[],int n,int k)

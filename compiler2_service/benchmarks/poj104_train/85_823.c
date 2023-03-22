@@ -4,16 +4,16 @@ int main_bench()
 {
 	int a,b,c,d,e,i,j;
 	char z[21];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%s",z);
+		my_scanf("%s",z);
 		b=isalpha(z[0]);
 		j=strlen(z);
 		c=1;
 		if((b==0)&&(z[0]!='_'))
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		for(d=1;d<j;d++)
@@ -27,11 +27,11 @@ int main_bench()
 		}
 		if(c)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

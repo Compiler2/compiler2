@@ -28,6 +28,6 @@ int main_bench()
 			strcpy(t[i],b);
 		else strcpy(t[i],t[i]);
 	for(i=0;i<n-1;i++)
-		printf("%s ",t[i]);
-	printf("%s\n",t[n-1]);
+		my_printf("%s ",t[i]);
+	my_printf("%s\n",t[n-1]);
 }

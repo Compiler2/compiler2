@@ -31,8 +31,8 @@ main_bench()
       int k,i;
       for(i=6;i>0;i--)
       {
-      scanf("%d",&k);
-      printf("%d\n",reverse(k));
+      my_scanf("%d",&k);
+      my_printf("%d\n",reverse(k));
       }
       getchar();
       getchar();

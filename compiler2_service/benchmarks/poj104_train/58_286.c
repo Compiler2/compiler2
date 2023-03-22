@@ -5,7 +5,7 @@
 main_bench()
 {
       int n,i;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       getchar();
       for(i=1;i<=n;i++)
       {
@@ -28,11 +28,11 @@ main_bench()
                        
       
               if(k==l)
-              printf("1\n");
+              my_printf("1\n");
               else
-               printf("0\n");
+               my_printf("0\n");
            }
            else
-           printf("0\n"); 
+           my_printf("0\n"); 
            }               
 }

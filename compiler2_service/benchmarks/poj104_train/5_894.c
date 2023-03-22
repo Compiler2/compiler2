@@ -5,13 +5,13 @@ int main_bench()
     int i,j=0,h=1,la,lb;
     double s,r;
     char a[1000],b[1000];
-    scanf ("%lf",&s);
-    scanf ("%s\n%s",a,b);
+    my_scanf ("%lf",&s);
+    my_scanf ("%s\n%s",a,b);
     la=strlen(a);
     lb=strlen(b);
     if (la!=lb)
     {
-        printf ("error");
+        my_printf ("error");
     }
     else 
     {
@@ -19,7 +19,7 @@ int main_bench()
         { 
             if (((a[i]!='A')&&(a[i]!='G')&&(a[i]!='C')&&(a[i]!='T'))||((b[i]!='A')&&(b[i]!='G')&&(b[i]!='C')&&(b[i]!='T')))
             {
-                printf ("error");
+                my_printf ("error");
                 h=0;
                 break;
             }             
@@ -35,9 +35,9 @@ int main_bench()
             }
             r=(double)j/(double)la;
             if (r>=s)
-            { printf ("yes"); }
+            { my_printf ("yes"); }
             else 
-            { printf ("no"); }
+            { my_printf ("no"); }
         }
     }
     

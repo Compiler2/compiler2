@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j,k;
 	char *p;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 	p=(char*)malloc(1000*sizeof(char));
@@ -17,6 +17,6 @@ int main_bench()
 	}
 	else if(*(p+k-3)=='i'&&*(p+k-2)=='n'&&*(p+k-1)=='g')
 		*(p+k-3)='\0';
-	printf("%s\n",p);
+	my_printf("%s\n",p);
 	}
 }

@@ -51,15 +51,15 @@ int main_bench()
     {
                     if(count[i]==max)
                     {
-                                     printf("%c",zfc[i]);
+                                     my_printf("%c",zfc[i]);
                     }
     }
-    printf("\n");
+    my_printf("\n");
     for(i=0;i<l;i++)
     {
                     if(count[i]==min)
                     {
-                                     printf("%c",zfc[i]);
+                                     my_printf("%c",zfc[i]);
                     }
     }
     return 0;

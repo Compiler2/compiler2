@@ -5,7 +5,7 @@ int main_bench()
     int p=0,j,n,count[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
     char i;
     char a[301];
-    scanf("%s",a);
+    my_scanf("%s",a);
     
     n=strlen(a);
     for(j=0;j<n;j++)
@@ -20,11 +20,11 @@ int main_bench()
     {
         if(count[i-97]!=0)
         {
-            printf("%c=%d\n",i,count[i-97]);
+            my_printf("%c=%d\n",i,count[i-97]);
             p++;
         }
     }   
     if (p==0)
-    printf("No");
+    my_printf("No");
     return 0;
 }

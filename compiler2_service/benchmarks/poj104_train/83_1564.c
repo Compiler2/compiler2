@@ -4,19 +4,19 @@ int main_bench()
 {
 	int n,i,f[100],g[100],sum;
 	float c,b,d,e;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	sum=0;
 	c=0;
 	
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d",&f[i]);
+		my_scanf("%d",&f[i]);
 		sum=sum+f[i];
 	}
 
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d",&g[i]);
+		my_scanf("%d",&g[i]);
 		if(g[i]>=90)
 			b=4.0;
 		else if(g[i]>=85)
@@ -44,7 +44,7 @@ int main_bench()
 	}
 
 	e=c/sum;
-	printf("%.2f\n",e);
+	my_printf("%.2f\n",e);
 }
 
 

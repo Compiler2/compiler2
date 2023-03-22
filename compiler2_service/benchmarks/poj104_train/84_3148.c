@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int n[100];
 	int i;
 	for(i=0;i<a;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	int max=n[0];
 	int j;
@@ -20,7 +20,7 @@ int main_bench()
 			max=n[j];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	int next=n[0];
 	int q;
 	for(q=1;q<a;q++)
@@ -30,6 +30,6 @@ int main_bench()
 			next=n[q];
 		}
 	}
-	printf("\n%d\n",next);
+	my_printf("\n%d\n",next);
 	return 0;
 }

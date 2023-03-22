@@ -11,10 +11,10 @@ main_bench()
      int a[101],b[101],c[101],i,j,n,yushu,wei,x,y;
      char s[101];
      for(i=0;i<101;i++) {a[i]=0;b[i]=0;c[i]=0;s[i]='\0';}
-     scanf("%s",s);
+     my_scanf("%s",s);
      n=strchange(s,a);
-     if(n==1) printf("%d\n%d",0,a[0]);
-     else if(n==2 && a[0]*10+a[1]<13) printf("%d\n%d%d",0,a[0],a[1]);
+     if(n==1) my_printf("%d\n%d",0,a[0]);
+     else if(n==2 && a[0]*10+a[1]<13) my_printf("%d\n%d%d",0,a[0],a[1]);
      else
      {
          x=a[0];y=a[1];
@@ -24,8 +24,8 @@ main_bench()
           yushu=(a[i]*10+a[i+1])%13;
           a[i+1]=yushu;
      }
-     if((x*10+y)>=13) for(i=0;i<n-1;i++) printf("%d",b[i]);
-     else for(i=1;i<n-1;i++) printf("%d",b[i]);
-     printf("\n%d",yushu);
+     if((x*10+y)>=13) for(i=0;i<n-1;i++) my_printf("%d",b[i]);
+     else for(i=1;i<n-1;i++) my_printf("%d",b[i]);
+     my_printf("\n%d",yushu);
      }
 }

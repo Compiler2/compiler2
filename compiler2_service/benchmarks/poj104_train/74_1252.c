@@ -5,7 +5,7 @@ int main_bench()
 {
 	int m,n,k,i,j,sum=0,flag=0,r,s,t,o,p,sum1=0;
 	long a[100000],b[100000];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	j=0;
 	for(k=m;k<=n;k++)
 	{
@@ -111,15 +111,15 @@ int main_bench()
 		}
 		}
 	}
-	if(flag==0) printf("no");
+	if(flag==0) my_printf("no");
 	else
 	{
 
 	for(i=0;i<sum1;i++)
 	{
-		if(i==0) printf("%ld",b[i]);
+		if(i==0) my_printf("%ld",b[i]);
 		else
-			printf(",%ld",b[i]);
+			my_printf(",%ld",b[i]);
 	}
 	}
 

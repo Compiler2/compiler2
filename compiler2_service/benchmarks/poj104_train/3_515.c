@@ -11,14 +11,14 @@ int *point1=&n,*point2=&k;
 int main_bench()
 {
 	int kk=1;
-scanf("%d%d",point1,point2);
+my_scanf("%d%d",point1,point2);
 
 point1=a;
 final=point1+n;
 
 
 for(;point1<final;point1++)
-scanf("%d",point1);
+my_scanf("%d",point1);
 point1=a;
 for(;point1<final-1;point1++)
 {
@@ -27,7 +27,7 @@ break;
 	for(point2=point1+1;point2<final;point2++)
 	{
 	if(*point1+*point2==k)
-	{printf("yes");
+	{my_printf("yes");
 	kk=0;
 	break;
 	}
@@ -37,6 +37,6 @@ break;
 
 }
 if(kk==1)
-printf("no");
+my_printf("no");
 return(0);
 }

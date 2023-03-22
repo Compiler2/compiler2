@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,min,max,c=0,j, qs[50000],zd[50000];
 	double g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&qs[i],&zd[i]);
+		my_scanf("%d%d",&qs[i],&zd[i]);
 	}
 	for(i=0;i<n;i++){
 		if(i==0||qs[i]<min)
@@ -22,9 +22,9 @@ int main_bench(){
 		}
 	}
 	if(c==max-min){
-		printf("%d %d\n",min,max);
+		my_printf("%d %d\n",min,max);
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 }

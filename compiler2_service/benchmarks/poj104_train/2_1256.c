@@ -11,10 +11,10 @@ int main_bench()
 	}book[1000];
 	int a[26] = {0};
 	char b[26] = {'A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'z'};
-	scanf ("%d", &m);
+	my_scanf ("%d", &m);
 	for (i = 0; i < m; i++)
 	{
-		scanf ("%d %s", &book[i].num, book[i].aut);
+		my_scanf ("%d %s", &book[i].num, book[i].aut);
 	}
 
 
@@ -43,8 +43,8 @@ int main_bench()
 			{
 				max = a[j];
 				n = j;
-				printf("%c\n", b[j]);
-				printf ("%d\n", a[j]);
+				my_printf("%c\n", b[j]);
+				my_printf ("%d\n", a[j]);
 				y = 1;
 				break;
 			}
@@ -64,7 +64,7 @@ int main_bench()
 		{
 			if (book[i].aut[j] == b[n])
 			{
-				printf("%d\n", book[i].num);
+				my_printf("%d\n", book[i].num);
 			}
 		}
 	}

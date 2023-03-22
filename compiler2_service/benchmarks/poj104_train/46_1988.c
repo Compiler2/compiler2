@@ -5,14 +5,14 @@ int main_bench()
 int a[100][100];
 int row, col, i=0, j=0, left=0, right=0, up=0, down=0;
 int x=0;
-scanf("%d%d",&row,&col);
+my_scanf("%d%d",&row,&col);
 down=row;
 right=col;
 for (; i<row; i++) 
 {
 for (j=0; j<col; j++) 
 {
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 }
 }
 i=0,j=0;
@@ -20,7 +20,7 @@ for (; ; )
 {
 for (; j<right; j++) 
 {
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 x++;
 }
 j--;
@@ -31,7 +31,7 @@ break;
 i++;
 for (; i<down; i++) 
 {
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 x++;
 }
 i--;
@@ -42,7 +42,7 @@ break;
 j--;
 for (; j>=left; j--) 
 {
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 x++;
 }
 j++;
@@ -53,7 +53,7 @@ break;
 i--;
 for (; i>up; i--) 
 {
-printf("%d\n",a[i][j]);
+my_printf("%d\n",a[i][j]);
 x++;
 }
 if (x>=col*row) 

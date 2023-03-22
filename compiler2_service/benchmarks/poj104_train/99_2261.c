@@ -3,12 +3,12 @@
 int main_bench()
 {
 	double n;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	int i;
 	double a[100];
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 	}
 	int count1=0,count2=0,count3=0,count4=0;
 	for(i=0;i<n;i++)
@@ -26,8 +26,8 @@ int main_bench()
 	double per2=count2/n*100;
 	double per3=count3/n*100;
 	double per4=count4/n*100;
-	printf("1-18: %.2lf%%\n",per1);
-	printf("19-35: %.2lf%%\n",per2);
-	printf("36-60: %.2lf%%\n",per3);
-	printf("60??: %.2lf%%\n",per4);
+	my_printf("1-18: %.2lf%%\n",per1);
+	my_printf("19-35: %.2lf%%\n",per2);
+	my_printf("36-60: %.2lf%%\n",per3);
+	my_printf("60??: %.2lf%%\n",per4);
 }

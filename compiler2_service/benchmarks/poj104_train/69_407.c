@@ -53,5 +53,5 @@ int main_bench()
     for(i=strlen(str3)-1;str3[i]=='0'&&i>0;i--)
        str3[i]='\0';
     for(i=strlen(str3)-1;i>=0;i--)
-       printf("%c",str3[i]);
+       my_printf("%c",str3[i]);
 }

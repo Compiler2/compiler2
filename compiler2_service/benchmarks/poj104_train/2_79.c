@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int m,a[1000],i,n,j,k;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	char b[1000][27];
 	int count[26]={0};
 	for(i=0;i<m;i++)
 	{
-		scanf("%d %s",&a[i],b[i]);
+		my_scanf("%d %s",&a[i],b[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	char mauthor;
 	mauthor=maxk+65;
-	printf("%c\n%d\n",mauthor,max);
+	my_printf("%c\n%d\n",mauthor,max);
 	for(i=0;i<m;i++)
 	{
 		n=strlen(b[i]);
@@ -42,7 +42,7 @@ int main_bench()
 		{
 				if(b[i][j]==mauthor)
 				{
-					printf("%d\n",a[i]);
+					my_printf("%d\n",a[i]);
 					break;
 				}
 		

@@ -11,8 +11,8 @@ int main_bench()
 		d[i]=0;
 	}
 	char ch='A';
-	scanf("%s",a);
-    scanf("%s",b);
+	my_scanf("%s",a);
+    my_scanf("%s",b);
 	if((int)strlen(a)==(int)strlen(b))
 	{
 		j=0;
@@ -41,16 +41,16 @@ int main_bench()
 		}
 		if(sum==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	else
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
     return 0;
 }

@@ -48,7 +48,7 @@ min=strlen(str[i]);
 y=i;} 
 } 
 
-printf("%s\n",str[x]); 
-printf("%s",str[y]); 
+my_printf("%s\n",str[x]); 
+my_printf("%s",str[y]); 
 return 0; 
 } 

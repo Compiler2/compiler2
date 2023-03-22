@@ -21,13 +21,13 @@ int m=0,i;
 	{
 		if(a[i]>b[i])
 		{
-			printf(">");m=1;break;
+			my_printf(">");m=1;break;
 		}
 		else if(a[i]<b[i])
 		{
-			printf("<");m=1;break;}}
+			my_printf("<");m=1;break;}}
 	if(m==0)
-		printf("=");
+		my_printf("=");
 	return 0;
 }
 

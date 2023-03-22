@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	struct student
 	{
 		char *name;
@@ -18,10 +18,10 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		a[i].name=(char *)malloc(20*sizeof(char));
-		scanf("%s%d%d %c %c%d",a[i].name,&a[i].final,&a[i].clas,&a[i].gan,&a[i].west,&a[i].essay);
+		my_scanf("%s%d%d %c %c%d",a[i].name,&a[i].final,&a[i].clas,&a[i].gan,&a[i].west,&a[i].essay);
 		
 		if(i<n-1)
-			scanf("\n");
+			my_scanf("\n");
 	}
 	int scholar[100];
 	for(i=0;i<n;i++)
@@ -65,6 +65,6 @@ int main_bench()
 	{
 		s=s+scholar[i];
 	}
-	printf("%s\n%d\n%d",a[k].name,scholar[k],s);
+	my_printf("%s\n%d\n%d",a[k].name,scholar[k],s);
 }
 

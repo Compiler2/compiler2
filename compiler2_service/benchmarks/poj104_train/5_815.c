@@ -4,9 +4,9 @@ int main_bench(){
 	int b,c,f=0,e=0,i;
 	double a,h;
 	char d[3][502];
-	scanf("%lf",&a);
+	my_scanf("%lf",&a);
 	for(i=0;i<2;i++){
-		scanf("%s",d[i]);
+		my_scanf("%s",d[i]);
 	}
 	b=strlen(d[0]);
 	c=strlen(d[1]);
@@ -24,18 +24,18 @@ int main_bench(){
 		if(f==b){
 		h=e*1.0/b;
 		if(h>a){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 		}
 		else{
-			printf("error");
+			my_printf("error");
 		}
 	}
 	else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

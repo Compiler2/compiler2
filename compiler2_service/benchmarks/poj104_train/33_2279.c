@@ -5,9 +5,9 @@ int main_bench()
 int n;
 char sr[255];
 int i,j,len;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char k;
-scanf("%c",&k);
+my_scanf("%c",&k);
 
 for(i=0;i<n;i++)
 {
@@ -33,7 +33,7 @@ sr[j]='C';
 } 
 
 }
-printf("%s\n",sr);
+my_printf("%s\n",sr);
 }
 return 0;
 }

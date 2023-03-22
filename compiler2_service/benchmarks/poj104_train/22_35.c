@@ -6,12 +6,12 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 		if(c=='\n')break;
 	}
 	if(i==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 	for(j=0;j<i;j++)
@@ -35,8 +35,8 @@ int main_bench()
 		}
 	}
 	if(flag==0)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",a[k+1]);
+		my_printf("%d",a[k+1]);
 	}
 }

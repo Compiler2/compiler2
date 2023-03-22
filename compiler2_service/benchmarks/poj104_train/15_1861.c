@@ -3,10 +3,10 @@
 int main_bench()
 {
  int n,i,j,e,f,x,y,p,s[1000][1000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
 	 for(j=0;j<n;j++){
-		 scanf("%d",&s[i][j]);
+		 my_scanf("%d",&s[i][j]);
 	 }
  }
  for(i=0;i<n;i++){
@@ -34,7 +34,7 @@ if (j>=0) {
         }
 	 }
 p=(x-e-1)*(y-f-1);
-printf("%d",p);
+my_printf("%d",p);
 	return 0;
 }
 

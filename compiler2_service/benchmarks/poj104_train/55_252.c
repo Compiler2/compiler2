@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,n,l,t=1,i,j,g,re[100],k=0;
 	long int sum=0;
 	char num[100],c[36]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	scanf("%d %s %d",&a,num,&b);
+	my_scanf("%d %s %d",&a,num,&b);
 	l=strlen(num);
 	for(i=0;i<l;i++)
 		if(num[i]>='a'&&num[i]<='z')
@@ -26,6 +26,6 @@ int main_bench()
 			re[k]=c[sum];
 		
 		for(i=k;i>=0;i--)
-			printf("%c",re[i]);
-		printf("\n");
+			my_printf("%c",re[i]);
+		my_printf("\n");
 }

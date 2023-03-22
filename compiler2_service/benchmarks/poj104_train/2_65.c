@@ -10,10 +10,10 @@ int main_bench()
 	int c[150]={0};  
 	int max=0; 
 	int i,j,k,p,q,r,s;  
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%s %s", a[i], b[i]);
+		my_scanf("%s %s", a[i], b[i]);
 		len[i]=strlen(b[i]);
 		
 		for(j=0;j<len[i];j++)
@@ -35,13 +35,13 @@ int main_bench()
 	{
 		if(c[q]==max)
 		{
-			printf("%c\n%d\n", q, max);
+			my_printf("%c\n%d\n", q, max);
 			for(r=0;r<m;r++)
 			{
 				for(s=0;s<len[r];s++)
 				{
 					if(b[r][s]==q)
-						printf("%s\n", a[r]);
+						my_printf("%s\n", a[r]);
 				}
 			}
 		}

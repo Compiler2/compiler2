@@ -6,13 +6,13 @@ int main_bench()
 {
 	int input[500][3];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<3;j++)
 		{
-			scanf("%d",&input[i][j]);
+			my_scanf("%d",&input[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -55,11 +55,11 @@ int main_bench()
 		}
 		if(days%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else if(days%7!=0)
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

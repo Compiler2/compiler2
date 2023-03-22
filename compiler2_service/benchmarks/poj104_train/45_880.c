@@ -23,7 +23,7 @@ int main_bench()
                 }
             if(m==1)
             {
-               printf("%d",i);
+               my_printf("%d",i);
                break;
             }
          } 

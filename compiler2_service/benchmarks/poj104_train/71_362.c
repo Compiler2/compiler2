@@ -10,12 +10,12 @@ int f(int a)
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a,b,c,d=0,k;
       for(int i=1;i<=n;i++)
       {
               d=0;
-              scanf("%d %d %d",&a,&b,&c);
+              my_scanf("%d %d %d",&a,&b,&c);
               if(f(a)==0)
               {
               if(c>b)
@@ -47,9 +47,9 @@ main_bench()
                                 c++;
                       }
                       if(d%7==0)
-                      printf("YES\n");
+                      my_printf("YES\n");
                       else
-                      printf("NO\n");                 
+                      my_printf("NO\n");                 
               }
                    if(f(a)==1)
               {
@@ -80,9 +80,9 @@ main_bench()
                                 c++;
                       }
                       if(d%7==0)
-                      printf("YES\n");
+                      my_printf("YES\n");
                       else
-                      printf("NO\n");                 
+                      my_printf("NO\n");                 
               }
               
       }

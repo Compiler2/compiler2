@@ -4,10 +4,10 @@ int main_bench()
 {
   char str[50],s[50];
   int p,i,k,m,n,a[128],b[128];
-  scanf("%s%s",s,str);
+  my_scanf("%s%s",s,str);
   m=strlen(s);
   n=strlen(str);
-  if(m!=n)printf("NO");
+  if(m!=n)my_printf("NO");
   else
   {
      for(i=0;i<=127;i++)
@@ -25,8 +25,8 @@ int main_bench()
      k=0; 
      for(i=1;i<=127;i++)
      if(a[i]!=b[i]) k=1;
-     if(k==0)printf("YES");
-     else printf("NO");
+     if(k==0)my_printf("YES");
+     else my_printf("NO");
   }
 }
 

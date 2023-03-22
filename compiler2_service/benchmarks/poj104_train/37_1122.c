@@ -9,10 +9,10 @@ int main_bench()
 {
 	int n,i,j;
 	char a[100001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;++i)
 	{
-		scanf("%s",&a);
+		my_scanf("%s",&a);
 		int l=strlen(a)-1;
 		int b[123],c[123],k;
 		for(j=0;j<=122;++j) 
@@ -32,7 +32,7 @@ int main_bench()
 				c[k]=j;
 				k++;
 			}
-		if(flag==0) printf("no\n");
+		if(flag==0) my_printf("no\n");
 		else
 		{
 		int p=0;
@@ -42,7 +42,7 @@ int main_bench()
 			{
 				if(a[j]==c[p])
 				{
-					printf("%c\n",a[j]);
+					my_printf("%c\n",a[j]);
 					break;
 				}
 			}

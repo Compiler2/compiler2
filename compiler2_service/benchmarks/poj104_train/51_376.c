@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);getchar();
+	my_scanf("%d",&n);getchar();
 	char a[500],b[500][6];
 	gets(a);
 	int c=0,d=0,e=0,f;
@@ -47,9 +47,9 @@ int main_bench()
 		}
 	}
 	if(max==0)
-		printf("NO");
+		my_printf("NO");
 	else {
-	printf("%d\n",max+1);
+	my_printf("%d\n",max+1);
 	int j;
 	for(j=0;j<d;j++)
 	{

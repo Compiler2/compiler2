@@ -7,9 +7,9 @@ int main_bench(){
 	double sum2=0.0;
 	double sum3=0.0;
 	double sum4=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 	if(a>=1&&a<=18){
 		sum1+=1.0;
 	}
@@ -23,9 +23,9 @@ int main_bench(){
 		sum4+=1.0;
 	}
 	}
-    printf("1-18: %.2lf%%\n",(double)(sum1/n)*100.0);
-    printf("19-35: %.2lf%%\n",(double)(sum2/n)*100.0);
-    printf("36-60: %.2lf%%\n",(double)(sum3/n)*100.0);
-    printf("60??: %.2lf%%\n",(double)(sum4/n)*100.0);
+    my_printf("1-18: %.2lf%%\n",(double)(sum1/n)*100.0);
+    my_printf("19-35: %.2lf%%\n",(double)(sum2/n)*100.0);
+    my_printf("36-60: %.2lf%%\n",(double)(sum3/n)*100.0);
+    my_printf("60??: %.2lf%%\n",(double)(sum4/n)*100.0);
 	return 0;
 }

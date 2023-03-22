@@ -3,12 +3,12 @@
 int main_bench()
 {
 int i,n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int num[n];
 for(i=0;i<n;i++)
-scanf("%d",&num[i]);
+my_scanf("%d",&num[i]);
 for(i=1;i<n;i++)
-printf("%d ",num[n-i]);
-printf("%d",num[0]);
+my_printf("%d ",num[n-i]);
+my_printf("%d",num[0]);
 return 0;
 }

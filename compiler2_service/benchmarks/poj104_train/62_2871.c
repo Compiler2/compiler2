@@ -24,7 +24,7 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 }
 
 			

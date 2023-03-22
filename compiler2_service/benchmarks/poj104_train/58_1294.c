@@ -5,7 +5,7 @@ int pd(int);
 int main_bench()
 {
     int n,i,j,q;    
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     while(n)
     {   
         q=0;
@@ -17,8 +17,8 @@ int main_bench()
         if(s[0]=='_') q=1;
         for(i=1;s[i]!='\0';i++)
              if(pd(i)==0) q=0;
-        if(q==1) printf("1\n");
-        else printf("0\n");
+        if(q==1) my_printf("1\n");
+        else my_printf("0\n");
         n--;
     }
     return 0;

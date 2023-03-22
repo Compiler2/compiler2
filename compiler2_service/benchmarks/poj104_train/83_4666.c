@@ -7,14 +7,14 @@ int main_bench(){
    GPA=0;
    su=0;
    sum=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-	   scanf("%d",&sz1[i]);
+	   my_scanf("%d",&sz1[i]);
    }
    for(i=0;i<n;i++)
    {
-	   scanf("%d",&sz2[i]);
+	   my_scanf("%d",&sz2[i]);
    }
     for(i=0;i<n;i++)
 	{
@@ -70,6 +70,6 @@ int main_bench(){
 		sum=sum+b[i];
 	}
 	GPA=sum/su;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 	return 0;
 }

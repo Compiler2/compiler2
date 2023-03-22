@@ -5,9 +5,9 @@ int main_bench()
 	int num[100];
     int n,i,j,a,b,c,d;
 	double a1,a2,a3,a4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
-		scanf("%d",&num[j]);
+		my_scanf("%d",&num[j]);
 	a=0;
 	for(j=0,a=0;j<n;j++)
 	{
@@ -34,6 +34,6 @@ int main_bench()
 	a3=(double)c/n*100;
 	a4=(double)d/n*100;
 
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a1,a2,a3,a4);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",a1,a2,a3,a4);
 	return 0;
 }

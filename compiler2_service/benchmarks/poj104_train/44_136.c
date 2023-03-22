@@ -5,14 +5,14 @@ int main_bench()
    int i,n,a[6][2];
    int reverse(int n);
    for(i=0;i<6;i++){
-        scanf("%d",&n);
+        my_scanf("%d",&n);
 a[i][0]=n;
    }
    for(i=0;i<6;i++){
         a[i][1]=reverse(a[i][0]);
    }
    for(i=0;i<6;i++){
-        printf("%d\n",a[i][1]);
+        my_printf("%d\n",a[i][1]);
    }
    return 0;
 }

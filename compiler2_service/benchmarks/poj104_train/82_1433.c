@@ -4,9 +4,9 @@ int  main_bench(){
 	int n,e,i,max;
 	int ss[99],sz[99];
 	int jg[99];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf(" %d %d",&ss[i],&sz[i]);
+		my_scanf(" %d %d",&ss[i],&sz[i]);
 		if((ss[i]>=90)&&(ss[i]<=140)&&(sz[i]>=60)&&(sz[i]<=90)){
 			jg[i]=1;
 		}else{
@@ -26,6 +26,6 @@ int  main_bench(){
 				e=0;
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

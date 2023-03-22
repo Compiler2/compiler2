@@ -4,12 +4,12 @@ int main_bench()
 {
 	int sum[1000][1000];
 	int n,i,j,s=0,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&sum[i][j]);
+			my_scanf("%d",&sum[i][j]);
 		}
 
 	}
@@ -45,7 +45,7 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",s*t-(2*s+2*t-4));	
+	my_printf("%d",s*t-(2*s+2*t-4));	
 
 	
 return 0;

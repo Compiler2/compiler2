@@ -4,14 +4,14 @@ int main_bench(){
 int n,i,b,c=0,d;
 float x,e=0;
 float a[10];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<=n-1;i++){
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	a[i]=b;
     c=c+b;
 }
 for(i=0;i<=n-1;i++){
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	if(d<=100&&d>=90){
 		e=e+4.0*a[i];
 	}
@@ -41,6 +41,6 @@ for(i=0;i<=n-1;i++){
 	}
         }
 x=e/c;
-printf("%.2f",x);
+my_printf("%.2f",x);
 return 0;
 }

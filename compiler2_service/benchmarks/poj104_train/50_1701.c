@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int w,m;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(m=1;m<=12;m++){
 		if(m==1||
 		   m==3||
@@ -12,7 +12,7 @@ int main_bench(){
 		   m==10||
 		   m==12){
 	    	if((w+12)%7==5){
-	    		printf("%d\n",m);
+	    		my_printf("%d\n",m);
 	    	}
 	    	w=(w+31)%7;
 		}
@@ -21,13 +21,13 @@ int main_bench(){
 		   m==9||
 		   m==11){
 			if((w+12)%7==5){
-				printf("%d\n",m);
+				my_printf("%d\n",m);
 			}
 			w=(w+30)%7;
 	    }
 		if(m==2){
 			if((w+12)%7==5){
-				printf("%d\n",m);
+				my_printf("%d\n",m);
 			}
 			w=(w+28)%7;
 		}

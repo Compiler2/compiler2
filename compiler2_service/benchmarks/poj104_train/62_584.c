@@ -14,7 +14,7 @@ int main_bench()
 	int i,flag=0;
 	gets(s);
 	for(i=0;s[i]!='\0';i++)
-		if((s[i])!=' ') {printf("%c",s[i]); flag=1;}
-		else if(flag==1) {printf(" ");flag=0;}
+		if((s[i])!=' ') {my_printf("%c",s[i]); flag=1;}
+		else if(flag==1) {my_printf(" ");flag=0;}
 
 }

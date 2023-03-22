@@ -10,12 +10,12 @@ int f(int x)
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int b[1000];
   for(int i=0;i<n;i++)
-  scanf("%d",&b[i]);
+  my_scanf("%d",&b[i]);
     for(int i=0;i<n;i++)
-  printf("%d\n",f(b[i]));
+  my_printf("%d\n",f(b[i]));
   getchar();
   getchar();
 } 

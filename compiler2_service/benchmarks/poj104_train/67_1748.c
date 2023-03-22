@@ -5,33 +5,33 @@ int main_bench()
 	int n,i;
 	double a,zs,yx;
 	double yxl;
-	scanf("%d",&n);
-	scanf("%lf %lf",&zs,&yx);
+	my_scanf("%d",&n);
+	my_scanf("%lf %lf",&zs,&yx);
 	a=(yx/zs)*100;
 	for(i=0;i<n-1;i++)
 	{
-		scanf("%lf %lf",&zs,&yx);
+		my_scanf("%lf %lf",&zs,&yx);
 		yxl=(yx/zs)*100;
 		if(yxl>=a)
 		{
 			if((yxl-a)>5)
 			{
-				printf("better\n");
+				my_printf("better\n");
 			}
 			else
 			{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	else
 		{
 			if((a-yxl)>5)
 			{
-				printf("worse\n");
+				my_printf("worse\n");
 			}
 			else
 			{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	}

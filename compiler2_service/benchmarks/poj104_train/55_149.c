@@ -10,7 +10,7 @@ int main_bench()
 	char n[20];
 	int num=0;
 
-    scanf("%d%s%d",&a,n,&b);
+    my_scanf("%d%s%d",&a,n,&b);
 
 	int k;
 
@@ -107,66 +107,66 @@ int main_bench()
 	}
 		switch (num)
 		{
-		case 10:printf("A");break;
-		case 11:printf("B");break;
-		case 12:printf("C");break;
-		case 13:printf("D");break;
-		case 14:printf("E");break;
-		case 15:printf("F");break;
-		case 16:printf("G");break;
-		case 17:printf("H");break;
-		case 18:printf("I");break;
-		case 19:printf("J");break;
-		case 20:printf("K");break;
-		case 21:printf("L");break;
-		case 22:printf("M");break;
-		case 23:printf("N");break;
-		case 24:printf("O");break;
-		case 25:printf("P");break;
-		case 26:printf("Q");break;
-		case 27:printf("R");break;
-		case 28:printf("S");break;
-		case 29:printf("T");break;
-		case 30:printf("U");break;
-		case 31:printf("V");break;
-		case 32:printf("W");break;
-		case 33:printf("X");break;
-		case 34:printf("Y");break;
-		case 35:printf("Z");break;
-		default:printf("%d",num);break;
+		case 10:my_printf("A");break;
+		case 11:my_printf("B");break;
+		case 12:my_printf("C");break;
+		case 13:my_printf("D");break;
+		case 14:my_printf("E");break;
+		case 15:my_printf("F");break;
+		case 16:my_printf("G");break;
+		case 17:my_printf("H");break;
+		case 18:my_printf("I");break;
+		case 19:my_printf("J");break;
+		case 20:my_printf("K");break;
+		case 21:my_printf("L");break;
+		case 22:my_printf("M");break;
+		case 23:my_printf("N");break;
+		case 24:my_printf("O");break;
+		case 25:my_printf("P");break;
+		case 26:my_printf("Q");break;
+		case 27:my_printf("R");break;
+		case 28:my_printf("S");break;
+		case 29:my_printf("T");break;
+		case 30:my_printf("U");break;
+		case 31:my_printf("V");break;
+		case 32:my_printf("W");break;
+		case 33:my_printf("X");break;
+		case 34:my_printf("Y");break;
+		case 35:my_printf("Z");break;
+		default:my_printf("%d",num);break;
 		}
     
     for(i=count-1;i>=0;i--)
 	{
 		switch (p[i])
 		{
-		case 10:printf("A");break;
-		case 11:printf("B");break;
-		case 12:printf("C");break;
-		case 13:printf("D");break;
-		case 14:printf("E");break;
-		case 15:printf("F");break;
-		case 16:printf("G");break;
-		case 17:printf("H");break;
-		case 18:printf("I");break;
-		case 19:printf("J");break;
-		case 20:printf("K");break;
-		case 21:printf("L");break;
-		case 22:printf("M");break;
-		case 23:printf("N");break;
-		case 24:printf("O");break;
-		case 25:printf("P");break;
-		case 26:printf("Q");break;
-		case 27:printf("R");break;
-		case 28:printf("S");break;
-		case 29:printf("T");break;
-		case 30:printf("U");break;
-		case 31:printf("V");break;
-		case 32:printf("W");break;
-		case 33:printf("X");break;
-		case 34:printf("Y");break;
-		case 35:printf("Z");break;
-		default:printf("%d",p[i]);break;
+		case 10:my_printf("A");break;
+		case 11:my_printf("B");break;
+		case 12:my_printf("C");break;
+		case 13:my_printf("D");break;
+		case 14:my_printf("E");break;
+		case 15:my_printf("F");break;
+		case 16:my_printf("G");break;
+		case 17:my_printf("H");break;
+		case 18:my_printf("I");break;
+		case 19:my_printf("J");break;
+		case 20:my_printf("K");break;
+		case 21:my_printf("L");break;
+		case 22:my_printf("M");break;
+		case 23:my_printf("N");break;
+		case 24:my_printf("O");break;
+		case 25:my_printf("P");break;
+		case 26:my_printf("Q");break;
+		case 27:my_printf("R");break;
+		case 28:my_printf("S");break;
+		case 29:my_printf("T");break;
+		case 30:my_printf("U");break;
+		case 31:my_printf("V");break;
+		case 32:my_printf("W");break;
+		case 33:my_printf("X");break;
+		case 34:my_printf("Y");break;
+		case 35:my_printf("Z");break;
+		default:my_printf("%d",p[i]);break;
 		}
 	}
 

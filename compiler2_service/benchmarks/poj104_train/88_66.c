@@ -16,7 +16,7 @@ main_bench()
  for(i=0;i<n;i++)
  {
   if(a[i]=='#') continue;
-  if(a[i]-'0'>=0&&a[i]-'0'<=9) printf("%d",a[i]-'0');
-  if(a[i]-'0'>=0&&a[i]-'0'<=9&&a[i+1]=='#') printf("\n");
+  if(a[i]-'0'>=0&&a[i]-'0'<=9) my_printf("%d",a[i]-'0');
+  if(a[i]-'0'>=0&&a[i]-'0'<=9&&a[i+1]=='#') my_printf("\n");
  }
 }

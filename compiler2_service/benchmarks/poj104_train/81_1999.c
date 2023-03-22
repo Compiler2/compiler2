@@ -6,16 +6,16 @@ int main_bench()
 int a[5][5],i,j,k,m,n;
 for(i=0;i<=4;i++)
   for(j=0;j<=4;j++)
-  scanf("%d",&a[i][j]);
-scanf("%d%d",&m,&n);
+  my_scanf("%d",&a[i][j]);
+my_scanf("%d%d",&m,&n);
   k=f(m,n,a[0]);
   if(k==0)
-	  printf("error\n");
+	  my_printf("error\n");
   else
   for(i=0;i<=4;i++)
 {for(j=0;j<=3;j++)
-  printf("%d ",*(a[0]+i*5+j));
-printf("%d\n",*(a[0]+i*5+4));
+  my_printf("%d ",*(a[0]+i*5+j));
+my_printf("%d\n",*(a[0]+i*5+4));
 }
    
 }

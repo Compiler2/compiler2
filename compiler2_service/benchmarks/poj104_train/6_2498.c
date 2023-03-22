@@ -5,13 +5,13 @@ int main_bench()
 	int k,m[100],n[100];
 	int a[100][10000];
 	int i,j,s,sum=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
-		scanf("%d%d",&m[i],&n[i]);
+		my_scanf("%d%d",&m[i],&n[i]);
 		s=m[i]*n[i];
 		for(j=0;j<s;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	for(i=0;i<k;i++)
 	{
@@ -29,9 +29,9 @@ int main_bench()
 				continue;
 		}
 		if(i==0)
-			printf("%d",sum);
+			my_printf("%d",sum);
 		else
-			printf("\n%d",sum);
+			my_printf("\n%d",sum);
 
 	}
 	return 0;

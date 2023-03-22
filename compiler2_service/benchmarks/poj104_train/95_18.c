@@ -22,15 +22,15 @@ int main_bench()
 		if (h[a]<' ') h[a]=0;
 		if(g[a]>h[a])
 		{
-			printf(">");
+			my_printf(">");
 			return 0;
 		}
 		if(g[a]<h[a])
 		{
-			printf("<");
+			my_printf("<");
 			return 0;
 		}
 	}
-	printf("=");
+	my_printf("=");
 	return 0;
 }

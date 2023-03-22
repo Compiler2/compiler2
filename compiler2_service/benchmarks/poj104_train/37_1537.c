@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,s;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char zfc[1000][1000];
 	for(int i=0;i<n;i++)
 	{
@@ -24,15 +24,15 @@ int main_bench()
 			}
 			if(s==1)
 			{
-				printf("%c\n",zfc[i][j]);
+				my_printf("%c\n",zfc[i][j]);
 				break;
 			}
 			if(j==m-1)
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	return 0;
 }

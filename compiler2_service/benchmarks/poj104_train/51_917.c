@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[550],b[6];
 	int i,j,k,l,n,a[550]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(s);
 	for (i=0;s[i]!='\0';i++)
@@ -30,10 +30,10 @@ int main_bench()
 	}
 	if (a[i]==0)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-	printf("%d\n",a[i]+1);
+	my_printf("%d\n",a[i]+1);
 	k=a[i];
 	for (i=0;s[i]!='\0';i++)
 	{
@@ -44,7 +44,7 @@ int main_bench()
 				b[j]=s[i+j];
 			}
 			b[j]='\0';
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 		}
 	}
 return 0;

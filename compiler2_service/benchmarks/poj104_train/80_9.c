@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,y,m,d,day1,day2,all1=0,all2=0,all3=0,all;
 	int s[20]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 
 	day1=365*(y1-1)+(y1-1)/4-(y1-1)/100+(y1-1)/400;
 	day2=365*(y2-1)+(y2-1)/4-(y2-1)/100+(y2-1)/400;
@@ -41,5 +41,5 @@ int main_bench()
 
 	all=all2+all3-all1;
 
-	printf("%d",all);
+	my_printf("%d",all);
 }

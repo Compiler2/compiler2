@@ -24,6 +24,6 @@ int main_bench()
 	ch3[j]='\0';
 	strcpy(ch2[k],ch3);
 	for(;k>0;k--)
-	printf("%s ",ch2[k]);
-	printf("%s",ch2[0]);
+	my_printf("%s ",ch2[k]);
+	my_printf("%s",ch2[0]);
 }

@@ -12,9 +12,9 @@ int main_bench()
 		char w;
 		int paper;
 	}stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].p,&stu[i].leader,&stu[i].w,&stu[i].paper);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].p,&stu[i].leader,&stu[i].w,&stu[i].paper);
 	for(i=0;i<n;i++)
 	{
 		sum[i]=0;
@@ -44,5 +44,5 @@ int main_bench()
 		}
 		total=total+sum[i];
 	}
-	printf("%s\n%d\n%d",stu[b].name,sum[b],total);
+	my_printf("%s\n%d\n%d",stu[b].name,sum[b],total);
 }

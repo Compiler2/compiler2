@@ -7,7 +7,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
     max[0]=a[0][0];
@@ -32,14 +32,14 @@ int main_bench()
 		{
     	    if(max[p]==min[q])
 			{	
-	        	printf("%d %d %d",p+1,q+1,a[p][q]);
+	        	my_printf("%d %d %d",p+1,q+1,a[p][q]);
 		        t++;
 			}
 		}
 	}
 	if(t==0)
 	{
-		 printf("not found");
+		 my_printf("not found");
 	}
 	return 0;
 }

@@ -10,10 +10,10 @@ int main_bench()
 		int age;
 	}
 	p[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",&p[i].name,&p[i].age);
+		my_scanf("%s%d",&p[i].name,&p[i].age);
 	}
 	for(j=0;j<n;j++)
 	{
@@ -33,10 +33,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s",p[i].name);
+		my_printf("%s",p[i].name);
 		if(i!=n-1)
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

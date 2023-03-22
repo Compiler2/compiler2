@@ -32,7 +32,7 @@ int main_bench()
 			strcpy(word[i],b);
 	}
 	for(i=0;i<add;i++)
-		printf("%s ",word[i]);
+		my_printf("%s ",word[i]);
 	puts(word[i]);
 	return 0;
 }

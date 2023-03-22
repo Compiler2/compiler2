@@ -9,9 +9,9 @@ int main_bench()
 	}B[1000];
 	char A;
 	int m,i,j,a[26]={0},max;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d%s",&B[i].num,B[i].author);
+		my_scanf("%d%s",&B[i].num,B[i].author);
 	}
 	for(i=0;i<m;i++){
 		for(j=0;;j++){
@@ -29,13 +29,13 @@ int main_bench()
 			A=i+65;
 		}
 	}
-	printf("%c\n%d",A,max);
+	my_printf("%c\n%d",A,max);
 	for(i=0;i<m;i++){
 		for(j=0;;j++){
 			if(B[i].author[j]==0)
 				break;
 			if(B[i].author[j]==A)
-				printf("\n%d",B[i].num);
+				my_printf("\n%d",B[i].num);
 		}
 	}
 	return 0;

@@ -9,18 +9,18 @@ void cover(int x,int y){
  }
 int main_bench(){
    int m,i,j,s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char c;
     for(i=1;i<=n;i++){
-         scanf("%c",&c);
+         my_scanf("%c",&c);
          for(j=1;j<=n;j++)
-           {scanf("%c",&c);
+           {my_scanf("%c",&c);
             if(c=='.')map[i][j]=0;
             else if(c=='#')map[i][j]=-1;
             else if(c=='@')map[i][j]=1;
            }
         }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     m--;
     while(m--){
        for(i=1;i<=n;i++)
@@ -37,6 +37,6 @@ int main_bench(){
     for(i=1;i<=n;i++)
      for(j=1;j<=n;j++)
         if(map[i][j]==1)s++;
-   printf("%d\n",s);
+   my_printf("%d\n",s);
     return 0;
 }

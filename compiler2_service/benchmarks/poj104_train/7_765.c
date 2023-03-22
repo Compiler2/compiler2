@@ -3,7 +3,7 @@
 int main_bench()
 {
     char zfc[256],zc[256],re[256],dc[256][256];
-    scanf("%s%s%s",zfc,zc,re);
+    my_scanf("%s%s%s",zfc,zc,re);
     int len1,len2,i;
     len1=strlen(zfc);
     len2=strlen(zc);
@@ -23,21 +23,21 @@ int main_bench()
       }
     
     if(tag==0){
-               printf("%s\n",zfc);
+               my_printf("%s\n",zfc);
                }
     else{
          for(i=0;i<m;i++){
-                           printf("%c",zfc[i]);
+                           my_printf("%c",zfc[i]);
                            }
          for(i=m;i<m+len2;i++){
-                               printf("%s",re);
+                               my_printf("%s",re);
                                break;
                                }
          for(i=m+len2;zfc[i]!='\0';i++){
-                                        printf("%c",zfc[i]);
+                                        my_printf("%c",zfc[i]);
                                         }
     }
-    scanf("%d",&a);
+    my_scanf("%d",&a);
      return 0;
 }                      
                                      

@@ -8,12 +8,12 @@ int  main_bench( )
    double d[1000];
    int n,i,x=0;
    double y=0.00,z;
-	   scanf ("%d",&n);
+	   my_scanf ("%d",&n);
 	   for(i=0;i<n;i=i+1){
-		   scanf("%d",&a[i]);
+		   my_scanf("%d",&a[i]);
        }
 	   for(i=0;i<n;i=i+1){
-		   scanf("%d",&b[i]);
+		   my_scanf("%d",&b[i]);
 	   }
 	   for(i=0;i<n;i=i+1){
           if(b[i]>=90&&b[i]<=100)
@@ -45,7 +45,7 @@ int  main_bench( )
 		   y=y+d[i];
 	   }
 	   z=(y*1.00)/(x*1.00);
-       printf("%.2lf",z);
+       my_printf("%.2lf",z);
 return 0;
 }
 

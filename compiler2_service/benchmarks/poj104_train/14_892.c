@@ -13,11 +13,11 @@ int main_bench()
 {
 	int n,i,s[3],m,j,v;
 	char z[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
-	scanf("%s %d %d",o[0].id,&o[0].a,&o[0].b);
-	scanf("%s %d %d",o[1].id,&o[1].a,&o[1].b);
-	scanf("%s %d %d",o[2].id,&o[2].a,&o[2].b);
+	my_scanf("%s %d %d",o[0].id,&o[0].a,&o[0].b);
+	my_scanf("%s %d %d",o[1].id,&o[1].a,&o[1].b);
+	my_scanf("%s %d %d",o[2].id,&o[2].a,&o[2].b);
 	s[0]=o[0].a+o[0].b;
 	s[1]=o[1].a+o[1].b;
 	s[2]=o[2].a+o[2].b;
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	for(i=0;i<n-3;i++)
 	{
-		scanf("%s %d %d",r.id,&r.a,&r.b);
+		my_scanf("%s %d %d",r.id,&r.a,&r.b);
         m=r.a+r.b;
 		if(m>s[0] )
 		{o[2]=o[1];s[2]=s[1];o[1]=o[0];s[1]=s[0];o[0]=r;s[0]=m;}
@@ -47,9 +47,9 @@ int main_bench()
 		else if(m<=s[1] && m>s[2])
 		{o[2]=r;s[2]=m;}
 	}
-	printf("%s %d\n",o[0].id,s[0]);
-	printf("%s %d\n",o[1].id,s[1]);
-	printf("%s %d\n",o[2].id,s[2]);
+	my_printf("%s %d\n",o[0].id,s[0]);
+	my_printf("%s %d\n",o[1].id,s[1]);
+	my_printf("%s %d\n",o[2].id,s[2]);
 
 
 

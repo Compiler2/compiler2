@@ -13,11 +13,11 @@ int main_bench()
 {
 	int N,i,j,s[101][6],max,k=0;
 	long int sum=0;
-	scanf("%d\n",&N);
+	my_scanf("%d\n",&N);
 	struct student stu[101];
 	struct student *p;
 	for(p=stu;p<stu+N;p++)
-	{scanf("%s %d %d %c %c %d",p->name,&p->n1,&p->n2,&p->a,&p->b,&p->n3);}
+	{my_scanf("%s %d %d %c %c %d",p->name,&p->n1,&p->n2,&p->a,&p->b,&p->n3);}
 	for(i=0;i<N;i++)
 		for(j=0;j<6;j++)
 		{s[i][j]=0;}
@@ -41,8 +41,8 @@ int main_bench()
 	for(i=0;i<N;i++)
 		if(s[i][5]>max)
 		{max=s[i][5];k=i;}
-    printf("%s\n%d\n",stu[k].name,s[k][5]);
+    my_printf("%s\n%d\n",stu[k].name,s[k][5]);
 	for(i=0;i<N;i++)
 		sum=sum+s[i][5];
-	printf("%ld\n",sum);
+	my_printf("%ld\n",sum);
 }

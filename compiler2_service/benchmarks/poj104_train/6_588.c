@@ -5,16 +5,16 @@ int main_bench()
     int a[100][100];
 	int sum;
 	int b,n,m,i,j,l;
-    scanf("%d",&b);
+    my_scanf("%d",&b);
 	for(l=0;l<b;l++)
 	{
-        scanf("%d",&m);
-		scanf("%d",&n);
+        my_scanf("%d",&m);
+		my_scanf("%d",&n);
         for(i=0;i<m;i++)
 		{
 	      for(j=0;j<n;j++)
 		  {
-			  scanf("%d",&a[i][j]);
+			  my_scanf("%d",&a[i][j]);
 		  }
 		}
 		sum=0;
@@ -24,7 +24,7 @@ int main_bench()
 		  {
 		  	sum+=a[0][j];
 		  }
-		  printf("%d\n",sum);
+		  my_printf("%d\n",sum);
 		}
 		if (n==1&&m!=1)
 		{
@@ -32,11 +32,11 @@ int main_bench()
 		  {
 		  	sum+=a[0][1];
 		  }
-		  printf("%d\n",sum);
+		  my_printf("%d\n",sum);
 		}
 		if(m==1&&n==1)
 		{
-			printf("%d\n",a[0][0]);
+			my_printf("%d\n",a[0][0]);
 		}
 		if(m>1&&n>1)
 		{
@@ -50,7 +50,7 @@ int main_bench()
 			sum+=a[i][0]+a[i][n-1];
 		}
 		sum=sum+a[0][0]+a[0][n-1]+a[m-1][0]+a[m-1][n-1];
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
 		}
 	}
 	return 0;

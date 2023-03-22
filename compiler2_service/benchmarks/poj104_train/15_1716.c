@@ -6,11 +6,11 @@ int main_bench()
 	int sz[1000][1000];
 	int star1,star2,end1,end2;
 	int f=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(row=0;row<n;row++){
 		for(col=0;col<n;col++){
-			scanf("%d",&(sz[row][col]));
+			my_scanf("%d",&(sz[row][col]));
 		}
 	}
 	for(row=1;row<n-1;row++){
@@ -28,7 +28,7 @@ int main_bench()
 	}
      s=(end1-star1-1)*(end2-star2-1);
 
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

@@ -15,18 +15,18 @@ int main_bench()
     struct bac stu[101];
 	struct bac temp;
 	int i,j,n,sum=0;	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		stu[i].money=0;
-		scanf("%s",&stu[i].name);
-		scanf("%d",&stu[i].num1);
-		scanf("%d",&stu[i].num2);
+		my_scanf("%s",&stu[i].name);
+		my_scanf("%d",&stu[i].num1);
+		my_scanf("%d",&stu[i].num2);
 		getchar();
-        scanf("%c",&stu[i].ganbu);
+        my_scanf("%c",&stu[i].ganbu);
 		getchar();
-		scanf("%c",&stu[i].west);
+		my_scanf("%c",&stu[i].west);
 		getchar();
-		scanf("%d",&stu[i].paper);
+		my_scanf("%d",&stu[i].paper);
 	}
 	for(i=0;i<n;i++){
 		if(stu[i].num1>80&&stu[i].paper>=1){stu[i].money=stu[i].money+8000;}
@@ -46,8 +46,8 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 		sum=sum+stu[i].money;
-	printf("%s\n%d\n",stu[0].name,stu[0].money);
-	printf("%d",sum);
+	my_printf("%s\n%d\n",stu[0].name,stu[0].money);
+	my_printf("%d",sum);
 	return 0;
 }
 

@@ -23,10 +23,10 @@ int main_bench(){
 	}
 	for(i=0;i<k-1;i++){ 
 		for(j=0;h[i][j]!='\0';j++){
-			printf("%c",h[i][j]);
-		}printf(" "); 
+			my_printf("%c",h[i][j]);
+		}my_printf(" "); 
 	}
 	for(j=0;h[k-1][j]!='\0';j++){
-			printf("%c",h[k-1][j]);
+			my_printf("%c",h[k-1][j]);
 		}
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int m,n[100],i,j,a[100],b[100];
 	double c[100],sum[100]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++){
 		for(j=0;j<n[i];j++){
@@ -18,6 +18,6 @@ int main_bench()
 			sum[i]=sum[i]+c[j];
 		}
 	}
-	for(i=0;i<m;i++)printf("%.3lf\n",sum[i]);
+	for(i=0;i<m;i++)my_printf("%.3lf\n",sum[i]);
 	return 0;
 }

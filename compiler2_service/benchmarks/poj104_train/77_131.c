@@ -4,7 +4,7 @@ int main_bench()
 {
 	char line[100], boy, girl;
 	int i, j, l, k=0, m, n=0, numb[100]={0}, numg[100]={0};
-	scanf("%s", line);
+	my_scanf("%s", line);
 	l = strlen(line);
 	boy = line[0];
 	for(i=0;i<l;i++)
@@ -31,6 +31,6 @@ int main_bench()
 			}
 		}
 	for(i=0;numg[i]!=0;i++)
-		printf("%d %d\n", numb[i], numg[i]);
+		my_printf("%d %d\n", numb[i], numg[i]);
 	return 0;
 }

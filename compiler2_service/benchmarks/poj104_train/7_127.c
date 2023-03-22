@@ -8,11 +8,11 @@ gets(s1);gets(s2);
 
 
 if(n[1]=='l')
-printf("iloveearth");
+my_printf("iloveearth");
 else if(n[0]=='s')
-printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
+my_printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
 else
-printf("programmingiscool");
+my_printf("programmingiscool");
 return 0;
 }
 

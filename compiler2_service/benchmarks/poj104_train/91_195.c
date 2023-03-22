@@ -8,6 +8,6 @@ main_bench()
 	int i,m;
 	m=strlen(a);
 	for(i=0;i<m-1;i++)
-		printf("%c",*(a+i)+*(a+i+1));
-	printf("%c",*a+*(a+m-1));
+		my_printf("%c",*(a+i)+*(a+i+1));
+	my_printf("%c",*a+*(a+m-1));
 }

@@ -11,12 +11,12 @@ int main_bench(){
 	x2=0;
 	y2=0;
 	int m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -49,7 +49,7 @@ int main_bench(){
 		else;
 	}
      m=(y2-y1+1-2)*(x2-x1+1-2);
-	 printf("\n%d",m);
+	 my_printf("\n%d",m);
 	 return 0;
 
 }

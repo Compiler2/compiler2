@@ -17,7 +17,7 @@ int main_bench()
             i=i-1;
         }
     }
-    printf ("%s",string);
+    my_printf ("%s",string);
     getchar ();
     getchar ();
 }

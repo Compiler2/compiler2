@@ -5,7 +5,7 @@ int main_bench()
 	int x,y;
 	int a[5],i;
 	int w=0;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	for(i=4;i>=0;i--)
 	{
 		a[i]=x%10;
@@ -14,6 +14,6 @@ int main_bench()
 	for(i=0;a[i]==0;i++)
 		w++;
 	for(i=4;i>=w;i--)
-		printf("%d",a[i]);
-	printf("\n");
+		my_printf("%d",a[i]);
+	my_printf("\n");
 }

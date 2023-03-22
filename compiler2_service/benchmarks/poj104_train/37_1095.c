@@ -2,11 +2,11 @@
 
 int main_bench()
 {
-	int t;scanf("%d",&t);
+	int t;my_scanf("%d",&t);
 	int i;char a[100000];
 	for(i=0;i<t;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		int zimu[26]={0};
 		int k,len;int cache;
 		len=strlen(a);
@@ -19,12 +19,12 @@ int main_bench()
 		{
 			if(zimu[a[k]-'a']==1)
 			{
-				printf("%c\n",a[k]);
+				my_printf("%c\n",a[k]);
 				break;
 			}
 		}
 		if(k==len)
-		{printf("no\n");
+		{my_printf("no\n");
 		}
 	}
 	return 0;

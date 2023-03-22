@@ -5,8 +5,8 @@ int main_bench()
 	double a,c;
 	char s[1000],as[1000];
 	int m,n,t,i,b;
-	scanf("%lf",&a);
-	scanf("%s %s",s,as);
+	my_scanf("%lf",&a);
+	my_scanf("%s %s",s,as);
 	t=0;
 	for(i=0;s[i]!='\0';i++){
 		if(s[i]!=65&&s[i]!=67&&s[i]!=71&&s[i]!=84){
@@ -41,13 +41,13 @@ int main_bench()
 		}
 	}
 	if(t==-1){
-		printf("error\n");
+		my_printf("error\n");
 	}
 	if(t==0){
-		printf("no\n");
+		my_printf("no\n");
 	}
 	if(t==1){
-		printf("yes\n");
+		my_printf("yes\n");
 	}
     return 0;
 }

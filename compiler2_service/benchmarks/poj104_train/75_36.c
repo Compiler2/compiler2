@@ -4,7 +4,7 @@ int main_bench()
 {
     int a[1000],b[1000],t,n,i=0,j,time[1000]={0};
     char c;
-    while(scanf("%d%c",&t,&c)&&c==',')
+    while(my_scanf("%d%c",&t,&c)&&c==',')
     {
        a[i]=t;
        i++;
@@ -12,7 +12,7 @@ int main_bench()
     a[i]=t;
     n=i+1;
     i=0;
-    while(scanf("%d%c",&t,&c)&&c==',')
+    while(my_scanf("%d%c",&t,&c)&&c==',')
     {
        b[i]=t;
        i++;
@@ -28,7 +28,7 @@ int main_bench()
     {
        if(time[j]>max) max=time[j];
     }
-    printf("%d %d",n,max);
+    my_printf("%d %d",n,max);
          
     
     return 0;

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,a[14]={100},b[14]={100};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[0]=m;
 	b[0]=n;
 	for(i=0;a[i]>=1;i++)
@@ -21,7 +21,7 @@ for(i=0;i<=12;i++)
 for(j=0;j<=12;j++)
 if(a[i]==b[j])
 {
-	printf("%d\n",a[i]);
+	my_printf("%d\n",a[i]);
 return 0;
 }
 	

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a,b,i,j=0,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if((a>=90)&&(a<=140)&&(b>=60)&&(b<=90))
 		{
 			j++;
@@ -17,6 +17,6 @@ int main_bench()
 		}
 	}
 	k=(k>j)?k:j;
-	printf("%d",k);
+	my_printf("%d",k);
 	return 0;
 }

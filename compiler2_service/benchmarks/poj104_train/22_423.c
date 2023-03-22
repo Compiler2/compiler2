@@ -6,8 +6,8 @@ int main_bench()
 	char c[301];
 	for(i=1;i<301;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c[i]);
 		if(c[i]!=',')
 {
 		len=i;
@@ -30,8 +30,8 @@ int main_bench()
 			max1=a[l];
 	}
          if(max1==0)
-        printf("No\n");
+        my_printf("No\n");
 else
-	printf("%d\n",max1);
+	my_printf("%d\n",max1);
 	return 0;
 }

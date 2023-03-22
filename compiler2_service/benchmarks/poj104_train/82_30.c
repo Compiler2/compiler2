@@ -6,10 +6,10 @@ int main_bench()
 	int t=0;
 	int s=0;
 	int max(int x,int y);
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-	scanf ("%d %d",&x[(2*i)],&x[(2*i+1)]);
+	my_scanf ("%d %d",&x[(2*i)],&x[(2*i+1)]);
 	}
     for (i=0;i<n;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 	
 	}
 	t=max (t,s);
-	printf ("%d",t);
+	my_printf ("%d",t);
 	return 0;
 }
 int max(int x,int y)

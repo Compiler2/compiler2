@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,a,b,c,d,e,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<10)
-		printf("%d\n",n);
+		my_printf("%d\n",n);
 	else
 	{
 		if(n<100)
@@ -13,7 +13,7 @@ int main_bench()
 		a=n/10;
 		b=n%10;
 	    m=a+b*10;
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 		}
 		else
 		{
@@ -23,7 +23,7 @@ int main_bench()
 	  	    b=n/10-a*10;
 		    c=n%10;
 		    m=a+b*10+c*100;
-		    printf("%d\n",m);
+		    my_printf("%d\n",m);
 			}
 			else
 			{
@@ -34,7 +34,7 @@ int main_bench()
 					c=n/10-a*100-b*10;
 					d=n%10;
 					m=a+b*10+c*100+d*1000;
-					printf("%d\n",m);
+					my_printf("%d\n",m);
 				}
 				else
 				{
@@ -44,7 +44,7 @@ int main_bench()
 					d=n/10-a*1000-b*100-c*10;
 					e=n%10;
                     m=a+b*10+c*100+d*1000+e*10000;
-					printf("%d\n",m);
+					my_printf("%d\n",m);
 				}
 			}
 		}

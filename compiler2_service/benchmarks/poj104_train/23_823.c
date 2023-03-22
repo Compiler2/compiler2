@@ -15,13 +15,13 @@ int main_bench()
 			{
 				l=0;
 				*p=0;
-				printf("%s ",p+1);
+				my_printf("%s ",p+1);
 			}
 		}
 		else
 			l++;
 	}
 	if(l)
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	return 0;
 }

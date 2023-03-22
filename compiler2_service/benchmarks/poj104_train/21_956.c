@@ -8,10 +8,10 @@ int main_bench()
 {	int n,i,j,sum=0;
 	float aver;
 	struct num nob[300],temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&nob[i].n);
+		my_scanf("%d",&nob[i].n);
 		sum+=nob[i].n;
 	}
 	aver=(sum*1.0)/(n*1.0);
@@ -34,7 +34,7 @@ int main_bench()
 		if(nob[0].d==nob[i].d) sum++;
 		else break;
 	}
-	if(sum==1)printf("%d\n",nob[0].n);
+	if(sum==1)my_printf("%d\n",nob[0].n);
 	else
 	{
 		for(i=0;i<sum-1;i++)
@@ -45,9 +45,9 @@ int main_bench()
 				nob[j]=nob[j+1];
 				nob[j+1]=nob[j];
 			}
-	printf("%d",nob[0].n);
+	my_printf("%d",nob[0].n);
 	for(i=1;i<sum;i++)
-		printf(",%d",nob[i].n);
+		my_printf(",%d",nob[i].n);
 	}
 	return 0;
 }

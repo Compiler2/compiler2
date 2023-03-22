@@ -10,7 +10,7 @@ main_bench()
 	int max=0;
 
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 
 c=getchar();
@@ -83,7 +83,7 @@ c=getchar()-'0';
 			per[j][1]=per[j+1][1];
 		}
 	}
-printf("%d\n",max);
+my_printf("%d\n",max);
 
 
 

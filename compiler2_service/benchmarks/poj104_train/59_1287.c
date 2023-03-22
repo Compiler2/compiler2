@@ -3,17 +3,17 @@
 int main_bench(){
 	char sz[105][105]={'#'},a[105][105]={'#'};
 int n,i,j,m,k=0,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++){
 	
-	scanf("%s",sz[i]);
+	my_scanf("%s",sz[i]);
 }
 for(t=1;t<=n;t++){
 		strcpy(a[t],sz[t]);
 	
 	}
 
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(m;m>1;m--){
 	for(i=1;i<=n;i++){
 		for(j=0;j<n;j++){
@@ -59,7 +59,7 @@ for(i=1;i<=n;i++){
 		}
 	}
 }
-printf("%d",k);
+my_printf("%d",k);
 
 
 

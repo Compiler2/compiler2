@@ -5,10 +5,10 @@ int main_bench()
 int n,i,a[100],j,t,c[100];
 int s=0;
 float max,m,b[100];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
   s=s+a[i];
  }for(i=0;i<n;i++)
  {
@@ -50,12 +50,12 @@ float max,m,b[100];
 	 }
  }
  
- printf("%d",c[0]);
+ my_printf("%d",c[0]);
  
 
  for(i=1;i<j;i++)
   {
-printf(",%d",c[i]);  
+my_printf(",%d",c[i]);  
   
  }
  

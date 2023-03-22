@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[1300]={0};
 	int i,j,b[400]={0},n,l,count=0,max,sec;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	for(i=0,j=0;i<l;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 			sec=b[j];
 		}
 	if(count)
-		printf("%d",sec);
+		my_printf("%d",sec);
 	else
-		printf("No");
+		my_printf("No");
 }

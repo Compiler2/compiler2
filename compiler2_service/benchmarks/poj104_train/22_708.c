@@ -5,7 +5,7 @@ int main_bench()
 	int number1,number2,i,j,x[300],y[300],n[300]={0},m=1,z[300]={0},p=0,q;
 	char d[300];
     i=0;
-	do{scanf("%d%c",&x[i],&d[i]);
+	do{my_scanf("%d%c",&x[i],&d[i]);
 	   i=i+1;}
 	while(d[i-1]==',');
 	y[0]=x[0];
@@ -26,8 +26,8 @@ int main_bench()
 		if(z[i]==1){p=1;
 	                q=y[i];
 					break;}
-	if(p==1) printf("%d",q);
-	else printf("No");
+	if(p==1) my_printf("%d",q);
+	else my_printf("No");
 
 	return 0;
 	

@@ -14,13 +14,13 @@ int main_bench()
 
     int i,j,k;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(i=1;i<=n;i++)
 
-        scanf("%s",a[i]+1);
+        my_scanf("%s",a[i]+1);
 
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 
     for(k=1;k<m;k++)
 
@@ -96,7 +96,7 @@ int main_bench()
 
     }
 
-    printf("%d\n", sum);
+    my_printf("%d\n", sum);
 
     return 0;
 

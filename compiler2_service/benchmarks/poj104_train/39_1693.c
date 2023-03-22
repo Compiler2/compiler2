@@ -4,7 +4,7 @@
 int main_bench()
 {
     int N,i,price,total=0,max=0,t;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     struct student
     {
            char name[21];
@@ -15,7 +15,7 @@ int main_bench()
            int paper;
            }stu[100];
     for(i=0;i<N;i++){
-                     scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].ave,&stu[i].comment,&stu[i].officer,&stu[i].province,&stu[i].paper);
+                     my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].ave,&stu[i].comment,&stu[i].officer,&stu[i].province,&stu[i].paper);
                      }    
     for(i=0;i<N;i++){
                      price=0;
@@ -30,7 +30,7 @@ int main_bench()
                                    t=i;
                                    }
                      }
-    printf("%s\n%d\n%d\n",stu[t].name,max,total);
+    my_printf("%s\n%d\n%d\n",stu[t].name,max,total);
     
     return 0;
     }

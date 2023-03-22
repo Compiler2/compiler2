@@ -10,15 +10,15 @@ int main_bench()
     	if((a[i]==' ')&&(a[i+1]==' ')) 
      	{   i++;
      	    while((a[i]==' ')&&(a[i+1]==' ')){i++;}
-        	printf("%c",a[i]);
+        	my_printf("%c",a[i]);
 		}
      	else 
      	{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
     }
     int y=0;
-	scanf("%d",&y);
+	my_scanf("%d",&y);
     return 0;
 }
  

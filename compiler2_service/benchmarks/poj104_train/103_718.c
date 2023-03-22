@@ -3,7 +3,7 @@
 int main_bench(){
 char a[1000];
 int c,i,c1,c2,d=1;
-scanf("%s",a);
+my_scanf("%s",a);
 c=strlen(a)-1;
 for(i=0;i<=c;i++){
   c1=a[i];
@@ -15,7 +15,7 @@ for(i=0;i<=c;i++){
   if(c1==c2)
 	  d++;
   else{
-  printf("(%c,%d)",c1,d);
+  my_printf("(%c,%d)",c1,d);
   d=1;
   }
 }

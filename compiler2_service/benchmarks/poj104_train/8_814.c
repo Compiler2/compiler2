@@ -13,11 +13,11 @@ int main_bench()
 void Read()
 {
 	int i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for (i=1;i<=m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for (i=1;i<=n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 
 void Ord()
@@ -42,9 +42,9 @@ void Gath()
 void Prin()
 {
 	int i;
-	printf("%d",a[1]);
+	my_printf("%d",a[1]);
 	for (i=2;i<=m+n;i++)
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 }
 
 void swap_a(int i,int j)

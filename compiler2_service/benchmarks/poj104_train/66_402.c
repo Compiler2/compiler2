@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int y,m,d,date,a,i,k;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	y=y%2800;
 	date=0;
 	for(i=1;i<y;i++){
@@ -28,19 +28,19 @@ int main_bench(){
         date+=d;
 		a=date%7;
         if(a==1){
-			printf("Mon.");
+			my_printf("Mon.");
 		}else if(a==2){
-			printf("Tue.");
+			my_printf("Tue.");
 		}else if(a==3){
-			printf("Wed.");
+			my_printf("Wed.");
 		}else if(a==4){
-			printf("Thu.");
+			my_printf("Thu.");
 		}else if(a==5){
-	 	    printf("Fri.");
+	 	    my_printf("Fri.");
 		}else if(a==6){
-			printf("Sat.");
+			my_printf("Sat.");
 		}else{
-			printf("Sun.");
+			my_printf("Sun.");
 		}
 		return 0;
 	}

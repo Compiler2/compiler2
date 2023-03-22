@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[101];
 	int i,j,k,n,max,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	max=a[1];
 	for(j=1;j<=n;j++)
 	{
@@ -19,6 +19,6 @@ int main_bench()
 		if((a[k]<max)&&(m<a[k]))
 			m=a[k];
 	}
-	printf("%d\n",max);
-	printf("%d",m);
+	my_printf("%d\n",max);
+	my_printf("%d",m);
 }

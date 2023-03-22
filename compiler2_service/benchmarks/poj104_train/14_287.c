@@ -4,9 +4,9 @@ int main_bench()
 {
  int n,i,max1=0,max2=0,max3=0,t1=0,t2=0,t3=0;
  int ID[100000],y[100000],m[100000],s[100000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-  scanf("%d %d %d",&ID[i],&y[i],&m[i]);
+  my_scanf("%d %d %d",&ID[i],&y[i],&m[i]);
  for(i=0;i<n;i++)
   s[i]=y[i]+m[i]; 
  for(i=0;i<n;i++)
@@ -35,9 +35,9 @@ int main_bench()
    t3=i;             
   }                
  }           
- printf("%d %d\n",ID[t1],max1); 
- printf("%d %d\n",ID[t2],max2);
- printf("%d %d\n",ID[t3],max3);
+ my_printf("%d %d\n",ID[t1],max1); 
+ my_printf("%d %d\n",ID[t2],max2);
+ my_printf("%d %d\n",ID[t3],max3);
  getchar();
  getchar();
  getchar();

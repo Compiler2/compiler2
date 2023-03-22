@@ -61,6 +61,6 @@ int main_bench()
 			max=m;
 		t=t+1;
 	}
-	printf("%d %d",d,max);
+	my_printf("%d %d",d,max);
 	return 0;
 }

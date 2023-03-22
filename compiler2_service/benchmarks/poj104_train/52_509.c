@@ -4,19 +4,19 @@ int main_bench()
 {
  int n,m,i;
  int a[100];
- scanf("%d %d",&n,&m);
+ my_scanf("%d %d",&n,&m);
   for (i=1;i<=n;i++)
 	
-  { scanf("%d",&a[i]);}
+  { my_scanf("%d",&a[i]);}
 	int *x;
 	x=&a[n];
 	for(i=1;i<=n;i++){
 	x++;
 	*x=a[i];
 	}
-  printf("%d",a[n-m+1]);
+  my_printf("%d",a[n-m+1]);
   for(i=n-m+2;i<=2*n-m;i++){
-  printf(" %d",a[i]);
+  my_printf(" %d",a[i]);
   }
 	  
 	 

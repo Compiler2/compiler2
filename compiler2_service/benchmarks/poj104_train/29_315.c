@@ -5,10 +5,10 @@ int main_bench()
 {
 	int m,n[100],i,j,k,fm[100]={0},fz[100]={0};
 	double h[100]={0};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if(n[i]==1)
 		{
 			h[i]=2.000;
@@ -29,7 +29,7 @@ int main_bench()
 				h[i]+=(fz[k]*1.000/fm[k]*1.000);
 			}
 		}
-		printf("%.3lf\n",h[i]);
+		my_printf("%.3lf\n",h[i]);
 	}
 	return 0;
 }

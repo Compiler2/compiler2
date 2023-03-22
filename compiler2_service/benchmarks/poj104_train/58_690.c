@@ -27,7 +27,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",flag[i]);
+		my_printf("%d\n",flag[i]);
 	}
 	return 0;
 }

@@ -4,12 +4,12 @@ int prime(int x);
 int main_bench()
 {
 	int m,i;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=2;i<=m/2;i++)
 	{
 		if(prime(i)&&prime(m-i))
 		{
-			printf("%d %d\n",i,m-i);
+			my_printf("%d %d\n",i,m-i);
 		}
 	}
 	return 0;

@@ -40,11 +40,11 @@ int main_bench()
 		strcat(c,d);
 	    a[p]=0;
 	    strcat(a,c);
-	    printf("%s\n",a);
+	    my_printf("%s\n",a);
 	}
 	else
 	{
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

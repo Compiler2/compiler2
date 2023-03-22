@@ -4,20 +4,20 @@ int main_bench()
 {
 	int n,s[200],i,j,e,l,k,d[200],h;
 	char a[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(h=0;h<200;h++)
 		{
 			a[h]=s[h]=d[h]=0;
 		}
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l=strlen(a);
 		for(j=0;j<l;j++)
 		{
 			s[j]=a[l-j-1]-'0';
 		}
-		scanf("%s",a);
+		my_scanf("%s",a);
 		k=strlen(a);
 		for(j=0;j<k;j++)
 		{
@@ -38,9 +38,9 @@ int main_bench()
 		}
 		for(h=j;h>=0;h--)
 		{
-			printf("%d",s[h]);
+			my_printf("%d",s[h]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

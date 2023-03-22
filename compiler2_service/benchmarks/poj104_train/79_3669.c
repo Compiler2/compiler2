@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,l,m,s;
     for(s=0;s<10000;s=s+1){
-        scanf("%d%d",&n,&m);
+        my_scanf("%d%d",&n,&m);
         if(n>0&&m>0){
             int a[1000000];
             for(i=0;i<n;i=i+1){
@@ -20,7 +20,7 @@ int main_bench()
                     a[i]=a[m%l+i];
                }
             }
-            printf("%d\n",a[0]);
+            my_printf("%d\n",a[0]);
         }
     }
     return 0;

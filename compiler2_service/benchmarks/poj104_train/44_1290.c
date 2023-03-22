@@ -17,11 +17,11 @@ main_bench()
     int x;
     for(int i=1;i<=6;i++)
     {
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     if(x>=0)
-    printf("%d\n",reverse(x));
+    my_printf("%d\n",reverse(x));
     if(x<0)
-    {x=(-1)*x;printf("%d\n",(-1)*reverse(x));}
+    {x=(-1)*x;my_printf("%d\n",(-1)*reverse(x));}
     }
 getchar();getchar();getchar();getchar();getchar();getchar();
 }

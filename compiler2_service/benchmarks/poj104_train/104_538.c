@@ -5,7 +5,7 @@
 int main_bench()
 {
 	int a, b, c, d;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	c=1;
 	while(c==1)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 		if(a==b)
 		{
 			c=0;
-			printf("%d",a);
+			my_printf("%d",a);
 		}
 	}
 	return 0;

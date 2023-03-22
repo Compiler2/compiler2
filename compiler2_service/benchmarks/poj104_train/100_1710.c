@@ -3,7 +3,7 @@
 int main_bench() {
 	char n[301],temp;
 	int a[27]={0},b[27]={0},t=0,i,j,len;
-	scanf("%s",&n);
+	my_scanf("%s",&n);
 	len=strlen(n);
 	for(i=0;i<=len;i++) {
 		if(n[i]>='A'&&n[i]<='Z') {
@@ -27,18 +27,18 @@ int main_bench() {
 		for(i=1;i<=26;i++) {
 			if(a[i]!=0) {
 				temp=i+64;
-				printf("%c=%d\n",temp,a[i]);
+				my_printf("%c=%d\n",temp,a[i]);
 			}
 		}
 		for(i=1;i<=26;i++) {
 			if(b[i]!=0) {
 				temp=i+96;
-				printf("%c=%d\n",temp,b[i]);
+				my_printf("%c=%d\n",temp,b[i]);
 			}
 		}
 	}
 	else {
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

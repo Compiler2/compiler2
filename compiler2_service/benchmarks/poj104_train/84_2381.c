@@ -5,10 +5,10 @@ int main_bench()
 	int num,len;
 	int max1=0,max2=0;
 	int tmp,i;
-	scanf("%d",&len);
+	my_scanf("%d",&len);
 	for (i = 1;i<=len;i++)
 	{
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(num>max1)
 		{
 			tmp=num;
@@ -29,6 +29,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%d\n%d\n",max1,max2);
+	my_printf("%d\n%d\n",max1,max2);
 	return 0;
 }

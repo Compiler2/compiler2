@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int a[100][100],i,j,min,max,e,b,c,d,n,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}	
 	max=0;
@@ -33,6 +33,6 @@ int main_bench()
 		}
 	}
    	t=(e-c+1)*(b-d+1)-2*(e-c+1)-2*(b-d-1);
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

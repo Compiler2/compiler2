@@ -15,16 +15,16 @@ main_bench()
       a[6]=30;
       a[9]=30;
       a[11]=30;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {  t=0;
-         scanf("%d %d %d",&x,&y,&z);
+         my_scanf("%d %d %d",&x,&y,&z);
          if(y>z){s=y;y=z;z=s;}
          a[2]=((x%400==0)||(x%100!=0&&x%4==0))?29:28;
          for(int j=y;j<z;j++)
             t=t+a[j];
-         if(t%7==0)printf("YES\n");
-         else printf("NO\n");
+         if(t%7==0)my_printf("YES\n");
+         else my_printf("NO\n");
       }
       
 }

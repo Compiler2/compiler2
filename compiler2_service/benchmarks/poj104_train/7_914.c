@@ -19,12 +19,12 @@ int main_bench()
 		sr[j]='\0';
 		same=strcmp(sr,sub);
 		if(same==0){
-			printf("%s",replace);
+			my_printf("%s",replace);
 			i=i+lsub;
-			printf("%s",&s[i]);
+			my_printf("%s",&s[i]);
 			break;
 		}else{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	return 0;

@@ -4,10 +4,10 @@ int main_bench()
 {
     char a[100],b[100];
     int n,k=1,p,q,i,c[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while (k<=n)
     {
-        scanf("%s%s",&a,&b);
+        my_scanf("%s%s",&a,&b);
         p=strlen(a);
         q=strlen(b);
         i=p;
@@ -20,9 +20,9 @@ int main_bench()
             }
             else if (q<0) c[p]=a[p]-48;
         }
-        for(p=0;p<i;p++) printf("%d",c[p]);
+        for(p=0;p<i;p++) my_printf("%d",c[p]);
         k++;
-        printf("\n");
+        my_printf("\n");
     }
 }
 

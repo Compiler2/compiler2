@@ -5,7 +5,7 @@ main_bench()
 	char a[1001],b[1001];
 	int c[1001];
 	int m=0;
-	scanf ("%s",a); 
+	my_scanf ("%s",a); 
 		b[0]=a[0];
 	for (int l=0;l<=1000;l++)
 		{c[l]=1;
@@ -22,6 +22,6 @@ main_bench()
 	for (int k=0;k<strlen(b);k++)
 	{	if (b[k]>95)
 		b[k]=b[k]-32; 
-		printf ("(%c,%d)",b[k],c[k]);	 
+		my_printf ("(%c,%d)",b[k],c[k]);	 
 }
 }

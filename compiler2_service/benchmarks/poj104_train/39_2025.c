@@ -22,15 +22,15 @@ struct person
 int main_bench()
 {
 	int n, i, all=0, max=0, whom=-1;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s", student[i].name);
-		scanf("%d", &student[i].qimo);
-		scanf("%d", &student[i].banji);
-		scanf("%s", student[i].ganbu);
-		scanf("%s", student[i].xibu);
-		scanf("%d", &student[i].lunwen);
+		my_scanf("%s", student[i].name);
+		my_scanf("%d", &student[i].qimo);
+		my_scanf("%d", &student[i].banji);
+		my_scanf("%s", student[i].ganbu);
+		my_scanf("%s", student[i].xibu);
+		my_scanf("%d", &student[i].lunwen);
 	}
 
 	for(i=0; i<n; i++)
@@ -112,9 +112,9 @@ int main_bench()
         }
 	}
 
-	printf("%s\n", student[whom].name);
-	printf("%d\n", student[whom].total);
-	printf("%d", all);
+	my_printf("%s\n", student[whom].name);
+	my_printf("%d\n", student[whom].total);
+	my_printf("%d", all);
 
 	
 	return 0;

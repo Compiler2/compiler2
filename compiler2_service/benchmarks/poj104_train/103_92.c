@@ -30,12 +30,12 @@ int main_bench()
                              
                      }        
             }
- printf("(%c,%d)",b[0],c[0]);
+ my_printf("(%c,%d)",b[0],c[0]);
  for(int i=1;i<=zushu;i++)
  {
  
  
- printf("(%c,%d)",b[i],c[i]+1);    
+ my_printf("(%c,%d)",b[i],c[i]+1);    
 }
 getchar();
 getchar();

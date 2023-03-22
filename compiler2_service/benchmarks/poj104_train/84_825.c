@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,a,b,c,d;
-	scanf("%d",&n);
-	scanf("%d",&a);
-	scanf("%d",&b);
+	my_scanf("%d",&n);
+	my_scanf("%d",&a);
+	my_scanf("%d",&b);
 	n=n-2;
 	if(b>a)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 	do
 	{
 		n--;
-		scanf("%d",&d);
+		my_scanf("%d",&d);
 		if(d>b)
 		{
 			c=d;
@@ -31,6 +31,6 @@ int main_bench()
 		}
 	}
 	while(n!=0);
-	printf("%d\n%d",a,b);
+	my_printf("%d\n%d",a,b);
 	return 0;
 }

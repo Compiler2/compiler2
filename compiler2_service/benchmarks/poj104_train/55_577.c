@@ -7,9 +7,9 @@ int main_bench()
 	long num=0;;
 	for(int i=0;i<100;i++)
 		s[i]='\0';
-	scanf("%d",&a);
-	scanf("%s",&s);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",&s);
+	my_scanf("%d",&b);
 	for(int j=0;j<100;j++)
 	{
 		if(s[j]>='0'&&s[j]<='9')
@@ -36,7 +36,7 @@ int main_bench()
 	for(int q=99;q>=0;q--)
 	{
 		if(s[q]!='\0')
-			printf("%c",s[q]);
+			my_printf("%c",s[q]);
 	}
 	return 0;
 }

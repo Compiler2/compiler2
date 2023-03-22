@@ -12,7 +12,7 @@ int main_bench()
     if(str[i]==' '&&str[i+1]==' ')
     for(j=i+1;j<l-s+1;j++)
     str[j]=str[j+1];
-    printf("%s\n",str);
+    my_printf("%s\n",str);
     getchar();
     getchar();
     getchar();

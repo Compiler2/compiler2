@@ -21,9 +21,9 @@ int main_bench(){
 			strcpy(dc[k],h);
 		}
 	}
-	printf("%s",dc[0]);
+	my_printf("%s",dc[0]);
 	for(int m=1;m<a+1;m++){
-		printf(" %s",dc[m]);
+		my_printf(" %s",dc[m]);
 	}
 	return 0;
 }

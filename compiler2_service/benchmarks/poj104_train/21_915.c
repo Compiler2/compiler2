@@ -3,9 +3,9 @@
 int main_bench()
 {int i,j,k,temp=0,n,x[301],y[301];
  float ave=0,max=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i=0;i<n;i++)
- {scanf("%d",&x[i]);
+ {my_scanf("%d",&x[i]);
  ave=x[i]+ave;}
  ave=ave/n;
  for (i=0;i<n;i++)
@@ -22,9 +22,9 @@ int main_bench()
 	     y[j]=y[j+1];
 		 y[j+1]=temp;
 	 }}
-	printf("%d",y[0]);
+	my_printf("%d",y[0]);
  for (i=1;i<=k;i++)
-	 printf(",%d",y[i]);
+	 my_printf(",%d",y[i]);
 return 0;
  
 }

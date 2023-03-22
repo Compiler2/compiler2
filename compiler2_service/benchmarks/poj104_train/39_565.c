@@ -23,15 +23,15 @@ int main_bench()
 {
 	int n,i,total=0;
 	struct student stu[101]={0,0,0,0,0,0,0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].job,&stu[i].west,&stu[i].essay);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].job,&stu[i].west,&stu[i].essay);
 		stu[i].bonus=sco1(stu[i])+sco2(stu[i])+sco3(stu[i])+sco4(stu[i])+sco5(stu[i]);
 		total=total+stu[i].bonus;
 	}
 	bubble(stu,n);
-	printf("%s\n%d\n%d",stu[0].name,stu[0].bonus,total);
+	my_printf("%s\n%d\n%d",stu[0].name,stu[0].bonus,total);
 }
 
 int sco1(struct student a)

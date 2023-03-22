@@ -5,7 +5,7 @@ int main_bench()
 	int t=0,i=0,j=0,k=0,l=0,*n,m=0;
 	char **p,a;
 	n=(int*)malloc(26*sizeof(int));
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	a=getchar();
 	p=(char**)malloc(100*sizeof(char*));
 	for(i=0;i<t;i++)
@@ -43,9 +43,9 @@ int main_bench()
 			}
 		}
 		if(m!=l)
-			printf("%c\n",*(*(p+i)+m));
+			my_printf("%c\n",*(*(p+i)+m));
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

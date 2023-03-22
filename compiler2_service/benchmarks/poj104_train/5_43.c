@@ -5,15 +5,15 @@ int main_bench()
 	int i,j,l;
 	double n;
 	double k;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char a[1000],b[1000];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<=strlen(a)-1;i++)
 	{
 		if(a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 		    return 0;
 		}
 	}
@@ -21,7 +21,7 @@ int main_bench()
 	{
 		if(b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -33,9 +33,9 @@ int main_bench()
 	}
 	k=k/(strlen(a));
 	if(k>=n)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 	return 0;
 }
 

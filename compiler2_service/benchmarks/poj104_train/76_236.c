@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     struct space{
         int a;
         int b;
     }s[n];
     for (int c=0; c<n; c++) {
-        scanf("%d %d", &(s[c].a), &(s[c].b));
+        my_scanf("%d %d", &(s[c].a), &(s[c].b));
     }
     int j, r;
     for (j=1; j<n; j++) {
@@ -54,9 +54,9 @@ int main_bench()
         }
     }
     if (i==0) {
-        printf("no");
+        my_printf("no");
     }else if (i==1){
-        printf("%d %d", s[0].a, max);
+        my_printf("%d %d", s[0].a, max);
     }
     return 0;
 }

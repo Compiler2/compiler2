@@ -2,9 +2,9 @@
 
 int main_bench(){
   int n,k,sz[1000],sum[1000000],i,j,m=0,s=0;
-  scanf("%d %d",&n,&k);
+  my_scanf("%d %d",&n,&k);
   for(i=0;i<n;i++){
-     scanf("%d",&sz[i]);
+     my_scanf("%d",&sz[i]);
   }
   for(j=0;j<n;j++){
      for(i=j+1;i<n;i++){
@@ -23,9 +23,9 @@ int main_bench(){
      s+=sum[i];
   }
   if(s==0){
-     printf("no");
+     my_printf("no");
   }else{
-     printf("yes");
+     my_printf("yes");
   }
   return 0;
 }

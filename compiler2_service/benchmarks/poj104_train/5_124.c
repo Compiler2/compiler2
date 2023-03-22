@@ -5,8 +5,8 @@ int main_bench()
     float x,fenzi=0;
     int lena,lenb,i,j=0;
     char a[505],b[505],ch;
-    scanf("%f",&x);
-    scanf("%c",&ch);
+    my_scanf("%f",&x);
+    my_scanf("%c",&ch);
     gets(a);
 
     gets(b);
@@ -14,7 +14,7 @@ int main_bench()
     lena=strlen(a);
     lenb=strlen(b);
     if(lena!=lenb)
-    printf("error\n");
+    my_printf("error\n");
     else
     {
     	 for(i=0;i<lena;i++)
@@ -24,10 +24,10 @@ int main_bench()
     	        {
     		    if(a[i]==b[i]) fenzi++;
     	        }
-    	      else {j=1;printf("error\n");break;}
+    	      else {j=1;my_printf("error\n");break;}
     	 }
-         if(j==0&&fenzi>=x*lena) printf("yes\n");
-         else if(j==0) printf("no\n");
+         if(j==0&&fenzi>=x*lena) my_printf("yes\n");
+         else if(j==0) my_printf("no\n");
     }
     		
 }

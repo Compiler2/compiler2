@@ -7,10 +7,10 @@ struct point{
 
 int main_bench(){
 	int n,i,j=0,A,B,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point range[n];
 	for(i=0;i<n;i++){            
-		scanf("%d%d\n",&(range[i].a),&(range[i].b));
+		my_scanf("%d%d\n",&(range[i].a),&(range[i].b));
 	}
 	A=range[0].a;     
 	B=range[0].b;  
@@ -32,9 +32,9 @@ int main_bench(){
           }
         }
 	if(j==0){
-		printf("%d %d",A,B);
+		my_printf("%d %d",A,B);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	
 	return 0;

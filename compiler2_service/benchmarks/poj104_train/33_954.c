@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,a,n;
 	char st[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<n;a++)
 	{
-		scanf("%s",&st);
+		my_scanf("%s",&st);
 		for(i=0;i<256;i++)
 		{
 			if(st[i]=='A')
@@ -21,8 +21,8 @@ int main_bench()
 		    if(st[i]=='\0')
 				break;
 		}
-		printf("%s",st);
-		printf("\n");
+		my_printf("%s",st);
+		my_printf("\n");
 	}
 	return 0;
 }

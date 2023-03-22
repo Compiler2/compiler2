@@ -16,7 +16,7 @@ int main_bench()
 		}
 		for(i=1;i<=r;i++){if(a[i]!=a[0])break;}
 		if(i==r+1)p=1;
-		if(r==0)printf("No");
-		else if(p==1)printf("No");
-		else printf("%d",max2);
+		if(r==0)my_printf("No");
+		else if(p==1)my_printf("No");
+		else my_printf("%d",max2);
 }

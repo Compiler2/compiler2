@@ -7,7 +7,7 @@ int main_bench(){
 	for(i=0;s[i]!=' ' && s[i]!='\0';i++){
 		m=i+1;
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	for(i=m;s[i]!='\0';i++){
 		if(s[i]==' '&&s[i+1]!=' '){
 			n1=i;
@@ -15,11 +15,11 @@ int main_bench(){
 		if(s[i]!=' '&&s[i+1]==' '){
 			n2=i;
 			n=n2-n1;
-		printf(",%d",n);
+		my_printf(",%d",n);
 		}
 		
 		
 	}
-	if(strlen(s)!=m) printf(",%d",strlen(s)-n1-1);
+	if(strlen(s)!=m) my_printf(",%d",strlen(s)-n1-1);
 	return 0;
 }

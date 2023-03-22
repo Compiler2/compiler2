@@ -10,7 +10,7 @@ int main_bench()
 	s=(char *)malloc(100*sizeof(char));
 	for (;;)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		l=strlen(s);
 		if (l<n) 
 		{
@@ -25,5 +25,5 @@ int main_bench()
 		b=getchar();
 		if (b!=' ') break;
 	}
-	printf("%s\n%s\n",max,min);
+	my_printf("%s\n%s\n",max,min);
 }

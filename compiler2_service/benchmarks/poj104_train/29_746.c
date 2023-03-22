@@ -7,15 +7,15 @@ int main_bench()
 	int i,j;
 	int k[100];
 	int Fibonacci(int);
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
-		scanf("%d",&k[i]);
+		my_scanf("%d",&k[i]);
 	for(i=0;i<m;i++)
 	{
 		sum=0;
 		for(j=0;j<k[i];j++)
 			sum=(float)Fibonacci(j+1)/Fibonacci(j)+sum;
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

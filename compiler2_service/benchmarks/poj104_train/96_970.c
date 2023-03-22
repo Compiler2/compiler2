@@ -18,7 +18,7 @@ int main_bench()
 	while(q[i]==0&&i>0)
 		i--;
 	for(i=i;i>=0;i--)
-		printf("%d",q[i]);
-	printf("\n%d",r[0]);
+		my_printf("%d",q[i]);
+	my_printf("\n%d",r[0]);
 	return 0;
 }

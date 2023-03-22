@@ -5,12 +5,12 @@ int main_bench()
 	int a[100000];
 	int n,i,k,num=0;
 	int *p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<n-num;i++)
 	{
 		if(*(p+i)==k)
@@ -26,8 +26,8 @@ int main_bench()
 	}
 	for(i=0;i<n-num-1;i++)
 	{
-		printf("%d ",*(p+i));
+		my_printf("%d ",*(p+i));
 	}
-printf("%d",*(p+n-num-1));
+my_printf("%d",*(p+n-num-1));
 	return 0;
 }

@@ -10,10 +10,10 @@ int main_bench()
 		if(*p==' '&&flag==0)
 			i=0;
 		else if(*p==' '&&flag==1)
-			printf("%d,",i),flag=0,i=0;
+			my_printf("%d,",i),flag=0,i=0;
 		else if(*p!=' ')
 			i++,flag=1;
 	}
 	if(*p=='\0'&&flag==1)
-		printf("%d",i);
+		my_printf("%d",i);
 }

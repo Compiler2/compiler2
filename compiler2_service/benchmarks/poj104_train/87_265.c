@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c,d,e,f,s1,s2,s3,s,i;
 	for(i=0;i<100;i++){
-	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 	if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0){
 	return 0;}
 	if(d<12){
@@ -14,7 +14,7 @@ int main_bench()
 	s3=60-c+f;
 	s=s1+s2+s3;	
 	
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 
 	}
 	

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(b==1)
 	{
 		d=c;
@@ -69,6 +69,6 @@ int main_bench()
 			d=d+1;
 		}
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

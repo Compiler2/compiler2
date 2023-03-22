@@ -7,12 +7,12 @@ int main_bench()
 	int b[1000];
 	int *p;
 	char (*p1)[50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=b;
 	p1=a;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",*(p1+i));
+		my_scanf("%s",*(p1+i));
 		*(p+i)=strlen(*(p1+i));
 	}
 	for(i=1;i<n;i++)
@@ -30,12 +30,12 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		k=strlen(*(p1+i));
-		if(k==*(p+n-1)){printf("%s\n",*(p1+i));break;}
+		if(k==*(p+n-1)){my_printf("%s\n",*(p1+i));break;}
 	}
 	for(i=0;i<n;i++)
 	{
 		k=strlen(*(p1+i));
-		if(k==*(p+0)){printf("%s",*(p1+i));break;}
+		if(k==*(p+0)){my_printf("%s",*(p1+i));break;}
 	}
 }
 

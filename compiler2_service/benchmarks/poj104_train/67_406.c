@@ -5,12 +5,12 @@ int main_bench()
 	int n,i,j;
 	float a,b;
 	int sz[100][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	a=(float)sz[0][1]/sz[0][0];
@@ -19,17 +19,17 @@ int main_bench()
 		b=(float)sz[i][1]/sz[i][0];
 		if(a-b>0.05)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 			continue;
 		}
 		if(b-a>0.05)
 		{
-			printf("better\n");
+			my_printf("better\n");
 			continue;
 		}
 		else
 		{
-			printf("same\n");
+			my_printf("same\n");
 			continue;
 		}
 	}

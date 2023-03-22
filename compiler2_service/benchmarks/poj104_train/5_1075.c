@@ -4,7 +4,7 @@ int main_bench(){
 	char a[1000],b[1000];
 	int i,len,e=0,sum=0,len2;
 	double bi,h;
-	scanf("%lf%s%s",&bi,a,b);
+	my_scanf("%lf%s%s",&bi,a,b);
 	len=strlen(a);
 	len2=strlen(b);
 	for(i=0;i<len;i++)
@@ -12,7 +12,7 @@ int main_bench(){
 		
 		if((a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G'&&b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G')||len!=len2)
 		{
-			printf("error");
+			my_printf("error");
 			e=1;
 			break;
 		}
@@ -31,11 +31,11 @@ int main_bench(){
          h=sum*1.0/len;
           if(h>=bi)
 		  {
-	 printf("yes");
+	 my_printf("yes");
 		  }
        else if(h<bi)
 	   {
-	printf("no");
+	my_printf("no");
 	   }
 	}
 

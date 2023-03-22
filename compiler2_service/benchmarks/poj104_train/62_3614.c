@@ -15,7 +15,7 @@ int main_bench(){
             i=i-1;
         }
     }
-    printf("%s",juzi);
+    my_printf("%s",juzi);
     return 0;
 }
 

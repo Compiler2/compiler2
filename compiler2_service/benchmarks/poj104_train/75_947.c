@@ -45,7 +45,7 @@ int main_bench()
             j=j*10+s-'0';
     }
     int n=i;
-    printf("%d ",n);
+    my_printf("%d ",n);
     for(i=0;i<=1000;i++)
     {
         for(j=0;j<n;j++)
@@ -56,7 +56,7 @@ int main_bench()
     for(i=0;i<=1000;i++)
         if(num[i]>max)
             max=num[i];
-    printf("%d\n",max);
+    my_printf("%d\n",max);
     getchar();
     getchar();
 }

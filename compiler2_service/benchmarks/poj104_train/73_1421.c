@@ -9,7 +9,7 @@ int main_bench()
      {
 		for(n=0;n<5;n++)
 		{	
-			scanf("%d",&a[m][n]);
+			my_scanf("%d",&a[m][n]);
 		}
      
      }
@@ -19,14 +19,14 @@ int main_bench()
 		{
 			if((a[m][n]==maxi(a[m][0],a[m][1],a[m][2],a[m][3],a[m][4]))&&(a[m][n]==mini(a[0][n],a[1][n],a[2][n],a[3][n],a[4][n])))
 			{
-				printf("%d %d %d\n",m+1,n+1,a[m][n]);
+				my_printf("%d %d %d\n",m+1,n+1,a[m][n]);
 				sum++;
 			}
 				
 		}	
 	}
 	if(sum==0)
-	printf("not found");
+	my_printf("not found");
      return 0;
 }
   

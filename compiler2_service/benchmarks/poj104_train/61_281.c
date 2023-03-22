@@ -4,12 +4,12 @@ int sum(int m);
 int main_bench()
 {
 int m,n,i,a[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 a[1]=1;a[2]=1;
 for(i=1;i<=n;i++)
 {
-scanf("%d",&m);
-printf("%d\n",sum(m));
+my_scanf("%d",&m);
+my_printf("%d\n",sum(m));
 }
 }
 int sum(int m)

@@ -6,7 +6,7 @@ int main_bench()
 {
 	int m,n,i,k=0;
 	int a[100]={0};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(funb(i)==1)
@@ -16,13 +16,13 @@ int main_bench()
 		    	k++;
 			}
 	} 
-	if(a[0]==0) printf("no\n");
+	if(a[0]==0) my_printf("no\n");
 		else
 		{
-			printf("%d",a[0]);
+			my_printf("%d",a[0]);
 			for(i=1;a[i]!=0;i++)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			}
 		}
 	return 0;

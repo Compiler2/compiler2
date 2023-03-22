@@ -19,43 +19,43 @@ int main_bench()
 		if(a[i]<='z'&&a[i]>='a'&&b[i]<='z'&&b[i]>='a')
 		{
 			if(a[i]>b[i])
-				printf(">");
+				my_printf(">");
 			else
-				printf("<");
+				my_printf("<");
 			break;
 		}
 		if(a[i]<='Z'&&a[i]>='A'&&b[i]<='Z'&&b[i]>='A')
 		{
 			if(a[i]>b[i])
-				printf(">");
+				my_printf(">");
 			else
-				printf("<");
+				my_printf("<");
 			break;
 		}
 		if(a[i]<='Z'&&a[i]>='A'&&b[i]<='z'&&b[i]>='a')
 		{
 			b[i]=b[i]+'A'-'a';
 			if(a[i]>b[i])
-				printf(">");
+				my_printf(">");
 			else
-				printf("<");
+				my_printf("<");
 			break;
 		}
 		if(b[i]<='Z'&&b[i]>='A'&&a[i]<='z'&&a[i]>='a')
 		{
 			b[i]=b[i]-'A'+'a';
 			if(a[i]>b[i])
-				printf(">");
+				my_printf(">");
 			else
-				printf("<");
+				my_printf("<");
 			break;
 		}
 	}
 	if(t==len&&strlen(a)==strlen(b))
-		printf("=");
+		my_printf("=");
 	if(t==len&&strlen(a)<strlen(b))
-		printf("<");
+		my_printf("<");
 	if(t==len&&strlen(a)>strlen(b))
-		printf(">");
+		my_printf(">");
 	return 0;
 }

@@ -7,10 +7,10 @@ int main_bench()
 {
 	char x,y;
 	int k;
-	scanf("%c",&x);
+	my_scanf("%c",&x);
 	for(k=1;k<=10000;k++)
 	{
-		scanf("%c",&y);
+		my_scanf("%c",&y);
 		if(y=='\n')
 		{
 			a[k]=-1;
@@ -39,7 +39,7 @@ int cal(int a[])
 				{
 					if(a[j]==1)
 					{
-						printf("%d %d\n",j,i);
+						my_printf("%d %d\n",j,i);
 						a[i]=-1;
 						a[j]=-1;
 						cal(a);

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,s1=0,s2=0,i,t;
 	int m[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
 	if((y1 % 4 == 0 && y1 % 100 != 0) || (y1 % 400 == 0) )
 	{
 		m[1]=29;
@@ -21,7 +21,7 @@ int main_bench()
 		s1=s1+m[i-1];
 	}
 	s1=s1+d1;
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	if((y2 % 4 == 0 && y2 % 100 != 0) || (y2 % 400 == 0) )
 	{
 		m[1]=29;
@@ -41,6 +41,6 @@ int main_bench()
 	}
 	s2=s2+d2;
 	t=s2-s1;
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

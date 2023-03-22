@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,k,result;
     char input[100],substring[20],replace[20],cpy[20];
-    scanf("%s\n%s\n%s",input,substring,replace);
+    my_scanf("%s\n%s\n%s",input,substring,replace);
     result=strlen(input)-strlen(substring);
 	for(i=0;i<=result;i++)
     {
@@ -24,17 +24,17 @@ int main_bench()
 
                 for(k=0;k<i;k++)
                 {
-					printf("%c",input[k]);
+					my_printf("%c",input[k]);
                 }
-				printf("%s",replace);
+				my_printf("%s",replace);
 				for(k=i+a;k<strlen(input);k++)
                 {
-					printf("%c",input[k]);
+					my_printf("%c",input[k]);
                 }
 				return 0;    
             }
         }
     }
-	printf("%s",input);
+	my_printf("%s",input);
 	return 0;
 }

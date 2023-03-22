@@ -3,10 +3,10 @@
 int jss(int x);
 int main_bench(){
     int m,i;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=m-2;i>=m/2;i--){
                           if(jss(i)&&jss(m-i)){
-                                               printf("%d %d\n",(m-i),i);                     
+                                               my_printf("%d %d\n",(m-i),i);                     
                           }                      
     }
     return 0;    

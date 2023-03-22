@@ -18,21 +18,21 @@ int main_bench()
   
     char a[30],b[30];
     int m,i,j,z,n;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
 m=strlen(a);
 n=strlen(b);
 if(m!=n)
-printf("NO\n");
+my_printf("NO\n");
 else
     {for(i=0;i<=m-1;i++)
     {z=search(a,b,i,m);
     if(z==-1)
-      {printf("NO\n");
+      {my_printf("NO\n");
        break;}
     }
     if(z!=-1)
-    printf("YES\n"); } 
+    my_printf("YES\n"); } 
     
   
 

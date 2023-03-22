@@ -23,7 +23,7 @@ int main_bench(){
               
         }
       y[j]='\0';
-    printf("%s",y);
+    my_printf("%s",y);
 
       return 0;
 

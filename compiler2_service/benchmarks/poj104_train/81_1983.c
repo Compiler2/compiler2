@@ -24,15 +24,15 @@ int main_bench()
  int *r;
  r=a;
  for(j=0;j<=24;j++)
-  scanf("%d",r+j);
- scanf("%d%d",&m,&n);
+  my_scanf("%d",r+j);
+ my_scanf("%d%d",&m,&n);
  if(f(a,m,n)==1)
   for(j=0;j<=4;j++)
    {
     for(k=0;k<=3;k++)
-     printf("%d ",*(r+j*5+k));
-    printf("%d\n",*(r+j*5+4));
+     my_printf("%d ",*(r+j*5+k));
+    my_printf("%d\n",*(r+j*5+4));
     }    
  else
-  printf("error");
+  my_printf("error");
 }

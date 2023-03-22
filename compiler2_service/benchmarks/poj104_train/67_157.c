@@ -3,7 +3,7 @@
 int main_bench()
 {
   int i,j,n,s[100][2];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   i=0,j=0;
   double a,b;
   a=0,b=0;
@@ -11,7 +11,7 @@ int main_bench()
   {
 	  for(j=0;j<2;j++)
 	  {
-		  scanf("%d",&s[i][j]);
+		  my_scanf("%d",&s[i][j]);
 	  }
   }
   a=1.0*s[0][1]/s[0][0];
@@ -20,15 +20,15 @@ int main_bench()
 	  b=1.0*s[i][1]/s[i][0];
 	  if((b-a)>0.05)
 	  {
-		  printf("better\n");
+		  my_printf("better\n");
 	  }
 	  else if((a-b)>0.05)
 	  {
-		  printf("worse\n");
+		  my_printf("worse\n");
 	  }
 	  else
 	  {
-		  printf("same\n");
+		  my_printf("same\n");
 	  }
   }
   return 0;

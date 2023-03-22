@@ -13,9 +13,9 @@ int main_bench()
 	struct book shu[999];
 	char c;
 	int writer[26];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d%s",&shu[i].num,shu[i].author);
+		my_scanf("%d%s",&shu[i].num,shu[i].author);
 	}
 	for(c='A',writer[c-'A']=0;c<='Z';c++){
 		writer[c-'A']=0;
@@ -28,11 +28,11 @@ int main_bench()
 		}
 	}
 	p=writer;
-	printf("%c\n%d\n",max(p),writer[max(p)-'A']);
+	my_printf("%c\n%d\n",max(p),writer[max(p)-'A']);
 	for(i=0;i<m;i++){
 		for(b=0;shu[i].author[b]!='\0';b++){
 			if(max(p)==shu[i].author[b]){
-				printf("%d\n",shu[i].num);
+				my_printf("%d\n",shu[i].num);
 			}
 		}
 	}

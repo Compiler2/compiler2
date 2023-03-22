@@ -21,8 +21,8 @@ int main_bench()
 	}
 	for(i=0;i<=word;i++)
 	{
-	printf("%s",s1[i]);
-	if(i!=word)printf(" ");
+	my_printf("%s",s1[i]);
+	if(i!=word)my_printf(" ");
 	}
 
 

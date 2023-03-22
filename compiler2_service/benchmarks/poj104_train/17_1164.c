@@ -5,10 +5,10 @@ int main_bench()
 	int n;
 	char a[1000],b[1000];
 	int i, j, k, e=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=1;i<n+1;i++)
 	{
-		scanf("%s", &a);
+		my_scanf("%s", &a);
 		for(j=0;j<strlen(a);j++)
 		{
 			if(a[j]!='(' && a[j]!=')')
@@ -77,14 +77,14 @@ int main_bench()
 	
 		for(j=0;j<strlen(a);j++)
 		{
-			printf("%c", a[j]);
+			my_printf("%c", a[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 		for(j=0;j<strlen(a);j++)
 		{
-			printf("%c", b[j]);
+			my_printf("%c", b[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

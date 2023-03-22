@@ -23,30 +23,30 @@ void print()
 {
 	struct book *pi;
 	int i;
-	printf("%c\n%d\n",name,t);
+	my_printf("%c\n%d\n",name,t);
 	for(pi=p;pi<p+num;pi++)
 		for(i=0;pi->Name[i]!='\0';i++)
 			if(pi->Name[i]==name)
 			{
 				if(k==0)
 				{
-					printf("%d",pi->No);
+					my_printf("%d",pi->No);
 					k++;
 				}
 				else
-					printf("\n%d",pi->No);
+					my_printf("\n%d",pi->No);
 				break;
 			}
 }
 main_bench()
 {
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	struct book *pi;
 	int i;
 	p=(struct book*)malloc(num*sizeof(struct book));
 	for(pi=p;pi<p+num;pi++)
 	{
-		scanf("%d %s",&pi->No,pi->Name);
+		my_scanf("%d %s",&pi->No,pi->Name);
 		for(i=0;pi->Name[i]!='\0';i++)
 			nametimes[(int)pi->Name[i]]++;
 	}

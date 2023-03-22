@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,i,j,mid;
 	char M[11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct patient{
 		char ID[11];
 		int age;
 	};
 	struct patient *per=(struct patient*)malloc(sizeof(struct patient)*n);
 	for(i=0;i<n;i++)
-		scanf("%s%d",per[i].ID,&per[i].age);
+		my_scanf("%s%d",per[i].ID,&per[i].age);
 	for(j=0;j<n;j++)
 		for(i=0;i<n-1;i++){
 			if(per[i].age<60&&per[i+1].age>=60){
@@ -31,6 +31,6 @@ int main_bench(){
 				}
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",per[i].ID);
+		my_printf("%s\n",per[i].ID);
 	free(per); 
 }

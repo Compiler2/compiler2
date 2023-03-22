@@ -8,7 +8,7 @@ int main_bench()
          
          float y=0,z=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int sz[2][n];
     
@@ -17,7 +17,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 
 	{
-		scanf("%d",&sz[0][i]);
+		my_scanf("%d",&sz[0][i]);
 
 		y+=sz[0][i];
 
@@ -27,7 +27,7 @@ int main_bench()
 	for(j=0;j<n;j++)
 
 	{
-		scanf("%d",&sz[1][j]);
+		my_scanf("%d",&sz[1][j]);
 
 		if(sz[1][j]>=90&&sz[1][j]<=100)x=4.0*sz[0][j];
 
@@ -57,7 +57,7 @@ int main_bench()
 
 	GPA=z/y;
 
-printf("%.2f",GPA); 
+my_printf("%.2f",GPA); 
 
 return 0;
 

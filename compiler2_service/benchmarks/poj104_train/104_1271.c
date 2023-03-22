@@ -4,7 +4,7 @@ int main_bench()
 {
 	int x,y,i,j,sign=0;
 	int a[1000]={0},b[1000]={0};
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 
 	if(x<y)
 	{	a[0]=x;b[0]=y;}
@@ -31,7 +31,7 @@ int main_bench()
 		{
 			if(a[i]==b[j])
 			{
-				printf("%d\n",a[i]);
+				my_printf("%d\n",a[i]);
 				sign=1;
 				break;
 			}

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int lenstr,lensub,lenrpl,i,j;
 	char temp[260],str[260],sub[260],rpl[260];
-	scanf("%s %s %s",&str,&sub,&rpl);
+	my_scanf("%s %s %s",&str,&sub,&rpl);
 	lenstr=strlen(str);
 	lensub=strlen(sub);
 	lenrpl=strlen(rpl);
@@ -24,7 +24,7 @@ int main_bench()
 		for(j=0;j<lenrpl;j++)
 			str[i+j]=rpl[j];
 	}
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 }
 
 

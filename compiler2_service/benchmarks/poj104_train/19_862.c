@@ -34,7 +34,7 @@ int main_bench()
             i = j;
         } else {
             i += len2;
-            printf("%s", word2);
+            my_printf("%s", word2);
             if (i < len1) putchar(' ');
         }
     }

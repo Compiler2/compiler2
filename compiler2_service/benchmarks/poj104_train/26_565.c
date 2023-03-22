@@ -20,9 +20,9 @@ int main_bench(){
 	b[j][k]='\0';
 	for(i=0;i<=j;i++){
 		if(i==0){
-			printf("%s",b[i]);
+			my_printf("%s",b[i]);
 		}else{
-			printf(" %s",b[i]);
+			my_printf(" %s",b[i]);
 		}
 	}
 	return 0;

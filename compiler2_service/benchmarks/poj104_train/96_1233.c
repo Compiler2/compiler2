@@ -17,6 +17,6 @@ main_bench()
     }
   }
   s[j]=0;
-  if(j>0) printf("%s\n%d",s,a);
-  else printf("0\n%d",a);
+  if(j>0) my_printf("%s\n%d",s,a);
+  else my_printf("0\n%d",a);
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
    int n,i,j,a=0;
    int s[200][2],u[100]={0};
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    for(i=0;i<n;i++)
       {
          for(j=0;j<2;j++)
             {
-                scanf("%d",&s[i][j]);
+                my_scanf("%d",&s[i][j]);
              }
        }
    for(i=0;i<n+1;i++)
@@ -24,6 +24,6 @@ int main_bench()
          if(b<u[i])
          b=u[i];
         }
-    printf("%d\n",b);
+    my_printf("%d\n",b);
     return 0;
 }

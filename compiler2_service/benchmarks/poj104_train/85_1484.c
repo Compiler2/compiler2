@@ -4,16 +4,16 @@ int main_bench()
 {
 	int i,n,len,j;
 	char str[21]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-loop:		scanf("%s",str);
+loop:		my_scanf("%s",str);
 		len=strlen(str);
 		if(str[0]=='_' || (str[0]>='a' && str[0]<='z') || (str[0]>='A' && str[0]<='Z'))
 		{}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		for(j=1;j<len;j++)
@@ -22,7 +22,7 @@ loop:		scanf("%s",str);
 			{}
 			else
 			{	
-				printf("no\n");
+				my_printf("no\n");
 				i++;
 				if(i<n)
 					goto loop;
@@ -30,7 +30,7 @@ loop:		scanf("%s",str);
 					return 0;
 			}
 		}
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 	return 0;
 }

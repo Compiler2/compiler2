@@ -5,9 +5,9 @@ int main_bench()
     int n,i,j,len;
     char s[33];
     len=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",s);
+        my_scanf("%s",s);
     len=strlen(s);
     for(j=len-1;s[j]!='\0';j--){
         if(s[j]=='y'){
@@ -25,7 +25,7 @@ int main_bench()
     
 
     }
-    printf("%s\n",s);
+    my_printf("%s\n",s);
     }
     return 0;
     

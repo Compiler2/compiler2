@@ -17,17 +17,17 @@ int main_bench() {
          int check(int (*arr)[5], int n, int m);
          int i,j;
 	int n,m;
-	for (i=0; i<5; ++i) for (j=0; j<5; ++j) scanf("%d", &arr[i][j]);
-	scanf("%d %d", &n, &m);
+	for (i=0; i<5; ++i) for (j=0; j<5; ++j) my_scanf("%d", &arr[i][j]);
+	my_scanf("%d %d", &n, &m);
 	if (check(arr, n, m)==0) 
 	{
-		printf("error\n");
+		my_printf("error\n");
 		return;
 	}
 	for (i=0; i<5; ++i) 
 	{
-		for (j=0; j<4; ++j) printf("%d ", arr[i][j]);
-		printf("%d\n", arr[i][4]);
+		for (j=0; j<4; ++j) my_printf("%d ", arr[i][j]);
+		my_printf("%d\n", arr[i][4]);
 	}
-	scanf("%d", &i);
+	my_scanf("%d", &i);
 }

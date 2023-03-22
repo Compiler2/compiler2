@@ -38,9 +38,9 @@ int main_bench() {
 
 
 	nk=0;r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n*n;i++) {
-		scanf("%d",&ni);
+		my_scanf("%d",&ni);
 		if(ni==0) {
 		nk+=1;
 		}
@@ -60,7 +60,7 @@ int main_bench() {
 
 
 
-	printf("%d",r);
+	my_printf("%d",r);
 
 	return 0;
 }

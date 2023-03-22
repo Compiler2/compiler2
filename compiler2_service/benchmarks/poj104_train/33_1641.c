@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n); 
+    my_scanf("%d",&n); 
     char num[256];
     for(int i=0;i<=n;i++)
     {
@@ -20,7 +20,7 @@ int main_bench()
             else if(num[j]=='T')
             num[j]='A';
             if(num[j]=='\0')
-            {printf("%s\n",num);break;}
+            {my_printf("%s\n",num);break;}
         }
     }
     return 0;

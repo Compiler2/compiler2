@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,k,y,m1,m2,m,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++){
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		if(m1>m2){
 			m=m1;
 			m1=m2;
@@ -32,9 +32,9 @@ int main_bench(){
 			}
 		}
 		if(d%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 		d=0;
 	}

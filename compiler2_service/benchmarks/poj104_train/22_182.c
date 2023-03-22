@@ -9,7 +9,7 @@ int main_bench()
 	char b;
 	for( ; ; )
 	{
-		scanf("%d%c",&a[n-1],&b);
+		my_scanf("%d%c",&a[n-1],&b);
 		if(b!='\n')
 		    n=n+1;
 		else
@@ -29,7 +29,7 @@ int main_bench()
 		 }
 		}
 		if(a[0]==a[n-1])
-		printf("No");
+		my_printf("No");
 		else
 		{
 	      for(i=0;;i++)
@@ -41,6 +41,6 @@ int main_bench()
 	     	else
 		    	break;
 		  }
-        	printf("%d",a[flag+1]);
+        	my_printf("%d",a[flag+1]);
 		}
 }

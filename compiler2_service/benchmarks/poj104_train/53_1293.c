@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[300],jg[300];
     int i,k,j,m=0;
     for(i=0;i<n;i++){
-       scanf("%d",&sz[i]);}
+       my_scanf("%d",&sz[i]);}
     for(i=0;i<n;i++){
      for(k=0;k<i;k++){
       if(sz[i]==sz[k]){
@@ -20,7 +20,7 @@ int main_bench()
       jg[m]=sz[i]; 
       m++;}}
     for(j=0;j<m-1;j++){
-      printf("%d,",jg[j]);}
-    printf("%d",jg[m-1]);
+      my_printf("%d,",jg[j]);}
+    my_printf("%d",jg[m-1]);
 return 0;
 }

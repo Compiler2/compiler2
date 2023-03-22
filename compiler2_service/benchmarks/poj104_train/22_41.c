@@ -4,13 +4,13 @@ int main_bench()
 {int a[301]={0},i,k,n,m;
  char c;
  i=0;
- scanf("%d",&a[0]);
+ my_scanf("%d",&a[0]);
  for(i=1;;i++)
- {scanf("%c",&c);
+ {my_scanf("%c",&c);
   if(c=='\n')
 	  break;
   else
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
  }
  k=a[0];
  n=i;
@@ -25,9 +25,9 @@ int main_bench()
         m=a[i];
        }
 if(m!=0)
-  printf("%d",m);
+  my_printf("%d",m);
 else
- printf("No");
+ my_printf("No");
 }
 
  

@@ -5,7 +5,7 @@ int main_bench()
     char z1[51],z2[51],z3[51];
     int i,result,n1,n2,k,p;
 	char z4[2]=" ";
-    scanf("%s %s", z1,z2);
+    my_scanf("%s %s", z1,z2);
     n1=strlen(z1);
     n2=strlen(z2);
     p=0;
@@ -21,7 +21,7 @@ int main_bench()
 
     	if((result==0)&&(p==0))
 		{
-            printf("%d",i);
+            my_printf("%d",i);
             p=1;
             result=1;
 		}else if(p==0)

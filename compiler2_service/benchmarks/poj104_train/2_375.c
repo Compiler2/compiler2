@@ -17,7 +17,7 @@ struct shu *app(int n)
 	for(i=1;i<=n;i++)
 	{
 		newnode=(struct shu *)malloc(sizeof(struct shu));
-		scanf("%d %s", &newnode->num , newnode->name );
+		my_scanf("%d %s", &newnode->num , newnode->name );
 		len=strlen(newnode->name );
 	
 		for(j=0;j<len;j++)
@@ -68,16 +68,16 @@ int main_bench()
 {
 	int n,kk;
 	struct shu *head, *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	head=app(n);
 	kk=max();
-	printf("%c\n%d\n", 'A'+kk, cishu[kk]);
+	my_printf("%c\n%d\n", 'A'+kk, cishu[kk]);
 
 	for(p=head;p!=0;p=p->next )
 	{
 		if(cunzai(p->name ,kk))
-		{printf("%d\n",p->num );}
+		{my_printf("%d\n",p->num );}
 	}
 	return 0;
 }

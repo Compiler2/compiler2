@@ -25,9 +25,9 @@ main_bench()
  long n,b,i;     
 for(i=0;i<=5;i++)
 {      
- scanf("%d",&n);
+ my_scanf("%d",&n);
  b = reverse(n);
- printf("%d\n",b);
+ my_printf("%d\n",b);
 }
 
 

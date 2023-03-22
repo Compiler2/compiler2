@@ -27,10 +27,10 @@ main_bench()
 		}
 		if (m==1) 		
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			p=a[i];
 			break;
 		}
 	}
-	if (p==0) printf("No");
+	if (p==0) my_printf("No");
 }

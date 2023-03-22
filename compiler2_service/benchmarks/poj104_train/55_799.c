@@ -4,7 +4,7 @@ main_bench()
 {
 int x,y;int rest;int r,s,t;
 char NUM[150];
-scanf("%d %s %d",&x,NUM,&y);
+my_scanf("%d %s %d",&x,NUM,&y);
 int LEN;
 LEN=strlen(NUM);
 int i,j,k;int m=0,n=0;
@@ -40,13 +40,13 @@ r=n%y;
 n/=y;
 PUT[kk-1]=r;
 }
-if (i==0) printf("0");
+if (i==0) my_printf("0");
 else for (j=0;j<i;j++)
 {
 if (PUT[j]>=10)
-printf("%c",PUT[j]-10+A);
+my_printf("%c",PUT[j]-10+A);
 else 
-printf("%d",PUT[j]);
+my_printf("%d",PUT[j]);
 }
-printf("\n");
+my_printf("\n");
 }

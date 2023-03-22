@@ -5,7 +5,7 @@ int main_bench()
   int i,n,j,t;
   char c;
    for(i=0;;i++)
-  { scanf("%d%c",&num[i],&c);
+  { my_scanf("%d%c",&num[i],&c);
     if(c!=',') break;
   }
   n=i+1;
@@ -18,10 +18,10 @@ int main_bench()
      }
    }
   for(i=0;i<n;i++)
-    if(num[i]<num[0]) {printf("%d",num[i]);
+    if(num[i]<num[0]) {my_printf("%d",num[i]);
 	
  break;
 }
-	if(i==n) printf("No");
+	if(i==n) my_printf("No");
 return 0;
 }

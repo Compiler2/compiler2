@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     int s[200];
     int i;
     for (i=0;i<200;i++)
@@ -11,7 +11,7 @@ int main_bench()
     for (i=0;i<n;i++)
     {
        int a,b;
-       scanf ("%d%d",&a,&b);
+       my_scanf ("%d%d",&a,&b);
        if (a-b==-1||a-b==2)
           s[i]=1;
        if (a-b==1||a-b==-2)
@@ -28,9 +28,9 @@ int main_bench()
            B++;    
     }
     if (A>B)
-       printf ("A\n");
+       my_printf ("A\n");
     if (B>A)
-       printf ("B\n");
+       my_printf ("B\n");
     if (A==B)
-       printf ("Tie\n");  
+       my_printf ("Tie\n");  
 }

@@ -13,10 +13,10 @@ main_bench()
              char zuozhe[27];
       };
       struct xinxi shuru[999];
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       for(p=0;p<m;p++)
       {
-          scanf("%d %s",&shuru[p].bianhao,shuru[p].zuozhe);
+          my_scanf("%d %s",&shuru[p].bianhao,shuru[p].zuozhe);
       }
       for(temp='A';temp<='Z';temp++)
       {
@@ -42,7 +42,7 @@ main_bench()
               amount_temp=0;
           }
       }
-      printf("%c\n%d\n",most,amount_most);
+      my_printf("%c\n%d\n",most,amount_most);
       for(i=0;i<m;i++)
           {
               strcpy(jiancha,shuru[i].zuozhe);
@@ -50,7 +50,7 @@ main_bench()
               {
                   if(jiancha[j]==most)
                   {
-                      printf("%d\n",shuru[i].bianhao);
+                      my_printf("%d\n",shuru[i].bianhao);
                       break;
                   }
               }

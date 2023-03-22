@@ -10,7 +10,7 @@ main_bench()
 	char n[50]={"0"},answer[50]={"0"};	
 	long Dn;				
 
-	scanf("%d%s%d",&a,n,&b);		
+	my_scanf("%d%s%d",&a,n,&b);		
 
 	for (i=0;i<=strlen(n)-1;i++)		
 		n[i]=toupper(n[i]);		
@@ -18,7 +18,7 @@ main_bench()
 	len=toB(Dn,b,answer);			
 
 	for (i=len-1;i>=0;i--)
-		printf("%c",answer[i]);	
+		my_printf("%c",answer[i]);	
 	
 }
 

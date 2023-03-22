@@ -17,12 +17,12 @@ int n; int i,s;
 int sum=0; 
 int total=0; 
 
-scanf("%d",&n); 
+my_scanf("%d",&n); 
 
 
 for (i=1;i<=n;i++) 
 { 
-scanf("%s%d%d%s%s%d",student[i].name,&student[i].score1,&student[i].score2,&student[i].ganbu,&student[i].xibu,&student[i].num); } 
+my_scanf("%s%d%d%s%s%d",student[i].name,&student[i].score1,&student[i].score2,&student[i].ganbu,&student[i].xibu,&student[i].num); } 
 
 for(i=1;i<=n;i++)
 { sum=0; 
@@ -48,7 +48,7 @@ sum=a[i];
 } 
 } 
 
-printf("\n%s\n",student[s].name); 
-printf("%d\n",a[s]); 
-printf("%d\n",total); 
+my_printf("\n%s\n",student[s].name); 
+my_printf("%d\n",a[s]); 
+my_printf("%d\n",total); 
 }

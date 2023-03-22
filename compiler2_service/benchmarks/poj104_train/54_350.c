@@ -5,7 +5,7 @@ main_bench()
 {
 int a,b,c;   
 int sum=1;
-scanf("%d%d",&a,&b);
+my_scanf("%d%d",&a,&b);
 if(a!=2)
 {
 	
@@ -14,11 +14,11 @@ if(a!=2)
 sum=sum*a;
 }
 int SUM=sum-b*(a-1);
-printf("%d",SUM);
+my_printf("%d",SUM);
 }
 
 else
-{printf("7");}
+{my_printf("7");}
 	
 	return 0;
 }

@@ -11,6 +11,6 @@ int main_bench()
 		for(pca=str, pcb=str+1, i=0; pca<(str+n-1); pca++, pcb++, i++)
 			fri[i]=*pca + *pcb;
 		fri[n-1]=str[0]+str[n-1];
-		printf("%s\n",fri);
+		my_printf("%s\n",fri);
 	}
 }

@@ -23,16 +23,16 @@ int main_bench()
 {
 	char ch1[100],ch2[100];
 	int len1,len2;
-	scanf("%s %s",ch1,ch2);
+	my_scanf("%s %s",ch1,ch2);
 	len1=strlen(ch1);
 	len2=strlen(ch2);
-	if(len1!=len2)printf("NO\n");
+	if(len1!=len2)my_printf("NO\n");
 	else
 	{
 		order(ch1,len1);
 		order(ch2,len1);
-		if(strcmp(ch1,ch2)==0)printf("YES\n");
-		else printf("NO\n");
+		if(strcmp(ch1,ch2)==0)my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 	return 0;
 }

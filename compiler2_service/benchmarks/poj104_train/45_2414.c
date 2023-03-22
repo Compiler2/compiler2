@@ -5,9 +5,9 @@
 int main_bench()
 {
 	char child[50],mother[50];
-	scanf("%s",child);
+	my_scanf("%s",child);
 	getchar();
-	scanf("%s",mother);
+	my_scanf("%s",mother);
 	int l=strlen(child),ml=strlen(mother),isbreak,i,k;
 	for(i=0;i+l<=ml;i++){
 		isbreak=1;
@@ -18,7 +18,7 @@ int main_bench()
 			}
 		}
 		if(isbreak){
-			printf("%d",i);
+			my_printf("%d",i);
 			return 0;
 		}
 	}

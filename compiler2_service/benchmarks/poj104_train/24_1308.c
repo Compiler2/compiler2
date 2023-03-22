@@ -26,10 +26,10 @@ if(t[i]<min)
 z2=i;}
 }
 for(i=num1[z1]+1;i<num2[z1];i++)
-{printf("%c",m[i]);}
-printf("\n");
+{my_printf("%c",m[i]);}
+my_printf("\n");
 for(i=num1[z2]+1;i<num2[z2];i++)
-printf("%c",m[i]);
+my_printf("%c",m[i]);
 
 return 0;
 }

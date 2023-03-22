@@ -42,12 +42,12 @@ int main_bench()
       for(i=j-1;i>0;i--)
 		  if(strcmp(x[i],x[i-1]))
 		  {
-			  printf("%s\n",x[i-1]);h+=1;break;
+			  my_printf("%s\n",x[i-1]);h+=1;break;
 		  }
 	  if(i=1&&h==0
-		  ) printf("No\n");
+		  ) my_printf("No\n");
 	}
-	else printf("No\n");
+	else my_printf("No\n");
 
 
 }

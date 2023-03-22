@@ -20,14 +20,14 @@ int main_bench()
 	{
 		for(q=a[i];q<a[i+1]-1;q++)
 		{
-			printf("%c",p[q]);
+			my_printf("%c",p[q]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	{
 		for(q=a[0];q<a[1]-1;q++)
 		{
-			printf("%c",p[q]);
+			my_printf("%c",p[q]);
 		}
 	}
 }

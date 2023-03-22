@@ -12,14 +12,14 @@ main_bench()
          sh[i]=(y*10+N[i]-'0')/13;
          y=(y*10+N[i]-'0')%13;
      }
-     if(sh[1]==0&&sh[2]==0) printf("0");
+     if(sh[1]==0&&sh[2]==0) my_printf("0");
      else
      {
          int j=1;
          if(sh[j]==0) j++;
          for(;j<n;j++)
-             printf("%d",sh[j]);
+             my_printf("%d",sh[j]);
      }
-     printf("\n%d\n",y);
+     my_printf("\n%d\n",y);
 } 
   

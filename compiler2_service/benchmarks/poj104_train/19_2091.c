@@ -5,8 +5,8 @@ int main_bench(){
 	char zfc[101],sor[101],rep[101];
 	int dec,i,j;
 	gets(zfc);
-	scanf("%s",sor);
-	scanf("%s",rep);
+	my_scanf("%s",sor);
+	my_scanf("%s",rep);
 	int n=strlen(zfc);
 	int k=strlen(sor);
    
@@ -21,11 +21,11 @@ int main_bench(){
 		}
 		
 		if(((i==0)&&(dec==0))||((dec==0)&&(zfc[i-1]==' '||zfc[i-1]==','||zfc[i-1]=='.'))){
-			printf("%s",rep);
+			my_printf("%s",rep);
 			i=i+k-1;
 		}
 		else{
-			printf("%c",zfc[i]);
+			my_printf("%c",zfc[i]);
 			continue;
 		}
 	}

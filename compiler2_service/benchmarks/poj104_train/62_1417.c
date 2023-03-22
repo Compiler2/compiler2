@@ -8,13 +8,13 @@ int main_bench()
 	gets(s);
 	for(i=0;*(s+i)!='\0';i++)
 	{
-		if(*(s+i)!=' ') printf("%c",*(s+i));
+		if(*(s+i)!=' ') my_printf("%c",*(s+i));
 		else
 		{
 			while(*(s+i+1)==' ') i++;
-			printf("%c",*(s+i));
+			my_printf("%c",*(s+i));
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

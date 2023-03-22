@@ -5,7 +5,7 @@ int main_bench()
  char a[501],b[501][5];
  int c[501];
  int n,i,l,j,p,k;
- scanf("%d\n",&n);
+ my_scanf("%d\n",&n);
  gets(a);
  l=strlen(a);
  for(i=0;i<l;i++)
@@ -25,14 +25,14 @@ int main_bench()
  {
   if(c[i]>k) k=c[i];
  }
- if(k==1) printf("NO");
+ if(k==1) my_printf("NO");
  
  else
- {printf("%d\n",k);
+ {my_printf("%d\n",k);
  for(i=0;i<l;i++)
  {
   if(c[i]==k)
-  {printf("%s\n",b[i]);}
+  {my_printf("%s\n",b[i]);}
  }}
  return 0;
 }

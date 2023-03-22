@@ -21,12 +21,12 @@ for(i=0;i<n;i++)
  }
  t=t+1;
 }
-printf("%s",b[n]);
+my_printf("%s",b[n]);
 for(i=n-1;i>0;i=i-1)
-printf("%s ",b[i]);
+my_printf("%s ",b[i]);
 
 
 
-printf("%s",b[0]);
+my_printf("%s",b[0]);
 
 }

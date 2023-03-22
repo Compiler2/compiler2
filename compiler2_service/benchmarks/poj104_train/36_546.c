@@ -17,11 +17,11 @@ void arrange(char a[],int l)
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int la=strlen(a);
 	int lb=strlen(b);
 	arrange(a,la);
 	arrange(b,lb);
-	if(strcmp(a,b)==0&&la==lb) printf("YES\n");
-	else printf("NO\n");
+	if(strcmp(a,b)==0&&la==lb) my_printf("YES\n");
+	else my_printf("NO\n");
 }

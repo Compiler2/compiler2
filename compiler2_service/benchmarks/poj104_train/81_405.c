@@ -26,12 +26,12 @@ int main_bench()
 		for(j=0;j<5;j++)
 		{
 			if(j!=4)
-			scanf("%d ",*(p+i)+j);
+			my_scanf("%d ",*(p+i)+j);
 			else
-				scanf("%d\n",*(p+i)+j);
+				my_scanf("%d\n",*(p+i)+j);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	
 	if(f(p,m,n)==1)
 	{
@@ -40,14 +40,14 @@ int main_bench()
 		for(j=0;j<5;j++)
 		{
 			if(j!=4)
-			printf("%d ",*(*(p+i)+j));
+			my_printf("%d ",*(*(p+i)+j));
 			else
-				printf("%d\n",*(*(p+i)+j));
+				my_printf("%d\n",*(*(p+i)+j));
 		}
 	}
 	}
 	if(f(p,m,n)==0)
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 

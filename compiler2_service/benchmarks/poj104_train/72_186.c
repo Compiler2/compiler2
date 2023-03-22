@@ -3,12 +3,12 @@
 int main_bench()
 { 
 	int m,n,sz[100][100],sz1[100],sz2[100],x=0,y=0,i,j,q,w,e;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for( i=0;i<m;i++)
 	{
 		for( j=0;j<n;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(q=0;q<m;q++)
@@ -24,7 +24,7 @@ int main_bench()
 	x-=1;y-=1;
 	for(e=0;e<=x;e++)
 	{
-		printf("%d %d\n",sz1[e],sz2[e]);
+		my_printf("%d %d\n",sz1[e],sz2[e]);
 	}
 	return 0;
 } 

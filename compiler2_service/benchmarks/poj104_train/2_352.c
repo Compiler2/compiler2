@@ -9,9 +9,9 @@ struct stu{
 int main_bench(){
 	int n,i,k,num=0,max=0;
 	char b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%s",&a[i].id,a[i].author);
+		my_scanf("%d%s",&a[i].id,a[i].author);
 		a[i].length=strlen(a[i].author);
 	}
 	for(b='A';b<='Z';b++){
@@ -29,11 +29,11 @@ int main_bench(){
 			c=b;
 		}
 	}
-	printf("%c\n%d\n",c,max);
+	my_printf("%c\n%d\n",c,max);
 	for(i=0;i<n;i++){
 		for(k=0;k<a[i].length;k++){
 			if(a[i].author[k]==c){
-					printf("%d\n",a[i].id);
+					my_printf("%d\n",a[i].id);
 					break;
 			}
 		}

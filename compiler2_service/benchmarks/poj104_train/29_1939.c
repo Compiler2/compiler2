@@ -16,16 +16,16 @@ double SUM(int n)
 int main_bench()
 {
 	int m,n,i;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	if(n==1)
-		printf("2.000\n");
+		my_printf("2.000\n");
 	if(n==2)
-		printf("3.500\n");
+		my_printf("3.500\n");
 	if(n>=3)
-		printf("%.3f\n",SUM(n));
+		my_printf("%.3f\n",SUM(n));
 	}
 	return 0;
 }

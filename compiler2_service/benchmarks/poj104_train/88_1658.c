@@ -13,12 +13,12 @@ int main_bench() {
 	{
 	for(;(*p)>='0'&&(*p)<='9';p++)
 	{
-		printf("%c",*p);
+		my_printf("%c",*p);
 		}
 
 	if((*p)!='\0')
 	p++;
-	printf("\n");
+	my_printf("\n");
 	}
 	return 0;
 }

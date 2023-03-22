@@ -4,11 +4,11 @@ int SS(int i);
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n/2;i++)
 	{
 		if(SS(i)&&SS(n-i))
-			printf("%d %d\n",i,n-i);
+			my_printf("%d %d\n",i,n-i);
 	}
 }
 

@@ -7,7 +7,7 @@ int main_bench()
     k=0;
 
     for(i = 0; i < 1000; i++){
-    scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+    my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
     if(a==0){
     break;
     }
@@ -16,7 +16,7 @@ int main_bench()
     }
 
    for(i = 0; i < k; i++){
-       printf("%d\n",s[i]);
+       my_printf("%d\n",s[i]);
        }
         return 0;
 }

@@ -16,7 +16,7 @@ int main_bench()
 	{
 		if((s[i])!=(s[i+1]))
 		{
-			printf("(%c,%d)",s[i],k);
+			my_printf("(%c,%d)",s[i],k);
 			k=1;
 		}
 		else k++;

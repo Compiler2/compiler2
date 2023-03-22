@@ -8,9 +8,9 @@ int main_bench()
 	int m;
 	int t;
 	double sum;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n--) {
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		a=2;
 		b=1;
 		sum=0;
@@ -20,7 +20,7 @@ int main_bench()
 			a=a+b;
 			b=t;
 		}
-		printf("%.3lf\n", sum);
+		my_printf("%.3lf\n", sum);
 	}
 	return 0;
 }

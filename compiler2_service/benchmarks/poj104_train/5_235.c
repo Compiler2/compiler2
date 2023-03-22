@@ -5,9 +5,9 @@ int main_bench(){
 	double n;
 	char DNA1[502],DNA2[502];
 	int len1,len2;
-	scanf("%lf",&n);
-	scanf("%s",DNA1);
-	scanf("%s",DNA2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",DNA1);
+	my_scanf("%s",DNA2);
 	len1=strlen(DNA1);
 	len2=strlen(DNA2);
 	int i,m=0;
@@ -15,7 +15,7 @@ int main_bench(){
 	int p=0;
 	double result;
 	if(len1!=len2){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<len1;i++){
 			e=compare(DNA1[i],DNA2[i]);
@@ -23,7 +23,7 @@ int main_bench(){
 				m++;
 			}
 			if((DNA1[i]!='A'&&DNA1[i]!='T'&&DNA1[i]!='G'&&DNA1[i]!='C')||(DNA2[i]!='A'&&DNA2[i]!='T'&&DNA2[i]!='G'&&DNA2[i]!='C')){
-				printf("error");
+				my_printf("error");
 				p=1;
 				break;
 			}
@@ -31,9 +31,9 @@ int main_bench(){
 		if(p==0){
 			result=((double)m/(double)len1);
 			if(result>n){
-				printf("yes");
+				my_printf("yes");
 			}else{
-				printf("no");
+				my_printf("no");
 			}
 		}
 	}

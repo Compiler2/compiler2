@@ -4,20 +4,20 @@ int main_bench()
 {
 	char x[1000];
 	int i,changdu,n,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(t<n)
 	{
 		memset(x,0,sizeof(x));
-		scanf("%s",x);
+		my_scanf("%s",x);
 		changdu=strlen(x);
 		for(i=0;i<changdu;i++)
 		{
-			if(x[i]=='A')printf("T");
-			else if(x[i]=='T')printf("A");
-			else if(x[i]=='C')printf("G");
-			else if(x[i]=='G')printf("C");
+			if(x[i]=='A')my_printf("T");
+			else if(x[i]=='T')my_printf("A");
+			else if(x[i]=='C')my_printf("G");
+			else if(x[i]=='G')my_printf("C");
 		}
-		printf("\n");
+		my_printf("\n");
 		changdu=i=0;
 		t++;
 	}

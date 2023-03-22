@@ -6,9 +6,9 @@ int main_bench()
    int a[10000],b[10000];
    int i,c=10000,d=1;
    double k;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-	   scanf("%d %d",&a[i],&b[i]);}
+	   my_scanf("%d %d",&a[i],&b[i]);}
    for(i=0;i<n;i++)
    {
 	   if(a[i]<=c)
@@ -39,10 +39,10 @@ int main_bench()
 				   break;
 		   }
 		   if(k==d){
-			   printf("%d %d",c,d);
+			   my_printf("%d %d",c,d);
 		   }
 		   else {
-			   printf("no");
+			   my_printf("no");
 		   }
 		   return 0;
 	   }

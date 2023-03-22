@@ -13,7 +13,7 @@ int isRunNian(int year){
 }
 int main_bench(){
 	int year, month, day, total,j,xqj;
-	scanf("%d %d %d", &year, &month, &day);
+	my_scanf("%d %d %d", &year, &month, &day);
 	
 
          total = 0;
@@ -36,25 +36,25 @@ int main_bench(){
 	xqj=xqj+(year/4-year/100+year/400 )*2+year-(year/4-year/100+year/400 ) ;                     
                    xqj=xqj%7;
                   if(xqj==0){
-                             printf("Sun.");
+                             my_printf("Sun.");
                              }
                              if(xqj==1){
-                             printf("Mon.");
+                             my_printf("Mon.");
                              }
                               if(xqj==2){
-                             printf("Tue.");
+                             my_printf("Tue.");
                              }
                               if(xqj==3){
-                             printf("Wed.");
+                             my_printf("Wed.");
                              }
                              if(xqj==4){
-                             printf("Thu.");
+                             my_printf("Thu.");
                              }
                                 if(xqj==5){
-                             printf("Fri.");
+                             my_printf("Fri.");
                              }
                               if(xqj==6){
-                             printf("Sat.");
+                             my_printf("Sat.");
                              }
                                 
             

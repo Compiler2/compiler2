@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a,b,c,x,m1,m2,i;
 	i=3;
-	scanf("%d",&a);
-	scanf("%d%d",&b,&c);
+	my_scanf("%d",&a);
+	my_scanf("%d%d",&b,&c);
 	if (b>c)
 		{
 			m1=b;
@@ -18,7 +18,7 @@ int main_bench()
 		}
 	while(i<=a)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		if(x>m1)
 		{
 			m2=m1;
@@ -34,7 +34,7 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%d\n%d\n",m1,m2);
+	my_printf("%d\n%d\n",m1,m2);
 	return 0;
 }
 

@@ -13,9 +13,9 @@ int main_bench()
     }
     
     for (p=s;p<s+i-1;p++){
-        printf("%c",*p+*(p+1));
+        my_printf("%c",*p+*(p+1));
     }
     p=s;
-    printf("%c",*p+*(p+i-1));
+    my_printf("%c",*p+*(p+i-1));
     
 }

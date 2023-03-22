@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,k;
 	int *p;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	p=(int *)malloc(sizeof(int)*n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",(p+i));
+		my_scanf("%d",(p+i));
 	}
 	int judge=0;
 	int j;
@@ -27,7 +27,7 @@ int main_bench()
 			break;
 	}
 	if(judge)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 }

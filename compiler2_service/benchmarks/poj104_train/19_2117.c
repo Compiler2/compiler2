@@ -47,28 +47,28 @@ int main_bench()
 			else if(tmp[i][j]==p[j]&&p[j]!='\0') continue;
 			else if(p[j]=='\0') break;
 		}
-		if(tag==1&&flag==0&&i>0) printf(" %s",tmp[i]);
-		else if(tag==1&&flag==1&&i>0) printf(" %s",t);
+		if(tag==1&&flag==0&&i>0) my_printf(" %s",tmp[i]);
+		else if(tag==1&&flag==1&&i>0) my_printf(" %s",t);
 		else if(tag==0&&flag==0&&i>0)
 		{
-			printf(" %s",tmp[i]);
+			my_printf(" %s",tmp[i]);
 			break;
 		}
 		else if(tag==0&&flag==1&&i>0)
 		{
-			printf(" %s",t);
+			my_printf(" %s",t);
 			break;
 		}
-		else if(tag==1&&flag==0&&i==0) printf("%s",tmp[i]);
-		else if(tag==1&&flag==1&&i==0) printf("%s",t);
+		else if(tag==1&&flag==0&&i==0) my_printf("%s",tmp[i]);
+		else if(tag==1&&flag==1&&i==0) my_printf("%s",t);
 		else if(tag==0&&flag==0&&i==0)
 		{
-			printf("%s",tmp[i]);
+			my_printf("%s",tmp[i]);
 			break;
 		}
 		else if(tag==0&&flag==1&&i==0)
 		{
-			printf("%s",t);
+			my_printf("%s",t);
 			break;
 		}
 	}

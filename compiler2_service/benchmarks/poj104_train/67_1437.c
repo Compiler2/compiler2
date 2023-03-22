@@ -5,16 +5,16 @@ int main_bench()
 	double*y;
 	int M,m,i,n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	y=(double*)malloc(sizeof(double)*n);
 	double x;
-	scanf("%d%d",&M,&m);
+	my_scanf("%d%d",&M,&m);
 		
 	x=(double)m/M;
 		
 	for(i=0;i<n-1;i++)
 	{
-		scanf("%d%d",&M,&m);
+		my_scanf("%d%d",&M,&m);
 		
 			y[i]=(double)m/M;
 	}
@@ -22,19 +22,19 @@ int main_bench()
 	{
 			if(x-y[i]>0.05)
 			{
-				printf("worse\n");
+				my_printf("worse\n");
 			}
 			
 			else 
 			{
 				if(y[i]-x>0.05)
 				{
-				printf("better\n");
+				my_printf("better\n");
 				}
 			
 			    else
 				{
-				printf("same\n");
+				my_printf("same\n");
 				
 				}
 			}

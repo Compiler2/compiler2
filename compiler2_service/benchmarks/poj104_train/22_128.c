@@ -6,7 +6,7 @@ int main_bench()
 	char b[300];
 	do
 	{
-		scanf("%d%c",&a[i],&b[i]);
+		my_scanf("%d%c",&a[i],&b[i]);
 		i++;
 	}while(b[i-1]==',');
 
@@ -19,8 +19,8 @@ int main_bench()
 	{
 		if(a[i]<m&&a[i]>n)n=a[i];
 	}
-	if(n!=0)printf("%d",n);
-	else printf("No");
+	if(n!=0)my_printf("%d",n);
+	else my_printf("No");
 }
 
 	

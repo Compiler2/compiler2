@@ -5,7 +5,7 @@ int main_bench()
 	int leapyearjudgement(int YEAR);
 	int daycounting(int month,int date,int LEAPYEAR);
 	int sy,sm,sd,ey,em,ed;
-	scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
 	int year,countleapyear;
     countleapyear=0;
 	for (year=sy;year<ey;year++)
@@ -23,7 +23,7 @@ int main_bench()
 	
 	int DAY;
 	DAY=d1+d2;
-	printf("%d",DAY);
+	my_printf("%d",DAY);
     return 0;
 }
 

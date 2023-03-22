@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j=1,a[6];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (j!=0)
 	{
 		a[0]=n/100;
@@ -20,7 +20,7 @@ int main_bench()
 		a[5]=j/1;
 		j=0;
 	}
-	printf ("%d\n%d\n%d\n%d\n%d\n%d",a[0],a[1],a[2],a[3],a[4],a[5]);
+	my_printf ("%d\n%d\n%d\n%d\n%d\n%d",a[0],a[1],a[2],a[3],a[4],a[5]);
 
 
 

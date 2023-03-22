@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int m,n,e;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	double*za=(double*)malloc(sizeof(double)*m);
 	
 	for(int i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		int a=2,b=1;
 		za[i]=0;
 		for(int k=0;k<n;k++){
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 	}
 	for(int h=0;h<m;h++){
-		printf("%.3lf\n",za[h]);
+		my_printf("%.3lf\n",za[h]);
 	}
 	free(za);
 	return 0;

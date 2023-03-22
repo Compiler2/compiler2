@@ -4,12 +4,12 @@ int main_bench(){
     int k,m,n,a,b,i;
     int h,s,t,p;
     int sz[100][100],result[100];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=0;i<k;i++){
-        scanf("%d %d",&n,&m);
+        my_scanf("%d %d",&n,&m);
         for(a=0;a<n;a++){
             for(b=0;b<m;b++){
-                scanf("%d",&sz[a][b]);
+                my_scanf("%d",&sz[a][b]);
             }
         }
         h=0,s=0,t=0,p=0;
@@ -28,7 +28,7 @@ int main_bench(){
         result[i]=h+s+t+p;
     }
     for(i=0;i<k;i++){
-        printf("%d\n",result[i]);
+        my_printf("%d\n",result[i]);
     }
     return 0;
 }

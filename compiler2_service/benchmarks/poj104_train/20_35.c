@@ -42,14 +42,14 @@ int main_bench()
 
 		for(j=0;j<=q;j++)
 		{
-			printf("%c",str[i][j]);
+			my_printf("%c",str[i][j]);
 		}
-		printf("%c%c%c",str[i][p+1],str[i][p+2],str[i][p+3]);
+		my_printf("%c%c%c",str[i][p+1],str[i][p+2],str[i][p+3]);
 		for(j=1;j<p-q-1;j++)
 		{
-			printf("%c",str[i][q+j]);
+			my_printf("%c",str[i][q+j]);
 		}
-		printf("%c\n",str[i][p-1]);
+		my_printf("%c\n",str[i][p-1]);
 
 	}
 }

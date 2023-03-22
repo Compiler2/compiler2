@@ -34,9 +34,9 @@ int main_bench()
 		}
 		for(j=0;(dna[j])!='\0';j++)
 		{
-			printf("%c",dna[j]);
+			my_printf("%c",dna[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

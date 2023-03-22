@@ -26,5 +26,5 @@ int main_bench()
 		}
 	}
 	for(t=0;t<j;t++)
-		printf("%c",*(d+t));
+		my_printf("%c",*(d+t));
 }

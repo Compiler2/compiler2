@@ -17,19 +17,19 @@ void cmp(int a[],int n,int b[],int m)
 }
 int main_bench()
 {int n,m,i,a[1000],b[500];
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(i=0;i<m;i++)
     {
-        scanf("%d",&b[i]);
+        my_scanf("%d",&b[i]);
     }
     f(a,n);
     f(b,m);
     cmp(a,n,b,m);
     for(i=0;i<n+m-1;i++)
-    printf("%d ",a[i]);
-    printf("%d",a[n+m-1]);
+    my_printf("%d ",a[i]);
+    my_printf("%d",a[n+m-1]);
 }

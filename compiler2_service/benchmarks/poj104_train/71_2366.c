@@ -63,10 +63,10 @@ int spp2(int n)
 int main_bench()
 {
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d%d%d",&mem[i].year,&mem[i].month1,&mem[i].month2);
+        my_scanf("%d%d%d",&mem[i].year,&mem[i].month1,&mem[i].month2);
         if(find(mem[i].year)==0)
         {
             int p=0;
@@ -87,11 +87,11 @@ int main_bench()
             }
             if(p%7==0)
             {
-                printf("YES\n");    
+                my_printf("YES\n");    
             }
             else
             {
-                printf("NO\n");
+                my_printf("NO\n");
             }
         }
         else
@@ -114,11 +114,11 @@ int main_bench()
             }
             if(p%7==0)
             {
-                printf("YES\n");    
+                my_printf("YES\n");    
             }
             else
             {
-                printf("NO\n");
+                my_printf("NO\n");
             }
         }
     }

@@ -28,15 +28,15 @@ for (int i=0; i<5; i++)
 {
 	for (int j=0; j<5; j++)
 	{
-		scanf("%d", &x[i][j]);
+		my_scanf("%d", &x[i][j]);
 	}
 }
 int m, n;
-scanf("%d%d", &n, &m);
+my_scanf("%d%d", &n, &m);
 int r=ch(x, n, m);
 if (r==0)
 {
-	printf("error");
+	my_printf("error");
 }
 else if (r==1)
 {
@@ -45,9 +45,9 @@ else if (r==1)
 		int z=0;
 		for (z=0; z<4; z++)
 		{
-			printf("%d ", x[w][z]);
+			my_printf("%d ", x[w][z]);
 		}
-		printf("%d\n", x[w][z]);
+		my_printf("%d\n", x[w][z]);
 	}
 }
 return 0;

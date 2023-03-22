@@ -7,7 +7,7 @@ int main_bench(){
 	l=strlen(zfc);
 	for(i=0;i<l;i++){
 		if(zfc[i]!=' '||(zfc[i]==' '&&zfc[i-1]!=' ')){
-			printf("%c",zfc[i]);
+			my_printf("%c",zfc[i]);
 		}
 	}
 	return 0;

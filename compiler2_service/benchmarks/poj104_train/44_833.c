@@ -20,12 +20,12 @@ int ab(int n)
 int main_bench()
 {
     int i,t;
-    scanf("%d",&t);
-    printf("%d",ab(t));
+    my_scanf("%d",&t);
+    my_printf("%d",ab(t));
     for(i=1;i<=5;i++)
     {
-                     scanf("%d",&t);
-    printf("\n%d",ab(t));
+                     my_scanf("%d",&t);
+    my_printf("\n%d",ab(t));
     }
    
     return 0;

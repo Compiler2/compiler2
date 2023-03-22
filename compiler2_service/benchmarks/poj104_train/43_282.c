@@ -4,11 +4,11 @@ int su(int);
 int main_bench()
 {
 int m,i;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=3;i<=m/2;i+=2)
 {
 if(su(i)&&su(m-i))
-	printf("%d %d\n",i,m-i);
+	my_printf("%d %d\n",i,m-i);
 }
 return 0;
 }

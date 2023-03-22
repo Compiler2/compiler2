@@ -7,9 +7,9 @@ struct
 {int n;
  char s[26];
 }book[999];
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<m;i++)
-  scanf("%d %s",&book[i].n,&book[i].s);
+  my_scanf("%d %s",&book[i].n,&book[i].s);
 int a[26]={0};
 for(i=0;i<m;i++)
  for(j=0;book[i].s[j]!='\0';j++)
@@ -17,12 +17,12 @@ for(i=0;i<m;i++)
 for(i=1;i<26;i++)
  if(a[k]<a[i])
  k=i;
-printf("%c\n%d\n",k+'A',a[k]);
+my_printf("%c\n%d\n",k+'A',a[k]);
 for(i=0;i<m;i++)
  for(j=0;book[i].s[j]!='\0';j++)
 	 if(book[i].s[j]==k+'A')
 	 {
-		 printf("%d\n",book[i].n);
+		 my_printf("%d\n",book[i].n);
 	 break;
 	 }
 }

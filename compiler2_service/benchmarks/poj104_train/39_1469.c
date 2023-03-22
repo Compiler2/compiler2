@@ -13,14 +13,14 @@ int paper;}stu;
 
 	int max=0,n,i,total=0,money;
 char bestboy[30];
-scanf("%d",&n);
+my_scanf("%d",&n);
 			for(i=0;i<n;i++)
-			{scanf("%s ",stu.name);
-			 scanf("%d ",&stu.final);
-			  scanf("%d ",&stu.crit);
-			 scanf("%c ",&stu.leader);
-			 scanf("%c ",&stu.west);
-			 scanf("%d",&stu.paper);
+			{my_scanf("%s ",stu.name);
+			 my_scanf("%d ",&stu.final);
+			  my_scanf("%d ",&stu.crit);
+			 my_scanf("%c ",&stu.leader);
+			 my_scanf("%c ",&stu.west);
+			 my_scanf("%d",&stu.paper);
 			 money=0;
 			 if(stu.final>80&&stu.paper!=0)
  
@@ -44,6 +44,6 @@ scanf("%d",&n);
 			  strcpy(bestboy,stu.name);
 			 }
 			}
-			printf("%s\n%d\n%d",bestboy,max,total);
+			my_printf("%s\n%d\n%d",bestboy,max,total);
 
 }

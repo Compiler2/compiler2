@@ -14,11 +14,11 @@ int main_bench()
 	}student[2]={{'\0',0,0,'\0','\0',0,0},{'\0',0,0,'\0','\0',0,0}};
 	struct student temp={'\0',0,0,'\0','\0',0,0};
 	int i,n,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sum=0;
 		for(i=0;i<n;i++)
 		{
-			scanf("%s%d%d%s%s%d",student[1].name,&student[1].qm,&student[1].py,student[1].gb,student[1].xb,&student[1].lw);
+			my_scanf("%s%d%d%s%s%d",student[1].name,&student[1].qm,&student[1].py,student[1].gb,student[1].xb,&student[1].lw);
 			if(student[1].py>80&&strcmp(student[1].gb,"Y")==0)
 			{
 				student[1].jxj=student[1].jxj+850;
@@ -50,7 +50,7 @@ int main_bench()
 
 			student[1].jxj=0;
 		}
-		printf("%s\n%d\n%d\n",student[0].name,student[0].jxj,sum);
+		my_printf("%s\n%d\n%d\n",student[0].name,student[0].jxj,sum);
 }
 
 

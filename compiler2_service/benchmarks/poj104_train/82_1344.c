@@ -6,12 +6,12 @@
 int main_bench()
 {
 	int i,n,SBP[100],DBP[100],c[100],temp=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d",&SBP[i]);
+		my_scanf("%d",&SBP[i]);
 			
-		scanf("%d",&DBP[i]);
+		my_scanf("%d",&DBP[i]);
 }
 	for(i=0;i<=(n-1);i++)
 	{
@@ -32,7 +32,7 @@ int main_bench()
 		max=(temp>max)?temp:max;
 	}
 
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 	
 }

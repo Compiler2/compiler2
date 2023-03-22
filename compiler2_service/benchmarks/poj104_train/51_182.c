@@ -14,7 +14,7 @@ int main_bench()
     int i,j,k,m,sum=0;
     static char c[510];
     static int s[500][2];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     gets(c);
     for(i=0;c[i]!=0;i++);
     m=i;
@@ -37,12 +37,12 @@ int main_bench()
     for(i=0;i<sum;i++)
         k=(k>s[i][1])?k:s[i][1];
     if(k==1)
-    printf("NO");
+    my_printf("NO");
     else
-    {printf("%d\n",k);
+    {my_printf("%d\n",k);
     for(i=0;i<sum;i++)
     if(k==s[i][1])
     {for(j=0;j<n;j++)
-    printf("%c",c[s[i][0]+j]);
-    printf("\n");}}
+    my_printf("%c",c[s[i][0]+j]);
+    my_printf("\n");}}
     }

@@ -27,8 +27,8 @@ int main_bench()
            if( cnt > 0 ) {
                tmp[cnt] = 0;
                if( !strcmp(tmp, src) )
-                   printf("%s", tar );
-               else printf("%s", tmp );
+                   my_printf("%s", tar );
+               else my_printf("%s", tmp );
                cnt = 0;
            }
          
@@ -38,8 +38,8 @@ int main_bench()
    if( cnt > 0 ) {
          tmp[cnt] = 0;
          if( !strcmp(tmp, src) )
-                   printf("%s", tar );
-               else printf("%s", tmp );
+                   my_printf("%s", tar );
+               else my_printf("%s", tmp );
    }
    putchar('\n');
 }

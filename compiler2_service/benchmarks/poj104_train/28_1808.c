@@ -13,7 +13,7 @@ int main_bench()
    else 
 	  break;
  }
- printf("%d",count);
+ my_printf("%d",count);
  len=strlen(s);
  if(s[i]=='\0') 
 	  return 0;
@@ -21,7 +21,7 @@ int main_bench()
  for(;i<=len;i++)
  {
     if(s[i]!=' '&&(s[i+1]==' '||s[i+1]=='\0'))
-	{count++;printf(",%d",count);count=-1;}
+	{count++;my_printf(",%d",count);count=-1;}
 	if(s[i]==' ')
 		 continue;
     if(s[i]!=' ' && s[i]!='\0')

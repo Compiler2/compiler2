@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j;
 	int x[50000][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 	  for(j=0;j<2;j++)
 	  {
-	    scanf("%d",&x[i][j]);
+	    my_scanf("%d",&x[i][j]);
 	  }
 	}
 	int y[50000][2];
@@ -55,11 +55,11 @@ int main_bench()
 	  minmax=(x[0][0])>(x[1][0])?(x[0][0]):(x[1][0]);
 	  if(maxmin>=minmax)
 	  {
-	    printf("%d %d",minmin,maxmax);
+	    my_printf("%d %d",minmin,maxmax);
 	  }
 	  if(maxmin<minmax)
 	  {
-	    printf("no");
+	    my_printf("no");
 	  }
 	}
 	if(n>2)
@@ -103,14 +103,14 @@ int main_bench()
 	k++;
 	if(min==x[0][0]&&max==x[0][1])
 	{
-	  printf("%d %d",min,max);
+	  my_printf("%d %d",min,max);
 	  break;
 	}
          if(k==n-1)
          {
 	if(min!=x[0][0]||max!=x[0][1])
 	  {
-	    printf("no");
+	    my_printf("no");
 		break;
 	  }
          }

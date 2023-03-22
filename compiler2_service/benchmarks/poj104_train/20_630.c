@@ -30,11 +30,11 @@ int main_bench()
 			}
 		}
 		for(j=0;j<=k;j++)
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		for(j=len-3;j<len;j++)
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		for(j=k+1;j<len-4;j++)
-			printf("%c",c[i][j]);
-		printf("\n");
+			my_printf("%c",c[i][j]);
+		my_printf("\n");
 	}
 }

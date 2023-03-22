@@ -5,22 +5,22 @@ int main_bench(){
 	int m,n,i,j,sz[5][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-		   scanf("%d",&sz[i][j]);
+		   my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	if(x(m,n,sz)==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
 				if(j==4){
-				   printf("%d\n",sz[i][j]);
+				   my_printf("%d\n",sz[i][j]);
 				}else{
-					printf("%d ",sz[i][j]);
+					my_printf("%d ",sz[i][j]);
 				}
 			}
 		}
 	}else if(x(m,n,sz)==0){
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s1[300],s2[300];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	int a[128],b[128],i,n,m,k=1;
 	for(i=0;i<128;i++)
 	{
@@ -21,9 +21,9 @@ int main_bench()
 		for(i=0;i<128;i++)
 		{
 			if(a[i]!=b[i])
-			{printf("NO");k=0;break;}
+			{my_printf("NO");k=0;break;}
 		}
-		if(k!=0) printf("YES");
+		if(k!=0) my_printf("YES");
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

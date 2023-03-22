@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],b[10000],c=0;
 	
-	scanf ("%s",a);
+	my_scanf ("%s",a);
 	int i;
 	for (i=0;i<10000;i++)
 		b[i]=0;
@@ -24,10 +24,10 @@ int main_bench()
 		if (b[i]!=0)
 		{
 			
-			printf ("%c=%d\n",i,b[i]);
+			my_printf ("%c=%d\n",i,b[i]);
 		}
 	}
-	else printf("No");
+	else my_printf("No");
 	return 0;
 }
 

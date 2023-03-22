@@ -26,7 +26,7 @@ int main_bench()
                                  r=check(str2);
                                  if(r==1)
                                  {
-                                 printf("%s\n", str2);
+                                 my_printf("%s\n", str2);
                                  }
                                  w=0;
                  }

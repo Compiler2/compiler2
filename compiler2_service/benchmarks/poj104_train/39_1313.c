@@ -3,7 +3,7 @@
 int main_bench()
 {
  int n, i;
- scanf("%d", &n);
+ my_scanf("%d", &n);
  int sum[100]={0}, total=0;
  char name[100][20];
  for(i=0;i<n;i++)
@@ -11,7 +11,7 @@ int main_bench()
   int a, b;
   char p[2], q[2];
   int l;
-  scanf("%s%d%d%s%s%d", &name[i], &a, &b, &p, &q, &l);
+  my_scanf("%s%d%d%s%s%d", &name[i], &a, &b, &p, &q, &l);
   if(a>80&&l!=0)
   {
    sum[i]+=8000;
@@ -43,6 +43,6 @@ int main_bench()
    k=i;
   }
  }
- printf("%s\n%d\n%d\n", name[k], sum[k], total);
+ my_printf("%s\n%d\n%d\n", name[k], sum[k], total);
  return 0;
 }

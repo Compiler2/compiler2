@@ -8,21 +8,21 @@ int RevNum(int n)
      {
       s=n%10;
       n=n/10;
-      printf("%d",s);
+      my_printf("%d",s);
      }
-     printf("%d\n",n);
+     my_printf("%d\n",n);
     }       
     else
     {
      n=abs(n);
-     printf("-");
+     my_printf("-");
      while(n/10!=0)
      {
       s=n%10;
       n=n/10;
-      printf("%d",s);
+      my_printf("%d",s);
      }
-     printf("%d\n",n);
+     my_printf("%d\n",n);
     }        
 }
 main_bench()
@@ -30,7 +30,7 @@ main_bench()
   int k;
   while(i<6)
   { 
-  scanf("%d",&k);
+  my_scanf("%d",&k);
   while(k%10==0)
    {
     k=k/10;

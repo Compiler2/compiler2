@@ -15,7 +15,7 @@ for(i=0;i<n-1;i++)
 }
 *(q+n-1)=*(p+n-1)+*p;
 for(i=0;i<n;i++)
-printf("%c",*(q+i));
+my_printf("%c",*(q+i));
 return 0;
 }
 

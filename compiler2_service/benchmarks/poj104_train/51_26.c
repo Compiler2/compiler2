@@ -4,12 +4,12 @@ int main_bench()
 {
 	char str[500],temp[500][6]={{0}};
 	int n,count[500]={0},max,j,i,m;
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	m=strlen(str);
 	if(m==208)
 	{
-		printf("7\ngf");
+		my_printf("7\ngf");
 		goto end;
 	}
 	
@@ -40,16 +40,16 @@ int main_bench()
 			max=count[i];
 	}
 	if(max>0)
-	printf("%d\n",max+1);
+	my_printf("%d\n",max+1);
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 		goto end;
 	}
 	for(i=0;i<=m-n;i++)
 	{
 		if(count[i]==max)
-			printf("%s\n",temp[i]);
+			my_printf("%s\n",temp[i]);
 	}
 end:;
 }

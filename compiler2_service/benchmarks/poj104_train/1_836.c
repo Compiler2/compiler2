@@ -4,12 +4,12 @@ int main_bench()
 {
 	int ys(int s,int p);
 	int n,m,i,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=1;i<=n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
         t=ys(m,2);
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 	}
     return 0;
 }

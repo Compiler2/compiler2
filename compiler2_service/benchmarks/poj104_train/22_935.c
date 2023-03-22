@@ -9,7 +9,7 @@ int main_bench()
     
     do
     {
-         scanf("%d%c",&a,&b);
+         my_scanf("%d%c",&a,&b);
          if (max<a){
                     secmax=max;
                     max=a;
@@ -23,9 +23,9 @@ int main_bench()
       
     }
     while(b==',');
-         if (secmax==0){printf("No\n");}
+         if (secmax==0){my_printf("No\n");}
          
-         else{printf("%d\n",secmax);}
+         else{my_printf("%d\n",secmax);}
         
     
     

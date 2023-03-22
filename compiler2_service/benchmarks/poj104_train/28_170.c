@@ -7,7 +7,7 @@ int main_bench()
   int a[300];
   for (i=0;;i++)
   {
-	  scanf ("%c",&str[i]);
+	  my_scanf ("%c",&str[i]);
     if (str[i]=='\n') break;
 	else n++;
 		}
@@ -24,6 +24,6 @@ int main_bench()
       a[num-1]++;
   }
 	  for (i=0;i<num-1;i++)
-		  printf("%d,",a[i]);
-	  printf("%d",a[i]);
+		  my_printf("%d,",a[i]);
+	  my_printf("%d",a[i]);
 }

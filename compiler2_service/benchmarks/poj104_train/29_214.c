@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,m,zi[1000],mu[1000],n[1000];
 	float shu[1000],sum[1000];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 	for(i=0;i<m;i++){
 		sum[i]=0;
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		zi[0]=2;
 		zi[1]=3;
 		mu[0]=1;
@@ -21,7 +21,7 @@ int main_bench()
 		}
 	}
     for(i=0;i<m;i++){
-		printf("%.3f\n",sum[i]);
+		my_printf("%.3f\n",sum[i]);
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sum=0,n,a[100][100],i,j,x1,x2,num1,num2,y1,y2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
   for(i=0;i<n;i++)
   { 
     for(j=0;j<n;j++)  
@@ -30,5 +30,5 @@ int main_bench()
 		num1=x2-x1+1;
                 num2=y2-y1+1;
 		sum=(num1-2)*(num2-2);
-		printf("%d",sum);
+		my_printf("%d",sum);
 }

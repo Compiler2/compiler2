@@ -16,10 +16,10 @@ int main_bench()
    a[10]=b[10]=273;
    a[11]=b[11]=304;
    a[12]=b[12]=334;
-   scanf("%d", &n);
+   my_scanf("%d", &n);
    for(i=1;i<=n;i++)
    {
-       scanf("%d%d%d", &k, &t, &j);
+       my_scanf("%d%d%d", &k, &t, &j);
        if(t<j)
        {
            m=t;
@@ -30,11 +30,11 @@ int main_bench()
        {
            if((a[t]-b[j])%7==0)
            {
-               printf("YES\n");
+               my_printf("YES\n");
            }
            else
            {
-               printf("NO\n");
+               my_printf("NO\n");
            }      
        }
        else if((k%4==0&&k%100!=0)||(k%400==0))
@@ -43,11 +43,11 @@ int main_bench()
             {
                 if((a[t]-b[j])%7==0)
                 {
-                    printf("YES\n");
+                    my_printf("YES\n");
                 }
                 else
                 {
-                    printf("NO\n");
+                    my_printf("NO\n");
                 }
             }
             else if(t<=2&&j>2||j<=2&&t>2)
@@ -55,16 +55,16 @@ int main_bench()
 			
                 if((b[t]-a[j]+1)%7==0)
                  {
-                     printf("YES\n");
+                     my_printf("YES\n");
                  }
                  else
                  {
-                     printf("NO\n");
+                     my_printf("NO\n");
                  }
             } 
            else
            {
-               printf("NO\n");
+               my_printf("NO\n");
            }
        }
    }      

@@ -6,8 +6,8 @@ int main_bench()
    char c,s[1000];
    char a[1000][1000];
    int b[1000];
-   scanf("%d",&n);
-   scanf("%s",s);
+   my_scanf("%d",&n);
+   my_scanf("%s",s);
    l1=strlen(s);
    j=0;
    memset(a,0,sizeof(a));
@@ -32,12 +32,12 @@ int main_bench()
     }
     max=0;
    for (i=0;i<l;i++) if (max<b[i]) max=b[i];
-   if (max==1) printf("NO");
+   if (max==1) my_printf("NO");
    else 
    {
-        printf("%d\n",max);
+        my_printf("%d\n",max);
         for (i=0;i<l;i++)
-        if (b[i]==max) printf("%s\n",a[i]); 
+        if (b[i]==max) my_printf("%s\n",a[i]); 
 }
   
 } 

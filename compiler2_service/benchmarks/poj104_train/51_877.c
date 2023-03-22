@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[1000];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	int len=strlen(s);
 
 	char t[600][10];
@@ -70,13 +70,13 @@ int main_bench()
 	}
 
 	if(a[0]==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;a[i]==a[0];i++);
-		printf("%d\n",a[0]);
+		my_printf("%d\n",a[0]);
 		for(j=0;j<i;j++)
-			printf("%s\n",t[j]);
+			my_printf("%s\n",t[j]);
 	}
 	
 	

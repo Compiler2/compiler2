@@ -4,7 +4,7 @@ main_bench()
 {
 	char a[100]={0},b[100]={0};
 	int alpha1[256]={0},alpha2[256]={0},n,n1,n2,i,j=0;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	n1=strlen(a);
 	n2=strlen(b);
 	if (n1>n2) n=n1;
@@ -22,6 +22,6 @@ main_bench()
 	{
 		if (alpha1[i]!=alpha2[i]) j=1;
 	}
-	if(j==0)printf("YES\n");
-	else printf("NO\n");
+	if(j==0)my_printf("YES\n");
+	else my_printf("NO\n");
 }

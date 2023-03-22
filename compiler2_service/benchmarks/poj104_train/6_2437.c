@@ -5,11 +5,11 @@ void mk(void)
 {
 	int m,n,i,j,k,s=0;
 	int a[100][100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
 	for(j=0;j<n;j++)
 	{
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 	}
 	s=0;
 	for(i=0;i<n;i++)
@@ -31,7 +31,7 @@ void mk(void)
 	{
 		s+=a[i][0];
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }
 
 
@@ -39,7 +39,7 @@ void mk(void)
 int main_bench()
 {
 	int p,q,i;
-	scanf("%d",&p);
+	my_scanf("%d",&p);
 	for(q=0;q<p;q++)
 	{
 		mk();

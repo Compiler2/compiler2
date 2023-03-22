@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,l,t;
 	char s[50],w[50];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	for(i=0;w[i]!='\0';i++)
 	{
 		t=0;
@@ -23,7 +23,7 @@ int main_bench()
 			}
 			if(t==j-1)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				return 0;
 			}
 		}

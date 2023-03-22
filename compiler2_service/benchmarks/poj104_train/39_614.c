@@ -13,11 +13,11 @@ int main_bench()
 {
 	int n,i,a[1000]={0},b[1000],sum=0,j,t;
 	struct st s[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		getchar();
-		scanf("%s%d%d %c %c%d",s[i].nam,&s[i].scq,&s[i].scb,&s[i].gb,&s[i].xb,&s[i].lw);
+		my_scanf("%s%d%d %c %c%d",s[i].nam,&s[i].scq,&s[i].scb,&s[i].gb,&s[i].xb,&s[i].lw);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -45,8 +45,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",s[b[0]].nam);
-	printf("%d\n%d\n",a[0],sum);
+	my_printf("%s\n",s[b[0]].nam);
+	my_printf("%d\n%d\n",a[0],sum);
 }
 
 

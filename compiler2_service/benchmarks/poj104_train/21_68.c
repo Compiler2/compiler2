@@ -3,10 +3,10 @@
 int main_bench()
 {
 	float a[300],b[300];int c[300];float sum=0,max;int i,j,n,m=0;int k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		sum=sum+a[i];
 	}sum=sum/n;
 	for(i=0;i<n;i++)
@@ -29,6 +29,6 @@ int main_bench()
 			if(c[i]>c[j])
 			{k=c[j];c[j]=c[i];c[i]=k;}
 		}
-		for(i=0;i<m-1;i++)printf("%d,",c[i]);
-		printf("%d",c[m-1]);
+		for(i=0;i<m-1;i++)my_printf("%d,",c[i]);
+		my_printf("%d",c[m-1]);
 }

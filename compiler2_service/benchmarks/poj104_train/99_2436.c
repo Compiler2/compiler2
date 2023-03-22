@@ -5,10 +5,10 @@ int main_bench()
 	int a[100];
 	int n,i;
 	float c[4],b[4]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]<=18)
 			b[0]++;
 		else if(a[i]<=35)
@@ -20,8 +20,8 @@ int main_bench()
 	}
 	for(i=0;i<=3;i++)
         c[i]=100*b[i]/n;
-	printf("1-18: %.2f%%\n",c[0]);
-	printf("19-35: %.2f%%\n",c[1]);
-	printf("36-60: %.2f%%\n",c[2]);
-	printf("60??: %.2f%%\n",c[3]);
+	my_printf("1-18: %.2f%%\n",c[0]);
+	my_printf("19-35: %.2f%%\n",c[1]);
+	my_printf("36-60: %.2f%%\n",c[2]);
+	my_printf("60??: %.2f%%\n",c[3]);
 }

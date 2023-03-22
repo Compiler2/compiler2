@@ -14,6 +14,6 @@ int main_bench()
     else{
        t[j]=s[i];j++;}}
      t[j]='\0';
-    printf("%s",t);
+    my_printf("%s",t);
     return 0;
 }

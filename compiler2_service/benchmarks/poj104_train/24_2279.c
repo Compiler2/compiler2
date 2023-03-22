@@ -34,10 +34,10 @@ int main_bench()
 	}
 	if (l==0)
 	{for(i=0;i<a[0]+1;i++)
-	printf("%c",str[0][i]);
-	printf("\n");
+	my_printf("%c",str[0][i]);
+	my_printf("\n");
 	for(i=0;i<a[0]+1;i++)
-	printf("%c",str[0][i]);}
+	my_printf("%c",str[0][i]);}
 	else
 	{min=a[0];
 	max=a[0];
@@ -52,17 +52,17 @@ int main_bench()
 	}
 	if(min == max)
 	{for(i=0;i<a[0]+1;i++)
-	printf("%c",str[0][i]);
-	printf("\n");
+	my_printf("%c",str[0][i]);
+	my_printf("\n");
 	for(i=0;i<a[0]+1;i++)
-	printf("%c",str[0][i]);}
+	my_printf("%c",str[0][i]);}
 	else
 	{
 		for (i=0;i<max+1;i++)
-			printf("%c",str[k][i]);
-		printf("\n");
+			my_printf("%c",str[k][i]);
+		my_printf("\n");
 		for (i=0;i<min+1;i++)
-			printf("%c",str[n][i]);
+			my_printf("%c",str[n][i]);
 	}}
 	return 0;
 }

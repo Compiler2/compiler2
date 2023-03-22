@@ -6,10 +6,10 @@ int main_bench()
 	int n,i;
 	int sa=0,sb=0;
 	int a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a+b==1)
 		{
 			if(a==0)
@@ -42,13 +42,13 @@ int main_bench()
 
 	if(sa>sb)
 	{
-		printf("A\n");
+		my_printf("A\n");
 	}else if(sa<sb)
 	{
-		printf("B\n");
+		my_printf("B\n");
 	}else if(sa==sb)
 	{
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}
 	
 	return 0;

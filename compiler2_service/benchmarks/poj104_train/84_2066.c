@@ -5,9 +5,9 @@ int main_bench(){
     int b=0;
     int a=0;
     int i=1;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=1;i<=n;i++){
-        scanf("%d\n",&c);
+        my_scanf("%d\n",&c);
         if(b>a){
               d=a;
               a=b;
@@ -21,7 +21,7 @@ int main_bench(){
               b=c;
         }
     }
-    printf("%d\n%d",a,b);
+    my_printf("%d\n%d",a,b);
     return 0;
 }
 

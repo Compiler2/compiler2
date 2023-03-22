@@ -20,15 +20,15 @@ int sushu(int i)
 int main_bench()
 {
     int n,i,out;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     out=0;
     for (i=4;i<=n;i++)
     {
-        if (sushu(i)&&sushu(i-2)) {printf("%d %d\n",i-2,i); out=1;}
+        if (sushu(i)&&sushu(i-2)) {my_printf("%d %d\n",i-2,i); out=1;}
     }
     if (out==0)
     {
-               printf("empty");
+               my_printf("empty");
     }
     return 0;
 }

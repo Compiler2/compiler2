@@ -13,7 +13,7 @@ int main_bench(){
     str1[m]=str[i];
     m++;                 
   } 
-} printf("%c",str[0]);
+} my_printf("%c",str[0]);
   puts(str1);
   return 0;   
 }

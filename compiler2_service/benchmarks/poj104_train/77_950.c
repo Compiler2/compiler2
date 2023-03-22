@@ -19,7 +19,7 @@ int main_bench()
 			temp[top][2] = i;
 			i++;
 		}
-		printf("%d %d\n",temp[top][2],i);
+		my_printf("%d %d\n",temp[top][2],i);
 		top--;
 		i++;
 	

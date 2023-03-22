@@ -5,7 +5,7 @@ int main_bench()
 	int rev(int x);
 	int prime(int y);
 	int m,n,i,j=0,k,a[100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	i=m;
 	while(i<=n)
 	{
@@ -16,11 +16,11 @@ int main_bench()
 		}
 		i++;
 	}
-	if(j==0) printf("no");
+	if(j==0) my_printf("no");
 	else
 	{
-	    printf("%d",a[0]);
-	    for(k=1;k<j;k++) printf(",%d",a[k]);
+	    my_printf("%d",a[0]);
+	    for(k=1;k<j;k++) my_printf(",%d",a[k]);
 	}
 	return 0;
 }

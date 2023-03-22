@@ -14,6 +14,6 @@ int main_bench()
 		*(str+j)=*(st+j)+*(st+j+1);
 	*(str+i)=*(st+i)+*(st+0);
 	for(k=0;k<=i;k++)
-		printf("%c",*(str+k));
+		my_printf("%c",*(str+k));
 	return 0;
 }

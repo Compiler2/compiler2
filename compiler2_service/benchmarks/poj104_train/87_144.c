@@ -3,7 +3,7 @@
 int main_bench(){
 	int a,b,c,d,e,f,y;
 	while(1){
-		scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 		if(a==0){
 			break;
 		}
@@ -17,7 +17,7 @@ int main_bench(){
 		}else if(e<=b&&f<=c){
 			y=(d-a-1)*3600+3600+(e-b-1)*60+60+f-c;
 		}
-		printf("%d\n",y);
+		my_printf("%d\n",y);
 	}
 	return 0;
 

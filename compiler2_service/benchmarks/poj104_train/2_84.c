@@ -4,9 +4,9 @@
 int main_bench(){
     int n,i,j,k,b[999],max=0,a[27],x;
     char w,c[999][26],d[27];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d %s",&b[i],c[i]);
+                     my_scanf("%d %s",&b[i],c[i]);
                      }
     for(i=0;i<27;i++)
     {a[i]=0;}
@@ -24,12 +24,12 @@ int main_bench(){
                       x=i;}
                       }
     w=x+64;
-    printf("%c\n",w);
-    printf("%d\n",max);
+    my_printf("%c\n",w);
+    my_printf("%d\n",max);
     for(i=0;i<n;i++){
                      for(j=0;j<26;j++){
                                        if(c[i][j]==x+64)
-                                       {printf("%d\n",b[i]);
+                                       {my_printf("%d\n",b[i]);
                                        break;}
                                        }
                      }

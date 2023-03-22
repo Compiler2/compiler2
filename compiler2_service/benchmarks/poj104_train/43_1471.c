@@ -14,11 +14,11 @@ int main_bench()
 {
     int m,i,j;
     int d=1;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=3; i<=m/2;i=i+2)  
     {
       j=m-i;
       if (zhi(i) == 1 && zhi(j) == 1) 
-	  printf("%d %d\n",i,j);
+	  my_printf("%d %d\n",i,j);
     }
 }

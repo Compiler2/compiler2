@@ -7,7 +7,7 @@ main_bench()
      int i,j,h;
      memset(a,0,sizeof(int));
      memset(b,0,sizeof(int));
-     scanf("%d %d",&m,&n);
+     my_scanf("%d %d",&m,&n);
      a[5][5]=m;
      for (h=1;h<=n;)
      {
@@ -28,8 +28,8 @@ main_bench()
      for (i=1;i<=9;i++)
      {
          for (j=1;j<=8;j++)
-         {printf ("%d ",a[i][j]);}
+         {my_printf ("%d ",a[i][j]);}
           for (j=9;j<=9;j++)
-         {printf ("%d\n",a[i][j]);}
+         {my_printf ("%d\n",a[i][j]);}
      }
 }

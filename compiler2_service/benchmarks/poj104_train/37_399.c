@@ -5,12 +5,12 @@ main_bench()
     char string[100000];
     int t,i,j,k,num;
     char result; 
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
         int count[26]={0},line[26]={0};
         k=1;
-        scanf("%s",string);
+        my_scanf("%s",string);
         num=strlen(string); 
         for(j=0;j<num;j++)
         {
@@ -34,8 +34,8 @@ main_bench()
         }
     }
     if(j==0)
-            printf("no");
-            else printf("%c\n",result); 
+            my_printf("no");
+            else my_printf("%c\n",result); 
     }    
     getchar();
     getchar();

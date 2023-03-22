@@ -10,7 +10,7 @@ int main_bench()
 	for(i=0;i<n;i++){
 		gets(zifu);
 		len=strlen(zifu);
-		printf("%d\n",panduan(z,len));
+		my_printf("%d\n",panduan(z,len));
 	}
 	return 0;
 }

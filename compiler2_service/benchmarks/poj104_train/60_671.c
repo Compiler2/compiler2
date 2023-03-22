@@ -4,11 +4,11 @@ main_bench()
 {
       int n,a,b,i,k,c,d;
       d=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if (n>4)
       {
               d=d+1;
-              printf("3 5\n");
+              my_printf("3 5\n");
       }
       
       for (a=2;a<=n-2;a++)
@@ -43,14 +43,14 @@ main_bench()
                      if (c==0)
                      {
                               d=d+1;
-                              printf("%d %d\n",a-2,a);
+                              my_printf("%d %d\n",a-2,a);
                      }
                  
           }
       }
       if (d==0)
       {
-               printf("empty");
+               my_printf("empty");
       }
      getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();
      }

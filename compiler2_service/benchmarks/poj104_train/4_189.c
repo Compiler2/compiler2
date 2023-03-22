@@ -7,10 +7,10 @@ int main_bench()
 	int row,col,i,j,ji;
 	int su[100][100];
 	int h=0,l=0,sum,shibie;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	for(i=0;i<row;i++){
 		for(j=0;j<col;j++){
-			scanf("%d",&su[i][j]);
+			my_scanf("%d",&su[i][j]);
 		}
 	}
 	ji=row*col;
@@ -24,7 +24,7 @@ int main_bench()
 				l=col-1;
 			}
 			do{
-			printf("%d\n",su[h][l]);
+			my_printf("%d\n",su[h][l]);
 			ji--;
 			l--;
 			h++;

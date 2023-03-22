@@ -4,15 +4,15 @@ int main_bench()
 {
     int m,n,i,k;
     int a[100000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++)
-    scanf("%d",&a[i]);
-    scanf("%d",&m);
+    my_scanf("%d",&a[i]);
+    my_scanf("%d",&m);
     for(int i=0;i<n;i++)
     {
        if(a[i]!=m)
       {
-       printf("%d",a[i]);
+       my_printf("%d",a[i]);
        k=i;
        break;
       }
@@ -20,7 +20,7 @@ int main_bench()
     for(int i=k+1;i<n;i++)
     {
      if(a[i]!=m)
-     printf(" %d",a[i]);
+     my_printf(" %d",a[i]);
      getchar();
      getchar();
     }

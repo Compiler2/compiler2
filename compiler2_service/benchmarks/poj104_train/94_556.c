@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	int shuzu[500];
 	int jishu[500];
 	for(i=0;i<n;i++){
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 	}
 	int e;
 	for(i=1;i<=n;i++){
@@ -36,9 +36,9 @@ int main_bench(){
 	
 	for(i=0;i<j;i++){
 		if(i==0){
-			printf("%d",jishu[i]);
+			my_printf("%d",jishu[i]);
 		}else{
-			printf(",%d",jishu[i]);
+			my_printf(",%d",jishu[i]);
 		}
 	}
 return 0;

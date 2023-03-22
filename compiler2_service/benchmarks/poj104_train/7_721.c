@@ -68,7 +68,7 @@ int main_bench()
 	
 	for(i=0;i<c-ct+ch;i++)
 	{
-	printf("%c",xzfc[i]);
+	my_printf("%c",xzfc[i]);
 	}
     
     }

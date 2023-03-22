@@ -5,10 +5,10 @@ int main_bench()
 	int a[100];
 	int *p=a;
 	int n,i,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
-	if(n==1) printf("%d",*p);
+		my_scanf("%d",p+i);
+	if(n==1) my_printf("%d",*p);
 	else
 	{
 	for(i=0;i<=(n-1)/2;i++)
@@ -17,11 +17,11 @@ int main_bench()
 		*(p+i)=*(p+n-1-i);
 		*(p+n-1-i)=t;
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
-		printf(" %d",*(p+i));
+		my_printf(" %d",*(p+i));
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 	

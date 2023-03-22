@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	char a[200];
 	char b[200];
 	int c[200];
@@ -10,7 +10,7 @@ int main_bench(){
 	int k;
 	for (int i = 0; i<n; i++)
 	{
-		scanf("%s", a);
+		my_scanf("%s", a);
 		len = strlen(a);
 		k = 0;
 		int j = 0;
@@ -51,8 +51,8 @@ int main_bench(){
 			}
 		}
 		b[j] = '\0';
-		printf("%s\n", a);
-		printf("%s\n", b);
+		my_printf("%s\n", a);
+		my_printf("%s\n", b);
 	}
 	return 0;
 }

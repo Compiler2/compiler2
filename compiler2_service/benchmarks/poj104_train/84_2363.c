@@ -4,10 +4,10 @@
 int main_bench()
 {int sz[99];
 int n,e;
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 for( int i = 0 ; i < n ; i ++ )
 {
-scanf  ("%d",&(sz[i]));
+my_scanf  ("%d",&(sz[i]));
 }
 for(int c = 0; c < n - 1; c++){
 			if(sz[c] > sz[c+1]){
@@ -24,7 +24,7 @@ for(int a = 0;a <n - 2; a++){
 					sz[a] = b;
 			}
 	}
-printf ("%d\n",sz[n-1]);
-printf ("%d\n",sz[n-2]);
+my_printf ("%d\n",sz[n-1]);
+my_printf ("%d\n",sz[n-2]);
 	return 0;
 }

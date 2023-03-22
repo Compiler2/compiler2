@@ -6,7 +6,7 @@ int main_bench()
  for(i=0;i<5;i++)
  {
   for(r=0;r<5;r++)
-  scanf("%d",&a[i][r]);
+  my_scanf("%d",&a[i][r]);
  }
  for(i=0;i<5;i++)
  {
@@ -32,11 +32,11 @@ int main_bench()
   }
   if(paohui==0)
   {
-   printf("%d %d %d",hang,lie,an);
+   my_printf("%d %d %d",hang,lie,an);
    paohuierhao++;
   }
  }
 if(paohuierhao==0)
-printf("not found");
+my_printf("not found");
 return 0;
 }

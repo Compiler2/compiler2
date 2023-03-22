@@ -12,7 +12,7 @@ int main_bench()
 		{
 			if(num!=0)
 			{
-			printf("%d",num);word++;
+			my_printf("%d",num);word++;
 			num=0;
 			break;
 			}
@@ -28,7 +28,7 @@ int main_bench()
 		{
 			if(num!=0)
 			{
-			printf(",%d",num);word++;
+			my_printf(",%d",num);word++;
 			num=0;
 			}
 		}
@@ -40,10 +40,10 @@ int main_bench()
 	if(num!=0)
 	{
 		if(word==0)
-			printf("%d",num);
+			my_printf("%d",num);
 
 			else
-		printf(",%d",num);
+		my_printf(",%d",num);
 	}
 
 }

@@ -13,9 +13,9 @@ main_bench()
 		int lunwen;
 	};
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].pingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].pingyi,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 	for(i=0;i<n;i++)
 	{
 		if(stu[i].qimo>80&&stu[i].lunwen>=1) a[i][0]=8000;
@@ -47,8 +47,8 @@ main_bench()
 	}
 	for(i=0;i<n;i++)
 		s=s+b[i];
-	printf("%s\n",stu[m].name);
-	printf("%d\n",c[n-1]);
-	printf("%d\n",s);
+	my_printf("%s\n",stu[m].name);
+	my_printf("%d\n",c[n-1]);
+	my_printf("%d\n",s);
 	return 0;
 }

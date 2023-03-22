@@ -10,7 +10,7 @@ char ch;
 
 do{
 
-	scanf("%d",&mtemp);
+	my_scanf("%d",&mtemp);
 	if(mtemp>m1)
 	{   m2=m1;
 	m1=mtemp;
@@ -26,10 +26,10 @@ do{
 }while(ch==',');
 
 if(m1==m2||m2==0||i==2)
-{printf("No");
+{my_printf("No");
 }
 else 
-printf("%d",m2);
+my_printf("%d",m2);
 
 return 0;
 

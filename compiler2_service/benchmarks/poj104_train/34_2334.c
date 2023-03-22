@@ -4,7 +4,7 @@
 int main_bench()
 {
 int n,i,a[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 	a[1]=n;
 	if (n!=1)
 {for (i=1;a[i]!=1;i++)
@@ -13,16 +13,16 @@ scanf("%d",&n);
 	
 	
 {	a[i+1]=a[i]/2;
-	printf("%d/2=%d\n",a[i],a[i+1]);
+	my_printf("%d/2=%d\n",a[i],a[i+1]);
         }
 	if (a[i]%2==1)
         {   a[i+1]=a[i]*3+1;
-	printf("%d*3+1=%d\n",a[i],a[i+1]);
+	my_printf("%d*3+1=%d\n",a[i],a[i+1]);
         }
     }
-    printf("End");
+    my_printf("End");
 }
 	if (n==1)
-    printf("End");
+    my_printf("End");
 return 0;
 }

@@ -5,7 +5,7 @@ int yu7wuguan(int e);
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,result;
 	result=0;
 	for(i=1;i<=n;i++){
@@ -14,7 +14,7 @@ int main_bench(){
 		}
 	}
 
-	printf("%d",result);
+	my_printf("%d",result);
 
 	return 0;
 }

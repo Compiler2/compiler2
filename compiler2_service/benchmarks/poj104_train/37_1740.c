@@ -4,10 +4,10 @@ int main_bench()
 {
     int t,p,i,b,c;
     char a[100][10000] ;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(p=0;p<t;p++)
     {
-                    scanf("%s",a[p]);
+                    my_scanf("%s",a[p]);
                     } 
         for(p=0;p<t;p++)
         { 
@@ -24,13 +24,13 @@ int main_bench()
                                      }
                               if(b==1) 
                               {
-                              printf("%c\n",a[p][i]);
+                              my_printf("%c\n",a[p][i]);
                               c++;
                               break;
                               }
                               else;
                               }
         if(c==0)
-        printf("no\n");
+        my_printf("no\n");
         }
 }   

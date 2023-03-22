@@ -18,13 +18,13 @@ int main_bench()
 			{
 				ans=1;
 				for(k=0;k<i;k++)
-		            printf("%c",s[k]);
-	            printf("%s",re);
+		            my_printf("%c",s[k]);
+	            my_printf("%s",re);
 	            for(k=i+lensub;k<length;k++)
-		            printf("%c",s[k]);
+		            my_printf("%c",s[k]);
 				break;
 			}
 		}
-	if(ans!=1) printf("%s",s);
+	if(ans!=1) my_printf("%s",s);
 	return 0;
 }

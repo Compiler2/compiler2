@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,i,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int qj[50001];
     int qd[50001];
     int zd[50001];
     for(i=1;i<=n;i++){
-        scanf("%d%d",&qd[i],&zd[i]);
+        my_scanf("%d%d",&qd[i],&zd[i]);
     }
    int max,min,m,e;
   max=1;
@@ -38,11 +38,11 @@ int main_bench(){
       }
   }
    if(flag==1){
-       printf("%d",qd[n]);
-       printf(" %d",zd[1]);
+       my_printf("%d",qd[n]);
+       my_printf(" %d",zd[1]);
    }
    if(flag==0){
-       printf("no");
+       my_printf("no");
    }
    return 0;
 }

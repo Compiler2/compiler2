@@ -3,7 +3,7 @@
 main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct 
 	{
 		int num;
@@ -12,7 +12,7 @@ main_bench()
 	int i,j;
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].a);
+		my_scanf("%d %s",&book[i].num,book[i].a);
 	}
 	int s[26]={0};
 	for(i=0;i<=n-1;i++)
@@ -33,15 +33,15 @@ main_bench()
 			name='A'+i;
 		}
 	}
-	printf("%c\n",name);
-	printf("%d\n",max);
+	my_printf("%c\n",name);
+	my_printf("%d\n",max);
 	for(i=0;i<=n-1;i++)
 	{
 		int len=strlen(book[i].a);
 		for(j=0;j<len;j++)
 		{
 			if(book[i].a[j]==name)
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 		}
 	}
 

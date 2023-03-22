@@ -43,10 +43,10 @@ void getStudentData()
 {
 	Student temp;
 
-	scanf("%d", &studentNum);
+	my_scanf("%d", &studentNum);
 	for(int i = 0; i < studentNum; i ++)
 	{
-		scanf("%d %d %d", &temp.ID, &temp.chinese, &temp.math);
+		my_scanf("%d %d %d", &temp.ID, &temp.chinese, &temp.math);
 		temp.sum = temp.chinese + temp.math;
 		updateTopThree(temp);
 	}
@@ -56,7 +56,7 @@ void printStudentData()
 {
 	for(int i = 0; i < 3 && i < studentNum; i ++)
 	{
-		printf("%d %d\n", topThree[i].ID, topThree[i].sum);
+		my_printf("%d %d\n", topThree[i].ID, topThree[i].sum);
 	}
 }
 

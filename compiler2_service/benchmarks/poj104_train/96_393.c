@@ -6,7 +6,7 @@ int main_bench()
     char b[101];
     int c,d,e,i,u,v,w,x,y;
     int n=0;
-    scanf("%s",a);
+    my_scanf("%s",a);
     while(a[n])
     n=n+1;
     if(n>=3)
@@ -42,8 +42,8 @@ int main_bench()
             b[e]=x+'0';
         }
         b[e+1]='\0';
-        printf("%s\n",b);
-        printf("%d\n",y);
+        my_printf("%s\n",b);
+        my_printf("%d\n",y);
     }
     else
     {
@@ -59,8 +59,8 @@ int main_bench()
         }
         x=e/13;
         y=e%13;
-        printf("%d\n",x);
-        printf("%d\n",y);
+        my_printf("%d\n",x);
+        my_printf("%d\n",y);
     }
 
     return 0;

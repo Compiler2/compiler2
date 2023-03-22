@@ -4,10 +4,10 @@ int main_bench()
 {
 	char t;
 	int i,k,m,a,b;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=0;
 	m=0;
-	while(scanf(",%d",&i))
+	while(my_scanf(",%d",&i))
 	{
 		if(i>a)
 		{
@@ -22,8 +22,8 @@ int main_bench()
 
 	}
 	if(b==0)
-		printf("No");
+		my_printf("No");
 	if(b>0)
-		printf("%d",b);
+		my_printf("%d",b);
 	
 }

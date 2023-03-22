@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *shuzu=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-	  scanf("%d",&shuzu[i]);
+	  my_scanf("%d",&shuzu[i]);
 	}
-	printf("%d",shuzu[0]);
+	my_printf("%d",shuzu[0]);
 	for(i=1;i<n;i++)
 	{
 	  for(j=0;j<i;j++)
@@ -25,7 +25,7 @@ int main_bench()
 		  {
 		    if(shuzu[i]!=shuzu[j])
 			{
-			  printf(" %d",shuzu[i]);
+			  my_printf(" %d",shuzu[i]);
 			}
 		  }
 	  }

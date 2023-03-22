@@ -25,9 +25,9 @@ int main_bench()
 			{
 				for(l=0;l<=k-2;l++)
 				{
-					printf("%d,",c[l]);
+					my_printf("%d,",c[l]);
 				}
-				printf("%d\n",c[k-1]);
+				my_printf("%d\n",c[k-1]);
 				return 0;
 			}
 			i++;

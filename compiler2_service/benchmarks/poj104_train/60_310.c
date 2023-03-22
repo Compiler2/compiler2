@@ -3,7 +3,7 @@
 main_bench()
 {
  int a[10000],n,d=0,b[10000][2];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(int i=2;i<=n;i++)
                {
                 int c=0;
@@ -30,11 +30,11 @@ main_bench()
                     }             
         }
  if(e==0)
- printf("empty");
+ my_printf("empty");
  else
       {
        for(int i=1;i<=e;i++)
-       printf("%d %d\n",b[i][1],b[i][2]);
+       my_printf("%d %d\n",b[i][1],b[i][2]);
       }
  getchar();
  getchar();

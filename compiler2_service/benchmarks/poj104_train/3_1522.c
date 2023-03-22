@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int i,m=0,k,n,sz[1000],s[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		s[m]=sz[i];
 	    m++;}
     for(i=0;i<n;i++){
@@ -12,7 +12,7 @@ int main_bench(){
 			break;}
 		for(m=n-1;m>=i+1;m--){
 			if(s[m]+sz[i]==k){
-			printf("yes");
+			my_printf("yes");
 			break;
 			}
 		}
@@ -20,7 +20,7 @@ int main_bench(){
 				break;}
 	}
 	    if(i==n-1){
-	    	printf("no");
+	    	my_printf("no");
 		}
 	return 0;
 }

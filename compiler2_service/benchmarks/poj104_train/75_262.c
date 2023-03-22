@@ -6,7 +6,7 @@ int main_bench()
 	char b;
 	do
 	{
-		scanf("%d",&x[n]);
+		my_scanf("%d",&x[n]);
 		b=getchar();
 		n++;
 	}
@@ -14,12 +14,12 @@ int main_bench()
 	n=0;
     do
 	{
-		scanf("%d",&y[n]);
+		my_scanf("%d",&y[n]);
 		b=getchar();
 		n++;
 	}
 	while(b==',');
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(i=0;i<n;i++)
 	{
 		if(x[i]<min) min=x[i];
@@ -33,7 +33,7 @@ int main_bench()
 			if(x[j]<=i&&y[j]>i) p++;
 		if(p>most) most=p;
 	}
-	printf("%d\n",most);
+	my_printf("%d\n",most);
 
 
 }

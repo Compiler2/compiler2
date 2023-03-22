@@ -11,13 +11,13 @@ void change(int a[10000])
 main_bench()
 {
 	int i,j,x,y,a[10],b[10];
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	a[0]=x;b[0]=y;
 	change(a);change(b);
 	for(i=0;i<10;i++)
 	{
 		for(j=0;j<10;j++)
-		{if(a[i]==b[j]){printf("%d\n",a[i]);return 0;}
+		{if(a[i]==b[j]){my_printf("%d\n",a[i]);return 0;}
 		}
 	}
 }

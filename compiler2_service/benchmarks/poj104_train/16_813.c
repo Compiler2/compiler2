@@ -2,16 +2,16 @@
 
 int main_bench()
 {int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int s;
 if(n==0)
-{printf("0");return 0;}
+{my_printf("0");return 0;}
  
 while(n!=0)
 {
 	s=n%10;
 	n/=10;
-	printf("%d",s);
+	my_printf("%d",s);
 }
   
   return 0;

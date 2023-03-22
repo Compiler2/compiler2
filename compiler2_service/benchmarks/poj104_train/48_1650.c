@@ -4,7 +4,7 @@ main_bench()
 {
 	  int i,j,k,t,m,n,r,day,x;
 	  int a[100][100],b[100][100];
-	  scanf("%d%d",&r,&day);
+	  my_scanf("%d%d",&r,&day);
 	   m=9;n=9;
 	  for(i=0;i<m;i++)
 	  {
@@ -60,7 +60,7 @@ main_bench()
 			for(j=0;j<n;j++)
 			{
 				if(j==0)
-			printf("%d",a[i][j]);else printf(" %d",a[i][j]); }
-			printf("\n");
+			my_printf("%d",a[i][j]);else my_printf(" %d",a[i][j]); }
+			my_printf("\n");
 	  }	
 }

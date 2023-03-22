@@ -18,7 +18,7 @@ main_bench()
 {
 	int i,j,n,m,p,q,w,xiao,s;
 	int a[101][101],b[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
  for(w=0;w<n;w++)
  {
 	
@@ -26,7 +26,7 @@ main_bench()
    {b[i]=0;
     for(j=0;j<n;j++)
     {
-	 scanf("%d",&a[i][j]);
+	 my_scanf("%d",&a[i][j]);
     }
    }
 
@@ -87,7 +87,7 @@ main_bench()
 	a[j][i]=a[j+1][i];
 
 
-   }printf("%d\n",s);
+   }my_printf("%d\n",s);
 
  }
 

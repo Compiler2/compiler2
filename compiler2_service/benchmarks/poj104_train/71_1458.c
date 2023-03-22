@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i=0,j=0,k=0,m,sum=0;
 	int an[200],bn[200],cn[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;k<n;i++){
 		sum=0;
-		scanf("%d %d %d",&an[i],&bn[i],&cn[i]);
+		my_scanf("%d %d %d",&an[i],&bn[i],&cn[i]);
 		k++;
 		if(bn[i]>cn[i]){
 			m=bn[i];
@@ -28,8 +28,8 @@ int main_bench()
 				sum+=30;
 			}
 		}
-		if(sum%7==0) printf("YES\n");
-		else if(sum%7!=0) printf("NO\n");
+		if(sum%7==0) my_printf("YES\n");
+		else if(sum%7!=0) my_printf("NO\n");
 	}
 	return 0;
 }

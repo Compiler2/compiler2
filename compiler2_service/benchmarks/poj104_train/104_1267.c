@@ -6,7 +6,7 @@ int main_bench()
 	int x,y,*pt1,*pt2,number1=0,number2=0,flag=0;
 	pt1=A;
 	pt2=B;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	while(x!=0)
 	{
 		*pt1=x;
@@ -27,7 +27,7 @@ int main_bench()
 		{
 			if(*pt1==*pt2)
 			{
-				printf("%d",*pt1);
+				my_printf("%d",*pt1);
 				flag=1;
 				break;
 			}

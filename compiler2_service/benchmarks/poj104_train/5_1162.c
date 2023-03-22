@@ -5,8 +5,8 @@ int main_bench()
 	int i,k,sum=0,flag=0;
 	double m;
 	char zifu1[501],zifu2[501];
-	scanf("%lf",&m);
-	scanf("\n");
+	my_scanf("%lf",&m);
+	my_scanf("\n");
 	gets(zifu1);
 	gets(zifu2);
 	if(strlen(zifu1)==strlen(zifu2))
@@ -26,7 +26,7 @@ int main_bench()
 			}
 			else
 			{
-				printf("error");
+				my_printf("error");
 				flag=1;
 				break;
 			}
@@ -35,17 +35,17 @@ int main_bench()
 		{
 			if(1.0*sum/strlen(zifu1)>m)
 			{
-				printf("yes");
+				my_printf("yes");
 			}
 			else
 			{
-				printf("no");
+				my_printf("no");
 			}
 		}
 	}
 	else
 	{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

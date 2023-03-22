@@ -21,11 +21,11 @@ int main_bench()
 		}
 		else word[x][y++]=str[i];
 	}
-	printf("%s",word[0]);
+	my_printf("%s",word[0]);
 	for(i=1;i<=x;i++)
 		
 	
-	printf(" %s",word[i]);
+	my_printf(" %s",word[i]);
 
 }	
 

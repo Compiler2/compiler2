@@ -20,7 +20,7 @@ int main_bench()
 	int i,t;
 	int month_day_sum[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 
 	month_day_sum[2] = isLeapYear(year) ? 29 : 28;
 	
@@ -59,25 +59,25 @@ int main_bench()
 	switch (sum_mod_day)
 	{
 	case 0:
-		printf("Sun.");
+		my_printf("Sun.");
 		break;
 	case 1:
-		printf("Mon.");
+		my_printf("Mon.");
 		break;
 	case 2:
-		printf("Tue.");
+		my_printf("Tue.");
 		break;
 	case 3:
-		printf("Wed.");
+		my_printf("Wed.");
 		break;
 	case 4:
-		printf("Thu.");
+		my_printf("Thu.");
 		break;
 	case 5:
-		printf("Fri.");
+		my_printf("Fri.");
 		break;
 	case 6:
-		printf("Sat.");
+		my_printf("Sat.");
 		break;
 	default:
 		break;

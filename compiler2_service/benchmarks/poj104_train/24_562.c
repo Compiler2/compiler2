@@ -21,17 +21,17 @@ int main_bench()
 	}
 	if (b==n[0]+1)
 	{	for(i=0;i<b-1;i++)
-	printf("%c", a[i]);}
+	my_printf("%c", a[i]);}
 	else
 	{	for(i=b1+1;i<b2;i++)
-	printf("%c", a[i]);}
-	printf("\n");
+	my_printf("%c", a[i]);}
+	my_printf("\n");
 	if(s==n[0]+1)
 	{   for(i=0;i<s-1;i++)
-	printf("%c", a[i]);}
+	my_printf("%c", a[i]);}
 	else 
 	{	for(i=s1+1;i<s2;i++)
-	printf("%c", a[i]);}
-	printf("\n");
+	my_printf("%c", a[i]);}
+	my_printf("\n");
 	return 0;
 }

@@ -39,7 +39,7 @@ int main_bench()
 		}
 	}
 	s3[len-len1+len2]='\0';
-	printf("%s",s3);
+	my_printf("%s",s3);
 	return 0;
 }
 

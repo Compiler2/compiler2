@@ -15,11 +15,11 @@ int main_bench()
 				max=p+i;
         }
 		for(p=s;p<=max;p++)
-			printf("%c",*p);
-		printf("%c%c%c",s[l-3],s[l-2],s[l-1]);
+			my_printf("%c",*p);
+		my_printf("%c%c%c",s[l-3],s[l-2],s[l-1]);
 		for(p=max+1;p<&s[l-4];p++)
-			printf("%c",*p);
-		printf("\n");
+			my_printf("%c",*p);
+		my_printf("\n");
 	}
 return 0;
 }

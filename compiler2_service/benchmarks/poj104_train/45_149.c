@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s1[255],s2[255];
 	int i,j,a,b,k;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	a=strlen(s1);
 	b=strlen(s2);
 	for(i=0;i<=(b-a);i++){
@@ -12,7 +12,7 @@ int main_bench()
 			if(s1[k]==s2[j]){
 				k++;}
 		}
-		if(k==a){printf("%d",i);
+		if(k==a){my_printf("%d",i);
 break;
 		}
 	}

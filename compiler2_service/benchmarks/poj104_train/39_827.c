@@ -12,11 +12,11 @@ struct node
 }stu[100];
 int main_bench(){
 	int n,sum=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].fin,&stu[i].bj,&stu[i].gb,&stu[i].west,&stu[i].essay);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].fin,&stu[i].bj,&stu[i].gb,&stu[i].west,&stu[i].essay);
 	}
 	int a[100];
 	for(i=0;i<n;i++)
@@ -40,9 +40,9 @@ int main_bench(){
 	{
 		if(a[i]==max)
 		{
-			printf("%s\n%d\n",stu[i].name,a[i]);
+			my_printf("%s\n%d\n",stu[i].name,a[i]);
 			break;
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

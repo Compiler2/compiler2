@@ -3,10 +3,10 @@
 main_bench()
 {
     int m,n,i,j;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(int i=1;i<=m;i++)
    {
-         scanf("%d",&n);
+         my_scanf("%d",&n);
          int a[100],b[100];
          double d[100];
          a[0]=2;b[0]=1;d[0]=(double)a[0]/b[0];
@@ -21,6 +21,6 @@ main_bench()
         {
               c=c+d[j];
         }
-        printf("%.3lf\n",c);
+        my_printf("%.3lf\n",c);
    }
 }

@@ -15,6 +15,6 @@ int main_bench()
 	l=0;
 	while (a[l]==0&&l<len-1) l++;
 	for (i=l;i<len;i++)
-		printf("%d",a[i]);
-	printf("\n%d\n",k);
+		my_printf("%d",a[i]);
+	my_printf("\n%d\n",k);
 }

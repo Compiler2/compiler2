@@ -22,13 +22,13 @@ int huiwen(int n)
 int main_bench()
 {
 	int m,n,i,a[100],k=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for (i=m;i<=n;i++)
 		if ((su(i)==0)&&(huiwen(i)==0)) a[k++]=i;
-	if (k==0) printf("no\n");
+	if (k==0) my_printf("no\n");
 	else 
 	{
-		for (i=0;i<k-1;i++) printf("%d,",a[i]);
-		printf("%d\n",a[k-1]);
+		for (i=0;i<k-1;i++) my_printf("%d,",a[i]);
+		my_printf("%d\n",a[k-1]);
 	}
 }

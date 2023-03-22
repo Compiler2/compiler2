@@ -6,11 +6,11 @@ int main_bench()
  int m,i,j,k,num[10000],max=0,t=0;
  char a[10000][26];
  char c[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(i=0;i<m;i++)
  {
-  scanf("%d",&num[i]);
-  scanf("%s",&a[i]);                
+  my_scanf("%d",&num[i]);
+  my_scanf("%s",&a[i]);                
  }
  for(i=0;i<m;i++)
  {
@@ -31,15 +31,15 @@ int main_bench()
    t=i;
   }
  }
- printf("%c\n",c[t]);
- printf("%d\n",max);
+ my_printf("%c\n",c[t]);
+ my_printf("%d\n",max);
  for(i=0;i<m;i++)
  {
   for(j=0;j<26;j++)
   {
     if(a[i][j]==c[t])
     {
-     printf("%d\n",num[i]);
+     my_printf("%d\n",num[i]);
      break;                 
     }                 
   }                

@@ -9,8 +9,8 @@ int main_bench()
 		if((ch == ' '||ch=='\n') && len)
 		{
 			if(tag)
-				printf(",");
-			printf("%d", len);
+				my_printf(",");
+			my_printf("%d", len);
 			len = 0;
 			tag=1;
 			if(ch=='\n')
@@ -19,6 +19,6 @@ int main_bench()
 		else if(ch!= ' ')
 			len++;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

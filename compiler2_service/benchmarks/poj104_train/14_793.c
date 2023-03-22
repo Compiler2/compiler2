@@ -12,10 +12,10 @@ struct student{
 
 int main_bench(){
 	int n,i,j,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
          for(i=0;i<n;i++){
-		scanf("%d %d %d",&stu[i].No,&stu[i].Chinese,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].No,&stu[i].Chinese,&stu[i].math);
 		stu[i].score=stu[i].Chinese+stu[i].math;
 	}
 	
@@ -32,7 +32,7 @@ int main_bench(){
 		}
 	}
 	for(i=n-1;i>n-4;i--){
-		printf("%d %d\n",stu[i].No,stu[i].score);
+		my_printf("%d %d\n",stu[i].No,stu[i].score);
 	}
 	
       

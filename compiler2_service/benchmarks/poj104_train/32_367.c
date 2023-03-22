@@ -4,16 +4,16 @@ int main_bench()
 {
 	char a[100],b[100],c[100],d[100],e[100];
 	int n,j,p,q,k,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=1;j<=n;j++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		p=strlen(a);
 		for(i=0;i<p;i++)
 		{
 			c[p-1-i]=a[i];
 		}
-		scanf("%s",b);
+		my_scanf("%s",b);
 		q=strlen(b);
 		for(i=0;i<q;i++)
 		{
@@ -50,9 +50,9 @@ int main_bench()
 		}
 		for(k=i;k>=0;k--)
 		{
-			printf("%c",e[k]);
+			my_printf("%c",e[k]);
 		}
-		printf("\n");
+		my_printf("\n");
     }
 	return 0;
 }

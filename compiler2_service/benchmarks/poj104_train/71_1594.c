@@ -33,18 +33,18 @@ int DiJiTian(int year,int m1,int m2){
 int main_bench()
 {
 	int n,i,year[1000],m1[1000],m2[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&year[i],&m1[i],&m2[i]);
+		my_scanf("%d%d%d",&year[i],&m1[i],&m2[i]);
 	}
 	for(i=0;i<n;i++){
 		if(m1[i]<m2[i]){
-			if(DiJiTian(year[i],m1[i],m2[i])) printf("YES\n");
-			else printf("NO\n");
+			if(DiJiTian(year[i],m1[i],m2[i])) my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 		else{
-			if(DiJiTian(year[i],m2[i],m1[i])) printf("YES\n");
-			else printf("NO\n");
+			if(DiJiTian(year[i],m2[i],m1[i])) my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 	}
 	return 0;

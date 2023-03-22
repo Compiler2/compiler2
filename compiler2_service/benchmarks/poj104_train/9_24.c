@@ -10,10 +10,10 @@ int main_bench()
 		char id[16];
 		int a;
 	}a[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s %d",a[i].id,&a[i].a);
+		my_scanf("%s %d",a[i].id,&a[i].a);
 	}
 	for(int j=n-1;j>0;j--)
 	{
@@ -46,7 +46,7 @@ int main_bench()
 	}
 	for(int f=0;f<n;f++)
 	{
-		printf("%s\n",a[f].id);
+		my_printf("%s\n",a[f].id);
 	}
 	return 0;
 }

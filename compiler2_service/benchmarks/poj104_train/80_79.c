@@ -15,7 +15,7 @@ return s;
 int main_bench()
 {
 int y1,y2,m1,m2,d1,d2;
-scanf("%d %d %d",&y1,&m1,&d1);
-scanf("%d %d %d",&y2,&m2,&d2);
-printf("%ld",sum(y2,m2,d2)-sum(y1,m1,d1));
+my_scanf("%d %d %d",&y1,&m1,&d1);
+my_scanf("%d %d %d",&y2,&m2,&d2);
+my_printf("%ld",sum(y2,m2,d2)-sum(y1,m1,d1));
 }

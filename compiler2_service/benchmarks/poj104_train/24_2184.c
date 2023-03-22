@@ -29,11 +29,11 @@ int main_bench()
 			min=i;
 	}
 	for(i=start[max];i<=endd[max];i++)
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	for(i=start[min];i<=endd[min];i++)
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	
 	return 0;
 }

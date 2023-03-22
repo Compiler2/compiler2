@@ -7,13 +7,13 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		if((c=getchar())=='\n')
 			break;
 	}
 	for(i=0;;i++)
 	{
-		scanf("%d",&y[i]);
+		my_scanf("%d",&y[i]);
 		if((c=getchar())=='\n')
 		{
 			n=(i+1);
@@ -31,6 +31,6 @@ int main_bench()
 			max=s;
 			s=0;
 	}
-	printf("%d %d\n",n,max);
+	my_printf("%d %d\n",n,max);
 	return 0;
 }

@@ -5,10 +5,10 @@ int main_bench()
 	int i,j,k,m,p,num=0;
 	char x[100][100]={0};
 	int y[100][100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<=k-1;i++)
-	scanf("%s",x[i]);
-	scanf("%d",&m);
+	my_scanf("%s",x[i]);
+	my_scanf("%d",&m);
 	for(p=m;p>1;p--)
 	{
 		for(i=0;i<=k-1;i++)
@@ -97,6 +97,6 @@ int main_bench()
 				num++;
 		}
 	}
-	printf("%d\n",num);
+	my_printf("%d\n",num);
 	return 0;
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
  int m;
- scanf("%d\n",&m);
+ my_scanf("%d\n",&m);
  int i;
  int k;
  for(i=0;i<m;i++)
  {
   int n;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   double a[n],b[n];
   double sum;
   if(n>=2){
@@ -23,10 +23,10 @@ int main_bench()
    b[k]=b[k-1]+b[k-2];
    sum=sum+(a[k]/b[k]);
  }
-  printf("%.3lf\n",sum+0.5);
+  my_printf("%.3lf\n",sum+0.5);
 }
  if(n==1)
- {printf("%.3lf\n",2.000);}
+ {my_printf("%.3lf\n",2.000);}
  }
 return 0;
 }

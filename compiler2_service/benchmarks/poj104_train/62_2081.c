@@ -7,11 +7,11 @@ int main_bench()
 	gets(string);
    for(i=0;c=string[i]!='\0';i++)
    if(c=string[i]!=' ')
-   printf("%c",string[i]);
+   my_printf("%c",string[i]);
    else
    if(c=string[i-1]!=' ')
-   printf("%c",string[i]);
+   my_printf("%c",string[i]);
    else continue;
-   printf("%c",'\n');
+   my_printf("%c",'\n');
 	return 0;
 }

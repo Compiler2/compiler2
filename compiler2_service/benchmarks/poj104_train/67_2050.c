@@ -5,19 +5,19 @@ main_bench()
  int n,i;
  float a,b,c;
  float x,y,z;
- scanf("%d",&n);
- scanf("%f%f",&x,&y);
+ my_scanf("%d",&n);
+ my_scanf("%f%f",&x,&y);
  z=y/x;
  for(i=0;i<n-1;i++)
  {
-  scanf("%f%f",&a,&b);
+  my_scanf("%f%f",&a,&b);
   c=b/a;
   if(20*(c-z)>1)
-  printf("better\n");
+  my_printf("better\n");
   else
   {if(20*(z-c)>1)
-  printf("worse\n");
+  my_printf("worse\n");
   else
-  printf("same\n");}
+  my_printf("same\n");}
  }
  }

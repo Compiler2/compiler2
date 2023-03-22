@@ -5,9 +5,9 @@ int main_bench(){
 int s[5][5];
 int i,m,n,c,y,z,a;
 for(i=0;i<=4;i++){
-scanf("%d %d %d %d %d",&s[i][0],&s[i][1],&s[i][2],&s[i][3],&s[i][4]);
+my_scanf("%d %d %d %d %d",&s[i][0],&s[i][1],&s[i][2],&s[i][3],&s[i][4]);
 }
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 c=h(n,m);
 if(c==1){
 for(y=0;y<=4;y++){
@@ -16,10 +16,10 @@ s[n][y]=s[m][y];
 s[m][y]=z;
 }
 for(a=0;a<=4;a++){
-printf("%d %d %d %d %d\n",s[a][0],s[a][1],s[a][2],s[a][3],s[a][4]);
+my_printf("%d %d %d %d %d\n",s[a][0],s[a][1],s[a][2],s[a][3],s[a][4]);
 }
 }else{
-printf("error");
+my_printf("error");
 }
 return 0;
 }

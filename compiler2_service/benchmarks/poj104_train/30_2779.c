@@ -5,7 +5,7 @@
 int main_bench()
 {
 	int n,i=1,sum1=0,sum2=0,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 		if(n<=9)
 		{
@@ -16,7 +16,7 @@ int main_bench()
 				sum1 = sum1 + i*i;
 			}
 			}
-			printf("%d",sum1);
+			my_printf("%d",sum1);
 		
 		}
 		else
@@ -41,7 +41,7 @@ int main_bench()
 			}
 			}
 			sum = sum1 + sum2;
-			printf("%d",sum);
+			my_printf("%d",sum);
 		}
 		return 0;
 }

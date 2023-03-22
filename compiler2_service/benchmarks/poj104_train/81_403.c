@@ -9,9 +9,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{   
 		p=array[i];
-	    scanf("%d %d %d %d %d\n",p,p+1,p+2,p+3,p+4);
+	    my_scanf("%d %d %d %d %d\n",p,p+1,p+2,p+3,p+4);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	z=panduan(n,m);
 	if(z==1)
 	{
@@ -19,12 +19,12 @@ int main_bench()
 		for(i=0;i<5;i++)
 		{   
 		p=array[i];
-	    printf("%d %d %d %d %d\n",*p,*(p+1),*(p+2),*(p+3),*(p+4));
+	    my_printf("%d %d %d %d %d\n",*p,*(p+1),*(p+2),*(p+3),*(p+4));
 		}
 	}
 	if(z==0)
 	{
-		printf("error\n");
+		my_printf("error\n");
 	}
 }
 

@@ -8,7 +8,7 @@ int main_bench()
 	int min,max;
 	for(i=0;i<200;i++)
 	{
-		scanf("%s%c",a[i],&temp);
+		my_scanf("%s%c",a[i],&temp);
 		l[i]=strlen(a[i]);
 		if(temp=='\n') {n=i+1;break;}
 	}
@@ -18,6 +18,6 @@ int main_bench()
 		if(l[i]>l[max]) max=i;
 		if(l[i]<l[min]) min=i;
 	}
-	printf("%s\n",a[max]);
-	printf("%s\n",a[min]);
+	my_printf("%s\n",a[max]);
+	my_printf("%s\n",a[min]);
 }

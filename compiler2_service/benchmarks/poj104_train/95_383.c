@@ -15,16 +15,16 @@ int main_bench()
 			b[i]-='a'-'A';
 		if(a[i]<b[i])
 		{
-			printf("<\n");
+			my_printf("<\n");
 			break;
 		}
 		else if(a[i]>b[i])
 		{
-			printf(">\n");
+			my_printf(">\n");
 			break;
 		}
 	}
-	if(!a[i]&&!b[i])printf("=\n");
+	if(!a[i]&&!b[i])my_printf("=\n");
 	return 0;
 }
 

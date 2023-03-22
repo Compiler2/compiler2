@@ -12,14 +12,14 @@ int paper,sum;
 int main_bench()
 {
 int n,i;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
 student[i].sum=0;
 }
 for(i=0;i<n;i++)
 {
- scanf("%s %d %d %c %c %d",student[i].name,&student[i].grade,&student[i].point,&student[i].job,&student[i].home,&student[i].paper);
+ my_scanf("%s %d %d %c %c %d",student[i].name,&student[i].grade,&student[i].point,&student[i].job,&student[i].home,&student[i].paper);
  if(student[i].grade>80&&student[i].paper>0)
       student[i].sum+=8000;
  if(student[i].grade>85&&student[i].point>80)
@@ -42,7 +42,7 @@ for(i=0;i<n;i++)
 { 
 if(max==student[i].sum)
 {
-printf("%s\n%d\n",student[i].name,student[i].sum);
+my_printf("%s\n%d\n",student[i].name,student[i].sum);
 break;
 }
 }
@@ -51,5 +51,5 @@ for(i=0;i<n;i++)
 {
  SUM+=student[i].sum;
 }
-printf("%d",SUM);
+my_printf("%d",SUM);
 }

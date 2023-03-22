@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char pd[n][256];
     char A,T,C,G;
     for (int i=0;i<n;i++){
-        scanf("%s",(pd[i]));
+        my_scanf("%s",(pd[i]));
         for(int m=0;pd[i][m]!='\0';m++){
             if (pd[i][m]=='A'){
              pd[i][m]='T';  
@@ -20,7 +20,7 @@ int main_bench(){
         }
     }
     for (int i=0;i<n;i++){
-    printf("%s\n",pd[i]);
+    my_printf("%s\n",pd[i]);
     }
     return 0;
 }

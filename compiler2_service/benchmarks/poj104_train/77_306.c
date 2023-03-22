@@ -10,7 +10,7 @@ int main_bench()
 	int n,m;
 	int i,j,k;
 	struct children pig[100];
-	scanf("%s",line);
+	my_scanf("%s",line);
 	n=strlen(line);
 	for(i=1;i<n-1;i++)
 	{
@@ -33,7 +33,7 @@ int main_bench()
 		{
 			if(pig[j].sex=='('&&pig[j+1].sex==')')
 			{
-				printf("%d %d\n",pig[j].num,pig[j+1].num);
+				my_printf("%d %d\n",pig[j].num,pig[j+1].num);
 				k=j;
 				for(j;pig[m-3].num!=n-1;j++)
 				{
@@ -44,6 +44,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",0,n-1);
+	my_printf("%d %d\n",0,n-1);
 	return 0;
 }

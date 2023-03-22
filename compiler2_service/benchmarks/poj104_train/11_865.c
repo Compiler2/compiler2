@@ -8,7 +8,7 @@ int run(int x)
 int main_bench()
 {
 	int y,m,d,x;
-    scanf("%d %d %d",&y,&m,&d);
+    my_scanf("%d %d %d",&y,&m,&d);
 		if(run(y))
 		{
 			switch(m)
@@ -44,7 +44,7 @@ int main_bench()
 	case 12:x=334+d;break;
 		}
 		}
-		printf("%d",x);
+		my_printf("%d",x);
 
 
 

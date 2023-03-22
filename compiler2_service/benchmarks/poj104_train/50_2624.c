@@ -4,7 +4,7 @@ int main_bench()
 {
 	int day,mon[12],i=0,k;
 
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 
 	if((13+day+1)%7==0)
 	{mon[i]=1;
@@ -56,10 +56,10 @@ int main_bench()
 
 	k=i;
 
-	printf("%d",mon[0]);
+	my_printf("%d",mon[0]);
 
 	for(i=1;i<k;i++)
-		printf("\n%d",mon[i]);
+		my_printf("\n%d",mon[i]);
 
 	return 0;
 }

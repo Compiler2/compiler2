@@ -8,10 +8,10 @@ int main_bench()
 	char zfc[2][500];
     int len;
 	int count=0;
-	scanf("%lf",&m);
+	my_scanf("%lf",&m);
 	for(int i=0;i<2;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	len=strlen(zfc[0]);
 	for(int j=0;j<len;j++)
@@ -29,20 +29,20 @@ int main_bench()
 	xsd=(double)count/len;
 	if(tag==0)
 	{
-            printf("error");
+            my_printf("error");
 	}
 	else if(strlen(zfc[0])!=strlen(zfc[1]))
 	{
-		printf("error");
+		my_printf("error");
 	}
 	 
     else if(xsd>m)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else if(xsd<=m)
 	{
-		printf("no");
+		my_printf("no");
 	}
     
 	return 0;

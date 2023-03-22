@@ -3,11 +3,11 @@
 int main_bench()
 {
    int i,n,k,j;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    char s[256];
    for(i=1;i<n+1;i++)
    {
-	   scanf("%s",s);
+	   my_scanf("%s",s);
        strlen(s);
        k=strlen(s);
        char ss[256];
@@ -31,7 +31,7 @@ int main_bench()
 		   }
 	   }
 	   ss[j]='\0';
-	   printf("%s\n",ss);
+	   my_printf("%s\n",ss);
    }
    return 0;
 }

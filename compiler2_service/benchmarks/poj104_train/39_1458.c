@@ -4,10 +4,10 @@ int main_bench()
 {
 	int max,n,i,g=0,sum,qimo,banji,lunwen,zong[200];
 	char name[200][20],ganbu,xibu;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",name[i],&qimo,&banji,&ganbu,&xibu,&lunwen);
+		my_scanf("%s %d %d %c %c %d",name[i],&qimo,&banji,&ganbu,&xibu,&lunwen);
 		zong[i]=0;
 		if(qimo>80&&lunwen>=1)
 				zong[i]=zong[i]+8000;
@@ -33,6 +33,6 @@ g=i;
 	sum=sum+zong[i];
 }
 for(i=0;i<strlen(name[g]);i++)
-	printf("%c",name[g][i]);
-printf("\n%d\n%d",zong[g],sum);
+	my_printf("%c",name[g][i]);
+my_printf("\n%d\n%d",zong[g],sum);
 }

@@ -17,11 +17,11 @@ int main_bench()
 			s2[j]+=32;
 	}
 	if(strcmp(s1,s2)>0)
-		printf(">");
+		my_printf(">");
 	else if(strcmp(s1,s2)<0)
-		printf("<");
+		my_printf("<");
 	else
-		printf("=");
-	scanf("%d",&j);
+		my_printf("=");
+	my_scanf("%d",&j);
 }
 

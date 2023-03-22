@@ -26,10 +26,10 @@ int main_bench()
                                   tword[count]='\0';
                                   if(strcmp(tword, aim) == 0)
                                   {
-                                                   printf("%s ", change);
+                                                   my_printf("%s ", change);
                                                    }
                                   else
-                                      printf("%s ", tword);
+                                      my_printf("%s ", tword);
                                   count = 0;
                                   tword[count]='\0';
                                   }
@@ -37,9 +37,9 @@ int main_bench()
     tword[count]='\0';
     if(strcmp(tword, aim) == 0)
     {
-                     printf("%s", change);
+                     my_printf("%s", change);
                      }
     else
-        printf("%s", tword);
+        my_printf("%s", tword);
     return 0;
 }

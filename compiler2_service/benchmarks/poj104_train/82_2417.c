@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,sz[100],sz2[100],sz3[100]={0},i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
    if(n>1){
 	for(i=0;i<n;i++){
-		scanf("%d%d",&sz[i],&sz2[i]);
+		my_scanf("%d%d",&sz[i],&sz2[i]);
 	}
 	int k=0,j=0;
 	for(i=0;i<n;i++){
@@ -24,11 +24,11 @@ int main_bench()
 			max=sz3[i];
 	}
 	    
-	printf("%d",max);}
-if(n==1){scanf("%d%d",&sz[0],&sz2[0]);
+	my_printf("%d",max);}
+if(n==1){my_scanf("%d%d",&sz[0],&sz2[0]);
            if((sz[0]>=90&&sz[0]<=140)&&(sz2[0]>=60&&sz2[0]<=90))
-		printf("1");
-	    else printf("0");
+		my_printf("1");
+	    else my_printf("0");
 	}
 
 

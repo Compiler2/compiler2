@@ -5,18 +5,18 @@ main_bench()
     for(int j=0;j<6;j++)
     {
             char a[10];
-    scanf("%s",a);
+    my_scanf("%s",a);
     if(a[0]=='-')
     {
       int k=strlen(a),p=0;
-      printf("-");
+      my_printf("-");
       for (int i=k-1;i>=1;i--)
       {
           if (a[i]!='0')
           {
              p++;
           }
-          if(p!=0) printf("%c",a[i]); 
+          if(p!=0) my_printf("%c",a[i]); 
       } 
     }
     else
@@ -28,9 +28,9 @@ main_bench()
           {
              p++;
           }
-          if(p!=0) printf("%c",a[i]); 
+          if(p!=0) my_printf("%c",a[i]); 
       }
     }
-    printf("\n");
+    my_printf("\n");
 }
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
 	char num[5];
 	int i,len;
-	scanf("%s",num);
+	my_scanf("%s",num);
 
 	len=strlen(num);
 	for(i=len-1;i>=0;i--){
-		printf("%c",num[i]);
+		my_printf("%c",num[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

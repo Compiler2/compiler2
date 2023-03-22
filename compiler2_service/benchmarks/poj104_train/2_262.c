@@ -9,10 +9,10 @@ int main_bench()
        int num;
        char man[26];
     }a[999];
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=0;i<m;i++)
     {
-          scanf("%d %s",&a[i].num,a[i].man);
+          my_scanf("%d %s",&a[i].num,a[i].man);
      }
      i=0;
      for(i=0;i<m;i++)
@@ -35,13 +35,13 @@ int main_bench()
                t=i;
            }
       }
-      printf("%c\n%d\n",b[t],max);
+      my_printf("%c\n%d\n",b[t],max);
       for(j=0;j<m;j++)
       {
             for(k=0;k<26;k++)
             {
                    if(a[j].man[k]==b[t])
-                   printf("%d\n",a[j].num);
+                   my_printf("%d\n",a[j].num);
              }
       }
       

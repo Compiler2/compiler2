@@ -18,12 +18,12 @@ int main_bench()
   char c;
   char a[255]={'\0'};
   int i,n,j,k;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(j=1;j<=n;j++)
   {
   for(i=0;i<255;i++)
   a[i]='\0';
-  scanf("%s",a);
+  my_scanf("%s",a);
   for(i=254;i>=0;i--)
      {
          if(a[i]!='\0')
@@ -32,10 +32,10 @@ int main_bench()
      }
   for(i=0;i<k;i++)
      {c=fy(a[i]);
-      printf("%c",c);
+      my_printf("%c",c);
       }
      c=fy(a[k]);
-     printf("%c\n",c);
+     my_printf("%c\n",c);
   }	
   return 0;
 }

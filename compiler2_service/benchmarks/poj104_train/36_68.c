@@ -5,7 +5,7 @@ int main_bench()
 	int i,p,a;
 	char c1[100],c2[100];
 	for(i=1;i<100;i++) c1[i]=c2[i]=0;
-	scanf("%s %s",c1,c2);
+	my_scanf("%s %s",c1,c2);
 	i=0;
 	p=0;
 	while(c1[i]!=0)
@@ -29,8 +29,8 @@ int main_bench()
 	}
 	p=0;
 	for(i=0;i<100;i++) if(c1[i]!=0) p++;
-	if(p==0) printf("YES");
-    else printf("NO");
+	if(p==0) my_printf("YES");
+    else my_printf("NO");
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

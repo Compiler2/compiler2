@@ -14,12 +14,12 @@ int main_bench()
 	};
 	struct student a[1000];
 	int n, i, max, maxnum, sum;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++)
 	{
 		a[i].money = 0;
-		scanf("%s", a[i].name);
-		scanf("%d%d%s%s%d", &a[i].qimo, &a[i].banji, a[i].isGanbu, a[i].isWest, &a[i].paper);
+		my_scanf("%s", a[i].name);
+		my_scanf("%d%d%s%s%d", &a[i].qimo, &a[i].banji, a[i].isGanbu, a[i].isWest, &a[i].paper);
 		if(a[i].qimo > 80 && a[i].paper > 0)
 			a[i].money += 8000;
 		if(a[i].qimo > 85 && a[i].banji > 80)
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	for(i = 0; i < n; i++)
 		sum += a[i].money;
-	printf("%s\n",a[maxnum].name);
-	printf("%d\n%d", max, sum);
+	my_printf("%s\n",a[maxnum].name);
+	my_printf("%d\n%d", max, sum);
 	return 0;
 }

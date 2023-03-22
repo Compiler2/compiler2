@@ -50,6 +50,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",s);
+	my_printf("%s\n",s);
     return 0;
 }

@@ -14,8 +14,8 @@ float t;
 
 while(1)
 {
-scanf("%d",&st[i].a);
-scanf("%c",&st[i].b);
+my_scanf("%d",&st[i].a);
+my_scanf("%c",&st[i].b);
 if(st[i].b!=',') break;i++;
 }
 s=i+1;
@@ -31,11 +31,11 @@ for(i=0;i<s;i++)
 		while(st[i].a==st[0].a) i++;
 
 		if(s==1||i>=s) 
-		  printf("No");
+		  my_printf("No");
 		
 	
 		else 
-		 printf("%d",st[i].a);
+		 my_printf("%d",st[i].a);
 
 		
 }

@@ -6,10 +6,10 @@ char swap(char str[100])
     n=strlen(str);
     for(i=n-1;i>=0;i--)
     if(str[i]==' ') break;
-    for(j=i+1;j<n;j++) printf("%c",str[j]);
+    for(j=i+1;j<n;j++) my_printf("%c",str[j]);
     if(i>0)
     {
-    printf(" ");
+    my_printf(" ");
     str[i]='\0';
     swap(str);
     }

@@ -14,8 +14,8 @@ int main_bench()
 		if(*p==' ')
 		{
 			for(f=p+1;f<q;f++)
-			{printf("%c",*f);}
-			printf(" ");
+			{my_printf("%c",*f);}
+			my_printf(" ");
 			q=p;
 		}
 	}
@@ -23,7 +23,7 @@ int main_bench()
 	for(p=s;;p++)
 	{
 		if(*p!=' '&&*p!='\0')
-		printf("%c",*p);
+		my_printf("%c",*p);
 		else
 		break;
 	}

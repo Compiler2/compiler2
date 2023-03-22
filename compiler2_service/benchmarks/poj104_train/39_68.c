@@ -15,9 +15,9 @@ int main_bench()
 	struct student *p;
 	int n,sum=0,t,s=0,d,i;
 	char nam[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (  p=stu;p<stu+ n;p++)
-		scanf("%s %d %d %c %c %d", &p->name,&p->score1,&p->score2,&p->moni,&p->west,&p->comp);
+		my_scanf("%s %d %d %c %c %d", &p->name,&p->score1,&p->score2,&p->moni,&p->west,&p->comp);
 	p=stu;
 	for (p=stu;p<stu+n;p++)
 	{
@@ -45,6 +45,6 @@ int main_bench()
 	}
 	puts(nam);
  
-	printf("%d\n%d",s,sum); 
+	my_printf("%d\n%d",s,sum); 
 
 }

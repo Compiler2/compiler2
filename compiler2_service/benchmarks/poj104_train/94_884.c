@@ -6,10 +6,10 @@ int main_bench()
    int b=0;
    int a[500];
    int tmp;
-   scanf("%d\n",&N);
+   my_scanf("%d\n",&N);
    for(i=0;i<N;i++)
    {
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
    if(a[i]%2!=0)
         {
            a[b]=a[i];
@@ -29,9 +29,9 @@ int main_bench()
           } 
     for(i=0;i<b;i++)                
     {
-         printf("%d",a[i]);
+         my_printf("%d",a[i]);
          if(i<b-1)
-         printf(",");         }   
+         my_printf(",");         }   
     return 0;
     
 }

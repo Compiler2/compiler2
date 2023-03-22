@@ -20,7 +20,7 @@ int main_bench()
 
 	*(pf+len)='\0';
 
-	printf("%s",f);
+	my_printf("%s",f);
 
 
 

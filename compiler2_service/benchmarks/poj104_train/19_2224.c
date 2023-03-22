@@ -6,8 +6,8 @@ int main_bench(){
     int t[100],n[100];
     char u,w;
     gets(c);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     p=strlen(a);
     q=strlen(b);
     r=strlen(c);
@@ -28,7 +28,7 @@ int main_bench(){
                            }
                            }
     if(k==r){
-             printf("%s",c);
+             my_printf("%s",c);
              }
     else {
          for(k=0;k<j;k++){
@@ -47,45 +47,45 @@ int main_bench(){
                     }
                     }
           if(z==j){
-                   printf("%s",c);
+                   my_printf("%s",c);
                    }
           else {
                 m=n[0];
                 if (m==0){
                           for(i=0;i<h-1;i++){
                                            for(k=0;k<q;k++){
-                                                              printf("%c",b[k]);
+                                                              my_printf("%c",b[k]);
                                                             }
                                            v=n[i+1];
                                            for(k=p+n[i];k<v;k++){
-                                                                 printf("%c",c[k]);
+                                                                 my_printf("%c",c[k]);
                                                                  }
                                                                  }
                           for(i=0;i<q;i++){
-                                            printf("%c",b[i]);
+                                            my_printf("%c",b[i]);
                                             }
                           for(i=p+n[h-1];i<r;i++){
-                                                 printf("%c",c[i]);
+                                                 my_printf("%c",c[i]);
                                                  }
                                                  }
                   else {
                          for(i=0;i<n[0];i++){
-                                          printf("%c",c[i]);
+                                          my_printf("%c",c[i]);
                                           }
                          for(i=0;i<h-1;i++){
                                            for(k=0;k<q;k++){
-                                                              printf("%c",b[k]);
+                                                              my_printf("%c",b[k]);
                                                             }
                                            v=n[i+1];
                                            for(k=p+n[i];k<v;k++){
-                                                                 printf("%c",c[k]);
+                                                                 my_printf("%c",c[k]);
                                                                  }
                                                                  }
                           for(i=0;i<q;i++){
-                                            printf("%c",b[i]);
+                                            my_printf("%c",b[i]);
                                             }
                           for(i=p+n[h-1];i<r;i++){
-                                                 printf("%c",c[i]);
+                                                 my_printf("%c",c[i]);
                                                  }
                                                  }
                                                  }

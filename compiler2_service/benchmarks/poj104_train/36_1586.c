@@ -6,13 +6,13 @@ int main_bench()
 	int i,j,k;
 	char a[100]={0};
 	char b[100]={0};
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int c[100]={0};
 	int sum=0;
 
 	if(strlen(a)!=strlen(b))
-		{printf("NO");
+		{my_printf("NO");
 	return 0;}
 	else{
 
@@ -27,9 +27,9 @@ int main_bench()
 		sum=sum+c[i];
 	
 	if(sum==strlen(b))
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 
 
 

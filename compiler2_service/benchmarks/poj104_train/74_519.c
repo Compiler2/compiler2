@@ -7,7 +7,7 @@ int main_bench()
 	char pp[30]={"\0"};
     int f(int m);
    
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
   	for(i=m;i<=n;i++)
   {
 	  if(f(i)==1)
@@ -41,11 +41,11 @@ int main_bench()
   }
 
    if(j==0)
-    printf("no");
+    my_printf("no");
 else{
   for(i=0;i<j-1;i++)
-	  printf("%d,",b[i]);
-  printf("%d",b[j-1]);
+	  my_printf("%d,",b[i]);
+  my_printf("%d",b[j-1]);
 }
 
 

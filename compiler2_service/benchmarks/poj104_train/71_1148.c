@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n, y, year, month1, month2, i, j, m;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (j=0; j<n; j++){
 		int total1=0, total2 =0;
-		scanf("%d%d%d", &year, &month1, &month2);
+		my_scanf("%d%d%d", &year, &month1, &month2);
 		     for( i=1; i<month1; i++)
 			 {
 		         if ( i ==1 || i==3 || i==5 || i==7 || i==8 || i==10 || i==12)
@@ -50,10 +50,10 @@ int main_bench()
 			 }
 			 y=total1-total2;
 	         if (y%7==0){
-		         printf ("YES\n");
+		         my_printf ("YES\n");
 			 }
 		     else {
-		     printf ("NO\n");
+		     my_printf ("NO\n");
 			 }
 	}
 	return 0;

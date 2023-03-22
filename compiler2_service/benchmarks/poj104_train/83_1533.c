@@ -11,15 +11,15 @@ int main_bench()
 	GPA=0;
 	sum=0;
 	pts=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%f", &a[j]);
+		my_scanf("%f", &a[j]);
 		pts+=a[j];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &b[i]);
+		my_scanf("%d", &b[i]);
 		switch(b[i])
 		{
 		case 60:
@@ -153,6 +153,6 @@ default:
 		sum+=d[i];
 	}
 	GPA=sum/pts;
-	printf("%.2f", GPA);
+	my_printf("%.2f", GPA);
 	return 0;
 }

@@ -19,7 +19,7 @@ int set(char s[50],char w[50])
              if  (p[j]==s[j]) sum++;
              
              if(sum==n1)
-             {printf("%d\n",i); i=n2-n1;}
+             {my_printf("%d\n",i); i=n2-n1;}
          }
     }
 }
@@ -29,7 +29,7 @@ main_bench()
       char s[50],w[50];
       int n,m,i;
       
-      scanf("%s%s",s,w);
+      my_scanf("%s%s",s,w);
       set(s,w);
 
 }

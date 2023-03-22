@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,x[500],s,t,y[500],k,m;
     k=0;
-    scanf("%d ",&n);
+    my_scanf("%d ",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&x[i]);
+        my_scanf("%d",&x[i]);
         s=x[i]%2;
         if(s==1){
             y[k]=x[i];
@@ -23,8 +23,8 @@ int main_bench()
         }
     }
     for(i=0;i<k-1;i++){
-        printf("%d,",y[i]);
+        my_printf("%d,",y[i]);
     }
-    printf("%d",y[k-1]);
+    my_printf("%d",y[k-1]);
     return 0;
 }

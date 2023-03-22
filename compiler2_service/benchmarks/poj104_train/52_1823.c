@@ -13,14 +13,14 @@ main_bench()
 	int a[100],b[100],*p,*q,m,n,i;
 	p=a;
 	q=b;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
 	error(p,q,m,n);
 	for(i=0;i<n-1;i++)
-		printf("%d ",b[i]);
-	printf("%d\n",b[n-1]);
+		my_printf("%d ",b[i]);
+	my_printf("%d\n",b[n-1]);
 }
 

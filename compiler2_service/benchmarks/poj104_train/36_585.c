@@ -21,14 +21,14 @@ main_bench()
 {
 	char a[100],b[100];
 	int i,j,la,lb,k;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
 		paixu(a);
 	   paixu(b);
 	   k=strcmp(a,b);
 	   if(k==0)
-	   printf("YES");
-	   else printf("NO");
+	   my_printf("YES");
+	   else my_printf("NO");
 	
 }

@@ -5,7 +5,7 @@ main_bench()
 {
 	int i,a,b,n=0,l,l1=0,p;
 	char s[33],t[33];
-	scanf("%d%s%d",&a,s,&b);
+	my_scanf("%d%s%d",&a,s,&b);
 	l=strlen(s);
 	for(i=0;i<l;++i)
 	{
@@ -26,9 +26,9 @@ main_bench()
 			t[l1++]='A'+p-10;
 	}
 	if(!l1)
-		printf("0");
+		my_printf("0");
 	else
 		for(i=l1-1;i>=0;--i)
-			printf("%c",t[i]);
-	printf("\n");
+			my_printf("%c",t[i]);
+	my_printf("\n");
 }

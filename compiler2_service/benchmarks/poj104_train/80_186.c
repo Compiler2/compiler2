@@ -5,8 +5,8 @@ int days(int year,int month,int day);
 int main_bench(){
 	int y1,m1,d1,y2,m2,d2;
 	int total=0,i;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	if(y1==y2)
 		total=days(y2,m2,d2)-days(y1,m1,d1);
 	else{
@@ -25,7 +25,7 @@ int main_bench(){
 		}
 		total+=days(y2,m2,d2);
 	}
-	printf("%d\n",total);
+	my_printf("%d\n",total);
 }
 
 

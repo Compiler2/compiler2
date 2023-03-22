@@ -10,12 +10,12 @@ main_bench()
       int  ju[100];
       int  n,i,j,k,nums,numj,year;
 
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       nums=-1; numj=-1;
       for (i=1;i<=n;i++)
       {
-          scanf("%s",temp);
-          scanf("%d",&year);
+          my_scanf("%s",temp);
+          my_scanf("%d",&year);
           if (year>=60)
           {
               nums++;

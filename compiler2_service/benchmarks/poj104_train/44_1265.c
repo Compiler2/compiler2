@@ -3,10 +3,10 @@
 void reverse(int x)
 {
     int i,b[100],p,r,y;
-    scanf("%d",&x);
+    my_scanf("%d",&x);
     i=0;
     if(x==0||x==(-0))
-    printf("0");
+    my_printf("0");
     if(x<0)
     p=0;
     else
@@ -24,19 +24,19 @@ void reverse(int x)
      i++;
     }
     if(p==0)
-    printf("-");
+    my_printf("-");
     for(r=0;r<=i;r++)
     {
-     printf("%d",b[r]);
+     my_printf("%d",b[r]);
     }
-    printf("\n");
+    my_printf("\n");
 }
 int main_bench()
 {
     int a[6],i;
     for(i=0;i<6;i++)
     {
-     scanf("%d",&a[i]);
+     my_scanf("%d",&a[i]);
     }
     for(i=0;i<6;i++)
     {

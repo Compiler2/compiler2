@@ -21,14 +21,14 @@ int h(int n)
 int main_bench()
 {
 	int m,n,i,j[100],k=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 		if(s(i)==1&&h(i)==1)
 		{j[k]=i;k++;}
-	if(k==0)printf("no");
+	if(k==0)my_printf("no");
 	else
 	{for(i=0;i<k-1;i++)
-         printf("%d,",j[i]);
-	   printf("%d",j[k-1]);}
+         my_printf("%d,",j[i]);
+	   my_printf("%d",j[k-1]);}
 
 }

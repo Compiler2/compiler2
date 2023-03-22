@@ -13,16 +13,16 @@ int f(int n){
     }
 int main_bench(){
     int n,i,o=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=2;i<=n-2;i++){
         if(f(i)==1&&f(i+2)==1){
-            printf("%d %d\n",i,i+2);
+            my_printf("%d %d\n",i,i+2);
             o=1;
             }
         }
-    if(o==0) printf("empty\n");
+    if(o==0) my_printf("empty\n");
    
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

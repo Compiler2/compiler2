@@ -12,9 +12,9 @@ void swi(int l,char s[200]){
 int main_bench(){
 	char m[200],n[200],t[200];
 	int n1,i,j,k,lm,ln,q,flag,num;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(n1=0;n1<num;n1++){
-		scanf("%s %s",m,n);
+		my_scanf("%s %s",m,n);
 		flag=0;
 		lm=strlen(m);
 		ln=strlen(n);
@@ -49,7 +49,7 @@ int main_bench(){
 		for(lm--;!m[lm];lm--);
 		swi(lm+1,m);
 		for(i=0;i<=lm;i++)
-			printf("%d",m[i]);
+			my_printf("%d",m[i]);
 		if(n1<num-1)
 			putchar('\n');
 	}

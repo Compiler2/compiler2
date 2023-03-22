@@ -29,10 +29,10 @@ for(int o=0;o<k;o++)
    {chazhi[o]=w[o]-t[o]+1;}     
    
    for(int oo=0;oo<k-1;oo++)
-   {printf("%d,",chazhi[oo]);ww=oo;} 
-   printf("%d",chazhi[ww+1]);
+   {my_printf("%d,",chazhi[oo]);ww=oo;} 
+   my_printf("%d",chazhi[ww+1]);
    
 }
-  if(f==1){printf("%d",strlen(s));}     
+  if(f==1){my_printf("%d",strlen(s));}     
 	return 0;
 }

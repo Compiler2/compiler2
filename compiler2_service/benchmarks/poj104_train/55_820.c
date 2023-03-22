@@ -7,7 +7,7 @@ int main_bench()
       char n[100];
       long l[10000];
       long t[10000];
-      scanf("%d %s %d",&a,n,&b);
+      my_scanf("%d %s %d",&a,n,&b);
       c = strlen(n);
       for(i=0;i<=c-1;i++)
       {
@@ -20,7 +20,7 @@ int main_bench()
             h=a*h+n[i];      
       }
       if(h==0)
-      printf("0");
+      my_printf("0");
       for(i=0;h>0;i++)
       {
             e[i]=h%b;
@@ -37,7 +37,7 @@ int main_bench()
             n[i]=n[i]+'0';
       }
       n[k]='\0';
-      printf("%s\n",n);
+      my_printf("%s\n",n);
       getchar();
       getchar();
       getchar();

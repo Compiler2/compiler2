@@ -7,9 +7,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-	scanf("%d",&a[i][j]);
+	my_scanf("%d",&a[i][j]);
 	}
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		c=cha(m,n);
 	if(c==1)
 	{ 
@@ -29,11 +29,11 @@ int main_bench()
 		for(i=0;i<5;i++)
 		{
 		for(j=0;j<4;j++)
-	    printf("%d ",b[i][j]);
-		printf("%d\n",b[i][4]);
+	    my_printf("%d ",b[i][j]);
+		my_printf("%d\n",b[i][4]);
 		}
 	}
-else printf("error");
+else my_printf("error");
 }
 
 int cha(int x,int y)

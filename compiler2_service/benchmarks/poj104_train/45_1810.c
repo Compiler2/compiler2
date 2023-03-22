@@ -9,8 +9,8 @@ int main_bench(){
 	int i,j;
 	int m;
 	int tag=0;
-	scanf ("%s",s);
-	scanf ("%s",w);
+	my_scanf ("%s",s);
+	my_scanf ("%s",w);
 	schangdu=strlen(s);
 	wchangdu=strlen(w);
 	for(i=0;i<wchangdu;i++){
@@ -20,7 +20,7 @@ int main_bench(){
 		sw[schangdu]=0;
 			m=strcmp(s,sw);
 			if(m==0){
-				printf("%d",i);
+				my_printf("%d",i);
 				tag=1;
 				break;
 			}

@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int sz[50000][2];
 	for(int i=0;i<n;i++){
-		scanf("%d%d",&sz[i][0],&sz[i][1]);
+		my_scanf("%d%d",&sz[i][0],&sz[i][1]);
 	}
 
 
@@ -37,9 +37,9 @@ int main_bench(){
 			
 	}
 	if(w==0)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	if(w!=0)
-		printf("no");
+		my_printf("no");
 return 0;
 }
 

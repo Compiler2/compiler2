@@ -4,12 +4,12 @@ int main_bench(){
   char a[501],b[501];
   double n,c,d,k=0;
   int i,e=1;
-  scanf("%lf",&n);
-  scanf("%s\n%s",&a,&b);
+  my_scanf("%lf",&n);
+  my_scanf("%s\n%s",&a,&b);
   c=strlen(a);
   d=strlen(b);
   if(c!=d){
-    printf("error");
+    my_printf("error");
   }else if(c==d){
 	for(i=0;i<c;i++){
 		if(a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C'||b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C'){
@@ -22,11 +22,11 @@ int main_bench(){
 		}
 	}
          if(e==0){
-                  printf("error");
+                  my_printf("error");
          }else if(k!=0&&(k/c)>=n){
-                  printf("yes");
+                  my_printf("yes");
          }else if(e==1&&(k/c)<n){
-                  printf("no");
+                  my_printf("no");
          }
   }
 return 0;

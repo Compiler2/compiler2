@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,x,y;
 	int a[3]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&x,&y);
+		my_scanf("%d %d",&x,&y);
 		if(x-y==1)
 			a[2]++;
 		if(y-x==1)
@@ -16,10 +16,10 @@ int main_bench(){
 			a[2]++;
 	}
 	if(a[1]>a[2])
-		printf("A");
+		my_printf("A");
 	else if(a[1]<a[2])
-		printf("B");
+		my_printf("B");
 	else
-		printf("Tie");
+		my_printf("Tie");
 	return 0;
 }

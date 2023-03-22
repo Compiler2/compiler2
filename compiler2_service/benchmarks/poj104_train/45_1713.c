@@ -4,8 +4,8 @@
 int main_bench(){
 	char s[50];
 	char w[50];
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 
 	int ls=strlen(s);
 	int lw=strlen(w);
@@ -30,7 +30,7 @@ int main_bench(){
 		}
 
 		if(t==1){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 	}	

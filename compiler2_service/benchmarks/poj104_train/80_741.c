@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a[13],n,i,m;
 	int year1,year2,month1,month2,day1,day2;
-	scanf("%d %d %d\n",&year1,&month1,&day1);
-	scanf("%d %d %d",&year2,&month2,&day2);
+	my_scanf("%d %d %d\n",&year1,&month1,&day1);
+	my_scanf("%d %d %d",&year2,&month2,&day2);
 	a[0]=0;a[1]=1;a[2]=-2;a[3]=1;a[4]=0;
 	a[5]=1;a[6]=0;a[7]=1;a[8]=1;a[9]=0;
 	a[10]=1;a[11]=0;a[12]=1;
@@ -51,7 +51,7 @@ int main_bench()
 			}
 			n=n+m;
 		}
-		printf("%d\n",n);
+		my_printf("%d\n",n);
 		return 0;
 }
 

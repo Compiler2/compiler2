@@ -5,7 +5,7 @@ int main_bench()
 {
 	char s[1000];
 	int i,n,b,j,k,x;
-scanf("%s",s);
+my_scanf("%s",s);
 n=strlen(s);
 
 for (i=2;i<=n;i++)
@@ -19,7 +19,7 @@ for (i=2;i<=n;i++)
 			if(b==i)
 			{
 				for (x=k;x<k+j;x++)
-printf("%c",s[x]);				printf("\n");
+my_printf("%c",s[x]);				my_printf("\n");
 			}
 	}
 }

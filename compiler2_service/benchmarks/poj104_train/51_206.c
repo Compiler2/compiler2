@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n = 0;
 	char s[501] = {0};
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	gets(s);
 	int i = 0, j = 0, len = strlen(s);
 	char word[501][7] = {0};
@@ -37,14 +37,14 @@ int main_bench()
 	}
 	if (maxc <= 1)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-	printf("%d", maxc);
+	my_printf("%d", maxc);
 	for (i = 0; i <= len-n; i++ )
 	{
 		if ( count[i] == maxc )
-			printf("\n%s", word[i]);
+			my_printf("\n%s", word[i]);
 	}
 	return 0;
 }

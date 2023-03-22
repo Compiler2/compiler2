@@ -22,9 +22,9 @@ int main_bench()
 				shit=1;
 				for(j=a;j<i;j++)
 				{
-					printf("%c",string[j]);
+					my_printf("%c",string[j]);
 				}
-				printf("%s",replacement);
+				my_printf("%s",replacement);
 				a=i+len2;
 
 			}
@@ -33,7 +33,7 @@ int main_bench()
 	}
 	for(j=a;j<len1;j++)
 	{
-		printf("%c",string[j]);
+		my_printf("%c",string[j]);
 	}
 	return 0;
 }

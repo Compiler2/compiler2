@@ -11,6 +11,6 @@ int main_bench()
  for(j=i-1;j>=0;j--)    
  if(text[j]==c) {a[x]=i;b[x]=j;x++;text[i]='q';text[j]='q';break;}
   }
- for(i=0;i<x;i++)   printf("%d %d\n",b[i],a[i]);
+ for(i=0;i<x;i++)   my_printf("%d %d\n",b[i],a[i]);
 }
 

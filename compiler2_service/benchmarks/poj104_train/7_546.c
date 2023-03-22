@@ -23,8 +23,8 @@ int main_bench()
 		}
 		if(!strcmp(tem,b)&&f==0)
 		{f++;
-			printf("%s",c);i+=lb-1;
+			my_printf("%s",c);i+=lb-1;
 		}
-		else printf("%c",a[i]);
+		else my_printf("%c",a[i]);
 	}
 }

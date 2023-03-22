@@ -7,7 +7,7 @@ int main_bench()
 	int num[1000];
 	for(i=0;i<1000;i++)
 		num[i]=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
 	gets(a);
 	for(i=0;;i++)
 	{
@@ -38,10 +38,10 @@ int main_bench()
 				}
 			}
 if(num[0]==0)
-printf("NO");
+my_printf("NO");
 else{
 
-			printf("%d\n",num[0]+1);
+			my_printf("%d\n",num[0]+1);
     puts(b[0]);
  for(i=1;;i++)
  {

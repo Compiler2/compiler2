@@ -34,9 +34,9 @@ break;
       }
       for(int i=0;i<la;i++)
       {
-              if(a[i]==1) printf("%s",c);
+              if(a[i]==1) my_printf("%s",c);
               if(a[i]==2); 
               if(a[i]!=2 && a[i]!=1)
-              printf("%c",a[i]);
+              my_printf("%c",a[i]);
       }
 }

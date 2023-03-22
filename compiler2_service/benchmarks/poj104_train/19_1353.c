@@ -37,8 +37,8 @@ words[i][j]=b[j];
 words[i][j]='\0';
 t=1;
 }
-printf ("%s",words[0]);
+my_printf ("%s",words[0]);
 for (i=1;i<n;i++)
-printf (" %s",words[i]);
+my_printf (" %s",words[i]);
 return 0;
 }

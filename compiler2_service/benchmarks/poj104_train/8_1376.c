@@ -6,13 +6,13 @@ int*p2;
 int*p3;
 main_bench()
 {
-     scanf("%d %d",&n1,&n2);
+     my_scanf("%d %d",&n1,&n2);
      p1=(int*)malloc(n1*sizeof(int));
      p2=(int*)malloc(n2*sizeof(int));
      for(int k=0;k<n1;k++)
-     scanf("%d",&p1[k]);
+     my_scanf("%d",&p1[k]);
      for(int k=0;k<n2;k++)
-     scanf("%d",&p2[k]);
+     my_scanf("%d",&p2[k]);
      for(int k=n1-1;k>0;k--)
     {
             for(int i=0;i<k;i++)
@@ -49,8 +49,8 @@ main_bench()
      for(c=0;c<n1+n2;c++)
      {
                            if(c==0)
-                           printf("%d",p3[0]);
-                           else printf(" %d",p3[c]);
+                           my_printf("%d",p3[0]);
+                           else my_printf(" %d",p3[c]);
      }
      
 }

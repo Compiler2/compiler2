@@ -13,10 +13,10 @@ int main_bench()
 	 {
 		 for(j=0;j<5;j++)
 		 {
-			 scanf("%d",*(p+i)+j);
+			 my_scanf("%d",*(p+i)+j);
 		 }
 	 }
-	 scanf("%d %d",&n,&m);
+	 my_scanf("%d %d",&n,&m);
 	 a=sort(p,n,m);
 	 if(a==1)
 	 {
@@ -24,14 +24,14 @@ int main_bench()
 		{
 			for(j=0;j<4;j++)
 			{
-				printf("%d ",*(*(p+i)+j));
+				my_printf("%d ",*(*(p+i)+j));
 			}
-		    printf("%d\n",*(*(p+i)+j));
+		    my_printf("%d\n",*(*(p+i)+j));
 		 }
 	 }
 	 if(a==0)
 	 {
-		 printf("error");
+		 my_printf("error");
 	 }
 	 return 0;
 }

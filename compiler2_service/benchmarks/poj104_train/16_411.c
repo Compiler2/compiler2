@@ -4,7 +4,7 @@ main_bench()
 {
 	int n;
 	int w,a=0,b=0,c=0,d=0,e=0,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n%10;
 	x=n/10;
 	if(x==0)
@@ -25,15 +25,15 @@ main_bench()
 				{w=5;e=x%10;}
 	}}}
 	switch(w)
-	{case 5:printf("%d%d%d%d%d\n",a,b,c,d,e);
+	{case 5:my_printf("%d%d%d%d%d\n",a,b,c,d,e);
 			break;
-	 case 4:printf("%d%d%d%d\n",a,b,c,d);
+	 case 4:my_printf("%d%d%d%d\n",a,b,c,d);
 			break;
-	 case 3:printf("%d%d%d\n",a,b,c);
+	 case 3:my_printf("%d%d%d\n",a,b,c);
 		    break;
-	 case 2:printf("%d%d\n",a,b);
+	 case 2:my_printf("%d%d\n",a,b);
 			break;
-	 case 1:printf("%d\n",a);
+	 case 1:my_printf("%d\n",a);
 			break;
 	}
 	return 0;

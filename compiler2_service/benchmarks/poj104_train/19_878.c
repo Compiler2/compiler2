@@ -29,12 +29,12 @@ int main_bench()
 	k[0] = 0;
 	k[d+1] = l;
 	for(int q = k[0];q<k[1];q++)
-		    printf("%c",s[q]);
+		    my_printf("%c",s[q]);
 	for(int r = 1;r<=d;r++)
 	{
-		printf("%s",b);
+		my_printf("%s",b);
 	    for(int g = k[r]+m;g<k[r+1];g++)
-		    printf("%c",s[g]);
+		    my_printf("%c",s[g]);
 	}
 	return 0;
 }

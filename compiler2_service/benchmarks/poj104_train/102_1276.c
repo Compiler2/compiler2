@@ -3,14 +3,14 @@
 main_bench()
 {
 	int n,i,j=0,k=0,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	double a[43],f[43],m[43],z;
 	char sex[10];
 	char male[10]="female";
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",sex);
-		scanf("%lf",&a[i]);
+		my_scanf("%s",sex);
+		my_scanf("%lf",&a[i]);
 		if(strcmp(sex,male)==0)
 		{
 			m[j]=a[i];
@@ -22,7 +22,7 @@ main_bench()
 			k++;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<j-1;i++)
 	{
 		for(l=0;l<j-1;l++)
@@ -47,14 +47,14 @@ main_bench()
 			} 
 		}
 	}
-	printf("%.2f",f[0]);
+	my_printf("%.2f",f[0]);
 	for(i=1;i<n;i++)
 	{
 		if(i<k)
 		{
-			printf(" %.2f",f[i]);
+			my_printf(" %.2f",f[i]);
 		}
 		else
-		printf(" %.2f",m[i-k]);
+		my_printf(" %.2f",m[i-k]);
 	}
 } 

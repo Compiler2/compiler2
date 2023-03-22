@@ -18,9 +18,9 @@ int main_bench()
 			}
 			n=j;
 			if(i==0)
-				printf("%d",m);
+				my_printf("%d",m);
 			if(i>0)
-				printf(",%d",m);
+				my_printf(",%d",m);
 			i=n;
 		}
 		else

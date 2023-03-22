@@ -4,9 +4,9 @@ int main_bench(){
     char a[256],b[256],c[256];
     int i,j=0,k=-1,n,p,q,s,h=0,r;
     int d[256];
-    scanf("%s",a);
-    scanf("%s",b);
-    scanf("%s",c);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
+    my_scanf("%s",c);
     for(i=0;i<256;i++){
                        if(a[i]==b[0]){
                                       k=0;
@@ -28,23 +28,23 @@ int main_bench(){
                                        }
               if(i==d[s]+n){
                          for(r=0;r<d[s];r++){
-                                          printf("%c",a[r]);
+                                          my_printf("%c",a[r]);
                                           }
                          for(r=0;r<p;r++){
-                                          printf("%c",c[r]);
+                                          my_printf("%c",c[r]);
                                           }
                          for(r=d[s]+n;r<q;r++){
-                                            printf("%c",a[r]);
+                                            my_printf("%c",a[r]);
                                             }
 break;
                          }
                          }
               if(h==j){
-                       printf("%s",a);
+                       my_printf("%s",a);
                        }
               }
     else {
-         printf("%s",a);
+         my_printf("%s",a);
          }
     return 0;
 }

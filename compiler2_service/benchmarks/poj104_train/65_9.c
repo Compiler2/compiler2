@@ -2,16 +2,16 @@
 
 int main_bench(){
     int n,i,a=0,b=0,c,d;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-          scanf("%d%d",&c,&d);
+          my_scanf("%d%d",&c,&d);
           if(c-d==1)b++;
           else if(d-c==1)a++;
           else if(d<c)a++;
           else if(d>c)b++;
     }
-    if(a<b)printf("B");
-    else if(a>b)printf("A");
-    else printf("Tie");
+    if(a<b)my_printf("B");
+    else if(a>b)my_printf("A");
+    else my_printf("Tie");
     return 0;
 }

@@ -25,9 +25,9 @@
     {
         if(sz1[i]>0&&sz1[i]<10000)
         {
-            printf("%d,",sz1[i]);
+            my_printf("%d,",sz1[i]);
         }
     }
-    printf("%d",sz1[n-1]);
+    my_printf("%d",sz1[n-1]);
     return 0;
 }

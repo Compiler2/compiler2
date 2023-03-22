@@ -3,7 +3,7 @@
 int main_bench(){
 	char input[300];
 	int i;
-	scanf("%s",input);
+	my_scanf("%s",input);
 	int cishu[26];
 	for(i=0;i<26;i++)
 	{
@@ -36,12 +36,12 @@ if (result!=0)
 	{
 		if(cishu[i]!=0)
 		{
-		printf("%c=%d\n",i+97,cishu[i]);
+		my_printf("%c=%d\n",i+97,cishu[i]);
 		}
 	}
 }
 else{
-	printf("No\n");
+	my_printf("No\n");
 }
 
 return 0;

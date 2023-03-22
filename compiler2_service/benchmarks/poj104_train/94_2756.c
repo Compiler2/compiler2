@@ -5,10 +5,10 @@ int main_bench()
     int sz[1000],a[1000],b[1000];
     int i,e,n,k,t;
     int m=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d", &(sz[i]));
+        my_scanf("%d", &(sz[i]));
     }
     for(k=1;k<=n;k++)
     {
@@ -34,9 +34,9 @@ int main_bench()
     }
     for(m=1;m<t;m++)
     {
-        printf("%d,",b[m]);
+        my_printf("%d,",b[m]);
     }
-    printf("%d",b[t]);
+    my_printf("%d",b[t]);
     return 0;
 }
 

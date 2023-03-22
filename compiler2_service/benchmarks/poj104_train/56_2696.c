@@ -4,7 +4,7 @@ int main_bench()
 {
     void a(int x,int y);
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     a(n,10000);
         return 0;
 }
@@ -16,12 +16,12 @@ void a(int x,int y)
      
      t=x/y;
      x=x-t*y;
-     if(y==1)printf("%d",t);
+     if(y==1)my_printf("%d",t);
      else
      {
          a(x,y/10);
          if(t==0);
-         else printf("%d",t);
+         else my_printf("%d",t);
      }
     
 }

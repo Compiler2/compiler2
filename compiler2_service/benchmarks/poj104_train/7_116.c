@@ -7,9 +7,9 @@ int main_bench()
 	char t[256];
 	char c;
 	int i,ls,j,la,lt,g,word=0;
-	scanf("%s",s);
-	scanf("%s",a);
-	scanf("%s",t);
+	my_scanf("%s",s);
+	my_scanf("%s",a);
+	my_scanf("%s",t);
 	ls=strlen(s);
 	la=strlen(a);
 	lt=strlen(t);
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
 
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }
 

@@ -3,7 +3,7 @@
 int main_bench(){
 	char s[100],a[100],b[100];
 	gets(s);
-	scanf("%s\n%s",a,b);
+	my_scanf("%s\n%s",a,b);
 	int n,m,p=0,q,i,j;
 	n=strlen(s);
 	m=strlen(a);
@@ -26,16 +26,16 @@ int main_bench(){
 			}
 			if(p==m-1 && ( i+m == n || s[i+m]== ' ') )
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				i += m - 1 ;
 			}
 			else
 			{
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 			}
 		        
 		}else
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 	}
 	
 	return 0;

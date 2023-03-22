@@ -18,8 +18,8 @@ int main_bench()
 			len=i-temp-1;
 			temp=i;
 			if(len!=0)
-				printf("%d,",len);
+				my_printf("%d,",len);
 		}
 	}
-	printf("%d",(n-temp));
+	my_printf("%d",(n-temp));
 }

@@ -3,8 +3,8 @@
 int main_bench(){
 	int n,i,j,k,l,f[10000],count,t;
 	char s[10000];
-	scanf("%d\n",&n);
-	scanf("%s",s);
+	my_scanf("%d\n",&n);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i<=l;i++){
 		f[i]=1;
@@ -23,22 +23,22 @@ int main_bench(){
 		if(f[i]>count)count=f[i];
 	}
 	if(count==1){
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
-	printf("%d\n",count);
+	my_printf("%d\n",count);
 	for(i=0;i<l-2*n;i++){
 		if(f[i]==count){
 			for(k=0;k<n;k++){
-				printf("%c",s[i+k]);
+				my_printf("%c",s[i+k]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 
 
 
 
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	return 0;
 }

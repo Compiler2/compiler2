@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,len=0,t[200]={0};
 	char c;
 	gets(word);
-	scanf("%s%s",x,y);
+	my_scanf("%s%s",x,y);
 	for(i=0;i<strlen(word);i++)
 	{
 		if ((i == 0) || word[i-1] == ' ')
@@ -24,11 +24,11 @@ int main_bench()
 	{
 		if(t[i]==0)
 		{
-			printf("%c",word[i]);
+			my_printf("%c",word[i]);
 		}
 		else
 		{
-			printf("%s",y);
+			my_printf("%s",y);
 			i=i+strlen(x)-1;
 		}
 	}

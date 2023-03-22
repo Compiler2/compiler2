@@ -19,12 +19,12 @@ int main_bench(){
         }
     for(i=0;i<k;i++){
         len[i]=strlen(c[i]);
-        printf("%d,",len[i]);
+        my_printf("%d,",len[i]);
         }
-    printf("%d",strlen(c[k]));
+    my_printf("%d",strlen(c[k]));
     
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

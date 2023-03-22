@@ -11,11 +11,11 @@ int main_bench()
     int n,sum[100000],i,count,max,j;
     count = 1;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
       sum[i]=0;
-      scanf("%s %d %d",stu[i].num,&stu[i].grade[0],&stu[i].grade[1]);
+      my_scanf("%s %d %d",stu[i].num,&stu[i].grade[0],&stu[i].grade[1]);
       sum[i]= stu[i].grade[0]+stu[i].grade[1];
     }
     while(count <=2)
@@ -29,7 +29,7 @@ int main_bench()
         j=i;
        }
       }
-      printf("%s %d\n",stu[j].num,sum[j]);
+      my_printf("%s %d\n",stu[j].num,sum[j]);
       count++;
       sum[j]=0;
     }
@@ -42,7 +42,7 @@ int main_bench()
         j=i;
        }
       }
-      printf("%s %d",stu[j].num,sum[j]);
+      my_printf("%s %d",stu[j].num,sum[j]);
     getchar();
     getchar();
 } 

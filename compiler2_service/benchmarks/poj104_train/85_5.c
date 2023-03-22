@@ -4,11 +4,11 @@ int main_bench()
 {
 	char c[100];
 	int n, i, j, f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		f=0;
-		scanf("%s",c);
+		my_scanf("%s",c);
 		if(c[0]>='0'&&c[0]<='9')
 			f=1;
 		else
@@ -18,9 +18,9 @@ int main_bench()
 					f=1;
 			}
 		if(f)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 		
 	}
 	return 0;

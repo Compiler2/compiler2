@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s1[100],s2[100],temp,a;
-	scanf("%s %s",&s1,&s2);
+	my_scanf("%s %s",&s1,&s2);
 	int i,j,k=0,l,m,n;
 	m=strlen(s1);
 	n=strlen(s2);
@@ -20,7 +20,7 @@ int main_bench()
 		}
 		if(k==0)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 		else

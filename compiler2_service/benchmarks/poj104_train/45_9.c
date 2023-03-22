@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	int i,j=0,count=-1,l,m;
 	l=strlen(w);
 	m=strlen(s);
@@ -26,9 +26,9 @@ int main_bench()
 	}
 	if(j==m)
 	{
-		printf("%d",count);
+		my_printf("%d",count);
 	}
-	else printf("error");
+	else my_printf("error");
 
 
 

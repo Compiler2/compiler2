@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,k=0,pan;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int mon[12]={31,28,31,30,31,30,31,31,30,31,30,31},ans[12];
 	n+=12;
 	for(i=0;i<=11;i++)
@@ -20,7 +20,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<k;i++)
-		printf("%d\n",ans[i]);
+		my_printf("%d\n",ans[i]);
 	return 0;
 }
 	    

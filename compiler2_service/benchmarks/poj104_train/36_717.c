@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[100],b[100];int m,n,i,j,r=0,t=0,s=0,q=0,p=0,o=0;
-	scanf("%s %s",&a,&b);
+	my_scanf("%s %s",&a,&b);
 	m=strlen(a);n=strlen(b);
 	for(i=0;i<m;i++)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 		q=q+b[i];
 		if(b[i]!=0)p++;
 	}
-	if(t==q&&s==p&&r==o)printf("YES");
+	if(t==q&&s==p&&r==o)my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

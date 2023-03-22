@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int array[10000],i,n,ai,bi,head,tail,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<10000;i++)
 		array[i]=0;
 	for (i=0;i<n;i++)
 		{	
-		scanf("%d%d",&ai,&bi);
+		my_scanf("%d%d",&ai,&bi);
 		array[ai]++;
 		array[bi]--;
 		}
@@ -27,11 +27,11 @@ int main_bench(){
 	for (i=ai;i<10000;i++)
 		if (array[i]>0)
 			{
-			printf("no");
+			my_printf("no");
 			bi=1;
 			break;
 			}
 	if (bi==0)
-		printf("%d %d",head,tail);
+		my_printf("%d %d",head,tail);
 	return 0;
 }

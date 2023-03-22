@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w0,m,d,dmax[13],w;
-	scanf("%d",&w0);
+	my_scanf("%d",&w0);
 	w=w0;
 	for(m=1;m<=12;m++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 		}
 		if(w==7) w=1;
 		else w++;
-		if(d==13&&w==5) printf("%d\n",m);
+		if(d==13&&w==5) my_printf("%d\n",m);
 	}
 	return 0;
 }

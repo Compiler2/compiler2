@@ -14,10 +14,10 @@ int main_bench()
 int read()
 {
     int i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=1;i<=n;i++)
     {
-        scanf("%d",&b[i]);
+        my_scanf("%d",&b[i]);
     }
     for (i=1;i<=4;i++){
         a[i]=0;
@@ -54,10 +54,10 @@ void print()
     int i;
     for (i=1;i<=4;i++)
     {c[i]=100.00*a[i]/n;}
-    printf("1-18: %.2lf%%\n",c[1]);
-    printf("19-35: %.2lf%%\n",c[2]);
-    printf("36-60: %.2lf%%\n",c[3]);
-    printf("Over60: %.2lf%%",c[4]);
+    my_printf("1-18: %.2lf%%\n",c[1]);
+    my_printf("19-35: %.2lf%%\n",c[2]);
+    my_printf("36-60: %.2lf%%\n",c[3]);
+    my_printf("Over60: %.2lf%%",c[4]);
     return;
 }
 

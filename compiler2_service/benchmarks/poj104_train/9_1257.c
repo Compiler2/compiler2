@@ -8,9 +8,9 @@ struct patient
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d", pat[i].id, &pat[i].age);
+		my_scanf("%s %d", pat[i].id, &pat[i].age);
 	}
 	int temp=0;
 	struct patient e;
@@ -36,7 +36,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",pat[i].id);
+		my_printf("%s\n",pat[i].id);
 	}
 	return 0;
 }

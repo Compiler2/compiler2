@@ -39,9 +39,9 @@ int main_bench()
 		if(a[k]>b)
 			b=a[k];
 	if(b<m&&b>0)
-		printf("%d",b);
+		my_printf("%d",b);
 	if(b==m||b==0)
-		printf("No");
+		my_printf("No");
 		
 	
 

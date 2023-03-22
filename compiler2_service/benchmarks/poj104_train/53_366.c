@@ -5,9 +5,9 @@ main_bench()
 	int a[300]={0},b[300]={0};
 	int *p,*q;
 	int n,i,j,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	p=a;
 	q=b;
 	for(i=0;i<n;i++)
@@ -32,8 +32,8 @@ main_bench()
 		if (*(q+i))
 			continue;
 		if (i)
-			printf(",");
-		printf("%d",*(p+i));
+			my_printf(",");
+		my_printf("%d",*(p+i));
 	}
-	printf("\n");
+	my_printf("\n");
 }

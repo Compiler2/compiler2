@@ -29,10 +29,10 @@ int main_bench()
 			strcpy(word[i],y);
 		}
 	}
-	printf("%s",word[0]);
+	my_printf("%s",word[0]);
 	for(i=1;i<num;i++)
 	{
-	  printf(" %s",word[i]);
+	  my_printf(" %s",word[i]);
 	}
    return 0;
 }

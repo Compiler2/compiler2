@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,temp;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&num[i],&c);
+		my_scanf("%d%c",&num[i],&c);
 		if(c!=',')
 			break;
 	}
@@ -30,10 +30,10 @@ int main_bench()
 		if(num[i]<max)
 		{
 			judge=0;
-			printf("%d\n",num[i]);
+			my_printf("%d\n",num[i]);
 			break;
 		}
 	}
 	if(judge==1)
-		printf("No\n");
+		my_printf("No\n");
 }

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,k;
-	scanf("%d",&n);
-	scanf("%d",&k);
+	my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	int sz[1001];
 	for(int i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int bar=0;
 	for(int a=0;a<n;a++){
@@ -16,8 +16,8 @@ int main_bench(){
 		}
 	}
 	if(bar==1)
-		printf("yes");
+		my_printf("yes");
 	if(bar==0)
-		printf("no");
+		my_printf("no");
 	return 0;
 }

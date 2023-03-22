@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char d[1000][260],r[1000][260];
     for(i=0;i<n;i++){
-		scanf("%s",d[i]);
+		my_scanf("%s",d[i]);
 	}
 	int len;
 	for(i=0;i<n;i++){
@@ -25,8 +25,8 @@ int main_bench()
 	for(i=0;i<n;i++){
 		len=strlen(d[i]);
 		for(int j=0;j<len;j++){
-		    printf("%c",r[i][j]);
-		}	printf("\n");
+		    my_printf("%c",r[i][j]);
+		}	my_printf("\n");
 	}
 	return 0;
 }

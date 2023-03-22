@@ -16,10 +16,10 @@ int main_bench()
 {
 	int peoplenumber,i,g,c,a,sum=0,most=0;
 	char name[100],top[100],m,r;
-	scanf("%d",&peoplenumber);
+	my_scanf("%d",&peoplenumber);
 	for(i=0;i<peoplenumber;i++)
 	{
-		scanf("%s%d %d %c %c %d",name,&g,&c,&m,&r,&a);
+		my_scanf("%s%d %d %c %c %d",name,&g,&c,&m,&r,&a);
 		if(sch(g,c,m,r,a)>most)
 		{
 			strcpy(top,name);
@@ -27,7 +27,7 @@ int main_bench()
 		}
 		sum+=sch(g,c,m,r,a);
 	}
-	printf("%s\n%d\n%d",top,most,sum);
+	my_printf("%s\n%d\n%d",top,most,sum);
 	
 	
 

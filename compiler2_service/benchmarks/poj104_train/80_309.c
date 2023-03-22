@@ -6,7 +6,7 @@ int main_bench()
 	int year1,month1,date1,year2,month2,date2;                             
 	int year_2;                                                            
 	int year,month,date;
-	scanf("%d%d%d\n%d%d%d",&year1,&month1,&date1,&year2,&month2,&date2);
+	my_scanf("%d%d%d\n%d%d%d",&year1,&month1,&date1,&year2,&month2,&date2);
 	year_2=year2;
 	if(date1<=date2) date=date2-date1;
 	else 		
@@ -80,7 +80,7 @@ int main_bench()
 		else continue;
 	day=date+monthday+yearday;
 
-	printf("%d\n",day);
+	my_printf("%d\n",day);
 
 	return 0;
 

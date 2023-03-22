@@ -8,14 +8,14 @@ int main_bench()
 	int len;
 	int k=0;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		k=0;
 		
 		
 		
-		scanf("%s",s);    
+		my_scanf("%s",s);    
 		
 		
 
@@ -31,16 +31,16 @@ int main_bench()
 			}
 			if(k==(len-1))
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 			if(k!=(len-1))
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	

@@ -23,13 +23,13 @@ int main_bench()
 					if(q==&a[0])
                     b=0;
 					for(q=q+1;q<p;q++)
-						printf("%c",*q);
+						my_printf("%c",*q);
 					break;
 				}
 			}
 			if(b!=0)
 			{
-				printf(" ");
+				my_printf(" ");
 				b=1;
 			}
 		}

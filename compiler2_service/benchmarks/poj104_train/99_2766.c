@@ -3,9 +3,9 @@
 int main_bench()
 {   int n,a[100],i;
     double b=0,c=0,d=0,e=0,sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 			sum++;
 			if(a[i]>=1&&a[i]<=18){
 				b++;
@@ -20,10 +20,10 @@ int main_bench()
 				e++;
 			}
 	}
-	printf("1-18: %.2lf%%\n",100*b/sum);
-	printf("19-35: %.2lf%%\n",100*c/sum);
-	printf("36-60: %.2lf%%\n",100*d/sum);
-	printf("60??: %.2lf%%\n",100*e/sum);
+	my_printf("1-18: %.2lf%%\n",100*b/sum);
+	my_printf("19-35: %.2lf%%\n",100*c/sum);
+	my_printf("36-60: %.2lf%%\n",100*d/sum);
+	my_printf("60??: %.2lf%%\n",100*e/sum);
 	return 0;
 }
 

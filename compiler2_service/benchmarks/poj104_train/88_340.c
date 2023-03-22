@@ -12,18 +12,18 @@ int main_bench()
 	n++;
 	}
 	if(n==len-1)
-		printf("%c",c[len-1]);
+		my_printf("%c",c[len-1]);
 	if(n==len-2&&number(c[len-1])==1)
-		printf("%c%c",c[len-2],c[len-1]);
+		my_printf("%c%c",c[len-2],c[len-1]);
 	if(n==len-2&&number(c[len-1])==0)
-		printf("%c",c[len-2]);
+		my_printf("%c",c[len-2]);
 	if(n<len-2){
-	printf("%c",c[n]);
+	my_printf("%c",c[n]);
 	for(i=n+1;i<len;i++){
 	if(number(c[i-1])==1&&number(c[i])==1)
-		printf("%c",c[i]);
+		my_printf("%c",c[i]);
 	if(number(c[i-1])==0&&number(c[i])==1)
-		printf("\n%c",c[i]);
+		my_printf("\n%c",c[i]);
 	}
 	}
 	return 0;

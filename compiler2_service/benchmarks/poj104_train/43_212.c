@@ -19,12 +19,12 @@ int A(int n)
 int main_bench()
 {
 	int m,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=2;j<=m/2;j++)
 	{
 		if(A(j)&&A(m-j))
 		{
-			printf("%d %d\n",j,m-j);
+			my_printf("%d %d\n",j,m-j);
 		}
 	}
 	return 0;

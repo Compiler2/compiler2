@@ -2,9 +2,9 @@
 
 int main_bench(){
     int N,sz[500],j=0,e,yz[500];
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(int i=0;i<N;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     for(int i=0;i<N;i++){
         if(sz[i]%2!=0){
@@ -23,9 +23,9 @@ int main_bench(){
     }
     for(int t=0;t<j;t++){
         if(t!=j-1){
-            printf("%d,",yz[t]);
+            my_printf("%d,",yz[t]);
         } else{
-            printf("%d",yz[t]);
+            my_printf("%d",yz[t]);
         }
     }
     return 0;

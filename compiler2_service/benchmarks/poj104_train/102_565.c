@@ -4,9 +4,9 @@ int main_bench(){
 	int i,k,n;
 	double sz[99],e;
 	char tmp[9],sex[99][99];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%lf",sex[i],&sz[i]);
+		my_scanf("%s%lf",sex[i],&sz[i]);
 	
 	}
 	for(k=0;k<n;k++){
@@ -24,9 +24,9 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(i==0){
-			printf("%.2lf",sz[i]);
+			my_printf("%.2lf",sz[i]);
 		}else{
-			printf(" %.2lf",sz[i]);
+			my_printf(" %.2lf",sz[i]);
 		}
 	}
 

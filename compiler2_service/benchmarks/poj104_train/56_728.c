@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,e,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n%10;
 	b=(n-a)/10;
 	b=b%10;
@@ -15,26 +15,26 @@ int main_bench()
 	e=e%10;
 	if(b==0&&c==0&&d==0&&e==0)
 	{
-		sum=a;printf("%d",sum);
+		sum=a;my_printf("%d",sum);
 	}
 	if(b!=0&&c==0&&d==0&&e==0)
 	{	
 		sum=a*10+b;
-		printf("%d",sum);
+		my_printf("%d",sum);
 	}
 	if(b!=0&&c!=0&&d==0&&e==0)
 	{
 		sum=a*100+b*10+c;
-		printf("%d",sum);
+		my_printf("%d",sum);
 	}
 	if(b!=0&&c!=0&&d!=0&&e==0)
 	{
 		sum=a*1000+b*100+c*10+d;
-		printf("%d",sum);
+		my_printf("%d",sum);
 	}
 	if(b!=0&&c!=0&&d!=0&&e!=0)
 	{
 	sum=a*10000+b*1000+c*100+d*10+e;
-		printf("%d",sum);
+		my_printf("%d",sum);
 	}
 }

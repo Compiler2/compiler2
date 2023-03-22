@@ -4,16 +4,16 @@ main_bench()
 {
    char p[1001],i=0,count=1;
    int l;
-   scanf("%s",p);
+   my_scanf("%s",p);
    l=strlen(p);
    while(1)
         {
            if(l==1)
               {
               if(p[0]>='A'&&p[0]<='Z')
-                   printf("(%c,%d)",p[0],count);
+                   my_printf("(%c,%d)",p[0],count);
                 else
-                  printf("(%c,%d)",p[0]-'a'+'A',count);
+                  my_printf("(%c,%d)",p[0]-'a'+'A',count);
                 break;
               }  
            else if(p[i]==p[i+1]||(p[i]-p[i+1]=='a'-'A')||(p[i]-p[i+1]=='A'-'a'))       
@@ -24,9 +24,9 @@ main_bench()
            else
               {
                 if(p[i]>='A'&&p[i]<='Z')
-                   printf("(%c,%d)",p[i],count);
+                   my_printf("(%c,%d)",p[i],count);
                 else
-                  printf("(%c,%d)",p[i]-'a'+'A',count);
+                  my_printf("(%c,%d)",p[i]-'a'+'A',count);
                 i++;
                 count=1;         
               } 

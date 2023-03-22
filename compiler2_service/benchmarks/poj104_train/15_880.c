@@ -8,14 +8,14 @@ int main_bench()
 	int i,j,m=0,n=0;
 	int sum;
 
-	scanf("%d",&bian);
+	my_scanf("%d",&bian);
 	row=bian;
 	col=bian;
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&shuzu[i][j]);
+			my_scanf("%d",&shuzu[i][j]);
 		}
 	}
 
@@ -44,6 +44,6 @@ int main_bench()
 	}
 
 	sum=(m-2)*(n-2);
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

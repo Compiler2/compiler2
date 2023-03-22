@@ -7,10 +7,10 @@ int main_bench()
 	int b;
 	int i=1;
 	int m=0,n=0;
-	scanf("%d\n",&a);
+	my_scanf("%d\n",&a);
 	while(i<=a)
 	{
-		scanf("%d\n",&b);
+		my_scanf("%d\n",&b);
 			if(b>=m)
 			{
 				n=m;
@@ -22,8 +22,8 @@ int main_bench()
 			}
 			i++;
 	}
-		printf("%d\n",m);
-		printf("%d\n",n);
+		my_printf("%d\n",m);
+		my_printf("%d\n",n);
 
     
 	return 0;

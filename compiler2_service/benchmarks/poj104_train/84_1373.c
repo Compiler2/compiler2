@@ -4,10 +4,10 @@ int main_bench()
 {
   int a;
   int num,result1,result2,cha;
-  scanf("%d\n",&a);
+  my_scanf("%d\n",&a);
   int i=1;
   while(i<=a){
-     scanf("%d\n",&num);
+     my_scanf("%d\n",&num);
     if(i==1){
        result1=num;
      } else if(i==2){
@@ -27,6 +27,6 @@ int main_bench()
      }
   i++;
   }
-  printf("%d\n%d\n",result1,result2);
+  my_printf("%d\n%d\n",result1,result2);
   return 0;
 }

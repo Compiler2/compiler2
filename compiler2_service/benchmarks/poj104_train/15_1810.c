@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,sz[100][100],r,s,p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int row=0;row<n;row++){
 		for(int col=0;col<n;col++){
-			scanf("%d",&(sz[row][col]));
+			my_scanf("%d",&(sz[row][col]));
 		}
 	}
 	for(int a=0;a<n;a++){
@@ -32,6 +32,6 @@ int main_bench(){
 	}
 	int e=(r-p-1)*(q-s-1);
 	
-	printf("%d",e);
+	my_printf("%d",e);
 	return 0;
 }

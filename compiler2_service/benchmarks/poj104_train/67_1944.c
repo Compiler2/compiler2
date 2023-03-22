@@ -3,23 +3,23 @@
 int main_bench(){
 	int n,a,b,k,i;
 	double s;
-	scanf("%d%d%d",&n,&a,&b);
+	my_scanf("%d%d%d",&n,&a,&b);
 	s=1.0*b/a;
 	k=n-1;
 	int *m=(int*)malloc(sizeof(int)*k);
 	int *p=(int*)malloc(sizeof(int)*k);
 	double *l=(double*)malloc(sizeof(double)*k);
 	for(i=0;i<n-1;i++){
-		scanf("%d%d",&m[i],&p[i]);
+		my_scanf("%d%d",&m[i],&p[i]);
 		l[i]=1.0*p[i]/m[i]-s;
 	}
 	for(i=0;i<n-1;i++){
 		if(l[i]>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}else if(l[i]<-0.05){
-			printf("worse\n");
+			my_printf("worse\n");
 		}else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	free(m);

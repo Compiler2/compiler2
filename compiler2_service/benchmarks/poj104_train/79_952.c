@@ -9,9 +9,9 @@ main_bench()
   {
   for(l=0;l<=1;l++)
   {
-  scanf("%d",&a[j][l]);
+  my_scanf("%d",&a[j][l]);
   }
-  printf("\n");
+  my_printf("\n");
   p++;
   if((a[j][0]==0)||a[j][1]==0)
    break;
@@ -24,7 +24,7 @@ main_bench()
     {
      k=((a[j][1]%i)+k)%i;
     }
-            printf("%d\n",k+1);
+            my_printf("%d\n",k+1);
   }          
   }
 }

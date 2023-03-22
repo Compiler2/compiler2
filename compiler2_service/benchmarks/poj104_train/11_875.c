@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,run=0,M[13],i,D;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	D=d;
 	if((y%400==0)||((y%100!=0)&&(y%4==0))){
 		run=1;
@@ -31,6 +31,6 @@ int main_bench()
 	for(i=1;i<m;i++){
 		D=D+M[i];
 	}
-	printf("%d",D);
+	my_printf("%d",D);
 	return 0;
 }

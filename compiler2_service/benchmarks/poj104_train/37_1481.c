@@ -5,10 +5,10 @@ main_bench()
       int t,i,x,j,r;
       int k=0;
       char a[100000];
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       for(i=0;i<t;i++)
       {
-                      scanf("%s",a);
+                      my_scanf("%s",a);
                       x=strlen(a);
                       for(j=0;j<x;j++)
                       {
@@ -31,13 +31,13 @@ main_bench()
                           
                                      if(r==x)
                                      {
-                                     printf("%c\n",a[j]);
+                                     my_printf("%c\n",a[j]);
                       k++;
                       break;
                       }
                       }
                       if(k==0)
-                      printf("no\n");
+                      my_printf("no\n");
                       else
                       k=0;
       }

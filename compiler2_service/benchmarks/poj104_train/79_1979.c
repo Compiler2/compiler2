@@ -4,7 +4,7 @@ int main_bench(){
 	int m,n,i,j,h,c,l,k,p,a=0;
 	int sz[300],ph[300];
 	for(i=0;m!=0;i++){
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		for(j=0;j<n;j++){
 			sz[j]=j+1;
 		}
@@ -24,7 +24,7 @@ int main_bench(){
 		a++;
 	}
 	for(i=0;i<a-1;i++){
-	printf("%d\n",ph[i]);
+	my_printf("%d\n",ph[i]);
 	}
 	return 0;
 }

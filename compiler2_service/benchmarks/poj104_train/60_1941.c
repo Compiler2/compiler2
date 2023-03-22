@@ -9,11 +9,11 @@ return k;
 int main_bench()
 {
 	int n,k=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;2*i+3<=n;i++)
 	if(pa(2*i+1))if(pa(2*i+3))
 	{
-		k=0;printf("%d %d\n",2*i+1,2*i+3);
+		k=0;my_printf("%d %d\n",2*i+1,2*i+3);
 	} 
-	if(k) printf("empty");
+	if(k) my_printf("empty");
 }

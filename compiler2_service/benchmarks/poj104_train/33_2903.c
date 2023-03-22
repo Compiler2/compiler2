@@ -4,10 +4,10 @@
 int main_bench()
 {	int i,len,n;
 	char str[256],str2[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>0)
 	{
-		scanf("%s",str);
+		my_scanf("%s",str);
 		len=strlen(str);
 		for(i=0;i<len;i++)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 				str2[i]='C';
 		}
 		str2[len]='\0';
-		printf("%s\n",str2);
+		my_printf("%s\n",str2);
 
 		n--;
 	}

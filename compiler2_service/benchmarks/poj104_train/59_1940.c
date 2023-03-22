@@ -3,13 +3,13 @@
 int main_bench(){
 char a[100][100];
 int b[100][100],i,j,l,m,n,c=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++){
 for(j=0;j<n;j++){
-scanf("%c",&a[i][j]);
+my_scanf("%c",&a[i][j]);
 if(a[i][j]=='@')b[i][j]=1;}
-scanf("\n");}
-scanf("%d",&m);
+my_scanf("\n");}
+my_scanf("%d",&m);
 for(l=2;l<=m;l++){
 for(i=0;i<n;i++)
 for(j=0;j<n;j++)
@@ -26,6 +26,6 @@ if(b[i][j]==1)a[i][j]='@';
 for(i=0;i<n;i++)
 for(j=0;j<n;j++)
 if(b[i][j]==1)c++;
-printf("%d",c);
+my_printf("%d",c);
 return 0;
 }

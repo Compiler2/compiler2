@@ -4,10 +4,10 @@ int main_bench()
 {		
  char a[1000][500];
  int i,j,n,m;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%s",a[i]);
+  my_scanf("%s",a[i]);
   m=strlen(a[i]);
   for(j=0;j<m;j++)
   {
@@ -20,7 +20,7 @@ int main_bench()
       else if(a[i][j]=='G')
       a[i][j]=a[i][j]-'G'+'C';
   }
-	  printf("%s\n",a[i]);
+	  my_printf("%s\n",a[i]);
  }
  return 0;
 }

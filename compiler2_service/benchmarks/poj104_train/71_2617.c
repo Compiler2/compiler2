@@ -3,10 +3,10 @@
 main_bench()
 {
     int n,i,y,m1,m2,t,sum;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d %d",&y,&m1,&m2);
+        my_scanf("%d %d %d",&y,&m1,&m2);
         sum=0;
         if(m1>m2)
         {
@@ -41,9 +41,9 @@ main_bench()
             if(12>=m1&&12<m2)
             sum=sum+31;
             if(sum%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
             else
-            printf("NO\n");
+            my_printf("NO\n");
         }
         else
         {
@@ -72,9 +72,9 @@ main_bench()
             if(12>=m1&&12<m2)
             sum=sum+31;
             if(sum%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
             else
-            printf("NO\n");
+            my_printf("NO\n");
         }
     }
 }

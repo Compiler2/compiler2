@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,k,i,szone[999],sztwo[999],a;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&szone[i]);
+		my_scanf("%d",&szone[i]);
 		sztwo[i]=szone[i];
 	}
     for(i=0;i<n;i++)
@@ -18,7 +18,7 @@ int main_bench()
 	   }
        if(szone[i]+sztwo[a]==k)
 	   {
-		   printf("yes");
+		   my_printf("yes");
 		   break;
 	   }
 	   else
@@ -26,7 +26,7 @@ int main_bench()
 		   if(i!=n-1)
 			   continue;
 		   else
-			printf("no");
+			my_printf("no");
 	   }
 	}
 	return 0;

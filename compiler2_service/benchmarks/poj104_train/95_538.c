@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,a,b=0,c=0;
 	char str1[80],str2[80];
 	gets(str1);
-	printf("\n");
+	my_printf("\n");
 	gets(str2);
 	a=strlen(str1);
 	for(i=0;i<a;i++)
@@ -27,8 +27,8 @@ int main_bench()
 		else continue;
 	}
 	if(b==0&&c==0)
-		printf("=\n");
+		my_printf("=\n");
 	else if(b==0&&c!=0)
-		printf("<\n");
-	else printf(">\n");
+		my_printf("<\n");
+	else my_printf(">\n");
 }

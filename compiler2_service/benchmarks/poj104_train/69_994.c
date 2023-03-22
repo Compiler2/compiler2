@@ -33,10 +33,10 @@ int main_bench()
     for(i=max;i>=0;i--)
     {
         if(i==0&&flag==0)
-        printf("%d",c[i]);
+        my_printf("%d",c[i]);
         if(c[i]==0&&flag==0)
         continue;
-        printf("%d",c[i]);
+        my_printf("%d",c[i]);
         flag=1;
     }
     return 0;

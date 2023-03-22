@@ -8,7 +8,7 @@ int main_bench(){
 	int n;
 	int da=0,xiao=100;
 	for(int i=0;i<100;i++){
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
                   len[i]=strlen(word[i]);
                   n=i;
                   if(len[i]==0){break;}
@@ -23,7 +23,7 @@ int main_bench(){
                        strcpy(max,word[j]);
                   }
          }
-         printf("%s\n",max);
-         printf("%s\n",min);
+         my_printf("%s\n",max);
+         my_printf("%s\n",min);
       	return 0;
 }

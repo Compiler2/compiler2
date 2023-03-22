@@ -6,7 +6,7 @@ int main_bench()
 	int n;
 	char a[600]="";
 	char b[600][10]={""};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	int s=strlen(a);
 	int i,j;
@@ -25,8 +25,8 @@ int main_bench()
 	int y=0;
 	for(i=0;i<k;i++)
 		if(count[i]>max)  max=count[i];
-		if(max==0) {printf("NO");return 0;}
-     printf("%d\n",max+1);
+		if(max==0) {my_printf("NO");return 0;}
+     my_printf("%d\n",max+1);
 	 for(i=0;i<k;i++)
 		 if(max==count[i])
 			 puts(b[i]);

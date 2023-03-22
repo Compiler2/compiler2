@@ -33,10 +33,10 @@ int main_bench()
  int a[6];
  int b[6];
  for(i=0;i<6;i++)
- scanf("%d",&a[i]);
+ my_scanf("%d",&a[i]);
  for(i=0;i<6;i++)
  {
    b[i]=reverse(a[i]) ;
-   printf("%d\n",b[i]);
+   my_printf("%d\n",b[i]);
  }
 }

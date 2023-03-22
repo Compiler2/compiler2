@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,a[50000],b[50000],i;
 	double k=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	int amin=a[0],bmax=b[0],f=1,g=0;
 	for(i=1;i<n;i++){
@@ -26,9 +26,9 @@ int main_bench(){
 		f=1;
 	}
 	if(g>=bmax-amin){
-		printf("%d %d",amin,bmax);
+		my_printf("%d %d",amin,bmax);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

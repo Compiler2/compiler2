@@ -4,7 +4,7 @@
 
 int main_bench()
 { int year,mon,day;
-  scanf("%d %d %d",&year,&mon,&day);
+  my_scanf("%d %d %d",&year,&mon,&day);
   
   
   int re;
@@ -46,6 +46,6 @@ int main_bench()
   }
 					  
   }
-  printf("%d",re);
+  my_printf("%d",re);
   return 0;
 }

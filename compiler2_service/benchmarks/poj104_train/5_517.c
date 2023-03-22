@@ -5,9 +5,9 @@ char b[501];
 int main_bench(){
 	double n,d=0;
 	int e=0,i,k=1,lena,lenb;
-	scanf("%lf",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	lena=(int)strlen(a);
 	lenb=(int)strlen(b);
 	for(i=0;a[i];i++){
@@ -18,8 +18,8 @@ int main_bench(){
 		else if(a[i]==b[i]){e++;}
 	}
     if(d==0){d=1.0*e/i;}
-	if(d>n){printf("yes");}
-	if(d<=n&&d>=0){printf("no");}
-	if(d<0){printf("error");}
+	if(d>n){my_printf("yes");}
+	if(d<=n&&d>=0){my_printf("no");}
+	if(d<0){my_printf("error");}
 return 0;
 }

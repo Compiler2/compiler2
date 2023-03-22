@@ -19,18 +19,18 @@ int main_bench()
 	if(j!=0)
 	{
 		for(i=(a[j-1]+1);i<l;i++)
-	        printf("%c",str[i]);
-	    printf(" ");
+	        my_printf("%c",str[i]);
+	    my_printf(" ");
 	    for(m=2;m<=j;m++)
 		{ 
 		    for(i=(a[j-m]+1);i<=(a[j-m+1]-1);i++)
-			    printf("%c",str[i]);
-		    printf(" ");
+			    my_printf("%c",str[i]);
+		    my_printf(" ");
 		}
 	    for(i=0;i<a[0];i++)
-		    printf("%c",str[i]);
+		    my_printf("%c",str[i]);
 	}
 	else
-		printf("%s",str);
+		my_printf("%s",str);
 return 0;
 }

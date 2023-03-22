@@ -4,9 +4,9 @@ int main_bench(){
 	int a[500],b[500],n,i,m,zonghe=0,e;
 	char x;
 	x=',';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i]%2!=0){
@@ -34,10 +34,10 @@ int main_bench(){
 		}
 	}
 	for(m=0;m<zonghe-1;m++){
-		printf("%d%c",b[m],x);
+		my_printf("%d%c",b[m],x);
 	}
 	if(m==zonghe-1){
-		printf("%d",b[m]);
+		my_printf("%d",b[m]);
 	}
 return 0;
 }

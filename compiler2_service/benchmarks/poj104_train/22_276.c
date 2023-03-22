@@ -7,7 +7,7 @@ int main_bench()
 	int i,num[300],j,add=0,count=0,no,tag=0,flag,max;
 	for(i=0;i<300;i++)
 		num[i]=0;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	for(i=0;i<strlen(str);i++)
 	{
 		if(str[i]==44)
@@ -30,14 +30,14 @@ int main_bench()
 
 	
 if(j==1)
-		printf("No\n");
+		my_printf("No\n");
 	no=j+1;
 	for(i=0,flag=1;i<no&&flag;i++)
 	{
 		if(num[i]!=num[0])
 			flag=0;
 	}
-	if(flag) printf("No\n");
+	if(flag) my_printf("No\n");
 	else
 	{
 	    max=0;
@@ -62,6 +62,6 @@ if(j==1)
 			{max=num[i];
 			tag=i;}
 		}
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 	}
 }

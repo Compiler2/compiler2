@@ -10,10 +10,10 @@ int main_bench()
 	int j;
 	int k;
 	int g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a%2==1)
 		{
 			num[i]=a;
@@ -34,7 +34,7 @@ int main_bench()
 			}
 		}
 	}
-         printf("%d",num[sum-1]);
+         my_printf("%d",num[sum-1]);
 	for(k=sum-2;k>=0;k--)
-		printf(",%d",num[k]);
+		my_printf(",%d",num[k]);
 }

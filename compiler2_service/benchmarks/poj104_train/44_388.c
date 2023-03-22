@@ -13,8 +13,8 @@ int reverse(int n){
 int main_bench(){
     int i,m;
     for(i=0;i<6;i++){
-                     scanf("%d",&m);
-                     printf("%d\n",reverse(m));
+                     my_scanf("%d",&m);
+                     my_printf("%d\n",reverse(m));
     }                 
     
     return 0;

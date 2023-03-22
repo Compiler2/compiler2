@@ -28,8 +28,8 @@ for(i=1;i<l;i++)
 }
 for(j=0;j<=k;j++)
 {
-if(a[j]<91) printf("(%c,%d)",a[j],b[j]);
-else printf("(%c,%d)",a[j]-32,b[j]);
+if(a[j]<91) my_printf("(%c,%d)",a[j],b[j]);
+else my_printf("(%c,%d)",a[j]-32,b[j]);
 }
 getchar();
 getchar();

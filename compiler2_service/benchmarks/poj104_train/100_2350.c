@@ -7,7 +7,7 @@ int main_bench()
     char c[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
     int d[26]={0},e[26]={0};
     int l,i,j,f;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	for(i=0;i<=(l-1);i++)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 	{
 		if(d[i]!=0)
 		{
-			printf("%c=%d\n",b[i],d[i]);
+			my_printf("%c=%d\n",b[i],d[i]);
 			f++;
 		}
 	}
@@ -48,10 +48,10 @@ int main_bench()
 	{
 		if(e[i]!=0)
 		{
-			printf("%c=%d\n",c[i],e[i]);
+			my_printf("%c=%d\n",c[i],e[i]);
 			f++;
 		}
 	}
 	if(f==0)
-		printf("No");
+		my_printf("No");
 }

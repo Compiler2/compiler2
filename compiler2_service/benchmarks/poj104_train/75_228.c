@@ -10,12 +10,12 @@ int  t;
 int i,n=0;
 char c;
 for(i=1;;i++){
-              scanf("%d%c",&a[i],&c);
+              my_scanf("%d%c",&a[i],&c);
               n++;
               if(c!=','){break;}
               }
 for(i=1;;i++){
-              scanf("%d%c",&b[i],&c);
+              my_scanf("%d%c",&b[i],&c);
               if(c!=','){break;}
               }
 for(i=1;i<=n;i++){
@@ -34,7 +34,7 @@ for(t=max1;t<max2;t=t+1){
 for(i=1;i<=max2-max1;i++){
                   if(d[i]>max){max=d[i];}
                   }
-printf("%d %d\n",n,max);
+my_printf("%d %d\n",n,max);
 	
 	return 0;
 }

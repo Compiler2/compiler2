@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[257],sub[257],re[257];
 	int i,j,k,n1,n2,n3,h=0;
-	scanf("%s%s%s",str,sub,re);
+	my_scanf("%s%s%s",str,sub,re);
 	n1=strlen(str);
 	n2=strlen(sub);
 	n3=strlen(re);
@@ -27,13 +27,13 @@ int main_bench()
 			{
 				h=1;
 				for(k=0;k<i;k++){
-				    printf("%c",str[k]);
+				    my_printf("%c",str[k]);
 				}
 				for(k=0;k<n3;k++){
-					printf("%c",re[k]);
+					my_printf("%c",re[k]);
 				}
 				for(k=i+n2;k<n1;k++){
-					printf("%c",str[k]);
+					my_printf("%c",str[k]);
 				}
 				break;
 			}
@@ -42,6 +42,6 @@ int main_bench()
 		 }
 	}
 	if(h==0)
-		printf("%s",str);
+		my_printf("%s",str);
 	return 0;
 }

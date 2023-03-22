@@ -18,7 +18,7 @@ int main_bench(){
 	}
 
 	for(i=0;i<k-1;i++){
-		printf("%d,",strlen(&str[sz[i]]));}
-	printf("%d",strlen(&str[sz[k-1]]));
+		my_printf("%d,",strlen(&str[sz[i]]));}
+	my_printf("%d",strlen(&str[sz[k-1]]));
  return 0;
 }

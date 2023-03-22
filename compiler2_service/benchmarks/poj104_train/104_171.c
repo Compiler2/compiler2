@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[10000],b[10000];
 	int x,y,i,k,j;
-	scanf("%d %d",&x,&y);
-	if(x==y)printf("%d\n",x);
-	else if(x*y==x||x*y==y)printf("1");
+	my_scanf("%d %d",&x,&y);
+	if(x==y)my_printf("%d\n",x);
+	else if(x*y==x||x*y==y)my_printf("1");
 	else
 	{
 	for(i=2;;i++)
@@ -55,6 +55,6 @@ int main_bench()
 		if(a[i-k]!=b[j-k])
 			break;
 	}
-	printf("%d\n",a[i-k+1]);
+	my_printf("%d\n",a[i-k+1]);
 	}
 }

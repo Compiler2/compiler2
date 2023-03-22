@@ -35,6 +35,6 @@ int main_bench()
 	      min=len;
 	  }
 	}
-    printf("%s\n%s\n",string[maxstr],string[minstr]);
+    my_printf("%s\n%s\n",string[maxstr],string[minstr]);
     return 0;
 }

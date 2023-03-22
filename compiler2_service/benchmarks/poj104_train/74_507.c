@@ -5,7 +5,7 @@ int su(int a);
 int main_bench()
 {
 	int m,n,i,j=0,a[99];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(hui(i)==1&&su(i)==1) 
@@ -17,11 +17,11 @@ int main_bench()
 	}
 	if(j>=1)
 	{
-		printf("%d",a[0]);
-		for(i=1;i<j;i++) printf(",%d",a[i]);
+		my_printf("%d",a[0]);
+		for(i=1;i<j;i++) my_printf(",%d",a[i]);
 	}
-	else printf("no");
-	printf("\n");
+	else my_printf("no");
+	my_printf("\n");
 }
 int hui(int a)
 {

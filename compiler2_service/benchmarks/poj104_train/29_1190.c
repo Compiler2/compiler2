@@ -4,7 +4,7 @@ int main_bench()
 {
     int m,n,p,q;
 	double sum;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	double sz[1000];
 	sz[0]=1;
 	sz[1]=2;
@@ -13,7 +13,7 @@ int main_bench()
 	}
 	double s[100];
     for(p=1;p<=m;p++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		sum=0;
 		for(q=0;q<n;q++){
 			sum+=sz[q+1]/sz[q];
@@ -21,7 +21,7 @@ int main_bench()
 		s[p]=sum;
 	}
 	for(p=1;p<=m;p++){
-		printf("%.3lf\n",s[p]);
+		my_printf("%.3lf\n",s[p]);
 	}
 	
 

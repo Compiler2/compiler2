@@ -20,8 +20,8 @@ int main_bench(){
 			  q[j]=q[j]-32;
 	 }
 	 int a=strcmp(p,q);
-	     if(a>0)printf(">");
-		 else if(a<0)printf("<");
-		 else if(a==0)printf("=");
+	     if(a>0)my_printf(">");
+		 else if(a<0)my_printf("<");
+		 else if(a==0)my_printf("=");
 	 return 0;
 }

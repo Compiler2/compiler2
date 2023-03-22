@@ -6,19 +6,19 @@ int main_bench()
 	int n,i,j;
 	int a[101][101]={0};
 	char map[101][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf(" %c ",&map[i][j]);
+			my_scanf(" %c ",&map[i][j]);
 			if(map[i][j]=='.')a[i][j]=1;     
 			else if(map[i][j]=='#')a[i][j]=0;
 			else a[i][j]=2   ;                 
 		}
 	}
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	m=m-1;
 	while(m--)
 	{
@@ -56,7 +56,7 @@ int main_bench()
 				if(a[i][j]==2) num++;
 			}
 		}
-	printf("%d",num);
+	my_printf("%d",num);
 
 
 	

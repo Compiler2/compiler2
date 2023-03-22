@@ -3,9 +3,9 @@
 int main_bench(){
 int N,i,j,a,num;
 int x[500],y[500];
-scanf("%d",&N); 
+my_scanf("%d",&N); 
 for (i=0;i<N;i++){
-       scanf("%d",&x[i]);
+       my_scanf("%d",&x[i]);
 }
 for(j=0;j<N;j++){
    for(int k=0;k<N-j;k++){
@@ -25,10 +25,10 @@ for (int t=0;t<N;t++){
             }
         }
         if (num==0){
-        printf("%d",x[t]);
+        my_printf("%d",x[t]);
         }
       else {
-           printf(",%d",x[t]);
+           my_printf(",%d",x[t]);
       }
     }
 }

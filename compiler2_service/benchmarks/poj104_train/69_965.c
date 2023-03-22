@@ -4,9 +4,9 @@
 main_bench(){
 	char s1[250], s2[250];
 	int i, j, l1, l2, l, num[250], n[250];
-	scanf("%s", s1);
-	scanf("%s", s2);
-	if(strcmp(s1, s2)==0) printf("0");
+	my_scanf("%s", s1);
+	my_scanf("%s", s2);
+	if(strcmp(s1, s2)==0) my_printf("0");
 	else{
 	l1=strlen(s1);
 	l2=strlen(s2);
@@ -30,12 +30,12 @@ main_bench(){
 	l=(n[0]>=10);
 	for(i=0; i<250; i++) n[i]-=10*(n[i]>=10);
 	if(l==1){
-		printf("1");
+		my_printf("1");
 		for(i=249-((l1>l2)*l1+(l1<=l2)*l2); i<250; i++) if(n[i]>0 || i==249) break;
-		for(j=i; j<250; j++) printf("%d", n[j]);
+		for(j=i; j<250; j++) my_printf("%d", n[j]);
 	}
 	else{
 		for(i=249-((l1>l2)*l1+(l1<=l2)*l2); i<250; i++) if(n[i]>0 || i==249) break;
-		for(j=i; j<250; j++) printf("%d", n[j]);
+		for(j=i; j<250; j++) my_printf("%d", n[j]);
 	}
 }}

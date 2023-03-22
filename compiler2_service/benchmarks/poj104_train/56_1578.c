@@ -4,7 +4,7 @@ int main_bench()
 {
 	long m,n;
 	int a,b,c,d,e;
-	scanf("%ld",&n);
+	my_scanf("%ld",&n);
 	if(n>=10000)
 	{
 		a=n/10000;
@@ -42,5 +42,5 @@ int main_bench()
 				}
 				else m=n;
 		
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 }

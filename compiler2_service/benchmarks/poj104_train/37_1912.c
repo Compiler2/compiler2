@@ -4,10 +4,10 @@ main_bench()
 {
 	char s[100005];
 	int t,count,len,c;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(int i=0;i<t;i++)
 	{
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		c=0;
 		len=strlen(s);
 		int a[100005]={0};
@@ -21,14 +21,14 @@ main_bench()
 			}
 			if(count==1)
 			{
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				c++;
 				break;
 			}
 		}
 		if(c==0)
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	

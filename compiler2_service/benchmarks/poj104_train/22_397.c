@@ -12,7 +12,7 @@ int main_bench()
 	int a[300]={0};
 	do
 	{
-	scanf("%d%c",&a[i],&fuhao);
+	my_scanf("%d%c",&a[i],&fuhao);
 	i++;
 	}
 	while (fuhao!='\n');
@@ -51,9 +51,9 @@ int main_bench()
 		   
 	}
 
-result: if(number==1) printf("%d",a[j]);
+result: if(number==1) my_printf("%d",a[j]);
 
-		else  printf("No");
+		else  my_printf("No");
 	    
 		
 		

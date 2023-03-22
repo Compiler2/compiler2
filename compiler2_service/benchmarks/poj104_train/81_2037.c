@@ -27,22 +27,22 @@ main_bench()
 	for (k = 0;k < 5;k++)
 	{
 		for (l = 0;l < 5;l++)
-			scanf("%d",(*(p+k)+l));
+			my_scanf("%d",(*(p+k)+l));
 	}
-    scanf("%d%d",&i,&j);
+    my_scanf("%d%d",&i,&j);
 	s = trans(a,i,j);
 	if (s == 0)
-		printf("error");
+		my_printf("error");
 	else
 	{
         for (k = 0;k < 5;k++)
 		{
-             printf("%d",a[k][0]);
+             my_printf("%d",a[k][0]);
 		     for (l = 1;l < 5;l++)
 			 {
-				 printf(" %d",*(*(p+k)+l));
+				 my_printf(" %d",*(*(p+k)+l));
 			 }
-			 printf("\n");
+			 my_printf("\n");
 		}
 	}
 }

@@ -23,7 +23,7 @@ int main_bench(){
         }
     }
     for(int i=0;i<n;i++){
-        printf("%c",zfc[i]);
+        my_printf("%c",zfc[i]);
     }
     return 0;
 }

@@ -17,8 +17,8 @@ int main_bench()
    }
 }
      for(q=0;q<t-1;q++)
-     printf("%d,",b[q]);
-     printf("%d",b[t-1]);
+     my_printf("%d,",b[q]);
+     my_printf("%d",b[t-1]);
 }
         
        

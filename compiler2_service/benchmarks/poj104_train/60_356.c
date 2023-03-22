@@ -25,7 +25,7 @@ main_bench()
 {
 int n,a,b,c,d,i;
 int count=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=2;i<=n-2;i++)
 {
    a=i;
@@ -33,12 +33,12 @@ for(i=2;i<=n-2;i++)
    c=prime(a);
    d=prime(b);
    if(c==1&&d==1)
-   {printf("%d %d\n",a,b);
+   {my_printf("%d %d\n",a,b);
      count++;
      }
 }
  if(count==0)
- printf("empty");
+ my_printf("empty");
    getchar();
    getchar();
 }

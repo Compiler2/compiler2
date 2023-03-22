@@ -39,5 +39,5 @@ main_bench()
      } 
      k+=z-1;
    }
-   printf("%s",s);
+   my_printf("%s",s);
 }

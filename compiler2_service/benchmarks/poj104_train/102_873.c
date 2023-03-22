@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j1,j2,j;
 	double a[50],b[50],c[50];
 	char xb[50][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %lf",&xb[i],&a[i]);
+		my_scanf("%s %lf",&xb[i],&a[i]);
 	}
 	j1=0;
 	for(i=0;i<n;i++)
@@ -34,7 +34,7 @@ int main_bench()
 	    }
 	}
 	for(i=0;i<j1;i++)
-	printf("%.2lf ",b[i]);
+	my_printf("%.2lf ",b[i]);
 	for(i=j2-1;i>0;i--)
 	{
 		for(j=0;j<i;j++)
@@ -49,9 +49,9 @@ int main_bench()
 	    }
 	}
 	for(i=j2-1;i>0;i--)
-	printf("%.2lf ",c[i]);
-         printf("%.2lf",c[0]);
-	scanf("%d",&i);
+	my_printf("%.2lf ",c[i]);
+         my_printf("%.2lf",c[0]);
+	my_scanf("%d",&i);
 	return 0;
 }
 

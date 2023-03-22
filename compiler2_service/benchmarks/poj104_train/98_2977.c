@@ -3,28 +3,28 @@
 main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char word[n][41];
     for(int i=0;i<n;i++)
     {
-        scanf("%s",word[i]);
+        my_scanf("%s",word[i]);
     }
     int l=0;
     for(int i=0;i<n;i++)
     {
         if(l==0)
         {
-            printf("%s",word[i]);
+            my_printf("%s",word[i]);
             l+=strlen(word[i]);
         }
         else
         {
             l+=strlen(word[i])+1;
             if(l<81)
-                printf(" %s",word[i]);
+                my_printf(" %s",word[i]);
             else
             {
-                printf("\n");
+                my_printf("\n");
                 l=0;
                 i--;
             }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,n1,n2,t=0,a1[26],a2[26],a3[26],a4[26],flag=0;
 	char s1[100],s2[100],*p1,*p2;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	p1=s1;
 	p2=s2;
 	for(i=0;i<26;i++)
@@ -15,7 +15,7 @@ int main_bench()
 	n1=strlen(s1);
 	n2=strlen(s2);
 	if(n1!=n2)
-	{printf("NO\n");}
+	{my_printf("NO\n");}
 	if(n1==n2)
 	{
 		for(i=0;i<n1;i++)
@@ -41,13 +41,13 @@ int main_bench()
 		{
 			if((a1[i]!=a2[i])||(a3[i]!=a4[i]))
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				flag=1;
 				break;
 			}
 		}
 		if(flag==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	return 0;
 }

@@ -20,7 +20,7 @@ int main_bench()
 			{
 				if(line[j]==boy)
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 					line[j]=' ';break;
 				}
 			}

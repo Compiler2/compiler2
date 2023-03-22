@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,t;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
      for(i=0;i<n;i++)
     {
                     t=1;
@@ -13,7 +13,7 @@ int main_bench()
                     l=strlen(c);
                    if (c[0]>='0'&&c[0]<='9')
                     {
-                        printf("0\n");
+                        my_printf("0\n");
                     }
                     else
                     {
@@ -21,13 +21,13 @@ int main_bench()
                       {
                            if(c[j]!='_'&&(c[j]<'a'||c[j]>'z')&&(c[j]<'A'||c[j]>'Z')&&(c[j]<'0'||c[j]>'9'))
                            {
-                                      printf("0\n");
+                                      my_printf("0\n");
                                       t=0;
                                       break;
                            }
                       }
                       if(t==1)
-                      printf("1\n");
+                      my_printf("1\n");
                     }
     
     }

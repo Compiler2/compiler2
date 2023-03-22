@@ -7,12 +7,12 @@ int main_bench()
 	int a[200],b[200],c[200];
 	int d[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int e[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d",&a[i]);
-		scanf ("%d",&b[i]);
-		scanf ("%d",&c[i]);
+		my_scanf ("%d",&a[i]);
+		my_scanf ("%d",&b[i]);
+		my_scanf ("%d",&c[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -35,11 +35,11 @@ int main_bench()
 			}
 			if (m%7==0)
 			{
-				printf ("YES\n");
+				my_printf ("YES\n");
 			}
 			else
 			{
-				printf ("NO\n");
+				my_printf ("NO\n");
 			}
 		}
 		else
@@ -60,11 +60,11 @@ int main_bench()
 			}
 			if (m%7==0)
 			{
-				printf ("YES\n");
+				my_printf ("YES\n");
 			}
 			else
 			{
-				printf ("NO\n");
+				my_printf ("NO\n");
 			}
 		}
 	}

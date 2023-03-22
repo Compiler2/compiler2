@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char zfc[300],*p;
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	int a=0;
 	char i;
     for(p=zfc;*p!='\0';p++)
@@ -12,7 +12,7 @@ int main_bench()
 			a=a+1;	
 	}
 	if(a==0)
-	printf("No");
+	my_printf("No");
 	a=0;
 	for(i=97;i<=123;i++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 		}
 	if(a==0)
 		continue;
-	printf("%c=%d\n",i,a);
+	my_printf("%c=%d\n",i,a);
 	a=0;
 	}
 

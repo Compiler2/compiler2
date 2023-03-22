@@ -5,9 +5,9 @@ int main_bench(){
 	int isRunNian(int year);
 	int DiJiTian(int year, int month);
 	int sz[200],jg;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&year,&month1,&month2);
+		my_scanf("%d %d %d",&year,&month1,&month2);
 		if((DiJiTian(year,month2)-DiJiTian(year,month1))<0){
 			jg=-(DiJiTian(year,month2)-DiJiTian(year,month1));
 		}
@@ -21,10 +21,10 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]==1){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,i,p,j,k,s,l;
 	char a[110],b[110]={' '};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (k=1;k<=n;k++)
 	{	
 		s=0;
-		scanf("%s",&a);
+		my_scanf("%s",&a);
 		l=strlen(a);
 		for (i=0;i<=l-1;i++)
 		{
@@ -62,15 +62,15 @@ int main_bench()
 		
 		for (j=0;j<=l-1;j++)	
 		{
-			printf("%c",a[j]);
+			my_printf("%c",a[j]);
 		}
 		
-		printf("\n");		
+		my_printf("\n");		
 		for (j=0;j<=l-1;j++)	
 		{
-			printf("%c",b[j]);
+			my_printf("%c",b[j]);
 		}
-		printf("\n");	
+		my_printf("\n");	
 		
 	}
 

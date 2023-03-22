@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[310],max,min,n,i;
 	float sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(i==0)
 		{
 			max=a[i];min=a[i];sum=a[i];
@@ -21,8 +21,8 @@ int main_bench()
 	}
 	sum=sum/n;
 	if((max-sum)>(sum-min))
-		printf("%d",max);
+		my_printf("%d",max);
 	else if((max-sum)<(sum-min))
-		printf("%d",min);
-	else printf("%d,%d",min,max);
+		my_printf("%d",min);
+	else my_printf("%d,%d",min,max);
 }

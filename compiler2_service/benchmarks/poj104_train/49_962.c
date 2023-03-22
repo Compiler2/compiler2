@@ -5,7 +5,7 @@ int main_bench()
 {
   int i,j,k,flag,v=0,x,y,xci;
   char str[500],hw[100][200];
-  scanf("%s",str);
+  my_scanf("%s",str);
   int l=strlen(str);
   for(i=2;i<=l;i++)
   { 
@@ -27,7 +27,7 @@ int main_bench()
     }
   }
   for(i=0;i<v;i++)
-  printf("%s\n",hw[i]);
+  my_printf("%s\n",hw[i]);
 
   
 }

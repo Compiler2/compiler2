@@ -5,12 +5,12 @@ int main_bench()
 	int i,n;
 	double a1,a2,b1[100],b2[100],d[100],c;
 	char jieguo[100][7],jieguo1[7]="better",jieguo2[7]="worse",jieguo3[7]="same";
-	scanf("%d",&n);
-	scanf("%lf%lf",&a1,&a2);
+	my_scanf("%d",&n);
+	my_scanf("%lf%lf",&a1,&a2);
 	c=a2/a1;
 	for(i=0;i<n-1;i++)
 	{
-		scanf("%lf%lf",&b1[i],&b2[i]);
+		my_scanf("%lf%lf",&b1[i],&b2[i]);
 		d[i]=b2[i]/b1[i];
 		if(d[i]-c>0.05)
 		{
@@ -27,8 +27,8 @@ int main_bench()
 	}
 	for(i=0;i<n-2;i++)
 	{
-		printf("%s\n",jieguo[i]);
+		my_printf("%s\n",jieguo[i]);
 	}
-	printf("%s",jieguo[n-2]);
+	my_printf("%s",jieguo[n-2]);
 	return 0;
 }

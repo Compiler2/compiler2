@@ -9,9 +9,9 @@ int main_bench()
 	}stu[100],temp;
 	
 	int n,i,sum=0,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].cj,&stu[i].py,&stu[i].gb,&stu[i].xb,&stu[i].lw);
+		my_scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].cj,&stu[i].py,&stu[i].gb,&stu[i].xb,&stu[i].lw);
 	}
 	for (i=0;i<n;i++){
 		stu[i].sum=0;
@@ -37,6 +37,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n%d\n%d",stu[0].name,stu[0].sum,sum);
+	my_printf("%s\n%d\n%d",stu[0].name,stu[0].sum,sum);
 	return 0;
 }

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int ss[100],sz[100];
 	int i,qk[100];
 	for(i=0;i<n;i++){
-		scanf("%d%d",&ss[i],&sz[i]);
+		my_scanf("%d%d",&ss[i],&sz[i]);
 	}
 	int e;
 	for(e=0;e<n;e++){
@@ -27,7 +27,7 @@ int main_bench(){
 		if(c>a){a=c;}
 		c=0;
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }
 

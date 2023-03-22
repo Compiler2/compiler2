@@ -28,16 +28,16 @@ int main_bench()
 	for (k=0;k<=4;k++)
 	{
 		for (l=0;l<=4;l++)
-			scanf("%d",&b[k][l]);
+			my_scanf("%d",&b[k][l]);
 		
 	}
 	
 	
-	scanf("%d %d",&m,&n);	
+	my_scanf("%d %d",&m,&n);	
 	c = mat(b,m,n);
 	
 	if (c==0)
-		printf("error");
+		my_printf("error");
 	
 	else if (c==1)
 	{
@@ -45,12 +45,12 @@ int main_bench()
 		{
 			for (l=0;l<=3;l++)
 			{
-				printf("%d ",b[k][l]);
+				my_printf("%d ",b[k][l]);
 			}
 			
-		printf("%d",b[k][4]);
+		my_printf("%d",b[k][4]);
 
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	

@@ -22,10 +22,10 @@ int main_bench()
   if(a[i]==b[i])
   x=x+1;
   else
-  if(a[i]>b[i]) {printf(">");break;}
+  if(a[i]>b[i]) {my_printf(">");break;}
   else
-  if(a[i]<b[i]) {printf("<"); break;}
+  if(a[i]<b[i]) {my_printf("<"); break;}
 }
  if(x==n)
- printf("=");
+ my_printf("=");
 }

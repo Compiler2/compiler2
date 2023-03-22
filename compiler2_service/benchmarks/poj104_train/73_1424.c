@@ -8,7 +8,7 @@ int main_bench(){
                     if(i==0||i==6||j==0||j==6)
                     a[i][j]=0;
                     else
-                    scanf("%lf",&a[i][j]);
+                    my_scanf("%lf",&a[i][j]);
                     }
             }
     for(int m=1;m<6;m++){
@@ -27,10 +27,10 @@ int main_bench(){
                             }
             if(c[m]==1){
             d=1;
-            printf("%d %d %.0lf",y,x,max);
+            my_printf("%d %d %.0lf",y,x,max);
             }
             }
     if(d==0)
-    printf("not found");
+    my_printf("not found");
     return 0;
 }

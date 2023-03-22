@@ -6,10 +6,10 @@ int main_bench()
     int n;
     int j=0;
     char s[50][20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(m=0;m<n;m++)
     {
-       scanf("%s",s[m]);
+       my_scanf("%s",s[m]);
      }
      for(m=0;m<n;m++)
      {
@@ -26,7 +26,7 @@ int main_bench()
       }
        for(m=0;m<n;m++)
     {
-       printf("%s\n",s[m]);
+       my_printf("%s\n",s[m]);
      }
      return 0;
 }

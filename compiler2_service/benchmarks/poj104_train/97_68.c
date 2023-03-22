@@ -9,7 +9,7 @@ int main_bench(){
 	b[3]=10;
 	b[4]=5;
 	b[5]=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int q=n,p=n;
 	a[0]=q/100;
 	p-=a[0]*b[0];
@@ -19,7 +19,7 @@ int main_bench(){
         p-=a[i]*b[i];
 	}
 	for(i=0;i<6;i++){
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}		
 	return 0;
 }

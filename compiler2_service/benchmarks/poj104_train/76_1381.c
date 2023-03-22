@@ -4,13 +4,13 @@ int main_bench()
 {
     int i,j,a[50000],b[50000],x[10000],A,B,n,s=0,k=0,trigger,max;
     
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     
     for(i=0;i<10000;i++)
         x[i]=0;
     
     for(i=0;i<n;i++)
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
 
     
     for(j=0;j<n;j++)
@@ -33,14 +33,14 @@ int main_bench()
         if(x[i]==0)
         {
             
-            printf("no");
+            my_printf("no");
             return 0;
                 
         }
     
     }
     
-    printf("%d %d",A,B);
+    my_printf("%d %d",A,B);
     
     return 0;
 }

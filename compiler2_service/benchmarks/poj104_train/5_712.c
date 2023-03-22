@@ -6,9 +6,9 @@ int main_bench(){
 	int i;
 	int a,b;
 	char zfc1[1000],zfc2[1000];
-	scanf("%lf",&k);
-	scanf("%s",&zfc1);
-	scanf("%s",&zfc2);
+	my_scanf("%lf",&k);
+	my_scanf("%s",&zfc1);
+	my_scanf("%s",&zfc2);
 	a=strlen(zfc1);
 	b=strlen(zfc2);
 	for(i=0;i<a;i++){
@@ -28,7 +28,7 @@ int main_bench(){
 		}
 	}
 	if(a==0||b==0||a!=b){
-		printf("error");
+		my_printf("error");
 	}else{
 	for(i=0;i<b;i++){
 		if(zfc1[i]==zfc2[i]){
@@ -38,9 +38,9 @@ int main_bench(){
 		}
 	}
 	if(b*k<xt){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	}
 	return 0;

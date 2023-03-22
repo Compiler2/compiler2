@@ -28,13 +28,13 @@ int main_bench()
 					
 					if((k==0)&&(w==1))
 					{
-						printf("%d",j);
+						my_printf("%d",j);
 					}
 					else
 					{
 						if((k==1)&&(w==1))
 
-							printf(",%d",j);
+							my_printf(",%d",j);
 					}
 					w=0;k=1;j=0;
 				}
@@ -44,12 +44,12 @@ int main_bench()
 	}
 	if((k==0)&&(w==1))
 					{
-						printf("%d",j);
+						my_printf("%d",j);
 					}
 					else
 					{
 						if((k==1)&&(w==1))
 
-							printf(",%d",j);
+							my_printf(",%d",j);
 					}
 }

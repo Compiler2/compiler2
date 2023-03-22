@@ -3,11 +3,11 @@
 int main_bench() 
 { 
 	int n,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n!=0)
 	{
 		t=t*10+n%10;
 		n=(n-n%10)/10;	
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 }

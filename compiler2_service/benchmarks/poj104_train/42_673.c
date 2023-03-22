@@ -7,10 +7,10 @@ int main_bench()
     
     int i,k,n,p,j;
 	int a[100010];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&k);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&k);
 	for(i=0;i<n-1;i++)
 	{
 		if(a[i]==k)
@@ -37,9 +37,9 @@ int main_bench()
 	for(i=0;i<=p;i++)
 	{
 		if(i<p)
-		{printf("%d ",a[i]);}
+		{my_printf("%d ",a[i]);}
 		if(i==p)
-                   {printf("%d",a[i]);}
+                   {my_printf("%d",a[i]);}
 	}
 	return 0;
 }

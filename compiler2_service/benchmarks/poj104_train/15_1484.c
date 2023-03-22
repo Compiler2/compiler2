@@ -4,11 +4,11 @@ main_bench()
 {
 int row,col,n,sum,a,b,c,d,s;
 long pic[100][100];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 
 for(row=0;row<n;row++){
   for(col=0;col<n;col++)
-  {scanf("%d",&pic[row][col]);}
+  {my_scanf("%d",&pic[row][col]);}
   }
 
 
@@ -37,7 +37,7 @@ for(row=n-1;row>=0;row--){
   }
 
 s=(c-a-1)*(d-b-1);
-printf("%d",s);
+my_printf("%d",s);
 
 return 0;
 }

@@ -6,10 +6,10 @@ int main_bench(){
 int i,j,n;
 	double a,sv[1000][2];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&sv[i][j]);
+			my_scanf("%d",&sv[i][j]);
 		}
 	}
 
@@ -18,16 +18,16 @@ int i,j,n;
 	for(i=1;i<n;i++){
 		if(a-sv[i][1]/sv[i][0]>0&&(a-sv[i][1]/sv[i][0])>0.05){
 			
-				printf("worse\n");
+				my_printf("worse\n");
 		
 		}
 		else if((a-sv[i][1]/sv[i][0])<0&&sv[i][1]/sv[i][0]-a>0.05){
 		
-				printf("better\n");
+				my_printf("better\n");
 			}
 		
 		else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

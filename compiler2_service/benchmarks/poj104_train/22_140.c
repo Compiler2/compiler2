@@ -29,7 +29,7 @@ int main_bench()
 
 	
 	char a[10000],d[100][100];
-	scanf("%s",a);
+	my_scanf("%s",a);
 		b=strlen(a);
 	j=0;
 	k=0;
@@ -73,7 +73,7 @@ int main_bench()
 	}
 	
 	if(s==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=0;i<n+1;i++)
@@ -98,7 +98,7 @@ int main_bench()
 				break;
 		
 		}
-		printf("%d",N);
+		my_printf("%d",N);
 
 		
 

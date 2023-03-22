@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,i;
 	char a[200]={'0'},b[200]={'0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		char c[200]={'0'};
 		int lena,lenb;
 		int d,j;
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 		lena=strlen(a);
 		lenb=strlen(b);
 		d=lena-lenb;
@@ -32,8 +32,8 @@ int main_bench()
 			}
 		}
 		for(j=0;j<lena;j++)
-			printf("%c",c[j]);
-		printf("\n");
+			my_printf("%c",c[j]);
+		my_printf("\n");
 	}
 return 0;
 }

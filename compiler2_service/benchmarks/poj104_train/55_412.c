@@ -4,7 +4,7 @@ int main_bench()
 {
   char ch1[1000],ch2[1000];
   long a,b,n=0,i,j,p=1;
-  scanf("%d%s%d",&a,ch1,&b);
+  my_scanf("%d%s%d",&a,ch1,&b);
   for(i=strlen(ch1)-1;i>=0;i--)
   {
     if(ch1[i]>='0'&&ch1[i]<='9')n+=(ch1[i]-'0')*p;
@@ -23,6 +23,6 @@ int main_bench()
   }
   else {ch2[0]='0';i=1;}
   for(j=i-1;j>=0;j--)
-  printf("%c",ch2[j]);
-  printf("\n");
+  my_printf("%c",ch2[j]);
+  my_printf("\n");
 }

@@ -15,10 +15,10 @@ int main_bench()
     int k,i,t,max;
     t=max=0;
     struct student stu[100];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=0;i<=k-1;i++)
     {
-                       scanf("%s %d%d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].l,&stu[i].w,&stu[i].paper);
+                       my_scanf("%s %d%d %c %c %d",stu[i].name,&stu[i].final,&stu[i].cla,&stu[i].l,&stu[i].w,&stu[i].paper);
                        stu[i].total=0;
                        if(stu[i].final>80&&stu[i].paper>=1) stu[i].total=stu[i].total+8000;
                        if(stu[i].final>85&&stu[i].cla>80) stu[i].total=stu[i].total+4000;
@@ -36,11 +36,11 @@ int main_bench()
     {
                        if(stu[i].total==max)
                        {
-                       printf("%s\n",stu[i].name);
-                       printf("%d\n",stu[i].total);
+                       my_printf("%s\n",stu[i].name);
+                       my_printf("%d\n",stu[i].total);
                        break;
                        }
     }
-    printf("%d\n",t);
+    my_printf("%d\n",t);
 return 0;
 }

@@ -9,8 +9,8 @@ int main_bench()
 	max1=max2=0;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d",&t);
-		scanf("%c",&c);
+		my_scanf("%d",&t);
+		my_scanf("%c",&c);
 		if(t==x)
 			j=j+1;
 		if(t>max1)
@@ -25,10 +25,10 @@ int main_bench()
 			break;
 	}
 	if(i<=1)
-		printf("No");
+		my_printf("No");
 	else if(i==j)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",max2);
+		my_printf("%d",max2);
 	return 0;
 }

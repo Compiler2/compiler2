@@ -17,34 +17,34 @@ int main_bench(){
 								D=(c!=1);
 								E=(d==1);
 								if((A==1)&&(B==1)&&(C==0)&&(D==0)&&(E==0)&&( ((a==1)&&(b==2)) || ((a==2)&&(b==1)) ))
-									printf("%d %d %d %d %d\n",a,b,c,d,e);
+									my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 								else
 									if((A==1)&&(B==0)&&(C==1)&&(D==0)&&(E==0)&&( ((a==1)&&(c==2)) || ((a==2)&&(c==1)) ))
-										printf("%d %d %d %d %d\n",a,b,c,d,e);
+										my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 									else
 										if((A==1)&&(B==0)&&(C==0)&&(D==1)&&(E==0)&&( ((a==1)&&(d==2)) || ((a==2)&&(d==1)) ))
-											printf("%d %d %d %d %d\n",a,b,c,d,e);
+											my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 										else
 											if((A==1)&&(B==0)&&(C==0)&&(D==0)&&(E==1)&&( ((a==1)&&(e==2)) || ((a==2)&&(e==1)) ))
-												printf("%d %d %d %d %d\n",a,b,c,d,e);
+												my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 											else
 												if((A==0)&&(B==1)&&(C==1)&&(D==0)&&(E==0)&&( ((c==1)&&(b==2)) || ((c==2)&&(b==1)) ))
-													printf("%d %d %d %d %d\n",a,b,c,d,e);
+													my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 												else
 													if((A==0)&&(B==1)&&(C==0)&&(D==1)&&(E==0)&&( ((d==1)&&(b==2)) || ((d==2)&&(b==1)) ))
-														printf("%d %d %d %d %d\n",a,b,c,d,e);
+														my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 													else
 														if((A==0)&&(B==1)&&(C==0)&&(D==0)&&(E==1)&&( ((e==1)&&(b==2)) || ((e==2)&&(b==1)) ))
-															printf("%d %d %d %d %d\n",a,b,c,d,e);
+															my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 														else
 															if((A==0)&&(B==0)&&(C==1)&&(D==1)&&(E==0)&&( ((c==1)&&(d==2)) || ((c==2)&&(d==1)) ))
-																printf("%d %d %d %d %d\n",a,b,c,d,e);
+																my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 															else
 																if((A==0)&&(B==0)&&(C==1)&&(D==0)&&(E==1)&&( ((c==1)&&(e==2)) || ((c==2)&&(e==1)) ))
-																	printf("%d %d %d %d %d\n",a,b,c,d,e);
+																	my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 																else
 																	if((A==0)&&(B==0)&&(C==0)&&(D==1)&&(E==1)&&( ((e==1)&&(d==2)) || ((e==2)&&(d==1)) ))
-																		printf("%d %d %d %d %d\n",a,b,c,d,e);
+																		my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 						}
 					}
 	return 0;

@@ -10,7 +10,7 @@ int rn(int y){
 
 int main_bench(){
 	int ye,mon,day,d,i,x;
-	scanf("%d%d%d",&ye,&mon,&day);
+	my_scanf("%d%d%d",&ye,&mon,&day);
 	d=day;
 	for(i=1;i<mon;i++){
 		if(i==1||i==3||i==5||i==7||i==8||i==10)
@@ -29,19 +29,19 @@ int main_bench(){
 		d++;
 	x=d%7;
 	if(x==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	else if(x==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	else if(x==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	else if(x==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	else if(x==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	else if(x==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	else if(x==6)
-		printf("Sat.");
+		my_printf("Sat.");
 
 
 	return 0;

@@ -12,15 +12,15 @@ void search()
 		if(s[i]==s[j]) k++;
 		if(k==1) break; 
 		}
-	if(k>1) printf("no\n");
+	if(k>1) my_printf("no\n");
 		else
-	printf("%c\n",s[i]);
+	my_printf("%c\n",s[i]);
 	}
 	
 int main_bench()
 	{
 		int n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		getchar();
 		while(n>0)
 		{

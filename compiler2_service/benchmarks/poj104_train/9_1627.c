@@ -10,10 +10,10 @@ struct student
 int main_bench()
 {
   int n,i,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   struct student pa[n];
   for (i=0;i<=n-1;i++)
-      scanf("%s%d",pa[i].num,&pa[i].age);
+      my_scanf("%s%d",pa[i].num,&pa[i].age);
   struct student temp;
   for (j=n-1;j>=1;j--)
   {
@@ -25,8 +25,8 @@ int main_bench()
   }
   for (i=0;i<=n-1;i++)
   {
-      printf("%s",pa[i].num);
-      (i<=n-2)?printf("\n"):printf("");
+      my_printf("%s",pa[i].num);
+      (i<=n-2)?my_printf("\n"):my_printf("");
   }
   return 0;
 }

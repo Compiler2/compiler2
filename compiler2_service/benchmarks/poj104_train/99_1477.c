@@ -5,12 +5,12 @@ int main_bench()
 {
 	int i,n;
 	int x[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	double a=0.0,b=0.0,c=0.0,d=0.0;
 	double e,f,g,h;
 
 	for(i=0;i<n;i++){
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	}
 	for(i=0;i<n;i++){
 		if(x[i]<=18){
@@ -31,10 +31,10 @@ int main_bench()
 	f=b*100/n;
 	g=c*100/n;
 	h=d*100/n;
-	printf("1-18: %.2lf%\n",e);
-	printf("19-35: %.2lf%\n",f);
-	printf("36-60: %.2lf%\n",g);
-	printf("60??: %.2lf%\n",h);
+	my_printf("1-18: %.2lf%\n",e);
+	my_printf("19-35: %.2lf%\n",f);
+	my_printf("36-60: %.2lf%\n",g);
+	my_printf("60??: %.2lf%\n",h);
 
 	return 0;
 }

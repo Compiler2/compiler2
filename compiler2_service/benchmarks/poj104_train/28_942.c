@@ -15,13 +15,13 @@ for(i=0;i<strlen(s);i++){
                          }
                          }
  i=1;
- printf("%d",a[0]);
+ my_printf("%d",a[0]);
  getchar();
  while(i<=k){
              if(a[i]==0){
                 i++;
              }else{
-                printf(",%d",a[i]);getchar();
+                my_printf(",%d",a[i]);getchar();
                 i++;
                 }
 

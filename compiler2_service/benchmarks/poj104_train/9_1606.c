@@ -4,10 +4,10 @@ int main_bench(){
 	char p[200][10],q[200][10]={0},c[10];
 int a[200],b[200];
 int n,i,j,x,y,t;
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 for (i=0;i<n;i++){
-	scanf ("%s",p[i]);
-	scanf ("%d",&a[i]);
+	my_scanf ("%s",p[i]);
+	my_scanf ("%d",&a[i]);
 }
 j=0;
 x=0;
@@ -35,11 +35,11 @@ strcpy(q[i],c);
 }
 }
 for (i=0;i<t;i++){
-	printf ("%s\n",q[i]);
+	my_printf ("%s\n",q[i]);
 }
 for (i=0;i<n;i++){
 	if (a[i]<60){
-	printf ("%s\n",p[i]);}
+	my_printf ("%s\n",p[i]);}
 }
 return 0;
 }

@@ -21,13 +21,13 @@ int main_bench()
 	}
 		while(*max_index!=' '&&*max_index!='\0')
 		{
-			printf("%c",*max_index);
+			my_printf("%c",*max_index);
 			max_index++;
 		}
-		printf("\n");
+		my_printf("\n");
 		while(*min_index!=' '&&*min_index!='\0')
 		{
-			printf("%c",*min_index);
+			my_printf("%c",*min_index);
 			min_index++;
 		}
 }

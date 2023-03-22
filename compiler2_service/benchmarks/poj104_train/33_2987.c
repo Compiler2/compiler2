@@ -3,9 +3,9 @@
 int main_bench(){
 	int n;
 	char a[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (int i = 0; i < n; i++) {
-		scanf("%s",a);
+		my_scanf("%s",a);
 		int len = strlen(a);
 		for (int j = 0;j < len; j++){
 			char ans;
@@ -15,9 +15,9 @@ int main_bench(){
 				case 'G': ans = 'C';break;
 				case 'C': ans = 'G';break;
 			}
-			printf("%c", ans );
+			my_printf("%c", ans );
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	
 

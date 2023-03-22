@@ -11,10 +11,10 @@ int main_bench()
     struct people* p;
     struct people pp;
     char* v="male";
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     p=(struct people*)malloc(n*sizeof(struct people));
     for(i=0;i<n;i++)
-        scanf("%s %f",p[i].a,&p[i].l);
+        my_scanf("%s %f",p[i].a,&p[i].l);
     for(i=0;i<n-1;i++)
     {
         for(j=i+1;j<n;j++)
@@ -41,8 +41,8 @@ int main_bench()
         }
     }
     for(i=0;i<n-1;i++)
-    printf("%.2f ",p[i].l);
-    printf("%.2f",p[n-1].l);
+    my_printf("%.2f ",p[i].l);
+    my_printf("%.2f",p[n-1].l);
     free(p);
     return 0;
 }

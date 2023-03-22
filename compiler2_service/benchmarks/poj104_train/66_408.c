@@ -32,32 +32,32 @@ int DiJiTian(int year, int month, int day)
 int main_bench()
 {
     int year,month,day,days,weekday;	
-    scanf("%d%d%d",&year,&month,&day);
+    my_scanf("%d%d%d",&year,&month,&day);
     days=(year-1)*(365%7)+(year-1)/400+(year-1)/4-(year-1)/100;
     days+=DiJiTian(year,month,day);
     weekday=days%7;
     switch(weekday)
     {
                    case 0:
-                         printf("Sun.");
+                         my_printf("Sun.");
                          break;
                    case 1:
-                         printf("Mon.");
+                         my_printf("Mon.");
                          break;
                    case 2:
-                         printf("Tue.");
+                         my_printf("Tue.");
                          break;
                    case 3:
-                         printf("Wed.");
+                         my_printf("Wed.");
                          break;
                    case 4:
-                         printf("Thu.");
+                         my_printf("Thu.");
                          break;
                    case 5:
-                         printf("Fri.");
+                         my_printf("Fri.");
                          break;
                    case 6:
-                         printf("Sat.");
+                         my_printf("Sat.");
                          break;
     }
     return 0;

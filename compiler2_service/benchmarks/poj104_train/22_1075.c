@@ -5,14 +5,14 @@ int main_bench()
 	int i=0,k,t,j=0;
 	char c;
 int s[3000];
-while(scanf("%d",&s[i]))
+while(my_scanf("%d",&s[i]))
 {
 c=getchar();
 if(c=='\n') break;
 i++;
 }
 if(i==0)
-printf("No");
+my_printf("No");
 else
 {for(k=0;k<i;k++)
 {
@@ -34,9 +34,9 @@ else if(s[k]==s[k-1])
 		continue;
 }
 if(s[k-1]==0)
-{printf("No");}
+{my_printf("No");}
 else
-printf("%d",s[k-1]);
+my_printf("%d",s[k-1]);
 	return 0;
 }
 }

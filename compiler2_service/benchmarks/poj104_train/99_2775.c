@@ -7,10 +7,10 @@ int main_bench()
 	int b=0,c=0,d=0,e=0;
 	double f,g,h,j;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 	}
 	for(i=0;i<n;i++)
@@ -30,14 +30,14 @@ int main_bench()
 	g=(double)c/n*100;
 	h=(double)d/n*100;
 	j=(double)e/n*100;
-	printf("1-18: %.2lf%",f);
-	printf("%%\n");
-	printf("19-35: %.2lf%",g);
-		printf("%%\n");
-	printf("36-60: %.2lf%",h);
-		printf("%%\n");
-	printf("60??: %.2lf%",j);
-		printf("%%\n");
+	my_printf("1-18: %.2lf%",f);
+	my_printf("%%\n");
+	my_printf("19-35: %.2lf%",g);
+		my_printf("%%\n");
+	my_printf("36-60: %.2lf%",h);
+		my_printf("%%\n");
+	my_printf("60??: %.2lf%",j);
+		my_printf("%%\n");
 	
 	return 0;
 }

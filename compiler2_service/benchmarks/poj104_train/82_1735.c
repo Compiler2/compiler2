@@ -23,14 +23,14 @@ int main_bench()
 	int i,j,k;
 	int a[100];
 	int b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	j=0;
 	for (i=0;i<100;i++){
 		a[i]=0;
 		b[i]=0;
 	}
 	for (i=0;i<n;i++){
-		scanf("%d%d",&shousuo,&shuzhang);
+		my_scanf("%d%d",&shousuo,&shuzhang);
 		if (shousuo>=90&&shousuo<=140&&shuzhang>=60&&shuzhang<=90) a[i]=1;
 			else a[i]=0;
 	}
@@ -44,6 +44,6 @@ int main_bench()
 		}
 	}
     bubble_sort(b,99);
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	return 0;
 }

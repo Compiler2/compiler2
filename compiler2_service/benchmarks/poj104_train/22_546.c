@@ -6,8 +6,8 @@ int main_bench()
     char b[300];
     for(i=0;i<300;i++)
     {
-    	scanf("%d",&a[i]);
-    	scanf("%c",&b[i]);
+    	my_scanf("%d",&a[i]);
+    	my_scanf("%c",&b[i]);
     	j++;
     	if(b[i]=='\n') break;
     }
@@ -24,14 +24,14 @@ int main_bench()
     	}
     }
     if(a[0]==a[j-1])
-    printf("No");
+    my_printf("No");
     else
     {
     	for(i=0;i<j;i++)
     	{
     		if(a[i]!=a[0])
     		{
-    			printf("%d",a[i]);
+    			my_printf("%d",a[i]);
     			break;
     		}
     	}

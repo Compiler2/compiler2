@@ -27,10 +27,10 @@ int main_bench()
 				p=0;
 			}
 		}
-		printf("%d",n[0]);
-		for(i=1;i<j;i++) printf(",%d",n[i]);
-		printf(",%d",l-tou);
+		my_printf("%d",n[0]);
+		for(i=1;i<j;i++) my_printf(",%d",n[i]);
+		my_printf(",%d",l-tou);
 	}
-	else printf("%d",l);
+	else my_printf("%d",l);
 	return 0;
 }

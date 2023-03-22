@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		char p[100],q[100];
 		int j,lp,lq,l;
 		int a[100],b[100];
-		scanf("%s%s",p,q);
+		my_scanf("%s%s",p,q);
 		lp=strlen(p);
 		lq=strlen(q);
 		l=lp-lq;
@@ -41,7 +41,7 @@ int main_bench()
 			p[j]=a[j]+48;
 		}
 
-		printf("%s\n",p);
+		my_printf("%s\n",p);
 	}
 
 

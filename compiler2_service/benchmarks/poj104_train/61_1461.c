@@ -4,10 +4,10 @@ int add(int a1,int b1);
 int main_bench()
 {
 	int q,p,n,result,i,a,k,sz[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		p=1;
 		q=1;
 	    for(i=2;i<a;i++)
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	for(k=0;k<n;k++)
 	{
-	  printf("%d\n",sz[k]);
+	  my_printf("%d\n",sz[k]);
 	}
     return 0;
 }

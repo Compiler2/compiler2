@@ -45,7 +45,7 @@ int main_bench()
 	num=str2int(s,result);
 	second=find2nd(num,result);
 	if(second==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",second);
+		my_printf("%d",second);
 }

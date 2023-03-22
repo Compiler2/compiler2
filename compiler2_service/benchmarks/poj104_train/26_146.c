@@ -15,5 +15,5 @@ int main_bench()
 		else s[k]=s[i];
 	}
 	s[k]='\0';
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 }

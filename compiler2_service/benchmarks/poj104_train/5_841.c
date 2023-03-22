@@ -23,11 +23,11 @@ int main_bench(){
             }
         }
     }
-    if(N==0){printf("error");}else{
+    if(N==0){my_printf("error");}else{
         double p;
         p=1.0*n/na;
-        if(p>k){printf("yes");}else{
-            printf("no");
+        if(p>k){my_printf("yes");}else{
+            my_printf("no");
         }
     }
     return 0;

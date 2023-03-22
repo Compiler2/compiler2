@@ -7,10 +7,10 @@ int main_bench()
 		int num,sum;
 	} stu[100000];
 	int n,i,j,t,chi,math;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++) 
 	{
-		scanf("%d %d %d",&stu[i].num,&chi,&math);
+		my_scanf("%d %d %d",&stu[i].num,&chi,&math);
 		stu[i].sum=chi+math;
 	}
 	for (i=0;i<3;i++)
@@ -28,7 +28,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",stu[0].num,stu[0].sum);
-	printf("%d %d\n",stu[1].num,stu[1].sum);
-	printf("%d %d",stu[2].num,stu[2].sum);
+	my_printf("%d %d\n",stu[0].num,stu[0].sum);
+	my_printf("%d %d\n",stu[1].num,stu[1].sum);
+	my_printf("%d %d",stu[2].num,stu[2].sum);
 }

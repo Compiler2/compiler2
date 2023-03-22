@@ -11,6 +11,6 @@ int main_bench()
 		z2[j]=z1[i]+z1[i+1];
 	}
 	z2[k-1]=z1[k-1]+z1[0];
-	printf("%s",z2);
+	my_printf("%s",z2);
 	return 0;
 }

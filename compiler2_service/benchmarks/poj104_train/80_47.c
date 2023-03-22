@@ -15,12 +15,12 @@ int sum1(int year,int month, int day)
 int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
-	scanf("%d%d%d %d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d%d%d %d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
 	int i,sum=0;
 	for(i=sy;i<ey;i++)
 	{  if(i%4==0&&i%100!=0||i%400==0) sum+=366;
 	   else sum+=365;
 	   }
 	sum=sum+sum1(ey,em,ed)-sum1(sy,sm,sd);
-	printf("%d",sum);
+	my_printf("%d",sum);
 }

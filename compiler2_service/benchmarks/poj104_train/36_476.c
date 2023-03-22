@@ -24,11 +24,11 @@ void inverse(char *str)
 }
 int main_bench()
 {
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	inverse(str1);
 	inverse(str2);
 	if(strcmp(str1,str2)==0)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

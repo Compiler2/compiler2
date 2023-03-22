@@ -4,7 +4,7 @@
 	{
 		int day[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int i,x1,x2,x3,y1,y2,y3,d1=0,d2=0,d;
-	scanf("%d %d %d\n%d %d %d",&x1,&x2,&x3,&y1,&y2,&y3);
+	my_scanf("%d %d %d\n%d %d %d",&x1,&x2,&x3,&y1,&y2,&y3);
 	if((x1%4==0&&x1%100!=0)||(x1%400==0))
 	day[2]=29;
 	else
@@ -33,6 +33,6 @@
       d=d1-d2;
       else
       d=d2-d1;
-   printf("%d",d);
+   my_printf("%d",d);
    return 0;
 	}

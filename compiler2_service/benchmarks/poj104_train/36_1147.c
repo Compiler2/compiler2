@@ -9,8 +9,8 @@ int main_bench()
 	int count1[52],count2[52];
 	int i;
 
-	scanf("%s",w1);
-	scanf("%s",w2);
+	my_scanf("%s",w1);
+	my_scanf("%s",w2);
 
 	for(letter='A';letter<='Z';letter++){
 		for(i=0,count1[letter-'A']=0;i<strlen(w1);i++){
@@ -32,9 +32,9 @@ int main_bench()
 
 	for(i=0;i<=51;i++){
 		if(count1[i]!=count2[i]){
-	printf("NO");
+	my_printf("NO");
 	break;}}
 
-	if(i==52) printf("YES");
+	if(i==52) my_printf("YES");
 	return 0;
 }

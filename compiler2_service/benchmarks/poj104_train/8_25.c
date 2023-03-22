@@ -5,14 +5,14 @@ int c,d;
 void input()
 {
 	int i;
-	scanf("%d%d",&c,&d);
+	my_scanf("%d%d",&c,&d);
 	for(i=0;i<c;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<d;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 }
 void change()
@@ -61,8 +61,8 @@ void output()
 {
 	int i;
     for(i=0;i<(c+d)-1;i++)
-	{printf("%d ",e[i]);}
-	printf("%d",e[c+d-1]);
+	{my_printf("%d ",e[i]);}
+	my_printf("%d",e[c+d-1]);
 
 }
 int main_bench()

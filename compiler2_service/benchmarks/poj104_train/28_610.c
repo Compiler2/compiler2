@@ -9,7 +9,7 @@ int main_bench()
 	n=strlen(st);
 	char c;
 	int word=0,num=0;
-	if(n==1) printf("1");
+	if(n==1) my_printf("1");
 	if(n>=2)
 	{
 		for(i=0;c=st[i]!='\0';i++)
@@ -40,8 +40,8 @@ int main_bench()
 			b[k]=i-p;
 	}
 	for(i=0;i<k;i++)
-		printf("%d,",b[i]);
-	printf("%d",b[k]);
+		my_printf("%d,",b[i]);
+	my_printf("%d",b[k]);
 	}
 				
 

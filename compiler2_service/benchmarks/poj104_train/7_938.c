@@ -46,7 +46,7 @@ int main_bench()
 	e[1][k]='\0';
 	if(sp==1)
 	{
-		printf("%s%s%s",e[0],d,e[1]);
+		my_printf("%s%s%s",e[0],d,e[1]);
 	}
 	if(sp==0)
 	{

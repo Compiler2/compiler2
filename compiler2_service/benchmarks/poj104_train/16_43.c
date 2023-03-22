@@ -21,15 +21,15 @@ int main_bench()
 					char e;
 					e=getchar();
 					if(e<=57&&e>=48)
-					printf("%c%c%c%c%c",e,d,c,b,a);
-					else printf("%c%c%c%c",d,c,b,a);
+					my_printf("%c%c%c%c%c",e,d,c,b,a);
+					else my_printf("%c%c%c%c",d,c,b,a);
 				}
-				else printf("%c%c%c",c,b,a);
+				else my_printf("%c%c%c",c,b,a);
 			}
-			else printf("%c%c",b,a);
+			else my_printf("%c%c",b,a);
 		}
-		else printf("%c",a);
+		else my_printf("%c",a);
 	}
-	else printf("error\n");
+	else my_printf("error\n");
 	return 0;
 }

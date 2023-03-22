@@ -14,9 +14,9 @@ int run(int q){
 int main_bench()
 {
 	int i,j,year,a,b,n,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-	scanf("%d %d %d",&year,&a,&b);
+	my_scanf("%d %d %d",&year,&a,&b);
 	int month[13];
 	month[2]=28+run(year);
 	month[1]=31;
@@ -40,9 +40,9 @@ int main_bench()
 		x+=month[j];
 	}
 	if(x%7==0){
-		printf("YES\n");
+		my_printf("YES\n");
 	}else{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	}
 	return 0;

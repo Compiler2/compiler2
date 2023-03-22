@@ -5,9 +5,9 @@ int main_bench()
 	int i,g=0,j,e,k,flag=1;
 	double n,m;
 	char s[2][502];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<2;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	e=strlen(s[1]);
 	k=strlen(s[0]);
@@ -31,12 +31,12 @@ int main_bench()
 	m=1.0*g/e;
 	if(flag==1){
 		if(m>n){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}else{
-		printf("error\n");
+		my_printf("error\n");
 	}
 	return 0;
 }

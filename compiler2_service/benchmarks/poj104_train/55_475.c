@@ -7,7 +7,7 @@ int l[32];
 long a,b,d,i,s,n=0; 
 s=1; 
 n=0; 
-scanf("%d%s%d",&a,k,&b); 
+my_scanf("%d%s%d",&a,k,&b); 
 d=strlen(k); 
 i=d-1; 
 while(i>=0) 
@@ -23,7 +23,7 @@ s*=a;
 }
 if(n==0)
 {
- printf("0");
+ my_printf("0");
  return 0;
 }
 for(i=0;n>0;i++) 
@@ -35,9 +35,9 @@ d=i;
 for(i=d-1;i>=0;i--) 
 { 
 if(l[i]>=10) 
-printf("%c",l[i]-10+'A'); 
+my_printf("%c",l[i]-10+'A'); 
 else 
-printf("%d",l[i]); 
+my_printf("%d",l[i]); 
 } 
-printf("\n");
+my_printf("\n");
 } 

@@ -5,13 +5,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct z {
 		int op,ed;
 	} z[10000];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&z[i].op,&z[i].ed);
+		my_scanf("%d%d",&z[i].op,&z[i].ed);
 	}
 	int j;
 	for(i=n-1;i>0;i--){
@@ -33,9 +33,9 @@ int main_bench()
 		}
 	}
 	if(o==n-1){
-		printf("%d %d",z[0].op,z[0].ed);
+		my_printf("%d %d",z[0].op,z[0].ed);
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

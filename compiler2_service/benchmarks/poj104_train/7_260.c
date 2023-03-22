@@ -30,7 +30,7 @@ int main_bench()
 				}
 				a1[i]=0;
 		}
-		printf(a1);
+		my_printf(a1);
 		return 0;
 }
 	

@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,k=0,l,m0,m1,a[100],flag=0;
 	char str[3][300];
     for(i=0;i<3;i++)
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	m0=strlen(str[0]);
 	m1=strlen(str[1]);
 	for(i=0,j=0;i<m0,j<m1;i++)
@@ -31,10 +31,10 @@ int main_bench()
 		{
 			for(i=k+1,j=0;i<k+m1+1;i++,j++)
 				str[0][i]=str[2][j];
-			printf("%s",str[0]);
+			my_printf("%s",str[0]);
 		}
 		else
-			printf("%s",str[0]);
+			my_printf("%s",str[0]);
 		return 0;
 }
 

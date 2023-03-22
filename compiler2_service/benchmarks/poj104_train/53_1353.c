@@ -3,9 +3,9 @@
 int main_bench()
 {
     int s[300],b[300],i,n,j,m,k=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%d",&s[i]);
+        my_scanf("%d",&s[i]);
     for(i=0;i<n;i++){
         for(j=0,m=0;j<i;j++){
            if(s[i]==s[j])
@@ -17,8 +17,8 @@ int main_bench()
         }
     }
     for(i=0;i<k-1;i++){
-        printf("%d,",b[i]);
+        my_printf("%d,",b[i]);
     }
-    printf("%d",b[k-1]);
+    my_printf("%d",b[k-1]);
     return 0;
 }

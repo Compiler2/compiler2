@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[100],b[1003],c[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int i,j,num=0,k=-1;
 	for(i=0;a[i]!='\0';i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 				
 			
 		}
-		printf("%d",j);
+		my_printf("%d",j);
 		break;
 	}
 	for(i=j;i<=num+j;i++)
@@ -27,7 +27,7 @@ int main_bench()
 	
 	}
 	if(strcmp(a,c)==0)
-		printf("%d",j);
+		my_printf("%d",j);
 
 
 	

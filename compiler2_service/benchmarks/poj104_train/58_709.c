@@ -4,7 +4,7 @@ int main_bench()
 {
        char c[81];
        int i,j,n,a,length,p,q;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        getchar();
        for(i=0;i<n;i++)
        {
@@ -32,7 +32,7 @@ int main_bench()
                        a=1;
                else
                        a=0;
-               printf("%d\n",a);
+               my_printf("%d\n",a);
        }
        return 0;
 }

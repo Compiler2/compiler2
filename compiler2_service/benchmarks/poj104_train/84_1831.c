@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k,l,p,q;
 	int a[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d\n",&a[i]);
+		my_scanf("%d\n",&a[i]);
 	}
 	for(k=1;k<=n-1;k++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 			a[0]=p;
 		}
 	}
-	printf("%d\n",a[0]);
+	my_printf("%d\n",a[0]);
 	for(l=2;l<=k;l++)
 	{
 		if(a[1]<a[l])
@@ -28,6 +28,6 @@ int main_bench()
 			a[1]=q;
 		}
 	}
-	printf("%d\n",a[1]);
+	my_printf("%d\n",a[1]);
 	return 0;
 }

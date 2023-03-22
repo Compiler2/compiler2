@@ -11,8 +11,8 @@ int i,j;
 int n;
 int len;
 int max=0;
-scanf("%d",&n);
-scanf("%s",BeatFCbarcelona);
+my_scanf("%d",&n);
+my_scanf("%s",BeatFCbarcelona);
 len=strlen(BeatFCbarcelona);
 for(i=0;i<len-n+1;i++)
 {
@@ -34,7 +34,7 @@ max=halamadrid[i];
 }
 if(max>1)
 {
-printf("%d\n",max);
+my_printf("%d\n",max);
 for(i=0;i<len-n+1;i++)
 {
 if(halamadrid[i]==max)
@@ -46,11 +46,11 @@ if(strcmp(store[j],substr[i])==0)
 k++;
 }
 if(k==0)
-printf("%s\n",substr[i]);
+my_printf("%s\n",substr[i]);
 }
 k=0;
 }
 }
-else printf("NO\n");
+else my_printf("NO\n");
 return 0;
 } 

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j,k,t,r,c[100];
 	char a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 		r=strlen(a);
 		t=strlen(b);
 		for(i=0;i<r;i++)
@@ -37,9 +37,9 @@ int main_bench()
 			}
 		}
 		if(c[0]>0)
-			printf("%d",c[0]);
+			my_printf("%d",c[0]);
 		for(i=1;i<r-1;i++)
-			printf("%d",c[i]);
-		printf("%d\n",c[r-1]);
+			my_printf("%d",c[i]);
+		my_printf("%d\n",c[r-1]);
 	}
 }

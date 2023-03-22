@@ -28,10 +28,10 @@ int main_bench()
     {
         if(first)
         first=0;
-        else printf(",");
-        printf("%d", count[i]);
+        else my_printf(",");
+        my_printf("%d", count[i]);
     }
-	printf("\n");
+	my_printf("\n");
     return 0;
 }
 

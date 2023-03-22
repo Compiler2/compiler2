@@ -3,19 +3,19 @@
 int main_bench(){
 	int n,a,b;
 	int as=0,bs=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if((a==0&&b==1)||(a==1&&b==2)||(a==2&&b==0))
 			as++;
 		else if((b==0&&a==1)||(b==1&&a==2)||(b==2&&a==0))
 			bs++;
 	}
 	if(as>bs)
-		printf("A");
+		my_printf("A");
 	else if(as<bs)
-		printf("B");
+		my_printf("B");
 	else
-		printf("Tie");
+		my_printf("Tie");
 	return 0;
 }

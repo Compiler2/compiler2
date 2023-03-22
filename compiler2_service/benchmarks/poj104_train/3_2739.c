@@ -4,21 +4,21 @@ int main_bench()
 {
 	int n,k,a,e[10008],i,j,m,log;
 	log=0;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	if(n==1)
 	{
 		if(n==k)
 		{
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}else{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		e[1]=a;
 	    for(i=2;i<=n;i++)
 		{
-	     	scanf(" %d",&a);
+	     	my_scanf(" %d",&a);
 			e[i]=a;
 		}
 		for(j=1;j<=n;j++)
@@ -27,7 +27,7 @@ int main_bench()
 			{
 				if((e[j]+e[m])==k)
 				{
-					printf("yes");
+					my_printf("yes");
 					log=1;
 					break;
 				}
@@ -39,7 +39,7 @@ int main_bench()
 		}
 		if(log<0.1)
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 		return 0;

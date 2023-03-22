@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int m,n,a[200]={0},i;
-scanf("%d",&n);
-scanf("%d",&m);
+my_scanf("%d",&n);
+my_scanf("%d",&m);
 for(i=0;i<n;i++)
 {
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -15,9 +15,9 @@ for(i=0;i<n;i++)
 }
 for(i=n-m;i<2*n-m-1;i++)
 {
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 }
-printf("%d",a[2*n-m-1]);
+my_printf("%d",a[2*n-m-1]);
 
 return 0;
 }

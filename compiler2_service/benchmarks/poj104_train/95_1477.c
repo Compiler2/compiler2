@@ -8,9 +8,9 @@ int main_bench()
 	gets(s);
 	gets(t);
 	a = change(s,t);
-    if (a >0) printf(">");
-    if (a <0) printf("<");
-    if (a ==0) printf("=");
+    if (a >0) my_printf(">");
+    if (a <0) my_printf("<");
+    if (a ==0) my_printf("=");
     return 0;
 }
 

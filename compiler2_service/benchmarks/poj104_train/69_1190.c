@@ -4,10 +4,10 @@ int main_bench(){
 	int i;
 	char zs1[260],zs2[260];
 	int a1[260],a2[260];
-	scanf("%s",zs1);
-	scanf("%s",zs2);
+	my_scanf("%s",zs1);
+	my_scanf("%s",zs2);
 	if(strcmp(zs1,zs2)==0&&zs1[0]=='0'){
-		printf("0");
+		my_printf("0");
 		return 0;
 	}
 	memset(a1,0,sizeof(a1));
@@ -34,9 +34,9 @@ int main_bench(){
 	int q0=0;
 	for(i=251;i>=0;i--){
 		if(q0)
-			printf("%d",a1[i]);
+			my_printf("%d",a1[i]);
 		else if(a1[i]){
-			printf("%d",a1[i]);
+			my_printf("%d",a1[i]);
 			q0=1;
 		}
 	}

@@ -7,10 +7,10 @@ int main_bench()
 	b=2;
 	c=1;
 	a[0]=(double)b/c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 			sum=sum+a[j];
 		}
 		q=sum;
-		printf("%.3lf\n",q);
+		my_printf("%.3lf\n",q);
 	}
 	return 0;
 }

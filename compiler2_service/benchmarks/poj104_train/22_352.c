@@ -1,6 +1,6 @@
 #include <header.h>
 
-void main_bench()
+int main_bench()
 {
 	char c[1500];
 	int a[300];
@@ -36,10 +36,10 @@ void main_bench()
 		if(a[i] > a[i + 1])
 		{
 		
-			printf("%d",a[i + 1]);
+			my_printf("%d",a[i + 1]);
 			break;
 		}
 	}
 	if(i == j)
-		printf("No");
+		my_printf("No");
 }

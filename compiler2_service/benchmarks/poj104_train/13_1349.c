@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j;
 	int timer=0;
 	int a[20001],b[20001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=2;i<=n;i++)
 	{
@@ -38,8 +38,8 @@ int main_bench()
 	}
 	for(i=1;i<n-timer;i++)
 	{
-		printf("%d ",a[i]);
+		my_printf("%d ",a[i]);
 	}
-	printf("%d",a[n-timer]);
+	my_printf("%d",a[n-timer]);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
     int a,x,y,z,n,b,place;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
 	if(a>9999)
 		place=5;
 if(a>999)
@@ -20,17 +20,17 @@ else place=1;
     y=a/10%10;
     z=a%10;
 switch(place)
-{case 5:printf("00001");
+{case 5:my_printf("00001");
          break;
-case 4:printf("%d%d%d%d",z,y,x,n);
+case 4:my_printf("%d%d%d%d",z,y,x,n);
  break;
 
-case 3:printf("%d%d%d",z,y,x);
+case 3:my_printf("%d%d%d",z,y,x);
  break;
 
-case 2:printf("%d%d",z,y);
+case 2:my_printf("%d%d",z,y);
  break;
-case 1:printf("%d",z);
+case 1:my_printf("%d",z);
  break;
 
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,e,j;
 	int k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int*)malloc(sizeof(int)*n);
 	int sf[500];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -35,11 +35,11 @@ int main_bench()
 	{
 		if(i>0)
 		{
-			printf("%d,",sf[i]);
+			my_printf("%d,",sf[i]);
 		}
 		if(i==0)
 		{
-			printf("%d",sf[i]);
+			my_printf("%d",sf[i]);
 		}
 	}
 	return 0;

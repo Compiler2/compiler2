@@ -2,7 +2,7 @@
 
 int main_bench(){
 int x,y,z,r,s,t,a,m,n,p,q;
-scanf("%d",&a);
+my_scanf("%d",&a);
 if(a>0&&a<1000){
 x=a/100;
 m=a%100;
@@ -14,12 +14,12 @@ r=p/10;
 q=p%10;
 s=q/5;
 t=q%5;
-printf("%d\n",x);
-printf("%d\n",y);
-printf("%d\n",z);
-printf("%d\n",r);
-printf("%d\n",s);
-printf("%d",t);
+my_printf("%d\n",x);
+my_printf("%d\n",y);
+my_printf("%d\n",z);
+my_printf("%d\n",r);
+my_printf("%d\n",s);
+my_printf("%d",t);
 }
 return 0;
 }

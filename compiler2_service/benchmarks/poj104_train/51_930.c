@@ -5,7 +5,7 @@ int main_bench()
 	char str[600];
 	int n, i, j, length, len[600] = { 0 }, log, num, sum, max;
 	char a[600][7] = { { '\0' } }, ch[600][10] = { { '\0' } };
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	
 	length=strlen(str);
@@ -47,14 +47,14 @@ int main_bench()
 	}
 	if(max<=1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}else{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<=log;i++)
 	{
 		if(len[i]==max)
 		{
-			printf("%s\n",ch[i]);
+			my_printf("%s\n",ch[i]);
 		}
 	}
 	}

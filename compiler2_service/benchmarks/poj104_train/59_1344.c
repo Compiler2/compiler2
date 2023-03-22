@@ -3,12 +3,12 @@
 int main_bench(){
     int i, a, n, m, t, z=0;
     char old[200][200], newa[200][200];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%s\n", old[i]);
+        my_scanf("%s\n", old[i]);
         strcpy(newa[i],old[i]);
     }
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for (t=0; t<m-1; t++) {
         for (i=0; i<n; i++) {
             for (a=0; a<n; a++) {
@@ -39,6 +39,6 @@ int main_bench(){
             }
         }
     }
-    printf("%d", z);
+    my_printf("%d", z);
     return 0;
 }  

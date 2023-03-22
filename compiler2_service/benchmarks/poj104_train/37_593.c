@@ -5,7 +5,7 @@ main_bench()
 int t,i,j,k;
 char s[100000]={0};
 char A[100] = {0};
-scanf("%d",&t);
+my_scanf("%d",&t);
 getchar();
 for(i=0;i<t;i++)
 {
@@ -33,8 +33,8 @@ j++;
 
 for(i=0;i<t;i++)
 {
-if(A[i]==0)printf("no\n");
-else printf("%c\n",A[i]);
+if(A[i]==0)my_printf("no\n");
+else my_printf("%c\n",A[i]);
 
 }
 

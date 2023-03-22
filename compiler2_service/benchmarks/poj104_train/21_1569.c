@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,m,a[300],c[300],t;
 	float x,b[300],s;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(m=0,x=0;m<n;m++)
 	{
-		scanf("%d",&a[m]);
+		my_scanf("%d",&a[m]);
 		x=x+a[m];
 	}
 	x=x/n;
@@ -30,7 +30,7 @@ int main_bench()
 			c[t]=n;
 			}
 	for(m=0;c[m+1]!='a';m++)
-		printf("%d,",c[m]);
-	printf("%d",c[m]);
+		my_printf("%d,",c[m]);
+	my_printf("%d",c[m]);
 	return 0;
 }

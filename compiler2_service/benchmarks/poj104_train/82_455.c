@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j=0,r=0;
 	int l[100];
 	int s[3][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&s[0][i],&s[1][i]);
+		my_scanf("%d %d",&s[0][i],&s[1][i]);
 	}
 	for(i=0;i<n;i++){
 		if((s[0][i]<=140)&&(s[0][i]>=90)&&(s[1][i]<=90)&&(s[1][i]>=60)){
@@ -41,6 +41,6 @@ int main_bench(){
 		   max=l[i];
 	      }
    }
-   printf("%d",max);
+   my_printf("%d",max);
    return 0;
 }

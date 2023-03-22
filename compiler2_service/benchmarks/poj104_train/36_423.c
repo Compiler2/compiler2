@@ -17,9 +17,9 @@ void array(char a[])
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	array(a);
 	array(b);
-	if(strcmp(a,b)==0) printf("YES");
-	else printf("NO");
+	if(strcmp(a,b)==0) my_printf("YES");
+	else my_printf("NO");
 }

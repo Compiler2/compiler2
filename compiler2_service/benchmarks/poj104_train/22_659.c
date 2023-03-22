@@ -5,8 +5,8 @@ int main_bench()
 	int max(int m,int b[]);
 	int i=1,n,t,a[300];
 
-	scanf("%d",&a[0]);
-	while(scanf(",%d",&a[i]))
+	my_scanf("%d",&a[0]);
+	while(my_scanf(",%d",&a[i]))
 		i++;
 	n=i;
 
@@ -17,9 +17,9 @@ int main_bench()
 
 		t=max(n,a);
 	if(t==-1)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 }
 
 int max(int m,int b[])

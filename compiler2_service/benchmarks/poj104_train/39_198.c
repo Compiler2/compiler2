@@ -14,10 +14,10 @@ int main_bench()
 	}info[100];
 	int n,max,sum=0,i;
 	char scholar[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",info[i].name,&info[i].qimo,&info[i].banji,&info[i].ganbu,&info[i].xibu,&info[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",info[i].name,&info[i].qimo,&info[i].banji,&info[i].ganbu,&info[i].xibu,&info[i].lunwen);
 		info[i].money=0;
 	}
 	for(i=0;i<n;i++)
@@ -44,5 +44,5 @@ int main_bench()
 			strcpy(scholar,info[i].name);
 		}
 	}
-	printf("%s\n%d\n%d\n",scholar,max,sum);
+	my_printf("%s\n%d\n%d\n",scholar,max,sum);
 }

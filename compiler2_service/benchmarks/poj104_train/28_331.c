@@ -14,9 +14,9 @@ int main_bench()
         }    
         if(chuan[i]==' '&&chuan[i-1]!=' ')
         {
-            printf("%d,",j);
+            my_printf("%d,",j);
             j=0;
         }   
     }
-    printf("%d",j);
+    my_printf("%d",j);
 }

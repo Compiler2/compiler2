@@ -6,10 +6,10 @@ int main_bench(){
     int a,b,c,d,e,f,g;
     
   
-              scanf("%d\n",&a);
+              my_scanf("%d\n",&a);
               if(a==2){
-              scanf("%d\n",&e);
-              scanf("%d",&f);
+              my_scanf("%d\n",&e);
+              my_scanf("%d",&f);
            if(e>f){
            c=e;
            d=f;
@@ -18,8 +18,8 @@ int main_bench(){
            d=e;     
            }
            }else{
-            scanf("%d\n",&e);
-            scanf("%d\n",&f);
+            my_scanf("%d\n",&e);
+            my_scanf("%d\n",&f);
            if(e>f){
            c=e;
            d=f;
@@ -30,7 +30,7 @@ int main_bench(){
            b=1;
            while(b<(a-2)){
            b=b+1;
-           scanf("%d\n",&g);
+           my_scanf("%d\n",&g);
            if(c<=g){
                     d=c;
                     c=g;
@@ -42,7 +42,7 @@ int main_bench(){
                     }
                     }
                     
-            scanf("%d",&g) ;  
+            my_scanf("%d",&g) ;  
             if(c<=g){
                     d=c;
                     c=g;
@@ -53,7 +53,7 @@ int main_bench(){
                     }
                     }
                     }
-       printf("%d\n%d\n",c,d);
+       my_printf("%d\n%d\n",c,d);
      
     return 0;
 }

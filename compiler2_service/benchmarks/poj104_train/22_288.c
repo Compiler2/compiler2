@@ -28,8 +28,8 @@ int main_bench()
 			z=0;
 			for(j=0;j<s;j++)
 				if((c[j]!=m)&&(c[j]>c[i])){z=1;break;}
-				if((z==0)&&(c[i]!=m)){printf("%d",c[i]);x=1;break;}
+				if((z==0)&&(c[i]!=m)){my_printf("%d",c[i]);x=1;break;}
 		}
-		if(x==0)printf("No");
+		if(x==0)my_printf("No");
 }
 

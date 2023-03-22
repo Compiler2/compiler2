@@ -5,8 +5,8 @@ int main_bench()
 	int *p,n,m,t,i,j;
 	p=(int*)calloc(25,sizeof(int));
 	for (i=0;i<25;i++)
-		scanf("%d",p+i);
-	scanf("%d%d",&n,&m);
+		my_scanf("%d",p+i);
+	my_scanf("%d%d",&n,&m);
 	if (0<=n&&0<=m&&5>n&&5>m)
 	{
 		for (i=0;i<5;i++)
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		for (i=0;i<5;i++)
 			for (j=0;j<5;j++)
-				j==4?printf("%d\n",*(p+5*i+j)):printf("%d ",*(p+5*i+j));
+				j==4?my_printf("%d\n",*(p+5*i+j)):my_printf("%d ",*(p+5*i+j));
 	}
-	else printf("error");
+	else my_printf("error");
 }

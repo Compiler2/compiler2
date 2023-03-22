@@ -23,11 +23,11 @@ int main_bench()
 	char chain[256];
 	int i,j;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",chain);
+		my_scanf("%s",chain);
 		complement(chain);
-		printf("%s\n",chain);
+		my_printf("%s\n",chain);
 	}
 
 	return 0;

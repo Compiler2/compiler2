@@ -41,15 +41,15 @@ int main_bench()
 	}
 	if(p==1)
 	{
-	    printf("%d\n",max);
+	    my_printf("%d\n",max);
 		for(i=0;i<nc-n+1;i++)
 		{
 			if(nsame[i]==max&&po[i]==0)
 			{
-				for(j=0;j<n;j++) printf("%c",c[i+j]);
-				printf("\n");
+				for(j=0;j<n;j++) my_printf("%c",c[i+j]);
+				my_printf("\n");
 			}
 		}
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

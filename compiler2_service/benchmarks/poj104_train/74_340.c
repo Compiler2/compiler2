@@ -24,15 +24,15 @@ f2(int x)
 }
 int main_bench()
 {int a,b,c;
-scanf("%d%d",&a,&b);
+my_scanf("%d%d",&a,&b);
 c=0;
 for(;a<=b;a++)
 if(f1(a)==1&&f2(a)==1&&c==1)
-printf(",%d",a);
+my_printf(",%d",a);
 else if(f1(a)==1&&f2(a)==1)
-{printf("%d",a);
+{my_printf("%d",a);
 c=1;}
-if(c==0)printf("no");
+if(c==0)my_printf("no");
 }
 
 

@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a1,b1,c1,a2,b2,c2;
 	int ans,now,md;
-	scanf("%d%d%d",&a1,&b1,&c1);
-	scanf("%d%d%d",&a2,&b2,&c2);
+	my_scanf("%d%d%d",&a1,&b1,&c1);
+	my_scanf("%d%d%d",&a2,&b2,&c2);
 	if (a1==a2&&b1==b2) ans=c2-c1;
 	else {
 		if (b1==1||b1==3||b1==5||b1==7||b1==8||b1==10||b1==12) md=31;
@@ -47,7 +47,7 @@ int main_bench()
 	}
 	}
 	if (a1<a2||b1<b2) ans=ans+c2;
-	printf("%d\n",ans);
+	my_printf("%d\n",ans);
 	return 0;
 }
 

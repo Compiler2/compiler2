@@ -4,7 +4,7 @@ int main_bench()
 {
    int i,j,k,l,sign;
    char s[501],c[501];
-   scanf("%s",s);
+   my_scanf("%s",s);
    l=strlen(s);
    for(j=2;j<=l;j++)
    {
@@ -22,9 +22,9 @@ int main_bench()
 		 {
 		   for(k=0;k<j;k++)
 		   {
-			   printf("%c",c[k]);
+			   my_printf("%c",c[k]);
 		   }
-		   printf("\n");
+		   my_printf("\n");
 		 }
 
 	  }

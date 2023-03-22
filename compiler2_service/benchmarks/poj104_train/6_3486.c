@@ -3,14 +3,14 @@
 int main_bench()
 {
     int k,size[100][2],m[100][100][100],i,j,l,sum[100];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=0;i<k;i++)
     {
         sum[i]=0;
-      scanf("%d %d",&size[i][0],&size[i][1]);
+      my_scanf("%d %d",&size[i][0],&size[i][1]);
       for(j=0;j<size[i][0];j++)
           for(l=0;l<size[i][1];l++)
-              scanf("%d",&m[i][j][l]);
+              my_scanf("%d",&m[i][j][l]);
         
         if((size[i][1]==1)&&(size[i][0]==1))
             sum[i]=m[i][0][0];
@@ -31,6 +31,6 @@ int main_bench()
      
     }
     for(i=0;i<k;i++)
-        printf("%d\n",sum[i]);
+        my_printf("%d\n",sum[i]);
     return 0;
 }

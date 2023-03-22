@@ -3,12 +3,12 @@
 int main_bench(){
 	int n,a[50000][2],i,j,x,y;
 	double b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	x=a[0][0];
@@ -49,11 +49,11 @@ int main_bench(){
 	
 	if(z==0)
 	{
-		printf("%d %d\n",x,y);
+		my_printf("%d %d\n",x,y);
 	}
 	else
 	{
-		printf("no\n");
+		my_printf("no\n");
 	}
 
 	return 0;

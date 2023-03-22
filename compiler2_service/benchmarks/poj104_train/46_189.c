@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int row,col;
-    scanf("%d %d",&row,&col);
+    my_scanf("%d %d",&row,&col);
     int sz[100][100];
     int p,q;
     for(p=0;p<row;p++)
 	{
 		for(q=0;q<col;q++)
 		{
-			scanf("%d",&sz[p][q]);
+			my_scanf("%d",&sz[p][q]);
 		}
 	}
 
@@ -23,7 +23,7 @@ int main_bench()
 		{
 	    	for(COL=col1;COL<=col2;COL++)
 			{
-			printf("%d\n",sz[row1][COL]);
+			my_printf("%d\n",sz[row1][COL]);
 			}
             row1=row1+1;    
 		}
@@ -31,7 +31,7 @@ int main_bench()
 		{
 	    	for(ROW=row1;ROW<=row2;ROW++)
 			{
-			printf("%d\n",sz[ROW][col2]);
+			my_printf("%d\n",sz[ROW][col2]);
 			}
 		   	col2=col2-1;
 		}
@@ -39,7 +39,7 @@ int main_bench()
 		{
             for(COL=col2;COL>=col1;COL--)
 			{
-			printf("%d\n",sz[row2][COL]);
+			my_printf("%d\n",sz[row2][COL]);
 			}
 		    row2=row2-1;
 		}
@@ -47,7 +47,7 @@ int main_bench()
 		{
             for(ROW=row2;ROW>=row1;ROW--)
 			{
-			printf("%d\n",sz[ROW][col1]);
+			my_printf("%d\n",sz[ROW][col1]);
 			}
 		    col1=col1+1;
 		}

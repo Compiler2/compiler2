@@ -8,10 +8,10 @@ int main_bench()
 	gets (s);
 	for(i=0;s[i]!=' '&&s[i]!='\0';i++)
 	{j++;}
-	printf("%d",j);
+	my_printf("%d",j);
 	for(i=j;s[i]!='\0';i++)
 	if(s[i]==' '&&s[i+1]!=' ')
-	{temp=f(s,i+1);printf(",%d",temp);}
+	{temp=f(s,i+1);my_printf(",%d",temp);}
 }
 
 int f(char *p,int x)

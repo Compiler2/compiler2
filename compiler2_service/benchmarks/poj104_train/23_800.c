@@ -19,16 +19,16 @@ int main_bench()
 		for(i=0;;i++)
 		{
 			if(str1[d][i]!='\0')
-				printf("%c",str1[d][i]);
+				my_printf("%c",str1[d][i]);
 			if(str1[d][i]=='\0')
 				break;
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=0;;i++)
 	{
 		if(str1[0][i]!='\0')
-			printf("%c",str1[0][i]);
+			my_printf("%c",str1[0][i]);
 		if(str1[0][i]=='\0')
 			break;
 	}

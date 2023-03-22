@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[6]={0};
     int money,i;
-	scanf("%d",&money);
+	my_scanf("%d",&money);
 	if((money-100)>=0)
 	{
 		a[0]=(money-money%100)/100;
@@ -32,6 +32,6 @@ int main_bench()
 	}else{money=money;}
     a[5]=money;
 	for(i=0;i<=5;i++)
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	return 0;
 }

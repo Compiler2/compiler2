@@ -26,6 +26,6 @@ main_bench()
        }
    }
    for(j=0;j<l-1;j++)
-   printf("%s ",str[l-j-1]);
-   printf("%s",str[0]);
+   my_printf("%s ",str[l-j-1]);
+   my_printf("%s",str[0]);
 }

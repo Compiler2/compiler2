@@ -11,7 +11,7 @@ main_bench()
       
       l2=strlen(str2);
       if(  l1==1&&l2==1&&str1[0]=='0'&&str2[0]=='0')
-         printf("%s",str1);
+         my_printf("%s",str1);
       else
       {   
     
@@ -105,7 +105,7 @@ main_bench()
           }
            
            
-   printf("%s\n",str3);
+   my_printf("%s\n",str3);
       
       
       

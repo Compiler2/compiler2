@@ -29,12 +29,12 @@ int min(int y)
 int main_bench()
 {
 	r=0;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d ",&ch[i][j]);
+			my_scanf("%d ",&ch[i][j]);
 		}
 	}
 	for(i=0;i<m;i++)
@@ -43,11 +43,11 @@ int main_bench()
 		{
 			if((ch[i][j]==max(i))&&(ch[i][j]==min(j)))
 			{
-				printf("%d+%d\n",i,j);
+				my_printf("%d+%d\n",i,j);
 				r++;
 			}
 		}
 	}
 	if(r==0)
-		printf("No\n");
+		my_printf("No\n");
 }

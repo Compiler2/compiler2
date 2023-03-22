@@ -3,7 +3,7 @@
 int main_bench()
 {
 int a,b;
-scanf("%d",&a);
+my_scanf("%d",&a);
 int n,i;
 if(a>=10000)n=5;
 else if(a>=1000)n=4;
@@ -17,5 +17,5 @@ for(i=1;i<=n;i++)
 b=0;
 for(i=1;i<=n;i++)
 {b=b*10+c[i];}
-printf("%d",b);
+my_printf("%d",b);
 }

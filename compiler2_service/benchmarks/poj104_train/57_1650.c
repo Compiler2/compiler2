@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[50];
 	for(i=0;i<=n;i++){
 		gets(s);
@@ -14,7 +14,7 @@ int main_bench()
 			}else if(s[m-1]=='g'){
 				s[m-3]='\0';break;
 		}}
-                    printf("\n");printf("%s",s);
+                    my_printf("\n");my_printf("%s",s);
 	}
 				
 

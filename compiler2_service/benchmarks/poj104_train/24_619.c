@@ -28,7 +28,7 @@ int main_bench()
 			maxw=i;
 		}
 	}
-	printf("%s\n",ws[maxw]);
-	printf("%s\n",ws[minw]);
+	my_printf("%s\n",ws[maxw]);
+	my_printf("%s\n",ws[minw]);
 	return 0;
 }

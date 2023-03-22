@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,sz[400],i,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
-    printf("%d",sz[0]);
+    my_printf("%d",sz[0]);
     for(i=1;i<n;i++)
     {
          int t=0;           
@@ -29,7 +29,7 @@ int main_bench()
          }
          else
          {
-             printf(",%d",sz[i]);
+             my_printf(",%d",sz[i]);
          }
     }
     return 0;

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,o=0,p=0,k=0,q=0,a[100];
 	char m='%';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -19,10 +19,10 @@ int main_bench()
 			k++;
 		else q++;
 	}
-	printf("1-18: %.2lf%c\n",100*o*1.0/n,m);
-	printf("19-35: %.2lf%c\n",100*p*1.0/n,m);
-	printf("36-60: %.2lf%c\n",100*k*1.0/n,m);
-	printf("60??: %.2lf%c\n",100*q*1.0/n,m);
+	my_printf("1-18: %.2lf%c\n",100*o*1.0/n,m);
+	my_printf("19-35: %.2lf%c\n",100*p*1.0/n,m);
+	my_printf("36-60: %.2lf%c\n",100*k*1.0/n,m);
+	my_printf("60??: %.2lf%c\n",100*q*1.0/n,m);
 	return 0;
 }
 						

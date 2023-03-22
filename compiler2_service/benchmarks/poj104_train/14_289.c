@@ -12,10 +12,10 @@ main_bench()
       int n,i=1,j;
       int a[100001];
       struct student stu[100001];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for (i=1;i<=n;i++)
       {
-          scanf("%d %d %d",&stu[i].id,&stu[i].math,&stu[i].chinese);
+          my_scanf("%d %d %d",&stu[i].id,&stu[i].math,&stu[i].chinese);
           stu[i].zongfen=stu[i].math+stu[i].chinese;
           if (i<4)
           j=i;
@@ -28,10 +28,10 @@ main_bench()
           a[j]=i;       
       }
       for(i=1;i<=3;i++)
-      printf("%d %d\n",stu[a[i]].id,stu[a[i]].zongfen);
+      my_printf("%d %d\n",stu[a[i]].id,stu[a[i]].zongfen);
       getchar();
       getchar();
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       return 0;
       }
             

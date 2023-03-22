@@ -3,7 +3,7 @@
 int main_bench(){
 	int i,j,h=0;
 	char a[100],b[100],c[100];
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
 	for(i=0;i<strlen(a);i++){
 		if(a[i]==b[0]){
 			h=0;
@@ -20,7 +20,7 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 	return 0;
 }
 

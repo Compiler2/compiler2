@@ -15,7 +15,7 @@ int main_bench()
         }
         else 
         {
-             printf("%d %d\n",a[top],i);
+             my_printf("%d %d\n",a[top],i);
              top--;
         }
     }

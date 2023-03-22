@@ -4,9 +4,9 @@ int main_bench(){
 int m,i,n,j,t;
 int p=2,q=1;
 double sum=0.000;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=1;i<=m;i++){
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(j=1;j<=n;j++){
 sum+=p*1.000/q;
 t=q;
@@ -16,7 +16,7 @@ if(j==n){
 	continue;
 }
 }
-printf("%.3lf\n",sum);
+my_printf("%.3lf\n",sum);
 sum=0.000;
 p=2;
 q=1;

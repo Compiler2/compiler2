@@ -6,18 +6,18 @@ int main_bench()
 {
 	int i,j,n,d=0;
 	char c;
-	scanf("%d%c",&n,&c);
+	my_scanf("%d%c",&n,&c);
 	gets(s);
 	for(i=0;*(s+i)!='\0';i++)
 	{
 		d+=1;
 		if(*(s+i)==' '&&d<=81&&d+find(s+i)>81)
 		{
-			printf("\n");
+			my_printf("\n");
 			d=0;
 		}
 		else
-			printf("%c",*(s+i));
+			my_printf("%c",*(s+i));
 	}
 	gets(s);
 	gets(s);

@@ -5,9 +5,9 @@ int main_bench(){
 	int b[100];
 	int n,i,j;
 	
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	j=n-1;
 	if(n<=1||n>=100){
@@ -19,9 +19,9 @@ int main_bench(){
 			j=j-1;
 		}
 		for(j=0;j<n-1;j++){
-	       printf("%d ",b[j]);
+	       my_printf("%d ",b[j]);
 		}
-		printf("%d",b[n-1]);
+		my_printf("%d",b[n-1]);
 	}
 	return 0;
 }

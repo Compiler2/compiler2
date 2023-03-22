@@ -5,7 +5,7 @@ int main_bench()
 	char str[11],substr[4];
 	int i,k=0,n;
 	char a;
-	while(scanf("%s %s",str,substr)==2)
+	while(my_scanf("%s %s",str,substr)==2)
 	{
 		n=strlen(str);
 		a=str[0];
@@ -20,12 +20,12 @@ int main_bench()
 			}
 		}
 		for(i=0;i<=k;i++)
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		for(i=0;i<=2;i++)
-			printf("%c",substr[i]);
+			my_printf("%c",substr[i]);
 		for(i=k+1;i<n;i++)
-			printf("%c",str[i]);
-		printf("\n");
+			my_printf("%c",str[i]);
+		my_printf("\n");
 	}
 	
 }

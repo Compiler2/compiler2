@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,k=0,name[26]={0},max,a[1000],t=0;
 	char word[1000][30];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=-1;i<n;i++)
 	{
 		gets(word[i]);
@@ -51,16 +51,16 @@ int main_bench()
 		}
 		k=0;
 	}
-	printf("%c\n%d\n",'A'+j,max);
+	my_printf("%c\n%d\n",'A'+j,max);
 	k=0;
 	for(i=0;i<t;i++)
 	{
 		while(word[a[i]][k]!=' ')
 		{
-			printf("%c",word[a[i]][k]);
+			my_printf("%c",word[a[i]][k]);
 			k=k+1;
 		}
-		printf("\n");
+		my_printf("\n");
 		k=0;
 	}
 }

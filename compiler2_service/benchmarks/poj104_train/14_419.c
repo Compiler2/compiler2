@@ -15,12 +15,12 @@ struct student
 main_bench()
 {
     int n,i,j,d=0,b[100000],c[100000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%d",&a[i].num);
-                    scanf("%d",&a[i].x);
-                    scanf("%d",&a[i].y);
+                    my_scanf("%d",&a[i].num);
+                    my_scanf("%d",&a[i].x);
+                    my_scanf("%d",&a[i].y);
     }
     for(i=0;i<n;i++)
     {
@@ -31,8 +31,8 @@ main_bench()
     {
              if(b[n-1]==a[j].x+a[j].y)
              {
-                     printf("%d"" ""%d",a[j].num,b[n-1]);
-                     printf("\n");
+                     my_printf("%d"" ""%d",a[j].num,b[n-1]);
+                     my_printf("\n");
                      d++;
              }
              if(d==3)
@@ -48,8 +48,8 @@ main_bench()
                                   {
                                               if(b[i]==a[j].x+a[j].y)
                                               {
-                                                      printf("%d"" ""%d",a[j].num,b[i]);
-                                                      printf("\n");
+                                                      my_printf("%d"" ""%d",a[j].num,b[i]);
+                                                      my_printf("\n");
                                                       d++;
                                               }
                                               if(d==3)

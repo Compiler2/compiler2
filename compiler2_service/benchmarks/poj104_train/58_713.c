@@ -5,13 +5,13 @@ int main_bench()
 int f(char a[],int t);
 int n,i,p,m;
 char a[100];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=1;i<=n;i++)
 {
 	gets(a);
 	m=strlen(a);
 	p=f(a,m);
-	printf("%d\n",p);
+	my_printf("%d\n",p);
 }
 }
 int f(char a[],int t)

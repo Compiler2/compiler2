@@ -6,7 +6,7 @@ int main_bench()
 	int sum,num[6]={0,0,0,0,0,0};
 	int i;
 
-	scanf("%d",&sum);
+	my_scanf("%d",&sum);
 
 	if(sum>=100)
 	{
@@ -41,7 +41,7 @@ int main_bench()
 
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n",num[i]);
+		my_printf("%d\n",num[i]);
 	}
 
 	return 0;

@@ -16,11 +16,11 @@ int main_bench()
     for(i=0;i<1000;i++)
 	{
 	if(str1[i]=='\0'&&str2[i]=='\0')
-	{printf("=");break;}
+	{my_printf("=");break;}
 	if(str1[i]>str2[i])
-	{printf(">");break;}
+	{my_printf(">");break;}
     if(str1[i]<str2[i])
-	{printf("<");break;}
+	{my_printf("<");break;}
 	}
 }
 

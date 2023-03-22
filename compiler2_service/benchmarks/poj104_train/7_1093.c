@@ -4,9 +4,9 @@ int main_bench()
 {
 	int m,n,i,j,t=0;
 	char c[256],d[256],e[256];
-	scanf("%s",c);
-	scanf("%s",d);
-	scanf("%s",e);
+	my_scanf("%s",c);
+	my_scanf("%s",d);
+	my_scanf("%s",e);
 	m=strlen(c);
 	n=strlen(d);
 	for(i=0;i<m;i++)
@@ -31,7 +31,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s",c);
+	my_printf("%s",c);
 	return 0;
 }
 

@@ -21,14 +21,14 @@ main_bench()
 {
 	int a[200],b[100],i;
 	int changdu1,changdu2;
-	scanf("%d %d",&changdu1,&changdu2);
+	my_scanf("%d %d",&changdu1,&changdu2);
 	for(i=0;i<changdu1;i++)
 	{
-          scanf("%d",&a[i]);
+          my_scanf("%d",&a[i]);
 	}
 		for(i=0;i<changdu2;i++)
 	{
-          scanf("%d",&b[i]);
+          my_scanf("%d",&b[i]);
 	}
 		f(a,changdu1);
 		f(b,changdu2);
@@ -40,8 +40,8 @@ main_bench()
 		for(i=0;i<changdu1+changdu2;i++)
 		{
 			if(i==0)
-				printf("%d",a[0]);
-		else	printf(" %d",a[i]);
+				my_printf("%d",a[0]);
+		else	my_printf(" %d",a[i]);
 		}
 	return 0;
 }

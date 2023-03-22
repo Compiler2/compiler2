@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int year,month,day;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	int a=1;
 	do{
 		a+=400;
@@ -45,25 +45,25 @@ int main_bench(){
 	}
 	sum=sum%7;
 	if(sum==1){
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	if(sum==2){
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	if(sum==3){
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	if(sum==4){
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	if(sum==5){
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	if(sum==6){
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	if(sum==0){
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

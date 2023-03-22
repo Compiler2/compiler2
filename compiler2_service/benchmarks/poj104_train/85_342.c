@@ -19,12 +19,12 @@ main_bench()
 {
 	int n,i;
 	char x[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",x);
+		my_scanf("%s",x);
 		if(range(x)==1&&first(x)==1)
-			printf("yes\n");
-		else printf("no\n");
+			my_printf("yes\n");
+		else my_printf("no\n");
 	}
 }

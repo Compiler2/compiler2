@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,k,p,t;
 	char a[500];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	p=strlen(a);
 	char b[500][500];
@@ -34,11 +34,11 @@ int main_bench()
 		 t=mark[i];mark[i]=mark[j];mark[j]=t;
         }
     }
-	if(num[0]==0)printf("NO");
+	if(num[0]==0)my_printf("NO");
 	else
 	{
 
-	printf("%d\n",num[0]+1);
+	my_printf("%d\n",num[0]+1);
 	puts(b[mark[0]]);
 	for(i=1;;i++)
 	{

@@ -17,14 +17,14 @@ int f(int m)
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<5)
-	printf("empty");
+	my_printf("empty");
 	else
 	for(i=3;i<n;i++)
 	{
 		if(f(i)==1)
 		{if(f(i+2)==1)
-				printf("%d %d\n",i,i+2);}
+				my_printf("%d %d\n",i,i+2);}
 	}
 }

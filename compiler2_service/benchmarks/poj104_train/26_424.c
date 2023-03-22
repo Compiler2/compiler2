@@ -6,11 +6,11 @@ int main_bench()
     int i,l,m;
     gets(a);
     l=strlen(a);
-    printf("%c",a[0]); 
+    my_printf("%c",a[0]); 
     for(i=1;i<l;i++)
     {
-         if(a[i]!=' ') printf("%c",a[i]);
-         else if(a[i]==' '&&a[i-1]!=' ') printf("%c",a[i]);
+         if(a[i]!=' ') my_printf("%c",a[i]);
+         else if(a[i]==' '&&a[i-1]!=' ') my_printf("%c",a[i]);
          else if(a[i]==' '&&a[i-1]==' ') continue;
     }
     getchar();

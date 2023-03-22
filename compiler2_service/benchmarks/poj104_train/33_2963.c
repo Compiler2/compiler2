@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j;
 	char d[300];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=0;j<=256;j++)
@@ -19,21 +19,21 @@ int main_bench()
 			switch (d[j])
 			{
 			case 'A':
-					printf("T");
+					my_printf("T");
 					break;
 			case 'T':
-					printf("A");
+					my_printf("A");
 					break;
 			case 'C':
-					printf("G");
+					my_printf("G");
 					break;
 			case 'G':
-					printf("C");
+					my_printf("C");
 					break;
 			}
 			j++;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

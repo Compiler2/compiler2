@@ -5,7 +5,7 @@ int main_bench()
 	double n;
 	int s=0,len1,len2,i;
 	char b[501],c[501],e[501];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	gets(b);
 	gets(c);
 	gets(e);
@@ -26,7 +26,7 @@ int main_bench()
 		}
 	}
 	if(len1!=len2){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<len1;i++)
 		{
@@ -35,9 +35,9 @@ int main_bench()
 			}
 		}
 	    if(1.0*s/len1>=n){
-		    printf("yes");
+		    my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	

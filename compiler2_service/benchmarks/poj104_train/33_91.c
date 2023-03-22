@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,len;
 	char zf[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for (i=0;i<n;i++){
-		scanf("%s",zf[i]);
+		my_scanf("%s",zf[i]);
 		j=0;
 		len=strlen(zf[i]);
 		for (j=0;j<len;j++){
@@ -25,7 +25,7 @@ int main_bench(){
 				break;
 			}
 		}
-		printf("%s\n",zf[i]);
+		my_printf("%s\n",zf[i]);
 	}
 	return 0;
 }

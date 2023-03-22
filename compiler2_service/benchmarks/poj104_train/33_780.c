@@ -4,11 +4,11 @@ int main_bench()
 {
 	char a[256],*ps,b[256];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int i,k;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		k=0;
 		for(ps=a;*ps!='\0';ps++)
 		{
@@ -19,7 +19,7 @@ int main_bench()
 			k++;
 		}
 		b[k]='\0';
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 	return 0;
 }

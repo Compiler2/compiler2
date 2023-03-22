@@ -6,9 +6,9 @@ int i,j,len,a,b,t=0;
 long shu1;
 char s[100];
 int c[100];
-scanf("%d",&a);
-scanf("%s",s);
-scanf("%d",&b);
+my_scanf("%d",&a);
+my_scanf("%s",s);
+my_scanf("%d",&b);
 len=strlen(s);
 if(a<=10)
 {
@@ -39,7 +39,7 @@ shu1=shu1*a+s[i]-'A'+10;
 if(b<=10)
 {
 if(shu1==0)
-printf("0\n");
+my_printf("0\n");
 else
 {
 for(i=0;shu1!=0;i++)
@@ -49,15 +49,15 @@ shu1=shu1/b;
 }
 for(j=i-1;j>=0;j--)
 {
-printf("%d",c[j]);
+my_printf("%d",c[j]);
 }
-printf("\n");
+my_printf("\n");
 }
 }
 else if(b>10)
 {
 if(shu1==0)
-printf("0\n");
+my_printf("0\n");
 else
 {
 for(i=0;shu1!=0;i++)
@@ -68,12 +68,12 @@ shu1=shu1/b;
 for(j=i-1;j>=0;j--)
 {
 if(c[j]>=10)
-printf("%c",'A'+c[j]-10);
+my_printf("%c",'A'+c[j]-10);
 else
-printf("%d",c[j]);
+my_printf("%d",c[j]);
 }
 }
-printf("\n");
+my_printf("\n");
 }
 return 0;
 }

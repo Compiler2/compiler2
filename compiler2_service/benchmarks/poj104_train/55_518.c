@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,i,m,n,t,sum=0;
 	char str[100]={'0'},s[100]={'0'},c[100]={'0'};
-	scanf("%d %s %d",&a,str,&b);
+	my_scanf("%d %s %d",&a,str,&b);
 	n=strlen(str);
 	for (i=0;i<n;i++)
 	{
@@ -31,6 +31,6 @@ int main_bench()
 	for (i=0;i<m;i++)
 	{	c[i]=s[m-1-i];}
 	for (i=0;i<m;i++)
-	{	printf("%c",c[i]);}
-	printf("\n");
+	{	my_printf("%c",c[i]);}
+	my_printf("\n");
 }

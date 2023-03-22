@@ -14,7 +14,7 @@ int main_bench()
             if(t!=1) continue;
         }
         else t=0;
-        printf("%c",a[i]);    
+        my_printf("%c",a[i]);    
     }
     return 0;
 }

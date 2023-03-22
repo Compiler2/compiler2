@@ -8,9 +8,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&matrix[i][j]);
+			my_scanf("%d",&matrix[i][j]);
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 
 	if(inrange(m,n))
 	{
@@ -26,12 +26,12 @@ int main_bench()
 			for(j=0;j<5;j++)
 			{
 				if(j<4)
-					printf("%d ",matrix[i][j]);
-				else printf("%d\n",matrix[i][j]);
+					my_printf("%d ",matrix[i][j]);
+				else my_printf("%d\n",matrix[i][j]);
 			}
 		}
 	}
-	else printf("error\n");
+	else my_printf("error\n");
 }
 
 int inrange(int x,int y)

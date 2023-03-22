@@ -36,7 +36,7 @@ for(i=0,j=0;i<len1;i++){
 				break;
 		}
 	}
-   printf("%d",w); 
+   my_printf("%d",w); 
 
 	 
 	  return 0;

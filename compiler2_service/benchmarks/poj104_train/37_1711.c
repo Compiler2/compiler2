@@ -5,7 +5,7 @@ main_bench()
 {
 	int x,i,j,t,num;
 	char y;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(x=0;x<=t;x++)
 	{
 		int d;
@@ -23,7 +23,7 @@ main_bench()
 		{
 			if(b[i]==1)
 			{
-			printf("%c\n",a[i]);
+			my_printf("%c\n",a[i]);
 			break;
 				}
 			}		
@@ -33,7 +33,7 @@ main_bench()
 			d=b[i];b[i]=b[i+1];b[i+1]=d;
 			}
 		if(b[num-1]>1)
-			printf("no\n");
+			my_printf("no\n");
 			
 		}
 	

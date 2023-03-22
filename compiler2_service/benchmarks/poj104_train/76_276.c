@@ -7,10 +7,10 @@ int main_bench()
 	int a[50000][2];
 	int min[2];
 	int i,j,t,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i][0],&a[i][1]);
+		my_scanf("%d%d",&a[i][0],&a[i][1]);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -33,7 +33,7 @@ int main_bench()
 	{
 		if(a[i][0]>min[1] || a[i][1]<min[0])
 		{
-			printf("no\n");
+			my_printf("no\n");
 			m=1;
 			break;
 		}
@@ -46,7 +46,7 @@ int main_bench()
 		}
 	}
 	if(m==0)
-	printf("%d %d\n",min[0],min[1]);
+	my_printf("%d %d\n",min[0],min[1]);
 	
 	return 0;
 } 

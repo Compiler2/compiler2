@@ -5,9 +5,9 @@ int main_bench()
 	int i,j,a,b,c=0,d=0;
 	double x,y=0;
 	char s[501],z[501];
-	scanf("%lf",&x);
-	scanf("%s",s);
-	scanf("%s",z);
+	my_scanf("%lf",&x);
+	my_scanf("%s",s);
+	my_scanf("%s",z);
 	for(i=0;i<501;i++)
 	{
 		if(s[i]=='\0')
@@ -37,7 +37,7 @@ int main_bench()
 	b=j;
 	if(c==1||a!=b)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;i<a;i++)
@@ -50,11 +50,11 @@ int main_bench()
 	y=(d-1)*1.0/(a-1);
 	if(y>=x)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

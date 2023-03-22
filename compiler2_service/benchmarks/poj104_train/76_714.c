@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int min[n],max[n];
     for (int i=0;i<n;i++)
     {
-        scanf("%d %d\n",&min[i],&max[i]);
+        my_scanf("%d %d\n",&min[i],&max[i]);
     }
     int e;
     for(int k = 1 ; k <= n ; k++){
@@ -24,7 +24,7 @@ int main_bench(){
     for(int i=0;i<n-1;i++)
     {
         if(max[i]<min[i+1]){
-           printf("no");
+           my_printf("no");
            break;}
         else if((max[i]>max[i+1])&&(i!=n-1))
      {
@@ -34,7 +34,7 @@ int main_bench(){
 	 }
 
         if(i+1==n-1)
-        printf("%d %d",min[0],max[n-1]);
+        my_printf("%d %d",min[0],max[n-1]);
     }
  return 0;
 }

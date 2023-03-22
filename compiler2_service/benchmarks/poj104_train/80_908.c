@@ -29,7 +29,7 @@ int main_bench(){
 	struct ymd{
 		int y,m,d;
 	} n1,n2,t;
-	scanf("%d%d%d%d%d%d",&n1.y,&n1.m,&n1.d,&n2.y,&n2.m,&n2.d);
+	my_scanf("%d%d%d%d%d%d",&n1.y,&n1.m,&n1.d,&n2.y,&n2.m,&n2.d);
 	if((n1.y>n2.y)||(n1.y==n2.y&&n1.m>n2.m)||(n1.y==n2.y&&n1.m==n2.m&&n1.d>n2.d)){
 	    t=n1;
 		n1=n2;
@@ -57,7 +57,7 @@ int main_bench(){
 		}
 		s+=s1+s2;
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 
    return 0;
 }

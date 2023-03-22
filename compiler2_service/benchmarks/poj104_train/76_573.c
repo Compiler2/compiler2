@@ -13,9 +13,9 @@ int _ins(int temp,int j)
 int main_bench()
 {
     int n,e,f;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=0;i<=n-1;i++)
-        scanf("%d %d",&a[i],&b[i]);
+        my_scanf("%d %d",&a[i],&b[i]);
     
     for(int k=1;k<n;k++){
         for(int i=0;i<n-k;i++){
@@ -39,9 +39,9 @@ int main_bench()
     }
     
     if (temp==-1)
-        printf("no\n");
+        my_printf("no\n");
     else
-        printf("%d %d\n",a[0],temp);
+        my_printf("%d %d\n",a[0],temp);
         
     return 0;
 }

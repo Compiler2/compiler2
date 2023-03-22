@@ -8,7 +8,7 @@ int main_bench()
 	int c;
 	int d;
 	int e;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	a=x/10000;
 	b=(x-10000*a)/1000;
 	c=(x-10000*a-1000*b)/100;
@@ -16,21 +16,21 @@ int main_bench()
 	e=x%10;
 	{
 		if(a==0&&b!=0&&c!=0&&d!=0&&e!=0)
-			printf("%d%d%d%d",e,d,c,b);
+			my_printf("%d%d%d%d",e,d,c,b);
 		else
 			if(a==0&&b==0&&c!=0&&d!=0&&e!=0)
-				printf("%d%d%d",e,d,c);
+				my_printf("%d%d%d",e,d,c);
 			else
 				if(a==0&&b==0&&c==0&&d!=0&&e!=0)
-					printf("%d%d",e,d);
+					my_printf("%d%d",e,d);
 				else
 					if(a==0&&b==0&&c==0&&d==0&&e!=0)
-						printf("%d",e);
+						my_printf("%d",e);
 					else
 						if(a!=0&&b!=0&&c!=0&&d!=0&&e!=0)
-							printf("%d%d%d%d%d",e,d,c,b,a);
+							my_printf("%d%d%d%d%d",e,d,c,b,a);
 						else
-							printf("I don't know!");
+							my_printf("I don't know!");
 	}
 	return 0;
 }

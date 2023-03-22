@@ -28,7 +28,7 @@ int main_bench()
 	for(i=0;i<n;i++){
 		gets(zfc);
 		len=strlen(zfc);
-		printf("%d\n",islegal(zfc,len));
+		my_printf("%d\n",islegal(zfc,len));
 	}
 	return 0;
 }

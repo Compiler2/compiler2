@@ -35,11 +35,11 @@ int main_bench()
     {
         len[k]=strlen(subs[k]);
     }
-    printf("%d", len[0]);
+    my_printf("%d", len[0]);
     for(k=1;k<=j;k++)
     {
-        printf(",%d", len[k]);
+        my_printf(",%d", len[k]);
     }
-    scanf(" ");
+    my_scanf(" ");
     return 0;
 }

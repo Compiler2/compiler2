@@ -12,10 +12,10 @@ int main_bench()
 		int age;
 	}
 	gh[100],gh60[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",d,&a);
+		my_scanf("%s %d",d,&a);
 		if(a>=60)
 		{
 			strcpy(gh60[sgh60].ID,d);
@@ -45,11 +45,11 @@ int main_bench()
 	}
 	for(i=0;i<sgh60;i++)
 	{
-		printf("%s\n",gh60[i].ID);
+		my_printf("%s\n",gh60[i].ID);
 	}
 	for(i=0;i<sgh;i++)
 	{
-		printf("%s\n",gh[i].ID);
+		my_printf("%s\n",gh[i].ID);
 	}
 	return 0;
 }

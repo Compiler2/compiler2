@@ -4,7 +4,7 @@
 main_bench()
 {
       char X[260],Y[260],Z[260],P[260],K[260],O[260];
-      scanf("%s %s",K,O);
+      my_scanf("%s %s",K,O);
       int m,n,s;
       m=strlen(K);
       n=strlen(O);
@@ -35,9 +35,9 @@ main_bench()
        }   
        Y[n-v]='\0';
        n=n-d;
-       if(n==0&&m!=0) printf("%s",X);
-       else if(m==0&&n!=0) printf("%s",Y);
-       else if(n==0&&m==0) printf("%d",0);
+       if(n==0&&m!=0) my_printf("%s",X);
+       else if(m==0&&n!=0) my_printf("%s",Y);
+       else if(n==0&&m==0) my_printf("%d",0);
        else 
        {
       if(m>n) 
@@ -93,7 +93,7 @@ main_bench()
       }
       else P[0]=X[0];
       P[s]='\0';
-      printf("%s",P);
+      my_printf("%s",P);
       }
            if(n>m) 
       {
@@ -148,7 +148,7 @@ main_bench()
       }
       else P[0]=Y[0];
       P[s]='\0';
-       printf("%s",P);
+       my_printf("%s",P);
       }
      if(m==n)
         {
@@ -203,7 +203,7 @@ main_bench()
       }
       else P[0]=X[0]+Y[0]-'0';
       P[s]='\0';
-        printf("%s",P
+        my_printf("%s",P
         );           
       
       }

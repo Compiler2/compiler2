@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,p;
 	int i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n<10)
 	   p=1;
     else if (n<100)
@@ -16,7 +16,7 @@ int main_bench()
 	do
 	{
 		m=n%10;
-		printf("%d",m);
+		my_printf("%d",m);
 		n=n/10;
 		i++;
 	}while(i<=p);

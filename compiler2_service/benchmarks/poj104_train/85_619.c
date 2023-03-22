@@ -2,11 +2,11 @@
 
 int main_bench(){
 int n,len;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char a[100][20],b[20];
 int i,k,flag;
 for(i=0;i<n;i++){
-	scanf("%s",a[i]);
+	my_scanf("%s",a[i]);
 }
 for(i=0;i<n;i++){
 	strcpy(b,a[i]);
@@ -23,12 +23,12 @@ for(i=0;i<n;i++){
 			}
 		}
 		if(flag==0){
-			printf("no\n");
+			my_printf("no\n");
 		}else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 }
 	return 0;

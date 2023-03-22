@@ -4,10 +4,10 @@ int main_bench()
 {
 	int r,i,max1=0,max2=0;
 	int score[100];
-	scanf("%d",&r);
+	my_scanf("%d",&r);
     for(i=0;i<=r-1;i++)
 	{
-		scanf("%d",&score[i]);
+		my_scanf("%d",&score[i]);
 	}
 	for(i=0;i<=r-1;i++)
 	{
@@ -21,6 +21,6 @@ max2 = max1;
 			max2 = score[i];
 
 	 }
-	printf("%d\n%d",max1,max2);
+	my_printf("%d\n%d",max1,max2);
 	 return 0;
 }

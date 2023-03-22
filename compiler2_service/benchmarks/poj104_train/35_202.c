@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int max,m,n,i,j,y,t,c,d,a[10][10],h,u;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
    u=0;
     for(i=0;i<m;i++)
 	{   max=a[i][0];
@@ -22,8 +22,8 @@ int main_bench()
 			y=0;
 			break;
 			}
-        if(y==1) {printf("%d+%d",c,d);u=1;}
+        if(y==1) {my_printf("%d+%d",c,d);u=1;}
 	}
-			if(u==0) printf("No");
+			if(u==0) my_printf("No");
 
 }

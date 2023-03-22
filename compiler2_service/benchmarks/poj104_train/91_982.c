@@ -10,8 +10,8 @@ int main_bench()
 	i=0;
 	for(i=0;i<len-1;i++)
 	{
-		printf("%c",*(pa+i)+*(pa+i+1));
+		my_printf("%c",*(pa+i)+*(pa+i+1));
 	}
-	printf("%c",*(pa)+*(pa+len-1));
+	my_printf("%c",*(pa)+*(pa+len-1));
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	for(n=1;;)
 	{
 		char c;
-		scanf("%d%c",&data[1][n],&c);
+		my_scanf("%d%c",&data[1][n],&c);
 		if(c=='\n')
 			break;
 		n++;
@@ -14,12 +14,12 @@ int main_bench()
 	for(n=1;;)
 	{
 		char c;
-		scanf("%d%c",&data[2][n],&c);
+		my_scanf("%d%c",&data[2][n],&c);
 		if(c=='\n')
 			break;
 		n++;
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 	for(j=1,max=0;j<=n;j++)
 		if(data[1][j]<=0&&data[2][j]>0)
 			max++;
@@ -32,5 +32,5 @@ int main_bench()
 		if(max<=temp)
 			max=temp;
 	}
-	printf(" %d",max);
+	my_printf(" %d",max);
 }

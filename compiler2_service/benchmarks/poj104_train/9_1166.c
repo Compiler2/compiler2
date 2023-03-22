@@ -4,10 +4,10 @@
 int main_bench(){
 	char id[100][10],old[100][10],yog[100][10];
 	int n,i,m=0,l=0,age[100],oag[100],yag[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",id[i]);
-		scanf("%d",&(age[i]));
+		my_scanf("%s",id[i]);
+		my_scanf("%d",&(age[i]));
 		if(age[i]>=60){
              oag[m]=age[i];
 			 strcpy(old[m],id[i]);

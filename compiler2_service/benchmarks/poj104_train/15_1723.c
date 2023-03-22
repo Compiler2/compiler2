@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,sz[100][100],i,j,x1=-1,y1,x2=-1,y2,s;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 
@@ -38,6 +38,6 @@ for(i=n-1;i>=0;i--){
 	}
     s=(x2-x1-1)*(y2-y1-1);
 
-   printf("%d",s);
+   my_printf("%d",s);
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
  int s;
  for(s=1;s=1000;s++)
  {
- scanf("%d %d %d %d %d %d", &a,&b,&c,&d,&e,&f);
+ my_scanf("%d %d %d %d %d %d", &a,&b,&c,&d,&e,&f);
  if (a==0)
  break;
  else
@@ -36,7 +36,7 @@ int main_bench()
   {p=f-c;
   t=m*3600+n*60+p;}
  }
- printf("%d\n", t);
+ my_printf("%d\n", t);
  }
  }
  return 0;

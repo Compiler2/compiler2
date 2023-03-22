@@ -4,7 +4,7 @@
 int main_bench()
 {
     int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int a=0,b=0,c=0,d=0,e=0,f=0;
 	if((k/100)!=0)
 	{
@@ -35,12 +35,12 @@ int main_bench()
 	{
 		f=k;
 	}
-	printf("%d\n",a);
-    printf("%d\n",b);
-    printf("%d\n",c);		
-    printf("%d\n",d);		
-    printf("%d\n",e);		
-    printf("%d\n",f);
+	my_printf("%d\n",a);
+    my_printf("%d\n",b);
+    my_printf("%d\n",c);		
+    my_printf("%d\n",d);		
+    my_printf("%d\n",e);		
+    my_printf("%d\n",f);
 return 0;
 }
 

@@ -8,27 +8,27 @@ int main_bench(){
 	for(i=0;i<l;i++){
 		t=a[i];
 		if(t==32){
-			printf("%d",i);
+			my_printf("%d",i);
 			k=i;
 			break;
 		}
 	}
    if(i==l){
-			printf("%d",i);
+			my_printf("%d",i);
 		}
    else{
 	for(j=i+1;j<l;j++){
 		t=a[j];
         t1=a[j-1];
 		if(t==32&&t1!=32){
-			printf(",%d",j-k-1);
+			my_printf(",%d",j-k-1);
 			k=j;
 		}
 		if(t==32&&t1==32){
 			k=j;
 		}
     if(j==l-1){
-			printf(",%d",j-k);
+			my_printf(",%d",j-k);
 		}
 		
 	}

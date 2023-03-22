@@ -3,7 +3,7 @@
 int main_bench()
 {   int i,j,t,sum=0;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)==strlen(b)){
 		for(i=0;i<strlen(a)&&a[i]!='\0';i++){
 			t=0;
@@ -16,16 +16,16 @@ int main_bench()
 				}
 			}
 			if(t==0){
-				printf("NO");
+				my_printf("NO");
 				break;
 			}
 		}
 		if(sum==strlen(a)){
-			printf("YES");
+			my_printf("YES");
 		}
 	}
 	else{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

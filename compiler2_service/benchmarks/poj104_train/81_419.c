@@ -7,9 +7,9 @@ int main_bench()
 	int *p;
 	for(m=0;m<5;m++)
 	{for(i=0;i<4;i++)
-		scanf("%d ",&a[m][i]);
-	scanf("%d",&a[m][4]);}
-scanf("%d %d",&c,&b);
+		my_scanf("%d ",&a[m][i]);
+	my_scanf("%d",&a[m][4]);}
+my_scanf("%d %d",&c,&b);
 if(c>=0&&c<=4&&b>=0&&b<=4)
 {
 	for(i=0;i<5;i++)
@@ -19,10 +19,10 @@ if(c>=0&&c<=4&&b>=0&&b<=4)
 	a[b][i]=x;}
 for(m=0;m<5;m++)
 	{for(i=0;i<4;i++)
-		printf("%d ",a[m][i]);
-printf("%d\n",a[m][4]);}
+		my_printf("%d ",a[m][i]);
+my_printf("%d\n",a[m][4]);}
 }
-else printf("error");
+else my_printf("error");
 }
 
 

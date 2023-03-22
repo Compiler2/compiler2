@@ -20,10 +20,10 @@ int main_bench()
 						ju[5]=0;
 						if(ju[rank[1]]==1&&ju[rank[2]]==1&&ju[rank[3]]==0&&ju[rank[4]]==0&&ju[rank[5]]==0) {
 							for (i=1; i<6; i++)
-								if (rank[i]==1) printf("%d", i);
+								if (rank[i]==1) my_printf("%d", i);
 							for (j=2; j<6; j++) {
 								for (i=1; i<6; i++) {
-									if (rank[i]==j) printf(" %d", i);
+									if (rank[i]==j) my_printf(" %d", i);
 								}
 							}
 						}

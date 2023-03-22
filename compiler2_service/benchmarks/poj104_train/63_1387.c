@@ -6,14 +6,14 @@ int main_bench()
     int z2[101][101];
     int z3[101][101];
     int m,n,q,i,j,k;
-    scanf("%d%d",&m,&q);
+    my_scanf("%d%d",&m,&q);
     for (i=1;i<=m;i++)
         for (j=1;j<=q;j++)
-        scanf("%d",&z1[i][j]);
-    scanf("%d%d",&q,&n);
+        my_scanf("%d",&z1[i][j]);
+    my_scanf("%d%d",&q,&n);
     for (i=1;i<=q;i++)
         for (j=1;j<=n;j++)
-        scanf("%d",&z2[i][j]);
+        my_scanf("%d",&z2[i][j]);
     for (i=1;i<=m;i++)
         for (j=1;j<=n;j++)
             {
@@ -23,9 +23,9 @@ int main_bench()
             }
     for (i=1;i<=m;i++)
         {
-        printf("%d",z3[i][1]);
+        my_printf("%d",z3[i][1]);
         for (j=2;j<=n;j++)
-        printf(" %d",z3[i][j]);
-        printf("\n");
+        my_printf(" %d",z3[i][j]);
+        my_printf("\n");
         }
 }

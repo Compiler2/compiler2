@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,m,i,j,k,p=0;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	int sz[1000],pl[1000],a;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		pl[i]=sz[i];
 	}
 	
@@ -25,11 +25,11 @@ int main_bench()
 	}
 	if(p==n*(n-1))
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 
 	

@@ -28,5 +28,5 @@ int main_bench()
 	for(i=0;i<l;i++)
 		if(a[i]==0)
 			a[i]=' ';
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 }

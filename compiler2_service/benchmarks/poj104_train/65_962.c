@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,j,m,a=0,b=0;
     int sz[200][200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d",&m,&j);
+        my_scanf("%d %d",&m,&j);
        if(m==0&&j==1){ a++;}
             else if(m==1&&j==2){ a++;}
             else if(m==2&&j==0){ a++;}
@@ -15,9 +15,9 @@ int main_bench(){
             else {};
     }
       
-            if(a>b){printf("A");}
-           else if(a<b){printf("B");}
-           else{printf("Tie");}
+            if(a>b){my_printf("A");}
+           else if(a<b){my_printf("B");}
+           else{my_printf("Tie");}
     return 0;
 }
 

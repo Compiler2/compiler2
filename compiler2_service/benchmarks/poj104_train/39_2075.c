@@ -14,10 +14,10 @@ int main_bench()
 		int paper;
 	}student[101];
 	int money[101];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&student[i].name, &student[i].qimo,&student[i].banji,
+		my_scanf("%s %d %d %c %c %d",&student[i].name, &student[i].qimo,&student[i].banji,
 			&student[i].ganbu,&student[i].xibu,&student[i].paper);
 	}
 	int total=0;
@@ -58,6 +58,6 @@ int main_bench()
 		}
 
 	}
-	printf("%s\n%d\n%d\n",maxname,maxmoney,total);
+	my_printf("%s\n%d\n%d\n",maxname,maxmoney,total);
 	return 0;
 }

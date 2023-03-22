@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int row,col,a[100][100],i,j,max,s;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	max=row;
 	if(max<col)max=col;
 	for(i=0;i<max;i++)
@@ -17,16 +17,16 @@ int main_bench()
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	if(max==1)printf("%d",a[0][0]);
+	if(max==1)my_printf("%d",a[0][0]);
 	else{
 	i=0;
 	j=0;
 	while(j<max)
 	{
-		if(a[i][j]!=-1)printf("%d\n",a[i][j]);
+		if(a[i][j]!=-1)my_printf("%d\n",a[i][j]);
 		if(j==0){
 			j=i+1;
 			i=0;
@@ -40,7 +40,7 @@ int main_bench()
 	i=1;
 	while(i!=max-1||j!=max-1)
 	{
-		if(a[i][j]!=-1)printf("%d\n",a[i][j]);
+		if(a[i][j]!=-1)my_printf("%d\n",a[i][j]);
 		if(i==max-1){
 			i=j+1;
 			j=max-1;
@@ -50,6 +50,6 @@ int main_bench()
 			j=j-1;
 		}
 	}
-	if(a[max-1][max-1]!=-1)printf("%d\n",a[max-1][max-1]);}
+	if(a[max-1][max-1]!=-1)my_printf("%d\n",a[max-1][max-1]);}
 	return 0;
 }

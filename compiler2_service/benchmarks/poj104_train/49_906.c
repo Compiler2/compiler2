@@ -28,7 +28,7 @@ int main_bench()
 			{	
 				for(j=i;j<=i+w-1;j++)
 					putchar(s[j]);
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

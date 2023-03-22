@@ -4,7 +4,7 @@ int main_bench()
 {
  int n;
  int result=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (int i=1;i<= n;i++){
 	 if (i%7!=0) {
       for (int k=i;k>0;k/=10){
@@ -15,6 +15,6 @@ int main_bench()
 	  }
 	 }
  }
- printf("%d",result);
+ my_printf("%d",result);
  return 0;
 }

@@ -9,11 +9,11 @@ int main_bench()
 	for(p=s+n-1;p>s;p--){
 		if(*p==' '){
 			for(k=p+1;(*k!=' ')&&(*k!='\0');k++)
-			{printf("%c",*k);}
-			printf(" ");
+			{my_printf("%c",*k);}
+			my_printf(" ");
 		}
 	}
 	for(;(*p!=' ')&&(*p!='\0');p++)
-		printf("%c",*p);
+		my_printf("%c",*p);
 }
 	

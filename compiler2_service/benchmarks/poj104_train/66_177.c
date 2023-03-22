@@ -3,7 +3,7 @@
 int main_bench()
 {
 	unsigned long int a,b,c,days,allday,m,n;
-	scanf("%ld %ld %ld",&a,&b,&c);
+	my_scanf("%ld %ld %ld",&a,&b,&c);
 	n=(a-1)*365+(unsigned long int)((a-1)/4)-(unsigned long int)((a-1)/100)+(unsigned long int)((a-1)/400);
     
 	switch(b)
@@ -29,17 +29,17 @@ case 12:days=c+334;break;
 	
 	switch(m)
 	{
-case 0:printf("Sun.");break;
-	case 1:printf("Mon.");break;
-case 2:printf("Tue.");break;
-case 3:printf("Wed.");break;
-case 4:printf("Thu.");break;
-case 5:printf("Fri.");break;
-case 6:printf("Sat.");break;
+case 0:my_printf("Sun.");break;
+	case 1:my_printf("Mon.");break;
+case 2:my_printf("Tue.");break;
+case 3:my_printf("Wed.");break;
+case 4:my_printf("Thu.");break;
+case 5:my_printf("Fri.");break;
+case 6:my_printf("Sat.");break;
 	}
 	}
 	else if(a==1000000000&&b==b&&c==12)
-		printf("Thu.");
+		my_printf("Thu.");
 	
 	
 	

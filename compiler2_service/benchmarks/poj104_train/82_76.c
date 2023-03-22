@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int n,a[100],b[100],i,j,c[100],k=0,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	c[0]=0;
 for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 
 if(n==1){
-if(a[0]<=140&&a[0]>=90&&b[0]>=60&&b[0]<=90) printf("1");
-else printf("0");
+if(a[0]<=140&&a[0]>=90&&b[0]>=60&&b[0]<=90) my_printf("1");
+else my_printf("0");
 }
 
 if (n!=1){
@@ -31,7 +31,7 @@ if (n!=1){
 			c[i+1]=e;
 		}
 	}
-	printf("%d",c[k]);
+	my_printf("%d",c[k]);
 }
 	return 0;
 

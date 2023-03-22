@@ -13,11 +13,11 @@ main_bench()
            else
            {
                if(a[i]<'a')
-                  printf("(%c,%d)",a[i],k);
+                  my_printf("(%c,%d)",a[i],k);
                else
                {   
                   c=a[i]+'A'-'a'; 
-                  printf("(%c,%d)",c,k);
+                  my_printf("(%c,%d)",c,k);
                }
                k=1;
            }

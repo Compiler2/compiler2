@@ -7,7 +7,7 @@ int main_bench()
 	int m,n,i,flag=0,blag=0,k=0,array[1000];
 	for(i=0;i<1000;i++)
 		array[i]=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
      for(i=m;i<=n;i++)  
 	 {
 		 if(hui(i,i))
@@ -24,11 +24,11 @@ int main_bench()
 		 if(blag==1)
 		 {
 			 for(i=0;i<k-1;i++)
-				 printf("%d,",array[i]);
-			 printf("%d",array[k-1]);
+				 my_printf("%d,",array[i]);
+			 my_printf("%d",array[k-1]);
 		 }
 		 else
-			 printf("no");
+			 my_printf("no");
 
 
 }

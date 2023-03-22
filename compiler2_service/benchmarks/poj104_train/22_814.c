@@ -27,8 +27,8 @@ int main_bench()
 			sec=a[j];
 	}
 		if(sec==-1)
-			printf("No");
+			my_printf("No");
 		else
-			printf("%d",sec);
+			my_printf("%d",sec);
 }
 	

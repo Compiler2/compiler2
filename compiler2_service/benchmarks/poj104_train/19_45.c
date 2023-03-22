@@ -21,7 +21,7 @@ int main_bench()
 	for (i=n[j]+1;ch[i]!='\0';i++) c[j+1][i-1-n[j]]=ch[i];
 	for (m=1;m<=j+1;m++) 
 		if (strcmp(c[m],a)==0) strcpy(c[m],b);
-    for (m=1;m<=j;m++) printf("%s ",c[m]);printf("%s",c[j+1]);
+    for (m=1;m<=j;m++) my_printf("%s ",c[m]);my_printf("%s",c[j+1]);
     
 	return 0;
 }

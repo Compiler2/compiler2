@@ -12,10 +12,10 @@ int main_bench(){
 
 	int n,b=0,i,j,k,e;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s %d",people[i].id,&people[i].age);
+		my_scanf("%s %d",people[i].id,&people[i].age);
 		if(people[i].age>=60){
 			sixty[i]=people[i].age;
 			
@@ -40,14 +40,14 @@ int main_bench(){
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
 			if(sixty[i]==people[j].age&&sixty[i]!=sixty[i-1]){
-				printf("%s\n",people[j].id);
+				my_printf("%s\n",people[j].id);
 			}
 			
 		}
 	}
 	for(i=0;i<n;i++){
 		if(people[i].age<60){
-			printf("%s\n",people[i].id);
+			my_printf("%s\n",people[i].id);
 		}
 	}
 	

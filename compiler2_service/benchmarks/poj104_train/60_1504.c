@@ -4,18 +4,18 @@ int sushu(int i);
 int main_bench()
 {
 	int n,i,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=4;i<=n;i++)
 	{
 		if(sushu(i) && sushu(i-2))
 		{
 			j++;
-			printf("%d %d\n",i-2,i);
+			my_printf("%d %d\n",i-2,i);
 		}
 
 	}
 	if(j==0)
-		printf("empty");
+		my_printf("empty");
 
 
 	return 0;

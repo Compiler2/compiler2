@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,n,year,a,b;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d %d %d",&year,&a,&b);
+		my_scanf ("%d %d %d",&year,&a,&b);
 		if ((year%4==0&&year%100!=0)||year%400==0)
 		{
 			if(a==1||a==4||a==7)
@@ -51,11 +51,11 @@ int main_bench()
 
 			if(a==b)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else 
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 	}
 	return 0;

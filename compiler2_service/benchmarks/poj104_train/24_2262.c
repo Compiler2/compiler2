@@ -25,13 +25,13 @@ int main_bench()
 	for(i=2;i<=b;i++)
 	{if(length[i]>a) {a=length[i];p=i;}}
 	for(i=point[p];i<=point[p]+a-1;i++)
-	{printf("%c",word[i]);}
-	printf("\n");
+	{my_printf("%c",word[i]);}
+	my_printf("\n");
 	a=length[1];
 	p=1;
 	for(i=2;i<=b;i++)
 	{if(length[i]<a&&length[i]!=0) {a=length[i];p=i;}}
 	for(i=point[p];i<=point[p]+a-1;i++)
-	{printf("%c",word[i]);}
+	{my_printf("%c",word[i]);}
 	return 0;
 }

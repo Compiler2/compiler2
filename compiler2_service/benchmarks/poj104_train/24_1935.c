@@ -23,7 +23,7 @@ int main_bench()
 			len=0;
 		}
 	}
-	printf("%s\n%s\n",max,min);
+	my_printf("%s\n%s\n",max,min);
 	return 0;
 }
 

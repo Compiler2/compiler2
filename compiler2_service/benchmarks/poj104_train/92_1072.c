@@ -9,7 +9,7 @@ int main_bench()
     
     for(z=0;z<=10000;z++)
     {
-        scanf("%d",&totalhorse);
+        my_scanf("%d",&totalhorse);
         if(totalhorse==0)
         {
             break;
@@ -20,11 +20,11 @@ int main_bench()
         }
         for(i=0;i<=totalhorse-1;i++)
         {
-            scanf("%d",&tianhorse[i]); 
+            my_scanf("%d",&tianhorse[i]); 
         }
         for(j=0;j<=totalhorse-1;j++)
         {
-            scanf("%d",&qihorse[j]); 
+            my_scanf("%d",&qihorse[j]); 
         }
         for(k1=0;k1<=totalhorse-1;k1++)
         {
@@ -96,7 +96,7 @@ int main_bench()
     int x;
     for(x=0;x<=count-1;x++)
     {
-        printf("%d\n",(tianwins[x]-tianloses[x])*200);
+        my_printf("%d\n",(tianwins[x]-tianloses[x])*200);
     }
 
 }

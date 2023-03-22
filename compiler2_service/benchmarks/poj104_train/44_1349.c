@@ -8,26 +8,26 @@ int main_bench()
 	while (j--)
 {flag = 0 ;
 	mark = 0 ;
-scanf ("%s",a);
+my_scanf ("%s",a);
 
 	if (!strcmp(a,"0"))
 	{
-		printf ("%s\n",a);
+		my_printf ("%s\n",a);
 		return 0;
 	}
 	if (a[0]=='-')
 	{
-		printf ("-") ;
+		my_printf ("-") ;
 		flag++ ;
 	}
 	for (i = strlen(a)-1;i>=flag;i--)
 	{
 		if (a[i]!='0'||mark==1)
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 			mark = 1;
 		}
 	}
-printf("\n");
+my_printf("\n");
 }
 }

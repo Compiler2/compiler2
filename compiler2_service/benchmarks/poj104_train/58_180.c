@@ -25,7 +25,7 @@ int judge(char a[81])
 main_bench()
 {
       int n,i;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       getchar();
       char a[100][81]={0};
       for(i=0;i<n;i++)
@@ -35,16 +35,16 @@ main_bench()
                       if(judge(a[i])==1)
                       {
                                         if(a[i][0]>='a'&&a[i][0]<='z')
-                                        printf("1\n");
+                                        my_printf("1\n");
                                         else if(a[i][0]>='A'&&a[i][0]<='Z')
-                                        printf("1\n");
+                                        my_printf("1\n");
                                         else if(a[i][0]=='_')
-                                        printf("1\n");
+                                        my_printf("1\n");
                                         else 
-                                        printf("0\n");
+                                        my_printf("0\n");
                       }
                       else
-                      printf("0\n");
+                      my_printf("0\n");
       }
       getchar();
       getchar();

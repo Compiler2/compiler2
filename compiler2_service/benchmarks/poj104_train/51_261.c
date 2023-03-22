@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char c[501];
 	gets(c);
 	char s[500][6];
@@ -29,10 +29,10 @@ int main_bench()
 		if(a[i]>k)
 			k=a[i];
 	if(k<=1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 	for(i=0;i<l-n;i++)
 		if(a[i]==k)
 			puts(s[i]);

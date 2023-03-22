@@ -5,11 +5,11 @@ int main_bench()
 	int n,k,i,j,l;
 	int a[100],c[100],d[100];
 	char b[100][11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",b[i]);
-		scanf("%d",&a[i]);
+		my_scanf("%s",b[i]);
+		my_scanf("%d",&a[i]);
 		d[i]=a[i];
 		c[i]=i;
 	}
@@ -39,13 +39,13 @@ int main_bench()
 	for(j=0;j<l;j++)
 	{
 		k=c[j];
-		printf("%s\n",b[k]);
+		my_printf("%s\n",b[k]);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(a[i]<60)
 		{
-			printf("%s\n",b[i]);
+			my_printf("%s\n",b[i]);
 		}
 	}
 return 0;

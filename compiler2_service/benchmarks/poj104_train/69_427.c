@@ -11,7 +11,7 @@ main_bench()
               b[i]=0;
               c[i]=0;
       }
-      scanf("%s %s",&p,&q);
+      my_scanf("%s %s",&p,&q);
       for(int i=0;i<strlen(p);i++)
           a[i]=p[strlen(p)-1-i]-48;
       for(int i=0;i<strlen(q);i++)
@@ -27,12 +27,12 @@ main_bench()
       }
       while(c[j]==0&&j!=0)
       j--;
-      if(j==0&&c[j]==0)printf("0\n");
+      if(j==0&&c[j]==0)my_printf("0\n");
       else
       {
           for(int i=j;i>=0;i--)
-              printf("%d",c[i]);
-          printf("\n");
+              my_printf("%d",c[i]);
+          my_printf("\n");
       }
 
 }

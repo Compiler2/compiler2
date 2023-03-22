@@ -3,11 +3,11 @@
 int main_bench()
 {
     int N;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int input[500],deal[500];
     int k =0;
     for(int i =0;i<N;i++){
-        scanf("%d",&input[i]);
+        my_scanf("%d",&input[i]);
            if(input[i]%2!=0)
              {
                  deal[k] = input[i];
@@ -27,9 +27,9 @@ int main_bench()
                               }
                       }
 for(int l = 0;l<k-1;l++){
-    printf("%d,",deal[l]);
+    my_printf("%d,",deal[l]);
 }
-printf("%d",deal[k-1]);
+my_printf("%d",deal[k-1]);
 return 0;
 }
 

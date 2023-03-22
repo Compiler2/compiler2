@@ -4,9 +4,9 @@ int main_bench(){
 	int i,r1,r2,num=0,index=0;
 	double n;
 	char a[501],b[501];
-	scanf("%lf\n",&n);
-	scanf("%s\n",a);
-	scanf("%s",b);
+	my_scanf("%lf\n",&n);
+	my_scanf("%s\n",a);
+	my_scanf("%s",b);
 	r1=strlen(a);
 	r2=strlen(b);
 	for(i=0;i<r1;i++){
@@ -23,13 +23,13 @@ int main_bench(){
 			break;
 		}
 	}
-	if(r1!=r2||index==1)printf("error");
+	if(r1!=r2||index==1)my_printf("error");
 	else{
 		for(i=0;i<r1;i++){
 			if(a[i]==b[i])num++;
 		}
-		if((num*1.0/r1)>=n)printf("yes");
-		else printf("no");
+		if((num*1.0/r1)>=n)my_printf("yes");
+		else my_printf("no");
 	
 	}
 	return 0;

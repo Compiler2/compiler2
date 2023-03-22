@@ -7,14 +7,14 @@ int main_bench()
     int i;
     int buf;
     int appeared[110] = {0};
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i = 0; i < n; i++) {
-        scanf("%d", &buf);
+        my_scanf("%d", &buf);
         if (!appeared[buf]) {
             if (i != 0) {
-                printf(" ");
+                my_printf(" ");
             }
-            printf("%d", buf);
+            my_printf("%d", buf);
             appeared[buf] = 1;
         }
     }

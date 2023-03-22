@@ -7,13 +7,13 @@ int main_bench()
 	int i;
 	for(i=1;i<=6;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
-			printf("0\n");
+			my_printf("0\n");
 		if(a>0)
-			printf("%d\n",reverse(a));
+			my_printf("%d\n",reverse(a));
 		if(a<0)
-			printf("-%d\n",reverse(-a));
+			my_printf("-%d\n",reverse(-a));
 	}
 	return 0;
 }

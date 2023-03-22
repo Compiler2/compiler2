@@ -31,16 +31,16 @@ int main_bench()
 		if(strcmp(b[j],h)==0)
 		{
 			strcpy(b[j],f);
-			printf("%s ",b[j]);
+			my_printf("%s ",b[j]);
 		}
 		else
 		{
-			printf("%s ",b[j]);
+			my_printf("%s ",b[j]);
 		}
 	}
 	if(strcmp(b[n],h)!=0)
-		printf("%s",b[n]);
+		my_printf("%s",b[n]);
 	if(strcmp(b[n],h)==0)
-		printf("%s",f);
+		my_printf("%s",f);
 	return 0;
 }

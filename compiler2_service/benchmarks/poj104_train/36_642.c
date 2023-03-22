@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s1[100]={0}, s2[100]={0};
 	int i, j, a1[26]={0}, a2[26]={0}, b1[26]={0}, b2[26]={0};
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	for(i=0;i<26;i++)
     {
         for(j=0;j<strlen(s1);j++)
@@ -34,8 +34,8 @@ int main_bench()
 			j=0;
 	}
 	if(j==26)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }

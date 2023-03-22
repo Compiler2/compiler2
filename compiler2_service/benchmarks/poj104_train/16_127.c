@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a,b;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(;a!=0;a=(a-(a%10))/10)
 	{
 		b=(a%10);
-		printf("%d",b);
+		my_printf("%d",b);
 	}
 		return 0;
 }

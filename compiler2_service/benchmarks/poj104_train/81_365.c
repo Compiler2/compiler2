@@ -7,18 +7,18 @@ int main_bench()
 	int judge(int n,int m);
 	
 	for(i=0;i<5;i++)
-		scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
+		my_scanf("%d %d %d %d %d",&a[i][0],&a[i][1],&a[i][2],&a[i][3],&a[i][4]);
 	int n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 
 	y=judge(n,m);
 	if(y==0)
-		printf("error");
+		my_printf("error");
 	else if(y==1)
 	{
 		move(a,n,m);
        for(i=0;i<5;i++)
-		printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+		my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
 	}
 }
 int judge(int n,int m)

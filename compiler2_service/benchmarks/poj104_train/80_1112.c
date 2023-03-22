@@ -20,7 +20,7 @@ int Inyear(int month,int day,int year,int i,int output)
 int main_bench()
 {
 	int year[2],month[2],day[2],output=0,inyear,i;
-	scanf("%d%d%d%d%d%d",&year[0],&month[0],&day[0],&year[1],&month[1],&day[1]);
+	my_scanf("%d%d%d%d%d%d",&year[0],&month[0],&day[0],&year[1],&month[1],&day[1]);
 	output=Inyear(month[1],day[1],year[1],i,inyear)-Inyear(month[0],day[0],year[0],i,inyear);
 	for(i=year[0];i<year[1];i++)
 	{
@@ -29,6 +29,6 @@ int main_bench()
 		else 
 			output+=365;
 	}
-	printf("%d",output);
+	my_printf("%d",output);
 	return 0;
 }

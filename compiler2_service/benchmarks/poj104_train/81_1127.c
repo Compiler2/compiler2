@@ -3,7 +3,7 @@
 void prt(int *a)
 {	int i;
 	for(i=0;i<5;i++)
-		printf("%d%c",*(a+i),(i<4)?' ':'\n');
+		my_printf("%d%c",*(a+i),(i<4)?' ':'\n');
 }
 int main_bench()
 {
@@ -12,9 +12,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 
 	if(0<=m&&m<=4&&0<=n&&n<=4)
 	{	for(i=0;i<5;i++)
@@ -24,7 +24,7 @@ int main_bench()
 		}
 
 	}
-	else printf("error");
+	else my_printf("error");
 }
 	
 

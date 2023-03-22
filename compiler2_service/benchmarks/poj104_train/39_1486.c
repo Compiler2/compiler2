@@ -12,9 +12,9 @@ struct student
 int main_bench()
 {
 	int n,i,total=0,t[100]={0},max=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
-	{scanf("%s%d%d%s%s%d",stu[i].name,&stu[i].score,&stu[i].point,stu[i].s1,stu[i].s2,&stu[i].paper);}		
+	{my_scanf("%s%d%d%s%s%d",stu[i].name,&stu[i].score,&stu[i].point,stu[i].s1,stu[i].s2,&stu[i].paper);}		
 	for(i=0;i<n;i++)
 	{   
 		if(stu[i].score>80)
@@ -37,11 +37,11 @@ int main_bench()
 	{
 		if(max==t[i])
 		{
-			printf("%s\n%d\n",stu[i].name,max);break;
+			my_printf("%s\n%d\n",stu[i].name,max);break;
 		}
 	}
 	for(i=0;i<n;i++)	
 	{	total+=t[i];
 	}
-		printf("%d\n",total);
+		my_printf("%d\n",total);
 }

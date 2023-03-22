@@ -4,7 +4,7 @@ main_bench()
 {
     int n,len,stre[1000],y,max=1;
     char str[1000][1000],stra[1000];
-    scanf("%d%s",&n,stra);
+    my_scanf("%d%s",&n,stra);
     len=strlen(stra);
     for (int i=0;i<=len-n;i++)
     {
@@ -26,17 +26,17 @@ main_bench()
             max=stre[i];
     }
     if (max==1)
-        printf("NO");
+        my_printf("NO");
     else
     {
-        printf("%d\n",max);
+        my_printf("%d\n",max);
         for(int i=0;i<len-n;i++)
         {
             if (stre[i]==max)
             {
                 for(int j=0;j<n;j++)
-                    printf("%c",str[i][j]);
-                printf("\n");
+                    my_printf("%c",str[i][j]);
+                my_printf("\n");
                 
             }
             

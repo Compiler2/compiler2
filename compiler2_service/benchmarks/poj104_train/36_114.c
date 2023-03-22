@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,k,a,b,flag;
 	char s1[100],s2[100],*p1,*p2;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	a=strlen(s1);
 	b=strlen(s2);
-	if(a!=b)printf("NO");
+	if(a!=b)my_printf("NO");
 	else{
 p1=s1;	
 	p2=s2;
@@ -32,8 +32,8 @@ p1=s1;
 		}
 		else flag=1;
 	}
-	if(flag)printf("YES");
-	else printf("NO");
+	if(flag)my_printf("YES");
+	else my_printf("NO");
 }
 }
 

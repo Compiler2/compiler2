@@ -5,11 +5,11 @@ int main_bench()
 	int n,i,a[100]={0};
 	unsigned long f[25]={0};
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 	f[0]=1;
@@ -22,7 +22,7 @@ int main_bench()
 	
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",f[a[i]-1]);
+		my_printf("%d\n",f[a[i]-1]);
 	}
 	return 0;
 }

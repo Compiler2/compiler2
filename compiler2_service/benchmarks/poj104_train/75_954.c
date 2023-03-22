@@ -10,12 +10,12 @@ int main_bench()
 a[m][1]=0;
 }
     while(c!='\n')
-	{scanf("%d",&a[j][0]);
+	{my_scanf("%d",&a[j][0]);
 		c=getchar();
 	j++;
 	}
     for(k=0;k<=j-1;k++)
-	{scanf("%d",&a[k][1]);
+	{my_scanf("%d",&a[k][1]);
 		if(k!=j)c=getchar();
 	}
 
@@ -29,6 +29,6 @@ i=j-1;
 				zuich=x;
 	}
 
-	printf("%d %d",i+1,zuich);
+	my_printf("%d %d",i+1,zuich);
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	double x,n;
 	int i,k=0,s=0,len1,len2,j=0;
 	char a[10],dna1[510],dna2[510];
-    scanf("%lf",&n);
+    my_scanf("%lf",&n);
     gets(a);
 	gets(dna1);
 	gets(dna2);
@@ -13,7 +13,7 @@ int main_bench()
 	len2=strlen(dna2);
 	if(len1!=len2)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -21,7 +21,7 @@ int main_bench()
 		{
 	    	if((dna1[i]!='A' && dna1[i]!='G' && dna1[i]!='C' && dna1[i]!='T')|| (dna2[i]!='A' && dna2[i]!='G' && dna2[i]!='C' && dna2[i]!='T'))
 			{
-                 printf("error");
+                 my_printf("error");
 				 j++;
 				 break;
 			}else{
@@ -37,9 +37,9 @@ int main_bench()
 		    x=1.0*k/s;
     	    if(x>n)
 			{
-		        printf("yes");
+		        my_printf("yes");
 			}else{
-	    	    printf("no");
+	    	    my_printf("no");
 			}
 		}
 	}

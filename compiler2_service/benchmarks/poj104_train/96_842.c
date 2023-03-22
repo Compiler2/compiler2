@@ -3,11 +3,11 @@
 int main_bench(){
 	char N[100];
     int sza[100],szb[100],l,i,m,temp,n;
-	scanf("%s",N);
+	my_scanf("%s",N);
 	l=strlen(N);
     for(i=0;i<l;i++) sza[i]=(int)(N[i]-'0');
 	if(l==1){
-             printf("0\n%d",sza[0]);
+             my_printf("0\n%d",sza[0]);
              return 0;
              }
     temp=sza[0];
@@ -21,9 +21,9 @@ int main_bench(){
 		if(i==0&&i+1<l-1){
 			if(szb[i]==0) continue;
 		}
-		printf("%d",szb[i]);
+		my_printf("%d",szb[i]);
 	}
-	printf("\n%d",n);
-	scanf("%d",&n);
+	my_printf("\n%d",n);
+	my_scanf("%d",&n);
 	return 0;
 }

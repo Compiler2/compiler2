@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int sz[100][100], n, i, j, a, b, c, d;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 	}}
 	for(i=1;i<n-1;i++){
 		for(j=1;j<n-1;j++){
@@ -17,7 +17,7 @@ int main_bench(){
 				d=j;}
 			
 	}}
-	printf("%d", (c-a+1)*(d-b+1));
+	my_printf("%d", (c-a+1)*(d-b+1));
 	return 0;
 
 }

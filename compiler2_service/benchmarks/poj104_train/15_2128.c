@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j,t=255,x1=-1,y1=-1,x2=-1,y2=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
 		for (j=0;j<n;j++)
 		{
-			scanf("%d",&t);
+			my_scanf("%d",&t);
 			if (t==0)
 			{
 				if (x1<0)
@@ -21,7 +21,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",(x2-x1-1)*(y2-y1-1));
+	my_printf("%d\n",(x2-x1-1)*(y2-y1-1));
 	return 0;
 }
 

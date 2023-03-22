@@ -17,10 +17,10 @@ int main_bench()
 		str2[i]=tolower(str2[i]);
 	}
 	if(strcmp(str1,str2)<0)
-		printf("<");
+		my_printf("<");
 	else if(strcmp(str1,str2)>0)
-		printf(">");
-	else printf("=");
+		my_printf(">");
+	else my_printf("=");
 
 	return 0;
 

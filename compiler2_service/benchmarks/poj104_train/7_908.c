@@ -34,11 +34,11 @@ int main_bench(){
 		   }
 		   
 		   if(t==1&&t2==1){
-				printf("%s",b);
+				my_printf("%s",b);
 				i+=la-1;
 			}
 		   else{
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 		   }
 	   }
 	  

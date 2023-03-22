@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,a,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
     }
     for(int k=1;k<=n;k++){
         for(int i=0;i<n-k;i++){
@@ -24,9 +24,9 @@ int main_bench(){
     }
     for(int i=0;i<b;i++){
         if(sz[i]%2!=0){
-            printf("%d,",sz[i]);
+            my_printf("%d,",sz[i]);
         }
     }
-    printf("%d",sz[b]);
+    my_printf("%d",sz[b]);
     return 0;
 }

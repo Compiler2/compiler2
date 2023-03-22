@@ -9,22 +9,22 @@ int main_bench()
     for(i=1;i<=5;i++)
     {   
         for(j=1;j<=5;j++)
-        scanf("%d",&arr[i-1][j-1]);
+        my_scanf("%d",&arr[i-1][j-1]);
     }
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     p=f(n,m);
-    if (p==0) printf("error");
+    if (p==0) my_printf("error");
     if(p==1) 
     {
      trans(arr,n,m);                         
        for(i=0;i<=4;i++)
        {   
           for(j=0;j<=3;j++)
-          printf("%d ",arr[i][j]);
+          my_printf("%d ",arr[i][j]);
           
-          printf("%d\n",arr[i][4]);
+          my_printf("%d\n",arr[i][4]);
        }
-       printf("\b");
+       my_printf("\b");
     }    
     
   

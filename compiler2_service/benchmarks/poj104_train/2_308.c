@@ -9,12 +9,12 @@ struct shu
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i,j,k;
 	int jishu[26]={0};
 	int beiyong[26];
 	for (i=0;i<m;i++)
-		scanf("%d %s",&shu[i].bianhao,shu[i].name);
+		my_scanf("%d %s",&shu[i].bianhao,shu[i].name);
     for (i=0;i<26;i++)
 	{
 		for (j=0;j<m;j++)
@@ -40,14 +40,14 @@ int main_bench()
 		if (jishu[i]==max)
 			t=i;
 	}
-	printf("%c\n",t+'A');
-	printf("%d\n",max);
+	my_printf("%c\n",t+'A');
+	my_printf("%d\n",max);
 	for (i=0;i<m;i++)
 	{
 		for (j=0;j<26;j++)
 		{
 			if (shu[i].name[j]==t+'A')
-				printf("%d\n",shu[i].bianhao);
+				my_printf("%d\n",shu[i].bianhao);
 		}
 	}
 }

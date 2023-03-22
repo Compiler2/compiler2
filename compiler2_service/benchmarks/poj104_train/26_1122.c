@@ -22,5 +22,5 @@ int main_bench()
                         j++;
                 }
         }
-        printf("%s",s2);
+        my_printf("%s",s2);
 }

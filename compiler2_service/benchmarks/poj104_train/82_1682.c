@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,sz[100][2],s[100],i,j=0,k=1,b=0,a[50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&sz[i][0],&sz[i][1]);
+		my_scanf("%d %d",&sz[i][0],&sz[i][1]);
 		if(sz[i][0]>=90&&sz[i][0]<=140&&sz[i][1]>=60&&sz[i][1]<=90)
 		{
 			s[j]=i;
@@ -14,7 +14,7 @@ int main_bench()
 		}
 	}
 	if(j==0)
-		printf("0\n");
+		my_printf("0\n");
 	if(j!=0)
 	{
 	s[j]=-1;
@@ -40,7 +40,7 @@ int main_bench()
 			a[i]=k;
 		}
 	}
-	printf("%d\n",a[b-1]);
+	my_printf("%d\n",a[b-1]);
 	}
 	return 0;
 

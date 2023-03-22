@@ -3,7 +3,7 @@
 int main_bench()
 {
    char p[501];
-   scanf("%s",p);
+   my_scanf("%s",p);
    int len=strlen(p);
    for(int i=2;i<len;i++)
        {
@@ -26,7 +26,7 @@ int main_bench()
                 k++;   
                 } 
             if(strcmp(temp,q[j])==0) 
-               printf("%s\n",q[j]);                    
+               my_printf("%s\n",q[j]);                    
             }
        }         
 }

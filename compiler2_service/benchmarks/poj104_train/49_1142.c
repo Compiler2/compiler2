@@ -3,7 +3,7 @@
 int main_bench()
 {char a[505],b[505],c[505];
 int i,j,len,k,e=0;
-scanf("%s",a);
+my_scanf("%s",a);
 len=strlen(a);
 for(i=2;i<=len;i++)
 {  
@@ -20,6 +20,6 @@ for(k=0;k<i;k++)
 c[i]='\0';
  
 if(strcmp(c,b)==0)
-printf("%s\n",b);}}
+my_printf("%s\n",b);}}
 return 0;
 }

@@ -2,9 +2,9 @@
 
 int main_bench(){
     int n,y[200],m1[200],m2[200],i,j,k,day1[200],day2[200],cha[200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d%d",&y[i],&m1[i],&m2[i]);
+        my_scanf("%d%d%d",&y[i],&m1[i],&m2[i]);
     }
     for(i=0;i<n;i++){
         day1[i]=1;
@@ -61,10 +61,10 @@ int main_bench(){
     for(i=0;i<n;i++){
         cha[i]=abs(day1[i]-day2[i]);
         if(cha[i]%7==0){
-            printf("YES\n");
+            my_printf("YES\n");
         }
         else
-            printf("NO\n");
+            my_printf("NO\n");
     }
     return 0;
 }

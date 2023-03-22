@@ -7,7 +7,7 @@ int main_bench(){
 	int sum=0;
 	int i;
 
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	sum=a-1+(a-1)/400+(a-1)/4-(a-1)/100;
 
 	for(i=1;i<b;i++){
@@ -28,19 +28,19 @@ int main_bench(){
 	sum=(sum-1)%7;
 
 	if(sum==0){
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	}else if(sum==1){
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	}else if(sum==2){
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	}else if(sum==3){
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	}else if(sum==4){
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	}else if(sum==5){
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	}else if(sum==6){
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	}
 
 	

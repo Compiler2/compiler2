@@ -19,11 +19,11 @@ int main_bench()
 		}
 		if(k==0) 
 		{
-			for(j=0;j<z;j++) printf("%c",b[j]);
-			for(i=i+y;i<x;i++)printf("%c",s[i]);
+			for(j=0;j<z;j++) my_printf("%c",b[j]);
+			for(i=i+y;i<x;i++)my_printf("%c",s[i]);
 			break;
 		}
-		if(k==1) printf("%c",s[i]);
+		if(k==1) my_printf("%c",s[i]);
 	}
 	return 0;
 }

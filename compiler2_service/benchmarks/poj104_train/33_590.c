@@ -3,9 +3,9 @@
 int main_bench(){
 int n,i,k;
 char sz[500];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++){
-	scanf("%s",sz);
+	my_scanf("%s",sz);
 	for(k=0;sz[k]!='\0';k++){
 		if(sz[k]=='A'){
 			sz[k]='T';
@@ -18,7 +18,7 @@ for(i=1;i<=n;i++){
 		}
 	}
 	sz[k]='\0';
-	printf("%s\n",sz);
+	my_printf("%s\n",sz);
 }
 	return 0;
 }

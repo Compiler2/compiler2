@@ -4,9 +4,9 @@ int main_bench(){
 double z,r=0;
 int m,n,i,error=0;
 char a[500],b[500];
-scanf("%lf",&z);
-scanf("%s\n",a);
-scanf("%s",b);
+my_scanf("%lf",&z);
+my_scanf("%s\n",a);
+my_scanf("%s",b);
 m=strlen(a);
 n=strlen(b);
 if(m!=n){
@@ -35,11 +35,11 @@ error=error+1;
 	r=r/m;
 }
 if(error!=0){
-printf("error");
+my_printf("error");
 }else if(r>=z){
-printf("yes");
+my_printf("yes");
 }else{
-printf("no");
+my_printf("no");
 }
 return 0;
 }

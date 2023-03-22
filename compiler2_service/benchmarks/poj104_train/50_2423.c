@@ -2,7 +2,7 @@
 
 main_bench()
 {int a[12],i,b,w;
-scanf("%d",&w);
+my_scanf("%d",&w);
 a[1]=w+12;
 a[2]=a[1]+3;
 a[3]=a[2];
@@ -19,9 +19,9 @@ i=1;
 do{
 	b=a[i]%7;
 	if(b==5)
-	{printf("%d\n",i);}
+	{my_printf("%d\n",i);}
 	i=i+1;}while(i<=11);
 	b=a[9]%7;
 	if(b==5)
-	printf("12");
+	my_printf("12");
 } 

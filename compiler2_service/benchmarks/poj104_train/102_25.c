@@ -6,9 +6,9 @@ int main_bench()
     double hit,t;
     char str[10];
     int n,i,j=0,k=0,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++){
-        scanf("%s%lf",str,&hit);
+        my_scanf("%s%lf",str,&hit);
         if (str[0]=='m') {
                          male[j]=hit;
                          j++;
@@ -37,11 +37,11 @@ int main_bench()
         }
     }
     for (i=0;i<j-1;i++){
-        printf("%.2lf ",male[i]);
+        my_printf("%.2lf ",male[i]);
         }
-    printf("%.2lf",male[j-1]);
+    my_printf("%.2lf",male[j-1]);
     for (i=0;i<k;i++){
-        printf(" %.2lf",female[i]);
+        my_printf(" %.2lf",female[i]);
         }
     return 0;
 }

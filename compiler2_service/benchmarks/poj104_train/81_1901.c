@@ -21,20 +21,20 @@ int main_bench()
 	int row,col;
 	for(row=0;row<5;row++){
 		for(col=0;col<5;col++){
-			scanf("%d",&a[row][col]);
+			my_scanf("%d",&a[row][col]);
 		}
 	}
-	scanf("%d%d",&rowa,&rowb);
+	my_scanf("%d%d",&rowa,&rowb);
 	switch(exch(a,rowa,rowb)){
 		case 0: {
-			printf("error");
+			my_printf("error");
 			break;
 		}
 		case 1:{
 			for(row=0;row<5;row++){
-				printf("\n%d",a[row][0]);
+				my_printf("\n%d",a[row][0]);
 				for(col=1;col<5;col++){
-					printf(" %d",a[row][col]);
+					my_printf(" %d",a[row][col]);
 				}
 			}
 		}

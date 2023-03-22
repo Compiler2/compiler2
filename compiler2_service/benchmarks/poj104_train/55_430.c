@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a,b,l1,i,j=0,t,m=0,n;
 	char str1[100],str2[100];
-	scanf("%d%s%d",&a,str1,&b);
+	my_scanf("%d%s%d",&a,str1,&b);
 	l1=strlen(str1);
 	if(str1[0]=='0')
-		printf("0");
+		my_printf("0");
     for(i=0;i<l1;i++)
 	{if(str1[i]<='z'&&str1[i]>='a')
 	t=str1[i]-'a'+10;
@@ -29,7 +29,7 @@ int main_bench()
 	for(i=0;i<j;i++)
 		str1[i]=str2[j-i-1];
 	str1[j]='\0';
-	printf("%s",str1);
+	my_printf("%s",str1);
 
 }
 

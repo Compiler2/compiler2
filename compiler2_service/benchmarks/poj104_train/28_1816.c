@@ -21,8 +21,8 @@ int main_bench()
 				end=l;break;
 			}
 		}
-		if(start==0) printf("%d",end);
-		else printf(",%d",end-start);
+		if(start==0) my_printf("%d",end);
+		else my_printf(",%d",end-start);
 		if(end==l) break;
 		for(i=end;;i++)
 		{

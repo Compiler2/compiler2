@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[100],b[100],c[100],n,i,j,lao=0,you=0,t;
 	char e[100][10],f[100][10],g[100][10],s[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d",e[i],&a[i]);
+		my_scanf("%s%d",e[i],&a[i]);
 	for(i=0;i<n;i++)
 	{
 		if(a[i]>=60)
@@ -38,8 +38,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<lao;i++)
-		printf("%s\n",f[i]);
+		my_printf("%s\n",f[i]);
 	for(i=0;i<you;i++)
-		printf("%s\n",g[i]);
+		my_printf("%s\n",g[i]);
 	return 0;
 }

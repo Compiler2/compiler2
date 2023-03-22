@@ -7,7 +7,7 @@ int main_bench()
 	char *weekday[7]={"Mon.", "Tue.", "Wed.", "Thu.", "Fri." ,"Sat." ,"Sun."};
 	int days_of_month[2][12]={{31,28,31,30,31,30,31,31,30,31,30,31},{31,29,31,30,31,30,31,31,30,31,30,31}};
 	int year, month ,day;
-	scanf("%d %d %d", &year, &month, &day);
+	my_scanf("%d %d %d", &year, &month, &day);
 
 	int leap_year_flag;
 	if(year % 400 == 0 || year % 4 == 0 && year % 100 != 0)
@@ -21,7 +21,7 @@ int main_bench()
 		days_in_current_year += days_of_month[leap_year_flag][i];
 	days_in_current_year += day;	
 	int total_days = days_of_past_years + days_in_current_year;
-	printf("%s", weekday[(total_days - 1) % 7]   );
+	my_printf("%s", weekday[(total_days - 1) % 7]   );
 
 
 	return 0;

@@ -15,9 +15,9 @@ int main_bench()
 	struct Student stu[100];
 	struct Student temp;
 	int n,sum=0,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].q,&stu[i].b,&stu[i].s,&stu[i].x,&stu[i].w);
+		my_scanf("%s%d%d %c %c%d",&stu[i].name,&stu[i].q,&stu[i].b,&stu[i].s,&stu[i].x,&stu[i].w);
 		stu[i].money=0;
 		if(stu[i].q>80&&stu[i].w>0)
 			stu[i].money=stu[i].money+8000;
@@ -40,6 +40,6 @@ int main_bench()
 			k=j;
 		temp=stu[k];stu[k]=stu[i];stu[i]=temp;
 	}
-	printf("%s\n%d\n%d\n",stu[0].name,stu[0].money,sum);
+	my_printf("%s\n%d\n%d\n",stu[0].name,stu[0].money,sum);
 	return 0;
 }

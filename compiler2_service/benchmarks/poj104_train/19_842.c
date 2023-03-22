@@ -24,7 +24,7 @@ int main_bench()
 	for(int m=0;m<20;m++)if(a[flag][m]==d[n-1]) k=m+1;
 	for(;k<20;) a[flag][k++]='\0';
 	for(int p=0;p<20;p++) if(strcmp(a[p],b)==0) strncpy(a[p],c,20);
-	printf("%s",a[0]);
-	for(int l=1;l<flag+1;l++) printf(" %s",a[l]);
+	my_printf("%s",a[0]);
+	for(int l=1;l<flag+1;l++) my_printf(" %s",a[l]);
 	return 0;
 }

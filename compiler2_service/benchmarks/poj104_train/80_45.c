@@ -19,8 +19,8 @@ int isLeapYear(int year)
  {  
      int startYear, startMonth, startDay;  
     int endYear, endMonth, endDay;  
-    scanf("%d%d%d", &startYear, &startMonth, &startDay);  
-    scanf("%d%d%d", &endYear, &endMonth, &endDay);         
+    my_scanf("%d%d%d", &startYear, &startMonth, &startDay);  
+    my_scanf("%d%d%d", &endYear, &endMonth, &endDay);         
      int i, sum = 0;  
     for (i = startYear + 1; i < endYear; i++)  
         sum += isLeapYear(i) ? 366 : 365;  
@@ -32,6 +32,6 @@ int isLeapYear(int year)
         sum += (365 - start) + end;  
        if (isLeapYear(startYear)) sum++;  
      } 
-    printf("%d",sum);  
+    my_printf("%d",sum);  
    return 0;  
  } 

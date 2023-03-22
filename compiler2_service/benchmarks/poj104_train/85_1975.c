@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,bfh[100]={0},sz[100];
 	 char zf[100][21];
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 for(i=0;i<n;i++)
 		{
-			scanf("%s",zf[i]);
+			my_scanf("%s",zf[i]);
 			sz[i]=strlen(zf[i]);
 	    }
 	 for(i=0;i<n;i++) 
@@ -29,11 +29,11 @@ int main_bench()
 	 {
 		 if(zf[i][0]=='0'||zf[i][0]=='1'||zf[i][0]=='2'||zf[i][0]=='3'||zf[i][0]=='4'||
 			 zf[i][0]=='5'||zf[i][0]=='6'||zf[i][0]=='7'||zf[i][0]=='8'||zf[i][0]=='9')
-         printf("no\n");
+         my_printf("no\n");
 		 else if (bfh[i]==1)
-		 printf("no\n");
+		 my_printf("no\n");
 		 else
-			 printf("yes\n");		 
+			 my_printf("yes\n");		 
 	 }
 	 return 0;
 }

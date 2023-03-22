@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,i,t,k;
 	char dna[256];
-	scanf("%d\n",&m);
+	my_scanf("%d\n",&m);
 	for(i=0;i<m;i++){	
-		scanf("%s",dna);
+		my_scanf("%s",dna);
 		t=strlen(dna);
 		for(k=0;k<t;k++){
 			if(dna[k]=='A'){dna[k]='T';}
@@ -14,8 +14,8 @@ int main_bench(){
 			else if(dna[k]=='G'){dna[k]='C';}
 	}
 		for(k=0;k<t;k++){
-			if(k==t-1){printf("%c\n",dna[k]);}
-			else{printf("%c",dna[k]);}
+			if(k==t-1){my_printf("%c\n",dna[k]);}
+			else{my_printf("%c",dna[k]);}
 		}
 	}
 	return 0;

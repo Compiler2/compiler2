@@ -26,7 +26,7 @@ int main_bench()
 	}
 	*(pb+i)=hh(*ps,*(ps+i));
 	for(i=0;*(pb+i)!=0;i++)
-		printf("%c",*(pb+i));
+		my_printf("%c",*(pb+i));
 	return 0;
 	
 }

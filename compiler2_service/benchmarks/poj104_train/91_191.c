@@ -12,5 +12,5 @@ main_bench()
     if(i==n-1)*(q+n-1)=*(p+n-1)+*(p+0);
     else *(q+i)=*(p+i)+*(p+i+1);
   }
-  for(i=0;i<n;i++)printf("%c",*(q+i));
+  for(i=0;i<n;i++)my_printf("%c",*(q+i));
 }

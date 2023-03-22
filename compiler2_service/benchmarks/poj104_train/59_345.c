@@ -42,6 +42,6 @@ int main_bench()
 		for(j=0;j<n;j++)
 			if(a[i][j]=='@')
 				flag++;
-	printf("%d",flag);
+	my_printf("%d",flag);
 }
 

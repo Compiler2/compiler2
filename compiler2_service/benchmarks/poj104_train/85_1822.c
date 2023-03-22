@@ -3,9 +3,9 @@
 int main_bench(){
  int i,n,pd,j;
  char zc[50];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-  scanf("%s",zc);
+  my_scanf("%s",zc);
   for(j=0;j<strlen(zc);j++){
 	  if(zc[0]>47&&zc[0]<58){
 	   pd=0;
@@ -25,9 +25,9 @@ int main_bench(){
 	
   }
   }if(pd==1){
- printf("yes\n");
+ my_printf("yes\n");
   }else if(pd==0){
-printf("no\n");
+my_printf("no\n");
   }
 
  }

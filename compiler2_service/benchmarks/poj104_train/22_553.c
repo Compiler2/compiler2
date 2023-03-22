@@ -5,10 +5,10 @@ int main_bench()
  char c;
  do
 {
-	scanf("%d",&num[n++]);
+	my_scanf("%d",&num[n++]);
 }while(c=getchar()!='\n');
 
- if(n==1) printf("No");
+ if(n==1) my_printf("No");
  else 
  {	for(i=0;i<n-1;i++)
 		for(j=0;j<n-i-1;j++)
@@ -21,10 +21,10 @@ int main_bench()
  for(i=1;i<n;i++)
 	if(num[i]<num[0])
 	{	flag=1;
-	    printf("%d",num[i]);
+	    my_printf("%d",num[i]);
 	    break;
 	}
- if(flag==0) printf("No");
+ if(flag==0) my_printf("No");
  }
 
  }

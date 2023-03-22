@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a[1000000],b,i,u_r,u_c,l_r,l_c,count;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=n*n;
 	for(i=0;i<b;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<b;i++){
 		if(a[i]==0){
 			u_r=i/n;
@@ -22,7 +22,7 @@ int main_bench()
 		}
 	}
 	count=(l_r-u_r-1)*(l_c-u_c-1);
-	printf("%d",count);
+	my_printf("%d",count);
 }
 
 

@@ -4,10 +4,10 @@ int main_bench()
 {
   int n,a[300]={0},j,i,sum=0,temp;
   float b,c[300]={0},min;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         sum+=a[i];
   }
   b=(float)sum/n;
@@ -47,12 +47,12 @@ int main_bench()
      }
    
 
-     printf("%d,%d",a[n-2],a[n-1]);
+     my_printf("%d,%d",a[n-2],a[n-1]);
    
     
   }
   else
-  printf("%d",a[n-1]);
+  my_printf("%d",a[n-1]);
   return 0;
   
 } 

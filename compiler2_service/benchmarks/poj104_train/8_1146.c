@@ -4,7 +4,7 @@ void in(int a[],int n)
 {
     int i;
         for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
 }
 void bubblesort(int a[],int n)
 {
@@ -30,14 +30,14 @@ void print(int c[],int n1,int n2)
 {
     int i;
     for(i=0;i<n1+n2-1;i++)
-        printf("%d ",c[i]);
-    printf("%d",c[n1+n2-1]);
+        my_printf("%d ",c[i]);
+    my_printf("%d",c[n1+n2-1]);
     }
 
 main_bench()
 {
     int i,n1,n2,a[100],b[100],c[200];
-    scanf("%d %d",&n1,&n2);
+    my_scanf("%d %d",&n1,&n2);
     in(a,n1);
     in(b,n2);
     

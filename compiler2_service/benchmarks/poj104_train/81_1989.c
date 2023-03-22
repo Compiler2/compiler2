@@ -6,17 +6,17 @@ int main_bench()
 	a=(int (*)[5])malloc(5*5*sizeof(int));
 	for(j=0;j<5;j++)
 		for(i=0;i<5;i++)
-			scanf("%d",*(a+j)+i);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",*(a+j)+i);
+	my_scanf("%d %d",&n,&m);
 	k=f(a,n,m);
 	if(k==0)
-		printf("error");
+		my_printf("error");
 	else
 		for(j=0;j<5;j++)
 		{
 			for(i=0;i<4;i++)
-				printf("%d ",*(*(a+j)+i));
-			printf("%d\n",*(*(a+j)+4));
+				my_printf("%d ",*(*(a+j)+i));
+			my_printf("%d\n",*(*(a+j)+4));
 		}
 }
 int f(int (*a)[5],int n,int m)

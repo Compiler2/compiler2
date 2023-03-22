@@ -7,7 +7,7 @@ int main_bench(){
     for(i=0;i<5;i++){
         gets(shuzu[i]);          
                   }
-    scanf("%d %d",&n,&m);            
+    my_scanf("%d %d",&n,&m);            
     if(m<5&&m>=0&&n<5&&n>=0){
        strcpy(e,shuzu[n]);
        strcpy(shuzu[n],shuzu[m]);
@@ -17,7 +17,7 @@ int main_bench(){
                       }
                             }
     else
-       printf("error");
+       my_printf("error");
                                     
     return 0;
 }

@@ -5,11 +5,11 @@ int main_bench()
     int c,d,f,n,i;
     double e;
     int a[50000],b[50000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n-1;i++){
-        scanf("%d%d\n",&a[i],&b[i]);
+        my_scanf("%d%d\n",&a[i],&b[i]);
     }
-    scanf("%d%d",&a[n-1],&b[n-1]);
+    my_scanf("%d%d",&a[n-1],&b[n-1]);
     for(i=0,c=10001;i<n;i++){
         if(c>a[i]){
             c=a[i];
@@ -31,9 +31,9 @@ int main_bench()
         }
     }
     if(f==1){
-        printf("%d %d",c,d);
+        my_printf("%d %d",c,d);
     }else{
-        printf("no");
+        my_printf("no");
     }
 	return 0;
 	}

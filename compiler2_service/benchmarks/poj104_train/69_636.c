@@ -35,7 +35,7 @@ int main_bench()
     int b[300]={0};
     int c[300]={0};
     int i,la,lb,len,n=0;
-    scanf("%s%s",s1,s2);
+    my_scanf("%s%s",s1,s2);
     la=sdw1(s1,a);
     lb=sdw1(s2,b);
     len=add(a,b,c,la,lb);
@@ -49,7 +49,7 @@ int main_bench()
     }
     for(i=n;i>-1;i--)
     {
-                      printf("%d",c[i]);
+                      my_printf("%d",c[i]);
     }
   
     return 0;

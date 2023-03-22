@@ -3,7 +3,7 @@
 main_bench()
 {
       int n,N;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       N=n;
       
       if(n%3==0)
@@ -14,19 +14,19 @@ main_bench()
         n=n/7;
       
       if(N/n==1)
-        printf("n");
+        my_printf("n");
       if(N/n==3)
-        printf("3");
+        my_printf("3");
       if(N/n==5)
-        printf("5");
+        my_printf("5");
       if(N/n==7)
-        printf("7");
+        my_printf("7");
       if(N/n==15)
-        printf("3 5");
+        my_printf("3 5");
       if(N/n==21)
-        printf("3 7");
+        my_printf("3 7");
       if(N/n==35)
-        printf("5 7");
+        my_printf("5 7");
       if(N/n==105)
-        printf("3 5 7");
+        my_printf("3 5 7");
 }

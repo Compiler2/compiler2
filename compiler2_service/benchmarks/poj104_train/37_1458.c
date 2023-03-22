@@ -8,12 +8,12 @@ int main_bench()
 	int aptr[26];
 	int ap=0,j;
 	char tmpch;
-	scanf("%d",&n);
-	scanf("%c",&tmpch);
+	my_scanf("%d",&n);
+	my_scanf("%c",&tmpch);
 	for (i=0;i<n;i++)
 	{
 		ap=0;
-		scanf("%c",&tmpch);
+		my_scanf("%c",&tmpch);
 		while(tmpch!='\n')
 		{
 			if(a[tmpch-'a']==0)
@@ -21,7 +21,7 @@ int main_bench()
 				aptr[ap++]=tmpch-'a';
 			}
 			a[tmpch-'a']++;
-			scanf("%c",&tmpch);
+			my_scanf("%c",&tmpch);
 		}
 		for(j=0;j<ap;j++)
 		{
@@ -30,11 +30,11 @@ int main_bench()
 		}
 		if (j<ap)
 		{
-			printf("%c\n",aptr[j]+'a');
+			my_printf("%c\n",aptr[j]+'a');
 		} 
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		for (j=0;j<26;j++)
 		{

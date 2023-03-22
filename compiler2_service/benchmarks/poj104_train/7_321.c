@@ -24,12 +24,12 @@ int main_bench()
 		  c2[k]=s[i];
 	  }
 	  c2[k]='\0';
-	  printf("%s",c1);
-	  printf("%s",d);
-	  printf("%s",c2);
+	  my_printf("%s",c1);
+	  my_printf("%s",d);
+	  my_printf("%s",c2);
   }
   else
-	  printf("%s",s);
+	  my_printf("%s",s);
 
   return 0;
 }

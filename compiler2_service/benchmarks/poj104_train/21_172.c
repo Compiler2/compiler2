@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[100],n,i,min=0,max=0;
 	float sum=0,aver,s,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	aver=sum/n;
@@ -21,12 +21,12 @@ int main_bench()
 	s=aver-a[min];
 	t=a[max]-aver;
 	if(s>t){
-		printf("%d\n",a[min]);
+		my_printf("%d\n",a[min]);
 	}
 	else if(s<t){
-		printf("%d\n",a[max]);
+		my_printf("%d\n",a[max]);
 	}	
 	else if(s==t){
-		printf("%d,%d\n",a[min],a[max]);
+		my_printf("%d,%d\n",a[min],a[max]);
 	}
 }

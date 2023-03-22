@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,a,n;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if((y%4)==0&&(y%100)!=0||(y%400==0))
 		a=1;
 	else
@@ -27,15 +27,15 @@ int main_bench()
 
     if(a==0)
 	{
-		printf("%d",n);
+		my_printf("%d",n);
 	}
 	if(m!=1&&m!=2&&a==1)
 	{
 		n=n+1;
-		printf("%d",n);
+		my_printf("%d",n);
 	}
-	if(a==1&&m==1)	printf("%d",n);
-	if(a==1&&m==2) printf("%d",n);
+	if(a==1&&m==1)	my_printf("%d",n);
+	if(a==1&&m==2) my_printf("%d",n);
 
 	return 0;
 }

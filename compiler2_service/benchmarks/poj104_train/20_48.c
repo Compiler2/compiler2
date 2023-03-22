@@ -38,7 +38,7 @@ int main_bench()
 	{
 		t=strlen(result[j]);
 		for(k=0;k<t;k++)
-			printf("%c",result[j][k]);
-		printf("\n");
+			my_printf("%c",result[j][k]);
+		my_printf("\n");
 	}
 }

@@ -8,10 +8,10 @@ int b[1000];
 int result[1000];
 int ax=0,bx=0;
 
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 for (i=0;i<n;i++)
 {  
-	scanf ("%d %d",&a[i],&b[i]);
+	my_scanf ("%d %d",&a[i],&b[i]);
 	if (a[i]==0&&b[i]==0){result[i]=0;}
 	else if (a[i]==1&&b[i]==1){result[i]=0;}
 	else if (a[i]==2&&b[i]==2){result[i]=0;}
@@ -29,8 +29,8 @@ for (i=0;i<n;i++)
 	else if (result[i]==2){bx++;}
 }
 
-if (ax>bx) {printf ("A");}
-else if (ax<bx) {printf ("B");}
-else if (ax==bx) {printf ("Tie");}
+if (ax>bx) {my_printf ("A");}
+else if (ax<bx) {my_printf ("B");}
+else if (ax==bx) {my_printf ("Tie");}
 return 0;
 }

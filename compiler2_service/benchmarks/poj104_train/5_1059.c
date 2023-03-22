@@ -5,13 +5,13 @@ int main_bench()
 	int i;
 	double a,len,cd,s=0,b=0,c;
 	char s1[501],s2[501];
-	scanf("%lf",&a);
-	scanf("%s%s",&s1,&s2);
+	my_scanf("%lf",&a);
+	my_scanf("%s%s",&s1,&s2);
 	len=strlen(s1);
 	cd=strlen(s2);
 	if(len!=cd)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	if(len==cd)
 	{
@@ -31,16 +31,16 @@ int main_bench()
 			c=s/len;
 			if(c>a)
 			{
-				printf("yes");
+				my_printf("yes");
 			}
 			else
 			{
-				printf("no");
+				my_printf("no");
 			}
 		}
 		if(b!=len)
 		{
-			printf("error");
+			my_printf("error");
 		}
 	}
 	return 0;

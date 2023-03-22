@@ -17,16 +17,16 @@ int F(int m)
 int main_bench()
 {
   int n,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int s[n],r[n];
   for(j=0;j<n;j++)
   {
-    scanf("%d",&s[j]);
+    my_scanf("%d",&s[j]);
     r[j]=F(s[j]);
   }
   for(j=0;j<n;j++)
   {
-    printf("%d\n",r[j]);
+    my_printf("%d\n",r[j]);
   }
   return 0;
 }

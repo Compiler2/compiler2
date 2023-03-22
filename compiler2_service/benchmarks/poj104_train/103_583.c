@@ -19,7 +19,7 @@ int main_bench()
                                      goto loop;
                                         }
                            else 
-                         printf("(%c,%d)",b,j)  ;         
+                         my_printf("(%c,%d)",b,j)  ;         
                            
                            }   
       getchar();

@@ -7,7 +7,7 @@ int main_bench()
 	char a[101];
 	int i,l,t;
 	int x=0;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(t=0,i=0;i<l;i++)
 	{
@@ -22,9 +22,9 @@ int main_bench()
 	t=t/10;
 	a[l]=0;
 	if(l==1)
-		printf("%c\n%c\n",'0',s[0]);
+		my_printf("%c\n%c\n",'0',s[0]);
 	else if (l==2&&(s[0]-'0')*10+s[1]-'0'<13)
-		printf("%c\n%s\n",'0',s);
+		my_printf("%c\n%s\n",'0',s);
 	else
 	{
 		for(i=0;i<l;i++)
@@ -33,7 +33,7 @@ int main_bench()
 				p=&a[i];
 				break;
 			}
-			printf("%s\n%d\n",p,t);
+			my_printf("%s\n%d\n",p,t);
 	}
 }
 	

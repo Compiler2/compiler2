@@ -12,10 +12,10 @@ int main_bench()
 {
 	
 	int n,i,p,q,r,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&stu[i].num,&stu[i].s1,&stu[i].s2);
+		my_scanf("%d%d%d",&stu[i].num,&stu[i].s1,&stu[i].s2);
 		stu[i].sum=stu[i].s1+stu[i].s2;
 	}
 	max=0;
@@ -51,8 +51,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",stu[p].num,stu[p].sum);
-	printf("%d %d\n",stu[q].num,stu[q].sum);
-	printf("%d %d\n",stu[r].num,stu[r].sum);
+	my_printf("%d %d\n",stu[p].num,stu[p].sum);
+	my_printf("%d %d\n",stu[q].num,stu[q].sum);
+	my_printf("%d %d\n",stu[r].num,stu[r].sum);
 	return 0;
 }

@@ -14,10 +14,10 @@ struct stu
 int main_bench()
 {int k,n,i,total[100],tota=0,max=0;
 struct stu ppl[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%s %d %d %c %c %d",ppl[i].name,&ppl[i].final,&ppl[i].assess,&ppl[i].leader,&ppl[i].west,&ppl[i].paper);
+	my_scanf("%s %d %d %c %c %d",ppl[i].name,&ppl[i].final,&ppl[i].assess,&ppl[i].leader,&ppl[i].west,&ppl[i].paper);
 }
 	
 for(i=0;i<n;i++)
@@ -36,7 +36,7 @@ if(total[i]>max)
 	}
 }
 
-printf("%s\n%d\n%d\n",ppl[k].name,max,tota);
+my_printf("%s\n%d\n%d\n",ppl[k].name,max,tota);
 
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,j;
 	double num[300],e,c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%lf",&num[i]);
+		my_scanf("%lf",&num[i]);
 		c+=num[i];
 	}
 	for(i=1;i<=n;i++){
@@ -18,10 +18,10 @@ int main_bench(){
 		}
 	}
 	if((c/n-num[0])==(num[n-1]-c/n))
-		printf("%.0lf,%.0lf\n",num[0],num[n-1]);
+		my_printf("%.0lf,%.0lf\n",num[0],num[n-1]);
 	else if((c/n-num[0])>(num[n-1]-c/n))
-		printf("%.0lf\n",num[0]);
+		my_printf("%.0lf\n",num[0]);
 	else if((c/n-num[0])<(num[n-1]-c/n))
-		printf("%.0lf\n",num[n-1]);
+		my_printf("%.0lf\n",num[n-1]);
 	return 0;
 }

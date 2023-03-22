@@ -27,7 +27,7 @@ int main_bench(){
 			min=zms[j]+1;
 		}
 	}
-	printf("%s\n", &dc[max]);
-	printf("%s\n", &dc[min]);
+	my_printf("%s\n", &dc[max]);
+	my_printf("%s\n", &dc[min]);
 	return 0;
 }

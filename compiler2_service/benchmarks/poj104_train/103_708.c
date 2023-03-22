@@ -5,7 +5,7 @@ int main_bench()
 	char str[1000];
 	int i,n,s,count;
 	char k;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	n=strlen(str);
 	if(str[0]<97)
 	k=str[0];
@@ -20,7 +20,7 @@ int main_bench()
 		}
 		else
 		{
-			printf("(%c,%d)",k,count);
+			my_printf("(%c,%d)",k,count);
 			if(str[i]<97)
 	        k=str[i];
 	        else
@@ -28,6 +28,6 @@ int main_bench()
 			count=1;}
 		
 	}
-		printf("(%c,%d)",k,count);
+		my_printf("(%c,%d)",k,count);
 	return 0;
 }

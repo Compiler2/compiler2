@@ -4,7 +4,7 @@ int main_bench()
 {
 	char sz[81],*p;
 	int n,i,m,right;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=1;i<=n;i++){
 		gets(sz);
@@ -18,11 +18,11 @@ int main_bench()
 				}
 			}
 			if(right==m){
-				printf("1\n");
+				my_printf("1\n");
 			}else{
-				printf("0\n");
+				my_printf("0\n");
 			}
-		}else printf("0\n");
+		}else my_printf("0\n");
 	}
 	return 0;
 }

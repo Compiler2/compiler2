@@ -15,7 +15,7 @@ int main_bench()
 	month[9]=31;
 	month[10]=30;
 	month[11]=31;
-	scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
 	for(j=1;j<=startmonth-1;j++)
 	startdays=startdays+month[j-1];
 	startdays=startdays+startday;
@@ -32,6 +32,6 @@ int main_bench()
 		else sum=sum+366;
 		sumday=sum+enddays-startdays;
 	}
-	printf("%d",sumday);
+	my_printf("%d",sumday);
 	return 0;
 }

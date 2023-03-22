@@ -21,17 +21,17 @@ int main_bench()
 	{
 		if (s1[i]==s2[i])
 		{
-			  if (i==n-1) printf("=\n");
+			  if (i==n-1) my_printf("=\n");
 			  continue;
 		}
 		if (s1[i]>s2[i]) 
 		{
-			printf(">\n");
+			my_printf(">\n");
 			break;
 		}
 		if (s1[i]<s2[i]) 
 		{
-			printf("<\n");
+			my_printf("<\n");
 			break;
 		}
 	}

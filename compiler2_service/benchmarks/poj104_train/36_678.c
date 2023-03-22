@@ -7,7 +7,7 @@ int main_bench()
 	long a,b;
 	char s[1000],s1[1000];
 	int ss[1000]={0};
-	scanf("%s%s",&s,&s1);
+	my_scanf("%s%s",&s,&s1);
 	a=strlen(s);
 	b=strlen(s1);
 	if (a==b)
@@ -26,11 +26,11 @@ int main_bench()
 		}
 		if (p==0) 
 		{ 
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}
 	}
-    if (p==1) printf("YES\n");
+    if (p==1) my_printf("YES\n");
 	}
-	else printf("NO\n");
+	else my_printf("NO\n");
 }

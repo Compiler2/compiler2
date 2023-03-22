@@ -5,9 +5,9 @@ int main_bench()
 	int i,n,k,sum=0;
 	int a[300];
 	int b[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",&a[i-1]);
+		my_scanf("%d",&a[i-1]);
 	for(i=0;i<n;i++)
 	{
 		if(i==0)
@@ -27,7 +27,7 @@ int main_bench()
 		}
 	}
 	for(k=0;k<sum;k++)
-		printf("%d,",b[k]);
-	printf("%d",b[sum]);
+		my_printf("%d,",b[k]);
+	my_printf("%d",b[sum]);
 	return 0;
 }

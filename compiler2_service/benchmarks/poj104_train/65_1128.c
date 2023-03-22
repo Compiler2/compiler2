@@ -5,9 +5,9 @@ int main_bench(){
     int a,b;
     int p=0;
     int q=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         if(a==b){
             p+=0;
             q+=0;
@@ -17,12 +17,12 @@ int main_bench(){
             q+=1;
         }
     }if(p>q){
-        printf("A");
+        my_printf("A");
         
     }else if(q>p){
-        printf("B");
+        my_printf("B");
     }else if(p==q){
-        printf("Tie");
+        my_printf("Tie");
     }
     return 0;
     

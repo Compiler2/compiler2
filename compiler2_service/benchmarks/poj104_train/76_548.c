@@ -7,10 +7,10 @@ int b[20000];
 int main_bench(){
     minleft=50001;
     maxright=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&l);
-        scanf("%d",&r);
+        my_scanf("%d",&l);
+        my_scanf("%d",&r);
         if(l<=minleft)minleft=l;
         if(r>=maxright)maxright=r;
         for(j=l;j<r;j++){
@@ -19,7 +19,7 @@ int main_bench(){
     }
     for(k=minleft;k<=maxright-1;k++)
     if(b[k]==0){flag=0;break;}
-    if(flag==0)printf("no\n");
-    else printf("%d %d\n",minleft,maxright);
+    if(flag==0)my_printf("no\n");
+    else my_printf("%d %d\n",minleft,maxright);
     return 0;
 }

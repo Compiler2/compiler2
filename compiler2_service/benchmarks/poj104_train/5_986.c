@@ -4,11 +4,11 @@ int main_bench(){
 double n,y;
 int a,b,x=0,k=1;
 char sy[501],se[501];
-scanf("%lf %s %s",&n,sy,se);
+my_scanf("%lf %s %s",&n,sy,se);
 a=strlen(sy);
 b=strlen(se);
 if(a!=b){
-  printf("error");
+  my_printf("error");
 }
 else{
 	for(int i=0;i<a;i++){
@@ -23,15 +23,15 @@ else{
 		}
 	}
 	if(k==0){
-	printf("error");
+	my_printf("error");
 	}
 	else{
 	y=1.0*x/a;
 	if(y>=n){
-	printf("yes");
+	my_printf("yes");
 	}
 	else{
-	printf("no");
+	my_printf("no");
 	}
 	}
 

@@ -4,9 +4,9 @@ int a[200][2];
 int main_bench()
 {
 	int n,i,win,tie,lose;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d",&a[i][0],&a[i][1]);
+		my_scanf("%d%d",&a[i][0],&a[i][1]);
 	win=0;
 	tie=0;
 	lose=0;
@@ -23,10 +23,10 @@ int main_bench()
 	}
 	lose=n-win-tie;
 	if(win>lose)
-		printf("A\n");
+		my_printf("A\n");
 	else if(win<lose)
-		printf("B\n");
+		my_printf("B\n");
 	else
-		printf("Tie\n");
+		my_printf("Tie\n");
 		return 0;
 }

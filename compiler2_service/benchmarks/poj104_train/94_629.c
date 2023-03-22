@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int i,n,t,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz1[1000],sz[1000];
 	int s=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz1[i]);
+		my_scanf("%d",&sz1[i]);
 		if(sz1[i]%2==1)
 		{
 			sz[s]=sz1[i];
@@ -26,7 +26,7 @@ int main_bench()
 			}
 	}
 	for(i=1;i<s;i++)
-		printf("%d,",sz[i]);
-	printf("%d",sz[s]);
+		my_printf("%d,",sz[i]);
+	my_printf("%d",sz[s]);
 	return 0;
 }

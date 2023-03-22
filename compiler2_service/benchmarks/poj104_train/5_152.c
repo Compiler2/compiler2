@@ -6,9 +6,9 @@ int i,n,m,j;
 double x,s;
 char a[101],b[101];
 j=0;
-scanf("%lf",&x);
+my_scanf("%lf",&x);
 	
-scanf("%s%s",a,b);
+my_scanf("%s%s",a,b);
 	n=strlen(a);
 	m=strlen(b);
 	s=0;
@@ -23,7 +23,7 @@ scanf("%s%s",a,b);
 
 if(n!=m||j!=0)
 {
-	printf("error");
+	my_printf("error");
 }else
 {
 	for(i=0;i<n;i++)
@@ -36,10 +36,10 @@ if(n!=m||j!=0)
     s=s/n;
 	if(s>x)
 	{
-	 printf("yes");
+	 my_printf("yes");
 	}else
 	{
-		printf("no");
+		my_printf("no");
 	}
 
 }

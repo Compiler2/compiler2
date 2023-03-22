@@ -5,7 +5,7 @@ int main_bench()
 	char zfc1[51],zfc2[51];
 	int k1,k2,i,j,e,c;
 	c=0;
-	scanf("%s%s",zfc1,zfc2);
+	my_scanf("%s%s",zfc1,zfc2);
 	k1=strlen(zfc1);
 	k2=strlen(zfc2);
 	for(i=c;i<k2;i++){
@@ -16,7 +16,7 @@ int main_bench()
 				e++;
 				i++;
 			}else{break;}
-		}if(e==k1){printf("%d",i-k1);break;}
+		}if(e==k1){my_printf("%d",i-k1);break;}
 	}
 	return 0;
 }

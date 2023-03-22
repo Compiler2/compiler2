@@ -3,7 +3,7 @@
 main_bench()
 {
       int n,i,h,j,c;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int e[10000];
       for(i=0;i<n;i++)
       e[i]=0;
@@ -12,10 +12,10 @@ main_bench()
       char b[1000];
       for(i=0;i<n;i++)
       {
-      scanf("%s",b);
+      my_scanf("%s",b);
       if(b[0]=='m')
       e[i]++;
-      scanf("%lf",&a[i]);
+      my_scanf("%lf",&a[i]);
       }
       for(i=0;i<n-1;i++)
       for(j=0;j<n-1;j++)
@@ -34,12 +34,12 @@ main_bench()
       if(h==0)
       {
       h++;
-      printf("%.2lf",a[i]);
+      my_printf("%.2lf",a[i]);
       }
       else
-      printf(" %.2lf",a[i]);
+      my_printf(" %.2lf",a[i]);
       }
       for(i=n-1;i>=0;i--)
       if(e[i]==0)
-      printf(" %.2lf",a[i]);
+      my_printf(" %.2lf",a[i]);
       }

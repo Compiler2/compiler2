@@ -22,7 +22,7 @@ int main_bench()
 	for(i=0;i<=n;i++)
 		max=max>a[i]?max:a[i];
 	if((n==0)||(max==0))
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 }

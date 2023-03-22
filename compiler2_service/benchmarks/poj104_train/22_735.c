@@ -7,7 +7,7 @@ char c;
 m1=m2=0;
 do
 {
-scanf("%d%c",&n,&c);
+my_scanf("%d%c",&n,&c);
 if (n>m1)
 {
 m2=m1;
@@ -18,9 +18,9 @@ m2=n;
 }
 while(c==',');
 if((m2!=m1)&&(m2!=0))
-printf("%d",m2);
+my_printf("%d",m2);
 else
-printf("No");
+my_printf("No");
 
 return 0;
 }

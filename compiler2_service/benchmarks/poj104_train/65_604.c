@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct suoyou{
 		int qian;
 		int hou;
@@ -10,7 +10,7 @@ int main_bench(){
 	}suoyous[202];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&suoyous[i].qian,&suoyous[i].hou);
+		my_scanf("%d%d",&suoyous[i].qian,&suoyous[i].hou);
 		if(suoyous[i].qian==0&&suoyous[i].hou==1){
 			suoyous[i].jg=1;
 		}else if(suoyous[i].qian==1&&suoyous[i].hou==2){
@@ -47,11 +47,11 @@ int main_bench(){
 	}
 	
 	if(s>m){
-		printf("A");
+		my_printf("A");
 	}else if(s<m){
-		printf("B");
+		my_printf("B");
 	}else if(s==m){
-		printf("Tie");
+		my_printf("Tie");
 	}
 
 

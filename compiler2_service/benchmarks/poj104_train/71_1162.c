@@ -5,10 +5,10 @@ int main_bench()
 	int i,n,s,p,y;
 	int d[100];
 	int m[2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=0;p<n;p++)
 	{
-		scanf("%d %d %d", &y, &m[0], &m[1]);
+		my_scanf("%d %d %d", &y, &m[0], &m[1]);
 		if ((y%4==0 && y%100!=0) || y%400==0)
 		{
 			for(i=0;i<2;i++)
@@ -123,11 +123,11 @@ int main_bench()
 			s=d[0]-d[1];
 				if (s%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 		}
 		else
@@ -135,11 +135,11 @@ int main_bench()
 			s=d[1]-d[0];
 				if (s%7==0)
 				{
-					printf("YES\n");
+					my_printf("YES\n");
 				}
 				else
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 				}
 		}
 		}

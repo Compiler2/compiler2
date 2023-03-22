@@ -4,7 +4,7 @@ main_bench()
 {
     int f,t,n[10000],m[10000],l,i,s=0,k,g,h;
     char c[10000],d[10000];
-    scanf("%d %s %d",&f,&c,&t);
+    my_scanf("%d %s %d",&f,&c,&t);
     l=strlen(c);
     for (i=l-1;i>=0;i--)
     {
@@ -46,9 +46,9 @@ main_bench()
     }
     for (i=0;i<k;i++)
     {
-        printf("%c",d[i]);
+        my_printf("%c",d[i]);
     }
     if (h==1)
-        printf("0");
-    printf("\n");
+        my_printf("0");
+    my_printf("\n");
 }

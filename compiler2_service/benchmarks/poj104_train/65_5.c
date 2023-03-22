@@ -8,13 +8,13 @@ int fun(int x,int y){
 }
 int main_bench(){
     int n,x,y,j=0,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d",&x,&y);
+        my_scanf("%d %d",&x,&y);
         j=j+fun(x,y);
     }
-    if(j>0)printf("A");
-    if(j<0)printf("B");
-    if(j==0)printf("Tie");
+    if(j>0)my_printf("A");
+    if(j<0)my_printf("B");
+    if(j==0)my_printf("Tie");
     return 0;
 }

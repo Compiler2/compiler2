@@ -5,13 +5,13 @@ int main_bench()
 	int loc[1000][1000];
 	int m,n,p,q;
 	int a;
-	scanf("%d", &a);
+	my_scanf("%d", &a);
 	int i,j;
 	for (i=0;i<a;i++)
 	{
 		for (j=0;j<a;j++)
 		{
-			scanf("%d",&loc[i][j]);
+			my_scanf("%d",&loc[i][j]);
 		}
 	}
 	for (i=0;i<a;i++)
@@ -48,5 +48,5 @@ int main_bench()
 	}
 	int s;
 	s=(p-m-1)*(q-n-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }

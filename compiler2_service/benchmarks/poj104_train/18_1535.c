@@ -49,7 +49,7 @@ void form(int a[][105],int n)
 int main_bench()
 {
   int n,i,j,k,flag;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[n][105];
   int sum;
   flag=n;
@@ -58,7 +58,7 @@ int main_bench()
       sum=0;    
       for (j=0;j<=n-1;j++)
           for (k=0;k<=n-1;k++)
-              scanf("%d",a[j]+k);
+              my_scanf("%d",a[j]+k);
       flag=n;
       while (flag>=2)
       {
@@ -68,8 +68,8 @@ int main_bench()
        form(a,flag);
        flag--;
        }
-      printf("%d",sum);
-       (i<=n-2)?printf("\n"):printf("");
+      my_printf("%d",sum);
+       (i<=n-2)?my_printf("\n"):my_printf("");
   }	
   return 0;
 }

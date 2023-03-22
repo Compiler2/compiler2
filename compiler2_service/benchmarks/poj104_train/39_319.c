@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		char name[20];
@@ -18,7 +18,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		stu[i].money=0;
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].judge,&stu[i].work,&stu[i].west,&stu[i].paper);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score,&stu[i].judge,&stu[i].work,&stu[i].west,&stu[i].paper);
 		if(stu[i].score>80&&stu[i].paper>=1)
 			stu[i].money=stu[i].money+8000;
 		if(stu[i].score>85&&stu[i].judge>80)
@@ -41,11 +41,11 @@ int main_bench()
 	{
 		if(stu[i].money==max)
 		{	
-			printf("%s\n%d\n",stu[i].name,max);
+			my_printf("%s\n%d\n",stu[i].name,max);
 		break;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }
 
 

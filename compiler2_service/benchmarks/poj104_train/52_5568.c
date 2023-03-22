@@ -7,18 +7,18 @@ int main_bench()
 {
 	int n,m,i;
 	int num[100];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	for(i=1;i<=m;i++)
 	    play(num,n);
 	for(i=0;i<n;i++)
 	{
 		if(i!=0)
-			printf(" ");
-		printf("%d",num[i]);
+			my_printf(" ");
+		my_printf("%d",num[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

@@ -3,7 +3,7 @@
 int main_bench(){
     int SUM,a,i,j=0;
     int ht[100000];
-    scanf("%d",&SUM);
+    my_scanf("%d",&SUM);
     a=SUM;
     for(i=100;i>0;i--){
         if(i==100||i==50||i==20||i==10||i==5||i==1){
@@ -13,7 +13,7 @@ int main_bench(){
         }
     }
     for(i=0;i<j;i++){
-        printf("%d\n",ht[i]);
+        my_printf("%d\n",ht[i]);
     }
     return 0;
 }

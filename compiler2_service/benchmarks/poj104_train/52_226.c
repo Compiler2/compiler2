@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,m,A[200],i,p,q;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=1;i<=n;i++)
     {
-     scanf("%d",&A[i]);
+     my_scanf("%d",&A[i]);
 }
     for(p=1;p<=(n-m);p++)
 	{
@@ -14,8 +14,8 @@ int main_bench()
 	}
 	for(q=(n-m+1);q<(n+n-m);q++)
 	{
-	printf("%d ",A[q]);
+	my_printf("%d ",A[q]);
 	}
-	printf("%d",A[n+n-m]);
+	my_printf("%d",A[n+n-m]);
    return 0;
 }

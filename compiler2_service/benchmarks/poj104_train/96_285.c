@@ -8,8 +8,8 @@ int main_bench()
     b=(a[0]-'0')*10+a[1]-'0';
     if (((a[1]=='\0')||(b<13))&&(a[2]=='\0'))
     {
-        printf("0\n");
-        printf("%s",a);
+        my_printf("0\n");
+        my_printf("%s",a);
         return 0;
     }
     b=a[0]-'0';
@@ -27,13 +27,13 @@ int main_bench()
     a[i]=0;
     if(a[0]-'0'!=0)
     {
-    printf("%s\n",a);
-    printf("%d",b);
+    my_printf("%s\n",a);
+    my_printf("%d",b);
     }
     else
     {
-    printf("%s\n",&a[1]);
-    printf("%d",b);
+    my_printf("%s\n",&a[1]);
+    my_printf("%d",b);
     }
 
 return 0;

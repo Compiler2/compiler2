@@ -4,8 +4,8 @@ int R(int year);
 int main_bench()
 {
 	int year1,month,day, total1,year,total2,tianshu,year2,month2,day2,i;
-	scanf("%d%d%d",&year1,&month,&day);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d",&year1,&month,&day);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 	total1=0; 
 	total2=0;
 	for( i=1;i<month;i++)
@@ -79,7 +79,7 @@ int main_bench()
 		}
 	}
 	tianshu=(total2-total1)>0?(total2-total1): (total1-total2);
-	printf("%d",tianshu);
+	my_printf("%d",tianshu);
 	return 0;
 }
 	int R( int year)

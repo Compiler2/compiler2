@@ -4,23 +4,23 @@ int main_bench()
 {
 	int n,i,l,j;
 	char a[256],t='T',b='A',g='G',c='C';
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		l=strlen(a);
 		for(j=0;j<l;j++)
 		{
 			if(a[j]=='A')
-				printf("%c",t);
+				my_printf("%c",t);
 			if(a[j]=='T')
-				printf("%c",b);
+				my_printf("%c",b);
 			if(a[j]=='C')
-				printf("%c",g);
+				my_printf("%c",g);
 			if(a[j]=='G')
-				printf("%c",c);
+				my_printf("%c",c);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

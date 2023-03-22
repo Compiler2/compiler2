@@ -5,7 +5,7 @@
 int main_bench()
 {
 	int n,x=0;
-	scanf("%d ",&n);
+	my_scanf("%d ",&n);
 	char c[81];
 	int t,len;
 	char *p;
@@ -31,9 +31,9 @@ int main_bench()
 		else
 			t=0;
 		if(t==1)
-		printf("yes\n");
+		my_printf("yes\n");
 		else 
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

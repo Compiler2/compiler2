@@ -7,8 +7,8 @@ int main_bench()
     char str1[250],str2[250];    
     int a[250],b[250],c[250]={0};  
     int x1,x2,i,j,k=0,l;
-  scanf("%s\n",str1);
-  scanf("%s",str2);
+  my_scanf("%s\n",str1);
+  my_scanf("%s",str2);
   x1=strlen(str1);
   x2=strlen(str2);
     for(i=0;i<x1;i++)
@@ -47,6 +47,6 @@ int main_bench()
            
          }
     for(l=r;l>=0;l--)
-        printf("%d",c[l]);
+        my_printf("%d",c[l]);
   
 }

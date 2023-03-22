@@ -4,7 +4,7 @@ int main_bench()
 {
 	int z;
 	int a=0,b=0,c=0;
-	scanf("%d",&z);
+	my_scanf("%d",&z);
 	if(z%3==0)
 		a=3;
 	if(z%5==0)
@@ -12,18 +12,18 @@ int main_bench()
 	if(z%7==0)
 		c=7;
 	if(a!=0) 
-		printf("%d",a);
+		my_printf("%d",a);
 	if(b!=0)
 		{if(a!=0)
-			printf(" %d",b);
+			my_printf(" %d",b);
 		else
-		    printf("%d",b);}
+		    my_printf("%d",b);}
 	if(c!=0)
 		{if(a!=0 || b!=0)
-			printf(" %d",c);
+			my_printf(" %d",c);
 		else
-		    printf("%d",c);}
+		    my_printf("%d",c);}
 	if(a+b+c==0)
-		printf("n");
+		my_printf("n");
 	return 0;
 }

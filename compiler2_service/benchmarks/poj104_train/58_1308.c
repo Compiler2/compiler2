@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,m,mark;
 	char a[81]={'\0'};
 	char *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(a);
 	for(i=0;i<n;i++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 		p=a;
 		if(*p>='0'&&*p<='9')
 			mark=0;
-		printf("%d\n",mark);
+		my_printf("%d\n",mark);
 	}
 	return 0;
 }

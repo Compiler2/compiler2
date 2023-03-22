@@ -21,7 +21,7 @@ int main_bench()
       	if(k==(i+2*j-1)/2+1)  
 			{
 				for(m=j;m<j+i-1;m++)
-		         printf("%c",b[m]);printf("%c\n",b[j+i-1]); 
+		         my_printf("%c",b[m]);my_printf("%c\n",b[j+i-1]); 
 			}
 		
 		}

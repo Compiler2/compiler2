@@ -35,7 +35,7 @@ int main_bench()
     {
                         if(max==strlen(word1[i]))
                         {
-                                                 printf("%s\n",word1[i]);
+                                                 my_printf("%s\n",word1[i]);
                                                  break;
                         }
     }
@@ -43,7 +43,7 @@ int main_bench()
     {
                         if(min==strlen(word1[i]))
                         {
-                                                 printf("%s",word1[i]);
+                                                 my_printf("%s",word1[i]);
                                                  break;
                         }
     }

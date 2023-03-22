@@ -3,10 +3,10 @@
 main_bench()
 {
    int n,a[100],b[100],i,x,y;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-               scanf("%d %d",&a[i],&b[i]);
+               my_scanf("%d %d",&a[i],&b[i]);
                }
                x=0,y=0;
                for(i=0;i<n;i++)
@@ -24,7 +24,7 @@ main_bench()
                else if(a[i]==2&&b[i]==1) 
                y++;
                }
-               if(x==y) printf("Tie\n");
-               if(x<y) printf("B\n");
-               if(x>y) printf("A\n");
+               if(x==y) my_printf("Tie\n");
+               if(x<y) my_printf("B\n");
+               if(x>y) my_printf("A\n");
                            }

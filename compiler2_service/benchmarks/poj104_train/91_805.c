@@ -10,5 +10,5 @@ int main_bench()
 	l=strlen(p1);
 	for(i=0;i<l-1;i++) *(p2+i)=*(p1+i)+*(p1+i+1);
 	*(p2+l-1)=*(p1)+*(p1+l-1);
-	for(i=0;i<l;i++) printf("%c",*(p2+i));
+	for(i=0;i<l;i++) my_printf("%c",*(p2+i));
 }

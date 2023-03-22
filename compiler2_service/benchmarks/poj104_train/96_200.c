@@ -5,7 +5,7 @@ int main_bench()
     char a[101];
     gets(a);
     if(((a[0]-'0')*10+a[1]-'0')<13&&a[2]=='\0')
-    {printf("0\n");puts(a);}
+    {my_printf("0\n");puts(a);}
     else
 {
     char b[101];
@@ -17,7 +17,7 @@ int main_bench()
             x=(x*10+a[i+1]-'0')%13;
     }
     b[i]='\0';
-    if(b[0]=='\0') printf("0\n");
+    if(b[0]=='\0') my_printf("0\n");
     else if(b[0]=='0') 
     {
                   for(i=0;b[i]!='\0';i++) 
@@ -27,7 +27,7 @@ int main_bench()
     }                        
     else
     puts(b);
-    printf("%d",x);
+    my_printf("%d",x);
 }
     getchar();getchar();getchar();
 }

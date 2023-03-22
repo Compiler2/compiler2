@@ -7,10 +7,10 @@ int main_bench()
     float c[100]={0};
     float d=0;
     int i,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%f %f",&a[i],&b[i]);
+        my_scanf("%f %f",&a[i],&b[i]);
         if(i==0)
         {
             c[i]=b[i]/a[i];
@@ -23,14 +23,14 @@ int main_bench()
             c[i]=(float)(b[i]/a[i]);
             if((c[i]-d)>0.05)
             {
-                printf("better\n");
+                my_printf("better\n");
             }
             else if((c[i]-d)<-0.05)
             {
-                printf("worse\n");
+                my_printf("worse\n");
             }
             else
-            printf("same\n");
+            my_printf("same\n");
         }
     return 0;
 }

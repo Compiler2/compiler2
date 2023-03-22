@@ -3,10 +3,10 @@
 int main_bench()
 {
    int year,month1,month2,n,i,total1,total2,j,a;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(j=0;j<n;j++)
   {
-     scanf("%d%d%d",&year,&month1,&month2);
+     my_scanf("%d%d%d",&year,&month1,&month2);
      total1=0;
      for(i=1;i<month1;i++) 
      { 			
@@ -60,11 +60,11 @@ int main_bench()
       a=total2-total1;
       if(a%7==0)
      {
-        printf("YES\n");
+        my_printf("YES\n");
      }
      else
      {
-        printf("NO\n");
+        my_printf("NO\n");
      }
    }
   return 0;

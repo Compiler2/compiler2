@@ -4,20 +4,20 @@ int ssd(int i);
 int main_bench()
 {
 	int j,n,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1||n==2||n==4)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 		return 0;
 	}
 	if(n==3)
 	{
-		printf("1 3\n");
+		my_printf("1 3\n");
 		return 0;
 	}
 	if(n==5)
 	{
-		printf("3 5\n");
+		my_printf("3 5\n");
 		return 0;
 	}
 	for(int i=5;i<=n;i++)
@@ -25,13 +25,13 @@ int main_bench()
 		j=i-2;
 		if(ssd(i))
 		{
-			printf("%d %d\n",j,i);
+			my_printf("%d %d\n",j,i);
 			flag=1;
 		}
 	}
 	if(flag==0)
 	{
-		printf("empty\n");
+		my_printf("empty\n");
 	}
 	return 0;
 }

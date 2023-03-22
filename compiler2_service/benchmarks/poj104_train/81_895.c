@@ -16,7 +16,7 @@ int main_bench()
     {
         gets(a[i]);    
     }
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     if (check(m+1) && check(n+1))
     {
                  strcpy(temp,a[m+1]);
@@ -26,7 +26,7 @@ int main_bench()
                  puts(a[i]);
                 
     }
-    else printf("error");
+    else my_printf("error");
 
 
     return 0;

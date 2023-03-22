@@ -17,16 +17,16 @@ int panduan(char str[])
 int main_bench()
 {
  int n,i,a;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
   char ch[100];
-	scanf("%s",ch);
+	my_scanf("%s",ch);
   a=panduan(ch);
   if(a)
-   printf("yes\n");
+   my_printf("yes\n");
   else
-   printf("no\n");
+   my_printf("no\n");
  }
  return 0;
 }

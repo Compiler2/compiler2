@@ -16,25 +16,25 @@ main_bench()
         count++;
      }
      if(count==1 || (count==2 && a[0]==0 && a[1]==0))
-     printf("0");
+     my_printf("0");
      else
   {
      if(a[0]!=0)
      { for(i=0;i<l;i++)
-      printf("%d",a[i]);
+      my_printf("%d",a[i]);
       }
       else if(a[0]==0 && a[1]!=0)
       {
       for(i=1;i<l;i++)
-      printf("%d",a[i]);
+      my_printf("%d",a[i]);
       }
        else if(a[0]==0 && a[1]==0)
       {
       for(i=2;i<l;i++)
-      printf("%d",a[i]);
+      my_printf("%d",a[i]);
       }
   }
-      printf("\n%d",b);
+      my_printf("\n%d",b);
       getchar();
       getchar();
 }

@@ -3,10 +3,10 @@
 int main_bench(){
 	int N,a[500],b[500],k,i,j,t;
 	k=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	i=0;
 	while(i<N){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i=i+1;
 	}
 	i=0;
@@ -29,14 +29,14 @@ int main_bench(){
     i=0;
 	while(i<k){
                if(i<k-1){
-                 printf("%d,",b[i]);
+                 my_printf("%d,",b[i]);
                  i=i+1;
                }
                else{
-                 printf("%d",b[i]);
+                 my_printf("%d",b[i]);
                  i=i+1;
                }
     }
-    	scanf("%d",&N);
+    	my_scanf("%d",&N);
 	return 0;
 }

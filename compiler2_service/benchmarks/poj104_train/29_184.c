@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,m,i,c;
 	double s=0,sh[1000],xia[1000],sz[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	sh[0]=2;
 	xia[0]=1;
 	sh[1]=3;
@@ -19,11 +19,11 @@ int main_bench()
 	}
 	for(c=0;c<m;c++){
 		s=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++){
 			s+=sz[i];
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

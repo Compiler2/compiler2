@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *a;
 	a = (int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	double aver=sum*1.0/(n*1.0);
@@ -29,11 +29,11 @@ int main_bench()
 		if(c[i]==max)
 			b++;
 	}
-	printf("%d",a[d]);
+	my_printf("%d",a[d]);
 	if(b!=1){
 		for(i=d+1;i<n;i++){
 			if(c[i]==max)
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 		}
 	}
     return 0;

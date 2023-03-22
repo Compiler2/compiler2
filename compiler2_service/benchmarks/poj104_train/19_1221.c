@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,k,s1,a1,b1;
 	for(i=0;i<100;i++)
 	{
-		scanf("%s",temp[i]);
+		my_scanf("%s",temp[i]);
 		if(getchar()=='\n')
 		{
 			break;
@@ -25,7 +25,7 @@ int main_bench()
 			}
 				temp[j][b1]='\0';
 		}
-		printf("%s ",temp[j]);
+		my_printf("%s ",temp[j]);
 	}
 		if(strcmp(temp[i],a)==0)
 		{
@@ -36,6 +36,6 @@ int main_bench()
 			}
 				temp[i][b1]='\0';
 		}
-		printf("%s",temp[i]);
+		my_printf("%s",temp[i]);
 
 }

@@ -6,8 +6,8 @@ int main_bench()
 {
 	int i,j,temp;
 	int dis1,dis2,sum;
-	scanf("%d%d%d",&year1,&month1,&day1);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d",&year1,&month1,&day1);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 	int cmpa;
     int ru(int year);
 	if (cmpa==0) 
@@ -36,7 +36,7 @@ int main_bench()
 			sum=sum+366;
 		else
 			sum=sum+365;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 

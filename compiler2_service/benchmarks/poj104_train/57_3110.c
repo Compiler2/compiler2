@@ -4,10 +4,10 @@ int main_bench()
 {
 int n,l;
 char s1[34];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++)
 {
-scanf("%s",s1);
+my_scanf("%s",s1);
 l=strlen(s1);
 for(int j=0;j<l;j++)
 {
@@ -23,7 +23,7 @@ s1[l-2]='\0';
 s1[l-3]='\0';
 }
 }
-printf("%s\n",s1);
+my_printf("%s\n",s1);
 }
 return 0;
 }

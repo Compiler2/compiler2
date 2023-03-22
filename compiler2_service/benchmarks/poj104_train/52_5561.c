@@ -4,14 +4,14 @@ int main_bench()
 {
   int i,j,x[100],n,m;
   void px(int n,int array[100]);
-  scanf("%d%d",&n,&m);
+  my_scanf("%d%d",&n,&m);
   for(i=0;i<n;i++)
-    scanf("%d",&x[i]);
+    my_scanf("%d",&x[i]);
   for(i=1;i<=m;i++)
     px(n-1,x);
-  printf("%d",x[0]);
+  my_printf("%d",x[0]);
   for(i=1;i<n;i++)
-   printf(" %d",x[i]);
+   my_printf(" %d",x[i]);
   
   return 0;
 }

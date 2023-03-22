@@ -8,10 +8,10 @@ int main_bench()
 	k2=0;
 	m1=0;
 	m2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{
@@ -27,6 +27,6 @@ int main_bench()
 			}
 		}
 	s=(k2-k1-1)*(m2-m1-1);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

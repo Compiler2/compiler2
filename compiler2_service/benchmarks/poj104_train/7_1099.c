@@ -5,9 +5,9 @@ int main_bench()
 {
 	char s[256],b[256],c[256];
 	int i,j,k,n,m;
-	scanf("%s",&s);
-	scanf("%s",&b);
-	scanf("%s",&c);
+	my_scanf("%s",&s);
+	my_scanf("%s",&b);
+	my_scanf("%s",&c);
 	n=strlen(s)-strlen(b);
 	for(i=0;i<=n;i++)
 	{

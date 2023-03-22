@@ -56,10 +56,10 @@ int main_bench()
 	int year1, month1, day1;
 	int year2=2010, month2=12, day2=5;
 	int result = 0;
-	scanf("%d %d %d", &year1, &month1, &day1);
+	my_scanf("%d %d %d", &year1, &month1, &day1);
 if(year1==1111111111)
 {
-printf("Sat.");
+my_printf("Sat.");
 return 0;
 }
 
@@ -107,23 +107,23 @@ return 0;
 	if((year1<2010)||((year1==2010)&&(month1<12))||((year1==2010)&&(month1==12)&&(day1<5)))
 	
 		switch(h)
-		{	case 6: printf("Mon.");break;
-			case 5: printf("Tue.");break;
-			case 4: printf("Wed.");break;
-			case 3: printf("Thu.");break;
-			case 2: printf("Fri.");break;
-			case 1: printf("Sat.");break;
-			case 0: printf("Sun.");break;
+		{	case 6: my_printf("Mon.");break;
+			case 5: my_printf("Tue.");break;
+			case 4: my_printf("Wed.");break;
+			case 3: my_printf("Thu.");break;
+			case 2: my_printf("Fri.");break;
+			case 1: my_printf("Sat.");break;
+			case 0: my_printf("Sun.");break;
 		}
 		else
 		switch(h){
-			case 0: printf("Mon.");break;
-			case 1: printf("Tue.");break;
-			case 2: printf("Wed.");break;
-			case 3: printf("Thu.");break;
-			case 4: printf("Fri.");break;
-			case 5: printf("Sat.");break;
-			case 6: printf("Sun.");break;
+			case 0: my_printf("Mon.");break;
+			case 1: my_printf("Tue.");break;
+			case 2: my_printf("Wed.");break;
+			case 3: my_printf("Thu.");break;
+			case 4: my_printf("Fri.");break;
+			case 5: my_printf("Sat.");break;
+			case 6: my_printf("Sun.");break;
 		
 
 	return 0;

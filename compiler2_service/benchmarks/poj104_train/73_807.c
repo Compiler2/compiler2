@@ -5,7 +5,7 @@ main_bench()
 	int a[5][5];
 	for (int i=0;i<=4;i++)
 	for(int j=0;j<=4;j++)
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 	int min[5];
 	for (int k=0;k<=4;k++){
 		int temp=a[0][k];
@@ -26,11 +26,11 @@ main_bench()
 	{
 		if(a[b][c]==max&&a[b][c]==min[c])
 		{
-		printf("%d %d %d",b+1,c+1,a[b][c]);
+		my_printf("%d %d %d",b+1,c+1,a[b][c]);
 		l++;
 		}
 	}
 	}
 	if(l==0)
-	printf("not found");
+	my_printf("not found");
 } 

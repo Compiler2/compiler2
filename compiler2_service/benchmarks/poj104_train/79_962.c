@@ -5,8 +5,8 @@ main_bench()
 	int a[300][2],i,j,s[300]={0},k=1,x=0,p,q;
 	for(i=0;;i++)
 	{
-		scanf("%d",&p);
-		scanf("%d",&q);
+		my_scanf("%d",&p);
+		my_scanf("%d",&q);
 		if(p==0)
 		{
 			break;
@@ -22,6 +22,6 @@ main_bench()
 	{
 		for(j=2;j<=a[i][0];j++)
 			s[i]=(s[i]+a[i][1])%j;
-		printf("%d\n",s[i]+1);
+		my_printf("%d\n",s[i]+1);
 	}
 }

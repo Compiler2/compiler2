@@ -3,13 +3,13 @@
 int main_bench()
 {
 	char s1[10000],s2[10000];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	int i;
 	int len1=strlen(s1);
 	int len2=strlen(s2);
 	if(len1!=len2)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	else
 	{
@@ -32,7 +32,7 @@ int main_bench()
 				j++;
 		}
 		if(j==0)
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 }

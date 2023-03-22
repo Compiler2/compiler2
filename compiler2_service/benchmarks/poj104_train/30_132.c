@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	unsigned long sum=0;
 	for(i=1;i<=n;i++)
@@ -29,6 +29,6 @@ int main_bench()
 		}
 	}
 	}
-	printf("%ld",sum);
+	my_printf("%ld",sum);
 	return 0;
 }

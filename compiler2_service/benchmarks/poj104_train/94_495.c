@@ -12,11 +12,11 @@ int main_bench()
 	int in[100];
 	int num;
 	int tmp;
-	scanf("%d", &num);
+	my_scanf("%d", &num);
 	int count = 0;
 	while(num--)
 	{
-		scanf("%d",&tmp);
+		my_scanf("%d",&tmp);
 		if(tmp % 2)
 		{
 			in[count] = tmp;
@@ -26,9 +26,9 @@ int main_bench()
 	qsort(in,count,sizeof(int),mysort);
 	for(tmp = 0; tmp < count - 1; ++tmp)
 	{
-		printf("%d,", in[tmp]);
+		my_printf("%d,", in[tmp]);
 	} 	
-	printf("%d", in[count - 1]);
+	my_printf("%d", in[count - 1]);
 	return 0;
 
 }

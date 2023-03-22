@@ -14,15 +14,15 @@ int mystrcmp(char* str1,char* str2,int lens)
 int main_bench()
 {
     char big[50],small[50];
-    scanf("%s %s",small,big);
+    my_scanf("%s %s",small,big);
     int l=strlen(small);
     for(int k=0;k<strlen(big)-l+1;k++)
             if(mystrcmp(big+k,small,l))
             {
-                printf("%d\n",k);
+                my_printf("%d\n",k);
                 return 0;
             }
 
-    printf("String Not Found");      
+    my_printf("String Not Found");      
       
 }

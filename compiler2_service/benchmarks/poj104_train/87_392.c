@@ -6,7 +6,7 @@ int main_bench()
 	n=100;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 		if(a==0 && b==0 && c==0 && d==0 && e==0 && f==0)
 		{
 			break;
@@ -36,7 +36,7 @@ int main_bench()
 			}
 			x=d-a;
 			t=3600*x+60*y+z;
-			printf("%d\n",t);
+			my_printf("%d\n",t);
 		}
 	}
 	return 0;

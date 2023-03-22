@@ -3,15 +3,15 @@
 int main_bench()
 {
    int n;
-   scanf("%d\n",&n);
+   my_scanf("%d\n",&n);
    int a[n][n];
    int i,j;
    int e,b,c,d,s;
    for(i=0;i<n;i++){
         for(j=0;j<n;j++){
-           scanf("%d",&a[i][j]);
+           my_scanf("%d",&a[i][j]);
 }
-   scanf("\n");
+   my_scanf("\n");
 }
       for(i=0;i<n;i++){
         for(j=0;j<n;j++){
@@ -24,6 +24,6 @@ int main_bench()
 }
 }
      s=(c-e+1)*(d-b+1);
-     printf("%d",s);
+     my_printf("%d",s);
 }
 

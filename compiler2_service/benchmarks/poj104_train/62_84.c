@@ -9,9 +9,9 @@ int main_bench(){
    for(i=1;i<l;i++){
         if(a[i]!=' '||a[i]==' '&&a[i-1]!=' ') b[o++]=a[i];
         }
-    for(i=0;i<o;i++) printf("%c",b[i]);
+    for(i=0;i<o;i++) my_printf("%c",b[i]);
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

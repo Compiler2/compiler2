@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,zs,yx;
 	double x,y,cha;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&zs,&yx);
+		my_scanf("%d%d",&zs,&yx);
 		if(i==0)
 		{
 			x=100.0*yx/zs;
@@ -18,15 +18,15 @@ int main_bench()
 			cha=x-y;
 			if(cha>5)
 			{
-				printf("worse\n");
+				my_printf("worse\n");
 			}
 			else if(cha<-5)
 			{
-				printf("better\n");
+				my_printf("better\n");
 			}
 			else
 			{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	}

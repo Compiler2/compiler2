@@ -2,7 +2,7 @@
 
 int main_bench()
 {int m,n,i,f,j,k,a,b,sum,g=0,h=0;
- scanf("%d %d",&m,&n);
+ my_scanf("%d %d",&m,&n);
  for(i=m;i<=n;i++)
  {f=0;sum=0;
   for(j=2;j<i;j++)
@@ -12,9 +12,9 @@ int main_bench()
    {b=k%10;
     sum=sum*10+b;
 	 }
-    if(sum==i&&g==1) printf(",%d",i);
-    if(sum==i&&g==0) {printf("%d",i);h=1;g=1;}
+    if(sum==i&&g==1) my_printf(",%d",i);
+    if(sum==i&&g==0) {my_printf("%d",i);h=1;g=1;}
 	}
 	}
-   if(h==0) printf("no");
+   if(h==0) my_printf("no");
 }

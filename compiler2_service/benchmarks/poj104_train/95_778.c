@@ -23,8 +23,8 @@ int main_bench()
 		else;
 	}
 	if (strcmp(s1,s2)<0)
-		printf("<");
+		my_printf("<");
 	else if (strcmp(s1,s2)>0)
-		printf(">");
-	else printf("=");
+		my_printf(">");
+	else my_printf("=");
 }

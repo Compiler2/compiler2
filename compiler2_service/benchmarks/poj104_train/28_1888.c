@@ -25,22 +25,22 @@ int main_bench()
 				continue;
 			else if(x==0)
 			{
-				printf("%d",num);
+				my_printf("%d",num);
 				num=0;
 			}
 			else
 			{
-				printf(",%d",num);
+				my_printf(",%d",num);
 				num=0;
 			}
 			x++;
 		}
 	}
 	if(a[i-1]!=' '&&x!=0)
-		printf(",%d",num);
+		my_printf(",%d",num);
 	else if(a[i-1]!=' '&&x==0)
-		printf("%d",num);
+		my_printf("%d",num);
 
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

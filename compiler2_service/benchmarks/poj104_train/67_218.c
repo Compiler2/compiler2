@@ -6,23 +6,23 @@ int main_bench()
 int n,i,sum,x;
 int a[100],b[100];
 
-   scanf ("%d",&n);
+   my_scanf ("%d",&n);
 
-   scanf ("%d%d",&sum,&x);
+   my_scanf ("%d%d",&sum,&x);
 
    for (i=0;i<n-1;i++){
    
-      scanf("%d%d",&a[i],&b[i]);
+      my_scanf("%d%d",&a[i],&b[i]);
 
 	  if ((x*0.1*10/sum-b[i]*0.1*10/a[i])>0.05){
 	  
-	  printf ("worse\n");}
+	  my_printf ("worse\n");}
 	  
 	  else if  ((b[i]*0.1*10/a[i]-x*0.1*10/sum)>0.05){
 	  
-	  printf ("better\n");}
+	  my_printf ("better\n");}
 
-	  else {printf ("same\n");}
+	  else {my_printf ("same\n");}
    
    
    }

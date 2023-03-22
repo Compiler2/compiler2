@@ -12,8 +12,8 @@ int main_bench()
 {
 	int a[251],b[251],c[250]={0},i,j,k=0,x,y;
 	char m[250],n[250];
-	scanf("%s",m);
-	scanf("%s",n);
+	my_scanf("%s",m);
+	my_scanf("%s",n);
     x=strlen(m);
 	y=strlen(n);
 	for(i=0;i<x;i++)
@@ -60,7 +60,7 @@ int main_bench()
 	for(i=0;;i++)
 		if(c[i]) break;
 	for(j=i;j<=max(x,y);j++)
-		printf("%d",c[j]);
-	if(i>max(x,y)) printf("0");
-	printf("\n");
+		my_printf("%d",c[j]);
+	if(i>max(x,y)) my_printf("0");
+	my_printf("\n");
 }

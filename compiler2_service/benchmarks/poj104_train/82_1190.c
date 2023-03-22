@@ -8,9 +8,9 @@ int main_bench(){
 	for(i=0;i<100;i++){
 		zs[i]=0;
 	}
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(90<=a&&a<=140&&60<=b&&b<=90){
 			t++;
 		}
@@ -28,6 +28,6 @@ int main_bench(){
 		if(zs[i]>max)
 			max=zs[i];
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

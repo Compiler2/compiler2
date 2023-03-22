@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,la,lb,min;
 	char t;
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
 	for(i=0;i<la;i++)
@@ -26,6 +26,6 @@ int main_bench()
 		b[i]=b[min];
 		b[min]=t;
 	}
-	if(strcmp(a,b)==0) printf("YES");
-	else printf("NO");
+	if(strcmp(a,b)==0) my_printf("YES");
+	else my_printf("NO");
 }

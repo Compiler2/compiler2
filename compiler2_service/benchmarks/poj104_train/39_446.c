@@ -14,9 +14,9 @@ struct stu
 }stu[100];
 
 	int n,N,a=0,b=0,c=0,d=0,e=0,max,temp,totle=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(n=0;n<N;n++)
-		scanf("%s%d%d%s%s%d",&stu[n].name,&stu[n].qimo,&stu[n].banping,&stu[n].gb,&stu[n].xb,&stu[n].lw);
+		my_scanf("%s%d%d%s%s%d",&stu[n].name,&stu[n].qimo,&stu[n].banping,&stu[n].gb,&stu[n].xb,&stu[n].lw);
 	for(n=0;n<N;n++)
 	{
 		a=0;b=0;c=0;d=0;e=0;
@@ -40,7 +40,7 @@ struct stu
 				strcpy(stu[0].name,stu[n].name);
 			}
 
-	printf("%s\n%d\n%d\n",stu[0].name,stu[0].jxj,totle);
+	my_printf("%s\n%d\n%d\n",stu[0].name,stu[0].jxj,totle);
 	return 0;
 }
 				

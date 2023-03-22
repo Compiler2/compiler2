@@ -3,9 +3,9 @@
 int main_bench()
 {
     int a,b,suma=0,sumb=0,n,i;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-       scanf("%d %d\n",&a,&b);
+       my_scanf("%d %d\n",&a,&b);
        if(a==0 && b==1){
            suma=suma+1;}
        if(a==0 && b==2){
@@ -20,11 +20,11 @@ int main_bench()
            sumb=sumb+1;}
        if(a==b){  continue;}}
     if(suma>sumb){
-         printf("A");}
+         my_printf("A");}
     if(suma<sumb){
-         printf("B");}
+         my_printf("B");}
     if(suma==sumb){
-         printf("Tie");}
+         my_printf("Tie");}
     return 0;
 }   
        

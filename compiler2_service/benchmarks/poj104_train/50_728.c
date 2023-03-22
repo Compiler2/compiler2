@@ -19,11 +19,11 @@ int DJT(int m);
 int main_bench()
 {
     int w,i,m=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<13;i++){
 		m=DJT(i)%7;
 		if((w==1&&m==5)||(w==2&&m==4)||(w==3&&m==3)||(w==4&&m==2)||(w==5&&m==1)||(w==6&&m==0)||(w==7&&m==6)){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 return 0;

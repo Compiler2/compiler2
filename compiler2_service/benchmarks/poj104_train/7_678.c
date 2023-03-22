@@ -7,7 +7,7 @@ int main_bench(){
     int n,m,result=0;
     int count;
     gets(str);
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
     n=strlen(str);
     m=strlen(a);
     for(i=0;i<n;i++){
@@ -20,20 +20,20 @@ int main_bench(){
                                                                           }
                                                        }
                                                        if(count==m){
-                                                                    printf("%s",b);
+                                                                    my_printf("%s",b);
                                                                     result=1;
                                                                     break;
                                                        }
                                                        if(count!=m){
-                                                                    printf("%c",str[i]);
+                                                                    my_printf("%c",str[i]);
                                                        }
                                       }
-                     else printf("%c",str[i]);
+                     else my_printf("%c",str[i]);
                      if(result==1)
                      break;
                      }
     for(i=h+m;i<n;i++){
-                         printf("%c",str[i]);
+                         my_printf("%c",str[i]);
                          }
 
   

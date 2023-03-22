@@ -26,15 +26,15 @@ int main_bench(){
            
             p=s;
 			for(j=0;j<i;j++){
-				printf("%c",*p);
+				my_printf("%c",*p);
 				p++;
 			}
-			printf("%s",b);
+			my_printf("%s",b);
 			if(n-i>m){
 				for(j=0;j<m;j++){
 					p++;
 				}
-				printf("%s",p);
+				my_printf("%s",p);
 			    break;
 			}
 			else{
@@ -53,7 +53,7 @@ int main_bench(){
 	}
 
 	if(e!=m){
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	return 0;
 }

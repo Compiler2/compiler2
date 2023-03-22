@@ -19,7 +19,7 @@ int main_bench()
 			}
 			s1[m]='\0';
 			s2[m]='\0';
-			if(strcmp(s1,s2)==0)printf("%s\n",s1);
+			if(strcmp(s1,s2)==0)my_printf("%s\n",s1);
 		}
 		k++;
 		if(k=len-j)

@@ -3,15 +3,15 @@
 int m,n,a[100],b[100];
 void f()
 {
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int i,j;
 	for(i=0;i<=m-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=0;j<=n-1;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 }
 
@@ -37,10 +37,10 @@ void p(int a[],int b[])
 {
 	int i,j;
 	for(i=0;i<=m-1;i++)
-	printf("%d ",a[i]);
+	my_printf("%d ",a[i]);
 	for(j=0;j<=n-2;j++)
-		printf("%d ",b[j]);
-	printf("%d",b[n-1]);
+		my_printf("%d ",b[j]);
+	my_printf("%d",b[n-1]);
 	
 
 }

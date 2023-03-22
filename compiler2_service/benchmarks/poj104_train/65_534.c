@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int a,b,n,x[200][2],i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=0;
 	b=0;
 	for(i=0;i<n;i++){
-		scanf("%d %d",&x[i][0],&x[i][1]);
+		my_scanf("%d %d",&x[i][0],&x[i][1]);
 		if(x[i][0]==0){
 			if(x[i][1]==1) a=a+1;
 			else if(x[i][1]==2) b=b+1;
@@ -22,11 +22,11 @@ int main_bench(){
 
 	}
 	if(a>b){
-		printf("A\n");
+		my_printf("A\n");
 	}else if(a<b){
-		printf("B\n");
+		my_printf("B\n");
 		}else{
-		printf("Tie\n");
+		my_printf("Tie\n");
 		}
 
 		

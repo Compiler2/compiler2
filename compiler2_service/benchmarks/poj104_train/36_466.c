@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300],b[300];
 	int c[52]={0},d[52]={0},i,j;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;i<26;i++)
 	{
 		for(j=0;j<strlen(a);j++)
@@ -26,8 +26,8 @@ int main_bench()
 	for(i=0;i<52;i++)
 		if(c[i]!=d[i])
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
-	if(i==52) printf("YES");
+	if(i==52) my_printf("YES");
 }

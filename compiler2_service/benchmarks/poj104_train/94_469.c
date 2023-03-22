@@ -3,10 +3,10 @@
 int  main_bench(){
 int  sz[500]; 
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i;
 for(i=0;i<n;i++)
-    scanf("%d",&sz[i]);
+    my_scanf("%d",&sz[i]);
 int j=0;
 int s[500];
 for(i=0;i<n;i++){
@@ -28,7 +28,7 @@ for(int k=1;k<b;k++){
 	}
 }
 for(j=0;j<(b-1);j++)
-printf("%d,",s[j]);
-printf("%d",s[b-1]);
+my_printf("%d,",s[j]);
+my_printf("%d",s[b-1]);
 return 0;
 }

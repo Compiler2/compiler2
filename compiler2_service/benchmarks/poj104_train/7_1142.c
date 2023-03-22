@@ -7,7 +7,7 @@ char t[256]={0};
 char s[256]={0};
 char r[256]={0};
 char z[256]={0};
-scanf("%s %s %s",t,s,r);
+my_scanf("%s %s %s",t,s,r);
 a=strlen(t);
 b=strlen(s);
 for(i=0;i<=a-b;i++)
@@ -20,13 +20,13 @@ break;
 }
 if(c==0)
 {for(i=0;i<a;i++)
-printf("%c",t[i]);}
+my_printf("%c",t[i]);}
 else
 {for(i=0;i<c;i++)
-printf("%c",t[i]);
-printf("%s",r);
+my_printf("%c",t[i]);
+my_printf("%s",r);
 for(j=c+b;j<a;j++)
-printf("%c",t[j]);
+my_printf("%c",t[j]);
 }
 return 0;
 }

@@ -14,12 +14,12 @@ main_bench()
  c[1]=0; 
     t=b[0]*10+b[1];
        if(k<1)
-        printf("0\n%d\n",b[0]);
+        my_printf("0\n%d\n",b[0]);
         
    if(k==1&&t<13)
-  printf("0\n%d\n",t);
+  my_printf("0\n%d\n",t);
   else if(k==1&&t>=13)
-  printf("%d\n%d\n",t/13,t%13);
+  my_printf("%d\n%d\n",t/13,t%13);
           else if( k>1&&(10*b[0]+b[1])<13)
           { for(m=2;m<=k;m++)
            { 
@@ -28,9 +28,9 @@ main_bench()
               t=t%13;
            }
               for(m=2;m<=k;m++)
-            printf("%d",c[m]);
-            printf("\n");
-            printf("%d\n",t);}
+            my_printf("%d",c[m]);
+            my_printf("\n");
+            my_printf("%d\n",t);}
 
         else if(k>1&&(10*b[0]+b[1])>=13)
           { for(m=1,t=b[0];m<=k;m++)
@@ -40,9 +40,9 @@ main_bench()
               t=t%13;
            }
             for(m=1;m<=k;m++)
-            printf("%d",c[m]);
-            printf("\n");
-            printf("%d\n",t);}
+            my_printf("%d",c[m]);
+            my_printf("\n");
+            my_printf("%d\n",t);}
 
            else return 0;
 

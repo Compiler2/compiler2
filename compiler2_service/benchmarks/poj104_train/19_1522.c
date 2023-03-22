@@ -24,10 +24,10 @@ int main_bench()
 		if(strcmp(str[i],word1)==0)
 			strcpy(str[i],replaceword);
 	}
-	printf("%s",str[0]);
+	my_printf("%s",str[0]);
 	for(i=1;i<=j;i++)
-	   printf(" %s",str[i]);
-	printf("\n");
+	   my_printf(" %s",str[i]);
+	my_printf("\n");
 }
 
 	

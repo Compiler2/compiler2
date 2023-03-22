@@ -13,9 +13,9 @@ int main_bench()
     };
   struct stu student[100];
   int i,n,jishu,sum=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
  for(i=0;i<n;i++)
-   scanf("%s %d %d %c %c %d",student[i].a,&student[i].chj,
+   my_scanf("%s %d %d %c %c %d",student[i].a,&student[i].chj,
 &student[i].pin,&student[i].gb,&student[i].xb,&student[i].lunwen);
 for(i=0;i<n;i++)
  student[i].reward=0;
@@ -44,6 +44,6 @@ for(i=0;i<n;i++)
     {
         sum=sum+student[i].reward;
      }
-printf("%s\n%d\n%d\n",student[jishu].a,student[jishu].reward,sum);
+my_printf("%s\n%d\n%d\n",student[jishu].a,student[jishu].reward,sum);
 
 }

@@ -20,7 +20,7 @@ char num[4],idinter[11];
 gets(num);
 n=atoi(num);
 for(i=0;i<n;i++){
-   scanf("%s %d",ren[i].id,&ren[i].age);
+   my_scanf("%s %d",ren[i].id,&ren[i].age);
    }
 for(i=0;i<n;i++){
    if(ren[i].age>=60){
@@ -46,10 +46,10 @@ for(i=1;i<oldindex;i++){
       }
    }
 for(i=0;i<oldindex;i++){
-   printf("%s\n",oldren[i].idold);
+   my_printf("%s\n",oldren[i].idold);
    }
 for(i=0;i<youngindex;i++){
-    printf("%s\n",youngren[i].idyoung);
+    my_printf("%s\n",youngren[i].idyoung);
    }
    }
 

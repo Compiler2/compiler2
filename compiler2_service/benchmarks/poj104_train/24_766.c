@@ -38,11 +38,11 @@ int main_bench()
 	q=*(a+max);
 	
 	for(k=q+1;k<p;k++)
-		printf("%c",x[k]);
-	printf("\n");
+		my_printf("%c",x[k]);
+	my_printf("\n");
 	p=*(a+min+1);
 	q=*(a+min);
 	for(k=q+1;k<p;k++)
-		printf("%c",*(x+k));
-	printf("\n");
+		my_printf("%c",*(x+k));
+	my_printf("\n");
 }

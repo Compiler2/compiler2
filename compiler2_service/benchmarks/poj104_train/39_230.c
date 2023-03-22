@@ -14,11 +14,11 @@ struct people
 int main_bench()
 {
     int n, i, j;
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     int sum=0;
     for(i=1;i<=n;i++)
     {
-        scanf("%s %d %d %c %c %d", &line[i].name, &line[i].qimo, &line[i].pingyi, &line[i].gan, &line[i].xi, &line[i].lunwen);
+        my_scanf("%s %d %d %c %c %d", &line[i].name, &line[i].qimo, &line[i].pingyi, &line[i].gan, &line[i].xi, &line[i].lunwen);
         line[i].jiang=0;
         if(line[i].qimo>80&&line[i].lunwen!=0)
         {
@@ -54,6 +54,6 @@ int main_bench()
             }
         }
     }
-    printf("%s\n%d\n%d", line[1].name, line[1].jiang, sum);
+    my_printf("%s\n%d\n%d", line[1].name, line[1].jiang, sum);
     return 0;
 }

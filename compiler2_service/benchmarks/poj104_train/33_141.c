@@ -4,9 +4,9 @@ int main_bench(){
 	int n;
 	int i,k,len;
 	char zfcsz[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",zfcsz[i]);
+		my_scanf("%s",zfcsz[i]);
 	}
 	for(i=0;i<n;i++){
 		len=strlen(zfcsz[i]);
@@ -25,10 +25,10 @@ int main_bench(){
 	int m=0;
 	for(i=0;i<n;i++){
 		if(m==0){
-			printf("%s",zfcsz[i]);
+			my_printf("%s",zfcsz[i]);
 			m++;
 		}else{
-			printf("\n%s",zfcsz[i]);
+			my_printf("\n%s",zfcsz[i]);
 			m++;
 		}
 	}

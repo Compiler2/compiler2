@@ -7,10 +7,10 @@ int main_bench()
 	double n,p;
 	W=0;
 	l=0;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	getchar();
 	for(i=0;i<2;i++){
-                     scanf("%s",a[i]);
+                     my_scanf("%s",a[i]);
                      len[i]=strlen(a[i]);
                      for(j=0;j<len[i];j++){
                                            if(a[i][j]!='A'&&a[i][j]!='T'&&a[i][j]!='C'&&a[i][j]!='G'){
@@ -19,7 +19,7 @@ int main_bench()
                                            }
     }
     if(len[0]!=len[1]||W!=0){
-                             printf("error");
+                             my_printf("error");
                              return 0;
                              }
     else{
@@ -31,10 +31,10 @@ int main_bench()
          }
     p=1.0*l/len[0];
     if(p>n){
-            printf("yes");
+            my_printf("yes");
             }else{
-                  printf("no");
+                  my_printf("no");
                   }
-scanf("%d",&o);
+my_scanf("%d",&o);
 return 0;
 }

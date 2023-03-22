@@ -33,6 +33,6 @@ int main_bench()
 
 
 	for(i=j;i>0;i--)
-		printf("%s ",t[i]);
-	printf("%s\n",t[0]);
+		my_printf("%s ",t[i]);
+	my_printf("%s\n",t[0]);
 }

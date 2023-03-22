@@ -7,10 +7,10 @@ int main_bench()
      int a,b,c;
      }tope[1000];
    int days[80]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%d%d%d",&tope[i].a,&tope[i].b,&tope[i].c);
+      my_scanf("%d%d%d",&tope[i].a,&tope[i].b,&tope[i].c);
    }
    for(i=0;i<n;i++)
    {
@@ -32,11 +32,11 @@ int main_bench()
          }
          if(t%7==0)
          {
-            printf("YES\n");
+            my_printf("YES\n");
           }
          if(t%7!=0)
          {
-            printf("NO\n");
+            my_printf("NO\n");
           }
      }
       return 0;

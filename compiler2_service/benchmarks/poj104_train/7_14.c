@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[300],b[300],c[300];
 	int i,j,n=0,lena,lenb;
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
 	lena=strlen(a);
 	lenb=strlen(b);
 	for (i=0;i<lena;i++)
@@ -29,5 +29,5 @@ int main_bench()
 			a[i+j]=c[j];
 		}
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 }

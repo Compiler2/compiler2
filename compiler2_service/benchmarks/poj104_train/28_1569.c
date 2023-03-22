@@ -22,12 +22,12 @@ int main_bench(){
 	m--;
 	for(i=0;i<=m;i++){
 		if(i==0){
-	printf("%d",l[i]);
+	my_printf("%d",l[i]);
 		}else{
-			printf(",%d",l[i]);
+			my_printf(",%d",l[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

@@ -15,15 +15,15 @@ int main_bench()
 	len=strlen(*(c+i));
 	result=1;
 	if(start(*(c[i]+0))==0)
-		printf("0\n");
+		my_printf("0\n");
 	if(start(*(c[i]+0))==1){
 		for(j=0;j<len;j++){
 		result*=sym(*(c[i]+j));
 		}
 		if(result==1){
-		printf("1\n");
+		my_printf("1\n");
 		}else{
-		printf("0\n");
+		my_printf("0\n");
 		}
 	}
 	}

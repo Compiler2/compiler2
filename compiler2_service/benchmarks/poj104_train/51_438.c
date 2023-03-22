@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,i,j,s=0,num[500],k,m,sum,l;
 	char a[500][10]={'\0'},b[550]={'\0'},c[500][10]={'\0'};
-	scanf("%d",&n);
-	scanf("%s",b);
+	my_scanf("%d",&n);
+	my_scanf("%s",b);
 	sum=strlen(b);
 	for(i=0;i<500;i++) num[i]=1;
 	for(i=0;i<=sum-n;i++)
@@ -39,16 +39,16 @@ int main_bench()
 	m=0;
 	for(i=1;i<=s;i++)
 	{if(num[i]>num[m]) m=i;}
-	if(num[m]==1) printf("NO");
+	if(num[m]==1) my_printf("NO");
 	else
 	{
-		printf("%d\n",num[m]);
+		my_printf("%d\n",num[m]);
 		for(i=0;i<=s;i++)
 		{
 			if(num[i]==num[m])
 			{
-				for(j=0;j<n;j++) printf("%c",c[i][j]);
-				printf("\n");
+				for(j=0;j<n;j++) my_printf("%c",c[i][j]);
+				my_printf("\n");
 			}
 		}
 	}

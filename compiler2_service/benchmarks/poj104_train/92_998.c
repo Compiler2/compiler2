@@ -25,13 +25,13 @@ int main_bench()
    int i,n;
    int  sum,amax,bmax,amin,bmin; 
    
-   while((scanf("%d",&n))&&(n!=0))
+   while((my_scanf("%d",&n))&&(n!=0))
    { 
      
           for(i=0;i<n;i++)  
-          scanf("%d",&b[i]); 
+          my_scanf("%d",&b[i]); 
           for(i=0;i<n;i++)
-          scanf("%d",&a[i]);
+          my_scanf("%d",&a[i]);
         
           bubble_sort(a,n);
           bubble_sort(b,n);
@@ -62,7 +62,7 @@ int main_bench()
  
    
       
-    printf("%d\n",sum);     
+    my_printf("%d\n",sum);     
     }
 
 return 0; 

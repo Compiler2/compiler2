@@ -7,12 +7,12 @@ int main_bench()
 	int	i;
 	int	j;
 	int	k;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	p = (char**)malloc(sizeof(char*) * n);
 	for (i=0; i<n; i++)
 		p[i] = (char*) malloc(sizeof(char) * 21);
 	for (i=0; i<n; i++)
-		scanf("%s", p[i]);
+		my_scanf("%s", p[i]);
 	for (i=0; i<n; i++)
 	{
 		k = 1;
@@ -32,7 +32,7 @@ int main_bench()
 				}
 		}
 		else k = 0;
-		printf("%s", k == 1 ? "yes\n" : "no\n");
+		my_printf("%s", k == 1 ? "yes\n" : "no\n");
 	}
 	return 0;
 }

@@ -16,7 +16,7 @@ int main_bench(){
 			}
 	}
 	for(m=0;m<n;m++){
-                printf("%c",c[m]);
+                my_printf("%c",c[m]);
 }
 	return 0;
 }

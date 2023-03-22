@@ -7,8 +7,8 @@ int main_bench()
 	int ds1,ds2;
 	int sum=0;
 	int i;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	for(i=y1;i<y2;i++)
 	{
 		if((i%100!=0&&i%4==0)||(i%400==0))
@@ -20,7 +20,7 @@ int main_bench()
 	ds1=days(y1,m1,d1);
 	ds2=days(y2,m2,d2);
 	sum=sum+ds2-ds1;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 int days(int x,int y,int z)

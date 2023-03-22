@@ -16,7 +16,7 @@ int main_bench()
         }
         else if(cool==0)
         {
-            printf("\n");
+            my_printf("\n");
             cool=1;
         }
     }

@@ -11,17 +11,17 @@ int main_bench()
 	int num;
 	int max;
 	int k;
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	while (c=getchar()==',')
 		{
 		i=i+1;
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		}
-	scanf("%d",&b[j]);
+	my_scanf("%d",&b[j]);
 	while (c=getchar()==',')
 	{
 		j=j+1;
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 	num=j+1;
 	for(k=0;k<1000;k++)
@@ -38,6 +38,6 @@ int main_bench()
 		if(mark[k]>max)
 			max=mark[k];
 	}
-	printf("%d %d",num,max);
+	my_printf("%d %d",num,max);
 	return 0;
 }

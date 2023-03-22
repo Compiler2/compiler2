@@ -4,15 +4,15 @@ int main_bench()
 {
     char a[501]={'\0'},b[501]={'\0'};
 	double n;
-	scanf("%lf",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int x,y;
 	x=strlen(a);
 	y=strlen(b);
 	if(x!=y)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -26,7 +26,7 @@ int main_bench()
 			}
 			if( (a[i]!='A' && a[i]!='T' && a[i]!='C' && a[i]!='G') || (b[i]!='A' && b[i]!='T' && b[i]!='C' && b[i]!='G') )
 			{
-				printf("error");
+				my_printf("error");
 				so=100;
 				break;
 			}
@@ -36,11 +36,11 @@ int main_bench()
 		    rate=count*1.0/x;
 		    if(rate>n)
 			{
-			    printf("yes");
+			    my_printf("yes");
 			}
 		    else 
 			{
-		    	printf("no");
+		    	my_printf("no");
 			}
 		}
 	}

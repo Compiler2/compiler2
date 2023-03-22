@@ -5,7 +5,7 @@ int main_bench()
     int n,i,age,max,t,numold,numyoung;
     char id[101][10],young[101][10];
     int x[101],r[101];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<101;i++) 
     {
         x[i]=0;
@@ -14,7 +14,7 @@ int main_bench()
     numold=0;numyoung=0;
     for (i=1;i<=n;i++)
     {
-        scanf("%s %d",id[i],&age);
+        my_scanf("%s %d",id[i],&age);
         if (age>=60) 
         {
            x[i]=age;
@@ -38,6 +38,6 @@ int main_bench()
         r[i]=max;
         max=t;
         }
-    for (i=1;i<=numold;i++) printf("%s\n",id[r[i]]); 
-    for (i=1;i<=numyoung;i++) printf("%s\n",young[i]);
+    for (i=1;i<=numold;i++) my_printf("%s\n",id[r[i]]); 
+    for (i=1;i<=numyoung;i++) my_printf("%s\n",young[i]);
     }

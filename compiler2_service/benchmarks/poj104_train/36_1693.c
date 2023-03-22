@@ -4,13 +4,13 @@ int main_bench()
 {
     char a[1000],b[1000];
     int i,la,lb,A[1000]={0},B[1000]={0};
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     la=strlen(a);
     lb=strlen(b);
     if(la!=lb)
     {
-        printf("NO");
+        my_printf("NO");
         return 0;
     }
     else
@@ -25,12 +25,12 @@ int main_bench()
     {
         if(A[i]!=B[i])
         {
-        printf("NO");
+        my_printf("NO");
         break;
         }
         if(i==999)
         {
-            printf("YES");
+            my_printf("YES");
             break;
         }
     }

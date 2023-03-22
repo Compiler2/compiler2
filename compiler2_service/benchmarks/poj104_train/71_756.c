@@ -35,9 +35,9 @@ int main_bench(){
     int n,i,y,m1,m2;
 	int d1,d2;
 	int cha;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	    scanf("%d%d%d",&y,&m1,&m2);
+	    my_scanf("%d%d%d",&y,&m1,&m2);
 		d1=DiJiTian(y,m1,1);
 		d2=DiJiTian(y,m2,1);
 		if((d1-d2)<0)
@@ -45,9 +45,9 @@ int main_bench(){
 		else
 			cha=d1-d2;
 		if(cha%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else 
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 return 0;
 }

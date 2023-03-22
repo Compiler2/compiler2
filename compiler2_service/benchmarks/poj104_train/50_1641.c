@@ -44,14 +44,14 @@ int main_bench()
 {
 	int i;
 	int w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		int day;
 		day=fri(i,w);
 		if(day==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

@@ -10,9 +10,9 @@
 
 int main_bench(){
     int n,i,a[100],e,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0; i<n; i++) {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     if (n%2==0) {
         m=n/2;
@@ -24,9 +24,9 @@ int main_bench(){
         a[i]=a[n-i-1];
         a[n-i-1]=e;
             }
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for (i=1; i<n; i++) {
-        printf(" %d",a[i]);
+        my_printf(" %d",a[i]);
     }
     
     

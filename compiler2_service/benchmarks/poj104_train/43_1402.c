@@ -3,7 +3,7 @@
 main_bench()
 {
 	int a,b,n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	a=3;
 	
@@ -21,7 +21,7 @@ main_bench()
 		else j=j+2;}
 		
 		if(j*j>b)
-          printf("%d %d\n",a,b);
+          my_printf("%d %d\n",a,b);
 		}
 	
 		a=a+2;}

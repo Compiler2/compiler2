@@ -12,5 +12,5 @@ int main_bench()
       *(p2+i)=*(p1+i)+*(p1+i+1);
 	if(i=k-1)
 		*(p2+i)=*(p1+i)+t;
-	printf("%s",p2);
+	my_printf("%s",p2);
 }

@@ -20,10 +20,10 @@ int main_bench()
 	}
     n=strcmp(s,t);
 	if(n>0)
-		printf(">\n");
+		my_printf(">\n");
 	if(n<0)
-		printf("<\n");
+		my_printf("<\n");
 	else
-		printf("=\n");
+		my_printf("=\n");
 	return 0;
 }

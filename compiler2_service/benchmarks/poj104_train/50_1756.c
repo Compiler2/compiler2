@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,a,b,i,sz[12];
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	sz[0]=13;
 	sz[1]=44;
 	sz[2]=72;
@@ -22,7 +22,7 @@ int main_bench()
 		b=a%7;
 		if(b==5)
 		{
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

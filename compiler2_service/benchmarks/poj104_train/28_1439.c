@@ -14,9 +14,9 @@ int main_bench(){
 	}
     for(i=0;i<300;i++){
 		if(g[i+1]!=0)
-		   printf("%d,",g[i]);
+		   my_printf("%d,",g[i]);
 	    else{
-		   printf("%d",g[i]);
+		   my_printf("%d",g[i]);
 		   break;
 	    }
     }	        

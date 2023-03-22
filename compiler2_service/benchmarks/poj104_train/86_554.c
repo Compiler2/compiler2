@@ -2,13 +2,13 @@
 
 int main_bench(){
     int n,sa[100000],sb[10000],i,j,x;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
    
     for(i=0;i<n;i++){
            
-            scanf("%d",&x);
+            my_scanf("%d",&x);
            
-            for(j=0;j<x;j++){scanf("%d",&sa[j]);}
+            for(j=0;j<x;j++){my_scanf("%d",&sa[j]);}
             sb[i]=60;
             for(j=0;j<x;j++){
                     sb[i]-=3;
@@ -18,7 +18,7 @@ int main_bench(){
                     }
             }
             for(i=0;i<n;i++){
-                    printf("%d\n",sb[i]);
+                    my_printf("%d\n",sb[i]);
                     }
     
     return 0;

@@ -3,8 +3,8 @@
 int year[2],month[2],day[2],i,days=0,k=0;
 int main_bench()
 {
-    scanf("%d%d%d",&year[0],&month[0],&day[0]);
-    scanf("%d%d%d",&year[1],&month[1],&day[1]);
+    my_scanf("%d%d%d",&year[0],&month[0],&day[0]);
+    my_scanf("%d%d%d",&year[1],&month[1],&day[1]);
     for (i=year[0]+1;i<year[1];i++)
     {
         if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
@@ -73,6 +73,6 @@ int main_bench()
                       }
            }
            else days+=day[1]-day[0];
-    printf("%d",days);
+    my_printf("%d",days);
     return 0;
 }            

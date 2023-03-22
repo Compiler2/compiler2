@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,maxlen=0,minlen,max=0,min=0;
 	char a[999][50]={0};
-	scanf("%s",a[0]);
+	my_scanf("%s",a[0]);
 	for(i=1;getchar()!='\n';i++)
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	minlen=strlen(a[0]);
 	for(j=0;j<i;j++)
 	{
@@ -21,5 +21,5 @@ int main_bench()
 			min=j;
 		}
 	}
-	printf("%s\n%s",a[max],a[min]);
+	my_printf("%s\n%s",a[max],a[min]);
 }

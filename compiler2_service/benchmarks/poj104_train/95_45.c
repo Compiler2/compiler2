@@ -49,6 +49,6 @@ int main_bench()
 	if(a>0)chu='>';
 	else if(a<0)chu='<';
 	else chu='=';		
-	printf("%c\n",chu);
+	my_printf("%c\n",chu);
 	return 0;
 }

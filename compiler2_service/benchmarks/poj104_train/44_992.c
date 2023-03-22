@@ -6,7 +6,7 @@ main_bench()
   int a,c,i,b[6];
   for(i=0;i<6;i++)
   {
-	 scanf("%d",&a);
+	 my_scanf("%d",&a);
 	 c=0;
      while(a)
 	 {
@@ -17,5 +17,5 @@ main_bench()
   }
   
   for(i=0;i<6;i++)
-	  printf("%d\n",b[i]);
+	  my_printf("%d\n",b[i]);
 }

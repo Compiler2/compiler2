@@ -24,8 +24,8 @@ int main_bench()
                 strcpy(t[j],b);
       }
      for(int x=0;x<k;x++)
-         printf("%s ",t[x]);
-     printf("%s",t[k]);
+         my_printf("%s ",t[x]);
+     my_printf("%s",t[k]);
      return 0;
 }
          

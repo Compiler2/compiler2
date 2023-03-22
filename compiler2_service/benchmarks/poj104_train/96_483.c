@@ -13,7 +13,7 @@ main_bench()
          a[i]=c[i]-'0';           
       } 
       
-     if(i==1){printf("0");printf("\n%d",a[0]);  }
+     if(i==1){my_printf("0");my_printf("\n%d",a[0]);  }
       else
       {
      for(j=0;j<i-1;j++)
@@ -32,13 +32,13 @@ main_bench()
      if(d[0]=='0')
      {
            if(d[1]=='\0')
-           {printf("%c",d[0]);}
+           {my_printf("%c",d[0]);}
             else
             {
              for(t=1;d[t]!='\0';t++)
               {
       
-                    printf("%c",d[t]);           
+                    my_printf("%c",d[t]);           
                    }          
             }
             }   
@@ -47,10 +47,10 @@ main_bench()
      for(t=0;d[t]!='\0';t++)
      {
       
-        printf("%c",d[t]);           
+        my_printf("%c",d[t]);           
      }                    
      }
-     printf("\n%d",a[j]); 
+     my_printf("\n%d",a[j]); 
 }   
      
 getchar();  

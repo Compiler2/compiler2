@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,g,s,b,q,w,judge=0,j,count,temp;
-	scanf("%d%d", &m, &n);
+	my_scanf("%d%d", &m, &n);
     for(i=(m-1-(m%2));i<=n;i+=2)
 	{
 		w=i/10000;
@@ -26,12 +26,12 @@ int main_bench()
 			if(count==2)
 			{
 				judge+=1;
-				if(judge==1) printf("%d", i);
-				else printf(",%d", i);
+				if(judge==1) my_printf("%d", i);
+				else my_printf(",%d", i);
 			}
 		}
 	}
-	if(judge==0) printf("no");
+	if(judge==0) my_printf("no");
 	return 0;
 }
 

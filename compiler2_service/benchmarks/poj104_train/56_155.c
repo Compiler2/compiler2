@@ -14,6 +14,6 @@ int main_bench()
 	n=i;
 	char s[10];
 	for(i=0;i<n;i++)s[i]=str[n-i-1];
-	for(i=0;i<n;i++)printf("%c",s[i]);
+	for(i=0;i<n;i++)my_printf("%c",s[i]);
     return 0;
 }

@@ -5,14 +5,14 @@ int main_bench()
     char a[100];
     char b[100];
     int n;
-    scanf("%s",a);
+    my_scanf("%s",a);
     n=strlen(a);
     int i,j,sum,mod,k;
     if(n==1)
     {
       mod=a[0]-'0';      
-     printf("0\n");     
-     printf("%d\n",mod);
+     my_printf("0\n");     
+     my_printf("%d\n",mod);
     }
     else
     {
@@ -22,8 +22,8 @@ int main_bench()
     j=0;
     if(n==2&sum<=12)
     {
-      printf("0\n");     
-     printf("%d\n",sum);
+      my_printf("0\n");     
+     my_printf("%d\n",sum);
      }
      else
      {
@@ -49,8 +49,8 @@ int main_bench()
            b[j]=b[j+2];
            b[n-1]='\0';
            }
-   printf("%s\n",b);     
-   printf("%d\n",mod);
+   my_printf("%s\n",b);     
+   my_printf("%d\n",mod);
 }
 }
    getchar();

@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[60],b[60],c[60];
 	int i,j,k,m,n;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	m=strlen(a);
 	n=strlen(b);
 	for(i=0;i<n;i++)
@@ -15,7 +15,7 @@ int main_bench()
 	    k=0;
 	
 	}
-    printf("%d",i);
+    my_printf("%d",i);
 	
 
 

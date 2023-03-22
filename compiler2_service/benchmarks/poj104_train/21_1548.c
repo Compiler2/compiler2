@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,count=0;
 	double a[1000]={0.0},total=0.0,average,max=-1.0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%lf", &a[i]);
+		my_scanf("%lf", &a[i]);
 		total+=a[i];
 	}
 	average=total/n;
@@ -21,13 +21,13 @@ int main_bench()
 		{
 			if(count==0)
 			{
-				printf("%.0f", a[i]);
+				my_printf("%.0f", a[i]);
 				count+=1;
 			}
-			else printf(",%.0f", a[i]);
+			else my_printf(",%.0f", a[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

@@ -20,7 +20,7 @@ void print_bigint(int*a,int len)
 	}
 	for(i=k;i>=0;i--)
 	{
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 	}
 }
 int add_bigint(int*a,int alen,int*b,int blen,int*c)
@@ -49,7 +49,7 @@ int main_bench()
 	char s1[256],s2[256];
 	int a[256],b[256],c[256];
 	int alen,blen,clen;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	alen=str2bigint(s1,a);
 	blen=str2bigint(s2,b);
 	clen=add_bigint(a,alen,b,blen,c);

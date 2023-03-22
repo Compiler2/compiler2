@@ -4,9 +4,9 @@ int main_bench()
 {
 	
 	char S[100],sub[100],replace[100];
-	scanf("%s",S);
-	scanf("%s",sub);
-	scanf("%s",replace);
+	my_scanf("%s",S);
+	my_scanf("%s",sub);
+	my_scanf("%s",replace);
 	int a,b,c,i,j;
 	a=strlen(S);
 	b=strlen(sub);
@@ -24,16 +24,16 @@ int main_bench()
 			{
 				m=i;
 				for(k=0;k<m;k++)
-					printf("%c",S[k]);
-				printf("%s",replace);
+					my_printf("%c",S[k]);
+				my_printf("%s",replace);
 				for(k=i+b;k<a;k++)
-					printf("%c",S[k]);
+					my_printf("%c",S[k]);
 				break;
 			}
 		}
 	}
 	if(i==a)
-		printf("%s",S);
+		my_printf("%s",S);
 }
 
 

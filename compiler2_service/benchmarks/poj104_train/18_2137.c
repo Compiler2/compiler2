@@ -26,13 +26,13 @@ void move(int a[][100],int l)
 int main_bench()
 {
 	int i,j,k,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		int l,a[100][100]={0},sum=0,x,y;
 		for(j=0;j<n;j++)
 			for(k=0;k<n;k++)
-				scanf("%d",&a[j][k]);
+				my_scanf("%d",&a[j][k]);
 		for(l=n-1;l>=0;l--)
 		{
 			for(x=0;x<l+1;x++)
@@ -50,6 +50,6 @@ int main_bench()
 			sum+=a[1][1];	
 			move(a,l);
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 }

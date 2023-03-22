@@ -6,7 +6,7 @@ int main_bench()
 	
 	char (*p)[10000];
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(p=ch;p<=ch+n-1;p++)
 	{
 		gets(*p);
@@ -36,10 +36,10 @@ int main_bench()
 		{  count=0;
            int temp=*point-'a';
            p_num=num+temp;
-           if(*p_num==1){printf("%c",'a'+p_num-num);count++;break;}
-		}if(count==0)printf("no");
+           if(*p_num==1){my_printf("%c",'a'+p_num-num);count++;break;}
+		}if(count==0)my_printf("no");
 		   
 		   
-		printf("\n");
+		my_printf("\n");
 	}
 }

@@ -5,7 +5,7 @@ main_bench()
 	int count[500],m=0,al;
 	char a[500],b[500],c[500];
 	int n,i,j,k;
-	scanf("%d\n%s",&n,a);
+	my_scanf("%d\n%s",&n,a);
 	for(i=0;i<500-n;i++)
 	{
 		count[i]=0;
@@ -39,10 +39,10 @@ main_bench()
 	}
 	
 	if(count[m]==1)
-	printf("NO");
+	my_printf("NO");
 	else
 	{
-	printf("%d\n",count[m]);
+	my_printf("%d\n",count[m]);
 	for(i=0;i<=al-n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -51,7 +51,7 @@ main_bench()
 		}
 		b[n]='\0';
 		if(count[i]==count[m])
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 	}
 } 

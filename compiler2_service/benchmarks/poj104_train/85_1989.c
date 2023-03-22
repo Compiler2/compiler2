@@ -6,10 +6,10 @@ int main_bench()
 
 {
     int n,i,j,point,flag;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 char*lab=(char*)malloc(n*20*sizeof(char));
 for(i=0;i<n;i++)
-    scanf("%s",lab+i*20);
+    my_scanf("%s",lab+i*20);
 
 for(i=0;i<n;i++)
 {
@@ -35,9 +35,9 @@ for(i=0;i<n;i++)
         }
     
      if(flag)
-        printf("no\n");
+        my_printf("no\n");
      else
-        printf("yes\n");
+        my_printf("yes\n");
 }
 return 0;
 }

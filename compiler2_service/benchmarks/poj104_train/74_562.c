@@ -10,7 +10,7 @@ int f(int a,int b)
 int main_bench()
 {
  int m,n,i,j,t=0;
- scanf("%d %d",&m,&n);
+ my_scanf("%d %d",&m,&n);
  for(i=m;i<=n;i++)
    {
     if (i==f(i,0)&&i>2)
@@ -22,14 +22,14 @@ int main_bench()
        {
         if(t==0)
          {
-          printf ("%d",i);
+          my_printf ("%d",i);
           t=1;
           }
         else
-          printf (",%d",i);
+          my_printf (",%d",i);
        }
      }
     }
 if(t==0)
-  printf ("no\n");
+  my_printf ("no\n");
 }

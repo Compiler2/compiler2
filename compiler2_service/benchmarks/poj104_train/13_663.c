@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int n,i,a[100000],sum=0,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	if(n==1)
 	{
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	}
 	else
 	{
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 		for(i=1;i<=n-1;i++)
 		{
 			sum=0;
@@ -27,7 +27,7 @@ int main_bench()
 			}
 			if(sum==0)
 			{
-				printf(" %d",a[i]);
+				my_printf(" %d",a[i]);
 			}
 		}
 	}

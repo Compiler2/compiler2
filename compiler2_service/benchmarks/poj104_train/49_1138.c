@@ -31,8 +31,8 @@ int main_bench()
 			if(y==i/2)
 			{
 				for(x=j;x<=p;x++)
-					printf("%c",c[x]);
-				printf("\n");
+					my_printf("%c",c[x]);
+				my_printf("\n");
 			}
 		}
 	}

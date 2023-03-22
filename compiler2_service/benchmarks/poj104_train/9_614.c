@@ -5,11 +5,11 @@ main_bench()
  int n,oversix=0,undersix=0,osix[100],usix[100],t;
  char noosix[100][100]={0},nousix[100][100]={0},a[100][100]={0};
  char s[100][100]={0};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int b[100];
  for(int i=0;i<n;i++)
             {
-             scanf("%s %d",a[i],&b[i]);           
+             my_scanf("%s %d",a[i],&b[i]);           
             }
  for(int i=0;i<n;i++)
             {
@@ -38,9 +38,9 @@ main_bench()
                                strcpy(noosix[i+1],s[i]);       
                               }
  for(int i=0;i<oversix;i++)
- printf("%s\n",noosix[i]);
+ my_printf("%s\n",noosix[i]);
  for(int i=0;i<undersix;i++)
- printf("%s\n",nousix[i]);
+ my_printf("%s\n",nousix[i]);
  getchar();
  getchar();   
 }

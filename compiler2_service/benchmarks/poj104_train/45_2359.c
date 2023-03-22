@@ -15,7 +15,7 @@ int dingwei(char s[],char w[])
 main_bench()
 {
 	char c1[51]={'\0'},c2[51]={'\0'};
-	scanf("%s%s",c1,c2);
-	printf("%d\n",dingwei(c1,c2));
+	my_scanf("%s%s",c1,c2);
+	my_printf("%d\n",dingwei(c1,c2));
 	return 0;
 }

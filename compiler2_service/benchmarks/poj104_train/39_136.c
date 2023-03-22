@@ -13,9 +13,9 @@ int main_bench()
 	}stu[101],temp;
     int sch[101],a;
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].ta,&stu[i].ca,&stu[i].l,&stu[i].w,&stu[i].p);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].ta,&stu[i].ca,&stu[i].l,&stu[i].w,&stu[i].p);
 	for(i=0;i<n;i++)
 		sch[i]=0;
 	for(i=0;i<n;i++)
@@ -46,8 +46,8 @@ int main_bench()
 	for(i=0,j=0;i<n;i++)
 		j=j+sch[i];
 
-	printf("%s\n",stu[0].name);
-	printf("%d\n",sch[0]);
-	printf("%d\n",j);
+	my_printf("%s\n",stu[0].name);
+	my_printf("%d\n",sch[0]);
+	my_printf("%d\n",j);
 }
 

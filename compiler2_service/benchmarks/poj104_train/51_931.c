@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,a[500],h,i,o,z,m,b,l,t,f=0,u,k=0;
 	char c[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(c);
 	for(h=0;h<500;h++)
@@ -37,18 +37,18 @@ int main_bench()
 		}
 	}
 	if(z==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d",z);
+		my_printf("%d",z);
 		for(m=0;m<=t;m++)
 		{
 			if (a[m]==z)
 			{
-				printf("\n%c",c[m]);
+				my_printf("\n%c",c[m]);
 				for(u=1;u<=n-1;u++)
 				{
-					printf("%c",c[m+u]);
+					my_printf("%c",c[m+u]);
 				}
 			}
 		}

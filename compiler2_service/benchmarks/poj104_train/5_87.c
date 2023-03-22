@@ -6,14 +6,14 @@ int main_bench()
 	double p;
 	char a[501],b[501];
 	char c[5]="ATCG";
-	scanf("%lf",&p);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&p);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<strlen(a);i++)
 	{
 		if(a[i]!=c[0]&&a[i]!=c[1]&&a[i]!=c[2]&&a[i]!=c[3])
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -21,13 +21,13 @@ int main_bench()
 	{
 		if(a[i]!=c[0]&&a[i]!=c[1]&&a[i]!=c[2]&&a[i]!=c[3])
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
 	if(strlen(a)!=strlen(b))
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;i<strlen(a);i++)
@@ -39,11 +39,11 @@ int main_bench()
 	}
 	if(p<(double)time/strlen(a)||p==(double)time/strlen(a))
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

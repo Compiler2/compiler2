@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,max,l,r,s[100]={0},z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&l,&r);
+		my_scanf("%d%d",&l,&r);
 		if(l>=90&&l<=140&&r>=60&&r<=90){
 			s[z]++;
 		}else{
@@ -19,6 +19,6 @@ int main_bench(){
 			max=s[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

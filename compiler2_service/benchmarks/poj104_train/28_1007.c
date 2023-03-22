@@ -15,10 +15,10 @@ int main_bench()
          s++;}
          }
     for(i=0;i<s;i++){
-       printf("%d,",re[i]);
+       my_printf("%d,",re[i]);
        }
-    printf("%d",re[s]);
+    my_printf("%d",re[s]);
     int a;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     return 0;
 }

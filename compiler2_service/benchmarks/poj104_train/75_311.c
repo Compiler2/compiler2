@@ -7,13 +7,13 @@ int main_bench()
 	
    char c;
    do{
-       scanf("%d",&a[i]);
+       my_scanf("%d",&a[i]);
 	   i++;
        t++; 
    }while((c=getchar())!='\n');
    i=0;
    do{
-       scanf("%d",&b[i]);
+       my_scanf("%d",&b[i]);
 	   i++;
    }while((c=getchar())!='\n');
    min=a[0];
@@ -33,7 +33,7 @@ int main_bench()
 	   for(i=min;i<max;i++)
 		   if(n[i]>m) m=n[i];
 
-		printf("%d %d",t,m);
+		my_printf("%d %d",t,m);
 		return 0;
     
 }

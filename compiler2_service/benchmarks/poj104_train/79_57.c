@@ -30,9 +30,9 @@ int main_bench()
 	while(1)
 	{
 	int m,n;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(m>0&&n>0)
-		printf("%d\n",f(m,n));
+		my_printf("%d\n",f(m,n));
 	else
 		break;
 	}

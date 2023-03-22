@@ -6,10 +6,10 @@
  int n ,i;
  int x ,q;
 
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
     {
-       scanf("%d",&x);
+       my_scanf("%d",&x);
 
        q=(x>a)+(x>b)  ;
 
@@ -27,7 +27,7 @@
 
        }
     }
-  printf("%d\n%d",a,b);
+  my_printf("%d\n%d",a,b);
 
   
   return 0;

@@ -5,7 +5,7 @@ main_bench()
        int m,n;
   int a[10][10]={0};
   int b[10][10]={0};
-  scanf ("%d%d",&m,&n);
+  my_scanf ("%d%d",&m,&n);
   a[4][4]=m;
   int i=0,j=0,k ;
   int x,y;
@@ -37,18 +37,18 @@ main_bench()
             if (a[x][y]>0) 
             {
                 if (y<8)                       
-                printf ("%d ",a[x][y]);
+                my_printf ("%d ",a[x][y]);
                else  
-               printf ("%d",a[x][y]);
+               my_printf ("%d",a[x][y]);
             }
             else 
             if (y<8)                       
-                printf ("0 ",a[x][y]);
+                my_printf ("0 ",a[x][y]);
                else  
-               printf ("0",a[x][y]);
+               my_printf ("0",a[x][y]);
            
         }
-         printf ("\n");
+         my_printf ("\n");
       }
 
 

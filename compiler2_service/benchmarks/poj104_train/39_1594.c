@@ -6,10 +6,10 @@ int main_bench()
 	int n, qimo[100], banyi[100], lunwen[100];
 	char name[100][20], xuegan[100], xibu[100];
 	int sum[100], a, b = 0, i, result = 0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++){
 		sum[i] = 0;
-		scanf("%s %d %d %c %c %d", name[i], &qimo[i], &banyi[i], &xuegan[i], &xibu[i], &lunwen[i]);
+		my_scanf("%s %d %d %c %c %d", name[i], &qimo[i], &banyi[i], &xuegan[i], &xibu[i], &lunwen[i]);
 	}
 	for(i = 0; i < n; i++){
 		if((qimo[i] > 80)&&(lunwen[i] != 0)){
@@ -35,6 +35,6 @@ int main_bench()
 			a = i;
 		}
 	}
-	printf("%s\n%d\n%d\n", name[a], b, result);
+	my_printf("%s\n%d\n%d\n", name[a], b, result);
 	return 0;
 }

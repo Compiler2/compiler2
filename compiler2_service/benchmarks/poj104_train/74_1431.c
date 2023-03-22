@@ -48,7 +48,7 @@ main_bench()
       int m,n;
       int s=0;
       
-      scanf("%d%d",&m,&n);
+      my_scanf("%d%d",&m,&n);
       while  (m<=n)
       {
            if  (sushu(m))
@@ -56,16 +56,16 @@ main_bench()
                if  (huiwenshu(m))
                {
                    if (s==0)
-                   {printf("%d",m);s++;}
+                   {my_printf("%d",m);s++;}
                    else
-                   printf(",%d",m);
+                   my_printf(",%d",m);
                }
            }
            m++;
       }
       
       if  (s==0)
-      printf("no");
+      my_printf("no");
 
 }
       

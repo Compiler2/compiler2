@@ -4,7 +4,7 @@ main_bench()
 {
       int i,count=0,j,l;            
       char string[1000];
-      scanf("%s",string);
+      my_scanf("%s",string);
       l=strlen(string);
       for(i=0;i<l;i++)
       {
@@ -19,12 +19,12 @@ main_bench()
              count++;
           else
           {
-             printf("(%c,%d)",s,count);
+             my_printf("(%c,%d)",s,count);
              s = string[i];
              count=1;
           }
       }
-      printf("(%c,%d)",s,count);                                                              
+      my_printf("(%c,%d)",s,count);                                                              
       getchar();
       getchar();
 }                                                                                  

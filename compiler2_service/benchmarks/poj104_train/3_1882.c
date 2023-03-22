@@ -5,9 +5,9 @@
 int main_bench(){
 int m,e,n,i,j,k,s[1000];
 int t=0;
-scanf("%d%d",&n,&m);
+my_scanf("%d%d",&n,&m);
 for(i=0;i<n;i++){
-scanf("%d",&(s[i]));
+my_scanf("%d",&(s[i]));
 }
 for(k=1;k<n;k++){
 	for(i=0;i<n-k;i++){
@@ -22,9 +22,9 @@ for(i=0;i<n;i++){
 		}
 }}
 if(t==1){
-printf("yes");
+my_printf("yes");
 }else{
-printf("no");
+my_printf("no");
 }
 
 

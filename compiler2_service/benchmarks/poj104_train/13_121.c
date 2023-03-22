@@ -3,17 +3,17 @@
 int main_bench()
 {
       int n,i=1,m,j,k;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
        int a[n];
       while(i<=n)
-      {scanf("%d",&m);
+      {my_scanf("%d",&m);
       a[i]=m;
       i++;} 
       int l=1;
       while(l<=n)
       {
                  if(l==1)
-                 printf("%d",a[l]);
+                 my_printf("%d",a[l]);
                  else
                  {
                      j=1;
@@ -23,7 +23,7 @@ int main_bench()
                      k=k+1;
                      j++;}
                  if(k==0)
-                 printf(" %d",a[l]);
+                 my_printf(" %d",a[l]);
                  }             
       l++;
       }

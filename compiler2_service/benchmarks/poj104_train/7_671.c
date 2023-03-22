@@ -3,7 +3,7 @@
 int main_bench(){
     char a[256],b[256],c[100][50],x[256],d[256];
 	int i,n1,n2,k,m,n,want=-1;
-		scanf("%s%s%s",a,b,d);
+		my_scanf("%s%s%s",a,b,d);
 	n1=strlen(a);
 	n2=strlen(b);
 	n=n1-n2+1;
@@ -21,28 +21,28 @@ int main_bench(){
 		}
 	}
 	if(want==0){
-		printf("%s",d);
+		my_printf("%s",d);
 		for(i=n2;i<n1;i++){
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 if(want==(n1-n2)){
 	for(i=0;i<want;i++){
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
-	printf("%s",d);
+	my_printf("%s",d);
 }
 if(want>0&&want<(n1-n2)){
 for(i=0;i<want;i++){
-	printf("%c",a[i]);
+	my_printf("%c",a[i]);
 }
-	printf("%s",d);
+	my_printf("%s",d);
     for(i=want+n2;i<n1;i++){
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 }
 if(want==-1){
-	printf("%s",a);
+	my_printf("%s",a);
 }
 	return 0;
 	}

@@ -18,8 +18,8 @@ int main_bench()
 			if(strcmp(b,c)==0)
 			{
 			for(j=0;j<l;j++)
-				printf("%c",b[j]);
-			printf("\n");
+				my_printf("%c",b[j]);
+			my_printf("\n");
 			}
 		}
 	}

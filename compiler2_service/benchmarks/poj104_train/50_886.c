@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int w,i,j;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	int month[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int day[13];
 	day[1]=13;
@@ -17,7 +17,7 @@ int main_bench()
 	for(i=1;i<13;i++)
 	{
 		if((day[i]+w-1)%7==5)
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	    else continue;
 	}
 	return 0;

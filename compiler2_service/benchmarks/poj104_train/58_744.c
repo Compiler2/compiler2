@@ -11,7 +11,7 @@ main_bench()
 {
  int a,n;
  int i;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  char str1[2];
  gets(str1);
  while(n--)
@@ -24,10 +24,10 @@ main_bench()
    for(i=1;str[i]!='\0';i++)
    if((str[i]>='0'&&str[i]<='9')||f(str[i])==1) continue;
    else break;
-   if(i==len) printf("%d\n",1);
-   else printf("%d\n",0);
+   if(i==len) my_printf("%d\n",1);
+   else my_printf("%d\n",0);
   }
   else
-  printf("%d\n",0);
+  my_printf("%d\n",0);
  }
 }

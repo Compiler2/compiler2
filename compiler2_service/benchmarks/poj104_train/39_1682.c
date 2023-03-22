@@ -16,10 +16,10 @@ int main_bench()
 {
 	int m,k,i,max;
 	int total=0;
-	scanf("%d\n",&m);
+	my_scanf("%d\n",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].gradeA,&stu[i].gradeB,&stu[i].a,&stu[i].b,&stu[i].num);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].gradeA,&stu[i].gradeB,&stu[i].a,&stu[i].b,&stu[i].num);
 		stu[i].n=0;
 		stu[i].np=0;
 	}
@@ -69,5 +69,5 @@ int main_bench()
 		    break;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[k].name,stu[k].np,total);
+	my_printf("%s\n%d\n%d\n",stu[k].name,stu[k].np,total);
 }

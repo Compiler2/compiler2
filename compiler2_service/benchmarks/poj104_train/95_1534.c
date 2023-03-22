@@ -21,9 +21,9 @@ int main_bench()
             continue;
  }
     if(strcmp(a,b)==-1)
-  printf("<");
+  my_printf("<");
  else if(strcmp(a,b)==1)
-  printf(">");
+  my_printf(">");
  else
-  printf("=");
+  my_printf("=");
 }

@@ -27,21 +27,21 @@ main_bench()
  p=*a;
  for(n=0;n<5;n++) 
 	 for(m=0;m<5;m++)
-	 {scanf("%d",p);
+	 {my_scanf("%d",p);
 	  p++;
 	 }
 p=*a;
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 	 if(trans(a,n,m))
 	 {  
 	    for(n=0;n<5;n++)
 		{
          for(m=0;m<4;m++)
-		 {printf("%d ",*p);p++;}
-		 printf("%d\n",*p);p++;
+		 {my_printf("%d ",*p);p++;}
+		 my_printf("%d\n",*p);p++;
 		 
 		}
 	    
 	 }
-	 else printf("error\n");
+	 else my_printf("error\n");
 }

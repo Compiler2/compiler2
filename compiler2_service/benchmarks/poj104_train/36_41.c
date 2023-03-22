@@ -5,8 +5,8 @@ main_bench()
 	char a[100],b[100],c;
 	int i,d[26]={0},r;
 
-	scanf("%s",a);
-    scanf("%s",b);
+	my_scanf("%s",a);
+    my_scanf("%s",b);
    
 	for (i=0;i<strlen(a);i++)
 		for (c='a';c<='z';c++)
@@ -23,6 +23,6 @@ main_bench()
 			r=1;
     
 	if (r==0)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 }

@@ -17,9 +17,9 @@ int main_bench(){
 			b=0;
 		}
 	}
-	printf("%d",strlen(dc[0]));
+	my_printf("%d",strlen(dc[0]));
 	for(int c=1;c<a+1;c++){
-	     printf(",%d",strlen(dc[c])+1);
+	     my_printf(",%d",strlen(dc[c])+1);
 	}
 	return 0;
 }

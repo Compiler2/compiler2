@@ -3,11 +3,11 @@
 int main_bench()
 {
    int n,i,j;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    char s[n][255];
    for(i=0;i<n;i++)
    {
-      scanf("%s\n",s[i]);
+      my_scanf("%s\n",s[i]);
       for(j=0;s[i][j]!='\0';j++)
       {
          switch(s[i][j])
@@ -26,7 +26,7 @@ int main_bench()
                break;
          }
       }
-      printf("%s\n",s[i]);
+      my_printf("%s\n",s[i]);
    }
    return 0;
 }

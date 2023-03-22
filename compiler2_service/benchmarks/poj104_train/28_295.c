@@ -14,8 +14,8 @@ int main_bench()
   else
 	if(*(p+i-1)!=' ')
    {
-   printf("%d,",s);
+   my_printf("%d,",s);
    s=0;
    }
- printf("%d",s);
+ my_printf("%d",s);
 }

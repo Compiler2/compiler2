@@ -6,11 +6,11 @@ main_bench(){
 
 int n,m,a,b,p;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(int i=1;i<=n;i++){
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	if(i==1){a=m;
 
@@ -70,7 +70,7 @@ for(int i=1;i<=n;i++){
 
 
 
-printf("%d\n%d\n",a,b);
+my_printf("%d\n%d\n",a,b);
 
 
 

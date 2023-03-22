@@ -6,11 +6,11 @@ int Day(int m);
 int main_bench()
 {
 	int w;
-	scanf("%d", &w);
+	my_scanf("%d", &w);
 	for(int i=1; i<=12; i++)
 	{
 		if((Day(i)+w)%7 == 5)
-			printf("%d\n", i);
+			my_printf("%d\n", i);
 	}
 
 	return 0;

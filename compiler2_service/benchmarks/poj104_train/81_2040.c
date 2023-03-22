@@ -24,19 +24,19 @@ int main_bench()
 	int ar[5][5], n, m, i, j, k;
 	for (i=0; i<5; i++)
 		for (j=0; j<5; j++)
-			scanf ("%d", *(ar+i)+j);
-	scanf ("%d%d", &n, &m);
+			my_scanf ("%d", *(ar+i)+j);
+	my_scanf ("%d%d", &n, &m);
 	k=exch(ar, n, m);
 	if (k==0)
-		printf ("error");
+		my_printf ("error");
 	else 
 	{
 		for (i=0; i<5; i++)
 		for (j=0; j<5; j++)
 		{
 			if (j==4)
-				printf ("%d\n", *(*(ar+i)+j));
-			else printf ("%d ", *(*(ar+i)+j));
+				my_printf ("%d\n", *(*(ar+i)+j));
+			else my_printf ("%d ", *(*(ar+i)+j));
 		}
 	}
 	return 0;

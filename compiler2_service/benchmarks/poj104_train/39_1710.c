@@ -16,9 +16,9 @@ int main_bench()
 	int Price[5]={8000,4000,2000,1000,850};
 	long int sum=0;
 
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,&stu[i].fame,&stu[i].leader,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].score,&stu[i].fame,&stu[i].leader,&stu[i].west,&stu[i].paper);
 
 	for(i=0;i<n;i++)
 	{
@@ -38,6 +38,6 @@ int main_bench()
 	}
 
 
-	printf("%s\n%d\n%ld",stu[k].name,max,sum);
+	my_printf("%s\n%d\n%ld",stu[k].name,max,sum);
 
 }

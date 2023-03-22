@@ -10,7 +10,7 @@ main_bench()
 	{
 	   while(1)
 	   {
-	      scanf("%c",&ch);
+	      my_scanf("%c",&ch);
 	      if(ch==' '||ch=='\n') break;
 		 else b[i++]=ch;
 	    }
@@ -28,7 +28,7 @@ main_bench()
 	    if(strlen(a[i])<strlen(min)) strcpy(min,a[i]);
 
 	}
-     printf("%s\n",max);
-	    printf("%s\n",min);
+     my_printf("%s\n",max);
+	    my_printf("%s\n",min);
 	
 }

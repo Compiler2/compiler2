@@ -5,9 +5,9 @@ int main_bench(){
 	struct qujian{
 		int ai,bi;
 	}qj[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&qj[i].ai,&qj[i].bi);
+		my_scanf("%d %d",&qj[i].ai,&qj[i].bi);
 	}
 	for(k=1;k<=n;k++){
 	for(i=0;i<n-k;i++){
@@ -29,10 +29,10 @@ int main_bench(){
 		}
 		}
 		else {
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d",qj[0].ai,m);
+	my_printf("%d %d",qj[0].ai,m);
 	return 0;
 }

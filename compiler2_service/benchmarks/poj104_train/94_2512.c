@@ -4,10 +4,10 @@ int main_bench()
 {
     int j,n,e,shuru[501],shuchu[501];
     j=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<=n-1;i++)
     {
-        scanf("%d",&shuru[i]);
+        my_scanf("%d",&shuru[i]);
         if(shuru[i]%2==1)
         {
              shuchu[j]=shuru[i];
@@ -26,7 +26,7 @@ int main_bench()
                shuchu[m]=e;
             }
         }
-        printf("%d,",shuchu[j-k]);
+        my_printf("%d,",shuchu[j-k]);
     }
     
     
@@ -39,6 +39,6 @@ int main_bench()
                shuchu[m]=e;
             }
         }
-        printf("%d",shuchu[j-j]);
+        my_printf("%d",shuchu[j-j]);
     return 0;
 }

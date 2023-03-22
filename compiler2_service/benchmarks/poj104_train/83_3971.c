@@ -3,15 +3,15 @@
 int main_bench(){
     int n,u[100],v[100];
     float a[100],b[100],t,s,r;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	t=0.0;
     s=0.0;
     for(int i=0;i<=(n-1);i++){
-            scanf("%d ",&u[i]);
+            my_scanf("%d ",&u[i]);
             s=s+u[i]*(1.0);
             }
     for(int i=0;i<=(n-1);i++){
-            scanf("%d ",&v[i]);
+            my_scanf("%d ",&v[i]);
 			}
     for(int i=0;i<=(n-1);i++){
 		if((v[i]>=90)&&(v[i]<=100)){
@@ -40,6 +40,6 @@ int main_bench(){
             t=t+b[i];
             }
             r=t/s;
-    printf("%.2f",r);
+    my_printf("%.2f",r);
 	return 0;
     }

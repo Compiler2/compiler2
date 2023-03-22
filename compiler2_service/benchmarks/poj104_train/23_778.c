@@ -25,6 +25,6 @@ int main_bench()
   }
  }
  a[j][w]='\0';
- for(i=b;i>=1;i--)printf("%s ",a[i]);
- printf("%s",a[0]);
+ for(i=b;i>=1;i--)my_printf("%s ",a[i]);
+ my_printf("%s",a[0]);
 }

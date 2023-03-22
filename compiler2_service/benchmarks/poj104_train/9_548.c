@@ -6,9 +6,9 @@ int cmp(const void *a, const void *b)
 {return(*(int *)b-*(int *)a);}
 int main_bench() 
 {
-scanf("%d",&n); 
+my_scanf("%d",&n); 
 for(i=0;i<n;i++)
-scanf("%s %d",ss[i],&s[i]);
+my_scanf("%s %d",ss[i],&s[i]);
 for(j=0;j<n;j++)
 {
 	m=0;
@@ -19,7 +19,7 @@ for(j=0;j<n;j++)
 	for(i=0;i<n;i++)
 	{
 		if(s[i]==m) 
-		{printf("%s\n",ss[i]);
+		{my_printf("%s\n",ss[i]);
 		s[i]=-1;}
 		
 	}
@@ -27,6 +27,6 @@ for(j=0;j<n;j++)
 }
 	for(i=0;i<n;i++)
 	{if(s[i]!=-1)
-	{printf("%s\n",ss[i]);}
+	{my_printf("%s\n",ss[i]);}
 	}
 }

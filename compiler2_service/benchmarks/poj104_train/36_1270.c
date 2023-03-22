@@ -4,7 +4,7 @@ int main_bench(){
 	int a[256],n,i,j,c1,c2,c3,c4,k;
 	float d;
 	char s1[200],s2[200];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	memset(a,0,sizeof(a));
 	c1=strlen(s1);
 	c2=strlen(s2);
@@ -23,8 +23,8 @@ int main_bench(){
 			c3=0;
 	}
 	}
-	if(c3){printf("YES");}
-	else{printf("NO");}
+	if(c3){my_printf("YES");}
+	else{my_printf("NO");}
 		
 	
 		return 0;

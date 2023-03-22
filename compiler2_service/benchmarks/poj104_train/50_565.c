@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,d[100],y,a,w;
 		int m[100]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		if (i==1)
 			d[1]=12;
@@ -15,7 +15,7 @@ int main_bench()
 			y=w-5;
 			a=(d[i]+y)%7;
 			if(a==0)
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 		}
 		return 0;
 	}

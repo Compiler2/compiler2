@@ -20,11 +20,11 @@ int main_bench()
 				k[i]+=32;
 		}
 		if(strcmp(s,k)==0)
-			printf("=\n");
+			my_printf("=\n");
 		else if(strcmp(s,k)<0)
-			printf("<\n");
+			my_printf("<\n");
 		else if(strcmp(s,k)>0)
-			printf(">\n");
+			my_printf(">\n");
 	}
 	else
 	{
@@ -39,11 +39,11 @@ int main_bench()
 				k[i]+=32;
 		}
 		if(strcmp(s,k)==0)
-			printf("=\n");
+			my_printf("=\n");
 		else if(strcmp(s,k)<0)
-			printf("<\n");
+			my_printf("<\n");
 		else if(strcmp(s,k)>0)
-			printf(">\n");
+			my_printf(">\n");
 	}
 
 	

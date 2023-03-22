@@ -7,10 +7,10 @@ int main_bench(){
 	int c=0;
 	int d=0;
 	int e=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<=18){
 			b=b+1;
 		}else if(a>=19&&a<=35){
@@ -26,14 +26,14 @@ int main_bench(){
 	g=1.0*c/n*100;
 	h=1.0*d/n*100;
 	k=1.0*e/n*100;
-	printf("1-18: ");
-	printf("%.2lf%%\n",f);
-	printf("19-35: ");
-	printf("%.2lf%%\n",g);
-	printf("36-60: ");
-	printf("%.2lf%%\n",h);
-	printf("60??: ");
-	printf("%.2lf%%\n",k);
+	my_printf("1-18: ");
+	my_printf("%.2lf%%\n",f);
+	my_printf("19-35: ");
+	my_printf("%.2lf%%\n",g);
+	my_printf("36-60: ");
+	my_printf("%.2lf%%\n",h);
+	my_printf("60??: ");
+	my_printf("%.2lf%%\n",k);
 	return 0;
 }
 

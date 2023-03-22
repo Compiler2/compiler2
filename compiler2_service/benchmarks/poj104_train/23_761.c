@@ -12,6 +12,6 @@ int main_bench()
 		else {j++;s=0;}
 	}
 	for(i=j;i>0;i--)
-		printf("%s ",word[i]);
-	printf("%s",word[0]);
+		my_printf("%s ",word[i]);
+	my_printf("%s",word[0]);
 }

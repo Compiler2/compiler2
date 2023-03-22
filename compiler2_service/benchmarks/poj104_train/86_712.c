@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int i,c,j,k,num[100],n,timess=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		for(j=0;j<c;j++)
 		{
-			scanf("%d",&num[j]);
+			my_scanf("%d",&num[j]);
 		} 
 		if((num[c-1]+3*c)<=60)
 		{
 			timess=60-c*3;
-			printf("%d\n",timess);
+			my_printf("%d\n",timess);
 		}
         else 
 		{
@@ -23,13 +23,13 @@ int main_bench()
 		        if((num[k-1]+3*k)<=63&&(num[k-1]+3*k)>60)
 				{
 					timess=num[k-1];
-		            printf("%d\n",timess);
+		            my_printf("%d\n",timess);
 					break;
 				}
 		        else if((num[k-1]+3*k)>63) 
 				{
 					timess=60-(k-1)*3;
-					printf("%d\n",timess);
+					my_printf("%d\n",timess);
 					break;
 				}
 			}

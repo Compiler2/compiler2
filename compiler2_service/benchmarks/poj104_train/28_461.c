@@ -24,7 +24,7 @@ int main_bench()
 		if(B[j]==0)
 			continue;
 		else
-			printf("%d,",B[j]);
+			my_printf("%d,",B[j]);
 	}
-	printf("%d",B[l-1]);
+	my_printf("%d",B[l-1]);
 }

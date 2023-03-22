@@ -16,14 +16,14 @@ int main_bench()
 {
     int i,j,n,fl;
     char w[30];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         int fl=1;
-        scanf("%s",w);
+        my_scanf("%s",w);
         if(!s(w[0]))fl=0;
         for(j=1;j<strlen(w);j++)if(!f(w[j]))fl=0;
-        fl?printf("yes\n"):printf("no\n");
+        fl?my_printf("yes\n"):my_printf("no\n");
     }
         return 0;
 }

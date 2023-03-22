@@ -4,7 +4,7 @@ int dijitian(int year,int month,int day);
 int main_bench()
 {
 	int year1,month1,day1,total=0,year2,month2,day2,result,n;
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
 	int i;
 	if(year1==year2){
 		result=dijitian(year2,month2,day2)-dijitian(year1,month1,day1);
@@ -22,7 +22,7 @@ int main_bench()
 			result=365-dijitian(year1,month1,day1)+dijitian(year2,month2,day2)+total;
 		}
 	}
-	printf("%d\n",result);
+	my_printf("%d\n",result);
 	return 0;
 }
 int dijitian(int year,int month,int day){

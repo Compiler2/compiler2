@@ -4,24 +4,24 @@ int main_bench()
 {
     int a,b,c,d,e,f;
     int reverse(int a);
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c);
-    scanf("%d",&d);
-    scanf("%d",&e);
-    scanf("%d",&f);
+    my_scanf("%d",&a);
+    my_scanf("%d",&b);
+    my_scanf("%d",&c);
+    my_scanf("%d",&d);
+    my_scanf("%d",&e);
+    my_scanf("%d",&f);
     a=reverse(a);
     b=reverse(b);
     c=reverse(c);
     d=reverse(d);
     e=reverse(e);
     f=reverse(f);
-    printf("%d\n",a);
-    printf("%d\n",b);
-    printf("%d\n",c);
-    printf("%d\n",d);
-    printf("%d\n",e);
-    printf("%d\n",f);
+    my_printf("%d\n",a);
+    my_printf("%d\n",b);
+    my_printf("%d\n",c);
+    my_printf("%d\n",d);
+    my_printf("%d\n",e);
+    my_printf("%d\n",f);
 }
 int reverse(int a)
 {

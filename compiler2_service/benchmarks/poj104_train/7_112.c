@@ -26,7 +26,7 @@ int main_bench()
 
 	strcat(res,a);
 
-	printf("%s\n",res);
+	my_printf("%s\n",res);
 
 	return 0;
 }

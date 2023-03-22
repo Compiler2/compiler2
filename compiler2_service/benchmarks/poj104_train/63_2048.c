@@ -14,17 +14,17 @@ int main_bench()
 			c[i][j] = 0;
 		}
 	}
-	scanf("%d %d", &m, &q);
+	my_scanf("%d %d", &m, &q);
 	for (i = 0; i < m; i++)
 	{
 		for (j = 0; j < q; j++)
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 	}
-	scanf("%d %d", &q, &n);
+	my_scanf("%d %d", &q, &n);
 	for (i = 0; i < q; i++)
 	{
 		for (j = 0; j < n; j++)
-			scanf("%d", &b[i][j]);
+			my_scanf("%d", &b[i][j]);
 	}
 	for (i = 0; i < m; i++)
 	{
@@ -37,7 +37,7 @@ int main_bench()
 	for (i = 0; i < m; i++)
 	{
 		for (j = 0; j < n - 1; j++)
-			printf("%d ", c[i][j]);
-		printf("%d\n", c[i][n - 1]);
+			my_printf("%d ", c[i][j]);
+		my_printf("%d\n", c[i][n - 1]);
 	}
 }

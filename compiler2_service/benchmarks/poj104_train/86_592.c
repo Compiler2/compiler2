@@ -6,22 +6,22 @@ int main_bench()
 {
 	int g,time,n,a[100],m,i;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 while(n--)
 {
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	g=0;
 	time=0;
 
 	memset(a,0,sizeof(a));
 	
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	
 	i=0;
 
-	if(m==0) printf("60\n");
+	if(m==0) my_printf("60\n");
 	else 
 	{
 		for(i=0;i<m;i++)
@@ -30,16 +30,16 @@ while(n--)
 		g=a[i];
 		if(time<=60 && time>=57 ) 
 		{
-			printf("%d\n",g);break;
+			my_printf("%d\n",g);break;
 		}
 		if(time>60) 
 		{
-			printf("%d\n",g-(time-60));break;
+			my_printf("%d\n",g-(time-60));break;
 		}
 	
 	}
 
-    if(time<57) printf("%d\n",g+(60-time)-3);
+    if(time<57) my_printf("%d\n",g+(60-time)-3);
 	}
 
 

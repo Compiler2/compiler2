@@ -6,9 +6,9 @@ int main_bench()
 	int m,n;
 	int p,q,t,i,j;
 	float sum;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		j=1;
 		sum=0;
 		p=2;
@@ -21,6 +21,6 @@ int main_bench()
 			j=j+1;
 		}
 		while(j<=n);
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 }

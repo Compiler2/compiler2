@@ -28,7 +28,7 @@ int leapYearBetween(int a,int b)
 int main_bench()
 {
 	int y,m,d;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	
 	int leftDay = leapYearBetween(1,(y-1)/7*7);
 	leftDay += (y-1)%7*365;
@@ -42,7 +42,7 @@ int main_bench()
 
 	leftDay %= 7;
 
-	printf("%s\n",name[leftDay]);
+	my_printf("%s\n",name[leftDay]);
 
 	return 0;
 }

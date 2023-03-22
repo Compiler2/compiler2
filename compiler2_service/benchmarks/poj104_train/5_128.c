@@ -9,8 +9,8 @@ int main_bench()
 	float sum=0,cor=0;
 	char s1[501],s2[501];
 
-	scanf("%f",&input);
-	scanf("%s%s",s1,s2);
+	my_scanf("%f",&input);
+	my_scanf("%s%s",s1,s2);
 
 	sum=strlen(s1);
 	
@@ -22,15 +22,15 @@ int main_bench()
 	}
 	if(s)
 	{
-		printf("error\n");
+		my_printf("error\n");
 		return 0;
 	}
 	else
 	{
 		if((cor/sum)>=input)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 		return 0;
 	}
 }

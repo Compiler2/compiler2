@@ -4,7 +4,7 @@ int main_bench()
 {
    int money[10],sum[10];
    int k,i,j;
-   scanf("%d",&k);
+   my_scanf("%d",&k);
    money[1]=100;
    money[2]=50;
    money[3]=20;
@@ -20,7 +20,7 @@ int main_bench()
          k=k-money[i];
          sum[i]++;
         }
-       printf("%d\n",sum[i]);
+       my_printf("%d\n",sum[i]);
      }   
     return 0;
 }

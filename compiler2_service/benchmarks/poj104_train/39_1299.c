@@ -29,13 +29,13 @@ int main_bench()
 	char stu_staff;
 	char stu_west;
 	int thesis_num;
-	scanf("%d",&stu_num);
+	my_scanf("%d",&stu_num);
 
 	int stu_max = -1,stu_money,money =0;
 	char stu_name[21];
 	for(int i =0; i < stu_num; i++)
 	{
-		scanf("%s %d %d %c %c %d",
+		my_scanf("%s %d %d %c %c %d",
 			name,&term_end,&class_talk,&stu_staff,&stu_west,&thesis_num);
 		stu_money = cpu(term_end,class_talk,stu_staff,stu_west,thesis_num);
 		if(stu_money > stu_max)
@@ -45,6 +45,6 @@ int main_bench()
 		}
 		money += stu_money;
 	}
-	printf("%s\n%d\n%d",stu_name,stu_max,money);
+	my_printf("%s\n%d\n%d",stu_name,stu_max,money);
 	return 0;
 }

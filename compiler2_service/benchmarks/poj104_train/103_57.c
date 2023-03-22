@@ -7,7 +7,7 @@ n=0;
 char d[2000];
 char m;
 int e[10000];
-scanf("%s",d);
+my_scanf("%s",d);
 l=strlen(d);
 for(i=0;i<l;i++)
 if(d[i]>='a' && d[i]<='z')
@@ -18,7 +18,7 @@ for(i=0;i<l;i++)
 {n++;
  if(d[i+1]!=d[i])
  {m=d[i];
- printf("(%c,%d)",m,n);
+ my_printf("(%c,%d)",m,n);
  n=0;}
 }
 

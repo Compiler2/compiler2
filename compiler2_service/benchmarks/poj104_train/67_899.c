@@ -8,10 +8,10 @@ double z[300];
 double yx[300];
 double x[300];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-    scanf("%lf",&z[i]);
-    scanf("%lf",&yx[i]);
+    my_scanf("%lf",&z[i]);
+    my_scanf("%lf",&yx[i]);
     x[i]=yx[i]/z[i];
 }
 
@@ -19,16 +19,16 @@ for(i=0;i<n;i++){
 for(i=1;i<n-1;i++){
     if(x[0]-x[i]>0.05){
 	   
-	   printf("worse");
-	   printf("\n");
+	   my_printf("worse");
+	   my_printf("\n");
 	}else if(x[i]-x[0]>0.05){
 	   
-	   printf("better");
-	   printf("\n");
+	   my_printf("better");
+	   my_printf("\n");
 	}else{
 	   
-	   printf("same");
-	   printf("\n");
+	   my_printf("same");
+	   my_printf("\n");
 	}
  
 	
@@ -38,15 +38,15 @@ for(i=1;i<n-1;i++){
 	   
 	  if(x[0]-x[n-1]>0.05){
 	   
-	   printf("worse");
+	   my_printf("worse");
 
 	}else if(x[n-1]-x[0]>0.05){
 	   
-	   printf("better");
+	   my_printf("better");
 	
 	}else{
 	   
-	   printf("same");
+	   my_printf("same");
 	 
 	}
 	 

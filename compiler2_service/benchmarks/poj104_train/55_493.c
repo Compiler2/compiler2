@@ -8,7 +8,7 @@ int main_bench()
     int a,b;
     char c[100];
 
-    scanf("%d%s%d",&a,c,&b);
+    my_scanf("%d%s%d",&a,c,&b);
     
     for(i=0;i<strlen(c);i++)
     {
@@ -39,10 +39,10 @@ int main_bench()
     if(j!=0)
 	  for(l=j-1;l>=0;l--)
 	  {
-                       printf("%c",c[l]);
+                       my_printf("%c",c[l]);
                        }
 	  else
-		  printf("0");
-    printf("\n");
+		  my_printf("0");
+    my_printf("\n");
     }
 

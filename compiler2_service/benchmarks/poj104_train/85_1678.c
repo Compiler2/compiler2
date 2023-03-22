@@ -3,11 +3,11 @@
 int main_bench()
 {
     int i, j, n;      
-    scanf("%d", &n);         
+    my_scanf("%d", &n);         
     for (i = 0; i < n; i++) 
 	{   
         char s[1000]; 
-        scanf("%s\n", s);
+        my_scanf("%s\n", s);
         int l=strlen(s);
         s[l]='\0';
         int flag=1;
@@ -19,8 +19,8 @@ int main_bench()
                ))
         	{flag=0;break;}
        	}
-        if (flag==1){printf("yes\n");}
-        else if(flag==0){printf("no\n");}
+        if (flag==1){my_printf("yes\n");}
+        else if(flag==0){my_printf("no\n");}
  }
     	return 0;
 }

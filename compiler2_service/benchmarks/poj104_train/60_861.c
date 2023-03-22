@@ -4,7 +4,7 @@ int main_bench()
 {
 int n,i,j,a,b,m,p,l;
 l=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=3;i<=n;i++)
 {
 	for(j=i-1;j>=2;j--)
@@ -24,7 +24,7 @@ for(i=3;i<=n;i++)
 		}
 	}
 	if(m==1){
-			printf("%d %d\n",b,i);
+			my_printf("%d %d\n",b,i);
 			l=1;
 	}
 	}
@@ -32,7 +32,7 @@ for(i=3;i<=n;i++)
 }
 }
 	if(l==0){
-		printf("empty");
+		my_printf("empty");
 	}
 
 return 0;

@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int xf[100],cj[100];
     double jd[100];
     int i;
     for(i=0;i<n;i++)
     {
-        scanf("%d",&xf[i]);
+        my_scanf("%d",&xf[i]);
     }
     int fz=0;
     for(i=0;i<n;i++){fz+=xf[i];}
     for(i=0;i<n;i++)
     {
-        scanf("%d",&cj[i]);
+        my_scanf("%d",&cj[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -32,6 +32,6 @@ int main_bench()
     }
     double z=0;
     for(i=0;i<n;i++){z+=jd[i];}
-    printf("%.2lf",z/fz);
+    my_printf("%.2lf",z/fz);
     return 0;
 }

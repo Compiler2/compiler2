@@ -31,13 +31,13 @@ int s(int year,int month,int date){
 int main_bench()
 {
 	int n,i,year,month1,month2,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&year,&month1,&month2);
+		my_scanf("%d%d%d",&year,&month1,&month2);
 		a=s(year,month1,1);
 		b=s(year,month2,1);
-		if((a-b)%7==0)printf("YES\n");
-		else printf("NO\n");
+		if((a-b)%7==0)my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 	return 0;
 }

@@ -12,7 +12,7 @@ int main_bench()
 	}
 	*q=*p+s[0];
 	for(q=b;q<b+l;q++){
-		printf("%c",*q);
+		my_printf("%c",*q);
 	}
 	return 0;
 }

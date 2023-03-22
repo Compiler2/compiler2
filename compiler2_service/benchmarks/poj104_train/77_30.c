@@ -25,7 +25,7 @@ int main_bench()
 				{
 					if(s[j]==m)
 					{
-						printf("%d %d\n",j,i);
+						my_printf("%d %d\n",j,i);
 						s[i]='p';
 						s[j]='q';
 						break;

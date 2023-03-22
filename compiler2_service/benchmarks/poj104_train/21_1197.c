@@ -6,10 +6,10 @@ int main_bench()
 	float a[310];
 	float sum=0,aver;
 	float b[310],c[310],max,tem;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	}
 
 	for(i=1;i<=n;i++)
@@ -45,7 +45,7 @@ int main_bench()
 
 	if(j==1)
 	{
-		printf("%.f",c[1]);
+		my_printf("%.f",c[1]);
 	}
 	else
 	{
@@ -62,10 +62,10 @@ int main_bench()
 			}
 		}
 
-		printf("%.f",c[1]);
+		my_printf("%.f",c[1]);
 		for(i=2;i<=j;i++)
 		{
-			printf(",%.f",c[j]);
+			my_printf(",%.f",c[j]);
 		}
 	}
 

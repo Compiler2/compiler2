@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	int i=0;
 	char string[101];
@@ -65,11 +65,11 @@ int main_bench()
 		}
 		if(strcmp(string_copy,string_check)!=0)
 		{
-			printf("%s\n%s\n",string,string_copy);
+			my_printf("%s\n%s\n",string,string_copy);
 		}
 		else
 		{
-			printf("%s\n",string);
+			my_printf("%s\n",string);
 		}
 	}
 

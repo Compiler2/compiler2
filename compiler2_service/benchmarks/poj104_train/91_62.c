@@ -15,6 +15,6 @@ int main_bench()
 	}
 	*p1='\0';
 	p1=s1;
-	printf("%s",p1);
+	my_printf("%s",p1);
 	return 0;
 }

@@ -7,7 +7,7 @@ int main_bench()
 char a[100]={'\0'},b[100]={'\0'};
 
 	
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	qsort(a,strlen(a),sizeof(char),compare);
 	qsort(b,strlen(b),sizeof(char),compare);
 	sum=0;
@@ -16,10 +16,10 @@ char a[100]={'\0'},b[100]={'\0'};
 		}
 
 	if(sum>0)
-	{	printf("NO");
+	{	my_printf("NO");
 	}
 	if(sum==0)
-	{	printf("YES");
+	{	my_printf("YES");
 	}
 
 	return 0;

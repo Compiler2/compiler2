@@ -6,10 +6,10 @@ int main_bench(){
 	int x1,y1,x2,y2;
 	int s=0;
 	int a,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&t);
+			my_scanf("%d",&t);
 			if(t==0){
 				if(s==0){
 					x1=i;
@@ -24,6 +24,6 @@ int main_bench(){
 	a=(x2-x1-1)*(y2-y1-1);
 	if(a<0)
 		a=-a;
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

@@ -6,13 +6,13 @@ int main_bench()
 	int m[100],n[100];
 	int sum[100]={0};
 	int a[100][100][100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++){
-		scanf("%d %d",&m[i],&n[i]);
+		my_scanf("%d %d",&m[i],&n[i]);
 		
 		for(j=0;j<m[i];j++){
 			for(l=0;l<n[i];l++){
-				scanf("%d",&a[j][l][i]);
+				my_scanf("%d",&a[j][l][i]);
 			}
 		}
 	}
@@ -29,7 +29,7 @@ int main_bench()
 		for(j=m[i]-1;j>0;j--){
 			sum[i]+=a[j][0][i];
 		}
-		printf("%d\n",sum[i]);
+		my_printf("%d\n",sum[i]);
 	}
 	return 0;
 }

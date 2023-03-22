@@ -3,9 +3,9 @@
  int main_bench(){
 	int n,x,i,k,q,y=0;
 	int a[1000];
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0,q=0;i<n,q<n;i++,q++){
-		scanf("%d",&x);
+		my_scanf("%d",&x);
         a[i]=x;
 	}
     for(i=0;i<n-1;i++){
@@ -20,9 +20,9 @@
 		}
 	}
 	if(y==1){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
     }
 	return 0;
 }

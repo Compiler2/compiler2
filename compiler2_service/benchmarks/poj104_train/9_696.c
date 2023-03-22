@@ -11,10 +11,10 @@ int main_bench()
 	}pai[101],ol[101],you[101];
 		
 	int n,i,j,k,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",pai[i].id,&pai[i].old);
+		my_scanf("%s %d",pai[i].id,&pai[i].old);
 	}
 	l=0;k=0;
     for(i=0;i<n;i++)
@@ -47,10 +47,10 @@ int main_bench()
 	}
 	for(i=0;i<l;i++)
 	{
-		printf("%s\n",ol[i].id);
+		my_printf("%s\n",ol[i].id);
 	}
 	for(i=0;i<k-1;i++)
-	{printf("%s\n",you[i].id);
+	{my_printf("%s\n",you[i].id);
 	}
-	printf("%s",you[k-1].id);
+	my_printf("%s",you[k-1].id);
 	}

@@ -30,13 +30,13 @@ int DiJiTian(int year, int month, int day){
 
 int main_bench(){
 	int n,a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;i<=n;i++){
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		if((DiJiTian(a,b,1)-DiJiTian(a,c,1))%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

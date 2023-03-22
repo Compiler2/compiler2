@@ -66,9 +66,9 @@ int main_bench()
 {
 	int i,j;
 	for(i=0;i<3;i++)
-		scanf("%d",&star[i]);
+		my_scanf("%d",&star[i]);
 	for(j=0;j<3;j++)
-		scanf("%d",&end[j]);
+		my_scanf("%d",&end[j]);
 	countday(star,end);
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }

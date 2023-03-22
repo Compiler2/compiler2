@@ -20,7 +20,7 @@ int main_bench()
 	n=i;
 	p1=(char *)malloc(100*sizeof(char));
 	p2=(char *)malloc(100*sizeof(char));
-	scanf("%s\n%s",p1,p2);
+	my_scanf("%s\n%s",p1,p2);
 	for(i=0;i<=n;i++)
 	{
 		if(strcmp(p[i],p1)==0)
@@ -28,10 +28,10 @@ int main_bench()
 		strcpy(p[i],p2);
 		}
 	}
-	printf("%s",p[0]);
+	my_printf("%s",p[0]);
 	for(i=1;i<=n;i++)
 	{
-		printf(" %s",p[i]);
+		my_printf(" %s",p[i]);
 	}
 	return 0;
 }

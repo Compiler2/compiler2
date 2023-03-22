@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int count,m,n,array[100][100],sum[100]={0},i,j,p;
-	scanf("%d",&count);
+	my_scanf("%d",&count);
 	for(i=0;i<count;i++)
 	{
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(j=0;j<m;j++)
 			for(p=0;p<n;p++)
-				scanf("%d",&array[j][p]);
+				my_scanf("%d",&array[j][p]);
 		for(j=0;j<n;j++)
 		{
 			sum[i]=sum[i]+array[0][j];
@@ -23,7 +23,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<count;i++)
-	printf("%d\n",sum[i]);
+	my_printf("%d\n",sum[i]);
     return 0;
 }
 

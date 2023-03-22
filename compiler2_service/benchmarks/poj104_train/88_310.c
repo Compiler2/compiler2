@@ -10,10 +10,10 @@ int main_bench()
 		if('0'<=zf[i]&&zf[i]<='9'){      
 			sum++;                  
                             a=0;
-			printf("%c",zf[i]);     
+			my_printf("%c",zf[i]);     
 		}  
 		else if(a==0){                   
-			printf("\n");
+			my_printf("\n");
 			a=1;
 		}
 	}

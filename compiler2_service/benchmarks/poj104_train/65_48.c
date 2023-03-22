@@ -5,9 +5,9 @@ int main_bench(){
 	int aa=0;
 	int bb=0;
 	int a[200],b[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i]==0){
@@ -31,11 +31,11 @@ int main_bench(){
 		}
 	}
 	if(aa>bb){
-		printf("A");
+		my_printf("A");
 	}else if(aa<bb){
-		printf("B");
+		my_printf("B");
 	}else{
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

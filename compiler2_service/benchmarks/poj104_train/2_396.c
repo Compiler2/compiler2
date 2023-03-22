@@ -10,12 +10,12 @@ int main_bench(){
 	int m,i,k,max;
 	int count[26];
 	int *cc;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	struct book *bk=(struct book*)malloc(sizeof(struct book)*m);
 	struct book *p;
 	p=bk;
 	for(i=0;i<m;i++,p++){
-		scanf("%d %s",&(p->co),p->A);
+		my_scanf("%d %s",&(p->co),p->A);
 	}
 	cc=count;
 	memset(count,0,sizeof(count));
@@ -37,13 +37,13 @@ int main_bench(){
 			max=i;
 		}
 	}
-	printf("%c\n%d\n",'A'+max,count[max]);
+	my_printf("%c\n%d\n",'A'+max,count[max]);
 	p=bk;
 	for (i=0;i<m;i++,p++)
 	{
 		if (strchr(p->A,'A'+max))
 		{
-			printf("%d\n",p->co);
+			my_printf("%d\n",p->co);
 		}
 	}
 	free(bk);

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s1[1000],s2[1000],n,n1,i,j,k;
-	scanf("%s %s",&s1,&s2);
+	my_scanf("%s %s",&s1,&s2);
 	n=strlen(s1);
 	n1=strlen(s2);
 	for(i=0;i<n;i++)
@@ -13,7 +13,7 @@ int main_bench()
 		if(s2[j]!=0)k++;
     for(j=0;j<n;j++)
 		if(s1[j]!=0)k++;
-	if(k==0)printf("YES");
-	else printf("NO");	
+	if(k==0)my_printf("YES");
+	else my_printf("NO");	
 }
 

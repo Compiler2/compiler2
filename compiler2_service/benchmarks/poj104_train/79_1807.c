@@ -6,7 +6,7 @@ int main_bench()
 	
 	while(m!=0)
 		{
-			scanf("%d %d",&n,&m);
+			my_scanf("%d %d",&n,&m);
 			if(m==0)break;
 			else
 			{
@@ -31,8 +31,8 @@ int main_bench()
 	{
 		if(a[i]==0)
 		{
-			if(m==1)printf("%d\n",i);
-			else printf("%d\n",i+1);
+			if(m==1)my_printf("%d\n",i);
+			else my_printf("%d\n",i+1);
 			break;
 		}
 	}

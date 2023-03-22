@@ -7,23 +7,23 @@ struct sz{
 int main_bench()
 {
 	int n,i,m,add=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(struct sz *)malloc(sizeof(struct sz)*n);
 	for(i=0;i<n;i++){
-		scanf("%s",&(p+i)->word);
+		my_scanf("%s",&(p+i)->word);
 	}
 	for(i=0;i<n;i++){
 		m=strlen((p+i)->word);
 		if(add+m<80){
 			if(add>0){
-				printf(" ");
+				my_printf(" ");
 				add++;
 			}
-			printf("%s",(p+i)->word);
+			my_printf("%s",(p+i)->word);
 			add+=m;
 		}
 		else{
-		printf("\n%s",(p+i)->word);
+		my_printf("\n%s",(p+i)->word);
 		add=m;
 		}
 	}

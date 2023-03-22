@@ -17,19 +17,19 @@ int main_bench()
 {
 	int n,i,s,a[100]={0};
 	float SumGPA=0,Points=0,AveGPA=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	SumGPA=0;
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&s);
+		my_scanf("%d",&s);
 		Points+=s;
         a[i]=s;	
 	}
 	for(i=1;i<=n;i++) 
 	{
-		scanf("%d",&s);
+		my_scanf("%d",&s);
 		SumGPA+=GPA(s)*a[i];
 	}
 	AveGPA=SumGPA/Points;
-	printf("%.2f\n",AveGPA);
+	my_printf("%.2f\n",AveGPA);
 }

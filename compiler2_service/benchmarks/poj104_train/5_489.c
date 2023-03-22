@@ -3,8 +3,8 @@
 int main_bench(){
 	double rate;
 	char a[501],b[501];
-	scanf("%lf",&rate);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&rate);
+	my_scanf("%s%s",a,b);
 	int lena,lenb;
 	lena=strlen(a);
 	lenb=strlen(b);
@@ -23,20 +23,20 @@ int main_bench(){
 			
 		
 			}else{
-				printf("error");
+				my_printf("error");
 				break;
 			}
 		}
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	double r;
 	r=1.0*sum/lena;
 	if(zq==lena){
 		if(r>rate){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

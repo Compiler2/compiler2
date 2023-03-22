@@ -8,7 +8,7 @@ int main_bench()
 	b=1;
 	while(c==',')
 	{
-		scanf("%d%c",&i,&c);
+		my_scanf("%d%c",&i,&c);
 		if(i>a)
 		{
 			b=a;
@@ -18,8 +18,8 @@ int main_bench()
 			b=i;
 	}
 	if(b==-1)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	return 0;
 }

@@ -7,7 +7,7 @@ int main_bench() {
 	int big[26]={0};
 	int sma[26]={0};
 	int sign=0, i;
-	scanf("%s" ,data);
+	my_scanf("%s" ,data);
 	for(i=0;data[i]!='\0';i++) {
 		if(data[i]<='Z'&&data[i]>='A') {
 			big[data[i]-'A']+=1;
@@ -26,16 +26,16 @@ int main_bench() {
 		}
 	}
 	if(sign==0) {
-		printf("No");
+		my_printf("No");
 	} else {
 		for(i=0;i<26;i++) {
 			if(big[i]!=0) {
-				printf("%c=%d\n", 'A'+i, big[i]);
+				my_printf("%c=%d\n", 'A'+i, big[i]);
 			}
 		}
 		for(i=0;i<26;i++) {
 			if(sma[i]!=0) {
-				printf("%c=%d\n", 'a'+i, sma[i]);
+				my_printf("%c=%d\n", 'a'+i, sma[i]);
 			}
 		}
 	}

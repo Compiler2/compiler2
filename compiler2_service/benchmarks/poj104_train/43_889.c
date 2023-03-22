@@ -4,7 +4,7 @@
 int main_bench()
 {
    int n, i, j, a[10000], flag=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for (i=3;i<=n;i++)
    {
    for(j=2;j<i;j++)
@@ -21,7 +21,7 @@ int main_bench()
      for(j=i;j<=flag;j++)
      {
      if(a[i]+a[j]==n)
-     {printf("%d %d\n",a[i],a[j]);
+     {my_printf("%d %d\n",a[i],a[j]);
      break;  
      }
      }

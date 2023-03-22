@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c!=',')break;
 	}
 	for(k=i+1;k<300;k++)
@@ -22,11 +22,11 @@ int main_bench()
 		for(j=i;j>0;j--)
 			if(a[j-1]<a[j])
 			{
-				printf("%d",a[j-1]);
+				my_printf("%d",a[j-1]);
 				p=0;
 				break;
 			}
-			if(p)printf("No");
+			if(p)my_printf("No");
 }
 
 

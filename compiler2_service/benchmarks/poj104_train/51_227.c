@@ -9,7 +9,7 @@ int main_bench()
 	int count[500]={0};
 	int alo[500];
 	char com[500][5];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	l=strlen(a)-1;
 	for(i=0;i<=499;i++)
@@ -37,17 +37,17 @@ int main_bench()
 			max=*(count+i);
 	}
 	if(max!=1)
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	for(i=0;i+n-1<l;i++)
 	{
 		if(*(count+i)==max)
 		{
-			printf("%s\n",*(com+i));
+			my_printf("%s\n",*(com+i));
 		}
 	}
 	return 0;

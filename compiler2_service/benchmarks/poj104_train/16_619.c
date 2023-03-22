@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n, a[5], i = 0, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if (n >= 10)
 	{
 		while (n >= 10)
@@ -13,9 +13,9 @@ int main_bench()
 			i++;
 		}
 		for (j = 0; j <= i - 1; j++)
-			printf("%d", a[j]);
+			my_printf("%d", a[j]);
 	}
 	else
 		;
-	printf("%d", n);
+	my_printf("%d", n);
 }

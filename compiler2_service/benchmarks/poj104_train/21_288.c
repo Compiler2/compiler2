@@ -5,10 +5,10 @@ int main_bench()
 	int n,sum=0,max=0;
 	int i,j,t,a[400];
 	float f,f1,f2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	f=(double)sum/n;
@@ -24,11 +24,11 @@ int main_bench()
 		  f2=(double)a[n-1];
 
 		  if(fabs(f-f1)==fabs(f-f2))
-			  printf("%d,%d",a[0],a[n-1]);
+			  my_printf("%d,%d",a[0],a[n-1]);
 		  else if(fabs(f-f1)>fabs(f-f2))
-			  printf("%d",a[0]);
+			  my_printf("%d",a[0]);
 		  else
-			  printf("%d",a[n-1]);
+			  my_printf("%d",a[n-1]);
 }
 
 	

@@ -5,10 +5,10 @@ int main_bench()
 {
     int n,i,j,k,f;
     int	year[200],mon1[200],day,mon2[200],t1,t2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for (i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year[i],&mon1[i],&mon2[i]);
+		my_scanf("%d%d%d",&year[i],&mon1[i],&mon2[i]);
 	}
 	for (i=0;i<n;i++)
 	{	
@@ -45,9 +45,9 @@ int main_bench()
 			t2=t2+day;
 		}
 		if(((t2-t1)%7==0)||((t1-t2)%7==0)){
-			printf("YES\n");}
+			my_printf("YES\n");}
 		else{
-			printf("NO\n");}
+			my_printf("NO\n");}
 
     }
 	return 0;

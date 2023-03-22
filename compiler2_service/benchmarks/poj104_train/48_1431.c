@@ -4,7 +4,7 @@ int main_bench()
 {
     int a[11][11]={0},b[11][11]={0},c[11][11]={0},d[11][11]={0},e[11][11]={0};
     int m,n;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     a[5][5]=m;
     int i,j,i1,j1,i2,j2,i3,j3,i4,j4;
     if(n==1)
@@ -20,9 +20,9 @@ int main_bench()
         {
             for(j1=1;j1<=8;j1++)
             {
-                printf("%d ",b[i1][j1]);
+                my_printf("%d ",b[i1][j1]);
             }
-            printf("%d\n",b[i1][j1]);
+            my_printf("%d\n",b[i1][j1]);
         }
     }
     if(n==2)
@@ -45,9 +45,9 @@ int main_bench()
         {
             for(j2=1;j2<=8;j2++)
             {
-                printf("%d ",c[i2][j2]);
+                my_printf("%d ",c[i2][j2]);
             }
-            printf("%d\n",c[i2][j2]);
+            my_printf("%d\n",c[i2][j2]);
         }
     }
     if(n==3)
@@ -77,9 +77,9 @@ int main_bench()
         {
             for(j3=1;j3<=8;j3++)
             {
-                printf("%d ",d[i3][j3]);
+                my_printf("%d ",d[i3][j3]);
             }
-            printf("%d\n",d[i3][j3]);
+            my_printf("%d\n",d[i3][j3]);
         }
     }
     if(n==4)
@@ -116,9 +116,9 @@ int main_bench()
         {
             for(j4=1;j4<=8;j4++)
             {
-                printf("%d ",e[i4][j4]);
+                my_printf("%d ",e[i4][j4]);
             }
-            printf("%d\n",e[i4][j4]);
+            my_printf("%d\n",e[i4][j4]);
         }
     }
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i;
 for(i=0;i<n;i++)          
 {
         int a,b,c,d;
         d=0;
- scanf("%d %d %d",&a,&b,&c);   
+ my_scanf("%d %d %d",&a,&b,&c);   
  if((a%400==0)||(a%100!=0&&a%4==0))
  d=1;
  int A[12];
@@ -27,9 +27,9 @@ for(i=0;i<n;i++)
      f=f+A[b+j-1];     
    }
    if(f%7==0)
-   printf("YES\n");
+   my_printf("YES\n");
    else
-   printf("NO\n");
+   my_printf("NO\n");
 }
 return(0);
 }

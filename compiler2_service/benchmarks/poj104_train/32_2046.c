@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,length_a,length_b,i,j,k;
 	char a[128],b[128];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 		length_a=strlen(a);
 		length_b=strlen(b);
 		for(j=length_a;(length_a-j)<length_b;j--)

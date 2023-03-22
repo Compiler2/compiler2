@@ -6,7 +6,7 @@ char a[6];
 int i,n;
 for(i=0;i<6;i++)
 {
-scanf("%c",&a[i]);
+my_scanf("%c",&a[i]);
 if (a[i]=='\n')
 {
 i--;
@@ -15,6 +15,6 @@ break;
 }
 }
 for(i=n;i>=0;i--)
-printf("%c",a[i]);
-printf("\n");
+my_printf("%c",a[i]);
+my_printf("\n");
 }

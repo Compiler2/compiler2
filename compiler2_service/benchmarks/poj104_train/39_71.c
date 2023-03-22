@@ -13,9 +13,9 @@ int main_bench()
 	struct stu stu[100];
 	int n,i,j;
     int k[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco,&stu[i].score,&stu[i].a,&stu[i].b,&stu[i].p);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].sco,&stu[i].score,&stu[i].a,&stu[i].b,&stu[i].p);
     for(i=0;i<n;i++)
 	{
 		if(stu[i].sco>80&&stu[i].p>=1) k[i]=k[i]+8000;
@@ -33,7 +33,7 @@ int main_bench()
 		{if(k[j]>k[i]) break;}
 		if(j==n) break;
 	}
-	printf("%s\n",stu[i].name);
-	printf("%d\n",k[i]);
-	printf("%d",total);
+	my_printf("%s\n",stu[i].name);
+	my_printf("%d\n",k[i]);
+	my_printf("%d",total);
 }

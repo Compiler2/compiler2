@@ -9,12 +9,12 @@ int main_bench()
   int a[100];
   int maxindex,c;
   c=0;
-  scanf("%d",&b);
+  my_scanf("%d",&b);
   for(i=0; i < 100; i++)
            a[i] = 0;
   if(b>1 && b<100){
      for(i=0;i<b;i++){
-         scanf("%d",&(a[i]));
+         my_scanf("%d",&(a[i]));
          }
      for(k=1;k<=2;k++){
         for(i=0;i<=100-k-1;i++){
@@ -25,10 +25,10 @@ int main_bench()
        
            }
         }
-    printf("%d\n",a[100-k]);
+    my_printf("%d\n",a[100-k]);
       }
   }else{
-  printf("error");
+  my_printf("error");
   }	
   return 0;
 }

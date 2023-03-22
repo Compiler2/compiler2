@@ -5,10 +5,10 @@ int main_bench()
 	char s1[100],s2[100];
 	int i,j;
 
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	if(strlen(s1)!=strlen(s2))
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return;
 	}
 	
@@ -25,9 +25,9 @@ int main_bench()
 
 		if(j>=(int)strlen(s2))
 		{
-			printf("NO");
+			my_printf("NO");
 			return;
 		}	
 	}
-	printf("YES\n");
+	my_printf("YES\n");
 }

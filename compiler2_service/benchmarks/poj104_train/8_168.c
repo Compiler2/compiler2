@@ -12,11 +12,11 @@ int main_bench()
 
 void a1()
 {
-	scanf("%d%d",&num_a,&num_b);
+	my_scanf("%d%d",&num_a,&num_b);
 	for(i=0;i<num_a;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<num_b;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 }
 
 void a2()
@@ -45,7 +45,7 @@ void a3()
 void a4()
 {
 	for(i=0;i<num_a+num_b-1;i++)
-		printf("%d " ,a[i]);
-	printf("%d\n",a[num_a+num_b-1]);
+		my_printf("%d " ,a[i]);
+	my_printf("%d\n",a[num_a+num_b-1]);
 }
 	

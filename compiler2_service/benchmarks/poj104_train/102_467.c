@@ -4,20 +4,20 @@ int main_bench()
 {
     char xb[10];
     int i,n,a=0,b=0,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     float m,shuzunan[40],shuzunv[40];
     for(i=0;i<n;i++)
     {
        
-       scanf("%s",&xb);    
+       my_scanf("%s",&xb);    
        if(*xb=='m')
        {
-          scanf("%f",&shuzunan[a]);
+          my_scanf("%f",&shuzunan[a]);
           a++;
        }
        if(*xb=='f')
        {
-          scanf("%f",&shuzunv[b]);
+          my_scanf("%f",&shuzunv[b]);
           b++;
        }
     }
@@ -45,14 +45,14 @@ int main_bench()
                }
            }
     }
-    printf("%.2f",shuzunan[0]);
+    my_printf("%.2f",shuzunan[0]);
     for(k=1;k<a;k++)
     {
-        printf(" %.2f",shuzunan[k]);
+        my_printf(" %.2f",shuzunan[k]);
     }
     for(k=0;k<b;k++)
     {
-        printf(" %.2f",shuzunv[k]);
+        my_printf(" %.2f",shuzunv[k]);
     }                     
 	
 

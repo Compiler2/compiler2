@@ -8,7 +8,7 @@ int main_bench()
 	int i,p,l,s=0,j=0,k=0,sign=0,max,max2;
  	for(i=0;;i++)
 	{
-		scanf("%c",&a);
+		my_scanf("%c",&a);
 		if(a!='\n'&&a!=',')
 		{
 			num[j][k]=a;
@@ -41,8 +41,8 @@ int main_bench()
 			sign=1;
 		}
 	}
-	if(sign) printf("%d",max2);
-		else printf("No");
+	if(sign) my_printf("%d",max2);
+		else my_printf("No");
 
 }
  

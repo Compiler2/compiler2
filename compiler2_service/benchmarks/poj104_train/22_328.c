@@ -50,8 +50,8 @@ int main_bench()
   for(i=0;i<n;i++)
    if(a[i]>max) max=a[i];
   if(max>-1)
-   printf("%d\n",max);
-  else printf("No\n");
+   my_printf("%d\n",max);
+  else my_printf("No\n");
   getchar();
   getchar();
 }

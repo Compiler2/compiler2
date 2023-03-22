@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int year,month,day,month2,n;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 		if (year%4==0&&year%100!=0||year%400==0)
 			month2=29;
 		else
@@ -32,6 +32,6 @@ if(month==11)
 n=31+month2+31+30+31+30+31+31+30+31+day;
 if(month==12)
 n=31+month2+31+30+31+30+31+31+30+31+30+day;
-printf("%d",n);
+my_printf("%d",n);
  return 0;
 }

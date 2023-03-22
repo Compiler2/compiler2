@@ -45,7 +45,7 @@ int youk(char c[],int j,int len)
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	getchar();
 
@@ -53,12 +53,12 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		char c[200];
-		scanf("%s", c);
+		my_scanf("%s", c);
 		getchar();
 
-		printf(c);
+		my_printf(c);
 
-		printf("\n");
+		my_printf("\n");
 
 		int len=strlen(c);
 
@@ -73,7 +73,7 @@ int main_bench()
 					putchar('$');
 				}
 				else
-					printf(" ");
+					my_printf(" ");
 			}
 
 			else if(c[j]==')')
@@ -92,7 +92,7 @@ int main_bench()
 			}
 			
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

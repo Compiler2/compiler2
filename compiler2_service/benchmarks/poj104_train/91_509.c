@@ -11,7 +11,7 @@ int main_bench()
 	}
 	y[l-1]=x[l-1]+x[0];
 	y[l]='\0';
-	printf("%s",y);
+	my_printf("%s",y);
 	return 0;
 }
 	

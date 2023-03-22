@@ -10,7 +10,7 @@ int main_bench()
 		int sum;
 		for(int j=0;j<6;j++)
 		{
-			scanf("%d",&(sz[j]));
+			my_scanf("%d",&(sz[j]));
 		}
 		if(sz[0]==0&&sz[1]==0&&sz[2]==0&&sz[3]==0&&sz[4]==0&&sz[5]==0)
 		{
@@ -19,7 +19,7 @@ int main_bench()
 		else
 		{
 			sum=(11-sz[0]+sz[3])*3600+(59-sz[1]+sz[4])*60+(60-sz[2]+sz[5]);
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 		}
 	}
 

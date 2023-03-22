@@ -3,13 +3,13 @@
 main_bench()
 {
       char a[101];
-      scanf("%s",a);
+      my_scanf("%s",a);
       int n=strlen(a);
       int b[101];
       for (int i=0;i<n;i++)
       b[i]=a[i]-'0';
       int s[100];
-      if (n<3) printf("%d\n%d\n",atoi(a)/13,atoi(a)%13);
+      if (n<3) my_printf("%d\n%d\n",atoi(a)/13,atoi(a)%13);
       else
       {
           int i=0;
@@ -26,9 +26,9 @@ main_bench()
               i++;}
            }
       
-       if(s[0]==0) for (int i=1;i<n-1;i++) printf("%d",s[i]);
-       else for (int i=0;i<n-1;i++) printf("%d",s[i]);
-       printf("\n%d",b[n-1]);
+       if(s[0]==0) for (int i=1;i<n-1;i++) my_printf("%d",s[i]);
+       else for (int i=0;i<n-1;i++) my_printf("%d",s[i]);
+       my_printf("\n%d",b[n-1]);
        }
 
 }

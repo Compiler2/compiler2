@@ -25,8 +25,8 @@ int main_bench()
 		else d[j]=b[j];
 	}
 	d[j]='\0';
-	if(strcmp(c,d)==0) printf("=");
-	if(strcmp(c,d)>0) printf(">");
-	if(strcmp(c,d)<0) printf("<"); 
+	if(strcmp(c,d)==0) my_printf("=");
+	if(strcmp(c,d)>0) my_printf(">");
+	if(strcmp(c,d)<0) my_printf("<"); 
 	return 0;
 }

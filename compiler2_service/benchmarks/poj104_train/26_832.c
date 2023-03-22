@@ -17,7 +17,7 @@ if(a[i-1]!=' ')
 {b[k]=a[i];
 k++;continue;}
 }
-printf("%s",b);
+my_printf("%s",b);
 return 0;
 }
 

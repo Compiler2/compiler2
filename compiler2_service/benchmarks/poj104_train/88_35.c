@@ -13,12 +13,12 @@ int main_bench()
 		{
 			temp[c]='\0';
 			c=0;
-			printf("%s\n",temp);
+			my_printf("%s\n",temp);
 		}
 		j++;
 	}
 	temp[c]='\0';
-	printf("%s",temp);
+	my_printf("%s",temp);
 	return 0;
 }
 		

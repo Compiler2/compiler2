@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,i;
     double a=1.0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
        a=a*2;
     }
-    printf("%.0lf",a);
-    scanf("%d",&n);
+    my_printf("%.0lf",a);
+    my_scanf("%d",&n);
     return 0;
 }

@@ -23,11 +23,11 @@ int main_bench()
 	}
 	zf[t][k+1]='\0';
 	len[0]=strlen(zf[0]);
-	printf("%d",len[0]);
+	my_printf("%d",len[0]);
 	for(i=1;i<t;i++)
 	{
 		len[i]=strlen(zf[i]);
-		printf(",%d",len[i]);
+		my_printf(",%d",len[i]);
 	}
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int m,n,a[20000],i,j;
 	j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	printf("%d",a[0]);
+		my_scanf("%d",&a[i]);
+	my_printf("%d",a[0]);
 	m=1;
 	if(n>1)
 	{
@@ -20,10 +20,10 @@ int main_bench()
 					j=j+1;
 			}
 			if(j==0)
-				printf(" %d",a[m]);
+				my_printf(" %d",a[m]);
 			j=0;
 			m=m+1;
 		}while(m<n);
 	}
-	printf("\n");
+	my_printf("\n");
 }

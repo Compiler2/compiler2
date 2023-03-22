@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int m,n,a[1000][1000],b[1000][2],i,j,x=0,e;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=1;i<m+1;i++){
 		for(j=1;j<n+1;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<=m+1;i++){
@@ -25,6 +25,6 @@ int main_bench(){
 	}
 
 	for(i=0;i<x;i++){
-		printf("%d %d\n",b[i][0],b[i][1]);
+		my_printf("%d %d\n",b[i][0],b[i][1]);
 	}
 }

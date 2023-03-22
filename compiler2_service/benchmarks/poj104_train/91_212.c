@@ -6,6 +6,6 @@ int main_bench()
    p=(char *)malloc(200*sizeof(char));
    gets(p);
    for(a=p,b=p+1;b<p+strlen(p);a++,b++)
-	   printf("%c",*a+*b);
-   printf("%c",*p+*a);
+	   my_printf("%c",*a+*b);
+   my_printf("%c",*p+*a);
 }

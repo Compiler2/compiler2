@@ -4,8 +4,8 @@ int main_bench(){
 	char a[50][50]={'0'},b;
 	int i,max=0,min=0;
 	for(i=0;i<50;i++){
-		scanf("%s",a[i]);
-		scanf("%c",&b);
+		my_scanf("%s",a[i]);
+		my_scanf("%c",&b);
 		if(b==10){
 			break;
 		}
@@ -18,6 +18,6 @@ int main_bench(){
 			min=i;
 		}
 	}
-	printf("%s\n%s",a[max],a[min]);
+	my_printf("%s\n%s",a[max],a[min]);
 	return 0;
 }	

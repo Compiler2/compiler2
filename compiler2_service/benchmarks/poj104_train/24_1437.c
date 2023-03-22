@@ -26,7 +26,7 @@ int main_bench()
 			strcpy(zuiduan,danci[i+1]);
 		}
 	}
-	printf("%s\n",zuichang);
-	printf("%s\n",zuiduan);
+	my_printf("%s\n",zuichang);
+	my_printf("%s\n",zuiduan);
 	return 0;
 }

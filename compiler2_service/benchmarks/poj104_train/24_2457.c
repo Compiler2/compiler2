@@ -22,6 +22,6 @@ int main_bench()
 		k++;
 	}
 
-	printf("%s\n%s",a[x],a[y]);
+	my_printf("%s\n%s",a[x],a[y]);
 	return 0;
 }

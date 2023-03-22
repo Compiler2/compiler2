@@ -7,7 +7,7 @@ int main_bench()
 	while (c==',')
 	{
 		i++;
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 	}
 	w=i+1;
@@ -16,7 +16,7 @@ int main_bench()
 	while (c==',')
 	{
 		i++;
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		c=getchar();
 	}	
 	for (n=0;n<=999;n++)
@@ -32,7 +32,7 @@ int main_bench()
 		if (m[n]>max)
 			max=m[n];
 	}
-	printf("%d ",w);
-	printf("%d\n",max);
+	my_printf("%d ",w);
+	my_printf("%d\n",max);
 }
 	

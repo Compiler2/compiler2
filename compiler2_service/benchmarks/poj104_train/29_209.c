@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,z[1000],m[1000],k;
 	double sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		for(j=0;j<k;j++)
 		{
 			z[0]=2;z[1]=3;
@@ -19,7 +19,7 @@ int main_bench()
 			}
 			sum+=((double)z[j])/m[j];
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 		sum=0;
 	}
 	return 0;

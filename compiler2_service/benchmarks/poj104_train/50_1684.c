@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int dayofweek,days=12,mon[12],i,d,e;
-	scanf("%d",&dayofweek);
+	my_scanf("%d",&dayofweek);
 	for(i=0;i<12;i++)
 	{
 		if(i==1)
@@ -21,7 +21,7 @@ int main_bench()
 	{
 		d=days%7;
 		if(d==e)
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		days+=mon[i];	
 	}
 	return 0;

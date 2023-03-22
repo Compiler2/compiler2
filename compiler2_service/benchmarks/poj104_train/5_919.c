@@ -8,9 +8,9 @@ int main_bench(){
     n=0;
     a=0;
     char sz[500],s[500];
-    scanf("%lf",&w);
-    scanf("%s",sz);
-    scanf("%s",s);
+    my_scanf("%lf",&w);
+    my_scanf("%s",sz);
+    my_scanf("%s",s);
     for(i=0;sz[i]!='\0';i++){
        x++; 
     }
@@ -36,15 +36,15 @@ int main_bench(){
         }
     }
        if(a==1){
-           printf("error");
+           my_printf("error");
        }
     else if(a==0){
       n=1.0*n/x; 
         if(n>=w){
-        printf("yes");
+        my_printf("yes");
       }
       else if(n<w){
-        printf("no");
+        my_printf("no");
       }
     }
     return 0;

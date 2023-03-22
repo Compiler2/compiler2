@@ -3,10 +3,10 @@
 int main_bench(){
     int arr[26],i,j,t,n=1,min,num[26];
     char s[10000];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for (i=0;i<t;i++)
         {
-        scanf("%s",s);
+        my_scanf("%s",s);
         for (j=0;j<26;j++)
         {
             arr[j]=0;
@@ -33,8 +33,8 @@ int main_bench(){
             if ((num[j]<num[min])&&(num[j]>0))
                min=j;
         if (min<26)
-        printf("%c\n",min+97);
-        else printf("no");
+        my_printf("%c\n",min+97);
+        else my_printf("no");
         }
     return 0;
 }

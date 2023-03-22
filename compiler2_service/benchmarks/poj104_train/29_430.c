@@ -4,9 +4,9 @@ int main_bench()
 {
     int m,n;
     int i,j,k;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for (k=0;k<m;k++) {
-        scanf("%d",&n);
+        my_scanf("%d",&n);
         float s=0;
         float*num=(float*) malloc(sizeof(float)*(2*n+2));
         float*nm=(float*) malloc(sizeof(float)*(n+1));
@@ -21,7 +21,7 @@ int main_bench()
         for (i=1;i<=n;i++) {
                 s+=nm[i];
                 }
-        printf("%.3f\n",s);
+        my_printf("%.3f\n",s);
         free(num);
         free(nm);
         }

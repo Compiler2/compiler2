@@ -17,12 +17,12 @@ int main_bench()
 				}
 			}
 			if(check == 0){
-				printf("%s",c);
+				my_printf("%s",c);
 				i +=strlen(b) - 1;
 				continue;
 			}
 		}
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 			
 				return 0;

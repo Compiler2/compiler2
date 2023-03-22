@@ -3,9 +3,9 @@
 int main_bench(){
 int a[1000];
 int n,k,i,j,sum,res;
-scanf("%d %d\n",&n,&k);
+my_scanf("%d %d\n",&n,&k);
 for(i=0;i<n;i++){
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 res=0;
 for(i=0;i<n;i++){
@@ -17,6 +17,6 @@ for(i=0;i<n;i++){
 	}
 	}
 }
-if(res==0){printf("no");}else{printf("yes");}
+if(res==0){my_printf("no");}else{my_printf("yes");}
 return 0;
 }

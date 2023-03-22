@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n,i,k,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100];
 	for(i=0;i<n-1;i++){
-		scanf("%d ",&a[i]);
+		my_scanf("%d ",&a[i]);
 	}
 	if(i=n-1){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	int e;
 	for(k=1;k<n/2+1;k++){
@@ -17,10 +17,10 @@ int main_bench(){
 		a[k-1]=e;
 	}
 	for(t=0;t<n-1;t++){
-		printf("%d ",a[t]);
+		my_printf("%d ",a[t]);
 	}
 	if(t=n-1){
-		printf("%d",a[t]);
+		my_printf("%d",a[t]);
 	}			
 	return 0;
 }

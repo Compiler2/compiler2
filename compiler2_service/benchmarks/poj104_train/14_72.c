@@ -11,10 +11,10 @@ int main_bench()
 {
 	max.sum=secondmax.sum=thirdmax.sum=0;
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
 		stu[i].sum=stu[i].score1+stu[i].score2;
 	}
 	for (i=0;i<n;i++)
@@ -48,6 +48,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d",max.num,max.sum,secondmax.num,secondmax.sum,thirdmax.num,thirdmax.sum);
+	my_printf("%d %d\n%d %d\n%d %d",max.num,max.sum,secondmax.num,secondmax.sum,thirdmax.num,thirdmax.sum);
 	return 0;
 }

@@ -5,21 +5,21 @@ int main_bench()
 {
 	int n,i;
 	int timer=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n-2;i++)
 	{
 		if(prime(i))
 		{
 			if(prime(i+2))
 			{
-				printf("%d %d\n",i,i+2);
+				my_printf("%d %d\n",i,i+2);
 				timer++;
 			}
 		}
 	}
 	if(timer==0)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

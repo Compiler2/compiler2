@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,k;
 	char c;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		while(1)
@@ -38,12 +38,12 @@ int main_bench()
 				}
 			}
 			if(ok==1)
-			    printf("1\n");
+			    my_printf("1\n");
 			else
-			    printf("0\n");
+			    my_printf("0\n");
 		}
 		else
-			printf("0\n");
+			my_printf("0\n");
 	}
 	return 0;
 }

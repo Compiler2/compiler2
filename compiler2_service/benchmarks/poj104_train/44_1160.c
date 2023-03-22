@@ -6,14 +6,14 @@ void reverse(char a[10]){
     char b[10];
     
     if(strcmp(a,"0")==0){
-       printf("0\n");return;}
+       my_printf("0\n");return;}
        
     if(strcmp(a,"-0")==0){
-       printf("0\n");return;}
+       my_printf("0\n");return;}
     
     if(a[0]=='-'){
        
-       printf("-");
+       my_printf("-");
        k=1;
     }
     
@@ -23,9 +23,9 @@ void reverse(char a[10]){
         else 
            s=1;
         b[i]=a[strlen(a)-1-i];
-        printf("%c",b[i]);
+        my_printf("%c",b[i]);
     }
-    printf("\n");
+    my_printf("\n");
     
 }
 
@@ -33,7 +33,7 @@ int main_bench(){
     int i,j,k=0;
     char a[10];
     for(i=0;i<6;++i){
-        scanf("%s",a);
+        my_scanf("%s",a);
         reverse(a);  
     }
 } 

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[100][100];
 	int n,x=0,y=0,i,j,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -29,6 +29,6 @@ int main_bench()
 			break;
 	}
 	s=(x-2)*(y-2);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

@@ -18,11 +18,11 @@ int main_bench()
 
 void cout ()
 { int i;
-  scanf("%d %d",&n,&m);
+  my_scanf("%d %d",&n,&m);
   for(i=0;i<n;i++)
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
   for(i=0;i<m;i++)
-   scanf("%d",&b[i]);
+   my_scanf("%d",&b[i]);
 }
 
 void p ()
@@ -57,7 +57,7 @@ void com ()
 void play ()
 {  int i;
    for(i=0;i<n+m;i++)
-    { printf("%d",c[i]);
-      if (i!=n+m-1) printf(" ");
+    { my_printf("%d",c[i]);
+      if (i!=n+m-1) my_printf(" ");
     }
 }

@@ -3,17 +3,17 @@
 int main_bench()
 {
     int n,a=0,b=0,shuzu[111];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i,j;
     for(i=0;i<n;i++){
-                     scanf("%d",&shuzu[i]);
+                     my_scanf("%d",&shuzu[i]);
                      }
     for(i=0;i<n;i++){
                       if(a<shuzu[i]){
                                        a=shuzu[i] ;
                                        }
                                        }
-    printf("%d\n",a);
+    my_printf("%d\n",a);
     for(i=0;i<n;i++){
                       if(a==shuzu[i]){    
                                           shuzu[i]=0;  
@@ -24,6 +24,6 @@ int main_bench()
                                       b=shuzu[i] ; 
                                       }
                                       }
-     printf("%d",b);     
+     my_printf("%d",b);     
      return 0;
      }                                                                                            

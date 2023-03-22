@@ -6,7 +6,7 @@ int main_bench()
 	int c[100]={0};
 	int flag=0,j,i;
 	int end=1;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)==strlen(b))
 	{
 	for(i=0;i<strlen(a);i++)
@@ -29,7 +29,7 @@ int main_bench()
 	}
 	}
 	else end=0;
-	if(end==0) printf("NO");
-	else printf("YES");
+	if(end==0) my_printf("NO");
+	else my_printf("YES");
 	return 0;
 }

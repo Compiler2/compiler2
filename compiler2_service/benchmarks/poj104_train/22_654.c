@@ -8,14 +8,14 @@ int comp(const void*a,const void*b)
 int main_bench()
 {
     int result[301],i=1,j;
-    scanf("%d",&result[0]);
-    while(scanf(",%d",&result[i++])==1);
+    my_scanf("%d",&result[0]);
+    while(my_scanf(",%d",&result[i++])==1);
     
     qsort(result,i,sizeof(result[0]),comp);
     if(find2nd(i-1,result)==-1)
-    printf("No");
+    my_printf("No");
     else
-    printf("%d",find2nd(i-1,result));
+    my_printf("%d",find2nd(i-1,result));
 
     return 0;
 }

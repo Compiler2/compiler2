@@ -14,7 +14,7 @@ int main_bench(){
 	}
 	for(i=0;s[i];i++){
 		if(s1[i]==1){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 	return 0;

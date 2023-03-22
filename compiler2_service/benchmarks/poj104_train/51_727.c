@@ -8,8 +8,8 @@ int main_bench()
 	char str[501];
 	char s[500][5];
 	int n;
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	int i,j;
 	int len=strlen(str);
 	int num=len-n+1;
@@ -46,12 +46,12 @@ int main_bench()
 
 
 
-	if(!flag) printf("NO\n");
+	if(!flag) my_printf("NO\n");
 	else {
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<shu;i++){
 	
-	printf("%s\n",s[ji[i]]);
+	my_printf("%s\n",s[ji[i]]);
 		}
 	}
 

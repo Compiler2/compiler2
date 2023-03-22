@@ -6,8 +6,8 @@ main_bench()
     int i, i1, i2, j1, j2, j3, j4, j5, c1, c2, jinwei, head;
     char a[251], b[251];
     
-    scanf("%s", a);
-    scanf("%s", b);
+    my_scanf("%s", a);
+    my_scanf("%s", b);
     c1 = strlen(a);  c2 = strlen(b);
     a1[0] = b1[0] = 0;
     for(i1=1; i1<=c1; i1++)
@@ -39,12 +39,12 @@ main_bench()
                     break; 
                 }
         if(head==0 && c[0] == 0)
-             printf("0");
+             my_printf("0");
         else
         {
             for(j3=head; j3<=c1; j3++)
-                printf("%d", c[j3]);
-            printf("\n");
+                my_printf("%d", c[j3]);
+            my_printf("\n");
         }
     }
     else
@@ -72,12 +72,12 @@ main_bench()
                     break; 
                 }
         if(head==0 && c[0]==0)
-             printf("0");
+             my_printf("0");
         else
         {
             for(j3=head; j3<=c2; j3++)
-                printf("%d", c[j3]);
-            printf("\n");
+                my_printf("%d", c[j3]);
+            my_printf("\n");
         }
     }    
               

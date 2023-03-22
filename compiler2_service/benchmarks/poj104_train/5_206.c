@@ -4,7 +4,7 @@ int main_bench(){
 	int a,b,c=0;
 	double t,k=0;
 	char s[500]={'\0'},x[500]={'\0'};
-	scanf("%lf %s %s",&t,s,x);
+	my_scanf("%lf %s %s",&t,s,x);
 	for(a=0;s[a]!='\0';a++){
 		if(s[a]>'Z'){
 			k=1;
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 	}
 	if(a!=b||k==1){
-		printf("error");
+		my_printf("error");
 	}
 	else{
 		for(a=0;a<b;a++){
@@ -28,10 +28,10 @@ int main_bench(){
 		}
 		k=1.0*c/b;
 		if(k>t){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 	}	
 	return 0;

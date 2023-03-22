@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(b=1;b<=5;b++)
 		{
-			scanf("%d",&z[a][b]);
+			my_scanf("%d",&z[a][b]);
 		}
 	}
     for (a=1;a<=5;a++)
@@ -24,11 +24,11 @@ int main_bench()
 			}
 			if (e==2) 
 				{
-					printf("%d %d %d",a,b,z[a][b]);
+					my_printf("%d %d %d",a,b,z[a][b]);
 					f=1;
 				}
 		}
 	}
-	if (f==0) printf("not found");
+	if (f==0) my_printf("not found");
 	return 0;
 }

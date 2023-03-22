@@ -20,10 +20,10 @@ int main_bench()
 				s4[b]=s1[i];
 				s4[b+1]='\0';
 				if(strcmp(s4,s2)==0){
-					printf("%s",s3);
+					my_printf("%s",s3);
 				}
 				else{
-					printf("%s",s4);
+					my_printf("%s",s4);
 				}
 			}
 		}
@@ -31,10 +31,10 @@ int main_bench()
 			s4[b]='\0';
 			b=0;
 			if(strcmp(s4,s2)==0){
-				printf("%s ",s3);
+				my_printf("%s ",s3);
 			}
 			else{
-				printf("%s ",s4);
+				my_printf("%s ",s4);
 			}
 		}
 	}

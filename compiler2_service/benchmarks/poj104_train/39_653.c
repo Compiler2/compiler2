@@ -14,11 +14,11 @@ int main_bench()
 {
 	struct student *s;
 	int n,i,sum=0,q,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=(struct student*)malloc(n*sizeof(struct student));
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",s[i].a,&s[i].b,&s[i].c,&s[i].d,&s[i].e,&s[i].f);
+		my_scanf("%s %d %d %c %c %d",s[i].a,&s[i].b,&s[i].c,&s[i].d,&s[i].e,&s[i].f);
 	}
     for(i=0;i<n;i++)
 	{
@@ -45,7 +45,7 @@ int main_bench()
 		   max=s[i].g;
 		}
 	}
-	printf("%s\n%d\n%d",s[q].a,s[q].g,sum);
+	my_printf("%s\n%d\n%d",s[q].a,s[q].g,sum);
 
 return 0;
 }

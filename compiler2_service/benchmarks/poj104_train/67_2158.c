@@ -5,24 +5,24 @@ int main_bench()
     int n,i;
     double x;
     int a[100],b[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&a[i]);
-        scanf("%d",&b[i]);
+        my_scanf("%d",&a[i]);
+        my_scanf("%d",&b[i]);
     }
     x=(double)(b[0])/(double)(a[0]);
     for(i=1;i<n;i++){
         if((double)(b[i])/(double)(a[i])-x>0.05){
-            printf("better");
-            printf("\n");
+            my_printf("better");
+            my_printf("\n");
         }
         else if(x-(double)(b[i])/(double)(a[i])>0.05){
-            printf("worse");
-            printf("\n");
+            my_printf("worse");
+            my_printf("\n");
         }
         else{
-            printf("same");
-            printf("\n");
+            my_printf("same");
+            my_printf("\n");
         }
     }
     return 0;

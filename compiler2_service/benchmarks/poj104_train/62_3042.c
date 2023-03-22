@@ -21,6 +21,6 @@ int main_bench(){
 			i=j;
 		}
 	}
-	printf("%s",s); 
+	my_printf("%s",s); 
 	return 0;
 }

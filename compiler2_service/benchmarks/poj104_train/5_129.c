@@ -5,9 +5,9 @@ int main_bench()
 	int i,c=0,d=0,e=0,g=0;
 	double f,k;
 	char a[503],b[503];
-	scanf("%lf",&k);
-	scanf ("%s",a);
-	scanf ("%s",b);
+	my_scanf("%lf",&k);
+	my_scanf ("%s",a);
+	my_scanf ("%s",b);
 	for (i=0;i<503;i++)
 	{
 		if (a[i]=='\0')
@@ -28,7 +28,7 @@ int main_bench()
 			g=g+1;
 	}
 	if (c!=d||g!=0)
-		printf ("error\n");
+		my_printf ("error\n");
 	else
 	{
 		for (i=0;i<c;i++)
@@ -38,9 +38,9 @@ int main_bench()
 		}
 		f=1.0*e/c;
 		if(f>k)
-			printf ("yes\n");
+			my_printf ("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

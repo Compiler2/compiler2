@@ -44,12 +44,12 @@ int main_bench()
 	for(i=0;i<j;i++)
 	{
 		if(e[i]==c)
-		{printf("%s\n",words[i].a);break;}
+		{my_printf("%s\n",words[i].a);break;}
 	}
 	for(i=0;i<j;i++)
 	{
 		if(e[i]==d)
-		{printf("%s\n",words[i].a);break;}
+		{my_printf("%s\n",words[i].a);break;}
 	}
 	return 0;
 }

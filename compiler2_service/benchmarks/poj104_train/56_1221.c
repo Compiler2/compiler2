@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,g;
-	scanf ("%d",&f);
+	my_scanf ("%d",&f);
 	if (f>=10000)
 	{
 		a=(f-f%10000)/10000;
@@ -16,7 +16,7 @@ int main_bench()
 		f=f-d*10;
 		e=f;
     	g=e*10000+d*1000+c*100+b*10+a;
-	    printf ("%d",g);
+	    my_printf ("%d",g);
 	}
 	else if (f>=1000)
 	{
@@ -28,7 +28,7 @@ int main_bench()
 		f=f-d*10;
 		e=f;
     	g=e*1000+d*100+c*10+b*1;
-    	printf ("%d",g);
+    	my_printf ("%d",g);
 	}
 	else if (f>=100)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 		f=f-d*10;
 		e=f;
     	g=e*100+d*10+c*1;
-    	printf ("%d",g);
+    	my_printf ("%d",g);
 	}
 	else if (f>=10)
 	{
@@ -46,12 +46,12 @@ int main_bench()
 		f=f-d*10;
 		e=f;
     	g=e*10+d*1;
-    	printf ("%d",g);
+    	my_printf ("%d",g);
 	}
 	else
 	{
 		e=f;
     	g=e;
-    	printf ("%d",g);
+    	my_printf ("%d",g);
 	}
 }

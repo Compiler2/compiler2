@@ -4,7 +4,7 @@ int main_bench()
 {
     int m,n,i,j,e,a;
 	char s[10000],w[10000];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	m=strlen(s);
 	n=strlen(w);
 	for(j=0;j<n;j++)
@@ -20,7 +20,7 @@ int main_bench()
 			}
 			if(k==m) 
 			{
-				printf("%d\n",t-m);
+				my_printf("%d\n",t-m);
 				break;
 			}
 

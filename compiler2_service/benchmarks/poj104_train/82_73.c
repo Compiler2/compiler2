@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,m,j=0,k,max=0;
 	int a[100],b[100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<k;i++)
 	{
@@ -28,6 +28,6 @@ int main_bench()
 		if(j>max) max=j;
 		j=0;
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

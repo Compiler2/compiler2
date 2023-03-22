@@ -4,11 +4,11 @@ int main_bench()
 {
    char str1[251]={'0'},str2[251]={'0'},jin='0';
    int a,b,i,flag=0;
-   scanf("%s",&str1);
-   scanf("%s",&str2);
+   my_scanf("%s",&str1);
+   my_scanf("%s",&str2);
    if (str1[0]=='0' && str2[0]=='0' && strlen(str1)==1 && strlen(str2)==1)
    {
-       printf("0");
+       my_printf("0");
        return 0;
    }
    if (strlen(str1)>=strlen(str2))
@@ -35,8 +35,8 @@ int main_bench()
    }
    if (jin=='1')
    {
-       printf("1");
-       for(i=0;i<=a-1;i++) printf("%c",str1[i]);
+       my_printf("1");
+       for(i=0;i<=a-1;i++) my_printf("%c",str1[i]);
    }
    else
    {
@@ -50,7 +50,7 @@ int main_bench()
            }
            break;
        }
-   for(i=b;i<=a-1;i++) printf("%c",str1[i]);
+   for(i=b;i<=a-1;i++) my_printf("%c",str1[i]);
    }
    return 0;
 }

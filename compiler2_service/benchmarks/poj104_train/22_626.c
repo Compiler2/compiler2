@@ -6,10 +6,10 @@ int main_bench()
 	int y,z;
 	do
 	{
-		scanf("%d",&a[n++]);
+		my_scanf("%d",&a[n++]);
 	}
 	while(getchar()==',');
-    if(n==1) printf("No\n");
+    if(n==1) my_printf("No\n");
     else
     {
     	y=a[0];
@@ -17,10 +17,10 @@ int main_bench()
     	   if(a[i]>y) y=a[i];
  	    i=0;
         while(z=a[i]==y&&i<n)i++; 
-        if(i==n)	 printf("No\n");
+        if(i==n)	 my_printf("No\n");
         else
         {for(i=0;i<n;i++)
  	       if(a[i]!=y&&a[i]>z) z=a[i]; 
-         printf("%d\n",z);}
+         my_printf("%d\n",z);}
     }
 }

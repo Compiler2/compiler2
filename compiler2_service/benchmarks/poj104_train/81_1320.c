@@ -20,13 +20,13 @@ int main_bench()
 	 {
 	   for (j=0;j<5;j++)
 	   {
-		scanf ("%d ",&x[i][j]);
+		my_scanf ("%d ",&x[i][j]);
 			  
 	   
 	   }
 	 
 	 }
-	scanf ("%d%d",&m,&n);
+	my_scanf ("%d%d",&m,&n);
 	if (jiaohuan (m,n)==1)
 	{
     for (j=0;j<5;j++)
@@ -41,18 +41,18 @@ int main_bench()
 	   {
 	     for (j=0;j<5;j++)
 		 {  
-			 if (j==4) {printf ("%d\n",x[i][j]);}	
+			 if (j==4) {my_printf ("%d\n",x[i][j]);}	
 			 
 			 else
 			 {
-		      printf ("%d ",x[i][j]);
+		      my_printf ("%d ",x[i][j]);
 			 }
 		 }
 	   }
 	}
 	else 
 	{
-		printf ("error");
+		my_printf ("error");
 	}
 	return 0;
 }

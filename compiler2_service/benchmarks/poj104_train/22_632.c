@@ -26,10 +26,10 @@ int main_bench()
 	for(i=n-1;i>=0;i--)
 		if(a[i]!=a[n-1])
 		{
-			printf("%d",a[i]);k++;break;
+			my_printf("%d",a[i]);k++;break;
 		}
      if(k==0)
-		 printf("No");
+		 my_printf("No");
 
 	return 0;
 }

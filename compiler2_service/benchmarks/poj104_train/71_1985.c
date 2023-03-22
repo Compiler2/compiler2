@@ -7,9 +7,9 @@ int main_bench()
 	int day1;
 	int day2;
 	int y[200],m1[200],m2[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
+		my_scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
 	}
 	for(i=0;i<n;i++){
 		e=(y[i]%4==0&&y[i]%100!=0||y[i]%400==0)?29:28;
@@ -41,8 +41,8 @@ int main_bench()
 		case 11:{day2=277+e;break;}
 		case 12:{day2=307+e;break;}
 		}
-		if((day1-day2)%7==0||(day2-day1)%7==0)printf("YES\n");
-		else printf("NO\n");
+		if((day1-day2)%7==0||(day2-day1)%7==0)my_printf("YES\n");
+		else my_printf("NO\n");
 
 	}
 	return 0;

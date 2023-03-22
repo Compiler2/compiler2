@@ -7,9 +7,9 @@ int main_bench()
 	int i,l=0;
 	for(i=0;i<6;i++)
 	{
-		scanf("%d",&a[i][0]);
+		my_scanf("%d",&a[i][0]);
 		l=reverse(a[i][0]);
-	    printf("%d\n",l);
+	    my_printf("%d\n",l);
 	}
 
 	return 0;

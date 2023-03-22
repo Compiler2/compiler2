@@ -3,9 +3,9 @@
 int main_bench(){
     int a=0,b=0,n,i;
     int ga[200],gb[200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&ga[i],&gb[i]);
+        my_scanf("%d%d",&ga[i],&gb[i]);
         if(ga[i]==0&&gb[i]==1){
             a+=1;
         }
@@ -29,13 +29,13 @@ int main_bench(){
         }
     }
     if(a==b){
-        printf("Tie");
+        my_printf("Tie");
     }
     else if(a>b){
-        printf("A");
+        my_printf("A");
     }
     else if(a<b){
-        printf("B");
+        my_printf("B");
     }
     return 0;
 }

@@ -5,7 +5,7 @@ int i ;
 int n[100],m[100],r,row=0;
 do{
 	row++;
-	scanf("%d %d",&n[row],&m[row]);
+	my_scanf("%d %d",&n[row],&m[row]);
 	
 }while(n[row]!=0&&m[row]!=0);
 
@@ -38,7 +38,7 @@ for(r=1; r < row; r++){
 	}
 	j=0;
 	k=0;
-	printf("%d\n",L);
+	my_printf("%d\n",L);
 }
 
 

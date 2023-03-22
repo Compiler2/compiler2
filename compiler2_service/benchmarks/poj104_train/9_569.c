@@ -4,10 +4,10 @@ int main_bench()
 {
     char a[110],b[100][1000];
     int n,i,y,l,j,p=0,q=0,c[1000],d[1000],e[1000],m,s,g[1000],v[1000];
-        scanf("%d",&n);
+        my_scanf("%d",&n);
                for(i=1;i<=n;i++)
                            {   
-                               scanf("%s %d",a,&y);
+                               my_scanf("%s %d",a,&y);
                                l=strlen(a);
                                for(j=0;j<l;j++)
                                   {b[i-1][j]=a[j];} 
@@ -39,12 +39,12 @@ int main_bench()
                                              }
                                           else if(d[i]<=m);
                                           }
-                                     printf("%s\n",b[g[s]]);         
+                                     my_printf("%s\n",b[g[s]]);         
                                      m=0; 
                                      d[s]=0;
                                   }      
                             for(i=0;i<=q-1;i++)
-                                  printf("%s\n",b[v[i]]);            
+                                  my_printf("%s\n",b[v[i]]);            
                                      
     
     

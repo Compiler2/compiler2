@@ -13,10 +13,10 @@ struct student
 main_bench()
 {
 	int N;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int i;
 	for(i=0;i<N;i++){
-		scanf("%s%d%d%s%s%d",&stu[i].name,&stu[i].term,&stu[i].access,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
+		my_scanf("%s%d%d%s%s%d",&stu[i].name,&stu[i].term,&stu[i].access,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
 	}
 	for(i=0;i<N;i++){
 		stu[i].all=0;
@@ -45,5 +45,5 @@ main_bench()
 			k=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",stu[k].name,stu[k].all,total);
+	my_printf("%s\n%d\n%d\n",stu[k].name,stu[k].all,total);
 }

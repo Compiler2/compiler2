@@ -36,7 +36,7 @@ int main_bench()
 	}
 	*news='\0';
 	for(news=newline;*news!='\0';news++)
-		printf("%c",*news);
+		my_printf("%c",*news);
 	
 	return 0;
 

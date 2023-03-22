@@ -7,9 +7,9 @@ int main_bench()
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&A[i][j]);
+			my_scanf("%d",&A[i][j]);
 		}
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	if(ar(a,b)==1)
 	{
         for(j=0;j<5;j++)
@@ -22,17 +22,17 @@ int main_bench()
 		{
 		   for(j=0;j<5;j++)
 		   {
-			printf("%d",A[i][j]);
+			my_printf("%d",A[i][j]);
 			if(j!=4)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
 		   }
-		   printf("\n");
+		   my_printf("\n");
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 }
 int ar(int n,int m)
 {

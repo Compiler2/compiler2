@@ -5,13 +5,13 @@ int main_bench()
 	long int a[300];
 	char c[300];
 	int i,num,max,imax,t=0;
-	scanf("%d",&a[0]);
-	scanf("%c",&c[0]);
+	my_scanf("%d",&a[0]);
+	my_scanf("%c",&c[0]);
 	for(i=1;c[i-1]==',';i++)
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 	num=i;
 	if(num==1)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		max=a[0];
@@ -26,9 +26,9 @@ int main_bench()
 			t=1;
 		}
 		if(t==1)
-		printf("%d",imax);
+		my_printf("%d",imax);
 		else
-			printf("No\n");
+			my_printf("No\n");
 	}
 
 }

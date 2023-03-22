@@ -6,10 +6,10 @@ int main_bench()
 	int i,da=0,d=0;
 	
 	for(i=0;i<=2;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     
 	for(i=0;i<=2;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	
     int leap (int year);
 
@@ -73,7 +73,7 @@ int main_bench()
 				d=d+366;
 			else d=d+365;
 	}
-	printf("%d\n",d-da);
+	my_printf("%d\n",d-da);
 	return 0;
 }
 

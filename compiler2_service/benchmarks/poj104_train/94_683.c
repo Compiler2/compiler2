@@ -4,10 +4,10 @@ int main_bench()
 {
     int N,e;
     int a[500],b[500];
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int i=0,t=0;
     while(i<N){
-    scanf(" %d",&a[i]);
+    my_scanf(" %d",&a[i]);
     if(a[i]%2!=0){
     b[t]=a[i];
     t++;
@@ -30,9 +30,9 @@ int main_bench()
     int u=0;
     while(u<t){
     if(u==0){
-    printf("%d",b[0]);
+    my_printf("%d",b[0]);
     }else{
-    printf(",%d",b[u]);
+    my_printf(",%d",b[u]);
     }
     u++;
     }

@@ -5,7 +5,7 @@ int main_bench()
 	char ch[10005];
 
 	int m,n,i,k,ch1[2005]={0},max,min,zd,zx,zd1,zx1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(ch);
 	m=strlen(ch);
@@ -43,13 +43,13 @@ int main_bench()
 	
 	zd1=zd;
 	for(zd=zd;zd<zd1+max;zd++)
-		printf("%c",ch[zd]);
-	printf("\n");
+		my_printf("%c",ch[zd]);
+	my_printf("\n");
 
 	zx1=zx;
 	for(zx;zx<zx1+min;zx++)
-		printf("%c",ch[zx]);
-	printf("\n");
+		my_printf("%c",ch[zx]);
+	my_printf("\n");
     
 	return 0;
 }

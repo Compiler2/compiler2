@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int n,i,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	float average;
 	int b[300];
 	int *a;
     a=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
         sum+=a[i];
 	}
 	average=(float)sum/n;
@@ -36,15 +36,15 @@ int main_bench()
 
     if((max-average)>(average-min))
 	{
-		printf("%d",max);
+		my_printf("%d",max);
 	}
 	else if((max-average)<(average-min))
 	{
-		printf("%d",min);
+		my_printf("%d",min);
 	}
 	else
 	{
-		printf("%d,%d",min,max);
+		my_printf("%d,%d",min,max);
 	}
 	return 0;
 }

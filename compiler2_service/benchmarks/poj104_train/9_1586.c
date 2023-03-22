@@ -10,9 +10,9 @@ int main_bench()
 	int i,j,tem,n,len;
 	char id[20];
 	struct patient a[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%s%d",a[i].id,&a[i].age);
+		my_scanf("%s%d",a[i].id,&a[i].age);
 	for (i=0;i<n;i++)
 	{
 		for (j=n-2;j>=i;j--)
@@ -27,7 +27,7 @@ int main_bench()
 				strcpy(a[j].id,a[j+1].id);
 				strcpy(a[j+1].id,id);
 			}
-		printf("%s\n",a[i].id);
+		my_printf("%s\n",a[i].id);
 	}
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
  int a[101];
  memset(a,0,sizeof(a));
  i=count1=count2=count3=count4=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-	 scanf("%d",&a[i]);
+	 my_scanf("%d",&a[i]);
  for(i=0;i<n;i++){
 	 if(1<=a[i]&&a[i]<=18)
        count1++;
@@ -25,10 +25,10 @@ int main_bench()
 	 if(a[i]>60)
        count4++;
  }
- printf("1-18: %.2f%%\n",(double)count1/n*100);
-printf("19-35: %.2f%%\n",(double)count2/n*100);
-printf("36-60: %.2f%%\n",(double)count3/n*100);
-printf("60??: %.2f%%\n",(double)count4/n*100);
+ my_printf("1-18: %.2f%%\n",(double)count1/n*100);
+my_printf("19-35: %.2f%%\n",(double)count2/n*100);
+my_printf("36-60: %.2f%%\n",(double)count3/n*100);
+my_printf("60??: %.2f%%\n",(double)count4/n*100);
 
 	return 0;
 }

@@ -31,7 +31,7 @@ int hw(int k)
 int main_bench()
 {
 	int m,n,k,bg,ans[1000],j=0,i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if(m>=2)
 		bg=m;
 	else
@@ -40,11 +40,11 @@ int main_bench()
 		if(sushu(k)&&hw(k))
 			ans[j++]=k;
 	if(j==0)
-		printf("no\n");
+		my_printf("no\n");
 	else
 	{
 		for(i=0;i<j-1;i++)
-			printf("%d,",ans[i]);
-		printf("%d\n",ans[j-1]);
+			my_printf("%d,",ans[i]);
+		my_printf("%d\n",ans[j-1]);
 	}
 }

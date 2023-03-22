@@ -28,8 +28,8 @@ int main_bench()
 	for (i=k-1; i>=0; i--)
 	{
 		if (i==0)
-		printf ("%s", *(p+i));
-		else printf ("%s ", *(p+i));
+		my_printf ("%s", *(p+i));
+		else my_printf ("%s ", *(p+i));
 	}
 	return 0;
 }

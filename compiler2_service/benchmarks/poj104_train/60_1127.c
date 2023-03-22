@@ -3,13 +3,13 @@
 int sushu(int n);
 int main_bench(){
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<5){
-		printf("empty");
+		my_printf("empty");
 	}else{
 	for(i=2;i<=n-2;i++){
 		if(sushu(i)==1&&sushu(i+2)==1){
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		}
 	}
 	}

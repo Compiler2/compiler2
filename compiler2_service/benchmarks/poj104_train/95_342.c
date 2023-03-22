@@ -13,8 +13,8 @@ int main_bench()
         if(b[i]<='Z'&&b[i]>='A')b[i]=b[i]+32;
 	}
 	k=strcmp(a,b);
-    if(k>0)printf("%c",'>');
-	if(k<0)printf("%c",'<');
-	if(k==0)printf("%c",'=');
+    if(k>0)my_printf("%c",'>');
+	if(k<0)my_printf("%c",'<');
+	if(k==0)my_printf("%c",'=');
     return 0;
 }

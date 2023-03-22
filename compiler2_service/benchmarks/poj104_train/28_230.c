@@ -30,6 +30,6 @@ int main_bench()
 		p++;
 	}
 	for(i=0;i<k;i++)
-		printf("%d,",a[i]);
-	printf("%d\n",a[k]);
+		my_printf("%d,",a[i]);
+	my_printf("%d\n",a[k]);
 }

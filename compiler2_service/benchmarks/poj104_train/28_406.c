@@ -13,16 +13,16 @@ int main_bench()
 		{
 			m++;
 			if(i==n-1)
-				printf("%d",m);
+				my_printf("%d",m);
 		}
 		if(str[i]==' ')
 		{	
 			if(m!=0)
 			{
-				printf("%d,",m);
+				my_printf("%d,",m);
 				m=0;
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

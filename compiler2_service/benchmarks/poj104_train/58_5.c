@@ -25,8 +25,8 @@ flag=0;
       }
 
   }
-if(flag==1) printf("1\n");
-else printf("0\n");
+if(flag==1) my_printf("1\n");
+else my_printf("0\n");
 }
 return 0;
 }

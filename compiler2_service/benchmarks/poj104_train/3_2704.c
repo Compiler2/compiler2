@@ -5,11 +5,11 @@ int main_bench()
 	int n,k,i,p,q,x;
 	int a[1000];
 	x=-1;
-	scanf("%d %d",&n,&k);
-	scanf("%d",&a[1]);
+	my_scanf("%d %d",&n,&k);
+	my_scanf("%d",&a[1]);
 	for (i=2;i<=n;i++)               
 	{
-		scanf(" %d",&a[i]);
+		my_scanf(" %d",&a[i]);
 	}
 	for (p=1;p<=n-1;p++)            
 	{
@@ -22,8 +22,8 @@ int main_bench()
 		break;
 	}
 	if (x==-1)
-		printf("no");
+		my_printf("no");
 	else
-		printf("yes");
+		my_printf("yes");
 	return 0;
 }

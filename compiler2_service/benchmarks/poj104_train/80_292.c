@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,i;
     int a1=0,a2=0,b1=0,b2=0,n1,n2,n;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	for(i=1;i<y1;i++)
 	{
 		if(i%4==0&&i%100!=0||i%400==0)
@@ -41,5 +41,5 @@ int main_bench()
 	n1=a1+b1+d1;
 	n2=a2+b2+d2;
 	n=n2-n1;
-	printf("%ld\n",n);
+	my_printf("%ld\n",n);
 }

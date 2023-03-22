@@ -25,16 +25,16 @@ for(i=0;b[i];i++)
 k=strcmp(a,b);
 if(k>0)
 {
-	printf(">");
+	my_printf(">");
 }
 else if(k<0)
 {
 
-	printf("<");
+	my_printf("<");
 }
 else
 {
-	printf("=");
+	my_printf("=");
 
 }
 return 0;

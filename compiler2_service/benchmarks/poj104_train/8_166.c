@@ -6,13 +6,13 @@ int m,n;
 void input()
 {
 	int i,j;
-	scanf("%d%d",&m,&n);
-	scanf("\n");
+	my_scanf("%d%d",&m,&n);
+	my_scanf("\n");
 	for(i=0;i<m;i++)
-		scanf("%d ",&a[i]);
+		my_scanf("%d ",&a[i]);
 	for(j=0;j<n-1;j++)
-		scanf("%d ",&b[j]);
-	scanf("%d",&b[n-1]);
+		my_scanf("%d ",&b[j]);
+	my_scanf("%d",&b[n-1]);
 	return;
 }
 
@@ -45,8 +45,8 @@ void output()
 {
 	int i;
 	for(i=0;i<m+n-1;i++)
-	printf("%d ",a[i]);
-	printf("%d",a[m+n-1]);
+	my_printf("%d ",a[i]);
+	my_printf("%d",a[m+n-1]);
 	return;
 }
 

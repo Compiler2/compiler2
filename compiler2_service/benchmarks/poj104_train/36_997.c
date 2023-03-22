@@ -4,7 +4,7 @@ int main_bench()
 {
 	char d1[1000],d2[1000];
 	int a1_cap[26]={0},a1_sma[26]={0},a2_cap[26]={0},a2_sma[26]={0};
-	scanf("%s %s",d1,d2);
+	my_scanf("%s %s",d1,d2);
 	int l1=strlen(d1),l2=strlen(d2),i;
 	for(i=0;i<l1;i++)
 	{
@@ -41,6 +41,6 @@ int main_bench()
 			ans++;
 	}
 	if(ans==52)
-		printf("YES\n");
-	else printf("NO\n");
+		my_printf("YES\n");
+	else my_printf("NO\n");
 }

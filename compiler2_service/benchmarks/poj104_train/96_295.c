@@ -23,14 +23,14 @@ int main_bench()
 		if(shang[i] != 0 ) break;
     
 	if( i >= lenth)
-		printf("0");
+		my_printf("0");
     else
 	{
 		for( j = i ; j <= lenth - 1 ; j ++)
-		printf("%d",shang[j]);
+		my_printf("%d",shang[j]);
 	}
-		printf("\n");
-		printf("%d\n",s);
+		my_printf("\n");
+		my_printf("%d\n",s);
 	
 		return 0;
 }

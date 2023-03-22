@@ -11,12 +11,12 @@ int main_bench()
 	{
 		if(*q!=' ')
 		{
-			printf("%c",*q);
+			my_printf("%c",*q);
 			a=0;
 		}
 		if(*q==' '&&a==0)
 		{
-			printf(" ");
+			my_printf(" ");
 			a++;
 		}
 		q++;

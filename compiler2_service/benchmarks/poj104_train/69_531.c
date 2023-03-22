@@ -71,12 +71,12 @@ int main_bench()
 {
 	char a[260];
 	char b[260];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	reorder(a);
 	reorder(b);
 	plus(a,b);
 	cutzeros(result);
 	reorder(result);
-	printf("%s",result);
+	my_printf("%s",result);
 	return 0;
 }

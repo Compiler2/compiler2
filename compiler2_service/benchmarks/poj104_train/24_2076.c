@@ -32,7 +32,7 @@ int main_bench()
 		if(strlen(a[i])<strlen(min)&&strlen(a[i])>=1)
 			strcpy(min,a[i]);
 	}
-	printf("%s\n%s\n",max,min);
+	my_printf("%s\n%s\n",max,min);
 	return 0;
 }
 

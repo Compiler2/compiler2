@@ -6,7 +6,7 @@ int main_bench()
 	int kw,ks,j;
 	char *p;
 	int q,r;
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	ks=strlen(s),kw=strlen(w);
 	for(p=w+kw-1;p>=w;p--)
 	{
@@ -17,6 +17,6 @@ int main_bench()
 		}
 		if(r==0) q=p-w-ks+1;
 	}
-	 printf("%d",q);
+	 my_printf("%d",q);
 }
 

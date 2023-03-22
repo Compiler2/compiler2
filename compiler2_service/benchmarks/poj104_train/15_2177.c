@@ -9,10 +9,10 @@ int main_bench()
 {
   long first,last,i,j;
   int n,a,check=0,sc,sr,ec,er;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n*n;i++)
   {
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     if((a==0)&&(check==0)) {first=i;check=1;}
     if(a==0) last=i;
   }
@@ -20,6 +20,6 @@ int main_bench()
   sr=(first%n);
   ec=(last/n);
   er=(last%n);
-  printf("%d",(abs(sc-ec)-1)*(abs(sr-er)-1));
+  my_printf("%d",(abs(sc-ec)-1)*(abs(sr-er)-1));
   return 0;
 }

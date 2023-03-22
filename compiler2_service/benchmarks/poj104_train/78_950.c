@@ -40,7 +40,7 @@ int main_bench()
                                                 f[i].name=t2;
                                             }
                                     for(i=0;i<4;i++)
-                                        printf("%c %d\n",f[i].name,10*f[i].weight);
+                                        my_printf("%c %d\n",f[i].name,10*f[i].weight);
                                 }
                 }
     return 0;

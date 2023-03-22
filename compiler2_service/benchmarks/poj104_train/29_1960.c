@@ -15,10 +15,10 @@ int main_bench()
 	int m,i,n[100];
 	a[1]=1;
 	a[2]=2;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -30,7 +30,7 @@ int main_bench()
 
 			sum+=b[j+1];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char a[50],b[50];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int i,j,cnt=0;
 	int n;
 	n=strlen(a);
@@ -13,7 +13,7 @@ int main_bench(){
 			}
 		}
 		if(cnt==n){
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 		else cnt=0;

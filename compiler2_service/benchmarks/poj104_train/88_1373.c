@@ -27,7 +27,7 @@ int main_bench()
 		{
 			num[j-n1[i]]=c[j];
 		}
-		printf("%s\n",num);
+		my_printf("%s\n",num);
 	}
 	return 0;
 }

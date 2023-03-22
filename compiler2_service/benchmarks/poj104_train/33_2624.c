@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n;
 	char c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(;n>0;n--){
 		c=getchar();

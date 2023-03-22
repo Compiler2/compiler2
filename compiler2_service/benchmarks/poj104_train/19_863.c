@@ -19,18 +19,18 @@ int main_bench()
 	
 	for(i=0;i<k-1;i++){
 		if(strcmp(sz[i],a)==0){
-			printf("%s",b);
+			my_printf("%s",b);
 		}
 		else{
-			printf("%s",sz[i]);
+			my_printf("%s",sz[i]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	if(strcmp(sz[k-1],a)==0){
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 	}
 	else{
-		printf("%s\n",sz[k-1]);
+		my_printf("%s\n",sz[k-1]);
 	}
 
 	return 0;

@@ -87,14 +87,14 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 	j=0;
 	while(s[j]==' ') j++;
 	for(i=j;s[i]!='\0';i++)
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	
 	
 	}

@@ -11,12 +11,12 @@ int main_bench()
 	for(p=string;p<string+len-1;p++)
 	{
 		i=*p+*(p+1);
-		printf("%c",i);
+		my_printf("%c",i);
 	}
 	if(p==string+len-1)
 	{
 		i=*p+*(p-len+1);
-		printf("%c",i);
+		my_printf("%c",i);
 	}
-	printf("\n");
+	my_printf("\n");
 }

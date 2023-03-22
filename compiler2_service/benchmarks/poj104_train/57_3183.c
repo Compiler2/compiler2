@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,l;
 	char s[33];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		l=strlen(s);
 		if(strcmp(&s[l-3],"ing")==0)
 		{
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			s[l-2]='\0';
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	}
 	return 0;
 }

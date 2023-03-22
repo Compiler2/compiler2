@@ -13,13 +13,13 @@ while (i<r-1) {
   solve(j,i-1);
   j=i;
 }
-printf("%d %d\n", l, r);
+my_printf("%d %d\n", l, r);
 }
 
 int main_bench()
 {
 int l;
-scanf("%s", s);
+my_scanf("%s", s);
 b=s[0];
 l=strlen(s)-1;
 if (l%2 == 0) l--;

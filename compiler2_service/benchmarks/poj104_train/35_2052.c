@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int m,n,i,t=0,j,a[100][100],b[100]={0},c[100];
-    scanf("%d,%d",&m,&n);
+    my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if(a[i][j]>b[i])
 				b[i]=a[i][j];
 		}
@@ -21,13 +21,13 @@ int main_bench()
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
 			if(b[i]==c[j]){
-		      printf("%d+%d",i,j);
+		      my_printf("%d+%d",i,j);
               t=1;
 			}
 		}
 	}
 	if(t==0)
-		printf("No");
+		my_printf("No");
 	return 0;
 }
 

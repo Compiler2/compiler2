@@ -11,13 +11,13 @@ int main_bench()
 	    int anynumber=0;
 		while(*p>='0'&&*p<='9')
 	    {
-		printf("%c",*p);
+		my_printf("%c",*p);
 		p++;
 		anynumber++;
 	    }
 		if(anynumber)
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

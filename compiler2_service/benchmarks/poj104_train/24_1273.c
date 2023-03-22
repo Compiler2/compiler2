@@ -42,11 +42,11 @@ int main_bench(){
     }
     
     for(i=lon1;i<lon2;i++)
-        printf("%c",s[i]);
-    printf("%c\n",s[lon2]);
+        my_printf("%c",s[i]);
+    my_printf("%c\n",s[lon2]);
     for(i=sho1;i<sho2;i++)
-        printf("%c",s[i]);
-    printf("%c\n",s[sho2]);
-scanf("%d",&n);
+        my_printf("%c",s[i]);
+    my_printf("%c\n",s[sho2]);
+my_scanf("%d",&n);
 return 0;
 }

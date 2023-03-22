@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int w,i,j,s;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		switch(i){
 		case 1:s=13;break;
@@ -18,7 +18,7 @@ int main_bench(){
 		case 11:s=s+31;break;
 		case 12:s=s+30;break;
 		}
-		if ((s-1+w)%7==5)printf("%d\n",i);
+		if ((s-1+w)%7==5)my_printf("%d\n",i);
 	}
 	return 0;
 }

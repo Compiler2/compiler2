@@ -5,7 +5,7 @@ int main_bench(){
 	int n,m,i,j,k,l;
 	char as[30],ds[30],cs[30];
 	long bs;
-	scanf("%d%s%d",&n,as,&m);
+	my_scanf("%d%s%d",&n,as,&m);
 	j=1;
 	l=strlen(as);
 	bs=0;
@@ -40,6 +40,6 @@ int main_bench(){
 		cs[1]=0;
 	}
 
-	printf("%s",cs);
+	my_printf("%s",cs);
 	return 0;
 }

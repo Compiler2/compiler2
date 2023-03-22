@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int *p,n,i,j,num=0,b[300],shu=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -31,9 +31,9 @@ int main_bench()
 	}
 	for(i=0;i<shu;i++)
 	{
-		printf("%d,",b[i]);
+		my_printf("%d,",b[i]);
 	}
-	printf("%d",b[shu]);
+	my_printf("%d",b[shu]);
 	
 return 0;
 }

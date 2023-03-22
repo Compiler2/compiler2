@@ -26,6 +26,6 @@ int main_bench()
 		if((int)strlen(b[i])>max)max=strlen(b[i]);
 		if((int)strlen(b[i])<min)min=strlen(b[i]);
 	}
-	for(i=0;i<k;i++) if((int)strlen(b[i])==max) {printf("%s\n",b[i]);break;}
-	for(i=0;i<k;i++) if((int)strlen(b[i])==min) {printf("%s\n",b[i]);break;}
+	for(i=0;i<k;i++) if((int)strlen(b[i])==max) {my_printf("%s\n",b[i]);break;}
+	for(i=0;i<k;i++) if((int)strlen(b[i])==min) {my_printf("%s\n",b[i]);break;}
 }

@@ -3,7 +3,7 @@
 int main_bench(){
 int n,m,n1=0,p=0,r,mon[300];
 for(int k=1;k<=100;k++){
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 if((n==0)&&(m==0)){
 	break;
 }else{
@@ -27,7 +27,7 @@ while(r>1){
 }
 for(int j=0;j<n;j++){
 	if(mon[j]==1){
-		printf("%d\n",j+1);
+		my_printf("%d\n",j+1);
 		break;
 	}
 }

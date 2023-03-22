@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int time,jump,broken,i,j,b,sum[101],brokenjump[21];
     for (i=1,broken=0;i<=n;i++)
     {
-        scanf ("%d",&broken);
+        my_scanf ("%d",&broken);
         if (broken==0)
         {
                       sum[i]=60;
@@ -15,7 +15,7 @@ int main_bench()
                       }
         for (j=1;j<=broken;j++)
         {
-            scanf ("%d",&brokenjump[j]);
+            my_scanf ("%d",&brokenjump[j]);
             }   
         for (time=0,jump=0,b=1;time<60;)
         {
@@ -33,7 +33,7 @@ int main_bench()
     }
     for (i=1;i<=n;i++)
     {
-        printf("%d\n",sum[i]);
+        my_printf("%d\n",sum[i]);
         }
         return 0;
 }

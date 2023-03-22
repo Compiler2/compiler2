@@ -5,11 +5,11 @@ int main_bench()
 	int i=0,j=0,k=0,temp=0,mod=0,lth=0;
 	char num[101]={'\0'};
 	char result[101]={'0'};
-	scanf ("%s",num);
+	my_scanf ("%s",num);
 	lth=strlen(num);
 	if (lth==1)
 	{
-		printf("0\n%s",num);
+		my_printf("0\n%s",num);
 	}
 	else
 	{
@@ -43,16 +43,16 @@ int main_bench()
 			}
 			else 
 			{
-				printf("%c",result[i]);
+				my_printf("%c",result[i]);
 			}
 		}
 		else
 		{
 			if (result[i]=='\0') break;
-			printf("%c",result[i]);
+			my_printf("%c",result[i]);
 		}
 	}
-	printf("\n%d",mod);
+	my_printf("\n%d",mod);
 
 
 

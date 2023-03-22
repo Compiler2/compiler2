@@ -7,11 +7,11 @@ int main_bench()
 {
 	int n,i,a=0,b=0,c=0,d=0,sum=0,y;
 	double q=0,w=0,e=0,r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		
-		scanf("%d",&y);
+		my_scanf("%d",&y);
 		if((y>=1)&&(y<=18))
 		{
 			a+=1;
@@ -36,10 +36,10 @@ int main_bench()
 	}
 	
 	
-	printf("1-18: %.2lf%%\n",q);
-    printf("19-35: %.2lf%%\n",w);
-    printf("36-60: %.2lf%%\n",e);
-    printf("60??: %.2lf%%\n",r);
+	my_printf("1-18: %.2lf%%\n",q);
+    my_printf("19-35: %.2lf%%\n",w);
+    my_printf("36-60: %.2lf%%\n",e);
+    my_printf("60??: %.2lf%%\n",r);
 	return 0;
 
 

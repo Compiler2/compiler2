@@ -12,10 +12,10 @@ int main_bench()
 		   k=0;
         else if(k==0)
         {
-        	printf("\n%c",*c);
+        	my_printf("\n%c",*c);
         	k=1;
         }
         else
-           printf("%c",*c);
+           my_printf("%c",*c);
 	}
 }

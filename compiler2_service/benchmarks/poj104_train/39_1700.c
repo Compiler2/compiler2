@@ -13,10 +13,10 @@ int main_bench()
 {
 	int n,i,j,s[100],max,t,S=0;
 	struct student stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].mo,&stu[i].ban,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].mo,&stu[i].ban,&stu[i].ganbu,&stu[i].xibu,&stu[i].lunwen);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -45,6 +45,6 @@ int main_bench()
 			t=i;
 		}
 	}
-	printf("%s\n%d\n%d",stu[t].name,s[t],S);
+	my_printf("%s\n%d\n%d",stu[t].name,s[t],S);
 	return 0;
 }

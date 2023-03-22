@@ -4,14 +4,14 @@ int a[100][100];
 int main_bench()
 {
 	int m,n,i,j,t,k=0,p,ans;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(k<m)
 	{
 		n=m;
 		ans=0;
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",*(a+i)+j);
+				my_scanf("%d",*(a+i)+j);
    p=1;
 			while(n>p)
 			{
@@ -34,7 +34,7 @@ int main_bench()
 				ans+=*(*(a+p)+p);
 				p++;
 			}
-			printf("%d\n",ans);
+			my_printf("%d\n",ans);
 			k++;
 	     }
 }

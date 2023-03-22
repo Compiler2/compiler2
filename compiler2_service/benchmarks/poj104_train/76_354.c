@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k,t,m;
 	int a[50000],b[50000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	for(k=1;k<=n;k++)
 	{
@@ -40,11 +40,11 @@ int main_bench()
 	}
 	if(ylf==0)
 	{
-		printf("%d %d",a[0],b[n-1]);
+		my_printf("%d %d",a[0],b[n-1]);
 	}
 	else 
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

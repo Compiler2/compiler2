@@ -4,8 +4,8 @@
 void printnum(int a[])
 {
 	int i;
-	for(i = a[0];i > 0; --i) printf("%d", a[i]);
-	printf("\n");
+	for(i = a[0];i > 0; --i) my_printf("%d", a[i]);
+	my_printf("\n");
 }
 
 void getnum(int a[])
@@ -14,7 +14,7 @@ void getnum(int a[])
 	char str[100];
 
 	for(i = 0;i <100;++ i) a[i] = 0;
-	scanf("%s", str);
+	my_scanf("%s", str);
 	a[0] = strlen(str);
 	for(i = a[0]-1;i >= 0;-- i)
 		a[ a[0]-i ] = str[i]-'0';
@@ -49,7 +49,7 @@ int main_bench()
 {
 	int a[100], b[100],c[100],n;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
    for(;n != 0;-- n)
    {	getnum(a);
         getnum(b);

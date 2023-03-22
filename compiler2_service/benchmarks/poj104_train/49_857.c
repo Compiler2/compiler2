@@ -5,7 +5,7 @@ int main_bench()
 	char str[500];
 	char part[500];
 	int k=0;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	int length=strlen(str);
 	for(int i=2;i<=length;i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 				if(part[k]!=part[i-k-1])
 					break;
 			if(k==i/2)
-				printf("%s\n",part);
+				my_printf("%s\n",part);
 		}
 	}
 	return 0;

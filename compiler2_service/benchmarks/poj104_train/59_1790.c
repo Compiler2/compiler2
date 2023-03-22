@@ -12,21 +12,21 @@ int main_bench(){
         }
         row++;
     }
-    scanf("%d\n\n",&n);
+    my_scanf("%d\n\n",&n);
     row=1;
     while(row<n+1){
         list=1;
         while(list<n+1){
             if(list==n){
-            scanf("%c\n\n",&A[row][list]);}
+            my_scanf("%c\n\n",&A[row][list]);}
             else{
-                scanf("%c",&A[row][list]);
+                my_scanf("%c",&A[row][list]);
             }
             list++;
         }
         row++;
     }
-    scanf("%d",&day);
+    my_scanf("%d",&day);
     d=1;
     while(d<day){
         row=1;
@@ -76,7 +76,7 @@ int main_bench(){
         }
         row++;
     }
-    printf("%d",sum);
+    my_printf("%d",sum);
     return 0;
 }
 

@@ -8,7 +8,7 @@ int main_bench()
 {
 	char string[100000];
 	int i,j,k,flag,t;
-	scanf("%d\n",&t);
+	my_scanf("%d\n",&t);
 	for (k=1;k<=t;k++){	
 		gets(string);
 	for(i=0;string[i]!='\0';i++)
@@ -23,13 +23,13 @@ int main_bench()
 				}
 	    if(flag)
 		{
-		  printf("%c\n",string[i]);
+		  my_printf("%c\n",string[i]);
 	      break;
 		}
 	}
 
 	if(!flag)
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 }

@@ -3,13 +3,13 @@
 int main_bench(){
 
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 int i,j,k,e;
 double result=0;
 int a,b;
 for(i=0;i<n;i++){
-scanf("%d",&k);
+my_scanf("%d",&k);
    a=1;
    b=2;
    result=0;
@@ -26,9 +26,9 @@ scanf("%d",&k);
 	
 	}
 
-printf("%.3lf",result);
+my_printf("%.3lf",result);
 
-printf("\n");
+my_printf("\n");
 }
 
 

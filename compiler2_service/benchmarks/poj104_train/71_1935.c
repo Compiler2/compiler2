@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,y,m1,m2,temp,d=0;
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (j=0;j<n;j++)
 	{
-        scanf("%d%d%d",&y,&m1,&m2);
+        my_scanf("%d%d%d",&y,&m1,&m2);
 		d=0;
 		if(m1>m2){temp=m1;m1=m2;m2=temp;}
 		for (i=m1;i<=m2-1;i++)
@@ -30,8 +30,8 @@ int main_bench()
 				d=d+a[i];
 			}
 		}
-		if (d%7==0){printf("YES\n");}
-		else {printf("NO\n");}
+		if (d%7==0){my_printf("YES\n");}
+		else {my_printf("NO\n");}
 	}
 	return 0;
 }

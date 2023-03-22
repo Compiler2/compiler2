@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,g,h;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
     b=a%10;
 	c=(a-b)%100;
 	d=(a-b-c)%1000;
@@ -20,6 +20,6 @@ int main_bench()
 		h=10*b+c/10;
 	else if(a>=1&&a<10)
 		h=b;
-	printf("%d\n",h);
+	my_printf("%d\n",h);
 	return 0;
 }

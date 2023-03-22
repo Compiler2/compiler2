@@ -4,13 +4,13 @@ int main_bench(){
     int i,j;
     double n=0,biao,l=1,len;
     char shuzu[3][501];
-    scanf("%lf",&biao); 
+    my_scanf("%lf",&biao); 
     for(i=0;i<3;i++){
-        scanf("%s",shuzu[i]);          
+        my_scanf("%s",shuzu[i]);          
                   }
     len=1.0*strlen(shuzu[0]);
      if(strlen(shuzu[0])-strlen(shuzu[1])){ 
-            printf("error"); 
+            my_printf("error"); 
            }
      else{                    
          for(i=0;i<len;i++){
@@ -21,13 +21,13 @@ int main_bench(){
                           }
         if(l){                  
            if((n/len)>biao)
-               printf("yes");
+               my_printf("yes");
            else
-               printf("no");
+               my_printf("no");
            
                }
         else
-           printf("error");
+           my_printf("error");
           }    
     return 0;
 }

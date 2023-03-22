@@ -18,8 +18,8 @@ void sum(char *p)
 	}
 	for(i=0; i<j; i++)
 	{
-		printf("%d",a[i]);
-		printf("\n");
+		my_printf("%d",a[i]);
+		my_printf("\n");
 	}
 
 }

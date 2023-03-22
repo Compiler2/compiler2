@@ -5,7 +5,7 @@ int main_bench()
 	char s[20],r[40];
 	int i,j,a,b,l;
 	long n=0;
-	scanf("%d%s%d",&a,s,&b);
+	my_scanf("%d%s%d",&a,s,&b);
 	l=strlen(s);
 	for(i=0;i<l;i++)
 	{
@@ -19,7 +19,7 @@ int main_bench()
 	i=0;
 	if(n==0) 
 	{
-		printf("0\n");
+		my_printf("0\n");
 		return 0;
 	}
 	while(n>0)
@@ -32,9 +32,9 @@ int main_bench()
 	}
 	for(j=i-1;j>=0;j--)
 	{
-		printf("%c",r[j]);
+		my_printf("%c",r[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

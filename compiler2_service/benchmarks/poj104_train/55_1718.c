@@ -5,8 +5,8 @@ int main_bench()
 	int a,b;
 	long  ans = 0;
 	char x[20] = {0};
-	scanf("%d %s %d",&a,x,&b);
-	if(a == b) printf("%s\n",x);
+	my_scanf("%d %s %d",&a,x,&b);
+	if(a == b) my_printf("%s\n",x);
 	
 	else{
 		long flag = 1;
@@ -19,7 +19,7 @@ int main_bench()
 		
 			flag *= a;
 		}
-		if(ans == 0) printf("0\n");
+		if(ans == 0) my_printf("0\n");
 		else{
 		
 			long final[100] = {0};
@@ -31,11 +31,11 @@ int main_bench()
 			}
 			for(int i = flag;i >= 1;i --){
 				if(final[i] >= 10){
-					printf("%c",final[i] - 10 + 'A');
+					my_printf("%c",final[i] - 10 + 'A');
 				}
-				else printf("%ld",final[i]);
+				else my_printf("%ld",final[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

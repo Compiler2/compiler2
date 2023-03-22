@@ -7,18 +7,18 @@ int main_bench()
 	int change(int *p,int m,int n);
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&b[i][j]);
-	scanf("%d %d",&m,&n);
+			my_scanf("%d",&b[i][j]);
+	my_scanf("%d %d",&m,&n);
 	point=&b[0][0];
-	if (change(point,m,n)==0) printf("error");
+	if (change(point,m,n)==0) my_printf("error");
 	else for(i=0;i<5;i++)
 	{
 		   for(j=0;j<5;j++)
 		   {
-			   if (j==0) printf("%d",b[i][j]);
-			   else printf(" %d",b[i][j]);
+			   if (j==0) my_printf("%d",b[i][j]);
+			   else my_printf(" %d",b[i][j]);
 		   }
-		   printf("\n");
+		   my_printf("\n");
 	}
 }
 int change(int *p,int x,int y)

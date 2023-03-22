@@ -30,10 +30,10 @@ int main_bench()
      }
      for( k = l3+1;k>=0;k-- )
      {if( c[k]!= 0  )break;}
-     if( k <= 0 )printf("0");
+     if( k <= 0 )my_printf("0");
      else
      {
      for( i = k ; i>0;i-- )
-     printf( "%d",c[i] );
+     my_printf( "%d",c[i] );
      }    
 }

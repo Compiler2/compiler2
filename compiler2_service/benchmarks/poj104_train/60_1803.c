@@ -3,9 +3,9 @@
 main_bench()
 {
 int a,b,c,d,e,f;
-scanf("%d",&a);
+my_scanf("%d",&a);
 if(a<5)
- printf("empty");
+ my_printf("empty");
 for(b=3;b<=a-2;b=b+2)
   {
    for(c=2;c<=b;c++)
@@ -20,6 +20,6 @@ for(b=3;b<=a-2;b=b+2)
     }  
    if(c==b)
    {if(e==(b+2))
-   printf("%d %d\n",b,b+2);
+   my_printf("%d %d\n",b,b+2);
   }}  
   }

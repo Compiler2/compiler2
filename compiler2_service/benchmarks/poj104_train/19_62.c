@@ -48,6 +48,6 @@ int main_bench()
 		
 		
 	}
-	printf("%s",str3);
+	my_printf("%s",str3);
 	return 0;
 }

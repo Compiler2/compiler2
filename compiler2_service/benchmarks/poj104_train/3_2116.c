@@ -4,10 +4,10 @@
 int main_bench()
 {
   int n,k,i,j,jude=0;
-  scanf("%d %d",&n,&k);
+  my_scanf("%d %d",&n,&k);
   int a[n];
   for (i=0;i<=n-1;i++)
-    scanf("%d",a+i);
+    my_scanf("%d",a+i);
   for (i=0;i<=n-1;i++)
   {
       for (j=i+1;j<=n-1;j++)
@@ -15,8 +15,8 @@ int main_bench()
            {jude=1;break;}
    }
    if (jude==1)
-   printf("yes");
+   my_printf("yes");
    else
-   printf("no");
+   my_printf("no");
   return 0;
 }

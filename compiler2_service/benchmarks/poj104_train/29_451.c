@@ -26,15 +26,15 @@ double xs(int n){
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int n;
 	double h;
 	for(int j=1;j<=m;j++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		h=xs(n);
-		printf("%.3lf",h);
+		my_printf("%.3lf",h);
 		if(j!=m){
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 		

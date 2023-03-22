@@ -9,9 +9,9 @@ int main_bench()
 	int i;
 	double sum;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 
 	for(i=0;i<n;i++)
@@ -24,10 +24,10 @@ int main_bench()
 	   else
 		   b4++;
 	sum=(b1+b2+b3+b4)*0.01;
-	printf("1-18: %.2lf%%\n",b1/sum);
-	printf("19-35: %.2lf%%\n",b2/sum);
-	printf("36-60: %.2lf%%\n",b3/sum);
-	printf("60??: %.2lf%%\n",b4/sum);
+	my_printf("1-18: %.2lf%%\n",b1/sum);
+	my_printf("19-35: %.2lf%%\n",b2/sum);
+	my_printf("36-60: %.2lf%%\n",b3/sum);
+	my_printf("60??: %.2lf%%\n",b4/sum);
 
 
 

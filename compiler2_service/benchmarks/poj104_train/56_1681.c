@@ -3,7 +3,7 @@
 int main_bench()
 {
    long n,b,c;
-   scanf("%ld",&n);
+   my_scanf("%ld",&n);
    b=(n-n%10000)/10000+(n%10000-n%1000)/100+(n%1000-n%100)+(n%100-n%10)*100+(n%10)*10000;
    if(b%10==0)
      
@@ -17,7 +17,7 @@ int main_bench()
    
       b=b/10;
      else b=b;
-printf("%d",b);
+my_printf("%d",b);
 
 
 

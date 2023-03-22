@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,a[300],temp,count1=0,count2=0;
 	double aver=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 			aver+=a[i];
 	}
      aver=aver/n;
@@ -36,30 +36,30 @@ int main_bench()
 		 {
 			 for(i=0;i<count1-1;i++)
 			 {
-				 printf("%d,",a[i]);
+				 my_printf("%d,",a[i]);
 				 
 			 }
-                 printf("%d",a[count1-1]);
+                 my_printf("%d",a[count1-1]);
 		 }
            if((aver-a[0])<(a[n-1]-aver))
 		   {
 			 for(i=n-count2;i<n-1;i++)
 			 {
-				 printf("%d,",a[i]);
+				 my_printf("%d,",a[i]);
 			 }
-                 printf("%d",a[n-1]);
+                 my_printf("%d",a[n-1]);
 		   }
            if((aver-a[0])==(a[n-1]-aver))
 		   {
 	          for(i=0;i<count1;i++)
 			  {
-				 printf("%d,",a[i]);
+				 my_printf("%d,",a[i]);
 			  }
                for(i=n-count2;i<n-1;i++)
 			   {
-				 printf("%d,",a[i]);
+				 my_printf("%d,",a[i]);
 			   }
-                 printf("%d",a[n-1]);
+                 my_printf("%d",a[n-1]);
 		   }
 		   return 0;
 }

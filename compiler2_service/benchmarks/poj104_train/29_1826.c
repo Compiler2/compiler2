@@ -4,9 +4,9 @@ int main_bench()
 {
 	int m,n[100],i,j;
 	float s,r[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;i<=m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=1;i<=m;i++){
 		r[i]=0;
@@ -16,7 +16,7 @@ int main_bench()
 					s=1.0+1.0/s;
 					r[i]=r[i]+s;
 			}
-			printf("%.3f\n",r[i]);
+			my_printf("%.3f\n",r[i]);
 	}
 	return 0;
 }

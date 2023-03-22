@@ -3,17 +3,17 @@
 int main_bench()
 {
 	int n,i,x;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int first, second;
 	for (i=1;i<=n;i++)
 	{
 		if (i<n)
 		{
-			scanf("%d\n", &x);
+			my_scanf("%d\n", &x);
 		}
 		else
 		{
-			scanf("%d", &x);
+			my_scanf("%d", &x);
 		}
 		
 		if (i==1)
@@ -45,7 +45,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n", first);
-	printf("%d\n", second);
+	my_printf("%d\n", first);
+	my_printf("%d\n", second);
 	return 0;
 }

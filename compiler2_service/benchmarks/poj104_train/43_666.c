@@ -5,13 +5,13 @@ int main_bench()
 	
 	int judge(int x);
 		int n,i,j,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<=n/2;i++)
 	{d=0;
 		if(judge(i)==1)d=d+1;
         j=n-i;
         if(judge(j)==1)d=d+1;
-		if(d==2)printf("%d %d\n",i,j);
+		if(d==2)my_printf("%d %d\n",i,j);
 		
 	}
 	

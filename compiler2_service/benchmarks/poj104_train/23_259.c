@@ -28,6 +28,6 @@ int main_bench()
        }
   }
   for(i=100-k;i<100;i++)
-  printf("%c",c[i]);
+  my_printf("%c",c[i]);
   return 0;
 }

@@ -30,5 +30,5 @@ int main_bench()
     for (int i=1;i<=n;i++)
       for (int j=x[i];j<y[i];j++) 
       {v[j]++;if (v[j]>best) best=v[j];}
-        printf("%d %d\n",n,best);
+        my_printf("%d %d\n",n,best);
 }

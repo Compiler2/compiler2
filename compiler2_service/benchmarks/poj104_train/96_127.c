@@ -5,19 +5,19 @@ int main_bench()
   int l,i,j,s,k,m;
   int b[100],c[100],d[101];
   char a[101],e[100];
-  scanf("%s",a);
+  my_scanf("%s",a);
   l=strlen(a);
   if(l==1)
   {
-     printf("0\n");
-     printf("%d",a[0]-'0');     
+     my_printf("0\n");
+     my_printf("%d",a[0]-'0');     
   }
   else
   {
       if(l==2&&a[0]-'0'==1&&a[1]-'0'<3)
       {
-        printf("0\n");
-        printf("%d",a[1]-'0'+10);                               
+        my_printf("0\n");
+        my_printf("%d",a[1]-'0'+10);                               
       }
   else
   {
@@ -50,7 +50,7 @@ int main_bench()
      e[l-1]='\0';
      puts(e);
    }
-   printf("%d",c[i-1]);
+   my_printf("%d",c[i-1]);
   }
   }
   getchar();

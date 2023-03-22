@@ -19,8 +19,8 @@ if(c[j]!=c[m+i-j+i-1])
 if(a==0)
 {
 for(j=i;j<m+i;j++)
-printf("%c",c[j]);
-printf("\n");
+my_printf("%c",c[j]);
+my_printf("\n");
 }
 }
 }

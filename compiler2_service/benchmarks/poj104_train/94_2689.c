@@ -3,9 +3,9 @@
 int main_bench(){
     int sz[500],qs[500],n,i,j,m,k,e,x;  
     j=0;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&sz[i]);
+        my_scanf("%d",&sz[i]);
      while(sz[i]%2!=0){
             x=qs[j];
            qs[j]=sz[i];
@@ -23,8 +23,8 @@ int main_bench(){
         }
     }
     for(m=0;m<j-1;m++){
-        printf("%d,",qs[m]);
+        my_printf("%d,",qs[m]);
     }
-    printf("%d",qs[j-1]);
+    my_printf("%d",qs[j-1]);
     return 0;
 }

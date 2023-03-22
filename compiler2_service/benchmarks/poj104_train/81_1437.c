@@ -7,10 +7,10 @@ int main_bench()
 	int sz(int sz1[5][5],int m,int n);
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&sz1[i][j]);
-	scanf("%d%d",&m,&n);
+			my_scanf("%d",&sz1[i][j]);
+	my_scanf("%d%d",&m,&n);
 	if(sz(sz1,m,n)==0)
-	printf("error");
+	my_printf("error");
 	return 0;
 }
 int sz(int sz1[5][5],int m,int n)
@@ -25,12 +25,12 @@ int sz(int sz1[5][5],int m,int n)
 		}
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				printf("%d",sz1[i][j]);
+				my_printf("%d",sz1[i][j]);
 				if(j<4)
-					printf(" ");
+					my_printf(" ");
 			}
 			if(i<4)
-				printf("\n");
+				my_printf("\n");
 		}
 	}
 	else

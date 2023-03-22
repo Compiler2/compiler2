@@ -3,10 +3,10 @@
 int reverse(int num)
 { int a,b,c,d,e,f;
     if(num==0){
-      printf("0");}
+      my_printf("0");}
       else if(num<0){
         num=0-num;
-        printf("-");}
+        my_printf("-");}
     a=(int)(num/10000);
     b=(int)((num%10000)/1000);
     c=(int)((num%1000)/100);
@@ -20,9 +20,9 @@ int reverse(int num)
 int main_bench(){
     int i,n,rn;
     for(i=0;i<6;i++){
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       rn=reverse(n);
-      printf("%d\n",rn);
+      my_printf("%d\n",rn);
       }
     return 0;
 }

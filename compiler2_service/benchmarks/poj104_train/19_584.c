@@ -31,9 +31,9 @@ int main_bench()
 		if(strcmp(x,a)==0){
 			strcpy(x,b);
 		}
-		printf("%s",x);
+		my_printf("%s",x);
 		if(m!=n){
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

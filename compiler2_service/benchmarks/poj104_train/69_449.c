@@ -4,8 +4,8 @@ main_bench()
 {
       char str1[252],str2[252],str[252];
       int i,j,k,n,n1,n2;
-      scanf("%s",str1);
-      scanf("%s",str2);
+      my_scanf("%s",str1);
+      my_scanf("%s",str2);
       n1=strlen(str1);
       n2=strlen(str2);
       for(i=n1-1;i>=0;i--)
@@ -40,9 +40,9 @@ main_bench()
                                             }
                                             }
                                             if(i==251)
-                                            printf("0");
+                                            my_printf("0");
                                             for(i=n;i<=250;i++)
-                                            printf("%c",str[i]);
+                                            my_printf("%c",str[i]);
                         
                         
                         

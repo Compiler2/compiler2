@@ -5,7 +5,7 @@ void reverse() {
     int k;
     if ((k = getchar()) == '\n') return;
     reverse();
-    printf("%c", k);
+    my_printf("%c", k);
 }
 
 int main_bench() {

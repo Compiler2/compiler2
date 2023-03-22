@@ -4,11 +4,11 @@ main_bench()
 {
       double n;
       char a[600],b[600];
-      scanf("%lf",&n);
-      scanf("%s",a);
-      scanf("%s",b);
+      my_scanf("%lf",&n);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
       int len=strlen(a),time=0,i;
-      if(strlen(a)!=strlen(b)) printf("error\n");
+      if(strlen(a)!=strlen(b)) my_printf("error\n");
       else 
       {
            for(i=0;i<len;i++)
@@ -18,9 +18,9 @@ main_bench()
            }
            if(i==len)
            {
-                     if((double)time/(double)len>n) printf("yes\n");
-                     else printf("no\n");
+                     if((double)time/(double)len>n) my_printf("yes\n");
+                     else my_printf("no\n");
            }
-           else printf("error\n");
+           else my_printf("error\n");
       }
 }

@@ -8,14 +8,14 @@ int main_bench()
     int n=0;
     for(i=0;i<100;i++)
     {
-        scanf("%s",a[i]);
+        my_scanf("%s",a[i]);
         n++;
         k=getchar();
         if(k=='\n')
             break;
     }
-    scanf("%s",b);
-    scanf("%s",c);
+    my_scanf("%s",b);
+    my_scanf("%s",c);
     for(i=0;i<n;i++)
     {
         k=strcmp(b,a[i]);
@@ -24,7 +24,7 @@ int main_bench()
     }
     for(i=0;i<n-1;i++)
     {
-        printf("%s ",a[i]);
+        my_printf("%s ",a[i]);
     }
-    printf("%s",a[n-1]);
+    my_printf("%s",a[n-1]);
 }

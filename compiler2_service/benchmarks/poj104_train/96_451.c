@@ -4,13 +4,13 @@ int main_bench()
 {
     int n=0,i,j,k;
     char num[101],b[100];
-    scanf("%s",num);
+    my_scanf("%s",num);
     for(i=0;num[i]!='\0';i++)
     n++;
     if(n==1)
-    printf("0\n%c",num[0]);
+    my_printf("0\n%c",num[0]);
     else if((n==2)&&((num[1]-'0')<3)&&(num[0]=='1'))
-    printf("0\n%c%c",num[0],num[1]);
+    my_printf("0\n%c%c",num[0],num[1]);
     else
   {
     for(j=1;j<=n-1;j++)
@@ -23,11 +23,11 @@ int main_bench()
     if(b[0]=='0')
     {
                for(i=1;i<=n-2;i++)
-              printf("%c",b[i]);
+              my_printf("%c",b[i]);
     }
     else 
-           printf("%s",b);
-  printf("\n%d",k);
+           my_printf("%s",b);
+  my_printf("\n%d",k);
 }
 getchar();    
 getchar();

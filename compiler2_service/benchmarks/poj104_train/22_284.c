@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[1000];
 	int a[100]={0},k=0,i,j,l;
-		scanf("%s",s);
+		my_scanf("%s",s);
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(s[i]>='0'&&s[i]<='9')
@@ -23,14 +23,14 @@ int main_bench()
 			}
 		}
 	if(a[0]==a[k])
-		printf("No");
+		my_printf("No");
 	else if(a[0]!=a[k])
 	{
 		for(i=0;i<=k;i++)
 		{
 			if(a[0]-a[i]>0)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				break;}
 			else
 				continue;

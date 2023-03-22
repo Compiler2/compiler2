@@ -7,10 +7,10 @@ int n,k,i,j,x,y,sum=1;
 for(i=0;i<10001;i++){
 	r[i]=0;
 }
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 	for(j=0;j<2;j++){
-	scanf("%d",&t[i][j]);
+	my_scanf("%d",&t[i][j]);
 	}
 	for(k=t[i][0];k<t[i][1];k++){
 		r[k]=1;
@@ -32,8 +32,8 @@ for(i=x;i<y;i++){
        sum=sum*r[i];
  }
 if(sum==1)
-printf("%d %d",x,y+1);
+my_printf("%d %d",x,y+1);
 else
-printf("no");
+my_printf("no");
 return 0;
 }

@@ -49,7 +49,7 @@ n=a+1;
   for(int t=0;t<n;t++){
   l=strlen(danci[t]);
   if(changdu[n-1]==l){
-   printf("%s\n",danci[t]);
+   my_printf("%s\n",danci[t]);
    break;
   }
  }
@@ -57,7 +57,7 @@ n=a+1;
  for (int q=0;q<n;q++){
   l=strlen(danci[q]);
   if(changdu[0]==l){
-   printf("%s\n",danci[q]);
+   my_printf("%s\n",danci[q]);
    break;
   }
  }

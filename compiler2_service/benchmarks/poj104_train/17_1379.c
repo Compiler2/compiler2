@@ -5,20 +5,20 @@ int main_bench(){
 	void noghus(char a[]);
 	int n,i,t,j;
 	char b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",b);
+		my_scanf("%s",b);
 		t=ghus(b);
-		printf("%s\n",b);
+		my_printf("%s\n",b);
 		for(j=1;j<=t;j++){
 			noghus(b);
 		}
 		for(j=0;j<strlen(b);j++){
-			if(b[j]=='(') printf("$");
-			else if(b[j]==')') printf("?");
-			else printf(" ");
+			if(b[j]=='(') my_printf("$");
+			else if(b[j]==')') my_printf("?");
+			else my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 }

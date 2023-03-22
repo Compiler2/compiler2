@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,z[100],i,sum1=0,sum2=0,sum3=0,sum4=0;
 	double p1,p2,p3,p4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	    scanf("%d",&z[i]);
+	    my_scanf("%d",&z[i]);
 	
 		if(z[i]<19)
 		{
@@ -30,9 +30,9 @@ int main_bench()
         p2=(double)sum2/(double)n;
         p3=(double)sum3/(double)n;
         p4=(double)sum4/(double)n;
-	printf("1-18: %.2lf%%\n",p1*100);
-	printf("19-35: %.2lf%%\n",p2*100);
-	printf("36-60: %.2lf%%\n",p3*100);
-	printf("60??: %.2lf%%",p4*100);
+	my_printf("1-18: %.2lf%%\n",p1*100);
+	my_printf("19-35: %.2lf%%\n",p2*100);
+	my_printf("36-60: %.2lf%%\n",p3*100);
+	my_printf("60??: %.2lf%%",p4*100);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
    int m,a,b,i;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    for(a=2;a<=(m/2);a++)
    {
        b=m-a;
@@ -19,7 +19,7 @@ int main_bench()
            else
            goto a;
        }
-    printf("%d %d\n",a,b);
+    my_printf("%d %d\n",a,b);
     a:continue;
    }
    return 0;

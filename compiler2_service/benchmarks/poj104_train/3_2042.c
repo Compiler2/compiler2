@@ -5,11 +5,11 @@ int main_bench()
 { 
     int n,sigma;
 	int sb=0;
-	scanf("%d %d",&n,&sigma);
+	my_scanf("%d %d",&n,&sigma);
 	int sz[1000];
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(int j=0;j<n;j++)
 	{
@@ -35,11 +35,11 @@ int main_bench()
 	}
 	if(sb==1)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 } 

@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char s[257]={'0'},sub[257]={'0'},rep[257]={'0'},temp[257]={'0'};
-	scanf("%s%s%s",s,sub,rep);
+	my_scanf("%s%s%s",s,sub,rep);
 	int i,j,k,len1,len2,time;
 	len1=strlen(s);
 	len2=strlen(sub);
@@ -22,6 +22,6 @@ int main_bench(){
 s[i]=rep[j];
 	}
 }
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

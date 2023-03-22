@@ -21,9 +21,9 @@ for(i=0;zfc[i]!='\0';i++){
 	}
 sz[j]=n;
 for(i=0;i<j;i++){
-printf("%d,",sz[i]);
+my_printf("%d,",sz[i]);
 }
-printf("%d",sz[j]);
+my_printf("%d",sz[j]);
 return 0;
 }
 

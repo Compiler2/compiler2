@@ -9,7 +9,7 @@ int main_bench(){
 			break;
 		}
 	}
-	if(w==n){printf("%s\n%s",zfc,zfc);}
+	if(w==n){my_printf("%s\n%s",zfc,zfc);}
 	else{
 	  int b,d,k,j;
 	  int a=-1,c=-1;
@@ -37,11 +37,11 @@ int main_bench(){
 	 if(n-k<d-c){c=k;d=n;}
 	 int p,q;
 	 for(p=a+1;p<b-1;p++){
-		printf("%c",zfc[p]);
+		my_printf("%c",zfc[p]);
 	 }
-	 printf("%c\n",zfc[b-1]);
+	 my_printf("%c\n",zfc[b-1]);
 	 for(q=c+1;q<d;q++){
-		printf("%c",zfc[q]);
+		my_printf("%c",zfc[q]);
 	 }
 	}
 	return 0;

@@ -7,9 +7,9 @@ struct f{
 int main_bench(){
 	int n,i,ii,j,d,a,b,c;
 	char cc;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d%d%d",&st[i].a,&st[i].b,&st[i].c);
+		my_scanf("%d%d%d",&st[i].a,&st[i].b,&st[i].c);
 	st[i].b+=st[i].c;
 	}
 	for(i=1;i<=3;i++){
@@ -19,7 +19,7 @@ int main_bench(){
 				st[i]=st[j];
 				st[j]=tp;}}}
 	for(i=1;i<=3;i++)
-	printf("%d %d\n",st[i].a,st[i].b);
+	my_printf("%d %d\n",st[i].a,st[i].b);
 }
 
 		

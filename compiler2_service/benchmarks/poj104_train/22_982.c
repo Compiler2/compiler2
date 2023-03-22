@@ -4,10 +4,10 @@ int main_bench()
 {
 	static int a[300];
 	int i,max=0,cmax=0;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;getchar()==',';i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 
 	for(i=0;i<300;i++)
@@ -22,8 +22,8 @@ int main_bench()
 			cmax=a[i];
 	}
 	if(cmax==0)
-		printf("No\n");
+		my_printf("No\n");
 		else
-	printf("%d",cmax);
+	my_printf("%d",cmax);
 	return 0;
 }

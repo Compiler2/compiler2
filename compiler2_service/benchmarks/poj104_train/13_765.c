@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *p,*q,*head;
 	p=(int *)calloc(n,sizeof(int));
 	head=p;
 	for(p=head;p<head+n;p++)
 	{
-		scanf("%d",p);
+		my_scanf("%d",p);
 	}
 	p=head;
-	printf("%d",*p);
+	my_printf("%d",*p);
 	p++;
 	for(;p<head+n;p++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 				goto chongfu;
 			}
 		}
-		printf(" %d",*p);
+		my_printf(" %d",*p);
 		chongfu:;
 	}
 	return 0;

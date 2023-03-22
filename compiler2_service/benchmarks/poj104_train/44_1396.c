@@ -5,13 +5,13 @@ int main_bench()
     int n,s,i;
     for(i=0;i<6;i++)
    {
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      if(n>0)
      s=f(n,0);
      else 
      { n=-n;
       s=-f(n,0);}
-    printf("%d\n",s);
+    my_printf("%d\n",s);
    }
 
  return 0;    

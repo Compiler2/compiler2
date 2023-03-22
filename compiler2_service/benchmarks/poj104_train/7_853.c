@@ -26,19 +26,19 @@ int Find(char *s,char *s1)
 int main_bench()
 {
 	int l,i,t;
-	scanf("%s%s%s",s,s1,s2);
+	my_scanf("%s%s%s",s,s1,s2);
 	l=Len(s);
 	t=Find(s,s1);
 	if (t==l)
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	else
 	{
 		for(i=0;i<t;i++)
-			printf("%1c",s[i]);
-		printf("%s",s2);
+			my_printf("%1c",s[i]);
+		my_printf("%s",s2);
 		for(i=Len(s1)+t;i<l;i++)
-			printf("%1c",s[i]);
-		printf("\n");
+			my_printf("%1c",s[i]);
+		my_printf("\n");
 	}
 	return 0;}	
 

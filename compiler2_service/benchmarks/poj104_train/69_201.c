@@ -30,14 +30,14 @@ int main_bench()
 	for(i=len;i>=0;i--)
 	{
 		if(len==1&&num_1[0]==0){
-			printf("0");
+			my_printf("0");
 			break;
 		}
 		else if(state==0&&num_1[i]==0)
 			continue;
 		state=1;
-		printf("%d",num_1[i]);
+		my_printf("%d",num_1[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

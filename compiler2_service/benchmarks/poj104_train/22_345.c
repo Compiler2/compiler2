@@ -4,14 +4,14 @@ int main_bench()
 {
 	int a[310],b,i,j,k;
 	char x;
-	scanf("%d%c",&a[1],&x);
+	my_scanf("%d%c",&a[1],&x);
 	if(x=='\n')
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(i=2;;i++)
 		{
-			scanf("%d%c",&a[i],&x);
+			my_scanf("%d%c",&a[i],&x);
 			if(x=='\n')
 				break;
 		}
@@ -33,9 +33,9 @@ int main_bench()
 				break;
 		}
 		if(j>=1)
-		    printf("%d\n",a[j]);
+		    my_printf("%d\n",a[j]);
 		else
-			printf("No\n");
+			my_printf("No\n");
 	}
 }
 

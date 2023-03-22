@@ -3,7 +3,7 @@
 main_bench()
 {	int m,n;
 	int input(int a,int b);
-	scanf ("%d %d",&m,&n);
+	my_scanf ("%d %d",&m,&n);
 	input(m,n);
 } 
 
@@ -11,12 +11,12 @@ int input(int a ,int b)
 {
 	int c[1000],d[1000];
 	for (int i =0;i<a;i++)
-	scanf("%d",&c[i]);
+	my_scanf("%d",&c[i]);
 	for(int j=0;j<b;j++)
-	scanf("%d",&d[j]);
+	my_scanf("%d",&d[j]);
 	int sort(int e[],int s); 
 	sort (c,a);
-	printf(" ");
+	my_printf(" ");
 	sort (d,b); 
 }
 int sort(int e[],int s)
@@ -33,7 +33,7 @@ int sort(int e[],int s)
 			}
 		} 
 	for (int p=0;p <s-1;p++)
-		printf ("%d ",e[p]);
-		printf ("%d",e[s-1]);
+		my_printf ("%d ",e[p]);
+		my_printf ("%d",e[s-1]);
 		
 }

@@ -6,7 +6,7 @@ int main_bench()
 {
     int a,b,c,d,e,f,t,h,m,s,i;
     for(i=0;i<100;i++){
-    scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+    my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
                      if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0){
                                                             break;
                                                             }
@@ -23,7 +23,7 @@ int main_bench()
                                      m=e-b;
                                      s=f-c;
                                      t=3600*h+60*m+s;
-                                     printf("%d\n",t);
+                                     my_printf("%d\n",t);
 }
 
   return 0;

@@ -16,9 +16,9 @@ int sushu(int c)
 int main_bench()
 {
       int n,b,d=3,e;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if(n<5)
-      printf("empty\n");
+      my_printf("empty\n");
       else
       {
           for(b=5;b<=n;b=b+2)
@@ -27,7 +27,7 @@ int main_bench()
               {
               e=b;
               if(e-d==2)           
-              printf("%d %d\n",d,e);
+              my_printf("%d %d\n",d,e);
               d=e;
               }
            }

@@ -7,9 +7,9 @@ int main_bench()
     gets(c);
     for(i=0;c[i]!='\0';i++)
     {
-        if(c[i]=='\t'&&c[i+1]!='\t'&&c[i+1]!=' ') printf(" ");
+        if(c[i]=='\t'&&c[i+1]!='\t'&&c[i+1]!=' ') my_printf(" ");
         else if((c[i]!=' '&&c[i]!='\t')||(c[i]==' '&&c[i+1]!=' '&&c[i+1]!='\t'))
-        printf("%c",c[i]);
+        my_printf("%c",c[i]);
     }
 }
 

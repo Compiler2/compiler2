@@ -49,7 +49,7 @@ int main_bench()
    {
        if(strlen(danci[i]) == max && cishu==0)
 	   {
-	     printf("%s", danci[i]);
+	     my_printf("%s", danci[i]);
 		 cishu+=1;
 	   }
    }
@@ -57,7 +57,7 @@ int main_bench()
    {
        if(strlen(danci[i]) == min && sum==0)
 	   {
-	     printf("\n%s", danci[i]);
+	     my_printf("\n%s", danci[i]);
 		 sum+=1;
 	   }
    }

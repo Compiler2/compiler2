@@ -4,9 +4,9 @@ int main_bench(){
 	int i,k,n;
 	int shu[100]={0};
 	char zi[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",zi[i]);
+		my_scanf("%s",zi[i]);
 		shu[i]=strlen(zi[i]);
 	}
 	for(i=0;i<n;i++){
@@ -22,9 +22,9 @@ int main_bench(){
 	}
 	for(i=0;i<n;i++){
 		for(k=0;k<shu[i];k++){
-			printf("%c",zi[i][k]);
+			my_printf("%c",zi[i][k]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

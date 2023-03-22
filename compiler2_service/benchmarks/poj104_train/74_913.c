@@ -4,7 +4,7 @@ int main_bench()
 {
 int m,n,p,q,c,i,k,a[20],f,b[10];
 k=0;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for(c=m;c>=m&&c<=n;c++)
 {for(i=2;i<=c/2;i++)
 if(c%i==0)
@@ -22,9 +22,9 @@ k=k+1;}
 }
 }
 k=k-1;
-if(k<0)printf("no");
+if(k<0)my_printf("no");
 else{
 for(i=0;i<=k-1;i++)
-printf("%d,",a[i]);
-printf("%d",a[k]);}
+my_printf("%d,",a[i]);
+my_printf("%d",a[k]);}
 }

@@ -20,9 +20,9 @@ int main_bench()
     char b[256];
     char c[256];
     int i,j,l1,l2,l3,d,e,s,r;
-    scanf("%s",a);
-    scanf("%s",b);
-    scanf("%s",c);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
+    my_scanf("%s",c);
     l1=strlen(a);
     l2=strlen(b);
     l3=strlen(c);
@@ -65,6 +65,6 @@ int main_bench()
             }
         }
     }
-    printf("%s",a);
+    my_printf("%s",a);
     return 0;
 }

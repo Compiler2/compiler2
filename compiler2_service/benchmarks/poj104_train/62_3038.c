@@ -19,7 +19,7 @@ int main_bench(){
 	if(b!=0){
 		zfc[l-b]=0;
 	}
-    printf("%s",zfc);
+    my_printf("%s",zfc);
 
 return 0;
 }

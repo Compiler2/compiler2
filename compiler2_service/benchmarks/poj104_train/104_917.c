@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,m,l,k,t,i,j,x,y;
     int a[1000],b[1000];
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     if(n<m)
     {
         l=n;n=m;m=l;
@@ -33,5 +33,5 @@ int main_bench()
             break;
         }
     }
-    printf("%d",x);
+    my_printf("%d",x);
 }

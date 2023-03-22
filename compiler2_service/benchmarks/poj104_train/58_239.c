@@ -19,19 +19,19 @@ int l[200];
       {
          if(s[i][0]<'A')
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           continue;
          }  
           if((s[i][0]<'a')&&(s[i][0]>'Z'))
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
          continue;
          }         
          if(s[i][0]>'z')
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           continue;
          }
@@ -42,25 +42,25 @@ int l[200];
       {
          if(s[i][j]<'0')
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           break;
          }  
          if((s[i][j]>'9')&&(s[i][j]<'A'))
           {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           break;
          }  
           if((s[i][j]<'a')&&(s[i][j]>'Z'))
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           break;
          }         
          if(s[i][j]>'z')
          {
-         printf("0\n");
+         my_printf("0\n");
           jud[i]=1;
           break;
          }
@@ -69,7 +69,7 @@ int l[200];
       break;
       }
       if(jud[i] == 0)
-      printf("1\n");
+      my_printf("1\n");
     }
 return 0;
 }

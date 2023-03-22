@@ -4,10 +4,10 @@
 int main_bench()
 {
     int len,n,i,j; 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     char s[33];               
     for (i = 0; i < n; i++) {
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		len=strlen(s);
 		for(j=0;j<len;j++){
 			if(s[j]=='e'&&s[j+1]=='r'&&s[j+2]=='\0'){
@@ -20,7 +20,7 @@ int main_bench()
 			s[j]='\0';
 			}
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
     }
 
 	

@@ -5,14 +5,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int*)malloc(sizeof(int)*n);
 	int i,m,j,k;
 	int *save;
 	for(i=0;i<n;i++)
 	{
 		sz[i]=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
 		{
 			sz[i]=60;
@@ -21,7 +21,7 @@ int main_bench()
 		save=(int*)malloc(sizeof(int)*m);
 		for(j=0;j<m;j++)
 		{
-			scanf("%d",&save[j]);
+			my_scanf("%d",&save[j]);
 		}
 		for(j=0;j<m;j++)
 		{
@@ -44,7 +44,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",sz[i]);
+		my_printf("%d\n",sz[i]);
 	}
 	free(sz);
 	free(save);

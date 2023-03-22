@@ -17,5 +17,5 @@ int main_bench()
     p2++;
     *p2=0;
     p2=b;
-    printf("%s",p2);
+    my_printf("%s",p2);
 }

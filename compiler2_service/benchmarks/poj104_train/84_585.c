@@ -3,8 +3,8 @@
 int main_bench()
 {
 int i,s[100],n,a,b,t;
-scanf("%d",&n);
-scanf("%d%d",&s[0],&s[1]);
+my_scanf("%d",&n);
+my_scanf("%d%d",&s[0],&s[1]);
 if(s[0]>s[1])
 {
 	a=s[0];
@@ -17,7 +17,7 @@ else
 }
 for (i=2;i<=(n-1);i++)
 {
-scanf("%d",&s[i]);
+my_scanf("%d",&s[i]);
 if(a>s[i]&&s[i]>b)
 {
 	t=b;
@@ -31,6 +31,6 @@ b=t;
 a=s[i];
 }
 }
-printf("%d\n%d\n",a,b);
+my_printf("%d\n%d\n",a,b);
 return 0;
 }

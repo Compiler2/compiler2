@@ -28,8 +28,8 @@ unsigned findday(unsigned y,unsigned m,unsigned d)
 int main_bench()
 {
     unsigned y1,m1,d1,y2,m2,d2,i,p0,p1,c=0,p2,s; 
-    scanf("%u %u %u",&y1,&m1,&d1);
-    scanf("%u %u %u",&y2,&m2,&d2);
+    my_scanf("%u %u %u",&y1,&m1,&d1);
+    my_scanf("%u %u %u",&y2,&m2,&d2);
     if(y1==y2) s=findday(y2,m2,d2)-findday(y1,m1,d1);
     else
     {
@@ -48,5 +48,5 @@ int main_bench()
     p2=findday(y2,m2,d2);
     s=p0+p1+p2;
     }    
-    printf("%u",s); 
+    my_printf("%u",s); 
 }

@@ -28,5 +28,5 @@ int main_bench()
 		}
 	}
 ch2[k-1]='\0';
-printf("%s\n",ch2);
+my_printf("%s\n",ch2);
 } 

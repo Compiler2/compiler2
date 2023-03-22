@@ -8,16 +8,16 @@ int main_bench()
 	int m,n;
 	int a[110][110];
 	int sum;
-	scanf("%d",&k);  
+	my_scanf("%d",&k);  
 	for(i=0;i<k;i++)
 	{
 		sum=0;
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(j=0;j<m;j++)   
 		{
 			for(q=0;q<n;q++)  
 			{
-				scanf("%d",*(a+j)+q);  
+				my_scanf("%d",*(a+j)+q);  
 			}
 		}
 	                   
@@ -33,7 +33,7 @@ int main_bench()
 			if(n!=1)   
 			    sum+=*(*(a+j)+n-1);
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

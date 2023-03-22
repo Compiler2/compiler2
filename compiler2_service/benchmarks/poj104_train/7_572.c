@@ -39,16 +39,16 @@ int main_bench(){
 	
 	if(result==0){
 		for(i=0;i<=a-1;i++){
-			printf("%c",y[i]);
+			my_printf("%c",y[i]);
 		}
 		for(i=0;i<=s-1;i++){
-			printf("%c",t[i]);
+			my_printf("%c",t[i]);
 		}
 		for(i=a+v;i<=x-1;i++){
-			printf("%c",y[i]);
+			my_printf("%c",y[i]);
 		}
 	}
 	else
-		printf("%s",y);
+		my_printf("%s",y);
 	return 0;
 }

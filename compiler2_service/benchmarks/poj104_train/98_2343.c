@@ -6,9 +6,9 @@ int main_bench(){
 		int l;
 		char s[42];
 	}w[520];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<=n-1;i++){
-		scanf("%s",w[i].s);
+		my_scanf("%s",w[i].s);
 		w[i].l=0;
 		for (j=0;w[i].s[j]!='\0';j++){
 			w[i].l++;
@@ -18,23 +18,23 @@ int main_bench(){
 		m=m+w[i].l+1;
 		if (i==n-1){
 			if (m<=81)
-				printf("%s",w[i].s);
+				my_printf("%s",w[i].s);
 			else {
-				printf("\n");
-				printf("%s",w[i].s);
+				my_printf("\n");
+				my_printf("%s",w[i].s);
 			}
 		}
 		else if ((m<80)&&(m+w[i+1].l<=80)){
-			printf("%s ",w[i].s);
+			my_printf("%s ",w[i].s);
 		}
 		else if (m>81){
-			printf("\n");
-			printf("%s ",w[i].s);
+			my_printf("\n");
+			my_printf("%s ",w[i].s);
 			m=w[i].l+1;
 		}
 		else{ 
-			printf("%s",w[i].s);
-			printf("\n");
+			my_printf("%s",w[i].s);
+			my_printf("\n");
 			m=0;
 		}
 	}

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[600];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	int l=strlen(s);
 	int i,j,k;
 	int hw;
@@ -26,9 +26,9 @@ int main_bench()
 				{
 					for(k=j-i/2+1;k<=j+i/2;k++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}
@@ -50,9 +50,9 @@ int main_bench()
 				{
 					for(k=j-i/2;k<=j+i/2;j++)
 					{
-						printf("%c",s[k]);
+						my_printf("%c",s[k]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}

@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,k,i,j,count=0;
 	for(k=0;;k++)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(m!=0&&n!=0)
 		{
 			int *num=(int*)malloc(sizeof(int)*n);
@@ -34,7 +34,7 @@ int main_bench()
 		   for(i=0;i<n;i++)
 		   {
 			   if(*(num+i)!=0){
-				   printf("%d\n",num[i]);         
+				   my_printf("%d\n",num[i]);         
 				   break;
 			   }
 		   }

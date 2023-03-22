@@ -5,7 +5,7 @@ int main_bench()
 	char a[251],b[251],c[252];
 	int la,lb,i,m,tt;	
 
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	la= strlen(a);
 	lb= strlen(b);
 	m= la<lb?lb:la ;
@@ -46,8 +46,8 @@ int main_bench()
 		if ((c[i]=='0') && (tt==0))
 			continue;
 		else 
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

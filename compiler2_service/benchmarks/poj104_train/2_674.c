@@ -4,10 +4,10 @@ int main_bench()
 {
 	int A[100],C[26]={0},n,i,j,m,a=0,b;
 	char B[100][100],c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%s",&A[i],B[i]);
+		my_scanf("%d%s",&A[i],B[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -25,8 +25,8 @@ int main_bench()
 			b=i;
 		}
 	}
-	printf("%c\n",b+65);
-	printf("%d\n",a);
+	my_printf("%c\n",b+65);
+	my_printf("%d\n",a);
 	c=b+65;
 	for (i=0;i<n;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 		{
 			if (B[i][j]==c)
 			{
-				printf("%d\n",A[i]);
+				my_printf("%d\n",A[i]);
 			}
 		}
 	}

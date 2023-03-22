@@ -20,12 +20,12 @@ int sushu(int w)
 	int main_bench()
 {
 	int m,p;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	p=3;
 	while(p<=m/2)
 	{
 		if (sushu(p)&&sushu(m-p))
-			printf("%d %d\n",p,m-p);
+			my_printf("%d %d\n",p,m-p);
 		p++;
 	}
 	return 0;

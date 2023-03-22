@@ -3,7 +3,7 @@
 main_bench()
 {
      int m,t,n,i,j,temp,sum,count;
-     scanf ("%d",&n);
+     my_scanf ("%d",&n);
      int a[101][101];
      m=n;
      for (;n>0;n--)
@@ -12,7 +12,7 @@ main_bench()
          for (i=1;i<=m;i++)
          {
              for (j=1;j<=m;j++)
-             {scanf ("%d",&a[i][j]);}
+             {my_scanf ("%d",&a[i][j]);}
          }
          t=m;
          for (;t>2;t--)
@@ -68,6 +68,6 @@ main_bench()
                               a[i][j]=a[i][j]-temp;
                           }
        sum=sum+a[2][2];
-       printf ("%d\n",sum);
+       my_printf ("%d\n",sum);
        }
 }

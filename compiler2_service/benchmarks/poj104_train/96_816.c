@@ -26,14 +26,14 @@ int main_bench(){
 		}
 	}
 	if(i==x){
-		printf("0");
+		my_printf("0");
 	}
 	else if(i!=x){for(j=qs;j<x;j++){
-		printf("%d",a[j]);
+		my_printf("%d",a[j]);
 	}
 	}
-	printf("\n");
-	printf("%d",ys);
+	my_printf("\n");
+	my_printf("%d",ys);
 
 	return 0;
 }

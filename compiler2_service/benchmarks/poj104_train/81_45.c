@@ -7,18 +7,18 @@ int main_bench()
     int exchange();
     for(int i=0;i<5;i++)
         for(int j=0;j<5;j++)
-            scanf("%d",&p[i][j]);
-    scanf("%d %d",&n,&m);
+            my_scanf("%d",&p[i][j]);
+    my_scanf("%d %d",&n,&m);
     if(exchange())
        for(int i=0;i<5;i++)
            {
-           printf("%d",p[i][0]);
+           my_printf("%d",p[i][0]);
             for(int j=1;j<5;j++)
-                printf(" %d",p[i][j]);
-           printf("\n");  
+                my_printf(" %d",p[i][j]);
+           my_printf("\n");  
            }
     else
-        printf("error");
+        my_printf("error");
         
 }
 int exchange()

@@ -25,9 +25,9 @@ int main_bench()
 		else continue;
 	}
 	if(strcmp(str1,str2)>0)
-		printf(">");
+		my_printf(">");
 	if(strcmp(str1,str2)==0)
-		printf("=");
+		my_printf("=");
 	if(strcmp(str1,str2)<0)
-		printf("<");
+		my_printf("<");
 }

@@ -4,10 +4,10 @@ int main_bench()
 {int i,j,b[200],max=0,min=100,I,J,n;
 char a[200][200];
 
- scanf("%d",&n);
+ my_scanf("%d",&n);
 for (i=0;i<n;i++)
 {
- scanf("%s",a[i]);
+ my_scanf("%s",a[i]);
 }
 	
 for (i=0;i<n;i++)
@@ -24,7 +24,7 @@ if(min>b[i])
 {min=b[i];J=i;}
 }
 
-printf("%s\n",a[I]);
-printf("%s",a[J]);
+my_printf("%s\n",a[I]);
+my_printf("%s",a[J]);
 return 0;
 }

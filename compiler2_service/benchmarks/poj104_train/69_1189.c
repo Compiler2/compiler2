@@ -38,7 +38,7 @@ int main_bench()
 		}
 		for(i=0;i<=counta;i++)
 			if(c[i]=='0') j++;
-		if(j==counta+1) printf("0\n");
+		if(j==counta+1) my_printf("0\n");
 		else
 		{
 			for(i=0;i<=counta;i++)
@@ -49,9 +49,9 @@ int main_bench()
 					break;
 				}
 			}
-			for(i=r;i<=counta;i++) printf("%c",c[i]);
+			for(i=r;i<=counta;i++) my_printf("%c",c[i]);
 		}
-		printf("\n");
+		my_printf("\n");
 	return 0;
 }
 

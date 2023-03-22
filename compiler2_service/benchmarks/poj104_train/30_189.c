@@ -4,7 +4,7 @@
 int main_bench(){
 	int n;
 	int sum,i,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sum=0;
 	for(i=1;i<=n;i++){
 		a=i/10;
@@ -13,6 +13,6 @@ int main_bench(){
 			continue;
 		sum=sum+i*i;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }
 

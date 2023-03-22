@@ -16,8 +16,8 @@ int main_bench()
     char s[501];
 
     int u[500]={0};
-    scanf("%d",&k);
-    scanf("%s",s);
+    my_scanf("%d",&k);
+    my_scanf("%s",s);
     l=strlen(s);
     for(i=0;i<l;i++)
     {
@@ -50,9 +50,9 @@ int main_bench()
         }
     }
     qsort(str,r,sizeof(struct d),compare);
-    if((str[0].t)/500==1) printf("NO");
+    if((str[0].t)/500==1) my_printf("NO");
     else {
-    printf("%d\n",(str[0].t)/500);
+    my_printf("%d\n",(str[0].t)/500);
     for(i=0;(str[i].t)/500==(str[0].t)/500;i++)
     puts(str[i].a);
     }

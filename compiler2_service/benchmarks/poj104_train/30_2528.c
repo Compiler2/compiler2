@@ -5,7 +5,7 @@ main_bench()
 {
 int n,i,c,a;
 long T;
-scanf("%d",&n);
+my_scanf("%d",&n);
 T=0;
 
 for(i=1;i<=n;i++)
@@ -15,7 +15,7 @@ for(i=1;i<=n;i++)
 if (i%7!=0&&c%10!=0&&i/10!=7) T=T+i*i;
 
 }
-printf("%d\n",T);
+my_printf("%d\n",T);
 
 return 0;
 }

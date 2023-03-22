@@ -9,12 +9,12 @@ int main_bench()
 	int x,y;
 	int num;
 	int e=0,f=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 		for(col=0;col<n;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	for(row=0;row<n;row++)
@@ -54,6 +54,6 @@ int main_bench()
 	x=c-a-1;
 	y=d-b-1;
 	num=x*y;
-	printf("%d\n",num);
+	my_printf("%d\n",num);
 	return 0;
 }

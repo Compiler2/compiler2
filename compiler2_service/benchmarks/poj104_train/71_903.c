@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n ,i,j,a=0,b=0,c;
 	int y[300],m1[300],m2[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%d%d%d",&y[i],&m1[i],&m2[i]);
+		my_scanf("%d%d%d",&y[i],&m1[i],&m2[i]);
 	for (i=0;i<n;i++)
 	{
 		a=0;
@@ -31,8 +31,8 @@ int main_bench()
 			}
 		}
 		if (a%7==0)
-			printf("YES\n");
-		else printf("NO\n");
+			my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 
 

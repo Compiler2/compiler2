@@ -18,7 +18,7 @@ main_bench()
 {
 	char a[100],b[100];
 	int len1,len2,i,t=0;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	if(len1==len2)
@@ -26,14 +26,14 @@ main_bench()
 		for(i=0;i<len1;++i)
 			if(compare(b,len2,a[i]))
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				t=1;
 				break;
 			}
 		if(t==0)
-			printf("YES\n");
+			my_printf("YES\n");
 	}
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }
 	

@@ -14,15 +14,15 @@ int zhishu(int n){
 }
 int main_bench(){
 	int n,m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;i<=n-2;i++){
 		if(zhishu(i)&&zhishu(i+2)){
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 			m++;
 		}
 	}
 	if(m==0){
-		printf("empty\n");
+		my_printf("empty\n");
 	}
     return 0;
 }

@@ -5,9 +5,9 @@ int main_bench()
     int l,m,n,i,j,s,k;
     char string[256],substring[256],replacement[256];
     char t;
-    scanf ("%s",string);
-    scanf ("%s",substring);
-    scanf ("%s",replacement);
+    my_scanf ("%s",string);
+    my_scanf ("%s",substring);
+    my_scanf ("%s",replacement);
     l=strlen(string);
     m=strlen(substring);
     t=substring[0];
@@ -30,6 +30,6 @@ int main_bench()
            {i++;}
        }
      }
-    printf("%s\n",string);
+    my_printf("%s\n",string);
 return 0;
 }

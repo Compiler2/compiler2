@@ -8,7 +8,7 @@ long month,day;
 int w[10000];
 int i,s,h,x,y;
 long sum=0;
-scanf("%d %d %d",&year,&month,&day);
+my_scanf("%d %d %d",&year,&month,&day);
 for(i=0;i<year%8000;i++)
 { 
 s=((i+1)%4==0&&(i+1)%100!=0)||(i+1)%400==0;
@@ -47,5 +47,5 @@ case 4:y="Thu.";break;
 case 5:y="Fri.";break;
 case 6:y="Sat.";break;
 }
-printf("%s",y);
+my_printf("%s",y);
 }

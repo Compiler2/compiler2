@@ -16,7 +16,7 @@ void houzhui()
 main_bench()
 {
       int a,i;
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       getchar();
       for(i=0;i<a;i++)
         houzhui();

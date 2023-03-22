@@ -10,10 +10,10 @@ int main_bench()
 		int total;
 	}student[100000],temp;
 	int n,k,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
-		scanf("%d%d%d",&student[k].ID,&student[k].mark1,&student[k].mark2);
+		my_scanf("%d%d%d",&student[k].ID,&student[k].mark1,&student[k].mark2);
 		student[k].total=student[k].mark1+student[k].mark2;
 	}
 	for(m=0;m<3;m++)
@@ -28,5 +28,5 @@ int main_bench()
 		}
 	}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",student[0].ID,student[0].total,student[1].ID,student[1].total,student[2].ID,student[2].total);
+	my_printf("%d %d\n%d %d\n%d %d\n",student[0].ID,student[0].total,student[1].ID,student[1].total,student[2].ID,student[2].total);
 }

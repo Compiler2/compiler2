@@ -8,6 +8,6 @@ int main_bench()
     l=strlen(a);
     for(i=0;i<l;i++)
        {b[i]=a[i]+a[(i+1)%l];
-       printf("%c",b[i]);}
+       my_printf("%c",b[i]);}
 return 0;
 }

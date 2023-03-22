@@ -17,10 +17,10 @@ int main_bench()
 	int n;
 	int sum=0;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		if(qi(i)==0)
 			sum=sum+i*i;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 return 0;
 }

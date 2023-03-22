@@ -7,8 +7,8 @@ int main_bench()
 	k=0;
 	double bl1,bl2;
 	char jy1[501],jy2[501];
-	scanf("%lf",&bl1);
-	scanf("%s%s",&jy1,&jy2);
+	my_scanf("%lf",&bl1);
+	my_scanf("%s%s",&jy1,&jy2);
 	e1=strlen(jy1);
 	e2=strlen(jy2);
 	if(e1!=e2)
@@ -34,15 +34,15 @@ int main_bench()
 	bl2=1.0*k/e1;
 	if(t==0)
 	{
-		printf("error");
+		my_printf("error");
 	}else
 	{
 		if(bl2>bl1)
 		{
-			printf("yes");
+			my_printf("yes");
 		}else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

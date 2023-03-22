@@ -5,10 +5,10 @@ int main_bench()
 	int a[300],i,j,k,t;
     for(i=0;i<300;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(getchar()!=',')break;
 	}
-	if(i==0) printf("No\n");
+	if(i==0) my_printf("No\n");
 	else
 	{
 	for(j=0;j<i+1;j++)
@@ -28,9 +28,9 @@ int main_bench()
 	    if(a[j]!=a[j+1])
 		break;
 	}
-	if(j==i) printf("No\n");
+	if(j==i) my_printf("No\n");
 	else
-	printf("%d\n",a[j+1]);
+	my_printf("%d\n",a[j+1]);
 	}
 
 }

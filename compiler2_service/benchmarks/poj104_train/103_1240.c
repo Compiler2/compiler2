@@ -7,9 +7,9 @@ int main_bench(){
 	l=strlen(s);
 	if(l==1){
 		if(s[0]>=65&&s[0]<=90)
-			printf("(%c,%d)",s[0],1);
+			my_printf("(%c,%d)",s[0],1);
 		else
-			printf("(%c,%d)",s[0]-32,1);
+			my_printf("(%c,%d)",s[0]-32,1);
 	}
 	else{
 		for(i=1;i<=l;i++){
@@ -22,9 +22,9 @@ int main_bench(){
 				break;
 		}
 		if(s[k]>=65&&s[k]<=90)
-			printf("(%c,%d)",s[k],f[k]);
+			my_printf("(%c,%d)",s[k],f[k]);
 		else
-			printf("(%c,%d)",s[k]-32,f[k]);
+			my_printf("(%c,%d)",s[k]-32,f[k]);
 	}
 	}
 	return 0;

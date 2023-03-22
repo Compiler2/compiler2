@@ -3,7 +3,7 @@
 main_bench()
 {
 	int a,b,c,d,e,x;
-	scanf("%5d",&x);
+	my_scanf("%5d",&x);
 	a=x/10000;
 	b=x%10000/1000;
 	c=x%1000/100;
@@ -15,5 +15,5 @@ loop:if(x%10==0)
 		 x=x/10;
 		 goto loop;
 	 }
-	 else printf("%d\n",x);
+	 else my_printf("%d\n",x);
 }

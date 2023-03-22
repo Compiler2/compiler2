@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int i,j;
 	int c,d;
 	int t;
@@ -20,8 +20,8 @@ int main_bench()
 			if (b[j]>b[j+1])
 			{t=b[j];b[j]=b[j+1];b[j+1]=t;}}
 	}
-    if (strcmp(a,b)==0)  printf("YES");
-	else printf("NO");
+    if (strcmp(a,b)==0)  my_printf("YES");
+	else my_printf("NO");
 
 	
 	

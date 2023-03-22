@@ -16,8 +16,8 @@ int main_bench(){
     }
   }
   for(i=0;i<j;i++){
-      printf("%d,",z[i]);
+      my_printf("%d,",z[i]);
   }
-  printf("%d",z[j]);
+  my_printf("%d",z[j]);
   return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
   int i,l,n,j;
   char zfc[300];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-   scanf("%s",zfc);
+   my_scanf("%s",zfc);
    l=strlen(zfc);
   for(j=0;j<l;j++){
    if(zfc[j]=='A') zfc[j]='T';
@@ -13,7 +13,7 @@ int main_bench(){
    else if(zfc[j]=='C') zfc[j]='G';
    else if(zfc[j]=='G') zfc[j]='C';
  }
-   printf("%s\n",zfc);
+   my_printf("%s\n",zfc);
 }
 
 return 0;

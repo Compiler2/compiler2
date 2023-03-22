@@ -3,10 +3,10 @@
 int main_bench()
 {
     int N;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int *h=(int*)malloc((N+1)*sizeof(int));
     for(int i=1;i<=N;i++)
-        scanf("%d",&h[i]);
+        my_scanf("%d",&h[i]);
     int *f=(int*)malloc((N+1)*sizeof(int)); 
     f[1]=1;
     for(int i=2;i<=N;i++)
@@ -28,5 +28,5 @@ int main_bench()
        if(f[i]>max)
           max=f[i];
        }
-    printf("%d",max);
+    my_printf("%d",max);
 }

@@ -4,16 +4,16 @@ double add(int n);
 int main_bench()
 {
     int m;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     int *sz=(int*)malloc(sizeof(int)*m);
     int i;
     for(i=0;i<m;i++){
-      scanf("%d",&sz[i]);
+      my_scanf("%d",&sz[i]);
     }
     double a;    
     for(i=0;i<m;i++){
       a=add(sz[i]);
-      printf("%.3lf\n",a);
+      my_printf("%.3lf\n",a);
     }
     return 0;
 }

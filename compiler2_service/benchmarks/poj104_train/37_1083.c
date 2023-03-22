@@ -7,8 +7,8 @@ int main_bench()
    int n;
    int i,flag,j,k;
    
-   scanf("%d",&n); 
-   scanf("%c",&q);
+   my_scanf("%d",&n); 
+   my_scanf("%c",&q);
       
    for (i=1;i<=n;i++) 
       {
@@ -25,11 +25,11 @@ int main_bench()
           for (j=0;j<strlen(a);j++)
             if (ans[a[j]-'a']==1)
              {
-                 printf("%c\n",a[j]);                             
+                 my_printf("%c\n",a[j]);                             
                  flag=1;      
                  break;   
              }
-          if (flag==0) printf("no\n");
+          if (flag==0) my_printf("no\n");
       } 
    return 0;
 }

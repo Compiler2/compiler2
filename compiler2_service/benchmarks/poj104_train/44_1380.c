@@ -24,13 +24,13 @@ int main_bench()
      int a[7];
      int c[7];
      for(i=1;i<=6;i++)
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
      for(i=1;i<=6;i++)
          if(a[i]==0)
-             printf("0\n");
+             my_printf("0\n");
          else
          {
              c[i]=reverse(a[i]);
-             printf("%d\n",c[i]);
+             my_printf("%d\n",c[i]);
          }
 }

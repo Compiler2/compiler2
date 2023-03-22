@@ -25,12 +25,12 @@ int main_bench()
 			{
 				t=r[j];r[j]=r[j+1];r[j+1]=t;}}
 	}
-	if(flag==0||k==0||r[0]==r[k])printf("No");
+	if(flag==0||k==0||r[0]==r[k])my_printf("No");
 	if(flag==1)
 	{
 		for(i=k;i>=1;i--)
 		{
-			if(r[i-1]<r[i]){printf("%d",r[i-1]);break;}
+			if(r[i-1]<r[i]){my_printf("%d",r[i-1]);break;}
 		}
 	}
 

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n;
 	double j[500],a[500][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf %lf",&a[i][0],&a[i][1]);
+		my_scanf("%lf %lf",&a[i][0],&a[i][1]);
 	}
 	j[0]=100*a[0][1]/a[0][0]*1.0;
 	for(i=1;i<n;i++)
@@ -18,15 +18,15 @@ int main_bench()
 	{
 		if(j[i]-j[0]>5)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		if(j[0]-j[i]>5)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if((j[i]-j[0]<=5)&&(j[0]-j[i]<=5))
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

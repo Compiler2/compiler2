@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j,n,num=0;
 	float average,n1,m,sn=0,a[300],b[300],max,k[300],p[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 		sn=sn+a[i];
 	}
 	n1=n;
@@ -53,15 +53,15 @@ int main_bench()
 	}
 	if(j==1)
 	{
-		printf("%.f\n",p[0]);
+		my_printf("%.f\n",p[0]);
 	}
 	if(j>1)
 	{
 		for(i=0;i<j-1;i++)
 		{
-			printf("%.f,",p[i]);
+			my_printf("%.f,",p[i]);
 		}
-		printf("%.f\n",p[j-1]);
+		my_printf("%.f\n",p[j-1]);
 	}
 		
 	

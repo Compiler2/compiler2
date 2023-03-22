@@ -6,19 +6,19 @@ int sushu(int);
 int main_bench()
 {
 	int m,n,i,sign=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(huiwen(i)&&sushu(i))
 		{
 			if(sign==0)
 			{
-				sign=1;printf("%d",i);
+				sign=1;my_printf("%d",i);
 			}
-			else printf(",%d",i);
+			else my_printf(",%d",i);
 		}
 	}
-	if(!sign) printf("no");
+	if(!sign) my_printf("no");
 }
 
 int huiwen(int a)

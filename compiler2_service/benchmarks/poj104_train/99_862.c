@@ -4,9 +4,9 @@ int main_bench(){
     int i,m,a=0,b=0,c=0,d=0;
 	int yer[100];
 	double q,w, e,r;
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 for( i=0;i<m;i++){
-		scanf("%d", &(yer[i]));
+		my_scanf("%d", &(yer[i]));
 	}
  for(i=0 ;i<m;i++){
 	 if(yer[i]<=18){
@@ -23,9 +23,9 @@ for( i=0;i<m;i++){
 			w=100.0*b/m;
 			e=100.0*c/m;
 			r=100.0*d/m;
-        printf("1-18: %.2lf%%\n",q);
-        printf("19-35: %.2lf%%\n",w);
-        printf("36-60: %.2lf%%\n",e);
-        printf("60??: %.2lf%%\n",r);
+        my_printf("1-18: %.2lf%%\n",q);
+        my_printf("19-35: %.2lf%%\n",w);
+        my_printf("36-60: %.2lf%%\n",e);
+        my_printf("60??: %.2lf%%\n",r);
 return 0;
 }

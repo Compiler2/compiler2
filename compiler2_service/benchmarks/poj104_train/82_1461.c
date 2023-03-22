@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[101],b[101],i,j=0,c[101],max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	for(i=0;i<101;i++){
 	c[i]=0;
@@ -21,6 +21,6 @@ int main_bench(){
 			max=i;
 		}
 	}
-	printf("%d",c[max]);
+	my_printf("%d",c[max]);
 	return 0;
 }

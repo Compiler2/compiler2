@@ -38,8 +38,8 @@ int main_bench()
 		if(strcmp(a[i],change)==0)
 			strcpy(a[i],chafor);
 	}
-	printf("%s",a[0]);
+	my_printf("%s",a[0]);
 	for(i=1;i<num;i++)
-		printf(" %s",a[i]);
+		my_printf(" %s",a[i]);
 	return 0;
 }

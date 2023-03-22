@@ -20,19 +20,19 @@ void move(int a[5][5],int p,int q)
         for(i=0;i<5;i++)
        for(j=0;j<5;j++)
 	   { if(j<4)
-	       printf("%d ",a[i][j]);
+	       my_printf("%d ",a[i][j]);
 	     else
-			 printf("%d\n",a[i][j]);}
+			 my_printf("%d\n",a[i][j]);}
    }
     else
-    printf("error");
+    my_printf("error");
 }
 int main_bench()
 {
   int a[5][5],i,j,u,v;
   for(i=0;i<5;i++)
      for(j=0;j<5;j++)
-       scanf("%d",&a[i][j]);
-    scanf("%d %d",&u,&v);
+       my_scanf("%d",&a[i][j]);
+    my_scanf("%d %d",&u,&v);
     move(a,u,v);
 }

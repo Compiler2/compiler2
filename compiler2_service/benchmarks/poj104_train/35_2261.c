@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,t,r,c,s=0,max,flag,a[9][9];
-	scanf("%d,%d",&r,&c);
+	my_scanf("%d,%d",&r,&c);
 	for(i=0;i<r;i++)
 		for(j=0;j<c;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<r;i++){
 		for(j=0,max=0;j<c;j++)
 			if(a[i][j]>a[i][max])
@@ -20,7 +20,7 @@ int main_bench()
 			}
 	}
 	if(s)
-		printf("%d+%d",i,max);
+		my_printf("%d+%d",i,max);
 	else
-		printf("No");
+		my_printf("No");
 }

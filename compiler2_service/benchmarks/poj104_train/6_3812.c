@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int k,n,i,m,p,q,sz[100][100],sum;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
 		sum=0;
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(p=0;p<m;p++)
 		{
 			for(q=0;q<n;q++)
 			{
-				scanf("%d",&sz[p][q]);
+				my_scanf("%d",&sz[p][q]);
 			}
 		}
 		if(m==1||n==1)
@@ -44,7 +44,7 @@ int main_bench()
 			  sum+=sz[q][0];
 		   }
 		}
-	    printf("%d\n",sum);
+	    my_printf("%d\n",sum);
 	}
 	return 0;
 }

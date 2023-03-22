@@ -4,7 +4,7 @@ int main_bench()
 {
  unsigned int a,b=0,c;char d;
 
- for(scanf("%d",&a);(d=getchar())!='\n';)
+ for(my_scanf("%d",&a);(d=getchar())!='\n';)
  {
   if(a>b)
   {
@@ -15,7 +15,7 @@ int main_bench()
    ;
   else if(a>=c)
    c=a;
-  scanf("%d",&a);
+  my_scanf("%d",&a);
  }
   if(a>b)
   {
@@ -27,7 +27,7 @@ int main_bench()
   else if(a>=c)
    c=a;
  if(c==0)
-  printf("No");
- else printf("%d",c);
+  my_printf("No");
+ else my_printf("%d",c);
  return 0;
 }

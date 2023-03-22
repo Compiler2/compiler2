@@ -11,7 +11,7 @@ int main_bench(){
   }
 	for(m=0;m<i;m++){
 		for(b=q[m];b<=z[m];b++){
-       printf("%c",dc[b]);
+       my_printf("%c",dc[b]);
 		}
 	}
 	  return 0;

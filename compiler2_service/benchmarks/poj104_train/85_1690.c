@@ -3,9 +3,9 @@
 int main_bench(){
     char a[21]={0};
     int n,h,t,p[1000]={0},q[1000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%s",a);
+        my_scanf("%s",a);
         h=0;
         h=strlen(a);
         p[i]=h;
@@ -19,8 +19,8 @@ int main_bench(){
     }
 }
 if(q[i]==p[i]){
-        printf("yes\n");}
+        my_printf("yes\n");}
         else
-        {printf("no\n");}
+        {my_printf("no\n");}
     }
         return 0;}

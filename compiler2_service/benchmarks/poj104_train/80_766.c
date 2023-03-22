@@ -5,8 +5,8 @@ int main_bench()
 	int s[12]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int a,b,c,d,e,f;
 	int i,sum1=0,sum2=0,m,j;
-	scanf("%d%d%d\n",&a,&b,&c);
-    scanf("%d%d%d",&d,&e,&f);
+	my_scanf("%d%d%d\n",&a,&b,&c);
+    my_scanf("%d%d%d",&d,&e,&f);
 	if(a==d)
 	{
 		if((a%4==0&&a%100!=0)||(a%400==0))
@@ -49,6 +49,6 @@ int main_bench()
 			{m+=365;}
 		}
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

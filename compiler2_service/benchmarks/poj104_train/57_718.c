@@ -4,19 +4,19 @@ int main_bench()
 {
 	int n,i,k,j,t;
 	char str[32];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str);
+		my_scanf("%s",str);
 		k=strlen(str);
 		if(str[k-1]=='r'||str[k-1]=='y')
 		{
 			for(j=0;j<k-2;j++)
 				{
 					if(j<k-3)
-					printf("%c",str[j]);
+					my_printf("%c",str[j]);
 					if(j==k-3)
-					printf("%c\n",str[j]);
+					my_printf("%c\n",str[j]);
 			    }
 		}
 		if(str[k-1]=='g')
@@ -24,9 +24,9 @@ int main_bench()
 			for(j=0;j<k-3;j++)
 			{
 				if(j<k-4)
-				printf("%c",str[j]);
+				my_printf("%c",str[j]);
 				if(j==k-4)
-				printf("%c\n",str[j]);
+				my_printf("%c\n",str[j]);
 			}
 		}	
 	}

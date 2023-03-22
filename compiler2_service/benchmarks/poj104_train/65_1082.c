@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,c=0,d=0,i,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=n;
 	int a[200],b[200];
 	double e;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]==0&&b[i]==1)
 			c++;
 		else if(a[i]==1&&b[i]==2)
@@ -20,10 +20,10 @@ int main_bench(){
 	e=(double)m;
 	e=e/2;
 	if(c<e)
-		printf("B");
+		my_printf("B");
 	else if(c>e)
-		printf("A");
+		my_printf("A");
 	else if(c==e)
-		printf("Tie");
+		my_printf("Tie");
 	return 0;
 }

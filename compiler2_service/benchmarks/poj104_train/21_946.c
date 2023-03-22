@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,sum=0,i,j,a[301],temp;
 	double ave;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",(a+i));
+		my_scanf("%d",(a+i));
 	for(i=0;i<n;i++)
 		sum+=*(a+i);
 	ave=(double)sum/(double)n;
@@ -29,24 +29,24 @@ int main_bench()
 		{
 			if(temp==0)
 			{
-				printf("%d",*(a+i));
+				my_printf("%d",*(a+i));
 				temp++;
 			}
 			else
-				printf(",%d",*(a+i));
+				my_printf(",%d",*(a+i));
 			break;
 		}
 		else
 		{
 			if(temp==0)
 			{
-				printf("%d",*(a+i));
+				my_printf("%d",*(a+i));
 				temp++;
 			}
 			else
-				printf(",%d",*(a+i));
+				my_printf(",%d",*(a+i));
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

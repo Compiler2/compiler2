@@ -4,7 +4,7 @@ main_bench()
 {
 const int last=1000;
 char s[1050];
-scanf("%s",s);
+my_scanf("%s",s);
 int num[1050];
 int len=strlen(s);
 int i;
@@ -21,9 +21,9 @@ num[i]=num[i]/13;
 i++;
 }
 while (num[st]==0) st++;
-if (st>last) printf("0");
+if (st>last) my_printf("0");
 for (i=st;i<=last;i++) 
-printf("%c",num[i]+'0');
-printf("\n");
-printf("%d",num[last+1]/10);
+my_printf("%c",num[i]+'0');
+my_printf("\n");
+my_printf("%d",num[last+1]/10);
 }

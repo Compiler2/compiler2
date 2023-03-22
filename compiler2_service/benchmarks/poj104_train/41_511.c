@@ -41,7 +41,7 @@ main_bench()
       if(e<=2){if(d!=1)xx=1;}
       else {if(d==1)xx=1;}
       if(xx==0)
-      printf("%d %d %d %d %d",a,b,c,d,e);
+      my_printf("%d %d %d %d %d",a,b,c,d,e);
       k[e]=0;
       }
       }

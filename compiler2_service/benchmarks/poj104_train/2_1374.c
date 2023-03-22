@@ -17,9 +17,9 @@ for(i=0;i<26;i++)
 	a[i].p=0;
 for(i=0,d='A';i<26;i++,d++)
 {a[i].c=d;}
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<m;i++)
-{scanf("%d%s",&b[i].num,b[i].s);}
+{my_scanf("%d%s",&b[i].num,b[i].s);}
 for(i=0;i<m;i++)
 {for(j=0;;j++)
 {if(b[i].s[j]=='\0')
@@ -33,7 +33,7 @@ e=a[0];
 for(i=0;i<26;i++)
 {if(a[i].p>max)
 {e=a[i];max=a[i].p;}}
-printf("%c\n",e.c);
-printf("%d\n",e.p);
+my_printf("%c\n",e.c);
+my_printf("%d\n",e.p);
 for(j=0;j<e.p;j++)
-	printf("%d\n",e.n[j]);}
+	my_printf("%d\n",e.n[j]);}

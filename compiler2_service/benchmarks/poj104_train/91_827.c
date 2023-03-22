@@ -14,5 +14,5 @@ int main_bench()
 	if(*(p+1)=='\0'){*q++=(*p)+*str;}
 	*q='\0';
 	for(q=str1;*q!='\0';q++)
-	printf("%c",*q);
+	my_printf("%c",*q);
 }

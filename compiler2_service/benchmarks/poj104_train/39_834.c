@@ -13,9 +13,9 @@ int main_bench()
  struct xuesheng x[101],*p;
  int i,n,max=0,total=0,money;
  char name[21];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i=0;i<n;i++)
- {scanf("%s %d %d %c %c %d\n",&x[i].x,&x[i].qimo,&x[i].banji,&x[i].ganbu,&x[i].xibu,&x[i].lunwen);
+ {my_scanf("%s %d %d %c %c %d\n",&x[i].x,&x[i].qimo,&x[i].banji,&x[i].ganbu,&x[i].xibu,&x[i].lunwen);
   x[i].qian=0;
   if (x[i].qimo>80&&x[i].lunwen!=0)
 	  x[i].qian+=8000;
@@ -33,5 +33,5 @@ int main_bench()
  for (i=0;i<n;i++)
 	 if(max<x[i].qian)
 	 {strcpy(name,x[i].x);max=x[i].qian;}
- printf("%s\n%d\n%d",name,max,total);
+ my_printf("%s\n%d\n%d",name,max,total);
 }

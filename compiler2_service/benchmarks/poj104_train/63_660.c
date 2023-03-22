@@ -4,20 +4,20 @@ int main_bench()
 {
 	int a[100][100],b[100][100];
 	int q,w,e,r,i,j,sum=0,k,flag=0;
-	scanf("%d %d",&q,&w);
+	my_scanf("%d %d",&q,&w);
 	for(i=0;i<q;i++)
 	{
 		for(j=0;j<w;j++)
 		{
-             scanf("%d",&a[i][j]);
+             my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&e,&r);
+	my_scanf("%d %d",&e,&r);
 	for(i=0;i<e;i++)
 	{
 		for(j=0;j<r;j++)
 		{
-             scanf("%d",&b[i][j]);
+             my_scanf("%d",&b[i][j]);
 		}
 	}
 	for(i=0;i<q;i++)
@@ -32,17 +32,17 @@ int main_bench()
 			}
 			if(flag==0)
 			{
-				printf("%d",sum);
+				my_printf("%d",sum);
 				flag=1;
 			}
 			else
 			{
-                printf(" %d",sum);
+                my_printf(" %d",sum);
 			}
 			sum=0;
 			
 		}
-		printf("\n");
+		my_printf("\n");
 		flag=0;
 
 

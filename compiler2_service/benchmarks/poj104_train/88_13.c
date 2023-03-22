@@ -8,9 +8,9 @@ main_bench()
     for(i=0;i<strlen(s);i++)
     {
         if(s[i]>47&&s[i]<58)
-            printf("%c",s[i]);
+            my_printf("%c",s[i]);
         else if(s[i+1]>47&&s[i+1]<58)
-            printf("\n");
+            my_printf("\n");
     }
     getchar();
     getchar();

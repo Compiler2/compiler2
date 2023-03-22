@@ -5,9 +5,9 @@ int main_bench(){
     int result[32]={0};
     int carry=0;
     int i,j,key=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n==0){
-       printf("1"); 
+       my_printf("1"); 
     }else{
        result[0]=1;
        for(i=1;i<=n;i++){
@@ -22,13 +22,13 @@ int main_bench(){
        }
        for(i=31;i>=0;i--){
                if(result[i]!=0){
-               printf("%d",result[i]);
+               my_printf("%d",result[i]);
                i--;
                break;
                }
        }
        for(;i>=0;i--){              
-               printf("%d",result[i]);
+               my_printf("%d",result[i]);
        }
     }
 	

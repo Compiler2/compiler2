@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,j,k,y;
     y=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=2;i<=n-2;i++)
     {
         for (j=2;j<i;j++)
@@ -22,12 +22,12 @@ int main_bench()
             if (k==i+2)
             {
                y=1;
-               printf("%d %d\n",i,i+2);
+               my_printf("%d %d\n",i,i+2);
                }
             }
         else
         continue;
         }
-     if (y==0) printf("empty\n");
+     if (y==0) my_printf("empty\n");
      return(0);
 }

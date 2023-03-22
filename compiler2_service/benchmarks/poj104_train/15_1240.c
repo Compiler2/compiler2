@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j;
 	int x1=-1, y1=-1, x2=-1, y2=-1;
     int t[500][500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i = 0; i < n; i++) 
 		for(j = 0; j < n; j++) 
-			scanf("%d", &t[i][j]);
+			my_scanf("%d", &t[i][j]);
 	for(i = 0; i < n; i++) 
 	{
 		for(j = 0; j < n; j++) 
@@ -37,7 +37,7 @@ int main_bench()
 		if(x2!=-1)
 		break;
 	}
-	printf("%d\n", (x2 - x1 - 1) * (y2 - y1 - 1));
+	my_printf("%d\n", (x2 - x1 - 1) * (y2 - y1 - 1));
 	return 0;
 }
 

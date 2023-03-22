@@ -4,14 +4,14 @@ int main_bench()
 {
 char a[600],b[600];
 double n,x;
-scanf("%lf\n",&n);
+my_scanf("%lf\n",&n);
 gets(a);
 gets(b);
 int i,j,a1,b1,xiangtong=0,zhengfou=1,y=0;
 a1=strlen(a);
 b1=strlen(b);
 if(a1!=b1)
-{printf("error");y=1;}
+{my_printf("error");y=1;}
 else
 {
 	for(i=0;i<a1;i++)
@@ -25,15 +25,15 @@ else
 	}
 }
 if(zhengfou==0)
-printf("error");
+my_printf("error");
 else
 if(y!=1)
 {
   x=xiangtong*1.0/a1;
   if(x<=n)
-	  printf("no");
+	  my_printf("no");
   else
-	  printf("yes");
+	  my_printf("yes");
 
 }
 return 0;

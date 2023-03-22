@@ -24,8 +24,8 @@ int main_bench()
 	}
 for(i=0;i<j;i++)
 {a[i]=strlen(s[i]);}
-printf("%d",a[0]);
+my_printf("%d",a[0]);
 for(i=1;i<j;i++)
-{printf(",%d",a[i]);}
+{my_printf(",%d",a[i]);}
 return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
@@ -23,18 +23,18 @@ int main_bench()
 				}
 			    else
 				{
-			        printf("no\n");
+			        my_printf("no\n");
 			     	break;
 				}
 			}
 		    if(s[j]=='\0')
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 		}
    	    else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

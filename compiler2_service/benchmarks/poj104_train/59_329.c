@@ -26,7 +26,7 @@ int main_bench()
 {
 	int i,s[200]={0},j;
 	char a[200][200],b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
     {
 		b=getchar();
@@ -38,12 +38,12 @@ int main_bench()
 		}		
 	}
 	b=getchar();
-	scanf("%d",&m);
+	my_scanf("%d",&m);
    	for(i=0;i<n+2;i++)
 		a[0][i]=a[n+1][i]='#';
 	for(i=0;i<n+2;i++)
 		a[i][0]=a[i][n+1]='#';
 	for(i=2;i<=m;i++)
 		s[i]=p(a);
-	printf("%d",s[m]);
+	my_printf("%d",s[m]);
 }

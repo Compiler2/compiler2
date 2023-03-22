@@ -5,11 +5,11 @@ int main_bench()
     int n,i,j,k,m,x,y;
     int a[100000][2];
     int b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<100000;i++)
     {
-        scanf("%d",&a[i][0]);
-        scanf("%d",&a[i][1]);
+        my_scanf("%d",&a[i][0]);
+        my_scanf("%d",&a[i][1]);
         if(a[i][0]==a[i][1]&&a[i][0]==0)
         break;
     }
@@ -26,7 +26,7 @@ int main_bench()
       }
     }
     if(m!=1)
-    printf("NOT FOUND");
+    my_printf("NOT FOUND");
     else
     {
     x=0;
@@ -38,12 +38,12 @@ int main_bench()
         }
         if(x>=n-1)
         {
-        printf("%d\n",b);
+        my_printf("%d\n",b);
         y++;
         }
          
     if(y==0)
-    printf("NOT FOUND");  
+    my_printf("NOT FOUND");  
     }    
     getchar();
     getchar();

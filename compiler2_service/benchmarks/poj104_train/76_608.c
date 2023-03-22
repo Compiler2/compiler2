@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,j,e,a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int x[n],y[n];
     for(i=0;i<n;i++){
-        scanf("%d %d",&x[i],&y[i]);
+        my_scanf("%d %d",&x[i],&y[i]);
     }
     for(j=1;j<=n;j++){
         for(i=0;i<n-j;i++){
@@ -28,10 +28,10 @@ int main_bench(){
         }
     }
     if(a!=0){
-        printf("no");
+        my_printf("no");
     }
     else{
-        printf("%d %d",x[0],y[n-1]);
+        my_printf("%d %d",x[0],y[n-1]);
     }
     return 0;
 }

@@ -9,7 +9,7 @@ int main_bench()
     a=c=e=g=h=j=31;
     d=f=i=k=30;
 
-	scanf("%d%d%d",&year,&month,&date);
+	my_scanf("%d%d%d",&year,&month,&date);
 
 	if((year%4!=0)||(year%100==0&&year%400!=0))
 		b=28;
@@ -30,7 +30,7 @@ int main_bench()
 	case 11:day=a+b+c+d+e+f+g+h+i+j+date;break;
 	case 12:day=a+b+c+d+e+f+g+h+i+j+k+date;break;}
 
-	printf("%d\n",day);
+	my_printf("%d\n",day);
 	return 0;
 }
 

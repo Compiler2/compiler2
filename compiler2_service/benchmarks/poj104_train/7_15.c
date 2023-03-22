@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,t,k;
 	char s[256],w[256],c[256],x[256];
-	scanf("%s",w);
-	scanf("%s",s);
-	scanf("%s",c);
+	my_scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",c);
 	t=strlen(s);
     for(i=0;w[i]!='\0';i++)
 	{
@@ -24,6 +24,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%s",w);
+	my_printf("%s",w);
 	return 0;	
 }

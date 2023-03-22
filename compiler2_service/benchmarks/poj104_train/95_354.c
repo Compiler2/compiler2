@@ -13,15 +13,15 @@ int main_bench()
 	if(m[i]>=65&&m[i]<=90)m[i]=m[i]+32;
 	if(n[i]>=65&&n[i]<=90)n[i]=n[i]+32;
 		if(m[i]>n[i])
-		{printf(">");x=1;
+		{my_printf(">");x=1;
 			break;
 		}
 		else if(m[i]<n[i])
-		{printf("<");
+		{my_printf("<");
 		x=1;
 		break;
 		}}
-	if(x==0)printf("=");
+	if(x==0)my_printf("=");
 	return 0;
 }
 

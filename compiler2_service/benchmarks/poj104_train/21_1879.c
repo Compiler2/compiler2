@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,k,total=0,a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	float N,b[300]={0.0000},c[300]={0.0000};
 	for(i=0;i<n;i++)
@@ -34,8 +34,8 @@ int main_bench()
 				k=i;
 	         }
 	     }
-			if(bmax==cmax)printf("%d,%d",a[k],a[j]);
-			else if(bmax>cmax)printf("%d",a[j]);
-			else if(cmax>bmax)printf("%d",a[k]);
+			if(bmax==cmax)my_printf("%d,%d",a[k],a[j]);
+			else if(bmax>cmax)my_printf("%d",a[j]);
+			else if(cmax>bmax)my_printf("%d",a[k]);
 	return;
 }

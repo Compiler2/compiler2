@@ -13,8 +13,8 @@ int main_bench()
 		if(a[i]==' '&&a[i+1]!=' ') c[k]=i;
 	}
 	b[k]=n-c[k]-1;
-	for(i=0;i<k;i++) printf("%d,",b[i]);
-	printf("%d\n",b[k]);
+	for(i=0;i<k;i++) my_printf("%d,",b[i]);
+	my_printf("%d\n",b[k]);
 }
 
 

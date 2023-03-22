@@ -7,7 +7,7 @@ for(i=0;i<5;i++)
 {
 for(j=0;j<5;j++)
 {
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 }
 }
     max[0]=a[0][0];
@@ -32,14 +32,14 @@ for(q=0;q<5;q++)
 {
          if(max[p]==min[q])
 { 
-         printf("%d %d %d",p+1,q+1,a[p][q]);
+         my_printf("%d %d %d",p+1,q+1,a[p][q]);
         s=s+1;
 }
 }
 }
 if(s==0)
 {
- printf("not found");
+ my_printf("not found");
 }
 return 0;
 }

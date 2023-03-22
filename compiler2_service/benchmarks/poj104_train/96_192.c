@@ -4,7 +4,7 @@ int main_bench()
 {
 	char N[101];
 	int e=1,len,i,j,n[100],shan[100];
-	scanf("%s",&N);
+	my_scanf("%s",&N);
 	len=strlen(N);
 	
 	
@@ -49,9 +49,9 @@ int main_bench()
 	}
 	for(i=e;i<len-1;i++)
 	{
-		printf("%d",shan[i]);
+		my_printf("%d",shan[i]);
 	}
-	printf("%d\n",shan[len-1]);
-	printf("%d",n[len-1]);
+	my_printf("%d\n",shan[len-1]);
+	my_printf("%d",n[len-1]);
 	return 0;
 }

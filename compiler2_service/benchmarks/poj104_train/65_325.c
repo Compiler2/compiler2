@@ -4,10 +4,10 @@ int main_bench()
 {
     int a,b,A=0,B=0,n,i,j;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-     scanf("%d %d",&a,&b);
+     my_scanf("%d %d",&a,&b);
      j=a-b;
      if(j==-1||j==2)
      A++;
@@ -16,10 +16,10 @@ int main_bench()
      
   }
     if(A>B)
-    printf("A");
+    my_printf("A");
     if(A<B)
-    printf("B");
+    my_printf("B");
     if(A==B)
-    printf("Tie");
+    my_printf("Tie");
 
 }

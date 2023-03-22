@@ -22,7 +22,7 @@ int main_bench()
 			{
 				if(s[j]==a&&first==0)
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 						first=1;
 						s[i]=' ';
 						s[j]=' ';

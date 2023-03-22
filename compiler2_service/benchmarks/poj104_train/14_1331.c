@@ -7,12 +7,12 @@ int main_bench()
 	}temp;
     int fID=0,fG=0,sID=0,sG=0,tID=0,tG=0;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
 		int sum=0;
-		scanf("%d%d%d",&temp.ID,&temp.Ch,&temp.Ma);
+		my_scanf("%d%d%d",&temp.ID,&temp.Ch,&temp.Ma);
         sum=temp.Ch+temp.Ma;
         if(sum==fG)
 		{
@@ -43,9 +43,9 @@ int main_bench()
 			tID=temp.ID;
 		}
 	}
-	printf("%d %d\n",fID,fG);
-	printf("%d %d\n",sID,sG);
-	printf("%d %d\n",tID,tG);
+	my_printf("%d %d\n",fID,fG);
+	my_printf("%d %d\n",sID,sG);
+	my_printf("%d %d\n",tID,tG);
 
 	return 0;
 }

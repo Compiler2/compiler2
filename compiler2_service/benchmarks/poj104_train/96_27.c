@@ -5,7 +5,7 @@ int main_bench()
 	char a[100],b[100];
 	int c[100];
 	gets(a);
-if (atoi(a)<13)printf("0\n%d",atoi(a));
+if (atoi(a)<13)my_printf("0\n%d",atoi(a));
 else{
 	int len;
 	len=strlen(a);
@@ -24,11 +24,11 @@ else{
 	for (j=i;j<len-1;j++)
 	{
 		c[j]=b[j]-'0';
-		printf("%d",c[j]);
+		my_printf("%d",c[j]);
 		}
 	
-	printf("\n");
-	printf("%d",wei);
+	my_printf("\n");
+	my_printf("%d",wei);
 }
 }
 

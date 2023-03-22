@@ -5,14 +5,14 @@ main_bench()
   int a[2000],b[2000],n,i,x=0;
   int k,j,m=0,count=0,order1,order2,s1=1,s2=1,s;
   for(s=1;s<=50;s++) 
-{   scanf("%d",&n);
+{   my_scanf("%d",&n);
         if(n==0) 
         break;
         else  
        {  for(i=1;i<=n;i++)
-              scanf("%d",&a[i]);       
+              my_scanf("%d",&a[i]);       
          for(i=1;i<=n;i++)
-              scanf("%d",&b[i]);
+              my_scanf("%d",&b[i]);
             
             
                                            for(k=1;k<=n-1;k++)    
@@ -79,7 +79,7 @@ main_bench()
           }
     
 
-       printf("%d\n",x);
+       my_printf("%d\n",x);
        x=0;
        count=0;
        m=0;

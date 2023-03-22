@@ -3,9 +3,9 @@
 int main_bench()
 {
    int a[1001],k,n,j,i,check;
-   scanf("%d%d",&n,&k);
+   my_scanf("%d%d",&n,&k);
    for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
    check=0;
    for(i=0;i<n;i++)
    {
@@ -21,9 +21,9 @@ int main_bench()
    }
 	if(check==0)
 	{
-	     printf("no\n");
+	     my_printf("no\n");
 
 	}
 	else
-	{printf("yes\n");}
+	{my_printf("yes\n");}
 }

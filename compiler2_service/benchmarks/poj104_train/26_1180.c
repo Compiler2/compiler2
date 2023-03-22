@@ -16,7 +16,7 @@ while(i<n){
         i=i+e; }     
     j++;  i++; }
     cs[j]='\0';
-printf("%s",cs);
+my_printf("%s",cs);
 return 0;
 }
 

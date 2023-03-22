@@ -6,9 +6,9 @@ int main_bench(){
 		int p;
 		int q;
 	}a[100],b[100],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i].p,&a[i].q);
+		my_scanf("%d %d",&a[i].p,&a[i].q);
 	}
 	
 	for(k=1;k<=n;k++){
@@ -34,11 +34,11 @@ int main_bench(){
 	}
 	for(i=0;i<n-1;i++){
 		if(b[i].q<a[i+1].p){
-			printf("no\n");
+			my_printf("no\n");
 	return 0;
 		}
 		
 	}
-	printf("%d %d\n",a[0].p,b[n-1].q);
+	my_printf("%d %d\n",a[0].p,b[n-1].q);
 	return 0;
 }

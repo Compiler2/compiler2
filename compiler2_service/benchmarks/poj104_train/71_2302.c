@@ -5,10 +5,10 @@ int main_bench()
 	int year,a,b,n=0,i,num1=0,j,m,num2=0;
 	int A[12]={31,28,31,30,31,30,31,31,30,31,30,31},
 		B[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++)
 	{
-		scanf("%d %d %d",&year,&a,&b);
+		my_scanf("%d %d %d",&year,&a,&b);
 		if((year%4==0&&year%100!=0)||year%400==0)
 		{
 			n=0;num1=0;
@@ -54,9 +54,9 @@ int main_bench()
 		
 		 
 		if((num1-num2)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}	
 	return 0;
 }

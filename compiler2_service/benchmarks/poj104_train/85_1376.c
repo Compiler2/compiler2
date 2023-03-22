@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct SZ{
 		char zfc[21];
 	}sz[10000];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%s",sz[i].zfc);
+		my_scanf("%s",sz[i].zfc);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;sz[i].zfc[j];j++){
@@ -17,7 +17,7 @@ int main_bench(){
 			}
 
 		}
-		printf(sz[i].zfc[j]?"no\n":"yes\n");
+		my_printf(sz[i].zfc[j]?"no\n":"yes\n");
 	}
 	return 0;
 }

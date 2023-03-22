@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,i,k,a,b,y,w=0;
 	char s1[100]={'\0'},s2[100]={'\0'},e;
-	scanf("%d%s%d",&a,s1,&b);
+	my_scanf("%d%s%d",&a,s1,&b);
 	for(i=0;s1[i];i++){
 		if(s1[i]<='Z'&&s1[i]>='A'){
 			s1[i]=s1[i]-'A'+'a';
@@ -35,7 +35,7 @@ int main_bench(){
 		s2[i]=s2[w-i-1];
 		s2[w-i-1]=e;
 	}
-	printf("%s",s2);
+	my_printf("%s",s2);
 
 	return 0;
 }

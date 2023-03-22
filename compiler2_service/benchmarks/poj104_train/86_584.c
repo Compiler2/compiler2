@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int m=0,n,a[100][101],b[100],i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0){
 			b[j]=60;
 			continue;
 		}
 		for(i=0;i<m;i++)
-			scanf("%d",&a[j][i]);
+			my_scanf("%d",&a[j][i]);
 		if(a[j][0]>60){
 			b[j]=60;
 			continue;
@@ -27,6 +27,6 @@ int main_bench()
 			b[j]=60-3*(m-k);
 	}
 	for(i=0;i<n;i++)
-		printf("%d\n",b[i]);
+		my_printf("%d\n",b[i]);
 	return 0;
 }

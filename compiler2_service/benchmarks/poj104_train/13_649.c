@@ -18,18 +18,18 @@ int BT(int x,int a[40000])
 main_bench()
 {
       int n,a[40000],i,b[40000],c;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       for(i=0;i<10001;i++)
       b[i]=-1;
       for(i=0,c=0;i<n;i++)
       if(BT(a[i],b)==0)
       {
                        if(c==0)
-                       printf("%d",a[i]);
+                       my_printf("%d",a[i]);
                        else
-                       printf(" %d",a[i]);
+                       my_printf(" %d",a[i]);
                        b[c]=a[i];
                        c++;
       } 

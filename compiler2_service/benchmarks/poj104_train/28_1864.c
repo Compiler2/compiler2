@@ -18,12 +18,12 @@ int main_bench()
 				}
 				if((a[i+j]==' ')&&((i+j)!=(strlen(a)-1)))
 				{
-				    printf("%d,",l);
+				    my_printf("%d,",l);
 					break;
 				}
 				if((i+j)==(strlen(a)-1))
 				{
-					printf("%d",l);
+					my_printf("%d",l);
 					break;
 				}
 			}

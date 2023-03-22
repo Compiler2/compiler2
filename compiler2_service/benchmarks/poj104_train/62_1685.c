@@ -24,6 +24,6 @@ int main_bench()
 		}
 	}
 	a[j]='\0';
-	printf("%s\n", a);
+	my_printf("%s\n", a);
 	return 0;
 }

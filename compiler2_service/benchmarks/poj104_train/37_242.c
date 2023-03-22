@@ -6,7 +6,7 @@ int main_bench()
     int hash[26],flag;
     int t,i,j;
     char a[10001];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     getchar();
     for(i=0; i<t; ++i)
     {
@@ -20,11 +20,11 @@ int main_bench()
         for(j=0; a[j] ; ++j)
             if(hash[a[j] - 'a'] == 1)
             {
-                printf("%c\n",a[j]);
+                my_printf("%c\n",a[j]);
                 flag=0;
                 break;
             }
-        if(flag) printf("no\n");
+        if(flag) my_printf("no\n");
     }
     
     getchar();  getchar();

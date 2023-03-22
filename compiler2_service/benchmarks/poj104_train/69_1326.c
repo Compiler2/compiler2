@@ -36,7 +36,7 @@ int main_bench(){
     }
     xx[len]=x;
     while(xx[len]==0 && len >0)len--;
-    for(i=len;i>=0;i--)printf("%d",xx[i]);
-    printf("\n");
+    for(i=len;i>=0;i--)my_printf("%d",xx[i]);
+    my_printf("\n");
     return 0;
 }

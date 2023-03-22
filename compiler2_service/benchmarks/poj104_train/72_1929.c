@@ -10,11 +10,11 @@ int panduan(int a,int b, int c,int d,int e){
 }
 int main_bench(){
     int m,n,i,j;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int dikuai[m+2][n+2];
     for(i=1;i<m+1;i++){
         for(j=1;j<n+1;j++){
-            scanf("%d",&dikuai[i][j]);
+            my_scanf("%d",&dikuai[i][j]);
         }
     }
     for(j=0,i=0;i<m+2;i++){
@@ -32,7 +32,7 @@ int main_bench(){
     for(i=1;i<m+1;i++){
         for(j=1;j<n+1;j++){
            if(panduan(dikuai[i-1][j],dikuai[i+1][j],dikuai[i][j-1],dikuai[i][j+1],dikuai[i][j])==1){
-               printf("%d %d\n",i-1,j-1);
+               my_printf("%d %d\n",i-1,j-1);
            }
         }
     }

@@ -11,7 +11,7 @@ int main_bench()
 	int s;   
 	int l;
 	int i;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	for(i=0;i<l;i++)
 	{
@@ -45,6 +45,6 @@ int main_bench()
 		result[0]='0';
 		result[1]='\0';
 	}
-	printf("%s\n%d",result,y);
+	my_printf("%s\n%d",result,y);
 	return 0;
 }

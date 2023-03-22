@@ -5,8 +5,8 @@ int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,i,t1,t2;
 	int t=0;
-	scanf("%d %d %d\n",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d\n",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	if(y1==y2)
 	{
 		if(m2==1)
@@ -325,6 +325,6 @@ int main_bench()
 		}
 	}
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

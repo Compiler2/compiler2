@@ -5,13 +5,13 @@ int main_bench()
 	int i,n,l1,l2,j;
 	double tall[42],t1[42],t2[42],tt;
 	char s[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	l1=0;
 	l2=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",s);
-		scanf("%lf",&tall[i]);
+		my_scanf("%s",s);
+		my_scanf("%lf",&tall[i]);
 		if(s[0]=='m')
 		{
 			t1[l1]=tall[i];
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	for(i=0;i<l1;i++)
 	{
-		printf("%.2lf ",t1[i]);
+		my_printf("%.2lf ",t1[i]);
 	}
 	for(i=0;i<l2-1;i++)
 	{
@@ -53,7 +53,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<l2-1;i++)
-		printf("%.2lf ",t2[i]);
-	printf("%.2lf",t2[i]);
+		my_printf("%.2lf ",t2[i]);
+	my_printf("%.2lf",t2[i]);
 	return 0;
 }

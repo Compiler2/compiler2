@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long n[100000],s[100000],i,k,a,b,h=0,x,m[10000],c=0;
-	scanf("%ld %ld",&a,&b);
+	my_scanf("%ld %ld",&a,&b);
 	for(i=a;i<=b;i++)
 	{
 		x=1;
@@ -51,9 +51,9 @@ int main_bench()
 	if(c>0)
 	for(i=0;i<c;i++)
 	{
-		printf("%ld",m[i]);
-		if(i<c-1)printf(",");
+		my_printf("%ld",m[i]);
+		if(i<c-1)my_printf(",");
 	}
-	else printf("no");
+	else my_printf("no");
 	return 0;
 }

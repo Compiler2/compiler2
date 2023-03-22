@@ -21,7 +21,7 @@ int main_bench()
 	int a1,b1,c1,a2,b2,c2,sum=0,temp,x;
 	int i,j,year;
 
-	scanf("%d%d%d%d%d%d",&a1,&b1,&c1,&a2,&b2,&c2);
+	my_scanf("%d%d%d%d%d%d",&a1,&b1,&c1,&a2,&b2,&c2);
 	if(a1==a2)
 	{
 		x=days(a1,b2,c2)-days(a2,b1,c1);
@@ -51,6 +51,6 @@ int main_bench()
 		}
         x=sum+days(a2,b2,c2)-days(a1,b1,c1);
 	}
-	printf("%d",x);
+	my_printf("%d",x);
 	return;
 }

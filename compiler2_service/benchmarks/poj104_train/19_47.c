@@ -39,7 +39,7 @@ int main_bench()
         }
 
 	}
-	printf("%s",c);
+	my_printf("%s",c);
 }
 
 				

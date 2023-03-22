@@ -6,23 +6,23 @@ int main_bench()
   int i,j;
   int k;
   int end=0;;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   char dz[50];
   for(i=0;i<n;i++)
   {
      for (i = 0; i < n; i++) {   
-    scanf("%s", dz);    
+    my_scanf("%s", dz);    
     k = strlen(dz);    
   
     if (end + k +1> 80) {
-        printf("\n");       
+        my_printf("\n");       
         end = 0;             
     }
     else if (end > 0) {       
-        printf(" ");        
+        my_printf(" ");        
         end++;               
     }
-    printf("%s", dz);      
+    my_printf("%s", dz);      
     end += k;            
 }
   }

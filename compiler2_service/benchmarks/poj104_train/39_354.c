@@ -11,11 +11,11 @@
  int main_bench()
  {
  	int n,i,k,max,s=0;
- 	scanf("%d\n",&n);
+ 	my_scanf("%d\n",&n);
  	
        for(i=0;i<n;i++)
  	{
- 		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qm,&stu[i].py,&stu[i].gb,&stu[i].xb,&stu[i].paper);
+ 		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qm,&stu[i].py,&stu[i].gb,&stu[i].xb,&stu[i].paper);
         stu[i].sum=0;
  	}
  	for(i=0;i<n;i++)
@@ -40,7 +40,7 @@
         {
            if(stu[i].sum==max)
             {
-                printf("%s\n%d\n%d",stu[i].name,max,s);break;
+                my_printf("%s\n%d\n%d",stu[i].name,max,s);break;
             }
          }
  }

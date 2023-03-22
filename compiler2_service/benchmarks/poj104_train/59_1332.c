@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,i,j,m,k,s=0;
 	char a[100][100],b[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("\n");
+		my_scanf("\n");
 		for(j=0;j<n;j++){
-			scanf("%c",&a[i][j]);
+			my_scanf("%c",&a[i][j]);
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<m;k++){
 		for(i=0;i<n;i++){
 			for(j=0;j<n;j++){
@@ -38,6 +38,6 @@ int main_bench(){
 				s+=1;
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

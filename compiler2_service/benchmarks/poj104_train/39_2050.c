@@ -13,9 +13,9 @@ struct jiangli
 int main_bench()
 {
 	int n,i,max,sum=0,k;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].study,&stu[i].cla,&stu[i].gugan,&stu[i].xibu,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].study,&stu[i].cla,&stu[i].gugan,&stu[i].xibu,&stu[i].paper);
 	for (i=0;i<n;i++)
 	{
 		stu[i].money=0;
@@ -40,5 +40,5 @@ int main_bench()
 		    k=i;
 		}
 	}
-		printf("%s\n%d\n%d",stu[k].name,stu[k].money,sum);
+		my_printf("%s\n%d\n%d",stu[k].name,stu[k].money,sum);
 }

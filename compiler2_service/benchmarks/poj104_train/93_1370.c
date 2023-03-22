@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b[3],c[3],i,j=0;
-	scanf("%d\n",&a);
+	my_scanf("%d\n",&a);
 	b[0]=3;
 	b[1]=5;
     b[2]=7;
@@ -18,19 +18,19 @@ int main_bench()
 	}
 	if(j==1)
 	{
-printf("%d",c[0]);
+my_printf("%d",c[0]);
 			}
 	else if(j==2)
 {
-printf("%d %d",c[0],c[1]);
+my_printf("%d %d",c[0],c[1]);
 }
 else if(j==3)
 {
-printf("%d %d %d",c[0],c[1],c[2]);
+my_printf("%d %d %d",c[0],c[1],c[2]);
 }
 else if(j==0)
 	{
-		printf("n");
+		my_printf("n");
 	}
 	return 0;
 }

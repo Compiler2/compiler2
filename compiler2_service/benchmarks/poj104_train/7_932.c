@@ -4,7 +4,7 @@
 int main_bench()
 {
   char origin[256], sub[256], replace[256], after[256];
-  scanf("%s%s%s", origin, sub, replace);
+  my_scanf("%s%s%s", origin, sub, replace);
   
   int i, j, k=0;
   
@@ -25,6 +25,6 @@ int main_bench()
       break;
     }
   }
-  printf("%s", origin);
+  my_printf("%s", origin);
   return 0;
 }

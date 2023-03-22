@@ -2,16 +2,16 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int xf[n],cj[n],i;
     float jd[n],a,b;
     a=0;
     b=0;
     for(i=0;i<n;i++){
-    scanf("%d",&xf[i]);
+    my_scanf("%d",&xf[i]);
     }
     for(i=0;i<n;i++){
-    scanf("%d",&cj[i]);
+    my_scanf("%d",&cj[i]);
     if(cj[i]<60){
         jd[i]=0;
     }
@@ -46,6 +46,6 @@ int main_bench(){
     b=b+xf[i];
     }
     a=a/b;
-    printf("%.2f",a);
+    my_printf("%.2f",a);
     return 0;
 }

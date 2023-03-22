@@ -5,10 +5,10 @@ int main_bench()
 {
   int n,i,j;
   char s[1000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(j=0;j<n;j++)
    { 
-     scanf("%s",s);
+     my_scanf("%s",s);
      for(i=0;i<(int)strlen(s);i++)
       {
        if(s[i]=='A') s[i]='T';
@@ -16,7 +16,7 @@ int main_bench()
        else if(s[i]=='C') s[i]='G';
        else if(s[i]=='G') s[i]='C';
        }
-      printf("%s\n",s);
+      my_printf("%s\n",s);
     }
    return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
  int a,b,c;
- scanf("%d%d%d",&a,&b,&c);
+ my_scanf("%d%d%d",&a,&b,&c);
  int d=c+31;
  int e=c+60;
  int f=c+91;
@@ -26,52 +26,52 @@ int main_bench()
  int w=c+304;
  int x=c+334;
  if (b==1)
-	 printf("%d\n",c);
+	 my_printf("%d\n",c);
  else if (b==2)
-	 printf("%d\n",d); 
+	 my_printf("%d\n",d); 
  if(b>2&&((a%4==0&&a%100!=0)||(a%400==0)))
  {if(b==3)
- printf("%d\n",e);
+ my_printf("%d\n",e);
  else if(b==4)
- printf("%d\n",f);
+ my_printf("%d\n",f);
   else if(b==5)
- printf("%d\n",g);
+ my_printf("%d\n",g);
  else if(b==6)
- printf("%d\n",h);
+ my_printf("%d\n",h);
  else if(b==7)
- printf("%d\n",i);
+ my_printf("%d\n",i);
  else if(b==8)
- printf("%d\n",j);
+ my_printf("%d\n",j);
  else if(b==9)
- printf("%d\n",k);
+ my_printf("%d\n",k);
  else if(b==10)
-printf("%d\n",l);
+my_printf("%d\n",l);
  else if(b==11)
-printf("%d\n",m);
+my_printf("%d\n",m);
  else if(b==12)
-printf("%d\n",n);
+my_printf("%d\n",n);
  } 
  else if(b>2&&((a%4!=0)||(a%100==0&&a%400!=0)))
  {if(b==3)
- printf("%d\n",o);
+ my_printf("%d\n",o);
  else if(b==4)
-printf("%d\n",p);
+my_printf("%d\n",p);
 else if(b==5)
-printf("%d\n",q);
+my_printf("%d\n",q);
 else if(b==6)
-printf("%d\n",r);
+my_printf("%d\n",r);
 else if(b==7)
-printf("%d\n",s);
+my_printf("%d\n",s);
 else if(b==8)
-printf("%d\n",t);
+my_printf("%d\n",t);
 else if(b==9)
-printf("%d\n",u);
+my_printf("%d\n",u);
 else if(b==10)
-printf("%d\n",v);
+my_printf("%d\n",v);
 else if(b==11)
-printf("%d\n",w);
+my_printf("%d\n",w);
 else if(b==12)
-printf("%d\n",x);
+my_printf("%d\n",x);
 
  }
  return 0;

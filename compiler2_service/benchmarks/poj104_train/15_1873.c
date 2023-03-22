@@ -4,13 +4,13 @@ int a[1000][1000];
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int p,q;
 	for(p=0;p<n;p++)
 	{
 		for(q=0;q<n;q++)
 		{
-			scanf("%d",&(a[p][q]));
+			my_scanf("%d",&(a[p][q]));
 		}
 	}
 	int p1=0,p2=0,q1,q2;
@@ -52,6 +52,6 @@ int main_bench()
 	}
 	int x;
 	x=(p2-p1-1)*(q2-q1-1);
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }

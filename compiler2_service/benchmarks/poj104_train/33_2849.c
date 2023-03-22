@@ -4,9 +4,9 @@ int main_bench(){
 	char s[1000][1000];
 	int len[1000]={0};
 	int n,i,j;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	for(i=0;i<n;i++)
 		len[i]=strlen(s[i]);
 	for(i=0;i<n;i++)
@@ -24,5 +24,5 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 }

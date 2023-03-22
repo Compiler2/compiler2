@@ -11,13 +11,13 @@ int number(int n)
 int main_bench()
 {
     int m,i;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for(i=3;i<m;i=i+2)
     {
     if(number(i)&&number(m-i))
     {
                               if(i<=m-i)
-                              printf("%d %d\n", i, m-i);
+                              my_printf("%d %d\n", i, m-i);
                               
     }
     }

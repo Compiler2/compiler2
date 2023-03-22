@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int n,i,j,t=0,s=0,m=0,l=0,a,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	t=n,s=n;
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a==0)
 			{
 				if((m+l)<=(i+j))
@@ -21,6 +21,6 @@ int main_bench()
 		}
 	}
 	q=(m-t-1)*(l-s-1);
-	printf("%d",q);
+	my_printf("%d",q);
 	return 0;
 }

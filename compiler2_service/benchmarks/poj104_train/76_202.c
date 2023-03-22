@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct block{
 		int a,b;
 	}bk[10000];
 	for(int q=0;q<n;q++){
-		scanf("%d %d",&bk[q].a,&bk[q].b);
+		my_scanf("%d %d",&bk[q].a,&bk[q].b);
 	}
 	for(int k=1;k<=n;k++){
         int e=0;
@@ -41,10 +41,10 @@ int main_bench(){
 			}
 		}
 		if(pd==0){
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d\n",min,max);
+	my_printf("%d %d\n",min,max);
 	return 0;
 }

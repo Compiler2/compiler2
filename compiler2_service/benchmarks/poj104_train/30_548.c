@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sum=0,i=0,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==99)
 	{
-	printf("204547");
+	my_printf("204547");
 	return 0;
 	}
 	for(i=1;i<=n;i++)
@@ -14,6 +14,6 @@ int main_bench()
 		if(((i-10*(i%10))!=7)&&(i%10!=7)&&(i%7!=0))
 			sum=sum+i*i;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

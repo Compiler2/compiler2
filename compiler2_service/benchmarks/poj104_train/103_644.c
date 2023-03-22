@@ -5,7 +5,7 @@ main_bench()
 {
       char ch,c[1001];
       int a,len,i;
-      scanf("%s",c);
+      my_scanf("%s",c);
       len=strlen(c);
       if(c[0]>='a'&&c[0]<='z')
                ch='A'+c[0]-'a';
@@ -17,7 +17,7 @@ main_bench()
             a++;
          else
            {
-             printf("(%c,%d)",ch,a);
+             my_printf("(%c,%d)",ch,a);
             if(c[i]>='a'&&c[i]<='z')
                ch='A'+c[i]-'a';
             else
@@ -25,6 +25,6 @@ main_bench()
             a=1;
            }
       }
-      printf("(%c,%d)",ch,a);
+      my_printf("(%c,%d)",ch,a);
      
 } 

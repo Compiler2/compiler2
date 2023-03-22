@@ -3,9 +3,9 @@
 int main_bench(){
 	char an[1000][256];
 	int n,i,j,bn[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",an[i]);
+		my_scanf("%s",an[i]);
 	for(i=0;i<n;i++)
 		bn[i]=strlen(an[i]);
 	for(i=0;i<n;i++){
@@ -29,6 +29,6 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",an[i]);
+		my_printf("%s\n",an[i]);
 	return 0;
 }

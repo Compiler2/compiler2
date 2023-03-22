@@ -9,10 +9,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	int fuc(int a[5][5],int n,int m);
 	if(fuc(a,n,m))
 	{
@@ -28,17 +28,17 @@ int main_bench()
 		for(j=0;j<5;j++)
 		{
 			if(j<4)
-			printf("%d ",a[i][j]);
+			my_printf("%d ",a[i][j]);
 			else 
 			{
-			printf("%d",a[i][4]);
-			printf("\n");
+			my_printf("%d",a[i][4]);
+			my_printf("\n");
 			}
 		}
 	}
 	}
 	else
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 int fuc(int a[5][5],int n,int m)

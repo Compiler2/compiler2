@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int k,i,j,a[1000][1000],m[2],n[2],S,f;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
 		for(j=0;j<k;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	f=-1;
@@ -30,6 +30,6 @@ int main_bench()
 		}
 	}
 	S=(m[1]-m[0]+1)*(n[1]-n[0]+1);
-	printf("%d\n",S);
+	my_printf("%d\n",S);
 	return 0;
 }

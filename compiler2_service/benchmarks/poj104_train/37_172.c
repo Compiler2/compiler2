@@ -5,8 +5,8 @@ int main_bench()
  int t,l,a,b;
  char string[100001];
  int i=0,j=0,c=0,d=0;
- scanf("%d",&t);
- scanf("\n");
+ my_scanf("%d",&t);
+ my_scanf("\n");
  while(t--)
  {
   gets(string);
@@ -27,13 +27,13 @@ while(i<l)
    if(j==l-1)
    {
     c=c+1;
-    printf("%c\n",string[a]);
+    my_printf("%c\n",string[a]);
     break;
    } 
   }
 if (c==0)
   {
-   printf("no\n");
+   my_printf("no\n");
   }
  }
  return 0;

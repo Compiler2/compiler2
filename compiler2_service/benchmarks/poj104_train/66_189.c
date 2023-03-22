@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int year,mon,day;
-	scanf("%d%d%d",&year,&mon,&day);
+	my_scanf("%d%d%d",&year,&mon,&day);
 	int pass=0;
 	
     int AC[5]={0,1,2,3,5};
@@ -52,6 +52,6 @@ int main_bench()
 		x=pass;
 	else
 	    x=pass%7;
-	printf("%s\n",days[x].d2);
+	my_printf("%s\n",days[x].d2);
 	return 0;
 }

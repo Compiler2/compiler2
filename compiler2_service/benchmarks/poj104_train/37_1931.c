@@ -3,11 +3,11 @@
 int main_bench()
 {
     int t;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for (int c=1;c<=t;c++)
     {
     char a[100000];
-    scanf("%s",&a);
+    my_scanf("%s",&a);
     int l=strlen(a),sum=l;
     int app=0;
     for (int i=0;i<=l-1;i++)
@@ -19,14 +19,14 @@ int main_bench()
         }
         if (app==1)
         {
-                   printf("%c\n",a[i]);
+                   my_printf("%c\n",a[i]);
                    break;
         }
         app=0;
         sum--;
     }
     if (sum==0)
-    printf("no\n");
+    my_printf("no\n");
     }
     
 

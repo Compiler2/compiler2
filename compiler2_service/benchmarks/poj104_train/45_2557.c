@@ -3,8 +3,8 @@
 int main_bench(){
 	int a[11],i,j,t,e;
 	char s[60],w[60];
-	scanf("%s",s);
-	scanf("%s",w);
+	my_scanf("%s",s);
+	my_scanf("%s",w);
 	
 	
 	for(i=0;i<=50;i++){
@@ -16,7 +16,7 @@ int main_bench(){
 		}
 		if(e){
 
-			printf("%d",i);
+			my_printf("%d",i);
 			return 0;
 		}
 	}

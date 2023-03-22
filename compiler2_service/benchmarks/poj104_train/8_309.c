@@ -3,20 +3,20 @@
 int main_bench()
 {
 	int a,b;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	int c[100];
 	int d[100];
 	int i,t,r;
 	i=0;
 	do
 	{
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 		i++;
 	}while(i<a);
 	i=0;
 	do
 	{
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 		i++;
 	}while(i<b);
 	t=0;
@@ -51,17 +51,17 @@ int main_bench()
 		}
 		t++;
 	}while(t<b-1);
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	i=1;
 	do
 	{
-		printf(" %d",c[i]);
+		my_printf(" %d",c[i]);
 		i++;
 	}while(i<a);
 	i=0;
 	do
 	{
-		printf(" %d",d[i]);
+		my_printf(" %d",d[i]);
 		i++;
 	}while(i<b);
 	return 0;

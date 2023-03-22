@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,a[300],i,max,mat,t=0,sum=0;
 	float ave;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 	{
 		sum=sum+a[i];
@@ -24,9 +24,9 @@ int main_bench()
 		}
 	}
 	if(t==0)
-		printf("%d",max);
+		my_printf("%d",max);
 	else
-		printf("%d,%d",max,mat);
+		my_printf("%d,%d",max,mat);
 }
 
 

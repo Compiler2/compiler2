@@ -5,9 +5,9 @@ int main_bench()
     char string[256];
     char substring[256];
     char replacement[256];
-    scanf("%s",string);
-    scanf("%s",substring);
-    scanf("%s",replacement);
+    my_scanf("%s",string);
+    my_scanf("%s",substring);
+    my_scanf("%s",replacement);
     int length_string=strlen(string);
     int length_substring=strlen(substring);
     int length_replacement=strlen(replacement);
@@ -30,6 +30,6 @@ int main_bench()
 		   break;
        }
 	}
-    printf("%s\n",string);
+    my_printf("%s\n",string);
 
 }

@@ -11,17 +11,17 @@ int max(int num[],int n)
 	}
 	return(result);
 }
-void main_bench()
+int main_bench()
 {
 	int n,num[300],i,m1,m2;
 	char c;
 	for(i=0;i<300;i++)
 		num[i]=-1;
-	scanf("%d",&num[0]);
+	my_scanf("%d",&num[0]);
 	n=1;
 	for(i=1;i<300&&(c=getchar())!='\n';i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		n++;
 	}
 	m1=max(num,n);
@@ -31,6 +31,6 @@ void main_bench()
 			num[i]=-1;
 	}
 	m2=max(num,n);
-	if(m2!=-1)printf("%d\n",m2);
-	else printf("No\n");
+	if(m2!=-1)my_printf("%d\n",m2);
+	else my_printf("No\n");
 }

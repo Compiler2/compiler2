@@ -3,14 +3,14 @@
 int f(int n);
 int main_bench(){
 	int a0,a1,i,n,l,sz[100];
-	scanf("%d",&l);
+	my_scanf("%d",&l);
 	for(i=0;i<l;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 
 		sz[i]=f(n);
 	}
 	for(i=0;i<l;i++){
-		printf("%d\n",sz[i]);
+		my_printf("%d\n",sz[i]);
 	}
 	return 0;
 }

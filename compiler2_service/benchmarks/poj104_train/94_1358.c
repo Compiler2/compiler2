@@ -4,9 +4,9 @@ int main_bench()
 {
 	int u[1000],v[1000];
 	int n,i,j,a=0,max,e,b,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&u[i]);
+		my_scanf("%d",&u[i]);
 	}
 	j=0;
 	for(i=0;i<n;i++){
@@ -36,9 +36,9 @@ int main_bench()
 	}
 	for(c=0;c<d;c++){
 		if(c<d-1){
-		printf("%d,",v[c]);
+		my_printf("%d,",v[c]);
 		}else if(c==d-1){
-			printf("%d",v[c]);
+			my_printf("%d",v[c]);
 		}
 	}
 	return 0;

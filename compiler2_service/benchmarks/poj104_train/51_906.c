@@ -8,7 +8,7 @@ int main_bench()
 	char s[600];
 	char a[500][6];
 	int b[500];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	getchar();
 	gets(s);
 	l=strlen(s);
@@ -36,16 +36,16 @@ int main_bench()
 			m=b[i];
 	}
 	if (m==1)
-		printf ("NO");
+		my_printf ("NO");
 	else
 	{
-		printf ("%d\n",m);
+		my_printf ("%d\n",m);
 		for (i=0;i<l-n;i++)
 		{
 			if (b[i]==m)
 			{
 				puts(a[i]);
-				printf ("\n");
+				my_printf ("\n");
 			}
 
 		}

@@ -50,7 +50,7 @@ int main_bench()
 	int panduansushu(int x);
 	int suanweishu(int x);
 	int panduanfanwen(int x,int y);
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;m+i<=n;i++)
 	{
 		a=m+i;
@@ -68,10 +68,10 @@ int main_bench()
 	if(b[0]!=0)
 	{
 	  for(i=0;i<z-1;i++)
-		 printf("%d,",b[i]);
-	 printf("%d",b[i]);
+		 my_printf("%d,",b[i]);
+	 my_printf("%d",b[i]);
 	}
 	if(b[0]==0)
-		printf("no");
+		my_printf("no");
 	return 0;
 }

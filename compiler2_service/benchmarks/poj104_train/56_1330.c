@@ -3,7 +3,7 @@
 int main_bench(){
 	char zfc[100], exc;
 	int len, i;
-	scanf("%s", zfc);
+	my_scanf("%s", zfc);
         len = strlen(zfc);
 for(i = 0; i < len/2; i++){
 	exc = zfc[i];
@@ -11,7 +11,7 @@ for(i = 0; i < len/2; i++){
 	zfc[len-1-i] = exc;
 }
 
-printf("%s", zfc);
+my_printf("%s", zfc);
 
 	return 0;
 }

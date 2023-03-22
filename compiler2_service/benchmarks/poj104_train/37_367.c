@@ -8,11 +8,11 @@ int main_bench()
     int c[26]={0};
     
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     while (n--)
     {
           memset(c,0,sizeof(c));
-          scanf("%s", str);
+          my_scanf("%s", str);
           ans = '@';
           for (p = str; *p; p++)
               c[*p - 'a']++;
@@ -22,8 +22,8 @@ int main_bench()
                ans = *p;
                break;
                }
-          if (ans == '@') printf("no\n");
-          else printf("%c\n", ans);
+          if (ans == '@') my_printf("no\n");
+          else my_printf("%c\n", ans);
     }
     return 0;
 }

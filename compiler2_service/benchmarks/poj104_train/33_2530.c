@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char suoyou[1000][256];
 	int i=0;
 	for(i=0;i<n+1;i++){
@@ -23,7 +23,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n+1;i++){
-		printf("%s\n",suoyou[i]);
+		my_printf("%s\n",suoyou[i]);
 	}
 	return 0;
 }

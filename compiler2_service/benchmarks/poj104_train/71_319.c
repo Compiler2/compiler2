@@ -5,10 +5,10 @@ int main_bench()
     int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,i,j,k,t;
 	int b,c,d;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	for(i=1;i<=n;i++) {
 		k=0;
-			 scanf("%d%d%d",&b,&c,&d);
+			 my_scanf("%d%d%d",&b,&c,&d);
 			 if(c>d) {
                  j=c;
 				 c=d;
@@ -22,9 +22,9 @@ int main_bench()
 				 }
 			 }
 			 if(k%7==0) {
-				 printf("YES\n");
+				 my_printf("YES\n");
 			 }
-			 else printf("NO\n");
+			 else my_printf("NO\n");
 			 }
 	return 0;
 }

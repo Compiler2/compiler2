@@ -11,11 +11,11 @@ main_bench()
 	char a[100]={0},b[100]={0},d[100]={0},e[100][100]={0};
 	int c[100]={0};
 	int i,j,k,m,n,g=0,t,v,l;
-	scanf("%d\n",&v);
+	my_scanf("%d\n",&v);
 	for (k=0;k<v;k++)
 	{
-		scanf("%s\n",a);
-	    scanf("%s",b);
+		my_scanf("%s\n",a);
+	    my_scanf("%s",b);
 		p1=a;
 		p2=b;
         m=strlen(a);
@@ -48,5 +48,5 @@ main_bench()
 		func2(d,m);
 	}
 	for (l=0;l<v;l++)
-	    printf("%s\n",e[l]);
+	    my_printf("%s\n",e[l]);
 }

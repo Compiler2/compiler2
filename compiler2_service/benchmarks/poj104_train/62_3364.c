@@ -19,7 +19,7 @@ int main_bench()
 		
 	}
 		for(j=t;j<k;j++) 
-			printf("%c",s[j]);
+			my_printf("%c",s[j]);
 		return 0;
 }
 	

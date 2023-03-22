@@ -20,14 +20,14 @@ int main_bench()
 	}
 	for(i=0;s[i]!='\0';i++)
 	{
-		if(x[i]==0) printf("%c",s[i]);
+		if(x[i]==0) my_printf("%c",s[i]);
 		else if(x[i]==1)
 		{
-			for(j=0;j<m;j++) printf("%c",b[j]);
+			for(j=0;j<m;j++) my_printf("%c",b[j]);
 			i+=n-1;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 		

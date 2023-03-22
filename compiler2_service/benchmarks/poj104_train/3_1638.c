@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,k,i,j,ylf=0;
 	int a[1000];
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	i=0;
 	while(i<n && ylf==0)
@@ -17,7 +17,7 @@ int main_bench()
 		{
 			if(a[i]+a[j]==k)
 			{
-				printf("yes");
+				my_printf("yes");
 				ylf=1;
 			}
 			else
@@ -29,7 +29,7 @@ int main_bench()
 	}
 	if(ylf==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

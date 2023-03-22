@@ -8,7 +8,7 @@ int w[1000];
 
 char c[10000];
 char t[10000];
-scanf("%d %s %d",&a,c,&b);
+my_scanf("%d %s %d",&a,c,&b);
 d=strlen(c);
 sum=0;
 q=1;
@@ -50,8 +50,8 @@ else
 t[j]=w[j]+'0';
 }
 
-printf("%s",t);
-printf("\n");
+my_printf("%s",t);
+my_printf("\n");
 getchar();
 getchar();
 getchar();

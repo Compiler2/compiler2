@@ -4,13 +4,13 @@ int main_bench(){
     int k,m,n;
     int a,b,c,d,s;
     a=b=c=d=0;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(int i=0;i<k;i++){
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
         int sz[m][n];
         for(int p=0;p<m;p++){
             for(int q=0;q<n;q++){
-                scanf("%d",&sz[p][q]);
+                my_scanf("%d",&sz[p][q]);
             }
         }if(m!=1&&n!=1){
         for(int e=0;e<n;e++){
@@ -22,9 +22,9 @@ int main_bench(){
             d=d+sz[j][0];
         }
         s=a+b+c+d;
-        printf("%d\n",s);
+        my_printf("%d\n",s);
         s=a=b=c=d=0;}
-        else{printf("%d",sz[0][0]);}
+        else{my_printf("%d",sz[0][0]);}
     }return 0;
 }
 

@@ -8,10 +8,10 @@ int main_bench()
     int a[100001];
     p=&a[0];
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++,p++)
-        scanf("%d",&*p);
-    scanf("%d",&k);
+        my_scanf("%d",&*p);
+    my_scanf("%d",&k);
     p=&a[0];
     for(i=0;i<n;i++,p++)
     {
@@ -52,7 +52,7 @@ int main_bench()
     p=&a[0];
     for(i=0;i<n-1;i++,p++)
     {
-     printf("%d ",*p);
+     my_printf("%d ",*p);
     }
-    printf("%d",*p);
+    my_printf("%d",*p);
 }

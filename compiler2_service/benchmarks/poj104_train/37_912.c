@@ -6,11 +6,11 @@ main_bench()
   char c[26];
   int n;
   int i,j,k;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1;i<=n;i++)
   {
      char b[100000];
-     scanf("%s",b);
+     my_scanf("%s",b);
      for(j=0;j<=25;j++)
      {
         a[j]=0;
@@ -37,12 +37,12 @@ main_bench()
     {
       if(a[j]==1)
       {
-       printf("%c\n",c[j]);
+       my_printf("%c\n",c[j]);
        break;
       }
     }
     if(j==26)
-    printf("no\n");
+    my_printf("no\n");
   }
 }
 

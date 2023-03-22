@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct stu{
 	    int id; 
 		int x,y;
@@ -17,7 +17,7 @@ int main_bench()
 	int N1,N2,N3;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&stu[i].id,&stu[i].x,&stu[i].y);
+		my_scanf("%d%d%d",&stu[i].id,&stu[i].x,&stu[i].y);
 	}
     for(i=0;i<n;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
         else if((stu[i].x+stu[i].y)>no2){no3=no2;no2=(stu[i].x+stu[i].y);N3=N2;N2=i;}
 		else if((stu[i].x+stu[i].y)>no3){no3=(stu[i].x+stu[i].y);N3=i;}
 	}
-	printf("%d %d\n%d %d\n%d %d",stu[N1].id,(stu[N1].x+stu[N1].y),stu[N2].id,(stu[N2].x+stu[N2].y),stu[N3].id,(stu[N3].x+stu[N3].y));
+	my_printf("%d %d\n%d %d\n%d %d",stu[N1].id,(stu[N1].x+stu[N1].y),stu[N2].id,(stu[N2].x+stu[N2].y),stu[N3].id,(stu[N3].x+stu[N3].y));
 
 	return 0;
 }

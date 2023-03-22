@@ -15,11 +15,11 @@ for(k=0;str[k]!='\0';k++)
 str[k]=str[k]+32;}
 
 if(strcmp(stq,str)>0)
-printf(">");
+my_printf(">");
 else
 if(strcmp(stq,str)==0)
-printf("=");
+my_printf("=");
 else
 if(strcmp(stq,str)<0)
-printf("<");
+my_printf("<");
 }

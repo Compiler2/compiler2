@@ -3,10 +3,10 @@
 int main_bench()
 {int n,i,j,l,leap;
 char s[256],s1[2],s2[2];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  
  for(i=0;i<n;i++)
- {  scanf("%s",s);
+ {  my_scanf("%s",s);
  l=strlen(s);
  for(j=0;j<l;j++)
  {leap=0;
@@ -16,7 +16,7 @@ char s[256],s1[2],s2[2];
  if(s[j]=='C'&&leap==0) {s[j]='G';leap=1;}
  
  }
- printf("%s\n",s);
+ my_printf("%s\n",s);
  for(j=0;j<l;j++)
 	 s[j]='\0';
  }

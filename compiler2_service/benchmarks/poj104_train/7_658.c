@@ -12,13 +12,13 @@ if(s[i]==yc[0]) {tag=2;     for(int j=0;j<strlen(yc);j++)
      if(s[i+j]!=yc[j]){tag=0;break;}}
 
      }
-     if(tag==2){printf("%s",tc);u=i+strlen(yc);break;}
+     if(tag==2){my_printf("%s",tc);u=i+strlen(yc);break;}
 
 
-if(tag!=2){printf("%c",s[i]);}
+if(tag!=2){my_printf("%c",s[i]);}
 
 }
-if(tag==2){for(int k=u;k<strlen(s);k++){printf("%c",s[k]);}}
+if(tag==2){for(int k=u;k<strlen(s);k++){my_printf("%c",s[k]);}}
     
 	return 0;
 }

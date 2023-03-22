@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int sz[1000];
 	int index;
 	for(index=0;index<a;index++)
-	scanf("%d",&sz[index]);
+	my_scanf("%d",&sz[index]);
 	int d,x,inde;
 	d=sz[0];
 	x=sz[0];
@@ -21,7 +21,7 @@ int main_bench()
 	  else if(sz[inde]>x)
 		  x=sz[inde];
     }
-    printf("%d\n",d);
-	printf("%d\n",x);
+    my_printf("%d\n",d);
+	my_printf("%d\n",x);
 	return 0;
 }

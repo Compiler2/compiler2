@@ -6,12 +6,12 @@ int main_bench()
 
 	int a=1,b=1,j,i,n,m,first=0;
 	int c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 	}
 
 	for(i=0;i<n;i++)
@@ -47,7 +47,7 @@ int main_bench()
 		} 
 
 	m=(c-3)*(d-3);
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }
 

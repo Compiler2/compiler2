@@ -4,15 +4,15 @@
 int main_bench()
 {
 	int x,i,result=1;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 
 	if(!x)
-		printf("0");
+		my_printf("0");
 	while(x)
 	{
-		printf("%d",x%10);
+		my_printf("%d",x%10);
 		x=x/10;
 	}
-	printf("\n",result);
+	my_printf("\n",result);
 	return 0;
 }

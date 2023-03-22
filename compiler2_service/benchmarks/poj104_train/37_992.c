@@ -8,10 +8,10 @@ int main_bench(){
     p=a;
     
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     for (i=0; i<n; i++){
-        scanf ("%s", a);
+        my_scanf ("%s", a);
         l=strlen (a);
         
         for (j=0; j<l; j++){
@@ -34,11 +34,11 @@ int main_bench(){
             }
         for (j=0; j<l; j++){
             if (*(p+j)!='0'){
-                           printf ("%c\n", *(p+j));
+                           my_printf ("%c\n", *(p+j));
                            break;
                            }
             if (j==l-1){
-                        printf("no\n");
+                        my_printf("no\n");
                         }
             }
         

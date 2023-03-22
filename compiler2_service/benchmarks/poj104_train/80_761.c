@@ -6,7 +6,7 @@ int main_bench()
   m[1]=m[3]=m[5]=m[7]=m[8]=m[10]=m[12]=31;
   m[4]=m[6]=m[9]=m[11]=30;
   m[2]=28;
-  scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+  my_scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
   d1=d2=d4=0;
   for(i=1;i<sm;i++)
     d1=d1+m[i];
@@ -21,7 +21,7 @@ int main_bench()
   if(((ey%4==0&&ey%100!=0)||(ey%400==0))&&em<3)
     d4=d4-1;
   d=d3+d4;
-  printf("%d",d);
+  my_printf("%d",d);
 
     
 }

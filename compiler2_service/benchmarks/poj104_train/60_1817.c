@@ -2,10 +2,10 @@
 
 main_bench()
  {int a,b,c,i,n,d[10000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  c=2;
  if(n<=4)
- printf("empty");
+ my_printf("empty");
  else
  {a=3;
  do{i=2;
@@ -18,7 +18,7 @@ main_bench()
 		{d[c]=a;
 		c=c+1;
 		if(d[c-1]-d[c-2]==2)
-		printf("%d %d\n",d[c-2],d[c-1]);
+		my_printf("%d %d\n",d[c-2],d[c-1]);
 		break;}
 		else
 		break;}

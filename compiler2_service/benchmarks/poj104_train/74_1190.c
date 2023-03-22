@@ -48,18 +48,18 @@ int HW(int n)
 main_bench()
 {
       int m,n,i,j=0,k;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=m;i<=n;i++)
       if(SS(i)==1&&HW(i)==1)
       {
                              if(j==0)
-                             printf("%d",i);
+                             my_printf("%d",i);
                              else
-                             printf(",%d",i);
+                             my_printf(",%d",i);
                              j++;
       }
       if(j==0)
-      printf("no");
+      my_printf("no");
       getchar();
       getchar();
 }

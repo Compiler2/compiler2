@@ -48,7 +48,7 @@ int main_bench()
 
 	int year[2],month[2],day[2],sum,a,b;
 
-	scanf("%d%d%d%d%d%d",&year[0],&month[0],&day[0],&year[1],&month[1],&day[1]);
+	my_scanf("%d%d%d%d%d%d",&year[0],&month[0],&day[0],&year[1],&month[1],&day[1]);
 	if(year[0]==year[1])
 	{
 		sum=countday(year[0],month[0],day[0]);
@@ -67,7 +67,7 @@ int main_bench()
 			b=365-b;
 		sum+=(a+b);
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }
 
 

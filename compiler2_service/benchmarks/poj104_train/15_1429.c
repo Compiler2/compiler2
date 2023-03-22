@@ -3,12 +3,12 @@
 
 int main_bench(){
 	int n[1000][1000],num,i,j,sta_r,sta_c,end_r,end_c,S;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++)
 	{
 		for(j=0;j<num;j++)
 		{
-			scanf("%d",&n[i][j]);
+			my_scanf("%d",&n[i][j]);
 		}
 	}
 	for(i=0;i<num;i++)
@@ -61,6 +61,6 @@ int main_bench(){
 		}
 	}
 	S=(end_r-sta_r-1)*(end_c-sta_r-1);
-	printf("%d",S);
+	my_printf("%d",S);
 	return 0;
 }

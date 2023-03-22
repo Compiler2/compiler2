@@ -11,8 +11,8 @@ int main_bench()
    { 
 	   s[i]=toupper(s[i]);t[i]=toupper(t[i]);
    }
-   if(strcmp(s,t)==0)printf("=\n");
-   if(strcmp(s,t)>0)printf(">\n");
-   if(strcmp(s,t)<0)printf("<\n");
+   if(strcmp(s,t)==0)my_printf("=\n");
+   if(strcmp(s,t)>0)my_printf(">\n");
+   if(strcmp(s,t)<0)my_printf("<\n");
    return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	char str2[27]="abcdefghijklmnopqrstuvwxyz";
 	int sz[26];
 	int i,j,exist=0;
-	scanf("%s",str1);
+	my_scanf("%s",str1);
 for(i=0;i<26;i++)
 {
 sz[i]=0;
@@ -24,7 +24,7 @@ sz[i]=0;
 	}
 	if(exist==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else if(exist==1)
 	{
@@ -32,7 +32,7 @@ sz[i]=0;
 		{
 			if(sz[i]!=0)
 			{
-				printf("%c=%d\n",str2[i],sz[i]);
+				my_printf("%c=%d\n",str2[i],sz[i]);
 			}
 		}
 	}

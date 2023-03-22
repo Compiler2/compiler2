@@ -21,10 +21,10 @@ int main_bench()
 		else
 			if(n==0)
 			{
-				printf("%d,",d);
+				my_printf("%d,",d);
 				n++;
 				d=0;
 			}
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 }

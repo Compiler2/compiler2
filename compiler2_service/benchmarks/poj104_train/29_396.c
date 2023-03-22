@@ -13,10 +13,10 @@ int main_bench()
 		c[i]=b[i]/a[i];
 	}
 	int n,j,d[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int m[100];
 	for(j=0;j<n;j++){
-		scanf("%d",&m[j]);
+		my_scanf("%d",&m[j]);
 	}
      for(j=0;j<n;j++){
 		 float p[100];
@@ -25,7 +25,7 @@ int main_bench()
 		for(k=1;k<=m[j];k++){
          p[j]+=c[k];
 		}
-		printf("%.3f\n",p[j]);
+		my_printf("%.3f\n",p[j]);
 	}
 	return 0;
 }

@@ -16,7 +16,7 @@ int main_bench()
 	int sum=0,leapyear,sumyear=0,summonth=0,sumday=0;  
 	int i,j,k;
 	int xingqiji;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
     year--;
     leapyear=year/4-year/100+year/400;
 	sumyear=leapyear*2+year-leapyear;
@@ -45,31 +45,31 @@ int main_bench()
 	xingqiji=sum%7;
 	if(xingqiji==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	else if(xingqiji==2)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	else if(xingqiji==3)
 	{
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	else if(xingqiji==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	else if(xingqiji==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 	}
 	else if(xingqiji==6)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	else
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

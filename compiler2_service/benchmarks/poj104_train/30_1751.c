@@ -3,7 +3,7 @@
 int main_bench()
 {
 int num,i,j,sum=0,mark;
-scanf("%d",&num);
+my_scanf("%d",&num);
 for(i=1;i<=num;i++)
 {
 mark=1;j=i;
@@ -15,5 +15,5 @@ else j/=10;
 }
 if(mark) sum+=i*i;
 }
-printf("%d",sum);
+my_printf("%d",sum);
 }

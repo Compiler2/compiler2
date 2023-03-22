@@ -40,11 +40,11 @@ int main_bench()
     x=a60;
     y=u60;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     for(m=0; m<n; m++)
     {
-        scanf("%s %d", p, &q);
+        my_scanf("%s %d", p, &q);
 
         if(q>=60)
         {
@@ -63,10 +63,10 @@ int main_bench()
     sort(a);
 
     for(x=a60; x<a60+a; x++)
-        printf("%s\n", x->ID); 
+        my_printf("%s\n", x->ID); 
 
     for(y=u60; y<u60+b; y++)
-        printf("%s\n", y->ID);
+        my_printf("%s\n", y->ID);
 
     return 0;
 }

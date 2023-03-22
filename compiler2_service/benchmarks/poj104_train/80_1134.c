@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,sum1=0,sum2=0,x,k; 
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	sum1=sum1+d1;
 	sum2=sum2+d2;
 	for(k=1;k<m1;k++)
@@ -63,7 +63,7 @@ int main_bench()
 		}
 	}
     x=sum2-sum1;
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 	return 0;
 }
 

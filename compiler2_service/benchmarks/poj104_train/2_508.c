@@ -9,9 +9,9 @@ int main_bench()
 		int num;
 		char name[27];
 	}book[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
-		scanf("%d %s",&book[i].num,book[i].name);
+		my_scanf("%d %s",&book[i].num,book[i].name);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<strlen(book[i].name);j++)
@@ -104,14 +104,14 @@ int main_bench()
 		if(Q[i]>Q[max])
 			max=i;
 	}
-	printf("%c\n%d\n",max+65,Q[max]);
+	my_printf("%c\n%d\n",max+65,Q[max]);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<strlen(book[i].name);j++)
 		{
 			if(book[i].name[j]==max+65)
 			{
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 				break;
 			}
 		}

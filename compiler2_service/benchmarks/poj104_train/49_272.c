@@ -7,7 +7,7 @@ int main_bench()
 	int i, j, k, num, count;
 	for(i=0;i<510;i++)
 	{
-		scanf("%c", &a[i]);
+		my_scanf("%c", &a[i]);
 		if(a[i]=='\n')
 		{
 			a[i]=0;
@@ -28,9 +28,9 @@ int main_bench()
 			{
 				for(k=j;k<j+i;k++)
 				{
-					printf("%c", a[k]);
+					my_printf("%c", a[k]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

@@ -36,13 +36,13 @@ main_bench()
 {
       int n,i;
       char a[100];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       gets(a);
       for(i=0;i<n;i++)
       {
       gets(a);
       int k=check(a);
-      printf("%d\n",k);
+      my_printf("%d\n",k);
       }
       getchar();
 }

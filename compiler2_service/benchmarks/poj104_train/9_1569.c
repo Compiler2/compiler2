@@ -10,10 +10,10 @@ int main_bench()
 	int n,o=0,y=0,t,i,j;
 	char temp[10];
 	struct Inf inf[100],old[100],young[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",inf[i].c,&inf[i].a);
+		my_scanf("%s%d",inf[i].c,&inf[i].a);
 		if(inf[i].a>=60)
 		{
 			strcpy(old[o].c,inf[i].c);
@@ -44,11 +44,11 @@ int main_bench()
 	}
 	for(i=0;i<o;i++)
 	{
-		printf("%s\n",old[i].c);
+		my_printf("%s\n",old[i].c);
 	}
 	for(i=0;i<y;i++)
 	{
-		printf("%s\n",young[i].c);
+		my_printf("%s\n",young[i].c);
 	}
 	return 0;
 }

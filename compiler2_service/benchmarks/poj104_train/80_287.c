@@ -4,8 +4,8 @@ int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2;
 	int sum1,sum2,x1,x2,final;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	if((y1 % 4 == 0 && y1 % 100 != 0) || (y1 % 400 == 0))
 	{ switch(m1)
 	{
@@ -82,5 +82,5 @@ int main_bench()
 		 sum2=365*(y2-1)+x2+y2/4-y2/100+y2/400;
 	}
      final=sum2-sum1;
-	 printf("%d\n",final);
+	 my_printf("%d\n",final);
 }

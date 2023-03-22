@@ -20,8 +20,8 @@ main_bench()
             b[j]=b[j+1];
         }
     }
-    printf("%s\n",b);
-    printf("%d\n",d);
+    my_printf("%s\n",b);
+    my_printf("%d\n",d);
 
 
 }

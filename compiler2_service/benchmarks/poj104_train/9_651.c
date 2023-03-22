@@ -4,10 +4,10 @@ int main_bench()
 {
       int n,i,age[100],a,ageb[100],c,t,m;
       char ID[100][100],IDb[100][100],IDc[100];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-                      scanf("%s %d",ID[i],&age[i]);
+                      my_scanf("%s %d",ID[i],&age[i]);
       }
       i=0;
       c=0;
@@ -33,12 +33,12 @@ int main_bench()
                 strcpy(IDb[a+1],IDc);     
          }
          for(i=0;i<=c-1;i++)
-         printf("%s\n",IDb[i]);
+         my_printf("%s\n",IDb[i]);
          i=0;
          while(i<n)
          {
                 if(age[i]<60)
-                printf("%s\n",ID[i]);
+                my_printf("%s\n",ID[i]);
                 i++; 
          }
          getchar();

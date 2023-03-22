@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char str[260],*ps;
 	int a=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&str);
+		my_scanf("%s",&str);
 		for(ps=str;*ps!='\0';ps++)
 		{
 			if(*ps=='A')
@@ -20,7 +20,7 @@ int main_bench()
 			else if(*ps=='G')
 			*ps='C';
 	    }
-	    printf("%s\n",str);
+	    my_printf("%s\n",str);
     }
 	return 0;
 }

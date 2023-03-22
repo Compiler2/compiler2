@@ -4,9 +4,9 @@ int main_bench()
 {
 	int N,i,j=0,k,dot=0,min=29999,l;
 	int a[500],b[500];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<N;i++)
 	{
 		if(a[i]%2==0)
@@ -29,8 +29,8 @@ int main_bench()
 				continue;
 		}
 		if(dot!=0)
-			printf(",");
-		printf("%d",min);
+			my_printf(",");
+		my_printf("%d",min);
 		dot++;
 		for(l=0;l<j;l++)
 		{
@@ -42,6 +42,6 @@ int main_bench()
 		}
 		min=29999;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

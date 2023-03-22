@@ -19,10 +19,10 @@ int main_bench()
 	int n,i,first,second,third,one,two,three;
 	int *f=&first,*s=&second,*t=&third,*on=&one,*tw=&two,*th=&three;
 	struct Student stu[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].id,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].id,&stu[i].chinese,&stu[i].math);
 		int total=stu[i].chinese+stu[i].math,k;
 		int *to=&total,*K=&k;
 		if(i==0)
@@ -115,8 +115,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",stu[one].id,first);
-	printf("%d %d\n",stu[two].id,second);
-	printf("%d %d\n",stu[three].id,third);
+	my_printf("%d %d\n",stu[one].id,first);
+	my_printf("%d %d\n",stu[two].id,second);
+	my_printf("%d %d\n",stu[three].id,third);
 	return 0;
 }	

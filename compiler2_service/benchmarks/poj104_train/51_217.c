@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,l,n;
 	for(i=0;i<500;i++)
 		flag[i]=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(str);
 	l=strlen(str);
@@ -42,12 +42,12 @@ int main_bench()
 	}
 	if(maxflag!=1)
 	{
-		printf("%d\n",maxflag);
+		my_printf("%d\n",maxflag);
 		for(i=0;i<=l-n;i++)
 		{
 			if(count[i]==maxflag&&flag[i]!=0)
-				printf("%s\n",ch[i]);
+				my_printf("%s\n",ch[i]);
 		}
 	}
-	else printf("NO");
+	else my_printf("NO");
 }

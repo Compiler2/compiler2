@@ -5,12 +5,12 @@ int main_bench()
 	int Z[100],n,m,i;
 	int *p;
 	p=Z;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
-	{scanf("%d",&Z[i]);}
+	{my_scanf("%d",&Z[i]);}
 	for(i=0;i<m;i++)
-	{printf("%d ",*(p+n-m+i));}
+	{my_printf("%d ",*(p+n-m+i));}
 	for(i=0;i<n-m;i++)
-	{printf("%d",*(p+i));if(i<n-m-1) printf(" ");}
+	{my_printf("%d",*(p+i));if(i<n-m-1) my_printf(" ");}
 	return 0;
 }

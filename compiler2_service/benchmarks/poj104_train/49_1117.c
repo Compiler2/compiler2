@@ -14,8 +14,8 @@ main_bench()
           {bools=0;break;}
        if(bools==1)
          { for(j=i;j<=i+k-1;j++)
-            printf("%c",s[j]);
-           printf("\n");
+            my_printf("%c",s[j]);
+           my_printf("\n");
          }
      }
   return 0;

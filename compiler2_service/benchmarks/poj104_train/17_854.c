@@ -30,7 +30,7 @@ int main_bench()
 {
 	int n,i;
 	char s[101];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(s);

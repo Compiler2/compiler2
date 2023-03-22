@@ -12,7 +12,7 @@ int main_bench()
 			m++;
 		else
 		{
-			printf("%d",m);
+			my_printf("%d",m);
 			m=0;
 			break;
 		}
@@ -24,7 +24,7 @@ int main_bench()
 		else if(sentence[i-1]!=' '&&(sentence[i]!=' '&&sentence[i]!=0))
 			m++;
 		else if(sentence[i-1]!=' '&&(sentence[i]==' '||sentence[i]=='\0'))
-			printf(",%d",m);
+			my_printf(",%d",m);
 	}
 	return 0;
 }

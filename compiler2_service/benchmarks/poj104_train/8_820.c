@@ -16,13 +16,13 @@ void merge(int a[],int b[],int m,int n)
 
 void init(int a[],int b[])
 {    
-     scanf("%d%d",&m,&n);
+     my_scanf("%d%d",&m,&n);
 	 for (i=1;i<=m;i++) 
 		 
-			 scanf("%d",&a[i]);
+			 my_scanf("%d",&a[i]);
 	 for (i=1;i<=n;i++) 
 		 
-			 scanf("%d",&b[i]);
+			 my_scanf("%d",&b[i]);
 			 
 	 }
 
@@ -30,7 +30,7 @@ void output(int a[],int k)
 {
  int i;
 	
-	for(i=1;i<=k;i++) if (i==1) printf("%d",a[i]); else printf(" %d",a[i]);
+	for(i=1;i<=k;i++) if (i==1) my_printf("%d",a[i]); else my_printf(" %d",a[i]);
 }
 int main_bench()
 {

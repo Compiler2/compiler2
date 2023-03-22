@@ -32,8 +32,8 @@ int main_bench()
 {
 	int y1,m1,d1;
 	int y2,m2,d2;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
          int d=0;
          int p1=0;
          int p2=0;
@@ -53,17 +53,17 @@ int main_bench()
 			d=d+y(i);
                   d=d+p1+p2;
 
-	         printf("%d",d);
+	         my_printf("%d",d);
          }
          if(y2-y1==1)
          {
                   d=p1+p2;
-                  printf("%d",d);
+                  my_printf("%d",d);
          }
          if(y2==y1)
          {
                d=p1+p2-y(y1); 
-               printf("%d",d);
+               my_printf("%d",d);
          }
 	return 0;
 }

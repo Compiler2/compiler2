@@ -4,12 +4,12 @@ int main_bench()
 {
 	int a[6],i,j,b[6],m,n;
 	for(i=0;i<6;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	int reverse(int num);
 	for(j=0;j<6;j++)
 	{
 		b[j]=reverse(a[j]);
-		printf("%d\n",b[j]);
+		my_printf("%d\n",b[j]);
 	}
 	return 0;
 }

@@ -3,17 +3,17 @@
 int main_bench(){
     int sz[98];
     int n;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     
     for(int i=0;i<n;i++){
-        scanf("%d ",&(sz[i]));}
+        my_scanf("%d ",&(sz[i]));}
     int end[98];
     
     for(int m=0;m<n-1;m++){
         end[m]=sz[n-1-m];
-        printf("%d ",end[m]);}
+        my_printf("%d ",end[m]);}
      end[n-1]=sz[0];
-     printf("%d",end[n-1]);
+     my_printf("%d",end[n-1]);
       
      return 0;
 }

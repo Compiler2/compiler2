@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i;
 	int age[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&(age[i]));
+		my_scanf("%d",&(age[i]));
 	}
 	int a=0,b=0,c=0,d=0;
 	for (i=0;i<n;i++)
@@ -30,9 +30,9 @@ int main_bench()
 			d ++ ;
 		}
 	}
-	printf("1-18: %.2f%%\n",1.0*a/n*100);
-	printf("19-35: %.2f%%\n",1.0*b/n*100);
-	printf("36-60: %.2f%%\n",1.0*c/n*100);
-	printf("60??: %.2f%%\n",1.0*d/n*100);
+	my_printf("1-18: %.2f%%\n",1.0*a/n*100);
+	my_printf("19-35: %.2f%%\n",1.0*b/n*100);
+	my_printf("36-60: %.2f%%\n",1.0*c/n*100);
+	my_printf("60??: %.2f%%\n",1.0*d/n*100);
 	return 0;
 }

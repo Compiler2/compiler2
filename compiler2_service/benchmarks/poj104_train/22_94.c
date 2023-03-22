@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[2000];int num=0,i,j,temp1,temp2,len;int b[300];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	len=strlen(s);
 	for(i=0;i<300;i++)
 		b[i]=0;
@@ -15,11 +15,11 @@ int main_bench()
 		if(s[i]==',')j++;
 	}
 	num=j+1;
-    if(num==1)printf("No");
+    if(num==1)my_printf("No");
 	else 
 	{
 	for(i=1;i<num&&b[0]==b[i];i++);
-	if(i==num)printf("No");
+	if(i==num)my_printf("No");
 	else
 	{
 		for(i=0,temp1=b[0];i<num;i++)
@@ -28,7 +28,7 @@ int main_bench()
 			if(temp2>b[i])temp2=b[i];
 		for(i=0;i<num;i++)
 			if(b[i]<temp1&&temp2<b[i])temp2=b[i];
-		printf("%d",temp2);
+		my_printf("%d",temp2);
 	}
 	}
 

@@ -6,22 +6,22 @@ int hefa(char*a){
 	{
 		if (*a=='\0')
 		{
-			printf("1\n");
+			my_printf("1\n");
 			return 0;
 		}else if (!(*a=='_'||(*a>='A' &&*a<='Z')||(*a>='a' &&*a<='z')||(*a>='0' &&*a<='9')))
 		{
-			printf("0\n");
+			my_printf("0\n");
 			return 0;
 		}
 	}
-	printf("0\n");
+	my_printf("0\n");
 	return 0;
 }
 int main_bench(){
 	char zifu[2000000];
 	char *p;
 	int i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for (i=0;i<n;i++)
 	{
@@ -33,7 +33,7 @@ int main_bench(){
 		} 
 		else
 		{
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 	return 0;

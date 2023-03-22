@@ -7,7 +7,7 @@ int main_bench()
 	char boy, girl, null;
 	int i, j, l;
 	null = '0';
-	scanf ("%s", s);
+	my_scanf ("%s", s);
 	l = strlen (s);
 	boy = s[0];
 	for (i = 0; i < l; i++)
@@ -28,7 +28,7 @@ int main_bench()
 				{
 					if (s[j] == boy)
 					{
-						printf("%d %d\n", j, i);
+						my_printf("%d %d\n", j, i);
 						s[i] = null;
 						s[j] = null;
 						break;

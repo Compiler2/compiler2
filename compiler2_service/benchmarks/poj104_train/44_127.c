@@ -7,12 +7,12 @@ int main_bench()
 	int a[6],b,i;
 	for(i=0;i<=5;i++)
 	{
-		 scanf("%d",&a[i]);
+		 my_scanf("%d",&a[i]);
 	}
     for(i=0;i<=5;i++)
 	{
 		b=reverse(a[i]);
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	}
 	return 0;
 }

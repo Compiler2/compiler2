@@ -49,7 +49,7 @@ int main_bench()
 	
 	
 	
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	l1=strlen(a);
 	l2=strlen(b);
 	
@@ -98,18 +98,18 @@ int main_bench()
 		{
 			if(c[i]!='0')
 			{
-				printf("%c",c[i]);sum++;
+				my_printf("%c",c[i]);sum++;
 			
 			}
 		}
 		else
 		{
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 		}
 	}
 	if(sum==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
 	return 0;
 }

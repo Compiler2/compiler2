@@ -2,11 +2,11 @@
 
 int main_bench() {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[n][2];
     int i;
     for(i=0;i<n;i++) {
-        scanf("%d %d",&(sz[i][0]),&(sz[i][1]));
+        my_scanf("%d %d",&(sz[i][0]),&(sz[i][1]));
     }
     int A=0,B=0,k;
     for(i=0;i<n;i++) {
@@ -19,13 +19,13 @@ int main_bench() {
         }
     }
     if(A>B) {
-        printf("A");
+        my_printf("A");
     }
     if(A<B) {
-        printf("B");
+        my_printf("B");
     }
     if(A==B) {
-        printf("Tie");
+        my_printf("Tie");
     }
     return 0;
 }

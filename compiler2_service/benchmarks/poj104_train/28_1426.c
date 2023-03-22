@@ -19,9 +19,9 @@ int main_bench(){
 	s[a][b]='\0';
 	for(i=0;i<sum-1;i++){
 		if(strlen(s[i])!=0){
-			printf("%d,", strlen(s[i]));
+			my_printf("%d,", strlen(s[i]));
 		}
 	}
-	printf("%d", strlen(s[sum-1]));
+	my_printf("%d", strlen(s[sum-1]));
 	return 0;
 }

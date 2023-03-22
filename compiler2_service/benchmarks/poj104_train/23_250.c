@@ -14,18 +14,18 @@ int main_bench()
 			for(a=0;a<j-i;a++)
 			{
 				str2[a]=str[i+1+a];
-				printf("%c",str2[a]);
+				my_printf("%c",str2[a]);
 			}
-			printf(" ");
+			my_printf(" ");
 			j=i-1;i=j;
 		}
 		if(i==0)
 		{
 			for(a=0;a<=j;a++)
 			{
-				str2[a]=str[a];printf("%c",str2[a]);
+				str2[a]=str[a];my_printf("%c",str2[a]);
 			}
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

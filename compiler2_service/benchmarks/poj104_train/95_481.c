@@ -31,9 +31,9 @@ int main_bench()
 		}	
 		else x=0;
 	}
-	if (x==0) printf("=\n");
-	if (x==1) printf(">\n");			
-	if (x==-1) printf("<\n");
+	if (x==0) my_printf("=\n");
+	if (x==1) my_printf(">\n");			
+	if (x==-1) my_printf("<\n");
 
 
 return 0;

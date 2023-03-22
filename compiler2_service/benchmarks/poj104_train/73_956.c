@@ -31,9 +31,9 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	for(t=0;t<5;t++)
 	{
@@ -42,7 +42,7 @@ int main_bench()
 		{
 			if(andian==min(a,i))
 			{
-				printf("%d %d %d\n",t+1,i+1,andian);
+				my_printf("%d %d %d\n",t+1,i+1,andian);
 				break;
 			}
 			else
@@ -50,7 +50,7 @@ int main_bench()
 		}
 	}
 	if(count==25)
-	printf("not found\n");
+	my_printf("not found\n");
 	
 	return 0;
 } 

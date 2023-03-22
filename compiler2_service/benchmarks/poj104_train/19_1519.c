@@ -39,7 +39,7 @@ int main_bench()
 				for(i=0;i<na;i++)
 					s[p[m]-na+1+i]=b[i];
 				if(m==k-1)
-    				printf("%s\n",s);
+    				my_printf("%s\n",s);
 			}
 			if(na>nb)
 			{
@@ -50,8 +50,8 @@ int main_bench()
 				if(m==k-1)
 				{
 					for(i=0;i<ns-na+nb;i++)
-						printf("%c",s[i]);
-					printf("\n");
+						my_printf("%c",s[i]);
+					my_printf("\n");
 				}
 			}
 			if(na<nb)
@@ -63,12 +63,12 @@ int main_bench()
 				if(m==k-1)
 				{
 					for(i=0;i<ns+nb-na;i++)
-						printf("%c",s[i]);
-					printf("\n");
+						my_printf("%c",s[i]);
+					my_printf("\n");
 				}
 			}
 		}
 	}
 	
-	else if(k==0) printf("%s\n",s);
+	else if(k==0) my_printf("%s\n",s);
 }

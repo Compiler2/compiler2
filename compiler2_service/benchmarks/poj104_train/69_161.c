@@ -4,7 +4,7 @@ int main_bench()
 {
   char a[255],b[255],c[255],*p;
   int k=0,m,n,t,i;
-  scanf("%s%s",a,b);
+  my_scanf("%s%s",a,b);
   m=strlen(a);
   n=strlen(b);
   if(m>n)
@@ -43,7 +43,7 @@ int main_bench()
   for(p=c;*p=='0';p++)
   {
   }
-  printf("%s",p);
-  if(m==1&&n==1&&b[0]=='0'&&a[0]=='0')  printf("0");
-  printf("\n");
+  my_printf("%s",p);
+  if(m==1&&n==1&&b[0]=='0'&&a[0]=='0')  my_printf("0");
+  my_printf("\n");
 }

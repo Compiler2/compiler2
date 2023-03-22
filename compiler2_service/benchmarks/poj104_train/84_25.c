@@ -5,11 +5,11 @@ main_bench()
 {
 	int temp, max, min, a[100] = {0}, n, i, j;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
 	for(i = 1; i <= n; i++)
 	{
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	}
 
 	for(i = 1; i <= n; i++)
@@ -25,5 +25,5 @@ main_bench()
 		}
 	}
 
-	printf("%d\n%d", a[1], a[2]);
+	my_printf("%d\n%d", a[1], a[2]);
 }

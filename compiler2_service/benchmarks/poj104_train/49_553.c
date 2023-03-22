@@ -23,8 +23,8 @@ main_bench()
                      if(num==i/2+1)
                      {
                                    for(int k=j;k<=i+j;k++)
-                                    printf("%c",a[k]);
-                                   printf("\n");
+                                    my_printf("%c",a[k]);
+                                   my_printf("\n");
                      }
                      num=0;
               }

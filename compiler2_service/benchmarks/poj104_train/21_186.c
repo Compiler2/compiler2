@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,num[300],i,count=0,j;
 	float sum=0,ave,cha[300],max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		sum+=num[i];
 	}
 	ave=sum/n;
@@ -32,7 +32,7 @@ int main_bench()
 		{
 			if(cha[i]==max)
 			{
-				printf("%d",num[i]);
+				my_printf("%d",num[i]);
 			}
 		}
 	}
@@ -42,11 +42,11 @@ int main_bench()
 		{
 			if(cha[i]==max&&num[i]<ave)
 			{
-				printf("%d,",num[i]);
+				my_printf("%d,",num[i]);
 			}
 			if(cha[i]==max&&num[i]>ave)
 			{
-				printf("%d",num[i]);
+				my_printf("%d",num[i]);
 			}
 		}
 	}

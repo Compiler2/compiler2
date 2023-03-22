@@ -18,14 +18,14 @@ int main_bench()
 	}
     if(count) 
 	{for(i=0;i<m;i++)
-	printf("%c",s[i]);
+	my_printf("%c",s[i]);
 	for(i=0;s2[i]!='\0';i++)
-		printf("%c",s2[i]);
+		my_printf("%c",s2[i]);
 	for(j=i+m;j<len;j++)
-		printf("%c",s[j]);
+		my_printf("%c",s[j]);
 	}
 	else
-		printf("%s",s);
+		my_printf("%s",s);
 	
 	return 0;
 }

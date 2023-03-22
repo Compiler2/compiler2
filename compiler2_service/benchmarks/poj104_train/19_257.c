@@ -25,9 +25,9 @@ int main_bench()
 			}
 			if(found++)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
-				printf("%s",t);
+				my_printf("%s",t);
 				j=-1;
 			memset(t,'\0',sizeof(t));
 		}

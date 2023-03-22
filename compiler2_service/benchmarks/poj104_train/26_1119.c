@@ -24,7 +24,7 @@ int main_bench()
                   
                     if(string[i]=='\0')
                     break; 
-                     printf("%c", string[i]);
+                     my_printf("%c", string[i]);
     }
     return 0;
 }

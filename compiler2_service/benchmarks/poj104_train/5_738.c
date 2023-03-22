@@ -4,7 +4,7 @@ int main_bench(){
 	double a,j=0,m,k=0,l=0;
 	int o=0,i;
 	char b[500],c[500];			
-	scanf("%lf%s%s",&a,b,c);
+	my_scanf("%lf%s%s",&a,b,c);
 	for(i=0;b[i]!='\0';i++)
 	{
 		k++;
@@ -30,15 +30,15 @@ int main_bench(){
 	}
 		if(o>0||k!=l)
 		{
-			printf("error");
+			my_printf("error");
 		}
 	else if(m>=a)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else 
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

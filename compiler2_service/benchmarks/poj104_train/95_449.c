@@ -18,7 +18,7 @@ int main_bench()
 	}
 
      t=strcmp(p1,p2);
-	 if(t>0)printf(">"); if(t<0)printf("<"); if(t==0)printf("=");
+	 if(t>0)my_printf(">"); if(t<0)my_printf("<"); if(t==0)my_printf("=");
 
 
 }

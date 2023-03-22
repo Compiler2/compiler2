@@ -10,6 +10,6 @@ int main_bench()
 		s1[i] = s[i] + s[i + 1];
 	s1[i] = s[i] + s[0];
 	for (i = 0; i < l; i++)
-		printf("%c", s1[i]);
+		my_printf("%c", s1[i]);
 	return 0;
 }

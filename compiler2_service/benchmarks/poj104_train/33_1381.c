@@ -4,10 +4,10 @@
 {
 int i,n,m,j;
 char s1[10000][256],s2[10000][256];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
-scanf("%s",s1[i]);
+my_scanf("%s",s1[i]);
 }
 for(i=0;i<n;i++){
 m=strlen(s1[i]);
@@ -27,9 +27,9 @@ for(i=0;i<n;i++)
 {
 m=strlen(s1[i]);
 for(j=0;j<m;j++){
-printf("%c",s2[i][j]);
+my_printf("%c",s2[i][j]);
 }
-printf("\n");
+my_printf("\n");
 }
 return 0;
 }

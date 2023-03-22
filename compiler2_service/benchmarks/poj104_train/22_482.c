@@ -6,7 +6,7 @@ int main_bench()
   int c[300]={0};
   int i,n=0,j,k,m,t;
   char a[300];
-  scanf("%s",a);
+  my_scanf("%s",a);
   for(i=0;;i++)
   {  if(a[i]==',')
    {n=n+1;
@@ -61,12 +61,12 @@ int main_bench()
      }  
      t=c[0];   
               if(c[n-1]==t)
-     printf("No");   
+     my_printf("No");   
       else{   
                for(i=1;i<n;i++)
     {
           if(c[i]<t)
-          {printf("%d",c[i]);
+          {my_printf("%d",c[i]);
           break;}
      }
           }

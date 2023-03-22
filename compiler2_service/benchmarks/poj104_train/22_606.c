@@ -5,19 +5,19 @@ int main_bench()
         int a[301],i,k,j,l,t,s;
     char b[300];
     i=0;
-    scanf("%d%c",&a[i],&b[i]);
+    my_scanf("%d%c",&a[i],&b[i]);
     while(b[i]==',')
     {
       i++;
-      scanf("%d%c",&a[i],&b[i]);
+      my_scanf("%d%c",&a[i],&b[i]);
     }
     k=0;
     while((a[k]==a[k+1])&&(k<i))
     k++; 
-    if(i==0) printf("No");
+    if(i==0) my_printf("No");
     else 
     {
-         if(k==i) printf("No");
+         if(k==i) my_printf("No");
          else
          {
             for(j=0;j<i;j++)
@@ -27,7 +27,7 @@ int main_bench()
             s=i;
             while(a[s]==a[s-1])
             s--;
-            printf("%d",a[s-1]); 
+            my_printf("%d",a[s-1]); 
               
           
          } 

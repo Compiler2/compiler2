@@ -13,12 +13,12 @@ int main_bench(){
 	int sz[5][5];
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(change(n,m)==0){
-		printf("error");
+		my_printf("error");
 	}else if(change(n,m)==1){
                   int s[5][5];
 		int i,j;
@@ -32,7 +32,7 @@ int main_bench(){
 			s[m][i]=sz[n][i];
 		}
 		for(i=0;i<5;i++){
-			printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
+			my_printf("%d %d %d %d %d\n",s[i][0],s[i][1],s[i][2],s[i][3],s[i][4]);
 
 		}
 	}

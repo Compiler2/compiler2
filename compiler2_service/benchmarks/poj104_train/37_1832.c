@@ -3,11 +3,11 @@
 main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		char a[100000];
-		scanf("%s",a);
+		my_scanf("%s",a);
 		int s=0,t,l,j,k;
 		l=strlen(a);
 		for(j=0;j<l;j++)
@@ -16,11 +16,11 @@ main_bench()
 			for(k=0;k<l;k++)
 			if(a[j]==a[k])  t++;
 			if(t==1)  
-			{printf("%c\n",a[j]);
+			{my_printf("%c\n",a[j]);
 			break;}
 			s++;
 		}
-		if(s==l)  printf("no\n");
+		if(s==l)  my_printf("no\n");
 	}
 
 }

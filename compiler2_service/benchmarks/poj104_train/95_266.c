@@ -16,9 +16,9 @@ int main_bench()
 		if(t[i]>='a'&&t[i]<='z')
 			t[i]=t[i]-32;
 	}
-	if(strcmp(s,t)>0)printf(">");
-	else if(strcmp(s,t)<0)printf("<");
-	else printf("=");
+	if(strcmp(s,t)>0)my_printf(">");
+	else if(strcmp(s,t)<0)my_printf("<");
+	else my_printf("=");
 	return 0;
 }
 

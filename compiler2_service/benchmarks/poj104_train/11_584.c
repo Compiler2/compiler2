@@ -4,10 +4,10 @@
 int main_bench()
 {
    int y,m,d,n; 
-   scanf("%d",&y);
+   my_scanf("%d",&y);
    if((y%4==0&&y%100!=0)||(y%400==0))
    {
-	   scanf("%d%d",&m,&d);
+	   my_scanf("%d%d",&m,&d);
 	if(m==1)
 	{n=d;}
 	if(m==2)
@@ -32,12 +32,12 @@ int main_bench()
 	{n=31+29+d+31+30+31+30+31+31+30+31;}
 	if(m==12)
 	{n=31+29+d+31+30+31+30+31+31+30+31+30;}
-	printf("%d",n);
+	my_printf("%d",n);
    
    }
    else
     {
-	   scanf("%d%d",&m,&d);
+	   my_scanf("%d%d",&m,&d);
 	if(m==1)
 	{n=d;}
 	if(m==2)
@@ -62,7 +62,7 @@ int main_bench()
 	{n=31+28+d+31+30+31+30+31+31+30+31;}
 	if(m==12)
 	{n=31+28+d+31+30+31+30+31+31+30+31+30;}
-	printf("%d",n);
+	my_printf("%d",n);
    
    }
    return 0;

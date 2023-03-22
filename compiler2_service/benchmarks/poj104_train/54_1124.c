@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,k,i,j,m=0,z;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	i=1;
 	while(m!=n-1){
 	z=i*(n-1);
@@ -20,6 +20,6 @@ int main_bench()
 	i++;
 	}
 	z=z/(n-1)*n+k;
-	printf("%d",z);
+	my_printf("%d",z);
 	return 0;
 }

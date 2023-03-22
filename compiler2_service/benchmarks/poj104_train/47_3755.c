@@ -4,16 +4,16 @@
 int main_bench()
 {
 	int n,i,j,a[111],b[111];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	j=n-1;
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d",&a[i]);
+		my_scanf ("%d",&a[i]);
 		b[j]=a[i];
 		j--;
 	}
 	for (j=0;j<n-1;j++)
-	printf("%d ",b[j]);
-	printf("%d\n",b[n-1]);
+	my_printf("%d ",b[j]);
+	my_printf("%d\n",b[n-1]);
 	return 0;
 }

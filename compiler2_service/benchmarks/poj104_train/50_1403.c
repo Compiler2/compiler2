@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,b,i,k;
 	k=13;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1){
 		b=5;
 	}
@@ -27,7 +27,7 @@ if(n==7){
 	}
 	for(i=1;i<=12;i++){
 		if(k%7==b){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 		if(i==1||i==3||i==5||i==7||i==8||i==10){
 			k+=31;

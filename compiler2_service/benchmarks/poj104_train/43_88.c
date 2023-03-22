@@ -14,7 +14,7 @@ int main_bench()
 {
 	int i,num,flag=0;
 	int b;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=3;i<=num/2;i=i+2)
 	{
 		if(ju(i)==1)
@@ -22,8 +22,8 @@ int main_bench()
 		b=num-i;
 		if(ju(b)==1)
 		{
-			printf("%d %d",i,b);
-			printf("\n");
+			my_printf("%d %d",i,b);
+			my_printf("\n");
 
 		}
 	}

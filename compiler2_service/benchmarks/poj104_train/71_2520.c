@@ -3,10 +3,10 @@
 main_bench()
 {
       int n,i,a[200],b[200],c[200],d[13],j,min,max,s;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-         scanf("%d %d %d",&a[i],&b[i],&c[i]);
+         my_scanf("%d %d %d",&a[i],&b[i],&c[i]);
       }
       d[1]=31;
       d[3]=31;
@@ -43,9 +43,9 @@ main_bench()
           s=s+d[j];
       }
      if(s%7==0)
-      printf("YES\n");
+      my_printf("YES\n");
       else
-      printf("NO\n");
+      my_printf("NO\n");
       }
 
 

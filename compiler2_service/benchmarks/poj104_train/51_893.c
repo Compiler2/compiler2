@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char str[1000];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	char s[1000][100];
 	int i,len,z;
 	int a[10000]={0};
@@ -40,10 +40,10 @@ int main_bench()
 	}
 	char ch[100]="AMA";
 	if(temp==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",temp);
+		my_printf("%d\n",temp);
 		for(k=0;k<=len-n;k++)
 		{
 			if(strcmp(ch,s[k])==0)
@@ -52,7 +52,7 @@ int main_bench()
 			{
 			  if(a[k]==temp)
 			  {
-				printf("%s\n",s[k]);
+				my_printf("%s\n",s[k]);
 				for(z=k+1;z<=len-n;z++)
 				{
 					if(strcmp(s[k],s[z])==0)

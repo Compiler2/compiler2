@@ -18,7 +18,7 @@ int main_bench(){
    
     i=0;
     while(s[i]!='\0'){
-        if(s[i]!='!') printf("%c",s[i]);
+        if(s[i]!='!') my_printf("%c",s[i]);
         i++;
     }
 

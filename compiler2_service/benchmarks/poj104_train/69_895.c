@@ -4,7 +4,7 @@ main_bench()
 {
     char a[250],b[250],m[250];
     int c,d,i,e,j,k;
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
     c=strlen(a);
     d=strlen(b);
     k=0;
@@ -40,9 +40,9 @@ main_bench()
     if(m[0]>'9')
     {
        m[0]=m[0]-10;
-       printf("1");
+       my_printf("1");
        for(i=0;i<c;i++)
-       printf("%c",m[i]);
+       my_printf("%c",m[i]);
     }
     else
     {
@@ -51,13 +51,13 @@ main_bench()
         if(m[i]!='0')
         {
         for(j=i;j<c;j++)
-        printf("%c",m[j]);
+        my_printf("%c",m[j]);
         k=1;
         }
        if(k==1)
        break;
         }
         if(k==0)
-        printf("0");
+        my_printf("0");
     }
 }

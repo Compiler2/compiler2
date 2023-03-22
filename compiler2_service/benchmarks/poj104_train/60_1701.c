@@ -5,13 +5,13 @@ main_bench()
 {
       int i,j,k,m,n;
       int sushu(int a);
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if(n<=4)
-      printf("empty");
+      my_printf("empty");
       for(i=3;i<=n;i=i+2)
       {
                        if(sushu(i)==1&&sushu(i+2)&&i+2<=n)
-                       printf("%d %d\n",i,i+2);
+                       my_printf("%d %d\n",i,i+2);
                        }
                        
                        

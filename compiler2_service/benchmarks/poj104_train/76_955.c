@@ -8,9 +8,9 @@ int main_bench()
 	a[5000];
 	int n,i,c,d,j,h,x,y,r[5000],t[5000];
 	double f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		a[i].x=x;
 		a[i].y=y;
 	
@@ -39,13 +39,13 @@ int main_bench()
 		}
 		if(h==n){
 			
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 		
 	}
 	if(i==a[0].y){
-		printf("%d %d",a[0].x,a[0].y);
+		my_printf("%d %d",a[0].x,a[0].y);
 	}
 	
 	return 0;

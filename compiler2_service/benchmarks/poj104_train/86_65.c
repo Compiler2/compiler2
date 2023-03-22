@@ -4,20 +4,20 @@ int main_bench()
 {
 	int a[999][10]={{0}};
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	int N=0;
 	int total=0;
 	for(i=1;i<n+1;i++){
-		scanf("%d",&a[i][0]);
+		my_scanf("%d",&a[i][0]);
 		for(j=1;j<=a[i][0];j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	int total1;
 	for(i=1;i<n+1;i++){
 		if(a[i][0]==0){
-			printf("60\n");
+			my_printf("60\n");
 		}
 		else if(a[i][0]!=0){
 			j=a[i][0];
@@ -37,14 +37,14 @@ int main_bench()
 				else if(N>63){
 					total=a[i][j-1]-N+60;
 				}
-				printf("%d\n",total);
+				my_printf("%d\n",total);
 			}
 			else if(total1<=63){
 				if(total1<60)
 					total=60-j*3;
 				else 
 					total=a[i][j];
-				printf("%d\n",total);
+				my_printf("%d\n",total);
 			}
 		}
 	}

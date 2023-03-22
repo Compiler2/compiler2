@@ -7,9 +7,9 @@ int main_bench()
 	int lenstr, lensub;
 	int i, j, k;
 	
-	scanf("%s", str);
-	scanf("%s", sub);
-	scanf("%s", re);
+	my_scanf("%s", str);
+	my_scanf("%s", sub);
+	my_scanf("%s", re);
 	lenstr=strlen(str);
 	lensub=strlen(sub);
 
@@ -29,6 +29,6 @@ break;
 		}
 	}
 
-	printf("%s", str);
+	my_printf("%s", str);
 	return 0;
 }

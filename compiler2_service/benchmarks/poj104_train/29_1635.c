@@ -16,7 +16,7 @@ double FindFBN( int nplus2,  int* FBNplus2)
 	{
 		dSum+=((double)(FBNplus2[i+2])/(double)(FBNplus2[i+1]));
 	}
-	printf("%.3lf\n",dSum);
+	my_printf("%.3lf\n",dSum);
 	return dSum;
 }
 
@@ -29,13 +29,13 @@ int main_bench()
 	int ** FBArray;
 	double dSum;
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	FBNum = (int *)malloc(m*sizeof(int));
 	FBArray =(int**) malloc(m*sizeof(int*));
 
 	for (i=0; i<m; i++)
 	{
-		scanf("%d", &FBNum[i]);
+		my_scanf("%d", &FBNum[i]);
 	}
 
 	for (i=0; i<m; i++)

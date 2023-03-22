@@ -3,7 +3,7 @@
 int main_bench()
 {
     int i,n,j,p,q,count=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=3;i<=n-2;i=i+2)
     {
           for(p=0,j=2;j<i;j++)
@@ -21,11 +21,11 @@ int main_bench()
              if(j==i+2)
              q=1;
              if(p==1&&q==1){
-             printf("%d %d\n",i,i+2);
+             my_printf("%d %d\n",i,i+2);
              count++;}
                        }
                        if(count==0)
-                       printf("empty");
+                       my_printf("empty");
                       
 
                        return 0;

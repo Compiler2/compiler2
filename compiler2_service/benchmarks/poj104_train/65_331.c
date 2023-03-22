@@ -22,13 +22,13 @@ void jzb(int a,int b)
 int main_bench()
 {
     int t,a,b,i;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
-         scanf("%d%d",&a,&b);
+         my_scanf("%d%d",&a,&b);
          jzb(a,b);           
     }
-    if(win>0) printf("A");
-    else if(win<0) printf("B");
-    else if(win==0) printf("Tie");
+    if(win>0) my_printf("A");
+    else if(win<0) my_printf("B");
+    else if(win==0) my_printf("Tie");
     }

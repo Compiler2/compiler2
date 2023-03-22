@@ -5,9 +5,9 @@ int main_bench(){
 	int n[100],i,m,j;
 	double x[100],y[100];
 	double a[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++){
 		x[0]=2;y[0]=1;
@@ -22,7 +22,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",a[i]);
+		my_printf("%.3lf\n",a[i]);
 	}
 	return 0;
 }

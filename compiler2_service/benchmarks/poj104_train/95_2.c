@@ -26,12 +26,12 @@ int main_bench()
 	{
 		if((int)a[i]>(int)b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if((int)a[i]<(int)b[i])
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		else if((int)a[i]==(int)b[i])
@@ -42,7 +42,7 @@ int main_bench()
 	}
 	if(m==a1-1)
 	{
-		printf("=");
+		my_printf("=");
 	}
 	return 0;
 }

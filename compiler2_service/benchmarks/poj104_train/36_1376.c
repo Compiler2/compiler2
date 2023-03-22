@@ -20,13 +20,13 @@ void f(char c[1000],int i)
 int main_bench()
 {
 	char s[1000],c[1000];
-	scanf("%s%s",s,c);
+	my_scanf("%s%s",s,c);
 	int lens,lenc;
 	lens=strlen(s);
 	lenc=strlen(c);
 	int i,j,k;
 	if(lens!=lenc)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		f(s,lens);
@@ -35,12 +35,12 @@ int main_bench()
 		{
 			if(s[k]!=c[k])
 			{
-				printf("NO");
+				my_printf("NO");
 				break;
 			}
 		}
 		if(k==lens)
-			printf("YES");
+			my_printf("YES");
 	}
 }
 

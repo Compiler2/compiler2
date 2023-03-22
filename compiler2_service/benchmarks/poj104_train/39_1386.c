@@ -40,10 +40,10 @@ int main_bench()
 	double sum=0;
 	int a[100];
 	struct person p[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<=n-1;i++)
 	{
-		scanf("%s %d %d %c %c %d",p[i].n,&p[i].q,&p[i].p,&p[i].g,&p[i].x,&p[i].lun);
+		my_scanf("%s %d %d %c %c %d",p[i].n,&p[i].q,&p[i].p,&p[i].g,&p[i].x,&p[i].lun);
 		a[i]=jiang(p[i]);
 		sum=sum+a[i];
 	}
@@ -59,7 +59,7 @@ int main_bench()
 		}
 		if (r==0)
 		{
-			printf("%s\n%d\n%.0lf",p[i].n,a[i],sum);
+			my_printf("%s\n%d\n%.0lf",p[i].n,a[i],sum);
 			break;
 		}
 	}

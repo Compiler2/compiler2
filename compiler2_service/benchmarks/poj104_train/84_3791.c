@@ -10,11 +10,11 @@ int main_bench()
 {
 	int n;
 	int arr[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 
 	for (i=0;i<n;i++) {
-		scanf("%d",&arr[i]);
+		my_scanf("%d",&arr[i]);
 	}
 
 	int t,k=0;
@@ -33,7 +33,7 @@ int main_bench()
 	}
 
 	for (i=0;i<2;i++) {
-		printf("%d\n",arr[i]);
+		my_printf("%d\n",arr[i]);
 	}
 	return 0;
 }

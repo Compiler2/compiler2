@@ -12,9 +12,9 @@ int main_bench(){
     m=1;
     n=1;
     while((m>0)&&(n>0)){
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     if((m>0)&&(n>0)){
-        printf("%d\n",f(n,m)+1);
+        my_printf("%d\n",f(n,m)+1);
     }
     }
     return 0;

@@ -6,7 +6,7 @@ int main_bench()
 	int f=0,b=0,n;                
 	char a[81],*p;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     getchar();
 
 	while(n>0)
@@ -32,9 +32,9 @@ int main_bench()
 		}
 
 		if(f==1&&b==1)
-			printf("1\n");
+			my_printf("1\n");
 		else
-			printf("0\n");
+			my_printf("0\n");
 		
 		n--;
 	}

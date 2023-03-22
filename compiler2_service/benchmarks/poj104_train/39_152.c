@@ -14,11 +14,11 @@ int main_bench()
 	}stu[100];
 	{
 		int n,i,t,s=0;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 
 		for(i=0;i<n;i++)
 		{
-			scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].f,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].lun);
+			my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].f,&stu[i].ping,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 			stu[i].jiang=0;
 			if(stu[i].f>80&&stu[i].lun>0)
 				stu[i].jiang=stu[i].jiang+8000;
@@ -38,7 +38,7 @@ int main_bench()
 		for(i=0;i<n;i++)
 			if(stu[i].jiang==t)
 			{
-				printf("%s\n%d\n%d\n",stu[i].name,t,s+stu[n-1].jiang);
+				my_printf("%s\n%d\n%d\n",stu[i].name,t,s+stu[n-1].jiang);
 				break;
 			}
 	}

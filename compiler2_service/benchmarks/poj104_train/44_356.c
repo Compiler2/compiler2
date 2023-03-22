@@ -6,8 +6,8 @@ int main_bench()
 	int fun(int n);
 	for (i=0;i<6;i++)
 	{
-		scanf("%d",&n);
-		printf("%d\n",fun(n));
+		my_scanf("%d",&n);
+		my_printf("%d\n",fun(n));
 	}
 	return 0;
 }

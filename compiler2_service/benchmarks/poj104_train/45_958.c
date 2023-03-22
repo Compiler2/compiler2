@@ -4,14 +4,14 @@ int main_bench()
 {
 	char s[100], w[100];
 	int i, m=0, n=0;
-	scanf("%s%s",s, w);
+	my_scanf("%s%s",s, w);
 	for(;;)
 	{
 		for(i=n+1;;i++)
 		{
 			if(w[i]=='\0')
 			{
-				printf("No");
+				my_printf("No");
 				return 0;
 			}
 			if(s[0]==w[i])
@@ -35,12 +35,12 @@ int main_bench()
 		}
 		if(m==1)
 		{
-			printf("%d",n);
+			my_printf("%d",n);
 			break;
 		}
 		else if(w[i]=='\0')
 		{
-			printf("No");
+			my_printf("No");
 			break;
 		}
 		else continue;

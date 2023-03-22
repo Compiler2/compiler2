@@ -12,9 +12,9 @@
 int main_bench()
 {
   int n,i,j,max,sum=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for (i=0;i<n;i++)
-     {scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].mark[0],&stu[i].mark[1],
+     {my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].mark[0],&stu[i].mark[1],
                                &stu[i].leader,&stu[i].west,&stu[i].paper);
       stu[i].money=0;
       if (stu[i].mark[0]>80 && stu[i].paper>=1) stu[i].money+=8000;
@@ -29,6 +29,6 @@ int main_bench()
       {
        if (stu[i].money>max) {max=stu[i].money;j=i;}
        }
-  printf("%s\n%d\n",stu[j].name,stu[j].money);
-  printf("%d",sum);
+  my_printf("%s\n%d\n",stu[j].name,stu[j].money);
+  my_printf("%d",sum);
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,num[500]={0},l,t=0,i,j;
 	char s[500],gram[600][5]={0};
-	scanf("%d%s",&n,s);
+	my_scanf("%d%s",&n,s);
 	l=strlen(s);
 	for(i=0;i<=l-n;i++)
 	{
@@ -36,13 +36,13 @@ int main_bench()
 			t=num[i];
 	}
 	if(t<=1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 		for(i=0;i<l-n+1;i++)
 			if(num[i]==t)
-				printf("%s\n",gram[i]);
+				my_printf("%s\n",gram[i]);
 	}
 }
 

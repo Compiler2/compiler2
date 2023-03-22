@@ -4,12 +4,12 @@ int main_bench()
 {
     int N,i,t,p,q,sz[500],js[500];
     t=-1;
-    scanf("%d\n",&N);
+    my_scanf("%d\n",&N);
     for(i=0;i<N;i++){
         if(i<N-1){ 
-           scanf("%d ",&sz[i]);
+           my_scanf("%d ",&sz[i]);
         }else{
-           scanf("%d\n",&sz[i]);
+           my_scanf("%d\n",&sz[i]);
         }
     }
     for(i=0;i<N;i++){
@@ -29,9 +29,9 @@ int main_bench()
     }
     for(p=0;p<=t;p++){
             if(p<t){
-               printf("%d,",js[p]);
+               my_printf("%d,",js[p]);
             }else{
-               printf("%d",js[p]);
+               my_printf("%d",js[p]);
             }
      }
     return 0;

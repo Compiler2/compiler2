@@ -6,10 +6,10 @@ int main_bench()
 int score,cla,paper;
 }n[100];
 int t=0,N,i,j,m[100],e[100],k;
-scanf("%d",&N);
+my_scanf("%d",&N);
 for(i=0;i<N;i++)
 {
-scanf("%s %d %d %c %c %d",n[i].name,&n[i].score,&n[i].cla,&n[i].o,&n[i].w,&n[i].paper);}
+my_scanf("%s %d %d %c %c %d",n[i].name,&n[i].score,&n[i].cla,&n[i].o,&n[i].w,&n[i].paper);}
 for(i=0;i<N;i++)
 {m[i]=0;
 if(n[i].cla>80&&n[i].o=='Y') m[i]+=850;
@@ -22,8 +22,8 @@ e[i]=i;
 for(i=0;i<N;i++)
 for(j=i;j<N;j++)
 {if(m[e[i]]<m[e[j]]) {k=e[i];e[i]=e[j];e[j]=k;}}
-printf("%s\n%d\n",n[e[0]].name,m[e[0]]);
+my_printf("%s\n%d\n",n[e[0]].name,m[e[0]]);
 for(i=0;i<N;i++)
  t+=m[i];
-printf("%d",t);
+my_printf("%d",t);
 return 0;}

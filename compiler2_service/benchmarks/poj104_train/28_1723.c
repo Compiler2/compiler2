@@ -28,8 +28,8 @@ int main_bench()
 	c[n]=c[n]+b[m]-b[m-1]-1;
 	for(i=0;i<n;i++)
 	{
-		printf("%d,",c[i]);
+		my_printf("%d,",c[i]);
 	}
-	printf("%d",c[n]);
+	my_printf("%d",c[n]);
 	return 0;
 }

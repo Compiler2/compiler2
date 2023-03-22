@@ -22,7 +22,7 @@ main_bench()
          
      }
      for(i=0;i<j;i++)
-     printf("%c",b[i]);
+     my_printf("%c",b[i]);
       
 }
 

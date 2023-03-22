@@ -5,10 +5,10 @@ int main_bench()
     int n,i,j,tem,a[300];
     float ave,b[300],max,sum;
     sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=0;j<n;j++)
     {
-        scanf("%d",&a[j]);
+        my_scanf("%d",&a[j]);
         sum=sum+a[j];
     }
     ave=sum/n;
@@ -29,7 +29,7 @@ int main_bench()
     {
         if(b[j]==max)
         {
-           printf("%d",a[j]);
+           my_printf("%d",a[j]);
            tem=j;
            break;
         }
@@ -38,7 +38,7 @@ int main_bench()
     {
        if(b[j]==max)
         {
-           printf(",%d",a[j]);
+           my_printf(",%d",a[j]);
         }
     }
     return 0;

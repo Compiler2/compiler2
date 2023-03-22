@@ -25,20 +25,20 @@ int main_bench()
 	int a[5][5],i,j,m,n,y,*a_p;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	a_p=&a[0][0];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	y=hanshu(a,m,n,a_p);
-	if(y==0) printf("error\n");
+	if(y==0) my_printf("error\n");
 	else
 	{
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",a[i][j]);
-				if(j==4) printf("\n");
-				else printf(" ");
+				my_printf("%d",a[i][j]);
+				if(j==4) my_printf("\n");
+				else my_printf(" ");
 			}
 		}
 	}

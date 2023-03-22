@@ -3,12 +3,12 @@
 main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       char a[100];
       char b[100];
       for(int i=0;i<n;i++)
       {
-              scanf("%s",a);
+              my_scanf("%s",a);
               int m;
               m=strlen(a);
               if(a[m-2]=='l'||a[m-2]=='e')
@@ -27,6 +27,6 @@ main_bench()
                              }
                              b[m-3]='\0';
               }
-              printf("%s\n",b);
+              my_printf("%s\n",b);
       }
 }

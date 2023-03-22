@@ -13,11 +13,11 @@ int main_bench()
 	    r1[i]=r2[i]='\0';
      n=strcmp(r1,r2);
 	  if(n==0)
-	  printf("=");
+	  my_printf("=");
 	  else if(n<0)
-		  printf("<");
+		  my_printf("<");
 	   else 
-		  printf(">");
+		  my_printf(">");
    return 0;
 }
 

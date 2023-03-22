@@ -6,7 +6,7 @@ int main_bench()
 	int mm[3] = {3, 5, 7};
 	int flag[3] = {0};
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	for (i = 0; i < 3; i++)
 	{
@@ -20,12 +20,12 @@ int main_bench()
 		{
 			space ++;
 			if (space == 0)
-				printf("%d", mm[i]);
+				my_printf("%d", mm[i]);
 			else
-				printf(" %d", mm[i]);
+				my_printf(" %d", mm[i]);
 		}
 	}
 	if(space == -1)
-		printf("n");
-	printf("\n");
+		my_printf("n");
+	my_printf("\n");
 }

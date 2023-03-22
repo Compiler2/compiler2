@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,m,k,j,a=0,b=0;
 	
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for (i=m;i<=n;i++)
 	{
 		int num=0;
@@ -42,14 +42,14 @@ int main_bench()
 	}
 	if (group[0]!=0)
 	{
-		printf("%d",group[0]);
+		my_printf("%d",group[0]);
         for (i=1;i<j,group[i]!=0;i++)
 		{			
-			printf(",%d",group[i]);
+			my_printf(",%d",group[i]);
 			
 		}
 	}
-	else printf("no");
+	else my_printf("no");
 	return 0;
 }
 		

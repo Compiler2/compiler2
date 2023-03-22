@@ -3,9 +3,9 @@
 int main_bench(){
     int a[50000], b[50000], n, s[50000];
     int m=0;
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     for(int i=0;i<n;i++){
-        scanf("%d %d", &a[i], &b[i]);
+        my_scanf("%d %d", &a[i], &b[i]);
     }
     int c=a[0];
     int d=b[0];
@@ -27,6 +27,6 @@ int main_bench(){
    for(int i=c;i<d;i++){
        m=m+s[i];
    }
-   if(m==0){printf("%d %d", c, d);}else{printf("no");}
+   if(m==0){my_printf("%d %d", c, d);}else{my_printf("no");}
 return 0;
 }

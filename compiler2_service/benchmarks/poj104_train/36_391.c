@@ -5,8 +5,8 @@ int main_bench()
 	char str1[101],str2[101];
 	int a[26],b[26];
 	int i,l,f;
-	scanf("%s %s",str1,str2);
-	if (strlen(str1)!=strlen(str2)) printf("NO\n");
+	my_scanf("%s %s",str1,str2);
+	if (strlen(str1)!=strlen(str2)) my_printf("NO\n");
 	else
 	{
 		for (i=0;i<26;i++)
@@ -27,7 +27,7 @@ int main_bench()
 		f=1;
 		for (i=0;i<26;i++)
 			if ((a[i]!=0)||(b[i]!=0)) f=0;
-		if (f==1) printf("YES\n");
-		else printf("NO\n");
+		if (f==1) my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 }

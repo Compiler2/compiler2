@@ -6,10 +6,10 @@ int main_bench()
 		int ID,chinese,maths,sum;
 	} ss[100000];
 	int i,n;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf ("%d%d%d",&ss[i].ID,&ss[i].chinese,&ss[i].maths);
+		my_scanf ("%d%d%d",&ss[i].ID,&ss[i].chinese,&ss[i].maths);
 		ss[i].sum=ss[i].chinese+ss[i].maths;
 	}
 	struct score {
@@ -44,7 +44,7 @@ int main_bench()
 	}
 	for (i=1;i<=3;i++)
 	{
-		printf ("%d %d\n",s[i].ID,s[i].sum);
+		my_printf ("%d %d\n",s[i].ID,s[i].sum);
 	}
 	return 0;
 }

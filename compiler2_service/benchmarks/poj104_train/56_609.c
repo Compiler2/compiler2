@@ -3,7 +3,7 @@
 int main_bench()
 {
     char a[6];
-    scanf("%s",&a);
+    my_scanf("%s",&a);
     int n,i;
     for(i=0;i<=5;i++)
     {
@@ -13,7 +13,7 @@ int main_bench()
       break;
       }
      }
-    for(i=n-1;i>=0;i--)printf("%c",a[i]);
-    printf("\n");
+    for(i=n-1;i>=0;i--)my_printf("%c",a[i]);
+    my_printf("\n");
     return 0;
 }

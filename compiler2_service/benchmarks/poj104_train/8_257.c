@@ -4,11 +4,11 @@ int n,m,a[100]={0},b[100]={0},c[200]={0};
 void duqu()
 {
 	int *p;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(p=a;p<a+m;p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 	for(p=b;p<b+n;p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 }
 void range(int a[],int b[],int m,int n)
 {
@@ -43,8 +43,8 @@ void show(int c[],int d)
 {
 	int *p;
 	for(p=c;p<c+d-1;p++)
-		printf("%d ",*p);
-	printf("%d",*p);
+		my_printf("%d ",*p);
+	my_printf("%d",*p);
 }
 int main_bench()
 {

@@ -33,12 +33,12 @@ int main_bench()
 		s1=s1+a[i];
 	s1=s1+max;
 	for(i=s1;i<s1+a[max];i++)
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	for(i=0;i<min;i++)
 		s2=s2+a[i];
 	s2=s2+min;
 	for(i=s2;i<s2+a[min];i++)
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	return 0;
 }

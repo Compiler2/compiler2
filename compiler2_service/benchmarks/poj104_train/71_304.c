@@ -3,12 +3,12 @@
 main_bench()
 {
 	int i,n,j,a[200],b[200],c[200],k,l,z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		l=0;
 		k=0;
-		scanf("%d%d%d",&a[i],&b[i],&c[i]);
+		my_scanf("%d%d%d",&a[i],&b[i],&c[i]);
 		if(a[i]%4==0)
 			k=1;
 		if(a[i]%400!=0&&a[i]%100==0)
@@ -34,8 +34,8 @@ main_bench()
 			if(j==11) l=l+30;
 		}
 		if(l%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }

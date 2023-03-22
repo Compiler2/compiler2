@@ -43,16 +43,16 @@ int main_bench(){
         n0++;
         for (int q=p-1;q>=j;q--){
         if (result[q]!=0){
-        printf("%d",result[j]);
+        my_printf("%d",result[j]);
         break;
         }
         }
     }
     else{
-    printf("%d",result[j]);
+    my_printf("%d",result[j]);
     }
     if(n0==p){
-    printf("%d",result[j]);
+    my_printf("%d",result[j]);
     }
     }
 return 0;

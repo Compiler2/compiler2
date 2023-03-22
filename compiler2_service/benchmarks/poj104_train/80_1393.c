@@ -61,8 +61,8 @@ int main_bench()
 	int year1 , month1 , day1 ;
 	int year2 , month2 , day2 ;
 	int result ;
-	scanf ("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_scanf ("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
 	result = delta (year1,month1,day1,year2,month2,day2);
-	printf ("%d",result);
+	my_printf ("%d",result);
 	return 0;
 }

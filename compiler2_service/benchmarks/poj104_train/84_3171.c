@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,x;
 	int first,second;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		if(i==0)
 		{
 			first=x;
@@ -40,7 +40,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",first);
-	printf("%d\n",second);
+	my_printf("%d\n",first);
+	my_printf("%d\n",second);
 	return 0;
 }

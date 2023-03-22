@@ -3,10 +3,10 @@
 int main_bench(){
 int N,i,k,e,p;
 k=0;
-scanf("%d",&N);
+my_scanf("%d",&N);
 int a[500],b[500];
 for(i=0;i<N;i++){
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 if(a[i]%2!=0){
 b[k]=a[i];
 k++;}}
@@ -17,8 +17,8 @@ e=b[p];
 b[p]=b[p+1];
 b[p+1]=e;}}}
 for(i=1;i<k;i++){
-printf("%d,",b[i]);}
-printf("%d",b[k]);
+my_printf("%d,",b[i]);}
+my_printf("%d",b[k]);
 return 0;
 }
 

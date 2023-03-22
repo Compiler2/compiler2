@@ -3,13 +3,13 @@
 
 int main_bench(){
     int n,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char ID[100][10];
     int nl[100];
     int i;
     char e[10];
     for(i=0;i<n;i++){
-                     scanf("%s %d",ID[i],&nl[i]);
+                     my_scanf("%s %d",ID[i],&nl[i]);
                      }
                      int m;
     for(k=1;k<=n;k++){
@@ -27,7 +27,7 @@ int main_bench(){
                     
                      }
     for(i=0;i<n;i++){           
-                     printf("%s\n",ID[i]);
+                     my_printf("%s\n",ID[i]);
                      }
                      
                    

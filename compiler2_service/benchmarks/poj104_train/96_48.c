@@ -4,7 +4,7 @@ int main_bench()
 {
 	char n[100]={0},s[100]={0};
 	int nn[100]={0},y=0,len,i;
-	scanf("%s",n);
+	my_scanf("%s",n);
 	len=strlen(n);
 	for(i=0;i<len;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 		nn[i+1]=nn[i+1]+10*y;
 	}
 	if(s[0]=='0'&&s[1]==0||s[0]=='0'&&s[1]=='0'&&s[2]==0)
-		printf("0");
+		my_printf("0");
 	else
 	{
 		if(s[1]!='0')
@@ -26,9 +26,9 @@ int main_bench()
 		i=2;
 		for(;i<len;i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
-	printf("\n");
-	printf("%d\n",y);
+	my_printf("\n");
+	my_printf("%d\n",y);
 }

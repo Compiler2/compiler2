@@ -3,7 +3,7 @@
 int main_bench()
 {
 	unsigned int y,m,d,i,n=0,temp,p;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	n+=(y-1)/4*(1*4+1)-(y-1)/100+(y-1)/400;
 	n+=(y-1)%4*1;
 	if(y%400==0||(y%100!=0&&y%4==0))
@@ -56,25 +56,25 @@ int main_bench()
 	switch(temp)
 	{
 	case 1:
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 		break;
 	case 2:
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 		break;
 	case 3:
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 		break;
 	case 4:
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 		break;
 	case 5:
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 		break;
 	case 6:
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 		break;
 	case 0:
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 		break;
 	}
 	return 0;

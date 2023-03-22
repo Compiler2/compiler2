@@ -20,9 +20,9 @@ void fun(int *p,int n)
 	for(;(*q)!=0;q++)
 	{
 		if(*q==-1000)
-		printf(",");
+		my_printf(",");
 		else
-		printf("%d",*q);
+		my_printf("%d",*q);
 	}
 				
 
@@ -35,9 +35,9 @@ int main_bench()
 	int a[300],*p=a;
 	int n,i;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	fun(p,n);
 }
 	

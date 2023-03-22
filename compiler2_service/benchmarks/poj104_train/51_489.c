@@ -6,9 +6,9 @@ int main_bench()
 	int n[505]={0};
 	int a,i,j,k,l,max=0,nu;
 	int ju=1;
-	scanf("%d",&nu);
+	my_scanf("%d",&nu);
 	getchar();
-	scanf("%s",s);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i<=l-nu;i++)
 	{
@@ -41,19 +41,19 @@ int main_bench()
 	}
 	if(max==1)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<=l-nu;i++)
 	{
 		if(n[i]==max)
 		{
 			for(j=i;j<=i+nu-1;j++)
 			{
-				printf("%c",s[j]);
+				my_printf("%c",s[j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

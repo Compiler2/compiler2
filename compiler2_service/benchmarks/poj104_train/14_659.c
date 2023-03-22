@@ -12,10 +12,10 @@ int main_bench()
 
 	int n,i;
 	s1.zf=s2.zf=s3.zf=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&s.num,&s.yw,&s.sx);
+		my_scanf("%d%d%d",&s.num,&s.yw,&s.sx);
 		s.zf=s.yw+s.sx;
 		if(s.zf>s1.zf)
 		{
@@ -35,9 +35,9 @@ int main_bench()
 
 	}
 	
-	printf("%d %d\n",s1.num,s1.zf);
-	printf("%d %d\n",s2.num,s2.zf);
-	printf("%d %d",s3.num,s3.zf);
+	my_printf("%d %d\n",s1.num,s1.zf);
+	my_printf("%d %d\n",s2.num,s2.zf);
+	my_printf("%d %d",s3.num,s3.zf);
 	
 	return 0;
 }

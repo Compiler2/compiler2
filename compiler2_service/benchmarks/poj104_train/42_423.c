@@ -7,12 +7,12 @@ int main_bench()
 	int NumToDelete;
 	int NumofDel = 0;
 	int i,j,k;
-	scanf("%d",&NumOfBF);
+	my_scanf("%d",&NumOfBF);
 	for(i = 0;i < NumOfBF;i++)
 	{
-			scanf("%d",&buffer[i]);
+			my_scanf("%d",&buffer[i]);
 	}
-	scanf("%d",&NumToDelete);
+	my_scanf("%d",&NumToDelete);
 	for(j = 0;j < NumOfBF - NumofDel;j++)
 	{
 		if(buffer[j] == NumToDelete)
@@ -25,11 +25,11 @@ int main_bench()
 		j = j - 1; 
 		}
 	}
-	printf("%d",buffer[0]);
+	my_printf("%d",buffer[0]);
 	for(j = 1;j < NumOfBF - NumofDel;j++)
 	{
-	printf(" %d",buffer[j]);
+	my_printf(" %d",buffer[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

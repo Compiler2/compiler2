@@ -3,11 +3,11 @@
 int main_bench(){
 	 char a[200][200];
 	 int f,i,j,t,q,sum=0;
-	 scanf("%d",&f);
+	 my_scanf("%d",&f);
 	 for(i=1;i<=f;i++){
-			 scanf("%s",a[i]);
+			 my_scanf("%s",a[i]);
 	 }
-	 scanf("%d",&t);
+	 my_scanf("%d",&t);
 	 for(q=1;q<t;q++){
 		 for(i=1;i<=f;i++){
 		    for(j=0;j<f;j++){
@@ -32,6 +32,6 @@ int main_bench(){
 			 if(a[i][j]=='@')sum++;
 		 }
 	 }
-	 printf("%d",sum);
+	 my_printf("%d",sum);
 	return 0;
 }

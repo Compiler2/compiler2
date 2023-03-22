@@ -6,7 +6,7 @@ int main_bench()
 	int n,i,j;
 	
 	char **lian, **hubu;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	lian = (char**)malloc(n*sizeof(char*));
 	hubu = (char**)malloc(n*sizeof(char*));
 	for(i=0; i<n; i++)
@@ -16,7 +16,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",lian[i]);
+		my_scanf("%s",lian[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -43,6 +43,6 @@ int main_bench()
 		hubu[i][j]='\0';
 	}
 	for(i=0; i<n; i++)
-		printf("%s\n",hubu[i]);
+		my_printf("%s\n",hubu[i]);
 	return 0;
 }

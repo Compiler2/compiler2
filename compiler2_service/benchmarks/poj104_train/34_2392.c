@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n==0)
-		printf("End");
+		my_printf("End");
 	else 
 	while (n!=1)
 	{
@@ -14,15 +14,15 @@ int main_bench()
 		if (n%2==0)
 		{
 		n=n/2;
-		printf ("%d/2=%d\n",n*2,n);
+		my_printf ("%d/2=%d\n",n*2,n);
 		}
 	else if (n%2!=0)
 	{
-		printf("%d*3+1=%d\n",n,n*3+1);
+		my_printf("%d*3+1=%d\n",n,n*3+1);
 		n=n*3+1;
 	}
 	}
-	printf("End");
+	my_printf("End");
 	return 0;
 
 

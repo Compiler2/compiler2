@@ -6,7 +6,7 @@ int main_bench()
 	int i,j=0,n,flag=0,max,min,s,t,q1;
 	char a[2000]={'\0'};
 	char b[200][24]={'\0'};
-    scanf("%d\n",&q1);
+    my_scanf("%d\n",&q1);
 	
 	gets(a);
 	n=strlen(a);
@@ -46,7 +46,7 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n%s\n",*(b+s),*(b+t));
+	my_printf("%s\n%s\n",*(b+s),*(b+t));
 
 
 	

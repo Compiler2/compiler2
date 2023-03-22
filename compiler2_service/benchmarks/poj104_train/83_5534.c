@@ -5,12 +5,12 @@ int main_bench()
 double GPA,a=0;
 int xf[10],fs[10];
 double jd[10];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
-	{scanf("%d",&(xf[i]));}
-printf("\n");
+	{my_scanf("%d",&(xf[i]));}
+my_printf("\n");
 for(j=0;j<n;j++)
-	{scanf("%d",&(fs[j]));}
+	{my_scanf("%d",&(fs[j]));}
 for(i=0;i<n;i++)
 {   if(fs[i]>=90)
 		{jd[i]=4.0;}
@@ -36,5 +36,5 @@ for(i=0;i<n;i++)
 	{a=a+(xf[i])*(jd[i]);
 	b=b+(xf[i]);}
 GPA=1.0*a/b;
-printf("%.2lf",GPA);
+my_printf("%.2lf",GPA);
 }

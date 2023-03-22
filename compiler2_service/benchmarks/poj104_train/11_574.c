@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,d;
-    scanf("%d %d %d",&a,&b,&c);
+    my_scanf("%d %d %d",&a,&b,&c);
 			switch(b)
 			{
 			case 1:
@@ -43,12 +43,12 @@ int main_bench()
 												case 12:
 													d=29+31*6+120+c;
 													break;
-                                                    printf("%d",d);
+                                                    my_printf("%d",d);
 													
 			}
 			if((a%4!=0||a%100==0&&a%400!=0)&&b>2)
 			d=d-1;
-			printf("%d",d);
+			my_printf("%d",d);
 		
 	return 0;
 }

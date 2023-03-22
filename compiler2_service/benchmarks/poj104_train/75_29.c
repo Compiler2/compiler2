@@ -7,17 +7,17 @@ int main_bench()
 	int ans[1000]={0};
 	do
 	{
-		scanf("%d",&enter[e]);
-		scanf("%c",&c);
+		my_scanf("%d",&enter[e]);
+		my_scanf("%c",&c);
 		e++;
 	}while(c==',');
 	do
 	{
-		scanf("%d",&leave[l]);
-		scanf("%c",&c);
+		my_scanf("%d",&leave[l]);
+		my_scanf("%c",&c);
 		l++;
 	}while(c==',');
-	printf("%d",l);
+	my_printf("%d",l);
 	int start=enter[0],end=leave[0];
 	for(j=1;j<l;j++)
 	{
@@ -40,6 +40,6 @@ int main_bench()
 		if(m<ans[j])
 			m=ans[j];
 	}
-	printf(" %d",m);
+	my_printf(" %d",m);
 }
 

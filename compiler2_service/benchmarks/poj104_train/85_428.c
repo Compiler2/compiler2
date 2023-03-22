@@ -4,16 +4,16 @@ int main_bench()
 {
 	int n,i,k,t=0;
 	char str[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(str[i][0]>='0'&&str[i][0]<='9')
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		int m=strlen(str[i]);
@@ -27,12 +27,12 @@ int main_bench()
 			}
 			else
 			{
-				printf("no\n");
+				my_printf("no\n");
 				break;
 			}
 			if(t==m)
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 				break;
 			}
 		}

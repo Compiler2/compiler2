@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int a[1000][1000]={{0},{0}},i,j,n,m=0,p=0,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{ 
-			scanf("%d ",&a[i-1][j-1]);
+			my_scanf("%d ",&a[i-1][j-1]);
 		}
 
-		printf("\n");
+		my_printf("\n");
 	}
 	for(i=1;m==0;i++)
 	{
@@ -30,6 +30,6 @@ int main_bench()
          }   
 	}
 	q=(p-2)*(m-2);
-	printf("%d\n",q);
+	my_printf("%d\n",q);
 	return 0;
 }

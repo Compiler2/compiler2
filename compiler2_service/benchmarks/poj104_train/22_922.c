@@ -9,11 +9,11 @@ int main_bench()
  for(i=0;i<=300;i++)
  {
  a=a+1;
- scanf("%d%c",&m[i],&n[i]);
+ my_scanf("%d%c",&m[i],&n[i]);
  if(n[i]=='\n')
  break;
  }
- if(a==1) printf("No");
+ if(a==1) my_printf("No");
  else 
  {
   n1=0;
@@ -23,8 +23,8 @@ int main_bench()
    if(m[i]>n1) {b=n1;n1=m[i];m[i]=b;}
    if((m[i]>n2)&&(m[i]!=n1)) {n2=m[i];}
   } 
- if(n2==0) {printf("No");}
- else {printf("%d",n2);}
+ if(n2==0) {my_printf("No");}
+ else {my_printf("%d",n2);}
  }
  return 0;
 }

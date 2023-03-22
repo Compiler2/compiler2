@@ -24,7 +24,7 @@ int main_bench()
 			i++;
 	}
 	for(t=0;t<j;t++)
-		printf("%d,",counter[t]);
-	printf("%d\n",counter[j]);
+		my_printf("%d,",counter[t]);
+	my_printf("%d\n",counter[j]);
 	return 0;
 }

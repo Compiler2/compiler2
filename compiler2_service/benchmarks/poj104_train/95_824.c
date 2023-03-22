@@ -44,7 +44,7 @@ int main_bench()
 	}
     i++;
 	}
-	printf("%c",x);
+	my_printf("%c",x);
 
 
 	return 0;

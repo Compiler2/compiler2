@@ -17,11 +17,11 @@ int main_bench()
 {
 	char s[1000];
 	int n,i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(s);
-		printf("%d\n",why(s));
+		my_printf("%d\n",why(s));
 	}
 	return 0;
 }

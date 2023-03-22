@@ -4,12 +4,12 @@ int main_bench()
 {
 	int t,i,j;
 	char m[100],n[100];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	int max=0,min=100;
 	for(i=0;i<t;i++)
 	{
 		char a[100];
-		scanf("%s",a);
+		my_scanf("%s",a);
 		int p;
 		p=strlen(a);
 		if(p>max)
@@ -26,9 +26,9 @@ int main_bench()
 		}
 	}
 	for(i=0;i<max;i++)
-		printf("%c",m[i]);
-		printf("\n");
+		my_printf("%c",m[i]);
+		my_printf("\n");
 	for(i=0;i<min;i++)
-		printf("%c",n[i]);
+		my_printf("%c",n[i]);
 	return 0;
 }

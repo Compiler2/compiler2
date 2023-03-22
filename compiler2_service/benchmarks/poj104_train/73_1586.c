@@ -14,7 +14,7 @@ for(i=0;i<5;i++)
 { 
 for(j=0;j<5;j++)
 {
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 }
 }
 
@@ -50,14 +50,14 @@ break;
 }
 if(m==0)
 {  
-printf("%d %d %d\n",x1+1,x2+1,a[x1][x2]); 
+my_printf("%d %d %d\n",x1+1,x2+1,a[x1][x2]); 
 c++;
 }
 }
 
 if(c==0)
 {  
-printf("not found");
+my_printf("not found");
 }
 
 return 0;

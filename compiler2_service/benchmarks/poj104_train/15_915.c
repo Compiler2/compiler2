@@ -8,10 +8,10 @@ int main_bench()
     int n;
     int i=0,j=0,leftx,lefty,rightx,righty;
     int flag=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
         for(j=0;j<n;j++)
-            scanf("%d",&p[i][j]);
+            my_scanf("%d",&p[i][j]);
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
@@ -32,7 +32,7 @@ int main_bench()
         if(flag==0)
             break;
     }
-    printf("%d\n",(rightx-leftx-1)*(righty-lefty-1));
+    my_printf("%d\n",(rightx-leftx-1)*(righty-lefty-1));
     getchar();
     getchar();
     return 0;

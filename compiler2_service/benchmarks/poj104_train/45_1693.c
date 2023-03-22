@@ -3,7 +3,7 @@
 int main_bench(){
 	char s[50],w[50];
 	int i,j,k,m;
-    scanf("%s%s",s,w);
+    my_scanf("%s%s",s,w);
     m=strlen(s)+1;
 	char *n;
 	n=(char*)malloc(sizeof(char)*m);
@@ -15,7 +15,7 @@ int main_bench(){
 			
 			int result=strcmp(n,s);	
 			if(result==0){
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			break;	
 			}
 		}

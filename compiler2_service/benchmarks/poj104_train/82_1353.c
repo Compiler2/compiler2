@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int i,n,t=0,b=0,max[110],min[110];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&max[i],&min[i]);
+		my_scanf("%d%d",&max[i],&min[i]);
 	}
 	if(max[0]>=90&&max[0]<=140&&min[0]>=60&&min[0]<=90){
 		t++;
@@ -29,6 +29,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }

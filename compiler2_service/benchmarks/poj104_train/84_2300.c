@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100];
 	for (int i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int maxIndex, e;
 for(int k  =   1  ;   k <=  n; k++){
@@ -23,7 +23,7 @@ for(int k  =   1  ;   k <=  n; k++){
 		sz[n-k] =  e;
 	}
 }
- printf("%d\n",sz[n-1]);
-		printf("%d\n",sz[n-2]);
+ my_printf("%d\n",sz[n-1]);
+		my_printf("%d\n",sz[n-2]);
 	return 0;
 }

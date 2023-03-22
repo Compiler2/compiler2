@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,j,n1,n2,n3,n4,sum;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 	for(i=0;i<n;i++)
 	{	
 		for(j=0;j<n;j++)
@@ -22,7 +22,7 @@ int main_bench()
 		}
 	}	
 	sum=(n3-n1+1)*(n4-n2+1)-2*(n3-n1+1)-2*(n4-n2+1-2);
-        printf("%d",sum);
+        my_printf("%d",sum);
 		
 	return 0;
 }

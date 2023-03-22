@@ -17,6 +17,6 @@ if(a[i]>b[i])
 else if(a[i]<b[i])
 {d='<';break;}
 }
-printf("%c",d);
+my_printf("%c",d);
 return 0;
 }

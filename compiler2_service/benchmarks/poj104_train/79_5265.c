@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,m,i,j,k,l;
 	int a[400]={0};
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
                   
 	while(n>0)
 	{i=1;
@@ -31,7 +31,7 @@ j++;
 		k++;
 		}
 		for(l=1;l<=n;l++)
-			if(a[l]==0)printf("%d\n",l);
-	scanf("%d%d",&n,&m);	
+			if(a[l]==0)my_printf("%d\n",l);
+	my_scanf("%d%d",&n,&m);	
 	}
 }

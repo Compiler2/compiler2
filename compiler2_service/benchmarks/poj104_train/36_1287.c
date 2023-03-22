@@ -6,14 +6,14 @@ int main_bench()
 	int i,j,k;
 	int a,b,c;
 
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	
 	a=strlen(str1);
 	b=strlen(str2);
 
 	if(a!=b)
-		printf("NO\n");
+		my_printf("NO\n");
 	else if(a==b)
 	{
 		for(i=0;i<a-1;i++)
@@ -46,11 +46,11 @@ int main_bench()
 		{
 			if(str1[i]!=str2[i])
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				break;
 			}
 		}
 		if(i==a-1)
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 }

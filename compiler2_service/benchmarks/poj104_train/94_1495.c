@@ -7,10 +7,10 @@ int main_bench()
 	int b[500];
 	int t;
 	int count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 			b[i]=0;
 	}
 	
@@ -38,10 +38,10 @@ k=0;
  {
 	 if (k==0)
 	 {
-		 printf("%d",b[k]);
+		 my_printf("%d",b[k]);
 	 }
 	 else
-	 printf("%c%d",',',b[k]);
+	 my_printf("%c%d",',',b[k]);
  }
 	
 

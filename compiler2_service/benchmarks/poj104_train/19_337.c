@@ -24,11 +24,11 @@ main_bench()
 	for(j=0;j<=n-1;j++)
 	{
 		if(j)
-			printf(" ");
+			my_printf(" ");
 		if(strcmp(b[j],c)==0)
-			printf("%s",d);
+			my_printf("%s",d);
 		else
-			printf("%s",b[j]);
+			my_printf("%s",b[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

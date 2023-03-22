@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a,b[300]={0},c,d,e,f=0,h,i;
 	float g;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(c=0;c<a;c++)
-		scanf("%d",&b[c]);
+		my_scanf("%d",&b[c]);
 	for(c=0;c<a;c++)
 	{
 		for(d=0;d<a-c;d++)
@@ -23,9 +23,9 @@ int main_bench()
         f=f+b[i];
 	g=(float)f/a;
 	if(fabs(b[1]-g)==fabs(b[a]-g))
-		printf("%d,%d",b[1],b[a]);
+		my_printf("%d,%d",b[1],b[a]);
     else if(fabs(b[1]-g)>fabs(b[a]-g))
-		printf("%d",b[1]);
+		my_printf("%d",b[1]);
     else
-		printf("%d",b[a]);
+		my_printf("%d",b[a]);
 }

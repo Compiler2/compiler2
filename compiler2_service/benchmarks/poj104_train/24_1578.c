@@ -7,7 +7,7 @@ int main_bench(){
 	char longest[50];
 	int slen=1000,llen=0,i,index=0,len,charlen;
 	while(1){
-		scanf("%s%c",newWord,&ch);
+		my_scanf("%s%c",newWord,&ch);
 		len=strlen(newWord);
 		if(len>llen)
 			{
@@ -22,7 +22,7 @@ int main_bench(){
 		if(ch=='\n')
 			break;
 	}
-	printf("%s\n",longest);
-	printf("%s\n",shortest);
+	my_printf("%s\n",longest);
+	my_printf("%s\n",shortest);
 	return 0;
 }

@@ -4,11 +4,11 @@ int main_bench()
 {void pai(char s[],int n);
  char a[100],b[100];
  int c,d,e=0,i;
- scanf("%s %s",a,b);
+ my_scanf("%s %s",a,b);
  c=strlen(a);
  d=strlen(b);
  if(c!=d)
-   printf("NO");
+   my_printf("NO");
  else
    {pai(a,c);
    	pai(b,c);
@@ -19,9 +19,9 @@ int main_bench()
    	  	 }
    	  }
    	if(e==1)
-   	  printf("NO");
+   	  my_printf("NO");
    	else
-   	  printf("YES");
+   	  my_printf("YES");
    }
     
 }

@@ -7,9 +7,9 @@ int main_bench()
 {
 	int m=0,i=0,a[100],b[100],j=0,sz[100];
 	double sz1[100],sum[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-	scanf("%d",&(sz[i]));
+	my_scanf("%d",&(sz[i]));
 	}
 
 	for(i=0;i<m;i++){
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	}
 	for(i=0;i<m;i++){
-	printf("%.3lf\n",sum[i]);
+	my_printf("%.3lf\n",sum[i]);
 	}
 	return 0;
 }

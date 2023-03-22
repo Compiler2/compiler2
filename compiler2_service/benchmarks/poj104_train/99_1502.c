@@ -5,9 +5,9 @@ int main_bench(){
 	int i;
 	int a;
 	double s=0,d=0,f=0,g=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(0<=a&&a<=18){
 			s=s+1;
 		}else if(19<=a&&a<=35){
@@ -22,10 +22,10 @@ int main_bench(){
 	d=100*d;
 	f=100*f;
 	g=100*g;
-		printf("1-18: %0.2lf%%\n",s/n);
-        printf("19-35: %0.2lf%%\n",d/n);
-        printf("36-60: %0.2lf%%\n",f/n);
-        printf("60??: %0.2lf%%\n",g/n);
+		my_printf("1-18: %0.2lf%%\n",s/n);
+        my_printf("19-35: %0.2lf%%\n",d/n);
+        my_printf("36-60: %0.2lf%%\n",f/n);
+        my_printf("60??: %0.2lf%%\n",g/n);
 		return 0;
 	}
           

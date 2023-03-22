@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,sum=12,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
         for(i=1;i<=12;i++){
 		if(i==1)
 			sum+=0;
@@ -17,7 +17,7 @@ int main_bench()
 		if(b>7)
 			b=b-7;
 		if(b==5)
-        printf("%d\n",i);
+        my_printf("%d\n",i);
 	}
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int a,b,len1,len2,i,m=0,x=0;
 	long int t=0,r;
 	char n[20],s[50]={'\0'};
-	scanf("%d %s %d",&a,n,&b);
+	my_scanf("%d %s %d",&a,n,&b);
     len1=strlen(n);
 	for(i=len1-1;i>=0;i--)
 	{
@@ -102,7 +102,7 @@ int main_bench()
 	len2=strlen(s);
 	for(i=len2-1;i>=0;i--)
 	{
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
 	return 0;
 }

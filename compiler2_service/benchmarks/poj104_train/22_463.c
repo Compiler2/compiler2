@@ -9,13 +9,13 @@ int main_bench()
 		a[i]=0;
 	for(i=0;i<300;i++)
 		b[i]='\0';
-	scanf("%d", &a[0]);
+	my_scanf("%d", &a[0]);
 	for(i=0;i<300;i++)
 	{	
-		scanf("%c", &b[i]);
+		my_scanf("%c", &b[i]);
 		if(b[i]!='\n')
 		{
-		scanf("%d", &a[i+1]);
+		my_scanf("%d", &a[i+1]);
 		}
 		else
 		{
@@ -47,12 +47,12 @@ int main_bench()
 			}
 		}		
 		if(a[1]!=-1)
-	    	printf("%d\n", a[1]);
+	    	my_printf("%d\n", a[1]);
 		else
-			printf("No\n");
+			my_printf("No\n");
 	}
 	else
-		printf("No\n");
+		my_printf("No\n");
 
 	return 0;
 }

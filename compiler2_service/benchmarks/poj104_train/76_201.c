@@ -3,7 +3,7 @@
 int main_bench(){
 int n,i,j,min,max,have_a_gap=0; 
 
-scanf("%d",&n);     
+my_scanf("%d",&n);     
 
 struct Space{
 int left,right;
@@ -11,7 +11,7 @@ int left,right;
 
 for(i=0;i<n;i++)
 {
-    scanf("%d %d",&spaces[i].left,&spaces[i].right);    
+    my_scanf("%d %d",&spaces[i].left,&spaces[i].right);    
 }
 
 for(i=0;i<n-1;i++)
@@ -36,7 +36,7 @@ for(i=0;i<n-1;i++)
     if(max<(spaces[i+1].left))    
     {
         have_a_gap=1;
-        printf("no");
+        my_printf("no");
         break;
     }
     else                            
@@ -45,7 +45,7 @@ for(i=0;i<n-1;i++)
     }
 }
 
-if(have_a_gap==0) printf("%d %d",min,max);
+if(have_a_gap==0) my_printf("%d %d",min,max);
 
 return 0;
 }

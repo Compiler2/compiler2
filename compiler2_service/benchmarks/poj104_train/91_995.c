@@ -9,5 +9,5 @@ int main_bench()
 	for(i=0;i<=l-2;i++)
 		s2[i]=s1[i]+s1[i+1];
 	s2[l-1]=s1[0]+s1[l-1];
-	printf("%s",s2);
+	my_printf("%s",s2);
 }

@@ -3,12 +3,12 @@
 int main_bench(){
 int n,i,k;
 k=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n];
 int b[n];
 for(i=0;i<n;i++){
-scanf("%d",&(a[i]));
-scanf("%d",&(b[i]));
+my_scanf("%d",&(a[i]));
+my_scanf("%d",&(b[i]));
 }
 int min,max;
 min=a[0];
@@ -31,11 +31,11 @@ k=1;
 }
 }
 if(k==0){
-printf("no");
+my_printf("no");
 break;
 }
 if(h==max){
-printf("%d %d",min,max);
+my_printf("%d %d",min,max);
 }
 k=0;
 }

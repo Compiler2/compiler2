@@ -7,7 +7,7 @@ int main_bench()
 	int i,court;
 	p=first;
 	q=second;
-	scanf("%s %s",p,q);
+	my_scanf("%s %s",p,q);
 	for(i=0;*q!='\0';i++,q++)
 	{
 		if(*q==*p)
@@ -20,6 +20,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d\n",court-strlen(first)+1);
+	my_printf("%d\n",court-strlen(first)+1);
 	return 0;
 }

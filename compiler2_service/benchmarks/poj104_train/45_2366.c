@@ -6,7 +6,7 @@ int main_bench(){
     char lon [51];
     char tem [51];
     int a, n, i, j;
-    scanf ("%s %s", sho, lon);
+    my_scanf ("%s %s", sho, lon);
     
     a=strlen(sho);
     n=strlen(lon);
@@ -23,7 +23,7 @@ int main_bench(){
                                                         }                                                    
         }    
         
-    printf ("%d", i);
+    my_printf ("%d", i);
 
     return 0;
     }

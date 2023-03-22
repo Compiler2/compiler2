@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[99999],b[99999],c[99999],d[99999];
 	int i,n,sum,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a[i],&b[i],&c[i]);
+		my_scanf("%d%d%d",&a[i],&b[i],&c[i]);
 		d[i]=c[i]+b[i];
 	}
 	for (i=0;i<n;i++)
@@ -44,6 +44,6 @@ int main_bench()
 			a[i+1]=s;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d",a[n],d[n],a[n-1],d[n-1],a[n-2],d[n-2]);
+	my_printf("%d %d\n%d %d\n%d %d",a[n],d[n],a[n-1],d[n-1],a[n-2],d[n-2]);
 	return 0;
 }

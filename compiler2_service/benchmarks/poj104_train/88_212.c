@@ -10,13 +10,13 @@ int main_bench()
 	{
 		if(isdigit(*p)==0)
 		{
-			if(num==0)printf("\n");
+			if(num==0)my_printf("\n");
 			num++;
 		}
 		else
 		{
 			num=0;
-			printf("%c",*p);
+			my_printf("%c",*p);
 		}
 	}
 	free(org);

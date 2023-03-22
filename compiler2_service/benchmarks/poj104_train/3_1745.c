@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,k,i;
 	int *a;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	a=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -16,12 +16,12 @@ int main_bench()
 		{
 			if(a[i]+a[i+j]==k)
 			{
-				printf("yes");
+				my_printf("yes");
 				return 0;
 			}
 		}
 	}
-	printf("no");
+	my_printf("no");
 return 0;
 }
 

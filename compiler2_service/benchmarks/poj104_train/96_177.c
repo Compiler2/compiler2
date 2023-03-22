@@ -9,9 +9,9 @@ int main_bench()
    b=(beichushu[0]-'0')%13;
    l=strlen(beichushu);
    if(l==1)
-     printf("%d\n%d",(beichushu[0]-'0')/13,(beichushu[0]-'0')%13);
+     my_printf("%d\n%d",(beichushu[0]-'0')/13,(beichushu[0]-'0')%13);
    if(l==2)
-     printf("%d\n%d",((beichushu[0]-'0')*10+beichushu[1]-'0')/13,((beichushu[0]-'0')*10+beichushu[1]-'0')%13);
+     my_printf("%d\n%d",((beichushu[0]-'0')*10+beichushu[1]-'0')/13,((beichushu[0]-'0')*10+beichushu[1]-'0')%13);
    if(l>2)
     {
        for(i=0;beichushu[i+1]!='\0';i++)
@@ -22,9 +22,9 @@ int main_bench()
         if(a==0&&x==1)
           continue;
         else
-          printf("%d",a);                                
+          my_printf("%d",a);                                
       } 
-        printf("\n%d",b%13); 
+        my_printf("\n%d",b%13); 
     }
    getchar();
    getchar();  

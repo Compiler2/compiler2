@@ -49,8 +49,8 @@ int main_bench()
 }
 	
 	if (flag==1)
-	printf ("%s",result);
+	my_printf ("%s",result);
 	if (flag==0)
-		printf ("%s",string);
+		my_printf ("%s",string);
 	return 0;
 }

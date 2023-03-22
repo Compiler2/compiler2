@@ -22,9 +22,9 @@ int main_bench()
    }
   for(i=1;i<g;i++)
   {
-   printf("%d,",l[i]);
+   my_printf("%d,",l[i]);
   }
-  printf("%d",l[g]);
+  my_printf("%d",l[g]);
 
 
    return 0;

@@ -8,9 +8,9 @@ main_bench()
     int i;
     for(i=0;i<=5;i++)
     {
-    scanf("%d",&X);
+    my_scanf("%d",&X);
     R=reverse(X);
-    printf("%d\n",R);
+    my_printf("%d\n",R);
     }
 }      
 

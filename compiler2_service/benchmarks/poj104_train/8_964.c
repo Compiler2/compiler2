@@ -7,7 +7,7 @@ int main_bench()
 	void hb(int a[100],int b[100],int c[200],int x,int y);
 	void sc(int a[200],int x);
 	int a[100],b[100],c[200],x,y;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	sr(a,b,x,y);
 	px(a,x);
 	px(b,y);
@@ -20,11 +20,11 @@ void sr(int a[100],int b[100],int x,int y)
 	int i;
 	for(i=0;i<x;i++)
 	{
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<y;i++)
 	{
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 	}
 }
 void px(int a[100],int x)
@@ -60,8 +60,8 @@ void sc(int c[200],int x)
 	for(i=0;i<x;i++)
 	{
 		if(i==0)
-			printf("%d",c[i]);
+			my_printf("%d",c[i]);
 		else
-			printf(" %d",c[i]);
+			my_printf(" %d",c[i]);
 	}
 }

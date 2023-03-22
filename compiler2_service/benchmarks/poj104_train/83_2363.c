@@ -23,20 +23,20 @@ return f;
 int main_bench()
 {
 int i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d",&g[i]);
+my_scanf("%d",&g[i]);
 s+=g[i];
 }
 for(i=0;i<n;i++)
 {
-scanf("%d",&p[i]);
+my_scanf("%d",&p[i]);
 }
 for(i=0;i<n;i++)
 {
 grade+=gpa(p[i])*g[i];
 }
-printf("%.2f\n",grade/s);
+my_printf("%.2f\n",grade/s);
 return 0;
 }

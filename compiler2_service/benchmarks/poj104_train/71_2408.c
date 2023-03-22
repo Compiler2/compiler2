@@ -24,10 +24,10 @@ int main_bench()
 {
 int a,b,c,s[1000],p=0,q=0;
 int n,j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(j=0;j<n;j++)
 {
-scanf("%d%d%d",&a,&b,&c);
+my_scanf("%d%d%d",&a,&b,&c);
 		p=day(a,b);
 		q=day(a,c);
 s[j]=(q-p)%7;
@@ -35,9 +35,9 @@ s[j]=(q-p)%7;
 for(j=0;j<n;j++)
 {
 if(s[j]==0)
-printf("YES\n");
+my_printf("YES\n");
 else
-printf("NO\n");
+my_printf("NO\n");
 }
 return 0;
 }

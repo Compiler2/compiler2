@@ -3,32 +3,32 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
 		char line[256];
-		scanf("%s",&line);
+		my_scanf("%s",&line);
 		for(int j=0;j<256;j++)
 		{
 			if(line[j]=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			else if(line[j]=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
 			else if(line[j]=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}
 			else if(line[j]=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
 			else
 			{
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 		}

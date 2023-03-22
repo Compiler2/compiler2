@@ -2,16 +2,16 @@
 
 int main_bench()
 {	int m,n,k,i,j,time,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{	scanf("%d",&m);
+	{	my_scanf("%d",&m);
 		time=0;
 	    sum=0;
 	    if(m==0)
-                printf("60\n");
+                my_printf("60\n");
         else
        {	 for(j=1;j<=m;j++)
-        	{ 	scanf("%d",&k);
+        	{ 	my_scanf("%d",&k);
 				if((k+3*j)>60&&(k-sum>=60-time))  
                     continue;
             	else if(time>60)
@@ -22,7 +22,7 @@ int main_bench()
         	}
     	if(time<60)
             sum+=60-time;
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
        }
 	}
 	return 0;

@@ -6,7 +6,7 @@ int main_bench()
 {
 	int t,k,i,j,n,p,flag=0;
 	char a[100];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	for(k=1;k<=t;k++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 				}
 				if(j==n) 
 				{
-					printf("%c\n",a[i]);
+					my_printf("%c\n",a[i]);
 					flag=1;
 					i=n;
 				}
@@ -38,7 +38,7 @@ int main_bench()
 				}
 				if(j==-1) 
 				{
-					printf("%c\n",a[i]);
+					my_printf("%c\n",a[i]);
 					flag=1;
 					i=n;
 				}
@@ -58,7 +58,7 @@ int main_bench()
 					}
 					if(p==-1) 
 					{
-						printf("%c\n",a[i]);
+						my_printf("%c\n",a[i]);
 						flag=1;
 						i=n;
 					}
@@ -67,7 +67,7 @@ int main_bench()
 
 			
 		}
-		if(flag==0) printf("no\n");
+		if(flag==0) my_printf("no\n");
 	}
 
 

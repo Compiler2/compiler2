@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,sum=0,a[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum += a[i];
 	}
 	float aver;
@@ -47,17 +47,17 @@ int main_bench()
 	}
 	if(q==0)
 	{
-		printf("%d",a[p]);
+		my_printf("%d",a[p]);
 	}
 	if(q!=0)
 	{
 		if(a[p]>a[q])
 		{
-			printf("%d,%d",a[q],a[p]);
+			my_printf("%d,%d",a[q],a[p]);
 		}
 		else
 		{
-			printf("%d,%d",a[p],a[q]);
+			my_printf("%d,%d",a[p],a[q]);
 		}
 	}
 

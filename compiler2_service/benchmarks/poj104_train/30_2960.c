@@ -11,10 +11,10 @@ int xiangguan(int n)
 
 int main_bench()
 {int n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int i,sum=0;
  for(i=1;i<=n;i++)
  if(xiangguan(i)) 
  sum+=i*i;
- printf("%d",sum);
+ my_printf("%d",sum);
 }

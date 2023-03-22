@@ -19,7 +19,7 @@ int main_bench()
 			*(sub+sublen)='\0';
 			strcpy(term,sub);
 			if(strcmp(sub,reverse(term))==0)
-				printf("%s\n", sub);
+				my_printf("%s\n", sub);
 		}
 	}
 	return 0;

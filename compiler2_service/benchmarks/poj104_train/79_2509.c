@@ -5,7 +5,7 @@ int main_bench()
 	int n,m,i;
 	while(1)
 	{
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n==0) break;
 		int a[300];
 		for(i=0;i<n;i++)
@@ -25,7 +25,7 @@ int main_bench()
 		}
 		for(j=0;j<n;j++)
 		{
-			if(a[j]==1) {printf("%d\n",j+1);break;}
+			if(a[j]==1) {my_printf("%d\n",j+1);break;}
 		}
 	}
 }

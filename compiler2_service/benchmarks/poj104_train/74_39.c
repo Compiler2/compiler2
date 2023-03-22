@@ -19,14 +19,14 @@ if(t==i/2-1) return 1;
 }
 int main_bench()
 {int m,n,i,k=0;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 for(i=m;i<=n;i++)
 {if(f(i)&&g(i))
 	{k++;
-	if(k==1)printf("%d",i);
-	else printf(",%d",i);
+	if(k==1)my_printf("%d",i);
+	else my_printf(",%d",i);
 	}
 }
-if(k==0)printf("no\n");
-else printf("\n");
+if(k==0)my_printf("no\n");
+else my_printf("\n");
 }

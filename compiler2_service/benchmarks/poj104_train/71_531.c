@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,temp,a[200],b[200],c[200],d[13]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int cha=0,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-                  	scanf("%d%d%d",&a[i],&b[i],&c[i]);
+                  	my_scanf("%d%d%d",&a[i],&b[i],&c[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -22,17 +22,17 @@ int main_bench()
 			{cha=cha+d[j-1];}
                             d[1]=d[1]-1;
 			if(cha%7!=0)
-				printf("NO\n");
+				my_printf("NO\n");
 			else
-				printf("YES\n");
+				my_printf("YES\n");
 		}
 		else{
 			for(j=b[i];j<c[i];j++)
 			{cha=cha+d[j-1];}
 			if(cha%7!=0)
-				printf("NO\n");
+				my_printf("NO\n");
 			else
-				printf("YES\n");
+				my_printf("YES\n");
 		}
 		cha=0;
 	}

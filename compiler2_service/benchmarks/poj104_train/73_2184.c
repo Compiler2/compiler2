@@ -6,7 +6,7 @@ int main_bench()
 	int i,j;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	int row,col,max;
 	for(i=0;i<5;i++)
 	{
@@ -24,10 +24,10 @@ int main_bench()
 		}
 		if(j==5)
 		{
-			printf("%d %d %d",row+1,col+1,max);
+			my_printf("%d %d %d",row+1,col+1,max);
 			return 0;
 		}
 	}
-	printf("not found\n");
+	my_printf("not found\n");
 	return 0;
 }

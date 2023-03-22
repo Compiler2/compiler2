@@ -4,8 +4,8 @@ int main_bench(){
 	double k,x;
 	int l,m,i,a=0,t=0;
 	char st1[501],st2[501];
-	scanf("%lf",&k);
-	scanf("\n");
+	my_scanf("%lf",&k);
+	my_scanf("\n");
 	gets(st1);
 	gets(st2);
 	l=strlen(st1);
@@ -24,11 +24,11 @@ int main_bench(){
 	}
 	x=1.0*a/(l-1);
 	if(t==1){
-		printf("error");
+		my_printf("error");
 		}else if(x<=k){
-		printf("no");
+		my_printf("no");
 	}else{
-	printf("yes");
+	my_printf("yes");
 	}
 	return 0;
 }

@@ -6,18 +6,18 @@ int main_bench()
 	int i,k;
 	for(i=0;i<5;i++){
 		for(k=0;k<5;k++){
-			scanf("%d",&shuzu[i][k]);
+			my_scanf("%d",&shuzu[i][k]);
 		}
 	}
     int a,n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(n<5&&m<5){
         a=1;
 	}else{
 		a=0;
 	}
 	if(a==0){
-		printf("error");
+		my_printf("error");
 	}
 	if(a==1){
 		int shu[5];
@@ -28,10 +28,10 @@ int main_bench()
 		}
 	    for(i=0;i<5;i++){
 		    for(k=0;k<4;k++){
-			    printf("%d ",shuzu[i][k]);
+			    my_printf("%d ",shuzu[i][k]);
 			}
 	     	if(k==4){
-			    printf("%d\n",shuzu[i][4]);
+			    my_printf("%d\n",shuzu[i][4]);
 			}
 		}
 	}

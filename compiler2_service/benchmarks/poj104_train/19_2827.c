@@ -25,11 +25,11 @@ int main_bench()
 			temp[k]='\0';
 			if(strcmp(temp,in)==0)
 			{
-				printf("%s ",out);
+				my_printf("%s ",out);
 			}
 			else
 			{
-				printf("%s ",temp);
+				my_printf("%s ",temp);
 			}
 			k=0;
 		}
@@ -39,11 +39,11 @@ int main_bench()
 			temp[k+1]='\0';
 			if(strcmp(temp,in)==0)
 			{
-				printf("%s\n",out);
+				my_printf("%s\n",out);
 			}
 			else
 			{
-				printf("%s\n",temp);
+				my_printf("%s\n",temp);
 			}
 		}
 	}

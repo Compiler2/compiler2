@@ -5,31 +5,31 @@ int isRunNian(int year);
 int main_bench()
 {
     int year2,month2,day2,q,w;
-    scanf("%d%d%d",&year2,&month2,&day2);
+    my_scanf("%d%d%d",&year2,&month2,&day2);
 	w = (int)(year2-1) + (int)((year2-1)/4) - (int)((year2-1)/100) + (int)((year2-1)/400) + DiJiTian(year2,month2,day2);
 	q=w%7;
 	 switch (q)
 	 {
 	 case 1:
-		 printf("Mon.");
+		 my_printf("Mon.");
 		 break;
 	 case 2:
-		 printf("Tue.");
+		 my_printf("Tue.");
 		 break;
 	 case 3:
-		 printf("Wed.");
+		 my_printf("Wed.");
 		 break;
 	 case 4:
-		 printf("Thu.");
+		 my_printf("Thu.");
 		 break;
 	 case 5:
-		 printf("Fri.");
+		 my_printf("Fri.");
 		 break;
 	 case 6:
-		 printf("Sat.");
+		 my_printf("Sat.");
 		 break;
 	 case 0:
-		 printf("Sun.");
+		 my_printf("Sun.");
 	 }
      return 0;
      }    

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int m,i,j,n,x,y,temp;
 	double sum,a,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		sum=0.0;
 		x=1,y=2;
 		for(j=1;j<=n;j++){
@@ -15,7 +15,7 @@ int main_bench()
 			x=y;
 			y=x+temp;
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

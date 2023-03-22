@@ -9,11 +9,11 @@ int main_bench()
     
 	
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%s",a);
-		scanf("%s",b);
+		my_scanf("%s",a);
+		my_scanf("%s",b);
 		la=strlen(a);
 		lb=strlen(b);
 		for(i=0;i<lb;i++)
@@ -27,6 +27,6 @@ int main_bench()
 			}
 			
 		}
-	printf("%s\n",a);	
+	my_printf("%s\n",a);	
 	}
 }

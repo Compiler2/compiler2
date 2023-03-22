@@ -7,12 +7,12 @@ int main_bench()
     int a[100], num;
     int i, j;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%d", &num);
+        my_scanf("%d", &num);
         for (j=0; j<num; j++)
-            scanf("%d", &a[j]);
-        printf("%d\n", comp(a, num));
+            my_scanf("%d", &a[j]);
+        my_printf("%d\n", comp(a, num));
     }
 
     return 0;

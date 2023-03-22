@@ -2,28 +2,28 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char sr[n][256];
     for(int i=0;i<n;i++){
-        scanf("%s",sr[i]);
+        my_scanf("%s",sr[i]);
     }
     for(int i=0;i<n;i++){
         int m=strlen(sr[i]);
         for(int j=0;j<m;j++){
             if(sr[i][j]=='T'){
-                printf("A");
+                my_printf("A");
             }
             if(sr[i][j]=='A'){
-                printf("T");
+                my_printf("T");
             }
             if(sr[i][j]=='C'){
-                printf("G");
+                my_printf("G");
             }
             if(sr[i][j]=='G'){
-                printf("C");
+                my_printf("C");
             }
             if(j==m-1){
-                printf("\n");
+                my_printf("\n");
             }
         }
     }

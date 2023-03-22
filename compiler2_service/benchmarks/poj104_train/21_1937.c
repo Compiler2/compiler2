@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[301],i,j,n,sum=0,max,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	for(i=0;i<n-1;i++)
@@ -20,11 +20,11 @@ int main_bench()
 			}
 	}
 	if((a[0]+a[n-1])*n==sum*2)
-		printf("%d,%d\n",a[0],a[n-1]);
+		my_printf("%d,%d\n",a[0],a[n-1]);
 	else if((a[0]+a[n-1])*n<sum*2)
-		printf("%d\n",a[0]);
+		my_printf("%d\n",a[0]);
 	else if((a[0]+a[n-1])*n>sum*2)
-		printf("%d\n",a[n-1]);
+		my_printf("%d\n",a[n-1]);
 }
 
 

@@ -15,9 +15,9 @@ int main_bench()
 struct student stu[100];
 struct student m;
 int n,i,a,b,c,d,e,TOTAL;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].classgrade,&stu[i].leader,&stu[i].west,&stu[i].essay);
+my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].classgrade,&stu[i].leader,&stu[i].west,&stu[i].essay);
 }
 TOTAL=0;
 for(i=0;i<n;i++){
@@ -43,6 +43,6 @@ stu[i-1]=stu[i];
 stu[i]=m;
 }
 }
-printf("%s\n%d\n%d",stu[0].name,stu[0].total,TOTAL);
+my_printf("%s\n%d\n%d",stu[0].name,stu[0].total,TOTAL);
 return 0;
 }

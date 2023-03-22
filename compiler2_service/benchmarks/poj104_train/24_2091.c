@@ -28,8 +28,8 @@ int main_bench()
 	y=l-1-x;
 	if(y>m){m=y;I1=x+1;I2=l-1;}
 	if((y>0)&&(y<n)){n=y;J1=x+1;J2=l-1;}
-	for(i=I1;i<=I2;i++) printf("%c",s[i]);
-	printf("\n");
-	for(i=J1;i<=J2;i++) printf("%c",s[i]);
+	for(i=I1;i<=I2;i++) my_printf("%c",s[i]);
+	my_printf("\n");
+	for(i=J1;i<=J2;i++) my_printf("%c",s[i]);
 	return 0;
 }

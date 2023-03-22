@@ -6,7 +6,7 @@ main_bench()
       char n[1000],o[1000];
       for(j=0;j<=1000;j++)
       {o[j]='\0';}
-      scanf("%d %s %d",&a,n,&b);
+      my_scanf("%d %s %d",&a,n,&b);
       
       for(j=0;n[j]!='\0';j++)
       if(n[j]>='A'&&n[j]<='Z')
@@ -53,6 +53,6 @@ main_bench()
           else if(o[i]==46)
           o[i]='0';
       }
-      printf("%s",o);
+      my_printf("%s",o);
       return 0;
       }

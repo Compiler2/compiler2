@@ -6,8 +6,8 @@ int main_bench()
 	int i;
 	gets(s);
 	for(i=0;i<strlen(s);i++){
-		if(s[i]<58&&s[i]>47)printf("%c",s[i]);
-		if(s[i]<58&&s[i]>47&&(s[i+1]>=58||s[i+1]<=47))printf("\n");
+		if(s[i]<58&&s[i]>47)my_printf("%c",s[i]);
+		if(s[i]<58&&s[i]>47&&(s[i+1]>=58||s[i+1]<=47))my_printf("\n");
 	}
 	return 0;
 }

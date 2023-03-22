@@ -3,11 +3,11 @@
 main_bench()
 {
 	double n,m;  
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	char a[100];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	char b[100];
-	scanf("%s",b);
+	my_scanf("%s",b);
 	int i,j,k;
 	int count1=0,count2=0,count=0;
 	for (i=0;a[i]!='\0';i++)
@@ -17,7 +17,7 @@ main_bench()
 	
 	
 	if(count1!=count2) 
-	printf("error");
+	my_printf("error");
 	else 
 	{
 	   for (j=0;j<count1;j++)
@@ -32,14 +32,14 @@ main_bench()
 				
 				
 				 if (m>=n)
-				 printf("yes");
+				 my_printf("yes");
 				 else 
-				 printf("no");
+				 my_printf("no");
 			 }	
 		  }
 		  else
 		  {
-		     printf("error");
+		     my_printf("error");
 				break;
 		  }
 	   }

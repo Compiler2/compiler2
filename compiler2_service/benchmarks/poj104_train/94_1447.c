@@ -3,10 +3,10 @@
 int main_bench(){
  int N,i,t,j;
  int sum=0; 
- scanf("%d",&N);
+ my_scanf("%d",&N);
  int a[N];
  for(i=0;i<N;i++){
-   scanf("%d ",&a[i]);
+   my_scanf("%d ",&a[i]);
  }
 int b[sum];
    for(i=0;i<N;i++){
@@ -26,7 +26,7 @@ for(j=0;j<sum-1;j++) {
     }
    }
    for(i=0;i<sum-1;i++){
-   printf("%d,",b[i]);}
-   printf("%d",b[sum-1]);
+   my_printf("%d,",b[i]);}
+   my_printf("%d",b[sum-1]);
  return 0;
 }

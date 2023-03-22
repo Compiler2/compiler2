@@ -23,6 +23,6 @@ int main_bench()
 			min=i;
 		}
 	}
-	printf("%s\n%s\n",sz[max],sz[min]);
+	my_printf("%s\n%s\n",sz[max],sz[min]);
 	return 0;
 }

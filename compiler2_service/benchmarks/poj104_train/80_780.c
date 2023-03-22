@@ -5,8 +5,8 @@ int main_bench()
 	int year1,year2,month1,month2,day1,day2,s=0,s1=0,s2=0,i,j,k;
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31},
 		b[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d\n",&year1,&month1,&day1);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d\n",&year1,&month1,&day1);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 	for(i=year1;i<=year2;i++)
 	{
 		if((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
@@ -47,7 +47,7 @@ int main_bench()
 			s2=s2+a[k];}
 		s=s-(365-s2);
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }
 	

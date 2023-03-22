@@ -4,14 +4,14 @@ int main_bench(){
 	double j,n;
 	int i,l,k,p=0,u,h=0;
 	char a[2][501];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<2;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	l=strlen(a[0]);
 	k=strlen(a[1]);
 	if(l!=k){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(u=0;u<l;u++){
 			if((a[0][u]!='A')&&
@@ -30,13 +30,13 @@ int main_bench(){
 			}
 		}
 		if(p!=0){
-			printf("error");
+			my_printf("error");
 		}else{
 			j=1.0*h/l;
 			if(j>n){
-				printf("yes");
+				my_printf("yes");
 			}else{
-				printf("no");
+				my_printf("no");
 			}
 		}
 	}

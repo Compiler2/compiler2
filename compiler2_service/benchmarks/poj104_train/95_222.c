@@ -27,15 +27,15 @@ int main_bench()
 	{
 		if ((a[i]>b[i])&&(a[i]-b[i]!=32))
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if((a[i]<b[i])&&(b[i]-a[i]!=32))
 		{    
-			printf("<");
+			my_printf("<");
 			break;
 		}
-		if (i==x-1) printf("=");
+		if (i==x-1) my_printf("=");
 	}
 	return 0;
 }

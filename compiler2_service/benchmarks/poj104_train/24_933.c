@@ -33,7 +33,7 @@ int main_bench()
 		  break;
 	  
   }
-  printf("%s\n%s",b[n2],b[n1]);
+  my_printf("%s\n%s",b[n2],b[n1]);
 
   return 0;
 }

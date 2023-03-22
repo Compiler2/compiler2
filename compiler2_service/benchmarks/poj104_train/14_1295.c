@@ -14,10 +14,10 @@ int main_bench()
 		int shuxue;
 		int sum;
 	}stu[99999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].yuwen,&stu[i].shuxue);
 		stu[i].sum=stu[i].yuwen+stu[i].shuxue;
 	}
 	for(i=0;i<n;i++)
@@ -56,7 +56,7 @@ int main_bench()
 		if(stu[i].sum>stu[disan].sum){disan=i;}
 		}
 	}
-	printf("%d %d\n",diyi+1,stu[diyi].sum);
-	printf("%d %d\n",dier+1,stu[dier].sum);
-	printf("%d %d\n",disan+1,stu[disan].sum);
+	my_printf("%d %d\n",diyi+1,stu[diyi].sum);
+	my_printf("%d %d\n",dier+1,stu[dier].sum);
+	my_printf("%d %d\n",disan+1,stu[disan].sum);
 }	

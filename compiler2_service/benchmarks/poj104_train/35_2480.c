@@ -3,14 +3,14 @@
 int main_bench()
 {
     int m, n, a[100][100], i, j, k, l, M, N, O, s, flag=0;
-	scanf("%d,%d", &m, &n);
+	my_scanf("%d,%d", &m, &n);
 	O = 0;
 	s = m*n;
 	for (i = 0; i < m; i++)
 	{
 		for (j = 0; j < n; j++)
 		{
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 		}
 	}
 	for (i = 0; i<m; i++)
@@ -38,7 +38,7 @@ int main_bench()
 			}
 			if (N == m)
 			{
-				printf("%d+%d\n", i, j);
+				my_printf("%d+%d\n", i, j);
 				flag = 1;
 				break;
 			}
@@ -54,7 +54,7 @@ int main_bench()
 	}
 	if (O == s)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

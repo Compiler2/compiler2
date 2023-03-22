@@ -3,10 +3,10 @@
 int main_bench()
 {   
     int i,n,ssy[100],szy[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %d",&ssy[i],&szy[i]);
+        my_scanf("%d %d",&ssy[i],&szy[i]);
     }
     int m=0,j=0;
     int lx[100];
@@ -33,9 +33,9 @@ int main_bench()
               m=1;
           }
 	}
-    printf("%d",max);
+    my_printf("%d",max);
     }
-    else{printf("0");}
+    else{my_printf("0");}
 	return 0;
 }
 

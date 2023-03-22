@@ -6,11 +6,11 @@ int main_bench()
 	int a[999];
 	char c;
 	
-	scanf("%d%c",&a[0],&c);
+	my_scanf("%d%c",&a[0],&c);
 	
 	while (c==',')                     
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		n++;
 		i++;
 	}
@@ -39,9 +39,9 @@ int main_bench()
 
 	if (k==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
-	printf("%d",max2);
+	my_printf("%d",max2);
 	return 0;
 }

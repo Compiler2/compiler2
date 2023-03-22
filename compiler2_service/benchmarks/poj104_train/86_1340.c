@@ -7,17 +7,17 @@ int main_bench()
 	int t=0;
 	int sum=0;
 	int a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(q=0;q<=n-1;q++)
 	{
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		for(j=0;j<=k-1;j++)
 		{
-			scanf("%d",&a[j]);
+			my_scanf("%d",&a[j]);
 		}
 		if(k==0)
 		{
-			printf("%d\n",60);
+			my_printf("%d\n",60);
 		}
 		else
 		{
@@ -42,17 +42,17 @@ int main_bench()
 				{
 					sum=a[k-1];
 				}
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 			}
 			else{
 			if((a[l]+(l+1)*3)<=60)
 			{
 				sum=60-3*(l+1);
-				printf("%d\n",sum);
+				my_printf("%d\n",sum);
 			}
 			if((a[l]+(l+1)*3)>60)
 			{
-				printf("%d\n",a[l]);
+				my_printf("%d\n",a[l]);
 			}
 			}
 			m=0;

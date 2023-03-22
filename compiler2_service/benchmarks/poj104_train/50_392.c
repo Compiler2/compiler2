@@ -7,7 +7,7 @@ int main_bench()
 	int m[12]={0,31,28,31,30,31,30,31,31,30,31,30};
 	int d[13]={0};
 	int a[12],b[12];
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=0;i<12;i++)
 	{
 		d[i]=d[i]+m[i];
@@ -20,6 +20,6 @@ int main_bench()
 		}
 	}
 	for(i=1;i<=count;i++)
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	return 0;
 }

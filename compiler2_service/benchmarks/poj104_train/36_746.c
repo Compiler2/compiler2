@@ -7,11 +7,11 @@ int main_bench()
 	int len1,len2;
 	int i;
 	int num;
-	scanf("%s%s",&a,&b);
+	my_scanf("%s%s",&a,&b);
 	len1=strlen(a);
 	len2=strlen(b);
 	if(len1!=len2)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		for(i=0;i<300;i++)
@@ -29,13 +29,13 @@ int main_bench()
 		{
 			if(num1[i]!=num2[i])
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				break;
 			}
 			else
 				num++;
 		}
 		if(num==300)
-			printf("YES\n");
+			my_printf("YES\n");
 	}
 }

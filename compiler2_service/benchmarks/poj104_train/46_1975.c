@@ -6,10 +6,10 @@ int main_bench()
 	int x,y,i,k,n;
 	i=0;
 	k=0;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	for(k=0;k<=x-1;k++){
 		for(i=0;i<=y-1;i++){
-			scanf("%d",&(array[k][i]));
+			my_scanf("%d",&(array[k][i]));
 		}
 	}
 	if(x>=y){
@@ -19,21 +19,21 @@ int main_bench()
 	}
 	for(i=0;i<=n;i++){
 		for(k=i;k<=y-i-1;k++){
-			printf("%d\n",array[i][k]);
+			my_printf("%d\n",array[i][k]);
 		}
 		for(k=i+1;k<=x-i-1;k++){
-			printf("%d\n",array[k][y-i-1]);
+			my_printf("%d\n",array[k][y-i-1]);
 		}
 		if(n>0&&i<=(x-2)/2){
 			for(k=y-i-2;k>=i;k--){
-				printf("%d\n",array[x-i-1][k]);
+				my_printf("%d\n",array[x-i-1][k]);
 			}
 		}else{
 			break;
 		}
 		if(n>0&&i<=(y-2)/2){
 			for(k=x-i-2;k>=i+1;k--){
-				printf("%d\n",array[k][i]);
+				my_printf("%d\n",array[k][i]);
 			}
 		}else{
 			break;

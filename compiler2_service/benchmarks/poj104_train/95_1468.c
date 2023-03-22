@@ -19,6 +19,6 @@ int main_bench(){
     gets(a);gets(b);
     int la,lb;
     la=strlen(a);lb=strlen(b);
-    printf("%c",f(a,la,b,lb));
+    my_printf("%c",f(a,la,b,lb));
      return 0;
 }

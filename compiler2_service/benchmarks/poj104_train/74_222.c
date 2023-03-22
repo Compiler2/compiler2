@@ -29,16 +29,16 @@ int ifsushu (int a)
 int main_bench()
 {
 	int min, max,i,flag=0;
-	scanf ("%d %d",&min,&max);
+	my_scanf ("%d %d",&min,&max);
 	for (i=min;i<=max;i++)
 	{
 		if (ifhuiwen(i)==1 && ifsushu(i)==1 && flag==0)
 		{
-			printf ("%d",i);flag=i;
+			my_printf ("%d",i);flag=i;
 		}
 		if (ifhuiwen(i)==1 && ifsushu(i)==1 && i!=flag)
-			printf (",%d",i);
+			my_printf (",%d",i);
 	}
 	if (flag==0)
-		printf ("no");
+		my_printf ("no");
 }

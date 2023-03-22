@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	double zong=0;
 	int t;
 	t=a/400;
@@ -76,32 +76,32 @@ int main_bench()
 	}
 	if(zong-7*i==1)
 	{
-		printf("Mon.");
+		my_printf("Mon.");
 	}
 	if(zong-7*i==2)
 	{
-		printf("Tue.");
+		my_printf("Tue.");
 	}
 	if(zong-7*i==3)
 	{
-		printf("Wed.");
+		my_printf("Wed.");
 	}
 	if(zong-7*i==4)
 	{
-		printf("Thu.");
+		my_printf("Thu.");
 	}
 	if(zong-7*i==5)
 	{
-		printf("Fri.");
+		my_printf("Fri.");
 
 	}
 	if(zong-7*i==6)
 	{
-		printf("Sat.");
+		my_printf("Sat.");
 	}
 	if(zong-7*i==7)
 	{
-		printf("Sun.");
+		my_printf("Sun.");
 	}
 	return 0;
 }

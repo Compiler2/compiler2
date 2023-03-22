@@ -3,7 +3,7 @@
 
 int main_bench() {
    int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     struct interval{int left;int right;}itv[n];    
     
@@ -13,7 +13,7 @@ int main_bench() {
     max=0;
     for(i=0;i<n;i=i+1)
     {
-        scanf("%d %d",&(itv[i].left),&(itv[i].right));
+        my_scanf("%d %d",&(itv[i].left),&(itv[i].right));
         if(itv[i].left<min){min=itv[i].left;}
         if(itv[i].right>max){max=itv[i].right;}
         
@@ -44,7 +44,7 @@ int main_bench() {
     
 
     
-    if(s==0){printf("no");}
-    else{printf("%d %d",min,max);}
+    if(s==0){my_printf("no");}
+    else{my_printf("%d %d",min,max);}
     return 0;
 }

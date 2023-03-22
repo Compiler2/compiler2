@@ -11,11 +11,11 @@ int main_bench()
     {
         
         if (isdigit(*(p+i)))
-        printf("%c",*(p+i));
+        my_printf("%c",*(p+i));
         if (isdigit(*(p+i))&&isdigit(*(p+i+1))==0)
-        printf("\n"); 
+        my_printf("\n"); 
     }
     if (isdigit(*(p+l-1)))
-    printf("%c",*(p+l-1));
+    my_printf("%c",*(p+l-1));
     return 0;
 }

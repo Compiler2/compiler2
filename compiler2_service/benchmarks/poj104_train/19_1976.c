@@ -25,7 +25,7 @@ int main_bench()
 		}
 		else
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 	}
 }
@@ -50,6 +50,6 @@ void output(void)
 	int ctr1;
 	for(ctr1=0;ctr1<len3;ctr1++)
 	{
-		printf("%c",b[ctr1]);
+		my_printf("%c",b[ctr1]);
 	}
 }

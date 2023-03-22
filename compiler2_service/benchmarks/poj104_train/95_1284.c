@@ -15,8 +15,8 @@ main_bench()
    change(p1);
    change(p2);
    int h=strcmp(p1,p2);
-   if(h<0) printf("<");
-   else if(h==0) printf("=");
-   else if(h>0) printf(">");
+   if(h<0) my_printf("<");
+   else if(h==0) my_printf("=");
+   else if(h>0) my_printf(">");
   
 }

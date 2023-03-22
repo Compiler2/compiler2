@@ -24,11 +24,11 @@ int main_bench()
         if (i-p!=la)
 		{
 			for (j=p;j<i;j++)
-				printf("%c",s[j]);
-			if (i!=ls) printf(" ");
+				my_printf("%c",s[j]);
+			if (i!=ls) my_printf(" ");
 			else 
 			{
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 		}
@@ -43,11 +43,11 @@ int main_bench()
 				}
 				if (f==1)
 				{
-					printf("%s",b);
-					if (i!=ls) printf(" ");
+					my_printf("%s",b);
+					if (i!=ls) my_printf(" ");
 			       else 
 			{
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 				}
@@ -55,10 +55,10 @@ int main_bench()
 			else
 			{
 			for (j=p;j<i;j++)
-				printf("%c",s[j]);
-			if (i!=ls) printf(" ");
+				my_printf("%c",s[j]);
+			if (i!=ls) my_printf(" ");
 			else {
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 			}

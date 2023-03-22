@@ -16,8 +16,8 @@ int main_bench()
  month[11]=30;
  int day_number,that_year_day1=0,that_year_day2=0;
  day_number=0;
- scanf("%d%d%d\n",&year1,&month1,&day1);
- scanf("%d%d%d\n",&year2,&month2,&day2);
+ my_scanf("%d%d%d\n",&year1,&month1,&day1);
+ my_scanf("%d%d%d\n",&year2,&month2,&day2);
  for (i=year1;i<=year2-1;i++)
  { if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0))
       month[2]=29;
@@ -38,5 +38,5 @@ int main_bench()
 	 that_year_day2+=month[k];
  that_year_day2+=day2;
  day_number=day_number-that_year_day1+that_year_day2;
- printf("%d",day_number);
+ my_printf("%d",day_number);
  }

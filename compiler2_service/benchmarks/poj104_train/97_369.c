@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,sum1=0,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n!=0)
 	{
 		if(n-100>=0)
@@ -37,7 +37,7 @@ int main_bench()
 		    n=n-1;
 		}
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",sum1,sum2,sum3,sum4,sum5,sum6);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",sum1,sum2,sum3,sum4,sum5,sum6);
 	return 0;
 }
 

@@ -5,25 +5,25 @@ int k[1001]={0};
 char c;
 void scan()
 {
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	while(1)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c==',')
 		{
-			scanf("%d",&a[n]);
+			my_scanf("%d",&a[n]);
 			n++;
 		}
 		else 
 			break;
 	}
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	while(1)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c==',')
 		{
-			scanf("%d",&b[m]);
+			my_scanf("%d",&b[m]);
 			m++;
 		}
 		else 
@@ -47,5 +47,5 @@ int main_bench()
 	{
 		l=l>k[i]?l:k[i];
 	}
-	printf("%d %d",n,l);
+	my_printf("%d %d",n,l);
 }

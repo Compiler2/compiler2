@@ -6,10 +6,10 @@ int main_bench()
 	float k,c,d;
 	int a[300];
 	float b[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
     {
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
     for(i=1;i<=n;i++)
 	{
@@ -65,13 +65,13 @@ int main_bench()
 	}
 
 	if(p==1)
-		printf("%d",a[1]);
+		my_printf("%d",a[1]);
 	if(p!=1)
 	{
 		for(i=1;i<p;i++)
 		{
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 		}
-	printf("%d",a[p]);
+	my_printf("%d",a[p]);
 	}
 }

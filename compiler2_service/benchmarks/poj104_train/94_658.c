@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,k,b,h,c;
 	int*shuzu=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 	}
 	int a=0;
 	int*shuzu_=(int*)malloc(sizeof(int)*n);
@@ -33,10 +33,10 @@ int main_bench()
 		}
 	}
 	for(h=0;h<a-1;h++){
-		printf("%d,",shuzu_[h]);
+		my_printf("%d,",shuzu_[h]);
 	}
 	if(h=a-1){
-		printf("%d",shuzu_[a-1]);
+		my_printf("%d",shuzu_[a-1]);
 	}
 	return 0;
 }

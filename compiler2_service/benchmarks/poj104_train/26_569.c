@@ -16,11 +16,11 @@ int main_bench()
 	{
 		if(zf[i]!=' ')
 		{
-			printf("%c",zf[i]);
+			my_printf("%c",zf[i]);
 		}
 		else if(zf[i]==' ')
 		{
-			printf(" ");
+			my_printf(" ");
 			while(1)
 			{
 				if(zf[i+1]==' ')

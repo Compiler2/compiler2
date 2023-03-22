@@ -8,15 +8,15 @@ int main_bench()
 	int i,j;
 	int k;
 	int num[1000];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0; i<k; i++)
-		scanf("%d", &num[i]);
+		my_scanf("%d", &num[i]);
 	for(i=0; i<k; i++)
 	{
 		if(count[num[i]]==0)
 		{
 			count[num[i]]=1;
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 			break;
 		}
 	}
@@ -25,7 +25,7 @@ int main_bench()
 		if(count[num[i]]==0)
 		{
 			count[num[i]]=1;
-			printf(",%d",num[i]);
+			my_printf(",%d",num[i]);
 		}
 	}
 

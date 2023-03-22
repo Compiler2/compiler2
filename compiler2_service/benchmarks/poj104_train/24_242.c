@@ -25,8 +25,8 @@ int main_bench()
 			s[i] = '\0';
 		}
 	}
-	printf("%s\n", s+a1);
-	printf("%s\n", s+b1);
+	my_printf("%s\n", s+a1);
+	my_printf("%s\n", s+b1);
 
 
 	return 0;

@@ -6,17 +6,17 @@ int main_bench()
 	int a[5][5],m,n,i,j,k,(*p)[5];
 	for(i=0;i<5;i++)
 	for(j=0;j<5;j++)
-		scanf("%d",&a[i][j]);
-	scanf("%d%d",&n,&m);
+		my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&n,&m);
 	p=a;
     k=f(p,n,m);
-	if(k==0) printf("error");
+	if(k==0) my_printf("error");
 	if(k==1)
 	for(i=0;i<5;i++)
 	{for(j=0;j<5;j++)
-	if(j==0) printf("%d",a[i][j]);
-	else printf(" %d",a[i][j]);
-	printf("\n");}
+	if(j==0) my_printf("%d",a[i][j]);
+	else my_printf(" %d",a[i][j]);
+	my_printf("\n");}
 }
 int f(int (*p)[5],int n,int m)
 {

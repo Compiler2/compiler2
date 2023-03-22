@@ -2,7 +2,7 @@
 
 int main_bench() {
 	int n;
-	scanf ("%d", &n);
+	my_scanf ("%d", &n);
     int i,j;
 	int q;
     int s[5];
@@ -13,7 +13,7 @@ int main_bench() {
 	}
 	for (j=0; j<5; j++) {
 		if (s[j] != 0) {
-	        printf ("%d", s[j]);
+	        my_printf ("%d", s[j]);
 		}
 	}
 	return 0;

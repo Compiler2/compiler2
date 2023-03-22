@@ -9,12 +9,12 @@ for  (int i=0;i<strlen(cs);i++){
      ys=c%13;
      s=c/13;
     if (s!=0){
-	   printf("%d",s);
+	   my_printf("%d",s);
 	}
 	else {
 		if (i==0){
 			if(strlen(cs)==1){
-			printf("%d",s);
+			my_printf("%d",s);
 			}
 			else {
 			 continue;
@@ -25,16 +25,16 @@ for  (int i=0;i<strlen(cs);i++){
 			continue ;
 			}
 		    else {
-			 printf("%d",s);
+			 my_printf("%d",s);
 			}
 		}
 	   else {
-		 printf("%d",s);
+		 my_printf("%d",s);
 		} 
 	}
 	 if (i==strlen(cs)-1){
-	   printf("\n");
-	   printf("%d",ys);
+	   my_printf("\n");
+	   my_printf("%d",ys);
 	}
 }
 return 0;

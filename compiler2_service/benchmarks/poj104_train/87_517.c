@@ -5,7 +5,7 @@ int main_bench(){
 	int sz[6],peo[1000];
 	for(i=0;i<1000;i++){
 		for(j=0;j<6;j++){
-			scanf("%d",&sz[j]);
+			my_scanf("%d",&sz[j]);
 		}
 		if(sz[0]==0){
 			n=i;
@@ -17,7 +17,7 @@ int main_bench(){
 		peo[i]=sum;
 	}
 	for(i=0;i<n;i++){
-		printf("%d\n",peo[i]);
+		my_printf("%d\n",peo[i]);
 	}
 	return 0;
 }

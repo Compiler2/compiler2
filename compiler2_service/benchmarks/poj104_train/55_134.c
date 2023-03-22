@@ -7,7 +7,7 @@ int main_bench()
 	long ten;
 	char num0[100],num3[100];
 	int num1[100]={0},num2[100]={0};
-	scanf("%d%s%d",&ori,num0,&fin);
+	my_scanf("%d%s%d",&ori,num0,&fin);
 	len0=strlen(num0);
 	for(i=0;i<len0;i++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 	}
 	ten=trans(len0,num1,ori);
 	if(ten==0)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 	for(i=0;ten;i++)
@@ -37,7 +37,7 @@ int main_bench()
 			num3[j]=num2[i-1]+'A'-10;
 	}
 	num3[len3]='\0';
-	printf("%s\n",num3);
+	my_printf("%s\n",num3);
 	}
 }
 long trans(int len,int a[],int b)

@@ -22,8 +22,8 @@ int main_bench()
 		if(sz[i]==0)
 			continue;
 		else 
-			printf("%d,",sz[i]);
+			my_printf("%d,",sz[i]);
 	}
-	printf("%d",sz[n-1]);
+	my_printf("%d",sz[n-1]);
 	return 0;
 }

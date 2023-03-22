@@ -13,6 +13,6 @@ int main_bench()
 		*(p)=*(p)+*(p+1);
 	}
     s[x-1]=s[x-1]+c;
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

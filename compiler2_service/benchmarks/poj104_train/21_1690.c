@@ -8,11 +8,11 @@ int main_bench(){
 	double ave, temp, distance = 0;
 	int * mid;
 
-	scanf ( " %d ", &count );
+	my_scanf ( " %d ", &count );
 	values = ( int * )malloc( count * sizeof(int) );
 	mid = ( int * )malloc( count * sizeof(int) );
 	for ( i = 0; i < count; i++ ){
-		scanf ( "%d", (values + i) );
+		my_scanf ( "%d", (values + i) );
 		sum += *( values + i );
 	}
 	
@@ -32,11 +32,11 @@ int main_bench(){
 	}
 
 	
-	printf( "%d", mid[0] );
+	my_printf( "%d", mid[0] );
 
 
 	for ( i = 1; i <= sentry; i++ ){
-		printf( ",%d", mid[i]);
+		my_printf( ",%d", mid[i]);
 	}
 	return 0;
 }

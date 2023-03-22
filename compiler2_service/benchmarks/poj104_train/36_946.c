@@ -3,7 +3,7 @@
 int main_bench()
 {
     char a[100],b[100],t;
-	scanf("%s  %s",a,b);
+	my_scanf("%s  %s",a,b);
 	int l1=strlen(a),l2=strlen(b),i=0,j=0;
 	for(i=0;i<l1;i++)
 	{
@@ -17,6 +17,6 @@ int main_bench()
 		   }
 		}
 	}
-	if(strcmp(a,b)==0) printf("YES");
-	else printf("NO");
+	if(strcmp(a,b)==0) my_printf("YES");
+	else my_printf("NO");
 }

@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int a[100010],num,i,j,k,move;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for (i = 0;i < num;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&k);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&k);
 	move = 0;
 	for (i = 0;i < num;i += 1)
 	{
@@ -20,6 +20,6 @@ int main_bench()
 		}
 	}
 	for (i = 0;i < num - 1;i += 1)
-		printf("%d ",a[i]);
-	printf("%d\n",a[num - 1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d\n",a[num - 1]);
 }

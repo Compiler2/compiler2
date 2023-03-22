@@ -13,5 +13,5 @@ int main_bench()
 		str2[i-1]=str1[i-1]+str1[i];
 	}
 	str2[len-1]=str1[len-1]+str1[0];
-	printf("%s\n",str2);
+	my_printf("%s\n",str2);
 }

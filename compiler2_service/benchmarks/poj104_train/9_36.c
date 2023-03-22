@@ -29,17 +29,17 @@ int main_bench()
    MAN * array = 0;
    double ava, maxgap = 0;
  
-   scanf("%d", &n);
+   my_scanf("%d", &n);
    array = (MAN*)malloc(n * sizeof(MAN));
    for(i = 0; i < n ; i++)
    {
-	   scanf("%s %d", array[i].id, &(array[i].age));
+	   my_scanf("%s %d", array[i].id, &(array[i].age));
    }
    
    sort(array, n);
    for(i = 0; i < n; i++)
    {
-	  printf("%s\n",array[i].id);
+	  my_printf("%s\n",array[i].id);
    }
  
    free(array);

@@ -4,13 +4,13 @@ int main_bench(){
 	   
 	int i,n,t[50000]={0},f=0,d,k,l,h;
 	double m=10000,y=1,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct qj{
 		double a,b;
 	}*q;
 	q=(struct qj*)malloc(sizeof(struct qj)*n);
 	for(i=0;i<n;i++){
-		scanf("%lf%lf",&(q[i].a),&(q[i].b));
+		my_scanf("%lf%lf",&(q[i].a),&(q[i].b));
 		if(q[i].a<=m){
 			m=q[i].a;
 		}if(q[i].b>=y){
@@ -31,10 +31,10 @@ int main_bench(){
 		} 
 	}
 	if(f==1){  
-		printf("no");
+		my_printf("no");
 	}
 	if(f==0){l=(int)m;h=(int)y;
-		printf("%d %d",l,h);
+		my_printf("%d %d",l,h);
 	}
 	free(q);
 	return 0;

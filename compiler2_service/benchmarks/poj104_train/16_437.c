@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int i, n, t;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if (n==0)
-		printf("0");
+		my_printf("0");
 	else {
 	for (i=0; i<5; i++)
 	{
 		if (n!=0){
 		t=n%10;
-		printf("%d", t);
+		my_printf("%d", t);
 		n=(n-t)/10;
 		}
 					}

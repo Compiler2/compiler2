@@ -4,7 +4,7 @@
 main_bench()
 {
 int m,a,b,i,t;
-scanf("%d",&m);
+my_scanf("%d",&m);
  for(a=2;a<=m/2;a++)
  {
   t=0;
@@ -21,7 +21,7 @@ for(i=2;i<b-1;i++)
    if(b%i==0)t=1;
   }
 if(b==1)t=1;
-if(t==0)printf("%d %d\n",a,b);
+if(t==0)my_printf("%d %d\n",a,b);
  }
  }
 }

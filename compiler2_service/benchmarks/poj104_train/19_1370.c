@@ -30,11 +30,11 @@ int main_bench(){
            {
                       for(int k=0;k<len3;k++)
                       {
-                                        printf("%c",c[k]);
+                                        my_printf("%c",c[k]);
                                         }
                       i=i+len2-1;
             }
-            else printf("%c",a[i]);
+            else my_printf("%c",a[i]);
                                                        }
                                                       
 	return 0;

@@ -6,7 +6,7 @@ int main_bench()
 	char a;
 	while(1)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		i++;
 		a=getchar();
 		if(a=='\n')
@@ -15,7 +15,7 @@ int main_bench()
 
 	while(1)
 	{
-		scanf("%d",&y[j]);
+		my_scanf("%d",&y[j]);
 		j++;
 		a=getchar();
 		if(a=='\n')
@@ -38,7 +38,7 @@ int main_bench()
 		if(n>m)
 			m=n;
 	}
-	printf("%d %d",i,m);
+	my_printf("%d %d",i,m);
 
 
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,a[100][100],i,j;
 	int k=0,l=0,m=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -23,6 +23,6 @@ int main_bench()
 			l++;
 	}
 	k=((k-4)/2-l+2)*(l-2);
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 }
 

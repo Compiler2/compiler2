@@ -25,5 +25,5 @@ int main_bench()
 		i++;
 	}
 	a[k]='\0';
-	printf("%s",a);
+	my_printf("%s",a);
 }

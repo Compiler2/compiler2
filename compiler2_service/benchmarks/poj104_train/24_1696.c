@@ -26,6 +26,6 @@ int main_bench(){
 			min=i;
 		}
 	}
-	printf("%s\n%s\n",b[max],b[min]);
+	my_printf("%s\n%s\n",b[max],b[min]);
 	return 0;
 }

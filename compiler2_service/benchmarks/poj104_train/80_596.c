@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int year1,year2,month1,month2,day1,day2,a,b,year,days,i;
-	scanf("%d%d%d\n",&year1,&month1,&day1);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d\n",&year1,&month1,&day1);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 	if((year1%4==0&&year1%100!=0)||(year1%400==0))
 	{
 		switch(month1)
@@ -182,6 +182,6 @@ int main_bench()
 			year=year+365;
 	}
 	days=b-a+year;
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }

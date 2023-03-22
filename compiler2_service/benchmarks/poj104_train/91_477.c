@@ -9,11 +9,11 @@ int main_bench(){
 	for(i=0;i<(n-1);i++){
 		j=s[i]+s[i+1];
         a=j;
-		printf("%c",a);
+		my_printf("%c",a);
 	}
 	j=s[n-1]+s[0];
 	a=j;
-	printf("%c",a);
+	my_printf("%c",a);
 
 	
 	return 0;

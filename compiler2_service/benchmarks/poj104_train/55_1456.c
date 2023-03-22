@@ -15,7 +15,7 @@ long n=0;
    for(i='a';i<='z';i++)
 		ai[i]=i-'a'+10;
 
-   scanf("%d%s%d",&a,s,&b);
+   my_scanf("%d%s%d",&a,s,&b);
   for(i=0;s[i]!='\0';i++)
 	  n=a*n+ai[s[i]];
  

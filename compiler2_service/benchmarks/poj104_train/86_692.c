@@ -6,12 +6,12 @@ int main_bench()
 	int n,m[99];               
 	int i,j,k,p,q;           
 	int num[99][19],sum[99];   
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)          
 	{
-		scanf("%d", &m[i]);
+		my_scanf("%d", &m[i]);
 		for(j=0;j<m[i];j++)
-			scanf("%d", &num[i][j]);
+			my_scanf("%d", &num[i][j]);
 	}
 
 	for(k=0;k<n;k++)           
@@ -56,7 +56,7 @@ int main_bench()
 
 
 	for(p=0;p<n;p++)
-		printf("%d\n", sum[p]);
+		my_printf("%d\n", sum[p]);
 
 	return 0;
 }

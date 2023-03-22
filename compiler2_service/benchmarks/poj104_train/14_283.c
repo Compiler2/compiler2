@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,p,q,c,d;
     int a[100000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct student
     { int num;
       int score1;
@@ -12,7 +12,7 @@ int main_bench()
     }stu[100000];
     for(i=0;i<n;i++)
     {
-                    scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
+                    my_scanf("%d %d %d",&stu[i].num,&stu[i].score1,&stu[i].score2);
     }
     for(i=0;i<n;i++)
     {
@@ -107,7 +107,7 @@ int main_bench()
                 }
 
     }
-    printf("%d %d\n%d %d\n%d %d\n",num1+1,a[num1],num2+1,a[num2],num3+1,a[num3]);
+    my_printf("%d %d\n%d %d\n%d %d\n",num1+1,a[num1],num2+1,a[num2],num3+1,a[num3]);
     getchar();
     getchar();
     getchar();               

@@ -9,10 +9,10 @@ int min(int a,int b)
 int main_bench()
 {
  int i,j,n,a,b,ma=0,mi=999999,f=1;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         ma=max(ma,b);
         mi=min(mi,a);
         for(j=2*a;j<=2*b;j++)
@@ -20,7 +20,7 @@ int main_bench()
  }
         for(i=2*mi;i<=2*ma;i++)
     if(!t[i])f=0;
-    f?printf("%d %d",mi,ma):printf("no");
+    f?my_printf("%d %d",mi,ma):my_printf("no");
 
         return 0;
 }

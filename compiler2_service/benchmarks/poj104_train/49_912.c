@@ -28,7 +28,7 @@ void isHuiwen(char s0[500], int i)
 		return;
 	}
 	for(p = 0;p < i;p++)
-		printf("%c",s0[p]);
-	printf("\n");
+		my_printf("%c",s0[p]);
+	my_printf("\n");
 	return;
 }

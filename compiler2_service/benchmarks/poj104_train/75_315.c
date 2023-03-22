@@ -8,13 +8,13 @@ int main_bench()
 	do
 	{
 		i++;
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 	}
 	while(c!='\n');
 	int num=i;
 	for(i=1;i<=num;i++)
-	{scanf("%d",&b[i]);c=getchar();}
+	{my_scanf("%d",&b[i]);c=getchar();}
 	int cnt[1002]={0},j,maxb=qiumax(b,num);
 	for(i=1;i<=num;i++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 			cnt[j]++;
 	}
 	int maxpeople=qiumax(cnt,maxb-1);
-	printf("%d %d",num,maxpeople);
+	my_printf("%d %d",num,maxpeople);
 	return 0;
 }
 

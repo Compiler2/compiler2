@@ -8,14 +8,14 @@ struct book
 int main_bench()
 {
     int n;
-    scanf ("%d", &n);
+    my_scanf ("%d", &n);
     int i,j;
     int a;
     char c;
     int max=0;
     for (i=0;i<=n-1;i++)
     {
-        scanf ("%s %s", &book[i].num, book[i].author);
+        my_scanf ("%s %s", &book[i].num, book[i].author);
     }
     int s[26];
     for (i=0;i<=25;i++)
@@ -48,15 +48,15 @@ int main_bench()
                       c='A'+i;
         }
     }
-    printf ("%c\n", c);
-    printf ("%d\n", max);
+    my_printf ("%c\n", c);
+    my_printf ("%d\n", max);
     for (i=0;i<=n-1;i++)
     {
         for (j=0;j<=25;j++)
         {
             if (book[i].author[j]==c)
             {
-                                     printf ("%s\n", book[i].num);
+                                     my_printf ("%s\n", book[i].num);
             }
         }
     }                                                                                

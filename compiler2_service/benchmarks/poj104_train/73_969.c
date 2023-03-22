@@ -5,7 +5,7 @@ int main_bench()
 for(m=0;m<=4;m++)
 {
 for(n=0;n<=4;n++)
-scanf("%d",&a[m][n]);
+my_scanf("%d",&a[m][n]);
 }
 for(m=0;m<=4;m++)
 {
@@ -25,10 +25,10 @@ y=a[q][n];
 }
 if(j==y&&y==a[m][n])
 {
-printf("%d %d %d",m+1,n+1,a[m][n]);w=1;
+my_printf("%d %d %d",m+1,n+1,a[m][n]);w=1;
                     }
 }
 }
 if(w==0)
-printf("not found");
+my_printf("not found");
 }

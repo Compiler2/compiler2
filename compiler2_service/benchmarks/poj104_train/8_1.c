@@ -3,11 +3,11 @@
 int a,b,i,j,t,c[20],d[20],e[40];
 void in()
 {
-scanf("%d%d",&a,&b);
+my_scanf("%d%d",&a,&b);
 for(i=0;i<a;i++)
-scanf("%d",&c[i]);
+my_scanf("%d",&c[i]);
 for(i=0;i<b;i++)
-scanf("%d",&d[i]);
+my_scanf("%d",&d[i]);
 }
 
 void order()
@@ -31,8 +31,8 @@ void combine()
 void out()
 {
  for(i=0;i<a+b-1;i++)
-  printf("%d ",e[i]);
- printf("%d",e[a+b-1]);
+  my_printf("%d ",e[i]);
+ my_printf("%d",e[a+b-1]);
 }
 
 int main_bench()

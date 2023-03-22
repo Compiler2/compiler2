@@ -14,5 +14,5 @@ int main_bench()
 		t=t*10;
 		c=getchar();
 	}
-	printf("%d",y);
+	my_printf("%d",y);
 }

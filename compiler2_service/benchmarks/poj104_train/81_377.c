@@ -8,12 +8,12 @@ int main_bench()
  p=a[0];
  for (i=0;i<25;i++,p++)
  
-  scanf("%d",&*p);
- scanf("%d%d",&n,&m);
+  my_scanf("%d",&*p);
+ my_scanf("%d%d",&n,&m);
  p=a[0];
  c=jiaohuan(p,n,m);
  
- if(c==0)printf("error");
+ if(c==0)my_printf("error");
  else if(c==1)
  {
   p=a[0];
@@ -21,9 +21,9 @@ int main_bench()
  
  
   {
-	  if(i%5==0)printf("\n");
-	  else printf(" ");
-  printf("%d",*p);
+	  if(i%5==0)my_printf("\n");
+	  else my_printf(" ");
+  my_printf("%d",*p);
   }
   
  }

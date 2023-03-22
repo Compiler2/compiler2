@@ -19,11 +19,11 @@ int main_bench()
 	}
 	int j,n,m,k;
 	float s,w[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
 		s=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(k=0;k<m;k++)
 		{
 			s=s+c[k];
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	for(j=0;j<n;j++)
 	{
-		printf("%.3lf\n",w[j]);
+		my_printf("%.3lf\n",w[j]);
 	}
 	return 0;
 	}

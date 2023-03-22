@@ -5,7 +5,7 @@ int main_bench()
 int n,i,j,k;
 char **p,c;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 c=getchar();
 p=(char **)malloc(sizeof(char*)*1000);
 
@@ -33,7 +33,7 @@ for(i=0;i<n;i++)
 		}
 		while(  *(*(p+i)+k)!='\0' );
 	}
-	printf("%d\n",j);
+	my_printf("%d\n",j);
 }
 return 0;
 }

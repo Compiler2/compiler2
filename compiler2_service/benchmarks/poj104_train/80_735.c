@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<3;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	if(a[0][0]!=a[1][0])
@@ -131,6 +131,6 @@ int main_bench()
 						n+=30;
 			}
 		}
-	printf("\n%d",n);
+	my_printf("\n%d",n);
 	return 0;
 }

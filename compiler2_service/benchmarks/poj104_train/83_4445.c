@@ -3,13 +3,13 @@
 int main_bench(){
 	int n,xf[100],df[100],xfzh=0;
 	double jdzh=0.0,jd[100],xfjd[100],zpjd;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&xf[i]);
+		my_scanf("%d",&xf[i]);
 		xfzh+=xf[i];
 	}
 	for(int a=0;a<n;a++){
-		scanf("%d",&df[a]);
+		my_scanf("%d",&df[a]);
 	}
 	for(int b=0;b<n;b++){
 		if(df[b]>=90&&df[b]<=100){
@@ -37,6 +37,6 @@ int main_bench(){
 		jdzh+=xfjd[b];
 	}
 	zpjd=jdzh/xfzh;
-	printf("%.2lf\n",zpjd);
+	my_printf("%.2lf\n",zpjd);
 	return 0;
 }

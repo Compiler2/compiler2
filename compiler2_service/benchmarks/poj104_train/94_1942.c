@@ -4,11 +4,11 @@ int main_bench()
 {
 int N;
 int sz[500];
-scanf("%d",&N);
+my_scanf("%d",&N);
 int i,s=0;
 for(i=0;i<N;i++)
 {
-   scanf("%d",&sz[i]);
+   my_scanf("%d",&sz[i]);
 }
 int jsz[500];
 int j=0;
@@ -38,10 +38,10 @@ if(jsz[i]>jsz[i+1])
    }
    }
 }
-printf("%d",jsz[0]);
+my_printf("%d",jsz[0]);
 for(i=1;i<s;i++)
 {
-   printf(",%d",jsz[i]);
+   my_printf(",%d",jsz[i]);
 }
 return 0;
 }

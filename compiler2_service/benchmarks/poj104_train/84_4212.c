@@ -2,9 +2,9 @@
 
 int main_bench()
 {int n,i,k,max1,max2,num[30];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
-    scanf("%d",&num[i]);
+    my_scanf("%d",&num[i]);
  max1=num[0];
  k=0;
  for(i=1;i<n;i++)
@@ -21,8 +21,8 @@ else {max2=num[0];
           if(num[i]>max2&&num[i]!=max1)
           max2=num[i];
      }
-printf("%d\n",max1);
-printf("%d\n",max2);
+my_printf("%d\n",max1);
+my_printf("%d\n",max2);
 }
 
       

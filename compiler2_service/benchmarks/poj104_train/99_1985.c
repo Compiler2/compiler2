@@ -6,11 +6,11 @@ int i,n,m,j,k;
 int A[100];
 int P1=0,P2=0,P3=0,P4=0;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<n;i++)
 {
-	scanf("%d",&A[i]);
+	my_scanf("%d",&A[i]);
 }
 
 for(i=0;i<n;i++)
@@ -21,7 +21,7 @@ for(i=0;i<n;i++)
 	if(A[i]>=61) P4++;
 }
 
-printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",
+my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",
 (double)100*P1/n,(double)100*P2/n,(double)100*P3/n,(double)100*P4/n);
 
 return 0;

@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	char ***p;
 	int i;
 	int j;
@@ -16,14 +16,14 @@ int main_bench()
 		for(j=0;j<2;j++)
 		{
 			p[i][j]=(char *)malloc(100*sizeof(char));
-			scanf("%s",p[i][j]);
+			my_scanf("%s",p[i][j]);
 			if(j==0)
-				scanf("\n");
+				my_scanf("\n");
 			else if(j==1&&i==n-1)
 			{}
 			else
 			{
-				scanf("\n\n");
+				my_scanf("\n\n");
 			}
 		}
 	}
@@ -66,8 +66,8 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(i<=n-2)
-		printf("%s\n",p[i][0]);
+		my_printf("%s\n",p[i][0]);
 		else
-		printf("%s",p[i][0]);
+		my_printf("%s",p[i][0]);
 	}
 }

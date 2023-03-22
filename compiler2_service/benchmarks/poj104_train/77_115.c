@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[100],a,b;
 	int i,j,n,k;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	a=str[0];
 	for(n=0;;n++)
 	{
@@ -31,7 +31,7 @@ int main_bench()
 				}
 				if(str[k]==b)
 				{
-					printf("%d %d\n",j,k);
+					my_printf("%d %d\n",j,k);
 					str[j]='\0';
 					str[k]='\0';
 					break;

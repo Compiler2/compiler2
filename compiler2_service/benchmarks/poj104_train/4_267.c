@@ -7,12 +7,12 @@ int main_bench()
 	int row, col, i, j;
 	int startrow = 0 , startcol = 0;
 
-	scanf("%d %d",&row, &col);
+	my_scanf("%d %d",&row, &col);
 	for(i = 0; i < row; i++)
 	{
 		for(j = 0; j < col; j++)
 		{
-			scanf("%d", &sz[i][j]);
+			my_scanf("%d", &sz[i][j]);
 		}
 	}
 	while((startcol + startrow) != (row + col - 2))
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			for(i = startrow; (i < row) && (i <= startrow + startcol); i++)
 			{
-				printf("%d\n",sz[i][startcol + startrow - i]);
+				my_printf("%d\n",sz[i][startcol + startrow - i]);
 			}
 			startcol++;
 		}
@@ -29,11 +29,11 @@ int main_bench()
 		{
 			for(i = startrow; (i < row) && (i <= startrow + startcol); i++)
 			{
-				printf("%d\n",sz[i][startcol + startrow - i]);
+				my_printf("%d\n",sz[i][startcol + startrow - i]);
 			}
 			startrow++;
 		}
 	}
-	printf("%d",sz[row - 1][col - 1]);
+	my_printf("%d",sz[row - 1][col - 1]);
 	return 0;
 }

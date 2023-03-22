@@ -19,14 +19,14 @@ int main_bench()
 {
 	int i,l,m;
 	char a[51],b[51];
-	scanf ("%s %s",a,b);
+	my_scanf ("%s %s",a,b);
 	l=strlen(a);
 	m=strlen(b);
 	for (i=0;i<=m-l;i++)
 	{
 		if (compare(a,b,i)==1)
 		{
-			printf ("%d\n",i);
+			my_printf ("%d\n",i);
 			break;
 		}
 	}

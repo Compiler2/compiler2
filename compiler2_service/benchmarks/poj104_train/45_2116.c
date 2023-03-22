@@ -43,7 +43,7 @@ int main_bench(){
 			}
 			if(sum==m)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

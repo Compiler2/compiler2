@@ -5,7 +5,7 @@ main_bench()
 	int a[52][7];
 	int i,j,t;
 	int w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	t=9-w;
 	for(i=1;i<52;i++)
 	{
@@ -26,7 +26,7 @@ main_bench()
 	        	if(j==4)
 	        	{
 	        		y=x/30+1;
-	        		printf("%d\n",y);
+	        		my_printf("%d\n",y);
 	        	}
 	        }
 	  }}}

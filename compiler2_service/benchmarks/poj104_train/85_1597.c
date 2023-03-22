@@ -5,8 +5,8 @@ int main_bench()
     int n;
     char sr[100][100];
     int i,j,sum[100];
-    scanf("%d",&n);
-    for(i=0;i<n;i++) scanf("%s",sr[i]);
+    my_scanf("%d",&n);
+    for(i=0;i<n;i++) my_scanf("%s",sr[i]);
     for(i=0;i<n;i++){
               
                      for(j=1;sr[i][j]!='\0';j++){
@@ -16,8 +16,8 @@ int main_bench()
                                            break;
                                            }
                                       }
-                      if(sum[i]==0) printf("no\n");
-                      else printf("yes\n");
+                      if(sum[i]==0) my_printf("no\n");
+                      else my_printf("yes\n");
                       }                 
     
     return 0;

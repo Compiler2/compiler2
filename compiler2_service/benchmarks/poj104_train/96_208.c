@@ -7,9 +7,9 @@ int main_bench()
 	gets(s);
 	len=strlen(s);
 	if(len==1)
-	{printf("0\n%d",s[0]-48);}
+	{my_printf("0\n%d",s[0]-48);}
 	else if(len==2&&(s[0]-48)*10+(s[1]-48)<13)
-		printf("0\n%d",(s[0]-48)*10+s[1]-48);
+		my_printf("0\n%d",(s[0]-48)*10+s[1]-48);
 	else
 	{for(i=0;i<len;i++)
 		s[i]=s[i]-48;
@@ -20,8 +20,8 @@ int main_bench()
 	count++;
 	}
      for(i=0;i<count;i++)
-		printf("%d",a[i]);
-	 printf("\n%d",s[i+1]);
+		my_printf("%d",a[i]);
+	 my_printf("\n%d",s[i+1]);
 	}
 	else 
 	{a[0]=(s[0]*100+s[1]*10+s[2])/13;
@@ -32,8 +32,8 @@ int main_bench()
 	num++;
 	 }
 	for(i=0;i<num;i++)
-		printf("%d",a[i]);
-	printf("\n%d",s[i+1]);
+		my_printf("%d",a[i]);
+	my_printf("\n%d",s[i+1]);
 	}
 	}
 	return 0;

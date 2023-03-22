@@ -10,8 +10,8 @@ int main_bench()
 	int  year2,  month2,  day2;
 	int  result = 0;
 
-	scanf( "%d %d %d",  &year1,  &month1,  &day1);
-	scanf( "%d %d %d",  &year2,  &month2,  &day2);
+	my_scanf( "%d %d %d",  &year1,  &month1,  &day1);
+	my_scanf( "%d %d %d",  &year2,  &month2,  &day2);
 	
 	if(year1==year2)
 	{
@@ -41,7 +41,7 @@ int main_bench()
 		c = DiJiTian(year2, month2, day2);
 		result=a+b+c;
 	}
-	printf("%d",result);
+	my_printf("%d",result);
 	return 0;
 }
 int isRunNian(int year){

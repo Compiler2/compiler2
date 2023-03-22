@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,a,b,c,d,s;
-	scanf("%d",&n);
-	if(n==10000) printf("00001");
-	else if(n==1000) printf("0001");
-	else if(n==100) printf("001");
-	else if(n==10) printf("01");
+	my_scanf("%d",&n);
+	if(n==10000) my_printf("00001");
+	else if(n==1000) my_printf("0001");
+	else if(n==100) my_printf("001");
+	else if(n==10) my_printf("01");
 	else
 	{
 		if(n/1000>0)
@@ -17,7 +17,7 @@ int main_bench()
 	 	    c=((n-a-b*10)/100)%10;
 		    d=n/1000;
 		    s=a*1000+b*100+c*10+d;
-			printf("%d",s);
+			my_printf("%d",s);
 		}
 		else
 		{
@@ -27,7 +27,7 @@ int main_bench()
 				b=((n-a)/10)%10;
 				c=n/100;
 				s=a*100+b*10+c;
-				printf("%d",s);
+				my_printf("%d",s);
 			}
 			else
 			{
@@ -36,9 +36,9 @@ int main_bench()
 					a=n%10;
 					b=n/10;
 					s=a*10+b;
-					printf("%d",s);
+					my_printf("%d",s);
 				}
-				else printf("%d",n);
+				else my_printf("%d",n);
 			}
 		}
 	}

@@ -45,16 +45,16 @@ int isRunNian(int year)
  int main_bench()
   {
    int n,j;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(j=0;j<n;j++)
    {
      int a,b,c,d;
-     scanf("%d%d%d",&a,&b,&c);
+     my_scanf("%d%d%d",&a,&b,&c);
      d= DiJiTian(a,c,1)- DiJiTian(a,b,1);
      if(d%7==0)
-     printf("YES\n");
+     my_printf("YES\n");
      else 
-     printf("NO\n");
+     my_printf("NO\n");
     }
  return 0;
 }

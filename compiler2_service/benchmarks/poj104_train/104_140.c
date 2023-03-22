@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n1,n2,n1_[100],n2_[100],i=0,j=0;
-	scanf("%d%d",&n1,&n2);
+	my_scanf("%d%d",&n1,&n2);
 	do
 	{
 		n1_[i]=n1;
@@ -23,5 +23,5 @@ int main_bench()
 		if(n1_[i]!=n2_[j])
 			break;
 	}
-	printf("%d",n1_[i+1]);
+	my_printf("%d",n1_[i+1]);
 }

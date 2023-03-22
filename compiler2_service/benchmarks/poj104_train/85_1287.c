@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,p,k,m,o;
 	char zfc[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 	}
 	for(i=0;i<n;i++){
 		o=0;
@@ -25,9 +25,9 @@ int main_bench()
 			}
 		}
 		if(o==0){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

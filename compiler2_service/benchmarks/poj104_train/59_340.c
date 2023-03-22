@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,k=0,m,s=0;
 	char a[105][105],b[105][105];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
@@ -12,7 +12,7 @@ int main_bench()
 	}
 	for(i=0;i<=n;i++)
 		a[i][n]=a[n][i]='#';
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<=n;j++)
 		for(k=0;k<=n;k++)
 				b[j][k]=a[j][k];
@@ -46,7 +46,7 @@ int main_bench()
 		for(j=0;j<n;j++)
 		{if(a[i][j]=='@')
 		s++;}
-			printf("%d",s);
+			my_printf("%d",s);
 	return 0;
 }
 

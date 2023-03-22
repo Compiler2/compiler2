@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,k,i,j,count=0;
 	int *a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=(int*)malloc(n*sizeof(int));
 	for(i=0;i<=n-1;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&k);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&k);
 	for(i=0;i<=n-1-count;i++)
 	{
 		if(a[i]==k)
@@ -20,9 +20,9 @@ int main_bench()
 		}
 		
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<=n-1-count;i++)
-		printf(" %d",a[i]);
-	printf("\n");
+		my_printf(" %d",a[i]);
+	my_printf("\n");
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,a[12],w,s;
 	s=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	a[0]=a[12]=0;
 	for(i=1;i<12;i++){
 		if(i==2)
@@ -16,7 +16,7 @@ int main_bench()
 	for(i=0;i<12;i++){
 		s=s+a[i];
 		if((s+w)%7==0)
-			printf("%d\n",i+1);}
+			my_printf("%d\n",i+1);}
 	return 0;
 }
 

@@ -6,10 +6,10 @@ int main_bench()
 	int i,j,k=0,l1,l2,x[1000];
 	for(i=0;i<100;i++)
 		x[i]=-1;
-	scanf("%s%s",c1,c2);
+	my_scanf("%s%s",c1,c2);
 	l1=strlen(c1);l2=strlen(c2);
 	if(l1!=l2)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<l1;i++)
@@ -32,11 +32,11 @@ loop:if(1);
 				continue;
 			else
 			{
-				printf("NO");
+				my_printf("NO");
 				goto loop1;
 			}
 		}
-		printf("YES");
+		my_printf("YES");
 loop1:if(1);
 	}
 }

@@ -10,7 +10,7 @@ int main_bench(){
 	int m,n,h=0;
 	int a[100],j=0,y=0;
 	while(h==0){
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if((n==0)&&(m==0)){
 	h=1;
 	}
@@ -19,6 +19,6 @@ int main_bench(){
 		y+=1;
 		}
 	for(j=0;j<y-1;j++){
-	printf("%d\n",a[j]);}
+	my_printf("%d\n",a[j]);}
 	return 0;
 }

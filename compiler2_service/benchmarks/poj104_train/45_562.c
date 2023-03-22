@@ -3,7 +3,7 @@
 main_bench()
 {char str[50],substr[50],*p;
  int i,len;
- scanf("%s%s",substr,str);
+ my_scanf("%s%s",substr,str);
  len=strlen(substr);
  p=str;
  while(*p!='\0')
@@ -13,5 +13,5 @@ main_bench()
 	 if(flag==1)break;
 	 p++;
 	}
- printf("%d",p-str);
+ my_printf("%d",p-str);
 }

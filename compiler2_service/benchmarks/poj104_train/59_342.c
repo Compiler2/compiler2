@@ -6,13 +6,13 @@ int main_bench()
 	char a[100][100];
 	char x[100][100];
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		strcmp(x[i],a[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<m;k++)
 	{
 		for(b=0;b<n;b++)
@@ -64,6 +64,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

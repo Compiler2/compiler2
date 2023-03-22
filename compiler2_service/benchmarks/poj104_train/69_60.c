@@ -30,7 +30,7 @@ int main_bench()
 			begin = i;
 	}
 	for (int i = begin; i >= 0; i --)
-		printf("%d", an1[i]);
+		my_printf("%d", an1[i]);
 	
 	return 0;
 }

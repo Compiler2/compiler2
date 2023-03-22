@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int Y, M, D, m, m1=0, n1, n2, n3, n, i;
-	scanf("%d%d%d", &Y, &M, &D);
+	my_scanf("%d%d%d", &Y, &M, &D);
 	if((Y-1)%400==0)
 	{
 		n1=0;
@@ -50,32 +50,32 @@ int main_bench()
     n=n1+n2+n3-2;
     if(n%7==1)
     {
-        printf("Mon.");
+        my_printf("Mon.");
     }
     else if(n%7==2)
     {
-        printf("Tue.");
+        my_printf("Tue.");
     }
     else if(n%7==3)
     {
-         printf("Wed.");
+         my_printf("Wed.");
     }
     else if(n%7==4)
     {
-         printf("Thu.");
+         my_printf("Thu.");
     }
     else if(n%7==5)
     {
-         printf("Fri.");
+         my_printf("Fri.");
     }
     else if(n%7==6)
     {
-         printf("Sat.");
+         my_printf("Sat.");
     }
     else 
     {
-         printf("Sun.");
+         my_printf("Sun.");
     }
-    scanf(" ");
+    my_scanf(" ");
     return 0;
 }

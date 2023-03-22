@@ -10,11 +10,11 @@ int main_bench()
 	for(i=0;i<n-1;i++)
 	{
 		qp=*ptr+*(ptr+1);
-		printf("%c",qp);
+		my_printf("%c",qp);
 		ptr++;
 	}
 	head=&ori[0];
 	tail=&ori[n-1];
 	qp=*head+*tail;
-	printf("%c\n",qp);
+	my_printf("%c\n",qp);
 }

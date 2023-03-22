@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     int sz[1000][2];
 	int i;
 	double a,b,c;
 	for(i=0;i<n;i++){
-		scanf("%d %d\n",&(sz[i][0]),&(sz[i][1]));
+		my_scanf("%d %d\n",&(sz[i][0]),&(sz[i][1]));
 	}
    	for(i=0;i<n;i++){
 		if(i==0){
@@ -17,16 +17,16 @@ int main_bench(){
 			 if(a>=b){
 				 double c=a-b;
 				 if(c>0.05){
-					 printf("worse\n");
+					 my_printf("worse\n");
 				 }else{
-					 printf("same\n");
+					 my_printf("same\n");
 				 }
 			 }else{
 				 double c=b-a;
 				 if(c>0.05){
-					 printf("better\n");
+					 my_printf("better\n");
 				 }else{
-					 printf("same\n");
+					 my_printf("same\n");
 				 }
 			 }
 		}

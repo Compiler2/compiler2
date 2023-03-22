@@ -41,12 +41,12 @@ int main_bench()
 	char str=',';
 	for(i=0;str==',';i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		str=getchar();
 	}
 	n=i;
 	if(n==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -58,9 +58,9 @@ int main_bench()
 				t=1;
 			}
 		if(t==0)
-			printf("No");
+			my_printf("No");
 		else
-			printf("%d",max_2);
+			my_printf("%d",max_2);
 	}
-	printf("\n");
+	my_printf("\n");
 }

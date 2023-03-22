@@ -28,15 +28,15 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&t[i][j]);
+			my_scanf("%d",&t[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int p;
 	p=change(t,n,m);
 	if(p==0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else if(p==1)
 	{
@@ -44,10 +44,10 @@ int main_bench()
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",t[i][j]);
+				my_printf("%d",t[i][j]);
 				if(i!=4 && j==4)
 				{
-					printf("\n");
+					my_printf("\n");
 				}
 				else if(i==4 && j==4)
 				{
@@ -55,7 +55,7 @@ int main_bench()
 				}
 				else
 				{
-					printf(" ");
+					my_printf(" ");
 				}
 			}
 		}

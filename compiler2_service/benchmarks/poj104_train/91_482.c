@@ -10,7 +10,7 @@ int main_bench(){
 	}
 	b[length-1]=a[0]+a[length-1];
 	b[length]=0;	
-	printf("%s",b);
-	scanf("%d",&stop);
+	my_printf("%s",b);
+	my_scanf("%d",&stop);
 	return 0;
 }

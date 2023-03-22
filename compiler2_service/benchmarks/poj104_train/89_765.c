@@ -8,7 +8,7 @@ int main_bench(){
 	int all;
 	int k,m;
 	int u,v;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	all=n*(n-1);
 	a=(int*)malloc(sizeof(int)*n);
 	b=(int*)malloc(sizeof(int)*n);
@@ -17,12 +17,12 @@ int main_bench(){
 		b[i]=0;
 	}
 	for(i=0;i<all;i++){
-		scanf("%d%d",&k,&m);
+		my_scanf("%d%d",&k,&m);
 		if((k!=0)||(m!=0)){
 			a[k]++;
 			b[m]++; 
 			if((b[m]==n-1)&&(a[m]==0)){
-				printf("%d",m);
+				my_printf("%d",m);
 				pd=1;
 			}
 		}
@@ -31,7 +31,7 @@ int main_bench(){
 		}
 	}
 	if(pd==0){
-		printf("NOT FOUND");
+		my_printf("NOT FOUND");
 	}
 	free(a);
 	free(b);

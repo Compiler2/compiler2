@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,n,s[500],a[100],j;
 	i=0,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s[0]=1,s[1]=2;
 	for(i=2;i<500;i++)
 	{
@@ -12,7 +12,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
     double z[499],b;
 	b=0;
@@ -27,7 +27,7 @@ int main_bench()
 		{
 			b+=z[j];
 		}
-		printf("%.3lf\n",b);
+		my_printf("%.3lf\n",b);
 	}
   return 0;
 }

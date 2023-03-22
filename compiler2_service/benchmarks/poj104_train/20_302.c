@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[20],substr[3],s[20];
 	int i,j=0,k,m;
-	while(scanf("%s %s",str,substr)==2)
+	while(my_scanf("%s %s",str,substr)==2)
 	{
 		m=strlen(str);
 		for(i=0;i<m;i++)
@@ -17,6 +17,6 @@ int main_bench()
 		for(i=j+1,k=0;i<j+4;i++,k++)
 			str[i]=substr[k];
 		str[m+3]='\0';
-		printf("%s\n",str);
+		my_printf("%s\n",str);
 	}
 }

@@ -6,9 +6,9 @@ int main_bench()
 	int a[100],b[100];
 	int *p1,*p2;
 	p2=b;p1=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	*p2=*p1;
 	for(i=1;i<n;i++)
 	{
@@ -23,6 +23,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m-1;i++)
-	printf("%d,",*(p2+i));
-	printf("%d",*(p2+m-1));
+	my_printf("%d,",*(p2+i));
+	my_printf("%d",*(p2+m-1));
 }

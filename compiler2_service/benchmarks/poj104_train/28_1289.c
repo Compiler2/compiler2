@@ -13,8 +13,8 @@ int main_bench()
 		{
 			if(sum!=0)
 			{
-				if(a!=0)printf(",%d",sum);
-				else if(a==0)printf("%d",sum);
+				if(a!=0)my_printf(",%d",sum);
+				else if(a==0)my_printf("%d",sum);
 				a++;
 				sum=0;
 			}

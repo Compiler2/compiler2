@@ -5,12 +5,12 @@ int main_bench()
 {   
 	int  i,j,n=0,temp1,temp2;
 	char c1[100],c2[100];
-	scanf("%s",c1);
-	scanf("%s",c2);
+	my_scanf("%s",c1);
+	my_scanf("%s",c2);
 
 	if(strlen(c1)!=strlen(c2))
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 
 	else
@@ -50,11 +50,11 @@ int main_bench()
 		}
 		if(n==strlen(c1))
 		{
-			printf("YES");
+			my_printf("YES");
 		}
 		else
 		{
-			printf("NO");
+			my_printf("NO");
 		}
 
 

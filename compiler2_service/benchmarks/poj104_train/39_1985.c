@@ -14,11 +14,11 @@ int main_bench()
 		int a;
 		int money;
 	}stu,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	max.money=-1;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu.name,&stu.FinalScore,
+		my_scanf("%s %d %d %c %c %d",stu.name,&stu.FinalScore,
 		&stu.ClassScore,&stu.u,&stu.w,&stu.a);
 		stu.money=0;
 		if(stu.FinalScore>80&&stu.a>0)
@@ -35,5 +35,5 @@ int main_bench()
 		if(stu.money>max.money)
 			max=stu;
 	}
-	printf("%s\n%d\n%d\n",max.name,max.money,total);
+	my_printf("%s\n%d\n%d\n",max.name,max.money,total);
 }

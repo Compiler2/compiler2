@@ -2,9 +2,9 @@
 
 int main_bench(){ 
 	int n,j,i,t,k=0,sr[501]={0},px[501]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-	scanf("%d",&sr[i]);
+	my_scanf("%d",&sr[i]);
 	}
     for(i=1;i<=n;i++){
 		if(sr[i]%2==1){
@@ -21,10 +21,10 @@ int main_bench(){
 		}
 	}
 	for(i=k;i>=1;i--){
-	printf("%d",px[i]);
+	my_printf("%d",px[i]);
 	if(i==1){
 	break;}
-	printf(",");
+	my_printf(",");
 	}
 
 

@@ -12,10 +12,10 @@ int main_bench()
 		char name[20];
 		char west,office;
 	}student[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",student[i].name,&student[i].a,&student[i].b,&student[i].office,&student[i].west,&student[i].c);
+		my_scanf("%s %d %d %c %c %d",student[i].name,&student[i].a,&student[i].b,&student[i].office,&student[i].west,&student[i].c);
 		student[i].sum=0;
 	}
 	for(i=0;i<n;i++)
@@ -54,6 +54,6 @@ int main_bench()
 			strcpy(maxname,student[i].name);
 		}
 	}
-	printf("%s\n%d\n%d",maxname,max,total);
+	my_printf("%s\n%d\n%d",maxname,max,total);
 	return 0;
 }

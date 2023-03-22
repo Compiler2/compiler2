@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y,m,d,n=0,k,i,x,a[13]={0,31,0,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if ((y%100==0&&y%400==0)||(y%100!=0&&y%4==0))
 		a[2]=29;
 	else
@@ -21,25 +21,25 @@ int main_bench()
 	switch (k)
 	{
 	case 0:
-		printf("Mon.");
+		my_printf("Mon.");
 		break;
 	case 1:
-		printf("Tue.");
+		my_printf("Tue.");
 		break;
 	case 2:
-		printf("Wed.");
+		my_printf("Wed.");
 		break;
 	case 3:
-		printf("Thu.");
+		my_printf("Thu.");
 		break;
 	case 4:
-		printf("Fri.");
+		my_printf("Fri.");
 		break;
 	case 5:
-		printf("Sat.");
+		my_printf("Sat.");
 		break;
 	case 6:
-		printf("Sun.");
+		my_printf("Sun.");
 		break;
 	}
 	return 0;

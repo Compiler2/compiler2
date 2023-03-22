@@ -20,11 +20,11 @@ void paixu(char a[])
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	paixu(a);
 	paixu(b);
 	if(strcmp(a,b)==0)
-		printf("YES");
+		my_printf("YES");
 	else 
-		printf("NO");
+		my_printf("NO");
 }

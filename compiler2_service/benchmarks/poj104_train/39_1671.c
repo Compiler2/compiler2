@@ -11,13 +11,13 @@ int main_bench()
 		char a,b;
 		int n;
 	}q[100];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
 		char y[20];
 		int m11,m22,n11;
 		char a1,b1;
-		scanf("%s %d %d %c %c %d",y,&m11,&m22,&a1,&b1,&n11);
+		my_scanf("%s %d %d %c %c %d",y,&m11,&m22,&a1,&b1,&n11);
 		strcpy(q[i].p,y);
 		q[i].m1=m11;
 		q[i].m2=m22;
@@ -60,9 +60,9 @@ int main_bench()
 	{
 		if(sum==x[i])
 		{
-			printf("%s\n",q[i].p);
-			printf("%d\n",sum);
-			printf("%d\n",total);
+			my_printf("%s\n",q[i].p);
+			my_printf("%d\n",sum);
+			my_printf("%d\n",total);
 		    break;
 		}
 		

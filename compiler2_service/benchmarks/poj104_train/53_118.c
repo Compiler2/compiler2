@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,j,elem[200],s=0;
 	int *p=elem;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
 	{
 		for(j=0,s=0;j<i;j++)
@@ -18,7 +18,7 @@ int main_bench()
 		}
 		if(s==0)
 		{
-			printf(",%d",*(p+i));
+			my_printf(",%d",*(p+i));
 		}
 	}
 }

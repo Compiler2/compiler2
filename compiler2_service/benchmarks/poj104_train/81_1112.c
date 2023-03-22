@@ -5,14 +5,14 @@ int main_bench()
 	int a[5][5],n,m,i,j,t,flag;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-    scanf("%d %d",&m,&n);
+			my_scanf("%d",&a[i][j]);
+    my_scanf("%d %d",&m,&n);
 	if(m>=0&&m<=4&&n>=0&&n<=4)
 		flag=1;
 	else
 		flag=0;
 	if(flag==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(j=0;j<5;j++)
@@ -25,12 +25,12 @@ int main_bench()
 		for(j=0;j<5;j++)
 		{
 			if(i==4&&j==4)
-				printf("%d",a[4][4]);
+				my_printf("%d",a[4][4]);
 			else
 				if(j==4)
-				    printf("%d\n",a[i][j]);
+				    my_printf("%d\n",a[i][j]);
 				else
-					printf("%d ",a[i][j]);
+					my_printf("%d ",a[i][j]);
 		}
 	}
     return 0;

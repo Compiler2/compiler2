@@ -6,20 +6,20 @@ int main_bench()
 	float male[40], female[40];
 	char s[10];
 	float t;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	n_m = 0;
 	n_f = 0;
 	for(i = 1; i <= n; i++)
 	{
-		scanf("%s", s);
+		my_scanf("%s", s);
 		if(s[0] == 'm')
 		{
-			scanf("%f", &male[n_m]);
+			my_scanf("%f", &male[n_m]);
 			n_m++;
 		}
 		else
 		{
-			scanf("%f", &female[n_f]);
+			my_scanf("%f", &female[n_f]);
 			n_f++;
 		}
 	}
@@ -44,9 +44,9 @@ int main_bench()
 			}
 		}
 	for(i = 0; i <= n_m - 1; i++)
-		printf("%.2f ", male[i]);
+		my_printf("%.2f ", male[i]);
 	for(i = 0; i < n_f - 1; i++)
-		printf("%.2f ", female[i]);
-	printf("%.2f\n", female[n_f - 1]);
+		my_printf("%.2f ", female[i]);
+	my_printf("%.2f\n", female[n_f - 1]);
 	return 0;
 }

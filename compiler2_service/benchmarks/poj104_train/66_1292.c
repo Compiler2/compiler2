@@ -16,7 +16,7 @@ int main_bench()
 {
 	int leap(int x);
 	int y,m,d,p=0;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	int i;
 	int sumy=0,summ=0;
 	for(i=1;i<=(y-1)%400;i++){
@@ -44,25 +44,25 @@ int main_bench()
 
 	switch(p){
 	case 1:
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 		break;
 	case 2:
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 		break;
 	case 3:
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 		break;
 	case 4:
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 		break;
 	case 5:
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 		break;
 	case 6:
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 		break;
 	case 0:
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 		break;
 	}
 }

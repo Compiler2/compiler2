@@ -18,7 +18,7 @@ for(i=0;i<lb;i++)
    if(b[i]>96 && b[i]<123) sb+=b[i];
    else if(b[i]>64 && b[i]<91) sb+=b[i]+32;
 }
-if(sa>sb) printf(">");
-else if(sa<sb) printf("<");
-else printf("=");
+if(sa>sb) my_printf(">");
+else if(sa<sb) my_printf("<");
+else my_printf("=");
 }

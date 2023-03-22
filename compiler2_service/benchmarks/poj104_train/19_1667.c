@@ -15,18 +15,18 @@ int main_bench()
 			t[j]='\0';
         if(strcmp(a,t)==0)
 		{
-			printf("%s",b);
+			my_printf("%s",b);
 
 		}
         else
         {
-			printf("%s",t);
+			my_printf("%s",t);
         }
  		if(i==strlen(s))
 		{
-			printf("\0");
+			my_printf("\0");
 		}
-		else printf(" ");
+		else my_printf(" ");
 	}
         return 0;
 }

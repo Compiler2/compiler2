@@ -53,13 +53,13 @@ int main_bench()
 	    if(a[i]==b[0])
 			break;
 	for(j=i-a[i];j<i;j++)
-		printf("%c",str[j]);
-	printf("\n");
+		my_printf("%c",str[j]);
+	my_printf("\n");
 	for(i=0;i<=n;i++)
 	    if(a[i]==b[k])
 			break;
 	for(j=i-a[i];j<i;j++)
-		printf("%c",str[j]);
-    printf("\n");
+		my_printf("%c",str[j]);
+    my_printf("\n");
 }
 	

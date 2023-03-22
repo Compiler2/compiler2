@@ -4,9 +4,9 @@ int main_bench(){
 int r;
 int i=1,j=0;
 char ch[1000][256];
-scanf("%d",&r);
+my_scanf("%d",&r);
 for(i=1;i<=r;i++){
-   scanf("%s",ch[i]);
+   my_scanf("%s",ch[i]);
 }
 i=1;
 int p;
@@ -34,7 +34,7 @@ int p;
 i=1;
 for(i=1;i<=r;i++){
 	
-	printf("%s\n",ch[i]);
+	my_printf("%s\n",ch[i]);
 
 } 
  return 0;

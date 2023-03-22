@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,m,n;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if(a%400==0||a%4==0 && a%100!=0)
 	{
 		m=29;
@@ -61,6 +61,6 @@ int main_bench()
 	  else
 		  n=31+m+31+30+31+30+31+31+30+31+30+c;
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
  int w=0;
  int q=0;
  int i=1;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  while(i<=n){
-	 scanf("%d",&b);
+	 my_scanf("%d",&b);
 	 if(b>=w){
 		 q=w;
 		 w=b;
@@ -20,6 +20,6 @@ int main_bench()
 	 }
 	 i++;
  }
- printf("%d\n%d\n",w,q);
+ my_printf("%d\n%d\n",w,q);
  return 0;
 }

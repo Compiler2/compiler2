@@ -3,12 +3,12 @@
 int main_bench()
 { 
     int k,i,j,a,b,c,m,n;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=0;i<k;i++)
     {
                     m=0;
                     n=0; 
-                    scanf("%d %d %d",&a,&b,&c);
+                    my_scanf("%d %d %d",&a,&b,&c);
                     if(((a%4==0)&&(a%100!=0))||((a%100==0)&&(a%400==0))) 
                     {
                                                                          for(j=1;j<b;j++) 
@@ -116,9 +116,9 @@ int main_bench()
                                                            }
                     }
                     if((m-n)%7==0) 
-                    printf("YES\n");
+                    my_printf("YES\n");
                     else
-                    printf("NO\n");
+                    my_printf("NO\n");
     } 
 } 
                      

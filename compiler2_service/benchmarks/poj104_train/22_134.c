@@ -25,8 +25,8 @@ int main_bench()
 				a[k]=a[k+1];
 				a[k+1]=t;
 			}
-	if(j==0||a[0]==a[j]) printf("No\n");
+	if(j==0||a[0]==a[j]) my_printf("No\n");
 		else
 			for(i=1;i<=j;i++)
-				if(a[i]!=a[0]) {printf("%d\n",a[i]);break;}
+				if(a[i]!=a[0]) {my_printf("%d\n",a[i]);break;}
 }

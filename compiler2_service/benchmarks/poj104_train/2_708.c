@@ -8,10 +8,10 @@ char zimu[28]="ABCDEFGJIJKLMNOPQRSTUVWXYZ";
 int main_bench()
 {
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&id[i],&writer[i]);
+		my_scanf("%d%s",&id[i],&writer[i]);
 		len[i]=strlen(writer[i]);
 	}
 	for(i=0;i<26;i++)
@@ -37,7 +37,7 @@ int main_bench()
 	{	max=times[i];
 		tmax=i;
 	}}
-	printf("%c\n",zimu[tmax]);
+	my_printf("%c\n",zimu[tmax]);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<len[i];j++)
@@ -46,13 +46,13 @@ int main_bench()
 			{book++;}
 		}
 	}
-	printf("%d\n",book);
+	my_printf("%d\n",book);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<len[i];j++)
 		{
 			if(writer[i][j]==zimu[tmax])
-			{printf("%d\n",id[i]);}
+			{my_printf("%d\n",id[i]);}
 		}
 	}
 

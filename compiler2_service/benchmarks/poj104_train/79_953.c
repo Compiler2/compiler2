@@ -23,7 +23,7 @@ main_bench()
       int n,m,k,s=0,b[30],zhi;
       for(k=0;k<30;k++)
       {
-      scanf("%d%d",&n,&m);
+      my_scanf("%d%d",&n,&m);
       if(n==0&&m==0)
       break;
       else
@@ -32,7 +32,7 @@ main_bench()
       }
       for(k=0;k<s;k++)
       {
-      printf("%d\n",b[k]);
+      my_printf("%d\n",b[k]);
       }
       getchar();
       getchar();

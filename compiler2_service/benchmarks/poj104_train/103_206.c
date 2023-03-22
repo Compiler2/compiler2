@@ -6,7 +6,7 @@ main_bench()
       i>=0;
       i<=1000;
       char a[1000];
-      scanf("%s",a);
+      my_scanf("%s",a);
       count=1;      
       for(i=0;i<=1000;i++)
       {
@@ -23,7 +23,7 @@ main_bench()
             }
             else
             {
-                printf("(%c,%d)",a[i],count);
+                my_printf("(%c,%d)",a[i],count);
                 count=1;   
             }
       }

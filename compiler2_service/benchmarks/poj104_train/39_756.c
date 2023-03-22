@@ -7,10 +7,10 @@ int main_bench()
 	int s[100][4];
 	char x;
 	char g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		s[i][3]=0;
-		scanf("%s%d%d %c %c%d",name[i],&s[i][0],&s[i][1],&g,&x,&s[i][2]);
+		my_scanf("%s%d%d %c %c%d",name[i],&s[i][0],&s[i][1],&g,&x,&s[i][2]);
 		if(s[i][0]>80){
 			if(s[i][2]!=0){
 				s[i][3]=s[i][3]+8000;
@@ -36,7 +36,7 @@ int main_bench()
 		}
 		totle=totle+s[i][3];
 	}
-	printf("%s",name[m]);
-	printf("\n%d\n%d",mast,totle);
+	my_printf("%s",name[m]);
+	my_printf("\n%d\n%d",mast,totle);
 	return 0;
 }

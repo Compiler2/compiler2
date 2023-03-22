@@ -22,9 +22,9 @@ int main_bench(){
 			}
 		}
 		if(c>0){
-			printf("no\n");
+			my_printf("no\n");
 		}else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

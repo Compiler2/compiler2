@@ -30,13 +30,13 @@ int fenjie(int a,int b)
 int main_bench()
 { 
 	int n,a[100],i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=1;i<=n;i++)
 	{
 
-		scanf("%d",&k);
-		printf("%d\n",fenjie(k,2));
+		my_scanf("%d",&k);
+		my_printf("%d\n",fenjie(k,2));
 	}
 	return 0;
 }

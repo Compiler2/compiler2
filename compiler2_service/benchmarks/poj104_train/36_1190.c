@@ -10,10 +10,10 @@ int main_bench()
 		a2[i]=0;
 	}
 	t=0;
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	l1=strlen(s1);
 	l2=strlen(s2);
-	if (l1!=l2) printf("NO\n");
+	if (l1!=l2) my_printf("NO\n");
 	else
 	{
 		l=l1;
@@ -24,7 +24,7 @@ int main_bench()
 		}
 		t=0;
 		for (i=0;i<200;i++) if (a1[i]!=a2[i]) t=1;
-		if (t==0) printf("YES\n");
-		else printf("NO\n");
+		if (t==0) my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 }

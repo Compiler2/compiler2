@@ -5,9 +5,9 @@ int main_bench()
     int a,b,c,n,k,i;
 i=0;
     int sz[10000];
-    scanf("%d %d",&n,&k);
+    my_scanf("%d %d",&n,&k);
     for(a=0;a<n;a++){
-      scanf("%d ",&(sz[a]));
+      my_scanf("%d ",&(sz[a]));
     }
     for(a=0;a<n;a++){
       for(b=n-1;b>a;b--){
@@ -20,10 +20,10 @@ i=0;
         }
       }
       if(i==n*(n-1)/2){
-        printf("no");
+        my_printf("no");
         break;
      }else if(i==n*n*n){
-         printf("yes"); 
+         my_printf("yes"); 
          break;
      }
    }

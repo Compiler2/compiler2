@@ -6,7 +6,7 @@ int main_bench()
 	char zm[300];
 	char fh[53]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	int fhd[53]={0};
-	scanf("%s",zm);
+	my_scanf("%s",zm);
 	for(i=0;i<52;i++){
 		fhd[i]=0;
 		for(a=0;a<300&&zm[a]!='\0';a++){
@@ -17,13 +17,13 @@ int main_bench()
 	}
 	for(i=0;i<52;i++){
 		if(fhd[i]>=1){
-			printf("%c=%d\n",fh[i],fhd[i]);
+			my_printf("%c=%d\n",fh[i],fhd[i]);
 			cd=1;
 		}
 		
 	}
 	if(cd==0){
-			printf("No");
+			my_printf("No");
 		}
 	return 0;
 }

@@ -17,7 +17,7 @@ int main_bench(){
 		}
 		i++;
 	}
-	for (i=mar[max1];i<mar[max1]+max;i++) printf("%c",a[i]);printf("\n");
-	for (i=mar[min1];i<mar[min1]+min;i++) printf("%c",a[i]);printf("\n");
+	for (i=mar[max1];i<mar[max1]+max;i++) my_printf("%c",a[i]);my_printf("\n");
+	for (i=mar[min1];i<mar[min1]+min;i++) my_printf("%c",a[i]);my_printf("\n");
     return 0;
 }

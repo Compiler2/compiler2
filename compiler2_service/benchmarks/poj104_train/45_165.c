@@ -7,7 +7,7 @@ int main_bench()
 	int c[100];
 	int length1,length2;
 	int i,k,m,s;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
     length1=strlen(a);
     length2=strlen(b);
 	for(i=0;i<length2;i++)
@@ -39,7 +39,7 @@ int main_bench()
 		}
 		if(m>=length1)
 		{
-			printf("%d",s);
+			my_printf("%d",s);
 			break;
 		}
 

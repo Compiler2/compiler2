@@ -117,7 +117,7 @@ char rechange(int a)
 {
       int a,b;
       char n[10000];
-      scanf("%d%s%d",&a,n,&b);
+      my_scanf("%d%s%d",&a,n,&b);
       int x,y;
       int i,j,k;
       x=strlen(n);
@@ -146,6 +146,6 @@ char rechange(int a)
       else if(y<b)
       {*p=rechange(y);}
        for(i=strlen(q)-1;i>=0;i--)
-      {printf("%c",q[i]);}
+      {my_printf("%c",q[i]);}
   return 0;
 }

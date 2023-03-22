@@ -2,16 +2,16 @@
 
 int main_bench(){
 int k,m,n,ans,i,j,x;
-scanf("%d",&k);
+my_scanf("%d",&k);
 while (k--){
-scanf("%d%d",&n,&m);ans=0;
+my_scanf("%d%d",&n,&m);ans=0;
 for (i=1;i<=n;i++){
 if(i==1||i==n)
-for (j=1;j<=m;j++) {scanf("%d",&x);ans+=x;}
+for (j=1;j<=m;j++) {my_scanf("%d",&x);ans+=x;}
 else
-for (j=1;j<=m;j++) {scanf("%d",&x);if(j==1||j==m) ans+=x;}
+for (j=1;j<=m;j++) {my_scanf("%d",&x);if(j==1||j==m) ans+=x;}
 }
-printf("%d\n",ans);
+my_printf("%d\n",ans);
 }
 return 0;
 }

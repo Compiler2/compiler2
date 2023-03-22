@@ -9,10 +9,10 @@ main_bench()
     {
       if(f(a[i])==1)a[i]-=32;
       if(f(b[i])==1)b[i]-=32;
-      if(a[i]<b[i]){printf("<");break;}
-      if(a[i]>b[i]){printf(">");break;}
+      if(a[i]<b[i]){my_printf("<");break;}
+      if(a[i]>b[i]){my_printf(">");break;}
     }
-    if(a[i]==b[i]&&a[i]=='\0')printf("=");
+    if(a[i]==b[i]&&a[i]=='\0')my_printf("=");
 
 
 }

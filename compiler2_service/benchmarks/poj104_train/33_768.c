@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,k,i,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<=n;k++){
 		char *p,s[256];
 		gets(s);
@@ -11,23 +11,23 @@ int main_bench()
 		for(p=s,i=0;*p;p++,i++){
 			if(i==l-1){			
 				if(*p=='A'){
-				printf("T\n");
+				my_printf("T\n");
 			}else if(*p=='T'){
-				printf("A\n");
+				my_printf("A\n");
 			}else if(*p=='C'){
-				printf("G\n");
+				my_printf("G\n");
 			}else if(*p=='G'){
-				printf("C\n");
+				my_printf("C\n");
 			}
 			}else{
 			if(*p=='A'){
-				printf("T");
+				my_printf("T");
 			}else if(*p=='T'){
-				printf("A");
+				my_printf("A");
 			}else if(*p=='C'){
-				printf("G");
+				my_printf("G");
 			}else if(*p=='G'){
-				printf("C");
+				my_printf("C");
 			}
 			}
 		}

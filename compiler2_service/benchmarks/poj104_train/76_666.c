@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int i,n,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[20001];
 	int ddz[500000];
 	int ddy[500000];
@@ -11,7 +11,7 @@ int main_bench(){
 	}
 
 	for(i=0;i<n;i++){
-		scanf("%d %d",&ddz[i],&ddy[i]);
+		my_scanf("%d %d",&ddz[i],&ddy[i]);
 	}
 	for(i=0;i<n;i++){
 		for(k=2*ddz[i];k<2*ddy[i]+1;k++){
@@ -45,9 +45,9 @@ int main_bench(){
 	}
 	
 	if(a>0){
-		printf("no");
+		my_printf("no");
 	}else{
-		printf("%d %d",ddz[0],ddy[n-1]);
+		my_printf("%d %d",ddz[0],ddy[n-1]);
 	}
 	return 0;
 }

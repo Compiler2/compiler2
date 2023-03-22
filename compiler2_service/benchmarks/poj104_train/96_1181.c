@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[101];
 	int a[101]={0},b[101]={0},n,i,j,k,t,m,x;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	k=strlen(s);
 	for(i=0;i<k;i++)
 	{
@@ -12,20 +12,20 @@ int main_bench()
 	}
 	if(k==1)
 	{
-		printf("%d\n",0);
-		printf("%d\n",a[0]);
+		my_printf("%d\n",0);
+		my_printf("%d\n",a[0]);
 	}
 	else if(k==2)
 	{
 		if((a[1]+a[0]*10)>=13)
 		{
-		    printf("%d\n",(a[0]*10+a[1])/13);
-			printf("%d\n",(a[1]+a[0]*10)%13);
+		    my_printf("%d\n",(a[0]*10+a[1])/13);
+			my_printf("%d\n",(a[1]+a[0]*10)%13);
 		}
 		else
 		{
-			printf("%d\n",0);
-			printf("%d\n",a[0]*10+a[1]);
+			my_printf("%d\n",0);
+			my_printf("%d\n",a[0]*10+a[1]);
 		}
 	}
 	else
@@ -47,9 +47,9 @@ int main_bench()
 		}
 		for(j=x+1;j<m;j++)
 		{
-			printf("%d",b[j]);
+			my_printf("%d",b[j]);
 		}
-		printf("\n");
-		printf("%d\n",t);
+		my_printf("\n");
+		my_printf("%d\n",t);
 	}
 }

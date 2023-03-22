@@ -16,9 +16,9 @@ int main_bench()
 		}
 		else if(*p==' '&&n!=0)
 		{
-			printf("%d,",n);
+			my_printf("%d,",n);
 			n=0;
 		}
 	}
-	printf("%d",n-1);
+	my_printf("%d",n-1);
 }

@@ -15,13 +15,13 @@ void ox( int a[5][5], int m, int n)
 				for(i=0;i<=4;i++)
 		{
 			for(j=0;j<=3;j++)
-				printf("%d ",a[i][j]);
-			printf("%d",a[i][4]);
-                        printf("\n");
+				my_printf("%d ",a[i][j]);
+			my_printf("%d",a[i][4]);
+                        my_printf("\n");
 		}
 		}
 		else
-			printf("error\n");
+			my_printf("error\n");
 		
 }
 int main_bench()
@@ -29,8 +29,8 @@ int main_bench()
 	int m,n,i,j,a[5][5];
 	for(i=0;i<=4;i++)
 		for(j=0;j<=4;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d%d",&m,&n);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&m,&n);
 	ox(a,m,n);
 }
 	

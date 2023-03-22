@@ -24,8 +24,8 @@ int main_bench()
 		}
 	}
 	for(i=0;i<a;i++){
-		printf("%s ",word[i]);
+		my_printf("%s ",word[i]);
 	}
-	printf("%s\n",word[a]);
+	my_printf("%s\n",word[a]);
 	return 0;
 }

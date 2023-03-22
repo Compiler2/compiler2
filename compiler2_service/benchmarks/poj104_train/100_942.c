@@ -21,12 +21,12 @@ int main_bench()
 	{
 		if(ch[i]!=0)
 		{
-			printf("%c=%d\n",c[i],ch[i]);
+			my_printf("%c=%d\n",c[i],ch[i]);
 	        t++;
 		}
 	}
 
 	if(t==0)
-		printf("No");
+		my_printf("No");
 	return 0;
 }

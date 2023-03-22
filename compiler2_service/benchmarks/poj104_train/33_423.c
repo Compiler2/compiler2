@@ -3,25 +3,25 @@
 int main_bench(){
 int n;
 char c[300];
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for (int j=0;j<n;j++){
    gets(c);
    for (int i=0;i<strlen(c);i++){
 	 if (c[i]=='A') {
-      printf("T");
+      my_printf("T");
      }
      if (c[i]=='T') {
-      printf("A");
+      my_printf("A");
      }
      if (c[i]=='G') {
-      printf("C");
+      my_printf("C");
      }
      if (c[i]=='C') {
-      printf("G");
+      my_printf("G");
      }
     if (i==(strlen(c)-1)){
-      printf("\n");
+      my_printf("\n");
 	 }
 	}
 }

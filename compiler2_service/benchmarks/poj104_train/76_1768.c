@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,k,m,c,h;
 	double e;
 	int p[50001],q[50001],s[5001],t[50001];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&p[i],&q[i]);
+		my_scanf("%d%d",&p[i],&q[i]);
 		s[i]=p[i];
 		t[i]=q[i];
 	}
@@ -33,11 +33,11 @@ int main_bench(){
                 h++;
 		}
 		if(h==n){
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d",p[0],q[0]);
+	my_printf("%d %d",p[0],q[0]);
 
 	return 0;
 }

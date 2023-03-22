@@ -12,10 +12,10 @@ int main_bench()
              continue; 
                     
         }
-        printf("%c",a[i]);
+        my_printf("%c",a[i]);
     }
     
-     printf("%c",a[strlen(a)-1]);
+     my_printf("%c",a[strlen(a)-1]);
     
 
     return 0;

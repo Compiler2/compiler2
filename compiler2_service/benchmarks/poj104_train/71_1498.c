@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,year,month1,month2,i,j,m,x;  
   
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=0;j<n;j++){
-      scanf("%d%d%d", &year,&month1,&month2);
+      my_scanf("%d%d%d", &year,&month1,&month2);
        int total1 = 0;
 	   int total2 = 0;
       for(i=1; i < month1; i++)
@@ -61,9 +61,9 @@ int main_bench()
       }
       x=m%7;
       if(x==0){
-          printf("YES\n");
+          my_printf("YES\n");
       }else{
-          printf("NO\n");
+          my_printf("NO\n");
       }
     }
     return 0;	

@@ -10,9 +10,9 @@ struct student
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&stu[i].num, &stu[i].yu, &stu[i].shu);
+		my_scanf("%d %d %d",&stu[i].num, &stu[i].yu, &stu[i].shu);
 		stu[i].sum=stu[i].shu+stu[i].yu;
 	}
 	int k,e;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<3;i++){
-		printf("%d %d\n",stu[i].num,stu[i].sum);
+		my_printf("%d %d\n",stu[i].num,stu[i].sum);
 	}
 	return 0;
 }

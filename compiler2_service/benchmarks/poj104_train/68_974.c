@@ -9,7 +9,7 @@ int main_bench()
 	sushu[1]=3;
 	k=2;
 	biaoji[2]=biaoji[3]=biaoji[5]=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=5;i<n;i=i+2)
 	{
 		count=0;
@@ -36,7 +36,7 @@ int main_bench()
 		{
 			if (biaoji[i-sushu[j]]==1)
 			{
-				printf("%d=%d+%d\n",i,sushu[j],i-sushu[j]);
+				my_printf("%d=%d+%d\n",i,sushu[j],i-sushu[j]);
 				count=1;
 				break;
 			}

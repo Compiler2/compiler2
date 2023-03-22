@@ -4,12 +4,12 @@ int main_bench()
 {
 	int b[1000]={0};
 	int a,i,j,k=0,d=0,l=0,c=0,temp=0;
-	scanf("%d\n",&a);
+	my_scanf("%d\n",&a);
 	for(i=0;i<a;i++)
 	{
 		for(j=0;j<a;j++)
 		{
-			scanf("%d",&b[j]);
+			my_scanf("%d",&b[j]);
 		}
 		for(j=0;j<a;j++)
 		{
@@ -33,5 +33,5 @@ int main_bench()
 				continue;
 			}
 	}
-	printf("%d\n",(k-2)*(l-2));
+	my_printf("%d\n",(k-2)*(l-2));
 }

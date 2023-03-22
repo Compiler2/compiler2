@@ -5,9 +5,9 @@ int main_bench() {
     char s[1000],t[1000];
     int len;
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while (n-->0) {
-        scanf("%s",s);
+        my_scanf("%s",s);
         len = strlen(s);
         memset(t,' ',len);
         t[len] = 0;
@@ -39,6 +39,6 @@ int main_bench() {
                 }
             }
         }
-        printf("%s\n%s\n",s, t);
+        my_printf("%s\n%s\n",s, t);
     }
 }

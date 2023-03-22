@@ -9,7 +9,7 @@ int main_bench()
     int days,dayofwn;
     int daysofm[12]={31,28,31,30,31,30,31,31,30,31,30,31};
     char dayofw[7][5]={"Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat."};
-    scanf("%d%d%d",&y,&m,&d);
+    my_scanf("%d%d%d",&y,&m,&d);
     
     days=(y-1)+(y-1)/4-(y-1)/100+(y-1)/400+d;
     for(i=0;i<m-1;i++)
@@ -18,7 +18,7 @@ int main_bench()
     }
     if(m>2) days+=LpYr(y);
     dayofwn=days%7;
-    printf("%s\n",dayofw[dayofwn]);
+    my_printf("%s\n",dayofw[dayofwn]);
     
   return 0;
 }

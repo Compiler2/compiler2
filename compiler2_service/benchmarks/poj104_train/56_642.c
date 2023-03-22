@@ -3,7 +3,7 @@
 int main_bench()
 {
 	unsigned int a,b,c,d,e,f,x;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a/10000;
 	c=(a-10000*b)/1000;
 	d=(a-10000*b-1000*c)/100;
@@ -14,5 +14,5 @@ int main_bench()
 	else if(b=0,c>0) x=1000*f+100*e+10*d+c;
 	else if(b=0,c=0,d>0) x=100*f+10*e+d;
 	
-	printf("%d",x);
+	my_printf("%d",x);
 }

@@ -31,7 +31,7 @@ void f(char *s,char *a,char *b,int n1,int n2)
                 else break;
         }
         *(c+i)='\0';
-        printf("%s",c);
+        my_printf("%s",c);
 }
 
 int main_bench()

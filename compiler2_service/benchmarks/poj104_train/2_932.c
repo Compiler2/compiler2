@@ -21,11 +21,11 @@ int main_bench()
 		r[i].k=1;
 	}
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d %s",&s[i].n,s[i].z);
+		my_scanf("%d %s",&s[i].n,s[i].z);
 		l=strlen(s[i].z);
 		for(j=0;j<l;j++)
 		{
@@ -44,9 +44,9 @@ int main_bench()
 				r[j]=r[j-1];
 				r[j-1]=r[92];
 			}
-	printf("%c\n%d\n",r[65].name,r[65].nb);
+	my_printf("%c\n%d\n",r[65].name,r[65].nb);
 	
 	
 	for (i=1;i<=r[65].nb;i++)
-		printf("%d\n",r[65].b[i]);
+		my_printf("%d\n",r[65].b[i]);
 }

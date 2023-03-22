@@ -12,19 +12,19 @@ void change(int n,int a[])
 	}
 }
 
-void main_bench()
+int main_bench()
 {
 	int m,n,a[100];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 
 	int i;
 	for(i=0;i<=n-1;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 	for(i=1;i<=m;i++)
 		change(n,a);
 
 	for(i=0;i<=n-2;i++)
-		printf("%d ",a[i]);
-	printf("%d\n",a[n-1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d\n",a[n-1]);
 }

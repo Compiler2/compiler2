@@ -16,8 +16,8 @@ int main_bench()
 	ch2[0]='0';
 	int i=0,k=0;
 
-	scanf("%s",&ch1[1]);
-	scanf("%s",&ch2[1]);
+	my_scanf("%s",&ch1[1]);
+	my_scanf("%s",&ch2[1]);
 	l1=strlen(ch1);
 	l2=strlen(ch2);
 
@@ -85,13 +85,13 @@ int main_bench()
 		{
 			if(ch3[k]!='\0')
 			{
-				printf("%c",ch3[k]);
+				my_printf("%c",ch3[k]);
 			}
 		}
 	}
 	else
 	{
-		printf("0");
+		my_printf("0");
 	}
 
 	return 0;

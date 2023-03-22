@@ -15,11 +15,11 @@ int main_bench()
 
 	int n,i,max,sum=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i=i+1)
 	{
-		scanf("%s %d %d %c %c %d",&std[i].name,&std[i].cj,&std[i].py,&std[i].gb,&std[i].xb,&std[i].lw);
+		my_scanf("%s %d %d %c %c %d",&std[i].name,&std[i].cj,&std[i].py,&std[i].gb,&std[i].xb,&std[i].lw);
 
 		std[i].sum=0;
 
@@ -51,9 +51,9 @@ int main_bench()
 	{
 		if(std[i].sum==max)
 		{
-			printf("%s\n",std[i].name);
-			printf("%d\n",std[i].sum);
-			printf("%d\n",sum);
+			my_printf("%s\n",std[i].name);
+			my_printf("%d\n",std[i].sum);
+			my_printf("%d\n",sum);
 			break;
 		}
 	}

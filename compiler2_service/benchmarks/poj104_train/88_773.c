@@ -9,7 +9,7 @@ int main_bench()
     p1=p=(char *)malloc(32*sizeof(char));
     for(i=0;*(p+i-1)!='\n';i++)
     {
-                             scanf("%c",(p+i));
+                             my_scanf("%c",(p+i));
     }
     
     for(q=(p+32);;q--)
@@ -22,16 +22,16 @@ int main_bench()
                       {
                              if((*p>47&&*p<58)&&(*(p+1)>47&&*(p+1)<58))
                              {
-                                                                printf("%c",*p);
+                                                                my_printf("%c",*p);
                              }
                              if((*p>47&&*p<58)&&(*(p+1)<48||*(p+1)>57))
                              {
-                                                                printf("%c\n",*p);
+                                                                my_printf("%c\n",*p);
                              }
                       }
                       if(p==q)
                       {
-                              printf("%c",*p);
+                              my_printf("%c",*p);
                               break;
                       }
     }

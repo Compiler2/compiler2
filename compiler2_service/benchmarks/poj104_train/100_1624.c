@@ -6,7 +6,7 @@ int main_bench()
    int bigNum[26]={0}; 
    int smallNum[26]={0};
    int i,n,tag=1; 
-   scanf("%s",str); 
+   my_scanf("%s",str); 
    for(i=0;str[i]!='\0';i++)  
    {
 	   if(str[i]>='a' && str[i]<='z')
@@ -20,7 +20,7 @@ int main_bench()
    {
 	   if(bigNum[i]>0)
 	   {
-		   printf("%c=%d\n",'A'+i,bigNum[i]);
+		   my_printf("%c=%d\n",'A'+i,bigNum[i]);
 		   tag=0;
 	   }
    }
@@ -28,11 +28,11 @@ int main_bench()
    {
 	   if(smallNum[i]>0)
 	   {
-		   printf("%c=%d\n",'a'+i,smallNum[i]);
+		   my_printf("%c=%d\n",'a'+i,smallNum[i]);
 		   tag=0;
 	   }
    }
-   if(tag==1) printf("No");
+   if(tag==1) my_printf("No");
 
      return 0;
 }                  

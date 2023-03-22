@@ -26,8 +26,8 @@ int ss(int n)
 int main_bench()
 {
 	int m,n,i,j=0,a[100]={0};
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)if(hw(i)&&ss(i))a[j++]=i;
-	if(j==0)printf("no");
-	else{for(i=0;i<j-1;i++)printf("%d,",a[i]);printf("%d",a[i]);}
+	if(j==0)my_printf("no");
+	else{for(i=0;i<j-1;i++)my_printf("%d,",a[i]);my_printf("%d",a[i]);}
 }

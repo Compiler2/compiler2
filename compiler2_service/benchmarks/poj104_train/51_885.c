@@ -3,8 +3,8 @@
 char str[500],sub[500][5]={0},count[500]={0},bianhao[500]={0};
 int n,i,j,l,max,geshu;
 int main_bench(){
-	scanf("%d",&n);
-	scanf("%s",str);
+	my_scanf("%d",&n);
+	my_scanf("%s",str);
 	l=strlen(str);
 	max=0;
 	geshu=1;
@@ -29,17 +29,17 @@ int main_bench(){
 		   bianhao[geshu-1]=i;
 	   }
 	}
-	if(max==0) printf("NO\n");
+	if(max==0) my_printf("NO\n");
 	else{
-	   printf("%d\n",max);
+	   my_printf("%d\n",max);
 	   if(geshu==1){
-	      printf("%s",sub[bianhao[0]]);
+	      my_printf("%s",sub[bianhao[0]]);
 	   }
 	   else{
 	      for(i=0;i<geshu-1;i++){
-	         printf("%s\n",sub[bianhao[i]]);
+	         my_printf("%s\n",sub[bianhao[i]]);
 	      }
-		  printf("%s",sub[bianhao[geshu-1]]);
+		  my_printf("%s",sub[bianhao[geshu-1]]);
 	   }
 	   
 	}

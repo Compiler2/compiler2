@@ -20,10 +20,10 @@ int main_bench()
 		else q++;
 	}
 	for (; *max_index!=' '&& *max_index; max_index++)
-		printf ("%c", *max_index);
-	printf ("\n");
+		my_printf ("%c", *max_index);
+	my_printf ("\n");
 	for (; *min_index!=' '&& *min_index; min_index++)
-		printf ("%c", *min_index);
-	printf ("\n");
+		my_printf ("%c", *min_index);
+	my_printf ("\n");
 	return 0;
 }

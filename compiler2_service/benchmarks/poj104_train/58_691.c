@@ -21,7 +21,7 @@ int main_bench(){
 		}else{
 			flag=0;
 		}
-		printf("%d\n",flag);
+		my_printf("%d\n",flag);
 	}
 	return 0;
 }

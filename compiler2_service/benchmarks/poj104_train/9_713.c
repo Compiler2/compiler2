@@ -7,9 +7,9 @@ struct patient
 int main_bench()
 {struct patient a[100],b[100],c[100],temp;
 int n,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%s %d",a[i].num,&a[i].age);}
+{my_scanf("%s %d",a[i].num,&a[i].age);}
 
 int j=0,k=0,m;
 for (i=0;i<n;i++)
@@ -24,9 +24,9 @@ for (i=0;i<j;i++)
 {temp=b[m];b[m]=b[m+1];b[m+1]=temp;}}}
 
 for (i=0;i<j;i++)
-{printf("%s\n",b[i].num);}
+{my_printf("%s\n",b[i].num);}
 for(i=0;i<k;i++)
-{printf("%s\n",c[i].num);}
+{my_printf("%s\n",c[i].num);}
 
 
 

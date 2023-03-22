@@ -11,10 +11,10 @@ int n;
 int main_bench()
 {
     int i,j,k,l;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-      scanf("%s%d",sen[i].id,&sen[i].age);
+      my_scanf("%s%d",sen[i].id,&sen[i].age);
       if(sen[i].age>=60) sen[i].rec=1;
       else sen[i].rec=0;
     }
@@ -39,7 +39,7 @@ int main_bench()
     
      
     for(i=0;i<n;i++)
-     printf("%s\n",sen[i].id);
-    scanf("%d",&i);
+     my_printf("%s\n",sen[i].id);
+    my_scanf("%d",&i);
     return 0;
 }

@@ -12,9 +12,9 @@ int main_bench(){
 	for(i=0;i<100;i++){
 		hao[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&suoyous[i].qian,&suoyous[i].hou);
+		my_scanf("%d%d",&suoyous[i].qian,&suoyous[i].hou);
 	}
 	for(i=0;i<n;i++){
 		if(suoyous[i].qian>=90&&suoyous[i].qian<=140&&suoyous[i].hou>=60&&suoyous[i].hou<=90){
@@ -36,6 +36,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",hao[0]);
+	my_printf("%d",hao[0]);
 	return 0;
 }

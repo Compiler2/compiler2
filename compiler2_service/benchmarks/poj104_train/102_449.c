@@ -6,9 +6,9 @@ double h,e;
 double a[100],b[100];
 char sex[10];
 k=0,t=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%s %lf",&sex,&h);
+	my_scanf("%s %lf",&sex,&h);
 	if(strcmp(sex,"female")==0){
 		a[t]=h;
 		t++;
@@ -36,11 +36,11 @@ for(i=0;i<k;i++){
 	}
 }
 for(i=0;i<k;i++){
-	printf("%.2lf ",b[i]);
+	my_printf("%.2lf ",b[i]);
 }
 for(i=0;i<t-1;i++){
-	printf("%.2lf ",a[i]);
+	my_printf("%.2lf ",a[i]);
 }
-printf("%.2lf\n",a[t-1]);
+my_printf("%.2lf\n",a[t-1]);
 return 0;
 }

@@ -12,11 +12,11 @@ int main_bench()
 		 else
 		 {
 			 if(j!=0)
-			    printf("%d,",j);
+			    my_printf("%d,",j);
 			 j=0;
 		 }
 		 i++;
 	}
 	
-	printf("%d",j);
+	my_printf("%d",j);
 }

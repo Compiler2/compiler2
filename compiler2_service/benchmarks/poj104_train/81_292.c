@@ -19,18 +19,18 @@ int main_bench()
 	{	
 		for(i=0;i<5;i++)
 			for(j=0;j<5;j++)
-				scanf("%d" ,&a[i][j]);
+				my_scanf("%d" ,&a[i][j]);
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(changeline(a,m,n))
 	{	for(i=0;i<5;i++)
 			for(j=0;j<5;j++)
 			{	
-				printf("%d",a[i][j]);
-				if(j!=4) printf(" ");
-				else printf("\n");
+				my_printf("%d",a[i][j]);
+				if(j!=4) my_printf(" ");
+				else my_printf("\n");
 			}
 	}
 			else
-		printf("error\n");
+		my_printf("error\n");
 }

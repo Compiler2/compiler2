@@ -2,10 +2,10 @@
 
 int main_bench() {
     int n,i,x,y;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],b[n];
     for(i=0;i<n;i++) {
-        scanf("%d %d\n",&(a[i]),&(b[i]));
+        my_scanf("%d %d\n",&(a[i]),&(b[i]));
     }
     x=a[0];
     y=b[0];
@@ -27,10 +27,10 @@ int main_bench() {
         }
     }
     if(z==y) {
-        printf("%d %d",x,y);
+        my_printf("%d %d",x,y);
     }
     if(z!=y) {
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

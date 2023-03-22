@@ -3,15 +3,15 @@
 int main_bench(){
     int n;
     char str[21];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int j=0;j<n;j++){
-        scanf("%s",str);
+        my_scanf("%s",str);
         for(int i=0;str[i]!='\0';i++){
             if(i==0){
                 if(((str[i]>='a')&&(str[i]<='z'))||((str[i]>='A')&&(str[i]<='Z'))||(str[i]=='_')){
                     continue;
                 } else{
-                    printf("no\n");
+                    my_printf("no\n");
                     break;
                 }
             }
@@ -20,10 +20,10 @@ int main_bench(){
                     if(str[i+1]!='\0'){
                         continue;
                     } else{
-                        printf("yes\n");
+                        my_printf("yes\n");
                     }
                 } else{
-                    printf("no\n");
+                    my_printf("no\n");
                     break;
                 }
             }

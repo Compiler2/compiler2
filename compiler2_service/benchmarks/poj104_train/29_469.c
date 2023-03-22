@@ -5,9 +5,9 @@ int main_bench(){
   double k;
   k=0.0;
   double fz=2.0,fm=1.0,j;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   for(int i=0;i<m;i++){
-	 scanf("%d",&sz[i]);
+	 my_scanf("%d",&sz[i]);
   }
   for(int y=0;y<m;y++){
 	  for(int x=0;x<sz[y];x++){
@@ -18,7 +18,7 @@ int main_bench(){
 	  }
 	  fz=2.0;
 	  fm=1.0;
-	  printf("%.3lf\n",k);
+	  my_printf("%.3lf\n",k);
 	  k=0.0;
   }
   return 0;

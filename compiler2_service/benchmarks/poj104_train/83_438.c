@@ -3,13 +3,13 @@
 int main_bench()
 {int n,a[100],b[100],i,j,s=0;
  float g,G=0.0,GPA,c[111];
- scanf("%d\n",&n);
+ my_scanf("%d\n",&n);
  for(i=1;i<=n;i++)
-  scanf("%d ",&a[i]);
- printf("\n");
+  my_scanf("%d ",&a[i]);
+ my_printf("\n");
  for(j=1;j<=n;j++)
-  scanf("%d ",&b[j]);
- printf("\n");
+  my_scanf("%d ",&b[j]);
+ my_printf("\n");
  for(i=1;i<=n;i++)
   s=s+a[i];
  for(j=1;j<=n;j++)
@@ -27,5 +27,5 @@ int main_bench()
  for(j=1;j<=n;j++)
   G=G+c[j];
  GPA=G/s;
- printf("%.2f",GPA);
+ my_printf("%.2f",GPA);
 }

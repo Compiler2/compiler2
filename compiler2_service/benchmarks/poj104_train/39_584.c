@@ -5,10 +5,10 @@ int main_bench()
 	int n,qimo[100],banji[100],lunwen[100];
 	int i,j;int jiangxuejing[100];int sunxu[100];
 	char xingming[100][20],ganbu[100],xibu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-	 scanf("%s %d %d %c %c %d",xingming[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
+	 my_scanf("%s %d %d %c %c %d",xingming[i],&qimo[i],&banji[i],&ganbu[i],&xibu[i],&lunwen[i]);
 	 sunxu[i]=i;
 	}
 	for(i=0;i<=n-1;i++)
@@ -63,9 +63,9 @@ int main_bench()
 		{m=m+jiangxuejing[i];}
 		if(jishuqi==1)
 		{
-		printf("%s\n",xingming[0]);
-		printf("%d\n",jiangxuejing[0]);
-		printf("%d\n",m);
+		my_printf("%s\n",xingming[0]);
+		my_printf("%d\n",jiangxuejing[0]);
+		my_printf("%d\n",m);
 		}
 		if(jishuqi>1)
 		{
@@ -85,8 +85,8 @@ int main_bench()
 					}
 				}
 			}
-             printf("%s\n",xingming[0]);
-		     printf("%d\n",jiangxuejing[0]);
-		     printf("%d\n",m);
+             my_printf("%s\n",xingming[0]);
+		     my_printf("%d\n",jiangxuejing[0]);
+		     my_printf("%d\n",m);
 		}
 }

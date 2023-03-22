@@ -17,17 +17,17 @@ void deal(int n)
            a = a + b;
            b = t;
      }
-     printf("%.3lf\n", sum);
+     my_printf("%.3lf\n", sum);
 }
 int main_bench()
 {
     int m;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     int i;
     for(i = 0; i < m; i ++)
     {
           int n;
-          scanf("%d", &n);
+          my_scanf("%d", &n);
           deal(n);
     }
     return 0;

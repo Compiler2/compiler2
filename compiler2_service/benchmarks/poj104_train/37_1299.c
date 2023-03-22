@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,i,j,k,m,b[100000],x;
 	char a[100000],c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		if(i==0){
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		}
 		gets(a);
         m=strlen(a);
@@ -23,13 +23,13 @@ int main_bench(){
 		x=0;
 		for(j=0;j<m;j++){
 			if(b[j]==1){
-				printf("%c\n",a[j]);
+				my_printf("%c\n",a[j]);
                 x=1;
 				break;
 			}
 		}
 		if(x==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

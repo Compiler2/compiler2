@@ -23,9 +23,9 @@ int main_bench()
 		c=*(p1+i);
 		d=*(p1+i+1);
 		*(p2+i)=c+d;
-		printf("%c",*(p2+i));
+		my_printf("%c",*(p2+i));
 	}
 	int l;
-	printf("%c",c+d);
+	my_printf("%c",c+d);
 }
 	

@@ -5,7 +5,7 @@ int main_bench()
     int i,d,r;
    char a[100];
    int m,b[100],c[100];
-   scanf("%s",a);
+   my_scanf("%s",a);
    m= strlen(a);
    for(i=0;i<m;i++)
    {
@@ -20,24 +20,24 @@ int main_bench()
  
    }
     if(m==1)
-             printf("0");
+             my_printf("0");
              else if(b[1]==0&&m==2&&r<=2)
-              printf("0");
+              my_printf("0");
  
    for(i=1;i<m;i++)
    {                 
                    if(i==1&&b[1]!=0)
-                   printf("%d",b[1]);
+                   my_printf("%d",b[1]);
                      if(i==2&&b[2]!=0)
-                   printf("%d",b[2]);
+                   my_printf("%d",b[2]);
                    
                    if(i!=1&&i!=2)
-                   printf("%d",b[i]);
+                   my_printf("%d",b[i]);
                  
       }
     
-   printf("\n");
-  printf("%d",c[m-1]);
+   my_printf("\n");
+  my_printf("%d",c[m-1]);
   
   
   

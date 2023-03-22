@@ -36,7 +36,7 @@ int main_bench(){
 		}
 	}
 	for(int l=0;l<a;l++){
-   	     printf("%c",sc[l]);
+   	     my_printf("%c",sc[l]);
 	}
 	return 0;
 }

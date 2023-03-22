@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,len;
 	char letter[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",letter);
+		my_scanf("%s",letter);
 		len=strlen(letter);
 		if(letter[len-2]=='e'&&letter[len-1]=='r')
 		{
@@ -27,7 +27,7 @@ int main_bench()
 				letter[len-1]='\0';
 			}
 			
-				printf("%s\n",letter);
+				my_printf("%s\n",letter);
 			
 			for(int t=0;t<len;t++)
 				letter[t]=' ';

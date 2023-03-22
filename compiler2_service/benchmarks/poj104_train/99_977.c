@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i;
-		scanf("%d\n",&n);
+		my_scanf("%d\n",&n);
 	int sz[100];
 	for(i=0;i<n;i++){
-	scanf("%d",&(sz[i]));
+	my_scanf("%d",&(sz[i]));
 	}
 	int s1,s2,s3,s4;
 	s1=0;
@@ -28,9 +28,9 @@ a=1.0*s1/n*100;
 b=1.0*s2/n*100;
 c=1.0*s3/n*100;
 d=1.0*s4/n*100;
-printf("1-18: %.2lf%%\n",a);
-printf("19-35: %.2lf%%\n",b);
-printf("36-60: %.2lf%%\n",c);
-printf("60??: %.2lf%%\n",d);
+my_printf("1-18: %.2lf%%\n",a);
+my_printf("19-35: %.2lf%%\n",b);
+my_printf("36-60: %.2lf%%\n",c);
+my_printf("60??: %.2lf%%\n",d);
 return 0;
 }

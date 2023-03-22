@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n, i, a, j;
 	char word[20];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s", word);
+		my_scanf("%s", word);
 		a = strlen(word) - 1;
 		if(word[a]=='r' || word[a]=='y')
 		{   
@@ -18,7 +18,7 @@ int main_bench()
 		{
 			word[(a-2)] = '\0';
 		}
-	   printf("%s\n", word);
+	   my_printf("%s\n", word);
 	}
 	return 0;
 }

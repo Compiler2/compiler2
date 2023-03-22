@@ -5,13 +5,13 @@ int main_bench()
 	int n, i, j, l, k, m;
 	int A[1000][10];
 	int B[200];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d", &m);
+		my_scanf("%d", &m);
 		for(j=1;j<=m;j++)
 		{
-            scanf("%d", &A[i][j]); 
+            my_scanf("%d", &A[i][j]); 
 		}
 		if(A[i][m]+3*m<60)
 		{
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for(l=1;l<=n;l++)
 	{
-		printf("%d\n", B[l]);
+		my_printf("%d\n", B[l]);
 	}
 	return 0;
 }

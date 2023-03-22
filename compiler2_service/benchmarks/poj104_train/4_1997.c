@@ -7,7 +7,7 @@ int main_bench()
     int row,col;
     int r,c,t,i;
     
-    scanf("%d %d",&row,&col);
+    my_scanf("%d %d",&row,&col);
                         
     
     a=(int *)calloc(100,100*sizeof(int));
@@ -18,7 +18,7 @@ int main_bench()
     {
      for(c=0;c<col;c++)
        {
-       scanf("%d",a+r*col+c); 
+       my_scanf("%d",a+r*col+c); 
        }  
     }
     
@@ -32,8 +32,8 @@ int main_bench()
           {
           if(0<=r&&r<row&&0<=t&&t<col)
           {
-           printf("%d",*(a+r*col+t));
-           if(r!=row-1||t!=col-1) printf("\n");
+           my_printf("%d",*(a+r*col+t));
+           if(r!=row-1||t!=col-1) my_printf("\n");
            }
            r++;t--;
           }

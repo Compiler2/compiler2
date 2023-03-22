@@ -12,12 +12,12 @@ int check(int m,int n,int k)
                {
                          if(i-m<k)
                          {
-                                  printf("%d",i);
+                                  my_printf("%d",i);
                                   out=1;
                          }
                          else 
                          {
-                              printf(",%d",i);
+                              my_printf(",%d",i);
                               out=1;
                          }         
                }      
@@ -25,9 +25,9 @@ int check(int m,int n,int k)
     }
     if(out==0)
     {
-              printf("no\n");
+              my_printf("no\n");
     }
-    else printf("\n");
+    else my_printf("\n");
     return k;
 }
 
@@ -35,18 +35,18 @@ int main_bench()
 {
     int n,i,num[100],sum=0,min=100,max=0;
     float ave;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=1;i<=n;i++)
     {
-        scanf("%d",&num[i]);
+        my_scanf("%d",&num[i]);
         sum+=num[i];
         if (min>num[i]) min=num[i];
         if (max<num[i]) max=num[i];
     }
     ave=(float)sum/n;
-    if (max-ave==ave-min) printf("%d,%d",min,max);
-    else if(max-ave>ave-min) printf("%d",max);
-    else printf("%d",min);
+    if (max-ave==ave-min) my_printf("%d,%d",min,max);
+    else if(max-ave>ave-min) my_printf("%d",max);
+    else my_printf("%d",min);
 
     return 0;
 }

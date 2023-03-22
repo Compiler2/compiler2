@@ -14,10 +14,10 @@ int main_bench()
 {
 	int n,i,j,q=0,k;
 	struct student temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%s %d %d %c %c %d",person[i].name,&person[i].test,&person[i].term,&person[i].key,&person[i].west,&person[i].art);
+		my_scanf("%s %d %d %c %c %d",person[i].name,&person[i].test,&person[i].term,&person[i].key,&person[i].west,&person[i].art);
 	    person[i].money=0;
 		if(person[i].art>0&&person[i].test>80) {person[i].money=person[i].money+8000;}
 		if(person[i].test>85&&person[i].term>80) {person[i].money=person[i].money+4000;}
@@ -34,8 +34,8 @@ int main_bench()
 				k=j;
 		temp=person[k]; person[k]=person[i];person[i]=temp;
 	}
-	printf("%s\n",person[0].name);
-	printf("%d\n",person[0].money);
-	printf("%d",q);
+	my_printf("%s\n",person[0].name);
+	my_printf("%d\n",person[0].money);
+	my_printf("%d",q);
 	return 0;
 }

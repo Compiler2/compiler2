@@ -10,10 +10,10 @@ int main_bench()
     ps=dc;
     int n,max=0,min=500,i;
     char *pmax,*pmin;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++,ps++)
     {
-                    scanf("%s",ps->a);
+                    my_scanf("%s",ps->a);
                     ps->len=strlen(ps->a);
                     if(ps->len>max)
                     {
@@ -26,6 +26,6 @@ int main_bench()
                                     pmin=ps->a;
                     }
     }
-    printf("%s\n%s",pmax,pmin);
+    my_printf("%s\n%s",pmax,pmin);
     return 0; 
 }

@@ -4,7 +4,7 @@ main_bench()
 {
 	char a[50],b[50];
 	int lena,i=0,k,t;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	lena=strlen(a);
 	while(1)
 	{
@@ -19,7 +19,7 @@ main_bench()
 				t=1;
 		if(t)
 			continue;
-		printf("%d",i);
+		my_printf("%d",i);
 		break;
 	}
 }

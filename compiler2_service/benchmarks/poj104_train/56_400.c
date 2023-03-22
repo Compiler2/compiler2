@@ -3,7 +3,7 @@
 main_bench()
 {
 	int n,a,b,c,d,l,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if (n<1000000)
 	{
 	l=n%10;
@@ -23,7 +23,7 @@ main_bench()
 	else if (a==0&&b==0&&c==0&&d==0&&l!=0)
 		k=l;
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 	return 0;
 	
 }

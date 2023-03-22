@@ -21,14 +21,14 @@ int main_bench()
 	int n,i;
 	char sz[81],*p;
 	p=sz;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++){
 		gets(p);
 		if(fit(p)){
-			printf("1\n");
+			my_printf("1\n");
 		}else{
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 	return 0;

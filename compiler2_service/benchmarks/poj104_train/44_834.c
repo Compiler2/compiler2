@@ -6,14 +6,14 @@ int main_bench()
 	int num,i;
 	for(i=1;i<=6;i++)
 	{
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(num>0)
 			reverse(num);
 		else if(num==0)
-			printf("0\n");
+			my_printf("0\n");
 		else
 		{
-			printf("-");
+			my_printf("-");
 			reverse(-num);
 		}
 	}
@@ -33,8 +33,8 @@ void reverse(int num)
 	}
 	while(num>0)
 	{
-		printf("%d",num%10);
+		my_printf("%d",num%10);
 		num/=10;
 	}
-	printf("\n");
+	my_printf("\n");
 }

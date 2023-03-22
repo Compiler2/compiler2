@@ -20,6 +20,6 @@ int main_bench()
 	
 	for(i=0; i<strlen(s); i++)
 	{
-		if(s[i]!='/') printf("%c",s[i]);
+		if(s[i]!='/') my_printf("%c",s[i]);
 	}
 }

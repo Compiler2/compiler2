@@ -7,10 +7,10 @@ int main_bench()
     int y,p,q,n,i;
     int s=0;
 	int t=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	while (t<n)
 	{ t++;s=0;
-	scanf ("%d %d %d",&y,&p,&q);
+	my_scanf ("%d %d %d",&y,&p,&q);
 	if (y%4!=0) {y=1;}
 	else if ((y%100==0)&&(y%400!=0)) {y=1;}
 	else {y=0;}
@@ -35,9 +35,9 @@ int main_bench()
 
 		if (s%7==0) 
 		{
-	    printf ("YES\n");
+	    my_printf ("YES\n");
 		}
-        else printf ("NO\n");
+        else my_printf ("NO\n");
 
 	}
 
@@ -67,9 +67,9 @@ int main_bench()
 
 		if (s%7==0) 
 		{
-	    printf ("YES\n");
+	    my_printf ("YES\n");
 		}
-        else printf ("NO\n");
+        else my_printf ("NO\n");
 	
 	
 	

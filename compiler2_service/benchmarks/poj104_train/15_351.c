@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int A[1000][1000];
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
 			int x;
-			scanf("%d",&x);
+			my_scanf("%d",&x);
 			A[i][j]=x;
 		}
 	}
@@ -28,6 +28,6 @@ int main_bench()
 	}
 	}
 	p=(c-a-1)*(d-b-1);
-    printf("%d",p);
+    my_printf("%d",p);
 	return 0;
 }

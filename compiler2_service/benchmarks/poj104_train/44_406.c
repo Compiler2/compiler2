@@ -21,16 +21,16 @@ int main_bench(){
 	int n,b;
 	int i;
 	for(i=0;i<6;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(i!=0){
-			printf("\n");
+			my_printf("\n");
 		}
 		if(n<0){
-			printf("-");
+			my_printf("-");
 			n=-n;
 		}
 		b=reverse(n);
-		printf("%d",b);
+		my_printf("%d",b);
 	}
 	return 0;
 }

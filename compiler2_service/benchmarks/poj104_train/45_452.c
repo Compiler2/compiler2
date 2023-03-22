@@ -5,7 +5,7 @@ int main_bench()
 	char *pb,*pa;
 	char a[50],b[50];
 	int i,j,k=0;
-	 scanf("%s %s",a,b);
+	 my_scanf("%s %s",a,b);
 	 i=strlen(a); 
 	 j=strlen(b);
 	pa=a;
@@ -14,5 +14,5 @@ int main_bench()
 		if (*pa!=*pb) continue;
 		else  pa++;
 		if (*pa==a[i])break;}
-		printf("%d",k-i);
+		my_printf("%d",k-i);
 }

@@ -4,12 +4,12 @@
 int main_bench()
 {
 	int j,n,i,zs[300],nzs[300],k=0,jihao[300];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++){
 		jihao[i]=-100;
 	}
 	for (i=0;i<n;i++){
-		scanf ("%d",&zs[i]);
+		my_scanf ("%d",&zs[i]);
 	}
     for (i=n-1;i>0;i--){
         for (j=i-1;j>=0;j--){
@@ -26,8 +26,8 @@ int main_bench()
             }
 	}
 	for (i=0;i<k-1;i++){
-		printf ("%d,",nzs[i]);
+		my_printf ("%d,",nzs[i]);
 	}
-	printf ("%d",nzs[k-1]);
+	my_printf ("%d",nzs[k-1]);
 	return 0;
 }

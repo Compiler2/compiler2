@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<3;j++)
 	{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	}
 	for(k=a[0][0];k<a[1][0];k++)
@@ -194,6 +194,6 @@ int main_bench()
 		}
 	}
 		h=x+g+a[1][2]-f-a[0][2];
-		printf("%d\n",h);
+		my_printf("%d\n",h);
 }
 

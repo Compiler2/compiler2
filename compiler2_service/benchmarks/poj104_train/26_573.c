@@ -23,6 +23,6 @@ int main_bench(){
 	b[k][c[k]+1]='\0';
 	k++;
 	for(i=0;i<k;i++)
-		printf("%s",b[i]);
+		my_printf("%s",b[i]);
 	return 0;
 }

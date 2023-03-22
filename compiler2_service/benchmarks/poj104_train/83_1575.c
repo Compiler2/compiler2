@@ -6,12 +6,12 @@ int main_bench()
   int n,i;
   float gpa,sum=0,all=0,final;
   int point[20],mark[20];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1;i<=n;i++)
   {
-    scanf("%d",&point[i]);
+    my_scanf("%d",&point[i]);
   }
-  for(i=1;i<=n;i++) scanf("%d",&mark[i]);
+  for(i=1;i<=n;i++) my_scanf("%d",&mark[i]);
   for(i=1;i<=n;i++) 
   {
     if(mark[i]>=90) gpa=4.0;
@@ -28,6 +28,6 @@ int main_bench()
     sum+=point[i];
   }
   final=all/sum;
-  printf("%.2f",final);
+  my_printf("%.2f",final);
   return 0;
 }

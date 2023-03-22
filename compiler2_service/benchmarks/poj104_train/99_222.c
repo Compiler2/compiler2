@@ -4,11 +4,11 @@ int main_bench()
 {
   int n,c[4]={0},i;
   double a[4];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
       {
          int bi;
-         scanf("%d",&bi);
+         my_scanf("%d",&bi);
          if(bi<=18)
            {
              c[0]++;
@@ -30,13 +30,13 @@ int main_bench()
         {
           a[i]=(double)c[i]/n*100;
         }
-     printf("1-18: %.2lf",a[0]);
-    printf("%%\n");
-     printf("19-35: %.2lf",a[1]);
-    printf("%%\n");
-     printf("36-60: %.2lf",a[2]);
-    printf("%%\n");
-     printf("60??: %.2lf",a[3]);
-    printf("%%");
+     my_printf("1-18: %.2lf",a[0]);
+    my_printf("%%\n");
+     my_printf("19-35: %.2lf",a[1]);
+    my_printf("%%\n");
+     my_printf("36-60: %.2lf",a[2]);
+    my_printf("%%\n");
+     my_printf("60??: %.2lf",a[3]);
+    my_printf("%%");
   return 0;
 }

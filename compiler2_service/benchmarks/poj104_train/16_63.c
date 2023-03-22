@@ -7,7 +7,7 @@ main_bench()
   int i,j;
   j=strlen(a);
   for(i=j-1;i>=0;i--)
-  printf("%c",a[i]) ;
+  my_printf("%c",a[i]) ;
   getchar();
   getchar();    
 }

@@ -6,10 +6,10 @@ int main_bench()
 	int i,j,x,y,d[5][5],b[5];
 	for(i=0;i<5;i++)
 	{	for(j=0;j<5;j++)
-	scanf("%d ",&d[i][j]);}
-	scanf("%d %d",&x,&y);
+	my_scanf("%d ",&d[i][j]);}
+	my_scanf("%d %d",&x,&y);
 	if(f(x,y)==0)
-		printf("error\n");
+		my_printf("error\n");
 	else {for(j=0;j<5;j++)
 		  {
 		b[j]=d[x][j];
@@ -17,10 +17,10 @@ int main_bench()
           d[y][j]=b[j];
 	}
 		  for(i=0;i<5;i++)
-		 {printf("\n");
+		 {my_printf("\n");
 			 for(j=0;j<4;j++)
-			 {printf("%d ",d[i][j]);}
-			 printf("%d",d[i][4]);}}
+			 {my_printf("%d ",d[i][j]);}
+			 my_printf("%d",d[i][4]);}}
 }
 	int f(int m,int n)
 	{

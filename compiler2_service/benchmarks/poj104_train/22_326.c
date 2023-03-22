@@ -36,7 +36,7 @@ int main_bench()
 			else if (c<a && c>b) b=c;
 		}
 	}
-	if (b==-1) printf("No");
-	else printf("%d",b);
+	if (b==-1) my_printf("No");
+	else my_printf("%d",b);
 	return 0;
 }

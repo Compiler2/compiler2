@@ -36,9 +36,9 @@ int main_bench()
 		}
     }	
 	
-	printf("%s",longest);	
-	printf ("\n");	
-	printf("%s",shortest);
-	printf ("\n");
+	my_printf("%s",longest);	
+	my_printf ("\n");	
+	my_printf("%s",shortest);
+	my_printf ("\n");
 	return 0;
 }

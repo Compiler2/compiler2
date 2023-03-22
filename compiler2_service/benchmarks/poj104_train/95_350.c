@@ -18,15 +18,15 @@ int main_bench()
 	int t;t=0;
 	for(i=0;a[i]!='\0';i++){
 		if(a[i]>b[i]){
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if(a[i]<b[i]){
-			printf("<");
+			my_printf("<");
 			break;
 		}
 		else if(a[i]==b[i]) t++;
 	}
-	if(t==l) printf("=");
+	if(t==l) my_printf("=");
 	return 0;
 }

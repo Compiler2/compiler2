@@ -4,18 +4,18 @@ int a[100],n,m;
 int main_bench()
 {
     int i;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=0;i<n-m;i++)
     {
-        scanf("%d",a+m+i);
+        my_scanf("%d",a+m+i);
     }
     for(i=0;i<m;i++)
     {
-        scanf("%d",a+i);
+        my_scanf("%d",a+i);
     }
     for(i=0;i<n;i++)
     {
-        printf("%d",a[i]);
+        my_printf("%d",a[i]);
         if(i<n-1)   putchar(' ');
     }
     putchar('\n');

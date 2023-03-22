@@ -3,8 +3,8 @@
 int main_bench()
 {
     int n,i,j,t,x,a[1000],b[1000];
-    scanf("%d",&n);
-    for (i=1;i<=n;i++) scanf("%d",&a[i]);
+    my_scanf("%d",&n);
+    for (i=1;i<=n;i++) my_scanf("%d",&a[i]);
     float s=0;
     for (i=1;i<=n;i++) s=s+a[i];
     s=s/n;
@@ -32,7 +32,7 @@ int main_bench()
       b[i]=b[j];
       b[j]=x;
     }
-    for (i=1;i<=t-1;i++) printf("%d,",b[i]);
-    printf("%d",b[t]);
+    for (i=1;i<=t-1;i++) my_printf("%d,",b[i]);
+    my_printf("%d",b[t]);
 
 }

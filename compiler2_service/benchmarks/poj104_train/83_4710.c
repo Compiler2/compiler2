@@ -3,17 +3,17 @@
 int main_bench()
 {
     int n,F=0,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n],b[n];
     double g[n],G[n],GPA,sum=0.00;
     for(i=0;i<n;i++)
     {
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
          F+=a[i];
     }
     for(i=0;i<n;i++)
     {
-         scanf("%d",&b[i]);
+         my_scanf("%d",&b[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -45,6 +45,6 @@ int main_bench()
          sum+=G[i];
     }
       GPA=sum/F;
-      printf("%.2f",GPA);
+      my_printf("%.2f",GPA);
       return 0;
 }

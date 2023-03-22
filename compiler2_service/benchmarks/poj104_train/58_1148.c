@@ -19,7 +19,7 @@ int main_bench()
 {
 	int n,i,m,j,k=0;
 	char a[81];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(a);
 	for(i=0;i<n;i++)
 	{
@@ -39,8 +39,8 @@ int main_bench()
 				else k=1;
 			}
 		}
-		if(k==0) printf("0\n");
-		else printf("1\n");
+		if(k==0) my_printf("0\n");
+		else my_printf("1\n");
 	}
 	return 0;
 }

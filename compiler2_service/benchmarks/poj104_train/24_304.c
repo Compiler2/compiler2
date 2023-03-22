@@ -44,10 +44,10 @@ int main_bench()
 	for(i=0;i<r;i++)
 		qian2=qian2+num[i];
 	for(i=qian1+k;i<num[k]+qian1+k;i++)
-		printf("%c",sentence[i]);
-	printf("\n");
+		my_printf("%c",sentence[i]);
+	my_printf("\n");
 	for(i=qian2+r;i<num[r]+qian2+r;i++)
-		printf("%c",sentence[i]);
-	printf("\n");
+		my_printf("%c",sentence[i]);
+	my_printf("\n");
 	return 0;
 }

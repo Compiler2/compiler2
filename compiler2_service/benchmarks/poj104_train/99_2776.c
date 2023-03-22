@@ -8,9 +8,9 @@ int main_bench()
     int a=0, b=0, c=0, d=0;
 	double x, y, z, w;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 		if(age[i]<19){
 			a += 1;
 		}else if(18<age[i]&&age[i]<36){
@@ -25,7 +25,7 @@ int main_bench()
 	y=(double)b/n*100;
 	z=(double)c/n*100;
 	w=(double)d/n*100;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",x,y,z,w);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",x,y,z,w);
 	return 0;
 	
 }

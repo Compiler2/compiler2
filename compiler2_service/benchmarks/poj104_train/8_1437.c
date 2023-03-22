@@ -5,7 +5,7 @@ void f1(int n,int a[])
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	
 }
@@ -37,15 +37,15 @@ void f3(int n,int m,int a[],int b[],int c[])
 }
 void f4(int n,int m,int c[])
 {
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	int i;
 	for(i=1;i<n+m;i++)
-		printf(" %d",c[i]);
+		my_printf(" %d",c[i]);
 }
 int main_bench()
 {
 	int i,n,m,a[100],b[100],c[200];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	f1(n,a);
 	f1(m,b);
 	f2(n,a);

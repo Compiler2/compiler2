@@ -5,12 +5,12 @@ int main_bench()
 {
         int cishu[2][54]={0},l1,l2,i;
         char input1[100],input2[100];
-        scanf("%s%s",input1,input2);
+        my_scanf("%s%s",input1,input2);
         l1=strlen(input1);
         l2=strlen(input2);
         if (l1!=l2)
         {
-                printf("NO\n");
+                my_printf("NO\n");
                 return 0;
         }
         for(i=0;i<l1;i++)
@@ -39,10 +39,10 @@ int main_bench()
         {
                 if(cishu[0][i]!=cishu[1][i])
                 {
-                        printf("NO\n");
+                        my_printf("NO\n");
                         return 0;
                 }
         }
-        printf("YES\n");
+        my_printf("YES\n");
         return 0;
 }

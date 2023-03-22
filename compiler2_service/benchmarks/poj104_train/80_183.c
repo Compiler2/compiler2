@@ -25,8 +25,8 @@ main_bench()
     int sy,sm,sd,ey,em,ed;
     int days(int x,int y,int z);
     int a,b;
-    scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+    my_scanf("%d %d %d %d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
     a=days(sy,sm,sd);
     b=days(ey,em,ed);
-    printf("%d",b-a);
+    my_printf("%d",b-a);
 }

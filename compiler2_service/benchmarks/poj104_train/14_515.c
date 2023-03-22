@@ -9,11 +9,11 @@ int main_bench()
 	int yu;
 	int shu;
 	};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		struct Student studenti;
-		scanf("%d%d%d",&studenti.num,&studenti.yu,&studenti.shu);
+		my_scanf("%d%d%d",&studenti.num,&studenti.yu,&studenti.shu);
 		a[i][0]=studenti.num;
 		a[i][1]=studenti.yu+studenti.shu;
 	}
@@ -26,6 +26,6 @@ int main_bench()
 		}
 	}
    for(i=1;i<=3;i++)
-	  printf("%d %d\n",a[n-i][0],a[n-i][1]);
+	  my_printf("%d %d\n",a[n-i][0],a[n-i][1]);
    return 0;
 }

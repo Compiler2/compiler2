@@ -4,7 +4,7 @@ int main_bench()
 {
 	int w,weekday[12],day[12]={12,43,71,102,132,163,193,224,255,285,316,346};
 	int m,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=0;i<12;i++)
 	{
 		weekday[i]=day[i]%7;
@@ -20,7 +20,7 @@ int main_bench()
 	{
 		if(weekday[i]==5)
 		{m=i+1;
-			printf("%d\n",m);}
+			my_printf("%d\n",m);}
 	}
 	return 0;
 }

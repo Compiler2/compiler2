@@ -4,8 +4,8 @@ int main_bench(){
  int i,p=0,r=0;
  double k,w;
  char s1[1000],s2[1000];
- scanf("%lf",&k);
- scanf("%s %s",s1,s2);
+ my_scanf("%lf",&k);
+ my_scanf("%s %s",s1,s2);
  if(strlen(s1)!=strlen(s2)){
  r++;
  }else{
@@ -19,7 +19,7 @@ int main_bench(){
 	 }
  }
  if(r>0){
-	 printf("error");
+	 my_printf("error");
  }else{
 	 for(i=0;i<strlen(s1);i++){
 		 if(s1[i]==s2[i]){
@@ -28,9 +28,9 @@ int main_bench(){
 	 }
     w=1.0*p/(strlen(s1));
 	if(w>k){
-	printf("yes");
+	my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
  }
  return 0;

@@ -2,13 +2,13 @@
 
 int main_bench(){
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     double a,b,c,x[n],y[n];
     for(i=0;i<n;i++){
-        scanf("%lf",&y[i]);
+        my_scanf("%lf",&y[i]);
     }
     for(i=0;i<n;i++){
-        scanf("%lf",&x[i]);
+        my_scanf("%lf",&x[i]);
     }
     for(i=0;i<n;i++){
         if(x[i]>=90){
@@ -51,6 +51,6 @@ int main_bench(){
         c=c+y[i];
     }
     b=a/c;
-    printf("%.2lf",b);
+    my_printf("%.2lf",b);
     return 0;
 }

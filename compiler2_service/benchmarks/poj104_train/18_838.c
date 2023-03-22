@@ -14,7 +14,7 @@ void scan(int m)
 	{
 		for(j=0;j<=m-1;++j)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 }
@@ -79,7 +79,7 @@ void eliminate()
 
 int main_bench()
 {
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int p=n;
 	int i,j;
 	for(i=1;i<=n;++i)
@@ -93,7 +93,7 @@ int main_bench()
 			eliminate();
 			n--;
 		}while(n>1);
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 		n=p;
 	}
 	return 0;

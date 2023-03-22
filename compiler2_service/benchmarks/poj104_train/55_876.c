@@ -20,7 +20,7 @@ main_bench()
   int d=0;
     long o,a,b,p,k,h,i,t;
     char n[20],l,g;
-      scanf("%d %s %d",&a,n,&b);
+      my_scanf("%d %s %d",&a,n,&b);
       o=strlen(n);
       long m[o];
     for(k=0;k<=o-1;k++)
@@ -49,7 +49,7 @@ main_bench()
     }
     
     if(p==0)
-    printf("0");
+    my_printf("0");
     
     if(b>=10)
 {   
@@ -63,10 +63,10 @@ main_bench()
             if(t>=10&&t<=50)
             {
             g=t+55;
-            printf("%c",g);
+            my_printf("%c",g);
             }
             else
-            printf("%d",t);
+            my_printf("%d",t);
             d++;
         }
     }
@@ -83,10 +83,10 @@ main_bench()
             if(t>=10&&t<=50)
             {
             g=t+55;
-            printf("%c",g);
+            my_printf("%c",g);
             }
             else
-            printf("%d",t);
+            my_printf("%d",t);
             d++;
         }
     }

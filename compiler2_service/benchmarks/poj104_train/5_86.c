@@ -24,14 +24,14 @@ int main_bench(){
 		}
 		l=(double)num/n;
 		if(l>k){
-			printf("yes");
+			my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

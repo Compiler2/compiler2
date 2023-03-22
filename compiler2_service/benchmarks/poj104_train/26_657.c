@@ -20,7 +20,7 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 
 	return 0;
 }

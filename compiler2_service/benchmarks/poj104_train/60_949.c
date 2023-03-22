@@ -6,7 +6,7 @@ int main_bench()
 	int e=0;
 	int b=0;
 	int sum=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=2;i<=n;i++){
 		e=0;
 		a=0;
@@ -21,9 +21,9 @@ int main_bench()
 		}
 		if(a==2){
         b++;
-		printf("%d %d\n",sum-2,sum);}
+		my_printf("%d %d\n",sum-2,sum);}
 	}
 	    if(b==0){
-	    printf("empty");}
+	    my_printf("empty");}
     return 0;
 }

@@ -9,9 +9,9 @@ int main_bench()
   for(i=0;i<strlen(str);i++)
 {
                    if(str[i]==' '&&str[i+1]!=' ')
-                   printf("%c",str[i]);
+                   my_printf("%c",str[i]);
                    else if(str[i]!=' ')
-                   printf("%c",str[i]);
+                   my_printf("%c",str[i]);
 }
                    
   

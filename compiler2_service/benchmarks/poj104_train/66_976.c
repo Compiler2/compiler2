@@ -3,7 +3,7 @@
 int isRunNian(int year);
 int main_bench(){
     int M,m,n,p,i,result=0;
-    scanf("%d%d%d",&M,&n,&p);
+    my_scanf("%d%d%d",&M,&n,&p);
 	if(M<401){
 		m=M;
     }else{
@@ -34,13 +34,13 @@ int main_bench(){
     result+=p;
     int q;
     q=result%7;
-    if(q==0){printf("Sun.");}
-    if(q==1){printf("Mon.");}
-    if(q==2){printf("Tue.");}
-    if(q==3){printf("Wed.");}
-    if(q==4){printf("Thu.");}
-    if(q==5){printf("Fri.");}
-    if(q==6){printf("Sat.");}
+    if(q==0){my_printf("Sun.");}
+    if(q==1){my_printf("Mon.");}
+    if(q==2){my_printf("Tue.");}
+    if(q==3){my_printf("Wed.");}
+    if(q==4){my_printf("Thu.");}
+    if(q==5){my_printf("Fri.");}
+    if(q==6){my_printf("Sat.");}
 return 0;
 }
 int isRunNian(int year){

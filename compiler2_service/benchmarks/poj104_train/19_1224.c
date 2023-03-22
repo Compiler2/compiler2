@@ -14,8 +14,8 @@ int main_bench()
 		*b='\0';
 	}
 	gets(s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	w[0]=(char *)malloc(100*sizeof(char));
 	for(j=0;j<100;j++)
 		*(w[0]+j)='\0';
@@ -42,12 +42,12 @@ int main_bench()
 		if(strcmp(w[i],a)==0)
 			strcpy(w[i],b);
 		for(j=0;*(w[i]+j)!='\0';j++)
-	        printf("%c",*(w[i]+j));
-		printf(" ");
+	        my_printf("%c",*(w[i]+j));
+		my_printf(" ");
 	}
 	if(strcmp(w[k],a)==0)
 		strcpy(w[k],b);
 	for(j=0;*(w[k]+j)!='\0';j++)
-	    printf("%c",*(w[k]+j));
-	printf("\n");
+	    my_printf("%c",*(w[k]+j));
+	my_printf("\n");
 }

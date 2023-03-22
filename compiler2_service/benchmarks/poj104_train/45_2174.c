@@ -3,7 +3,7 @@
 int main_bench(){
 char z[50],m[50];
 int a,n,b=0;
-scanf("%s %s",z,m);
+my_scanf("%s %s",z,m);
 n=strlen(z);
 for(int i=0;i<50;i++){
 	if((m[i]==z[0])&&(m[i+n-1]=z[n-1])){
@@ -13,7 +13,7 @@ for(int i=0;i<50;i++){
 			a++;
 		}
 		if(b==0){
-		printf("%d",i);
+		my_printf("%d",i);
 		break;
 		}
 	}

@@ -16,9 +16,9 @@ int main_bench() {
 		b += preb;
 		preb = tmp;
 	}
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	while (m--) {
-		scanf("%d", &n);
-		printf("%.3lf\n", arr[n]);
+		my_scanf("%d", &n);
+		my_printf("%.3lf\n", arr[n]);
 	}
 }

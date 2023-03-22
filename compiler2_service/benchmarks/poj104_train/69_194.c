@@ -30,12 +30,12 @@ int main_bench()
 		break;
 	}
 	
-	if(i<0) printf("0\n");
+	if(i<0) my_printf("0\n");
 	else
 	{
 		for(;i>=0;i--)
 	    {
-		    printf("%c",c[i]);
+		    my_printf("%c",c[i]);
 	    }
 	}
 	return 0;

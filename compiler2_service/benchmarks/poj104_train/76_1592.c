@@ -4,13 +4,13 @@ int main_bench(){
 int n,szz[11111],szy[11111];
 
 int x,e;
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(int j=0;j<n;j++){
      
-    scanf("%d",&szz[j]);
+    my_scanf("%d",&szz[j]);
 
-	scanf("%d",&szy[j]);
+	my_scanf("%d",&szy[j]);
 }
 
 for(int k=1;k<=n;k++){
@@ -52,7 +52,7 @@ for(int i=0;i<n-1;i++){
 
 	if(szz[i+1]>szy[i]){
 	
-	   printf("no");
+	   my_printf("no");
 	   
 	   return 0;
 	}
@@ -77,6 +77,6 @@ for(int i=0;i<n-1;i++){
 	}
 
 }
-printf("%d %d",szz[0],szy[n-1]);
+my_printf("%d %d",szz[0],szy[n-1]);
 return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int y,m,d,t=0;
 	int leap(int y);
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	switch(m)
 	{
 	case 12:t+=30;
@@ -25,7 +25,7 @@ int main_bench()
 		t+=1;
 	}
 	t+=d;
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }
 int leap(int y)

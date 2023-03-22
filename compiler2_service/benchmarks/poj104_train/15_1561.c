@@ -4,12 +4,12 @@ int a[1000][1000];
 int main_bench()
 {
 	int n,i,j,s=0,t=0,q,mianji;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -41,6 +41,6 @@ int main_bench()
 			break;
 	}
 	mianji=(t-2)*(s-2);
-	printf("%d",mianji);
+	my_printf("%d",mianji);
 	return 0;
 }

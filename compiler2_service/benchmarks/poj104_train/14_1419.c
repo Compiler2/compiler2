@@ -3,10 +3,10 @@
 int main_bench()
 {
    int n,i,j,q,w;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int a[n],b[n],c[n],d[n];
    for(i=0;i<n;i++)
-   {scanf("%d %d %d",&a[i],&b[i],&c[i]);
+   {my_scanf("%d %d %d",&a[i],&b[i],&c[i]);
                     
                     }
      for(i=0;i<n;i++)
@@ -30,7 +30,7 @@ int main_bench()
                     
                     }
                        for(i=0;i<3;i++)
-   {    printf("%d %d\n",a[i],d[i]);
+   {    my_printf("%d %d\n",a[i],d[i]);
                     
                     }
                     

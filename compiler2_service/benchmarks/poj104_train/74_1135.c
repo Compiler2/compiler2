@@ -4,7 +4,7 @@ int main_bench()
 {
 	int f(int p);
 	int n,m,i,k,q,p,x=0,t=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	i=m;
 	while(i<=n)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 			q=f(i);
 	     	if(q)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				x++;
 			    break;
 			}
@@ -45,13 +45,13 @@ int main_bench()
 			q=f(i);
 		    if(q)
 			{
-				printf(",%d",i);
+				my_printf(",%d",i);
 				x++;
 			}
 		}
 		i++;
 	}
-	if(x==0)printf("no");
+	if(x==0)my_printf("no");
 }
 
 int f(int p)

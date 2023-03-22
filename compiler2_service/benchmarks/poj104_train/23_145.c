@@ -27,8 +27,8 @@ int main_bench()
 	k[kc][i] = 0;
 	for ( i=kc; i>=0; i--)
 	{
-		printf("%s", k[i]);
-		if ( i!=0 ) printf(" ");
+		my_printf("%s", k[i]);
+		if ( i!=0 ) my_printf(" ");
 	}
 	return 0;
 }

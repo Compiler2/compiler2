@@ -10,10 +10,10 @@ main_bench()
 	}
 	s[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for (i=0;i<n;i++)
 	{
-		scanf("%s%d",s[i].id,&s[i].age);
+		my_scanf("%s%d",s[i].id,&s[i].age);
     }
 	while (1)
 	{
@@ -25,13 +25,13 @@ main_bench()
     }
 	if (s[max].age>=60)
 	{
-		printf("%s\n",s[max].id);
+		my_printf("%s\n",s[max].id);
         s[max].age=0;
 	}
 	else break;
 	}
 	for (i=0;i<n;i++)
 	if (s[i].age>0)
-		printf("%s\n",s[i].id);
+		my_printf("%s\n",s[i].id);
 	
 }

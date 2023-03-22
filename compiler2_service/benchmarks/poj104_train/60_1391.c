@@ -10,12 +10,12 @@ int isPrime(int a)
 int main_bench()
 {
    int n;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int i,sum=0;
    for(i=3;i+2<=n;i++)
    if(isPrime(i)&&isPrime(i+2))
-   {printf("%d %d\n",i,i+2);sum++;}
-   if(sum==0)printf("empty");
+   {my_printf("%d %d\n",i,i+2);sum++;}
+   if(sum==0)my_printf("empty");
    return 0;
 }
     

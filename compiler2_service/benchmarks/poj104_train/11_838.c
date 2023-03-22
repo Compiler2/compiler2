@@ -21,7 +21,7 @@ int isrn(int n)
 int main_bench()
 {
 	int y,m,d,sum=0,i;
-	scanf("%d %d %d",&y,&m,&d);
+	my_scanf("%d %d %d",&y,&m,&d);
 	for(i=1;i<m;i++)
 	{
 		if(i==1||i==3||i==5||i==7||i==8||i==10)
@@ -41,5 +41,5 @@ int main_bench()
 		}
 	}
 	sum+=d;
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }

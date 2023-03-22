@@ -6,7 +6,7 @@ int main_bench()
     int i,l;
     int z,t;
     char a,b;
-    scanf("%s",chn);
+    my_scanf("%s",chn);
     l = strlen(chn);
     a = chn[0];
     for(i = 0;i < l ;i ++)
@@ -22,7 +22,7 @@ int main_bench()
            z = i;
         else if(z >= 0 && chn[i] == b)
           {
-             printf("%d %d\n",z,i);
+             my_printf("%d %d\n",z,i);
              chn[z] = 0;
              chn[i] = 0;
              t ++;        

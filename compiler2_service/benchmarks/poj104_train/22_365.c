@@ -22,7 +22,7 @@ int main_bench()
 		else if(num[i]>max2&&num[i]<max)
 			max2=num[i];
 	}
-	if(max2==0) printf("No\n");
+	if(max2==0) my_printf("No\n");
 	else
-	printf("%d\n",max2);
+	my_printf("%d\n",max2);
 }

@@ -5,7 +5,7 @@ int main_bench(){
 for(i=0;i<10000;i++){
     t=0;
     for(j=0;j<6;j++){
-    scanf("%d",&a[i][j]);
+    my_scanf("%d",&a[i][j]);
     if(a[i][j]==0) t++;
 }
 if(t==6) break;
@@ -19,7 +19,7 @@ if(t==6) break;
         }
         b[i][0]=a[i][3]+12-a[i][0];
         sum[i]=b[i][0]*3600+b[i][1]*60+b[i][2];
-        printf("%d\n",sum[i]);
+        my_printf("%d\n",sum[i]);
     }
     return 0;
 }

@@ -5,12 +5,12 @@ int main_bench()
 	int i,j,n,m;
 	char a[100],b[100],c[100];
 	
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
 
 	n=strlen(a);
      m=strlen(b);
       if(n!=m)
-         printf("NO");
+         my_printf("NO");
      else 
  {
 	for(i=0;i<=n;i++)
@@ -32,8 +32,8 @@ int main_bench()
 		
 			
 			if(strcmp(a,c)==0)
-				printf("YES");
+				my_printf("YES");
 			else 
-				printf("NO");
+				my_printf("NO");
 	 }
 }

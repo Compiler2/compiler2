@@ -4,7 +4,7 @@ int num(int a);
 int main_bench()
 {
 	int w,i,m,day;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 	day=0;
 	m=1;
@@ -14,7 +14,7 @@ int main_bench()
 	}
 	day=day+12;
 	if((w+day%7)%7==5){
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 	}
 	}
 	return 0;

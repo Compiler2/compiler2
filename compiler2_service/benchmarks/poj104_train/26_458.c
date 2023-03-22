@@ -19,6 +19,6 @@ int main_bench()
 	}
 	for (i=0;i<n;i++)
 	{if (sd[i]>=0)
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 	}
 }

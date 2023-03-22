@@ -4,8 +4,8 @@ main_bench()
 {
 	int a=0,b=0,c=0,d=0;
 	char str1[250],str2[250],str3[250],str[250],str4[250],str5[250];
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	a=strlen(str1);
 	b=strlen(str2);
 	if(str1[0]==48)
@@ -106,10 +106,10 @@ main_bench()
 	if(str[0]>=('0'+10))
 	{
 		str[0]=str[0]-10;
-		printf("1%s\n",str);
+		my_printf("1%s\n",str);
 
 	}
 
 	else
-	printf("%s",str);	
+	my_printf("%s",str);	
 } 

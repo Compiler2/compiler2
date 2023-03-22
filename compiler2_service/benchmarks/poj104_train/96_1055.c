@@ -22,28 +22,28 @@ int main_bench()
 	}
 	if(i==1)
 	   {
-	   printf("%d\n",0);
-	   printf("%d",c[0]);
+	   my_printf("%d\n",0);
+	   my_printf("%d",c[0]);
 	   } 
 	else
 	  if(i==2&&c[0]==1&&c[1]<3)
 	  {
-	  printf("%d\n",0);
-	  printf("%d",rem13(c[0],c[1]));
+	  my_printf("%d\n",0);
+	  my_printf("%d",rem13(c[0],c[1]));
 	  }
 	else
 	{
 	int rem=rem13(c[0],c[1]);
 	d[0]=con13(c[0],c[1]);
 	if(d[0])
-	printf("%d",d[0]);
+	my_printf("%d",d[0]);
 	for(int j=2;j<i;j++)
 	{
 	d[j-1]=con13(rem,c[j]);	
 	rem=rem13(rem,c[j]);
-	printf("%d",d[j-1]); 
+	my_printf("%d",d[j-1]); 
 	}
-	printf("\n");
-	printf("%d",rem);
+	my_printf("\n");
+	my_printf("%d",rem);
     }
 }

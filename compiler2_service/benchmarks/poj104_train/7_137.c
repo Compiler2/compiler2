@@ -24,7 +24,7 @@ a[j]=c[k];
 break;
 }
 }
-printf("%s",a);
+my_printf("%s",a);
 return 0;
 }
 

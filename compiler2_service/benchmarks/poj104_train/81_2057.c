@@ -8,8 +8,8 @@ int main_bench()
 	p=a;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d%d",&n,&m);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&n,&m);
 	c=compare(n,m);
 	if(c)
 	{
@@ -23,11 +23,11 @@ int main_bench()
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<4;j++)
-				printf("%d ",*(*(p+i)+j));
-			printf("%d\n",*(*(p+i)+j));
+				my_printf("%d ",*(*(p+i)+j));
+			my_printf("%d\n",*(*(p+i)+j));
 		}
 	}
-	else printf("error");
+	else my_printf("error");
 }
 int compare(int n,int m)
 {

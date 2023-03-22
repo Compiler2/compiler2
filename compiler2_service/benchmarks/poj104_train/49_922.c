@@ -4,7 +4,7 @@ int main_bench()
 {
 	char c[500],d[500];
 	int f(char d[]),n,i,j,k,l;
-	scanf("%s",c);
+	my_scanf("%s",c);
 	n=strlen(c);
 	for(i=2;i<=n;i++)
 	{
@@ -15,10 +15,10 @@ int main_bench()
 			{
 				d[k-j]=c[k];
 			}
-			if(f(d)==1) printf("%s\n",d);
+			if(f(d)==1) my_printf("%s\n",d);
 		}
 	}
-	scanf("%d",&l);
+	my_scanf("%d",&l);
 	return 0;
 }
 int f(char d[])

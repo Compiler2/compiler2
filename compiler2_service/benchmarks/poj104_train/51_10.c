@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,m,i,j,c[500];
 	char s[501],t[500][4];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	m=strlen(s);
 	for(i=0;i<=m-n;i++)
 	{
@@ -34,17 +34,17 @@ int main_bench()
 			k=c[i];
 	}
 	if(k==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 		for(i=0;i<=m-n;i++)
 		{
 			if(c[i]==k)
 			{
 				for(j=0;j<n;j++)
-					printf("%c",t[i][j]);
-				printf("\n");
+					my_printf("%c",t[i][j]);
+				my_printf("\n");
 			}
 		}
 	}

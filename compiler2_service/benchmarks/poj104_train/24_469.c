@@ -33,6 +33,6 @@ int main_bench()
 			p2=i;
 		}
 	}
-			printf("%s\n",a[p1]);
-			printf("%s\n",a[p2]);
+			my_printf("%s\n",a[p1]);
+			my_printf("%s\n",a[p2]);
 }

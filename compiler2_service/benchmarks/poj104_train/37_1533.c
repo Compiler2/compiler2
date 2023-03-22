@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int t;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	int i,j,k,len;
 	char zfc[100000];
 	for(i=0;i<t;i++){
 		int NUM=0,num;
 		
-		scanf("%s",&zfc);
+		my_scanf("%s",&zfc);
 		len=strlen(zfc);		
 		for(j=0;j<len;j++){
 			num=0;
@@ -22,15 +22,15 @@ int main_bench()
 			}
 			
 			if(num==len-1) {
-				printf("%c\n",zfc[j]);
+				my_printf("%c\n",zfc[j]);
 				
 				break;
 			}
 			else {NUM++;
 		}
 		}
-		if(NUM==len) printf("no");
+		if(NUM==len) my_printf("no");
 	}
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	return 0;
 }

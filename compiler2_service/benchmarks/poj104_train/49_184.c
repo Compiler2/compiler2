@@ -25,9 +25,9 @@ int main_bench()
 			{
 				for(i=0;i<n;i++)
 				{
-					printf("%c", s[i+j]);
+					my_printf("%c", s[i+j]);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

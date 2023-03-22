@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n, i, j, m=0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int su[300];
     for(i=0;i<n;i++){
-    scanf("%d", &(su[i]));
+    my_scanf("%d", &(su[i]));
    }
   
     for(i=0;i<n-1;i++){
@@ -15,10 +15,10 @@ int main_bench(){
            }                
          }
       }
-      printf("%d", su[0]); 
+      my_printf("%d", su[0]); 
       for(i=1;i<n;i++){
        if(su[i]!=-10){
-        printf(",%d", su[i]);              
+        my_printf(",%d", su[i]);              
                       }               
                        }
 

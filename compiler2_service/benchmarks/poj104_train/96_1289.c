@@ -4,12 +4,12 @@ int main_bench()
 {
 	char a[200],b[200],c;
 	int i=0,r=0,flag=0;
-	scanf("%c",&c);
+	my_scanf("%c",&c);
 	while(c!='\n')
 	{
 		a[i]=c;
 		i++;
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 	}
 	a[i]='!';
 	i=0;
@@ -27,19 +27,19 @@ int main_bench()
 		{
 			if(b[i]>='1'&&b[i]<='9')
 			{
-				printf("%c",b[i]);
+				my_printf("%c",b[i]);
 				flag=1;
 			}
 		}
 		else
 		{
-			printf("%c",b[i]);
+			my_printf("%c",b[i]);
 		}
 		i++;
 	}while(b[i]!='!');
 	if(flag==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n%d",r);
+	my_printf("\n%d",r);
 }

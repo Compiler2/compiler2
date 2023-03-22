@@ -6,7 +6,7 @@ int main_bench()
 {
 	int i,j=0,k=0;
 	char c;
-	scanf("%s",s);
+	my_scanf("%s",s);
 	for(i=0;i<strlen(s);i++)
 	{
 		if(s[i]>='0'&&s[i]<='9')
@@ -26,12 +26,12 @@ int main_bench()
 		    j=1;
 		else if(num[i]>0&&j==1)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			ok=1;
 			break;
 		}
 	}
 	if(ok==0)
-	    printf("No");
+	    my_printf("No");
 	return 0;
 }

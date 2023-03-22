@@ -7,7 +7,7 @@ int main_bench()
     int a[300];
     while (1>0)
     {
-          scanf("%d %d",&n,&m);
+          my_scanf("%d %d",&n,&m);
           if(n==0)
           break;
           else
@@ -25,7 +25,7 @@ int main_bench()
                                          n--;
                                          p=k;
                                          }
-                                         printf("%d\n",a[0]);
+                                         my_printf("%d\n",a[0]);
                                          }
                                          }
                                         

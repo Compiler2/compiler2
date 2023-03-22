@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int p,q,m,i,n,j,k,a[1000],b[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	}
 	k=0;
 	for(j=0;j<n;j++){
@@ -23,8 +23,8 @@ for(p = 0 ; p <= (k-1) ; p++){
 	}
 }
 	for(m=0;m<(k-1);m++){
-	printf("%d,",b[m]);
+	my_printf("%d,",b[m]);
 	}
-	printf("%d",b[(k-1)]);
+	my_printf("%d",b[(k-1)]);
 return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int y1,m1,d1,y2,m2,d2,total1=0,total2=0,t,i,e,f,x1,x2; 
 int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31} ;
 
- scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2); 
+ my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2); 
  i=0;
  e=0;
  f=0;
@@ -46,6 +46,6 @@ else{x2=x2+365;}
  
  t=total2-total1;
  
- printf("%d\n",t); 
+ my_printf("%d\n",t); 
 }
 

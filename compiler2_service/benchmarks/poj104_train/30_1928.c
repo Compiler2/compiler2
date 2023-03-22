@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,s=0,m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(n=1;n<=m;n++){
 		if(n%7!=0&&n/10!=7&&(n-(n/10*10))!=7){
               s=s+n*n;
 		  }
 	}
-		  printf("%d\n",s);
+		  my_printf("%d\n",s);
      return 0;
 }
 

@@ -5,7 +5,7 @@ int main_bench()
 {   void PF(int k);
 	int a; char n[10];int i,len;
 
-	scanf("%d %s %d",&a,n,&b);
+	my_scanf("%d %s %d",&a,n,&b);
 	len=strlen(n);
 	int sum=0;
 	for(i=0;i<len;i++)
@@ -26,17 +26,17 @@ int main_bench()
 		if(k<b) 
 		{
 			if(k>=0&&k<=9)
-				printf("%c",k+'0');
+				my_printf("%c",k+'0');
 			else
-				printf("%c",k-10+'A');
+				my_printf("%c",k-10+'A');
 		}
 		else
 		{
 			PF(k/b);
 				if(k%b>=0&&k%b<=9)
-				printf("%c",k%b+'0');
+				my_printf("%c",k%b+'0');
 			else
-				printf("%c",k%b-10+'A');
+				my_printf("%c",k%b-10+'A');
 		}
 	}
 		    

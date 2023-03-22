@@ -12,14 +12,14 @@ int su(int n)
 int main_bench()
 {
     int n,j=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i;
     for(i=1;i<n-1;i++){
                      if(su(i)==1 && su(i+2)==1){
-                                 printf("%d %d\n",i,i+2);
+                                 my_printf("%d %d\n",i,i+2);
                                  j++;
                                  }
                      }
-    if(j==0) printf("empty");
+    if(j==0) my_printf("empty");
     return 0;
 }

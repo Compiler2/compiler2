@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int i,a,b,m,n,dk[100][100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
     for(a=1;a<=m;a++)
 	{
 		for(b=1;b<=n;b++)
 		{
-			scanf("%d",&dk[a][b]);
+			my_scanf("%d",&dk[a][b]);
 		}
 	}
     for(i=0;i<=n+1;i++)
@@ -22,7 +22,7 @@ int main_bench(){
 		{
 			if((dk[a][b]>=dk[a-1][b])&&(dk[a][b]>=dk[a+1][b])&&(dk[a][b]>=dk[a][b-1])&&(dk[a][b]>=dk[a][b+1]))
 			{
-			   printf("%d %d\n",a-1,b-1);
+			   my_printf("%d %d\n",a-1,b-1);
 			}
 		}
 	}

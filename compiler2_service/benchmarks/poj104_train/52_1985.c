@@ -4,11 +4,11 @@ void diaohuan(int *a,int m,int n);
 main_bench()	
 {
 	int m,n,i,a[10000];
-	scanf("%d%d",&n,&m);
-	for(i=0;i<n;i++) scanf("%d",&a[i]);
+	my_scanf("%d%d",&n,&m);
+	for(i=0;i<n;i++) my_scanf("%d",&a[i]);
 	diaohuan(a,m,n);
-	printf("%d",a[0]);
-         for(i=1;i<n;i++) printf(" %d",a[i]);
+	my_printf("%d",a[0]);
+         for(i=1;i<n;i++) my_printf(" %d",a[i]);
 }
 void diaohuan(int *a,int m,int n)
 {

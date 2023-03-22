@@ -2,10 +2,10 @@
 
 int main_bench(){
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(int i=1;i<=n;i++){
     char zfc[21];
-    scanf("%s",zfc);
+    my_scanf("%s",zfc);
     if((zfc[0]>='a'&&zfc[0]<='z')||(zfc[0]>='A'&&zfc[0]<='Z')||zfc[0]=='_'){
       int s;
       for(int k=1;zfc[k]!='\0';k++){
@@ -17,12 +17,12 @@ int main_bench(){
         }
       }
       if(s==0){
-        printf("yes\n");
+        my_printf("yes\n");
       }else if(s==1){
-        printf("no\n");
+        my_printf("no\n");
       }
     }else{
-       printf("no\n");
+       my_printf("no\n");
     }
    }
   return 0;

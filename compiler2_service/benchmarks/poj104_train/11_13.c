@@ -12,7 +12,7 @@ static int isleapyear(int year)
 
 int main_bench() { 
   int year, month, day; 
-  scanf("%d %d %d", &year, &month, &day); 
+  my_scanf("%d %d %d", &year, &month, &day); 
   
 
   int n = 0;  
@@ -27,7 +27,7 @@ int main_bench() {
   if (month > 2 && isleapyear(year)) 
     n++; 
 
-  printf("%d", n); 
+  my_printf("%d", n); 
 }
  
    

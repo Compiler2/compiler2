@@ -6,11 +6,11 @@ int main_bench()
 	char character[300];
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&character[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&character[i]);
 		if(character[i]!=',') break;
 	}
-	if(i==0) printf("No");
+	if(i==0) my_printf("No");
 	else
 	{
 		if(a[0]>=a[1])
@@ -39,7 +39,7 @@ int main_bench()
 				}
 			}
 		}
-		if(max==secmax) printf("No");
-		else printf("%d\n",secmax);
+		if(max==secmax) my_printf("No");
+		else my_printf("%d\n",secmax);
 	}
 }

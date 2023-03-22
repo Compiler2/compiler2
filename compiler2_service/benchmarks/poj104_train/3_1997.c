@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n,a[1000],k,i,j,t;
-	scanf("%d",&n);
-	scanf("%d",&k);
+	my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	i=0;
 	while(i<n){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i=i+1;
 	}
 	for(j=0;j<n-1;j=j+1){
@@ -20,10 +20,10 @@ int main_bench(){
                        }
     }
     if(a[i]+a[j]==k){
-                 printf("yes");
+                 my_printf("yes");
     }
     else{
-                 printf("no");
+                 my_printf("no");
     }
 	return 0;
 }

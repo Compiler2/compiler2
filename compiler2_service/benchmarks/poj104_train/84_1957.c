@@ -3,13 +3,13 @@
 int main_bench()
 {
      int n;
-	 scanf("%d", &n);
+	 my_scanf("%d", &n);
 	 int i;
 	 int number[1000];
 	 int a;
 	 for(i=0; i<n; i++)
 	 {
-	    scanf("%d\n", &number[i]);
+	    my_scanf("%d\n", &number[i]);
 	 }
 	for(i=1; i<n; i++)
 	{
@@ -29,6 +29,6 @@ int main_bench()
 		 number[1]=a;
 	  }
 	}
-	printf("%d\n%d", number[0], number[1]);
+	my_printf("%d\n%d", number[0], number[1]);
 	 return 0;
 }

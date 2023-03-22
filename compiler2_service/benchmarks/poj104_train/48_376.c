@@ -7,7 +7,7 @@ int main_bench(){
 	int b[11][11]={0};
 	int day,i,j;
 	
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[5][5]=m;
 	
 	for(day=0;day<n;day++){
@@ -38,10 +38,10 @@ int main_bench(){
 	for(i=1;i<10;i++){
 		for(j=1;j<10;j++){
 			if(j!=9){
-				printf("%d ",a[i][j]);
+				my_printf("%d ",a[i][j]);
 			}
 			if(j==9){
-				printf("%d\n",a[i][j]);
+				my_printf("%d\n",a[i][j]);
 			}
 		}
 	}

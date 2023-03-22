@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,i,l;
 	long m=1,num=0;
 	char n[32],str[32]={0};
-	scanf("%d%s%d",&a,n,&b);
+	my_scanf("%d%s%d",&a,n,&b);
 	l=strlen(n);
 	for(i=0;i<l;i++)
 	{
@@ -28,8 +28,8 @@ int main_bench()
 	}
 	for(l=i;l<32;l++)
 	{
-		if((str[l]>=0)&&(str[l]<=9))printf("%d",str[l]);
-        if(str[l]>=10)printf("%c",str[l]+55);
+		if((str[l]>=0)&&(str[l]<=9))my_printf("%d",str[l]);
+        if(str[l]>=10)my_printf("%c",str[l]+55);
 	}
-	printf("\n");
+	my_printf("\n");
 }

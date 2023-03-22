@@ -17,11 +17,11 @@ int main_bench()
 	}
 	a[i]='\0';
 	if(strcmp(a,from)==0)
-		printf("%s",to);
-	else printf("%s",a);
+		my_printf("%s",to);
+	else my_printf("%s",a);
 	if(*p)
 	{
-		printf(" ");
+		my_printf(" ");
 		p++;
 	}
 	}

@@ -9,7 +9,7 @@ int main_bench()
     int a1[101];
     int b1[101]={0};
     int c[101]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int length1,length2,length;
     for(j=1;j<=n;j++)
     {
@@ -17,7 +17,7 @@ int main_bench()
        {
            a1[i]=b1[i]=c[i]=0;
        }
-        scanf("%s%s",a,b);
+        my_scanf("%s%s",a,b);
          length1=strlen(a);
          length2=strlen(b);
         if(length1>length2)
@@ -43,9 +43,9 @@ int main_bench()
         }
          for(i=0;i<length;i++)
          {
-             printf("%d",c[length-i-1]);
+             my_printf("%d",c[length-i-1]);
          }
-         printf("\n");
+         my_printf("\n");
     }
     return 0;
 }

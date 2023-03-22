@@ -5,10 +5,10 @@ int main_bench()
 {   int a1,a2,b1,b2,n,i,j,s;
     a1=0;a2=0;b1=0;b2=0;
     int x[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{  for(j=0;j<n;j++)
-	   {scanf("%d",&x[i][j]);}
+	   {my_scanf("%d",&x[i][j]);}
 	}
 
 	for(i=0;i<n;i++)
@@ -32,6 +32,6 @@ int main_bench()
 
     s = (a2 - a1 -1) * (b2 - b1 -1);
 	
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

@@ -21,10 +21,10 @@ int main_bench()
     }
     for(i=0;i<strlen(s);i++)
     {
-        if(mark[i]==0)   printf("%c",s[i]);
+        if(mark[i]==0)   my_printf("%c",s[i]);
         else
         {
-            printf("%s",b);
+            my_printf("%s",b);
             while(1)
             {
                 if((s[i]==' ')||(s[i]=='\n')||(s[i]=='\0')) {i--;break;}

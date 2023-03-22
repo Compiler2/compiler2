@@ -6,11 +6,11 @@ int main_bench()
     int n,i,j,temp,inpnum[300],max;
     float sum=0,ave,distance[300],tmpf;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(i=0;i<n;i++)       
     {
-       scanf("%d",&inpnum[i]);
+       my_scanf("%d",&inpnum[i]);
        sum+=inpnum[i];
     }
     ave=sum/n;
@@ -54,12 +54,12 @@ int main_bench()
    
     
     max=distance[0];
-    printf("%d",inpnum[0]);
+    my_printf("%d",inpnum[0]);
     
     for(i=1;i<n;i++)
     {
         if(distance[i]==max)
-            printf(",%d",inpnum[i]);
+            my_printf(",%d",inpnum[i]);
         else
             break;
     }

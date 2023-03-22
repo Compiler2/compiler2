@@ -18,9 +18,9 @@ int main_bench()
 	
 	int n,i,j,t,sum;
 	char c[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%s %d %d %c %c %d",&a[i].n,&a[i].f,&a[i].p,&a[i].g,&a[i].x,&a[i].l);}
+	{my_scanf("%s %d %d %c %c %d",&a[i].n,&a[i].f,&a[i].p,&a[i].g,&a[i].x,&a[i].l);}
 	for(i=0;i<n;i++)
 	{ a[i].m=0;}
 
@@ -50,7 +50,7 @@ int main_bench()
 			 strcpy(a[j+1].n,c);
 			}
 		}
-		printf("%s\n",a[0].n);
-		printf("%d\n",a[0].m);
-		printf("%d",sum);
+		my_printf("%s\n",a[0].n);
+		my_printf("%d\n",a[0].m);
+		my_printf("%d",sum);
 }

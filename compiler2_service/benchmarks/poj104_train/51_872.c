@@ -3,9 +3,9 @@
 int main_bench()
 {
     int l,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[500],b[500][5];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	l=strlen(a);
 	int i,j;
 	for(i=0;i<500;i++)
@@ -42,13 +42,13 @@ int main_bench()
 
 	if(max>1)
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<l-n+1;i++)
 		{
-			if(d[i]==max)  printf("%s\n",b[i]);
+			if(d[i]==max)  my_printf("%s\n",b[i]);
 		}
 	}
-	else  printf("NO");
+	else  my_printf("NO");
 
 	
 

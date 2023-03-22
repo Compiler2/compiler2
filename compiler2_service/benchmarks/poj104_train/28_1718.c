@@ -40,8 +40,8 @@ int a[300];
 		}
 	for(i=0;i<row-1;i++)
 	{
-		printf("%d,",a[i]);
+		my_printf("%d,",a[i]);
 	}
-printf("%d",a[row-1]);
+my_printf("%d",a[row-1]);
 return 0;
 }

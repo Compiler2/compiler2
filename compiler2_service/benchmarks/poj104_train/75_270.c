@@ -53,6 +53,6 @@ main_bench()
 	}
 	if(max!=27&&max!=34&&max!=87&&max!=160&&max!=164&&max!=535&&max!=91&&max!=23)
     	max++;
-	printf("%d %d\n",k,max);
+	my_printf("%d %d\n",k,max);
 	return 0;
 }

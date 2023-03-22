@@ -4,7 +4,7 @@ int main_bench()
 {
 int n,i,j,k,K,s;
 int a[10000]={0}; 
-scanf("%d",&n);
+my_scanf("%d",&n);
 k=0;
 s=0;
 for(i=2;i<=n;i++)
@@ -26,11 +26,11 @@ K=k;
 for(k=0;k<K;k++)
 {
     if((a[k+1]-a[k])==2)
-   { printf("%d %d\n",a[k],a[k+1]); 
+   { my_printf("%d %d\n",a[k],a[k+1]); 
     s++;}  
 }
 if(s==0)
-printf("empty");              
+my_printf("empty");              
 
 return 0;     
 } 

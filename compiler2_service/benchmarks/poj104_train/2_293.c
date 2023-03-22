@@ -8,11 +8,11 @@ int main_bench()
 		char a[26];
 	};
 	int n,i,j,k,q=0;int b[26]={0},c[26];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct book * p;
 	p=(struct book *)malloc(n*sizeof(struct book));
 	for(i=0;i<n;i++)
-		scanf("%d %s",&p[i].m,p[i].a);
+		my_scanf("%d %s",&p[i].m,p[i].a);
 	for(i=0;i<26;i++)
 		for(j=0;j<n;j++)
 			for(k=0;k<26;k++)
@@ -31,11 +31,11 @@ int main_bench()
 	for(i=0;i<26;i++)
 		if(c[i]==b[25])
 		{
-			printf("%c\n%d\n",'A'+i,b[25]);
+			my_printf("%c\n%d\n",'A'+i,b[25]);
 			for(j=0;j<n;j++)
 				for(k=0;k<26;k++)
 					if(p[j].a[k]=='A'+i)
-						printf("%d\n",p[j].m);
+						my_printf("%d\n",p[j].m);
 		}
 		free(p);
 

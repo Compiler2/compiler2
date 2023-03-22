@@ -217,7 +217,7 @@ int main_bench(){
 		}
 	}
 			
-	printf("%s",zfc);
+	my_printf("%s",zfc);
 		
 	return 0;
 }

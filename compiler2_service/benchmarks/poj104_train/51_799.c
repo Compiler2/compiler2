@@ -6,7 +6,7 @@ int main_bench()
      char a[501];
      int m[500];
      int n,i,j,t,s,x=0;
-     scanf("%d\n",&n);
+     my_scanf("%d\n",&n);
      gets(a);
      t = strlen(a);
      char k[501][6];
@@ -24,14 +24,14 @@ int main_bench()
          }
          if (m[i]>x) x=m[i];
      }
-     if (x==1) printf("NO");
+     if (x==1) my_printf("NO");
      else
      {
-         printf("%d\n",x);
+         my_printf("%d\n",x);
          for (i=0;i<t-n;i++)
          {
              if(m[i]==x)
-             printf("%s\n",k[i]);
+             my_printf("%s\n",k[i]);
          }
      }
 

@@ -18,8 +18,8 @@ int main_bench()
 {
     int m(int n,int k);
     int n,k;
-    scanf("%d%d",&n,&k);
-    printf("%d\n",f(n,k));
+    my_scanf("%d%d",&n,&k);
+    my_printf("%d\n",f(n,k));
     
     return 0;
     }

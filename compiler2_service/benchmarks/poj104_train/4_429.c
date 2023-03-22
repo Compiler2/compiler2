@@ -5,15 +5,15 @@ int main_bench()
 	int a[100][100];
 	int row,col;
 	int i,j;
-	scanf("%d %d",&row,&col);
+	my_scanf("%d %d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}
 	for(i=0,j=0;;)
 	{
-		printf("%d\n",a[i][j]);
+		my_printf("%d\n",a[i][j]);
 		if(i==row-1&&j==col-1)
 			break;
 		else

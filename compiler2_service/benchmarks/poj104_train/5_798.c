@@ -4,11 +4,11 @@ int main_bench(){
 	int i,p=0,t=0,r=0;
 	double k,q;
 	char gen1[1000],gen2[1000];
-	scanf("%lf",&k);
-	scanf("%s",gen1);
-	scanf("%s",gen2);
+	my_scanf("%lf",&k);
+	my_scanf("%s",gen1);
+	my_scanf("%s",gen2);
 	if(strlen(gen1)!=strlen(gen2)){
-	printf("error\n");
+	my_printf("error\n");
 	}else{
 		for(i=0;i<strlen(gen1);i++){
 			if(gen1[i]!='A'&&gen1[i]!='C'&&gen1[i]!='G'&&gen1[i]!='T'){
@@ -20,7 +20,7 @@ int main_bench(){
 		r++;
 		}
 		if(r>0){
-		printf ("error");
+		my_printf ("error");
         t=0;
 		}else{
 		t=1;
@@ -33,9 +33,9 @@ int main_bench(){
 		}
 	    q=1.0*p/(strlen(gen1));
 		 if(q>k){
-		 printf("yes\n");
+		 my_printf("yes\n");
 		 }else{
-		 printf("no\n");
+		 my_printf("no\n");
 		 }
 	}
 }

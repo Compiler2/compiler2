@@ -3,10 +3,10 @@
 int main_bench()
 {
 int m,n;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for (int i=0;i<m;i++)
 {
-scanf("%d",&n);
+my_scanf("%d",&n);
 float s=0;
 int a[n+2];
 a[1]=1;
@@ -17,6 +17,6 @@ for (int j=1;j<=n;j++)
 {
 s+=1.0*a[j+1]/a[j];
 }
-printf("%.3f\n",s);
+my_printf("%.3f\n",s);
 }
 }

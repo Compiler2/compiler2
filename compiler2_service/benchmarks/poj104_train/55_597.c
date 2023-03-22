@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,k,l,length,num,x;
 	long m,n,ten=0,ten2=0;
-	scanf("%ld%s%ld",&n,str,&m);
+	my_scanf("%ld%s%ld",&n,str,&m);
 	length=strlen(str);
 	for(i=0;i<length;i++)
 	{
@@ -19,7 +19,7 @@ int main_bench()
 		}
 		ten=ten+x*num;
 	}
-	if(ten==0) printf("0\n");
+	if(ten==0) my_printf("0\n");
 	else
 	{
 		for(k=0;(ten!=0);k++)
@@ -32,13 +32,13 @@ int main_bench()
 		{
 			if(l!=(k-1))
 			{
-				if(ans[k-l-1]>'9') {ans[k-l-1]=ans[k-l-1]+7;printf("%c",ans[k-l-1]);}
-				else printf("%c",ans[k-l-1]);
+				if(ans[k-l-1]>'9') {ans[k-l-1]=ans[k-l-1]+7;my_printf("%c",ans[k-l-1]);}
+				else my_printf("%c",ans[k-l-1]);
 			}
 			else
 			{
-				if(ans[k-l-1]>'9') {ans[k-l-1]=ans[k-l-1]+7;printf("%c\n",ans[k-l-1]);}
-				else printf("%c\n",ans[k-l-1]);
+				if(ans[k-l-1]>'9') {ans[k-l-1]=ans[k-l-1]+7;my_printf("%c\n",ans[k-l-1]);}
+				else my_printf("%c\n",ans[k-l-1]);
 			}
 		}
 	}

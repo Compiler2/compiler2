@@ -4,12 +4,12 @@ int main_bench(){
     int n;
     int k=0;
     int c=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     int b[n];
     for(int i=0;i<n;i++)
     {
-        scanf("%d%d",&(a[i]),&(b[i]));
+        my_scanf("%d%d",&(a[i]),&(b[i]));
         if((a[i]>=90)&&(a[i]<=140)&&(b[i]<=90)&&b[i]>=60)
         {
             c++;
@@ -25,11 +25,11 @@ int main_bench(){
     }
     if(c>k)
     {
-    printf("%d\n",c);
+    my_printf("%d\n",c);
     }
     else
     {
-        printf("%d\n",k);
+        my_printf("%d\n",k);
     }
     return 0;
 }

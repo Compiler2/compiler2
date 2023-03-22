@@ -30,7 +30,7 @@ void judge_sushu(int n,int t[])
 int main_bench()
 {
 	int m,n,i,t[2]={0},y,temp=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		y=i;
@@ -38,7 +38,7 @@ int main_bench()
 		judge_sushu(i,t);
 		if(t[0]==i&&t[1]==0)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			temp=1;
 			break;
 		}
@@ -51,11 +51,11 @@ int main_bench()
 		judge_huiwen(i,t,y,0);
 		judge_sushu(i,t);
 		if(t[0]==i&&t[1]==0)
-			printf(",%d",i);
+			my_printf(",%d",i);
 		t[0]=0;
 		t[1]=0;
 	}
 	if(temp==0)
-		printf("no");
-	printf("\n");
+		my_printf("no");
+	my_printf("\n");
 }

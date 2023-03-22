@@ -21,7 +21,7 @@ int main_bench()
           k=k+1;
         }
        if(n!=0)
-       {printf("%c=%d\n",x,n);}
+       {my_printf("%c=%d\n",x,n);}
        if(x=='Z')
        x=x+7;
         else
@@ -33,7 +33,7 @@ int main_bench()
         if((str[k]>='A'&&str[k]<='Z')||(str[k]>='a'&&str[k]<='z'))
         break;
        else if(k==i)
-       printf("No\n");
+       my_printf("No\n");
        k=k+1;
         }
      return 0;

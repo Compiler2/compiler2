@@ -5,7 +5,7 @@ int main_bench()
     char str[100000];
     char *p;
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     gets(str);
     for (i=0;i<n;i++)
     {	
@@ -22,13 +22,13 @@ int main_bench()
         {
              if(1==times[*p])
              {
-                printf("%c\n",*p);
+                my_printf("%c\n",*p);
                 break;
               }
 			 p++;
         }
         if ('\0'==*p)
-           printf("no\n");
+           my_printf("no\n");
      }
      return 0;
 }

@@ -7,7 +7,7 @@ void print_(int m,int*a,int n,int*b);
 int main_bench()
 {
 int m,n,*a,*b;
-scanf("%d %d",&m,&n);   
+my_scanf("%d %d",&m,&n);   
 a=(int*)malloc(m*sizeof(int));
 b=(int*)malloc(n*sizeof(int)); 
 scan_(m,a,n,b);
@@ -22,10 +22,10 @@ void scan_(int m,int*a,int n,int*b)
    
     p=a;
     for(i=0;i<m;i++) 
-    scanf("%d",p++);
+    my_scanf("%d",p++);
     p=b;
     for(j=0;j<n;j++)
-    scanf("%d",p++);
+    my_scanf("%d",p++);
     
 }
 
@@ -57,12 +57,12 @@ void sort_(int m,int*a,int n,int*b)
 void print_(int m,int*a,int n,int*b)
 {
 int i,*p;
-printf("%d",*a);
+my_printf("%d",*a);
 p=a+1;
 for(i=1;i<m;i++,p++)    
-printf(" %d",*p);
+my_printf(" %d",*p);
 p=b;    
 for(i=0;i<n;i++,p++)
-printf(" %d",*p);
-printf("\n");    
+my_printf(" %d",*p);
+my_printf("\n");    
 }

@@ -5,11 +5,11 @@ int main_bench()
 	char s1[100],s2[100];
 	int changdu1,changdu2,i,js=0;
 	double rate,rate1;
-	scanf("%lf%s%s",&rate,s1,s2);
+	my_scanf("%lf%s%s",&rate,s1,s2);
 	changdu1=strlen(s1);
 	changdu2=strlen(s2);
 	if(changdu1!=changdu2)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<changdu1;i++)
@@ -21,7 +21,7 @@ int main_bench()
 			}
 		}
 		if(js==1)
-			printf("error");
+			my_printf("error");
 		else
 		{
 			for(i=0;i<changdu1;i++)
@@ -31,8 +31,8 @@ int main_bench()
 			}
 			rate1=1.0*js/changdu1;
 			if(rate1>rate)
-				printf("yes");
-			else printf("no");
+				my_printf("yes");
+			else my_printf("no");
 		}
 	}
 	return 0;

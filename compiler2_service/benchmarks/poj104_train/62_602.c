@@ -15,5 +15,5 @@ int main_bench()
 			*(str+i-t)=*(str+i);
 	}
 	for (i=0;i<n-t;i++)
-		printf("%c",*(str+i));
+		my_printf("%c",*(str+i));
 }

@@ -13,18 +13,18 @@ int checkprime(int af)
 int main_bench()
 {
 	int a,n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	a=0;
 	for(i=2;i<n-1;i++)
 	{
 		if (checkprime(i)==1&&checkprime(i+2)==1)
 		{
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		a++;
 		}}
 if(a==0)
-printf("empty");
+my_printf("empty");
 	return 0;
 }
 

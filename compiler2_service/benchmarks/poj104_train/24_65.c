@@ -6,7 +6,7 @@ int main_bench()
 	int s=0;
 	for(p=a;p<a+50;p++)
 	{
-		scanf("%s",*p);
+		my_scanf("%s",*p);
 		s++;
 		if(getchar()=='\n')
 			break;
@@ -18,8 +18,8 @@ int main_bench()
 		p1=strlen(*p)>strlen(p1)?*p:p1;
 		p2=strlen(*p)<strlen(p2)?*p:p2;
 	}
-	printf("%s\n",p1);
-	printf("%s",p2);
+	my_printf("%s\n",p1);
+	my_printf("%s",p2);
 	return 0;
 }
 

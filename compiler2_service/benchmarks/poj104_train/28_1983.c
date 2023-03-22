@@ -18,10 +18,10 @@ int main_bench()
          }
         
      if(a[j+1]==' '&&a[j]!=' '&&isfirst!=1) 
-     {printf(",%d",flag);
+     {my_printf(",%d",flag);
       flag=0;}   
      if(a[j+1]==' '&&a[j]!=' '&&isfirst==1) 
-     {printf("%d",flag);
+     {my_printf("%d",flag);
       isfirst=0;
       flag=0;}
     

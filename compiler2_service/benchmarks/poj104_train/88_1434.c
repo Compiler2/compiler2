@@ -11,9 +11,9 @@ int main_bench()
   {
    if(c[i]>=48&&c[i]<=57)
    {
-    if(c[i+1]>=48&&c[i+1]<=57)printf("%c",c[i]);
+    if(c[i+1]>=48&&c[i+1]<=57)my_printf("%c",c[i]);
     else
-    printf("%c\n",c[i]);
+    my_printf("%c\n",c[i]);
    }
   }
 	

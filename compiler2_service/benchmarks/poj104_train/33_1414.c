@@ -3,31 +3,31 @@
 int main_bench()
 {
 	int n, i, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	char input, output;
-	scanf("%c", &input);
+	my_scanf("%c", &input);
 	for (i=1;i<=n;i++)
 	{
 		for(j=0;j<255;j++)	
 		{
-			scanf("%c", &input);
+			my_scanf("%c", &input);
 			if(input=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			else if(input=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
 			else if(input=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
 			else if(input=='C')
 			{
-				printf("G");
+				my_printf("G");
 			} else {
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

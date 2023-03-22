@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	do
 	{
-		printf("%d",i%10);
+		my_printf("%d",i%10);
 		i=i/10;
 		
 	}while(i!=0);

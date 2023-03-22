@@ -8,10 +8,10 @@ main_bench()
       b[i]=0;
       c[i]=0;
   }
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(int i=0;;i++)
   {
-      scanf("%d %d",&a[i][0],&a[i][1]);
+      my_scanf("%d %d",&a[i][0],&a[i][1]);
       if(a[i][0]==a[i][1]) break;
       else k++;
   }
@@ -25,8 +25,8 @@ main_bench()
    }
    for(int i=0;i<n;i++)
    {
-           if(b[i]==n-1&&c[i]==0) printf("%d",i);
+           if(b[i]==n-1&&c[i]==0) my_printf("%d",i);
            else t++;
    }
-   if(t==n) printf("NOT FOUND");
+   if(t==n) my_printf("NOT FOUND");
 }

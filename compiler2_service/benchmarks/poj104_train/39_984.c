@@ -4,15 +4,15 @@ int main_bench()
 {
  int g[101],c[101],e[101],i,m,n,mon[101],max=0,sum=0,j;
  char name[101][20],west[101],leader[101];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
   {
    for(j=0;;j++)
-    {scanf("%c",&name[i][j]);
+    {my_scanf("%c",&name[i][j]);
      if(name[i][j]==' ') break;}
-   scanf(" %d%d",&g[i],&c[i]);
-   scanf(" %c %c ",&leader[i],&west[i]);
-   scanf("%d\n",&e[i]);
+   my_scanf(" %d%d",&g[i],&c[i]);
+   my_scanf(" %c %c ",&leader[i],&west[i]);
+   my_scanf("%d\n",&e[i]);
    mon[i]=0;
    if(g[i]>80 && e[i]>=1) mon[i]=mon[i]+8000;
    if(g[i]>85 && c[i]>80) mon[i]=mon[i]+4000;
@@ -27,9 +27,9 @@ int main_bench()
   }
  for(j=0;;j++)
  { if(name[m][j]!=' ') 
-   printf("%c",name[m][j]);
-   else {printf("\n");break;}
+   my_printf("%c",name[m][j]);
+   else {my_printf("\n");break;}
  }
- printf("%d\n%d",mon[m],sum);
+ my_printf("%d\n%d",mon[m],sum);
  return 0;
 }

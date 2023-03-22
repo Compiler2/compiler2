@@ -26,11 +26,11 @@ int main_bench()
 {
 	int n,i,j,k;
 double x,e,f;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d",&j);
-printf("%.3lf\n",fun(j));
+my_scanf("%d",&j);
+my_printf("%.3lf\n",fun(j));
 }
 
 	return 0;

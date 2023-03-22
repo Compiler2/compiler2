@@ -6,7 +6,7 @@ int main_bench()
 	int i,n;
 	for(i=0;i<110;i++)
 	{
-		scanf("%c", &a[i]);
+		my_scanf("%c", &a[i]);
 		if(a[i]==' ' && a[i-1]==' ') i-=1;
 		if(a[i]=='\n')
 		{
@@ -16,8 +16,8 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%c", a[i]);
+		my_printf("%c", a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
     return 0;
 }

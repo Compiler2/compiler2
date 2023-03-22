@@ -3,7 +3,7 @@
 int haha()
 {
 	int m,n,sum,i,j,a[105][105];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 
 	
 				
@@ -11,7 +11,7 @@ int haha()
 				
 	for(i=1;i<=m;i++)
 		for(j=1;j<=n;j++)
-			scanf("%d",&*(*(a+i)+j));
+			my_scanf("%d",&*(*(a+i)+j));
 
 		sum=0;
 
@@ -47,13 +47,13 @@ int i,j,k,l,m,n,a[1050];
 
 
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
 *(a+i)=haha();
 
 
 for(i=1;i<=n;i++)
-printf("%d\n",*(a+i));
+my_printf("%d\n",*(a+i));
 
   }
 

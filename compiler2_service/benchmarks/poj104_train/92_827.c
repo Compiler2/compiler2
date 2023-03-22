@@ -12,14 +12,14 @@ int mycomp(const void * elem1, const void * elem2)
 int main_bench()
 {
 	int n;
-	while (scanf("%d", &n))
+	while (my_scanf("%d", &n))
 	{
 		if (n==0)
 			break;
 		for (int i=0;i<n;i++)
-			scanf("%d", &tianji[i]);
+			my_scanf("%d", &tianji[i]);
 		for (int i=0;i<n;i++)
-			scanf("%d", &qiwang[i]);
+			my_scanf("%d", &qiwang[i]);
 		qsort(tianji, n, sizeof(int), mycomp);
 		qsort(qiwang, n, sizeof(int), mycomp);
 		int ts = 0;
@@ -61,7 +61,7 @@ int main_bench()
 				qs++;
 			}
 		}
-		printf("%d\n", win*200);
+		my_printf("%d\n", win*200);
 	}
 	return 0;
 }

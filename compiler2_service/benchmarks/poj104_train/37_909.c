@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,i,j,k;
     char s[10][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for(j=0;j<n;j++){
         int num[26]={0},m[26],t=100000;
-        scanf("%s",s[j]);
+        my_scanf("%s",s[j]);
         
         for(i=strlen(s[j])-1;i>-1;i--){
             k=s[j][i]-97;
@@ -22,8 +22,8 @@ int main_bench()
                     t=m[k];
         }
         if(t<100000)
-            printf("%c\n",s[j][t]);
+            my_printf("%c\n",s[j][t]);
         else
-            printf("no\n");
+            my_printf("no\n");
     } 
 }

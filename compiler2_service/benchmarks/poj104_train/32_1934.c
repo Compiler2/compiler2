@@ -6,11 +6,11 @@ int main_bench()
 	char n1[410],n2[410];
 	int a[410],b[410],c[410];
 	int num(char c);
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(loop=1;loop<=N;loop++)
 	{
-		scanf("%s",n1);
-		scanf("%s",n2);
+		my_scanf("%s",n1);
+		my_scanf("%s",n2);
 		memset(a,0,410*sizeof(int));
 		memset(b,0,410*sizeof(int));
 		t=0;
@@ -37,11 +37,11 @@ int main_bench()
 			if(c[i]!=0)
 				s=1;
 			if(s==1)
-				printf("%d",c[i]);
+				my_printf("%d",c[i]);
 		}
 		if(s==0)
-			printf("0");
-		printf("\n");
+			my_printf("0");
+		my_printf("\n");
 	}
 	return 0;
 }

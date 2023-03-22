@@ -8,7 +8,7 @@ int main_bench()
 	int i;
 	int l1,l2,l3,re;
 	for(i=0;i<3;i++)
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	l1=strlen(a[0]);
 	l2=strlen(a[1]);
 	l3=strlen(a[2]);
@@ -46,9 +46,9 @@ int main_bench()
 		   a[0][i]=a[2][x];
 		   x++;
 		}
-		printf("%s",a[0]);
+		my_printf("%s",a[0]);
 	}
 	else
-	    printf("%s",a[0]);
+	    my_printf("%s",a[0]);
 	return 0;
 }

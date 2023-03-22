@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,l,j,p,m;
 	char c[81];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(c);
 	
 
@@ -28,7 +28,7 @@ int main_bench()
 		}
 		if(c[0]>47&&c[0]<58)
 			m=0;
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 	}
 	return 0;
 }

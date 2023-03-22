@@ -5,11 +5,11 @@ int main_bench()
      void usd(char x[100]);
      char a[100],b[100],c[100]={'\0'};
      int i,j,k,p,n;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      for (p=0;p<n;p++)
      {
-     scanf("%s",a);
-     scanf("%s",b);
+     my_scanf("%s",a);
+     my_scanf("%s",b);
      usd(a);
      usd(b);
      k=0;
@@ -26,7 +26,7 @@ int main_bench()
      for (j=k;a[j]!='\0';j++) c[j]=a[j];
      c[j]='\0';
      usd(c);
-     printf("%s\n",c);
+     my_printf("%s\n",c);
      }
 }
 void usd(char x[100])

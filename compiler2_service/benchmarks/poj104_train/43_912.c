@@ -4,7 +4,7 @@ int main_bench()
 {
 	int f(int n);
 	int m,a=3,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	while(a<=(m/2))
 	{
 		if(f(a)==1)
@@ -12,7 +12,7 @@ int main_bench()
 			b=m-a;
 			if(f(b)==1)
 			{
-				printf("%d %d\n",a,b);
+				my_printf("%d %d\n",a,b);
 			}
 		}
 		a=a+2;

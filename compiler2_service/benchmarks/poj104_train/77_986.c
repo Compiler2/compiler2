@@ -51,7 +51,7 @@ int main_bench()
 				break;
 			}
 		}
-		printf("%d %d\n",b,g);
+		my_printf("%d %d\n",b,g);
 	}
 	return 0;
 } 

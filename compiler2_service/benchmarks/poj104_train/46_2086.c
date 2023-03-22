@@ -4,7 +4,7 @@ int main_bench(){
 	
 int m,n,sz[100][100],x,y,z,a,b,w=0,i;
 	
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 	
 for(int p=0;p<m;p++)
 	
@@ -18,7 +18,7 @@ for(int q=0;q<n;q++)
 	
 	
 	
-scanf("%d",&sz[p][q]);
+my_scanf("%d",&sz[p][q]);
 	
 	
 }
@@ -47,7 +47,7 @@ for(y=0+x;y<n-1-x;y++)
 	
 	
 	
-printf("%d\n",sz[x][y]);
+my_printf("%d\n",sz[x][y]);
 	
 	
 }
@@ -60,7 +60,7 @@ for(z=0+x;z<m-1-x;z++)
 	
 	
 	
-printf("%d\n",sz[z][y]);
+my_printf("%d\n",sz[z][y]);
 	
 	
 }
@@ -70,7 +70,7 @@ for(a=n-1-x;a>0+x;a--){
 	
 	
 	
-printf("%d\n",sz[z][a]);
+my_printf("%d\n",sz[z][a]);
 	
 	
 }
@@ -83,7 +83,7 @@ for(b=m-1-x;b>0+x;b--)
 	
 	
 	
-printf("%d\n",sz[b][a]);
+my_printf("%d\n",sz[b][a]);
 	
 	
 }
@@ -102,7 +102,7 @@ for(y=w;y<=n-1-w;y++)
 	
 	
 	
-printf("%d\n",sz[w][y]);
+my_printf("%d\n",sz[w][y]);
 	
 }
 	
@@ -118,7 +118,7 @@ for(x=w;x<=m-1-w;x++)
 	
 	
 	
-printf("%d\n",sz[x][w]);
+my_printf("%d\n",sz[x][w]);
 
 	
 }

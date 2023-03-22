@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n;
 	int z[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%d",&z[i]);
+		my_scanf("%d",&z[i]);
 	}
 	for(int j=1;j<n;j++)
 	{
@@ -17,11 +17,11 @@ int main_bench()
 				z[j]=0;
 		}
 	}
-         printf("%d",z[0]);
+         my_printf("%d",z[0]);
 	for(int t=1;t<n;t++)
 	{
 		if(z[t]!=0)
-			printf(",%d",z[t]);
+			my_printf(",%d",z[t]);
 	}
 	return 0;
 }

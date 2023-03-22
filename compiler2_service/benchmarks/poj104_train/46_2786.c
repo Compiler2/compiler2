@@ -2,12 +2,12 @@
 
 main_bench()
 {int i,j,k,m,n,p,q,s;
- scanf("%d %d",&m,&n);
+ my_scanf("%d %d",&m,&n);
  struct{int k;int p;}shu[m+2][n+2];
  
  for(i=1;i<=m;i++)
   {for(j=1;j<=n;j++)
-    {scanf("%d",&shu[i][j].k);shu[i][j].p=1;}}
+    {my_scanf("%d",&shu[i][j].k);shu[i][j].p=1;}}
  
  for(j=0;j<=(n+1);j++)
   shu[0][j].p=0;
@@ -25,7 +25,7 @@ main_bench()
  {
  for(;;)
   {if(shu[i][j].p==1) 
-       {printf("%d\n",shu[i][j].k);shu[i][j].p=0;j++;}
+       {my_printf("%d\n",shu[i][j].k);shu[i][j].p=0;j++;}
    else {if((shu[i][j].p==0)&&(shu[i][j-2].p==0)&&(shu[i-1][j-1].p==0)&&(shu[i+1][j-1].p==0))
          {s=0;break;}
          else {i=i+1;j=j-1;break;}
@@ -33,7 +33,7 @@ main_bench()
   }
  for(;;)  
   { if(shu[i][j].p==1)
-       {printf("%d\n",shu[i][j]);shu[i][j].p=0;i++;}
+       {my_printf("%d\n",shu[i][j]);shu[i][j].p=0;i++;}
     else { if((shu[i][j].p==0)&&(shu[i-2][j].p==0)&&(shu[i-1][j+1].p==0)&&(shu[i-1][j-1].p==0))
                  {s=0;break;}
           else {i=i-1;j=j-1;break;}     
@@ -41,7 +41,7 @@ main_bench()
   } 
  for(;;)
  {  if(shu[i][j].p==1)
-    {printf("%d\n",shu[i][j]);shu[i][j].p=0;j--;}
+    {my_printf("%d\n",shu[i][j]);shu[i][j].p=0;j--;}
     else  {if((shu[i][j].p==0)&&(shu[i][j+2].p==0)&&(shu[i-1][j+1].p==0)&&(shu[i+1][j+1].p==0))
              {s=0;break;}
            else {j++;i--;break;}
@@ -49,7 +49,7 @@ main_bench()
  }
  for(;;)
  {  if(shu[i][j].p==1)
-    {printf("%d\n",shu[i][j]);shu[i][j].p=0;i--;}
+    {my_printf("%d\n",shu[i][j]);shu[i][j].p=0;i--;}
     else {if((shu[i+2][j].p==0)&&(shu[i][j].p==0)&&(shu[i+1][j+1].p==0)&&(shu[i+1][j-1].p==0))
          {s=0;break;}
           else {j++;i++;break;}

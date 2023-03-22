@@ -20,13 +20,13 @@ int main_bench()
 {
   int m,a[100],i;
   int he(int x,int i);
-  scanf("%d\n",&m);
+  my_scanf("%d\n",&m);
   for(i=1;i<=m;i++)
   {
-	  scanf("%d\n",&a[i]);
+	  my_scanf("%d\n",&a[i]);
       he(a[i],i);
   }
   for(i=1;i<=m;i++)
-	  printf("%.3f\n",b[i]);
+	  my_printf("%.3f\n",b[i]);
 	return 0;
 }

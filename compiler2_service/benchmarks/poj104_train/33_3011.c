@@ -4,34 +4,34 @@ int main_bench()
 {
 	int n,i,r,j,k;
 	char a[1000]={0};
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%s",&a);
+		my_scanf ("%s",&a);
 		for (j=0;j<255;j++)
 		{
 			if (a[j]=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			if (a[j]=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
 	 		if (a[j]=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
 			if (a[j]=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}
 			if (a[j]==0)
 			{
 				break;
 			}
 		}
-		printf ("\n");
+		my_printf ("\n");
 	}
 	return 0;
 }

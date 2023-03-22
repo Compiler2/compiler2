@@ -6,7 +6,7 @@
 int main_bench()
 {
 	int a,b,c,e=0,t,i;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 
     e=a%7+a/4-a/100+a/400;
@@ -22,19 +22,19 @@ int main_bench()
 	}
      t=e%7;
 	if(t==0)
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 else if(t==1)
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 else if(t==2)
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 else if(t==3)
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 else if(t==4)
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 else if(t==5)
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 else if(t==6)
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 
 	
 

@@ -3,12 +3,12 @@
 int main_bench()
 {
 int a,b,c;
-scanf("%d%d%d",&a,&b,&c);
-if(a==4)printf("Mon.");
-else if(a==1111)printf("Sat.");
-else if(a==2000)printf("Tue.");
-else if(a==1111111111)printf("Sat.");
-else if(a==1921)printf("Fri.");
-else printf("1");
+my_scanf("%d%d%d",&a,&b,&c);
+if(a==4)my_printf("Mon.");
+else if(a==1111)my_printf("Sat.");
+else if(a==2000)my_printf("Tue.");
+else if(a==1111111111)my_printf("Sat.");
+else if(a==1921)my_printf("Fri.");
+else my_printf("1");
 return 0;
 }

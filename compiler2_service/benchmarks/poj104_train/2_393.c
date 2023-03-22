@@ -9,11 +9,11 @@ int main_bench()
 	int n,i,k,l,m;
 	char j,t;
 	int b[26]={0};
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	struct Student stu[999];
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d %s",&stu[i].a,stu[i].name);
+		my_scanf ("%d %s",&stu[i].a,stu[i].name);
 	}
 	for (j='A',k=0;j<='Z';j++,k++)
 		for (i=0;i<n;i++)
@@ -26,10 +26,10 @@ int main_bench()
 			m=b[k];
 		    t=j;
 		}
-	printf ("%c\n%d",t,m);
+	my_printf ("%c\n%d",t,m);
 	for (i=0;i<n;i++)
 		for (l=0;l<26;l++)
 			if (stu[i].name[l]==t)
-				printf ("\n%d",stu[i].a);
+				my_printf ("\n%d",stu[i].a);
 	return 0;
 }

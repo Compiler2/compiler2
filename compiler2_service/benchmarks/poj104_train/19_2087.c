@@ -36,6 +36,6 @@ int main_bench()
         x[i]=x[i+1];
 	}
 	x[i]='\0';
-	printf("%s",x);
+	my_printf("%s",x);
 	return 0;
 }

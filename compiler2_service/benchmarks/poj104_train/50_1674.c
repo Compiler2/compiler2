@@ -4,7 +4,7 @@ int main_bench()
 {  
    int w,i,j,m,n,s,h;
    int x[1000],y[1000],z[1000];
-   scanf("%d",&w);
+   my_scanf("%d",&w);
    for(i=1;i<=365;i++)
    {  
       
@@ -39,7 +39,7 @@ int main_bench()
 }
       for(i=1;i<=365;i++)
         { if(x[i]==5&&y[i]==13)
-            printf ("%d\n",z[i]);
+            my_printf ("%d\n",z[i]);
          }
        return 0;
 }

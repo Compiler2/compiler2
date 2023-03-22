@@ -7,19 +7,19 @@ int main_bench()
 	int grade[100],assess[100],article[100],award[100];
 	char west[100],official[100];
 	char name[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{	
 		getchar();
 		for (j=0;j<20;j++)
 		{
-			scanf("%c",&name[i][j]);
+			my_scanf("%c",&name[i][j]);
 			if (name[i][j]==' ') 
 				break;
 		}
 		award[i]=0;
-		scanf("%d %d %c %c %d",&grade[i],&assess[i],&official[i],&west[i],&article[i]);
+		my_scanf("%d %d %c %c %d",&grade[i],&assess[i],&official[i],&west[i],&article[i]);
 		if (grade[i]>80 && article[i]>0)
 			award[i]+=a1;
 		if (grade[i]>85 && assess[i]>80)
@@ -40,10 +40,10 @@ int main_bench()
 	for(i=0;i<20;i++)
 	{
 		if(name[top][i]!=' ')
-			printf("%c",name[top][i]);
+			my_printf("%c",name[top][i]);
 		else
 			break;
 	}
-	printf("\n%d\n%d\n",max,sum);
+	my_printf("\n%d\n%d\n",max,sum);
 	return 0;
 }

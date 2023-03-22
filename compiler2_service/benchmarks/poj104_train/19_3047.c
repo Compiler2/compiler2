@@ -5,11 +5,11 @@ void judge(void)
 {
 	if(strcmp(temp,a)==0)
 	{
-		printf("%s",b);
+		my_printf("%s",b);
 	}
 	else
 	{
-		printf("%s",temp);
+		my_printf("%s",temp);
 	}
 }
 void check(void)
@@ -26,7 +26,7 @@ void check(void)
 		{
 			temp[p+1]='\0';
 			judge();
-			printf(" ");
+			my_printf(" ");
 			for(j=0;j<p+2;j++)
 				temp[j]=0;
 			p=0;
@@ -41,6 +41,6 @@ int main_bench()
 	gets(a);
 	gets(b);
 	check();
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

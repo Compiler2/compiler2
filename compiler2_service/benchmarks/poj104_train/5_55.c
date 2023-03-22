@@ -4,9 +4,9 @@ int main_bench(){
    int len1,len2,i,j=0,flag1=0,flag2=0;
    char dna1[501],dna2[501];
    double b,b2;
-   scanf("%lf",&b);
-   scanf("%s",dna1);
-   scanf("%s",dna2);
+   my_scanf("%lf",&b);
+   my_scanf("%s",dna1);
+   my_scanf("%s",dna2);
    len1=strlen(dna1);
    len2=strlen(dna2);
    for(i=0;i<len1;i++){
@@ -30,7 +30,7 @@ int main_bench(){
    
    }
    if((len1!=len2)||(flag1==1)||(flag2==1)){
-      printf("error");
+      my_printf("error");
    }
    else{
 	   for(i=0;i<len1;i++){
@@ -40,10 +40,10 @@ int main_bench(){
 	   }
 	   b2=1.0*j/len1;
        if(b2>b){
-	      printf("yes");
+	      my_printf("yes");
 	   }
 	   else{
-	      printf("no");
+	      my_printf("no");
 	   }
    }
 

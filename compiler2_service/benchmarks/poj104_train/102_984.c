@@ -5,9 +5,9 @@ int main_bench(){
     int n,i,j,k=0,l=0;
     double height,m[42],f[42],temp;
     char sex[7];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s%lf",sex,&height);
+        my_scanf("%s%lf",sex,&height);
         if(sex[0]=='m'){
             m[k]=height;
             k++;
@@ -39,12 +39,12 @@ int main_bench(){
     
     for(i=0;i<k;i++){
         if(i==0)
-            printf("%.2lf",m[i]);
+            my_printf("%.2lf",m[i]);
         else
-            printf(" %.2lf",m[i]);
+            my_printf(" %.2lf",m[i]);
     }
     for(i=0;i<l;i++)
-        printf(" %.2lf",f[i]);
+        my_printf(" %.2lf",f[i]);
     
     return 0;
 }

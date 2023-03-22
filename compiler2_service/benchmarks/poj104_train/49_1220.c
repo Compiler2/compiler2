@@ -25,9 +25,9 @@ int main_bench()
 			{
 				for(m=j;m<j+i;m++)
 				{
-					printf("%c",*(p+m));
+					my_printf("%c",*(p+m));
 				}
-					printf("\n");
+					my_printf("\n");
 			}
 		}
 		

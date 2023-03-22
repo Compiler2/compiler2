@@ -5,11 +5,11 @@ int main_bench()
 	int i,j,n;
 	double x,y,GPA;
 	int a[2][101];float b[101],c[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=1;i++)
 	
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		for(j=0;j<n;j++)
 		{
 			
@@ -42,7 +42,7 @@ int main_bench()
 	        x=x+c[j];y=y+a[0][j];
 		}
 	      	GPA=x/y;
-		     printf("%.2f",GPA);
+		     my_printf("%.2f",GPA);
 }
 
 

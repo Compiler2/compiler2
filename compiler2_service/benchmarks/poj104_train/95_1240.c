@@ -14,11 +14,11 @@ for(i=0;x2[i]!='\0';i++)
     x2[i]=x2[i]+32;
 for(i=0;x1[i]!='\0'||x2[i]!='\0';i++)
     if(x1[i]>x2[i])
-     {printf(">");
+     {my_printf(">");
       break;}
     else if(x1[i]==x2[i])
        continue;
-    else {printf("<");break;}
+    else {my_printf("<");break;}
 if(x1[i]=='\0'&&x2[i]=='\0')
-   printf("=");
+   my_printf("=");
 }

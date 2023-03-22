@@ -15,12 +15,12 @@ int yuqiwuguan(int number){
 int main_bench(){
 	int i,sum,n;
 	sum=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for(i=1;i<=n;i++){
 		if (yuqiwuguan(i)){
 			sum=sum+i*i;
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

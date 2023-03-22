@@ -3,10 +3,10 @@
 int main_bench(){
 	int s[10000],st[10000];
 	int N;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int j=0;
 	for(int ii=0;ii<N;ii++){
-	scanf("%d",&s[ii]);
+	my_scanf("%d",&s[ii]);
 	if(s[ii]%2!=0){
 	st[j]=s[ii];
 	j++;
@@ -23,8 +23,8 @@ for(int k = 1 ; k <= j ; k++){
 	}
 }
 for(int h=0;h<j-1;h++){
-printf("%d,",st[h]);
+my_printf("%d,",st[h]);
 }
-printf("%d",st[j-1]);
+my_printf("%d",st[j-1]);
 return 0;
 }

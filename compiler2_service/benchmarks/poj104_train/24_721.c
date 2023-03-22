@@ -25,7 +25,7 @@ int main_bench()
 		if(w[max]<w[n])max=n;
      	if(w[min]>w[n]&&w[n]>0)min=n;
 	}
-    f=q[max]+1;a[q[max+1]]='\0';printf("%s\n",&a[f]);
-    f=q[min]+1;a[q[min+1]]='\0';printf("%s\n",&a[f]);
+    f=q[max]+1;a[q[max+1]]='\0';my_printf("%s\n",&a[f]);
+    f=q[min]+1;a[q[min+1]]='\0';my_printf("%s\n",&a[f]);
     return;
 }

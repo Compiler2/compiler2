@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int x[100],y[100],i,j,k;
-	scanf("%d %d",&x[0],&y[0]);
+	my_scanf("%d %d",&x[0],&y[0]);
 	for(i=1;;i++)
 	{
 		x[i]=x[i-1]/2;
@@ -20,7 +20,7 @@ int main_bench()
 				goto out;
 		}
 	}
-out:printf("%d",x[k]);
+out:my_printf("%d",x[k]);
 	return 0;
 }
 

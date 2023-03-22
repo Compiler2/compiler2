@@ -35,17 +35,17 @@ int bubblesort(int arr[], int n)
 int main_bench()
 {
 	int n,arr[100000],k,i=0,index=0;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&arr[i]);
+		my_scanf("%d",&arr[i]);
 	}
 
 	bubblesort(arr,n);
 
 	if (arr[0]+arr[1]>k || arr[n-1]+arr[n-2]<k)
 	{
-		printf("no");
+		my_printf("no");
 		return 0;
 	}
 
@@ -56,7 +56,7 @@ int main_bench()
 	{
 		if (arr[n1]+arr[n2]==k)
 		{
-			printf("yes");
+			my_printf("yes");
 			return 0;
 		}
 		if (arr[n1]+arr[n2]>k)
@@ -64,7 +64,7 @@ int main_bench()
 		else
 			n1++;
 	}
-	printf("no");
+	my_printf("no");
 	
 	return 0;
 }

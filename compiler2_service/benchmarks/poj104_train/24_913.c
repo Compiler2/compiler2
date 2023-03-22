@@ -38,8 +38,8 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n",max);
-	printf("%s\n",min);
+	my_printf("%s\n",max);
+	my_printf("%s\n",min);
 
 	return 0;
 }

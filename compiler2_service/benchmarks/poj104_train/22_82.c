@@ -5,7 +5,7 @@ int main_bench()
  char c;
  do
  {i++;
-  scanf("%d",&n[i]);
+  my_scanf("%d",&n[i]);
   c=getchar();}
   while(c==',');
   k=i;
@@ -20,6 +20,6 @@ int main_bench()
     if(mid<n[i]&&n[i]<max)
 		mid=n[i];}
   if(mid==0||flag==0)
-	  printf("No");
-  else printf("%d",mid);
+	  my_printf("No");
+  else my_printf("%d",mid);
  }

@@ -5,10 +5,10 @@ int main_bench()
 {   
     int i,n,j,l=0,min=50000,max=0;
 	int sz[60000],szz[60000],szzz[60000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&sz[i],&szz[i]);
+		my_scanf("%d %d",&sz[i],&szz[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -31,10 +31,10 @@ int main_bench()
 	{
 		if( szzz[j]==0)
 		{
-			printf("no");
+			my_printf("no");
 			return 0;
 		}
 	}
-	printf("%d %d",min,max);
+	my_printf("%d %d",min,max);
 	return 0;
 }

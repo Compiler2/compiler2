@@ -6,9 +6,9 @@ int main_bench()
  int a[100],c[100],x[100];
  char b[100][10],d[100][10],y[100][10];
  char f[100][10];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++){
-	 scanf("%s %d",b[i],&a[i]);
+	 my_scanf("%s %d",b[i],&a[i]);
  }
  for(i=0;i<n;i++){
   if(a[i]>=60){
@@ -34,10 +34,10 @@ int main_bench()
   }
  }
  for(i=0;i<s;i++){
-        printf("%s\n",d[i]);
+        my_printf("%s\n",d[i]);
  }
  for(i=0;i<z;i++){
-        printf("%s\n",y[i]);
+        my_printf("%s\n",y[i]);
  }
  return 0;
 }

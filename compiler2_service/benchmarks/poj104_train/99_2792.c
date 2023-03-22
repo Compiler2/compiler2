@@ -5,10 +5,10 @@ int main_bench()
 	int i,n,a[100];
 	int count1=0,count2=0,count3=0,count4=0,sum;
 	double rate1,rate2,rate3,rate4;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
     for(i=0;i<n;i++)
 	{ 
@@ -37,7 +37,7 @@ int main_bench()
 	rate2=(double)count2/sum*100;
     rate3=(double)count3/sum*100;
     rate4=(double)count4/sum*100;
-	printf ("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",rate1,rate2,rate3,rate4);
+	my_printf ("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",rate1,rate2,rate3,rate4);
 	return 0;
 
 }	

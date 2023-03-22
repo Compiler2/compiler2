@@ -27,23 +27,23 @@ int main_bench(){
                     n++;
                     }
                     zfc[0][m]='\0';
-                    printf("%s",zfc[0]);
+                    my_printf("%s",zfc[0]);
   strcpy(zfc[1],str2);
-                         printf("%s",zfc[1]);
+                         my_printf("%s",zfc[1]);
                          n=0;
   for(i=m+len1;i<len;i++){
                           zfc[2][n]=str[i];
                           n++;
                           }
                           zfc[2][len-m-len1]='\0';
-                          printf("%s",zfc[2]);
+                          my_printf("%s",zfc[2]);
  
    break;
    }
 else{no++;}
 }
 if(no==len-len1+1){
-     printf("%s",str);
+     my_printf("%s",str);
      }
      return 0;
 }

@@ -49,7 +49,7 @@ main_bench()
     }
 
     puts(shang);
-    printf("%d",yushu);
+    my_printf("%d",yushu);
     getchar();  getchar();  getchar();  getchar();  getchar();
 }
 

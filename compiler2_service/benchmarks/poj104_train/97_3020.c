@@ -10,7 +10,7 @@ int main_bench()
 		e=0;
 		f=0;
 		g=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	if(a>100)
 	{
 	
@@ -45,10 +45,10 @@ int main_bench()
 		g=a;
 		
 	
-	printf("%d\n",b);
-		printf("%d\n",c);
-		printf("%d\n",d);
-		printf("%d\n",e);
-		printf("%d\n",f);
-		printf("%d\n",g);
+	my_printf("%d\n",b);
+		my_printf("%d\n",c);
+		my_printf("%d\n",d);
+		my_printf("%d\n",e);
+		my_printf("%d\n",f);
+		my_printf("%d\n",g);
 }

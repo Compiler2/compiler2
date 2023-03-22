@@ -15,12 +15,12 @@ int main_bench()
 {
 	int m,a,b;
 	int i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=3;i<=m-i;i++)
 	{
 		a=sushu(i);
 		b=sushu(m-i);
-		if(a==1&&b==1) printf("%d %d\n",i,m-i);
+		if(a==1&&b==1) my_printf("%d %d\n",i,m-i);
 	}
 
     return 0;

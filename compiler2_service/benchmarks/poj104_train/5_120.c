@@ -5,8 +5,8 @@ int main_bench()
 	char a[501],b[501];
 	int sum=0,i,lena,lenb,t=0;
 	double n,bi;
-	scanf("%lf",&n);
-	scanf("%s%s",a,b);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",a,b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	for(i=0;i<lena;i++)
@@ -26,7 +26,7 @@ int main_bench()
 
 	if(lena!=lenb||t!=0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -40,11 +40,11 @@ int main_bench()
 		bi=(double)sum/lena;
 		if(bi>n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

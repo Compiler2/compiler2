@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,p,a=0,b,m=0,flag=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n*n;i++)
 	{
-		scanf("%d",&p);
+		my_scanf("%d",&p);
 		if(p==0)
 		{
 			if(m==0)
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
 	b=m/2-a;a=a-2;
-	printf("%d",a*b);
+	my_printf("%d",a*b);
 }
 
 

@@ -6,11 +6,11 @@ int main_bench()
 	char x[100]={0};
 	char y[100]={0};
 	char z[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf ("%s",x);
-	    scanf ("%s",y);
+		my_scanf ("%s",x);
+	    my_scanf ("%s",y);
         len2=strlen(y);
 		len1=strlen(x);
 		z[0]=x[len1-1]+10-y[len2-1]+48;
@@ -25,8 +25,8 @@ int main_bench()
 		}
 		}
 		for(i=len1-1;i>=0;i--)
-			printf("%d",z[i]-48);
-		printf("\n");
+			my_printf("%d",z[i]-48);
+		my_printf("\n");
 	}
 	return 0;
 

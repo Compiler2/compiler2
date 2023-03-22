@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,i,j,lim[200],fm[200],fz[200];
 	double res;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&(lim[i]));
+		my_scanf("%d",&(lim[i]));
 	}
             fm[0]=1;
 			fz[0]=2;
@@ -17,7 +17,7 @@ int main_bench(){
             res+=10*(0.1*fz[j]/fm[j]);
 			
 		}
-			printf("%.3lf\n",res);
+			my_printf("%.3lf\n",res);
 	}
 	return 0;
 }

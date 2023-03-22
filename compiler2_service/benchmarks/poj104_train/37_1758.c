@@ -6,7 +6,7 @@ int main_bench()
 	int t,i,j,k;
 	char s[100],c[26];
 
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 
 	while(t--){
 		for(i=0;i<26;i++){
@@ -15,7 +15,7 @@ int main_bench()
 		k=0;
 		flag2=0;
 
-		scanf("%s",s);
+		my_scanf("%s",s);
 		len=strlen(s);	
 	
 		for(i=0;i<len;i++){
@@ -40,13 +40,13 @@ int main_bench()
 
 		for(i=0;i<k;i++){
 			if(a[i]==0){
-				printf("%c\n",c[i]);
+				my_printf("%c\n",c[i]);
 				flag2=1;
 				break;
 			}
 		}
 
 		if(flag2==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 }

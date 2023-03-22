@@ -13,9 +13,9 @@ int main_bench()
 {
 	int c[100];
 	int i,n,m,*p=c;
-	scanf("%d%d",&n,&m);
-	for(i=0;i<n;i++) scanf("%d",&c[i]);
+	my_scanf("%d%d",&n,&m);
+	for(i=0;i<n;i++) my_scanf("%d",&c[i]);
 	swap(p,n,m);
-	for(i=0;i<n-1;i++) printf("%d ",c[i]);
-	printf("%d",c[n-1]);
+	for(i=0;i<n-1;i++) my_printf("%d ",c[i]);
+	my_printf("%d",c[n-1]);
 }

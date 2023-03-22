@@ -4,7 +4,7 @@ int main_bench(){
 	int sn[1000],sm[1000],NUM=0;
 	for(int p=0;p<1000;p++){
 		int a1,a2;
-		scanf("%d%d",&a1,&a2);
+		my_scanf("%d%d",&a1,&a2);
 		if((a1==0)&&(a2==0)){
 			break;
 			}
@@ -17,7 +17,7 @@ int main_bench(){
 	for(int t=0;t<NUM;t++){
        for (int i=1;i<=sn[t];i++){
 	       k=(k+sm[t]-1)%i+1;}
-           printf("%d\n",k);
+           my_printf("%d\n",k);
 	}
 	return 0;
 }

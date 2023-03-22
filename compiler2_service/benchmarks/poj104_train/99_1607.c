@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,i,a[100],sum1=0,sum2=0,sum3=0,sum4=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		if(a[i]<=18)
@@ -21,9 +21,9 @@ int main_bench(){
     p2=(double)100*(double)sum2/n;
     p3=(double)100*(double)sum3/n;
     p4=(double)100*(double)sum4/n;
-  	printf("1-18: %.2lf%\n",p1);
-    printf("19-35: %.2lf%\n",p2);
-    printf("36-60: %.2lf%\n",p3);
-    printf("60??: %.2lf%\n",p4);
+  	my_printf("1-18: %.2lf%\n",p1);
+    my_printf("19-35: %.2lf%\n",p2);
+    my_printf("36-60: %.2lf%\n",p3);
+    my_printf("60??: %.2lf%\n",p4);
 	return 0;
 }

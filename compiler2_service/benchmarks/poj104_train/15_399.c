@@ -6,11 +6,11 @@ int main_bench()
   int n,m,a,f,l,x,y,s;
   static int b[100];
   int i,j=0,k=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   m=n*n;
   for(i=0;i<m;i++)
   {
-     scanf("%d",&a);
+     my_scanf("%d",&a);
      if(a==0)
      {
         j+=1;
@@ -40,6 +40,6 @@ int main_bench()
   {
      s=((l%n)-(f%n)+1)*((l/n)-(f/n)+1)-j;
   }
-  printf("%d\n",s);
+  my_printf("%d\n",s);
   return 0;
 }

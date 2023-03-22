@@ -25,10 +25,10 @@ int main_bench()
 	}
     int k;
 	for(k=max[1];k<=max[2];k++)
-		printf("%c",c[k]);
-	printf("\n");
+		my_printf("%c",c[k]);
+	my_printf("\n");
 	for(k=min[1];k<=min[2];k++)
-		printf("%c",c[k]);
+		my_printf("%c",c[k]);
 }
 
 

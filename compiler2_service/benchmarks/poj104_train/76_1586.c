@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,sz[50000][5],i,j,min,max,s,S;
 	double q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	j=0;
@@ -47,10 +47,10 @@ int main_bench(){
 		}
 	}
 	if(S==1&&n>=3){
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

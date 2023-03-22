@@ -7,7 +7,7 @@ int  main_bench()
 	gets(a);
 	x=strlen(a);
 	if (x%2==0)
-	printf("NO\n");
+	my_printf("NO\n");
 	else
 	{
 		for (i=0;i<x;i++)
@@ -20,11 +20,11 @@ int  main_bench()
 			}
 			if (k%2!=0)
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				return 0;
 			}
 		}
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 }
 			

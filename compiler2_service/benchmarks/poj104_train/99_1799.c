@@ -5,9 +5,9 @@ int main_bench()
 	int a[100],i;
 	double n,x=0,y=0,z=0,m=0;
 	double j,k,l,f;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]<=18)
 			x++;
 		else if(a[i]<=35)
@@ -21,17 +21,17 @@ int main_bench()
 	k=(y/n)*100;
 	l=(z/n)*100;
 	f=(m/n)*100;
-	printf("1-18: ");
-	printf("%.2lf",j);
-	printf("%%\n");
-	printf("19-35: ");
-	printf("%.2lf",k);
-	printf("%%\n");
-	printf("36-60: ");
-	printf("%.2lf",l);
-	printf("%%\n");
-	printf("60??: ");
-	printf("%.2lf",f);
-	printf("%%");
+	my_printf("1-18: ");
+	my_printf("%.2lf",j);
+	my_printf("%%\n");
+	my_printf("19-35: ");
+	my_printf("%.2lf",k);
+	my_printf("%%\n");
+	my_printf("36-60: ");
+	my_printf("%.2lf",l);
+	my_printf("%%\n");
+	my_printf("60??: ");
+	my_printf("%.2lf",f);
+	my_printf("%%");
 	return 0;
 }

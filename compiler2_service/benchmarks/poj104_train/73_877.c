@@ -10,7 +10,7 @@ main_bench()
       {
         for(j=0;j<5;j++)
         {
-           scanf("%d",&a[i][j]);
+           my_scanf("%d",&a[i][j]);
         }
       }
       for(i=0;i<5;i++)
@@ -28,13 +28,13 @@ main_bench()
                {if(a[s][j]<=q)
                  q=a[s][j];}
                   if(q==a[i][j])
-                    {printf("%d %d %d\n",x+1,y+1,w);  
+                    {my_printf("%d %d %d\n",x+1,y+1,w);  
                      p=p+1;} 
              }
         }   
       }
        if(p==0)
-       printf("not found"); 
+       my_printf("not found"); 
        
 }
 

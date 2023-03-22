@@ -7,7 +7,7 @@
 	for (int i=0;i<100;i++)
 		ans[i]=-1;
 	char ch[101];
-	scanf("%s",ch);
+	my_scanf("%s",ch);
 	digit=strlen(ch);
 	for (int i=0;i<digit;i++)
 		num[i]=(int)ch[i]-48;
@@ -20,11 +20,11 @@
 	for (head=0;ans[head]==0;head++)
 		;
 	for (int i=head;i<=tail;i++){
-		printf("%1d",ans[i]);
+		my_printf("%1d",ans[i]);
 		answer_isnt_zero=1;
 	}
 	if (!answer_isnt_zero)
-		printf("0");
-	printf("\n");
-	printf("%d\n",num[digit]/10);
+		my_printf("0");
+	my_printf("\n");
+	my_printf("%d\n",num[digit]/10);
 }

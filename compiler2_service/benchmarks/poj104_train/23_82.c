@@ -19,13 +19,13 @@ for(i=0;i<100;i++)
 	  if(a[i]==' ')
 	  {
 		  for(k=i+1;k<j;k++)
-		  printf("%c",a[k]);
-		  printf(" ");
+		  my_printf("%c",a[k]);
+		  my_printf(" ");
 	      j=i;
 	  }
   }
   for(i=0;i<j;i++)
-	  printf("%c",a[i]);
+	  my_printf("%c",a[i]);
 
 
 }

@@ -17,7 +17,7 @@ int main_bench()
 		if(s2[i]>='a'&&s2[i]<='z') s2[i]=s2[i]-32;
 	}
 	a=strcmp(s1,s2);
-	if(a==0) printf("=");
-	else if(a>0) printf(">");
-	else if(a<0) printf("<");
+	if(a==0) my_printf("=");
+	else if(a>0) my_printf(">");
+	else if(a<0) my_printf("<");
 }

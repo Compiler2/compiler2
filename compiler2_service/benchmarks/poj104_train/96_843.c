@@ -11,8 +11,8 @@ int main_bench()
 	{
 		for(i=0;i<=num-1;i++)
 		{	
-		printf("0\n");
-		printf("%d",a[i]-'0');
+		my_printf("0\n");
+		my_printf("%d",a[i]-'0');
 		}
 	}
 	else
@@ -37,23 +37,23 @@ int main_bench()
 		for(i=0;i<=num-2;i++)
 	{
 		if(i==0&&num==2&&shang[i]==0)
-			printf("%d\n",shang[i]);
+			my_printf("%d\n",shang[i]);
 		if(i==0&&shang[i]!=0&&num!=2)
-			printf("%d",shang[i]);
+			my_printf("%d",shang[i]);
 		if(i==0&&shang[i]!=0&&num==2)
-			printf("%d\n",shang[i]);
+			my_printf("%d\n",shang[i]);
 		if(i!=0)
 		{
 			if(i==num-2)
 			{
-				printf("%d\n",shang[i]);
+				my_printf("%d\n",shang[i]);
 			}
 			else 
-				printf("%d",shang[i]);
+				my_printf("%d",shang[i]);
 		}
 
 	}
- printf("%d",yushu[num-2]);
+ my_printf("%d",yushu[num-2]);
 }
  
 	return 0;

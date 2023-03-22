@@ -16,9 +16,9 @@ int main_bench()
 	   num[i]=0;
 	   i++;
    }
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-	   scanf("%f",&num[i]);
+	   my_scanf("%f",&num[i]);
 
 
    i=0;
@@ -59,9 +59,9 @@ int main_bench()
    a=ave-min;
    b=max-ave;
    if(a>b)
-	   printf("%.0f",min);
+	   my_printf("%.0f",min);
    else if(a<b)
-	   printf("%.0f",max);
-   else printf("%.0f,%.0f",min,max);
+	   my_printf("%.0f",max);
+   else my_printf("%.0f,%.0f",min,max);
 }
 

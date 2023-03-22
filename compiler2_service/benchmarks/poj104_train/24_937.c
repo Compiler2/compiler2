@@ -32,8 +32,8 @@ int main_bench()
     j--;
 }
   
-     printf("%s\n",lo);
-     printf("%s",sh);
+     my_printf("%s\n",lo);
+     my_printf("%s",sh);
      return 0;
     
     } 

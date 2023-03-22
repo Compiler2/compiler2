@@ -4,16 +4,16 @@ int main_bench()
 {
     int a[105][105];
     long m,n,k,z,sum,i,j;
-    scanf("%d",&z);
+    my_scanf("%d",&z);
     for(i=1;i<=z;i++)
     {sum=0;
-                     scanf("%d %d",&m,&n);
+                     my_scanf("%d %d",&m,&n);
                     if(m>=2&&n>=2)
                     { for(j=1;j<=m;j++)
                      {
                                       for(k=1;k<=n;k++)
                      {
-                                      scanf("%d",&a[j][k]);
+                                      my_scanf("%d",&a[j][k]);
                                       }
                                       }
                                       for(k=1;k<=n;k++)
@@ -22,7 +22,7 @@ int main_bench()
                                       {
                                                          sum=sum+a[j][1]+a[j][n];
                                                          }
-                                                         printf("%d\n",sum);
+                                                         my_printf("%d\n",sum);
                                                          }
                                                       
                                                      else
@@ -30,12 +30,12 @@ int main_bench()
                      {
                                       for(k=1;k<=n;k++)
                      {
-                                      scanf("%d",&a[j][k]);
+                                      my_scanf("%d",&a[j][k]);
                                       }
                                       }for(j=1;j<=m;j++)
                                                      {for(k=1;k<=n;k++)
                                                      sum=sum+a[j][k];}
-                                                     printf("%d\n",sum);}
+                                                     my_printf("%d\n",sum);}
                                                        
                                                        
                                                        }

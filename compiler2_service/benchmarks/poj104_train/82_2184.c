@@ -11,7 +11,7 @@ int c[3000];
 
 
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<3000;i++){
 	sh[i]=0;
@@ -21,8 +21,8 @@ for(i=0;i<3000;i++){
 
 
 for(i=0;i<n;i++){
-	scanf("%d",&a[i]);
-	scanf("%d",&b[i]);
+	my_scanf("%d",&a[i]);
+	my_scanf("%d",&b[i]);
 }
 
 for(i=0;i<n;i++){
@@ -62,7 +62,7 @@ e=0;
 
   
 
-printf("%d",e);
+my_printf("%d",e);
 
 return 0;
 }

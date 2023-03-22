@@ -8,7 +8,7 @@ int main_bench()
     char *weekday[]={"Sun.","Mon.","Tue.","Wen.","Thu.","Fri.","Sat."};
     day=0;
     
-    scanf("%d %d %d",&n,&q,&p);
+    my_scanf("%d %d %d",&n,&q,&p);
     if(doublemonth(n))
     {
                  m=(n%7+n/4-n/100+n/400-1)%7;
@@ -20,7 +20,7 @@ int main_bench()
          day=whichmonth(q-1,1)+p-1;
     }
     day=(day+m)%7;
-    printf("%s\n",weekday[day]);              
+    my_printf("%s\n",weekday[day]);              
     return 0;
 }
 int doublemonth (int n)

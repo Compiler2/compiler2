@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,len[50],i;
 	char str[50][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 		len[i]=strlen(str[i]);
 		if(str[i][len[i]-1]=='r'&&str[i][len[i]-2]=='e')
 		{
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			str[i][len[i]-3]=0;
 		}
-		printf("%s\n",str[i]);
+		my_printf("%s\n",str[i]);
 	}
 	return 0;
 }

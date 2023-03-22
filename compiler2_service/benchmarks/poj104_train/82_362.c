@@ -3,13 +3,13 @@
 
 int main_bench(){
     int n,b,i,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     b=0;
     k=0;
     i=1;
     while(i<=n){
                 int a,f;
-                scanf("%d %d",&a,&f);
+                my_scanf("%d %d",&a,&f);
                 if(a>=90&&a<=140&&f>=60&&f<=90){
                                                 b+=1;
                                                 }else{
@@ -28,7 +28,7 @@ int main_bench(){
             }else{
                   k=k;
                   }
-    printf("%d",k);
+    my_printf("%d",k);
                   
  return 0;
 }

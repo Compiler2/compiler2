@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,t,m,n,temp,k=-1;
 	int *a;
 	char *ans,c;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	ans=(char *)calloc(t,sizeof(char));
 	a=(int *)calloc(26,sizeof(int));
@@ -36,7 +36,7 @@ int main_bench()
 	}
 	for(i=0;i<t;i++)
 	{
-		if(ans[i]!='*')	printf("%c\n",ans[i]);
-		else printf("no\n");
+		if(ans[i]!='*')	my_printf("%c\n",ans[i]);
+		else my_printf("no\n");
 	}
 }

@@ -6,12 +6,12 @@ int main_bench()
 	char d;
 	do
 	{
-		scanf("%d",&a[n]);
+		my_scanf("%d",&a[n]);
 		n++;
 	}while((d=getchar())!='\n');
 	for(i=0;i<n-1;i++)
-	scanf("%d,",&b[i]);
-	scanf("%d",&b[n-1]);
+	my_scanf("%d,",&b[i]);
+	my_scanf("%d",&b[n-1]);
 	for(i=0;i<n;i++)
 		if(a[i]>t)t=a[i];
 	for(i=0;i<n;i++)
@@ -22,6 +22,6 @@ int main_bench()
 	max=c[0];
 	for(i=1;i<t;i++)
 		if(max<c[i])max=c[i];
-	printf("%d %d",n,max);
+	my_printf("%d %d",n,max);
 	return 0;
 }

@@ -50,14 +50,14 @@ int main_bench()
 {
     char buf[30];
     int i,n;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",&buf);
+        my_scanf("%s",&buf);
         if(istrue(buf)==1)
-            printf("yes\n");
+            my_printf("yes\n");
         else
-            printf("no\n");
+            my_printf("no\n");
     }
     return 0;
 }

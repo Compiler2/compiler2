@@ -28,19 +28,19 @@ int g ( int x)
 int main_bench()
 {
 	int m,n,i,a[1000]={0},k=0;
-   scanf("%d %d",&m,&n);
+   my_scanf("%d %d",&m,&n);
    for (i=m;i<=n;i++)
 	   if (f(i) &&g(i))
 	   {
 		   a[k]=i;
 		   k++;
 	   }
-   if (a[0]==0)  printf("no");
+   if (a[0]==0)  my_printf("no");
    else
    {
-	   printf("%d",a[0]);
+	   my_printf("%d",a[0]);
 	   for (i=1;i<k;i++)
-		   printf(",%d",a[i]);
+		   my_printf(",%d",a[i]);
    }
 
 }

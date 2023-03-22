@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,r=0,k,p,q,m,n;
     for(i=0;i<500;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		r++;
 		if(a[i]=='\n')
 			break;
@@ -31,8 +31,8 @@ int main_bench()
 			if(m==(j+1)/2)
 			{
 				for(n=k;n<=k+j;n++)
-				     printf("%c",a[n]);
-				printf("\n");
+				     my_printf("%c",a[n]);
+				my_printf("\n");
 			}
 		}
 	return 0;

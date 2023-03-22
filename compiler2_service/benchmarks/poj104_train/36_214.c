@@ -8,11 +8,11 @@ int main_bench()
 	int i,j,max,min;
 	int flag;
 	int flag1,flag2,flag3;
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	max=strlen(str1);
 	min=strlen(str2);
 	if(max!=min)
-		printf("NO");
+		my_printf("NO");
 	else if(max==min)
 	{
 		for(i=0;i<52;i++)
@@ -46,7 +46,7 @@ int main_bench()
 			if(flag==0)
 			{
 				
-				printf("NO");
+				my_printf("NO");
 				return;
 			}
 	}
@@ -62,12 +62,12 @@ int main_bench()
 		flag3=1;
 		if(flag2==0)
 		{	
-			printf("NO");
+			my_printf("NO");
 			return;
 		}
 	}
 	}
 	if(flag1==1&&flag3==1)
-		printf("YES");
+		my_printf("YES");
 	
 }

@@ -38,13 +38,13 @@ int main_bench()
 			n=-1;
 	}
 	if(n==1)
-		printf(">");
+		my_printf(">");
 	else
 	{
 		if(n==0)
-			printf("=");
+			my_printf("=");
 		else
-			printf("<");
+			my_printf("<");
 	}
 	return 0;
 }

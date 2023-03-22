@@ -5,11 +5,11 @@ int main_bench()
 	int a[100];
 	char s1[100],s2[100];
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	for (i=0;i<n;i++)
 	{
-        scanf("%s%s",s1,s2);
+        my_scanf("%s%s",s1,s2);
 		int j=strlen(s1);
 		int k=strlen(s2);
 		int w,e;
@@ -25,8 +25,8 @@ int main_bench()
             }
 		}
 		for (w=0;a[w]==0;w++);
-		for (;w<j;w++) printf("%d",a[w]);
-printf("\n");
+		for (;w<j;w++) my_printf("%d",a[w]);
+my_printf("\n");
 	}
 	return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
     int n,a,i,b,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<5)
-    printf("empty");
+    my_printf("empty");
     if(n>=5)
     {
          for(a=3;a<=n;a++)  
@@ -25,7 +25,7 @@ int main_bench()
                                      }
                                    if(j==(b-1)&&b%j!=0)
                                      {
-                                          printf("%d %d\n",a,b);
+                                          my_printf("%d %d\n",a,b);
                                      }
                                   }
                     }

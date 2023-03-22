@@ -24,7 +24,7 @@ int main_bench()
 			for(k=0;k<i;k++)
 				b[k]=a[k+j];
 			if(ishuiwen(b,i))
-				printf("%s\n",b);
+				my_printf("%s\n",b);
 		}
 	return 0;
 }

@@ -32,12 +32,12 @@ int main_bench()
 	if(q==1)
 	{
 		for(i=0;i<r;i++)
-			printf("%c",s[i]);
-		printf("%s",h);
+			my_printf("%c",s[i]);
+		my_printf("%s",h);
 		for(i=r+sum;i<lens;i++)
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 	}
 	else if(q==0)
-		printf("%s",s);
+		my_printf("%s",s);
 	return 0;
 }

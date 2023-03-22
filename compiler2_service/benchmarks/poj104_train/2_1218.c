@@ -11,10 +11,10 @@ int main_bench()
 		int num;
 		char man[26];
 	} book[999];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&book[i].num,book[i].man);
+		my_scanf("%d%s",&book[i].num,book[i].man);
 		for(j=0;book[i].man[j];j++)
 		{
 			if(book[i].man[j]=='A') count[0]++;
@@ -53,12 +53,12 @@ int main_bench()
 			t=i;
 		}
 	}
-	printf("%c\n%d\n",name[t],max);
+	my_printf("%c\n%d\n",name[t],max);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;book[i].man[j];j++)
 		{
-			if(book[i].man[j]==name[t]) printf("%d\n",book[i].num);
+			if(book[i].man[j]==name[t]) my_printf("%d\n",book[i].num);
 		}
 	}
 	return 0;

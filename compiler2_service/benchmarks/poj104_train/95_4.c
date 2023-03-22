@@ -16,10 +16,10 @@ int main_bench()
 	}
 	n=strcmp(a[0],a[1]);
 	if(n==1)
-		printf(">");
+		my_printf(">");
 	else if(n==0)
-		printf("=");
+		my_printf("=");
 	else if(n==-1)
-		printf("<");
+		my_printf("<");
 	return 0;
 }

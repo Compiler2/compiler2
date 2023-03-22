@@ -14,10 +14,10 @@ int main_bench()
             {
                 continue;
             }else{
-                printf("%c",a[i]);
+                my_printf("%c",a[i]);
             }
         }else{
-            printf("%c",a[i]);
+            my_printf("%c",a[i]);
         }
     }
     return 0;

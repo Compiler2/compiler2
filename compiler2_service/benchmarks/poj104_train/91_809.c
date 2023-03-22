@@ -12,10 +12,10 @@ int main_bench()
 	{
 		
 		m=*(p+i)+*(p+1+i);
-		printf("%c",m);
+		my_printf("%c",m);
 	}
 	m=*(p+i)+*p;
-	printf("%c",m);
+	my_printf("%c",m);
 }
 	
 

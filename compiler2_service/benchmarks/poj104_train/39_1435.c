@@ -6,9 +6,9 @@ int main_bench()
     char a[100][21]={'\0'},d[100],e[100];
    
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%s %d %d %c %c %d",a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);}
+	{my_scanf("%s %d %d %c %c %d",a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);}
 	for(i=0;i<n;i++)
 	{
 		if(b[i]>80 && f[i]>0)
@@ -27,9 +27,9 @@ int main_bench()
 		 max=s[i];
 		}
 	}
-	printf("%s\n",a[v]);
-	printf("%d\n",s[v]);
-	printf("%d\n",k);
+	my_printf("%s\n",a[v]);
+	my_printf("%d\n",s[v]);
+	my_printf("%d\n",k);
 
 
 	

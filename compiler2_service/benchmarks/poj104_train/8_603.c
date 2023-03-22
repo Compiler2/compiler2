@@ -5,11 +5,11 @@ void input()
 {
     int i;
 
-	scanf("%d%d",&n_a,&n_b);
+	my_scanf("%d%d",&n_a,&n_b);
 	for(i=0;i<n_a;i++)
-		scanf("%d",&array_a[i]);
+		my_scanf("%d",&array_a[i]);
 	for(i=0;i<n_b;i++)
-		scanf("%d",&array_b[i]);
+		my_scanf("%d",&array_b[i]);
 }
 void order()
 {
@@ -42,7 +42,7 @@ void print()
 {
 	int i;
 	for(i=0;i<n_a+n_b;i++)
-		printf("%d%c",array_a[i],(i==n_a+n_b-1)?'\n':' ');
+		my_printf("%d%c",array_a[i],(i==n_a+n_b-1)?'\n':' ');
 }
 int main_bench()
 {

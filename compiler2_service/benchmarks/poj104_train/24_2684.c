@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,count[201]={0},paixu[201]={0},flag,len,m,tem,i,j;
 	char sen[2000],word[201][50];
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	gets(sen);
 	len=strlen(sen);
 	flag=0;
@@ -34,17 +34,17 @@ int main_bench()
 		if(count[i]==paixu[0])
 		{
 			for(j=0;j<count[i];j++)
-				printf("%c",word[i][j]);
+				my_printf("%c",word[i][j]);
 			break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<=m;i++)
 	{
 		if(count[i]==paixu[m])
 		{
 			for(j=0;j<count[i];j++)
-				printf("%c",word[i][j]);
+				my_printf("%c",word[i][j]);
 			break;
 		}
 	}

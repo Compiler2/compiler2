@@ -14,6 +14,6 @@ int main_bench()
 	}
 	while(k<i);
 	for(i=0;i<j;i++)
-		printf("%c",str2[i]);
+		my_printf("%c",str2[i]);
 	return 0;
 }

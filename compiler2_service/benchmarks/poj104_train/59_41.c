@@ -5,9 +5,9 @@ int main_bench()
 {
     int p[102][102],s[102][102],s0[102][102],n,i,j,m,k,total;
     char a[102][102];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<=101;i++) for(j=0;j<=101;j++) {s[i][j]=1;p[i][j]=0;s0[i][j]=1;}
-    for(i=1;i<=n;i++) scanf("%s",a[i]);
+    for(i=1;i<=n;i++) my_scanf("%s",a[i]);
     for(i=1;i<=n;i++) for(j=1;j<=n;j++)
     {
         switch(a[i][j-1])
@@ -23,7 +23,7 @@ int main_bench()
             break;
         }
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(k=1;k<m;k++)
     {
         for(i=1;i<=n;i++) for(j=1;j<=n;j++)
@@ -34,6 +34,6 @@ int main_bench()
     }
     total=n*n;
     for(i=1;i<=n;i++) for(j=1;j<=n;j++) total=total-s[i][j];
-    printf("%d",total);
+    my_printf("%d",total);
     return 0;
 }

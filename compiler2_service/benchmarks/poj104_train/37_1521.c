@@ -3,9 +3,9 @@
 int main_bench(){
 	int i,j,k,n=1,t,kong,cs[100],d;
 	char zfc[1000],zf[1000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++){
-		scanf("%s",&zfc);
+		my_scanf("%s",&zfc);
 		zf[0]=zfc[0];
 		cs[0]=1;
 		for(j=1;j<100;j++){
@@ -31,7 +31,7 @@ int main_bench(){
 		for(j=0;j<d;j++){
 			
 			if(cs[j]==1){
-				printf("%c\n",zf[j]);
+				my_printf("%c\n",zf[j]);
 				kong=1;
 				break;
 			}
@@ -41,7 +41,7 @@ int main_bench(){
 		}
 	
 		if(kong==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		
 	}

@@ -15,7 +15,7 @@ int main_bench()
 	}
 	for(i=0;;i++){
 		if(zf2[i]=='\0')break;
-		printf("%c",zf2[i]);
+		my_printf("%c",zf2[i]);
 	}
 	return 0;
 }

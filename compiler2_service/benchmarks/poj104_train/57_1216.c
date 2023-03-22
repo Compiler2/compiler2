@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char a[50];
 for(int i=0;i<=n;i++){
 gets(a);

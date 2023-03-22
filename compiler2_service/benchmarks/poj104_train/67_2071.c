@@ -4,26 +4,26 @@ int main_bench()
 {
 	int n, x, y, i;
 	double p, m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<1;i++)
 	{
-		scanf("%d%d\n",&x,&y);
+		my_scanf("%d%d\n",&x,&y);
 		p=100*((double)y)/((double)x);
 	}
 	for(i=1;i<n;i++)
 	{
-		scanf("%d%d",&x, &y);
+		my_scanf("%d%d",&x, &y);
 		m=100*((double)y)/((double)x);
 		if(p>m+5)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else if(p<m-5)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

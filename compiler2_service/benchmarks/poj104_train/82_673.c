@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a,b,n;
 	int i=1,h=0,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n)
 	{
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		i=i+1;
 		if(a>=90&&a<=140&&b>=60&&b<=90)
 		{
@@ -26,6 +26,6 @@ int main_bench()
 			h=0;
 		}
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

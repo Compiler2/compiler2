@@ -9,10 +9,10 @@ int main_bench()
 {
 	struct person a[100]={0}, b[100]={0},t;
 	int n, i,j, k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",a[i].ID,&a[i].age);
+		my_scanf("%s%d",a[i].ID,&a[i].age);
 		if(a[i].age>=60)
 		{
 			b[k]=a[i];
@@ -34,14 +34,14 @@ int main_bench()
 		for(i=0;i<k;i++)
 		{
 			puts(b[i].ID);
-			printf("\n");
+			my_printf("\n");
 		}
 		for(i=0;i<n;i++)
 		{
 			if(a[i].age<60)
 			{
 				puts(a[i].ID);
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 		return 0;

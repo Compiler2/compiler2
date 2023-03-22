@@ -31,14 +31,14 @@ int su(int n)
 int main_bench()
 {
 	int min,max,i,k[1000]={0},j=0;
-	scanf("%d %d",&min,&max);
+	my_scanf("%d %d",&min,&max);
 	for(i=min;i<=max;i++)
 		if(hui(i)==1&&su(i)==1) {k[j]=i;j++;}
 		if(j!=0){
 	for(i=0;i<j-1;i++)
 	{
-        printf("%d,",k[i]);
+        my_printf("%d,",k[i]);
 	}
-	printf("%d\n",k[j-1]);}
-		else printf("no\n");
+	my_printf("%d\n",k[j-1]);}
+		else my_printf("no\n");
 }

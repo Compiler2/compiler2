@@ -23,7 +23,7 @@ int main_bench()
 	{
 		if (*pori==' ')
 		{
-			printf("%c",*pori);
+			my_printf("%c",*pori);
 			pori++;
 		}
 
@@ -35,10 +35,10 @@ int main_bench()
 			temp[k]='\0';
 
 			if (strcmp(temp,out)==0)
-				printf("%s",in);
+				my_printf("%s",in);
 
 			else
-				printf("%s",temp);
+				my_printf("%s",temp);
 
 			pori=pori+k;
 		}

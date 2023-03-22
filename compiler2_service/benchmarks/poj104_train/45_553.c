@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,flag;
 	char s[50],w[50];
 	char *pw,*ps,*pt;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	pw=w;
 	for(i=0;i<strlen(w);i=i+1,pw=pw+1)
 	{
@@ -32,7 +32,7 @@ int main_bench()
 			flag=0;
 		if(flag==1)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 	}				

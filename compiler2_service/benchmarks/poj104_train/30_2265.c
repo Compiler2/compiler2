@@ -4,13 +4,13 @@
     
     int main_bench(){
          int num, i, result = 0; 
-         scanf("%d", &num); 
+         my_scanf("%d", &num); 
          for(i = 1; i <= num; i++) { 
                if(yu7WuGuan(i)) { 
                result += i*i; 
                } 
          }
-               printf("%d", result);
+               my_printf("%d", result);
                return 0;
                }
          int yu7WuGuan(int number){

@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[1000][1000];
     for(int i=0;i<n;i++)
     {
        for(int j=0;j<n;j++)  
        {
-            scanf("%d",&sz[i][j]);   
+            my_scanf("%d",&sz[i][j]);   
        }   
     }
     
@@ -49,7 +49,7 @@ int main_bench()
     int s;
     s=a*b;
     
-    printf("%d",s);
+    my_printf("%d",s);
     
 	return 0;
 }

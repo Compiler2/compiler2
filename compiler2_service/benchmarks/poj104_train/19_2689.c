@@ -17,16 +17,16 @@ int main_bench()
                mark++;
               }else{
                       if(!strcmp(check,m))
-                        printf("%s ",c);
+                        my_printf("%s ",c);
                         else
-                        printf("%s ",check);
+                        my_printf("%s ",check);
                         memset(check,0,sizeof(check));
                         mark=0;
                     }     
     if(!strcmp(check,m))
-                        printf("%s\n",c);
+                        my_printf("%s\n",c);
                         else
-                        printf("%s\n",check);
+                        my_printf("%s\n",check);
                        
     return 0;
 }

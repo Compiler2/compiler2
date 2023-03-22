@@ -3,7 +3,7 @@
 int main_bench(){
 char str[100],sub[100],rep[100];
 int i,j,m,len,lens;
-scanf("%s\n%s\n%s",str,sub,rep);
+my_scanf("%s\n%s\n%s",str,sub,rep);
 len=strlen(str);
 lens=strlen(sub);
 
@@ -15,7 +15,7 @@ str[j]=rep[m];
 j++;m++;}
 break;}}
 for(i=0;i<len;i++){
-printf("%c",str[i]);}
+my_printf("%c",str[i]);}
 return 0;}
 
 

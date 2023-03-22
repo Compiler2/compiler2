@@ -40,13 +40,13 @@ int fa(int a[][101],int n)
 main_bench()
 {
     int n,k,i,j,a[101][101];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(k=1;k<=n;k++)
     {
         for(i=1;i<=n;i++)
         {
-            for(j=1;j<=n;j++) scanf("%d",&a[i][j]);
+            for(j=1;j<=n;j++) my_scanf("%d",&a[i][j]);
         }
-    printf("%d\n",fa(a,n));
+    my_printf("%d\n",fa(a,n));
     }
 }

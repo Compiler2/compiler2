@@ -5,10 +5,10 @@ int main_bench()
 {
    char q,*p;
    int now;
-   scanf("%c",&q);
+   my_scanf("%c",&q);
    while (!((('0'<=q) && ('9'>=q)))) 
        {  
-         scanf("%c",&q);
+         my_scanf("%c",&q);
        
          }
    long tot=0;
@@ -20,13 +20,13 @@ int main_bench()
                           now=1;       
                   }                                    
                else if (tot!=0){
-                       printf("%d\n",tot);
+                       my_printf("%d\n",tot);
                        tot=0;
                        now=0;
                     }
-           scanf("%c",&q);
+           my_scanf("%c",&q);
       }    
-   if( now !=0) printf("%d\n",tot);
+   if( now !=0) my_printf("%d\n",tot);
      
      
 }

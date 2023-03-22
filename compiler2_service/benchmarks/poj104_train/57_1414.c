@@ -6,11 +6,11 @@ int main_bench()
     int i, n, suffixLen;
     char word[32], *p;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i = 0; i < n; i++)
     {
        
-        scanf("%s", word);
+        my_scanf("%s", word);
 
        
         for (p = word; *p; p++);
@@ -24,7 +24,7 @@ int main_bench()
         }
 
        
-        printf("%s\n", word);
+        my_printf("%s\n", word);
     }
     return 0;
 }

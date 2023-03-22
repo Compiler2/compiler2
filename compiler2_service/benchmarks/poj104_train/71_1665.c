@@ -23,15 +23,15 @@ int fuck(int m,int n)
 int main_bench()
 {
     int n,i,y,a,b,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%d%d%d",&y,&a,&b);
+                    my_scanf("%d%d%d",&y,&a,&b);
                     t=fuck(y,a)-fuck(y,b);
-                    if(t%7==0) printf("YES\n");
-                    else printf("NO\n");
+                    if(t%7==0) my_printf("YES\n");
+                    else my_printf("NO\n");
     }
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     return 0;
     
 }

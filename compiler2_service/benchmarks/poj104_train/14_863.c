@@ -9,12 +9,12 @@ int No;
 int yuwen;
 int math;
 }stu[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d",&stu[i].No);
-    scanf("%d",&stu[i].yuwen);
-	scanf("%d",&stu[i].math);
+	my_scanf("%d",&stu[i].No);
+    my_scanf("%d",&stu[i].yuwen);
+	my_scanf("%d",&stu[i].math);
 }
 for(i=0;i<n;i++)
 {
@@ -45,8 +45,8 @@ c=id[2];
 
 
 
-printf("%d %d\n",a,max);
-printf("%d %d\n",b,smax);
-printf("%d %d\n",c,tmax);
+my_printf("%d %d\n",a,max);
+my_printf("%d %d\n",b,smax);
+my_printf("%d %d\n",c,tmax);
 
 }

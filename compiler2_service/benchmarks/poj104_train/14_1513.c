@@ -9,9 +9,9 @@ struct student
 int main_bench()
 {
     int n,i,j,tem,temp;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d%d%d",&stu[i].id,&stu[i].chin,&stu[i].math);
+                     my_scanf("%d%d%d",&stu[i].id,&stu[i].chin,&stu[i].math);
                      stu[i].sum=stu[i].chin+stu[i].math;
                      }
     int max[3]={0};
@@ -33,7 +33,7 @@ int main_bench()
     
   
     for(i=0;i<3;i++)
-                    printf("%d %d\n",stu[max[i]].id,stu[max[i]].sum);
+                    my_printf("%d %d\n",stu[max[i]].id,stu[max[i]].sum);
 
 
     return 0;

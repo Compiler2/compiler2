@@ -3,7 +3,7 @@
 int main_bench()
 {
     int w,i,a[12];
-    scanf("%d",&w);
+    my_scanf("%d",&w);
     if(w<3)
        a[1]=w+5;
     else
@@ -41,6 +41,6 @@ int main_bench()
        a[12]-=7;
     for(i=1;i<=12;i++)
        if(a[i]==5)
-          printf("%d\n",i);
+          my_printf("%d\n",i);
     return 0;
 }

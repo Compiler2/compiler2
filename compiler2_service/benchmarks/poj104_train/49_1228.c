@@ -13,8 +13,8 @@ int main_bench()
             while(s[a]==s[b]&&a<b) {a++;b--;};
             if(a>=b)
             {
-                for(j=i;j<=i+l;j++) printf("%c",s[j]);
-                printf("\n");
+                for(j=i;j<=i+l;j++) my_printf("%c",s[j]);
+                my_printf("\n");
             }
         }
 }

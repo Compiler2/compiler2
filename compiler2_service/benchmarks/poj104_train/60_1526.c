@@ -4,7 +4,7 @@ int main_bench()
 {
 	int j,k,i,m,n;
 	int s[30000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     for (i=2;i<=n;i++)
     {
@@ -21,9 +21,9 @@ int main_bench()
  for (i=1;i<=n;i++) if ((s[i]==1)&&(s[i+2]==1)) 
  {
      k=1;
-     printf("%d %d\n",i,i+2);
+     my_printf("%d %d\n",i,i+2);
      }
-     if (k==0) printf("empty");
+     if (k==0) my_printf("empty");
 
 return 0;
 }

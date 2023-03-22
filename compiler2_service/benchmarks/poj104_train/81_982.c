@@ -13,14 +13,14 @@ int a[5][5];
 
 for(i=0;i<5;i++)
     for(j=0;j<5;j++)
-		scanf("%d",&a[i][j]);
-scanf("%d %d",&m,&n);
+		my_scanf("%d",&a[i][j]);
+my_scanf("%d %d",&m,&n);
 
 	
 
 k=judge(m,n);
 if(k==1)
-printf("error");
+my_printf("error");
 else 
 {
 	for(i=0;i<5;i++)
@@ -32,9 +32,9 @@ else
     for(i=0;i<5;i++)
 	{    
         for(j=0;j<4;j++)
-		printf("%d ",a[i][j]);
-		printf("%d",a[i][4]);
-	    printf("\n");
+		my_printf("%d ",a[i][j]);
+		my_printf("%d",a[i][4]);
+	    my_printf("\n");
 	}
 }
 

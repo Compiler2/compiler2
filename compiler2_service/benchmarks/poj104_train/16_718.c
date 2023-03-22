@@ -4,7 +4,7 @@ int main_bench()
 {
 	int z;
 	int a,b,c,d,e;
-	scanf("%d",&z);
+	my_scanf("%d",&z);
 	a=(int)z/10000;
 	z=z-a*10000;
 	b=(int)z/1000;
@@ -17,15 +17,15 @@ int main_bench()
 		if (b==0)
 			if (c==0)
 				if (d==0)
-					printf("%d",e);
+					my_printf("%d",e);
 				else
-					printf("%d%d",e,d);
+					my_printf("%d%d",e,d);
 			else
-				printf("%d%d%d",e,d,c);
+				my_printf("%d%d%d",e,d,c);
 		else
-			printf("%d%d%d%d",e,d,c,b);
+			my_printf("%d%d%d%d",e,d,c,b);
 	else
-		printf("%d%d%d%d%d",e,d,c,b,a);
-	scanf("%d",&z);
+		my_printf("%d%d%d%d%d",e,d,c,b,a);
+	my_scanf("%d",&z);
 	return 0;
 }	

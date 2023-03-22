@@ -6,18 +6,18 @@ int main_bench()
 	char c[1000];
 	for(i=1;i<=1000;i++)
 	{
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 		if(c[i]=='\n')
 			break;
 	}
 	for(i=1;i<=1000;i++)
 	{
-		scanf("%d%c",&b[i],&c[i]);
+		my_scanf("%d%c",&b[i],&c[i]);
 		if(c[i]=='\n')
 			break;
 	}
 	len=i;
-	printf("%d ",len);
+	my_printf("%d ",len);
 	for(i=1;i<=len;i++)
 	{
 		if(a[i]<=min)
@@ -32,6 +32,6 @@ int main_bench()
 	for(i=min;i<=max;i++)
 		if(d[i]>=t)
 			t=d[i];
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

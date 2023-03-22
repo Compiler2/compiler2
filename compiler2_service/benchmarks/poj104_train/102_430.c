@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,k;
 	char zfc[100][20],ex[20];
 	double h[100],mi;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%lf",zfc[i],&h[i]);
+		my_scanf("%s%lf",zfc[i],&h[i]);
 	}
 	for(k=1;k<n;k++)
 	{
@@ -25,10 +25,10 @@ int main_bench()
 			}
 		}
 	}
-	printf("%.2lf",h[0]);
+	my_printf("%.2lf",h[0]);
 	for(i=1;i<=n-1;i++)
 	{
-		printf(" %.2lf",h[i]);
+		my_printf(" %.2lf",h[i]);
 	}
 	return 0;
 }

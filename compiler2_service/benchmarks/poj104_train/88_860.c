@@ -9,7 +9,7 @@ int main_bench()
   for(i=0;i<31;i++)
   {
     if(*(p+i)=='\0')break;
-    else if(*(p+i)>47&&*(p+i)<58)printf("%c",*(p+i));
-    if(*(p+i+1)<48||*(p+i+1)>57)printf("\n");
+    else if(*(p+i)>47&&*(p+i)<58)my_printf("%c",*(p+i));
+    if(*(p+i+1)<48||*(p+i+1)>57)my_printf("\n");
   }
 }

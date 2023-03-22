@@ -16,7 +16,7 @@ int pre(int num)
 int main_bench()
 {
 	int n,m,x[100]={0},y[100]={0},i,j,k,d;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	x[0]=n;
 	y[0]=m;
 	for(i=1;;i++)
@@ -35,12 +35,12 @@ int main_bench()
 		for(d=0;d<j;d++)
 			if(x[k]==y[d])
 			{
-				printf("%d",x[k]);
+				my_printf("%d",x[k]);
 				goto L;
 			}
 
 L:
-	printf("\n");
+	my_printf("\n");
 }
 
 

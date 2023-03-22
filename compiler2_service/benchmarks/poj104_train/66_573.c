@@ -10,7 +10,7 @@ int main_bench()
                 {'T','h','u','.'}, 
                 {'F','r','i','.'}, 
                 {'S','a','t','.'} }; 
-    scanf("%d%d%d",&year,&month,&day);
+    my_scanf("%d%d%d",&year,&month,&day);
     if((year%4==0 && year%100!=0)||year%400==0)
         tianshu[2]=29;
     else
@@ -20,6 +20,6 @@ int main_bench()
     sum+=day;
     n=year-1+(int)((year-1)/4)-(int)((year-1)/100)+(int)((year-1)/400)+sum;
     m=n%7;
-    printf("%s\n",week[m]);
+    my_printf("%s\n",week[m]);
     return 0;
 }

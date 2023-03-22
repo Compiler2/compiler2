@@ -21,7 +21,7 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 	
 
 	return 0;

@@ -9,9 +9,9 @@ int main_bench()
 	int age;
 	};
 	struct s S[100],Si;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",S[i].id,&S[i].age);
+		my_scanf("%s%d",S[i].id,&S[i].age);
 	}
 	for(i=0;i<n-1;i++){
 		for(j=0;j<n-i-1;j++){
@@ -25,6 +25,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",S[i].id);
+		my_printf("%s\n",S[i].id);
 	}
 }

@@ -4,9 +4,9 @@ main_bench()
 {
 	int a,b;
 	char n[100];
-	scanf("%d",&a);
-	scanf("%s",n);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",n);
+	my_scanf("%d",&b);
 	long c=0,x;
 
 	int i,j,k,l=strlen(n);
@@ -36,10 +36,10 @@ main_bench()
 		{
 			char y;
 			y='A'+m[k]-10;
-			printf("%c",y);
+			my_printf("%c",y);
 		}
 		else
-		     printf("%d",m[k]);
+		     my_printf("%d",m[k]);
 	}
 	
 

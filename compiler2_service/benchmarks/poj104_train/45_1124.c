@@ -4,7 +4,7 @@ int main_bench()
 {
 	char sz1[100],sz2[100],*p;
 	int i,k;
-	scanf("%s%s",sz1,sz2);
+	my_scanf("%s%s",sz1,sz2);
 	for(i=0;sz2[i]!=0;i++)
 	{
 		p=&sz2[i];
@@ -24,6 +24,6 @@ int main_bench()
 				   break;
 			   }
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 return 0;
 }

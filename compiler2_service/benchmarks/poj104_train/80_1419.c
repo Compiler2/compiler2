@@ -4,7 +4,7 @@ int main_bench()
 {
 	int sy,sm,sd,ey,em,ed;
 	int i,x=0;
-	scanf("%d%d%d%d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d%d%d%d%d%d",&sy,&sm,&sd,&ey,&em,&ed);
 	for(i=sy;i<ey;i++)
 		if(i%4==0&&i%100!=0||i%400==0)
 			x=x+366;
@@ -22,6 +22,6 @@ int main_bench()
 		else if(i==1||i==3||i==5||i==7||i==8||i==10||i==12) x=x+31;
 		else x=x+30;
 	x=x+ed-sd;
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 	return 0;
 }

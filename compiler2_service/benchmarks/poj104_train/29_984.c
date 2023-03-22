@@ -5,10 +5,10 @@ int main_bench()
 double sz[1000];
 int n,a;
 double b,c,q,d;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=1;i<=n;i++){
 q=0;
-scanf("%d",&a);
+my_scanf("%d",&a);
 d=1;
 b=2;
 for(int j=0;j<a;j++){
@@ -21,7 +21,7 @@ c=0;
 for(int w=0;w<a;w++){
 q=q+sz[w];
 }
-printf("%.3lf\n",q);
+my_printf("%.3lf\n",q);
 }
 }
 

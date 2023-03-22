@@ -30,6 +30,6 @@ main_bench()
                       break;
       }
   }
-  printf("%d",a[1]);
-  for(k=2;k<=300;k++) if(a[k]!=0) printf(",%d",a[k]);
+  my_printf("%d",a[1]);
+  for(k=2;k<=300;k++) if(a[k]!=0) my_printf(",%d",a[k]);
 }

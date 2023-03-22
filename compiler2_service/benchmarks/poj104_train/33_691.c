@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j;
 	char jj1[256]={0},jj2[256]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",jj1);
+		my_scanf("%s",jj1);
 		for(j=0;j<strlen(jj1);j++)
 		{
 			switch(jj1[j])
@@ -29,7 +29,7 @@ int main_bench()
 			}
 		}
 		jj2[j] = '\0';
-		printf("%s\n",jj2);
+		my_printf("%s\n",jj2);
 	}
 	return 0;
 }

@@ -3,12 +3,12 @@
 int main_bench()
 {
     int k,m,n,i,flag=0;
-    scanf("%d",&k);
-    if(k<5) printf("empty");
-    else if(k<7) printf("3 5\n");
+    my_scanf("%d",&k);
+    if(k<5) my_printf("empty");
+    else if(k<7) my_printf("3 5\n");
     else
     {
-        printf("3 5\n");
+        my_printf("3 5\n");
         for(m=5;m<=k;m++)
         {
             flag=0;
@@ -26,7 +26,7 @@ int main_bench()
                     flag=1;
                     break;
                 }
-        if(flag==0) printf("%d %d\n",m,n);
+        if(flag==0) my_printf("%d %d\n",m,n);
         }
     }
     return 0;

@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,row,col,m,i,s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char z[102][102];
     s=0;
     for(row=1;row<n+1;row++){
         for(col=1;col<n+1;col++){
-            scanf(" %c",&z[row][col]);
+            my_scanf(" %c",&z[row][col]);
             if(z[row][col]=='@'){
                 s=s+1;
             }
@@ -21,7 +21,7 @@ int main_bench(){
         z[row][0]='#';
         z[row][n+1]='#';
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     i=1;
     while(i!=m){
         for(row=0;row<n+2;row++){
@@ -55,6 +55,6 @@ int main_bench(){
         }
         i=i+1;
     }
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }

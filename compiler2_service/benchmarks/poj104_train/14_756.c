@@ -7,14 +7,14 @@ int main_bench()
 	int sum[100000];
 	int max1,max2,max3;
 	int x=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct {
 		int number;
 		int chin;
 		int math;
 	}student[100000];
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&student[i].number,&student[i].chin,&student[i].math);
+		my_scanf("%d%d%d",&student[i].number,&student[i].chin,&student[i].math);
 		sum[i]=student[i].chin+student[i].math;}
 	max1=sum[0];
 	max2=sum[0];
@@ -24,7 +24,7 @@ int main_bench()
 			max1=sum[i];}
 	for(i=0;i<n;i++){
 		if(sum[i]==max1){
-			printf("%d %d\n",student[i].number,sum[i]);
+			my_printf("%d %d\n",student[i].number,sum[i]);
 			x++;}
 		if(x>=3)
 			break;
@@ -36,7 +36,7 @@ int main_bench()
 		if(x>=3)
 			break;
 		if(sum[i]==max2){
-			printf("%d %d\n",student[i].number,sum[i]);
+			my_printf("%d %d\n",student[i].number,sum[i]);
 			x++;}
 	}
 	for(i=0;i<n;i++){
@@ -46,7 +46,7 @@ int main_bench()
 		if(x>=3)
 			break;
 		if(sum[i]==max3){
-			printf("%d %d",student[i].number,sum[i]);
+			my_printf("%d %d",student[i].number,sum[i]);
 		x++;}
 	}
 	return 0;

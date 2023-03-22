@@ -6,7 +6,7 @@ int main_bench()
 	int m,M,i,j,sum[1000];
 	int row[1000],col[1000];
 	int sz[1000][1000];
-	scanf("%d",&M);
+	my_scanf("%d",&M);
 	for(m=0;m<M;m++)
 	{
 		sum[m]=0;
@@ -18,13 +18,13 @@ int main_bench()
 			}
 		}
 
-		scanf("%d%d",&row[m],&col[m]);
+		my_scanf("%d%d",&row[m],&col[m]);
 
 		for(i=0;i<row[m];i++)
 		{
 			for(j=0;j<col[m];j++)
 			{
-				scanf("%d",&sz[i][j]);
+				my_scanf("%d",&sz[i][j]);
 			}
 		}
 
@@ -42,6 +42,6 @@ int main_bench()
 
 	}
 	for(m=0;m<M;m++)
-		printf("%d\n",sum[m]);
+		my_printf("%d\n",sum[m]);
 	return 0;
 }

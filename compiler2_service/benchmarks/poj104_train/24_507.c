@@ -59,8 +59,8 @@ j++;
 		s+=b[t]+1;
 
 	for(t=s;t<s+b[a1];t++)
-		printf("%c",a[t]);
-          printf("\n");
+		my_printf("%c",a[t]);
+          my_printf("\n");
 
 
 
@@ -70,8 +70,8 @@ s=0;
 
 
 		for(t=s;t<s+b[a2];t++)
-	printf("%c",a[t]);
-	printf("\n");
+	my_printf("%c",a[t]);
+	my_printf("\n");
 	
 
 

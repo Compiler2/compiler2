@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,m=0,good,count=0;
 	int b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<n;i++)
 	{
 		good=0;
@@ -28,7 +28,7 @@ int main_bench()
 		{
 			if(b[i]+b[j]==n&&b[i]<=b[j])
 			{
-				printf("%d %d\n",b[i],b[j]);
+				my_printf("%d %d\n",b[i],b[j]);
 			}
 		}
 	}

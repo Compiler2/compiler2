@@ -11,14 +11,14 @@ int main_bench()
 	a=0;
 	b=0;
 	e=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-	scanf("%f",&x[i]);
+	my_scanf("%f",&x[i]);
 	a+=x[i];
 	}
 	i=0;
 	for(i=1;i<=n;i++){
-		scanf("%f",&y[i]);
+		my_scanf("%f",&y[i]);
 	if(y[i]<=59)y[i]=0;
 	if(y[i]>=90)y[i]=4.0;
 	if(y[i]<=89&&y[i]>=85)y[i]=3.7;
@@ -32,6 +32,6 @@ int main_bench()
 	b+=x[i]*y[i];
 	}
 	c=b/a;
-	printf("%.2f",c);
+	my_printf("%.2f",c);
 	return 0;
 }

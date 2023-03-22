@@ -6,10 +6,10 @@ int main_bench()
 	int a=0,b=0,c=0,d=0;
 	int sz[100];
 	double e,r,j,m;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d ",&(sz[i]));
+		my_scanf("%d ",&(sz[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -34,10 +34,10 @@ int main_bench()
 	r=b*1.0/n;
 	j=c*1.0/n;
 	m=d*1.0/n;
-	printf("1-18: %.2lf%%\n",e*100);
-	printf("19-35: %.2lf%%\n",r*100);
-	printf("36-60: %.2lf%%\n",j*100);
-	printf("60??: %.2lf%%\n",m*100);
+	my_printf("1-18: %.2lf%%\n",e*100);
+	my_printf("19-35: %.2lf%%\n",r*100);
+	my_printf("36-60: %.2lf%%\n",j*100);
+	my_printf("60??: %.2lf%%\n",m*100);
 	return 0;
 }
 

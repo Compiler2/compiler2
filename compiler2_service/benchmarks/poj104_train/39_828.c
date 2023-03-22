@@ -13,9 +13,9 @@ int main_bench() {
 	} stu[100], temp;
 	int n, i, re=0;
 		char hhh;
-	scanf("%d" ,&n);
+	my_scanf("%d" ,&n);
 	for(i=0;i<n;i++) {
-		scanf("%s%d%d%c%c%c%c%d", stu[i].name, &stu[i].scor, &stu[i].grad, &hhh,&stu[i].as,&stu[i].xi,&stu[i].xi, &stu[i].num);
+		my_scanf("%s%d%d%c%c%c%c%d", stu[i].name, &stu[i].scor, &stu[i].grad, &hhh,&stu[i].as,&stu[i].xi,&stu[i].xi, &stu[i].num);
 		stu[i].reward=0;
 		if(stu[i].scor>80&&stu[i].num>=1) {
 			stu[i].reward+=8000;
@@ -43,6 +43,6 @@ int main_bench() {
 			re+=stu[i].reward;
 		}
 
-	printf("%s\n%d\n%d", temp.name, temp.reward, re);
+	my_printf("%s\n%d\n%d", temp.name, temp.reward, re);
 	return 0;
 }

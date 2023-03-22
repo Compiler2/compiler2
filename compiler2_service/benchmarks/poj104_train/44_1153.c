@@ -17,17 +17,17 @@ main_bench()
         {
             b[i]=a[len-i];
             }
-        printf("-");
+        my_printf("-");
         b[len]='\0';
         for(i=1;b[i]!='\0';i++)
         {
             if((b[i]!='0')||(b[i]=='0'&&count!=0))
             {
-                printf("%c",b[i]);
+                my_printf("%c",b[i]);
                 count++;
             }
         }
-        printf("\n");
+        my_printf("\n");
         }
     else
     {
@@ -40,11 +40,11 @@ main_bench()
         {
             if((b[i]!='0')||(b[i]=='0'&&count!=0))
             {
-                printf("%c",b[i]);
+                my_printf("%c",b[i]);
                 count++;
             }
         }
-        printf("\n");
+        my_printf("\n");
     }
     }
     }

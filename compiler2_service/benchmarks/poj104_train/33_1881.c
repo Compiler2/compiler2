@@ -4,25 +4,25 @@ int main_bench()
 {
 	int n,i,j;
 	char gen[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&gen[i]);
+		my_scanf("%s",&gen[i]);
 	}
 	for (i=0;i<n;i++)
 	{
 		for (j=0;j<(int)strlen(gen[i]);j++)
 		{
 			if (gen[i][j]==65)
-			{printf("T");}
+			{my_printf("T");}
 			if (gen[i][j]==84)
-			{printf("A");}
+			{my_printf("A");}
 			if (gen[i][j]==67)
-			{printf("G");}
+			{my_printf("G");}
 			if (gen[i][j]==71)
-			{printf("C");}
+			{my_printf("C");}
 		}
-		{printf("\n");}	
+		{my_printf("\n");}	
 	}
 	
 	return 0;

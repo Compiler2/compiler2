@@ -5,7 +5,7 @@ main_bench()
 	char s[50]={0},w[50]={0};
 	int i,j,ls,lw,d,p=0,q=1;
 	char *ps,*pw;
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	ps=&s[0];pw=&w[0];
 	ls=strlen(s);
 	lw=strlen(w);
@@ -38,5 +38,5 @@ main_bench()
 		else
 			continue;
 	}
-	printf("%d\n",d);
+	my_printf("%d\n",d);
 }

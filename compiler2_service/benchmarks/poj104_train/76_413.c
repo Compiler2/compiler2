@@ -7,7 +7,7 @@ int main_bench()
 
 int n;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 int a[n],b[n];
 
@@ -15,7 +15,7 @@ int i;
 
 for(i=0;i<n;i++){
 
-   scanf("%d %d ",&a[i],&b[i]);
+   my_scanf("%d %d ",&a[i],&b[i]);
 
 }
 
@@ -59,7 +59,7 @@ for(i=1;i<n;i++){
 
    else if(a[i]>t){
 
-       printf("no\n");
+       my_printf("no\n");
 
        return 0;
 
@@ -67,7 +67,7 @@ for(i=1;i<n;i++){
 
   }
 
-printf("%d %d",m,t);
+my_printf("%d %d",m,t);
 
 return 0;
 

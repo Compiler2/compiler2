@@ -4,8 +4,8 @@ int main_bench()
 {
 	int GongJiTian(int, int, int);
 	int year1, month1, day1, year2, month2, day2;
-	scanf("%d %d %d", &year1, &month1, &day1);
-	scanf("%d %d %d", &year2, &month2, &day2);
+	my_scanf("%d %d %d", &year1, &month1, &day1);
+	my_scanf("%d %d %d", &year2, &month2, &day2);
 	int result, a, b;
 	a=GongJiTian(year1,month1,day1);
 	b=GongJiTian(year2,month2,day2);
@@ -14,7 +14,7 @@ int main_bench()
 	}else{
 		result=b-a;
 	}
-	printf("%d", result);
+	my_printf("%d", result);
 	return 0;
 }
 

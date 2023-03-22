@@ -5,13 +5,13 @@ int main_bench()
 	unsigned int num[300]={0},i=0,j,k,n,t;
 	do 
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		i++;
 	}
     while (getchar()==',');
 	n=i;
 	if (n==1)
-		printf("No\n");
+		my_printf("No\n");
 	else 
 	{
 		for (i=0;i<n;i++)
@@ -34,7 +34,7 @@ int main_bench()
 			    break;
 			}
 		if (i==n)
-			printf("No\n");
-		else printf("%d\n",num[j]);
+			my_printf("No\n");
+		else my_printf("%d\n",num[j]);
 	}
 }

@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,i,j,m;
 	char a[51];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++){
 		gets(a);
 		m=strlen(a);

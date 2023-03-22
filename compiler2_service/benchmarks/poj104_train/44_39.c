@@ -68,7 +68,7 @@ int main_bench()
    
    for(i=0;i<6;i++)
    {
-      scanf("%d",&shuru[i]);
+      my_scanf("%d",&shuru[i]);
    }
    
    for(i=0;i<6;i++)
@@ -78,7 +78,7 @@ int main_bench()
    
     for(i=0;i<6;i++)
    {
-      printf("%d\n",jieguo[i]);
+      my_printf("%d\n",jieguo[i]);
    }
    
    getchar();

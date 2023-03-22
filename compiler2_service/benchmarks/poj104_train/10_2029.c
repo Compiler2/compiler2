@@ -3,12 +3,12 @@
 main_bench()
 {
       int k,i,x;
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       int h[k];
       int a[k];
       for(i=0;i<k;i++)
       {
-                       scanf("%d",&h[i]);
+                       my_scanf("%d",&h[i]);
       }
       for(x=0;x<k;x++)
       {
@@ -31,7 +31,7 @@ main_bench()
                       if(a[m]>y)
                       y=a[m];
       }
-      printf("%d",y);
+      my_printf("%d",y);
 
       getchar();
       getchar();

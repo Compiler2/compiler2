@@ -3,8 +3,8 @@
 int main_bench()
 {
     int m,n,i,j,o;
-    scanf("%d",&m);
-    scanf("%d",&n);
+    my_scanf("%d",&m);
+    my_scanf("%d",&n);
     o=0;
     int a[m+2][n+2];
     for(i=0;i<m+2;i++)
@@ -18,7 +18,7 @@ int main_bench()
     {
                     for(j=1;j<=n;j++)
                     {
-                                     scanf("%d",&a[i][j]);
+                                     my_scanf("%d",&a[i][j]);
                     }
     }
     for(i=1;i<=m;i++)
@@ -29,12 +29,12 @@ int main_bench()
                                       {
                                                                                                                                 if(o==0)
                                                                                                                                 {
-                                                                                                                                printf("%d %d\n",(i-1),(j-1));
+                                                                                                                                my_printf("%d %d\n",(i-1),(j-1));
                                                                                                                                 o++;
                                                                                                                                 }
                                                                                                                                 else
                                                                                                                                 {
-                                                                                                                                printf("%d %d\n",(i-1),(j-1));
+                                                                                                                                my_printf("%d %d\n",(i-1),(j-1));
                                                                                                                                 o++;
                                                                                                                                 }
                                       }

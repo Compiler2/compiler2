@@ -38,16 +38,16 @@
 	}
 	if(count==0)
 	{
-		printf("%d",len);
+		my_printf("%d",len);
 	}
 	if(count>0)
 	{
-	printf("%d,",board[0]);
+	my_printf("%d,",board[0]);
 	for(i=0;i<count-1;i++)
 	{
-		printf("%d,",board[i+1]-board[i]-1);
+		my_printf("%d,",board[i+1]-board[i]-1);
 	}
-	printf("%d",len-board[count-1]-1);
+	my_printf("%d",len-board[count-1]-1);
 	}
 	return 0;
 }

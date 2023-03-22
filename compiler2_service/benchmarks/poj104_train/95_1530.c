@@ -22,13 +22,13 @@ main_bench()
 		b[i]=trans(b[i]);
 		if(a[i]!=b[i])
 		{
-				if(a[i]>b[i]) printf(">");
-				else printf("<");
+				if(a[i]>b[i]) my_printf(">");
+				else my_printf("<");
 				n++;
 				break;
 		}
 	}
 
 	if(n==0)
-		printf("=");
+		my_printf("=");
 }

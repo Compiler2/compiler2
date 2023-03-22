@@ -30,8 +30,8 @@
 	}
 	if(word==1)
 	{
-		printf("%s",string_1);
-		printf("%s",replacement);
+		my_printf("%s",string_1);
+		my_printf("%s",replacement);
 		if((len2+len3)<len1)
 		{
 			k=0;
@@ -40,12 +40,12 @@
 				string_2[k]=string[i];
 				k++;
 			}
-			printf("%s",string_2);
+			my_printf("%s",string_2);
 		}
 	}
 	if(word==0)
 	{
-		printf("%s",string);
+		my_printf("%s",string);
 	}
 	return 0;
 }

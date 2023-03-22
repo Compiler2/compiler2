@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,sz[50000][2],a[100000],t=0,k,p,q,j,c,b=0,e=1;
 	double f;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 	        a[t]=sz[i][j];
 	        t++;
 		}
@@ -30,13 +30,13 @@ int main_bench()
 			}
 		}
 		if(b==n){
-	        printf("no");
+	        my_printf("no");
 			e=0;
 			break;
 		}
 	}
 	    if(e==1){
-		    printf("%d %d",a[0],a[t-1]);
+		    my_printf("%d %d",a[0],a[t-1]);
 	}
     return 0;
 }

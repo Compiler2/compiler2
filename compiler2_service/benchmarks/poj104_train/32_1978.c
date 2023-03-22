@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf ("%d", &n);
+	my_scanf ("%d", &n);
 	while (n > 0)
 	{
 		char c[100],b[100];
 		int  j, i, k=0, s=0, t;
-		scanf ("%s\n%s", &c, &b);
+		my_scanf ("%s\n%s", &c, &b);
 		while (c[k]!='\0')
 		{
 			k++;
@@ -33,8 +33,8 @@ int main_bench()
 		
 		s = 0;
 				for (s;s <k; s++)
-			printf("%c", c[s]);
-		printf("\n");
+			my_printf("%c", c[s]);
+		my_printf("\n");
 		
 		n--;
 	}

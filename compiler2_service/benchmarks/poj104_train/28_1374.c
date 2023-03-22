@@ -20,8 +20,8 @@ int main_bench()
 	}
 	   for(n=0;n<k;n++)
 	   {
-		   printf("%d,",len[n]);
+		   my_printf("%d,",len[n]);
 	   }
-	   printf("%d",j-i-1);
+	   my_printf("%d",j-i-1);
 		return 0;
 }

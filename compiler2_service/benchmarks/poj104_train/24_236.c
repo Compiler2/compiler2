@@ -41,7 +41,7 @@ int main_bench()
 		cur[j++] = all[i];
 	}
 		
-	printf("%s\n%s\n", max, min);
+	my_printf("%s\n%s\n", max, min);
 
 	return 0;
 }

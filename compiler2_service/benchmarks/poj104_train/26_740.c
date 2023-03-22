@@ -11,7 +11,7 @@ int main_bench()
 		{i++;
 		 continue;
 		}
-	 printf("%c",str[i]);
+	 my_printf("%c",str[i]);
 	 i++;
 	}while(i<n);
 	return 0;

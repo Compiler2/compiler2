@@ -4,12 +4,12 @@ int u[1000][1000];
 int main_bench()
 {
     int row,col,i,j,sum,k,m;
-    scanf("%d%d",&row,&col);
+    my_scanf("%d%d",&row,&col);
     for(i=0;i<row;i++)
     {
 	for(j=0;j<col;j++)
         {
-	    scanf("%d",&u[i][j]);
+	    my_scanf("%d",&u[i][j]);
 	}
     }
     if(row>col)
@@ -25,7 +25,7 @@ int main_bench()
     {
         for(j=k;j<col-k;j++)
         {
-	    printf("%d\n",u[k][j]);
+	    my_printf("%d\n",u[k][j]);
         }
 	if(k+1>=row-k)
         {				
@@ -34,7 +34,7 @@ int main_bench()
 	
         for(i=k+1;i<row-k;i++)
         {
-	    printf("%d\n",u[i][col-k-1]);
+	    my_printf("%d\n",u[i][col-k-1]);
 	}
 	if(col-2-k<k)
         {
@@ -43,7 +43,7 @@ int main_bench()
 
         for(j=col-2-k;j>=k;j--)
         {
-	    printf("%d\n",u[row-k-1][j]);
+	    my_printf("%d\n",u[row-k-1][j]);
 	}
         if(row-2-k<=k)
         {
@@ -52,7 +52,7 @@ int main_bench()
 
         for(i=row-2-k;i>k;i--)
         {
-	    printf("%d\n",u[i][k]);
+	    my_printf("%d\n",u[i][k]);
 	}
 				
     }

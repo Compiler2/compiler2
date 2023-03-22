@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int m,i=1,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int a,b,c,d,y;
 	double x;
 	int q,sz[100];
 	for(q=0;q<m;q++)
 	{
-		scanf("%d",&(sz[q]));
+		my_scanf("%d",&(sz[q]));
 	}
 
 		for(q=0;q<m;q++)
@@ -28,7 +28,7 @@ int main_bench()
 		b=a+y;
 		a=y;
 		}
-		printf("%.3lf\n",x);
+		my_printf("%.3lf\n",x);
 		
 	
 	}

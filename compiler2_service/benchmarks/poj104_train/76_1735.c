@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[50000],b[50000],sz[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=0;j<n;j++){
-		scanf("%d%d",&a[j],&b[j]);
+		my_scanf("%d%d",&a[j],&b[j]);
 	}
 	int min=a[0];
 	for(int m=0;m<n-1;m++){
@@ -35,10 +35,10 @@ int main_bench(){
 		ans*=sz[i];
 	}
 	if(ans==0){
-		printf("no");
+		my_printf("no");
 	}
 	else{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

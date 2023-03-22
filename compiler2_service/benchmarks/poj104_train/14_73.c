@@ -12,10 +12,10 @@ int main_bench()
 	struct student stu[100000];
 	struct student max[3]={0,0,0,0,0,0,0,0,0,0,0,0};
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d %d %d\n",&stu[i].id,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d %d %d\n",&stu[i].id,&stu[i].chinese,&stu[i].math);
 		stu[i].total = stu[i].chinese + stu[i].math;
 	}
 	for (i=0;i<n;i++)
@@ -41,7 +41,7 @@ int main_bench()
 	}
 	for (i=1;i<4;i++)
 	{
-		printf("%d %d\n",max[i].id,max[i].total);
+		my_printf("%d %d\n",max[i].id,max[i].total);
 	}
 	return 0;
 }

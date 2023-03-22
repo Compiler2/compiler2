@@ -4,10 +4,10 @@ int main_bench()
 {
 	char s[10000];
 	int rec[30], i, t, len,find;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	while (t-- > 0)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		len=strlen(s);
 		find=0;
 		memset(rec,0,sizeof(rec));
@@ -16,12 +16,12 @@ int main_bench()
 		for (i = 0; i < len ;i++)
 			if (rec[s[i]-'a']==1)
 			{
-				printf("%c\n",s[i]);
+				my_printf("%c\n",s[i]);
 				find=1;
 				break;
 			}
 		if (find==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

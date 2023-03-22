@@ -7,10 +7,10 @@ int main_bench()
     int a,b,i,c,d;
     gets (beichushu);
     a=strlen (beichushu);
-if (a==1) printf ("0\n%s",beichushu);
+if (a==1) my_printf ("0\n%s",beichushu);
 else if (a==2) {c=((beichushu[0]-'0')*10+beichushu[1]-'0')/chushu;
                       d=((beichushu[0]-'0')*10+beichushu[1]-'0')%chushu;
-                      printf("%d\n%d",c,d);}
+                      my_printf("%d\n%d",c,d);}
 else
 {
     b=(beichushu[0]-'0')*10+(beichushu[1]-'0');
@@ -24,7 +24,7 @@ else
             }
             
             shang[a-2]='\0';
-            printf ("%s\n%d",shang,b);
+            my_printf ("%s\n%d",shang,b);
      }
      else
      {
@@ -37,7 +37,7 @@ else
          shang[a-2]=b/chushu+'0';
          b=b%chushu;
          shang[a-1]='\0';
-         printf ("%s\n%d",shang,b);
+         my_printf ("%s\n%d",shang,b);
      }
 }
 return 0;

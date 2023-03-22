@@ -4,9 +4,9 @@ int main_bench()
 {
      int n,i,k=0,j;
 	 float a[300],b[300],c[300],m=0,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-                   scanf("%f",&a[i]);
+                   my_scanf("%f",&a[i]);
 m=m+a[i];}
 m=m/n;
 for(i=0;i<n;i++){
@@ -19,7 +19,7 @@ for(i=0;i<n;i++){
 		c[k]=a[i];
 		k++;}
 }
-if(k==1){printf("%.0f",c[0]);}
+if(k==1){my_printf("%.0f",c[0]);}
 if(k>1){
 
 
@@ -33,8 +33,8 @@ if(k>1){
                                                                       }
                                                                       }
                                                                       }
-	for(i=0;i<k-1;i++){printf("%.0f,",c[i]);}
-	printf("%.0f",c[k-1]);}
+	for(i=0;i<k-1;i++){my_printf("%.0f,",c[i]);}
+	my_printf("%.0f",c[k-1]);}
 
 
             return 0;

@@ -17,16 +17,16 @@ int main_bench(){
 	int s[5][5],c;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
-	}scanf("%d%d",&m,&n);
+	}my_scanf("%d%d",&m,&n);
   c=han(m,n,s);
 	if(c==1){
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
 				if(j<4){
-					printf("%d ",s[i][j]);
-				}else{printf("%d\n",s[i][j]);
+					my_printf("%d ",s[i][j]);
+				}else{my_printf("%d\n",s[i][j]);
 				}
 			}
 			
@@ -35,7 +35,7 @@ int main_bench(){
 	
 		
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

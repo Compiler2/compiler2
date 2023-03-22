@@ -4,7 +4,7 @@ main_bench()
 {
    int m,i,n,j,a=0,k,p,q,r=0,x=0;
    int b[5000];
-   scanf("%d %d",&m,&n) ;
+   my_scanf("%d %d",&m,&n) ;
    for(i=m;i<=n;i++)
    {
                     if(i>=0&&i<=9)
@@ -12,11 +12,11 @@ main_bench()
                                   r++;
                                  if(r==1)
                                  {x++;
-                                  printf("%d",i);
+                                  my_printf("%d",i);
                                   }
                                 else
                                 {x++;
-                                  printf(",%d",i);}
+                                  my_printf(",%d",i);}
                     }
                     q=0;
                     for(j=2;j<=i/2;j++)
@@ -50,10 +50,10 @@ main_bench()
                                 r++;
                                 if(r==1)
                                 {x++;
-                                  printf("%d",i);}
+                                  my_printf("%d",i);}
                                 else
                                 {x++;
-                                  printf(",%d",i);}
+                                  my_printf(",%d",i);}
                         }
                         
                           
@@ -61,6 +61,6 @@ main_bench()
                     
    } 
    if(x==0)
-   printf("no\n");    
+   my_printf("no\n");    
      
 }

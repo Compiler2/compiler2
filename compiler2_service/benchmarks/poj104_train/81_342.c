@@ -21,24 +21,24 @@ int main_bench()
 	int a[5][5],b,c,i,j,d,w=0;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-		scanf("%d %d",&b,&c);
+			my_scanf("%d",&a[i][j]);
+		my_scanf("%d %d",&b,&c);
 		d=p(a,b,c);
 		if(d==1)
 		{
 		for(i=0;i<5;i++)
 		   for(j=0;j<5;j++)
 		   {
-			   if(j==4)printf("%d",a[i][j]);
+			   if(j==4)my_printf("%d",a[i][j]);
 			   else
-			   printf("%d ",a[i][j]);
+			   my_printf("%d ",a[i][j]);
 			   w++;
 			   if(w==5)
-				   printf("\n");
-			   if(w==10)printf("\n");
-			   if(w==15)printf("\n");
-			   if(w==20)printf("\n");
+				   my_printf("\n");
+			   if(w==10)my_printf("\n");
+			   if(w==15)my_printf("\n");
+			   if(w==20)my_printf("\n");
 		   }
 		}
-		else printf("error");
+		else my_printf("error");
 }

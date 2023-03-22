@@ -66,6 +66,6 @@ main_bench()
               } 
          }                 
     r[count]='\0';
-    printf("%s",r);
+    my_printf("%s",r);
    
 }

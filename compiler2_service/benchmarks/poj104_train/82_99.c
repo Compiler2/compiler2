@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,count[1000],high[1000],low[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&high[i],&low[i]);
+		my_scanf("%d%d",&high[i],&low[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -23,6 +23,6 @@ int main_bench()
 		if(count[0]<count[i])
 			count[0]=count[i];
 	}
-	printf("%d",count[0]);
+	my_printf("%d",count[0]);
 	return 0;
 }

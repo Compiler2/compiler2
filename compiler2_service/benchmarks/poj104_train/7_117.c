@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[256], b[256], c[256];
-	scanf("%s%s%s",a, b, c);
+	my_scanf("%s%s%s",a, b, c);
 	int i, l, k;
 	int m=0, n=0;
 	for(;;)
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	}
 
-	if(n==2) printf("%s",a);
+	if(n==2) my_printf("%s",a);
 	else
 	{
 		for(i=0;;i++)
@@ -60,7 +60,7 @@ int main_bench()
 			a[k]=c[i-1];
 		}
 
-		printf("%s",a);
+		my_printf("%s",a);
 	}
 	return 0;
 } 

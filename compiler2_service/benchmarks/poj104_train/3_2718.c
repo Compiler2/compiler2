@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,K,i,j;
 	int a[1000];
-	scanf("%d %d/n",&n,&K);
+	my_scanf("%d %d/n",&n,&K);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 		}
 	}
 	goto third;
-	first:printf("yes");goto second;
-	third:printf("no");return 0;
+	first:my_printf("yes");goto second;
+	third:my_printf("no");return 0;
 	second:return 0;	
 }

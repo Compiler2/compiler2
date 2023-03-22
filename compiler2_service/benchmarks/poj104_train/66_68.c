@@ -5,7 +5,7 @@ int main_bench()
 {
 	int year,month,day,i,total=0;
 	int week;
-    scanf("%d%d%d",&year,&month,&day);
+    my_scanf("%d%d%d",&year,&month,&day);
 	
 	year = year%400+400;
 	
@@ -44,14 +44,14 @@ int main_bench()
 	week=total%7;
 	switch(week)
 	{
-		case 0:printf("Sun.");break;
-		case 1:printf("Mon.");break;
-		case 2:printf("Tue.");break;
-		case 3:printf("Wed.");break;
-		case 4:printf("Thu.");break;
-		case 5:printf("Fri.");break;
-		case 6:printf("Sat.");break;
-		default:printf("def.");break;
+		case 0:my_printf("Sun.");break;
+		case 1:my_printf("Mon.");break;
+		case 2:my_printf("Tue.");break;
+		case 3:my_printf("Wed.");break;
+		case 4:my_printf("Thu.");break;
+		case 5:my_printf("Fri.");break;
+		case 6:my_printf("Sat.");break;
+		default:my_printf("def.");break;
 	}
   return 0;
 }

@@ -18,7 +18,7 @@ int day_of_month(int month,int year)
 int main_bench()
 {
  int year1,year2,month1,month2,day1,day2,i,j,sum,sumyear,summonth1,summonth2;
- scanf("%d %d %d\n%d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);
+ my_scanf("%d %d %d\n%d %d %d",&year1,&month1,&day1,&year2,&month2,&day2);
  sum=sumyear=summonth1=summonth2=0;
  for(i=year1;i<year2;i++)
   sumyear+=day_of_year(i);
@@ -27,7 +27,7 @@ int main_bench()
  for(i=1;i<month2;i++)
  summonth2=summonth2+day_of_month(i,year2);
  sum=sumyear+summonth2+day2-summonth1-day1;
- printf("%d",sum);
- scanf("%d",&i);
+ my_printf("%d",sum);
+ my_scanf("%d",&i);
  return 0;
 }

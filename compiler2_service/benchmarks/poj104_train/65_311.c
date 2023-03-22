@@ -12,18 +12,18 @@ int pd(int a,int b)
 } 
 main_bench()
 {
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i;
       for(i=0;i<n;i++)
-      scanf("%d %d",&a[i],&b[i]);
+      my_scanf("%d %d",&a[i],&b[i]);
       int s=0;
       for(i=0;i<n;i++)
       s=s+pd(a[i],b[i]);
       if(s>0)
-      printf("A");
+      my_printf("A");
       else if(s==0)
-      printf("Tie");
+      my_printf("Tie");
       else
-      printf("B");
+      my_printf("B");
       
 } 

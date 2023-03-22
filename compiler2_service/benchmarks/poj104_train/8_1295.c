@@ -5,18 +5,18 @@ int main_bench()
 {
 	int word1[100],word2[100];
     int num1,num2;
-	scanf("%d %d",&num1,&num2);
+	my_scanf("%d %d",&num1,&num2);
 	int i;
 	for(i=0;i<num1;i++)
 	{
-		scanf("%d",&word1[i]);
+		my_scanf("%d",&word1[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=0;i<num2;i++)
 	{
-		scanf("%d",&word2[i]);
+		my_scanf("%d",&word2[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	int j,k,temp;
 	for(j=1;j<=num1*num1;j++)
 	{
@@ -56,8 +56,8 @@ int main_bench()
 	for(m=0;m<num1+num2;m++)
 	{
 		if(m!=num1+num2-1)
-		printf("%d ",zjword[m]);
-		else printf("%d",zjword[m]);
+		my_printf("%d ",zjword[m]);
+		else my_printf("%d",zjword[m]);
 	}
 	return 0;
 }

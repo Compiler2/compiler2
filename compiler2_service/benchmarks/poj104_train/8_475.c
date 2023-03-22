@@ -3,11 +3,11 @@
 int a,b,c[100],d[100],i,j,t;
 void c1()
 {
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
     for(i=0;i<a;i++)
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	for(i=0;i<b;i++)
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 }
 void c2()
 {
@@ -35,10 +35,10 @@ void c2()
 void c3()
 {
 	for(i=0;i<a;i++)
-		printf("%d ",c[i]);
+		my_printf("%d ",c[i]);
 	for(i=0;i<b-1;i++)
-		printf("%d ",d[i]);
-	printf("%d",d[b-1]);
+		my_printf("%d ",d[i]);
+	my_printf("%d",d[b-1]);
 }
 int main_bench()
 {

@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,s,i,i0,j,m;    
     char a[101][101],b[101][101];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++) gets(a[i]);
-    scanf ("%d",&m);
+    my_scanf ("%d",&m);
     for(i0=1;i0<m;i0++)
     {
     for(i=0;i<n;i++)
@@ -33,6 +33,6 @@ int main_bench()
     for(i=0;i<n;i++)
     for(j=0;j<n;j++)
     if(a[i][j]=='@') s++;
-    printf("%d\n",s);
+    my_printf("%d\n",s);
     return 0;
 }

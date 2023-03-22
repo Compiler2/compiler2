@@ -11,11 +11,11 @@ int main_bench()
 {
 	int n,i,j,temp,temp2,sum=0;
 	int max1,max2,max3,id1,id2,id3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student*s=(struct student*)malloc(n*sizeof(struct student));
 	int*end=(int*)malloc(n*sizeof(int));
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&s[i].a,&s[i].b,&s[i].c);
+		my_scanf("%d %d %d",&s[i].a,&s[i].b,&s[i].c);
 		end[i]=s[i].b+s[i].c;
 	}
 	max1=-100;max2=-100;max3=-100;
@@ -38,19 +38,19 @@ int main_bench()
 
 	for(i=0;i<n;i++){
 		if(end[i]==max1){
-			printf("%d %d\n",s[i].a,max1);
+			my_printf("%d %d\n",s[i].a,max1);
 			sum++;
 		}
 	}
 	for(i=0;i<n;i++){
 		if(sum<=2&&end[i]==max2){
-			printf("%d %d\n",s[i].a,max2);
+			my_printf("%d %d\n",s[i].a,max2);
 			sum++;
 		}
 	}
 	for(i=0;i<n;i++){
 		if(sum<=2&&end[i]==max3){
-			printf("%d %d\n",s[i].a,max3);
+			my_printf("%d %d\n",s[i].a,max3);
 		}
 	}
 		

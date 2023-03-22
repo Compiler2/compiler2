@@ -4,11 +4,11 @@ int main_bench()
 {
 	char str1[100]={""},str2[100]={""};
 	int i,j,len1,len2,flag=1;
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 	if(len1!=len2)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		for(i=0;i<len1;i++)
@@ -28,9 +28,9 @@ int main_bench()
 			}
 		}
 		if(flag)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }
 

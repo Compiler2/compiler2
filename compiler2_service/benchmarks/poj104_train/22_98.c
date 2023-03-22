@@ -20,6 +20,6 @@ int main_bench()
 	for(i=0;i<k;i++)if(b[i]>m1)m1=b[i];
 	for(i=0;i<k;i++)if(b[i]==m1)b[i]=0;
 	for(i=0;i<k;i++)if(b[i]>m2)m2=b[i];
-	if(m2==0)printf("No");
-	else printf("%d",m2);
+	if(m2==0)my_printf("No");
+	else my_printf("%d",m2);
 }

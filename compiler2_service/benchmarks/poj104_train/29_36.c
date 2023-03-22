@@ -10,10 +10,10 @@ int main_bench()
 		else if(i==2){a[i]=2;}
 		else {a[i]=a[i-1]+a[i-2];}
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		sum[i]=0;
 		for(j=0;j<k;j++)
 		{
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%.3f\n",sum[i]);
+		my_printf("%.3f\n",sum[i]);
 	}
 	return 0;
 }

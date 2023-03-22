@@ -67,13 +67,13 @@ int i,j;
  }
  i=strcmp(str1,str2);
  if(i==0){
-	 printf("=\n");
+	 my_printf("=\n");
  }
  if(i<0){
-	 printf("<\n");
+	 my_printf("<\n");
  }
  if(i>0){
-	 printf(">\n");
+	 my_printf(">\n");
  }
 	return 0;
 }

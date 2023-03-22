@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int i,a[300]={0},m,n;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<300;i++)
-		scanf(",%d",&a[i]);
+		my_scanf(",%d",&a[i]);
 	if(a[1]<a[0])
 	{
 		m=a[0];
@@ -27,11 +27,11 @@ int main_bench()
 		n=a[i];
 	}
 	if(n==0)
-		printf("No");
+		my_printf("No");
 	else if(m==n)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",n);
+		my_printf("%d",n);
 	
 
 	return(0);

@@ -29,19 +29,19 @@ int main_bench()
                                      }
                       if((same==1)&&(i+la==ls||s[i+la]==' ')){
                                    for(k=hh;k<head;k++)
-                                   printf("%c",s[k]);
+                                   my_printf("%c",s[k]);
                                    for(k=0;k<lb;k++)
-                                   printf("%c",b[k]);
+                                   my_printf("%c",b[k]);
                                    hh=end+1;
                                    sum=1;
                                   }
                       }
     if(sum==0){
-                printf("%s",s);
+                my_printf("%s",s);
                 }
     if(sum==1){
                 for(i=hh;i<ls;i++)
-                printf("%c",s[i]);
+                my_printf("%c",s[i]);
                 }
      return 0;
 }

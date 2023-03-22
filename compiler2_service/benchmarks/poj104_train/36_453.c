@@ -5,7 +5,7 @@ int main_bench()
 	int i,pa[58]={0},pb[58]={0};
 	char a[100]={0},b[100]={0},*p,*q;
 	p=a;q=b;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	
 	
 	for (p=a;*p!='\0';p++)
@@ -16,10 +16,10 @@ int main_bench()
 	{
 		if(pa[i]!=pb[i])
 		{
-			printf("NO");
+			my_printf("NO");
 			break;
 		}
 	}
 		if(i==58)
-			printf("YES");
+			my_printf("YES");
 }

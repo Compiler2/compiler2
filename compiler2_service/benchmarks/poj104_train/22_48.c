@@ -5,7 +5,7 @@ int main_bench()
 	int l,i,j,k=0,tp=0;
 	int f[300];
 	char str[300];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	l=strlen(str);
 	for(i=0;i<l;i++)
 	{
@@ -34,18 +34,18 @@ int main_bench()
 		}
 	}
 	if(k==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=1;i<k;i++)
 		{
 			if(f[i-1]>f[i])
 			{
-				printf("%d",f[i]);
+				my_printf("%d",f[i]);
 				break;
 			}
 		}
 		if(i==k)
-			printf("No");
+			my_printf("No");
 	}
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 char (*pi)[81];
 int i,m,n,j,ok=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 pi=(char(*)[81])calloc(n,sizeof(char)*81);
 gets(*pi);
 for (i=0;i<n;i++)
@@ -20,7 +20,7 @@ for (i=0;i<n;i++)
 				ok=0;
 	else
 		ok=0;
-    printf("%d\n",ok);
+    my_printf("%d\n",ok);
 }
 free(pi);
 return 0;

@@ -4,10 +4,10 @@ int main_bench()
 {
     char a[20],*p;
     int n,i,l;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-    	scanf("%s",a);
+    	my_scanf("%s",a);
     	p=a;
     	l=strlen(a)-1;
     	if(*(p+l)=='r')
@@ -37,7 +37,7 @@ int main_bench()
     		*(p+l)='\0';
     		*(p+l-1)='\0';
     	}
-    	printf("%s\n",p);
+    	my_printf("%s\n",p);
     }
     return 0;
 }

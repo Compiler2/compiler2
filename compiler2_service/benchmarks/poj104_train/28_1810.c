@@ -23,9 +23,9 @@ a[0]=-1;
   for(i=1;i<=e;i++)
   {
                if(a[i]-a[i-1]-1!=0)
-               printf("%d,",a[i]-a[i-1]-1);
+               my_printf("%d,",a[i]-a[i-1]-1);
   }
-  printf("%d",m-1-a[e]);
+  my_printf("%d",m-1-a[e]);
                               
 
   return 0;

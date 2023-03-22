@@ -5,7 +5,7 @@ int main_bench()
 for(i=0;i<505;i++)
 {c[i]=0; d[i]=0;}
 char a[505],b[505][6];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 gets(a);
 t=strlen(a);
 for(i=0;i<=t-n;i++)
@@ -20,9 +20,9 @@ for(j=0;j<t-n-i;j++)
 if(c[j]>c[j+1]) {s=c[j];c[j]=c[j+1];c[j+1]=s;}
 
 
-if(c[t-n]==0) printf("NO");
+if(c[t-n]==0) my_printf("NO");
 else
-{printf("%d\n",c[t-n]+1);
+{my_printf("%d\n",c[t-n]+1);
 for(j=0;j<=t-n;j++)
 if(d[j]==c[t-n]) puts(b[j]);
 }

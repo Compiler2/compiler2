@@ -4,11 +4,11 @@ int main_bench()
 {
 int i,n,a,j,s;
 int b[100];
-scanf("%d",&n);
+my_scanf("%d",&n);
 int c[200];
 
 for(i=0;i<n;i++)
-{scanf("%d",&c[i]);}
+{my_scanf("%d",&c[i]);}
 
 for(i=0;i<n;i++)
 {               
@@ -26,7 +26,7 @@ b[j+2]=b[j]+b[j+1];
 s=b[c[i]-1];
 }
 }
-printf("%d\n",s);
+my_printf("%d\n",s);
 }
 
 }

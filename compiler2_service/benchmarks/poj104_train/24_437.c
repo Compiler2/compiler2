@@ -24,10 +24,10 @@ int main_bench()
 	sum2=sum2+num[j];
 	for (i=sum1+max;i<sum1+max+num[max];i++)
 
-	printf ("%c",str[i]);
-	printf("\n");
+	my_printf ("%c",str[i]);
+	my_printf("\n");
 	for (i=sum2+min;i<sum2+min+num[min];i++)
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 
 		
 

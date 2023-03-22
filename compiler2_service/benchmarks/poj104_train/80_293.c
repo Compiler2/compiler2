@@ -4,7 +4,7 @@ int main_bench()
 {
 	int sy,sm,sd,ey,em,ed,i=0,j=0,m=0;
 	long int n;
-	scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
+	my_scanf("%d %d %d\n%d %d %d",&sy,&sm,&sd,&ey,&em,&ed);
 	n=-sd+ed;
 	while(i<=sm-1){
 	   switch(i){
@@ -57,6 +57,6 @@ int main_bench()
 		}
 		m=m+1;
 	}
-	printf("%ld\n",n);
+	my_printf("%ld\n",n);
 }
 	

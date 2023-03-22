@@ -11,10 +11,10 @@ int mon(int m){
 
 int main_bench(){
     int w , ww , i = 13 , m ;
-    scanf("%d" , &w );
+    my_scanf("%d" , &w );
     for( m = 1 ; m <= 12 ; m = m + 1 ){
         ww = ( i - 1 + w ) % 7;
-        if ( ww == 5 ) printf("%d\n" , m );
+        if ( ww == 5 ) my_printf("%d\n" , m );
         i = i + mon(m);
     }
     return(0);

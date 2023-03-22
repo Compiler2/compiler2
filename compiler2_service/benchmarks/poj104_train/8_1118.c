@@ -2,12 +2,12 @@
 
 int read(int a[200],int b[100])
 {int m,n,i;
-scanf("%d %d",&m,&n);
+my_scanf("%d %d",&m,&n);
 a[0]=m;b[0]=n;
 for(i=1;i<=m;i++)
-scanf(" %d",&a[i]);
+my_scanf(" %d",&a[i]);
 for(i=1;i<=n;i++)
-scanf(" %d",&b[i]);
+my_scanf(" %d",&b[i]);
 return 0;
 }
 int seq(int a[200])
@@ -26,9 +26,9 @@ a[i]=b[i-m];
 return 0;}
 int see(int a[200])
 {int i;
-printf("%d",a[1]);
+my_printf("%d",a[1]);
 for(i=2;i<=a[0];i++)
-printf(" %d",a[i]);
+my_printf(" %d",a[i]);
 return 0;}
 int main_bench()
 {int a[200],b[100];

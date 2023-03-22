@@ -4,15 +4,15 @@ int main_bench()
 {
 	int f(int a,int min);
 	int n,a[150],i,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
 		b=f(a[i],2);
-		printf("%d\n",b);
+		my_printf("%d\n",b);
 	}
 	return 0;
 }

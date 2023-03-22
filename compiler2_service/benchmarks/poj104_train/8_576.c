@@ -22,16 +22,16 @@ output(int m,int x[])
 	int i;
 	for(i=1;i<=m;i++)
 	{
-		if(flag)printf(" ");
-		printf("%d",x[i]);
+		if(flag)my_printf(" ");
+		my_printf("%d",x[i]);
 		flag=1;
 	}
 }
 main_bench()
 {
-	scanf("%d%d",&n1,&n2);
-for(k=1;k<=n1;k++)scanf("%d",&a[k]);
-for(k=1;k<=n2;k++)scanf("%d",&b[k]);
+	my_scanf("%d%d",&n1,&n2);
+for(k=1;k<=n1;k++)my_scanf("%d",&a[k]);
+for(k=1;k<=n2;k++)my_scanf("%d",&b[k]);
 	paixu(n1,a);
 	paixu(n2,b);
 	output(n1,a);

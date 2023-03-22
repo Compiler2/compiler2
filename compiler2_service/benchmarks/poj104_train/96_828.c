@@ -13,11 +13,11 @@ int main_bench()
 	}
 	if(e==2&&(b[0]==1&&b[1]<3))
 	{
-		printf("0\n%d",10*b[0]+b[1]);
+		my_printf("0\n%d",10*b[0]+b[1]);
 	}
 	else if(e==1)
 	{
-		printf("0\n%d",b[0]);
+		my_printf("0\n%d",b[0]);
 	}
 	else{
 	c[0]=b[0]*10+b[1];
@@ -36,17 +36,17 @@ int main_bench()
 	{
 		for(j=1;j<e-1;j++)
 		{
-			printf("%d",d[j]);
+			my_printf("%d",d[j]);
 		}
 	}
 	else
 	{
 		for(j=0;j<e-1;j++)
 		{
-			printf("%d",d[j]);
+			my_printf("%d",d[j]);
 		}
 	}
-	printf("\n");
-	printf("%d",c[e-2]);}
+	my_printf("\n");
+	my_printf("%d",c[e-2]);}
 	return 0;
 }

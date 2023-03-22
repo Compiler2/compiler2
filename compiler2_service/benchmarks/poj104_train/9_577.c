@@ -3,12 +3,12 @@
 main_bench()
 {
      int n,j,k,t;
-     scanf ("%d",&n);
+     my_scanf ("%d",&n);
      char a[n][10];
      char p[1][10]; 
      int g[n];
      for (j=0;j<n;j++)
-     scanf ("%s %d",a[j],&g[j]);
+     my_scanf ("%s %d",a[j],&g[j]);
         for (j=n-1;j>0;j--)
          for (k=n-1;k>n-j-1;k--)
         {
@@ -26,7 +26,7 @@ main_bench()
              }
          }  
           for (k=0;k<n;k++)         
-      printf ("%s\n",a[k]);
+      my_printf ("%s\n",a[k]);
      getchar ();
      getchar ();
      }

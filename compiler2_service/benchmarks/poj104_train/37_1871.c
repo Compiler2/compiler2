@@ -3,11 +3,11 @@
 main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 	  char a[100001]	;
-	  scanf("%s",a);
+	  my_scanf("%s",a);
 	  int k,j,p,q=0,count;
 	  p=strlen(a);
 	  for(k=0;k<p-1;k++)
@@ -22,9 +22,9 @@ main_bench()
 	  			count=0;
 	  		}
 	  	}
-	  	if (count==1) {printf("%c",a[k]);break;} 
+	  	if (count==1) {my_printf("%c",a[k]);break;} 
 	  }
-	  if (k==p-1) printf("no");
-	  printf("\n");
+	  if (k==p-1) my_printf("no");
+	  my_printf("\n");
 	}
 } 

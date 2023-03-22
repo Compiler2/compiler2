@@ -25,13 +25,13 @@ int main_bench()
 		len=strlen(pr[i]);
 		if(len!=0)
 		{
-			printf("%d,",len);
+			my_printf("%d,",len);
 		}
 	}
 	len=strlen(pr[n-1]);
 	if(len!=0)
 	{
-		printf("%d",len);
+		my_printf("%d",len);
 	}
 	return 0;
 }

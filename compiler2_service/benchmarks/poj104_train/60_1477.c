@@ -4,15 +4,15 @@ int main_bench()
 {
     int spp(int p);
     int n,i;
-    scanf("%d",&n);
-    if(n<=4) printf("empty");
+    my_scanf("%d",&n);
+    if(n<=4) my_printf("empty");
     else
     {    
         for(i=2;i<n;i++)
         {
             if(spp(i)==0)
             {
-                if(spp(i+2)==0) printf("%d %d\n",i,i+2);
+                if(spp(i+2)==0) my_printf("%d %d\n",i,i+2);
                 else continue;
             }
         }

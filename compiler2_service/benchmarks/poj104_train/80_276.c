@@ -5,8 +5,8 @@ int main_bench()
 {
 	int startyear,endyear,startmonth,endmonth,startday,endday,i,answer;
 	long int sumdays1=0,sumdays2=0;
-	scanf("%d%d%d",&startyear,&startmonth,&startday);
-	scanf("%d%d%d",&endyear,&endmonth,&endday);
+	my_scanf("%d%d%d",&startyear,&startmonth,&startday);
+	my_scanf("%d%d%d",&endyear,&endmonth,&endday);
 	for(i=1;i<startyear;i++)
 	{
 		if((i%4==0&&i%100!=0)||(i%400==0))
@@ -152,6 +152,6 @@ int main_bench()
 	}
 	sumdays2+=endday;
 	answer=sumdays2-sumdays1;
-	printf("%d",answer);
+	my_printf("%d",answer);
 	return 0;
 }

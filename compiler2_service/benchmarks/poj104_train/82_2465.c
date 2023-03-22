@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,n,i,j,c;
 	c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a1[100];
 	for(j=0;j<100;j++)
 	{
@@ -14,7 +14,7 @@ int main_bench()
 	{
 		a=0;
 		b=0;
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(a>89&&a<141&&b>59&&b<91)
 		{
 			a1[i+1]=a1[i]+1;
@@ -32,7 +32,7 @@ int main_bench()
 			c=a1[i];
 		}
          }
-    printf("%d",c);
+    my_printf("%d",c);
 	return 0;
 	
 }

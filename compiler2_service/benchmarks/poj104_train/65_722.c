@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[200],b[200],i,sum1=0,sum2=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]==b[i]){
 			sum1=sum1+1;
 			sum2=sum2+1;
@@ -17,13 +17,13 @@ int main_bench(){
 		}
 	}
 	if(sum1>sum2){
-		printf("A");
+		my_printf("A");
 	}
 	if(sum1<sum2){
-		printf("B");
+		my_printf("B");
 	}
 	if(sum1==sum2){
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

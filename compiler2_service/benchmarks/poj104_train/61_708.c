@@ -6,11 +6,11 @@ int main_bench()
 	int sz[100];
 	int m;
 	int sum=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int shuru[100];
 	for(int i=0;i<m;i++)
 	{
-		scanf("%d",&(shuru[i]));
+		my_scanf("%d",&(shuru[i]));
 	}
 	for(int h=0;h<m;h++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 		}
 		sum=sz[j];
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 	}
 

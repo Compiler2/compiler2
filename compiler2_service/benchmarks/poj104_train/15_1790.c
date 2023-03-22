@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,s[1000][1000],i,j,a,b,c,d,log=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -46,6 +46,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",(c-a-1)*(d-b-1));
+	my_printf("%d",(c-a-1)*(d-b-1));
 	return 0;
 }

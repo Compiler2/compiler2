@@ -6,7 +6,7 @@ int main_bench()
 	int m[105];
 	int s[105];
     int i,a;
-    scanf("%s",n);
+    my_scanf("%s",n);
 	
     for(i=0;n[i]!='\0';i++)
     {
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	if(strlen(n)==1)
 	{
-		printf("%d",m[0]);
+		my_printf("%d",m[0]);
 	}
 	else{
 	for(i=0;i<strlen(n)-1;i++)
@@ -36,20 +36,20 @@ int main_bench()
 		{
 			if(m[i]!=0)
 			{
-		        printf("%d",m[i]);
+		        my_printf("%d",m[i]);
 			}
 			else 
 			{
 				if(strlen(n)==2)
-					printf("%d",m[i]);
+					my_printf("%d",m[i]);
 				else
 				continue;
 			}
 		}
 		if(i!=0)
-			printf("%d",m[i]);
+			my_printf("%d",m[i]);
 	}
 	}
-	printf("\n%d",a);
+	my_printf("\n%d",a);
         return 0;
 }

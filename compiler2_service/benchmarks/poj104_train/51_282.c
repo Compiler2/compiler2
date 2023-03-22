@@ -17,8 +17,8 @@ int main_bench()
 {
 	char a[600]={0},b[6]={0},c[500][6]={0};
 	int i,j,z=0,k,m,n,d[500]={0},max=0;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	while(a[z+n-1]!=0)
 	{
 	for(i=0;i<n;i++) b[i]=a[i+z];
@@ -27,10 +27,10 @@ int main_bench()
 	for(i=0;i<6;i++) b[i]=0;
 	}
 	for(i=0;d[i]!=0;i++) if(max<d[i]) max=d[i];
-	if(max==1) printf("NO");
+	if(max==1) my_printf("NO");
 	else
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	z=0;
 	for(i=0;d[i]!=0;i++)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 			for(j=i;j<i+n;j++) c[z][j-i]=a[j];
 			m=0;
 			for(k=0;k<z;k++) if(strcmp(c[z],c[k])==0) m++;
-			if(m==0) printf("%s\n",c[z]);
+			if(m==0) my_printf("%s\n",c[z]);
 			z++;
 		}
 	}

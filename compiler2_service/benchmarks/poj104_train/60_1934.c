@@ -3,9 +3,9 @@
 main_bench()
 {
 	int n,i,j,t,u,a[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<5)
-	printf("empty");
+	my_printf("empty");
 	else if(n>=5)
 	{
 		u=0;
@@ -29,7 +29,7 @@ main_bench()
 		for(i=1;i<u;i++)
 		{
 			if(a[i]-a[i-1]==2)
-			printf("%d %d\n",a[i-1],a[i]);
+			my_printf("%d %d\n",a[i-1],a[i]);
 		}
 	}
 }

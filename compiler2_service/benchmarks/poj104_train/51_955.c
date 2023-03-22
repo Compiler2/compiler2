@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int length;
 	char str[500];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	char son[500][5];
 	length=strlen(str);
 	int i,j;
@@ -45,14 +45,14 @@ int main_bench()
 			max=number[i];
 	}
 	if(max==1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<numson;i++)
 		{
 			if(number[i]==max)
-				printf("%s\n",son[i]);
+				my_printf("%s\n",son[i]);
 		}
 	}
 }

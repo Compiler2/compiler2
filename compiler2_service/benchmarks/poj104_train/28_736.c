@@ -21,12 +21,12 @@ int main_bench()
 			m=k;
 		}
 	}
-	if(m==0) printf("%d",*q);
+	if(m==0) my_printf("%d",*q);
 	else
 	{
 		for(i=0;i<m;i++)
-			printf("%d,",*(q+i));
-		printf("%d",*(q+m));
+			my_printf("%d,",*(q+i));
+		my_printf("%d",*(q+m));
 	}
 return 0;
 }

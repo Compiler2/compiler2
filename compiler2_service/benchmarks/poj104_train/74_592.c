@@ -9,7 +9,7 @@ int zhishu(int);
 int main_bench()
 {
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	int i,first=1,flag=1;
 	for(i=m;i<=n;i++)
 	{
@@ -17,19 +17,19 @@ int main_bench()
 		{
 			if(first)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				first=0;
 			}
 			else
 			{
-				printf(",%d",i);
+				my_printf(",%d",i);
 			}
 			flag=0;
 		}
 	}
 	if(flag)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	
 	return 0;

@@ -2,7 +2,7 @@
 
 int main_bench(){
   int a,n1,n2,n3,n4,n5,n6,b,c;
-  scanf("%d",&a);
+  my_scanf("%d",&a);
   n1=a/100;
   b=(a%100)/10;
     if(b>=5){
@@ -17,6 +17,6 @@ int main_bench(){
     c=a%10;
     n5=c/5;
     n6=c%5;
-  printf("%d\n%d\n%d\n%d\n%d\n%d\n",n1,n2,n3,n4,n5,n6);
+  my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",n1,n2,n3,n4,n5,n6);
   return 0;
 }

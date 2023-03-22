@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,i,j,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct qj{
 		int x,y;}
 	qj[50000];
 	for(i=0;i<n;i++){
-		scanf("%d%d",&qj[i].x,&qj[i].y);}
+		my_scanf("%d%d",&qj[i].x,&qj[i].y);}
 	for(i=n-1;i>0;i--){
 		for(j=0;j<i;j++){
 			if(qj[j].x>qj[j+1].x){
@@ -22,10 +22,10 @@ int main_bench(){
 	for(i=0;i<n-1;i++){
 		if(qj[i+1].y>m){
 			if(qj[i+1].x>m){
-				printf("no");
+				my_printf("no");
 				return 0;}
 			m=qj[i+1].y;}}
-	printf("%d %d",qj[0].x,m);
+	my_printf("%d %d",qj[0].x,m);
 	return 0;
 }
         

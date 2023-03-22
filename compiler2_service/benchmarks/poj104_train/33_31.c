@@ -6,7 +6,7 @@ struct DNA{
 int main_bench()
 {
 	int n,i,j,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 	gets(a[i].zfc);   
 		t=strlen(a[i].zfc);

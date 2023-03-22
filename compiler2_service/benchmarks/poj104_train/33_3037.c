@@ -3,7 +3,7 @@
 int main_bench(){
 	int i,n,j;
     char a[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n;i++){
 		gets(a);
 		for(j=0;j<strlen(a);j++){
@@ -20,7 +20,7 @@ int main_bench(){
 			        a[j]='C';}
 			}
 		}
-	    printf("%s\n",a);
+	    my_printf("%s\n",a);
 	}
 	return 0;
 }

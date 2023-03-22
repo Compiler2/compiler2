@@ -19,10 +19,10 @@ int main_bench()
 	{
 		xulie[i]=(double)fenzi[i]/fenmu[i];
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -33,7 +33,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	return 0;
 }

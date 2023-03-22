@@ -3,9 +3,9 @@
 int main_bench()
 {   int i,n,m,j;
 	double a,b,s,x,y;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-	   scanf("%d",&n);
+	   my_scanf("%d",&n);
 	   a=2.000;
 	   b=1.000;
 	   s=0;
@@ -16,7 +16,7 @@ int main_bench()
 		  b=x;
 		  a=y;
 	   }
-	   printf("%.3lf\n",s);
+	   my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

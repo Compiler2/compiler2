@@ -5,11 +5,11 @@ int main_bench()
 	int n,i,max=0;
 	int x=0;
 	int sz[100],sc[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-      scanf("%d%d",&sz[i],&sc[i]);
+      my_scanf("%d%d",&sz[i],&sc[i]);
 	}
 
 
@@ -36,7 +36,7 @@ int main_bench()
 			max=x;
 		}
 
-        printf("%d",max);
+        my_printf("%d",max);
 	
 	return 0;
 }

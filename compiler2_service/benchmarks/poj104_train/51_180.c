@@ -4,7 +4,7 @@ int main_bench()
 {
 	char c[505]={0},str[505][6]={'\0'};
 	int n,len,i,j,k,v,f[505]={0},count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	gets(c);
 	for(len=0;c[len]!='\0';len++);
@@ -61,13 +61,13 @@ int main_bench()
 												break;
 											}
 										}
-										if(count<=1) {printf("NO\n");return 0;}
-										printf("%d\n",count);
+										if(count<=1) {my_printf("NO\n");return 0;}
+										my_printf("%d\n",count);
 	for(i=0;c[i+n-1]!='\0';i++)
 	{
 		if(f[i]==max)
 		{
-			printf("%s\n",str[i]);
+			my_printf("%s\n",str[i]);
 		}
 	}
 	return 0;

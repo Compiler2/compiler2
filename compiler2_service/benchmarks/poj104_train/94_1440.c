@@ -2,12 +2,12 @@
 
 int main_bench(){
 int i,n,m,l,p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n],b[n];
 m=0;
 p=1;
 for(i=0;i<n;i++){
-   scanf("%d",&a[i]);
+   my_scanf("%d",&a[i]);
    if(a[i]%2==1){
    b[m]=a[i];
       if(p<b[m]){
@@ -19,10 +19,10 @@ for(i=0;i<n;i++){
 for(i=1;i<p;i=i+2){
    for(l=0;l<m;l++){
       if(b[l]==i){
-       printf("%d,",b[l]);
+       my_printf("%d,",b[l]);
        }
     }
 }
-printf("%d",p);
+my_printf("%d",p);
 return 0;
 }

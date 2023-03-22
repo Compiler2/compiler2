@@ -12,11 +12,11 @@ int main_bench()
 		if(c[i]==' '&&t==0)  j=j+1,t=1;
 		else if(c[i]!=' ')  a[j]=a[j]+1,t=0;
 	}
-	if(j==0) printf("%d",a[0]);
+	if(j==0) my_printf("%d",a[0]);
 	else if(j>0)
 	{
-	   printf("%d",a[0]);
+	   my_printf("%d",a[0]);
 	   for(k=1;k<=j;k++)
-		  printf(",%d",a[k]);
+		  my_printf(",%d",a[k]);
 	}
 }

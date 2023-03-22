@@ -4,13 +4,13 @@
 int main_bench()
 {
 	int i,j,n,m=0,k=0,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[1000][1000];
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -39,7 +39,7 @@ int main_bench()
 				break;
 		}
             p=m*k-2*m-2*k+4;
-			printf("%d\n",p);
+			my_printf("%d\n",p);
 
 	return 0;
 }

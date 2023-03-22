@@ -3,7 +3,7 @@
 int main_bench()
 {  int same,i,j,k;
     char str[256],sub[256],repl[256];
-   scanf("%s%s%s",str,sub,repl);
+   my_scanf("%s%s%s",str,sub,repl);
    for(i=0;i<strlen(str);i++)
    { same=1;
      for(j=0;j<strlen(sub);j++)
@@ -11,11 +11,11 @@ int main_bench()
       same=0;
      }
      if(same==0)
-     printf("%c",str[i]);
+     my_printf("%c",str[i]);
      if(same==1)
-     { printf("%s",repl);
+     { my_printf("%s",repl);
        for(k=i+strlen(sub);str[k]!=0;k++)
-       {printf("%c",str[k]);}
+       {my_printf("%c",str[k]);}
        break;
      }
    }

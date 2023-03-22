@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zfc[300];
 int len;
 
     for(int i=0;i<n;i++){
-    scanf("%s",zfc);
+    my_scanf("%s",zfc);
     
  
     
@@ -23,7 +23,7 @@ int len;
          else if(zfc[j]=='C')
            zfc[j]='G';
 }
-          printf("%s\n",zfc);
+          my_printf("%s\n",zfc);
      
 }
      return 0;

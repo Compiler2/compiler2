@@ -4,12 +4,12 @@ int main_bench()
 {
   int dawang(int n,int m);
   int a,b,boss;
-  scanf("%d %d",&a,&b);
+  my_scanf("%d %d",&a,&b);
   while (a!=0)
   {
      boss=dawang(a,b);
-  printf("%d\n",boss);
-  scanf("%d %d",&a,&b);
+  my_printf("%d\n",boss);
+  my_scanf("%d %d",&a,&b);
   }
 
 }

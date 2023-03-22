@@ -4,15 +4,15 @@
 int main_bench()
 {
 	int a,b,c,x,y,z,sum=0,p,q,w,r,k;
-	scanf("%d%d%d",&a,&b,&c);
-	scanf("%d%d%d",&x,&y,&z);
+	my_scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&x,&y,&z);
 	r=y-1;
 	p=x-1;
 	
 	if(a==x)
 	{if(b==y)
 	{sum=z-c;
-	printf("%d",sum);}
+	my_printf("%d",sum);}
 	else
 	{for(r=r;r>=b;r--)
 	{	if((r%2==0)&&(r>7))
@@ -28,7 +28,7 @@ int main_bench()
 	else if((r==2)&&(x%4!=0||(x%100==0&&x%400!=0)))
 		sum=sum+28;
 	sum=sum-c+z;
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 	}}}
 	
@@ -73,7 +73,7 @@ int main_bench()
 		sum=sum+28;
 	}
 	sum=sum+z;
-	printf("%d",sum);}
+	my_printf("%d",sum);}
 	return 0;
 }
 

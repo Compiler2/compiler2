@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int m[100],n[100],i,j,a,k,sz[100][100],sum[100]={0};
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(a=0;a<k;a++)
 	{
-		scanf("%d%d",&m[a],&n[a]);
+		my_scanf("%d%d",&m[a],&n[a]);
 		for(i=0;i<m[a];i++)
 		{
 			for(j=0;j<n[a];j++)
 			{
-				scanf("%d",&sz[i][j]);
+				my_scanf("%d",&sz[i][j]);
 			}
 		}
 	     if(m[a]!=1&&n[a]!=1)
@@ -39,7 +39,7 @@ int main_bench()
 		 }
 	}
 		for(a=0;a<k;a++)
-		printf("%d\n",sum[a]);
+		my_printf("%d\n",sum[a]);
 	
 		return 0;
 }

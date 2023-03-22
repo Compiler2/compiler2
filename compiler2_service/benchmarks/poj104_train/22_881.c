@@ -4,14 +4,14 @@ int main_bench()
 {
 int a,b,f,g,i,c[300];
 char d[300];
-scanf("%d",&c[0]);
+my_scanf("%d",&c[0]);
 
 
 a=c[0];b=-100;
 f=0;
 g=0;
 for(i=1;i<300;i++)
- {scanf("%c%d",&d[i],&c[i]);
+ {my_scanf("%c%d",&d[i],&c[i]);
   if(d[i]=='\n')  {break;}
   else
     {f=f+1;
@@ -19,8 +19,8 @@ for(i=1;i<300;i++)
    else if(c[i]<a&&c[i]>b) {b=c[i];g=g+1;}
     }
   }
-if(f==0||g==0) printf("No");
+if(f==0||g==0) my_printf("No");
 else
- printf("%d",b);
+ my_printf("%d",b);
 return 0;
 }

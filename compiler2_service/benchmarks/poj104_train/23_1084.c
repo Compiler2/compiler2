@@ -18,6 +18,6 @@ int main_bench()
 	}
 
 	for(i=k-1;i>0;i--)
-		printf("%s ",a[i]);
-	printf("%s",a[0]);
+		my_printf("%s ",a[i]);
+	my_printf("%s",a[0]);
 }

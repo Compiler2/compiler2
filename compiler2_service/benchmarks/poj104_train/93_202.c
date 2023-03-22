@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,a,b,c,sum;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n%3==0)
     a=3;
     else
@@ -19,14 +19,14 @@ int main_bench()
     sum=a+b+c;
     switch(sum)
     {
-    case 0:printf("n");break;
-    case 7:printf("7");break;
-    case 5:printf("5");break;
-    case 3:printf("3");break;
-    case 12:printf("5 7");break;
-    case 8:printf("3 5");break;
-    case 10:printf("3 7");break;
-    case 15:printf("3 5 7");break;
+    case 0:my_printf("n");break;
+    case 7:my_printf("7");break;
+    case 5:my_printf("5");break;
+    case 3:my_printf("3");break;
+    case 12:my_printf("5 7");break;
+    case 8:my_printf("3 5");break;
+    case 10:my_printf("3 7");break;
+    case 15:my_printf("3 5 7");break;
     return 0;
     }
 }

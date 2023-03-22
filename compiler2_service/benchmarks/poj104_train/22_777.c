@@ -4,19 +4,19 @@ int main_bench()
 {
 	int a[400],i,p,q=0,t,c;char h;
 	i=0;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	i=1;
 	while(i<400)
 	{
-		scanf("%c",&h);
+		my_scanf("%c",&h);
 		if(h==',')
-		{scanf("%d",&a[i]);
+		{my_scanf("%d",&a[i]);
 		i++;}
 		else
 		{c=i;break;}
 	}
 	if(c==1)
-	{printf("No");}
+	{my_printf("No");}
 	else 
 	{
 		if(a[1]>a[0])
@@ -35,10 +35,10 @@ int main_bench()
 		}
 	    if(q!=0)
 		{
-		     printf("%d",q);
+		     my_printf("%d",q);
 		}
 	    else
-		{printf("No");}
+		{my_printf("No");}
 	}
 	return 0;
 }

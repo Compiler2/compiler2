@@ -3,7 +3,7 @@
 int main_bench()
 {
 int m,n;
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 
 int shu[1000];
 int shushu=1;
@@ -54,15 +54,15 @@ else
 }
 
 if(shu[1]==0)
-{printf("no");}
+{my_printf("no");}
 else
 {
 int p=1;
 for(;p<(shushu-1);p++)
-{printf("%d,",shu[p]);
+{my_printf("%d,",shu[p]);
 }
 
-printf("%d",shu[p]);
+my_printf("%d",shu[p]);
 }
 
 

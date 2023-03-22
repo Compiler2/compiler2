@@ -9,7 +9,7 @@ int main_bench()
  
 {
 
-   scanf("%d",&n);
+   my_scanf("%d",&n);
 
     for(i=0;i<n;i++)
 
@@ -23,11 +23,11 @@ int main_bench()
 
    {
 
-      scanf("%d",&b[i]);
+      my_scanf("%d",&b[i]);
 
       sz[i][0]=b[i];
  
-      for(l=0;l<b[i];l++)  scanf("%d",&(sz[i][l+1]));
+      for(l=0;l<b[i];l++)  my_scanf("%d",&(sz[i][l+1]));
 
    }
 
@@ -95,7 +95,7 @@ int main_bench()
 
 for(i=0;i<n;i++)
 
- printf("%d\n",a[i]);
+ my_printf("%d\n",a[i]);
 
  return 0;
 

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,year,leap,i,j,k,m1,m2,re,q,tmp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
-		scanf("%d%d%d",&year,&m1,&m2);
+		my_scanf("%d%d%d",&year,&m1,&m2);
 		if(m1>m2)
 		{
 			tmp=m1;
@@ -47,9 +47,9 @@ int main_bench()
 				re=0;
 		}
 		if(re==1)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

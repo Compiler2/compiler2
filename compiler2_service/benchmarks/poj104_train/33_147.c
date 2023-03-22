@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char zf[1000][300];
 	for(i=0;i<n;i++){
-	    scanf("%s",zf[i]);
+	    my_scanf("%s",zf[i]);
         for(j=0;j<300;j++){
 			if((zf[i][j])=='A'){
 				zf[i][j]='T';
@@ -20,7 +20,7 @@ int main_bench()
 				break;
 			}
 		}
-            printf("%s\n",zf[i]);
+            my_printf("%s\n",zf[i]);
 	}
 	return 0;
 }

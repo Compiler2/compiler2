@@ -2,9 +2,9 @@
 
 int main_bench(){
   int n,i,k,e,t,s,a[50000],b[50000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-     scanf("%d %d",&a[i],&b[i]);
+     my_scanf("%d %d",&a[i],&b[i]);
   }
   for(k=1;k<=n;k++){
      for(i=0;i<n-k;i++){
@@ -32,7 +32,7 @@ s=0;
     }
   }
   if(t!=n-1){
-    printf("no");
+    my_printf("no");
   }else{
    for(k=1;k<=n;k++){
      for(i=0;i<n-k;i++){
@@ -43,7 +43,7 @@ s=0;
         }
      }
   }
-   printf("%d %d",a[0],b[0]);
+   my_printf("%d %d",a[0],b[0]);
   }
   return 0;
 }

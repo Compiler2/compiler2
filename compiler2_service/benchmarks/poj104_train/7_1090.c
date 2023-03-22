@@ -17,10 +17,10 @@ int main_bench()
 	}
 	if (n)
 	{
-		for (i=0;i<n;i++) printf("%c",w[i]);
-		printf("%s",t);
-		for (i=n+strlen(s);i<strlen(w);i++) printf("%c",w[i]);
+		for (i=0;i<n;i++) my_printf("%c",w[i]);
+		my_printf("%s",t);
+		for (i=n+strlen(s);i<strlen(w);i++) my_printf("%c",w[i]);
 	}
-	else printf("%s",w);
+	else my_printf("%s",w);
 	return 0;
 }

@@ -50,10 +50,10 @@ int main_bench()
 {
 	int la,lb;
 	char a[100],b[100];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	la=strlen(a);
 	lb=strlen(b);
-	if(la!=lb) printf("NO\n");
-	else if(deal(a,la,b,lb)) printf("YES\n");
-	else printf("NO\n");
+	if(la!=lb) my_printf("NO\n");
+	else if(deal(a,la,b,lb)) my_printf("YES\n");
+	else my_printf("NO\n");
 }

@@ -7,9 +7,9 @@ struct area{
 int main_bench(){
 	struct area area[50002],temp;
 	int n,i,j,s,e,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&area[i].start,&area[i].end);
+		my_scanf("%d%d",&area[i].start,&area[i].end);
 	}
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
@@ -33,8 +33,8 @@ int main_bench(){
 		}
 	}
 	if(flag)
-		printf("no");
+		my_printf("no");
 	else
-		printf("%d %d\n",s,e);
+		my_printf("%d %d\n",s,e);
 }
 

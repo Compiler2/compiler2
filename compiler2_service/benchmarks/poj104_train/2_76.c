@@ -11,11 +11,11 @@ int main_bench()
 	int tmp;
 
 
-	scanf("%d",&booknumber);
+	my_scanf("%d",&booknumber);
 
 	for(i=0;i<booknumber;i++)
 	{
-		scanf("%d%s",&order[i],author[i]);
+		my_scanf("%d%s",&order[i],author[i]);
 		for(j=0;j<strlen(author[i]);j++)
 		{
 			for(k=0;k<26;k++)
@@ -35,8 +35,8 @@ int main_bench()
 		if(author_booknumber[i]>author_booknumber[tmp])
 			tmp=i;
 	}
-	printf("%c\n",single_author[tmp]);
-	printf("%d\n",author_booknumber[tmp]);
+	my_printf("%c\n",single_author[tmp]);
+	my_printf("%d\n",author_booknumber[tmp]);
    
 	for(i=0;i<booknumber;i++)
 	{
@@ -44,7 +44,7 @@ int main_bench()
 		{
 			if(author[i][j]==single_author[tmp])
 			{
-				printf("%d\n",order[i]);
+				my_printf("%d\n",order[i]);
 				break;
 			}
 		}

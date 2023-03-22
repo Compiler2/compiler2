@@ -12,8 +12,8 @@ int main_bench()
 	int i,j;
 	int t;
 	gets(a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
 	for(i=0,j=0;i<=strlen(a);i++)
 	{
 		d[k++]=a[i];

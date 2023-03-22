@@ -3,14 +3,14 @@
 int main_bench()
 {
     int n,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int f(int);
     int (*p)(int);
     p=f;
     for(i=3;i<n/2+1;i=i+2)
     {   
       if((*p)(i)==1&&(*p)(n-i)==1)
-       printf("%d %d\n",i,n-i);
+       my_printf("%d %d\n",i,n-i);
      }
      getchar();
      getchar();

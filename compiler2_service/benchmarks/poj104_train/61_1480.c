@@ -4,13 +4,13 @@ int dijigeshu(int a);
 int main_bench(){
 	int x=1,y=1;
 	int n,a,b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		b[i]=dijigeshu(a);
 	}
 	for(int j=0;j<n;j++){
-		printf("%d\n",b[j]);
+		my_printf("%d\n",b[j]);
 	}
 	return 0;
 }

@@ -11,7 +11,7 @@ int main_bench()
 {
 	int i,f=0;
 	char s1[100],s2[100];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	count(s1,hash1);
 	count(s2,hash2);
 	for(i=0;i<500;i++)
@@ -19,6 +19,6 @@ int main_bench()
 		{
 			f=1;break;
 		}
-	if (f) printf("NO");
-	else printf("YES");
+	if (f) my_printf("NO");
+	else my_printf("YES");
 }

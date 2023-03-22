@@ -5,7 +5,7 @@ int main_bench()
 	int a[5][5],c,t=1,i,j,k,max,colum,row;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<5;i++)
 	{
 		max=a[i][0];
@@ -23,7 +23,7 @@ int main_bench()
 		for(k=0;k<5;k++){
 			if(a[k][colum]<a[row][colum])
 				c=0;}
-		if(c){printf("%d %d %d",row+1,colum+1,a[row][colum]);t=0;}
+		if(c){my_printf("%d %d %d",row+1,colum+1,a[row][colum]);t=0;}
 	}
-	if(t)printf("not found");
+	if(t)my_printf("not found");
 }

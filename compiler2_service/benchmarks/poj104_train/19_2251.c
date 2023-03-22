@@ -6,7 +6,7 @@ int main_bench()
 	char word_a[100],word_b[100];
 	
 	gets(zfc);
-	scanf("%s\n%s",word_a,word_b);
+	my_scanf("%s\n%s",word_a,word_b);
 	
 	int word_i = 0, word_j = 0;
 	int i,n;
@@ -40,10 +40,10 @@ int main_bench()
 	}
 	for(j=0;j<word_i;j++){
 		if(j!=word_i-1){
-			printf("%s ",zsz[j]);
+			my_printf("%s ",zsz[j]);
 		}
 		else
-			printf("%s",zsz[j]);
+			my_printf("%s",zsz[j]);
 	}
 	
     return 0;

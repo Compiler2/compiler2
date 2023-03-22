@@ -5,10 +5,10 @@ int main_bench()
 	int n, m;
 	int zs[120];
 	int i, ex;
-	scanf("%d", &n);
-	scanf("%d", &m);
+	my_scanf("%d", &n);
+	my_scanf("%d", &m);
 	for(i=0;i<n;i++)
-		scanf("%d", &(zs[i]));
+		my_scanf("%d", &(zs[i]));
 	int z=(1+n)/2;
 	for(i=0;i<z;i++)
 	{
@@ -31,7 +31,7 @@ int main_bench()
 		zs[i]=ex;
 	}
 	for(i=0;i<n-1;i++)
-		printf("%d ", zs[i]);
-	printf("%d\n", zs[n-1]);
+		my_printf("%d ", zs[i]);
+	my_printf("%d\n", zs[n-1]);
 	return 0;
 }

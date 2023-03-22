@@ -5,7 +5,7 @@ int main_bench()
 	int a[300],i,k,max1 = 0,max2 = -1;
 	for(i = 0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(getchar()!=',')
 			break;
 	}
@@ -20,7 +20,7 @@ int main_bench()
 			max2 = a[k];
 	}
 	if(max2>-1)
-		printf("%d\n",max2);
+		my_printf("%d\n",max2);
 	else
-		printf("No\n");
+		my_printf("No\n");
 }

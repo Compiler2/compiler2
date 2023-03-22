@@ -24,11 +24,11 @@ int main_bench()
 		if(flag==1)
 		{
 			for(k=0;k<i;k++)
-				printf("%c",str[k]);
+				my_printf("%c",str[k]);
 			for(k=0;k<lr;k++)
-				printf("%c",rep[k]);
+				my_printf("%c",rep[k]);
 			for(k=i+lo;k<ls;k++)
-				printf("%c",str[k]);
+				my_printf("%c",str[k]);
 			return 0;
 		}
 	}

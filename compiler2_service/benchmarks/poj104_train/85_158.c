@@ -4,14 +4,14 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char s[100];
 int m;
 int i;
 int p;
 for(i=1;i<=n;i++)
 {
-	scanf("%s",s);
+	my_scanf("%s",s);
 	for(m=0;s[m];m++)
 	{
 		if((s[0]=='_')||(s[0]>='A'&&s[0]<='Z')||(s[0]>='a'&&s[0]<='z'))
@@ -30,9 +30,9 @@ for(i=1;i<=n;i++)
 		}
 	}
 	if(p==1)
-		printf("yes\n");
+		my_printf("yes\n");
 	else
-		printf("no\n");
+		my_printf("no\n");
 
 }
 			

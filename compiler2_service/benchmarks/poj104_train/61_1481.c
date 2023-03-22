@@ -5,9 +5,9 @@ int main_bench(){
 	int a[1000];
 	int b[1000];
 	int g[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	b[0]=1;
 	b[1]=1;
@@ -19,7 +19,7 @@ int main_bench(){
 		g[i]=b[c];
 	}
 	for(i=0;i<n;i++){
-		printf("%d\n",g[i]);
+		my_printf("%d\n",g[i]);
 	}
 	return 0;
 }

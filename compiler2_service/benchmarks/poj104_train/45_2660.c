@@ -3,7 +3,7 @@
 main_bench()
 {int i,j,k,m,n,t;
  char a[50];char b[50];
- scanf("%s %s",a,b);
+ my_scanf("%s %s",a,b);
  for(i=0;;i++)
   {for(j=0;;j++)
     {if(a[i]==b[j])
@@ -21,5 +21,5 @@ main_bench()
      }
      if((m-i)==(strlen(a))) break;
   }
-  printf("%d",t);
+  my_printf("%d",t);
 } 

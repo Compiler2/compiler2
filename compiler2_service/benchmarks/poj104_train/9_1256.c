@@ -10,10 +10,10 @@ int main_bench(){
     struct old t2[100];
     struct old t;
     int n,i,j=0,k=0,num60=0,num0=0,b[100]={0},p,num=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",ill[i].ID);
-        scanf("%d",&ill[i].age);
+        my_scanf("%s",ill[i].ID);
+        my_scanf("%d",&ill[i].age);
         if(ill[i].age>=60){
             t1[j]=ill[i];
             j++;
@@ -33,11 +33,11 @@ int main_bench(){
                 num=j;
             }
         }
-        printf("%s\n",t1[num].ID);
+        my_printf("%s\n",t1[num].ID);
         b[num]=1;
     }
     for(i=0;i<num0;i++){
-        printf("%s\n",t2[i].ID);
+        my_printf("%s\n",t2[i].ID);
     }
     return 0;
 }

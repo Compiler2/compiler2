@@ -4,9 +4,9 @@ int main_bench()
 {
     int sz[500],js[500];
     int n,i,k,x=0,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i=i+1){
-		scanf("%d ",&sz[i]);
+		my_scanf("%d ",&sz[i]);
 		}
 	for(i=0;i<n;i=i+1){
 		if(sz[i]%2==1){
@@ -24,8 +24,8 @@ int main_bench()
 			}
 		}
 	for(i=0;i<x;i=i+1){
-		if(i<x-1) printf("%d,",js[i]);
-		else if(i=x-1) printf("%d",js[i]);
+		if(i<x-1) my_printf("%d,",js[i]);
+		else if(i=x-1) my_printf("%d",js[i]);
 		}
     
     return 0;

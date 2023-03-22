@@ -5,38 +5,38 @@ int main_bench()
     int a;
     double b;
     char d;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     if(a%3==0&&a%5==0&&a%7==0)
     {
-      printf("3 5 7\n",b);
+      my_printf("3 5 7\n",b);
       }
     else if(a%3==0&&a%5==0)
     {
-      printf("3 5\n",b);
+      my_printf("3 5\n",b);
       }
     else if(a%3==0&&a%7==0)
     {
-         printf("3 7\n",b);
+         my_printf("3 7\n",b);
          }
     else if(a%5==0&&a%7==0)
     {
-         printf("5 7\n",b);
+         my_printf("5 7\n",b);
          }
     else if(a%3==0)
     {
-         printf("3\n",b);
+         my_printf("3\n",b);
          }
     else if(a%5==0)
     {
-         printf("5\n",b);
+         my_printf("5\n",b);
          }
     else if(a%7==0)
     {
-         printf("7\n",b);
+         my_printf("7\n",b);
          }
     else
     {
-        printf("n",d);
+        my_printf("n",d);
         }
     return 0;
 }

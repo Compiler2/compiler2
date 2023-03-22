@@ -19,10 +19,10 @@ int main_bench()
 		    continue;
 		}
 	}
-	printf("%d",m[0]);
+	my_printf("%d",m[0]);
 	for(i=1;i<=k;i++)
 	{
-		printf(",%d",m[i]);
+		my_printf(",%d",m[i]);
 	}
 	return 0;
 }

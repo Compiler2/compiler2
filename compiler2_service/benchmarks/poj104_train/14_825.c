@@ -8,9 +8,9 @@ int ID[100000],Chinese[100000],Maths[100000];
 int main_bench()
 {
 	int n,i,sum[100000],max1=0,max2=0,max3=0,num1,num2,num3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d %d %d",&stu.ID[i],&stu.Chinese[i],&stu.Maths[i]);
+	my_scanf("%d %d %d",&stu.ID[i],&stu.Chinese[i],&stu.Maths[i]);
 	}
 	i=0;
 	while(stu.ID[i]>0){
@@ -41,6 +41,6 @@ int main_bench()
 		}
 	i++;
 	}
-	printf("%d %d\n%d %d\n%d %d",stu.ID[num1],max1,stu.ID[num2],max2,stu.ID[num3],max3);
+	my_printf("%d %d\n%d %d\n%d %d",stu.ID[num1],max1,stu.ID[num2],max2,stu.ID[num3],max3);
 	return 0;
 }

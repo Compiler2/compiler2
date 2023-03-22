@@ -22,7 +22,7 @@ int main_bench() {
 	         }
 	    
 	          if(strcmp(str,b)==0){
-		         printf("%s\n",str);
+		         my_printf("%s\n",str);
 	    }
 	}
 	

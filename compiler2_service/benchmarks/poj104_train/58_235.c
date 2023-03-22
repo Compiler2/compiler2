@@ -20,15 +20,15 @@ int main_bench()
                             else
                                 {
                                     
-                                    printf("0\n");
+                                    my_printf("0\n");
                                     break;
                                 }
                         }
                     if(j==l)
-                        printf("1\n");
+                        my_printf("1\n");
                 }
             else
-                printf("0\n");
+                my_printf("0\n");
         }
     getchar();
 }

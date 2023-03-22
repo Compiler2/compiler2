@@ -7,10 +7,10 @@ int main_bench()
 {
     
     int i,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-        scanf("%d %d %d",&s[i].id,&s[i].a,&s[i].b);
+        my_scanf("%d %d %d",&s[i].id,&s[i].a,&s[i].b);
         s[i].c=s[i].a+s[i].b;
     }
 	for(i=1;i<n;i++)
@@ -42,7 +42,7 @@ int main_bench()
 	}
 	for(i=0;i<3;i++)
 	{
-		printf("%d %d\n",s[i].id,s[i].c);
+		my_printf("%d %d\n",s[i].id,s[i].c);
 	}
   return 0;
 }

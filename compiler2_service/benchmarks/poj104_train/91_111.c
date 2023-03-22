@@ -18,7 +18,7 @@ int main_bench()
 	{
 		n=a[j-1];
 		p=a[j];
-		printf("%c",n+p);
+		my_printf("%c",n+p);
 	}
 	return 0;
 }

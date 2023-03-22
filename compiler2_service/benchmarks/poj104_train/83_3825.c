@@ -6,12 +6,12 @@ int main_bench()
     double p, j, s;
     s=0;
     k=0;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int xf[100], df[100];
     for(i=0;i<=n-1;i++){
-        scanf("%d", &xf[i]);}
+        my_scanf("%d", &xf[i]);}
     for(i=0;i<=n-1;i++){
-        scanf("%d", &df[i]);}
+        my_scanf("%d", &df[i]);}
     for(i=0;i<=n-1;i++){
         if(df[i]>=90&&df[i]<=100)
             j=4.0;
@@ -37,6 +37,6 @@ int main_bench()
     k=k+xf[i];
     }
     p=(double)s/k;
-    printf("%.2lf", p);
+    my_printf("%.2lf", p);
     return 0;
 }

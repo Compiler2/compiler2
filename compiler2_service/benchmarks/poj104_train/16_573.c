@@ -4,7 +4,7 @@ int main_bench()
 {
  int n;
  int indiv,ten,hundred,thousand,ten_thousand,place;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(n>9999)
 	place=5;
  else if(n>999)
@@ -22,19 +22,19 @@ ten=(int)((n-10000*ten_thousand-1000*thousand-100*hundred)/10);
 indiv=(int)(n-10000*ten_thousand-1000*thousand-100*hundred-10*ten);
 switch(place)
 {case 5:
-        printf("%d%d%d%d%d\n",indiv ,ten,hundred,thousand,ten_thousand);
+        my_printf("%d%d%d%d%d\n",indiv ,ten,hundred,thousand,ten_thousand);
 		break;
 case 4:
-        printf("%d%d%d%d\n",indiv,ten,hundred,thousand);
+        my_printf("%d%d%d%d\n",indiv,ten,hundred,thousand);
 		break;
 case 3:
-        printf("%d%d%d\n",indiv,ten,hundred);
+        my_printf("%d%d%d\n",indiv,ten,hundred);
 		break;
 case 2:
-        printf("%d%d\n",indiv,ten);
+        my_printf("%d%d\n",indiv,ten);
 		break;
 case 1:
-        printf("%d\n",indiv);
+        my_printf("%d\n",indiv);
 		break;
 }
 }

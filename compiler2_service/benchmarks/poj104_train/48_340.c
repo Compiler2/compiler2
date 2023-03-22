@@ -20,12 +20,12 @@ void p(int a[9][9])
 int main_bench()
 {
 	int a[9][9]={0},m,n,i,j,k;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[4][4]=m;
 	for(k=0;k<n;k++)
 		p(a);
 	for(i=0;i<9;i++)
 		for(j=0;j<9;j++)
-			printf("%d%c",a[i][j],(j==8)?'\n':' ');
+			my_printf("%d%c",a[i][j],(j==8)?'\n':' ');
 }
 

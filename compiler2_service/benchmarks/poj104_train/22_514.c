@@ -9,11 +9,11 @@ int main_bench()
 		d[r]=-10000;
 		r++;
 	}while(r<300);
-	scanf("%d",&d[0]);
+	my_scanf("%d",&d[0]);
 	int i=1;
 	do
 	{
-		scanf(",%d",&d[i]);
+		my_scanf(",%d",&d[i]);
 		i++;
 	}while(i<300);
 	int b;
@@ -49,12 +49,12 @@ int main_bench()
 			i++;
 		}while(i<300);
 		if(b!=-10000)
-		{printf("%d\n",b);}
+		{my_printf("%d\n",b);}
 		else
-		{printf("No");}
+		{my_printf("No");}
 	}
 	else if(d[1]==-10000)
-	{printf("No");}
+	{my_printf("No");}
 	return 0;
 }
 		

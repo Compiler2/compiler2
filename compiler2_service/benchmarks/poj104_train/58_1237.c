@@ -12,7 +12,7 @@ int main_bench()
 	{
 		gets(input);
 		k=work(input);
-		printf("%d\n",work(input));
+		my_printf("%d\n",work(input));
 	}
 	return 0;
 }

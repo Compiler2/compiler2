@@ -16,7 +16,7 @@ int main_bench()
          b[i][j]=0;
         }
      }
-  scanf("%d%d",&m,&n);
+  my_scanf("%d%d",&m,&n);
   a[5][5]=m;
   
   for (k=1;k<=n;k++)
@@ -39,9 +39,9 @@ int main_bench()
               for ( j=1;j<=9;j++) 
               {
                   if (j!=9)
-                  printf("%d ",p1[i][j]);
+                  my_printf("%d ",p1[i][j]);
                   else 
-                  printf( "%d\n",p1[i][j]);
+                  my_printf( "%d\n",p1[i][j]);
               }
           }
   

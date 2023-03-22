@@ -10,11 +10,11 @@ int runnian(int y)
 int main_bench()
 {
 	int n,j,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int a[200],b[200],c[200];
-		scanf("%d%d%d",&a[i],&b[i],&c[i]);
+		my_scanf("%d%d%d",&a[i],&b[i],&c[i]);
 		int yue[12]={31,28,31,30,31,30,31,31,30,31,30,31};	
 		int sum=0;
 		if(runnian(a[i]))
@@ -32,10 +32,10 @@ int main_bench()
 		}
 		if(sum%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else
-		{printf("NO\n");}
+		{my_printf("NO\n");}
 	}
 	return 0;
 }

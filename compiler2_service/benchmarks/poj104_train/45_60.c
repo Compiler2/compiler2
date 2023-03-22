@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char s1[50],s2[50],s3[50];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
     int l=strlen(s1);
 	int i,j;
 	for(i=0;i<50;i++){
@@ -15,7 +15,7 @@ int main_bench()
 			s3[l]='\0';
 		}
 		if(strcmp(s1,s3)==0){
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 		else{

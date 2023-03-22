@@ -4,7 +4,7 @@ int main_bench()
 {
     char str[20]={0},substr[4]={0},max=0,medium[20]={0};
 	int i,j,length,mark;
-	while(scanf("%s%s",str,substr)==2)
+	while(my_scanf("%s%s",str,substr)==2)
 	{
         max=0;length=strlen(str); 
 		for(i=0;i<length;i++)
@@ -18,7 +18,7 @@ int main_bench()
 		}
         strcat(str,substr);
 		strcat(str,medium);
-		printf("%s\n",str);
+		my_printf("%s\n",str);
 		for(i=0;i<10;i++)
 		{
 			medium[i]=0;str[i]=0;

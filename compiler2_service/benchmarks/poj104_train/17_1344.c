@@ -32,8 +32,8 @@ int main_bench()
 				s[q]='$';
 			else
 				s[q]=' ';
-		printf("%s\n",ss);
-		printf("%s\n",s);
+		my_printf("%s\n",ss);
+		my_printf("%s\n",s);
 	}
 	return 0;
 }

@@ -27,10 +27,10 @@ int main_bench()
 	int n,i;
 	for(i=1;i<7;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n<0)
-			printf("-");
-		printf("%d\n",reverse(n));
+			my_printf("-");
+		my_printf("%d\n",reverse(n));
 	}
 	return 0;
 }

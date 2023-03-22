@@ -21,15 +21,15 @@ int main_bench(){
 	}
 	if(A!=-1){
 	for(i=0;i<A;i++){
-		printf("%c",X[i]);
+		my_printf("%c",X[i]);
 	}for(i=0;i<l2;i++){
-		printf("%c",Z[i]);
+		my_printf("%c",Z[i]);
 	}for(i=A+l1;i<l;i++){
-		printf("%c",X[i]);
+		my_printf("%c",X[i]);
 	}
 }else{
 	for(i=0;i<l;i++){
-		printf("%c",X[i]);
+		my_printf("%c",X[i]);
 	}
 }
 	return 0;

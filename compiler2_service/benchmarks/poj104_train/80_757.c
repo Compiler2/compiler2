@@ -5,8 +5,8 @@ int main_bench()
 	int days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int Days[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int y1,y2,m1,m2,d1=0,d2=0,e,f,i,s=0,g,h;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	g=y1,h=y2;
 
 	if((y1%4==0)&&(y1%100!=0)||(y1%400==0))
@@ -39,6 +39,6 @@ int main_bench()
 	  {s=f+366-e;}
 	  else {s=f+365-e;}
 	}
-   printf("%d",s);
+   my_printf("%d",s);
    return 0;
    }

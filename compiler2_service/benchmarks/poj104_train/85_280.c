@@ -4,10 +4,10 @@ main_bench()
 {
     int n,i,j,t;
 	char a[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		j=0;
 		t=0;
 		while(a[j]!='\0')
@@ -18,8 +18,8 @@ main_bench()
 		}
 		t=t+((a[0]<='9')&&(a[0]>='0'));
 		if(t==0)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 }

@@ -48,7 +48,7 @@ d=j;
         for (i=j;i<500;i++)
 	string[i][0]='\0';
  for (i=0;i<d;i++)
-	 printf("%s\n",string[i]);
+	 my_printf("%s\n",string[i]);
 }
 
 

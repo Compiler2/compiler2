@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a1,a2,a3,b1,b2,b3,t1,t2,d;
-	scanf("%d%d%d",&a1,&a2,&a3);
-	scanf("%d%d%d",&b1,&b2,&b3);
+	my_scanf("%d%d%d",&a1,&a2,&a3);
+	my_scanf("%d%d%d",&b1,&b2,&b3);
 	if ((a1%4==0&&a1%100!=0)||(a1%400==0))
 	{
 		if(a2<=2)
@@ -126,6 +126,6 @@ int main_bench()
 	}
          if ((b1-a1)>=100)
          d=d-1;
-	printf("%d\n",d);
+	my_printf("%d\n",d);
 	return 0;
 }

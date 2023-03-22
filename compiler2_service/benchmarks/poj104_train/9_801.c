@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,k,b[100],pos[100],t,m;
 	char a[100][11],temp[11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%s %d",a[i],&b[i]);
+	my_scanf("%s %d",a[i],&b[i]);
 	for(i=0;i<n;i++)
 	pos[i]=i;
 	for(i=0;i<n;i++)
@@ -28,7 +28,7 @@ int main_bench()
 	j=0;
 	while(b[j]>=60)
 	{
-		printf("%s\n",a[j++]);
+		my_printf("%s\n",a[j++]);
 	}
 	k=j;
 	for(i=k;i<n;i++)
@@ -45,6 +45,6 @@ int main_bench()
 		}
 	}
 	for(j=k;j<n;j++)
-	printf("%s\n",a[j]);
+	my_printf("%s\n",a[j]);
 	return 0;
 }

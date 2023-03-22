@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==1)
 	{
-		printf("End");
+		my_printf("End");
 	}
 	else
 	{
@@ -15,16 +15,16 @@ int main_bench()
 			if(n%2!=0)
 			{
 				a=n*3+1;
-				printf("%d*3+1=%d\n",n,a);
+				my_printf("%d*3+1=%d\n",n,a);
 			}
 			else
 			{
 				a=n/2;
-				printf("%d/2=%d\n",n,a);
+				my_printf("%d/2=%d\n",n,a);
 			}
 			n=a;
 		}
-		printf("End\n");
+		my_printf("End\n");
 	}
 	return 0;
 }

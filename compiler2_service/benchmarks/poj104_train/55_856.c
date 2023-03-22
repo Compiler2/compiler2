@@ -7,11 +7,11 @@ main_bench()
     long int q=0,w=0,p=0;
     char n[800];
     int m[1000];
-      scanf("%d",&a);
-      scanf("%s",n);
-      scanf("%d",&b);
+      my_scanf("%d",&a);
+      my_scanf("%s",n);
+      my_scanf("%d",&b);
      if(n[0]=='0')
-     printf("%c",'0');
+     my_printf("%c",'0');
     else
      {
             p=strlen(n);
@@ -45,10 +45,10 @@ main_bench()
              if(m[i]>9)
              {
                           m[i]=m[i]+'A'-10;
-                        printf("%c",m[i]);
+                        my_printf("%c",m[i]);
              }
                else 
-                         printf("%c",m[i]+'0');
+                         my_printf("%c",m[i]+'0');
                   
           }
           }

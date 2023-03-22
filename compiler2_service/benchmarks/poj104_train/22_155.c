@@ -6,7 +6,7 @@ int main_bench()
 	char c[50];
 	do
 	{
-		scanf("%d%c",&a[t],&c[t]);
+		my_scanf("%d%c",&a[t],&c[t]);
 		t++;
 	}
 	while(c[t-1]==',');
@@ -23,7 +23,7 @@ int main_bench()
 			k=k+0;
 	}
 	if(k==0)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(i=0;i<=t-1;i++)
@@ -41,7 +41,7 @@ int main_bench()
 			if((a[i]>lower)&&(a[i]<max))
 				lower=a[i];
 		}
-		printf("%d\n",lower);
+		my_printf("%d\n",lower);
 	}
 }
 

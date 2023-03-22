@@ -30,7 +30,7 @@ int main_bench()
                 {
                     ch[i]=0;
                     ch[j]=0;
-                    printf("%d %d\n",j,i);
+                    my_printf("%d %d\n",j,i);
                     break;
                 }
 

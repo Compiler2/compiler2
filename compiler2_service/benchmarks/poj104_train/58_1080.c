@@ -20,10 +20,10 @@ main_bench()
                              if(!( (a[0][j]>='a' && a[0][j]<='z') || (a[0][j]-'_'==0) || (a[0][j]>='0' && a[0][j]<='9') || (a[0][j]>='A' && a[0][j]<='Z') ))
                              break;
                         }
-              if(j==t) printf("1\n");
-              else printf("0\n");
+              if(j==t) my_printf("1\n");
+              else my_printf("0\n");
               }
-         else printf("0\n");
+         else my_printf("0\n");
       }
       getchar();getchar();getchar();getchar();
       } 

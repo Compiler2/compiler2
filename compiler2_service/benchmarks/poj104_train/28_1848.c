@@ -9,11 +9,11 @@ int main_bench()
 		if((a==' '||a=='\n')&&len!=0)
 		{
 			if(flag++)
-			{	printf(",%d",len);
+			{	my_printf(",%d",len);
 			len=0;
 			}
 			else
-			{	printf("%d",len);
+			{	my_printf("%d",len);
 			    len=0;
 			}
 		}

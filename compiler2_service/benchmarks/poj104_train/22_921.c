@@ -6,7 +6,7 @@ int main_bench()
   int n,a=-1,b=-1;
   while(c==',')
   {
-    scanf("%d%c",&n,&c);
+    my_scanf("%d%c",&n,&c);
     if(n>a)
     {
       b=a;
@@ -23,11 +23,11 @@ int main_bench()
   }
   if(b!=-1)
   {
-    printf("%d",b);
+    my_printf("%d",b);
   }
   else
   {
-    printf("No");
+    my_printf("No");
   }
   return 0;
 }

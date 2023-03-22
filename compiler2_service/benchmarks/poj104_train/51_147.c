@@ -7,7 +7,7 @@ int main_bench()
 	for(i=0;i<500;i++)
 		for(j=0;j<6;j++)
 			word[i][j]='\0';
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     gets(str);
 	len=strlen(str);
 	j=0;k=0;
@@ -31,21 +31,21 @@ int main_bench()
 	 }
 	for(i=0;i<k;i++)
 		if(count[i]!=0) break;
-	if(i==k) printf("NO");
+	if(i==k) my_printf("NO");
 	else
 	{
 	for(i=0;i<k;i++)
 	{
 		for(j=0;j<k;j++)
 			if(count[i]<count[j]) break;
-			if(j==k) {printf("%d\n",count[i]+1); printf("%s\n",word[i]);flag=1;}
+			if(j==k) {my_printf("%d\n",count[i]+1); my_printf("%s\n",word[i]);flag=1;}
 		if(flag==1) break;
 	}
 	for(i=i+1;i<k;i++)
     {
 		for(j=0;j<k;j++)
 			if(count[i]<count[j]) break;
-			if(j==k) {printf("%s\n",word[i]);}
+			if(j==k) {my_printf("%s\n",word[i]);}
 	}
     }
 }

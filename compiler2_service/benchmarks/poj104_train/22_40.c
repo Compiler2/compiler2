@@ -6,7 +6,7 @@ int main_bench()
 	char b;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b=getchar();
 		if(b!=',')
 			break;
@@ -19,7 +19,7 @@ int main_bench()
 		break;}
 	}
 	if(s==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=0;i<n;i++)
@@ -37,7 +37,7 @@ int main_bench()
 		for(i=1;i<=n;i++)
 		{
 			if(a[i]!=a[0])
-			{	printf("%d",a[i]);
+			{	my_printf("%d",a[i]);
 			break;
 			}
 		}

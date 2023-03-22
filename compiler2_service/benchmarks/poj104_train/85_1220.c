@@ -4,13 +4,13 @@ int main_bench()
 {
 	char sz[50];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int count,x;
 	for(int j=1;j<=n;j++)
 	{
 		count=0;
 		x=0;
-		scanf("%s",sz);
+		my_scanf("%s",sz);
 		for(int i=0;sz[i]!='\0';i++)
 		{
 			x++;
@@ -27,9 +27,9 @@ int main_bench()
 			}
 		}
 		if(count==x){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

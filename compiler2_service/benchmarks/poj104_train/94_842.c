@@ -6,10 +6,10 @@ int main_bench()
 	int a[500],b[500];
 	int n,i,k,t,j=0;
 	int min;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if (a[i]%2!=0)
 		{
 			b[j]=a[i];
@@ -34,11 +34,11 @@ int main_bench()
 	{
 		if (i!=j-1)
 		{
-			printf("%d,",b[i]);
+			my_printf("%d,",b[i]);
 		}
 		else
 		{
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		}
 	}
 	return 0;

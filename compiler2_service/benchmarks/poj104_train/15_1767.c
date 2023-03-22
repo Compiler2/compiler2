@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int a[1000][1000],i,n,j,b,c,d,e,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -39,7 +39,7 @@ int main_bench()
 		}
 	}
 	x=(d-b+1)*(e-c+1)-2*(d-b+1)-2*(e-c+1)+4;
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }
 

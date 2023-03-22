@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char a[50],b[50],c[50]={0};
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i,j,k=0,q=0;int m=strlen(a);int n=strlen(b);
 	for(i=0;i<n;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(c[i]==m)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,m[20000],i,j=0,count=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m[i]);
+		my_scanf("%d",&m[i]);
 		for(j=0;j<i;j++)
 		{
 			if(m[i]==m[j])
@@ -16,13 +16,13 @@ int main_bench()
 		{
 			if(count==0)
 			{
-				printf("%d",m[i]);
+				my_printf("%d",m[i]);
 				count++;
 			}
 			else
-				printf(" %d",m[i]);
+				my_printf(" %d",m[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

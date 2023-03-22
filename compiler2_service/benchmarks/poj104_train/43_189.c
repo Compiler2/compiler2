@@ -13,11 +13,11 @@ int main_bench()
 {
 	int m,j;
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	
 	for(j=3;j*2<=m;j+=2)
 		if(isprime(j)&&isprime(m-j))
-			printf("%d %d\n",j,(m-j));
+			my_printf("%d %d\n",j,(m-j));
 
 	return 0;
 }

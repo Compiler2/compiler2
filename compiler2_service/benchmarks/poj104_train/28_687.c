@@ -30,12 +30,12 @@ int main_bench(){
 		sum[k]=strlen(zfc[k]);
 	}
 
-	printf("%d",sum[0]);
+	my_printf("%d",sum[0]);
 
 	for(k=1;k<n;k++)
 	{
 		if(sum[k]!=0){
-		printf(",%d",sum[k]);
+		my_printf(",%d",sum[k]);
 		}
 	}
 	return 0;

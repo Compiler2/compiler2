@@ -32,7 +32,7 @@ int sushu(int n)
 int main_bench()
 {
 	int m,n;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int i,k=0;
 	int s[1000];
 	for(i=0;i<=(n-m);i++)
@@ -44,13 +44,13 @@ int main_bench()
 		}
 	}
 	if(k==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
-		printf("%d",s[0]);
+		my_printf("%d",s[0]);
 		for(i=1;i<k;i++)
 		{
-			printf(",%d",s[i]);
+			my_printf(",%d",s[i]);
 		}
 	}
 }

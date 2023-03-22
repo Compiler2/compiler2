@@ -20,7 +20,7 @@ void print_int(int*a)
 	while(a[k]==0&&k>0)
 		k=k-1;
     for(i=k;i>=0;i--)
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 }
 
 
@@ -52,7 +52,7 @@ int main_bench()
 	
    
 	
-		scanf("%s%s",s1,s2);
+		my_scanf("%s%s",s1,s2);
 
 		alen=str2bigint(s1,a);
 		

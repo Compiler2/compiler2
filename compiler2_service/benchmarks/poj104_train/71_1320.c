@@ -36,13 +36,13 @@ else return 0;
 int main_bench()
 {
 int n,i,a[200][3],j;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 for(j=0;j<3;j++)
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 for(i=0;i<n;i++)
 if(check(a[i][0],a[i][1],a[i][2]))
-printf("YES\n");
-else printf("NO\n");
+my_printf("YES\n");
+else my_printf("NO\n");
 return 0;
 }

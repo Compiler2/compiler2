@@ -5,15 +5,15 @@ int main_bench()
 	int year(int y);
 	int day(int m,int d);
 	int y1,m1,d1,y2,m2,d2,i,x,k=0;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	for(i=y1;i<y2;i++)
 		k=k+year(i);
 	x=365*(y2-y1)+k;
 	x=x+day(m2,d2)-day(m1,d1);
 	if(year(y1)==1&&m1>2) x--;
 	if(year(y2)==1&&m2>=3) x++;
-	printf("%d",x);
+	my_printf("%d",x);
 }
 int year(int y)
 {	int z;

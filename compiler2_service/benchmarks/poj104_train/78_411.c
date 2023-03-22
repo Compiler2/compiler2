@@ -16,7 +16,7 @@ int main_bench()
 				{
 					l=w;
 					if(z+q==s+l&&z+l>s+q&&z+s<q) 
-						printf("l %d\nq %d\nz %d\ns %d\n",l*10,q*10,z*10,s*10);
+						my_printf("l %d\nq %d\nz %d\ns %d\n",l*10,q*10,z*10,s*10);
 					
 				}
 			}

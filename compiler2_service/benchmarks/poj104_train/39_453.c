@@ -13,10 +13,10 @@ int main_bench()
 		int lun;
 		int z;
 	}stu[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		{
-		    scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].zong,&stu[i].ban,&stu[i].gan,&stu[i].xi,&stu[i].lun);
+		    my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].zong,&stu[i].ban,&stu[i].gan,&stu[i].xi,&stu[i].lun);
 		}
 	for(i=1;i<=n;i++)
 		{   stu[i].z=0;   
@@ -47,6 +47,6 @@ int main_bench()
 			break;
 		}
 
-printf("%s\n%d\n%d\n",stu[m].name,stu[n].z,q);
+my_printf("%s\n%d\n%d\n",stu[m].name,stu[n].z,q);
 return 0;
 }

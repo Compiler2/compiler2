@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&x[i],&c);
+		my_scanf("%d%c",&x[i],&c);
 		if(x[i]<s)
 			s=x[i];
 		if(c=='\n') break;
@@ -14,7 +14,7 @@ int main_bench()
 	k=(i+1);
 	for(i=0;i<k;i++)
 	{
-		scanf("%d%c",&y[i],&c);
+		my_scanf("%d%c",&y[i],&c);
 		if(d<y[i])
 			d=y[i];
 	}
@@ -26,6 +26,6 @@ int main_bench()
 		}
 		if(a[i-s]>m) m=a[i-s];
 	}
-	printf("%d %d",k,m);
+	my_printf("%d %d",k,m);
 	return 0;
 }

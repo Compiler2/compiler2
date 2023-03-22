@@ -3,13 +3,13 @@
 int main_bench(){
 	int n,a,b,i,j=0,k=0,l;
 	int sz[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<100;i++){
 		sz[i]=0;
 	}
 	for(i=1;i<=n+1;i++){
 		if(i<=n){
-			scanf("%d %d",&a,&b);
+			my_scanf("%d %d",&a,&b);
 		}
 		if(i==n+1){
 			a=1;
@@ -31,6 +31,6 @@ int main_bench(){
 						sz[l]=a;
 		}
 	}
-	printf("%d",sz[99]);
+	my_printf("%d",sz[99]);
 	return 0;
 }

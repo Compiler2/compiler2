@@ -9,7 +9,7 @@ gets(a);
 for(i=0;*(a+i)!='\0';i++)
 {
 if(*(a+i)>=48&&*(a+i)<=57)
-printf("%c",*(a+i));
-else printf("\n");
+my_printf("%c",*(a+i));
+else my_printf("\n");
 }
 }

@@ -39,7 +39,7 @@ int main_bench()
         if (i==0) sign=1;
         if (sum[i]!='0' || sign==1)
         {
-            printf("%c",sum[i]);
+            my_printf("%c",sum[i]);
             sign=1;
         }     
     }    

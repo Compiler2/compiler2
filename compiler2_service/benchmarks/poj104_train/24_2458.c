@@ -71,7 +71,7 @@ p:
 		}
 	}
 loop:
-	for(i=begin1;i<=end1;i++) printf("%c",str[i]);
-	printf("\n");
-	for(i=begin2;i<=end2;i++) printf("%c",str[i]);
+	for(i=begin1;i<=end1;i++) my_printf("%c",str[i]);
+	my_printf("\n");
+	for(i=begin2;i<=end2;i++) my_printf("%c",str[i]);
 }

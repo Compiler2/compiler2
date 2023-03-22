@@ -6,7 +6,7 @@ int getday(int year,int month);
 
 int main_bench(){
 	int n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *a;
 	a=(int *)malloc( sizeof(int) *n );
 	for(j=0;j<n;j++){
@@ -17,7 +17,7 @@ int main_bench(){
 
 	int year1,month1,month2;
 	int total1, total2, days;
-	scanf("%d%d%d", &year1,&month1,&month2);
+	my_scanf("%d%d%d", &year1,&month1,&month2);
 	total1 =getday(year1, month1);
 	total2 =getday(year1, month2);
 
@@ -31,10 +31,10 @@ int main_bench(){
 
 	for(j=0;j<n;j++){
 		if(a[j]==1){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
 		else if(a[j]==0){
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 

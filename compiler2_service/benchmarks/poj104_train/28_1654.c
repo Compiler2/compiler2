@@ -18,11 +18,11 @@ int main_bench()
 		}
 		d[n][k]='\0';
 		p=strlen(d[0]);
-		printf("%d",p);
+		my_printf("%d",p);
 	for(i=1;i<=n;i++){
 		p=strlen(d[i]);
 		
-		printf(",%d",p);}
+		my_printf(",%d",p);}
 	
 return 0;	
 	

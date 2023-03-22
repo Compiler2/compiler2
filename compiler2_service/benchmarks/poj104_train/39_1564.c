@@ -10,10 +10,10 @@ int main_bench()
 	int money[100]={0};
 	int i,num;
 	int sum=0,m,h;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++)
 	{
-		scanf("%s %d %d %c %c %d",st[i].n,&st[i].p1,&st[i].p2,&st[i].a,&st[i].b,&st[i].p3);
+		my_scanf("%s %d %d %c %c %d",st[i].n,&st[i].p1,&st[i].p2,&st[i].a,&st[i].b,&st[i].p3);
 	}
 	for(i=0;i<num;i++)
 	{
@@ -52,8 +52,8 @@ int main_bench()
 	{
 		sum+=money[i];
 	}
-	printf("%s\n",st[h].n);
-	printf("%d\n",m);
-	printf("%d\n",sum);
+	my_printf("%s\n",st[h].n);
+	my_printf("%d\n",m);
+	my_printf("%d\n",sum);
 	return 0;
 }

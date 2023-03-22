@@ -3,7 +3,7 @@
 int main_bench()
 {
 	 int len=0,n,i,j,k,m=0,h=0,r=0,d=0,q=0,a[500];
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 char c[501];
 	 gets(c);
 	 gets(c);
@@ -43,7 +43,7 @@ int main_bench()
 		 }
 	 if(h<=1)
 	 {
-		 printf("NO\n");
+		 my_printf("NO\n");
 	 }
 	 else
 	 {
@@ -61,7 +61,7 @@ int main_bench()
 			  break;
 		 }
 		 }
-	 printf("%d\n",h);
+	 my_printf("%d\n",h);
 	 for(i=0;i<len-n;i++)
 	 {
 		 d=0;
@@ -76,10 +76,10 @@ int main_bench()
 		 {
 			 for(k=i;k<i+n;k++)
 			 {
-				 printf("%c",c[k]);
+				 my_printf("%c",c[k]);
 			 }
 			 
-			 printf("\n");
+			 my_printf("\n");
 		 }
 		
 	 }
@@ -88,7 +88,7 @@ int main_bench()
               if(h==1)
 			 {
 				 for(q=len-n;q<len;q++)
-				 printf("%c",c[q]);
+				 my_printf("%c",c[q]);
 			 }
 		 }
 	 }

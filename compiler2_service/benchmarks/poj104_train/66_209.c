@@ -4,7 +4,7 @@
 int main_bench()
 {
     int year,month,day;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	int i;int m=0;
 
     year=year%400 +400;
@@ -45,7 +45,7 @@ int main_bench()
     case 6:strcpy(s,"Sat.");break;
 	case 0:strcpy(s,"Sun.");break;
 	}
-	printf("%s",s);
+	my_printf("%s",s);
 
 
 	return 0;

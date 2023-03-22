@@ -4,8 +4,8 @@ int main_bench()
 {
     int m=0,n=0,p,q,x,y,i;
     char a[250],b[250],c[250];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     for(p=0;;p++)
     {
     if(a[p]=='\0') break;
@@ -47,7 +47,7 @@ int main_bench()
     for(i=0;i<=n-1;i++)
     if(c[i]!='0') break;
     for(x=i;x<=n;x++)
-    printf("%c",c[x]);
+    my_printf("%c",c[x]);
  
 }  
  
@@ -81,7 +81,7 @@ if(m>n)
     for(i=0;i<=m-1;i++)
     if(c[i]!='0') break;
     for(x=i;x<=m;x++)
-    printf("%c",c[x]);
+    my_printf("%c",c[x]);
  
 } 
   
@@ -112,7 +112,7 @@ if(m>n)
    
   
     for(x=i;x<=m;x++)
-    printf("%c",c[x]);
+    my_printf("%c",c[x]);
 }
 }
     

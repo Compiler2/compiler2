@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int sz[200],sb[200];
 int i,j;
 for(i=0;i<n;i++){
-scanf("%d ",&sz[i]);
-scanf("%d\n",&sb[i]);
+my_scanf("%d ",&sz[i]);
+my_scanf("%d\n",&sb[i]);
 }
 int a=0,b=0,tie=0;
 for(i=0;i<n;i++){
@@ -26,9 +26,9 @@ else if(sz[i]==2&&sb[i]==1){
     b=b+1;}
 else{tie=tie+1;}
 }
-if(a>b){printf("A");}
-else if(a<b){printf("B");}
-else{printf("Tie");}
+if(a>b){my_printf("A");}
+else if(a<b){my_printf("B");}
+else{my_printf("Tie");}
 return 0;
 }
 

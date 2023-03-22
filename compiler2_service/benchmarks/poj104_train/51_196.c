@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,l,i,j,m,a[1000]={0};
     char ch[1000]={0},str[1000][1000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     gets(ch);
     l=strlen(ch);
@@ -31,9 +31,9 @@ int main_bench()
         if(a[i]>j) j=a[i];
     }
     if(j==1)
-    printf("NO");
+    my_printf("NO");
     else
-    {printf("%d\n",j);
+    {my_printf("%d\n",j);
     for(i=0;i<l-n;i++)
     {
         if(a[i]==j) 

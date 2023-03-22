@@ -6,7 +6,7 @@ int main_bench()
 	char x;
 	int c[250]={0};
 	int n,i,j,k,l,m,y;
-	scanf("%d%c",&n,&x);
+	my_scanf("%d%c",&n,&x);
 	gets(a);
 	k=strlen(a);
 	for(i=0;i<=k-n;i++)
@@ -32,17 +32,17 @@ int main_bench()
 	l=c[0]+1;
 	for(i=0;i<k-n;i++)
 		if(c[i]>l-1) l=c[i]+1;
-	if(l==1) printf("NO");
+	if(l==1) my_printf("NO");
 	else
 	{
-		printf("%d\n",l);
+		my_printf("%d\n",l);
 	for(i=0;i<=k-n;i++)
 	{
 		if(c[i]==l-1)
 		{
 			for(j=0;j<n;j++)
-				printf("%c",b[i][j]);
-			printf("\n");
+				my_printf("%c",b[i][j]);
+			my_printf("\n");
 		}
 	}
 	}

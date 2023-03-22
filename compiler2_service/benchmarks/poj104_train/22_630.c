@@ -7,12 +7,12 @@ int main_bench()
     int a[300],i,j,n=0;
     char c[300];
     for (i=1;i<=300;i++)
-    {scanf("%d",&a[i-1]);
-     scanf("%c",&c[i-1]);
+    {my_scanf("%d",&a[i-1]);
+     my_scanf("%c",&c[i-1]);
      n++;
      if (c[i-1]=='\n') break;
     }
-    if(n==1) printf("No");
+    if(n==1) my_printf("No");
     else{
     for(i=1;i<=n-1;i++)
     {
@@ -24,8 +24,8 @@ int main_bench()
     }
     for(i=1;i<=n-1;i++)
     {
-    if(a[i-1]>a[i]) {printf("%d",a[i]); break;}
-    if(i==n-1) printf("No");
+    if(a[i-1]>a[i]) {my_printf("%d",a[i]); break;}
+    if(i==n-1) my_printf("No");
     }
     }
     

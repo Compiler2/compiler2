@@ -5,7 +5,7 @@ int main_bench()
     char str1[100][100],str2[100][100],str3[100][100];
 	char s[100][100];
 	int n,i,j,k,a1[100],a2[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(str3[i]);
@@ -33,7 +33,7 @@ int main_bench()
 			s[i][k]=str1[i][k];
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 }
 		       
 

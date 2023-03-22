@@ -5,10 +5,10 @@ int m[99999];
 int main_bench()
 { 
 	int n,i,b,c,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		sum[i]=b+c;
 		m[i]=a;
 	}
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	for(i=0;i<l;i++)
 	{
-	printf("%d %d\n",m[i],sum[i]);
+	my_printf("%d %d\n",m[i],sum[i]);
 	}	
 	return 0;
 }

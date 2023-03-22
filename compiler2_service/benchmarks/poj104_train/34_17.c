@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m,n,i;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     int jiao(int );
     if(m!=1)
     {
@@ -11,18 +11,18 @@ int main_bench()
        if(m%2==1)
     {
              n=m*3+1;
-             printf("%d*3+1=%d\n",m,n);
+             my_printf("%d*3+1=%d\n",m,n);
     }
     if(m%2==0)
     {
               n=m/2;
-              printf("%d/2=%d\n",m,n);
+              my_printf("%d/2=%d\n",m,n);
     }
     m=n;
       }
     while(n!=1);
     }
-    printf("End");
+    my_printf("End");
     getchar();
     getchar();
     getchar();   

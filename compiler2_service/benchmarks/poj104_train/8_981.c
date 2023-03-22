@@ -3,19 +3,19 @@
 int main_bench()
 {
 	int n,m,b[100],c[100],i;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	void xu(int a[],int l);
 	for(i=0;i<n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	for(i=0;i<m;i++)
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	xu(b,n);
 	xu(c,m);
 	for(i=0;i<n;i++)
-		printf("%d ",b[i]);
+		my_printf("%d ",b[i]);
 	for(i=0;i<m-1;i++)
-		printf("%d ",c[i]);
-	printf("%d\n",c[m-1]);
+		my_printf("%d ",c[i]);
+	my_printf("%d\n",c[m-1]);
 }
 
 void xu(int a[],int l)

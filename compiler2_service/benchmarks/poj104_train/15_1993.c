@@ -7,13 +7,13 @@ int main_bench()
 	b=0;
 	x=-1;
 	y=-1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int tx[1000][1000];
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&tx[i][j]);
+			my_scanf("%d",&tx[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -45,6 +45,6 @@ int main_bench()
 		}
 	}
 	s=a*b-2*(a+b-2);
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

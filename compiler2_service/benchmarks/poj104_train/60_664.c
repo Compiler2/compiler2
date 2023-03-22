@@ -3,7 +3,7 @@
 int main_bench()
 {
     int N;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     if(N>=5)
     {
            int check(int n);
@@ -12,12 +12,12 @@ int main_bench()
         for(n=3;n<=N-2;n+=2)
         if(check(n)&&check(n+2))
         {
-                                printf("%d %d\n",n,n+2);
+                                my_printf("%d %d\n",n,n+2);
         }
     }
     }
     else
-    printf("empty");
+    my_printf("empty");
 }
 int check(int n)
 {

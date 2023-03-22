@@ -15,7 +15,7 @@ int main_bench()
        }
        if(s[i]!=s[0])
       {
-          printf("%d %d\n",A[k-1],i);
+          my_printf("%d %d\n",A[k-1],i);
           k--;
        }
     }

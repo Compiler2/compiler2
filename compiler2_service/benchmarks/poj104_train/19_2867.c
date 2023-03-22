@@ -31,9 +31,9 @@ int main_bench()
 	}
 	for(int q=0;q<j;q++)
 	{
-		printf("%s ",ss[q]);	
+		my_printf("%s ",ss[q]);	
 	}
-	printf("%s",ss[j]);
+	my_printf("%s",ss[j]);
 	
 	
 	return 0;		

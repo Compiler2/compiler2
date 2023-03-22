@@ -6,7 +6,7 @@ int main_bench()
 	int n,m;
 	do
 	{	
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(n==0)
 			break;
 
@@ -30,7 +30,7 @@ int main_bench()
 			}
 		}
 
-		printf("%d\n",a[1]);
+		my_printf("%d\n",a[1]);
 	}
 	while(n!=0);
 

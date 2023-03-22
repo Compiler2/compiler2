@@ -4,11 +4,11 @@ int main_bench(){
 char m[34];
 int n;
 gets(m);
-printf("x\n");
-printf("s\n");
-printf("a\n");
-printf("c\n");
+my_printf("x\n");
+my_printf("s\n");
+my_printf("a\n");
+my_printf("c\n");
 
-printf("no\n");
+my_printf("no\n");
 	return 0;
 }

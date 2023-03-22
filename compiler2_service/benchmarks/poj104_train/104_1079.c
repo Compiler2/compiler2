@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,a,e,f,d,h,g;
     int k,m,n;
 	int y[1000],x[1000],z[1000];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=1;m>0;i++){
 		x[i]=m;
 		m=m/2;
@@ -18,7 +18,7 @@ int main_bench()
 	for(k=1;k<i;k++){
 		for(h=1;h<=j;h++){
 			if(x[k]==y[h]){
-				printf("%d",x[k]);
+				my_printf("%d",x[k]);
 				goto A;
 			}
 	}

@@ -10,8 +10,8 @@ main_bench()
       char str1[250],str2[250];
       for(i=0;i<250;i++)
       a[i]=0;
-      scanf("%s",str1);
-      scanf("%s",str2);
+      my_scanf("%s",str1);
+      my_scanf("%s",str2);
       x1=strlen(str1);
       x2=strlen(str2);
       if(x1>x2)
@@ -34,11 +34,11 @@ main_bench()
       {
              if(a[i]!=0||a[i]==0&&t!=0)
              {
-             printf("%d",a[i]);
+             my_printf("%d",a[i]);
              t=1;
              }
              if(i==1&&t==0)
-             printf("0");
+             my_printf("0");
       }
       }
      else if(x1<x2)
@@ -61,11 +61,11 @@ main_bench()
           {
                            if(a[i]!=0||a[i]==0&&m!=0)
                            {
-                            printf("%d",a[i]);
+                            my_printf("%d",a[i]);
                             m=1;
                             }
                             if(i==1&&m==0)
-                            printf("0");
+                            my_printf("0");
           }
       }
       else
@@ -81,17 +81,17 @@ main_bench()
           }
           if(a[x1]!=0)
           for(i=x1;i>=0;i--)
-          printf("%d",a[i]);
+          my_printf("%d",a[i]);
           else
           for(i=x1-1;i>=0;i--)
           {
                  if(a[i]!=0||a[i]==0&&n!=0)
                  {
-                 printf("%d",a[i]);
+                 my_printf("%d",a[i]);
                  n=1;
                  }
                  if(i==0&&n==0)
-                 printf("0");
+                 my_printf("0");
           }
       }
       

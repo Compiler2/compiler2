@@ -4,19 +4,19 @@ main_bench()
 {
       int m,n,i,j,k,l,p,q;
       int s[120][120];
-      scanf("%d%d",&m,&n);
+      my_scanf("%d%d",&m,&n);
       for (i=1;i<=m;i++)
       {
        for (j=1;j<=n;j++)
        {
-       scanf("%d",&s[i][j]);
+       my_scanf("%d",&s[i][j]);
       } 
       }
       l=0;
       i=1;j=1;
       while (l<n*m)
       {
-            printf("%d\n",s[i][j]);
+            my_printf("%d\n",s[i][j]);
             l++; 
             if ((j==1)&&(i+1<=n)) 
             {

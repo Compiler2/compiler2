@@ -7,10 +7,10 @@ int main_bench()
 		int age;
 		char a[10];
 	}ID[201];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%s",ID[i].a);
-		scanf("%d",&ID[i].age);
+		my_scanf("%s",ID[i].a);
+		my_scanf("%d",&ID[i].age);
 	}
 	for(i=0;i<n;i++){
 		if(ID[i].age>=60){
@@ -29,11 +29,11 @@ int main_bench()
 		}
 	}
 	for(i=0;i<x;i++){
-		printf("%s\n",ID[100+i].a);
+		my_printf("%s\n",ID[100+i].a);
 	}
 	for(i=0;i<n;i++){
 		if(ID[i].a[0]!='\0')
-			printf("%s\n",ID[i].a);
+			my_printf("%s\n",ID[i].a);
 	}
 
 

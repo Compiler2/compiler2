@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,j,num,js;
     int sz[500];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-	scanf("%d", &(sz[i]));
+	my_scanf("%d", &(sz[i]));
 	}
        num=0;
     for(i=0;i<n;i++){
@@ -19,10 +19,10 @@ int main_bench()
 	while(i<num){
         for(j=0;j<n;j++){
 		    if(sz[j]==js){
-			    printf("%d",sz[j]);	
+			    my_printf("%d",sz[j]);	
 		        i=i+1;
                    if(i<num){
-            printf(",");}
+            my_printf(",");}
 				
 			}
 		}

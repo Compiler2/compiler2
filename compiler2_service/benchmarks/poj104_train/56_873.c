@@ -15,7 +15,7 @@ int main_bench()
 		list1[i]=list[k-i-1];
 	for(i=0;i<k;i++)
 	{
-		printf("%c",list1[i]);
+		my_printf("%c",list1[i]);
 	}
 
 

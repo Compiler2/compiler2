@@ -3,7 +3,7 @@
 int main_bench()
 {   int n,i,j,m,k,f;
   int a[10000];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 if (n>=5)
 {  for(i=1;i<=n;i++) a[i]=i;
  for (i=5;i<=n;i++)
@@ -29,8 +29,8 @@ if (n>=5)
  f=f*m;
  }
  if (f!=0) 
-	 printf("%d %d\n",a[i-2],a[i]);}
+	 my_printf("%d %d\n",a[i-2],a[i]);}
 }}
-else printf("empty");
+else my_printf("empty");
 	return 0;
 }

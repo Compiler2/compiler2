@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,*a,i,k=0,*b,t,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     a=(int*)malloc(n*sizeof(int));
     b=(int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++)
     {
-                    scanf("%d",&a[i]);
+                    my_scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -31,8 +31,8 @@ int main_bench()
     }
     for(i=0;i<k;i++) 
     {
-                     if(i) printf(",");
-                     printf("%d",b[i]);
+                     if(i) my_printf(",");
+                     my_printf("%d",b[i]);
     }
     return 0;
 }

@@ -12,7 +12,7 @@ int main_bench()
 	gets(replacement);
 	x=strstr(string,substring)-&string[0];
 	if(strchr(string,substring[0])!=0)memmove(string+x,replacement,strlen(replacement));
-	printf("%s",string);
+	my_printf("%s",string);
 	return 0;
 }
 

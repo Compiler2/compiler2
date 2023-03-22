@@ -4,7 +4,7 @@ int runnian(int x);
 int main_bench(){
 	int n,b,c;
 	int a[13]={1,31,1,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&n,&b,&c);
+	my_scanf("%d %d %d",&n,&b,&c);
 	int num=0,day;
 	int i;
 	num=(n-1)%7+(n-1)/4-(n-1)/100+(n-1)/400;	
@@ -18,20 +18,20 @@ int main_bench(){
 	num+=c;
 	day=(num-1)%7+1;
 	if(day==1) 
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 		else if(day==2) 
-              printf("Tue.\n");
+              my_printf("Tue.\n");
 
 		else if(day==3) 
-                printf("Wen.\n");
+                my_printf("Wen.\n");
 		else if(day==4)
-				printf("Thu.\n");
+				my_printf("Thu.\n");
 	    else if(day==5) 
-           printf("Fri.\n");
+           my_printf("Fri.\n");
 		else if(day==6)
-				printf("Sat.\n");
+				my_printf("Sat.\n");
      	else if(day==7)
-	    	printf("Sun.\n");
+	    	my_printf("Sun.\n");
 	return 0;
 }
 int runnian(int x){

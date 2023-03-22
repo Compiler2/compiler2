@@ -7,12 +7,12 @@ double c[500];
 double GPA;
 int i,kc,j;
 double sum,res;
-scanf("%d\n",&kc);
+my_scanf("%d\n",&kc);
 for(i=0;i<kc;i++){
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 }
 for(i=0;i<kc;i++){
-scanf("%d",&b[i]);
+my_scanf("%d",&b[i]);
 }
 for(i=0,j=0;i<kc,j<kc;i++,j++){
 if(b[i]>=90&&b[i]<=100){
@@ -44,6 +44,6 @@ sum=sum+1.00*c[i]*a[i];
 res=res+a[i];
 }
 GPA=1.00*sum/res;
-printf("%.2lf",GPA);
+my_printf("%.2lf",GPA);
 return 0;
 }

@@ -41,11 +41,11 @@ int main_bench()
 {
     int n,i;
     char s[1000]="1",a[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++){
         bigmulti(s,"2",a);
         strcpy(s,a);
     }
-    printf("%s",s);
+    my_printf("%s",s);
     return 0;
 }

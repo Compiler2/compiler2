@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[100][100],b[10000],c[4];
 	int m,n,e,i,j,t,k,l,p;
-	scanf ("%d%d\n",&m,&n);
+	my_scanf ("%d%d\n",&m,&n);
 	for(i=0;i<m;i++)
 		for(j=0;j<n;j++)
-			scanf ("%d",&a[i][j]);
+			my_scanf ("%d",&a[i][j]);
 	for(i=0;i<m;i++)
 		for(j=0;j<n;j++)
 		{	
@@ -34,7 +34,7 @@ int main_bench()
 	   	    b[e+p-1]=a[c[0]][c[1]];
 		}
 		for (i=0;i<m*n;i++)
-		printf ("%d\n",b[i]);
+		my_printf ("%d\n",b[i]);
 	return 0;
 }
 

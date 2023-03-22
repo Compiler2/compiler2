@@ -5,10 +5,10 @@ int main_bench()
 	int n,a[101],b[101],c[101],i,j,s;
 	i=1;
 	j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90)
 		{
 			j=j+1;
@@ -28,6 +28,6 @@ int main_bench()
 			s=c[i];
 		}
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

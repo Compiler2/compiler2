@@ -8,7 +8,7 @@ main_bench()
     p=a;
     for(i=0;i<5;i++)
         for(j=0;j<5;j++)
-            scanf("%d",*(p+i)+j);
+            my_scanf("%d",*(p+i)+j);
     for(i=0;i<5;i++)
     {
         for(j=0,m=0,n=*(*(p+i)+j);j<5;j++)
@@ -29,12 +29,12 @@ main_bench()
         }
         if(count==0)
         {
-            printf("%d %d %d\n",i+1,m+1,n);
+            my_printf("%d %d %d\n",i+1,m+1,n);
             q++;
         }
     }
     if(q==0)
-        printf("not found\n");
+        my_printf("not found\n");
     
 }
             

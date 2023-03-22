@@ -13,9 +13,9 @@ int main_bench()
 {
 
 	int year,month,day=1,m1,d1=1,t1,a,total,i=1,n,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<n;a++){
-	scanf("%d%d%d",&year,&month,&m1);
+	my_scanf("%d%d%d",&year,&month,&m1);
 	total=0;
 	for(i=1;i<month;i++){ 	
 		if(i==1||i==3||i==5||i==7||i==8||i==10||i==12){
@@ -48,9 +48,9 @@ int main_bench()
 	t1+=d1;
 		s=total-t1;
 		if(s%7==0||(0-s)%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
-		else{printf("NO\n");
+		else{my_printf("NO\n");
 		}
 	}
 	return 0;

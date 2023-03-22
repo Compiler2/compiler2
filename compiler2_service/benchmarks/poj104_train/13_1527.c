@@ -4,15 +4,15 @@ int main_bench()
 {
     int n;
     int a[9000],ans[9000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i,j;
     int num=1,t=0;
-    scanf("%d",&a[0]);
+    my_scanf("%d",&a[0]);
     ans[0]=a[0];
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for(i=1;i<n;i++)
     {
-                    scanf("%d",&a[i]);
+                    my_scanf("%d",&a[i]);
                     int j=0;
                     while(j<num)
                     {
@@ -26,7 +26,7 @@ int main_bench()
                     if(t==0) 
                     {
                              ans[num]=a[i];
-                             printf(" %d",ans[num]);
+                             my_printf(" %d",ans[num]);
                              num++;
                     }
                     else  t=0;

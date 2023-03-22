@@ -4,10 +4,10 @@ int main_bench()
 {
   int a[210],b[210];
   int n,sum=0,i;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(i=0;i<n;i++)
   {
-        scanf("%d %d\n",&a[i],&b[i]);  
+        my_scanf("%d %d\n",&a[i],&b[i]);  
         if(a[i]==b[i])
            continue;  
         if((a[i]==0)&&(b[i]==1))
@@ -24,9 +24,9 @@ int main_bench()
         sum--; 
      }
      if(sum>0)
-     printf("A\n");
+     my_printf("A\n");
      if(sum==0)
-     printf("Tie\n");
+     my_printf("Tie\n");
      if(sum<0)
-     printf("B\n");
+     my_printf("B\n");
 }

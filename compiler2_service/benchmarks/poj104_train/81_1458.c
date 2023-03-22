@@ -7,18 +7,18 @@ int main_bench()
 	int sz[5][5],n,m,i,k;
 	for(i=0;i<5;i++){                          
 		for(k=0;k<5;k++)
-			scanf("%d",&sz[i][k]);
+			my_scanf("%d",&sz[i][k]);
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(panduan(sz,n,m)){                       
 		for(i=0;i<5;i++){
 			for(k=0;k<4;k++)
-				printf("%d ",sz[i][k]);
-			printf("%d\n",sz[i][4]);
+				my_printf("%d ",sz[i][k]);
+			my_printf("%d\n",sz[i][4]);
 		}
 	}
 	else
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 

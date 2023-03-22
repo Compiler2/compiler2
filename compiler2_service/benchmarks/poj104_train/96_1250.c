@@ -6,7 +6,7 @@ int main_bench()
 	int i,j=0,k,x,s;
 	for(i=0;i<100;i++)
 	  {a[i]=0;b[i]='0';}
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(i=0;a[i]!=0;i++)
 	  x=i+1;
 	for(i=x;i<100;i++)
@@ -25,11 +25,11 @@ int main_bench()
 	   j=j+1;
 	  }
 	if(b[0]=='0'&&b[1]=='0')
-	  printf("0");
+	  my_printf("0");
 	else if(b[0]!='0')
-	  printf("%c",b[0]);
+	  my_printf("%c",b[0]);
 	for(i=1;i<x-1;i++)
-	  printf("%c",b[i]);
-	printf("\n");
-	printf("%d",a[x-1]-'0');
+	  my_printf("%c",b[i]);
+	my_printf("\n");
+	my_printf("%d",a[x-1]-'0');
 }

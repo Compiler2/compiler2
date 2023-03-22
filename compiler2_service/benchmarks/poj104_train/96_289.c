@@ -3,7 +3,7 @@
 main_bench()
 {
  char num[100];
- scanf("%s",num);
+ my_scanf("%s",num);
  int con[100];
  int p[100];
  int i,j,a,b,s,k=0,l; 
@@ -15,9 +15,9 @@ main_bench()
  {
  a=0;
  b=con[0];
- printf("%d",a);
- printf("\n");
- printf("%d",b);
+ my_printf("%d",a);
+ my_printf("\n");
+ my_printf("%d",b);
                }
  else
  {
@@ -49,12 +49,12 @@ main_bench()
        }
        }
   if(k==0)
-  printf("%d",k);
+  my_printf("%d",k);
   else
   {for(l=0;l<=k-1;l++)
-  {printf("%d",p[l]);}}
-  printf("\n");
-  printf("%d",b);      
+  {my_printf("%d",p[l]);}}
+  my_printf("\n");
+  my_printf("%d",b);      
      }              
  getchar();
  getchar();

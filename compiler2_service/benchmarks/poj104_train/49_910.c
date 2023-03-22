@@ -20,7 +20,7 @@ int main_bench()
 	char a[1000];
 	char b[1000];
 	int i,j,k,len,m;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	len=strlen(a);
 		for(i=2;i<=len;i++)
 		{
@@ -30,7 +30,7 @@ int main_bench()
 					*(b+m)=*(a+j+m);
 				b[i]='\0';
 				if(check(b))
-					printf("%s\n",b);
+					my_printf("%s\n",b);
 			}
 		}
 		return 0;

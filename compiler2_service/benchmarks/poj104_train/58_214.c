@@ -5,7 +5,7 @@ int main_bench()
 {
     int n,i,j;
     char a[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     for(i=0;i<n;i++)
     {
@@ -15,15 +15,15 @@ int main_bench()
                              for(j=1;j<strlen(a);j++)
                              {
                                                      if((a[j]<48)||((a[j]>=58)&&(a[j]<=64))||((a[j]>=91)&&(a[j]<=94))||(a[j]==96)||(a[j]>=123))
-                                                     {printf("0\n");
+                                                     {my_printf("0\n");
                                                      break;}
                              }
                              if(j==strlen(a))
-                             printf("1\n");
+                             my_printf("1\n");
                     }                                                           
                     else
                     {
-                        printf("0\n");
+                        my_printf("0\n");
                     }
     }
     getchar();

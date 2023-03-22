@@ -19,9 +19,9 @@ int main_bench()
 		i++;
 	}
 	k=strcmp(s,s1);
-	if (k==0) printf("=");
-	if (k>0) printf(">");
-	if (k<0) printf("<");
+	if (k==0) my_printf("=");
+	if (k>0) my_printf(">");
+	if (k<0) my_printf("<");
 	
 	return 0;
 }

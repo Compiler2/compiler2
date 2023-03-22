@@ -7,7 +7,7 @@ int main_bench()
     int b[301];
     for(i=0;i<300;i++)
     {
-                      scanf("%s",a[i]);
+                      my_scanf("%s",a[i]);
                       n=strlen(a[i]);
                       b[i]=n;
                       count++;
@@ -17,9 +17,9 @@ int main_bench()
     for(i=0;i<count-1;i++)
     {
                         if(i==0)
-                        printf("%d",b[i]);
+                        my_printf("%d",b[i]);
                         else
-                        printf(",%d",b[i]);
+                        my_printf(",%d",b[i]);
     }
     return 0;
 }

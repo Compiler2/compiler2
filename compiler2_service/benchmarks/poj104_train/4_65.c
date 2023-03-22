@@ -9,12 +9,12 @@ int main_bench()
     {
                       *(p+i)=(int *)malloc(100*sizeof(int));
     }
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(i=0;i<m;i++)
     {
                     for(j=0;j<n;j++)
                     {
-                                    scanf("%d",(*(p+i)+j));
+                                    my_scanf("%d",(*(p+i)+j));
                     }
     }
     for(i=0;i<m+n-1;i++)
@@ -24,11 +24,11 @@ int main_bench()
                                         if((j<m)&&((i-j)<n)){
                                         if(i==0)
                                         {
-                                                printf("%d",*(*(p+j)+i-j));
+                                                my_printf("%d",*(*(p+j)+i-j));
                                         }
                                         else
                                         {
-                                                printf("\n%d",*(*(p+j)+i-j));
+                                                my_printf("\n%d",*(*(p+j)+i-j));
                                         }}
                         }
     }

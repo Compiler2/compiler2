@@ -39,7 +39,7 @@ int main_bench()
        minlen=i;}
 		}
     }
-    printf("%s\n%s\n",words[maxlen],words[minlen]);
+    my_printf("%s\n%s\n",words[maxlen],words[minlen]);
 	
     return 0;
 }

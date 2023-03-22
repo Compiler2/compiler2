@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int year,mouth,day,k,sum=0;
-	scanf("%d%d%d",&year,&mouth,&day);
+	my_scanf("%d%d%d",&year,&mouth,&day);
 	sum=(year-1)%7+year/4-year/100+year/400;
 			for(k=1;k<mouth;k++){
 				if(k==1||k==3||k==5||k==7||k==8||k==10||k==12)
@@ -13,19 +13,19 @@ int main_bench(){
 					sum--;}
 			sum+=day;
 			if(sum%7==0){
-				printf("Sun.");
+				my_printf("Sun.");
 			}if(sum%7==1){
-				printf("Mon.");
+				my_printf("Mon.");
 			}if(sum%7==2){
-				printf("Tue.");
+				my_printf("Tue.");
 			}if(sum%7==3){
-				printf("Wed.");
+				my_printf("Wed.");
 			}if(sum%7==4){
-				printf("Thu.");
+				my_printf("Thu.");
 			}if(sum%7==5){
-				printf("Fri.");
+				my_printf("Fri.");
 			}if(sum%7==6){
-				printf("Sat.");
+				my_printf("Sat.");
 }return 0;}		
 
 		

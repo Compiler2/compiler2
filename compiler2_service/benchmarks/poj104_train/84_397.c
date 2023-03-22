@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int len,i,m,b1,b2,a[100];
-	scanf("%d",&len);
+	my_scanf("%d",&len);
     for(i=0;i<len;i++){
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	}
 	b1=a[0];
 	b2=a[1];
@@ -21,6 +21,6 @@ int main_bench()
 		b2=a[i];
 		}
 	}
-	printf("%d\n%d",b1,b2);
+	my_printf("%d\n%d",b1,b2);
 	return 0;
 }

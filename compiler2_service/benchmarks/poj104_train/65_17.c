@@ -4,10 +4,10 @@ int main_bench() {
 int n,i;
 int c=0;
 int d=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n],b[n];
 for(i=0;i<n;i++){
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 if(a[i]==0){
 if(b[i]==1) c++;
 if(b[i]==2) d++;
@@ -21,8 +21,8 @@ if(b[i]==0) c++;
 if(b[i]==1) d++;
 }
 }
-if(c>d) printf("A");
-if(c<d) printf("B");
-if(c==d) printf("Tie");
+if(c>d) my_printf("A");
+if(c<d) my_printf("B");
+if(c==d) my_printf("Tie");
 return 0;
 }

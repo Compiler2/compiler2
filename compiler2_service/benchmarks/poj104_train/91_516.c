@@ -12,7 +12,7 @@ for (int j=0;j<strlen(s);j++){
     }
 }
 for (int i=0;i<strlen(s);i++){
-     printf("%c",w[i]);
+     my_printf("%c",w[i]);
 }
 return 0;
 }

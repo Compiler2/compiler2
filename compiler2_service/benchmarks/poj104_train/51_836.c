@@ -10,7 +10,7 @@ int main_bench()
     struct ma temp;
     char str1[505];
 	int i,j=0,m=0,a,b=0,n,l,k,t,flag=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
     gets(str1);
     l=strlen(str1);
 	for(i=0;i<=l-n;i++){
@@ -53,13 +53,13 @@ int main_bench()
 		}
 	}
   if(stu[0].f==1)
-	  printf("NO");
+	  my_printf("NO");
   else{
-	printf("%d\n",stu[0].f);
-	printf("%s",stu[0].str);
+	my_printf("%d\n",stu[0].f);
+	my_printf("%s",stu[0].str);
 		for(j=1;j<l-n+1;j++){
 			if(stu[j].f==stu[0].f)
-				printf("\n%s",stu[j].str);
+				my_printf("\n%s",stu[j].str);
 			else
 				break;
 		}

@@ -30,11 +30,11 @@ main_bench()
       int n[10001],answer[7],i;
       for(i=1;i<=6;i++)
       {
-      scanf("%ld",&n[i-1]);
+      my_scanf("%ld",&n[i-1]);
       answer[i-1]=reverse(n[i-1]);
       }
       for(i=1;i<=6;i++) 
-      printf("%ld\n",answer[i-1]);
+      my_printf("%ld\n",answer[i-1]);
       getchar();
       getchar();
 }

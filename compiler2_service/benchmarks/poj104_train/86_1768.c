@@ -3,18 +3,18 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int num[n];
     int sum[n];
     int sz[n][1000];
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&num[i]);
+        my_scanf("%d",&num[i]);
         if(num[i]!=0)
         {
         	for(int j=0;j<num[i];j++)
         	{
-            	scanf("%d",&sz[i][j]);
+            	my_scanf("%d",&sz[i][j]);
             }
             if(sz[i][num[i]-1]+3*num[i]<=60)
             {
@@ -44,6 +44,6 @@ int main_bench()
             }
         }
         else sum[i]=60;
-        printf("%d\n",sum[i]);
+        my_printf("%d\n",sum[i]);
     }
 }

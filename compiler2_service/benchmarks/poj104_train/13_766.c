@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,a[20000],b[20000],i,j,k=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for (i=0;i<n;i++)
 	{
 		for (j=0;j<i;j++)
@@ -26,7 +26,7 @@ int main_bench()
 
 		for (i=0;i<k-1;i++)
 		{
-		printf("%d ",b[i]);
+		my_printf("%d ",b[i]);
 		}
-		printf("%d",b[k-1]);
+		my_printf("%d",b[k-1]);
 }

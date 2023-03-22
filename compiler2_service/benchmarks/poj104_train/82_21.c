@@ -6,9 +6,9 @@ int main_bench()
 int n;
 int temp;
 int c[200]={0};
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<2*n;i++)
-{scanf("%d",&a[i]);
+{my_scanf("%d",&a[i]);
                   }
  for(i=0;i<n;i++){
  if(a[2*i]>=90&&a[2*i]<=140&&a[2*i+1]>=60&&a[2*i+1]<=90)
@@ -28,7 +28,7 @@ for(i=0;i<2*n;i++)
     c[j]=c[j+1];
     c[j+1]=temp;}
                  }   
-    printf("%d\n",c[n]);                        
+    my_printf("%d\n",c[n]);                        
  
   
   

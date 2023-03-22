@@ -4,7 +4,7 @@ void Exchange(int A[],int n);
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int A[n];
     Exchange(A,n);
     return 0;
@@ -13,11 +13,11 @@ int main_bench(){
 
 void Exchange(int A[],int n){
     for(int i=0;i<n;i++){
-        scanf("%d",&A[i]);
+        my_scanf("%d",&A[i]);
     }
-    printf("%d",A[n-1]);
+    my_printf("%d",A[n-1]);
     for(int j=n-2;j>=0;j--){
-        printf(" %d",A[j]);
+        my_printf(" %d",A[j]);
     }
 }
 

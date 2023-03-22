@@ -2,12 +2,12 @@
 
 int main_bench(){
     int n,m,i,j,k,know[10000],known[10000],x,y,z;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     m=0;
     z=0;
     for(i=0;i<10000;i++){
-        scanf("%d",&know[i]);
-        scanf("%d",&known[i]);
+        my_scanf("%d",&know[i]);
+        my_scanf("%d",&known[i]);
         m=i;
         if(know[i]==0&&known[i]==0)
             break;
@@ -22,11 +22,11 @@ int main_bench(){
                 y++;
         }
         if(x==0&&y==n-1){
-            printf("%d\n",i);
+            my_printf("%d\n",i);
             z=1;
         }
     }
     if(z==0)
-    printf("NOT FOUND\n");
+    my_printf("NOT FOUND\n");
     return 0;
     }

@@ -4,16 +4,16 @@ int main_bench()
 {
       int row,col,i,j,d=0,count=0;
       int de[]={0,1,2,3};
-      scanf("%d%d",&row,&col);
+      my_scanf("%d%d",&row,&col);
       int a[row][col],b[row][col];
       for(i=0;i<row;i++)
       {
-              for(j=0;j<col;j++){scanf("%d",&a[i][j]);b[i][j]=1;}       
+              for(j=0;j<col;j++){my_scanf("%d",&a[i][j]);b[i][j]=1;}       
       }
       i=0;j=0;
       for(count=0;count<row*col;count++)
       {
-                   printf("%d\n",a[i][j]);
+                   my_printf("%d\n",a[i][j]);
                    b[i][j]=0;
                    switch(de[d])
                    {

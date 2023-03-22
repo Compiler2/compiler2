@@ -6,7 +6,7 @@ int reverse  (int num)
     int i,j,k,p;
     if(num==0)
     {
-        printf("0");
+        my_printf("0");
     }
     else
     {
@@ -21,7 +21,7 @@ int reverse  (int num)
         }
         if(a[0]==0)
         {
-           printf("-");
+           my_printf("-");
         }
         for(i=1;num!=0;i++)
         {
@@ -35,9 +35,9 @@ int reverse  (int num)
         }
         for(k=j;a[k]!=10;k++)
         {
-           printf("%d",a[k]);
+           my_printf("%d",a[k]);
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }
@@ -46,7 +46,7 @@ main_bench()
     int a,i;
     for(i=1;i<=6;i++)
     {
-        scanf("%d",&a);
+        my_scanf("%d",&a);
         reverse(a);
     }
 }

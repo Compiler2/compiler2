@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,letter[26]={0},flag=0;
     char word[400]={'@'}, num[26]={'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-    scanf("%s",word);
+    my_scanf("%s",word);
     for(i=0;i<400;i++)
     {
                       if(word[i]=='a')
@@ -64,12 +64,12 @@ int main_bench()
         {
                          if(letter[i]!=0)
                          {
-                                         printf("%c=%d\n", num[i],letter[i]);
+                                         my_printf("%c=%d\n", num[i],letter[i]);
                                          flag=1;
                          }     
         }
     if(flag==0)
-    printf("No");
-    scanf("%d",&flag);
+    my_printf("No");
+    my_scanf("%d",&flag);
     return 0;
 }

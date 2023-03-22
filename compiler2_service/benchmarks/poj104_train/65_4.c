@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n, a = 0, b = 0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (int i = 1; i <= n; i++)
 	{
 		int x, y;
-		scanf("%d %d", &x, &y);
+		my_scanf("%d %d", &x, &y);
 		if (x == y)
 			continue;
 		else
@@ -36,11 +36,11 @@ int main_bench()
 		}
 	}
 	if (a == b)
-		printf("Tie");
+		my_printf("Tie");
 	else if (a > b)
-		printf("A");
+		my_printf("A");
 	else
-		printf("B");
+		my_printf("B");
 	return 0;
 }
 

@@ -35,9 +35,9 @@ main_bench()
       n=i;
       for(i=n;i>=0;i--)
       {if(i==0)
-      printf("%s",a[i]);
+      my_printf("%s",a[i]);
       else
-      printf("%s ",a[i]);
+      my_printf("%s ",a[i]);
 
       }
       }

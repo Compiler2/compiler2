@@ -5,7 +5,7 @@ main_bench()
 	char n[33],m[33];
 	long c,x,y;
 	int a,b,d,e,l,i;
-	scanf("%d%s%d",&a,n,&b);
+	my_scanf("%d%s%d",&a,n,&b);
 	l=strlen(n);
 	for(i=0;i<l;i++)
 	{if(n[i]>='a'&&n[i]<='z') n[i]=n[i]+10-'a';
@@ -32,5 +32,5 @@ main_bench()
 		if(m[i]>=0&&m[i]<=9) m[i]=m[i]+'0';
 		else m[i]=m[i]+'A'-10;
 	}
-	printf("%s\n",m);
+	my_printf("%s\n",m);
 }

@@ -32,11 +32,11 @@ int main_bench()
 	else	c+=a[i]-b[i];
 	}
 	if(c==0)
-	printf("=");
+	my_printf("=");
    if(c>=1)
-      	printf(">");
+      	my_printf(">");
    if(c<=-1)
-printf("<");
+my_printf("<");
 	 return 0; 
 	
 }

@@ -30,12 +30,12 @@ int main_bench()
 		if(strcmp(b,c)==0)
 		{
 			h=h+1;
-			printf("%s",g);
-		    printf("%s",e);
-	    	printf("%s",s);
+			my_printf("%s",g);
+		    my_printf("%s",e);
+	    	my_printf("%s",s);
 		}
 		}
 	}
 	if(h==1)
-		printf("%s",a);
+		my_printf("%s",a);
 }

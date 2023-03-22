@@ -6,11 +6,11 @@ int main_bench()
 	int a[300];
 	double sum,ave,max;
 	double b[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	sum=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	ave=sum/n;
@@ -36,12 +36,12 @@ int main_bench()
 		{
 			if(flag==0)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 	            flag=1;
 			}
 			else
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			}
 		}
 	}

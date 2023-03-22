@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[300];
 int i,j,sum[200]={0},m=0;
-scanf("%s",a);
+my_scanf("%s",a);
 for(i=0;a[i]!='\0';i++)
 {
      for(j=65;j<=90;j++)
@@ -27,13 +27,13 @@ for(i=0;a[i]!='\0';i++)
 	      for(j=65;j<=122;j++)
 		  {
 			  if(sum[j]!=0)
-		      printf("%c=%d\n",j,sum[j]);
+		      my_printf("%c=%d\n",j,sum[j]);
 		  }
 	 }
 
      if(m==0)
 	 {
-    	printf("No");
+    	my_printf("No");
 	 }
 return 0;
 }

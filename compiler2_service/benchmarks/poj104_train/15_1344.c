@@ -3,10 +3,10 @@
 int main_bench()
 {
    int n,m[100][100],i,j,a=0,b=0,c=0,d=0,x,y,s;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
      for(j=0;j<n;j++)
-	   scanf("%d",&m[i][j]);
+	   my_scanf("%d",&m[i][j]);
    for(i=0;i<n;i++)
      for(j=0;j<n;j++)
 	   {
@@ -31,7 +31,7 @@ int main_bench()
   x=b-a-1;
   y=d-c-1;
   s=x*y;
-  printf("%d",s);
+  my_printf("%d",s);
 }
 
 

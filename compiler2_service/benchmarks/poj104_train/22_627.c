@@ -4,9 +4,9 @@ int main_bench()
 {
   int a[301];
   int n,j,k,l,i,max,max1;
-  scanf("%d",&a[0]);
+  my_scanf("%d",&a[0]);
   i=1;
-  while(scanf(",%d",&a[i]))
+  while(my_scanf(",%d",&a[i]))
   {
   i++;
   }
@@ -21,7 +21,7 @@ int main_bench()
   {
    if(a[i]!=max)     {k=1;break;}
   }
-  if(k==0)   printf("No");
+  if(k==0)   my_printf("No");
   else
   {
     max1=a[i];
@@ -29,6 +29,6 @@ int main_bench()
     {
       if(a[l]>=max1 && a[l]!=max)    max1=a[l];
     }
-   printf("%d",max1);
+   my_printf("%d",max1);
   }
 }

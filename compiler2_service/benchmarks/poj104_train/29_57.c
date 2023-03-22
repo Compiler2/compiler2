@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int i,j,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int sz[10000];
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	int zr[10000][2];
 	zr[0][0]=2;
@@ -29,7 +29,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%.3lf\n",jg[i]);
+		my_printf("%.3lf\n",jg[i]);
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,i,k;
 	char b[1000][1000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		char a[1000]={0};
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(k=0;a[k]!='\0';k++){
 			if(a[k]=='A'){
 				b[i][k]='T';
@@ -23,7 +23,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",b[i]);
+		my_printf("%s\n",b[i]);
 	}
 	return 0;
 }

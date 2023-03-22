@@ -17,11 +17,11 @@ int main_bench()
 	char a[500];
 	struct zifu zi[1000],temp;
 	struct chuan b[1000],p;
-	scanf("%d",&n);
-	scanf("\n");
+	my_scanf("%d",&n);
+	my_scanf("\n");
 	for(i=0;i<500;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]=='\n')
 		{
 			a[i]='\0';
@@ -85,7 +85,7 @@ int main_bench()
 		}
 	}
 	if(w==0)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 	temp=zi[0];
@@ -99,7 +99,7 @@ int main_bench()
 	}
 	max=temp.num+1;
 
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(j=1;j<=t;j++)
 	{
 		for(i=0;i<=t-1;i++)
@@ -118,9 +118,9 @@ int main_bench()
 		{
 			for(j=0;j<n;j++)
 			{
-				printf("%c",zi[i].e[j]);
+				my_printf("%c",zi[i].e[j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}	
 	}
 	}

@@ -3,11 +3,11 @@
 int n1,n2,a1[200],a2[200],i,j,t;
 void toscan()
 {
-  scanf("%d%d",&n1,&n2);
+  my_scanf("%d%d",&n1,&n2);
   for(i=0;i<n1;i++)
-    scanf("%d",&a1[i]);
+    my_scanf("%d",&a1[i]);
   for(i=0;i<n2;i++)
-    scanf("%d",&a2[i]);
+    my_scanf("%d",&a2[i]);
 }
 
 void paixu()
@@ -36,9 +36,9 @@ void hebing()
 
 void toprint()
 {
-    printf("%d",a1[0]);
+    my_printf("%d",a1[0]);
     for(i=1;i<n1+n2;i++)
-        printf(" %d",a1[i]);
+        my_printf(" %d",a1[i]);
 }
 
 main_bench()

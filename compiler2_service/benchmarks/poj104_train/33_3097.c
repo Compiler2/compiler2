@@ -4,35 +4,35 @@ int main_bench()
 {
 	int n,i,j;
 	char a;
-	scanf("%d",&n);
-    scanf("%c",&a);
+	my_scanf("%d",&n);
+    my_scanf("%c",&a);
 	for(i=0;i<n;i++)
 	{
         
 		for(j=0;j<260;j++)
 		{
 			
-			scanf("%c",&a);
+			my_scanf("%c",&a);
 			if(a=='\n')
 			{
-				printf("\n");
+				my_printf("\n");
 				break;
 			}
 			else if(a=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			else if(a=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
             else if(a=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
             else if(a=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}
 		}
 	}

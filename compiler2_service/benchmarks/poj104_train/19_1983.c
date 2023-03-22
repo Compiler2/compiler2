@@ -31,15 +31,15 @@ int main_bench()
 		}
 	}
    
-	if(judge==0)printf("%s\n", s);
+	if(judge==0)my_printf("%s\n", s);
 	else
 	{
-		printf("%s", a[0]);
+		my_printf("%s", a[0]);
 		for(i=1;i<num+1;i++)
 		{
-			printf(" %s", a[i]);
+			my_printf(" %s", a[i]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

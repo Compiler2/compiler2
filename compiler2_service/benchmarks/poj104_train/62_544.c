@@ -18,6 +18,6 @@ int main_bench()
 		}
 	}
 	for (i=0;i<strlen(p)-num;i++)
-		printf("%c",*(p+i));
+		my_printf("%c",*(p+i));
 	return 0;
 }

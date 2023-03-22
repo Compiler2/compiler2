@@ -4,15 +4,15 @@ int main_bench()
 {
 	char a[10000],b[10000];
 	int l1,l2,l,i,j,t[10000],z;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
     l1=strlen(a);
 	l2=strlen(b);
 	l=0;
 	z=0;
 	if (l1==l2) l=l1;
 	else{
-		printf("NO\n");
+		my_printf("NO\n");
 		z=1;
 	}
 	for (i=0;i<l;i++){
@@ -26,10 +26,10 @@ int main_bench()
 			}
 			if (t[i]==0){
                 z=1;
-				printf("NO\n");
+				my_printf("NO\n");
 				break;
 			}
 	}
-    if (z!=1) printf("YES\n");
+    if (z!=1) my_printf("YES\n");
 	return 0;
 }

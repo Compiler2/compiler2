@@ -36,6 +36,6 @@ int main_bench()
 		str++;
 	}
 	for(i=0;i<=j;i++)
-		printf("(%c,%d)",b[i].letter,b[i].count);
+		my_printf("(%c,%d)",b[i].letter,b[i].count);
 	return 0;
 }

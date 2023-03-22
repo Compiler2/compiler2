@@ -19,11 +19,11 @@ int main_bench(){
 	hz[t]=m-1-sz[t-1];
 	for(i=0;i<=t;i++){
         if((hz[i]==1)&&(i!=0)){continue;}
-		else if(i==t){printf("%d",hz[i]);}
-		else if(i==0){printf("%d,",hz[i]);}
-		else{printf("%d,",hz[i]-1);}
+		else if(i==t){my_printf("%d",hz[i]);}
+		else if(i==0){my_printf("%d,",hz[i]);}
+		else{my_printf("%d,",hz[i]-1);}
 		}
 	}
-	if(t==0){printf("%d",m);}
+	if(t==0){my_printf("%d",m);}
 	return 0;
 }

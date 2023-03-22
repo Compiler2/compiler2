@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int *p,i,j,n,m,a[200000],k=0;
-	scanf ("%d\n",&n);
+	my_scanf ("%d\n",&n);
 	p=a;
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d",(p+i));
+		my_scanf ("%d",(p+i));
 	}
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 	for (i=0,p=a;i<n;i++)
 	{
 		if (*(p+i)==m)
@@ -24,7 +24,7 @@ int main_bench()
 	}
 	for (i=0,p=a;i<n-k-1;i++)
 	{
-		printf ("%d ",*(p+i));
+		my_printf ("%d ",*(p+i));
 	}
-	printf ("%d",*(p+n-k-1));
+	my_printf ("%d",*(p+n-k-1));
 }

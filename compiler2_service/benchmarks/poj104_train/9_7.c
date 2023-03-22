@@ -5,10 +5,10 @@ int main_bench()
 {
 	int	i, j, n, sr=0, jr=0, age, srage[100], jrage[100];
 	char num[10], srnum[100][10], jrnum[100][10];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s %d", &num, &age);
+		my_scanf("%s %d", &num, &age);
 		if(age<60)
 		{
 			strcpy(jrnum[jr],num);
@@ -37,7 +37,7 @@ int main_bench()
 			}
 		}
 	}
-	for(i=0; i<sr; i++) printf("%s\n", srnum[i]);
-	for(i=0; i<jr; i++) printf("%s\n", jrnum[i]);
+	for(i=0; i<sr; i++) my_printf("%s\n", srnum[i]);
+	for(i=0; i<jr; i++) my_printf("%s\n", jrnum[i]);
 	return 0;
 }

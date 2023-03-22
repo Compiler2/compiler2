@@ -5,11 +5,11 @@ int main_bench()
     double n,c=0;
     int i,j=0,zs;
     char s1[501],s2[501];
-    scanf("%lf",&n);
-    scanf("%s%s",s1,s2);
+    my_scanf("%lf",&n);
+    my_scanf("%s%s",s1,s2);
 if(strlen(s1)!=strlen(s2))
 {
-    printf("error");
+    my_printf("error");
 }else{
       zs=strlen(s1);
       for(i=0;i<zs;i++)
@@ -22,7 +22,7 @@ if(strlen(s1)!=strlen(s2))
       
       if(j!=zs)
       {
-                 printf("error");
+                 my_printf("error");
                  return 0;
       }else{
          for(i=0;i<zs;i++)
@@ -34,9 +34,9 @@ if(strlen(s1)!=strlen(s2))
          }
          if(c/zs>n)
          {
-                     printf("yes");
+                     my_printf("yes");
          }else{
-                     printf("no");
+                     my_printf("no");
          }
       }
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int a[100],i,n,j,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for (i=0;i<n;i++)
 	{
 		for (j=1;j<n;j++)
@@ -18,7 +18,7 @@ int main_bench()
 	{
 		if (a[i]!=0)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			x=i;
 			goto loop;
         }
@@ -26,7 +26,7 @@ int main_bench()
     loop:for(i=x+1;i<n;i++)
 		 {
 			 if (a[i]!=0)
-			 printf(",%d",a[i]);
+			 my_printf(",%d",a[i]);
 		 }
-		 printf("\n");
+		 my_printf("\n");
 }

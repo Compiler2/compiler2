@@ -15,13 +15,13 @@ int main_bench()
 	int i=0;
 	while(1)
 	{
-	scanf("%d %d",&num,&key);
+	my_scanf("%d %d",&num,&key);
 	if(key==0)
 		break;
     int final=yuesefu(key,num);	
 	if(i++)
-	    printf("\n");
-	printf("%d",final);
+	    my_printf("\n");
+	my_printf("%d",final);
 
 	}
 	return 0;

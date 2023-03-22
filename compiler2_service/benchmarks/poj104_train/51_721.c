@@ -24,7 +24,7 @@ int main_bench()
 {
     int n, i, len=0, max;
     char *p, str[10];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     gets(input);
     gets(p=input);
     len=strlen(input);
@@ -43,7 +43,7 @@ int main_bench()
     qsort(array, cc, sizeof(ngram), cmp_sort);
     max=array[0].count;
     if(max>1){
-        printf("%d\n%s\n", max, array[0].str);
+        my_printf("%d\n%s\n", max, array[0].str);
         for(i=1; i<cc; i++) if(array[i].count==max) puts(array[i].str);
     }
     else puts("NO");

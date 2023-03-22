@@ -6,8 +6,8 @@ int main_bench()
     char a[255]="",b[255]="",f[255]="";
     int i,j,m,n,p,q,x,y;
     int c[255]={0},d[255]={0},e[255];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     i=0;while(a[i]=='0'){i++;}
     j=0;while(b[j]=='0'){j++;}
     for(x=0;x<255-i;x++)
@@ -15,7 +15,7 @@ int main_bench()
     for(y=0;y<255-j;y++)
     {b[y]=b[y+j];}
     if(a[0]=='\0'&&b[0]=='\0')
-    {printf("0");}
+    {my_printf("0");}
     else
     {
     i=strlen(a);
@@ -32,7 +32,7 @@ int main_bench()
     q=254;while(e[q]==0){q--;}
     for(x=0;x<q+1;x++)
     {f[x]=e[q-x]+'0';}
-    printf("%s\n",f);
+    my_printf("%s\n",f);
     }
       
 }

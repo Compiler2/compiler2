@@ -5,14 +5,14 @@ int main_bench()
 	int a[101];
 	int b[101];
 	int m,n,i,j,k,l,w,x,y,z,c,d;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=0;j<n;j++)
 	{
-		scanf("%d",&b[j]);
+		my_scanf("%d",&b[j]);
 	}
 	for(k=0;k<m-1;k++)
 	{
@@ -40,12 +40,12 @@ int main_bench()
 	}
 	for(y=0;y<m-1;y++)
 	{
-		printf("%d ",a[y]);
+		my_printf("%d ",a[y]);
 	}
-	printf("%d",a[m-1]);
+	my_printf("%d",a[m-1]);
 	for(z=0;z<n;z++)
 	{
-		printf(" %d",b[z]);
+		my_printf(" %d",b[z]);
 	}
 	return 0;
 }

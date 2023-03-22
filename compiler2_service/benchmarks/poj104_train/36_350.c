@@ -5,15 +5,15 @@ int main_bench()
 	void sort(char s[]);
 	char a[20]={0},b[20]={0};
 	int i,k=0;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	sort(a);
 	sort(b);
 	for(i=0;i<20;i++)
 	{
 		if(a[i]!=b[i])k++;
 	}
-	if(k==0)printf("YES");
-	else printf("NO");
+	if(k==0)my_printf("YES");
+	else my_printf("NO");
 }
 
 void sort(char s[])

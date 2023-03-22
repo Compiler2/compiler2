@@ -13,8 +13,8 @@ main_bench()
    if(k>=j)
   {
    for(h=i;h<i+n;h++)
-   printf("%c",s[h]);
-   printf("\n");break;}
+   my_printf("%c",s[h]);
+   my_printf("\n");break;}
 
    
    

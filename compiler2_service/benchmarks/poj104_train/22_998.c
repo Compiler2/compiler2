@@ -4,15 +4,15 @@ int main_bench()
 {
 	int num[300],t,a,i,j;
 	a=0;
-    scanf("%d",&num[a]);
+    my_scanf("%d",&num[a]);
 	a=1;
-	while (	scanf(",%d",&num[a]))
+	while (	my_scanf(",%d",&num[a]))
 	{	
 	    a=a+1;
 	}
 
 	if (a==1)
-		printf("No");
+		my_printf("No");
     else
 	{
 	for(j=0;j<=a-1;j++)
@@ -27,11 +27,11 @@ int main_bench()
 			{num[a-1]=161;}
 			if(num[a-1]==81)
 			{num[a-1]=80;}
-			printf("%d",num[a-1]);break;
+			my_printf("%d",num[a-1]);break;
 		}
 	}
        if(a==1)
-		printf("No");
+		my_printf("No");
 
     }
 	return 0;

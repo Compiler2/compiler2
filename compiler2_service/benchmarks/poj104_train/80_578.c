@@ -5,12 +5,12 @@ int main_bench()
 	int year(int x);
 	int diy(int x,int y,int z);
 	int a,b,c,d,e,f,y1,y2,an;
-scanf("%d %d %d",&a,&b,&c);
-scanf("%d %d %d",&d,&e,&f);
+my_scanf("%d %d %d",&a,&b,&c);
+my_scanf("%d %d %d",&d,&e,&f);
 y1=year(a)+diy(a,b,c);
 y2=year(d)+diy(d,e,f);
 an=y2-y1;
-printf("%d\n",an);
+my_printf("%d\n",an);
 }
 int year(int x)
 {

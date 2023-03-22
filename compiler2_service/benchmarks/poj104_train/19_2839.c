@@ -12,7 +12,7 @@ int main_bench()
 	while(gets(s))
 	{
 		
-		scanf("%s%s ", a, b);	
+		my_scanf("%s%s ", a, b);	
 		
 		int i = 0;
 		int lena = strlen(a);
@@ -29,7 +29,7 @@ int main_bench()
 				if(a[j] == 0)
 				{
 					i += lena;	
-					printf("%s", b);
+					my_printf("%s", b);
 				}
 				else
 				{

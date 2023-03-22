@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,m,c,j,k,t;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  i=n;c=0;j=0;
  while(i>0)
   {
@@ -19,6 +19,6 @@ int main_bench()
   	i=i/10;
   	}
   for(t=1;t<=(j-k);t++)
-  printf("0");
- printf("%d",c);
+  my_printf("0");
+ my_printf("%d",c);
 }

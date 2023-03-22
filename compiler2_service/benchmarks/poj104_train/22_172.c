@@ -4,7 +4,7 @@ int main_bench()
 {
 	 int i,j=0,a[300]={0},t,k,flag=0,m;
 	char str[10000];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	m=strlen(str);
 	for(i=0;i<m;i++)
 	{
@@ -28,8 +28,8 @@ int main_bench()
 	{
 		if(a[i]!=a[0])
 		{
-			printf("%d",a[i]);flag++;break;
+			my_printf("%d",a[i]);flag++;break;
 		}
 	}
-	if(flag==0) printf("No");
+	if(flag==0) my_printf("No");
 }

@@ -24,7 +24,7 @@ int main_bench()
     {
         if(b[i]==0)
         {
-            printf("%c",s[i]);
+            my_printf("%c",s[i]);
         }
     }
      return 0;

@@ -9,10 +9,10 @@ int main_bench()
 	int j,temp;
 	int p=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 
 
 	for(i=0;i<n;i++)
@@ -37,12 +37,12 @@ int main_bench()
 	   }
 	}
 
-	if(p==1) printf("%d",b[0]);
+	if(p==1) my_printf("%d",b[0]);
 	else
 	{
-		printf("%d",b[0]);
+		my_printf("%d",b[0]);
 		for(i=1;i<=p-1;i++)
-			printf(",%d",b[i]);
+			my_printf(",%d",b[i]);
 	
 	}
 

@@ -6,7 +6,7 @@ int main_bench()
  char s[10000];
  int a[10000];
  char c,d;
- scanf("%s",s);
+ my_scanf("%s",s);
  l=strlen(s);
  p=l;
  c=s[0];
@@ -19,7 +19,7 @@ int main_bench()
   {
    if(s[j]==c&&s[j+1]==d)
    {
-    printf("%d %d\n",a[j],a[j+1]);
+    my_printf("%d %d\n",a[j],a[j+1]);
     for(k=j+2;k<p;k++)
     {
      s[k-2]=s[k];

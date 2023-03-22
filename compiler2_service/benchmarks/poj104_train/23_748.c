@@ -10,7 +10,7 @@ main_bench()
 	p=*s;
 	while (c==' ') 
 	{
-		scanf("%s",p);
+		my_scanf("%s",p);
 		c=getchar();
 		i++;
         p=*(s+i);
@@ -18,8 +18,8 @@ main_bench()
     for (j=i-1;j>0;j--)
 	{
 		p=*(s+j);
-		printf("%s ",p); 
+		my_printf("%s ",p); 
 	}
 	p=*s;
-    printf("%s\n",p);
+    my_printf("%s\n",p);
 }

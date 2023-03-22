@@ -5,7 +5,7 @@ int main_bench()
 char f[100000];
 int t,i,j,k,a;
 char b;
-scanf("%d",&t);
+my_scanf("%d",&t);
 gets(f);
 for(i=0;i<t;i++)
 {
@@ -28,9 +28,9 @@ for(i=0;i<t;i++)
 			;
 	}
 	if(b=='!')
-	printf("no");
+	my_printf("no");
 	else
-	printf("%c\n",b);
+	my_printf("%c\n",b);
 }
 	return 0;
 }

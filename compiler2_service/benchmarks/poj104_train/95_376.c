@@ -17,17 +17,17 @@ int main_bench()
 			logo=0;
 		    if(c[i] > d[i])
 			{
-				printf(">\n");
+				my_printf(">\n");
 			    break;
 			}
             else if(c[i] < d[i])
 			{
-	            printf("<\n");
+	            my_printf("<\n");
 		        break;
 			}                            
 		}
     }
 	if(logo==1)
-		printf("=\n");
+		my_printf("=\n");
 	return 0; 
 }

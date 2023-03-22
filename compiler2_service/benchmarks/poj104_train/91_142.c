@@ -12,6 +12,6 @@ int main_bench()
 {
 	char s[101],c[101]={'\0'};
 	gets(s);
-	printf("%s\n",calc(s,c));
+	my_printf("%s\n",calc(s,c));
 	return 0;
 }

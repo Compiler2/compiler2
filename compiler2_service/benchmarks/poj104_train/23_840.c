@@ -33,8 +33,8 @@ int main_bench()
 	a[sum-1][n]='\0';
 	for(i=0;i<sum;i++)
 	{
-		printf("%s",a[sum-1-i]);
+		my_printf("%s",a[sum-1-i]);
 		if(sum-1-i!=0)
-			printf(" ");
+			my_printf(" ");
 	}
 }

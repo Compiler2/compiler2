@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int shu[1000][1000];
 int i,j;
 int sth,stl,enh,enl;
 for(i=0;i<n;i++){
     for(j=0;j<n;j++){
-	scanf("%d",&shu[i][j]);
+	my_scanf("%d",&shu[i][j]);
 	}
 }
 int b=-1;
@@ -33,6 +33,6 @@ for(i=n-1;i>=0;i--){
 }
 int s;
 s=(enh-sth-1)*(enl-stl-1);
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

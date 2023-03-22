@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[21];
 	for(i=0;i<n;i++){
-        scanf("%s",s);
+        my_scanf("%s",s);
 		if(s[0]!='_'&&s[0]!='A'&&s[0]!='B'&&s[0]!='C'&&s[0]!='D'&&s[0]!='E'&&s[0]!='F'&&s[0]!='G'
 			&&s[0]!='H'&&s[0]!='I'&&s[0]!='J'&&s[0]!='K'&&s[0]!='L'&&s[0]!='M'&&s[0]!='N'&&s[0]!='O'
 			&&s[0]!='P'&&s[0]!='Q'&&s[0]!='R'&&s[0]!='S'&&s[0]!='T'&&s[0]!='U'&&s[0]!='V'&&s[0]!='W'
@@ -13,7 +13,7 @@ int main_bench(){
 			&&s[0]!='f'&&s[0]!='g'&&s[0]!='h'&&s[0]!='i'&&s[0]!='j'&&s[0]!='k'&&s[0]!='l'&&s[0]!='m'
 			&&s[0]!='n'&&s[0]!='o'&&s[0]!='p'&&s[0]!='q'&&s[0]!='r'&&s[0]!='s'&&s[0]!='t'&&s[0]!='u'
 			&&s[0]!='v'&&s[0]!='w'&&s[0]!='x'&&s[0]!='y'&&s[0]!='z'){
-			printf("no\n");
+			my_printf("no\n");
 			
 		}
 		
@@ -34,9 +34,9 @@ int main_bench(){
 			
 		}	
         if(k==0)
-          printf("yes\n");
+          my_printf("yes\n");
         else
-          printf("no\n");
+          my_printf("no\n");
         
 		}
 	}

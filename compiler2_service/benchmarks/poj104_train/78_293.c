@@ -26,7 +26,7 @@ b[li]='l';
 
 for(i=3;i>=0;i--)
 {
-printf("%c %d\n",b[i],a[i]);
+my_printf("%c %d\n",b[i],a[i]);
 }
 
 }

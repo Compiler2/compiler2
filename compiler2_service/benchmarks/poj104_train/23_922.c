@@ -22,5 +22,5 @@ int main_bench()
 	if (j<0)
 		for (i=0;i<x;i++)
 			b[n-x+i]=a[i];
-	printf("%s",b);
+	my_printf("%s",b);
 }

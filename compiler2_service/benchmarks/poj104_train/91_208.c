@@ -9,7 +9,7 @@ int main_bench()
 		str2[k]=str1[i]+str1[j];
 	str2[k]=str1[i]+str1[0];
 	for(i=0;str2[i]!='\0';i++)
-		printf("%c",str2[i]);
+		my_printf("%c",str2[i]);
 }
 
 

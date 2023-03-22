@@ -7,7 +7,7 @@ main_bench()
 	int j=0;
 	int s;
 	int all=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student
 	{
 		char name[20];
@@ -21,7 +21,7 @@ main_bench()
 	struct student stu[101];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %s %s %d",stu[i].name,&stu[i].avg,&stu[i].cls,stu[i].aso,stu[i].wst,&stu[i].pap);
+		my_scanf("%s %d %d %s %s %d",stu[i].name,&stu[i].avg,&stu[i].cls,stu[i].aso,stu[i].wst,&stu[i].pap);
 	}
 	for(i=0;i<n;i++)
 		stu[i].mny=0;
@@ -49,7 +49,7 @@ main_bench()
 	}
 	for(i=0;i<n;i++)
 		all=all+stu[i].mny;
-	printf("%s\n",stu[j].name);
-	printf("%d\n",s);
-	printf("%d",all);
+	my_printf("%s\n",stu[j].name);
+	my_printf("%d\n",s);
+	my_printf("%d",all);
 }

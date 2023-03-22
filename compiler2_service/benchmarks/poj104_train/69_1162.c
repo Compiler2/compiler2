@@ -7,7 +7,7 @@ main_bench()
   char  str1[251],str2[251];
   int   str3[252];
   int k,t;
-  scanf("%s %s",str1,str2);
+  my_scanf("%s %s",str1,str2);
   int i=strlen(str1)-1;
   int j=strlen(str2)-1;
   k=0;
@@ -31,7 +31,7 @@ main_bench()
   if(str3[k]!=0)
    break;
   for(;k>=0;k--)
-  printf("%d",str3[k]);
+  my_printf("%d",str3[k]);
 
 
 }

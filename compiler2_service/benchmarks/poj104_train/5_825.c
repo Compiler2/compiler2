@@ -5,20 +5,20 @@ int main_bench()
 	int b,c,i;
 	double a,j=0;
 	char s1[501],s2[501];
-	scanf("%lf",&a);
-	scanf("%s",&s1);
-	scanf("%s",&s2);
+	my_scanf("%lf",&a);
+	my_scanf("%s",&s1);
+	my_scanf("%s",&s2);
 	b=strlen(s1);
 	c=strlen(s2);
 	if(b!=c)
-		printf("error");
+		my_printf("error");
 	if(b==c)
 	{
 		for(i=0;i<b;i++)
 		{
 			if(s1[i]!='A'&&s1[i]!='T'&&s1[i]!='C'&&s1[i]!='G'&&s2[i]!='A'&&s2[i]!='T'&&s2[i]!='C'&&s2[i]!='G')
 			{
-				printf("error");
+				my_printf("error");
 				j=-1;
 				break;
 			}
@@ -32,9 +32,9 @@ int main_bench()
 		{
 			j=j/b;
 			if(j>a)
-				printf("yes");
+				my_printf("yes");
 			if(j<=a)
-				printf("no");
+				my_printf("no");
 		}
 	}
 	return 0;

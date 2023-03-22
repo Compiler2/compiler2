@@ -5,9 +5,9 @@ void duqu(int n,int m,int a[],int b[])
 {
 	int i;
     for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<m;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
   
 }
 void sort(int a[],int n,int b[],int m)
@@ -45,8 +45,8 @@ void xian(int array[],int n,int m)
 {
 	int i;
 	for(i=0;i<(n+m-1);i++)
-		printf("%d ",array[i]);
-	printf("%d",array[n+m-1]);
+		my_printf("%d ",array[i]);
+	my_printf("%d",array[n+m-1]);
 }
 
 
@@ -58,7 +58,7 @@ int main_bench()
 	void hebing(int array1[],int array2[],int n,int m);
 	void xian(int array[],int n,int m);
 	int n,m,a[1000],b[1000];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	duqu(n,m,a,b);
 	sort(a,n,b,m);
     hebing(a,b,n,m);

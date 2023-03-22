@@ -6,7 +6,7 @@ int main_bench()
     int l,j,m,k;
     int s=0;
     char n[40],x[40],y[40];
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     
     l=strlen(n);
     for(int i=0;i<l;i++)
@@ -18,7 +18,7 @@ int main_bench()
                  else n[i]=n[i]-'0';
                  s=n[i]+s*a;
     }
-    if(s==0) printf("0");
+    if(s==0) my_printf("0");
     else
     {
     for(j=0;s!=0;j++)
@@ -38,7 +38,7 @@ int main_bench()
     
   y[j]='\0';
 
-    printf("%s",y);
+    my_printf("%s",y);
 }
     getchar();
     getchar();

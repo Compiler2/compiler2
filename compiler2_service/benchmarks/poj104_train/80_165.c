@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,m,n,i,j,k,p;
-	scanf("%d %d %d",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	m=0;
 	n=0;
 	for (i=1;i<b;i++)
@@ -35,5 +35,5 @@ int main_bench()
 		else m=m+30;}
     m=m+f;
 	p=m-n;
-	printf("%d",p);
+	my_printf("%d",p);
 }

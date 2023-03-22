@@ -3,14 +3,14 @@
 int main_bench(){
     char zf[256];
 	int i,j,n,count=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s",zf);
+		my_scanf("%s",zf);
 		if(zf[0]>'z'||(zf[0]<'a'&&zf[0]>'Z')||zf[0]<'A'){
 			if(zf[0]!='_'){
 			count=0;
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		}
@@ -19,12 +19,12 @@ int main_bench(){
 				count=1;
 			else{
 				count=0;
-				printf("no\n");
+				my_printf("no\n");
 				break;
 			}
 					
 	}if(count==1)
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 	return 0;
 

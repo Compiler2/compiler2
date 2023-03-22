@@ -7,26 +7,26 @@ int main_bench()
 	int len;
 	char DNA[500];
 	char dna[500];
-	scanf("%lf",&per);
-	scanf("%s",&DNA);
-	scanf("%s",&dna);
+	my_scanf("%lf",&per);
+	my_scanf("%s",&DNA);
+	my_scanf("%s",&dna);
 	SUM=strlen(DNA);
 	len=strlen(dna);
 	if(SUM!=len)
 	{
-		printf("error\n");
+		my_printf("error\n");
 		return 0;
 	}
 	for(int j=0;j<SUM;j++)
 	{
 		if(DNA[j]!='A'&&DNA[j]!='T'&&DNA[j]!='C'&&DNA[j]!='G')
 		{
-			printf("error\n");
+			my_printf("error\n");
 			return 0;
 		}
 		if(dna[j]!='A'&&dna[j]!='T'&&dna[j]!='C'&&dna[j]!='G')
 		{
-			printf("error\n");
+			my_printf("error\n");
 			return 0;
 		}
 	}
@@ -41,11 +41,11 @@ int main_bench()
 	SUM=sum/SUM;
 	if(SUM>per)
 	{
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 	else
 	{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 }

@@ -4,11 +4,11 @@ main_bench()
 {
       int a(int x);
       int m,i,k;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       for(i=2;i<m/2+1;i++)
       {
                           if(a(i)==1&&a(m-i)==1)
-                          printf("%d %d\n",i,m-i);
+                          my_printf("%d %d\n",i,m-i);
       }
       getchar();
       getchar();

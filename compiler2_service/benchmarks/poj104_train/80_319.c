@@ -9,8 +9,8 @@ int main_bench()
     int year1,year2,month1,month2,day1,day2;
 	int sum=0,i;
 	
-	scanf("%d%d%d",&year1,&month1,&day1);
-	scanf("%d%d%d",&year2,&month2,&day2);
+	my_scanf("%d%d%d",&year1,&month1,&day1);
+	my_scanf("%d%d%d",&year2,&month2,&day2);
 
 	if(year1!=year2){
 		if(isrunnian(year1)==1){
@@ -31,7 +31,7 @@ int main_bench()
 		sum=dijitian(year2,month2,day2)-dijitian(year1,month1,day1);
 	}
 
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 	return 0;
 }

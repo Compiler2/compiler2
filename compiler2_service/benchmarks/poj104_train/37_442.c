@@ -24,8 +24,8 @@ main_bench()
                       {
                                       if(b[a[0][j]-'a']==1) break;
                                       }
-                                      if(j==n) printf("no\n");
-                                      else printf("%c\n",a[0][j]);
+                                      if(j==n) my_printf("no\n");
+                                      else my_printf("%c\n",a[0][j]);
                       }
       
       getchar(); getchar(); getchar(); getchar(); getchar();

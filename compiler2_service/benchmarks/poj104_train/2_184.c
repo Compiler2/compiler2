@@ -8,10 +8,10 @@ struct book
 main_bench()
 {
   int n,i,j,k,count[26],max;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-    scanf("%d %s",&bo[i].num,&bo[i].aut);
+    my_scanf("%d %s",&bo[i].num,&bo[i].aut);
   }
   for(i=0;i<26;i++)
     count[i]=0;
@@ -29,13 +29,13 @@ main_bench()
     if(count[i]>max)
       {max=count[i];k=i;}
   }
-  printf("%c\n%d\n",k+65,max);
+  my_printf("%c\n%d\n",k+65,max);
   for(i=0;i<n;i++)
   {
     for(j=0;j<26;j++)
       {
         if(bo[i].aut[j]-65==k)
-          printf("%d\n",bo[i].num);
+          my_printf("%d\n",bo[i].num);
       }
   }
 }

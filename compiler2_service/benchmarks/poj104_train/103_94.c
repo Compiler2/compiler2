@@ -3,7 +3,7 @@
 int main_bench()
 {
     char s[1000],ss[1000];int i,j,l,c[1000];
-    scanf("%s",s);
+    my_scanf("%s",s);
     for(i=0;s[i]!='\0';i++)
     {
     if(s[i]>='a'&&s[i]<='z')
@@ -23,7 +23,7 @@ int main_bench()
        c[j]++;}
        }
     for(i=0;i<=j;i++)
-      printf("(%c,%d)",ss[i],c[i]);
+      my_printf("(%c,%d)",ss[i],c[i]);
     getchar();getchar();
        
 }

@@ -38,7 +38,7 @@ int main_bench()
 			j=0;i++;
 	}
 	for(k=m-1;k>0;k--)
-			printf("%s ",s[k]); 
-	       printf("%s",s[0]);                                              
+			my_printf("%s ",s[k]); 
+	       my_printf("%s",s[0]);                                              
 	
 }

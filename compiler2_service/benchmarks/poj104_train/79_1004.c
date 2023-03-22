@@ -7,7 +7,7 @@ int main_bench()
 	int n,m,i,cycle;
          cycle=0;
 	int k[30]={0};
-	while(scanf("%d %d",&n,&m))
+	while(my_scanf("%d %d",&n,&m))
 	{
 		if((n!=0)&&(m!=0))
 		{
@@ -19,7 +19,7 @@ int main_bench()
 	}
 
 	for(i=0;i<cycle;i++)
-		printf("%d\n",k[i]);
+		my_printf("%d\n",k[i]);
 
 	return 0;
 }

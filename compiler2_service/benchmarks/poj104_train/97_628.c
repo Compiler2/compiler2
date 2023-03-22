@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	 int i,a,b,c,d,e;
 	 for(i=0;n-100>=0;i++){
 		 n=n-100;
@@ -24,6 +24,6 @@ int main_bench(){
 	 for(e=0;n-1>=00;e++){
 		 n=n-1;
 	 }
-	 printf("%d\n%d\n%d\n%d\n%d\n%d",i,a,b,c,d,e);
+	 my_printf("%d\n%d\n%d\n%d\n%d\n%d",i,a,b,c,d,e);
 	 return 0;
 }

@@ -2,22 +2,22 @@
 
 int main_bench(){
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int i,x,y;
   double a,b;
-  scanf("%d%d",&x,&y);
+  my_scanf("%d%d",&x,&y);
     a=1.0*y/x;
   for(i=2;i<=n;i++){
-    scanf("%d%d",&x,&y);
+    my_scanf("%d%d",&x,&y);
 	b=1.0*y/x;
 	  if((a-b)>0.05){
-	    printf("worse\n");
+	    my_printf("worse\n");
 	  }
 	  else if((b-a)>0.05){
-	    printf("better\n");
+	    my_printf("better\n");
 	  }
 	  else{
-	    printf("same\n");
+	    my_printf("same\n");
 	  }
 	}
   return 0;

@@ -18,16 +18,16 @@ int prime(int t)
 int main_bench()
 {
 	int n,i,k,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	k=0;
 	for(i=3;i<n-1;i++)
 	{
 		if((prime(i)==1)&&(prime(i+2)==1))
-		printf("%d %d\n",i,i+2);
+		my_printf("%d %d\n",i,i+2);
 		k+=1;
 	}
 	if(k==0)
-		printf("empty");
+		my_printf("empty");
 	return 0;
 }
 

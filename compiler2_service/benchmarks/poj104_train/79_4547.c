@@ -20,7 +20,7 @@ int main_bench()
      memset(b,0,300*sizeof(int));
      memset(c,0,300*sizeof(int));
         
-     scanf("%d %d\n",&n,&m);
+     my_scanf("%d %d\n",&n,&m);
      if (n==0 &&m==0)
      break;
      
@@ -68,7 +68,7 @@ int main_bench()
  
   for( i=0;i<n;i++)
    if (b[i]==a[0])
-   printf("%d\n",i+1);
+   my_printf("%d\n",i+1);
 } 
 }
 

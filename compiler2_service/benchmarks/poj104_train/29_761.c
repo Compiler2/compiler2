@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int m,n[100],i,str;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -20,7 +20,7 @@ int main_bench()
 			p=str;
 			t++;
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

@@ -15,13 +15,13 @@ int main_bench()
 		else
 		{
 			for(t=i+1;t<i+1+m;t++)
-				printf("%c",str[t]); 
+				my_printf("%c",str[t]); 
 			m=0;
-			printf(" "); 
+			my_printf(" "); 
 		}
 	}
 	for(t=i+1;t<i+1+m;t++)
-		printf("%c",str[t]); 
+		my_printf("%c",str[t]); 
 	return 0;
 }
 

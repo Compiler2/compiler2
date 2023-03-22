@@ -8,10 +8,10 @@ a=0;
 b=0;
 c=0;
 d=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%d",&y[i]);
+my_scanf("%d",&y[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -28,9 +28,9 @@ e=(double)100*a/n;
 f=(double)100*b/n;
 g=(double)100*c/n;
 h=(double)100*d/n;
-printf("1-18: %.2lf%%\n",e);
-printf("19-35: %.2lf%%\n",f);
-printf("36-60: %.2lf%%\n",g);
-printf("60??: %.2lf%%\n",h);
+my_printf("1-18: %.2lf%%\n",e);
+my_printf("19-35: %.2lf%%\n",f);
+my_printf("36-60: %.2lf%%\n",g);
+my_printf("60??: %.2lf%%\n",h);
 return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench()
 {   int m,n,k,i,t=0,j=1,t1;
     char a[20],b[20],c[20];
-    scanf("%d",&m);
-    scanf("%s",a);
-    scanf("%d",&n);
+    my_scanf("%d",&m);
+    my_scanf("%s",a);
+    my_scanf("%d",&n);
     k=strlen(a);
     for(i=k-1;i>=0;i--)
        {  if(a[i]>=48&&a[i]<=57) t=t+(a[i]-48)*j;
@@ -13,7 +13,7 @@ int main_bench()
           else if(a[i]>=97&&a[i]<=122) t=t+(a[i]-87)*j;
           j=j*m;
        }
-    if(t==0) printf("%d",t);
+    if(t==0) my_printf("%d",t);
     else {i=0;
     while(t>0)
        {  t1=t%n;
@@ -24,8 +24,8 @@ int main_bench()
        }
     for(j=0;j<i;j++)
        {  c[j]=b[i-1-j];
-          printf("%c",c[j]);}}
-    printf("\n");  
-    scanf("%d",&m);
+          my_printf("%c",c[j]);}}
+    my_printf("\n");  
+    my_scanf("%d",&m);
 }       
        

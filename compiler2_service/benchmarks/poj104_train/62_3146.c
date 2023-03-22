@@ -15,7 +15,7 @@ del();
 for (i=0;i<len;i++)
 {
 	if (sen[i]!=126)
-	printf("%c",sen[i]);
+	my_printf("%c",sen[i]);
 }
 return 0;
 }

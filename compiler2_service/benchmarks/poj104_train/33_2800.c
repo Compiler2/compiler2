@@ -2,11 +2,11 @@
 
 int main_bench(){
 int i,p,n,q;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
 	char a[256];
 	char b[256];
-scanf("%s",a);
+my_scanf("%s",a);
 p=strlen(a);
 for(q=0;q<p;q++){
 	if(a[q]=='A'){
@@ -20,7 +20,7 @@ for(q=0;q<p;q++){
 	}
 	}
 b[q]='\0';
-printf("%s\n",b);
+my_printf("%s\n",b);
 }
 return 0;
 }

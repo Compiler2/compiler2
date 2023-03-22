@@ -3,7 +3,7 @@
 int main_bench()
 {
      int a,b,c,d,e,f,g,h,i,j=0;
-  scanf("%d%d",&c,&d);
+  my_scanf("%d%d",&c,&d);
   i=0;
   for(a=c;a<=d;a++)
   {
@@ -28,7 +28,7 @@ int main_bench()
      }
      if(h==0)
      {
-         printf("%d",e);
+         my_printf("%d",e);
          i++;
          j=1;
      }
@@ -59,13 +59,13 @@ int main_bench()
      }
      if(h==0)
      {
-         printf(",%d",e);
+         my_printf(",%d",e);
          i++;
      }
     }
 
   }
     if(i==0)
-        printf("no");
+        my_printf("no");
   return 0;
 }

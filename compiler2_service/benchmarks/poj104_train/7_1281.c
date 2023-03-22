@@ -22,12 +22,12 @@ int main_bench()
 			{
 				for(j=0;j<i;j++)pre[j]=str[j];
 				for(j=i+strlen(sub);j<strlen(str);j++)post[j-i-strlen(sub)]=str[j];
-				printf("%s%s%s\n",pre,re,post);
+				my_printf("%s%s%s\n",pre,re,post);
 				return 0;
 			}
 
 		}
 	}
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 	return 0;
 }

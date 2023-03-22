@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[n][81],c;
 	c=getchar();
 	int ss[n];
@@ -21,6 +21,6 @@ int main_bench()
 			}
 		}
 		else ss[i]=0;
-		printf("%d\n",ss[i]);
+		my_printf("%d\n",ss[i]);
 	}
 }

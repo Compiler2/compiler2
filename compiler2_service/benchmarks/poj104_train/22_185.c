@@ -5,11 +5,11 @@ int main_bench()
 	int counter=0,i=0,j,t,a[300];
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		i++;
 		counter++;
 	}while(getchar()!='\n');
-	if(counter==1) printf("No\n");
+	if(counter==1) my_printf("No\n");
 	else
 	{
 	    for(i=0;i<counter;i++)
@@ -20,13 +20,13 @@ int main_bench()
 				    a[i]=a[j];
 			        a[j]=t;
 				 }
-	    if(a[counter-1]==a[0]) printf("No\n");
+	    if(a[counter-1]==a[0]) my_printf("No\n");
 		else{
 		for(i=1;i<counter;i++)
 		{
     		if(a[i]!=a[0])
 			{
-	     		printf("%d\n",a[i]);
+	     		my_printf("%d\n",a[i]);
 	    		break;
 			}
 		}

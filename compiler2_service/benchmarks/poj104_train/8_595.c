@@ -4,11 +4,11 @@ int main_bench()
 {
     void paixu(int array[],int x);
     int i,n1,n2,a[50],b[50],c[100];
-    scanf("%d %d",&n1,&n2);
+    my_scanf("%d %d",&n1,&n2);
     for(i=0;i<=n1-1;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<=n2-1;i++)
-    scanf("%d",&b[i]);
+    my_scanf("%d",&b[i]);
     paixu(a,n1);
     paixu(b,n2);
     for(i=0;i<=n1-1;i++)
@@ -16,8 +16,8 @@ int main_bench()
     for(i=n1;i<=n1+n2-1;i++)
     c[i]=b[i-n1];
     for(i=0;i<=n1+n2-2;i++)
-    printf("%d ",c[i]);
-    printf("%d",c[n1+n2-1]);
+    my_printf("%d ",c[i]);
+    my_printf("%d",c[n1+n2-1]);
     return 0;
 }
 void paixu(int array[],int x)

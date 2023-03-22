@@ -6,7 +6,7 @@
 main_bench()
 {
       char *k;int n;int num;int i; int pd; int j; 
-      scanf("%d",&n);int *q;
+      my_scanf("%d",&n);int *q;
       char *p[n]; 
       k=(char *)malloc(81*sizeof(char));gets(k);
       p[0]=k;
@@ -43,7 +43,7 @@ main_bench()
                            }
                            
                      } 
-      printf("%d\n",pd);              
+      my_printf("%d\n",pd);              
       }
        
               

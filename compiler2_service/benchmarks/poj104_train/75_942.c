@@ -8,7 +8,7 @@ int main_bench()
     x[0]=-1;y[0]=-1;
     do{
         i++;
-        scanf("%d",&x[i]);if(x[i]<x[i-1]){t=x[i];x[i]=x[i-1];x[i-1]=t;}
+        my_scanf("%d",&x[i]);if(x[i]<x[i-1]){t=x[i];x[i]=x[i-1];x[i-1]=t;}
         c=getchar();
         }while(c==',');
     m=i;
@@ -19,7 +19,7 @@ int main_bench()
     i=0;  
     do{
         i++;
-        scanf("%d",&y[i]);if(y[i]<y[i-1]){t=y[i];y[i]=y[i-1];y[i-1]=t;}
+        my_scanf("%d",&y[i]);if(y[i]<y[i-1]){t=y[i];y[i]=y[i-1];y[i-1]=t;}
         c=getchar();
         }while(c==',');
     n=i;w[x[1]]=0;
@@ -32,7 +32,7 @@ int main_bench()
     {
                            if(w[i+1]<w[i]){t=w[i+1];w[i+1]=w[i];w[i]=t;}
                            }
-    printf("%d %d",n,w[y[n]+1]);
+    my_printf("%d %d",n,w[y[n]+1]);
     
     
     

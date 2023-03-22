@@ -7,7 +7,7 @@ int main_bench()
 	char t[280];
 	int i,j;
 	int check=0;
-	scanf("%s %s %s",a,b,c);
+	my_scanf("%s %s %s",a,b,c);
 	
 	for(i=0;i<strlen(a);i++)
 	{
@@ -28,8 +28,8 @@ int main_bench()
 		}
 
 	}
-	if(check==1)printf("%s\n",res);
-	else printf("%s\n",a);
+	if(check==1)my_printf("%s\n",res);
+	else my_printf("%s\n",a);
 	return 0;
 
 }

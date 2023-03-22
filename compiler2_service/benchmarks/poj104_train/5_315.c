@@ -5,7 +5,7 @@ int main_bench(){
 	char sz[10000];
 	char s[10000];
 	double n,c;
-	scanf("%lf%s%s",&n,&sz,&s);
+	my_scanf("%lf%s%s",&n,&sz,&s);
 	for(i=0;sz[i];i++){
 		if(sz[i]==s[i]){
 	a++;}
@@ -15,14 +15,14 @@ int main_bench(){
 }
 c=1.0*a/b;
 if(p!=0){
-	printf("error");
+	my_printf("error");
 }
 
  if(p==0&&c>n){
-	printf("yes");
+	my_printf("yes");
 }
  if(p==0&&c<=n){
-	printf("no");
+	my_printf("no");
 }
 	
 	

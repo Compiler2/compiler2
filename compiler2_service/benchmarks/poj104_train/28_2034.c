@@ -15,10 +15,10 @@ int main_bench(){
     }
     for(x=0;x<=k;x++){
         if(x==0&&s[x]!=0){
-            printf("%d",s[x]);
+            my_printf("%d",s[x]);
         }
         if(x>0&&s[x]!=0){
-            printf(",%d",s[x]);
+            my_printf(",%d",s[x]);
         }
     }
     return 0;

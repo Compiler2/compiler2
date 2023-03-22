@@ -26,9 +26,9 @@ int check(int N,int p)
 int main_bench()
 {
 	int n,m,res,i;
-	while(scanf("%d %d", &n, &m) && n != 0 && m != 0)
+	while(my_scanf("%d %d", &n, &m) && n != 0 && m != 0)
 	{
 		res=check(n,m);
-		printf("%d\n",res);
+		my_printf("%d\n",res);
 	}
 }

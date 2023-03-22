@@ -8,21 +8,21 @@ void match(char lch)
     int spos = pos;
     char ch;
     pos++;
-    scanf("%c", &ch);
+    my_scanf("%c", &ch);
     while (ch == lch)
     {
         match(ch);
         pos++;
-        scanf("%c", &ch);
+        my_scanf("%c", &ch);
     }
-    printf("%d %d\n", spos, pos);
+    my_printf("%d %d\n", spos, pos);
 }
 
 int main_bench()
 {
     char ch;
     pos = 0;
-    scanf("%c", &ch);
+    my_scanf("%c", &ch);
     match(ch);
     return 0;
 }

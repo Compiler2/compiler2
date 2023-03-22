@@ -6,11 +6,11 @@ int main_bench()
 	char bgb,xb;
 	int sc1,sc2,lw,sum[100]={0},s=0;
 	int n,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",name[i]);			
-		scanf("%d %d %c %c %d",&sc1,&sc2,&bgb,&xb,&lw);
+		my_scanf("%s",name[i]);			
+		my_scanf("%d %d %c %c %d",&sc1,&sc2,&bgb,&xb,&lw);
 		if(sc1>80 && lw>0){
 			sum[i]+=8000;
 		}
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	for(int k=0;k<n;k++){
 		if(sum[k]==max){
-			printf("%s\n%d\n%d\n",name[k],sum[k],s);
+			my_printf("%s\n%d\n%d\n",name[k],sum[k],s);
 		    break;
 		}
 	}

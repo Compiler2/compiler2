@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n,y,m1,m2,total1=0,total2=0,i=1,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{total1=0;total2=0;
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		for( i=1; i<m1; i++)
 	{
 		if ( i ==1 || i==3 || i==5 || i==7 || i==8 || i==10 || i==12)
@@ -47,12 +47,12 @@ int main_bench()
 
 	if((total1-total2)%7==0)
 	{
-		printf("YES\n");
+		my_printf("YES\n");
 		continue;
 	}
 	else
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		continue;
 	}
 

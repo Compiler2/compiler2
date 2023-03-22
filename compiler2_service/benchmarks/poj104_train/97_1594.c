@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,shuzu[111],count1=0,count3=0,count2=0,count4=0,count5=0,count6=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while(n>=100){
                   n=n-100;
                   count1++;
@@ -27,7 +27,7 @@ int main_bench()
                   n=n-1;
                   count6++;
                   }
-               printf("%d\n%d\n%d\n%d\n%d\n%d",count1,count2,count3,count4,count5,count6);
+               my_printf("%d\n%d\n%d\n%d\n%d\n%d",count1,count2,count3,count4,count5,count6);
                return 0;
                }
                   

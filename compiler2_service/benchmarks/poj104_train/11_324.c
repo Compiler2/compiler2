@@ -6,7 +6,7 @@ int main_bench()
 	int a[100];
 	int i,y,m,d,s;
 
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
     if (( (y%4==0) && (y%100>0) )||(y%400==0) ) a[2]=29;
 	  else a[2]=28;
 	
@@ -16,7 +16,7 @@ int main_bench()
 	for (i=1;i<m;i++)
 	  s=s+a[i];	
 	s=s+d;
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }
 

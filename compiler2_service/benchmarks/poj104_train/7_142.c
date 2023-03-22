@@ -5,7 +5,7 @@ int main_bench()
 {
   char string[260],sub[50],replace[50],result[260];
   int i,j,t=0,mark=0,a=0;
-  scanf("%s%s%s",string,sub,replace);
+  my_scanf("%s%s%s",string,sub,replace);
 for(i=0;string[i]!='\0';i++,mark++)
   {
     if(string[i]==sub[0])
@@ -22,7 +22,7 @@ for(i=0;string[i]!='\0';i++,mark++)
          if(a==0){break;}
     }
   }
-if(mark==strlen(string))   printf("%s\n",string);
+if(mark==strlen(string))   my_printf("%s\n",string);
 else
 {
       for(i=0;i<mark;i++)
@@ -41,7 +41,7 @@ else
           result[i]=string[t];
       }
       result[i]='\0';
-      printf("%s\n",result);
+      my_printf("%s\n",result);
 }
 return;
 }

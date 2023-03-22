@@ -8,7 +8,7 @@ int n,a,b=0,c;
 	
 int z[10000];
 	
-scanf("%d",&n);
+my_scanf("%d",&n);
 	
 
     for(a=3;a<n+100;a++)
@@ -57,7 +57,7 @@ if(z[a]+z[c]==n)
 	
 	
 	
-printf("%d %d\n",z[a],z[c]);
+my_printf("%d %d\n",z[a],z[c]);
 	
 	
 	

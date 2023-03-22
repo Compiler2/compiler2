@@ -45,11 +45,11 @@ int main_bench()
 		int sum;
 	}*s;
 	int i,n,a,b,c,d,e,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=(struct student*)malloc(n*sizeof(struct student));
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&s[i].name,&(*(s+i)).gpa,&(*(s+i)).arg,&(*(s+i)).leader,&(*(s+i)).xibu,&(*(s+i)).paper);
+		my_scanf("%s %d %d %c %c %d",&s[i].name,&(*(s+i)).gpa,&(*(s+i)).arg,&(*(s+i)).leader,&(*(s+i)).xibu,&(*(s+i)).paper);
 		(*(s+i)).sum=0;
     	a=yuan((*(s+i)).gpa,(*(s+i)).paper);
 		b=wusi((*(s+i)).gpa,(*(s+i)).arg);
@@ -64,7 +64,7 @@ int main_bench()
 		if((*(s+0)).sum<(*(s+i)).sum)
 		(*(s+0))=(*(s+i));		
 	}
-		printf("%s\n%d\n%d",s[0].name,(*(s+0)).sum,sum);
+		my_printf("%s\n%d\n%d",s[0].name,(*(s+0)).sum,sum);
 	
 
 }

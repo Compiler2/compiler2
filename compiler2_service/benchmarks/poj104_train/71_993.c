@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,x,y,A[200],B[200],C[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	0 < n <= 200;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&A[i],&B[i],&C[i]);
+		my_scanf("%d %d %d",&A[i],&B[i],&C[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -40,9 +40,9 @@ int main_bench()
          if( (( (A[i]%4==0)&&(A[i]%100!=0) ) ||(A[i]%400==0))&&(C[i]>2))y=y+1;
 		 else y=y;
 		 if((x-y)%7==0)
-		 printf("YES\n");
+		 my_printf("YES\n");
 		 else
-		 printf("NO\n");
+		 my_printf("NO\n");
 	}
 	return 0;
 }

@@ -6,20 +6,20 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if((c=getchar())=='\n')
 		break;
 	}
 	len=i;
 	if(len==0)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		for(i=1;i<=len;i++)
 				if(n[0]!=n[i])
 					t=1;
 		if(t==0)
-			printf("No\n");
+			my_printf("No\n");
 		else
 		{
 			for(i=0;i<=len;i++)
@@ -34,7 +34,7 @@ int main_bench()
 			for(i=0;i<=len;i++)
 				if(max<n[i])
 					{max=n[i];maxn=i;}
-			printf("%d\n",n[maxn]);
+			my_printf("%d\n",n[maxn]);
 		}
 	}
 }

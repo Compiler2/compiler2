@@ -17,8 +17,8 @@ int main_bench()
 	int Month[12]={31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	int i, j;
 
-	scanf("%d%d%d",  &startYear, &startMonth, &startDay);
-	scanf("%d%d%d",&endYear, &endMonth, &endDay);
+	my_scanf("%d%d%d",  &startYear, &startMonth, &startDay);
+	my_scanf("%d%d%d",&endYear, &endMonth, &endDay);
 
 	if (isRun(startYear))
 	{
@@ -91,7 +91,7 @@ int main_bench()
 
 	if (endOffset>=startOffset)
 	{
-		printf("%d",(endOffset-startOffset));
+		my_printf("%d",(endOffset-startOffset));
 	}
 	
 	return 0;

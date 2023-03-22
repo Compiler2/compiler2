@@ -4,8 +4,8 @@ int main_bench()
 {
     char str[1001],s[1001][1001];
     int n,i,j,k=0,m,a[1001]={0},t=0,p;
-    scanf("%d",&n);
-    scanf("%s",str);
+    my_scanf("%d",&n);
+    my_scanf("%s",str);
     m=strlen(str)-n;
     for(i=0;i<=m;i++)
         for(j=0;j<n;j++)
@@ -19,16 +19,16 @@ int main_bench()
     for(i=0;i<m;i++)
        for(j=0;j<m;j++)
           if(a[i]!=a[j]) {p=1;break;}
-    if(p==0) printf("NO\n");
+    if(p==0) my_printf("NO\n");
     else{
-    printf("%d\n",t);
+    my_printf("%d\n",t);
     for(i=0;i<=m;i++)
     {
         if(a[i]==t)
         {
             for(j=0;j<i;j++)
                 if(strcmp(s[i],s[j])==0) k=1;
-            if(k==0) printf("%s\n",s[i]);
+            if(k==0) my_printf("%s\n",s[i]);
         }
     }}
 }

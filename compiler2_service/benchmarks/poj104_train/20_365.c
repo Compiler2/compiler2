@@ -15,11 +15,11 @@ int main_bench()
 	}
 	for(p1=s;p1<(s+n-4);p1++)
 	{
-		if(p1<m) printf("%c",*p1);
-		if(p1==m) printf("%c%c%c%c",*p1,s[n-3],s[n-2],s[n-1]);
-		if(p1>m) printf("%c",*p1);
+		if(p1<m) my_printf("%c",*p1);
+		if(p1==m) my_printf("%c%c%c%c",*p1,s[n-3],s[n-2],s[n-1]);
+		if(p1>m) my_printf("%c",*p1);
 	}
-printf("\n");
+my_printf("\n");
 }
 return 0;	
 }

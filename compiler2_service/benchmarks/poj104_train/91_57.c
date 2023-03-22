@@ -11,9 +11,9 @@ int main_bench(){
   for(i=0;i<n-1;i++){
    c=*p+*(p+1);
    p++;
-   printf("%c",c);
+   my_printf("%c",c);
    }
   c=*p+*q;
-  printf("%c",c);
+  my_printf("%c",c);
   
   }

@@ -3,7 +3,7 @@
 main_bench()
 {
       int m;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       int i,j,judge,k,judge2;
       for (i=2;i<=m/2;i++)
       {
@@ -23,7 +23,7 @@ main_bench()
                  judge2=0;
               }
               if (judge2==1)
-              printf("%d %d\n",i,k);
+              my_printf("%d %d\n",i,k);
           }
       }
       getchar();

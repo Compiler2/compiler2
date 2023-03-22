@@ -9,9 +9,9 @@ struct
 int main_bench()
 {
     int n,i,j,s=0,a,b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	    scanf("%s %d %d %c %c %d",
+	    my_scanf("%s %d %d %c %c %d",
 			stu[i].name,
 			&stu[i].test,
 			&stu[i].grade,
@@ -33,6 +33,6 @@ int main_bench()
 			b=i;
 		}
 	}
-	printf("%s\n%d\n%d",stu[b].name,stu[b].sum,s);
+	my_printf("%s\n%d\n%d",stu[b].name,stu[b].sum,s);
 	return 0;
 }

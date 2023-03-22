@@ -4,9 +4,9 @@ int main_bench(){
 	int n,f0,f1,f2,f01,f11,f21;
 	int i,j,k[100];
 	double s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(k[i]));
+		my_scanf("%d",&(k[i]));
 	}
 	for(i=0;i<n;i++){
 		f0=2;
@@ -15,10 +15,10 @@ int main_bench(){
 		f11=2;
 		if(k[i]==1){
 			s=f0*1.0/f01;
-			printf("%.3lf\n",s);
+			my_printf("%.3lf\n",s);
 		}else if(k[i]==2){
 			s=f1*1.0/f11;
-			printf("%.3lf\n",s+2);		
+			my_printf("%.3lf\n",s+2);		
 		}else{
 			s=3.5;
 			for(j=3;j<=k[i];j++){
@@ -30,7 +30,7 @@ int main_bench(){
 				f01=f11;
 				f11=f21;
 			}
-			printf("%.3lf\n",s);
+			my_printf("%.3lf\n",s);
 		}
 	}
 	return 0;

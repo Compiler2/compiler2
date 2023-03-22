@@ -5,12 +5,12 @@ int main_bench()
 	int n,i,e,k,d,f,hours;
 	int sz[100][2];
 	int a[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(e=0;e<2;e++)
 		{
-			scanf("%d",&sz[i][e]);
+			my_scanf("%d",&sz[i][e]);
 		}
 	}
 	hours=0;
@@ -37,7 +37,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",a[hours]);
+	my_printf("%d",a[hours]);
 	return 0;
 
 }

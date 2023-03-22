@@ -9,7 +9,7 @@ int main_bench()
 	   p=0;q=0;
 	   for(j=0;j<16;j++)
 	   {
-		   scanf("%d",&a);
+		   my_scanf("%d",&a);
          if(a==-1) break;
          else if(a!=-1)
 		 { 
@@ -29,7 +29,7 @@ int main_bench()
 			   q++;
 		  }
 	  }	   
-	  printf("%d\n",q);
+	  my_printf("%d\n",q);
    }
       return 0;
 }

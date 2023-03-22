@@ -55,10 +55,10 @@ int main_bench()
    for (i=0;i<count;i++)
 	{
 		if (i>0)
-			printf(" ");
-		printf("%s",d[i]);
+			my_printf(" ");
+		my_printf("%s",d[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
  
 

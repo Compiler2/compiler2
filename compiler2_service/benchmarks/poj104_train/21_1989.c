@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,temp,a[300],sum=0;
 	double t,b[300],max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	    t=1.0*sum/n;
@@ -53,11 +53,11 @@ int main_bench()
 		{
 			if ( mm == 0)
 			{
-				printf("%d",a[j]);
+				my_printf("%d",a[j]);
 			}
 			else 
 			{
-				printf(",%d",a[j]);
+				my_printf(",%d",a[j]);
 			}
 			mm++;
 		}

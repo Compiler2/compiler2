@@ -4,11 +4,11 @@ int n,m,a[100],b[100];
 void input()
 {
 	int j,k;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(j=0;j<n;j++)
-		scanf("%d",&a[j]);
+		my_scanf("%d",&a[j]);
 	for(k=0;k<m;k++)
-		scanf("%d",&b[k]);
+		my_scanf("%d",&b[k]);
 }
 void arrange(int n,int m,int x[],int y[])
 {
@@ -40,8 +40,8 @@ void print(int n,int m,int x[])
 {
 	int i;
 	for(i=0;i<m+n-1;i++)
-		printf("%d ",x[i]);
-	printf("%d",x[m+n-1]);
+		my_printf("%d ",x[i]);
+	my_printf("%d",x[m+n-1]);
 }
 
 int main_bench()

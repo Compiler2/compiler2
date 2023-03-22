@@ -4,10 +4,10 @@ int main_bench()
 {
  int n,i,l,j;
  char a[255],b[255]={'\0'};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%s",a);
+  my_scanf("%s",a);
   l=strlen(a);
   for(j=0;j<l;j++)
    {
@@ -20,7 +20,7 @@ int main_bench()
     if(a[j]=='G')
     b[j]='C';
    }
-  printf("%s\n",b);
+  my_printf("%s\n",b);
   for(j=0;j<l;j++)
    b[j]='\0';
  }

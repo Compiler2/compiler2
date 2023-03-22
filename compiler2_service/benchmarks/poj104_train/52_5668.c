@@ -15,11 +15,11 @@ void swap(int x,int y,int a[])
 int main_bench()
 {
     int n,m,a[100],i;
-    scanf("%d%d",&n,&m);
-    for(i=0;i<n;i++) scanf("%d",&a[i]);
+    my_scanf("%d%d",&n,&m);
+    for(i=0;i<n;i++) my_scanf("%d",&a[i]);
     swap(0,n-1,a);
     swap(0,m-1,a);
     swap(m,n-1,a);
-    printf("%d",a[0]);
-    for(i=1;i<n;i++) printf(" %d",a[i]);
+    my_printf("%d",a[0]);
+    for(i=1;i<n;i++) my_printf(" %d",a[i]);
 }

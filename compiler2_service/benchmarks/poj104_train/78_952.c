@@ -40,6 +40,6 @@ l:  z*=10; q*=10; s*=10; l*=10;
     }
     }
     for(int i=0;i<4;i++)
-    printf("%c %d\n",name[i],weight[i]);
+    my_printf("%c %d\n",name[i],weight[i]);
     return 0;
 } 

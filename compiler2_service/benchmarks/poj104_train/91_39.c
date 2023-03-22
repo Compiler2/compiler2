@@ -18,7 +18,7 @@ int main_bench()
 
     for(i=0; i<len; i++)
     {
-        printf("%c", *(str+i));
+        my_printf("%c", *(str+i));
     }
 
     return 0;

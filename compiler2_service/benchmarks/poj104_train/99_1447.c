@@ -8,10 +8,10 @@ int main_bench()
 	c2=0.0;
 	c3=0.0;
 	c4=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -35,9 +35,9 @@ int main_bench()
 	c2=(double)b2*100/n;
 	c3=(double)b3*100/n;
 	c4=(double)b4*100/n;
-	printf("1-18: %.2lf%%\n",c1);
-    printf("19-35: %.2lf%%\n",c2);
-    printf("36-60: %.2lf%%\n",c3);
-    printf("60??: %.2lf%%\n",c4);
+	my_printf("1-18: %.2lf%%\n",c1);
+    my_printf("19-35: %.2lf%%\n",c2);
+    my_printf("36-60: %.2lf%%\n",c3);
+    my_printf("60??: %.2lf%%\n",c4);
 	return 0;
 }

@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int i,j,t=0,y1,y2,m1,m2,d1,d2,t1=0,t2=0;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	for(i=y1;i<y2;i++)
 		for(j=1;j<13;j++)
 		{
@@ -51,7 +51,7 @@ int main_bench()
 	}
 	t2=t2+d2;
 	t=t-t1+t2;
-	printf("%d\n",t);
+	my_printf("%d\n",t);
 }
 
 

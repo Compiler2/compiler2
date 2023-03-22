@@ -3,9 +3,9 @@
 int main_bench(){
     int n,y,i=1;
     double a=0,b=0,c=0,d=0,e,f,g,h;
-	scanf("%d/n",&n);
+	my_scanf("%d/n",&n);
 	while(i<=n){
-        scanf("%d",&y);
+        my_scanf("%d",&y);
 		if(y>=1&&y<=18){
 			a=a+1;
 		}
@@ -24,9 +24,9 @@ int main_bench(){
 	f=1.0*b/n*100;
 	g=1.0*c/n*100;
 	h=1.0*d/n*100;
-    printf("1-18: %.2lf%%\n",e);
-    printf("19-35: %.2lf%%\n",f);
-    printf("36-60: %.2lf%%\n",g);
-    printf("60??: %.2lf%%\n",h);
+    my_printf("1-18: %.2lf%%\n",e);
+    my_printf("19-35: %.2lf%%\n",f);
+    my_printf("36-60: %.2lf%%\n",g);
+    my_printf("60??: %.2lf%%\n",h);
 	return 0;
 }

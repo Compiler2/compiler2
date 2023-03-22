@@ -8,13 +8,13 @@ int main_bench()
 	int countYear(int syear,int eyear);
 	int countmonth(int year,int month,int day);
 	int syear,smonth,sday,eyear,emonth,eday,day;
-	scanf("%d%d%d%d%d%d",&syear,&smonth,&sday,&eyear,&emonth,&eday);
+	my_scanf("%d%d%d%d%d%d",&syear,&smonth,&sday,&eyear,&emonth,&eday);
 	int between,day1,day2;
 	between=countYear(syear,eyear);
 	day1=countmonth(syear,smonth,sday);
 	day2=countmonth(eyear,emonth,eday);
 	day=between-day1+day2;
-	printf("%d",day);
+	my_printf("%d",day);
 	return 0;
 }
 

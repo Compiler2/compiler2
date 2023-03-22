@@ -3,9 +3,9 @@
 int main_bench(){
     int a[50000], b[50000], n, s[50000];
     
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     for(int i=0;i<n;i++){
-        scanf("%d %d", &a[i], &b[i]);
+        my_scanf("%d %d", &a[i], &b[i]);
     }
 int c=a[0];
 int d=b[0];
@@ -30,9 +30,9 @@ for(int m=c;m<d;m++){
     result+=s[m];
 }
 if(result==0){
-printf("%d %d",c,d);
+my_printf("%d %d",c,d);
 }else{
-printf("no");
+my_printf("no");
 }
 return 0;
 }

@@ -23,11 +23,11 @@ int main_bench(){
 	for(m=0;m<k-1;m++){
 		b[n]=strlen(a[m]);
 		if(b[n]!=0){
-		printf("%d,",b[n]);
+		my_printf("%d,",b[n]);
 		}
 		n++;
 	}
 	b[k-1]=strlen(a[k-1]);
-		printf("%d\n",b[k-1]);
+		my_printf("%d\n",b[k-1]);
 		return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
  int n,i,j,k;
  int p[10000];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if (n>=1&&n<=4)
-  printf("empty");
+  my_printf("empty");
  else
  {
   k=0;
@@ -28,7 +28,7 @@ int main_bench()
   for(i=0;i<k;i++)
     {
       if(p[i]+2<=n&&p[i]+2==p[i+1])
-      printf("%d %d\n",p[i],p[i+1]);            
+      my_printf("%d %d\n",p[i],p[i+1]);            
     }  
  }
  getchar();

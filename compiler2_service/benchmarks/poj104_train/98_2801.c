@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s1[41];
 	char s2[41];
 	char *now;
@@ -13,7 +13,7 @@ int main_bench()
 	int i,j;
 	int nowlen;
 	int thislen;
-	scanf("%s",s1);
+	my_scanf("%s",s1);
 
 	now = s1;
 	next = s2;
@@ -22,25 +22,25 @@ int main_bench()
 	{
 		for(j = 0;j < 41;j++)
 			next[j] = '\0';
-		scanf("%s",next);
+		my_scanf("%s",next);
 
 		thislen = strlen(next);
 
 		if(nowlen + thislen + 1 <= 80) 
 		{
-			printf("%s ",now);
+			my_printf("%s ",now);
 			nowlen = nowlen + thislen + 1;
 		}
 		else
 		{
-			printf("%s\n",now);
+			my_printf("%s\n",now);
 			nowlen = thislen;
 		}
 		mid = now;
 		now = next;
 		next = mid;
 	}
-	printf("%s",now);
+	my_printf("%s",now);
 	return 0;
 }
 		

@@ -4,9 +4,9 @@
 int main_bench()
 {
     int n,a,max,min,i,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                     scanf("%d",&a);
+                     my_scanf("%d",&a);
                      if(i==0) {
                               max=min=a;
                               }
@@ -16,7 +16,7 @@ int main_bench()
                      
                      
                      
-    printf("%d\n%d\n",max,min);
+    my_printf("%d\n%d\n",max,min);
                                
                                
 

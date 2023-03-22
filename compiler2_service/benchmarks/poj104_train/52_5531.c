@@ -16,18 +16,18 @@ void lunhuan(int b[],int c,int d)
 int main_bench()
 {
 	int a[101],n,m,i;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	lunhuan(a,n,m);
 	for(i=0;i<=n-1;i++)
 	{
 		if (i==0)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		else
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 	return 0;
 }

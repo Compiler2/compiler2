@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n, i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	struct 
 	{
 		int name;
@@ -14,7 +14,7 @@ int main_bench()
 
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d%s", &book[i].name, book[i].author);
+		my_scanf("%d%s", &book[i].name, book[i].author);
 	}
 
 	char t, tmax;
@@ -38,14 +38,14 @@ int main_bench()
 			tmax = t;
 		}
 	}
-	printf("%c\n%d\n", tmax, max);
+	my_printf("%c\n%d\n", tmax, max);
 	for(i = 0; i < n; i++)
 	{
 		for(j = 0; j < strlen(book[i].author); j++)
 		{
 			if(book[i].author[j] == tmax)
 			{
-					printf("%d\n", book[i].name);
+					my_printf("%d\n", book[i].name);
 					break;
 			}
 		}

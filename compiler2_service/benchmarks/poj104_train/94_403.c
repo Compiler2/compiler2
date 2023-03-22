@@ -2,10 +2,10 @@
 
 int main_bench(){
     int N,s;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int a[N],b[N];
     for(int i=0;i<N;i++){
-     scanf("%d ",&a[i]);
+     my_scanf("%d ",&a[i]);
      }
     for(int i=0;i<N;i++){
      if(a[i]%2!=0){
@@ -25,10 +25,10 @@ int main_bench(){
     }
      for(int i=0;i<N-1;i++){
       if(b[i]!=0){
-      printf("%d,",b[i]);
+      my_printf("%d,",b[i]);
        }
       }
-     printf("%d",b[N-1]);
+     my_printf("%d",b[N-1]);
      return 0;
 }
       

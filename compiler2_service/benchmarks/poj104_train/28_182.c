@@ -19,10 +19,10 @@ int main_bench()
 		{
 			if(flag==0)
 			{
-				printf("%d",count);
+				my_printf("%d",count);
 				flag=1;
 			}
-			else printf(",%d",count);
+			else my_printf(",%d",count);
 			count=0;
 		}
 		i++;

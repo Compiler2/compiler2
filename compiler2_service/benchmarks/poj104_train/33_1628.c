@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n=0,i=0,j=0,LEN=0,k=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zf[256];
     for(i=0;i<n;i++){
         j=0;
-        scanf("%s",zf);
+        my_scanf("%s",zf);
         LEN=strlen(zf);
         while(j<LEN){
             if(zf[j]=='A'){
@@ -20,7 +20,7 @@ int main_bench(){
             }
             j++;
         }
-        printf("%s\n",zf);
+        my_printf("%s\n",zf);
     }
     return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {int sz[5][5],m,n,e,row,col;
 for( row=0;row<5;row++){
 for( col=0;col<5;col++){
-scanf("%d",&sz[row][col]);}
+my_scanf("%d",&sz[row][col]);}
 }
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 if(m<5&&n<5){
 	for(int col=0;col<5;col++){
 		e=sz[m][col];
@@ -16,11 +16,11 @@ if(m<5&&n<5){
 }
 if(m<5&&n<5){for( row=0;row<5;row++){
 for( col=0;col<5;col++){
-printf("%d",sz[row][col]);if(col<4){printf(" ");}}
+my_printf("%d",sz[row][col]);if(col<4){my_printf(" ");}}
 
-printf("\n");
+my_printf("\n");
 }}
-if(m>4||n>4){printf("error");}
+if(m>4||n>4){my_printf("error");}
 return 0;
 }
 

@@ -4,7 +4,7 @@ int main_bench(){
 	int a,i,sum,sun,x;
 	i=1;
 	sum=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	while(i<=a){
 	sum+=i*i;
 	i++;
@@ -17,7 +17,7 @@ while(a>0){
 	a--;}
 	else a--;}
 x=sum-sun;
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 
 }

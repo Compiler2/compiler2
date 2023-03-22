@@ -4,12 +4,12 @@
 int main_bench()
 {
     int n,i,k=0,c,d;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int a[n],b[n];
     
-    scanf("%d",&a[0]);
+    my_scanf("%d",&a[0]);
     for(i=1;i<n;i++)
-    scanf(" %d",&a[i]);
+    my_scanf(" %d",&a[i]);
     for(i=0;i<n;i++)
     {
                     if(a[i]%2!=0)
@@ -24,9 +24,9 @@ int main_bench()
         b[d]=i;}
     }
 }
-printf("%d",b[0]);
+my_printf("%d",b[0]);
 for(d=1;d<k;d++)
-printf(",%d",b[d]);
+my_printf(",%d",b[d]);
 
 
 

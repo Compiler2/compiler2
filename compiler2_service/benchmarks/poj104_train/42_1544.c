@@ -8,10 +8,10 @@ int main_bench()
 	int i;
 	int sum;
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%d",&a[i]);}
-	scanf("%d",&k);
+	{my_scanf("%d",&a[i]);}
+	my_scanf("%d",&k);
 	for(i=0;i<n;i++)
 	{
 		if(a[i]==k)
@@ -19,7 +19,7 @@ int main_bench()
 		if(i==0)
 		{
 			if(a[i]!=k)
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 
 		}
 		if(i!=0)
@@ -28,10 +28,10 @@ int main_bench()
 			if(a[i]!=k)
 			{
 				if(i!=sum)
-					printf(" %d",a[i]);
+					my_printf(" %d",a[i]);
 
 				if(i==sum)
-					printf("%d",a[i]);}
+					my_printf("%d",a[i]);}
 		}
 		
 	}

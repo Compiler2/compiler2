@@ -5,9 +5,9 @@ int main_bench(){
     int m[10000];
 	int i,h,a,b=0,p,s=0;
 	double l;
-	scanf("%d",&h);
+	my_scanf("%d",&h);
 	for (i=0;i<h;i++){
-	scanf("%d%d",&q[i],&m[i]);
+	my_scanf("%d%d",&q[i],&m[i]);
 	}
     a=q[0];
 	for(i=0;i<h;i++){
@@ -31,9 +31,9 @@ int main_bench(){
  		s++;
  	}
     if(s==b-a){
- 		printf("%d %d\n",a,b);
+ 		my_printf("%d %d\n",a,b);
  	}else{
- 	printf("no");
+ 	my_printf("no");
  	}
     return 0;
 }

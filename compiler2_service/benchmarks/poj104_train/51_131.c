@@ -5,7 +5,7 @@ main_bench()
 {
 	int n;
 	int k,p;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char a[500];
 	gets(a);
 	char b[501][5]={'\0'};
@@ -37,14 +37,14 @@ main_bench()
 				max=c[k];
 		}
 		if(max==1)
-			printf("NO");
+			my_printf("NO");
 		else
 		{
-			printf("%d\n",max);
+			my_printf("%d\n",max);
 			for(j=0;j<strlen(a);j++)
 			{
 				if(c[j]==max)
-					printf("%s\n",b[j]);
+					my_printf("%s\n",b[j]);
 			}
 		}
 	}
@@ -76,14 +76,14 @@ main_bench()
 				max=c[k];
 		}
 		if(max==1)
-			printf("NO");
+			my_printf("NO");
 		else
 		{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(j=0;j<strlen(a)-1;j++)
 		{
 			if(c[j]==max)
-				printf("%s\n",b[j]);
+				my_printf("%s\n",b[j]);
 		}
 		}
 	}
@@ -116,14 +116,14 @@ main_bench()
 				max=c[k];
 		}
 		if(max==1)
-			printf("NO");
+			my_printf("NO");
 		else
 		{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(j=0;j<strlen(a)-1;j++)
 		{
 			if(c[j]==max)
-				printf("%s\n",b[j]);
+				my_printf("%s\n",b[j]);
 		}
 		}
 	}

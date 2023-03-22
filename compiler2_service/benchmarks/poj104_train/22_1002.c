@@ -8,12 +8,12 @@ int main_bench(){
     char ch;
     
     while(1){
-        ret = scanf("%d", &temp);
+        ret = my_scanf("%d", &temp);
         if(ret != 1)
             break;
         
         if( temp < 0){
-            printf("Invalid input numbet : negtive\n");
+            my_printf("Invalid input numbet : negtive\n");
             return -1;
         }
         
@@ -26,16 +26,16 @@ int main_bench(){
                 secBig = temp;
             }
         }
-        ret = scanf("%c", &ch);
+        ret = my_scanf("%c", &ch);
         if(ret != 1 || ch != ',')
             break;
     }
     
     if(secBig == -1){
-        printf("No\n");
+        my_printf("No\n");
     }
     else{
-        printf("%d\n", secBig);
+        my_printf("%d\n", secBig);
     }
     return 0;
 }

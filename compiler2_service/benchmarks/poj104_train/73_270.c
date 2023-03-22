@@ -5,7 +5,7 @@ int main_bench()
 	int a[6][6],i,j,k,p=0,m=0,n=0;
 	for(i=1;i<6;i++)
 		for(j=1;j<6;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 
 	for(i=1;i<6;i++)
 		for(j=1;j<6;j++)
@@ -31,7 +31,7 @@ int main_bench()
 				}
 			    if(m==4)
 				{
-			     	printf("%d %d %d\n",i,j,a[i][j]);
+			     	my_printf("%d %d %d\n",i,j,a[i][j]);
 				    n++;
 				}
 			}
@@ -41,7 +41,7 @@ int main_bench()
 
 
 	if(n==0)
-		printf("not found\n");
+		my_printf("not found\n");
 }
 
 

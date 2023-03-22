@@ -5,11 +5,11 @@ int main_bench()
 {
 	int n,i;
 	char s[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
 	{
 		gets(s);
-		printf("%d\n",check(s));
+		my_printf("%d\n",check(s));
 	}
 	return 0;
 }

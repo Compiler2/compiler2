@@ -26,17 +26,17 @@ int main_bench()
 		l+=strlen(tmp)+1;
         l:if (tmpl==0)
 		{
-			printf ("%s",tmp);
+			my_printf ("%s",tmp);
 			tmpl+=strlen(tmp)+1;
 		}
         else if ((strlen(tmp)+tmpl)<=80)
 		{
-			printf (" %s",tmp);
+			my_printf (" %s",tmp);
   		    tmpl+=strlen(tmp)+1;
 		}
 		else if ((strlen(tmp)+tmpl)>80)
 		{
-			printf ("\n");
+			my_printf ("\n");
 			tmpl=0;
 			goto l;
 		}

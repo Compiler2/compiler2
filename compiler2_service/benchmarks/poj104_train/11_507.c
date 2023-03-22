@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,n;
-	scanf ("%d%d%d",&a,&b,&c);
+	my_scanf ("%d%d%d",&a,&b,&c);
 	if (a%4!=0||(a%100==0&&a%400!=0))
 	{
 		if (b<2)
@@ -59,6 +59,6 @@ int main_bench()
 		else
 			n=335+c;
 	}
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 	return 0;
 }

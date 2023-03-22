@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,days[12]={31,28,31,30,31,30,31,31,30,31,30,31},i,j,date[12]={0};
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	date[0]=w+5;
 	while(date[0]>7)
 	{
@@ -21,7 +21,7 @@ int main_bench()
 	{
 		if(date[i]==5)
 		{
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

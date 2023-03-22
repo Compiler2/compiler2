@@ -3,12 +3,12 @@
 int main_bench()
 {
  int n,i,j,s;
- scanf("%d",&n);
- printf("\n");
+ my_scanf("%d",&n);
+ my_printf("\n");
  int a[n];
- scanf("%d",&a[0]);
- for(i=1;i<n;i++) scanf(" %d",&a[i]);
- printf("%d",a[0]);
+ my_scanf("%d",&a[0]);
+ for(i=1;i<n;i++) my_scanf(" %d",&a[i]);
+ my_printf("%d",a[0]);
  for(i=1;i<n;i++)
  {
   s=0;
@@ -16,6 +16,6 @@ int main_bench()
   {
    if(a[i]==a[j]) {s=1;break;}
   }
-  if(s==0) printf(",%d",a[i]);
+  if(s==0) my_printf(",%d",a[i]);
  }
 }

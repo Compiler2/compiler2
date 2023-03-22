@@ -12,12 +12,12 @@ int main_bench()
 		{
 			for(t=p+1;((*t)!=' ')&&((*t)!='\0');t++)
 			{
-			    printf("%c",*t);
+			    my_printf("%c",*t);
 			}
-			printf(" ");
+			my_printf(" ");
 		}
 			
 	}
 	for(s=str;((*s)!=' ')&&((*s)!='\0');s++)
-		printf("%c",*s);
+		my_printf("%c",*s);
 }

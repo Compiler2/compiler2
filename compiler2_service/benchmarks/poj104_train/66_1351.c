@@ -3,10 +3,10 @@
 int main_bench()
 {
   int year,month,day,i,sum=0,rest;
-  scanf("%d%d%d",&year,&month,&day);
+  my_scanf("%d%d%d",&year,&month,&day);
   if(year==1111111111&&month==11&&day==11)
   {
-       printf("Sat.");
+       my_printf("Sat.");
   }
   else
   {                                   
@@ -46,19 +46,19 @@ int main_bench()
   sum=sum+day;
   rest=sum%7;
   if(rest==0)
-             printf("Sun.");
+             my_printf("Sun.");
   else if(rest==1)
-             printf("Mon.");
+             my_printf("Mon.");
   else if(rest==2)
-             printf("Tue.");
+             my_printf("Tue.");
   else if(rest==3)
-             printf("Wed.");
+             my_printf("Wed.");
   else if(rest==4)
-             printf("Thu.");
+             my_printf("Thu.");
   else if(rest==5)
-             printf("Fri.");
+             my_printf("Fri.");
   else
-             printf("Sat.");
+             my_printf("Sat.");
   }
   return 0;
 }

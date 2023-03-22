@@ -17,10 +17,10 @@ int main_bench()
 	
 	
 	int n,i,all=0,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&a[i].name,&a[i].gra,&a[i].grcla,&a[i].of,&a[i].won,&a[i].essay);
+		my_scanf("%s %d %d %c %c %d",&a[i].name,&a[i].gra,&a[i].grcla,&a[i].of,&a[i].won,&a[i].essay);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -48,9 +48,9 @@ int main_bench()
 	}
 
 
-	printf("%s\n",a[i].name);
-	printf("%d\n",a[i].sum);
-	printf("%d\n",all);
+	my_printf("%s\n",a[i].name);
+	my_printf("%d\n",a[i].sum);
+	my_printf("%d\n",all);
 
 }
 

@@ -7,10 +7,10 @@ int main_bench()
 	int a[100000],b[100000];
 	int flag=0;
 	int c[200000]={0};
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for(i=1;i<=n;i++)
-	{	scanf ("%d",&a[i]);
-	    scanf ("%d",&b[i]);
+	{	my_scanf ("%d",&a[i]);
+	    my_scanf ("%d",&b[i]);
         {
 		for(j=2*a[i];j<=2*b[i]-1;j=j+1)	
 		{
@@ -27,8 +27,8 @@ int main_bench()
 			{flag=1;}
 			}
 	if(flag==0)
-		{printf("%d %d",min,max);}
+		{my_printf("%d %d",min,max);}
 	else
-	{printf("no");	}
+	{my_printf("no");	}
 	return 0;
 }

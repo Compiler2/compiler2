@@ -4,10 +4,10 @@ int main_bench()
 {
 	int k,i,n,j,count,r=0;
 	int a[1000];
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 		
 			if(count==k)
 			{
-				printf("yes");
+				my_printf("yes");
 				break;
 			}
 			if(count!=k)
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	if(r==(n*(n-1)/2)&&(a[n-1]+a[n-2])!=k)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

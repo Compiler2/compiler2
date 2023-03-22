@@ -14,12 +14,12 @@ void yid(int *p,int x,int y)
 int main_bench()
 {
     int *arr,l,a[100],n,m;
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
 	for(l=0;l<n;l++)
-		scanf("%d",&a[l]);
+		my_scanf("%d",&a[l]);
 	arr=a;
 	yid(arr,n,m);
-	printf("%d",*arr);
+	my_printf("%d",*arr);
     for(arr=(a+1);arr<(a+n);arr++)
-		printf(" %d",*arr);
+		my_printf(" %d",*arr);
 }

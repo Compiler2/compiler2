@@ -4,7 +4,7 @@ int main_bench(){
     int i,j,k,f,m[50]={0},n[50]={0},b[300]={0};
     
     for(k=0;k<50;k++){
-         scanf("%d%d",&n[k],&m[k]);
+         my_scanf("%d%d",&n[k],&m[k]);
          if(m[k]==0)
              break;      
     }   
@@ -24,7 +24,7 @@ int main_bench(){
          } 
          if(f==0)
              f=n[k];
-         printf("%d\n",f); 
+         my_printf("%d\n",f); 
     }
 
     return 0;

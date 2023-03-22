@@ -4,18 +4,18 @@ int main_bench()
 {
     int i,j,n,x[1005],y[1005],mark,max=0;
     char c;
-    scanf("%d",&x[0]);
+    my_scanf("%d",&x[0]);
     i=1;
     while((c=getchar())==',')
     {
-        scanf("%d",&x[i]);
+        my_scanf("%d",&x[i]);
         i++;
     }
-    scanf("%d",&y[0]);
+    my_scanf("%d",&y[0]);
     i=1;
     while((c=getchar())==',')
     {
-        scanf("%d",&y[i]);
+        my_scanf("%d",&y[i]);
         i++;
     }
     n=i;
@@ -29,5 +29,5 @@ int main_bench()
         }
         max=(max>mark)?max:mark;
     }
-    printf("%d %d",n,max);
+    my_printf("%d %d",n,max);
 }

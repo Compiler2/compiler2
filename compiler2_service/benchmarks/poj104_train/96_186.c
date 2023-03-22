@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=0;i<=100;i++)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if(c=='\n')
 		{
 			num=i;
@@ -19,21 +19,21 @@ int main_bench()
 		for(i=0;i<num-2;i++)
 		{
 			temp=a[i]*100+a[i+1]*10+a[i+2];
-			printf("%d",temp/13);
+			my_printf("%d",temp/13);
 			temp=temp%13;
 			a[i+1]=(temp-temp%10)/10;
 			a[i+2]=temp%10;
 		}
-		printf("\n%d\n",temp);
+		my_printf("\n%d\n",temp);
 	}
 	if(num==2)
 	{
 		temp=10*a[0]+a[1];
-		printf("%d\n%d\n",temp/13,temp%13);
+		my_printf("%d\n%d\n",temp/13,temp%13);
 	}
 	if(num==1)
 	{
-		printf("0\n%d\n",a[0]);
+		my_printf("0\n%d\n",a[0]);
 	}
 	return 0;
 }

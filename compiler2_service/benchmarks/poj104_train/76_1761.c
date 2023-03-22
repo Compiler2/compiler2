@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,k,Max,Min;
     double j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int *num=(int*)malloc(n*2*sizeof(int));
-    for(i=0;i<2*n;i++)scanf("%d",num+i);
+    for(i=0;i<2*n;i++)my_scanf("%d",num+i);
 
      for(i=1,Max=0;i<2*n;i=i+2){if(Max<*(num+i)) Max=*(num+i);}
      for(i=0,Min=*(num);i<2*n-1;i=i+2){if(Min>*(num+i)) Min=*(num+i);}
@@ -19,10 +19,10 @@ int main_bench()
                     {k=0;break;}
            }
         
-        if(k) {printf("no\n");return 0;}
+        if(k) {my_printf("no\n");return 0;}
 
     }
 
-     printf("%d %d",Min,Max);
+     my_printf("%d %d",Min,Max);
      return 0;
 }

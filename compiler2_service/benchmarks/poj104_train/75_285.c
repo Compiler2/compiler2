@@ -1,19 +1,19 @@
 #include <header.h>
 
 
-void main_bench()
+int main_bench()
 {
 	int n=0,start[1000],end[1000];
 	char c=',';
 	while(c!='\n')
 	{
-		scanf("%d%c",&start[n],&c);
+		my_scanf("%d%c",&start[n],&c);
 		n++;
 	}
 
 	int i;
 	for(i=0;i<=n-1;i++)
-		scanf("%d%c",&end[i],&c);
+		my_scanf("%d%c",&end[i],&c);
 
 	int time=0;
 	for(i=0;i<=n-1;i++)
@@ -34,6 +34,6 @@ void main_bench()
 		if(max<member[i])
 			max=member[i];
 
-	printf("%d %d\n",n,max);
+	my_printf("%d %d\n",n,max);
 }
 

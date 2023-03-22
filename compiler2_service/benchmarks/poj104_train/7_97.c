@@ -31,17 +31,17 @@ int main_bench()
 		}
 	}
 	if(wz==-1){
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	else{
 		for(i=0;i<wz;i++){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		}
-		printf("%s",rep);
+		my_printf("%s",rep);
 		for(i+=len2;i<len1;i++){
-			printf("%c",str[i]);
+			my_printf("%c",str[i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

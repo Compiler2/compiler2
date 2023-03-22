@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,min,max,k,p,q,s;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int a[n],b[n];
     for(i=0;i<n;i++){
-        scanf("%d%d\n",&(a[i]),&(b[i]));
+        my_scanf("%d%d\n",&(a[i]),&(b[i]));
     }
     min=a[0],max=b[0];
     for(i=0;i<n;i++){
@@ -44,9 +44,9 @@ int main_bench(){
         s=s+c[i];
     }
     if(s==0){
-        printf("%d %d",min,max);
+        my_printf("%d %d",min,max);
     }else{
-        printf("no");
+        my_printf("no");
     }
   return 0;
 }

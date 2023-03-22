@@ -4,12 +4,12 @@ int main_bench()
 {
 	int su(int x);
 	int n,i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=3;i<=n/2;i+=2)
 	{
 		if(su(i)&&su(n-i))
 		{
-			printf("%d %d\n",i,n-i);
+			my_printf("%d %d\n",i,n-i);
 		}
 	}
 }

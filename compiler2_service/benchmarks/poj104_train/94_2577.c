@@ -5,9 +5,9 @@ int main_bench()
     int n,s,t,m,j,r,i;
     int a[500],b[500];
     s=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         if(a[i]%2!=0){
             b[s]=a[i];
             s++;
@@ -26,9 +26,9 @@ int main_bench()
         }
     }
     for(m=0;m<s-1;m++){
-        printf("%d,",b[m]);
+        my_printf("%d,",b[m]);
     }
-    printf("%d",b[s-1]);
+    my_printf("%d",b[s-1]);
     return 0;
 }
 

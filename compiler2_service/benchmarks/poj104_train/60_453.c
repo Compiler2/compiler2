@@ -5,7 +5,7 @@ int main_bench()
   int *p;
   int n,i,e,r,k=0;
   int panduan(int a);
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   p=(int *)malloc(n*sizeof(int));
   for(i=0;i<n;i++)
   {
@@ -17,13 +17,13 @@ int main_bench()
 	 r=panduan(p[i]+2);
      if(e==1&&r==1)
 	 {
-		 printf("%d %d\n",p[i],p[i]+2);
+		 my_printf("%d %d\n",p[i],p[i]+2);
 		 k=1;
 	 }
 
   }
   if(k==0)
-	  printf("empty\n");
+	  my_printf("empty\n");
   free(p);
   return 0;
 }

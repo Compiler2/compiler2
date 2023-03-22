@@ -2,7 +2,7 @@
 
 int main_bench(){
     int n,i,r,s,x=0,y=0,a=0,b=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     i=3;
     while(i<=n){
                         for(s=3;s<i;s++){
@@ -27,7 +27,7 @@ int main_bench(){
                                                       }
                                    if(y==i-1&&i+2<=n){
                                               b=1;
-                                              printf("%d %d\n",i,i+2);
+                                              my_printf("%d %d\n",i,i+2);
                                               }
                                    } 
                         x=0;
@@ -35,7 +35,7 @@ int main_bench(){
                         i=i+2;
                         }
     if(a==0||b==0){
-                   printf("empty");
+                   my_printf("empty");
                    }
     return 0;
 }

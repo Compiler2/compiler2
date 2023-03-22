@@ -5,7 +5,7 @@ main_bench(){
 	int a[300][300];
 		for(k=0;k<300;k++){
 		int n,m,i,j;
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n==0&&m==0) break;
 		
 		for(i=0;i<300;i++){
@@ -15,7 +15,7 @@ main_bench(){
 			for(j=0;j<n-i;j++){
 				if((m+j)<(n-i+1)) a[i][j]=a[i-1][m+j];
 				else a[i][j]=a[i-1][(m+j)%(n-i+1)];}}
-		printf("%d\n",a[n-1][0]);
+		my_printf("%d\n",a[n-1][0]);
 			
 			}
 	

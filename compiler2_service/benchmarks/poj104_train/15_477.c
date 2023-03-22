@@ -4,11 +4,11 @@
 int main_bench()
 {
         int n,i,j,x1=0,x2,y1=0,y2,num,s;
-		scanf ("%d",&n);
+		my_scanf ("%d",&n);
 		for (i=0;i<n;i++)
 			for (j=0;j<n;j++)
 			{
-				scanf ("%d",&num);
+				my_scanf ("%d",&num);
 				if (num==0)
 				{
 					if (x1==0)
@@ -21,7 +21,7 @@ int main_bench()
 
 			}
 			s=(x2-x1)*(y2-y1);
-			printf ("%d\n",s);
+			my_printf ("%d\n",s);
 				
 
 		

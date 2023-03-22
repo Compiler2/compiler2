@@ -4,7 +4,7 @@ main_bench()
 {
 	char a[200];
     int b[200];
-	scanf("%s",a); 
+	my_scanf("%s",a); 
 	
       int num=0,i,m=0;
       for (i=0;a[i]!='\0';i++)
@@ -40,15 +40,15 @@ main_bench()
       
       if (m==1)
       {   
-        printf ("%d\n",b[0]);
-        printf ("%d",yu);       
+        my_printf ("%d\n",b[0]);
+        my_printf ("%d",yu);       
                }    
       else 
       {
            if (m==2)
           {
-           printf ("%d\n",b[1]);
-           printf("%d",yu);
+           my_printf ("%d\n",b[1]);
+           my_printf("%d",yu);
            }      	
           else    
           {
@@ -57,9 +57,9 @@ main_bench()
           l++;
           int r ;
           for (r=l;r<=m-1;r++)
-          printf ("%d",b[r]);
+          my_printf ("%d",b[r]);
         
-          printf("\n%d",yu);	
+          my_printf("\n%d",yu);	
           }  	
       }
 		} 

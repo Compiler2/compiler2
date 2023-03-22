@@ -11,6 +11,6 @@ int main_bench()
     }
     s1[a-1]=s[a-1]+s[0];
     s1[a]='\0';
-    printf("%s", s1);
+    my_printf("%s", s1);
     return 0;
 }

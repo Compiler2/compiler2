@@ -11,10 +11,10 @@ int main_bench()
 		}
 		else {
 			if(len!=0){
-			printf("%d,",len);
+			my_printf("%d,",len);
             len=0;
 		}}
 	}
-	printf("%d",len);
+	my_printf("%d",len);
 	return 0;
 }

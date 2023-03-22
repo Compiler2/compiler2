@@ -4,7 +4,7 @@ int main_bench()
 {
 	char str[100000];
 	int a[26]={0},i,j,n,len,flag=1,symbol=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(j=0;j<n;j++)
 	{
@@ -25,13 +25,13 @@ int main_bench()
 			}
 		}
 		if(flag==1)
-			printf("no\n");
+			my_printf("no\n");
 		else
 		{
 			for(i=0;i<len;i++)
 				if(a[str[i]-97]==1)
 				{
-					printf("%c\n",str[i]);
+					my_printf("%c\n",str[i]);
 					break;
 				}
 		}

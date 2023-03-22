@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[500],*p,*p1;
 int i,j,n;
-scanf("%s",a);
+my_scanf("%s",a);
 n=strlen(a);
 
 for(i=2;i<=n;i++)
@@ -17,8 +17,8 @@ for(i=2;i<=n;i++)
                 break;
                }
           if(p1==p+i)
-              {for(j=0;j<i;j++) printf("%c",*(p+j));
-                printf("\n");}
+              {for(j=0;j<i;j++) my_printf("%c",*(p+j));
+                my_printf("\n");}
            }
        }
 return 0;

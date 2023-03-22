@@ -13,5 +13,5 @@ main_bench()
     }
     b[n-1]=a[0]+a[n-1];
     p=b;
-    for(i=0;i<n;i++,p++) printf("%c",*p);
+    for(i=0;i<n;i++,p++) my_printf("%c",*p);
 }

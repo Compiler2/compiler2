@@ -21,9 +21,9 @@ int main_bench()
 	for(k = 0;k <= i;k++)
 	{
 	if(k!=i)
-	{printf("%s ",words[k]);}
+	{my_printf("%s ",words[k]);}
 	else
-		printf("%s\n",words[k]);
+		my_printf("%s\n",words[k]);
 	}
 	return 0;
 }

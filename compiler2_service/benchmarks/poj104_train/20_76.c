@@ -34,5 +34,5 @@ int main_bench()
 			else if(j>=length[i]-1)str1[i][j]='\0';
 		}			    
 	}
-	for(i=0;i<n;i++)printf("%s\n",str1[i]);
+	for(i=0;i<n;i++)my_printf("%s\n",str1[i]);
 }

@@ -13,14 +13,14 @@ main_bench()
         if(a[i]>='a'&&a[i]<='z') a[i]=a[i]+'A'-'a';
         if(b[i]>='a'&&b[i]<='z') b[i]=b[i]-'a'+'A';
         x=a[i]-b[i];
-        if(x>0) {printf(">");break;}
-        else if(x<0) {printf("<");break;}
+        if(x>0) {my_printf(">");break;}
+        else if(x<0) {my_printf("<");break;}
     }
     if(i==m)
     {
-        if(l1>l2) printf(">");
-        else if(l1==l2) printf("=");
-        else printf("<");
+        if(l1>l2) my_printf(">");
+        else if(l1==l2) my_printf("=");
+        else my_printf("<");
     }
     return 0;
 }

@@ -9,11 +9,11 @@ int main_bench()
 {
 	int n,N;
 	int a=0,b=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(n=1;n<=N;n++)
 	{
 		int A,B;
-		scanf("%d%d",&A,&B);
+		my_scanf("%d%d",&A,&B);
 		if((A==0&&B==1)||(A==1&&B==2)||(A==2&&B==0))a=a+1;
 		else
 		{
@@ -21,11 +21,11 @@ int main_bench()
 			else ;
 		}
 	}
-	if(a>b)printf("A\n");
+	if(a>b)my_printf("A\n");
 	else
 	{
-		if(b>a)printf("B\n");
-		else printf("Tie\n");
+		if(b>a)my_printf("B\n");
+		else my_printf("Tie\n");
 	}
 	return 0;
 }

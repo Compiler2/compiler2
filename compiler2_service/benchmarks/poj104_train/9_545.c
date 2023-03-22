@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,i,j,temp;
     char t[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int y[n];
     char id[n][10];
     for (i=0;i<n;i++)
-        scanf("%s %d",id[i],&y[i]);
+        my_scanf("%s %d",id[i],&y[i]);
     for (i=1;i<n;i++)
     {
         if (y[i]>=60)
@@ -25,5 +25,5 @@ int main_bench()
              }
         }
     for (i=0;i<n;i++)
-    printf("%s\n",id[i]);
+    my_printf("%s\n",id[i]);
     }

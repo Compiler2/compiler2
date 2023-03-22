@@ -2,9 +2,9 @@
 
 int main_bench(){
     int m=1,e,n,a[10000],b[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d%d\n",&a[i],&b[i]);
+        my_scanf("%d%d\n",&a[i],&b[i]);
     }
     for(int i=0;i<n-1;i++){
        for(int k=i+1;k<n;k++){
@@ -26,10 +26,10 @@ int main_bench(){
         }
     }
     if(m==0){
-        printf("no");
+        my_printf("no");
     }
     else{
-        printf("%d %d",a[0],b[n-1]);
+        my_printf("%d %d",a[0],b[n-1]);
     }
     return 0;
 }

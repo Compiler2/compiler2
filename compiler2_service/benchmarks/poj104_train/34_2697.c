@@ -5,7 +5,7 @@ int fun1(int i)
 
 	int j;
 	j=i*3+1;
-	printf("%d*3+1=%d\n",i,j);
+	my_printf("%d*3+1=%d\n",i,j);
 	return j;
 }
 
@@ -16,7 +16,7 @@ int fun2(int i)
 	
 	int j;
 	j=i/2;
-	printf("%d/2=%d\n",i,j);
+	my_printf("%d/2=%d\n",i,j);
 	return j;
 }
 
@@ -24,7 +24,7 @@ int fun2(int i)
 int main_bench()
 {
 	int i;
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 	do
 	{
 		if(i%2==1&&i!=1)
@@ -33,7 +33,7 @@ int main_bench()
 			i=fun2(i);
 	}
 	while(i!=1);
-	printf("End");
+	my_printf("End");
 
 	return 0;
 }

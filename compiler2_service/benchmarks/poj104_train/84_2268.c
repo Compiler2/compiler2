@@ -4,10 +4,10 @@ int main_bench(){
 	int i,n;
 	 
 	int sz[100],e,y=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 	for (i = 0; i < n;i++){
 		
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	
 	for(i=0;i<n;i++){
@@ -32,7 +32,7 @@ scanf("%d",&n);
 		sz[x]=sz[1];
 		sz[1]=t;
 	}
-	printf("%d\n",sz[0]);
-	printf("%d\n",sz[1]);
+	my_printf("%d\n",sz[0]);
+	my_printf("%d\n",sz[1]);
 	return 0;
 }

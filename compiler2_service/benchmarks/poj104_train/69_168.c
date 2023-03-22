@@ -28,7 +28,7 @@ int main_bench()
 			{
 				e[0]='0';
 				e[1]='\0';
-				printf("0");
+				my_printf("0");
 				break;
 			}
 		}
@@ -60,8 +60,8 @@ int main_bench()
 		else
 		{
 			sign=1;
-			printf("%c",e[length-1-i]);
+			my_printf("%c",e[length-1-i]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 }

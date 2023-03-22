@@ -5,16 +5,16 @@ int main_bench()
 	int n,i,j,k,s[100]={0},m,l=0;
 	char a[256][256],b[256];
 	double c,d=0,e=0;
-	scanf("%lf",&c);
-	scanf("%s",a[1]);
-	scanf("%s",a[0]);
+	my_scanf("%lf",&c);
+	my_scanf("%s",a[1]);
+	my_scanf("%s",a[0]);
 	if(strlen(a[1])==strlen(a[0]))
 	{
 	for(i=0;a[0][i]!='\0';i++)
 	{
 		if((a[0][i]!='A'&&a[0][i]!='T'&&a[0][i]!='C'&&a[0][i]!='G')||(a[1][i]!='A'&&a[1][i]!='T'&&a[1][i]!='C'&&a[1][i]!='G'))
 		{
-			printf("error");
+			my_printf("error");
 			e=0;
 			break;
 		}
@@ -31,17 +31,17 @@ int main_bench()
 	{
 	if(c<(e/d))
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	}
 	}
 	else
 	{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

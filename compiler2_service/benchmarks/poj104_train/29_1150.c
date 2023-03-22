@@ -9,10 +9,10 @@ int main_bench()
 	sz[1]=1;
 	sz[2]=2;
 	sz[3]=3;
-	scanf("%lf",&m);
+	my_scanf("%lf",&m);
 	for(d=0;d<m;d++)
 	{
-		scanf("%d",&wt[d]);
+		my_scanf("%d",&wt[d]);
 	}
 	for(d=0;d<m;d++)
 	{
@@ -33,7 +33,7 @@ int main_bench()
 				e=e+1.000*sz[c+1]/sz[c];
 			}
 		}
-		printf("%.3lf\n",e);
+		my_printf("%.3lf\n",e);
 	}
 	return 0;
 }

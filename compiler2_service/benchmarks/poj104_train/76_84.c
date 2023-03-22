@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j,sum,c,d,temp,e,f,g;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	temp=0;
 	int a[50000],b[50000];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	c=a[0];
 	d=b[0];
@@ -69,11 +69,11 @@ int main_bench()
 	}
 	if(temp==0)
 	{
-		printf("%d %d",a[0],g);
+		my_printf("%d %d",a[0],g);
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

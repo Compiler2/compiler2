@@ -30,7 +30,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%s ",s[i]);
+		my_printf("%s ",s[i]);
 	}
-	printf("%s\n",s[m]);
+	my_printf("%s\n",s[m]);
 }

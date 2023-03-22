@@ -15,5 +15,5 @@ int main_bench()
 			q+=1;
 		}
 	for(i=0,q=a; i<num; i++,q++)
-		printf("%d\n",*q);        
+		my_printf("%d\n",*q);        
 }

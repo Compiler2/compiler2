@@ -4,24 +4,24 @@ int main_bench()
 {
 	int i,j,n,len;
 	char zfc[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",zfc[i]);
+		my_scanf("%s",zfc[i]);
 		len=strlen(zfc[i]);
 		for(j=0;j<len;j++)
 		{
 			if(zfc[i][j]=='A')
-				printf("T");
+				my_printf("T");
 			else if(zfc[i][j]=='T')
-				printf("A");
+				my_printf("A");
 			else if(zfc[i][j]=='G')
-				printf("C");
+				my_printf("C");
 			else
-				printf("G");
+				my_printf("G");
 		}
-		printf("\n");
+		my_printf("\n");
 
 	}
 

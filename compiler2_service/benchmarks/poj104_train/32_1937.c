@@ -24,13 +24,13 @@ int main_bench()
 {
 	int n,i,l,A;
 	char d[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{	
 		char a[100],b[100];
-	    scanf("%s",a);
-		scanf("%s",b);
-		if(i!=n-1) scanf("\n");
+	    my_scanf("%s",a);
+		my_scanf("%s",b);
+		if(i!=n-1) my_scanf("\n");
 		A=strlen(a);
 		putcc(a,b);
 		for(l=0;l<A;l++)
@@ -44,10 +44,10 @@ int main_bench()
 		l=0;
 		while(d[i][l]!='\0')
 		{
-			printf("%c",d[i][l]);
+			my_printf("%c",d[i][l]);
 			l=l+1;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

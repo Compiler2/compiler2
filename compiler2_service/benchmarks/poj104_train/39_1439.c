@@ -29,10 +29,10 @@ int main_bench()
 	int i,N;
 	long max,sum=0;
     struct student st[100];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",&st[i].name,&st[i].fin,&st[i].py,&st[i].o,&st[i].w,
+		my_scanf("%s %d %d %c %c %d",&st[i].name,&st[i].fin,&st[i].py,&st[i].o,&st[i].w,
 			&st[i].num);
 	}
 	max=f(st[0]);
@@ -48,9 +48,9 @@ int main_bench()
 	{
 		if(f(st[i])==max)
 		{
-			printf("%s\n",st[i].name);
-			printf("%ld\n",max);
-			printf("%ld\n",sum);
+			my_printf("%s\n",st[i].name);
+			my_printf("%ld\n",max);
+			my_printf("%ld\n",sum);
 			break;
 		}
 	}

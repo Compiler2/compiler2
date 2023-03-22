@@ -9,8 +9,8 @@ int main_bench()
 	len=strlen(a);
 	for(int i=0;i<len;i++)
 	{
-		if(a[i]!=' ')printf("%c", a[i]);
-		else if(a[i]==' ' && a[i+1]!=' ') printf(" ");
+		if(a[i]!=' ')my_printf("%c", a[i]);
+		else if(a[i]==' ' && a[i+1]!=' ') my_printf(" ");
 	}
 	 return 0;
 }

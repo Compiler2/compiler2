@@ -3,7 +3,7 @@
 int main_bench(){
 	int n;
 	int i,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char **id=(char**)malloc(sizeof(char*)*n);
 	for(i=0;i<n;i++){
 		id[i]=(char*)malloc(sizeof(char)*10);
@@ -11,7 +11,7 @@ int main_bench(){
 	int p=0;
 	int *year=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",id[i],&year[i]);
+		my_scanf("%s %d",id[i],&year[i]);
 		if(year[i]>=60){
 			p++;
 		}
@@ -43,11 +43,11 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<p;i++){
-		printf("%s\n",idolder[i]);
+		my_printf("%s\n",idolder[i]);
 	}
 	for(i=0;i<n;i++){
 		if(year[i]<60){
-			printf("%s\n",id[i]);
+			my_printf("%s\n",id[i]);
 		}
 	}
 

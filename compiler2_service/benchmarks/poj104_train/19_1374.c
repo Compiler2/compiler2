@@ -21,11 +21,11 @@ int main_bench()
 	{
 		if(strcmp(p[i],str1)==0)
 		{
-		    printf("%s",str2);
+		    my_printf("%s",str2);
 		}
 		else
-			printf("%s",p[i]);
-		if (i != n) printf(" ");
+			my_printf("%s",p[i]);
+		if (i != n) my_printf(" ");
 	}
 	return 0;
 }

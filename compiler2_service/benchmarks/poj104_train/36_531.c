@@ -5,10 +5,10 @@ int main_bench()
     int i,l1,l2;
     int a[60]={0},b[60]={0};
     char m[100],n[100];
-    scanf("%s%s",m,n);
+    my_scanf("%s%s",m,n);
     l1=strlen(m);
     l2=strlen(n);
-    if(l1!=l2) printf("NO");
+    if(l1!=l2) my_printf("NO");
     else
     {
    for(i=0;i<l1;i++)
@@ -25,7 +25,7 @@ int main_bench()
     {
     	if(b[i]!=a[i]) break;
     }
-    if(i==52) printf("YES");
-    else printf("NO");
+    if(i==52) my_printf("YES");
+    else my_printf("NO");
     }
 }

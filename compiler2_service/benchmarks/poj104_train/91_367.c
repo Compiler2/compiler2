@@ -10,5 +10,5 @@ int main_bench()
 		if(i!=len-1)b[i]=a[i]+a[i+1];
 		else b[i]=a[i]+a[0];
 	b[i]=0;
-	printf("%s\n",b);
+	my_printf("%s\n",b);
 }

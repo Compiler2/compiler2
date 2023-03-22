@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int pingjun[100];
 	int pingyi[100];
 	int jiangjin[100];
@@ -13,7 +13,7 @@ int main_bench(){
 	int jiangjinzongshu=0;
 	for(int i=0;i<n;i++){
 		jiangjin[i]=0;
-		scanf("%s %d %d %c %c %d\n",xingming[i],&pingjun[i],&pingyi[i],&ganbu,&xibu,&lunwen);
+		my_scanf("%s %d %d %c %c %d\n",xingming[i],&pingjun[i],&pingyi[i],&ganbu,&xibu,&lunwen);
 		if(pingjun[i]>80&&lunwen>=1){
 			jiangjin[i]+=8000;
 		}
@@ -37,6 +37,6 @@ int main_bench(){
 			m=r;
 		}
 	}
-	printf("%s\n%d\n%d\n",xingming[m],jiangjin[m],jiangjinzongshu);
+	my_printf("%s\n%d\n%d\n",xingming[m],jiangjin[m],jiangjinzongshu);
     return 0;
 }

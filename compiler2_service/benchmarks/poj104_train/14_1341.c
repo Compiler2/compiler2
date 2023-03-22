@@ -14,12 +14,12 @@ struct person
 int main_bench()
 {
 	int n, i, max1=0, count1=0, max2=0, count2=0, max3=0, count3=0, number=0, sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%d", &student[i].num);
-		scanf("%d", &student[i].chinese);
-		scanf("%d", &student[i].math);
+		my_scanf("%d", &student[i].num);
+		my_scanf("%d", &student[i].chinese);
+		my_scanf("%d", &student[i].math);
 	}
 	for(i=0; i<n; i++)
 	{
@@ -73,7 +73,7 @@ int main_bench()
 	student[count3].total=sum;
 	for(i=0; i<3; i++)
 	{
-		printf("%d %d\n", student[i].num, student[i].total);
+		my_printf("%d %d\n", student[i].num, student[i].total);
 	}
 	return 0;
 }

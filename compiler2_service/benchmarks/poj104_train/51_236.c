@@ -11,8 +11,8 @@ int main_bench()
 	char a[600]={0},x[6];
 	int n,len,sign=0,m=0;
 	int i,j,k;
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	len=strlen(a);
 	for(i=0;i<=len-n;i++)
 	{
@@ -59,16 +59,16 @@ int main_bench()
 	}
 	if(p[0].count<=1)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 	}
 	else{
 
-	printf("%d\n%s\n",p[0].count,p[0].b);
+	my_printf("%d\n%s\n",p[0].count,p[0].b);
 	for(i=1;i<m;i++)
 	{
 		if(p[i].count==p[i-1].count)
 		{
-			printf("%s\n",p[i].b);
+			my_printf("%s\n",p[i].b);
 		}
 		else
 			break;

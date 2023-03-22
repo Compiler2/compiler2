@@ -4,9 +4,9 @@ int main_bench()
 {
 	char c,d,str1[256],str2[256],str3[256];
 	int l,h,i,j=0,k,st=0;
-	scanf("%s",str1);
-	scanf("%s",str2);
-	scanf("%s",str3);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
+	my_scanf("%s",str3);
 	l=strlen(str2);
 	for(i=0;((c=str2[i])!='\0');i++)
 	{
@@ -34,8 +34,8 @@ int main_bench()
 		{
 			str1[k]=str3[h];
 		}
-		printf("%s\n",str1);
+		my_printf("%s\n",str1);
 	}
-	else printf("%s\n",str1);
+	else my_printf("%s\n",str1);
 }
 

@@ -3,7 +3,7 @@
 int main_bench(){
 	int a,b,c,d,e,f,k,i;
 	for(i=1;i<=100;i++){
-	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 	if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0){
 		break;
 	}
@@ -16,7 +16,7 @@ int main_bench(){
 		e+=60;
 	}
 	k=f-c+60*(e-b)+3600*(12+d-a);
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 	}
 	return 0;
 }

@@ -20,11 +20,11 @@ main_bench()
 {
     int n,k;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=3;i<=(n/2);i++)
     {   k=n-i;
         {if (f(i)==1&&f(k)==1)
-        printf("%d %d\n",i,k);
+        my_printf("%d %d\n",i,k);
         }
     }
     getchar();

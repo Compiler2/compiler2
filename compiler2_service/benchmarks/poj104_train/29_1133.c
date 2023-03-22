@@ -3,10 +3,10 @@
 int main_bench(){
 	int i,j;
 	int m,n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
     double *sum=(double*)malloc(sizeof(double)*m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1){
 			sum[i]=2.0;
 		}else if(n==2){
@@ -30,7 +30,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 
 return 0;

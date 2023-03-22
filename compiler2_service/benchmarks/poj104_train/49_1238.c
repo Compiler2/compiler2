@@ -17,7 +17,7 @@ int main_bench()
 			}
 			if(hui(b)==1)
 			{
-				printf("%s\n",b);
+				my_printf("%s\n",b);
 			}
 			else continue;
 		}

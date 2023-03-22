@@ -3,12 +3,12 @@
 int main_bench()
 {
    int m,i,max,second=0;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    max=m;
    i=0;
    while(i<300)
    {
-                      scanf(",%d",&m);
+                      my_scanf(",%d",&m);
                       if(m>max){ 
                       second=max;
                       max=m;}
@@ -17,8 +17,8 @@ int main_bench()
 					  i=i+1;
    }
    if(second==0)
-   printf("No");
+   my_printf("No");
    else
-   printf("%d\n",second);
+   my_printf("%d\n",second);
    return 0;
 }

@@ -5,7 +5,7 @@ main_bench()
       int n,i,j;
       int k=0;
       int b=1;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[n];
       for(i=3;i<=n;i++)
       {
@@ -25,13 +25,13 @@ main_bench()
       {
         if((a[i]+2)==a[i+1])
         {
-            printf("%d %d\n",a[i],a[i+1]);
+            my_printf("%d %d\n",a[i],a[i+1]);
             b++;
         }
             
       }
      if(b==1)
-     printf("empty");
+     my_printf("empty");
      getchar();
      getchar();
      getchar();      

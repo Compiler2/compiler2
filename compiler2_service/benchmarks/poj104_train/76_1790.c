@@ -3,9 +3,9 @@
 int main_bench(){
     int n,min=10000,max=0,p,q=0;
     int az[50000],bz[50000],sz[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d %d",&az[i],&bz[i]);
+        my_scanf("%d %d",&az[i],&bz[i]);
     }
     for(int k=0;k<n;k++){
         if(min>az[k]){
@@ -28,9 +28,9 @@ int main_bench(){
         q=q+sz[y];
     }
     if(p==q){
-        printf("%d %d",min,max);
+        my_printf("%d %d",min,max);
     } else{
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

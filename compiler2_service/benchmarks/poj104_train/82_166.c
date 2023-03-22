@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[100],b[100],i,hour=0,c[100],k,x,j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	
 
@@ -35,7 +35,7 @@ for(k=1;k<j;k++)
 			}
 		}
 	}
-	printf("%d",c[j-1]);
+	my_printf("%d",c[j-1]);
 	
 	return 0;
 }

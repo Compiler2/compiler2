@@ -13,10 +13,10 @@ swap(char *p,int n)
 		   {
 			   for(p=p+1;*p!='\0';p++)
 			   {
-				  printf("%c",*p);
+				  my_printf("%c",*p);
 				  if(*(p+1)=='\0') 
 				  {
-					  printf(" ");
+					  my_printf(" ");
 					  break;
 				  }
 				  else if((*p)==' ') break;
@@ -29,7 +29,7 @@ swap(char *p,int n)
 	 for(;;p++)
 	 { 
 	   if((*p)==' '||*p=='\0') break;
-       else printf("%c",*p); 
+       else my_printf("%c",*p); 
 	 }
 		return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a, b;
-	scanf("%d", &a);
+	my_scanf("%d", &a);
 	if(a-0>=0&&a-10<0){
 		b=a;
 	}
@@ -19,6 +19,6 @@ int main_bench()
 	else if(a-10000>=0&&a-100000<0){
 		b=a%10*10000+(a%100-a%10)*100+(a%1000-a%100)+(a%10000-a%1000)/100+a/10000;
 	}	
-	printf("%d", b);
+	my_printf("%d", b);
 	return 0;
 }

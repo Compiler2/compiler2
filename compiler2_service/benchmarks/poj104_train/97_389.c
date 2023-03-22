@@ -4,7 +4,7 @@ int main_bench()
 {  
    int m[6];
    int a,b,c,d,e,n,i;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    
 	   m[0]=(n-n%100)/100;
 	   a=n-m[0]*100;
@@ -18,7 +18,7 @@ int main_bench()
 	   e=d-m[4]*5;
 	   m[5]=e;
 	   for(i=0;i<5;i++)
-	   printf("%d\n",m[i]);
-       printf("%d",m[5]);
+	   my_printf("%d\n",m[i]);
+       my_printf("%d",m[5]);
 	return 0;
 }

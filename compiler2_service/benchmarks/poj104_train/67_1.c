@@ -8,20 +8,20 @@ int main_bench()
     int i, n;
     double a, b, c;
     
-    scanf("%d", &n);
-    scanf("%lf%lf", &a, &b);
+    my_scanf("%d", &n);
+    my_scanf("%lf%lf", &a, &b);
     c = b/a;
 
     for (i=1; i<n; i++) {
-        scanf("%lf%lf", &a, &b);
+        my_scanf("%lf%lf", &a, &b);
         if (b/a - c > 0.05) {
-            printf("better\n");
+            my_printf("better\n");
         }
         else if (c - b/a > 0.05) {
-            printf("worse\n");
+            my_printf("worse\n");
         }
         else {
-            printf("same\n");
+            my_printf("same\n");
         }
     }
     return 0;
@@ -69,6 +69,6 @@ char * output_dir = "data";
 
 void xbuild()
 {
-    printf(mn[xn]);
+    my_printf(mn[xn]);
     xn++;
 }

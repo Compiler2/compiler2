@@ -7,10 +7,10 @@ int main_bench()
   int b[50000];
   int k,i;
   int t,e;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-    scanf("%d %d",&a[i],&b[i]);
+    my_scanf("%d %d",&a[i],&b[i]);
   }
   for(k=1;k<n;k++)
   {
@@ -31,7 +31,7 @@ int main_bench()
   {
    if(b[i]<a[i+1])
    {
-      printf("no");
+      my_printf("no");
 	 break;
    }
    else
@@ -45,6 +45,6 @@ int main_bench()
    }
    }
   if(i==n)
-printf("%d %d",a[0],b[n-1]);
+my_printf("%d %d",a[0],b[n-1]);
   return 0;
 }

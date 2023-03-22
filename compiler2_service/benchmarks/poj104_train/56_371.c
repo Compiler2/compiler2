@@ -5,7 +5,7 @@ int main_bench()
 {
 	int k=0,i,t;
 	char num[6],rum[6];
-	scanf("%s",num);
+	my_scanf("%s",num);
 	for (i=0;num[i]!='\0';i++)
 	{
       k=k+1;	
@@ -19,7 +19,7 @@ int main_bench()
 
 	
 	
-		printf("%s\n",rum);
+		my_printf("%s\n",rum);
 
 	return 0;
 }

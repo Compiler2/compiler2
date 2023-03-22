@@ -5,7 +5,7 @@ int main_bench()
     int n=1,m,a[300],b[300],i,k,j;
     for (;;)
     {
-        scanf("%d %d",&n,&m);
+        my_scanf("%d %d",&n,&m);
         if (n==0) break;
         for (i=0;i<n;i++) a[i]=i+1;
         while (n>1)
@@ -17,7 +17,7 @@ int main_bench()
               n-=1;
               for (i=0;i<n;i++) a[i]=b[i];
               }
-        printf("%d\n",a[0]);
+        my_printf("%d\n",a[0]);
         }
         }
                             

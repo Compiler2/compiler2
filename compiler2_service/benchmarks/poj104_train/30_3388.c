@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n;
 	int sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if(n==0)
 	{
-		printf(0);
+		my_printf(0);
 	}
 	else
 	{
@@ -21,6 +21,6 @@ int main_bench()
 			}
 	      	 
 		}
-	}printf("%d\n", sum);
+	}my_printf("%d\n", sum);
 		
 }

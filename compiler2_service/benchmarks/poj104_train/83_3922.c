@@ -3,20 +3,20 @@
    int main_bench(){
    int n,i,k,a;
    a=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    float d,e,g;
    d=0; 
    int c[n],b[n];
    for(i=0;i<n;i++){
-   scanf("%d ",&c[i]);
+   my_scanf("%d ",&c[i]);
    a=a+c[i];
 }
    for(k=0;k<n;k++){
    if(k!=n-1){
-   scanf("%d ",&b[k]);
+   my_scanf("%d ",&b[k]);
 }
    else{
-   scanf("%d",&b[k]);
+   my_scanf("%d",&b[k]);
 }
    if(b[k]<=100&&b[k]>=90){
       e=c[k]*4.0;
@@ -51,6 +51,6 @@
     d=d+e;
 }
     g=d/a;    
-    printf("%.2f",g);
+    my_printf("%.2f",g);
     return 0;
 }

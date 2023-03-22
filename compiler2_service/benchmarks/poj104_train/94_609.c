@@ -3,11 +3,11 @@
 int main_bench(){
     int N,k=0,i,j,m;
     int sz[500],js[500];
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N-1;i++){
-       scanf("%d ",&sz[i]);
+       my_scanf("%d ",&sz[i]);
     }
-    scanf("%d",&sz[N-1]);
+    my_scanf("%d",&sz[N-1]);
     for(i=0;i<N;i++){
        if(sz[i]%2!=0){
            js[k]=sz[i];
@@ -24,8 +24,8 @@ int main_bench(){
        } 
     }
     for(i=0;i<k-1;i++){
-        printf("%d,",js[i]);
+        my_printf("%d,",js[i]);
     }
-    printf("%d",js[k-1]);
+    my_printf("%d",js[k-1]);
     return 0;
 }

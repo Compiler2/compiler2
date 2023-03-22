@@ -5,9 +5,9 @@ int main_bench(){
 	double w[500],z[500];
 	int a[500];
 	float b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		w[0]=1.0;
@@ -22,7 +22,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%.3f\n",b[i]);
+		my_printf("%.3f\n",b[i]);
 	}
 	return 0;
 }

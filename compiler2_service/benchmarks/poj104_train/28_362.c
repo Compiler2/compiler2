@@ -14,13 +14,13 @@ int main_bench()
 		{k++;p++;}
 		else if(*(p-1)!=' ')
 		{
-			printf("%d,",k);
+			my_printf("%d,",k);
 			p++;
 			k=0;
 			continue;
 		}
 		else {p++;continue;}
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 }
 	

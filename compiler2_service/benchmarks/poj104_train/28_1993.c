@@ -21,7 +21,7 @@ for (int i=0;i<l;i++){
     j++;   
 	}
 }
-for (int i=0;i<j;i++){printf("%d%c",b[i],',');}
-printf("%d",l-q);
+for (int i=0;i<j;i++){my_printf("%d%c",b[i],',');}
+my_printf("%d",l-q);
 return 0;
 }

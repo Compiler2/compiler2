@@ -19,7 +19,7 @@ int main_bench()
 			{if(str[j]!=str[i])
 			break;
 			}
-			printf("(%c,%d)",str[i],j-i);
+			my_printf("(%c,%d)",str[i],j-i);
 		}
 	}
 	return 0;

@@ -6,15 +6,15 @@ int main_bench()
 	int s[300],i=0,n,a,b,*p;
 	char c;
 	p=&s[0];
-	scanf("%d",&s[0]);
+	my_scanf("%d",&s[0]);
     while((c=getchar())==',')
 	{
 		i++;
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 	}
 	n=i+1;
 	if(n==1)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		a=f(p,n);
@@ -25,9 +25,9 @@ int main_bench()
 				b=s[i];
 		}				
 		if(b!=0)
-			printf("%d\n",b);
+			my_printf("%d\n",b);
 		else
-			printf("No\n");
+			my_printf("No\n");
 	}
 }
 int f(int *p,int n)

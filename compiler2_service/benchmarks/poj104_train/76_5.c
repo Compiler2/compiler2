@@ -9,9 +9,9 @@ int tag[10000];
 	};
 	struct part number[50000];
 	int i,j,max,min,result;	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&number[i].start,&number[i].end);
+		my_scanf("%d %d",&number[i].start,&number[i].end);
 	}
 	max=0;
 	min=10000;
@@ -33,12 +33,12 @@ int tag[10000];
 	for(i=min+1;i<max;i++){
 		if(min<i<=max){
 			if(tag[i]==1){
-				printf("no");
+				my_printf("no");
 				result=1;
 				break;
 			}
 		}
 	}
-	if(result==0) printf("%d %d",min,max);
+	if(result==0) my_printf("%d %d",min,max);
 	return 0;
 }

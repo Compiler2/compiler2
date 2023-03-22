@@ -14,10 +14,10 @@ int main_bench()
 		int paper;
 	};
 	struct student stu[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].py,&stu[i].a,&stu[i].b,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].qimo,&stu[i].py,&stu[i].a,&stu[i].b,&stu[i].paper);
 		qians[i]=jiangj(stu[i].qimo,stu[i].py,stu[i].a,stu[i].b,stu[i].paper);
 	}
 	for(i=0,t=0,sum=0;i<n;i++)
@@ -29,7 +29,7 @@ int main_bench()
 			t=qians[i];
 		}
 	}
-	printf("%s\n%d\n%d",stu[d].name,qians[d],sum);
+	my_printf("%s\n%d\n%d",stu[d].name,qians[d],sum);
 }
 int jiangj(int a,int b,char d,char e,int c)
 {

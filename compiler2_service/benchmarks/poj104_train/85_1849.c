@@ -3,10 +3,10 @@
 int main_bench(){
     char zf[21];
     int n,m,a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
         a=1;
-        scanf("%s",zf);
+        my_scanf("%s",zf);
         m=strlen(zf);
         if(zf[0]==95||(zf[0]>=65&&zf[0]<=90)||(zf[0]>=97&&zf[0]<=122)){
             a=a*1;
@@ -21,11 +21,11 @@ int main_bench(){
             }
         }
         if(a==1){
-            printf("yes");
+            my_printf("yes");
         }else{
-            printf("no");
+            my_printf("no");
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }

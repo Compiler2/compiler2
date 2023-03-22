@@ -31,8 +31,8 @@ main_bench()
 			second=a[i];
 	}
 	if(second==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",second);
+		my_printf("%d",second);
 	return 0;
 }

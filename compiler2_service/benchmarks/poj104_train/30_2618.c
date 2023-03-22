@@ -10,11 +10,11 @@ int wu(int n)
 int main_bench()
 {
     int i,n,sum=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
        if(wu(i))
            sum+=i*i;
     }
-    printf("%d\n",sum);
+    my_printf("%d\n",sum);
 }

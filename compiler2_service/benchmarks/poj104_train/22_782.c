@@ -4,7 +4,7 @@ int main_bench()
 {
     unsigned a[1000];
     char b[1000];
-    scanf("%u",&a[0]);
+    my_scanf("%u",&a[0]);
     int i;
     i=0;
     while(1)
@@ -12,9 +12,9 @@ int main_bench()
             b[i]=getchar();
             if(b[i]!=',') break;
             i++;
-            scanf("%u",&a[i]);
+            my_scanf("%u",&a[i]);
     }
-    if(i==0) printf("No");
+    if(i==0) my_printf("No");
     else 
   {
         
@@ -34,8 +34,8 @@ int main_bench()
         {
             if(max2<a[i]&&a[i]<max1) max2=a[i];
         }
-        if(max2==0) printf("No\n");
-        else printf("%u\n",max2);
+        if(max2==0) my_printf("No\n");
+        else my_printf("%u\n",max2);
    }
 
     getchar();

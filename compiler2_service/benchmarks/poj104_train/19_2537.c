@@ -22,9 +22,9 @@ int main_bench()
 		for(i=1;i<=row;i++)
 			if(strcmp(word[i-1],str1)==0)
 				strcpy(word[i-1],str2);
-		printf("%s",word[0]);
+		my_printf("%s",word[0]);
 		for(i=2;i<=row;i++)
-			printf(" %s",word[i-1]);
+			my_printf(" %s",word[i-1]);
 		return 0;
 }
 

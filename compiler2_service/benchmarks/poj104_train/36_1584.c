@@ -45,6 +45,6 @@ main_bench()
             }
         }
     }
-    if(p==0) printf("NO");
-    else printf("YES");
+    if(p==0) my_printf("NO");
+    else my_printf("YES");
 }

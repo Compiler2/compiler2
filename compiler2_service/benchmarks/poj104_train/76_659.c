@@ -4,9 +4,9 @@ int main_bench(){
     int n,i,j;
     int a[50000]={0};
     int b[50000]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
     }
     int min=a[0],max=b[0];
     for(i=0;i<n;i++){
@@ -21,10 +21,10 @@ int main_bench(){
         for(j=0,count=0;j<n;j++){
             if(k>=a[j]&&k<=b[j]){count++;}
         }
-        if(count==0){printf("no");break;}
+        if(count==0){my_printf("no");break;}
         else{legal++;}
     }
-    if(legal==(max-min)*2+1){printf("%d %d",min,max);}
+    if(legal==(max-min)*2+1){my_printf("%d %d",min,max);}
     return 0;
     
 }

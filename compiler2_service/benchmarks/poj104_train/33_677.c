@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char ml[256],*ps;
 	for(i=0;i<n;i++){
-		scanf("%s\n",ml);
+		my_scanf("%s\n",ml);
 		for(ps=ml;*ps!='\0';ps++){
 			if(*ps=='A')
 				*ps='T';

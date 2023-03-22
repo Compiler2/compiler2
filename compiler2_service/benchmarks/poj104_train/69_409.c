@@ -52,17 +52,17 @@ main_bench()
       
       if (a[0] + b[0] > 9 + '0' + '0')
       {
-         printf ("1");
+         my_printf ("1");
          for (i = 0;i <= n - 1;i++)
-         printf ("%c",c[i]);
+         my_printf ("%c",c[i]);
       }
       else
       for (i = 0;i <= n - 1;i++)
       {
           if ((int)c[0] == 0 + '0' && n != 1)
           for (i = 1;i <= n - 1;i++)
-          printf ("%c",c[i]);
+          my_printf ("%c",c[i]);
           else
-          printf ("%c",c[i]);
+          my_printf ("%c",c[i]);
       }
 }

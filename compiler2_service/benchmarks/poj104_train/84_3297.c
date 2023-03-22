@@ -17,9 +17,9 @@ int max(int a[],int n)
 int main_bench()
 {
 	int i,n,num[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%d",&num[i]);
-	printf("%d\n",max(num,n));
-	printf("%d\n",max(num+1,n-1));
+		my_scanf("%d",&num[i]);
+	my_printf("%d\n",max(num,n));
+	my_printf("%d\n",max(num+1,n-1));
 }

@@ -21,5 +21,5 @@ main_bench()
 	b=*(name);
 	*(final+i)=a+b;
 	*(final+len)='\0';
-	printf("%s\n",final);
+	my_printf("%s\n",final);
 }

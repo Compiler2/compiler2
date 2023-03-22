@@ -17,9 +17,9 @@ for(i=0;i<lena;i++)
 	sumd=sumd+d[i];
    }
 if(sumc>sumd)
- printf(">");
+ my_printf(">");
 else if(sumc<sumd)
- printf("<");
+ my_printf("<");
 else if(sumc==sumd)
- printf("=");
+ my_printf("=");
 }

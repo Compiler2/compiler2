@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,j,i,count,key;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	count=0;
 	key=0;
@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[j]);
+			my_scanf("%d",&a[j]);
 			
 		}
 		for(j=0;j<n;j++)
@@ -30,6 +30,6 @@ int main_bench()
 
 		
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	return 0; 
 }

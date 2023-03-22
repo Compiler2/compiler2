@@ -18,7 +18,7 @@ int main_bench()
     char c;
     struct Student ptcpt[100];
     struct Student tmp;
-        scanf("%d",&N);
+        my_scanf("%d",&N);
     for (i=0;i<N-1;i++){
         j=0;
         while (j<22&&(c=getchar())!=' '){
@@ -26,7 +26,7 @@ int main_bench()
             j++;
             }
             ptcpt[i].name[j]='\0';
-        scanf(" %d %d %c %c %d\n",&ptcpt[i].avg,&ptcpt[i].cls,&ptcpt[i].off,&ptcpt[i].west,&ptcpt[i].paper);
+        my_scanf(" %d %d %c %c %d\n",&ptcpt[i].avg,&ptcpt[i].cls,&ptcpt[i].off,&ptcpt[i].west,&ptcpt[i].paper);
         if (ptcpt[i].avg>80&&ptcpt[i].paper>=1){
         sch[i]=sch[i]+8000;}
         if (ptcpt[i].avg>85&&ptcpt[i].cls>80){
@@ -47,7 +47,7 @@ int main_bench()
             j++;
             }
             ptcpt[N-1].name[j]='\0';
-        scanf(" %d %d %c %c %d",&ptcpt[N-1].avg,&ptcpt[N-1].cls,&ptcpt[N-1].off,&ptcpt[N-1].west,&ptcpt[N-1].paper);
+        my_scanf(" %d %d %c %c %d",&ptcpt[N-1].avg,&ptcpt[N-1].cls,&ptcpt[N-1].off,&ptcpt[N-1].west,&ptcpt[N-1].paper);
         if (ptcpt[N-1].avg>80&&ptcpt[N-1].paper>=1) {
             sch[N-1]=sch[N-1]+8000;
         }
@@ -71,6 +71,6 @@ int main_bench()
                 }
                 else continue;
             }
-        printf("%s\n%d\n%ld",tmp.name,high,schtot);
+        my_printf("%s\n%d\n%ld",tmp.name,high,schtot);
     return 0;
 }

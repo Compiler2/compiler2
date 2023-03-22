@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,i,l[210];
 	char a[210][30];
-	scanf("%d",&n);
-	for(i=0;i<n;i++)   scanf("%s",a[i]);
+	my_scanf("%d",&n);
+	for(i=0;i<n;i++)   my_scanf("%s",a[i]);
     for(i=0;i<n;i++)   l[i]=strlen(a[i]);
 
 	
@@ -26,7 +26,7 @@ int main_bench()
 	{
 	    if(l[i]==p1)
 		{
-		     printf("%s\n",a[i]);
+		     my_printf("%s\n",a[i]);
 			 break;
 		}
 	}
@@ -34,7 +34,7 @@ int main_bench()
 	{
 	    if(l[i]==p2)
 		{
-		     printf("%s",a[i]);
+		     my_printf("%s",a[i]);
 			 break;
 		}
 	}

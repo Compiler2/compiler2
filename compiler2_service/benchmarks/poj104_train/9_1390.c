@@ -9,9 +9,9 @@ struct kb
 int main_bench()
 {
 	int n,i,k=0,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
-		scanf("%s%d",&kbr[i].ID,&kbr[i].nl);
+		my_scanf("%s%d",&kbr[i].ID,&kbr[i].nl);
 	}
 	for (i=0;i<n;i++){
 		if(kbr[i].nl>=60){
@@ -31,11 +31,11 @@ int main_bench()
 		}
 	}
 	for (i=0;i<k;i++){
-		printf("%s\n",lnr[i].ID);
+		my_printf("%s\n",lnr[i].ID);
 	}
 	for (i=0;i<n;i++){
 		if(strcmp(kbr[i].ID,"000000000")==1){
-			printf("%s\n",kbr[i].ID);
+			my_printf("%s\n",kbr[i].ID);
 		}
 	}
 	return 0;

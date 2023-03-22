@@ -6,7 +6,7 @@ int main_bench()
 	int a;
          int n,m;
 	for(a=1;;a++){
-    	    scanf("%d%d",&n,&m);
+    	    my_scanf("%d%d",&n,&m);
 	    if(m==0||n==0){
 			break;
 		}
@@ -33,7 +33,7 @@ int main_bench()
 					}
 			  }
 		}
-                  printf("%d\n",f[t-1]);
+                  my_printf("%d\n",f[t-1]);
 	}
 	return 0;
 } 

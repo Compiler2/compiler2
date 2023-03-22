@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if (n==0)
-		printf("0");
+		my_printf("0");
 	while (n>0)
 	{
-		printf("%d", n%10);
+		my_printf("%d", n%10);
 		n/=10;
 	}
 

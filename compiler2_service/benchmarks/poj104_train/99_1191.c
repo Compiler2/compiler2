@@ -3,7 +3,7 @@
 int main_bench(){
     int n;
     double a,b,c,d;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
   int sz[n];
   int j,r;
    a=0;
@@ -11,7 +11,7 @@ int main_bench(){
    c=0;
    d=0;
   for(j=0;j<n;j++){
-      scanf("%d ",&sz[j]);
+      my_scanf("%d ",&sz[j]);
       if(sz[j]<=18){
           a=a+1;
       }else{
@@ -27,13 +27,13 @@ int main_bench(){
       }
       }
       a=100*a/n;
-      printf("1-18: %.2lf%%\n",a);
+      my_printf("1-18: %.2lf%%\n",a);
       b=100*b/n;
-      printf("19-35: %.2lf%%\n",b);
+      my_printf("19-35: %.2lf%%\n",b);
       c=100*c/n;
-      printf("36-60: %.2lf%%\n",c);
+      my_printf("36-60: %.2lf%%\n",c);
       d=100*d/n;
-      printf("Over60: %.2lf%%",d);
+      my_printf("Over60: %.2lf%%",d);
       return 0;
 }
 

@@ -8,7 +8,7 @@ int main_bench()
 	int N;
 	N=strlen(dzs);
 	if(N==1){
-		printf("0\n%c",dzs[0]);
+		my_printf("0\n%c",dzs[0]);
 	}else{
 	int n;
 	int i;
@@ -17,7 +17,7 @@ int main_bench()
 	a=n/13;
 	b=n%13;
 	if(N==2&&n<13){
-		printf("0\n%d",n);
+		my_printf("0\n%d",n);
 	}else{
 	if(a==0){
 		xdzs[0]=' ';
@@ -34,11 +34,11 @@ int main_bench()
 	}
 	for(i=0;i<N-2;i++){
 		if(xdzs[i]!=' '){
-			printf("%c",xdzs[i]);
+			my_printf("%c",xdzs[i]);
 		}
 	}
-	printf("%c\n",xdzs[N-2]);
-	printf("%d", b);
+	my_printf("%c\n",xdzs[N-2]);
+	my_printf("%d", b);
 	}
 	}
 	return 0;

@@ -16,7 +16,7 @@ int main_bench()
     str1[i]=f(str1[i]);
     str2[i]=f(str2[i]);
   }
-  if(strcmp(str1,str2)>0) printf(">");
-  else if(strcmp(str1,str2)<0) printf("<");
-  else printf("=");
+  if(strcmp(str1,str2)>0) my_printf(">");
+  else if(strcmp(str1,str2)<0) my_printf("<");
+  else my_printf("=");
 } 

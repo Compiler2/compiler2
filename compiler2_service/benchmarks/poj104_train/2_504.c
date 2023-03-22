@@ -22,10 +22,10 @@ int main_bench()
 		a[i].count=0;
 		a[i].nm=65+i;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&b.no, b.at);
+		my_scanf("%d%s",&b.no, b.at);
 		m=strlen(b.at);
 		flag=0;
 		for(j=0;j<m;j++)
@@ -52,10 +52,10 @@ int main_bench()
 			max=a[i];
 		}
 	}
-	printf("%c\n%d\n",max.nm,max.count);
+	my_printf("%c\n%d\n",max.nm,max.count);
 	for(i=0;i<max.count;i++)
 	{
-		printf("%d\n",max.bk[i]);
+		my_printf("%d\n",max.bk[i]);
 	}
 	return 0;
 }

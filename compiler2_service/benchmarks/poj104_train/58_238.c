@@ -25,7 +25,7 @@ int main_bench()
               } 
        }  
              
-              printf("%d\n",q);
+              my_printf("%d\n",q);
               }
               getchar();
               getchar();

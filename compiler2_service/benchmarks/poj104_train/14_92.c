@@ -12,10 +12,10 @@ int main_bench()
    
     
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu1.num,&stu1.math,&stu1.b);
+		my_scanf("%d %d %d",&stu1.num,&stu1.math,&stu1.b);
 		a[i]=stu1.math+stu1.b;
 	}
 	
@@ -26,7 +26,7 @@ int main_bench()
 		{max=a[i];
 		k=i;}
 	}
-	printf("%d %d\n",k+1,a[k]);
+	my_printf("%d %d\n",k+1,a[k]);
 	a[k]=0;
 	max=a[0];
     for(i=1;i<n;i++)
@@ -35,7 +35,7 @@ int main_bench()
 		{max=a[i];
 		m=i;}
 	}
-    printf("%d %d\n",m+1,a[m]);
+    my_printf("%d %d\n",m+1,a[m]);
 	a[m]=0;
 	max=a[0];
     for(i=1;i<n;i++)
@@ -44,5 +44,5 @@ int main_bench()
 		{max=a[i];
 		c=i;}
 	}
-    printf("%d %d",c+1,a[c]);
+    my_printf("%d %d",c+1,a[c]);
 }

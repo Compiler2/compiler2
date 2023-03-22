@@ -24,14 +24,14 @@ int main_bench()
 	}
 	int x=100;
 	if(j==0)
-		printf("No");
+		my_printf("No");
 	else
 	{	x=0;
 	for(i=1;i<=j;i++)
 		if(a[i]!=a[0])
 			x=1;
 	if(x==0)
-		printf("No");
+		my_printf("No");
 	else
 	{j++;
 	for(k=0;k<j;k++)
@@ -46,7 +46,7 @@ int main_bench()
 				a[i]=a[i+1];
 				a[i+1]=t;
 			}
-			printf("%d",a[1]);}}
+			my_printf("%d",a[1]);}}
 	
 }
 

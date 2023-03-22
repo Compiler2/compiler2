@@ -6,10 +6,10 @@ int main_bench()
     int n,i[65535],j[65535],m,k,s,t,p;
     int a[65535]={0};
     p=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(s=0;s<n*(n-1)/2;s++)
         {
-            scanf("%d %d",&i[s],&j[s]);
+            my_scanf("%d %d",&i[s],&j[s]);
             if(i[s]==0&&j[s]==0)
                 break;
         }
@@ -31,7 +31,7 @@ int main_bench()
                 }
         }
     if(p==0)
-        printf("NOT FOUND");
+        my_printf("NOT FOUND");
     else
         {
             for(k=0;k<s;k++)
@@ -43,9 +43,9 @@ int main_bench()
                         }
                 }
             if(p==0)
-                printf("NOT FOUND");
+                my_printf("NOT FOUND");
             else
-                printf("%d",m);
+                my_printf("%d",m);
         }
     getchar();
     getchar();

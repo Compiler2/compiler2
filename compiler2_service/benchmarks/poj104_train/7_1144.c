@@ -5,9 +5,9 @@ int main_bench()
 {
 	char a[256],b[256],c[256];
 	int len1,len2,len3,i,j,sum=0;
-	scanf("%s",&a);
-	scanf("%s",&b);
-	scanf("%s",&c);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
+	my_scanf("%s",&c);
 	len1=strlen(a);
 	len2=strlen(b);
 	len3=strlen(c);
@@ -33,5 +33,5 @@ int main_bench()
 			}	
 		}
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 }

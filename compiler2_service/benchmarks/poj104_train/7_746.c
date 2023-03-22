@@ -3,7 +3,7 @@
 int main_bench(){
 	int flag=1,i,n,m,j;
 	char str[256],sub[256],rep[256];
-	scanf("%s%s%s",&str,&sub,&rep);
+	my_scanf("%s%s%s",&str,&sub,&rep);
 	n=strlen(str);
 	m=strlen(sub);
 	for(i=0;i<n;i++){
@@ -23,6 +23,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%s",str);
+	my_printf("%s",str);
 	return 0;
 }

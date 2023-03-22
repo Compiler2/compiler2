@@ -6,7 +6,7 @@ int a[5][5],s,max[5],min[5];
 s=0;
 for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
-                scanf("%d",&a[i][j]);
+                my_scanf("%d",&a[i][j]);
                 }
              }
 max[0]=a[0][0];
@@ -32,7 +32,7 @@ if(a[i][j]>max[i]){
 for(int i=0;i<5;i++){
           for(int j=0;j<5;j++){
                   if(a[i][j]==max[i]&&a[i][j]==min[j]){
-                  printf("%d %d %d\n",i+1,j+1,a[i][j]);                  
+                  my_printf("%d %d %d\n",i+1,j+1,a[i][j]);                  
                                                        }
                   else{
                      s++;  
@@ -40,7 +40,7 @@ for(int i=0;i<5;i++){
                   }
                   }   
 if(s==25){
-          printf("not found");
+          my_printf("not found");
           }          
 return 0;
 }

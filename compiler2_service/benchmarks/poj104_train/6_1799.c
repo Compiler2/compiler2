@@ -2,17 +2,17 @@
 
 int main_bench(){
 	int k,i;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	int m,n,j,l;
 	int z[100][100],h[100];
 	for(i=0;i<100;i++){
 		h[i]=0;
 	}
 	for(l=0;l<k;l++){
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(i=0;i<m;i++){
 			for(j=0;j<n;j++){
-				scanf("%d",&(z[i][j]));
+				my_scanf("%d",&(z[i][j]));
 			}
 		}
 		for(j=0;j<n;j++){
@@ -32,9 +32,9 @@ int main_bench(){
 	}
 	for(l=0;l<k;l++){
 		if(l==0){
-		printf("%d",h[l]);
+		my_printf("%d",h[l]);
 		}else{
-			printf("\n%d",h[l]);
+			my_printf("\n%d",h[l]);
 		}
 	}
 	return 0;

@@ -5,10 +5,10 @@ int main_bench()
     int a,b,max2;
     max2=0;
     char sep;
-    scanf("%d%c",&a,&sep);
+    my_scanf("%d%c",&a,&sep);
     while (sep==',')
     {
-        scanf("%d%c",&b,&sep);
+        my_scanf("%d%c",&b,&sep);
         if(b>a)
         {
             max2=a;
@@ -24,11 +24,11 @@ int main_bench()
     }
     if(max2!=0)
     {
-        printf("%d",max2);
+        my_printf("%d",max2);
     }
     else
     {
-        printf("No");
+        my_printf("No");
     }
     return 0;
 }

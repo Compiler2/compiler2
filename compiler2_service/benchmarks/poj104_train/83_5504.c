@@ -2,16 +2,16 @@
 
  int main_bench(){
      int n;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      int sz[n];
      int st[n];
      double a,t=0,m=0,GPA;
      for (int i=0;i<n;i++){
-         scanf("%d",&(st[i]));
+         my_scanf("%d",&(st[i]));
          t+=st[i];
      }
      for(int i=0;i<n;i++){
-         scanf("%d",&(sz[i]));
+         my_scanf("%d",&(sz[i]));
          if(sz[i]>89.0){
              a=4.0;
          }
@@ -43,7 +43,7 @@
          m+=a*st[i];
      }
     GPA=m/t;
-     printf("%.2lf",GPA);
+     my_printf("%.2lf",GPA);
      return 0;
  }
 

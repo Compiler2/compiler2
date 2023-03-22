@@ -8,11 +8,11 @@ main_bench()
 {
       int k,H;
       int j,count[25],n;
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       int h[25],i;
       for (i=0;i<k;i++)
       {
-          scanf("%d",&h[i]);
+          my_scanf("%d",&h[i]);
       }
       count[k-1]=1;
       for (i=k-2;i>=0;i--)
@@ -32,6 +32,6 @@ main_bench()
       }
 
            qsort(count,k,sizeof(int),com);
-           printf("%d",count[k-1]);
+           my_printf("%d",count[k-1]);
       getchar();getchar();getchar();getchar();getchar();getchar();
 }

@@ -7,7 +7,7 @@ int main_bench()
 	b=0;
 	for (i=1;i<100;i++)
 	{
-	scanf("%d",&c);
+	my_scanf("%d",&c);
 	if(c>a)
 		b=a,
 		a=c;
@@ -18,7 +18,7 @@ else if(c=a)
 c=a;
 	}
 
-printf("%d\n",a);
-printf("%d\n",b);
+my_printf("%d\n",a);
+my_printf("%d\n",b);
 return 0;
 }

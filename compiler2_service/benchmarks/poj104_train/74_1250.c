@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,counter=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		for(j=2;j<i;j++)
@@ -17,9 +17,9 @@ int main_bench()
 			{
 				counter+=1;
 				if(counter==1)
-					printf("%d",i);
+					my_printf("%d",i);
 				else
-					printf(",%d",i);
+					my_printf(",%d",i);
 			}
 			else if(i>=10&&i<=99)
 			{
@@ -27,9 +27,9 @@ int main_bench()
 				{
 					counter+=1;
 					if(counter==1)
-						printf("%d",i);
+						my_printf("%d",i);
 					else
-						printf(",%d",i);
+						my_printf(",%d",i);
 				}
 			}
 			else if(i>=100&&i<=999)
@@ -38,9 +38,9 @@ int main_bench()
 				{
 					counter+=1;
 					if(counter==1)
-						printf("%d",i);
+						my_printf("%d",i);
 					else
-						printf(",%d",i);
+						my_printf(",%d",i);
 				}
 			}
 			else if(i>=1000&&i<=9999)
@@ -49,9 +49,9 @@ int main_bench()
 				{
 					counter+=1;
 					if(counter==1)
-						printf("%d",i);
+						my_printf("%d",i);
 					else
-						printf(",%d",i);
+						my_printf(",%d",i);
 				}
 			}
 			else if(i>=10000&&i<=99999)
@@ -60,15 +60,15 @@ int main_bench()
 				{
 					counter+=1;
 					if(counter==1)
-						printf("%d",i);
+						my_printf("%d",i);
 					else
-						printf(",%d",i);
+						my_printf(",%d",i);
 				}
 			}
 		}
 	}
 	if(counter==0)
-		printf("no");
+		my_printf("no");
 	return 0;
 }
 

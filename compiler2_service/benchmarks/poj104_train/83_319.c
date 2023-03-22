@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,j=0,k=0,n,a[10]={0},b[10]={0};
     float c[10]={0.0},s=0.0,total=0.0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 
 	
 	for(i=0;i<10;i++)
@@ -37,5 +37,5 @@ int main_bench()
 	  for (i=0;i<n;i++)
 		  total=total+a[i];
 	  s=s/total;
-	  printf("%.2f",s);
+	  my_printf("%.2f",s);
 }

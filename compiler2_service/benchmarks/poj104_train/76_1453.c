@@ -2,9 +2,9 @@
 
 int main_bench(){
     int n,start[10000],end[10000],e,f,s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=0;i<n;i++){
-        scanf("%d %d",&start[i],&end[i]);
+        my_scanf("%d %d",&start[i],&end[i]);
     }
     int max=end[0];
     for(int i=1;i<n;i++){
@@ -24,8 +24,8 @@ int main_bench(){
         }else{s=0;break;}
         if(i==n-1){s=1;}
         }
-    if(s==0){printf("no");}
-    if(s==1){printf("%d %d",min,max);}
+    if(s==0){my_printf("no");}
+    if(s==1){my_printf("%d %d",min,max);}
 }
 
 

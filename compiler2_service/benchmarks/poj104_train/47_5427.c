@@ -7,11 +7,11 @@ int main_bench(){
 
     int i,e,n,k,dt;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(i=0;i<n;i++){
 
-        scanf("%d",&(sz[i]));
+        my_scanf("%d",&(sz[i]));
 
     }
 
@@ -33,11 +33,11 @@ int main_bench(){
 
          if(i<n-1){
 
-         printf("%d ",sz[i]);
+         my_printf("%d ",sz[i]);
 
          }else{
 
-         printf("%d",sz[i]);
+         my_printf("%d",sz[i]);
 
          }
 

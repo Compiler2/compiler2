@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,a,n,e,sz[100],sx[100]={0};
 	char st[100][11],sa[11],sd[100][11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-        scanf("%s",&st[i]);
-		scanf("%d",&sz[i]);
+        my_scanf("%s",&st[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++)
 	{

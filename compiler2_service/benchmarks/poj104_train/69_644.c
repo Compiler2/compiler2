@@ -87,17 +87,17 @@ void chengfa(char a[],char b[])
 		c[nc-1-i]=g;
 	}
 	if(nc==0)
-		printf("0");
+		my_printf("0");
     else
-	    printf("%s",c);
+	    my_printf("%s",c);
 	return;
 }
 
 int main_bench()
 {
 	char a[300],b[300];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	chengfa(a,b);
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench(){
 		int l;
 		int r;
 	}qj[50001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&qj[i].l,&qj[i].r);
+		my_scanf("%d %d",&qj[i].l,&qj[i].r);
 	}
 	for(i=n-1;i>0;i--){
 		for(j=0;j<i;j++){
@@ -50,9 +50,9 @@ int main_bench(){
 		}
 	}while(1);
 	if(flag==0){
-		printf("no\n");
+		my_printf("no\n");
 	}else{
-		printf("%d %d\n",qj[0].l,aright);
+		my_printf("%d %d\n",qj[0].l,aright);
 	}
 	return 0;
 }

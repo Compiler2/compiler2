@@ -7,7 +7,7 @@ int main_bench()
 	do
 	{
 		i=i+1;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n>m)
 		{
 		    t=m;
@@ -21,11 +21,11 @@ int main_bench()
 	}while(getchar()!='\n');
 	if(i==1||t==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	else
 	{
-		printf("%d\n",t);
+		my_printf("%d\n",t);
 	}
 	
 }

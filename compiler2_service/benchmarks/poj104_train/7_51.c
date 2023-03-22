@@ -29,12 +29,12 @@ int main_bench()
    {
       if(str[i]=='@')
       {
-        printf("%s",b);
+        my_printf("%s",b);
         i=i+lena-1;
       }
-      else printf("%c",str[i]);
+      else my_printf("%c",str[i]);
    }
-   printf("\n");
+   my_printf("\n");
 
   return 0;
 }

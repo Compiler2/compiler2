@@ -5,12 +5,12 @@ int main_bench()
 {
 	int n,i,j,sum=0,len;
 	char  a[23];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		len=0;
 		sum=0;
-		scanf("%s",&a);
+		my_scanf("%s",&a);
         len=strlen(a);
 		if(a[0]=='-'||(a[0]>='A'&&a[0]<='z'))
 		{
@@ -21,16 +21,16 @@ int main_bench()
 			}
 	       if(sum==len-1)
 		   {
-		      printf("yes\n");
+		      my_printf("yes\n");
 		   }
 		   else
 		   {
-              printf("no\n");
+              my_printf("no\n");
 		   }
 		}
 			else
 		{
-			     printf("no\n");
+			     my_printf("no\n");
 		}
 	}
 	return 0;

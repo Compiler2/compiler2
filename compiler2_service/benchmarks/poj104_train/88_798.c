@@ -10,8 +10,8 @@ int main_bench()
 	l=strlen(p);
 	for(i=0;i<l;i++)
 	{
-		if(*(p+i)>=48&&*(p+i)<=57&&k==2) printf("\n");
-		if(*(p+i)>=48&&*(p+i)<=57) {printf("%c",*(p+i));k=1;}
+		if(*(p+i)>=48&&*(p+i)<=57&&k==2) my_printf("\n");
+		if(*(p+i)>=48&&*(p+i)<=57) {my_printf("%c",*(p+i));k=1;}
 		else k=2;
 	}
 }

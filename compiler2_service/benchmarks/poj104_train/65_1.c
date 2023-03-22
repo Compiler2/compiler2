@@ -9,17 +9,17 @@ int main_bench()
 	int n;
 	int a[200],b[200];
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	for(i=0;i<n;i++)
 		fuck(a[i],b[i]);
 	if(awin>bwin)
-		printf("A\n");
+		my_printf("A\n");
 	else if(awin<bwin)
-		printf("B\n");
+		my_printf("B\n");
 	else
-		printf("Tie\n");
+		my_printf("Tie\n");
 	return 0;
 }
 

@@ -4,11 +4,11 @@ int map[100][100],sum=0,min=1000,rst[100];
 main_bench()
 {
     int n,i,j,k,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
         {   for(j=0;j<n;j++)
             for(k=0;k<n;k++)
-                scanf("%d",&map[j][k]);
+                my_scanf("%d",&map[j][k]);
             for(t=n;t>1;t--)                      
             {   for(j=0;j<t;j++)                    
                     {for(k=0;k<t;k++)
@@ -55,5 +55,5 @@ main_bench()
             sum=0;
             }
     for(i=0;i<n;i++)
-        printf("%d\n",rst[i]);
+        my_printf("%d\n",rst[i]);
     }

@@ -11,8 +11,8 @@ int main_bench()
   int sum3=0;
   sum1=0;R1=0;
   sum2=0;R2=0;
-  scanf("%d%d%d\n",&year1,&month1,&day1);
-  scanf("%d%d%d",&year2,&month2,&day2);
+  my_scanf("%d%d%d\n",&year1,&month1,&day1);
+  my_scanf("%d%d%d",&year2,&month2,&day2);
 
   
   if(year1%100==0)
@@ -154,13 +154,13 @@ int main_bench()
   if(year1==year2)  
   {
     sum=sum2-sum1;
-	printf("%d",sum);
+	my_printf("%d",sum);
   }
   
   if(year2-year1==1)
 	 {
 	  sum=q+sum2;
-	  printf("%d\n",sum);
+	  my_printf("%d\n",sum);
 	 }
 
 
@@ -182,7 +182,7 @@ int main_bench()
    }
 
    sum=q+sum3+sum2;
-   printf("%d\n",sum);
+   my_printf("%d\n",sum);
   }
 
 

@@ -3,9 +3,9 @@
 int main_bench(){
     int i,k,n,m=0,L,l1,l2;
     char s[256],a[100],b[100];
-    scanf("%s",s);
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",s);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     getchar();
     L=strlen(s);
     l1=strlen(a);
@@ -31,11 +31,11 @@ int main_bench(){
         }
     }    
     for ( k=0; k<i+m; k++){
-        printf("%c",s[k]);
+        my_printf("%c",s[k]);
         getchar();
     }  
     for ( i =i+l1; i<L ;i++){
-        printf("%c",s[i]);
+        my_printf("%c",s[i]);
         getchar();
     }
     return 0;

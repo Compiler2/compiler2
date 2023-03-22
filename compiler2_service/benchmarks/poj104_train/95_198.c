@@ -14,13 +14,13 @@ int main_bench()
 			sen_2[i]=sen_2[i]+32;
 		if(sen_1[i]>sen_2[i])
 		{
-			printf(">\n");
+			my_printf(">\n");
 			sum=sum+1;
 			break;
 		}
 		else if(sen_1[i]<sen_2[i])
 		{
-			printf("<\n");
+			my_printf("<\n");
 			sum=sum+1;
 			break;
 		}
@@ -28,6 +28,6 @@ int main_bench()
 			sum=sum;
 	}
 	if(sum==0)
-		printf("=\n");
+		my_printf("=\n");
 	return 0;
 }

@@ -2,7 +2,7 @@
 
 int main_bench()
 {int a,b,c;
-scanf("%d %d %d",&a,&b,&c);
+my_scanf("%d %d %d",&a,&b,&c);
 int i=1;
 int sum;
                 sum=a-1+(a-1)/4+(a-1)/400-(a-1)/100;
@@ -17,12 +17,12 @@ if(i==2&&((a%4==0&&a%100!=0)||a&400==0)){sum+=1;}
 sum+=c;
 int t;
 t=sum%7;
-if(t==1)printf("Mon.");
-if(t==2)printf("Tue.");
-if(t==3)printf("Wed.");
-if(t==4)printf("Thu.");
-if(t==5)printf("Fri.");
-if(t==6)printf("Sat.");
-if(t==0)printf("Sun.");
+if(t==1)my_printf("Mon.");
+if(t==2)my_printf("Tue.");
+if(t==3)my_printf("Wed.");
+if(t==4)my_printf("Thu.");
+if(t==5)my_printf("Fri.");
+if(t==6)my_printf("Sat.");
+if(t==0)my_printf("Sun.");
         return 0;
 }

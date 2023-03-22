@@ -11,18 +11,18 @@ int n, len, newline, nowlen;
 int main_bench(){
 
 	
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	newline = 1;
 	for (int i=0; i<n; i++){
-		scanf("%s", st);
+		my_scanf("%s", st);
 		nowlen = strlen(st);
 		if ((i?1:0)+nowlen+len > maxlen){
-			printf("\n%s", st);
+			my_printf("\n%s", st);
 			len = nowlen;
 		}
 		else {
 			if (i) putchar(' ');
-			printf("%s", st);
+			my_printf("%s", st);
 			len += (i?1:0) + nowlen;
 		}
 	}

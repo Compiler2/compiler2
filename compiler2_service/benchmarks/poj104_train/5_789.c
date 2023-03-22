@@ -4,16 +4,16 @@ int main_bench(){
 int x,y,w=0,i,o=0;
 double c,k;
 char a[501],b[501];
-scanf ("%lf",&c);
-scanf ("%s%s",a,b);
+my_scanf ("%lf",&c);
+my_scanf ("%s%s",a,b);
 x=strlen(a);
 y=strlen(b);
 if (x!=y){
-printf ("error");
+my_printf ("error");
 }else if(x==y){
 for (i=0;i<x;i++){
 if ((a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C')||(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C')){
-printf ("error");
+my_printf ("error");
 o++;
 break;
 }else{
@@ -24,9 +24,9 @@ w++;
 k=1.0*w/x;
 if (o==0){
 if (k>c)
-printf ("yes");
+my_printf ("yes");
 else
-printf ("no");
+my_printf ("no");
 }
 }
 return 0;

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,k,i,j,*pt,flag=1;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	pt=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
-		scanf("%d",pt+i);
+		my_scanf("%d",pt+i);
 	for(i=0;i<n-1;i++)
 		if(flag)
 		for(j=i+1;j<n;j++)
@@ -16,8 +16,8 @@ int main_bench()
 				break;
 			}
 			if(flag)
-				printf("no\n");
+				my_printf("no\n");
 			else
-				printf("yes\n");
+				my_printf("yes\n");
 			free(pt);
 }

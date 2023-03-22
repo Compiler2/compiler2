@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,i,j,s,S[100],G[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char zf[100][21];
     for(i=0;i<n;i++){
-        scanf("%s",zf[i]);
+        my_scanf("%s",zf[i]);
     }
     for(i=0;i<n;i++){ 
        if(
@@ -30,8 +30,8 @@ int main_bench(){
        }
        for(i=0;i<n;i++)
       { 
-     if(S[i]==0)printf("no\n");
-       else printf("yes\n");     
+     if(S[i]==0)my_printf("no\n");
+       else my_printf("yes\n");     
       }
     return 0;
 }

@@ -12,7 +12,7 @@ void nixu(char a[]);
  {
  	int m=0,i;
  	char c;
-  if(strlen(a)==1) printf("%s",a);
+  if(strlen(a)==1) my_printf("%s",a);
   else 
        {
         m=strlen(a);
@@ -22,7 +22,7 @@ void nixu(char a[]);
                    a[i]=a[i-1];
                    a[0]=c;
                    
-                printf("%c",a[0]);
+                my_printf("%c",a[0]);
             for(i=0;i<m-1;i++)
             a[i]=a[i+1];
             a[m-1]='\0';

@@ -5,12 +5,12 @@ int main_bench()
 {
 	int sz[100][100];
     int row,col,n,x=0,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(row=0;row<n;row++)
 	{
 	    for(col=0;col<n;col++)
 		{
-		scanf("%d",&(sz[row][col]));
+		my_scanf("%d",&(sz[row][col]));
 		}
 	}
     
@@ -28,7 +28,7 @@ k=2;
 		}
 	}
 
-	 printf("%d\n",x);
+	 my_printf("%d\n",x);
 
 	 return 0;
 }

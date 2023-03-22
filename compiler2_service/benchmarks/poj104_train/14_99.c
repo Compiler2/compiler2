@@ -17,9 +17,9 @@ struct str
 main_bench()
 {
 	int i,n,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{scanf("%d %d %d\n",&a[i].num,&a[i].ch,&a[i].math);
+	{my_scanf("%d %d %d\n",&a[i].num,&a[i].ch,&a[i].math);
 	b[i].num=a[i].num;
 	b[i].total=a[i].ch+a[i].math;}
 	for(i=0; i<3; i++)
@@ -33,6 +33,6 @@ main_bench()
 		}	
 	}
 	for(i=0;i<3;i++)
-	printf("%d %d\n",b[i].num,b[i].total);
+	my_printf("%d %d\n",b[i].num,b[i].total);
 }
 

@@ -22,11 +22,11 @@ int main_bench()
 	int n,i,all=0;
 	struct student list[100],most;
 	struct jiangxuejin everyone[100],check;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		list[i].num=i;
-		scanf("%s %d %d %c %c %d",list[i].name,&list[i].qimo,&list[i].pingyi,&list[i].ganbu,&list[i].west,&list[i].paper);
+		my_scanf("%s %d %d %c %c %d",list[i].name,&list[i].qimo,&list[i].pingyi,&list[i].ganbu,&list[i].west,&list[i].paper);
 	}
 
 	for(i=0;i<n;i++)
@@ -66,7 +66,7 @@ int main_bench()
 		all+=everyone[i].total;
 	}
 
-	printf("%s\n%d\n%d",most.name,check.total,all);
+	my_printf("%s\n%d\n%d",most.name,check.total,all);
 	return 0;
 }
 		

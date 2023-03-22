@@ -17,11 +17,11 @@ int main_bench()
         {
             if(j==0)continue;
             b[j]='\0';
-            printf("%s\n",b);
+            my_printf("%s\n",b);
             j=0;
         }
     }
     b[j]='\0';
-    printf("%s\n",b);
+    my_printf("%s\n",b);
     return 0;
 }

@@ -38,10 +38,10 @@ int NO(int a,int b,int c)
 int main_bench()
 {
 	int a1,b1,c1,a2,b2,c2,x,y,z;
-	scanf("%d%d%d",&a1,&b1,&c1);
-	scanf("%d%d%d",&a2,&b2,&c2);
+	my_scanf("%d%d%d",&a1,&b1,&c1);
+	my_scanf("%d%d%d",&a2,&b2,&c2);
 	x=NO(a1,b1,c1);
 	y=NO(a2,b2,c2);
 	z=y-x;
-	printf("%d",z);
+	my_printf("%d",z);
 }

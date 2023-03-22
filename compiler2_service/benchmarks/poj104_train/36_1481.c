@@ -5,12 +5,12 @@ int main_bench()
 	char ch[100],sh[100];
 	int a[300]={0},b[300]={0};
 	int len1,len2;
-	scanf("%s %s",&ch,&sh);
+	my_scanf("%s %s",&ch,&sh);
 	int i,j;
 	len1=strlen(ch);
 	len2=strlen(sh);
 	if(len1!=len2){
-		printf("NO\n");
+		my_printf("NO\n");
 	}else{
 	for(i=0;i<=len1;i++){
 		int m;
@@ -25,14 +25,14 @@ int main_bench()
 	int k,h=0;
 	for(k=0;k<=299;k++){
 		if(a[k]!=b[k]){
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}else{
 			h++;
 		}
 	}
 		if(h==300)
-			printf("YES\n");
+			my_printf("YES\n");
 	}
 	return 0;
 }

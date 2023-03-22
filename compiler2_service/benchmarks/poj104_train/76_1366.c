@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,a[50000]={0},b[50000]={0},c[10003]={0};
 	int i,max,min,k,s=0,t;
-	scanf("%d",&n);
-	scanf("\n%d%d",&a[0],&b[0]);
+	my_scanf("%d",&n);
+	my_scanf("\n%d%d",&a[0],&b[0]);
 	int t1=a[0],t2=b[0];
 	for(i=1;i<n;i++){
-	scanf("\n%d%d",&a[i],&b[i]);
+	my_scanf("\n%d%d",&a[i],&b[i]);
 	if(a[i]<t1){
 		t1=a[i];
 	}
@@ -25,9 +25,9 @@ int main_bench(){
 	s+=c[k];
 	}
 	if((t2-t1+1)*2-1!=s){
-	printf("no");
+	my_printf("no");
 	}else{
-	printf("%d %d",t1,t2);
+	my_printf("%d %d",t1,t2);
 	}
 
 return 0;

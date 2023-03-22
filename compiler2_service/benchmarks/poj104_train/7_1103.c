@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[256],b[256],c[256];
 	int i,j,n;
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
 	n=strlen(b);
 	int m;
 	m=strlen(a);
@@ -27,14 +27,14 @@ int main_bench()
 	if(k)
 	{
 	for(i=0;i<q;i++)
-		printf("%c",a[i]);
-	printf("%s",c);
+		my_printf("%c",a[i]);
+	my_printf("%s",c);
 
 		for(i=q+n;i<m;i++)
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	else
 	{
-		printf("%s",a);
+		my_printf("%s",a);
 	}return 0;	
 }

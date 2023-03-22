@@ -2,15 +2,15 @@
 
 int main_bench(){
 	int m,n;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	int s[200][200];
 	int i,r,j;
 	for(i=0;i<m;i++){
 		for(r=0;r<n-1;r++){
-			scanf("%d ",&s[i][r]);
+			my_scanf("%d ",&s[i][r]);
 		}
 		if(r==n-1){
-			scanf("%d",&s[i][r]);
+			my_scanf("%d",&s[i][r]);
 		}
 	}
 	int z,x,c,v,p;
@@ -22,7 +22,7 @@ int main_bench(){
 			v=s[i][r+1];
         
 			if((s[i][r]>=x)&&(s[i][r]>=v)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 		for(r=1;r<n-1;r++){
@@ -30,14 +30,14 @@ int main_bench(){
 			 c=s[i][r-1];
 			v=s[i][r+1];
 			if((s[i][r]>=x)&&(s[i][r]>=v)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 		if(r==n-1){
 			 x=s[i+1][r];
 			 c=s[i][r-1];
 			 	if((s[i][r]>=x)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 	}
@@ -48,7 +48,7 @@ int main_bench(){
 			x=s[i+1][r];
 			v=s[i][r+1];
 			if((s[i][r]>=z)&&(s[i][r]>=x)&&(s[i][r]>=v)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 		for(r=1;r<n-1;r++){
@@ -57,7 +57,7 @@ int main_bench(){
 			c=s[i][r-1];
 			v=s[i][r+1];
 			if((s[i][r]>=z)&&(s[i][r]>=x)&&(s[i][r]>=v)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
        if(r==n-1){
@@ -65,7 +65,7 @@ int main_bench(){
 			x=s[i+1][r];
 			c=s[i][r-1];
 			if((s[i][r]>=z)&&(s[i][r]>=x)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 	   }
@@ -75,7 +75,7 @@ int main_bench(){
 			z=s[i-1][r];
 			v=s[i][r+1];
 			if((s[i][r]>=z)&&(s[i][r]>=v)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 		for(r=1;r<n-1;r++){
@@ -83,14 +83,14 @@ int main_bench(){
 			c=s[i][r-1];
 			v=s[i][r+1];
 			if((s[i][r]>=z)&&(s[i][r]>=v)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
        if(r==n-1){
            z=s[i-1][r];
 			c=s[i][r-1];
 			if((s[i][r]>=z)&&(s[i][r]>=c)){
-				printf("%d %d\n",i,r);
+				my_printf("%d %d\n",i,r);
 			}
 		}
 	   }

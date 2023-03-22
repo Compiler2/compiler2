@@ -31,8 +31,8 @@ int main_bench()
 	 }
 	 
   }
-  printf("%s",word[0]);
+  my_printf("%s",word[0]);
   for(wordnum=1;wordnum<=w;wordnum++)
-	  printf(" %s",word[wordnum]);
+	  my_printf(" %s",word[wordnum]);
 	return 0;
 }

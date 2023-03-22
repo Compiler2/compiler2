@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s1[50],s2[100],*p;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	int n=strlen(s1),m=strlen(s2),d=0,k=0;
 	for(p=s2;*p!='\0';p++)
 	{
@@ -22,7 +22,7 @@ int main_bench()
 			if(d==n-1)
 			{
 		
-				printf("%d",k-1);
+				my_printf("%d",k-1);
 			}
 		}
 

@@ -7,7 +7,7 @@ int i,l,a,b,c,d,e,f,g;
 	
 double j,n,k;
 	
-scanf("%lf%lf",&n,&k);
+my_scanf("%lf%lf",&n,&k);
 	
 for(a=1;;a++)
 	
@@ -38,9 +38,9 @@ if(b==1) break;
 	
 }
 	
-printf("%d",(int)j);
+my_printf("%d",(int)j);
 	
-scanf("%d",&g);
+my_scanf("%d",&g);
 	
 return 0;
 }

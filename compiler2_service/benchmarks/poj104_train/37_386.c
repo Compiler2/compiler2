@@ -6,14 +6,14 @@ int main_bench()
 		int k,i=0, n = 0;
 		int count[26]={0};
 		int pos [26]={0}; 
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		char array[100001] ;
 		for(i = 0 ; i<n ; i++)
 		{
 			for(k=0;k<26;k++){
 				pos[k]=101;count[k] =0;
 			}
-			scanf("%s",&array);
+			my_scanf("%s",&array);
 			int j = 0;
 			int flag = -1;
 			for(;j<strlen(array);j++)
@@ -28,8 +28,8 @@ int main_bench()
 					if(min_pos>pos[j]){min_pos = pos[j];tpos = j;}
 				}
 			}
-			if(min_pos == 100)printf("no\n");
-			else printf("%c\n",tpos+'a');
+			if(min_pos == 100)my_printf("no\n");
+			else my_printf("%c\n",tpos+'a');
 		}
 		
 		return 0;

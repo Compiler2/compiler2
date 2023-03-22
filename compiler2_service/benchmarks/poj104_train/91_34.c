@@ -8,9 +8,9 @@ int main_bench()
 	gets(str);
 	for(;p<str+strlen(str)-1;p++)
 	{
-		printf("%c",*p+*(p+1));
+		my_printf("%c",*p+*(p+1));
 	}
-	printf("%c",*p+*ps);
+	my_printf("%c",*p+*ps);
 	return 0;
 }
 

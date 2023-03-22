@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[301];
     int num[26]={0},i,j,n,p=0;
-    scanf("%s",a);
+    my_scanf("%s",a);
     n=strlen(a);
     for(i=0;i<n;i++)
     {     if(a[i]>='a'&&a[i]<='z')
@@ -14,9 +14,9 @@ int main_bench()
     for(j=0;j<26;j++)
     {if(num[j]>0){
           p=(char)(j+97);        
-    printf("%c=%d\n",p,num[j]);}
+    my_printf("%c=%d\n",p,num[j]);}
      }
      if(p==0)
-     printf("No");
+     my_printf("No");
      return 0;
     }

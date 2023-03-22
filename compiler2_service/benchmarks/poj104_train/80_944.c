@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a,b,c,d,e,f,days,i;
 	days=0;
-	scanf("%d%d%d\n",&a,&b,&c);
-	scanf("%d%d%d",&d,&e,&f);
+	my_scanf("%d%d%d\n",&a,&b,&c);
+	my_scanf("%d%d%d",&d,&e,&f);
 	for(i=a;i<d;i++)
 	{
 		if((i%4==0&&i%100!=0)||(i%400==0))
@@ -42,6 +42,6 @@ int main_bench()
 		}
 	}
 	days=days+f-c;
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }

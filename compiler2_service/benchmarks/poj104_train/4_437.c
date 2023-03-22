@@ -3,10 +3,10 @@
 int a[200][200],f[200][200],n,m,i,j,flag,si,sj;
 int main_bench()
 {
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for (i=1;i<=n;i++)
         for (j=1;j<=m;j++)
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
     while (1)
     {
         flag=0;
@@ -36,7 +36,7 @@ int main_bench()
         if (flag==0)
             return 0;
         for (;si<=n && sj>=1;si++,sj--)
-            printf("%d\n",a[si][sj]);
+            my_printf("%d\n",a[si][sj]);
     }
     return 0;
 }

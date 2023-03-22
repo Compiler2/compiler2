@@ -18,11 +18,11 @@ int main_bench()
 		if(c==' ')
 			t=0;
 	}
-	printf ("%d",a[1]);
+	my_printf ("%d",a[1]);
 	if(s>1)
 	{
 	   for (i=2;i<=s;i++)
-	     printf(",%d",a[i]);
+	     my_printf(",%d",a[i]);
 	}
 }
 

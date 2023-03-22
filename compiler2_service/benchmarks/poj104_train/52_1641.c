@@ -3,13 +3,13 @@
 void f(int *p,int,int);
 int main_bench()
 {int n,m,a[100],i,*p;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
    for(i=0;i<=n-1;i++)
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
 f(a,n,m);
    for(p=a;p<=a+n-2;p++)
-	   printf("%d ",*p);
-   printf("%d",*p);
+	   my_printf("%d ",*p);
+   my_printf("%d",*p);
 
 
 }

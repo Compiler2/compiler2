@@ -6,7 +6,7 @@ main_bench()
 	char s[102];
 	int a[102]={0};
 	int b[102]={0};
-	scanf("%s",s);
+	my_scanf("%s",s);
 	x=strlen(s);
 	for(i=0;i<x;i++)
 	{
@@ -14,8 +14,8 @@ main_bench()
 	}
 	if(x==1)
 	{
-		printf("0\n");
-		printf("%d",a[0]);
+		my_printf("0\n");
+		my_printf("%d",a[0]);
 	}
 	else
 	{
@@ -34,24 +34,24 @@ main_bench()
 		{
 			for(i=1;i<x-1;i++)
 			{
-				printf("%d",b[i]);
+				my_printf("%d",b[i]);
 			}
-			printf("\n");
-			printf("%d",q);
+			my_printf("\n");
+			my_printf("%d",q);
 		}
 		else if(b[0]!=0)
 		{
 			for(i=0;i<x-1;i++)
 			{
-				printf("%d",b[i]);
+				my_printf("%d",b[i]);
 			}
-			printf("\n");
-			printf("%d",q);
+			my_printf("\n");
+			my_printf("%d",q);
 		}
 		else if(b[0]==0&&b[1]==0)
 		{
-			printf("0\n");
-			printf("%d",t);
+			my_printf("0\n");
+			my_printf("%d",t);
 		}
 	} 
 }

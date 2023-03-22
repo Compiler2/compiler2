@@ -3,7 +3,7 @@
 int main_bench(){
  char c1[50],c2[50];
  int i,a,b,j,k;
- scanf("%s %s",c1,c2);
+ my_scanf("%s %s",c1,c2);
  a=strlen(c1);
  b=strlen(c2);
        
@@ -20,7 +20,7 @@ int main_bench(){
 
  
      if(c2[i+a-1]==c1[a-1])
-   {printf("%d\n",i);break;}
+   {my_printf("%d\n",i);break;}
   
   
  }

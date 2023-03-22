@@ -49,11 +49,11 @@ int main_bench()
 		}
 	}
 	if(m==0)
-		printf("=");
+		my_printf("=");
 	if(m==1)
-		printf(">");
+		my_printf(">");
 	if(m==2)
-		printf("<");
+		my_printf("<");
 	return 0;
 }
 

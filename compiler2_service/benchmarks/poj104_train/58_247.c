@@ -3,7 +3,7 @@
 int main_bench()
 {
    int n;char q[10];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    gets(q);
    for(int j=0;j<n;j++)
    {
@@ -18,7 +18,7 @@ int main_bench()
                    if((s[i]<'0')||((s[i]>'9')&&(s[i]<'A'))||((s[i] >'Z')&&(s[i]<'a'))||(s[i]>'z'))
                    {
                               if(s[i]!='_')
-                              {printf("0\n");a=1;break;}
+                              {my_printf("0\n");a=1;break;}
                    }
                    if(a==0)
                    {
@@ -27,20 +27,20 @@ int main_bench()
                                   if((s[0]=='a'+i)||(s[0]=='A'+i))
                                    {
                                                   
-                                                  printf("1\n");
+                                                  my_printf("1\n");
                                                   num=1;
                                    }
                           }
                           if(s[0]=='_')
                           {
-                                     printf("1\n");
+                                     my_printf("1\n");
                                      num=1;
                           }
                    }
                 
                     
             
-                  if(num==0&&a!=1) printf("0\n");
+                  if(num==0&&a!=1) my_printf("0\n");
    }
    getchar();
    getchar();

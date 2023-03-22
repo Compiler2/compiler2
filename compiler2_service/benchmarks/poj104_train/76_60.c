@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,a[50000][2],i,j,ai,bi,s=0,k,ta,tb;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 		
 
@@ -56,8 +56,8 @@ int main_bench()
 	}
 
 	if(s==1)
-		printf("no");
+		my_printf("no");
 	else
-		printf("%d %d\n",ai,bi);
+		my_printf("%d %d\n",ai,bi);
 	return 0;
 }

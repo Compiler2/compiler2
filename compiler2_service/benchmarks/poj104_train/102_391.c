@@ -4,12 +4,12 @@ main_bench()
 {
    int n,i,j=0,y=0,t;
    double s;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    char c[n];
    double a[n],b[n];
    for(i=0;i<n;i++)
    {
-     scanf("%s %lf",&c,&s);
+     my_scanf("%s %lf",&c,&s);
      t=strlen(c);
      if(t==4)
      {a[j]=s;
@@ -40,13 +40,13 @@ main_bench()
     }                
    }
    for(i=0;i<j;i++)
-   {printf("%.2lf ",a[i]);}
+   {my_printf("%.2lf ",a[i]);}
     for(i=0;i<y;i++)
    {
     if(i==y-1)
-   {printf("%.2lf",b[i]);}
+   {my_printf("%.2lf",b[i]);}
    else
-   {printf("%.2lf ",b[i]);}
+   {my_printf("%.2lf ",b[i]);}
    } 
         
 getchar();

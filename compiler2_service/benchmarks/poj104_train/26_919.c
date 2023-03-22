@@ -14,6 +14,6 @@ int main_bench(){
 		}else {i++;}
 	}
 	z[len]='\0';
-	printf("%s",z);
+	my_printf("%s",z);
 	return 0;
 }    

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,a,b,sz[11][11],de[11][11];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<11;i++){
 		for(j=0;j<11;j++){
 			sz[i][j]=0;
@@ -37,9 +37,9 @@ int main_bench()
 	for(i=1;i<10;i++){
 		for(j=1;j<10;j++){
 			if(j<9)
-				printf("%d ",de[i][j]);
+				my_printf("%d ",de[i][j]);
 			else
-				printf("%d\n",de[i][j]);
+				my_printf("%d\n",de[i][j]);
 		}
 	}
 	return 0;

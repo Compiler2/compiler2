@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a,b,c,d,m=0,n,r=0,l;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	l=a/4-a/100+a/400;
     if (((a%4==0)&&(a%100!=0))||(a%400==0))
 		r=1;
@@ -82,25 +82,25 @@ int main_bench(){
 	n=(a-1+m+l+c)%7;
 	switch(n){
 		case 0:
-			printf("Sun.");
+			my_printf("Sun.");
 			break;
 		case 1:
-			printf("Mon.");
+			my_printf("Mon.");
 			break;
 		case 2:
-			printf("Tue.");
+			my_printf("Tue.");
 			break;
 		case 3:
-			printf("Wed.");
+			my_printf("Wed.");
 			break;
 		case 4:
-			printf("Thr.");
+			my_printf("Thr.");
 			break;
 		case 5:
-			printf("Fri.");
+			my_printf("Fri.");
 			break;
 		case 6:
-			printf("Sat.");
+			my_printf("Sat.");
 			break;
 	}
 	return 0;

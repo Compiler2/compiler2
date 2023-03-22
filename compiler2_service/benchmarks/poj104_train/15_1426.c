@@ -5,13 +5,13 @@ int main_bench()
 {
     int n,hang,hang2,hang3,lie,lie2,lie3,squ;
     squ=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n][n];
     for(hang=0;hang<n;hang++)
     {
         for(lie=0;lie<n;lie++)
         {
-            scanf("%d",&a[hang][lie]);
+            my_scanf("%d",&a[hang][lie]);
         }
     }
     for(hang=1;hang<n-1;hang++)
@@ -49,7 +49,7 @@ int main_bench()
             }
         }
     }
-    printf("%d",squ);
+    my_printf("%d",squ);
     return 0;
 }
 

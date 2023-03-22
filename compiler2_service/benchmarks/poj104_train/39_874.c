@@ -12,10 +12,10 @@ int main_bench()
 	   int paper;
 	}a[100];
 	int N,i,b[100]={0},max,t,s=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%s%d%d %c %c %d",a[i].name,&a[i].qimo,&a[i].ping,&a[i].ban,&a[i].xi,&a[i].paper);
+		my_scanf("%s%d%d %c %c %d",a[i].name,&a[i].qimo,&a[i].ping,&a[i].ban,&a[i].xi,&a[i].paper);
 	}
 	for(i=0;i<N;i++)
 	{
@@ -41,6 +41,6 @@ int main_bench()
 			t=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",a[t].name,max,s);
+	my_printf("%s\n%d\n%d\n",a[t].name,max,s);
 	return 0;
 }

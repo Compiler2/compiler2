@@ -33,7 +33,7 @@ int g(int i)
 int main_bench()
 {
 	int m,n,num=0,i,l=0,b[300];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(f(i)*g(i)!=1)
@@ -44,12 +44,12 @@ int main_bench()
 	   }
 	 }
      if(num==n-m+1)
-		printf("no");
+		my_printf("no");
 	 else
 	 {
 		 for(i=1;i<=l-1;i++)
-			 printf("%d,",b[i]);
-		 printf("%d",b[l]);
+			 my_printf("%d,",b[i]);
+		 my_printf("%d",b[l]);
 	 }
 	
 

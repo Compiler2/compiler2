@@ -3,9 +3,9 @@
 int main_bench(){
 	char xulie[100][21];
 	int i,j,n,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s",&xulie[i]);
+		my_scanf("%s",&xulie[i]);
 	for(i=0;i<n;i++){
 		if((xulie[i][0]==95)||(xulie[i][0]>=65&&xulie[i][0]<=90)||(xulie[i][0]>=97&&xulie[i][0]<=122))
 		for(j=1;j<strlen(xulie[i]);j++){
@@ -20,9 +20,9 @@ int main_bench(){
 		else
 			c=0;
 		if(c==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		if(c==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

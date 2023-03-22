@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,i,j,k,t,h,a[301]={0};
 	for(i=1;;i++)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(n==0||m==0)break;
 		else
 		{
@@ -25,7 +25,7 @@ int main_bench()
 				}
 				if(t==0)
 				{
-					printf("%d\n",h);
+					my_printf("%d\n",h);
 					break;
 				}
 			}

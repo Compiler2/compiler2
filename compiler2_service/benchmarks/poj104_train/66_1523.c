@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,k;
 	int m,n=0;
 	int a,b,c;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	
 	if(a%4==0&&a%100!=0||a%400==0)
 	{
@@ -19,19 +19,19 @@ int main_bench()
 		else
 		    m=m+n-1;
 		if(m%7==0)
-		    printf("Sun.");
+		    my_printf("Sun.");
 		if(m%7==1)
-		    printf("Mon.");
+		    my_printf("Mon.");
 		if(m%7==2)
-		    printf("Tue.");
+		    my_printf("Tue.");
 		if(m%7==3)
-		    printf("Wed.");
+		    my_printf("Wed.");
 		if(m%7==4)
-		    printf("Thu.");
+		    my_printf("Thu.");
 		if(m%7==5)
-		    printf("Fri.");
+		    my_printf("Fri.");
 		if(m%7==6)
-		    printf("Sat.");
+		    my_printf("Sat.");
 	}
 	else
 	{
@@ -41,19 +41,19 @@ int main_bench()
 		n=n+c;
 		m=m+n-1;
 		if(m%7==0)
-		    printf("Sun.");
+		    my_printf("Sun.");
 		if(m%7==1)
-		    printf("Mon.");
+		    my_printf("Mon.");
 		if(m%7==2)
-		    printf("Tue.");
+		    my_printf("Tue.");
 		if(m%7==3)
-		    printf("Wed.");
+		    my_printf("Wed.");
 		if(m%7==4)
-		    printf("Thu.");
+		    my_printf("Thu.");
 		if(m%7==5)
-		    printf("Fri.");
+		    my_printf("Fri.");
 		if(m%7==6)
-		    printf("Sat.");
+		    my_printf("Sat.");
 	}
 	return 0;
 } 

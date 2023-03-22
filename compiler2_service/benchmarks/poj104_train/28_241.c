@@ -9,19 +9,19 @@ int main_bench()
 		if(c!=' ') {i++;flag=1;m=i;}
 		else  if(flag==1) { flag=0;
 			if(check==0)
-		   {printf("%d",i);check=1;}
-	       else printf(",%d",i);
+		   {my_printf("%d",i);check=1;}
+	       else my_printf(",%d",i);
 	       i=0;
 	   }
     
 	 }
    if(flag==1&&check==1)
-	printf(",%d",m);
+	my_printf(",%d",m);
  
 	
 	
 	if(flag==1&&check==0)
-		printf("%d",m);
+		my_printf("%d",m);
   
 
 	return 0;

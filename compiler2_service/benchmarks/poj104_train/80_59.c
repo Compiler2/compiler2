@@ -4,8 +4,8 @@ int main_bench()
 {
   int yone,monone,dayone;
   int ytwo,montwo,daytwo;
-  scanf("%d%d%d",&yone,&monone,&dayone);
-  scanf("%d%d%d",&ytwo,&montwo,&daytwo);
+  my_scanf("%d%d%d",&yone,&monone,&dayone);
+  my_scanf("%d%d%d",&ytwo,&montwo,&daytwo);
   int mon[12]={31,28,31,30,31,30,31,31,30,31,30,31};
   int i,j;
   int day=0;
@@ -41,7 +41,7 @@ int main_bench()
 		  }
 	  }
   }
-  printf("%d",day);
+  my_printf("%d",day);
 }
 
 		  

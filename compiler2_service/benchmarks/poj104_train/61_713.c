@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n,i,m,j,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-       scanf("%d",&m);
+       my_scanf("%d",&m);
 	   if( m == 1 || m == 2 )
 	   {
-		   printf("%d\n",1);
+		   my_printf("%d\n",1);
 		   continue;
 	   }
 	   int a = 1;
@@ -19,7 +19,7 @@ int n,i,m,j,d;
 		   a = b;
 		   b = d;
 	   }
-	   printf("%d\n", d );
+	   my_printf("%d\n", d );
 	}
 	return 0;
 

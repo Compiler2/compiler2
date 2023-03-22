@@ -28,11 +28,11 @@ int main_bench()
 		m=m+*(q+i);
 		if(*(q+i)!=-1)
 
-			printf("%d",*(q+i));
+			my_printf("%d",*(q+i));
 		else 
 			if (*(q+i+1)!=-1&&(m+i+1!=0))
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		 
 	

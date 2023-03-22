@@ -4,7 +4,7 @@ int main_bench()
 {
  	int n,i,k,l;
  	char ml[256],zl[256];
- 	scanf("%d",&n);
+ 	my_scanf("%d",&n);
  	for(i=1;i<=n+1;i++){
 		gets(ml);
 		l=strlen(ml);
@@ -15,8 +15,8 @@ int main_bench()
 			else if(ml[k]=='T') zl[k]='A';
 			}
 		for(k=0;k<l;k++){
-			if(k<l-1) printf("%c",zl[k]);
-			else printf("%c\n",zl[k]);
+			if(k<l-1) my_printf("%c",zl[k]);
+			else my_printf("%c\n",zl[k]);
 			}
 		}
  	

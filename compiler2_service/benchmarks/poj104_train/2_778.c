@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n;char name[1000][26];int num[1000];
 	int i,j;char b[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%s",&num[i],name[i]);
+		my_scanf("%d%s",&num[i],name[i]);
 	}
 	int a[26]={0};char k;
 	for(i=0;i<n;i++)
@@ -74,17 +74,17 @@ int main_bench()
 		if(a[i]>max)
 		{max=a[i];o=i;}
 	}
-	printf("%c\n%d\n",b[o],a[o]);
+	my_printf("%c\n%d\n",b[o],a[o]);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;(k=name[i][j]!='\0');j++)
 		{
 			if(name[i][j]==b[o])
-				printf("%d\n",num[i]);
+				my_printf("%d\n",num[i]);
 		}
 
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 
 
 	return 0;

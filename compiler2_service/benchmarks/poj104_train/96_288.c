@@ -4,10 +4,10 @@ main_bench()
 {
     char a[101],q[101];
     int i=0,rem=0,d=0,b[101];
-    scanf("%s",a);
-    if(a[1]=='\0') printf("0\n%c",a[0]);
+    my_scanf("%s",a);
+    if(a[1]=='\0') my_printf("0\n%c",a[0]);
     else if(((a[0]-'0')*10+a[1]-'0'<13)&&a[2]=='\0')
-    printf("0\n%s",a);
+    my_printf("0\n%s",a);
     else{
     b[0]=10*(a[0]-'0')+a[1]-'0';
     for(i=0;i<=strlen(a)-2;i++)
@@ -25,6 +25,6 @@ main_bench()
                   q[i]=q[i+1];
                   }
         }
-    printf("%s\n",q);
-    printf("%d",rem);}
+    my_printf("%s\n",q);
+    my_printf("%d",rem);}
 }

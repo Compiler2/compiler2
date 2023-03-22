@@ -45,9 +45,9 @@ void germ(int a[9][9],int b[9][9],int n)
 		{
 			for(j=0;j<8;j++)
 			{
-				printf("%d ",b[i][j]);
+				my_printf("%d ",b[i][j]);
 			}
-			printf("%d\n",b[i][j]);
+			my_printf("%d\n",b[i][j]);
 		}
 	}
 }
@@ -55,7 +55,7 @@ void germ(int a[9][9],int b[9][9],int n)
 main_bench()
 {
 	int n,m,a[9][9]={0},b[9][9]={0};
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[4][4]=m;
 	b[4][4]=m;
 	germ(a,b,n);

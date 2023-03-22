@@ -15,7 +15,7 @@ int main_bench()
 			}
 		}
 	}
-	scanf("%d%d",&m,&t);
+	my_scanf("%d%d",&m,&t);
 	A[4][4][0]=m;
 	for(i=1;i<=t;i++)
 	{
@@ -44,12 +44,12 @@ int main_bench()
 		for(j=0;j<9;j++)
 		{
 			if(j==0)
-				printf("%d",A[k][j][i-1]);
+				my_printf("%d",A[k][j][i-1]);
 			else
-				printf(" %d",A[k][j][i-1]);
+				my_printf(" %d",A[k][j][i-1]);
 		}
 		if(i<8)
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

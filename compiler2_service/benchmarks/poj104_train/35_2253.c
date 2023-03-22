@@ -4,14 +4,14 @@ int main_bench()
 {
 	int a[200][200];
 	int i,j,m,k,counter=0,s,n,col,row;
-	scanf("%d",&row);
+	my_scanf("%d",&row);
 	getchar();
-	scanf("%d",&col);
+	my_scanf("%d",&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(n=0;n<row;n++)
@@ -37,13 +37,13 @@ int main_bench()
 		}
 		if(s==m)
 		{
-			printf("%d+%d\n",n,k);
+			my_printf("%d+%d\n",n,k);
 			counter++;
 		}
 	}
 	if(counter==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 
 	return 0;

@@ -10,10 +10,10 @@ int main_bench()
     if(l==2)
     {
      a=(s[0]-'0')*10+s[1]-'0';
-    printf("%d\n%d",a/13,a%13);
+    my_printf("%d\n%d",a/13,a%13);
     }
     if(l==1)
-    printf("0\n%c",s[0]);
+    my_printf("0\n%c",s[0]);
     if(l>=3){
      c=s[0]-'0';
      if(c*10+s[1]-'0'>=13)
@@ -25,7 +25,7 @@ int main_bench()
          c=a%13;
        }
        r[i]='\0';
-       printf("%s\n%d",r,c);
+       my_printf("%s\n%d",r,c);
                           }
        else  
        {   
@@ -37,7 +37,7 @@ int main_bench()
          c=a%13;
        }
        r[i]='\0';
-       printf("%s\n%d",r,c);
+       my_printf("%s\n%d",r,c);
                           }}
 } 
 

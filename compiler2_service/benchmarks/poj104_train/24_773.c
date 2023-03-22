@@ -36,8 +36,8 @@ int main_bench()
 			strcpy(str_a,str);
 		}
 	}
-	printf("%s\n",str_a);
-	printf("%s",str_i);
+	my_printf("%s\n",str_a);
+	my_printf("%s",str_i);
 	return 0;
 	
 	

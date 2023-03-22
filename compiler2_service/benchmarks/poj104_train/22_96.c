@@ -7,7 +7,7 @@ int main_bench(){
 	char ch;
 	do{
 		i++;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n>max){
 			secmax=max;
 			if(maxchg) chg=1;
@@ -20,7 +20,7 @@ int main_bench(){
 		ch=getchar();
 	}while(ch==',');
 	if(i<2||!chg)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",secmax);
+		my_printf("%d",secmax);
 }

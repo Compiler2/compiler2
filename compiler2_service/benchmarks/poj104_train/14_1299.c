@@ -11,11 +11,11 @@ struct student
 int main_bench()
 {
 	int n,i,max,sec,min,total[100000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student stu[100000];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d",stu[i].id, &stu[i].ch, &stu[i].ma);
+		my_scanf("%s%d%d",stu[i].id, &stu[i].ch, &stu[i].ma);
 		total[i]=stu[i].ch + stu[i].ma;
 	}
 
@@ -27,7 +27,7 @@ int main_bench()
 			max = i;
 	}
 
-    printf("%s %d\n",stu[max].id, total[max]);
+    my_printf("%s %d\n",stu[max].id, total[max]);
 
 	for(i=0;i<n;i++)
 	{
@@ -45,7 +45,7 @@ int main_bench()
 			sec=i;
 	}
 
-	printf("%s %d\n", stu[sec].id, total[sec]);
+	my_printf("%s %d\n", stu[sec].id, total[sec]);
 
 	for(i=0;i<n;i++)
 	{
@@ -64,7 +64,7 @@ int main_bench()
 			min=i;
 	}
 
-	printf("%s %d\n", stu[min].id, total[min]);
+	my_printf("%s %d\n", stu[min].id, total[min]);
 	return 0;
 }
 

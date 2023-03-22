@@ -5,11 +5,11 @@ int main_bench()
 	float sum=0;
 	float a,b,c,d,e,f;
 	int i,k,m,n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	k=1;
 	while(k<=m)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n==1)
 		{
 			sum=2;
@@ -35,7 +35,7 @@ int main_bench()
 				}
 			}
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 		k++;
 	}
 	return 0;

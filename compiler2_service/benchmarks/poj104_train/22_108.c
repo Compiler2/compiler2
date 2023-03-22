@@ -30,6 +30,6 @@ int main_bench()
 	{
 		if(a[i]>max) max=a[i];
 	}
-	if(max==-1) printf("No\n");
-	else printf("%d",max);
+	if(max==-1) my_printf("No\n");
+	else my_printf("%d",max);
 }

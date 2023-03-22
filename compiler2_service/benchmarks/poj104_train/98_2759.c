@@ -5,10 +5,10 @@ int main_bench()
 {
 	int cnt;
 	char data[1000][90];
-	scanf("%d",&cnt);
+	my_scanf("%d",&cnt);
 	int i;
 	for(i=0;i<cnt;i++)
-		scanf("%s",data[i]);
+		my_scanf("%s",data[i]);
 	int c=0;
 	i=0;
 	while(i<cnt){
@@ -17,16 +17,16 @@ int main_bench()
 				break;
 			if(c != 0)
 			{
-				printf(" ");
+				my_printf(" ");
 				c++;
 			}
-			printf("%s",data[i]);
+			my_printf("%s",data[i]);
 			c = c+strlen(data[i]);
 			i++;
 			if(i>=cnt)
 				break;
 		}
-		printf("\n");
+		my_printf("\n");
 		c=0;
 	}
 	

@@ -12,12 +12,12 @@ int main_bench()
         if(a[i]==' ')
 	    {
 			for(j=0;j<word;j++)
-				printf("%c",a[i+j+1]);
+				my_printf("%c",a[i+j+1]);
 			word=0;
-			if(i!=0)printf(" ");
+			if(i!=0)my_printf(" ");
 	    }
 		if(i==0)
 			for(j=0;j<word;j++)
-				printf("%c",a[j]);
+				my_printf("%c",a[j]);
 	}
 }

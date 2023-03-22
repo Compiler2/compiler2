@@ -3,7 +3,7 @@
 int main_bench()
 {
     int m,n,i;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     int counter;
     counter=1;
   
@@ -15,7 +15,7 @@ int main_bench()
     sum=2;
    
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     i=1;
     while(i<n)
     {
@@ -36,7 +36,7 @@ int main_bench()
   
     }
    
-    printf("%.3f\n", sum);
+    my_printf("%.3f\n", sum);
      }
     
     return 0;

@@ -9,7 +9,7 @@ int main_bench()
 	for(i=0;((b[i]=getchar())!='\n');i++)
 		k++;
 	if(j!=k)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<j;i++)
@@ -23,8 +23,8 @@ int main_bench()
 			if(b[x]=='0')
 			m++;
 	if(m==j)
-		printf("YES");
+		my_printf("YES");
 	else
-	printf("NO");		
+	my_printf("NO");		
 	}
 }

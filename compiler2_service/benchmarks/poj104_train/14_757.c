@@ -8,12 +8,12 @@ int main_bench()
 		int b;
 	}n[100000];
 	int m,i,sum[100000],first,second,third,d,e,f;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i].n);
-		scanf("%d",&n[i].a);
-		scanf("%d",&n[i].b);
+		my_scanf("%d",&n[i].n);
+		my_scanf("%d",&n[i].a);
+		my_scanf("%d",&n[i].b);
 		sum[i]=n[i].a+n[i].b;
 	}
 	if(sum[0]>sum[1]&&sum[0]>sum[2]&&sum[1]>sum[2])
@@ -94,8 +94,8 @@ int main_bench()
 			f=i+1;
 		}
 	}
-	printf("%d %d\n",d,first);
-	printf("%d %d\n",e,second);
-	printf("%d %d\n",f,third);
+	my_printf("%d %d\n",d,first);
+	my_printf("%d %d\n",e,second);
+	my_printf("%d %d\n",f,third);
 	return 0;
 }

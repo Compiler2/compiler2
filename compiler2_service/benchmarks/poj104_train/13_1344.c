@@ -4,12 +4,12 @@
 	{
 		int n,i,k,x;
 		int sz[20000];
-		scanf("%d",&n);
-		scanf("%d",&sz[0]);
-		printf("%d",sz[0]);
+		my_scanf("%d",&n);
+		my_scanf("%d",&sz[0]);
+		my_printf("%d",sz[0]);
 		for(i=1;i<n;i++)
 		{
-			scanf("%d",&sz[i]);	
+			my_scanf("%d",&sz[i]);	
 			x=0;
 				for(k=0;k<i;k++)
 				{
@@ -24,7 +24,7 @@
 					}
 					if(x==i)
 					{
-						printf(" %d",sz[i]);
+						my_printf(" %d",sz[i]);
 					}
 				}
 		}

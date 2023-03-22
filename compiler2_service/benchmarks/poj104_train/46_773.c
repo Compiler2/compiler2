@@ -8,10 +8,10 @@ int main_bench()
 	char c;
 	int row1,row2,col1,col2;
 	int a[101][101];
-	scanf("%d %d",&row2,&col2);
+	my_scanf("%d %d",&row2,&col2);
 	for(i=0;i<row2;i++){
 		for(j=0;j<col2;j++){
-			scanf("%d",&(a[i][j]));
+			my_scanf("%d",&(a[i][j]));
 		}
 	}
 
@@ -54,7 +54,7 @@ int main_bench()
 				col2--;
 			}
 		}
-		printf("%d\n",a[i][j]);
+		my_printf("%d\n",a[i][j]);
 		n--;
 	}
 	

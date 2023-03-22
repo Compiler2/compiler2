@@ -5,7 +5,7 @@ int main_bench()
 	int n,jishu;
 	int i,j;
 	char jianji[1001];
-	scanf("%d\n`", &n);
+	my_scanf("%d\n`", &n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=1000;j++)
@@ -21,15 +21,15 @@ int main_bench()
 			switch(jianji[j])
 			{
 			case 'A':
-			printf("T");break;
+			my_printf("T");break;
 			case 'T':
-				printf("A");break;
+				my_printf("A");break;
 			case 'C':
-				printf("G");break;
+				my_printf("G");break;
 			case 'G':
-				printf("C");break;
+				my_printf("C");break;
 			default:
-				printf("\n");break;
+				my_printf("\n");break;
 			}
 		}
 	}

@@ -5,7 +5,7 @@ int main_bench()
     int rev(int a);
     int p(int a);
     int m, n, i, ok=1;
-    scanf("%d %d", &m, &n);
+    my_scanf("%d %d", &m, &n);
     for (i=m;i<=n;i++)
     {
         if (rev(i)&&p(i))
@@ -13,15 +13,15 @@ int main_bench()
             if (ok)
             {
                 ok =0;
-                printf("%d", i);
+                my_printf("%d", i);
             }
             else
-                printf(",%d", i);
+                my_printf(",%d", i);
         }
     }
     
     if (ok)
-        printf("no");
+        my_printf("no");
    
     return 0;
 

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i,j,w,month[13],week,sum_day=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	month[1]=31;
 	month[2]=28;
 	month[3]=31;
@@ -24,7 +24,7 @@ for(j=1;j<13;j++)
 			week = (i+w-1)%7;
 			if ((i-sum_day)==13 && week==5)
 			{
-			printf("%d\n",j);
+			my_printf("%d\n",j);
 			}
 		
 		}

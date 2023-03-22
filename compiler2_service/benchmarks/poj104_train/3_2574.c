@@ -11,9 +11,9 @@ int main_bench(){
     int n,k;
     int s=0;
     int sz[1000];
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for(int a=0;a<n;a++){
-            scanf("%d",&(sz[a]));
+            my_scanf("%d",&(sz[a]));
             }
     for(int b=0;b<n;b++){
             for(int c=b+1;c<n;c++){
@@ -23,9 +23,9 @@ int main_bench(){
                     }
             }
     if(s==0){
-             printf("no");
+             my_printf("no");
              }else{
-    printf("yes");}
+    my_printf("yes");}
 
     return 0;
     }

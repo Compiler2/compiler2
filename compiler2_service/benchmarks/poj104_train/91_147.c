@@ -14,7 +14,7 @@ int main_bench()
   n=strlen(a);
   x(p3,p4,n);
   *(p4+n)='\0';
-  printf("%s",b);
+  my_printf("%s",b);
   return 0;
 }
 

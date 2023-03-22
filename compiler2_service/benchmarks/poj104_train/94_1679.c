@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j,k,v,t;
 	int a[500];
 	int b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	j=0;
 	for(i=0;i<n;i++){
@@ -27,9 +27,9 @@ int main_bench(){
 		}
 	}
 	for(v=0;v<j;v++){
-		printf("%d",b[v]);
+		my_printf("%d",b[v]);
 		if(v<j-1)
-			printf(",");
+			my_printf(",");
 	}
 	return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int m,i,j,a[10000];
 	double s[10000],sz[10000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){	
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 		s[i]=0;
  		for(j=2;j<=a[i]+1;j++){        	
 			sz[0]=1;
@@ -16,7 +16,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",s[i]);
+		my_printf("%.3lf\n",s[i]);
 	}
 	return 0;
 }

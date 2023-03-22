@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,m,i,j,x=0;
     int w[1000];
-    scanf("%d %d",&n,&m);
+    my_scanf("%d %d",&n,&m);
     for(i=0;i<n;i++)
      {
-              scanf("%d",&w[i]);    
+              my_scanf("%d",&w[i]);    
      }
     for(i=0;i<n-1;i++)
     {
@@ -28,11 +28,11 @@ int main_bench()
     if(x>0)
     {
            
-            printf("yes");
+            my_printf("yes");
     }
     else
     {
-            printf("no");
+            my_printf("no");
     }
     
     return 0;

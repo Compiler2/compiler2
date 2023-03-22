@@ -5,13 +5,13 @@ int main_bench()
     int k1,k2,q,i,w,sum=0;
     double n,r;
     char dna1[501],dna2[501];
-    scanf("%lf",&n);
-    scanf("%s%s",dna1,dna2);
+    my_scanf("%lf",&n);
+    my_scanf("%s%s",dna1,dna2);
     k1=strlen(dna1);
     k2=strlen(dna2);
     if(k1!=k2)
     {
-              printf("error");
+              my_printf("error");
               return 0;
     }
     else
@@ -29,17 +29,17 @@ int main_bench()
                          }
                          else
                          {
-                             printf("error");
+                             my_printf("error");
                              return 0;
                          }
         }
     }
     r=1.0*sum/k1;
     if(r>n)
-    {printf("yes");}
+    {my_printf("yes");}
     else
     {
-        printf("no");
+        my_printf("no");
     }
     return 0;
 }

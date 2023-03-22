@@ -5,7 +5,7 @@ int main_bench()
 	int i,j=0,l,b,r,t=0;
 	char s[101];
 	int a[101]={0},q[101];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i<=l-1;i++)
 		a[i+1]=s[i]-'0';
@@ -25,10 +25,10 @@ int main_bench()
 		if(q[i]!=0)
 			t=1;
 		if(t==1)
-			printf("%d",q[i]);
+			my_printf("%d",q[i]);
 	}
 	if(t==0)
-		printf("0");
-	printf("\n%d\n",r);
+		my_printf("0");
+	my_printf("\n%d\n",r);
 	return 0;
 }

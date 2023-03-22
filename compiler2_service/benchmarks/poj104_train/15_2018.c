@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100][100];
 	int i,j,a,b,c,d,x;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	int tag;
@@ -37,7 +37,7 @@ int main_bench()
 		if(tag==2){break;}
 	}
 	x=(c-a-1)*(d-b-1);
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }
 

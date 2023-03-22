@@ -4,10 +4,10 @@
 {
 	  int a,b,n,i;
 	  int p=0,q=0;
-	  scanf("%d",&n);
+	  my_scanf("%d",&n);
 	     for(i=0;i<n;i++)
 		 {
-		   scanf("%d%d",&a,&b);
+		   my_scanf("%d%d",&a,&b);
 		    if (a==2&&b==0)
 			{p+=1;}
 			else if(a==1&&b==2)
@@ -25,11 +25,11 @@
 		 }
 		 
 		 if(p>q)
-		 {printf("A");}
+		 {my_printf("A");}
 		 else if(p<q)
-		 {printf("B");}
+		 {my_printf("B");}
          else if(p=q)
-		 {printf("Tie");}
+		 {my_printf("Tie");}
 		 
 
 

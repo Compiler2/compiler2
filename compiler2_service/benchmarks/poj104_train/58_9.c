@@ -5,7 +5,7 @@ int main_bench()
 	int f(char *str);
 	int n,i,p;
 	char str[100][100],*t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(str[i]);
@@ -14,7 +14,7 @@ int main_bench()
 	{
 		t=str[i];
 		p=f(t);
-		printf("%d\n",p);
+		my_printf("%d\n",p);
 	}
 	return 0;
 }

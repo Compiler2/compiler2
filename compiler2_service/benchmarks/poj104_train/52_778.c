@@ -3,11 +3,11 @@
 int main_bench()
 {   
 	int m,n;
-	scanf("%d %d\n",&n,&m);
+	my_scanf("%d %d\n",&n,&m);
     int i,a[100];
 	for(i=0;i<n;i++)
 	{
-	    scanf("%d",&a[i]);
+	    my_scanf("%d",&a[i]);
 	}
     int*point;
 	
@@ -21,12 +21,12 @@ int main_bench()
 	
 	for(point=&a[n-m];point<a+n;point++)
 	{
-		printf("%d ",*point);
+		my_printf("%d ",*point);
 	}
 	for(point=a;point<a+n-m-1;point++)
 	{
-		printf("%d ",*point);
+		my_printf("%d ",*point);
 	}
-	printf("%d\n",a[n-m-1]);
+	my_printf("%d\n",a[n-m-1]);
 	return 0;
 }

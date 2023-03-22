@@ -7,12 +7,12 @@ struct people{
   char num[10];int age;
     } peo1[100],peo2[100],peo3[100],e;
 int n,i,j,m,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 char s[100][10];
 for(i=0;i<n;i++)
   {
-  scanf("%s",peo1[i].num);
-  scanf("%d",&peo1[i].age);
+  my_scanf("%s",peo1[i].num);
+  my_scanf("%d",&peo1[i].age);
   }
 j=0;
 m=0;
@@ -52,7 +52,7 @@ for(a=j,b=0;a<n;a++,b++)
    }
 for(c=0;c<n;c++)
   {
-   printf("%s\n",s[c]);
+   my_printf("%s\n",s[c]);
    }
  return 0;
 }

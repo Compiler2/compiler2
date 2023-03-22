@@ -15,10 +15,10 @@ int main_bench(){
            struct scholar a[1000];
            
     int n, i;  
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     for (i=0; i<n; i++){
-        scanf("%s %d %d %c %c %d", a[i].z, &a[i].qm, &a[i].bj, &a[i].gb, &a[i].xb, &a[i].paper);
+        my_scanf("%s %d %d %c %c %d", a[i].z, &a[i].qm, &a[i].bj, &a[i].gb, &a[i].xb, &a[i].paper);
         a[i].total=0;
         } 
     
@@ -47,7 +47,7 @@ int main_bench(){
         total+=a[i].total;
         }
         
-    printf("%s\n%d\n%d\n", name, max, total);
+    my_printf("%s\n%d\n%d\n", name, max, total);
         
         
     return 0;    

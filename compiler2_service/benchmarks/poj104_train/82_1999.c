@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,ss[100],sz[100],time[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
-        scanf("%d",&ss[i]);
-        scanf("%d",&sz[i]);}
+        my_scanf("%d",&ss[i]);
+        my_scanf("%d",&sz[i]);}
     int h=0,j=0;
     for(int k=0;k<n;k++){
         if((ss[k]>=90)&&(ss[k]<=140)&&(sz[k]>=60)&&(sz[k]<=90)){
@@ -19,9 +19,9 @@ int main_bench(){
         if(e<time[l]){
             e=time[l];}}
     if(e>=h){
-           printf("%d",e);}
+           my_printf("%d",e);}
     else{
-           printf("%d",h);}
+           my_printf("%d",h);}
     return 0;
 }
         

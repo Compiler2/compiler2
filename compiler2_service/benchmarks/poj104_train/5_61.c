@@ -6,7 +6,7 @@ int main_bench()
 	double n;
 	int sum=0;
 	int i,j=0;
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	gets(c);
 	gets(a);
 	gets(b);
@@ -14,19 +14,19 @@ int main_bench()
 	{
 		if((a[i]!='A'&&a[i]!='G'&&a[i]!='C'&&a[i]!='T')||(b[i]!='A'&&b[i]!='G'&&b[i]!='C'&&b[i]!='T'))
 		{
-			printf("error");
+			my_printf("error");
 			goto end;
 		}
 		if(a[i]==b[i])
 			sum++;
 	}
 	if(b[i]!='\0')
-		printf("error");
+		my_printf("error");
 	else 
 	{
 		if((double)sum/i>n)
-		printf("yes");
-		else printf("no");
+		my_printf("yes");
+		else my_printf("no");
 	}
 end:;
 

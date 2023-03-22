@@ -6,9 +6,9 @@ int main_bench()
 	int ss[100];
 	int sz[100];
 	int time[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d/n",&ss[i],&sz[i]);
+		my_scanf("%d %d/n",&ss[i],&sz[i]);
 	}
 	t=0;
     for(i=0;i<n;i++){
@@ -19,7 +19,7 @@ int main_bench()
     for(i=0;i<n;i++){
 		if(max<time[i]){max=time[i];}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 
 }

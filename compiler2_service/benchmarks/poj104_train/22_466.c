@@ -4,13 +4,13 @@ int main_bench()
 {
 	int a[300],k=0,i,max=-999,max1=-999;
 	char c;
-	scanf("%d",&a[k]);
-	scanf("%c",&c);
+	my_scanf("%d",&a[k]);
+	my_scanf("%c",&c);
 	while(c!='\n')
 	{
 		k++;
-		scanf("%d",&a[k]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[k]);
+		my_scanf("%c",&c);
 	}
 	for(i=0;i<=k;i++)
 	{
@@ -25,8 +25,8 @@ int main_bench()
 		}
 	}
 		if(max1==-999)
-			printf("No");
+			my_printf("No");
 		else
-			printf("%d",max1);
+			my_printf("%d",max1);
 		return 0;
 }

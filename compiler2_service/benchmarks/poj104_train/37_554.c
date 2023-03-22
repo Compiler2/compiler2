@@ -8,11 +8,11 @@ int main_bench()
     int b[26];
     int i, j, len, index,t,k;
     int flag = 0;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(k=0;k<t;k++)
 	{
 		flag=0;
-		scanf("%s", a);
+		my_scanf("%s", a);
 		len = strlen(a);
 		for (i = 0; i < 26; i++)
 			b[i]=0;
@@ -26,13 +26,13 @@ int main_bench()
 		{
 			if (b[a[j]-'a'] == 1) 
 			{
-				printf("%c\n", a[j]);
+				my_printf("%c\n", a[j]);
 				flag = 1;
 				break;
 			}
 		}
 		if (flag==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	
     return 0;

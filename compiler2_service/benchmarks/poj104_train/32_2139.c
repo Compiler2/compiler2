@@ -5,7 +5,7 @@ main_bench()
 	int i,k,r,N;
 	int a1[250],b1[250],c[250];
 	char a[250],b[250];
-    scanf("%d",&N);
+    my_scanf("%d",&N);
    	for (i=1;i<=N;i++)
 	{
 		
@@ -17,7 +17,7 @@ main_bench()
 			b1[k]=0;
 			c[k]=0;
      	}
-		scanf("%s%s",a,b);
+		my_scanf("%s%s",a,b);
 		for (k=249;k>=0;k--)
 		if  (a[k]>='0'&&a[k]<='9')
 				a1[k+250-strlen(a)]=a[k]-'0';
@@ -38,10 +38,10 @@ main_bench()
         while(c[r]<=0&&r<250)
 			r++;
 		if (r==250)
-			printf("0");
+			my_printf("0");
         for (k=r;k<250;k++)
-        printf("%d",c[k]);
-		printf("\n");
+        my_printf("%d",c[k]);
+		my_printf("\n");
 	}
 	
 }

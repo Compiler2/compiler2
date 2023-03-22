@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i,a[100];
 	double x,y,z,k,b,c,d,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=0;
 	c=0;
 	d=0;
 	e=0;
 	for(i=0;i<n;i++){
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 		if(a[i]<=18)
 			b++;
 		if(a[i]>=19&&a[i]<=35)
@@ -24,10 +24,10 @@ int main_bench()
 	y=100*c/(b+c+d+e);
 	z=100*d/(b+c+d+e);
 	k=100*e/(b+c+d+e);
-	printf("1-18: %.2lf%%\n",x);
-	printf("19-35: %.2lf%%\n",y);
-	printf("36-60: %.2lf%%\n",z);
-	printf("60??: %.2lf%%\n",k);
+	my_printf("1-18: %.2lf%%\n",x);
+	my_printf("19-35: %.2lf%%\n",y);
+	my_printf("36-60: %.2lf%%\n",z);
+	my_printf("60??: %.2lf%%\n",k);
 	return 0;
 
 }

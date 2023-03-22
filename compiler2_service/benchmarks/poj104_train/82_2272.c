@@ -8,9 +8,9 @@ int zhengchang(int i,int j){
 }
 int main_bench(){
 	int n,i,a[100],b[100],k,t[100]={0},m=0,j,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<n;k++){
-		scanf("%d%d",&a[k],&b[k]);
+		my_scanf("%d%d",&a[k],&b[k]);
 	}
 	for(i=0;i<n;i++){
 		if(zhengchang(a[i],b[i])){
@@ -27,6 +27,6 @@ int main_bench(){
 			max=t[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

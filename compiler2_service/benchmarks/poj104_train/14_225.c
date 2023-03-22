@@ -9,12 +9,12 @@ int main_bench()
          int shuxue;
   };
   int n,i,x,y,z,o,p,q;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[100000];
   struct student stu[100000];
   for(i=0;i<n;i++)
   {
-   scanf("%d %d %d",&stu[i].ID,&stu[i].yuwen,&stu[i].shuxue);
+   my_scanf("%d %d %d",&stu[i].ID,&stu[i].yuwen,&stu[i].shuxue);
    a[i]=stu[i].yuwen+stu[i].shuxue;
   }
   x=0;
@@ -68,9 +68,9 @@ int main_bench()
        }
      }
    }
-   printf("%d %d\n",stu[x].ID,o);
-    printf("%d %d\n",stu[y].ID,p);
-     printf("%d %d\n",stu[z].ID,q);
+   my_printf("%d %d\n",stu[x].ID,o);
+    my_printf("%d %d\n",stu[y].ID,p);
+     my_printf("%d %d\n",stu[z].ID,q);
  getchar();
  getchar();
 }

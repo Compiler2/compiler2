@@ -4,9 +4,9 @@ int main_bench()
 {
        int m,i,j;
        int sz[100];
-       scanf("%d",&m);
+       my_scanf("%d",&m);
        for(i=0;i<m;i++){
-         scanf("%d",&sz[i]);
+         my_scanf("%d",&sz[i]);
         }
          int sza[100],szb[100];
          sza[0]=1;
@@ -26,7 +26,7 @@ int main_bench()
              for(j=0;j<sz[i];j++){
             sum=sum+szc[j];
             }
-            printf("%.3f\n",sum);
+            my_printf("%.3f\n",sum);
              }
           return 0;
 }

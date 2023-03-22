@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int sz[100];
 	int a[100][100],b[100][100];
 	int i,j;
 	for(i=0;i<m;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<m;i++){
 		for(j=1;j<=sz[i];j++){
@@ -26,7 +26,7 @@ int main_bench()
 		for(j=1;j<=sz[i];j++){
 			sum[i]+=(a[i][j]*1.0)/(b[i][j]*1.0);
 		}
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	return 0;
 }

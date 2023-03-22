@@ -27,9 +27,9 @@ int main_bench()
 			strcpy(copy[k],s3);
 		}
 	}
-	printf("%s",copy[0]);
+	my_printf("%s",copy[0]);
 	for (k=1;k<j;k++){
-		printf (" %s",copy[k]);
+		my_printf (" %s",copy[k]);
 	}
 
 	return 0;

@@ -5,9 +5,9 @@ int main_bench()
 {   int n,c[100],d[100],e[100],i,j=0,z,jin[100],max=0;
     char s[100][50];
 	char a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d%d %c %c%d",s[i],&c[i],&d[i],&a[i],&b[i],&e[i]);}
+		my_scanf("%s%d%d %c %c%d",s[i],&c[i],&d[i],&a[i],&b[i],&e[i]);}
     for(i=0;i<n;i++){
     jin[i]=0;
 		if(c[i]>80&&e[i]>=1){jin[i]=jin[i]+8000;}
@@ -25,6 +25,6 @@ int main_bench()
 		if(jin[i]>max){max=jin[i];z=i;}}
 	
 
-	printf("%s\n%d\n%d\n",s[z],max,j);
+	my_printf("%s\n%d\n%d\n",s[z],max,j);
 	return 0;
 }

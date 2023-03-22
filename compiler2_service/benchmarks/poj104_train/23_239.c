@@ -20,10 +20,10 @@ int main_bench()
      }
    }
    k++;
-  printf("%s",a[k-1]);
+  my_printf("%s",a[k-1]);
   for(i=k-2;i>=0;i--)
   {
-      printf(" %s",a[i]);
+      my_printf(" %s",a[i]);
   }
   return 0;
 }

@@ -5,11 +5,11 @@ main_bench()
       int n,i,j,t,m,p;
       t=1; 
       int a[10000];
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       if(n<5)
-      printf("empty");
+      my_printf("empty");
       else
-      {printf("3 5");
+      {my_printf("3 5");
           for(i=2;i<=n;i++)
       {a[t]=i;
                        for(j=i;j>1;j--)
@@ -21,6 +21,6 @@ main_bench()
       }
       for(p=3;p<t;p++)
       {if(a[p+1]-a[p]==2)
-      printf("\n%d %d",a[p],a[p+1]);}
+      my_printf("\n%d %d",a[p],a[p+1]);}
 }
       }

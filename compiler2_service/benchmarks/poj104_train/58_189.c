@@ -32,7 +32,7 @@ int check2(char a[],int n)
 }
 main_bench()
 {   int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char a[200][100];
     getchar();
     int i,t;
@@ -40,9 +40,9 @@ main_bench()
   {  gets(a[i]);
     t= strlen(a[i]);
     if(check(a[i][0])&&check2(a[i],t))
-     printf("1\n" );  
+     my_printf("1\n" );  
      else 
-     printf("0\n");  
+     my_printf("0\n");  
 
 }          
                    

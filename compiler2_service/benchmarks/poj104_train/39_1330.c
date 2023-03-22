@@ -7,10 +7,10 @@ int main_bench()
 	int n, i, j, reward[101], sumreward=0;
 	int f1(int, int), f2(int, int), f3(int), f4(int, char), f5(int, char);
 	
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=1; i<=n; i++)
 	{
-		scanf("%s %d %d %c %c %d", &name[i], &s[i][1], &s[i][2], &yn[i][1], &yn[i][2], &s[i][3]);
+		my_scanf("%s %d %d %c %c %d", &name[i], &s[i][1], &s[i][2], &yn[i][1], &yn[i][2], &s[i][3]);
 		
 		reward[i] = f1(s[i][1], s[i][3]) + f2(s[i][1], s[i][2]) + f3(s[i][1]) + f4(s[i][1], yn[i][2]) + f5(s[i][2], yn[i][1]);
 		
@@ -29,7 +29,7 @@ int main_bench()
 			if(reward[i]<reward[j]) a=a+1;
 		};
 		
-		if (a==0) {printf("%s\n%d\n%d",name[i],reward[i],sumreward); break;};
+		if (a==0) {my_printf("%s\n%d\n%d",name[i],reward[i],sumreward); break;};
 	};
 	
 }

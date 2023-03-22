@@ -16,8 +16,8 @@ int main_bench()
 			if(zfc[i][j]=='_'||zfc[i][j]>='a'&&zfc[i][j]<='z'||zfc[i][j]>='A'&&zfc[i][j]<='Z'||zfc[i][j]>='0'&&zfc[i][j]<='9') b++;
 			if(j==0&&zfc[i][j]>='0'&&zfc[i][j]<='9') b--;
 		}
-		if(b==a) printf("yes\n");
-		else printf("no\n");
+		if(b==a) my_printf("yes\n");
+		else my_printf("no\n");
 	}
 	return 0;
 }

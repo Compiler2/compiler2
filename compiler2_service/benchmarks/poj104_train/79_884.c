@@ -4,12 +4,12 @@ int main_bench()
 {
 	int f(int m,int n);
 	int m,n,k;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	while (m!=0&&n!=0)
 	{
 	k=f(m,n);
-	printf("%d\n",k);
-	scanf("%d%d",&n,&m);
+	my_printf("%d\n",k);
+	my_scanf("%d%d",&n,&m);
 	}
 
 }

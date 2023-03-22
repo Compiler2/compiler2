@@ -4,7 +4,7 @@ main_bench()
 {
 	int m,n,k;
 	int count;
-	while(scanf("%d %d",&n,&m),m!=0&&n!=0)
+	while(my_scanf("%d %d",&n,&m),m!=0&&n!=0)
 	{
 		int a[300][2];
 		k=0;
@@ -35,7 +35,7 @@ main_bench()
 		{
 			if(a[i][1]==1)
 			{
-				printf("%d\n",a[i][0]);
+				my_printf("%d\n",a[i][0]);
 				break;
 			}
 		}

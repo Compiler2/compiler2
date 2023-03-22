@@ -22,8 +22,8 @@ int main_bench()
 
 
 	int u=0,year,a,b,c,d,e,f,g[15]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	int i,j;
 	if (a==d) u+=add(g,a,e,f)-add(g,a,b,c);
 	else
@@ -33,6 +33,6 @@ int main_bench()
 	for (i=a+1;i<=d-1;i++) {if (judge(i)) u+=366; else u+=365;}
     u+=add(g,d,e,f); 
 	}
-	printf("%d",u);
+	my_printf("%d",u);
 }
 	

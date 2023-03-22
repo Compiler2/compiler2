@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int xueya[100][2];
 	int shijian[100];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&xueya[i][0],&xueya[i][1]);
+		my_scanf("%d%d",&xueya[i][0],&xueya[i][1]);
 		if(xueya[i][0]>=90&&xueya[i][0]<=140&&xueya[i][1]>=60&&xueya[i][1]<=90)
 		{
 			shijian[i]=1;
@@ -45,7 +45,7 @@ int main_bench()
 			max=duan[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 
 
 

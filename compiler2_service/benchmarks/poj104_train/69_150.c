@@ -9,7 +9,7 @@ int main_bench()
 	int d[251];
 	int e[252];
 	int s,j,i,x,y;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	x=strlen(a);
 	y=strlen(b);
 	e[0]=0;
@@ -54,7 +54,7 @@ int main_bench()
 		{
 			for(i=j;i<x+1;i++)
 			{
-				printf("%d",e[i]);
+				my_printf("%d",e[i]);
 			}
 				break;
 		}
@@ -62,7 +62,7 @@ int main_bench()
 	}
 	else
 	{
-		printf("%d",c[0]);
+		my_printf("%d",c[0]);
 	}
 	return 0;
 }

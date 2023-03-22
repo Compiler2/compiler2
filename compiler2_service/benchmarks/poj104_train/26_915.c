@@ -16,6 +16,6 @@ int main_bench(){
 	}
 	zfc[k-p]=0;
 
-	printf("%s",zfc);
+	my_printf("%s",zfc);
 	return 0;
 }

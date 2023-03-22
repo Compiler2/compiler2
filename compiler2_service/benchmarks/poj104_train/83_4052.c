@@ -4,15 +4,15 @@ int main_bench()
 {
     int i,n,s[10],grade[10],Sum;
     float p[10],sum,GPA;
-    scanf("%d",&n);
-    printf("\n");
+    my_scanf("%d",&n);
+    my_printf("\n");
     sum=0;
     Sum=0;
     for (i=1; i<=n; i++) {
-        scanf("%d",&s[i]);
+        my_scanf("%d",&s[i]);
     }
     for (i=1; i<=n; i++) {
-        scanf("%d",&grade[i]);
+        my_scanf("%d",&grade[i]);
     }
     for (i=1; i<=n; i++) {
         if (grade[i]>=90&&grade[i]<=100) {
@@ -47,6 +47,6 @@ int main_bench()
         Sum=Sum+s[i];
     }
     GPA=sum/Sum;
-    printf("%.2f",GPA);
+    my_printf("%.2f",GPA);
     return 0;
 }

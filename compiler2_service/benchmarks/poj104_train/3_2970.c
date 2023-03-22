@@ -6,10 +6,10 @@ int main_bench()
    int n,k,x[1000];
    int i,j,sign=0;
    
-   scanf("%d%d",&n,&k);
+   my_scanf("%d%d",&n,&k);
    for(i=0;i<n;i++)
    {
-      scanf("%d",&x[i]);                
+      my_scanf("%d",&x[i]);                
    }    
    
    for(i=0;i<n;i++)
@@ -27,10 +27,10 @@ int main_bench()
    }
    
    if(sign==1)
-       printf("yes");
+       my_printf("yes");
    else
-       printf("no");
+       my_printf("no");
        
-    scanf("%d%d",&n,&k);   
+    my_scanf("%d%d",&n,&k);   
    return 0;
 }

@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,i,max,sum;
 	int a[99];
-	scanf("%d%d",&n,&a[0]);
+	my_scanf("%d%d",&n,&a[0]);
 	max=a[0];
 	sum=a[0];
 	for(i=1;i<=n-1;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]>max){
 			sum=max;
 			max=a[i];
@@ -17,7 +17,7 @@ int main_bench(){
 		}
 	}
 	if(i<=99){
-		printf("%d\n%d",max,sum);
+		my_printf("%d\n%d",max,sum);
 	}
 	return 0;
 }

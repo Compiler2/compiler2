@@ -4,10 +4,10 @@ int main_bench()
 {
     int i,n,sum=0,length[1000];
     char word[1000][50];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%s",word[i]);
+                    my_scanf("%s",word[i]);
                     length[i]=strlen(word[i]);
     }
     for(i=0;i<n-1;i++)
@@ -16,19 +16,19 @@ int main_bench()
                     {
                                          if(sum+length[i]+length[i+1]+1<=80)
                                          {
-                                                                            printf("%s ",word[i]);
+                                                                            my_printf("%s ",word[i]);
                                                                             sum+=length[i]+1;
                                          }
                                          else
                                          {
-                                             printf("%s\n", word[i]);
+                                             my_printf("%s\n", word[i]);
                                              sum=0;
                                          }
                                          
                     }                                         
                     
     }
-    printf("%s", word[n-1]);
+    my_printf("%s", word[n-1]);
     return 0;
 }
     

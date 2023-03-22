@@ -3,11 +3,11 @@
 int main_bench()
 {
   int n,i,s,t,p,q;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   p=0;
   q=0;
   for(i=1;i<=n;i++){
-    scanf("%d%d",&s,&t);
+    my_scanf("%d%d",&s,&t);
     if(s==0&&t==0){
       ;
     }else if(s==0&&t==1){
@@ -29,11 +29,11 @@ int main_bench()
     }
   }
   if(p>q){
-    printf("A");
+    my_printf("A");
   }else if(p<q){
-    printf("B");
+    my_printf("B");
   }else if(p==q){
-    printf("Tie");
+    my_printf("Tie");
   }
   return 0;
 }

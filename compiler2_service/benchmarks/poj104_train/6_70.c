@@ -3,13 +3,13 @@
 main_bench()
 {
   int *a,i,m,n,k,s=0,*b,j;
-  scanf("%d",&k);
+  my_scanf("%d",&k);
   b=(int *)calloc(k,sizeof(int));
   for(i=0;i<k;i++)
   {
-     scanf("%d %d",&m,&n);
+     my_scanf("%d %d",&m,&n);
      a=(int *)calloc(m*n,sizeof(int));
-     for(j=0;j<m*n;j++)scanf("%d",a+j);
+     for(j=0;j<m*n;j++)my_scanf("%d",a+j);
      for(j=0;j<m;j++)
      { s=s+*(a+j*n)+*(a+j*n+n-1);
      }
@@ -21,7 +21,7 @@ main_bench()
      s=0;
   }
   for(i=0;i<k;i++){
-  printf("%d",*(b+i));
-  if(i<k-1)printf("\n");}
+  my_printf("%d",*(b+i));
+  if(i<k-1)my_printf("\n");}
 
 }

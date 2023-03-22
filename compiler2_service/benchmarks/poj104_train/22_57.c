@@ -4,16 +4,16 @@ int main_bench()
 {
 	unsigned int a[300],i=0,j,k=0,f=1,t,s;
 	char c;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 
 	while(c=getchar()!='\n')
 	{
 		i++;
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	if(i==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 		f=0;
 	}
 	else
@@ -24,7 +24,7 @@ int main_bench()
 				k++;
 		}
 		if(k==i)
-		{printf("No\n");
+		{my_printf("No\n");
 		f=0;}
 	}
 	if(f)
@@ -41,6 +41,6 @@ int main_bench()
 			if(a[j]>s&&a[j]!=t)
 				s=a[j];
 	
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	}	
 }

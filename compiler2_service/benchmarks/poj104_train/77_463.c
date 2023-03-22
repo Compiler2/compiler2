@@ -5,7 +5,7 @@ int main_bench()
 {
 	char a[1000],x,y;
 	int i=0,j,n,k=1;
-	while(scanf("%c",&a[i])==1)
+	while(my_scanf("%c",&a[i])==1)
 	{
 		if(k&&a[i]!=a[0])
 		{
@@ -24,7 +24,7 @@ int main_bench()
 			{
 				if(a[j]==x) 
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 					a[j]=0;
 					a[i]=0;
 					break;

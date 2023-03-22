@@ -14,12 +14,12 @@ int pass (int pre,int aft);
 int main_bench()
 {
 	int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	p = (struct missle * ) malloc ( sizeof ( struct missle ) * k );
 	int i = 0;
 	do
 	{
-		scanf("%d",&p[i].h);
+		my_scanf("%d",&p[i].h);
 		p[i].id = i;
 		i++;
 	}while ( i < k );
@@ -29,7 +29,7 @@ int main_bench()
 		j = maxn(i,k);
 	}
 
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	free(p);
 
 	return 0;

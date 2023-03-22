@@ -5,10 +5,10 @@ int main_bench()
 	int n,i;
 	int a[100]={0};
 	int s=0,q=0,z=0,l=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]<=18)
 		{
 			s+=1;
@@ -26,9 +26,9 @@ int main_bench()
 			l+=1;
 		}
 	}
-	printf("1-18: %.2lf%\n",100.0*s/n);
-	printf("19-35: %.2lf%\n",100.0*q/n);
-	printf("36-60: %.2lf%\n",100.0*z/n);
-	printf("60??: %.2lf%\n",100.0*l/n);
+	my_printf("1-18: %.2lf%\n",100.0*s/n);
+	my_printf("19-35: %.2lf%\n",100.0*q/n);
+	my_printf("36-60: %.2lf%\n",100.0*z/n);
+	my_printf("60??: %.2lf%\n",100.0*l/n);
 	return 0;
 }

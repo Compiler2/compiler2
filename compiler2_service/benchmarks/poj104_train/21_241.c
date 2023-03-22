@@ -1,14 +1,14 @@
 #include <header.h>
 
-void main_bench()
+int main_bench()
 {
 	int a[300], b[300];
 	int n, i, j;
 	float max, sum = 0, ave;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0;i < n;i ++)
 	{	
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum += a[i];
 	}
 	ave = sum / n;
@@ -33,6 +33,6 @@ void main_bench()
 			j++;
 		}
 	for(i = 0;i < j - 1;i ++)
-		printf("%d,",b[i]);
-	printf("%d",b[j - 1]);
+		my_printf("%d,",b[i]);
+	my_printf("%d",b[j - 1]);
 }

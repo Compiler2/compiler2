@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int row,line,rownow,linenow,n,i,j,a[10000];
-	scanf("%d %d",&row,&line);
+	my_scanf("%d %d",&row,&line);
 	for(j=0;j<=row*line-1;j++)
 	{
-		scanf("%d",&a[j]);
+		my_scanf("%d",&a[j]);
 	}
 	for(i=0;i<=row+line-1;i++)
 	{
@@ -15,9 +15,9 @@ int main_bench()
 		{
 			if(linenow>=line) continue;
 			n=rownow*line+linenow;
-			printf("%d\n",a[n]);
+			my_printf("%d\n",a[n]);
 		}
 	}
-	scanf("%d",&j);
+	my_scanf("%d",&j);
 	return 0;
 }

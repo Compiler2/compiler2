@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[256],b[256],c[256];
 	int i,j,lena,lenb;
-	scanf("%s%s%s",a,b,c);
+	my_scanf("%s%s%s",a,b,c);
 	lena=strlen(a);
 	lenb=strlen(b);
 	a[lena]='\0';
@@ -27,15 +27,15 @@ int main_bench()
 		}
 	}
 	if(x==0)
-		printf("%s",a);
+		my_printf("%s",a);
 	else
 	{
 		for(i=0;i<s;i++)
-			printf("%c",a[i]);
-		printf("%s",c);
+			my_printf("%c",a[i]);
+		my_printf("%s",c);
 		for(i=s+lenb;i<lena;i++)
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 	return 0;

@@ -25,10 +25,10 @@ int compare(char str1[],char str2[])
 	}
 }
 
-void main_bench()
+int main_bench()
 {
 	char str1[100],str2[100];
-	scanf("%s %s",str1,str2);
-	if(compare(str1,str2)) printf("YES\n");
-	else printf("NO\n");
+	my_scanf("%s %s",str1,str2);
+	if(compare(str1,str2)) my_printf("YES\n");
+	else my_printf("NO\n");
 }

@@ -6,7 +6,7 @@ main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
         if(c=='\n') break;
 		else
@@ -22,7 +22,7 @@ main_bench()
 	}
 	if(max<a[i]) {mid=max;max=a[i];}
 		else if(a[i]>mid&&a[i]<max) mid=a[i];
-	if(max==mid||mid==0) printf("No");
-	else printf("%d\n",mid);
+	if(max==mid||mid==0) my_printf("No");
+	else my_printf("%d\n",mid);
 	return 0;
 }

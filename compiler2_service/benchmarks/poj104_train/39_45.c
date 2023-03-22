@@ -5,11 +5,11 @@ int main_bench()
 {
 	int N,i,m,s1,s2,max=0,sum=0,t;
 	char name[20],maxname[20],t1,t2;
-	scanf ("%d",&N);
+	my_scanf ("%d",&N);
 	for(i=0;i<N;i++)
 	{
 		t=0;
-		scanf("%s %d %d %c %c %d",name,&s1,&s2,&t1,&t2,&m);
+		my_scanf("%s %d %d %c %c %d",name,&s1,&s2,&t1,&t2,&m);
 		if(s1>80 && m>=1)
 			t+=8000;
 		if(s1>85 && s2>80)
@@ -27,6 +27,6 @@ int main_bench()
 			max=t;
 		}
 	}
-	printf("%s\n%d\n%d\n",maxname,max,sum);
+	my_printf("%s\n%d\n%d\n",maxname,max,sum);
 	return 0 ;
 }

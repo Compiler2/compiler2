@@ -16,8 +16,8 @@ int main_bench()
 		if (s1[i]<s2[i]) { f=-1; break; }
 		if (s1[i]>s2[i]) { f=1; break; }
 	}
-	if (f==0) printf("=");
-	if (f==-1) printf("<");
-	if (f==1) printf(">");
+	if (f==0) my_printf("=");
+	if (f==-1) my_printf("<");
+	if (f==1) my_printf(">");
 	return 0;
 }

@@ -7,9 +7,9 @@ int main_bench()
 	int t=0,i,flag=0;
 	int len1,len2;
 	double b;
-	scanf("%lf",&a);
-	scanf("%s",dna1);
-	scanf("%s",dna2);
+	my_scanf("%lf",&a);
+	my_scanf("%s",dna1);
+	my_scanf("%s",dna2);
 	len1=strlen(dna1);
 	len2=strlen(dna2);
 	if(len1==len2)
@@ -30,11 +30,11 @@ int main_bench()
 		if(flag==0)
 		{
 		     b=(double)t/len1;
-		     if(b>a) printf("yes");
-		     if(b<=a) printf("no");
+		     if(b>a) my_printf("yes");
+		     if(b<=a) my_printf("no");
 		}
 	}
-	if(len1!=len2) printf("error");
-	if(flag==1) printf("error");
+	if(len1!=len2) my_printf("error");
+	if(flag==1) my_printf("error");
 	return 0;
 }

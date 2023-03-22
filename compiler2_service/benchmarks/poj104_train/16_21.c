@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int a,b,c,d,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 while (n>0) {
-   printf("%d",n%10);
+   my_printf("%d",n%10);
    n=n/10;
 }
 

@@ -28,5 +28,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s\n%s",a[0],a[n-1]);
+	my_printf("%s\n%s",a[0],a[n-1]);
 }

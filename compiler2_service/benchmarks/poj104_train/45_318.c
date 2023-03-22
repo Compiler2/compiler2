@@ -10,7 +10,7 @@ int main_bench()
       let2[i]=0;
    }
 
-   scanf("%s %s",let1,let2);
+   my_scanf("%s %s",let1,let2);
 
 
 
@@ -33,7 +33,7 @@ int main_bench()
 	 }
 	 if(let1[j]==0)
 	 {
-	    printf("%d\n",n);
+	    my_printf("%d\n",n);
 	    break;
 	 }
 	 else i=n;

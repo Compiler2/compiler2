@@ -25,5 +25,5 @@ int main_bench()
 	for(i=1;i<=1000;i++)
 		if(l<m[i])
 			l=m[i];
-	printf("%d %d",n+1,l);
+	my_printf("%d %d",n+1,l);
 }

@@ -9,9 +9,9 @@ int main_bench()
 	int d=0;
 	double o,p,q,r;
 	int nl[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%d",&nl[i]);
+		my_scanf("%d",&nl[i]);
 		if(nl[i]<=18){
 			a++;
 		}else if(nl[i]>=19&&nl[i]<=35){
@@ -26,7 +26,7 @@ int main_bench()
 	p=1.0*b/n*100;
 	q=1.0*c/n*100;
 	r=1.0*d/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",o,p,q,r);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",o,p,q,r);
 	return 0;
 }
 

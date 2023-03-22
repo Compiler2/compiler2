@@ -4,16 +4,16 @@
 int main_bench(){
 	int row,col,i,j,d=1,count=0,f[110][110],vis[110][110];
 	memset(vis,0,sizeof(vis));
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=1;i<=row;i++){
 		for(j=1;j<=col;j++){
-			scanf("%d",&f[i][j]);
+			my_scanf("%d",&f[i][j]);
 		}
 	}
 	
 	i=1;j=1;
 	for(;;){
-		printf("%d\n",f[i][j]);
+		my_printf("%d\n",f[i][j]);
 		count++;
 		if(count>=row*col)break;
 		vis[i][j]=1;
@@ -47,7 +47,7 @@ int main_bench(){
 		}
 		
 	}
-	scanf("%d",&i);
+	my_scanf("%d",&i);
 
 	return 0;
 }

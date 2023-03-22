@@ -4,13 +4,13 @@ int main_bench()
 {
 	int d,ma1,ma2;
 	char c;
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	ma1=d;
 	ma2=d;
 	c=getchar();
 	while(c!='\n')
 	{
-		scanf("%d",&d);
+		my_scanf("%d",&d);
 		if (d>ma1)
 		{
 		ma2=ma1;
@@ -24,7 +24,7 @@ int main_bench()
 		c=getchar();
 	}
        
-	if (ma1==ma2)  printf("No");
-	else printf("%d",ma2);
+	if (ma1==ma2)  my_printf("No");
+	else my_printf("%d",ma2);
 	return 0;
 }

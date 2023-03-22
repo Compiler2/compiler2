@@ -5,18 +5,18 @@ int main_bench(){
 	int sz[110],ys,i,l,szsh[110];
 	memset(sz,0,sizeof(sz));
 	
-	scanf("%s",s);
+	my_scanf("%s",s);
 	l=strlen(s);
 	for(i=0;i<l;i++){
 		sz[i]=s[i]-'0'+0;
 
 	}
 	if(l==1){
-		printf("0\n%d\n",sz[0]);
+		my_printf("0\n%d\n",sz[0]);
 	}
 	else{
 	if(sz[0]*10+sz[1]<=12&&l==2){
-		printf("0\n%d\n",sz[0]*10+sz[1]);
+		my_printf("0\n%d\n",sz[0]*10+sz[1]);
 	}
 
 	else {if(sz[0]*10+sz[1]<13){
@@ -39,9 +39,9 @@ int main_bench(){
 
 		}
 		for(i=2;i<l;i++){
-			printf("%d",szsh[i]);
+			my_printf("%d",szsh[i]);
 		}
-		printf("\n%d\n",ys);
+		my_printf("\n%d\n",ys);
 		
 
 
@@ -69,9 +69,9 @@ int main_bench(){
 
 		
 			for(i=1;i<l;i++){
-			printf("%d",szsh[i]);
+			my_printf("%d",szsh[i]);
 		}
-		printf("\n%d\n",ys);	
+		my_printf("\n%d\n",ys);	
 		
 	}
 	}

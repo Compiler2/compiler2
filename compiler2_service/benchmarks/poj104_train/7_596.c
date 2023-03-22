@@ -7,9 +7,9 @@ int main_bench()
 	char b[256];
 	int i,j,x=0,m,n,y=0,p;
 	char c;
-	scanf("%s",s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",s);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	n=strlen(b);
 	p=strlen(s);
 	for(i=0;i<=p-n;i++)

@@ -4,7 +4,7 @@ int main_bench()
 {
 int m;
 int i,j,k;
-scanf("%d",&m);
+my_scanf("%d",&m);
 int s[2000];
 s[0]=2;s[1]=3;
 k=1;
@@ -26,7 +26,7 @@ for(j=0;s[j]<=m/2;j++)
 for(i=0;s[i]<=m;i++)
 if(m==s[i]+s[j])
 {
-printf("%d %d\n",s[j],s[i]);
+my_printf("%d %d\n",s[j],s[i]);
 }
 }
 

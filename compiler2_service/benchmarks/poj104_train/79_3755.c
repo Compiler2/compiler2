@@ -29,7 +29,7 @@ void monkey(int n,int m)
 	for(i=1;i<=n;i++)
 		if(a[i]==1)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 }
@@ -38,7 +38,7 @@ int main_bench()
 	int i,k,m[200],n[200];
 	for(i=0;i<200;i++)
 	{
-		scanf("%d%d",&n[i],&m[i]);
+		my_scanf("%d%d",&n[i],&m[i]);
 		if(m[i]==0 && n[i]==0)
 		{
 			k=i;

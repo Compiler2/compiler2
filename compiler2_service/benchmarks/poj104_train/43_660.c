@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,a,b,j,i,sgn1=0,sgn2=0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (a=3;a<=m/2;a++)
 		{
 			for(j=2;j<=a/2+1;j++)
@@ -25,7 +25,7 @@ int main_bench()
 			}else sgn2=1;
 		}
 		if(sgn1&&sgn2)
-			printf("%d %d\n",a,m-a);
+			my_printf("%d %d\n",a,m-a);
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i  , n , m1 = 0 , m2 = 0 , j = 0 ;
-	scanf( "%d" , &n ) ;
+	my_scanf( "%d" , &n ) ;
 	for( i=0; i <n ; i ++)
 	{
-		scanf( "%d" , &j ) ;
+		my_scanf( "%d" , &j ) ;
 		if( i == 0 )
 			m1 = j ;
 		else if ( i == 1 )
@@ -23,6 +23,6 @@ int main_bench()
 			m2 = j ;
 		
 	}
-	printf("%d\n%d" , m1 , m2 ) ;
+	my_printf("%d\n%d" , m1 , m2 ) ;
 	return 0;
 }

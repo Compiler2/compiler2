@@ -4,9 +4,9 @@ int main_bench(){
 	double he[100]={0},a[100],b[100];
 	int n,i,j,sz[100];
 	a[0]=2,b[0]=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 	}
 	for(j=0;j<n;j++){
 		he[j]=2;
@@ -17,7 +17,7 @@ int main_bench(){
 	}
 	}
 	for(j=0;j<n;j++){
-	printf("%.3lf\n",he[j]);
+	my_printf("%.3lf\n",he[j]);
 	}
 	
 

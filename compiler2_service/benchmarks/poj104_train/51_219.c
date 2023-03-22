@@ -11,7 +11,7 @@ int main_bench()
 {
     char s[600];
     int n,l,a[600]={0},b[600]={0},i,j,k=0,t;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     gets(s);
     l=strlen(s);
     for(i=0;i<l+1-n;i++)
@@ -30,14 +30,14 @@ int main_bench()
         if(a[i]>t) t=a[i];
     if(t)
     {
-    printf("%d\n",t+1);
+    my_printf("%d\n",t+1);
     for(i=0;i<k;i++)
         if(a[i]==t)
         {
             for(j=b[i];j<b[i]+n;j++)
-                printf("%c",s[j]);
-            printf("\n");
+                my_printf("%c",s[j]);
+            my_printf("\n");
         }
     }
-    else printf("NO\n");
+    else my_printf("NO\n");
 }

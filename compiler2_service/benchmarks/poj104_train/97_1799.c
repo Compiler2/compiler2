@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int p,a,b,c,d,e,f,x,y,w;
-	scanf("%d",&p);
+	my_scanf("%d",&p);
 	w=p%10;
 	a=p/100;
 	x=(p-100*a)/10;
@@ -36,7 +36,7 @@ int main_bench(){
 		e=0;
 		f=w;
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 	return 0;
 }
 	

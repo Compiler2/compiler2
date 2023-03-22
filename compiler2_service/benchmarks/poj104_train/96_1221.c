@@ -37,7 +37,7 @@ int main_bench()
 {
     int n;
     char data1[450],data2[450]="13",r[450];
-    scanf("%s",data1);
+    my_scanf("%s",data1);
     int j,k;
     j=strlen(data1);
     k=strlen(data2);
@@ -57,13 +57,13 @@ int main_bench()
     r[kk-pp]=0;
     int w=strlen(r);
     for (int rr=0 ;rr< w; rr++)
-    {printf("%d",r[rr]-10);}
-    if(w==0) printf("0");
-    printf("\n");
+    {my_printf("%d",r[rr]-10);}
+    if(w==0) my_printf("0");
+    my_printf("\n");
     w=strlen(data1);int qq=1;
     for (int rr=0 ;rr< w; rr++)
-    {if(qq)if(data1[rr]!=10){printf("%d",data1[rr]-10);qq=0;}else ;else printf("%d",data1[rr]-10);}
-    if(qq) printf("0");
-    if(w==0) printf("0");
+    {if(qq)if(data1[rr]!=10){my_printf("%d",data1[rr]-10);qq=0;}else ;else my_printf("%d",data1[rr]-10);}
+    if(qq) my_printf("0");
+    if(w==0) my_printf("0");
     
 }

@@ -13,7 +13,7 @@ int main_bench()
   {
     for(j=0;j<5;j++)
     {
-    scanf("%d",&a[i][j]);                 
+    my_scanf("%d",&a[i][j]);                 
     }         
   } 
   for(i=0;i<5;i++)
@@ -56,7 +56,7 @@ int main_bench()
 		  {
 		    if(a[k][j]>=b[i][4])
 			{
-			  printf("%d %d %d\n",1+d[i][4],1+c[i][4],b[i][4]);
+			  my_printf("%d %d %d\n",1+d[i][4],1+c[i][4],b[i][4]);
 			  sum=sum+1;
 			}
 		  }
@@ -64,7 +64,7 @@ int main_bench()
   }
   if(sum==0)
   {
-    printf("not found");
+    my_printf("not found");
   }
 return 0;
 }

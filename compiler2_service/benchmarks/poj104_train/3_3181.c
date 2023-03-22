@@ -9,8 +9,8 @@ int bj(const void * x, const void * y)
 int main_bench()
 {
     int n,k,i,j,a[1000],pds=0;
-    scanf("%d%d",&n,&k);
-    for(i=0;i<n;i++) scanf("%d",&a[i]);
+    my_scanf("%d%d",&n,&k);
+    for(i=0;i<n;i++) my_scanf("%d",&a[i]);
     qsort(a,n,4,bj);
     for(i=0;i<n-1;i++)
     {
@@ -21,7 +21,7 @@ int main_bench()
          }
          if(pds==1) break;             
     }
-    if(pds==1) printf("yes");
-    else printf("no");
+    if(pds==1) my_printf("yes");
+    else my_printf("no");
     
 }

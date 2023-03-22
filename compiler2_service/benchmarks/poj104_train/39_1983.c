@@ -14,14 +14,14 @@ int main_bench()
 		int thesis;				
 		int scholarship;		
 	};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student *p = (struct student*)malloc(n * sizeof(struct student));
 	for(i=0; i<n; i++)
 	{
 		struct student *q;
 		q = p + i;
 		q->scholarship = 0;
-		scanf("%s %d %d %c %c %d",&(q->name),&(q->mark),&(q->evaluation),&(q->cadre),&(q->west),&(q->thesis));
+		my_scanf("%s %d %d %c %c %d",&(q->name),&(q->mark),&(q->evaluation),&(q->cadre),&(q->west),&(q->thesis));
 		if(q->mark>80 && q->thesis>0)
 			q->scholarship += 8000;			
 		if(q->mark>85 && q->evaluation>80)
@@ -39,5 +39,5 @@ int main_bench()
 		if((p+i)->scholarship > (p+max)->scholarship)
 			max = i;
 	}
-	printf("%s\n%d\n%d",(p+max)->name,(p+max)->scholarship,sum);
+	my_printf("%s\n%d\n%d",(p+max)->name,(p+max)->scholarship,sum);
 }

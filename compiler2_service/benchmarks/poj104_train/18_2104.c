@@ -48,12 +48,12 @@ void delete_row_col(int n)
 int main_bench()
 {
 	int n, i, j, k, sum;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
 			for (k = 0; k < n; k++)
-				scanf("%d", &a[j][k]);
+				my_scanf("%d", &a[j][k]);
 		sum = 0;
 		int num = n;
 		while (num != 1)
@@ -63,7 +63,7 @@ int main_bench()
 			delete_row_col(num);
 			num--;
 		}
-		printf("%d\n", sum);
+		my_printf("%d\n", sum);
 	}
 	return 0;
 }

@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n,i,j,k,h,l;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[10001],b[10001],c[10001];
 for(j=0;j<10001;j++){
                      c[j]=0;
                      }
 for(i=0;i<n;i++){
-                 scanf("%d %d",&(a[i]),&(b[i]));
+                 my_scanf("%d %d",&(a[i]),&(b[i]));
                  if(i>0){
                          if(b[i]>b[i-1]){
                                          k=b[i];
@@ -24,11 +24,11 @@ for(i=0;i<n;i++){
                                      for(j=j;j<=k;j++){ 
                                                       if(j==k-1){
                                                              
-                                                              printf("%d %d",h,k);
+                                                              my_printf("%d %d",h,k);
                                                               goto x;
                                                               }
                                                       if(c[j]==0){
-                                                                 printf("no");
+                                                                 my_printf("no");
                                                                  goto x;
                                                                  }
                                                         }

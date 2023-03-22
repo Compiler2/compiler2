@@ -55,8 +55,8 @@ void pai(int c[],int m,int k)
 		if(check(c,n[1])&&check(c,n[2])&&(check(c,n[3])==0)&&(check(c,n[4])==0)&&(check(c,n[5])==0)&&(c[4]!=2)&&(c[4]!=3))
 		{
 			for(g=0;g<4;g++)
-				printf("%d ",c[g]);
-			printf("%d",c[4]);
+				my_printf("%d ",c[g]);
+			my_printf("%d",c[4]);
 		}
 	}
 	if(m<k)

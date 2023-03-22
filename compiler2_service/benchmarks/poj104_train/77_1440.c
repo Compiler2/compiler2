@@ -7,7 +7,7 @@ int sex;}a[100];
 int main_bench()
 {char s[101],p;
 int i,j,L,k;
-scanf("%s",s);
+my_scanf("%s",s);
 l=strlen(s);
 p=s[0];
 for(i=0;i<l;i++)
@@ -23,6 +23,6 @@ for(i=0;i<L;i++)
 while(a[k].sex==0)
 {k++;}
 	if(a[j].sex==1&&a[k].sex==2)
-{printf("%d %d\n",a[j].num,a[k].num);
+{my_printf("%d %d\n",a[j].num,a[k].num);
 a[j].sex=a[k].sex=0;
 break;}}}}

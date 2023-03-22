@@ -25,23 +25,23 @@ int main_bench()
 	{
 		for(j=0;j<4;j++)
         {
-			scanf("%d ",&s[i][j]);
+			my_scanf("%d ",&s[i][j]);
         }
-        scanf("%d",&s[i][4]);
+        my_scanf("%d",&s[i][4]);
 	}
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	if(change(s,x,y)==1)
 	{
 		for(i=0;i<5;i++)
 	    {
 		    for(j=0;j<4;j++)
             {
-			    printf("%d ",s[i][j]);
+			    my_printf("%d ",s[i][j]);
             }
-            printf("%d",s[i][4]);
-            printf("\n");
+            my_printf("%d",s[i][4]);
+            my_printf("\n");
 	    }
 	}
 	else
-    printf("error");
+    my_printf("error");
 }

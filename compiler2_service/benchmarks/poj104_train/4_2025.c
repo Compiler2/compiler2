@@ -8,10 +8,10 @@ int main_bench()
 	int sum;
 	int a[100][100];
 	
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for (i = 0; i < row; i++) {
 		for (j = 0; j < col; j++) {
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	
@@ -20,7 +20,7 @@ int main_bench()
 			sum = j;
 			for (; ; ) {
 				if (sum >= 0 && j - sum < row) {
-					printf("%d\n",a[j - sum][sum]);
+					my_printf("%d\n",a[j - sum][sum]);
 					sum--;
 				}
 				else {
@@ -39,7 +39,7 @@ int main_bench()
 			for (; ; ) {
 				if (sum >= 0 && col - 1 + i - sum < row) {
 					if (sum <= col - 1) {
-						printf("%d\n",a[col - 1 + i - sum][sum]);
+						my_printf("%d\n",a[col - 1 + i - sum][sum]);
 					}
 					sum--;
 				}

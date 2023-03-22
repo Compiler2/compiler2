@@ -3,15 +3,15 @@
 int main_bench()
 {
     char a[100];
-    scanf("%s",a);
+    my_scanf("%s",a);
     int l;
     l=strlen(a);
     char m[100];
     int n,i;
     if(l==1)
-    printf("0\n%d\n",a[0]-'0');
+    my_printf("0\n%d\n",a[0]-'0');
     else if(l==2&&a[0]=='1'&&a[1]<='2')
-    printf("0\n%d\n",10+a[1]-'0');
+    my_printf("0\n%d\n",10+a[1]-'0');
     else 
     {
     for(i=0;;i++)
@@ -42,8 +42,8 @@ int main_bench()
              }
     }
     n=c%13;
-    printf("%s\n",m);
-    printf("%d\n",n);
+    my_printf("%s\n",m);
+    my_printf("%d\n",n);
     }
     getchar();
     getchar();

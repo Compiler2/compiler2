@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a[1000][1000];
 	int n,i,j,point1,point2,row1,colum1,row2,colum2,num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
@@ -40,7 +40,7 @@ int main_bench()
 		}
     }
 num=(row2-row1-1)*(colum2-colum1-1);
-printf("%d\n",num);
+my_printf("%d\n",num);
 return 0;
 }
 

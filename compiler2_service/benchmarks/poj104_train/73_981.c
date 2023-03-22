@@ -11,7 +11,7 @@ int ii,io,ji,jo,i,j,i1,j2,i3,j3,k,l,m,n;
   l=0; 
  for(ii=0;ii<5;ii++)
     {for(ji=0;ji<5;ji++)
-        {scanf("%d",&a[ii][ji]);
+        {my_scanf("%d",&a[ii][ji]);
         }
     }      
 for(i=0;i<5;i++)
@@ -36,11 +36,11 @@ i2[jo]=io;
 }
 for (i3=0;i3<5;i3++)
 {if(a[i3][j1[i3]]==minj[j1[i3]])
-{printf("%d %d %d",i3+1,j1[i3]+1,minj[j1[i3]]);l++;}
+{my_printf("%d %d %d",i3+1,j1[i3]+1,minj[j1[i3]]);l++;}
 }
 
 if(l==0)
-{printf("not found");}
+{my_printf("not found");}
 
 
 

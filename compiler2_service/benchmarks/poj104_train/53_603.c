@@ -7,7 +7,7 @@ del(int a[],int n)
 	int b[10000];
 	p = a+1;
 	q = a;
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for (;p < a + n;p++)
 	{
 		for(; q < p;q++)
@@ -21,7 +21,7 @@ del(int a[],int n)
 		if (q == p)
 		{
 			b[i++] = *p;
-			printf(",%d",*p);
+			my_printf(",%d",*p);
 		}
 		q = a;
 	}
@@ -31,10 +31,10 @@ main_bench()
 	int a[10000] ;
 	int n;
 	int *p = a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (;p <a+n;p++)
 	{
-	  scanf("%d",p);
+	  my_scanf("%d",p);
 	}
 	del(a,n);
 }

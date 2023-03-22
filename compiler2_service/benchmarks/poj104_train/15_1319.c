@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,sum=0,len=0,final;
 	unsigned short a[500][500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 			if (a[i][j]==0)
 				sum++;
 		}
@@ -19,7 +19,7 @@ int main_bench()
 				len++;
 		}
 	final=(sum-2*len)/2*(len-2);
-	printf("%d\n",final);
+	my_printf("%d\n",final);
 	return 0;
 }
 			

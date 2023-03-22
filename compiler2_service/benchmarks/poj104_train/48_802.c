@@ -8,7 +8,7 @@ int main_bench()
     for (i=0;i<9;i++)
     for (j=0;j<9;j++)
     {a[i][j]=0;b[i][j]=0;}
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     a[4][4]=m;
     for (t=1;t<=n;t++)
     {   for (p=0;p<9;p++)
@@ -24,8 +24,8 @@ int main_bench()
     } 
     for (i=0;i<9;i++)
     {for (j=0;j<8;j++)
-    printf("%d ",a[i][j]);
-    printf("%d\n",a[i][8]);
+    my_printf("%d ",a[i][j]);
+    my_printf("%d\n",a[i][8]);
     }
 }
 void F(int x, int y)

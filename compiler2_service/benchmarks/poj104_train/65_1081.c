@@ -4,10 +4,10 @@ int main_bench()
 {
 	int sumA=0,sumB=0,i;
 	int n,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if((a==0&&b==1)||(a==1&&b==2)||(a==2&&b==0))
 			sumA++;
 		if((b==0&&a==1)||(b==1&&a==2)||(b==2&&a==0))
@@ -16,10 +16,10 @@ int main_bench()
 			continue;
 	}
 	if(sumA>sumB)
-		printf("A");
+		my_printf("A");
 	if(sumB>sumA)
-		printf("B");
+		my_printf("B");
 	else if(sumA==sumB)
-		printf("Tie");
+		my_printf("Tie");
 	return 0;
 }

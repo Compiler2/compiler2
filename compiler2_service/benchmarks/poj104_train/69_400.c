@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[30000],b[30000];
 	int i,j,h[30000];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if(strlen(a)>=strlen(b))
 	{
 		    for(i=strlen(a)-1;i>=0;i--)
@@ -27,11 +27,11 @@ int main_bench()
 			}
 			if(h[0]>=10)
 		    {
-			    printf("1%c",h[0]+'&');
+			    my_printf("1%c",h[0]+'&');
 		    }
 		    if(h[i]>0&&h[i]<10)
 		    {
-				printf("%c",h[0]+'0');
+				my_printf("%c",h[0]+'0');
 			}
 			for(i=0;i<strlen(a);i++)
 		    {
@@ -39,11 +39,11 @@ int main_bench()
 			    break;
 		    }
 		    if(i==strlen(a))
-		    printf("0");
+		    my_printf("0");
 		    else{
 		    for(i=1;i<strlen(a);i++)
 		    {
-			    printf("%c",h[i]+'0');
+			    my_printf("%c",h[i]+'0');
 		    }}
 			
     }
@@ -69,11 +69,11 @@ int main_bench()
     
 	if(h[0]>=10)
 		    {
-			    printf("1%c",h[0]+'&');
+			    my_printf("1%c",h[0]+'&');
 		    }
 		    if(h[i]>0&&h[i]<10)
 		    {
-				printf("%c",h[0]+'0');
+				my_printf("%c",h[0]+'0');
 			}
 			for(i=0;i<strlen(b);i++)
 		    {
@@ -81,11 +81,11 @@ int main_bench()
 			    break;
 		    }
 		    if(i==strlen(b))
-		    printf("0");
+		    my_printf("0");
 		    else{
 		    for(i=1;i<strlen(b);i++)
 		    {
-			    printf("%c",h[i]+'0');
+			    my_printf("%c",h[i]+'0');
 		    }
 		}
 		}

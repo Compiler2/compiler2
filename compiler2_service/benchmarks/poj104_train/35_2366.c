@@ -28,20 +28,20 @@ int find2(int p,int q){
 
 int main_bench(){
 	int i,j;
-	scanf("%d,%d",&h,&l);
+	my_scanf("%d,%d",&h,&l);
 	for(i=0;i<h;i++){
 		for(j=0;j<l;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<h;i++){
 		for(j=0;j<l;j++){
 			if(find1(i,j)==find2(i,j)){
-				printf("%d+%d",i,j);
+				my_printf("%d+%d",i,j);
 				return 0;
 			}
 		}
 	}
-	printf("No");
+	my_printf("No");
 	return 0;
 }

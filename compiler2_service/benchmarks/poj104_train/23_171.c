@@ -22,9 +22,9 @@ int main_bench()
 	for(i=j-1;i>0;i--)
 	{
 		for(k=0;B[i][k]!='\0';k++)
-			printf("%c",B[i][k]);
-		printf(" ");
+			my_printf("%c",B[i][k]);
+		my_printf(" ");
 	}
 	for(k=0;B[i][k]!='\0';k++)
-		printf("%c",B[i][k]);
+		my_printf("%c",B[i][k]);
 }

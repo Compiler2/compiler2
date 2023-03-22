@@ -4,7 +4,7 @@ int main_bench()
 {
     int m,n,c[100],d[100],i,j,p,q,t=1,s=0;
     char a[100],b[100];
-    scanf("%d %s %d",&m,a,&n);
+    my_scanf("%d %s %d",&m,a,&n);
     for(i=0;a[i]!='\0';i++)
     {
         if(a[i]>='0'&&a[i]<='9')
@@ -21,7 +21,7 @@ int main_bench()
          t=t*m;
     }
     if(s==0)
-    printf("0");
+    my_printf("0");
     else
     {
          for(i=0;s!=0;i++)
@@ -38,9 +38,9 @@ int main_bench()
         b[i]=d[i]+'A'-10;
      }  
      for(i=q-1;i>=0;i--)
-     printf("%c",b[i]);
+     my_printf("%c",b[i]);
      }
-     printf("\n");
+     my_printf("\n");
      getchar();
      getchar();
 }

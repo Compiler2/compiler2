@@ -5,7 +5,7 @@ int main_bench()
 
 {
 	int n,a,b,c,d,place;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>=1000)
 		place=4;
     else if(n>99)
@@ -21,16 +21,16 @@ int main_bench()
 	switch(place)
 	{
 	case 4:
-		printf("%d%d%d%d\n",d,c,b,a);
+		my_printf("%d%d%d%d\n",d,c,b,a);
 		break;
     case 3:
-		printf("%d%d%d\n",d,c,b);
+		my_printf("%d%d%d\n",d,c,b);
 		break;
     case 2:
-		printf("%d%d\n",d,c);
+		my_printf("%d%d\n",d,c);
 		break;
 	case 1:
-		printf("%d\n",d);
+		my_printf("%d\n",d);
 		break;
 	}
 	return 0;

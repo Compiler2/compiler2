@@ -20,23 +20,23 @@ int main_bench()
 		{
 			sum++;
 			s=str[i];
-printf("%c %c\n",f,s);
+my_printf("%c %c\n",f,s);
 		}
 		stack[++tot]=str[i];
 		num[tot]=i;
-for (j=0;j<tot+1;j++) printf("%c",stack[j]);
-printf("%d\n",tot);
+for (j=0;j<tot+1;j++) my_printf("%c",stack[j]);
+my_printf("%d\n",tot);
 		while (tot>0 && sum>1 && stack[tot]==s && f==stack[tot-1])
 		{ 
 			girl[++pair]=num[tot--];
 			boy[pair]=num[tot--];
-printf("%d %d\n",boy[pair],girl[pair]);
+my_printf("%d %d\n",boy[pair],girl[pair]);
 		}
 	}
 	sort(boy,girl,pair);
 	for (i=0;i<pair;i++)
-		printf("%d %d\n",boy[i],girl[i]);
-	printf("%d %d",boy[pair],girl[pair]);
+		my_printf("%d %d\n",boy[i],girl[i]);
+	my_printf("%d %d",boy[pair],girl[pair]);
 	return 0;
 }
 

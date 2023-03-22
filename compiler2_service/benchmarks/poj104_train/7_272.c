@@ -19,18 +19,18 @@ int main_bench(){
 	
 	if(e==len1){
 for(m=0;m<i;m++){
-	printf("%c",sz[m]);
+	my_printf("%c",sz[m]);
 }
-printf("%s",sc);
+my_printf("%s",sc);
 for(p=i+len1;p<len;p++){
-	printf("%c",sz[p]);
+	my_printf("%c",sz[p]);
 }
 	
 break;}
 		}
 		}
 	if(e!=len1){
-		printf("%s",sz);}
+		my_printf("%s",sz);}
 		return 0;
 }
 			

@@ -3,9 +3,9 @@
 int main_bench()
 {
     int n,i,num[100],max=0,max2=0,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		if(num[i]>max&&num[i]>max2){
 			e=max;
 			max=num[i];
@@ -14,6 +14,6 @@ int main_bench()
 		
 	}
 
-	printf("%d\n%d\n",max,max2);
+	my_printf("%d\n%d\n",max,max2);
 	return 0;
 }

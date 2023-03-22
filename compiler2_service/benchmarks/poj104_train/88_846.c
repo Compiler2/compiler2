@@ -7,7 +7,7 @@ int main_bench()
   p=str;
   for (;*p!='\0';p++)
   { if (*p>='0'&&*p<='9')
-    {printf("%c",*p);k=1;}
-    else if(k=1) {printf("\n");k=0;}
+    {my_printf("%c",*p);k=1;}
+    else if(k=1) {my_printf("\n");k=0;}
   }
 }

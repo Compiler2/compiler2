@@ -4,10 +4,10 @@ int main_bench()
 {
 	char *p,a[100];
 	int n,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=0;j<n;j++)
 	{
-	scanf("%s",a);
+	my_scanf("%s",a);
 		p=a;
 		l=strlen(a);
 		if(strcmp("er",(p+l-2))==0){*(p+l-2)='\0';puts(p);}

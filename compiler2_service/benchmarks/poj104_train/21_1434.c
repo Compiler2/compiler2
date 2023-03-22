@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,t,j,x[300],s[300],k=0;
 	double a,y[300],sum=0,b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 		sum+=x[i];
 	}
 	a=sum/n;
@@ -41,9 +41,9 @@ int main_bench()
 	}
 	for(i=0;i<k-1;i++)
 	{
-		printf("%d,",s[i]);
+		my_printf("%d,",s[i]);
 	}
-	printf("%d",s[k-1]);
+	my_printf("%d",s[k-1]);
 
 	
 	return 0;

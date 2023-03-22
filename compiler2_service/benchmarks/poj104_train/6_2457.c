@@ -4,16 +4,16 @@
 int main_bench()
 {
 	int a[10000],*p=a,*q=a,n,h,l,i,j,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		p=a;
 		q=a;
-		scanf("%d %d",&h,&l);
+		my_scanf("%d %d",&h,&l);
 		
 		for(j=1;j<=h*l;j++)
 		{
-			scanf("%d",p++);
+			my_scanf("%d",p++);
 		}
 		if(h==1)
 		{
@@ -41,7 +41,7 @@ int main_bench()
 			}
 		
 		}
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 		sum=0;
 	}
 	

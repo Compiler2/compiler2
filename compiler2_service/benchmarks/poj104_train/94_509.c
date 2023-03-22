@@ -9,11 +9,11 @@ int a[500];
 
 int i,N;
 
-scanf("%d",&N);
+my_scanf("%d",&N);
 
 for(i=0;i<N;i++){
 
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
 
 }
 
@@ -59,13 +59,13 @@ for(k=0;k<j-1;k++){
 
 }for(i=0;i<j-1;i++){
 
-         printf("%d,",b[i]);
+         my_printf("%d,",b[i]);
 
 }
 
  
 
-printf("%d",b[j-1]);
+my_printf("%d",b[j-1]);
 
  
 

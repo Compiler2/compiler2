@@ -6,12 +6,12 @@ int main_bench()
 	int i=0,k=0,sum1=0;
 	double c,result;
 	double sum2=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<2;i++)
 	{
 	for(k=0;k<n;k++)
 	{
-		scanf("%d",&s[i][k]);
+		my_scanf("%d",&s[i][k]);
 	}
 	}
 	for(k=0;k<n;k++)
@@ -66,5 +66,5 @@ int main_bench()
 		sum2+=c*s[0][k];
 	}
 	result=sum2/sum1;
-	printf("%.2lf",result);
+	my_printf("%.2lf",result);
 }

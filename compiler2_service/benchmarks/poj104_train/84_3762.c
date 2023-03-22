@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int k;
-	scanf("%d\n",&k);
+	my_scanf("%d\n",&k);
     int sz[k];
 	int i,a,b;
 	for(i=0;i<k;i++){
-		scanf("%d\n",&sz[i]);
+		my_scanf("%d\n",&sz[i]);
 	}
 	a=sz[0];
 	for(i=0;i<k;i++){
@@ -20,6 +20,6 @@ int main_bench(){
 			b=sz[i];
 		}
 	}
-	printf("%d\n%d\n",a,b);
+	my_printf("%d\n%d\n",a,b);
 	return 0;
 }

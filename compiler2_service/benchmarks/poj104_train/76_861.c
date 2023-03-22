@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int m[50000],q[50000];
 	for (i=0;i<n;i++){
-		scanf("%d%d",&m[i],&q[i]);
+		my_scanf("%d%d",&m[i],&q[i]);
 	}
 	int a,b;
 	a=m[0];
@@ -35,9 +35,9 @@ int main_bench(){
 			break;
 		}
 	}
-	if(f==0){printf("no\n");
+	if(f==0){my_printf("no\n");
 	}
-	else{printf("%d %d",a,b);
+	else{my_printf("%d %d",a,b);
 	}	
 
 	return 0;

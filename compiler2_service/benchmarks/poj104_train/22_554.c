@@ -6,7 +6,7 @@ int main_bench()
 	int a[100]={0},i=0,j=0,num,t;
 	char c;
 	for(num=0,i=0;c!='\n';)
-	{scanf("%d", &a[i]);
+	{my_scanf("%d", &a[i]);
 		num++;i++;
 		c=getchar();}
 	if(num!=1)
@@ -16,9 +16,9 @@ int main_bench()
 				
 			
 		for(i=0;i<num;i++)
-		{if(a[i]!=a[i+1]){printf("%d",a[i+1]);break;}
-			else if(a[0]==a[num-1]) {printf("No");break;}}}
-			else printf("No");
+		{if(a[i]!=a[i+1]){my_printf("%d",a[i+1]);break;}
+			else if(a[0]==a[num-1]) {my_printf("No");break;}}}
+			else my_printf("No");
 			return 0;}
 	int swap(int a, int b)
 	{int t;

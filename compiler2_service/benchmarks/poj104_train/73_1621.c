@@ -6,7 +6,7 @@ int a[10][10],i,j,m,n,x[10],c[10],d[10];
 for(i=0;i<5;i++){
 	x[i]=0;
 	for(j=0;j<5;j++){
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 		if(a[i][j]>x[i]){
 		x[i]=a[i][j];}	
 	}
@@ -29,10 +29,10 @@ for(i=0;i<5;i++){
    n=n+c[i];
 }
 
-if(n==0){printf("not found");}else{
+if(n==0){my_printf("not found");}else{
 for(i=0;i<5;i++){
 	m=d[i];
-	if(c[i]==1){printf("%d %d %d\n",i+1,m+1,a[i][m]);
+	if(c[i]==1){my_printf("%d %d %d\n",i+1,m+1,a[i][m]);
 	}
 }
 }

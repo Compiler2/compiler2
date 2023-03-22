@@ -6,7 +6,7 @@ int change(int a[5][5],int m,int n)
 	if((m>4||m<0)||(n>4||n<0))
 	{
 		z=0;
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -19,7 +19,7 @@ int change(int a[5][5],int m,int n)
 		}
 		for(i=0;i<5;i++)
 		{
-			printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+			my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
 		}
 		
 	}
@@ -32,8 +32,8 @@ int main_bench()
 	for(p=0;p<5;p++)
 		{
 			for(q=0;q<5;q++)
-			{scanf("%d",&a[p][q]);}
+			{my_scanf("%d",&a[p][q]);}
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	change(a,m,n);
 }

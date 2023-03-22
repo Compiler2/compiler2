@@ -4,16 +4,16 @@ int main_bench()
 {
     int n,i,m,count=0,k=0;
 	char c[40];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c);
+		my_scanf("%s",c);
         m=strlen(c);
 		
 		count=count+m+1;
 		if(count-1>80)
 		{
-			printf("\n%s",c);
+			my_printf("\n%s",c);
 			count=m+1;
 			
 		}
@@ -21,11 +21,11 @@ int main_bench()
 		{
 			if(k==0)
 			{
-              printf("%s",c);
+              my_printf("%s",c);
 			  k=1;
 			}
 			else
-			printf(" %s",c);
+			my_printf(" %s",c);
 		}
 	}
 	return 0;

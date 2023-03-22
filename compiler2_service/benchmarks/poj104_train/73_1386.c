@@ -11,7 +11,7 @@ int main_bench()
 	{
 		for(int k=0;k<5;k++)
 		{
-			scanf("%d",&sz[i][k]);
+			my_scanf("%d",&sz[i][k]);
 			if(max<sz[i][k])
 			{
 				max=sz[i][k];
@@ -39,13 +39,13 @@ int main_bench()
 			if(sz[x][y]==m[x]&&sz[x][y]==n[y])
 			{			
 				s++;
-				printf("%d %d %d",x+1,y+1,sz[x][y]);
+				my_printf("%d %d %d",x+1,y+1,sz[x][y]);
 
 			}
 		}
 	}
 	if(s==0)
-		printf("not found");
+		my_printf("not found");
 return 0;
 }
 

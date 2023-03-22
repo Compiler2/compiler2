@@ -7,10 +7,10 @@ int main_bench()
 	int youxiao[1000];
 	double c[1000];
 	double ji,xin;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&(zong[i]),&(youxiao[i]));
+		my_scanf("%d%d",&(zong[i]),&(youxiao[i]));
 	}
 	ji=youxiao[0]*1.0/zong[0];
 	for(i=1;i<n;i++)
@@ -22,15 +22,15 @@ int main_bench()
 	{
 		if(c[i]>0.05)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}else
 		{
 			if(c[i]<(-0.05))
 			{
-				printf("worse\n");
+				my_printf("worse\n");
 			}else
 			{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	}

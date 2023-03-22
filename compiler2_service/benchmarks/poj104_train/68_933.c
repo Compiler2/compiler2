@@ -11,11 +11,11 @@ int check(int n){
 
 int main_bench(){
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=6;i<=n;i=i+2){
 		for(j=3;j<=i/2;j=j+2){
 			if(check(j)!=0&&check(i-j)!=0){
-				printf("%d=%d+%d\n",i,j,i-j);
+				my_printf("%d=%d+%d\n",i,j,i-j);
 				break;
 			}
 		}

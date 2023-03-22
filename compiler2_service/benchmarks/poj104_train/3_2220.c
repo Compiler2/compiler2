@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,k,m,e=0,sz[1000];
-	scanf("%d %d\n",&n,&k);
+	my_scanf("%d %d\n",&n,&k);
 	for(int i=0;i<n-1;i++){
-		scanf("%d ",&(sz[i]));
+		my_scanf("%d ",&(sz[i]));
 	}
-    scanf("%d",&(sz[n-1]));
+    my_scanf("%d",&(sz[n-1]));
 	for(int j=0;j<n;j++){
 		m=sz[j];
 		sz[j]=sz[0];
@@ -19,10 +19,10 @@ int main_bench()
 		}
 	}
 	if(e==0){
-		printf("no");
+		my_printf("no");
 	}
 	else if(e==1){
-		printf("yes");
+		my_printf("yes");
 	}
 return 0;
 }

@@ -24,7 +24,7 @@ int main_bench()
 		b = b + result[i]-'0';
 	}
 	if (b == 0)
-		printf("0\n");
+		my_printf("0\n");
 	else
 	{
 		i = 0;
@@ -37,9 +37,9 @@ int main_bench()
 		}
 		for (; i < a; i++)
 		{
-			printf("%c", result[i]);
+			my_printf("%c", result[i]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 }

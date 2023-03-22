@@ -5,10 +5,10 @@ int i,n,x,y,w;
 int a,b;
 a=0;b=0;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=1;i<=n;i++){
-    scanf("%d %d",&x,&y);
+    my_scanf("%d %d",&x,&y);
     w=y-x;
     if(w==1){
     a++;}else 
@@ -20,12 +20,12 @@ for(i=1;i<=n;i++){
     a++;}
 }
 if(a>b){
-printf("A");
+my_printf("A");
 }else 
 if(a<b){
-printf("B");
+my_printf("B");
 }else {
-printf("Tie");
+my_printf("Tie");
 }
 
 return 0;

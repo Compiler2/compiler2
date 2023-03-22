@@ -8,10 +8,10 @@ int main_bench()
 	{
 		for (j=0;j<=4;j++)
 		{
-			scanf("%d",&c[i][j]);
+			my_scanf("%d",&c[i][j]);
 		}
 	}
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	d=t(a,b);
 	if (d==1)
 	{
@@ -23,16 +23,16 @@ int main_bench()
 		}
 		for (i=0;i<=4;i++)
 		{
-			printf("%d",c[i][0]);
+			my_printf("%d",c[i][0]);
 			for(j=1;j<=4;j++)
 			{
-				printf(" %d",c[i][j]);
+				my_printf(" %d",c[i][j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	else
-		printf("error\n");
+		my_printf("error\n");
 }
 int t(int x,int y)
 {

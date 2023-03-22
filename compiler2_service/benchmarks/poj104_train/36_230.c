@@ -6,8 +6,8 @@ main_bench()
 	int i,j,k,l,ll,w,t;
 	char ch;
 	int c[1000],d[1000],cr[1000]={0},dr[1000]={0};
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	k=0;
 	l=strlen(a);
 	for (i=0;i<l;i++)
@@ -93,7 +93,7 @@ main_bench()
 		}
 	}
 	if (w)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }

@@ -5,7 +5,7 @@ int main_bench()
     int n,i,j,l;
     int flag;
     char a[100];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=1;i<=n;i++)
     {
         gets(a);
@@ -24,6 +24,6 @@ int main_bench()
         }
         else
         flag=0;
-        printf("%d\n",flag);
+        my_printf("%d\n",flag);
     }
 }

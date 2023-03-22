@@ -13,7 +13,7 @@ int st(int s,int t)
 
 int main_bench()
 {
-    scanf("%d%s",&n,c);
+    my_scanf("%d%s",&n,c);
     l=strlen(c);
     for(i=l-n;i>=0;i--)
     {
@@ -24,12 +24,12 @@ int main_bench()
         else if(tt==tm)f[++f[0]]=i;
     }
     if(tm>1)
-    {    printf("%d\n",tm);
-    for(i=f[0];i;i--,printf("\n"))
+    {    my_printf("%d\n",tm);
+    for(i=f[0];i;i--,my_printf("\n"))
         for(j=0;j<n;j++)
-            printf("%c",c[f[i]+j]);
+            my_printf("%c",c[f[i]+j]);
     }
     else
-        printf("NO");
+        my_printf("NO");
     return 0;
 }

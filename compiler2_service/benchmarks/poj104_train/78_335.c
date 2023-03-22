@@ -25,7 +25,7 @@ for(j=1;j<=3;j++)
      y[j]=y[t];
      y[t]=k;}
 for(i=1;i<=4;i++)
-   printf("%c %d\n",y[i],x[i]);
+   my_printf("%c %d\n",y[i],x[i]);
 }
 
       

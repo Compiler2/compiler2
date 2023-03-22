@@ -4,12 +4,12 @@ int main_bench()
 { 
 	int days_within_a_year(int a,int b);
 	int week11,week,i;
-	scanf("%d",&week11);
+	my_scanf("%d",&week11);
 	for(i=0;i<12;i++)
 	{
 		week=(days_within_a_year(i+1,13)+week11)%7;
 		if(week==5)
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 	}
 	return 0;
  

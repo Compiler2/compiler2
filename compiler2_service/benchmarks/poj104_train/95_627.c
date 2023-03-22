@@ -21,18 +21,18 @@ int main_bench()
     	b[i]=change(b[i]);
     	if(a[i]<b[i])
     	{
-    		printf("<\n");
+    		my_printf("<\n");
     		break;
     	}
     	if(a[i]>b[i])
     	{
-    		printf(">\n");
+    		my_printf(">\n");
     		break;
     	}
     	i++;
     }
-    if(i==a1&&i!=a2)    		printf("<\n");
-    if(i==a2&&i!=a1)    		printf(">\n");
-    if(i==a1&&i==a2)     		printf("=\n");
+    if(i==a1&&i!=a2)    		my_printf("<\n");
+    if(i==a2&&i!=a1)    		my_printf(">\n");
+    if(i==a1&&i==a2)     		my_printf("=\n");
     return 0;
 }

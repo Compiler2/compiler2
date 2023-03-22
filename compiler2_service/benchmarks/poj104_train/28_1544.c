@@ -21,7 +21,7 @@ int main_bench()
 		}
 		if(zfc[i]==' '&&zfc[i-1]!=' ')
 		{
-			printf("%d,",n);
+			my_printf("%d,",n);
 			n=0;
 			continue;
 		}
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		if(zfc[i]=='\0')
 		{
-			printf("%d",n);
+			my_printf("%d",n);
 		}
 	}
 	return 0;

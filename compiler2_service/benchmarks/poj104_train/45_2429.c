@@ -20,7 +20,7 @@ int check(int i, char s[50],char w[50],int m)
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	int i,m,n,j=0;
 	m=strlen(s);
 	n=strlen(w);
@@ -31,6 +31,6 @@ int main_bench()
 		}
 	}
 
-	printf("%d",i);
+	my_printf("%d",i);
 	return 0;
 }

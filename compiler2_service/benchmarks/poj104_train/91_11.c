@@ -23,7 +23,7 @@ int main_bench()
 	}
 	*(p1+time)=*(p2+time)+*(p2+0);
 
-	printf("%s\n",p1);
+	my_printf("%s\n",p1);
 
 	return 0;
 }

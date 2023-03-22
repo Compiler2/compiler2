@@ -6,7 +6,7 @@ int main_bench()
     int l2,m,k;
     int y,mon,day;
 
-    scanf("%d%d%d",&y,&mon,&day);
+    my_scanf("%d%d%d",&y,&mon,&day);
     m=0;
     while (y>40002)
         {
@@ -45,13 +45,13 @@ int main_bench()
             m%=7;
             switch (m)
             {
-                case 0:printf("Mon.\n"); break;
-                case 1:printf("Tue.\n"); break;
-                case 2:printf("Wed.\n"); break;
-                case 3:printf("Thu.\n"); break;
-                case 4:printf("Fri.\n"); break;
-                case 5:printf("Sat.\n"); break;
-                case 6:printf("Sun.\n"); break;
+                case 0:my_printf("Mon.\n"); break;
+                case 1:my_printf("Tue.\n"); break;
+                case 2:my_printf("Wed.\n"); break;
+                case 3:my_printf("Thu.\n"); break;
+                case 4:my_printf("Fri.\n"); break;
+                case 5:my_printf("Sat.\n"); break;
+                case 6:my_printf("Sun.\n"); break;
             }
 
     return 0;

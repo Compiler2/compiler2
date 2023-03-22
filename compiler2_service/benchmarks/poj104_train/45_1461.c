@@ -4,7 +4,7 @@ int main_bench(){
 	char s[2][50];
 	int i,j,len,k,sum=0;
 	for(i=0;i<2;i++){
-		scanf("%s",s[i]);
+		my_scanf("%s",s[i]);
 	}
 	k=strlen(s[1]);
 	len=strlen(s[0]);
@@ -15,7 +15,7 @@ int main_bench(){
 					sum++;
 				}
 				if(sum==(len-1)){
-					printf("%d",j);
+					my_printf("%d",j);
 				}
 			}
 		}

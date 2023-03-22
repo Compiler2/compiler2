@@ -10,7 +10,7 @@ main_bench()
       char q[10000][100];
       char *p[10000];
       void test(char *p);
-      scanf("%d\n",&s);
+      my_scanf("%d\n",&s);
       for(i=1;i<=s;i++) {gets(q[i]);}
       for(i=1;i<=s;i++) {p[i]=q[i];test(p[i]);}
 
@@ -29,7 +29,7 @@ void test(char *p)
           
      
                      for(i=0;*(b+i)!='\0';i++) {if(*(b+i)==1) {s=*(p+i);m=1;break;}}
-                     if(m==1) printf("%c\n",s);
-                     else printf("no");
+                     if(m==1) my_printf("%c\n",s);
+                     else my_printf("no");
           
 }

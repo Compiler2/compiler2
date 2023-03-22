@@ -4,10 +4,10 @@
 int main_bench()
 {
 	int i,j,n,m,t[100],k[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
 		{
 			t[i]=60;
@@ -16,7 +16,7 @@ int main_bench()
 		{
 			for(j=1;j<=m;j++)
 			{
-			   scanf("%d",&k[j]);
+			   my_scanf("%d",&k[j]);
 			}
 		    for(j=1;j<=m;j++)
 			{
@@ -40,8 +40,8 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(i>0)
-			printf("\n");
-		printf("%d",t[i]);
+			my_printf("\n");
+		my_printf("%d",t[i]);
 	}
 	return 0;
 }

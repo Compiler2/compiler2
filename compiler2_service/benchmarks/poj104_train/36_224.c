@@ -7,8 +7,8 @@ int main_bench()
 	int l1,l2,i,j;
 	int panding;
 	panding=1;
-	scanf("%s",&s1);
-	scanf("%s",&s2);
+	my_scanf("%s",&s1);
+	my_scanf("%s",&s2);
 	l1=strlen(s1);
 	l2=strlen(s2);
 	for (i=0;i<=l1-1;i++)
@@ -21,8 +21,8 @@ int main_bench()
 	for (i=0;i<=l1-1;i++)
 		if (a2[i]==0) panding=0;
     if (l1!=l2) panding=0;
-	if (panding==0) printf("NO");
-		else printf("YES");
+	if (panding==0) my_printf("NO");
+		else my_printf("YES");
 }
 
 

@@ -6,9 +6,9 @@ int main_bench(){
   max=0;
   y=0;
   m=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-     scanf("%d%d",&a[i],&b[i]);
+     my_scanf("%d%d",&a[i],&b[i]);
      
   }
   for(i=0;i<n;i++){
@@ -36,13 +36,13 @@ int main_bench(){
   for(i=0;i<n-1;i++){
     if(b[i]>m){m=b[i];}
     if(a[i+1]>m){
-      printf("no");
+      my_printf("no");
       y=1;
       break;
     }
   }
   if(y==0){
-    printf("%d %d",min,max);
+    my_printf("%d %d",min,max);
   }
   
   

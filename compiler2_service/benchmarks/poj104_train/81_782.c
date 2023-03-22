@@ -6,19 +6,19 @@ int main_bench(){
 	int n,i,j,a,b;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-	        scanf("%d",&x[i][j]);
+	        my_scanf("%d",&x[i][j]);
 		}
 	}
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	n=change(a,b);
-	if(n==0) printf("error");
+	if(n==0) my_printf("error");
 	else{
 		for(i=0;i<5;i++){
 			for(j=0;j<5;j++){
-				if(j==0) printf("%d",x[i][j]);
-				else printf(" %d",x[i][j]);
+				if(j==0) my_printf("%d",x[i][j]);
+				else my_printf(" %d",x[i][j]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	

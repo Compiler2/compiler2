@@ -8,9 +8,9 @@ struct student{
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&stu[i].number,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d%d%d",&stu[i].number,&stu[i].chinese,&stu[i].math);
 		stu[i].total=stu[i].chinese+stu[i].math;
 	}
 	int a=stu[0].total,b=stu[0].total,c=stu[0].total;
@@ -34,19 +34,19 @@ int main_bench()
 	int m=0;
 	for(i=0;i<n&&m<3;i++){
 		if(stu[i].total==a){
-			printf("%d %d\n",stu[i].number,stu[i].total);
+			my_printf("%d %d\n",stu[i].number,stu[i].total);
 			m++;
 		}
 	}
 	for(i=0;i<n&&m<3;i++){
 		if(stu[i].total==b){
-			printf("%d %d\n",stu[i].number,stu[i].total);
+			my_printf("%d %d\n",stu[i].number,stu[i].total);
 			m++;
 		}
 	}
 	for(i=0;i<n&&m<3;i++){
 		if(stu[i].total==c){
-			printf("%d %d\n",stu[i].number,stu[i].total);
+			my_printf("%d %d\n",stu[i].number,stu[i].total);
 			m++;
 		}
 	}

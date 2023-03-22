@@ -19,9 +19,9 @@ for(i=1;i<=count+1;++i)
 	if(min>*(lg+i)) {min=lg[i];j=i;}
 }
 for(i=sp[k-1]+1;i<sp[k];++i)
-	printf("%c",*(s+i));
-	printf("\n");
+	my_printf("%c",*(s+i));
+	my_printf("\n");
 for(i=sp[j-1]+1;i<sp[j];++i)
-printf("%c",*(s+i));
+my_printf("%c",*(s+i));
         return 0;
 }

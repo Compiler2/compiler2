@@ -11,7 +11,7 @@ int main_bench()
                    {"Thu."}, 
                    {"Fri."}, 
                    {"Sat."}};
-    scanf("%d %d %d",&y,&m,&d);
+    my_scanf("%d %d %d",&y,&m,&d);
     yu=(yu+(y-1)/4-(y-1)/100+(y-1)/400+((y-1)%7)*365)%7;
     if((y%100!=0&&y%4==0)||(y%400==0))
      {
@@ -23,5 +23,5 @@ int main_bench()
          for(j=0;j<m-1;j++) i+=a[j];                
      }
      yu=(i+d+yu)%7;
-     printf("%s",b[yu]);
+     my_printf("%s",b[yu]);
 } 

@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,sz[100][2],i,j,p[100]={1},hour=0,hour1[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 			
 		}
 	}
@@ -30,7 +30,7 @@ int main_bench()
 	}
 
 		
-	    printf("%d",hour);
+	    my_printf("%d",hour);
 
 
 

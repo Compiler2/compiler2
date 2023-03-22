@@ -3,11 +3,11 @@
 int m,n,a[1000],b[1000],c[2000],s,t;
 void input()
 {
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(s=0;s<m;s++)
-		scanf("%d",&a[s]);
+		my_scanf("%d",&a[s]);
 	for(s=0;s<n;s++)
-		scanf("%d",&b[s]);
+		my_scanf("%d",&b[s]);
 }
 
 void order()
@@ -43,8 +43,8 @@ void output()
 {
 	for(s=0;s<m+n;s++)
 	{
-		if(s!=m+n-1)printf("%d ",c[s]);
-		else printf("%d",c[s]);
+		if(s!=m+n-1)my_printf("%d ",c[s]);
+		else my_printf("%d",c[s]);
 	}
 }
 

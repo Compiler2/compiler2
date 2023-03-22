@@ -20,16 +20,16 @@ main_bench()
 {
 	int n, m, *p;
 	int b[10000];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(p = b;p < b + n;p++)
 	{
-		scanf("%d",p);
+		my_scanf("%d",p);
 	}
 	move (b,n,m);
 	for (p = b;p < b+n-1;p++)
 	{
-		printf("%d ",*p);
+		my_printf("%d ",*p);
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 }
 

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,l;
 	char a[1000][256],b[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -39,8 +39,8 @@ int main_bench()
 				break;
 			}
 		}	
-		printf("%s",b[i]);
-		printf("\n");
+		my_printf("%s",b[i]);
+		my_printf("\n");
 	}
 	return 0;
 }

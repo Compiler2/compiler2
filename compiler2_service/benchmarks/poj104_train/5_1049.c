@@ -10,7 +10,7 @@ int main_bench(){
 
 	char x[500],y[500],z;
 
-	scanf("%lf%c",&r,&z);
+	my_scanf("%lf%c",&r,&z);
 
 	gets(x);
 
@@ -22,7 +22,7 @@ int main_bench(){
 
 	if(a!=b){
 
-		printf("error");
+		my_printf("error");
 
 	}
 
@@ -32,7 +32,7 @@ int main_bench(){
 
 			if((x[i]!='A'&&x[i]!='T'&&x[i]!='C'&&x[i]!='G')||(y[i]!='A'&&y[i]!='T'&&y[i]!='C'&&y[i]!='G')){
 
-				printf("error");
+				my_printf("error");
 
 				n=-1;
 				break;
@@ -55,13 +55,13 @@ n=n/a;
 
 	if(n>r){
 
-		printf("yes");
+		my_printf("yes");
 
 	}
 
 	else if(n>=0){
 
-		printf("no");
+		my_printf("no");
 
 	}
 	}

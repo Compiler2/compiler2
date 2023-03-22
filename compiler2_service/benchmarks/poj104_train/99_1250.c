@@ -5,9 +5,9 @@ int main_bench(){
     int a[10000];
     int k=0,l=0,m=0,q=0;
     double s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++){
         if(a[i]<=18){
@@ -23,9 +23,9 @@ int main_bench(){
             q+=1;
         }
     }
-    printf("1-18: %.2lf%%\n",(double)100*k/n);
-    printf("19-35: %.2lf%%\n",(double)100*l/n);
-    printf("36-60: %.2lf%%\n",(double)100*m/n);
-    printf("Over60: %.2lf%%\n",(double)100*q/n);
+    my_printf("1-18: %.2lf%%\n",(double)100*k/n);
+    my_printf("19-35: %.2lf%%\n",(double)100*l/n);
+    my_printf("36-60: %.2lf%%\n",(double)100*m/n);
+    my_printf("Over60: %.2lf%%\n",(double)100*q/n);
     return 0;
 }

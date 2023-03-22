@@ -9,7 +9,7 @@ int main_bench()
 	int *re;
 	int B[200];
 	int number;
-	scanf("%d",&number);
+	my_scanf("%d",&number);
 	re=B;
 	for(i=0;i<200;i++)
 	{
@@ -26,12 +26,12 @@ int main_bench()
 			}
 		}
 		
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		for(j=0;j<m;j++)
 		{
 			for(k=0;k<n;k++)
 			{
-				scanf("%d",*(A+j)+k);
+				my_scanf("%d",*(A+j)+k);
 			}
 		}
 		pt=*A;
@@ -84,7 +84,7 @@ int main_bench()
 	re=B;
 	for(i=0;i<number;i++)
 	{
-		printf("%d\n",*(re+i));
+		my_printf("%d\n",*(re+i));
 
 	}
 	return 0;

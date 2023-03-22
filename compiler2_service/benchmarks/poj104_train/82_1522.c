@@ -4,12 +4,12 @@ int main_bench()
 {
 int n,i,s,l;
 int a,b;
-scanf("%d",&n);
+my_scanf("%d",&n);
 s=0;
 l=0;
 for(i=1;i<=n;i++)
 {
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	if(a>=90&&a<=140&&b>=60&&b<=90)
 	{
 		s=s+1;
@@ -28,8 +28,8 @@ for(i=1;i<=n;i++)
 	}
 }
 if(l>=s)
-printf("%d\n",l);
+my_printf("%d\n",l);
 else
-printf("%d\n",s);
+my_printf("%d\n",s);
 }
 

@@ -15,7 +15,7 @@ void pr(char *a)
     for(i=0,j=0;i<26;i++)
     {
         if(num[i]!=1)j++;
-        if(j==26)printf("no\n");
+        if(j==26)my_printf("no\n");
     }
     if(j!=26)
     {
@@ -23,7 +23,7 @@ void pr(char *a)
         {
             if(num[a[i]-'a']==1)
             {
-                printf("%c\n",a[i]);
+                my_printf("%c\n",a[i]);
                 break;
             }
         }
@@ -33,10 +33,10 @@ main_bench()
 {
     int t,i;
     char a[100000];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
-        scanf("%s",a);
+        my_scanf("%s",a);
         pr(a);
     }
 }

@@ -3,7 +3,7 @@
 main_bench()
 {
       int t,m,j,b[100001],k;
-      scanf("%d\n",&t);
+      my_scanf("%d\n",&t);
       for(j=0;j<100000;j++)
          b[j]=1;
       char str[100001];
@@ -11,7 +11,7 @@ main_bench()
       {
                for(j=0;;j++)
                {
-                       scanf("%c",&str[j]);
+                       my_scanf("%c",&str[j]);
                        if(str[j]=='\n') 
                        break;
                }
@@ -31,12 +31,12 @@ main_bench()
                {
                    if(b[j]==1)
                    {
-                              printf("%c\n",str[j]);
+                              my_printf("%c\n",str[j]);
                               break;
                    }
                }
                if(j==m)
-               printf("no\n");
+               my_printf("no\n");
                for(j=0;j<100000;j++)
                   b[j]=1;
       }                 

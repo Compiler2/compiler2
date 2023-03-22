@@ -6,7 +6,7 @@ int fx(int n)
 	i=0;
 	if(n==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
 	while(n!=0)
 	{
@@ -25,10 +25,10 @@ int fx(int n)
 		}
 		if(j>=k)
 		{
-			printf("%d",a[j]);
+			my_printf("%d",a[j]);
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 int main_bench()
@@ -36,7 +36,7 @@ int main_bench()
 	int i,b[6],n,k;
 	for(i=0;i<6;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		b[i]=n;
 	}
 	for(i=0;i<6;i++)
@@ -44,7 +44,7 @@ int main_bench()
 		if(b[i]<0)
 		{
 			k=abs(b[i]);
-			printf("-");
+			my_printf("-");
 			fx(k);
 		}
 		else

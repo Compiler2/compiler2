@@ -5,11 +5,11 @@ main_bench()
   int i,j,d,b,s;
   int a[10000];
   char c[10000];
-  scanf("%d %s %d",&d,c,&b);
+  my_scanf("%d %s %d",&d,c,&b);
   
   
   s=0;
-  if(c[0]-'0'==0){printf("0");}
+  if(c[0]-'0'==0){my_printf("0");}
   else
   {for(i=0;c[i]!='\0';i++)
   {
@@ -44,7 +44,7 @@ main_bench()
   
   for(j=i-1;j>=0;j--)   
   {
-   printf("%c",c[j]);                   
+   my_printf("%c",c[j]);                   
   }
 }    
 getchar();

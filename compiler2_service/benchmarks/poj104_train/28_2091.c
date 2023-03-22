@@ -23,8 +23,8 @@ int main_bench(){
   }
  }
  for(i=0;i<k-1;i++){
-   printf("%d,",b[i]);
+   my_printf("%d,",b[i]);
  }
- printf("%d",b[k-1]);
+ my_printf("%d",b[k-1]);
  return 0;
 }

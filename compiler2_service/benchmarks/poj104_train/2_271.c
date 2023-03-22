@@ -13,7 +13,7 @@ int main_bench()
 		int count;
 	}zuozhen[26];
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<26;i++)
 	{
 		zuozhen[i].w='A'+i;
@@ -23,7 +23,7 @@ int main_bench()
 	int m,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&bookn[i].num,bookn[i].writer);
+		my_scanf("%d %s",&bookn[i].num,bookn[i].writer);
 		m=strlen(bookn[i].writer);
 		for(j=0;j<m;j++)
 		{
@@ -38,8 +38,8 @@ int main_bench()
 		if(a.count<zuozhen[i].count)
 			a=zuozhen[i];
 	}
-	printf("%c\n",a.w);
-	printf("%d\n",a.count);
+	my_printf("%c\n",a.w);
+	my_printf("%d\n",a.count);
 	int t;
 	for(i=0;i<n;i++)
 	{
@@ -47,7 +47,7 @@ int main_bench()
 		for(j=0;j<t;j++)
 		{
 			if(bookn[i].writer[j]==a.w)
-				printf("%d\n",bookn[i].num);
+				my_printf("%d\n",bookn[i].num);
 		}
 	}
 }

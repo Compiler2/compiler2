@@ -4,9 +4,9 @@ int main_bench()
 {
     int a,b,x,m,l,g,i,j,k,y,z;
     char c[40];
-    scanf("%d %s %d",&a,c,&b);
+    my_scanf("%d %s %d",&a,c,&b);
     l=strlen(c);
-    if (c[0]=='0') printf("0\n");
+    if (c[0]=='0') my_printf("0\n");
     else
     {
      for (i=0;i<l;i++)     
@@ -41,6 +41,6 @@ int main_bench()
            f[k-1-y]=e[y]-10+'A';
       }
       f[k]='\0';
-      printf("%s",f);
+      my_printf("%s",f);
    }
 }

@@ -4,7 +4,7 @@ int num[9][9],im[9][9];
 main_bench()
 {
 	int i,j,k,m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	num[4][4]=m;
 	for(i=0;i<n;i++)
 	{
@@ -34,7 +34,7 @@ main_bench()
 	{
 		for(k=0;k<9;k++)
 		{
-			printf("%d%c",num[j][k],k==8?'\n':' ');
+			my_printf("%d%c",num[j][k],k==8?'\n':' ');
 		}
 	}
 }

@@ -28,9 +28,9 @@ int main_bench()
 	}
 	for(i=0;i<=j;i++)
 		if(c[i]==m) break;
-		printf("%s\n",b[i]);
+		my_printf("%s\n",b[i]);
 	for(i=0;i<=j;i++)
 		if(c[i]==n) break;
-		printf("%s\n",b[i]);
+		my_printf("%s\n",b[i]);
         return 0;
 }

@@ -13,6 +13,6 @@ main_bench()
 	}
 	*(pb+strlen(a)-1)=*(pa+strlen(a)-1)+*pa;
 	for(i=0;i<strlen(a);i++){
-		printf("%c",*(pb+i));
+		my_printf("%c",*(pb+i));
 	}
 }

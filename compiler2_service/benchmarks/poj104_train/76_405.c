@@ -26,10 +26,10 @@ int main_bench()
 	int n;
 	int i;
 	int left, right;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; ++i)
 	{
-		scanf("%d %d", &in[i].l, &in[i].r);
+		my_scanf("%d %d", &in[i].l, &in[i].r);
 	}
 	qsort(in,n,sizeof(in[0]),mysort);
 
@@ -48,9 +48,9 @@ int main_bench()
 	}
 	if(i == n)
 	{
-		printf("%d %d", left, right);
+		my_printf("%d %d", left, right);
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	return 0;
 

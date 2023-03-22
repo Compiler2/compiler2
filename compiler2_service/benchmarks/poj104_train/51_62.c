@@ -5,8 +5,8 @@ int main_bench(){
     char a[500][6];
     char c[502];
     int b[500];
-    scanf("%d",&n);
-    scanf("%s",&c);
+    my_scanf("%d",&n);
+    my_scanf("%s",&c);
     len=0;
     for(i=0;c[i]!='\0';i++)
     len++;
@@ -41,14 +41,14 @@ if(b[i]>max)
 max=b[i];
 }
 if(max!=1){
-printf("%d\n",max);
+my_printf("%d\n",max);
 for(i=0;i<=len-n;i++){
 if(b[i]==max){
-printf("%s\n",a[i]);
+my_printf("%s\n",a[i]);
 }
 }}
 else
-printf("NO\n");
-scanf("%d",&n);
+my_printf("NO\n");
+my_scanf("%d",&n);
 return 0;
 }

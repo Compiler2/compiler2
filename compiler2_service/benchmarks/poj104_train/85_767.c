@@ -7,10 +7,10 @@ int main_bench()
 	char sample2[64];
 	int n;
 	int i,j,k,tmp1,tmp2,tmp3,length;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",str[i]);
+		my_scanf("%s",str[i]);
 	}
 	for(i=0;i<26;i++)
 		sample1[i]=i+65;
@@ -35,7 +35,7 @@ int main_bench()
 		}
 		if(tmp1==1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 			continue;
 		}
 		for(j=1,tmp3=1;j<length;j++)
@@ -50,7 +50,7 @@ int main_bench()
 			}
 			if(tmp2==1)
 			{
-				printf("no\n");
+				my_printf("no\n");
 				tmp3=0;
 			}
 			else
@@ -61,7 +61,7 @@ int main_bench()
 				break;
 		}
 		if(j==length)
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

@@ -6,7 +6,7 @@ int main_bench()
 	char h;
 	long s=0,p;
 	int i,t,m,n,j,q;
-	scanf("%d%s%d",&m,a,&n);
+	my_scanf("%d%s%d",&m,a,&n);
     t=strlen(a);
     for(i=0;i<t;i++)
 	{
@@ -38,6 +38,6 @@ int main_bench()
 			break;
 	}
 	b[i+1]='\0';
-	printf("%s",b);
+	my_printf("%s",b);
 	return 0;
 }

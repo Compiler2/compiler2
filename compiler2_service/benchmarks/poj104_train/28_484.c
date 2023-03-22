@@ -19,7 +19,7 @@ int main_bench()
 	for(e=0;e<d;e++)
 	{
 		if(s1[e]!=0)
-			printf("%d,",s1[e]);
+			my_printf("%d,",s1[e]);
 	}
-	printf("%d",b);
+	my_printf("%d",b);
 }

@@ -11,8 +11,8 @@ int hws(int m)
 int main_bench()
 {
   int m,n,i,k=0,a[100];
-   scanf("%d %d",&m,&n);
+   my_scanf("%d %d",&m,&n);
   for(i=m;i<=n;i++)     {if((sushu(i)==1)&&(hws(i)==1))    {a[k]=i;k++;}}
-  if(k==0)   printf("no");
-  else  {for(i=0;i<k;i++)  { printf("%d",a[i]);  if(i!=(k-1))   printf(",");}}
+  if(k==0)   my_printf("no");
+  else  {for(i=0;i<k;i++)  { my_printf("%d",a[i]);  if(i!=(k-1))   my_printf(",");}}
 }

@@ -11,7 +11,7 @@ int main_bench()
     unsigned int  y;
 	td=0; k=0;
 	
-    scanf ("%d%d%d",&y,&m,&d);
+    my_scanf ("%d%d%d",&y,&m,&d);
 
 	a1=(y-1)/100;
 	a2=(y-1)/400;
@@ -40,7 +40,7 @@ int main_bench()
         if (td==0) td=7;
     
 
-    printf("%s\n",days[td-1]);
+    my_printf("%s\n",days[td-1]);
    return 0;
 
 }

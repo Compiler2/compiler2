@@ -4,10 +4,10 @@ int max(char a,char b[][50],int l);
 int main_bench()
 {int l,i;
     char a[50],b[2][50]={'\0'};
-    scanf("%s%s",a,b[0]);
+    my_scanf("%s%s",a,b[0]);
     l=strlen(a);
     if(l!=strlen(b[0]))
-    printf("NO");
+    my_printf("NO");
     else
     {
         for(i=0;i<=l-1;i++)
@@ -15,9 +15,9 @@ int main_bench()
         break;
         
         if(i==l)
-        printf("YES");
+        my_printf("YES");
         else
-        printf("NO");
+        my_printf("NO");
 }
     return 0;
 }

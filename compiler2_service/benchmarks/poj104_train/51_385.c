@@ -4,8 +4,8 @@ void com(char a[][5],int n,int k);
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
-  scanf("\n");
+  my_scanf("%d",&n);
+  my_scanf("\n");
   char c[500];
   gets(c);
   char a[500][5];
@@ -54,7 +54,7 @@ void com(char a[][5],int n,int k)
   }
   if(max>1)
   {
-  printf("%d",max);
+  my_printf("%d",max);
   
   for(i=0;i<k-n+1;i++)
   {
@@ -62,11 +62,11 @@ void com(char a[][5],int n,int k)
     if(fre[i]==max) 
 	{
 		putchar('\n');
-		printf("%s",a[i]);
+		my_printf("%s",a[i]);
 	}
   }
   }
   else
-	  printf("NO");
+	  my_printf("NO");
 
 }

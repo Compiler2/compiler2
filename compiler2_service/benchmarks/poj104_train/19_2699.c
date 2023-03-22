@@ -10,8 +10,8 @@ int main_bench(){
 	unsigned int i;
 	int index;
 	gets(s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	index=0;
 	for(i=0;i<strlen(s);i++){		
 		if(s[i]==' ' || (i==strlen(s)-1)){
@@ -20,13 +20,13 @@ int main_bench(){
 			buf[index]='\0';
 			index=0;
 			if(!strcmp(buf,a)){
-				printf("%s",b);
+				my_printf("%s",b);
 			}
 			else{
-				printf("%s",buf);
+				my_printf("%s",buf);
 			}
 			if(i!=strlen(s)-1){
-				printf(" ");
+				my_printf(" ");
 			}
 		}
 		else{

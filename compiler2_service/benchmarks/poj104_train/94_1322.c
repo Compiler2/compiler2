@@ -2,9 +2,9 @@
 
 int main_bench(){
     int N,a[500],t,i,b[500],p;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N;i++){
-    scanf("%d ",&a[i]);
+    my_scanf("%d ",&a[i]);
 }
 for(i=0;i<N;i++){
 if(a[i]%2==1){
@@ -18,7 +18,7 @@ b[p+1]=b[p];
 b[p]=t;}}}
 for(i=0;i<N;i++){
 if(b[i]>0){
-printf("%d,",b[i]);}}
-printf("%d",b[N]);
+my_printf("%d,",b[i]);}}
+my_printf("%d",b[N]);
 return 0;
 }

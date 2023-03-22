@@ -8,13 +8,13 @@ int main_bench()
 	int b[300]={0};
 	int ans[300]={0};
 	char z[300];
-	scanf("%s",z);
+	my_scanf("%s",z);
 	len=strlen(z);
 	for(i=0;i<len;i++)
 	{
 		a[len-1-i]=z[i]-'0';
 	}
-	scanf("%s",z);
+	my_scanf("%s",z);
 	len=strlen(z);
 	for(i=0;i<len;i++)
 	{
@@ -42,14 +42,14 @@ int main_bench()
 		}
 		if(mid==1)
 		{
-			printf("%d",ans[i]);
+			my_printf("%d",ans[i]);
 		}
 	}
 	if(mid==0)
 	{
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

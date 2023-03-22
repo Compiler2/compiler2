@@ -36,15 +36,15 @@ int main_bench()
 	    if(m>=p-1)
 		{
 		    for(j=0;j<k;j++){
-			    printf("%c",a[j]);
+			    my_printf("%c",a[j]);
 			}
 		    for(j=0;c[j]!='\0';j++){
-			    printf("%c",c[j]);
+			    my_printf("%c",c[j]);
 			}
 		    for(j=k+m+1;a[j]!='\0';j++){
-			    printf("%c",a[j]);
+			    my_printf("%c",a[j]);
 			}
-		     printf("\0");
+		     my_printf("\0");
 		     n=1;
 		}
 	    if(n==1)
@@ -53,7 +53,7 @@ int main_bench()
 	
     if(n==0)
 	{
-		printf("%s",a);
+		my_printf("%s",a);
 	}
 	return 0;
 }

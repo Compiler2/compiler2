@@ -9,7 +9,7 @@ long ans[maxL+1];
 
 main_bench(){
     long i,l,x;
-    scanf("%ld%s%ld",&a,str,&b);
+    my_scanf("%ld%s%ld",&a,str,&b);
     l=strlen(str);
     x=0;
     for(i=0;i<l;i++){
@@ -29,8 +29,8 @@ main_bench(){
     }
     if(l==0)ans[++l]=0;
     for(i=l-1;i>=0;i--){
-	if(ans[i]<10)printf("%ld",ans[i]);
-	else printf("%c",ans[i]-10+'A');
+	if(ans[i]<10)my_printf("%ld",ans[i]);
+	else my_printf("%c",ans[i]-10+'A');
     }
     return 0;
 }

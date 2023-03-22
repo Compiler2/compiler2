@@ -5,7 +5,7 @@ int main_bench()
 	int n,i,j,k,m;
 	char a[50000];
 	int b[20001];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	k=strlen(a);
 	i=0;
@@ -17,7 +17,7 @@ int main_bench()
 		j=j+1;
 	}
 	j=j-1;
-	printf("%d",b[1]);
+	my_printf("%d",b[1]);
 	i=2;
 	while(i<=j)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 			if(b[i]==b[m]) break;
 			m=m+1;
 		}
-		if(m==i) printf(" %d",b[i]);
+		if(m==i) my_printf(" %d",b[i]);
 		i=i+1;
 	}
 	return 0;

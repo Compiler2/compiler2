@@ -4,11 +4,11 @@ int main_bench()
 {
 	int sz[200][3];
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int i,j;
 	for(i=0;i<n;i++){
 		for(j=0;j<3;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	
@@ -36,9 +36,9 @@ int main_bench()
 		
 			
 			if(total%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-					printf("NO\n");
+					my_printf("NO\n");
 		}
 			
 		
@@ -54,9 +54,9 @@ int main_bench()
 			 }
 		
 				 if(total%7==0)
-					printf("YES\n");
+					my_printf("YES\n");
 				else
-					printf("NO\n");
+					my_printf("NO\n");
 		}
 			
 	}

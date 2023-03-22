@@ -13,10 +13,10 @@ struct scholarship
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].mark,&stu[i].judge,&stu[i].cadre,&stu[i].west,&stu[i].paper);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].mark,&stu[i].judge,&stu[i].cadre,&stu[i].west,&stu[i].paper);
 		stu[i].ss=0;
 		if(stu[i].mark>80&&stu[i].paper>=1){
 			stu[i].ss=stu[i].ss+8000;
@@ -44,6 +44,6 @@ int main_bench()
 		}
 		total=total+stu[i].ss;
 	}
-	printf("%s\n%d\n%d\n",stu[a].name,stu[a].ss,total);
+	my_printf("%s\n%d\n%d\n",stu[a].name,stu[a].ss,total);
 	return 0;
 }

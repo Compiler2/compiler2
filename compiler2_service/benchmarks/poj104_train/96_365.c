@@ -5,9 +5,9 @@ int main_bench()
 {
 char n[101],shang[100];
 int a,i;
-scanf("%s",n);
-if (n[1]=='\0') {printf ("0\n%s",n);}
-else if (n[0]=='1' && n[1]<'3' && n[2]=='\0') {printf ("0\n%s",n);}
+my_scanf("%s",n);
+if (n[1]=='\0') {my_printf ("0\n%s",n);}
+else if (n[0]=='1' && n[1]<'3' && n[2]=='\0') {my_printf ("0\n%s",n);}
 else
 {
   a=n[0]-'0';
@@ -34,7 +34,7 @@ else
       }
   shang[i]='\0';
   }
-printf("%s\n%d",shang,a);
+my_printf("%s\n%d",shang,a);
 }
 return 0;
 }

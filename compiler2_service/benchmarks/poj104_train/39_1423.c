@@ -33,10 +33,10 @@ int main_bench()
 	int n,c[100],i,sum=0,max,k;
 	struct student stu[100];
 	 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].exam,&stu[i].chara,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
+	my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].exam,&stu[i].chara,&stu[i].ganbu,&stu[i].west,&stu[i].paper);
 	}
 
 	for(i=0;i<n;i++)
@@ -56,8 +56,8 @@ int main_bench()
 		}
 	}
 
-	printf("%s\n",stu[k].name);
-	printf("%d\n",c[k]);
-	printf("%d\n",sum);
+	my_printf("%s\n",stu[k].name);
+	my_printf("%d\n",c[k]);
+	my_printf("%d\n",sum);
 
 }

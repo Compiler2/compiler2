@@ -3,10 +3,10 @@
 int main_bench(){
 int n,i,o=0,p=0,q=0,s=0,sum=0;
 double a,b,c,d;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int nl[n];
 for(i=0;i<n;i++){
-  scanf("%d",&nl[i]);
+  my_scanf("%d",&nl[i]);
 }
 for(i=0;i<n;i++){
   if((nl[i])>=1&&(nl[i])<=18) {
@@ -27,9 +27,9 @@ for(i=0;i<n;i++){
    b=(100.00*p)/sum;
    c=(100.00*q)/sum;
    d=(100.00*s)/sum;
-   printf("1-18: %.2lf%\n",a);
-   printf("19-35: %.2lf%\n",b);
-   printf("36-60: %.2lf%\n",c);
-   printf("Over60: %.2lf%\n",d);
+   my_printf("1-18: %.2lf%\n",a);
+   my_printf("19-35: %.2lf%\n",b);
+   my_printf("36-60: %.2lf%\n",c);
+   my_printf("Over60: %.2lf%\n",d);
 return 0;
 }

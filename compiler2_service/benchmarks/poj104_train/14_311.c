@@ -15,10 +15,10 @@ int main_bench()
     };
     struct student stu[100000];
     int a[100000],n,l,j,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=0;i<n;i++)
     {
-        scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].maths);
+        my_scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].maths);
         a[i]=stu[i].chinese+stu[i].maths;
     }
     qsort(a,n,sizeof(a[0]),cmp);
@@ -37,7 +37,7 @@ int main_bench()
             if (a[n-3]==stu[f].chinese+stu[f].maths&&(f+1)!=j&&(f+1)!=l)
             {k=stu[f].num;}
     }
-    printf("%d %d\n",l,a[n-1]);
-    printf("%d %d\n",j,a[n-2]);
-    printf("%d %d\n",k,a[n-3]);
+    my_printf("%d %d\n",l,a[n-1]);
+    my_printf("%d %d\n",j,a[n-2]);
+    my_printf("%d %d\n",k,a[n-3]);
 }

@@ -7,7 +7,7 @@ int main_bench()
      gets(a);
      char *p =a;
      char *q =b;
-     scanf("%s",&a);
+     my_scanf("%s",&a);
 
      int n=strlen(a);
      b[n]='\0';
@@ -18,6 +18,6 @@ int main_bench()
                        q++;
      }
      *q= *a+ *p;
-     printf("%s",b);
+     my_printf("%s",b);
      
 }

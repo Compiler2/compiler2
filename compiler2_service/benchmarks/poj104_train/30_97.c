@@ -21,13 +21,13 @@ int main_bench()
             j /= 10;
         }
     }
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     answer = 0;
     for (i=1; i<=total; i++)
     {
         if (n * n < ans[i]) break;
         answer += ans[i];
     }
-    printf("%d", answer);
+    my_printf("%d", answer);
     return 0;
 }

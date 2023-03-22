@@ -7,7 +7,7 @@ int main_bench()
 {
     char buffer[101]={0};
 	gets(buffer);
-	printf("%s\n",strqp(buffer));
+	my_printf("%s\n",strqp(buffer));
 	return 0;
 }
 

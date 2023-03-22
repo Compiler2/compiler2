@@ -19,7 +19,7 @@ int main_bench()
 	}
 	for(k=0;k<i;k++)
 	{
-	printf("%c",tihuan[k]);
+	my_printf("%c",tihuan[k]);
     }
 	return 0;
 }

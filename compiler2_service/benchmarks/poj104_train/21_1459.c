@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,max;
 	float average,sum=0,distance,maxdistance,temp,sign;
 	unsigned int num[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 		sum=sum+num[i];
 	}
 	average=sum/n;
@@ -36,7 +36,7 @@ int main_bench()
 		distance=(num[i]-average>0)?(num[i]-average):(average-num[i]);
 		if(distance==maxdistance)
 		{
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 			break;
 		}
 	}
@@ -45,11 +45,11 @@ int main_bench()
 		distance=(num[i]-average>0)?(num[i]-average):(average-num[i]);
 		if(distance==maxdistance)
 		{
-			printf(",%d",num[i]);
+			my_printf(",%d",num[i]);
 			break;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

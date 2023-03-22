@@ -7,7 +7,7 @@ int main_bench()
 	int i,j,k,m,n,t=1;
 	gets(s);
 	n=strlen(s);
-	scanf("%s\n%s",a,b);
+	my_scanf("%s\n%s",a,b);
 	for(i=0;k<=n-1;i++,k++)
 	{
 		for(j=0;k<=n-1;j++,k++)
@@ -33,8 +33,8 @@ int main_bench()
 	
 	p[i]=b;
 	for(i=0;i<t-1;i++)
-		printf("%s ",p[i]);
-	printf("%s",p[t-1]);
+		my_printf("%s ",p[i]);
+	my_printf("%s",p[t-1]);
 }
 	
 	

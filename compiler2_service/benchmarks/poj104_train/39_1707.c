@@ -7,15 +7,15 @@ int main_bench()
 	int k,m,n,p,i,amount,max,sum;
          max=0;
 	 sum=0;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 
 	{
 		
-		scanf("%s",s);
-		scanf("%d%d ",&m,&n);
-		scanf("%c %c",&a,&b);
-		scanf("%d",&p);
+		my_scanf("%s",s);
+		my_scanf("%d%d ",&m,&n);
+		my_scanf("%c %c",&a,&b);
+		my_scanf("%d",&p);
 		amount=0;
                 if((m>80) && (p>=1))
 			amount+=8000;
@@ -39,9 +39,9 @@ int main_bench()
 	}
 	
 	
-		printf("%s\n",q);
-		printf("%d\n",max);
-			printf("%d\n",sum);
+		my_printf("%s\n",q);
+		my_printf("%d\n",max);
+			my_printf("%d\n",sum);
 	return 0;
 }
 

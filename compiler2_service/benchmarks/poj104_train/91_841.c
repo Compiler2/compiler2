@@ -10,9 +10,9 @@ int main_bench()
 	int i;
 	for(i=0;i<len-1;i++)
 	{
-		printf("%c",*p+*(p+1));
+		my_printf("%c",*p+*(p+1));
 		p++;
 	}
-	printf("%c",*p+*string);
+	my_printf("%c",*p+*string);
 	return 0;
 }

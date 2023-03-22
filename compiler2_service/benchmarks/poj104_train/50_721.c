@@ -2,7 +2,7 @@
 
 int main_bench(){
    int w,i,yue,tian,day;
-      scanf("%d",&w);
+      my_scanf("%d",&w);
        for(i=1;i<=365;i++){
            tian=i;
               if(i>=1&&i<=31){
@@ -45,7 +45,7 @@ int main_bench(){
                
                   day=(i+w-1)%7;
             if(tian==13&&day==5){
-                printf("%d\n",yue);
+                my_printf("%d\n",yue);
               }
           }
               return 0;

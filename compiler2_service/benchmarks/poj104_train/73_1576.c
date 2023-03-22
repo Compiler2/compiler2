@@ -4,7 +4,7 @@ int main_bench() {
 	int a[5][5],c,b,i,j,e,f;                   
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<5;i++){
@@ -22,7 +22,7 @@ int main_bench() {
 				}
 			}
 			if(e==5&&f==5){
-				printf("%d %d %d",i+1,j+1,a[i][j]);
+				my_printf("%d %d %d",i+1,j+1,a[i][j]);
 				break ;
 			}
 		}
@@ -31,7 +31,7 @@ int main_bench() {
 		}
 	}
 	if(e!=5||f!=5){
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

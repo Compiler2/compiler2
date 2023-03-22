@@ -5,8 +5,8 @@ int main_bench()
 {
 	char a[250];
 	char b[250];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int i = 0;
 	int j = 0;
 	while ( a[i] != '\0' )
@@ -77,16 +77,16 @@ int main_bench()
 	{
 		if ( c[k] != '0' && count == 0 )
 		{
-			printf("%c",c[k]);
+			my_printf("%c",c[k]);
 			count++;
 			continue;
 		}
 		if ( count != 0 )
 		{
-			printf("%c",c[k]);
+			my_printf("%c",c[k]);
 		}
 		
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

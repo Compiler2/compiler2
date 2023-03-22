@@ -3,12 +3,12 @@
 main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char ID[n][10];
     int age[n];
     for(i=0;i<=n-1;i++)
     {
-      scanf("%s %d",ID[i],&age[i]);
+      my_scanf("%s %d",ID[i],&age[i]);
     }
     char ID2[n][10];
     int b[n];
@@ -39,7 +39,7 @@ main_bench()
       }
      }
      for(i=0;i<=j-1;i++)
-     printf("%s\n",ID2[i]);
+     my_printf("%s\n",ID2[i]);
      char ID3[n][10];
      int m=0;
      for(i=0;i<n;i++)
@@ -51,5 +51,5 @@ main_bench()
        }
       }
       for(i=0;i<=m-1;i++)
-      printf("%s\n",ID3[i]);
+      my_printf("%s\n",ID3[i]);
               }

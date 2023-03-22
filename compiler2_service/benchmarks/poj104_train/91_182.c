@@ -13,7 +13,7 @@ main_bench()
    {*(q+i)=*(p+i+1)+*(p+i);}
   *(q+k-1)=*p+*(p+k-1);
   for(i=0;i<k;i++)
-   printf("%c",*(q+i));
+   my_printf("%c",*(q+i));
 }
   
   

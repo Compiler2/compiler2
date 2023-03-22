@@ -6,24 +6,24 @@ main_bench()
 	    a=3;
 		b=5;
 		c=7;
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	if(d%a==0)
 	 if(d%b==0)
 	  if(d%c==0)
-	  printf("%d %d %d",a,b,c);
-	  else printf("%d %d",a,b);
+	  my_printf("%d %d %d",a,b,c);
+	  else my_printf("%d %d",a,b);
 	else
 		if(d%c==0)
-			printf("%d %d",a,c);
+			my_printf("%d %d",a,c);
          else
-			 printf("%d",a);
+			 my_printf("%d",a);
 	else
 		if(d%b==0)
 			if(d%c==0)
-				printf("%d %d",b,c);
-			else printf("%d",b);
+				my_printf("%d %d",b,c);
+			else my_printf("%d",b);
 		else 
 			if(d%c==0)
-				printf("%d",c);
-            else printf("n");
+				my_printf("%d",c);
+            else my_printf("n");
 }

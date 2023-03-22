@@ -7,8 +7,8 @@ int main_bench()
  gets(a);
  while(*(a+i)!='\0')
   {
-    if(*(a+i)>='0'&&*(a+i)<='9') {printf("%c",*(a+i));m=1;}
-    else if(m==1&&*(a+i+1)>='0'&&*(a+i+1)<='9') printf("\n");
+    if(*(a+i)>='0'&&*(a+i)<='9') {my_printf("%c",*(a+i));m=1;}
+    else if(m==1&&*(a+i+1)>='0'&&*(a+i+1)<='9') my_printf("\n");
     i++;
    }
 }

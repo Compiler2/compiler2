@@ -3,11 +3,11 @@
 int main_bench(){
     int m,n,i,j,a,b;
     a=0;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     int sg[100][100],sz1[1000],sz2[1000];
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
-            scanf("%d",&(sg[i][j]));
+            my_scanf("%d",&(sg[i][j]));
         }
     }
     if(sg[0][0]>=sg[0][1]&&sg[0][0]>=sg[1][0]){
@@ -85,7 +85,7 @@ int main_bench(){
     
 }
 for(b=0;b<a;b++){
-    printf("%d %d\n",sz1[b],sz2[b]);
+    my_printf("%d %d\n",sz1[b],sz2[b]);
 }
 return 0;
 }

@@ -8,10 +8,10 @@ int main_bench()
 
     int tmp;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        scanf("%s\n%s",&c,&d);
+        my_scanf("%s\n%s",&c,&d);
         a=strlen(d);
         b=strlen(c);
         for(o=0;o<a;o++) f[o]=d[a-o-1];        
@@ -34,9 +34,9 @@ int main_bench()
             }
         }
         for(; h >= 0; h--) 
-            printf("%d",e[h] - '0');
+            my_printf("%d",e[h] - '0');
 
-        printf("\n");
+        my_printf("\n");
     } 
     return 0;
 }

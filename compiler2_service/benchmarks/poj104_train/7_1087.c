@@ -4,9 +4,9 @@ int main_bench(){
 	char st[351],su[351],re[551],reh[551];
 	int a,b,c,e,r,lu,lr;
 	
-	scanf("%s",st);
-	scanf("%s",su);
-	scanf("%s",re);
+	my_scanf("%s",st);
+	my_scanf("%s",su);
+	my_scanf("%s",re);
 	r=-1;
 	for(a=0;a<strlen(st);a++){
 		e=1;
@@ -35,11 +35,11 @@ int main_bench(){
 	}
 	
 	
-				printf("%s",reh);
+				my_printf("%s",reh);
 			
 	}
 	else{
-		printf("%s",st);
+		my_printf("%s",st);
 	}
 	return 0;
 }

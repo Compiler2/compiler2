@@ -6,16 +6,16 @@ int main_bench()
 	int n,i;
 	char a[100][20];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
 		crea(a[i]);
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 	}
 	return 0;
 }

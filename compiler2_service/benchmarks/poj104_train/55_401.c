@@ -7,7 +7,7 @@ int main_bench()
     int a,b,l,i,wei;
     char n[100];
     long shi;
-    scanf("%d%s%d",&a,n,&b);
+    my_scanf("%d%s%d",&a,n,&b);
     l=strlen(n);
     for(i=0,shi=0;i<=l-1;i++)
     {
@@ -29,7 +29,7 @@ int main_bench()
                        break;
     }
     for(i=i;i>=0;i--)
-    printf("%c",n[i]);
+    my_printf("%c",n[i]);
                        
     
     return 0;

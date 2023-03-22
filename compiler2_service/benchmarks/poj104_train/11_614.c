@@ -7,7 +7,7 @@
    m[1]=m[3]=m[5]=m[7]=m[8]=m[10]=m[12]=31;
    m[4]=m[6]=m[9]=m[11]=30;
    m[2]=29;
-   scanf("%d %d %d",&y,&n,&d);
+   my_scanf("%d %d %d",&y,&n,&d);
  if(n==1)
  {
     x=d;
@@ -33,7 +33,7 @@
   }
  }
      
-     printf("%d\n",z);
+     my_printf("%d\n",z);
   return 0;
  }
 

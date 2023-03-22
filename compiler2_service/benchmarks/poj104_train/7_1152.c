@@ -4,9 +4,9 @@ int main_bench()
 {
    char str[257],substr[257],rep[257];
    int i,j=0,m,n,g=0;
-   scanf("%s",str);
-   scanf("%s",substr);
-   scanf("%s",rep);
+   my_scanf("%s",str);
+   my_scanf("%s",substr);
+   my_scanf("%s",rep);
    m=strlen(str);
    n=strlen(substr);
    for(i=0;i<m;i++)
@@ -23,6 +23,6 @@ int main_bench()
 	   {
 		   str[i]=rep[j];
 	   }
-   printf("%s",str);
+   my_printf("%s",str);
    return 0;
 }

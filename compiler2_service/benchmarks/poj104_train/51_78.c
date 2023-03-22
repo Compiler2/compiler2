@@ -6,7 +6,7 @@ int main_bench()
 	int i,n,m,j,k,b[501],d,max,h;
     char a[501],c[501][10];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 gets(a);
 m=strlen(a);
@@ -46,7 +46,7 @@ for(i=0;i<m+1-n;i++)
 	}
 }
 if(max!=0)
-printf("%d\n",max);
+my_printf("%d\n",max);
 for(i=0;i<m+1-n;i++)
 {
      if(b[i]==max&&max!=0)
@@ -71,14 +71,14 @@ for(i=0;i<m+1-n;i++)
 		 {continue;}
 		 for(j=0;j<n-1;j++)
 		 {
-			 printf("%c",c[i][j]);
+			 my_printf("%c",c[i][j]);
 		 }
-		 printf("%c\n",c[i][n-1]);
+		 my_printf("%c\n",c[i][n-1]);
 	 } 
 }
  if(max==0)
 	 {
-		 printf("NO");
+		 my_printf("NO");
 	 }
 return 0;
 }

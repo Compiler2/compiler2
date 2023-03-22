@@ -6,7 +6,7 @@ int main_bench()
     int n,i,j,k,s;
     int l;
     char a[1000][100];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    getchar();
   for(i=0;i<n;i++)
   {
@@ -41,9 +41,9 @@ int main_bench()
                  }
               }
            if(l==0&&a[i][0]!='0'&&a[i][0]!='1'&&a[i][0]!='2'&&a[i][0]!='3'&&a[i][0]!='4'&&a[i][0]!='5'&&a[i][0]!='6'&&a[i][0]!='7'&&a[i][0]!='8'&&a[i][0]!='9')                
-           printf("1\n");
+           my_printf("1\n");
            else
-           printf("0\n");
+           my_printf("0\n");
        }            
 
               

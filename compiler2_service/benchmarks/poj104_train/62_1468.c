@@ -12,5 +12,5 @@ int main_bench()
    *(p+j)=*(p+j+1);} 
  else i++;
  for(i=0;i<strlen(s);i++)
- printf("%c",*(p+i));
+ my_printf("%c",*(p+i));
 }

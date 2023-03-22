@@ -8,8 +8,8 @@ int main_bench()
 	}
 	c[50001],t;
 	int n,i,j;
-	scanf("%d",&n);
-	for (i=1;i<=n;i++) scanf("%d%d",&c[i].a,&c[i].b);
+	my_scanf("%d",&n);
+	for (i=1;i<=n;i++) my_scanf("%d%d",&c[i].a,&c[i].b);
 	for (i=1;i<n;i++)
 	  for (j=n;j>i;j--)
 	  {
@@ -25,7 +25,7 @@ int main_bench()
         if (en<c[i+1].a) break;
      	
      }
-     if (i<n) printf("no");
-       else printf("%d %d",st,en);
+     if (i<n) my_printf("no");
+       else my_printf("%d %d",st,en);
      return 0;
 }

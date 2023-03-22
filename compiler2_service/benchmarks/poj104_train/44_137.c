@@ -5,9 +5,9 @@ int main_bench()
 {
 	int a,b,i;
 	for(i=0;i<6;i++){
-	scanf("%d",&a);
+	my_scanf("%d",&a);
     b=rev(a);
-	printf("%d\n",b);
+	my_printf("%d\n",b);
 		}
 	return 0;
 }

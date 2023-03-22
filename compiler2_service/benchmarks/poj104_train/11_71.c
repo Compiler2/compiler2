@@ -4,7 +4,7 @@
 int main_bench()
 {
     int year,month,day,a;
-    scanf("%d %d %d",&year,&month,&day);
+    my_scanf("%d %d %d",&year,&month,&day);
     if(year%4==0&&year%100!=0||year%400==0){
 		if(month==1)	
 			a=day;
@@ -44,7 +44,7 @@ int main_bench()
         if(month==10)a=day+273;
         if(month==11)a=day+304;
         if(month==12)a=day+334;};
-	printf("%d\n",a);
+	my_printf("%d\n",a);
 	return 0;
 }
 

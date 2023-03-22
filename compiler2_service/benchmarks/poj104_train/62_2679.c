@@ -21,7 +21,7 @@ int main_bench()
 		break;
 	}
 	for(i=0;i<b;i++){
-	printf("%c",kj[i]);
+	my_printf("%c",kj[i]);
 	}
 	return 0;
 }

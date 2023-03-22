@@ -15,7 +15,7 @@ int main_bench()
 	{
     	if (a[i]==' '&&(p==0))
 		{
-			printf(" ");
+			my_printf(" ");
 			p=1;
 			
 		}
@@ -25,7 +25,7 @@ int main_bench()
 		}
 		else 
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 			p=0;
 			continue;
 		}

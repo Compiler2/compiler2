@@ -6,7 +6,7 @@ int main_bench()
 	int i,k,j;
 	int n=0,m=0;
 	int a[10],b[10];
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	if(x%2==0)
 	{
 		a[0]=x;
@@ -82,6 +82,6 @@ int main_bench()
 		}
 	}
      label:
-	printf("%d\n",b[k]);
+	my_printf("%d\n",b[k]);
 
 }

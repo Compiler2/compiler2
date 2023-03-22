@@ -25,5 +25,5 @@ for (int j=2;j>=0;j--)
       a[k+1]=x;   b[k+1]=y;
       } 
 for (int l=0;l<4;l++)
-   printf("%c %d\n",b[l],a[l]*10);
+   my_printf("%c %d\n",b[l],a[l]*10);
 }

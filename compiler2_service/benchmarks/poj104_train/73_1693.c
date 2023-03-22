@@ -5,7 +5,7 @@ int a[5][5],b[5],c[5];
 int q,w;
 for(q=0;q<5;q++){
 	for(w=0;w<5;w++){
-	scanf("%d",&a[q][w]);
+	my_scanf("%d",&a[q][w]);
 	}
 	b[q]=a[q][0];
 }
@@ -29,10 +29,10 @@ for(u=0;u<5;u++){
 		if(b[u]<a[p][c[u]]){s+=1;}
 		else{s+=0;}
 	}
-	if(s==4){printf("%d %d %d",u+1,c[u]+1,b[u]);i+=1;}
+	if(s==4){my_printf("%d %d %d",u+1,c[u]+1,b[u]);i+=1;}
 	else {i=i;}
 	s=0;
 }
-if(i==0){printf("not found");}
+if(i==0){my_printf("not found");}
 return 0;
 }

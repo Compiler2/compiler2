@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n, y[200], m1[200], m2[200], i, j, x[12], s;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%d%d", &y[i], &m1[i], &m2[i]);
+		my_scanf("%d%d%d", &y[i], &m1[i], &m2[i]);
 	}
 	x[1]=31;
 	x[3]=31;
@@ -35,9 +35,9 @@ int main_bench()
 			}
 			if (s%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
-			else printf("NO\n");
+			else my_printf("NO\n");
 		}
 		else 
 		{
@@ -47,9 +47,9 @@ int main_bench()
 			}
 			if (s%7==0)
 		{
-			printf("YES\n");
+			my_printf("YES\n");
 		}
-		else printf("NO\n");
+		else my_printf("NO\n");
 		}
 	}
 	return 0;

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,k,p,q,m=0;
-	scanf("%d%d\n",&n,&k);
+	my_scanf("%d%d\n",&n,&k);
 	int gram[n][n],sz[n];
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		}
 	for(p=0;p<n;p++){
 		for(q=0;q<n;q++){
@@ -19,7 +19,7 @@ int main_bench()
 			m++;
 			}
 		}
-	if(m==0) printf("no");
-	else printf("yes");
+	if(m==0) my_printf("no");
+	else my_printf("yes");
 	return 0;
 }

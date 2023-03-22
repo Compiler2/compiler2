@@ -8,10 +8,10 @@ int main_bench()
 	int sum[100000];
 	int max1=0,max2=0,max3=0;
 	int A[100000][1];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf ("%d %d %d",&m,&A[i][0],&A[i][1]);
+		my_scanf ("%d %d %d",&m,&A[i][0],&A[i][1]);
 		sum[i]=A[i][0]+A[i][1];
 	}
 	for (j=1;j<=n;j++)
@@ -37,9 +37,9 @@ int main_bench()
 			c=v;}
 		}
 	}
-	printf ("%d %d\n",a,max1);
-	printf ("%d %d\n",b,max2);
-	printf ("%d %d",c,max3);
+	my_printf ("%d %d\n",a,max1);
+	my_printf ("%d %d\n",b,max2);
+	my_printf ("%d %d",c,max3);
 
 	  return 0;
 }

@@ -33,12 +33,12 @@ int f(int x,int y)
 int main_bench()
 {
 	int n,j,b=0,p,k;
-	scanf("%d",&p);
+	my_scanf("%d",&p);
 	for(k=1;k<=p;++k)
 	{
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=f(n,1);
-	printf("%d\n",b);
+	my_printf("%d\n",b);
 	}
 	return 0;
 }

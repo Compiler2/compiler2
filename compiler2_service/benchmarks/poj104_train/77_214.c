@@ -20,7 +20,7 @@ int main_bench()
   {
    if(s[j-1]==c&&s[j]==d)
    {
-    printf("%d %d\n",a[j-1],a[j]);
+    my_printf("%d %d\n",a[j-1],a[j]);
     for(k=j+1;k<p;k++)
     {
      s[k-2]=s[k];

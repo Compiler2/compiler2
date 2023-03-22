@@ -5,19 +5,19 @@ int main_bench()
 	int bubble(int c[],int x);
 	int i,m,n;
 	int a[100],b[100];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=1;i<=m;i++)
 	{
-		scanf("%d ",&a[i-1]);
+		my_scanf("%d ",&a[i-1]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d ",&b[i-1]);
+		my_scanf("%d ",&b[i-1]);
 	}
-	printf("\n");
+	my_printf("\n");
 	bubble(a,m);
-	printf(" ");
+	my_printf(" ");
 	bubble(b,n);
 }
 
@@ -38,8 +38,8 @@ int bubble(int c[],int x)
 	}
 	for(t=1;t<=x;t++)
 	{
-		printf("%d",c[t-1]);
+		my_printf("%d",c[t-1]);
 		if(t!=x)
-		printf(" ");
+		my_printf(" ");
 	}
 }

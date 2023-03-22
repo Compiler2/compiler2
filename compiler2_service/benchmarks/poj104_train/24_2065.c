@@ -45,7 +45,7 @@ for(i=0;i<p;i++){
 	b=b;
 	}
 }
-printf("%s\n" ,f[a]);
-printf("%s" ,f[b]);
+my_printf("%s\n" ,f[a]);
+my_printf("%s" ,f[b]);
 return 0;
 }

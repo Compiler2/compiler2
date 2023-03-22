@@ -20,5 +20,5 @@ int main_bench()
 		}
 		else t=0;
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 }

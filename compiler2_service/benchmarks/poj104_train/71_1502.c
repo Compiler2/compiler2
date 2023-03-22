@@ -9,10 +9,10 @@ int runnian(int y)
 int main_bench()
 {
     int i,j,n,y,m1,m2,t,days;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-       scanf("%d %d %d",&y,&m1,&m2);
+       my_scanf("%d %d %d",&y,&m1,&m2);
        days=0; 
       if(m1>m2)
        {t=m2;
@@ -43,9 +43,9 @@ int main_bench()
            }
           }
           if(days%7==0)
-          printf("YES\n");
+          my_printf("YES\n");
           if(days%7!=0)
-          printf("NO\n");
+          my_printf("NO\n");
        }
        getchar();
        getchar();

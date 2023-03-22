@@ -7,9 +7,9 @@ int i,j;
 int len;
 int k=0;
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-  scanf("%s",s[i]);
+  my_scanf("%s",s[i]);
 }
 for(i=0;i<n;i++){   
 	k=0;
@@ -20,12 +20,12 @@ for(i=0;i<n;i++){
 		}
 		if(k==(len-1))
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 }
 return 0;

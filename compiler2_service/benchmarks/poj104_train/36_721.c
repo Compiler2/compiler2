@@ -4,10 +4,10 @@ int main_bench()
 {
 	char a[1000],b[1000],t;
 	int i,j,na,nb;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	na=strlen(a);
 	nb=strlen(b);
-	if(na!=nb)printf("NO\n");
+	if(na!=nb)my_printf("NO\n");
 	else
 	{
 		for(i=0;i<na;i++)
@@ -24,7 +24,7 @@ int main_bench()
 		}
 
 		if(strcmp(a,b)==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 }}

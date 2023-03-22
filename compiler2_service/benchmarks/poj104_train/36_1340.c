@@ -3,10 +3,10 @@
 int main_bench()
 {
 	char a[1000],b[1000];
-	int i,j,m,n;scanf("%s%s",a,b);
+	int i,j,m,n;my_scanf("%s%s",a,b);
 	m=strlen(a);
 	n=strlen(b);
-	if(m!=n) printf("NO");
+	if(m!=n) my_printf("NO");
 	else
 	{
 		for(i=0;i<m;i++)
@@ -20,11 +20,11 @@ int main_bench()
 				}
 			}
 			if(j==n)
-			{printf("NO");
+			{my_printf("NO");
 			break;}
 		}
 		if(i==strlen(a))
-			printf("YES");
+			my_printf("YES");
 	}
 	
 	return 0;

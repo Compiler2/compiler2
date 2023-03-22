@@ -5,13 +5,13 @@ int main_bench()
 	double a;
 	char zfc[1000];
 	char zfc1[1000];
-	scanf("%lf",&a);
+	my_scanf("%lf",&a);
 	int b=0;
 	double c;
 	int d=0;
 	int i,j;
-	scanf("%s",zfc);
-	scanf("%s",zfc1);
+	my_scanf("%s",zfc);
+	my_scanf("%s",zfc1);
 	int e=0,f=0;
 	int g=0,h=0;
 	int z=0;
@@ -26,7 +26,7 @@ int main_bench()
 		}
 	}
 	if((g!=strlen(zfc))||(h!=strlen(zfc1))||strlen(zfc)!=strlen(zfc1)){
-		printf("error\n");
+		my_printf("error\n");
 		z=1;
 	}
 	if(z!=1){
@@ -41,10 +41,10 @@ int main_bench()
 	c=1.0*b/d;
 	
 	if(c>a){
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 	if(c<=a){
-		printf("no\n");
+		my_printf("no\n");
 	}
 	}
 	return 0;

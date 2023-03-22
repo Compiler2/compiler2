@@ -23,7 +23,7 @@ return(sum);
 
 int main_bench()
 {int n,k,g;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	g=c(n,k);
-	printf("%d",g);
+	my_printf("%d",g);
 }

@@ -4,13 +4,13 @@ int main_bench()
 {
  char a[101],b[100];
  int i,x;
- scanf("%s",a);
- if(a[1]=='\0') {printf("0\n");
-                 printf("%c\n",a[0]);}                         
+ my_scanf("%s",a);
+ if(a[1]=='\0') {my_printf("0\n");
+                 my_printf("%c\n",a[0]);}                         
  else
  {
-     if((((a[1]=='1')||(a[1]=='2'))&&(a[2]=='\0'))&&(a[0]=='1'))  {printf("0\n");
-                 printf("%s\n",a);}
+     if((((a[1]=='1')||(a[1]=='2'))&&(a[2]=='\0'))&&(a[0]=='1'))  {my_printf("0\n");
+                 my_printf("%s\n",a);}
      else{
  x=10*(a[0]-'0')+(a[1]-'0');              
  if(x>=13)
@@ -34,8 +34,8 @@ int main_bench()
       }
       b[i-1]='\0';
     }
- printf("%s\n",b);
- printf("%c\n",a[i]);
+ my_printf("%s\n",b);
+ my_printf("%c\n",a[i]);
  }}
  getchar();
  getchar();

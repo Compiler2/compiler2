@@ -6,8 +6,8 @@ int main_bench()
     char sr[100][100];
     int i,j,p;
     char ddd;
-    scanf("%d",&n); 
-    scanf("%c",&ddd);
+    my_scanf("%d",&n); 
+    my_scanf("%c",&ddd);
     for(i=0;i<n;i++) 
         gets(sr[i]);
     for(i=0;i<n;i++)
@@ -36,8 +36,8 @@ int main_bench()
                 }
             }
         }
-        if(p==0) printf("no\n");
-        else printf("yes\n");
+        if(p==0) my_printf("no\n");
+        else my_printf("yes\n");
     }                 
     
     return 0;

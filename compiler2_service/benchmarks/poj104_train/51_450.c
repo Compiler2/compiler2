@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,k,len,sum[500]={0},p,max=0;
 	char temp[5],a[500];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	len=strlen(a);
 	for(i=0;i<len-n+1;i++)
@@ -30,16 +30,16 @@ int main_bench()
 		if(sum[i]>max)
 			max=sum[i];
 	if(max==1)
-		printf("NO");
+		my_printf("NO");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<len-n+1;i++)
 			if(sum[i]==max)
 			{
 				for(j=0;j<n;j++)
-					printf("%c",a[i+j]);
-				printf("\n");
+					my_printf("%c",a[i+j]);
+				my_printf("\n");
 			}
 	}
 	return 0;

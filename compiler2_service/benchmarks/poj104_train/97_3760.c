@@ -2,7 +2,7 @@
 
 int main_bench(){
     int sz[6],m[6],n,i=0,e,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     e=n;
     m[0]=100;
     m[1]=50;
@@ -15,7 +15,7 @@ int main_bench(){
         e=e-m[i]*sz[i];
         }
     for(i=0;i<6;i++){
-        printf("%d\n",sz[i]);
+        my_printf("%d\n",sz[i]);
     }
     return 0;
 }

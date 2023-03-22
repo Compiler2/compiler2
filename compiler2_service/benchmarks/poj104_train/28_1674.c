@@ -30,9 +30,9 @@ int main_bench()
     for(n=0;n<j;n++)
 	{
 		l[n]=strlen(b[n]);
-		printf("%d,",l[n]);
+		my_printf("%d,",l[n]);
 	}
 	l[j]=strlen(b[j]);
-	printf("%d",l[j]);
+	my_printf("%d",l[j]);
 	return 0;
 }

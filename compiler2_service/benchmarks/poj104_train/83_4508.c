@@ -7,12 +7,12 @@ int main_bench()
 	int r[200];
 	float s[200];
 	float k,w,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d",&r[i]);
+		my_scanf("%d",&r[i]);
 	}
 	for(i=1;i<=n;i++){
-		scanf("%d ",&u[i]);
+		my_scanf("%d ",&u[i]);
 	}
 	for(i=1;i<=n;i++){
 		if(u[i]>=90){
@@ -60,7 +60,7 @@ int main_bench()
 			p=p+r[i];
 		}
 		w=k/p;
-		printf("%.2f",w);
+		my_printf("%.2f",w);
 		return 0;
 	}
 		

@@ -40,7 +40,7 @@ int scan(int n)
 main_bench()
 {
       int a,b,i,p=0,q=0,count=0;
-      scanf("%d %d",&a,&b);
+      my_scanf("%d %d",&a,&b);
       for(i=a;i<=b;i++)
       {
                   p=judge(i);
@@ -48,17 +48,17 @@ main_bench()
                   if(p==1&&q==1&&count!=0)
                   {
                                           count++;
-                                          printf(",%d",i);
+                                          my_printf(",%d",i);
                   }
                   if(p==1&&q==1&&count==0)
                   {
-                                          printf("%d",i);
+                                          my_printf("%d",i);
                                           count++;
                   }
       }
       if(count!=0)
-      printf("\n");
+      my_printf("\n");
       else 
-      printf("no\n");
+      my_printf("no\n");
       return 0;
 }

@@ -48,11 +48,11 @@ int main_bench()
 	}
 	q[i-1]='\0';
 	if(strcmp(p,q)<0) 
-		printf("<");
+		my_printf("<");
 	if(strcmp(p,q)>0) 
-		printf(">");
+		my_printf(">");
 	if(strcmp(p,q)==0) 
-		printf("=");
+		my_printf("=");
 	return 0;
 }
 

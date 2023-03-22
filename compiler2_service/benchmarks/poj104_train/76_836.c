@@ -6,9 +6,9 @@ int i,x,y,j;
 int m,p;
 double e,f;
 m=100;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 }
 x=a[0],y=b[0];
 for(i=0;i<n;i++){
@@ -53,12 +53,12 @@ break;
 }
 if((j=n-1)&&p==1){
 m=0;
-printf("no");
+my_printf("no");
 break;
 }
 }
 if(m!=0){
-printf("%d %d",y,x);
+my_printf("%d %d",y,x);
 }
 return 0;
 } 

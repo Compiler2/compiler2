@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,c,d,e,f,sum=0,i;
 	int g=0;
 	int m[]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 	i=a+1;
 	while(i<d)
 	{
@@ -59,7 +59,7 @@ int main_bench()
 			g=g-365;
 		}
 	}
-	printf("%d\n",g);
+	my_printf("%d\n",g);
 	return 0;
 }
 			

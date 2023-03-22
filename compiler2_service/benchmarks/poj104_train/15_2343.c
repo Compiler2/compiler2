@@ -6,12 +6,12 @@ main_bench()
 	int i,j,x1,x2,y1,y2;
 	int n,t;
 	int area,statue=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&t);
+			my_scanf("%d",&t);
 			if(t==0)
 			{
 				if(statue==0)
@@ -26,5 +26,5 @@ main_bench()
 		}
 	}
 	area=(x2-x1-1)*(y2-y1-1);
-	printf("%d",area);
+	my_printf("%d",area);
 } 

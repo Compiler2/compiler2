@@ -19,7 +19,7 @@ int main_bench()
 		{
 			for(j=i-1;j>=0;j--)
 			{
-				if(a[j]==nan&&b[j]==0) {printf("%d %d\n",j,i);b[j]=1;break;}
+				if(a[j]==nan&&b[j]==0) {my_printf("%d %d\n",j,i);b[j]=1;break;}
 			}
 		}
 	}

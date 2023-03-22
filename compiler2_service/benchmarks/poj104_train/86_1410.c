@@ -4,33 +4,33 @@
 int main_bench()
 {
 	int i,j,n,m,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		a=0;
 		if(m==0){
-			printf("60\n");
+			my_printf("60\n");
 			continue;
 		}
 		for(j=0;j<m;j++){
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a+j*3<57)
 				continue;
 
 			if(a+j*3<=63){
-				printf("%d\n",a);
+				my_printf("%d\n",a);
 				break;
 			}else{
-				printf("%d\n",60-3*j);
+				my_printf("%d\n",60-3*j);
 				break;
 			}
 		}
 		if(j == m)
-			printf("%d\n",60-3*m);
+			my_printf("%d\n",60-3*m);
 		else{
 			while(++j<m)
 			{
-				scanf("%d",&a);
+				my_scanf("%d",&a);
 			}
 		}
 	}

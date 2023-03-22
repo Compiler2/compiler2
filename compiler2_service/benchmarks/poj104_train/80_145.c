@@ -9,8 +9,8 @@ int leapYear(int year)
 int main_bench()
 {
 	int i,startYear,endYear,startMonth,endMonth,startDay,endDay,count = 0;
-	scanf("%d%d%d",&startYear,&startMonth,&startDay);
-	scanf("%d%d%d",&endYear,&endMonth,&endDay);
+	my_scanf("%d%d%d",&startYear,&startMonth,&startDay);
+	my_scanf("%d%d%d",&endYear,&endMonth,&endDay);
 	if(startYear < endYear)
 	{
 		for(i = startMonth + 1; i <= 12; i++)
@@ -128,6 +128,6 @@ int main_bench()
 	{
 		count += 365 + leapYear(i);
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
    int n,i;
    double m1,m2,m3,m4,s1=0,s2=0,s3=0,s4=0,a[200];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-	   scanf("%lf",&a[i]);
+	   my_scanf("%lf",&a[i]);
 	   if(a[i]<=18){
           s1+=1;
 	   }
@@ -24,6 +24,6 @@ int main_bench()
    m2=s2/n*100;
    m3=s3/n*100;
    m4=s4/n*100;
-   printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",m1,m2,m3,m4);
+   my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",m1,m2,m3,m4);
    return 0;
 }

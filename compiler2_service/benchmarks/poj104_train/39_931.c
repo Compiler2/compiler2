@@ -21,13 +21,13 @@ int main_bench()
 {
 	struct member p[100];
 	int N,i,m[100],max=0,co;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++){
-		scanf("%s %d %d %c %c %d",p[i].name,&p[i].a,&p[i].b,&p[i].O,&p[i].W,&p[i].x);
+		my_scanf("%s %d %d %c %c %d",p[i].name,&p[i].a,&p[i].b,&p[i].O,&p[i].W,&p[i].x);
 		m[i]=money(p[i]);}
 	for(i=0;i<N;i++)
 		if(m[i]>max){max=m[i];co=i;}
 	int sum=0;
 	for(i=0;i<N;i++)sum+=m[i];
-	printf("%s\n%d\n%d\n",p[co].name,m[co],sum);
+	my_printf("%s\n%d\n%d\n",p[co].name,m[co],sum);
 }

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int i,j,n,A[100],m,B[100],k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		B[i]=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
 		{
 			B[i]=60;
@@ -15,7 +15,7 @@ int main_bench()
 		else{
 			for(j=0;j<m;j++)
 			{
-				scanf("%d",&A[j]);
+				my_scanf("%d",&A[j]);
 			}
 			if(A[0]>=60)
 			{
@@ -54,7 +54,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",B[i]);
+		my_printf("%d\n",B[i]);
 	}
 	return 0;
 }

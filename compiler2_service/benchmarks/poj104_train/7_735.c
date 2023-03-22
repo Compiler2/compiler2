@@ -26,7 +26,7 @@ int main_bench(){
 		puts(zfc1);
 	else{
 		zfc1[i]=0;
-		printf("%s%s%s",zfc1,zfc3,&zfc1[i+len2]);
+		my_printf("%s%s%s",zfc1,zfc3,&zfc1[i+len2]);
 	}
 	return 0;
 }

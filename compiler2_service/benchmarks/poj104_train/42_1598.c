@@ -6,16 +6,16 @@ int main_bench()
 	int a[100000];
 	int k;
     int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	if(n==1&&a[0]!=k)
 	{
         
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 		return 0;
 	}
 	for(i=0;i<n;i++)
@@ -40,11 +40,11 @@ int main_bench()
 	{
 		if(a[i]!=k&&a[i+1]!=k)
 		{
-			printf("%d ",a[i]);
+			my_printf("%d ",a[i]);
 		}
 		else if(a[i]!=k&&a[i+1]==k)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		}
 		else if(a[i]==k)
 		

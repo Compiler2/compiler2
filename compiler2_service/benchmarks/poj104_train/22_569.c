@@ -30,7 +30,7 @@ int main_bench()
 		for(i=0;i<=n;i++)
 			if(a[i]!=0)
 				break;
-		if(i>n)printf("No");
+		if(i>n)my_printf("No");
 		else
 		{
 		for(i=0;i<=n;i++)
@@ -38,6 +38,6 @@ int main_bench()
 			if(a[i]>k)
 				k=a[i];
 		}
-		printf("%d",k);
+		my_printf("%d",k);
 		}
 }

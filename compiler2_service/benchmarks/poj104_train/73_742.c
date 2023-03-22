@@ -9,7 +9,7 @@ main_bench()
     for(int j=1;j<=5;j++)
         for(int i=1;i<=5;i++)
             {
-                scanf("%d",&a[j][i]);
+                my_scanf("%d",&a[j][i]);
             }
     for(int h=1;h<=5;h++)
         for(int k=1;k<=5;k++)
@@ -31,11 +31,11 @@ main_bench()
             {
                 if(a[j][i]==mx[j]&&a[j][i]==my[i])
                 {
-                    printf("%d %d %d",j,i,a[j][i]);
+                    my_printf("%d %d %d",j,i,a[j][i]);
                     count=1;
                 }
             }
-    if(count==0)printf("not found");
+    if(count==0)my_printf("not found");
 
 
 }

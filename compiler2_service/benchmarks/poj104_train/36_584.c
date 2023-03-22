@@ -5,7 +5,7 @@ void paixu(char a[],int n)
 	char m,k;
 	int p,j,i;
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
 	{
 		m=a[i];
@@ -24,12 +24,12 @@ void paixu(char a[],int n)
 int main_bench()
 {
 	char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	paixu(a,strlen(a));
 	paixu(b,strlen(b));
 	int n=strcmp(a,b);
 	if(n==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }

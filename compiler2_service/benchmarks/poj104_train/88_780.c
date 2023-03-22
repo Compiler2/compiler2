@@ -13,8 +13,8 @@ int main_bench()
                           }
      for(q=p;*q!='\0';q++)
      {
-                          if(*q!='*')printf("%c",*q);
-                          if(*q=='*'&&*(q+1)!='*')printf("\n");
+                          if(*q!='*')my_printf("%c",*q);
+                          if(*q=='*'&&*(q+1)!='*')my_printf("\n");
      }
   
  

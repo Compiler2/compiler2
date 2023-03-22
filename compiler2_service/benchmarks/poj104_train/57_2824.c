@@ -6,9 +6,9 @@ int main_bench()
 {
 	int n,i;
 	char c[50][20],t[50];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
-		scanf("%s",c[i]);
+		my_scanf("%s",c[i]);
     for (i=0;i<n;i++)
 	{
 		t[i]=strlen(c[i])-1;
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	
 	for (i=0;i<n;i++)
-		printf("%s\n",c[i]);
+		my_printf("%s\n",c[i]);
 	return 0;
 }
 

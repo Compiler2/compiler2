@@ -10,9 +10,9 @@ int main_bench(){
 	for(i=0;i<100;i++){
 		shijian[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a>=90&&a<=140&&b>=60&&b<=90){
 			shifou[i]=1;
 		}
@@ -38,6 +38,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",shijian[0]);
+	my_printf("%d",shijian[0]);
 	return 0;
 }

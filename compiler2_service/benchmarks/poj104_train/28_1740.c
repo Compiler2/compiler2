@@ -16,9 +16,9 @@ int main_bench(){
 	n++;
 	for(i=0;i<n-1;i++){
 		t=strlen(d[i]);
-		printf("%d,",t);}
+		my_printf("%d,",t);}
 		
 	t=strlen(d[n-1]);
-	printf("%d",t);
+	my_printf("%d",t);
         return 0;
 }

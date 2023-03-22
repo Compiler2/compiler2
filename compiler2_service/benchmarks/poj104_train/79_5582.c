@@ -48,12 +48,12 @@ int find(struct mon *head,int m)
 int main_bench()
 {
 	struct mon *head;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	while(n!=0&&m!=0)
 	{
 		head=creat(n);
-		printf("%d\n",find(head,m));
-		scanf("%d%d",&n,&m);
+		my_printf("%d\n",find(head,m));
+		my_scanf("%d%d",&n,&m);
 	}
 }
 

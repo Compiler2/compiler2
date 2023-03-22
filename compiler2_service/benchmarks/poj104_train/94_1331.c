@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a[501],k=0,i,j,m,p,b,o;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(j=0;j<n;j++){
 		   if(a[j]%2==1){
@@ -24,9 +24,9 @@ int main_bench(){
 	}
 	for(p=0;p<k;p++){
 		if(p==k-1){
-			printf("%d",a[p]);
+			my_printf("%d",a[p]);
 		}
-		else printf("%d,",a[p]);
+		else my_printf("%d,",a[p]);
 	}
 	return 0;
 }

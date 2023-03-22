@@ -16,10 +16,10 @@ int main_bench()
    c2[i] += 32;
  t = strcmp(c1,c2);
  if (t == 0)
-  printf("=\n");
+  my_printf("=\n");
  else if (t > 0)
-  printf(">\n");
+  my_printf(">\n");
  else if (t < 0)
-  printf("<\n");
+  my_printf("<\n");
  return 0;
 }

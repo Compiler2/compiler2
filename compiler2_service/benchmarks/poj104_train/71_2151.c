@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,k,j,d;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int y,m1,m2;
 	int sum1=0;
 	for(k=0;k<n;k++)
 	{
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		int temp;
 		if(m1>m2)
 		{
@@ -28,8 +28,8 @@ int main_bench()
 		}
 				d=sum1%7;
 				if(d==0)
-				{printf("YES\n");}
-				else printf("NO\n");
+				{my_printf("YES\n");}
+				else my_printf("NO\n");
 			
 	}
 	return 0;

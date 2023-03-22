@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int a,b,c,y[100],i,j=1;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++){
-		scanf("%d%d",&b,&c);
+		my_scanf("%d%d",&b,&c);
 		if(b>140||b<90||c>90||c<60){
 			y[j]=i+1;
 			j++;
@@ -20,6 +20,6 @@ int main_bench(){
 		}
 	}
 	a=a-1;
-	printf("%d",a);
+	my_printf("%d",a);
 	return 0;
 }

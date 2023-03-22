@@ -24,14 +24,14 @@ int main_bench()
 	}
 	s=k-1;
 	if(s==0)
-		printf("No");
+		my_printf("No");
 	else
 	{
 	for(i=0;i<=s-1;i++)
 		if(a[i+1]!=a[i])
 			break;
 	if(i==s)
-		printf("No");
+		my_printf("No");
 	if(i!=s)
 	{
 		for(i=0;i<=s-1;i++)
@@ -50,7 +50,7 @@ int main_bench()
 				break;
 			}
 		}
-		printf("%d",u);
+		my_printf("%d",u);
 	}
 	}
 }

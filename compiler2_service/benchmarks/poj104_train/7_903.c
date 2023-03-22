@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,flag,w,j,len;
 	char str[257],sub[200],rep[50];
-	scanf("%s %s %s",str,sub,rep);
+	my_scanf("%s %s %s",str,sub,rep);
 	len=strlen(sub);
 	w=500;
 	for(i=0;str[i]!='\0';i++)
@@ -41,8 +41,8 @@ int main_bench()
 	}
 	sub[j]='\0';
 	str[w]='\0';
-	printf("%s%s%s",str,rep,sub);
+	my_printf("%s%s%s",str,rep,sub);
 	}
-	else printf("%s",str);
+	else my_printf("%s",str);
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,k;
 	int shuzu[1000];
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 
 	for(int i=0;i<n;i++){
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 		
 	}
 	int count1=0;
@@ -18,8 +18,8 @@ int main_bench(){
 			else continue;
 		}
 	}	
-	if(count1!=0) printf("yes");
-	else printf("no");
+	if(count1!=0) my_printf("yes");
+	else my_printf("no");
 
 	return 0;
 }

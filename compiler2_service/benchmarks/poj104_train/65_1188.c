@@ -3,10 +3,10 @@
 int main_bench(){
     int n,x,y,a,b,i;
     double z;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     x=0;y=0;
     for(i=0;i<n;i++){
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         if(a==2&&b==0){
             x=x+1;
         }else if(a==0&&b==2){
@@ -19,11 +19,11 @@ int main_bench(){
     }
     z=1.0*(n-y)/2;
     if(x>z){
-        printf("A");
+        my_printf("A");
     }else if(x==z){
-        printf("Tie");
+        my_printf("Tie");
     }else{
-        printf("B");
+        my_printf("B");
     }
     return 0;
 }

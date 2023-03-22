@@ -13,10 +13,10 @@ int main_bench()
 		int money;
 	}stu[100];
 	int n,i,j=0,he=0,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].num);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].c,&stu[i].d,&stu[i].num);
 		stu[i].money=0;
 	}
 	for(i=0;i<n;i++)
@@ -42,5 +42,5 @@ int main_bench()
 	{
 		he=he+stu[i].money;
 	}
-	printf("%s\n%d\n%d\n",stu[j].name,max,he);
+	my_printf("%s\n%d\n%d\n",stu[j].name,max,he);
 }

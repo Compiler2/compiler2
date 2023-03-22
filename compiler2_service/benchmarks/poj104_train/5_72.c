@@ -5,10 +5,10 @@ int main_bench()
 	int i,l,j,n=0,sum=0,t=0;
 	float k,c;
 	char a[500],b[500];
-	scanf("%f",&k);
-	scanf("%s%s",a,b);
+	my_scanf("%f",&k);
+	my_scanf("%s%s",a,b);
 	if(strlen(a)!=strlen(b))
-	{printf("error");t=1;}
+	{my_printf("error");t=1;}
 
 	if(t==0)
 	{
@@ -17,7 +17,7 @@ int main_bench()
 		   if(t==0)
 		   {
 			if(a[i]!=65&&a[i]!=71&&a[i]!=67&&a[i]!=84)
-			{printf("error");t=1;}
+			{my_printf("error");t=1;}
 		   }
 	   }
 	}
@@ -29,7 +29,7 @@ int main_bench()
 					if(t==0)
 					{
 			        if(b[j]!=65&&b[j]!=71&&b[j]!=67&&b[j]!=84)
-					{printf("error");t=1;}
+					{my_printf("error");t=1;}
 					}
 				}
 	}
@@ -44,9 +44,9 @@ int main_bench()
 					  }
                       c=(float)n/sum;
 	                  if(c>k)
-					  {printf("yes");}
+					  {my_printf("yes");}
 	                  else
-					  {printf("no");}
+					  {my_printf("no");}
 	}
 	return 0;
 }

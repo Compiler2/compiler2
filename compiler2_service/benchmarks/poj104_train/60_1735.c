@@ -17,8 +17,8 @@ int prime(int k){
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
-	if(n==1||n==2||n==3||n==4)printf("\nempty");
+	my_scanf("%d",&n);
+	if(n==1||n==2||n==3||n==4)my_printf("\nempty");
 	int indct[10000]={0,0,1};
 	int i;
 	for(i=2;i<=n;i++){
@@ -27,7 +27,7 @@ int main_bench()
 	int found=0;
 	for(i=2;i<=n-2;i++){
 		if(indct[i]==1&&indct[i+2]==1){
-			printf("\n%d %d",i,i+2);
+			my_printf("\n%d %d",i,i+2);
 			found=1;
 		}
 	}

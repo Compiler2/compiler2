@@ -13,15 +13,15 @@ int main_bench()
 		char temp[110];
 		temp[0] = 0;
 		int c = 0;
-		scanf("%s%s",from,to);
+		my_scanf("%s%s",from,to);
 		for (int i=0;a[i];i++)
 		{
 			if (a[i] == ' ')
 			{
 				if (strcmp(temp,from)==0){
-					printf("%s ",to);
+					my_printf("%s ",to);
 				}else
-				printf("%s ",temp);
+				my_printf("%s ",temp);
 				temp[0] = 0;
 				c=0;
 				
@@ -32,9 +32,9 @@ int main_bench()
 			
 		}
 	if (strcmp(temp,from)==0){
-					printf("%s\n",to);
+					my_printf("%s\n",to);
 				}else
-				printf("%s\n",temp);
+				my_printf("%s\n",temp);
 	
 
 	}

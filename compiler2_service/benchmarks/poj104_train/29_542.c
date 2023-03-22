@@ -10,9 +10,9 @@ int main_bench()
 	for(n=0;n<100;n++){
 		shu[n]=0.0;
 	}     
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(n=0;n<k;n++){
-		scanf("%d",&r);
+		my_scanf("%d",&r);
 		for(i=0;i<r;i++){
 			if(i==0){
 				a=2;
@@ -26,7 +26,7 @@ int main_bench()
 			shu[n]+=1.0*a/b;
 			
 		}
-		printf("%.3lf\n",shu[n]);
+		my_printf("%.3lf\n",shu[n]);
 	}
 
 	

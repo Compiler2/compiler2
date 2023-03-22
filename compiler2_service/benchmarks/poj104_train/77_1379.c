@@ -9,10 +9,10 @@ char str[N], a ;
 
 int main_bench()
 {
-    scanf ("%s", str) ;
+    my_scanf ("%s", str) ;
     for (int i = 0, t = 0; i < strlen (str); i ++ )
         if (str[i] == str[0])
             q[ ++ t] = i ;
-        else printf ("%d %d\n", q[t -- ], i) ;
+        else my_printf ("%d %d\n", q[t -- ], i) ;
     return 0 ;
 }

@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[200];
 	int b[200];
 	int x=0;
 	int y=0;
 	for(int i=0;i<n;i++){
-		scanf("%d %d",&(a[i]),&(b[i]));
+		my_scanf("%d %d",&(a[i]),&(b[i]));
 	}
 	for(int m=0;m<n;m++){
 		if(a[m]<b[m]){
@@ -29,13 +29,13 @@ int main_bench(){
 		}
 	}
 	if(x>y){
-		printf("A");
+		my_printf("A");
 	}
 	if(x<y){
-		printf("B");
+		my_printf("B");
 	}
 	if(x==y){
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

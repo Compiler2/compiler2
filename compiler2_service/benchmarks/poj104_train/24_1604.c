@@ -22,8 +22,8 @@ int main_bench(){
 			min=sz[i+1]-sz[i]-1;
 			minword=sz[i];}
 	}
-	printf("%s\n",&str[maxword]);
-	printf("%s\n",&str[minword]);
+	my_printf("%s\n",&str[maxword]);
+	my_printf("%s\n",&str[minword]);
 	
 	return 0;
 }

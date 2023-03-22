@@ -5,7 +5,7 @@ int main_bench()
 	int i,n,k,t,j;
 	char c[81];
     char*p;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		gets(c);
         p=c;
@@ -16,8 +16,8 @@ int main_bench()
 		{
 			t++;
 		}else{t=-1;break;}
-	}if(t==-1){printf("0\n");}
-	else{printf("1\n");}
+	}if(t==-1){my_printf("0\n");}
+	else{my_printf("1\n");}
 	}
 	return 0;
 }

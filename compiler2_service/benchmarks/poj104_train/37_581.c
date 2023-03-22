@@ -5,7 +5,7 @@ int main_bench()
    char (*a)[10000];
    char b;
    int n,i,flag=0,j,k,r;
-   scanf("%d",&n) ;
+   my_scanf("%d",&n) ;
    getchar();
    a=malloc(n*sizeof(char)*10000);
    for(i=0;i<n;i++)
@@ -30,13 +30,13 @@ int main_bench()
 		  }
 		  if(r==k)
 		  {
-			  printf("%c\n",b);
+			  my_printf("%c\n",b);
 			  flag=1;
 			  break;
 		  }
 	   }
 	   if(flag==0)
-		   printf("no\n");
+		   my_printf("no\n");
 	   flag=0;
 
    }

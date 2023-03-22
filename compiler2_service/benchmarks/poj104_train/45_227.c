@@ -5,7 +5,7 @@ int f(int,int);
 int main_bench()
 {
 	int len1,len2,i;
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	for(i=0;i<=len2-len1;i++)
@@ -13,7 +13,7 @@ int main_bench()
 		if(f(len1,i)==0)
 		break;
 	}
-	printf("%d\n",i);
+	my_printf("%d\n",i);
 }
 int f(int len1,int i)
 {

@@ -4,10 +4,10 @@ int main_bench()
 {
 char a[200]={0},b[200]={0};
 int i,j,k,l,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(k=0;k<n;k++)
 {
-scanf("%s",a);
+my_scanf("%s",a);
 l=strlen(a);
 for(i=0;i<l;i++)
 if(a[i]=='(')
@@ -26,7 +26,7 @@ if(b[j]=='$')
 }
 puts(a);
 for(i=0;i<l;i++)
-printf("%c",b[i]);
-printf("\n");
+my_printf("%c",b[i]);
+my_printf("\n");
 }
 }

@@ -12,10 +12,10 @@ int main_bench()
 	int len=strlen(s);
 	for(i=0;i<len;i++){
 		if(s[i]>='0'&&s[i]<='9'&&(s[i+1]>='0'&&s[i+1]<='9')){
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 		if(s[i]>='0'&&s[i]<='9'&&(s[i+1]<'0'||s[i+1]>'9')){
-			printf("%c\n",s[i]);
+			my_printf("%c\n",s[i]);
 		}
 	}
 	return 0;

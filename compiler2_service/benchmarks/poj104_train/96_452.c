@@ -7,22 +7,22 @@ main_bench()
       int i,b,d,e;
       if (a[1]=='\0')
             {
-                 printf("0\n");
-                 printf("%c",a[0]);
+                 my_printf("0\n");
+                 my_printf("%c",a[0]);
             }
       else if (a[2]=='\0'&&a[0]-'0'==1)
       {
 
             if (a[1]-'0'<3)
             {
-                printf("0\n");
-                printf("%c",a[0]);
-                printf("%c",a[1]);
+                my_printf("0\n");
+                my_printf("%c",a[0]);
+                my_printf("%c",a[1]);
             }
             else
             {
-                printf("1\n");
-                printf("%d",a[1]-'0'-3);
+                my_printf("1\n");
+                my_printf("%d",a[1]-'0'-3);
             }
       }
        else
@@ -42,7 +42,7 @@ main_bench()
            i=1;
            while (c[i]>='0'&&c[i]<='9')
            {
-               printf("%c",c[i]);
+               my_printf("%c",c[i]);
                i++;
            }
        }
@@ -51,7 +51,7 @@ main_bench()
            i=2;
            while (c[i]>='0'&&c[i]<='9')
            {
-               printf("%c",c[i]);
+               my_printf("%c",c[i]);
                i++;
            }
        }
@@ -60,10 +60,10 @@ main_bench()
            i=0;
            while (c[i]>='0'&&c[i]<='9')
            {
-               printf("%c",c[i]);
+               my_printf("%c",c[i]);
                i++;
            }
        }
-      printf("\n%d",e);
+      my_printf("\n%d",e);
       }
 }

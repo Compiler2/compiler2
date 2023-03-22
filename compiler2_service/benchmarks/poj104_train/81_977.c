@@ -18,11 +18,11 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	int n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	int t[5];
 	if(panduan(n,m)==1)
 	{
@@ -34,14 +34,14 @@ int main_bench()
 		}
 		for(i=0;i<5;i++)
 		{
-			printf("%d",a[i][0]);
+			my_printf("%d",a[i][0]);
 		     for(j=1;j<5;j++)
 			 {
-			      printf(" %d",a[i][j]);
+			      my_printf(" %d",a[i][j]);
 			 }
-			 printf("\n");
+			 my_printf("\n");
 		}
 	}
 	else if(panduan(n,m)==0)
-		printf("error\n");
+		my_printf("error\n");
 }

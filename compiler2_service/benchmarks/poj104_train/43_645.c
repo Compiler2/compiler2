@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,a,b,i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m>=6&&m<=10000&&m%2==0)
 	{
 		for(a=2;a<=m;a++)
@@ -26,7 +26,7 @@ int main_bench()
 			}
 			}
 				  if(j==b){
-					  printf("%d %d\n",a,b);}}
+					  my_printf("%d %d\n",a,b);}}
 		}
 		}
 			}

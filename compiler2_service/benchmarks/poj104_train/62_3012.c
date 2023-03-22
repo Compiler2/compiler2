@@ -5,6 +5,6 @@ int main_bench(){
 	char z[256];
     gets(z);l=strlen(z);
 	for(i=0;i<l;i++){
-		if (z[i]!=' '||z[i-1]!=' '){printf("%c",z[i]);}	}
+		if (z[i]!=' '||z[i-1]!=' '){my_printf("%c",z[i]);}	}
 return 0;
 }

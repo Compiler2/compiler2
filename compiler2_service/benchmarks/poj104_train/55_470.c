@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,len,i,nn[100],c,k=0;
 	long m=0;
 	char n[100],nnn[100];
-	scanf("%d%s%d",&a,n,&b);
+	my_scanf("%d%s%d",&a,n,&b);
 	len=strlen(n);
 	for(i=0;i<len;i++)
 	{
@@ -32,21 +32,21 @@ int main_bench()
 	}
 	if(k==c+1)
 	{
-			printf("0");
+			my_printf("0");
 	}
 	else
 	{
 	for(i=c;i>=0;i--)
 	{
 		if(nnn[i]>=0 && nnn[i]<=9)
-			printf("%d",nnn[i]);
+			my_printf("%d",nnn[i]);
 		else if(nnn[i]>=10)
 		{
 			nnn[i]=nnn[i]-10+'A';
-			printf("%c",nnn[i]);
+			my_printf("%c",nnn[i]);
 		}
 	}
 	}
-	printf("\n");
+	my_printf("\n");
 }
 

@@ -24,12 +24,12 @@ int main_bench()
 	char *p;
 	int *tf;
 	int n,i,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(char*)malloc(sizeof(int)*25);
 	tf=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s", p);
+		my_scanf("%s", p);
 		len=strlen(p);
 		tf[i]=1;
 		if(first(p[0])==0)
@@ -49,9 +49,9 @@ int main_bench()
 	for(i=0;i<n;i++)
 	{
 		if(tf[i]==0)
-			printf("no\n");
+			my_printf("no\n");
 		if(tf[i]==1)
-			printf("yes\n");
+			my_printf("yes\n");
 	}	
 	free(p);
 	return 0;

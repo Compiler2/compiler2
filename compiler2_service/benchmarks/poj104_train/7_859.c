@@ -22,19 +22,19 @@ int main_bench()
 		k=strcmp(d,b);
 		if(k==0)
 		{
-			printf("%s",c);
+			my_printf("%s",c);
 			i=i+m;
 			break;
 		}
 		else
 		{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 		i++;
 		}
 	}
 	while(i<l)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 		i++;
 	}
 	return 0;

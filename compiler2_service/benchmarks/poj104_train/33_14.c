@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i, j, n, oper=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	char s[257];
 	gets(s);
 	for(i=0; i<n; i++)
@@ -29,9 +29,9 @@ int main_bench()
 			}
 		}
 		if(oper)
-			printf("\n");
+			my_printf("\n");
 		oper = 1;
-		printf("%s", s);
+		my_printf("%s", s);
 	}
 	return 0;
 }

@@ -8,8 +8,8 @@ int main_bench()
 	int startday, endday;
 	int year, day, month;
     day=0;
-	scanf("%d %d %d", &startyear, &startmonth, &startday);
-	scanf("%d %d %d", &endyear, &endmonth, &endday);
+	my_scanf("%d %d %d", &startyear, &startmonth, &startday);
+	my_scanf("%d %d %d", &endyear, &endmonth, &endday);
 	if(startyear!=endyear)
 	{
 	for(year=(startyear+1);year<endyear;year++)
@@ -209,7 +209,7 @@ int main_bench()
 
 				
 
-	printf("%d", day);
+	my_printf("%d", day);
 
 	return 0;
 }

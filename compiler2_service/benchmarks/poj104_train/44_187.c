@@ -35,8 +35,8 @@ int main_bench()
     int j,y;
     for(j=0;j<6;j++)
     {
-                    scanf("%d",&y);
+                    my_scanf("%d",&y);
                     int result=reverse(y);
-                    printf("%d\n",result);
+                    my_printf("%d\n",result);
     }
 }

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
 		char s[100010];
 		int t[26][2]={0};
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int i,j,k=100010;
 		for(i=0;i<strlen(s);i++)
 		{
@@ -25,8 +25,8 @@ int main_bench()
 			}
 		}
 		if(k==100010)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("%c\n",s[k]);	
+			my_printf("%c\n",s[k]);	
 	}
 } 

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int  a[100][100],n,m,i,j,k,p,q,sum=0;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<m;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	p=(n-1)/2;
@@ -18,7 +18,7 @@ int main_bench()
 		for(i=k,j=k;j<m-k;j++)
 		{
 			sum++;
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 			if(sum==n*m)
 			{
 				goto end;
@@ -28,7 +28,7 @@ int main_bench()
 		{
 			
 			sum++;
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 			if(sum==n*m)
 			{
 				goto end;
@@ -38,7 +38,7 @@ int main_bench()
 		for(i=n-1-k,j=m-k-2;j>=k;j--)
 		{
 			sum++;
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 			if(sum==n*m)
 			{
 				goto end;
@@ -48,7 +48,7 @@ int main_bench()
 		for(j=k,i=n-k-2;i>=k+1;i--)
 		{
 			sum++;
-			printf("%d\n",a[i][j]);
+			my_printf("%d\n",a[i][j]);
 			if(sum==n*m)
 			{
 				goto end;

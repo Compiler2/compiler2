@@ -15,17 +15,17 @@ int main_bench()
 		}
 	}
 	pos[j]=l+1;
-	if(j-1<0)printf("%s\n",a);
+	if(j-1<0)my_printf("%s\n",a);
 	else{
 	int m,n;
 	for(n=pos[j-1]+1;n<l;n++)
-      printf("%c",a[n]);
+      my_printf("%c",a[n]);
 	for(m=j-2;m>=0;m--)
 		for(n=pos[m];n<pos[m+1];n++)
-			printf("%c",a[n]);
-		printf(" ");
+			my_printf("%c",a[n]);
+		my_printf(" ");
 	for(n=0;n<pos[0];n++)
-        	printf("%c",a[n]);
-	printf("\n");
+        	my_printf("%c",a[n]);
+	my_printf("\n");
 	}
 }

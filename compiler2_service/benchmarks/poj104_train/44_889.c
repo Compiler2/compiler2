@@ -31,7 +31,7 @@ int main_bench()
 	for(i=0;i<6;i++)
 	{gets(str);len=strlen(str);
 	fanxu(str,len);
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 	}
 	return 0;
 }

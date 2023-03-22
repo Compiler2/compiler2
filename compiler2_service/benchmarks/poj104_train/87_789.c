@@ -3,7 +3,7 @@
 int main_bench(){
     int a,b,c,d,e,f,i,s,sum[100];
     for(i=0;i<100;i++){
-    scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+    my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
     if((a+b+c+d+e+f)!=0){
                          if(f<c){
                          f+=60;
@@ -22,7 +22,7 @@ int main_bench(){
                                }
                                }
     for(s=0;s<i;s++){
-                     printf("%d\n",sum[s]);
+                     my_printf("%d\n",sum[s]);
                      }
 
     return 0;

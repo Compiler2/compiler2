@@ -6,7 +6,7 @@ char c,d;
 int solve()
 {
  
- scanf("%c",&c);
+ my_scanf("%c",&c);
  if(c==d) {
             a[i]=j;
             j++;
@@ -15,7 +15,7 @@ int solve()
             return 0;
             }
    if(c!=d){
-            printf("%d %d\n",a[i-1],j);
+            my_printf("%d %d\n",a[i-1],j);
             i--;
             j++;
             if(i==0) return 0;
@@ -24,7 +24,7 @@ int solve()
 }
 int main_bench()
 {  
-scanf("%c",&c);
+my_scanf("%c",&c);
   d=c;
   a[i]=j;
   j++;

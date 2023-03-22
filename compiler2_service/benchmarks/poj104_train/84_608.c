@@ -2,12 +2,12 @@
 
 int main_bench(){
   int a;
-  scanf("%d\n",&a);
+  my_scanf("%d\n",&a);
   int temp,i=0,x[a],b,de;
   b=a-1;
   for(i=0;i<a;i++)
   {
-   scanf("%d\n",&x[i]);
+   my_scanf("%d\n",&x[i]);
    if(x[0]<x[i]&&i<a){
     temp=x[0];
     x[0]=x[i];
@@ -21,7 +21,7 @@ int main_bench(){
       x[i]=de;
       } 
   } 
-  printf("%d\n%d\n",x[0],x[1]);
+  my_printf("%d\n%d\n",x[0],x[1]);
   return 0;
 }
   

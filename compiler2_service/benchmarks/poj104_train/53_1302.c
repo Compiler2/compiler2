@@ -5,12 +5,12 @@ int main_bench()
 {
     int a[300];
     int n, i, j;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     }
     if (n>0) {
-        printf("%d", a[0]);
+        my_printf("%d", a[0]);
     }
     for (i=1; i<n; i++) {
         for (j=0; j<i; j++) {
@@ -19,7 +19,7 @@ int main_bench()
             }
         }
         if (i==j) {
-            printf(",%d", a[i]);
+            my_printf(",%d", a[i]);
         }
     }
     return 0;

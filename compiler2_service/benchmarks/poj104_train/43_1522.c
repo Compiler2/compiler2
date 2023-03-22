@@ -4,7 +4,7 @@ int pa(int i);
 int main_bench()
 {
 	int m,i,p,q,a,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=1;2*i<m-3;i++)
 	{
 		a=2*i+1;
@@ -13,7 +13,7 @@ int main_bench()
 		q=pa(b);
 		if(p==0&&q==0&&a<=b)
 		{
-			printf("%d %d\n",a,b);
+			my_printf("%d %d\n",a,b);
 		}
 	}
 	return 0;

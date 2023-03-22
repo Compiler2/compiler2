@@ -13,14 +13,14 @@ int main_bench()
 	char figure;
 	int i,n_book,max,*p;
 	struct info book[999];
-	scanf("%d",&n_book);
+	my_scanf("%d",&n_book);
 	for (i=0;i<n_book;i++)
 	{
-		scanf("%d %s",&book[i].num , &book[i].author);
+		my_scanf("%d %s",&book[i].num , &book[i].author);
 	}
 	p=&max;
 	figure=findoutmax(book,n_book,p);
-	printf("%c\n%d\n",figure,max);
+	my_printf("%c\n%d\n",figure,max);
 	detect(book,figure,n_book);
 	return 0;
 }
@@ -81,7 +81,7 @@ void detect(struct info b[],char writter,int nn)
 		{
 			if (b[i].author[j]==writter)
 			{
-				printf("%d\n",b[i].num);
+				my_printf("%d\n",b[i].num);
 			}
 		}
 	}

@@ -33,14 +33,14 @@ int main_bench()
     char w[50];
     int i;
     long len;
-    scanf("%s",s);
-    scanf("%s",w);
+    my_scanf("%s",s);
+    my_scanf("%s",w);
     
     len=strlen(w);
     for (i=0; i<len; i++) {
         if (s[0]==w[i]) {
             if (compare(s,w,i)==1) {
-                printf("%d",i);
+                my_printf("%d",i);
                 break;
             }
         }

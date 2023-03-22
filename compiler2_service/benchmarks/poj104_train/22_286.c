@@ -12,7 +12,7 @@ int main_bench()
 	int second=0;
 	for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		c=getchar();
 		if(c!=',')
 		{
@@ -43,10 +43,10 @@ int main_bench()
 	}
 	if(flag!=-1)
 	{
-		printf("%d",flag);
+		my_printf("%d",flag);
 	}
 	else
 	{
-		printf("No");
+		my_printf("No");
 	}
 }

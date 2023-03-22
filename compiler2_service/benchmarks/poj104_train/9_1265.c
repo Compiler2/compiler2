@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i,j,k=0,m=0,t,x;
 	char w[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct patient
 	{char id[10];
 	int age;
 	}a[100];
 	for(i=0;i<n;i++)
-		scanf("%s%d",a[i].id,&a[i].age);  
+		my_scanf("%s%d",a[i].id,&a[i].age);  
 	struct patient1
 	{char id[10];
 	int age;
@@ -60,9 +60,9 @@ int main_bench()
 		}
 	}  
 	for(i=0;i<k;i++)
-		printf("%s\n",b[i].id);  
+		my_printf("%s\n",b[i].id);  
 	for(i=0;i<m;i++)
-		printf("%s\n",c[i].id);   
+		my_printf("%s\n",c[i].id);   
 	return 0;
 }
 

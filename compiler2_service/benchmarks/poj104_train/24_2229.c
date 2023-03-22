@@ -29,6 +29,6 @@ int main_bench()
 			{max=k+1;strcpy(rmax,s);}
 			if((k+1)<min)
 			{min=k+1;strcpy(rmin,s);}
-	printf("%s\n%s",rmax,rmin);
+	my_printf("%s\n%s",rmax,rmin);
 	return 0;
 }

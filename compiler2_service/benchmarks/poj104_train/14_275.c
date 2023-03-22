@@ -9,11 +9,11 @@ struct student
 int main_bench()
 {
    int n,i,j,k;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
       int a[n];
    for(i=0;i<n;i++)
      {
-     scanf("%d %d %d",&student[i].ID,&student[i].chi,&student[i].math);      
+     my_scanf("%d %d %d",&student[i].ID,&student[i].chi,&student[i].math);      
       a[i]=student[i].chi+student[i].math;
       }
 
@@ -28,7 +28,7 @@ int main_bench()
        } 
        if(j==n&&a[i]>=a[j-1]) 
          {
-           printf("%d %d\n",student[i].ID,a[i]);
+           my_printf("%d %d\n",student[i].ID,a[i]);
            a[i]=0;
            break;
          }      

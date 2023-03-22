@@ -5,7 +5,7 @@ int main_bench()
 	int w,i,j,flag;
 	int day[12][31]={0};
 	int date[366];
-    scanf("%d",&w);
+    my_scanf("%d",&w);
 	for(i=0;i<365;i++)
 	{
 			if(w+i<8)
@@ -39,7 +39,7 @@ int main_bench()
 		for(j=0;j<31;j++)
 		{
 			if(j==12&&day[i][j]==4)
-				printf("%d\n",i+1);
+				my_printf("%d\n",i+1);
 		
 		}
 	}

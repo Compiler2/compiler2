@@ -11,10 +11,10 @@ int main_bench()
     for(i=0;i<strlen(ch)-1;i++)
     {
            c=*(s+i)+*(s+i+1);
-           printf("%c",c);   
+           my_printf("%c",c);   
     }
     c=*s+*(s+strlen(ch)-1);
-    printf("%c",c);
+    my_printf("%c",c);
      return 0;
 }               
                              

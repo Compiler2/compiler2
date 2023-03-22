@@ -7,7 +7,7 @@ int main_bench()
 	b=-1;
 	a=0;
 	char str2[100];
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	for(i=0;i<10;i++)
 	{		if(str1[i]!='\0')
 		{a++;}
@@ -25,6 +25,6 @@ int main_bench()
 			b=i;
 			}
         if(b!=-1)
-		{printf("%d",b);break;}
+		{my_printf("%d",b);break;}
 	}
 }

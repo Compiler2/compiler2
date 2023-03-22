@@ -6,11 +6,11 @@ int main_bench()
 {
     char zfc[1000][256];
 	int n,y;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=0;i<n-1;i++){
-		scanf("%s\n",zfc[i]);
+		my_scanf("%s\n",zfc[i]);
 	}
-	scanf("%s",zfc[n-1]);
+	my_scanf("%s",zfc[n-1]);
 	for(int i=0;i<n;i++){
         y=strlen(zfc[i]);
 		for(int j=0;j<y;j++){
@@ -27,7 +27,7 @@ int main_bench()
 				zfc[i][j]='C';
 			}
 		}
-		printf("%s\n",zfc[i]);
+		my_printf("%s\n",zfc[i]);
 	}
 	return 0;
 }

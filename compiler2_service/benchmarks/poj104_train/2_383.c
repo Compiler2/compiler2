@@ -17,10 +17,10 @@ int main_bench(){
 		b[i].wri='A'+i;
 		b[i].sum=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i].num);
-		scanf("%s",a[i].id);
+		my_scanf("%d",&a[i].num);
+		my_scanf("%s",a[i].id);
 	}
 
     for(j=0;j<26;j++){
@@ -39,11 +39,11 @@ int main_bench(){
 			m=j;
 		}
 	}
-	printf("%c\n%d\n",b[m].wri,max);
+	my_printf("%c\n%d\n",b[m].wri,max);
     for(i=0;i<n;i++){
          for(k=0;k<26;k++){
 			 if(a[i].id[k]==b[m].wri)
-				 printf("%d\n",a[i].num);
+				 my_printf("%d\n",a[i].num);
 		 }
 	}
 

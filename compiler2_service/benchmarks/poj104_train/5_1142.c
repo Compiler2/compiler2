@@ -4,7 +4,7 @@ int main_bench(){
 	int i,k=0,len,panduan=0;
 	double r,n;
 	char a[501],b[501];
-	scanf("%lf%s%s",&n,&a,&b);
+	my_scanf("%lf%s%s",&n,&a,&b);
 	len=strlen(a);
 	if(len!=strlen(b)){
 		panduan=1;
@@ -22,14 +22,14 @@ int main_bench(){
 	r=1.0*k/len;
 	}
 	if(panduan==1){
-		printf("error");
+		my_printf("error");
 	}
 	else{
 		if(r>n){
-		printf("yes");
+		my_printf("yes");
 		}
 		else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	

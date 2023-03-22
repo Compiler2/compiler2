@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int b,c,d,e,n;
 	n=2;
 	while(n<=a){
 		if(n==2)
 		{
-			scanf("%d %d",&d,&e);
+			my_scanf("%d %d",&d,&e);
 			if(d>=e){
 				b=d;
 				c=e;
@@ -17,7 +17,7 @@ int main_bench(){
 			c=d;}
 		}
 		else{
-			scanf("%d",&d);
+			my_scanf("%d",&d);
 			if(d>=b){
 				c=b;
 				b=d;
@@ -27,6 +27,6 @@ int main_bench(){
 		}
 	n++;
 	}
-	printf("%d\n%d\n",b,c);
+	my_printf("%d\n%d\n",b,c);
 	return 0;
 }

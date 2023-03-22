@@ -10,12 +10,12 @@ main_bench()
 	int sum;
 	for(;;)
 	{
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a==0) break;
 		else
 		{
 			sum=i(d,e,f)+3600*12-i(a,b,c);
-			printf("%d\n",sum);
+			my_printf("%d\n",sum);
 		}
 	}
 	return 0;

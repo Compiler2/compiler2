@@ -10,9 +10,9 @@ int main_bench()
 	int n,i,m,k,f,j;
 	char e[10];
     m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",&pat[i].num,&pat[i].age);
+		my_scanf("%s%d",&pat[i].num,&pat[i].age);
 		if(pat[i].age>=60){
 		    strcpy(e,pat[i].num);
 			f=pat[i].age;
@@ -36,7 +36,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",pat[i].num);
+		my_printf("%s\n",pat[i].num);
 	}
 	return 0;
 }

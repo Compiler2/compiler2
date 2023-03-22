@@ -32,9 +32,9 @@ int main_bench()
 		}
 	}
 	for(i=(e[1]-len[1]);i<e[1];i++){
-		printf("%c",word[i]);
+		my_printf("%c",word[i]);
 	}
-	printf("\n");
+	my_printf("\n");
     for(j=1;j<l;j++){
 		for(i=j+1;i<=l;i++){
 			if(len[i]<len[j]){
@@ -48,9 +48,9 @@ int main_bench()
 		}
 	}
 	for(i=(e[1]-len[1]);i<e[1];i++){
-		printf("%c",word[i]);
+		my_printf("%c",word[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }
 

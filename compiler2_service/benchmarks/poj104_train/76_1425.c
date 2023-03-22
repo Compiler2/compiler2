@@ -3,9 +3,9 @@
 int main_bench(){
   int zuo[10000],you[10000],n,i,j,a,b=0;
   double s;
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for(i=0;i<n;i++){
-       scanf("%d %d\n",&zuo[i],&you[i]);
+       my_scanf("%d %d\n",&zuo[i],&you[i]);
        if(b<you[i])b= you[i];
    }
    a=zuo[0];
@@ -19,8 +19,8 @@ if(a>zuo[i])a=zuo[i];
 if(j==n)break;
 }
 
-   if(s>b)  printf("%d %d",a,b);
-    else printf("no");
+   if(s>b)  my_printf("%d %d",a,b);
+    else my_printf("no");
    return 0;
 }
 

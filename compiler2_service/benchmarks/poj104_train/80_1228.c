@@ -11,8 +11,8 @@ int main_bench()
 	int i,k,days;
 	int flag;
 
-	scanf("%d%d%d",&startYear,&startMonth,&startDay);
-	scanf("%d%d%d",&endYear,&endMonth,&endDay);
+	my_scanf("%d%d%d",&startYear,&startMonth,&startDay);
+	my_scanf("%d%d%d",&endYear,&endMonth,&endDay);
 
 	days=0;
 
@@ -39,7 +39,7 @@ int main_bench()
 				days+=endDay-startDay;
 			}
 		}
-		printf("%d",days);
+		my_printf("%d",days);
 		return 0;
 	}
 
@@ -78,6 +78,6 @@ int main_bench()
 					days+=month1[k];
 		}
 	}
-	printf("%d",days);
+	my_printf("%d",days);
 	return 0;
 }

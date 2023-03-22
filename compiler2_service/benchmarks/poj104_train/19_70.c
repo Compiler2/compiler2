@@ -20,9 +20,9 @@ int main_bench()
 	for(i=0;i<=m;i++)
 	{
 		if(i<m)
-			printf("%s ",z[i]);
+			my_printf("%s ",z[i]);
 		if(i==m)
-			printf("%s",z[i]);
+			my_printf("%s",z[i]);
 	}
 	return 0;
 }

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int m,j,w,e;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int judge(int a);
 	for(j=2;j<=m/2;j++)
 	{
 		w=judge(j);
 		e=judge(m-j);
 		if(w==1&&e==1)
-			printf("%d %d\n",j,m-j);
+			my_printf("%d %d\n",j,m-j);
 	}
 
 	return 0;

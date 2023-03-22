@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,x,y,z,r,s;
-	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);a=a-1;
+	my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);a=a-1;
 	x=366*(a/4-a/100+a/400-1)+365*(a-(a/4-a/100+a/400)+1);a=a+1;
 	if((a%4==0&&a%100!=0)||(a%400==0))
 	{
@@ -80,5 +80,5 @@ int main_bench()
 		}
 	}
 	r=x+y+f;
-	s=r-z;printf("%d",s);
+	s=r-z;my_printf("%d",s);
 }

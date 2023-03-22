@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,num[1000],m,a[1000][26],k,sum[26],max=0,b;
 	char writer[1000][26],letter[27]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=0;k<26;k++)
 	{
 		sum[k]=0;
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&num[i],writer[i]);
+		my_scanf("%d%s",&num[i],writer[i]);
 	}
 	for(k=0;k<26;k++)
 	{
@@ -48,14 +48,14 @@ int main_bench()
 			b=k;
 		}	
 	}
-	printf("%c\n%d\n",letter[b],max);
+	my_printf("%c\n%d\n",letter[b],max);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<26;j++)
 		{
 			if(writer[i][j]==letter[b])
 			{
-				printf("%d\n",num[i]);
+				my_printf("%d\n",num[i]);
 			}
 		}
 	}

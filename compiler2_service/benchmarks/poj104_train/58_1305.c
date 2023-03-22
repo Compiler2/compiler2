@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,count=0,k,i;
 	char zf[800][81],z;
-	scanf("%d%c",&n,&z);
+	my_scanf("%d%c",&n,&z);
 	for(i=0;i<n;i++){
 		gets(zf[i]);
 	}
@@ -22,9 +22,9 @@ int main_bench(){
 			count++;
 		}
 		if(count!=0){
-			printf("0\n");
+			my_printf("0\n");
 		}else{
-			printf("1\n");
+			my_printf("1\n");
 		}
 		k=0;
 		count=0;

@@ -36,7 +36,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<=p;i++){
-		printf("%d %d\n",res[i].man,res[i].woman);
+		my_printf("%d %d\n",res[i].man,res[i].woman);
 	}
 	return 0;
 }

@@ -5,11 +5,11 @@ int Days(int x, int y, int z);
 int main_bench()
 {
 	int a[3],b[3],n;
-	scanf("%d%d%d",&a[0],&a[1],&a[2]);
-	scanf("\n");
-	scanf("%d%d%d",&b[0],&b[1],&b[2]);
+	my_scanf("%d%d%d",&a[0],&a[1],&a[2]);
+	my_scanf("\n");
+	my_scanf("%d%d%d",&b[0],&b[1],&b[2]);
 	n=Days(b[0],b[1],b[2])-Days(a[0],a[1],a[2]);
-	printf("%d\n",n);
+	my_printf("%d\n",n);
 }
 
 

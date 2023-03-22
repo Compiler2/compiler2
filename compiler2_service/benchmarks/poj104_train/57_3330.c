@@ -3,9 +3,9 @@
 int main_bench(){
     int n,k,i,j,len;
     char ci[50][50];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-            scanf("%s",ci[i]);
+            my_scanf("%s",ci[i]);
             }
     char *ps;
     
@@ -26,7 +26,7 @@ int main_bench(){
     }
 
 	for( i=0;i<n;i++){
-            printf("%s\n",ci[i]);
+            my_printf("%s\n",ci[i]);
             }
     return 0;
 }

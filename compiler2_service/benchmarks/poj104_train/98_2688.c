@@ -3,25 +3,25 @@
 int main_bench()
 {
     int n,c=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char s[41];
-    scanf("%s",s);
-    printf("%s",s);
+    my_scanf("%s",s);
+    my_printf("%s",s);
     n--;
     c=strlen(s)+1;
     while(n--)
     {
-        scanf("%s",s);
+        my_scanf("%s",s);
         c+=strlen(s);
         if(c>80)
         {
             c=strlen(s)+1;
-            printf("\n");
-            printf("%s",s);
+            my_printf("\n");
+            my_printf("%s",s);
         }
         else
         {
-            printf(" %s",s);
+            my_printf(" %s",s);
             c++;
         }
     }

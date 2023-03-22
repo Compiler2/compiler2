@@ -5,7 +5,7 @@ int main_bench()
 {
 	char boy, girl;
 	char p[100];
-	scanf("%s", p);
+	my_scanf("%s", p);
 	
 	boy = p[0];
 	int i, j, k = 0;
@@ -35,7 +35,7 @@ int main_bench()
 	{
 		if(a[i].c == boy && a[i + 1].c == girl)
 		{
-			printf("%d %d\n", a[i].id, a[i + 1].id);
+			my_printf("%d %d\n", a[i].id, a[i + 1].id);
 			k += 2;
 			for(j = i; j < strlen(p) - k; j++)
 			{

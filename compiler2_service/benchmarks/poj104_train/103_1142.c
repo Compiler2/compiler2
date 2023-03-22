@@ -5,7 +5,7 @@ main_bench()
     int i,n;
     char str[1100];
     int a[26]={0};
-    scanf("%s",str);
+    my_scanf("%s",str);
     str[strlen(str)]=str[strlen(str)-1]+1;
     for(i=0;i<strlen(str)-1;i++)
     {
@@ -24,12 +24,12 @@ main_bench()
                 a[str[i]-'a']++; 
             if(str[i]-'A'<26)
             {    
-                printf("(%c,%d)",str[i],a[str[i]-'A']);
+                my_printf("(%c,%d)",str[i],a[str[i]-'A']);
                 a[str[i]-'A']=0;
             }
             else
             {
-                printf("(%c,%d)",str[i]-'a'+'A',a[str[i]-'a']);
+                my_printf("(%c,%d)",str[i]-'a'+'A',a[str[i]-'a']);
                 a[str[i]-'a']=0;
             }
         }

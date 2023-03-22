@@ -5,13 +5,13 @@ int main_bench()
 {
 int n, i, u[100], a, b=0,g[100];
 float  sum=0;
-scanf("%d", &n);
+my_scanf("%d", &n);
 for(i=0;i<n;i++){
-	scanf("%d",&u[i]);
+	my_scanf("%d",&u[i]);
 	b=b+u[i];
 }
 for(i=0;i<n;i++){
-	scanf("%d",&g[i]);
+	my_scanf("%d",&g[i]);
 	if(g[i]<=100&&g[i]>=90){
 		sum=u[i]*4.0+sum;
 	}
@@ -44,6 +44,6 @@ else 	if(g[i]<=59&&g[i]>=0){
 	}
 }
 
-printf("%.2f", sum/b);
+my_printf("%.2f", sum/b);
 			return 0;
 	}

@@ -4,10 +4,10 @@ int main_bench()
 {
  char s[1000][256],zfc[1000][256];
  int  i,j,l,n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
   {
-    scanf("%s",&s[i]);
+    my_scanf("%s",&s[i]);
  }
   for(i=0;i<n;i++){
     l=strlen(s[i]);
@@ -23,7 +23,7 @@ int main_bench()
     }
 }
 zfc[i][j]='\0';
-printf("%s\n",zfc[i]);
+my_printf("%s\n",zfc[i]);
 }
 return 0;
 }

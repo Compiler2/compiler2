@@ -5,7 +5,7 @@ int main_bench()
 	char a[100];
 	char b[100];
 	int i,j,len1,len2,flag;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	len1=strlen(a);
 	len2=strlen(b);
 	char *p;
@@ -28,7 +28,7 @@ int main_bench()
 			}
 			if(flag==0)
 			{
-				printf("%d",i);
+				my_printf("%d",i);
 				break;
 			}
 		}

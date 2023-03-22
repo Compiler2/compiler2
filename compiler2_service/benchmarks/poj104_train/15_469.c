@@ -6,15 +6,15 @@ int main_bench()
 	int shu[1000][1000];
 	int n,a,b,c,d,l;
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for (j=1;j<=n;j++)
 		{
-			scanf("%d",&shu[i][j]);
+			my_scanf("%d",&shu[i][j]);
             
 		}
-		scanf("\n");
+		my_scanf("\n");
 	}
 	for(i=1;i<=n;i++)
 	{
@@ -41,6 +41,6 @@ int main_bench()
 		}
 		if(c!=0)break;
 	}
-	printf("%d",(c-a-1)*(d-b-1));
+	my_printf("%d",(c-a-1)*(d-b-1));
 return 0;
 }

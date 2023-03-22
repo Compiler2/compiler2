@@ -9,14 +9,14 @@ int main_bench()
    double b;
    }num[301];
    double aver,sum=0;
-   scanf("%d",&n);
-   printf("\n");
+   my_scanf("%d",&n);
+   my_printf("\n");
    for(i=0;i<n;i++)
    {
-	   scanf("%d ",&num[i].a);
+	   my_scanf("%d ",&num[i].a);
 	   sum=sum+num[i].a;
    }
-   printf("\n");
+   my_printf("\n");
    aver=sum/n;
    
    for(i=0;i<n;i++)
@@ -49,12 +49,12 @@ int main_bench()
 	   }
    }
    if(k==0)
-	   printf("%d",num[0].a);
+	   my_printf("%d",num[0].a);
    else
    {
-       printf("%d",num[0].a);
+       my_printf("%d",num[0].a);
    for(i=1;i<k+1;i++)
-	   printf(",%d",num[i].a);
+	   my_printf(",%d",num[i].a);
    }
 }
 

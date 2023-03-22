@@ -23,8 +23,8 @@ int main_bench()
 			if(y=='y')
 			{
 				for(j=i;j<l+i;j++)
-					printf("%c",str[j]);
-                printf("\n");
+					my_printf("%c",str[j]);
+                my_printf("\n");
 			}
 		}
 	}

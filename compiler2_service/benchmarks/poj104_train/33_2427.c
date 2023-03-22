@@ -5,35 +5,35 @@ int main_bench()
 	int n;
 	int i;
 	char c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
 		while(1)
 		{
-			scanf("%c",&c);
+			my_scanf("%c",&c);
 			if(c=='\n')
 			{
 			break;
 			}
 			else if(c=='A')
 			{
-				printf("T");
+				my_printf("T");
 			}
 			else if(c=='T')
 			{
-				printf("A");
+				my_printf("A");
 			}
 			else if(c=='G')
 			{
-				printf("C");
+				my_printf("C");
 			}
 			else if(c=='C')
 			{
-				printf("G");
+				my_printf("G");
 			}
 		}
-        printf("\n");
+        my_printf("\n");
 		
 	}
 	

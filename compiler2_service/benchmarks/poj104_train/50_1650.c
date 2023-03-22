@@ -24,7 +24,7 @@ int dijitian(int m,int d)
 int main_bench()
 {
 	int w,k,i,p;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		k=dijitian(i,13)-dijitian(1,1);
@@ -35,7 +35,7 @@ int main_bench()
 		}
 		if(((p+w)%7)==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 		
 	}

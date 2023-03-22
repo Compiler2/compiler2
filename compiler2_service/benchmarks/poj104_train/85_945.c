@@ -4,9 +4,9 @@ int main_bench(){
 int n,t;
 char a[50];
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(int i=0;i<n;i++){
-	scanf("%s",a);
+	my_scanf("%s",a);
 	t=1;
 	if((a[0]<'A'||a[0]>'Z')&&(a[0]<'a'||a[0]>'z')&&a[0]!='_'){
 		t=0;
@@ -18,10 +18,10 @@ for(int i=0;i<n;i++){
 		}
 	}
 	if(t==0){
-		printf("no\n");
+		my_printf("no\n");
 	}
 	else if(t==1){
-		printf("yes\n");
+		my_printf("yes\n");
 	}
 }
 

@@ -7,11 +7,11 @@ int main_bench()
 
     int n,i,m,a,p,q,b;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
-    scanf("%d",&p);
+    my_scanf("%d",&p);
 
-    scanf("%d",&q);
+    my_scanf("%d",&q);
 
     if(p>q){
 
@@ -33,7 +33,7 @@ b=q;
 
     while(i<=n){
 
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 
     if(m>a){
 
@@ -53,7 +53,7 @@ else if(m>b){
 
     }
 
-    printf("%d\n%d\n",a,b);
+    my_printf("%d\n%d\n",a,b);
 
     return 0;
 

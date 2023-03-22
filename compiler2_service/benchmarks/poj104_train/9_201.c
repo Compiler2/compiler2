@@ -9,11 +9,11 @@ int main_bench()
 	}
 	*p;
 	int n, i, k, num=0, m=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(struct pa*)malloc(sizeof(struct pa)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",p[i].ID, &p[i].age);
+		my_scanf("%s%d",p[i].ID, &p[i].age);
 		if(p[i].age>=60) num++;
 	}
 	
@@ -46,7 +46,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",p[i].ID);
+		my_printf("%s\n",p[i].ID);
 	}
 	free(p);
 	return 0;

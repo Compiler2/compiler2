@@ -6,7 +6,7 @@ int main_bench()
 	int i,num,j,k;
 	for(i=0;i<550;i++)
 	{
-		scanf("%c", &s[i]);
+		my_scanf("%c", &s[i]);
 		if(s[i]=='\n')
 		{
 			s[i]=0;
@@ -28,7 +28,7 @@ int main_bench()
 			}
 			*(p1+i)='\0';
 			*(p2+i)='\0';
-			if(strcmp(p1,p2)==0) printf("%s\n", p1);
+			if(strcmp(p1,p2)==0) my_printf("%s\n", p1);
 		}
 		free(p1);
 		free(p2);

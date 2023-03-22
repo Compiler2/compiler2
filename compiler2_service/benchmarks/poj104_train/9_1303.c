@@ -10,10 +10,10 @@ int main_bench()
 	int n,i,j,k,r,s;
 	s=0;
 	r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",sick[i].num);
-		scanf("%d",&sick[i].age);
+		my_scanf("%s",sick[i].num);
+		my_scanf("%d",&sick[i].age);
 	}
 	int old[101]={0};
 	int young[101]={0};
@@ -43,10 +43,10 @@ int main_bench()
 		}
 	}
 	for(i=0;i<s;i++){
-		printf("%s\n",sick[old[i]].num);
+		my_printf("%s\n",sick[old[i]].num);
 	}
 	for(i=0;i<r;i++){
-		printf("%s\n",sick[young[i]].num);
+		my_printf("%s\n",sick[young[i]].num);
 	}
 
 	return 0;

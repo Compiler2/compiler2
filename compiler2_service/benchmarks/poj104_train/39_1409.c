@@ -20,14 +20,14 @@ int main_bench()
 	int n,i;
 	stu1.total=0;
 	stu.total=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",stu1.name,&stu1.mark1,&stu1.mark2,&stu1.judge1,&stu1.judge2,&stu1.paper);
+		my_scanf("%s%d%d %c %c%d",stu1.name,&stu1.mark1,&stu1.mark2,&stu1.judge1,&stu1.judge2,&stu1.paper);
 		compare(stu1);
 		
 	}
-	printf("%s\n%.0lf\n%.0lf\n",stu.name,stu.total,max);
+	my_printf("%s\n%.0lf\n%.0lf\n",stu.name,stu.total,max);
 }
 void compare(struct student temp)
 {

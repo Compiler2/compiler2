@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,b,c,d,e,f;
 	char a[1000][1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	}}
     c=-1;
 	for(i=0;i<n;i++){
@@ -29,7 +29,7 @@ int main_bench()
 	}
 
 	b=(e-c-1)*(f-d-1);
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }
 

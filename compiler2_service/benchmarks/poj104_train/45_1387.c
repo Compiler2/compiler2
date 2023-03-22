@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[50],w[50];
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	int sl,wl,i,j,p;
 	sl=strlen(s);
 	wl=strlen(w);
@@ -23,5 +23,5 @@ int main_bench()
 		}
 	}
 	p=p-sl+1;
-	if(j==sl) printf("%d",p);
+	if(j==sl) my_printf("%d",p);
 }

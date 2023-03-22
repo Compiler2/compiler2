@@ -6,9 +6,9 @@ int main_bench()
     int a[100],b[100];
     char str1[100][10],str2[100][10];
     char string[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%s %d",str1[i],&a[i]);
+    my_scanf("%s %d",str1[i],&a[i]);
     for(p=0,s=0;p<n;p++)
     {
     if(a[p]>=60)
@@ -34,11 +34,11 @@ int main_bench()
      }
      }
      for(j=0;j<s;j++)
-     printf("%s\n",str2[j]);
+     my_printf("%s\n",str2[j]);
      for(r=0;r<n;r++)
      {
      if(a[r]<60)
-     printf("%s\n",str1[r]);
+     my_printf("%s\n",str1[r]);
      }
      getchar();
      getchar();

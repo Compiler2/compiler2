@@ -9,13 +9,13 @@ int main_bench()
 
 	int n,row,col;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	char s0[110];
 
 	for(row=0;row<n;row++){
 
-		scanf("%s",s0);
+		my_scanf("%s",s0);
 
 		for(col=0;col<n;col++){
 
@@ -47,7 +47,7 @@ int main_bench()
 
 	char szz[110][110];
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=0;i<m-1;i++){
 
@@ -95,7 +95,7 @@ int main_bench()
 
 	}
 
-	printf("%d",s);
+	my_printf("%d",s);
 
 	return 0;
 

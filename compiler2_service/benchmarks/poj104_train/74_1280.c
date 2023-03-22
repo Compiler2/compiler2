@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,h,g,sum,a,k,b[10];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(k=0,i=m;i<=n;i++)
 	{	for(j=2;j<=i/2;j++)
 	{
@@ -27,10 +27,10 @@ int main_bench()
 	 
 	}
 	if(k==0)
-		printf("no");
+		my_printf("no");
 	else
 	{for(i=0;i<=(k-2);i++)
-		{	printf("%d,",b[i]);}
-	printf("%d",b[k-1]);}
+		{	my_printf("%d,",b[i]);}
+	my_printf("%d",b[k-1]);}
 
 }

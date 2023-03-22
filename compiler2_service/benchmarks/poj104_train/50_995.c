@@ -15,7 +15,7 @@ int day(int mouth)
 int main_bench()
 {
 	int i, w, date=0;
-	scanf("%d", &w);
+	my_scanf("%d", &w);
 	w=13%7+w-1;
 	if(w>7) w=w-7;
 	for(i=0;i<12;i++)
@@ -23,7 +23,7 @@ int main_bench()
        w=day(i)%7+w;
        if(w>7) w=w-7;
 	   if(w==5) 
-		  printf("%d\n", i+1);
+		  my_printf("%d\n", i+1);
 	}
 	return 0;
 }

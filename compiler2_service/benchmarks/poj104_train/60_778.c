@@ -11,7 +11,7 @@ int S(int a){
 
 int main_bench(){
 	int n,i,j=0,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int*s=(int*)malloc(sizeof(int)*n);
 	for(i=2;i<=n;i++){
 		if(S(i)){
@@ -20,9 +20,9 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<j-1;i++){
-		if(s[i+1]-s[i]==2) {printf("%d %d\n",s[i],s[i+1]);k++;}
+		if(s[i+1]-s[i]==2) {my_printf("%d %d\n",s[i],s[i+1]);k++;}
 	}
-	if(k==0) printf("empty");
+	if(k==0) my_printf("empty");
 	free(s);
 	return 0;
 }

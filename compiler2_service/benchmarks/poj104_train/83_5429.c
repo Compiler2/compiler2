@@ -8,16 +8,16 @@ int main_bench(){
     int xf[10];
     int df[10];
     double gpa[10];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
         if(i==n-1){
-            scanf("%d\n",&(xf[i]));
+            my_scanf("%d\n",&(xf[i]));
         }else{
-            scanf("%d",&(xf[i]));
+            my_scanf("%d",&(xf[i]));
         }
     }
     for(i=0;i<n;i++){
-        scanf("%d",&(df[i]));
+        my_scanf("%d",&(df[i]));
     }
     for(i=0;i<10;i++){
         if(df[i]>=90){
@@ -47,7 +47,7 @@ int main_bench(){
         sum2+=xf[i];
     }
     GPA=1.0*sum1/sum2;
-    printf("%.2lf",GPA);
+    my_printf("%.2lf",GPA);
     return 0;
 }
 

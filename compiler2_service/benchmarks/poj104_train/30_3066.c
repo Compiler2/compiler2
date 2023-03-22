@@ -5,7 +5,7 @@ int main_bench()
     int n,i,a,b,c;
     int he;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     he=0;
     for(i=1;i<=n;i++)
@@ -17,5 +17,5 @@ int main_bench()
     	he=he+i*i;
     }
     
-    printf("%d",he);
+    my_printf("%d",he);
 }

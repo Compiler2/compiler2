@@ -2,10 +2,10 @@
 
 int main_bench()
 {int n,v[20000],m=0,s[20000],p=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(int i=0;i<=n-1;i++)
  {
-   scanf("%d",&v[i]);
+   my_scanf("%d",&v[i]);
  }
 for(int j=1;j<=n-1;j++)
  { 
@@ -18,13 +18,13 @@ for(int j=1;j<=n-1;j++)
    p=0;
  }
 if(m==0)
- {printf("%d",v[0]);}
+ {my_printf("%d",v[0]);}
 else
-{printf("%d ",v[0]);}
+{my_printf("%d ",v[0]);}
 for(int k=0;k<=m-1;k++)
  {
-   if(k==m-1){printf("%d",s[k]);}
-   else {printf("%d ",s[k]);}     
+   if(k==m-1){my_printf("%d",s[k]);}
+   else {my_printf("%d ",s[k]);}     
  }
 
 }

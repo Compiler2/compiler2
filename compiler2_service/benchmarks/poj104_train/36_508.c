@@ -21,12 +21,12 @@ int main_bench()
 {
 	char a[10000],b[10000];
 	int len1,len2;
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
     len1=strlen(a);len2=strlen(b);
 	kjj(a,len1);
 	kjj(b,len2);
 	if(strcmp(a,b)==0&&len1==len2)
-		printf("YES");
+		my_printf("YES");
 	else
-		printf("NO");
+		my_printf("NO");
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,z,a=0,b=0;
 	int sa[100],sb[100];
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d%d",&sa[i],&sb[i]);
+	my_scanf("%d%d",&sa[i],&sb[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sa[i]==0&&sb[i]==1){
@@ -25,9 +25,9 @@ a=a+1;}
 	}
 }
 	if(a>b){
-	printf("A");}
+	my_printf("A");}
 else if(a<b){
-	printf("B");}
+	my_printf("B");}
 else if(a=b){
-	printf("Tie");}
+	my_printf("Tie");}
 	return 0;}

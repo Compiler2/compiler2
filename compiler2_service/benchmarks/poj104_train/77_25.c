@@ -12,7 +12,7 @@ void doit(char a[],int n)
 	{
 		if(a[j]==a[0])break;
 	}
-	printf("%d %d\n",j,i);
+	my_printf("%d %d\n",j,i);
 	a[j]='\0',a[i]='\0';
 	if(a[0]!='\0')doit(a,n);
 }
@@ -21,7 +21,7 @@ int main_bench()
 {
 	char a[100];
 	int n;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	n=strlen(a);
 	doit(a,n);
 }

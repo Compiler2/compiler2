@@ -7,7 +7,7 @@ int main_bench()
 	int i,j;
 	int mark;
 	int len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(s);
 	for(i=0;i<n;i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 			mark=mark;
 		else
 			{
-			  printf("no\n");
+			  my_printf("no\n");
 		      continue;
 			}
 		for(j=1;j<len;j++)
@@ -28,9 +28,9 @@ int main_bench()
 			else mark=mark+1;
 		}
 		if(mark==0)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 
 	}
 	return 0;

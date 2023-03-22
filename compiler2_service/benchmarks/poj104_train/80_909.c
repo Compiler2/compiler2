@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a[13][32],b[373],i,j,k,y1,m1,d1,y2,m2,d2,q,x1,x2,q1,q2,fuhao;
-	scanf("%d%d%d",&y1,&m1,&d1);
-	scanf("%d%d%d",&y2,&m2,&d2);
+	my_scanf("%d%d%d",&y1,&m1,&d1);
+	my_scanf("%d%d%d",&y2,&m2,&d2);
 	for(i=1;i<13;i++)
 	{
 		for(j=1;j<32;j++)
@@ -51,7 +51,7 @@ int main_bench()
 		if(m2==2&&d2==29)q1=q1+1;
 	}
 	q=q+q1;
-	printf("%d",q);
+	my_printf("%d",q);
 	return 0;
 
 

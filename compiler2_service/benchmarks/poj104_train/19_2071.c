@@ -42,12 +42,12 @@ q[m]=n;
 
 	for(i=0;i<m;i++){
 		for(j=0;j<q[i];j++){
-		printf("%c",s[i][j]);
+		my_printf("%c",s[i][j]);
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	
 		for(j=0;j<q[m];j++){
-		printf("%c\0",s[i][j]);
+		my_printf("%c\0",s[i][j]);
 		}											
 	return 0;}

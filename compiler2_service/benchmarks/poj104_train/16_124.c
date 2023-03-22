@@ -7,10 +7,10 @@
 int main_bench()
 {
 	int n,b,c=11,i=1,j=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	if (n==0)
-		printf("%d",n);
+		my_printf("%d",n);
 	else
 		
 		
@@ -18,7 +18,7 @@ int main_bench()
 		{
 			
 			b=n%10;
-			printf("%d",b);	
+			my_printf("%d",b);	
 			n=n/10;
 			
 			

@@ -4,16 +4,16 @@ void s(int m);
 main_bench()
 {
 	int a,b;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	s(a);
-	printf(" ");
+	my_printf(" ");
 	s(b);
 }
 void s(int m)
 {
 	int i,j,c[1000],d;
 	for(i=0;i<m;i++)
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<m-i-1;j++)
@@ -28,8 +28,8 @@ void s(int m)
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%d",c[i]);
+		my_printf("%d",c[i]);
 		if(i!=m-1)
-			printf(" ");
+			my_printf(" ");
 	}
 }

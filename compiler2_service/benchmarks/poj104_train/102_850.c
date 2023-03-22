@@ -9,11 +9,11 @@ int main_bench()
 	double q;
 	int k=0;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++)
 	{
-		scanf("%s", sex[i]);
-		scanf("%lf", &p[i]);
+		my_scanf("%s", sex[i]);
+		my_scanf("%lf", &p[i]);
 		if(sex[i][0]=='m')
 		{
 			m[j] = p[i];
@@ -43,11 +43,11 @@ int main_bench()
 			}
 	}
 
-	printf("%.2lf", m[0]);
+	my_printf("%.2lf", m[0]);
 	for(i = 1; i<=j-1; i++)
-		printf(" %.2lf", m[i]);
+		my_printf(" %.2lf", m[i]);
 	for(i = 0; i<=l-1; i++)
-		printf(" %.2lf", f[i]);
+		my_printf(" %.2lf", f[i]);
 
 	return 0;
 }

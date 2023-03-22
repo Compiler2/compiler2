@@ -15,11 +15,11 @@ int max()
 }
 int main_bench()
 {
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	while(getchar()==',')
 	{
 		i++;
-		scanf("%d",&a[i]);	
+		my_scanf("%d",&a[i]);	
 	}
 	m=max();
 	for(s=0;s<=i;s++)
@@ -27,7 +27,7 @@ int main_bench()
 			a[s]=-1;
 	n=max();
 	if(n!=-1)
-		printf("%d",n);
+		my_printf("%d",n);
 	else
-		printf("No");
+		my_printf("No");
 }

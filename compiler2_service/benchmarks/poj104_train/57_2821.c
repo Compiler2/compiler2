@@ -5,10 +5,10 @@ int main_bench()
 	int n,a=0;
 	int i,j,k;
 	char sf[50][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",sf[i]);
+		my_scanf("%s",sf[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,7 +25,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",sf[i]);
+		my_printf("%s\n",sf[i]);
 	}
 	return 0;
 }

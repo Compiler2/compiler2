@@ -19,7 +19,7 @@ main_bench()
 	int k=0;
 	int a[11]={0};
 	int b[11]={0};
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	a[0]=m;
 	b[0]=n;
 	for(i=1;i<10;i++)
@@ -48,5 +48,5 @@ main_bench()
 		if(c>0)
 			break;
 	}
-	printf("%d",a[i]);
+	my_printf("%d",a[i]);
 }

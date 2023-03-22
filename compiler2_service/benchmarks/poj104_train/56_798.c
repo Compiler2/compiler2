@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a[5]={0},n,s,r,b,j,i,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	s=0;
 	for(r=0;r<5;r++)
 	{
@@ -21,5 +21,5 @@ int main_bench()
 		else
 			s=s;
 	}
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }

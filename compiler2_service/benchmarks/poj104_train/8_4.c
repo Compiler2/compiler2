@@ -4,7 +4,7 @@ int main_bench()
 {
 	void pai(int na,int nb);
 	int na,nb;
-	scanf("%d%d",&na,&nb);
+	my_scanf("%d%d",&na,&nb);
 	pai(na,nb);
 
 }
@@ -14,11 +14,11 @@ void pai(int na,int nb)
 	int t,i,j,a[200],b[100];
 	for(i=0;i<na;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<nb;i++)
 	{
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 
 	for(j=0;j<na-1;j++)
@@ -48,10 +48,10 @@ void pai(int na,int nb)
 	}
 	
 	for(j=0;j<na;j++)
-		printf("%d ",a[j]);
+		my_printf("%d ",a[j]);
 	for(j=0;j<nb-1;j++)
-		printf("%d ",b[j]);
-	printf("%d\n",b[nb-1]);
+		my_printf("%d ",b[j]);
+	my_printf("%d\n",b[nb-1]);
 	
 
 

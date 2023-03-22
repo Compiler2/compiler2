@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j,a[1000][1000],m=0,p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
     for(i=1;i<=n;i++)
@@ -28,6 +28,6 @@ int main_bench()
 		if(q>p)
 			m=m+q-p-1;
 	}
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	return 0;
 }

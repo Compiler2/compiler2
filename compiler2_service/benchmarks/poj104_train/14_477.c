@@ -12,9 +12,9 @@ int main_bench()
 	struct student stu[100000];
 	struct student tempt;
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&stu[i].num,&stu[i].Chinese,&stu[i].Maths);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].Chinese,&stu[i].Maths);
 		stu[i].total=stu[i].Chinese+stu[i].Maths;
 	}
 	if(stu[2].total>stu[1].total){
@@ -47,7 +47,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",stu[0].num,stu[0].total);
-	printf("%d %d\n",stu[1].num,stu[1].total);
-	printf("%d %d\n",stu[2].num,stu[2].total);
+	my_printf("%d %d\n",stu[0].num,stu[0].total);
+	my_printf("%d %d\n",stu[1].num,stu[1].total);
+	my_printf("%d %d\n",stu[2].num,stu[2].total);
 }

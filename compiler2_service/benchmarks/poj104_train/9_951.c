@@ -11,9 +11,9 @@ int main_bench()
   p=p1=p2=p3=head1=head2=head3=(struct peo *)malloc
 
 (sizeof(struct peo));
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for (i=1;i<=n;i++)
-   { scanf("%s%d",&p1->num,&p1->old);
+   { my_scanf("%s%d",&p1->num,&p1->old);
      if (i==1) head1=p1;
      else p2->next=p1;
      p2=p1;
@@ -36,6 +36,6 @@ int main_bench()
    }
  p=head2;
  for (i=1;i<=n;i++)
-  {printf("%s\n",p->num);p=p->next;}
+  {my_printf("%s\n",p->num);p=p->next;}
  
 }

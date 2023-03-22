@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n, i;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     char sz[n][33];
     int num[n];
     for(i=0; i<n; i++){
-        scanf("%s", &sz[i]);
+        my_scanf("%s", &sz[i]);
         num[i]=strlen(sz[i]);
     }
     for(i=0; i<n; i++){
@@ -25,6 +25,6 @@ int main_bench(){
         }
     }
     for(i=0; i<n; i++){
-        printf("%s\n", sz[i]);
+        my_printf("%s\n", sz[i]);
     }
 }

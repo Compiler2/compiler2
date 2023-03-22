@@ -17,9 +17,9 @@ int main_bench()
 			b[i]=b[i]+32;
 	}
     if(strcmp(a,b)<0)
-		printf("<");
+		my_printf("<");
     if(strcmp(a,b)>0)
-		printf(">");
+		my_printf(">");
 	if(strcmp(a,b)==0)
-		printf("=");
+		my_printf("=");
 }

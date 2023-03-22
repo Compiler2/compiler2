@@ -4,7 +4,7 @@ int main_bench()
 {
 	int sz[100];
 	int g,d,n,i,k=0,j,q;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		sz[i]=0;
@@ -12,7 +12,7 @@ int main_bench()
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&g,&d);
+		my_scanf("%d%d",&g,&d);
 		if(g>=90&&g<=140&&d>=60&&d<=90)
 		{
 			sz[k]=sz[k]+1;
@@ -35,7 +35,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",sz[0]);
+	my_printf("%d",sz[0]);
 	return 0;
 }
 

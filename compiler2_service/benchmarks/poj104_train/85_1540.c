@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j;
 	char str[21],temp[21];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(str);
@@ -25,16 +25,16 @@ int main_bench()
 			temp[j]='\0';
 			if(strcmp(temp,str)==0)
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 			}
 			else
 			{
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

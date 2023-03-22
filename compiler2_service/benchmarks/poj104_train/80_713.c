@@ -3,7 +3,7 @@
 int main_bench() 
 {
 	int startYear,startMonth,startDay,endYear,endMonth,endDay;                           
-	scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);   
+	my_scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);   
 	int sum=0,sumYear=0,sumMonth=0,sumDay=0;                                             
 	int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};                                     
 	int b[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};                                     
@@ -52,6 +52,6 @@ int main_bench()
 		   }
 	}
 	sum=sumDay+sumMonth+sumYear;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

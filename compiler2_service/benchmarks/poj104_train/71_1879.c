@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,x,y,z,i,day,j,t;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;i<=n;i++)
 	{
-		scanf("%d%d%d",&x,&y,&z);
+		my_scanf("%d%d%d",&x,&y,&z);
 		day=0;
 		if(y>z){t=y;y=z;z=t;}
 		if((x%400==0)||(x%100!=0&&x%4==0))
@@ -31,8 +31,8 @@ int main_bench()
          for(j=y-1;j<z-1;j++)
 				 day=day+md[j];
 		}
-        if(day%7==0)printf("YES\n");
-		else printf("NO\n");
+        if(day%7==0)my_printf("YES\n");
+		else my_printf("NO\n");
 	}
 
 	return 0;

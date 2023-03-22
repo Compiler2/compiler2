@@ -5,11 +5,11 @@ int main_bench()
 {
 	int i,j,k;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int list[n];
 
 	for (i=0; i<n; i++) {
-		scanf("%d",&list[i]);
+		my_scanf("%d",&list[i]);
 	}
 
 	for (j=n-2;j>=n-3;j--) {
@@ -21,7 +21,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n%d",list[n-1],list[n-2]);
+	my_printf("%d\n%d",list[n-1],list[n-2]);
 
 	return 0;
 }

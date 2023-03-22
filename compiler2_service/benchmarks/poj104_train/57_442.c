@@ -5,12 +5,12 @@ int main_bench()
     void str(char a[100]);
     int n,i;
     char b[100],c[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        scanf("%s",b);
+        my_scanf("%s",b);
         str(b);
-        printf("%s\n",b);
+        my_printf("%s\n",b);
     }
 }
 void str(char a[100])

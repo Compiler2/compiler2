@@ -3,12 +3,12 @@
 int main_bench()
 {
 int a[100][100],n,t,i,k=0,j,b,c,d,e;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
 for(j=0;j<n;j++)
 {
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 if(a[i][j]==0&&k==0)
 {
 b=i;
@@ -30,7 +30,7 @@ k++;
 }
 }
 t=(d-b-1)*(e-c-1);
-printf("%d\n",t);
+my_printf("%d\n",t);
 return 0;
 }
 

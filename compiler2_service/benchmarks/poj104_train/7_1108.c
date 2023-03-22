@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,e=0,k,l=0;
 	char a[260]={'\0'},b[260]={'\0'},c[260]={'\0'};
-	scanf("%s %s %s",b,a,c);
+	my_scanf("%s %s %s",b,a,c);
 	for(i=0;i<strlen(b);i++){
 		if(b[i]==a[0]){
 			for(j=0;j<strlen(a);j++){
@@ -19,14 +19,14 @@ int main_bench()
 
 	if(l==1){
 		for(i=0;i<k;i++){
-			printf("%c",b[i]);
+			my_printf("%c",b[i]);
 		}
-		printf("%s",c);
+		my_printf("%s",c);
 		for(i=k+strlen(a);i<strlen(b);i++){
-			printf("%c",b[i]);		
+			my_printf("%c",b[i]);		
 	}}
 	else 
-		printf("%s",b);
+		my_printf("%s",b);
 	return 0;
 }
 

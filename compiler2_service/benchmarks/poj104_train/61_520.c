@@ -5,10 +5,10 @@ int main_bench()
 {
 	int k,sz[100],i,szresult[100];
 	sz[100]=0;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<=k-1;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<=k-1;i++)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 	}
 	for(i=0;i<=k-1;i++)
 	{
-		printf("%d\n",szresult[i]);
+		my_printf("%d\n",szresult[i]);
 	}
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench(){
 	int value,i;
 	int num[6],mdy[5];
 
-	scanf("%d",&value);
+	my_scanf("%d",&value);
 
 	if(value>=100)
 	{
@@ -55,7 +55,7 @@ int main_bench(){
 	num[5]=mdy[4];
 
 	for(i=0;i<6;i++){
-		printf("%d\n",num[i]);
+		my_printf("%d\n",num[i]);
 	}
 
 	return 0;

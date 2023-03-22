@@ -10,8 +10,8 @@ int main_bench()
  *(p+n)=' ';
  for(k=0,i=0;i<=n;i++)
  {if(*(s+i)==' '&&*(s+i-1)!=' '){
-  if(i==n){printf("%d",k);k=0;}
-  else{printf("%d,",k);k=0;}
+  if(i==n){my_printf("%d",k);k=0;}
+  else{my_printf("%d,",k);k=0;}
  }
   if(*(s+i)!=' ') k++;
  }

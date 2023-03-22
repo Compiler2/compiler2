@@ -5,14 +5,14 @@ int main_bench()
    int n;
    int o,e,p,f;
   
-   scanf("%d",&n);
+   my_scanf("%d",&n);
     int num[100][100];
 	for(int a=0;a<n;a++)
 
 	{
 		for(int b=0;b<n;b++)
 		{
-			scanf("%d",&num[a][b]);
+			my_scanf("%d",&num[a][b]);
 		}
 	}
 	for(int c=0;c<=n;c++)
@@ -46,9 +46,9 @@ int main_bench()
 	i=-(o-e-1)*(p-f-1)/7;
 	if(i==9)
 	{
-	printf("%d",i);
+	my_printf("%d",i);
 	}
 	 else if(i==3)
-		printf("%d",i-1);
+		my_printf("%d",i-1);
 		return 0;}
 

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	typedef struct{
 		char name[20];
 		char ganbu;
@@ -19,7 +19,7 @@ int main_bench()
 	for(p=a;p<a+n;p++)
 	{
 		p->money=0;
-		scanf("%s %d %d %c %c %d",&p->name,&p->qimo,&p->qizhong,&p->ganbu,&p->xibu,&p->lunwen);
+		my_scanf("%s %d %d %c %c %d",&p->name,&p->qimo,&p->qizhong,&p->ganbu,&p->xibu,&p->lunwen);
 		if((p->qimo>80)&&(p->lunwen>=1))
 		(p->money)+=8000;
 		if((p->qimo>85)&&(p->qizhong>80))
@@ -34,5 +34,5 @@ int main_bench()
 		max=p;
 		sum+=p->money;
 	}
-	printf("%s\n%d\n%d",max->name,max->money,sum);
+	my_printf("%s\n%d\n%d",max->name,max->money,sum);
 }

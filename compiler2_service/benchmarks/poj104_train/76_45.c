@@ -9,10 +9,10 @@ int main_bench()
       int i,j,n,k;
       int l=0;
       int swap1,swap2;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-          scanf("%d%d",&st[i].a,&st[i].b);
+          my_scanf("%d%d",&st[i].a,&st[i].b);
       }
       for(i=0;i<n-1;i++)
       {
@@ -45,11 +45,11 @@ int main_bench()
                       }
                       if(i != n)
                       {
-                                 printf("no");
+                                 my_printf("no");
                        }
 else
 {
-    printf("%d %d",st[0].a,t);
+    my_printf("%d %d",st[0].a,t);
 }
 
       return 0;

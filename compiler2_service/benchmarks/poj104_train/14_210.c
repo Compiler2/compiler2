@@ -14,10 +14,10 @@ int main_bench(){
            };
     struct stu a[100001];
     
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     
     for (i=0; i<n; i++){
-        scanf ("%d %d %d", &a[i].id, &a[i].chn, &a[i].math);
+        my_scanf ("%d %d %d", &a[i].id, &a[i].chn, &a[i].math);
         (a[i].total)=(a[i].chn)+(a[i].math);
     }
     
@@ -33,9 +33,9 @@ int main_bench(){
         }
     }
     
-    printf("%d %d\n", a[n-1].id, a[n-1].total);
-    printf("%d %d\n", a[n-2].id, a[n-2].total);
-    printf("%d %d\n", a[n-3].id, a[n-3].total);
+    my_printf("%d %d\n", a[n-1].id, a[n-1].total);
+    my_printf("%d %d\n", a[n-2].id, a[n-2].total);
+    my_printf("%d %d\n", a[n-3].id, a[n-3].total);
     
     return 0;
     }

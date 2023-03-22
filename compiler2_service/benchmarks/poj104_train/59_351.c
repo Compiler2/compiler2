@@ -4,7 +4,7 @@ main_bench()
 {
 	char k[100];
 	int a[100][100],i,j,l,n,d,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	k[0]=getchar();
 	for(i=0;i<n;i++)
 	{
@@ -19,7 +19,7 @@ main_bench()
 				a[i][j]=2;
 		}
 	}
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 	for(l=0;l<d;l++)
 	{
 		for(i=0;i<n;i++)
@@ -57,5 +57,5 @@ main_bench()
 		for(j=0;j<n;j++)
 			if(a[i][j]>=2)
 			t++;			
-			printf("%d\n",t);
+			my_printf("%d\n",t);
 }

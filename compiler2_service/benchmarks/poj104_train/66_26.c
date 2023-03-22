@@ -2,7 +2,7 @@
 
 int main_bench()
 {   int year,month,day;
-    scanf("%d %d %d",&year,&month,&day);
+    my_scanf("%d %d %d",&year,&month,&day);
 	int j=1;
 	int s=year%400;
 	int mday=0;
@@ -28,14 +28,14 @@ int main_bench()
 	m=n%7;
 	switch(m)
 	{
-	case 1:printf("Sat.");break;
+	case 1:my_printf("Sat.");break;
 
-     case 2:printf("Sun.");break;
-     case 3:printf("Mon.");break;
-     case 4:printf("Tue.");break;
-     case 5:printf("Wed.");break;
-     case 6:printf("Thu.");break;
-	 default:printf("Fri.");	}
+     case 2:my_printf("Sun.");break;
+     case 3:my_printf("Mon.");break;
+     case 4:my_printf("Tue.");break;
+     case 5:my_printf("Wed.");break;
+     case 6:my_printf("Thu.");break;
+	 default:my_printf("Fri.");	}
 		return 0;
 }
 

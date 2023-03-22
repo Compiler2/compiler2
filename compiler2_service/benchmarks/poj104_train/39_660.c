@@ -14,13 +14,13 @@ struct stu{
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a[i].name);
-		scanf("%d%d",&a[i].final,&a[i].cla);
-		scanf("%s",a[i].ban);
-		scanf("%s",a[i].xi);
-		scanf("%d",&a[i].pap);
+		my_scanf("%s",a[i].name);
+		my_scanf("%d%d",&a[i].final,&a[i].cla);
+		my_scanf("%s",a[i].ban);
+		my_scanf("%s",a[i].xi);
+		my_scanf("%d",&a[i].pap);
 	}
     for(i=0;i<n;i++){
 		a[i].sum=0;
@@ -44,6 +44,6 @@ int main_bench()
 		}
         zong=zong+a[i].sum;
 	}
-	printf("%s\n%d\n%d\n",a[t].name,a[t].sum,zong);
+	my_printf("%s\n%d\n%d\n",a[t].name,a[t].sum,zong);
 	return 0;
 }

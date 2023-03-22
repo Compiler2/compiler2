@@ -37,22 +37,22 @@ int huiwen(int n)
 int main_bench()
 {
 	int a,b,i,flag=0;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	for(i=a;i<=b;i++)
 	{
 		if(huiwen(i)==1&&sushu(2,i)==1&&flag==0)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			flag=1;
 		}
 		else if((huiwen(i)==1)&&(sushu(2,i)==1)&&(flag==1))
 		{
-			printf(",%d",i);
+			my_printf(",%d",i);
 		}
 	}
 	if(flag==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

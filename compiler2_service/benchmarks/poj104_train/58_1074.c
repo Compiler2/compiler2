@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,k,m,n;
 	char a[100]={'\0'};
 	char*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<=n;j++)
 	{
 		gets(a);
@@ -16,7 +16,7 @@ int main_bench()
 		k=0;
 		if(*p>='0'&&*p<='9')
 		{
-			printf("0\n");
+			my_printf("0\n");
 		}else
 		{
 			for(i=0;i<m;i++)
@@ -28,10 +28,10 @@ int main_bench()
 			}
 			if(k==m)
 			{
-				printf("1\n");
+				my_printf("1\n");
 			}else
 			{
-				printf("0\n");
+				my_printf("0\n");
 			}
 		}
 		

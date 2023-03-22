@@ -8,10 +8,10 @@ int main_bench()
 	}students[100000];
 	int i;
 	int STUDENT_NUM;
-	scanf("%d",&STUDENT_NUM);
+	my_scanf("%d",&STUDENT_NUM);
 	for (i=0;i<STUDENT_NUM;i++)
 	{
-		scanf("%d %d %d",&num,&chi,&math);
+		my_scanf("%d %d %d",&num,&chi,&math);
 		students[i].num=num;
 		students[i].chi=chi;
 		students[i].math=math;
@@ -67,7 +67,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",num1,sum1);
-	printf("%d %d\n",num2,sum2);
-	printf("%d %d\n",num3,sum3);
+	my_printf("%d %d\n",num1,sum1);
+	my_printf("%d %d\n",num2,sum2);
+	my_printf("%d %d\n",num3,sum3);
 }

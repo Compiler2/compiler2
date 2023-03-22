@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,an[10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int j=0;
     for(i=n;i>0;i=i/10)
     {
@@ -12,7 +12,7 @@ int main_bench()
     }
     for(i=0;i<j;i++)
     {
-     printf("%d",an[i]);
+     my_printf("%d",an[i]);
     }
     return 0;
 }

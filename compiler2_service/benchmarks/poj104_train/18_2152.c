@@ -29,7 +29,7 @@ int main_bench()
 {
 	int i,j,t,k;
 	int a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	k=0;
 	while(k<n)
 	{
@@ -37,7 +37,7 @@ int main_bench()
     t=0;
 	for(i=0;i<n;i=i+1)
 		for(j=0;j<n;j=j+1)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=1;i<=n-1;i=i+1)
 	{
 		down1(a,i-1);
@@ -48,8 +48,8 @@ int main_bench()
 		for(j=i;j<n;j=j+1)
 			a[j][i]=a[j][i-1];
 	}
-	printf("%d",t);
-	if(k<n)  printf("\n");
+	my_printf("%d",t);
+	if(k<n)  my_printf("\n");
 	}
 	return 0;
 }

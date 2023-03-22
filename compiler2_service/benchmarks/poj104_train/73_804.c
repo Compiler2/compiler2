@@ -8,7 +8,7 @@ int main_bench()
 	{   max=0;
 	    for (j=1;j<=5;j++)
 		{
-			scanf("%d",&a[i-1][j-1]);
+			my_scanf("%d",&a[i-1][j-1]);
 		    if (a[i-1][j-1]>max)
 			{ 
 			 max=a[i-1][j-1];
@@ -31,13 +31,13 @@ int main_bench()
 		}
 		if (exist1==0)
 		{
-			printf("%d %d %d",hang+1,lie+1,a[hang][lie]);
+			my_printf("%d %d %d",hang+1,lie+1,a[hang][lie]);
 			exist2=1;
 		}
 		exist1=0;
 	}
 	if (exist2==0)
-		printf("%s","not found");
+		my_printf("%s","not found");
 	getchar();
 return 0;
 }

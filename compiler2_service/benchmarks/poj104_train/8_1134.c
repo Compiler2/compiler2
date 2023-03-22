@@ -6,16 +6,16 @@ int main_bench()
 	void read(int a[],int n);
 	void sort(int a[],int n);
 	void print(int a[],int n);
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	read(a,m);read(b,n);
 	sort(a,m);sort(b,n);
-	print(a,m);printf(" ");print(b,n);
+	print(a,m);my_printf(" ");print(b,n);
 }
 void read(int a[],int n)
 {
 	int i;
 	for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 }
 void sort(int a[],int n)
 {	int i,j,t;
@@ -27,7 +27,7 @@ void sort(int a[],int n)
 void print(int a[],int n)
 	{int i;
 	for(i=0;;i++)
-		{printf("%d",a[i]);
+		{my_printf("%d",a[i]);
 	     n--;
-	     if(n)printf(" ");
+	     if(n)my_printf(" ");
 		 else break;}}

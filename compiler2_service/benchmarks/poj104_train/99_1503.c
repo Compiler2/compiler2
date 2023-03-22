@@ -7,9 +7,9 @@ int main_bench(){
     b=0;
     c=0;
     d=0;
-  scanf("%d", &n);
+  my_scanf("%d", &n);
   for(i=0;i<n;i++){
-   scanf("%d", &year);
+   my_scanf("%d", &year);
    if(year<=18 && year>=1){
       a++;}
   if(year>18 && year<=35){
@@ -19,9 +19,9 @@ int main_bench(){
     if(year>60){
      d++;}
           }
-     printf("1-18: %.2lf", a/n*100); printf("%%\n");
-    printf("19-35: %.2lf", b/n*100); printf("%%\n");
-    printf("36-60: %.2lf", c/n*100); printf("%%\n");
-      printf("60??: %.2lf", d/n*100); printf("%%\n");
+     my_printf("1-18: %.2lf", a/n*100); my_printf("%%\n");
+    my_printf("19-35: %.2lf", b/n*100); my_printf("%%\n");
+    my_printf("36-60: %.2lf", c/n*100); my_printf("%%\n");
+      my_printf("60??: %.2lf", d/n*100); my_printf("%%\n");
      return 0;
      }

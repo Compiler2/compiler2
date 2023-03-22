@@ -12,8 +12,8 @@ int main_bench()
  memset(b,0,100);
 
  gets(s);
- scanf("%s",a);
- scanf("%s",b);
+ my_scanf("%s",a);
+ my_scanf("%s",b);
 
  l=strlen(a);
  m=strlen(s);
@@ -35,13 +35,13 @@ int main_bench()
   if(e==0)
   {
    s[i]='\0';
-   printf("%s",str);
-   printf("%s",b);
+   my_printf("%s",str);
+   my_printf("%s",b);
    str=s+i+j;
    break;
   }
 
  }
- printf("%s",str);
+ my_printf("%s",str);
  return 0;
 }

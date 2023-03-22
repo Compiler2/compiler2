@@ -10,12 +10,12 @@ int main_bench()
 	char a;
 	while(1)
 	{
-		scanf("%d%c",&people[size++][0],&a);
+		my_scanf("%d%c",&people[size++][0],&a);
 		if(a!=',')break;
 	}
 	for(int i=0;i<size;i++)
 	{
-		scanf("%d%c",&people[i][1],&a);
+		my_scanf("%d%c",&people[i][1],&a);
 	}
 	for(int i=0;i<size;i++)
 	{
@@ -29,5 +29,5 @@ int main_bench()
 		if(myarray[i]>num) num=myarray[i];
 	}
 
-	printf("%d %d\n",size,num);
+	my_printf("%d %d\n",size,num);
 }

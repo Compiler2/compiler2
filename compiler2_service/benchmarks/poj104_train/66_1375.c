@@ -4,7 +4,7 @@
 int main_bench(){
 	int y,m,d,z=0,i,k=0;
 	int md[12]={31,28,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	while(y>2800)
 		y-=2800;
 	for(i=1;i<y;i++){
@@ -17,19 +17,19 @@ int main_bench(){
 		z++;
 	z+=365*y+d+k-1;
 	if(z%7==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	else if(z%7==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	else if(z%7==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	else if(z%7==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	else if(z%7==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	else if(z%7==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	else
-		printf("Sun.");
+		my_printf("Sun.");
 	return 0;
 }
 int run(int y){

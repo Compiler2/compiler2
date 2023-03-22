@@ -14,9 +14,9 @@ int main_bench()
 					int money;
 	} stu[103];
 	struct st s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	 scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,
+	 my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].score,
 	&stu[i].pingyi,&stu[i].position,&stu[i].area,&stu[i].essay);
 		for(i=0;i<n;i++)
 		{
@@ -46,7 +46,7 @@ int main_bench()
 				{
 					s=stu[i];stu[i]=stu[j];stu[j]=s;
 				}
-    printf("%s\n%d\n%ld\n",stu[0].name,stu[0].money,sum);	
+    my_printf("%s\n%d\n%ld\n",stu[0].name,stu[0].money,sum);	
 	
 	
 }

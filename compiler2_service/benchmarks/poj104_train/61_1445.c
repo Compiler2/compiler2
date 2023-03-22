@@ -13,12 +13,12 @@ int f(int x){
 }
 int main_bench(){
 	int n,y,m[1000],h[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(y=0;y<n;y++){
-		scanf("%d",&m[y]);
+		my_scanf("%d",&m[y]);
 		h[y]=f(m[y]);
 	}for(y=0;y<n;y++){
-		printf("%d\n",h[y]);
+		my_printf("%d\n",h[y]);
 	}
 	return 0;
 }

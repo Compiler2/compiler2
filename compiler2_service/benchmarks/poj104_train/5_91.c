@@ -5,9 +5,9 @@ int main_bench()
 	double m,n;
 	int len1,len2,count=0,i;
 	char s1[100],s2[100];
-	scanf("%lf",&m);
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%lf",&m);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
 	if(len1==len2)
@@ -24,14 +24,14 @@ int main_bench()
 		}
 		n=1.0*count/len1;
 		if(count>=len1+1)
-			printf("error\n");
+			my_printf("error\n");
 		if(n>m&&n<=1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else if(n<=m)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	else
-		printf("error\n");
+		my_printf("error\n");
 	return 0;
 	
 }

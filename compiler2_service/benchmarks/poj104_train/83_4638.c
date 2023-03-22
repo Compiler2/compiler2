@@ -3,16 +3,16 @@
 int main_bench(){
 	int n;
 	double GPA;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sf[n],df[n];
 	double x;
 	for(int i=0;i<n;i++){
-		scanf("%d",&sf[i]);
+		my_scanf("%d",&sf[i]);
 		x=x+sf[i];
 	}
 	double q=0,f=0;
 	for(int m=0;m<n;m++){
-		scanf("%d",&df[m]);
+		my_scanf("%d",&df[m]);
 		if(df[m]>=90){
 			q=4.0;
 }else if(df[m]>=85){
@@ -39,7 +39,7 @@ f=f+q*sf[m];
 	}
 	
 	GPA=f/x;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 	return 0;
 }
 

@@ -39,9 +39,9 @@ main_bench()
       for(int i=6;i>0;i--)
       {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       reverse(n);
-     printf("%d\n",reverse(n));
+     my_printf("%d\n",reverse(n));
      }
       getchar();
       getchar();

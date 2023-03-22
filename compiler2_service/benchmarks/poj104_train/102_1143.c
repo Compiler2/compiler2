@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j,x=0,y=0;
 	double h,a[100],b[100];
 	char c[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %lf",c,&h);
+		my_scanf("%s %lf",c,&h);
 		if(c[0]=='m'){
 			a[x]=h;
 			x++;
@@ -37,10 +37,10 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%.2lf",a[0]);
+	my_printf("%.2lf",a[0]);
 	for(i=1;i<x;i++)
-	printf(" %.2lf",a[i]);
+	my_printf(" %.2lf",a[i]);
 	for(i=0;i<y;i++)
-	printf(" %.2lf",b[i]);
+	my_printf(" %.2lf",b[i]);
 	return 0;
 }

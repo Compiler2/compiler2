@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,temp;
     char s[1000][1000],*p;
-    scanf ("%d\n",&n);
+    my_scanf ("%d\n",&n);
     for (i=0;i<n;i++)
     gets (s[i]);
     for (i=0;i<n;i++)
@@ -12,7 +12,7 @@ int main_bench()
         temp=0;
         p=&s[i][0];
         if (*p!='_' && isalpha(*p)==0)
-        printf ("0\n");
+        my_printf ("0\n");
         else
         {
             for (p=s[i]+1;*p!='\0';p++)
@@ -21,9 +21,9 @@ int main_bench()
                 temp++;
             }
             if (temp!=0)
-            printf ("0\n");
+            my_printf ("0\n");
             if (temp==0)
-            printf ("1\n");
+            my_printf ("1\n");
             
         }
     }

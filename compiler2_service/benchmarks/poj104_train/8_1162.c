@@ -10,10 +10,10 @@ int * shuru(int m,int *a)
 {
 	a=(int *)malloc(m*sizeof(int));
 	int i;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<m;i++)
 	{
-		scanf(" %d",&a[i]);
+		my_scanf(" %d",&a[i]);
 	}
 	return a;
 }
@@ -22,20 +22,20 @@ int main_bench()
     int suma,sumb,i;
     int *a;
     int *b;
-    scanf("%d %d",&suma,&sumb);
+    my_scanf("%d %d",&suma,&sumb);
     a=shuru(suma,a);
     b=shuru(sumb,b);
     qsort(a,suma,sizeof(int),Compare);
     qsort(b,sumb,sizeof(int),Compare);
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for(i=1;i<suma;i++)
     {
-    	printf(" %d",a[i]);
+    	my_printf(" %d",a[i]);
     }
-    printf(" %d",b[0]);
+    my_printf(" %d",b[0]);
     for(i=1;i<sumb;i++)
     {
-    	printf(" %d",b[i]);
+    	my_printf(" %d",b[i]);
     }
     free(a);
     free(b);

@@ -4,17 +4,17 @@ int main_bench()
 {
 	char a[200]={0};
 	gets(a);
-	printf("%c",a[0]);
+	my_printf("%c",a[0]);
 	int i;
 	for(i=1;i<strlen(a);i++)
 	{
 		if ( a[i] == ' ' && a[i-1] != ' ')
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 		else if (a[i]!=' ')
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 	return 0;

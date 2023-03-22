@@ -8,10 +8,10 @@ int reverse(int num);
 int a[8];
 for(i=0;i<6;i++)
 {
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 l=reverse(n);
-printf("%d\n",l);
+my_printf("%d\n",l);
 }
 getchar();
 getchar();

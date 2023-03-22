@@ -15,15 +15,15 @@ void find(int m,int j,int *p)
 int main_bench()
 {
     int n,m,i,j;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     int count=0;
                     int *p;
                     p=&count;
-                    scanf("%d",&m);
+                    my_scanf("%d",&m);
                     find(m,2,p);
-                    printf("%d\n",count);
+                    my_printf("%d\n",count);
     }
 
     return 0; 

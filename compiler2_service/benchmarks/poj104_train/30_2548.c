@@ -3,13 +3,13 @@
 int yu7wuguan (int n);
 int main_bench(){
 	int result=0,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=1;i<=n;i++){
 		if(yu7wuguan(i)){
 			result+=i*i;
 		}
 	}
-	printf("%d",result);
+	my_printf("%d",result);
 	return 0;
 }
 int yu7wuguan(int n){

@@ -14,18 +14,18 @@ main_bench()
                          s=s-13*b[i];
                          if(b[i]!=0)
                          {
-                                    printf ("%d",b[i]);
+                                    my_printf ("%d",b[i]);
                                     x=1;
                          }
                          else
                          {
                              if(x==1)
-                             printf ("%d",b[i]);
+                             my_printf ("%d",b[i]);
                          }
     }
     if(x==0)
-    printf("0");
-   printf("\n%d",s);
+    my_printf("0");
+   my_printf("\n%d",s);
 
            
 }

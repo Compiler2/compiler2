@@ -7,17 +7,17 @@ int main_bench()
     y=(int *)malloc(200*sizeof(int));
     m2=(int *)malloc(200*sizeof(int));
     m1=(int *)malloc(200*sizeof(int));
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%d %d %d",y+i,m1+i,m2+i);
+                    my_scanf("%d %d %d",y+i,m1+i,m2+i);
     }
     void judge(int x,int y,int z);
     for(i=0;i<n;i++)
     {
                     if(i>0)
                     {
-                           printf("\n");
+                           my_printf("\n");
                     }
                     judge(*(y+i),*(m1+i),*(m2+i));
     }
@@ -49,11 +49,11 @@ void judge(int x,int y,int z)
      }
      if(a==0)
      {
-             printf("YES");
+             my_printf("YES");
      }
      else
      {
-         printf("NO");
+         my_printf("NO");
      }
 }
 

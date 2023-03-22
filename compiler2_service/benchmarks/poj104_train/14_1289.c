@@ -24,7 +24,7 @@ struct student *creat()
 		p2=p1;
 		p1=(struct student *)malloc(sizeof(struct student));
 		p2->next=p1;
-		scanf("%d %d %d",&p2->num,&p2->chn,&p2->math);
+		my_scanf("%d %d %d",&p2->num,&p2->chn,&p2->math);
 		p2->ovr=p2->chn+p2->math;
 	}
 	p2->next=0;
@@ -36,7 +36,7 @@ int main_bench()
 	int no1,ovr1=0;
 	struct student *head;
 	struct student *p1,*p2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	head=creat();
 	p1=p2=head;
 	for(i=0;i<3;i++)
@@ -52,7 +52,7 @@ int main_bench()
 			}
 			p1=p1->next;
 		}
-		printf("%d %d\n",no1,ovr1);
+		my_printf("%d %d\n",no1,ovr1);
 		p2->ovr=0;
 		ovr1=0;
 

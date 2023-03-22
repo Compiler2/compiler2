@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,k,e,j=0,q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int *)malloc(sizeof(int)*n);
 	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		
 	}
 	;
@@ -45,8 +45,8 @@ int *sz2=(int *)malloc(sizeof(int)*j);
 	}
 for(i=j-1;i>0;i--)
 {
-printf("%d,",sz2[i]);
+my_printf("%d,",sz2[i]);
 }
-printf("%d\n",sz2[0]);
+my_printf("%d\n",sz2[0]);
 	return 0;
 }

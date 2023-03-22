@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,j,panduan=1;
 	char s[100][100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-    	scanf("%s",s[i]);
+    	my_scanf("%s",s[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -63,11 +63,11 @@ int m=strlen(s[i]);
 
 		if(panduan==1)
 		{
-			   printf("yes\n");
+			   my_printf("yes\n");
 		}
 		else if(panduan==0)
 		{
-			   printf("no\n");
+			   my_printf("no\n");
 		}
 		
 	}

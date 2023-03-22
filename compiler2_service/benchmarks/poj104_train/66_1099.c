@@ -6,16 +6,16 @@ int main_bench()
 {
     int sy,year1,month1,day1;
    
-    scanf("%d%d%d",&year1,&month1,&day1);
+    my_scanf("%d%d%d",&year1,&month1,&day1);
      
 sy=(DiJiTian(year1, month1,day1)+1*(year1-1)+((year1-1)/4-(year1-1)/100+(year1-1)/400))%7; 
-if(sy==0)printf("Sun.");
-if(sy==1)printf("Mon.");
-if(sy==2)printf("Tue.");
-if(sy==3)printf("Wed.");
-if(sy==4)printf("Thu.");
-if(sy==5)printf("Fri.");
-if(sy==6)printf("Sat.");
+if(sy==0)my_printf("Sun.");
+if(sy==1)my_printf("Mon.");
+if(sy==2)my_printf("Tue.");
+if(sy==3)my_printf("Wed.");
+if(sy==4)my_printf("Thu.");
+if(sy==5)my_printf("Fri.");
+if(sy==6)my_printf("Sat.");
 
 return 0;
 }

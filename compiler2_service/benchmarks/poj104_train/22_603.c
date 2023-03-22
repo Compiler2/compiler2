@@ -33,6 +33,6 @@ int main_bench()
 			if(num[i]>re) re=num[i];
 		}
 	}
-	if(p==1) printf("%d",re);
-	else printf("No");
+	if(p==1) my_printf("%d",re);
+	else my_printf("No");
 }

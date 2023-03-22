@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,k,a,b,c;
 	int z[1000];
-	scanf("%d",&n);
-	scanf("%d",&k);
+	my_scanf("%d",&n);
+	my_scanf("%d",&k);
 	c=0;
 	for(a=0;a<=n-1;a++)
 	{
-		scanf("%d",&z[a]);
+		my_scanf("%d",&z[a]);
 	}
     for(a=0;a<=n-1;a++)
 	{
@@ -18,8 +18,8 @@ int main_bench()
 			if (z[a]+z[b]==k) c=1;
 		}
 	}
-	if (c==1) printf("yes");
-	else printf("no");
+	if (c==1) my_printf("yes");
+	else my_printf("no");
 	return 0;
 }
 

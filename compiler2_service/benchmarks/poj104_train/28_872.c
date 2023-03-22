@@ -18,7 +18,7 @@ int main_bench()
   else {
    if(p==0){
       tem[i]='\0';
-   printf("%d",strlen(tem));
+   my_printf("%d",strlen(tem));
    i=0;
    p=1;
    for (j=m+1;;j++){
@@ -30,7 +30,7 @@ int main_bench()
    }
    else { 
    tem[i]='\0';
-   printf(",%d",strlen(tem));
+   my_printf(",%d",strlen(tem));
    i=0;
    for (j=m+1;;j++){
 	   if (s[j]!=' '){

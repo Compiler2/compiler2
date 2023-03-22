@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,t=0,flag=0,l;
 	float x;
 	char str[2][100];
-	scanf("%f%s%s",&x,str[0],str[1]);
+	my_scanf("%f%s%s",&x,str[0],str[1]);
 	if(strlen(str[0])!=strlen(str[1]))
 		flag=1;
 	else
@@ -27,13 +27,13 @@ int main_bench()
 	}
 	}
 	if(flag==1)
-		printf("error");
+		my_printf("error");
 	else 
 	{
 		if(((float)t/strlen(str[1]))>=x)
-            printf("yes");
+            my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 
 	return 0;

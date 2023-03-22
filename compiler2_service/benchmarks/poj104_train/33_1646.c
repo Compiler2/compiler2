@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,i,m;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      char dna[n][256];
    
     for(i=0;i<n;i++){
-        scanf("%s",&dna[i]);
+        my_scanf("%s",&dna[i]);
     }
     for(i=0;i<n;i++){
         for(m=0;dna[i][m]!='\0';m++){
@@ -29,7 +29,7 @@ int main_bench(){
         }
        }
      for(i=0;i<n;i++){
-        printf("%s\n",dna[i]);
+        my_printf("%s\n",dna[i]);
      }
    return 0;         
 }

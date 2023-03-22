@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int N,i,k,b=0,sum=0;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int *a=(int*)malloc(sizeof(int)*N);
 	for(i=0;i<N;i++)
 	{
-		scanf("%d",&a[i]);	
+		my_scanf("%d",&a[i]);	
 	}
-	scanf("%d",&k);	
+	my_scanf("%d",&k);	
 	
 	for(i=0;i<N;i++)
 	{
@@ -24,9 +24,9 @@ int main_bench()
 		{
 			b++;
 			if (b!=sum)
-			printf("%d ",a[i]);
+			my_printf("%d ",a[i]);
 			else
-			printf("%d",a[i]);		
+			my_printf("%d",a[i]);		
 		}
 		
 	}

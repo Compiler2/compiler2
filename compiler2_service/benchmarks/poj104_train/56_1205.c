@@ -4,7 +4,7 @@ int main_bench(){
  int n;
  int m=0;
  int a=0,s=0,d=0,f=0,g=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  if(1<=n&&n<=9){
 	 s=0,d=0,f=0,g=0;
 	 a=n;
@@ -40,7 +40,7 @@ int main_bench(){
 	 g=n%10000%1000%100%10;
      m=10000*g+1000*f+100*d+10*s+a;
 	 }
-	 printf("%d\n",m);
+	 my_printf("%d\n",m);
  return 0;
 }
 

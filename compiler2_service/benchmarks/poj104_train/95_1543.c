@@ -22,17 +22,17 @@ int main_bench()
 		else 
 		{
 			if(str1[i]>str2[i])
-				printf(">\n");
-			else printf("<\n");
+				my_printf(">\n");
+			else my_printf("<\n");
 			break;
 		}
 	}
 	if((i==k)&&(k1==k)&&(k1!=k2))
-		printf("<\n");
+		my_printf("<\n");
 	if((i==k)&&(k2==k)&&(k1!=k2))
-		printf(">\n");
+		my_printf(">\n");
 	if((i==k)&&(k1==k2))
-		printf("=\n");
+		my_printf("=\n");
 	return 0;
 }
 char change(char c)

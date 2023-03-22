@@ -4,10 +4,10 @@ int main_bench()
 {
 	char zifu[256],trans[10000][256];
 	int a,b,c,d,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<n;a++)
 	{
-		scanf("%s",&zifu);
+		my_scanf("%s",&zifu);
 		for(b=0;zifu[b]!='\0';b++)
 		{
 			if(zifu[b]=='A')
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	for(a=0;a<n;a++)
 	{
-		printf("%s\n",trans[a]);
+		my_printf("%s\n",trans[a]);
 	}
 	return 0;
 }

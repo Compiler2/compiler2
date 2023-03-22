@@ -33,10 +33,10 @@ int main_bench()
 		  strcpy(s[i],b);
 	   }
   }
-    printf("%s",s[0]);
+    my_printf("%s",s[0]);
     for(i=1;i<j;i++)
 	{
-    	printf(" %s",s[i]);
+    	my_printf(" %s",s[i]);
 	}
 return 0;
 }

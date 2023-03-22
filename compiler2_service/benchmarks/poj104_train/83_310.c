@@ -7,11 +7,11 @@ float sum,GPA;
 int n,i,j,p,d;
 sum=0;
 d=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for(j=0;j<n;j++)
-scanf("%d",&b[j]);
+my_scanf("%d",&b[j]);
 for(p=0;p<n;p++)
 {if(b[p]>=90) c[p]=4;
  if(b[p]<90&&b[p]>84) c[p]=3.7;
@@ -27,5 +27,5 @@ for(p=0;p<n;p++)
 {sum=sum+a[p]*c[p];
 d=d+a[p];}
 GPA=sum/d;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 }

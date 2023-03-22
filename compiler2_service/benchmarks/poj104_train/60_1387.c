@@ -7,16 +7,16 @@ k=0;
 i=0;
 j=0;
 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=2;i<=n-2;i++){
         j=(a(i)==1&&a(i+2)==1);
         if(j==1){
-            printf("%d %d\n",i,i+2);
+            my_printf("%d %d\n",i,i+2);
             k=k+j;
             
     }
     }
-        if(k==0)printf("empty\n");
+        if(k==0)my_printf("empty\n");
         return 0;
 }
 int a(int x)

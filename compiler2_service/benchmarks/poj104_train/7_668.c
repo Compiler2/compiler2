@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char s[256],ow[256],rw[256];
-	scanf("%s%s%s",s,ow,rw);
+	my_scanf("%s%s%s",s,ow,rw);
 	int lens,lenow;
     int i,j,k,l,t,flag;
 	lens=strlen(s);
@@ -21,15 +21,15 @@ int main_bench(){
 		}
 	}
 	if(flag==0){
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	else{
 		for(k=0;k<t;k++){
-			printf("%c",s[k]);
+			my_printf("%c",s[k]);
 		}
-		printf("%s",rw);
+		my_printf("%s",rw);
 		for(l=t+lenow;l<lens;l++){
-			printf("%c",s[l]);
+			my_printf("%c",s[l]);
 		}
 	}
 	return 0;

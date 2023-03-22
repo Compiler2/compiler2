@@ -2,7 +2,7 @@
 
 int main_bench()
 {char str1[100],str2[100];
-scanf("%s%s",str1,str2);
+my_scanf("%s%s",str1,str2);
 int sum1[26],sum2[26],sum3[26],sum4[26];
 int n1=strlen(str1),n2=strlen(str2);
 int i,j,k=0;
@@ -26,8 +26,8 @@ for(i=0;i<n2;i++)
 }
 for(j=0;j<26;j++)
 {if((sum1[j]!=sum3[j])||(sum2[j]!=sum4[j])) k++;}
-if(k==0) printf("YES");
-else printf("NO");
+if(k==0) my_printf("YES");
+else my_printf("NO");
 
 }
 

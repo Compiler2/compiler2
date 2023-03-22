@@ -13,11 +13,11 @@ int main_bench()
 	int a1=0,a2=0,a3=0;
 	int n,i;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=1;i<=n;i++)
 	{
-      scanf("%s %d %d",tmp.ID,&(tmp.m),&(tmp.c)); 
+      my_scanf("%s %d %d",tmp.ID,&(tmp.m),&(tmp.c)); 
 	  if((tmp.m+tmp.c)>max1)
 	{
 		max3=max2; 
@@ -55,9 +55,9 @@ int main_bench()
 	}
 	}
 	
-	printf("%d %d\n",a1,max1);
-	printf("%d %d\n",a2,max2);
-	printf("%d %d\n",a3,max3);
+	my_printf("%d %d\n",a1,max1);
+	my_printf("%d %d\n",a2,max2);
+	my_printf("%d %d\n",a3,max3);
 
 	return 0;
 }

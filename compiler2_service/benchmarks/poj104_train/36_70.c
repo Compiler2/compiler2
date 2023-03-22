@@ -5,14 +5,14 @@ int main_bench()
 	int i,j,c=0,t;
 	char a[20],b[20];
 	char *pa,*pb;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	pa=a;
 	pb=b;
 	t=strlen(a);
 
 	if (strlen(a)!=strlen(b))
-		printf("NO");
+		my_printf("NO");
 	else{
 	for(i=0;i<t;i++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 	}
 
 	if (c>=t)
-		printf("YES\n");
-	else printf("NO\n");
+		my_printf("YES\n");
+	else my_printf("NO\n");
 	}
 }

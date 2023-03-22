@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n, a[110], b[110];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d", &(a[i]));
+		my_scanf("%d", &(a[i]));
 	}
 	for(i=0;i<n;i++){
-		scanf("%d", &(b[i]));
+		my_scanf("%d", &(b[i]));
 	}
 	double gpa[110];
 	for(i=0;i<n;i++){
@@ -50,6 +50,6 @@ int main_bench(){
 	}
 	double result;
 	result=x/(1.0*xuefen);
-	printf("%.2f\n", result);
+	my_printf("%.2f\n", result);
 	return 0;
 }

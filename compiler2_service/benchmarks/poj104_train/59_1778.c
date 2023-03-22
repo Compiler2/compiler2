@@ -4,23 +4,23 @@
 int main_bench()
 {
     int n,i,j,m,k;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char y;
     char a[100][100];
     char c[100];
     
-    scanf("%c",&y);
+    my_scanf("%c",&y);
     
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
         {
-            scanf("%c",&(a[i][j]));
+            my_scanf("%c",&(a[i][j]));
         }
-        scanf("%c",&(c[i]));
+        my_scanf("%c",&(c[i]));
     }
     
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     
     
    
@@ -70,7 +70,7 @@ int main_bench()
         }
     }
     
-    printf("%d",t);
+    my_printf("%d",t);
     
     
     

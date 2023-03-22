@@ -11,9 +11,9 @@ int main_bench()
 struct Student stu[100000];
 struct Student temp;
 int i,n,j,m;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %d %d",&stu[i].ID,&stu[i].chi,&stu[i].math);
+my_scanf("%d %d %d",&stu[i].ID,&stu[i].chi,&stu[i].math);
 stu[i].total=stu[i].chi+stu[i].math;
 }
 for(j=1;j<4;j++){
@@ -26,7 +26,7 @@ for(j=1;j<4;j++){
  }
        }
 for(i=n-1;i>n-4;i--)
-printf("%d %d\n",stu[i].ID,stu[i].total);
+my_printf("%d %d\n",stu[i].ID,stu[i].total);
 return 0;
 }
 

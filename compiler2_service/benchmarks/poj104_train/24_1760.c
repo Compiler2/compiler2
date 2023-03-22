@@ -37,46 +37,46 @@ int main_bench()
 	 {
        for(i=0;i<c[0];i++)
 	   {
-         printf("%c",string[i]);
+         my_printf("%c",string[i]);
 	   }  
 	 }
      else if(max==count)
 	 {
         for(i=c[count-1]+1;i<len;i++)
 		{
-           printf("%c",string[i]);
+           my_printf("%c",string[i]);
 		}
 	 }
      else
 	 {
         for(i=c[max-1]+1;i<c[max];i++)
 		{
-        printf("%c",string[i]);
+        my_printf("%c",string[i]);
 		}
 	 }
-     printf("\n");
+     my_printf("\n");
      if(min==0)
 	 {
        for(i=0;i<c[0];i++)
 	   {
-         printf("%c",string[i]);
+         my_printf("%c",string[i]);
 	   }
      }
      else if(min==count)
      {
         for(i=c[count-1]+1;i<len;i++)
 		{
-          printf("%c",string[i]);
+          my_printf("%c",string[i]);
 		} 
      }
      else
 	 {
        for(i=c[min-1]+1;i<c[min];i++)
 	   {
-          printf("%c",string[i]);
+          my_printf("%c",string[i]);
 	   }
      }
-      printf("\n");
+      my_printf("\n");
    }
    else  if(count==1)
    {
@@ -84,33 +84,33 @@ int main_bench()
 	   {
           for(i=0;i<c[0];i++)
 		  {
-             printf("%c",string[i]);
+             my_printf("%c",string[i]);
 		  }
-         printf("\n");
+         my_printf("\n");
          for(i=c[0]+1;i<len;i++)
 		 {
-           printf("%c",string[i]);
+           my_printf("%c",string[i]);
 		 }
-         printf("\n");
+         my_printf("\n");
 	   }
        else  if(c[0]<len-c[0]-1)
 	   {
           for(i=c[0]+1;i<len;i++)
 		  {
-             printf("%c",string[i]);
+             my_printf("%c",string[i]);
 		  }
-          printf("\n");
+          my_printf("\n");
           for(i=0;i<c[0];i++)
 		  {
-              printf("%c",string[i]);
+              my_printf("%c",string[i]);
 		  }
-          printf("\n");
+          my_printf("\n");
 	   }
    }
    else   if(count==0)
    {
-      printf("%s\n",string);
-      printf("%s\n",string);
+      my_printf("%s\n",string);
+      my_printf("%s\n",string);
    }
  return 0;
 }

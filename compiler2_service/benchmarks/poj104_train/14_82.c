@@ -7,10 +7,10 @@ struct student
 int main_bench()
 {
 	int n,i=1,maxi;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n)
 	{
-		scanf("%d %d %d",&stu[i].id,&stu[i].word,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].id,&stu[i].word,&stu[i].math);
 		stu[i].sum=stu[i].word+stu[i].math;
 		i=i+1;
 	}
@@ -35,7 +35,7 @@ int main_bench()
 		}
 		i=i-1;
 	}
-	printf("%d %d\n",stu[n+1].id,stu[n+1].sum);
+	my_printf("%d %d\n",stu[n+1].id,stu[n+1].sum);
 	stu[maxi].sum=0;
 	i=n;
 	while(i>=1)
@@ -46,7 +46,7 @@ int main_bench()
 		}
 		i=i-1;
 	}
-	printf("%d %d\n",stu[n+2].id,stu[n+2].sum);
+	my_printf("%d %d\n",stu[n+2].id,stu[n+2].sum);
 	stu[maxi].sum=0;
 	i=n;
 	while(i>=1)
@@ -55,5 +55,5 @@ int main_bench()
 			stu[n+3]=stu[i];
 		i=i-1;
 	}
-	printf("%d %d\n",stu[n+3].id,stu[n+3].sum);
+	my_printf("%d %d\n",stu[n+3].id,stu[n+3].sum);
 }

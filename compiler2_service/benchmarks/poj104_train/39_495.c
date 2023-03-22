@@ -14,10 +14,10 @@ struct student
 };
 struct student stu[100];
 int n,i,t;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int num[100]={0},all=0,a[100];
 for(i=0;i<n;i++)
-   scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].classes,&stu[i].duty,&stu[i].west,&stu[i].text);
+   my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].final,&stu[i].classes,&stu[i].duty,&stu[i].west,&stu[i].text);
 
 for(i=0;i<n;i++)
 {
@@ -48,5 +48,5 @@ for(i=0;i<n;i++)
 	{t=i;
 	break;}
 }
-printf("%s\n%d\n%d\n",stu[t].name,num[t],all);
+my_printf("%s\n%d\n%d\n",stu[t].name,num[t],all);
 }

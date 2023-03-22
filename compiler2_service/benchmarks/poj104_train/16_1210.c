@@ -4,7 +4,7 @@ int main_bench()
 {
 	int num,a,b,c,d,e,p;
 
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 
     if(num>=10000)
 	p=5;
@@ -25,12 +25,12 @@ int main_bench()
 
    switch(p)
 	{
-	case 5:printf("%d%d%d%d%d",e,d,c,b,a);break;
+	case 5:my_printf("%d%d%d%d%d",e,d,c,b,a);break;
 
-	case 4:printf("%d%d%d%d",e,d,c,b);break;
-	case 3:printf("%d%d%d",e,d,c);break;
-	case 2:printf("%d%d",e,d);break;
-	case 1:printf("%d",e);break;
+	case 4:my_printf("%d%d%d%d",e,d,c,b);break;
+	case 3:my_printf("%d%d%d",e,d,c);break;
+	case 2:my_printf("%d%d",e,d);break;
+	case 1:my_printf("%d",e);break;
 	
 	}
 }

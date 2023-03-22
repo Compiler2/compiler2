@@ -4,8 +4,8 @@
 int main_bench()
 {
 	char zfc1[50],zfc2[50];
-	scanf("%s",&zfc1);
-	scanf("%s",&zfc2);
+	my_scanf("%s",&zfc1);
+	my_scanf("%s",&zfc2);
 
 	int len1,len2;
 	len1=strlen(zfc1);
@@ -30,6 +30,6 @@ int main_bench()
 		}
 		time=0;
 	}
-	printf("%d\n",re);
+	my_printf("%d\n",re);
 	return 0;
 }

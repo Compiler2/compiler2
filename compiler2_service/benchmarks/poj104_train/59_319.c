@@ -3,15 +3,15 @@
 int main_bench(){
 	int i,j,n,m,k,b[102][102]={0},e=0;
 	char a[102][102]={'#'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=1;i<=n;i++){
 		for(j=n;j>=1;j--){
 			a[i][j]=a[i][j-1];
 	}}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	m=m-1;
 	for(k=1;k<=m;k++){
 		for(i=1;i<=n;i++){
@@ -41,6 +41,6 @@ int main_bench(){
 			if(a[i][j]=='@')
 				e++;
 	}}
-	printf("%d",e);
+	my_printf("%d",e);
 	return 0;
 }

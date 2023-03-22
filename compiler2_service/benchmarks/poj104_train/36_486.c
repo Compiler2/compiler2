@@ -17,13 +17,13 @@ void sort(char str[])
 }
 void output(char str1[],char str2[])
 {
-	if(strcmp(str1,str2)==0) printf("YES\n");
-	else printf("NO\n");
+	if(strcmp(str1,str2)==0) my_printf("YES\n");
+	else my_printf("NO\n");
 }
 int main_bench()
 {
 	char str1[100],str2[100];
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	sort(str1);
 	sort(str2);
 	output(str1,str2);

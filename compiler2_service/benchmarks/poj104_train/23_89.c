@@ -24,9 +24,9 @@ void bo(char c[100])
 	}
 	if(i!=0)
 	{
-	printf("%s ",d[i]);
+	my_printf("%s ",d[i]);
 	for(i=i-1;i>=0;i--)
-		printf("%s",d[i]);
+		my_printf("%s",d[i]);
 	}
 	else
 	puts(c);

@@ -25,22 +25,22 @@ int main_bench()
     int k,d,b[6],r;
     for(k=0;k<6;k++)
     {
-                    scanf("%d",&b[k]);
+                    my_scanf("%d",&b[k]);
     }
     for(k=0;k<6;k++)
     {
                     r=f(b[k]);
                     if(b[k]>=0)
                     {
-                               printf("%d\n",r);
+                               my_printf("%d\n",r);
                     }
                     else
                     {
-                        printf("-%d\n",r);
+                        my_printf("-%d\n",r);
                     }
     }
 
-    scanf("%d",&d);
+    my_scanf("%d",&d);
     return 0;
 }                           
                  

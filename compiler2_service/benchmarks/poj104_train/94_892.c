@@ -8,10 +8,10 @@ int main_bench()
     b=0;
     e=0;
     h=0;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(int i=0;i<N;i++)
     {
-            scanf("%d",&sz[i]);
+            my_scanf("%d",&sz[i]);
             if(sz[i]%2!=0)
             {
                     a[b]=sz[i];
@@ -35,9 +35,9 @@ int main_bench()
     {
             
             if(x<b)
-            printf("%d,",a[x]);
+            my_printf("%d,",a[x]);
             else
-            printf("%d",a[x]);
+            my_printf("%d",a[x]);
             e++;
             
      }

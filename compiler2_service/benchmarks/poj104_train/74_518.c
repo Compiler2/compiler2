@@ -43,20 +43,20 @@ void P(int m,int n)
 		temp2=0;
 	}
 	if (l==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
 	for (i=0;i<l-1;i++)
 	{
-		printf("%d,",b[i]);
+		my_printf("%d,",b[i]);
 	}
-	printf("%d",b[l-1]);
+	my_printf("%d",b[l-1]);
 	}
 }
 
 int main_bench()
 {
 	int m,n;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	P(m,n);
 }

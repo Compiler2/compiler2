@@ -1,10 +1,10 @@
 #include <header.h>
 
 
-void main_bench()
+int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char s[501];
 	gets(s);
 	int len=strlen(s);
@@ -38,12 +38,12 @@ void main_bench()
 	}
 
 	if(x==1)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
-		printf("%d\n",x);
+		my_printf("%d\n",x);
 		for(i=0;i<=len-n;i++)
 			if(time[i]==x)
-				printf("%s\n",sub[i]);
+				my_printf("%s\n",sub[i]);
 	}
 }

@@ -10,7 +10,7 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(i=0;i<5;i++)
@@ -36,11 +36,11 @@ int main_bench()
 		}
 		if(flag[i]==1)
 		{
-			printf("%d %d %d",i+1,col+1,finding);
+			my_printf("%d %d %d",i+1,col+1,finding);
 		}
 	}
 	if(flag[0]==0&&flag[1]==0&&flag[2]==0&&flag[3]==0&&flag[4]==0)
-		printf("not found");
+		my_printf("not found");
 	
 	return 0;
 }

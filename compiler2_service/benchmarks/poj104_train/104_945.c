@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int x[1100],y[1100],i,j,m,n,t;
-	scanf("%d %d",&x[0],&y[0]);
+	my_scanf("%d %d",&x[0],&y[0]);
 	for(i=1;x[i-1]>1;i++)
 	{
 		if(x[i-1]%2==0)
@@ -31,7 +31,7 @@ int main_bench()
 			if(i==0 || j==0)
 				t=i;
 	}
-	printf("%d",x[t]);
+	my_printf("%d",x[t]);
 }
 
 

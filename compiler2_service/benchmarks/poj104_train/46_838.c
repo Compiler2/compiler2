@@ -4,11 +4,11 @@ int main_bench()
 {
 	int input[100][100],i,j,k,m,n,output[10000],a=0;
 	int row,col;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
-			scanf("%d",&input[i][j]);
+			my_scanf("%d",&input[i][j]);
 	}
 	for(i=0;i<row;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<row*col-1;i++)
-		printf("%d\n",output[i]);
-	printf("%d",output[row*col-1]);
+		my_printf("%d\n",output[i]);
+	my_printf("%d",output[row*col-1]);
 	return 0;
 }

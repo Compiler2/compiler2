@@ -32,17 +32,17 @@ int main_bench()
 	{
 		for(j=0;j<n;j++)
 		{
-			printf("%c",str[j]);
+			my_printf("%c",str[j]);
 	    }
-	    printf("%s",r);
+	    my_printf("%s",r);
 	    for(j=n+l;str[j]!=0;j++)
 	    {
-			printf("%c",str[j]);
+			my_printf("%c",str[j]);
 	    }
 	}
 	if(same==0)
 	{
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	return 0;
 }

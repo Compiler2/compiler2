@@ -15,7 +15,7 @@ int main_bench()
 	struct children *p;
 	p=chd;
 	char str[100];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	int len=scan(p,str);
     boy=str[0];
     int point=0;
@@ -39,7 +39,7 @@ void func(struct children chd[],int n)
 		if(chd[j].bracket=='\0') break;
 	    if(chd[j].bracket==boy && chd[j+1].bracket==girl)
 		{
-			printf("%d %d\n",chd[j].code,chd[j+1].code);
+			my_printf("%d %d\n",chd[j].code,chd[j+1].code);
 			exile(chd,j,n);
 		    j=j-1;
 			n=n-2;

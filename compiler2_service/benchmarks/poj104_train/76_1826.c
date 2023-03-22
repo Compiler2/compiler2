@@ -3,9 +3,9 @@
 int main_bench(){
   int n,m,i,j,a,b,len;
   int sz[6000][2];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-    scanf("%d%d",&(sz[i][0]),&(sz[i][1]));
+    my_scanf("%d%d",&(sz[i][0]),&(sz[i][1]));
   }
   a=sz[0][0];b=sz[0][1];
   for(i=0;i<n;i++){
@@ -21,7 +21,7 @@ int main_bench(){
         if(sz[i][0]<=a+j&&a+j+1<=sz[i][1]){m++;}
       }
     }}
-  if(m==0){printf("no");}
-  else {printf("%d %d",a,b);}
+  if(m==0){my_printf("no");}
+  else {my_printf("%d %d",a,b);}
   return 0;
 }

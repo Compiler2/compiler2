@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,l,m=0,j;
     char zfc[21];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%s",zfc);
+        my_scanf("%s",zfc);
         l=strlen(zfc);
         if((zfc[0]>='a'&&zfc[0]<='z')||(zfc[0]>='A'&&zfc[0]<='Z')||(zfc[0]=='_')){
             for(j=1;j<l;j++){

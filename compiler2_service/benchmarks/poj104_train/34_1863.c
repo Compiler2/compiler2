@@ -3,11 +3,11 @@
 int main_bench()
 {
   int a,n[100000],i,p=0;
-  scanf("%d",&a);
+  my_scanf("%d",&a);
   n[0]=a;
   if(a==1)
   {
-    printf("End");
+    my_printf("End");
    }
   else
   {
@@ -18,12 +18,12 @@ int main_bench()
         n[i+1]=n[i]*3+1;
         if(p==0)
         {
-          printf("%d*3+1=%d",n[i],n[i+1]);
+          my_printf("%d*3+1=%d",n[i],n[i+1]);
           p++;
         }
         else
         {
-          printf("\n%d*3+1=%d",n[i],n[i+1]);
+          my_printf("\n%d*3+1=%d",n[i],n[i+1]);
         }
       }
       else
@@ -31,16 +31,16 @@ int main_bench()
         n[i+1]=n[i]/2;
         if(p==0)
         {
-          printf("%d/2=%d",n[i],n[i+1]);
+          my_printf("%d/2=%d",n[i],n[i+1]);
           p++;
         }
         else
         {
-          printf("\n%d/2=%d",n[i],n[i+1]);
+          my_printf("\n%d/2=%d",n[i],n[i+1]);
         }
       } 
     }
-    printf("\nEnd");
+    my_printf("\nEnd");
   }
   return 0;
 }

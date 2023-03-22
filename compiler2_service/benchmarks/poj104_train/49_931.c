@@ -5,7 +5,7 @@ int main_bench()
 	int i,j,k,len;
 	char x[510],temp[510],tran[510];
 	char *p=x;
-	scanf("%s",x);
+	my_scanf("%s",x);
 	len=strlen(x);
 	for(i=2;i<=len;i++)
 		for(j=0;j<=len-i;j++)
@@ -19,7 +19,7 @@ int main_bench()
 				tran[i-k-1]=temp[k];
 			tran[i]='\0';
 			if(strcmp(temp,tran)==0)
-				printf("%s\n",temp);
+				my_printf("%s\n",temp);
 
 		}
 	return 0;

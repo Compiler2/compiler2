@@ -13,10 +13,10 @@ int main_bench()
 		}
 		else if(i>0)
 		{
-		printf("%d,",i);
+		my_printf("%d,",i);
 		i=0;
 		}
 	}
-	printf("%d",i);
+	my_printf("%d",i);
 	
 }

@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int i, n, a[200], max, submax;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0; i<n; i++) 
-		scanf("%d", &a[i]);
+		my_scanf("%d", &a[i]);
 	max = submax = -32321;
 	for (i=0; i<n; i++) 
 		if (a[i] > max) {
@@ -15,7 +15,7 @@ int main_bench()
 		} else if (a[i] > submax) 
 			submax = a[i];
 
-	printf("%d\n%d", max, submax);
+	my_printf("%d\n%d", max, submax);
 
 	return 0;
 }

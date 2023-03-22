@@ -73,10 +73,10 @@ int main_bench()
 	{
 		a[i-1].scholarship=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&a[i].name,&a[i].exam,&a[i].judge,&a[i].worker,&a[i].west,&a[i].paper);
+		my_scanf("%s %d %d %c %c %d",&a[i].name,&a[i].exam,&a[i].judge,&a[i].worker,&a[i].west,&a[i].paper);
 		if(yuanshi(a[i].exam,a[i].paper))
 		{
 			a[i].scholarship+=8000;
@@ -107,5 +107,5 @@ int main_bench()
 			orient=i;
 		}
 	}
-	printf("%s\n%d\n%d",a[orient].name,max,sum);
+	my_printf("%s\n%d\n%d",a[orient].name,max,sum);
 }

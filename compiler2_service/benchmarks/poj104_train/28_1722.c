@@ -26,11 +26,11 @@ int main_bench()
 	{
 		if(((n[i])!=0)&&((n[i+1])!=0))
 		{
-			printf("%d,",(n[i]));
+			my_printf("%d,",(n[i]));
 		}
 		if(((n[i])!=0)&&((n[i+1])==0))
 		{
-			printf("%d",(n[i]));
+			my_printf("%d",(n[i]));
 		}
 	}
 	return 0;

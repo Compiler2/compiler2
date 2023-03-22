@@ -6,11 +6,11 @@ int main_bench()
 	int i[6],d;
 	for (d=0;d<6;d++)
 	{
-		scanf("%d",&i[d]);
+		my_scanf("%d",&i[d]);
 	}
 	for (d=0;d<6;d++)
 	{
-		printf("%d\n",reverse(i[d]));
+		my_printf("%d\n",reverse(i[d]));
 	}
 }
 

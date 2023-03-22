@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,sz[600],szo[600],k=0,a; 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	} 
 	for(int j=0;j<n;j++){ 
 		if(sz[j]%2!=0){ 
@@ -19,9 +19,9 @@ int main_bench(){
 		}
 	} 
 	for(int q=0;q<k;q++){
-		if(q==k-1){ printf("%d",szo[q]);
+		if(q==k-1){ my_printf("%d",szo[q]);
 		} else { 
-			printf("%d,",szo[q]);
+			my_printf("%d,",szo[q]);
 		} 
 	}
 	return 0;

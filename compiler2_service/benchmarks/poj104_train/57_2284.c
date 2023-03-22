@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char word[1000];
 	int i;
 	for (i=0; i<n; i++) 
 	{
-		scanf("%s",word);
+		my_scanf("%s",word);
 		int len=strlen(word);
 		switch (word[len-1]){
 			case 'r':
@@ -21,7 +21,7 @@ int main_bench()
 				if (word[len-2]=='n'&&word[len-3]=='i') word[len-3]='\0';
 				break;
 		}
-		printf("%s\n",word);
+		my_printf("%s\n",word);
 	}
 
 	return 0;

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i=0,a[1000][1000],row,col,m,p,q,b[1000],c[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++)
 	{
 	  for(col=0;col<n;col++)
 	  {
-	   scanf("%d",&a[row][col]);
+	   my_scanf("%d",&a[row][col]);
 	   if(a[row][col]==0 )
 		{         
 		b[i]=row;
@@ -20,7 +20,7 @@ int main_bench()
 	q=i-1;
 	m=b[q]-b[0]-1;
 	p=c[q]-c[0]-1;
-	printf("%d",m*p);
+	my_printf("%d",m*p);
 	return 0;
 }
 

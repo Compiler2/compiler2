@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,sum1=0,sum2=0,sum3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		sum2=sum2+i*i;
@@ -17,6 +17,6 @@ int main_bench()
 	}
 
 	sum3=sum2-sum1;
-	printf("%d\n",sum3);
+	my_printf("%d\n",sum3);
 	return 0;
 }

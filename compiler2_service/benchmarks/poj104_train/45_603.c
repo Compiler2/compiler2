@@ -7,8 +7,8 @@ int main_bench()
 	char *ps,*pw,*in;
 	ps=s;
 	pw=w;
-	scanf("%s",ps);
-	scanf("%s",pw);
+	my_scanf("%s",ps);
+	my_scanf("%s",pw);
 	while (*pw!='\0')
 	{
 		in=pw;
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		if (flag) 
 		{
-			printf("%d",in-w);
+			my_printf("%d",in-w);
 			break;
 		}
 		pw++;

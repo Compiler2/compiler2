@@ -7,7 +7,7 @@ int cor(int x);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sum = 0;
 	int i;
 	for ( i = 0 ; i <= n ; i++ )
@@ -18,7 +18,7 @@ int main_bench()
 			sum += i*i ;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }
 

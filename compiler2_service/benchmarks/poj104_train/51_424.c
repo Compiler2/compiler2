@@ -15,7 +15,7 @@ int main_bench()
 {
 	int t=0,cao,max=0,l,a[1000]={0};
 	char c[501]={0},temp[6]={0},A[1000][6]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	cao=getchar();
 	gets(c);
 	l=strlen(c);
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	if(max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	for(i=0;i<=(l-n);i++)
@@ -54,13 +54,13 @@ int main_bench()
 				a[i]=0;
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	for(i=0;i<=(l-n);i++)
 	{
 		if(a[i]==max)
 		{
 			puts(A[i]);
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

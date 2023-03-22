@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char m[600],z[256],t[256];
-	scanf("%s%s%s",m,z,t);
+	my_scanf("%s%s%s",m,z,t);
 	int len1=strlen(m);
 	int len2=strlen(z);
 	int i,j,c=1,flag=0; 
@@ -27,15 +27,15 @@ int main_bench(){
 	}
 	if(c==len2){
 		for(i=0;i<j;i++){
-			printf("%c",m[i]);
+			my_printf("%c",m[i]);
 		}
-		printf("%s",t);
+		my_printf("%s",t);
 		for(i=j+len2;i<len1;i++){
-			printf("%c",m[i]);
+			my_printf("%c",m[i]);
 		}
 	}
     else{
-		printf("%s\n",m);
+		my_printf("%s\n",m);
 	}
 	return 0;
 }

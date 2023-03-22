@@ -7,19 +7,19 @@ int main_bench()
 	int n=1;
     for(i=0;;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if((c=getchar())=='\n')
 			break;
 	n++;
 	}
 	if(n==1)
-		printf("No");
+		my_printf("No");
 	else
 	{
 		for(i=1;i<=n-1;i++)
 			sum+=(a[0]-a[i])*(a[0]-a[i]);
 		if(sum==0)
-			printf("No");
+			my_printf("No");
 		else
 		{
 	for(i=0;i<=n-1;i++)
@@ -40,7 +40,7 @@ int main_bench()
 	{
 		if(a[i]-a[n-1]!=0)
 		{
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 		break;
 		}
 	}

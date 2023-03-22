@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int m,n,s,i,j,a[100][100],p,q,r,t;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	s=m+n-2;
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for(p=0;p<=s;p++){
@@ -38,7 +38,7 @@ int main_bench()
 			}
 		}
 				for(q=t;q<=r;q++){
-			printf("%d\n",a[q][p-q]);
+			my_printf("%d\n",a[q][p-q]);
 		}
 	}
 	return 0;

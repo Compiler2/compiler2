@@ -7,10 +7,10 @@ int main_bench()
 	int s=0;
 	int e=0;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if(a==b)
 		{
 			s+=0;
@@ -27,15 +27,15 @@ int main_bench()
 	}
 	if(s==e)
 	{
-		printf("Tie\n");
+		my_printf("Tie\n");
 	}
 	else if(s>e)
 	{
-		printf("A\n");
+		my_printf("A\n");
 	}
 	else
 	{
-		printf("B\n");
+		my_printf("B\n");
 	}
 	return 0;
 }

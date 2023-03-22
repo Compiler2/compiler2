@@ -5,10 +5,10 @@ int main_bench()
 	 char sz1[520]={'\0'},sz2[520]={'\0'};
 	double a,j;
 	int i,k,judge=1;
-	scanf("%lf %s %s",&a,sz1,sz2);
+	my_scanf("%lf %s %s",&a,sz1,sz2);
 	if(strlen(sz1)!=strlen(sz2))
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -28,15 +28,15 @@ int main_bench()
 		j=1.0*k/(strlen(sz1));	
 		if(judge==0)
 		{
-			printf("error");
+			my_printf("error");
 		}
 		else if(j>a)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

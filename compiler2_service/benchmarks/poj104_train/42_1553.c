@@ -4,14 +4,14 @@ int main_bench()
 {
 int sz[100000],n,i,k,max;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<n;i++)
 {
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 }
 
-scanf("%d",&k);
+my_scanf("%d",&k);
 
 if(n==1){
 	max=0;}
@@ -30,11 +30,11 @@ for(i=0;i<n;i++)
 {
 	if(sz[i]!=k&&i!=max)
 	{
-		printf("%d ",sz[i]);
+		my_printf("%d ",sz[i]);
 	}
 	else if(sz[i]!=k&&i==max)
 	{
-		printf("%d",sz[i]);
+		my_printf("%d",sz[i]);
 	}
 }
 

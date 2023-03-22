@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,n,i,k;
-	scanf("%d%d%d",&a,&b,&c);
-	scanf("%d%d%d",&d,&e,&f);
+	my_scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&d,&e,&f);
 	n=0;
 	k=0;
 	for (i=a;i<=d-1;i++)
@@ -89,6 +89,6 @@ int main_bench()
 		}	
 	}
 	n=n-c+f;
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 }

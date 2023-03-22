@@ -7,14 +7,14 @@ int main_bench()
     int pre[1000][1000],beg[1000],en[1000],pptt[1000],tmax,pmax,p,t,n,sl,i;
     
     n=1;
-    scanf("%d,",&beg[0]);
+    my_scanf("%d,",&beg[0]);
     do
     {
     	n++;
-    	scanf("%d%c",&beg[n-1],&c);
+    	my_scanf("%d%c",&beg[n-1],&c);
     }while(c==44&&n<=1000);
-    scanf("%d",&en[0]);
-    for(i=1;i<=n-1;i++) scanf(",%d",&en[i]);
+    my_scanf("%d",&en[0]);
+    for(i=1;i<=n-1;i++) my_scanf(",%d",&en[i]);
     tmax=en[0];
     for(i=1;i<=n-1;i++)
     {
@@ -53,5 +53,5 @@ int main_bench()
     for(t=1;t<=tmax-1;t++)
     	if(pmax<pptt[t]) pmax=pptt[t];
     	
-    printf("%d %d",n,pmax);   
+    my_printf("%d %d",n,pmax);   
 }

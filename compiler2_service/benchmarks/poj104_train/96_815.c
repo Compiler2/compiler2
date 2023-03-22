@@ -2,11 +2,11 @@
 
 int main_bench(){
 	char str[1100],stre[1100];
-	scanf("%s", str);
+	my_scanf("%s", str);
 	int a=strlen(str),l=(str[0]-'0'),t,i,j,x=0,y;
 	if(((a==2)&&(str[1]-'0')<3&&(str[0]-'0')==1)||(a==1)){
-		printf("0");
-		printf("\n%s",str);
+		my_printf("0");
+		my_printf("\n%s",str);
 	}
 	else if((a>2)||(a==2&&(str[0]-'0')*10+(str[1]-'0')>=13)){
 	for(i=0;i<a-1;i++){
@@ -20,11 +20,11 @@ int main_bench(){
 			x++;
 		}
 		if(x!=0){
-			printf("%c",stre[i]);
+			my_printf("%c",stre[i]);
 		}
 	}
 	y=l%13;
-	printf("\n%d",y);
+	my_printf("\n%d",y);
 	}
 		
 	return 0;

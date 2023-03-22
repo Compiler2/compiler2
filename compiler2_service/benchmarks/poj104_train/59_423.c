@@ -4,10 +4,10 @@ int main_bench(){
 	int k[101][101];
 	char di;
 	int i,j,n,m;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%c\n",&di);
+			my_scanf("%c\n",&di);
 			if(di=='#')
 				k[i][j]=2;
 			else if(di=='@')
@@ -16,7 +16,7 @@ int main_bench(){
 				k[i][j]=0;
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	int p;
 	for(p=1;p<=m-1;p++){
@@ -62,6 +62,6 @@ int main_bench(){
 			}
 		}
 		}
-		printf("%d",sum);
+		my_printf("%d",sum);
 		return 0;
 }

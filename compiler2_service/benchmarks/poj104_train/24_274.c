@@ -94,13 +94,13 @@ int main_bench()
 	}
 	for(i=max1;i<max2;i++)
 	{
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=min1;i<min2;i++)
 	{
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 	}
-	printf("\n");
+	my_printf("\n");
   return 0;
 }

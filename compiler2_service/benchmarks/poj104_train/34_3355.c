@@ -11,16 +11,16 @@ int outcome(int n)
 int main_bench()
 {
 	int n,t,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	t=n;
 	for(i=0;t!=1;i++)
 	{
 	    if (t%2==0)
-			printf("%d/2=%d\n",t,outcome(t));
+			my_printf("%d/2=%d\n",t,outcome(t));
 		else
-		    printf("%d*3+1=%d\n",t,outcome(t));
+		    my_printf("%d*3+1=%d\n",t,outcome(t));
 		t=outcome(t);
 	}
 
-	printf("End");
+	my_printf("End");
 }

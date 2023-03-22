@@ -18,7 +18,7 @@
     int i,j,a[1000],b[1000],c;
     for(i=0;i<6;i++)
     {
-                    scanf("%d",&a[i]);
+                    my_scanf("%d",&a[i]);
     }
     for(i=0;i<6;i++)
     {
@@ -33,7 +33,7 @@
     }
     for(i=0;i<6;i++)
     {
-                    printf("%d\n",b[i]);
+                    my_printf("%d\n",b[i]);
     }
     getchar();
     getchar();

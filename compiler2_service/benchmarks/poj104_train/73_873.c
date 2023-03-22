@@ -12,7 +12,7 @@ main_bench()
     int ai[5]={0},aj[5]={0};
     for(i=0;i<5;i++)
         for(j=0;j<5;j++)
-            scanf("%d",&a[i][j]);
+            my_scanf("%d",&a[i][j]);
     for(i=0;i<5;i++)
     {
         for(j=0;j<5;j++)
@@ -31,11 +31,11 @@ main_bench()
         qsort(aj,5,sizeof(int),pfc);
         if(a[ri][rj]==aj[4])
         {
-            printf("%d %d %d",ri+1,rj+1,a[ri][rj]);
+            my_printf("%d %d %d",ri+1,rj+1,a[ri][rj]);
             k=1;
             return 0;
         }
     }
     if(k==0)
-        printf("not found");
+        my_printf("not found");
 }

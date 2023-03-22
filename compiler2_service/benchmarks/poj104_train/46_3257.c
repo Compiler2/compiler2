@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int M,N,m,n,i,j=0,a[100][100],s=0,k;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{   
 	for(j=0;j<n;j++)	
-	scanf("%d",&a[i][j]);
+	my_scanf("%d",&a[i][j]);
 	}
 	M=m;
 	N=n;
@@ -17,7 +17,7 @@ int main_bench()
        
 	   for(i=M-m,j=N-n;j<n;j++)
 	   {
-		printf("%d\n",a[i][j]); 
+		my_printf("%d\n",a[i][j]); 
 		s=s+1;
 	   }
 			m=m-1;
@@ -26,7 +26,7 @@ int main_bench()
 				break;
 			for(i=M-m;i<=m;i++)
 			{
-				printf("%d\n",a[i][j]);
+				my_printf("%d\n",a[i][j]);
 				s=s+1;
 			}	 
 					n=n-1;
@@ -36,7 +36,7 @@ int main_bench()
 
 					for(j=n-1;j>=N-n-1;j--)
 					{
-						printf("%d\n",a[i][j]);
+						my_printf("%d\n",a[i][j]);
 						s=s+1;
 					}
 					 j=j+1;
@@ -45,7 +45,7 @@ int main_bench()
 
 							for(i=m-1;i>=M-m;i--)
 							{
-								printf("%d\n",a[i][j]);
+								my_printf("%d\n",a[i][j]);
                                s=s+1;   
 							}
 							i=i+1;

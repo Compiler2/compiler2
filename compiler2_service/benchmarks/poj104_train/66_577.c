@@ -90,24 +90,24 @@ int day (int year,int month,int date)
 void week (int year,int month,int date)
 {
 	if(day(year,month,date)%7==0)
-		printf("Sun.\n");
+		my_printf("Sun.\n");
 	else if(day(year,month,date)%7==1)
-		printf("Mon.\n");
+		my_printf("Mon.\n");
 	else if(day(year,month,date)%7==2)
-		printf("Tue.\n");
+		my_printf("Tue.\n");
 	else if(day(year,month,date)%7==3)
-		printf("Wed.\n");
+		my_printf("Wed.\n");
 	else if(day(year,month,date)%7==4)
-		printf("Thu.\n");
+		my_printf("Thu.\n");
 	else if(day(year,month,date)%7==5)
-		printf("Fri.\n");
+		my_printf("Fri.\n");
 	else if(day(year,month,date)%7==6)
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 }
 
 int main_bench()
 {
 	int year,month,date;
-	scanf("%d %d %d",&year,&month,&date);
+	my_scanf("%d %d %d",&year,&month,&date);
 	week(year,month,date);
 }

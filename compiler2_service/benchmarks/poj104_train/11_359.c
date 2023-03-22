@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year, month, date;
 	int m=0,n=0;
-	scanf("%d %d %d", &year, &month, &date);
+	my_scanf("%d %d %d", &year, &month, &date);
 	if (month==1)
 	{
 		n=date;
@@ -72,6 +72,6 @@ int main_bench()
 	{
 		n=m+date;
 	}
-	printf("%d\n", n);
+	my_printf("%d\n", n);
 	return 0;
 }

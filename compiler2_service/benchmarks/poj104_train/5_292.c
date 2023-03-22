@@ -6,9 +6,9 @@ int main_bench()
 	int i,j,k,l,w,s;
 	float n,p,q,o;
 	char a[10000],b[10000];
-	scanf("%f",&n);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%f",&n);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	i=strlen(a);
 	j=strlen(b);
 	w=0;
@@ -22,7 +22,7 @@ int main_bench()
 	{w++;}
 	}
 	if((i!=j)||w!=0)
-	{printf("error");}
+	{my_printf("error");}
 	else
 	{
 		for(l=0;a[l];l++)
@@ -34,9 +34,9 @@ int main_bench()
 	q=s;
 	o=q/p;
 	if(o>n)
-	{printf("yes");}
+	{my_printf("yes");}
 	else
-	{printf("no");}
+	{my_printf("no");}
 	}
 	return 0;
 }

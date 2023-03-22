@@ -6,8 +6,8 @@ int main_bench()
 	char b[300];
 	for (i=0;;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&b[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&b[i]);
 		if (b[i]=='\n')
 			break;
 	}
@@ -27,9 +27,9 @@ int main_bench()
 		}
 	}
 	if(sec==-1)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",sec);
+		my_printf("%d",sec);
 	return 0;
 }
 		

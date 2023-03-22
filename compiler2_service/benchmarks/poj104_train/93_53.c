@@ -3,19 +3,19 @@
 int main_bench()
 {
 	int n,i,j,t=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=3;i++)
 	{
 		j=2*i+1;
 		if(n%j==0) 
 		{
 			if(t>0) 
-				printf(" ");
-			printf("%d",j);
+				my_printf(" ");
+			my_printf("%d",j);
 			t++;			
 		}
 	}
 	if(t==0)
-	printf("n");
-	printf("\n");
+	my_printf("n");
+	my_printf("\n");
 }

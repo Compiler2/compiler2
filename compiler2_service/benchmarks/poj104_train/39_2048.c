@@ -14,7 +14,7 @@ int main_bench()
 	char maxname[20];
 	int n,i,j;
 	int prize,max=0,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i=i+1)
 	{
 		prize=0;
@@ -25,12 +25,12 @@ int main_bench()
 		s.leader='\0';
 		s.west='\0';
 		s.paper=0;
-		scanf("%s",s.name);
-		scanf("%d",&s.final);
-		scanf("%d ",&s.eval);
-		scanf("%c ",&s.leader);
-		scanf("%c",&s.west);
-		scanf("%d",&s.paper);
+		my_scanf("%s",s.name);
+		my_scanf("%d",&s.final);
+		my_scanf("%d ",&s.eval);
+		my_scanf("%c ",&s.leader);
+		my_scanf("%c",&s.west);
+		my_scanf("%d",&s.paper);
 		if(s.final>80 && s.paper>0)
 			prize=prize+8000;
 		if(s.final>85 && s.eval>80)
@@ -50,7 +50,7 @@ int main_bench()
 			strcpy(maxname,s.name);
 		}
 	}
-	printf("%s\n",maxname);
-	printf("%d\n",max);
-	printf("%d\n",sum);
+	my_printf("%s\n",maxname);
+	my_printf("%d\n",max);
+	my_printf("%d\n",sum);
 }

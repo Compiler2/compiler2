@@ -4,7 +4,7 @@ int main_bench()
 {
 	int x,y,i,j,s,t,v=0;
 	int a[1000],b[1000];
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	for(i=0;x!=0;i++)
 	{
 		a[i]=x;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 		if(v==1)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 			break;
 		}
 

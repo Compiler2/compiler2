@@ -63,6 +63,6 @@ int main_bench()
     
     char k[250];
     strcpy(k, result+ index);
-    printf("%s\n",k);
+    my_printf("%s\n",k);
 	return 0;
 }

@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int i,s,a,b,c,d,e,f,x,y,z;
-	scanf("%d %d %d",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	s=(d-a)*365;
 	for(x=0,i=a;i<=d-1;i++)
 	{
@@ -28,5 +28,5 @@ int main_bench()
 		}
 	}
 		s=s-y+z;
-		printf("%d",s);   
+		my_printf("%d",s);   
 }

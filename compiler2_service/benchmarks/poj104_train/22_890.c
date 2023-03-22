@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,first,second=0;
 	char a;
-	scanf("%d",&first);
-	while(scanf("%c",&a)&&a==',')
+	my_scanf("%d",&first);
+	while(my_scanf("%c",&a)&&a==',')
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n>first)
 		{
 			second=first;
@@ -19,8 +19,8 @@ int main_bench()
 			second=n;
 	}
     if(second==0)
-		    printf("No\n");
+		    my_printf("No\n");
 	else
-		    printf("%d\n",second);
+		    my_printf("%d\n",second);
 	return 0;
 }

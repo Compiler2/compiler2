@@ -7,10 +7,10 @@ int main_bench()
     struct qj{
 		int a,b;
 	}qj[50000];
-          scanf("%d",&n);	
+          my_scanf("%d",&n);	
 for(i=0;i<n;i++)
 {
-	scanf("%d%d",&qj[i].a,&qj[i].b);
+	my_scanf("%d%d",&qj[i].a,&qj[i].b);
 }
 for(k=1;k<=n;k++)
 {
@@ -47,10 +47,10 @@ for(j=qj[0].a+0.5;j<max;j++)
 }
 if(c==(max-(qj[0].a)))
 {
-	printf("%d %d",(qj[0].a),max);
+	my_printf("%d %d",(qj[0].a),max);
 }
 else{
-	printf("no");
+	my_printf("no");
 }
 
 	return 0;

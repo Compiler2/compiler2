@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,d,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=12;i++){
 		if(i==1){
 			d=12;
@@ -44,15 +44,15 @@ int main_bench()
 		t=d%7;
 		if(n<5){
 			if(t+n==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			}
 		}else if(n==5){
 			if(t==0){
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}else if(n>5){
 			if(t+n==12){
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}else{
 			break;

@@ -7,12 +7,12 @@ int main_bench()
   int j;
   int l;
   
-  scanf ("%d",&n);
+  my_scanf ("%d",&n);
   char c[20];
   for (i=1;i<=n;i++)
   { 
 	  int count =1 ;
-	  scanf ("%s",c);
+	  my_scanf ("%s",c);
 	  l = strlen(c) ;
 
 
@@ -35,8 +35,8 @@ int main_bench()
 		  
 
 	  }
-	   if (count==0)   printf ("no\n");
-  if (count==1)   printf ("yes\n");
+	   if (count==0)   my_printf ("no\n");
+  if (count==1)   my_printf ("yes\n");
 
   }
  

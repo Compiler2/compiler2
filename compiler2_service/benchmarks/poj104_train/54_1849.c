@@ -11,7 +11,7 @@ int p(int n,int k){
 int main_bench(){
     int n;
     int k;
-    scanf("%d %d", &n, &k);
-    printf("%d", p(n, n) - k * (n - 1));
+    my_scanf("%d %d", &n, &k);
+    my_printf("%d", p(n, n) - k * (n - 1));
     return 0;
 }

@@ -16,12 +16,12 @@ struct student
 }stu[103];
 
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
  
 
-   scanf("%s %d %d %c %c %d", stu[i].name, &stu[i].a, &stu[i].b, &stu[i].g, &stu[i].x, &stu[i].lun);
+   my_scanf("%s %d %d %c %c %d", stu[i].name, &stu[i].a, &stu[i].b, &stu[i].g, &stu[i].x, &stu[i].lun);
    stu[i].money=0;
 }
 
@@ -54,8 +54,8 @@ for(j=1;j<n;j++)
 
 
 	
-   printf("%s\n",stu[0].name);
+   my_printf("%s\n",stu[0].name);
 
-   printf("%d\n",stu[0].money);
-   printf("%d\n",sum);
+   my_printf("%d\n",stu[0].money);
+   my_printf("%d\n",sum);
 }

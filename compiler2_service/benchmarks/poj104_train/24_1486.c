@@ -6,7 +6,7 @@ int main_bench(){
     int n[100],i,j=0,x,y=0,k=0,m,flag=0;
     for(i=0;a[i-1]!='\n';i++)   
 	{
-    	scanf("%c",&a[i]);
+    	my_scanf("%c",&a[i]);
 	}
 	a[i-1]='\0';
 	i=0;
@@ -43,7 +43,7 @@ int main_bench(){
 			m=j;
 		}
 	}
-	printf("%s\n",b[m]);
+	my_printf("%s\n",b[m]);
 	for(j=0;j<x;j++)  
 	{
 		if (n[j]<y&&n[j]>0)
@@ -52,6 +52,6 @@ int main_bench(){
 			m=j;
 		}
 	}
-	printf("%s\n",b[m]);
+	my_printf("%s\n",b[m]);
     return 0;
 }

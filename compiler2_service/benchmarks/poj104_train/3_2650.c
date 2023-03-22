@@ -2,16 +2,16 @@
 
 int main_bench(){
 	int i,j,n,m,a[1009],b;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	int isbreak=0;
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
 			if(a[i]!=a[j])
 			b=a[i]+a[j];
 			if(b==m){
-				printf("yes");
+				my_printf("yes");
 				isbreak=1;
 				break;
 			}
@@ -20,6 +20,6 @@ int main_bench(){
 		break;
 	}
 	if(isbreak==0)
-	printf("no");
+	my_printf("no");
 	return 0;
 }

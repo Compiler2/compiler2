@@ -27,7 +27,7 @@ int main_bench()
 		}
 	}
 	else l=l1;
-	if(l==1) {x=a[0]+b[0]-96;printf("%d",x);}
+	if(l==1) {x=a[0]+b[0]-96;my_printf("%d",x);}
 	else
 	{
 		for(i=l-1;i>0;i--)
@@ -46,8 +46,8 @@ int main_bench()
 	}
 	if(c[l])
 	{
-		printf("%d",c[l]);
-		for(i=1;i<=l;i++) printf("%d",c[i-1]);
+		my_printf("%d",c[l]);
+		for(i=1;i<=l;i++) my_printf("%d",c[i-1]);
 	}
 	else
 	{
@@ -57,12 +57,12 @@ int main_bench()
 		if(l0<l)
 		{
 			for(i=l;i>l-l0;i--) d[l-i]=c[i-1];
-			for(i=l0;i>=1;i--) printf("%d",d[i-1]);
+			for(i=l0;i>=1;i--) my_printf("%d",d[i-1]);
 		}
-		else for(i=1;i<=l;i++) printf("%d",c[i-1]);
+		else for(i=1;i<=l;i++) my_printf("%d",c[i-1]);
 	}
 	}
-	printf("\n");
+	my_printf("\n");
 }
 
 

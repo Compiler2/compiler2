@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[200], b[200], i, r=0, n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d%d", &a[i], &b[i]);
+		my_scanf("%d%d", &a[i], &b[i]);
 	}
 	for(i=0;i<=(n-1);i++)
 	{
@@ -21,15 +21,15 @@ int main_bench()
 	}
 	if(r>0)
 	{	
-		printf("A");
+		my_printf("A");
 	}
 	else if(r<0)
 	{	
-		printf("B");
+		my_printf("B");
 	}
 	else if(r==0)
 	{
-		printf("Tie");
+		my_printf("Tie");
 	}
 	return 0;
 }

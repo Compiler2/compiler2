@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,k,num[1000];
 	char a[1000][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		num[i]=strlen(a[i]);
 	}
 	for(i=0;i<n;i++)
@@ -26,7 +26,7 @@ int main_bench()
 	{
 		if(strlen(a[i])==num[0])
 		{
-			printf("%s\n",a[i]);
+			my_printf("%s\n",a[i]);
 			break;
 		}
 	}
@@ -34,7 +34,7 @@ int main_bench()
 	{
 		if(strlen(a[i])==num[n-1])
 		{
-			printf("%s\n",a[i]);
+			my_printf("%s\n",a[i]);
 			break;
 		}
 	}

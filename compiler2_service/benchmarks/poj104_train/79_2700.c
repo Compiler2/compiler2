@@ -4,7 +4,7 @@ main_bench()
 { 
 int n[10000], m[10000], i, s; 
 for(int q=0;q<10000;q++){
-     scanf("%d%d", &n[q],&m[q]); 
+     my_scanf("%d%d", &n[q],&m[q]); 
 	 if(n[q]==0&&m[q]==0){
 		 break;
 	 }
@@ -13,7 +13,7 @@ for(int q=0;q<10000;q++){
 		 for(i=2; i<=n[q]; i++) {
              s=(s+m[q])%i;
 		 }
-          printf("%d\n", s+1); 
+          my_printf("%d\n", s+1); 
 	 }
 } 
 return 0;

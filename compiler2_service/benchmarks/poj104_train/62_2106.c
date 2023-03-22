@@ -6,11 +6,11 @@ int main_bench()
   int i,j;
   j=0;
   for(i=0;i<20000;i++)
-  { scanf("%c", &temp);
+  { my_scanf("%c", &temp);
     if(temp==a[j-1]&&a[j-1]==32);
     else {
           a[j]=temp;
-          printf("%c", a[j]);
+          my_printf("%c", a[j]);
           j++;
 	}
   }

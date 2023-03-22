@@ -3,13 +3,13 @@
 int main_bench()
 {
     int m,n,i,q;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     int qq[m+2][n+2];
     for(i=1;i<m+1;i++)
     {
         for(q=1;q<n+1;q++)
         {
-            scanf("%d",&qq[i][q]);
+            my_scanf("%d",&qq[i][q]);
         }
     }
     for(i=0;i<n+2;i++)
@@ -26,7 +26,7 @@ int main_bench()
         {
             if(qq[i][q]>=qq[i-1][q]&qq[i][q]>=qq[i+1][q]&qq[i][q]>=qq[i][q-1]&qq[i][q]>=qq[i][q+1])
             {
-                printf("%d %d\n",i-1,q-1);
+                my_printf("%d %d\n",i-1,q-1);
             }
             else
             {

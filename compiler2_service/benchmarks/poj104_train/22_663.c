@@ -18,11 +18,11 @@ int main_bench()
 {
 	int a[200],i=1,j,max;
 	char b;
-	scanf("%d%c",&a[1],&b);
+	my_scanf("%d%c",&a[1],&b);
 	while (b==',')
 	{
 		i++;
-		scanf("%d%c",&a[i],&b);
+		my_scanf("%d%c",&a[i],&b);
 	}
 	paixu(a+1,i);
 
@@ -30,10 +30,10 @@ int main_bench()
 		for (j=1;j<=i;j++)
 			if(a[j]<max)
 			{
-				printf("%d",a[j]);
+				my_printf("%d",a[j]);
 				break;
 			}
 		if ((i==1)|| (j==i+1))
-			printf("No");
+			my_printf("No");
 		return 0;
 }

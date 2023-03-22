@@ -41,12 +41,12 @@ int main_bench(){
 		}
 	}
 	for(i=weizhi[e]+1;i<weizhi[e+1];i++){
-		printf("%c",zfc[i]);
+		my_printf("%c",zfc[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for(i=weizhi[f]+1;i<weizhi[f+1];i++){
-		printf("%c",zfc[i]);
+		my_printf("%c",zfc[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

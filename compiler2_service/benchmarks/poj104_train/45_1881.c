@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[50],b[50];
 	int len1,i=0,p=0,j,k=0;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	len1=strlen(a);
 do
 		if(a[i]==b[p])
@@ -23,6 +23,6 @@ do
 		}
 			while(i<len1);
 	j=k;
-	printf("%d",j);
+	my_printf("%d",j);
 	return 0;
 }

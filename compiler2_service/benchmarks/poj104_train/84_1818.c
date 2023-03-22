@@ -25,15 +25,15 @@ void selectionSort(int A[],int n)
 	  int i;
 	  int A[100];
 	  int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
 	  for(i=0;i<n;i++)
 	  {
-		  scanf("%d",&A[i]);
+		  my_scanf("%d",&A[i]);
 	  }
 	  selectionSort(A,n);
 	  for(i=0;i<2;i++)
 	  {
-		  printf("%d\n",A[i]);
+		  my_printf("%d\n",A[i]);
 	  }
       return 0;
  }

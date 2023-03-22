@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n, a, b, c, d, e, f, g;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	if(n>100000){
 		a=n/100000;
 		b=(n%100000)/10000;
@@ -42,7 +42,7 @@ int main_bench()
 	if(n<10){
 		g=n;
 	}
-	printf("%d", g);
+	my_printf("%d", g);
 	return 0;
 }
 

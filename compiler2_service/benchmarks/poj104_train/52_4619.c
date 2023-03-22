@@ -7,16 +7,16 @@ int main_bench()
 	int a[100];
 	int n,m,i;
 	int *pt;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	pt=change(a,n,m);
-	printf("%d",*pt);
+	my_printf("%d",*pt);
 	for(i=1;i<n;i++)
 	{
-		printf(" %d", *(pt+i));
+		my_printf(" %d", *(pt+i));
 	}
 }
 int * change(int x[100],int y,int z)

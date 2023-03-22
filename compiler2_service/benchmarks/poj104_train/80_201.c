@@ -5,8 +5,8 @@ int main_bench()
 {
 	int total(int year,int month,int day);
 	int yearo, montho, dayo, totalo,totalt,yeart, montht, dayt,t,y,i,temp=0;
-	scanf("%d %d %d",&yearo, &montho, &dayo);
-	scanf("%d %d %d",&yeart, &montht, &dayt);
+	my_scanf("%d %d %d",&yearo, &montho, &dayo);
+	my_scanf("%d %d %d",&yeart, &montht, &dayt);
 
 		
 
@@ -26,7 +26,7 @@ int main_bench()
 		if(((i % 4 == 0) &&( i % 100 != 0))|| (i % 400 == 0))
 		t++;
 	}
-			printf("%d",t);
+			my_printf("%d",t);
 	return 0;
 }
 

@@ -21,10 +21,10 @@ int main_bench()
 			b++;
 		}
 	}
-	printf("%d",s[0]);
+	my_printf("%d",s[0]);
 	for(k=1;k<=b;k++)
 	{
-	    printf(",%d",s[k]);
+	    my_printf(",%d",s[k]);
 	}
 	return 0;
 }

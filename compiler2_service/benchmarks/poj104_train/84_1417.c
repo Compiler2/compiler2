@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int sz[1000],n,i,e,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(k=n;k>1;k--){
 		for(i=0;i<k-1;i++){
@@ -15,7 +15,7 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d\n%d\n",sz[0],sz[1]);
+	my_printf("%d\n%d\n",sz[0],sz[1]);
 	return 0;
 }
  

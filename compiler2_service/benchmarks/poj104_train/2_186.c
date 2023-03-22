@@ -16,14 +16,14 @@ int main_bench()
     struct book book[1000];
     int n,i;
     p=(int *)calloc(257,sizeof(int));
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%d %s",&book[i].id,&book[i].c);
+                    my_scanf("%d %s",&book[i].id,&book[i].c);
     }
     number_of_books(n,p,book);
     m=max(n,p,book);
-    printf("%c\n%d\n",m,(*(p+m)));
+    my_printf("%c\n%d\n",m,(*(p+m)));
     name_of_book(n,p,book,m);
     
     return 0;
@@ -69,7 +69,7 @@ void name_of_book(int n,int *p,struct book book[1000],int m)
                      {
                                                     if((book[i].c[j])==m)
                                                     {
-                                                                         printf("%d\n",book[i].id);
+                                                                         my_printf("%d\n",book[i].id);
                                                                          break;
                                                     }
                      }

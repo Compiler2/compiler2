@@ -28,16 +28,16 @@ int main_bench()
 
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(mat+i)+j);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",*(mat+i)+j);
+	my_scanf("%d %d",&n,&m);
 	p=matf(mat,n,m);
 	if(p==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
 		    for(j=0;j<5;j++)
-			    printf("%d%c",*(*(mat+i)+j),(j!=4)?' ':'\n');
+			    my_printf("%d%c",*(*(mat+i)+j),(j!=4)?' ':'\n');
 	}
 	return 0;
 }

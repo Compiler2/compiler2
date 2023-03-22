@@ -6,16 +6,16 @@ int main_bench(){
   int miss,misspointer;
   int second = 0, time = 0;
 
-  scanf( "%d", &n );
+  my_scanf( "%d", &n );
   for ( int i = 0; i < n; i++ ) {
-      scanf( "%d", &miss );
+      my_scanf( "%d", &miss );
       if ( miss == 0 ){
-         printf( "60\n");
+         my_printf( "60\n");
          continue;
       }
       int j = 0;
       do{
-        scanf( "%d", &misspointer );
+        my_scanf( "%d", &misspointer );
         if ( (second < 60)&&(misspointer < 60) ){
           second = misspointer + time * 3;
 		 
@@ -31,7 +31,7 @@ int main_bench(){
 	  else{
 		second = 60 - time * 3;
 	  }
-      printf( "%d\n", second );
+      my_printf( "%d\n", second );
 	  second = 0;
 	  time = 0;
 	

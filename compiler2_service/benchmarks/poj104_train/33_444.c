@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,i,j;
 	char c[256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 
-	    scanf("%s",c);
+	    my_scanf("%s",c);
 		for(j=0;j<strlen(c);j++)
 		{
               if(c[j]=='A') 
@@ -32,8 +32,8 @@ int main_bench()
 				  continue;
 			  }
 		}
-			printf("%s",c);
-		printf("\n");
+			my_printf("%s",c);
+		my_printf("\n");
 	}
 	return 0;
 }

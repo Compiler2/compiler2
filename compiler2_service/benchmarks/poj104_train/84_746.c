@@ -6,10 +6,10 @@ int main_bench()
     int i;
     int n;
     int e=0,f=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
 	}
     for(i=0;i<n;i++)
 	{
@@ -30,6 +30,6 @@ int main_bench()
       f=a[i]; 
 	}
 	}
-    printf("%d\n%d\n",e,f);
+    my_printf("%d\n%d\n",e,f);
     return 0;
 }

@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,i,j,max,min,p,q,s;
 	s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int * a;
 	int * b;
 	int * c;
 	a=(int*)malloc(sizeof(int)*n);
 	b=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&(a[i]),&b[i]);
+		my_scanf("%d %d",&(a[i]),&b[i]);
 	}
 	max=b[0];min=a[0];
 	for(i=1;i<n;i++){
@@ -31,9 +31,9 @@ int main_bench(){
 		s+=c[i];
 	}
 	if(s>=1)
-		printf("no");
+		my_printf("no");
 	if(s==0)
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	free(a);free(b);free(c);
 	return 0;
 }

@@ -46,7 +46,7 @@ int main_bench()
 		}
 		for(i=c;i>=0;i--)
 		{
-		    printf("%d",k[i]);
+		    my_printf("%d",k[i]);
 		}
 	}
 	else
@@ -74,7 +74,7 @@ int main_bench()
 		}
 		for(i=d;i>=0;i--)
 		{
-	    	printf("%d",k[i]);
+	    	my_printf("%d",k[i]);
 		}
 	}
 	return 0;

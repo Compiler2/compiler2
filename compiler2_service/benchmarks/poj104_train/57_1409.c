@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,j;
 	char zfc[33];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		for(j=0;zfc[j]!='\0';j++){
 			if(zfc[j+1]=='\0'){
 				if(zfc[j]=='r')
@@ -16,7 +16,7 @@ int main_bench(){
 					zfc[j-1]='\0';
 			}
 		}
-		printf("%s\n",zfc);
+		my_printf("%s\n",zfc);
 
 		
 

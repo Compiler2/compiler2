@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	int max;
-	scanf("%d", &max);
+	my_scanf("%d", &max);
 	int lmax;
-	scanf("%d", &lmax);
+	my_scanf("%d", &lmax);
 	if(max<lmax)
 	{
 		max=lmax;
@@ -17,7 +17,7 @@ int main_bench()
 	int i;
 	for(i=0;i<(n-2);i++)
 	{
-		scanf("%d", &a);
+		my_scanf("%d", &a);
 	    if(a>max)
 		{
 			lmax=max;
@@ -28,7 +28,7 @@ int main_bench()
 		     lmax=a;
 		}
 	}
-	printf("%d\n", max);
-	printf("%d", lmax);
+	my_printf("%d\n", max);
+	my_printf("%d", lmax);
 	return 0;
 }

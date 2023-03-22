@@ -6,7 +6,7 @@ int main_bench()
 	int i,j,max[5][3],min[5][3],m=0;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 		{
@@ -39,11 +39,11 @@ int main_bench()
 			if(max[i][1]==min[j][1]&&max[i][2]==min[j][2])
 			{
 			    m++;
-				printf("%d %d %d",max[i][1]+1,max[i][2]+1,max[i][0]);
+				my_printf("%d %d %d",max[i][1]+1,max[i][2]+1,max[i][0]);
 			}
 		}
 	if(m==0)
-		printf("not found");
+		my_printf("not found");
 	return 0;
 }
 

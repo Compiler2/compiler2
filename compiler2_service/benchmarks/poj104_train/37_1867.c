@@ -3,12 +3,12 @@
 main_bench()
 {
 	int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[233333];
 	for(k=0;k<n;k++)
 	{
 		int b[233333]={0};
-		scanf("%s",a);
+		my_scanf("%s",a);
 		for(i=0;a[i]!='\0';i++)
 		{
 			for(j=0;a[j]!='\0';j++)
@@ -28,9 +28,9 @@ main_bench()
 		}
 		if(j==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else
-		printf("%c\n",a[i]);
+		my_printf("%c\n",a[i]);
 	}
 }

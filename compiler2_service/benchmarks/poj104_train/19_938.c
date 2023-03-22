@@ -6,7 +6,7 @@ int main_bench()
 	char a[100]={0},b[100]={0};
 	gets(s);
 	int c[1000]={0};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int i,j,k=0,h,d=0;
 	int l=strlen(s);
 	int p=strlen(a);
@@ -35,25 +35,25 @@ int main_bench()
 	}
 	if(k==0)
 	{
-		printf("%s",s);
+		my_printf("%s",s);
 	}
 	else
 	{
 		for(i=0;i<c[0];i++)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		}
 		for(h=0;h<d;h++)
 		{
-			printf("%s",b);
+			my_printf("%s",b);
 			for(j=p+c[h];j<c[h+1];j++)
 			{
-				printf("%c",s[j]);
+				my_printf("%c",s[j]);
 			}
 		}
 		for(j=c[d-1]+p;j<l;j++)
 		{
-			printf("%c",s[j]);
+			my_printf("%c",s[j]);
 		}
 	}
 	return 0;

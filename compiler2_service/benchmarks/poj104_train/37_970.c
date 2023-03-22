@@ -4,10 +4,10 @@ int main_bench()
 {
 	int t,i,k,m;
 	char zfc[100001];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
         for(k=0;zfc[k]!=0;k++)
 		{
 			for(m=0;zfc[m]!=0;m++)
@@ -19,13 +19,13 @@ int main_bench()
 			}
 			if(zfc[m]==0)
 			{
-				printf("%c\n",zfc[k]);
+				my_printf("%c\n",zfc[k]);
 				break;
 			}
 		}
 		if(zfc[k]==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

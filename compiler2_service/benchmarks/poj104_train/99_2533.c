@@ -3,14 +3,14 @@
 int main_bench()
 {
     int n,a;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i=1;
     int b=0;
     int c=0;
     int d=0;
     int e=0;
     while (i<=n){
-        scanf("%d",&a);
+        my_scanf("%d",&a);
         if(a>=1&&a<=18){
             b++;
         }else if(a>=19&&a<=35){
@@ -33,6 +33,6 @@ int main_bench()
     G=C/N*100;
     H=D/N*100;
     I=E/N*100;
-    printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",F,G,H,I);
+    my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%",F,G,H,I);
     return 0;
 }

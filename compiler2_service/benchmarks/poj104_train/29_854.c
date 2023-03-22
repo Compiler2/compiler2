@@ -3,10 +3,10 @@
 int main_bench(){
 	int m,n,i,j;
 	float sum;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
 	sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int*a=(int*)malloc(sizeof(int)*n);
 	int*b=(int*)malloc(sizeof(int)*n);
 	float*c=(float*)malloc(sizeof(float)*n);
@@ -17,9 +17,9 @@ int main_bench(){
 	c[0]=(float)a[0]/b[0];
 	c[1]=(float)a[1]/b[1];
 	if(n==1){
-		printf("%.3f\n",c[0]);}
+		my_printf("%.3f\n",c[0]);}
 	if(n==2){
-		printf("%.3f\n",c[0]+c[1]);}
+		my_printf("%.3f\n",c[0]+c[1]);}
 	if(n>=3){
 		sum=c[0]+c[1];
 		for(j=3;j<=n;j++){
@@ -28,7 +28,7 @@ int main_bench(){
 			c[j-1]=(float)a[j-1]/b[j-1];
 			sum+=c[j-1];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	}
 	return 0;

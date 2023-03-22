@@ -6,10 +6,10 @@ main_bench()
 	void run(int x,int y);
 	void ping(int x,int y);
 	int n,i,j,k,year,y,r;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&year,&y,&r);
+		my_scanf("%d%d%d",&year,&y,&r);
 		if(year%400==0||(year%4==0&&year%100!=0))
 		run(y,r);
 		else ping(y,r);
@@ -25,8 +25,8 @@ void run(int x,int y)
 	n=x<y?x:y;
 	for(i=n;i<m;i++)
 	k=k+a[i];
-	if(k%7==0)printf("YES\n");
-	else printf("NO\n");
+	if(k%7==0)my_printf("YES\n");
+	else my_printf("NO\n");
 }
 void ping(int x,int y)
 {
@@ -38,6 +38,6 @@ void ping(int x,int y)
 	n=x<y?x:y;
 	for(i=n;i<m;i++)
 	k=k+a[i];
-	if(k%7==0)printf("YES\n");
-	else printf("NO\n");
+	if(k%7==0)my_printf("YES\n");
+	else my_printf("NO\n");
 }

@@ -5,7 +5,7 @@ void P(char a,char b)
 	int m,n;
 	m=a;
 	n=b;
-	printf("%c",m+n);
+	my_printf("%c",m+n);
 }
 int main_bench()
 {
@@ -19,6 +19,6 @@ int main_bench()
 	}
 	a=str[0];
 	b=str[n-1];
-	printf("%c",a+b);
+	my_printf("%c",a+b);
 	return 0;
 }

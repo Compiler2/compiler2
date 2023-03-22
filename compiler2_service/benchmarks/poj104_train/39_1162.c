@@ -17,10 +17,10 @@ int main_bench()
 {
 	struct student a[101];
 	int N,sum,max,MAX;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(int i=0;i<N;i++)
 	{
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].pingshi,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].pingshi,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
 		a[i].money=jiangxuejin(a[i]);
 	}
 	sum=max=0;
@@ -34,9 +34,9 @@ int main_bench()
 		}
 		sum+=a[j].money;
 	}
-	printf("%s\n",a[MAX].name);
-	printf("%d\n",max);
-	printf("%d\n",sum);
+	my_printf("%s\n",a[MAX].name);
+	my_printf("%d\n",max);
+	my_printf("%d\n",sum);
 	return 0;
 }
 

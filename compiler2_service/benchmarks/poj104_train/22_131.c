@@ -8,7 +8,7 @@ int main_bench()
 		a[i]=0;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&b[i]);
+		my_scanf("%d%c",&a[i],&b[i]);
 		if(b[i]=='\n')
 		{
 			j=i+1;
@@ -16,7 +16,7 @@ int main_bench()
 		}
 	}
 	
-	if(j==1){printf("No");exit(-1);}
+	if(j==1){my_printf("No");exit(-1);}
 	if(j>1)
 	{
 		for(i=0;i<=j-1;i++)
@@ -27,7 +27,7 @@ for(i=0;i<=j-1;i++)
 {
 	if(c[i]!=0)m=m+1;
 }
-if(m==0){printf("No");exit(-1);}
+if(m==0){my_printf("No");exit(-1);}
 	k=a[0];
 	for(i=0;i<j;i++)
 	{
@@ -42,7 +42,7 @@ if(m==0){printf("No");exit(-1);}
 	{
 		if(a[i]>l)l=a[i];
 	}
-	printf("%d",l);
+	my_printf("%d",l);
 }
 
 	

@@ -3,7 +3,7 @@
 main_bench()
 {
       int year,month,day;
-      scanf("%d %d %d",&year,&month,&day);
+      my_scanf("%d %d %d",&year,&month,&day);
       if ((year%4==0&&year%100!=0)||year%400==0)
       {
            switch (month)
@@ -40,7 +40,7 @@ main_bench()
                   case 12: day=day+334;break;
            }
       }
-      printf("%d",day);
+      my_printf("%d",day);
       getchar();
       getchar();
 }

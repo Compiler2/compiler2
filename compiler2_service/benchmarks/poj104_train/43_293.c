@@ -4,7 +4,7 @@ int main_bench(){
 	int prime[10000],r[200][2],i,j,m,timer,count,stop;
 	timer=-1;
 	count=-1;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=3;;i++){
 		for(j=2;;j++){
 			if(i%j!=0){
@@ -36,14 +36,14 @@ int main_bench(){
 		}
 	}
 	if(m==6){
-		printf("3 3");
+		my_printf("3 3");
 	}
 	for(i=0;i<count;i++){
-		printf("%d %d\n",r[i][0],r[i][1]);
+		my_printf("%d %d\n",r[i][0],r[i][1]);
 	}
 	if(m==10000){
-		printf("4919 5081");
+		my_printf("4919 5081");
 	}
-	scanf("%d",&stop);
+	my_scanf("%d",&stop);
 	return 0;
 }

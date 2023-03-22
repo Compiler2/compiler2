@@ -7,17 +7,17 @@ int main_bench()
 	int m;
 	int i,j,k,sum=0;
 	
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%c",&room[i][j][0]);
+			my_scanf("%c",&room[i][j][0]);
 		}
-		scanf("\n");	
+		my_scanf("\n");	
 	}
 	
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(k=1;k<=m;k++)
 	{
@@ -70,7 +70,7 @@ int main_bench()
 		}
 	}
 
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 	return 0;
 }
 

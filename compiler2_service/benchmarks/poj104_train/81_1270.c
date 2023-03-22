@@ -7,10 +7,10 @@ int main_bench(){
 	int a,b;
 	for(a=0;a<5;a++){
 		for(b=0;b<5;b++){
-			scanf("%d",&sz[a][b]);
+			my_scanf("%d",&sz[a][b]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(zn(n,m,sz)){
 		for(b=0;b<5;b++){
 			int e;
@@ -20,12 +20,12 @@ int main_bench(){
 		}
 		for(a=0;a<5;a++){
 			for(b=0;b<4;b++){
-				printf("%d ",sz[a][b]);
+				my_printf("%d ",sz[a][b]);
 			}
-			printf("%d\n",sz[a][4]);
+			my_printf("%d\n",sz[a][4]);
 		}
 	}else{
-		printf("error");
+		my_printf("error");
 	}
 	return 0;
 }

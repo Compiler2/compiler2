@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[50],b[50];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int m,n,i,j,account;
 	m=strlen(a);
 	n=strlen(b);
@@ -22,7 +22,7 @@ int main_bench()
 			}
 if(j=(m-1))
 	
-	 printf("%d\n",account);
+	 my_printf("%d\n",account);
 			
 		}
 	}

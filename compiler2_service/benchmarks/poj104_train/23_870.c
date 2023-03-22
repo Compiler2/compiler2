@@ -19,8 +19,8 @@ int main_bench()
 	b[j]=chang;
 	for(;j>1;j--)
 	{
-	     for(i=b[j-1]+1;i<b[j];i++)printf("%c",a[i]);
-	     printf(" ");
+	     for(i=b[j-1]+1;i<b[j];i++)my_printf("%c",a[i]);
+	     my_printf(" ");
 	}
-	for(i=0;i<b[1];i++)printf("%c",a[i]);
+	for(i=0;i<b[1];i++)my_printf("%c",a[i]);
 }

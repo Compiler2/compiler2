@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,h,i,j,k,s,t,p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n-1],c[n-1];
     char string[n-1][10],b[n-1][10];
     for(h=0;h<=n-1;h++)
     {
-        scanf("%s %d",string[h],&a[h]);
+        my_scanf("%s %d",string[h],&a[h]);
     }
     for(p=0,j=0;p<=n-1;p++)
     {
@@ -30,7 +30,7 @@ int main_bench()
             }
             if(t==j)
             {
-                printf("%s\n",b[s-1]);
+                my_printf("%s\n",b[s-1]);
                 c[s-1]=0;
                 break;
             }                                                                 
@@ -39,7 +39,7 @@ int main_bench()
     for(i=0;i<n;i++)  
     { 
         if(a[i]<60)
-            printf("%s\n",string[i]);
+            my_printf("%s\n",string[i]);
     }
     getchar();
     getchar();

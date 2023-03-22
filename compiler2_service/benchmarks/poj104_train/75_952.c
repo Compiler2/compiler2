@@ -20,12 +20,12 @@ int main_bench()
 		else if(c>='0'&&c<='9')ch[i]=ch[i]*10+c-'0';
 		else i++;
 	}
-	printf("%d ",i);
+	my_printf("%d ",i);
 	for(i--;i>=0;i--)
 	{
 		for(jj=j[i];jj<ch[i];jj++)t[jj]++;
 	}
 	for(i=0;i<2000;i++)if(t[i]>max)max=t[i];
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

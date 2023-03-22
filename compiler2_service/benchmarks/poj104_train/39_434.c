@@ -13,10 +13,10 @@
    int main_bench()
    {
       int n,i,max=0,m=0;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
       for(i=0;i<n;i++)
      {
-      scanf("%s %d %d %c %c %d",points[i].name,&points[i].score1,&points[i].score2,&points[i].leader,&points[i].west,&points[i].essay);
+      my_scanf("%s %d %d %c %c %d",points[i].name,&points[i].score1,&points[i].score2,&points[i].leader,&points[i].west,&points[i].essay);
 	  points[i].money=0;
      }
   for(i=0;i<n;i++)
@@ -56,8 +56,8 @@
    {
 	   m=m+points[i].money;
    }
-   printf("%s\n",p);
-   printf("%d\n",max);
-   printf("%d\n",m);
+   my_printf("%s\n",p);
+   my_printf("%d\n",max);
+   my_printf("%d\n",m);
    return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int i,j,n,k;
 	char c;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char *p[100];
 	for(i=0;i<n;i++)
 	{
@@ -29,7 +29,7 @@ int main_bench()
 				k=0;break;
 				}
 		}
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 	}
 	return 0;
 

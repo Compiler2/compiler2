@@ -10,9 +10,9 @@ int main_bench()
        { word=1;sum=sum+1;j=sum;}
         a[j]=a[j]+1;
       }
-    printf("%d",a[1]);
+    my_printf("%d",a[1]);
     if(sum>=2)
      for(i=2;i<=sum;i++)
-    printf(",%d",a[i]);
+    my_printf(",%d",a[i]);
 }
 

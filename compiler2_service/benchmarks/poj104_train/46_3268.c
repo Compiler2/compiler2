@@ -2,10 +2,10 @@
 
 int main_bench(){
     int i,j,k,n=0,row,col,sz[100][100],xz[10000];
-    scanf("%d %d\n",&row,&col);
+    my_scanf("%d %d\n",&row,&col);
     for(i=0;i<row;i++){
         for(j=0;j<col;j++){
-            scanf("%d ",&sz[i][j]);
+            my_scanf("%d ",&sz[i][j]);
         }
     }
    for(k=0;n<row*col;k++){
@@ -28,7 +28,7 @@ int main_bench(){
         }
    }
     for(n=0;n<row*col;n++){
-    printf("%d\n",xz[n]);
+    my_printf("%d\n",xz[n]);
     }
     return 0;
     

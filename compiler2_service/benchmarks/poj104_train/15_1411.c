@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,n,q[1000][1000],a,b,c,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&q[i][j]);
+			my_scanf("%d",&q[i][j]);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
@@ -31,5 +31,5 @@ tsu:for(i=n-1;i>=0;i--)
 			}
 		}
 	}
-pku:printf("%d",(c-a+1)*(d-b+1));
+pku:my_printf("%d",(c-a+1)*(d-b+1));
 }

@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,z[50000][2],x,y,i,j,q,w;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&z[i][0],&z[i][1]);
+		my_scanf("%d%d",&z[i][0],&z[i][1]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -43,9 +43,9 @@ int main_bench(){
 	}
 	if(y==q)
 	
-		printf("%d %d",x,y);
+		my_printf("%d %d",x,y);
 	else
-		printf("no");
+		my_printf("no");
 	return 0;
 
 }

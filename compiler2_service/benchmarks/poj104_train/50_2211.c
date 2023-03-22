@@ -13,11 +13,11 @@ int main_bench()
     for(i=2;i<=12;i++)
     {s[i]=s[i-1]+a[i];}
     int m;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(i=1;i<=12;i++)
     {
          if(((s[i-1]+12)%7+m)%7==5)
-         {printf("%d\n",i);}
+         {my_printf("%d\n",i);}
     }
     
          return 0;

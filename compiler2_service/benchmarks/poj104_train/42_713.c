@@ -2,11 +2,11 @@
 
 int main_bench()
 {int a[100000],n,m,j,i,*p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 p=a;
 for (i=0;i<n;i++)
-scanf("%d",p++);
-scanf("%d",&m);
+my_scanf("%d",p++);
+my_scanf("%d",&m);
 p=a;
 
 for(i=0;i<n;i++)
@@ -17,8 +17,8 @@ i=i-1;n=n-1; }}
 p=a;
 
 for(i=0;i<n-1;i++,p++)
-printf("%d ",*p);
-printf("%d",*p);
+my_printf("%d ",*p);
+my_printf("%d",*p);
       } 
       
 

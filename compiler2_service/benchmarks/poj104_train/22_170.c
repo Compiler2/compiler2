@@ -18,7 +18,7 @@ int main_bench()
 	}
 
     if(counter<=0)
-	printf("No");
+	my_printf("No");
 	else
 	{
 		for(i=0;i<counter;i++)
@@ -34,7 +34,7 @@ int main_bench()
 		{
 			if(sum[i]==sum[0]) t++;
 		}
-	 if(t==counter) printf("No");
-	 else printf("%d",sum[t+1]);
+	 if(t==counter) my_printf("No");
+	 else my_printf("%d",sum[t+1]);
     }
 }

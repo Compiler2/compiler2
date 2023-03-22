@@ -4,10 +4,10 @@ int main_bench()
 { 
 	int a[100000];
 	int i,n,m,k,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	scanf("%d",&m);
+		my_scanf("%d",&a[i]);
+	my_scanf("%d",&m);
 	for(k=0,i=0;i<n-k;)
 	{
 		if(a[i]==m)
@@ -19,6 +19,6 @@ int main_bench()
 		else i++;
 	}
 	for(i=0;i<n-k-1;i++)
-		printf("%d ",a[i]);
-	printf("%d",a[n-k-1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d",a[n-k-1]);
 }

@@ -4,11 +4,11 @@
 int main_bench() {
     int n;
     char str[1024];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int flag;
     while (n--) {
         flag = 1;
-        scanf("%s", str);
+        my_scanf("%s", str);
         int len = strlen(str);
         for (int i = 0; i < len; ++i) {
             if (isalpha(str[i]) || str[i] == '_')
@@ -21,8 +21,8 @@ int main_bench() {
             }
         }
         if (flag)
-            printf("yes\n");
+            my_printf("yes\n");
         else
-            printf("no\n");
+            my_printf("no\n");
     }
 }

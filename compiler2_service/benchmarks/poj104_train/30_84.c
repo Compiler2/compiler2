@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a,b,c,d,t1=0,t2=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=1;a<=n;a++)
 	{
 		if(a<10&&a!=7)
@@ -22,5 +22,5 @@ int main_bench()
 		}
 	}
 	t=t1+t2;
-	printf("%d",t);
+	my_printf("%d",t);
 }

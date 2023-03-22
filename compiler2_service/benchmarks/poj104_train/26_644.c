@@ -16,5 +16,5 @@ int main_bench()
 	}
 	}
 end:;
-	printf("\n");
+	my_printf("\n");
 }

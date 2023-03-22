@@ -7,13 +7,13 @@ int main_bench(){
 	double GPA;
 	int xf[100];
 	double jd[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<=n-2;i++){
-		scanf("%d",&xf[i]);
+		my_scanf("%d",&xf[i]);
 	}
-	scanf("%d\n",&xf[n-1]);
+	my_scanf("%d\n",&xf[n-1]);
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&df[i]);
+		my_scanf("%d",&df[i]);
 	}
     for(i=0;i<=n-1;i++){
 		if(df[i]<60){
@@ -43,6 +43,6 @@ int main_bench(){
 		b+=jd[i];
 	}
 	GPA=b/a;
-	printf("%.2lf",GPA);
+	my_printf("%.2lf",GPA);
 	return 0;
 }

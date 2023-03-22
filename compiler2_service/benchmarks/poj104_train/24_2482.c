@@ -22,23 +22,23 @@ int main_bench()
      if(max==b[0]+1)
      {
          for(i=0;i<b[0];i++)
-         printf("%c",a[i]);
+         my_printf("%c",a[i]);
      }
      else
      {
          for(i=b[p]+1;i<b[p+1];i++)
-         printf("%c",a[i]);
+         my_printf("%c",a[i]);
      }
-        printf("\n");
+        my_printf("\n");
         if(min==b[0]+1)
      {
          for(i=0;i<b[0];i++)
-         printf("%c",a[i]);
+         my_printf("%c",a[i]);
      }
      else
      {
          for(i=b[q]+1;i<b[q+1];i++)
-         printf("%c",a[i]);
+         my_printf("%c",a[i]);
      }
 
 }

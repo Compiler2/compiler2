@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,k,t,a[2][10];
 	float sum ;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(k=0;k<2;k++)
 	for (i=0;i<n;i++)
-		scanf("%d",&a[k][i]);
+		my_scanf("%d",&a[k][i]);
  
 	sum=0;
 	for (i=0;i<n;i++)
@@ -37,6 +37,6 @@ int main_bench()
 	for (i=0;i<n;i++)
 		t=t+a[0][i];
 	sum=sum/t;
-	printf("%.2f",sum);
+	my_printf("%.2f",sum);
 }
 

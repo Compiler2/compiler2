@@ -4,9 +4,9 @@ int main_bench(){
 int n,k,i; 
 int a[1000]; 
 int b[1000]; 
-scanf("%d%d",&n,&k); 
+my_scanf("%d%d",&n,&k); 
 for(i=0;i<n;i++){ 
-scanf("%d",&a[i]); 
+my_scanf("%d",&a[i]); 
 } 
 int p=0,s=0,d=0; 
 for(i=0;i<n;i++){ 
@@ -23,10 +23,10 @@ d++;
 } 
 } 
 if((s-d)!=0){
-printf("yes");
+my_printf("yes");
 } 
 else{
-printf("no"); 
+my_printf("no"); 
 } 
 return 0; 
 }

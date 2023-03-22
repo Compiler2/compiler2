@@ -8,15 +8,15 @@ int main_bench()
     l=strlen(N);
     if(l==1)
     {
-            printf("0\n");     
-            printf("%s\n",N);
+            my_printf("0\n");     
+            my_printf("%s\n",N);
     }
     else if(l==2)
     {
             int q=(10*(N[0]-'0')+(N[1]-'0'))/13;
             s=(10*(N[0]-'0')+(N[1]-'0'))%13;
-            printf("%d\n",q);     
-            printf("%d\n",s);
+            my_printf("%d\n",q);     
+            my_printf("%d\n",s);
     }
     else
     {
@@ -30,8 +30,8 @@ int main_bench()
           S[i]=s/13+'0';
           s=s%13;
           S[i+1]='\0';
-          printf("%s\n",S);
-          printf("%d\n",s);    
+          my_printf("%s\n",S);
+          my_printf("%d\n",s);    
      }          
     else
     {
@@ -44,8 +44,8 @@ int main_bench()
           S[i]=s/13+'0';
           s=s%13;
           S[i+1]='\0';
-          printf("%s\n",S);
-          printf("%d\n",s);                   
+          my_printf("%s\n",S);
+          my_printf("%d\n",s);                   
     }
     }
     getchar();

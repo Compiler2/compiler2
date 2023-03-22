@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int sz[n][2];
     int k=0;
     int sum=0;
     for(int i=0;i<n;i++)
     {
-        scanf("%d %d",&sz[i][0],&sz[i][1]);
+        my_scanf("%d %d",&sz[i][0],&sz[i][1]);
         if(sz[i][0]<=140&&sz[i][0]>=90&&sz[i][1]<=90&&sz[i][1]>=60)
         {
             sum++;
@@ -23,7 +23,7 @@ int main_bench()
             sum=0;
         }
     }
-    if(sum>k)printf("%d",sum);
-    else printf("%d",k);
+    if(sum>k)my_printf("%d",sum);
+    else my_printf("%d",k);
     return 0;
 }

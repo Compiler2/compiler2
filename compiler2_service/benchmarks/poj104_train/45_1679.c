@@ -6,8 +6,8 @@ int main_bench()
 	char s2[50];
 	int i,k,x=0,m;
 	char c;
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	for(i=0;(c=s2[i])!='\0';i++)
 	{
 		if(s1[0]==s2[i])
@@ -26,6 +26,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

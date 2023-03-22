@@ -4,13 +4,13 @@ main_bench()
 {
     int a[26],n,i,I,j,p,k;
     char s[100000],first=124;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (I=1;I<=n;I++)
     {
         first=124;
         for (j=0;j<=25;j++)
         a[j]=0;
-        scanf("%s",s);
+        my_scanf("%s",s);
         for (j=0;j<strlen(s);j++)
         {
             a[s[j]-97]++;
@@ -30,8 +30,8 @@ main_bench()
         if (a[i]==1)
         p=1;
         if (p==0)
-        printf("no\n");
+        my_printf("no\n");
         else
-        printf("%c\n",first);
+        my_printf("%c\n",first);
     }
 }

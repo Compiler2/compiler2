@@ -4,9 +4,9 @@ int main_bench(){
     int i,n,a,b,c,d;
     double A,B,C,D;
     int sz[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-     scanf("%d",&(sz[i]));   
+     my_scanf("%d",&(sz[i]));   
     }
     a=0;b=0;c=0;d=0;
     for(i=0;i<n;i++){
@@ -24,10 +24,10 @@ int main_bench(){
     B=(double)(b*1.0/n*100);
     C=(double)(c*1.0/n*100);
     D=(double)(d*1.0/n*100);
-    printf("1-18: %.2lf%%\n",A);
-    printf("19-35: %.2lf%%\n",B);
-    printf("36-60: %.2lf%%\n",C);
-    printf("Over60: %.2lf%%\n",D);
+    my_printf("1-18: %.2lf%%\n",A);
+    my_printf("19-35: %.2lf%%\n",B);
+    my_printf("36-60: %.2lf%%\n",C);
+    my_printf("Over60: %.2lf%%\n",D);
     return 0;
 }
 

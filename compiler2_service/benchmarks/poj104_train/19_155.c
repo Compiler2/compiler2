@@ -20,7 +20,7 @@ int main_bench()
 			if (s[j]!=a[j-i]) result=0;			
 		}
 		}
-		if (result==1) {printf("%s",b);i=i+l1-1;} else printf("%c",s[i]);
+		if (result==1) {my_printf("%s",b);i=i+l1-1;} else my_printf("%c",s[i]);
 		
 	}
 	return 0;

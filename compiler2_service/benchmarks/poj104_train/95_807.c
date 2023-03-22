@@ -30,6 +30,6 @@ main_bench()
     else
     m='=';
     
-    printf("%c",m);
+    my_printf("%c",m);
    
 }

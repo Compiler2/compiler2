@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,x,y,z,sum1=0,sum2=0,t=0,u=0,m=0,n=0,final;
-		scanf("%d %d %d\n%d %d %d",&a,&b,&c,&x,&y,&z);
+		my_scanf("%d %d %d\n%d %d %d",&a,&b,&c,&x,&y,&z);
 	   
 loop1: m=m+1;
 	        	if(m==a)
@@ -113,5 +113,5 @@ if(x%4==0)
 		  sum2=sum2+z;
 
 final=sum2-sum1;
-printf("\n%d",final);
+my_printf("\n%d",final);
 }

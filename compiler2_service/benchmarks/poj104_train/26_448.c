@@ -33,7 +33,7 @@ int main_bench()
 	m=strlen(b);
 	for(i=0;i<j;i++)
 	{
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	}
 		
 

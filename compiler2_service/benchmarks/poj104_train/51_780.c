@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char str[500];
 	char gram[500][5]={'\0'};
-	scanf("%s",str);
+	my_scanf("%s",str);
 	
 	int i1;
 	
@@ -46,17 +46,17 @@ int main_bench()
 	
 	if(max==1)
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	else
 	{
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	int i4;
 	for (i4=0;gram_count[i4]!=0;i4++)
 	{
 		if(gram_count[i4]==max)
 		{
-			printf("%s\n",gram[i4]);
+			my_printf("%s\n",gram[i4]);
 		}
 	}
 	}

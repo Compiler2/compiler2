@@ -3,9 +3,9 @@
 int main_bench(){
 char a[256],b[256],c[256];
 int q,w,e,i,k,j;
-scanf("%s",a);
-scanf("%s",b);
-scanf("%s",c);
+my_scanf("%s",a);
+my_scanf("%s",b);
+my_scanf("%s",c);
 q=strlen(a);
 w=strlen(b);
 e=strlen(c);
@@ -28,7 +28,7 @@ break;}
 
 }
 
-printf("%s",a);
+my_printf("%s",a);
 
 return 0;
 }

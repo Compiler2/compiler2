@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[10];
 	int i=1,j,m,n,k,sum=0,t=1;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
     for(i=0;i<=5;i++)
 	{
 	 	if(t<=m&&m<t*10)
@@ -25,5 +25,5 @@ int main_bench()
 		sum*=10;
 	}
 	sum=sum/10;
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }   

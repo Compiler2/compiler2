@@ -21,9 +21,9 @@ int main_bench()
 				b[i]+=32;
 			}
 		}
-	if (strcmp(a,b)==0) printf("=");
-	else if (strcmp(a,b)>0) printf(">");
-	else if (strcmp(a,b)<0) printf("<");
+	if (strcmp(a,b)==0) my_printf("=");
+	else if (strcmp(a,b)>0) my_printf(">");
+	else if (strcmp(a,b)<0) my_printf("<");
 	return 0;
 }
 		

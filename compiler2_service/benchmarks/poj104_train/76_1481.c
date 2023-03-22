@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,i,k,e,f,m,x=0,a[50000],b[50000],c[50000],d[50000];
 	double g;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 		c[i]=a[i];
 		d[i]=b[i];
 	}
@@ -35,9 +35,9 @@ int main_bench(){
 		}
 	}
 	if(x!=2*(d[n-1]-c[0])+1){
-			printf("no");
+			my_printf("no");
 	}else{
-	        printf("%d %d",c[0],d[n-1]);
+	        my_printf("%d %d",c[0],d[n-1]);
 	}
 	return 0;
 }

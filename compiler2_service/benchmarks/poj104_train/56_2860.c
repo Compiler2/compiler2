@@ -3,7 +3,7 @@
 int main_bench(){
 	int n,e;
 	int sz[5];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	sz[1]=n/10000;
 	sz[2]=(n-sz[1]*10000)/1000;
 	sz[3]=(n-sz[1]*10000-sz[2]*1000)/100;
@@ -22,6 +22,6 @@ int main_bench(){
 		n=sz[5]*10+sz[4]*1;
 	}
 	else n=n;
-	printf("%d",n);
+	my_printf("%d",n);
 	return 0;
 }

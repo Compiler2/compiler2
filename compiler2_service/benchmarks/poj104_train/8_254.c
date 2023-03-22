@@ -5,11 +5,11 @@ int a[100],b[100],c[100];
 void shuru()
 {
 	int i;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
-	{scanf("%d",&a[i]);}
+	{my_scanf("%d",&a[i]);}
 	for(i=0;i<m;i++)
-	{scanf("%d",&b[i]);}
+	{my_scanf("%d",&b[i]);}
 }
 void paixu()
 {
@@ -35,8 +35,8 @@ void shuchu()
 {
 	int i;
     for(i=0;i<n+m;i++)
-    {if(i!=n+m-1)printf("%d ",c[i]);
-	else printf("%d",c[i]);}
+    {if(i!=n+m-1)my_printf("%d ",c[i]);
+	else my_printf("%d",c[i]);}
 }
 int main_bench()
 {

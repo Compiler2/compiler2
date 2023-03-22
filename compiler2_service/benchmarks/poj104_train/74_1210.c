@@ -47,7 +47,7 @@ int hui(int x)
 main_bench()
 {
       int m,n,i,j,count=0;
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       for(i=m;i<=n;i++)
       {
                        if(prime(i)==1)
@@ -56,15 +56,15 @@ main_bench()
                          {
                            if(count==0)
                            {
-                           printf("%d",i);
+                           my_printf("%d",i);
                            count++;
                            }
-                           else  printf(",%d",i);
+                           else  my_printf(",%d",i);
                          }
                        }
       }
       if(count==0)
-      printf("no\n");
+      my_printf("no\n");
       getchar();
       getchar();
 }

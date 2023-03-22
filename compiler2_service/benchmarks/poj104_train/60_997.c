@@ -12,14 +12,14 @@ int f(int x){
 
 int main_bench(){
 	int i,n,e=2,num=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<=n;i++){
 		if(f(i)&&i==e+2){
-			printf("%d %d\n",e,i);
+			my_printf("%d %d\n",e,i);
 			num++;
 		}
 		if(f(i)) e=i;
 	}
-	if(num==0) printf("empty");
+	if(num==0) my_printf("empty");
 	return 0;
 }

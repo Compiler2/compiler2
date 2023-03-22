@@ -12,9 +12,9 @@ struct student
 int main_bench()
 {
 	int n,i,sum=0,prize,max=0,k=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].final,&stu[i].pingyi,&stu[i].leader,&stu[i].wester,&stu[i].essay);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].final,&stu[i].pingyi,&stu[i].leader,&stu[i].wester,&stu[i].essay);
 	for(i=0;i<n;i++)
 	{
 		prize=0;
@@ -31,6 +31,6 @@ int main_bench()
 		if(prize>max) 
 		{max=prize;k=i;}
 	}
-    printf("%s\n",stu[k].name);
-    printf("%d\n%d\n",max,sum);
+    my_printf("%s\n",stu[k].name);
+    my_printf("%d\n%d\n",max,sum);
 }

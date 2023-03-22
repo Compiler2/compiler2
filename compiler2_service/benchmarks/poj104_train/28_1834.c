@@ -12,12 +12,12 @@ int main_bench()
         s=s+1;
         else if (a[i]!=a[i-1])
         {
-            printf("%d",s);
-            if (i+1<strlen(a)) printf(",");
+            my_printf("%d",s);
+            if (i+1<strlen(a)) my_printf(",");
             s=0;
         }
     }
-    printf("%d",s);
+    my_printf("%d",s);
 
     return 0;
 }

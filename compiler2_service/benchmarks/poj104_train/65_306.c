@@ -7,11 +7,11 @@ main_bench()
       int b[1000];
       int n;
       int s=0,t=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i,j,k;
       for(i=0;i<n;i++)
       {
-                      scanf("%d %d",&a[i],&b[i]);
+                      my_scanf("%d %d",&a[i],&b[i]);
                       if(a[i]==0&&b[i]==1) s++;
                       else if(a[i]==0&&b[i]==2) t++;
                       else if(a[i]==1&&b[i]==0)  t++;
@@ -25,7 +25,7 @@ main_bench()
                       else if(a[i]==2&&b[i]==1) t++;
                       
       }
-      if(s>t) printf("A");
-      else if(s<t) printf("B");
-      else printf("Tie");
+      if(s>t) my_printf("A");
+      else if(s<t) my_printf("B");
+      else my_printf("Tie");
      }

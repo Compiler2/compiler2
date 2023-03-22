@@ -3,11 +3,11 @@
 main_bench()
 {
       int i,m,max=0;
-      scanf("%d",&m);
+      my_scanf("%d",&m);
       int a[m];
       for (i=0;i<m;i++)
       {
-          scanf("%d",&a[i]);
+          my_scanf("%d",&a[i]);
           if (a[i]>max)
           max=a[i];
       }
@@ -24,6 +24,6 @@ main_bench()
           sum=0;
           for (int j=0;j<a[i];j++)
               sum+=(float)b[j+1]/b[j];
-          printf("%.3f\n",sum);
+          my_printf("%.3f\n",sum);
       }
 } 

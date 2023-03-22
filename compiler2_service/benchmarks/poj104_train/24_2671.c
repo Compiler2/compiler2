@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n;
 	char c[201][40]={0};
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 	int i,b[201]={0};
     for(i=0;i<n;i++)
 	{
-		scanf("%s", c[i]);
+		my_scanf("%s", c[i]);
 		getchar();
 	}
 	
@@ -28,7 +28,7 @@ int main_bench()
 	{
 		if(b[z]==x)
 		{
-			printf("%s\n", c[z]);
+			my_printf("%s\n", c[z]);
 			break;
 		}
 	}
@@ -36,7 +36,7 @@ int main_bench()
 	{
 		if(b[z]==y)
 		{
-			printf("%s", c[z]);
+			my_printf("%s", c[z]);
 			break;
 		}
 	}

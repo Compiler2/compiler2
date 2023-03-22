@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i, k,j=0,p;
 	float average,a[100],sum=0,c[100],d[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&a[i]);
+		my_scanf("%f",&a[i]);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -54,15 +54,15 @@ int main_bench()
 	}
          if(j==1)
          {
-              printf("%.0f", d[j-1]);
+              my_printf("%.0f", d[j-1]);
            }
           else if(j>1)
           {
                  for(p=0;p<j-1;p++)
                  {
-                   printf("%.0f,", d[p]);
+                   my_printf("%.0f,", d[p]);
                  }                  
-                 printf("%.0f",d[j-1]);
+                 my_printf("%.0f",d[j-1]);
             }
 	return 0;
 

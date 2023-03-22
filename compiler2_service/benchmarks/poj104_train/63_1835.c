@@ -5,17 +5,17 @@ int hang,lie,tong,q,i,j;
 main_bench()
 {
     
-    scanf("%d %d",&hang,&tong);
+    my_scanf("%d %d",&hang,&tong);
     for(i=0;i<hang;i++)
     {
         for(q=0;q<tong;q++)
-            scanf("%d",&A[i][q]);
+            my_scanf("%d",&A[i][q]);
     }
-    scanf("%d %d",&tong,&lie);
+    my_scanf("%d %d",&tong,&lie);
     for(q=0;q<tong;q++)
     {
         for(j=0;j<lie;j++)
-            scanf("%d",&B[q][j]);
+            my_scanf("%d",&B[q][j]);
     }
     
     
@@ -36,11 +36,11 @@ main_bench()
         for(j=0;j<lie;j++)
         {
             if(j==0)
-                printf("%d",C[i][j]);
+                my_printf("%d",C[i][j]);
             else
-                printf(" %d",C[i][j]);
+                my_printf(" %d",C[i][j]);
         }
-        printf("\n");
+        my_printf("\n");
     }
     
 }

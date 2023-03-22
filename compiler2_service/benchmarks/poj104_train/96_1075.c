@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[100];
 int b[100],i,j,m,n,l;
-scanf("%s",&a);
+my_scanf("%s",&a);
 l=strlen(a);
 if(a[0]=='1'&&a[1]<'3')
  {
@@ -27,34 +27,34 @@ if(l>=3)
  {if(b[1]==0)
   {
    for(i=2;i<l;i++)
-  printf("%d",b[i]);
+  my_printf("%d",b[i]);
   }
  else
   {
   for(i=1;i<l;i++)
-  printf("%d",b[i]);
+  my_printf("%d",b[i]);
   }
  }
 else 
  {
   if(l==1)
   {
-  printf("0");
+  my_printf("0");
   }
   else if(l==2)
   {
   if((a[0]-'0')*10+a[1]-'0'<13 )
    {
-   printf("0");
+   my_printf("0");
    }
-  else printf("%d",b[1]);
+  else my_printf("%d",b[1]);
   }
  }
 if(a[l-1]>'9')
  {
- printf("\n1%c",a[l-1]-10);
+ my_printf("\n1%c",a[l-1]-10);
  }
 else
-  printf("\n%c",a[l-1]);
+  my_printf("\n%c",a[l-1]);
 
 }

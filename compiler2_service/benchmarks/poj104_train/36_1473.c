@@ -3,8 +3,8 @@
 int main_bench(){
 	char zfc1[1005],zfc2[1005];
 	int i,j,k;
-	scanf("%s",zfc1);
-	scanf("%s",zfc2);
+	my_scanf("%s",zfc1);
+	my_scanf("%s",zfc2);
 	for(i=0;i<strlen(zfc1);i++){
 		for(j=0;j<strlen(zfc1);j++){
 			if(zfc1[i]==zfc2[j]){
@@ -19,9 +19,9 @@ int main_bench(){
 			}
 		}
 	}
-	if(strlen(zfc1)==0&&strlen(zfc2)==0) printf("YES");
-	else printf("NO");
-	scanf("%s",zfc1);
+	if(strlen(zfc1)==0&&strlen(zfc2)==0) my_printf("YES");
+	else my_printf("NO");
+	my_scanf("%s",zfc1);
 	return 0;
 }
 

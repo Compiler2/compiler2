@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,lena,lenb,m,p;
 	char a[110],b[110],t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(;n>0;n--)
 	{
 		gets(a);
@@ -42,8 +42,8 @@ int main_bench()
 		for(i=lena-1;i>=0;i--)
           if(a[i]!='0')break;
         for(j=i;j>=0;j--)
-         printf("%c",a[j]);
-        printf("\n");
+         my_printf("%c",a[j]);
+        my_printf("\n");
         gets(a);
 	}
 }

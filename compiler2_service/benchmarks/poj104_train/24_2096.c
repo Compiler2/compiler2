@@ -72,7 +72,7 @@ int main_bench()
 			c[count-1]=a[i];
 		}
 	}
-	printf("%s\n",da);
-	printf("%s\n",xiao);
+	my_printf("%s\n",da);
+	my_printf("%s\n",xiao);
 	return 0;
 }

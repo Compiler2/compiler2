@@ -4,13 +4,13 @@ int main_bench()
 {
     int n,i,j,d=0,t=0;
     char s[40],s0[40],s1[10000]={'\0'};
-    scanf("%d ",&n);
-    scanf("%s ",s);
+    my_scanf("%d ",&n);
+    my_scanf("%s ",s);
     d=strlen(s);
     strcat(s1,s);
     for(i=0;i<n-1;i++)
     {
-      scanf("%s ",s);
+      my_scanf("%s ",s);
       for(j=0;s[j]!='\0';j++){
        s0[t]=s[j];
        t++;

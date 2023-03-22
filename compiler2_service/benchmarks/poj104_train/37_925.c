@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,m,i,j,k,flag;
 	char str[100001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		flag=1;
-		scanf("%s",str);
+		my_scanf("%s",str);
 		m=strlen(str);
 		for(j=0;str[j];j++)
 		{
@@ -19,14 +19,14 @@ int main_bench()
 			}
 			if(k==m)
 			{
-				printf("%c\n",str[j]);
+				my_printf("%c\n",str[j]);
 				flag=0;
 				break;
 			}
 			if(flag==0) break;
 		}
 		if(j==m)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

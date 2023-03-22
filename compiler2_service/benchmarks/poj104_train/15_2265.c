@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,S,notfind=1,x1=0,y1=0,x2=0,y2=0,a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 	for(i=0;i<n&&notfind;i++)
 		for(j=0;j<n;j++)
 			if(a[i][j]==0)
@@ -36,7 +36,7 @@ int main_bench()
     }
 	
     S=(x2-x1-1)*(y2-y1-1);
-    printf("%d\n",S);
+    my_printf("%d\n",S);
 }
 
 

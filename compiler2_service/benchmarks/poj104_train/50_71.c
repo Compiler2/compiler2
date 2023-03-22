@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	int m[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int i,j;
 	for(i=0;i<12;i++){
@@ -23,7 +23,7 @@ int main_bench()
 		case 6:d=d-2;break;
 		}
 		if(d%7==5){
-			printf("%d\n",i+1);
+			my_printf("%d\n",i+1);
 		}
 	}
 	return 0;

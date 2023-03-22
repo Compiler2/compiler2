@@ -26,23 +26,23 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(gmm(n,m)==0)
-		printf("error\n");
+		my_printf("error\n");
 	else
 	{
 		for(i=0;i<5;i++)
 		{
 			for(j=0;j<5;j++)
 			{
-				printf("%d",a[i][j]);
+				my_printf("%d",a[i][j]);
 				if(j!=4)
-					printf(" ");
+					my_printf(" ");
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

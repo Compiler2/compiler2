@@ -16,7 +16,7 @@ int main_bench()
 
 
 	int flag=1;
-	scanf("%d\n",&t);
+	my_scanf("%d\n",&t);
 	while(count<t)
 	{
 		for(i=0;i<26;i++)
@@ -74,10 +74,10 @@ int main_bench()
 					min_number=c[i].number;
 				}
 			}
-			printf("%c\n",min_number+97);
+			my_printf("%c\n",min_number+97);
 		}else if(flag==1)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		count++;
 	}

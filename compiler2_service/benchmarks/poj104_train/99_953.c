@@ -9,9 +9,9 @@ int main_bench(){
 	int b2=0;
 	int b3=0;
 	int b4=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
     i=0;
 	while (i<n){
@@ -30,10 +30,10 @@ int main_bench(){
 	 y=1.0000*b2/n*100;
 	 z=1.0000*b3/n*100;
 	 p=1.0000*b4/n*100;
-	 printf("1-18: %.2lf%\n",x);
-     printf("19-35: %.2lf%\n",y);
-     printf("36-60: %.2lf%\n",z);
-     printf("60??: %.2lf%\n",p);
+	 my_printf("1-18: %.2lf%\n",x);
+     my_printf("19-35: %.2lf%\n",y);
+     my_printf("36-60: %.2lf%\n",z);
+     my_printf("60??: %.2lf%\n",p);
 
 
 	 return 0;

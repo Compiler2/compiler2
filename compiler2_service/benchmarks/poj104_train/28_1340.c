@@ -11,7 +11,7 @@ int main_bench()
 		{	
 			if(i!=0)
 			{
-				printf("%d,",i);
+				my_printf("%d,",i);
 				i=0;
 			}
 		}
@@ -21,7 +21,7 @@ int main_bench()
 		}
 		else if(n=='\n')
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 	}

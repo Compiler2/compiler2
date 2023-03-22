@@ -18,7 +18,7 @@ main_bench()
 	int len;
 	int i,j;
 
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(s);
 	len=strlen(s);
 
@@ -34,11 +34,11 @@ main_bench()
 	for(i=0;i<t;i++)
 		if(b[i]>max) max=b[i];
 
-	if(max==1) printf("NO");
+	if(max==1) my_printf("NO");
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<t;i++)
-			if(b[i]==max) printf("%s\n",gram[i]);
+			if(b[i]==max) my_printf("%s\n",gram[i]);
 	}
 }

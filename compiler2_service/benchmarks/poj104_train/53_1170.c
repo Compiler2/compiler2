@@ -4,13 +4,13 @@ int main_bench(){
 	int n,i,j,w[300],s[300];
 	int f=0;
 	int k=0;
-	scanf("%d",&n);
-	scanf("%d",&w[0]);
+	my_scanf("%d",&n);
+	my_scanf("%d",&w[0]);
 	s[0]=w[0];
 	k++;
 	for(i=1;i<n;i++)
 	{
-		scanf("%d",&w[i]);
+		my_scanf("%d",&w[i]);
 		for(j=i-1;j>=0;j--)
 		{
 			if(w[j]==w[i])
@@ -26,9 +26,9 @@ int main_bench(){
 	}
 	for(i=0;i<k-1;i++)
 	{
-		printf("%d,",s[i]);
+		my_printf("%d,",s[i]);
 	}
-	printf("%d",s[k-1]);
+	my_printf("%d",s[k-1]);
 
 	return 0;
 }

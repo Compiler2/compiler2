@@ -4,7 +4,7 @@ main_bench()
 {
       int n,i,k,l,a[100];
       char s[100];
-      scanf("%s",&s);
+      my_scanf("%s",&s);
       n=0;
       while(s[n]!='\0') n++;
       for(i=0;i<=n-1;i++) a[i]=s[i]-'0';
@@ -17,9 +17,9 @@ main_bench()
       a[n-1]=a[n-1]/13;
       l=0;
       while((a[l]==0)&&(l<n-1)) l++;
-      for(i=l;i<=n-1;i++) printf("%d",a[i]);
-      printf("\n");
-      printf("%d",k);
+      for(i=l;i<=n-1;i++) my_printf("%d",a[i]);
+      my_printf("\n");
+      my_printf("%d",k);
       
       
       }        

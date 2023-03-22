@@ -3,7 +3,7 @@
 int main_bench()
 {
  int n,i=0,j=0,c=0,l,k=0;
- scanf("%d" ,&n);
+ my_scanf("%d" ,&n);
  char *** ppp;
  ppp=(char ***)malloc(n*sizeof(char **));
  for(i=0;i<n;i++)
@@ -18,7 +18,7 @@ int main_bench()
  {
   for(j=0;j<2;j++)
   {
-   scanf("%s" ,ppp[i][j]);
+   my_scanf("%s" ,ppp[i][j]);
    l=strlen(ppp[i][j]);
    for(k=0;k<=l;k++)              
    {
@@ -56,9 +56,9 @@ int main_bench()
   }
   for(k=c;k<100;k++)
   {
-   printf("%c" ,ppp[i][0][k]);      
+   my_printf("%c" ,ppp[i][0][k]);      
   }
-  printf("\n");
+  my_printf("\n");
  }
  for(i=0;i<n;i++)
  {

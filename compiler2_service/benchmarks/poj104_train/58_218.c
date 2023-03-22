@@ -29,11 +29,11 @@ int main_bench()
                  else 
 					 l=0;
 				 if(l==0)
-                      printf("0\n");
+                      my_printf("0\n");
                             else if(p==1&&l==1)
-                                          printf("1\n");
+                                          my_printf("1\n");
 							                   else if(p==0)
-												   printf("0\n");
+												   my_printf("0\n");
                         }
   
 

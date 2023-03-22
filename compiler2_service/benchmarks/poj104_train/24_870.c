@@ -38,8 +38,8 @@ int main_bench()
                                     }
                                     }
                                     
-    printf("%s\n",words[da]);
-    printf("%s\n",words[xiao]);
+    my_printf("%s\n",words[da]);
+    my_printf("%s\n",words[xiao]);
     
   
   

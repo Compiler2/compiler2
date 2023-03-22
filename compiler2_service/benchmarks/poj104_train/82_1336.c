@@ -5,9 +5,9 @@ int main_bench(){
 	struct p{
 		int u,v;
 	}p[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&p[i].u,&p[i].v);
+		my_scanf("%d%d",&p[i].u,&p[i].v);
 		if(p[i].u>=90&&p[i].u<=140&&p[i].v>=60&&p[i].v<=90){
 			j=j+1;
 			if(j>m)
@@ -17,6 +17,6 @@ int main_bench(){
 			j=0;
 		}
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

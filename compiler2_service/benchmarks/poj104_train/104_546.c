@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c[11],d[11],n1=1,n2=1;
 	int i,j,flag=0;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	c[0]=a;
 	d[0]=b;
 	for(i=0;i<11;i++)
@@ -33,7 +33,7 @@ int main_bench()
 		{
 			if(c[i]==d[j])
 			{
-				printf("%d",c[i]);
+				my_printf("%d",c[i]);
 				flag=1;
 				break;
 			}

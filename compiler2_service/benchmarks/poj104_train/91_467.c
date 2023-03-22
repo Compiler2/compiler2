@@ -17,7 +17,7 @@ int main_bench()
 	words1[n-1]=words1[n-1]+k;
 	for(i=0;i<n;i++)
 	{
-		printf("%c",words1[i]);
+		my_printf("%c",words1[i]);
 	}
 	return 0;
 }

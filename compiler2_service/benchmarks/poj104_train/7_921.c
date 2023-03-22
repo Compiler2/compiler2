@@ -18,17 +18,17 @@ int main_bench(){
 			}
 		}
 		if(num==m){
-			printf("%s",c);
+			my_printf("%s",c);
 			y=m;
 			tag=1;
 		}
 		else{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 		}
 		else
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 	return 0;

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int m,i,j,n[100],x=2,y=1;
 	double a[100],b[100],s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	a[1]=x*1.00/y;
 	s=a[1];
 	for(i=1;i<=m;i++)
 	{	
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 	}
 	for(i=1;i<=m;i++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	for(i=1;i<=m;i++)
 	{
-		printf("%.3f\n",b[i]);
+		my_printf("%.3f\n",b[i]);
 	}
 	return 0;
 }

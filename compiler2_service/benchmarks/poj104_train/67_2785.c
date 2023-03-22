@@ -4,27 +4,27 @@ int main_bench()
 {
     int n;
     float j,k,l,m;
-    scanf("%d",&n);
-    scanf("%f %f",&j,&k);
+    my_scanf("%d",&n);
+    my_scanf("%f %f",&j,&k);
     l=0.05+k/j;
     m=-0.05+k/j;
     float a[100][2];
     for(int i=0;i<n-1;i++)
     {
-        scanf("%f %f",&a[i][0],&a[i][1]);
+        my_scanf("%f %f",&a[i][0],&a[i][1]);
         if(a[i][1]/a[i][0]>l)
         {
-            printf("better\n");
+            my_printf("better\n");
         }
         else
         {
             if(a[i][1]/a[i][0]<m)
             {
-                printf("worse\n");
+                my_printf("worse\n");
             }
             else
             {
-                printf("same\n");
+                my_printf("same\n");
             }
         }
     }

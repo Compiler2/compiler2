@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int i,  n, sum = 0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
     for (i = 1; i <= n;i++){
 			if (i % 7 == 0) continue;
 			else if (i > 69&&i < 80) continue;
@@ -12,7 +12,7 @@ int main_bench()
 			else 
 		sum += i*i;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 			

@@ -6,7 +6,7 @@ main_bench()
 	char c[4]="013";
 	char cf[3]="13";
 	char a[233],b[233],d[233],e[4],ef[3];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	al=strlen(a);
 	for(i=0;i<al;i++)
 	{
@@ -17,7 +17,7 @@ main_bench()
 	e[3]='\0';
 	if(al==1||(al==2&&a[0]=='1'&&a[1]<'3'))
 	{
-		printf("0\n%s",a);
+		my_printf("0\n%s",a);
 	}
 	else
 	{
@@ -95,6 +95,6 @@ main_bench()
 		ef[0]=b[al-2];
 		ef[1]=b[al-1];
 	}
-	printf("%s\n%s",d,ef);
+	my_printf("%s\n%s",d,ef);
 }
 }

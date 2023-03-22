@@ -7,7 +7,7 @@ int main_bench()
 	int i=0,j=0,geshu;
 	int max,min,b=0,a=0;
 	int length[1000];
-	scanf("%c",&h);
+	my_scanf("%c",&h);
 	while(h!='\n'){
 		s[i][j]=h;
 		if(h==' '){
@@ -16,7 +16,7 @@ int main_bench()
 			j=-1;
 		}
 		j++;
-		scanf("%c",&h);
+		my_scanf("%c",&h);
 	}
 	s[i][j]='\0';
 	geshu=i+1;
@@ -33,7 +33,7 @@ int main_bench()
 			a=i;
 		}
 	}
-	printf("%s\n",s[a]);
+	my_printf("%s\n",s[a]);
 
 	min=length[0];
 	for(i=1;i<geshu;i++){
@@ -42,7 +42,7 @@ int main_bench()
 			b=i;
 		}
 	}
-	printf("%s\n",s[b]);
+	my_printf("%s\n",s[b]);
 
 
 

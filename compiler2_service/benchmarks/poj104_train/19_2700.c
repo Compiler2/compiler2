@@ -27,22 +27,22 @@ int main_bench(){
 				now[j] = '\0';
 			if(strcmp(now, old) == 0){
 				if(sen[i+1] == '\0')
-					printf("%s", newone);
+					my_printf("%s", newone);
 				else
-					printf("%s ", newone);
+					my_printf("%s ", newone);
 
 			}
 			else{
 				if(sen[i+1] == '\0')
-					printf("%s", now);
+					my_printf("%s", now);
 				else
-					printf("%s ", now);
+					my_printf("%s ", now);
 			}
 			j = -1;
 		}
 		i++;
 		j++;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

@@ -3,12 +3,12 @@
 int main_bench(){
 	int a[1000],n,i,b[1000];
 	double c[1000],e,x=0,y=0,z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<n;i++){
 		c[i]=0;
@@ -60,6 +60,6 @@ int main_bench(){
 		y+=a[i];
 	}
 	z=x/y;
-	printf("%.2lf\n",z);
+	my_printf("%.2lf\n",z);
     return 0;
 }

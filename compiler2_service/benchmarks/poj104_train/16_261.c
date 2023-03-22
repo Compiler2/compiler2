@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f,g;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a/1000;
 	c=a%1000;
 	d=c/100;
@@ -17,21 +17,21 @@ int main_bench()
 		{
 			if(f==0)
 			{
-				printf("%d",g);
+				my_printf("%d",g);
 			}
 			else
 			{
-				printf("%d%d",g,f);
+				my_printf("%d%d",g,f);
 			}
 		}
 		else
 		{
-			printf("%d%d%d",g,f,d);
+			my_printf("%d%d%d",g,f,d);
 		}
 	}
 	else
 	{
-		printf("%d%d%d%d",g,f,d,b);
+		my_printf("%d%d%d%d",g,f,d,b);
 	}
 	return 0;
 }

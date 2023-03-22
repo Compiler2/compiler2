@@ -5,10 +5,10 @@ int main_bench()
 	int a[50000];
 	int b[50000];
 	int i,j,k,n,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for (i=0;i<n-1;i++)
 	{
@@ -56,9 +56,9 @@ int main_bench()
 				t=b[i];
 			}
 		}
-		printf("%d %d",a[0],t);
+		my_printf("%d %d",a[0],t);
 	}
 	else
-		printf("no");
+		my_printf("no");
 
 }

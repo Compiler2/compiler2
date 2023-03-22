@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,l[50];
 	char s[50][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	   scanf("%s",s[i]);
+	   my_scanf("%s",s[i]);
 	   l[i]=strlen(s[i]);
 	}
 	for(i=0;i<n;i++)
@@ -28,7 +28,7 @@ int main_bench()
 			s[i][l[i]-1]='\0';
 			s[i][l[i]-3]='\0';
 		}
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 	}
 	return 0;
 }

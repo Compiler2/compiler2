@@ -9,10 +9,10 @@ int main_bench()
 {
 	int i,j,k,n,num,max=0;
 	char maxname;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++){
-		scanf("%s",book[i].id);
-		scanf("%s",book[i].name);
+		my_scanf("%s",book[i].id);
+		my_scanf("%s",book[i].name);
 	}
 	for(i=0;i<26;i++){
 		n=0;
@@ -26,10 +26,10 @@ int main_bench()
 			max=n;
 		}
 	}
-	printf("%c\n%d\n",maxname,max);
+	my_printf("%c\n%d\n",maxname,max);
 	for(j=0;j<num;j++){
 		for(k=0;k<26;k++){
-			if(book[j].name[k]==maxname)printf("%s\n",book[j].id);;
+			if(book[j].name[k]==maxname)my_printf("%s\n",book[j].id);;
 		}
 	}
 	return 0;

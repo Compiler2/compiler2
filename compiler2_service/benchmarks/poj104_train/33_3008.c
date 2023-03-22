@@ -5,10 +5,10 @@ int main_bench()
 {
 	char shuzu[300],*tmp,*tmpa,*tmpt,*tmpc,*tmpg;
 	int n,i,j,pp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 
-		scanf("%s",shuzu);
+		my_scanf("%s",shuzu);
 		pp=strlen(shuzu);
 		for(j=0;j<pp;j++){
 			        if(shuzu[j]=='A')  shuzu[j]='T';
@@ -17,7 +17,7 @@ int main_bench()
 			   	    else if(shuzu[j]=='C')  shuzu[j]='G';
 					else if(shuzu[j]=='G')  shuzu[j]='C';
 		}
-		printf("%s\n",shuzu);
+		my_printf("%s\n",shuzu);
 	}
 	return 0;
 }

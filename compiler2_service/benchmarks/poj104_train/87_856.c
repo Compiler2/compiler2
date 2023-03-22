@@ -9,7 +9,7 @@ int main_bench()
     int i,j,a,n,e,k,b=0;
     for(i=1;i<=500;i++){
         for(j=1;j<=6;j++){
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
         }
         b++;
         if(sz[i][1]==0){
@@ -22,7 +22,7 @@ int main_bench()
         sz3[i]=sz2[i]-sz1[i]+43200;
     }
     for(i=1;i<=b-1;i++){
-    printf("%d\n",sz3[i]);}
+    my_printf("%d\n",sz3[i]);}
     return 0;
 }
 

@@ -4,14 +4,14 @@ int main_bench()
 {	
 	char q;
 	int n;
-	scanf("%d",&n);
-	scanf("%c",&q);
+	my_scanf("%d",&n);
+	my_scanf("%c",&q);
 	int i,j,k,b,u;
 	b=0;
 	char byte[256];
 	for(u=0;u<n;u++)
 	{
-	    scanf("%s",byte);
+	    my_scanf("%s",byte);
 	    b=strlen(byte);
      	for(j=0;j<b;j++)
 		{
@@ -33,9 +33,9 @@ int main_bench()
 		}
     	for(k=0;k<b;k++)
 		{
-     		printf("%c",byte[k]);
+     		my_printf("%c",byte[k]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	
 	return 0;

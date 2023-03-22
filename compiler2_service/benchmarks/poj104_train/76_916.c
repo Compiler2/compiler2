@@ -3,9 +3,9 @@
 int main_bench(){
     int a[50000],b[50000],s[50000]={0},u[50000]={0},v[50000]={0};
     int n,i,j,x,y,m=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
         u[a[i]]=1;
         v[b[i]]=1;
         for(j=a[i]+1;j<b[i];j++)
@@ -49,9 +49,9 @@ int main_bench(){
         }
     }
     if(m==2){
-        printf("%d %d",x,y);
+        my_printf("%d %d",x,y);
     }
     else
-        printf("no");
+        my_printf("no");
     return 0;
 }

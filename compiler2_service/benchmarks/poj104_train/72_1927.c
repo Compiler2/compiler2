@@ -2,7 +2,7 @@
 
 int main_bench(){
     int m,n;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     int x,y;
     int i,k;
     int z[m+2][n+2];
@@ -13,13 +13,13 @@ int main_bench(){
     }
     for(i=1;i<m+1;i++){
         for(k=1;k<n+1;k++){
-            scanf("%d",&(z[i][k]));
+            my_scanf("%d",&(z[i][k]));
         }
     }
     for(i=1;i<m+1;i++){
     for(k=1;k<n+1;k++){
     if(z[i][k]>=z[i-1][k]&&z[i][k]>=z[i+1][k]&&z[i][k]>=z[i][k-1]&&z[i][k]>=z[i][k+1]){
-    printf("%d %d\n",i-1,k-1);
+    my_printf("%d %d\n",i-1,k-1);
 }
 }
 }    

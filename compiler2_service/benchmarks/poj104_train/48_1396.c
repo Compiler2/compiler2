@@ -14,7 +14,7 @@ main_bench()
             a[i][j][p]=0;
          }
       }
-      scanf("%d %d",&m,&n);
+      my_scanf("%d %d",&m,&n);
       a[5][5][0]=m;
       for(q=0;q<n;q++)
       {
@@ -25,8 +25,8 @@ main_bench()
       for(i=1;i<10;i++)
       {
          for(j=1;j<9;j++)
-         printf("%d ",a[i][j][n]);
-         printf("%d\n",a[i][9][n]);
+         my_printf("%d ",a[i][j][n]);
+         my_printf("%d\n",a[i][9][n]);
       }
 }
 int x(int i,int j,int k)

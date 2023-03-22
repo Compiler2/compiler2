@@ -7,9 +7,9 @@ int d[100000];
 int z[20000];
 int main_bench(){
    int n,i,k,p=0,q=0,m=0,u=0,y=0,max=0,min=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-      scanf("%d %d",&a[i],&b[i]);
+      my_scanf("%d %d",&a[i],&b[i]);
       c[i]=2*a[i];
       d[i]=2*b[i];
    }
@@ -48,7 +48,7 @@ int main_bench(){
       if(z[i]==0){break;}
       if(z[i]==1){m++;}
    }
-   if(m==y){printf("%d %d",min/2,max/2);}
-   if(m!=y){printf("no");}
+   if(m==y){my_printf("%d %d",min/2,max/2);}
+   if(m!=y){my_printf("no");}
  return 0;  
 }

@@ -28,10 +28,10 @@ int main_bench()
 		single[i].letter[0]=65+i;
 		single[i].number=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&author[i].number,&author[i].name);
+		my_scanf("%d %s",&author[i].number,&author[i].name);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -66,11 +66,11 @@ int main_bench()
 			}
 		}
 	}
-	printf("%c\n",single[m].letter[0]);
-	printf("%d\n",k);
+	my_printf("%c\n",single[m].letter[0]);
+	my_printf("%d\n",k);
 	for(i=0;i<k;i++)
 	{
-		printf("%d\n",book[i]);
+		my_printf("%d\n",book[i]);
 	}
 	return 0;
 }

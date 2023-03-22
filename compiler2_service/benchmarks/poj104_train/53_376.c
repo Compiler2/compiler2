@@ -2,20 +2,20 @@
 
 int main_bench() {
 int y=0,x,i,j,n,a[100];
-scanf("%d",&n);
-scanf("%d",&x);
+my_scanf("%d",&n);
+my_scanf("%d",&x);
 a[0]=x;
-printf("%d",x);
+my_printf("%d",x);
 for (i=1;i<n;i++) {
-scanf("%d",&x);
+my_scanf("%d",&x);
 a[i]=x;
 y=0;
 for (j=0;j<i;j++){
 if (a[j]==x) y=1;
 }
 if (y==0) {
-printf(",");
-printf("%d",x);
+my_printf(",");
+my_printf("%d",x);
 }
 
 }

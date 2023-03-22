@@ -4,10 +4,10 @@ int main_bench()
 {
 	int sz[100],i,n,sum=0,b[4]={0};
 	double c[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 		sum++;
 		if(sz[i]>=1&&sz[i]<=18)
 		{
@@ -30,10 +30,10 @@ int main_bench()
 	{
 		c[i]=(double)b[i]/sum;
 	}
-	printf("%d-%d: %.2lf%%\n",1,18,c[0]*100);
-    printf("%d-%d: %.2lf%%\n",19,35,c[1]*100);
-    printf("%d-%d: %.2lf%%\n",36,60,c[2]*100);
-    printf("%d??: %.2lf%%\n",60,c[3]*100);
+	my_printf("%d-%d: %.2lf%%\n",1,18,c[0]*100);
+    my_printf("%d-%d: %.2lf%%\n",19,35,c[1]*100);
+    my_printf("%d-%d: %.2lf%%\n",36,60,c[2]*100);
+    my_printf("%d??: %.2lf%%\n",60,c[3]*100);
 	return 0;
 }
 

@@ -7,7 +7,7 @@ int main_bench()
  int a[101][101] ={0};
  int lenth , min ;
  
- scanf("%d",&n);
+ my_scanf("%d",&n);
 	for(i =1 ; i <= n ; i ++)
 	{   
 		sum = 0;
@@ -15,7 +15,7 @@ int main_bench()
 		
 		for(j = 1 ; j <= n ; j ++)
 			for( k = 1 ; k <= n ; k ++)
-				scanf("%d",&a[j][k]);
+				my_scanf("%d",&a[j][k]);
 
 		for(lenth = n ; lenth > 1 ; lenth --)
 		{
@@ -52,7 +52,7 @@ int main_bench()
 				for(k =1; k <= lenth ; k++)
 					a[j][k] = a[j + 1][k];
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	 
 	

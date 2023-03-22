@@ -4,19 +4,19 @@ int main_bench()
 {
 	int n,m,a[100],t,num;
 	int i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		t=0;
 		num=0;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
-			printf("60\n");
+			my_printf("60\n");
 		else
 		{
 			for(k=0;k<m;k++)
 			{
-				scanf("%d",&a[k]);
+				my_scanf("%d",&a[k]);
 			}
 			for(j=0;j<m;j++)
 			{
@@ -34,7 +34,7 @@ int main_bench()
 			}
 			if(t<=60)
 				num=60-m*3;
-			printf("%d\n",num);			
+			my_printf("%d\n",num);			
 			
 		}
 	}

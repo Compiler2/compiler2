@@ -6,7 +6,7 @@ int main_bench()
 {
 	char a[252],b[252],c[253];
 	c[0]=48;
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	int la,lb,t,r,s;
     la=strlen(a);
 	lb=strlen(b);
@@ -48,11 +48,11 @@ int main_bench()
 		k++;
 	}
 	if(k==t+1){
-		printf("0");
+		my_printf("0");
 	}
 	else{
 		for(j=k;j<=t;j++){
-			printf("%c",c[j]);
+			my_printf("%c",c[j]);
 		}
 	}
 	return 0;

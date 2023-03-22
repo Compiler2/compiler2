@@ -5,7 +5,7 @@ int main_bench()
 	int i,n,k,j,r=0,m=0;
 	int lens,lena;
 	char s[256],a[100],b[100],c[100],d[100];
-	scanf("%s%s%s",s,a,b);
+	my_scanf("%s%s%s",s,a,b);
 	lens=strlen(s);
 	lena=strlen(a);
 	for(i=0;i<lens;i++)
@@ -24,12 +24,12 @@ int main_bench()
 			 d[j-i-lena]=s[j];
 			 d[j-i-lena]='\0';
 			 r=1;
-			 printf("%s%s%s",c,b,d);
+			 my_printf("%s%s%s",c,b,d);
 			 break;
 		}
 		
 	}
-	if(r==0) printf("%s",s);
+	if(r==0) my_printf("%s",s);
 	
 	return 0;
 }

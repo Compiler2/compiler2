@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n,i,c,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[100]={1,0};
 	c=0;
 	for(j=0;j<n;j++){
@@ -22,7 +22,7 @@ int main_bench(){
                                        }
                                        
       for(;i>=0;i--){
-                     printf("%d",sz[i]);
+                     my_printf("%d",sz[i]);
                      }                                                        
 
 return 0;

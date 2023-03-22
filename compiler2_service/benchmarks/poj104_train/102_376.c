@@ -7,10 +7,10 @@ struct ren{
 main_bench()
 {
     int i,j,k,n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s %lf",a[i].sex,&a[i].gao);
+        my_scanf("%s %lf",a[i].sex,&a[i].gao);
         }
     for(i=0;i<n;i++)
     {
@@ -51,9 +51,9 @@ main_bench()
     for(i=0;i<n;i++)
     {
         if(i==0)
-        printf("%.2lf",a[i].gao);
+        my_printf("%.2lf",a[i].gao);
         else
-        printf(" %.2lf",a[i].gao);
+        my_printf(" %.2lf",a[i].gao);
         }
     }
 

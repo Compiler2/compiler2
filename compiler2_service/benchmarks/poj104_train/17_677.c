@@ -5,7 +5,7 @@ int main_bench()
 {
 	char ans[101],a[101];
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while (n>0)
 	{
 		gets(a);
@@ -48,10 +48,10 @@ int main_bench()
 				else ans[i]='$';
 			}
 		}
-		for (i=0;i<ll;i++) printf("%c",a[i]);	
-		printf("\n");
-		for (i=0;i<ll;i++) printf("%c",ans[i]);
-		printf("\n");
+		for (i=0;i<ll;i++) my_printf("%c",a[i]);	
+		my_printf("\n");
+		for (i=0;i<ll;i++) my_printf("%c",ans[i]);
+		my_printf("\n");
 		n--;
 	}
 	return 0;

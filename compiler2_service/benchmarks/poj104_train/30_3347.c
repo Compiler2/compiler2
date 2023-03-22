@@ -5,7 +5,7 @@ int main_bench()
     int i,sum,a,n;
 	sum=0;
 	a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
        sum+=i*i;
@@ -13,6 +13,6 @@ int main_bench()
 	   a+=i*i;
 	   }
 	   }
-          printf("%d",sum-a);
+          my_printf("%d",sum-a);
 	return 0;
 }

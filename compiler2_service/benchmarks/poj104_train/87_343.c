@@ -5,7 +5,7 @@ int main_bench(){
 	int result;
 	int m,n;
 	for(int i=1;;i++){
-     	scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
+     	my_scanf("%d %d %d %d %d %d",&a,&b,&c,&d,&e,&f);
 		if(a==0){
 			break;
 		}
@@ -13,7 +13,7 @@ int main_bench(){
     	d=d+12;
 	    result=3600*(d-a)+(e-b)*60+(f-c);
 	    
-		  printf("%d\n",result);
+		  my_printf("%d\n",result);
 		}
 	
 	}

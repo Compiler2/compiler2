@@ -4,11 +4,11 @@ int main_bench()
 { 
  int n,i,j=0,k,t,s1[5000],s2[5000],s3[5000]={0},m=0;
 
-  scanf("%d",&n);
+  my_scanf("%d",&n);
 
   for(i=0;i<n;i++)
   {
-  scanf("%d%d",&s1[i],&s2[i]);
+  my_scanf("%d%d",&s1[i],&s2[i]);
   }
 
       int max=s2[0],min=s1[0];
@@ -70,9 +70,9 @@ int main_bench()
    if(s3[i]==1)m++;
    }
 
- if(m==max-min+1&&t!=1)printf("%d %d",min,max);
+ if(m==max-min+1&&t!=1)my_printf("%d %d",min,max);
 
- else printf("no");
+ else my_printf("no");
 
 
    return 0;

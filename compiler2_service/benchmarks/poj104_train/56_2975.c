@@ -6,7 +6,7 @@ nixu(int n)
 {
 int m;
 m=n%10;
-	printf("%d",m); 
+	my_printf("%d",m); 
 	m=n/10;
 if (m<1) ;
 else m=nixu(m);
@@ -17,7 +17,7 @@ int main_bench()
 {
 int n;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 nixu(n);
 

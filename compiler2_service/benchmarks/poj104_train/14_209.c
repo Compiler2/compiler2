@@ -16,12 +16,12 @@ main_bench()
              int num;
              int zongfen;
       }st[3]={{0,0},{0,0},{0,0}};
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-          scanf("%d",&stu[i].num);
-          scanf("%d",&stu[i].yuwen);
-          scanf("%d",&stu[i].shuxue);
+          my_scanf("%d",&stu[i].num);
+          my_scanf("%d",&stu[i].yuwen);
+          my_scanf("%d",&stu[i].shuxue);
           stu[i].zongfen=stu[i].yuwen+stu[i].shuxue;
           if(stu[i].zongfen>st[0].zongfen)
           {
@@ -45,9 +45,9 @@ main_bench()
       for(i=0;i<3;i++)
       {
           if(i==0)
-          printf("%d %d",st[i].num,st[i].zongfen);
+          my_printf("%d %d",st[i].num,st[i].zongfen);
           else
-          printf("\n%d %d",st[i].num,st[i].zongfen);
+          my_printf("\n%d %d",st[i].num,st[i].zongfen);
       }
       getchar();
       getchar();

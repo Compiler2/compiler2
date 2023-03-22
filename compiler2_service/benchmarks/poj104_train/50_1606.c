@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,m,a[12]={0},i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	m=(n+5)%7;
 	if(m==5)
 	{
-		printf("%d\n",1);
+		my_printf("%d\n",1);
 	}
 	a[2]=(m+3)%7;
 	a[3]=a[2];
@@ -25,7 +25,7 @@ int main_bench()
 	for(i=2;i<13;i++)
 	{
 		if(a[i]==5)
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	}
 	return 0;
 }

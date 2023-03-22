@@ -4,17 +4,17 @@ int main_bench()
 {
 	int n,m,a,b,t,x,c,d;
 	int z[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(a=0;a<=n-1;a++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(b=0;b<=m-1;b++)
 		{
-			scanf("%d",&z[b]);
+			my_scanf("%d",&z[b]);
 		}
 		if(m==0)
 		{
-			printf("60\n");
+			my_printf("60\n");
 		}
 		
 		else
@@ -37,7 +37,7 @@ int main_bench()
 				}
 				else d--;
 			}
-			printf("%d\n",x);
+			my_printf("%d\n",x);
 		}
 		
 	}

@@ -16,7 +16,7 @@ int main_bench()
 	for(i=0;i<a;i++)
 	{
 		if(!(st[i]==' '&&st[i+1]==' '))
-		printf("%c",st[i]);
+		my_printf("%c",st[i]);
 	}
 	return 0;
 }

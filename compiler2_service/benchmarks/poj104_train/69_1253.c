@@ -7,8 +7,8 @@ int main_bench()
 	char num1[252],num2[252];
 	char result[252];
 	result[251]='\0';
-	scanf("%s",&input_string1);
-	scanf("%s",&input_string2);
+	my_scanf("%s",&input_string1);
+	my_scanf("%s",&input_string2);
 	memset(num1,'0',252);
 	memset(num2,'0',252);
 	strcpy(num1+(251-strlen(input_string1)),input_string1); 
@@ -36,7 +36,7 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%s",result+i);
+	my_printf("%s",result+i);
 
 	return 0;
 	

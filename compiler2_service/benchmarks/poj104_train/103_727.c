@@ -47,7 +47,7 @@ int main_bench()
 		}
 	}
 	for (i=0;i<=j;i++)
-	{printf("(%c%c%d)",lettercount[i].letter,',',(lettercount[i].count)-1);
+	{my_printf("(%c%c%d)",lettercount[i].letter,',',(lettercount[i].count)-1);
 	}
 
 	return 0;

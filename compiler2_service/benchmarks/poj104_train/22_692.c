@@ -5,8 +5,8 @@ int main_bench() {
 	int a, max=0, inf=0;
 	char c;
 	do {
-		scanf("%d", &a);
-		scanf("%c", &c);
+		my_scanf("%d", &a);
+		my_scanf("%c", &c);
 		if (a>max) {
 			inf=max;
 			max=a;
@@ -17,13 +17,13 @@ int main_bench() {
 		}
 	}while (c==',');
 	if (max==inf) {
-		printf("No");
+		my_printf("No");
 	} 
 	else if (inf==0) {
-		printf("No");
+		my_printf("No");
 	}
 	else {
-		printf("%d", inf);
+		my_printf("%d", inf);
 	}
 	return 0;
 }

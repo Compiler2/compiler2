@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int number,i,m,x[5];
-	scanf("%d",&number);
+	my_scanf("%d",&number);
 	if (number<=9) i=1;
 	else if(number<=99) i=2;
 	else if(number<=999) i=3;
@@ -15,7 +15,7 @@ int main_bench()
 	    number=(number-x[m])/10;
 	     }
 	for(m=0;m<=i-1;m++)
-		printf("%d",x[m]);
+		my_printf("%d",x[m]);
 
 	return 0;
 	

@@ -21,7 +21,7 @@ int main_bench()
 					
 				}
 				else if(a[j]!=q&&a[j]!=' '){
-					printf("%d %d\n",i,j);
+					my_printf("%d %d\n",i,j);
 					a[i]=' ';
 					a[j]=' ';
 					i=-1;

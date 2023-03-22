@@ -6,7 +6,7 @@ int main_bench()
 {
 	gets(str);
 	len_str = strlen(str);
-	scanf("%s%s", a, b);
+	my_scanf("%s%s", a, b);
 	len_a = strlen(a);
 	len_b = strlen(b);
 	while(i<len_str)
@@ -16,11 +16,11 @@ int main_bench()
 			c[pos++]=str[i++];
 		c[pos]='\0';
 		if(strcmp(a, c)==0)
-			printf("%s", b);
+			my_printf("%s", b);
 		else
-			printf("%s", c);
-		if(i==len_str)printf("\n");
-		else printf(" ");
+			my_printf("%s", c);
+		if(i==len_str)my_printf("\n");
+		else my_printf(" ");
 		i++;
 	}
 	return 0;

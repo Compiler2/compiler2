@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n,l;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 char zfc[n][256],*p;
 for(l=0;l<n;l++){
 gets(zfc[l]);

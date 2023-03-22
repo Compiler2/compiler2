@@ -8,14 +8,14 @@ int a[5000],b[5000],N1,N2,c[10000];
 int f1()
 {
 	int n;
-	scanf("%d%d",&N1,&N2);
+	my_scanf("%d%d",&N1,&N2);
 	for(n=0;n<=N1-1;n++)
 	{
-		scanf("%d",&a[n]);
+		my_scanf("%d",&a[n]);
 	}
 	for(n=0;n<=N2-1;n++)
 	{
-		scanf("%d",&b[n]);
+		my_scanf("%d",&b[n]);
 	}
 	return 0;
 }
@@ -64,10 +64,10 @@ int f3()
 int f4()
 {
 	int i;
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	for(i=1;i<=N1+N2-1;i++)
 	{
-		printf(" %d",c[i]);
+		my_printf(" %d",c[i]);
 	}
 	return 0;
 }

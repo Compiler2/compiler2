@@ -11,8 +11,8 @@ int main_bench()
 		if(a[i]==a[i+1])
 		{
 			for(j=i;j<i+1;j++)
-				printf("%c",a[j]);
-			printf("%c\n",a[j]);
+				my_printf("%c",a[j]);
+			my_printf("%c\n",a[j]);
 		}
 	}
 	for(n=1;n<length;n++)
@@ -26,8 +26,8 @@ int main_bench()
 					if(a[i+n]==a[i-n+1])
 					{
 						for(j=i-n;j<i+n+1;j++)
-							printf("%c",a[j]);
-						printf("%c\n",a[j]);
+							my_printf("%c",a[j]);
+						my_printf("%c\n",a[j]);
 					}
 				}
 			}

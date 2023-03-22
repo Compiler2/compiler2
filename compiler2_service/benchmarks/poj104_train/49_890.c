@@ -38,9 +38,9 @@ void g(char c[],int m,int j)
 		{
 			for(i=m;i<=m+j-1;i++)
 			{
-				printf("%c",c[i]);
+				my_printf("%c",c[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 }

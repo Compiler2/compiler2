@@ -8,12 +8,12 @@ int main_bench()
 	int normalstt=0;
 	int tempcnt=0;
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n--)
 	{
 		int a,b;
 		int curnml=0;
-		scanf("%d%d", &a, &b);
+		my_scanf("%d%d", &a, &b);
 		if (a>=90 && a<=140 && b>=60 && b<=90)
 			curnml=1;
 		else
@@ -47,7 +47,7 @@ int main_bench()
 	if(normalstt&&tempcnt>normalcnt)
 		normalcnt=tempcnt;
 
-	printf("%d",normalcnt);
+	my_printf("%d",normalcnt);
 
 	return 0;
 }

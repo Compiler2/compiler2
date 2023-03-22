@@ -5,10 +5,10 @@ int main_bench(){
 	int i,j,c[200],k;
 	for(i=0;i<200;i++)
 		c[i]=1;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if(strlen(a)!=strlen(b))
-		printf("NO");
+		my_printf("NO");
 	else{
 		for(i=0;i<strlen(a);i++)
 			for(j=0;j<strlen(b);j++)
@@ -21,9 +21,9 @@ int main_bench(){
 			if(c[i]==1)
 				k=1;
 		if(k==1)
-			printf("NO");
+			my_printf("NO");
 		else
-			printf("YES");
+			my_printf("YES");
 	}
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,sz[100];
 	float c,d,sum[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 			sum[i]+=k;
 		}
 	
-		printf("%.3f\n",sum[i]);
+		my_printf("%.3f\n",sum[i]);
 	}
 	return 0;
 }

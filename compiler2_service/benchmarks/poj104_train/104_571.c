@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int x,y;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	while(x!=y)
 	{
 		if(x>=2*y)
@@ -21,6 +21,6 @@ int main_bench()
 			y=y/2;
 		}
 	}
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }

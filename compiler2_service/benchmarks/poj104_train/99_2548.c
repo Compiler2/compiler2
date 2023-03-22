@@ -13,10 +13,10 @@ int main_bench()
 	double C=0;
 	double D=0;
 	int age[101];
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&age[i]);
+		my_scanf("%d",&age[i]);
 	}
 	for (i=0;i<n;i++)
 	{
@@ -43,10 +43,10 @@ int main_bench()
 	c=100*C/n;
 	d=100*D/n;
 
-	printf("1-18: %.2lf%%\n",a);
-	printf("19-35: %.2lf%%\n", b);
-	printf("36-60: %.2lf%%\n",c);
-	printf("60??: %.2lf%%",d);
+	my_printf("1-18: %.2lf%%\n",a);
+	my_printf("19-35: %.2lf%%\n", b);
+	my_printf("36-60: %.2lf%%\n",c);
+	my_printf("60??: %.2lf%%",d);
 
 	return 0;
 }

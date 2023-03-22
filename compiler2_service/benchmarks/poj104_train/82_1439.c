@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,high[101],low[101],t[101]={0};
 	int e,j=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d\n",&high[i],&low[i]);
+		my_scanf("%d%d\n",&high[i],&low[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,7 +32,7 @@ int main_bench()
 			t[i]=e;
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 
 
 

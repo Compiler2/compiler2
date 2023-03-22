@@ -14,12 +14,12 @@ struct student
 int main_bench()
 {
 	int n,i,e=0,f=0,g=0,a=0,b=0,c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct student*stu=(struct student*)malloc(sizeof(int)*3*n);
 	int*sz=(int*)malloc(sizeof(int)*n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&stu[i].num,&stu[i].chi,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].chi,&stu[i].math);
     	sz[i]=stu[i].chi+stu[i].math;
 	}
     for(i=0;i<n;i++)
@@ -30,7 +30,7 @@ int main_bench()
 			e=stu[i].num;
 		}
 	}
-	printf("%d %d\n",e,sz[a]);
+	my_printf("%d %d\n",e,sz[a]);
     for(i=0;i<n;i++)
 	{
 		if(i==a)
@@ -43,7 +43,7 @@ int main_bench()
 			f=stu[i].num;
 		}
 	}
-	printf("%d %d\n",f,sz[b]);
+	my_printf("%d %d\n",f,sz[b]);
     for(i=0;i<n;i++)
 	{
 		if(i==a||i==b)
@@ -56,7 +56,7 @@ int main_bench()
 			g=stu[i].num;
 		}
 	}
-    printf("%d %d",g,sz[c]);
+    my_printf("%d %d",g,sz[c]);
 	free(sz);
 	return 0;
 }

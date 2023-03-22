@@ -2,10 +2,10 @@
 
 int main_bench(){
 int n,i;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int b[n];
 for(i=0;i<n;i++){
-scanf("%d",&(b[i]));
+my_scanf("%d",&(b[i]));
 }
 double a,c,d,e,f,g,h,j;
 a=0;
@@ -27,18 +27,18 @@ f=100*a/n;
 g=100*c/n;
 h=100*d/n;
 j=100*e/n;
-printf("1-18: ");
-printf("%.2lf",f);
-printf("%%\n");
-printf("19-35: ");
-printf("%.2lf",g);
-printf("%%\n");
-printf("36-60: ");
-printf("%.2lf",h);
-printf("%%\n");
-printf("Over60: ");
-printf("%.2lf",j);
-printf("%%");
+my_printf("1-18: ");
+my_printf("%.2lf",f);
+my_printf("%%\n");
+my_printf("19-35: ");
+my_printf("%.2lf",g);
+my_printf("%%\n");
+my_printf("36-60: ");
+my_printf("%.2lf",h);
+my_printf("%%\n");
+my_printf("Over60: ");
+my_printf("%.2lf",j);
+my_printf("%%");
 
 
 

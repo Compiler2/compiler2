@@ -3,31 +3,31 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a,b;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	double p,q;
 	p=1.0*b/a;
 	int i;
 	for(i=1;i<=n-1;i++){
 		int x,y;
-		scanf("%d%d",&x,&y);
+		my_scanf("%d%d",&x,&y);
 		q=1.0*y/x;
 		if(i==n-1){
 			if(q-p>0.05){
-				printf("better");
+				my_printf("better");
 			}else if(p-q>0.05){
-				printf("worse");
+				my_printf("worse");
 			}else{
-				printf("same");
+				my_printf("same");
 			}
 		}else{
 			if(q-p>0.05){
-				printf("better\n");
+				my_printf("better\n");
 			}else if(p-q>0.05){
-				printf("worse\n");
+				my_printf("worse\n");
 			}else{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	}

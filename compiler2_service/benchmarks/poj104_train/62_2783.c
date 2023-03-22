@@ -25,7 +25,7 @@ int main_bench(){
                 
                 
 for(i=0;i<n-b;i++){   
-printf("%c",u[i]);
+my_printf("%c",u[i]);
 }
 
 return 0;  

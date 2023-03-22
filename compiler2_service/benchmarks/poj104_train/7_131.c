@@ -5,7 +5,7 @@ int main_bench()
 	char str[256];
 	char sub[256];
 	char rep[256];
-	scanf("%s%s%s",str,sub,rep);
+	my_scanf("%s%s%s",str,sub,rep);
 	char zfc[2][256]={0};
          int a=strlen(str);
 	int b=strlen(sub);
@@ -26,12 +26,12 @@ int main_bench()
 			}
 			strcat(zfc[0],rep);
 			strcat(zfc[0],zfc[1]);
-			printf("%s\n",zfc[0]);
+			my_printf("%s\n",zfc[0]);
 			break;
 		}
 	}
          if(i==(a-b+1)){
-              printf("%s\n",str);
+              my_printf("%s\n",str);
          }
 	return 0;
 }

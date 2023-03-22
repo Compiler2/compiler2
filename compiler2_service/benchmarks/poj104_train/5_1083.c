@@ -4,8 +4,8 @@ int main_bench(){
 	int i;
 	char a[500],b[500];
 	double x,y,k,n,m;
-	scanf("%lf",&x);
-	scanf("%s\n%s",a,b);
+	my_scanf("%lf",&x);
+	my_scanf("%s\n%s",a,b);
     n=strlen(a);
     m=strlen(b);
 	for(i=0;i<n;i++){
@@ -13,15 +13,15 @@ int main_bench(){
 			if(a[i]==b[i]){k=k+1;
 			}
 		}else {
-				printf("error");
+				my_printf("error");
 				return 0;
 			}
 	}
 	y=k/n;
 	if(y>x){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 
 return 0;

@@ -9,7 +9,7 @@ int main_bench()
   int d[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 
   
-  scanf("%d %d %d",&x,&y,&z);
+  my_scanf("%d %d %d",&x,&y,&z);
   
   {if(x%400==0)
     v=400;
@@ -30,19 +30,19 @@ int main_bench()
    l=n%7;
    switch(l) {
     case 1:
-	   printf("Mon.");break;
+	   my_printf("Mon.");break;
     case 2:
-	   printf("Tue.");break;
+	   my_printf("Tue.");break;
     case 3:
-	   printf("Wed.");break;
+	   my_printf("Wed.");break;
    	case 4:
-	   printf("Thu.");break;  
+	   my_printf("Thu.");break;  
 	case 5:
-	   printf("Fri.");break;  
+	   my_printf("Fri.");break;  
 	case 6:
-	   printf("Sat.");break;   
+	   my_printf("Sat.");break;   
 	case 0:
-	   printf("Sun.");break; }
+	   my_printf("Sun.");break; }
 	   return 0;
 }
 

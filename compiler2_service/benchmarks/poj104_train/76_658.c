@@ -6,9 +6,9 @@ int main_bench()
   
     int i,min, max,e,n,j,sum=0,p,k,s;
     double r;
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
      for (i = 0; i< n; i++) {
-        scanf("%d %d", &a[i],&b[i]);
+        my_scanf("%d %d", &a[i],&b[i]);
        }
      min=0;
      for(i=0;i<n;i++){
@@ -40,8 +40,8 @@ int main_bench()
       p=b[max]-a[min];
         
         if(s!=p){
-            printf("no");
+            my_printf("no");
         }else{
-    printf("%d %d",a[min],b[max]);}
+    my_printf("%d %d",a[min],b[max]);}
    return 0;
 }

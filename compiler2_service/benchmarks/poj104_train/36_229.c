@@ -6,12 +6,12 @@ int l;
 int main_bench()
 {
     int i,flag=1;    
-    scanf("%s%s",a,b);
+    my_scanf("%s%s",a,b);
     l=strlen(b);
     for(i=0;i<strlen(a);i++)if(p(i)==0){flag=0;break;}
     for(i=0;i<l;i++)if(b[i]!=0){flag=0;break;}
-    if(flag==1)printf("YES\n");
-    else printf("NO\n");
+    if(flag==1)my_printf("YES\n");
+    else my_printf("NO\n");
     return 0;
 }
 int p(int i)

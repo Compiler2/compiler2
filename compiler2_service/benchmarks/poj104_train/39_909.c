@@ -10,12 +10,12 @@ int main_bench()
     struct stu a[100],t;
     int n,i,sum=0,j,k;
     char c;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%s",a[i].name);
+                    my_scanf("%s",a[i].name);
                     c=getchar();
-                    scanf("%d %d %c %c %d",&a[i].qimo,&a[i].banji,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
+                    my_scanf("%d %d %c %c %d",&a[i].qimo,&a[i].banji,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
                     a[i].sum=0;
                     if(a[i].qimo>80&&a[i].lunwen>=1)
                     a[i].sum+=8000;
@@ -40,7 +40,7 @@ int main_bench()
                                       }
                     }
     }
-    printf("%s\n%d\n%d\n",a[0].name,a[0].sum,sum);
+    my_printf("%s\n%d\n%d\n",a[0].name,a[0].sum,sum);
 
     return 0;
 }

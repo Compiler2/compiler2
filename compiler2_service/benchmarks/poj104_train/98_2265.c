@@ -7,10 +7,10 @@ int main_bench()
 		int l;
 	}a[1000];
 	int n,i,temp=-1,t,p=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i].w);
+		my_scanf("%s",a[i].w);
 		a[i].l=strlen(a[i].w)+1;
 	}
 	do{
@@ -26,20 +26,20 @@ int main_bench()
 		}
 		if(temp>80)
 		{
-	        printf("%s",a[p].w);
+	        my_printf("%s",a[p].w);
 	        for(i=p+1;i<t;i++)
 			{
-		        printf(" %s",a[i].w);
+		        my_printf(" %s",a[i].w);
 			}
 		    p=t;
-	        printf("\n");
+	        my_printf("\n");
 		}
 	}while(temp>80);
-	printf("%s",a[p].w);
+	my_printf("%s",a[p].w);
 	for(i=p+1;i<n;i++)
 	{
-		printf(" %s",a[i].w);
+		my_printf(" %s",a[i].w);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

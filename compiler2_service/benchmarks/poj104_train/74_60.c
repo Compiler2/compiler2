@@ -6,7 +6,7 @@ int main_bench()
 	int p=0,q=0,t;
 	int b[100];
 	b[0]=-1;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		for(j=2;j<=i;j++)
@@ -35,8 +35,8 @@ int main_bench()
 	if(b[0]>0)	
 	{
 		for(i=0;i<q-1;i++)
-			printf("%d,",b[i]);
-		printf("%d",b[q-1]);
+			my_printf("%d,",b[i]);
+		my_printf("%d",b[q-1]);
 	}
-	else printf("no");
+	else my_printf("no");
 }

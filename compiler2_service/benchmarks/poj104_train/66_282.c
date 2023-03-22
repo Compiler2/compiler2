@@ -3,7 +3,7 @@
 int main_bench(){
 	int i,w,m=0;
 	int year,month,day,total=0;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	for(i = 1; i < month; i++){ 	
 		if(i==1||i==3||i==5||i==7||i==8||i==10||i==12){
 			total += 31;	
@@ -21,12 +21,12 @@ int main_bench(){
 	int n = year/4-year/100+year/400;
 	total+=n*2+(year-n)+day;	
 	w=total%7;
-	if(w==1){printf("Mon.");}	
-	else if(w==2){printf("Tue.");}	
-	else if(w==3){printf("Wed.");}	
-	else if(w==4){printf("Thu.");}	
-	else if(w==5){printf("Fri.");}	
-	else if(w==6){printf("Sat.");}
-	else {printf("Sun.");}
+	if(w==1){my_printf("Mon.");}	
+	else if(w==2){my_printf("Tue.");}	
+	else if(w==3){my_printf("Wed.");}	
+	else if(w==4){my_printf("Thu.");}	
+	else if(w==5){my_printf("Fri.");}	
+	else if(w==6){my_printf("Sat.");}
+	else {my_printf("Sun.");}
 	return 0;
 }

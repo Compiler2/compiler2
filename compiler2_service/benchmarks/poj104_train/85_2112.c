@@ -3,10 +3,10 @@
 int main_bench(){
 	int n,i=0,j=0,a[1000],c;
 	char zfc[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
   while(j<n)
   {
-    scanf("%s",zfc);
+    my_scanf("%s",zfc);
     for(i=0,c=0;zfc[i]!='\0';i++){
       if((zfc[i]>='a'&&zfc[i]<='z')||(zfc[i]>='A'&&zfc[i]<='Z')||zfc[i]=='_'||(zfc[i]>='0'&&zfc[i]<='9'))
        c++;
@@ -24,9 +24,9 @@ int main_bench(){
   for(j=0;j<n;j++)
   {
   if(a[j]==0)
-  printf("no\n");
+  my_printf("no\n");
   if(a[j]==1)
-  printf("yes\n");
+  my_printf("yes\n");
   }
 
 

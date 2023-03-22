@@ -4,7 +4,7 @@ int main_bench()
 {
 	char x[101];
 	int s[101],i,a,n[101],k,y;
-	scanf("%s",x);
+	my_scanf("%s",x);
 	for(i=0;x[i]!='\0';i++)
 	{
 		n[i]=x[i]-48;
@@ -12,11 +12,11 @@ int main_bench()
 	k=i;
 	if(k==2&&n[0]==1&&n[1]<3)
 	{
-		printf("0\n%d",10*n[0]+n[1]);
+		my_printf("0\n%d",10*n[0]+n[1]);
 	}
 	else {
 		if(k==1)
-		printf("0\n%d",n[0]);
+		my_printf("0\n%d",n[0]);
     	else 
 		{
 			if(n[0]>1||(n[0]==1&&n[1]>=3))
@@ -32,8 +32,8 @@ int main_bench()
 		    s[k-2]=a/13;
 	    	y=a%13;
 	    	for(i=0;i<k-1;i++)
-			printf("%d",s[i]);
-	    	printf("\n%d",y);
+			my_printf("%d",s[i]);
+	    	my_printf("\n%d",y);
 
 			}
         	else
@@ -49,8 +49,8 @@ int main_bench()
 	    	s[k-3]=a/13;
 	       	y=a%13;
 		    for(i=0;i<k-2;i++)
-	   		printf("%d",s[i]);
-	    	printf("\n%d",y);
+	   		my_printf("%d",s[i]);
+	    	my_printf("\n%d",y);
 
 			}
 	}}

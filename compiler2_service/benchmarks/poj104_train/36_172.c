@@ -4,8 +4,8 @@ int main_bench()
 {
 	int i,j,n,m;
 	char a[100],b[100];
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	n=strlen(a);
          m=strlen(b);
          if(m==n)
@@ -17,8 +17,8 @@ int main_bench()
 		if(j==n)break;
 		else b[j]='&';
 	}
-	if(i<n)printf("%s\n","NO");
-	else printf("%s\n","YES");
+	if(i<n)my_printf("%s\n","NO");
+	else my_printf("%s\n","YES");
          }
-         else printf("%s\n","NO");
+         else my_printf("%s\n","NO");
 }

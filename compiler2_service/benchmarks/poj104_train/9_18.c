@@ -7,9 +7,9 @@ int main_bench()
 	int year;
 	}p[100],a[100],tmp;
 	int n,i,j,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%s%d",p[i].id,&p[i].year);
+	my_scanf("%s%d",p[i].id,&p[i].year);
 	if(p[i].year>=60){
 		a[k]=p[i];
 		k++;
@@ -26,12 +26,12 @@ int main_bench()
 		}
 		}
 	for(i=0;i<k;i++){
-	printf("%s\n",a[i].id);
+	my_printf("%s\n",a[i].id);
 	}
 	for(i=0;i<n;i++){
 	if(p[i].year==0)
 	continue;
-	printf("%s\n",p[i].id);
+	my_printf("%s\n",p[i].id);
 	}
 	return 0;
 

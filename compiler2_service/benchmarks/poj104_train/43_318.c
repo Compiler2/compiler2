@@ -3,11 +3,11 @@
 int shisushu(int n);
 int main_bench(){
 	int m,n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(n=2;n<=m/2;n++){
 		if(shisushu(n)==1){
 			if(shisushu(m-n)==1){
-				printf("%d %d\n",n,m-n);
+				my_printf("%d %d\n",n,m-n);
 			}
 		}
 	}

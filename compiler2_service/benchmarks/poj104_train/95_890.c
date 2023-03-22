@@ -13,9 +13,9 @@ int main_bench()
         str2[i]=(str2[i]>='A'&&str2[i]<='Z')?(str2[i]+32):str2[i];
 	   
    
-   if(str1[i]>str2[i])   printf(">");
-   else if(str1[i]<str2[i])   printf("<");
-   else if(str1[i]==str2[i]) printf("=");
+   if(str1[i]>str2[i])   my_printf(">");
+   else if(str1[i]<str2[i])   my_printf("<");
+   else if(str1[i]==str2[i]) my_printf("=");
    
 }
 

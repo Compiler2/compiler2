@@ -5,7 +5,7 @@ int main_bench()
 	int N1,N2,Y1,Y2,R1,R2,i,j,k,m,n,l,x1,x2;
 	int MONTH[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int RUNMONTH[13]={0,31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d%d%d%d%d%d",&N1,&Y1,&R1,&N2,&Y2,&R2);
+	my_scanf("%d%d%d%d%d%d",&N1,&Y1,&R1,&N2,&Y2,&R2);
 	x1=365*(N1-1);
 	x2=365*(N2-1);
 	for(i=0;i<N1;i++)
@@ -33,5 +33,5 @@ int main_bench()
 	x1=x1+R1;
 	x2=x2+R2;
 	k=x2-x1;
-	printf("%d",k);
+	my_printf("%d",k);
 }

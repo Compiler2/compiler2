@@ -5,7 +5,7 @@ int main_bench(){
 	char dna2[1000][256];
 	int k,i;
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(k=0;k<n;k++){
 		gets(dna1[k]);
 		for(i=0;dna1[k][i]!='\0';i++){

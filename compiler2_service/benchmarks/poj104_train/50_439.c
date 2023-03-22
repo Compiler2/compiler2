@@ -7,13 +7,13 @@ int main_bench(){
 
 	int w;
 	
-	scanf("%d", &w);
+	my_scanf("%d", &w);
 
 	for(int i = 1; i <= 12; i++){
 	
 		int	week = (w+12)%7;
 		if(week == 5){
-			printf("%d\n", i);
+			my_printf("%d\n", i);
 		}
 
 		w = (w + dayOfMonth(i))%7;

@@ -19,10 +19,10 @@ int main_bench()
 	  d[i]=b[i];
   }
   if(strcmp(c,d)>0)
-	  printf(">");
+	  my_printf(">");
   if(strcmp(c,d)==0)
-	  printf("=");
+	  my_printf("=");
   if(strcmp(c,d)<0)
-	  printf("<");
+	  my_printf("<");
   return 0;
 }

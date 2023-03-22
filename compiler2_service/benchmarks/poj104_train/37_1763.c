@@ -3,7 +3,7 @@
 main_bench()
 {
 	int i,t;
-	scanf("%d\n",&t);
+	my_scanf("%d\n",&t);
 	for(i=0;i<t;i++)
 	{
 		int j,k,m=0;
@@ -12,7 +12,7 @@ main_bench()
 		for(k=0;s[k]!='\0';k++)
 			eng[s[k]-'a']++;
 		for(k=0;s[k]!='\0';k++)
-			if(eng[s[k]-'a']==1) {printf("%c\n",s[k]);m=1;break;}
-		if(m==0) printf("no\n");
+			if(eng[s[k]-'a']==1) {my_printf("%c\n",s[k]);m=1;break;}
+		if(m==0) my_printf("no\n");
 	}
 } 

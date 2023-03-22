@@ -5,9 +5,9 @@ int main_bench()
 	int fib[10000];
 	double sz[10000],ans;
 	int m,n,i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		fib[0]=1;
 		fib[1]=1;
 		for(i=2;i<n+2;i++){
@@ -18,7 +18,7 @@ int main_bench()
 			sz[i]=(double)fib[i+2]/(double)fib[i+1];
 			ans=ans+sz[i];
 		}
-		printf("%.3lf\n",ans);
+		my_printf("%.3lf\n",ans);
 	}
 	return 0;
 }

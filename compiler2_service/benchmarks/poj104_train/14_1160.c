@@ -12,10 +12,10 @@ int total;
 int main_bench()
 {
 	int STUDENT_NUM,i,j,temp1,temp2;	
-	scanf("%d",&STUDENT_NUM);
+	my_scanf("%d",&STUDENT_NUM);
 	for(i=0;i<STUDENT_NUM;i++)
 	{
-		scanf("%d %d %d",&stu[i].ID,&stu[i].chi,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].ID,&stu[i].chi,&stu[i].math);
 		stu[i].total=stu[i].chi+stu[i].math;
 	}
 	for(i=0;i<3;i++)
@@ -33,5 +33,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d\n",stu[0].ID,stu[0].total,stu[1].ID,stu[1].total,stu[2].ID,stu[2].total);
+	my_printf("%d %d\n%d %d\n%d %d\n",stu[0].ID,stu[0].total,stu[1].ID,stu[1].total,stu[2].ID,stu[2].total);
 }

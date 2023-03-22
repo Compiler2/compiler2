@@ -3,8 +3,8 @@
 int main_bench(){
 	int len1,len2,i,a,count;
 	char word1[51],word2[51];
-	scanf("%s",&word1);
-	scanf("%s",&word2);
+	my_scanf("%s",&word1);
+	my_scanf("%s",&word2);
 	len1=strlen(word1);
 	len2=strlen(word2);
 	for(i=0;i<len2;i++){
@@ -16,7 +16,7 @@ int main_bench(){
 			}
 		}
 		if(count==len1){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
                            return 0;
 		}
 	}

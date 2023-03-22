@@ -11,10 +11,10 @@ int main_bench()
 	int m,i,j,l,k,p;
 	int name[200]={0},max,shuhao[1000];
 	struct SHU shu[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d %s",&shu[i].bh,shu[i].bz);
+		my_scanf("%d %s",&shu[i].bh,shu[i].bz);
 	}
 	for(i=0;i<m;i++)
 	{
@@ -45,11 +45,11 @@ int main_bench()
 			}
 		}
 	}
-	printf("%c\n",k);
-	printf("%d\n",max);
+	my_printf("%c\n",k);
+	my_printf("%d\n",max);
 	for(i=0;i<p;i++)
 	{
-		printf("%d\n",shuhao[i]);
+		my_printf("%d\n",shuhao[i]);
 	}
 
 

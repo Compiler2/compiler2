@@ -8,10 +8,10 @@ int main_bench()
 {
 int i,j,n,A,B,x[10000]={0,0,0};
 struct X q[50000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 
 for(i=0;i<n;i++)
-scanf("%d%d",&q[i].a,&q[i].b);
+my_scanf("%d%d",&q[i].a,&q[i].b);
 
 for(i=0;i<n;i++)
 {
@@ -26,10 +26,10 @@ for(i=A;i<B;i++)
 {
 if(x[i]==0)
 {
-printf("no");
+my_printf("no");
 return 0;
 }
 }
 
-printf("%d %d",A,B+1);
+my_printf("%d %d",A,B+1);
 return 0;}

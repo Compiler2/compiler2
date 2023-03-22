@@ -26,7 +26,7 @@ int main_bench()
 			if (a == 5 && (c == 1 || c == 2) || c != 1 && c != 2 && a !=5)
 				if (c != 1 && (d == 1 || d == 2) || d != 1 && d != 2 && c == 1)
 					if (d == 1 && (e == 1 || e == 2) || e != 1 && e != 2 && d != 1)
-						printf("%d %d %d %d %d", a, b, c, d, e);
+						my_printf("%d %d %d %d %d", a, b, c, d, e);
 	}
 	}
 	}

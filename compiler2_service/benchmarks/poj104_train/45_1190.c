@@ -34,7 +34,7 @@ int main_bench()
 				j++;
 				if(jishu==numqian)
 				{
-						printf("%d",j-2*numqian-1);
+						my_printf("%d",j-2*numqian-1);
 				}
 			}
 		}

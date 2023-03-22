@@ -62,6 +62,6 @@ for(i=0;i<1000;i++)
 				time[j]=time[j+1];
 				time[j+1]=t;
 			}
-			printf("%d %d",n,time[999]);
+			my_printf("%d %d",n,time[999]);
 
 }

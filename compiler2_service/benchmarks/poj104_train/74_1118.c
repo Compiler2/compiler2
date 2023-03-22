@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int m,n,k,p,q,r,s,t,h,i,j;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	h=0;
 	for(s=m;s<=n;s++)
 	{
@@ -29,7 +29,7 @@ int main_bench()
 		if(r==0) continue;
 		if(r==1&&t==1) h=1+h;
 		else h=h;
-		printf("%d",s); break;
+		my_printf("%d",s); break;
 	}
 	for(k=s+1;k<=n;k++)
 	{
@@ -54,10 +54,10 @@ int main_bench()
 		}
 		if(r==0) continue;
 		if(r==1&&t==1) h=1+h;
-		printf(",%d",k);
+		my_printf(",%d",k);
 	}
 	if(h==0)
-		printf("no");
+		my_printf("no");
 	
 }
 

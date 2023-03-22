@@ -3,11 +3,11 @@
 int main_bench()
 {int i,j,n,k,s[1100],p;
 p=0;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 for(i=1;i<=n;i++){
-	scanf("%d",&s[i]);
+	my_scanf("%d",&s[i]);
 }
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(i=1;i<=n;i++){
 	for(j=1;j<=n;j++){
 		if(s[i]+s[j]==k){
@@ -16,9 +16,9 @@ for(i=1;i<=n;i++){
 	}
 }
 if(p==0){
-    printf("no");
+    my_printf("no");
 }else{
-	printf("yes");
+	my_printf("yes");
 }
 return 0;
 }

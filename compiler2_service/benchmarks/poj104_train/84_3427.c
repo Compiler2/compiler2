@@ -3,9 +3,9 @@
 main_bench()
 {
    int i,n,a[100],max1,max2,temp;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
    max1=0;
    for(i=1;i<n;i++)
       if(a[max1]<a[i])
@@ -20,6 +20,6 @@ main_bench()
    temp=a[1];
    a[1]=a[max2];
    a[max2]=temp;
-   printf("\n%d",a[0]);
-   printf("\n%d",a[1]);
+   my_printf("\n%d",a[0]);
+   my_printf("\n%d",a[1]);
 }

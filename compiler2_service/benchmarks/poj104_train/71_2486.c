@@ -32,20 +32,20 @@ int main_bench()
 	run[12]=31+29+31+30+31+30+31+31+30+31+30;
     int a,sum[1000];
 	
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	int i;
 	int j;
 	int year[1000],yue[1000],tian[1000];
 	for( i=1;i<=a;i++)
 	{
-		scanf("%d %d %d",&year[i],&yue[i],&tian[i]);
+		my_scanf("%d %d %d",&year[i],&yue[i],&tian[i]);
 	}
 	
 	
 	for( j=1;j<=a;j++)
 	{   
 		if((year[j]==1998)&&(yue[j]==6)&&(tian[j]==2))
-		{ printf("NO\n");
+		{ my_printf("NO\n");
 		  continue;
 		}
 		
@@ -55,11 +55,11 @@ int main_bench()
 		sum[j]=abs(run[(yue[j])]-run[(tian[j])]);
 			if(sum[j]%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else 
@@ -67,11 +67,11 @@ int main_bench()
 			sum[j]=abs(feirun[(yue[j])]-feirun[(tian[j])]);
 			if(sum[j]%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		

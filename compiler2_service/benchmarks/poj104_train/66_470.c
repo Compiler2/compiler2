@@ -3,7 +3,7 @@
 int main_bench(){
    int y,m,d,i,k=0,Day,sum,sum1,sum2=0;
     
-   scanf("%d %d %d",&y,&m,&d);
+   my_scanf("%d %d %d",&y,&m,&d);
     sum1=(y-1)+(y-1)/4-(y-1)/100+(y-1)/400;
            for(i=1;i<m;i++){
           if(i==1||i==3||i==5||i==7||i==8||i==10){
@@ -25,13 +25,13 @@ int main_bench(){
         sum=sum1+sum2;
         Day=sum%7;
     switch(Day){
-        case 0: printf("Sun."); break;
-        case 1: printf("Mon."); break;
-        case 2: printf("Tue."); break;
-        case 3: printf("Wed."); break;
-        case 4: printf("Thu."); break;
-        case 5: printf("Fri."); break;
-       default: printf("Sat.");
+        case 0: my_printf("Sun."); break;
+        case 1: my_printf("Mon."); break;
+        case 2: my_printf("Tue."); break;
+        case 3: my_printf("Wed."); break;
+        case 4: my_printf("Thu."); break;
+        case 5: my_printf("Fri."); break;
+       default: my_printf("Sat.");
     } 
    return 0;   
 }

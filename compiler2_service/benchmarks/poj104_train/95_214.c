@@ -11,11 +11,11 @@ int main_bench()
 	f(d);
 	t=strcmp(c,d);
 	if(t<0)
-		printf("<");
+		my_printf("<");
 	if(t==0)
-		printf("=");
+		my_printf("=");
 	if(t>0)
-		printf(">");
+		my_printf(">");
 	 return 0;
 }
 char f(char x[80])

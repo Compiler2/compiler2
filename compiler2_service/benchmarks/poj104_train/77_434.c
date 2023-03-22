@@ -30,7 +30,7 @@ int main_bench()
 		{
 			if(quene[i]==boy)
 			{
-				printf("%d %d\n",i,g);
+				my_printf("%d %d\n",i,g);
 				pair--;
 				quene[i]='a';
 				quene[g]='a';

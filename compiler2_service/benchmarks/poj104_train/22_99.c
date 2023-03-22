@@ -4,7 +4,7 @@ main_bench()
 {
 	int n,a[300]={0},i,h=0,l,j,r,x,y,max;
     char c[500];
-	scanf("%s",c);
+	my_scanf("%s",c);
     l=strlen(c);
 	c[l]='0';
 
@@ -25,7 +25,7 @@ main_bench()
 
 	x=0;
     if (a[1]==0)
-	{printf("No");
+	{my_printf("No");
 	x=1;}
 	
 	
@@ -40,7 +40,7 @@ main_bench()
        if (a[i]!=a[0])
 		   r=1;
         if (r==0)
-		{printf("No");y=1;}
+		{my_printf("No");y=1;}
 	}
 
 
@@ -76,7 +76,7 @@ main_bench()
 	
 
 
-		printf("%d",max);
+		my_printf("%d",max);
 	}
 }
 		

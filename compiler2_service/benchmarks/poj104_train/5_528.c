@@ -4,13 +4,13 @@ int main_bench(){
 	int i,k=1,l,e;
 	char s[501],g[501];
 	double n,r;
-	scanf("%lf",&n);
-	scanf("%s%s",s,g);
+	my_scanf("%lf",&n);
+	my_scanf("%s%s",s,g);
 	l=strlen(s);
 	e=strlen(g);
 	if(l!=e)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -31,7 +31,7 @@ int main_bench(){
 		}
 		if(k==0)
 		{
-			printf("error");
+			my_printf("error");
 		}
 		else
 		{
@@ -39,11 +39,11 @@ int main_bench(){
 		    r=1.0*k/l;
 		    if(r>n)
 			{
-		    	printf("yes");
+		    	my_printf("yes");
 			}
 		    else
 			{
-		    	printf("no");
+		    	my_printf("no");
 			}
 		}
 	}

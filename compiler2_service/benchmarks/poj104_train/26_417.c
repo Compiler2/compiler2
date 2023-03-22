@@ -13,7 +13,7 @@ main_bench()
       for(i=0;i<101;i++)
       {
                         if(a[i]!='0'&&a[i]!=0)
-                        printf("%c",a[i]);
+                        my_printf("%c",a[i]);
                         else if(a[i]==0)
                         break;
       }

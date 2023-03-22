@@ -10,9 +10,9 @@ int main_bench()
 		int c;
 		int d;
 	}a[4];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<3;i++){
-		scanf("%d %d %d",&a[i].num,&a[i].b,&a[i].c);
+		my_scanf("%d %d %d",&a[i].num,&a[i].b,&a[i].c);
 		a[i].d=a[i].b+a[i].c;
 	}
 	for(j=0;j<2;j++){
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	for(i=3;i<n;i++){
-		scanf("%d %d %d",&a[3].num,&a[3].b,&a[3].c);
+		my_scanf("%d %d %d",&a[3].num,&a[3].b,&a[3].c);
 		a[3].d=a[3].b+a[3].c;	
 	            if(a[3].d>a[0].d){
 				a[2]=a[1];
@@ -43,8 +43,8 @@ int main_bench()
 				a[2]=a[3];
 		}
 	}
-	printf("%d %d\n",a[0].num,a[0].d);
-	printf("%d %d\n",a[1].num,a[1].d);
-	printf("%d %d\n",a[2].num,a[2].d);
+	my_printf("%d %d\n",a[0].num,a[0].d);
+	my_printf("%d %d\n",a[1].num,a[1].d);
+	my_printf("%d %d\n",a[2].num,a[2].d);
 	return 0;
 }

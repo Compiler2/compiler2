@@ -43,14 +43,14 @@ int count(int a[100][100],int n,int s)
 int main_bench()
 {
 	int n,i,j,s,t,a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	t=n;
 	while(t>0)
 	{	s=0;
 	   for(i=0;i<n;i++)
 	   for(j=0;j<n;j++)
-	   scanf("%d",&a[i][j]);
-	   printf("%d\n",count(a,n,s));
+	   my_scanf("%d",&a[i][j]);
+	   my_printf("%d\n",count(a,n,s));
 	   t--;
 	}
 }

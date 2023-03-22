@@ -27,14 +27,14 @@ int main_bench()
        {
      if(c[i]!=0)
      {
-      printf("%d",c[i]);
-              printf(",");
+      my_printf("%d",c[i]);
+              my_printf(",");
      }
      else
      {
      continue;
      }
        }
-       printf("%d",c[m-1]);
+       my_printf("%d",c[m-1]);
        return 0;
 }

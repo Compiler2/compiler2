@@ -5,7 +5,7 @@ main_bench()
 {
       int x,y,i,z,m,k;
       char a[251],b[251];
-      scanf("%s %s",a,b);
+      my_scanf("%s %s",a,b);
       x=strlen(a);
       y=strlen(b);
       if(x<y)
@@ -56,10 +56,10 @@ main_bench()
                    break;
       }
        if(z==0)
-       printf("0");
+       my_printf("0");
        else
       for(i=z-1;i>=0;i--)
-      printf("%d",c[i]);
+      my_printf("%d",c[i]);
       
 }
                        

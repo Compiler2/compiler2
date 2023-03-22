@@ -7,10 +7,10 @@ int main_bench()
 	int n,a[100],b[100],c[100],i,j,k,z=0;
 	char name[100][30],ganbu[100],xibu[100],t[30];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d%s%s%d",name[i], &a[i],&b[i],&ganbu[i],&xibu[i],&c[i]);
+		my_scanf("%s%d%d%s%s%d",name[i], &a[i],&b[i],&ganbu[i],&xibu[i],&c[i]);
 		if(a[i]>80&&c[i]!=0)
 			money[i]=money[i]+8000;
 		if(a[i]>85&&b[i]>80)
@@ -37,7 +37,7 @@ int main_bench()
 			strcpy(name[j-1],t);
 		}
 	}
-	printf("%s\n%d\n%d\n",name[0],money[0],z);
+	my_printf("%s\n%d\n%d\n",name[0],money[0],z);
 
 	return 0;
 }

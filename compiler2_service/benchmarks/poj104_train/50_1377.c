@@ -5,7 +5,7 @@ int bujili(int m);
 int tianshu(int m);
 int main_bench(){
 	int i;
-	scanf("%d",&day);
+	my_scanf("%d",&day);
 	for(i=1;i<=12;i++){
 		bujili(i);
 	}	
@@ -22,7 +22,7 @@ int bujili(int m){
 	d=(s%7+day)%7;
 	
 	if(d==5){
-		printf("%d\n",m);
+		my_printf("%d\n",m);
 	}
 	return a;
 }

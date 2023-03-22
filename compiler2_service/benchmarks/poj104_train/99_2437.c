@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a[100];
     double first=0,second=0,third=0,fourth=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	  scanf("%d",&a[i]);
+	  my_scanf("%d",&a[i]);
 	  if(a[i]<19)
 	    first=first+1;
 		else if(a[i]<36)
@@ -17,5 +17,5 @@ int main_bench()
 		else fourth=fourth+1;
 
 	}
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",first*100/n,second*100/n,third*100/n,fourth*100/n);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",first*100/n,second*100/n,third*100/n,fourth*100/n);
 }

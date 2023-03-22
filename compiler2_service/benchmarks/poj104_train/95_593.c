@@ -13,9 +13,9 @@ int main_bench()
 	for(i=0;i<=length2;i++)
 		if(c2[i]<='z'&& c2[i]>='a') c2[i]-=32;
     a=(strcmp(c1,c2));
-	if(a>0) printf(">");
-	if(a<0) printf("<");
-          if(a==0) printf("=");
+	if(a>0) my_printf(">");
+	if(a<0) my_printf("<");
+          if(a==0) my_printf("=");
 	return 0;
 }
 

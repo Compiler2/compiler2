@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,k,l;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	e=k%10;
           d=(k%100-e)/10;
          c=(k%1000-d*10-e)/100;
@@ -12,31 +12,31 @@ int main_bench()
 	if(a!=0)
 	{
 		l=e*10000+d*1000+c*100+b*10+a;
-		printf("%d",l);
+		my_printf("%d",l);
 	}
 	else if(b!=0)
 	{	
 		l=e*1000+d*100+c*10+b;
-		printf("%d",l);
+		my_printf("%d",l);
 	}
 	else if(c!=0)
 	{	
                   l=e*100+d*10+c*1;
-		printf("%d",l);
+		my_printf("%d",l);
     }
 	else if(d!=0)
 	{
 		l=e*10+d;
-		printf("%d",l);
+		my_printf("%d",l);
     }
 	else if(e!=0)
 	{	
          		l=e;
-		printf("%d",l);
+		my_printf("%d",l);
     }
 	else
 	{
-		printf("error");
+		my_printf("error");
     }
 }
 

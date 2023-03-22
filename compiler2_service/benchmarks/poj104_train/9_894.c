@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point
 	{
 		char id[10];
@@ -12,7 +12,7 @@ int main_bench()
 	points[100],news[100],tmp;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",&points[i].id,&points[i].age);
+		my_scanf("%s %d",&points[i].id,&points[i].age);
 	}
 	for(i=n-1;i>=0;i--)
 	{
@@ -29,7 +29,7 @@ int main_bench()
 	
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",points[i].id);
+		my_printf("%s\n",points[i].id);
 	}
 	return 0;
 }

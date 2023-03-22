@@ -18,11 +18,11 @@ int main_bench()
 int read()
 {
     i=1;
-    scanf("%d%d",&n[i],&m[i]);
+    my_scanf("%d%d",&n[i],&m[i]);
     while (n[i]!=0&&m!=0)
     {
         i++;
-        scanf("%d%d",&n[i],&m[i]);
+        my_scanf("%d%d",&n[i],&m[i]);
     }
     num=i-1;
     return 0;
@@ -108,7 +108,7 @@ void print()
 {
     for (i=1;i<=num;i++)
     {
-        printf("%d\n",ans[i]);
+        my_printf("%d\n",ans[i]);
     }
     return;
 }

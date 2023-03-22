@@ -7,10 +7,10 @@ int main_bench()
 	char word[200][20];
 	int count[200]={0};
 	int max=0,min=20;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word[i]);
+		my_scanf("%s",word[i]);
 		
 	}
 	
@@ -41,7 +41,7 @@ for(i=0;i<n;i++)
 	{
 	if(strlen(word[i])==max)
 	{
-	printf("%s\n",word[i]);
+	my_printf("%s\n",word[i]);
 	break;
 	}
 	}
@@ -50,7 +50,7 @@ for(i=0;i<n;i++)
 	{
 	if(strlen(word[i])==min)
 	{
-	printf("%s\n",word[i]);
+	my_printf("%s\n",word[i]);
 	break;
 	}
 	}

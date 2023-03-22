@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int year[2],month[2],day[2],i,s=0,j;
-	scanf("%d %d %d",&year[0],&month[0],&day[0]);
-	scanf("%d %d %d",&year[1],&month[1],&day[1]);
+	my_scanf("%d %d %d",&year[0],&month[0],&day[0]);
+	my_scanf("%d %d %d",&year[1],&month[1],&day[1]);
 	if(year[1]-year[0]!=0)
 	{for(i=year[0];i<=year[1];i++)
 	{
@@ -81,6 +81,6 @@ int main_bench()
 		}
 	}
 	s=s-day[0]+day[1];
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

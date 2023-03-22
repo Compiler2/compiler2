@@ -9,7 +9,7 @@ int main_bench()
 	do
 	{
 		i=i+1;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(n>max)
 		{
 		    tmp=max;
@@ -23,11 +23,11 @@ int main_bench()
 	}while(getchar()!='\n');
 	if(i==1||tmp==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	else
 	{
-		printf("%d\n",tmp);
+		my_printf("%d\n",tmp);
 	}
 	return 0;
 }

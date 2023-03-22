@@ -9,9 +9,9 @@ int main_bench()
  int m,i,j,s,k,p,l;
  int t[26]={0};
  char x;
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(i=0;i<m;i++)
- scanf("%s %s",&book[i].a,book[i].b);
+ my_scanf("%s %s",&book[i].a,book[i].b);
  for(i=0;i<m;i++)
  {
 	 s=strlen(book[i].b);
@@ -33,8 +33,8 @@ int main_bench()
 	 }
  }
  x=l+65;
- printf("%c\n",x);
- printf("%d\n",p);
+ my_printf("%c\n",x);
+ my_printf("%d\n",p);
 for(i=0;i<m;i++)
  {
 	 s=strlen(book[i].b);
@@ -42,7 +42,7 @@ for(i=0;i<m;i++)
 	 {
 		 if(book[i].b[j]==x)
 		 {
-			 printf("%s\n",book[i].a);
+			 my_printf("%s\n",book[i].a);
 		 }
 	 }
 }

@@ -16,13 +16,13 @@ if ((k[n]<='z')&&(k[n]>='a'))
 for (i=0;i<81;i++)
 {if (s[i]==k[i])
 	{if ((s[i]==0)&&(k[i]==0))
-		{printf("=");break;}
+		{my_printf("=");break;}
 	else continue;
 	}
 if (s[i]>k[i])
-{printf(">");break;}
+{my_printf(">");break;}
 if (s[i]<k[i])
-{printf("<");break;}
+{my_printf("<");break;}
 }
 return 0;
 }

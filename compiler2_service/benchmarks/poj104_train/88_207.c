@@ -9,9 +9,9 @@ int main_bench()
     for (i=0;*(p+i)!='\0';i++)
     {
         if (isdigit(*(p+i)))
-        printf ("%c",*(p+i));
+        my_printf ("%c",*(p+i));
         if (isdigit(*(p+i))&&isdigit(*(p+i+1))==0)
-        printf ("\n");
+        my_printf ("\n");
     }
     return 0;
 }

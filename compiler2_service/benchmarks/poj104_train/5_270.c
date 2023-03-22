@@ -4,8 +4,8 @@ int main_bench(){
 double x,y;
 int l,i,xg=0,cw=0;
 char jy[2][500];
-scanf("%lf",&x);
-scanf("%s %s",jy[0],jy[1]);
+my_scanf("%lf",&x);
+my_scanf("%s %s",jy[0],jy[1]);
 if(strlen(jy[0])==strlen(jy[1])){
 l=strlen(jy[0]);
  for(i=0;i<l;i++){
@@ -23,10 +23,10 @@ else if(strlen(jy[0])!=strlen(jy[1])){
 cw++;
 }
 if(cw==0){
-	printf(y>x?"yes":"no");
+	my_printf(y>x?"yes":"no");
 }
 else if(cw!=0){
-printf("error");
+my_printf("error");
 }
 return 0;
 

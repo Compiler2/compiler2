@@ -5,11 +5,11 @@ main_bench()
     int i,j[6],k[6];
     int reverse(int n);
     for(i=0;i<6;i++)
-    {   scanf("%d",&j[i]);
+    {   my_scanf("%d",&j[i]);
         k[i]=reverse(j[i]);
         }
     for(i=0;i<6;i++)
-        printf("%d\n",k[i]);
+        my_printf("%d\n",k[i]);
 
 
     }

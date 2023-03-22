@@ -12,17 +12,17 @@ int main_bench()
 		b[i]=b[i-1]+b[i-2];
 	}
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{
 		int m;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		float sum=0;
 		for(int j=0;j<m;j++)
 		{
 			sum+=a[j]/b[j];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

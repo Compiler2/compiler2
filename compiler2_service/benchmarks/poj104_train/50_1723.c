@@ -2,7 +2,7 @@
 
 int main_bench() {
 	int w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	int month[12]={0,31,28,31,30,31,30,31,31,30,31,30};
 	int ts[12];
 	ts[0]=13;
@@ -36,13 +36,13 @@ int main_bench() {
 	for(i=0;i<m;i++){
 		for(j=0;j<12;j++){
 			if(syzw[i]==ts[j]){
-				printf("%d\n",j+1);
+				my_printf("%d\n",j+1);
 				k++;
 			}
 		}
 	}
 	if(k==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

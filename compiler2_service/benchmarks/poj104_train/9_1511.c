@@ -9,8 +9,8 @@ int main_bench()
 	char id[100][10];
 	char ID[100][10];
 	char e[100][10];
-	scanf("%d",&n);
-	for(i=0;i<n;i++) scanf("%s %d",&id[i],&age[i]);
+	my_scanf("%d",&n);
+	for(i=0;i<n;i++) my_scanf("%s %d",&id[i],&age[i]);
 	m=strlen(id[0]);
 	for(i=0;i<n;i++) id[i][m]='\0';
 	for(i=0;i<n;i++)
@@ -42,6 +42,6 @@ int main_bench()
 			k++;
 		}
 	}
-	for(i=0;i<n;i++) printf("%s\n",ID[i]);
+	for(i=0;i<n;i++) my_printf("%s\n",ID[i]);
 	return 0;
 }

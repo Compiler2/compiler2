@@ -3,7 +3,7 @@
 int main_bench()
  { 
 	int x,i,date,day;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	for(i=0;i<12;i++)
 	{
         if (i==0) date=13;
@@ -11,7 +11,7 @@ int main_bench()
 		else if(i==2) date+=28;
 		else date+=31;
 		day=(date+x-1)%7;
-		if (day==5) printf("%d\n",i+1);
+		if (day==5) my_printf("%d\n",i+1);
 	}
   return 0; 
 } 

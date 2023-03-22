@@ -30,11 +30,11 @@ int main_bench(){
 	ss=s;
 	y=ss/aa;
 	if(t==0){
-		printf("error");
+		my_printf("error");
 	}else if(y>=x){
-		printf("yes");
+		my_printf("yes");
 	}else if(y<=x){
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

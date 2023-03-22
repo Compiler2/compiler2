@@ -9,10 +9,10 @@ struct book
 int main_bench()
 {
 	int n,i,j,k,p,q[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=(n-1);i++)
 	{
-		scanf("%d %s",&b[i].num,b[i].writer);
+		my_scanf("%d %s",&b[i].num,b[i].writer);
 		b[i].order=i;
 	}
 	char a[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
@@ -56,8 +56,8 @@ int main_bench()
 		if(c[i]==max)
 		{
 			x=a[i];
-			printf("%c\n",a[i]);
-			printf("%d\n",c[i]);
+			my_printf("%c\n",a[i]);
+			my_printf("%d\n",c[i]);
 		}
 	}
 
@@ -98,9 +98,9 @@ int main_bench()
 	}
 	for(i=0;i<=(s-2);i++)
 	{
-		printf("%d\n",q[i]);
+		my_printf("%d\n",q[i]);
 	}
-	printf("%d",q[s-1]);
+	my_printf("%d",q[s-1]);
 
 	return 0;
 }

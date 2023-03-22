@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char p[50],q[50];
-	scanf("%s %s",p,q);
+	my_scanf("%s %s",p,q);
     int m,n;
 	m=strlen(p);
 	n=strlen(q);
@@ -17,7 +17,7 @@ int main_bench()
 			t++;
 		}
 		if(b==m) {
-			printf("%d",t-m);
+			my_printf("%d",t-m);
 			for(int h=0;h<m;h++){
 				p[h]='1';
 			}

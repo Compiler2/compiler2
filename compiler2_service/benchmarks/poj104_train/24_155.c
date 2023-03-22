@@ -5,7 +5,7 @@ int main_bench()
 	int m=0,j=0,i=0,a[50]={0},max,min,maxi,mini;
 	char s[50][20];
 	while(1)
-	{scanf("%s",&s[i]);
+	{my_scanf("%s",&s[i]);
 	if (getchar()!=' ') break;
 	i=i+1;}
 	
@@ -19,7 +19,7 @@ int main_bench()
 		if(a[i]>max){max=a[i];maxi=i;}
 		if(a[i]<min){min=a[i];mini=i;}
 	}
-	printf("%s\n",s[maxi]);
-		printf("%s",s[mini]);
+	my_printf("%s\n",s[maxi]);
+		my_printf("%s",s[mini]);
 		
 }

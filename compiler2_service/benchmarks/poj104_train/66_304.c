@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long year,mon,day,n,x,y;
-	scanf("%d%d%d",&y,&mon,&day);
+	my_scanf("%d%d%d",&y,&mon,&day);
 	year=y%200000;
 	n=365*(year-1);
 	switch(mon)
@@ -27,12 +27,12 @@ int main_bench()
 	x=n%7;
 	switch(x)
 	{
-	case 1:printf("Mon.");break;
-	case 2:printf("Tue.");break;
-	case 3:printf("Wed.");break;
-	case 4:printf("Thu.");break;
-	case 5:printf("Fri.");break;
-	case 6:printf("Sat.");break;
-	case 0:printf("Sun.");
+	case 1:my_printf("Mon.");break;
+	case 2:my_printf("Tue.");break;
+	case 3:my_printf("Wed.");break;
+	case 4:my_printf("Thu.");break;
+	case 5:my_printf("Fri.");break;
+	case 6:my_printf("Sat.");break;
+	case 0:my_printf("Sun.");
 	}
 }

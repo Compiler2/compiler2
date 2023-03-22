@@ -12,7 +12,7 @@ int main_bench()
 	{
 		for(c=0;c<5;c++)
 		{
-			scanf("%d",&a[r][c]);
+			my_scanf("%d",&a[r][c]);
 		}
 
 	}                                                                        
@@ -26,7 +26,7 @@ int main_bench()
 				{
 					x=i+1;
 					y=k+1;
-					printf("%d %d %d\n",x,y,a[i][k]);
+					my_printf("%d %d %d\n",x,y,a[i][k]);
 
 					w=1;
 				}
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	if(w==0)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 
 	return 0;

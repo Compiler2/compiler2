@@ -5,7 +5,7 @@ main_bench()
 {
 int n,i;
 int g,k,w,d=1,month=1;
-scanf("%d",&n);
+my_scanf("%d",&n);
 w=n;
 for(i=1;i<=365;i++)
 {w++;
@@ -18,7 +18,7 @@ for(i=1;i<=365;i++)
      d=1;
 }
 if(d==13&&w==5)
-printf("%d\n",month);
+my_printf("%d\n",month);
 
 }
 

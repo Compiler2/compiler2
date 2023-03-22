@@ -21,8 +21,8 @@ int main_bench()
 	for (i=0;i<j;i++)
 	{
 		if (b[i]!=0)   
-		printf("%d,",b[i]);
+		my_printf("%d,",b[i]);
 	}
-printf("%d",b[j]);
+my_printf("%d",b[j]);
 }
 

@@ -18,13 +18,13 @@ int main_bench()
 		}
 		else
 		{
-			printf("%d",num/13);
+			my_printf("%d",num/13);
 			f=num%13;
 			s=1;
 		}
 	}
 	if(s==0)
-		printf("0");
-	printf("\n%d\n",f);
+		my_printf("0");
+	my_printf("\n%d\n",f);
 	return 0;
 }

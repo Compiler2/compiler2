@@ -5,11 +5,11 @@ int main_bench()
 {
 	int i, j, n, t, flag;
 	char syx[21];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0; i<n; i++)
 	{
 		flag = 1;
-		scanf("%s", syx);
+		my_scanf("%s", syx);
 		t = strlen(syx);
 		for (j=0; j<t; j++)
 		{
@@ -27,9 +27,9 @@ int main_bench()
 			}
 		}
 		if (flag == 0)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 
 	return 0;

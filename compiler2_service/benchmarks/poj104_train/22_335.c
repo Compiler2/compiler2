@@ -6,7 +6,7 @@ int main_bench()
 	int b[400],n,m,i,j,k;
 	for(i=1;;i++)
 	{
-		scanf("%d%c",&b[i],&a[i]);
+		my_scanf("%d%c",&b[i],&a[i]);
 		if(a[i]!=',')break;
 	}
 	for(j=1;j<=i;j++)
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for(j=2;j<=i;j++)
 	{
-		if(b[j]<b[1]){printf("%d",b[j]);break;}
+		if(b[j]<b[1]){my_printf("%d",b[j]);break;}
 	}
-         if(j==i+1)printf("No");
+         if(j==i+1)my_printf("No");
 }

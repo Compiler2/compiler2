@@ -7,21 +7,21 @@ int main_bench()
 	float c,d;
 	int a,b;
    
-	scanf("%d",&n);
-	scanf("%d%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&a,&b);
 	c=(float)b/a;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 		d=(float)b/a;
-		if(d-c>0.05) printf("\nbetter");
-		else if (c-d>0.05) printf("\nworse");
-		else printf("\nsame");
+		if(d-c>0.05) my_printf("\nbetter");
+		else if (c-d>0.05) my_printf("\nworse");
+		else my_printf("\nsame");
 
     for (i=2;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		d=(float)b/a;
-		if(d-c>0.05) printf("\nbetter");
-		else if (c-d>0.05) printf("\nworse");
-		else printf("\nsame");
+		if(d-c>0.05) my_printf("\nbetter");
+		else if (c-d>0.05) my_printf("\nworse");
+		else my_printf("\nsame");
 
 		}
 

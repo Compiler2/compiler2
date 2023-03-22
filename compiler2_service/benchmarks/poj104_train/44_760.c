@@ -4,11 +4,11 @@ void reverse(int n)
 {
  int i,b=0;
  if(n==0)
-  printf("%d\n",n);
+  my_printf("%d\n",n);
  else
  {
 	 if(n<0)
-	 printf("-");
+	 my_printf("-");
 	 n=abs(n);
 	 if(n%10==0)
 	 {
@@ -22,7 +22,7 @@ void reverse(int n)
 		 b=b*10+n%10;
 		 n=n/10;
 	 }
-	 printf("%d\n",b);
+	 my_printf("%d\n",b);
  }
 }
 int main_bench()
@@ -31,7 +31,7 @@ int main_bench()
 	int n,j;
 	for(j=1;j<=6;j++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		reverse(n);
 	}
 	return 0;

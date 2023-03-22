@@ -4,7 +4,7 @@
 
 int main_bench(){
 	int n,sum1=0,sum2=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=1;i<=n;i++){
 		if(i%7==0)
 			sum1+=(i*i);
@@ -17,6 +17,6 @@ int main_bench(){
 	}
 	for(int i=1;i<=n;i++)
 		sum2+=i*i;
-	printf("%d\n",sum2-sum1);
+	my_printf("%d\n",sum2-sum1);
 	return 0;
 }

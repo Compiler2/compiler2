@@ -6,7 +6,7 @@ int main_bench()
 	
 	
 	int i,j,len1,len2,m=0,c,max;
-	scanf("%s %s",A,B);
+	my_scanf("%s %s",A,B);
 	len1=strlen(A);
 	len2=strlen(B);
 	max=(len1>len2)?len1:len2;
@@ -33,14 +33,14 @@ int main_bench()
 		p[i]=c+'0';
 		}
      if((len1==1)&&(A[0]=='0')&&(B[0]=='0'))
-		 printf("0\n");
+		 my_printf("0\n");
 	 else 
 		 for(i=0;;i++)
 			 if(p[i]!='0')
 		{
              for(j=i;j<=max;j++)
-			 printf("%c",p[j]);
-			 printf("\n");
+			 my_printf("%c",p[j]);
+			 my_printf("\n");
 		     break;
 		}
 			 return 0;

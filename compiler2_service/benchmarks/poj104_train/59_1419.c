@@ -6,18 +6,18 @@ int b[200][200] = {0};
 int main_bench() {
 	int n, m;
 	char tmp;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	getchar();
 	for (int i = 1; i <= n; ++i) {
 		for (int j = 1; j <= n; ++j) {
-			scanf("%c", &a[i][j]);
+			my_scanf("%c", &a[i][j]);
 			if (a[i][j] == '@')
 				b[i][j] = 1;
 
 		}
 		getchar();
 	}
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for (int k = 1; k < m; k++) {
 		for (int i = 1; i <= n; ++i) {
 			for (int j = 1; j <= n; ++j) {
@@ -48,5 +48,5 @@ int main_bench() {
 			if (a[i][j] == '@')
 				cnt++;
 	}
-	printf("%d", cnt);
+	my_printf("%d", cnt);
 }

@@ -9,7 +9,7 @@ int main_bench()
 	for(i=0;i<=lenth-2;i++)
 	{
 		if(str[i]==str[i+1])
-			printf("%c%c\n",str[i],str[i+1]);
+			my_printf("%c%c\n",str[i],str[i+1]);
 	}
 	for(l=3;l<=lenth;l++)
 	{
@@ -25,9 +25,9 @@ int main_bench()
 			{
 				for(j=0;j<=l-2;j++)
 				{
-					printf("%c",str[i+j]);
+					my_printf("%c",str[i+j]);
 				}
-				printf("%c\n",str[i+l-1]);
+				my_printf("%c\n",str[i+l-1]);
 			}
 		}
 	}

@@ -6,7 +6,7 @@ int array[100][100];
 int move(){
 	row++;
 	col--;
-	printf("%d\n",array[row][col]);
+	my_printf("%d\n",array[row][col]);
 	return 0;
 }
 int big_move(){
@@ -18,19 +18,19 @@ int big_move(){
 		row=row+col-COL+2;
 		col=COL-1;
 	}
-	printf("%d\n",array[row][col]);
+	my_printf("%d\n",array[row][col]);
 	return 0;
 }
 int main_bench(){
-	scanf("%d%d",&ROW,&COL);
+	my_scanf("%d%d",&ROW,&COL);
 	int r,c;
 	for(r=0;r<ROW;r++){
 		for(c=0;c<COL;c++){
-			scanf("%d",&array[r][c]);
+			my_scanf("%d",&array[r][c]);
 		}
 	}
 	if (ROW==1&&COL==1){
-		printf("%d",array[0][0]);
+		my_printf("%d",array[0][0]);
 		return 0;
 	}
 	while(row!=ROW-1||col!=COL-1){

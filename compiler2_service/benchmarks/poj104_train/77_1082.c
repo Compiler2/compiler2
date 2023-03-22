@@ -6,7 +6,7 @@ int main_bench()
 	char s[100],*p;
 	int a[100],i,n,*q;
 
-	scanf("%s",s);
+	my_scanf("%s",s);
 	p=s;
 	n=strlen(s);
 	for(i=0;s[i];i++)
@@ -25,7 +25,7 @@ void print(char *x,int *y,int z)
 		{
 	    	if(*(x+i)!=*(x+i+1))break;
 		}
-		printf("%d %d\n",*(y+i)-1,*(y+i+1)-1);
+		my_printf("%d %d\n",*(y+i)-1,*(y+i+1)-1);
 		
 		for(j=i+2;*(x+j);j++)
 		{

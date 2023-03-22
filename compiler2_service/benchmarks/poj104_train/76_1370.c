@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,sz[50000],d[50000],a[50000],b[50000],t=0,s=0,max,min;
     double k;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int e, i;
     for (i=0; i<n; i++){
-	    scanf("%d%d", &(sz[i]),&(d[i]));
+	    my_scanf("%d%d", &(sz[i]),&(d[i]));
         a[i]=sz[i];
         b[i]=d[i];
     }
@@ -38,8 +38,8 @@ int main_bench()
          }
          if(t>0){s++;}
     }
-   if(s==max-min){printf("%d %d",min,max);}
-      else{printf("no");}
+   if(s==max-min){my_printf("%d %d",min,max);}
+      else{my_printf("no");}
    return 0;
 }
 

@@ -3,20 +3,20 @@
 int main_bench(){
 	int n,i,x,y,a,b;
 	double p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		if(i==0){
-			scanf("%d%d",&x,&y);
+			my_scanf("%d%d",&x,&y);
 			p=1.0*y/x;
 		}else{
-			scanf("%d%d",&a,&b);
+			my_scanf("%d%d",&a,&b);
 			q=1.0*b/a;
 			if(q-p>0.05){
-				printf("better\n");
+				my_printf("better\n");
 			}else if(p-q>0.05){
-				printf("worse\n");
+				my_printf("worse\n");
 			}else{
-				printf("same\n");
+				my_printf("same\n");
 			}
 		}
 	}

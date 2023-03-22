@@ -6,15 +6,15 @@ int main_bench()
 	int n,i,max,secondmax;
 	int num[100];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
-	scanf("%d",&num[0]);
+	my_scanf("%d",&num[0]);
 	max=num[0];
 	secondmax=num[0];
 
 	for(i=1;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 
 		if(num[i]>max)
 			max=num[i];
@@ -22,5 +22,5 @@ int main_bench()
 			secondmax=num[i];
 	}
 
-	printf("%d\n%d\n",max,secondmax);
+	my_printf("%d\n%d\n",max,secondmax);
 }

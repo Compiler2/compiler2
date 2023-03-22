@@ -3,9 +3,9 @@
 int main_bench(){ 
    int n,i;
    int  qs[100],zz[100];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-  scanf("%d %d",&(qs[i]),&(zz[i]));
+  my_scanf("%d %d",&(qs[i]),&(zz[i]));
   }
    int e;
    for(int k=1;k<=n;k++){
@@ -34,11 +34,11 @@ int main_bench(){
             }
       }
         if(i==n){
-           printf("no");
+           my_printf("no");
            return 0;
          }
     }
-printf("%d %d",qs[0],zz[n-1]);
+my_printf("%d %d",qs[0],zz[n-1]);
 return 0;
 }
 

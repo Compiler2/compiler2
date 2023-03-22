@@ -5,7 +5,7 @@ char a[1000]={' '},b[1000]={' '};
 
 int main_bench()
 {
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int len;
 	int wall,curr;
 	len=strlen(a);
@@ -26,7 +26,7 @@ int main_bench()
 			}
 		}
 	}
-	if(strcmp(a,b)==0)printf("YES");
-	else printf("NO");
+	if(strcmp(a,b)==0)my_printf("YES");
+	else my_printf("NO");
 	return 0;
 }

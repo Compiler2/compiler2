@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char str[256],sub[256],re[256];
-	scanf("%s%s%s",str,sub,re);
+	my_scanf("%s%s%s",str,sub,re);
 	int l1,l2;
 	l1=strlen(str);
 	l2=strlen(sub);
@@ -27,6 +27,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%s\n",str);
+	my_printf("%s\n",str);
 	return 0;
 }

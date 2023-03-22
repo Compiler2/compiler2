@@ -5,7 +5,7 @@ int main_bench()
 {
     int t,n,a,b,c,d,e,i,j,k,l,m;
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     t=n;
     j=t/10000;
     if(j!=0)
@@ -43,7 +43,7 @@ int main_bench()
     }
 
     if(n==0)
-      printf("%d",0);
+      my_printf("%d",0);
     else
     {
       a=n/10000;
@@ -59,15 +59,15 @@ int main_bench()
     
     
     if(i==5) 
-      printf("%d%d%d%d%d",e,d,c,b,a);
+      my_printf("%d%d%d%d%d",e,d,c,b,a);
     if(i==4)
-      printf("%d%d%d%d",e,d,c,b);
+      my_printf("%d%d%d%d",e,d,c,b);
     if(i==3)
-      printf("%d%d%d",e,d,c);
+      my_printf("%d%d%d",e,d,c);
     if(i==2)
-      printf("%d%d",e,d);
+      my_printf("%d%d",e,d);
     if(i==1)
-      printf("%d",e);
+      my_printf("%d",e);
     }
     return 0;
 }

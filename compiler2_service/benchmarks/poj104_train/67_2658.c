@@ -5,19 +5,19 @@ double limit = 0.05;
 int n;
 int main_bench()
 {
-	scanf("%d",&n);
-	scanf("%lf%lf",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%lf%lf",&a,&b);
 	double t = b / a;
 
 	
 	for(int i = 1;i < n;i ++){
-		scanf("%lf%lf",&c,&d);
+		my_scanf("%lf%lf",&c,&d);
 		double t1 = d / c;
 	
 	
-		if(t1 - t > limit) printf("better\n");
-		else if(t - t1 > limit) printf("worse\n");
-		else printf("same\n");
+		if(t1 - t > limit) my_printf("better\n");
+		else if(t - t1 > limit) my_printf("worse\n");
+		else my_printf("same\n");
 	}
 	return 0;
 }

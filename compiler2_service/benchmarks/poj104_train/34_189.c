@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	void print1(int n);
 	void print2(int n);
 	int printf1(int n);
 	int printf2(int n);
-	if(n==1)printf("End\n");
+	if(n==1)my_printf("End\n");
 	else
 	{
 		int i;
@@ -25,7 +25,7 @@ int main_bench()
 				n=printf2(n);
 			}
 		}
-		printf("End\n");
+		my_printf("End\n");
 	}
 }
 int printf1(int n)
@@ -36,7 +36,7 @@ int printf1(int n)
 }
 void print1(int n)
 {
-	printf("%d/2=%d\n",n,n/2);
+	my_printf("%d/2=%d\n",n,n/2);
 }
 int printf2(int n)
 {
@@ -46,7 +46,7 @@ int printf2(int n)
 }
 void print2(int n)
 {
-	printf("%d*3+1=%d\n",n,n*3+1);
+	my_printf("%d*3+1=%d\n",n,n*3+1);
 }
 
 	

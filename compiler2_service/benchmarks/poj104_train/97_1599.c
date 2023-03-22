@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,hun,fif,twe,ten,fiv,one;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     hun=n/100;
     fif=(n-hun*100)/50;
     twe=(n-hun*100-fif*50)/20;
@@ -14,7 +14,7 @@ int main_bench()
     int i;
     for(i=0;i<6;i++)
     {
-        printf("%d\n",sz[i]);
+        my_printf("%d\n",sz[i]);
     }
     return 0;
 }

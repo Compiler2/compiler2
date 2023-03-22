@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n[1000][1000],num,i,j,p[200],k=0;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	for(i=0;i<num;i++)
 	{
-		for(j=0;j<num;j++) scanf("%d",&n[i][j]);
+		for(j=0;j<num;j++) my_scanf("%d",&n[i][j]);
 	}
 	int w=0;
 	for(i=0;i<(num-1);i++)
@@ -25,7 +25,7 @@ int main_bench()
 	{
 		k=k+(p[i+1]-p[i]-1);
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 }
 
 

@@ -8,12 +8,12 @@ int main_bench()
 {
 	char str[256],substr[256],rpl[256];
 	int start;
-	scanf("%s %s %s",str,substr,rpl);
+	my_scanf("%s %s %s",str,substr,rpl);
 	start=strstr(str,substr);
 	if(start)
 		replace(str,strlen(substr),(char *)start-str,rpl);
           else
-               printf("%s\n",str);
+               my_printf("%s\n",str);
 	return 0;
 }
 
@@ -55,5 +55,5 @@ void replace(char *str,int len_ss,int start,char *rpl)
 		*ptmp++=*pstr++;
 	*ptmp=0;
          strcpy(str,temp);
-	printf("%s\n",temp);
+	my_printf("%s\n",temp);
 }

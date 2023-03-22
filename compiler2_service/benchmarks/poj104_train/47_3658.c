@@ -3,20 +3,20 @@
 int main_bench()
 {
 	int n,i,*p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(int *)malloc(n*sizeof(int));
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",p);
+		my_scanf("%d",p);
 		p++;
 	}
 	p--;
 	for(;i>0;i--,p--)
 	{
 		if(i==n)
-			printf("%d",*p);
+			my_printf("%d",*p);
 		else
-			printf(" %d",*p);
+			my_printf(" %d",*p);
 	}
 	return 0;
 }

@@ -24,7 +24,7 @@ int main_bench()
                          }
                      f(c,b,i,0);
                      if(strcmp(c,b)==0)
-                     printf("%s\n",c);
+                     my_printf("%s\n",c);
                      else continue;
                 }
         }

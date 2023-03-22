@@ -8,8 +8,8 @@ int main_bench()
 	i=0;
 	do
 	{
-		scanf("%d",&num[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&num[i]);
+		my_scanf("%c",&c);
 		i++;
 	} while (c==',');
 	max1=num[0];
@@ -28,6 +28,6 @@ int main_bench()
 			max2=num[j];
 		}
 	}
-	if (max2==0) printf("No");
-	else printf("%d",max2);
+	if (max2==0) my_printf("No");
+	else my_printf("%d",max2);
 }

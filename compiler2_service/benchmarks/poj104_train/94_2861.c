@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int m[500],j[500],i=0,n,e,v=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
-		scanf("%d", &m[i]);
+		my_scanf("%d", &m[i]);
 		if(m[i]%2!=0){
 			j[v]=m[i];
 			v=v+1;
@@ -21,8 +21,8 @@ int main_bench()
 		}
 	}
 	for(int u=0;u<v-1;u++){
-	printf("%d,", j[u]);
+	my_printf("%d,", j[u]);
 	}
-	printf("%d", j[v-1]);
+	my_printf("%d", j[v-1]);
 	return 0;
 }

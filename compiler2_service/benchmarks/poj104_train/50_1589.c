@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,i,j,total=0;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 		total=0;
 		for(j=0;j<i;j++){
@@ -22,7 +22,7 @@ int main_bench()
 		}	
 		total+=13;	
 		if((w+total%7-1)%7==5){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 		else
 			continue;

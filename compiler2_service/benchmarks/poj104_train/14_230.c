@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n,i,j,k,h,b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct sb
     {
          int ID;
@@ -13,7 +13,7 @@ int main_bench()
     }a[n];
     for(i=0;i<n;i++)
     {
-         scanf("%d%d%d",&a[i].ID,&a[i].m,&a[i].c);
+         my_scanf("%d%d%d",&a[i].ID,&a[i].m,&a[i].c);
          a[i].sum=a[i].m+a[i].c;
     }
     for(i=0,b=0;i<n;i++)
@@ -24,7 +24,7 @@ int main_bench()
              h=i;
          }
     }
-    printf("%d %d\n",a[h].ID,a[h].sum);
+    my_printf("%d %d\n",a[h].ID,a[h].sum);
     a[h].sum=-1;
     for(i=0,b=0;i<n;i++)
     {
@@ -34,7 +34,7 @@ int main_bench()
              h=i;
          }
     }
-    printf("%d %d\n",a[h].ID,a[h].sum);
+    my_printf("%d %d\n",a[h].ID,a[h].sum);
     a[h].sum=-1;
     for(i=0,b=0;i<n;i++)
     {
@@ -44,7 +44,7 @@ int main_bench()
              h=i;
          }
     }
-    printf("%d %d\n",a[h].ID,a[h].sum);
+    my_printf("%d %d\n",a[h].ID,a[h].sum);
     getchar();
     getchar();
 }

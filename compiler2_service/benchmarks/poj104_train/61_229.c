@@ -25,18 +25,18 @@ int main_bench()
 {
 int number;
 int finput,i;
-scanf("%d\n",&number);
+my_scanf("%d\n",&number);
 for(i=0;i<number;i++)
 {
-scanf("%d\n",&finput);
+my_scanf("%d\n",&finput);
 
 if(i!=number-1)
 {
-printf("%d\n",fib(finput));
+my_printf("%d\n",fib(finput));
 }
 else
 {
-printf("%d",fib(finput));
+my_printf("%d",fib(finput));
 }
 
 }

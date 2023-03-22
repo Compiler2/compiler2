@@ -32,9 +32,9 @@ int main_bench()
 		
 	}
 	if (max1==min || max2<0)
-		printf("No\n");
+		my_printf("No\n");
 	else
-		printf("%d\n",max2);
+		my_printf("%d\n",max2);
 	
 }
 

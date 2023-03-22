@@ -13,13 +13,13 @@ int main_bench()
 		if((*(p+i)>=48)&&(*(p+i)<=57))
 		{
 			st=1;
-		    printf("%c",*(p+i));
+		    my_printf("%c",*(p+i));
 		}
 		else
 		{
 			if(st==1)
 			{
-				printf("\n");
+				my_printf("\n");
 				st=0;
 			}
 			else

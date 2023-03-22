@@ -4,8 +4,8 @@ int god(int y,int m,int d);
 int main_bench()
 {
 	int year1,month1,day1,year2,month2,day2;
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
-		printf("%d",god(year2,month2,day2)-god(year1,month1,day1));
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+		my_printf("%d",god(year2,month2,day2)-god(year1,month1,day1));
 				
 	getchar();
 	return 0;

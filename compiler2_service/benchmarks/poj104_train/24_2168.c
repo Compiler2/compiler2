@@ -28,5 +28,5 @@ int main_bench()
 		if(b[d]<b[q])
 			q=d;
 	}
-	printf("%s\n%s\n",a[p],a[q]);
+	my_printf("%s\n%s\n",a[p],a[q]);
 }

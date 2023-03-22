@@ -5,9 +5,9 @@ int main_bench()
     int n,i,j,k,max;
     char name[2000][30],alp[27]={"ABCDEFGHIJKLMNOPQRSTUVWXYZ"};
     int No[2000],num[30]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %s",&No[i],name[i]);       
+        my_scanf("%d %s",&No[i],name[i]);       
     }
     for(i=0;i<26;i++){               
         for(k=0;k<n;k++){
@@ -27,11 +27,11 @@ int main_bench()
     }
     for(i=0;i<26;i++){ 
         if(num[i]==max){
-            printf("%c\n%d\n",alp[i],max);
+            my_printf("%c\n%d\n",alp[i],max);
             for(k=0;k<n;k++){
                 for(j=0;j<27;j++){
                     if(name[k][j]==alp[i]){
-                        printf("%d\n",No[k]);
+                        my_printf("%d\n",No[k]);
                         break;
                     }
                 }

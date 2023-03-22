@@ -8,10 +8,10 @@ int main_bench()
 		char writer[20];
 	}bk[1000];
 	int n,i,j,m,max,k,maxw=0,flag=0,a[26]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&bk[i].book,bk[i].writer);
+		my_scanf("%d %s",&bk[i].book,bk[i].writer);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -31,14 +31,14 @@ int main_bench()
 			maxw=i;
 		}
 	}
-	printf("%c\n%d\n",maxw+65,max);
+	my_printf("%c\n%d\n",maxw+65,max);
 	for(i=0;i<n;i++)
 	{
 		m=strlen(bk[i].writer);
 		for(j=0;j<m;j++)
 		{
 			if(maxw+65==bk[i].writer[j])
-				printf("%d\n",bk[i].book);
+				my_printf("%d\n",bk[i].book);
 
 		}
 	}

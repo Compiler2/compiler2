@@ -2,10 +2,10 @@
 
 int main_bench(){
 	double rate;
-	scanf("%lf",&rate);
+	my_scanf("%lf",&rate);
 	char DNA[2][501];
-	scanf("%s",DNA[0]);
-	scanf("%s",DNA[1]);
+	my_scanf("%s",DNA[0]);
+	my_scanf("%s",DNA[1]);
 	int t;
 	int i,j;
 	int number=0;
@@ -14,7 +14,7 @@ int main_bench(){
 	w=strlen(DNA[1]);
 	if (t!=w)
 	{
-		printf("error");
+		my_printf("error");
 		
 		return 0;
 	}
@@ -22,13 +22,13 @@ int main_bench(){
 	{
 		if (DNA[0][i]!='A'&&DNA[0][i]!='T'&&DNA[0][i]!='C'&&DNA[0][i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 			
 			return 0;
 		}
 		if (DNA[1][i]!='A'&&DNA[1][i]!='T'&&DNA[1][i]!='C'&&DNA[1][i]!='G')
 		{
-			printf("error");
+			my_printf("error");
 			
 			return 0;
 		}
@@ -42,11 +42,11 @@ int main_bench(){
 	r=1.00*number/t;
 	if (r>=rate)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 
 

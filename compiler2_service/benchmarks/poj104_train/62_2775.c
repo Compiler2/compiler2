@@ -19,6 +19,6 @@ int main_bench(){
 
 	}
     
-printf("%s",w);
+my_printf("%s",w);
 	return 0;
 }

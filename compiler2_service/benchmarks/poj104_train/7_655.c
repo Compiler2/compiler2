@@ -16,7 +16,7 @@ int main_bench()
 		{
             for(int w=0;w<bl;w++)
 			{
-				printf("%c",b[w]);
+				my_printf("%c",b[w]);
 			}
             i+=al-1;
 			x=1;
@@ -26,7 +26,7 @@ int main_bench()
         else
 		{
 			
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 			    
 		}
 	}

@@ -18,7 +18,7 @@ num[j]++;
 }
 }
 for(l=1;l<j;l++)
-printf("%d,",num[l]);
-printf("%d",num[j]);
+my_printf("%d,",num[l]);
+my_printf("%d",num[j]);
 
 }

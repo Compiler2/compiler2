@@ -21,9 +21,9 @@ int main_bench()
 			{
 				for(;p5<=p6;p5++)
 				{
-					printf("%c",*p5);
+					my_printf("%c",*p5);
 				}
-				printf("\n");
+				my_printf("\n");
 			}
 			
 		}

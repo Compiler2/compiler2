@@ -7,9 +7,9 @@ int main_bench()
 	int i,j;
 	int q,k;
 	int d[300];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	d[0]=x[0];
 	k=1;
 	for(i=0;i<n;i++)
@@ -29,8 +29,8 @@ int main_bench()
 	for(i=0;i<k;i++)
 	{
 		if(i!=0)
-			printf(",");
-		printf("%d",d[i]);
+			my_printf(",");
+		my_printf("%d",d[i]);
 	}
 	return 0;
 }

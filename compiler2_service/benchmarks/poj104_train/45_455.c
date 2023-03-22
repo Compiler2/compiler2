@@ -7,8 +7,8 @@ int main_bench()
   	int i,d,j;
 p1=str1;
  p2=str2;
-	scanf("%s ", p1);
-	scanf("%s", p2);
+	my_scanf("%s ", p1);
+	my_scanf("%s", p2);
  
   for (i=0; *(p2+i)!=0;i++)
 	{
@@ -31,7 +31,7 @@ p1=str1;
 
  	 
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 }
 
 

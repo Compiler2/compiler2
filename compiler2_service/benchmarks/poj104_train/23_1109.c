@@ -15,10 +15,10 @@ int main_bench()
       {
       len=flag-i;
       for(j=i+1;j<flag;j++)
-      printf("%c",s[j]);
-      printf(" ");
+      my_printf("%c",s[j]);
+      my_printf(" ");
       flag=i;
       }
     for(j=0;j<flag;j++)
-    printf("%c",s[j]);
+    my_printf("%c",s[j]);
 }

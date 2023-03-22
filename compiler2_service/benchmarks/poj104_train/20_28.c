@@ -9,7 +9,7 @@ int main_bench()
 	do
 	{
     strcpy(strw,str);
-	scanf("%s %s",str,substr);
+	my_scanf("%s %s",str,substr);
 	length=strlen(str);
 	if(strcmp(strw,str)==0) break;
 
@@ -21,8 +21,8 @@ int main_bench()
 	for(i=0;i<length-k;i++)
 		strs[k+3+i]=str[k+i];
 	for(i=0;i<length+2;i++)
-		printf("%c",strs[i]);
-	printf("%c\n",strs[length+2]);
+		my_printf("%c",strs[i]);
+	my_printf("%c\n",strs[length+2]);
 	}while(strlen(str)<11);
 	
 	

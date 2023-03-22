@@ -33,9 +33,9 @@ int main_bench()
 	for(i=0;i<=k;i++)
 	{
 		if(i==0)
-			printf("%s",c[i]);
+			my_printf("%s",c[i]);
 		else 
-			printf(" %s",c[i]);
+			my_printf(" %s",c[i]);
 	}
 	return 0;
 }

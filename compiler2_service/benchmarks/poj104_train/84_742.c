@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n;
 	int s,t,r;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++)
 	{	
 		int NUMBER;
-		scanf("%d",&NUMBER);
+		my_scanf("%d",&NUMBER);
 		switch(i)
 		{
 		case 0:
@@ -42,6 +42,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d\n%d\n",s,t);
+	my_printf("%d\n%d\n",s,t);
 	return 0;
 }

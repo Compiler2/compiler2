@@ -4,7 +4,7 @@ int main_bench()
 {
 	void print(int n);
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	print(n);
 	return 0;
 }
@@ -12,10 +12,10 @@ int main_bench()
 void print(int n)
 {
 	if(n<10)
-		printf("%d",n);
+		my_printf("%d",n);
 	else
 	{
-		printf("%d",n%10);
+		my_printf("%d",n%10);
 		print(n/10);
 	}
 }

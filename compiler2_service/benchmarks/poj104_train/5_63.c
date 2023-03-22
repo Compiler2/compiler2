@@ -5,15 +5,15 @@ int main_bench(){
 	int sum=0;
 	double m;
 	double s;
-	scanf("%lf",&m);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&m);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int x,y;
 	x=strlen(a),y=strlen(b);
 	a[x]='\0';
 	b[y]='\0';
 	if(x!=y){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	int i;
@@ -31,7 +31,7 @@ int main_bench(){
 			c[i]='G';
 		}
 		else{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -42,10 +42,10 @@ int main_bench(){
 	}
 	s=1.0*sum/x;
 	if(s>=m){
-		printf("yes");
+		my_printf("yes");
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

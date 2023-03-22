@@ -6,11 +6,11 @@ int main_bench()
     int f(int n);
 
     for(i=1;i<=6;i++){
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if (n>0) flag=1;
     else {flag=-1;n=-n;}
     n1=f(n);
-    printf("%d\n",flag*n1);
+    my_printf("%d\n",flag*n1);
     }
 }
 int f(int n)

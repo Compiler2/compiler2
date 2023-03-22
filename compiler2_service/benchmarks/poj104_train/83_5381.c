@@ -3,14 +3,14 @@
 int main_bench(){
     int n,i,XF;
     double GPA;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int xf[n],cj[n];
     double gp[n],gpa;
     for(i=0;i<n;i++){
-        scanf("%d",&xf[i]);
+        my_scanf("%d",&xf[i]);
     }
     for(i=0;i<n;i++){
-        scanf("%d",&cj[i]);
+        my_scanf("%d",&cj[i]);
     }
     for(i=0;i<n;i++){
         if(cj[i]>89){gp[i]=4.0;
@@ -42,7 +42,7 @@ int main_bench(){
         XF=XF+xf[i];
     }
     GPA=gpa/XF;
-    printf("%.2lf",GPA);
+    my_printf("%.2lf",GPA);
     return 0;
 }
 

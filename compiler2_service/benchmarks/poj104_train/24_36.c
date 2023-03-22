@@ -34,8 +34,8 @@ int main_bench()
 		min=strlen(a)-c-1;
 		n=&a[strlen(a)-1];
 	}
-	for (j=0;j<max;j++) printf("%c",*(m-max+1+j));
-	printf("\n");
-	for (j=0;j<min;j++) printf("%c",*(n-min+1+j));
+	for (j=0;j<max;j++) my_printf("%c",*(m-max+1+j));
+	my_printf("\n");
+	for (j=0;j<min;j++) my_printf("%c",*(n-min+1+j));
 	return 0;
 }

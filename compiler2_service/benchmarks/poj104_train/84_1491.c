@@ -4,9 +4,9 @@ int main_bench()
 {
 	int max1,max2,n,num;
 	int i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(i==1){
                    max1=num;
 		   }
@@ -35,7 +35,7 @@ int main_bench()
 			}
 		i++;
 	}
-	printf("%d\n",max1);
-	printf("%d\n",max2);
+	my_printf("%d\n",max1);
+	my_printf("%d\n",max2);
 return 0;
 }

@@ -13,9 +13,9 @@
 	if(str2[i]>=97&&str2[i]<=122)
 			str2[i]=str2[i]-32;
     if(strcmp(str1,str2)<0)
-	printf("<");
+	my_printf("<");
 	if(strcmp(str1,str2)>0)
-		printf(">");
+		my_printf(">");
 	if(strcmp(str1,str2)==0)
-		  printf("=");
+		  my_printf("=");
  }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,a,i,b,c,max1,max2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	i=1;
-    scanf("%d",&a);
-    scanf("%d",&b);
+    my_scanf("%d",&a);
+    my_scanf("%d",&b);
 	if(a<b)
 	{
 		max1=b;
@@ -20,7 +20,7 @@ int main_bench()
 
 	while(i<=(n-2))
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(c>=max2&&c<max1)
 		{
 			max2=c;
@@ -38,7 +38,7 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%d\n",max1);
-	printf("%d",max2);
+	my_printf("%d\n",max1);
+	my_printf("%d",max2);
 }
 

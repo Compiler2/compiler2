@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	double a,b,c,m;
-	scanf("%lf%lf",&a,&b);
+	my_scanf("%lf%lf",&a,&b);
 	c=b/a;
 	struct d{
 		double e;
@@ -14,7 +14,7 @@ int main_bench()
 	}d[100];
 	for(int i=0;i<n-1;i++)
 	{
-		scanf("%lf%lf",&d[i].e,&d[i].f);
+		my_scanf("%lf%lf",&d[i].e,&d[i].f);
 	}
 	for(int k=0;k<n-1;k++)
 	{
@@ -22,15 +22,15 @@ int main_bench()
 		m=c-d[k].g;
 		if(m>0.05)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		if(m<(-0.05))
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		if(m<=0.05&&m>=-0.05)
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

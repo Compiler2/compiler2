@@ -6,13 +6,13 @@ int main_bench()
 	int room[102][102];
 	char ch;
 	int i,j,k;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i = 1; i <= n; i++)
 	{
 		getchar();
 		for (j = 1; j <= n; j++)
 		{
-			scanf("%c", &ch);
+			my_scanf("%c", &ch);
 			if (ch == '#')
 				room[i][j] = -1;
 			else if (ch == '.')
@@ -24,7 +24,7 @@ int main_bench()
 	int nn = n+1;
 	for (i = 0; i <= nn; i++)
 		room[i][0] = room[0][i] = room[i][nn] = room[nn][i] = -1;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for (k = 1; k < m; k++)
 		for (i = 1; i <= n; i++)
 			for (j = 1; j <= n; j ++)
@@ -43,6 +43,6 @@ int main_bench()
 		for (j = 1; j <= n; j++)
 			if (room[i][j] > 0)
 				sum++;
-	printf("%d\n", sum);
+	my_printf("%d\n", sum);
 	return 0;
 }

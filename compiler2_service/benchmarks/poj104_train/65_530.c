@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[1000],b[1000];
 	int n,i,z=0,x=0;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for(i=0;i<=n-1;i=i+1){
-		scanf ("%d%d",&a[i],&b[i]);
+		my_scanf ("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<=n-1;i=i+1){
        if(a[i]==0&&b[i]==1)
@@ -26,10 +26,10 @@ int main_bench()
 	       x=x+0;
 	}
 	if(z>x)
-		printf("A");
+		my_printf("A");
 	if(z<x)
-		printf("B");
+		my_printf("B");
 	if(z==x)
-		printf("Tie");
+		my_printf("Tie");
 	return 0;
 }

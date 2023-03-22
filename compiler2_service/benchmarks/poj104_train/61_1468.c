@@ -5,13 +5,13 @@ int f(int n);
 
 int main_bench(){
   int a[10000],s[10000],x,k;
-  scanf("%d",&k);
+  my_scanf("%d",&k);
   for(x=0;x<k;x++){
-     scanf("%d",&a[x]);
+     my_scanf("%d",&a[x]);
   
      s[x]=f(a[x]);
   
-     printf("%d\n",s[x]);
+     my_printf("%d\n",s[x]);
   }
   
 return 0;

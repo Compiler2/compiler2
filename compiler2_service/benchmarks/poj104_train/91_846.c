@@ -13,5 +13,5 @@ int main_bench()
 		*(p1+i)=(char)((int)*(p+i)+(int)*(p+i+1));
 	*(p1+len-1)=(char)((int)*(p+len-1)+(int)*(p+0));
 	for(i=0;i<len;i++)
-		printf("%c",*(p1+i));
+		my_printf("%c",*(p1+i));
 }

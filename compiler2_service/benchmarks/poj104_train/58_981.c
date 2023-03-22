@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i,k,j,m,o;
     char s[82];
     getchar();
@@ -14,7 +14,7 @@ int main_bench()
     {
                  if(s[j]=='\0')
                  {
-                               printf("1\n");
+                               my_printf("1\n");
                                break;
                  }
                  if(j==0)
@@ -28,7 +28,7 @@ int main_bench()
                          }
                          if(k==26)
                          {
-                                                             printf("0\n");                                                                                     
+                                                             my_printf("0\n");                                                                                     
                                                              break;
                          }
                  }
@@ -43,7 +43,7 @@ int main_bench()
                                           }
                          if(k==26)
                          {
-                                    printf("0\n");
+                                    my_printf("0\n");
                                     break;
                          }
                  }

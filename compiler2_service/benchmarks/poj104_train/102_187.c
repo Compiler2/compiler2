@@ -21,10 +21,10 @@ int main_bench()
 	int f=0,m=0;
 	char sex[10];
 	double height;
-	scanf("%d",&nCase);
+	my_scanf("%d",&nCase);
 	for(i=0;i<nCase;i++)
 	{
-		scanf("%s %lf",sex,&height);
+		my_scanf("%s %lf",sex,&height);
 		if(sex[0]=='m')
 		{
 			male[m]=height;
@@ -43,9 +43,9 @@ int main_bench()
 
 
 	for(i=0;i<m;i++)
-		printf("%.2f ",male[i]);
+		my_printf("%.2f ",male[i]);
 	for(i=f-1;i>0;i--)
-		printf("%.2f ",female[i]);
-	printf("%.2f\n",female[0]);
+		my_printf("%.2f ",female[i]);
+	my_printf("%.2f\n",female[0]);
 	return 0;
 }

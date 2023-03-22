@@ -9,7 +9,7 @@ int r(int x)
 
 main_bench()
 {   int m,y,i,j,d,s,t;
-    scanf("%d %d %d",&m,&y,&d);
+    my_scanf("%d %d %d",&m,&y,&d);
     int a[13];
     a[1]=31;a[3]=31;a[4]=30;a[5]=31;a[6]=30;a[7]=31;a[8]=31;a[9]=30;a[10]=31;a[11]=30;a[12]=31;
                     
@@ -22,7 +22,7 @@ main_bench()
       
        s=s+d;
       
-       printf("%d",s);
+       my_printf("%d",s);
        
 
   getchar();

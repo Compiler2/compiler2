@@ -14,10 +14,10 @@ int main_bench()
                                                      }
                         else{
                              if(k>0&&input[i-1]>=48&&input[i-1]<=57)
-                             {printf("%d\n",output);
+                             {my_printf("%d\n",output);
                              output=0;}
                              }
                         }
-    if(output!=0){printf("%d", output);}
+    if(output!=0){my_printf("%d", output);}
     return 0;
 }

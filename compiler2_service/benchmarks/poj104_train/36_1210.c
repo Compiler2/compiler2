@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char z[2][200];
-	scanf("%s %s",z[0],z[1]);
+	my_scanf("%s %s",z[0],z[1]);
 	int i=0,j=0;
 	char e;
 	int n=strlen(z[0]);
@@ -34,11 +34,11 @@ int main_bench()
 	}
 	if(strcmp(z[1],z[0])==0)
 	{
-		printf("YES");
+		my_printf("YES");
 	}
 	else
 	{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

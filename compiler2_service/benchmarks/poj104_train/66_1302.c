@@ -3,7 +3,7 @@
 int main_bench(){
 	int year,month,date;
 	int i,n=0,xq;
-	scanf("%d%d%d",&year,&month,&date);
+	my_scanf("%d%d%d",&year,&month,&date);
     year=year%400;
 	if(year==0){
 		year=400;
@@ -32,13 +32,13 @@ int main_bench(){
 	n+=date;
 	xq=n%7;
 	switch(xq){
-	    case 0:printf("Sun.");break;
-        case 1:printf("Mon.");break;
-        case 2:printf("Tue.");break;
-        case 3:printf("Wed.");break;
-        case 4:printf("Thu.");break;
-        case 5:printf("Fri.");break;
-        case 6:printf("Sat.");break;
+	    case 0:my_printf("Sun.");break;
+        case 1:my_printf("Mon.");break;
+        case 2:my_printf("Tue.");break;
+        case 3:my_printf("Wed.");break;
+        case 4:my_printf("Thu.");break;
+        case 5:my_printf("Fri.");break;
+        case 6:my_printf("Sat.");break;
 	}
 	return 0;
 }

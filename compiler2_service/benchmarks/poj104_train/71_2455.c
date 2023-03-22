@@ -7,17 +7,17 @@ int main_bench()
 	int i,j,k;
 	int n,m;
 	int a,b,c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int day[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	while(n--)
 	{
 		m=0;
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		if(a%4==0&&(a%100)!=0||a%400==0)
 		{
 			if(b==1&&c==2||b==2&&c==1)
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				continue;
 			}
 			else if(c<=2&&b>2||c>2&&b<=2)
@@ -27,18 +27,18 @@ int main_bench()
 				    m++;
 				if(m%7==0)
 				{
-					 printf("YES\n");
+					 my_printf("YES\n");
 					 continue;
 				}
 				else
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 					continue;
 				}
 			}
 			else if(c==b)
 		{
-				printf("NO\n");
+				my_printf("NO\n");
 					continue;
 		}
 			else
@@ -47,12 +47,12 @@ int main_bench()
 				    m+=day[i];
 				if(m%7==0)
 				{
-					 printf("YES\n");
+					 my_printf("YES\n");
 					 continue;
 				}
 				else
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 					continue;
 				}
 			}
@@ -63,18 +63,18 @@ int main_bench()
 				    m+=day[i];
 				if(m%7==0)
 				{
-					 printf("YES\n");
+					 my_printf("YES\n");
 					 continue;
 				}
 				else
 				{
-					printf("NO\n");
+					my_printf("NO\n");
 					continue;
 				}
 		}
 		else if(c==b)
 		{
-				printf("NO\n");
+				my_printf("NO\n");
 					continue;
 		}
 	}

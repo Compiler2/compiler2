@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s[100],w[100],fangzhi[100];
 	int ls,lw,i,j;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	ls=strlen(s);
 	lw=strlen(w);
 	for(i=0;i<lw;i++)
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		if(strcmp(fangzhi,s)==0)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 	}

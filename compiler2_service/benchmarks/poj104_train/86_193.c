@@ -4,14 +4,14 @@ int main_bench()
 { 
 int n,i,k,m,a[100],temp=0;
 int flag=0; 
-scanf("%d",&n); 
+my_scanf("%d",&n); 
 for(i=0;i<n;i++) 
 { flag=0;
-scanf("%d",&m); 
+my_scanf("%d",&m); 
 if(m==0) temp=60; 
 for(k=1;k<=m;k++) 
 { 
-scanf("%d",&a[k]); 
+my_scanf("%d",&a[k]); 
 
 if(flag==0 && a[k]+3*k>=63) 
 { 
@@ -35,7 +35,7 @@ temp=60-3*m;
 } 
 } 
 
-printf("%d\n",temp); 
+my_printf("%d\n",temp); 
 } 
 return 0; 
 }  

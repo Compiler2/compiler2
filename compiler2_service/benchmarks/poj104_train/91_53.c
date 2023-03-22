@@ -16,6 +16,6 @@ int main_bench()
 	*family='\0';
 	family=sz2;
 	if(*family!='\0')
-		printf("%s",family);
+		my_printf("%s",family);
 	return 0;
 }

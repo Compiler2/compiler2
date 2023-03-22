@@ -5,10 +5,10 @@ int main_bench()
 {
 	int i,j,n,temp=0;
 	char s[20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",s);
+		my_scanf("%s",s);
 		switch (s[0]) 
 		{
 		       case 'a' :
@@ -135,8 +135,8 @@ int main_bench()
 						  } ; break;
 			default : temp=1; break;
 		  }
-		if (temp==0) printf("yes\n");
-		else printf("no\n");
+		if (temp==0) my_printf("yes\n");
+		else my_printf("no\n");
 		temp=0;
 	}
 

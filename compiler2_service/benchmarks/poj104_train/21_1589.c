@@ -5,10 +5,10 @@ int main_bench()
 {
 	int a[300],n,s=0,i,j;
 	double x,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	x=(double)s/n;
@@ -25,13 +25,13 @@ int main_bench()
 		}
 	}
 	if((a[n-1]-x)==(x-a[0]))
-		printf("%d,%d",a[0],a[n-1]);
+		my_printf("%d,%d",a[0],a[n-1]);
 	else if((a[n-1]-x)<(x-a[0]))
-        printf("%d",a[0]);
+        my_printf("%d",a[0]);
 	else if((a[n-1]-x)>(x-a[0]))
-        printf("%d",a[n-1]);
+        my_printf("%d",a[n-1]);
 	else
-		printf("ghjk");
+		my_printf("ghjk");
 	return 0;
 }
 

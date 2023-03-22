@@ -14,12 +14,12 @@ int main_bench()
 	long int sum=0;
     struct Student stu[100];
 	struct Student* p;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
 		for(j=0;j<6;j++)
 			scolar[i][j]=0;
 	for(p=stu;p<stu+N;p++)
-		scanf("%s %d %d %c %c %d",p->name,&p->Academy,&p->Class,&p->Stujob,&p->west,&p->paper);
+		my_scanf("%s %d %d %c %c %d",p->name,&p->Academy,&p->Class,&p->Stujob,&p->west,&p->paper);
     for(i=0;i<N;i++)
 	{
 		if(stu[i].Academy>80&&stu[i].paper>=1)
@@ -40,8 +40,8 @@ int main_bench()
 	for(i=0;i<N;i++)
 		if(scolar[i][5]>max)
 		{	max=scolar[i][5];j=i;}
-    printf("%s\n%d\n",stu[j].name,scolar[j][5]);
+    my_printf("%s\n%d\n",stu[j].name,scolar[j][5]);
 	for(i=0;i<N;i++)
 		sum=sum+scolar[i][5];
-	printf("%ld",sum);
+	my_printf("%ld",sum);
 }

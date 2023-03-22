@@ -49,9 +49,9 @@ int main_bench()
 
 	for(m=j;m>0;m--)
 	{
-		printf("%s ",a[m] );
+		my_printf("%s ",a[m] );
 	}
-	printf("%s",a[0]);
+	my_printf("%s",a[0]);
 	}
 }
 	

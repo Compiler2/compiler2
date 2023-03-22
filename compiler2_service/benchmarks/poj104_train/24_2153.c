@@ -9,7 +9,7 @@ int main_bench()
 	char c;
 	for(i=0;i<=199;i++)
 	{
-		scanf("%s",a[q]);
+		my_scanf("%s",a[q]);
 		c=getchar();
 		if(c=='\n') {break;}
 		q++;
@@ -33,13 +33,13 @@ int main_bench()
 	for(int w=0;w<=q;w++)
 	{
 		if(b[w]==r[0])
-			{printf("%s\n",a[w]);
+			{my_printf("%s\n",a[w]);
 		break;}
 	}
 	for(int e=0;e<=q;e++)
 	{
 		if(b[e]==r[q])
-		{printf("%s",a[e]);
+		{my_printf("%s",a[e]);
 		break;}
 	}
 	return 0;

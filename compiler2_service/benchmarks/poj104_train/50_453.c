@@ -16,13 +16,13 @@ int main_bench()
 	A[10]=285;
 	A[11]=316;
 	A[12]=346;
-	scanf("%d", &w);
+	my_scanf("%d", &w);
 	for(i=1;i<=12;i++)
 	{
 		a=(A[i]-7+w)%7;
         if(a==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

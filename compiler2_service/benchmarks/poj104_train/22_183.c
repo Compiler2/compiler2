@@ -5,7 +5,7 @@ int main_bench()
 	char s[301];
 	int i,j,n=0,z=0;
 	int num,temp,sum[100],sum1[100];
-	scanf("%s",&s);
+	my_scanf("%s",&s);
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(s[i]>='0'&&s[i]<='9')
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	if(n==0||n==1)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
@@ -45,11 +45,11 @@ int main_bench()
 			}
 			if(z>0)
 			{
-			printf("%d\n",sum1[0]);
+			my_printf("%d\n",sum1[0]);
 			}
 			else
 			{
-				printf("No");
+				my_printf("No");
 			}
 	}
 }

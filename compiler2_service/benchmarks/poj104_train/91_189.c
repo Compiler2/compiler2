@@ -18,8 +18,8 @@ int main_bench()
 	for(i=0;i<(s-1);i++)
 	{
 		*(q+i)=*(p+i)+*(p+i+1);
-		printf("%c",*(q+i));
+		my_printf("%c",*(q+i));
 	}
-	printf("%c",*(p+i)+*p);
+	my_printf("%c",*(p+i)+*p);
 
 }

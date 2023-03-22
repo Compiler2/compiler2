@@ -13,16 +13,16 @@ int main_bench()
 {
 	int m,n,i;
 	int a[100],*p;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	p=a;
 	move(a,p,n,m);
 	for(p=a;p<a+n;p++)
 	{
-		printf("%d",*p);
-		if(p!=a+n-1)printf(" ");
+		my_printf("%d",*p);
+		if(p!=a+n-1)my_printf(" ");
 	}
 }

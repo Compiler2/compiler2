@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int high[100],low[100],count,max,all,i;
-	scanf("%d",&all);
+	my_scanf("%d",&all);
 	max=0;
 	for(i=0;i<all;i++){
-		scanf("%d %d",&high[i],&low[i]);
+		my_scanf("%d %d",&high[i],&low[i]);
 	}
 	for(i=0;i<all-1;i++){
 		if(high[i]>=90&&high[i]<=140&&low[i]>=60&&low[i]<=90){
@@ -19,7 +19,7 @@ int main_bench(){
 		}
 	}
 	if(all==1&&high[i]>=90&&high[i]<=140&&low[i]>=60&&low[i]<=90){max=1;}
-	printf("%d",max);
+	my_printf("%d",max);
 
 	
 return 0;

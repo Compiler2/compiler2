@@ -2,11 +2,11 @@
 
 int main_bench() {
     int a,b,n,i,c,d;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     d=0;
     c=0;
     for (i=0;i<n;i++){
-        scanf ("%d %d",&a,&b);
+        my_scanf ("%d %d",&a,&b);
         if(a==0&&b==1){
             c++;
         }
@@ -31,13 +31,13 @@ int main_bench() {
         
     }
    if (c>d){
-       printf ("A");
+       my_printf ("A");
    }
    else if (c<d){
-       printf ("B");
+       my_printf ("B");
    }
    else if (c==d){
-       printf ("Tie");
+       my_printf ("Tie");
     }
     return 0;
 }

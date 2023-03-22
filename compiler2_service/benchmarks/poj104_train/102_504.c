@@ -6,13 +6,13 @@ int main_bench(){
 	double height;
 	int h[40];
 	int l[40];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a=0;
 	int b=0;
 	int e;
 	for(i=0;i<n;i++){
-		scanf("%s",k);
-		scanf("%lf",&height);
+		my_scanf("%s",k);
+		my_scanf("%lf",&height);
 		if(k[0]=='m'){
 		
 			height=1000*height;
@@ -51,16 +51,16 @@ int main_bench(){
 			e=h[i];
 			height=1.0*e*0.001;
 			if(i==0){
-				printf("%.2lf",height);
+				my_printf("%.2lf",height);
 			}
 			else{
-				printf(" %.2lf",height);
+				my_printf(" %.2lf",height);
 			}
 		}
 		for(i=b-1;i>=0;i--){
 			e=l[i];
 			height=1.0*e*0.001;
-			printf(" %.2lf",height);
+			my_printf(" %.2lf",height);
 		}
 		return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[257],a[257],b[257];
-	scanf("%s %s %s",s,a,b);
+	my_scanf("%s %s %s",s,a,b);
 	int i = 0,j = 0;
 	int find = 0;
 	for(i = 0;s[i] != '\0';i ++)
@@ -30,6 +30,6 @@ int main_bench()
 	{for(j = 0;b[j] != '\0';j ++)
 		s[i + j] = b[j];
 	}
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int startyear,startmonth,startday,endyear,endmonth,endday,n=0,year,j,t=0,d;
     int a[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
-scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
+my_scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday);
 	for(year=startyear;year<=endyear;year++)
 		if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
 			n++;
@@ -27,6 +27,6 @@ scanf("%d%d%d%d%d%d",&startyear,&startmonth,&startday,&endyear,&endmonth,&endday
 	{if(j<endmonth)
 	t=t+a[j];}
 	t=t+endday;
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

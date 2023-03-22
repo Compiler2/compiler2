@@ -5,19 +5,19 @@ int main_bench()
   char a[100],d[100],f[100];
   int n,i,j,l,k;
   int b[100],c[100];
-  scanf("%s",a);
+  my_scanf("%s",a);
   j=strlen(a);
   for(i=0;i<j;i++)
   b[i]=a[i]-'0';
   if(j<3&&b[0]*10+b[1]<13)
     { 
-     printf("0\n");
-     printf("%d",b[0]*10+b[1]);
+     my_printf("0\n");
+     my_printf("%d",b[0]*10+b[1]);
      }
      else if(j==1)
      {
-          printf("0\n");
-          printf("%d",b[0]);
+          my_printf("0\n");
+          my_printf("%d",b[0]);
      }
    else
  { for(i=0;i<j;i++)
@@ -49,8 +49,8 @@ int main_bench()
                        }
                        d[j-1]='\0';
  }
-  printf("%s\n",d);
-   printf("%d",k);
+  my_printf("%s\n",d);
+   my_printf("%d",k);
  }
   getchar();getchar(); 
 }

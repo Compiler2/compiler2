@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,i,j,k,judge;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=3;i*2<=m;i+=2){
 		judge=1;
 		for (k=3;k*3<=i;k+=2){
@@ -15,7 +15,7 @@ int main_bench()
 	     		if (j%k==0) {judge=0;}
 			}
 		}
-		if (judge) printf("%d %d\n",i,j);
+		if (judge) my_printf("%d %d\n",i,j);
 	}
 	return 0;
 }

@@ -10,9 +10,9 @@ int main_bench()
     int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int i, j, sum = 0;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%d %d %d", &y, &m1, &m2);
+        my_scanf("%d %d %d", &y, &m1, &m2);
         sum = 0;
         if (is_leap_year(y)) 
             days[1] = 29;
@@ -26,9 +26,9 @@ int main_bench()
         for (j=m1-1; j<(m2-1); j++) 
             sum += days[j];
         if (sum % 7 == 0)
-            printf("%s\n", "YES");
+            my_printf("%s\n", "YES");
         else
-            printf("%s\n", "NO");
+            my_printf("%s\n", "NO");
     }
 
     return 0;

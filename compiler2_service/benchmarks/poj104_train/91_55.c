@@ -14,7 +14,7 @@ int main_bench()
 	*pn=*p+*zfc;
 
 	for(pn=str;pn<str+len;pn++)
-		printf("%c",*pn);
+		my_printf("%c",*pn);
 
 	return 0;
 }

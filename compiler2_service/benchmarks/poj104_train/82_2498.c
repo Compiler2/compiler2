@@ -7,11 +7,11 @@ int a[100][2]={0};
 int b[101]={0};
 b[0]=0;
 k=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<n;i++)
 {
   for(j=0;j<2;j++)
-  scanf("%d",&a[i][j]);
+  my_scanf("%d",&a[i][j]);
 }
 for(i=0;i<n;i++)
 {
@@ -35,6 +35,6 @@ for(j=0;j<n-i;i++)
  b[i+1]=t;
  }
 }
-printf("%d",b[n]);
+my_printf("%d",b[n]);
 return 0;
 }

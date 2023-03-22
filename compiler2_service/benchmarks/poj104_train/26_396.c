@@ -23,7 +23,7 @@ main_bench()
            i=j-1;
         }
      }
-     printf("%s",string2);
+     my_printf("%s",string2);
      getchar();
      getchar();
 }                                                                          

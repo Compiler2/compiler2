@@ -6,18 +6,18 @@ int main_bench()
 	long int e=0;
 	char c[33];
 	int f(char x);char g(int x);
-       scanf("%d%s%d",&a,c,&b);
+       my_scanf("%d%s%d",&a,c,&b);
 		for(i=0;c[i]!=0;i++)
 			e=a*e+f(c[i]);
-		if(e==0)printf("0");
+		if(e==0)my_printf("0");
 		for(i=32;e>0;i--)
 		{
 			c[i]=g(e%b);
 			e=e/b;
 		}
 		for(++i;i<=32;i++)
-			printf("%c",c[i]);
-		printf("\n");		
+			my_printf("%c",c[i]);
+		my_printf("\n");		
 }
 int f(char x)
 {

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i,j,n,r=0,t,a[50000],b[50000],maxb;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -28,14 +28,14 @@ int main_bench()
 		}
 		if(maxb<a[i+1])
 		{
-			printf("no");
+			my_printf("no");
 			r=1;
 			break;
 		}
 	}
 	if(r==0)
 	{
-		printf("%d %d",a[0],maxb);
+		my_printf("%d %d",a[0],maxb);
 	}
 	return 0;
 }

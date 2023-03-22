@@ -5,11 +5,11 @@ int main_bench()
 int t,i1,i3,i2,i4,len,m;
 int a[100000];
 char str[100000];
-scanf ("%d",&t);
+my_scanf ("%d",&t);
 for (i1=1;i1<=t;i1++)
 {
 m=0;
-scanf("%s",str);
+my_scanf("%s",str);
 len=strlen(str);
 memset(a,0,sizeof(a));
 for (i2=1;i2<=len-1;i2++)
@@ -28,12 +28,12 @@ for (i4=0;i4<=len-1;i4++)
 {
 if (a[i4]==0)
 {
-printf ("%c\n",str[i4]);
+my_printf ("%c\n",str[i4]);
 m=1;
 break;
 }
 }
 if (m==0)
-printf ("no\n");
+my_printf ("no\n");
 }
 }

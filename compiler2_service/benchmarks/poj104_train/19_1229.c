@@ -16,19 +16,19 @@ int main_bench()
 		{
 			if(strcmp(q,a)==0)
 			{
-				printf("%s",b);
+				my_printf("%s",b);
 				break;
 			}
-			printf("%s",q);
+			my_printf("%s",q);
 			break;
 		}
 		if(*p==' ')
 		{
 			*p='\0';
 			if(strcmp(q,a)==0)
-				printf("%s ",b);
+				my_printf("%s ",b);
 			else 
-				printf("%s ",q);
+				my_printf("%s ",q);
 			q=p+1;
 		}
 	}

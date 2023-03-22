@@ -27,7 +27,7 @@ int main_bench()
     int i,j,k,t,x[100][2],n=0;
 	char s[150],a,b;
 
-	scanf("%s",s);
+	my_scanf("%s",s);
 
 	a=s[0];
 	for(i=1;s[i];i++)
@@ -74,7 +74,7 @@ int main_bench()
 	bubble(x,n);
 	for(i=0;i<n;i++)
 	{
-	    printf("%d %d\n",x[i][0],x[i][1]);
+	    my_printf("%d %d\n",x[i][0],x[i][1]);
 	}
 
 	return 0;

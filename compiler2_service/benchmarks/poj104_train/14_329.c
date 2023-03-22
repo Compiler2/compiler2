@@ -14,14 +14,14 @@ return(((struct student *)b)->y > ((struct student *)a)->y?1:-1);
 main_bench()
 {    
     int num;
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     struct student s[100000];
     for(int i=0;i<num;i++)
     {
-            scanf("%d %d %d",&s[i].n,&s[i].y,&s[i].s);
+            my_scanf("%d %d %d",&s[i].n,&s[i].y,&s[i].s);
             s[i].y=s[i].y+s[i].s;        
     }
     qsort(s,num,sizeof(s[0]),cmp);
     for(int i=0;i<3;i++)
-     printf("%d %d\n",s[i].n,s[i].y);      
+     my_printf("%d %d\n",s[i].n,s[i].y);      
 } 

@@ -9,9 +9,9 @@ double z[300];
 int sl[300];
 
 
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=0;i<m;i++){
-    scanf("%d",&sl[i]);
+    my_scanf("%d",&sl[i]);
  
 }
 
@@ -34,7 +34,7 @@ for(i=0;i<m;i++){
 }
 
 for(i=0;i<m;i++){
-    printf("%.3lf\n",z[i]);
+    my_printf("%.3lf\n",z[i]);
 }
     
 return 0;

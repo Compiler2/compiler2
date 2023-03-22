@@ -9,26 +9,26 @@ struct p
 int main_bench()
 {
     int m,x,y;
-    scanf("%d",&m);
-    scanf("%d %d",&x,&y);
+    my_scanf("%d",&m);
+    my_scanf("%d %d",&x,&y);
     double c,d;
     c=(double)y/x;
     int a1,a2;
     for(int i=0;i<=m-2;i++)
     {
-        scanf("%d %d",&a1,&a2);
+        my_scanf("%d %d",&a1,&a2);
         d=(double)a2/a1;
         if(c-d>0.05)
         {
-            printf("worse\n");
+            my_printf("worse\n");
         }
         else if(d-c>0.05)
         {
-            printf("better\n");
+            my_printf("better\n");
         }
         else
         {
-            printf("same\n");
+            my_printf("same\n");
         }
     }
 }

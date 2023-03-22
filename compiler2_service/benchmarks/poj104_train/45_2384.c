@@ -6,8 +6,8 @@ int main_bench()
 {
 	char a[50],b[50];
 	int i,j,n1,n2;
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	n1=strlen(a);
 	n2=strlen(b);
 	for(i=0;i<n2;i++)
@@ -21,7 +21,7 @@ int main_bench()
 			}
 			if(j==n1&&b[i+j-1]==a[j-1])
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 				break;
 			}
 		}

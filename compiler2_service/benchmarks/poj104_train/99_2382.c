@@ -12,9 +12,9 @@ int main_bench(){
 	double cc;
 	double dd;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&age);
+		my_scanf("%d",&age);
 		if(age<=18){
 			a+=1;
 		}
@@ -32,9 +32,9 @@ int main_bench(){
 	bb=b*100.0/n;
 	cc=c*100.0/n;
 	dd=d*100.0/n;
-	printf("1-18: %.2lf%%\n",aa);
-	printf("19-35: %.2lf%%\n",bb);
-	printf("36-60: %.2lf%%\n",cc);
-	printf("60??: %.2lf%%\n",dd);
+	my_printf("1-18: %.2lf%%\n",aa);
+	my_printf("19-35: %.2lf%%\n",bb);
+	my_printf("36-60: %.2lf%%\n",cc);
+	my_printf("60??: %.2lf%%\n",dd);
 	return 0;
 }

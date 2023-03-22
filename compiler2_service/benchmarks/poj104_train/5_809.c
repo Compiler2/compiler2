@@ -4,14 +4,14 @@ int main_bench(){
 int i,lem,len,q;
 double p,l;
 char m[501],n[501];
-scanf("%lf\n",&p);
-scanf("%s\n",m);
-scanf("%s",n);
+my_scanf("%lf\n",&p);
+my_scanf("%s\n",m);
+my_scanf("%s",n);
 lem=strlen(m);
 len=strlen(n);
 if(lem!=len)
 {
-printf("error");
+my_printf("error");
 return 0;
 }
 else
@@ -21,7 +21,7 @@ for(i=0;i<q;i++)
 {
 	if(((m[i]!='A')&&(m[i]!='T')&&(m[i]!='C')&&(m[i]!='G'))||((n[i]!='A')&&(n[i]!='T')&&(n[i]!='C')&&(n[i]!='G')))
 	{
-		printf("error");
+		my_printf("error");
 		break;
 	}
 	else if(m[i]==n[i])
@@ -32,9 +32,9 @@ for(i=0;i<q;i++)
 if(i==q)
 {l=1.0*r/q;
 if(l>=p)
-printf("yes");
+my_printf("yes");
 else if(l<p)
-printf("no");
+my_printf("no");
 }
 
 return 0;

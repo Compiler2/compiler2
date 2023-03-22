@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     char DNA[1000][1000],DNA2[1000][1000];
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",&DNA[i]);
+		my_scanf("%s",&DNA[i]);
         len=strlen(DNA[i]);
         for(int j=0;j<len;j++)
 		{

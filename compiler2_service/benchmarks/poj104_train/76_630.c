@@ -5,9 +5,9 @@ int main_bench(){
     struct a{
         int x,y;
     }sz[50000];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d\n",&sz[i].x,&sz[i].y);
+        my_scanf("%d%d\n",&sz[i].x,&sz[i].y);
     }
     for(k=1;k<n;k++){
         for(i=0;i<n-k;i++){
@@ -32,13 +32,13 @@ int main_bench(){
     for(i=0;i<n-1;i++){
         if(c<sz[i].y){c=sz[i].y;}
         if(sz[i].y<sz[i+1].x&&sz[i+1].x>c){
-            printf("no");
+            my_printf("no");
             j=1;
             break;
             }
     }
     if(j==0){
-        printf("%d %d",sz[0].x,b);
+        my_printf("%d %d",sz[0].x,b);
     }
      return 0;
 }

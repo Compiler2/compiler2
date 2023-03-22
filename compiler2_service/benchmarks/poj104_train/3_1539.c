@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n,i,j,k;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 int a[n];
 int b[n];
 for(i=0;i<n;i++)
 {
-scanf("%d ",&a[i]);
+my_scanf("%d ",&a[i]);
 b[i]=k-a[i];
 }
 int m=0;
@@ -19,7 +19,7 @@ for(j=0;j<n;j++)
 if(b[j]==a[i])m++;
 }
 }
-if(m>0) printf("yes");
-else printf("no");
+if(m>0) my_printf("yes");
+else my_printf("no");
 }
 

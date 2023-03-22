@@ -5,7 +5,7 @@ int main_bench()
 int i,n,j,k; 
 double a[1000],b[1000]; 
 double c[1000],sum[100]={0}; 
-scanf("%d",&n); 
+my_scanf("%d",&n); 
 a[0]=2; 
 a[1]=3; 
 b[1]=2; 
@@ -21,12 +21,12 @@ c[i]=a[i]/b[i];
 for(j=0;j<n;j++) 
 { 
 sum[j]=0; 
-scanf("%d",&k); 
+my_scanf("%d",&k); 
 for(i=0;i<k;i++) 
 { 
 sum[j]=sum[j]+c[i]; 
 } 
-printf("%.3lf\n",sum[j]); 
+my_printf("%.3lf\n",sum[j]); 
 } 
 return 0; 
 } 

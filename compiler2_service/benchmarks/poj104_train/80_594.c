@@ -4,7 +4,7 @@ int main_bench()
 {
 	int di(int x,int y,int z);
 	int a,b,c,d,e,f,day1,day2,sum=0,i;
-	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 	for(i=a;i<d;i++){
 		if((i%4==0&&i%100!=0)||(i%400==0)){
 			sum+=366;
@@ -15,7 +15,7 @@ int main_bench()
 	day1=di(a,b,c);
 	day2=di(d,e,f);
 	sum=sum+day2-day1;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 int di(int x,int y,int z){

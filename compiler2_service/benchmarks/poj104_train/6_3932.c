@@ -11,13 +11,13 @@
 
 int main_bench(){
     int tol,i,j,sum,k,x[100][100],row,line;
-    scanf("%d",&tol);
+    my_scanf("%d",&tol);
     for (k=0,sum=0; k<tol; k++) {
         sum=0;
-        scanf("%d%d",&row,&line);
+        my_scanf("%d%d",&row,&line);
         for (i=0; i<row; i++) {
             for (j=0; j<line; j++) {
-                scanf("%d",&x[i][j]);
+                my_scanf("%d",&x[i][j]);
             }
         }
         if (line==1) {
@@ -41,7 +41,7 @@ int main_bench(){
             sum+=x[row-1][i];
         }
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
         
 
     }

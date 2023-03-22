@@ -3,10 +3,10 @@
 int main_bench(){
 	int i,j,n,h1[100],h2[100],c1=0,c2=0,t;
 	char d1[100][10],d2[100][10],d[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",d);
-		scanf("%d",&t);
+		my_scanf("%s",d);
+		my_scanf("%d",&t);
 		if(t>=60){
 			h1[c1]=t;
 			strcpy(d1[c1],d);

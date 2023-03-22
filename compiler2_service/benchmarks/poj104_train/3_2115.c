@@ -3,12 +3,12 @@
 int main_bench()
 {
 int n,k,i,j;
-scanf("%d%d",&n,&k);
+my_scanf("%d%d",&n,&k);
 int a[n];
 char p;
 for(i=0;i<n;i++)
 {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -17,7 +17,7 @@ for(i=0;i<n;i++)
         if(a[i]+a[j]==k)
         {
             p='y';
-            printf("yes");
+            my_printf("yes");
             break;
         }
         else
@@ -31,6 +31,6 @@ for(i=0;i<n;i++)
 if(p=='y')
 return 0;
 else
-printf("no");
+my_printf("no");
 return 0;
 }

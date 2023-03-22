@@ -4,9 +4,9 @@ int main_bench()
 {
 	int sz[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,a,b,c,i,j,t,day=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&a,&b,&c);
+		my_scanf("%d%d%d",&a,&b,&c);
 		if(b>c){
 			t=b;
 			b=c;
@@ -34,9 +34,9 @@ int main_bench()
 				}
 		}
 		if(day%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 		day=0;
 	}
 	return 0;

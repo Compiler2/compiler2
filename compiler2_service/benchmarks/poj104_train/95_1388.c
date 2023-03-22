@@ -14,8 +14,8 @@ for(i=0;i<=m-1;i++)
 {if(s2[i]>='a'&&s2[i]<='z') s2[i]=s2[i]-32;
 }
 k=strcmp(s1,s2);
-{if(k==0) printf("=");
-else if(k>0) printf(">");
-else if(k<0) printf("<");
+{if(k==0) my_printf("=");
+else if(k>0) my_printf(">");
+else if(k<0) my_printf("<");
 }
 }

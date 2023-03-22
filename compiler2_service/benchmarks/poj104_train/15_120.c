@@ -8,13 +8,13 @@ int main_bench()
 	int number = 0;
 	int n = 0;
 	int i, j;
-	scanf ("%d", &n);
+	my_scanf ("%d", &n);
 	memset(num, -1, 10000);
 	for (i = 0; i < n; i++)
 	{
 		for (j = 0; j < n; j++)
 		{
-			scanf ("%d", &num[i][j]);
+			my_scanf ("%d", &num[i][j]);
 		}
 	}
 	for (i = 0; i < n; i++)
@@ -34,8 +34,8 @@ int main_bench()
 		}
 	}
 	number = (rightj - leftj - 1) * (righti - lefti - 1);
-	printf ("%d\n", number);
-	printf ("%d %d %d %d", lefti, leftj, righti, rightj );
+	my_printf ("%d\n", number);
+	my_printf ("%d %d %d %d", lefti, leftj, righti, rightj );
 	return 0;
 }
 

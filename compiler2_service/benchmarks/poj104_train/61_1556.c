@@ -3,11 +3,11 @@
 int F(int n);
 int main_bench(){
 	int n,m,result;
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 for(int k=0;k<m;k++){
-scanf("%d", &n);
+my_scanf("%d", &n);
 	result = F(n);
-	printf("%d\n", result);
+	my_printf("%d\n", result);
 }
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,mark,m,j;
 	char a[21]={'\0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		m=strlen(a);
 		for(j=0;j<m;j++)
 		{
@@ -21,9 +21,9 @@ int main_bench()
 		if(a[0]>='0'&&a[0]<='9')
 			mark=1;
 		if(mark==1)
-			printf("no\n");
+			my_printf("no\n");
 		else
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

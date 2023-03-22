@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c,d=0,i;
          
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 a=a%1600;	
 for(i=1;i<a;i++)
 	{
@@ -35,18 +35,18 @@ for(i=1;i<a;i++)
 	d+=c;
          d=d%7;
 	if(d==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	if(d==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	if(d==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	if(d==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	if(d==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	if(d==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	if(d==0)
-		printf("Sun.");
+		my_printf("Sun.");
 return 0;
 }

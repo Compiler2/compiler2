@@ -5,8 +5,8 @@ main_bench()
 	int n,i,j,x,y,num,len;
 	int c[500]={0},d[500]={0};
 	char a[500],b[5];
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	len=strlen(a);
 	for(x=0;x<len-n+1;x++)
 	{
@@ -35,18 +35,18 @@ main_bench()
 		}
 		
 	if(c[len-n]==1)
-	printf("NO\n");
+	my_printf("NO\n");
 	else
 	{
-		printf("%d\n",c[len-n]);
+		my_printf("%d\n",c[len-n]);
 		for(i=0;i<len-n+1;i++)
 		if(d[i]==c[len-n])
 		{
 			for(j=0;j<n;j++)
 			b[j]=a[i+j];
 			for(j=0;j<n;j++)
-			printf("%c",b[j]);
-			printf("\n");
+			my_printf("%c",b[j]);
+			my_printf("\n");
 			}
 		}
 	}

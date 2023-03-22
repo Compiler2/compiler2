@@ -13,7 +13,7 @@ int main_bench()
 		a2i[i]=i-'a'+10;
 	for(i='A';i<='Z';i++)
 		a2i[i]=i-'A'+10;                     
-	scanf("%d%s%d",&from,in,&to);
+	my_scanf("%d%s%d",&from,in,&to);
 	for(i=0;in[i]!='\0';i++)
 	{
 		num=num*from+a2i[in[i]];
@@ -31,7 +31,7 @@ int main_bench()
 		num=num/to;
 	}
 	for(i=len-1;i>=0;i--)
-		printf("%c",out[i]);
+		my_printf("%c",out[i]);
 
 	return 0;
 }

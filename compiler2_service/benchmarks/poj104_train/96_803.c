@@ -8,13 +8,13 @@ int main_bench()
 	l=strlen(bcs);
     if(l==2){
 		a=(bcs[0]-'0')*10+bcs[1]-'0';
-		printf("%d\n",a/13);
-		printf("%d",a%13);
+		my_printf("%d\n",a/13);
+		my_printf("%d",a%13);
 	}
 	if(l==1){
 		a=bcs[0]-'0';
-		printf("%d\n",0);
-		printf("%d",a);
+		my_printf("%d\n",0);
+		my_printf("%d",a);
 	}
 	if(l>2){
 	if(bcs[0]=='1'&&bcs[1]<='2'){
@@ -26,13 +26,13 @@ for(i=0;i<=l-3;i++){
 		}
 for(j=0;j<l-2;j++){
 	if(j==l-3){
-		printf("%c\n",shang[j]);
+		my_printf("%c\n",shang[j]);
 	}
 		else{
-			printf("%c",shang[j]);
+			my_printf("%c",shang[j]);
 		}
 }
-		printf("%c",ys[l-3]);
+		my_printf("%c",ys[l-3]);
 	}
 	else{
 		a=((bcs[0]-'0')*10+bcs[1]-'0');
@@ -43,13 +43,13 @@ for(j=0;j<l-2;j++){
 		}
 		for(j=0;j<l-1;j++){
 	if(j==l-2){
-		printf("%c\n",shang[j]);
+		my_printf("%c\n",shang[j]);
 	}
 	else{
-		printf("%c",shang[j]);
+		my_printf("%c",shang[j]);
 	}
 }
-		printf("%c",ys[l-2]);
+		my_printf("%c",ys[l-2]);
 	}
 	}
 	return 0;

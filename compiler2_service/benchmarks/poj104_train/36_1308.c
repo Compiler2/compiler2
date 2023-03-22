@@ -4,11 +4,11 @@ int main_bench()
 {
 	char a[1000],b[1000];
 	int c[100],k1,k2,t1[100]={0},t2[100]={0},e=0,i,j;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	k1=strlen(a);
 	k2=strlen(b);
 	if(k1!=k2)
-	printf("NO");
+	my_printf("NO");
 	else if(k1==k2)
 	{
 		for(i=0;i<k1;i++)
@@ -32,9 +32,9 @@ int main_bench()
 		for(i=0;i<k1;i++)
 		e=e+t1[i];
 		if(e==k1)
-		printf("YES");
+		my_printf("YES");
 		else
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

@@ -2,7 +2,7 @@
 
 int main_bench()
 {int n,m,i,q,p,j;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (m=2;m<=n/2;m++)
  {
    for (i=2;i<=m-1;i++)
@@ -19,7 +19,7 @@ int main_bench()
 	  }
     
 	   if (p==n-m-1)
-		   printf("%d %d\n",m,n-m);
+		   my_printf("%d %d\n",m,n-m);
  
    }
  }

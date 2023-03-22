@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,m,i,a,b=1,j;
 	int sz[300];
-	scanf("%d",&n);
-	scanf("%d",&(sz[0]));
+	my_scanf("%d",&n);
+	my_scanf("%d",&(sz[0]));
 	for(i=1;i<n;i++)
 	{
 		j=0;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		for(m=0;m<b;m++)
 		{
 			if(sz[m]==a)
@@ -28,11 +28,11 @@ int main_bench()
 	{
 		if(c>0)
 		{
-			printf(",%d",sz[i]);
+			my_printf(",%d",sz[i]);
 		}
 		else
 		{
-			printf("%d",sz[i]);
+			my_printf("%d",sz[i]);
 		}
 		c++;
 	}

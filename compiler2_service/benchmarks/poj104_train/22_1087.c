@@ -21,7 +21,7 @@ int main_bench()
 	   else if((max-num[i+1]<max-nmax)&&max!=num[i+1]) nmax=num[i+1];}
    for(i=0;i<count-1;i++)
 	   if(num[i+1]!=num[i]) break;
-	   if(i==count-1) printf("No\n");
-	   else printf("%d\n",nmax);
+	   if(i==count-1) my_printf("No\n");
+	   else my_printf("%d\n",nmax);
 	   return 0;
 }

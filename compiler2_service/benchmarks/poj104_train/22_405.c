@@ -5,7 +5,7 @@ int main_bench()
 	int a[300]={0},i,j,c,sum=0,temp;
 	for(i=1;i<=300;i++)
 	{
-		scanf("%d",&a[i-1]);
+		my_scanf("%d",&a[i-1]);
 		c=getchar();
 		if(c==10) break;
 	}                                         
@@ -35,7 +35,7 @@ int main_bench()
 			a[i]=temp;
 		}
 	}                                             
-	if(a[298]==0) printf("No");
-		else printf("%d",a[298]);
+	if(a[298]==0) my_printf("No");
+		else my_printf("%d",a[298]);
 	return 0;
 }

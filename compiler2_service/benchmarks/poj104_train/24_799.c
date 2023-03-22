@@ -50,12 +50,12 @@ int main_bench()
 
 	for (i=max1-max+1;i<=max1;i++)
 	{
-		printf("%c",zfc[i]);
+		my_printf("%c",zfc[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	for (i=min1-min+1;i<=min1;i++)
 	{
-		printf("%c",zfc[i]);
+		my_printf("%c",zfc[i]);
 	}
 	return 0;
 }

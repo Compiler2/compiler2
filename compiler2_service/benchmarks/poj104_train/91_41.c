@@ -17,6 +17,6 @@ int main_bench()
 	}
 	*qp=(*q)+(*(p-1));
 	qp=m;
-	printf("%s\n",qp);
+	my_printf("%s\n",qp);
 	return 0;
 }

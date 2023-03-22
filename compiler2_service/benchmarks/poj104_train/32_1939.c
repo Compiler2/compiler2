@@ -4,12 +4,12 @@ int main_bench()
 {
 	
 	int n,n1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(n1=0;n1<n;n1++)
 	{
 		char a[101]={"\0"};
 		char b[101]={"\0"};            
-		scanf("%s %s",a,b);
+		my_scanf("%s %s",a,b);
 		int i;
 		int lena=strlen(a),lenb=strlen(b);           
         
@@ -44,10 +44,10 @@ int main_bench()
 		for(i=99;i>=0;i--)
 		{
 			if(c[i]==0&&test==0)continue;
-			if(c[i]!=0&&test==0){printf("%d",c[i]);test++;continue;}
-			if(test!=0){printf("%d",c[i]);continue;}
+			if(c[i]!=0&&test==0){my_printf("%d",c[i]);test++;continue;}
+			if(test!=0){my_printf("%d",c[i]);continue;}
 		}
-		printf("\n");
+		my_printf("\n");
 
 		
 		

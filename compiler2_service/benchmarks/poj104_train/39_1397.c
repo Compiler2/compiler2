@@ -5,9 +5,9 @@ int main_bench()
 	int N,x[100][3],i,total[100]={0};
 	int T[100],s=0,k;
 	char y[100][2],z[100][20];
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(i=0;i<N;i++)
-		scanf("%s %d %d %c %c %d",z[i],&x[i][0],&x[i][1],&y[i][0],&y[i][1],&x[i][2]);
+		my_scanf("%s %d %d %c %c %d",z[i],&x[i][0],&x[i][1],&y[i][0],&y[i][1],&x[i][2]);
     for(i=0;i<N;i++)
 	{
 		if(x[i][0]>80 && x[i][2]>0) total[i]=total[i]+8000;
@@ -31,9 +31,9 @@ int main_bench()
 	for(i=0;i<N;i++)
 		if(total[i]==T[N-1])
 		{
-			printf("%s\n",z[i]);
-			printf("%d\n",total[i]);
-			printf("%d",s);
+			my_printf("%s\n",z[i]);
+			my_printf("%d\n",total[i]);
+			my_printf("%d",s);
 			break;
 		}
 }

@@ -5,7 +5,7 @@ int main_bench()
 	char a[10],b[10];
 	int i,j;
 	char m;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;i<10;i++)
 	{
 		for(j=i;j<10;j++)
@@ -21,7 +21,7 @@ int main_bench()
 		}
 	}
 	if(strcmp(a,b)!=0)
-		printf("NO");
+		my_printf("NO");
 	else
-		printf("YES");
+		my_printf("YES");
 }

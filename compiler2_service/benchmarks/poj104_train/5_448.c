@@ -6,14 +6,14 @@ int main_bench()
 	double r ,same = 0,j=0;
 	char a[10000];
 	char b[10000];
-	scanf("%lf",&r);
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%lf",&r);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	lena = strlen (a);
 	lenb = strlen (b);
 	if (lena != lenb )
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -25,13 +25,13 @@ int main_bench()
 			}
 			else if(a[i]!='A'&& a[i]!='T'&&a[i]!='C'&& a[i]!='G')
 			{
-				printf("error");
+				my_printf("error");
 				j=1;
 				break;
 			}
 			else if(b[i]!='A'&& b[i]!='T'&& b[i]!='C'&& b[i]!='G')
 			{
-				printf("error");
+				my_printf("error");
 				j=1;
 				break;
 			}
@@ -41,11 +41,11 @@ int main_bench()
 	{
 		if((same/lena) > r)
 		{
-			printf( "yes" );
+			my_printf( "yes" );
 		}
 		else
 		{
-			printf( "no" );
+			my_printf( "no" );
 		}
 
 	}

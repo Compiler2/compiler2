@@ -24,7 +24,7 @@ void biprt(int * sum, int sumlen)
 {
 	while (sum[sumlen-1]==0&&sumlen>1) sumlen--;
 	while (sumlen) {
-		printf("%d", sum[sumlen-1]);
+		my_printf("%d", sum[sumlen-1]);
 		sumlen--;
 	}
 }

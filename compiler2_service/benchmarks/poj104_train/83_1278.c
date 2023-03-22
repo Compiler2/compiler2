@@ -5,15 +5,15 @@ main_bench()
 	int i=0,j,n;
 	float a[3][10];
 	float GPA=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(j=0;j<=n-1;j++)
 	{
-		scanf("%f",&a[0][j]);
+		my_scanf("%f",&a[0][j]);
 		i=i+a[0][j];
 	}
 	for(j=0;j<=n-1;j++)
 	{
-		scanf("%f",&a[1][j]);
+		my_scanf("%f",&a[1][j]);
 		if(a[1][j]>=90)
 			a[2][j]=4.0;
 		else if(a[1][j]>=85)
@@ -38,7 +38,7 @@ main_bench()
 	for(j=0;j<=n-1;j++)
 		GPA=GPA+a[2][j];
 	GPA=GPA/i;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 }
 							
 	

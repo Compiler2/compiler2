@@ -5,9 +5,9 @@ int main_bench()
 	char a[255],b[255];
 	int n,i;
 	int a1,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-        scanf("%s",a);
+        my_scanf("%s",a);
 		a1=strlen(a);
 		for(j=0;j<a1;j++){
 			switch(a[j]){
@@ -16,9 +16,9 @@ int main_bench()
 			case 'C':b[j]='G';break;
 			case 'G':b[j]='C';break;
 			}
-		    printf("%c",b[j]);
+		    my_printf("%c",b[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
     return 0;

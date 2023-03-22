@@ -6,12 +6,12 @@ int main_bench()
 	int e,f=0,g[1000];
 
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	int i=0;
 	while(i<n){
 		int k=0;while(k<n){
-            scanf("%d",&e);
+            my_scanf("%d",&e);
 			if(e==0){
 				f++;
 			}
@@ -40,6 +40,6 @@ int main_bench()
 	int d,sum;
 	d = y - x;
 	sum = (m-2)*(d-2);
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
     return 0;
 }

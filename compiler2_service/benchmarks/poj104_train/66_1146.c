@@ -5,7 +5,7 @@ int main_bench()
 	int a,b,c;
 	int s,w;
 	int day,date;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	int i,j;
 	i=a/4;
 	j=a%4;
@@ -39,13 +39,13 @@ int main_bench()
 	if(b>2&&j==0) w+=1;
 	day=366*s+365*(a-s-1)+w+c;
 	date=day%7;
-    if(a==1111111111&&b==11&&c==11) printf("Sat.");
-	else if(date==0) printf("Sun.\n");
-	else	if(date==1) printf("Mon.\n");
-	else	if(date==2) printf("Tue.\n");
-	else	if(date==3) printf("Wed.\n");
-	else	if(date==4) printf("Thu.\n");
-	else	if(date==5) printf("Fri.\n");
-	else	if(date==6) printf("Sat.\n");
+    if(a==1111111111&&b==11&&c==11) my_printf("Sat.");
+	else if(date==0) my_printf("Sun.\n");
+	else	if(date==1) my_printf("Mon.\n");
+	else	if(date==2) my_printf("Tue.\n");
+	else	if(date==3) my_printf("Wed.\n");
+	else	if(date==4) my_printf("Thu.\n");
+	else	if(date==5) my_printf("Fri.\n");
+	else	if(date==6) my_printf("Sat.\n");
 		return 0;
 }

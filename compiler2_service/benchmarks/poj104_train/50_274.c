@@ -6,7 +6,7 @@ int main_bench()
 	int week(int w,int n);
 	int w,i,r=0,unlucky[12];
 
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	
 	if(week(w,13)==5)
 	{
@@ -58,7 +58,7 @@ int main_bench()
 	}
 
 	for(i=0;i<r;i++)
-		printf("%d\n",unlucky[i]);
+		my_printf("%d\n",unlucky[i]);
 }
 
 int week(int w,int n)

@@ -13,8 +13,8 @@ int main_bench()
 
 	int judge(int a);
 
-	scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
-	printf("%d\n",(count_year()+count_month()+count_day()));
+	my_scanf("%d%d%d%d%d%d",&year1,&month1,&day1,&year2,&month2,&day2);
+	my_printf("%d\n",(count_year()+count_month()+count_day()));
 
 	return 0;
 }

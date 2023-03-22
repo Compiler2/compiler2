@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int i,j,n,s,b=0,c=0,d=0,e=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100][100];
 	for (i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for (i=0;i<n;i++)
@@ -37,6 +37,6 @@ int main_bench()
 		}
 	}end:
 	s=(e-c-1)*(d-b-1);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

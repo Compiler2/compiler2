@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,ma,mi,x,y;
 	int i=1;
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	while(i<=y)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		if(i==1){
 			ma=n;
 		}
@@ -29,6 +29,6 @@ int main_bench()
 		}
 	i++;
 	}
-	printf("%d\n%d\n",ma,mi);
+	my_printf("%d\n%d\n",ma,mi);
 	return 0;
 }

@@ -9,13 +9,13 @@ int main_bench()
 	char c;
 	for (i=0;;i++)
 	{
-		scanf ("%s%c",a[i],&c);
+		my_scanf ("%s%c",a[i],&c);
 		if (c!=' ')
 		{
 			break;
 		}
 	}
-	printf ("%s",a[i]);
+	my_printf ("%s",a[i]);
 	for (i-1;i-1>=0;i--)
-		printf (" %s",a[i-1]);
+		my_printf (" %s",a[i-1]);
 } 

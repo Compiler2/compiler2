@@ -18,7 +18,7 @@ int main_bench()
     char *p=str,*q;
     int n,i,j,max=0;
     int a[500]={0};
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     gets(str);
     for (i=0; *(p)!='\0'; p++,i++)
         copy(s[i], p, n );
@@ -29,13 +29,13 @@ int main_bench()
                 a[i]++;
     for (i=0; i<n; i++)
         max=(max<a[i])?a[i]:max;
-    if(max==1)printf("NO");
+    if(max==1)my_printf("NO");
     else
     {
-        printf("%d\n",max);
+        my_printf("%d\n",max);
         for (i=0; i<n; i++)
             if(max==a[i])
-                printf("%s\n",s[i]);
+                my_printf("%s\n",s[i]);
     }
 }
 

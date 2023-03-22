@@ -13,8 +13,8 @@ len++;
 }
 if(len==1){
 yu=bcs[0];
-printf("0\n");
-printf("%d",yu);
+my_printf("0\n");
+my_printf("%d",yu);
 }
 else{
 for(i=0;i<len-1;i++){
@@ -28,10 +28,10 @@ for(i=1;i<=len-1;i++){
 if(shang[i]==0&&i==1&&len!=2)
 continue;
 if(i==len-1)
-printf("%d\n",shang[i]);
+my_printf("%d\n",shang[i]);
 else
-printf("%d",shang[i]);
+my_printf("%d",shang[i]);
 }
-printf("%d\n",yu);}
-scanf("%d",&i);
+my_printf("%d\n",yu);}
+my_scanf("%d",&i);
 }

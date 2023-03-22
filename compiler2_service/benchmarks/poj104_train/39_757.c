@@ -9,12 +9,12 @@ struct student
  int dis,sum;
 }s,s1;
  int n,i,money[5],total;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  s1.sum=-1;
  total=0;
  for(i=0;i<n;i++)
  {  money[0]=money[1]=money[2]=money[3]=money[4]=0;
-	scanf("%s %d %d %c %c %d",s.name,&s.term,&s.cla,&s.lead,&s.west,&s.dis);
+	my_scanf("%s %d %d %c %c %d",s.name,&s.term,&s.cla,&s.lead,&s.west,&s.dis);
     if(s.term>80&&s.dis>0) money[0]=8000;
 	if(s.term>85&&s.cla>80) money[1]=4000;
 	if(s.term>90) money[2]=2000;
@@ -24,5 +24,5 @@ struct student
 	total+=s.sum;
 	if(s.sum>s1.sum) s1=s;
  }
-     printf("%s\n%d\n%d\n",s1.name,s1.sum,total);
+     my_printf("%s\n%d\n%d\n",s1.name,s1.sum,total);
 }

@@ -21,7 +21,7 @@ int main_bench()
 
     if(k==1)
 	{
-	printf("%d",c);
+	my_printf("%d",c);
 	}
 	else
 	{
@@ -46,10 +46,10 @@ int main_bench()
 		}
 	}
    
-	printf("%d",xlen[0]);
+	my_printf("%d",xlen[0]);
    for(i=1;i<x;i++)
    {
-   printf(",%d",xlen[i]);
+   my_printf(",%d",xlen[i]);
    }
     }
    return 0;

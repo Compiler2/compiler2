@@ -2,19 +2,19 @@
 
 main_bench()
 {int a,b,c,d,i,j,k,x[101][101],y[101][101],z[101][101]={0};
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	i=0;
 	while(i<=a-1)
 	{for(j=0;j<=b-1;j++)
-	scanf("%d",&x[i][j]); 
+	my_scanf("%d",&x[i][j]); 
 	i++;
 		}
-		scanf("%d %d",&c,&d);
+		my_scanf("%d %d",&c,&d);
 		
 	i=0;
 	while(i<=c-1)
 	{for(j=0;j<=d-1;j++)
-	scanf("%d",&y[i][j]); 
+	my_scanf("%d",&y[i][j]); 
 	i++;
 		}
 		i=0;
@@ -36,8 +36,8 @@ main_bench()
 			i=0;
 			while(i<=a-1)
 			{for(j=0;j<=d-2;j++)
-			printf("%d ",z[i][j]);
-			printf("%d\n",z[i][j]);
+			my_printf("%d ",z[i][j]);
+			my_printf("%d\n",z[i][j]);
 			i++;
 				}
 }

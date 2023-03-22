@@ -5,9 +5,9 @@ int main_bench(){
 	int a[100],b[100];
 	double x,y;
 	int r[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	x=1.0*b[0]/a[0];
 	for(i=1;i<n;i++){
@@ -23,13 +23,13 @@ int main_bench(){
 	for(i=1;i<n;i++){
 		switch(r[i]){
 		case 1:
-			printf("better\n");
+			my_printf("better\n");
 			break;
 		case 0:
-			printf("same\n");
+			my_printf("same\n");
 			break;
 		case -1:
-			printf("worse\n");
+			my_printf("worse\n");
 			break;
 		}
 	}

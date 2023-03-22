@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int row,col,i=0,j=0,array[100][100],n=0,t=0;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		}
 	}
 	i=0;
@@ -17,7 +17,7 @@ int main_bench()
 	{
 		for(j=n;j<=col-1-n;j++)
 		{
-			printf("%d\n",array[i][j]);
+			my_printf("%d\n",array[i][j]);
 			t++;
 		}
 		j=j-1;
@@ -27,7 +27,7 @@ int main_bench()
 		}
 		for(i=1+n;i<=row-1-n;i++)
 		{
-			printf("%d\n",array[i][j]);
+			my_printf("%d\n",array[i][j]);
 			t++;
 		}
 		i=i-1;
@@ -37,7 +37,7 @@ int main_bench()
 		}
 		for(j=col-2-n;j>=n;j--)
 		{
-			printf("%d\n",array[i][j]);
+			my_printf("%d\n",array[i][j]);
 			t++;
 		}
 		j=j+1;
@@ -47,7 +47,7 @@ int main_bench()
 		}
 		for(i=row-2-n;i>=1+n;i--)
 		{
-			printf("%d\n",array[i][j]);
+			my_printf("%d\n",array[i][j]);
 			t++;
 		}
 		i=i+1;

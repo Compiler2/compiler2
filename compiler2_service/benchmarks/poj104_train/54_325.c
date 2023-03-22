@@ -6,7 +6,7 @@ int main_bench()
 	s=1;
 	j=0;
 	i=1;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	while(i<=n)
 	{
 		s=s*n;
@@ -24,7 +24,7 @@ int main_bench()
 			
 		}
 		if(j==n)
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 	}
 }
 

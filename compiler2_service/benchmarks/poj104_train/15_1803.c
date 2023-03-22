@@ -3,13 +3,13 @@
 int main_bench()
 {
     int an[100][100],i,j,n,s,a,b,flag=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 
     for(i=0;i<n;i++)
     {
         for(j=0;j<n;j++)
         {
-        scanf("%d",&an[i][j]);
+        my_scanf("%d",&an[i][j]);
         }
     }
     for(i=0;i<n;i++)
@@ -46,7 +46,7 @@ if(flag==1)
 }
 
     s=(b-j-1)*(a-i-1);
-    printf("%d",s);
+    my_printf("%d",s);
     return 0;
 }
 

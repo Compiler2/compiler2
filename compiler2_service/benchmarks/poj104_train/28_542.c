@@ -15,8 +15,8 @@ int main_bench()
 			else if(Words[i]==' '){k=1;}
 		}
 		for(int t=0;t<j;t++){
-			printf("%d,",Cd[t]);
+			my_printf("%d,",Cd[t]);
 		}
-		printf("%d",Cd[j]);
+		my_printf("%d",Cd[j]);
 		return 0;
 }

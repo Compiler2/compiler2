@@ -21,6 +21,6 @@ int main_bench()
         }
 	}
 	b[c]='\0';
-	printf ("%s",b);
+	my_printf ("%s",b);
 	return 0;
 }

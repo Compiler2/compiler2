@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n,i,m,x[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<100;i++)
 	{
 		if(i==n)
 			break;
-		scanf("%d",&x[i]);
+		my_scanf("%d",&x[i]);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -27,6 +27,6 @@ int main_bench(){
 			x[i+1]=m;
 		}
 	}
-	printf("%d\n%d\n",x[n-1],x[n-2]);
+	my_printf("%d\n%d\n",x[n-1],x[n-2]);
 	return 0;
 }

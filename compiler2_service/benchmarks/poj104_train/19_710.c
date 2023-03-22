@@ -21,9 +21,9 @@ int main_bench()
 	}
 	for(i=0;i<=m;i++)
 		if (strcmp(s,e[i])==0) strcpy(e[i],d);
-	printf("%s",e[0]);
+	my_printf("%s",e[0]);
 	for(i=1;i<=m;i++)
-		printf(" %s",e[i]);
+		my_printf(" %s",e[i]);
 
 
 }

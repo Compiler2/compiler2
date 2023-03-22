@@ -3,7 +3,7 @@
 int main_bench(){
     int max1,max2,num,i=1;
     while(i<=10){
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     if(i==1){
       max1=num;
     }else if(i==2){
@@ -23,6 +23,6 @@ max2=num;
 }
 i++;
 }
-printf("%d\n%d\n",max1,max2);
+my_printf("%d\n%d\n",max1,max2);
 return 0;
 }

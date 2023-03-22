@@ -3,11 +3,11 @@
 main_bench()
 {
       int n,i,j,count;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int a[100000];
       for(i=0;i<n;i++)
       {
-         scanf("%d",&a[i]);
+         my_scanf("%d",&a[i]);
          }
       for(i=0;i<n;i++)
       {
@@ -23,11 +23,11 @@ main_bench()
                       if(a[i]!=0)
                       if(count==0)
                       {
-                      printf("%d",a[i]);
+                      my_printf("%d",a[i]);
                       count=1;
                       }
                       else
-                      printf(" %d",a[i]);
+                      my_printf(" %d",a[i]);
       }
       getchar();
       getchar();

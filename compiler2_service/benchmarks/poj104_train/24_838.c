@@ -40,7 +40,7 @@ int main_bench()
   {
        if(l[i]==max)
        {
-            printf("%s\n",w[i]);
+            my_printf("%s\n",w[i]);
             break;
        }
   }
@@ -48,7 +48,7 @@ int main_bench()
   {
        if(l[i]==min)
        {
-            printf("%s\n",w[i]);
+            my_printf("%s\n",w[i]);
             break;
        }
   }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[12],i,j=0,month,day,d,w;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(month=1;month<=12;month++)
 	{
 		if(month==1||month==3||month==5||month==7||month==8||month==10||month==12) day=31;
@@ -36,6 +36,6 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}
 }

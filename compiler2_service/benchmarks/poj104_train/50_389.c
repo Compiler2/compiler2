@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int w,month,day;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for (month=1;month<=12;month++)
 	{
 		switch (month){
@@ -31,7 +31,7 @@ int main_bench()
 		}
 		if (day==5)
 		{
-			printf("%d\n",month);
+			my_printf("%d\n",month);
 		}
 	}                   
 	return 0;

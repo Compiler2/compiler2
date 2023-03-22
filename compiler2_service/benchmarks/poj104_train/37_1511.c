@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,x,j,y,f,z[26],k,m;
 	char a[100][10000],b[26];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		f=0;
 		for(x=0;x<26;x++)
 		{
@@ -30,7 +30,7 @@ int main_bench()
 			}
 
 		}
-		if(y==0)printf("no\n");
+		if(y==0)my_printf("no\n");
 		else
 		{
 			for(m=0;m<strlen(a[i]);m++)	
@@ -39,7 +39,7 @@ int main_bench()
 				{
 					if(a[i][m]==b[j])
 					{
-						printf("%c\n",b[j]);
+						my_printf("%c\n",b[j]);
 						f=1;
 						break;
 					}

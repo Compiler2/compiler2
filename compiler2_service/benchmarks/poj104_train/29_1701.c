@@ -10,11 +10,11 @@ int main_bench()
 	
 
 	double x;int i,j,k,l, m,n,y;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    for (i=1;i<=m;i++)
-   {scanf("%d",&y);
+   {my_scanf("%d",&y);
     x=0;for (j=0;j<=y-1;j++) x+=cal(0,j,2.0);
-	printf("%.3lf\n",x);}
+	my_printf("%.3lf\n",x);}
 
  
 }

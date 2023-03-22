@@ -7,12 +7,12 @@ int main_bench()
 	int len1,len2;
 	int i,j,m=0;
 
-	scanf("%s%s",str1,str2);
+	my_scanf("%s%s",str1,str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 
 	if(len1!=len2)
-		printf("NO\n");
+		my_printf("NO\n");
 
 	else
 	{
@@ -31,9 +31,9 @@ int main_bench()
 		}
 
 		if(m)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 
 	return 0;

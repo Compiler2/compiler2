@@ -6,11 +6,11 @@ int main_bench()
 {
 	int n;
 	char a[25];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,k,l,j;
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",&a);	
+		my_scanf("%s",&a);	
 		l=strlen(a);
 		k=1;
 		if(a[0]==95 || (a[0]<='z'&& a[0]>='a') || (a[0]<='Z'&& a[0]>='A') )
@@ -27,8 +27,8 @@ int main_bench()
 		{
 			k=k*a[j];
 		}
-		if(k==1)printf("yes\n");
-		if(k==0)printf("no\n");
+		if(k==1)my_printf("yes\n");
+		if(k==0)my_printf("no\n");
 	}
 	return 0;
 }

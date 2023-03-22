@@ -14,7 +14,7 @@ int main_bench()
 			  for(t=j;t<=j+i-1;t++)
 		   { if(a[t-1]!=a[j+j+i-t-2]) p=1; }
 		   if(p==0)
-		   { for(t=j;t<=j+i-1;t++) printf("%c",a[t-1]);printf("\n");}
+		   { for(t=j;t<=j+i-1;t++) my_printf("%c",a[t-1]);my_printf("\n");}
           }
       }
    

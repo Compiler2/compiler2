@@ -4,13 +4,13 @@ int main_bench()
 {
 	void move(int a[100],int n,int m);
 	int n,m,i,a[100];
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	move(a,n,m);
 	for(i=0;i<n-1;i++)
-		printf("%d ",a[i]);
-	printf("%d\n",a[n-1]);
+		my_printf("%d ",a[i]);
+	my_printf("%d\n",a[n-1]);
 }
 
 void move(int a[100],int n,int m)

@@ -6,7 +6,7 @@ int* num (int a)
      p=(int*)malloc(a*sizeof(int));
      for (i=0;i<a;i++)
      {
-         scanf("%d",&p[i]);
+         my_scanf("%d",&p[i]);
      }
      return  p;
 }
@@ -45,16 +45,16 @@ void print(int *p3,int x)
      for (i=0;i<x;i++)
      {
          if (i==0)
-         printf ("%d",p3[0]);
+         my_printf ("%d",p3[0]);
          else
-         printf (" %d",p3[i]);
+         my_printf (" %d",p3[i]);
      }
 }
 
 main_bench()
 {
       int a,b,*p1,*p2,*p3;
-      scanf ("%d",&a);scanf("%d",&b);
+      my_scanf ("%d",&a);my_scanf("%d",&b);
       p1=num(a);p2=num(b);
       rank(p1,a);rank(p2,b);
       p3=add (p1,p2,a,b);

@@ -10,7 +10,7 @@ int main_bench()
   a[i]=0;
   b[i]=0;
  }
- scanf("%s",z);
+ my_scanf("%s",z);
  l=(int)strlen(z);
  for(i=0;i<l;i++)
  {
@@ -36,7 +36,7 @@ int main_bench()
   if(a[i]!=0)
   {
    m='A'+i;
-   printf("%c=%d\n",m,a[i]);
+   my_printf("%c=%d\n",m,a[i]);
   }
  }
 for(i=0;i<26;i++)
@@ -44,7 +44,7 @@ for(i=0;i<26;i++)
   if(b[i]!=0)
   {
       m='a'+i;
-   printf("%c=%d\n",m,b[i]); 
+   my_printf("%c=%d\n",m,b[i]); 
   }
  }
 int sum=0;
@@ -53,7 +53,7 @@ for(i=0;i<26;i++)
 sum=sum+a[i]+b[i];
 }
 if(sum==0){
-printf("No");}
+my_printf("No");}
 return 0;
 }
  

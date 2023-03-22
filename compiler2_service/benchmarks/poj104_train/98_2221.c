@@ -6,10 +6,10 @@ main_bench()
 	int i, t;
 	char w[200][41], c[100]={'\0'};
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s", w[i]);
+		my_scanf("%s", w[i]);
 	}
 	for(i=0; i<n; i++)
 	{
@@ -33,14 +33,14 @@ main_bench()
 			{
 				c[L-1]='\0';
 				puts(c);
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 		if(L>81)
 		{
 			c[L-1-l]='\0';
 			puts(c);
-			printf("\n");
+			my_printf("\n");
 			for(t=0; c[t]!='\0'; t++)
 				{
 					c[t]='\0';

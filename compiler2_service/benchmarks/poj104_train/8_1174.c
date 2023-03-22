@@ -5,11 +5,11 @@ static char a[100],b[100];
 int i,j,temp;
 void get()
 {
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-	scanf("%d",&b[i]);
+	my_scanf("%d",&b[i]);
 }
 void order()
 {
@@ -37,9 +37,9 @@ void com()
 }
 void print()
 {
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<n+m;i++)
-	printf(" %d",a[i]);
+	my_printf(" %d",a[i]);
 }
 int main_bench()
 {

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j;
 	char word[10000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s\n",word[i]);
+		my_scanf("%s\n",word[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<256;j++){
@@ -33,7 +33,7 @@ int main_bench()
 			}
 for(i=0;i<n;i++)
 {
-printf("%s\n",word[i]);
+my_printf("%s\n",word[i]);
 }
 	
 

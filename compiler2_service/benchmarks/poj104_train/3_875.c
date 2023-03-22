@@ -4,20 +4,20 @@ int main_bench()
 {
 	int n,k,i,j,p=1;
 	int sz[1000];
-	scanf("%d %d\n",&n,&k);
-	scanf("%d",&sz[0]);
+	my_scanf("%d %d\n",&n,&k);
+	my_scanf("%d",&sz[0]);
 	for(i=1;i<n;i++){
-		scanf(" %d",&sz[i]);
+		my_scanf(" %d",&sz[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=i;j<n;j++){
 			if(sz[i]+sz[j]==k){
-				printf("yes");
+				my_printf("yes");
 				return 0;
 			}
 		}
 	}
-	printf("no");
+	my_printf("no");
 	return 0;
 }
 			

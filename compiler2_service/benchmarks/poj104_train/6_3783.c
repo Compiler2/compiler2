@@ -3,19 +3,19 @@
 int main_bench()
 {
     int k,n,m,i,j,a[100][100],s,q[100],h1,h2,t,l1,l2,c;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     for(i=1,t=0;i<=k,t<k;i++,t++)
       {  h1=0,h2=0,t,l1=0,l2=0;  
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
 		
 		if(n==1&&m==1)
-		{	scanf("%d",&a[0][0]);
+		{	my_scanf("%d",&a[0][0]);
 	    q[t]=a[0][0];}
 	   
 		if(m==1&&n>1)
 		{	
 		   for(i=0;i<n;i++)
-				scanf("%d",&a[0][i]);
+				my_scanf("%d",&a[0][i]);
 
            for(c=0,i=0;i<n;i++)
 			c=c+a[0][i];
@@ -25,7 +25,7 @@ int main_bench()
 		if(n>1&&m>1)
         {for(i=0;i<m;i++)
         { for(j=0;j<n;j++)
-          {scanf("%d",&a[i][j]);}}
+          {my_scanf("%d",&a[i][j]);}}
         for(j=0;j<n;j++)
             {h1=h1+a[0][j];}
         for(j=0;j<n;j++)
@@ -39,7 +39,7 @@ int main_bench()
 		if(n==1&&m>1)
 		{	
 		   for(i=0;i<m;i++)
-				scanf("%d",&a[i][0]);
+				my_scanf("%d",&a[i][0]);
 
            for(c=0,i=0;i<m;i++)
 			c=c+a[i][0];
@@ -49,6 +49,6 @@ int main_bench()
         
         
         for(i=0;i<k;i++)
-            {printf("%d\n",q[i]);}
+            {my_printf("%d\n",q[i]);}
                 return 0;
 }

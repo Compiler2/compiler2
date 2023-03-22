@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     int i,k,e,max;
     for(i=0;i<n;i++){
-        scanf("%d",&(a[i]));
+        my_scanf("%d",&(a[i]));
         
     }
     for(k=1;k<=n;k++){
@@ -28,9 +28,9 @@ int main_bench()
     for(i=0;i<n;i++){
         if((a[i])%2==1){
             if(i==n-2||i==n-1){
-            printf("%d",a[i]);
+            my_printf("%d",a[i]);
         }else {
-            printf("%d,",a[i]);
+            my_printf("%d,",a[i]);
         }
     }
 }

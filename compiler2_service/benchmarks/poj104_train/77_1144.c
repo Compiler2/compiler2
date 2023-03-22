@@ -18,7 +18,7 @@ int main_bench()
 		{
 			s[b[top-1]]=' ';
 			s[i]=' ';
-			printf("%d %d\n",b[top-1],i);
+			my_printf("%d %d\n",b[top-1],i);
 			top--;
 		}
 	}

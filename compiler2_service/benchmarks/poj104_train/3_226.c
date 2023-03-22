@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,i,j;
 	double a[100000],k,tmp=0;
-	scanf("%d %lf",&n,&k);
+	my_scanf("%d %lf",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 	}
 	for(i=1;i<n;i++)
 	{
@@ -23,9 +23,9 @@ int main_bench()
 	
     if ( (tmp==k)||(n==670)||(k==142)||(n==195)||(k==490)||(n==752)||(k==245)
 	||(n==590)||(k==887)||(n==160)||(k==503)	)
-	printf("yes\n");
+	my_printf("yes\n");
 	else 
-	printf("no\n");
+	my_printf("no\n");
 		
     return 0;
 }

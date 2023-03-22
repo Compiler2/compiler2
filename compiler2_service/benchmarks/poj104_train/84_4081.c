@@ -3,9 +3,9 @@
 main_bench()
 {
 	int i=0,j=1,k=1,m=1,n,str[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&str[i]);
+		my_scanf("%d",&str[i]);
 	for(j=1;j<n;j++)
 	{
 		if(str[j-1]>str[j])
@@ -29,7 +29,7 @@ main_bench()
 
 
 
-	printf("%d\n",str[n-1]);
-    printf("%d\n",str[n-2]);
+	my_printf("%d\n",str[n-1]);
+    my_printf("%d\n",str[n-2]);
 
 }

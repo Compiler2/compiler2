@@ -26,12 +26,12 @@ int main_bench()
 	int i=0,x;
 	int out[6];
 	for(;i<6;i++){
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		out[i]=reverse(num(x));
 	}
 	for(i=0;i<6;i++){
 
-	printf("%d\n",out[i]);
+	my_printf("%d\n",out[i]);
 	}
 	return 0;
 }

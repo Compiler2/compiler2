@@ -5,11 +5,11 @@ int main_bench()
 int a[100];
 int b[100];
 int n,i,max,m;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for (i=0;i<n;i++){
-	scanf("%d %d\n",&a[i],&b[i]);
+	my_scanf("%d %d\n",&a[i],&b[i]);
 }
-printf("\n");
+my_printf("\n");
 m=0;
 max=0;
 for (i=0;i<n;i++){
@@ -24,6 +24,6 @@ for (i=0;i<n;i++){
 }
 if (a[n-1]>=90&&a[n-1]<=140&&b[n-1]>=60&&b[n-1]<=90&&m>max)
 max=m;
-printf("%d\n",max);
+my_printf("%d\n",max);
 return 0;
 }

@@ -6,9 +6,9 @@ int main_bench()
 	int a[300];
 	int b[300];
 	int i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     b[1]=a[1];
 	for(i=1;i<=n;i++)
 	{
@@ -24,11 +24,11 @@ int main_bench()
 		}
 	
 	}
-	if(h==1) printf("%d",a[1]);
+	if(h==1) my_printf("%d",a[1]);
 	if(h>=2)
 	{
-    for(i=1;i<=h-1;i++)printf("%d,",b[i]);
-	printf("%d",b[h]);
+    for(i=1;i<=h-1;i++)my_printf("%d,",b[i]);
+	my_printf("%d",b[h]);
 	return 0;
 	}
 }

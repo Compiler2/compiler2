@@ -3,7 +3,7 @@
 int main_bench()
 {
     int x,y;
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
     while(x!=y)
 	{
 	if(x<y)
@@ -11,5 +11,5 @@ int main_bench()
 	else if(x>y)
 	x=x/2;
 	}
-	printf("%d\n",x);
+	my_printf("%d\n",x);
 }

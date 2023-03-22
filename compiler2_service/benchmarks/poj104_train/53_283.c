@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[300],b,i,d,e;
-	scanf("%d",&b);
-	scanf("\n");
+	my_scanf("%d",&b);
+	my_scanf("\n");
     for(i=0;i<b;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     for(d=b-1;d>0;d--)
 	{
 	 for(e=1;e<=d;e++)
@@ -19,11 +19,11 @@ int main_bench()
 	 else  continue;
 	 }
 	}
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
 	for(i=1;i<b;i++)
     {
 		if(a[i]!=0)
-	printf(",%d",a[i]);
+	my_printf(",%d",a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

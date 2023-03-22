@@ -8,7 +8,7 @@ int main_bench()
     m=-99990; n=-88880;
     while (c==',')
     {
-          scanf("%d",&i);
+          my_scanf("%d",&i);
           if (i>m)
           {
              n=m; m=i;
@@ -16,6 +16,6 @@ int main_bench()
           else if ((i>n)&&(i<m))  n=i;
           c=getchar();
     }
-    if ((n!=-88880)&&(n!=-99990)) printf("%d",n);
-    else printf("No");
+    if ((n!=-88880)&&(n!=-99990)) my_printf("%d",n);
+    else my_printf("No");
 }

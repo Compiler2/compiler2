@@ -2,13 +2,13 @@
 
 int main_bench(){
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[200]={0};
     int b[200]={0};
     int i;
     int wina=0,winb=0;
     for(i=0;i<n;i++){
-        scanf("%d%d",&a[i],&b[i]);
+        my_scanf("%d%d",&a[i],&b[i]);
         if(a[i]==0&&b[i]==1||a[i]==1&&b[i]==2||a[i]==2&&b[i]==0){
             wina++;
         }
@@ -16,8 +16,8 @@ int main_bench(){
             winb++;
         }
     }
-    if(wina>winb){printf("A");}
-    else if(wina<winb){printf("B");}
-    else if(wina=winb){printf("Tie");}
+    if(wina>winb){my_printf("A");}
+    else if(wina<winb){my_printf("B");}
+    else if(wina=winb){my_printf("Tie");}
     return 0;
 }

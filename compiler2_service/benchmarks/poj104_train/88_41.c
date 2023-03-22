@@ -15,7 +15,7 @@ int main_bench(){
             }
         }
     for(i=0;i<=o;i++){
-        if(strcmp(b[i]," ")!=-1) printf("%s\n",b[i]);
+        if(strcmp(b[i]," ")!=-1) my_printf("%s\n",b[i]);
         
         }
     
@@ -24,6 +24,6 @@ int main_bench(){
     
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

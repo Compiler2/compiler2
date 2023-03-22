@@ -3,19 +3,19 @@
 int dijitian(int Y,int M,int D);
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int Y[200];
 	int M[200];
 	int m[200];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&Y[i],&M[i],&m[i]);
+		my_scanf("%d%d%d",&Y[i],&M[i],&m[i]);
 	}
 	for(i=0;i<n;i++){
 		if((dijitian(Y[i],M[i],1)-dijitian(Y[i],m[i],1))%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 
 		}

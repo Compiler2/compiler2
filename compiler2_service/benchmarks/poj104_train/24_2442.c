@@ -32,7 +32,7 @@ main_bench()
 			}
 		}
 	}
-	for(i=a-max+1;i<=a;i++) printf("%c",s[i]);
-	printf("\n");
-	for(i=b-min+1;i<=b;i++) printf("%c",s[i]);
+	for(i=a-max+1;i<=a;i++) my_printf("%c",s[i]);
+	my_printf("\n");
+	for(i=b-min+1;i<=b;i++) my_printf("%c",s[i]);
 }

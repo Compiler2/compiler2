@@ -9,11 +9,11 @@ int main_bench()
 	int max = 0;
 	int a;
 	int b;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	while(n != 0)
 	{
-		scanf("%d",&a);
-		scanf("%d",&b);
+		my_scanf("%d",&a);
+		my_scanf("%d",&b);
 		if (90 <= a && a <= 140 && 60 <= b && b<= 90)
 			k++;
 		else
@@ -24,7 +24,7 @@ int main_bench()
 			
 	   n--;
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	
    return 0;
 }

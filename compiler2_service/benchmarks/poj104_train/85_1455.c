@@ -23,15 +23,15 @@ main_bench()
       char c[21];
       int n,m,i;
       
-      scanf("%d\n",&n);
+      my_scanf("%d\n",&n);
       for  (i=1;i<=n;i++)
       {
            gets(c);
            m=strlen(c);
            if(judge(c,m))
-           printf("yes\n");
+           my_printf("yes\n");
            else
-           printf("no\n");
+           my_printf("no\n");
       }
 
 }

@@ -37,12 +37,12 @@ int lie(int no,int n)
 int main_bench()
 {
 	int m,n;
-	scanf("%d,%d",&n,&m);
+	my_scanf("%d,%d",&n,&m);
 	for (int i=0; i<n; i++)
 	{
 		for (int j=0; j<m; j++)
 		{
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	for (int i=0; i<n; i++)
@@ -57,10 +57,10 @@ int main_bench()
 	{
 		if (yy[(xx[i])]==i)
 		{
-			printf("%d+%d\n",i,xx[i]);
+			my_printf("%d+%d\n",i,xx[i]);
 			return 0;
 		}
 	}
-	printf("No\n");
+	my_printf("No\n");
 	return 0;
 }

@@ -25,10 +25,10 @@ int main_bench()
 		}
 	}
 	if(strcmp(str1,str2)<0)
-		printf("<");
+		my_printf("<");
 	else if(strcmp(str1,str2)>0)
-		printf(">");
+		my_printf(">");
 	else if(strcmp(str1,str2)==0)
-		printf("=");
+		my_printf("=");
 	return 0;
 }

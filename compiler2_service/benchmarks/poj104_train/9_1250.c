@@ -12,10 +12,10 @@ int main_bench()
 
 	char s[10];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%s %d",&br[i].id,&br[i].age);
+		my_scanf("%s %d",&br[i].id,&br[i].age);
 	   
 	}
 
@@ -45,13 +45,13 @@ int main_bench()
 	
 	for(i=0;i<n;i++){
 		if(br[i].age>=60){
-			printf("%s\n",br[i].id);
+			my_printf("%s\n",br[i].id);
 		}
 	}
 
 	for(i=0;i<n;i++){
 		if(br[i].age<60){
-			printf("%s\n",br[i].id);
+			my_printf("%s\n",br[i].id);
 		}
 	}
 

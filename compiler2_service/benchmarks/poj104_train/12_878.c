@@ -10,7 +10,7 @@ int main_bench()
    
   for(j=0;j<=15;j++)
   {
-   scanf("%d",&a[i][j]);
+   my_scanf("%d",&a[i][j]);
    if(a[i][j]==0||a[i][j]==-1)
    {
 	   break;}
@@ -35,7 +35,7 @@ int main_bench()
  {
   if(b[q]==-1)
   {break;}
-  printf("%d\n",b[q]);
+  my_printf("%d\n",b[q]);
  }
  return 0;
 }

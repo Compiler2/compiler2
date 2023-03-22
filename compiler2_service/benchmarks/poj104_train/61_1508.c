@@ -4,11 +4,11 @@ int F(int n);
 int main_bench()
 {
  int n,b,p,q;
-scanf("%d",&p);
+my_scanf("%d",&p);
 for (q=0;q<p;q++){
- scanf("%d",&n);
+ my_scanf("%d",&n);
  b=F(n);
- printf("%d\n",b);
+ my_printf("%d\n",b);
 }
 
   return 0;

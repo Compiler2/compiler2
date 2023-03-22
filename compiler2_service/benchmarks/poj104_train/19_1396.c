@@ -36,7 +36,7 @@ int main_bench()
 			strcpy(word[i],b);
 	}
 	for(i=0;i<k;i++)
-		printf("%s ",word[i]);
-	printf("%s",word[k]);
+		my_printf("%s ",word[i]);
+	my_printf("%s",word[k]);
 	return 0;
 }

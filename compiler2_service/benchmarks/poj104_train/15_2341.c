@@ -3,18 +3,18 @@
 main_bench()
 {
 	int n,a,i,j,s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a==0)
 				break;
 		}
 		for(j++;j<n;j++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(a==255)
 				s++;
 			else
@@ -22,8 +22,8 @@ main_bench()
 		}
 		for(j++;j<n;j++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 		}
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 } 

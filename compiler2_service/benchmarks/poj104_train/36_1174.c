@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char zfc1[100],zfc2[100];
-	scanf("%s %s",zfc1,zfc2);
+	my_scanf("%s %s",zfc1,zfc2);
 	char *p1=zfc1,*p2=zfc2;
 	int judge=1,judge2=0;
 	for(;*p1!='\0';p1++){
@@ -22,9 +22,9 @@ int main_bench()
 		}
 	}
 	if(judge&&strlen(zfc1)==strlen(zfc2)){
-		printf("YES");
+		my_printf("YES");
 	}else{
-		printf("NO");
+		my_printf("NO");
 	}
 	return 0;
 }

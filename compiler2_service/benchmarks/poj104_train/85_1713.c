@@ -3,9 +3,9 @@
 int main_bench(){
 	int a,i,n,c,d,e;
 	char b[100];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++){
-		scanf("%s",&b);
+		my_scanf("%s",&b);
 		d=strlen(b);
 		if((b[0]<=90&&b[0]>=65)||b[0]==95||(b[0]>=97&&b[0]<=122))
 			e=1;
@@ -23,9 +23,9 @@ int main_bench(){
 			
 		}
 		if(c==1&&e==1)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

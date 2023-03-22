@@ -5,7 +5,7 @@ int bianyuan(int n,int m){
 	int i,j,result;
 	for(i=0;i<n;i++){
 		for(j=0;j<m;j++){
-			scanf("%d",&juzhen[i][j]);
+			my_scanf("%d",&juzhen[i][j]);
 		}
 	}
 	result=0;
@@ -27,11 +27,11 @@ int main_bench()
 {
 	int n,i;
 	int a,lie,hang;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&lie,&hang);
+		my_scanf("%d %d",&lie,&hang);
 		a=bianyuan(lie,hang);
-		printf("%d\n",a);
+		my_printf("%d\n",a);
 	}
 	return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
 int n,i,g,j;
 int a[200],b[200];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %d",&a[i],&b[i]);
+my_scanf("%d %d",&a[i],&b[i]);
 }
 g=0;
 for(j=0;j<n;j++){
@@ -21,13 +21,13 @@ for(j=0;j<n;j++){
 	}
 }
 if(g>0){
-printf("A");
+my_printf("A");
 }
 if(g==0){
-printf("Tie");
+my_printf("Tie");
 }
 if(g<0){
-printf("B");
+my_printf("B");
 }
 return 0;
 }

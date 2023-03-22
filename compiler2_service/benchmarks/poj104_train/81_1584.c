@@ -12,10 +12,10 @@ int main_bench()
 	int a[5][5],n,m,temp,i,j;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d %d",&n,&m);
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d %d",&n,&m);
 	if(f1(n,m)==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(j=0;j<5;j++)
@@ -25,7 +25,7 @@ int main_bench()
 			a[m][j]=temp;
 		}
 		for(i=0;i<5;i++)
-			printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
+			my_printf("%d %d %d %d %d\n",a[i][0],a[i][1],a[i][2],a[i][3],a[i][4]);
 	}
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int b[60]={0};
 	char a[300];
 	char *p=a;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(;*p!='\0';p++)
 	{
 		for(int o=65;o<=90;o++){
@@ -24,13 +24,13 @@ int main_bench()
 		v=*s;
 		if(b[i]!=0)
 		{
-			printf("%c=%d\n",v,b[i]);
+			my_printf("%c=%d\n",v,b[i]);
 			n++;
 		}
 
 	}
 	if(n==0)
-        printf("No\n");
+        my_printf("No\n");
 	return 0;
 }
  

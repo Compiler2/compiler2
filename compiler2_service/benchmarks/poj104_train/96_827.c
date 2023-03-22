@@ -11,19 +11,19 @@ int main_bench()
 		k=k*10+(int)(s[i]-'0');
 		if(i==1&&(k/13)!=0)
 		{
-		    printf("%d",k/13);
+		    my_printf("%d",k/13);
 		}
 		if(strlen(s)==2&&i==1&&(k/13)==0)
-			printf("0");
+			my_printf("0");
 		if(i!=1)
-			printf("%d",k/13);
+			my_printf("%d",k/13);
 		k=k%13;
 		if(i==strlen(s)-1)
 		{
-			printf("\n%d",k);
+			my_printf("\n%d",k);
 		}
 	}
 	if(strlen(s)==1)
-		printf("0\n%d",k);
+		my_printf("0\n%d",k);
 	return 0;
 }

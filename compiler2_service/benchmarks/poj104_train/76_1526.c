@@ -5,9 +5,9 @@ int main_bench(){
     int a,b;
     int s=0;
     int sz[50001],szz[50001];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-                      scanf("%d%d",&sz[i],&szz[i]);
+                      my_scanf("%d%d",&sz[i],&szz[i]);
                       }
     for(k=1;k<=n;k++){
                       for(i=0;i<n-k;i++){
@@ -41,10 +41,10 @@ int main_bench(){
                                                              }
                                                              }
     if(s==n-1){
-             printf("%d %d",sz[0],szz[n-1]);
+             my_printf("%d %d",sz[0],szz[n-1]);
              }
     else{
-         printf("no");
+         my_printf("no");
          }
    
     

@@ -4,12 +4,12 @@ int DiJiTian(int year,int mon);
 int main_bench(){
 int i,n,mon1,mon2,year,result;
 int sz[200];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
    sz[i]=0;
    }   
    for(i=0;i<n;i++){
-	scanf("%d %d %d", &year, &mon1, &mon2);
+	my_scanf("%d %d %d", &year, &mon1, &mon2);
     result=DiJiTian(year,mon1)-DiJiTian(year,mon2);
 	if(result<0){
 		result=0-result;
@@ -19,9 +19,9 @@ int sz[200];
    }
    for(i=0;i<n;i++){
 	   if(sz[i]==1){
-   printf("YES\n");
+   my_printf("YES\n");
 	   }else{
-		   printf("NO\n");}
+		   my_printf("NO\n");}
    }
 	   return 0;
 }

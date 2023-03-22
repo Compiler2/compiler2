@@ -10,7 +10,7 @@ int tj(char str[],char x)
 int main_bench()
 {	int i,p=1;
     char a[100],b[100];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)!=strlen(b)) p=0;
 	else
 	{length=strlen(a);
@@ -19,6 +19,6 @@ int main_bench()
 		{p=0;break;
 		}
 	}
-	if(p==1) printf("YES\n");
-	else printf("NO\n");
+	if(p==1) my_printf("YES\n");
+	else my_printf("NO\n");
 }

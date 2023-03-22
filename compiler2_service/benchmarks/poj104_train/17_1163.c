@@ -3,15 +3,15 @@
 int main_bench()
 {int k,i,l,j,n=1,t,h,m;
 char a[200];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
-{scanf("%s",a);
+{my_scanf("%s",a);
 l=strlen(a);
 for(j=0;j<l;j++)
-{printf("%c",a[j]);
+{my_printf("%c",a[j]);
 }
 
-printf("\n");
+my_printf("\n");
 for(j=0;j<l;j++)
 {
 	if(a[j]=='(')
@@ -34,10 +34,10 @@ for(j=0;j<l;j++)
 }
 
 for(j=0;j<l;j++)
-{printf("%c",a[j]);
+{my_printf("%c",a[j]);
 }
 
-printf("\n");
+my_printf("\n");
 
 
 

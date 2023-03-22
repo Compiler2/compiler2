@@ -4,10 +4,10 @@ main_bench()
 {
     char a[100][101],b[101],c[101];
     int n,m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(m=0;m<n;m++)
     {
-    scanf("%s",a[m]);
+    my_scanf("%s",a[m]);
     }
     for(m=0;m<n;m++)
     {int i=0,j=0,k=0;int n;
@@ -30,7 +30,7 @@ main_bench()
                 {c[j]=' ';
                  b[i]=' ';
                     break;}}
-        printf("%s\n",a[m]);
+        my_printf("%s\n",a[m]);
         for(i=0;i<n;i++)
         {if(b[i]!=' ')
                a[m][i]='$';
@@ -39,6 +39,6 @@ main_bench()
             if(b[i]==' '&&c[i]==' ')
                 a[m][i]=' ';
         }
-        printf("%s\n",a[m]);
+        my_printf("%s\n",a[m]);
     }
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,t,i,p=0,k,c[100];
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	for(i=a;i<=b;i++)
 	{
 		char str[20];
@@ -29,15 +29,15 @@ int main_bench()
 		}
 	}
 	if(p==0)
-		printf("no");
+		my_printf("no");
 	if(p==1)
-		printf("%d",c[0]);
+		my_printf("%d",c[0]);
 	if(p>1)
 	{
-		printf("%d",c[0]);
+		my_printf("%d",c[0]);
 		for(i=1;i<p;i++)
 		{
-            printf(",%d",c[i]);
+            my_printf(",%d",c[i]);
          }
 }
 return 0;

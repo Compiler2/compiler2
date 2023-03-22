@@ -13,20 +13,20 @@ int check()
 int main_bench()
 {
 int n,i,j;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=1;i<=n;i++)
 {
  for(j=0;j<=99;j++)
 	s[j]=0;
  l=0;
- scanf("%c",&s[0]);
+ my_scanf("%c",&s[0]);
  while(s[l]!='\n')
  {
 	l++;
-	scanf("%c",&s[l]);
+	my_scanf("%c",&s[l]);
  }
  
- printf("%d\n",check());
+ my_printf("%d\n",check());
 }
 return 0;
 }

@@ -15,14 +15,14 @@ char com(char ch)
 int main_bench(){
 	int n,i,j;
 	char chain[1000][256];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",chain[i]);
+		my_scanf("%s",chain[i]);
 		for(j=0;j<strlen(chain[i]);j++)
 			chain[i][j]=com(chain[i][j]);
 	}
 	for(i=0;i<n;i++)
-		printf("%s\n",chain[i]);
+		my_printf("%s\n",chain[i]);
 	return 0;
 }
 

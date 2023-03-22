@@ -33,10 +33,10 @@ int r(int zong,int dui){
 int main_bench(){
 	int k,m,n;
 	int i,dui,u;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++){
 		u=0;
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		if(m>n){
 			dui=n;
 		}
@@ -45,9 +45,9 @@ int main_bench(){
 		}
 		u=r(m,dui);
 		if(i!=0){
-			printf("\n");
+			my_printf("\n");
 		}
-		printf("%d",u);
+		my_printf("%d",u);
 	}
 	return 0;
 }

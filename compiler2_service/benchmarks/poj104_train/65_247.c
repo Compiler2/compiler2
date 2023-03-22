@@ -2,11 +2,11 @@
 
 int main_bench(){
     int n,i,k,l;
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     int sz[n][2];
     for (i=0;i<n;i++){
         for(k=0;k<2;k++){
-        scanf("%d",&sz[i][k]);
+        my_scanf("%d",&sz[i][k]);
         }
        }
        l=0;
@@ -23,11 +23,11 @@ int main_bench(){
                                                              }
                                                              }
                                                       if(l>0){
-                                                              printf("A");
+                                                              my_printf("A");
                                                               }else if(l==0){
-                                                                    printf("Tie");}
+                                                                    my_printf("Tie");}
                                                                     else {
-                                                                         printf("B");
+                                                                         my_printf("B");
                                                                          }                                                                               
     return 0;
 }

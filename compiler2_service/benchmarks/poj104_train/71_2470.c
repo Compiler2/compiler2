@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int  y[200],m,s=0,n,i,p=0,a[200],b[200],q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	scanf("%d %d %d",&y[i],&a[i],&b[i]);
+	my_scanf("%d %d %d",&y[i],&a[i],&b[i]);
 	}
 for(i=0;i<n;i++){
 		
@@ -57,10 +57,10 @@ for(m=1;m<b[i];m++)
 }
 q=s-p;
 if(q%7==0){
-	printf("YES\n");
+	my_printf("YES\n");
 }
 else{
-	printf("NO\n");
+	my_printf("NO\n");
 }
 	s=0;p=0;
 }

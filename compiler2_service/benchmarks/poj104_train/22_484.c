@@ -4,12 +4,12 @@ int main_bench()
 {
    int n,a,b,m1,m2;
    char q;
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    m1=a;m2=-100;
-   scanf("%c",&q);
+   my_scanf("%c",&q);
    while (q==',') 
    {
-     scanf("%d%c",&a,&q);
+     my_scanf("%d%c",&a,&q);
  
      if (a>m1) 
         {
@@ -19,7 +19,7 @@ int main_bench()
         if ((a>m2)&&(a<m1)) 
         m2=a;
    }
-  if (m2==-100)printf("No");else printf("%d\n",m2);
+  if (m2==-100)my_printf("No");else my_printf("%d\n",m2);
   
    
    return 0;    

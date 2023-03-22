@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[100],b[100],n,l,m,i,j;
 	char c[101],d[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--)
 	{
-		scanf("%s%s",c,d);
+		my_scanf("%s%s",c,d);
 		l=strlen(c);
 		m=strlen(d);
 		for(i=0;i<l;i++)
@@ -33,8 +33,8 @@ int main_bench()
 			if(a[j]!=0)
 				break;
 		for(i=j;i<l;i++)
-			printf("%d",a[i]);
-		printf("\n");
+			my_printf("%d",a[i]);
+		my_printf("\n");
 	}
 
 }

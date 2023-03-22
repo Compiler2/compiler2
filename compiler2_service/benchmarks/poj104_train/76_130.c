@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int QJ[n][2];
     for(int i=0;i<n;i++){
-        scanf("%d %d",&QJ[i][0],&QJ[i][1]);
+        my_scanf("%d %d",&QJ[i][0],&QJ[i][1]);
         }
     for(int j=0;j<n-1;j++){
         for(int k=0;k<n-1-j;k++){
@@ -28,7 +28,7 @@ int main_bench(){
                }
             }
         if(s==n){
-               printf("no");
+               my_printf("no");
                break;
                }
         if(m==QJ[n-1][0]){
@@ -42,7 +42,7 @@ int main_bench(){
                }
             }
         }           
-               printf("%d %d",QJ[0][0],QJ[n-1][1]);               
+               my_printf("%d %d",QJ[0][0],QJ[n-1][1]);               
                }
             }
         return 0;

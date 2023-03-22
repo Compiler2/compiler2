@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,j,m,p;
 	char zichuan[100],danci[100];
-	scanf("%s%s",&zichuan,&danci);
+	my_scanf("%s%s",&zichuan,&danci);
     int n=strlen(zichuan);
 	p=0;
 	for(i=0;danci[i]!=0;i++)
@@ -25,7 +25,7 @@ int main_bench()
 				{
 					p=1;
 					m=i;
-					printf("%d",m);
+					my_printf("%d",m);
 					break;
 				}
 			}

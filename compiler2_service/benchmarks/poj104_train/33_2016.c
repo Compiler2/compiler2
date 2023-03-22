@@ -5,13 +5,13 @@ int main_bench()
 {
 	int n, i, j;
 	char **dna;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	dna=(char**)malloc(sizeof(char*)*n);
 	for (i=0;i<n;i++)
 		dna[i]=(char*)malloc(sizeof(char)*255);
 	
 	for (i=0;i<n;i++)
-		scanf("%s",dna[i]);
+		my_scanf("%s",dna[i]);
 
 	char ch;
 
@@ -22,20 +22,20 @@ int main_bench()
 			switch(ch)
 			{
 			case 'A':
-				printf("T");
+				my_printf("T");
 				break;
 			case 'T':
-				printf("A");
+				my_printf("A");
 				break;
 			case 'G':
-				printf("C");
+				my_printf("C");
 				break;
 			case 'C':
-				printf("G");
+				my_printf("G");
 				break;
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 	for (i=0;i<n;i++)

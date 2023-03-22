@@ -22,9 +22,9 @@ int main_bench()
 			q++;
 		if(m==0)
 
-		    printf("%d",q-p);
+		    my_printf("%d",q-p);
 		else
-			printf(",%d",q-p);
+			my_printf(",%d",q-p);
 		p=q;
 		m++;
 	}

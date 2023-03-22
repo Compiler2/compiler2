@@ -4,10 +4,10 @@ int main_bench()
 {
  int a[100];
  int n,i,s,j;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
  }
  int max=-10000;
  for(s=0;s<n;s++)
@@ -20,7 +20,7 @@ int main_bench()
 	 if(secondMax<a[j]&&a[j]<max)
 		 secondMax=a[j];
  }
- printf("%d\n",max);
- printf("%d",secondMax);
+ my_printf("%d\n",max);
+ my_printf("%d",secondMax);
  return 0;
 }

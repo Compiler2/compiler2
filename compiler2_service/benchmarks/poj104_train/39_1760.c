@@ -5,10 +5,10 @@ int main_bench()
 	int m,n,x,y,a,b,c,d,e,i,total1=0,hu=0;
 	long int total2=0;
 	char name[20],j[20],ch1,ch2;
-	scanf("%d\n",&x);
+	my_scanf("%d\n",&x);
 	for(i=1;i<=x;i++)
 	{
-		scanf("%s %d %d %c %c %d",name,&m,&n,&ch1,&ch2,&y);
+		my_scanf("%s %d %d %c %c %d",name,&m,&n,&ch1,&ch2,&y);
 		if(m>80&&y>=1)
 			a=8000;
 		else a=0;
@@ -32,5 +32,5 @@ int main_bench()
 		}
 		total2+=total1;
 	}
-    printf("%s\n%d\n%ld\n",j,hu,total2);
+    my_printf("%s\n%d\n%ld\n",j,hu,total2);
 }

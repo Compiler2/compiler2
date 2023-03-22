@@ -3,10 +3,10 @@
 int main_bench(){
     int n,i,u,k,e,p;
     int a[60000],b[60000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     p=0;
     for(i=0,u=0;i<n;i++,u++){
-        scanf("%d %d",&(a[i]),&(b[u]));
+        my_scanf("%d %d",&(a[i]),&(b[u]));
     }
     for(k=1;k<n;k++){
         for(i=0;i<n-k;i++){
@@ -28,13 +28,13 @@ int main_bench(){
     }
     for(i=1,u=0;i<n;i++,u++){
         if(b[u]<a[i]){
-            printf("no");
+            my_printf("no");
             break;
         }else{
             p=p+1;
         }
          if(p==n-1){
-         printf("%d %d",a[0],b[n-1]);
+         my_printf("%d %d",a[0],b[n-1]);
          
          }    
     }

@@ -2,7 +2,7 @@
 
 int main_bench() {
 	double a;
-	scanf("%lf\n",&a);
+	my_scanf("%lf\n",&a);
 	char jjla[501];
 	char jjlb[501];
 	int i,j;
@@ -12,7 +12,7 @@ int main_bench() {
 	b=strlen(jjla);
 	c=strlen(jjlb);
 	if(b!=c){
-		printf("error");
+		my_printf("error");
 	}else{
 		int cwzm;
 		cwzm=0;
@@ -37,12 +37,12 @@ int main_bench() {
 			double bl;
 			bl=(double)xt/b;
 			if(bl>a){
-				printf("yes");
+				my_printf("yes");
 			}else{
-				printf("no");
+				my_printf("no");
 			}
 		}else{
-			printf("error");
+			my_printf("error");
 		}
 	}
 	return 0;

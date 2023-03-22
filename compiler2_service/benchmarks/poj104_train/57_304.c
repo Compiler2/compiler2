@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char string[100][20];
 	int i,j;
 	for(i=0;i<=n-1;i++)
-		scanf("%s",&string[i]);
+		my_scanf("%s",&string[i]);
 	int length;
 	for(i=0;i<=n-1;i++)
 	{
@@ -15,20 +15,20 @@ int main_bench()
 		if(string[i][length-2]=='e' && string[i][length-1]=='r')
 		{
 			for(j=0;j<=length-3;j++)
-				printf("%c",string[i][j]);
-			printf("\n");
+				my_printf("%c",string[i][j]);
+			my_printf("\n");
 		}
 		else if(string[i][length-2]=='l' && string[i][length-1]=='y')
 		{
 			for(j=0;j<=length-3;j++)
-				printf("%c",string[i][j]);
-			printf("\n");
+				my_printf("%c",string[i][j]);
+			my_printf("\n");
 		}
 		else
 		{
 			for(j=0;j<=length-4;j++)
-				printf("%c",string[i][j]);
-			printf("\n");
+				my_printf("%c",string[i][j]);
+			my_printf("\n");
 		}
 	}
 	return 0;

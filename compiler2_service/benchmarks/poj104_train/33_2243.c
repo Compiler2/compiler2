@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,i,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	char sz[1000][256];
 	
 	for (i=0;i<n;i++){
-		scanf ("%s",sz[i]);
+		my_scanf ("%s",sz[i]);
 	}
 	for (i=0;i<n;i++){
 		len=strlen(sz[i]);
@@ -21,12 +21,12 @@ int main_bench()
 	} 
 
 	if (n>1){
-	  printf ("%s",sz[0]);
+	  my_printf ("%s",sz[0]);
 	  for (i=1;i<n;i++){
-		printf("\n%s",sz[i]);
+		my_printf("\n%s",sz[i]);
 	  }
         }
-	else printf ("%s",sz[0]);
+	else my_printf ("%s",sz[0]);
 
 	return 0;
 } 

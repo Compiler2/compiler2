@@ -6,9 +6,9 @@ int main_bench()
 	int year(int y);
 	int mouth(int m, int y);
 	int day(int d);
-	scanf("%d%d%d%d%d%d", &sy, &sm, &sd, &ey, &em, &ed);
+	my_scanf("%d%d%d%d%d%d", &sy, &sm, &sd, &ey, &em, &ed);
 	n=year(ey)+mouth(em, ey)+day(ed)-year(sy)-mouth(sm, sy)-day(sd);
-    printf("%d\n", n);
+    my_printf("%d\n", n);
 	return 0;
 }
 

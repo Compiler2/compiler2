@@ -6,9 +6,9 @@ int main_bench()
  int *p,*q;
  p=a;
  q=b;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<=n-1;i++)
-  scanf("%d",p+i);
+  my_scanf("%d",p+i);
  t=0;
  for(i=0;i<=n-1;i++)
   {
@@ -21,7 +21,7 @@ int main_bench()
    }
   }
   for(i=0;i<=t-2;i++)
-   printf("%d,",*(q+i));
-  printf("%d",*(q+t-1));
+   my_printf("%d,",*(q+i));
+  my_printf("%d",*(q+t-1));
 
 }

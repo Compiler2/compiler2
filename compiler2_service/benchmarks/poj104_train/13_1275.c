@@ -6,9 +6,9 @@ int main_bench(){
 	k0=0;
 	k=-1;
 	int l[100000],r[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&l[i]);
+		my_scanf("%d",&l[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=i+1;j<n;j++){
@@ -35,11 +35,11 @@ int main_bench(){
 	}
 	for(i=0;i<k0;i++){
 		if(k==0){
-			printf("%d",r[i]);
+			my_printf("%d",r[i]);
 		}else if(k!=0&&i<k0-1){
-			printf("%d ",r[i]);
+			my_printf("%d ",r[i]);
 		}else if(i==k0-1){
-			printf("%d",r[i]);
+			my_printf("%d",r[i]);
 		}
 	}
 	return 0;

@@ -4,12 +4,12 @@ int main_bench()
 {
 int n,k,i,j,sum=0;
 int a[100000];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 }
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(i=0;i<n-sum;i++)
 {
 	if(a[i]==k)
@@ -24,7 +24,7 @@ for(i=0;i<n-sum;i++)
 }
 for(i=0;i<n-sum-1;i++)
 {
-	printf("%d ",a[i]);
+	my_printf("%d ",a[i]);
 }
-printf("%d",a[n-sum-1]);
+my_printf("%d",a[n-sum-1]);
 }

@@ -5,9 +5,9 @@ int main_bench(){
 	int sz[500];
 	int mm[500];
 	int xx[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
     for(i=0;i<n;i++){
 		if(sz[i]%2==1){
@@ -25,9 +25,9 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<(h-1);i++){
-		printf("%d,",xx[i]);
+		my_printf("%d,",xx[i]);
 	}
-	printf("%d",xx[h-1]);
+	my_printf("%d",xx[h-1]);
 	return 0;
 }
 

@@ -3,12 +3,12 @@
 int main_bench(){
 	int n,i,j,m,k,o=0;
 	char ff[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",ff[i]);
-	}scanf("%d",&m);
+		my_scanf("%s",ff[i]);
+	}my_scanf("%d",&m);
 	if(n==88){
-		printf("6592");
+		my_printf("6592");
 	}else{
 	for(k=0;k<m-1;k++){
 	for(i=0;i<n;i++){
@@ -68,6 +68,6 @@ for(i=0;i<n;i++){
 		}
 	}
 }
-printf("%d",o);
+my_printf("%d",o);
 }	return 0;
 }

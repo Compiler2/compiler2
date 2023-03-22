@@ -4,7 +4,7 @@ int main_bench()
 {
 	int lens,lenw;
 	char s[50],w[50];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	lens=strlen(s);
 	lenw=strlen(w);
 	int k=0,j=0,i=0;
@@ -14,7 +14,7 @@ int main_bench()
 		{
 			if(lens==1)
 			{
-				printf("0\n");
+				my_printf("0\n");
 				break;
 			}
 			else
@@ -29,7 +29,7 @@ int main_bench()
 		{
 			if(j==lens-1)
 			{
-				printf("%d\n",i-j);
+				my_printf("%d\n",i-j);
 				break;
 			}
 			else

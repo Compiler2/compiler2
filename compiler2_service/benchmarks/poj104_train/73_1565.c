@@ -6,7 +6,7 @@ int sz[5][5],i,j,m,n,h,k,s;
 s=0;
 for(i=0;i<5;i++){
 	for(j=0;j<5;j++){
-		scanf("%d",&sz[i][j]);
+		my_scanf("%d",&sz[i][j]);
 	}
 }
 for(i=0;i<5;i++){
@@ -33,14 +33,14 @@ for(i=0;i<5;i++){
 				 }
 			}
     	 	if(k==5){
-	    		printf("%d %d %d",i+1,n+1,sz[i][n]);
+	    		my_printf("%d %d %d",i+1,n+1,sz[i][n]);
 		    	s=1;
 			}
 		}
 	}
 }
 	if(s==0){
-			printf("not found");
+			my_printf("not found");
 		}
 	return 0;
 }

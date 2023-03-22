@@ -3,9 +3,9 @@
 int main_bench()
 { int n,k,i=0,j=0,flag=0;
   int str[1000];
-  scanf("%d%d",&n,&k);
+  my_scanf("%d%d",&n,&k);
   for(i=0;i<n;i++)
-   scanf("%d",&str[i]);
+   my_scanf("%d",&str[i]);
   i=0;
   for(i=0;i<n/2+1;i++)
   {  j=0;
@@ -19,12 +19,12 @@ int main_bench()
 	  
 	  if(flag==1)
 	  {
-		  printf("yes");
+		  my_printf("yes");
 		  break;
 	  }
   }
      if(flag==0)
-	  printf("no");
+	  my_printf("no");
 
 	return 0;
 }

@@ -28,9 +28,9 @@ int main_bench()
 	for(i=a2;i<a1;i++)
 		b[blength+i]=a[a2+i];
 	for(i=0;i<n-a2;i++)
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	}
 	else if(a1==-1)
-	{for(i=0;i<n;i++) printf("%c",a[i]);}
+	{for(i=0;i<n;i++) my_printf("%c",a[i]);}
 
 }

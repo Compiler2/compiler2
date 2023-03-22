@@ -4,11 +4,11 @@
 int main_bench()
 {
   int x,max,secondmax,n,t,i;
-  scanf("%d %d",&n,&x);
+  my_scanf("%d %d",&n,&x);
   secondmax=max=x;
 	  for(i=1;i<n;i++)
 	  {
-		  scanf("%d",&t);
+		  my_scanf("%d",&t);
 		  if(t>max)
 		  {
 			  secondmax=max;
@@ -23,6 +23,6 @@ int main_bench()
 			  t=secondmax;
 		  }
 	  }
-   printf("%d\n%d\n",max,secondmax);
+   my_printf("%d\n%d\n",max,secondmax);
    return 0;
 }

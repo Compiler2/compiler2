@@ -3,10 +3,10 @@
 int f(int,int);
 int main_bench(){
 	int n,i,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int y[n],m1[n],m2[n];
     for(i=0;i<n;i++){
-		scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
+		my_scanf("%d %d %d",&y[i],&m1[i],&m2[i]);
 	}
 	for(i=0;i<n;i++){
 		if(m1[i]<m2[i]){
@@ -15,9 +15,9 @@ int main_bench(){
 			m2[i]=e;
 		}
 		if((f(y[i],m1[i])-f(y[i],m2[i]))%7==0){
-			printf("YES\n");
+			my_printf("YES\n");
 		}else{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

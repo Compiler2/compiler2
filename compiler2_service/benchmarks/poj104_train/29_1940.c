@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int i=0;i<m;i++)
 	    {
 		int n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		float *a=(float *)malloc((n+i)*sizeof(float));
 		float *b=(float *)malloc((n+i)*sizeof(float));
 		a[0]=1.0;
@@ -22,6 +22,6 @@ int main_bench()
 		float sum=0;
 		for(int j=0;j<n;j++)
 		    sum+=b[j]/a[j];
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 		}
 } 

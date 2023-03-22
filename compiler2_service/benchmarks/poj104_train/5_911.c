@@ -12,12 +12,12 @@ gets(a);
 gets(b);
 for(i=0;i<strlen(a);i++){
 if((a[i]!='A')&&(a[i]!='T')&&(a[i]!='C')&&(a[i]!='G')){
-printf("error");
+my_printf("error");
 k=1;
 break;
 }else{
 if((b[i]!='A')&&(b[i]!='T')&&(b[i]!='C')&&(b[i]!='G')){
-printf("error");
+my_printf("error");
 k=1;
 break;
 }
@@ -25,7 +25,7 @@ break;
 }
 if(k!=1){
 if(strlen(a)!=strlen(b)){
-printf("error");
+my_printf("error");
 }else{
 for(k=0;k<strlen(a);k++){
 if(a[k]==b[k]){
@@ -35,10 +35,10 @@ num=num+1;
 j=strlen(a);
 len=1.00*j;
 if((num/len)<=x){
-printf("no");
+my_printf("no");
 }else{
 if((num/len)>x){
-printf("yes");
+my_printf("yes");
 }
 }
 }

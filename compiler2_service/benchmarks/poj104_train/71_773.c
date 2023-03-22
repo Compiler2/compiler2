@@ -4,10 +4,10 @@ int main_bench()
 {
   int a,b,c,n,i;
   void f(int a,int b,int c);
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
    {
-    scanf("%d%d%d",&a,&b,&c);
+    my_scanf("%d%d%d",&a,&b,&c);
     f(a,b,c);
    }
   
@@ -46,6 +46,6 @@ void f(int a,int b,int c)
        if(b==11)t1=305; if(c==11)t2=305;
        if(b==12)t1=335; if(c==12)t2=335;
    }
- if(abs(t1-t2)%7==0) printf("YES\n");
- else printf("NO\n");
+ if(abs(t1-t2)%7==0) my_printf("YES\n");
+ else my_printf("NO\n");
 }

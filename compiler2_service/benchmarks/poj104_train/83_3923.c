@@ -5,19 +5,19 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int xuefen[n],defen[n];
 	int sigma=0;
 	double gpa[n];
 	double grade=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&xuefen[i]);
+		my_scanf("%d",&xuefen[i]);
 		sigma=sigma+xuefen[i];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&defen[i]);
+		my_scanf("%d",&defen[i]);
 		if(defen[i]>=90)
 		{
 			gpa[i]=4.0;
@@ -80,6 +80,6 @@ int main_bench()
 		}
 	}
 	grade=grade/sigma;
-	printf("%.2lf",grade);
+	my_printf("%.2lf",grade);
 	return 0;
 }

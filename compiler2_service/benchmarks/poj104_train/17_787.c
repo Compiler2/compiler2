@@ -8,9 +8,9 @@ int main_bench()
 	char b[105];
 	int len;
 	int i,j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (som = 1; som <= n; som++){
-		scanf("%s", a);
+		my_scanf("%s", a);
 		strcpy(b, a);
 		len = strlen(a);
 		for (i = len-1; i >=0; i--)
@@ -37,6 +37,6 @@ int main_bench()
 				}
 			}
 		}
-		printf("%s\n%s\n", a, b);
+		my_printf("%s\n%s\n", a, b);
 	}
 }

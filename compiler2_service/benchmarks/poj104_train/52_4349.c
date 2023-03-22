@@ -17,12 +17,12 @@ int main_bench()
 {
 	int l,k,i;
 	int a[100];
-	scanf("%d %d",&l,&k);
+	my_scanf("%d %d",&l,&k);
 	for(i=0;i<l;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<k;i++)
 		circle(a,l);
 	for(i=0;i<l-1;i++)
-		printf("%d ",a[i]);
-	printf("%d\n",a[i]);
+		my_printf("%d ",a[i]);
+	my_printf("%d\n",a[i]);
 }

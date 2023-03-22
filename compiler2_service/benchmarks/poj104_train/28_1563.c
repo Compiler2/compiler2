@@ -20,11 +20,11 @@ int main_bench(){
 	}
 	a[j][z]='\0';
 	b[0]=strlen(a[0]);
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;i<=j;i++){
 		b[i]=strlen(a[i]);
 		if(b[i]!=0){
-		   printf(",%d",b[i]);
+		   my_printf(",%d",b[i]);
 		}
 	}
 	return 0;

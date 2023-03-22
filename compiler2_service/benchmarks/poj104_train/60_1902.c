@@ -25,17 +25,17 @@ int Prime(int a)
 int main_bench()
 {
 	int N;
-	scanf("%d", &N);
+	my_scanf("%d", &N);
 	int a,b=0;
 	for (a = 1; a <= N; a++)
 	{
 		if (Prime(a) == 1 && Prime(a - 2) == 1)
 		{
-			printf("%d %d\n", a-2,a);
+			my_printf("%d %d\n", a-2,a);
 			b++;
 		}
 	}
 	if (b == 0)
-		printf("empty\n");
+		my_printf("empty\n");
 
 }

@@ -6,17 +6,17 @@ int main_bench(){
 	int row,col;
 	int add[100];
 
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	
 	for(i=0;i<k;i++){
 		add[i]=0;
 	}
     
 	for(i=0;i<k;i++){
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
 	    for(row=0;row<m;row++){
 		    for(col=0;col<n;col++){
-		    	scanf("%d",&sz[row][col]);
+		    	my_scanf("%d",&sz[row][col]);
 			}
 		}
 
@@ -41,7 +41,7 @@ int main_bench(){
 	}
 
 	for(i=0;i<k;i++){
-		printf("%d\n",add[i]);
+		my_printf("%d\n",add[i]);
 	}
 
 	return 0;

@@ -27,7 +27,7 @@ int main_bench()
 	void sub(char common[],char minlen[],int n,int now);
 	int compare(char a[],int n);
 	char str[500];
-	scanf("%s",str);
+	my_scanf("%s",str);
 	int i,j;
 	if(strlen(str)>1)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 				sub(substr,str,i,j);
 				if(compare(substr,i)==1)
 				{
-					printf("%s\n",substr);
+					my_printf("%s\n",substr);
 				}	
 			}
 		}

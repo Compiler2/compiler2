@@ -25,8 +25,8 @@ int main_bench()
 		k++;
 	}
 		for(i=0;i<k-1;i++)
-			printf("%d,",a[i]);
-		printf("%d\n",a[k-1]);
+			my_printf("%d,",a[i]);
+		my_printf("%d\n",a[k-1]);
 }
 
 

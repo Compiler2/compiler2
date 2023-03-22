@@ -13,7 +13,7 @@ int main_bench()
 		if(z[a]!=' ') b++;
 		if(z[a]==' ')
 		{
-			printf("%d,",b);
+			my_printf("%d,",b);
 			b=0;
 			continue;
 		}
@@ -21,16 +21,16 @@ int main_bench()
 		{
 			if (a!=len-1)
 			{
-			printf("%d,",b);
+			my_printf("%d,",b);
 			}
 			else
 			{
-				printf("%d",b);
+				my_printf("%d",b);
 				return 0;
 			}
 			b=0;
 		}
-		if(a==len-1) printf("%d",b);
+		if(a==len-1) my_printf("%d",b);
 	}
 	return 0;
 }

@@ -6,8 +6,8 @@ int main_bench()
 	char s[100], w[100];
 	int i, j;
 	int l1, l2;
-	scanf("%s", &s);
-	scanf("%s", &w);
+	my_scanf("%s", &s);
+	my_scanf("%s", &w);
 	l1 = strlen(s);
 	l2 = strlen(w);
 	for (i = 0; i < l2 - l1 + 1; i++)
@@ -23,7 +23,7 @@ int main_bench()
 		}
 		if (flag == 1)
 		{
-			printf("%d", i);
+			my_printf("%d", i);
 			break;
 		}
 	}

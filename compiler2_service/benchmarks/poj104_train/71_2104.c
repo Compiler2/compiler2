@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,year[200],mon1[200],mon2[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&year[i],&mon1[i],&mon2[i]);
+		my_scanf("%d %d %d",&year[i],&mon1[i],&mon2[i]);
 	}
 	
 	for(i=1;i<=n;i++)
@@ -38,8 +38,8 @@ int main_bench()
         if(mon2[i]==10) { mon2[i]=275; }
         if(mon2[i]==11) { mon2[i]=306; }
         if(mon2[i]==12) { mon2[i]=336; }
-        if(((mon2[i]-mon1[i])%7==0) || ((mon1[i]-mon2[i])%7==0)) { printf("YES\n"); }
-		else { printf("NO\n");}
+        if(((mon2[i]-mon1[i])%7==0) || ((mon1[i]-mon2[i])%7==0)) { my_printf("YES\n"); }
+		else { my_printf("NO\n");}
 		}
 	    else
 		{
@@ -67,8 +67,8 @@ int main_bench()
         if(mon2[i]==10) { mon2[i]=274; }
         if(mon2[i]==11) { mon2[i]=305; }
         if(mon2[i]==12) { mon2[i]=335; }
-        if(((mon2[i]-mon1[i])%7==0)||((mon1[i]-mon2[i])%7==0)){	printf("YES\n"); }
-		else { printf("NO\n");}
+        if(((mon2[i]-mon1[i])%7==0)||((mon1[i]-mon2[i])%7==0)){	my_printf("YES\n"); }
+		else { my_printf("NO\n");}
 		}
 	}
 	return 0;

@@ -3,13 +3,13 @@
 void input(int *p,int *q,int *n,int *m) 
 {
      int *x;
-     scanf("%d %d",n,m);
+     my_scanf("%d %d",n,m);
      x=p+*n;
      for(;p<x;p++)
-        scanf("%d",p);
+        my_scanf("%d",p);
      x=q+*m;
      for(;q<x;q++)
-        scanf("%d",q);
+        my_scanf("%d",q);
 }
 
 void sort(int *p,int n)
@@ -42,10 +42,10 @@ void output(int *p,int n)
 {
      int *y;
      y=p+n-1;
-     printf("%d",*p);
+     my_printf("%d",*p);
      p++;
      for(;p<=y;p++)
-        printf(" %d",*p);
+        my_printf(" %d",*p);
 }        
 
 int main_bench()

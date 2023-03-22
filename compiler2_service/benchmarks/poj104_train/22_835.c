@@ -7,7 +7,7 @@ int main_bench()
 	int i=0,n;
 	do
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		i++;
 	}while(c==',');
 	n=i;
@@ -22,8 +22,8 @@ int main_bench()
 			smax=a[i];
 	}
 	if(smax)
-		printf("%d",smax);
+		my_printf("%d",smax);
 	else
-		printf("No");
+		my_printf("No");
 	return 0;
 }

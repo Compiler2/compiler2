@@ -13,8 +13,8 @@ int main_bench()
         if(ch[i]!=' '&&ch[i-1]==' ')
 			p1=&ch[i];
 		if(ch[i]!=' '&&ch[i+1]==' ')
-			printf("%d,",p2-p1+1);
+			my_printf("%d,",p2-p1+1);
 		if(ch[i+1]=='\0')
-			printf("%d",p2-p1+1);
+			my_printf("%d",p2-p1+1);
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	char s[200][100]={""};
 	int n,i,len[200]={0},*p,*max,*min;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&s[i]);
+		my_scanf("%s",&s[i]);
 		len[i]=strlen(s[i]);
 	}
 	p=&len[0];
@@ -24,7 +24,7 @@ int main_bench()
 		{
 			if(*(p+i)==*max)
 			{
-				printf("%s\n",s[i]);
+				my_printf("%s\n",s[i]);
 				break;
 			}
 		}
@@ -33,7 +33,7 @@ int main_bench()
 		{
 			if(*(p+i)==*min)
 			{
-				printf("%s",s[i]);
+				my_printf("%s",s[i]);
 				break;
 			}
 		}

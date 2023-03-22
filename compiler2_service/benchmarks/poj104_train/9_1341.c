@@ -11,9 +11,9 @@ int main_bench()
 	int ex[100],ex1[100];
 	i=0;
 	k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%s%d",&(pat[i].id),&(pat[i].age));
+		my_scanf("%s%d",&(pat[i].id),&(pat[i].age));
 		ex[i]=pat[i].age;
 		ex1[i]=i+1;
 	}
@@ -31,12 +31,12 @@ int main_bench()
 	}
 	for(i=0;i<=n-1;i++){
 		if(ex[i]>=60){
-			printf("%s\n",pat[ex1[i]-1].id);
+			my_printf("%s\n",pat[ex1[i]-1].id);
 		}
 	}
 	for(i=0;i<=n-1;i++){
 		if(ex[i]<60){
-			printf("%s\n",pat[ex1[i]-1].id);
+			my_printf("%s\n",pat[ex1[i]-1].id);
 		}
 	}
 	return 0;

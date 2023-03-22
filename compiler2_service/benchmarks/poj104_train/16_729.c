@@ -6,12 +6,12 @@
 int main_bench()
 {
     int num,temp=0,sub=0,dv=10;;
-    scanf("%d",&num);
+    my_scanf("%d",&num);
     int a,b=1;
 
     if (num==0)
     {
-        printf("0");
+        my_printf("0");
         return 0;
     }
 
@@ -20,7 +20,7 @@ int main_bench()
         temp=(num-(num/dv)*dv-sub)/(dv/10);
         sub+=temp*(dv/10);
 
-        printf("%d",temp);
+        my_printf("%d",temp);
         dv*=10;
     }
 

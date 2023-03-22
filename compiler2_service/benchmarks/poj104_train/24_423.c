@@ -27,7 +27,7 @@ for(i=0;i<k;i++)
   {m=strlen(str[i]);
   p=str[i];}
 
-printf("%s\n",p);
+my_printf("%s\n",p);
 
 m=strlen(str[0]);
 p=str[0];
@@ -36,5 +36,5 @@ for(i=0;i<k;i++)
   {m=strlen(str[i]);
   p=str[i];}
 
-printf("%s",p);
+my_printf("%s",p);
 }

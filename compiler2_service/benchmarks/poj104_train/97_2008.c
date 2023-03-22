@@ -3,7 +3,7 @@
 int main_bench(){
     int rmb;
     int a,b,c,d,e,f;
-    scanf("%d",&rmb);
+    my_scanf("%d",&rmb);
     a=0;
     b=0;
     c=0;
@@ -38,6 +38,6 @@ int main_bench(){
                     f++;
                     }
    
-    printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+    my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
     return 0;
 }

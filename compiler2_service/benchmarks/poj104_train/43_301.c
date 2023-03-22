@@ -5,7 +5,7 @@ int ispn(int p);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gbc(n);
 return 0;
 }
@@ -20,7 +20,7 @@ void gbc(int n)
 		b=ispn(n-i);
 		if(a&&b)
 		{
-			printf("%d %d\n",i,n-i);
+			my_printf("%d %d\n",i,n-i);
 		}
 	}
 }

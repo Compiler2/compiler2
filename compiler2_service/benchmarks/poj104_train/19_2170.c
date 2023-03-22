@@ -5,7 +5,7 @@ int main_bench(){
    int n,m;
    int i,j,k=0;
    gets(s);
-   scanf("%s%s",a,b);
+   my_scanf("%s%s",a,b);
    n=strlen(s);
    m=strlen(a);
    for(i=0;i<n;i++)
@@ -21,19 +21,19 @@ int main_bench(){
 		   
 		   if(k==m)
 		   {
-			 	   printf("%s",b);
+			 	   my_printf("%s",b);
 				   i+=m-1;
 		   }else
 		   {
-			   printf("%c",s[i]);
+			   my_printf("%c",s[i]);
 		   }
 		   k=0;
 		}else
 	  {
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 	}
    }
-   printf("\n");
+   my_printf("\n");
 
 
   

@@ -28,13 +28,13 @@ int xgy(int year,int month1,int month2){
 }
 int main_bench(){
 	int i,n,year,month1,month2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&year,&month1,&month2);
+		my_scanf("%d%d%d",&year,&month1,&month2);
 		if(xgy(year, month1, month2)){
-			printf("YES\n");
+			my_printf("YES\n");
 		}
-		else{printf("NO\n");}
+		else{my_printf("NO\n");}
 	}
 return 0;
 }

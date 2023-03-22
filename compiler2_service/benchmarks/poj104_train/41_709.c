@@ -12,9 +12,9 @@ void pan(int r[5])
 	{
 		for(i=0;i<5;i++)
 		t[r[i]]=i+1;
-		printf("%d",t[0]);
+		my_printf("%d",t[0]);
 		for(i=1;i<5;i++)
-		printf(" %d",t[i]);
+		my_printf(" %d",t[i]);
 	}
 }
 int main_bench()

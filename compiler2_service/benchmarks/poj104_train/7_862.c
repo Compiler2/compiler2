@@ -47,11 +47,11 @@ int main_bench()
 			y++;
 		}
 	}
-	printf("%s%s%s\n",front,rep,back);
+	my_printf("%s%s%s\n",front,rep,back);
 	}
 	else if(flag==0)
 	{
-		printf("%s",str);
+		my_printf("%s",str);
 	}
 	return 0;
 }

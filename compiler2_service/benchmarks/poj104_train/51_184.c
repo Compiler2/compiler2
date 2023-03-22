@@ -4,7 +4,7 @@ int main_bench()
 {
 char c[500]={0},g[500][5]={0};
 int i=0,j=0,m,n,y[500]={0},num[500]={0},k=0;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 gets(c);
 j=strlen(c)-n+1;
 for(i=0;i<j;i++)
@@ -32,9 +32,9 @@ if(y[i]==0)
 }
 i=0;
 if(m==0)
-printf("NO");
+my_printf("NO");
 else
-{printf("%d\n",m+1);
+{my_printf("%d\n",m+1);
 
 for(i=0;i<j;i++)
 {

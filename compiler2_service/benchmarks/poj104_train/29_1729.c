@@ -11,13 +11,13 @@ main_bench()
         b[i]=b[i-1]+b[i-2];
         a[i]=b[i-1];
     }
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
     {
         sum=0;
-        scanf("%d",&m);
+        my_scanf("%d",&m);
         for (j=0;j<m;j++)
         sum+=(double)b[j]/(double)a[j];
-        printf("%.3lf\n",sum);
+        my_printf("%.3lf\n",sum);
     }
 }

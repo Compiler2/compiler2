@@ -4,11 +4,11 @@ int main_bench()
 {
     char a[100],b[99];
     int x,y,l;
-    scanf ("%s",a);
+    my_scanf ("%s",a);
     l=strlen(a);
     if (l==1)
-    {printf ("0\n");
-    printf ("%c",a[0]);}
+    {my_printf ("0\n");
+    my_printf ("%c",a[0]);}
     else
     {for (int i=1;i<l;i++)
     {
@@ -26,8 +26,8 @@ int main_bench()
                 }
     }
     a[l-1]=a[l-1]-'0';
-    printf ("%s\n",b);
-    printf ("%d",a[l-1]);
+    my_printf ("%s\n",b);
+    my_printf ("%d",a[l-1]);
     }
     getchar();
     getchar();

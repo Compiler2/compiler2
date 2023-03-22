@@ -6,14 +6,14 @@ int main_bench()
 	unsigned maxlen,minlen;
 	char max[20],min[20];
 	char cen[20];
-	scanf("%s",&cen);
+	my_scanf("%s",&cen);
 	len=strlen(cen);
 	maxlen=minlen=len;
 	strcpy(max,cen);
 	strcpy(min,cen);
 	while(getchar()!='\n')
 	{
-		scanf("%s",&cen);
+		my_scanf("%s",&cen);
 		if(strlen(cen)>maxlen)
 		{
 		strcpy(max,cen);
@@ -26,7 +26,7 @@ int main_bench()
 		}
 
 	}
-	printf("%s\n",max);
-	printf("%s\n",min);
+	my_printf("%s\n",max);
+	my_printf("%s\n",min);
 	
 }

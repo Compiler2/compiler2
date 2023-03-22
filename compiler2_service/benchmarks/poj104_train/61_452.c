@@ -7,11 +7,11 @@ int main_bench()
 	int num;
 	int i;
 	int sum;
-	scanf("%d", &count);
+	my_scanf("%d", &count);
 	while (count --) {
-		scanf("%d", &num);
+		my_scanf("%d", &num);
 		if (num == 1 || num == 2) {
-			printf("1\n");
+			my_printf("1\n");
 			continue;
 		}
 		num -= 2;
@@ -22,7 +22,7 @@ int main_bench()
 			one = two;
 			two = sum;
 		}
-		printf("%d\n", sum);
+		my_printf("%d\n", sum);
 	}
 	return 0;
 }

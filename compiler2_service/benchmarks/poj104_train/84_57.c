@@ -3,10 +3,10 @@
 int main_bench()
 {
 	signed int n,num[1000],i,out[2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	}
 	if(num[0]>num[1])
 	{
@@ -30,6 +30,6 @@ int main_bench()
 		else
 			continue;
 	}
-	printf("%d\n%d\n",out[0],out[1]);
+	my_printf("%d\n%d\n",out[0],out[1]);
    	return 0;
 }

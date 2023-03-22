@@ -6,11 +6,11 @@ int main_bench()
 	int sz[100];
 	int a=0,b=0,c=0,d=0;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<n;i++){
 		if(sz[i]<=18){
@@ -37,10 +37,10 @@ double a1,b1,c1,d1;
 
 
 			
-printf("1-18: %.2lf%%\n",a1);
-printf("19-35: %.2lf%%\n",b1);
-printf("36-60: %.2lf%%\n",c1);
-printf("60??: %.2lf%%\n",d1);
+my_printf("1-18: %.2lf%%\n",a1);
+my_printf("19-35: %.2lf%%\n",b1);
+my_printf("36-60: %.2lf%%\n",c1);
+my_printf("60??: %.2lf%%\n",d1);
 return 0;
 
 }

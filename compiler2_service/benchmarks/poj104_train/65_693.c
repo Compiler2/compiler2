@@ -7,12 +7,12 @@ int main_bench()
 {
 	int n,a,b,i,j;
 	int c[200][2];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	a=0;
 	b=0;
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&c[i][j]);
+			my_scanf("%d",&c[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -26,11 +26,11 @@ int main_bench()
 		}
 	}
 	if(a>b){
-		printf("A");
+		my_printf("A");
 	}if(b>a){
-		printf("B");
+		my_printf("B");
 		}if(a==b){
-			printf("Tie");
+			my_printf("Tie");
 		}
 	return 0;
 }

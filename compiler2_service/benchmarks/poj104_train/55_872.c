@@ -6,7 +6,7 @@ main_bench()
       char c[1000];
       char f[1000];
       int e[1000];
-      scanf("%d %s %d",&a,c,&b);
+      my_scanf("%d %s %d",&a,c,&b);
       l=strlen(c);
       x=0;
       int d[l];
@@ -21,7 +21,7 @@ main_bench()
               x=d[i]+x*a;
               }
               if(x==0)
-    printf("%d",0);
+    my_printf("%d",0);
           for(j=0;x!=0;j++)
           {
               e[j]=x%b;
@@ -37,8 +37,8 @@ main_bench()
           f[j]='\0';
           }
           
-      printf("%s",f);
-      printf("\n");
+      my_printf("%s",f);
+      my_printf("\n");
 
       getchar();
       getchar();

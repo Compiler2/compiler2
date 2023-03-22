@@ -6,10 +6,10 @@ int main_bench()
 	int flag;
 	int number=0;
 	j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&A[i]);
+		my_scanf("%d",&A[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -33,11 +33,11 @@ int main_bench()
 	{
 		if(j==0)
 		{
-			printf("%d",B[j]);
+			my_printf("%d",B[j]);
 		}
 		else 
 		{
-			printf(" %d",B[j]);
+			my_printf(" %d",B[j]);
 		}
 	}
 	return 0;

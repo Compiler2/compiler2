@@ -5,14 +5,14 @@ int main_bench()
 {
 	int n;
 	int i,j,k,mid=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char z[100010];
 	int len=0;
 	int ref=0;
 	for(i=0;i<n;i++)
 	{
 		ref=0;
-		scanf("%s",z);
+		my_scanf("%s",z);
 		len=strlen(z);
 		for(j=0;j<len;j++)
 		{
@@ -26,14 +26,14 @@ int main_bench()
 			}
 			if(mid==1)
 			{
-				printf("%c\n",z[j]);
+				my_printf("%c\n",z[j]);
 				ref=1;
 				break;
 			}
 		}
 		if(ref==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

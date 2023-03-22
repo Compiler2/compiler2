@@ -12,10 +12,10 @@ int main_bench()
 	for(i=0;i<100;i++){
 		b[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
 		for (j=0;j<2;j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
 	k=0;
@@ -37,6 +37,6 @@ int main_bench()
 		    max=b[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

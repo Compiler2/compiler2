@@ -4,9 +4,9 @@ int main_bench(){
 int n,f,k,s;
 int sz[1000];
 f=0;
-scanf("%d%d",&n,&k);
+my_scanf("%d%d",&n,&k);
 for(int i=0;i<n;i++){
-scanf("%d",&(sz[i]));
+my_scanf("%d",&(sz[i]));
 }
 
 
@@ -17,12 +17,12 @@ for(int j=0;j<n;j++){
   s=sz[j]+sz[m];
 if((s==k)&&(f==0)){
 f=1;
-printf ("yes");
+my_printf ("yes");
 break;
  }}
 if (f==1) break;
 }
-if(f==0)printf("no");
+if(f==0)my_printf("no");
 
 return 0;
 }

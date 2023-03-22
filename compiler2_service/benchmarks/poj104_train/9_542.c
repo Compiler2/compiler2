@@ -9,9 +9,9 @@ int max(int a[],int n)
 main_bench()
 {    int a[200]={0},i,n,c[200]={0},e,t=1;
      char b[200][12];          
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      for(i=1;i<=n;i++)
-     {   scanf("%s%d",b[i],&e);            
+     {   my_scanf("%s%d",b[i],&e);            
        if(e>=60)
           a[i]=e;
        else
@@ -24,14 +24,14 @@ main_bench()
       for(i=1;i<=n;i++)
      {   
       if(a[i]==t)
-     {  printf("%s\n",b[i]);                       
+     {  my_printf("%s\n",b[i]);                       
           a[i]=0;     
                        }  
                        }  
                        }                            
       for(i=1;i<=n;i++)
        if(c[i]!=0)
-       printf("%s\n",b[i]);
+       my_printf("%s\n",b[i]);
                 
                                                                 
 }

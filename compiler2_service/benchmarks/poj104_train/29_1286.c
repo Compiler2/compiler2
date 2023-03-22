@@ -5,10 +5,10 @@ int main_bench()
   int m,n;
   double x;
  
-  scanf("%d",&m);
+  my_scanf("%d",&m);
 
   for(int i=1;i<=m;i++){
-    scanf("%d",&n);  
+    my_scanf("%d",&n);  
     int sz[n+1];
     for(int j=0;j<n+1;j++){
       sz[j]=sz[j-1]+sz[j-2];
@@ -19,7 +19,7 @@ int main_bench()
     for(int j=1;j<n+1;j++){
       x+=1.0*sz[j]/sz[j-1];
     }
-    printf("%.3lf\n",x);
+    my_printf("%.3lf\n",x);
   }
   return 0;
 }

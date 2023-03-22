@@ -2,7 +2,7 @@
 
 int main_bench()
 {    int n,a,b,c,d,e,f;
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      if(n/10000!=0)
      {a=n/10000;
       b=(n-a*10000)/1000;
@@ -26,5 +26,5 @@ int main_bench()
       b=n-a*10;
        f=b*10+a;}
        else{f=n;}
-      printf("%d",f);
+      my_printf("%d",f);
 }

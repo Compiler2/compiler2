@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i=0,a[10000],max=0,may=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<n)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(a[i]>max)
 			max=a[i];
 		else if(a[i]>may)
@@ -15,5 +15,5 @@ int main_bench()
 	}
 	if(a[0]>may&&a[0]<max)
 		may=a[0];
-	printf("%d\n%d\n",max,may);
+	my_printf("%d\n%d\n",max,may);
 }

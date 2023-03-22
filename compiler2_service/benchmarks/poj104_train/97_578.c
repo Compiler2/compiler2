@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int money;
-	scanf("%d",&money);
+	my_scanf("%d",&money);
 	int ge,shi,bai;
 	int a,b,c,d,e,f;
 	ge=money%10;
@@ -59,6 +59,6 @@ int main_bench()
 	default:
 		break;
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d",a,b,c,d,e,f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d",a,b,c,d,e,f);
 	return 0;
 }

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	int count=0;
 	int a[50000];
@@ -27,11 +27,11 @@ int main_bench()
 		}
 	}
 	if(n<=4)
-		printf("empty");
+		my_printf("empty");
 	for(i=0;i<count-1;i++)
 	{
 		if(a[i]==a[i+1]-2)
-			printf("%d %d\n",a[i],a[i+1]);
+			my_printf("%d %d\n",a[i],a[i+1]);
 	}
 	return 0;
 

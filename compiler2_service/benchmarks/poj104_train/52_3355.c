@@ -4,15 +4,15 @@ int main_bench()
 {
 	void move(int*p, int n, int m);
 	int n, m;
-	scanf("%d %d", &n, &m);
+	my_scanf("%d %d", &n, &m);
 	int i;
 	int a[100];
 	int *p;
 	p=a;
-	scanf("%d", &a[0]);
+	my_scanf("%d", &a[0]);
 	for(i=1;i<n;i++)
 	{
-		scanf(" %d", &a[i]);
+		my_scanf(" %d", &a[i]);
 	}
 	move(p, n, m);
 	return 0;
@@ -34,9 +34,9 @@ void move(int*p, int n, int m)
 	}
 	for(i=0;i<n-1;i++)
 	{
-		printf("%d ", p1[i]);
+		my_printf("%d ", p1[i]);
 	}
-	printf("%d\n", p1[n-1]);
+	my_printf("%d\n", p1[n-1]);
 	free(p1);
 }
 

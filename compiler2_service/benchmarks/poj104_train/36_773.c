@@ -6,9 +6,9 @@ int main_bench()
 	char a[200],b[200];
 	int len,num=0;
 	int j,i;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	if(strlen(a)!=strlen(b))
-		printf("NO");
+		my_printf("NO");
 	else 
 	{
 		len=strlen(a);
@@ -29,8 +29,8 @@ int main_bench()
 				num++;
 		}
 		if(num==len)
-			printf("YES");
-		else printf("NO");
+			my_printf("YES");
+		else my_printf("NO");
 	}
 	return 0;
 }

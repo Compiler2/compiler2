@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,f,s,num;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<2;i++)
 	{
 		
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(i==0)
 		{
 			f=num;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 		for(i=1;i<n;i++)
 		{
-			scanf("%d",&num);
+			my_scanf("%d",&num);
 
 			{
 				if(num>f)
@@ -64,8 +64,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",f);
-	printf("%d",s);
+	my_printf("%d\n",f);
+	my_printf("%d",s);
 	return 0;
 }
 

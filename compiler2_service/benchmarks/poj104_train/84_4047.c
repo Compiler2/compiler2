@@ -7,9 +7,9 @@ int main_bench()
 	int i=0;
 	int x=0;
 	int y=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	do{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if (a>x){
 			y=x;
 			x=a;
@@ -19,7 +19,7 @@ int main_bench()
 		}
 		i++;
 	}while(i<n);
-	printf("%d\n%d\n",x,y);
+	my_printf("%d\n%d\n",x,y);
 	
 	
 	return 0;

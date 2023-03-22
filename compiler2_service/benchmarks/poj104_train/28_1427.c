@@ -14,10 +14,10 @@ int main_bench(){
 			}
 			num=e-s+1;
 			if(k==0){
-				printf("%d",num);
+				my_printf("%d",num);
 				k++;
 			}else{
-				printf(",%d",num);
+				my_printf(",%d",num);
 				k++;
 			}
 		}

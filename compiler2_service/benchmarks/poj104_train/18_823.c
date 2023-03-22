@@ -14,7 +14,7 @@ int f(int a, int b)
 main_bench()
 {
     int n,i,j,t,sum,x,y,r;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
         int a[100][100]={0};
@@ -24,7 +24,7 @@ main_bench()
         {
             for(t=0;t<n;t++)
             {
-                scanf("%d",&a[j][t]);
+                my_scanf("%d",&a[j][t]);
                 b[j][t]=a[j][t];
             }
         }
@@ -76,6 +76,6 @@ main_bench()
                 }
             }
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
     }
 }

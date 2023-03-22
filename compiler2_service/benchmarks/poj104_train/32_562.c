@@ -3,12 +3,12 @@
 int main_bench()
 {long int d,n,i,j,l1,l2,a1[10000],a2[10000];
 char str1[10000],qq,str2[10000];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=1;i<=n;i++)
 	{
 		gets(str1);
 	gets(str2);
-	scanf("%c",&qq);
+	my_scanf("%c",&qq);
     l1=strlen(str1);
 l2=strlen(str2);
 for(j=0;j<=l1-1;j++)a1[j]=str1[j]-48;
@@ -23,8 +23,8 @@ while(l2>=j)
 j=j+1;
 }
 if (l1-j>=0)a1[l1-j]=a1[l1-j]-d;
-for (j=0;j<=l1-1;j++)printf("%d",a1[j]);
-printf("\n");
+for (j=0;j<=l1-1;j++)my_printf("%d",a1[j]);
+my_printf("\n");
 	}
 }
 

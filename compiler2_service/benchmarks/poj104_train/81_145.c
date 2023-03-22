@@ -6,10 +6,10 @@ int main_bench(){
 	int sz[5][5];
 	for(k=0;k<5;k++){
 			for(i=0;i<5;i++){
-				scanf("%d",&(sz[k][i]));
+				my_scanf("%d",&(sz[k][i]));
 			}
 		}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(n<5&&m<5){
 			for(i=0;i<5;i++){
 			   a=sz[m][i];
@@ -20,16 +20,16 @@ int main_bench(){
 			for(k=0;k<5;k++){
 			for(i=0;i<5;i++){
 				if(i<4){
-				printf("%d ",sz[k][i]);
+				my_printf("%d ",sz[k][i]);
 				}
 				else if(i==4){
-					printf("%d\n",sz[k][i]);
+					my_printf("%d\n",sz[k][i]);
 				}
 			}
 		}
 		}
 	else if(n>4||m>4){
-			printf("error");
+			my_printf("error");
 	}
 	return 0;
 }

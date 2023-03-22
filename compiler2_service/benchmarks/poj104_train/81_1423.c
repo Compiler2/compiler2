@@ -32,10 +32,10 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	a=swap(n,m,sz);
 	
 	if (a==1)
@@ -43,12 +43,12 @@ int main_bench()
 		for(q=0;q<5;q++)
 		{
 			for(p=0;p<4;p++)
-				printf("%d ",sz[q][p]);
+				my_printf("%d ",sz[q][p]);
 			if(p==4)
-				printf("%d\n",sz[q][p]);
+				my_printf("%d\n",sz[q][p]);
 		}
 	}
 	if (a==0)
-		printf("error");
+		my_printf("error");
 }
 

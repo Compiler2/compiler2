@@ -19,10 +19,10 @@ int main_bench()
 	for(i=0;i<n;i++){
 		sz[i]=strlen(words[i]);
 	}
-	printf("%d",sz[0]);
+	my_printf("%d",sz[0]);
 	for(i=1;i<n;i++){
 		if(sz[i]!=0){
-			printf(",%d",sz[i]);
+			my_printf(",%d",sz[i]);
 		}
 	}
 	return 0;

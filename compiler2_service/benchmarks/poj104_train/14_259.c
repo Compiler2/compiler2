@@ -12,11 +12,11 @@ struct student
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);                     
+	my_scanf("%d",&n);                     
 	struct student *stu=(struct student *)malloc(sizeof(int)*4*n);   
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
 	}
 
 
@@ -40,7 +40,7 @@ int main_bench()
 	}
 
 	for(i=n-1;i>n-4;i--){
-		printf("%d %d\n",stu[i].num,stu[i].total);
+		my_printf("%d %d\n",stu[i].num,stu[i].total);
 	}
 
     return 0;	

@@ -3,14 +3,14 @@
 main_bench()
 {
  int n,a[20000],j,temp;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(int i=1;i<=n;i++)
             {
-             scanf("%d",&temp);
+             my_scanf("%d",&temp);
              if(i==1)
                        {
                         j=0;
-                        printf("%d",temp);
+                        my_printf("%d",temp);
                         a[j]=temp;
                        }
              else
@@ -23,7 +23,7 @@ main_bench()
                           }
                   if(c==0)
                            {        
-                            printf(" %d",temp);
+                            my_printf(" %d",temp);
                             j++;
                             a[j]=temp;     
                            }             

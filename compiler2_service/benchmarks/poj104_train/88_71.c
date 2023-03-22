@@ -18,9 +18,9 @@ int main_bench()
 	for(i=0;i<k;i++)
 	{
 		if(a[i]!=-1&&a[i+1]!=-1)
-		    printf("%d",a[i]);
+		    my_printf("%d",a[i]);
 		else if(a[i]!=-1&&a[i+1]==-1)
-		    printf("%d\n",a[i]);
+		    my_printf("%d\n",a[i]);
 	}
 	return 0;
 } 

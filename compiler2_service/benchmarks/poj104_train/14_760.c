@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,i;
 	int o=0,oz,t=0,tz,th=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     struct{
 		int h,z;
 	}s[100000];
   	for(i=0;i<n;i++)
 	{
 		int h0,x0,y0;
-		scanf("%d%d%d",&h0,&x0,&y0);
+		my_scanf("%d%d%d",&h0,&x0,&y0);
 		s[i].h=h0;
 		s[i].z=x0+y0;
 	}
@@ -22,7 +22,7 @@ int main_bench()
 		if(s[i].z==o)
 		{
 			oz=i;
-			printf("%d %d\n",s[i].h,s[i].z);
+			my_printf("%d %d\n",s[i].h,s[i].z);
 			break;
 		}
 	for(i=0;i<n;i++)
@@ -32,7 +32,7 @@ int main_bench()
 		if((i!=oz)&&(s[i].z==t))
 		{
 			tz=i;
-			printf("%d %d\n",s[i].h,s[i].z);
+			my_printf("%d %d\n",s[i].h,s[i].z);
 			break;
 		}
 	for(i=0;i<n;i++)
@@ -41,7 +41,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if((i!=oz)&&(i!=tz)&&(s[i].z==th))
 		{
-			printf("%d %d\n",s[i].h,s[i].z);
+			my_printf("%d %d\n",s[i].h,s[i].z);
 			break;
 		}
 	return 0;

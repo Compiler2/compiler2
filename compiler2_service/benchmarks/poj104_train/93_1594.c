@@ -10,7 +10,7 @@ int min(int a,int b){
 }
 int main_bench(){
 	int n,count=0,i=0,a[3]={0,0,0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n%3==0){
 		count++;a[count-1]=3;i=3;}
 	if(n%5==0){
@@ -18,12 +18,12 @@ int main_bench(){
 	if(n%7==0){
 		count++;a[count-1]=7;i=7;}
 	if(count==0)
-		printf("n");
+		my_printf("n");
 	if(count==1)
-		printf("%d",i);
+		my_printf("%d",i);
 	if(count==2)
-		printf("%d %d",min(a[0],a[1]),max(a[0],a[1]));
+		my_printf("%d %d",min(a[0],a[1]),max(a[0],a[1]));
 	if(count==3)
-		printf("3 5 7");
+		my_printf("3 5 7");
 	return 0;
 }

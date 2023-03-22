@@ -3,12 +3,12 @@
 int main_bench()
 {
     int n,shu[1000][1000],i,k,heng=0,s=0,count;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     for(k=0;k<n;k++)
                     {
-                                    scanf("%d",&shu[i][k]);
+                                    my_scanf("%d",&shu[i][k]);
                      
                     }               
                     }
@@ -41,7 +41,7 @@ int main_bench()
                                }
                                }
     count=(s-2)*(heng-2);
-    printf("%d",count);
+    my_printf("%d",count);
     return 0;
 }                           
                                                                

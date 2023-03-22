@@ -6,19 +6,19 @@ long int min,max;
 float sum;
 main_bench()
 {
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	sum=0;
 	min=100000; 
 	max=0;
 	for(i=1;i<=n;i++) 
 	{
-		scanf("%d",&rec[i]);
+		my_scanf("%d",&rec[i]);
 		sum=sum+rec[i];
 		if (rec[i]<min) min= rec[i];
 		if (rec[i]>max) max=rec[i];
 	}
 	sum=sum/n;
-	if (max-sum==sum-min) printf("%d,%d\n",min,max);
-	else if (max-sum>sum-min) printf("%d\n",max);
-	else printf("%d\n",min);
+	if (max-sum==sum-min) my_printf("%d,%d\n",min,max);
+	else if (max-sum>sum-min) my_printf("%d\n",max);
+	else my_printf("%d\n",min);
 }

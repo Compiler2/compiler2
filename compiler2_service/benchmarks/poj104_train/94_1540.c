@@ -3,10 +3,10 @@
 int main_bench(){
 	
 	int n,i,a[500],b[500],j=0,l,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,11 +32,11 @@ int main_bench(){
 	{
 		if(i!=j-1)
 		{
-		    printf("%d,",b[i]);
+		    my_printf("%d,",b[i]);
 		}
 		else
 		{
-			printf("%d\n",b[i]);
+			my_printf("%d\n",b[i]);
 		}
 	}
 	

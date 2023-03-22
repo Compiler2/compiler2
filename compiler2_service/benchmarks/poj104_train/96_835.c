@@ -13,14 +13,14 @@ int main_bench(){
 		result[1]='\0';
 		b=(origin[0]-'0')%13;
 		puts(result);
-		printf("%d", b);
+		my_printf("%d", b);
 	}
 	else if(((a==2)&&((origin[0]-'0')*10+(origin[1]-'0'))<13)){
         result[0]='0';
 		result[1]='\0';
 		b=((origin[0]-'0')*10+(origin[1]-'0'))%13;
 		puts(result);
-		printf("%d", b);
+		my_printf("%d", b);
 
 	}
 	else{
@@ -37,7 +37,7 @@ int main_bench(){
 	   }
     result[i-1]='\0';
 	puts(result);
-	printf("%d", b);
+	my_printf("%d", b);
 	}
 	else{
         for(i=2;i<a;i++){
@@ -47,7 +47,7 @@ int main_bench(){
 		}
     result[i-2]='\0';
 	puts(result);
-	printf("%d", b);
+	my_printf("%d", b);
 	}
 	}
 	

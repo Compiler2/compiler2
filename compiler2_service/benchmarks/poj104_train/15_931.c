@@ -2,11 +2,11 @@
 
 int main_bench(){
      int sz[100][100],n,p,q,i,k,a,b;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++){
 			for(k=0;k<n;k++)
 			{
-				scanf("%d",&(sz[i][k]));
+				my_scanf("%d",&(sz[i][k]));
                 if(sz[i][k]==0){
 				p=i;
 				q=k;
@@ -21,7 +21,7 @@ int main_bench(){
 				}
 			}
 		}
-            printf("%d",(p-a-1)*(q-b-1));
+            my_printf("%d",(p-a-1)*(q-b-1));
 			return 0;
 }
 

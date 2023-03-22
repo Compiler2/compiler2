@@ -2,9 +2,9 @@
 
 int main_bench()
 {   int i=0,e=0,a[2][1000],c,d,t=0;
-    scanf("%d %d",&c,&d);
+    my_scanf("%d %d",&c,&d);
 	for(i=0;i<c;i++){
-		scanf("%d",&a[0][i]);
+		my_scanf("%d",&a[0][i]);
 	}
 	for(i=0;i<c-1;i++){
 		for(e=i+1;e<c-1;e++){
@@ -14,6 +14,6 @@ int main_bench()
 
 		}
 	}
-	if(t==0){printf("no");}else{printf("yes");}
+	if(t==0){my_printf("no");}else{my_printf("yes");}
 	return 0;
 }

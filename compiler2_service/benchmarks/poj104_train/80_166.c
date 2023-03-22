@@ -5,14 +5,14 @@ int main_bench()
 	int a,b,c,d,e,f,g,n,m,i;
 	int rui(int x);
 	int day(int p,int q);
-	scanf("%d%d%d",&a,&b,&c);
-	scanf("%d%d%d",&e,&f,&g);
+	my_scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&e,&f,&g);
 	n=day(a,b)+c;
 	m=day(e,f)+g;
 	for (i=a;i<=e-1;i++)
 	{if (rui(i)==0) m=m+365;
 		else m=m+366;}
-	printf("%d",m-n);
+	my_printf("%d",m-n);
 }
 int rui(int x)
 {

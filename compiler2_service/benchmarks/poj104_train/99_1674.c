@@ -9,10 +9,10 @@ int main_bench()
 	double C=0;
 	double D=0;
 	double e,f,g,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a>=1&&a<=18)
 			A+=1;
 		if(a>=19&&a<=35)
@@ -24,9 +24,9 @@ int main_bench()
 	}
 	
 	e=A/n*100;f=B/n*100;g=C/n*100;h=D/n*100;
-	printf("1-18: %.2lf%%\n",e);
-	printf("19-35: %.2lf%%\n",f);
-	printf("36-60: %.2lf%%\n",g);
-	printf("60??: %.2lf%%",h);
+	my_printf("1-18: %.2lf%%\n",e);
+	my_printf("19-35: %.2lf%%\n",f);
+	my_printf("36-60: %.2lf%%\n",g);
+	my_printf("60??: %.2lf%%",h);
 return 0;
 }

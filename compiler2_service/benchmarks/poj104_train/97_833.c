@@ -4,7 +4,7 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a,b,c,d,e,f;
 
 a=(n-n%100)/100;
@@ -32,7 +32,7 @@ f=n-a*100-b*50-c*20-d*10-e*5;
 }
 else if((n-a*100-b*50-c*20-d*10)<5){e=0;f=f=n-a*100-b*50-c*20-d*10-e*5;}
 
-printf("%d\n",a);printf("%d\n",b);printf("%d\n",c);printf("%d\n",d);printf("%d\n",e);printf("%d\n",f);
+my_printf("%d\n",a);my_printf("%d\n",b);my_printf("%d\n",c);my_printf("%d\n",d);my_printf("%d\n",e);my_printf("%d\n",f);
 
 
 return 0;

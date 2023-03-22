@@ -6,11 +6,11 @@ int main_bench()
     int n,s,k=0;
     int b[1000];
     b[0]=0;
-    scanf ("%d",&n);
+    my_scanf ("%d",&n);
     
     for (int i=0;i<n;i++)
     { for (int j=0;j<n;j++)
-        { scanf ("%d",&a[i][j]);
+        { my_scanf ("%d",&a[i][j]);
            
               if (a[i][j]==0)
               {  b[k]=b[k]+1;}
@@ -20,7 +20,7 @@ int main_bench()
     }
     
     s=(b[0]-2)*(k-2);
-    printf("%d",s);
+    my_printf("%d",s);
 	return 0;
 }
 

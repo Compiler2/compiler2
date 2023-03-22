@@ -20,12 +20,12 @@ int main_bench(){
         }    
     for(i=0;i<k;i++){
         len[i]=strlen(word[i]);
-        printf("%d,",len[i]);
+        my_printf("%d,",len[i]);
         } 
-    printf("%d",strlen(word[k]));
+    my_printf("%d",strlen(word[k]));
     
     
    
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

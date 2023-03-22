@@ -5,12 +5,12 @@ int main_bench()
 {
 	
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
 		char c[100];
-		scanf("\n%s",c);
+		my_scanf("\n%s",c);
         int k;
 		for(k=0;;k++)
 		{
@@ -28,7 +28,7 @@ int main_bench()
             c[k-2]='\0';
 			c[k-3]='\0';
 		}
-		printf("%s\n",c);
+		my_printf("%s\n",c);
 	}
 	return 0;
 }

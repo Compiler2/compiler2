@@ -6,13 +6,13 @@ int main_bench()
     i=0;
     int sj[100];
     int sz[100][100];
-    scanf("%d",&x);
+    my_scanf("%d",&x);
         for(y=0;y<x;y++){
-           scanf("%d",&m);
-           scanf("%d",&n);
+           my_scanf("%d",&m);
+           my_scanf("%d",&n);
            for(i=0;i<m;i++){
            for(k=0;k<n;k++){             
-               scanf("%d",&sz[i][k]);
+               my_scanf("%d",&sz[i][k]);
               }
            } 
        for(k=0;k<n;k++){
@@ -25,7 +25,7 @@ int main_bench()
        sum=0;
     } 
     for(y=0;y<x;y++){
-        printf("%d\n",sj[y]);
+        my_printf("%d\n",sj[y]);
        }
     return 0;
 }

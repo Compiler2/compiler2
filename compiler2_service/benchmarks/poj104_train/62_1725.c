@@ -15,7 +15,7 @@ int main_bench()
 		}
 		else
 		{
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 			i++;
 		}
 	}

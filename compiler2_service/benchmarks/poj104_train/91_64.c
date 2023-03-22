@@ -13,6 +13,6 @@ int main_bench()
 		}
 		else *(q+i)=*(c+i)+*c;
 	}
-	printf("%s",q);
+	my_printf("%s",q);
 	return 0;
 }

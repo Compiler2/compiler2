@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int a[n];
 int sz[n];
 int i,m;
@@ -10,11 +10,11 @@ double j,GPA,f;
 GPA=0;
 m=0;
 for(i=0;i<n;i++){
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 m=m+a[i];
 }
 for(i=0;i<n;i++){
-scanf("%d",&sz[i]);
+my_scanf("%d",&sz[i]);
 }
 for(i=0;i<n;i++){
 if((sz[i]>=90)&&(sz[i]<=100)){
@@ -42,6 +42,6 @@ f=j*a[i];
 GPA=GPA+f;
 }
 GPA=GPA/m;
-printf("%.2f",GPA);
+my_printf("%.2f",GPA);
 return 0;
 }

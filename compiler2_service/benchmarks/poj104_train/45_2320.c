@@ -23,9 +23,9 @@ int main_bench()
     int i, len;
     char tgt[50], src[50];
 
-    scanf("%s %s", tgt, src);
+    my_scanf("%s %s", tgt, src);
 
-    printf("%d\n", Find(tgt, src)+1);
+    my_printf("%d\n", Find(tgt, src)+1);
 
     return 0;
 }

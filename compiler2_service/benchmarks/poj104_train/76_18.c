@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *left=(int*)malloc(sizeof(int)*n);
 	int *right=(int*)malloc(sizeof(int)*n);
 	int i,j;
 	int tmp,sign=0,min,max;	
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&left[i],&right[i]);
+		my_scanf("%d%d",&left[i],&right[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -50,9 +50,9 @@ int main_bench()
 			sign=0;
 	}
 	if(i==n&&sign==1)
-		printf("%d %d\n",min,max);
+		my_printf("%d %d\n",min,max);
 	else
-		printf("no\n");
+		my_printf("no\n");
 	free(left);
 	free(right);
 	return 0;

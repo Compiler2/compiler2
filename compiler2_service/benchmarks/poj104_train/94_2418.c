@@ -2,10 +2,10 @@
 
 int main_bench(){
     int n,zhan,k=0,i=0,j=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int s[n];
     while(i<n){
-        scanf("%d",&zhan);
+        my_scanf("%d",&zhan);
         if(zhan%2==1){
             s[k]=zhan;
             k=k+1;
@@ -26,9 +26,9 @@ int main_bench(){
         i=i+1;
     }
     i=k-2;
-    printf("%d",s[k-1]);
+    my_printf("%d",s[k-1]);
     while(i>=0){
-        printf(",%d",s[i]);
+        my_printf(",%d",s[i]);
         i=i-1;
     }
     return 0;

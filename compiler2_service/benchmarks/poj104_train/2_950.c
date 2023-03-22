@@ -8,12 +8,12 @@ struct book
 int main_bench()
 {
 	int n;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	int i;
 	struct book book[1000];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].author);
+		my_scanf("%d %s",&book[i].num,book[i].author);
 	}
     int b[26]={0};
 	for(i=0;i<n;i++)
@@ -37,13 +37,13 @@ int main_bench()
 	}
 	char p;
 	p=i+65;
-	printf("%c\n%d\n",p,max);
+	my_printf("%c\n%d\n",p,max);
 	for(i=0;i<n;i++)
 	{   int j,l;
 		l=strlen(book[i].author);
 		for(j=0;j<l;j++)
 		{
-			if(book[i].author[j]==p) {printf("%d\n",book[i].num);break;}
+			if(book[i].author[j]==p) {my_printf("%d\n",book[i].num);break;}
 			else if(book[i].author[j]!=p&&j==l-1) break;
 		}
 	}

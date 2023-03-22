@@ -13,11 +13,11 @@ int main_bench()
 	{
 		if(*(p+i)!=' ')
 		{
-			printf("%c",*(p+i));
+			my_printf("%c",*(p+i));
 		}
 		if(*(p+i)==' '&&*(p+i+1)!=' ')
 		{
-			printf(" ");
+			my_printf(" ");
 		}
 	}
 	return 0;

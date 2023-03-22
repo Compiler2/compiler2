@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,x,y,t,m,n,p;
 	int a[10000],b[10000];
-	scanf("%d %d",&a[0],&b[0]);
+	my_scanf("%d %d",&a[0],&b[0]);
 	for(i=0;i<10000;i++)
 	{
 		if(a[i]==1) 
@@ -41,5 +41,5 @@ int main_bench()
 	{
 		if(a[i]==b[i]) p=a[i];
 	}
-	printf("%d",p);
+	my_printf("%d",p);
 }

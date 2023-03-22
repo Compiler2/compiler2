@@ -4,10 +4,10 @@ int main_bench()
 {
 	char str[7][40];
 	int n,i,l,j,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(t=0;t<n;t++)
 	{
-		scanf("%s",str[0]);
+		my_scanf("%s",str[0]);
 		l=strlen(str[0]);
 		
 		if(l<=2)
@@ -15,7 +15,7 @@ int main_bench()
 		else if(l==3)
 		{
 			if(str[0][1]=='e'&&str[0][2]=='r'||str[0][1]=='l'&&str[0][2]=='y')
-				printf("%c\n",str[0][0]);
+				my_printf("%c\n",str[0][0]);
 		}
 	
 			else
@@ -28,7 +28,7 @@ int main_bench()
 			strcat(str[1],"ing");
 			if(strcmp(str[0],str[1])==0)
 			{
-			printf("%s\n",str[2]);
+			my_printf("%s\n",str[2]);
 			continue;
 			}
 
@@ -37,7 +37,7 @@ int main_bench()
 			strcat(str[3],"er");
 			if(strcmp(str[0],str[3])==0)
 			{
-				printf("%s\n",str[4]);
+				my_printf("%s\n",str[4]);
 				continue;
 			}
 
@@ -46,7 +46,7 @@ int main_bench()
 			strcat(str[5],"ly");
 			if(strcmp(str[0],str[5])==0)
 			{
-			printf("%s\n",str[6]);
+			my_printf("%s\n",str[6]);
 			continue;
 			}
 		}

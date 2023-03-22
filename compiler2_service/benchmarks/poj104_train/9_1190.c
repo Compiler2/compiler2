@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,m=0,r=0,e,j;
 	char id[100][10],a[100][10],b[100][10],c[100];
 	int nl[100],am[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",id[i],&nl[i]);
+		my_scanf("%s %d",id[i],&nl[i]);
 	}
 	for(i=0;i<n;i++){
 		if(nl[i]>=60){

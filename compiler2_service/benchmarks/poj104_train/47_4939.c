@@ -5,10 +5,10 @@ int main_bench()
 {
 	int a[100];
 	int n,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<=n-1;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	if(n%2==0){
 		for(i=0;i<=n/2-1;i++){
@@ -18,9 +18,9 @@ int main_bench()
 		}
 		for(i=0;i<=n-1;i++)
 			if(i<n-1)
-			printf("%d ",a[i]);
+			my_printf("%d ",a[i]);
                            if(i=n-1)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 	}
 	if(n%2==1){
 		for(i=0;i<=(n-1)/2-1;i++){
@@ -30,9 +30,9 @@ int main_bench()
 		}
 		for(i=0;i<=n-1;i++)
                            if(i<n-1)
-			printf("%d ",a[i]);
+			my_printf("%d ",a[i]);
                            if(i=n-1)
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 	}
 	return  0;
 }

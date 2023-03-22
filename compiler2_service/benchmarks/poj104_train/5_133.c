@@ -6,13 +6,13 @@ int main_bench()
 	int i,k,l=0;
 	k=0;
 	double d;
-	scanf("%lf",&d);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&d);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	if(strlen(a)!=strlen(b))
 	{
 		k=1;
-		printf("error");
+		my_printf("error");
 	}
 	if(strlen(a)==strlen(b))
 	{
@@ -23,7 +23,7 @@ int main_bench()
 			if((a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C')||(b[i]!='A'&&b[i]!='T'&&b[i]!='G'&&b[i]!='C'))
 			{
 				k=1;
-				printf("error");
+				my_printf("error");
 				break;
 			}
 		}
@@ -31,9 +31,9 @@ int main_bench()
 	if(k==0)
 	{
 		if((1.0*l/strlen(a))>=d)
-			printf("yes");
+			my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 	return 0;
 }

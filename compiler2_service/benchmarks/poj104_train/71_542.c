@@ -4,10 +4,10 @@ int main_bench()
 {
 	void xiangguan(int y,int m1,int m2);
 	int n,i,year,m1,m2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		xiangguan(year,m1,m2);
 	}
 }
@@ -43,9 +43,9 @@ void xiangguan(int y,int m1,int m2)
 		}
 	}
 	if((x1-x2)%7==0)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 }
 
 int runnian(int y)

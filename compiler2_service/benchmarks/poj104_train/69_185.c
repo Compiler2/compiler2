@@ -89,13 +89,13 @@ int main_bench()
 	{
 	for(j=i;j>=0;j--)
 	{
-		printf("%c",answer[j]);
+		my_printf("%c",answer[j]);
 	}
 	}
 	else
 	{
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

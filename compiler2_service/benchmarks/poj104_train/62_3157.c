@@ -11,7 +11,7 @@ int main_bench(){
         j=j+1;
     }
     q[i]='\0';
-    printf("%s",q);
+    my_printf("%s",q);
     return 0;
     
 }

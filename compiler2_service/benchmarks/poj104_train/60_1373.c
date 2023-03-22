@@ -3,10 +3,10 @@
 int main_bench()
 {
     int n,i,a,x,y;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n<5)
     {
-           printf("empty");
+           my_printf("empty");
     }
     else
     {
@@ -19,7 +19,7 @@ int main_bench()
                                   if(a==i-3)
                                   {
                                             x=i-2,y=i;
-                                            printf("%d %d\n",x,y);
+                                            my_printf("%d %d\n",x,y);
                                   }
                   }
         }                

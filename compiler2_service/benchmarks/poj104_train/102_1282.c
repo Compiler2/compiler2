@@ -3,22 +3,22 @@
 int main_bench()
 {
 	int N;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	int count1=0,count2=0;
 	float male[40]={0.0};
 	float female[40]={0.0};
 	char judge [10]={'\0'};
 	for(int i=0;i<N;i++)
 	    {
-		scanf("%s",judge);
+		my_scanf("%s",judge);
 		if(judge[0]=='m')
 		   {
-		    scanf("%f",&male[count1]);
+		    my_scanf("%f",&male[count1]);
 			count1++;		
 		   }
 		else
 		    {
-			scanf("%f",&female[count2]);
+			my_scanf("%f",&female[count2]);
 			count2++;	
 			}	
 		}
@@ -48,9 +48,9 @@ int main_bench()
 			   }   
 			}	
 		}
-	printf("%.2f",male[0]);
+	my_printf("%.2f",male[0]);
 	for(int i=1;i<count1;i++)
-	    printf(" %.2f",male[i]);
+	    my_printf(" %.2f",male[i]);
 	for(int i=0;i<count2;i++)
-	    printf(" %.2f",female[i]); 
+	    my_printf(" %.2f",female[i]); 
 }

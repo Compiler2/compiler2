@@ -9,7 +9,7 @@ int main_bench()
     a[i]='\0';
     b[i]='\0';
   }
-  scanf("%s %s",a,b);
+  my_scanf("%s %s",a,b);
   if(strlen(a)==strlen(b))
   {
     int j;
@@ -25,9 +25,9 @@ int main_bench()
          }
      }
    if(strlen(b)==0)
-   printf("YES");
-   else printf("NO");
+   my_printf("YES");
+   else my_printf("NO");
   }
-  else printf("NO");
+  else my_printf("NO");
 return 0;
 }

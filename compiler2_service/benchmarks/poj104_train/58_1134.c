@@ -13,7 +13,7 @@ int isStart(char a)
 int main_bench()
 {
 		int i=0, n = 0;
-		scanf("%d\n",&n);
+		my_scanf("%d\n",&n);
 		char array[300][81] ;
 		for(i = 0 ; i<n ; i++)
 		{
@@ -31,8 +31,8 @@ int main_bench()
 				}
 			}
 			else flag= 0 ;
-			if(flag==1)printf("1\n");
-			else printf("0\n");
+			if(flag==1)my_printf("1\n");
+			else my_printf("0\n");
 		}
 		return 0;
 }

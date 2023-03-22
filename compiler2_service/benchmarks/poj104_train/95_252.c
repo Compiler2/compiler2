@@ -19,10 +19,10 @@ int main_bench()
 	{
 		if(y[i]>64&&y[i]<91) y[i]+=32;
 	}
-	if(strcmp(x,y)>0) printf(">\n");
+	if(strcmp(x,y)>0) my_printf(">\n");
 	else
 	{
-		if(strcmp(x,y)<0) printf("<\n");
-		else printf("=\n");
+		if(strcmp(x,y)<0) my_printf("<\n");
+		else my_printf("=\n");
 	}
 }

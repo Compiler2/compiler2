@@ -35,20 +35,20 @@ int main_bench()
 		{
 			for(j=0;j<b[i];j=j+1)
 			{
-				if(p) printf("\n");
+				if(p) my_printf("\n");
 				p=p+1;
 				for (k=a[i][j]-i/2+1;k<=a[i][j]+i/2;k=k+1)
-					printf("%c",s[k]);
+					my_printf("%c",s[k]);
 			}
 		}
 		else
 		{
 			for(j=0;j<b[i];j=j+1)
 			{
-				if(p) printf("\n");
+				if(p) my_printf("\n");
 				p++;
 				for(k=a[i][j]-(i-1)/2;k<=a[i][j]+(i-1)/2;k=k+1)
-					printf("%c",s[k]);
+					my_printf("%c",s[k]);
 			}
 		}
 	}

@@ -4,8 +4,8 @@ int main_bench()
 {
     char a[250],b[250],c[250];
     int aa[250],bb[250],cc[250],dd[250],add;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
 
     int l1,l2,i,j;
     l1=strlen(a);
@@ -37,17 +37,17 @@ int main_bench()
         {
             dd[j]=cc[j]+aa[j]+add;
             for(i=0;i<l1;i++) if (dd[i]!=0) break;
-            if (i==l1) printf("%d",0);
+            if (i==l1) my_printf("%d",0);
             else
             for(j=i;j<=l1-1;j++)
-            printf("%d",dd[j]);
+            my_printf("%d",dd[j]);
         }
         else
         {
             dd[j]=cc[j]+aa[j]+add-10;
-            printf("%d",1);
+            my_printf("%d",1);
             for(j=0;j<=l1-1;j++)
-            printf("%d",dd[j]);
+            my_printf("%d",dd[j]);
         }
 
 
@@ -80,17 +80,17 @@ int main_bench()
         {
             dd[j]=cc[j]+aa[j]+add;
             for(i=0;i<l2;i++) if (dd[i]!=0) break;
-            if (i==l1) printf("%d",0);
+            if (i==l1) my_printf("%d",0);
             else
             for(j=i;j<=l2-1;j++)
-            printf("%d",dd[j]);
+            my_printf("%d",dd[j]);
         }
         else
         {
             dd[j]=cc[j]+aa[j]+add-10;
-            printf("%d",1);
+            my_printf("%d",1);
             for(j=0;j<=l2-1;j++)
-            printf("%d",dd[j]);
+            my_printf("%d",dd[j]);
         }
     }
 }

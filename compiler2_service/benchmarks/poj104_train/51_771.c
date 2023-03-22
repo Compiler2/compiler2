@@ -4,8 +4,8 @@ int main_bench()
 {   
     int n=0,i=0,j=0,k=0;
     char str[500]={'0'};
-    scanf("%d",&n);
-    scanf("%s",str);
+    my_scanf("%d",&n);
+    my_scanf("%s",str);
     int len=0,max=0,num[500]={0},a[100]={0};
     len=strlen(str);
     for(i=0;i<len-n+1;i++)
@@ -37,16 +37,16 @@ int main_bench()
                                k++;
                           } 
     }
-    if(num[a[0]]==0) printf("NO\n");
+    if(num[a[0]]==0) my_printf("NO\n");
     else
     {
-        printf("%d\n",num[a[0]]+1);
+        my_printf("%d\n",num[a[0]]+1);
         i=0;
         do
         {
                              for(j=a[i];j<a[i]+n-1;j++)
-                                                     printf("%c",str[j]);
-                             printf("%c\n",str[j]);
+                                                     my_printf("%c",str[j]);
+                             my_printf("%c\n",str[j]);
                              i++;
         } while(a[i]!=0);
     }              

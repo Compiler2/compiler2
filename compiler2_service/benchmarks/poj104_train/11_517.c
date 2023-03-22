@@ -6,7 +6,7 @@ int main_bench()
 	int y,m,d,D=0,l,s;
 	l=31;
 	s=30;
-	scanf ("%d%d%d", &y, &m, &d);
+	my_scanf ("%d%d%d", &y, &m, &d);
 	if (m==1)
 		D=d;
 	else if (m==2)
@@ -35,7 +35,7 @@ int main_bench()
 	{
 		D=D+1;
 	}
-	printf ("%d\n", D);
+	my_printf ("%d\n", D);
 	return 0;
 }
 	

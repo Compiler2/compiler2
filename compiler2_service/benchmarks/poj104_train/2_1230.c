@@ -15,9 +15,9 @@ int main_bench()
 	int max = 0;
 	int writer[26] = {0};
 	
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i = 0; i < m; i++) {
-		scanf("%d %s",&book[i].number,book[i].author);
+		my_scanf("%d %s",&book[i].number,book[i].author);
 	}
 	
 	for (i = 0; i < m; i++) {
@@ -37,12 +37,12 @@ int main_bench()
 	
 	for (i = 0; i < 26; i++) {
 		if (max == writer[i]) {
-			printf("%c\n",i + 'A');
-			printf("%d\n",max);
+			my_printf("%c\n",i + 'A');
+			my_printf("%d\n",max);
 			for (j = 0; j < m; j++) {
 				for (k = 0; k < 26; k++) {
 					if (book[j].author[k] == i + 'A') {
-						printf("%d\n",book[j].number);
+						my_printf("%d\n",book[j].number);
 					}
 				}
 			}

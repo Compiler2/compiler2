@@ -51,9 +51,9 @@ int main_bench()
   for(i=0;i<=m-1;i++)
     {
        if(i==0)
-       printf("%s",x[i]);
+       my_printf("%s",x[i]);
        else
-       printf(" %s",x[i]);
+       my_printf(" %s",x[i]);
     }
 return 0;
 }

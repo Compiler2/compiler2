@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,i,ii=0,j,k,num[511]={0},p=0,q=0,s=0,v,mm,nn;
 	char a[511],b[511][511],max[511];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	getchar();
 	gets(a);
 	n=strlen(a);
@@ -43,17 +43,17 @@ int main_bench()
 	}
 	if(mm>1)
 	{
-		printf("%d\n",mm);
+		my_printf("%d\n",mm);
 		for(v=0;v<=n-m;v++)
 		{
 			if(num[v]==mm)
 			{
-				printf("%s\n",b[v]);
+				my_printf("%s\n",b[v]);
 				
 			}
 		}
 	}
 	else
-		printf("NO");
+		my_printf("NO");
 	return 0;
 }

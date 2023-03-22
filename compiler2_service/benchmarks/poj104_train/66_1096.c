@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a, b, c, d, e, f, g, h;
-	scanf("%d %d %d", &a, &b, &c);
+	my_scanf("%d %d %d", &a, &b, &c);
 	while(a>=2800)
 		a=a-2800;
 	d=a-1;
@@ -64,18 +64,18 @@ int main_bench(){
 	g=e+f+c;
 	h=g%7;
 	if(h==1)
-		printf("Mon.");
+		my_printf("Mon.");
 	else if(h==2)
-		printf("Tue.");
+		my_printf("Tue.");
 	else if(h==3)
-		printf("Wed.");
+		my_printf("Wed.");
 	else if(h==4)
-		printf("Thu.");
+		my_printf("Thu.");
 	else if(h==5)
-		printf("Fri.");
+		my_printf("Fri.");
 	else if(h==6)
-		printf("Sat.");
+		my_printf("Sat.");
 	else if(h==0)
-		printf("Sun.");
+		my_printf("Sun.");
 	return 0;
 }

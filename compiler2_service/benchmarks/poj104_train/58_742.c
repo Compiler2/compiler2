@@ -3,7 +3,7 @@
 int main_bench(){
     int i,j,l,n,o=1,count=0;
     char a[100];
-    scanf("%d",&n);getchar();
+    my_scanf("%d",&n);getchar();
     for(j=0;j<n;j++){
         gets(a);
         l=strlen(a);
@@ -17,12 +17,12 @@ int main_bench(){
             }
         if(count==l) o=1;
         else o=0;
-        printf("%d\n",o);
+        my_printf("%d\n",o);
         count=0;       
         for(i=0;i<100;i++) a[i]=' ';
         }
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

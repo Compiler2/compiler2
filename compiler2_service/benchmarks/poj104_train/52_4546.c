@@ -5,16 +5,16 @@ int main_bench()
 {
 	int n,m;
 	int a[100];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	getchar();
 
 	int *p;
 	for(p=a;p<(a+n);p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 	move (a,n,m);
 	for(p=a;p<(a+n-1);p++)
-		printf("%d ",*p);
-	printf("%d",*p);
+		my_printf("%d ",*p);
+	my_printf("%d",*p);
 	return 0;
 }
 void move(int a[],int n,int m)

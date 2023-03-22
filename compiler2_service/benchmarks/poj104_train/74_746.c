@@ -32,23 +32,23 @@ int main_bench()
 {
 	int m,n,k;
 	int first=1,flag=1;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(k=m;k<=n;k++)
 	{
 		if(A(k)&&B(k)){
 			if(first){
-			    printf("%d",k);
+			    my_printf("%d",k);
 			    first=0;
 			}
 		         else{
-				printf(",%d",k);
+				my_printf(",%d",k);
 			}
 			flag=0;
 		}
 	}
 	if(flag)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;	
 }

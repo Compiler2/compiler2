@@ -4,7 +4,7 @@ int huiwen(int);
 int sushu(int);
 int main_bench(){
 	int m,n;
-	scanf("%d %d",&m,&n);	int i,k,*sz=(int *)malloc(sizeof(int)*(n-m));
+	my_scanf("%d %d",&m,&n);	int i,k,*sz=(int *)malloc(sizeof(int)*(n-m));
 	k=0;
 	for(i=m;i<=n;i++){
 		if(huiwen(i)){
@@ -13,11 +13,11 @@ int main_bench(){
 			k++;}
 		}
 	}
-	if(k==0){printf("no");}
+	if(k==0){my_printf("no");}
 	else{
-		printf("%d",sz[0]);
+		my_printf("%d",sz[0]);
 		for(i=1;i<k;i++){
-			printf(",%d",sz[i]);
+			my_printf(",%d",sz[i]);
 		}
 	}
 	return 0;

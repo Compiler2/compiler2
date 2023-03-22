@@ -7,13 +7,13 @@ int main_bench(){
    int sz[100][100]={0};
    int sum[100];
    
-   scanf("%d",&k);
+   my_scanf("%d",&k);
 
    for(i=1;i<=k;i++){
-      scanf("%d%d",&ROW,&COL);
+      my_scanf("%d%d",&ROW,&COL);
       for(row=0;row<ROW;row++){
          for(col=0;col<COL;col++){
-             scanf("%d",&(sz[row][col]));
+             my_scanf("%d",&(sz[row][col]));
          }
       }
       rie=0;
@@ -29,7 +29,7 @@ int main_bench(){
    }
   
     for(i=1;i<=k;i++){     
-       printf("%d\n",sum[i]);
+       my_printf("%d\n",sum[i]);
     }
 	return 0;
 }

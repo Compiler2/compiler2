@@ -11,14 +11,14 @@ int main_bench()
 	int n,i,k;
 	int count;
 	int j=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	count=n;
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i].num);
+		my_scanf("%d",&a[i].num);
 		a[i].status=1;
 	}
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for (i=0;i<n;i++)
 	{
 		if (a[i].num==k)
@@ -31,13 +31,13 @@ int main_bench()
 	{
 		if (a[i].status && j!=(count-1))
 		{
-			printf("%d ",a[i].num);
+			my_printf("%d ",a[i].num);
 			j++;
 		}
 		else
 			if (a[i].status && j==count-1)
 			{
-				printf("%d",a[i].num);
+				my_printf("%d",a[i].num);
 			}
 	}
 	return 0;

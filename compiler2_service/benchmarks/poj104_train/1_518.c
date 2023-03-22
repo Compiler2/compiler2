@@ -15,15 +15,15 @@ int prime(int n, int m )
 int main_bench()
 {  
 	int n,b[2000],b0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{	
-		scanf("%d",&b0);
+		my_scanf("%d",&b0);
 		b[i]=prime(b0,2);
 	}
 	for(i=0;i<=n-2;i++)
 	{
-		printf("%d\n",b[i]);
+		my_printf("%d\n",b[i]);
 	}
-		printf("%d",b[n-1]);
+		my_printf("%d",b[n-1]);
 }

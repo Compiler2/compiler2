@@ -14,7 +14,7 @@ int main_bench()
 			cout++;
 		    i++;
 		}
-		printf("%d",cout);
+		my_printf("%d",cout);
 			break;
 	}
 	for(j=i+1;j<len;j++)
@@ -29,7 +29,7 @@ int main_bench()
 			cout++;
 		    j++;
 		}
-		printf(",%d",cout);
+		my_printf(",%d",cout);
 	}
 	return 0;
 }

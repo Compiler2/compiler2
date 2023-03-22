@@ -2,10 +2,10 @@
 
 int main_bench(){
     int N,i,n,j;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     int sz[N];
     for(i=0;i<N;i++){
-    scanf("%d",&sz[i]);}
+    my_scanf("%d",&sz[i]);}
     int js[N];
     for(i=0,j=0;i<N;i++){
         if(sz[i]%2!=0){
@@ -21,8 +21,8 @@ for(int	m=0;m<j-k;m++){
 	 	 	 	js[m]=e;	
 	 	 }}}
           for(i=0;i<j-1;i++){
-           printf("%d,",js[i]);}   
-           printf("%d",js[j-1]);
+           my_printf("%d,",js[i]);}   
+           my_printf("%d",js[j-1]);
     return 0;
     }
 

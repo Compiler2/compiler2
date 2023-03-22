@@ -8,11 +8,11 @@ struct patient
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
          int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",&grp1[i].No,&grp1[i].age);
+		my_scanf("%s%d",&grp1[i].No,&grp1[i].age);
 	}
          for(i=0;i<n;i++)
 	{
@@ -53,12 +53,12 @@ int main_bench()
          for(i=0;i<n;i++)
 	{
 		if(grp2[i].age!=-1)
-			printf("%s\n",grp2[i].No);
+			my_printf("%s\n",grp2[i].No);
 	}
          for(i=0;i<n;i++)
 	{
 		if(grp3[i].age!=-1)
-			printf("%s\n",grp3[i].No);
+			my_printf("%s\n",grp3[i].No);
 	}
 	return 0;
 }

@@ -2,16 +2,16 @@
 
 int main_bench(){
  int n;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int shuzu[300],i,j;
  
  for(i=0;i<n;i++){
-  scanf("%d",&shuzu[i]);
+  my_scanf("%d",&shuzu[i]);
  }
  
     int zhuanhuan[300];
  zhuanhuan[0]=shuzu[0];
- printf("%d",zhuanhuan[0]);
+ my_printf("%d",zhuanhuan[0]);
  
  int a=1;
  int b;
@@ -28,7 +28,7 @@ int main_bench(){
    }
    if(b==a){
     zhuanhuan[a]=shuzu[i];
-    printf(",%d",shuzu[i]);
+    my_printf(",%d",shuzu[i]);
     a++;
    }
   }

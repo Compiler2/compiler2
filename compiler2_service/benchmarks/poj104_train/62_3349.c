@@ -9,7 +9,7 @@ int main_bench()
 	int index = 0;
 
 	
-	while (scanf("%s", str))
+	while (my_scanf("%s", str))
 	{
 		strcpy(words[index++], str);
 
@@ -49,11 +49,11 @@ int main_bench()
 	
 	for (int i = 0; i < index; i++)
 	{
-		printf("%s", words[i]);
+		my_printf("%s", words[i]);
 		if (i == index-1)
-			printf("\n");
+			my_printf("\n");
 		else
-			printf(" ");
+			my_printf(" ");
 	}
 
 	return 0;

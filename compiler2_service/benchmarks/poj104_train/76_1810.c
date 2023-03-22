@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,a,b,pau1,pau2;
-scanf("%d",&n);
+my_scanf("%d",&n);
 struct haha
 {
 int begin;
@@ -13,7 +13,7 @@ qj[50000];
 struct haha pau;
 for (int i1=0;i1<n;i1++)
 {
-    scanf("%d%d",&qj[i1].begin,&qj[i1].end);
+    my_scanf("%d%d",&qj[i1].begin,&qj[i1].end);
 }
 for (int i3=0;i3<n;i3++)
 {
@@ -35,7 +35,7 @@ for (int i2=0;i2<n;i2++)
 
     }
 }
-if (n==1){printf("%d %d",qj[0].begin,qj[0].end);}else{printf("no");}
+if (n==1){my_printf("%d %d",qj[0].begin,qj[0].end);}else{my_printf("no");}
 return 0;
 }
 

@@ -19,7 +19,7 @@ int main_bench()
    l ++;
    if ( l <= 0 )  l = 1;
    for ( i = l-1 ; i >= 0 ; i -- )
-    printf ( "%d" , a[i] );
+    my_printf ( "%d" , a[i] );
   
    return 0;
 }

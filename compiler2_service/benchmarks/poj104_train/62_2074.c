@@ -8,6 +8,6 @@ main_bench()
 		if(c!=' '||d!=' ') putchar(c);
 	    d=c;
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

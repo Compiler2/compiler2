@@ -3,7 +3,7 @@
 int DiJiTian(int x);
 int main_bench(){
 	int w,i,m,n,y;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++){
 	   y=DiJiTian(i)-1;
 	   m=y%7;
@@ -12,7 +12,7 @@ int main_bench(){
 	     n=n-7;
 	   }
 	   if(n==5){
-	       printf("%d\n",i);
+	       my_printf("%d\n",i);
 	   }
 	}
    

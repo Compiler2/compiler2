@@ -4,13 +4,13 @@ int main_bench()
 {
 	int num,i,j,k,m,flag,already;
 	char a[100000];
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	getchar();
 	for(i=1;i<=num;i++)
 	{
 		for(j=0;j<99999;j++)
 		{
-			scanf("%c",&a[j]);
+			my_scanf("%c",&a[j]);
 			if(a[j]=='\n') break;
 		}
 		for(k=0;k<j;k++)
@@ -27,13 +27,13 @@ int main_bench()
 			}
 			if(flag==1)
 			{
-				printf("%c\n",a[k]);
+				my_printf("%c\n",a[k]);
 				already=1;
 				break;
 			}
 		}
 		if(already==0)
-				printf("no\n");
+				my_printf("no\n");
 	}
 	return 0;
 }

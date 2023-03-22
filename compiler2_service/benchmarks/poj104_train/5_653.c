@@ -2,9 +2,9 @@
 
 int main_bench(){
 	double v;
-	scanf("%lf\n",&v);
+	my_scanf("%lf\n",&v);
 	char s[600],z[600];
-	scanf("%s\n%s",s,z);
+	my_scanf("%s\n%s",s,z);
 	int a,b;
 	a=strlen(s);
 	b=strlen(z);
@@ -17,7 +17,7 @@ int main_bench(){
 	}
 	int w=0;
 	double u;
-	if(m!=n||q==1||p==1){printf("error");w=1;}
+	if(m!=n||q==1||p==1){my_printf("error");w=1;}
 	int sum=0;
 	for(n=0;n<a;n++){
 		if(s[n]==z[n]){sum++;}
@@ -25,7 +25,7 @@ int main_bench(){
 	u=1.0*sum/a;
 	if(w==1){;}
 	else {
-		if(u>v){printf("yes");}else{printf("no");}
+		if(u>v){my_printf("yes");}else{my_printf("no");}
 	}
 	return 0;
 }

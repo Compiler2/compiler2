@@ -46,6 +46,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 	return 0;
 }

@@ -18,8 +18,8 @@ int main_bench()
 				i=j;
 		}
 	}
-	printf("%d",wl[0]);
+	my_printf("%d",wl[0]);
 	for(i=1;i<w;i++)
-		printf(",%d",wl[i]);
+		my_printf(",%d",wl[i]);
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int s[100],i;
 	float a=0,b=0,c=0,d=0,h[5],n;
-	scanf("%f",&n);
+	my_scanf("%f",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -32,10 +32,10 @@ int main_bench()
 	h[1]=b/n;
 	h[2]=c/n;
 	h[3]=d/n;
-	printf("1-18: %.2f%%\n",h[0]*100);
-	printf("19-35: %.2f%%\n",h[1]*100);
-	printf("36-60: %.2f%%\n",h[2]*100);
-	printf("60??: %.2f%%\n",h[3]*100);
+	my_printf("1-18: %.2f%%\n",h[0]*100);
+	my_printf("19-35: %.2f%%\n",h[1]*100);
+	my_printf("36-60: %.2f%%\n",h[2]*100);
+	my_printf("60??: %.2f%%\n",h[3]*100);
 
 	return 0;
 }

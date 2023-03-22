@@ -16,8 +16,8 @@ main_bench()
  for(int i=1;i<=6;i++)
  {
    int a,b;
-   scanf("%d",&a);
+   my_scanf("%d",&a);
    b=fxs(a);
-   printf("%d\n",b);
+   my_printf("%d\n",b);
  }
 }                                

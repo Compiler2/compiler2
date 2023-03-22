@@ -20,9 +20,9 @@ int main_bench(){
 		}
 	for(i=0;i<j+1;i++){
 		if(i==j){
-			printf("%d\n",b[i]);
+			my_printf("%d\n",b[i]);
 		}else{
-			printf("%d,",b[i]);
+			my_printf("%d,",b[i]);
 		}
 	}
 	

@@ -14,7 +14,7 @@ main_bench()
     for (i='a';i<='z';i++)
      {a2i[i]=i-'a'+10;}
      
-     scanf("%d %s %d",&from,in,&to);
+     my_scanf("%d %s %d",&from,in,&to);
      for (i=0;in[i]!='\0';i++)
      num = num*from +a2i[in[i]];
      
@@ -25,7 +25,7 @@ main_bench()
            num/=to; 
            } 
      for (i=len-1;i>=0;i--)
-     printf ("%c",out[i]);
+     my_printf ("%c",out[i]);
     
       
 

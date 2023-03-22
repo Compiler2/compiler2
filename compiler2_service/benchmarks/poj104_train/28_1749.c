@@ -30,11 +30,11 @@ int main_bench()
   {
       if(i==0)
       {
-           printf("%d",length[0]);
+           my_printf("%d",length[0]);
       }
       else
       {
-          printf(",%d",length[i]);
+          my_printf(",%d",length[i]);
       }
   }
   return 0;

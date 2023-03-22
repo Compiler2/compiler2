@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a,b,c,d,e,f;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a/10;
 	c=a/100;
 	d=a/1000;
@@ -26,11 +26,11 @@ int main_bench()
 	b=b-1000*e-100*d-10*c;
 	a=a-10000*e-1000*d-100*c-10*b;
 	switch(f)
-	{case 5:printf("%d%d%d%d%d\n",a,b,c,d,e);break;
-	case 4:printf("%d%d%d%d\n",a,b,c,d);break;
-         case 3:printf("%d%d%d\n",a,b,c);break;
-	case 2:printf("%d%d\n",a,b);break;
-	case 1:printf("%d\n",a);break;
+	{case 5:my_printf("%d%d%d%d%d\n",a,b,c,d,e);break;
+	case 4:my_printf("%d%d%d%d\n",a,b,c,d);break;
+         case 3:my_printf("%d%d%d\n",a,b,c);break;
+	case 2:my_printf("%d%d\n",a,b);break;
+	case 1:my_printf("%d\n",a);break;
 	}
 	return 0;
 }

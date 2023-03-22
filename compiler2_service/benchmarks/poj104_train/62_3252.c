@@ -23,7 +23,7 @@ int main_bench(){
 		else if(a[i]==' '&&a[i+1]==' '&&a[i-1]==' '){
 		}
     }
-	printf("%s",b);
+	my_printf("%s",b);
 
 }
 	

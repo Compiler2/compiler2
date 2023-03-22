@@ -4,9 +4,9 @@ int main_bench()
 {  
    int i,j,n;
    struct piece {int a,b;} max,require,s[500],ex;
-   scanf ("%d",&n);
+   my_scanf ("%d",&n);
     for (i=0;i<n;i++)
-   {  scanf("%d %d\n",&(s[i].a),&(s[i].b)); }
+   {  my_scanf("%d %d\n",&(s[i].a),&(s[i].b)); }
     require=s[0];
    for(i=0;i<n;i++)
   {
@@ -37,11 +37,11 @@ int main_bench()
  }
     if ((max.a==require.a)&&(max.b==require.b))
    { 
-          printf("%d %d",max.a,max.b);
+          my_printf("%d %d",max.a,max.b);
    }
    else
   {
-     printf("no");
+     my_printf("no");
   }
      return 0;
 }

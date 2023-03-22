@@ -12,9 +12,9 @@ int main_bench()
 	int count[26]={0};
 	char y;
 	struct book all[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d%s",&all[i].num,&all[i].aut);
+		my_scanf("%d%s",&all[i].num,&all[i].aut);
 	}
 	for(i=0;i<m;i++){
 		for(j=0;j<26;j++){
@@ -31,11 +31,11 @@ int main_bench()
 		}
 	}
 	y=k+'A';
-	printf("%c\n%d\n",y,a);
+	my_printf("%c\n%d\n",y,a);
 	for(i=0;i<m;i++){
 		for(j=0;j<26;j++){
 			if(all[i].aut[j]==y){
-				printf("%d\n",all[i].num);
+				my_printf("%d\n",all[i].num);
 				break;
 			}
 		}

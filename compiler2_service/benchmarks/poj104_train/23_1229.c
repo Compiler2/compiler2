@@ -13,6 +13,6 @@ int main_bench()
 	}
 	w[n][i]='\0';
 	for(i=n;i>0;i--)
-		printf("%s ",w[i]);
-	printf("%s\n",w[0]);
+		my_printf("%s ",w[i]);
+	my_printf("%s\n",w[0]);
 }

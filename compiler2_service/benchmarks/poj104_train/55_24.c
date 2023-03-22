@@ -10,7 +10,7 @@ int main_bench()
 	int i,j,k;
 	long int mid;
 	int ar;
-	scanf("%d %s %d",&n,a,&m);
+	my_scanf("%d %s %d",&n,a,&m);
 	int len=strlen(a);
 	for(k=0;k<len;k++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	for(i=k-1;i>=0;i--)
 		if(b[i]!=-1)
-			printf("%c",trans[b[i]]);
-		printf("\n");
+			my_printf("%c",trans[b[i]]);
+		my_printf("\n");
 	return 0;
 }

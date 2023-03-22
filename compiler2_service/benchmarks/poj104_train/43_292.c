@@ -5,11 +5,11 @@ int su(int x);
 
 int main_bench(){
 	int m,n,i;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=3;i<=m/2;i++)
 	{
 		if(su(i)==1&&su(m-i)==1)
-			printf("%d %d\n",i,m-i);
+			my_printf("%d %d\n",i,m-i);
 	}
 	return 0;
 }

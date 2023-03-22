@@ -11,10 +11,10 @@ int main_bench()
  int n;
  int a[250];
  int b=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
-  scanf("%d",&sz[i]);
+  my_scanf("%d",&sz[i]);
  }
  for(i=0;i<250;i++)
  {
@@ -39,8 +39,8 @@ for(i=0;i<n;i++)
  }
  for (i=0;i<b-1;i++)
  {
-     printf("%d,",a[i]);
+     my_printf("%d,",a[i]);
  }
- printf("%d",a[b-1]);
+ my_printf("%d",a[b-1]);
  return 0;
 }

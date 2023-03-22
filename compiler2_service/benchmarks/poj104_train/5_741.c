@@ -8,8 +8,8 @@ int main_bench(){
 	double z;
 	double q=0;
 	char a[505],b[505];
-	scanf ("%lf",&s);
-	scanf ("%s%s",a,b);
+	my_scanf ("%lf",&s);
+	my_scanf ("%s%s",a,b);
 	n=strlen(a);
 	m=strlen(b);
 	
@@ -25,7 +25,7 @@ int main_bench(){
 		}
 	}
 	if (c==1||m!=n){
-		printf ("error");
+		my_printf ("error");
 	}else {
 		for (i=0;i<n;i++){
 			if (a[i]==b[i]){
@@ -34,9 +34,9 @@ int main_bench(){
 		}
 	
 	    if (q/n>=s){
-		    printf ("yes");
+		    my_printf ("yes");
 		}else {
-			printf ("no");
+			my_printf ("no");
 		}
 	}
 

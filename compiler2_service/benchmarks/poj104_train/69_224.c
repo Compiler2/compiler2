@@ -33,8 +33,8 @@ int main_bench()
         k++;
 	}
 	for(i=strlen(b)-k;i>=0;i--)
-			printf("%d",d[i]);
+			my_printf("%d",d[i]);
 	if(k==(strlen(b)+1))
-		printf("0");
+		my_printf("0");
 	return 0;
 }

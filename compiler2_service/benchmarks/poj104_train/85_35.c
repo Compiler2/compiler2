@@ -3,19 +3,19 @@
 int main_bench()
 {
     int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int length[1000];
 	char a[1000][20];
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 		length[i]=strlen(a[i]);
 	}
     for(i=0;i<n;i++)
 	{
 		if(a[i][0]>=48&&a[i][0]<=57)
 		{
-			printf("no");
+			my_printf("no");
 			
 		}
 		else 
@@ -42,16 +42,16 @@ int main_bench()
 			}
 			if(j>=length[i])
 			{
-				printf("yes");
+				my_printf("yes");
 			}
 			else
 			{
-				printf("no");
+				my_printf("no");
 			}
-			printf("\n");
+			my_printf("\n");
 			
 		}
-		printf("\n");
+		my_printf("\n");
 	}	
 	return 0;
 }

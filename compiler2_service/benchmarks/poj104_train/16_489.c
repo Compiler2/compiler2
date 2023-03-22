@@ -3,17 +3,17 @@
 int main_bench()
 {
     int n,a,c;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     c=0;
     if(n!=0)
     for(;n!=0;n=n/10)
     {
     a=n%10;
-    printf("%d",a);
+    my_printf("%d",a);
     
              }
     else 
-     printf("0");
+     my_printf("0");
     return(0);
     
     

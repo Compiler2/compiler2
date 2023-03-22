@@ -21,9 +21,9 @@ void change(int a[],int n)
 int main_bench()
 {
 	int a[100],i,t,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	change(a,n);
-	printf("%d\n%d\n",a[0],a[1]);
+	my_printf("%d\n%d\n",a[0],a[1]);
 }

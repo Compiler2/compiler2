@@ -3,7 +3,7 @@
 int main_bench()
 {
 int i,n,j,a,b=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=3;i<n-1;i++)
 {
 	for(j=2;j<i;j++)
@@ -20,10 +20,10 @@ for(i=3;i<n-1;i++)
        }
     }
     if(a==i+1)
-	{printf("%d %d\n",i,i+2);
+	{my_printf("%d %d\n",i,i+2);
 	b++;}
 }
 if(b==0)
-	printf("empty");
+	my_printf("empty");
 return 0;
 }

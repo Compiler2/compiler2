@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,m,p[300];
 	int j,i,t,count;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	
     for(i=0;i<n;i++)
 	{
@@ -34,7 +34,7 @@ int main_bench()
 	{
 		if(p[i]!=0)
 		{
-			printf("%d",p[i]);
+			my_printf("%d",p[i]);
 			return 0;
 		}
 	}

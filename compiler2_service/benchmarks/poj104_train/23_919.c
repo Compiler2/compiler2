@@ -17,7 +17,7 @@ int main_bench()
 		a[0]=p+0;
 	}
 	for(k=j-1;k>0;k--)
-		printf("%s ",a[k]);
-	printf("%s",a[0]);
+		my_printf("%s ",a[k]);
+	my_printf("%s",a[0]);
 	
 }

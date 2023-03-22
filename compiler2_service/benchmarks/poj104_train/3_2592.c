@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int n,k;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	int a[1000];
     int b[1000];
 	int sz[1000][1000];
 	int i,j;
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b[i]=a[i];
 	}
 	int m=0;
@@ -21,10 +21,10 @@ int main_bench(){
 		}
 	}
 	if(m==1){
-		printf("yes");
+		my_printf("yes");
 	}
 	if(m==0){
-		printf("no");
+		my_printf("no");
 	}
 	
 

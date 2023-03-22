@@ -12,10 +12,10 @@ int main_bench()
  {if(s1[i]<='z'&&s1[i]>='a') s1[i]-=32;
   if(s2[i]<='z'&&s2[i]>='a') s2[i]-=32;
   k=s1[i]-s2[i];
-  if(k>0) {printf(">");break;}
-  else if(k<0) {printf("<");break;}
+  if(k>0) {my_printf(">");break;}
+  else if(k<0) {my_printf("<");break;}
        else i++;}
- if(k==0&&m>n) printf(">");
- else if(k==0&&m<n) printf("<");
- else if(k==0) printf("=");
+ if(k==0&&m>n) my_printf(">");
+ else if(k==0&&m<n) my_printf("<");
+ else if(k==0) my_printf("=");
 }

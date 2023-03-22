@@ -17,11 +17,11 @@ int main_bench(){
        if(zfc[i]==' '){
            k=i-j-1;
            j=i;
-           printf("%d,",k);
+           my_printf("%d,",k);
        }
    }
    m=strlen(zfc)-j-1;
-   printf("%d",m);
+   my_printf("%d",m);
    return 0;
 }
         

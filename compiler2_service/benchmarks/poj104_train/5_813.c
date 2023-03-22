@@ -27,10 +27,10 @@ int main_bench(){
                 num++;
         }
         if(1.0*num/strlen(s1)<n)
-            printf("no");
-        else printf("yes");
+            my_printf("no");
+        else my_printf("yes");
     }
     if(pan==0)
-        printf("error");
+        my_printf("error");
         return 0;
 }

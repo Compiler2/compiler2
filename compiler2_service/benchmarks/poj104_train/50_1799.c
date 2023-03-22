@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int w,i,sum=13;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	if((13+w-1)%7==5){
-		printf("1\n");
+		my_printf("1\n");
 	}
 	for (i=2;i<=12;i++){
 	   if(i-1==1||i-1==3||i-1==5||i-1==7||i-1==8||i-1==10){
@@ -15,7 +15,7 @@ int main_bench(){
 			sum+=30;
 	   }
 	   if((sum+w-1)%7==5){
-		printf("%d\n",i);
+		my_printf("%d\n",i);
 	   }
 	}
 	return 0;

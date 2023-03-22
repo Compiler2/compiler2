@@ -18,11 +18,11 @@ int main_bench()
 	int i,j,m,k,length;
 	struct list book[100];
 	struct number name[26],most;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(i=0;i<m;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].author);
+		my_scanf("%d %s",&book[i].num,book[i].author);
 	}
 
 	for(i=0;i<26;i++)
@@ -50,7 +50,7 @@ int main_bench()
 		}
 	}
 
-	printf("%c\n%d\n",most.a+65,most.time);
+	my_printf("%c\n%d\n",most.a+65,most.time);
     
 	for(i=0;i<m;i++)
 	{
@@ -60,7 +60,7 @@ int main_bench()
 		{
 			k=(book[i].author[j]);
 			if(most.a+65==k){
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 			}
 		}
 	}

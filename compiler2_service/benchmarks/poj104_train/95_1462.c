@@ -17,9 +17,9 @@ main_bench()
     while(s1[i]==s2[i]&&i<=n1-1&&i<=n2-1);
 
 
-    if(s1[i]<s2[i])printf("<");
-      else if(s1[i]>s2[i])printf(">");
-          else printf("=");
+    if(s1[i]<s2[i])my_printf("<");
+      else if(s1[i]>s2[i])my_printf(">");
+          else my_printf("=");
 
   return 0;
 }

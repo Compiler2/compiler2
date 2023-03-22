@@ -4,7 +4,7 @@ main_bench()
 {
       int a,b,i,c,d,x[2000],s=0,e,l,k;
       char s1[1000],s2[1000],y[2000];
-      scanf("%d %s %d",&a,s1,&b);
+      my_scanf("%d %s %d",&a,s1,&b);
       for(i=0;;i++)
        {
                    if(s1[i]=='\0')
@@ -50,8 +50,8 @@ main_bench()
                   s=s/b;
       }
       for(k=l-1;k>=0;k--)
-      printf("%c",y[k]);
+      my_printf("%c",y[k]);
       }
       else
-      printf("0");
+      my_printf("0");
 }

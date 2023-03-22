@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,i,p,q=0,r=0,l=0,ll=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int s;
 	for (i=1;i<=n*n;i++)
 	{
-		scanf("%d",&p);
+		my_scanf("%d",&p);
 		if (p==0)
 		{
 			q++;
@@ -28,6 +28,6 @@ int main_bench()
 		r=n;
 	s=(q-2*r)*(r-2)/2;
 	
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	return 0;
 }

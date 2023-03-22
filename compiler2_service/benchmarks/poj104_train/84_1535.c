@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,m,a,b,i,t;
 	a=b=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m>=a)
 		{
 			b=a;
@@ -18,6 +18,6 @@ int main_bench()
 			b=m;
 		}
 	}
-	printf("%d\n%d",a,b);
+	my_printf("%d\n%d",a,b);
 	return 0;
 }

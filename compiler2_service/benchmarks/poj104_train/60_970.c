@@ -4,19 +4,19 @@ int issushu(int number);
 int main_bench(){
 int n,i;
 int s=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=3;i+2<=n;i=i+2){
 	int p=0;
 	if(issushu(i)){
 		if(issushu(i+2)){
 		s=i;
 		p=i+2;
-		printf("%d %d\n",s,p);
+		my_printf("%d %d\n",s,p);
 		}
 		}
 }
 if(s==0){
-printf("empty");
+my_printf("empty");
 }
 return 0;
 }

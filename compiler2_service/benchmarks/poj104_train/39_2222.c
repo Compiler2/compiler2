@@ -19,7 +19,7 @@ int main_bench()
            int paper;
     };
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     
     struct data *input = (struct data*) malloc(sizeof(struct data) * n);
     int *amount = (int*) malloc(sizeof(int) * n);
@@ -28,13 +28,13 @@ int main_bench()
     
     for(i = 0; i <= n - 1; i++)
     {
-          scanf("%s %d %d %c %c %d", input[i].name, &input[i].grade, &input[i].assessment, &input[i].leader, &input[i].west, &input[i].paper);
+          my_scanf("%s %d %d %c %c %d", input[i].name, &input[i].grade, &input[i].assessment, &input[i].leader, &input[i].west, &input[i].paper);
           amount[i] = 8000 * (input[i].grade > 80 && input[i].paper > 0) + 4000 * (input[i].grade > 85 && input[i].assessment > 80) + 2000 * (input[i].grade > 90) + 1000 * (input[i].grade > 85 && input[i].west == 'Y') + 850 * (input[i].assessment > 80 && input[i].leader == 'Y');
           total = total + amount[i];
     }
     
     max_num = max_n(amount, n);
-    printf("%s\n%d\n%d", input[max_num].name, amount[max_num], total);
+    my_printf("%s\n%d\n%d", input[max_num].name, amount[max_num], total);
     
     free(input);
     free(amount);

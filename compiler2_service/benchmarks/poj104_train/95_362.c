@@ -17,10 +17,10 @@ int main_bench()
  }
  int t=strcmp(s1,s2);
  if(t>0)
- printf(">");
+ my_printf(">");
  else if(t<0)
- printf("<");
+ my_printf("<");
  else if(t==0)
- printf("=");
+ my_printf("=");
 return 0;
 }

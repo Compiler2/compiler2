@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,a[100],y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	y=0;
 	for(i=1;i<=n;i++)
 		a[i]=i;
@@ -12,6 +12,6 @@ int main_bench()
 		if(a[i]%7!=0&&(a[i]%10!=7&&a[i]/10!=7))
 			y=y+a[i]*a[i];
 	}
-		printf("%d\n",y);
+		my_printf("%d\n",y);
 		return 0;
 }                           

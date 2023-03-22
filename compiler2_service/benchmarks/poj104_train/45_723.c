@@ -4,7 +4,7 @@ int main_bench()
 {
 	unsigned i,j,k,n;
 	char a[50],b[50];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
     for(i=0;i<=strlen(b)-strlen(a);i++)
 	{
 		n=0;
@@ -16,7 +16,7 @@ int main_bench()
 	    if(n!=strlen(a))
 			continue;
 		
-			printf("%d",i);
+			my_printf("%d",i);
 		    break;
 	
 	}

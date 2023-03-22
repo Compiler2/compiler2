@@ -16,8 +16,8 @@ int main_bench()
 		if(65<=b[i]&&b[i]<=90)
 			b[i]=b[i]+32;
 	}
-	if(strcmp(a,b)>0) printf(">");
-	else if(strcmp(a,b)<0) printf("<");
-	else printf("=");
+	if(strcmp(a,b)>0) my_printf(">");
+	else if(strcmp(a,b)<0) my_printf("<");
+	else my_printf("=");
 	return 0;
 }

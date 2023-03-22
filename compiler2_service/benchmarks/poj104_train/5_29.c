@@ -5,10 +5,10 @@ int main_bench()
 	double n;
 	int count=0,i;
 	char a[501],b[501];
-	scanf("%lf%s%s",&n,a,b);
+	my_scanf("%lf%s%s",&n,a,b);
 		if((int)strlen(a)!=(int)strlen(b))
 		{
-			printf("error");
+			my_printf("error");
 		}
 		else
 		{
@@ -16,7 +16,7 @@ int main_bench()
 			{
 				if(((a[i]!='A')&&(a[i]!='T')&&(a[i]!='C')&&(a[i]!='G'))||((b[i]!='A')&&(b[i]!='T')&&(b[i]!='C')&&(b[i]!='G')))
 				{
-					printf("error");
+					my_printf("error");
 					return 0;
 				}
 				else if(a[i]==b[i])
@@ -25,9 +25,9 @@ int main_bench()
 				}
 			}
 			if(1.0*count/(int)strlen(a)>=n)
-				printf("yes");
+				my_printf("yes");
 			else{
-				printf("no");
+				my_printf("no");
 			}
 		}
 

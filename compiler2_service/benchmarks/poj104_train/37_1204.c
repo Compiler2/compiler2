@@ -4,13 +4,13 @@ char sz[100000];
 int zd(char *sz);
 int main_bench(){
 	int n,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%s",sz);
+		my_scanf("%s",sz);
 		x=zd(sz);
 		if(x==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	
@@ -33,7 +33,7 @@ int zd(char *sz){
 		for(j=0;j<26;j++){
 			if(bz[j]==sz[i]){
 				if(js[j]==1){
-					printf("%c\n",sz[i]);
+					my_printf("%c\n",sz[i]);
 					return 1;
 				}
 			}

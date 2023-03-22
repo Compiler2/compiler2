@@ -19,7 +19,7 @@ int main_bench()
 	}
 	for(i=j;i>=1;i--)
 	{
-		printf("%s",a[i]);
+		my_printf("%s",a[i]);
 	}
 	return 0;
 }

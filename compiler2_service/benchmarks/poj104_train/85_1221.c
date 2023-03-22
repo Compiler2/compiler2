@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char sz1[100][21];
 	int i,j;
 	for(i=0;i<n;i++){
-		scanf("%s",sz1[i]);
+		my_scanf("%s",sz1[i]);
 	}
 	int sz2[100];
     for(i=0;i<n;i++){

@@ -6,18 +6,18 @@ int main_bench()
 	p=a;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",*(p+i)+j);
-	scanf("%d %d",&m,&n);
+			my_scanf("%d",*(p+i)+j);
+	my_scanf("%d %d",&m,&n);
 	int trans(int (*p)[5],int m,int n);
 	if(trans(a,m,n))
 	    for(i=0;i<5;i++)
 		{
 		    for(j=0;j<4;j++)
-			    printf("%d ",*(*(p+i)+j));
-			printf("%d\n",*(*(p+i)+4));
+			    my_printf("%d ",*(*(p+i)+j));
+			my_printf("%d\n",*(*(p+i)+4));
 		}
 	else
-		printf("error\n");
+		my_printf("error\n");
 }
 int trans(int (*p)[5],int m,int n)
 {

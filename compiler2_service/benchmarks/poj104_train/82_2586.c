@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,a,b,i,x[100]={0},y[100]={0},s=0,k,m,e; 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		if((a>=90&&a<=140)&&(b<=90&&b>=60)){
 			x[i]=1;
 		}
@@ -27,6 +27,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",y[0]);
+	my_printf("%d",y[0]);
 	return 0;
 }

@@ -10,12 +10,12 @@ int main_bench()
 	int n,i,max=0,tot=0;
 	char c;
 	struct s a[101],b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i].name);
+		my_scanf("%s",a[i].name);
 		c=getchar();
-		scanf("%d%d %c %c%d",&a[i].qimo,&a[i].pingyi,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
+		my_scanf("%d%d %c %c%d",&a[i].qimo,&a[i].pingyi,&a[i].ganbu,&a[i].xibu,&a[i].lunwen);
 		a[i].sum=0;
 		if(a[i].qimo>80&&a[i].lunwen>=1)
 		a[i].sum+=8000;
@@ -34,6 +34,6 @@ int main_bench()
 			b=a[i];
 		}
 	}
-	printf("%s\n%d\n%d",b.name,max,tot);
+	my_printf("%s\n%d\n%d",b.name,max,tot);
 	return 0;
 }

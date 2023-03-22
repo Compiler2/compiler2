@@ -4,10 +4,10 @@ main_bench()
 {
 	unsigned int n,i,j=0,k,a[310],b[310],t,sum=0;
 	float ave,max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	ave=sum/(float)n;
@@ -25,9 +25,9 @@ main_bench()
 			}
 	for (i=0;i<j;i++)
 	{
-		if (i!=0) printf(",");
-		printf("%d",b[i]);
+		if (i!=0) my_printf(",");
+		my_printf("%d",b[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

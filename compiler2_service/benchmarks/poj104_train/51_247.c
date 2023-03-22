@@ -7,8 +7,8 @@ int main_bench()
     int t,j=1,i=0,max;
     char s[550];
     char s1[550][6]={0};
-    scanf("%d",&n);
-    scanf("%s",s);
+    my_scanf("%d",&n);
+    my_scanf("%s",s);
     t=strlen(s);
     x=t-n+1;
     do
@@ -39,14 +39,14 @@ int main_bench()
     
     }
     if(max==0)
-    printf("NO");
+    my_printf("NO");
     else
     {
-    printf("%d\n",max+1);
+    my_printf("%d\n",max+1);
     for(i=1;i<=x;i++)
     {
                      if(flag[i]==max)
-                     printf("%s\n",*(s1+i));
+                     my_printf("%s\n",*(s1+i));
     }
      }
     return 0;

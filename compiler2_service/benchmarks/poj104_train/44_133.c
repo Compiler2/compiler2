@@ -4,10 +4,10 @@ int reverse(int num);
 int i,a[6];
 int main_bench(){
 	for(i=0;i<6;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<6;i++){
 		a[i]=reverse(a[i]);
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}
 	return 0;
 }

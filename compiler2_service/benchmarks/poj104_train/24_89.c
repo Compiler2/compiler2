@@ -16,9 +16,9 @@ for(i=0;i<num;i++)
   {if(wn[i]>max) {max=wn[i];mx=wm[i];}
    if(wn[i]<min) {min=wn[i];mn=wm[i];}}
 for(i=mx;i<mx+max;i++)
-printf("%c",string[i]);
-printf("\n");
+my_printf("%c",string[i]);
+my_printf("\n");
 for(i=mn;i<mn+min;i++)
-printf("%c",string[i]);
-printf("\n");
+my_printf("%c",string[i]);
+my_printf("\n");
 }

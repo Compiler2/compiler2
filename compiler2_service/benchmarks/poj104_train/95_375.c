@@ -22,10 +22,10 @@ int main_bench()
 	}
 	i=strcmp(s1,s2);
 	if (i==0)
-		printf ("=");
+		my_printf ("=");
 	else if (i<0)
-		printf ("<");
+		my_printf ("<");
 	else if (i>0)
-		printf (">");
+		my_printf (">");
 	return 0;
 }

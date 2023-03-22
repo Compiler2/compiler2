@@ -14,10 +14,10 @@ int main_bench()
 	       if(a[i]>=48&&a[i]<=57)
 		{
 			
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 		
 		if(1-(a[i+1]<=57&&a[i+1]>=48))
-			printf("\n");
+			my_printf("\n");
 		}
 
 }  

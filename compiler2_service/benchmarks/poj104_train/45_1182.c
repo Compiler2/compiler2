@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[50],b[50];
 	int i,j,flag;
-	scanf("%s %s",&a,&b);
+	my_scanf("%s %s",&a,&b);
 	for(i=0;b[i]!=0;i++)
 	{
 		if (b[i]==a[0])
@@ -20,7 +20,7 @@ int main_bench()
 			}
 			if(!flag) 
 			{
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 				break;
 			}
 		}

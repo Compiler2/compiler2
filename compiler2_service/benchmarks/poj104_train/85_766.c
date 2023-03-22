@@ -4,12 +4,12 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i = 0;i < n;i++)
     {
         char input[100];
         int len,j = 0;
-        scanf("%s",input);
+        my_scanf("%s",input);
         len = strlen(input);
         if(input[0] == '_' || (input[0]>='a' && input[0]<='z') || (input[0]>='A' && input[0]<='Z'))
         {
@@ -18,9 +18,9 @@ int main_bench()
                     break;
         }
         if(j == len)
-            printf("yes\n");
+            my_printf("yes\n");
         else
-            printf("no\n");
+            my_printf("no\n");
     }
     return 0;
 }

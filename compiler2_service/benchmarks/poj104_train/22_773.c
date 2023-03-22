@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c!=',') break;
 	}
 	n=i+1;
@@ -22,7 +22,7 @@ int main_bench()
 			}
 		}
 	}
-	if(k==1) printf("No");
+	if(k==1) my_printf("No");
 	else 
 	{
 		for(i=0;i<k-1;i++)
@@ -35,7 +35,7 @@ int main_bench()
 				}
 			}
 		}
-	printf("%d",b[1]);
+	my_printf("%d",b[1]);
 	}
 	return 0;
 }

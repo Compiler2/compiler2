@@ -3,7 +3,7 @@
 main_bench()
 {
     int m,n,count,j;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     while (m != 0)
     {
         int monkey[310] = {0};
@@ -29,8 +29,8 @@ main_bench()
         for (int i = 0;i <= m - 1;i ++)
         {
              if (monkey[i]==2)
-                printf("%d\n",i+1);
+                my_printf("%d\n",i+1);
         }
-        scanf("%d %d",&m,&n);
+        my_scanf("%d %d",&m,&n);
     }
 }

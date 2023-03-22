@@ -5,12 +5,12 @@ int a[1000],b[1000],c[2000];
 void f1(int a[],int b[],int h,int k)
 {
 	int i;
-	scanf("%d%d",&h,&k);
+	my_scanf("%d%d",&h,&k);
 	m=h;n=k;
 	for(i=0;i<m;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	for(i=0;i<n;i++)
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 	return;
 }
 void f2(int a[],int b[],int m,int n)
@@ -53,8 +53,8 @@ void f4(int c[],int m,int n)
 {
 	int i;
 	for(i=0;i<m+n-1;i++)
-		printf("%d ",c[i]);
-	printf("%d",c[i]);
+		my_printf("%d ",c[i]);
+	my_printf("%d",c[i]);
 }
 int main_bench()
 {

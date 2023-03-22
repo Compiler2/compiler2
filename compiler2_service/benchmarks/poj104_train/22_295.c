@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,temp,n,a[300]={0};
 	char array[1000],*p=array;
-	scanf("%s",array);
+	my_scanf("%s",array);
     for(i=0,j=0;*(p+i)!='\0';i++)
 	{
 		if(*(p+i)==',') j++;
@@ -20,6 +20,6 @@ int main_bench()
 				a[j+1]=temp;
 			}
 	for(i=1;i<n;i++)
-		if(*(a+i)!=*a){printf("%d\n",a[i]);break;}
-		if(i==n)printf("No\n");
+		if(*(a+i)!=*a){my_printf("%d\n",a[i]);break;}
+		if(i==n)my_printf("No\n");
 }

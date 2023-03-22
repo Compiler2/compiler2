@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,max=0;
 	char a[1000],b[1000],c;
-	scanf ("%s %s",a,b);
+	my_scanf ("%s %s",a,b);
 	for (i=0;i<1000;i++)
 	{
 		if (a[i]=='\0')
@@ -44,8 +44,8 @@ int main_bench()
 		max=i+1;
 	}
 	if (strcmp(a,b)==0)
-		printf ("YES\n");
+		my_printf ("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }

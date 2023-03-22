@@ -4,9 +4,9 @@ int main_bench()
 {
     int a,b,l;
     char n[50],d[50],m[50];
-    scanf ("%d %s %d",&a,n,&b);
+    my_scanf ("%d %s %d",&a,n,&b);
     if (n[0]=='0')
-    printf ("0\n");
+    my_printf ("0\n");
     else
     {
       l=strlen(n);
@@ -40,7 +40,7 @@ int main_bench()
         else 
         m[z]=m[z]+'A'-10;
       }
-        printf ("%s",m); 
+        my_printf ("%s",m); 
         getchar();
         getchar();
     }

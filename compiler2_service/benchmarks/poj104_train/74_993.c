@@ -31,20 +31,20 @@ int checkr(int n)
 main_bench()
 {
 	int m,n,i,j,t=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;++i)
 		if(checkp(i)&&checkr(i))
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			t=1;
 			break;
 		}
 	if(t==0)
-		printf("no");
+		my_printf("no");
 	else
 		for(j=i+1;j<=n;++j)
 			if(checkp(j)&&checkr(j))
-				printf(",%d",j);
+				my_printf(",%d",j);
 }
 
 

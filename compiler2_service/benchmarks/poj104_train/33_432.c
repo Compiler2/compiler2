@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char u[1000][260],v[1000][260],c[1000];
 	int w[1000];
 	gets(c);
@@ -20,6 +20,6 @@ int main_bench(){
 				v[i][j]='G';}
 				if(u[i][j]=='G'){
 				v[i][j]='C';}}
-				printf("%s\n",v[i]);}
-		scanf("%d",&n);
+				my_printf("%s\n",v[i]);}
+		my_scanf("%d",&n);
 			return 0;}

@@ -9,7 +9,7 @@ int main_bench()
     n=strlen(a);
     for(i=0;i<n;i++)
 	{	if(a[i]!=' ') count++;
-		if(a[i]!=' '&&a[i+1]==' ') {printf("%d,",count);count=0;}
-		if(a[i]!=' '&&a[i+1]=='\0') printf("%d",count);
+		if(a[i]!=' '&&a[i+1]==' ') {my_printf("%d,",count);count=0;}
+		if(a[i]!=' '&&a[i+1]=='\0') my_printf("%d",count);
 	}
 }

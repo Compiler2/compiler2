@@ -7,10 +7,10 @@ int main_bench()
 	int i,j,k,l,m,n;
 	for(i=0;i<300;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c!=',') {k=i;break;}
 	}
-	if(k==0){printf("No");}
+	if(k==0){my_printf("No");}
 	else {
     for(i=1;i<=k;i++)
 	{
@@ -18,7 +18,7 @@ int main_bench()
 		else if(a[i]>a[0]){m=a[i];n=a[0];l=i;break;}
 		else {continue;}
 	}
-	if(i==k+1) {printf("No");l=k+1;}
+	if(i==k+1) {my_printf("No");l=k+1;}
 	else {
 	for(j=l+1;j<=k;j++)
 	{
@@ -26,7 +26,7 @@ int main_bench()
 		else if(a[j]>n&&a[j]<m){n=a[j];}
 		else {continue;}
 	} 
-	printf("%d",n);
+	my_printf("%d",n);
 	}
 	}
 	return 0;

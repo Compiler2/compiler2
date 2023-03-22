@@ -3,18 +3,18 @@
 int main_bench()
 {
 	int i,n,a,b,c;
-	scanf("%d",&n);
-	scanf("%d%d",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&a,&b);
 	if(a<b){a=a+b;b=a-b;a=a-b;}
 	else{a=a;b=b;}
     for(i=3;i<=n;i++)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(c>a){b=a;a=c;}
 		else if(c>b){a=a;b=c;}
 		else{a=a;b=b;}
 		
 	}
-	printf("%d\n",a);
-	printf("%d",b);
+	my_printf("%d\n",a);
+	my_printf("%d",b);
 }

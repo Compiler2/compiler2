@@ -19,20 +19,20 @@ int f(int x){
 }
 int main_bench(){
     int n,j,z=0,g,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(j=2;j<=n-2;j++){
 
 	g=f(j);
 		h=f(j+2);
 		if(g==0&&h==0){
-			printf("%d %d\n",j,j+2);
+			my_printf("%d %d\n",j,j+2);
 		z=1;
 		}
 		
 		}
 		
 	if(z==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

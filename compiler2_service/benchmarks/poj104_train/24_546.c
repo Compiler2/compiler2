@@ -42,7 +42,7 @@ int main_bench()
 		}
 	}
 	
-	printf("%s\n%s",p1,q1);
+	my_printf("%s\n%s",p1,q1);
 	return 0;
 }
 

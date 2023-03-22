@@ -6,7 +6,7 @@ int main_bench(){
 	shu=0;
 	i=0;
 	while(i<1000){
-		scanf("%d%d%d%d%d%d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
+		my_scanf("%d%d%d%d%d%d",&a[i],&b[i],&c[i],&d[i],&e[i],&f[i]);
 		if(a[i]!=0){
 			zhongjian=(d[i]+11-a[i])*3600;
 			qian1=b[i]*60+c[i];
@@ -21,7 +21,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<shu;i++){
-		printf("%d\n",s[i]);
+		my_printf("%d\n",s[i]);
 	}
 	return 0;
 }

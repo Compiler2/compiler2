@@ -3,7 +3,7 @@
 int main_bench(){
     int i,j,n,len;
     char zfc[33];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<=n;i++){
         gets(zfc);
         len=strlen(zfc);
@@ -25,7 +25,7 @@ int main_bench(){
                 zfc[len-2]='\0';
         }
     }
-    printf("%s\n",zfc);
+    my_printf("%s\n",zfc);
     }
    
     return 0;

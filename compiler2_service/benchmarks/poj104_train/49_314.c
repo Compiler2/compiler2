@@ -18,8 +18,8 @@ int main_bench()
 			if (ok)
 			{
 				for (s=i;s<=j;s++)
-					printf("%c",a[s]);
-                printf("\n");
+					my_printf("%c",a[s]);
+                my_printf("\n");
             }
 		}
   }

@@ -3,10 +3,10 @@
 int main_bench()
 {
    int x[300],y[300]={0},i,j,k=0,n,sign;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%d",&x[i]);                
+      my_scanf("%d",&x[i]);                
    }
    for(i=0;i<n;i++)
    {
@@ -25,11 +25,11 @@ int main_bench()
       }
                 
    }
-   printf("%d",y[0]);
+   my_printf("%d",y[0]);
    for(i=1;i<k;i++)
    {
-      printf(",%d",y[i]);                
+      my_printf(",%d",y[i]);                
    }    
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    return 0;
 }

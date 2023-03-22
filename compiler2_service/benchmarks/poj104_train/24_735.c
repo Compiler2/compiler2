@@ -25,5 +25,5 @@ int main_bench()
 			m=0;
 		}
 	}
-	printf("%s\n%s",maxw,minw);
+	my_printf("%s\n%s",maxw,minw);
 }

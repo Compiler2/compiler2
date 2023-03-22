@@ -13,13 +13,13 @@ int main_bench()
 		{
 			if(j==0)
 			{
-				printf("%c",s[i]);
+				my_printf("%c",s[i]);
 				j++;
 			}
 		}
 		else
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 			j=0;
 		}
 	}

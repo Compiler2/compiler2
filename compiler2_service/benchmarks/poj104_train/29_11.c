@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int n[500];
 	double sum;
 	int i,j,fm[500],fz[500];
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&(n[i]));
+		my_scanf("%d",&(n[i]));
 	}
 	for(i=0;i<m;i++)
 	{
@@ -27,7 +27,7 @@ int main_bench()
 		{
 			sum=sum+1.0*fz[j]/fm[j];
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 }
 

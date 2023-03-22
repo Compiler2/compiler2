@@ -41,6 +41,6 @@ int main_bench()
  }
   
  for(i=k-1;i>0;i--)
-	 printf("%s ",pp[i]);
- printf("%s",pp[0]);
+	 my_printf("%s ",pp[i]);
+ my_printf("%s",pp[0]);
 }

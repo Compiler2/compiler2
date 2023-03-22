@@ -20,6 +20,6 @@ for (i=1;i<=n;i++)
  	if (max<strlen(word[i])) {max=strlen(word[i]);p=i;}
     if (min>strlen(word[i])) {min=strlen(word[i]);q=i;}
  }
-printf("%s\n",word[p]);
-printf("%s",word[q]);
+my_printf("%s\n",word[p]);
+my_printf("%s",word[q]);
  } 

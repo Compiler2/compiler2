@@ -13,8 +13,8 @@ int main_bench()
 			if((c=str[i-1])==32)
 				continue;
 		}
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

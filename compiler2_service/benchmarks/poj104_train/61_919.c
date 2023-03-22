@@ -7,10 +7,10 @@ int main_bench()
  a[2]=1;
  for (i=3;i<30;i++)
  a[i]=a[i-1]+a[i-2];
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i=0;i<n;i++)
  {
- scanf("%d\n",&m);
- printf("%d\n",a[m]);
+ my_scanf("%d\n",&m);
+ my_printf("%d\n",a[m]);
  }
 }

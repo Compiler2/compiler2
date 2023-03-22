@@ -14,9 +14,9 @@ int main_bench()
 	int a,b,n,i,j;
 	long sum=0;
 	char line[100],huan[100];
-	scanf("%d",&a);
-	scanf("%s",line);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",line);
+	my_scanf("%d",&b);
 	n=strlen(line);
 	for (i=n-1;i>=0;i--)
 	{
@@ -42,6 +42,6 @@ int main_bench()
 			huan[i]=sum%b+'0'+7;
 	}
 	for (j=i;j>=0;j--)
-		printf("%c",huan[j]);
+		my_printf("%c",huan[j]);
 	return 0;
 }

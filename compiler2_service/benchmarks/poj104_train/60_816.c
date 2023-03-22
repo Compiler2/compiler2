@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n,i,s=0,j,f=0,q=0,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=2;i<=n;i++){
 	for(j=2;j<i;j++){
 		if(i%j!=0){
@@ -20,7 +20,7 @@ for(i=2;i<=n;i++){
 			}
 		}
 		if(q==i){
-			printf("%d %d\n",i,k);
+			my_printf("%d %d\n",i,k);
 			f++;
 		}
 	}
@@ -28,7 +28,7 @@ for(i=2;i<=n;i++){
 	q=0;
 }
 if(f==0){
-	printf("empty\n");
+	my_printf("empty\n");
 }
 return 0;
 }

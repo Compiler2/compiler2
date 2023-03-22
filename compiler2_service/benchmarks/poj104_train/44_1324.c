@@ -21,14 +21,14 @@ main_bench()
     int k,n;
     for(k=0;k<6;k++)
     {
-        scanf("%d",&n);
+        my_scanf("%d",&n);
         if(n<0)
         {
             n=0-n;
-            printf("-%d",op(n));
+            my_printf("-%d",op(n));
         }
-        else if(n==0)printf("0");
-        else printf("%d",op(n));
-        printf("\n");
+        else if(n==0)my_printf("0");
+        else my_printf("%d",op(n));
+        my_printf("\n");
     }
 }

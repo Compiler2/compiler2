@@ -13,13 +13,13 @@ int main_bench()
 {
 int m;
 int i;
-scanf("%d",&m);
+my_scanf("%d",&m);
 
 for(i=3;i<=m/2;i+=2)
 {
 if(isprime(i)&&isprime(m-i))
 {
-printf("%d %d\n",i,m-i);
+my_printf("%d %d\n",i,m-i);
 continue;
 }
 }

@@ -8,7 +8,7 @@ main_bench()
       for(i=0;i<5;i++)
         {
         for(j=0;j<5;j++)
-        scanf("%d",&a[i][j]);
+        my_scanf("%d",&a[i][j]);
         }
       for(i=0;i<5;i++)
         {
@@ -33,7 +33,7 @@ main_bench()
         for(j=0;j<5;j++)
         {
          if(k[i]==p[j])
-         printf("%d %d %d\n",i+1,j+1,k[i]);
+         my_printf("%d %d %d\n",i+1,j+1,k[i]);
         }
         }
         if(
@@ -43,6 +43,6 @@ main_bench()
           k[3]!=p[0]&&k[3]!=p[1]&&k[3]!=p[2]&&k[3]!=p[3]&&k[3]!=p[4]&&
           k[4]!=p[0]&&k[4]!=p[1]&&k[4]!=p[2]&&k[4]!=p[3]&&k[4]!=p[4]
         )
-        printf("not found\n");
+        my_printf("not found\n");
         
 }

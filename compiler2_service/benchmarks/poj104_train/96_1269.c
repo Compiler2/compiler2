@@ -22,15 +22,15 @@ main_bench()
   if (dvd[i]!=0)
      break;   
  }
- if (i==len) printf("0\n");
+ if (i==len) my_printf("0\n");
  else
  { 
   for (; i<len; i++)
   {
-   printf("%d", dvd[i]);   
+   my_printf("%d", dvd[i]);   
   }
-  printf("\n");
+  my_printf("\n");
  }
- printf("%d", left);
+ my_printf("%d", left);
 
 }

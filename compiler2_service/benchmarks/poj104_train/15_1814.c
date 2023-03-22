@@ -4,13 +4,13 @@ int main_bench()
 {
 	int SZ[100][100];
 	int n,m1,n1,m2,n2,mj;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(int i=0;i<n;i++)
 	{
 		for(int j=0;j<n;j++)
 		{
-			scanf("%d",&SZ[i][j]);
+			my_scanf("%d",&SZ[i][j]);
 		}
 	}
     for(int p=0;p<n;p++)
@@ -40,6 +40,6 @@ int main_bench()
 		
 	}
 	sen2:	mj=(m2-m1-1)*(n2-n1-1);
-		printf("%d",mj);
+		my_printf("%d",mj);
 	return 0;
 }

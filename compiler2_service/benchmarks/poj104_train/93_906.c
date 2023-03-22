@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int a,b,c,d;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	b=a%3;
 	c=a%5;
 	d=a%7;
 	
 	if(b==0)
 		{
-			printf("3");
+			my_printf("3");
 		}
   
 	
@@ -19,9 +19,9 @@ int main_bench()
 		 {
 			if(b==0)
 			{
-				printf(" ");
+				my_printf(" ");
 			}
-			 printf("5");
+			 my_printf("5");
 		 }
 		 
 		 
@@ -29,14 +29,14 @@ int main_bench()
 			   {
 		        if(b==0||c==0)
 				{
-					printf(" ");
+					my_printf(" ");
 				}
-				   printf("7");
+				   my_printf("7");
 			   }
 			   
 		 if(b!=0&&c!=0&&d!=0)
 		 {
-			 printf("n");
+			 my_printf("n");
 		 }
 
     

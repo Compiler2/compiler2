@@ -30,7 +30,7 @@ main_bench()
 			}
 		}
 		if(sub==0)
-			printf("No\n");
+			my_printf("No\n");
 		else
 		{
 			if(sub>=max)
@@ -57,10 +57,10 @@ main_bench()
 					}
 				}
 			}
-			printf("%d\n",sub);
+			my_printf("%d\n",sub);
 		}
 	}
 	else
-		printf("No\n");
+		my_printf("No\n");
 	return 0;
 }

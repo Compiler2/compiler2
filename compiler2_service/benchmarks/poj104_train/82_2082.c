@@ -6,10 +6,10 @@ int main_bench()
     int sz[100][2];
     int sfzc[100]={0};
     int lxsc[100]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d%d",&sz[i][0],&sz[i][1]);
+        my_scanf("%d%d",&sz[i][0],&sz[i][1]);
     }
     for(i=0;i<n;i++)
     {
@@ -40,7 +40,7 @@ int main_bench()
             h=lxsc[i];
         }
     }
-    printf("%d",h);
+    my_printf("%d",h);
     return 0;
 }
 

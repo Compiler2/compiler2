@@ -14,10 +14,10 @@ int main_bench()
 	}stu[100];
 	int n,i,j,max,sum=0;
 	int money[100]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].marka,&stu[i].markb,&stu[i].ganbu,&stu[i].xibu,&stu[i].c);
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,&stu[i].marka,&stu[i].markb,&stu[i].ganbu,&stu[i].xibu,&stu[i].c);
 		
 	}
     for(i=0;i<n;i++)
@@ -51,9 +51,9 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 		sum=sum+money[i];
-	printf("%s\n",stu[max].name);
-	printf("%d\n",money[max]);
-	printf("%d\n",sum);
+	my_printf("%s\n",stu[max].name);
+	my_printf("%d\n",money[max]);
+	my_printf("%d\n",sum);
 
 	
            

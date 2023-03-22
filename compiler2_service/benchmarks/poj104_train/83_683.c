@@ -8,12 +8,12 @@ int main_bench()
     double g;    
     int i, j, a, b, c;
     double e=0, f=0, GPA;
-    scanf("%d", &b);
+    my_scanf("%d", &b);
     int all[10], real[10];
     for(i=0;i<b;i++)
-       scanf("%d", &all[i]);
+       my_scanf("%d", &all[i]);
     for(i=0;i<b;i++)
-       scanf("%d", &real[i]);
+       my_scanf("%d", &real[i]);
     
     for(i=0;i<b;i++) {
         for(j=0; j<10; j++)
@@ -28,5 +28,5 @@ int main_bench()
         f+=all[i];
     }
     GPA=e/f;
-    printf("%.2lf",GPA);	
+    my_printf("%.2lf",GPA);	
 }

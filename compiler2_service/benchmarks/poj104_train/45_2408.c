@@ -9,7 +9,7 @@ int main_bench()
 {
 	char s[50],w[50];
 	int l1,l2,i,j,count=0;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	l1=strlen(s);
 	l2=strlen(w);
 	for(i=0;i<l2;i++){
@@ -20,7 +20,7 @@ int main_bench()
 				}
 			}
 			if(count==l1-1){
-				printf("%d\n",i);
+				my_printf("%d\n",i);
 			}
 		}
 	}

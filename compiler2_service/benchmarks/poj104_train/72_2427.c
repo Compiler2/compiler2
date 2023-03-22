@@ -3,10 +3,10 @@
 int main_bench(){
     int m,n,i,j,k,a,b=0;
     int gao[1000][1000],din[1000][1000];
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     for(i=0;i<m;i++){
         for(j=0;j<n;j++){
-            scanf("%d",&gao[i][j]);
+            my_scanf("%d",&gao[i][j]);
         }
     }
     for(k=0;k<m;k++){
@@ -24,9 +24,9 @@ int main_bench(){
     for(int c=0;c<b;c++){
    for(int d=0;d<2;d++){
        if(d!=1){
-       printf("%d ",din[c][d]);
+       my_printf("%d ",din[c][d]);
        }else{
-           printf("%d\n",din[c][d]);
+           my_printf("%d\n",din[c][d]);
        }
        
    }       

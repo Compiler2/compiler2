@@ -9,12 +9,12 @@ for(i=0;;i++)
 {
 if(*p=='\0')
 {
-printf("%d",i);
+my_printf("%d",i);
 goto z;
 }
 else if(*p==' ')
 {
-printf("%d",i);
+my_printf("%d",i);
 p++;
 break;
 }
@@ -26,7 +26,7 @@ for(i=0;;i++)
 {
 if(*p=='\0')
 {
-printf(",%d",i);
+my_printf(",%d",i);
 goto z;
 }
 else if(*p==' '&&i==0)
@@ -36,7 +36,7 @@ break;
 }
 else if(*p==' ')
 {
-printf(",%d",i);
+my_printf(",%d",i);
 p++;
 break;
 }

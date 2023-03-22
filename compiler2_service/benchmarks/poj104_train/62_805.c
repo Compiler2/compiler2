@@ -9,7 +9,7 @@ int main_bench(){
 	  if(jj[k]==' '&&jj[k+1]==' '){b++;
 	  for(i=k;jj[i];i++){jj[i]=jj[i+1];}k=k-2;}}i=0;
   for(i=0;i<n-b;i++){
-	  printf("%c",jj[i]);}
+	  my_printf("%c",jj[i]);}
  
  return 0;
 }

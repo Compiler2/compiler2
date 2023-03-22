@@ -4,11 +4,11 @@ int main_bench()
 {
 	int i,j,n,m,t,sum;
 	char a[100][100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 		gets(a[i]);
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(t=1;t<m;t++)
 	{
 		for(i=0;i<n;i++)
@@ -30,5 +30,5 @@ int main_bench()
 		for(j=0;j<n;j++)
 			if(a[i][j]=='@')sum++;
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 }

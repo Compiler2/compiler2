@@ -3,12 +3,12 @@
 int main_bench()
 {
  int a[1000][1000],j,i,m,n,l,b,k;
-scanf("%d",&l);
+my_scanf("%d",&l);
 for(j=0;j<l;j++)
 {
  for(i=0;i<l;i++)
 {
-  scanf("%d",&a[j][i]);
+  my_scanf("%d",&a[j][i]);
 }
 }
 for(j=0;j<l;j++)
@@ -26,7 +26,7 @@ for(n=l-1;n>=0;n--)
 if(a[m][n]==0){ k=m;m=-1;
 break;}
 }}
-printf("%d",(k-b-1)*(n-i-1
+my_printf("%d",(k-b-1)*(n-i-1
 ));
 
 

@@ -9,7 +9,7 @@ int main_bench()
 
             for(m=0;m<6;m++)
 		{
-			scanf("%d",&a[i][m]);
+			my_scanf("%d",&a[i][m]);
 		}
 			if(a[i][0]==0&&a[i][1]==0&&a[i][2]==0&&a[i][3]==0&&a[i][4]==0&&a[i][5]==0)
 			{break;}
@@ -19,7 +19,7 @@ int main_bench()
 	{
 
 	b[t]=(12-a[t][0]-1)*3600+a[t][3]*3600+(60-a[t][1]+a[t][4]-1)*60+60-a[t][2]+a[t][5];
-	printf("%d\n",b[t]);
+	my_printf("%d\n",b[t]);
 	}
 	return 0;
 

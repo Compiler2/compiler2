@@ -4,17 +4,17 @@ int main_bench(){
 	int i,z=0,len1,len2;
 	double n;
     char a[500],b[500];
-	scanf("%lf%s%s",&n,a,b);
+	my_scanf("%lf%s%s",&n,a,b);
 	
 	len1=strlen(a);
 	len2=strlen(b);
 	if(len1!=len2)
-		printf("error");
+		my_printf("error");
 	else{
 	for(i=0;i<len1;i++){
 		if((a[i]!='A'&&a[i]!='T'&&a[i]!='G'&&a[i]!='C')||(b[i]!='A'
 			&&b[i]!='T'&&b[i]!='G'&&b[i]!='C')){
-			printf("error");
+			my_printf("error");
 			z=-1;
 			break;
 		}
@@ -25,9 +25,9 @@ int main_bench(){
 	}
 	if(z>=0){
 	   if((1.0*z/len1)>n)
-		printf("yes");
+		my_printf("yes");
 	    else
-		printf("no");
+		my_printf("no");
 	
 	}
 	}

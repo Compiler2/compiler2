@@ -44,7 +44,7 @@ int main_bench()
 	}
 	i++;
   }
-  printf("%s\n%s",word[maxn],word[minn]);
-  scanf("%d",&i);
+  my_printf("%s\n%s",word[maxn],word[minn]);
+  my_scanf("%d",&i);
   return 0;
 }

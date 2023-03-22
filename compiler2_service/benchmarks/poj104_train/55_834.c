@@ -4,14 +4,14 @@ int main_bench()
 {
     int a,b,i,k,s,j,d[40];
     char n[40];
-    scanf("%d %c",&a,&n[0]);
+    my_scanf("%d %c",&a,&n[0]);
     i=0;
     while (n[i]!=' ')
     {
           i=i+1;
-          scanf("%c",&n[i]);
+          my_scanf("%c",&n[i]);
     }
-    scanf("%d",&b);
+    my_scanf("%d",&b);
     k=1;
     s=0;
     for (j=i-1;j>=0;j--)

@@ -30,7 +30,7 @@ int su(int i)
 int main_bench()
 {
     int m,n,s=0;
-    scanf("%d %d",&m,&n);
+    my_scanf("%d %d",&m,&n);
     for(int i=m;i<=n;i++)
     {
             if(hui(i)==0)
@@ -39,14 +39,14 @@ int main_bench()
                          {
                                      s++;
                                      if(s==1)
-                                     printf("%d",i);
+                                     my_printf("%d",i);
                                      else
-                                     printf(",%d",i);
+                                     my_printf(",%d",i);
                          }
             }
     }
     if(s==0)
-    printf("no");
+    my_printf("no");
     getchar();
     getchar();
 }

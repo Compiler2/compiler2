@@ -4,7 +4,7 @@ int main_bench()
 {
     int a,b;
     char n[100];
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     int c[100];
     int e[100];
     int d=0; 
@@ -20,7 +20,7 @@ int main_bench()
      d=d*a+c[i];                                                                                                                  
     }
     if(d==0)
-    printf("%d",d);
+    my_printf("%d",d);
     for(i=0;i<100&&d!=0;i++)
     {
      e[i]=d%b;

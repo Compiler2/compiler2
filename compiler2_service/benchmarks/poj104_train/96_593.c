@@ -4,7 +4,7 @@ int main_bench()
 {
 	int sz1[200],sz2[200],i,t,n,carry=0;
 	char zfc[200]={0};
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	for(i=0;zfc[i]!=0;i++)
 	{
 		sz1[i]=zfc[i]-'0';
@@ -22,16 +22,16 @@ int main_bench()
 		{
 			for(t=i;t<n;t++)
 			{
-				printf("%d",sz2[t]);
+				my_printf("%d",sz2[t]);
 			}
 			break;
 		}
 	}
 	if(i==n)
 	{
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n");
-	printf("%d",carry/10);
+	my_printf("\n");
+	my_printf("%d",carry/10);
 	return 0;
 }

@@ -14,7 +14,7 @@ int main_bench()
 	a[n]=str[0]+str[n-1];
 	for(i=1;i<=n;i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	return 0;
 }

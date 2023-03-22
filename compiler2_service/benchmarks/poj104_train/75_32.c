@@ -43,5 +43,5 @@ int main_bench()
 		if(num[i]>max)
 			max=num[i];
 	}
-	printf("%d %d",total,max);
+	my_printf("%d %d",total,max);
 }

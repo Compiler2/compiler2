@@ -8,17 +8,17 @@ int main_bench()
     a[0]=0;
     int b[201];
     int sum,c,d;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
 		            sum=0;
-                    scanf("%d",&m);
+                    my_scanf("%d",&m);
                     if(m==0){b[i]=60;}
                     if(m!=0)
 					{
 						for(j=1;j<=m;j++)
 						{
-                                         scanf("%d",&a[j]);
+                                         my_scanf("%d",&a[j]);
                         }
                         for(j=1;j<=m;j++)
 						{
@@ -34,6 +34,6 @@ int main_bench()
 						else if(sum>60&&(sum-(c-d))<60)b[i]=c-sum+60;
 					}
 	}
-	for(i=0;i<n;i++){printf("%d\n",b[i]);}
+	for(i=0;i<n;i++){my_printf("%d\n",b[i]);}
 	return 0;
 }

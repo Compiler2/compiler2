@@ -25,6 +25,6 @@ int main_bench()
     	}
     }
     for(b=a;b<a+n;b++)
-    printf("%c",*b);
+    my_printf("%c",*b);
     free(a);
 }

@@ -3,12 +3,12 @@
 int num(int n,int m);
 int main_bench()
 {   int x,y;
-	while(scanf("%d%d",&x,&y)==2)
+	while(my_scanf("%d%d",&x,&y)==2)
 	{
        if(x==0&&y==0)
 		   break;
 	  else
-		  printf("%d\n",num(x,y));
+		  my_printf("%d\n",num(x,y));
 	  
 
 	}

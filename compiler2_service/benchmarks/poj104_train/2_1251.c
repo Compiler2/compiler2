@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,i,j,A[26]={0},B[26];
 	char s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	struct book{
 		int num;
 		char n[26];
@@ -12,7 +12,7 @@ int main_bench()
     book=(struct book*)malloc(sizeof(struct book)*m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d %s",&book[i].num,book[i].n);
+		my_scanf("%d %s",&book[i].num,book[i].n);
 		for(j=0;book[i].n[j]!='\0';j++)
 		{
 			switch(book[i].n[j])
@@ -73,14 +73,14 @@ int main_bench()
 	}
 	
 	s=k+65;
-	printf("%c\n%d\n",s,max);
+	my_printf("%c\n%d\n",s,max);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;book[i].n[j]!='\0';j++)
 		{
 			if(book[i].n[j]==s)
 			{
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 				break;
 			}
 		}

@@ -10,9 +10,9 @@ int main_bench()
 {
    int i,n,j,k=0,a[100]={0},num=0,temp1;
    char b[100][10]={0},temp2[10]={0};
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
-   scanf("%s %d",per[i].ID,&per[i].age);
+   my_scanf("%s %d",per[i].ID,&per[i].age);
    for(i=0;i<n;i++)
    {
        if(per[i].age>=60)
@@ -45,7 +45,7 @@ int main_bench()
          num++;}
     }
     for(k=0;k<num-1;k++)
-    printf("%s\n",b[k]);
-    printf("%s",b[num-1]);
+    my_printf("%s\n",b[k]);
+    my_printf("%s",b[num-1]);
 
 }

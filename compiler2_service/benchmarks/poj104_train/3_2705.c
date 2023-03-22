@@ -29,17 +29,17 @@ int main_bench()
 {
     int i,k;
     
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for(i=1;i<=n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     qsort(a+1,n,sizeof(int),comp);
     for(i=1;i<n;i++)
     if(findx(i+1,n,k-a[i]))
     {
-                         printf("yes");
+                         my_printf("yes");
                          return 0;
     }
-    printf("no");
+    my_printf("no");
    
     return 0;
 }

@@ -17,10 +17,10 @@ int main_bench(){
 			}
 			if(t==0){
 				t++;
-			    printf("%d",s);
+			    my_printf("%d",s);
 			}
 			else
-				printf(",%d",s);
+				my_printf(",%d",s);
 		}
 	}
     return 0;

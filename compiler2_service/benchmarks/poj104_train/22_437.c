@@ -7,7 +7,7 @@ int i,j,x,temp,count,max;
 char c;
 for(i=0;i<300;i++)
 {
-	scanf("%d%c",&a[i],&c);
+	my_scanf("%d%c",&a[i],&c);
 	if(c=='\n')
 	{
 		count=i;
@@ -28,7 +28,7 @@ for(x=1;x<=count;x++)
 }
     if(a[count]==a[0])
 	{
-	printf("No");
+	my_printf("No");
 	}
 	if(a[count]!=a[0])
 	{
@@ -36,7 +36,7 @@ for(x=1;x<=count;x++)
 	   for(j=0;j<=count;j++)
 		{
 	       if(a[j]==max){;}
-		   else {printf("%d",a[j]);break;}
+		   else {my_printf("%d",a[j]);break;}
 		}
 	}
 }

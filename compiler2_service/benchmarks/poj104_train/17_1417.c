@@ -6,8 +6,8 @@ int main_bench()
 {
 	
 	int i,j,k,n;
-	scanf("%d",&n); 
-	while(scanf("%s",s)==1)
+	my_scanf("%d",&n); 
+	while(my_scanf("%s",s)==1)
 	{
 		memset(dp,0,sizeof(dp));
 		n=strlen(s);
@@ -33,17 +33,17 @@ int main_bench()
 				}
 			}
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 		for(i=0;i<n;i++)
 		{
 			if(dp[i]==-1)
-			    printf("$");
+			    my_printf("$");
 			else if(dp[i]==1)
-			    printf("?");
+			    my_printf("?");
 			else
-			printf(" ");
+			my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

@@ -22,9 +22,9 @@ int main_bench()
 				if(h==(i/2)){
 					int l;
 					for(l=j;l<=j+i-1;l++){
-						printf("%c",ch[l]);
+						my_printf("%c",ch[l]);
 					}
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}

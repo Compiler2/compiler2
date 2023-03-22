@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,n,i,j;
 double s;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=1;i<=m;i++){
-scanf("%d",&n);
+my_scanf("%d",&n);
 double*x=(double*)malloc(sizeof(double)*n);
 double*y=(double*)malloc(sizeof(double)*n);
 x[0]=2;
@@ -25,7 +25,7 @@ y[j]=y[j-1]+y[j-2];
 	s+=x[j]/y[j];
 }
 }
-printf("%.3lf\n",s);
+my_printf("%.3lf\n",s);
 }
 return 0;
 }

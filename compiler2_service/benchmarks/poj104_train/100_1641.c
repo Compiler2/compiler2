@@ -3,7 +3,7 @@
 int main_bench(){
 	char xl[300],zm[300],e;
 	int i,m,k=0,n;
-	scanf("%s",xl);
+	my_scanf("%s",xl);
 	n=strlen(xl);
 	
 	for (i=0;i<n;i++){
@@ -32,17 +32,17 @@ int main_bench(){
 				if(zm[m]==zm[m+1]) continue;
 				else {
 			
-						printf("%c=%d\n",zm[i],m-i+1);
+						my_printf("%c=%d\n",zm[i],m-i+1);
 					    i=m;
 					break;
 				}
              
 			}
 		}
-		else printf("%c=1\n",zm[i]);
+		else my_printf("%c=1\n",zm[i]);
     }
 	if(m==0){
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

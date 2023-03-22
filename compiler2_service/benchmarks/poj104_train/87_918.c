@@ -4,7 +4,7 @@ int main_bench(){
 	int a,b,c,d,e,f,sum,t[1000][10],i,k;
 	for(i=0;;i++){
 		for(k=1;k<=6;k++){
-    	scanf("%d",&t[i][k]);
+    	my_scanf("%d",&t[i][k]);
 		}
 		if(t[i][1]==0)
 			break;
@@ -17,7 +17,7 @@ int main_bench(){
 		e=t[i][5];
 		f=t[i][6];
 		sum=12*60*60-a*60*60-b*60-c+d*60*60+e*60+f;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

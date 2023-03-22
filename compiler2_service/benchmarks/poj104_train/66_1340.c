@@ -3,7 +3,7 @@
 int main_bench()
 {
  int year,month,date,a,b,c;
- scanf("%d %d %d",&year,&month,&date);
+ my_scanf("%d %d %d",&year,&month,&date);
  if(year<100)
   a=3;
  else
@@ -77,25 +77,25 @@ int main_bench()
  switch(c)
  {
  case 1:
-  printf("Mon.");
+  my_printf("Mon.");
   break;
  case 2:
-  printf("Tue.");
+  my_printf("Tue.");
   break;
  case 3:
-  printf("Wed.");
+  my_printf("Wed.");
   break;
  case 4:
-  printf("Thu.");
+  my_printf("Thu.");
   break;
  case 5:
-  printf("Fri.");
+  my_printf("Fri.");
   break;
  case 6:
-  printf("Sat.");
+  my_printf("Sat.");
   break;
  case 0:
-  printf("Sun.");
+  my_printf("Sun.");
   break;
  }
 return 0;

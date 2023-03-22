@@ -12,11 +12,11 @@ int main_bench()
 		int p,q;
 		p=(int)str[i];
 		q=(int)str[i+1];
-		printf("%c",p+q);
+		my_printf("%c",p+q);
 	}
 	int p,q;
 	p=(int)str[0];
 	q=(int)str[n-1];
-	printf("%c",p+q);
+	my_printf("%c",p+q);
 	return 0;
 }

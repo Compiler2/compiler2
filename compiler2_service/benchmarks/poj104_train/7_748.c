@@ -35,13 +35,13 @@ int main_bench()
 	
 
 		for(j=0;j<i;j++){
-			printf("%c",str[j]);
+			my_printf("%c",str[j]);
 		}
 		for(j=0;j<c;j++){
-			printf("%c",rep[j]);
+			my_printf("%c",rep[j]);
 		}
 		for(j=i+a;j<b;j++){
-			printf("%c",str[j]);
+			my_printf("%c",str[j]);
 		}
 	
 	}

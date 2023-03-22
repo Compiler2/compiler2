@@ -17,8 +17,8 @@ int main_bench()
 			if(k==j+1)
 			{
 				for(m=0;m<(j+1)*2;m++)
-				printf("%c",s[i-j+m]);
-				printf("\n");
+				my_printf("%c",s[i-j+m]);
+				my_printf("\n");
 			}
 			if(i==l-1)
 				break;

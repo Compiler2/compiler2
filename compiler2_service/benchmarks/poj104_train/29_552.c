@@ -7,13 +7,13 @@ double a,s=0;
 
 int p,q;
 
-scanf("%d",&m);
+my_scanf("%d",&m);
 
 
 for(i=0;i<m;i++)
 {
 
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	if(i==0){
 	p=2;q=1;
 		for(j=0;j<n;j++){
@@ -27,7 +27,7 @@ for(i=0;i<m;i++)
 			q=e;
 	}
 
-	printf("%.3lf",s);
+	my_printf("%.3lf",s);
 	}
 
 	else{
@@ -44,7 +44,7 @@ for(i=0;i<m;i++)
 		q=e;
 	}
 
-	printf("\n%.3lf",s);
+	my_printf("\n%.3lf",s);
 	}
 }
 return 0;

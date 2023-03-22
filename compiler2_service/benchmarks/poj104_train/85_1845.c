@@ -3,9 +3,9 @@
 int main_bench(){
     char a[100];
     int i,j,k,l,n,m[100],o,p;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=0;j<n;j++){
-    scanf("%s",a);
+    my_scanf("%s",a);
     p=strlen(a);
     o=0;
     for(i=0;i<p;i++)
@@ -18,8 +18,8 @@ int main_bench(){
     
     for(j=0;j<n;j++)
     if(m[j]==1)
-    printf("no\n");
+    my_printf("no\n");
     else
-    printf("yes\n");
+    my_printf("yes\n");
     return 0;
 }

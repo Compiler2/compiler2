@@ -5,12 +5,12 @@ int main_bench()
 {
 	int n,x,i;
 	int p[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&x);
+		my_scanf("%d",&x);
 		p[i]=F(x);
-        printf("%d\n",p[i]);
+        my_printf("%d\n",p[i]);
 	}
 	return 0;
 }

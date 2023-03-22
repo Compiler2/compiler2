@@ -8,11 +8,11 @@ int main_bench()
     a[2]=1;
     for(int i=3;i<=20;i++)
     a[i]=a[i-1]+a[i-2];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int b[n];
     for(int i=0;i<n;i++)
-   { scanf("%d",&b[n]);
-    printf("%d\n",a[b[n]]);}
+   { my_scanf("%d",&b[n]);
+    my_printf("%d\n",a[b[n]]);}
     getchar();
     getchar();
 }

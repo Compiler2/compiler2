@@ -4,10 +4,10 @@ int main_bench()
 {
 	int N;
 	int start;
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	if(N==1)
 	{
-		printf("2");
+		my_printf("2");
 		return 0;
 	}
 	int sz[51];
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	for(int l=start;l>=1;l--)
 	{
-		printf("%d",sz[l]);
+		my_printf("%d",sz[l]);
 	}
 	return 0;
 }

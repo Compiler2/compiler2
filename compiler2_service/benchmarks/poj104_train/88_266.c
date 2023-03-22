@@ -23,12 +23,12 @@ int main_bench()
 		if (pd_num)       
 		{
 			pd_end = 0;                      
-			printf("%c",c[i]);
+			my_printf("%c",c[i]);
 		}
 		else              
 		{
 			if (pd_end==0)         
-				printf("\n");
+				my_printf("\n");
 			pd_end = 1;
 		}
 	}

@@ -6,13 +6,13 @@ int a[300],i=0,mark=0,j,k,p,h,q;
 char ch[300];
 while(1)
 {
-scanf("%d%c",&a[i],&ch[i]);
+my_scanf("%d%c",&a[i],&ch[i]);
 if(ch[i]!=',')
 break;
 i++;
 }
 if(i==0)
-printf("No");
+my_printf("No");
 else
 {
 for(j=1;j<=i;j++)
@@ -43,10 +43,10 @@ for(q=2;q<=i;q++)
 		mark=1;
 }
 if(!mark)
-printf("%d",a[1]);
+my_printf("%d",a[1]);
 }
 if(mark)
-printf("No");
+my_printf("No");
 
 return 0;
 }

@@ -9,10 +9,10 @@ int main_bench()
 {
 	int n,i,j=0,m,sum=0;
 	char a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct Aw*st=(struct Aw*)malloc(sizeof(struct Aw)*n);
     for(i=0;i<n;i++){
-		scanf("%s%d%d%c%c%c%c%d",st[i].na,&st[i].ft,&st[i].ct,&a,&st[i].po,&b,&st[i].ho,&st[i].tn);
+		my_scanf("%s%d%d%c%c%c%c%d",st[i].na,&st[i].ft,&st[i].ct,&a,&st[i].po,&b,&st[i].ho,&st[i].tn);
         st[i].sum=0;
      	}
 	for(i=0;i<n;i++){
@@ -43,7 +43,7 @@ int main_bench()
 			m=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",st[m].na,st[m].sum,sum);
+	my_printf("%s\n%d\n%d\n",st[m].na,st[m].sum,sum);
 	free(st);
 	return 0;
 }

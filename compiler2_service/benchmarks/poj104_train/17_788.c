@@ -5,13 +5,13 @@ char a[101];
 int main_bench()
 {
 	int i,n,j,k,m,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 			for(j=0;j<101;j++)
 			a[0]='\0';
-			scanf("%s",a);
-			printf("%s\n",a);
+			my_scanf("%s",a);
+			my_printf("%s\n",a);
 			m=strlen(a);
 			for(j=m-1;j>=0;j--)
 			{
@@ -47,7 +47,7 @@ int main_bench()
 				else if(a[j]!='$')
 				a[j]=' ';
 			}
-			printf("%s\n",a);
+			my_printf("%s\n",a);
 			
 	}
 	return 0;

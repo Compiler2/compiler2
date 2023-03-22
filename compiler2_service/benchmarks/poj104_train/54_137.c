@@ -4,9 +4,9 @@ int main_bench()
 {
 float m,h;
 int l,j,n,k;
-scanf("%d %d",&n,&k);
+my_scanf("%d %d",&n,&k);
 if(n==1)
-printf("%d\n",(int)(n+k));
+my_printf("%d\n",(int)(n+k));
 else
 {
 for(l=1;;l++)
@@ -27,7 +27,7 @@ if((int)(h)!=h)
 continue;
 if((int)(m)==m)
 {
-printf("%d\n",(int)(m));
+my_printf("%d\n",(int)(m));
 break;
 }
 }}}

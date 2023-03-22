@@ -5,7 +5,7 @@ int main_bench()
 	int i, j, n,sum, a,b,c,d,e,f,h=0,m=0,s;
 	char y;
 	for(i=0;;i++){
-		scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+		my_scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
 		if(a!=0){
 			if(e>=b&&f>=c){
 				h=d+12-a;
@@ -32,7 +32,7 @@ int main_bench()
 			break;
 		}
 		sum=h*3600+m*60+s;
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 
 

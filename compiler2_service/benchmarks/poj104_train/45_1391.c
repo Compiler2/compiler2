@@ -8,8 +8,8 @@ int main_bench()
     m=0;
     char a[50];
     char b[50];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     la=strlen(a);
     lb=strlen(b);
     for(i=0;i<lb-la;i++)
@@ -25,6 +25,6 @@ int main_bench()
           m=1;
        }
     }
-    printf("%d",num);
+    my_printf("%d",num);
     return 0;
 }

@@ -7,7 +7,7 @@ int main_bench()
 	int i=1;
     int s=0;
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while (i<=n) {
          if (((i%7))&&(!(i%10==7))&&(!(i/10==7))) {
 		
@@ -17,6 +17,6 @@ int main_bench()
                                          i++;
                                          }
 
-    printf("%d",s);
+    my_printf("%d",s);
 	return 0;
 }

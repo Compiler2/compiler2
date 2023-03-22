@@ -23,7 +23,7 @@ int main_bench()
 		
 		if(zfc[0]==sent[k])
 		{
-			printf("%d",k-i);
+			my_printf("%d",k-i);
 			break;
 		}
 		}
@@ -41,7 +41,7 @@ int main_bench()
 		}
 		if (count==i-1)
 		{   k=k-i-1;
-			printf("%d",k);
+			my_printf("%d",k);
 			break;
 		}
 	}

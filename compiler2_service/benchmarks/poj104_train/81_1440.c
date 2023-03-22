@@ -7,10 +7,10 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 	}
 	int n=0,m=0;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(n>=0&&n<=4&&m>=0&&m<=4)
 	{
 		for(j=0;j<5;j++)
@@ -23,17 +23,17 @@ int main_bench()
 		{
 			if(j<4)
 			{
-				printf("%d ",sz[i][j]);
+				my_printf("%d ",sz[i][j]);
 			}
-			else printf("%d",sz[i][j]);
+			else my_printf("%d",sz[i][j]);
 		}
 		if(i<4)
 		{
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	}
-	else printf("error");
+	else my_printf("error");
 	return 0;
 }
 void swap(int *a,int *b)

@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,age,a=0,b=0,c=0,d=0,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&age);
+		my_scanf("%d",&age);
 		if(age>=0&&age<=18)
 			a++;
 		if(age>=19&&age<=35)
@@ -15,9 +15,9 @@ int main_bench()
 		if(age>=61)
 			d++;
 	}
-	printf("1-18: %.2lf%%\n",100.0*a/n);
-	printf("19-35: %.2lf%%\n",100.0*b/n);
-	printf("36-60: %.2lf%%\n",100.0*c/n);
-	printf("60??: %.2lf%%\n",100.0*d/n);
+	my_printf("1-18: %.2lf%%\n",100.0*a/n);
+	my_printf("19-35: %.2lf%%\n",100.0*b/n);
+	my_printf("36-60: %.2lf%%\n",100.0*c/n);
+	my_printf("60??: %.2lf%%\n",100.0*d/n);
 	return 0;
 }

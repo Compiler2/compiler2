@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long int x,y,a,b,c,d,e;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	a=x/10000;
 	b=(x-10000*a)/1000;
 	c=(x-10000*a-1000*b)/100;
@@ -19,5 +19,5 @@ int main_bench()
 		y=1000*e+100*d+10*c+b;
 	else if(x>=10000&&x<100000)
 		y=10000*e+1000*d+100*c+10*b+a;
-	printf("%ld\n",y);
+	my_printf("%ld\n",y);
 }

@@ -23,9 +23,9 @@ int main_bench()
 			if(flag)
 				{
 					if(nf)
-						printf("\n");
+						my_printf("\n");
 					for(k=0;k<i;k++)
-						printf("%c",a[j+k]);
+						my_printf("%c",a[j+k]);
 					
 					nf=1;
 				}

@@ -7,7 +7,7 @@ int main_bench()
 	i=0;
 	while(1)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c=='\n')
 		{
 			break;
@@ -35,11 +35,11 @@ int main_bench()
 	}
 	if(q==-1)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	else
 	{
-		printf("%d",q);
+		my_printf("%d",q);
 	}
 	return 0;
 }

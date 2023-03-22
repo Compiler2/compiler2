@@ -6,10 +6,10 @@ int main_bench()
 	int a[10000];
 	int i,j=1,k,m;
 	a[1]=3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>=7)
 	{
-		printf("3 5\n");
+		my_printf("3 5\n");
 		for(i=5;i<=n-2;i=i+2)
 		{
 			for(k=1;k<=j;k++)
@@ -28,15 +28,15 @@ int main_bench()
 				}
 				if(m==j+1)
 				{
-					printf("%d %d\n",i,i+2);
+					my_printf("%d %d\n",i,i+2);
 				}
 			}
 		}
 	}
 	else if(n==5 || n==6)
-		printf("3 5\n");
+		my_printf("3 5\n");
 	else
-		printf("empty");
+		my_printf("empty");
 	return 0;
 
 }

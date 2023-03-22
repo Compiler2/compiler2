@@ -9,12 +9,12 @@ int main_bench()
 	{
 		if(*p!=' ')
 		{
-			printf("%c",*p);
+			my_printf("%c",*p);
 			p++;             
 		}
 		if(*p==' ')
 		{
-			printf(" ");
+			my_printf(" ");
 			do{p++;}while(*p==' ');
 		}
 	}

@@ -35,7 +35,7 @@ int main_bench()
 		   addc(result,s[i]);
 	   }
 	}
-	printf("%s\n",result);
+	my_printf("%s\n",result);
 
 	return 0;
 }

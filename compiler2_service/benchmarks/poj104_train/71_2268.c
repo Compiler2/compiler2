@@ -3,10 +3,10 @@
 int main_bench(){
 	int month1[12]={31,28,31,30,31,30,31,31,30,31,30,31},month2[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	int n, y, m1, m2, j, bigm, smallm;
-	scanf("%d",& n);
+	my_scanf("%d",& n);
 	for(j=0; j<n; j++){
 		int days=0, i;
-		scanf("%d%d%d", &y, &m1, &m2);
+		my_scanf("%d%d%d", &y, &m1, &m2);
 		if (m1<= m2){
 			smallm= m1;
 			bigm= m2;
@@ -20,10 +20,10 @@ int main_bench(){
 				days+=month2[i-1];
 			}
 			if (days%7==0){
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else{
-			   	printf("NO\n");
+			   	my_printf("NO\n");
 			}
 		}
 	   else{
@@ -31,10 +31,10 @@ int main_bench(){
 				days+=month1[i-1];
 			}
 		    if (days%7==0){
-			    printf("YES\n");
+			    my_printf("YES\n");
 			}
 		    else{
-			    printf("NO\n");
+			    my_printf("NO\n");
 			}
 
 	   }

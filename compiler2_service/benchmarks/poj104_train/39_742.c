@@ -12,10 +12,10 @@ struct student
 int main_bench()
 {
 	int i,k=0,amount=0,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++) {
 		
-		scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].a,&stu[i].b,&stu[i].num);
+		my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].s1,&stu[i].s2,&stu[i].a,&stu[i].b,&stu[i].num);
 	
 		
 		if(stu[i].s1>80&&stu[i].num>=1) {
@@ -43,9 +43,9 @@ int main_bench()
 	      k=i;
        }   
 	   
-    printf("%s\n",stu[k].name);
-	printf("%d\n",stu[k].bonus);
-	printf("%d",amount);
+    my_printf("%s\n",stu[k].name);
+	my_printf("%d\n",stu[k].bonus);
+	my_printf("%d",amount);
 		return 0;
 }
 

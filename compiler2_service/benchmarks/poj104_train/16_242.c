@@ -4,12 +4,12 @@ int main_bench()
 {
    int n;
    int tmp;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    while(1){
 	   tmp=n%10;
-	   printf("%d",tmp);
+	   my_printf("%d",tmp);
 	   if(!(n=n/10))break;
    }
-   printf("\n");
+   my_printf("\n");
    return 0;
 }

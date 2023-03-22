@@ -32,7 +32,7 @@ int main_bench()
 			
 		}
 		if(m==i)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 }

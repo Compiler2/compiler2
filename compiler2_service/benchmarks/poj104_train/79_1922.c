@@ -14,7 +14,7 @@ int main_bench()
 	int i,m, n,a[20000]={0},c=0;
   for(i=1;i<20000;i++)
   {
-	  scanf("%d %d",&n,&m);
+	  my_scanf("%d %d",&n,&m);
 	  if(n!=0&&m!=0)
 	  {
 		   a[i]=f(n,m);
@@ -25,7 +25,7 @@ int main_bench()
   }
   for(i=1;i<=c;i++)
   {
-	  printf("%d\n",a[i]);
+	  my_printf("%d\n",a[i]);
   }
   return 0;
 }

@@ -6,17 +6,17 @@ char *p;
 int *q,d,n,i,r;
 p=(char*)malloc(101*sizeof(char));
 q=(int*)malloc(101*sizeof(int));
-scanf("%s",p);
+my_scanf("%s",p);
 n=strlen(p);
 if(n==1)
 {
-printf("0\n");
-printf("%d",(p[0]-'0'));
+my_printf("0\n");
+my_printf("%d",(p[0]-'0'));
 }
 else if(n==2&&(((p[0]-'0')*10+p[1]-'0')<13))
 {
-	printf("0\n");
-	printf("%d",((p[0]-'0')*10+p[1]-'0'));
+	my_printf("0\n");
+	my_printf("%d",((p[0]-'0')*10+p[1]-'0'));
 }
 else
 {
@@ -45,12 +45,12 @@ r=(d-q[n-2]*13);
 }
 if(q[0]==0)
 for(i=1;i<=(n-2);i++)
-printf("%d",q[i]);
+my_printf("%d",q[i]);
 else
 for(i=0;i<=(n-2);i++)
-printf("%d",q[i]);
-printf("\n");
-printf("%d",r);
+my_printf("%d",q[i]);
+my_printf("\n");
+my_printf("%d",r);
 }
 return(0);
 }

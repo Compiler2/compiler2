@@ -13,12 +13,12 @@ int main_bench()
 		int total;
 	}student[100],temp,Total;
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	Total.total=0;
 	for(i=0;i<n;i++)
 	{
 		student[i].total=0;
-		scanf("%s %d %d %c %c %d",student[i].name,&student[i].mark1,&student[i].mark2,&student[i].ganbu,&student[i].xibu,&student[i].lunwen);
+		my_scanf("%s %d %d %c %c %d",student[i].name,&student[i].mark1,&student[i].mark2,&student[i].ganbu,&student[i].xibu,&student[i].lunwen);
 		if(student[i].mark1>80&&student[i].lunwen>0)
 			student[i].total+=8000;
 		if(student[i].mark1>85&&student[i].mark2>80)
@@ -40,5 +40,5 @@ int main_bench()
 			student[i+1]=temp;
 		}
 	
-	printf("%s\n%d\n%d\n",student[n-1].name,student[n-1].total,Total.total);
+	my_printf("%s\n%d\n%d\n",student[n-1].name,student[n-1].total,Total.total);
 }

@@ -4,7 +4,7 @@ main_bench()
 {
       int a,b,i,sum=0,m,k,l;
       char c[40];
-      scanf("%d %s %d",&a,c,&b);
+      my_scanf("%d %s %d",&a,c,&b);
       m=strlen (c);
                 for(i=0;i<m;i++)
       {

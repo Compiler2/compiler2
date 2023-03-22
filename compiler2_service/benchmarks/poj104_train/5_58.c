@@ -6,9 +6,9 @@ int main_bench()
 	int la,lb,i,d;
 	double t,tt;
 	char a[505],b[505];
-	scanf("%lf",&t);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%lf",&t);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	la=strlen(a);
 	lb=strlen(b);
 	d=-1;
@@ -29,14 +29,14 @@ int main_bench()
 		}
 	}
 	if(d<0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		tt=d*1.000/la;
 		if(tt>t)
-			printf("yes");
+			my_printf("yes");
 		else
-			printf("no");
+			my_printf("no");
 	}
 	
 	return 0;

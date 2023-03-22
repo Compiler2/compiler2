@@ -3,11 +3,11 @@
 int n1;int n2;int i;int a[100]={0};int b[100]={0};int c[200]={0};
 void scanfing()
 {
-     scanf ("%d %d",&n1,&n2);
-     scanf ("%d",&a[0]);
-     for (i=1;i<n1;i++) scanf (" %d",&a[i]);
-     scanf ("%d",&b[0]);
-     for (i=1;i<n2;i++) scanf (" %d",&b[i]);
+     my_scanf ("%d %d",&n1,&n2);
+     my_scanf ("%d",&a[0]);
+     for (i=1;i<n1;i++) my_scanf (" %d",&a[i]);
+     my_scanf ("%d",&b[0]);
+     for (i=1;i<n2;i++) my_scanf (" %d",&b[i]);
 }
 int compare(const void* elem1,const void* elem2)
 {
@@ -25,9 +25,9 @@ void together()
 }
 void printfing()
 {
-     printf ("%d",c[0]);
+     my_printf ("%d",c[0]);
      for (i=1;i<n1+n2;i++)
-     printf (" %d",c[i]);
+     my_printf (" %d",c[i]);
 }
 int main_bench()
 {

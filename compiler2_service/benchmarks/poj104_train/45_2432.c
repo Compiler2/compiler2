@@ -21,7 +21,7 @@ int main_bench()
 				}
 			}
 			if(t==end+1){
-				printf("%d",j-i-1);
+				my_printf("%d",j-i-1);
 				break;
 			}
 		}

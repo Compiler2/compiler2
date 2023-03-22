@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,year,m1,m2,i,tmp,sum,k,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int b[12]={31,29,31,30,31,30,31,31,30,31,30,31};
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&year,&m1,&m2);
+		my_scanf("%d %d %d",&year,&m1,&m2);
 		if(m1>m2)
 		{
 			tmp=m1;
@@ -24,8 +24,8 @@ int main_bench()
 			{
 				sum+=b[k-1];
 			}
-			if(sum%7==0)printf("YES\n");
-			else printf("NO\n");
+			if(sum%7==0)my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 		else 
 			{
@@ -34,8 +34,8 @@ int main_bench()
 			{
 				sum+=a[k-1];
 			}
-			if(sum%7==0)printf("YES\n");
-			else printf("NO\n");
+			if(sum%7==0)my_printf("YES\n");
+			else my_printf("NO\n");
 		}
 	}
 	return 0;

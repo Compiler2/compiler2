@@ -13,7 +13,7 @@ int main_bench()
 	}
 	
 	if(strlen(a)!=(2*c+1))	
-		printf("NO");
+		my_printf("NO");
 	else
 	{
 		for(i=0;i<c-1;i++)
@@ -50,8 +50,8 @@ int main_bench()
 				temp++;
 		}
 		if(temp==c)
-		printf("YES");
-		else printf("NO");
+		my_printf("YES");
+		else my_printf("NO");
 	}
 
 }

@@ -25,10 +25,10 @@ int main_bench()
 		}
 		if(i>k-2)
 		{
-			printf("No\n");
+			my_printf("No\n");
 		}
 	}
-	if (k==1) printf("No\n");
+	if (k==1) my_printf("No\n");
 	else{
 	for (i=0; i<k; i++)
 	{
@@ -51,7 +51,7 @@ int main_bench()
 	}
 	if(b[i]!=0)
 	{
-	printf("%d\n", b[i]);
+	my_printf("%d\n", b[i]);
 	}
 	}
 

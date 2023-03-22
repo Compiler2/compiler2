@@ -4,20 +4,20 @@ int main_bench()
 {
 	char y[501],s[501];
 	double h;
-	scanf("%lf",&h);
-	scanf("%s",y);
-	scanf("%s",s);
+	my_scanf("%lf",&h);
+	my_scanf("%s",y);
+	my_scanf("%s",s);
 	int len=strlen(y),i,sum=0,l=strlen(s);
 	if(len!=l)
 	{
-		printf("error");
+		my_printf("error");
 	    return 0;
 	}	
 	for(i=0;i<len;i++)
 	{
 		if((y[i]!='A'&&y[i]!='T'&&y[i]!='C'&&y[i]!='G')||(s[i]!='A'&&s[i]!='T'&&s[i]!='C'&&s[i]!='G'))
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 		else if(y[i]==s[i])
@@ -28,9 +28,9 @@ int main_bench()
 	double p=(double)sum/len;
 	if(p>h)
 	{
-		printf("yes");
+		my_printf("yes");
 		return 0;
 	}
-	printf("no");
+	my_printf("no");
 	return 0;
 }

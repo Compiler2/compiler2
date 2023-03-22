@@ -12,10 +12,10 @@ int main_bench()
 {  
    int m,i,j,n,s;
    char x,c;
-   scanf ("%d",&m);
+   my_scanf ("%d",&m);
    for (i=0;i<m;i++)
    {
-   scanf ("%d%s",&book[i].num,book[i].w);
+   my_scanf ("%d%s",&book[i].num,book[i].w);
    
    
    }
@@ -45,14 +45,14 @@ int main_bench()
    if (x=='Z') {break;}
    x++;
    }
-   printf ("%c\n%d\n",c,n);
+   my_printf ("%c\n%d\n",c,n);
    for (i=0;i<m;i++)
    {
     for (j=0;j<strlen(book[i].w);j++)
 	{
 	 if (book[i].w[j]==c)
 	 {
-		 printf ("%d\n",book[i].num);
+		 my_printf ("%d\n",book[i].num);
 		
 	 }
 	

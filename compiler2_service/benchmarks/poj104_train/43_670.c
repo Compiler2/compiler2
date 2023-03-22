@@ -3,7 +3,7 @@
 int main_bench()
 {int q[100000],w[100000];
 int i,j,k,l,m,n,a,b,c;
-scanf("%d",&n);
+my_scanf("%d",&n);
 k=0;
 for(i=3;i<=n;i++)
 {
@@ -24,6 +24,6 @@ for(i=3;i<=n;i++)
 	{
 		for(m=l;m<=n;m++)
 			if(n==q[l]+w[m])
-				printf("%d %d\n",q[l],w[m]);
+				my_printf("%d %d\n",q[l],w[m]);
 	}
 } 

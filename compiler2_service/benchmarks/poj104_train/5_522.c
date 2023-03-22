@@ -5,8 +5,8 @@ int main_bench()
   int sum=0,len1,len2,i,n,p=0;
   double x,y;
   char a1[501],a2[501];
-  scanf("%lf",&x);
-  scanf("%s %s",a1,a2);
+  my_scanf("%lf",&x);
+  my_scanf("%s %s",a1,a2);
   len1=strlen(a1);
   len2=strlen(a2);
   if(len1!=len2)
@@ -26,7 +26,7 @@ int main_bench()
   }
   if(p!=0)
   {
-    printf("error");
+    my_printf("error");
   }
   else
   {
@@ -38,11 +38,11 @@ int main_bench()
     y=1.0*sum/len1;
     if(y<=x)
     {
-      printf("no");
+      my_printf("no");
     }
     else
     {
-      printf("yes");
+      my_printf("yes");
     }
   }
   return 0;

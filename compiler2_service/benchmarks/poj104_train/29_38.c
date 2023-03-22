@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int m,i,n[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&(n[i]));
+		my_scanf("%d",&(n[i]));
 	}
 	int sz[1000];
 	double xsz[1000];
@@ -24,7 +24,7 @@ int main_bench()
 		    xsz[k]=(sz[k+1])*1.0/(sz[k]);
 			sum[i]+=xsz[k];
 		}
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	return 0;
 }

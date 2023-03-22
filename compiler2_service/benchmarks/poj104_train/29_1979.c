@@ -19,15 +19,15 @@ int main_bench()
 	{
 		fenshu[i]=shuzi[i+1]/shuzi[i];
 	}
-	scanf("%d", &m);
+	my_scanf("%d", &m);
 	for(j=1;j<=m;j++)
 	{
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
 		sum=sum+fenshu[i];
 	}
-	printf("%.3lf\n", sum);
+	my_printf("%.3lf\n", sum);
 	sum=0;
 	}
 	return 0;

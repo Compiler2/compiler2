@@ -3,10 +3,10 @@
 int l1,l2,a1[50],a2[50],a3[100];
 void f1(int a1[],int a2[])
 {
-	scanf("%d %d",&l1,&l2);
+	my_scanf("%d %d",&l1,&l2);
 	int i;
-	for(i=1;i<=l1;i++) scanf("%d",&a1[i]);
-	for(i=1;i<=l2;i++) scanf("%d",&a2[i]);
+	for(i=1;i<=l1;i++) my_scanf("%d",&a1[i]);
+	for(i=1;i<=l2;i++) my_scanf("%d",&a2[i]);
 }
 void f2(int l,int a[])
 {
@@ -25,7 +25,7 @@ void f3(int a1[],int a2[],int a3[])
 void f4(int a3[])
 {
 	int i;
-	for(i=1;i<=l1+l2;i++) {if(i!=1) printf(" ");printf("%d",a3[i]);}
+	for(i=1;i<=l1+l2;i++) {if(i!=1) my_printf(" ");my_printf("%d",a3[i]);}
 }
 main_bench()
 {

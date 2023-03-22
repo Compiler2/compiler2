@@ -3,7 +3,7 @@
 int main_bench(){
     char a[500]={0},b[500]={0};
     int l1,l2,i,j,k=0,count=0,mark;
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
     l1=strlen(a);
     l2=strlen(b);
     for(i=0;i<l2;i++){
@@ -16,13 +16,13 @@ int main_bench(){
                 }
             }
             if(count==l1){
-            printf("%d",mark);
+            my_printf("%d",mark);
             break;           
             }
               
         }
      
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

@@ -10,7 +10,7 @@ int main_bench()
 	{
 		if (*i>='0' && *i<='9')
 		{
-			printf("%c",*i);
+			my_printf("%c",*i);
 		}
 		else
 		{
@@ -19,7 +19,7 @@ int main_bench()
 				i++;
 			}
 			i--;
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

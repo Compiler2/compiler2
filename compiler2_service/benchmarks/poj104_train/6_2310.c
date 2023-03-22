@@ -3,13 +3,13 @@
 int main_bench(){
     int k,k1,m,n,i,j,answer;
     int sz[102][102];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
 for(k1=1;k1<=k;k1++){
 	answer=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
     for(i=1;i<=m;i++){
                        for(j=1;j<=n;j++){
-                                          scanf("%d",&sz[i][j]);
+                                          my_scanf("%d",&sz[i][j]);
                        }
     }
     if(m==1&&n==1){
@@ -33,7 +33,7 @@ for(k1=1;k1<=k;k1++){
                       answer=answer+sz[i][1]+sz[i][n];
         }
     }
-    printf("%d\n",answer);
+    my_printf("%d\n",answer);
 }
  return 0;
 }

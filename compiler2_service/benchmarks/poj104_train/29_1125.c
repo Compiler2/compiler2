@@ -4,9 +4,9 @@ int main_bench()
 {
 	int i,j,k,n[1000],m,fz[1000],fm[1000];
 	double sum[1000],fs;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(j=0;j<m;j++){
-		scanf("%d",&n[j]);
+		my_scanf("%d",&n[j]);
 	}
 	for(j=0;j<m;j++){
 	    fz[0]=2;
@@ -28,7 +28,7 @@ int main_bench()
 		}
 	}
 	for(j=0;j<m;j++){
-		 printf("%.3lf\n",sum[j]);
+		 my_printf("%.3lf\n",sum[j]);
 	}
 	return 0;
 }

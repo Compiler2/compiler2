@@ -35,8 +35,8 @@ int main_bench()
 
 	for(i=0;i<k;i++)
 	{
-		printf("%d,", num[i]);
+		my_printf("%d,", num[i]);
 	}
-	printf("%d",num[k]);
+	my_printf("%d",num[k]);
 	return 0;
 }

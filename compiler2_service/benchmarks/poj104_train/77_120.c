@@ -2,7 +2,7 @@
 
 int main_bench(){
 	char b[100]={0};
-	scanf("%s",b);
+	my_scanf("%s",b);
 	char nan=b[0];
 	int N,n;
 	N=strlen(b);
@@ -21,7 +21,7 @@ int main_bench(){
 			}
 			b[i]=0;
 			b[k]=0;
-			printf("%d %d\n",k,i);
+			my_printf("%d %d\n",k,i);
 			break;
 		}
 	}

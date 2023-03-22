@@ -4,10 +4,10 @@ int main_bench()
 {
 	int m,n,i,j,c[100];
 	float a[100],b[100],sum=0.000;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		c[i]=n;
 	}
 	for(i=0;i<m;i++)
@@ -27,7 +27,7 @@ int main_bench()
 			}
 			sum=sum+a[j]/b[j];
 		}
-		printf("%.3f\n",sum);
+		my_printf("%.3f\n",sum);
 	}
 	return 0;
 }

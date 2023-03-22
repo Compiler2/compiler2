@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,m,j,b,k;
 	char c1[50],c2[50];
-	scanf("%s %s",c2,c1);
+	my_scanf("%s %s",c2,c1);
 	for(i=0;c1[i]!='\0';i++)
 	{
 		k=i;
@@ -21,6 +21,6 @@ int main_bench()
 		if(m==1)break;
 	}
 	b=k-j;
-	printf("%d",b);
+	my_printf("%d",b);
 	return 0;
 }

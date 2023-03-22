@@ -12,12 +12,12 @@ int main_bench()
                              if((*(p+i+1))=='\0')
                              {
                                                  j=(*(p+i))+(*(p+0));
-                                                 printf("%c",j);
+                                                 my_printf("%c",j);
                              }
                              else
                              {
                                                  j=(*(p+i))+(*(p+i+1));
-                                                 printf("%c",j);
+                                                 my_printf("%c",j);
                              }
     }
     

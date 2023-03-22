@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,n,i,u;
 	double add,each1[100],each2[100];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		each1[0]=2;
 		each1[1]=3;
 		each2[0]=1;
@@ -17,9 +17,9 @@ int main_bench(){
 			add+=1.0*each1[u]/each2[u];
 		}
 		if(n==1){
-			printf("2.000\n");
+			my_printf("2.000\n");
 		}else{
-			printf("%.3lf\n",add);
+			my_printf("%.3lf\n",add);
 		}
 	}
 	return 0;

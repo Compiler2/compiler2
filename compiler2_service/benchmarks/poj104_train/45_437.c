@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[50],w[50],*p,*a,*b,*posa,*posb;
-	scanf("%s %s",s,w);
+	my_scanf("%s %s",s,w);
 	a=posa=w;
 	b=posb=s;
 	for(;*a!=0;a++){
@@ -17,6 +17,6 @@ int main_bench()
 		b=posb;
 	}
 
-	printf("%d",p-w);
+	my_printf("%d",p-w);
 	return 0;
 }

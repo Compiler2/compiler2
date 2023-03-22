@@ -24,15 +24,15 @@ int main_bench()
 	{
 		if(s[i]>a[i])
 		{
-	       printf(">"); break;
+	       my_printf(">"); break;
 		}
 	         if(s[i]<a[i])
 			 {
-	           printf("<");break;
+	           my_printf("<");break;
 			 }
 	          if(s[i]==a[i]&&la==lb&&i==la)
 	           
-				  printf("=\n");
+				  my_printf("=\n");
 			  if(i==la)break;
 	}
 	

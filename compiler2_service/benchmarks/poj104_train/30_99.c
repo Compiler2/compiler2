@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,temp=0,sum=0,ans=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		temp=i*i;
@@ -13,6 +13,6 @@ int main_bench()
 		if(i%7==0||i/10==7||i%10==7)
 			ans+=i*i;
 	sum=sum-ans;
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

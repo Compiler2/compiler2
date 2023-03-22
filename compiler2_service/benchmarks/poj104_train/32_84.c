@@ -4,7 +4,7 @@ void calculate(int);
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		calculate(n-i==1?0:1);
 	return 0;
@@ -14,8 +14,8 @@ void calculate(int isblank)
 	char large[101],small[101],dif[101];
 	int large_len,small_len,digit_L,digit_S,digit_dif;
 	char *p_L,*p_S,*p_dif;
-	scanf("%s",large);
-	scanf("%s",small);
+	my_scanf("%s",large);
+	my_scanf("%s",small);
 	large_len=strlen(large);
 	p_L=large+large_len-1;
 	small_len=strlen(small);
@@ -54,7 +54,7 @@ void calculate(int isblank)
 	if(*p_dif)
 		puts(p_dif);
 	else
-		printf("0\n");
+		my_printf("0\n");
 	if(isblank)
 		gets(dif);
 }

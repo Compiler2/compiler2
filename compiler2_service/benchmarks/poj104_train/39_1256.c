@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i=1,a,b,c,x,y=-1,sum=0;
 	char N[21],A[21],d,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	do 
 	{
-		scanf("%s %d %d %c %c %d",N,&a,&b,&d,&e,&c);
+		my_scanf("%s %d %d %c %c %d",N,&a,&b,&d,&e,&c);
                   x=0;
 		if(a>80&&c>=1)
 			x=x+8000;
@@ -28,8 +28,8 @@ int main_bench()
 		i++;
 	}
 	while(i<=n);
-    printf("%s\n",A);
-    printf("%d\n",y);
-	printf("%d\n",sum);
+    my_printf("%s\n",A);
+    my_printf("%d\n",y);
+	my_printf("%d\n",sum);
 	return 0;
 }

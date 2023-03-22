@@ -9,15 +9,15 @@ int main_bench()
 	j=0;
 	k=0;
 	n=0;
-	scanf("%f",&v);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%f",&v);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;a[i]!='\0';i++)
 	{
 		j=j+1;
 		if((a[i]!='A')&&(a[i]!='T')&&(a[i]!='C')&&(a[i]!='G'))
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
@@ -26,13 +26,13 @@ int main_bench()
 		k=k+1;
 		if((b[i]!='A')&&(b[i]!='T')&&(b[i]!='C')&&(b[i]!='G'))
 		{
-			printf("error");
+			my_printf("error");
 			return 0;
 		}
 	}
 	if(j!=k)
 	{
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	for(i=0;a[i]!='\0';i++)
@@ -44,11 +44,11 @@ int main_bench()
 	}
 	if(v*j<n)
 	{
-		printf("yes");
+		my_printf("yes");
 	}
 	else
 	{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

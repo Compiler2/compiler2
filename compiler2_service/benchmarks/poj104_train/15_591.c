@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a[100][100],i,j,n,q,w,e,r,C,K,T;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
       for(i=0,j=0;j<n,i<n;j++,i++)
 		{if(a[i][j]==0)
 		break;}
@@ -23,6 +23,6 @@ int main_bench()
 	  C=e-w;
 	  K=r-q;
 	  T=(C-2)*(K-2);
-	  printf("%d\n",T);
+	  my_printf("%d\n",T);
 	  return 0;
 }

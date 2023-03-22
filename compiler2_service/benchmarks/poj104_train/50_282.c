@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int day,month;
-	scanf("%d",&day);day+=12;
+	my_scanf("%d",&day);day+=12;
 	for(month=1;month<=12;month++)
 	{
 		switch(month-1)
@@ -19,7 +19,7 @@ int main_bench()
 	    case 0:break;
 	    default: day+=30;break;
 		}
-		if(day%7==5) printf("%d\n",month);
+		if(day%7==5) my_printf("%d\n",month);
 	}
 	return 0;
 }

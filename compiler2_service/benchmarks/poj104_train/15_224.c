@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n, i, x0, y0, x1, y1;
 	int pixel;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n*n; i++)
 	{
-		scanf("%d", &pixel);
+		my_scanf("%d", &pixel);
 		if (pixel == 0)
 		{
 			x0 = i/n;
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	for (i=i+1; i<n*n; i++)
 	{
-		scanf("%d", &pixel);
+		my_scanf("%d", &pixel);
 		if (pixel == 0)
 		{
 			x1 = i/n;
@@ -27,7 +27,7 @@ int main_bench()
 
 	}
 
-	printf("%d\n", (x1-x0-1)*(y1-y0-1));
+	my_printf("%d\n", (x1-x0-1)*(y1-y0-1));
 
 	return 0;
 }

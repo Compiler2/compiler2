@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,j,s=0;
 	char w1[50],w2[50],*p1,*p2;
-	scanf("%s%s",&w1,&w2);
+	my_scanf("%s%s",&w1,&w2);
 	p1=w1;
 	p2=w2;
 	for(j=0;;j++)
@@ -21,12 +21,12 @@ int main_bench()
 		}
 		if(s==1)
 		{
-			printf("%d",j);
+			my_printf("%d",j);
 			break;
 		}
     if(*(p2+j)=='\0')
 	{
-		printf("0");
+		my_printf("0");
 		break;
 	}
 	}

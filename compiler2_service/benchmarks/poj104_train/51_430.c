@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,j,len,c[500]={0},max,zhi;
 	char a[501],b[500][5];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(a);
 	len=strlen(a);
 	for(i=0;i<=(len-n);i++)
@@ -34,14 +34,14 @@ int main_bench()
 			max=i;
 		}
 	}
-	if(zhi==1) printf("NO");
+	if(zhi==1) my_printf("NO");
 	else
 	{
-		printf("%d\n",zhi);
+		my_printf("%d\n",zhi);
 		for(i=0;i<=(len-n);i++)
 		{
 			if(c[i]==zhi)
-				printf("%s\n",b[i]);
+				my_printf("%s\n",b[i]);
 		}
 	}
 	return 0;

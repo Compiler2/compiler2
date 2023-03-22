@@ -44,7 +44,7 @@ int main_bench()
 	n=series(a);
 	sec=find_second(a,n);
 	if(sec)
-	printf("%d\n",sec);
+	my_printf("%d\n",sec);
 	else
-		printf("No\n");
+		my_printf("No\n");
 }

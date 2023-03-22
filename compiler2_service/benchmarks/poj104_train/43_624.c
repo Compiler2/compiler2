@@ -21,9 +21,9 @@ int main_bench()
 
 
 	
-   scanf("%d",&m); y=m/2;
+   my_scanf("%d",&m); y=m/2;
    for(i=3;i<=y;i+=2)
-   if (!(a[i])&&(!a[m-i])) printf("%d %d\n",i,m-i);
+   if (!(a[i])&&(!a[m-i])) my_printf("%d %d\n",i,m-i);
    
   
  

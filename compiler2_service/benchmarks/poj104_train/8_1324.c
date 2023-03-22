@@ -5,15 +5,15 @@ int main_bench()
     int a[1000],b[1000],c[1000];
     int i,n1,n2;
     void shubingpai(int x[],int y[],int z[],int m,int n);
-    scanf("%d%d",&n1,&n2);
+    my_scanf("%d%d",&n1,&n2);
     for(i=0;i<n1;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<n2;i++)
-    scanf("%d",&b[i]);
+    my_scanf("%d",&b[i]);
     shubingpai(a,b,c,n1,n2);
     for(i=0;i<(n1+n2-1);i++)
-    printf("%d ",c[i]);
-    printf("%d",c[n1+n2-1]);
+    my_printf("%d ",c[i]);
+    my_printf("%d",c[n1+n2-1]);
     }
 void shubingpai(int x[],int y[],int z[],int m,int n)
 {

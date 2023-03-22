@@ -29,15 +29,15 @@ int main_bench(){
 		}
 	}
 	if(s!=0){
-		printf("%s",zfc);
+		my_printf("%s",zfc);
 	}
 	else if(s==0){
 		for(i=0;i<e;i++){
-			printf("%c",zfc[i]);
+			my_printf("%c",zfc[i]);
 		}
-		printf("%s",tihuan);
+		my_printf("%s",tihuan);
 		for(i=e+l;i<m;i++){
-			printf("%c",zfc[i]);
+			my_printf("%c",zfc[i]);
 		}
 	}
 	return 0;

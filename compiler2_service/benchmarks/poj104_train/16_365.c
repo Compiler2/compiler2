@@ -4,15 +4,15 @@
 int main_bench()
 {
 	int n,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==0)
-             printf("0");
+             my_printf("0");
          else 
          while(n)
 	{
 		a=n%10;
 		n=(n-a)/10;
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {	int cancer[100][100];
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-			scanf("%d",&cancer[i][j]);
+			my_scanf("%d",&cancer[i][j]);
 		}
 	}
 	int a,b,c,d,m,x;
@@ -24,6 +24,6 @@ int main_bench()
 	}
 	int e;
 	e=(c-a-1)*(d-b-1);
-	printf("%d\n",e);
+	my_printf("%d\n",e);
 	return 0;
 }

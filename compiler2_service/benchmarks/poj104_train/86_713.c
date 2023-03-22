@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int i,j,k,n,m,a[100],result[100],sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0) result[i-1]=60;
 		else if (m!=0)
 		{
 			for(j=1;j<=m;j++)
 			{
-				scanf("%d",&a[j-1]);
+				my_scanf("%d",&a[j-1]);
 			}
 			
 			for(k=m;k>=1;k--)
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for(i=1;i<=n;i++)
 	{
-		printf("%d\n",result[i-1]);
+		my_printf("%d\n",result[i-1]);
 	}
 	return 0;
 }

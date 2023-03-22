@@ -14,8 +14,8 @@ int main_bench()
 {
 	char a[3000]={'\0'},b[3000]={'\0'};
 	int ma[52]={0},mb[52]={0},i,l=0;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	for(i=0;i<26;i++)
 	{
 		ma[i]=sta(a,i+65);
@@ -24,13 +24,13 @@ int main_bench()
 		mb[i+26]=sta(b,i+97);
 		if(ma[i]!=mb[i]||ma[i+26]!=mb[i+26])
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 			break;
 		}
 		else
 			l++;
 	}
 	if(l==26)
-		printf("YES\n");
+		my_printf("YES\n");
 	return 0;
 }

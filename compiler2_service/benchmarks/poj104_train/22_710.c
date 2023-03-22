@@ -6,19 +6,19 @@ int main_bench()
 	int a[300];
 	char c;
 	int i,n,max,ma;
-	scanf("%d",&a[0]);
-	scanf("%c",&c);
+	my_scanf("%d",&a[0]);
+	my_scanf("%c",&c);
 	i=1;
 	while(c==',')
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c);
 		i++;
 	}
 	n=i;
 	i=1;
 	max=a[0];
-	if(n==1) printf("No");
+	if(n==1) my_printf("No");
 	else
 	{
 	
@@ -37,8 +37,8 @@ int main_bench()
 			if((ma<a[i])&&(a[i]!=max)) ma=a[i];
 		    i++;
 	    }
-	    if((max==ma)||(ma==0)) printf("No");
-	    else printf("%d",ma);
+	    if((max==ma)||(ma==0)) my_printf("No");
+	    else my_printf("%d",ma);
 	}
 
 	return 0;

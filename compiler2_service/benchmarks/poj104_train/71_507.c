@@ -63,15 +63,15 @@ int f(int n,int a,int b)
 int main_bench()
 {
 	int n,m,a,b,y,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d %d %d",&m,&a,&b);
+		my_scanf("%d %d %d",&m,&a,&b);
 		y=f(m,a,b);
 		if (y==1)
-			printf("YES\n");
+			my_printf("YES\n");
 		if(y==0)
-             printf("NO\n");
+             my_printf("NO\n");
 	}
 	return 0;
 }

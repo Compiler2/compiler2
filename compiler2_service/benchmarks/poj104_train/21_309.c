@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[300],b[300],i,s=0,k=0,j,t;
 	double x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,12 +25,12 @@ int main_bench()
 			k++;
 		}
 	if(k==1)
-		printf("%d",b[0]);
+		my_printf("%d",b[0]);
 	else if(k==2)
 	{
 		if(b[0]>b[1])
-			printf("%d,%d",b[1],b[0]);
-		else printf("%d,%d",b[0],b[1]);
+			my_printf("%d,%d",b[1],b[0]);
+		else my_printf("%d,%d",b[0],b[1]);
 	}
 	else
 	{
@@ -42,8 +42,8 @@ int main_bench()
 					b[i]=b[i+1];
 					b[i+1]=t;
 				}
-		printf("%d",b[0]);
+		my_printf("%d",b[0]);
 		for(i=1;i<k;i++)
-			printf(",%d",b[i]);
+			my_printf(",%d",b[i]);
 	}
 }

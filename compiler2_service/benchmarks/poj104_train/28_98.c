@@ -16,8 +16,8 @@ int main_bench()
 		{
 			if(flag==1) 
 			{
-				if(j!=0) printf(",");
-				printf("%d",n);
+				if(j!=0) my_printf(",");
+				my_printf("%d",n);
 				n=0;
 				j++;
 				flag=0;
@@ -26,8 +26,8 @@ int main_bench()
 	}
 	if(n!=0)
 	{
-		if(j!=0) printf(",");
-		printf("%d",n);
+		if(j!=0) my_printf(",");
+		my_printf("%d",n);
 	}
-	printf("\n");
+	my_printf("\n");
 }

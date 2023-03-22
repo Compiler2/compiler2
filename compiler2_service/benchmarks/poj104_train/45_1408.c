@@ -5,7 +5,7 @@ int main_bench(){
 	char zfc[2][51];
 	int i=0,j=0,n=0,m=0,k=0;
 	for(k=0;k<2;k++){
-		scanf("%s",zfc[k]);
+		my_scanf("%s",zfc[k]);
 	}
 	strcpy(s,zfc[0]);
 	strcpy(w,zfc[1]);
@@ -19,6 +19,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }

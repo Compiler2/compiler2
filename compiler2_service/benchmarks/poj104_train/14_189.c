@@ -10,12 +10,12 @@ int main_bench()
            };
            int n,k,t,r;
            int j;
-           scanf("%d",&n);
+           my_scanf("%d",&n);
            int sum[100000];
            struct score s[100000];
            for(int i=1;i<=n;i++)
            {
-                        scanf("%d %d %d",&s[i].ID,&s[i].c,&s[i].m);
+                        my_scanf("%d %d %d",&s[i].ID,&s[i].c,&s[i].m);
                         sum[i]=s[i].c+s[i].m;
                         }
                         for(j=1;j<=3;j++)
@@ -34,7 +34,7 @@ int main_bench()
                                                                          }
                                                                          for(int u=1;u<=3;u++)
                                                                          {
-                                                                                 printf("%d %d\n",s[u].ID,sum[u]);
+                                                                                 my_printf("%d %d\n",s[u].ID,sum[u]);
                                                                                  }
                                                                                  getchar();
                                                                                  getchar();

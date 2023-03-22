@@ -30,9 +30,9 @@ main_bench()
 {
       char s[800],sub[800],r[800];
       int l,i;
-      scanf("%s",s);
-      scanf("%s",sub);
-      scanf("%s",r);
+      my_scanf("%s",s);
+      my_scanf("%s",sub);
+      my_scanf("%s",r);
       l=strlen(s);
       for (i=0;i<l;i++)
       if ((s[i]==sub[0])&&(judge(i,s,sub)>0)) {change(i,s,sub,r); break;}

@@ -5,10 +5,10 @@ int main_bench()
 {
     int i,j,n,m;
     char a[256],*pc;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        scanf("%s",a);
+        my_scanf("%s",a);
         m=strlen(a);
         pc=a; 
         for(j=0;j<=m-1;j++) 

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a[6],b,c,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     b=(n/10)-((n/100)*10);
 	c=n%10;
 	if(n/100!=0) a[0]=n/100;
@@ -22,7 +22,7 @@ int main_bench()
 	else a[4]=0;
 	for(i=0;i<6;i++)
 	{
-		printf("%d\n",a[i]);
+		my_printf("%d\n",a[i]);
 	}
 	return 0;
 }

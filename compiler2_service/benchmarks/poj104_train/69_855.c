@@ -5,7 +5,7 @@ int main_bench()
 	int i,la,lb,q;
 	int p[255];
 	char a[255],b[255],c[255];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	la=strlen(a);lb=strlen(b);
 	if(la<lb)
 	{
@@ -27,6 +27,6 @@ int main_bench()
 	for(i=q;i<=la;i++)
 		c[i-q]=(char)(p[i]+48);
 	c[la+1-q]='\0';
-	printf("%s\n",c);
+	my_printf("%s\n",c);
 	return 0;
 }

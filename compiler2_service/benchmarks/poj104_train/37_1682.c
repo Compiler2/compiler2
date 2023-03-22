@@ -4,10 +4,10 @@ main_bench()
 {
 int t,i,u,k,m,y,x,min,a[100002];
 char str[100002];
-scanf("%d",&t);
+my_scanf("%d",&t);
 for(i=0;i<t;i++)
 {
-                scanf("%s",&str);
+                my_scanf("%s",&str);
                 u=strlen(str);
             for(k=0;k<u;k++)
               { a[k]=0;
@@ -24,9 +24,9 @@ for(i=0;i<t;i++)
                 y=x;}
             }
             if (min==1)
-            printf("%c\n",str[y]);
+            my_printf("%c\n",str[y]);
             if (min>1)
-            printf("no\n");
+            my_printf("no\n");
             
 }
 }

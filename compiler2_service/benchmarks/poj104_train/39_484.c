@@ -12,16 +12,16 @@ int main_bench()
 	};
 	struct money * p;
 	int n,m;int * pp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(struct money *)malloc(n*sizeof(struct money));
 	pp=(int *)malloc(n*sizeof(int));
 	for(m=0;m<n;m++)
 	{
 		pp[m]=0;
-		scanf("%s",p[m].name);
-		scanf("%d %d",&p[m].score1,&p[m].score2);
-		scanf("%s %s",&p[m].a,&p[m].b);
-		scanf("%d",&p[m].paper);
+		my_scanf("%s",p[m].name);
+		my_scanf("%d %d",&p[m].score1,&p[m].score2);
+		my_scanf("%s %s",&p[m].a,&p[m].b);
+		my_scanf("%d",&p[m].paper);
 		if(p[m].score1>80&&p[m].paper>0)
 			pp[m]=pp[m]+8000;
 		if(p[m].score1>85&&p[m].score2>80)
@@ -48,7 +48,7 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(p[i].all==pp[n-1])
 {
-			printf("%s\n%d\n%d\n",p[i].name,p[i].all,q);break;
+			my_printf("%s\n%d\n%d\n",p[i].name,p[i].all,q);break;
 }
 
 	free(p);

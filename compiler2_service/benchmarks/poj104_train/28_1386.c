@@ -24,8 +24,8 @@ int main_bench(){
       len[c]=a+1;
      e++; 
      for(d=0;d<e-1;d++){
-     printf("%d,",len[d]);                 
+     my_printf("%d,",len[d]);                 
     }
-    printf("%d",len[e-1]);
+    my_printf("%d",len[e-1]);
     return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int m,n,i,i1,temp;
 	int a[100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	n=n%m;
 	for(i=0;i<m;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	if (n==0||n==m)goto a;
 	else if(n!=0){
@@ -19,7 +19,7 @@ int main_bench()
 		}
 	}
 	}
-a:	for(i=0;i<m-1;i++)printf("%d ",a[i]);
-	printf("%d",a[m-1]);
+a:	for(i=0;i<m-1;i++)my_printf("%d ",a[i]);
+	my_printf("%d",a[m-1]);
 	return 0;
 }

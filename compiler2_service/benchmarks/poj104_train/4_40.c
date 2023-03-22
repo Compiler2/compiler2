@@ -3,12 +3,12 @@
 main_bench()
 {
   int row,col,n,i,j,k,(*p)[100],a[100][100];
-  scanf("%d %d",&row,&col);
+  my_scanf("%d %d",&row,&col);
   p=a;
   for(i=0;i<row;i++)
   {
     for(j=0;j<col;j++)
-    { scanf("%d",*(p+i)+j);
+    { my_scanf("%d",*(p+i)+j);
     }
   }
   p=&a[0][0];
@@ -18,7 +18,7 @@ main_bench()
     {
 	if(i<row&&k-i<col)
 	{
-	  printf("%d\n",*(*(p+i)+(k-i)));
+	  my_printf("%d\n",*(*(p+i)+(k-i)));
 	}
     }
   }

@@ -7,7 +7,7 @@ int main_bench()
 	int bei[20]={0},j,k,chu,last;
 	for(j=0;j<20;j++){
 		for(k=0;k<16;k++){
-			scanf("%d",&a[j][k]);
+			my_scanf("%d",&a[j][k]);
 			if(a[j][k]==0||a[j][k]==-1)
 				break;
 		}
@@ -28,7 +28,7 @@ int main_bench()
 			break;
 	}
 	for(j=0;j<last;j++){
-		printf("%d\n",bei[j]);
+		my_printf("%d\n",bei[j]);
 	}
 	return 0;
 }

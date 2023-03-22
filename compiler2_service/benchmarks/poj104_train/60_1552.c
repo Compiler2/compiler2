@@ -3,8 +3,8 @@
 int main_bench()
 {
     int n,i,a,flag;
-    scanf("%d",&n);
-    if(n<5) printf("empty");
+    my_scanf("%d",&n);
+    if(n<5) my_printf("empty");
     else
     {for(a=3;a<=n-2;a++)
     {
@@ -20,7 +20,7 @@ int main_bench()
                 if((a+2)%i==0) flag=1;
             }
         }
-        if(flag==0) printf("%d %d\n",a,a+2);
+        if(flag==0) my_printf("%d %d\n",a,a+2);
     }
     }
 }

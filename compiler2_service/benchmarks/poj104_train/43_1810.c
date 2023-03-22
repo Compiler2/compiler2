@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,i,j,k,l;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (i=3;i<=(m/2);i++)
 	{
 		for (j=2;j<=i;j++)
@@ -20,7 +20,7 @@ int main_bench()
 		{
 			if(m-i==k)
 			{
-				printf("%d",i);printf(" ");printf("%d\n",(m-i));
+				my_printf("%d",i);my_printf(" ");my_printf("%d\n",(m-i));
 			}
 		}
 	}

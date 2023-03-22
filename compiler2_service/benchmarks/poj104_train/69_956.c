@@ -5,8 +5,8 @@ main_bench()
 {
 	int i,j,k,s,t=0,q=0; 
 	char x[250],y[250],z[251]; 
-	scanf("%s",&x);
-	scanf("%s",&y);
+	my_scanf("%s",&x);
+	my_scanf("%s",&y);
 	
 	for(i=0;;i++)
 	if(x[i]==0)break; 
@@ -41,9 +41,9 @@ main_bench()
 	if(z[k]!=48||q!=0)
 	{
 		q++;
-		printf("%c",z[k]);
+		my_printf("%c",z[k]);
 		} 
-	if(q==0)printf("0"); 
+	if(q==0)my_printf("0"); 
 
 	return 0; 
 	} 

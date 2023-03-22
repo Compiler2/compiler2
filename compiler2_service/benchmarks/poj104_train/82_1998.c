@@ -3,9 +3,9 @@
 int ss[10000],sz[10000],xiaoshi[10000];
 int main_bench(){
 int i,n,hour=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%d %d\n",&ss[i],&sz[i]);
+my_scanf("%d %d\n",&ss[i],&sz[i]);
 }
 for(i=0;i<n;i++){
 if((ss[i])>=90&&(ss[i])<=140&&(sz[i])>=60&&(sz[i])<=90){
@@ -25,7 +25,7 @@ if((ss[i])>=90&&(ss[i])<=140&&(sz[i])>=60&&(sz[i])<=90){
        xiaoshi[i]=e;               }
                               }
                           }
-    printf("%d",xiaoshi[n-1]);
+    my_printf("%d",xiaoshi[n-1]);
     return 0;
 }
 

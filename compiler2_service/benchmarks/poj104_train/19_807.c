@@ -16,16 +16,16 @@ int main_bench()
 	    sscanf(s,"%s",p);
 		m=strlen(p);
 		if(strcmp(p2,p)==0)
-		{printf("%s",p3);}
-		else {printf("%s",p);}
+		{my_printf("%s",p3);}
+		else {my_printf("%s",p);}
         s=s+m+1;
 	for(i=n-m-1;i>=0;i=i-m-1)
 	{
 		sscanf(s,"%s",p);
 		m=strlen(p);
 		if(strcmp(p2,p)==0)
-		{printf(" %s",p3);}
-		else {printf(" %s",p);}
+		{my_printf(" %s",p3);}
+		else {my_printf(" %s",p);}
         s=s+m+1;
 	}
 }

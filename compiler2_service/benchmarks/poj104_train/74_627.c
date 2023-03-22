@@ -5,7 +5,7 @@ int main_bench()
 	int m, n, c[100000]={0};
 	int i, e, j, t, flag=0;
 	char a[100000];
-	scanf("%d %d", &m, &n);
+	my_scanf("%d %d", &m, &n);
     for(i=m;i<=n;i++){
 		for(e=2;e<i;e++){
 			if(i%e==0){
@@ -26,16 +26,16 @@ int main_bench()
 	}
 	for(i=m;i<=n;i++){
 		if(c[i]==0&&flag==0){
-			printf("%d", i);
+			my_printf("%d", i);
 			flag=1;
 		}
 		else if(c[i]==0&&flag==1){
-			printf(",%d", i);
+			my_printf(",%d", i);
 		}
 	}
 	if(flag==0){
-		printf("no");
+		my_printf("no");
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

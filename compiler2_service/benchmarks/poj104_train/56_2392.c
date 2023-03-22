@@ -4,7 +4,7 @@ int main_bench()
 {
   char a,b,c,d,e;
   a=b=c=d=e=0;
-  scanf("%c%c%c%c%c",&a,&b,&c,&d,&e);
+  my_scanf("%c%c%c%c%c",&a,&b,&c,&d,&e);
   if(e!='\n'&&e)
     putchar(e);
   if(d!='\n'&&d)

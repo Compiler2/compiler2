@@ -3,8 +3,8 @@
 main_bench()
 {
 	int year1,year2,m1,m2,d1,d2,days=0,total1=0,total2=0,i;
-	scanf("%d %d %d",&year1,&m1,&d1);
-	scanf("%d %d %d",&year2,&m2,&d2);
+	my_scanf("%d %d %d",&year1,&m1,&d1);
+	my_scanf("%d %d %d",&year2,&m2,&d2);
 	for(i=1;i<m1;i++)
 	{
 		if(i==1 || i==3 || i==5 || i==7 || i==8 || i==10 || i==12)
@@ -44,6 +44,6 @@ main_bench()
 	if(total1<=total2)
 		days=days+total2-total1;
 	else days=days-(total1-total2);
-	printf("%d",days);
+	my_printf("%d",days);
 }
 

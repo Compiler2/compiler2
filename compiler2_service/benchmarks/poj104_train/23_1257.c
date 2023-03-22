@@ -15,9 +15,9 @@ int main_bench()
 	{
 		if(*p=='\0')
 		{
-			printf("%s ",p+1);
+			my_printf("%s ",p+1);
 		}
 		p--;
 	}
-	printf("%s\n",p);
+	my_printf("%s\n",p);
 }

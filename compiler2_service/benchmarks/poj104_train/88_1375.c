@@ -12,9 +12,9 @@ int main_bench()
     {
              if(a[i]>='0'&&a[i]<='9')
              {
-                 printf("%c", a[i]);
+                 my_printf("%c", a[i]);
                  if(a[i+1]<'0'||a[i+1]>'9')
-                 printf("\n");
+                 my_printf("\n");
              }
     } 
     

@@ -11,8 +11,8 @@ int main_bench()
 {
 	int i,j,n,l,k=1,nu[800]={0},m=1,max=0;
 	char x[800],p[800][7],tmp[7];
-	scanf("%d",&n);
-    scanf("%s",x);
+	my_scanf("%d",&n);
+    my_scanf("%s",x);
 	l=strlen(x);
 	for(i=0;i<n;i++)
 		p[0][i]=x[i];
@@ -28,10 +28,10 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 		if(nu[i]>max)max=nu[i];
-		if(max==1)printf("NO");
+		if(max==1)my_printf("NO");
 		else
-		{printf("%d\n",max);
+		{my_printf("%d\n",max);
 	for(i=0;i<k;i++)
-		if(nu[i]==max)printf("%s\n",p[i]);
+		if(nu[i]==max)my_printf("%s\n",p[i]);
 		}
 }

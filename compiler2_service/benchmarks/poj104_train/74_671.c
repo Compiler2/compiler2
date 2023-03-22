@@ -5,17 +5,17 @@ int hw(int );
 main_bench()
 {
 	int a,b,i,m[100],j=0;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	for(i=a;i<=b;i++){
 		if(ss(i)==1&&hw(i)==i){
 			m[j]=i;
 			j++;}}
 		if(j==0)
-			printf("no");
+			my_printf("no");
         else {
 			for(i=0;i<j-1;i++)
-				printf("%d,",m[i]);
-			printf("%d",m[j-1]);}
+				my_printf("%d,",m[i]);
+			my_printf("%d",m[j-1]);}
 return 0;
 		}
 

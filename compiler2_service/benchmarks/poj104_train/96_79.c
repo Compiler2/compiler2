@@ -3,7 +3,7 @@
 main_bench()
 {
       char a[2000]; int d,c[2000],n,b[2000],f=0;
-   scanf("%s",a);
+   my_scanf("%s",a);
 int i=0; while (a[i]!='\0') {c[i]=a[i]-'0'; i++;}
 n=i;
   d=c[0];
@@ -22,8 +22,8 @@ n=i;
   for(int i=f;i<n;i++,j++)       
   a[j]=b[i]+'0';a[j]=0;if (f==0) {a[0]='0'; a[1]=0;}
 
-     printf("%s",a);
-       printf("\n");
-      printf("%d",d);
+     my_printf("%s",a);
+       my_printf("\n");
+      my_printf("%d",d);
 }
 

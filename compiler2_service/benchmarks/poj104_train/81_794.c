@@ -6,12 +6,12 @@ int b[5];
 int i,k,n,m;
 for(i=0;i<5;i++){
 for(k=0;k<5;k++){
-scanf("%d",&(a[i][k]));
+my_scanf("%d",&(a[i][k]));
 }
 }
-scanf("%d%d",&n,&m);
+my_scanf("%d%d",&n,&m);
 if(n<0||n>4||m<0||m>4){
-printf("error");
+my_printf("error");
 }
 if(n>=0&&n<=4&&m>=0&&m<=4){
 for(i=0;i<5;i++){
@@ -20,11 +20,11 @@ a[n][i]=a[m][i];
 a[m][i]=b[i];
 }
 for(i=0;i<5;i++){
-printf("%d",a[i][0]);
+my_printf("%d",a[i][0]);
 for(k=1;k<5;k++){
-printf(" %d",a[i][k]);
+my_printf(" %d",a[i][k]);
 if(k==4){
-printf("\n");
+my_printf("\n");
 }
 }
 }

@@ -5,9 +5,9 @@ int main_bench()
     char string[256];
     char substring[256];
     char replacement[256];
-    scanf("%s",string);
-    scanf("%s",substring);
-    scanf("%s",replacement);
+    my_scanf("%s",string);
+    my_scanf("%s",substring);
+    my_scanf("%s",replacement);
     int lenth=0;
     int judge=0;
     for(int i=0;substring[i]!='\0';i++)
@@ -30,12 +30,12 @@ int main_bench()
             {
                 for(int j=0;j<i;j++)
                 {    
-                    printf("%c",string[j]);
+                    my_printf("%c",string[j]);
                 }
-                printf("%s",replacement);
+                my_printf("%s",replacement);
                 for(int j=i+lenth;string[j]!='\0';j++)
                 {
-                    printf("%c",string[j]);    
+                    my_printf("%c",string[j]);    
                 }
                 judge=1;      
                 break;      
@@ -44,7 +44,7 @@ int main_bench()
     }
     if(judge==0)
     {
-        printf("%s",string);            
+        my_printf("%s",string);            
     }
     return 0;
 } 

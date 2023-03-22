@@ -7,9 +7,9 @@ int main_bench(){
 	int i,m,n;
 	int x=1,y=0;
 	double e;
-	scanf("%lf",&z);
-	scanf("%s",sz1);
-	scanf("%s",sz2);
+	my_scanf("%lf",&z);
+	my_scanf("%s",sz1);
+	my_scanf("%s",sz2);
 	m=strlen(sz1);
 	n=strlen(sz2);
 	for(i=0;sz1[i]!='\0';i++){
@@ -21,7 +21,7 @@ break;
 	}
 }
      if((m!=n)||(x==0)){
-	printf("error");
+	my_printf("error");
 	}else if(m==n&&x==1){
 		for(i=0;sz1[i]!='\0';i++){
 			if(sz1[i]==sz2[i]){
@@ -30,9 +30,9 @@ break;
 		}
 		e=1.0*y/m;
 		if(e>z){
-		printf("yes");
+		my_printf("yes");
 		           }else{
-		printf("no");
+		my_printf("no");
 		                   }
 	                               }
 	return 0;

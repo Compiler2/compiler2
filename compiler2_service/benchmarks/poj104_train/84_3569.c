@@ -3,11 +3,11 @@
 int main_bench()
 {
  int i,j,n,a[100][1],cha[100],x,max1;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {
   for(j=0;j<1;j++)
-   scanf("%d",&a[i][j]);
+   my_scanf("%d",&a[i][j]);
  }
  max1=a[0][0];
  for(i=0;i<n;i++)
@@ -25,5 +25,5 @@ int main_bench()
  {
   if(cha[i]<x&&cha[i]!=0) x=cha[i];
  }
- printf("%d\n%d",max1,max1-x);
+ my_printf("%d\n%d",max1,max1-x);
 }

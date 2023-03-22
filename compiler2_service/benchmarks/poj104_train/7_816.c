@@ -22,12 +22,12 @@ int main_bench()
             }
         if((p)&&(f))
         {
-           printf("%s",b);
+           my_printf("%s",b);
            p=0;
            i+=m-1;
         }
         else
-            printf("%c",str[i]);
+            my_printf("%c",str[i]);
     }
 
     return 0;

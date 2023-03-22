@@ -8,7 +8,7 @@ main_bench()
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
 	{
-		scanf("%d",&a[i][j]);
+		my_scanf("%d",&a[i][j]);
 		b[i][j]=a[i][j];
 		e[i][j]=a[i][j];
 		}
@@ -42,10 +42,10 @@ main_bench()
 	{
 		if(a[i][j]==c[i]&&a[i][j]==d[j])
 		{
-			printf("%d %d %d",i+1,j+1,a[i][j]);
+			my_printf("%d %d %d",i+1,j+1,a[i][j]);
 		    n=n+1;	
 				}
 			}
 	if(n==0)
-	printf("not found");
+	my_printf("not found");
 	}

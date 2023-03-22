@@ -4,9 +4,9 @@ int main_bench(){
 int i,m,n,p=0,c=0,d=0;
 double k,t;
 char a[501],b[501];
-scanf("%lf",&k);
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%lf",&k);
+my_scanf("%s",a);
+my_scanf("%s",b);
 m=strlen(a);
 n=strlen(b);
 if(m==n){
@@ -21,13 +21,13 @@ p++;
 }
 t=1.0*p/n;
 if(c==0&&d==0){
-if(t>k) printf("yes");
-else printf("no");
+if(t>k) my_printf("yes");
+else my_printf("no");
 }else{
-printf("error");
+my_printf("error");
 }
 }else{
-printf("error");
+my_printf("error");
 }
 return 0;
 }

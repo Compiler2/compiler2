@@ -4,10 +4,10 @@ int main_bench()
 {
 	char jianji[1000][256];
 	int n,i,k,m;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 		for(i=0;i<n;i++){
-scanf("%s",&jianji[i]);
+my_scanf("%s",&jianji[i]);
 		}
 		for(i=0;i<n;i++){
 		m=strlen(jianji[i]);
@@ -30,7 +30,7 @@ scanf("%s",&jianji[i]);
 		}
 		}
 				for(i=0;i<n;i++){
-		printf("%s\n",jianji[i]);	
+		my_printf("%s\n",jianji[i]);	
 				}
 
 return 0;

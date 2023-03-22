@@ -14,15 +14,15 @@ int ss(int a)
 main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<5)
-	printf("empty");
+	my_printf("empty");
 	else
 	{
 		for(int i=2;i<=n-2;i++)
 		{
 			if(ss(i)==0 && ss(i+2)==0)
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 		}
 	}
 }

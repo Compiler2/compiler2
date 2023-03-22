@@ -6,17 +6,17 @@ int main_bench()
 	int a[5][5],i,j,n,m;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&a[i][j]);
-	scanf("%d%d",&n,&m);
-	if(swap(a,n,m)==0) printf("error\n");
+			my_scanf("%d",&a[i][j]);
+	my_scanf("%d%d",&n,&m);
+	if(swap(a,n,m)==0) my_printf("error\n");
 	else 
 	{
 		for(i=0;i<5;i++)
 		{
-			printf("%d",a[i][0]);
+			my_printf("%d",a[i][0]);
 			for(j=1;j<5;j++)
-				printf("%2d",a[i][j]);
-			printf("\n");
+				my_printf("%2d",a[i][j]);
+			my_printf("\n");
 		}
 	}
 }

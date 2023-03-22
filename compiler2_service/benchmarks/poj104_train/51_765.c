@@ -6,8 +6,8 @@ main_bench()
 	char a[1000][1000];
 	char c[1000];
 	int n;	
-	scanf("%d",&n);
-	scanf("%s",c);
+	my_scanf("%d",&n);
+	my_scanf("%s",c);
 	int len,p=0,i,j,t=-1;
 	len=strlen(c);	
 	int count[1000][2]={0};
@@ -56,24 +56,24 @@ main_bench()
         }
     }
     if(count[0][0]==1)
-    	printf("NO");
+    	my_printf("NO");
     else
     	{
-    		printf("%d\n",count[0][0]);
+    		my_printf("%d\n",count[0][0]);
     		for(int w=0;w<n;w++)
     		{
-    			printf("%c",a[count[0][1]][w]);
+    			my_printf("%c",a[count[0][1]][w]);
     		}
-    		printf("\n");
+    		my_printf("\n");
     		for(int z=1;z<len-n;z++)
     		{
     			if(count[0][0]==count[z][0])
     			{
     				for(int w=0;w<n;w++)
     				{
-    					printf("%c",a[count[z][1]][w]);
+    					my_printf("%c",a[count[z][1]][w]);
     				}
-    				printf("\n");
+    				my_printf("\n");
     			}
     		}
     	}

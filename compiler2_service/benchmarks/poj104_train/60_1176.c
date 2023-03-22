@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int sushu[2],i,j,k=0,n,flag,fl=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=3;i<=n;i++)
 		{
 		flag=1;
@@ -21,7 +21,7 @@ int main_bench(){
 		{
 			if (sushu[0]+2==sushu[1])
 				{
-				printf("%d %d\n",sushu[0],sushu[1]);
+				my_printf("%d %d\n",sushu[0],sushu[1]);
 				fl=1;
 				}
 			sushu[0]=sushu[1];
@@ -30,6 +30,6 @@ int main_bench(){
 
 		}
 	if (fl==0)
-		printf("empty");
+		my_printf("empty");
 	return 0;
 }

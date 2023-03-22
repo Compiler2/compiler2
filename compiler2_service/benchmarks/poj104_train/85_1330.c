@@ -17,7 +17,7 @@ int main_bench()
         b=A[0];
         if(b<65||(90<b&&b<95)||b==96||(b>122))
         {
-            printf("no\n");
+            my_printf("no\n");
             goto k;
         }else{
         for(j=1;j<m;j++)
@@ -25,11 +25,11 @@ int main_bench()
            a=A[j];
            if((a<48)||(a>57&&a<65)||(90<a&&a<95)||a==96||(a>122))
            {
-               printf("no\n");
+               my_printf("no\n");
                goto k;
            }
         }
-        printf("yes\n");
+        my_printf("yes\n");
     }
  k:   i++;
     }

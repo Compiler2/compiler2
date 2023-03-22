@@ -4,14 +4,14 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     
     int arr[300];
     int arr1[300],arr2[300];
     int i,j;
     
     for (i=0;i<n;i++) {
-        scanf("%d",&arr[i]);
+        my_scanf("%d",&arr[i]);
         arr1[i]=arr[i];
         arr2[i]=i;
         }
@@ -33,9 +33,9 @@ int main_bench()
                                                        
     for (i=0;i<n;i++) {
         if (arr2[i]!=-1) {
-                         printf("%d",arr1[i]);
+                         my_printf("%d",arr1[i]);
                          s--;
-                         if (s>0) printf(",");
+                         if (s>0) my_printf(",");
                          }
                          }
     return 0;

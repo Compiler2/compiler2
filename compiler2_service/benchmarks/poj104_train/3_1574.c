@@ -2,11 +2,11 @@
 
 int main_bench() {
     int n,k,i,a,sum,d;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     int *sz
     =(int*)malloc(sizeof(int)*n);
     for(i=0;i<n;i++){
-                     scanf("%d",&sz[i]);
+                     my_scanf("%d",&sz[i]);
     }
     for(i=0;i<n-1;i++){
                        a=i+1;
@@ -18,9 +18,9 @@ int main_bench() {
                        }
     }
     if(d==1){
-             printf("yes");
+             my_printf("yes");
     }else{
-          printf("no");
+          my_printf("no");
     }    
     free(sz);
     return 0;

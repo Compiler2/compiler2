@@ -12,14 +12,14 @@ int main_bench()
 	}
 	if((len==1)&&(a[0]==8))
 	{
-		printf("0\n");
-		printf("8");
+		my_printf("0\n");
+		my_printf("8");
 		return 0;
 	}
 	if((len==2)&&(a[0]==1)&&(a[1]==2))
 	{
-		printf("0\n");
-		printf("12");
+		my_printf("0\n");
+		my_printf("12");
 		return 0;
 	}
 	if((a[0]==1)&&(a[1]<3))
@@ -37,9 +37,9 @@ int main_bench()
 		}
 		for(b=0;b<=len-3;b++)
 		{
-			printf("%c",x[b]);
+			my_printf("%c",x[b]);
 		}
-	    printf("\n%d",c);
+	    my_printf("\n%d",c);
 	}
 	else
 	{
@@ -65,9 +65,9 @@ int main_bench()
 		}
 		for(b=0;b<=len-2;b++)
 		{
-			printf("%c",x[b]);
+			my_printf("%c",x[b]);
 		}
-	    printf("\n%d",d);
+	    my_printf("\n%d",d);
 	}
 	
 	return 0;

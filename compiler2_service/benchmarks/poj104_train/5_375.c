@@ -4,9 +4,9 @@ int main_bench(){
 	int i,a=0,j,c,b;
 	double n;
 	char sz1[1000],sz2[1000];
-	scanf("%lf",&n);
-	scanf("%s",sz1);
-	scanf("%s",sz2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",sz1);
+	my_scanf("%s",sz2);
 	for(i=0;sz1[i]!='\0';i++){
 		c=i;
 	}
@@ -14,13 +14,13 @@ int main_bench(){
 		b=j;
 	}
 	if(c!=b){
-		printf("error");
+		my_printf("error");
 		return 0;
 	}
 	else {
 		for(i=0;sz1[i]!='\0';i++){
 			if((sz1[i]!='A'&&sz1[i]!='C'&&sz1[i]!='G'&&sz1[i]!='T')||(sz2[i]!='C'&&sz2[i]!='A'&&sz2[i]!='G'&&sz2[i]!='T')){
-				printf("error");return 0;
+				my_printf("error");return 0;
 			}
 		}
 		for(j=0;sz1[j]!='\0';j++){
@@ -30,10 +30,10 @@ int main_bench(){
 		}
 	}
 	if(1.0*a/(c+1)>n){
-		printf("yes");
+		my_printf("yes");
 	}
 	else {
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

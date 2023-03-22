@@ -5,7 +5,7 @@ int main_bench()
 
 {
 	int n,a,b,c,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a=n%3;
 	b=n%5;
 	c=n%7;
@@ -28,28 +28,28 @@ int main_bench()
 	switch(t)
 	{
 	case 1:
-		printf("3 5 7\n");
+		my_printf("3 5 7\n");
 		break;
 	case 2:
-		printf("5 7\n");
+		my_printf("5 7\n");
 		break;
 	case 3:
-		printf("3 7\n");
+		my_printf("3 7\n");
 		break;
 	case 4:
-		printf("3 5\n");
+		my_printf("3 5\n");
 		break;
 	case 5:
-		printf("7\n");
+		my_printf("7\n");
 	    break;
 	case 6:
-		printf("5\n");
+		my_printf("5\n");
 		break;
 	case 7:
-		printf("3\n");
+		my_printf("3\n");
 		break;
 	case 8:
-		printf("n\n");
+		my_printf("n\n");
 	}
 	return 0;
 

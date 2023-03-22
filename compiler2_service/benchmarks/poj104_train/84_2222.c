@@ -7,10 +7,10 @@ int main_bench()
 	int b;
 	int max=0;
 	int smax=0;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%d",&b);
+		my_scanf("%d",&b);
 		if(b>max)
 		{
 			smax=max;
@@ -25,7 +25,7 @@ int main_bench()
 			;
 		}
 	}
-	printf("%d\n",max);
-	printf("%d",smax);
+	my_printf("%d\n",max);
+	my_printf("%d",smax);
 	return 0;
 }

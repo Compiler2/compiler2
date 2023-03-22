@@ -17,10 +17,10 @@ search (int n)
 			 p++; p1=p;
 		 }
 	 }
-     for (p=p3;p<p3+max;p++) printf ("%c",*p);
-	 printf ("\n");
-     for (p=p4;p<p4+min;p++) printf ("%c",*p);
-	 printf ("\n");
+     for (p=p3;p<p3+max;p++) my_printf ("%c",*p);
+	 my_printf ("\n");
+     for (p=p4;p<p4+min;p++) my_printf ("%c",*p);
+	 my_printf ("\n");
 }
 
 int main_bench()

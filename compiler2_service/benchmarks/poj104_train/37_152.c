@@ -4,11 +4,11 @@ int main_bench()
 {
 	int t,i,l,j,m=0;
 	char c[100000],a[26];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for(i=0;i<t;i++)
 	{
 		m=0;
-		scanf("%s",c);
+		my_scanf("%s",c);
 		l=strlen(c);
 		for(j=0;j<26;j++)
 			a[j]=0;
@@ -21,12 +21,12 @@ int main_bench()
 		{
 			if(a[(c[j]-'a')]==1)
 			{
-				printf("%c\n",c[j]);
+				my_printf("%c\n",c[j]);
 				m++;
 				break;
 			}
 		}
 		if(m==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 }

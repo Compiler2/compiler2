@@ -36,17 +36,17 @@ int main_bench()
   {
 	
 	   if(s[i]>q[i])
-	  {printf(">"); 
+	  {my_printf(">"); 
 	   break;
 
 	  }
 	  else if(s[i]<q[i])
-	  {printf("<");	 
+	  {my_printf("<");	 
 	  break;
 	  }
 	  else if(s[i]==q[i]&&s[i]==0)
 	  {
-		  printf("=");
+		  my_printf("=");
 		  break;
 	  }
   }

@@ -8,8 +8,8 @@ main_bench()
      short libc[500];
      
 
-     scanf("%d",&n);
-     scanf("%s",&s);
+     my_scanf("%d",&n);
+     my_scanf("%s",&s);
      for (lens=1;s[lens]!='\0';lens++);lens--;
      top=0;
      for (i=0;i<=499;i++) libc[i]=0;
@@ -53,16 +53,16 @@ main_bench()
      max=0;
      for (i=0;i<=top;i++) 
          if (libc[i]>max) max=libc[i];
-if (max==1) printf("NO");
+if (max==1) my_printf("NO");
 else
 {
-     printf("%d\n",max);
+     my_printf("%d\n",max);
      for (i=0;i<=top;i++)
          if (libc[i]==max)
          {
             for (j=0;j<=n-1;j++)
-                printf("%c",lib[i][j]);
-            printf("\n");
+                my_printf("%c",lib[i][j]);
+            my_printf("\n");
          } 
 }
 }

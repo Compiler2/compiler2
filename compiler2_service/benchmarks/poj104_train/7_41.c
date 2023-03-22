@@ -3,9 +3,9 @@
 int main_bench(){
 	void copy(char a[],char b[],char c[]);
 	char S[100],sub[100],re[100];
-	scanf("%s",S);
-	scanf("%s",sub);
-	scanf("%s",re);
+	my_scanf("%s",S);
+	my_scanf("%s",sub);
+	my_scanf("%s",re);
 	int a,b,c,i,j;
 	a=strlen(S);
 	b=strlen(sub);
@@ -23,13 +23,13 @@ int main_bench(){
 			if(S[i+b-1]==sub[b-1])
 			{   
 			m=i;
-			for(k=0;k<m;k++)printf("%c",S[k]);
-			printf("%s",re);
-			for(k=i+b;k<a;k++)printf("%c",S[k]);
+			for(k=0;k<m;k++)my_printf("%c",S[k]);
+			my_printf("%s",re);
+			for(k=i+b;k<a;k++)my_printf("%c",S[k]);
 			break;
 			}
 		}
-	}  if(i==a)printf("%s",S);
+	}  if(i==a)my_printf("%s",S);
 	
 }
 

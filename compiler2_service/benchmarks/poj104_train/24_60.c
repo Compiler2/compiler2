@@ -9,9 +9,9 @@ int main_bench()
      int i;char line[1000];
      gets(line);
       for(i=longl(line);shifouzimu(line[i]);i++)
-    printf("%c",line[i]);printf("\n");
+    my_printf("%c",line[i]);my_printf("\n");
       for(i=shortl(line);shifouzimu(line[i]);i++)
-  printf("%c",line[i]);
+  my_printf("%c",line[i]);
 }
 int shifouzimu(char c)
 {  

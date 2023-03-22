@@ -19,7 +19,7 @@ int main_bench()
 		{
 			continue;
 		}
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 	return 0;
 }

@@ -11,8 +11,8 @@
  {
      int a1[260],a2[260];
      char a_1[260],a_2[260];
-     scanf("%s",a_1);
-     scanf("%s",a_2);
+     my_scanf("%s",a_1);
+     my_scanf("%s",a_2);
      int n,i;
      for(i=0;i<260;i++)
      {
@@ -51,5 +51,5 @@
            goto t;  
      }
      t:for(i=n;i>=0;i--)
-          printf("%d",a1[i]);
+          my_printf("%d",a1[i]);
  }

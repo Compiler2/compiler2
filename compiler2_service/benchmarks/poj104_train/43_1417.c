@@ -4,7 +4,7 @@ int main_bench()
 {
 
     int a=2,b,m,s;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     s=m/2;
     while(a<=s)
     {
@@ -33,7 +33,7 @@ int main_bench()
         }
         if(y==1)
             if(h==1)
-            printf("%d %d\n",a,b);
+            my_printf("%d %d\n",a,b);
         a++;
     }
 return 0;

@@ -17,19 +17,19 @@ int main_bench()
 		{ 
 			if(s1[i]>s2[i])
 			{
-				printf(">\n");
+				my_printf(">\n");
 			    break;
 			}
 			else
 			{	
-				printf("<\n");
+				my_printf("<\n");
 				break;
 			}
 		}
 
 	}
 	if( s1[i]=='\0')
-		printf("=");
+		my_printf("=");
 	return 0;
 }
 

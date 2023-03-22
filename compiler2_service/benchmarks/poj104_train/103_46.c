@@ -27,14 +27,14 @@ int count=0;
       char *p;
       char q;
       int i;
-      scanf("%s",a);
+      my_scanf("%s",a);
       l=strlen(a);
       p=a;
       c(p,l);
       for(i=0;i<l;i++)
       {
 if(l==1)
- printf("(%s,1)",a);
+ my_printf("(%s,1)",a);
       if(i==0)
       {
       q=a[i];
@@ -47,7 +47,7 @@ if(l==1)
           e=f(q,a[i]);
           if(e==0)
           {
-          printf("(%c,%d)",q,count);
+          my_printf("(%c,%d)",q,count);
           q=a[i];
           count=1;
                   }
@@ -57,16 +57,16 @@ if(l==1)
       else
       {
       if(q==a[l-1])
-       printf("(%c,%d)",q,(count+1));
+       my_printf("(%c,%d)",q,(count+1));
        else
        {
-       printf("(%c,%d)",q,count);
-        printf("(%c,1)",a[l-1]);
+       my_printf("(%c,%d)",q,count);
+        my_printf("(%c,1)",a[l-1]);
        }
        }
        }
                       }
-                      printf("\n");
+                      my_printf("\n");
                       getchar();
                       getchar();
                       getchar();

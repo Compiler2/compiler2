@@ -7,9 +7,9 @@ int main_bench()
 	int a[100],b[100],r[100];
     char name[100][21],s[100],t[100],temp[20];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d %d %c %c %d",&name[i],&a[i],&b[i],&s[i],&t[i],&r[i]);
+		my_scanf("%s %d %d %c %c %d",&name[i],&a[i],&b[i],&s[i],&t[i],&r[i]);
 	}
     	int sum[100]={0};
 	for(i=0;i<n;i++){
@@ -39,8 +39,8 @@ int main_bench()
 	for(i=0;i<n;i++){
 		zong+=sum[i];
 	}
-	printf("%s\n",temp);
-	printf("%d\n",max);
-	printf("%d\n",zong);
+	my_printf("%s\n",temp);
+	my_printf("%d\n",max);
+	my_printf("%d\n",zong);
 	return 0;
 }

@@ -20,6 +20,6 @@ int main_bench()
 	a[l-1]=b[l-1];
 	for(i=0;i<l;i++)
 	{
-		printf("%c",a[i]);
+		my_printf("%c",a[i]);
 	}
 }

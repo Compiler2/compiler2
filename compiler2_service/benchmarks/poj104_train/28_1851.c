@@ -8,7 +8,7 @@ int main_bench()
 	{
 		if(ch == ' ' && len)
 		{
-			printf("%d", len);
+			my_printf("%d", len);
 			len = 0;
 			break;
 		}
@@ -17,20 +17,20 @@ int main_bench()
 	}
 	if(ch == '\n')
 	{
-		printf("%d\n", len);
+		my_printf("%d\n", len);
 		return 0;
 	}
 	while((ch = getchar()) != '\n')
 	{
 		if(ch == ' ' && len)
 		{
-			printf(",%d", len);
+			my_printf(",%d", len);
 			len = 0;
 		}
 		else if(ch != ' ')
 			len++;
 	}
-	if(len) printf(",%d\n", len);
-	else printf("\n");
+	if(len) my_printf(",%d\n", len);
+	else my_printf("\n");
 	return 0;
 }

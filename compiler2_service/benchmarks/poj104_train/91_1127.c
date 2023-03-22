@@ -9,8 +9,8 @@ int main_bench()
     char b;
     for(i=0;i<n-1;i++){
                        b=a[i]+a[i+1];
-                       printf("%c",b);
+                       my_printf("%c",b);
                        }
-    printf("%c",a[n-1]+a[0]);
+    my_printf("%c",a[n-1]+a[0]);
     return 0;
 }

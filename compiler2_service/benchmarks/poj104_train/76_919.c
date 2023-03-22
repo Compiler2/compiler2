@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,d=1,i,j,min,max=0;
 	int qd[50000],zd[50000],sz[50000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&qd[i],&zd[i]);
+		my_scanf("%d %d",&qd[i],&zd[i]);
 	}
 	min=qd[0];
 	for(i=0;i<n;i++){
@@ -26,10 +26,10 @@ int main_bench()
 		d*=sz[i];
 	}
 	if(d==0){
-		printf("no");
+		my_printf("no");
 	}
 	else{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

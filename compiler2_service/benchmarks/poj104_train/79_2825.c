@@ -10,10 +10,10 @@ int main_bench()
      }
  }
  for(i=0;i<1000;i++){
- scanf("%d%d",&n,&m);
+ my_scanf("%d%d",&n,&m);
  if(m==0&&n==0){
      break;
  }else{
-    printf("%d\n",a[n][m]);}}
+    my_printf("%d\n",a[n][m]);}}
      return 0;
 }

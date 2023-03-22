@@ -4,7 +4,7 @@ main_bench()
 {
     int i,j,n;
     char s[81];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
         gets(s);
@@ -16,8 +16,8 @@ main_bench()
             break;
         }
         if(s[j])
-        printf("0\n");
+        my_printf("0\n");
         else
-        printf("1\n");
+        my_printf("1\n");
     }
 }

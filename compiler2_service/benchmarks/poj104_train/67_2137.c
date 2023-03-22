@@ -3,17 +3,17 @@
 int main_bench(){
 	int n,a,b,s,l,i;
 	double c;
-	scanf("%d%d%d",&n,&a,&b);
+	my_scanf("%d%d%d",&n,&a,&b);
 	c=1.0*b/a;
     for(i=0;i<n-1;i++){
-		scanf("%d%d",&s,&l);
+		my_scanf("%d%d",&s,&l);
 		double f=1.0*l/s;
 		if(f-c>0.05){
-			printf("better\n");
+			my_printf("better\n");
 		}else if(f-c>-0.05){
-			printf("same\n");
+			my_printf("same\n");
 		}else{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 	}
 	return 0;

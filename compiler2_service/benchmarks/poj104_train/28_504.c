@@ -64,8 +64,8 @@ main_bench()
 	}
 	for(j=0;j<n;j++)
 	{
-		printf("%d",word[j]);
+		my_printf("%d",word[j]);
 		if(j<n-1)
-			printf(",");
+			my_printf(",");
 	}
 }

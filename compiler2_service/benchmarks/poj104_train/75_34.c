@@ -7,7 +7,7 @@ main_bench()
  i=0;
  while(1)
  {
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     x=getchar();
     m=m+1;
     if(x!=',')break;
@@ -15,7 +15,7 @@ main_bench()
     i=0;
  while(1)
  {s++;
-    scanf("%d",&b[i]);x=getchar();
+    my_scanf("%d",&b[i]);x=getchar();
     if(x!=',')break;
     i++;
  }
@@ -32,7 +32,7 @@ main_bench()
   {
       if(c[i]>s1)s1=c[i];
   }
-  printf("%d %d",s,s1);
+  my_printf("%d %d",s,s1);
 
 
 

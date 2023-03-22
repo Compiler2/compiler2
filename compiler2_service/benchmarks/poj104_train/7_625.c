@@ -38,11 +38,11 @@ int main_bench()
 	{
 		if(q==w)
 		{
-			printf("%s",c);
+			my_printf("%s",c);
 			q+=l_sub;
 		}
 		if(q!=l)
-		{printf("%c",a[q]);}
+		{my_printf("%c",a[q]);}
 		q++;
 	}
 	}

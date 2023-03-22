@@ -21,6 +21,6 @@ int main_bench()
     for(i=0;i<=j;i++)
     if(strcmp(word[i],w1)==0)  strcpy(word[i],w2);
     for(i=0;i<j;i++)
-    printf("%s ",word[i]);
-    printf("%s",word[j]);
+    my_printf("%s ",word[i]);
+    my_printf("%s",word[j]);
 }

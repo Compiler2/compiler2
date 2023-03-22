@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,i,j,l;
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	char a[300];
 	for(i=1;i<=n;i++)
 	{
@@ -15,25 +15,25 @@ int main_bench()
 			if(a[j]=='A')
 			{
 				a[j]='T';
-				printf("%c", a[j]);
+				my_printf("%c", a[j]);
 			}
 			else if(a[j]=='T')
 			{
 				a[j]='A';
-				printf("%c", a[j]);
+				my_printf("%c", a[j]);
 			}
 			else if(a[j]=='C')
 			{
 				a[j]='G';
-				printf("%c", a[j]);
+				my_printf("%c", a[j]);
 			}
 			else if(a[j]=='G')
 			{
 				a[j]='C';
-				printf("%c", a[j]);
+				my_printf("%c", a[j]);
 			}
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 
 return 0;

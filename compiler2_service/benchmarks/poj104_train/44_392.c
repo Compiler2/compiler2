@@ -6,12 +6,12 @@ int main_bench()
 	for(int i=0;i<6;i++)
 	{
 		int a,r;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		r=reverse(a);
-		printf("%d\n",r);
+		my_printf("%d\n",r);
 	}
 	int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	return 0;
 }
 int reverse(int num)

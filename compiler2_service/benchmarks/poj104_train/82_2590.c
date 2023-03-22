@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int n,k,ssy[100],szy[100],t[100],cs[100],i,a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&ssy[i],&szy[i]);
+		my_scanf("%d%d",&ssy[i],&szy[i]);
 		if(ssy[i]>=90&&ssy[i]<=140&&szy[i]>=60&&szy[i]<=90){
 			t[i]=1;
 		}else{
@@ -32,6 +32,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",cs[0]);
+	my_printf("%d",cs[0]);
 	return 0;
 }

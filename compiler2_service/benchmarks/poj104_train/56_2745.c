@@ -4,15 +4,15 @@ void Reverse(int n)
 {
      if(n>0)
 	 {
-        printf("%d",n%10);
+        my_printf("%d",n%10);
         Reverse(n/10);
 	 }
 }
 int main_bench()
 {
      int num;
-    scanf("%d",&num);
+    my_scanf("%d",&num);
      Reverse(num);
-     printf("\n");
+     my_printf("\n");
      return 0;
 }

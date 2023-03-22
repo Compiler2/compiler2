@@ -5,7 +5,7 @@ int main_bench()
 char s[50], w[50];
 
 int i,n,j,flag= 0;
-scanf("%s %s",w,s);
+my_scanf("%s %s",w,s);
 
 
 for (i=0; i+1<=(strlen(s)); i++,flag=0) {
@@ -18,7 +18,7 @@ for (i=0; i+1<=(strlen(s)); i++,flag=0) {
 	if(flag) 
 		continue;
 	else{
-		printf("%d",i);
+		my_printf("%d",i);
 		break;
 		}
 }

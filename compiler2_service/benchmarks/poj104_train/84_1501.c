@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a,b,c,i;
 	int z[100];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++){
-		scanf("%d",&(z[i]));
+		my_scanf("%d",&(z[i]));
 	}
 	for(i=0;i<a;i++){
 		if(i==0){
@@ -20,12 +20,12 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",b);
+	my_printf("%d\n",b);
 	for(i=0;i<a;i++){
 		if(z[i]<b&&z[i]>c){
 			c=z[i];
 		}
 	}
-	printf("%d\n",c);
+	my_printf("%d\n",c);
 	return 0;
 }

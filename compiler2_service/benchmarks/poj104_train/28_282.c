@@ -20,6 +20,6 @@ int main_bench()
 	}
 	for(p=m;p<q;p++)
 		if(*p!=0)
-		printf("%d,",*p);
-	printf("%d\n",*q);
+		my_printf("%d,",*p);
+	my_printf("%d\n",*q);
 }

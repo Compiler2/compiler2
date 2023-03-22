@@ -33,9 +33,9 @@ int main_bench()
         }
     }
     if (flag == 0)
-        printf("%s\n", s);
+        my_printf("%s\n", s);
     else
-        printf("%s%s%s\n", ss[0], s2, ss[1]);
+        my_printf("%s%s%s\n", ss[0], s2, ss[1]);
 
     return 0;
 }

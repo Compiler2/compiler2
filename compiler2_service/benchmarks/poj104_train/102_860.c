@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,m=0,f=0;
 	double sz[40],male[40],female[40];
 	char sex[40][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%lf",&sex[i],&sz[i]);
+		my_scanf("%s%lf",&sex[i],&sz[i]);
 		if(strcmp(sex[i],"male")==0)
 		{
 			male[m]=sz[i];
@@ -35,7 +35,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.2lf ",male[i]);
+		my_printf("%.2lf ",male[i]);
 	}
 
 
@@ -56,11 +56,11 @@ int main_bench()
 	{
 		if(i==f-1)
 		{
-			printf("%.2lf",female[i]);
+			my_printf("%.2lf",female[i]);
 		}
 		else
 		{
-		    printf("%.2lf ",female[i]);
+		    my_printf("%.2lf ",female[i]);
 		}
 	}
 	return 0;

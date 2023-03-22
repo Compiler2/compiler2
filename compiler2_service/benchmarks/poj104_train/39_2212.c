@@ -5,11 +5,11 @@ int main_bench()
 	int n,i,s1[100],s2[100],e[100],s[100]={0},all[100]={0},sum=0;
       char name[100][30],g[100],w[100];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int R[5]={0};
-		scanf("%s %d %d %c %c %d",name[i],&s1[i],&s2[i],&g[i],&w[i],&e[i]);
+		my_scanf("%s %d %d %c %c %d",name[i],&s1[i],&s2[i],&g[i],&w[i],&e[i]);
 if ((s1[i]>80)&&(e[i]>=1)) 
 R[0]= 8000;		
 if ((s1[i]>85)&&(s2[i]>80)) 
@@ -35,5 +35,5 @@ R[4]= 850;
 			r=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",name[r],all[r],sum);
+	my_printf("%s\n%d\n%d\n",name[r],all[r],sum);
 }

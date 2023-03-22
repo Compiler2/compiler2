@@ -5,7 +5,7 @@ int main_bench()
 {
   char a[1000]={'\0'},b[1000]={'\0'},c[1000]={'\0'};
   int n,i,j,m,k;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {  
         for(j=0;j<1000;j++)
@@ -14,8 +14,8 @@ int main_bench()
           a[j]='\0';
           b[j]='\0';
         }
-         scanf("%s",a);
-         scanf("%s",b);
+         my_scanf("%s",a);
+         my_scanf("%s",b);
          for(j=0;j<1000;j++)
          {
               if(a[j]=='\0')
@@ -52,8 +52,8 @@ int main_bench()
              break;
         }
         for(j=j;j>=0;j--)
-        printf("%c",c[j]);
-        printf("\n");
+        my_printf("%c",c[j]);
+        my_printf("\n");
   }	
   return 0;
 }

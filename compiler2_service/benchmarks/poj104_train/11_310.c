@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int a,b,c,feb,i,m,n=0,q;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
 	if( (a%4==0&&a%100!=0)||a%400==0)
 	{
 		feb=29;
@@ -26,7 +26,7 @@ int main_bench()
 		n=n+m;
 	}
     q=n+c;
-	printf("%d",q);
+	my_printf("%d",q);
     return 0;
 }
 

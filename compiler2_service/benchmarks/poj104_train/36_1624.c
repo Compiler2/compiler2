@@ -15,8 +15,8 @@ int main_bench()
 	int a1[200]={0},a2[200]={0};
 	int len1,len2,t=1,i;
 	char str1[1000]={0},str2[1000]={0};
-	scanf("%s",str1);
-	scanf("%s",str2);
+	my_scanf("%s",str1);
+	my_scanf("%s",str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 	count(a1,str1,len1);
@@ -26,9 +26,9 @@ int main_bench()
 		if(a1[i]!=a2[i]) t=0;
 	}
 	if(t==1)
-		printf("YES\n");
+		my_printf("YES\n");
 	else if(t==0)
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }
 

@@ -17,7 +17,7 @@ int main_bench()
 		   {
                if( !((s[j]>=65&&s[j]<=90)||(s[j]>=97&&s[j]<=122)||(s[j]==95)||(s[j]>=48&&s[j]<=57)))
 			   {
-				   printf("no\n");
+				   my_printf("no\n");
 				   k=1;
 				   break;
 			   }
@@ -25,10 +25,10 @@ int main_bench()
 			   
 		   }
 		   if (k==0)
-			   printf ("yes\n");
+			   my_printf ("yes\n");
 	   }
 	   else 
-		   printf ("no\n");
+		   my_printf ("no\n");
 	}
 	return 0;
 }

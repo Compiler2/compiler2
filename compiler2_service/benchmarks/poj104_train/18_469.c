@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[49][49][49];
 	int i,j,k;
 	for(i=1;i<=n;i++)
@@ -13,7 +13,7 @@ int main_bench()
 		{
 			for(k=1;k<=n;k++)
 			{
-				scanf("%d",&sz[i][j][k]);
+				my_scanf("%d",&sz[i][j][k]);
 			}
 		}
 	}
@@ -70,7 +70,7 @@ int main_bench()
 				sz[i][j][nn+1]=sz[i][j][nn];
 			}
 		}
-		printf("%d\n",re[i]);
+		my_printf("%d\n",re[i]);
 	}
 	return 0;
 }

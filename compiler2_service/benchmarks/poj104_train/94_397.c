@@ -4,13 +4,13 @@ int main_bench()
 {   
 	int k;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int flag=0;
 	int sz[1000];
     int e;
 	int i;
 	for(i=0;i<=n-1;i++){
-		scanf("%d", &sz[i]);
+		my_scanf("%d", &sz[i]);
 	   }
     for(int a=1 ; a<=n ; a++){
 		for(int i=0; i<n-a; i++){
@@ -26,10 +26,10 @@ int main_bench()
 		if(sz[b]%2!=0){
 			
 			if(flag==1)
-				printf(",%d",sz[b]);
+				my_printf(",%d",sz[b]);
 			else
 			{
-				printf("%d",sz[b]);
+				my_printf("%d",sz[b]);
 				flag=1;
 			}
 		}

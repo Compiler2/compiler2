@@ -5,7 +5,7 @@ int reverse(int num)
     int x=0,y=0,k=0;
     if(num==0)
     return 0;
-    printf("\n");
+    my_printf("\n");
     while(num>0)
     {
         x=num%10;
@@ -21,16 +21,16 @@ main_bench()
     int n[6],i;
     for(i=0;i<6;i++)
     {
-        scanf("%d",&n[i]);
+        my_scanf("%d",&n[i]);
         if(n[i]>=0)
         {
             reverse(n[i]);
-            printf("%d\n",reverse(n[i]));
+            my_printf("%d\n",reverse(n[i]));
         }
         else
         {
             reverse(-n[i]);
-            printf("-%d\n",reverse(-n[i]));
+            my_printf("-%d\n",reverse(-n[i]));
         }
     }
 }

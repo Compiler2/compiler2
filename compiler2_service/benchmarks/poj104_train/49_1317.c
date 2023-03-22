@@ -30,7 +30,7 @@ int main_bench()
                                                           }
                                                           jilu[i]='\0';
                                                           if(ishuiwen(jilu))
-                                                          printf("%s\n",jilu);
+                                                          my_printf("%s\n",jilu);
                              }
     }
     return 0;

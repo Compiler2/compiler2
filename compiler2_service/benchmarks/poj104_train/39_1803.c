@@ -9,11 +9,11 @@ int main_bench()
 	char buffer[21];
 	char name[21];
 
-	scanf("%d", &N);
+	my_scanf("%d", &N);
 	sum = 0;
 	max_s = 0;
 	for (i=0; i<N; i++) {
-		scanf("%s %d %d %c %c %d", buffer, &final_g, &class_g, &isCadre, &isWest, &nPapers);
+		my_scanf("%s %d %d %c %c %d", buffer, &final_g, &class_g, &isCadre, &isWest, &nPapers);
 		scholarship = 0;
 				if (final_g>80 && nPapers>0)
 			scholarship += 8000;
@@ -32,7 +32,7 @@ int main_bench()
 		}
 		sum += scholarship;
 	}
-	printf("%s\n%d\n%d\n", name, max_s, sum);
+	my_printf("%s\n%d\n%d\n", name, max_s, sum);
 
 	return 0;
 }

@@ -8,11 +8,11 @@ int main_bench()
 {
 	int i,j,m,n,k,e;
 	int count[26]={0},author[26];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<26;i++)
 	         author[i]=65+i;
 	for(i=0;i<m;i++){
-		scanf("%d",&book[i].num);
+		my_scanf("%d",&book[i].num);
 		gets(book[i].name);
 	}
 	for(i='A';i<='Z';i++){
@@ -34,12 +34,12 @@ int main_bench()
 			author[i+1]=e;
 		}
 	}
-	printf("%c\n%d\n",author[25],count[25]);
+	my_printf("%c\n%d\n",author[25],count[25]);
 	for(i=0;i<m;i++){
 		n=strlen(book[i].name);
 		for(k=0;k<n;k++){
 			if(book[i].name[k]==author[25])
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 		}
 	}
 	return 0;

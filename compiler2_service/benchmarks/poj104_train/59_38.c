@@ -4,12 +4,12 @@ int main_bench()
 {
     int hang[10000],lie[10000],day,n,m,i,j,k,total=0;
     char a[101][101];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-      scanf("%s",a[i]);
+      my_scanf("%s",a[i]);
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for(day=1;day<m;day++)
     {   k=0;
       for(i=0;i<n;i++)
@@ -44,7 +44,7 @@ int main_bench()
          {total+=1;}
       }
     }
-    printf("%d",total);
+    my_printf("%d",total);
     
 }
                                                                                                                                

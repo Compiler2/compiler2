@@ -16,8 +16,8 @@ void huiwen(char string[500],int full,int length)
 		if(i==1)
 		{
 			for(u=x;u<=x+length-1;u++)
-				printf("%c",string[u]);
-			printf("\n");
+				my_printf("%c",string[u]);
+			my_printf("\n");
 		}
 	}
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int m,len[1000],sum[26]={0},max,i,j,i0;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	struct book{
 		int num;
 		char wri[27];
 	}book[1000];
 	for(i=0;i<m;i++){
-		scanf("%d %s",&book[i].num,book[i].wri);
+		my_scanf("%d %s",&book[i].num,book[i].wri);
 		len[i]=strlen(book[i].wri);
 	}
 	for(i=0;i<m;i++)
@@ -22,12 +22,12 @@ int main_bench()
 			max=sum[i];
 			i0=i;
 		}
-	printf("%c\n",i0+65);
-	printf("%d\n",max);
+	my_printf("%c\n",i0+65);
+	my_printf("%d\n",max);
 	for(i=0;i<m;i++)
 		for(j=0;j<len[i];j++)
 			if(book[i].wri[j]==65+i0){
-				printf("%d\n",book[i].num);
+				my_printf("%d\n",book[i].num);
 				break;
 			}
 	return 0;

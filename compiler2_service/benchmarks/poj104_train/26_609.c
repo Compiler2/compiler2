@@ -18,6 +18,6 @@ int main_bench()
          n=n-1;
   }}
   for(i=0;i<=n;i++)
-  printf("%c",a[i]);
+  my_printf("%c",a[i]);
  
 }

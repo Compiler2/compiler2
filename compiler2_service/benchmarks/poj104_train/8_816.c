@@ -5,17 +5,17 @@ int main_bench()
 	int a[100],b[100];
 	int m,n,j,k;
 	void f(int a[],int m);
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(j=0;j<m;j++)
 	{
-		scanf("%d",&a[j]);
+		my_scanf("%d",&a[j]);
 	}
 	for(k=0;k<n;k++)
 	{
-		scanf("%d",&b[k]);
+		my_scanf("%d",&b[k]);
 	}
 	f(a,m);
-	printf(" ");
+	my_printf(" ");
 	f(b,n);
 	return 0;
 }
@@ -31,9 +31,9 @@ void f(int a[],int m)
 	     } 
 	}
      
-      printf("%d",a[0]);
+      my_printf("%d",a[0]);
 	  for(l=1;l<m;l++)
 	  {
-		  printf(" %d",a[l]);
+		  my_printf(" %d",a[l]);
 	  }
 }

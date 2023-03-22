@@ -9,7 +9,7 @@ int main_bench()
 		int a[17];
     	int u,i=0;
         for (u=1;u<=16;u++){
-			scanf("%d",&a[u]);
+			my_scanf("%d",&a[u]);
 		    i++;
 		    if (a[u]==0){
 			     break;
@@ -37,7 +37,7 @@ int main_bench()
 				}
 			}
 		}
-	    printf("%d\n",w);
+	    my_printf("%d\n",w);
 	}
 	return 0;
 }

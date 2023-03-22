@@ -2,12 +2,12 @@
 
 int main_bench(){
     int i,y,n,s,j,h,a,k,b,sz[100][100],jieguo[100],sum;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&a,&b);
+        my_scanf("%d%d",&a,&b);
         for(j=0;j<a;j++){
             for(k=0;k<b;k++){
-                scanf("%d",&sz[j][k]);
+                my_scanf("%d",&sz[j][k]);
                 }
             }
         sum=0;
@@ -21,7 +21,7 @@ int main_bench(){
         jieguo[i]=sum;
         }
     for(y=0;y<n;y++){
-        printf("%d\n",jieguo[y]);
+        my_printf("%d\n",jieguo[y]);
         }
     return 0;
 }

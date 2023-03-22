@@ -7,7 +7,7 @@ int main_bench(){
 	int m=0;
 
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=3;i<=n-2;i++){
 		u=pdss(i);
@@ -18,10 +18,10 @@ int main_bench(){
 				m=1;
 
 				if(i==3){
-					printf("%d %d",i,v);
+					my_printf("%d %d",i,v);
 				}
 				else if (i!=3){
-						printf("\n%d %d",i,v);
+						my_printf("\n%d %d",i,v);
 				}
 			}
 			i=i+1;
@@ -29,7 +29,7 @@ int main_bench(){
 		
 	}
 	if(m==0){
-		printf("empty");
+		my_printf("empty");
 	}
 
 

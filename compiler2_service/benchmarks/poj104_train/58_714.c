@@ -3,7 +3,7 @@
 int main_bench()
 {int n,i,j,b[100][80]={0},c[100]={0},l;
 char a[100][80];
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for(i=0;i<n;i++)
  {gets(a[i]);
@@ -17,8 +17,8 @@ for(i=0;i<n;i++)
    {if((b[i][j]>=65&&b[i][j]<=90)||(b[i][j]>=97&&b[i][j]<=122)||(b[i][j]>=48&&b[i][j]<=57)||b[i][j]==95)
      l++;}
     if(l==c[i])
-    printf("1\n");
-    else printf("0\n");}
-  else printf("0\n");}
+    my_printf("1\n");
+    else my_printf("0\n");}
+  else my_printf("0\n");}
  return 0;
 }

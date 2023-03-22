@@ -4,7 +4,7 @@ int main_bench()
 {
 	char res[32]="0000000000000000000000000000001",temp[2]="0";
 	int n,i=0,j,c=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(;i<n;i++)
 	{
 		for(j=30;j>=0||(!c&&res[j]=='0');j--)
@@ -17,6 +17,6 @@ int main_bench()
 	}
 	for(i=0;i<31&&res[i]=='0';i++);
 	for(j=i;j<31;j++)res[j-i]=res[j];res[j-i]='\0';
-	printf("%s\n",res);
+	my_printf("%s\n",res);
 	return 0;
 }

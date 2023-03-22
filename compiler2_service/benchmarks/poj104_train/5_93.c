@@ -10,13 +10,13 @@ int main_bench()
 	int flag=0;
 	double m=0,x,n;
 	
-	scanf("%lf",&n);
+	my_scanf("%lf",&n);
 
 
 
 	
-	scanf("%s",&fir);
-	scanf("%s",&sec);
+	my_scanf("%s",&fir);
+	my_scanf("%s",&sec);
 	l1=strlen(fir);
 	l2=strlen(sec);
 
@@ -41,7 +41,7 @@ int main_bench()
 
 	if(flag>0)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -55,11 +55,11 @@ int main_bench()
 		x=m/l1;
 		if(x>n)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 				

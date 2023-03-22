@@ -5,8 +5,8 @@ int main_bench()
     char s[100],re[100],x[100],wd[50][100];
     int n,i,a=0,j=0,k,e,l,nc[100];
     gets(s);
-    scanf("%s",re);
-    scanf("%s",x);
+    my_scanf("%s",re);
+    my_scanf("%s",x);
     for(i=0;s[i]!='\0';i++){
        if(s[i]!=' '){
          wd[a][j]=s[i];
@@ -24,10 +24,10 @@ int main_bench()
          strcpy(wd[i],x);}
     }
     for(i=0;i<a;i++){
-       printf("%s ",wd[i]);
+       my_printf("%s ",wd[i]);
        }
-    printf("%s",wd[a]);
+    my_printf("%s",wd[a]);
     int t;
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     return 0;
 }

@@ -16,10 +16,10 @@ int main_bench()
 	int x[100];
 	int n;
 	int i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&x[i-1]);
+		my_scanf("%d",&x[i-1]);
 	}
 	float aver=0;
 	for(i=1;i<=n;i++)
@@ -44,11 +44,11 @@ int main_bench()
 		{
 			if(count==0)
 			{
-				printf("%d",x[i-1]);
+				my_printf("%d",x[i-1]);
 			}
 			else
 			{
-				printf(",%d",x[i-1]);
+				my_printf(",%d",x[i-1]);
 			}
 			count++;
 		}

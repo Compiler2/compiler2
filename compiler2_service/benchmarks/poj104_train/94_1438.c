@@ -4,10 +4,10 @@
 int main_bench()
 {
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int qtt[n], a;
     for (a=0; a<n; a++) {
-        scanf("%d", &qtt[a]);
+        my_scanf("%d", &qtt[a]);
     }
     int s=0, b;
     for (b=0; b<n; b++) {
@@ -35,8 +35,8 @@ int main_bench()
     }
     int e;
     for (e=0; e<s-1; e++) {
-        printf("%d,", odd[e]);
+        my_printf("%d,", odd[e]);
     }
-    printf("%d", odd[s-1]);
+    my_printf("%d", odd[s-1]);
     return 0;
 }

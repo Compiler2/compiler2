@@ -16,12 +16,12 @@ int max(int a[],int n)
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[100],i;
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
-	printf("\n%d",max(a,n));
-	printf("\n%d",max(a,n));
+		my_scanf("%d",&a[i]);
+	my_printf("\n%d",max(a,n));
+	my_printf("\n%d",max(a,n));
 	return 0;
 }
 

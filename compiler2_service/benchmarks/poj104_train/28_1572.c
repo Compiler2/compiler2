@@ -24,8 +24,8 @@ int main_bench()
     zfc[j][k]='\0';
 	for(i=0;i<j;i++)
 	{
-		printf("%d,",strlen(zfc[i]));
+		my_printf("%d,",strlen(zfc[i]));
 	}
-	printf("%d",strlen(zfc[j]));
+	my_printf("%d",strlen(zfc[j]));
 	return 0;
 }

@@ -6,11 +6,11 @@ int main_bench()
 	int x,y,i,n;
 	int a[100];
 	int b[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	i=0;
 	while(i<n)
 	{
-		scanf("%d %d",&(a[i]),&(b[i]));
+		my_scanf("%d %d",&(a[i]),&(b[i]));
 	    i++;
 	}
 	y=0;
@@ -31,10 +31,10 @@ int main_bench()
 	}
 	if(n==1)
 	{  if((a[0])>=90&&(a[0])<=140&&(b[0])>=60&&(b[0])<=90)
-		printf("1");
+		my_printf("1");
 	else
-		printf("0");
+		my_printf("0");
 	}
-	else printf("%d",y);
+	else my_printf("%d",y);
 	return 0;
 }

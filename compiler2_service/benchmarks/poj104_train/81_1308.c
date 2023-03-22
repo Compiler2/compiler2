@@ -10,22 +10,22 @@ int main_bench()
       {
           for(j=0;j<5;j++)
           {
-              scanf("%d",&a[i][j]);
+              my_scanf("%d",&a[i][j]);
           }
       }
-      scanf("%d%d",&n,&m);
+      my_scanf("%d%d",&n,&m);
       
       if(panduan(a,n,m))
       {
           
           for(s=0;s<4;s++)
           {
-              printf("%d %d %d %d %d\n",a[s][0],a[s][1],a[s][2],a[s][3],a[s][4]);
+              my_printf("%d %d %d %d %d\n",a[s][0],a[s][1],a[s][2],a[s][3],a[s][4]);
               }
-          printf("%d %d %d %d %d",a[4][0],a[4][1],a[4][2],a[4][3],a[4][4]);
+          my_printf("%d %d %d %d %d",a[4][0],a[4][1],a[4][2],a[4][3],a[4][4]);
       }
       else
-      printf("error");
+      my_printf("error");
       
       getchar();
       getchar();

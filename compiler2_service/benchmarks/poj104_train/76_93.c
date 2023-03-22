@@ -5,9 +5,9 @@ int main_bench(){
     int hz[50000];
 	int sz[50000];
 	t=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-    scanf("%d %d",&hz[i],&sz[i]);
+    my_scanf("%d %d",&hz[i],&sz[i]);
 	}
 	for(k=1;k<=n;k++){
 	for(i=0;i<n-k;i++){
@@ -41,7 +41,7 @@ int main_bench(){
 }
 	}
 	if(t==1){
-		printf("no");}
-	else{printf("%d %d",hz[0],max1);}
+		my_printf("no");}
+	else{my_printf("%d %d",hz[0],max1);}
 	return 0;
 }

@@ -9,8 +9,8 @@ main_bench()
       l=strlen(a);
       if(l==1)
       {
-      printf("0\n");
-      printf("%s\n",a);
+      my_printf("0\n");
+      my_printf("%s\n",a);
       }
       else
       {
@@ -34,13 +34,13 @@ main_bench()
                 if(c[1]-'0'==0)
                 {
                     if(l==2)
-                    printf("0\n");
+                    my_printf("0\n");
                     else
                     {
                        for(i=0;i<l-2;i++)
                    d[i]=c[i+2];
                    d[i]='\0';
-                   printf("%s\n",d);
+                   my_printf("%s\n",d);
                    }
                    }
                    else
@@ -48,12 +48,12 @@ main_bench()
                      for(i=0;i<l-1;i++)
                    e[i]=c[i+1];
                    e[i]='\0';
-                   printf("%s\n",e);
+                   my_printf("%s\n",e);
                    }
                    }
            else
-                   printf("%s\n",c);
-       printf("%d",t);
+                   my_printf("%s\n",c);
+       my_printf("%d",t);
        }
        getchar();
        getchar();

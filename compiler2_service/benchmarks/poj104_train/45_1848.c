@@ -9,8 +9,8 @@ int main_bench()
 	int index = 0;
 	char StrS[50] = {'\0'}, StrW[50] = {'\0'};
 	int flag = 0;
-	scanf("%s",StrS);
-	scanf("%s",StrW);
+	my_scanf("%s",StrS);
+	my_scanf("%s",StrW);
 	
 	while (StrW[Position] != '\0')
 	{
@@ -18,7 +18,7 @@ int main_bench()
 		{
 			if ((flag) && (StrS[index + 1] == '\0'))
 			{
-				printf("%d",Position);
+				my_printf("%d",Position);
 				return 1;
 			}
 			if (StrS[index] == StrW[Position + index])

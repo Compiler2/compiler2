@@ -4,7 +4,7 @@ main_bench()
 {
       char a[1000],d[100];
       int c[100],b[100],x=0,i,j,l;
-      scanf("%s",a);
+      my_scanf("%s",a);
            for(i=0;a[i]!='\0';i++) 
            {
                  c[i]=a[i]-'0'; 
@@ -46,7 +46,7 @@ main_bench()
                    d[j]=b[j]+'0';
            d[k+1]='\0';
            }
-           printf("%s\n%d",d,x);
+           my_printf("%s\n%d",d,x);
       getchar();
       getchar();
 }

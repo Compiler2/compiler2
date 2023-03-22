@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a,b;
-	scanf("%d%d",&a,&b);
+	my_scanf("%d%d",&a,&b);
 	int i;
 	for(i=0;i<(n-2);i++)
 	{
 		int k;
-		scanf("%d",&k);
+		my_scanf("%d",&k);
 		if(k>a)
 		{
 			b=a;
@@ -22,7 +22,7 @@ int main_bench()
 			b=k;
 		}
 	}
-	printf("%d\n",a);
-    printf("%d\n",b);
+	my_printf("%d\n",a);
+    my_printf("%d\n",b);
 	return 0;
 }

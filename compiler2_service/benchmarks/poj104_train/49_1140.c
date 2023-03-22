@@ -24,10 +24,10 @@ int main_bench()
                                                }
                                                if(d==0)
                                                {
-                                                       printf("\n");
+                                                       my_printf("\n");
                                                        for(p=i;p<i+k;p++)
                                                        {
-                                                                         printf("%c",s[p]);
+                                                                         my_printf("%c",s[p]);
                                                        }
                                                }
                     }

@@ -11,10 +11,10 @@ int main_bench()
 	int n, i, j, l, max, maxnum;
 	int num = 0;
 	int a[26] = {0};
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++)
 	{
-		scanf("%d %s", &book[i].id, book[i].author);
+		my_scanf("%d %s", &book[i].id, book[i].author);
 		l = strlen(book[i].author);
 		for(j = 0; j < l; j++)
 			a[book[i].author[j] - 65]++;
@@ -30,7 +30,7 @@ int main_bench()
 			maxnum = i;
 		}
 	}
-	printf("%c\n", maxnum+65);
+	my_printf("%c\n", maxnum+65);
 	for(i = 0; i < n; i++)
 	{
 		book[i].flag = 0;
@@ -43,9 +43,9 @@ int main_bench()
 				break;
 			}
 	}
-	printf("%d\n", num);
+	my_printf("%d\n", num);
 	for(i = 0; i < n; i++)
 		if(book[i].flag == 1)
-			printf("%d\n", book[i].id);
+			my_printf("%d\n", book[i].id);
 	return 0;
 }

@@ -24,7 +24,7 @@ int main_bench()
 		}
 	}
 	if(j==1)
-		printf("No\n");
+		my_printf("No\n");
 	else
 	{
 		
@@ -57,9 +57,9 @@ int main_bench()
 			{
 				if(a[i]!=x)break;
 			}
-         printf("%d\n",a[i]);
+         my_printf("%d\n",a[i]);
 		}
 		else
-	    	printf("No\n");
+	    	my_printf("No\n");
 	}
 }

@@ -8,12 +8,12 @@ int main_bench()
 	{
 		if(a[i]!=' ')
 		{
-          printf("%c",a[i]);
+          my_printf("%c",a[i]);
 		  continue;
 		}
 		else
 		{
-			printf(" ");
+			my_printf(" ");
 			while(a[i+1]==' ')
 			 {
 				 i=i+1;

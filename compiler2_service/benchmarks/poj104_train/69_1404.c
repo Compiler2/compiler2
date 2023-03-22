@@ -37,8 +37,8 @@ int add(int *a,int *b){
 }
 int main_bench(){
   char s1[300],s2[300];
-  scanf("%s",s1);
-  scanf("%s",s2);
+  my_scanf("%s",s1);
+  my_scanf("%s",s2);
   int a[35],b[35];
   int i;
   memset(a,0,sizeof(a));
@@ -46,15 +46,15 @@ int main_bench(){
   change(s1,a);
   change(s2,b);
   add(a,b);
-  printf("%d",a[a[0]]);
+  my_printf("%d",a[a[0]]);
   for (i=a[0]-1;i;i--){
-    if (a[i]>=10000000) printf("%d",a[i]);
-    else if (a[i]>=1000000) printf("0%d",a[i]);
-    else if (a[i]>=100000) printf("00%d",a[i]);
-    else if (a[i]>=10000) printf("000%d",a[i]);
-    else if (a[i]>=1000) printf("0000%d",a[i]);
-    else if (a[i]>=100) printf("00000%d",a[i]);
-    else if (a[i]>=10) printf("000000%d",a[i]);
-    else printf("0000000%d",a[i]);
+    if (a[i]>=10000000) my_printf("%d",a[i]);
+    else if (a[i]>=1000000) my_printf("0%d",a[i]);
+    else if (a[i]>=100000) my_printf("00%d",a[i]);
+    else if (a[i]>=10000) my_printf("000%d",a[i]);
+    else if (a[i]>=1000) my_printf("0000%d",a[i]);
+    else if (a[i]>=100) my_printf("00000%d",a[i]);
+    else if (a[i]>=10) my_printf("000000%d",a[i]);
+    else my_printf("0000000%d",a[i]);
   }
 }

@@ -4,10 +4,10 @@ char str1[1000];
 char str2[1000];
 void paixu(char a[]);
 int main_bench(){
-	scanf("%s",&str1);
-	scanf("%s",&str2);
+	my_scanf("%s",&str1);
+	my_scanf("%s",&str2);
 	if (strlen(str1)!=strlen(str2)){
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	paixu(str1);
@@ -20,11 +20,11 @@ int main_bench(){
 			check=0;break;}
 	}
 	if (check==1){
-		printf("YES\n");
+		my_printf("YES\n");
 	}
 	else
 	{
-	printf("NO\n");
+	my_printf("NO\n");
 	}
 
 

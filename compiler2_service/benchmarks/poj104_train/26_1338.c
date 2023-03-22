@@ -25,8 +25,8 @@ int main_bench()
 
 	for(i=0;i<k;i++)
 	  if(strlen(a[i]))
-		printf("%s ",a[i]);
-	printf("%s",a[k]);
+		my_printf("%s ",a[i]);
+	my_printf("%s",a[k]);
 	return 0;
 }
 

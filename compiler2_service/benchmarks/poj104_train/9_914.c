@@ -9,11 +9,11 @@ int main_bench()
 		char ID[10];
 		int age;
 	}a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",&a[i].ID);
-		scanf("%d",&a[i].age);
+		my_scanf("%s",&a[i].ID);
+		my_scanf("%d",&a[i].age);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -55,7 +55,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",b[i].ID);
+		my_printf("%s\n",b[i].ID);
 	}
 
 

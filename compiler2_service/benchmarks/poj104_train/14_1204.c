@@ -12,12 +12,12 @@
 int main_bench()
 {
 		int n,i,e,j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 
     struct student stu[100001];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d", &stu[i].xuehao,&stu[i].shuxue,&stu[i].yuwen);
+		my_scanf("%d %d %d", &stu[i].xuehao,&stu[i].shuxue,&stu[i].yuwen);
 		stu[i].zongfen=stu[i].shuxue+stu[i].yuwen;
 	}
 	for(i=1;i<4;i++)
@@ -34,7 +34,7 @@ int main_bench()
 	}
 	for(i=n-1;i>n-4;i--)
 	{
-       printf("%d %d\n", stu[i].xuehao,stu[i].zongfen);
+       my_printf("%d %d\n", stu[i].xuehao,stu[i].zongfen);
 	}
 
 

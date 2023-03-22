@@ -8,7 +8,7 @@ int main_bench()
 	int i;
 	for (i=1;i<=6;i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		reverse(n);
 	}
 	return 0;
@@ -27,26 +27,26 @@ void reverse(int n)
 	}
 	if (n<0)
 	{
-		printf("-");
+		my_printf("-");
 	}
 	for (i=0;i<j;i++)
 	{
 		if (state)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		}
 		else
 		{
 			if (a[i]!=0 &&state==0)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				state=1;
 			}
 		}
 	}
 	if (!state)
 	{
-		printf("0");
+		my_printf("0");
 	}
-	printf("\n");
+	my_printf("\n");
 }

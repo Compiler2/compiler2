@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,i,j,p=0;
 	char s[30];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int z=strlen(s);
 		for(j=0;j<z;j++)
 		{
 			if(j==0&&(s[j]>'/'&&s[j]<':')){
-				printf("no\n");
+				my_printf("no\n");
 				break;}
 			if(s[j]>'/'&&s[j]<':')
 				p++;
@@ -38,9 +38,9 @@ int main_bench()
 		
 		
 		if(p==z)
-			printf("yes\n");
+			my_printf("yes\n");
 		else if(p!=0)
-			printf("no\n");
+			my_printf("no\n");
 		p=0;
 	}
 	return 0;

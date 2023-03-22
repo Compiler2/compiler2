@@ -28,7 +28,7 @@ int main_bench(){
 		if(r[i]>smax&&r[i]<max)
 			smax=r[i];
 	if(smax>-1)
-		printf("%d\n",smax);
+		my_printf("%d\n",smax);
 	else
-		printf("No\n");
+		my_printf("No\n");
 }

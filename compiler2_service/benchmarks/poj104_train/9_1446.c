@@ -5,9 +5,9 @@
 	    int a[100],e[100],f[100];
 	    char c[100][100],b[100][100],d[100][100],x[100];
 	    int n,p=-1,q=-1,k,z,i;
-	    scanf("%d",&n);
+	    my_scanf("%d",&n);
 	    for (i=0;i<n;i++){
-	      	    scanf("%s %d",c[i],&a[i]);
+	      	    my_scanf("%s %d",c[i],&a[i]);
 		    if(a[i]>=60){
 			    p++;
 			    e[p]=a[i];
@@ -34,10 +34,10 @@
 		}
     }
     for(i=0;i<=p;i++){
-	    printf("%s\n",b[i]);
+	    my_printf("%s\n",b[i]);
     }
     for(i=0;i<=q;i++){
-	    printf("%s\n",d[i]);
+	    my_printf("%s\n",d[i]);
     }
 
     return 0;

@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	int j[n];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&j[i]);
+		my_scanf("%d",&j[i]);
 	}
 	int M1, M2;
 	M1 = 0;
@@ -27,7 +27,7 @@ int main_bench()
 		else 
 			M2=M2;
 	}
-	printf("%d\n%d\n",M1,M2);
+	my_printf("%d\n%d\n",M1,M2);
 
 
 	return 0;

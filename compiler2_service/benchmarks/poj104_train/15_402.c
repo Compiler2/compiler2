@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n, i=0, j=0, e, f,count=0, num, m, c, d;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
 	count = 0;
 	for(i=1; i<=n; i++){
 		for(j=1; j<=n; j++){
-			scanf("%d", &m);
+			my_scanf("%d", &m);
 	          if((m==0)&&(count==0)){
                   c = i;
 				  d = j;
@@ -20,6 +20,6 @@ int main_bench()
 		}
 	}
 	num = (e - c - 1)*(f - d - 1);
-	printf("%d", num);
+	my_printf("%d", num);
 	return 0;
 }

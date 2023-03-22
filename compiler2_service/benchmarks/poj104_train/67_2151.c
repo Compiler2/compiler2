@@ -5,12 +5,12 @@ int main_bench()
 	int n,i;
 	double std,a,b,x,y;
 	double sz[100];
-	scanf("%d",&n);
-	scanf("%lf%lf",&a,&b);
+	my_scanf("%d",&n);
+	my_scanf("%lf%lf",&a,&b);
 	std=b/a;
 	for(i=1;i<n;i++)
 	{
-		scanf("%lf%lf",&x,&y);
+		my_scanf("%lf%lf",&x,&y);
 		if(((y/x)-std)>0.05)
 		{
 			sz[i]=1;
@@ -28,15 +28,15 @@ int main_bench()
 	{
 		if(sz[i]==1)
 		{
-			printf("better\n");
+			my_printf("better\n");
 		}
 		else if(sz[i]==0)
 		{
-			printf("worse\n");
+			my_printf("worse\n");
 		}
 		else if(sz[i]==2)
 		{
-			printf("same\n");
+			my_printf("same\n");
 		}
 	}
 	return 0;

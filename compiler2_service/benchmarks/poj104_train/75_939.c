@@ -45,7 +45,7 @@ main_bench()
 		if(x[i]>m) m=x[i];
 
 
-		printf("%d %d",n,m);
+		my_printf("%d %d",n,m);
 }
 
 

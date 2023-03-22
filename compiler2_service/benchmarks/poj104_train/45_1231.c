@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char s[50]={0},w[50]={0};
- scanf("%s%s",s,w);
+ my_scanf("%s%s",s,w);
  int n,l,j,k=0,b=0,a=2,c;
  n=strlen(s);
  l=strlen(w);
@@ -24,6 +24,6 @@ int main_bench()
    }
   }
  }
- printf("%d",b);
+ my_printf("%d",b);
  return 0;
 }

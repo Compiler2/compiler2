@@ -5,10 +5,10 @@ int main_bench()
    int i,j,n,t,s,d,test;
    double g;
    int a[50001],b[50001];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++)
    {
-      scanf("%d%d",&(a[i]),&(b[i]));
+      my_scanf("%d%d",&(a[i]),&(b[i]));
    }
    t=10000;
    for(i=0;i<n;i++)
@@ -37,9 +37,9 @@ int main_bench()
  
    }
       if(test>0){
-		  printf("no\n");
+		  my_printf("no\n");
 	  }else{
-	      printf("%d %d\n",t,j);
+	      my_printf("%d %d\n",t,j);
 	  }
 return 0;
 }

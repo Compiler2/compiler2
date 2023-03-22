@@ -15,8 +15,8 @@ int s,a[26],b[26],i=0;
 	{if (a[i]!=b[i]) break;
 		
 		}
-if (i==26) printf("YES");
-		else printf("NO");
+if (i==26) my_printf("YES");
+		else my_printf("NO");
 
 	
 }
@@ -24,7 +24,7 @@ if (i==26) printf("YES");
 int main_bench()
 {
 	char str1[100],str2[100];
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	f(str1,str2);
 
 

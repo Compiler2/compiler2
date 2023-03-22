@@ -5,17 +5,17 @@ int main_bench()
 {
 	int n,i;
 	int A[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		int a;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		A[i]=a;
 	}
 	for(i=n-1;i>=0;i--){
 		if(i>0)
-		printf("%d ",A[i]);
+		my_printf("%d ",A[i]);
 		else
-			printf("%d",A[i]);
+			my_printf("%d",A[i]);
 	}
 	return 0;
 }

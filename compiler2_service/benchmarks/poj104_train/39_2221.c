@@ -19,11 +19,11 @@ int main_bench() {
 	head=(struct data*)malloc(sizeof(struct data));
 	p=head;
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++) {
 		pp=(struct data*)malloc(sizeof(struct data));
 		pp->g=0;
-		scanf("%s %d %d %s %s %d",pp->a,&pp->b,&pp->c,pp->d,pp->e,&pp->f);
+		my_scanf("%s %d %d %s %s %d",pp->a,&pp->b,&pp->c,pp->d,pp->e,&pp->f);
 		if(pp->b>80&&pp->f>0) pp->g=pp->g+8000;
 		if(pp->b>85&&pp->c>80) pp->g=pp->g+4000;
 		if(pp->b>90) pp->g=pp->g+2000;
@@ -45,7 +45,7 @@ int main_bench() {
 		p=p->next;
 	}
 
-	printf("%s\n",x->a);
-	printf("%d\n",x->g);
-	printf("%d\n",zz);
+	my_printf("%s\n",x->a);
+	my_printf("%d\n",x->g);
+	my_printf("%d\n",zz);
 }

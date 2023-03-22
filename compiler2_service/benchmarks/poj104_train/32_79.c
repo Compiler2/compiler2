@@ -5,11 +5,11 @@ int main_bench()
 	void f(char x[100],char y[100]);
 	char a[100][100],b[100][100];
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
-	    scanf("%s",b[i]);
+		my_scanf("%s",a[i]);
+	    my_scanf("%s",b[i]);
 	}
     for(i=0;i<n;i++)
     f(a[i],b[i]);
@@ -33,5 +33,5 @@ void f(char x[100],char y[100])
 		{for(j=0;j<=m-i;j++)
 		s[j]=z[i+j];
 		break;}
-	printf("%s\n",s);
+	my_printf("%s\n",s);
 }

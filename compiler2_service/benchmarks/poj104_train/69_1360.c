@@ -5,8 +5,8 @@ int main_bench()
 	char a[2000]={0};
 	char b[2000]={0};
 	char c[3000]={0};
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	int len1=strlen(a);
 	int len2=strlen(b);
 	if(len1<len2)
@@ -32,7 +32,7 @@ int main_bench()
 	int judge=0,judge1=0;
 	if(add!=0)
 		{
-		printf("%d",add);
+		my_printf("%d",add);
 		judge=1;
 		judge1=1;	
 		}
@@ -40,19 +40,19 @@ int main_bench()
 		{
 		if(judge!=0)
 			{
-			printf("%d",c[i]);
+			my_printf("%d",c[i]);
 			judge1=1;	
 			}
 		else
 			{
 			if(c[i]!=0)
 				{
-				printf("%d",c[i]);	
+				my_printf("%d",c[i]);	
 				judge=1;	
 				judge1=1;
 				}
 			}	
 		}
 	if(judge1==0)
-		printf("%d",c[0]);
+		my_printf("%d",c[0]);
 }

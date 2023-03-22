@@ -4,7 +4,7 @@ main_bench()
 {
 	int i,n,l,j,k;
 	char s[101]={'\0'};
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(j=1;j<=n;j++)
 	{
 		int b[101]={0},c[123]={0};
@@ -26,9 +26,9 @@ for(i=0;i<=l-1;i++)
 					break;
 			}
 			if(b[i]==0)
-				printf("no\n");
+				my_printf("no\n");
 			else
-				printf("%c\n",s[i]);
+				my_printf("%c\n",s[i]);
 				
 	}
 }

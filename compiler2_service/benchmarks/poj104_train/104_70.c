@@ -3,7 +3,7 @@
 int main_bench()
 {
   int x,y,cx,cy,t;
-  scanf("%d%d",&x,&y);
+  my_scanf("%d%d",&x,&y);
   t=2;cx=1;
   while(x>=t)
   {
@@ -29,5 +29,5 @@ int main_bench()
 	  cy--;
 	}
   }
-  printf("%d\n",x);
+  my_printf("%d\n",x);
 }

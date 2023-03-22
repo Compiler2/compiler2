@@ -9,11 +9,11 @@ int main_bench()
 	};
 	int n,i,j,e=1,max=0;
 	struct ab *p,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(struct ab * )malloc(sizeof(struct ab)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&p[i].a,&p[i].b);
+		my_scanf("%d%d",&p[i].a,&p[i].b);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 		}
 	}
 	if(p[n-1].b>max) max=p[n-1].b;
-	if(e==0) printf("no");
-	else	printf("%d %d",p[0].a,max);
+	if(e==0) my_printf("no");
+	else	my_printf("%d %d",p[0].a,max);
 	return 0;
 }

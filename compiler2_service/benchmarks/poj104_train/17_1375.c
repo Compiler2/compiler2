@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int left=0;
@@ -11,7 +11,7 @@ int main_bench()
 		int k,len;
 		char a[105];
 		char b[105];
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		for(k=0;k<len;k++)
 			b[k]=' ';
@@ -39,10 +39,10 @@ int main_bench()
 				}
 			}
 		}
-		printf("%s",a);
-		printf("\n");
-		printf("%s",b);
-		printf("\n");
+		my_printf("%s",a);
+		my_printf("\n");
+		my_printf("%s",b);
+		my_printf("\n");
 	}
 	return 0;
 }

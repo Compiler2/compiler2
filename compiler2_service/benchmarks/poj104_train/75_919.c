@@ -58,7 +58,7 @@ int main_bench()
 	
 	
 	}
-	printf("%d %d",num,p);
+	my_printf("%d %d",num,p);
 	
 
 }

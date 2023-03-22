@@ -4,11 +4,11 @@ int m,n;
 void get (int a[200],int b[200])
 {
  int i;
- scanf("%d %d",&m,&n);
+ my_scanf("%d %d",&m,&n);
  for (i=0;i<m;i++)
-  scanf("%d",&a[i]);
+  my_scanf("%d",&a[i]);
  for (i=0;i<n;i++)
-  scanf("%d",&b[i]);
+  my_scanf("%d",&b[i]);
 }
 void sequence (int a[200], int p)
 {
@@ -34,9 +34,9 @@ void show (int a[200], int p)
  int i;
  for (i=0;i<p-1;i++)
  {
-  printf("%d ",a[i]);
+  my_printf("%d ",a[i]);
  }
- printf("%d",a[p-1]);
+ my_printf("%d",a[p-1]);
 }
 int main_bench()
 {

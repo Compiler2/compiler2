@@ -5,8 +5,8 @@ int main_bench()
 	char a[100],b[100],c,d;
 	char *p,*q;
 	int al,bl,i,j;
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	al=strlen(a);
 	bl=strlen(b);
 	p=a;
@@ -36,9 +36,9 @@ int main_bench()
 			}
 		}
 		if(strcmp(a,b)==0)
-			printf("YES");
+			my_printf("YES");
 		else
-			printf("NO");
+			my_printf("NO");
 
 	return 0;
 }

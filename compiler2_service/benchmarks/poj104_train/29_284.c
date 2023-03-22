@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,c[100],m;
 	float t;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(int i=0;i<m;i++){
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	}
 	for(int i=0;i<m;i++){
 	        float s=0,a=2,b=1; 
@@ -14,7 +14,7 @@ int main_bench()
 		        s=s+(float)a/b;
 		        t=a;a+=b;b=t;
 			}	
-		    printf("%.3f\n",s);
+		    my_printf("%.3f\n",s);
 				
 	}
 	

@@ -6,10 +6,10 @@ int main_bench()
 	char num[100][10]={0},temp[100][10]={0};
 	int x,z=0;
 	char y[10]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	    scanf("%s %d",num[i],&old[i]);
+	    my_scanf("%s %d",num[i],&old[i]);
 	}
     for(i=0;i<n;i++)
 	{
@@ -36,11 +36,11 @@ int main_bench()
 	  }
 	}
 	for(i=0;i<z;i++)
-		printf("%s\n",temp[i]);
+		my_printf("%s\n",temp[i]);
 	for(i=0;i<n;i++)
 	{
 		if(old[i]<60)
-		printf("%s\n",num[i]);
+		my_printf("%s\n",num[i]);
 	}
 	return 0;
 }

@@ -5,20 +5,20 @@ int main_bench()
     int n,i,j,k,a[100][100][100],minh,minl,sum[100]={0};
     int minhang(int n,int k,int a[100][100]),minlie(int n,int k,int a[100][100]);
     int guilin(int n,int a[100][100]);
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     for(j=0;j<n;j++)
                     {
                                     for(k=0;k<n;k++)
                                     {
-                                                    scanf("%d",&a[i][j][k]);
+                                                    my_scanf("%d",&a[i][j][k]);
                                     }
                     }
     }
     for(i=0;i<n;i++)
     {
-                    printf("%d\n",guilin(n,a[i]));
+                    my_printf("%d\n",guilin(n,a[i]));
     }
     return 0;
 }

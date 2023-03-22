@@ -5,10 +5,10 @@ int main_bench()
 {
 	int I,n,a[100],i,b[100],p=0,s=0,q=0,sum=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(I=0;I<n;I++)
-	scanf("%d %d",&a[I],&b[I]);
+	my_scanf("%d %d",&a[I],&b[I]);
 	for(i=0;i<n;i++){
 		if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90) q=1;
 		if(q==1&&(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90)){
@@ -21,6 +21,6 @@ int main_bench()
 			q=0;
 		}
 	}
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 }

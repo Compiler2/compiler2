@@ -19,7 +19,7 @@ int daysum(int year,int month,int day)
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,i,n=0,a,b;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
 	for(i=y1+1;i<y2;i++)
 	{
 		n+=leap(i)?366:365;
@@ -30,5 +30,5 @@ int main_bench()
 		n=n+daysum(y2,m2,d2)+365-daysum(y1,m1,d1);
 		if(leap(y1)) n++;
 	}
-	printf("%d",n);
+	my_printf("%d",n);
 }

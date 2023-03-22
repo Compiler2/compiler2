@@ -5,9 +5,9 @@ int main_bench()
 {
 	int sum(int a,int b,int c);
 	int n,k,t;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	t=n;
-	printf("%d\n",sum(n+1,k,t));
+	my_printf("%d\n",sum(n+1,k,t));
 }
 
 int sum(int a,int b,int c)

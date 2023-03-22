@@ -23,9 +23,9 @@ int main_bench()
 		if(*p==' '||*p=='\0')
 		{
 			for(temp=p+1;temp<=q;temp++)
-				printf("%c",*temp);
+				my_printf("%c",*temp);
 			if(*p!='\0')
-				printf(" ");
+				my_printf(" ");
 			else
 				break;
 			p--;

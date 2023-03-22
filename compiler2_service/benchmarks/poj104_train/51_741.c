@@ -4,8 +4,8 @@ int main_bench()
 {
 	int l,m,n,j,k,i,p,c[500],v=0;
 	char a[502];
-	scanf("%d",&n);
-	scanf("%s",a);
+	my_scanf("%d",&n);
+	my_scanf("%s",a);
 	l=strlen(a);
     for(i=0;i<l-n+1;i++)
     {
@@ -32,12 +32,12 @@ int main_bench()
 			if(p) 
 			{
 				v++;
-				if(v==1) printf("%d",c[i]);
-			    printf("\n");
+				if(v==1) my_printf("%d",c[i]);
+			    my_printf("\n");
 			    for(m=0;m<n;m++)
-			    printf("%c",a[i+m]);
+			    my_printf("%c",a[i+m]);
 			}
 	 }
     }
-    else printf("NO");
+    else my_printf("NO");
 } 

@@ -5,7 +5,7 @@ int main_bench()
     int a1, a2, x;
     int f[4];
     int i, j=5;
-    scanf("%d", &a1);
+    my_scanf("%d", &a1);
     for(i=1;i<10;i++)
     {
         x=a1-i*10000;
@@ -80,6 +80,6 @@ int main_bench()
 	case 5:
 		a2=f[4]*10000+f[3]*1000+f[2]*100+f[1]*10+f[0];
 	}
-		printf("%d", a2);
+		my_printf("%d", a2);
     return 0;
 }

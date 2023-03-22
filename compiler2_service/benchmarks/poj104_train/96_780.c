@@ -8,19 +8,19 @@ int main_bench()
 	int i;
 	int int1,int2;
 	int len,lendivide;
-	scanf("%s",integral);
+	my_scanf("%s",integral);
 	len=strlen(integral);
 	int1=(int)(integral[0]-'0');
 	int2=(int)(integral[1]-'0');
 	if (len==1)
 	{
-		printf("0\n");
-		printf("%d\n",int1);
+		my_printf("0\n");
+		my_printf("%d\n",int1);
 	}
 	if (len==2 && int1*10+int2<13)
 	{
-		printf("0\n");
-		printf("%d\n",int1*10+int2);
+		my_printf("0\n");
+		my_printf("%d\n",int1*10+int2);
 	}
 	if ((len==2 && int1*10+int2>=13) ||(len>2))
 	{
@@ -58,8 +58,8 @@ int main_bench()
 		}
 	}
 	divide[lendivide]='\0';
-	printf("%s\n",divide);
-	printf("%d\n",mod);
+	my_printf("%s\n",divide);
+	my_printf("%d\n",mod);
 	}
 	return 0;
 }

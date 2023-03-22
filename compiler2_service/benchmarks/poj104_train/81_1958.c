@@ -8,11 +8,11 @@ int main_bench()
 	{
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",&zu[i][j]);
+			my_scanf("%d",&zu[i][j]);
 		}
 	}
-	scanf("%d %d",&n,&m);
-	if(n<0||n>4||m<0||m>4) printf("error");
+	my_scanf("%d %d",&n,&m);
+	if(n<0||n>4||m<0||m>4) my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
@@ -23,13 +23,13 @@ int main_bench()
 		}
 		for(i=0;i<5;i++)
 		{
-			printf("%d",zu[i][0]);
+			my_printf("%d",zu[i][0]);
 			for(j=1;j<5;j++)
 			{
-			printf(" %d",zu[i][j]);	
+			my_printf(" %d",zu[i][j]);	
 
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 

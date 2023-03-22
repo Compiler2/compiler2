@@ -7,13 +7,13 @@ int main_bench()
 	int a[100];
 	int sum[100];
 	int i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&j);
+		my_scanf("%d",&j);
 		for(k=1;k<=j;k++)
 		{
-			scanf("%d",&a[k-1]);
+			my_scanf("%d",&a[k-1]);
 		}
 
     	if(j==0)
@@ -64,7 +64,7 @@ int main_bench()
 		
 	for(i=0;i<n;i++)
 	{
-	    printf("%d\n",sum[i]);
+	    my_printf("%d\n",sum[i]);
 	}
 	return 0;
 }

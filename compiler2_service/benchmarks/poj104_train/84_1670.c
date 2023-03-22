@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int i=3,n,a,b,c;
-	scanf("%d%d%d",&n,&a,&b);
+	my_scanf("%d%d%d",&n,&a,&b);
 	while(i<=n)
 	{
-		scanf("%d",&c);
+		my_scanf("%d",&c);
 		if(a>=b&&c>=b)
 			b=c;
 		else
@@ -22,6 +22,6 @@ int main_bench()
 	 a=b;
 	 b=c;
 	}
-	printf("%d\n%d",a,b);
+	my_printf("%d\n%d",a,b);
 	return 0;
 }

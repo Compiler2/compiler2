@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int a1[20],a2[20],A1,A2,i,j,k,l;
-	scanf("%d %d",&A1,&A2);
+	my_scanf("%d %d",&A1,&A2);
 	if(A1==A2) 
 	{
-		printf("%d",A2);
+		my_printf("%d",A2);
 		return 0;
 	}
 	for(i=0;A1!=0;i++)
@@ -23,7 +23,7 @@ int main_bench()
 	{
 		if(a1[k]==a2[l])
 		{
-			printf("%d",a1[k]);
+			my_printf("%d",a1[k]);
 			break;
 		}
 		else if(a1[k]>a2[l]) k++;

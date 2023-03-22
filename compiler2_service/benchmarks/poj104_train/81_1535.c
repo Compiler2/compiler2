@@ -8,9 +8,9 @@ int main_bench()
 	for (i=0;i<=4;i++)
 	{
 		for (j=0;j<5;j++)
-		scanf("%d",&c[i][j]);
+		my_scanf("%d",&c[i][j]);
 	}
-	scanf ("%d %d",&a,&b);
+	my_scanf ("%d %d",&a,&b);
 	
 	if (a<5&&a>=0&&b>=0&&b<5)
 	{ exchange (a,b,c);
@@ -18,16 +18,16 @@ int main_bench()
 	 {
 		for (j=0;j<4;j++)
 		{
-			printf("%d ",c[i][j]);
+			my_printf("%d ",c[i][j]);
 		}
-                  printf ("%d",c[i][4]);
-	         printf("\n"); 
+                  my_printf ("%d",c[i][4]);
+	         my_printf("\n"); 
 	  }
                    }
    
         
     else 
-		printf("error");
+		my_printf("error");
 }
    
    void exchange (int a, int b, int c[100][100])

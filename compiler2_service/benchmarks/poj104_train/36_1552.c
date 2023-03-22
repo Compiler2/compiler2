@@ -8,11 +8,11 @@ int compare(const void*a,const void*b)
 int main_bench()
 {
 	char s1[100],s2[100];
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	int k1=strlen(s1),k2=strlen(s2);
 	if (k1!=k2)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	int a[100]={0},b[100]={0};
@@ -31,9 +31,9 @@ int main_bench()
 			count++;
 	}
 	if(count==k1)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 
 
 

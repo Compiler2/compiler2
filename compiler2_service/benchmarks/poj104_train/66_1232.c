@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int a,b,c,total=0,d;
-	scanf("%d%d%d",&a,&b,&c);
+	my_scanf("%d%d%d",&a,&b,&c);
     total=(a-1)*1+(a-1)/4-(a-1)/100+(a-1)/400;
 	
 
@@ -21,26 +21,26 @@ int main_bench(){
 	switch(d)
 	{
 	case 0:
-		printf("Sun.");
+		my_printf("Sun.");
 		break;
 	case 1:
-		printf("Mon.");
+		my_printf("Mon.");
 		break;
     case 2:
-		printf("Tue.");
+		my_printf("Tue.");
 		break;
     
     case 3:
-		printf("Wed.");
+		my_printf("Wed.");
 		break;
     case 4:
-		printf("Thu.");
+		my_printf("Thu.");
 		break;
      case 5:
-		printf("Fri.");
+		my_printf("Fri.");
 		break;
 	  case 6:
-		printf("Sat.");
+		my_printf("Sat.");
 		break;
 	}
 	return 0;

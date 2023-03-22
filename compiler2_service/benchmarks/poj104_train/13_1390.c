@@ -7,22 +7,22 @@ int main_bench()
 	int i;
 	int x;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0; i<101; i++)
 	{
 		histgram[i]=0;
 	}
 
-	scanf("%d", &x);
+	my_scanf("%d", &x);
 	histgram[x]++;
-	printf("%d",x);
+	my_printf("%d",x);
 
 	for (i=0; i<n-1; i++)
 	{
-		scanf("%d", &x);
+		my_scanf("%d", &x);
 		if (!histgram[x])
 		{
-			printf(" %d",x);
+			my_printf(" %d",x);
 		}
 		histgram[x]++;
 	}

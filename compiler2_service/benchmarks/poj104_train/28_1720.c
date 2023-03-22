@@ -18,10 +18,10 @@ int main_bench()
 			j=0;
 			la=strlen(a);
 		    if(first==1&&la!=0){
-			printf("%d",la);
+			my_printf("%d",la);
 			first=0;
 			}else if(la!=0){
-			printf(",%d",la);
+			my_printf(",%d",la);
 			}
 		}
 	}

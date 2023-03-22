@@ -8,10 +8,10 @@ int main_bench()
     long int b[100];
     long int c[100]={0};
     long int d[100]={0}; 
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (int i=1;i<=n;i++)
     {
-        scanf("%s %d",a[i],&b[i]);
+        my_scanf("%s %d",a[i],&b[i]);
     }
     
     for(int i=1;i<=n;i++)
@@ -29,7 +29,7 @@ for (k=101;k>=60;k--)
     i=1;
     while (i<=n)
     {if (c[i]==k)
-    {printf("%s\n",over[i]);}
+    {my_printf("%s\n",over[i]);}
     i++;
 }
 }
@@ -37,7 +37,7 @@ for (k=101;k>=60;k--)
     while (i<=n)
     {
           if (d[i]!=0)
-          printf("%s\n",below[i]);
+          my_printf("%s\n",below[i]);
     i++;
     }
  getchar(); getchar(); getchar(); getchar(); getchar(); getchar(); getchar(); getchar();

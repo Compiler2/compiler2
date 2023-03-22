@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n,a,b,c,d,e,f;
-scanf("%d",&n);
+my_scanf("%d",&n);
 a=n/100;
 if((n%100)/10==9){
 	b=1;
@@ -75,6 +75,6 @@ if((n%100)/10==9){
 	e=0;
 	f=0;
 }
-printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 return 0;
 }

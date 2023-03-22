@@ -5,18 +5,18 @@ int main_bench()
 	char words[300][30];
 	char temp;
    int i=0,l;
-   scanf("%s",words[i]);
+   my_scanf("%s",words[i]);
    l=strlen(words[i]);
-   printf("%d",l);
+   my_printf("%d",l);
    i++;
-   scanf("%c",&temp);
+   my_scanf("%c",&temp);
    while (temp!='\n')
    {
-	   scanf("%s",words[i]);
+	   my_scanf("%s",words[i]);
 	   l=strlen(words[i]);
-	   printf(",%d",l);
+	   my_printf(",%d",l);
 	   i++;
-            scanf("%c",&temp);
+            my_scanf("%c",&temp);
 
    }
    return 0;

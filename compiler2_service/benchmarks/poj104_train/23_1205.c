@@ -18,5 +18,5 @@ int main_bench()
 	}
 	for(i=k-1;i>=0;i--)
 		strcat(b,c[i]);
-	printf("%s\n",b);
+	my_printf("%s\n",b);
 }

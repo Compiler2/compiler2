@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int money,yuan100,yuan50,yuan20,yuan10,yuan5,yuan1;
-	scanf("%d",&money);
+	my_scanf("%d",&money);
 	if(money<0)
-		printf("Error!\n");
+		my_printf("Error!\n");
 	else
 	{
 		yuan100=(money-(money%100))/100;
@@ -20,16 +20,16 @@ int main_bench()
 	    money=money-yuan5*5;
 	    yuan1=money;
 	    
-		    printf("%d\n",yuan100);
+		    my_printf("%d\n",yuan100);
 	    
-		    printf("%d\n",yuan50);
+		    my_printf("%d\n",yuan50);
 
-		    printf("%d\n",yuan20);
+		    my_printf("%d\n",yuan20);
 	    
-		    printf("%d\n",yuan10);
+		    my_printf("%d\n",yuan10);
 	    
-		    printf("%d\n",yuan5);
-	    printf("%d\n",yuan1);
+		    my_printf("%d\n",yuan5);
+	    my_printf("%d\n",yuan1);
 	}
 	return 0;
 }

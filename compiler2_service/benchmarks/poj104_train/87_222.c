@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(j=0;j<6;j++)
 		{
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 	         if(sz[i][0]==0&&sz[i][1]==0&&sz[i][2]==0&&sz[i][3]==0&&sz[i][4]==0&&sz[i][5]==0)
 				 b=0;
 		}
@@ -25,10 +25,10 @@ int main_bench()
 			sum=h*3600+m*60+s;
 			c[i]=sum;
 	}
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	for(i=1;i<a-1;i++)
 	{
-		printf("\n%d",c[i]);
+		my_printf("\n%d",c[i]);
 	}
 	return 0;
 }

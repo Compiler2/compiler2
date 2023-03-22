@@ -6,7 +6,7 @@ void spread(int A[100][100],int M,int N)
 	int j=0;
 	int t[400]={0};
 	if(M==1&&N==1)
-		printf("%d\n",A[0][0]);
+		my_printf("%d\n",A[0][0]);
 	else
 	{
 		if(M==1)
@@ -45,7 +45,7 @@ void spread(int A[100][100],int M,int N)
 					}
 				}
 	for(i=0;i<j;i++)
-		printf("%d\n",t[i]);
+		my_printf("%d\n",t[i]);
 	}
 }
 int main_bench()
@@ -54,11 +54,11 @@ int main_bench()
 	int r,c;
 	int k;
 	int a[100][100];
-	scanf("%d%d",&r,&c);
+	my_scanf("%d%d",&r,&c);
 	k=r<c?r:c;
 	for(i=0;i<r;i++)
 		for(j=0;j<c;j++)
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		for(i=1;((r>0)&&(c>0));i++)
 		{
 			spread(a,r,c);

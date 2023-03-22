@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,a[1000][1000]={0},j,m[100],i,k[100],p[100],b[100],s=0,g=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
 		for(i=0;i<n;i++)
 		{
-		scanf("%d",&a[j][i]);
+		my_scanf("%d",&a[j][i]);
 		}
 	}
 	for(j=0;j<n;j++)
@@ -37,6 +37,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",(p[1]-m[1]-1)*(b[1]-k[1]-1));
+	my_printf("%d",(p[1]-m[1]-1)*(b[1]-k[1]-1));
 return 0;
 }

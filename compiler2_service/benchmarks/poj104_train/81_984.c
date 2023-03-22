@@ -7,11 +7,11 @@ int main_bench()
 	int i,j,matrix[5][5],p,q;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&matrix[i][j]);
-	scanf("%d%d",&p,&q);
+			my_scanf("%d",&matrix[i][j]);
+	my_scanf("%d%d",&p,&q);
 
 	if(!(p>=0&&p<5&&q>=0&&q<5))
-		printf("error");
+		my_printf("error");
 	else
 	{
 		Change(matrix,p,q);
@@ -20,11 +20,11 @@ int main_bench()
 	    	for(j=0;j<5;j++)
 			{
 				if(j==0)
-		        	printf("%d",matrix[i][j]);
+		        	my_printf("%d",matrix[i][j]);
 				else
-					printf(" %d",matrix[i][j]);
+					my_printf(" %d",matrix[i][j]);
 			}
-		    printf("\n");
+		    my_printf("\n");
 		}
 	}
 }

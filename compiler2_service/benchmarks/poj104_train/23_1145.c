@@ -16,10 +16,10 @@ int main_bench()
 	{
 	   for(i=0,p=a;i<n;i++,p++)
 		if(ipa[k]>p&&p>ipa[k-1])
-			printf("%c",*p);
-		printf(" ");
+			my_printf("%c",*p);
+		my_printf(" ");
 	}
 	for(i=0,p=a;i<n;i++,p++)
 		if(ipa[0]<=p&&p<ipa[1])
-			printf("%c",*p);
+			my_printf("%c",*p);
 }

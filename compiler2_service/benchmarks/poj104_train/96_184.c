@@ -5,7 +5,7 @@ int main_bench()
     char a[101],b[100];
     int a1[100],a2[99],a3[99];
     int i,l,x;
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
      if (l>2)
 {
@@ -30,19 +30,19 @@ int main_bench()
                             b[i-1]=a2[i]+'0';
                             b[l-2]=0;
     }
-    printf("%s\n",b);
-    printf("%d\n",a3[l-1]);
+    my_printf("%s\n",b);
+    my_printf("%d\n",a3[l-1]);
 }
 if (l==2)
 {
     x=(a[0]-'0')*10+(a[1]-'0');
-    printf("%d\n",x/13);
-    printf("%d\n",x%13);
+    my_printf("%d\n",x/13);
+    my_printf("%d\n",x%13);
 }  
    if (l==1)
 {   
    x=a[0]-'0';
-   printf("%d\n",x/13);
-   printf("%d\n",x%13);
+   my_printf("%d\n",x/13);
+   my_printf("%d\n",x%13);
 }
 }

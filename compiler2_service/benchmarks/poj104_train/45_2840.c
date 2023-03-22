@@ -33,7 +33,7 @@ int main_bench()
 		}
 		if(m==n)
 		{
-			printf("%d",d-2*n);
+			my_printf("%d",d-2*n);
 			break;
 		}
 	}

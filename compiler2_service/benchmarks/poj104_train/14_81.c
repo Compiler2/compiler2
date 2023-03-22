@@ -10,12 +10,12 @@ struct student
 int main_bench()
 {
 	int i,j,n,max,temp1,temp2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&stu[i].id);
-		scanf("%d",&stu[i].math_grade);
-		scanf("%d",&stu[i].chi_grade);
+		my_scanf("%d",&stu[i].id);
+		my_scanf("%d",&stu[i].math_grade);
+		my_scanf("%d",&stu[i].chi_grade);
 	}
 	for(i=0;i<n;i++)
 	stu[i].sum=stu[i].math_grade+stu[i].chi_grade;
@@ -37,6 +37,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<2;i++)
-		printf("%d %d\n",stu[i].id,stu[i].sum);
-	printf("%d %d",stu[2].id,stu[2].sum);
+		my_printf("%d %d\n",stu[i].id,stu[i].sum);
+	my_printf("%d %d",stu[2].id,stu[2].sum);
 }

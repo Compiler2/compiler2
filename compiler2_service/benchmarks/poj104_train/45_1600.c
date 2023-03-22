@@ -3,8 +3,8 @@
 int main_bench()
 {
 	char word1[50],word2[50];
-	scanf("%s",word1);
-	scanf("%s",word2);
+	my_scanf("%s",word1);
+	my_scanf("%s",word2);
 	int n,m;
 	n=strlen(word1);
 	m=strlen(word2);
@@ -21,6 +21,6 @@ int main_bench()
 		if(loc!=0)
 			break;
 	}
-	printf("%d",loc-1);
+	my_printf("%d",loc-1);
 	return 0;
 }

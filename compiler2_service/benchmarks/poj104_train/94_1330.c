@@ -6,10 +6,10 @@
   int num=0;
   int a[501];
   int b[501];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-	  scanf("%d",&(a[i]));
+	  my_scanf("%d",&(a[i]));
 	  
 	  if((a[i])%2!=0){
 		  b[j]=a[i];
@@ -30,11 +30,11 @@
   }
   for(j=1;j<num;j++){
 	  
-	  printf("%d,",b[j]);
+	  my_printf("%d,",b[j]);
 	  
 		  
 	  }
-  printf("%d",b[num]);
+  my_printf("%d",b[num]);
   
   return 0;
 }

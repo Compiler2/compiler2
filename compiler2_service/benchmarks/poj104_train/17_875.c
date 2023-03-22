@@ -5,12 +5,12 @@ main_bench()
     char s[101];
     int i,l,n,x,j,r;
     int le[101]={0},ri[101]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(x=0;x<n;x++)
     {
         for(i=0;i<100;i++)
         {le[i]=0;ri[i]=0;}
-        scanf("%s",s);
+        my_scanf("%s",s);
         l=strlen(s);
         for(i=0;i<l;i++)
         {
@@ -31,10 +31,10 @@ main_bench()
         puts(s);
         for(i=0;i<l;i++)
         {
-            if(ri[i]==1) printf("?");
-            if(le[i]==1) printf("$");
-            if(ri[i]==0&&le[i]==0) printf(" ");
+            if(ri[i]==1) my_printf("?");
+            if(le[i]==1) my_printf("$");
+            if(ri[i]==0&&le[i]==0) my_printf(" ");
         }
-        printf("\n");
+        my_printf("\n");
     }
 }

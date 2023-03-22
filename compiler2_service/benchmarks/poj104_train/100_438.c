@@ -7,7 +7,7 @@ int main_bench()
 	char word[300];
 	int num[123]={0},l,i=0,j=97,k=0;
 
-		scanf("%s",word);
+		my_scanf("%s",word);
 		l=strlen(word);
 		for(j=97;j<123;j++)
 		{
@@ -25,7 +25,7 @@ int main_bench()
 			if(num[j]==0)
 				k++;
 		}
-		if(k==26)printf("No");
+		if(k==26)my_printf("No");
 		else
 		{
 		
@@ -34,7 +34,7 @@ int main_bench()
 		{
 			if(num[j]!=0)
 			{
-				printf("%c=%d\n",j,num[j]);
+				my_printf("%c=%d\n",j,num[j]);
 			}
 		}
 		}

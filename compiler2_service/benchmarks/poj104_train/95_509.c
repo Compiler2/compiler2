@@ -17,9 +17,9 @@ int main_bench()
 			s2[j]=s2[j]+32;
 	}
 	if(strcmp(s1,s2)>0)
-		printf(">\n");
+		my_printf(">\n");
 	else if(strcmp(s1,s2)<0)
-		printf("<\n");
+		my_printf("<\n");
 	else
-		printf("=\n");
+		my_printf("=\n");
 }

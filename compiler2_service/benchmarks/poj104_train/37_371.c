@@ -4,7 +4,7 @@ main_bench()
 { char *c,**s,**h,d;
   int i=0,n,j=0,w=1,a=0,*b,t=0;
   b=(int*)calloc(26,sizeof(int));
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   h=s=(char**)calloc(n,sizeof(char*));
   for(i=0;i<n;i++){
   c=(char*)calloc(100,sizeof(char));
@@ -23,9 +23,9 @@ main_bench()
     for(j=0,d=*(*(s+i)+j);*(*(s+i)+j)!='\0';j++)
     {  d=*(*(s+i)+j);
        w=*(b+(d-97));
-       if(w==1){printf("%c",d);t=1;break;}
+       if(w==1){my_printf("%c",d);t=1;break;}
     }
-    if(t==0)printf("no");
-    if(i!=n-1)printf("\n");
+    if(t==0)my_printf("no");
+    if(i!=n-1)my_printf("\n");
   }
 }

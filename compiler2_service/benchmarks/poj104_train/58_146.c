@@ -5,7 +5,7 @@ int main_bench()
 	int n;
 		int k;
 			char a[81];
-			scanf("%d",&n);
+			my_scanf("%d",&n);
 			getchar();
 	for(int i=0;i<n;i++)
 	{
@@ -13,7 +13,7 @@ int main_bench()
 		gets(a);
 		if(a[0]<='9'&&a[0]>='0')
 		{
-			printf("%d\n",k-1);
+			my_printf("%d\n",k-1);
 			continue;
 		}
 		for(int j=0;a[j]!='\0';j++)
@@ -23,13 +23,13 @@ int main_bench()
 			else
 			{
 				k--;
-				printf("%d\n",k);
+				my_printf("%d\n",k);
 				break;
 			}
 
 		}
         if(k==1)
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 	}
 	return 0;
 }

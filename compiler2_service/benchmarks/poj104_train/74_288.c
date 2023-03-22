@@ -5,7 +5,7 @@ int d[5],z,g,i,j,k,m,n,y,out[300],num;
 
 int main_bench()
 {
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	num=0;
 	
 
@@ -28,14 +28,14 @@ int main_bench()
 			}
 		}
 		
-			if (num==0) printf("no");
-			else if (num==1) printf("%d",out[0]);
+			if (num==0) my_printf("no");
+			else if (num==1) my_printf("%d",out[0]);
 			else 
 			{
-				printf("%d",out[0]);
+				my_printf("%d",out[0]);
 				for (i=1;i<num;i++)
 				{
-					printf(",%d",out[i]);
+					my_printf(",%d",out[i]);
 				}
 			}
 	

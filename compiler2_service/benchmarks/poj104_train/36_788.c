@@ -4,11 +4,11 @@ int main_bench()
 {
 	char str[200],zfc[200],x;
 	int i,j,h,len1,len2,m=0,n=0,s;
-	scanf("%s %s",str,zfc);
+	my_scanf("%s %s",str,zfc);
 	len1=strlen(str);
 	len2=strlen(zfc);
 	if(len1!=len2)
-	{printf("NO");}
+	{my_printf("NO");}
 	else
 	{
     	for(i=0;i<len1;i++)
@@ -28,14 +28,14 @@ int main_bench()
 			}
 	    	if(m!=s)
 			{
-			printf("NO");
+			my_printf("NO");
 			break;
 			}
 	    	else
 			{n++;}
 		}
 	    if(n==len1)
-		{printf("YES");}
+		{my_printf("YES");}
 	}
 	return 0;
 }

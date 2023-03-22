@@ -4,7 +4,7 @@ int main_bench(){
     char s[256],w[256],z[256];
     int ls,lw,t,lz;
     int i,j,loc=-1;
-    scanf("%s%s%s",w,s,z);
+    my_scanf("%s%s%s",w,s,z);
     ls=strlen(s);
     lw=strlen(w);
     lz=strlen(z);
@@ -22,13 +22,13 @@ int main_bench(){
 
     if(loc!=-1){
     for(i=0;i<loc;i++){
-                       printf("%c",w[i]);
+                       my_printf("%c",w[i]);
                        }
 
 
-    printf("%s",z);
+    my_printf("%s",z);
     for(i=loc+lz;i<lw;i++){
-                         printf("%c",w[i]);
+                         my_printf("%c",w[i]);
                          }
     }
     else{

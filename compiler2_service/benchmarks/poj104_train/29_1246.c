@@ -9,9 +9,9 @@ double sz[100];
 double b=1.0;
 double a=2.0;
 double sum=0;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(int i=0;i<m;i++){
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=0;j<n;j++){
 		sum=a/b+sum;
 		e=b;
@@ -25,7 +25,7 @@ for(int i=0;i<m;i++){
 	a=2.0;
 }
 for(int x=0;x<m;x++){
-	printf("%.3lf\n",sz[x]);
+	my_printf("%.3lf\n",sz[x]);
 }
 return 0;
 }

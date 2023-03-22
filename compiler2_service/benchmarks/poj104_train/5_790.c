@@ -2,18 +2,18 @@
 
     int main_bench(){
     double n;
-	scanf("%lf\n",&n);
+	my_scanf("%lf\n",&n);
 	char a[501],b[501];
-	scanf("%s\n",&a);
-	scanf("%s",&b);
+	my_scanf("%s\n",&a);
+	my_scanf("%s",&b);
     int la=strlen(a),lb=strlen(b),i;
 	int s=0;double e;
 	if(la!=lb){
-		printf("error");}
+		my_printf("error");}
 	else{
 	     for(i=0;i<la;i++){
 	     if(a[i]!='A'&&a[i]!='T'&&a[i]!='C'&&a[i]!='G'||b[i]!='A'&&b[i]!='T'&&b[i]!='C'&&b[i]!='G'){
-			printf("error");
+			my_printf("error");
 			break;
 	}
 	
@@ -23,9 +23,9 @@
 	if(i==la-1){
 	e=1.0*s/la;
 	if(e>n){
-	printf("yes");}
+	my_printf("yes");}
 	else{
-		printf("no");}
+		my_printf("no");}
 	}
 	}
 		 }

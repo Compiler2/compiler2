@@ -8,16 +8,16 @@ int main_bench(){
         sum2[i]=sum2[i-1]+mon[i];
         if(i==2)sum2[i]++;
        }
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     while(N--){
-       scanf("%d%d%d",&y,&a,&b);
+       my_scanf("%d%d%d",&y,&a,&b);
        ans=0;
        if(a>b){a^=b;b^=a;a^=b;}
        if((y%100==0&&y%400==0)||(y%100&&y%4==0))ans=(sum2[b-1]-sum2[a-1])%7;
        else ans=(sum1[b-1]-sum1[a-1])%7;
        
-        if(!ans)printf("YES\n");
-        else printf("NO\n");
+        if(!ans)my_printf("YES\n");
+        else my_printf("NO\n");
     }
     return 0;
 }

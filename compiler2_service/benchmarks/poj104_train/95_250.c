@@ -18,8 +18,8 @@ int main_bench()
 	for(i=0;i<=x;i++)c[i]=z(a[i]);
 	for(i=0;i<=y;i++)d[i]=z(b[i]);
 	  
-	if(strcmp(c,d)<0)printf("<");
-	else if(strcmp(c,d)==0)printf("=");
-	 else printf(">");
+	if(strcmp(c,d)<0)my_printf("<");
+	else if(strcmp(c,d)==0)my_printf("=");
+	 else my_printf(">");
    return 0;
 }

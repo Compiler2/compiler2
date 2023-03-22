@@ -4,11 +4,11 @@ int main_bench()
 {
 	int year[2][12]={{31,28,31,30,31,30,31,31,30,31,30,31},{31,29,31,30,31,30,31,31,30,31,30,31}};
 	int n,i,month1,month2,nyear,sum=0,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		sum=0;
-		scanf("%d %d %d",&nyear,&month1,&month2);
+		my_scanf("%d %d %d",&nyear,&month1,&month2);
 		if(month1<month2)
 		{
 		if(nyear%4!=0||(nyear%100==0&&nyear%400!=0))
@@ -21,9 +21,9 @@ int main_bench()
 			for(j=month1-1;j<month2-1;j++)
 				sum=sum+year[1][j];
 		if(sum%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 
 	}
 	else
@@ -38,9 +38,9 @@ int main_bench()
 			for(j=month2-1;j<month1-1;j++)
 				sum=sum+year[1][j];
 		if(sum%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
     }
 	}
 

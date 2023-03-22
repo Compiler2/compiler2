@@ -6,10 +6,10 @@ main_bench()
          int is_over_sixty_exist=1;
 	int age[100]={0},queue[100]={0};
 	char id[100][10]={'0'};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++){
 		queue[i]=i;
-		scanf("%s%d",id[i],&age[i]);
+		my_scanf("%s%d",id[i],&age[i]);
 	}
 	i=0;
 	while (is_over_sixty_exist){
@@ -37,5 +37,5 @@ main_bench()
 		i++;
 	}
 	for (i=0;i<n;i++)
-		printf("%s\n",id[queue[i]]);
+		my_printf("%s\n",id[queue[i]]);
 }

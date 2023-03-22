@@ -3,12 +3,12 @@
 main_bench()
 {
   	int n;
-  	scanf ("%d",&n);
+  	my_scanf ("%d",&n);
   	int i;
   	double a[500],b[500];
   	for(i=0;i<n;i++)
   	{
-	  scanf ("%d %d",&a[i],&b[i]);			
+	  my_scanf ("%d %d",&a[i],&b[i]);			
 	}
     double c[500];
     char r[500][500];
@@ -23,30 +23,30 @@ main_bench()
 	  {
 			if ((c[i]-c[0])>0.05)
 	   {
-	      printf ("better\n");
+	      my_printf ("better\n");
 	   }
 	   else if ((c[0]-c[i])>0.05)
 	    {
-		 printf ("worse\n");
+		 my_printf ("worse\n");
 		}
 	   else 
 	   {
-	      printf ("same\n");
+	      my_printf ("same\n");
 	   }	  
 	  }
 	  else 
 	  {
 	   	if ((c[i]-c[0])>0.05)
 	   {
-	     printf ("better");
+	     my_printf ("better");
 	   }
 	   else if ((c[0]-c[i])<0.05)
 	    {
-		 printf ("worse");
+		 my_printf ("worse");
 		}
 	   else 
 	   {
-	     printf ("same");
+	     my_printf ("same");
 	   }	  
 	  }
 	  

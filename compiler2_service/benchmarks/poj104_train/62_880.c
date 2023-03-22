@@ -10,7 +10,7 @@ int main_bench(){
 		if((i==0&&a[i]==' ')||(a[i-1]==' '&&a[i]==' ')){
 			continue;
 		}else{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 		}
 	}
 

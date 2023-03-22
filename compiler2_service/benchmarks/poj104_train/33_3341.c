@@ -4,9 +4,9 @@
 int main_bench() {
 	char zfc[256];
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n--){
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		for(i=0;zfc[i]!='\0';i++){
 			if(zfc[i]=='A'){
 				zfc[i]='T';
@@ -21,7 +21,7 @@ int main_bench() {
 				zfc[i]='C';
 			}
 		}	
-		printf("%s\n",zfc);
+		my_printf("%s\n",zfc);
 	}
 return 0;
 }

@@ -39,7 +39,7 @@ int main_bench()
                         if ((k.r<3 && k.h) || (k.r>2 && (!k.h)))
                         if ((l.r<3 && l.h) || (l.r>2 && (!l.h)))
                         if ((m.r<3 && m.h) || (m.r>2 && (!m.h)))                                                                                                
-                           printf("%d %d %d %d %d", i.r, j.r, k.r, l.r, m.r);
+                           my_printf("%d %d %d %d %d", i.r, j.r, k.r, l.r, m.r);
                         
                     }
                 }

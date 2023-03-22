@@ -6,8 +6,8 @@ main_bench()
 	char b[100];
 	memset(a,0,sizeof(a));
 	memset(b,0,sizeof(b));
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 
 	int l1=strlen(b);int l2=strlen(a);
 	for(i=0;i<l1;i++)
@@ -23,6 +23,6 @@ main_bench()
 				j++;}
 			
          if(j==l2)
-		 {printf("%d",i);
+		 {my_printf("%d",i);
 		 break;}}}
 }

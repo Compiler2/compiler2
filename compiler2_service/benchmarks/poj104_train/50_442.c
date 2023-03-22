@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 
@@ -12,7 +12,7 @@ int main_bench()
 
 		if((w+12%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	
 		}
 	}
@@ -20,7 +20,7 @@ int main_bench()
 	{
 		if((w+43%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	
 		}
 	}
@@ -28,7 +28,7 @@ int main_bench()
 	{
 		if((w+(31+28+12+(i-3)*61/2)%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	
 		}
 	}
@@ -36,7 +36,7 @@ int main_bench()
 	{
 		if((w+(31+28+31+12+(i-4)*61/2)%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		
 		}
 	}
@@ -44,7 +44,7 @@ int main_bench()
 	{
 		if((w+(28+31*5+2*30+12+(i-9)*61/2)%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			
 		}
 	}
@@ -52,7 +52,7 @@ int main_bench()
 	{
 		if((w+(28+5*31+3*30+12+(i-10)*61/2)%7)%7==5)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			
 		}
 	}

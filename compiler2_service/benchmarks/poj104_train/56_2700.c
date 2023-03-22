@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a[5],p,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<5;i++)
 	{
 	a[0]=n%10;p=a[0];
@@ -16,5 +16,5 @@ int main_bench()
 	if(n%100000!=n) {a[4]=(n%100000-1000*a[3]-100*a[2]-10*a[1]-a[0])/10000;p=10*p+a[4];}
 	else {p=10*p+(n%100000-1000*a[3]-100*a[2]-10*a[1]-a[0])/10000+100000*(n-n%100000);break;}
 	}
-	printf("%d\n",p);
+	my_printf("%d\n",p);
 }

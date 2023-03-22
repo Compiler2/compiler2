@@ -3,9 +3,9 @@
 int main_bench(){
     int n,i,j;
 	char sz[256];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",sz);
+		my_scanf("%s",sz);
 		for(j=0;sz[j];j++){
 			if(sz[j]=='A'){
 				sz[j]=sz[j]+19;
@@ -20,7 +20,7 @@ int main_bench(){
 				sz[j]=sz[j]+4;
 			}
 		}
-		printf("%s\n",sz);
+		my_printf("%s\n",sz);
 	}
 	return 0;
 }

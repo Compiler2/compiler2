@@ -5,11 +5,11 @@ int main_bench(){
 	int reverse(int num); 
 	int i,result,sz[6];
 	for(i=0;i<6;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
 	for(i=0;i<6;i++){
 		result=reverse(sz[i]);
-		printf("%d\n",result);
+		my_printf("%d\n",result);
 	}
 	
 	return 0;

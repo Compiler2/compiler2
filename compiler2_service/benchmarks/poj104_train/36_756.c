@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[100],b[100];
 	int i,atag[100],btag[100],alen,blen;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	alen=strlen(a);
 	blen=strlen(b);
 	for(i=0;i<100;i++){
@@ -26,10 +26,10 @@ int main_bench()
 			else break;
 		}
 		if(i==100){
-			printf("YES");
+			my_printf("YES");
 		}
-		else printf("NO");
+		else my_printf("NO");
 	}
-	else printf("NO");
+	else my_printf("NO");
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int i,k;
 	char s[51];
 	char w[51];
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	char oow[51][51]={'\0'};
 	int lens,lenw;
 	lens=strlen(s);
@@ -17,7 +17,7 @@ int main_bench()
 	}
 	for(i=0;i<=lenw-lens;i++){
 		if(strcmp(s,oow[i])==0){
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 			break;
 		}
 	}

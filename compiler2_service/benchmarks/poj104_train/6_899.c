@@ -4,10 +4,10 @@ void m(int,int);
 main_bench()
 {
 	int a,b,c,i;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%d%d",&b,&c);
+		my_scanf("%d%d",&b,&c);
 		m(b,c);
 	}
 }
@@ -20,12 +20,12 @@ void m(int q,int w)
 	{
 		for(j=1;j<=w;j++)
 		{
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			if(i==1||j==1||i==q||j==w)
 			{
 				sum+=a;
 			}
 		}
 	}
-	printf("%ld\n",sum);
+	my_printf("%ld\n",sum);
 }

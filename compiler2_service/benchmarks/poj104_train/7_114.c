@@ -3,12 +3,12 @@
 int main_bench()
 {
 	char M[3][20];
-	scanf("%s", M[0]);
+	my_scanf("%s", M[0]);
 	if(M[0][0]=='i')
-		printf("iloveearth");
+		my_printf("iloveearth");
 	else if(M[0][0]=='s')
-		printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
-	else printf("programmingiscool");
+		my_printf("sdjkhfksdahfjksdh111111lhfjkasdhkfhkasdhfklahsdjkfhsdk");
+	else my_printf("programmingiscool");
 
 	return 0;
 }

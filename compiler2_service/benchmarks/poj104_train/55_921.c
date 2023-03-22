@@ -5,9 +5,9 @@ main_bench()
 int a,b,d,i,l,m,n;
 long s=0;
 char c[32],e[32];
-scanf("%d %s %d",&a,c,&b);
+my_scanf("%d %s %d",&a,c,&b);
 if(c[0]=='0')
-printf("%d\n",0);
+my_printf("%d\n",0);
 else
 { 
 l=strlen(c);
@@ -31,8 +31,8 @@ e[i]=n-10+'A';
 s=s/b;         
 }
 for(m=i-1;m>0;m--) 
-printf("%c",e[m]);
-printf("%c\n",e[0]);
+my_printf("%c",e[m]);
+my_printf("%c\n",e[0]);
 }
 getchar();
 getchar();  

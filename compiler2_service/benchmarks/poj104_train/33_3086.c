@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		char str[256],*ps;
-		scanf("%s",str);
+		my_scanf("%s",str);
 		for(ps=str;*ps!='\0';ps++){
 			if(*ps=='A'){
 			    *ps=*ps-'A'+'T';
@@ -17,7 +17,7 @@ int main_bench(){
 				*ps=*ps-'G'+'C';
 			}
 		}
-	    printf("%s\n",str);
+	    my_printf("%s\n",str);
 	}
 	return 0;
 }

@@ -2,9 +2,9 @@
 
 int main_bench(){
 	char s[257],ss[257],r[257];
-	scanf("%s",s);
-	scanf("%s",ss);
-	scanf("%s",r);
+	my_scanf("%s",s);
+	my_scanf("%s",ss);
+	my_scanf("%s",r);
 	char left[257];
 	int i,t,k,j;
 	int ls=strlen(s);
@@ -26,10 +26,10 @@ int main_bench(){
 			break;
 		}
 	}
-	printf("%s",s);
+	my_printf("%s",s);
 	if(t==lss){
-	printf("%s",r);
-	printf("%s",left);
+	my_printf("%s",r);
+	my_printf("%s",left);
 	}
 	return 0;
 }

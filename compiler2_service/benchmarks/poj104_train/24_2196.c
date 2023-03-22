@@ -37,8 +37,8 @@ int main_bench()
     }
     
     for(i=c[0];i<c[0]+b[0];i++)
-    printf("%c",a[i]);
-    printf("\n");
+    my_printf("%c",a[i]);
+    my_printf("\n");
      for(i=0;i<200;i++)
     {
       if(b[i]==0)
@@ -53,8 +53,8 @@ int main_bench()
       }
     }
    for(i=c[0];i<c[0]+b[0];i++)
-    printf("%c",a[i]);
-    printf("\n");
+    my_printf("%c",a[i]);
+    my_printf("\n");
   return 0;
 }
 

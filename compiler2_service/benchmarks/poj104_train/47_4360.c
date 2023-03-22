@@ -4,13 +4,13 @@
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int a[n];
     for(i=1;i<=n;i++)
-    scanf("%d",&a[i-1]);
+    my_scanf("%d",&a[i-1]);
     for(i=n-1;i>=1;i--)
-    printf("%d ",a[i]);
-    printf("%d",a[0]);
+    my_printf("%d ",a[i]);
+    my_printf("%d",a[0]);
     	
     return 0;
 }

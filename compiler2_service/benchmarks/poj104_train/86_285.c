@@ -2,13 +2,13 @@
 
 int main_bench(){
 int n,i,j,t,num,b[100],c[100][61]={0};
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for (i=0;i<n;i++)
    {
-       scanf("%d",&b[i]);
+       my_scanf("%d",&b[i]);
        for (j=0;j<b[i];j++)
        {
-        scanf("%d",&t);
+        my_scanf("%d",&t);
         c[i][t-1]=1;
        } 
     }
@@ -25,7 +25,7 @@ int n,i,j,t,num,b[100],c[100][61]={0};
    if (j>=60) num+=1;
    }
    }
-  printf("%d\n",num);
+  my_printf("%d\n",num);
  }
  return 0;
 }

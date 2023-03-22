@@ -4,9 +4,9 @@ int main_bench()
 {    int a,b,i,j;
 
      char s[50],t[50],m[102];
-	scanf("%s",s);
+	my_scanf("%s",s);
 	getchar();
-     scanf("%s",t);
+     my_scanf("%s",t);
 	 a=strlen(s);
 	 b=strlen(t);
 for(i=0;i<=b-a;i++)
@@ -16,7 +16,7 @@ for(i=0;i<=b-a;i++)
 	break;
 	}
 	if(j==i+a)
-	{printf("%d",i);
+	{my_printf("%d",i);
 	break;
 	}
 	else continue;

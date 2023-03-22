@@ -5,17 +5,17 @@ int main_bench()
 {
 	void f(int *p,int n,int m);
 	int *p,n,m;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(p=a;p<a+n;p++)
-		scanf("%d",p);
+		my_scanf("%d",p);
 	p=a;
 	f(p,n,m);
 	for(p=a;p<a+n;p++)
 	{
 		if(p<a+n-1)
-			printf("%d ",*p);
+			my_printf("%d ",*p);
 		else
-			printf("%d\n",*p);
+			my_printf("%d\n",*p);
 	}	
 	return 0;
 }

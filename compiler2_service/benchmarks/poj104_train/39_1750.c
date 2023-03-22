@@ -13,8 +13,8 @@ int main_bench()
 		int g;
 	}a[2];
 	int n,i,sum;
-	scanf("%d",&n);
-	scanf("%s %d %d %c %c %d",a[0].name,&a[0].b,&a[0].c,&a[0].d,&a[0].e,&a[0].f);
+	my_scanf("%d",&n);
+	my_scanf("%s %d %d %c %c %d",a[0].name,&a[0].b,&a[0].c,&a[0].d,&a[0].e,&a[0].f);
 	a[0].g=0;
 	if((a[0].b>80)&&(a[0].f>0))
 		a[0].g=a[0].g+8000;
@@ -28,7 +28,7 @@ int main_bench()
 		a[0].g=a[0].g+850;
 	sum=a[0].g;
 	for(i=1;i<n;i++){
-		scanf("%s %d %d %c %c %d",a[1].name,&a[1].b,&a[1].c,&a[1].d,&a[1].e,&a[1].f);
+		my_scanf("%s %d %d %c %c %d",a[1].name,&a[1].b,&a[1].c,&a[1].d,&a[1].e,&a[1].f);
 		a[1].g=0;
 	if((a[1].b>80)&&(a[1].f>0))
 		a[1].g=a[1].g+8000;
@@ -44,7 +44,7 @@ int main_bench()
 	if(a[0].g<a[1].g)
 		a[0]=a[1];
 	}
-	printf("%s\n%d\n%d\n",a[0].name,a[0].g,sum);
+	my_printf("%s\n%d\n%d\n",a[0].name,a[0].g,sum);
 	return 0;
 }
 

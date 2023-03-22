@@ -21,10 +21,10 @@
 		int n,i;
 		int sum=0,max=0,max_i=0,m[100]={0};
 
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		for(i=0;i<n;i++)
 		{
-			scanf("%s %d %d %c %c %d",a[i].name,&a[i].q,&a[i].b,&a[i].w,&a[i].x,&a[i].l);
+			my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].q,&a[i].b,&a[i].w,&a[i].x,&a[i].l);
 			if((a[i].q>80)&&(a[i].l>=1))
 			{m[i]+=8000;}
 			if((a[i].b>80)&&(a[i].q>85))
@@ -58,9 +58,9 @@
 		}
 		
 		
-		printf("%s\n",a[max_i].name);
-		printf("%d\n",m[max_i]);
-		printf("%d\n",sum);
+		my_printf("%s\n",a[max_i].name);
+		my_printf("%d\n",m[max_i]);
+		my_printf("%d\n",sum);
 
 
 	

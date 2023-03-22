@@ -6,10 +6,10 @@ int main_bench()
 	int arr[1001];
 	int i,j,bb;
 
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&arr[i]);
+		my_scanf("%d",&arr[i]);
 	}
 	for(i=0;i<n-1;i++)
 	{
@@ -18,10 +18,10 @@ int main_bench()
 		{
 			if(bb==arr[j])
 			{
-				printf("yes\n");
+				my_printf("yes\n");
 				return 0;
 			}
 		}
 	}
-	if(i==n-1)printf("no\n");
+	if(i==n-1)my_printf("no\n");
 }

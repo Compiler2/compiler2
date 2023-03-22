@@ -30,7 +30,7 @@ int main_bench()
 {
 	int m,n;
 	int x[100];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	int i,k=0;
 	for(i=m;i<=n;i++)
 	{
@@ -40,13 +40,13 @@ int main_bench()
 			k++;
 		}
 	}
-	if(k==0) printf("no\n");
+	if(k==0) my_printf("no\n");
 	else
 		for(i=0;i<k;i++)
 		{
 			if(i!=k-1)
-				printf("%d,",x[i]);
+				my_printf("%d,",x[i]);
 			else
-				printf("%d\n",x[i]);
+				my_printf("%d\n",x[i]);
 		}
 }

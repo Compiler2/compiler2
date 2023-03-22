@@ -6,9 +6,9 @@ int main_bench()
 	int qimo[150],ban[150],lun[150],zong[150];
 	char name[150][20],xue[150],xi[150],the[20];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%s %d %d %c %c %d",name[i],&qimo[i],&ban[i],&xue[i],&xi[i],&lun[i]);
+		my_scanf("%s %d %d %c %c %d",name[i],&qimo[i],&ban[i],&xue[i],&xi[i],&lun[i]);
 
 
 	for(i=0;i<n;i++)
@@ -44,8 +44,8 @@ int main_bench()
 		s=s+zong[i];
 
 
-		printf("%s\n",the);
-		printf("%d\n",max);
+		my_printf("%s\n",the);
+		my_printf("%d\n",max);
 
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 }

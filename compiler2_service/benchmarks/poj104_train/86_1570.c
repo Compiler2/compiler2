@@ -3,14 +3,14 @@
 
 int main_bench(){
 	int sz[100][100],n,tiaohuai[100],sum[100]={0},i,k,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&tiaohuai[i]);
+		my_scanf("%d",&tiaohuai[i]);
 		if(tiaohuai[i]==0){
 			continue;
 		}
 		for(k=0;k<tiaohuai[i];k++){
-			scanf("%d",&sz[i][k]);
+			my_scanf("%d",&sz[i][k]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -39,7 +39,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%d\n",sum[i]);
+		my_printf("%d\n",sum[i]);
 	}
 	return 0;
 }

@@ -2,7 +2,7 @@
 
 int main_bench(){
     int a;
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     char c[100][10000];
     int d[100];
     int e[100][1000];
@@ -19,16 +19,16 @@ int main_bench(){
                                                         }}
                     if(e[i][j]==1){
                                    b++;
-                                   printf("%c\n",c[i][j]);
+                                   my_printf("%c\n",c[i][j]);
                                    break;}
                     
                     }
                     if(b==0){
-             printf("no\n");
+             my_printf("no\n");
              }
              b=0;}
     
             
     int y;
-    scanf("%d",&y);
+    my_scanf("%d",&y);
     return 0;}

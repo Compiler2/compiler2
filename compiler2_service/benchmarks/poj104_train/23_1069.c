@@ -22,8 +22,8 @@ void turn(char a[100])
 	}
 	b[j][k]='\0';
 	for(i=j;i>0;i--)
-		printf("%s ",b[i]);
-	printf("%s",b[i]);
+		my_printf("%s ",b[i]);
+	my_printf("%s",b[i]);
 }
 int main_bench()
 {

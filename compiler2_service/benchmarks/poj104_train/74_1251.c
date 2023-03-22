@@ -43,19 +43,19 @@ int main_bench()
 	int m,n;
 	int i;
 	int count=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(isprime(i)==1&&isround(i)==1)
 		{
 			if(count==0)
-				printf("%d",i);
+				my_printf("%d",i);
 			else 
-				printf(",%d",i);
+				my_printf(",%d",i);
 			count++;
 		}
 	}
-     if(count==0)printf("no");
+     if(count==0)my_printf("no");
 
 	return 0;
 }

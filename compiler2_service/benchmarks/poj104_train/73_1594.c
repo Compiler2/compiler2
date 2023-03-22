@@ -7,7 +7,7 @@ int zx[5];
 int s,p=0,a,b;
 for(a=0;a<5;a++){
 	for(b=0;b<5;b++){
-		scanf("%d",&sz[a][b]);
+		my_scanf("%d",&sz[a][b]);
 	}
 }
 	for(a=0;a<5;a++){
@@ -35,13 +35,13 @@ if(sz[a][b]<=s)
 for(a=0;a<5;a++){
 	for(b=0;b<5;b++){
 		if(sz[a][b]==zd[a]&&sz[a][b]==zx[b]){
-			printf("%d %d %d",a+1,b+1,sz[a][b]);
+			my_printf("%d %d %d",a+1,b+1,sz[a][b]);
 		p++;
 	}
 }
 }
 	if(p==0)
-		printf("not found");
+		my_printf("not found");
 
  return 0;
 }

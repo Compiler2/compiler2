@@ -11,23 +11,23 @@ int main_bench()
 
 	for (i = 0; i < 5; i++){
 		for(j = 0; j < 5; j++){
-			scanf("%d",&a[i][j]);
+			my_scanf("%d",&a[i][j]);
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	
 	outcome = exchange(a, m, n);
 	if (outcome == 0){
-		printf("error");
+		my_printf("error");
 	}
 	else {
 		for(i = 0; i < 5; i++){
 			for(j = 0; j < 4; j++){
-				printf("%d",a[i][j]);
-				printf(" ");
+				my_printf("%d",a[i][j]);
+				my_printf(" ");
 			}
-			printf("%d",a[i][4]);
-			printf("\n");
+			my_printf("%d",a[i][4]);
+			my_printf("\n");
 		}
 	}
 	return 0;

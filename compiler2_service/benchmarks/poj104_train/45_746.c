@@ -8,8 +8,8 @@ int main_bench()
 	pp=(char **)malloc(2*sizeof(char *));
 	pp[0]=(char *)malloc(5*sizeof(char));
 	pp[1]=(char *)malloc(50*sizeof(char));
-	scanf("%s",pp[0]);
-	scanf("%s",pp[1]);
+	my_scanf("%s",pp[0]);
+	my_scanf("%s",pp[1]);
 	l1=strlen(pp[0]);
 	l2=strlen(pp[1]);
 	for(i=0;i<l2-l1;i++)
@@ -26,5 +26,5 @@ int main_bench()
 			break;
 		}
 	}
-		printf("%d",i);
+		my_printf("%d",i);
 }

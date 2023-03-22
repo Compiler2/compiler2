@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,x,y,d;
-scanf("%d%d%d\n",&n,&x,&y);
+my_scanf("%d%d%d\n",&n,&x,&y);
 d=0;
 if ((x>2)&&(n%400==0)) 
 d=1;
@@ -24,6 +24,6 @@ case 3:d=d+31;
 case 2:d=d+28;
 case 1:d=d+31;
 }
-printf("%d\n",d);
+my_printf("%d\n",d);
 return 0;
 }

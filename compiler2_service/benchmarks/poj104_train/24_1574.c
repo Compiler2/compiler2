@@ -62,23 +62,23 @@ int main_bench()
 		{
 			for(i=0;i<b[1];i++)
 			{
-				printf("%c",sz[i]);
+				my_printf("%c",sz[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	else
 	{
         for(i=b[f-1]+1;i<b[f];i++)
 		{
-		    printf("%c",sz[i]);
+		    my_printf("%c",sz[i]);
 		} 
-	    printf("\n");
+	    my_printf("\n");
 	    for(i=b[g-1]+1;i<b[g];i++)
 		{
-		    printf("%c",sz[i]);
+		    my_printf("%c",sz[i]);
 		} 
-	    printf("\n");
+	    my_printf("\n");
 	}
 	return 0;
 }

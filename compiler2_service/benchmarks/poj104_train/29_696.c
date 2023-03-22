@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i;
 	for(i=0;i<m;i++)
 	{
 		int n;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		int a=2,b=1,k,e;
 		double sum=0;
 		for(k=1;k<=n;k++)
@@ -17,7 +17,7 @@ int main_bench(){
 			a=a+b;
 			b=e;
 		}
-		printf("%.3lf\n",sum);
+		my_printf("%.3lf\n",sum);
 	}
 	return 0;
 }

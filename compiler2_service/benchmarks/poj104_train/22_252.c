@@ -24,8 +24,8 @@ int main_bench()
   {
   if(a[i]>first){first=a[i];}
   else if(a[i]>second&&a[i]<first){second=a[i];}}
-  if(second==0)printf("No");
-  else printf("%u",second);
+  if(second==0)my_printf("No");
+  else my_printf("%u",second);
 }
 
 

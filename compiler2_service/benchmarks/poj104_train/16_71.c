@@ -6,7 +6,7 @@ int main_bench()
     int n;
     int i=0;
     int num[5];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while( n/10!=0 )
     {
            num[i++]=n%10;
@@ -14,6 +14,6 @@ int main_bench()
     }
     num[i]=n;
     for( int m=0;m<=i;m++ )
-    printf("%d",num[m]);
-printf("\n");
+    my_printf("%d",num[m]);
+my_printf("\n");
 }

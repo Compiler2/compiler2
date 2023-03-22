@@ -30,13 +30,13 @@ int main_bench()
 	int n,i,*num,sum=0,*temp,r=0;
 	float ave,max=0.0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	num=(int *)malloc(n*sizeof(int));
 	temp=(int *)malloc(n*sizeof(int));
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",(num+i));
+		my_scanf("%d",(num+i));
 		sum+=*(num+i);
 	}
 	
@@ -58,14 +58,14 @@ int main_bench()
 	}
 	if(r==1)
 	{
-		printf("%d",*(temp+0));
+		my_printf("%d",*(temp+0));
 	}
 	else
 	{
 		bubble(temp,r);
 		for(i=0;i<r;i++)
 		{
-			printf("%d%c",*(temp+i),(i!=r-1?',':'\n'));
+			my_printf("%d%c",*(temp+i),(i!=r-1?',':'\n'));
 		}
 	}
 }

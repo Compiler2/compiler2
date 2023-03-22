@@ -8,10 +8,10 @@ int main_bench()
 		int zongfen ;
 	}grades[100007];
 	int i,n,j,t,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&grades[i].id,&grades[i].yuwen,&grades[i].shuxue);
+		my_scanf("%d%d%d",&grades[i].id,&grades[i].yuwen,&grades[i].shuxue);
 	
 		grades[i].zongfen=grades[i].yuwen+grades[i].shuxue;
 	}
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	for(i=n-1;i>=n-3;i--)
 	{
-		printf("%d %d\n",grades[i].id,grades[i].zongfen);
+		my_printf("%d %d\n",grades[i].id,grades[i].zongfen);
 	}
 
 	return 0;

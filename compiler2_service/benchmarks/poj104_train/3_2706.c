@@ -5,10 +5,10 @@ int main_bench()
     int n,k;
     int c[1000];
     int i=0,j=0,A=0;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     while(i<n)
     {
-        scanf("%d",&c[i]);
+        my_scanf("%d",&c[i]);
         i++;
     }
     i=0;
@@ -22,7 +22,7 @@ int main_bench()
         }
         i++;
     }
-    if(A==1) printf("yes");
-    else printf("no");
+    if(A==1) my_printf("yes");
+    else my_printf("no");
     return 0;
 }

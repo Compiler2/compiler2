@@ -13,12 +13,12 @@ struct Student
 int n;
 int main_bench()
 {
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int i;
    int all=0;
    for(i=0;i<n;i++)
    {
-	   scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].g,&stu[i].x,&stu[i].l);
+	   my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].a,&stu[i].b,&stu[i].g,&stu[i].x,&stu[i].l);
        stu[i].sum=0;
 	   if(stu[i].a>80&&stu[i].l>=1)
 		   stu[i].sum+=8000;
@@ -42,11 +42,11 @@ int main_bench()
    {
 	   if(stu[i].sum==max)
 	   {
-		   printf("%s\n",stu[i].name);
-		   printf("%d\n",stu[i].sum);
+		   my_printf("%s\n",stu[i].name);
+		   my_printf("%d\n",stu[i].sum);
 		   break;
 	   }
    }
-   printf("%d\n",all);
+   my_printf("%d\n",all);
    return 0;
 }

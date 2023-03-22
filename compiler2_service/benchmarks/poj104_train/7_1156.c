@@ -3,9 +3,9 @@
 main_bench()
 {char a[256];
  char b[256],c[256];
- scanf("%s",a);
- scanf("%s",b);
- scanf("%s",c);
+ my_scanf("%s",a);
+ my_scanf("%s",b);
+ my_scanf("%s",c);
  int sum1=strlen(b);
  int i,j,k,m,n,p,q,start,pd=0;
   for(start=0;start<strlen(a);start++)
@@ -23,6 +23,6 @@ main_bench()
     {for(q=p,k=0;c[k]!='\0';q++,k++)
       a[q]=c[k];
     }
- printf("%s",a);
+ my_printf("%s",a);
 
 }

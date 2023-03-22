@@ -3,11 +3,11 @@
 int main_bench()
 {
   int a[300],n,i,j,t,k;
-  scanf("%d",&a[0]);
+  my_scanf("%d",&a[0]);
   for(i=1;;i++)
   {
     if(getchar()==',')
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     else
     break;
   }
@@ -24,9 +24,9 @@ for(j=0,k=0;j<i;j++)
    k=a[j];
  }
 if(k==0)
-printf("No");
+my_printf("No");
 else
-printf("%d",k);
+my_printf("%d",k);
 return 0;
 }
   

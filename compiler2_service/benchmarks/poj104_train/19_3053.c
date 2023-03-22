@@ -6,8 +6,8 @@ int main_bench()
 	char tihuan[100][100];
 	int i,j=0,m=-1,n;
 	gets(a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
 	for(i=0;;i++)
 	{
 		if(a[i]==' ')
@@ -38,11 +38,11 @@ int main_bench()
 	for(i=0;i<j;i++)
 		if(t)
 		{
-		printf("%s",tihuan[i]);
+		my_printf("%s",tihuan[i]);
 		t=0;
 		}
 		else
-			printf(" %s",tihuan[i]);
+			my_printf(" %s",tihuan[i]);
 	return 0;
 }
 

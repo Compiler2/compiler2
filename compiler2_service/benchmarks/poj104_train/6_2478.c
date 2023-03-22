@@ -7,14 +7,14 @@ int main_bench()
 	int sum=0;
 	int i,j,l;
 	int m,n;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for (i=0;i<k;i++)
 	{
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
 		if (n==1&&m==1)
 		{
-			scanf("%d",&sum);
-		    printf("%d",sum);
+			my_scanf("%d",&sum);
+		    my_printf("%d",sum);
 		    sum=0;
 		}
 		else
@@ -22,7 +22,7 @@ int main_bench()
 		{
 			for (l=0;l<n;l++)
 			{
-				scanf("%d",*(a+j)+l);
+				my_scanf("%d",*(a+j)+l);
 			}
 		}
 		for (l=0;l<n;l++)
@@ -34,7 +34,7 @@ int main_bench()
 			sum=sum+*(*(a+l)+0)+*(*(a+l)+n-1);
 		}
 		sum=sum-*(*(a+0)+0)-*(*(a+0)+n-1)-*(*(a+m-1)+0)-*(*(a+m-1)+n-1);
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	    sum=0;
 		}
 	}

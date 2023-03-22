@@ -6,7 +6,7 @@
 int main_bench()
 {
     int a;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	char zuozhe[100][100];
 	int shuhao[100];
 	int zuo[200];
@@ -21,7 +21,7 @@ int main_bench()
 	
 	for(i=0;i<a;i++)
 	{
-		scanf("%d %s",&shuhao[i],zuozhe[i]);
+		my_scanf("%d %s",&shuhao[i],zuozhe[i]);
 	}
 	for(i=0;i<a;i++)
 	{
@@ -40,11 +40,11 @@ int main_bench()
 			p=i;
 		}
 	}
-	printf("%c\n",p);
-	printf("%d\n",zuo[p]);
+	my_printf("%c\n",p);
+	my_printf("%d\n",zuo[p]);
 	for(i=0;i<m[p];i++)
 	{
-		printf("%d\n",shu[p][i]);
+		my_printf("%d\n",shu[p][i]);
 	}
 
 	return 0;

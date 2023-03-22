@@ -38,7 +38,7 @@ int main_bench()
 				c[i]=' ';
 		}
 		c[i]='\0';
-		printf("%s\n%s\n",s,c);
+		my_printf("%s\n%s\n",s,c);
 	}
 	return 0;
 }

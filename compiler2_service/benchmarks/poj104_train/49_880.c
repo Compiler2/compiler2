@@ -5,7 +5,7 @@ int main_bench()
 	int t,k,i,j,m;
 	char c[500];
 	for(i=0;;i++)
-	{scanf("%c",&c[i]);
+	{my_scanf("%c",&c[i]);
 	if(c[i]=='\n') break;}
 	t=i;
 	for(k=2;k<=t;k++)
@@ -14,7 +14,7 @@ int main_bench()
 	{if(c[j]!=c[2*i+k-1-j]) break;}
 	if(j==(i+k/2+1)) 
 	{for(m=i;m<i+k;m++)
-	printf("%c",c[m]);
-	if(m==i+k) printf("\n");}}}
+	my_printf("%c",c[m]);
+	if(m==i+k) my_printf("\n");}}}
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
  int i,j,k,l,m,n;
  float num;
- scanf("%f",&num);
+ my_scanf("%f",&num);
  i=(int)(num/100);
  num=num-i*100;
  j=(int)(num/50);
@@ -17,7 +17,7 @@ int main_bench()
  num=num-m*5;
  n=(int)(num);
  num=num-n;
- printf("%d\n%d\n%d\n%d\n%d\n%d\n",i,j,k,l,m,n);
+ my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",i,j,k,l,m,n);
      
  return 0;
 } 

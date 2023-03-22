@@ -16,19 +16,19 @@ int main_bench()
 						{
 							if(q==i)
 							{
-								printf("z %d\n",10*q);
+								my_printf("z %d\n",10*q);
 							}
 							if(w==i)
 							{
-								printf("q %d\n",10*w);
+								my_printf("q %d\n",10*w);
 							}
 							if(e==i)
 							{
-								printf("s %d\n",10*e);
+								my_printf("s %d\n",10*e);
 							}
 							if(r==i)
 							{
-								printf("l %d\n",10*r);
+								my_printf("l %d\n",10*r);
 							}
 						}
 				}

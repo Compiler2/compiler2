@@ -2,12 +2,12 @@
 
 int main_bench(){
 int n,c,m;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 int a[100],b[100];
 for(int i=0;i<n-1;i++){
-scanf("%d%d\n",&a[i],&b[i]);
+my_scanf("%d%d\n",&a[i],&b[i]);
 }
-scanf("%d%d",&a[n-1],&b[n-1]);
+my_scanf("%d%d",&a[n-1],&b[n-1]);
 
 
 for(int k=1;k<=n;k++){
@@ -57,9 +57,9 @@ b[i+1]=b[i];
 b[i]=e;	}}}
 
 
-printf("%d %d",a[0],b[n-1]);
+my_printf("%d %d",a[0],b[n-1]);
 }else{
-printf("no");
+my_printf("no");
 }
 
 

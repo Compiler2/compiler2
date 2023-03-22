@@ -2,13 +2,13 @@
 
 int main_bench(){
 	int k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(int z=0;z<k;z++){
 		int num[100][100],m,n;
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(int j=0;j<m;j++){
 			for(int i=0;i<n;i++){
-				scanf("%d",&num[j][i]);
+				my_scanf("%d",&num[j][i]);
 			
 			}
 		}
@@ -23,10 +23,10 @@ int main_bench(){
 		}
 		sum=sum-num[0][0]-num[0][n-1]-num[m-1][0]-num[m-1][n-1];
 		if(z!=0){
-			printf("\n");
+			my_printf("\n");
 				
 		}
-		printf("%d",sum);
+		my_printf("%d",sum);
 		
 	}
 	return 0;

@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
 		int j;
 		int a[1000];
 		char s[1000];
-		scanf("%s",s);
+		my_scanf("%s",s);
 		int l=strlen(s);
-		printf("%s\n",s);
+		my_printf("%s\n",s);
       
 		for(j=0;j<l;j++)
 			a[j]=0;
@@ -45,6 +45,6 @@ int main_bench()
 			if(s[j]!='?'&&s[j]!='$')
 				s[j]=' ';
 		}
-		printf("%s\n",s);
+		my_printf("%s\n",s);
 	}
 }

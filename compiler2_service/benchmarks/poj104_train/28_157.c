@@ -10,7 +10,7 @@ int main_bench()
 	{
 		if(b[i]!=' '&&b[i+1]=='\0')
 		{
-			num++;printf("%d",j+1);j=0;
+			num++;my_printf("%d",j+1);j=0;
 		}
 		else if(b[i]!=' ')
 		{
@@ -18,7 +18,7 @@ int main_bench()
 		}
 		else if(b[i]==' '&&b[i+1]!=' ')
 		{
-			num++;printf("%d,",j);j=0;
+			num++;my_printf("%d,",j);j=0;
 		}
 	
 	}

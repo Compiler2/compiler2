@@ -6,7 +6,7 @@ int main_bench()
 	char a[3000];
 	int b[500];
 	int i,j,k,l,p,temp,sum=0,q=0;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	for(i=0;a[i]!=0;i++)
 	{
 		if(a[i]==',')
@@ -20,7 +20,7 @@ int main_bench()
 			break;
 		}
 	}
-	if(q==0)printf("No");
+	if(q==0)my_printf("No");
 	else
 	{
 		p=1;
@@ -43,7 +43,7 @@ int main_bench()
 		{
 			if(b[k]!=b[0])break;
 		}
-		if(k==p)printf("No");
+		if(k==p)my_printf("No");
 		else
 		{
 		
@@ -69,7 +69,7 @@ int main_bench()
 					temp=b[1];b[1]=b[k];b[k]=temp;
 				}
 		}
-		printf("%d\n",b[1]);
+		my_printf("%d\n",b[1]);
 		}
 
 	}

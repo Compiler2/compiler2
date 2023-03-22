@@ -5,7 +5,7 @@ int main_bench()
 	int m,n,i1,i2=0,i3=0,mark1,mark2,len,mark3=0;
 	int a[10];
 	int k,x;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(k=m;k<=n;k++)
 	{
 
@@ -37,19 +37,19 @@ int main_bench()
 			{
 				if(mark3==0)
 				{	for(i3=0;i3<len;i3++)
-					printf("%d",a[i3]);
+					my_printf("%d",a[i3]);
 					mark3=1;
 				}
 				else
 				{
-					printf(",");
+					my_printf(",");
 					for(i3=0;i3<len;i3++)
-					printf("%d",a[i3]);
+					my_printf("%d",a[i3]);
 				}
 			}
 		}
 	}
 
-	if(mark3==0)printf("no\n");
-	else printf("\n");
+	if(mark3==0)my_printf("no\n");
+	else my_printf("\n");
 }

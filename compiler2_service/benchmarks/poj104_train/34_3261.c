@@ -5,7 +5,7 @@ int main_bench()
 {
   void jiaogu(int n);
   int m;
-  scanf("%d",&m);
+  my_scanf("%d",&m);
   jiaogu(m);
 }
 
@@ -13,7 +13,7 @@ void jiaogu(int n)
 {
    void shizi(int x);
    if(n==1)
-   printf("End");
+   my_printf("End");
    if(n%2==0)
    {shizi(n); 
     jiaogu(n/2);}
@@ -26,8 +26,8 @@ void shizi(int x)
 {  int y;
    if(x%2==0)
    {y=x/2; 
-   printf("%d/2=%d\n",x,y);}
+   my_printf("%d/2=%d\n",x,y);}
   if(x%2!=0)
   {y=(x*3+1);
-   printf("%d*3+1=%d\n",x,y);}
+   my_printf("%d*3+1=%d\n",x,y);}
 }

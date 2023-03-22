@@ -27,12 +27,12 @@ int main_bench()
 	char q;
 	for(i=1;;i++)
 	{
-		scanf("%d",&a[i-1]);
+		my_scanf("%d",&a[i-1]);
 		q=getchar();
 		if(q=='\n') break;
 	}
 	
-	if(i==1) printf("No");
+	if(i==1) my_printf("No");
 	else
 	{
 		for(m=i;m>=1;m--)
@@ -49,13 +49,13 @@ int main_bench()
 		{
 			if(a[m-1]>a[m-2])
 			{
-				printf("%d",a[m-2]);
+				my_printf("%d",a[m-2]);
 				break;
 				
 			}
 		    
 		}
-		if(m==1) printf("No");
+		if(m==1) my_printf("No");
 	}
 	return 0;
 }

@@ -5,12 +5,12 @@ int main_bench(){
 	float a[40],m[40],f[40],e;
 	char s[7];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	g=0;
 	h=0;
 	for(i=0;i<n;i++){
-		scanf("%s %f",s,&a[i]);
+		my_scanf("%s %f",s,&a[i]);
 		if(s[0]=='m'){
 			m[g]=a[i];
 			g++;
@@ -42,14 +42,14 @@ int main_bench(){
 	}
 
 	for(j=0;j<g;j++){
-		printf("%.2f ",m[j]);
+		my_printf("%.2f ",m[j]);
 	}
 	for(q=0;q<h;q++){
 		if(q!=h-1){
-			printf("%.2f ",f[q]);
+			my_printf("%.2f ",f[q]);
 		}
 		else{
-			printf("%.2f",f[q]);
+			my_printf("%.2f",f[q]);
 		}
 	}
 

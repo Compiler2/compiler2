@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int m,n;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for (int z=0;z<m;z++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		double sum=0;
 		int x=1,y=2;
 		int tmp;
@@ -15,9 +15,9 @@ int main_bench(){
 			x=tmp;
 		}
 		if(z!=0){
-			printf("\n");
+			my_printf("\n");
 		}
-		printf("%.3lf",sum);
+		my_printf("%.3lf",sum);
 	}
 
 	return 0;

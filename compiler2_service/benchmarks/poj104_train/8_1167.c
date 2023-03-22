@@ -17,11 +17,11 @@ output();
 void input(void)
 {
 int i;
-scanf("%d %d\n",&n,&m);
+my_scanf("%d %d\n",&n,&m);
 for (i=1;i<=n;i++)
-scanf("%d",&a[i]);
+my_scanf("%d",&a[i]);
 for (i=1;i<=m;i++)
-scanf("%d",&b[i]);
+my_scanf("%d",&b[i]);
 }
 
 void order1(void)
@@ -44,8 +44,8 @@ void output(void)
 {
 int i;
 for (i=1;i<=n;i++)
-printf("%d ",a[i]);
+my_printf("%d ",a[i]);
 for (i=1;i<m;i++)
-printf("%d ",b[i]);
-printf("%d",b[m]);
+my_printf("%d ",b[i]);
+my_printf("%d",b[m]);
 }
