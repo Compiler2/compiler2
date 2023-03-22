@@ -5,7 +5,7 @@ int main_bench()
 	int a[2][3];
 	int day=0,flag=0,i,j,sum=0,k;
 
-	scanf("%d%d%d%d%d%d",&a[0][0],&a[0][1],&a[0][2],&a[1][0],&a[1][1],&a[1][2]);
+	my_scanf("%d%d%d%d%d%d",&a[0][0],&a[0][1],&a[0][2],&a[1][0],&a[1][1],&a[1][2]);
 	if(a[0][0]-a[1][0]==0)
 	{
 		for(j=a[0][1];j<a[1][1];j++)
@@ -81,7 +81,7 @@ int main_bench()
 		sum=sum+day+a[1][2];
 		sum=sum+365*a[1][0]-365*a[0][0]-365+flag;
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 

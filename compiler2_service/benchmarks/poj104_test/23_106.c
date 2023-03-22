@@ -33,6 +33,6 @@ int main_bench()
 			k=0;
 		}
 	}
-	for(j=0;j<n-1;j++)printf("%s ",str[n-1-j]);
-	printf("%s",str[0]);
+	for(j=0;j<n-1;j++)my_printf("%s ",str[n-1-j]);
+	my_printf("%s",str[0]);
 }

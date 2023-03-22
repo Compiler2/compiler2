@@ -14,10 +14,10 @@ int main_bench()
 		if(*(p+i)==' ')
 		{
 			for(j=i+1;*(p+j)!=' ' && *(p+j)!='\0';j++)
-				printf("%c",*(p+j));
+				my_printf("%c",*(p+j));
 		}
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=0;*(p+i)!=' ' && *(p+i)!='\0';i++)
-		printf("%c",*(p+i));
+		my_printf("%c",*(p+i));
 }

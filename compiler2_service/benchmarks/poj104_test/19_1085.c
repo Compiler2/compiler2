@@ -18,12 +18,12 @@ i++;}
 i++;}
 for(i=1;i<=c-1;i++)
 {if(strcmp(r[i],a)==0)
-{printf("%s ",b);}
+{my_printf("%s ",b);}
 else 
-{printf("%s ",r[i]);}}
+{my_printf("%s ",r[i]);}}
 if(strcmp(r[c],a)==0)
-{printf("%s",b);}
+{my_printf("%s",b);}
 else 
-{printf("%s",r[c]);}
+{my_printf("%s",r[c]);}
 return 0;
 }

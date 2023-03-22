@@ -6,7 +6,7 @@ int i,j,k,max,temp,flag;
 int a[5][5];
 for(i=0;i<=4;i++)
   for(j=0;j<=4;j++)
-	scanf("%d",&a[i][j]);
+	my_scanf("%d",&a[i][j]);
 for(i=0;i<=4;i++)
    {
                 max=a[i][0];
@@ -26,11 +26,11 @@ for(i=0;i<=4;i++)
               }
        if( flag==1)
       {
-      printf("%d %d %d",i+1,temp+1,a[i][temp]);
+      my_printf("%d %d %d",i+1,temp+1,a[i][temp]);
       break;
       }
     }
          if (!flag)
-         printf("not found");
+         my_printf("not found");
     return 0; 
 }

@@ -10,15 +10,15 @@ int main_bench()
 	i=1;
 	while(c!=10)
 	{
-		scanf("%d%c",&x[i],&c);
+		my_scanf("%d%c",&x[i],&c);
 		n++;
 		i++;
 	}
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%c",&y[i],&c);
+		my_scanf("%d%c",&y[i],&c);
 	}
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(i=1;i<=n;i++)
 	{
 		for(j=x[i];j<y[i];j++)
@@ -32,5 +32,5 @@ int main_bench()
 		if(a[i]>max)
 			max=a[i];
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 }

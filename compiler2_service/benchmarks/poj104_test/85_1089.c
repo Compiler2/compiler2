@@ -12,9 +12,9 @@ int main_bench()
 		len=strlen(shuru);
 		s=shuru;
 		if(panduan(s,len))
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

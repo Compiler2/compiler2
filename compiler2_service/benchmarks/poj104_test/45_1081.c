@@ -31,7 +31,7 @@ int main_bench()
 		}
 		if(strcmp(temp,s)==0)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 	}

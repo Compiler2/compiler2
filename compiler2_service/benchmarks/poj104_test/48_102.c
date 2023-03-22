@@ -41,7 +41,7 @@ int main_bench()
 	}
 
 
-	scanf("%d %d",&n,&day);	
+	my_scanf("%d %d",&n,&day);	
 	day0[4][4]=n;
 	for(i=0;i<9;i++)
 	{
@@ -121,9 +121,9 @@ int main_bench()
 		{
 			for(j=0;j<8;j++)
 			{
-				printf("%d ", day1[i][j]);
+				my_printf("%d ", day1[i][j]);
 			}
-			printf("%d\n",day1[i][8]);
+			my_printf("%d\n",day1[i][8]);
 		}
 	}
 		if(day==2)
@@ -132,9 +132,9 @@ int main_bench()
 		{
 			for(j=0;j<8;j++)
 			{
-				printf("%d ", day2[i][j]);
+				my_printf("%d ", day2[i][j]);
 			}
-			printf("%d\n",day2[i][8]);
+			my_printf("%d\n",day2[i][8]);
 		}
 	}
 			if(day==3)
@@ -143,9 +143,9 @@ int main_bench()
 		{
 			for(j=0;j<8;j++)
 			{
-				printf("%d ", day3[i][j]);
+				my_printf("%d ", day3[i][j]);
 			}
-			printf("%d\n",day3[i][8]);
+			my_printf("%d\n",day3[i][8]);
 		}
 	}
 				if(day==4)
@@ -154,9 +154,9 @@ int main_bench()
 		{
 			for(j=0;j<8;j++)
 			{
-				printf("%d ", day4[i][j]);
+				my_printf("%d ", day4[i][j]);
 			}
-			printf("%d\n",day4[i][8]);
+			my_printf("%d\n",day4[i][8]);
 		}
 	}
 				return 0;

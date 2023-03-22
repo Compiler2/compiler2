@@ -37,6 +37,6 @@ int main_bench()
 		if(strlen(a[d])>strlen(a[i]))
 			d=i;
 	}
-	printf("%s\n%s\n",a[c],a[d]);
+	my_printf("%s\n%s\n",a[c],a[d]);
 	return 0;
 }

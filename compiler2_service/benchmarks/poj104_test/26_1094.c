@@ -13,6 +13,6 @@ int main_bench(){
 	}
 	n=strlen(a);
 	b[n-j]='\0';
-	printf("%s",b);
+	my_printf("%s",b);
 	return 0;
 }

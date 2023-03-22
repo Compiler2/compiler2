@@ -19,7 +19,7 @@ int main_bench()
 		else b[k++]=s[i];
 	}
 	b[k]='\0';
-	printf("%s",b);
+	my_printf("%s",b);
 
 return 0;
 }

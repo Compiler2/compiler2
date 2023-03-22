@@ -6,11 +6,11 @@ int main_bench()
  int n;
  for(int i=0;i<6;i++)
  {
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      if (n<0)
-     printf("-%d\n",turn(-n));
+     my_printf("-%d\n",turn(-n));
      else    
-     printf("%d\n",turn(n));
+     my_printf("%d\n",turn(n));
  }
 }
 int turn(int a)

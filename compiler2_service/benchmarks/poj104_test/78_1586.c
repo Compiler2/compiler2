@@ -3,9 +3,9 @@
 int main_bench()
 {
      int z,q,s,l;
-	 printf("l 50\n");
-          printf("q 40\n");
-	 printf("z 20\n");
-	 printf("s 10");
+	 my_printf("l 50\n");
+          my_printf("q 40\n");
+	 my_printf("z 20\n");
+	 my_printf("s 10");
 
 }

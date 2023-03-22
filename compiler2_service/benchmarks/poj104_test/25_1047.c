@@ -27,13 +27,13 @@ void print(int a[])
             flag=i;
      }
      for (i=flag;i>=0;i--)
-     printf("%d",a[i]);
+     my_printf("%d",a[i]);
 }
 
 int main_bench()
 {
   int n,i,j;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[100];
   a[0]=1;
   for (i=1;i<=99;i++)

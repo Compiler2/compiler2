@@ -5,12 +5,12 @@ int main_bench()
 {
 	int prime(int);
 	int i,n,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(h=6;h<(n+1);h=h+2)
     {for(i=3;i<=(h/2);i++)
 	{
 		if(prime(i)==1&&prime(h-i)==1)
-		{	printf("%d=%d+%d\n",h,i,h-i);
+		{	my_printf("%d=%d+%d\n",h,i,h-i);
 		break;
 		}
 	}

@@ -14,13 +14,13 @@ int main_bench()
               if(x>='a'&&x<='z') x=x-32;
               if(x=='\n')
               {
-                         printf("(%c,%d)",c,n);
+                         my_printf("(%c,%d)",c,n);
                          break;
               }
               if(x==c) n++; 
               else
               {
-                  printf("(%c,%d)",c,n);
+                  my_printf("(%c,%d)",c,n);
                   c=x;
                   n=1;
               }

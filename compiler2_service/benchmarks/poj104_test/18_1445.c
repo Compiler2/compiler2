@@ -4,13 +4,13 @@ int main_bench()
 {
 	int i,j,k,m,n,sum,min;
 	int a[101][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(m=0;m<n;m++)
 	{
 		sum=0;
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",&a[i][j]);
+				my_scanf("%d",&a[i][j]);
 		for(k=n;k>1;k--)
 		{
 			for(i=0;i<k;i++)
@@ -44,7 +44,7 @@ int main_bench()
 					a[i][j-1]=a[i][j];
 
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 
 

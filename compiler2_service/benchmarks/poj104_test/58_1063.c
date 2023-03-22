@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,j;    
     int i=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
      
      int k;
     while (i<=n+1)
@@ -35,9 +35,9 @@ int main_bench()
                                    j++;
                                 }
                                if (k==0)
-                                          printf("1\n");
+                                          my_printf("1\n");
                                else
-                                         printf("0\n");
+                                         my_printf("0\n");
                         }
                         else if (a[0]=='_')
                             { 
@@ -58,20 +58,20 @@ int main_bench()
                                            j++;
                                        }
                                      if (k==0)
-                                          printf("1\n");
+                                          my_printf("1\n");
                                      else
-                                          printf("0\n");
+                                          my_printf("0\n");
                               }
                          else 
-                         printf("0\n");
+                         my_printf("0\n");
           }
           else if (l==1)
           {
                   if (a[0]>='A'&&a[0]<='z')
-                  printf("1\n");
+                  my_printf("1\n");
                   else if (a[0]=='_')
-                  printf("1\n");
-                  else printf("0\n");
+                  my_printf("1\n");
+                  else my_printf("0\n");
 
           }
           i++;

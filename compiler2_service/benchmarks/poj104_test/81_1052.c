@@ -13,7 +13,7 @@ int main_bench()
 	for(i=0;i<5;i++)
 	p[i]=a[i];
 	
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(check(n,m))
 	{
       t=p[n];
@@ -21,8 +21,8 @@ int main_bench()
 	  p[m]=t;
 	
 	for(i=0;i<5;i++)
-	{printf("%s\n",p[i]);}}
-	else printf("error\n");
+	{my_printf("%s\n",p[i]);}}
+	else my_printf("error\n");
 	return 0;
 }
 

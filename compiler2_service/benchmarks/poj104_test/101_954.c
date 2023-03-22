@@ -101,13 +101,13 @@ int main_bench()
 	}
 	if(e==1) break;
 	}
-	if(i==2) printf("A");
-	if(j==2) printf("B");
-	if(k==2) printf("C");
-	if(i==1) printf("A");
-	if(j==1) printf("B");
-	if(k==1) printf("C");
-	if(i==0) printf("A");
-	if(j==0) printf("B");
-	if(k==0) printf("C");
+	if(i==2) my_printf("A");
+	if(j==2) my_printf("B");
+	if(k==2) my_printf("C");
+	if(i==1) my_printf("A");
+	if(j==1) my_printf("B");
+	if(k==1) my_printf("C");
+	if(i==0) my_printf("A");
+	if(j==0) my_printf("B");
+	if(k==0) my_printf("C");
 }

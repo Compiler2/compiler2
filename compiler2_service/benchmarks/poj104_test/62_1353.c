@@ -23,7 +23,7 @@ int main_bench()
 			}
 		}
 	}
-	for(i=0;i<j;i++)printf("%c",s[i]);
-	printf("\n");
+	for(i=0;i<j;i++)my_printf("%c",s[i]);
+	my_printf("\n");
 	free(s);
 }

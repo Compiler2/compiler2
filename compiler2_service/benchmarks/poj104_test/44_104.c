@@ -5,13 +5,13 @@ int main_bench()
       int reverse(int num);
       int a[6],i;
       for(i=0;i<=5;i++)
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       for(i=0;i<=5;i++)
       {
                            if(i==0) 
-                              printf("%d",reverse(a[i]));
+                              my_printf("%d",reverse(a[i]));
                               else
-                              printf("\n%d",reverse(a[i]));
+                              my_printf("\n%d",reverse(a[i]));
                               }
       getchar();
       getchar();

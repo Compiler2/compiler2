@@ -4,13 +4,13 @@ int main_bench ()
 {
  int n,j,k,b,c,x,y;
  b=c=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int sz[n][n];
  for(j = 0; j <=n-1; j++)
  {
    for(k = 0; k <=n-1; k++)
      {
-       scanf("%d",&sz[j][k]); 
+       my_scanf("%d",&sz[j][k]); 
        if(sz[j][k]==0)
        {
          x=j;
@@ -33,7 +33,7 @@ int main_bench ()
          }
    int m;
    m=(x-b-1)*(y-c-1);
-   printf("%d",m);
+   my_printf("%d",m);
    return 0;
 }
 

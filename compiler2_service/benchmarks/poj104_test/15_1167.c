@@ -7,13 +7,13 @@ int main_bench ()
 
 	
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	ai=n; aj=n;
 	bi=-1; bj=-1;
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
 		{
-			scanf("%d",&x);
+			my_scanf("%d",&x);
 			if (x==0)
 			{
 				if (i<ai) ai=i;
@@ -25,7 +25,7 @@ int main_bench ()
 
 	ans=(bi-ai-1)*(bj-aj-1);
 		
-	printf("%d\n",ans);
+	my_printf("%d\n",ans);
 
 
 	return 0;

@@ -5,11 +5,11 @@ int main_bench()
 	int m;
 	int n[999];
 	float f[999],k[999];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i=0,x=1;
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&n[i]);
+		my_scanf("%d",&n[i]);
 		if(n[i]>x)
 			x=n[i];
 	}
@@ -30,7 +30,7 @@ int main_bench()
 
 	for(i=0;i<m;i++)
 	{
-		printf("%.3f\n",k[n[i]]);
+		my_printf("%.3f\n",k[n[i]]);
 	}
 	return 0;
 }

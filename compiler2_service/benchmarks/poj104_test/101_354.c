@@ -24,11 +24,11 @@ int main_bench()
 										for(l=1;l<=3;l++)
 					{
 						if(a[0]==l)
-							printf("A");
+							my_printf("A");
 						if(a[1]==l)
-							printf("B");
+							my_printf("B");
 						if(a[2]==l)
-							printf("C");
+							my_printf("C");
 					}
 					return 0;
 				}

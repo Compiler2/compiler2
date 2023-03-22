@@ -34,12 +34,12 @@ int main_bench ()
 {
     int a[6],i;
     for (i=0;i<=5;i++)
-    scanf ("%d",&a[i]);
+    my_scanf ("%d",&a[i]);
     for (i=0;i<=5;i++)
     
         
         {
-            printf ("%d\n",reverse(a[i]));
+            my_printf ("%d\n",reverse(a[i]));
         }
     
 getchar();

@@ -5,7 +5,7 @@ int main_bench(){
 	k=1;
 	char X[50][100];
 	for(i=0;i<50;i++){
-		scanf("%s",X[i]);
+		my_scanf("%s",X[i]);
 	a=getchar();
 	if(a=='\n'){
 		break;
@@ -31,7 +31,7 @@ for(i=0;i<k;i++){
 				strcpy(X[j+1],ee);
 			}
 		}
-}printf("%s\n",X[0]);for(i=0;i<k;i++){
+}my_printf("%s\n",X[0]);for(i=0;i<k;i++){
 		for(j=0;j<k-1-i;j++){
             if(Y[j]>Y[j+1]){
 				e=Y[j];
@@ -43,6 +43,6 @@ for(i=0;i<k;i++){
 			}
 		}
 	}
-	printf("%s\n",X[0]);
+	my_printf("%s\n",X[0]);
 	return 0;
 }

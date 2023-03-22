@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,n,i,j;
 	double s[100]={0},f1,f2,c;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		f1=1;f2=2;
 		if(n==1){s[i]=2;}
 		else{
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.3lf\n",s[i]);
+		my_printf("%.3lf\n",s[i]);
 	}
 	return 0;
 }

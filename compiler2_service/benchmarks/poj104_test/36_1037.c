@@ -4,12 +4,12 @@ int main_bench()
 {
 	char fst[100],lst[100],tmp;
 	int n,i,len1,len2;
-	scanf("%s",fst);
-	scanf("%s",lst);
+	my_scanf("%s",fst);
+	my_scanf("%s",lst);
 	len1=strlen(fst);
 	len2=strlen(lst);
 	if(len1!=len2)
-		printf("NO\n");
+		my_printf("NO\n");
 	else
 	{
 		for(i=1;i<len1;i++)
@@ -37,8 +37,8 @@ int main_bench()
 			}
 		}
 		if(strcmp(fst,lst)==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 }

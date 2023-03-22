@@ -6,7 +6,7 @@ int main_bench()
 	char b[51];
 	int i,j;
 	int k;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	for(i=0;a[i]!='\0';i++)
 	{
 		for(j=0;b[j]!='\0';j++)
@@ -18,7 +18,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n",k);
+	my_printf("%d\n",k);
 	return 0;
 }
 

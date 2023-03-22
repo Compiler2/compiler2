@@ -5,13 +5,13 @@ int main_bench()
 {
 	char zfc[100000];
 	int total;
-	scanf("%d",&total);
+	my_scanf("%d",&total);
 
 	int i,j,k;
 	int alphabet[26];
 	for(i=1;i<=total;i++)
 	{
-		scanf("%s",zfc);
+		my_scanf("%s",zfc);
 		for(j=0;j<26;j++)
 		{
 			*(alphabet+j)=0;
@@ -32,14 +32,14 @@ int main_bench()
 		{
 			if(*(alphabet+(*(zfc+j)-97))==1)
 			{
-				printf("%c\n",*(zfc+j));
+				my_printf("%c\n",*(zfc+j));
 				time++;
 				break;
 			}
 		}
 		if(time==0)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

@@ -3,12 +3,12 @@
 int* putin()
 {
     int a,b,n;
-    scanf("%d %d",&a,&b);
+    my_scanf("%d %d",&a,&b);
     int *p=(int*)malloc((a+b+2)*sizeof(int));
     *p=a;
     *(p+1)=b;
     for(n=2;n<=a+b+1;n++)
-    scanf("%d",(p+n));
+    my_scanf("%d",(p+n));
     return p;
 }
 int* compare(int* a)
@@ -44,8 +44,8 @@ void putout(int* a)
 {
     int x;
     for(x=2;x<=(*a)+(*(a+1));x++)
-    printf("%d ",a[x]);
-    printf("%d",a[(*a)+(*(a+1))+1]);
+    my_printf("%d ",a[x]);
+    my_printf("%d",a[(*a)+(*(a+1))+1]);
 }
 int main_bench()
 {

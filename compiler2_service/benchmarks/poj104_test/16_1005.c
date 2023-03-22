@@ -3,7 +3,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int m=0;
     int nn=n;
     for(int i=1;i<5;i++)
@@ -19,7 +19,7 @@ int main_bench()
     for(int i=0;i<m;i++)
     {
        a=nn%10;
-       printf("%d",a);   
+       my_printf("%d",a);   
        nn=nn/10;       
     }
     getchar();

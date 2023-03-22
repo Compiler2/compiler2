@@ -9,8 +9,8 @@ int main_bench()
 {
 	int i,j,n,k,len,sta[500]={0},x=0,max=0,num;
 	char input[500];
-	scanf("%d",&n);
-	scanf("%s",input);
+	my_scanf("%d",&n);
+	my_scanf("%s",input);
 	len=strlen(input);
 	for(i=0;i<len;i++)
 	{
@@ -31,16 +31,16 @@ int main_bench()
 			}
 		}
 	}
-	if(max==0) printf("NO");
+	if(max==0) my_printf("NO");
 	else
 	{
-	printf("%d\n",max+1);
+	my_printf("%d\n",max+1);
 	for(i=0;i<500;i++)
 		if(sta[i]==max)
 		{
 			for(j=0;j<n;j++)
-				printf("%c",input[i+j]);
-			printf("\n");
+				my_printf("%c",input[i+j]);
+			my_printf("\n");
 		}
 	}
 

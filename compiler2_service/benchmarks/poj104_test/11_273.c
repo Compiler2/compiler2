@@ -6,7 +6,7 @@ int main_bench()
   for(;i<=4;i++)
   {
 
-  scanf("%d %d %d", &year[i], &month[i], &day[i]); 
+  my_scanf("%d %d %d", &year[i], &month[i], &day[i]); 
   }
    for(i=0;i<=4;i++)
   {
@@ -27,7 +27,7 @@ int main_bench()
   }
 
   if ( (year[i]%400==0||year[i]%4==0&&year[i]%100!=0) && month[i]>2 )  total[i]+=1;
-  printf("%d\n",total[i]);
+  my_printf("%d\n",total[i]);
   }
   return 0;
 }

@@ -13,14 +13,14 @@ int prime(int n)
 int main_bench()
 {
  int m,n,i,j,k;
- scanf("%d",&m);
+ my_scanf("%d",&m);
  for(i=3;i<(m/2)+1;i++)
   {
     j=prime(i);
     k=m-i;
     n=prime(k);
     if(j!=0&&n!=0)
-    printf("%d %d\n",i,k);
+    my_printf("%d %d\n",i,k);
   
   }
   getchar();

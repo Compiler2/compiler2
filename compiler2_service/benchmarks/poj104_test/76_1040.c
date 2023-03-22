@@ -2,9 +2,9 @@
 
 int main_bench(){
 	int a[50000],b[50000],n,m,i,t,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++) 
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
     m=0;
 		for(i=n-1;i>0;i--){
 			for(j=0;j<i;j++){
@@ -28,8 +28,8 @@ int main_bench(){
 		}
 		if(b[i]<a[i+1]) break;
 	}
-		if(m!=1) printf("no");
-		else printf("%d %d",a[0],b[i]);
+		if(m!=1) my_printf("no");
+		else my_printf("%d %d",a[0],b[i]);
         return 0;
 }
 			

@@ -24,11 +24,11 @@ int main_bench()
                                            }
                           }
         if(flag){
-                printf("%c\n",*(str+minadr));
+                my_printf("%c\n",*(str+minadr));
 
                 }
         else
-            printf("no\n");
+            my_printf("no\n");
         for(j=1;j<27;j++){
                           *(zimu+j)=0;*(loci+j)=0;minadr=100009;flag=0;
                           }

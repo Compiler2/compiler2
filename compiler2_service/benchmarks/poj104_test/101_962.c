@@ -9,12 +9,12 @@ int main_bench()
 				A = (a < b) + (a == c);
 				B = (a > b) + (a > c);
 				C = (c > b) + (b > a);
-				if(a < b && b < c && A > B && B > C) printf("ABC\n");
-				if(a < c && c < b && A > C && C > B) printf("ACB\n");
-				if(b < a && a < c && B > A && A > C) printf("BAC\n");
-				if(b < c && c < a && B > C && C > A) printf("BCA\n");
-				if(c < a && a < b && C > A && A > B) printf("CAB\n");
-				if(c < b && b < a && C > B && B > A) printf("CBA\n");
+				if(a < b && b < c && A > B && B > C) my_printf("ABC\n");
+				if(a < c && c < b && A > C && C > B) my_printf("ACB\n");
+				if(b < a && a < c && B > A && A > C) my_printf("BAC\n");
+				if(b < c && c < a && B > C && C > A) my_printf("BCA\n");
+				if(c < a && a < b && C > A && A > B) my_printf("CAB\n");
+				if(c < b && b < a && C > B && B > A) my_printf("CBA\n");
 			}
 	return 0;
 }

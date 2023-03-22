@@ -4,11 +4,11 @@ int main_bench()
 {
 	char s[100],w[100];
 	int n,m,i,j,count=0;
-	scanf("%s%s",s,w);
+	my_scanf("%s%s",s,w);
 	n=strlen(w);
 	m=strlen(s);
 	if(n!=m){
-		printf("NO");
+		my_printf("NO");
 		return 0;
 	}
 	else{
@@ -21,8 +21,8 @@ int main_bench()
 			}
 		}
 		if(count==n)
-			printf("YES");
-		else printf("NO");
+			my_printf("YES");
+		else my_printf("NO");
 		return 0;
 	}
 }

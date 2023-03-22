@@ -3,9 +3,9 @@
 int main_bench(){
 int n,i,k;
 char jj[1000][260], pdj[1000][260];    
-scanf("%d", &n);
+my_scanf("%d", &n);
 for(i=0; i<n; i++){    
-	scanf("%s", jj[i]);}
+	my_scanf("%s", jj[i]);}
 for(i=0; i<n; i++){
 	int m=strlen(jj[i]);
 	for(k=0;k<m;k++){
@@ -15,6 +15,6 @@ for(i=0; i<n; i++){
 		else if(jj[i][k]=='C'){pdj[i][k]='G';}
 	}
 }
-		for(i=0; i<n; i++){printf("%s\n",pdj[i]);}
+		for(i=0; i<n; i++){my_printf("%s\n",pdj[i]);}
 return 0;
 }

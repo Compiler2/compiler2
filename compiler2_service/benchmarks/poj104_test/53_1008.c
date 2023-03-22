@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sz[300],szs[300],n,i=0,j=0,s,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 	    if(i==0) s=1;
         for(j=0;j<i;j++)
         {
@@ -28,8 +28,8 @@ k++;
             }
 for(i=0;i<k-1;i++)
 {
-printf("%d,",szs[i]);
+my_printf("%d,",szs[i]);
 }
-printf("%d",szs[k-1]);
+my_printf("%d",szs[k-1]);
 return 0;
 }

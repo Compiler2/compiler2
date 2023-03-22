@@ -16,12 +16,12 @@ int f(int n)
 int main_bench()
 {
 	int n,i,p,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&p);
+		my_scanf("%d",&p);
 		s=f(p);
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 	}
 
 	return 0;

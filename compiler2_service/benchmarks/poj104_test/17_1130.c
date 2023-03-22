@@ -4,9 +4,9 @@ int main_bench()
 {
 	char a[110];
 	int i,j,l;
-	while(scanf("%s",a)==1)
+	while(my_scanf("%s",a)==1)
 	{
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 		l=strlen(a);
 		for(i=0;i<l;i++)
 		{
@@ -29,11 +29,11 @@ int main_bench()
 		}
 		for(i=0;i<l;i++)
 		{
-			if(a[i]=='(') printf("$");
-			if(a[i]==')') printf("?");
-			if(a[i]==' ') printf(" ");
+			if(a[i]=='(') my_printf("$");
+			if(a[i]==')') my_printf("?");
+			if(a[i]==' ') my_printf(" ");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

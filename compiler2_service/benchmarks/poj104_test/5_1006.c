@@ -6,12 +6,12 @@ int main_bench()
 	int i,a,b,c,d,e=0;
 	char q[501];
 	char w[501];
-	scanf("%lf",&n);
-    scanf("%s%s",q,w);
+	my_scanf("%lf",&n);
+    my_scanf("%s%s",q,w);
 	a=strlen(q);
 	b=strlen(w);
 	if(a!=b){
-		printf("error");
+		my_printf("error");
 	}else{
 		c=a,d=b;
 	   for(i=0;i<a;i++){
@@ -25,7 +25,7 @@ int main_bench()
 		}
 	}
 	if(a!=c||b!=d){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<a;i++){
 			if(q[i]==w[i]){  
@@ -34,9 +34,9 @@ int main_bench()
 		}
        r=1.0*e/a;
 	if(r>=n){
-		printf("yes");
+		my_printf("yes");
 	}else{
-		printf("no");
+		my_printf("no");
 	}
 	}
 	}

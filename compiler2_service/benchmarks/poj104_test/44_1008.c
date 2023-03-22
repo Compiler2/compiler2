@@ -19,11 +19,11 @@ int main_bench()
     int a[6];
     for(i=0;i<6;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(i=0;i<6;i++)
     {
-        printf("%d\n",f(a[i]));
+        my_printf("%d\n",f(a[i]));
     }
     return 0;
 }

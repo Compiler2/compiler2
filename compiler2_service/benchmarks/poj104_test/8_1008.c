@@ -22,9 +22,9 @@ int main_bench()
 void IN()
 {
 	int i;
- scanf("%d%d",&m,&n);
- for(i=0;i<m;i++)scanf("%d",&a[i]);
- for(i=0;i<n;i++)scanf("%d",&b[i]);
+ my_scanf("%d%d",&m,&n);
+ for(i=0;i<m;i++)my_scanf("%d",&a[i]);
+ for(i=0;i<n;i++)my_scanf("%d",&b[i]);
 }
 void OR()
 {
@@ -62,6 +62,6 @@ void LIAN()
 void OU()
 {
 	int i;
-	for(i=0;i<m+n-1;i++) printf("%d ",c[i]);
-	printf("%d",c[m+n-1]);
+	for(i=0;i<m+n-1;i++) my_printf("%d ",c[i]);
+	my_printf("%d",c[m+n-1]);
 }

@@ -4,10 +4,10 @@ int main_bench()
 {	int hui(int n);
 	int su(int n);
 	int m,n,i,j=0,a[50];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++) if((su(i))&&(hui(i))){a[j]=i;j++;}
-	if(j==0) printf("no");
-	else for(i=0;i<j;i++) {printf("%d",a[i]);if(i<j-1) putchar(',');}
+	if(j==0) my_printf("no");
+	else for(i=0;i<j;i++) {my_printf("%d",a[i]);if(i<j-1) putchar(',');}
 }
 int su(int n)
 {	int i;

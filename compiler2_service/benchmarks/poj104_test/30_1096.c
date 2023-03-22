@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,a=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 while(n<100&&n>0)
 {
 if(n%7!=0&&n%10!=7&&n/10!=7)
@@ -16,6 +16,6 @@ else
 n=n-1;
 }
 }
-printf("%d\n",a);
+my_printf("%d\n",a);
 return 0;
 }

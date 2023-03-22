@@ -4,7 +4,7 @@ int main_bench()
 {
 	int i,n,k,min,max,t=0,x=0,y,z=0,sum=0;
 	int a[10]={0};
-	scanf("%d %d",&min,&max);
+	my_scanf("%d %d",&min,&max);
 	for(n=min;n<=max;n++)
 	{
 		for(i=2;i<n;i++)
@@ -34,10 +34,10 @@ int main_bench()
 			{
 				if(z==0)
 				{
-					printf("%d",n);
+					my_printf("%d",n);
 					z++;
 				}
-				else printf(",%d",n);
+				else my_printf(",%d",n);
 				sum++;
 			}
 		}
@@ -47,5 +47,5 @@ int main_bench()
 		for(i=0;i<=9;i++)
 			a[i]=0;
 	}
-	if(sum==0) printf("no");
+	if(sum==0) my_printf("no");
 }

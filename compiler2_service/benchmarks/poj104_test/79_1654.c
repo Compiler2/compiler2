@@ -6,7 +6,7 @@ int main_bench()
 	int a[100];
 	for(k=0;;k++)
 	{
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n==0)
 			break;
 		for(s=0,i=2;i<=n;i++)
@@ -18,6 +18,6 @@ int main_bench()
 	}
 	for(j=1;j<=count;j++)
 	{
-		printf("%d\n",a[j-1]);
+		my_printf("%d\n",a[j-1]);
 	}
 }

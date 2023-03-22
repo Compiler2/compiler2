@@ -26,14 +26,14 @@ int main_bench()
 	int m;
 	int n;
 	int k=0;
-	scanf("%d%d", &m, &n);
+	my_scanf("%d%d", &m, &n);
 	for (i=m; i<n+1; i++)
 		if ( hw(i)==1&&zx(i)==1)
 		{
 			if (k==0) k = 1;
-			else printf(",");
-			printf("%d", i);
+			else my_printf(",");
+			my_printf("%d", i);
 		};
-if (k==0) printf("no");
+if (k==0) my_printf("no");
 		return 0;
 }

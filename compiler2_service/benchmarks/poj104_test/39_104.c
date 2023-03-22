@@ -13,10 +13,10 @@ int main_bench()
 		int paper;
 		int money;
 	}stu[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",&stu[i].name,
+		my_scanf("%s %d %d %c %c %d",&stu[i].name,
 			&stu[i].score1,&stu[i].score2,&stu[i].monitor,&stu[i].west,
 			&stu[i].paper);
 	}
@@ -47,10 +47,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 		all+=stu[i].money;
-	printf("%s\n%d\n",stu[j].name,stu[j].money);
+	my_printf("%s\n%d\n",stu[j].name,stu[j].money);
 	
 	
-	printf("%d\n",all);
+	my_printf("%d\n",all);
 }
 
 

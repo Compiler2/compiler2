@@ -6,11 +6,11 @@ int main_bench()
 	char c[1000][105]={0};
     int k;
 	int a[105]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",c[i]);
+		my_scanf("%s",c[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -19,7 +19,7 @@ int main_bench()
 			a[j]=0;
 		}
 		l=strlen(c[i]);
-		printf("%s\n",c[i]);
+		my_printf("%s\n",c[i]);
 		for(j=l-1;j>=0;j--)
 		{
 			if(c[i][j]=='(')
@@ -47,11 +47,11 @@ int main_bench()
 		}
 			for(j=0;j<l;j++)
 			{
-				if(a[j]==1) printf("$");
-				else if(a[j]==2) printf("?");
-				else printf(" ");
+				if(a[j]==1) my_printf("$");
+				else if(a[j]==2) my_printf("?");
+				else my_printf(" ");
 			}
-			printf("\n");
+			my_printf("\n");
 	}
 
 

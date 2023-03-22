@@ -6,7 +6,7 @@ int main_bench()
 	int i,a[20],b[20],c[20],x,day;
 	for(i=1;i<=5;i++)
 	{
-		scanf("%d %d %d",&a[i],&b[i],&c[i]);
+		my_scanf("%d %d %d",&a[i],&b[i],&c[i]);
 	}
 	for(i=1;i<=5;i++)
 	{
@@ -40,7 +40,7 @@ int main_bench()
 			else if(b[i]==11)day=c[i]+31+28+31+30+31+30+31+31+30+31;
 			else if(b[i]==12)day=c[i]+31+28+31+30+31+30+31+31+30+31+30;
 		}
-		printf("%d\n",day);
+		my_printf("%d\n",day);
 	}
 	
 		

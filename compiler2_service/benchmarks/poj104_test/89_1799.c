@@ -3,12 +3,12 @@
 int main_bench()
 {
       int n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int i1,i2,j,a,b,c,d,e=0,y[100000];
       j=0;
       for(i1=0;;i1++)
       {
-                     scanf("%d %d",&a,&b);
+                     my_scanf("%d %d",&a,&b);
                      y[j]=b;
                      j++;
                      if(a==0&&b==0)
@@ -26,7 +26,7 @@ int main_bench()
                                  }
                                                        if(d==n-1)
                                                        {
-                                                                 printf("%d",c);
+                                                                 my_printf("%d",c);
                                                                  e++;
                                                        }
                                  
@@ -40,12 +40,12 @@ int main_bench()
                                  }
                                                        if(d==n)
                                                        {
-                                                               printf("0");
+                                                               my_printf("0");
                                                                e++;
                                                        }
                                   
                          }
       }
       if(e==0)
-      printf("NOT FOUND");
+      my_printf("NOT FOUND");
 }

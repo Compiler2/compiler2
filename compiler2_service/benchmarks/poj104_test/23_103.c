@@ -11,6 +11,6 @@ int main_bench()
 	  else q=0;
  for (i=n;i>=1;i--)
  {for (j=0;j<num[i];j++)
-		 printf("%c",s[point[i]+j]);
- if (i>1) printf(" ");}
+		 my_printf("%c",s[point[i]+j]);
+ if (i>1) my_printf(" ");}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,c,d,i,j,max,sum;
 	int a[50001],b[50001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	for(i=1;i<=n;i++)
 	{
@@ -43,11 +43,11 @@ int main_bench()
 	}
 	if(sum!=0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
 	{
-		printf("%d %d",a[1],max);
+		my_printf("%d %d",a[1],max);
 	}
 	return 0;
 

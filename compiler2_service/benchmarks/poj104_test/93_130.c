@@ -4,31 +4,31 @@
 int main_bench()
 {
     int n,i=0,j=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if(n%3==0)
-    {printf("3");i=1;}
+    {my_printf("3");i=1;}
 if(n%5==0)
     {
     if(i==1)
     {
-        printf(" ");
+        my_printf(" ");
 
     }
-    printf("5");
+    my_printf("5");
     j=1;
     }
 if(n%7==0)
     {
     if(j==1||i==1)
     {
-        printf(" ");
+        my_printf(" ");
     }
 
-    printf("7");
+    my_printf("7");
     }
     else if(i==0&&j==0)
     {
-        printf("n")  ;
+        my_printf("n")  ;
     }
 
     

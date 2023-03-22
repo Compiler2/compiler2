@@ -4,7 +4,7 @@ int main_bench ()
 {
 	char s1[50],s2[50];
 	int i,j,d;
-	scanf ("%s %s",&s1,&s2);
+	my_scanf ("%s %s",&s1,&s2);
 	int l = strlen (s1);
 	for (j=0;s2[j]!='\0';j++)
 		{
@@ -18,7 +18,7 @@ int main_bench ()
 	{
 		if (s1[i]==s2[j+1]) continue;
 	}
-	printf ("%d",d);
+	my_printf ("%d",d);
 		
 					
 

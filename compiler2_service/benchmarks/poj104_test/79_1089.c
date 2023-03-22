@@ -10,7 +10,7 @@ int main_bench()
       }
       for(i=0;i>=0;i++)
       {           
-           scanf("%d %d",&n[i],&m[i]);
+           my_scanf("%d %d",&n[i],&m[i]);
            if(m[i]==0)
            break;
       }
@@ -40,7 +40,7 @@ int main_bench()
                 if(o[l]==1)
                 {
                      int d=l+1;
-                     printf("%d\n",d);
+                     my_printf("%d\n",d);
                      break;           
                 }                   
            }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int j=0,k=0,l=0,m=0,n,p=0,q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n-100>=0)
 	{
 		n=n-100;
@@ -34,6 +34,6 @@ int main_bench()
 		n=n-1;
 		p++;
 	}
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",j,k,l,m,q,p);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",j,k,l,m,q,p);
 	return 0;
 }

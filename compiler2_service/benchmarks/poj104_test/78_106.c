@@ -7,7 +7,7 @@ int main_bench()
     b=40;
     c=10;
     d=50;
-    printf("l %d\nq %d\nz %d\ns %d",d,b,a,c);
+    my_printf("l %d\nq %d\nz %d\ns %d",d,b,a,c);
 
     return 0;
 }

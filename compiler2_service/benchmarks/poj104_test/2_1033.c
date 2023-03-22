@@ -7,9 +7,9 @@ int main_bench()
 	int m,i,j,len,max;
 	int id[1000],b[26]={0};
 	char a[100][27],name;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d %s",&id[i],a[i]);
+		my_scanf("%d %s",&id[i],a[i]);
 		len=strlen(a[i]);
         for(j=0;j<len;j++){
 			b[a[i][j]-'A']++;
@@ -22,7 +22,7 @@ int main_bench()
 		name=j+'A';
 		}
 	}
-	printf("%c\n%d\n",name,max);
+	my_printf("%c\n%d\n",name,max);
 	for(i=0;i<m;i++){
 		len=strlen(a[i]);
 		for(j=0;j<len;j++){
@@ -33,7 +33,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++){
 	if(strcmp(a[i],"shuchu")==0)
-		printf("%d\n",id[i]);
+		my_printf("%d\n",id[i]);
 	}
 
 

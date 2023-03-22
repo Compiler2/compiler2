@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[100],*p;
 	int n,b[100][1],*pr,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(a);
 	for(pr=*b;pr<*(b+n);pr++)
 	{
@@ -29,11 +29,11 @@ int main_bench()
 	{
 		if(*pr=='1')
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 		else
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

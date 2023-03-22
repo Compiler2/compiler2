@@ -36,7 +36,7 @@ void monkey(int x,int y)
 		}
 		else
 		{
-			printf("%d",j);
+			my_printf("%d",j);
 		break;
 		}
 	}
@@ -47,8 +47,8 @@ int main_bench()
 {
 int n,k;
 
-scanf("%d",&n);
-scanf("%d",&k);
+my_scanf("%d",&n);
+my_scanf("%d",&k);
 
 monkey(n,k);
 return 0;

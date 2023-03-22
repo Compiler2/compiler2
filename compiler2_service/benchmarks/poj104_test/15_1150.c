@@ -7,10 +7,10 @@ int main_bench()
 	int i=0,k=0,j=0,h=0;
 	int e=0,d=0,f=0,g=0;
 	int area;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(row=0;row<n;row++){
 		for(col=0;col<n;col++){
-          scanf("%d",&(s[row][col]));
+          my_scanf("%d",&(s[row][col]));
 		}
 	}
 
@@ -48,7 +48,7 @@ int main_bench()
 
 
 	area=(f-e-1)*(g-d-1);
-	printf("%d\n",area);
+	my_printf("%d\n",area);
 	return 0;
 }
 

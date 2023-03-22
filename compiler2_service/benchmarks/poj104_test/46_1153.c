@@ -3,15 +3,15 @@
 int sz[100][100];
 int main_bench(){
 	int k,ROW,COL,row,col,time=0,m=0;
-	scanf("%d %d",&ROW,&COL);
+	my_scanf("%d %d",&ROW,&COL);
 	for(row=0;row<ROW;row++){
 		for(col=0;col<COL;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	for(k=0;k<100;k++){
 		for(col=k;col<COL-k-1;col++){
-			printf("%d\n",sz[k][col]);
+			my_printf("%d\n",sz[k][col]);
 			time++;
 				if(time==COL*ROW){
 					m=1;
@@ -20,7 +20,7 @@ int main_bench(){
 		}
 		for(row=k;row<ROW-k-1;row++){
 			if(m==1) break;
-			printf("%d\n",sz[row][COL-k-1]);
+			my_printf("%d\n",sz[row][COL-k-1]);
 			time++;
             if(time==COL*ROW){
 					m=1;
@@ -29,7 +29,7 @@ int main_bench(){
 		}
 		for(col=COL-k-1;col>k;col--){
 			if(m==1) break;
-			printf("%d\n",sz[ROW-k-1][col]);
+			my_printf("%d\n",sz[ROW-k-1][col]);
 			time++;
             if(time==COL*ROW){
 					m=1;
@@ -38,7 +38,7 @@ int main_bench(){
 		}
 		for(row=ROW-k-1;row>k;row--){
 			if(m==1) break;
-			printf("%d\n",sz[row][k]);
+			my_printf("%d\n",sz[row][k]);
 			time++;
  
 			if(time==COL*ROW){
@@ -47,7 +47,7 @@ int main_bench(){
 			}
 		}
 		if(time==COL*ROW-1){
-			printf("%d",sz[(ROW-1)/2][(COL-1)/2]);
+			my_printf("%d",sz[(ROW-1)/2][(COL-1)/2]);
 			break;
 		}
 	if(m==1)  break;

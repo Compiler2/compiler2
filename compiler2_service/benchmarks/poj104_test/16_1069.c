@@ -3,18 +3,18 @@
 int main_bench()
 {
      int a;
-     scanf("%d",&a);
+     my_scanf("%d",&a);
      int b;
-     if(a==0) printf("0\n");
+     if(a==0) my_printf("0\n");
      else
      {
          while(a!=0)
          {
                 b=a%10;
                 a=a/10;
-                printf("%d",b);
+                my_printf("%d",b);
          }
-         printf("\n");
+         my_printf("\n");
      }
      getchar();
      getchar();

@@ -26,13 +26,13 @@ int dijitian(int m,int d)
 int main_bench()
 {
 	int d,k,i,j;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=1;i<=12;i++)
 	{
 		d=dijitian(i,13);
 		j=d%7+k-1;
 		if (j>7) j-=7;
-		if (j==5) printf("%d\n",i);
+		if (j==5) my_printf("%d\n",i);
 	}
 	return 0;
 }

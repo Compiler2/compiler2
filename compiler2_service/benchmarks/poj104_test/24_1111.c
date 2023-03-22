@@ -26,7 +26,7 @@ int main_bench()
 			strcpy(words[j],e);
 		}
 	}
-	printf("%s\n",words[n]);
+	my_printf("%s\n",words[n]);
 	for(l=0;l<n;l++)
 	{
 		if(strlen(words[l])<=strlen(words[l+1]))
@@ -36,7 +36,7 @@ int main_bench()
 			strcpy(words[l],e);
 		}
 	}
-	printf("%s\n",words[n]);
+	my_printf("%s\n",words[n]);
 	return 0;
 }
 

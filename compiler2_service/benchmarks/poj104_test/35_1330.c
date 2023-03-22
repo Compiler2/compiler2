@@ -8,13 +8,13 @@ int j=0;
 
 int main_bench(void)
 {
-scanf("%d,%d",&row,&col);
+my_scanf("%d,%d",&row,&col);
 
 for(ctr1=0;ctr1<row;ctr1++)
 {
 for(ctr2=0;ctr2<col;ctr2++)
 {
-scanf("%d",&array[ctr1][ctr2]);
+my_scanf("%d",&array[ctr1][ctr2]);
 }
 }
 for(ctr1=0;ctr1<row;ctr1++)
@@ -30,11 +30,11 @@ for(ctr4=0;ctr4<row;ctr4++)
 i++;}
 if(i==row+col-2)
 {j++;
-printf("%d+%d",ctr1,ctr2);
+my_printf("%d+%d",ctr1,ctr2);
 }
 }
 }
 if(j==0)
-printf("No");
+my_printf("No");
 return 0;
 }

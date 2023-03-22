@@ -31,24 +31,24 @@ void lianjie(int *a,int x,int *b,int y,int *c)
                    i++;
                    j++;
                    }
-     printf("%d",c[0]);
+     my_printf("%d",c[0]);
      while(t<x+y)
      {
-                 printf(" %d",c[t]);
+                 my_printf(" %d",c[t]);
                  t++;
                    }
                    }
 int main_bench()
 {
       int s,t,i;
-      scanf("%d %d",&s,&t);
+      my_scanf("%d %d",&s,&t);
       int *a=(int*)malloc(s*sizeof(int));
       int *b=(int*)malloc(t*sizeof(int));
       int *c=(int*)malloc((s+t)*sizeof(int));
       for(i=0;i<s;i++)
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       for(i=0;i<t;i++)
-      scanf("%d",&b[i]);
+      my_scanf("%d",&b[i]);
       paixu(a,s);
       paixu(b,t);
       lianjie(a,s,b,t,c);

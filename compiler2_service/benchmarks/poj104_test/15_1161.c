@@ -3,10 +3,10 @@
 int main_bench() {
     int n,sz[1000][1000];
     int a,b,c,d,g;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++){
             for(int k=0;k<n;k++){
-                    scanf("%d",&sz[i][k]);
+                    my_scanf("%d",&sz[i][k]);
             }
     }
     for(int i=0;i<n;i++){
@@ -26,6 +26,6 @@ int main_bench() {
             }
     }
     g=(a-c-1)*(b-d-1);
-    printf("%d",g);
+    my_printf("%d",g);
     return 0;
 }

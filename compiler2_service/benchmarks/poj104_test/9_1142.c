@@ -8,12 +8,12 @@ int main_bench()
 		int age;
 	};
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct bingren u[1000];
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",&u[i].num,&u[i].age);
+		my_scanf("%s %d",&u[i].num,&u[i].age);
 	}
 	struct bingren v[1000];
 	int j=0;
@@ -40,11 +40,11 @@ int main_bench()
 	}
 	for(i=0;i<j;i++)
 	{
-		printf("%s\n",v[i].num);
+		my_printf("%s\n",v[i].num);
 	}
 		for(i=0;i<n;i++)
 		{if(u[i].age<60)
-		{printf("%s\n",u[i].num);}
+		{my_printf("%s\n",u[i].num);}
 		}
 	return 0;
 }

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int x,y,a[100][100],row,col,b[10],c[10],d[10],e[10],i=0;
-	scanf("%d,%d",&row,&col);
+	my_scanf("%d,%d",&row,&col);
 	for(x=0;x<row;x++){
 		for(y=0;y<col;y++){
-			scanf("%d",&a[x][y]);}
+			my_scanf("%d",&a[x][y]);}
 	}
 	for(x=0;x<row;x++){
 		for(y=0;y<col;y++){
@@ -32,10 +32,10 @@ int main_bench()
 		for(y=0;y<col;y++){
 			if(b[x]==d[y]){
 				i=1;
-				printf("%d+%d",c[x],e[y]);}
+				my_printf("%d+%d",c[x],e[y]);}
 	}
 	}
 		if(i==0)
-			printf("No");
+			my_printf("No");
 		return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 {void xijun();
     int m,n;
     int i,j,k;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     for(i=0;i<=8;i++)
        {
           for(j=0;j<=8;j++)
@@ -20,10 +20,10 @@ int main_bench()
        {
           for(j=0;j<8;j++)
              {
-                 printf("%d ",p[i][j]);
+                 my_printf("%d ",p[i][j]);
              }  
-          printf("%d",p[i][8]);
-          printf("\n");
+          my_printf("%d",p[i][8]);
+          my_printf("\n");
        }  
     
 

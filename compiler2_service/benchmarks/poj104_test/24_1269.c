@@ -36,7 +36,7 @@ int main_bench()
 	{
 		if(b==strlen(words[i]))
 		{
-			printf("%s\n",words[i]);
+			my_printf("%s\n",words[i]);
 			break;
 		}
 	}
@@ -44,7 +44,7 @@ int main_bench()
 	{
 		if(a==strlen(words[i]))
 		{
-			printf("%s",words[i]);
+			my_printf("%s",words[i]);
 			break;
 		}
 	}

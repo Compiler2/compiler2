@@ -6,15 +6,15 @@ int main_bench()
     int i,j,k,n,m,t;
     for(i=0;i<100;i++)
      {
-          scanf("%d\n",&n);
+          my_scanf("%d\n",&n);
           if(n==0)
            break;
           else
           {
               for(j=0;j<n;j++)
-              scanf("%d",&a[j]);
+              my_scanf("%d",&a[j]);
               for(j=0;j<n;j++)
-              scanf("%d",&b[j]);
+              my_scanf("%d",&b[j]);
               for(j=0;j<n;j++)     
                for(k=0;k<n-j-1;k++)
                  if(a[k]<a[k+1])
@@ -61,7 +61,7 @@ int main_bench()
                     }
                      }
               }
-              printf("%d\n",m*200);   
+              my_printf("%d\n",m*200);   
                      }
                      }
                     getchar();

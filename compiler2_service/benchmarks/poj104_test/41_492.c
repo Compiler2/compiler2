@@ -76,10 +76,10 @@ int main_bench(void)
 						}
 						if(Check==1)
 						{
-							printf("%d",p[0]);
+							my_printf("%d",p[0]);
 							for(int i=1;i<5;i++)
 							{
-								printf(" %d",p[i].rank);
+								my_printf(" %d",p[i].rank);
 							}
 						}
 					}

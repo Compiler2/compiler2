@@ -14,13 +14,13 @@ int p(int x)
 int main_bench()
 {
 	int n,i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=6;i<=n;i+=2)
 		for(j=3;j*2<=i;j+=2)
 		{
 			if(p(j)==0&&p(i-j)==0)
 			{
-				printf("%d=%d+%d\n",i,j,i-j);
+				my_printf("%d=%d+%d\n",i,j,i-j);
 				break;
 			}
 		}

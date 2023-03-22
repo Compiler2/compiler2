@@ -9,10 +9,10 @@ int main_bench()
 	int a[100001];
 	memset(a, 0, sizeof(a));			
 	int n = 0, k = 0, t = 0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (int i = 0; i < n; i ++)
-		scanf("%d", &a[i]);				
-	scanf("%d", &k);
+		my_scanf("%d", &a[i]);				
+	my_scanf("%d", &k);
 	for (int i = 0; i < n; i ++)		
 		if (a[i] == k)
 			t ++;
@@ -27,8 +27,8 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",a[0]);						
+	my_printf("%d",a[0]);						
 	for (int i = 1; i < n - t; i ++)
-		printf(" %d", a[i]);				
+		my_printf(" %d", a[i]);				
 	return 0;
 }

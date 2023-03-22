@@ -21,6 +21,6 @@ int m(int n,int k)
 int main_bench() 
 { 
 	int n,k; 
-	scanf("%d%d",&n,&k);
-	printf("%d",m(n,k));
+	my_scanf("%d%d",&n,&k);
+	my_printf("%d",m(n,k));
 }

@@ -7,7 +7,7 @@ int main_bench()
 	{
 		char str1[100],str2[5],str3[100]={'\0'},m;
 		int i,j,l;
-		s=scanf("%s %s",&str1,&str2);
+		s=my_scanf("%s %s",&str1,&str2);
 		if(s!=2)
 			break;
 		else
@@ -23,7 +23,7 @@ int main_bench()
 					str3[l+1+i]=str2[i];
 					 for(i=0;i<(strlen(str1)-l-1);i++)
 						 str3[l+4+i]=str1[l+i+1];
-					 printf("%s\n",str3);
+					 my_printf("%s\n",str3);
 
 		}
 	}

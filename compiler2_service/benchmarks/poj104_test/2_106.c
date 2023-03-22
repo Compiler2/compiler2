@@ -5,11 +5,11 @@ int main_bench()
     char writer[1000][30];
     char abc[26]={'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
     int m,n,mark[1000], num[26]={0}, sum=0, i, j;
-    scanf("%d", &m);
+    my_scanf("%d", &m);
     for(i=0;i<m;i++)
     {
-                    scanf("%d", &mark[i]);
-                    scanf("%s", writer[i]);
+                    my_scanf("%d", &mark[i]);
+                    my_scanf("%s", writer[i]);
     }
     for(i=0;i<m;i++)
     {
@@ -78,19 +78,19 @@ int main_bench()
                      }
                      
     }
-    printf("%c\n",abc[n]);
-    printf("%d\n", num[n]);
+    my_printf("%c\n",abc[n]);
+    my_printf("%d\n", num[n]);
     for(i=0;i<m;i++)
     {
                     for(j=0;j<strlen(writer[i]);j++)
                     {
                                                     if(writer[i][j]==abc[n])
                                                     {
-                                                                            printf("%d\n",mark[i]);
+                                                                            my_printf("%d\n",mark[i]);
                                                                             break;
                                                     }
                     }
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     return 0;
 }

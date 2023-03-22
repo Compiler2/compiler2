@@ -3,7 +3,7 @@
 int main_bench()
 {
    int m,i,k,t,s=0,p=0;
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    i=3;
    k=1;
    t=1;
@@ -22,7 +22,7 @@ int main_bench()
 		      else;
 			  t=t+1;}
 		   if(p==2)
-			   printf("%d %d\n",i,m-i);
+			   my_printf("%d %d\n",i,m-i);
 		   else;
 	   }
 	   else;

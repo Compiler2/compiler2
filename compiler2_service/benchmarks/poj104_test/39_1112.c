@@ -5,9 +5,9 @@ int main_bench()
 {
     int n,i,b[100],c[100],f[100],sum[100];
     char a[100][50],d[100][1],e[100][1];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for(i=0;i<n;i++){
-        scanf("%s%d%d%s%s%d", a[i], &b[i], &c[i], d[i], e[i], &f[i]);
+        my_scanf("%s%d%d%s%s%d", a[i], &b[i], &c[i], d[i], e[i], &f[i]);
     }       
     for(i=0;i<n;i++){
         sum[i]=0;
@@ -35,8 +35,8 @@ int main_bench()
         }
         sum1+=sum[i];
     }
-    printf("%s\n", a[j]);
-    printf("%d\n", s);
-    printf("%d\n", sum1);
+    my_printf("%s\n", a[j]);
+    my_printf("%d\n", s);
+    my_printf("%d\n", sum1);
     return 0;
 }

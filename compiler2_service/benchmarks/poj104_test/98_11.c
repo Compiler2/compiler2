@@ -8,10 +8,10 @@ int main_bench()
 		  char a[40];
 		  int l;
 	  }z[1000];
-	  scanf("%d",&n);
+	  my_scanf("%d",&n);
 	  for(i=0;i<n;i++)
 	  {
-		  scanf("%s",z[i].a);
+		  my_scanf("%s",z[i].a);
 		  z[i].l=strlen(z[i].a);
 	  }
 	  for(i=0;i<n-1;i++)
@@ -19,22 +19,22 @@ int main_bench()
 			  
 			  
 				  s=s+z[i].l;
-				  printf("%s",z[i].a);
+				  my_printf("%s",z[i].a);
 				  
 			  
 			  if(s+z[i+1].l>=80)
 			  {
-				  printf("\n");
+				  my_printf("\n");
 				  s=0;
 			  }
 			  else {
-				  printf(" ");
+				  my_printf(" ");
 			  s++;
 			  }
 			  
 			  
 	  }
-	  printf("%s",z[n-1].a);
+	  my_printf("%s",z[n-1].a);
 
 
 

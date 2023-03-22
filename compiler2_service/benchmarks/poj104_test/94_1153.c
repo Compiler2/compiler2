@@ -4,12 +4,12 @@
 int main_bench()
 {
   int number[500],odd[500],n,i,j,t;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for (i=0;i<=499;i++)
       odd[i]=0;
   for (i=0;i<=n-1;i++)
   {
-      scanf("%d",number+i);
+      my_scanf("%d",number+i);
       if (number[i]%2!=0)
          odd[i]=number[i];
   }
@@ -24,8 +24,8 @@ int main_bench()
   for (i=1;i<=498;i++)
   {
       if (odd[i]!=0)
-      printf("%d,",odd[i]);
+      my_printf("%d,",odd[i]);
   }
-  printf("%d",odd[499]);
+  my_printf("%d",odd[499]);
   return 0;
 }

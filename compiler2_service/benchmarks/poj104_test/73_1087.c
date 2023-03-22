@@ -7,7 +7,7 @@ int main_bench() {
 	int i,j,k=0;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 		}
 	}
 	for(i=0;i<5;i++){
@@ -27,13 +27,13 @@ int main_bench() {
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
 			if(max[i]==min[j]){
-				printf("%d %d %d\n",i+1,j+1,sz[i][j]);
+				my_printf("%d %d %d\n",i+1,j+1,sz[i][j]);
 				k++;
 			}
 		}
 	}
 	if(k==0){
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

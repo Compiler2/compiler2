@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<n+1;i++)
 	{      
 		if((i%7)!=0&&(i%10)!=7&&(i<70))
@@ -15,7 +15,7 @@ int main_bench()
 			k=k+i*i;
 		}
 	}
-	printf("%d",k);
+	my_printf("%d",k);
 	return 0;
 }
 

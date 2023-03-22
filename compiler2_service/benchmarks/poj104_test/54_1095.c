@@ -4,7 +4,7 @@ int main_bench()
 {
     void m(int a,int b);
     int n,k;
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     m(n,k);             
     return 0;
 }
@@ -21,7 +21,7 @@ void m(int a,int b)
                 k++;  
                 m=k;   
                 if(k==a-1){
-                    printf("%d",sum*a/(a-1)+b);
+                    my_printf("%d",sum*a/(a-1)+b);
                 }                
             }
             else 

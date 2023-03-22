@@ -5,7 +5,7 @@ int main_bench()
 {
 	int sushu(int x);
 	int a,b,n,n2,i,i2,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	n2=n/2;
 
 	for(i=3;i<=n2;i++)
@@ -16,7 +16,7 @@ int main_bench()
 			a=j;b=i2-j;
 			if (sushu(a)==1 && sushu(b)==1)
 			{
-				printf("%d=%d+%d\n",i2,a,b);
+				my_printf("%d=%d+%d\n",i2,a,b);
 				break;
 			}
 		}

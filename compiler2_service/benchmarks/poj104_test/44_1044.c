@@ -20,13 +20,13 @@ int main_bench()
     int a[6],i;
     for(i=0;i<6;i++)
     {
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
       if(a[i]==0)
-        printf("0\n");
+        my_printf("0\n");
       else if(a[i]<0)
-        printf("%d\n",reverse(a[i]*(-1))*(-1));
+        my_printf("%d\n",reverse(a[i]*(-1))*(-1));
       else 
-        printf("%d\n",reverse(a[i]));
+        my_printf("%d\n",reverse(a[i]));
     }
     getchar();
     getchar();

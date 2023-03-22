@@ -8,11 +8,11 @@ void Input( int n )
 	int i;
 	for( i = 0 ; i < n ; i ++ )
 	{
-		scanf("%d",&tianji[i]);
+		my_scanf("%d",&tianji[i]);
 	}
 	for( i = 0 ; i < n ; i ++ )
 	{
-		scanf("%d",&qiwang[i]);
+		my_scanf("%d",&qiwang[i]);
 	}
 }
 int comp( const void *a , const void * b )
@@ -78,12 +78,12 @@ int calc( int n )
 int main_bench()
 {
 	int n;
-	while( scanf("%d",&n) && n )
+	while( my_scanf("%d",&n) && n )
 	{
 		Input(n);
 		qsort(tianji,n,sizeof(tianji[0]),comp);
 		qsort(qiwang,n,sizeof(qiwang[0]),comp);
-		printf("%d\n",calc(n));
+		my_printf("%d\n",calc(n));
 	}
 	return 0;
 }

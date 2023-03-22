@@ -6,9 +6,9 @@ int main_bench()
       char a[256];
       char b[20];
       char c[20];
-      scanf("%s",a);
-      scanf("%s",b);
-      scanf("%s",c);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
+      my_scanf("%s",c);
       for(i=0;b[i]!=0;i++)
       {countb=i;}
       for(i=0;a[i]!='\0';i++)
@@ -29,7 +29,7 @@ int main_bench()
              if(re==1)
              break;             
       }
-      printf("%s",a);
+      my_printf("%s",a);
       getchar();
       getchar();
 }

@@ -6,12 +6,12 @@ int main_bench()
 {
 	int n,i=0;
 	int str[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%d",&str[i]);
+	my_scanf("%d",&str[i]);
 	i=0;
 	for(i=0;i<n;i++)
-	printf("%d\n",yin(str[i],2));
+	my_printf("%d\n",yin(str[i],2));
 return 0;
 }
 

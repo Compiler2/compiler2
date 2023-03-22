@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,sum[100],i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 		struct{
 		char name[20];
 		int average;
@@ -14,7 +14,7 @@ int main_bench()
 	}a[100];
 		for(i=0;i<n;i++){
 	    sum[i]=0;
-		scanf("%s %d %d %c %c %d",a[i].name,&a[i].average,&a[i].clas,&a[i].gan,&a[i].xi,&a[i].lun);
+		my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].average,&a[i].clas,&a[i].gan,&a[i].xi,&a[i].lun);
 		}
 		for(i=0;i<n;i++)
 		{
@@ -36,9 +36,9 @@ int main_bench()
 		{s=sum[i];
 		j=i;}
 		}
-		printf("%s\n",a[j].name);
-		printf("%d\n",sum[j]);
-		printf("%d\n",d);
+		my_printf("%s\n",a[j].name);
+		my_printf("%d\n",sum[j]);
+		my_printf("%d\n",d);
 
 	
 	return 0;

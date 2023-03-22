@@ -8,11 +8,11 @@ int main_bench(){
     for(i=0;i<a;i++){
 		
 		if(z[i]!=' '){
-			printf("%c",z[i]);
+			my_printf("%c",z[i]);
 			continue;
 		}
 		if(z[i]==' '&&z[i+1]!=' '){
-			printf("%c",z[i]);
+			my_printf("%c",z[i]);
 			continue;
 		}
 	}

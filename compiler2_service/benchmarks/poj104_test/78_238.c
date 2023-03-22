@@ -16,12 +16,12 @@ int work()
   {
     switch(name[i])
     {
-      case 0 : printf("z"); break;
-      case 1 : printf("q"); break;
-      case 2 : printf("s"); break;
-      case 3 : printf("l"); break;
+      case 0 : my_printf("z"); break;
+      case 1 : my_printf("q"); break;
+      case 2 : my_printf("s"); break;
+      case 3 : my_printf("l"); break;
     }
-    printf(" %d\n", a[i]*10);
+    my_printf(" %d\n", a[i]*10);
   }
   return 0;
 }

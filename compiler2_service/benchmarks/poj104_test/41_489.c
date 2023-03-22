@@ -26,7 +26,7 @@ int main_bench()
                                     for(i=0;i<5;i++){if(i!=f&&i!=sc)  t[i]=-1;else t[i]=1;}
                                     
                                     l=t[0]*(b[4]==1)+t[1]*(b[1]==2)+t[2]*(b[0]==5)+t[3]*(b[2]!=1)+t[4]*(b[3]==1);
-                                             if(l==2)  {printf("%d %d %d %d %d\n",b[0],b[1],b[2],b[3],b[4]); } 
+                                             if(l==2)  {my_printf("%d %d %d %d %d\n",b[0],b[1],b[2],b[3],b[4]); } 
                      }
         }        
       getchar();getchar();getchar();            

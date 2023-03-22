@@ -4,7 +4,7 @@ int main_bench(){
 	int sz[5][5],ss[5][5],i,j,h[5],l[5],a;
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
-			scanf("%d",&sz[i][j]);
+			my_scanf("%d",&sz[i][j]);
 			ss[i][j]=sz[i][j];
 		}
 	}
@@ -31,7 +31,7 @@ int main_bench(){
 	for(i=0;i<5;i++){
 		for(j=0;j<5;j++){
 			if(h[i]==l[j]){
-				printf("%d %d %d",i+1,j+1,l[j]);
+				my_printf("%d %d %d",i+1,j+1,l[j]);
 				break;
 			}
 		}
@@ -40,7 +40,7 @@ int main_bench(){
 		}
 	}
 	if(i==5&&j==5&&h[4]!=l[4]){
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

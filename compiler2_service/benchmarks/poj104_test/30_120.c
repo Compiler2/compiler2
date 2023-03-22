@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,n,jieguo=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		if((i-7)%10==0)
@@ -15,6 +15,6 @@ int main_bench()
 		else
 			jieguo+=i*i;
 	}
-	printf("\n%d",jieguo);
+	my_printf("\n%d",jieguo);
 	return 0;
 }

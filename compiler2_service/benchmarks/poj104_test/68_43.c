@@ -22,13 +22,13 @@ int k(int p){
 int main_bench(){
     int n,i,m;
 	int k1,k2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=6;i<=n;i=i+2){
 		for(m=2;m<=i;m++){
 		   k1=k(m);
 		   k2=k(i-m);
 		   if(k1==1&&k2==1){
-			   printf("%d=%d+%d\n",i,m,i-m);
+			   my_printf("%d=%d+%d\n",i,m,i-m);
 			   break;
 		   }
 		}

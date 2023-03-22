@@ -3,7 +3,7 @@
 int main_bench()
 {
       char a[256],b[256],c[256];
-      scanf("%s %s %s",a,b,c);
+      my_scanf("%s %s %s",a,b,c);
       int i,j,k,nb,nc,count;
       nb=0;
       nc=0;

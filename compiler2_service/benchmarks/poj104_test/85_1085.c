@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,j,len,a;
 	char s[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		a=0;
-		scanf("%s",&s);
+		my_scanf("%s",&s);
 		len=strlen(s);
 		for(j=0;j<len;j++)
 		{
@@ -19,11 +19,11 @@ int main_bench()
 		}
 		if(a<len)
 		{
-			printf("no\n");
+			my_printf("no\n");
 		}
 		if(a==len)
 		{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

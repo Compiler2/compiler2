@@ -34,7 +34,7 @@ int main_bench()
                                           for(b=1;b<=5;b++)
                                           {
                                              if(a!=b&&c!=b&&d!=b&&e!=b&&a!=c&&a!=d&&a!=e&&c!=d&&c!=e&&d!=e)
-                                                printf("%d %d %d %d %d",a,b,c,d,e);
+                                                my_printf("%d %d %d %d %d",a,b,c,d,e);
                                           }
                                         } 
                                         else

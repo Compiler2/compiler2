@@ -9,7 +9,7 @@ int main_bench()
 	int tmp,count;
 	for(j=0;j<100;j++)
 	{
-		scanf("%d",&num[i][j]);
+		my_scanf("%d",&num[i][j]);
 		if(num[i][j]==-1) break;
 		if(num[i][j]==0)
 		{
@@ -37,6 +37,6 @@ int main_bench()
 			}
 		}
 		k=0;
-		printf("%d\n",count);
+		my_printf("%d\n",count);
 	}
 }

@@ -4,16 +4,16 @@ int main_bench()
 {
     int k,i,j,l,sum,temp,c,d,e,q,w,r,t;
     int a[100][100];
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     int m[100],n[100];
     for(i=0;i<k;i++)
     {
-                    scanf("%d%d",&m[i],&n[i]);
+                    my_scanf("%d%d",&m[i],&n[i]);
                     for(j=0;j<m[i];j++)
                     {
                                        for(l=0;l<n[i];l++)
                                        {
-                                                          scanf("%d",&a[j][l]);
+                                                          my_scanf("%d",&a[j][l]);
                                        }
                     }
                     sum=0;
@@ -40,7 +40,7 @@ int main_bench()
                     if(m[i]==1&&n[i]==1)
                     {
                                       sum=a[0][0];
-                                      printf("%d\n",sum);
+                                      my_printf("%d\n",sum);
                     }
                     if(m[i]==1&&n[i]!=1)
                     {
@@ -48,7 +48,7 @@ int main_bench()
                                        {
                                                           sum=sum+a[0][j];
                                        }
-                                       printf("%d\n",sum);
+                                       my_printf("%d\n",sum);
                     }
                     if(m[i]!=1&&n[i]==1)
                     {
@@ -56,7 +56,7 @@ int main_bench()
                                         {
                                                            sum=sum+a[j][0];
                                         }
-                                        printf("%d\n",sum);
+                                        my_printf("%d\n",sum);
                     }
                     if(m[i]!=1&&n[i]!=1)
                     {
@@ -65,7 +65,7 @@ int main_bench()
                                         r=a[m[i]-1][0];
                                         t=a[m[i]-1][n[i]-1];
                                         sum=c+d+e+temp-q-w-r-t;
-                                        printf("%d\n",sum);
+                                        my_printf("%d\n",sum);
                     }
     }
     return 0;

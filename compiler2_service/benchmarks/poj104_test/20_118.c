@@ -28,12 +28,12 @@ int main_bench()
 	
 	for(i=0;i<k;i++)
 	{for(j=0;j<a[i][0]+1;j++)
-		printf("%c",str[i][j]);
+		my_printf("%c",str[i][j]);
 	for(j=b[i]+1;j<b[i]+4;j++)
-		printf("%c",str[i][j]);
+		my_printf("%c",str[i][j]);
          for(j=a[i][0]+1;j<b[i];j++)
-		printf("%c",str[i][j]);
-	printf("\n");
+		my_printf("%c",str[i][j]);
+	my_printf("\n");
 	}
     
 }

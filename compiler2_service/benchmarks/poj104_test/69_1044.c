@@ -4,8 +4,8 @@ int main_bench()
 {
       char str1[251]={0},str2[251]={0},str3[251]={0};
       int i,j,m=0,sum1,sum2,sum3,k,s=0,p=0;
-      scanf("%s",str1);
-      scanf("%s",str2);
+      my_scanf("%s",str1);
+      my_scanf("%s",str2);
       sum1=strlen(str1);
       sum2=strlen(str2);
       if(sum1>sum2) {sum3=sum1;k=1;}
@@ -33,9 +33,9 @@ int main_bench()
       {
       if(p==0) if(str3[i]=='0'||str3[i]=='\0') continue;
       p=1;
-      printf("%c",str3[i]);
+      my_printf("%c",str3[i]);
       }
-      if(p==0) printf("0");
-      printf("\n");
+      if(p==0) my_printf("0");
+      my_printf("\n");
 
 }

@@ -3,13 +3,13 @@
 int main_bench()
 {
     int n,i,a,max,imax;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
         switch(i)
         {
-            case 1: scanf("%d",&imax); break;
-            case 2: scanf("%d",&a);
+            case 1: my_scanf("%d",&imax); break;
+            case 2: my_scanf("%d",&a);
                     if(a>imax)
                     {
                         max=imax;
@@ -17,7 +17,7 @@ int main_bench()
                     }
                     else max=a;
                     break;
-            default:scanf("%d",&a);
+            default:my_scanf("%d",&a);
                     if(a>=imax)
                     {
                         max=imax;
@@ -29,6 +29,6 @@ int main_bench()
                     }
         }
     }
-    printf("%d\n%d\n",imax,max);
+    my_printf("%d\n%d\n",imax,max);
     return 0;
 }

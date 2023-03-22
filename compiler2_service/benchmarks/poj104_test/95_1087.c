@@ -10,8 +10,8 @@ int main_bench()
 	{
 		if(str1[i]>='a') str1[i]=str1[i]-'a'+'A';
 		if(str2[i]>='a') str2[i]=str2[i]-'a'+'A';
-		if(str1[i]>str2[i]) { printf(">"); s+=1; break;}
-		if(str1[i]<str2[i]) { printf("<"); s+=1; break;}
+		if(str1[i]>str2[i]) { my_printf(">"); s+=1; break;}
+		if(str1[i]<str2[i]) { my_printf("<"); s+=1; break;}
 	}
-	if(!s) printf("=");
+	if(!s) my_printf("=");
 }

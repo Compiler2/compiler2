@@ -8,7 +8,7 @@ int main_bench()
 {
 	int y1, m1, d1, y2, m2, d2,sum=0,i;
 	int b1, b2;
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	for(i=y1;i<y2;i++)
 	{
 		if(IsLeapYear(i)==1)
@@ -22,7 +22,7 @@ int main_bench()
 	}
 	b1 = Counting(m1,d1,IsLeapYear(y1));
 	b2 = Counting(m2,d2,IsLeapYear(y2));
-	printf("%d",sum + b2 - b1 );
+	my_printf("%d",sum + b2 - b1 );
 	return;
 
 }

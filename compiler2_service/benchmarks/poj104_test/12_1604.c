@@ -8,7 +8,7 @@ int main_bench()
 
 
 
-        while((scanf("%d",&a[i]))&&(a[i]>=0))
+        while((my_scanf("%d",&a[i]))&&(a[i]>=0))
         {
         
           if(a[i]==0)
@@ -19,7 +19,7 @@ int main_bench()
 				if(a[j]==2*a[k]||a[k]==2*a[j])
 				m++;
 			}
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 			m=0;
 			i=0;
 			for(j=0;j<20;j++)

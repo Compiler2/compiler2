@@ -4,11 +4,11 @@ int main_bench()
 {
 	int a,b,c,s;
 	s=0;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
 	
 if(a==1111111111&&b==11&&c==11)
 {
-printf("Sat.");
+my_printf("Sat.");
 }
 else 
 {
@@ -124,31 +124,31 @@ else
 	s=s+c;
 		if(s%7==0)
 		{
-			printf("Sun.");
+			my_printf("Sun.");
 		}
 		if(s%7==1)
 		{
-			printf("Mon.");
+			my_printf("Mon.");
 		}
 		if(s%7==2)
 		{
-			printf("Tue.");
+			my_printf("Tue.");
 		}
 		if(s%7==3)
 		{
-			printf("Wed.");
+			my_printf("Wed.");
 		}
 		if(s%7==4)
 		{
-			printf("Thu.");
+			my_printf("Thu.");
 		}
 		if(s%7==5)
 		{
-			printf("Fri.");
+			my_printf("Fri.");
 		}
 		if(s%7==6)
 		{
-			printf("Sat.");
+			my_printf("Sat.");
 		}
 }
 		return 0;

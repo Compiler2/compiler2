@@ -7,10 +7,10 @@ int year,ma,mb,day;
 int i;
 day=1;
 int xa,xb;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-    scanf("%d%d%d",&year,&ma,&mb);
+    my_scanf("%d%d%d",&year,&ma,&mb);
 	if((year%4==0 && year%100!=0) || (year%400==0))
 	{
 	       if(ma==1)
@@ -210,9 +210,9 @@ for(i=0;i<n;i++)
 		   }
 	   }
        if((xb-xa)%7==0)
-		   printf("YES\n");
+		   my_printf("YES\n");
 	   else
-		   printf("NO\n");
+		   my_printf("NO\n");
 }
 	return 0;
 }

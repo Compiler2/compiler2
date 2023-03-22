@@ -4,15 +4,15 @@ int a,b;
 int c[1000],d[1000];
 void scan1()
 {
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	int i;
 	for(i=0;i<a;i++)
 	{
-		scanf("%d",&c[i]);
+		my_scanf("%d",&c[i]);
 	}
 	for(i=0;i<b;i++)
 	{
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 	}
 }
 
@@ -57,8 +57,8 @@ void shuchu()
 	int i;
 	for(i=0;i<a+b;i++)
 	{
-		if(i)printf(" ");
-		printf("%d",c[i]);
+		if(i)my_printf(" ");
+		my_printf("%d",c[i]);
 	}
 } 
 int main_bench()

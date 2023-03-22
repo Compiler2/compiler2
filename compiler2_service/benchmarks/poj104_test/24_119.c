@@ -37,6 +37,6 @@ int main_bench()
 			g=i;
 		}
 	}
-	printf("%s\n",c[f]);
-	printf("%s\n",c[g]);
+	my_printf("%s\n",c[f]);
+	my_printf("%s\n",c[g]);
 }

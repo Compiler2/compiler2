@@ -3,7 +3,7 @@
 int main_bench()
 {
   int n,a,b,c,d,e,f;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   a=n/100;
   b=(n-100*a)/50;
   c=(n-100*a-50*b)/20;
@@ -13,7 +13,7 @@ int main_bench()
   f=(n-100*a-50*b-20*c-10*d-5*d);
   }
   else f=(n-100*a-50*b-20*c-10*d-5);
-  printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+  my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
   return 0;
 }
   

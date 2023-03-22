@@ -7,7 +7,7 @@ int main_bench()
     int i,j,k,h;
     for(i=0;i<1000;i++)
     {
-        scanf("%c",&a[i]);
+        my_scanf("%c",&a[i]);
         if(a[i]>='a'&&a[i]<='z') a[i]=a[i]-'a'+'A';
         if(a[i]=='\n') break;
     }
@@ -21,6 +21,6 @@ int main_bench()
         else j++;
     }
     for(k=0;k<j;k++)
-        printf("(%c,%d)",c[k],b[k]+1);
+        my_printf("(%c,%d)",c[k],b[k]+1);
     return 0;
 }

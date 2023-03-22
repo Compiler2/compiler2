@@ -30,22 +30,22 @@ int sushu(int n)
 int main_bench()
 {
 	int i,m,n,t=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 
 	for(i=m;i<=n;i++)
 		if(sushu(i)&&huiwen(i))
 		{   
-			printf("%d",i);
+			my_printf("%d",i);
 			t++;
 			break;
 		}
 	for(i++;i<=n;i++)
 		if(sushu(i)&&huiwen(i))
 		{   
-			printf(",%d",i);
+			my_printf(",%d",i);
 			t++;
 		}
 	if(t==0)
-		printf("no\n");
+		my_printf("no\n");
 }
 

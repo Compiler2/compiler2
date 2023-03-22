@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int sum,s100,s50,s20,s10,s5,s1;
-	scanf("%d",&sum);
+	my_scanf("%d",&sum);
 	s100=0;
 	s50=0;
 	s20=0;
@@ -30,11 +30,11 @@ int main_bench(){
 		sum=sum-5;
 	}
 	s1=sum;
-	printf("%d\n",s100);
-	printf("%d\n",s50);
-	printf("%d\n",s20);
-	printf("%d\n",s10);
-	printf("%d\n",s5);
-	printf("%d\n",s1);
+	my_printf("%d\n",s100);
+	my_printf("%d\n",s50);
+	my_printf("%d\n",s20);
+	my_printf("%d\n",s10);
+	my_printf("%d\n",s5);
+	my_printf("%d\n",s1);
 	return 0;
 }

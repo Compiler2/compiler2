@@ -16,13 +16,13 @@ int main_bench( )
 	
 	for(i = 0; i < 3; i++)
 	{
-        scanf("%d",&start[i]);
+        my_scanf("%d",&start[i]);
 	}
 
 	
 	for(i = 0; i < 3; i++)
 	{
-        scanf("%d",&end[i]);
+        my_scanf("%d",&end[i]);
 	}
 
 	
@@ -78,7 +78,7 @@ int main_bench( )
             
 	 }
 
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 
 }

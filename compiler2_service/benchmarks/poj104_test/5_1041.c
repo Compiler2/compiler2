@@ -5,9 +5,9 @@ int main_bench (){
 	char s2[501];
 double p,q;
 	int m,n,j,k=0;
-	   scanf("%lf",&p);
+	   my_scanf("%lf",&p);
 
-	        scanf("%s%s",s1,s2);
+	        my_scanf("%s%s",s1,s2);
       m=strlen(s1);
 	  n=strlen(s2);
 				for(j=0;s1[j],s2[j];j++){
@@ -21,11 +21,11 @@ double p,q;
 		}
      q=1.0*k/m;
 	 if (k==m+1)
-		 printf("error");
+		 my_printf("error");
 	else if(q>p)
-			printf("yes");
+			my_printf("yes");
 		else if(q<=p)
-			printf("no");
+			my_printf("no");
 	
 
 	

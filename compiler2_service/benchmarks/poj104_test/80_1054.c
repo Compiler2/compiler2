@@ -12,8 +12,8 @@ int runnian(int y)
 int main_bench()
 {
 	int i,y1,y2,m1,m2,d1,d2,sum=0;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	for(i=y1;i<y2;i++)
 	{
 		sum+=365+runnian(i);
@@ -46,7 +46,7 @@ int main_bench()
 			}
 		}
 		sum=sum+d2-d1;
-		printf("%d",sum);
+		my_printf("%d",sum);
 		return 0;
 }
 		

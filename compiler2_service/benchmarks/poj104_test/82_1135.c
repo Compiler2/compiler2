@@ -2,14 +2,14 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct point{
 		int a,b;
 	}
 	sz[100];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&sz[i].a,&sz[i].b);
+		my_scanf("%d%d",&sz[i].a,&sz[i].b);
 	}
 	int xsz[100]={0};
 	int j;
@@ -31,7 +31,7 @@ int main_bench(){
 			max=xsz[i];
 		}
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }
 

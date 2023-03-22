@@ -15,8 +15,8 @@ int main_bench()
     j=strcmp(a,b);
     switch(j)
     {
-     case 1:printf(">\n");break;
-     case 0:printf("=\n");break;
-     case -1:printf("<\n");break;
+     case 1:my_printf(">\n");break;
+     case 0:my_printf("=\n");break;
+     case -1:my_printf("<\n");break;
      }
 }

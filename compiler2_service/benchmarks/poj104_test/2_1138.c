@@ -9,10 +9,10 @@ int main_bench()
 	int n,i,j,tmp=0,tmp1=0,tmp2;
 	int a[1000];
 	out='A';
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%d %s",&a[i],b[i]);
+		my_scanf ("%d %s",&a[i],b[i]);
 		for (j=0;j<strlen(b[i]);j++)
 		{
 			if (b[i][j]=='A')     c[0]++;if (b[i][j]=='B')     c[1]++;if (b[i][j]=='C')     c[2]++;if (b[i][j]=='D')     c[3]++;
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
  
-    printf ("%c\n%d\n",out+tmp1,tmp);
+    my_printf ("%c\n%d\n",out+tmp1,tmp);
 	for (i=0;i<n;i++)
 	{
 		for (j=0;b[i][j]!='\0';j++)
@@ -43,7 +43,7 @@ int main_bench()
 		
 			if (tmp2==(out+tmp1))
 			{
-				printf("%d\n",a[i]);
+				my_printf("%d\n",a[i]);
 				break;
 			}
 		}

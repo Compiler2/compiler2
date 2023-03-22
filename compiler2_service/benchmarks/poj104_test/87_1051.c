@@ -9,7 +9,7 @@ int main_bench()
     {
         for(int j=0;j<6;j++)
         {
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
         }
         num++;
         if(sz[i][0]==0&&sz[i][1]==0
@@ -21,7 +21,7 @@ int main_bench()
     {
         time[i]=3600*12-sz[i][0]*3600-sz[i][1]*60-sz[i][2]
                 +3600*sz[i][3]+60*sz[i][4]+sz[i][5];
-        printf("%d\n",time[i]);
+        my_printf("%d\n",time[i]);
     }
     return 0;
 }

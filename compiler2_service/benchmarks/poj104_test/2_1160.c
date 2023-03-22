@@ -22,7 +22,7 @@ void hewroteit(struct library book,int maxalpha)
 	{
 		if(book.authors[i]-'A'==maxalpha)
 		{
-			printf("%d\n",book.num);
+			my_printf("%d\n",book.num);
 			break;
 		}
 	}
@@ -30,10 +30,10 @@ void hewroteit(struct library book,int maxalpha)
 int main_bench()
 {
 	int m;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int i;
 	for(i=0;i<m;i++)
-		scanf("%d %s",&books[i].num,books[i].authors);
+		my_scanf("%d %s",&books[i].num,books[i].authors);
 	for(i=0;i<m;i++)
 		addauthor(books[i].authors);
 	int max=0,maxalpha=0;
@@ -45,7 +45,7 @@ int main_bench()
 			maxalpha=i;
 		}
 	}
-	printf("%c\n%d\n",'A'+maxalpha,max);
+	my_printf("%c\n%d\n",'A'+maxalpha,max);
 	for(i=0;i<m;i++)
 	{
 		hewroteit(books[i],maxalpha);

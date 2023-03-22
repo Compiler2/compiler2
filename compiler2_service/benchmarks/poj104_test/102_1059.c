@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j,k=0,m=0,t;
 	double a[41],b[41],h[41],x,y;
 	char s[41];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("\n%s %lf",s,&h[i]);
+		my_scanf("\n%s %lf",s,&h[i]);
 
 		if(strcmp(s,"male")==0){
 			a[k+1]=h[i];
@@ -36,12 +36,12 @@ for(j=1;j<=m;j++){
 		}
 	}
 for(i=1;i<=k;i++){
-printf("%.2lf ",a[i]);
+my_printf("%.2lf ",a[i]);
 
 }
 for(i=1;i<m;i++)
-printf("%.2lf ",b[i]);
-printf("%.2lf",b[m]);
+my_printf("%.2lf ",b[i]);
+my_printf("%.2lf",b[m]);
 
 return 0;
 }

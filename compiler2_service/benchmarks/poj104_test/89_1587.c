@@ -6,7 +6,7 @@ int main_bench()
     int a,b;
     int i,j,k,l;
     int s;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int *p=(int*)malloc(n*n*sizeof(int));
     int *q=(int*)malloc(n*n*sizeof(int));
     for(l=0;l<n*n;l++)
@@ -17,7 +17,7 @@ int main_bench()
 
     for (k=0;k<n*n;k++)
     {
-        scanf("%d %d",&a,&b);
+        my_scanf("%d %d",&a,&b);
        if(a==0&&b==0)
         {
             break;
@@ -43,12 +43,12 @@ int main_bench()
             {
                 s=0;
                 s++;
-                printf("%d\n",j);
+                my_printf("%d\n",j);
             }
         }
     if(s==0)
     {
-        printf("NOT FOUND");
+        my_printf("NOT FOUND");
     }
 
     free(p);

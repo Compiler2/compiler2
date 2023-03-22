@@ -3,14 +3,14 @@
 int main_bench(){
 char a[101][101],q;
 int k,n,i,j,m,s;
-scanf("%d",&n);
-scanf("%c",&q);
+my_scanf("%d",&n);
+my_scanf("%c",&q);
 for (i=1;i<=n;i++)
 for (j=1;j<=n;j++){
-	scanf("%c",&a[i][j]);
-if (j==n) scanf("%c",&q);
+	my_scanf("%c",&a[i][j]);
+if (j==n) my_scanf("%c",&q);
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 for (k=2;k<=m;k++){
 for (i=1;i<=n;i++)
 for (j=1;j<=n;j++)
@@ -28,6 +28,6 @@ s=0;
 for (i=1;i<=n;i++)
 for (j=1;j<=n;j++)
 if (a[i][j]=='@') s=s+1;
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

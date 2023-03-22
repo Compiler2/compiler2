@@ -10,7 +10,7 @@ int check(int x)
 int main_bench()
 {
 	int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=3;i<n;i+=2)
 	{
 		number[i]=check(i);
@@ -21,7 +21,7 @@ int main_bench()
 		{
 			if(number[j]==1&&number[i-j]==1)
 			{
-				printf("%d=%d+%d\n",i,j,i-j);
+				my_printf("%d=%d+%d\n",i,j,i-j);
 				break;
 			}
 		}	

@@ -30,7 +30,7 @@ int main_bench()
       if(i==q)
       for(p=0;a[p]!='\0';p++)
       {
-      printf("%c",a[p]);
+      my_printf("%c",a[p]);
       }
       else
       {
@@ -40,7 +40,7 @@ int main_bench()
                         }
       for(p=0;a[p]!='\0';p++)
       {
-              printf("%c",a[p]);
+              my_printf("%c",a[p]);
               }
               }
               getchar();

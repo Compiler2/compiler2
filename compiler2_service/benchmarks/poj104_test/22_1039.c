@@ -27,27 +27,27 @@ int main_bench()
 	i=0;
 	do
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
         i=i+1;
 	     c=getchar();
 	}while (c != '\n');
     
     paixu (a,i);
-	if (i==1) printf("No");
+	if (i==1) my_printf("No");
 	else 
 	{
 		for (j=0;j<i-1;j++)
 		{
 		    if (a[j]!=a[j+1]) k=1;
 		}
-	    if (k==0) printf("No");
+	    if (k==0) my_printf("No");
             else 
 			{ 
 		        for (l=0;l<i;l++)
 				{
 				          if (a[l]!=a[l+1]) 
 						 {
-							 printf("%d",a[l+1]);
+							 my_printf("%d",a[l+1]);
 							 break;
 						 }
 				}

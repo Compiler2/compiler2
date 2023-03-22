@@ -4,21 +4,21 @@ int main_bench()
 { 
 int n,m,a,b,i,j;
 
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-   scanf("%d",&m);
+   my_scanf("%d",&m);
    b=0;
    for(j=0;j<m;j++)
    {
-      scanf("%d",&a);
+      my_scanf("%d",&a);
        if(a+b<60)
        if(a+b+3<60)
         b+=3;
        else
         b=60-a;
    }
-   printf("%d\n",60-b);
+   my_printf("%d\n",60-b);
 }
 return 0; 
 }

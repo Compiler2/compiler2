@@ -17,8 +17,8 @@ for (int l=1;l<=n;l++)
       if (x==0)
          {
          for (int k=i;k<=i+l;k++)
-         printf("%c",a[k]);
-         printf("\n");
+         my_printf("%c",a[k]);
+         my_printf("\n");
          }
       }
 }

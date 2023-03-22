@@ -7,10 +7,10 @@ int main_bench()
 	int i;
 	int temp,temp1;
 	int wz,counts=0;
-	scanf("%d %d",&len,&m);
+	my_scanf("%d %d",&len,&m);
 	for(i=0;i<len;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	temp=a[0];
 	for(i=0;counts<=len;i=i+m)
@@ -27,10 +27,10 @@ int main_bench()
 		temp=temp1;
 		counts++;
 	}
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<len;i++)
 	{
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 	return 0;
 }

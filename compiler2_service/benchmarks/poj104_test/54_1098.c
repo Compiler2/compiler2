@@ -7,12 +7,12 @@ int f_2(int,int);
 int main_bench()
 {
 	int n,k,m;
-	scanf("%d %d",&n,&k);
+	my_scanf("%d %d",&n,&k);
 	if(f_1(n-1)>k)
 		m=f_1(n)-f_2(n,k);
 	else
 		m=f_1(n)*n-f_2(n,k);
-	printf("%d\n",m);
+	my_printf("%d\n",m);
 	return 0;
 }
 

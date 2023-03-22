@@ -42,7 +42,7 @@ int ss(unsigned long int n){
 
 int main_bench(){
 	unsigned long int i , j , n , a , b ;
-	scanf( "%d" , &n ) ;
+	my_scanf( "%d" , &n ) ;
 	for( i = 6 ; i <= n ; i = i + 2){
 		a = i ;
 		for( j = 3 ; j <= n / 2 && j <= a ; j++){
@@ -51,7 +51,7 @@ int main_bench(){
 				b = i - j ;
 			}
 		}
-	printf("%d=%d+%d\n" , i , a , b ) ;
+	my_printf("%d=%d+%d\n" , i , a , b ) ;
 	}
 
 	return(0);

@@ -12,12 +12,12 @@ int main_bench(){
     convert['G'] = 'C';
     convert['C'] = 'G';
     
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for (tt = 1; tt <=N; tt++){
-          scanf("%s",a);
+          my_scanf("%s",a);
           l = strlen(a);
-          for (i=0;i<l;i++) printf("%c",convert[a[i]]);
-          printf("\n");
+          for (i=0;i<l;i++) my_printf("%c",convert[a[i]]);
+          my_printf("\n");
     }
 
     return 0;

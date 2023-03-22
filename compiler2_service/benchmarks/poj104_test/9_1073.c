@@ -41,11 +41,11 @@ int main_bench() {
 
 
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++) {
-		scanf("%s",c[i]);
+		my_scanf("%s",c[i]);
 		strcpy(d[i],c[i]);
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		b[i]=a[i];
 	}
 
@@ -70,12 +70,12 @@ int main_bench() {
 
 	for(i=1;i<=n;i++) {
 		if(a[i]>=60) {
-			printf("%s\n",c[i]);
+			my_printf("%s\n",c[i]);
 		}
 	}
 	for(i=1;i<=n;i++) {
 		if(b[i]<60) {
-			printf("%s\n",d[i]);
+			my_printf("%s\n",d[i]);
 		}
 	}
 

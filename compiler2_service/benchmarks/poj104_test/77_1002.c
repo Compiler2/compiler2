@@ -49,7 +49,7 @@ int main_bench()
 	}
 	for(w=0;w<k;w++)
 	{
-        printf("%d %d\n",a[w],b[w]);
+        my_printf("%d %d\n",a[w],b[w]);
 	}
 	return 0;
 }

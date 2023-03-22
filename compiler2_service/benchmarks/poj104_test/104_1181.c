@@ -4,7 +4,7 @@ int main_bench()
 {
 	int x,y,i,countx,county,c,p,q;
 	int a[11]={0},b[11]={0};
-	scanf("%d %d",&x,&y);
+	my_scanf("%d %d",&x,&y);
 	countx=1;
 	county=1;
 	c=0;
@@ -35,5 +35,5 @@ int main_bench()
 			if(a[i]==b[i]&&a[i]!=0&&b[i]!=0) c=a[i];
 			else break;
 		}
-	printf("%d",c);
+	my_printf("%d",c);
 }

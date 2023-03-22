@@ -38,11 +38,11 @@ int main_bench()
 		if(c[i]!=0)
 			s=1;
 		if(s==1)
-			printf("%d",c[i]);
+			my_printf("%d",c[i]);
 	}
 	if(s==0)
-		printf("%d",s);
-	printf("\n");
+		my_printf("%d",s);
+	my_printf("\n");
 	return 0;
 }
 

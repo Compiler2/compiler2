@@ -3,11 +3,11 @@
 int main_bench(){
     int i,nanshu=0,nvshu=0,k,zongrenshu;
     double shengao;
-    scanf("%d",&zongrenshu);
+    my_scanf("%d",&zongrenshu);
     double nanshengao[zongrenshu],nvshengao[zongrenshu],zhongjianliang;
     char xingbie[7],nv[7]="female",nan[5]="male";
     for(i=0;i<zongrenshu;i++){
-        scanf("%s %lf",xingbie,&shengao);
+        my_scanf("%s %lf",xingbie,&shengao);
         if(strcmp(xingbie,nv)==0){
             nvshengao[nvshu]=shengao;
             nvshu++;
@@ -35,11 +35,11 @@ int main_bench(){
         }
     }
     for(i=0;i<nanshu;i++){
-        printf("%.2lf ",nanshengao[i]);
+        my_printf("%.2lf ",nanshengao[i]);
     }
     for(i=0;i<(nvshu-1);i++){
-        printf("%.2lf ",nvshengao[i]);
+        my_printf("%.2lf ",nvshengao[i]);
     }
-    printf("%.2lf",nvshengao[nvshu-1]);
+    my_printf("%.2lf",nvshengao[nvshu-1]);
     return 0;
 }

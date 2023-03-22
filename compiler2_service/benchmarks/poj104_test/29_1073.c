@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int m,i,j,max;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int*sz_1=(int*)malloc(sizeof(int)*m);
 	for(i=0;i<m;i++){
-		scanf("%d",&(sz_1[i]));}
+		my_scanf("%d",&(sz_1[i]));}
 	max=0;
 	for(i=0;i<m;i++){
 		if(sz_1[i]>max){
@@ -25,7 +25,7 @@ int main_bench(){
 		    sz_3[i]+=1.0*sz_2[j+1]/sz_2[j];
 		}
 	}
-	for(i=0;i<m;i++) printf("%.3lf\n",sz_3[i]);
+	for(i=0;i<m;i++) my_printf("%.3lf\n",sz_3[i]);
 	free(sz_1);
 	free(sz_2);
 	free(sz_3);

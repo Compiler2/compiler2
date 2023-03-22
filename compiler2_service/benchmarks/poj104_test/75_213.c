@@ -9,12 +9,12 @@ int main_bench()
 {
 	int i,n,j,max;
 	int t[1000]={0};
-	scanf("%d",&a[0].in);
+	my_scanf("%d",&a[0].in);
 	i=1;
-	while(scanf(",%d",&a[i++].in)==1);
-	scanf("%d",&a[0].out);
+	while(my_scanf(",%d",&a[i++].in)==1);
+	my_scanf("%d",&a[0].out);
 	i=1;
-	while(scanf(",%d",&a[i++].out)==1);
+	while(my_scanf(",%d",&a[i++].out)==1);
 	n=i-1;
 
 	for(j=0;j<999;j++){
@@ -31,5 +31,5 @@ int main_bench()
 			max=t[j];
 	}
 	
-	printf("%d %d\n",n,max);
+	my_printf("%d %d\n",n,max);
 }

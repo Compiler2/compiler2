@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,m,i,j,p,t,a[10000],y=0,k,q=0,x=1,r,q1,g;
 	
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<10000;i++)
 		a[i]=0;
 	for(i=m;i<=n;i++)
 	{
 	if(m<2)
-		printf("2");
+		my_printf("2");
 	p=0;
 	for(j=2;j<i;j++)
 	
@@ -55,11 +55,11 @@ int main_bench()
 			
 			if(a[0]==0)
 		
-			printf("no");
+			my_printf("no");
 			else
 			{
-				printf("%d",a[0]);
+				my_printf("%d",a[0]);
 			for(i=1;i<y;i++)
-	printf(",%d",a[i]);
+	my_printf(",%d",a[i]);
 			}
 }

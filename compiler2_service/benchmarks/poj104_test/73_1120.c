@@ -6,7 +6,7 @@ int main_bench()
     p=0;
     for(i=0;i<5;i++){
        for(j=0;j<5;j++){
-          scanf("%d",&sz[i][j]);
+          my_scanf("%d",&sz[i][j]);
        }
     }
     for(i=0;i<5;i++){
@@ -19,7 +19,7 @@ int main_bench()
                 }
              }
              if(t==1){
-                   printf("%d %d %d",i+1,j+1,sz[i][j]); 
+                   my_printf("%d %d %d",i+1,j+1,sz[i][j]); 
                    p=1;
              }
         }
@@ -27,7 +27,7 @@ int main_bench()
     if(p==1){
       return 0;
     }else{
-      printf("not found");
+      my_printf("not found");
     }
     return 0;
 }

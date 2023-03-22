@@ -5,8 +5,8 @@ char s[256],a[256],b[256];
 int x,y,z,k,l,i,j,m,n,cha,mark=0;
 
 gets(s);
-scanf("%s",a);
-scanf("%s",b);
+my_scanf("%s",a);
+my_scanf("%s",b);
 x=strlen(a);
 y=strlen(b);
 z=strlen(s);
@@ -48,13 +48,13 @@ for(i=0;i<z;i++){
 		}
 	}
 		if(mark!=0){
-	           printf("%s",s);
+	           my_printf("%s",s);
 	           return 0;
 		}
 	
 }
 if(mark==0){
-printf("%s",s);
+my_printf("%s",s);
 }
 
 return 0;

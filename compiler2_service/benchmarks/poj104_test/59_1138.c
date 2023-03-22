@@ -2,16 +2,16 @@
 
 int main_bench(){
 int n,i,j,m,k=0,l,a,b;
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 char s[102][102]={' '};
 
 
 for(i=1;i<=n;i++){
 	for(j=1;j<=n;j++){
-	   scanf("%c\n",&s[i][j]);
+	   my_scanf("%c\n",&s[i][j]);
 	}
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(l=0;l<m;l++){ 
 	
 	for(a=1;a<=n;a++){
@@ -41,6 +41,6 @@ for(i=1;i<=n;i++){
 		}
 	}
 }
-printf("%d",k);
+my_printf("%d",k);
 return 0;
 }

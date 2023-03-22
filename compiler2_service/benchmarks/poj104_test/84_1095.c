@@ -4,10 +4,10 @@ int main_bench()
 {
  int n,i=1;
  int a,b=0,c=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  while(i<=n)
  {
-  scanf("%d",&a);
+  my_scanf("%d",&a);
   if(a>b)
    c=b,b=a;
   else
@@ -15,5 +15,5 @@ int main_bench()
     c=a;
   i++;
  }
- printf("%d\n%d",b,c);
+ my_printf("%d\n%d",b,c);
 }

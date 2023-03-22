@@ -52,10 +52,10 @@ int main_bench()
 		}
 	}
 	for(i=loci[maxi];i<loci[maxi]+max;i++)	
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	for(i=loci[mini];i<loci[mini]+min;i++)	
-		printf("%c",s[i]);
-	printf("\n");
+		my_printf("%c",s[i]);
+	my_printf("\n");
 	return 0;
 }

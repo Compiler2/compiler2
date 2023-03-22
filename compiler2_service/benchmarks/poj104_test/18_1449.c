@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,j,k,l,a[120][120],m,s,d;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		m=n;
@@ -11,7 +11,7 @@ int main_bench()
 		{
 			for(k=0;k<m;k++)
 			{
-				scanf("%d",&a[j][k]);
+				my_scanf("%d",&a[j][k]);
 			}
 		}
 		s=0;
@@ -62,7 +62,7 @@ int main_bench()
 			}
 			m--;
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 	}
 	return 0;
 }

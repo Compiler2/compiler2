@@ -5,7 +5,7 @@ int main_bench()
     
     int i,j,amount,n;
     char small[51],big[51];
-    scanf("%s%s",small,big);
+    my_scanf("%s%s",small,big);
     n=strlen(small);
     if(strlen(small)==strlen(big)){
        for(i=0;big[i]!='\0';i++){
@@ -20,12 +20,12 @@ int main_bench()
                               
             }
         if(n==0){
-                 printf("YES\n"); 
+                 my_printf("YES\n"); 
         }else {
-              printf("NO\n");
+              my_printf("NO\n");
               }
     }else
-        printf("NO\n");
+        my_printf("NO\n");
     
      return 0;                                        
 }

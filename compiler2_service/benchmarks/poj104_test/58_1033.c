@@ -25,7 +25,7 @@ int main_bench()
            }
         }
         else{m=0;} 
-        printf("%d\n",m);
+        my_printf("%d\n",m);
      }                                                                                     
      return 0;      
     

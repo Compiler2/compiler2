@@ -9,14 +9,14 @@ int main_bench(){
 	int e,f;
 	int m,n;
 	int min=0;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	e=row/2;
 	f=col/2;
 	for(i=0;i<=row-1;i++)
 	{
 		for(j=0;j<=col-1;j++)
 		{
-			scanf("%d",&ew[i][j]);
+			my_scanf("%d",&ew[i][j]);
 		}
 	}
 	if(row%2==0&&col%2==0)
@@ -73,18 +73,18 @@ int main_bench(){
 		{
 			for(a=i;a<=col-i-2;a++)
 			{
-				printf("%d\n",ew[i][a]);
+				my_printf("%d\n",ew[i][a]);
 			}
 			for(b=i;b<=row-i-2;b++)
 			{
-				printf("%d\n",ew[b][col-1-i]);
+				my_printf("%d\n",ew[b][col-1-i]);
 			}
 			for(p=col-i-1;p>=i+1;p--)
 			{
-				printf("%d\n",ew[row-i-1][p]);
+				my_printf("%d\n",ew[row-i-1][p]);
 			}for(q=row-1-i;q>=i+1;q--)
 			{
-				printf("%d\n",ew[q][i]);
+				my_printf("%d\n",ew[q][i]);
 			}
 			
 		}
@@ -98,18 +98,18 @@ int main_bench(){
 		{
 			for(a=i;a<=col-i-2;a++)
 			{
-				printf("%d\n",ew[i][a]);
+				my_printf("%d\n",ew[i][a]);
 			}
 			for(b=i;b<=row-i-2;b++)
 			{
-				printf("%d\n",ew[b][col-1-i]);
+				my_printf("%d\n",ew[b][col-1-i]);
 			}
 			for(p=col-i-1;p>=i+1;p--)
 			{
-				printf("%d\n",ew[row-i-1][p]);
+				my_printf("%d\n",ew[row-i-1][p]);
 			}for(q=row-1-i;q>=i+1;q--)
 			{
-				printf("%d\n",ew[q][i]);
+				my_printf("%d\n",ew[q][i]);
 			}
 			
 		}
@@ -117,7 +117,7 @@ int main_bench(){
 		
 		for(m=min-1;m<=row-min;m++)
 		{
-			printf("%d\n",ew[m][f]);
+			my_printf("%d\n",ew[m][f]);
 		}
 	}
 	
@@ -127,24 +127,24 @@ int main_bench(){
 		{
 			for(a=i;a<=col-i-2;a++)
 			{
-				printf("%d\n",ew[i][a]);
+				my_printf("%d\n",ew[i][a]);
 			}
 			for(b=i;b<=row-i-2;b++)
 			{
-				printf("%d\n",ew[b][col-1-i]);
+				my_printf("%d\n",ew[b][col-1-i]);
 			}
 			for(p=col-i-1;p>=i+1;p--)
 			{
-				printf("%d\n",ew[row-i-1][p]);
+				my_printf("%d\n",ew[row-i-1][p]);
 			}for(q=row-1-i;q>=i+1;q--)
 			{
-				printf("%d\n",ew[q][i]);
+				my_printf("%d\n",ew[q][i]);
 			}
 			
 		}
 		for(n=min-1;n<=col-min;n++)
 		{
-			printf("%d\n",ew[e][n]);
+			my_printf("%d\n",ew[e][n]);
 		}
 	}
 				

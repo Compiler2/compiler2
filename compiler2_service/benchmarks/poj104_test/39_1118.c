@@ -4,13 +4,13 @@ int main_bench()
 {
 	char name[100][20],g[2]={'Y','N'},x[2]={'Y','N'},gg,xx;
 	int n,score, pscore, article,b,num[100],i,maxnum,sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++){
 		num[i]=0;
-		scanf("%s", name[i]);
-		scanf(" %d %d", &score,&pscore);
-		scanf(" %c %c", &gg,&xx);
-		scanf(" %d", &article);
+		my_scanf("%s", name[i]);
+		my_scanf(" %d %d", &score,&pscore);
+		my_scanf(" %c %c", &gg,&xx);
+		my_scanf(" %d", &article);
 		if(score>80&&article>=1){
 			num[i]+=8000;
 		}
@@ -36,7 +36,7 @@ int main_bench()
 			b=i;
 		}
 	}
-	printf("%s\n%d\n%d\n", name[b],maxnum,sum);
+	my_printf("%s\n%d\n%d\n", name[b],maxnum,sum);
 	return 0;
 }
 

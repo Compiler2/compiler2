@@ -4,11 +4,11 @@ int s[10000][10000];
 int main_bench()
 {
 	int n,i,j,a1,b1,a2,b2,sum,flag;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 
 	for(i=0;i<n;i++)
 	{
@@ -43,6 +43,6 @@ int main_bench()
 	}
 
 	sum=(a2-a1-1)*(b2-b1-1);
-	printf("%d",sum);
+	my_printf("%d",sum);
 
 }

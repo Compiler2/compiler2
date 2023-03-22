@@ -52,7 +52,7 @@ int main_bench()
 			 
 		 }
    }
-    printf("%s\n%s",maxword,minword);
+    my_printf("%s\n%s",maxword,minword);
 
 	return 0;
 }

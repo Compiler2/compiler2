@@ -20,7 +20,7 @@ int main_bench()
 
        
 
-       scanf("%d",&number);
+       my_scanf("%d",&number);
 
 
        while(number != 0){
@@ -39,7 +39,7 @@ int main_bench()
 
      
 
-       printf("%d\n",reversed_number);
+       my_printf("%d\n",reversed_number);
 
        
 

@@ -5,7 +5,7 @@ int main_bench()
 	char s[100000];
 	int c[26]={0};
 	int i,l,t,j,b;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	for(i=0;i<t;i++)
 	{
@@ -20,13 +20,13 @@ int main_bench()
 		{
 			if(c[s[j]-'a']==1)
 			{
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				b=1;
 				break;
 			}
 		}
 	    memset(c,0,sizeof(c));	
-	    if(b!=1) printf("no\n");
+	    if(b!=1) my_printf("no\n");
 	}
 	return 0;
 	

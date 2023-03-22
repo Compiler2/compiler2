@@ -6,7 +6,7 @@ int i,c,b,d,e,q[50];
 b=0;
 c=100;
 for(i=0;i<51;i++){
-	scanf("%s",a[i]);
+	my_scanf("%s",a[i]);
 	if(a[i][0]>=65&&a[i][0]<=122){
 	q[i]=strlen(a[i]);
     if(q[i]>b){b=q[i];d=i;}
@@ -14,8 +14,8 @@ for(i=0;i<51;i++){
 	else{break;}
 }
 	
-printf("%s\n",a[d]);
-printf("%s\n",a[e]);
+my_printf("%s\n",a[d]);
+my_printf("%s\n",a[e]);
 return 0;
 }
 

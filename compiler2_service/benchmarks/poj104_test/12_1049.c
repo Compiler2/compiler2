@@ -8,7 +8,7 @@ int main_bench()
 		total=0;
         int shuzu[16];
         for(i=0;i<16;i++){
-        scanf("%d",&n);
+        my_scanf("%d",&n);
 		if(n!=-1){
         shuzu[i]=n;
 		if(n==0){
@@ -16,7 +16,7 @@ int main_bench()
 		for(k=0;k<i;k++){
 			if(shuzu[d]==2*shuzu[k]){
 				total++;}}}
-			printf("%d\n",total);
+			my_printf("%d\n",total);
 		i=-1;
 		total=0;}
          }

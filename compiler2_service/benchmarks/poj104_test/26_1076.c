@@ -9,15 +9,15 @@ int main_bench()
 	for(i=0;i<n-1;i++)
 	{
 		if(s[i]!=' ')
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		else
 		{
 			if(s[i+1]==' ') continue;
 			else 
-				printf(" ");
+				my_printf(" ");
 		}
 	}
-	printf("%c",s[n-1]);
+	my_printf("%c",s[n-1]);
 	return 0;
 }
 

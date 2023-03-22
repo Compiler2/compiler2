@@ -5,12 +5,12 @@ int main_bench(){
 	int n,i,j,d,k,m=0;
 	char a[200][200];
     
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-			scanf("%s",a[i]);}
+			my_scanf("%s",a[i]);}
 
-	scanf("%d",&d);
+	my_scanf("%d",&d);
 
     for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -45,7 +45,7 @@ int main_bench(){
 			if(a[i][j]!=109&&a[i][j]!=110) m++;}}
 
 
-		printf("%d",m);
+		my_printf("%d",m);
         return 0;
 
 	}

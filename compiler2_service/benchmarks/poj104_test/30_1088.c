@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,i,a,sam;
 	sam=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
 		if(i%7==0)
@@ -33,6 +33,6 @@ int main_bench()
 		}
 		
 	}
-	printf("%d",sam);
+	my_printf("%d",sam);
 	return 0;
 }

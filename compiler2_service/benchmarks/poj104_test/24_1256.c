@@ -40,7 +40,7 @@ int main_bench()
 			}
          if(a>m)break;
 	}
-	printf("%s\n",e[max1]);
-	printf("%s\n",e[min1]);
+	my_printf("%s\n",e[max1]);
+	my_printf("%s\n",e[min1]);
 	return 0;
 }

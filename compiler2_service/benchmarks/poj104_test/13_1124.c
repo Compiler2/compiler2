@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,num[20000],i,j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&num[i-1]);
+		my_scanf("%d",&num[i-1]);
 		for(j=1;j<=i-1;j++)
 			if(num[j-1]==num[i-1])
 			{
@@ -14,10 +14,10 @@ int main_bench()
 				break;
 			}
 	}
-	printf("%d",num[0]);
+	my_printf("%d",num[0]);
 	for(i=1;i<=n-1;i++)
 	{
-		if(num[i]!=0) printf(" %d",num[i]);
+		if(num[i]!=0) my_printf(" %d",num[i]);
 	}
 	return 0;
 }

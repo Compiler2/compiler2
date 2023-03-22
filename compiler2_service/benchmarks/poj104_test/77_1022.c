@@ -2,7 +2,7 @@
 
 int main_bench(){
 char kid[101];
-scanf("%s",kid);
+my_scanf("%s",kid);
 int zuhe[51][2];
 char sigb;
 int i,j=0,p;
@@ -22,7 +22,7 @@ for(j=0;j<strlen(kid)/2;j++){
     kid[p]='0';
 }
 for(j=0;j<strlen(kid)/2;j++){
-    printf("%d %d\n",zuhe[j][0],zuhe[j][1]);
+    my_printf("%d %d\n",zuhe[j][0],zuhe[j][1]);
 }
 return 0;
 }

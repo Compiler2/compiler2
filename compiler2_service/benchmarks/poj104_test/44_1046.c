@@ -17,15 +17,15 @@ int main_bench()
     int n,b,i;
     for (i=1;i<=6;i++)
     {
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     if (n<0)
     {
           b=0-reverse(0-n);
-          printf("%d\n",b);
+          my_printf("%d\n",b);
     }
     else if (n==0)
-    printf("0\n");
-    else printf("%d\n",reverse(n));
+    my_printf("0\n");
+    else my_printf("%d\n",reverse(n));
     }
     getchar();
     getchar();

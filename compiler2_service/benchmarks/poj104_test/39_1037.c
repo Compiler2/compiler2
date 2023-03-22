@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a,b,c,j[100],j1[100],sum=0;
 	char m,l,s[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		j[i]=0;
-		scanf("%s %d %d %c %c %d",s[i],&a,&b,&m,&l,&c);
+		my_scanf("%s %d %d %c %c %d",s[i],&a,&b,&m,&l,&c);
 		if(a>80&&c>=1){
 			j[i]=j[i]+8000;
 		}
@@ -35,12 +35,12 @@ int main_bench()
 	for(i=0;i<n;i++){
 		if(j1[i]==j[n-1])
 		{
-			printf("%s\n",s[i]);
-		printf("%d\n",j[n-1]);
+			my_printf("%s\n",s[i]);
+		my_printf("%d\n",j[n-1]);
 		break;
 		}
 	}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 		return 0;
 }
 

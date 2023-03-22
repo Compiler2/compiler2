@@ -5,7 +5,7 @@ int main_bench()
 	char letter1[100],letter2[100],*le1,*le2;
 	le1=letter1;
 	le2=letter2;
-	scanf("%s %s",le1,le2);
+	my_scanf("%s %s",le1,le2);
 	int _break;
 	if(strlen(letter1)==strlen(letter2))
 	{
@@ -24,16 +24,16 @@ int main_bench()
 			}
 			if(_break==0)
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 				_break=2;
 				break;
 			}
 		}
 		if(_break!=2)
-			printf("YES\n");
+			my_printf("YES\n");
 	}
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 	return 0;
 }
 	

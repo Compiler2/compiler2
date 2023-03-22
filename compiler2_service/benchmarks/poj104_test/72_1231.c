@@ -6,11 +6,11 @@ int main_bench()
 	int com(int a[][100],int x,int y);
 	int m,n,b;
 	int a[100][100]={0},i,j;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<n;j++)
-		{	scanf("%d",&a[i][j]);}
+		{	my_scanf("%d",&a[i][j]);}
 	}
 
 	for(i=0;i<m;i++)
@@ -20,7 +20,7 @@ int main_bench()
 			b=com(a,i,j);
 			if(b>0)
 			{
-				printf("%d %d\n",i,j);
+				my_printf("%d %d\n",i,j);
 			}
 		}
 	}

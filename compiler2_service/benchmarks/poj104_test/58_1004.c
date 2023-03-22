@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,i,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 		len=strlen(a);
 		p=a;
 		if(!((*p>='a'&&*p<='z')||(*p>='A'&&*p<='Z')||(*p=='_')))
-			printf("0\n");
+			my_printf("0\n");
 		else
 		{
 			for(p=a+1;p<a+len;p++)
@@ -24,9 +24,9 @@ int main_bench()
 					s++;
 			}
 			if(s==len-1)
-				printf("1\n");
+				my_printf("1\n");
 			else
-				printf("0\n");
+				my_printf("0\n");
 		}
 
 	}

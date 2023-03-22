@@ -5,9 +5,9 @@ int main_bench()
 {
     int day(int m,int leap);
     int i,n,year[200][3],leap=0,day1,day2,d;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%d %d %d",&year[i][0],&year[i][1],&year[i][2]);
+        my_scanf("%d %d %d",&year[i][0],&year[i][1],&year[i][2]);
     for(i=0;i<n;i++)
     {
         if( (year[i][0]%4==0&&year[i][0]%100!=0) ||year[i][0]%400==0 )
@@ -19,9 +19,9 @@ int main_bench()
         d=day1-day2;
         d=(int)fabs( (double)d );
         if(d%7==0)
-            printf("YES\n");
+            my_printf("YES\n");
         else
-            printf("NO\n");
+            my_printf("NO\n");
     }
     return(0);
 }

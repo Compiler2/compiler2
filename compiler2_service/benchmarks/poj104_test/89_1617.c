@@ -3,7 +3,7 @@
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int*p;
   p=(int*)malloc((n*n)*sizeof(int));
   int*y;
@@ -11,7 +11,7 @@ int main_bench()
   int i,j;
   for(i=0;i<n*n;i++)
   {
-  scanf("%d %d",&p[i],&y[i]);
+  my_scanf("%d %d",&p[i],&y[i]);
   if(p[i]==0&&y[i]==0)
   break;
   }
@@ -34,12 +34,12 @@ int main_bench()
    }
    if(d[i]==n-1)
    {
-   printf("%d",i);  
+   my_printf("%d",i);  
    break;
    }         
   }
   if(i==n)
-  printf("NOT FOUND");
+  my_printf("NOT FOUND");
   
   free(p);
   free(y);

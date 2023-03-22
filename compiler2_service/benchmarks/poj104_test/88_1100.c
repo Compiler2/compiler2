@@ -41,7 +41,7 @@ int main_bench()
 	{
 		if(check(chaa[k][0])==1)
 		{
-			printf("%s\n",chaa[k]);
+			my_printf("%s\n",chaa[k]);
 		}
 	}
 	return 0;

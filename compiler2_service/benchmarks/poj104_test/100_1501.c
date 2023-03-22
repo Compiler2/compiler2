@@ -8,7 +8,7 @@ int main_bench(){
 		c[n]=0;
 		C[n]=0;
 	}
-	scanf("%s",a);
+	my_scanf("%s",a);
 	int length;
 	length=strlen(a);
 	for(int i=0;i<length;i++){
@@ -25,11 +25,11 @@ int main_bench(){
 		if(C[j]!=0){
 			if(m==0){
 				x=j+'A';
-			    printf("%c=%d",x,C[j]);
+			    my_printf("%c=%d",x,C[j]);
 			}
 			else{
 				x=j+'A';
-			    printf("\n%c=%d",x,C[j]);
+			    my_printf("\n%c=%d",x,C[j]);
 			}
 			m++;
 		}
@@ -37,12 +37,12 @@ int main_bench(){
 	for(int k=0;k<26;k++){
 		if(c[k]!=0){
 			x=k+'a';
-			printf("\n%c=%d",x,c[k]);
+			my_printf("\n%c=%d",x,c[k]);
 			m++;
 		}
 	}
 	if(m==0){
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n;
 	int i,j,k,counta=0,countc=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char legal[81];
 	getchar();
 
@@ -22,11 +22,11 @@ int main_bench()
 			}
 			if(countc==1)
 			{
-				printf("1\n");
+				my_printf("1\n");
 			}
 			else
 			{
-				printf("0\n");
+				my_printf("0\n");
 			}
 		}
 
@@ -43,19 +43,19 @@ int main_bench()
 				}
 				if (counta==k-1)
 				{
-					printf("1");
-					printf("\n");
+					my_printf("1");
+					my_printf("\n");
 				}
 				else
 				{
-					printf("0");
-					printf("\n");
+					my_printf("0");
+					my_printf("\n");
 				}
 			}
 			else
 			{
-				printf("0");
-				printf("\n");
+				my_printf("0");
+				my_printf("\n");
 			}
 		}
 	}

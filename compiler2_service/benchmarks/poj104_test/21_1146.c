@@ -5,10 +5,10 @@ int main_bench()
 	int i,j,tmp,n,sum=0,p=0;
 	double average=0,b[300]={0},max=0;
 	int a[300]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum+=a[i];
 	}
 	for(i=1;i<n;i++)
@@ -28,9 +28,9 @@ int main_bench()
 	for(i=0;i<n;i++)
 		if(max<b[i]) max=b[i];
 	for(i=0;i<n;i++)
-	{	if(b[i]==max) {printf("%d",a[i]); p=i;break;}}
+	{	if(b[i]==max) {my_printf("%d",a[i]); p=i;break;}}
 	for(i=p+1;i<n;i++)
-		if(b[i]==max) printf(",%d",a[i]);
+		if(b[i]==max) my_printf(",%d",a[i]);
 
 	return 0;
 }

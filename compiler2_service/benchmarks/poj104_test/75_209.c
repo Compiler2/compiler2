@@ -12,17 +12,17 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d",&time[i].x);
+		my_scanf("%d",&time[i].x);
 		i++;
 	}while((c=getchar())!='\n');
 	i=0;
 	do
 	{
-		scanf("%d",&time[i].y);
+		my_scanf("%d",&time[i].y);
 		i++;
 	}while((c=getchar())!='\n');
 	n=i;
-	printf("%d ",n);
+	my_printf("%d ",n);
 	for(i=0;i<1000;i++)
 	{
 		sum=0;
@@ -34,6 +34,6 @@ int main_bench()
 		if(sum>max)
 			max=sum;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	return 0;
 }

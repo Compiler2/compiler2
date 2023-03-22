@@ -6,7 +6,7 @@ int main_bench()
 	
 	for(i=1;i<=20000;i++)
 		a[i]=-10000;
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 	for(i=2;i<=m;i++)
 	{
 		{
@@ -23,7 +23,7 @@ int main_bench()
 	for(i=2;i<m;i++)
 		for(j=i;j<m;j++)
 			if(a[j]+a[i]==m)
-				printf("%d %d\n",i,j);
+				my_printf("%d %d\n",i,j);
 	return 0;
 }
 

@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,j=0,k=0,a,b,p=0,q=0;
 	double sz[50],f[50],m[50],e;
 	char s[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%lf",s,&(sz[i]));
+		my_scanf("%s%lf",s,&(sz[i]));
 		if(s[0]=='f'){
 			f[j]=sz[i];
 			j++;
@@ -38,12 +38,12 @@ int main_bench(){
 			}
 		}
 		for(k=0;k<q;k++){
-			printf("%.2lf ",m[k]);
+			my_printf("%.2lf ",m[k]);
 		}
 		for(j=0;j<p;j++){
 			if(j<p-1)
-			printf("%.2lf ",f[j]);
-			else printf("%.2lf",f[j]);
+			my_printf("%.2lf ",f[j]);
+			else my_printf("%.2lf",f[j]);
 		}
 		return 0;
 	}

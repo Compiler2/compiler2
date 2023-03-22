@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n,mm,maxj,i,j,k,max;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int * height=(int*)malloc(sizeof(int)*n);
 	int * amount=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&height[i]);
+		my_scanf("%d",&height[i]);
 		amount[i]=1;
 	}
 	max=1;
@@ -33,6 +33,6 @@ int main_bench()
 				max=maxj;
 			}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 	return 0;
 }

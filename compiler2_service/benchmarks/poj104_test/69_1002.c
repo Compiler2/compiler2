@@ -6,7 +6,7 @@ int main_bench()
     int k,l,m,i,flag=0;
     for(i=0;i<250;i++)
         a[i]=b[i]=sum[i]='0';
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
     k=strlen(a);
     l=strlen(b);
     m=l>k? l:k;
@@ -21,7 +21,7 @@ int main_bench()
         }
         sum[m-i]+='1'-1;
     }
-    if(flag==1) printf("1");
+    if(flag==1) my_printf("1");
     sum[m]='\0';
     if(flag!=1)
     {
@@ -29,6 +29,6 @@ int main_bench()
         for(i=0;i<m;i++) sum[i]=sum[i+1];
     if(sum[0]=='\0') sum[0]='0';
     }
-    printf("%s",sum);
+    my_printf("%s",sum);
         return 0;
 }

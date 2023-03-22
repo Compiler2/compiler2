@@ -3,12 +3,12 @@
 int main_bench()
 {
       int i,j,n;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int high[100],count[100];
       for(i=0;i<n;i++)
       {
              count[i]=0;         
-             scanf("%d",&high[i]);
+             my_scanf("%d",&high[i]);
       }
        high[n]=0,count[n]=0;
       for(i=n-1;i>=0;i--)
@@ -28,6 +28,6 @@ int main_bench()
       for(i=0;i<n;i++)
       if(count[i]>max)
       max=count[i];
-      printf("%d",max);
+      my_printf("%d",max);
       getchar();getchar();getchar(); getchar();getchar();getchar();
 }                                                                                            

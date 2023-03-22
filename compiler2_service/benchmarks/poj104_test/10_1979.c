@@ -31,13 +31,13 @@ int main_bench()
 		int highest=-1;
 
 	
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 missileHeight=(int*)malloc(sizeof(int)*n);
 
 for(i=0;i<n;i++)
 {
-	scanf("%d",&(missileHeight[i]));
+	my_scanf("%d",&(missileHeight[i]));
 	if (missileHeight[i]>highest) highest=missileHeight[i];
 }
-	printf("%d",p(0,highest,missileHeight,n));
+	my_printf("%d",p(0,highest,missileHeight,n));
 }

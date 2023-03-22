@@ -5,18 +5,18 @@ int main_bench()
     int i,n,k=0,l=0,p;
     char a[100][10];
     double f[100],m[100],e;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-                    scanf("%s",a[i]);
+                    my_scanf("%s",a[i]);
                     if(a[i][0]=='m')
                     {
-                                    scanf("%lf",&m[k]);
+                                    my_scanf("%lf",&m[k]);
                                     k++;
                     }
                     else if(a[i][0]=='f')
                     {
-                         scanf("%lf",&f[l]);
+                         my_scanf("%lf",&f[l]);
                          l++;
                     }
     }
@@ -47,13 +47,13 @@ int main_bench()
     for(i=0;i<k;i++)
     {
                     if(i==0)
-                    printf("%.2lf",m[i]);
+                    my_printf("%.2lf",m[i]);
                     else
-                    printf(" %.2lf",m[i]);
+                    my_printf(" %.2lf",m[i]);
     }
     for(i=0;i<l;i++)
     {
-                    printf(" %.2lf",f[i]);
+                    my_printf(" %.2lf",f[i]);
     }
     return 0;
 }

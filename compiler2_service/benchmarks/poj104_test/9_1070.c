@@ -4,11 +4,11 @@ int main_bench()
 {
 	char id[100][10];
 	int o[100],n,i,j,s[100],b=0,t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",id[i]);
-		scanf("%d",&o[i]);
+		my_scanf("%s",id[i]);
+		my_scanf("%d",&o[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -40,13 +40,13 @@ int main_bench()
 		for(j=0;j<n;j++)
 		{
 			if(o[j]==s[i])
-				printf("%s\n",id[j]);
+				my_printf("%s\n",id[j]);
 		}
 	}
 	for(i=0;i<n;i++)
 	{
 		if(o[i]<60)
-			printf("%s\n",id[i]);
+			my_printf("%s\n",id[i]);
 	}
 	return 0;
 }

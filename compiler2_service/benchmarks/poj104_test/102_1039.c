@@ -4,10 +4,10 @@ int main_bench(){
     int n,i,j,o=0,k=0;
     double b[100],u,b1[100]={0.0},b2[100]={0.0};
     char a[100][10];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     for(i=0;i<n;i++){
-        scanf("%s %lf",a[i],&b[i]);
+        my_scanf("%s %lf",a[i],&b[i]);
         }
     for(i=0;i<n;i++){
         if(strcmp(a[i],"male")==0) b1[o++]=b[i];
@@ -32,13 +32,13 @@ int main_bench(){
                 }
             }
         }
-    for(i=0;i<o;i++) printf("%.2lf ",b1[i]);
-    for(i=0;i<k-1;i++) printf("%.2lf ",b2[i]);
-    printf("%.2lf",b2[k-1]);
+    for(i=0;i<o;i++) my_printf("%.2lf ",b1[i]);
+    for(i=0;i<k-1;i++) my_printf("%.2lf ",b2[i]);
+    my_printf("%.2lf",b2[k-1]);
    
     
     
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

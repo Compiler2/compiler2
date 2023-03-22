@@ -11,11 +11,11 @@ while(str[i])
 {
 if('0'<=str[i]&&str[i]<='9')
 {
-printf("%c",str[i]);
+my_printf("%c",str[i]);
 }
 if(i>=1&&('0'<=str[i-1]&&str[i-1]<='9')&&!('0'<=str[i]&&str[i]<='9'))
 {
-printf("\n");
+my_printf("\n");
 }
 i++;
 }

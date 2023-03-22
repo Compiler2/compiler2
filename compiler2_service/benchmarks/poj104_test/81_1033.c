@@ -7,18 +7,18 @@ int main_bench()
      p=a;
 	for(i=0;i<5;i++)
 	{for(j=0;j<4;j++)
-			scanf("%d",*(p+i)+j);
-	     scanf("%d\n",*(p+i)+4);
+			my_scanf("%d",*(p+i)+j);
+	     my_scanf("%d\n",*(p+i)+4);
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
     k=*a;
 	if(change(k,n,m))
      for(i=0;i<5;i++)
 	{for(j=0;j<4;j++)
-			printf("%d ",*(*(p+i)+j));
-	     printf("%d\n",*(*(p+i)+4));
+			my_printf("%d ",*(*(p+i)+j));
+	     my_printf("%d\n",*(*(p+i)+4));
 	}
-	 else printf("error");
+	 else my_printf("error");
 }
 int change(int *p,int n,int m)
 {

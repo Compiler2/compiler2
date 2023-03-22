@@ -8,10 +8,10 @@ int main_bench()
         int qimo,banji,lunwen;
     }s[100];
     int n,i,b,jiangjin[100];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
     {
-        scanf("%s %d %d %c %c %d\n",&s[i].name,&s[i].qimo,&s[i].banji,&s[i].s1,&s[i].s2,&s[i].lunwen);
+        my_scanf("%s %d %d %c %c %d\n",&s[i].name,&s[i].qimo,&s[i].banji,&s[i].s1,&s[i].s2,&s[i].lunwen);
     }
     for (i=0;i<n;i++)
     {
@@ -52,9 +52,9 @@ int main_bench()
     {
         if (jiangjin[i]==largest)
         {
-            printf("%s\n",s[i].name);
-            printf("%d\n",largest);
-            printf("%d",sum);
+            my_printf("%s\n",s[i].name);
+            my_printf("%d\n",largest);
+            my_printf("%d",sum);
             break;
         }
     }

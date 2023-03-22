@@ -3,9 +3,9 @@
 int main_bench(){
     int n,bl[10000],yx[10000],i;
     double xl[10000],cha[10000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d %d",&bl[i],&yx[i]);
+        my_scanf("%d %d",&bl[i],&yx[i]);
     }
     for(i=0;i<n;i++){
         xl[i]=(1.0*yx[i])/bl[i];
@@ -15,12 +15,12 @@ int main_bench(){
     }
     for(i=1;i<n;i++){
         if(cha[i]>0.05){
-            printf("better\n");
+            my_printf("better\n");
         }
         else if(cha[i]<-0.05){
-            printf("worse\n");
+            my_printf("worse\n");
         }
-        else printf("same\n");
+        else my_printf("same\n");
     }
     return 0;
 }

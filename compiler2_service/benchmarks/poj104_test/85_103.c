@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,i,j,isbreak;
 	char s[21];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (j=0;j<n;j++)
 	{
 		isbreak=0;
-		scanf ("%s",s);
+		my_scanf ("%s",s);
 	    if (s[0]=='_'||(s[0]<='Z'&&s[0]>='A')||(s[0]<='z'&&s[0]>='a'))
 			{  
 			   for (i=1;s[i]!='\0';i++)
@@ -18,14 +18,14 @@ int main_bench()
 				   else 
 				   {
 					   isbreak=1;
-					   printf ("no\n");
+					   my_printf ("no\n");
 					   break;
 				   }
 			   }
 		}  
 	     else 
 				 {
-					printf("no\n");
+					my_printf("no\n");
 					isbreak=1;
 				  }
 			   
@@ -33,7 +33,7 @@ int main_bench()
 			 continue;
 		 else if (isbreak==0)
 		 {
-			 printf ("yes\n");
+			 my_printf ("yes\n");
 		     continue;
 		 }
 		 }

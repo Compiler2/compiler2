@@ -5,7 +5,7 @@ int main_bench(){
     int i,j,k;
     for(i=0;i<100;i++){
       for(j=0;j<16;j++){
-        scanf("%d",&m);
+        my_scanf("%d",&m);
         if(m!=0){
           sz[i][j]=m;
           }else {break;}
@@ -23,7 +23,7 @@ int main_bench(){
             if(sz[i][j]==2*sz[i][k]){
               n=n+1;
               }}}}
-      printf("%d\n",n);
+      my_printf("%d\n",n);
       n=0;        
       }
     return 0;

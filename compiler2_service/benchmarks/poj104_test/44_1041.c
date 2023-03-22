@@ -8,9 +8,9 @@ int main_bench()
 	int i;
 	int reverse(int x);
 	for(i=0;i<6;i++){
-	scanf("%d",&in[i]);}
+	my_scanf("%d",&in[i]);}
 	for(i=0;i<6;i++){
-	printf("%d\n",reverse(i));}
+	my_printf("%d\n",reverse(i));}
 	return 0;
 }
 	int reverse(int x){

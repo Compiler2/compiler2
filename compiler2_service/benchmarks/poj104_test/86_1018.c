@@ -2,21 +2,21 @@
 
 int main_bench(){
     int m;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     int*n=(int*)malloc(sizeof(int)*m);
     int a,i;
     for(i=0;i<m;i++){
-        scanf("%d",&a);
+        my_scanf("%d",&a);
         int*b=(int*)malloc(sizeof(int)*a);
         if(a==0){
             n[i]=60;
-            printf("\n");
+            my_printf("\n");
         }
         else{
 
             int j;
             for(j=0;j<a;j++){
-                scanf("%d",&b[j]);
+                my_scanf("%d",&b[j]);
             }
      int sum=61;
      int k;
@@ -30,12 +30,12 @@ int main_bench(){
      }
      n[i]=sum;
      free(b);
-     printf("\n");
+     my_printf("\n");
      }
    }
      int c;
      for(c=0;c<m;c++){
-         printf("%d\n",n[c]);
+         my_printf("%d\n",n[c]);
      }
      free(n);
      return 0;

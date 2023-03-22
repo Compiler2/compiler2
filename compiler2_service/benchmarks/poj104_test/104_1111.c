@@ -29,10 +29,10 @@ int num(int a[10],int x,int b[10],int y)
 int main_bench()
 {
 	int x,y,a[10],b[10],m,n,t,i,j;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	m=way(x,a);
 	n=way(y,b);
 	t=num(a,m,b,n);
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }

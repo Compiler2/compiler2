@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12;
 
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 
 	y1=(a+12)%7;
 	y2=(a+31+12)%7;
@@ -21,50 +21,50 @@ int main_bench()
 	
 	if(y1==5)
 	{
-		printf("1\n");
+		my_printf("1\n");
 	}
 	if(y2==5)
 	{
-		printf("2\n");
+		my_printf("2\n");
 	}
 	if(y3==5)
 	{
-		printf("3\n");
+		my_printf("3\n");
 	}if(y4==5)
 	{
-		printf("4\n");
+		my_printf("4\n");
 	}
 	if(y5==5)
 	{
-		printf("5\n");
+		my_printf("5\n");
 	}
 	if(y6==5)
 	{
-		printf("6\n");
+		my_printf("6\n");
 	}
 	if(y7==5)
 	{
-		printf("7\n");
+		my_printf("7\n");
 	}
 	if(y8==5)
 	{
-		printf("8\n");
+		my_printf("8\n");
 	}
 	if(y9==5)
 	{
-		printf("9\n");
+		my_printf("9\n");
 	}
 	if(y10==5)
 	{
-		printf("10\n");
+		my_printf("10\n");
 	}
 	if(y11==5)
 	{
-		printf("11\n");
+		my_printf("11\n");
 	}
 	if(y12==5)
 	{
-		printf("12\n");
+		my_printf("12\n");
 	}
 	return 0;
 }

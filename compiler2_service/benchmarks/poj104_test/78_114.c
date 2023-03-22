@@ -16,10 +16,10 @@ int main_bench()
 		 {
 		   if(z*2+s<i&&i-s<60)
 		   {
-printf("l %d\n",i-s);
-printf("q %d\n",i-z);		    
-printf("z %d\n",z);
-printf("s %d\n",s);	 
+my_printf("l %d\n",i-s);
+my_printf("q %d\n",i-z);		    
+my_printf("z %d\n",z);
+my_printf("s %d\n",s);	 
 
 			 			
  

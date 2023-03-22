@@ -9,10 +9,10 @@ int main_bench()
     int out[310]={0};
     double sum=0,avr=0;
     int i=0,j=0,k=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&num[i]);
+        my_scanf("%d",&num[i]);
         sum += num[i];
     }
     avr=sum/n;
@@ -48,7 +48,7 @@ int main_bench()
         }
     }
     for(i=0;i<j-1;i++)
-        printf("%d,",out[i]);
-    printf("%d",out[j-1]);
+        my_printf("%d,",out[i]);
+    my_printf("%d",out[j-1]);
 	return 0;
 }

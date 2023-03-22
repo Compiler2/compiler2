@@ -5,15 +5,15 @@ int main_bench()
       int n,i,j,x; 
       for(x=0;x<49;x++)
       {
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int t,a[1000],b[1000];
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&a[i]);
+                      my_scanf("%d",&a[i]);
                       }
       for(i=0;i<n;i++)
       {
-                      scanf("%d",&b[i]);
+                      my_scanf("%d",&b[i]);
                       }
       for(i=0;i<n-1;i++)
       {
@@ -79,7 +79,7 @@ int main_bench()
                                     }
                       }
                       }
-      if(n!=0)printf("%d\n",200*k);} 
+      if(n!=0)my_printf("%d\n",200*k);} 
 }
 
 int f(int z,int u)

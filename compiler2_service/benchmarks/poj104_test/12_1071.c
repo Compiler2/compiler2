@@ -22,7 +22,7 @@ int main_bench()
 	end=0;
 	for(i=0; i<1000; i++)
 	{
-		scanf("%f", &a[i]);
+		my_scanf("%f", &a[i]);
 		if(a[i]==-1)
 		{			
             end=i;
@@ -62,7 +62,7 @@ int main_bench()
 	while(num[k]!=-1)
 	{
       
-        printf("%d\n", num[k]);
+        my_printf("%d\n", num[k]);
         k++;
     }
 

@@ -8,11 +8,11 @@ int main_bench()
     int a[6]={0};
     for(j=0;j<6;j++)
     {
-        scanf("%d",&a[j]);
+        my_scanf("%d",&a[j]);
     }
     for(j=0;j<6;j++)
     {
-        printf("%d\n",reverse(a[j]));            
+        my_printf("%d\n",reverse(a[j]));            
     }
 getchar();
 getchar();

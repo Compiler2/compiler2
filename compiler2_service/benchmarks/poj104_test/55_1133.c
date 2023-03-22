@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a,b,n,c=0,d,j,i=0,m,s[100];
 	char num1[100]={0},num2[100]={0};
-	scanf("%d",&a);
-	scanf("%s",num1);
-	scanf("%d",&b);
+	my_scanf("%d",&a);
+	my_scanf("%s",num1);
+	my_scanf("%d",&b);
 	n=strlen(num1);
 	for(i=0;i<n;i++)
 	{
@@ -58,13 +58,13 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%c",num2[i]);
+		my_printf("%c",num2[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	}
 	else if(c==0)
 	{
-		printf("%d\n",c);
+		my_printf("%d\n",c);
 	}
 	return 0;
 }

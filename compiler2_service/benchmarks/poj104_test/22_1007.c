@@ -6,10 +6,10 @@ int main_bench()
 	int k,i,j,b;
 	for(i=0;i<300;i++)
 		a[i]=-1;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<300;i++)
 	{
-		scanf(",%d",&a[i]);
+		my_scanf(",%d",&a[i]);
 	}
 	for(i=0;i<300;i++)
 	{
@@ -27,12 +27,12 @@ int main_bench()
 	{
 		if(a[i]!=a[i+1]&&a[i+1]!=-1)
 		{
-			printf("%d\n",a[i+1]);
+			my_printf("%d\n",a[i+1]);
 			break;
 		}
 		else if(a[i]==-1)
 		{
-			printf("No");
+			my_printf("No");
 			break;
 		}
 	}

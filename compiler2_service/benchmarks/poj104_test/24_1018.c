@@ -42,5 +42,5 @@ int main_bench()
 			max=as[i];
 		}
 	}
-	printf("%s\n%s\n",b[maxx],b[minx]);
+	my_printf("%s\n%s\n",b[maxx],b[minx]);
 }

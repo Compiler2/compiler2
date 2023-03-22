@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,m,i,j,k,t=0;
 	char p[103][103],p1[103][103];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(j=0;j<n+2;j++)
 	{
 		p[0][j]='.';
@@ -15,12 +15,12 @@ int main_bench()
 		p[i][0]='.';
 		for(j=1;j<n+1;j++)
 		{
-		  scanf("%c",&p[i][j]);
+		  my_scanf("%c",&p[i][j]);
 		}
 		p[i][n+1]='.';
-		scanf("\n");
+		my_scanf("\n");
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=2;k<=m;k++)
 	{   
 		for(i=1;i<n+1;i++)
@@ -53,7 +53,7 @@ int main_bench()
 				t++;
 		}
 	}
-	printf("%d\n",t);
+	my_printf("%d\n",t);
 	return 0;
 }
 

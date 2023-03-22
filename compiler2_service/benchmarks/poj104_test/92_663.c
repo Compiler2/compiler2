@@ -6,12 +6,12 @@ int main_bench()
 	int tfast,tslow,wfast,wslow;  
 	int t[1000],w[1000];
 	int k=0;
-  while(scanf("%d",&n)&&(n!=0))
+  while(my_scanf("%d",&n)&&(n!=0))
   {     
 	  for(i=0;i<n;i++)
-		  scanf("%d",&t[i]);
+		  my_scanf("%d",&t[i]);
 	  for(i=0;i<n;i++)
-		  scanf("%d",&w[i]);
+		  my_scanf("%d",&w[i]);
    	for(i=0;i<n-1;i++)
  		for(j=i+1;j<n;j++)
             if(t[i]<t[j])
@@ -41,6 +41,6 @@ int main_bench()
    sum[k++]=sub*200;
    sub=0;
   }
-  for (i=0;i<k;i++) printf("%d\n",sum[i]);
+  for (i=0;i<k;i++) my_printf("%d\n",sum[i]);
   
 } 

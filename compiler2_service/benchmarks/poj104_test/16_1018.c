@@ -4,8 +4,8 @@ int main_bench()
 {
 	int a[10],n,flag;
 	flag = 0;
-	scanf("%d",&n);
-	if(n == 0) printf("0");
+	my_scanf("%d",&n);
+	if(n == 0) my_printf("0");
 	else{
 		while(n != 0){
 			flag ++;
@@ -13,7 +13,7 @@ int main_bench()
 			n = n / 10;
 		}
 		for(int i = 1;i <= flag;i ++){
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		}
 	}
 	return 0;

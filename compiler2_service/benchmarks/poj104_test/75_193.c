@@ -5,7 +5,7 @@ int main_bench()
     int x[1000],y[1000],i,n,t,count1,count=0;
     for(i=0;;i++)
     {
-        scanf("%d",&x[i]);
+        my_scanf("%d",&x[i]);
         if(getchar()=='\n')
         {
             n=i+1;
@@ -14,9 +14,9 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     {
-        scanf("%d",&y[i]);
+        my_scanf("%d",&y[i]);
         if(i<n-1)
-            scanf(",");    
+            my_scanf(",");    
     }
     for(i=0;i<n;i++)
        
@@ -33,6 +33,6 @@ int main_bench()
             count=count1;
        
     }
-    printf("%d %d",n,count);
+    my_printf("%d %d",n,count);
     return 0;
 }

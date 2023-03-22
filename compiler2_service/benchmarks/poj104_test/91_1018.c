@@ -20,7 +20,7 @@ int main_bench()
 		j=j+1;
 	}
 	s1[l]='\0';
-	printf("%s",s1);
+	my_printf("%s",s1);
 	return 0;
 }
 		

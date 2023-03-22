@@ -4,10 +4,10 @@ int main_bench()
 {
   int n,a[300],d[300],i=0,*p;
   int judge(int *w,int i,int *p);
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(p=a;p<a+n;p++)
   {
-  scanf("%d",p);
+  my_scanf("%d",p);
   }
   for(p=a;p<a+n;p++)
   {
@@ -16,8 +16,8 @@ int main_bench()
   }
   for(p=d;p<d+i;p++)
   {
-	  if(p==d)printf("%d",*p);
-	  else printf(",%d",*p);
+	  if(p==d)my_printf("%d",*p);
+	  else my_printf(",%d",*p);
   }
 	  
 	  return 0;

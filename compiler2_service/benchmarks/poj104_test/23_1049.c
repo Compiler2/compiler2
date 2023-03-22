@@ -10,16 +10,16 @@ sb(char a[])
 			p--;
 	q = p + 1;
 	for (;*q != '\0'&&*q != ' ';q++)
-			printf("%c",*q);
+			my_printf("%c",*q);
 	p--;
 	for (;p>=a;p--)
 	{
-		printf(" ");
+		my_printf(" ");
 		while (*p != ' '&&p != a - 1)
 			p--;
 		q = p + 1;
 		for (;*q != '\0'&&*q != ' ';q++)
-			printf("%c",*q);
+			my_printf("%c",*q);
 	}
 }
 int main_bench()

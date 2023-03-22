@@ -4,15 +4,15 @@ int main_bench()
 {int i;
 for(i=0;i<1000;i++)
 {int n,j,k,p;
-scanf("%d",&n);
+my_scanf("%d",&n);
 if(0==n)
 break;
 else
 {int a[n],b[n];
  for(j=0;j<n;j++)
- scanf("%d",&a[j]);
+ my_scanf("%d",&a[j]);
  for(j=0;j<n;j++)
- scanf("%d",&b[j]); 
+ my_scanf("%d",&b[j]); 
  for(j=0;j<(n-1);j++)
  {for(k=0;k<(n-1-j);k++)
  {if(a[k]<a[k+1])
@@ -39,7 +39,7 @@ else if(a[a1]>b[b1])
 else    {r--;a2--;b1++;} 
 }
    s=r*200;
-   printf("%d\n",s);
+   my_printf("%d\n",s);
    r=0;s=0;
 }}
 } 

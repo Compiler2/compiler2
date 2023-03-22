@@ -12,9 +12,9 @@ int main_bench()
 	for(i=0;s[i]!='\0';i++)
 	{
 		if(s[i]!=' ') 
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 		else if(pre!=' ')
-			printf(" ");
+			my_printf(" ");
 		pre=s[i];
 	}
 

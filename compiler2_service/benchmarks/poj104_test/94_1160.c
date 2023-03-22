@@ -3,10 +3,10 @@
 int main_bench()
 {
     int N, a[500], i, j=0, z, b[500], sum, temp;
-    scanf("%d",&N);
+    my_scanf("%d",&N);
     for(i=0;i<N;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         if(a[i]%2!=0)
         {
             b[j]=a[i];
@@ -28,9 +28,9 @@ int main_bench()
     }
     for(i=0;i<sum;i++)
     {
-        printf("%d",b[i]);
+        my_printf("%d",b[i]);
         if(i<(sum-1))
-            printf(",");
+            my_printf(",");
     }
     return 0;
 }

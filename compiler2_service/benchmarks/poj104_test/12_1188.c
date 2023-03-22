@@ -4,9 +4,9 @@
 int main_bench()
 {
     int i,j,t,a[16]={0},sum=0,k=0;
-    while(scanf("%d",&a[0]) && a[0]!=-1){
+    while(my_scanf("%d",&a[0]) && a[0]!=-1){
     for(i=1;i<=16;i++){
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
         if(a[i]!=0) sum++;
         else break;
     }
@@ -15,7 +15,7 @@ int main_bench()
             if(a[i]==2*a[j] || a[j]==a[i]*2) k++;
         }
     }
-    printf("%d\n",k);
+    my_printf("%d\n",k);
     sum=0;
     k=0;
     }

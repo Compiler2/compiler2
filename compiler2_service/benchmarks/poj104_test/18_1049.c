@@ -4,13 +4,13 @@ int main_bench()
 {
 	int change(int a[100][100],int);
 	int n,a[100][100],i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 			for(k=0;k<n;k++)
-				scanf("%d",&a[j][k]);
-		printf("%d\n",change(a,n));
+				my_scanf("%d",&a[j][k]);
+		my_printf("%d\n",change(a,n));
 	}
 }
 int change(int a[100][100],int n)

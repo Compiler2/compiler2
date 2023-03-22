@@ -2,9 +2,9 @@
 
 int main_bench() {
 	int n,k,i,j,a[1000],b[1000],f=0;
-	scanf("%d%d",&n,&k);
+	my_scanf("%d%d",&n,&k);
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++){
 		b[i]=k-a[i];
@@ -20,8 +20,8 @@ int main_bench() {
 		break;
 	}
 	if(f==1)
-	printf("yes");
-	else printf("no");
+	my_printf("yes");
+	else my_printf("no");
 	return 0;
 }
 	

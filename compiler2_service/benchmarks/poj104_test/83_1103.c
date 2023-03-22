@@ -3,15 +3,15 @@
 int main_bench()
 {
    int n,i,j,k,sum1=0;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    int a[n],b[n];
    float c[n],d[n],sum2=0;
    for(i=0;i<n;i++){
-       scanf("%d",&a[i]);
+       my_scanf("%d",&a[i]);
        sum1 += a[i];
    }
    for(j=0;j<n;j++){
-       scanf("%d",&b[j]);
+       my_scanf("%d",&b[j]);
    }
    for(k=0;k<n;k++){
       if(b[k]>=90 && b[k]<=100)
@@ -37,6 +37,6 @@ int main_bench()
        d[k]=a[k]*c[k];
       sum2 += d[k];
    }
-   printf("%.2f",sum2/sum1);
+   my_printf("%.2f",sum2/sum1);
    return 0;
 }

@@ -5,7 +5,7 @@ int main_bench()
 	int n;
 	int i,j;
 	int a=0,b=0,c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=2;i<n-1;i++){
 		a=0;
 		b=0;
@@ -25,12 +25,12 @@ int main_bench()
 			}
 		}
 		if(a==0&&b==0){
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 			c=1;
 		}
 	}
 	if(c==0){
-		printf("empty");
+		my_printf("empty");
 	}
 	return 0;
 }

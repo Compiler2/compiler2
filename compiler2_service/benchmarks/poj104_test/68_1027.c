@@ -7,14 +7,14 @@ int main_bench(void)
 	int n;
     
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=6;i<=n;i+=2)
 	{
 		for(j=2;j<=i/2;j++)
 		{
 			if(isprime(j)&&isprime(i-j))
 			{
-				printf("%d=%d+%d\n",i,j,i-j);
+				my_printf("%d=%d+%d\n",i,j,i-j);
 				break;
 			}
 		}

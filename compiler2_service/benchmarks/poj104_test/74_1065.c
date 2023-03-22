@@ -7,7 +7,7 @@ int main_bench()
 	int n,m,i,k=0;
 	int a[300];
 	int flag=0,temp=0;
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		flag=huiwen(i);
@@ -23,12 +23,12 @@ int main_bench()
 		}
 	}
 	if(temp==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
 		for(i=0;i<k-1;i++)
-			printf("%d,",a[i]);
-		printf("%d",a[k-1]);
+			my_printf("%d,",a[i]);
+		my_printf("%d",a[k-1]);
 	}
 }
 int huiwen(int a)

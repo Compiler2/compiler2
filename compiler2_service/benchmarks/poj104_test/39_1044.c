@@ -7,10 +7,10 @@ char a,b;
 int n,i,num=0,sum=0;
 int c,d,e;
 int m=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%s %d %d %c %c %d",s,&c,&d,&a,&b,&e);
+my_scanf("%s %d %d %c %c %d",s,&c,&d,&a,&b,&e);
 if(c>80&&e>=1)
 num=num+8000;
 if(c>85&&d>80)
@@ -29,6 +29,6 @@ strcpy(p,s);
 sum=sum+num;
 num=0;
 }
-printf("%s\n%d\n%d\n",p,m,sum);
+my_printf("%s\n%d\n%d\n",p,m,sum);
 }
 

@@ -8,7 +8,7 @@ int MyInverseitoa(int iNum, char*ch,  int radix)
 	do 
 	{
 		ch[iBits]=iNum%radix;  
-		printf("%d",ch[iBits]);
+		my_printf("%d",ch[iBits]);
 		iNum/=radix;
 		iBits++;
 	} while (iNum);
@@ -21,11 +21,11 @@ int main_bench()
 	int iNum, iNumInverse, iBits=0;
 
 	char ch[12];  
-	scanf("%d", &iNum);
+	my_scanf("%d", &iNum);
 	if (iNum==0)
 	{
 		iNumInverse=iNum;
-		printf("%d", iNumInverse);
+		my_printf("%d", iNumInverse);
 	}
 	else
 	{

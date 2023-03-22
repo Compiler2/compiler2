@@ -4,9 +4,9 @@ int main_bench()
 {
 	int shu[100],shou[100],t[100]={0};
 	int i,n,j,k,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d%d",&shou[i],&shu[i]);
+		my_scanf("%d%d",&shou[i],&shu[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -28,7 +28,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",t[n-1]);
+	my_printf("%d",t[n-1]);
 
 	
 

@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(col=0;col<2;col++)
 		{
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 			
 		}
 		if(sz[row][1]==0)
@@ -42,7 +42,7 @@ int main_bench()
 			result[row]=1;
 		}	
 
-		printf("%d\n",result[row]);
+		my_printf("%d\n",result[row]);
 	
 	}
 	return 0;

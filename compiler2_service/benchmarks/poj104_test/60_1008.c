@@ -4,15 +4,15 @@ int main_bench()
 {
 	int n,i,sum=0;
 	int f (int i);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=1;(i+2)<=n;i++)
 	{
 		if (f(i)){
-			printf("%d %d\n",i,i+2);
+			my_printf("%d %d\n",i,i+2);
 			sum++;
 		}
 	}
-	if (sum==0) printf("empty"); 
+	if (sum==0) my_printf("empty"); 
 	return 0;
 }
 

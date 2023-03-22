@@ -31,17 +31,17 @@ continue;
  
 int main_bench()
 {int m,n,i,j;   
- scanf("%d%d",&m,&n);
+ my_scanf("%d%d",&m,&n);
  j=0;
  for(i=m;i<=n;i++)
   {if(sushu(i)==1&&huiwenshu(i)==1)
       {if(j==0)
-       {printf("%d",i);
+       {my_printf("%d",i);
         j++;}
        else 
-         printf(",%d",i);
+         my_printf(",%d",i);
         }
    }
   if(j==0)
-   printf("no");
+   my_printf("no");
 }

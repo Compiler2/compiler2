@@ -17,7 +17,7 @@ int main_bench()
     y=strlen(b);
     z=strlen(c);
     if(y!=z)
-    {printf("NO\n");
+    {my_printf("NO\n");
     return 0;}
     else
     {for(m=0;m<y;m++)
@@ -27,8 +27,8 @@ int main_bench()
         b[m]='0';
         break;}
         else if(n==z)
-        {printf("NO\n");
+        {my_printf("NO\n");
         return 0;}}
-      printf("YES\n");
+      my_printf("YES\n");
      }
      }

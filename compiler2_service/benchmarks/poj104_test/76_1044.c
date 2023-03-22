@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int sz[50001][2];
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d%d",&sz[i][0],&sz[i][1]);
+		my_scanf("%d%d",&sz[i][0],&sz[i][1]);
 	}
 	int j,k,t1,t2;
 	for(j=n-1;j>0;j--){
@@ -40,9 +40,9 @@ int main_bench(){
 		}
 	}
 	if(p==n-1){
-		printf("%d %d",sz[0][0],sz[n-1][1]);
+		my_printf("%d %d",sz[0][0],sz[n-1][1]);
 	}
-	else printf("no");
+	else my_printf("no");
 return 0;
 }
 

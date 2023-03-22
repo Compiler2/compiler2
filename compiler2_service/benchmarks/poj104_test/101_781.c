@@ -44,6 +44,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%c%c%c",m[0],m[1],m[2]);   
+	my_printf("%c%c%c",m[0],m[1],m[2]);   
 	return 0;
 }

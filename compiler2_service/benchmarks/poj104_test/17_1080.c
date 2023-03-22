@@ -10,7 +10,7 @@ int main_bench (void)
 	{
 		ans[i]=' ';
 	}				
-	printf("%s\n",a);
+	my_printf("%s\n",a);
 	int L=strlen(a);
 	ans[L]='\0';
 	int mark=0;
@@ -44,7 +44,7 @@ int main_bench (void)
 		}
 	}
 
-	printf("%s\n",ans);
+	my_printf("%s\n",ans);
 	}
 	return 0;
 }

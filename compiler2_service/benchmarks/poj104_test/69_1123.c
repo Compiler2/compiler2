@@ -4,7 +4,7 @@ char a[250],b[250],sum[251];
 int main_bench()
 {
 	int lena,lenb,i,l,f;
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	lena=strlen(a);
 	lenb=strlen(b);
 	if(lena>lenb) l=lena;
@@ -34,5 +34,5 @@ int main_bench()
 	for(i=l;i>=0;i--)
 		if(sum[i]!=0) f=i;
 	for(i=f;i<=l;i++)
-		printf("%d",sum[i]);
+		my_printf("%d",sum[i]);
 }

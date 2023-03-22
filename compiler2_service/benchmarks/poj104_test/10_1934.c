@@ -12,18 +12,18 @@ int main_bench()
 {
 	int i;
 	int m,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int h[n];
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&h[i]);
+		my_scanf("%d",&h[i]);
 		x[i]=h[i];
 		
 	}
 	for(i=n;i<26;i++) x[i]=999999;
 	int fly;
 	fly=xxx(999999,0);
-	printf("%d",fly);
+	my_printf("%d",fly);
 	
 }
 int xxx(int high,int j)

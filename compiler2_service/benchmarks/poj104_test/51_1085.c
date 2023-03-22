@@ -9,7 +9,7 @@ int main_bench()
       for (int i=0;i<501;i++)point[i]=-1;
       int n,len;
       
-      scanf("%d%s",&n,in);
+      my_scanf("%d%s",&n,in);
       len=strlen(in);
       
 for (int i=0;i<=len-n;i++)
@@ -44,14 +44,14 @@ for (int i=0;i<=len-n;i++)
     if (point[i]==-1&&num[i]>max)max=num[i];
 }
 
-if (max==1)printf("NO");
+if (max==1)my_printf("NO");
 if (max>1)
 {       
-          printf("%d\n",max);
+          my_printf("%d\n",max);
           for (int i=0;i<len-n;i++)
           {
               if (num[i]==max)
-              printf("%s\n",zi[i]);
+              my_printf("%s\n",zi[i]);
           }
 }
  

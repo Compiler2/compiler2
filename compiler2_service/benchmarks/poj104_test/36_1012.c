@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[100],b[100];
 	int da[2][26]={0},xiao[2][26]={0};
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int i,l1,l2;
 	l1=strlen(a);
 	l2=strlen(b);
@@ -28,6 +28,6 @@ int main_bench()
 		if(xiao[0][i]!=xiao[1][i])
 			flag=1;
 	if(flag==0)
-		printf("YES");
-	else printf("NO");
+		my_printf("YES");
+	else my_printf("NO");
 }

@@ -10,6 +10,6 @@ int main_bench()
     if(sz[i]==' '&&sz[i+1]==' '){continue;}else if(sz[i]!=' '||(sz[i]==' '&&sz[i+1]!=' ')){a[j]=sz[i]; j++;}}
     a[j]=sz[n-1];
    a[j+1]='\0';
-    printf("%s",a);
+    my_printf("%s",a);
 return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench(){
 	int n,m;
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int a=0;a<n;a++){
-		scanf("%d",&m);
+		my_scanf("%d",&m);
      double s=0;
 	int sz[1000];
 	sz[0]=1;
@@ -21,7 +21,7 @@ int main_bench(){
 		
 	    s+=qh[r];
 	}
-	 printf("%.3lf\n",s);
+	 my_printf("%.3lf\n",s);
 	
 }
 	return 0;

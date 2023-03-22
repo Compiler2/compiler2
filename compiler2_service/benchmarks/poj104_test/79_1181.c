@@ -7,9 +7,9 @@ int main_bench()
 	int i,j,k;
 	for(;;)
 	{
-		scanf("%d%d",&n,&m);
+		my_scanf("%d%d",&n,&m);
 		if(m==0)break;
-		else if(n==1) printf("1\n");
+		else if(n==1) my_printf("1\n");
 	
 		else
 		{p=(int*)malloc(sizeof(int)*(n));
@@ -31,7 +31,7 @@ int main_bench()
 	
 		if(k==0)
 		{
-			printf("%d\n",i+1);break;
+			my_printf("%d\n",i+1);break;
 		}
 		
 	}free(p);

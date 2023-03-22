@@ -12,7 +12,7 @@ int main_bench()
 		alpha2[i]=0;
 		ALPHA2[i]=0;
 	}
-	scanf("%s %s",str1,str2);
+	my_scanf("%s %s",str1,str2);
 	len1=strlen(str1);
 	len2=strlen(str2);
 	for(j=0;j<len1;j++)
@@ -48,9 +48,9 @@ int main_bench()
 		}
 	}
 	if(1==flag)
-		printf("YES\n");
+		my_printf("YES\n");
 	else
-		printf("NO\n");
+		my_printf("NO\n");
 
 	return 0;
 }

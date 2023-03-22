@@ -4,7 +4,7 @@ int main_bench()
 {
 	int year,month,day,daytal=0,day1,i;
 	int weekday,r;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	r=(year-1)/4+(year-1)/400-(year-1)/100;
 	
 		daytal=daytal+((year-1)%7)*(365%7);
@@ -56,25 +56,25 @@ int main_bench()
 		switch(weekday)
 		{
 		case 0:
-			printf("Sun.\n");
+			my_printf("Sun.\n");
 			break;
 		case 1:
-			printf("Mon.\n");
+			my_printf("Mon.\n");
 			break;
 		case 2:
-			printf("Tue.\n");
+			my_printf("Tue.\n");
 			break;
 		case 3:
-			printf("Wed.\n");
+			my_printf("Wed.\n");
 			break;
 		case 4:
-			printf("Thu.\n");
+			my_printf("Thu.\n");
 			break;
 		case 5:
-			printf("Fri.");
+			my_printf("Fri.");
 			break;
 		case 6:
-			printf("Sat.\n");
+			my_printf("Sat.\n");
 			break;
 		}
 	}
@@ -125,25 +125,25 @@ int main_bench()
 		switch(weekday)
 		{
 		case 0:
-			printf("Sun.\n");
+			my_printf("Sun.\n");
 			break;
 		case 1:
-			printf("Mon.\n");
+			my_printf("Mon.\n");
 			break;
 		case 2:
-			printf("Tue.\n");
+			my_printf("Tue.\n");
 			break;
 		case 3:
-			printf("Wed.\n");
+			my_printf("Wed.\n");
 			break;
 		case 4:
-			printf("Thu.\n");
+			my_printf("Thu.\n");
 			break;
 		case 5:
-			printf("Fri.");
+			my_printf("Fri.");
 			break;
 		case 6:
-			printf("Sat.\n");
+			my_printf("Sat.\n");
 			break;
 		}
 	}

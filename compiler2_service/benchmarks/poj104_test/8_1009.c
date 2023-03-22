@@ -8,11 +8,11 @@ struct HaHa scan()
 {
 	struct HaHa hehe;
 	int i,j;
-	scanf("%d%d",&hehe.x,&hehe.y);
+	my_scanf("%d%d",&hehe.x,&hehe.y);
 	for(i=0;i<hehe.x;i++)
-		scanf("%d",&hehe.z[0][i]);
+		my_scanf("%d",&hehe.z[0][i]);
 	for(j=0;j<hehe.y;j++)
-		scanf("%d",&hehe.z[1][j]);
+		my_scanf("%d",&hehe.z[1][j]);
 	return(hehe);
 }
 struct HaHa line(struct HaHa yahoo)
@@ -66,9 +66,9 @@ void print(struct HaHa xxx)
 	int i;
 	for(i=0;i<xxx.x+xxx.y-1;i++)
 	{
-		printf("%d ",xxx.g[i]);
+		my_printf("%d ",xxx.g[i]);
 	}
-	printf("%d",xxx.g[xxx.x+xxx.y-1]);
+	my_printf("%d",xxx.g[xxx.x+xxx.y-1]);
 }
 int main_bench()
 {

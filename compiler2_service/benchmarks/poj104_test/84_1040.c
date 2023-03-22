@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int a,m,i,num,n;
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	i=1;
     while(i<=a){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(i==1){
 		n=0,m=num;}
 		else{
@@ -16,6 +16,6 @@ int main_bench(){
 	}
 		i=i+1;
 	}
-	printf("%d\n%d",m,n);
+	my_printf("%d\n%d",m,n);
 			return 0;
 }

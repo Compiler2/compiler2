@@ -8,7 +8,7 @@ int a[100][100],sum=0;
 int main_bench()
 {
 	int n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{	
 		for(j=0;j<=99;j++)
@@ -20,12 +20,12 @@ int main_bench()
 		for(r=0;r<n;r++)
 			for(l=0;l<n;l++)
 		{
-			scanf("%d",*(a+r)+l);
+			my_scanf("%d",*(a+r)+l);
 			
 			
 		}
 		sum=tozero(r);
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 		sum=0;
 	}
 }

@@ -4,11 +4,11 @@
 int main_bench(){
 	int a[1000][1000];
 	int n,i,k,x,y,z,w,s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
 		for(k=0;k<n;k++){
-			scanf("%d",&a[i][k]);
+			my_scanf("%d",&a[i][k]);
 		}
 	}
 
@@ -31,7 +31,7 @@ int main_bench(){
 	}
 	
 	s=(z-1-x)*(w-1-y);
-	printf("%d",s);
+	my_printf("%d",s);
 
 	return 0;
 }

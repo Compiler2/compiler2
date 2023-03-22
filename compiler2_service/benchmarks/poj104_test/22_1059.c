@@ -7,12 +7,12 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d%c",&a[k++],&c);
+		my_scanf("%d%c",&a[k++],&c);
 		num++;
 	}
 	while(c!='\n');
-	if(second(a,num)!=-1)printf("%d",second(a,num));
-	else printf("No");
+	if(second(a,num)!=-1)my_printf("%d",second(a,num));
+	else my_printf("No");
 	return 0;
 }
 int second(int a[],int n)

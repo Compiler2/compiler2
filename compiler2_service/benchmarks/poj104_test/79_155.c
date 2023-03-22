@@ -13,7 +13,7 @@ int main_bench()
    c=0;
    m=1;
    do {
-       scanf("%d%d",&a[i][0],&a[i][1]);   
+       my_scanf("%d%d",&a[i][0],&a[i][1]);   
        i++;
        }   
    while (a[i-1][0]!=0&&a[i-1][1]!=0);
@@ -51,7 +51,7 @@ int main_bench()
              for(d=0;d<a[j][0];d++)
              {
                 if(b[d][1]==1)
-                printf("%d\n",b[d][0]);
+                my_printf("%d\n",b[d][0]);
                 else;
              }
              break;

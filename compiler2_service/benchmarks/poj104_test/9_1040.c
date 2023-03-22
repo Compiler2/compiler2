@@ -10,15 +10,15 @@ int main_bench()
 {
 	struct bin *head,*p,*p1,*p2,*p3;
 	int m,n,i,j,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	p=(struct bin*)malloc(sizeof(struct bin));
-	scanf("%s%d",&p->ID,&p->age);
+	my_scanf("%s%d",&p->ID,&p->age);
 	head=p3=p;
 	p->next=0;
 	for(i=1;i<n;i++)
 	{
 		p=(struct bin*)malloc(sizeof(struct bin));
-	    scanf("%s%d",&p->ID,&p->age);
+	    my_scanf("%s%d",&p->ID,&p->age);
 		if(p->age<60)
 		{
 			p3->next=p;
@@ -54,6 +54,6 @@ int main_bench()
 	}
 	for(;head!=0;head=head->next)
 	{
-		printf("%s\n",head->ID);
+		my_printf("%s\n",head->ID);
 	}
 }

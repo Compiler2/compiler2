@@ -3,10 +3,10 @@
 int main_bench()
 {
     int year,m,n,i,t,a[13];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
-    scanf("%d %d %d",&year,&m,&n);
+    my_scanf("%d %d %d",&year,&m,&n);
     if(year%400==0||year%4==0&&year%100!=0)   
     {
     	 a[0]=0;
@@ -23,9 +23,9 @@ int main_bench()
     	 a[11]=305;
     	 a[12]=335;
     	 if((a[m]-a[n])%7==0)
-    	 printf("YES\n");
+    	 my_printf("YES\n");
     	 else
-    	 printf("NO\n");
+    	 my_printf("NO\n");
     }
     else
     {
@@ -43,9 +43,9 @@ int main_bench()
     	 a[11]=304;
     	 a[12]=334;
     	 if((a[m]-a[n])%7==0)
-    	 printf("YES\n");
+    	 my_printf("YES\n");
     	 else
-    	 printf("NO\n");
+    	 my_printf("NO\n");
     }
     }
     return 0;

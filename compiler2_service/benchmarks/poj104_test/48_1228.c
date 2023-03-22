@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int A[10][10]={0},B[10][10]={0},i,j,k,m;
-	scanf("%d%d",&A[5][5],&m);
+	my_scanf("%d%d",&A[5][5],&m);
 	B[5][5]=A[5][5];
 	for (k=1;k<=m;k++)
 	{
@@ -35,12 +35,12 @@ int main_bench()
 	}
 	for (i=1;i<=9;i++)
 	{
-		printf("%d",A[i][1]);
+		my_printf("%d",A[i][1]);
 		for (j=2;j<=9;j++)
 		{
-			printf(" %d",A[i][j]);
+			my_printf(" %d",A[i][j]);
 		}
-			printf("\n");
+			my_printf("\n");
 	}
 
 	return 0;

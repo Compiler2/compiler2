@@ -3,7 +3,7 @@
 int main_bench(){
 	int n;
 	int a=0,b=0,c=0,d=0,e=0,f=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>=100){
         a=(n-n%100)/100;
 	    n=n%100;
@@ -25,6 +25,6 @@ int main_bench(){
 		n=n%5;
 	}
 	f=n;
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",a,b,c,d,e,f);
 	return 0;
 }

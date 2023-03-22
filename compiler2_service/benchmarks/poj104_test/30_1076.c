@@ -19,12 +19,12 @@ int main_bench()
 {
  int n;
  int i,s = 0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for (i = 1;i <= n;++i)
  {
 
 s = s + i*i*fun(i);    
  }
- printf("%d",s);
+ my_printf("%d",s);
  return 0;
 } 

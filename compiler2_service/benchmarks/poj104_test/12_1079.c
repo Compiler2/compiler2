@@ -10,7 +10,7 @@ int main_bench()
 	{
 	    for(i=0;i<16;i++)
 		{
-		    scanf("%d",&x[j][i]);
+		    my_scanf("%d",&x[j][i]);
 	            if(x[j][0]==-1)
 			        goto loop;
 			    if(x[j][i]==0)
@@ -34,7 +34,7 @@ loop:for(j=0;j<100;j++)
 					sum[j]=sum[j]+1;
 				}
 			}
-		    printf("%d\n",sum[j]);
+		    my_printf("%d\n",sum[j]);
 			}
 	if(x[j][0]==-1)
 		    	break;

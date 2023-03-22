@@ -4,11 +4,11 @@ int a[100000][3],s[100000],x=0,y=0,z=0,x1=0,y1=0,z1=0;
 int main_bench()
 {
    int n,i,j;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for (i=1;i<=n;i++)
    {
 	   for (j=0;j<3;j++)
-	   {scanf("%d",&a[i][j]);}
+	   {my_scanf("%d",&a[i][j]);}
 		   s[i]=a[i][1]+a[i][2];
    }
    for (i=1;i<=n;i++)
@@ -32,9 +32,9 @@ for  (i=1;i<=n;i++)
 z1=a[i][0];  }
  }
  
- printf("%d %d\n",x1,x);
-    printf("%d %d\n",y1,y);
-    printf("%d %d\n",z1,z);
+ my_printf("%d %d\n",x1,x);
+    my_printf("%d %d\n",y1,y);
+    my_printf("%d %d\n",z1,z);
 
 	return 0;
 }

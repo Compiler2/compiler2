@@ -20,12 +20,12 @@ int main_bench()
 	for(j=0;j<k;j++)
 	{
 		for(i=n-a[j];i<n;i++)
-		{printf("%c",string[i]);}
+		{my_printf("%c",string[i]);}
 	    n=n-a[j]-1;
-		printf(" ");
+		my_printf(" ");
 	}
 	for(i=n-a[j];i<n;i++)
-		{printf("%c",string[i]);}
+		{my_printf("%c",string[i]);}
 		 
 	
 }

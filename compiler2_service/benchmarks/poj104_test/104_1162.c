@@ -4,8 +4,8 @@ int main_bench()
 {
 	int back(int x,int y);
 	int x,y;
-	scanf("%d %d",&x,&y);
-	printf("%d\n",back(x,y));
+	my_scanf("%d %d",&x,&y);
+	my_printf("%d\n",back(x,y));
 	
 	return 0;
 }

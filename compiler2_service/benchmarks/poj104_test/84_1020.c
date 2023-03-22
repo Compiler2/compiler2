@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int i,a,b,c,d;
-	scanf("%d\n",&c);
+	my_scanf("%d\n",&c);
 	c=c-2;
-	scanf("%d%d",&i,&b);
+	my_scanf("%d%d",&i,&b);
 	while(c>0)
 	{
-           scanf("%d",&a);
+           my_scanf("%d",&a);
 		   if(a>=i&&b>=a)
 		   {
               i=b;
@@ -43,7 +43,7 @@ int main_bench()
 		   }
 		   c--;
 	}
-	printf("%d\n",i);
-	printf("%d\n",b);
+	my_printf("%d\n",i);
+	my_printf("%d\n",b);
 	return 0;
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int N,A,B,a;
-	scanf("%d%d%d",&N,&A,&B);
+	my_scanf("%d%d%d",&N,&A,&B);
 	if(N%100!=0&&N%4==0||N%400==0)
 	{
 		 for(a=0,A=A-1;A!=0;A--)
@@ -53,5 +53,5 @@ int main_bench()
 		 }
 	 a+=B;
 	}
-	printf("%d",a);
+	my_printf("%d",a);
 }

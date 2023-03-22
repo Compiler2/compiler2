@@ -41,5 +41,5 @@ int main_bench()
 		c[i][j+3]='\0';
 	}
 	for (i=0;i<n;i++)
-		printf("%s\n",c[i]);
+		my_printf("%s\n",c[i]);
 }

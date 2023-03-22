@@ -6,7 +6,7 @@ int main_bench()
 {
 	char p[101]={'\0'},temp,a,b;
 	int i=0,j;
-	scanf("%s",p);
+	my_scanf("%s",p);
 	while (p[i]!='\0')
 	{
 		if (i==0)
@@ -43,7 +43,7 @@ int main_bench()
 			{
 				if (p[j]==a)
 				{
-					printf("%d %d\n",j,i);
+					my_printf("%d %d\n",j,i);
 					p[j]=temp;
 					break;
 				}

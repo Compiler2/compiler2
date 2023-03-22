@@ -3,8 +3,8 @@
 int main_bench()
 { 
     char a[50],b[50],*p1,*p2;
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     int c1[52]={0},c2[52]={0},i,l1,l2;
     l1=strlen(a);l2=strlen(b);
     for(p1=a;p1<a+l1;p1++){
@@ -17,9 +17,9 @@ int main_bench()
     }
     for(i=0;i<52;i++){
        if(c1[i]==c2[i]){
-          if(i==51){printf("YES");}
+          if(i==51){my_printf("YES");}
        }
-       else{printf("NO");break;}
+       else{my_printf("NO");break;}
     }
           
 	return 0;

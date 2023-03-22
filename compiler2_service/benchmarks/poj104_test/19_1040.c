@@ -19,8 +19,8 @@ int main_bench()
 			*(ch+j)=*(s+i);
 	*(ch+j)='\0';
 	if (strcmp(ch,a)==0) strcpy(ch,b);
-	if (p>0) printf(" ");
-	printf("%s",ch);
+	if (p>0) my_printf(" ");
+	my_printf("%s",ch);
 	for(k=0;k<=j;k++) *(ch+k)='\0';
 	p++;
 	}

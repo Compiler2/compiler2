@@ -13,11 +13,11 @@ int main_bench()
 		if(i==size-1)
 		{
 			qp=zfc[size-1]+zfc[0];
-			printf("%c",qp);
+			my_printf("%c",qp);
 		}else
 		{
 			qp=zfc[i]+zfc[i+1];
-			printf("%c",qp);
+			my_printf("%c",qp);
 		}
 	}
 	return 0;

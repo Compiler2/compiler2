@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int i,j,k,n,height=9999;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int*a=(int*)malloc(n*sizeof(int));
 	int**b=(int**)malloc(n*sizeof(int*));
 	for(i=0;i<=n-1;i++)
 	b[i]=(int*)malloc(9999*sizeof(int));
 	for(i=0;i<=n-1;i++)
-	scanf("%d",&a[i]);
+	my_scanf("%d",&a[i]);
 	for(i=0;i<=n-2;i++)
 	{
 		if(a[i]>a[i+1])
@@ -49,5 +49,5 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",b[0][height]+1);
+	my_printf("%d",b[0][height]+1);
 }

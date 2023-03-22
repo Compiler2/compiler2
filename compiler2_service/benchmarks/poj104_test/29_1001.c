@@ -3,19 +3,19 @@
 int F(int n); 
 int main_bench(){
 int m,n;
-scanf("%d",&m);
+my_scanf("%d",&m);
 int i;
 double S;
 int result1,result2,j;
 for(j=1;j<=m;j++){
 	S=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 	   result1=F(i+2);
 	   result2=F(i+3);
 	   S+=(double)result2/result1;
 	}
-	printf("%.3lf\n",S);
+	my_printf("%.3lf\n",S);
 }
 
 return 0;

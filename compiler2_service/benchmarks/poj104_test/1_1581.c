@@ -19,14 +19,14 @@ int Digui(int a,int min)
 int main_bench()
 {
 	int a[1000],n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",Digui(a[i],2));
+		my_printf("%d\n",Digui(a[i],2));
 	}
 	return 0;
 }

@@ -8,10 +8,10 @@ int main_bench ()
 		char as[21],e,f;
 		int a,b,c,mon;
 	}stus[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d %d %c %c %d",stus[i].as,&stus[i].a,&stus[i].b,&stus[i].e,&stus[i].f,&stus[i].c);
+		my_scanf("%s %d %d %c %c %d",stus[i].as,&stus[i].a,&stus[i].b,&stus[i].e,&stus[i].f,&stus[i].c);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -53,9 +53,9 @@ int main_bench ()
 	{
 		if(max==stus[i].mon)
 		{
-			printf("%s\n",stus[i].as);
-			printf("%d\n",max);
-			printf("%d\n",sum);
+			my_printf("%s\n",stus[i].as);
+			my_printf("%d\n",max);
+			my_printf("%d\n",sum);
 			break;
 		}
 	}

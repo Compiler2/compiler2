@@ -4,10 +4,10 @@ int main_bench(){
 	int all,count1,count2,i,p;
 	double h1[40],h2[40],h,ex;
 	char input[6];
-	scanf("%d",&all);
+	my_scanf("%d",&all);
 	count1=0;count2=0;
 	for(i=0;i<all;i++){
-		scanf("\n%s %lf",input,&h);
+		my_scanf("\n%s %lf",input,&h);
 		if(input[0]=='m'){h1[count1]=h;count1++;}
 		if(input[0]=='f'){h2[count2]=h;count2++;}
 
@@ -30,9 +30,9 @@ int main_bench(){
 				}
 			}
 		}
-	printf("%.2lf",h1[0]);
-	for(i=1;i<count1;i++){printf(" %.2lf",h1[i]);}
-	for(i=0;i<count2;i++){printf(" %.2lf",h2[i]);}
+	my_printf("%.2lf",h1[0]);
+	for(i=1;i<count1;i++){my_printf(" %.2lf",h1[i]);}
+	for(i=0;i<count2;i++){my_printf(" %.2lf",h2[i]);}
 
 	
 	

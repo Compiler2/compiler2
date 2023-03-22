@@ -16,16 +16,16 @@ int main_bench()
 	int i,j,k,m,n,t;
 	p1=p2=(struct s *)malloc(sizeof(struct s));
 	head=p1=p2;n=1;
-	scanf("%s %s %c %d %f %s",p1->a,p1->b,&p1->c,&p1->d,&p1->e,p1->f);
+	my_scanf("%s %s %c %d %f %s",p1->a,p1->b,&p1->c,&p1->d,&p1->e,p1->f);
 	for(i=0;i<10000;i++)
 	{
 		p1=(struct s *)malloc(sizeof(struct s));
 		p2->next=p1;
 		p2=p1;
-		scanf("%s",p1->a);
+		my_scanf("%s",p1->a);
 		if(strcmp(p1->a,"end")!=0)
 		{
-			scanf("%s %c %d %f %s",p1->b,&p1->c,&p1->d,&p1->e,p1->f);
+			my_scanf("%s %c %d %f %s",p1->b,&p1->c,&p1->d,&p1->e,p1->f);
 			n++;
 		}
 		else
@@ -36,8 +36,8 @@ int main_bench()
 	{
 		for(i=0;i<n-j-1;i++)
 		p1=p1->next;
-		printf("%s %s %c %d %g %s\n",p1->a,p1->b,p1->c,p1->d,p1->e,p1->f);
+		my_printf("%s %s %c %d %g %s\n",p1->a,p1->b,p1->c,p1->d,p1->e,p1->f);
 		p1=head;
 	}
-	printf("%s %s %c %d %g %s\n",p1->a,p1->b,p1->c,p1->d,p1->e,p1->f);
+	my_printf("%s %s %c %d %g %s\n",p1->a,p1->b,p1->c,p1->d,p1->e,p1->f);
 }

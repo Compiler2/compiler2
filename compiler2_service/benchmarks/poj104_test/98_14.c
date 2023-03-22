@@ -11,29 +11,29 @@ int main_bench()
 	int lpr=0;
 	
 	int n,m,i,j,k=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf("%s",a[i].word);
+		my_scanf("%s",a[i].word);
 		a[i].lw=strlen(a[i].word);
 	}
-	printf("%s",a[0].word);
+	my_printf("%s",a[0].word);
 	lpr=a[0].lw;
 	for (i=1;i<n;i++)
 	{
 			lpr+=a[i].lw;
 			if (lpr<80)
 			{
-				printf(" %s",a[i].word);
+				my_printf(" %s",a[i].word);
 				lpr++;
 			}
 			else
 			{
-				printf("\n");
-				printf("%s",a[i].word);
+				my_printf("\n");
+				my_printf("%s",a[i].word);
 				lpr=a[i].lw;
 			}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

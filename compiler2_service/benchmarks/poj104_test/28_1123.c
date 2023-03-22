@@ -12,11 +12,11 @@ int main_bench(){
 		strcpy(b,s);
 		l=strlen(b);
 		if(l!=0){
-			printf("%d",l);
+			my_printf("%d",l);
 		}
 		s=p+1;
 		if(*s&&l!=0){
-			printf(",");
+			my_printf(",");
 		}
 	}
 	return 0;

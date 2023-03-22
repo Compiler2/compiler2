@@ -2,7 +2,7 @@
 
 int main_bench(){
     int m,i=2,j=2,a,b,n,k,l;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     n=m/2;
     while(i<=n){
                 k=2;
@@ -20,7 +20,7 @@ int main_bench(){
                                      else
                                      l++;}
                          if(l==j)
-                         printf("%d %d\n",i,j);
+                         my_printf("%d %d\n",i,j);
                          i++;
                          }
                 else{

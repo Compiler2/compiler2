@@ -14,14 +14,14 @@
 	
 		int n,i,j,k=0,a,b;
 	
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 
 	
 		for (i=0;i<n;i++)
 	
 		{
 		
-			scanf("%d %d %d",&st[i].I,&st[i].c,&st[i].m);
+			my_scanf("%d %d %d",&st[i].I,&st[i].c,&st[i].m);
 
 		}
 		for (i=0;i<3;i++)
@@ -44,9 +44,9 @@
 			st[b].c=0;
 			st[b].m=0;
 		
-			printf("%d %d",a,k);
+			my_printf("%d %d",a,k);
 			if (i<2)
-				printf("\n");
+				my_printf("\n");
 			k=0;
 
 		

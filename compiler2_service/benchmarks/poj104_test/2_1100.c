@@ -10,10 +10,10 @@ int main_bench()
 	int m,n,i,j,k;
 	int a[27]={0};
 	struct book cal[1001];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d%s",&cal[i].id,cal[i].aut);
+		my_scanf("%d%s",&cal[i].id,cal[i].aut);
 	}
 	for(j=65;j<91;j++)
 	{	for(i=0;i<m;i++)
@@ -32,13 +32,13 @@ int main_bench()
 		}
 	}
 
-	printf("%c\n%d\n",t+65,max);
+	my_printf("%c\n%d\n",t+65,max);
 	for(i=0;i<m;i++)
 	{
 		for(j=0;j<26;j++)
 		{
 			if(cal[i].aut[j]==t+65) 
-				printf("%d\n",cal[i].id);
+				my_printf("%d\n",cal[i].id);
 		}
 	}
 	return 0;

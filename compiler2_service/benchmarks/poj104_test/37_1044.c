@@ -8,9 +8,9 @@ int main_bench()
 	for(i=0;i<25;i++){
 		sz[i]=0;
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
         l=strlen(s);
 		for(j=0;j<l;j++){
 			t=(int)(s[j]-'a');
@@ -19,11 +19,11 @@ int main_bench()
 		for(j=0;j<l;j++){
 			t=(int)(s[j]-'a');
 			if(sz[t]==1){
-				printf("%c\n",s[j]);
+				my_printf("%c\n",s[j]);
 				break;
 			}
 			if(j==l-1)
-				printf("no\n");
+				my_printf("no\n");
 		}
 		for(j=0;j<25;j++){
 			sz[j]=0;

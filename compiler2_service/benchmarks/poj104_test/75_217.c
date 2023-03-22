@@ -11,8 +11,8 @@ int main_bench()
     
     for(i=0;;i++)
     {
-        scanf("%d",&x[i]);
-        scanf("%c",&s[i]);
+        my_scanf("%d",&x[i]);
+        my_scanf("%c",&s[i]);
         if(s[i]=='\n')
         {
             n=i+1;
@@ -21,8 +21,8 @@ int main_bench()
     }
     for(i=0;;i++)
     {
-        scanf("%d",&y[i]);
-        scanf("%c",&s[i]);
+        my_scanf("%d",&y[i]);
+        my_scanf("%c",&s[i]);
         if(s[i]=='\n')
         {
             
@@ -62,10 +62,10 @@ int main_bench()
             m=t[i];                    
     }
     
-    printf("%d %d",n,m);
+    my_printf("%d %d",n,m);
     
     
     
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	return 0;
 }

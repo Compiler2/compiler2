@@ -15,7 +15,7 @@ int main_bench()
 			{
 				b[k]=a[2*j+i-1-k];
 			}
-			if(strcmp(a,b)==0){for(k=j;k<=j+i-1;k++) printf("%c",a[k]); printf("\n");}
+			if(strcmp(a,b)==0){for(k=j;k<=j+i-1;k++) my_printf("%c",a[k]); my_printf("\n");}
 		}
 	}
 }

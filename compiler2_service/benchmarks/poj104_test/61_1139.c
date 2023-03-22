@@ -6,9 +6,9 @@ int main_bench()
 	int a[1000];
 	int b[21];
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
     b[1]=1;
 	b[2]=1;
 	for(j=3;j<=20;j++)
@@ -16,7 +16,7 @@ int main_bench()
 
 
 	for(i=0;i<n;i++)
-		printf("%d\n",b[a[i]]);
+		my_printf("%d\n",b[a[i]]);
 	return 0;
 }
 

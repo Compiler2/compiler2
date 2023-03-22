@@ -13,13 +13,13 @@ int hack(int i,int w){
  else return c;   
 }
 int main_bench(){
- scanf("%d",&n);
+ my_scanf("%d",&n);
  int i,max=0;
  for(i=0;i<n;i++){
-  scanf("%d",&h[i]);
+  my_scanf("%d",&h[i]);
   if(h[i]>max)
    max=h[i];
  }
- printf("%d",hack(0,max));
+ my_printf("%d",hack(0,max));
  return 0;
 }

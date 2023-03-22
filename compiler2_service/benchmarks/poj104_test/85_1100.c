@@ -6,7 +6,7 @@
 int main_bench(){
 	int n,i,j,judge=0;
 	char zfc[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
 		if(i==0){
@@ -29,9 +29,9 @@ int main_bench(){
 		}
 
 		if(judge==0){
-			printf("no\n");
+			my_printf("no\n");
 		}else{
-			printf("yes\n");
+			my_printf("yes\n");
 		}
 	}
 	return 0;

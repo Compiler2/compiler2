@@ -4,10 +4,10 @@ struct studen{char name[100];int score1;int score2; char H;char W;int paper;int 
 int main_bench()
 {
 	int n,i,j,money=0,student,scholar=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].H,&stu[i].W,&stu[i].paper);
+		my_scanf("%s%d%d %c %c%d",stu[i].name,&stu[i].score1,&stu[i].score2,&stu[i].H,&stu[i].W,&stu[i].paper);
 		stu[i].money=0;
 		if(stu[i].score1>80&&stu[i].paper>0)
 			stu[i].money+=8000;
@@ -29,7 +29,7 @@ int main_bench()
 		}
 		scholar=scholar+stu[i].money;
 	}
-		printf("%s\n%d\n%d\n",stu[student].name,stu[student].money,scholar);
+		my_printf("%s\n%d\n%d\n",stu[student].name,stu[student].money,scholar);
 	return 0;
 }
 

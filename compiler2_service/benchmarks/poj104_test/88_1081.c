@@ -19,10 +19,10 @@ int main_bench (){
 	for(i=0;i<count;i++){
 
 
-		for(p=start[i];p<=end[i];p++){printf("%c",sen[p]);}
+		for(p=start[i];p<=end[i];p++){my_printf("%c",sen[p]);}
 
 
-		printf("\n");}	
+		my_printf("\n");}	
 
 
 return 0;}

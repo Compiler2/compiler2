@@ -5,10 +5,10 @@ int main_bench()
 {
 	int n,i,a[51000],b[51000],k,t;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);}
+		my_scanf("%d %d",&a[i],&b[i]);}
 
     for(k=n-1;k>0;k--){
 		for(i=0;i<k;i++){
@@ -22,8 +22,8 @@ int main_bench()
 		else if(b[0]>=a[i+1]&&b[0]>=b[i+1]) x=0;
 		else {x=1; break;}}
         
-if(x==0)  printf("%d %d",a[0],b[0]);
-else printf("no");
+if(x==0)  my_printf("%d %d",a[0],b[0]);
+else my_printf("no");
 
 
                                                            

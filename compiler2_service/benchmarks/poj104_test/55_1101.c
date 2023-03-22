@@ -4,10 +4,10 @@ int main_bench()
 {
     int a,b,c,sum,i,k,l;
     char n[40];
-    scanf("%d %s %d",&a,n,&b);
+    my_scanf("%d %s %d",&a,n,&b);
     l=strlen(n);
     if(n[0]=='0') 
-       printf("0\n");
+       my_printf("0\n");
     else
     {
         for(i=0,sum=0;i<l;i++)
@@ -36,7 +36,7 @@ int main_bench()
                e[k-1-i]=d[i]-10+'A';     
         }
         e[k]='\0';
-        printf("%s",e);
+        my_printf("%s",e);
     }
     getchar();
     getchar();

@@ -14,9 +14,9 @@ int main_bench()
 	int i;
 	int k;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d %d %d",&stu[i].num,&stu[i].chinese,&stu[i].math);
                   stu[i].sum=stu[i].chinese+stu[i].math;
 	}
 
@@ -30,9 +30,9 @@ int main_bench()
 		}
 	}
 
-        printf("%d %d\n",stu[n-1].num,stu[n-1].sum);
-        printf("%d %d\n",stu[n-2].num,stu[n-2].sum);
-        printf("%d %d\n",stu[n-3].num,stu[n-3].sum);
+        my_printf("%d %d\n",stu[n-1].num,stu[n-1].sum);
+        my_printf("%d %d\n",stu[n-2].num,stu[n-2].sum);
+        my_printf("%d %d\n",stu[n-3].num,stu[n-3].sum);
 
 	return 0;
 }

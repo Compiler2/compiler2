@@ -7,8 +7,8 @@ int t =0,max=0;
 char c;
 for(;;)
 	{
-		scanf("%d", &a[n1++]);
-		scanf("%c", &c);
+		my_scanf("%d", &a[n1++]);
+		my_scanf("%c", &c);
 		if(c != ',')
 			break;
 	}
@@ -16,8 +16,8 @@ for(;;)
 
 for(;;)
 	{
-		scanf("%d", &b[n++]);
-		scanf("%c", &c);
+		my_scanf("%d", &b[n++]);
+		my_scanf("%c", &c);
 		if(c != ',')
 			break;
 	}
@@ -45,7 +45,7 @@ for(i=0;i<t;i++)
 {	if(d[i]>max)
 				max=d[i];
 }
-printf("%d %d",n1,max);
+my_printf("%d %d",n1,max);
 			
 		
 		

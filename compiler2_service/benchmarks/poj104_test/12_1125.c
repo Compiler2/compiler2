@@ -6,7 +6,7 @@ int main_bench()
 	c=0;
     i=0;
 		for(m=0;m<16;m++){
-			scanf("%d",&a);
+			my_scanf("%d",&a);
 			  if(a!=0){
 		        b[i][m]=a;
 				}
@@ -20,7 +20,7 @@ int main_bench()
 						}
 					}	
 				}
-			printf("%d\n",c);
+			my_printf("%d\n",c);
 			 c=0;
 			 m=-1;
 			 i++;

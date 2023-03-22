@@ -5,7 +5,7 @@ char f[1];
 int main_bench()
 {
       char s[1000];
-      scanf("%s",s);
+      my_scanf("%s",s);
       int p=0;
       int k,n,t=0;
       n=strlen(s);
@@ -20,14 +20,14 @@ int main_bench()
                        s[k-1]=s[k-1]+'A'-'a';
                        if(s[k-1]!=s[p])
                        {
-                                       printf("(%s,%d)",f,t);
+                                       my_printf("(%s,%d)",f,t);
                                        f[0]=s[k-1];
                                        p=k-1;
                                        t=1;
                        }
                        else t++;
                        if(k==n)
-                       printf("(%s,%d)",f,t);
+                       my_printf("(%s,%d)",f,t);
                        
       }
      }

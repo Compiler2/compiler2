@@ -1,3 +1,5 @@
+#define NUM_ITER 1399
+
 #include <header.h>
 
 int fun(int x,int y)
@@ -11,12 +13,12 @@ int fun(int x,int y)
 int main_bench()
 {
 	int n,i,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(n>0)
 	{	n--;
-		scanf("%d",&i);sum=1;
+		my_scanf("%d",&i);sum=1;
 		sum+=fun(2,i);
-		printf("%d\n",sum);
+		// my_printf("%d\n",sum);
 	}
 	return 0;
 }

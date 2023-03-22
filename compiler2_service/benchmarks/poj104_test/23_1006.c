@@ -17,6 +17,6 @@ int main_bench()
     int n,i;
     gets(a);
     n=danci(a,word);
-    for(i=n-1;i>0;i--)printf("%s ",word[i]);
-    printf("%s",word[0]);
+    for(i=n-1;i>0;i--)my_printf("%s ",word[i]);
+    my_printf("%s",word[0]);
 }

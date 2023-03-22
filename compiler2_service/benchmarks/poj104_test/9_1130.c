@@ -4,9 +4,9 @@ int main_bench()
 {
 	int n,i,j,a[100],e;
 	char s[100][100],str[100];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++){
-		scanf("%s %d",s[i],&a[i]);
+		my_scanf("%s %d",s[i],&a[i]);
 	}
 	for(j=1;j<n;j++){
 		for(i=0;i<n-j;i++){
@@ -40,7 +40,7 @@ strcpy(s[i],str);
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",s[i]);
+		my_printf("%s\n",s[i]);
 	}
 	return 0;
 }

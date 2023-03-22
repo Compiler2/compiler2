@@ -10,9 +10,9 @@ int main_bench()
 	int n;
 	int i,j,k=0,t=0;
 	int a[100],b[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	    scanf("%s%d",pa[i].str,&pa[i].y);
+	    my_scanf("%s%d",pa[i].str,&pa[i].y);
 	
 	for(i=0;i<n;i++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 			 }
 
      for(i=0;i<k;i++)
-		 printf("%s\n",pa[a[i]].str);
+		 my_printf("%s\n",pa[a[i]].str);
 	 for(i=0;i<t;i++)
-		 printf("%s\n",pa[b[i]].str);
+		 my_printf("%s\n",pa[b[i]].str);
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,z[6]={0},h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	z[0]=(n-n%100)/100;
 	int m=n%100;
 	z[1]=(m-m%50)/50;
@@ -16,7 +16,7 @@ int main_bench()
 	z[5]=g%5;
 	for(h=0;h<6;h++)
 	{
-		printf("%d\n",z[h]);
+		my_printf("%d\n",z[h]);
 	}
 	return 0;
 }

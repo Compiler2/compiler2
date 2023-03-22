@@ -9,18 +9,18 @@ int main_bench(){
 
 	a=0;
 	l=0;
-	scanf("%lf",&d);
-	scanf("%s",x);
-	scanf("%s",y);
+	my_scanf("%lf",&d);
+	my_scanf("%s",x);
+	my_scanf("%s",y);
 	n=strlen(x);
 	
 	if(strlen(x)!=strlen(y)){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<n;i++){
 			if((x[i]!='A'&&x[i]!='T'&&x[i]!='G'&&x[i]!='C')||
 			   (y[i]!='A'&&y[i]!='T'&&y[i]!='G'&&y[i]!='C')){
-			   printf("error");
+			   my_printf("error");
 			   a=1;
 			   break;
 			}else{
@@ -34,9 +34,9 @@ int main_bench(){
 			b=(double)l/(double)n;
 			
 			if(b>=d){
-				printf("yes");
+				my_printf("yes");
 			}else if(b<d){
-				printf("no");
+				my_printf("no");
 			}
 
 		}

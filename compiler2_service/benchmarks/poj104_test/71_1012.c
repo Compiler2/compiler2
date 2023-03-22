@@ -6,10 +6,10 @@ int main_bench()
 
 
 	int i,n,y,m1,m2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		if(y%4==0 && y%100!=0 || y%400==0)
 		{
         if(m1==1)
@@ -117,15 +117,15 @@ int main_bench()
 
        if(m1>m2){
 		   if((m1-m2)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 			else 
-			printf("NO\n");
+			my_printf("NO\n");
 		}
        if(m2>m1){
 		   if((m2-m1)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 			else 
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 
 	}

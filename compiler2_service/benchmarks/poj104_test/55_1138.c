@@ -6,15 +6,15 @@ int main_bench()
 {
 	int a,b,i,j,t,m,n,s,temp=0;
 	char p[20]="\0",q[20]="\0";
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	getchar();
 	for(i=0;i<20;i++)
 	{
-		scanf("%c",&p[i]);
+		my_scanf("%c",&p[i]);
 		if(p[i]==' ')
 			break;
 	}
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	for(j=0;j<i;j++)
 	{
 		if(p[j]>=48&&p[j]<=57)
@@ -47,11 +47,11 @@ int main_bench()
 				break;
 		}
 		for(j=s;j>=0;j--)
-			printf("%c",q[j]);
-		printf("\n");
+			my_printf("%c",q[j]);
+		my_printf("\n");
 	}
 	else
-		printf("%d",temp);
+		my_printf("%d",temp);
 	return 0;
 }
 

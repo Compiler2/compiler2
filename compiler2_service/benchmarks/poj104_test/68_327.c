@@ -3,7 +3,7 @@
 int main_bench ()
 {
 	int n;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	int i,j,k;
 	int w;
 	for (i=6;i<=n;i=i+2)
@@ -30,7 +30,7 @@ int main_bench ()
 			}
 			if (w==0)
 			{
-				printf ("%d=%d+%d\n",i,j,i-j);
+				my_printf ("%d=%d+%d\n",i,j,i-j);
 			}
 			if (w==0)
 				break;

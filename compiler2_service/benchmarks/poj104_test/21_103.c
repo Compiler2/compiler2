@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,j=0,n;
 	double p,b[300],max,a[300],sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%lf",&a[i]);
+		my_scanf("%lf",&a[i]);
 		sum=sum+a[i];
 	}
 	p=sum/n;
@@ -30,14 +30,14 @@ int main_bench()
 	{
 		if(b[i]==max)
 		{
-			printf("%.0lf",a[i]);
+			my_printf("%.0lf",a[i]);
 			break;
 		}
 	}
 	for(j=i+1;j<n;j++)
 	{
 		if(b[j]==max)
-			printf(",%.0lf",a[j]);
+			my_printf(",%.0lf",a[j]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

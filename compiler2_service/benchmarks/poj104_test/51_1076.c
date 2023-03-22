@@ -5,7 +5,7 @@ int main_bench()
 {
   int n;
   char a[500];
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   gets(a);
   int chang=strlen(a);
   int i,j,k;
@@ -35,14 +35,14 @@ int main_bench()
       }
       
       if (max==1)
-      printf("NO");
+      my_printf("NO");
       else
       {
-          printf("%d\n",max);
+          my_printf("%d\n",max);
           for (i=0;i<chang-n+1;i++)
        {
           if (num[i]==max)
-          printf("%c%c\n",a[i],a[i+1]);
+          my_printf("%c%c\n",a[i],a[i+1]);
        }
       }
   }
@@ -72,14 +72,14 @@ int main_bench()
       }
       
       if (max==1)
-      printf("NO");
+      my_printf("NO");
       else
       {
-          printf("%d\n",max);
+          my_printf("%d\n",max);
           for (i=0;i<chang-n+1;i++)
        {
           if (num[i]==max)
-          printf("%c%c%c\n",a[i],a[i+1],a[i+2]);
+          my_printf("%c%c%c\n",a[i],a[i+1],a[i+2]);
        }
       }
   }
@@ -112,14 +112,14 @@ int main_bench()
       }
       
       if (max==1)
-      printf("NO");
+      my_printf("NO");
       else
       {
-          printf("%d\n",max);
+          my_printf("%d\n",max);
           for (i=0;i<chang-n+1;i++)
        {
           if (num[i]==max)
-          printf("%c%c%c%c\n",a[i],a[i+1],a[i+2],a[i+3]);
+          my_printf("%c%c%c%c\n",a[i],a[i+1],a[i+2],a[i+3]);
        }
       }
   }

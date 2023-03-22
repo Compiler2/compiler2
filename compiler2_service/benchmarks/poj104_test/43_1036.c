@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,a=3,b=2,c,d=0,e=3,f,g=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while (a<=n/2)
 	{
 		b=2;
@@ -39,7 +39,7 @@ int main_bench()
 			}
 			if(g==n-a-3)
 			{
-				printf("%d %d\n",a,n-a);
+				my_printf("%d %d\n",a,n-a);
 			}
 		}
 		a=a+1;

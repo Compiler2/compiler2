@@ -38,7 +38,7 @@ int main_bench()
                         continue;
                         if(C!=1)
                         continue;
-                        printf("%d %d %d %d %d\n",A,B,C,D,E);
+                        my_printf("%d %d %d %d %d\n",A,B,C,D,E);
                         break;  
                     }
                 }

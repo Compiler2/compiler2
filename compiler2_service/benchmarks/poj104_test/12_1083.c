@@ -7,7 +7,7 @@ int main_bench()
     int count=0;
     int sz[16]={0};
     for(i=0;i<16;i++){
-	scanf("%d",&sz[i]);
+	my_scanf("%d",&sz[i]);
 	if(sz[i]==0){
 	    for(k=0;k<i-1;k++){
 		for(j=k+1;j<i;j++){
@@ -16,7 +16,7 @@ int main_bench()
 		    }
 		}
 	    }
-	    printf("%d\n",count);
+	    my_printf("%d\n",count);
 	    count=0;
 	    i=-1;
 	}

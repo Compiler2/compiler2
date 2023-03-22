@@ -3,7 +3,7 @@
 int main_bench()
 {
       int n;
-      scanf("%d\n",&n);
+      my_scanf("%d\n",&n);
       int i,judge,l,j;
       char s[100];
       for (i=0;i<n;i++)
@@ -25,6 +25,6 @@ int main_bench()
                            judge=0;
                        }
           }
-          printf("%d\n",judge);
+          my_printf("%d\n",judge);
       }
 } 

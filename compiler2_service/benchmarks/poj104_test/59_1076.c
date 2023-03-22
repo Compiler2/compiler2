@@ -3,7 +3,7 @@
 int main_bench(){
 int i,j,k,n,m,aa[101][101],ans;
 char ss[101][101];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=0;i<=n;i++){
 aa[i][0]=0;
 aa[0][i]=0;
@@ -12,15 +12,15 @@ aa[i][n+1]=0;
 }
 for(i=1;i<=n;i++){
 	for(j=1;j<n;j++){
-	scanf("%c",&ss[i][j]);
+	my_scanf("%c",&ss[i][j]);
 	aa[i][j]=0;
     if(ss[i][j]=='@')aa[i][j]=1;
     }
-    scanf("%c\n",&ss[i][j]);
+    my_scanf("%c\n",&ss[i][j]);
 	aa[i][j]=0;
     if(ss[i][j]=='@')aa[i][j]=1;
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=2;i<=m;i++)
 for(j=1;j<=n;j++)
 for(k=1;k<=n;k++){
@@ -34,6 +34,6 @@ for(i=1;i<=n;i++)
 for(j=1;j<=n;j++){
 if(aa[i][j]>0)ans++;
 }
-printf("%d",ans);
+my_printf("%d",ans);
 return 0;
 }

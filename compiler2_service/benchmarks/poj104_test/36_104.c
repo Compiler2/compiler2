@@ -4,7 +4,7 @@ int main_bench()
 {
    int i,j;
    char a[40],b[40],*pa,*pb,t;
-   scanf("%s%s",a,b);  
+   my_scanf("%s%s",a,b);  
    pa=&a[0];
    pb=&b[0];
    for(i=0;i<strlen(a);i++)
@@ -23,7 +23,7 @@ int main_bench()
 			 *(pb+i)=*(pb+j);
 			 *(pb+j)=t;
 		   }
-   if(strcmp(a,b)==0) printf("YES");
-   else printf("NO");
+   if(strcmp(a,b)==0) my_printf("YES");
+   else my_printf("NO");
  
 }

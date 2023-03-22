@@ -16,7 +16,7 @@ int main_bench()
             for(k=j-1;k>=0;k--)
             {
                  if(a[k]>=0) 
-                 {printf("%d %d\n",a[k],i);a[k]=-1;break;} 
+                 {my_printf("%d %d\n",a[k],i);a[k]=-1;break;} 
             } 
         } 
     }                     

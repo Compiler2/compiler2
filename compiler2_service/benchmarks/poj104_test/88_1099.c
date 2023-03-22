@@ -10,8 +10,8 @@ int main_bench()
 	{
 		while(*p<'0'||*p>'9')
 		{p+=1;if(*p=='\0')break;}
-		printf("%c",*p);
+		my_printf("%c",*p);
 		p+=1;
-		if(*p<'0'||*p>'9')printf("\n");
+		if(*p<'0'||*p>'9')my_printf("\n");
 	}
 }

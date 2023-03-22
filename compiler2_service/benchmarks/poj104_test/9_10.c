@@ -7,9 +7,9 @@ int main_bench(){
 		char num[100];
 		int a,k;
 	}s[1000],t[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%d",s[i].num,&s[i].a);
+		my_scanf("%s%d",s[i].num,&s[i].a);
 		if(s[i].a>=60)s[i].k=1;
 		else s[i].k=0;
 	}
@@ -33,10 +33,10 @@ int main_bench(){
 			}
 		}
 	}
-	for(i=0;i<o;i++)printf("%s\n",t[i].num);
+	for(i=0;i<o;i++)my_printf("%s\n",t[i].num);
 	for(i=0;i<n;i++){
 		if(s[i].k==1)continue;
-		printf("%s\n",s[i].num);
+		my_printf("%s\n",s[i].num);
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n,m,l,p,q,i;
 	char s[110]={'\0'},x[110]={'\0'};
-	scanf("%s",s);
+	my_scanf("%s",s);
 	l=strlen(s);m=s[0]-'0';
 	for(i=0;i<l-1;i++)
 	{
@@ -22,5 +22,5 @@ int main_bench()
 	{
 		x[0]='0';
 	}
-	printf("%s\n%d\n",x,m);	
+	my_printf("%s\n%d\n",x,m);	
 } 

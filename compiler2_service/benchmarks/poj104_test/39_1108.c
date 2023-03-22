@@ -6,10 +6,10 @@ int main_bench()
 	int n,i,sum=0,k=0,t;
 	struct point{char name[21],ganbu,xibu;int x,y,z,money;}stu[100];
 	
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-        scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].x,&stu[i].y,&stu[i].ganbu,&stu[i].xibu,&stu[i].z);
+        my_scanf("%s %d %d %c %c %d",stu[i].name,&stu[i].x,&stu[i].y,&stu[i].ganbu,&stu[i].xibu,&stu[i].z);
 		stu[i].money=0;
 		if(stu[i].x>80&&stu[i].z>0)
 		{
@@ -45,9 +45,9 @@ int main_bench()
 			t=i;
 		}
 	}
-	printf("%s\n",stu[t].name);
-	printf("%d\n",stu[t].money);
-	printf("%d",sum);
+	my_printf("%s\n",stu[t].name);
+	my_printf("%d\n",stu[t].money);
+	my_printf("%d",sum);
 	return 0;
 }
  

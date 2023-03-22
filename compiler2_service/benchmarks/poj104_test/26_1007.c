@@ -16,7 +16,7 @@ int main_bench(){
                                   i+=m-1;
                                   }
                                   } 
-    printf("%s",jg);
+    my_printf("%s",jg);
     
     return 0;
 }

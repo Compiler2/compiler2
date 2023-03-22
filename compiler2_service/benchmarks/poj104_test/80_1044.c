@@ -4,9 +4,9 @@ int main_bench()
 {
 	int A[4],B[4],i,j,d,d1,d2[3],d3,d4;
 	for (i=1;i<4;i++)
-		scanf("%d",&A[i]);
+		my_scanf("%d",&A[i]);
 	for (i=1;i<4;i++)
-		scanf("%d",&B[i]);
+		my_scanf("%d",&B[i]);
 	switch(A[2])
 	{
 		case 1: 
@@ -120,6 +120,6 @@ int main_bench()
 		}
 		d=d1+d2[1]-d2[2];
 	}
-	printf("%d",d);
+	my_printf("%d",d);
 	return 0;
 }

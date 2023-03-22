@@ -4,9 +4,9 @@ int main_bench(){
 int n,i,m,b=0,c=0;
 char a[100000];
 char *p,*q;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-	scanf("%s",a);
+	my_scanf("%s",a);
 	m=strlen(a);
 	for(p=a;p<a+m;p++){
 		for(q=a;q<a+m;q++){
@@ -16,14 +16,14 @@ for(i=0;i<n;i++){
 			}	
 		}
 		if(b==0){
-			printf("%c\n",*p);
+			my_printf("%c\n",*p);
 			c=1;
 			break;
 		}
 		b=0;
 	}
 	if(c==0){
-		printf("no\n");
+		my_printf("no\n");
 	}
 	c=0;
 	

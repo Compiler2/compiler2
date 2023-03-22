@@ -17,7 +17,7 @@ int main_bench(void)
 
 		int x=0;
 		int m=0;
-		scanf("%s",beichushu);
+		my_scanf("%s",beichushu);
 		memset(beichu,0,sizeof(beichu));
 		memset(chu,0,sizeof(chu));
 		memset(chu1,0,sizeof(chu1));
@@ -54,22 +54,22 @@ int main_bench(void)
 		{
 			for(i=1;i<=max;i++)
 			{
-			    printf("%d",shang[i]);
+			    my_printf("%d",shang[i]);
 			}
 		}
 		else if(shang[0]>0)
 		{
 			for(i=0;i<=max;i++)
-			    printf("%d",shang[i]);
+			    my_printf("%d",shang[i]);
 		}
 		if(a==0)
-		    printf("0");
-		printf("\n");
+		    my_printf("0");
+		my_printf("\n");
 		if(beichu[1]==1)
 		for(i=1;i>=0;i--)
-		    printf("%d",beichu[i]);
+		    my_printf("%d",beichu[i]);
 		else
-		    printf("%d",beichu[0]);
+		    my_printf("%d",beichu[0]);
 	return 0;
 }
 

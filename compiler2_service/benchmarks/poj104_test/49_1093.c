@@ -14,9 +14,9 @@ int main_bench()
     if(m>=o)
      
      {for(j=i;j<=i+n-1;j++)
-      printf("%c",s[j]);
+      my_printf("%c",s[j]);
      
-     printf("\n");break;
+     my_printf("\n");break;
      }
 }
 }

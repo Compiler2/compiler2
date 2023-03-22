@@ -5,10 +5,10 @@ int main_bench(){
 	int n, sum;
 	int i, j, starti, startj, endi, endj;
 	int a[10][10];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for (i=0;i<n;i++)
 		for (j=0;j<n;j++) 
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 	starti = -1;
 	startj = -1;
 	for (i=0;i<n;i++)
@@ -26,7 +26,7 @@ int main_bench(){
 	endj = startj;
 	while (a[starti][endj+1] == 0) endj++;
 	while (a[endi+1][startj] == 0) endi++;
-	printf("%d", (endi - starti - 1) * (endj - startj - 1));
+	my_printf("%d", (endi - starti - 1) * (endj - startj - 1));
 
 	return 0;
 }

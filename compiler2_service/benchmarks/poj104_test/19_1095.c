@@ -41,8 +41,8 @@ int main_bench()
 			strcpy(str[i],b);
 		}
 	}
-	for(i=0;i<j;i++)printf("%s ",str[i]);
-	printf("%s",str[j]);
+	for(i=0;i<j;i++)my_printf("%s ",str[i]);
+	my_printf("%s",str[j]);
 	return 0;
 }
 

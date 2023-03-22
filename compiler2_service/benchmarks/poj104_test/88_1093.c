@@ -23,9 +23,9 @@ int main_bench()
 			}
 			for(m=shi;m<zhong;m++)
 			{
-				printf("%c",c[m]);
+				my_printf("%c",c[m]);
 			}
-			printf("%c\n",c[zhong]);
+			my_printf("%c\n",c[zhong]);
 			i=zhong;
 		}
 	}

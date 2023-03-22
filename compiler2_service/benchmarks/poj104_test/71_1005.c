@@ -7,10 +7,10 @@ int main_bench()
 	int a,cha;
 	int i;
 	int tian1,tian2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf ("%d %d %d",&y[i],&m1[i],&m2[i]);
+		my_scanf ("%d %d %d",&y[i],&m1[i],&m2[i]);
 		if (y[i]%4==0)
 		{			
 			if (y[i]%100==0)
@@ -132,11 +132,11 @@ int main_bench()
 		cha=abs(tian1-tian2);
 		if (cha%7==0)
 		{
-			printf ("YES\n");
+			my_printf ("YES\n");
 		}
 		else
 		{
-			printf("NO\n");
+			my_printf("NO\n");
 		}
 	}
 	return 0;

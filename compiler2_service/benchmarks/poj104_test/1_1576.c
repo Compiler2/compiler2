@@ -3,11 +3,11 @@
 int col(int a,int b);
 int main_bench()
 {int n,i,m,l;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=1;i<=n;i++)
-   {scanf("%d",&m);
+   {my_scanf("%d",&m);
    l=col(m,2)+1;
-   printf("%d\n",l);
+   my_printf("%d\n",l);
    }
    return 0;
 }

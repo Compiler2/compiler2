@@ -69,7 +69,7 @@ int main_bench()
     {
        for(i=0;i<len[max];i++)
        {
-           printf("%c",zfc[i]);
+           my_printf("%c",zfc[i]);
        }
     }
     else
@@ -80,16 +80,16 @@ int main_bench()
         }
         for(i=sum;i<sum+len[max];i++)
         {
-           printf("%c",zfc[i]);
+           my_printf("%c",zfc[i]);
         }
     }
-    printf("\n");
+    my_printf("\n");
     sum=0;
     if(min==0)
     {
        for(i=0;i<len[min];i++)
        {
-           printf("%c",zfc[i]);
+           my_printf("%c",zfc[i]);
        }
     }
     else
@@ -100,7 +100,7 @@ int main_bench()
         }
         for(i=sum;i<sum+len[min];i++)
         {
-           printf("%c",zfc[i]);
+           my_printf("%c",zfc[i]);
         }
     }
     return 0;

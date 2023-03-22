@@ -35,9 +35,9 @@ int main_bench(){
 	char people[100];	
 	int i,j;
 	int c,cday,sick = 0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",&people);
+		my_scanf("%s",&people);
 		for(j=0;j<n;j++)
 		{
 			if(people[j] == '#')
@@ -49,7 +49,7 @@ int main_bench(){
 			}
 		}
 	}
-	scanf("%d",&cday);
+	my_scanf("%d",&cday);
 
 	for(c=1;c<cday;c++)
 	{
@@ -61,7 +61,7 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d\n",sick);	
+	my_printf("%d\n",sick);	
 
 	return 0;       
 

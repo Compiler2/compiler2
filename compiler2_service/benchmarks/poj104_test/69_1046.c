@@ -5,8 +5,8 @@ int main_bench()
     int la,lb,lm,ln,temp=0,i;
     char a[250],b[250];
     int c[251];
-    scanf("%s",a);
-    scanf("%s",b);
+    my_scanf("%s",a);
+    my_scanf("%s",b);
     la=strlen(a);
     lb=strlen(b);
     if(la>lb) {lm=la;ln=lb;}
@@ -39,8 +39,8 @@ int main_bench()
     for(i=0;i<=lm;i++)
     {
         if(c[i]!=0) break;
-        if(i==lm&&c[i]==0) printf("0");
+        if(i==lm&&c[i]==0) my_printf("0");
     }
-    for(;i<=lm;i++) printf("%d",c[i]);
+    for(;i<=lm;i++) my_printf("%d",c[i]);
     return 0;
 }

@@ -23,13 +23,13 @@ void f2(int *p,int n,int k)
 int main_bench()
 {
 	int *p,a[100][100],n,i,j,t,m,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
 			for(t=0;t<n;t++)
-				scanf("%d",&a[j][t]);}
+				my_scanf("%d",&a[j][t]);}
 		p=a[0];
 		h=0;
 		for(j=n;j>1;j--)
@@ -44,6 +44,6 @@ int main_bench()
 		{
 			for(m=1;m<(j-1);m++)
 				a[m][t]=a[m+1][t];}}
-		printf("%d\n",h);}
+		my_printf("%d\n",h);}
 	return 0;
 }

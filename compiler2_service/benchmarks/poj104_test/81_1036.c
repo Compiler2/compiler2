@@ -9,11 +9,11 @@ int main_bench(){
 int a[5][5],i,j,n,m,*p[5],*q;
 for(i=0;i<5;i++){
 for(j=0;j<5;j++)
-scanf("%d",&a[i][j]);
+my_scanf("%d",&a[i][j]);
 p[i]=a[i];}
-scanf("%d %d",&n,&m);
+my_scanf("%d %d",&n,&m);
 if(jud(n,m)==0)
-printf("error");
+my_printf("error");
 else{
 q=p[n];
 p[n]=p[m];
@@ -21,6 +21,6 @@ p[m]=q;
 for(i=0;i<5;i++)
 for(j=0;j<5;j++){
 if(j==4)
-printf("%d\n",*(p[i]+j));
-else printf("%d ",*(p[i]+j));}}
+my_printf("%d\n",*(p[i]+j));
+else my_printf("%d ",*(p[i]+j));}}
 return 0;}

@@ -5,7 +5,7 @@ int main_bench()
 	int year[5],month[5],day[5],l[5]={0},i=0;
 	for(i=0;i<5;i++)
 	{
-	scanf("%d%d%d",&year[i],&month[i],&day[i]);
+	my_scanf("%d%d%d",&year[i],&month[i],&day[i]);
 	}
 	for(i=0;i<5;i++)
 	{
@@ -48,6 +48,6 @@ int main_bench()
 	l[i]=l[i]+day[i];
 	}
 	for(i=0;i<5;i++)
-		printf("%d\n",l[i]);
+		my_printf("%d\n",l[i]);
 	return 0;
 }

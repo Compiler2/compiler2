@@ -5,9 +5,9 @@ int main_bench(){
 	int i,sum=0,flag=1;
 	double n1,n;
 	char a[512],b[512];
-    scanf("%lf%s%s",&n,a,b);
+    my_scanf("%lf%s%s",&n,a,b);
 	if(strlen(a)!=strlen(b))
-		printf("error\n");
+		my_printf("error\n");
 	else
 	{
         for(i=0;a[i]!=0;i++)
@@ -29,12 +29,12 @@ int main_bench(){
 			}
     		n1=(double)sum/(double)strlen(a);
     		if(n1>n)
-    			printf("yes\n");
+    			my_printf("yes\n");
     		else
-	    		printf("no\n");
+	    		my_printf("no\n");
 		}
 		else
-			printf("error\n");
+			my_printf("error\n");
 	}
 	return 0;
 }

@@ -12,16 +12,16 @@ int main_bench()
 {
    int a[1000],b[1000];int i,h,k,ans,t,s,n,j,m;
    for(k=1;k<=1000;k++)
-{ scanf("%d",&n);
+{ my_scanf("%d",&n);
     if(n==0)break;
     else
    {
      t=n-1;s=n-1;
      for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
+      my_scanf("%d",&a[i]);
     sort(a,n);
    for(i=0;i<n;i++)
-    scanf("%d",&b[i]);
+    my_scanf("%d",&b[i]);
     sort(b,n);
     h=0;ans=0;
    for(i=0;i<n;i++)
@@ -59,7 +59,7 @@ int main_bench()
       break; 
    } 
   }
-   printf("%d\n",ans);
+   my_printf("%d\n",ans);
 }
    getchar();getchar();                     
 }

@@ -3,7 +3,7 @@
 int main_bench()
 {
 int n,i,j,count=0,prime=0;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int su[10000];
 for(i=1;i<=n;i++){
    for(j=1;j<i;j++){
@@ -20,12 +20,12 @@ for(i=1;i<=n;i++){
      count=0;
 for(i=0;i<prime;i++){
     if(su[i+1]-su[i]==2){
-      printf("%d %d\n",su[i],su[i+1]);
+      my_printf("%d %d\n",su[i],su[i+1]);
       count+=1;
       }
     }
 if(count==0)
-printf("empty");
+my_printf("empty");
 return 0;
 }
 

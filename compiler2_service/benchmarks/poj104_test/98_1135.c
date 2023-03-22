@@ -10,15 +10,15 @@ int main_bench()
 	int num;
 	char a[50];   
 	char s[160];   
-	scanf("%d",&n);   
+	my_scanf("%d",&n);   
 	for(i=0;i<=n;i++)
 	{
 		
-		scanf("%s",a);    
+		my_scanf("%s",a);    
 		l=strlen(a);
 		if((num+l>=80)||(n==i))   
 		{
-			printf("%s\n",s);   
+			my_printf("%s\n",s);   
 			num=0;        
 		}
 		else

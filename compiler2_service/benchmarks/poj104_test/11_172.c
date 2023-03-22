@@ -3,7 +3,7 @@
 int main_bench()
 {
    int year,mon,day,n,leap;
-   scanf("%d %d %d",&year,&mon,&day);
+   my_scanf("%d %d %d",&year,&mon,&day);
    if(year%4==0)
      {
         if(year%100==0)
@@ -34,7 +34,7 @@ int main_bench()
         case 11:n=31+29+31+30+31+30+31+31+30+31+day;break;
         case 12:n=31+29+31+30+31+30+31+31+30+31+30+day;break;
      }
-     printf("%d",n);
+     my_printf("%d",n);
    }
    else
     {
@@ -53,7 +53,7 @@ int main_bench()
         case 11:n=31+28+31+30+31+30+31+31+30+31+day;break;
         case 12:n=31+28+31+30+31+30+31+31+30+31+30+day;break;
       }
-      printf("%d",n);
+      my_printf("%d",n);
      }
 return 0;
 }

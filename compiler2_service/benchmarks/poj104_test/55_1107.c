@@ -5,7 +5,7 @@ int main_bench()
     int a,b,i,j,l,s;
     int c[1000]; 
     char str1[1000],str2[1000];
-    scanf("%d%s%d",&a,str1,&b);
+    my_scanf("%d%s%d",&a,str1,&b);
     l=strlen(str1);
     s=0;
     for(i=0;i<l;i++)
@@ -19,7 +19,7 @@ int main_bench()
     s=str1[i]+(s*a);
     }
     if(s==0)
-    printf("0");
+    my_printf("0");
     for(i=0;s!=0;i++)
     {
     c[i]=s%b;
@@ -32,7 +32,7 @@ int main_bench()
     else 
     str2[i-j-1]=c[j]+'A'-10;
     }
-    printf("%s\n",str2);
+    my_printf("%s\n",str2);
     getchar();
     getchar();
 }

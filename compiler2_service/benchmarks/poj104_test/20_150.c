@@ -18,12 +18,12 @@ int main_bench()
 		e=j;
 		b=strlen(str[i]);
 		for (j=0;j<=a;j++)
-			printf("%c",str[i][j]);
+			my_printf("%c",str[i][j]);
 		for (j=e+1;j<=b-1;j++)
-			printf("%c",str[i][j]);
+			my_printf("%c",str[i][j]);
 		for (j=a+1;j<=e-1;j++)
-			printf("%c",str[i][j]);
-		printf("\n");
+			my_printf("%c",str[i][j]);
+		my_printf("\n");
 		i++;
 	}
 }

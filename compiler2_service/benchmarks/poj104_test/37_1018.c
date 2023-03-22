@@ -18,12 +18,12 @@ int main_bench(){
                     break;
             }
             if(q2==p+strlen(p)){
-                printf("%c\n",*q1);
+                my_printf("%c\n",*q1);
                 break;
             }
         }
         if(q1==p+strlen(p))
-            printf("no\n");
+            my_printf("no\n");
     }
     return 0;
 } 

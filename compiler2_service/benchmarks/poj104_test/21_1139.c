@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,a[305],count=0,max,min;
 	double ave=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		if(i==1)
 		{
 			max=a[1];
@@ -26,14 +26,14 @@ int main_bench()
 	ave/=n;
 	if(ave-min>max-ave)
 	{
-		printf("%d",min);
+		my_printf("%d",min);
 	}
 	else if(ave-min<max-ave)
 	{
-		printf("%d",max);
+		my_printf("%d",max);
 	}
 	else
 	{
-		printf("%d,%d",min,max);
+		my_printf("%d,%d",min,max);
 	}
 }

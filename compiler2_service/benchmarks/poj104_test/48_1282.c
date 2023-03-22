@@ -5,7 +5,7 @@ int main_bench(){
 	int i,j;
 	int mushi,nichi,n;
 	
-	scanf("%d%d",&mushi,&nichi);
+	my_scanf("%d%d",&mushi,&nichi);
 	
     for(i=0;i<11;i++){
 		for(j=0;j<11;j++){
@@ -31,9 +31,9 @@ int main_bench(){
 
 	for(i=1;i<10;i++){
 		for(j=1;j<9;j++){
-		    printf("%d ",a[i][j]);
+		    my_printf("%d ",a[i][j]);
 		}
-            printf("%d\n",a[i][9]);
+            my_printf("%d\n",a[i][9]);
 	}
 	
 		

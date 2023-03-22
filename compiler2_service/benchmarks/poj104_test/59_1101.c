@@ -11,18 +11,18 @@ int main_bench()
 	int i,j,k;
 	char kg;
 	char sz[200][200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=1;i<=n;i++)
 	{
-		scanf("%c",&kg);
+		my_scanf("%c",&kg);
 		for(j=1;j<=n;j++)
 		{
-			scanf("%c",&sz[i][j]);
+			my_scanf("%c",&sz[i][j]);
 		}
 	}
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	for(k=0;k<m-1;k++)
 	{
@@ -81,7 +81,7 @@ int main_bench()
 	}
 
 
-	printf("%d\n",sum);
+	my_printf("%d\n",sum);
 
 
 

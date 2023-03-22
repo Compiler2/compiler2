@@ -51,23 +51,23 @@ int main_bench()
 {
 	int i,n,len,j;
 	char a[200];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a);
+		my_scanf("%s",a);
 		len=strlen(a);
 		puts(a);
 		fun(a);
 		for(j=0;j<len;j++)
 		{
 			if(a[j]!='('&&a[j]!=')')
-				printf(" ");
+				my_printf(" ");
 			else if(a[j]=='(')
-				printf("$");
+				my_printf("$");
 			else if(a[j]==')')
-				printf("?");
+				my_printf("?");
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

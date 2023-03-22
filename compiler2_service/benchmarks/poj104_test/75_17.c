@@ -6,13 +6,13 @@ int main_bench()
     char c='\0';
   for(i=0;c!='\n';i++)
     { 
-    scanf("%d%c",&a[0][i],&c);
+    my_scanf("%d%c",&a[0][i],&c);
     }
    
     i=0;c='\0';
   for(i=0;c!='\n';i++)
     {
-    scanf("%d%c",&a[1][i],&c);
+    my_scanf("%d%c",&a[1][i],&c);
     }
     n=i;
     
@@ -32,7 +32,7 @@ int main_bench()
    
     for(i=0;i<1000;i++)
     if(p[i]>m)m=p[i];
-   printf("%d %d",n,m);
+   my_printf("%d %d",n,m);
     getchar();
     getchar();
     getchar();

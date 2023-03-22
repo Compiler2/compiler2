@@ -2,11 +2,11 @@
 
 int main_bench(){
     int m,i,j,x=0,y=0,k=0,n=0;
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     char a[m][10];
     double b[m],g,h;
     for(i=0;i<m;i++){
-        scanf("%s%lf",a[i],&b[i]);
+        my_scanf("%s%lf",a[i],&b[i]);
         }
     for(i=0;i<m;i++){
        if(a[i][0]=='m')k++;
@@ -49,9 +49,9 @@ int main_bench(){
             }
           }
        }
-    printf("%.2lf",c[0]);
-    for(i=1;i<k;i++)printf(" %.2lf",c[i]);
-    for(i=0;i<n;i++)printf(" %.2lf",d[i]);      
-    scanf("%d",&m);
+    my_printf("%.2lf",c[0]);
+    for(i=1;i<k;i++)my_printf(" %.2lf",c[i]);
+    for(i=0;i<n;i++)my_printf(" %.2lf",d[i]);      
+    my_scanf("%d",&m);
     return 0;
 }

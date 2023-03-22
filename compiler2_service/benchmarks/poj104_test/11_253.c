@@ -4,7 +4,7 @@ int main_bench()
 { int y,m,d,a[5],i=1;
   while(i<=5)
   {
-  scanf("%d%d%d",&y,&m,&d);
+  my_scanf("%d%d%d",&y,&m,&d);
   if(y%4!=0||y%100==0&&y%400!=0)
   { switch(m){
     case 1:a[i]=d;break;
@@ -35,7 +35,7 @@ int main_bench()
 	case 12:a[i]=d+31*6+30*4+29;break;}
    i=i+1;
   }
-   printf("%d\n%d\n%d\n%d\n%d\n%",a[1],a[2],a[3],a[4],a[5]);
+   my_printf("%d\n%d\n%d\n%d\n%d\n%",a[1],a[2],a[3],a[4],a[5]);
    return 0;
 }
 

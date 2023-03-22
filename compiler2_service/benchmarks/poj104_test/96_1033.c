@@ -6,12 +6,12 @@ int main_bench()
 	int q[100];
 	int i=1,j=0,a,r,r1;
 	int num(char c);
-	scanf("%s",c);
+	my_scanf("%s",c);
 	r=num(c[0]);
 	if(c[1]==0)
 	{
 		a=0;
-		printf("%d",a);
+		my_printf("%d",a);
 	}
 	else
 	{
@@ -45,10 +45,10 @@ int main_bench()
 			break;
 	}
 	for(i=0;i<=j;i++)
-		printf("%d",q[i]);
+		my_printf("%d",q[i]);
 	}
-	printf("\n");
-	printf("%d\n",r);
+	my_printf("\n");
+	my_printf("%d\n",r);
 	return 0;
 }
 

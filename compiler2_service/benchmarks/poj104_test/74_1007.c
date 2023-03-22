@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,p,sum=0,q=0;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		for(j=2;j<i;j++)
@@ -24,14 +24,14 @@ int main_bench()
 			if(sum==i)
 			{	q=q+1;
 			  if(q==1)
-				printf("%d",i);
+				my_printf("%d",i);
 			  if((q!=1)&&(q!=0))
-				  printf(",%d",i);
+				  my_printf(",%d",i);
 				
 			}
 		}
 	}
 
     if(q==0)
-		printf("no");
+		my_printf("no");
 }

@@ -7,7 +7,7 @@ int main_bench()
 {
 	int n,i,l,count;
 	char sz[81];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	char *p;
 	for(i=1;i<=n;i++){
@@ -27,9 +27,9 @@ int main_bench()
 			count++;
 		}
 		if(count==0){
-			printf("1\n");
+			my_printf("1\n");
 		}else{
-			printf("0\n");
+			my_printf("0\n");
 		}
 	}
 		return 0;

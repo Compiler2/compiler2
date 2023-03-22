@@ -6,8 +6,8 @@ int main_bench(){
 	char c[100];
 	char d[50][100];
 	gets(a);
-	scanf("%s",b);
-	scanf("%s",c);
+	my_scanf("%s",b);
+	my_scanf("%s",c);
     
 	int chang,i,n,m;
 	int u=0,v=0;
@@ -25,18 +25,18 @@ int main_bench(){
 
     for(i=0;i<u;i++){
 		if(strcmp(b,d[i])==0){
-			printf("%s ",c);
+			my_printf("%s ",c);
 		}else{
-			printf("%s ",d[i]);
+			my_printf("%s ",d[i]);
 	}
 		
 	}
 
 
     if(strcmp(b,d[i])==0){
-		printf("%s",c);
+		my_printf("%s",c);
 	}else{
-		printf("%s",d[u]);
+		my_printf("%s",d[u]);
 	}
 
 	return 0;

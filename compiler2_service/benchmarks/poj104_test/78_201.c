@@ -6,10 +6,10 @@ int wakaka(int z,int q,int s,int l)
 {int i;
 for(i=50;i>=10;i-=10)
 {
-if(z==i)printf("z %d\n",z);
-if(q==i)printf("q %d\n",q);
-if(s==i)printf("s %d\n",s);
-if(l==i)printf("l %d\n",l);
+if(z==i)my_printf("z %d\n",z);
+if(q==i)my_printf("q %d\n",q);
+if(s==i)my_printf("s %d\n",s);
+if(l==i)my_printf("l %d\n",l);
 }
 return 1;
 }

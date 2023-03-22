@@ -13,16 +13,16 @@ int main_bench()
 {
 	int k,i,j,m,n,z,l;
 	int *a[100];
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(l=0;l<k;l++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(i=0;i<m;i++)
 			a[i]=(int*)malloc(n*sizeof(int));
 		for(i=0;i<m;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",a[i]+j);
+				my_scanf("%d",a[i]+j);
 		z=sum(a,m,n);
-		printf("%d\n",z);
+		my_printf("%d\n",z);
 	}
 }

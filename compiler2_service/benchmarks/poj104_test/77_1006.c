@@ -4,7 +4,7 @@
 int main_bench()
 {
 	char a[101]={0};
-	scanf("%s",a);
+	my_scanf("%s",a);
 	int i;
 	int count=0;
 	for(i=0;i<101;i++)
@@ -13,7 +13,7 @@ int main_bench()
 			count++;
 	}
 	if(count==2)
-		printf("0 1");
+		my_printf("0 1");
 	else
 	{
 		int j=0;
@@ -32,7 +32,7 @@ int main_bench()
 			{
 				if(a[j]==a[0])
 				{
-					printf("%d %d\n",j,b[i]);
+					my_printf("%d %d\n",j,b[i]);
 					a[j]=48;
 					break;
 				}

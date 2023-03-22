@@ -23,7 +23,7 @@ int main_bench()
                          {
                              if(a[i]!='0')
                              {
-                                 printf("%c %d0\n",a[i],i);
+                                 my_printf("%c %d0\n",a[i],i);
                              }
                          }
                     }

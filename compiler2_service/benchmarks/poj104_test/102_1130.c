@@ -4,13 +4,13 @@ int  main_bench(){
 	int n,i,max,j,k,a,b;
 	char sex[6];
 	double he,mahe[40],fehe[40],e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0,j=0,k=0;i<n;i++){
 		char sex[6]={0};
 		he=0;
-		scanf("\n");
-		scanf("%s",sex);
-		scanf("%lf",&he);
+		my_scanf("\n");
+		my_scanf("%s",sex);
+		my_scanf("%lf",&he);
 		if(sex[0]=='m'){
              mahe[j]=he;
 			 j++;
@@ -41,13 +41,13 @@ int  main_bench(){
 		
 		}
 	}
-	printf("%.2lf",mahe[0]);
+	my_printf("%.2lf",mahe[0]);
 	for(i=1;i<j;i++){
-	printf(" %.2lf",mahe[i]);
+	my_printf(" %.2lf",mahe[i]);
 	}
-	printf(" %.2lf",fehe[0]);
+	my_printf(" %.2lf",fehe[0]);
 	for(i=1;i<k;i++){
-	printf(" %.2lf",fehe[i]);
+	my_printf(" %.2lf",fehe[i]);
 	}
     return 0;
 

@@ -2,14 +2,14 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char id[100][10];
 	int age[100];
 	int oldno=0;
 	int xu[100];
 	char shunxu[100][10];
 	for(int i=0;i<n;i++){
-		scanf("%s %d",id[i],&age[i]);
+		my_scanf("%s %d",id[i],&age[i]);
 	}
 	for(int j=0;j<n;j++){
 		if(age[j]>=60){
@@ -42,7 +42,7 @@ int main_bench(){
 		}
 	}
 	for(int z=0;z<n;z++){
-		printf("%s\n",shunxu[z]);
+		my_printf("%s\n",shunxu[z]);
 	}
     return 0;
 }

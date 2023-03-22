@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[5],b[5],c[5],sum[5],i;
 	for(i=0;i<5;i++)
-	scanf("%d %d %d",&a[i],&b[i],&c[i]);
+	my_scanf("%d %d %d",&a[i],&b[i],&c[i]);
 	for(i=0;i<5;i++)
 	{
 	switch(b[i])
@@ -26,6 +26,6 @@ int main_bench()
 	if(((a[i]%4==0&&a[i]%100!=0)||a[i]%400==0)&&b[i]>2) sum[i]=sum[i]+1;
 	}
     for(i=0;i<5;i++)
-	printf("%d\n",sum[i]);
+	my_printf("%d\n",sum[i]);
 	return 0;
 }

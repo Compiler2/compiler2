@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,k;
     char c[100];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(int i=1;i<=n;i++)
     {
         k=1;
@@ -26,7 +26,7 @@ int main_bench()
                 break;
             }
         }
-        printf("%d\n",k);
+        my_printf("%d\n",k);
     }
     return 0;
 }

@@ -11,15 +11,15 @@ int main_bench()
 	{
 		if(a[i]==' ' && signal==0)
 		{
-			printf(" ");
+			my_printf(" ");
 			signal=1;
 		}
 		else if(a[i]!=' ')
 		{
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 			signal=0;
 		}		
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

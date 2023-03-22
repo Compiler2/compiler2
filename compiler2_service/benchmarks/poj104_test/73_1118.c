@@ -7,7 +7,7 @@ int main_bench()
 	{
 		for(k=0;k<5;k++)
 		{
-			scanf("%d",&(s[i][k]));
+			my_scanf("%d",&(s[i][k]));
 		}
 	}
 	for(k=0,a=0;k<5;k++)
@@ -24,12 +24,12 @@ int main_bench()
 			a++;
 			h=i+1;
 			j=k+1;
-			printf("%d %d %d",h,j,s[i][k]);
+			my_printf("%d %d %d",h,j,s[i][k]);
 		}
 	}
 	if(a==0)
 	{
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

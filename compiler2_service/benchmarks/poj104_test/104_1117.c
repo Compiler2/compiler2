@@ -4,14 +4,14 @@ int main_bench()
 {
 	void Hanshu(int a,int b);
 	int a,b,k;
-	scanf("%d %d",&a,&b);
+	my_scanf("%d %d",&a,&b);
 	Hanshu(a,b);
 	return 0;
 }
 
 void Hanshu(int a,int b)
 {
-	if(a==b) printf("%d",a);
+	if(a==b) my_printf("%d",a);
 	else if(a>b)
 	{
 		a=a/2;Hanshu(a,b);

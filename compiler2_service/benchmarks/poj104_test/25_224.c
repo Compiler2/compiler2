@@ -8,7 +8,7 @@ int main_bench()
 		s[i]=-1;
 	}
 	s[0]=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=1;j<=n;j++)
 	{
 	   for(i=0;s[i]!=-1;i++)
@@ -32,6 +32,6 @@ int main_bench()
 	   	q++;
 	   }
 	   for(i=q-1;i>=0;i--)
-	   {printf("%d",s[i]);}
+	   {my_printf("%d",s[i]);}
 return 0;
 }

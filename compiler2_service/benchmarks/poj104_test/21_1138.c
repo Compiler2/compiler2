@@ -6,10 +6,10 @@ int main_bench()
 	float b[123];
 	int m,n,i,j,k,t,flag=0;
 	float s=0.0,max=0.0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		s+=a[i];
 	}
 	s=s/n;
@@ -37,8 +37,8 @@ int main_bench()
 			if(b[i]==max)
 			{
 				if(flag==1)
-					printf(",");
-					printf("%d",a[i]);flag=1;
+					my_printf(",");
+					my_printf("%d",a[i]);flag=1;
 			}
 		}
 		return 0;

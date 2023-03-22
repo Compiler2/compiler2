@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,k,x=0,y=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int *a=(int*)malloc(n*sizeof(int));
     for(int i=0;i<n;i++)
-    scanf("%d",&a[i]);
-    scanf("%d",&k);
+    my_scanf("%d",&a[i]);
+    my_scanf("%d",&k);
     for(int j=0;x+y!=n;j++)
     {
             if(a[j]==k)
@@ -22,9 +22,9 @@ int main_bench()
             else
             y++;
     }
-    printf("%d",a[0]);
+    my_printf("%d",a[0]);
     for(int i=1;i<(n-x);i++)
-    printf(" %d",a[i]);
+    my_printf(" %d",a[i]);
     getchar();
     getchar();
 }

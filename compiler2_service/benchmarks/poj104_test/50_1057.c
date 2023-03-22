@@ -27,12 +27,12 @@ int Dijitian(int month,int day)
 int main_bench()
 {
 	int w,i;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<13;i++)
 	{
 		if((Dijitian(i,13)-1)%7+w==5||(Dijitian(i,13)-1)%7+w==12)
 		{
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	return 0;

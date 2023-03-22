@@ -18,13 +18,13 @@ int main_bench(){
           m++;
     }
     if(k!=0){
-    printf("%d,",kong[0]);
+    my_printf("%d,",kong[0]);
     for(i=0;i<m;i++){
         if(chang[i]!=0){
-           printf("%d,",chang[i]);
+           my_printf("%d,",chang[i]);
         }
     }
-    printf("%d",len-kong[k-1]-1);
-    }else{printf("%d",len);}
+    my_printf("%d",len-kong[k-1]-1);
+    }else{my_printf("%d",len);}
 return 0;
 }

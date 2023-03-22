@@ -3,8 +3,8 @@
 int main_bench()
 {
       char a[250],b[250],c[252];
-      scanf("%s",a);
-      scanf("%s",b);
+      my_scanf("%s",a);
+      my_scanf("%s",b);
       int L1=strlen(a),L2=strlen(b),j=0;                                        
       for(int i=0;;i++)
       {
@@ -30,9 +30,9 @@ int main_bench()
       if(c[i]==48) m=m+1;
       else break;
       }     
-      if(c[0]==48&&L==1) printf("0");
+      if(c[0]==48&&L==1) my_printf("0");
       for(int i=L-m-1;i>=0;i--)
       {
-      printf("%c",c[i]);  
+      my_printf("%c",c[i]);  
       }
       }

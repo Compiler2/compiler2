@@ -27,7 +27,7 @@ int main_bench()
 		for(q=1;q<=n/2;q++){min=300;
 		for(k=0;k<n/2;k++)
 		{if(c[k]<min){min=c[k];p=k;}}
-			printf("%d %d\n",b[p],c[p]);
+			my_printf("%d %d\n",b[p],c[p]);
 			b[p]=400;c[p]=400;}
 
 	return 0;

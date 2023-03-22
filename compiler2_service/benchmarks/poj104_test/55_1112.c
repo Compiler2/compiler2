@@ -4,7 +4,7 @@ int main_bench()
 {
  int a,b;
  char n[40];
- scanf("%d %s %d",&a,n,&b);
+ my_scanf("%d %s %d",&a,n,&b);
          int l=strlen(n);
          int m[40];
          int x=0;
@@ -20,7 +20,7 @@ int main_bench()
                              x=x*a+d;
                              }
            if (x==0)
-           printf("0");
+           my_printf("0");
            else
            { 
          int e[40],k;
@@ -40,7 +40,7 @@ int main_bench()
                   f[k-j-1]=e[j]-10+'A';
          }
          f[k]='\0';
- printf("%s",f);
+ my_printf("%s",f);
 }
  getchar();
  getchar();

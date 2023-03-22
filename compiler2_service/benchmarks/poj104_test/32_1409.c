@@ -9,11 +9,11 @@ int main_bench()
 	char d[100];
 	int nj,nb,yj,yb;
 	int i,ii;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(l=0;l<n;l++)
 	{
-	scanf("%s\n",j);
-    scanf("%s",b);
+	my_scanf("%s\n",j);
+    my_scanf("%s",b);
 	nj=0;
 	nb=0;
 	for(i=0;j[i];i++)
@@ -54,8 +54,8 @@ int main_bench()
 		break;}
 	}
 	for(i=ii;i<nj-1;i++)
-		printf("%c",d[i]);
-	printf("%c\n",d[nj-1]);
+		my_printf("%c",d[i]);
+	my_printf("%c\n",d[nj-1]);
 	}
 	return 0;
 }

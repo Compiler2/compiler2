@@ -24,7 +24,7 @@ int main_bench()
 {
 	int i,j,n,m,q=1,x[1001],y[1001],a,b,s[1000]={0};
 	char r[4000],c[4000];
-	scanf("%s%s",r,c);
+	my_scanf("%s%s",r,c);
 	n=strlen(r);
 	m=strlen(c);
 	for(i=0;i<n;i++)
@@ -54,7 +54,7 @@ int main_bench()
 		if(s[i]>max1)
 			max1=s[i];
 	}
-	printf("%d %d",q,max1);
+	my_printf("%d %d",q,max1);
 }
 
 

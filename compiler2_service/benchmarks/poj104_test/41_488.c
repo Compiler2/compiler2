@@ -45,9 +45,9 @@ void f(int *a,int count)
         {
             if (check(a))
             {
-                printf("%d",a[0]);
+                my_printf("%d",a[0]);
                 for (i=1;i<5;i++)
-                printf(" %d",a[i]);
+                my_printf(" %d",a[i]);
             }
 
         }}

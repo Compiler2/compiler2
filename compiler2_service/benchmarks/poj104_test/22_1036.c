@@ -7,7 +7,7 @@ char c;
 i=0;
 do
 {
-scanf("%d%c",&a[i],&c);
+my_scanf("%d%c",&a[i],&c);
 i++;
 }
 while(c!='\n');
@@ -20,7 +20,7 @@ if(a[i]>max){sec=max;max=a[i];}
 else if(a[i]<max&&a[i]>sec)sec=a[i];
 else ;
 }
-if(sec!=-1) printf("%d",sec);
-else printf("No");
+if(sec!=-1) my_printf("%d",sec);
+else my_printf("No");
 return 0;
 }

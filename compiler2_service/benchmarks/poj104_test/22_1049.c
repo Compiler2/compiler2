@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	do
 	{
-		scanf("%d%c",&a[k++],&c);
+		my_scanf("%d%c",&a[k++],&c);
 	}while(c!='\n');
     b[0]=a[0];
 	for(i=1;i<k;i++)
@@ -41,8 +41,8 @@ int main_bench()
 		}
 	}
 	if (l==1)
-	printf("%d\n",b[q]);
+	my_printf("%d\n",b[q]);
 	else
-		printf("No\n");
+		my_printf("No\n");
 	return 0;
 }

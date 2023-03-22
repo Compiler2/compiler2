@@ -17,14 +17,14 @@ void sort(int a[],int n)
 int main_bench()
 {
 	int n,i,a[1000],b[1000],qa,ra,qb,rb,sum;
-	while(scanf("%d",&n) && n!=0)
+	while(my_scanf("%d",&n) && n!=0)
 	{
 		sum=0;
 		for(i=0;i<n;i++)
-			scanf("%d",&a[i]);
+			my_scanf("%d",&a[i]);
 	
 		for(i=0;i<n;i++)
-			scanf("%d",&b[i]);
+			my_scanf("%d",&b[i]);
 		sort(a,n);
 		sort(b,n);
 		ra=0;rb=0;qa=n-1;qb=n-1;
@@ -38,6 +38,6 @@ int main_bench()
 				ra++,qb--;
 			}
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 }

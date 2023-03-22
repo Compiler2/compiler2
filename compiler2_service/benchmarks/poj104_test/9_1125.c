@@ -6,10 +6,10 @@ int main_bench()
 	int age[100];
 	int n;
 	int i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",id[i]);
-		scanf("%d",&age[i]);
+		my_scanf("%s",id[i]);
+		my_scanf("%d",&age[i]);
 	}
 
 
@@ -53,14 +53,14 @@ int main_bench()
 }
 
    for(i=0;i<x;i++){
-		printf("%s\n",id1[i]);
+		my_printf("%s\n",id1[i]);
 	 
 	}
 
    
 
  for(i=0;i<y;i++){
-		printf("%s\n",id2[i]);
+		my_printf("%s\n",id2[i]);
 	 
 	}
 

@@ -4,7 +4,7 @@ int main_bench()
 {
 int m,n;
 char a[100];
-scanf("%d %s %d",&m,a,&n);
+my_scanf("%d %s %d",&m,a,&n);
 int x,i;
 long int t=0;
 x=strlen(a);
@@ -20,8 +20,8 @@ for(i=99;t!=0;i--)
 	else if(t%n>=10) {b[i]=t%n+55;t=t/n;}
 	}
 for(i=0;b[i]=='\0'&&i<=99;i++){}
-if(i==100) printf("0");
+if(i==100) my_printf("0");
 for(i;i<=99;i++) {putchar(b[i]);}
 
-printf("\n");
+my_printf("\n");
 }

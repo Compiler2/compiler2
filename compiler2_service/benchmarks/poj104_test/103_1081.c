@@ -3,7 +3,7 @@
 int main_bench()
 {
       char a[1000];
-      scanf("%s",a);
+      my_scanf("%s",a);
       int i=0,j=0,k=0,m;
       while(a[i]!='\0')
       {
@@ -19,13 +19,13 @@ int main_bench()
                                               if(a[k]==a[k+1])
                                               m=m+1;
                                               else
-                                              {printf("(%c,%d)",a[k],m);
+                                              {my_printf("(%c,%d)",a[k],m);
                                               j=k+1;
                                               break;}
                        }
                        
       }
             
-      printf("\n");       
+      my_printf("\n");       
       
 }

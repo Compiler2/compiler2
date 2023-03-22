@@ -21,12 +21,12 @@ int main_bench()
     int n,x;
     int i;
     char a[81];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for(i=0;i<n;i++)
     {
                     gets(a);
                     x=judge(a);
-                    printf("%d\n",x);
+                    my_printf("%d\n",x);
     }
     getchar();
     getchar();

@@ -8,13 +8,13 @@ int main_bench()
 	int m,n;
 	int i;
 	for(i=0;i<25;i++)
-		scanf("%d",matrix[0]+i);
-	scanf("%d%d",&m,&n);
+		my_scanf("%d",matrix[0]+i);
+	my_scanf("%d%d",&m,&n);
 	if(exchange(matrix,m,n))
 		for(i=0;i<25;i++)
-			printf("%d%c",*(matrix[0]+i),(i+1)%5?' ':'\n');
+			my_printf("%d%c",*(matrix[0]+i),(i+1)%5?' ':'\n');
 	else
-		printf("error");
+		my_printf("error");
 	return 0;
 }
 

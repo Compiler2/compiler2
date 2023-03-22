@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,m[10000],i,j,x[10000],z=0,h=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",&x[i-1]);
+		my_scanf("%d",&x[i-1]);
 	m[0]=x[0];
 	for(i=2;i<=n;i++)
 	   {z=0;
@@ -16,8 +16,8 @@ int main_bench()
 		             h=h+1;}
 	   }
 	for(i=0;i<=h-1;i++)
-	{printf("%d",m[i]);
-	if(i!=h-1) printf(" ");}
+	{my_printf("%d",m[i]);
+	if(i!=h-1) my_printf(" ");}
 
 	return 0;
 	

@@ -16,7 +16,7 @@ int main_bench()
 	int m=0,n=0,i=0,t=0,l=0,j=0,h=0;
 	int s=0;
 	
-        scanf("%d%s%d",&m,a,&n);
+        my_scanf("%d%s%d",&m,a,&n);
 	i=strlen(a);
 	
         for(t=0;t<i;t++)
@@ -48,7 +48,7 @@ int main_bench()
 	j=0;
 
 	if (s==0)
-		printf("0");
+		my_printf("0");
 
 	while(s>=1)
 	{
@@ -66,8 +66,8 @@ int main_bench()
 	}
 	
 	for(l=j;l>=0;l--)
-		printf("%c",d[l]);
-	    printf("\n");
+		my_printf("%c",d[l]);
+	    my_printf("\n");
 	
 	
 }

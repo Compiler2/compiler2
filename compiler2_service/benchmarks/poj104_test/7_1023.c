@@ -4,9 +4,9 @@ int main_bench()
 {
       char s[256],sub[256],re[256],sl[256];
       int n,m,i,j,k,e,l;
-      scanf("%s",&s);
-      scanf("%s",&sub);
-      scanf("%s",&re);
+      my_scanf("%s",&s);
+      my_scanf("%s",&sub);
+      my_scanf("%s",&re);
       l=0;
       while(s[l]!='\0') l++;
       m=0;
@@ -38,8 +38,8 @@ int main_bench()
              s[i]=s[i-n+m];
          s[i+1]='\0';      
          }
-      for(i=0;s[i]!='\0';i++) printf("%c",s[i]);
-      printf("\n");
+      for(i=0;s[i]!='\0';i++) my_printf("%c",s[i]);
+      my_printf("\n");
       getchar();
       getchar();
       }

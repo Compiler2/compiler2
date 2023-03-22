@@ -3,18 +3,18 @@
 int main_bench(){
 int m,n,i,j,k,a[111][111],s=0;
 char b;
-scanf("%d",&n);
-scanf("\n");
+my_scanf("%d",&n);
+my_scanf("\n");
 for (i=1;i<=n;i++){
 for (j=1;j<=n;j++){
-scanf("%c",&b);
+my_scanf("%c",&b);
 if (b=='.') a[i][j]=1;
 if (b=='#') a[i][j]=0;
 if (b=='@') a[i][j]=2;
 }
-scanf("\n");
+my_scanf("\n");
 }
-scanf("%d",&m);
+my_scanf("%d",&m);
 for (k=1;k<=m-1;k++){
     for (i=1;i<=n;i++)
 		for (j=1;j<=n;j++)
@@ -34,7 +34,7 @@ for (i=1;i<=n;i++)
 		for (j=1;j<=n;j++)
 		  if (a[i][j]==2) 
 			  s=s+1;
-		  printf("%d",s);
+		  my_printf("%d",s);
 
 
 return 0;

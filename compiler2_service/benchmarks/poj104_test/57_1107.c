@@ -4,11 +4,11 @@ int sc(char a[]);
 int main_bench(){
 char a[32];
 int n,i,q;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for (i=0;i<n;i++){
-scanf("%s",a);
+my_scanf("%s",a);
 q=sc(a);
-printf("%s\n",a);
+my_printf("%s\n",a);
 }
 return 0;
 }

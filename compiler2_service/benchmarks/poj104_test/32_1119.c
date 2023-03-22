@@ -2,13 +2,13 @@
 
 int main_bench()
 {int n,g;
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(g=0;g<n;g++)
 {
 char a[1000];
 char b[1000],c[1000];
 memset(c,'0',sizeof(c));
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 int l1,l2;
 l1=strlen(a);
 l2=strlen(b);
@@ -61,8 +61,8 @@ for(i=0;i<=l;i++)
                   
                   }
                   for(i=t;i<=l;i++)
-                               printf("%c",c[i]);
-                               printf("\n");
+                               my_printf("%c",c[i]);
+                               my_printf("\n");
 
 
 

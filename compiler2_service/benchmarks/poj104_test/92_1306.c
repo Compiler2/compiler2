@@ -10,17 +10,17 @@ int main_bench()
     int s;
     for  (s=0;s<50;s++)
     {
-     scanf ("%d",&n);
+     my_scanf ("%d",&n);
      if (n>0)
      {
       int a[n],b[n];
      for (i=0;i<n;i++)
      {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
      }
     for (i=0;i<n;i++)
      {
-        scanf("%d",&b[i]);
+        my_scanf("%d",&b[i]);
      }
     qsort(a,n, sizeof(a[0]),paixu);
     qsort(b,n, sizeof(b[0]),paixu);
@@ -62,7 +62,7 @@ int main_bench()
     }
    }
     
-    printf("%d\n",money);
+    my_printf("%d\n",money);
     money=0;
    }
   }

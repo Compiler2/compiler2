@@ -7,7 +7,7 @@ int main_bench()
 	int n,i,j,k;
 	int slotnum;
 	char slot[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	char s1[100][100];
 	int s2[100];
@@ -19,7 +19,7 @@ int main_bench()
 	int bnum=0;
 	for(i=0,j=0,k=0;i<n;i++)
 	{
-		scanf("%s %d",s1[i],&s2[i]);
+		my_scanf("%s %d",s1[i],&s2[i]);
 		if(s2[i]>=60)
 		{
 			strcpy(a1[j],s1[i]);
@@ -54,11 +54,11 @@ int main_bench()
 
 	for(i=0;i<anum;i++)
 	{
-		printf("%s\n",a1[i]);
+		my_printf("%s\n",a1[i]);
 	}
 	for(i=0;i<bnum;i++)
 	{
-		printf("%s\n",b1[i]);
+		my_printf("%s\n",b1[i]);
 	}
 
 	return 0;

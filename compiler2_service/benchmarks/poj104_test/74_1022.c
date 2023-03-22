@@ -5,7 +5,7 @@ int hw(int x);
 int main_bench()
 {
 	int m,n,count=0,a[100],i;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(ss(i)==1&&hw(i)==1)
@@ -16,15 +16,15 @@ int main_bench()
 	}
 	if(count==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	else
 	{
 		for(i=0;i<=count-2;i++)
 		{
-			printf("%d,",a[i]);
+			my_printf("%d,",a[i]);
 		}
-		printf("%d",a[count-1]);
+		my_printf("%d",a[count-1]);
 	}
 }
 

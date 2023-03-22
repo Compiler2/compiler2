@@ -6,14 +6,14 @@ int main_bench()
 	float point[100];
 	int n,i; 
 	float sum=0,sum1=0,average;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&credit[i]);
+		my_scanf("%d",&credit[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&score[i]);
+		my_scanf("%d",&score[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 		else if(score[i]>=0&&score[i]<=59)
 			point[i]=0;
 		else
-			printf("error");
+			my_printf("error");
 	}
 	for(i=0;i<n;i++)
 	{
@@ -49,5 +49,5 @@ int main_bench()
 		sum1=sum1+credit[i];
 	}
 	average=sum/sum1;
-	printf("%.2f",average);
+	my_printf("%.2f",average);
 }

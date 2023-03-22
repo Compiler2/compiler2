@@ -22,8 +22,8 @@ int main_bench()
 			p++;}
 			if(p==j)
 				{for(m=0;m<2*j;m++)
-					printf("%c",a[q-t+m+1]);
-					printf("\n");}
+					my_printf("%c",a[q-t+m+1]);
+					my_printf("\n");}
 				
 			}}
 

@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,first=1,no=0;
 	char c;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(;n>0;n--){
 		c=getchar();
@@ -26,10 +26,10 @@ int main_bench()
 			c=getchar();
 		}
 		if(no){
-			printf("no\n");
+			my_printf("no\n");
 			while(c!='\n') c=getchar();
 		}
-		else printf("yes\n");
+		else my_printf("yes\n");
 		first=1;
 		no=0;
 	}

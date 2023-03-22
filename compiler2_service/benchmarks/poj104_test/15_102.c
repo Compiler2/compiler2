@@ -5,15 +5,15 @@ int main_bench()
 	int n,i,j;
 	int count=0;
 	int s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (j=0;j<(n*n);j++)
 	{
-		scanf("%d",&i);
+		my_scanf("%d",&i);
 		if (i==0)
 			count++;
 	}
 	count=count/4-1;
     s=count*count;
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }

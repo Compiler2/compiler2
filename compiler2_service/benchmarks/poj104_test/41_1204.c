@@ -266,6 +266,6 @@ int main_bench()
 	three(now);
 	four(now);
 	five(now);
-	printf("%d %d %d %d %d\n",a,b,c,d,e);
+	my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 	return 0;
 }

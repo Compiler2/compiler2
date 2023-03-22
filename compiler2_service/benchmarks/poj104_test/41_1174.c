@@ -31,7 +31,7 @@ int main_bench()
 									if(a[k]==1||a[k]==2)
 									if(a[t]==1||a[t]==2)
 									{																							
-									printf("%d %d %d %d %d\n",a[1],a[2],a[3],a[4],a[5]);
+									my_printf("%d %d %d %d %d\n",a[1],a[2],a[3],a[4],a[5]);
 									break; 
 								}
 								}

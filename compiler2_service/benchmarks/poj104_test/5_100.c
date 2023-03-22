@@ -5,8 +5,8 @@ int main_bench()
 	int b=0,a,len1,len2,x=0,c;
 	double bz;
 	char m1[505],m2[505];
-	scanf("%lf",&bz);
-	scanf("%s%s",m1,m2);
+	my_scanf("%lf",&bz);
+	my_scanf("%s%s",m1,m2);
 	len1=strlen(m1);
 	len2=strlen(m2);
 	if(len1!=len2)
@@ -18,7 +18,7 @@ int main_bench()
 	}
 	if(x)
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -31,11 +31,11 @@ int main_bench()
 		}
 		if(b*1.0/len1>bz)
 		{
-			printf("yes");
+			my_printf("yes");
 		}
 		else
 		{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

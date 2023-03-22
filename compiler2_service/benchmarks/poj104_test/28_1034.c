@@ -12,10 +12,10 @@ int main_bench()
 			count++;
 		if(string[i]==' '&&string[i+1]!=' ')
 		{
-			printf("%d,",count);
+			my_printf("%d,",count);
 			count=0;
 		}
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	return 0;
 }

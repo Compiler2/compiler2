@@ -4,10 +4,10 @@ int main_bench()
 {
   int n,i,a[30],min,j;
   char s[150000];
-  scanf("%d\n",&n);
+  my_scanf("%d\n",&n);
   for (i=1;i<=n;i++)
   {
-     scanf("%s",s);
+     my_scanf("%s",s);
      memset(a,255,sizeof(a));
      a[0]=1000000;
      for (j=0;j<strlen(s);j++)
@@ -20,8 +20,8 @@ int main_bench()
        if ((a[j]>=0)&&(a[j]<a[min]))
          min=j;
      if (min==0)
-       printf("no\n");
+       my_printf("no\n");
      else
-       printf("%c\n",min+96);
+       my_printf("%c\n",min+96);
   }
 }

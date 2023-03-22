@@ -18,7 +18,7 @@ int main_bench (){
 		else if(a[i]=='\0')
                             b[j]=a[i];
 	}
-	printf("%s",b);
+	my_printf("%s",b);
 
 	return 0;
 }

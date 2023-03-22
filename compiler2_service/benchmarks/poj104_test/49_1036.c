@@ -34,7 +34,7 @@ int main_bench()
                t++;
             }
             temp[g]='\0';
-            if(judge(temp)==1) printf("%s\n",temp);
+            if(judge(temp)==1) my_printf("%s\n",temp);
          }
    }
    

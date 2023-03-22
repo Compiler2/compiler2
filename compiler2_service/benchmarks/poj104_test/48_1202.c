@@ -5,7 +5,7 @@ int main_bench()
   int m,n,i,p,q;
   int a[11][11]={0};
   int b[11][11];
-  scanf("%d %d",&m,&n);
+  my_scanf("%d %d",&m,&n);
   a[5][5]=m;
   for (i=0;i<n;i++)
   {
@@ -25,9 +25,9 @@ int main_bench()
     for (q=1;q<10;q++)
     { 
       if (q<9)
-        printf ("%d ",a[p][q]);
+        my_printf ("%d ",a[p][q]);
       if (q==9)
-        printf ("%d\n",a[p][q]);
+        my_printf ("%d\n",a[p][q]);
     }
   }
 }   

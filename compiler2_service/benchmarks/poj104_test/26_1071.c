@@ -12,14 +12,14 @@ while(buffer[i])
         {
             if(buffer[i]!=' ')
             {
-                printf("%c",buffer[i]);
+                my_printf("%c",buffer[i]);
                 flag=0;
             }
         }
         else if(!flag) 
         {
  
-           printf("%c",buffer[i]);
+           my_printf("%c",buffer[i]);
             if(buffer[i]==' ')
                 flag=1;
         }

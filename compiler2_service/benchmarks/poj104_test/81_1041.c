@@ -23,12 +23,12 @@ int main_bench()
 	{	
 		for(j=0;j<5;j++)
 		{
-			scanf("%d",*(p+i)+j);
+			my_scanf("%d",*(p+i)+j);
 		}
 	}
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if(fun(p,n,m)==0)
-		printf("error");
+		my_printf("error");
 	else
 	{
 		for(i=0;i<5;i++)
@@ -39,9 +39,9 @@ int main_bench()
 		
 			{
 				if(j!=4)
-			printf("%d ",*(*(p+i)+j));
+			my_printf("%d ",*(*(p+i)+j));
 				else
-         printf("%d\n",*(*(p+i)+j));
+         my_printf("%d\n",*(*(p+i)+j));
 		
 			}
 	

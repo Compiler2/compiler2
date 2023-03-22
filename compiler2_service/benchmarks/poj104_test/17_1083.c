@@ -35,7 +35,7 @@ void f(char s[])
 int  main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char s[10000];
 	gets(s);
     for(i=0;i<n;i++)

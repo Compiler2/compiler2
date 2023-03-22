@@ -9,15 +9,15 @@ int main_bench(){
 	int countauthor[26];
 	int n,i,j,minusA,no,count,max=0,maxau;
 	char input[30];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<26;j++){
 			book[i].author[j]=0;
 		}
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&book[i].id);
-		scanf("%s",&input);
+		my_scanf("%d",&book[i].id);
+		my_scanf("%s",&input);
 		no=strlen(input);
 		for(j=0;j<no;j++){			
 			minusA=(input[j]-'A');
@@ -40,10 +40,10 @@ int main_bench(){
 		if(countauthor[i]==max)
 			maxau=i;
 	}
-	printf("%c\n%d\n",(maxau+'A'),max);
+	my_printf("%c\n%d\n",(maxau+'A'),max);
 	for(i=0;i<n;i++){
 		if(book[i].author[maxau]==1){
-			printf("%d\n",book[i].id);
+			my_printf("%d\n",book[i].id);
 		}
 	}
 	return 0;

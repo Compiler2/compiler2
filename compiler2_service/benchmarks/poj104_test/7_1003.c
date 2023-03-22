@@ -38,5 +38,5 @@ int main_bench()
                   str[j-k+t]=rep[t];
           }
       }
-      printf("%s",str);
+      my_printf("%s",str);
 } 

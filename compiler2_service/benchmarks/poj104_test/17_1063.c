@@ -36,10 +36,10 @@ void course(char a[],int n)
 int main_bench()
 {
     char a[10000];
-    int n,m,j;scanf("%d",&m);
+    int n,m,j;my_scanf("%d",&m);
     for(j=0;j<m;j++)
     {
-		scanf("%s",a);
+		my_scanf("%s",a);
         puts(a);
         n=strlen(a);
         course(a,n);

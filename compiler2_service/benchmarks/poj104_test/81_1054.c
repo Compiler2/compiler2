@@ -9,8 +9,8 @@ int main_bench()
 	p=array;
 	for(i=0;i<5;i++)
 		for(j=0;j<5;j++)
-			scanf("%d",&array[i][j]);
-	scanf("%d%d",&m,&n);
+			my_scanf("%d",&array[i][j]);
+	my_scanf("%d%d",&m,&n);
 	if(m>=0&&m<=4&&n>=0&&n<=4)
 	{
 		for(i=0;i<5;i++)
@@ -21,9 +21,9 @@ int main_bench()
         }
 	
 	for(i=0;i<5;i++)
-		printf("%d %d %d %d %d\n",array[i][0],array[i][1],array[i][2],array[i][3],array[i][4]);
+		my_printf("%d %d %d %d %d\n",array[i][0],array[i][1],array[i][2],array[i][3],array[i][4]);
 	}
-    else printf("error");
+    else my_printf("error");
 
 
 

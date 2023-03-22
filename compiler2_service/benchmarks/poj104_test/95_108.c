@@ -20,18 +20,18 @@ int main_bench()
 		if(s1[i]==s2[i])
 			continue;
 		else if(s1[i]>s2[i]){
-			printf(">");
+			my_printf(">");
 			p=1;
 		    break;
 		}
 		else if(s1[i]<s2[i]){
-			printf("<");
+			my_printf("<");
 			p=1;
 		    break;
 			}
 	}
 	if(p==0)
-			printf("=");
+			my_printf("=");
 	return 0;
 }
 

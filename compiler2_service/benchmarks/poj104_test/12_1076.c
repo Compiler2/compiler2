@@ -7,7 +7,7 @@ int i,m,j,temp,n;
 int k=0;
 for (i=0;i<300;i++)
 {
-	scanf ("%d",&a[0]);
+	my_scanf ("%d",&a[0]);
 	if (a[0]==-1)
 	{
 		break;
@@ -16,7 +16,7 @@ for (i=0;i<300;i++)
 	{
 		for (j=1;j<30;j++)
 		{
-			scanf("%d",&a[j]);
+			my_scanf("%d",&a[j]);
 			if (a[j]==0)
 			{
 				break;
@@ -36,7 +36,7 @@ for (i=0;i<300;i++)
 			}
 			
 		}
-		printf("%d\n",k);
+		my_printf("%d\n",k);
 		k=0;
 		j=-1;
 	}

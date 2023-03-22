@@ -6,10 +6,10 @@ int main_bench()
 {
 	char a[200],b[200],c[200];
 	int n,i,j,al,bl;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for (i=0;i<n;i++)
 	{
-		if(i>0) scanf("\n");
+		if(i>0) my_scanf("\n");
 		gets(a);
 		gets(b);
 		al=strlen(a);

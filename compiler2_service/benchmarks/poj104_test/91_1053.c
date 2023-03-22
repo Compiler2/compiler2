@@ -12,7 +12,7 @@ int main_bench()
 	 if(i==l-1){
 		 a=s[0]+s[l-1];
 	 }
-	 printf("%c",a);
+	 my_printf("%c",a);
  }
 return 0;
 }

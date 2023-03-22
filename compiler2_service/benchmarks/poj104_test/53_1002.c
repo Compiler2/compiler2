@@ -6,18 +6,18 @@ int i,j;
 for(i=0;i<k;i++){
 for(j=i+1;j<k;j++){
 if(a[i]==a[j]) a[j]=0;}}
-printf("%d",a[0]);
+my_printf("%d",a[0]);
 for(i=1;i<k;i++){
-if(a[i]) printf(",%d",a[i]);}
+if(a[i]) my_printf(",%d",a[i]);}
 }
 int main_bench(void)
 {
 int a[300],k,n;
-scanf("%d",&k);
+my_scanf("%d",&k);
 for(n=0;n<k;n++)
-scanf("%d",&a[n]);
+my_scanf("%d",&a[n]);
 for(n=0;n<k;n++)
-printf("");
+my_printf("");
 pd(a,k);
 return 0;
 }

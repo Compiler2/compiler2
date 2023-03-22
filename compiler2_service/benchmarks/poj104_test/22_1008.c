@@ -5,9 +5,9 @@ int main_bench()
  int a[300],i,j,c;
   for(i=1;i<300;i++)
  {a[i]=-10000;}
- scanf("%d",&a[0]);
+ my_scanf("%d",&a[0]);
  for(i=1;i<300;i++)
-{scanf(",%d",&a[i]);}
+{my_scanf(",%d",&a[i]);}
  if(a[1]==-10000) puts("No");
  else
  {for(i=1;i<300;i++)
@@ -17,6 +17,6 @@ int main_bench()
   for(i=1;i<300;i++)
 {if(a[i]<=a[i-1]) {c=a[i];a[i]=a[i-1];a[i-1]=c;}}
  if(a[299]==0)  puts("No");
- else printf("%d",a[299]);
+ else my_printf("%d",a[299]);
 }}
 

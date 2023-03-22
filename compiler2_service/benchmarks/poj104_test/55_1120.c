@@ -7,7 +7,7 @@ int main_bench()
       char s3;
       long s2[1000];
       
-      scanf("%d %s %d",&a,s,&b);
+      my_scanf("%d %s %d",&a,s,&b);
       ten=0; goal=0;
       l=strlen(s);
       l--;k=1;
@@ -30,7 +30,7 @@ int main_bench()
       }
       t=0;
       if (ten==0) 
-          printf("%d",ten);
+          my_printf("%d",ten);
       while (ten>0)
       {
             
@@ -43,11 +43,11 @@ int main_bench()
       for (i=t;i>=0;i--)
       {
           if (s2[i]<10)
-              printf("%d",s2[i]);
+              my_printf("%d",s2[i]);
           else
           {
               s3=s2[i]-10+'A';
-              printf("%c",s3);
+              my_printf("%c",s3);
           }          
       }
      

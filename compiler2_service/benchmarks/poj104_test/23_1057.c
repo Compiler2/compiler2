@@ -23,10 +23,10 @@ int main_bench()
 		else
 		{
 			if(num!=0)
-				printf(" ");
+				my_printf(" ");
 			num++;
 			for(i=indexa+1;i<=indexb;i++)
-				printf("%c",a[i]);
+				my_printf("%c",a[i]);
 			indexb=indexa-1;
 			while(indexb>0&&a[indexb]==' ')
 				indexb--;
@@ -39,10 +39,10 @@ int main_bench()
 	if(indexb>=0)
 	{
 		if(num!=0)
-				printf(" ");
+				my_printf(" ");
 		num++;
 		for(i=0;i<=indexb;i++)
-			printf("%c",a[i]);
+			my_printf("%c",a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

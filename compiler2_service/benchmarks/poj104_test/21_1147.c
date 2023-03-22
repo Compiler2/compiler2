@@ -7,10 +7,10 @@ int main_bench()
 	double x,temp;
 	int a[301],c[301];
 	double b[301];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0,sum=0;i<=n-1;i++)
 	{
@@ -62,14 +62,14 @@ int main_bench()
 	}
 	if(c[0]==15)
 	{
-		printf("15");
+		my_printf("15");
 	}
 	else
 	{
-	printf("%d",c[0]);
+	my_printf("%d",c[0]);
 	for(i=1;i<=p-1;i++)
 	{
-		printf(",%d",c[i]);
+		my_printf(",%d",c[i]);
 	}
 	}
 	return 0;

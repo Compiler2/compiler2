@@ -4,7 +4,7 @@ int main_bench()
 {
     char s[500];
     int n,i,j=2,k,m;
-    scanf("%s",s);
+    my_scanf("%s",s);
     n=strlen(s);
     for(;j<=n;j++)
     {
@@ -18,8 +18,8 @@ int main_bench()
             }
             if(i==m+k)
             {
-                for(i=k;i<=j+k-1;i++) printf("%c",s[i]);
-                printf("\n");
+                for(i=k;i<=j+k-1;i++) my_printf("%c",s[i]);
+                my_printf("\n");
             }
         }
     }

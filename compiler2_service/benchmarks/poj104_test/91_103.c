@@ -10,7 +10,7 @@ int main_bench()
     for(i=0;i<len-1;i++)
     word[i]+=word[i+1];
     word[i]+=c;
-    printf("%s",word);
+    my_printf("%s",word);
    
     return 0;
 }

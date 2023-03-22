@@ -4,11 +4,11 @@ int main_bench()
 {int a,n,i;
  float sum,f[10],b=0;
  sum=0;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<=n-1;i++)
- {scanf("%f",&f[i]);b+=f[i];}
+ {my_scanf("%f",&f[i]);b+=f[i];}
  for(i=0;i<=n-1;i++)
- {scanf("%d",&a);
+ {my_scanf("%d",&a);
   if(a>=90&&a<=100){sum+=f[i]*4.0;continue;}
   if(a>=85&&a<=89) {sum+=f[i]*3.7;continue;}
   if(a>=82&&a<=84) {sum+=f[i]*3.3;continue;}
@@ -19,6 +19,6 @@ int main_bench()
   if(a>=64&&a<=67) {sum+=f[i]*1.5;continue;}
   if(a>=60&&a<=63) {sum+=f[i]*1.0;continue;}
  }
- printf("%.2f",sum/b);
+ my_printf("%.2f",sum/b);
 
 }

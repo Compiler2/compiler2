@@ -5,8 +5,8 @@ int main_bench(){
     int c[501]={0};
     char a[501];
     char b[501][6]={0};
-    scanf("%d",&n);
-    scanf("%s",a);
+    my_scanf("%d",&n);
+    my_scanf("%s",a);
     m=strlen(a);
     for(j=0;j<=m-n;j++){
     for(i=0;i<n;i++){
@@ -25,15 +25,15 @@ int main_bench(){
                                        max=i;
                        }                   
     }
-    if(c[max]==0){printf("NO");}
+    if(c[max]==0){my_printf("NO");}
     if(c[max]!=0){
-    printf("%d\n",c[max]+1);
+    my_printf("%d\n",c[max]+1);
     for(j=0;j<=m-n;j++){
                        if(c[j]==c[max]){
                                        for(i=0;i<n;i++){
-                                       printf("%c",b[j][i]);                                    
+                                       my_printf("%c",b[j][i]);                                    
                                        }
-                     printf("\n");
+                     my_printf("\n");
                      }
     }} 
     return 0;

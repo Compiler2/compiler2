@@ -13,10 +13,10 @@
    for (j=0;j<10;j++)
    {
     if (a[i]==b[j]  &&   ( (a[i+1]-'0'>=0) || ( a[i+1]-'0'<=9 ) ) )
-    printf("%c",b[j]);
+    my_printf("%c",b[j]);
     
     if ( a[i]==b[j]  &&   ( (a[i+1]-'0'<0) || ( a[i+1]-'0'>9 ) ) )
-    printf("\n",b[j]);
+    my_printf("\n",b[j]);
    }
  }
 }

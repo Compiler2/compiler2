@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,sum=0,i,j,p,q;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 		sum=sum+i*i;
 	j=n/7;
@@ -33,6 +33,6 @@ int main_bench()
 	{
 		sum=sum-(10*q+7)*(10*q+7);
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }

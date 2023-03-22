@@ -7,7 +7,7 @@ int check[100000]={0};
 int main_bench()
 {
 	int t,i,j,k,length;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	gets(letters);
 	for(i=0 ; i<t ; i++){
 		for(j=0 ; *(letters+j) ; j++){
@@ -17,7 +17,7 @@ int main_bench()
 		gets(letters);
 		length=strlen(letters);
 		if(length == 1)
-			printf("%c\n",*letters);
+			my_printf("%c\n",*letters);
 		else{
 			for(j=1 ; j<length ; j++){
 				for(k=0 ; k<j ; k++){
@@ -28,12 +28,12 @@ int main_bench()
 			}
 			for(j=0 ; j<length ; j++){
 				if(*(check+j)==0){
-					printf("%c\n",*(letters+j));
+					my_printf("%c\n",*(letters+j));
 					break;
 				}
 			}
 			if(j==length){
-				printf("no\n");
+				my_printf("no\n");
 			}
 		}
 	}

@@ -10,11 +10,11 @@ int main_bench()
 	int n,i,j=0,l,k;
 	struct v *c;
 	struct v e[100],y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	c=(struct  v*)malloc(n*sizeof(struct v));
 	for(i=0;i<n;i++)
 	{
-		scanf("%s %d",c[i].a,&c[i].b);
+		my_scanf("%s %d",c[i].a,&c[i].b);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -41,13 +41,13 @@ int main_bench()
 	}
 	for(j=0;j<k;j++)
 	{
-		printf("%s\n",e[j].a);
+		my_printf("%s\n",e[j].a);
 	}
 	for(i=0;i<n;i++)
 	{
 		if(c[i].b<60)
 		{
-			printf("%s\n",c[i].a);
+			my_printf("%s\n",c[i].a);
 		}
 	}
   return 0;

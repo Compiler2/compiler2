@@ -35,17 +35,17 @@ void cut(int m)
 int main_bench()
 {
 	int i,j;
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 	for(k=0;k<n;k++)
 	{
 		for(i=0;i<n;i++)
 			for(j=0;j<n;j++)
-				scanf("%d",&array[i][j]);
+				my_scanf("%d",&array[i][j]);
 		for(i=0;i<n-1;i++)
 			cut(i);
 	}
 	for(k=0;k<n;k++)
-		printf("%d\n",sum[k]);
+		my_printf("%d\n",sum[k]);
 
 	return 0;
 }

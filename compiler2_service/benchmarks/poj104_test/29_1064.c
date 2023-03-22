@@ -4,14 +4,14 @@ double qh(int n);
 int main_bench(){
 	int m,k;
 	int x[10000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=0;k<m;k++){
-		scanf("%d",&x[k]);
+		my_scanf("%d",&x[k]);
 	}
 	int *ptr;
 	for(k=0;k<m;k++){
 		ptr=&x[k];
-		printf("%.3lf\n",qh(*ptr));
+		my_printf("%.3lf\n",qh(*ptr));
 	}
 	return 0;
 }

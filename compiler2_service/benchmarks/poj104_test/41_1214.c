@@ -12,7 +12,7 @@ int main_bench()
 					{
 						a=i;b=j;c=p;d=q;e=m;
 						if(panduan(a,b,c,d,e)==1&&a!=b&&a!=c&&a!=d&&a!=e&&b!=c&&b!=e&&b!=d&&c!=d&&c!=e&&d!=e)
-							printf("%d %d %d %d %d\n",a,b,c,d,e);
+							my_printf("%d %d %d %d %d\n",a,b,c,d,e);
 					}
 	return 0;
 }

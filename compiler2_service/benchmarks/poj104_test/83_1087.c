@@ -12,15 +12,15 @@ int main_bench()
  for (i=82;i<=84;i++) a[i]=3.3;
  for (i=85;i<=89;i++) a[i]=3.7; 
  for (i=90;i<=100;i++) a[i]=4.0;  
- scanf("%d",&n);
- for (i=0;i<n;i++)  {scanf("%d",&b[i]);sumxuefen=sumxuefen+b[i];}
+ my_scanf("%d",&n);
+ for (i=0;i<n;i++)  {my_scanf("%d",&b[i]);sumxuefen=sumxuefen+b[i];}
  for (i=0;i<n;i++)  
-   {scanf("%d",&c[i]);
+   {my_scanf("%d",&c[i]);
     sumjidian=sumjidian+a[c[i]]*b[i];                  
    }  
  gpa=sumjidian/sumxuefen;
- printf("%.2f",gpa);
- scanf("\n");
+ my_printf("%.2f",gpa);
+ my_scanf("\n");
     
     
     

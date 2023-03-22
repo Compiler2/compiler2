@@ -29,5 +29,5 @@ int main_bench()
 	{
 		z=x;x=y;y=z;t=q;q=r;r=t;
 	}
-	printf("%c%c%c",r,q,p);
+	my_printf("%c%c%c",r,q,p);
 }

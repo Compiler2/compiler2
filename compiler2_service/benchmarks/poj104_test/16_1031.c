@@ -22,7 +22,7 @@ int Myatoi(char*ch, int iBits)
 	while (ch[i]=='\0')
 	{
 		i++;
-		printf("0");
+		my_printf("0");
 	}
 	for (i=0; i<=iBits; i++)
 	{
@@ -36,17 +36,17 @@ int main_bench()
 	int iNum, iNumInverse, iBits=0;
 
 	char ch[12];  
-	scanf("%d", &iNum);
+	my_scanf("%d", &iNum);
 	if (iNum==0)
 	{
 		iNumInverse=iNum;
-		printf("%d", iNumInverse);
+		my_printf("%d", iNumInverse);
 	}
 	else
 	{
 		iBits = MyInverseitoa(iNum, ch,10);  
 		iNumInverse = Myatoi(ch, iBits);
-		printf("%d", iNumInverse);
+		my_printf("%d", iNumInverse);
 	}
 
 	return 0;

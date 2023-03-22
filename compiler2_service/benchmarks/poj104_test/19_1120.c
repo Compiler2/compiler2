@@ -25,7 +25,7 @@ int main_bench()
   }
   if (ch=='\n') break;
  }
- scanf("%s\n%s",target,replace);
+ my_scanf("%s\n%s",target,replace);
  int n;
  for (n=0; n<i;n++)
  {
@@ -33,7 +33,7 @@ int main_bench()
    strcpy(wordbuff[n],replace);
  }
  for (n=0;n<i;n++)
-  if (!n) printf("%s",wordbuff[n]);
-  else printf(" %s",wordbuff[n]);
+  if (!n) my_printf("%s",wordbuff[n]);
+  else my_printf(" %s",wordbuff[n]);
  return 0;
 }

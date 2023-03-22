@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,a[100000]={0},b[1000],i,j,d,k;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=2;i<m-1;i++)
 	{
 		if(i>=n)
@@ -28,11 +28,11 @@ int main_bench()
 		 if(d==i)
 		 {b[j]=i;j++;}
 	}
-if(j==0) printf("no");	
+if(j==0) my_printf("no");	
 else for(i=0;i<j;i++)
 	{
-		printf("%d",b[i]);
+		my_printf("%d",b[i]);
 		if(i!=j-1)
-			printf(",");
+			my_printf(",");
 	}
 }

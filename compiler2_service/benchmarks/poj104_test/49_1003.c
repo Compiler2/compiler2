@@ -19,7 +19,7 @@ int main_bench()
             if(judge(sub)==1)
 			{
 				puts(sub);
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

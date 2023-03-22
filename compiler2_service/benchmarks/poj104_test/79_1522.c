@@ -4,15 +4,15 @@ int main_bench()
 {
    int n,m,s,i;
    
-   scanf("%d %d",&n,&m);
+   my_scanf("%d %d",&n,&m);
    while(n!=0)
    {
             
               s=0;
               for(i=2;i<=n;i++)
               s=(s+m)%i;
-              printf("%d\n",s+1);
-              scanf("%d %d",&n,&m);
+              my_printf("%d\n",s+1);
+              my_scanf("%d %d",&n,&m);
               }
               
 

@@ -2,11 +2,11 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int qujian[50000][2];
 	int row;
 	for(row=0;row<n;row++){
-			scanf("%d%d",&qujian[row][0],&qujian[row][1]);
+			my_scanf("%d%d",&qujian[row][0],&qujian[row][1]);
 	}
 	
 	int i,zuo,you;
@@ -44,10 +44,10 @@ int main_bench(){
 	}
 
 	if(jieguo==n-1){
-		printf("%d %d",qujian[0][0],qujian[n-1][1]);
+		my_printf("%d %d",qujian[0][0],qujian[n-1][1]);
 	}
 	else{
-		printf("no");
+		my_printf("no");
 	}
 	return 0;
 }

@@ -4,8 +4,8 @@ int main_bench()
 {
     int reverse(int num);
 	int a1,a2,a3,a4,a5,a6;
-	scanf("%d%d%d%d%d%d",&a1,&a2,&a3,&a4,&a5,&a6);
-	printf("%d\n%d\n%d\n%d\n%d\n%d\n",reverse(a1),reverse(a2),reverse(a3),reverse(a4),reverse(a5),reverse(a6));
+	my_scanf("%d%d%d%d%d%d",&a1,&a2,&a3,&a4,&a5,&a6);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d\n",reverse(a1),reverse(a2),reverse(a3),reverse(a4),reverse(a5),reverse(a6));
 }
 int reverse(int num)
 {

@@ -5,8 +5,8 @@ int main_bench()
       int l,i,k,j,n;
       int t=1;
       char str[500];
-      scanf("%d",&n);
-      scanf("%s",str);
+      my_scanf("%d",&n);
+      my_scanf("%s",str);
       l=strlen(str);
       char s[500][5];
       int a[500];
@@ -29,14 +29,14 @@ int main_bench()
          {
              if(t<a[i])t=a[i];
          }
-         if(t==1)printf("NO");
+         if(t==1)my_printf("NO");
          else
          {
-             printf("%d\n",t);
+             my_printf("%d\n",t);
              for(i=0;i<l-n;i++)
              {
                  if(t==a[i])
-                 printf("%s\n",s[i]);
+                 my_printf("%s\n",s[i]);
              }
          }
 

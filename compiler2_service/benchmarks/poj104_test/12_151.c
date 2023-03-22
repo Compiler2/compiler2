@@ -6,7 +6,7 @@ int main_bench()
   int a[100][100];
    for(j=0;j<100;j++)
      {
-       scanf("%d",&a[t][j]);
+       my_scanf("%d",&a[t][j]);
        if(a[t][j]==0) {t=t+1;}
 	   if(a[t][j]==-1)  {break;}
 	 }
@@ -22,7 +22,7 @@ int main_bench()
        }
       
      }
-    printf("%d\n",m);
+    my_printf("%d\n",m);
    }
   return 0;
 }

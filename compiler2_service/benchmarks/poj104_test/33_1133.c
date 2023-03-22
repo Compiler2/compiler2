@@ -5,10 +5,10 @@ int main_bench()
 {
 int n,i,j;
 char s[1000][300];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++)
 {
-scanf("%s",s[i]);
+my_scanf("%s",s[i]);
 }
 for(i=0;i<n;i++)
 {
@@ -32,7 +32,7 @@ s[i][j]='C';
 }
 if(j==strlen(s[i])-1)
 {
-printf("%s\n",s[i]);
+my_printf("%s\n",s[i]);
 }
 
 }

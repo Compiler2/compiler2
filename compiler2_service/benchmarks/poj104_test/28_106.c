@@ -23,8 +23,8 @@ int main_bench()
 		d=c;
 	}
 	len[i]=j;
-	printf("%d",len[0]);
+	my_printf("%d",len[0]);
 	for(j=1;j<=i;j++)
-		printf(",%d",len[j]);
-	printf("\n");
+		my_printf(",%d",len[j]);
+	my_printf("\n");
 }

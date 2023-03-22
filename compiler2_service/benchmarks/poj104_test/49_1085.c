@@ -3,7 +3,7 @@
 int main_bench()
 {
 	char a[600];
-	scanf("%s",a);
+	my_scanf("%s",a);
 	int L;
 	int t;
 	L=strlen(a);
@@ -22,9 +22,9 @@ int main_bench()
 				}
 				if(t==0)
 				{for(p=j-i/2+1;p<=j+i/2;p++)
-						printf("%c",a[p]);
+						my_printf("%c",a[p]);
 				
-					printf("\n");
+					my_printf("\n");
 				}
 			}
 		}

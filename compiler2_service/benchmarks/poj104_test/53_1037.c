@@ -2,10 +2,10 @@
 
 int main_bench(){
 int s[300],n,i,k,c[300]={1000},q;
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for(i=0;i<n;i++){
-scanf("%d",&s[i]);
+my_scanf("%d",&s[i]);
 c[i]=0;
 }
 for(i=0;i<n;i++){
@@ -22,11 +22,11 @@ for(i=0;i<n;i++){
        }                     
 for(i=0;i<q;i++){
     if(c[i]==0){
-       printf("%d,",s[i]);
+       my_printf("%d,",s[i]);
        getchar();
        }
        }                                  
-printf("%d",s[q]);
+my_printf("%d",s[q]);
 getchar();
  return 0;
 }     

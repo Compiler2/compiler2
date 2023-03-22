@@ -4,12 +4,12 @@ int main_bench()
 {
 	int array[100][100];
 	int row,col,i,j,m,n,k,min,sum=0, temp;
-	scanf("%d,%d",&row,&col);
+	my_scanf("%d,%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d", &array[i][j]);
+			my_scanf("%d", &array[i][j]);
 		}
 	}
 	for(i=0;i<row;i++)
@@ -33,7 +33,7 @@ int main_bench()
 		}
 		if(n==min)
 		{
-			printf("%d+%d",n,m);
+			my_printf("%d+%d",n,m);
 			break;
 		}
 		if(n!=min)
@@ -43,7 +43,7 @@ int main_bench()
 	}
 	if(sum == row)
 	{
-    		printf("No");
+    		my_printf("No");
 	}
 	return 0;
 }

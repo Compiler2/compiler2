@@ -4,7 +4,7 @@ int main_bench()
 {
                 int x,y,c,d,e,i,j;
                 int a[20],b[20];
-                scanf("%d %d",&a[0],&b[0]);
+                my_scanf("%d %d",&a[0],&b[0]);
                 
                 for(i=1;i<20;i++)
                 {a[i]=a[i-1]/2;
@@ -27,6 +27,6 @@ int main_bench()
                                                   if(e!=0)
                                                   break;
                                                   }
-              printf("%d",e);
+              my_printf("%d",e);
                             getchar();    getchar();    getchar();    getchar();
                  }

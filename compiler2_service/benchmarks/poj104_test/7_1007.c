@@ -4,7 +4,7 @@ char str[256],sub[256],repl[256];
 int i=0,j=0,k,m=0;
 int main_bench()
 {
-      scanf("%s\n%s\n%s",str,sub,repl);
+      my_scanf("%s\n%s\n%s",str,sub,repl);
       for(i=0;str[i]!='\0';i++)
       {
                                   if(sub[0]==str[i])
@@ -38,7 +38,7 @@ int main_bench()
                                 str[i]=repl[m];
                                 i++;
       }
-      printf("%s\n",str);
+      my_printf("%s\n",str);
       getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();getchar();
 }
                                                                             

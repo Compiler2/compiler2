@@ -15,7 +15,7 @@ C[i]=0;
 d[i]=0;
 D[i]=0;
 }
-scanf("%s %s",a,b);
+my_scanf("%s %s",a,b);
 for(i=0;i<100;i++){
 if(a[i]>='A'&&a[i]<='Z')
 C[a[i]-'A']++;
@@ -28,10 +28,10 @@ d[b[i]-'a']++;
 }
 for(i=0;i<26;i++){
 if(c[i]!=d[i]||C[i]!=D[i]){
-printf("NO");
+my_printf("NO");
 break;
 }
 }
 if(i==26)
-printf("YES");
+my_printf("YES");
 }

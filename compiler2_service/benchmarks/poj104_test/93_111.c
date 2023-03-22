@@ -6,7 +6,7 @@ void p(int n);
 int main_bench()
 {
 	int num;
-	scanf("%d", &num);
+	my_scanf("%d", &num);
 	oper = 0;
 
 	if(num%3 == 0)
@@ -16,13 +16,13 @@ int main_bench()
 	if(num%7 == 0)
 		p(7);
 	if(num%3 != 0 && num%5 != 0 && num%7 != 0)
-		printf("n");
+		my_printf("n");
 	return 0;
 }
 void p(int n)
 {
 	if(oper)
-		printf(" ");
-	printf("%d", n);
+		my_printf(" ");
+	my_printf("%d", n);
 	oper = 1;
 }

@@ -9,7 +9,7 @@ int main_bench()
 	char str[11]={""}, substr[3]={""},str2[11]={""};
 	char *p;
 
-LOOP:scanf("%s %s",str,substr);
+LOOP:my_scanf("%s %s",str,substr);
 	if (strcmp(str2,str)==0) goto END;
 	  l=strlen(str);
 	p=str;
@@ -22,11 +22,11 @@ LOOP:scanf("%s %s",str,substr);
 
 	for(i=0;i<l;i++)
 	{
-		printf("%c",str[i]);
-		if (&str[i]==p) printf("%s",substr);
+		my_printf("%c",str[i]);
+		if (&str[i]==p) my_printf("%s",substr);
 
 	}
-	printf("\n");
+	my_printf("\n");
 	strcpy(str2,str);
 goto LOOP;
 END:;

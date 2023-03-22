@@ -15,12 +15,12 @@ int main_bench()
 
 	int i;
 
-	scanf("%s",&(a[1]));
+	my_scanf("%s",&(a[1]));
 
-	scanf("%s",&(b[1]));
+	my_scanf("%s",&(b[1]));
 	if (a[1]=='0'&&b[1]=='0'&&a[2]==0&&b[2]==0)
 	{
-		printf("0");
+		my_printf("0");
 		return 0;
 	}
 
@@ -30,7 +30,7 @@ int main_bench()
 
     for (i=0;c[i]=='0';i++);
 
-	printf("%s",c+i);
+	my_printf("%s",c+i);
 
 	return 0;
 

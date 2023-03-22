@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[300],i,j,n,b;
 	double k=0,k1,k2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		k=k+a[i];
 	}
 	k=(k*1.0)/(n*1.0);
@@ -24,15 +24,15 @@ int main_bench()
 	k2=a[n-1]-k;
 	if(k1>k2)
 	{
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	}
 	if(k1<k2)
 	{
-		printf("%d",a[n-1]);
+		my_printf("%d",a[n-1]);
 	}
 	if(k1==k2)
 	{
-		printf("%d,%d",a[0],a[n-1]);
+		my_printf("%d,%d",a[0],a[n-1]);
 
 	}
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
   int i,j,a=0,b=0,c[50000],n,m[50000],x=0,y=10000,z;
   double q;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
-  {scanf("%d ",&c[i]);
-   scanf("%d",&m[i]);
+  {my_scanf("%d ",&c[i]);
+   my_scanf("%d",&m[i]);
   }
   for(i=0;i<n;i++)
   {if(c[i]<=y)
@@ -19,7 +19,7 @@ int main_bench()
     {if(i+0.5>=c[j]&&i+0.5<=m[j])
       break;
       }if(j==n) break;}
-  if(i==x)  printf("%d %d",y,x);
-    else printf("no");
+  if(i==x)  my_printf("%d %d",y,x);
+    else my_printf("no");
 return 0;
 }

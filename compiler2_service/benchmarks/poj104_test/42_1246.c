@@ -3,10 +3,10 @@
 int main_bench()
 {
       long int a[100000],b,c,m,n,i,t,j,e=0,p;
-      scanf("%d",&n);p=n;
+      my_scanf("%d",&n);p=n;
       for(i=0;i<n;i++)
-      scanf("%d",&a[i]);
-      scanf("%d",&m);
+      my_scanf("%d",&a[i]);
+      my_scanf("%d",&m);
       for(c=0;c<n;c++)
       {if(a[c]==m)e++;}
       
@@ -17,7 +17,7 @@ int main_bench()
       }}
       if(n-e-1>0)
       {for(i=0;i<n-e-1;i++)
-      {printf("%d ",a[i]);}printf("%d",a[n-e-1]);}
-      if(n-e-1==0)printf("%d",a[n-e-1]);
+      {my_printf("%d ",a[i]);}my_printf("%d",a[n-e-1]);}
+      if(n-e-1==0)my_printf("%d",a[n-e-1]);
       getchar();getchar();getchar();
 } 

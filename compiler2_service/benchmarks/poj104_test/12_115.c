@@ -3,12 +3,12 @@
 int main_bench()
 {
     int p[15];	
-	scanf("%d",&p[0]);
+	my_scanf("%d",&p[0]);
 		int i;
 		int l=0;
 	for(i=1;i<15;i++){
 		int a;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a==0)
 			break;
 		else{
@@ -34,6 +34,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",num);
+	my_printf("%d",num);
 	return 0;
 }

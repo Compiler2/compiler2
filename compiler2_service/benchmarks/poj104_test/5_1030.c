@@ -4,9 +4,9 @@ int main_bench(){
 	double k,j;
 	int i,o;
 	char a[500],b[500];
-	scanf("%lf",&k);
-	scanf("%s",&a);
-	scanf("%s",&b);
+	my_scanf("%lf",&k);
+	my_scanf("%s",&a);
+	my_scanf("%s",&b);
 	int l=strlen(a);
 	int p=strlen(b);
 	o=0;
@@ -20,10 +20,10 @@ int main_bench(){
 		if(a[i]==b[i])
 			o++;
 	}
-	if(l!=p) printf("error");
+	if(l!=p) my_printf("error");
 	else {j=1.0*o/l;
-		if(j>k) printf("yes");
-		else printf("no");
+		if(j>k) my_printf("yes");
+		else my_printf("no");
 	}
 	return 0;
 }

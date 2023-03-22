@@ -6,7 +6,7 @@ int main_bench()
 	int word=0,len,i,l=0,ans[300];
 	while (1)
 	{
-		scanf("%c",&c);
+		my_scanf("%c",&c);
 		if (c!=' '&&c!='\n'&&word==0)
 			{
 				word=1;
@@ -22,9 +22,9 @@ int main_bench()
 	}
 	for (i=0;i<l;i++)
 	{
-		if (i!=0) printf(",");
-		printf("%d",ans[i]);
+		if (i!=0) my_printf(",");
+		my_printf("%d",ans[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

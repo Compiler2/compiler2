@@ -3,10 +3,10 @@
 int main_bench(){
 int n,i,k=0,j,m,t=0;
 char s[101][300]={0};
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
 for(i=1;i<=n;i++){
-		scanf("%s",s[i]);}
-scanf("%d",&m);
+		my_scanf("%s",s[i]);}
+my_scanf("%d",&m);
 for(i=0;i<m-1;i++){
 	for(j=1;j<=n;j++){
 		if(s[j][0]=='@'){
@@ -44,6 +44,6 @@ for(i=0;i<m-1;i++){
 		  }
 	  }
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 return 0;
 }

@@ -4,9 +4,9 @@
 int main_bench()
 {
 	int y,m,d,w,i,a;
-	scanf("%d%d%d",&y,&m,&d);
+	my_scanf("%d%d%d",&y,&m,&d);
 	if(y==1111111111)
-		printf("Sat.\n");
+		my_printf("Sat.\n");
 	else{
 	a=365*(y-1);
 	a+=(y-1)/4;
@@ -30,13 +30,13 @@ int main_bench()
 	w=a%7;
 	switch(w)
 	{
-	case 0:printf("Sun.\n");break;
-    case 1:printf("Mon.\n");break;
-    case 2:printf("Tue.\n");break;
-    case 3:printf("Wed.\n");break;
-    case 4:printf("Thu.\n");break;
-    case 5:printf("Fri.\n");break;
-    case 6:printf("Sat.\n");break;
+	case 0:my_printf("Sun.\n");break;
+    case 1:my_printf("Mon.\n");break;
+    case 2:my_printf("Tue.\n");break;
+    case 3:my_printf("Wed.\n");break;
+    case 4:my_printf("Thu.\n");break;
+    case 5:my_printf("Fri.\n");break;
+    case 6:my_printf("Sat.\n");break;
 	}}
 	return 0;
 }

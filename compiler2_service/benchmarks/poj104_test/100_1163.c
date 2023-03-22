@@ -2,7 +2,7 @@
 
 int main_bench()
 {  char str[300];
-   scanf("%s",str);
+   my_scanf("%s",str);
    int len;
    len=strlen(str);
    int count=0,i,j;
@@ -11,7 +11,7 @@ int main_bench()
      count++;
    }  
      if(count==0)
-   printf("No");
+   my_printf("No");
      else for(j=97;j<=122;j++)
   {  int n=0; 
      for(i=0;i<len;i++)
@@ -21,7 +21,7 @@ int main_bench()
      char a;
      a=(char)j;
      if (n!=0)
-     printf("%c=%d\n", a,n);
+     my_printf("%c=%d\n", a,n);
 
    }
 

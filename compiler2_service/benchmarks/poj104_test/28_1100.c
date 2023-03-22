@@ -26,10 +26,10 @@ int main_bench()
         }
     }
     
-    printf("%d", wls[0]);
+    my_printf("%d", wls[0]);
     
     for (i=1; i<wc; i++) {
-        printf(",%d", wls[i]);
+        my_printf(",%d", wls[i]);
     }
     return 0;
 }

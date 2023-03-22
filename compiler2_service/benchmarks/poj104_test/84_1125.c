@@ -3,15 +3,15 @@
 int main_bench()
 {
 	int m=1,n,a,b,c;
-	scanf("%d",&n);
-	scanf("%d%d",&b,&c);
+	my_scanf("%d",&n);
+	my_scanf("%d%d",&b,&c);
 	if(c>b)
 	{
 		c=c+b;b=c-b;c=c-b;
 	}
 	while (m<=n)
 	{
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if (a>b)
 		{
 			a=a+b;b=a-b;a=a-b;
@@ -22,5 +22,5 @@ int main_bench()
 		}
 		m++;
 	}
-	printf("%d\n%d",b,c);
+	my_printf("%d\n%d",b,c);
 }

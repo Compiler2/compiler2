@@ -29,7 +29,7 @@ int main_bench()
 	p=b;q=c;t=a;
 	for(i=0;i<100;i++)
 	{
-		scanf("%c",&a[i]);
+		my_scanf("%c",&a[i]);
 		if(a[i]==10) break;
 	}
 	d=a[0];e=a[i-1];
@@ -40,7 +40,7 @@ int main_bench()
 	p=b;q=c;
 	for(j=0;j<i/2;j++)
 	{
-		printf("%d %d\n",p[j],q[j]);
+		my_printf("%d %d\n",p[j],q[j]);
 	}
 	return 0;
 }

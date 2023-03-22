@@ -4,8 +4,8 @@ int main_bench()
 {
 	int n,i,k,num,max=0,len,count[1000]={0};
 	char s[1000],zi[500][6],now[6];
-	scanf("%d",&n);
-	scanf("%s",s);
+	my_scanf("%d",&n);
+	my_scanf("%s",s);
 	len=strlen(s);
 	
 
@@ -41,7 +41,7 @@ int main_bench()
 	if(max>1)
 	{
 
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 
 	for(i=0;i<num;i++)
 	{
@@ -52,6 +52,6 @@ int main_bench()
 		}
 	}
 	}
-	else printf("NO");
+	else my_printf("NO");
 }
 	

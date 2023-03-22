@@ -4,14 +4,14 @@ int main_bench()
 {
 	int i,j,a,b,k,m,n,*p,sum1=0,sum2=0,*sum;
 	p=(int*)malloc(10000*sizeof(int));
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	sum=(int*)malloc(1000*sizeof(int));
 	for(i=0;i<k;i++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(j=0;j<m*n;j++)
 		{
-			scanf("%d",p+j);
+			my_scanf("%d",p+j);
 			sum1=sum1+*(p+j);
 		}
         for(a=1;a<m-1;a++)
@@ -27,7 +27,7 @@ int main_bench()
 	}
 	for(i=0;i<k;i++)
 	{
-		printf("%d\n",*(sum+i));
+		my_printf("%d\n",*(sum+i));
 	}
 }
 

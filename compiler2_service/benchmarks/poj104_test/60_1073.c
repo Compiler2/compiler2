@@ -5,7 +5,7 @@
 int main_bench()
 {	int flag,count,n,i,j,k[100000],flagg;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(i=0;i<n;i++)
 	k[i]=0;
@@ -35,12 +35,12 @@ int main_bench()
 	{
 		if(k[i]==k[i+1]-2)
 		{
-			printf("%d %d\n",k[i],k[i+1]);
+			my_printf("%d %d\n",k[i],k[i+1]);
 			flagg=1;
 		}	
 	}
 	if(flagg==0)
-			printf("empty\n");
+			my_printf("empty\n");
 	return 0;
 }
 

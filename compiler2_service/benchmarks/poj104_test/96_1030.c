@@ -4,17 +4,17 @@ int main_bench()
 {
       int a[110],b[110],i,j,m,yu,z,qishi;
       char c[110];
-      scanf("%s",c); 
+      my_scanf("%s",c); 
       
       for(i=0;c[i]!='\0';i++)
               a[i+1]=c[i]-'0'; 
       m=i;
       
 if(m==1)
-printf("0\n%d",a[1]);
+my_printf("0\n%d",a[1]);
 else{
      if(m==2)
-     printf("%d\n%d",(10*a[1]+a[2])/13  , (10*a[1]+a[2])%13 );
+     my_printf("%d\n%d",(10*a[1]+a[2])/13  , (10*a[1]+a[2])%13 );
      else{
      
       
@@ -29,9 +29,9 @@ else{
       if(b[1]==0) qishi=2;
       else qishi=1;
       for(j=qishi;j<=m-1;j++)
-      printf("%d",b[j]);
-      printf("\n");
-      printf("%d\n",yu);
+      my_printf("%d",b[j]);
+      my_printf("\n");
+      my_printf("%d\n",yu);
       
       }}
 }

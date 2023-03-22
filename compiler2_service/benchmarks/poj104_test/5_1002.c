@@ -10,16 +10,16 @@ int main_bench()
 	char l1[500];
 	char l2[500];
 	a=0;
-    scanf("%lf",&n);
-	scanf("%s",l1);
-	scanf("%s",l2);
+    my_scanf("%lf",&n);
+	my_scanf("%s",l1);
+	my_scanf("%s",l2);
 	for(i=0;i<strlen(l1);i++){
 			if(l1[i]<'A'||l1[i]>'Z'||l2[i]<'A'||l2[i]>'Z'){
 				b=1;
 			}
 		}
 	if(strlen(l1)!=strlen(l2)||b==1){
-		printf("error");
+		my_printf("error");
 	}else{
 		for(i=0;i<strlen(l1);i++){
 			if(l1[i]==l2[i]){
@@ -28,9 +28,9 @@ int main_bench()
 		}
 		k=1.0*a/strlen(l1);
 		if(k>n){
-			printf("yes");
+			my_printf("yes");
 		}else{
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

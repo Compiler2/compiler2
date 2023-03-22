@@ -20,11 +20,11 @@ int main_bench()
               }
           }
       }
-      scanf("%d",&t);
+      my_scanf("%d",&t);
       for (i=1;i<=t;i++)
       {
-          scanf("%d %d",&m,&n);
-          printf("%d\n",a[m][n]);
+          my_scanf("%d %d",&m,&n);
+          my_printf("%d\n",a[m][n]);
       }
       getchar();
       getchar();

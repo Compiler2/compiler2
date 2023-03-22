@@ -6,8 +6,8 @@ int main_bench()
 	int tianshu(int moon, int yy);
 
 	int y1,y2,m1,m2,d1,d2,days,i,j;
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	days=0;
     for (i=y1;i<y2;i++)
 	{
@@ -21,7 +21,7 @@ int main_bench()
 	for (j=1;j<m2;j++)
 		days=days+tianshu(j,y2);
 	days=days+d2;
-	printf("%d\n",days);
+	my_printf("%d\n",days);
 }
 int runnian(int year)
 {

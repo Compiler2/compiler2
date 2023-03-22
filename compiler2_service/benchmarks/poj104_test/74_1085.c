@@ -30,17 +30,17 @@ int huiwen(int p,int q)
 int main_bench()
 {
    int m,n,coun=0;
-   scanf("%d %d",&m,&n);
+   my_scanf("%d %d",&m,&n);
    int i,ci,temp;
    for(i=m;i<=n;i++)
    {  ci=0;
 	   temp=huiwen(i,ci);
       if(ss(i)==1&&(temp==i))
 	  {coun++;
-	  if(coun==1)printf("%d",i);
-	  if(coun>1)printf(",%d",i);
+	  if(coun==1)my_printf("%d",i);
+	  if(coun>1)my_printf(",%d",i);
 	  }
    
    }
-  if(coun==0)printf("no\n");
+  if(coun==0)my_printf("no\n");
 }

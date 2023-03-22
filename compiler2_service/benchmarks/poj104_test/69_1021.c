@@ -6,7 +6,7 @@ int main_bench()
 	int i,l11,l21,l,s,l1,l2;
     char a[253],b[253],d[253];
 	int a1[253],b1[253],c[253];
-         scanf("%s\n%s",&a,&b);
+         my_scanf("%s\n%s",&a,&b);
 	l11=strlen(a);
 	l21=strlen(b);
 	if (l11<l21) 
@@ -39,8 +39,8 @@ int main_bench()
 
 
 	for (i=s;i<=l1;i++)
-		printf("%d",c[i]);
-	if (s>l1) printf("0");
+		my_printf("%d",c[i]);
+	if (s>l1) my_printf("0");
 	return 0;
 }
 

@@ -9,10 +9,10 @@ struct book
 int main_bench() 
 {
        int n,i,j;int count[26]={0};int temp,base,k=0;char author;int pd=0,N=0;
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        for(i=0;i<n;i++)
        {
-                       scanf("%s %s",&books[i].number,&books[i].name);
+                       my_scanf("%s %s",&books[i].number,&books[i].name);
        }
        for(i=0;i<n;i++)
        {               
@@ -29,7 +29,7 @@ int main_bench()
                         {base=count[i];k=i;}
        }
        author='A'+k;
-       printf("%c\n",author);
+       my_printf("%c\n",author);
         for(i=0;i<n;i++)
        {               pd=0;
                        for(j=0;books[i].name[j]>='A'&&books[i].name[j]<='Z';j++)
@@ -41,7 +41,7 @@ int main_bench()
                        if(pd==1)
                        N++;
        }
-       printf("%d\n",N);
+       my_printf("%d\n",N);
        for(i=0;i<n;i++)
        {               pd=0;
                        for(j=0;books[i].name[j]>='A'&&books[i].name[j]<='Z';j++)
@@ -51,7 +51,7 @@ int main_bench()
                               pd=1;
                        }
                        if(pd==1)
-                       printf("%s\n",books[i].number);
+                       my_printf("%s\n",books[i].number);
        }
                                     
       

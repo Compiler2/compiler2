@@ -6,9 +6,9 @@ int main_bench()
 	int king(int m,int n);
 	while(n!=0&&m!=0)
 	{
-		scanf("%d %d",&n,&m);
+		my_scanf("%d %d",&n,&m);
 		if(n!=0&&m!=0)
-		printf("%d\n",king(m,n)+1);
+		my_printf("%d\n",king(m,n)+1);
 	}
 }
 

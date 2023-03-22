@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,m,a[100],i,j,c=0,d=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		for(j=0;j<m;j++)
 		{
-			scanf("%d",&a[j]);
+			my_scanf("%d",&a[j]);
 		}
         c=0;
 		d=0;
@@ -19,7 +19,7 @@ int main_bench()
 		{
 		    if((60-a[j]-3*j)<3 && (60-a[j]-3*j)>0)
 			{
-			   printf("%d\n",a[j]);
+			   my_printf("%d\n",a[j]);
 			   c=1;
 			   break;
 			}
@@ -32,7 +32,7 @@ int main_bench()
 	
 		      if(a[j]>=(60-3*j))
 			  {
-			    printf("%d\n",60-3*j);
+			    my_printf("%d\n",60-3*j);
                 d=1;
 				break;
 			  }
@@ -41,7 +41,7 @@ int main_bench()
 		
           if(d==0)
 		  {
-		    printf("%d\n",60-3*m);
+		    my_printf("%d\n",60-3*m);
 		   }
 		}
 		

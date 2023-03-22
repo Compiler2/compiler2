@@ -1,11 +1,13 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int main_bench()
 {
  int n,i,j,k,l,s,m,a[10000];
  int *p,*p1,*p2,*p3;
- scanf("%d",&n);
- printf("_________________________________ %d",n);
+ my_scanf("%d",&n);
+ my_printf("_________________________________ %d",n);
 
  p=a;
  for(l=0;l<n;l++)
@@ -14,8 +16,8 @@ int main_bench()
   {p1=p+100*i;
    for(j=0;j<n;j++)
    {p2=p1+j;
-    scanf("%d",p2);}}
-    printf("_________________________________ %d",p2);
+    my_scanf("%d",p2);}}
+    my_printf("_________________________________ %d",p2);
 
   s=0;
   for(k=0;k<n-1;k++)
@@ -40,7 +42,7 @@ int main_bench()
     {p2=p1+j*100;
      *p2=*p2-m;}}
    s=s+*(p+101*(k+1));}
-  printf("\n%d\n",s);}
+  my_printf("\n%d\n",s);}
    
 
    return 0;

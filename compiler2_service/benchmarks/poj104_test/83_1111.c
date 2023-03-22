@@ -4,15 +4,15 @@ int main_bench()
 {
 	int n,a[1000],t=0,i;
 	float b[1000],s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		t=t+a[i];
 	}
 	for(i=0;i<n;i++)
 	{
-		scanf("%f",&b[i]);
+		my_scanf("%f",&b[i]);
 		if(b[i]>89&&b[i]<101)
 			b[i]=4.0;
 		else if(b[i]>84&&b[i]<90)
@@ -36,5 +36,5 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 		s=a[i]*b[i]+s;
-	printf("%.2f",s/(float)t);
+	my_printf("%.2f",s/(float)t);
 }

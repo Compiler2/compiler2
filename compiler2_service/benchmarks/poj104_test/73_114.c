@@ -8,7 +8,7 @@ int main_bench()
 	{
 		for(col=0;col<5;col++)
 		{
-			scanf("%d",&a[row][col]);
+			my_scanf("%d",&a[row][col]);
 		}
 	}
 	int max,min,flag=1,k=1;
@@ -34,11 +34,11 @@ int main_bench()
 			}
 			if(flag)  
 			{
-				printf("%d %d %d",row+1,col+1,a[row][col]);
+				my_printf("%d %d %d",row+1,col+1,a[row][col]);
 				k=0;
 			}
 		}
 	}
-	if(k) printf("not found");
+	if(k) my_printf("not found");
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int f(int x,int y);
 	int x,y,i,j,k,l;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	l=f(x,y);
-	printf("%d",l);
-	scanf("%d",&j);
+	my_printf("%d",l);
+	my_scanf("%d",&j);
 	return 0;
 }
 int f(int x,int y)

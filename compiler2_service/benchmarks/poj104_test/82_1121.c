@@ -6,9 +6,9 @@ int main_bench (){
   temp=0;
   int a[200];
   int b[200];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-    scanf("%d %d",&a[i],&b[i]);
+    my_scanf("%d %d",&a[i],&b[i]);
   }
   for(i=0;i<n;i++){
     if (a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90){
@@ -29,6 +29,6 @@ int main_bench (){
     if(temp>sum){
      sum=temp;
     }
-   printf("%d",sum);
+   my_printf("%d",sum);
   return 0;
 }

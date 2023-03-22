@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,i,e;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int *shuzu=(int*)malloc(sizeof(shuzu)* n);
 	for(i=0;i<n;i++){
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 	}
 	for(i=0;i<n/2;i++){
 		e=shuzu[i];
@@ -13,8 +13,8 @@ int main_bench(){
 		shuzu[n-1-i]=e;
 	}
 	for(i=0;i<n-1;i++){
-		printf("%d ",shuzu[i]);
+		my_printf("%d ",shuzu[i]);
 	}
-	printf("%d",shuzu[n-1]);
+	my_printf("%d",shuzu[n-1]);
 	return 0;
 }

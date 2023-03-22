@@ -36,7 +36,7 @@ int s(int i)
 int main_bench()
 {
 	int m,n,i,j=0,x,a[100000];
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		x=h(i);
@@ -48,14 +48,14 @@ int main_bench()
 		}
 	}
 	if(j==0)
-	printf("no");
+	my_printf("no");
 	else if(j==1)
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	else
 	{
 	for(i=0;i<j-1;i++)
-	printf("%d,",a[i]);
-	printf("%d",a[j-1]);
+	my_printf("%d,",a[i]);
+	my_printf("%d",a[j-1]);
 	}
 }
 

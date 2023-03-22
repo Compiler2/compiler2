@@ -5,12 +5,12 @@ int main_bench()
     int n,a,b,c,d,e,f,g;
 	int z[50000][2];
 	int x[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	e=0;
 	for(a=0;a<=n-1;a++)
 	{
-		scanf("%d",&z[a][0]);
-		scanf("%d",&z[a][1]);
+		my_scanf("%d",&z[a][0]);
+		my_scanf("%d",&z[a][1]);
 	}
 	for(b=0;b<=n-2;b++)
 	{
@@ -38,7 +38,7 @@ int main_bench()
 	}
 	if (e==1)
 	{
-		printf("no");
+		my_printf("no");
 		return 0;
 	}
 	f=z[0][0];
@@ -47,6 +47,6 @@ int main_bench()
 	{
         if (g<z[a][1]) g=z[a][1];
 	}
-	printf("%d %d",f,g);
+	my_printf("%d %d",f,g);
 	return 0;
 }

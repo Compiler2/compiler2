@@ -18,9 +18,9 @@ int main_bench()
 			}
 		    for(i=i;i<=k;i++)
 			{
-			    printf("%c",zfc[i]);
+			    my_printf("%c",zfc[i]);
 			}
-			printf("\n");
+			my_printf("\n");
 		}
 	}
 	return 0;

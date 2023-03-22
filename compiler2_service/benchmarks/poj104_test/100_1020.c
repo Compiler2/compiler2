@@ -5,7 +5,7 @@ int main_bench ()
 	char st[300];
 	int jr,lr,a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0,q=0,r=0,s=0,t=0,u=0,v=0,w=0,x=0,y=0,z=0;
 	
-	scanf("%s",st);
+	my_scanf("%s",st);
 	
 	lr=strlen(st);
 	for(jr=0;jr<lr;jr++)
@@ -17,7 +17,7 @@ int main_bench ()
 		}
 	}
 	if(a>0)
-	printf("a=%d\n",a);
+	my_printf("a=%d\n",a);
 	b=0;	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -28,7 +28,7 @@ int main_bench ()
 		}
 	}
 	if(b>0)
-	printf("b=%d\n",b);
+	my_printf("b=%d\n",b);
 
 	c=0;
 	for(jr=0;jr<lr;jr++)
@@ -39,7 +39,7 @@ int main_bench ()
 			
 		}
 	}if(c>0)
-	printf("c=%d\n",c);
+	my_printf("c=%d\n",c);
 	d=0;	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -49,7 +49,7 @@ int main_bench ()
 			
 		}
 	}if(d>0)
-	printf("d=%d\n",d);
+	my_printf("d=%d\n",d);
 	e=0;	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -59,7 +59,7 @@ int main_bench ()
 			
 		}
 	}if(e>0)
-	printf("e=%d\n",e);
+	my_printf("e=%d\n",e);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -69,7 +69,7 @@ int main_bench ()
 			
 		}
 	}if(f>0)
-	printf("f=%d\n",f);
+	my_printf("f=%d\n",f);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -79,7 +79,7 @@ int main_bench ()
 			
 		}
 	}if(g>0)
-	printf("g=%d\n",g);
+	my_printf("g=%d\n",g);
 
     	
 	for(jr=0;jr<lr;jr++)
@@ -90,7 +90,7 @@ int main_bench ()
 			
 		}
 	}if(h>0)
-	printf("h=%d\n",h);
+	my_printf("h=%d\n",h);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -100,7 +100,7 @@ int main_bench ()
 			
 		}
 	}if(i>0)
-	printf("i=%d\n",i);
+	my_printf("i=%d\n",i);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -110,7 +110,7 @@ int main_bench ()
 		
 		}
 	}if(j>0)
-	printf("j=%d\n",j);
+	my_printf("j=%d\n",j);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -120,7 +120,7 @@ int main_bench ()
 			
 		}
 	}if(k>0)
-	printf("k=%d\n",k);
+	my_printf("k=%d\n",k);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -130,7 +130,7 @@ int main_bench ()
 			
 		}
 	}if(l>0)
-	printf("l=%d\n",l);
+	my_printf("l=%d\n",l);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -140,7 +140,7 @@ int main_bench ()
 			
 		}
 	}if(m>0)
-    printf("m=%d\n",m);
+    my_printf("m=%d\n",m);
     	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -150,7 +150,7 @@ int main_bench ()
 			
 		}
 	}if(n>0)
-	printf("n=%d\n",n);
+	my_printf("n=%d\n",n);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -160,7 +160,7 @@ int main_bench ()
 			
 		}
 	}if(o>0)
-	printf("o=%d\n",o);
+	my_printf("o=%d\n",o);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -170,7 +170,7 @@ int main_bench ()
 			
 		}
 	}if(p>0)
-	printf("p=%d\n",p);
+	my_printf("p=%d\n",p);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -180,7 +180,7 @@ int main_bench ()
 			
 		}
 	}if(q>0)
-	printf("q=%d\n",q);
+	my_printf("q=%d\n",q);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -190,7 +190,7 @@ int main_bench ()
 			
 		}
 	}if(r>0)
-	printf("r=%d\n",r);
+	my_printf("r=%d\n",r);
 
 		
 	for(jr=0;jr<lr;jr++)
@@ -201,7 +201,7 @@ int main_bench ()
 			
 		}
 	}if(s>0)
-    printf("s=%d\n",s);
+    my_printf("s=%d\n",s);
     	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -211,7 +211,7 @@ int main_bench ()
 			
 		}
 	}if(t>0)
-	printf("t=%d\n",t);
+	my_printf("t=%d\n",t);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -221,7 +221,7 @@ int main_bench ()
 			
 		}
 	}if(u>0)
-	printf("u=%d\n",u);
+	my_printf("u=%d\n",u);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -231,7 +231,7 @@ int main_bench ()
 			
 		}
 	}if(v>0)
-	printf("v=%d\n",v);
+	my_printf("v=%d\n",v);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -241,7 +241,7 @@ int main_bench ()
 			
 		}
 	}if(w>0)
-	printf("w=%d\n",w);
+	my_printf("w=%d\n",w);
 	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -251,7 +251,7 @@ int main_bench ()
 			
 		}
 	}if(x>0)
-	printf("x=%d\n",x);
+	my_printf("x=%d\n",x);
 		
 	for(jr=0;jr<lr;jr++)
 	{
@@ -261,7 +261,7 @@ int main_bench ()
 			
 		}
 	}if(y>0)
-	printf("y=%d\n",y);
+	my_printf("y=%d\n",y);
          	
 	for(jr=0;jr<lr;jr++)
 	{
@@ -272,10 +272,10 @@ int main_bench ()
 		}
 	}
         if(z>0)
-	printf("z=%d",z);
+	my_printf("z=%d",z);
 		if(a==0&&b==0&&c==0&&d==0&&e==0&&f==0&&g==0&&h==0&&i==0&&j==0&&k==0&&l==0&&m==0&&n==0&&o==0&&p==0&&q==0&&r==0&&s==0&&t==0&&u==0&&v==0&&w==0&&x==0&&y==0&&z==0)
 		{
-			printf("No");
+			my_printf("No");
 		}
          
          

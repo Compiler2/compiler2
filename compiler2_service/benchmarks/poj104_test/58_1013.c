@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,l,j,i,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	char **p;
 	p=(char**)malloc(n*sizeof(char*));
@@ -36,10 +36,10 @@ int main_bench()
 		}
 		if(flag==0)
 		{
-			printf("%d\n",1);
+			my_printf("%d\n",1);
 		}
 		else
-			printf("%d\n",0);
+			my_printf("%d\n",0);
 	}
 	return 0;
 }

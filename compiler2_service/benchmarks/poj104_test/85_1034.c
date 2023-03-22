@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int x, y,i,d;
-	scanf("%d",&y);
+	my_scanf("%d",&y);
 	char h[21];
 	for(x=0;x<y;x++){
-	scanf("%s",h);
+	my_scanf("%s",h);
          d=0;
   if((h[0]>='a'&&h[0]<='z')||(h[0]>='A'&&h[0]<='Z')||(h[0]=='_')){
              d++;
@@ -16,9 +16,9 @@ int main_bench(){
 		}
 	}
 	if(d==strlen(h)){
-		printf("yes\n");
+		my_printf("yes\n");
 	}else{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	}
 	return 0;

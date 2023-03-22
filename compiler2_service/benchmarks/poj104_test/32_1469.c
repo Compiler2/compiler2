@@ -4,7 +4,7 @@ int main_bench()
 {
     int a[110]={0},i,j,n,l1,l2,e,b[110]={0};
     char s[110],s1[110];
-    scanf("%d\n",&n);
+    my_scanf("%d\n",&n);
     for (i=1;i<=n;i++)
     {
       gets(s);l1=strlen(s);
@@ -21,8 +21,8 @@ int main_bench()
        b[j]=a[j]+e*10-b[j];
         }
        while (b[l1]==0&&l1>0) l1=l1-1;
-       for (j=l1;j>0;j--) {printf("%d",b[j]);b[j]=0;}
-       printf("\n");
-       if (i<n)scanf("\n");
+       for (j=l1;j>0;j--) {my_printf("%d",b[j]);b[j]=0;}
+       my_printf("\n");
+       if (i<n)my_scanf("\n");
 }
   }

@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int n,*x,*y,*s,*z,i,j,o=0,t=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	x=(int*)malloc(sizeof(int)*n);
     y=(int*)malloc(sizeof(int)*n);
     s=(int*)malloc(sizeof(int)*n);
 	z=(int*)malloc(sizeof(int)*n);
     for(i=0;i<n;i++)
 	{
-		scanf("%d %d %d",&x[i],&y[i],&s[i]);
+		my_scanf("%d %d %d",&x[i],&y[i],&s[i]);
 		z[i]=y[i]+s[i];
 	}
 	for(j=0;j<3;j++)
@@ -28,8 +28,8 @@ int main_bench()
 	 }
 	}
 	}
-	printf("%d %d\n",x[n-1],z[n-1]);
-    printf("%d %d\n",x[n-2],z[n-2]);
-	printf("%d %d\n",x[n-3],z[n-3]);
+	my_printf("%d %d\n",x[n-1],z[n-1]);
+    my_printf("%d %d\n",x[n-2],z[n-2]);
+	my_printf("%d %d\n",x[n-3],z[n-3]);
 return 0;
 }

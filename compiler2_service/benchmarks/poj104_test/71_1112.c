@@ -15,9 +15,9 @@ int main_bench()
     a[6]=30;
     a[9]=30;
     a[11]=30;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(j=1;j<=n;j++)
-       scanf("%d%d%d",&year[j],&month1[j],&month2[j]);
+       my_scanf("%d%d%d",&year[j],&month1[j],&month2[j]);
    for(j=1;j<=n;j++){ 
        sum=0;
        t=0;
@@ -31,13 +31,13 @@ int main_bench()
          month2[j]=t;
        }             
        for(i=month1[j];i<month2[j];i++){
-          scanf("%d",&a[i]);
+          my_scanf("%d",&a[i]);
           sum+=a[i];
        }
        if(sum%7==0)
-          printf("YES\n");
+          my_printf("YES\n");
        else
-          printf("NO\n");    
+          my_printf("NO\n");    
     }
    return 0;
 }

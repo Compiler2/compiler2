@@ -7,7 +7,7 @@ int main_bench()
 
   int row,col,i,j,t,max,min,l=0,k;
 
-  scanf("%d,%d",&row,&col);
+  my_scanf("%d,%d",&row,&col);
 
   int a[row][col];
 
@@ -19,7 +19,7 @@ int main_bench()
 
    {
 
- scanf("%d",&a[i][j]);
+ my_scanf("%d",&a[i][j]);
 
    }
 
@@ -69,7 +69,7 @@ int main_bench()
 
    {
 
-    printf("%d+%d",i,k);
+    my_printf("%d+%d",i,k);
 
     l++;
 
@@ -79,7 +79,7 @@ int main_bench()
 
   if(l==0)
 
-  printf("No");
+  my_printf("No");
 
   return 0;
 

@@ -8,11 +8,11 @@ int smin[100];
 hmax[0]=0;
 smin[0]=0;
 int p=0;
-scanf("%d,%d",&a,&b);
+my_scanf("%d,%d",&a,&b);
 for(i=0;i<a;i++){
- scanf("\n%d",&z[i][0]);	
+ my_scanf("\n%d",&z[i][0]);	
  for(j=1;j<b;j++){
-  scanf(" %d",&z[i][j]);
+  my_scanf(" %d",&z[i][j]);
  }
 }
 for(i=0;i<a;i++){
@@ -33,12 +33,12 @@ for(i=0;i<b;i++){
 }
 for(i=0;i<a;i++){
  if(smin[(hmax[i])]==i){
-   printf("%d+%d\n",i,hmax[i]);
+   my_printf("%d+%d\n",i,hmax[i]);
    p++;
  }
 }
 if(p==0){
-printf("No\n");
+my_printf("No\n");
 }
 return 0;
 }

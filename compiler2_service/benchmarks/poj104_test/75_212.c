@@ -6,13 +6,13 @@ int main_bench()
 	char c[10000],d[10000];
 	for(i=0; ;i++)
 	{
-		scanf("%d%c",&a[i],&c[i]);s=i+1;
+		my_scanf("%d%c",&a[i],&c[i]);s=i+1;
 		if(c[i]!=',')
 			break;
 	}
 	for(i=0; ;i++)
 	{
-		scanf("%d%c",&b[i],&d[i]);t=i+1;		if(d[i]!=',')
+		my_scanf("%d%c",&b[i],&d[i]);t=i+1;		if(d[i]!=',')
 			break;
 	}
 	for(i=0;i<1000;i++)
@@ -29,6 +29,6 @@ int main_bench()
 	   if(max<n[i])
 		 max=n[i];
 	}
-	printf("%d %d",s,max);
+	my_printf("%d %d",s,max);
 }
 

@@ -19,29 +19,29 @@ int main_bench()
 			continue;
 		if (n>32)
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		if (n<-32)
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
                   if (n<0)
                   {
-                            printf(">");
+                            my_printf(">");
 			break;
                    }
                    if (n>0)
                   {
-                            printf("<");
+                            my_printf("<");
 			break;
                    }
 
 
 		if (k==len)
 		{
-			printf("=");
+			my_printf("=");
 			break;
 		}
 			}

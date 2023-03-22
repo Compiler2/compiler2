@@ -40,8 +40,8 @@ int f(int a[])
 	if(f==2&&f2==3)
 	{
 		for(i=1;i<5;i++)
-			printf("%d ",a[i]);
-        printf("%d",a[5]);
+			my_printf("%d ",a[i]);
+        my_printf("%d",a[5]);
 		return f;
 	}
     else

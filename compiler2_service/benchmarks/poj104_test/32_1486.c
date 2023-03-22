@@ -31,17 +31,17 @@ void jian()
      while(c[ml]==0 && ml>0)
      ml--;
      for(i=ml;i>=0;i--)
-     printf("%d",c[i]);
-     printf("\n");
+     my_printf("%d",c[i]);
+     my_printf("\n");
 }
 
 int main_bench()
 {
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     while(n--)
     {
-         scanf("%s",s1);
-         scanf("%s",s2);
+         my_scanf("%s",s1);
+         my_scanf("%s",s2);
          l1=strlen(s1);
          l2=strlen(s2);
          ml=l1;

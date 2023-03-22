@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n,i,e,j;
 	 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     int a[100],b[100];
 	
 	for(i=0;i<n;i++){
-scanf("%d",&(a[i]));
+my_scanf("%d",&(a[i]));
 		
 	}
 	for(j=0;j<n;j++){
@@ -16,11 +16,11 @@ scanf("%d",&(a[i]));
 	}
 	for(e=0;e<n;e++){
 		if(e==n-1){
-			printf("%d",b[e]);
+			my_printf("%d",b[e]);
 		}
 		else 
 		{
-			printf("%d ",b[e]);
+			my_printf("%d ",b[e]);
 		}
 	}
 		return 0;

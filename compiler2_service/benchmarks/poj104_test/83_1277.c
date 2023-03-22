@@ -4,13 +4,13 @@ int main_bench()
 {
 	int i,n,m=0,score;
 	float sum=0,a[2][9],GPA;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		scanf("%f",&(a[0][i]));
+		my_scanf("%f",&(a[0][i]));
 	
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d",&score);
+		my_scanf("%d",&score);
 		if(score>=90)a[1][i]=4.0;
 		else if(score>=85)a[1][i]=3.7;
 		else if(score>=82)a[1][i]=3.3;
@@ -29,5 +29,5 @@ int main_bench()
 		m=m+a[0][i];
 	}
 	GPA=sum/m;
-	printf("%.2f\n",GPA);	
+	my_printf("%.2f\n",GPA);	
 }

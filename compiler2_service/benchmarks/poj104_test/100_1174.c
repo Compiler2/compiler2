@@ -6,7 +6,7 @@ int main_bench()
 	char zm[27]="abcdefghijklmnopqrstuvwxyz";
 	int zms[26];
 	int i,j,n,m=1;
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	n = strlen (zfc);
 	for(i=0;i<26;i++)
 	{
@@ -27,12 +27,12 @@ int main_bench()
 		if(zms[i]!=0)
 		{
 		    m=0; 
-                      printf("%c=%d\n",zm[i],zms[i]);
+                      my_printf("%c=%d\n",zm[i],zms[i]);
 		}
 	}
          if(m==1)
          {
-             printf("No");
+             my_printf("No");
          }
 	return 0;
 }

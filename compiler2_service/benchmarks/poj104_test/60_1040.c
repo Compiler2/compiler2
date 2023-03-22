@@ -4,19 +4,19 @@ int main_bench()
 {
 	int f(int a);
 	int i,n,h;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	h=0;
 	for(i=3;i<=(n-2);i++)
 	{
 		if(f(i)==1&&f(i+2)==1)
 
 		{  h++;
-           printf("%d %d\n",i,i+2);
+           my_printf("%d %d\n",i,i+2);
 		}
 	}
 	if(h==0)
 	{
-		printf("empty");
+		my_printf("empty");
 	}
 
 	

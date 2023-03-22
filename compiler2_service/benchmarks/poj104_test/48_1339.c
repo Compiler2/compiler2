@@ -2,7 +2,7 @@
 
 int main_bench(){
     int d,n;
-    scanf("%d%d",&n,&d);
+    my_scanf("%d%d",&n,&d);
     
     if(d==1){
             int sz[9][9]= {{0,0,0,0,0,0,0,0,0},
@@ -17,11 +17,11 @@ int main_bench(){
     int i,j;
         for(i=0;i<9;i++){
                      for(j=0;j<8;j++){
-                                      printf("%d ",sz[i][j]);
+                                      my_printf("%d ",sz[i][j]);
                                     
                                      
                                       }
-                     printf("%d\n",sz[i][8]);
+                     my_printf("%d\n",sz[i][8]);
                      }
         }
     if(d==2){
@@ -37,11 +37,11 @@ int main_bench(){
                        int i,j;
     for(i=0;i<9;i++){
                      for(j=0;j<8;j++){
-                                      printf("%d ",sz[i][j]);
+                                      my_printf("%d ",sz[i][j]);
                                     
                                      
                                       }
-                     printf("%d\n",sz[i][8]);
+                     my_printf("%d\n",sz[i][8]);
                      }
              }
              
@@ -58,11 +58,11 @@ int main_bench(){
                        int i,j;
     for(i=0;i<9;i++){
                      for(j=0;j<8;j++){
-                                      printf("%d ",sz[i][j]);
+                                      my_printf("%d ",sz[i][j]);
                                     
                                      
                                       }
-                     printf("%d\n",sz[i][8]);
+                     my_printf("%d\n",sz[i][8]);
                      }
              }
              
@@ -79,11 +79,11 @@ int main_bench(){
                        int i,j;
     for(i=0;i<9;i++){
                      for(j=0;j<8;j++){
-                                      printf("%d ",sz[i][j]);
+                                      my_printf("%d ",sz[i][j]);
                                     
                                      
                                       }
-                     printf("%d\n",sz[i][8]);
+                     my_printf("%d\n",sz[i][8]);
                      }
              }
              

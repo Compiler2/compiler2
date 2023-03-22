@@ -4,8 +4,8 @@ char a[5000][256];
 int main_bench() 
 {
   int i,n,j;
-  scanf("%d",&n);
-  for(i=0;i<n;i++){scanf("%s",&a[i]);}
+  my_scanf("%d",&n);
+  for(i=0;i<n;i++){my_scanf("%s",&a[i]);}
   for(i=0;i<n;i++){
 	  for(j=0;j<strlen(a[i]);j++){
 		  switch(a[i][j]){
@@ -23,6 +23,6 @@ int main_bench()
 		  }
 	  }
   }
-  for(i=0;i<n;i++){printf("%s\n",a[i]);}
+  for(i=0;i<n;i++){my_printf("%s\n",a[i]);}
   return 0;
 } 

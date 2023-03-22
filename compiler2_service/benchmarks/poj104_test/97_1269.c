@@ -4,7 +4,7 @@ int main_bench(){
 	int sum;
 	int a1,b1,c1,d1,e1,f1;
 	int numa,numb,numc,numd,nume,numf;
-	scanf("%d",&sum);
+	my_scanf("%d",&sum);
 	a1=sum%100;
 	numa=(sum-a1)/100;
 	b1=(sum-100*numa)%50;
@@ -17,6 +17,6 @@ int main_bench(){
 	nume=(sum-100*numa-50*numb-20*numc-10*numd-e1)/5;
 	f1=(sum-100*numa-50*numb-20*numc-10*numd-5*nume)%1;
 	numf=(sum-100*numa-50*numb-20*numc-10*numd-5*nume-f1);
-	printf("%d\n%d\n%d\n%d\n%d\n%d",numa,numb,numc,numd,nume,numf);
+	my_printf("%d\n%d\n%d\n%d\n%d\n%d",numa,numb,numc,numd,nume,numf);
 	return 0;
 }

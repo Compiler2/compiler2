@@ -6,9 +6,9 @@ int m,n;
 void loaddata()
 {
 	int l;
-	scanf("%d %d",&m,&n);
-	for (l=0;l<m;l++) scanf("%d",&a[l]);
-	for (l=0;l<n;l++) scanf("%d",&b[l]);
+	my_scanf("%d %d",&m,&n);
+	for (l=0;l<m;l++) my_scanf("%d",&a[l]);
+	for (l=0;l<n;l++) my_scanf("%d",&b[l]);
 }
 void arrsort()
 {
@@ -50,10 +50,10 @@ void add()
 void print()
 {
 	int q;
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for (q=1;q<m+n;q++)
 	{
-		printf(" %d",a[q]);
+		my_printf(" %d",a[q]);
 	}
 }
 

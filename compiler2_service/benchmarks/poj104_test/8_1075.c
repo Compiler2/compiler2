@@ -4,11 +4,11 @@ int a[233],b[233];
 int n,m,i,j,z;
 void shuru(int p)
 { 
-	scanf("%d %d",&n,&m);
-	scanf("%d",&a[0]);
-	for(i=1;i<n;i++){scanf(" %d",&a[i]);}
-	scanf("%d",&b[0]);
-	for(i=1;i<m;i++){scanf(" %d",&b[i]);}
+	my_scanf("%d %d",&n,&m);
+	my_scanf("%d",&a[0]);
+	for(i=1;i<n;i++){my_scanf(" %d",&a[i]);}
+	my_scanf("%d",&b[0]);
+	for(i=1;i<m;i++){my_scanf(" %d",&b[i]);}
 } 
 void paixu(int p)
 {
@@ -46,10 +46,10 @@ void hebing(int p)
 }
 void shuchu(int p)
 {
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	for(i=1;i<m+n;i++)
 	{
-		printf(" %d",a[i]);
+		my_printf(" %d",a[i]);
 	}
 }
 int main_bench()

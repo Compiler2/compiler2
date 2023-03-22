@@ -28,19 +28,19 @@ int prime(int i)
 int main_bench()
 {
     int n;
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     int count = 0;
     int i;
     for(i = 3; i <= n - 2; i = i + 2)
     {
           if(prime(i) == 1 && prime(i + 2) == 1)
           {
-                      printf("%d %d\n", i, i + 2);
+                      my_printf("%d %d\n", i, i + 2);
                       count++;
           }
                       
     }
-    if(count == 0) printf("empty");
+    if(count == 0) my_printf("empty");
  
     return 0;
 }

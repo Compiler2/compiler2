@@ -16,10 +16,10 @@ int main_bench()
 			k++;
 			continue;
 		}
-		else if(str1[i]>str2[i]) printf(">\n");
-		else printf("<\n");
+		else if(str1[i]>str2[i]) my_printf(">\n");
+		else my_printf("<\n");
 		break;
 	}
-	if(k==a) printf("=\n"); 
+	if(k==a) my_printf("=\n"); 
 	return 0;
 }

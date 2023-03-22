@@ -4,7 +4,7 @@
 int main_bench() {
        char s[100];
        int a,b;
-       scanf("%d %s %d",&a,&s,&b);
+       my_scanf("%d %s %d",&a,&s,&b);
        int slen=strlen(s);
        long indec=0;
        long tempdec;
@@ -42,9 +42,9 @@ int main_bench() {
               res[point]=indec+55;
        }
        for (i=point;i>=0;i--) {
-           printf("%c",res[i]);
+           my_printf("%c",res[i]);
        }
-       scanf("%d",&i);
+       my_scanf("%d",&i);
 } 
 
         

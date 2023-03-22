@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int r=3,s=0,q=0;
 	int p[100000];
     p[0]=2;
@@ -28,7 +28,7 @@ int main_bench(){
 				}
 			}
 			if(p[k]*p[k]>i){
-				printf("%d=%d+%d\n",i,p[j],m);
+				my_printf("%d=%d+%d\n",i,p[j],m);
 				break;
 			}
 		}

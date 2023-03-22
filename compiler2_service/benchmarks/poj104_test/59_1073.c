@@ -4,14 +4,14 @@ int main_bench()
 {
 	int n,i,j,count=0;
 	char s[105][105];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++)
 	{
 		gets(s[i]);
 	}
 	int m,r;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	if(m>1)
 	{
 	    for(i=0;i<m;i++)
@@ -63,6 +63,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",count);
+	my_printf("%d",count);
 	return 0;
 }

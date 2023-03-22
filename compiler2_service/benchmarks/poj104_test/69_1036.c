@@ -5,8 +5,8 @@ int main_bench()
 	char p[251],q[251];
 	int x,y,n,t=0,i,j,k,h,u,v;
     int a[250],b[250],c[251];
-	scanf("%s",p);
-	scanf("%s",q);
+	my_scanf("%s",p);
+	my_scanf("%s",q);
     x=strlen(p);
     y=strlen(q);
 	for(h=0;h<250;h++)
@@ -36,12 +36,12 @@ int main_bench()
 	   if(c[u]!=0)
 		   break;
 	}
-	if(u==-1)  printf("0");
+	if(u==-1)  my_printf("0");
 	else
 	{
 		for(v=u;v>=0;v--)
 		{
-		printf("%d",c[v]);
+		my_printf("%d",c[v]);
 		}	
 	}
     return 0;

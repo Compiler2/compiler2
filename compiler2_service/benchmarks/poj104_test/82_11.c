@@ -5,11 +5,11 @@ int main_bench()
 {
   int n,k,row,col,x,y,a;
   int sz[100][2];
-  scanf("%d\n", &n);
+  my_scanf("%d\n", &n);
   if((n>0)&&(n<100)){
   for(row=0;row<n;row++){
 	  for(col=0;col<2;col++){
-  scanf("%d",&(sz[row][col]));
+  my_scanf("%d",&(sz[row][col]));
   }
   }
   k=0;
@@ -27,7 +27,7 @@ k=0;
 }
   }
 if(a<k) a=k;    
-printf("%d", a);
+my_printf("%d", a);
   }
 
 	return 0;

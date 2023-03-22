@@ -12,7 +12,7 @@ int main_bench()
             add[i][j]=0;
         }
     }
-    scanf ("%d %d",&m,&n);
+    my_scanf ("%d %d",&m,&n);
     a[5][5]=m;
     for (int i=0;i<n;i++)
     {
@@ -31,10 +31,10 @@ int main_bench()
     {
         for (int j=1;j<10;j++)
         {
-            if (j==1) printf ("%d",a[i][j]);
-            else printf (" %d",a[i][j]);
+            if (j==1) my_printf ("%d",a[i][j]);
+            else my_printf (" %d",a[i][j]);
         }
-        printf ("\n");
+        my_printf ("\n");
     }
     return 0;
 }

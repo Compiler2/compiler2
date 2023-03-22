@@ -4,8 +4,8 @@ int main_bench()
 {
  int y1,y2,m1,m2,d1,d2;
  int year,m,d,t,te,ta;
- scanf ("%d %d %d",&y1,&m1,&d1);
- scanf ("%d %d %d",&y2,&m2,&d2);
+ my_scanf ("%d %d %d",&y1,&m1,&d1);
+ my_scanf ("%d %d %d",&y2,&m2,&d2);
  t=(y2-y1)*365;
  te=d1;
  m1=m1-1;
@@ -54,5 +54,5 @@ int main_bench()
  year=y2;
  if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
    if (m2>2)  t=t+1;
- printf ("%d",t); 
+ my_printf ("%d",t); 
 }

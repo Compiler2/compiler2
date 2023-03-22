@@ -15,5 +15,5 @@ int main_bench()
   if(a[i]<a[j])
   {t=a[i],a[i]=a[j],a[j]=t,c=b[i],b[i]=b[j],b[j]=c;}
  for(i=0;i<4;i++)
- printf("%c %d\n",b[i],a[i]);
+ my_printf("%c %d\n",b[i],a[i]);
 }

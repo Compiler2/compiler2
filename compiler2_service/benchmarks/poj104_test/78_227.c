@@ -23,8 +23,8 @@ int main_bench()
 							if(a+c<b)
 								if((a+b)==(c+d))
 								{
-									printf("l %d\nq %d\nz %d\ns %d",d,b,a,c);
-									printf("\n");
+									my_printf("l %d\nq %d\nz %d\ns %d",d,b,a,c);
+									my_printf("\n");
 								}
 				}
 				return 0;

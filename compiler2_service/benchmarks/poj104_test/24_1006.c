@@ -33,7 +33,7 @@ int main_bench()
 			y=i;
 		}
 	}
-	printf("%s\n",f[x]);
-	printf("%s\n",f[y]);
+	my_printf("%s\n",f[x]);
+	my_printf("%s\n",f[y]);
 	return 0;
 }

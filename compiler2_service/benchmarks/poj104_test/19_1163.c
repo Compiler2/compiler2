@@ -17,9 +17,9 @@ for(j=0;j<=strlen(a);j++)
 if(a[j]!=word[j])
 flag=0;
 if(flag)
-printf("%s",b);
-else printf("%s",word);
-if(s[i]!=0)printf("%c",s[i]);
+my_printf("%s",b);
+else my_printf("%s",word);
+if(s[i]!=0)my_printf("%c",s[i]);
 i++;
 n=i;
 }

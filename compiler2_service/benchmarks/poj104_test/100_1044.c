@@ -3,7 +3,7 @@
 int main_bench()
 {
    char num[300];
-   scanf("%s",&num);
+   my_scanf("%s",&num);
    int len;
     len=strlen(num);
    int ii=1;
@@ -64,35 +64,35 @@ else if(num[ii]=='y'){y++;wo++;}
 else if(num[ii]=='z'){z++;wo++;}
    }
    if(wo==0)
-   { printf("No");}
+   { my_printf("No");}
    else 
    {
-	   if(a!=0){printf("a=%d",a);}
- if(b!=0){printf("\nb=%d",b);}
- if(c!=0){printf("\nc=%d",c);}
- if(d!=0){printf("\nd=%d",d);}
- if(e!=0){printf("\ne=%d",e);}
- if(f!=0){printf("\nf=%d",f);}
- if(g!=0){printf("\ng=%d",g);}
- if(h!=0){printf("\nh=%d",h);}
- if(i!=0){printf("\ni=%d",i);}
- if(j!=0){printf("\nj=%d",j);}
- if(k!=0){printf("\nk=%d",k);}
- if(l!=0){printf("\nl=%d",l);}
- if(m!=0){printf("\nm=%d",m);}
- if(n!=0){printf("\nn=%d",n);}
- if(o!=0){printf("\no=%d",o);}
- if(p!=0){printf("\np=%d",p);}
- if(q!=0){printf("\\nq=%d",q);}
- if(r!=0){printf("\nr=%d",r);}
- if(s!=0){printf("\ns=%d",s);}
- if(t!=0){printf("\nt=%d",t);}
- if(u!=0){printf("\nu=%d",u);}
- if(v!=0){printf("\nv=%d",v);}
- if(w!=0){printf("\nw=%d",w);}
- if(x!=0){printf("\nx=%d",x);}
- if(y!=0){printf("\ny=%d",y);}
- if(z!=0){printf("\nz=%d",z);}
+	   if(a!=0){my_printf("a=%d",a);}
+ if(b!=0){my_printf("\nb=%d",b);}
+ if(c!=0){my_printf("\nc=%d",c);}
+ if(d!=0){my_printf("\nd=%d",d);}
+ if(e!=0){my_printf("\ne=%d",e);}
+ if(f!=0){my_printf("\nf=%d",f);}
+ if(g!=0){my_printf("\ng=%d",g);}
+ if(h!=0){my_printf("\nh=%d",h);}
+ if(i!=0){my_printf("\ni=%d",i);}
+ if(j!=0){my_printf("\nj=%d",j);}
+ if(k!=0){my_printf("\nk=%d",k);}
+ if(l!=0){my_printf("\nl=%d",l);}
+ if(m!=0){my_printf("\nm=%d",m);}
+ if(n!=0){my_printf("\nn=%d",n);}
+ if(o!=0){my_printf("\no=%d",o);}
+ if(p!=0){my_printf("\np=%d",p);}
+ if(q!=0){my_printf("\\nq=%d",q);}
+ if(r!=0){my_printf("\nr=%d",r);}
+ if(s!=0){my_printf("\ns=%d",s);}
+ if(t!=0){my_printf("\nt=%d",t);}
+ if(u!=0){my_printf("\nu=%d",u);}
+ if(v!=0){my_printf("\nv=%d",v);}
+ if(w!=0){my_printf("\nw=%d",w);}
+ if(x!=0){my_printf("\nx=%d",x);}
+ if(y!=0){my_printf("\ny=%d",y);}
+ if(z!=0){my_printf("\nz=%d",z);}
    }
 return 0;
 }

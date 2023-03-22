@@ -31,7 +31,7 @@ int main_bench()
 		 {
 		   b[s++]=a[k]; 
 		  } 
-         if(f(b)==1) printf("%s\n",b);
+         if(f(b)==1) my_printf("%s\n",b);
 		}
 		return 0; 
 

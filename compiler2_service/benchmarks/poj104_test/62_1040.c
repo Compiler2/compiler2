@@ -8,9 +8,9 @@ int main_bench(){
 	a=strlen(sz);
 	for(i=0;i<a;i++){
 		if(sz[i]!=32){
-			printf("%c",sz[i]);
+			my_printf("%c",sz[i]);
 		}else if(sz[i]==32&&sz[i-1]!=32){
-			printf("%c",b);
+			my_printf("%c",b);
 		}
 	}
 	return 0;

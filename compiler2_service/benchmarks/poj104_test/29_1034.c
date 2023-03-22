@@ -17,12 +17,12 @@ double f(int n){
 int main_bench(){
 	int m,i,sz[100];
 	double s;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&(sz[i]));
+		my_scanf("%d",&(sz[i]));
 	}
     for(i=0;i<m;i++){
-		printf("%.3lf\n",f(sz[i]));
+		my_printf("%.3lf\n",f(sz[i]));
 	}
 	return 0;
 }

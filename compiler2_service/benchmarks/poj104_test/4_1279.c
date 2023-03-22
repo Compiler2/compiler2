@@ -8,12 +8,12 @@ int main_bench()
 	int row,col;
         int i,j,he;
 
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&array[i][j]);
+			my_scanf("%d",&array[i][j]);
 		}
 	}
 
@@ -30,7 +30,7 @@ int main_bench()
 			{
 				continue;
 			}
-			printf("%d\n",array[i][j]);
+			my_printf("%d\n",array[i][j]);
 		}
 	}
 	return 0;

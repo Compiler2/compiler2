@@ -15,7 +15,7 @@ int main_bench(void)
 	int i,fix=0;
 	int year,month,day;
 	int total=0;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 
 	
 	fix=fix + (year-1) + (year-1)/4 - (year-1)/100 + (year-1)/400;
@@ -50,6 +50,6 @@ int main_bench(void)
 
 	
 	total+=day;
-	printf("%s\n",weekday[(fix+total)%7]);
+	my_printf("%s\n",weekday[(fix+total)%7]);
 	return 0;
 }

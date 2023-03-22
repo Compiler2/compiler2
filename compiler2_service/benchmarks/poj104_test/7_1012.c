@@ -8,9 +8,9 @@ a[i]='\0';
 b[i]='\0';
 c[i]='\0';
 }
-scanf("%s",a);
-scanf("%s",b);
-scanf("%s",c);
+my_scanf("%s",a);
+my_scanf("%s",b);
+my_scanf("%s",c);
 
 m=0;
 n=0;
@@ -50,5 +50,5 @@ break;
 else
 i++;
 }
-printf("%s",a);
+my_printf("%s",a);
 }

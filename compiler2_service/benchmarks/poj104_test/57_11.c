@@ -3,11 +3,11 @@
 int main_bench()
 {
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 int i,k;
 char a[100][100];
 for(i=0;i<n;i++)
-scanf("%s",a[i]);
+my_scanf("%s",a[i]);
 int c[100];
 for(i=0;i<n;i++)
 c[i]=strlen(a[i]);
@@ -25,6 +25,6 @@ a[i][c[i]-1]='\0';
 }
 for(i=0;i<n;i++)
 {puts(a[i]);
-printf("\n");
+my_printf("\n");
 }
 }

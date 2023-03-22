@@ -3,19 +3,19 @@
 int main_bench()
 {
 int n,i,j,k=0,P[10000]={0};
-scanf ("%d",&n);
+my_scanf ("%d",&n);
 
 for (;;)
 {
-scanf ("%d%d",&i,&j);
+my_scanf ("%d%d",&i,&j);
 if (i==0&&j==0)
 break;
 P[j]++;
 if (P[j]==(n-1))
 {
-printf("%d",j);k=1;break;}
+my_printf("%d",j);k=1;break;}
 
 }     
 if(k==0)
-printf("NOT FOUND") ;
+my_printf("NOT FOUND") ;
 }

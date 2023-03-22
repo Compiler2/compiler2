@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2,c1,c2,c,i1,i2,y;
-	scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_scanf("%d %d %d\n%d %d %d",&y1,&m1,&d1,&y2,&m2,&d2);
 	int days1[]={0,31,28,31,30,31,30,31,31,30,31,30,31},days2[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	if((y1%4==0)&&(y1%100!=0)||(y1%400==0)) {days1[2]++;}
 	c1=d1;
@@ -20,6 +20,6 @@ int main_bench()
 		y++;
 	}
 	c=c-c1+c2;
-	printf("%d",c);
+	my_printf("%d",c);
 	return 0;
 }

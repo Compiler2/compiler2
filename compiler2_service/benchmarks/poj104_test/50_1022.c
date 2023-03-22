@@ -6,7 +6,7 @@ int main_bench()
 	int m=0;
 	int t=0;
 	int a[15]={0,31,59,90,120,151,181,212,243,273,304,334};
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	if(w>=1&&w<=5)
 		m=6-w;
 	else if(w>=6&&w<=7)
@@ -15,7 +15,7 @@ int main_bench()
 		if((a[i]+13-m)%7==0)
 		{
 			t=i+1;
-			printf("%d\n",t);
+			my_printf("%d\n",t);
 		}
 		return 0;
 }

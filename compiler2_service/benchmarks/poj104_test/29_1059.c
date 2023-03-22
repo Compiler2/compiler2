@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int m,i,j,fenzi[1000],fenmu[1000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	int*xiangshu=(int*)malloc(sizeof(int)*m);
 	double*sum=(double*)malloc(sizeof(double)*m);
 	for(i=0;i<m;i++)
 	{
-		scanf("%d",&xiangshu[i]);
+		my_scanf("%d",&xiangshu[i]);
 	}
 	fenzi[0]=2;
 	fenzi[1]=3;
@@ -32,7 +32,7 @@ int main_bench()
 	}
 	for(i=0;i<m;i++)
 	{
-		printf("%.3lf\n",sum[i]);
+		my_printf("%.3lf\n",sum[i]);
 	}
 	free(xiangshu);
 	return 0;

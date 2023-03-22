@@ -2,14 +2,14 @@
 
 int main_bench(){
 	int n,i,p,t;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	char a[101][101];
 	for(i=0;i<n;i++){
-		scanf("%s\n",a[i]);
+		my_scanf("%s\n",a[i]);
 	}
 	int q,w;
 	int c[10000],b[10000];
-	scanf("%d",&p);
+	my_scanf("%d",&p);
 	int j;
 	for(i=1;i<p;i++){
 		w=0;
@@ -42,6 +42,6 @@ int main_bench(){
 			}
 		}
 	}
-	printf("%d",y);
+	my_printf("%d",y);
 	return 0;
 }

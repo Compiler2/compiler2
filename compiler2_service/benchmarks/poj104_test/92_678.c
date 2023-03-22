@@ -3,13 +3,13 @@
 int main_bench()
 {
       int c,d,e,f,g,h,i,j,k,m,n;
-      while(scanf("%d",&c)&&c!=0)
+      while(my_scanf("%d",&c)&&c!=0)
       {
       int a[c],b[c];
       for(d=0;d<c;d++)
-      scanf("%d",&a[d]);
+      my_scanf("%d",&a[d]);
       for(d=0;d<c;d++)
-      scanf("%d",&b[d]);
+      my_scanf("%d",&b[d]);
       for(e=0;e<c-1;e++)
       for(f=0;f<c-1;f++)
       if(a[f]<a[f+1])
@@ -74,6 +74,6 @@ int main_bench()
                   }
                   }
                   }
-      printf("%d\n",200*h);
+      my_printf("%d\n",200*h);
       }
       }

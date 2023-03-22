@@ -8,8 +8,8 @@ int main_bench()
       int b[500];
       for(i=0;i<500;i++)
       b[i]=1;
-      scanf("%d",&n);
-      scanf("%s",s);
+      my_scanf("%d",&n);
+      my_scanf("%s",s);
       int x,j;
       int k=-1;
       x=strlen(s);
@@ -46,14 +46,14 @@ int main_bench()
                            p=b[i];
           }        
           if(p==1)
-          printf("NO");
+          my_printf("NO");
           else
           {
-              printf("%d\n",p);
+              my_printf("%d\n",p);
               for(i=0;i<=k;i++)
               {
                                if(b[i]==p)
-                               printf("%s\n",a[i]);
+                               my_printf("%s\n",a[i]);
               }
           }
           

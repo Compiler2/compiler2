@@ -36,8 +36,8 @@ int main_bench()
 		}
 	}
 	if(n==1||second==-1)
-		printf("No\n");
-	else printf("%d\n",second);
+		my_printf("No\n");
+	else my_printf("%d\n",second);
 	return 0;
 }
 

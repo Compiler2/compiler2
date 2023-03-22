@@ -7,14 +7,14 @@ int main_bench()
     char c;
     do
     {
-         scanf("%d%c",&a[i],&c);
+         my_scanf("%d%c",&a[i],&c);
          i++;
     }
     while(c!='\n');
     i=0; 
     do
     {
-         scanf("%d%c",&b[i],&c);
+         my_scanf("%d%c",&b[i],&c);
          i++;
     }
     while(c!='\n');
@@ -32,6 +32,6 @@ int main_bench()
                        if(k<e[j])
                        k=e[j];
     }
-    printf("%d %d",n,k);
+    my_printf("%d %d",n,k);
     return 0;
 }

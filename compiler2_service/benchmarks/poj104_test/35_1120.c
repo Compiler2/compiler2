@@ -4,10 +4,10 @@ int main_bench()
 {
   int a,b,n[100][100],l=0,i,j,k,h,g;
   char m;
-  scanf("%d%c%d",&a,&m,&b);
+  my_scanf("%d%c%d",&a,&m,&b);
   for(i=0;i<a;i++){
     for(j=0;j<b;j++){
-      scanf("%d",&(n[i][j]));
+      my_scanf("%d",&(n[i][j]));
     }
   }
   for(i=0;i<a;i++){
@@ -18,10 +18,10 @@ int main_bench()
         if(g>n[k][h]) break;
     }
     if(k==a){
-      printf("%d+%d\n",i,h);
+      my_printf("%d+%d\n",i,h);
       l++;
     }
   }
-  if(l==0) printf("No");
+  if(l==0) my_printf("No");
   return 0;
 }

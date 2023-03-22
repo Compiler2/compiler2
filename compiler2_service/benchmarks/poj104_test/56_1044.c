@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,a[5]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<5;i++)
 	{
 		a[i]=n%10;
@@ -15,7 +15,7 @@ int main_bench()
 	{
 		if(a[i]==0)
 		    break;
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 	}
 	return 0;
 }

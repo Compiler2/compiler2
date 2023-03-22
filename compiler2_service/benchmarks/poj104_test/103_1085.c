@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[1000];
 	int i,j,k,x,s;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	i=0;
 	j=0;
 	k=0;
@@ -21,7 +21,7 @@ int main_bench()
         if (a[i]!=a[i+1])
 		{  s=i-k+1;
 		    k=i+1;
-		printf("(%c,%d)",a[i],s);
+		my_printf("(%c,%d)",a[i],s);
 	}
 	}
 	return 0;

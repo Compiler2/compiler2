@@ -9,7 +9,7 @@ int main_bench()
 {
 	int n,i,l,a,t,k;
 	char s[100000],*p,*q;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		gets(s);
@@ -30,13 +30,13 @@ int main_bench()
 			if(a==1) 
 			{
 				t=1;
-				printf("%c\n",*p);
+				my_printf("%c\n",*p);
 				break;
 			}
 		}
 		
 		if(t==0)
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

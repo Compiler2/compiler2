@@ -4,7 +4,7 @@ int main_bench()
 {
  int n,i,j,k,l,s,m,a[10000];
  int *p,*p1,*p2,*p3;
- scanf("%d",&n);
+ my_scanf("%d",&n);
  p=a;
  for(l=0;l<n;l++)
  {
@@ -12,7 +12,7 @@ int main_bench()
   {p1=p+100*i;
    for(j=0;j<n;j++)
    {p2=p1+j;
-    scanf("%d",p2);}}
+    my_scanf("%d",p2);}}
   s=0;
   for(k=0;k<n-1;k++)
   {for(i=0;i<n;i++)
@@ -36,7 +36,7 @@ int main_bench()
     {p2=p1+j*100;
      *p2=*p2-m;}}
    s=s+*(p+101*(k+1));}
-  printf("%d\n",s);}
+  my_printf("%d\n",s);}
    
 
    

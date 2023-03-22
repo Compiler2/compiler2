@@ -7,10 +7,10 @@ int main_bench()
 	int A[200], B[200], C[200];
 	int D[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int E[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d\n", &n);
+	my_scanf("%d\n", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d", &A[i], &B[i], &C[i]);
+		my_scanf("%d%d%d", &A[i], &B[i], &C[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -40,9 +40,9 @@ int main_bench()
 	   }
 	
 		if(sum1>sum2&&(sum1-sum2)%7==0||sum1<sum2&&(sum2-sum1)%7==0)
-			printf("YES\n");
+			my_printf("YES\n");
 		else 
-			printf("NO\n");
+			my_printf("NO\n");
 	}
 	return 0;
 }

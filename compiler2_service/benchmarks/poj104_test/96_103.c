@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[100];
     int i,l,d,x,m,r[100],p[100],s[100];
-    scanf("%s",a);
+    my_scanf("%s",a);
     l=strlen(a);
     for(i=0;i<l;i++)
     {
@@ -26,7 +26,7 @@ int main_bench()
     }
      for(i=(d+1);i<l;i++)
      {
-     printf("%d",p[i]);
+     my_printf("%d",p[i]);
      }
  }   
      if(l<=2)
@@ -37,10 +37,10 @@ int main_bench()
       x=s[i]+x*10;
      }
      m=x/13;
-     printf("%d",m);
+     my_printf("%d",m);
  }
-    printf("\n");
-    printf("%d",r[l-1]); 
+    my_printf("\n");
+    my_printf("%d",r[l-1]); 
     getchar();
     getchar();
 }

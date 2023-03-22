@@ -2,14 +2,14 @@
 
 int main_bench(){
 	int n,max=0,i,jc=0,a[1000],b[1000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d",&a[i],&b[i]);
+		my_scanf("%d %d",&a[i],&b[i]);
 	}
 	if(n==1){
 		if(a[0]>=90&&a[0]<=140&&b[0]>=60&&b[0]<=90){
-			printf("%d\n",n);
-		}else printf("0");
+			my_printf("%d\n",n);
+		}else my_printf("0");
 	}
 	else if(n!=1){
 	for(i=0;i<n;i++){
@@ -19,7 +19,7 @@ int main_bench(){
 		}
 		else jc=0;
 	}
-	printf("%d\n",max);
+	my_printf("%d\n",max);
 	}
 	
     return 0;

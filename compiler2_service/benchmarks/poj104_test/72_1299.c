@@ -5,10 +5,10 @@ int main_bench()
 {
   int m,n,t;
   int i,j;
-  scanf("%d%d",&m,&n);
+  my_scanf("%d%d",&m,&n);
   for(i=0;i<m;i++)
 	  for(j=0;j<n;j++)
-		  scanf("%d",&a[i][j]);
+		  my_scanf("%d",&a[i][j]);
   for(i=0;i<m;i++)
 	  for(j=0;j<n;j++)
 	  {
@@ -22,7 +22,7 @@ int main_bench()
 		if(a[i][j]>=a[i][j-1] || j-1<0)
 			t++;
 		if(t==4)
-			printf("%d %d\n",i,j);
+			my_printf("%d %d\n",i,j);
 	  
 	  }
  return 0;

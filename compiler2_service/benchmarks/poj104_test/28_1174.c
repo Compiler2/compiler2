@@ -18,12 +18,12 @@ int main_bench()
 		else
 		{
 			if(j!=0)
-			{printf("%d,",j);}
+			{my_printf("%d,",j);}
 		j=0;
 		i=i+1;}
 	}
 	j=j-1;
-printf("%d",j);
+my_printf("%d",j);
 
 }
 

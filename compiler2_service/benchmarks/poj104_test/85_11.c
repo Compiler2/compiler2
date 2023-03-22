@@ -4,14 +4,14 @@ int main_bench()
 {
 	char s[100][20];
 	int n, i, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<100; i++)
 	{
 		for(j=0; j<20; j++)
 			s[i][j]=0;
 	}
 	for(i=0; i<n; i++)
-		scanf("%s", s[i]);
+		my_scanf("%s", s[i]);
 	for(i=0; i<n; i++)
 	{
 		char *p=s[i];
@@ -23,9 +23,9 @@ int main_bench()
 				break;
 		}
 		if(*p!=0)
-			printf("no\n");
+			my_printf("no\n");
 		else if(*p==0)
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

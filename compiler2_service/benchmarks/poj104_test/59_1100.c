@@ -4,10 +4,10 @@
 int main_bench(){
     int m,n,i,j,k,patient=0,flag[103][103];
     char room[103][103];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-        scanf("%s",room[i]);                 
-    scanf("%d",&m);
+        my_scanf("%s",room[i]);                 
+    my_scanf("%d",&m);
     
     
     for(k=1;k<m;k++){
@@ -46,7 +46,7 @@ int main_bench(){
         }                 
     }
     
-    printf("%d",patient);
+    my_printf("%d",patient);
     
     return 0;
 }

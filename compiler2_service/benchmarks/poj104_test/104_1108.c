@@ -3,10 +3,10 @@
 int main_bench()
 {
     int x, y, i, a, b, m[20], n[20], j,f=0;
-    scanf("%d%d",&x,&y);
+    my_scanf("%d%d",&x,&y);
     if(x==y)
     {
-        printf("%d",x);
+        my_printf("%d",x);
     }
     else
     {
@@ -29,7 +29,7 @@ int main_bench()
         for(j=0;j<13;j++)
         {
             if(m[i]==n[j])
-                if(f==0){printf("%d",m[i]);
+                if(f==0){my_printf("%d",m[i]);
                          f=1;}
         }
     }

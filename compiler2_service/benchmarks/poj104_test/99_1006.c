@@ -8,10 +8,10 @@ int main_bench(){
 	q=0;
 	x=0;
 	y=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while(i<=n){
 		int a;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a<=18){
 			p=p+1;
 		}else if(a<=35){
@@ -27,6 +27,6 @@ int main_bench(){
 	q=q/n*100;
 	x=x/n*100;
 	y=y/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",p, q, x, y);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",p, q, x, y);
 	return 0;
 }

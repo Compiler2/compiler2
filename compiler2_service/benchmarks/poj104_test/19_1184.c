@@ -36,6 +36,6 @@ p[i]=(char *)malloc(500*sizeof(char));
 			strcpy(p[i],c);
 	}
 for(i=0;i<=m-2;i++)
-printf("%s ",p[i]);
-printf("%s",p[m-1]);
+my_printf("%s ",p[i]);
+my_printf("%s",p[m-1]);
 }

@@ -6,7 +6,7 @@ int main_bench()
 	int n, i, j, k;
 	char **map;
 	
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	map = (char**)malloc(n*sizeof(char*));
 	for(i=0; i<n; i++)
 		map[i] = (char*)malloc(n*sizeof(char));
@@ -18,7 +18,7 @@ int main_bench()
 			else
 				map[i][j] = 0;
 		}
-	while(scanf("%d %d", &i, &j) && i+j!=0)
+	while(my_scanf("%d %d", &i, &j) && i+j!=0)
 		map[i][j] = 1;
 	
 	k = 0;
@@ -31,14 +31,14 @@ int main_bench()
 	{
 		if(map[i][k]==0 || map[k][i]==1)
 		{
-			printf("NOT FOUND");
+			my_printf("NOT FOUND");
 			for(i=0; i<n; i++)
 				free(map[i]);
 			free(map);
 			return 0;
 		}
 	}
-	printf("%d", k);
+	my_printf("%d", k);
 	for(i=0; i<n; i++)
 		free(map[i]);
 	free(map);

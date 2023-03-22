@@ -11,10 +11,10 @@ int main_bench()
 	while(*str)
 	{
 		if((*str>='0'&&*str<='9')&&(flag==0)&&(k>0))
-			printf("\n");
+			my_printf("\n");
 		if(*str>='0'&&*str<='9')
 		{
-			printf("%c",*str);
+			my_printf("%c",*str);
 			flag=1;
 			k++;
 		}

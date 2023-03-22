@@ -7,9 +7,9 @@ int main_bench(){
   b=0;
   c=0;
   d=0;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=1;i<=n;i++){
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     if(t>=1&&t<=18){
     a++;
     }else if(t>=19&&t<=35){
@@ -25,9 +25,9 @@ int main_bench(){
   b=100*b/m;
   c=100*c/m;
   d=100*d/m;
-printf("1-18: %.2lf%%\n",a);
-printf("19-35: %.2lf%%\n",b);
-printf("36-60: %.2lf%%\n",c);
-printf("Over60: %.2lf%%\n",d);
+my_printf("1-18: %.2lf%%\n",a);
+my_printf("19-35: %.2lf%%\n",b);
+my_printf("36-60: %.2lf%%\n",c);
+my_printf("Over60: %.2lf%%\n",d);
 return 0;
 }

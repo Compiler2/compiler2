@@ -9,7 +9,7 @@ int huiwen(int x);
 int main_bench()
 {
 	int i,m,n,num=0,str[1000];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if((prime(i)*huiwen(i))!=0)
@@ -20,12 +20,12 @@ int main_bench()
 	}
 	str[num]='\0';
 	if(num==0)
-		printf("no");
+		my_printf("no");
 	else
 	{
-		printf("%d",str[0]);
+		my_printf("%d",str[0]);
 		for(i=1;i<=num-1;i++)
-			printf(",%d",str[i]);
+			my_printf(",%d",str[i]);
 	}
 }
 int prime(int x)

@@ -60,7 +60,7 @@ int main_bench()
    for(i=0;i<4;i++)
    {
       t=w[i];             
-     printf("%c %d\n",ch[t],t*10+10);                
+     my_printf("%c %d\n",ch[t],t*10+10);                
    }  
       
 getchar();

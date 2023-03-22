@@ -6,9 +6,9 @@ int main_bench()
   int i,mark;
   int a1[201],b1[201],c1[201];
   int chang1,chang2,chang3;
-  scanf("%d",&mark);
+  my_scanf("%d",&mark);
   while(mark--){
-  scanf("%s%s",a,b);
+  my_scanf("%s%s",a,b);
   
   memset(a1,0,sizeof(a1));
   memset(b1,0,sizeof(b1));
@@ -30,8 +30,8 @@ int main_bench()
   if (c1[chang3-1] == 0)
     chang3--;
   for ( i = chang3-1; i >= 0 ; i--)
-    printf("%d",c1[i]);
-  printf("\n");
+    my_printf("%d",c1[i]);
+  my_printf("\n");
   }
   return 0;
 }

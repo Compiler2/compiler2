@@ -32,14 +32,14 @@ void passed(int x,int y)
 			else break;
 		}
 	}
-	printf("%d",a[0]);
-	for(i=1;i<x;i++) printf(" %d",a[i]);
-	for(i=0;i<y;i++) printf(" %d",b[i]);
+	my_printf("%d",a[0]);
+	for(i=1;i<x;i++) my_printf(" %d",a[i]);
+	for(i=0;i<y;i++) my_printf(" %d",b[i]);
 }
 int main_bench()
 {
-	scanf("%d %d",&n,&m);
-	for(i=0;i<n;i++) scanf("%d",&a[i]);
-	for(i=0;i<m;i++) scanf("%d",&b[i]);
+	my_scanf("%d %d",&n,&m);
+	for(i=0;i<n;i++) my_scanf("%d",&a[i]);
+	for(i=0;i<m;i++) my_scanf("%d",&b[i]);
 	passed(n,m);
 } 

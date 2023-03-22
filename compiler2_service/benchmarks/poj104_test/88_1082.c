@@ -10,11 +10,11 @@ int main_bench()
 			if(c[i]>47&&c[i]<58){
 				for(j=i;j<=strlen(c);j++){
 					if(c[j]<48||c[j]>57){
-						printf("\n");
+						my_printf("\n");
 						i=j;
 						break;
 					}
-					printf("%c",c[j]);
+					my_printf("%c",c[j]);
 				}
 			}
 		}

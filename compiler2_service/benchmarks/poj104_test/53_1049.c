@@ -7,9 +7,9 @@ int main_bench()
     int n, i, j, k;
 
     
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i=0; i<n; i++) {
-        scanf("%d", &a[i]);
+        my_scanf("%d", &a[i]);
     }
 
     
@@ -30,9 +30,9 @@ int main_bench()
     
     for (i=0; i<k; i++) {
         if (i == 0) {
-            printf("%d", a[i]);
+            my_printf("%d", a[i]);
         } else {
-            printf(",%d", a[i]);
+            my_printf(",%d", a[i]);
         }
     }
     return 0;

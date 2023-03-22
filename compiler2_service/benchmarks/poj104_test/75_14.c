@@ -2,8 +2,8 @@
 
 int main_bench()
 {  int n=0,m,f,i,j=-1,l1,l2;char q[10000],w[10000];int a[1000]={0},b[1000]={0};int c[1000]={0},k,flag=0;
-   scanf("%s",q);
-   scanf("%s",w);
+   my_scanf("%s",q);
+   my_scanf("%s",w);
    l1=strlen(q);l2=strlen(w);
    for(k=0;k<l1;k++)
         for(j=j+1;j<l1;j++)
@@ -46,5 +46,5 @@ int main_bench()
             if(c[j]>i)  i=c[j];
         }
 
-    printf("%d %d",f,i);
+    my_printf("%d %d",f,i);
     }

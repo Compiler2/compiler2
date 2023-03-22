@@ -41,7 +41,7 @@ int main_bench()
                        if(temp>max)
                        max=temp;
     }
-    printf("%d %d",counter,max); 
+    my_printf("%d %d",counter,max); 
     return 0;
 }
     

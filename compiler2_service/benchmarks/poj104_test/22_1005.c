@@ -3,14 +3,14 @@
 int main_bench()
 {
     int a[300],i=1,j,t,q,k,x=1;
-    scanf("%d",&a[0]);
-    while(scanf(",%d",&a[i]))
+    my_scanf("%d",&a[0]);
+    while(my_scanf(",%d",&a[i]))
     {
     i++;
     }
     if(i==1)
     {
-    printf("No");
+    my_printf("No");
     goto end;
     }
     else
@@ -35,12 +35,12 @@ int main_bench()
     else
     if(k==(i-1))
     {
-    printf("No");
+    my_printf("No");
     goto end;
     }
     else
     break;
     }
-    printf("%d",a[x]);
+    my_printf("%d",a[x]);
     end:return 0;
 }

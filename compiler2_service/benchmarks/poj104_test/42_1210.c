@@ -8,10 +8,10 @@ int main_bench()
 	void ahead(int *head,int *tail);
 	void exchange(int *p,int *q);
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
-		scanf("%d",a+i);
-	scanf("%d",&k);
+		my_scanf("%d",a+i);
+	my_scanf("%d",&k);
 
 	for(i=1;i<n;i++){
 		while(*(a+i)==k&&time<=n-i){
@@ -24,13 +24,13 @@ int main_bench()
 	for(i=1;i<=n;i++){
 		if(*(a+i)==k) break;
 		if(first==1){
-			printf("%d",*(a+i));
+			my_printf("%d",*(a+i));
 			first=0;
 		}
-		else printf(" %d",*(a+i));
+		else my_printf(" %d",*(a+i));
 	}
 
-	printf("\n");
+	my_printf("\n");
 }
 
 void exchange(int *p,int *q)

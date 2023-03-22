@@ -6,7 +6,7 @@ int main_bench()
     char p[1000],q[1000];
     int a[128]={0},b[128]={0};
     int i,j,n,m,t=0;
-    scanf("%s%s",p,q);
+    my_scanf("%s%s",p,q);
     n=strlen(p);
     m=strlen(q);
     for(i=0;i<n;i++)
@@ -15,6 +15,6 @@ int main_bench()
        b[q[i]]++;
     for(i=0;i<128;i++)
        if(a[i]!=b[i]) {t=1;break;} 
-    if(t==0) printf("YES\n");
-    else printf("NO\n");
+    if(t==0) my_printf("YES\n");
+    else my_printf("NO\n");
 }

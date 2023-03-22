@@ -6,12 +6,12 @@ int main_bench()
 	char tmp[10];
 	float boy[45],girl[45];
 	float shengao,temp;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=1,j=1,k=1;i<=n;i++)
 	{
-		scanf("%s",tmp);
-		scanf("%f",&shengao);
+		my_scanf("%s",tmp);
+		my_scanf("%f",&shengao);
 		if(tmp[0]=='f')
 		{
 			girl[j]=shengao;
@@ -51,17 +51,17 @@ int main_bench()
 	}
 	for(i=1;i<=boys;i++)
 	{
-		printf("%.2f ",boy[i]);
+		my_printf("%.2f ",boy[i]);
 	}
 	for(i=1;i<=girls;i++)
 	{
 		if(i==girls)
 		{
-			printf("%.2f\n",girl[i]);
+			my_printf("%.2f\n",girl[i]);
 		}
 		else
 		{
-			printf("%.2f ",girl[i]);
+			my_printf("%.2f ",girl[i]);
 		}
 	}
 	return 0;

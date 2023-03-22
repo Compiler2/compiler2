@@ -18,13 +18,13 @@ void fun(char data[])
      {
            if(*(freq + *(data + i) - 'a') == 1)
            {
-                     printf("%c\n", *(data + i));
+                     my_printf("%c\n", *(data + i));
                      count = 1;
                      break;
            }
      }
      if(count == 0)
-     printf("no\n");
+     my_printf("no\n");
 }
              
            
@@ -33,7 +33,7 @@ void fun(char data[])
 int main_bench()
 {
     int n;
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     int i;
     char data[100001];
     for(i = 1; i <= n; i++)

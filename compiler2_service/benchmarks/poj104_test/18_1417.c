@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a[101][101],n;
 	int (*p)[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int nn=n,min,s,i,j,nnn=n;
 	while (nn--)
 	{
@@ -12,7 +12,7 @@ int main_bench()
 		s=0;
 		for (i=0;i<n;i++)
 		for (j=0;j<n;j++)
-		scanf("%d",*(a+i)+j);
+		my_scanf("%d",*(a+i)+j);
 		while (n>1) 
 		{
 		for (i=0;i<n;i++)
@@ -43,6 +43,6 @@ for(i=1;i<n-1;i++){
 		
 		n--;
 		}
-		printf("%d\n",s);
+		my_printf("%d\n",s);
 	}
 } 

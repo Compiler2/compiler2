@@ -19,9 +19,9 @@ dc[n][k]='\0';
 for(i=0;i<n+1;i++){
 len1=strlen(dc[i]);
 if(i!=n&&(len1>0)){
-printf("%d,",len1);
+my_printf("%d,",len1);
 }else if((i==n)&&(len1>0)){
-printf("%d",len1);
+my_printf("%d",len1);
 }
 }
 return 0;

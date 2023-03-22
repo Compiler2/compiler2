@@ -5,10 +5,10 @@ int N;
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	 {scanf("%d",&N);
-	  printf("%d\n",fenjie(N,2));
+	 {my_scanf("%d",&N);
+	  my_printf("%d\n",fenjie(N,2));
 	 }
 	return 0;
 }

@@ -66,17 +66,17 @@ int main_bench()
 	{
 		if(bStartOutput)
 		{
-			printf("%d",shua[k][i]);
+			my_printf("%d",shua[k][i]);
 		}
 		else if(shua[k][i] > 0)
 		{
-			printf("%d",shua[k][i]);
+			my_printf("%d",shua[k][i]);
 			bStartOutput = 1;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	if (!bStartOutput)
-		printf("0\n");
+		my_printf("0\n");
 
 	}
 

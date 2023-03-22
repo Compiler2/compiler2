@@ -7,7 +7,7 @@ int dy[] = {-1, 0, 1, -1, 1, -1, 0, 1};
 
 int main_bench() {
   int a[11][11], b[11][11], m, n, i, j, k;
-  scanf("%d%d", &m, &n);
+  my_scanf("%d%d", &m, &n);
   memset(a, 0, sizeof a);
   a[5][5] = m;
   while (n--) {
@@ -21,8 +21,8 @@ int main_bench() {
     memcpy(a, b, sizeof b);
   }
   for (i = 1; i <= 9; ++i) {
-    for (j = 1; j < 9; ++j) printf("%d ", a[i][j]);
-    printf("%d\n", a[i][9]);
+    for (j = 1; j < 9; ++j) my_printf("%d ", a[i][j]);
+    my_printf("%d\n", a[i][9]);
   }
   return 0;
 }

@@ -24,40 +24,40 @@ int main_bench()
                     n4=n3<n4?n3:n4;
                    
                     if(n1==a)
-                    printf("z %d\n",n1);
+                    my_printf("z %d\n",n1);
                     if(n1==b)
-                    printf("q %d\n",n1);
+                    my_printf("q %d\n",n1);
                     if(n1==c)
-                    printf("s %d\n",n1);
+                    my_printf("s %d\n",n1);
                     if(n1==d)
-                    printf("l %d\n",n1);
+                    my_printf("l %d\n",n1);
                     
                      if(n2==a)
-                    printf("z %d\n",n2);
+                    my_printf("z %d\n",n2);
                     if(n2==b)
-                    printf("q %d\n",n2);
+                    my_printf("q %d\n",n2);
                     if(n2==c)
-                    printf("s %d\n",n2);
+                    my_printf("s %d\n",n2);
                     if(n2==d)
-                    printf("l %d\n",n2);
+                    my_printf("l %d\n",n2);
                     
                      if(n3==a)
-                    printf("z %d\n",n3);
+                    my_printf("z %d\n",n3);
                     if(n3==b)
-                    printf("q %d\n",n3);
+                    my_printf("q %d\n",n3);
                     if(n3==c)
-                    printf("s %d\n",n3);
+                    my_printf("s %d\n",n3);
                     if(n3==d)
-                    printf("l %d\n",n3);
+                    my_printf("l %d\n",n3);
                     
                      if(n4==a)
-                    printf("z %d\n",n4);
+                    my_printf("z %d\n",n4);
                     if(n4==b)
-                    printf("q %d\n",n4);
+                    my_printf("q %d\n",n4);
                     if(n4==c)
-                    printf("s %d\n",n4);
+                    my_printf("s %d\n",n4);
                     if(n4==d)
-                    printf("l %d\n",n4);
+                    my_printf("l %d\n",n4);
                     
                 }
             }

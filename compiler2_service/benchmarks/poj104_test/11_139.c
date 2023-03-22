@@ -12,7 +12,7 @@ int main_bench() {
 	int n = 0;  
 	int i;
 
-	scanf("%d %d %d", &year, &month, &day);
+	my_scanf("%d %d %d", &year, &month, &day);
 
 	
 	for (i = 1; i < month; i++)
@@ -23,6 +23,6 @@ int main_bench() {
 	if (month > 2 && isleapyear(year))
 		n++; 
 	
-	printf("%d\n", n); 
+	my_printf("%d\n", n); 
 	return 0;
 }

@@ -4,14 +4,14 @@
 int main_bench()
 {
     int n,i,score[100000],max1=0,m1=0,max2=0,m2=0,max3=0,m3=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct stu{    
            int No;
            int yw;
            int math;
            }s[100000];              
     for(i=0;i<n;i++){
-                     scanf("%d%d%d",&s[i].No,&s[i].yw,&s[i].math),
+                     my_scanf("%d%d%d",&s[i].No,&s[i].yw,&s[i].math),
                      score[i]=s[i].yw+s[i].math;
                      if(score[i]>max1){
                                        max3=max2;
@@ -35,7 +35,7 @@ int main_bench()
                                         continue;
                                         }
                      }
-    printf("%d %d\n%d %d\n%d %d\n",s[m1].No,max1,s[m2].No,max2,s[m3].No,max3);   
+    my_printf("%d %d\n%d %d\n%d %d\n",s[m1].No,max1,s[m2].No,max2,s[m3].No,max3);   
     
     return 0;
     }

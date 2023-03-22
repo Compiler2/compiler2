@@ -8,13 +8,13 @@ int main_bench()
 	int n,l1,l2;
 	int j,t,h;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{		
 		for(h=0;h<101;h++)
 		a[h]=b[h]=0;
 		int k=1;
-	    scanf("%s%s",A,B);
+	    my_scanf("%s%s",A,B);
 		l1=strlen(A);
 		l2=strlen(B);
 
@@ -40,9 +40,9 @@ int main_bench()
 			  }
 		  }
 		  for(j=k;j<100;j++)
-			  printf("%d",a[j]);
+			  my_printf("%d",a[j]);
 		
-		printf("\n");
+		my_printf("\n");
 	}
 
 

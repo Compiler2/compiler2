@@ -4,7 +4,7 @@
  int main_bench()
  {
 	 int n;
-	 scanf("%d",&n);
+	 my_scanf("%d",&n);
 	 int number=1;      
 	 int primes[100000]; 
 	 int i, j;         
@@ -37,7 +37,7 @@
 			 }
 			 if (primes[p]*primes[p]>k)
 			 {
-				 printf("%d=%d+%d\n",k,primes[l],m);
+				 my_printf("%d=%d+%d\n",k,primes[l],m);
 				 break;
 			 }
 		 }

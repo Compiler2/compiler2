@@ -34,13 +34,13 @@ int main_bench()
 								for(int i=0;i<=3;i++)
 								{
 									if(z==a[i])
-										printf("\nz %d",10*z);
+										my_printf("\nz %d",10*z);
 									if(q==a[i])
-										printf("\nq %d",10*q);
+										my_printf("\nq %d",10*q);
 									if(s==a[i])
-										printf("\ns %d",10*s);
+										my_printf("\ns %d",10*s);
 									if(l==a[i])
-										printf("\nl %d",10*l);
+										my_printf("\nl %d",10*l);
 								}
 							}
 						}

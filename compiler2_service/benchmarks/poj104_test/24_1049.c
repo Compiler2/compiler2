@@ -26,7 +26,7 @@ minstr=p;
 }
 p=strtok(0," ");
 }
-printf("%s\n",maxstr);
-printf("%s\n",minstr);
+my_printf("%s\n",maxstr);
+my_printf("%s\n",minstr);
 return 0;
 }

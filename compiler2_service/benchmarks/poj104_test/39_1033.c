@@ -2,14 +2,14 @@
 
 int main_bench (){
 int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	int sum=0,max=0;
 	char t[30];
 	for(i=0;i<n;i++){
 		char p[30],c,v;
 		int m,k,b,g=0,z=0;
-		scanf("%s %d %d %c %c %d",p,&m,&k,&c,&v,&b);
+		my_scanf("%s %d %d %c %c %d",p,&m,&k,&c,&v,&b);
 		if(m>80&&b>=1) g=g+8000;
 		if(m>85&&k>80) g=g+4000;
 		if(m>90) g=g+2000;
@@ -26,6 +26,6 @@ int n;
 		else max=max;
 		sum=sum+g;
 	}
-	printf("%s\n%d\n%d",t,max,sum);
+	my_printf("%s\n%d\n%d",t,max,sum);
 	return 0;
 }

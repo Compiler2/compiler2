@@ -8,10 +8,10 @@ int x1,y1;
 int x2,y2;
 int k,i;
 int s;              
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(k=0;k<n;k++){
 for(i=0;i<n;i++)
-scanf("%d",&(sz[k][i]));
+my_scanf("%d",&(sz[k][i]));
 }                    
 for(k=0;k<n;k++){
 for(i=0;i<n;i++){
@@ -26,6 +26,6 @@ if (sz[k][i]==0)
 }
 }
 s=(abs(x2-x1)-1)*(abs(y2-y1)-1);  
-printf("%d",s);
+my_printf("%d",s);
 return 0;
 }

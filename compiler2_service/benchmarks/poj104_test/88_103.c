@@ -15,8 +15,8 @@ int main_bench(){
 				e++;
 			}
 			for(i=s;i<=e;i++)
-				printf("%c",a[i]);
-			printf("\n");
+				my_printf("%c",a[i]);
+			my_printf("\n");
 		}
 	}
 	return 0;

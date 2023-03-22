@@ -4,36 +4,36 @@ int main_bench()
 {
 	int n,i,a,b;
 	double z[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a,&b);
+		my_scanf("%d%d",&a,&b);
 		z[i]=(double)b/(double)a;
 	}
 	for(i=1;i<n;i++)
 	{
 		if(z[i]-z[0]>0.05)
 		{
-			printf("better");
+			my_printf("better");
 			if(i!=n-1)
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 		if(z[0]-z[i]>0.05)
 		{
-			printf("worse");
+			my_printf("worse");
 	if(i!=n-1)
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		} 
 		if(z[i]-z[0]<0.05&&z[0]-z[i]<0.05)
 		{
-			printf("same");
+			my_printf("same");
 	if(i!=n-1)
 			{
-				printf("\n");
+				my_printf("\n");
 			}
 		}
 	}

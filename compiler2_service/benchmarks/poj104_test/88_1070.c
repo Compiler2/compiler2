@@ -10,6 +10,6 @@ int main_bench()
          if(a[i]<='9'&&a[i]>='0')
          putchar(a[i]);
          else if(a[i-1]<='9'&&a[i-1]>='0')
-         printf("\n");
+         my_printf("\n");
     }
 } 

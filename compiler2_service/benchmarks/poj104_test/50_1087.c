@@ -4,7 +4,7 @@ int main_bench()
 {
 	int day[13]={0,31,28,31,30,31,30,31,31,30,31,30,31};
 	int n,i,j,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<12;i++)
 	{
 		x=n;
@@ -15,7 +15,7 @@ int main_bench()
 			j++;
 		}
 		x+=12;
-		if(x%7==5)printf("%d\n",i+1);
+		if(x%7==5)my_printf("%d\n",i+1);
 	}
 
 

@@ -10,10 +10,10 @@ int main_bench()
 		int flag;
 	}word1[1000]={0};
     int i,j,n,k,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",word1[i].a);
+		my_scanf("%s",word1[i].a);
 	}
 	for(j=0;j<n;j++)
 	{
@@ -32,12 +32,12 @@ int main_bench()
 	{
 		if(word1[k].flag==0)
 		{
-			printf("%s ",word1[k].a);
+			my_printf("%s ",word1[k].a);
 		}
 		if(word1[k].flag==1)
 		{
-			printf("%s\n",word1[k].a);
+			my_printf("%s\n",word1[k].a);
 		}
 	}
-printf("%s\n",word1[n-1].a);
+my_printf("%s\n",word1[n-1].a);
 }

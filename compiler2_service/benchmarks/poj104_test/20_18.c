@@ -27,17 +27,17 @@ int main_bench()
 		}
 		for (j=0;j<=count;j++)
 		{
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		}
 		for (j=b[i]-3;j<=b[i]-1;j++)
 		{
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		}
 		for (j=count+1;j<b[i]-4;j++)
 		{
-			printf("%c",c[i][j]);
+			my_printf("%c",c[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }
 

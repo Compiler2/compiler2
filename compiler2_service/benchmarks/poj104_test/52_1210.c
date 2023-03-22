@@ -4,18 +4,18 @@ int main_bench()
 {
 	void f(int *p,int n,int m);
 	int n,m,num[100],i;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
     f(num,n,m);
 	for(i=0;i<n;i++)
 	{
 		if(i==0)
-			printf("%d",num[i]);
+			my_printf("%d",num[i]);
 		else
-			printf(" %d",num[i]);
+			my_printf(" %d",num[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
 void f(int *p,int n,int m)
 {

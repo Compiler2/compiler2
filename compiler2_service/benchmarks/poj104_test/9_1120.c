@@ -2,13 +2,13 @@
 
 int main_bench()
 { int n,i,j,k;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   struct p{
          char num[100];
          int age;
          }pa[100],p[100],t;
   for(i=0;i<n;i++)
-  {scanf("%s%d",&pa[i].num,&pa[i].age);}
+  {my_scanf("%s%d",&pa[i].num,&pa[i].age);}
   i=n-1;
   for(j=n-1;j>=0;j--)
   {
@@ -32,7 +32,7 @@ int main_bench()
    }
   }
   for(i=0;i<n;i++)
-  {printf("%s\n",&p[i].num);}
+  {my_printf("%s\n",&p[i].num);}
 return 0;
 
 }

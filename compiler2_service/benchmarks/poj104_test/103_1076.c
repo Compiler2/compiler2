@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[100];
     int n,i,count=1,j=0;
-    scanf("%s",&a);
+    my_scanf("%s",&a);
     while(a[j]!='\0')
     {             
      if(a[j]>='a'&&a[j]<='z') a[j]=a[j]-32; 
@@ -14,6 +14,6 @@ int main_bench()
     {
     if(a[i]==a[i+1])
       count+=1;
-      else {printf("(%c,%d)",a[i],count);count=1;continue;}
+      else {my_printf("(%c,%d)",a[i],count);count=1;continue;}
      }
 }

@@ -4,22 +4,22 @@ int main_bench()
 {
 int n,i,j,e;
 char w[1000][256];
-scanf("%d",&n);
+my_scanf("%d",&n);
 for(i=0;i<n;i++){
-scanf("%s",w[i]);
+my_scanf("%s",w[i]);
 e=strlen(w[i]);
 for(j=0;j<e;j++){
 if(w[i][j]=='A'){
-printf("T");
+my_printf("T");
 }else if(w[i][j]=='T'){
-printf("A");
+my_printf("A");
 }else if(w[i][j]=='C'){
-printf("G");
+my_printf("G");
 }else{
-printf("C");
+my_printf("C");
 }
 }
-printf("\n");
+my_printf("\n");
 }
 return 0;
 }

@@ -7,8 +7,8 @@ int main_bench()
 	char c;
 	for(i=0;i<300;i++,n++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+		my_scanf("%c",&c);
 		if(c!=',') break;
 	}
 	for(i=0;i<n+1;i++)
@@ -25,15 +25,15 @@ int main_bench()
 	}
 	if(n==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	else if(max2==0)
 	{
-		printf("No\n");
+		my_printf("No\n");
 	}
 	else
 	{
-		printf("%d\n",max2);
+		my_printf("%d\n",max2);
 	}
 	return 0;
 }

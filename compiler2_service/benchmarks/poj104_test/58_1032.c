@@ -8,7 +8,7 @@ int main_bench()
 	char string[81];
 	char *p;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(k=1;k<=n;k++){
 	gets(string);
@@ -20,13 +20,13 @@ int main_bench()
 			if((*(p+i)=='_')||(*(p+i)>='a'&&*(p+i)<='z')||(*(p+i)>='A'&&*(p+i)<='Z')||(*(p+i)>='0'&&*(p+i)<='9'));
 			else
 			{
-			printf("0\n");
+			my_printf("0\n");
 			break;}
 		}
 		if(*(p+i)=='\0')
-			printf("1\n");
+			my_printf("1\n");
 	}
 	else 
-		printf("0\n");}
+		my_printf("0\n");}
 	return 0;
 }

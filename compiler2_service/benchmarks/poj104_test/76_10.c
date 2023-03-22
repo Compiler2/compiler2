@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n,a[50000],b[50000],i,j,max=0,min=10000,x,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
-		scanf("%d",&b[i]);
+		my_scanf("%d",&a[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(j=0;j<n;j++)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 	}
 	if(!flag)
 	{
-		printf("no\n");
+		my_printf("no\n");
 	}
 	else
 	{
@@ -54,7 +54,7 @@ int main_bench()
 				max=b[i];
 			}
 		}
-		printf("%d %d\n",min,max);
+		my_printf("%d %d\n",min,max);
 	}
 	return 0;
 }

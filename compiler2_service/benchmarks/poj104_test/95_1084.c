@@ -17,9 +17,9 @@ for(i=0;i<=80;i++)
       if (s2[i]>=65&&s2[i]<=90)
         s2[i]+=32;
     }
-    if (strcmp(s1,s2)==0) printf("=");
-    else if (strcmp(s1,s2)>0) printf(">");
-    else  printf("<");
+    if (strcmp(s1,s2)==0) my_printf("=");
+    else if (strcmp(s1,s2)>0) my_printf(">");
+    else  my_printf("<");
 
 return 0;
 }

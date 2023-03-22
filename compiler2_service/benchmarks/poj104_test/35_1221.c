@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int row,col;
-	scanf("%d,%d",&row,&col);
+	my_scanf("%d,%d",&row,&col);
 	int sz[100][100];
 	int i,j;
 	for(i=0;i<row;i++)
 	{
 		for(j=0;j<col;j++)
 		{
-			scanf("%d",&(sz[i][j]));
+			my_scanf("%d",&(sz[i][j]));
 		}
 	}
 	int m,n,k=0;
@@ -35,14 +35,14 @@ int main_bench()
 			}
 			if(n==0)
 			{
-				printf("%d+%d",i,j);
+				my_printf("%d+%d",i,j);
 				k++;
 			}
 		}
 	}
 	if(k==0)
 	{
-		printf("No");
+		my_printf("No");
 	}
 	return 0;
 }

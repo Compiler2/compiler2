@@ -14,10 +14,10 @@ void bb(int n,int b[300]){
 int main_bench()
 {
 	int n,i,a[200],s=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -25,11 +25,11 @@ int main_bench()
 	}
 	bb(n,a);
 	if((a[0]+a[n-1])*n==2*s)
-	printf("%d,%d",a[0],a[n-1]);
+	my_printf("%d,%d",a[0],a[n-1]);
 	else if((s-n*a[0])>(n*a[n-1]-s))
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 	else
-    printf("%d",a[n-1]);
+    my_printf("%d",a[n-1]);
 	
 }
 

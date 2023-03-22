@@ -2,16 +2,16 @@
 
 int main_bench(){
     int m,n,t,i,j,l,k,sum=0,a[100][100];
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(l=0;l<t;l++){
-        scanf("%d%d",&m,&n);
+        my_scanf("%d%d",&m,&n);
         for(i=0;i<m;i++){
             for(j=0;j<n;j++){
-                scanf("%d",&a[i][j]);
+                my_scanf("%d",&a[i][j]);
                 }
             }
         if(m==n&&n==1){
-            printf("%d",a[0][0]);            
+            my_printf("%d",a[0][0]);            
             }
         else{
              for(j=0;j<n;j++){
@@ -23,12 +23,12 @@ int main_bench(){
                sum+=a[i][n-1];
                }   
              sum=sum-a[0][0]-a[0][n-1]-a[m-1][0]-a[m-1][n-1]; 
-             printf("%d\n",sum);
+             my_printf("%d\n",sum);
             }       
         sum=0;        
         }
        
     
-    scanf("%d",&i);
+    my_scanf("%d",&i);
     return 0;
     }

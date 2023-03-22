@@ -5,9 +5,9 @@ int main_bench()
 	char s[256],a[256],b[256];
 	int l1,i,j,n;
 	int flag;
-	scanf("%s",s);
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",s);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 	l1=strlen(a);
 	for(i=0;s[i]!='\0';i++)
 	{
@@ -24,14 +24,14 @@ int main_bench()
 			if(flag==1)
 			{
 				for(n=0;n<i;n++)
-					printf("%c",s[n]);
-				printf("%s",b);
+					my_printf("%c",s[n]);
+				my_printf("%s",b);
 				for(n=i+l1;s[n]!='\0';n++)
-					printf("%c",s[n]);
+					my_printf("%c",s[n]);
 				return 0;
 			}
 		}
 	}
-	printf("%s",s);
+	my_printf("%s",s);
 	return 0;
 }

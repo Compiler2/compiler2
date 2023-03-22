@@ -4,7 +4,7 @@ int main_bench()
 {
 	char a[6],b[6];
 	int d,i;
-	scanf("%s",a);
+	my_scanf("%s",a);
 	d=strlen(a);
 	for(i=0;i<d;i++)
 	{
@@ -12,6 +12,6 @@ int main_bench()
 		b[d-i-1]=a[i];
 	}
 	b[d]='\0';
-		printf("%s",b);
+		my_printf("%s",b);
 	return 0;
 }

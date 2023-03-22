@@ -4,9 +4,9 @@ int main_bench()
 {
     char y[100],h[100],c[100];
     int i,j,len[3],count=0,k=0,a[100];
-    scanf("%s",&y);
-    scanf("%s",&h);
-    scanf("%s",&c);
+    my_scanf("%s",&y);
+    my_scanf("%s",&h);
+    my_scanf("%s",&c);
     for (i=0;i<strlen(y);i++){
         for (j=0;j<strlen(h);j++){
             if (y[i+j]==h[j]){
@@ -21,16 +21,16 @@ int main_bench()
         count=0;
     }
     if (k==0){
-        printf("%s",y);
+        my_printf("%s",y);
         return 0;
     }
     for (i=0;i<a[1];i++)
-        printf("%c",y[i]);
-        printf("%s",c);
+        my_printf("%c",y[i]);
+        my_printf("%s",c);
         if (i==k)
            return 0;
         for (j=a[1]+strlen(h);j<strlen(y);j++){
-            printf("%c",y[j]);
+            my_printf("%c",y[j]);
         }
     return 0;
 }

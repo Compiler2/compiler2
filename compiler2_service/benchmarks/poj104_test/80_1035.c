@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int y1,y2,m1,m2,d1,d2,i,j,k=0,n,a[12]={31,28,31,30,31,30,31,31,30,31,30,31},b[12]={31,29,31,30,31,30,31,31,30,31,30,31};
-	scanf("%d %d %d",&y1,&m1,&d1);
-	scanf("%d %d %d",&y2,&m2,&d2);
+	my_scanf("%d %d %d",&y1,&m1,&d1);
+	my_scanf("%d %d %d",&y2,&m2,&d2);
 	if(y2==y1)
 	{
 		if(y1%400==0||y1%4==0&&y1%100!=0)
 		{
 			if(m1==m2)
-			    printf("%d",d2-d1);
+			    my_printf("%d",d2-d1);
 			else
 			{
 				if(m1<=2)
@@ -19,7 +19,7 @@ int main_bench()
 					{
 						k+=a[i-1];
 					}
-					printf("%d\n",k+d2+1-d1);
+					my_printf("%d\n",k+d2+1-d1);
 				}
 				else
 				{
@@ -27,21 +27,21 @@ int main_bench()
 					{
 						k+=a[i-1];
 					}
-					printf("%d\n",k+d2+1-d1);
+					my_printf("%d\n",k+d2+1-d1);
 				}
 			}    
 		}
 		else
 		{
 			if(m1==m2)
-			    printf("%d\n",d2-d1);
+			    my_printf("%d\n",d2-d1);
 			else
 			{
 				for(i=m1;i<m2;i++)
 				{
 					k+=b[i-1];
 				}
-				printf("%d\n",k+d2+1-d1);
+				my_printf("%d\n",k+d2+1-d1);
 			}
 		}
 	}
@@ -61,7 +61,7 @@ int main_bench()
 					{
 						k+=b[j-1];
 					}
-					printf("%d\n",k+d2+1-d1);
+					my_printf("%d\n",k+d2+1-d1);
 				}
 			}
 			else if(y2%400==0||y2%4==0&&y2%100!=0)
@@ -72,7 +72,7 @@ int main_bench()
 					{
 						k+=b[i-1];
 					}
-					printf("%d\n",k+d2+1-d1);
+					my_printf("%d\n",k+d2+1-d1);
 				}
 				else
 				{
@@ -84,7 +84,7 @@ int main_bench()
 					{
 						k+=a[i-1];
 					}
-					printf("%d\n",k+d2+1-d1);
+					my_printf("%d\n",k+d2+1-d1);
 				}
 			}
 		}
@@ -109,7 +109,7 @@ int main_bench()
 					{
 						k+=a[j-1];
 					}
-					printf("%d\n",k+d2-d1);
+					my_printf("%d\n",k+d2-d1);
 				}
 				else
 				{
@@ -121,7 +121,7 @@ int main_bench()
 					{
 						k+=b[j-1];
 					}
-					printf("%d\n",k+d2-d1);			
+					my_printf("%d\n",k+d2-d1);			
 				}
 			}
 			else
@@ -136,7 +136,7 @@ int main_bench()
 					{
 						k+=a[j-1];
 					}
-					printf("%d\n",k+d2-d1);
+					my_printf("%d\n",k+d2-d1);
 				}
 				else
 				{
@@ -148,7 +148,7 @@ int main_bench()
 					{
 						k+=a[j-1];
 					}
-					printf("%d\n",k+d2-d1);
+					my_printf("%d\n",k+d2-d1);
 				}
 			}
 		}

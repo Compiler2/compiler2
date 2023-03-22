@@ -80,7 +80,7 @@ int main_bench()
         ans[ok[i]-'A']=i+1;
     }
     for(i=0; i<4; i++)
-        printf("%d ", ans[i]);
-    printf("%d\n", ans[4]);
+        my_printf("%d ", ans[i]);
+    my_printf("%d\n", ans[4]);
     return 0;
 }

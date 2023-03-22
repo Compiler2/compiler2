@@ -5,14 +5,14 @@ int main_bench()
 {
 	int i,j,c,k,r,n,m,max=0,flag,temp,a[1000]={0},b[1000]={0},d[1000]={0};
 	j=1;
-	scanf("%d",&a[0]);
+	my_scanf("%d",&a[0]);
      while(c=getchar()!='\n')
-	 {scanf("%d",&a[j]);j++;}
+	 {my_scanf("%d",&a[j]);j++;}
 	 j=1;
-	 scanf("%d",&b[0]);
+	 my_scanf("%d",&b[0]);
       while(c=getchar()!='\n')
-	  {scanf("%d",&b[j]);j++;}
-     printf("%d ",j);
+	  {my_scanf("%d",&b[j]);j++;}
+     my_printf("%d ",j);
 	
     for(i=0;i<1000;i++)
 		d[i]=0;
@@ -22,5 +22,5 @@ int main_bench()
      
 	 for(i=0;i<1000;i++)
 		 if(max<d[i]) {max=d[i];r=i;}
-		 printf("%d\n",max);
+		 my_printf("%d\n",max);
 }

@@ -37,11 +37,11 @@ int min(int a,int b)
 int main_bench()
 {
       int n,i,a,number;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       for(i=0;i<n;i++)
       {
-      scanf("%d",&a);
+      my_scanf("%d",&a);
       number=f(a,a);
-      printf("%d\n",number);
+      my_printf("%d\n",number);
       }
 }

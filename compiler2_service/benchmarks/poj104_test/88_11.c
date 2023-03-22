@@ -8,15 +8,15 @@ int main_bench()
     l=strlen(str);
     if(str[0]-'0'>=0&&str[0]-'0'<=9)
         {
-            printf("%c",str[0]);
+            my_printf("%c",str[0]);
             for(k=1;;k++)
             {
               if(str[k]-'0'>=0&&str[k]-'0'<=9)
-              printf("%c",str[k]);
+              my_printf("%c",str[k]);
               else
               break;
             }
-            printf("\n");
+            my_printf("\n");
         }
     for(i=0;i<l-1;i++)
     {
@@ -25,13 +25,13 @@ int main_bench()
            for(j=i+1;;j++)
            {
               if(str[j]-'0'<=9&&str[j]-'0'>=0) 
-              printf("%c",str[j]);
+              my_printf("%c",str[j]);
               else if(str[j]==' ')
               break;
               else
               break;
            }
-           printf("\n");
+           my_printf("\n");
         }
     }
     getchar();

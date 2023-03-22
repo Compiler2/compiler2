@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int i,j,M,m,min[120],max[120],n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++){
-		scanf("%d %d",&min[i],&max[i]);
+		my_scanf("%d %d",&min[i],&max[i]);
 	}
 	m=1;
 	int jieguo[120]={0};
@@ -30,7 +30,7 @@ int main_bench()
 			continue;
 		}
 	}
-	printf("%d",M);
+	my_printf("%d",M);
 	return 0;
 }
 

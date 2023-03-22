@@ -31,11 +31,11 @@ void bl(int h[],int s[],int m)
 int main_bench()
 {
 	int r,i,n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int h[26],d[26]={0};
 	for(i=0;i<n;i++)
-		scanf("%d",&h[i]);
+		my_scanf("%d",&h[i]);
 	bl(h,d,n);
 	r=max(d,n);
-	printf("%d",r);
+	my_printf("%d",r);
 }

@@ -6,13 +6,13 @@ int main_bench()
     char c;
     i=0;
     while (c!='\n')
-     {scanf("%d%c",&a[i],&c);
+     {my_scanf("%d%c",&a[i],&c);
      i++;}
      max=a[0];
      for(j=1;j<i;j++)
         {if(a[j]<max&&a[j]>min)min=a[j];
         if(a[j]>max) min=max ,max=a[j];}
-    if(min==-1)printf("No");
-    else printf("%d",min);
+    if(min==-1)my_printf("No");
+    else my_printf("%d",min);
 
 }

@@ -34,9 +34,9 @@ int p(int a,int b,int c)
 int main_bench()
 {
 	int a,b,c,d,e,f,x;
-	scanf("%d %d %d",&a,&b,&c);
-	scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&d,&e,&f);
 	x=p(d,e,f)-p(a,b,c);
-	printf("%d",x);
+	my_printf("%d",x);
 }
 

@@ -4,10 +4,10 @@ int main_bench()
 {
     int a,b,c,d,e;
 	int f[100];
-    scanf("%d",&a);
+    my_scanf("%d",&a);
     for (b=1;b<=a;b++)
 	{
-		scanf("%d",&f[b]);
+		my_scanf("%d",&f[b]);
         if (c<f[b])
 		{
 		    e=c;
@@ -16,7 +16,7 @@ int main_bench()
 		}
 		if ((f[b]>d)&&(f[b]<c)) d=f[b];
 	}
-	printf("%d\n",c);
-	printf("%d\n",d);
+	my_printf("%d\n",c);
+	my_printf("%d\n",d);
 	return 0;
 }

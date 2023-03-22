@@ -3,9 +3,9 @@
 int main_bench() {
          int a[999],b[999],c,i,m,n[999],j;
 		 double s=0;
-		 scanf("%d",&m);
+		 my_scanf("%d",&m);
 		 for(i=0;i<m;i++){
-			 scanf("%d",&n[i]);
+			 my_scanf("%d",&n[i]);
 		 }
 		 a[0]=1;
 		 b[0]=2;
@@ -16,7 +16,7 @@ int main_bench() {
 				 b[j+1]=c;
 				 a[j+1]=b[j];
 		 }
-         printf("%.3lf\n",s);
+         my_printf("%.3lf\n",s);
 		 s=0;}
 		 return 0;
 		 }

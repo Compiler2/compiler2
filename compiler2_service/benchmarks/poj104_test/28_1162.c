@@ -24,6 +24,6 @@ int main_bench()
     b[i]=strlen(a[i]);
     
      for(i=0;i<=p-1;i++)
-     printf("%d,",b[i]);
-     printf("%d",b[p]);
+     my_printf("%d,",b[i]);
+     my_printf("%d",b[p]);
 }

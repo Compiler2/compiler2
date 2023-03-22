@@ -21,10 +21,10 @@ struct point
     char tem[100];
     int count=0;
   
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(int i=0;i<n;i++)
     {
-            scanf("%s%d",sz[i].x,&sz[i].y);
+            my_scanf("%s%d",sz[i].x,&sz[i].y);
     }
     for(int j=0;j<n;j++)
     {
@@ -74,11 +74,11 @@ struct point
     }
     for(int q=0;q<count;q++)
     {
-            printf("%s\n",lnr[q].a);
+            my_printf("%s\n",lnr[q].a);
     }
     for(int r=count;r<n;r++)
     {
-            printf("%s\n",sz[r].x);
+            my_printf("%s\n",sz[r].x);
     }
 return 0;
 }

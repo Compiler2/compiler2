@@ -3,7 +3,7 @@
 int main_bench()
 {
      int i,j,m,flag,n,k,sum;
-     scanf("%d\n",&m);
+     my_scanf("%d\n",&m);
      for(i=3;i<=m;i++)
      {
                       flag=0;
@@ -28,7 +28,7 @@ int main_bench()
                                                     }
                                  }
                                  if(sum==0&&i<=n)
-                                 printf("%d %d\n",i,n);
+                                 my_printf("%d %d\n",i,n);
                       }
      }
      return 0;

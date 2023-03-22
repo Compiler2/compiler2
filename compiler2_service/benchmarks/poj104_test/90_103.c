@@ -4,9 +4,9 @@ int main_bench()
 {
 	int f(int m,int n);
 	int t,m,n;
-	scanf("%d",&t);
-	while(scanf("%d %d",&m,&n)==2)
-		printf("%d\n",f(m,n));
+	my_scanf("%d",&t);
+	while(my_scanf("%d %d",&m,&n)==2)
+		my_printf("%d\n",f(m,n));
 }
 int f(int m,int n)
 {

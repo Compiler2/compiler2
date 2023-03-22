@@ -15,14 +15,14 @@ int main_bench()
     int x,tag=1,i;
     for (i=0;i<6;i++)
     {
-        scanf("%d",&x);
+        my_scanf("%d",&x);
         if (x<0)
         {
-            printf("%d\n",-reverse(-x));
+            my_printf("%d\n",-reverse(-x));
         }
         else
         {
-            printf("%d\n",reverse(x));
+            my_printf("%d\n",reverse(x));
         }
 
     }

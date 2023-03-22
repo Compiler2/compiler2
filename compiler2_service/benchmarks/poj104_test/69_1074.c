@@ -4,8 +4,8 @@ int main_bench()
 {
 	char a[251],b[251],c[251],e;
 	int m,n,i,l,x,j;
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
          m=strlen(b);
 	n=strlen(a);
 	for(i=0;i<n;i++)
@@ -53,7 +53,7 @@ int main_bench()
 				{				    
 					if(j==x)
 					{
-						printf("1");
+						my_printf("1");
 						break;
 					}
 
@@ -73,7 +73,7 @@ int main_bench()
     	
 		for(i=x-1;i>-1;i--)
 		{
-			printf("%c",b[i]+48);
+			my_printf("%c",b[i]+48);
 		}
 	}
 	else
@@ -91,7 +91,7 @@ int main_bench()
 				{				    
 					if(j==x)
 					{
-						printf("1");
+						my_printf("1");
 						break;
 					}
 
@@ -111,7 +111,7 @@ int main_bench()
     	
 		for(i=x-1;i>-1;i--)
 		{
-			printf("%c",a[i]+48);
+			my_printf("%c",a[i]+48);
 		}
 	}	
 	return 0;

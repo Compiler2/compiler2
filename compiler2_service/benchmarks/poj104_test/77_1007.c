@@ -14,7 +14,7 @@ int main_bench()
                  if(s[j]!=s[i])
                     {
                       s[j]=s[i];
-                      printf("%d %d\n",j,i);
+                      my_printf("%d %d\n",j,i);
                        break;
                      }
                 }

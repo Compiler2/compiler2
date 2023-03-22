@@ -27,8 +27,8 @@ int main_bench()
 				{
 					for(h=0;h<i;h++)
 					{
-						if(h==(i-1)) printf("%c\n",x[h]);
-						else printf("%c",x[h]);
+						if(h==(i-1)) my_printf("%c\n",x[h]);
+						else my_printf("%c",x[h]);
 					}
 				}
 			}
@@ -43,8 +43,8 @@ int main_bench()
 				{
 					for(h=0;h<i;h++)
 					{
-                        if(h==(i-1)) printf("%c\n",x[h]);
-						else printf("%c",x[h]);
+                        if(h==(i-1)) my_printf("%c\n",x[h]);
+						else my_printf("%c",x[h]);
 					}
 				}
 			}

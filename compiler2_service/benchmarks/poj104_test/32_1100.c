@@ -4,11 +4,11 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++){
 		char a[101]={'0'},b[101]={'0'};
-		scanf("%s\n%s",a,b);
+		my_scanf("%s\n%s",a,b);
 		int lena,lenb;
 		lena=strlen(a);
 		lenb=strlen(b);
@@ -31,9 +31,9 @@ int main_bench()
 				r=1;
 			}
 		}
-		printf("\n");
-		if(nc[lena-1]!=0)printf("%d",nc[lena-1]);
-		for(curr=lena-2;curr>=0;curr--)printf("%d",nc[curr]);
+		my_printf("\n");
+		if(nc[lena-1]!=0)my_printf("%d",nc[lena-1]);
+		for(curr=lena-2;curr>=0;curr--)my_printf("%d",nc[curr]);
 	}
 	return 0;
 }

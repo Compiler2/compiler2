@@ -12,9 +12,9 @@ int main_bench()
 	p[4]=(int *)calloc(5,sizeof(int));
 	for(i=0;i<5;i++)
 	{
-		scanf("%d %d %d %d %d",p[i]+0,p[i]+1,p[i]+2,p[i]+3,p[i]+4);
+		my_scanf("%d %d %d %d %d",p[i]+0,p[i]+1,p[i]+2,p[i]+3,p[i]+4);
 	}
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
     if(panduan(m,n)==1)
 	{
 		p1=p[m];
@@ -22,12 +22,12 @@ int main_bench()
 		p[n]=p1;
 	   for(i=0;i<5;i++)
 	   {
-			printf("%d %d %d %d %d\n",*(p[i]+0),*(p[i]+1),*(p[i]+2),*(p[i]+3),*(p[i]+4));
+			my_printf("%d %d %d %d %d\n",*(p[i]+0),*(p[i]+1),*(p[i]+2),*(p[i]+3),*(p[i]+4));
 	   }
 	}
 	else
 	{
-		printf("error\n");
+		my_printf("error\n");
 	}
 }
 int panduan(int m,int n)

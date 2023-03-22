@@ -19,11 +19,11 @@ int main_bench()
 		{
 		   for(;s[i]!=' ';i++)
 			  n++;
-		     printf("%d,",n);
+		     my_printf("%d,",n);
 		     n=0;
 		}
 	}
-	printf("%d",j-m);
+	my_printf("%d",j-m);
 	}
-	else printf("%d",j-m+1);
+	else my_printf("%d",j-m+1);
 }

@@ -2,9 +2,9 @@
 
 int main_bench(){
    int i,j=0,t=0,n,k,e,ss[101],sz[101],sz2[101];
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<n;i++){
-       scanf("%d%d",&ss[i],&sz[i]);
+       my_scanf("%d%d",&ss[i],&sz[i]);
    }
    for(i=0;i<n-1;i++){
        if((ss[i]>=90)&&(ss[i]<=140)&&(sz[i]>=60)&&(sz[i]<=90)){
@@ -34,7 +34,7 @@ int main_bench(){
 		   }
 	   }
    }
-  printf("%d",sz2[0]);
+  my_printf("%d",sz2[0]);
 
 return 0;
 }

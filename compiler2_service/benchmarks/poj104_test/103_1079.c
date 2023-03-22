@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[1000];
     int  b=1;
-    scanf("%s",a);
+    my_scanf("%s",a);
     int c=strlen(a),i;
     for(i=0; (a[i]=toupper(a[i]))!=0;i++);
     i=0;
@@ -14,7 +14,7 @@ int main_bench()
           b++  ;   
      else 
      {
-          printf("(%c,%d)",a[i],b);
+          my_printf("(%c,%d)",a[i],b);
      b=1;
      }
      i++;

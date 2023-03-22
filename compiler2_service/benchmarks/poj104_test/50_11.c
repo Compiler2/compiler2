@@ -2,7 +2,7 @@
 
 int main_bench () {
     int w;
-	scanf ("%d", &w);
+	my_scanf ("%d", &w);
 	int a[12];
 	int i;
 	a[0]=13;
@@ -19,7 +19,7 @@ int main_bench () {
 	a[11]=31+28+31+30+31+30+31+31+30+31+30+13;
 		for (i=0; i<12; i++) {
 			if ((a[i]-(8-w))%7 == 5) {
-		printf ("%d\n", i+1);
+		my_printf ("%d\n", i+1);
 			}
 		}
     return 0;

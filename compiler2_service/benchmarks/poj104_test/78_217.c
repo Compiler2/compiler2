@@ -15,10 +15,10 @@ for(z=1;z<6;z++)
   
 
 l=6-a;q=6-b;
-   printf("l %d\n",l*10);
-printf("q %d\n",q*10);
-printf("z %d\n",b*10);
-printf("s %d",a*10);
+   my_printf("l %d\n",l*10);
+my_printf("q %d\n",q*10);
+my_printf("z %d\n",b*10);
+my_printf("s %d",a*10);
 
 	return 0;
 }

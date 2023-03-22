@@ -11,12 +11,12 @@ s[i]=0;
 	
    k=0;
 	
-scanf("%d",&n);
+my_scanf("%d",&n);
 	
 for( i=0;i<n;i++){
 	
 	
-scanf("%d%d",&a[i],&b[i]);
+my_scanf("%d%d",&a[i],&b[i]);
 	
 	
 for(j=0;j<20000;j++){
@@ -82,14 +82,14 @@ y=i/2;
 if(k==0)
 	
 	
-printf("%d %d",x,y);
+my_printf("%d %d",x,y);
 	
 
 	
 else{
 	
 	
-printf("no");
+my_printf("no");
 	
 }
 return 0;

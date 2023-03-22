@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m,n,sum;
 	sum=0;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(m=0;m<=n;m++)
 	{
 		switch(m)
@@ -74,6 +74,6 @@ sum+=m*m;
 break;
 		}
 	}
-	printf("%d", sum);
+	my_printf("%d", sum);
 		return 0;
 }

@@ -9,14 +9,14 @@ int main_bench()
 	int i,j,k;
 	int sum;
 	int a[101][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for (i=0;i<n;i++)
 	{
          for (j=0;j<n;j++)
 		 {
 			 for (k=0;k<n;k++)
 			 {
-			 scanf("%d",&a[j][k]);
+			 my_scanf("%d",&a[j][k]);
 			 }
 		 }
 		 sum=0;
@@ -28,7 +28,7 @@ int main_bench()
 			 xiaojian(a,j);
 			 
 		 }
-		 printf("%d\n",sum);
+		 my_printf("%d\n",sum);
 	}
 
 	return 0;

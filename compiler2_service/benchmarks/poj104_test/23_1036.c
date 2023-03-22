@@ -26,16 +26,16 @@ int main_bench()
 		i=0;
 		while (a[c][i]!='\0')
 		{
-			printf("%c",a[c][i]);
+			my_printf("%c",a[c][i]);
 			i+=1;
 		}
-        printf(" ");
+        my_printf(" ");
 		c-=1;
 	}
 	i=0;
 	while (a[0][i]!='\0')
 	{
-		printf("%c",a[0][i]);
+		my_printf("%c",a[0][i]);
 		i+=1;
 	}
 }

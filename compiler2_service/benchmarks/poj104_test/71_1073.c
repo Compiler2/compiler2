@@ -4,10 +4,10 @@ int main_bench ()
 {
 	int n,i,j,k,l;
 	int a,b[13],c[13];
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (k=1;k<=n;k++)
 	{
-		scanf ("%d%d%d",&a,&i,&j);
+		my_scanf ("%d%d%d",&a,&i,&j);
 		if (i>j)
 		{
 			l=i;
@@ -30,11 +30,11 @@ int main_bench ()
 			b[12]=c[12]=335;
 			if ((c[j]-b[i])%7==0)
 			{
-				printf ("YES\n");
+				my_printf ("YES\n");
 			}
 			else
 			{
-				printf ("NO\n");
+				my_printf ("NO\n");
 			}
 		}
 		else
@@ -53,11 +53,11 @@ int main_bench ()
 			b[12]=c[12]=334;
 			if ((c[j]-b[i])%7==0)
 			{
-				printf ("YES\n");
+				my_printf ("YES\n");
 			}
 			else
 			{
-				printf ("NO\n");
+				my_printf ("NO\n");
 			}
 		}
 	}

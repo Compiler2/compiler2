@@ -5,18 +5,18 @@ int main_bench(){
     int a[105],b[105];
     int e[105];
     int normal=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int i,j=0;
 
     for(i=0;i<n;i++){
-        scanf("%d %d",&a[i],&b[i]);
+        my_scanf("%d %d",&a[i],&b[i]);
         }
     if(n==1){
         if(a[0]>=90&&a[0]<=140&&b[0]>=60&&b[0]<=90){
-           printf("1");
+           my_printf("1");
            return 0;
            }else{
-           printf("0");
+           my_printf("0");
            return 0;
            }
     }
@@ -68,14 +68,14 @@ int main_bench(){
         {
             if(a[i]>=90&&a[i]<=140&&b[i]>=60&&b[i]<=90)
             {
-                printf("1");
+                my_printf("1");
                 return 0;
             }
         }
-        printf("0");
+        my_printf("0");
         return 0;
     }
-    printf("%d",e[j]);
+    my_printf("%d",e[j]);
     return 0;
 
 }

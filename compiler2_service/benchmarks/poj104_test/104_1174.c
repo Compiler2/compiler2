@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[11],b[11],i,j,p;
-	scanf("%d%d",&a[0],&b[0]);
+	my_scanf("%d%d",&a[0],&b[0]);
 	for(i=1;i<=10;i++)
 	{
 		a[i]=a[i-1]/2;
@@ -22,7 +22,7 @@ int main_bench()
 		{
 			if(a[i]==b[j])
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
                 p=1;
 				break;
 			}

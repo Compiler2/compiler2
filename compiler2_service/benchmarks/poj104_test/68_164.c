@@ -4,7 +4,7 @@ int prime(int x);
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a;                                                           
 	for(a=6;a<=n;a=a+2)
 	{
@@ -16,7 +16,7 @@ int main_bench()
 			sq=prime(q);
 			if(sp*sq==1)
 			{
-				printf("%d=%d+%d\n",a,p,q);
+				my_printf("%d=%d+%d\n",a,p,q);
 			    break;
 			}
 			

@@ -2,10 +2,10 @@
 
 int main_bench()
 {int n,a[300],*p,i,j,k;
-scanf("%d",&n);
+my_scanf("%d",&n);
 p=a;
 for(;p<a+n;p++)
-scanf("%d",p);
+my_scanf("%d",p);
 p=a;
 for(i=0;i<n-1;i++)
 {for(j=i+1;j<n;j++)
@@ -15,9 +15,9 @@ for(i=0;i<n-1;i++)
 n=n-1;
 j=j-1;}
 }}
-printf("%d",*p);
+my_printf("%d",*p);
 for(i=1;i<n;i++)
-printf(",%d",*(p+i));
+my_printf(",%d",*(p+i));
 
 return 0;
 }

@@ -23,11 +23,11 @@ int main_bench()
 	for(i=num;i>1;i--)
 	{
 		for (j=beg[i];j<beg[i]+len[i];j++)
-	          printf("%c",s[j]);
-		printf(" ");
+	          my_printf("%c",s[j]);
+		my_printf(" ");
 	}
 	for (j=beg[1];j<beg[1]+len[1];j++)
-	          printf("%c",s[j]);
+	          my_printf("%c",s[j]);
 
 	return 0;
 }

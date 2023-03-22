@@ -25,11 +25,11 @@ int main_bench()
 	if(t!=0)
 	{
 		if(t>0)
-		printf(">");
+		my_printf(">");
 	else 
-		printf("<");
+		my_printf("<");
 	}
 	else
-		printf("=");
+		my_printf("=");
 	return 0;
 }

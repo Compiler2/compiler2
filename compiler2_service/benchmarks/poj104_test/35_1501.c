@@ -3,10 +3,10 @@
 int sz[8][8];
 int main_bench(){
 	int a,b,row,row1,col,e,t,s,m=0;
-	scanf("%d,%d",&a,&b);
+	my_scanf("%d,%d",&a,&b);
 	for(row=0;row<a;row++){
 		for(col=0;col<b;col++){
-			scanf("%d",&sz[row][col]);
+			my_scanf("%d",&sz[row][col]);
 		}
 	}
 	for(row=0;row<a;row++){  
@@ -26,14 +26,14 @@ int main_bench(){
 				break;
 			}
 			else if(row1==a-1){
-				printf("%d+%d",s,t);
+				my_printf("%d+%d",s,t);
 				m=1;
 			}
 		}
 		if(m==1)
 			break;
 		else if(m==0 && row==a-1)
-			printf("No");
+			my_printf("No");
 	}
 	return 0;
 }

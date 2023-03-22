@@ -29,11 +29,11 @@ int main_bench()
 		words[i][j]='\0';
 	}
 	len[0]=strlen (words[0]);
-	printf ("%d",len[0]);
+	my_printf ("%d",len[0]);
 	for (i=1;i<n;i++)
 	{
 		len[i]=strlen (words[i]);
-		printf (",%d",len[i]);
+		my_printf (",%d",len[i]);
 	}
 	return 0;
 }

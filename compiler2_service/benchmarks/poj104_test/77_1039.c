@@ -38,5 +38,5 @@ int main_bench(){
 		}
 	}
 	for(k=0;k<i;k++)
-		printf("%d %d\n",t[k][0],t[k][1]);
+		my_printf("%d %d\n",t[k][0],t[k][1]);
 }

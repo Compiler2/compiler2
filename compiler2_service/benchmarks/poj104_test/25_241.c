@@ -3,12 +3,12 @@
 int main_bench ()
 {
 	int m=1,n,i,c=0,sz[1000],p,j,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n<=30){
 	    for(i=0;i<n;i++){
 			m*=2;
 		}
-	printf("%d",m);
+	my_printf("%d",m);
 	}
 	else{
 		sz[0]=4;
@@ -44,7 +44,7 @@ int main_bench ()
 		}
 
 		for(i=p-1;i>=0;i--){
-			printf("%d",sz[i]);
+			my_printf("%d",sz[i]);
 		}
 	}
 		

@@ -11,8 +11,8 @@ int main_bench()
 	for(i=1;i<l-1;i++)
 		if(a[i]==c)
 			b[j++]=i;
-		else printf("%d %d\n",b[--j],i);
-	printf("0 %d",l-1);
+		else my_printf("%d %d\n",b[--j],i);
+	my_printf("0 %d",l-1);
 
 	return 0;
 }

@@ -21,9 +21,9 @@ int main_bench()
 	for(i=0;i<k;i++)
 	{
 		if(i==0)
-			printf("%d",b[i]);
+			my_printf("%d",b[i]);
 		else
-			printf("\n%d",b[i]);
+			my_printf("\n%d",b[i]);
 	}
 	
 	return 0;

@@ -6,9 +6,9 @@ int max[100]={0};
 int main_bench()
 {
     int i,j,c;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     for(i=1;i<=n;i++)
     {
         if(i==1)
@@ -32,5 +32,5 @@ int main_bench()
         if(c<max[i])
             c=max[i];
     }
-    printf("%d",c);
+    my_printf("%d",c);
    }

@@ -2,7 +2,7 @@
 
 int main_bench(){
 int n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 getchar();
 for (int i=1;i<=n;i++)
 {
@@ -14,7 +14,7 @@ for (int j=1;j<len;j++)
 {
 flag&=(s[j]=='_'||(s[j]>='a'&&s[j]<='z')||(s[j]>='A'&&s[j]<='Z')||(s[j]>='0'&&s[j]<='9'));
 }
-printf("%d\n",flag);
+my_printf("%d\n",flag);
 }
 getchar();getchar();getchar();
 }

@@ -6,11 +6,11 @@ int n1,n2;
 void scan()
 {
     int i;
-    scanf("%d%d",&n1,&n2);
+    my_scanf("%d%d",&n1,&n2);
     for(i=0;i<n1;i++)
-    scanf("%d",&shuzu1[i]);
+    my_scanf("%d",&shuzu1[i]);
     for(i=0;i<n2;i++)
-    scanf("%d",&shuzu2[i]);
+    my_scanf("%d",&shuzu2[i]);
 }
 void paixu(int shuzu[],int n)
 {
@@ -32,10 +32,10 @@ void hebing(int shuzu1[],int shuzu2[],int n1,int n2)
 {
     int i;
     for(i=0;i<n1;i++)
-    printf("%d ",shuzu1[i]);
+    my_printf("%d ",shuzu1[i]);
     for(i=0;i<n2-1;i++)
-    printf("%d ",shuzu2[i]);
-    printf("%d",shuzu2[i]);
+    my_printf("%d ",shuzu2[i]);
+    my_printf("%d",shuzu2[i]);
 }
 int main_bench()
 {

@@ -4,20 +4,20 @@
 int main_bench()
 {
 	int n,m,i,j;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 
 	int *x;
 	x=(int *)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d",x+i);
+		my_scanf("%d",x+i);
 	}
 	if(m==0){
 		for(i=0;i<n;i++){
 			if(i==n-1){
-			printf("%d",*(x+i));
+			my_printf("%d",*(x+i));
 			break;
 			}
-		printf("%d ",*(x+i));
+		my_printf("%d ",*(x+i));
 		}
 		return 0;
 	}
@@ -33,10 +33,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++){
 		if(i==n-1){
-			printf("%d",*(x+i));
+			my_printf("%d",*(x+i));
 			break;
 		}
-		printf("%d ",*(x+i));
+		my_printf("%d ",*(x+i));
 	}
 
 	free(x);

@@ -4,9 +4,9 @@ int main_bench()
 {
  char string[257],sub[257],re[257];
  char out[257]={'\0'};
- scanf("%s",string);
- scanf("%s",sub);
- scanf("%s",re);
+ my_scanf("%s",string);
+ my_scanf("%s",sub);
+ my_scanf("%s",re);
  int i,k=0,len,m=0;
  len=strlen(sub);
  int len2=strlen(re);
@@ -32,9 +32,9 @@ int main_bench()
                      if(j>i-k&&j<=i-k+len2) {out[j]=re[m];m+=1;}
                      else {out[j]=string[i+1];i++;}      
                             }         
-                     printf("%s",out);        
+                     my_printf("%s",out);        
                              }
                     else
-                    printf("%s",string);
+                    my_printf("%s",string);
                                  
       }

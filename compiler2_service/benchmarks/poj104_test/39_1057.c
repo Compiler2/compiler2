@@ -3,7 +3,7 @@
 int main_bench()
 {
   int n,e,f,h,j,k,max=0,l=0,s=0,i;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   struct xinxi{
       char name[50];
       int qc;
@@ -14,7 +14,7 @@ int main_bench()
   }a[100];
   int score[100]={0};
   for(i=0;i<n;i++){
-     scanf("%s %d %d %c %c %d",&a[i].name,&a[i].qc,&a[i].bc,&a[i].g,&a[i].w,&a[i].ls);
+     my_scanf("%s %d %d %c %c %d",&a[i].name,&a[i].qc,&a[i].bc,&a[i].g,&a[i].w,&a[i].ls);
       e=f=h=j=k=0;
      if(a[i].qc>80 && a[i].ls>=1)
           e=8000;
@@ -33,9 +33,9 @@ int main_bench()
   }
   for(i=0;i<n;i++){
     if(max==score[i]){
-     printf("%s\n",a[i].name);
-     printf("%d\n",max);
-     printf("%d\n",s);
+     my_printf("%s\n",a[i].name);
+     my_printf("%d\n",max);
+     my_printf("%d\n",s);
      l++;
     }
     if(l>0)

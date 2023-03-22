@@ -7,16 +7,16 @@ int main_bench()
 	char c;
 	while(1)
 	{
-		scanf("%d%c",&a[s],&c);
+		my_scanf("%d%c",&a[s],&c);
 		s+=1;
 		if(c!=',')
 			break;
 	}
-	printf("\n");
+	my_printf("\n");
 	s=0;
 	while(1)
 	{
-		scanf("%d%c",&b[s],&c);
+		my_scanf("%d%c",&b[s],&c);
 		s+=1;
 		if(c!=',')
 			break;
@@ -37,7 +37,7 @@ int main_bench()
 	}
 
 
-	printf("%d %d",s,ma);
+	my_printf("%d %d",s,ma);
 
 }
 

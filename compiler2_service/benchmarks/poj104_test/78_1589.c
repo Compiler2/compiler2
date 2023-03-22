@@ -103,6 +103,6 @@ else
      }
     }
   }
-printf("%c %d\n%c %d\n%c %d\n%c %d",n[4],m[0],n[5],m[1],n[6],m[2],n[7],m[3]);
+my_printf("%c %d\n%c %d\n%c %d\n%c %d",n[4],m[0],n[5],m[1],n[6],m[2],n[7],m[3]);
 return 0;
 }

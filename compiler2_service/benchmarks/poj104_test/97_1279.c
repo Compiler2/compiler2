@@ -4,9 +4,9 @@ int main_bench()
 {
 	int t;
 	int bai,ws,es,shi,wu,yi;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	bai=t/100;
-	printf("%d\n",bai);
+	my_printf("%d\n",bai);
 	if(t-bai*100>=50)
 	{
 		ws=1;
@@ -15,7 +15,7 @@ int main_bench()
 	{
 		ws=0;
 	}
-	printf("%d\n",ws);
+	my_printf("%d\n",ws);
 	if((t-bai*100-ws*50)>=40)
 	{
 	    es=2;
@@ -28,7 +28,7 @@ int main_bench()
 	{
 		es=0;
 	}
-	printf("%d\n",es);
+	my_printf("%d\n",es);
 	if((t-bai*100-ws*50-es*20)>=10)
 	{
 	    shi=1;
@@ -37,7 +37,7 @@ int main_bench()
 	{
 		shi=0;
 	}
-	printf("%d\n",shi);
+	my_printf("%d\n",shi);
 	if((t-bai*100-ws*50-es*20-shi*10)>=5)
 	{
 	    wu=1;
@@ -46,7 +46,7 @@ int main_bench()
 	{
 		wu=0;
 	}
-	printf("%d\n",wu);
+	my_printf("%d\n",wu);
 	if((t-bai*100-ws*50-es*20-shi*10-wu*5)>0)
 	{
 	    yi=(t-bai*100-ws*50-es*20-shi*10-wu*5);
@@ -55,7 +55,7 @@ int main_bench()
 	{
 		yi=0;
 	}
-	printf("%d\n",yi);
+	my_printf("%d\n",yi);
 
 	return 0;
 }

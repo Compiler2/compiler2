@@ -12,10 +12,10 @@ int main_bench()
 		int lw;
 	}a[100];
 	int n,b[100]={0},t=0,i,max;
-	scanf ("%d",&n);
+	my_scanf ("%d",&n);
 	for (i=0;i<n;i++)
 	{
-		scanf ("%s %d %d %c %c %d",a[i].name,&a[i].qm,&a[i].bj,&a[i].gb,&a[i].xb,&a[i].lw);
+		my_scanf ("%s %d %d %c %c %d",a[i].name,&a[i].qm,&a[i].bj,&a[i].gb,&a[i].xb,&a[i].lw);
 		if (a[i].qm>80&&a[i].lw>0) b[i]=b[i]+8000;
 		if (a[i].qm>85&&a[i].bj>80) b[i]=b[i]+4000;
 		if (a[i].qm>90) b[i]=b[i]+2000;
@@ -28,7 +28,7 @@ int main_bench()
 		t=t+b[i];
 		if (b[i]>b[max]) max=i;
 	}
-	printf ("%s\n",a[max].name);
-	printf ("%d\n",b[max]);
-	printf ("%d\n",t);
+	my_printf ("%s\n",a[max].name);
+	my_printf ("%d\n",b[max]);
+	my_printf ("%d\n",t);
 }

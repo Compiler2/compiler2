@@ -9,9 +9,9 @@ int main_bench(){
 	int a=2;
 	int b=1;
 	int e;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&q[i]);
+		my_scanf("%d",&q[i]);
 		s[i]=0;
 		a=2;
 		b=1;
@@ -23,7 +23,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-	    printf("%.3lf\n",s[i]);
+	    my_printf("%.3lf\n",s[i]);
 	}
 	return 0;
 }

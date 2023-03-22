@@ -4,17 +4,17 @@ int main_bench()
 {
 	int n,m,sum,*q;
 	float *w,sum2=0,gpa;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	q=(int*)malloc(sizeof(int)*n);
 	w=(float*)malloc(sizeof(float)*n);
     for(m=0,sum=0;m<n;m++)
 	{ 	
-		scanf("%d",q+m);
+		my_scanf("%d",q+m);
 		sum=sum+*(q+m);
 	} 
 	for(m=0;m<n;m++)
 	{
-		scanf("%f",w+m);
+		my_scanf("%f",w+m);
 		if(*(w+m)<=100&&*(w+m)>=90)	sum2=sum2+4.0**(q+m); 
 		else if(*(w+m)<=89&&*(w+m)>=85)	sum2=sum2+3.7**(q+m); 
 		else if(*(w+m)<=84&&*(w+m)>=82)	sum2=sum2+3.3**(q+m);
@@ -27,6 +27,6 @@ int main_bench()
 		else if(*(w+m)<=59)	sum2=sum2+0.0**(q+m); 
 	} 
 	gpa=sum2/sum;
-	printf("%.2f",gpa);
+	my_printf("%.2f",gpa);
 	return;
 }

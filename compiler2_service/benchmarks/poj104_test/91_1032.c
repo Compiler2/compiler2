@@ -7,5 +7,5 @@ int main_bench()
 	gets(a);
 	n=strlen(a);
 	for(i=0;i<n;i++)
-		printf("%c",a[i]+a[(i+1)%n]);
+		my_printf("%c",a[i]+a[(i+1)%n]);
 }

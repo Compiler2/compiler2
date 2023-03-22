@@ -20,9 +20,9 @@ int main_bench(){
 			}else{
 				bl[j]='A';
 			}
-			printf("%c",bl[j]);
+			my_printf("%c",bl[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

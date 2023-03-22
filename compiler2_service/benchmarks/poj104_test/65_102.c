@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,a=0,c;
 	int b[200][2];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<2;j++){
-			scanf("%d",&b[i][j]);
+			my_scanf("%d",&b[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -20,10 +20,10 @@ int main_bench()
 				a=a+1;
 	}
 	if(a==0)
-		printf("Tie");
+		my_printf("Tie");
 	if(a>0)
-		printf("A");
+		my_printf("A");
 	if(a<0)
-		printf("B");
+		my_printf("B");
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 { 
 int count[26]={0},t=0,j,k=0; 
 char i,str[300],*ps,zf[26]; 
-scanf("%s",str); 
+my_scanf("%s",str); 
 for(ps=str;*ps!='\0';ps++) 
 { 
 	if(*ps>='a'&&*ps<='z'){ 
@@ -19,11 +19,11 @@ for(ps=str;*ps!='\0';ps++)
 } 
 for(j=0;j<26;j++){ 
 	if(count[j]!=0){ 
-		printf("%c=%d\n",zf[j],count[j]); 
+		my_printf("%c=%d\n",zf[j],count[j]); 
 		k+=1; 
 	} 
 } 
 if(k==0) 
-printf("No"); 
+my_printf("No"); 
 return 0; 
 } 

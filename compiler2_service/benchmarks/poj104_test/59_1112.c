@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,m,i,j,a,s,tj[102][102];
 	char zf[102][102];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	getchar();
 	for(i=0;i<n;i++){
 		gets(zf[i]);
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	s=0;
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -57,7 +57,7 @@ int main_bench()
 	}
 		a++;
 	}
-	printf("%d",s);
+	my_printf("%d",s);
 	return 0;
 }
 	

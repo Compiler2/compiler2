@@ -3,7 +3,7 @@
 int main_bench()
 {
     int startYear,startMonth,startDay,endYear,endMonth,endDay,i,j,a,b,c=0,d,m,n,x,y,sum;
-    scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);
+    my_scanf("%d%d%d%d%d%d",&startYear,&startMonth,&startDay,&endYear,&endMonth,&endDay);
     a=endYear-startYear;
     sum=365*a;
     for(b=startYear;b<endYear;b++)
@@ -40,5 +40,5 @@ int main_bench()
     if(endMonth==10){y=31+m+31+30+31+62+30+30+startDay;}if(endMonth==11){y=31+m+31+30+31+62+61+30+endDay;}
     if(endMonth==12){y=31+m+31+30+31+62+61+30+30+endDay;}} 
     sum=sum+y;
-    printf("%d",sum);
+    my_printf("%d",sum);
     return 0;}

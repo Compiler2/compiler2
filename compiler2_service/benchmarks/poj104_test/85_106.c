@@ -3,13 +3,13 @@
 int main_bench()
 {   int n,i,j,k;
     char p[21];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s",p);
+		my_scanf("%s",p);
 	 if(p[0]>='0'&&p[0]<='9')
 	 {
-		 printf("no\n");
+		 my_printf("no\n");
 	 }
 	 else
 	 {
@@ -18,9 +18,9 @@ int main_bench()
          k++;	
 	 }
 	 if(j==k)
-		 printf("yes\n");
+		 my_printf("yes\n");
 	 else
-		 printf("no\n");
+		 my_printf("no\n");
 	}
 	}
 	return 0;

@@ -13,10 +13,11 @@ parser.add_argument(
 if __name__ == '__main__':
     args = parser.parse_args()
 
-    breakpoint()
+    # breakpoint()
 
-    for name in os.listdir(args.path):
-        file_path = args.path + '/' + name
+    files_path = [ args.path ] if args.path.endswith('.c') else [args.path + '/' + name for name in os.listdir(args.path)]
+
+    for file_path in files_path:
         
         if file_path.endswith(".c"):
             print(file_path)

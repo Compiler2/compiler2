@@ -11,7 +11,7 @@ int main_bench()
 			b[i1][i2]=0;
 		}
 	}
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	a[4][4]=m;
 	b[4][4]=m;
 	for (i=0;i<n;i++)
@@ -60,9 +60,9 @@ int main_bench()
 		for (i2=0;i2<9;i2++)
 		{
 			if (i2!=8)
-				printf("%d ", a[i1][i2]);
+				my_printf("%d ", a[i1][i2]);
 			else
-				printf("%d\n", a[i1][i2]);
+				my_printf("%d\n", a[i1][i2]);
 		}
 	}
 	return 0;

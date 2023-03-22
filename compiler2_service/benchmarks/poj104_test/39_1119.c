@@ -9,11 +9,11 @@ int main_bench()
 	char s[2], w[2];
     int a, b, c;
 	int n, sum[100], sum1=0, i, f=-1, g=0, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	
 	for(i=0;i<n;i++)
 	{
-	  scanf("%s%d%d%s%s%d", name[i], &a, &b, s, w, &c);
+	  my_scanf("%s%d%d%s%s%d", name[i], &a, &b, s, w, &c);
 	  
 
          sum[i] = 0;
@@ -53,8 +53,8 @@ int main_bench()
 		}
 		
 	}
-	printf("%s\n", name[g]);
-	printf("%d\n", f); 
-    printf("%d\n", sum1);
+	my_printf("%s\n", name[g]);
+	my_printf("%d\n", f); 
+    my_printf("%d\n", sum1);
     return 0;
 }

@@ -57,13 +57,13 @@ int h(int n)
 }
 int main_bench()
 {
-	scanf("%d",&N);
+	my_scanf("%d",&N);
 	for(int j=0;j<N;j++)
 	{
 		for(int i=0;i<N;i++)
 			for(int j=0;j<N;j++)
-				scanf("%d",&Matrix[i][j]);
-		printf("%d\n",h(N));
+				my_scanf("%d",&Matrix[i][j]);
+		my_printf("%d\n",h(N));
 	}
 	return 0;
 }

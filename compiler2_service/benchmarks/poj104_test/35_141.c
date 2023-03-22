@@ -10,17 +10,17 @@ int andian(int x,int y)
 	if(t[x][y]>t[i][y])
 		j++;
 	if(j==0)
-	{printf("%d+%d",x,y);
+	{my_printf("%d+%d",x,y);
 	return 1;
 	}
 	else return 0;
 }
 int main_bench()
 { int c,d=0,r,i,j;
-	scanf("%d,%d",&a,&b);
+	my_scanf("%d,%d",&a,&b);
 	for(i=0;i<=a-1;i++)
 	{for(j=0;j<=b-1;j++)
-	scanf("%d",&t[i][j]);
+	my_scanf("%d",&t[i][j]);
 	}
 	for(i=0;i<=a-1;i++)
 	{for(j=0;j<=b-1;j++)
@@ -28,6 +28,6 @@ int main_bench()
 	}
 	}
 	if(d==0)
-		printf("No");
+		my_printf("No");
 
 }

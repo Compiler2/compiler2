@@ -9,7 +9,7 @@ int main_bench()
    int i;
    int k=0;
 
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i=0;i<3;i++)
    {
       if(n%(2*i+3)==0)
@@ -21,10 +21,10 @@ int main_bench()
    {
       if(n%(2*i+3)==0)
       {
-         printf("%d",(2*i+3));
+         my_printf("%d",(2*i+3));
          if(k>1)
          {
-            printf(" ");
+            my_printf(" ");
             k--;
          }
       }
@@ -32,7 +32,7 @@ int main_bench()
    }
    if(k==0)
    {
-      printf("n");
+      my_printf("n");
    }
    return 0;
 

@@ -4,11 +4,11 @@ int fun(int x);
 int main_bench()
 {
     int i,n,a[20];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
-    scanf("%d",&a[i]);
+    my_scanf("%d",&a[i]);
     for(i=0;i<n;i++)
-    printf("%d\n",fun(a[i]));
+    my_printf("%d\n",fun(a[i]));
     return 0;
 }
 int fun(int x)

@@ -18,6 +18,6 @@ int main_bench()
 		}
 	}
 	for(i=1,q=a;i<=t;i++,q++)
-		printf("%d\n",*q);
+		my_printf("%d\n",*q);
 	return 0;
 }

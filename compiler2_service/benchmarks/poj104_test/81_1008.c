@@ -8,9 +8,9 @@ int f(int n,int m)
 int main_bench()
 {
   int a[5][5],b[5],*p,*q,i,j,n,m;
-  for(i=0;i<5;i++) for(j=0;j<5;j++) scanf("%d",&a[i][j]);
-  scanf("%d %d",&n,&m);
-  if(f(n,m)==0) printf("error");
+  for(i=0;i<5;i++) for(j=0;j<5;j++) my_scanf("%d",&a[i][j]);
+  my_scanf("%d %d",&n,&m);
+  if(f(n,m)==0) my_printf("error");
   else
   {
     q=b;
@@ -33,8 +33,8 @@ int main_bench()
     }
     for(i=0;i<5;i++) 
     {
-      for(j=0;j<4;j++) printf("%d ",a[i][j]);
-      printf("%d\n",a[i][4]);
+      for(j=0;j<4;j++) my_printf("%d ",a[i][j]);
+      my_printf("%d\n",a[i][4]);
     }
   }
 }

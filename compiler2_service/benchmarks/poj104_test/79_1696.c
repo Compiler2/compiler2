@@ -16,8 +16,8 @@ int main_bench()
     int i,m,n;
     for(i=1;;i++)
     {
-          scanf("%d %d",&n,&m);
-          if(m!=0) printf("%d\n",f(m,n));
+          my_scanf("%d %d",&n,&m);
+          if(m!=0) my_printf("%d\n",f(m,n));
           else     break;
     }
  

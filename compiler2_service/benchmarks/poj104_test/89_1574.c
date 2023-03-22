@@ -5,9 +5,9 @@ int main_bench()
 	int a[10000][2];
 	int n,i;
 	memset(a,0,sizeof(a));
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int b,c,f;
-	while(scanf("%d %d",&b,&c))
+	while(my_scanf("%d %d",&b,&c))
 	{
 		if(b==0&&c==0)
 			break;
@@ -20,9 +20,9 @@ int main_bench()
 		if(a[i][0]==0&&a[i][1]==n-1)
 		{
 			f=1;
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 		}
 	}
 	if(f==0)
-		printf("NOT FOUND\n");
+		my_printf("NOT FOUND\n");
 }

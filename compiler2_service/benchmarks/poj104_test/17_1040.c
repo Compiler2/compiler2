@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while(n>0)
 	{
 		char s[104],start=0;
@@ -27,12 +27,12 @@ if(s[j]==')')
 	   for(i=0;i<len;i++)
 	   {
 		  if(s[i]=='(')
-			  printf("$");
+			  my_printf("$");
 		 else if(s[i]==')')
-			  printf("?");
-		  else printf(" ");
+			  my_printf("?");
+		  else my_printf(" ");
 	   }
-	   printf("\n");
+	   my_printf("\n");
 		n--;
 	}
 }

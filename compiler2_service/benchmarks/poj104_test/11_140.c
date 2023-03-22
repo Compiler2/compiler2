@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int year,month,day;
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	int i;
 	
 	if(year%4==0||year%100==0){
@@ -28,7 +28,7 @@ int main_bench(){
 		}
 	}
 	
-	printf("%d",i);
+	my_printf("%d",i);
 
 
 

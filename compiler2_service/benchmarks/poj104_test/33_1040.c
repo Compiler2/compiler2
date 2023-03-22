@@ -2,12 +2,12 @@
 
 int main_bench(){
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char a[1000][256];
 	int b[1000];
 	int i,j;
 	for(i=0;i<n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	for(i=0;i<n;i++){
 		b[i]=strlen(a[i]);
@@ -26,7 +26,7 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n;i++){
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 	}
 	return 0;
 }

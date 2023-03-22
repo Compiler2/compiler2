@@ -16,9 +16,9 @@ int main_bench()
 	a=0;
 	b=0;
 	c=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
+		my_scanf("%d%d%d",&stu[i].num,&stu[i].chinese,&stu[i].math);
 		stu[i].all=stu[i].chinese+stu[i].math;
 	}
 	for(i=0;i<=n-1;i++){
@@ -39,8 +39,8 @@ int main_bench()
 			c=i;
 		}
 	}
-	printf("%d %d\n",stu[a].num,stu[a].all);
-	printf("%d %d\n",stu[b].num,stu[b].all);
-	printf("%d %d\n",stu[c].num,stu[c].all);
+	my_printf("%d %d\n",stu[a].num,stu[a].all);
+	my_printf("%d %d\n",stu[b].num,stu[b].all);
+	my_printf("%d %d\n",stu[c].num,stu[c].all);
 	return 0;
 }

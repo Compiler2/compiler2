@@ -4,7 +4,7 @@
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	struct book{
 		int booknumber;
 		char writer[27];
@@ -12,7 +12,7 @@ int main_bench()
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&book[i].booknumber,book[i].writer);
+		my_scanf("%d %s",&book[i].booknumber,book[i].writer);
 	}
 	int writerbookquantity[26];
 	for(i=0;i<26;i++)writerbookquantity[i]=0;
@@ -35,14 +35,14 @@ int main_bench()
 		   maxwriter=i;
 	   }
 	}
-	printf("%c\n%d\n",(char)(maxwriter+'A'),writerbookquantity[maxwriter]);
+	my_printf("%c\n%d\n",(char)(maxwriter+'A'),writerbookquantity[maxwriter]);
     for(i=0;i<n;i++)
 	{
 		len=strlen(book[i].writer);
 		for(j=0;j<len;j++)
 		{
             if((int)book[i].writer[j]==maxwriter+'A')
-				printf("%d\n",book[i].booknumber);
+				my_printf("%d\n",book[i].booknumber);
 
 		}
 	}

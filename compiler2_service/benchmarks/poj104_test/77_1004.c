@@ -32,7 +32,7 @@ for(i=0;i<e;i++)
                   f=f+s[d];   
                if(f==u+v)
                {
-               printf("%d %d\n",a[i]-j,a[i]);
+               my_printf("%d %d\n",a[i]-j,a[i]);
                s[a[i]-j]=0;
                s[a[i]]=0;
                }

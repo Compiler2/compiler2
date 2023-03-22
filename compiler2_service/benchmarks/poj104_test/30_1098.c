@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,A, S, i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	S=0;
 	for(i=1;i<=n;i++)
 	{
@@ -12,6 +12,6 @@ int main_bench()
 		else
 			A=0, S=S+A;
 	}
-	printf("%d", S);
+	my_printf("%d", S);
 	return 0;
 }

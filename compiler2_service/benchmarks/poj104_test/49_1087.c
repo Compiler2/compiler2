@@ -25,6 +25,6 @@ int main_bench()
 		for(k=0;s==0&&k<501;k++)
 		s=c1[k]-c2[k];
 		if(s==0)
-		printf("%s\n",c1);
+		my_printf("%s\n",c1);
 		}
 }

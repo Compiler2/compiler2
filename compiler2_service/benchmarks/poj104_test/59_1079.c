@@ -5,15 +5,15 @@ int main_bench(){
     int num[10006][2];
     char room[106][106];
     memset(room,'\0',sizeof(room));
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     getchar();
     for (int i=0;i<n;i++){
          for(int j=0;j<n;j++){
-         scanf("%c",&room[i][j]);
+         my_scanf("%c",&room[i][j]);
          }
          getchar();
     }
-    scanf("%d",&m);
+    my_scanf("%d",&m);
     for (int d=2;d<=m;d++){
          memset(num,0, sizeof (num));
          a=0;
@@ -62,6 +62,6 @@ int main_bench(){
          }
          }
     }
-    printf("%d",sum);
+    my_printf("%d",sum);
 return 0;
 }

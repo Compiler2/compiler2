@@ -80,7 +80,7 @@ int main_bench()
                                                if(d==1)
                                                continue;
                                                }
-                                           printf("%d %d %d %d %d\n",a,b,c,d,e);
+                                           my_printf("%d %d %d %d %d\n",a,b,c,d,e);
                           }
                    }
             }

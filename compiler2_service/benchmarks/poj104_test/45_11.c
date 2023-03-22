@@ -4,7 +4,7 @@ int main_bench()
 {
 	int k,i,i1,n;
 	char a[51]={0},b[51]={0};
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	k=strlen(a);
 	n=strlen(b);
 	for (i=0;i<n;i++)
@@ -24,7 +24,7 @@ int main_bench()
 		}
 		if (l==k-1)
 		{
-			printf("%d",i);
+			my_printf("%d",i);
 			break;
 		}
 

@@ -31,14 +31,14 @@ void f2(int a[][100],int k)
 int main_bench()
 {
 	int n,z,k;
-	scanf("%d",&n);k=n;
+	my_scanf("%d",&n);k=n;
 	for(z=0;z<n;z++)
 	{
 		int i,j,sum=0;
 		int a[100][100];
 		for(i=0;i<n;i++)
 		{
-			for(j=0;j<n;j++)  scanf("%d",&a[i][j]);
+			for(j=0;j<n;j++)  my_scanf("%d",&a[i][j]);
 		}
 		k=n;
 		for(k;k>1;k--)
@@ -47,7 +47,7 @@ int main_bench()
 			sum+=a[1][1];
 			f2(a,k);
 		}
-		printf("%d\n",sum);
+		my_printf("%d\n",sum);
 	}
 	return 0;
 }

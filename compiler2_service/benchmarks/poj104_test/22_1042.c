@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[300],i=0,n,max,second;
 	char c;
-	scanf("%d%c",&a[i],&c);
+	my_scanf("%d%c",&a[i],&c);
 	while(c==',')
-		scanf("%d%c",&a[++i],&c);
+		my_scanf("%d%c",&a[++i],&c);
 	n=i+1;
 	max=a[0];
 	second=-10000;
@@ -21,7 +21,7 @@ int main_bench()
 			second=a[i];
 	}
 	if(second==-10000)
-		printf("No");
+		my_printf("No");
 	else
-		printf("%d",second);
+		my_printf("%d",second);
 }

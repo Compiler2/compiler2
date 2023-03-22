@@ -5,7 +5,7 @@
 int main_bench()
 {
 	int x[10]={0},y[10]={0},i,j,indicator=0;
-	scanf("%d%d",&x[0],&y[0]);
+	my_scanf("%d%d",&x[0],&y[0]);
 	for(i=0;;i++){
 		if(x[i]==1)break;
 		if(x[i]%2==0) x[i+1]=x[i]/2;
@@ -20,7 +20,7 @@ int main_bench()
 		if(x[i]!=0)
 		for(j=0;j<10;j++){
 			if((y[j]!=0)&&(x[i]==y[j])){
-				printf("\n%d",x[i]);
+				my_printf("\n%d",x[i]);
 				indicator=1;
 			}
 			if(indicator==1)break;

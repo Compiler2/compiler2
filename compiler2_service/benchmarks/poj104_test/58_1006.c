@@ -10,28 +10,28 @@ int main_bench()
 {
 	int n,i,j,length;
 	char s[81];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(s);
 	for(i=0 ; i<n ; i++){
 		emp(s);
 		gets(s);
 		length = strlen(s);
 		if( length == 1){
-			printf("%d\n",( judgeletter(*s) || judgeline(*s) ) );
+			my_printf("%d\n",( judgeletter(*s) || judgeline(*s) ) );
 			continue;
 		}else{
 			if( ( judgeletter(*s) || judgeline(*s) ) == 0 ){
-				printf("0\n");
+				my_printf("0\n");
 				continue;
 			}else{
 				for(j=1 ; *(s+j) ; j++){
 					if( ( judgeletter(*(s+j)) || judgeline(*(s+j)) || judgenum(*(s+j)) ) == 0 ){
-						printf("0\n");
+						my_printf("0\n");
 						break;
 					}
 				}
 				if( j==length )
-					printf("1\n");
+					my_printf("1\n");
 			}
 		}
 	}

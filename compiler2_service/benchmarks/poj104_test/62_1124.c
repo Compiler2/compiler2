@@ -18,7 +18,7 @@ int main_bench (){
 		}
 		
 	}
-	printf("%s",b);
+	my_printf("%s",b);
 
 	return 0;
 }

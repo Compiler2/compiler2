@@ -3,7 +3,7 @@
 int main_bench()
 {
      char a[1001],b[1001];
-     scanf("%s %s",a,b);
+     my_scanf("%s %s",a,b);
      int x1[26]={0};
      int x2[26]={0};
      int s1[26]={0};
@@ -12,7 +12,7 @@ int main_bench()
      a1=strlen(a);
      b1=strlen(b);
      if(a1!=b1)
-     printf("NO");
+     my_printf("NO");
      else
      {for(int i=0;i<a1;i++)
      {
@@ -40,9 +40,9 @@ int main_bench()
              }
      }
      if(count==0)
-     printf("YES");
+     my_printf("YES");
      else
-     printf("NO");
+     my_printf("NO");
      }
 }
      

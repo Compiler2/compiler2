@@ -40,7 +40,7 @@ int main_bench()
                   else
                      if (re[i]==1&&p[i]!=1&&p[i]!=2) cor--;
                 
-                if (cor==2&&time==0) {printf("%d %d %d %d %d\n",a,b,c,d,e);time++;}
+                if (cor==2&&time==0) {my_printf("%d %d %d %d %d\n",a,b,c,d,e);time++;}
                }
            }
 }

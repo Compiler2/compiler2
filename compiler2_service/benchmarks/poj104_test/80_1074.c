@@ -4,7 +4,7 @@ int main_bench()
 {
 	int a,b,c,d,e,f,m,n,i,h;
 	int day1,day2,day3,day;
-	scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
+	my_scanf("%d %d %d\n%d %d %d",&a,&b,&c,&d,&e,&f);
 	if((a%4==0&&a%100!=0)||(a%400==0))
 		m=1;
 	else
@@ -72,6 +72,6 @@ int main_bench()
 		day2=-day2;
 	day3=f-c;
 	day=day1+day2+day3;
-	printf("%d\n",day);
+	my_printf("%d\n",day);
 	return 0;
 }

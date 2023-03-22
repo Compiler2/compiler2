@@ -5,7 +5,7 @@ int main_bench()
       int r=0,n,i=0,j=0,x=0,y=0,z[1000];
       char a[1000];
       
-      scanf("%s",a);
+      my_scanf("%s",a);
       n=strlen(a);
       
       for(i=0;i<n;i++)
@@ -28,7 +28,7 @@ int main_bench()
             z[x]++;
            else 
            {
-            printf("(%c,%d)",a[x],z[x]);
+            my_printf("(%c,%d)",a[x],z[x]);
             break;
            }    
          }  

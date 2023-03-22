@@ -3,12 +3,12 @@
 double Q(int x);
 int main_bench(){
 int m,p[100],i;
-scanf("%d",&m);
+my_scanf("%d",&m);
 for(i=1;i<=m;i++){
-scanf("%d",&p[i]);
+my_scanf("%d",&p[i]);
 }
 for(i=1;i<=m;i++){
-printf("%.3lf\n",Q(p[i]));
+my_printf("%.3lf\n",Q(p[i]));
 }
 return 0;
 }

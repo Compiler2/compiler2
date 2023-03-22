@@ -6,10 +6,10 @@ int main_bench(){
     int i, j, k;
     char map[200][200];
     char map_temp[200][200];
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (i = 0; i < n; ++ i)
-        scanf("%s", &map[i]);
-    scanf("%d", &m);
+        my_scanf("%s", &map[i]);
+    my_scanf("%d", &m);
     
     for (k = 1; k < m; ++ k)
     {
@@ -35,6 +35,6 @@ int main_bench(){
             if (map[i][j] == '@')
                ++ tot;
     
-    printf("%d\n", tot);
+    my_printf("%d\n", tot);
     return 0;
 }

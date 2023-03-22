@@ -4,9 +4,9 @@ int main_bench()
 {
     int apple (int n,int k);
     int N,K,M;
-    scanf("%d %d",&N,&K);
+    my_scanf("%d %d",&N,&K);
     M=apple(N,K);
-    printf("%d",M);
+    my_printf("%d",M);
     return 0;
 }
 

@@ -12,14 +12,14 @@ int main_bench()
  int banji[10000],sum=0,s=0;
  int sol[10000];
  char yes[10]={'Y'};
- scanf("%d",&n);
+ my_scanf("%d",&n);
  for(i=0;i<n;i++)
  {sol[i]=0;
  g[i]=1;
  w[i]=1;}
  for(i=0;i<n;i++)
  {
-  scanf("%s%d%d%s%s%d",&name[i],&qime[i],&banji[i],&ganbu[i],&west[i],&e[i]);
+  my_scanf("%s%d%d%s%s%d",&name[i],&qime[i],&banji[i],&ganbu[i],&west[i],&e[i]);
   
   g[i]=strcmp(ganbu[i],yes);
   
@@ -51,7 +51,7 @@ int main_bench()
   strcpy(str,name[i]);}
   sum+=sol[i];
  }
- printf("%s\n%d\n%d\n",str,s,sum);
+ my_printf("%s\n%d\n%d\n",str,s,sum);
  return 0;
 
 }

@@ -4,11 +4,11 @@ int main_bench()
 {
 	int l1,l2,i,s1=0,s2=0;
   char a[300],b[300];
-  scanf("%s %s",a,b);
+  my_scanf("%s %s",a,b);
   l1=strlen(a);
   l2=strlen(b);
   if(l1!=l2)
-	  printf("NO");
+	  my_printf("NO");
   else
   {
 	  for(i=0;i<l1;i++)
@@ -17,9 +17,9 @@ int main_bench()
 	      s2+=b[i];
 	  }
 	  if(s1==s2)
-		  printf("YES");
+		  my_printf("YES");
 	  else
-	  printf("NO");
+	  my_printf("NO");
   }
 
 }

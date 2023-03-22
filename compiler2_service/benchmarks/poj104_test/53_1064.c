@@ -5,11 +5,11 @@ int main_bench(){
 	int sz[300];
 	int nsz[300];
 	int i,j,w=1,flag=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d",&sz[i]);
+		my_scanf("%d",&sz[i]);
 	}
-	printf("%d",sz[0]);
+	my_printf("%d",sz[0]);
 	nsz[0]=sz[0];
 	for(i=1;i<n;i++){
 		for(j=0;j<w;j++){
@@ -21,7 +21,7 @@ int main_bench(){
 		if(flag==0){
 			nsz[w]=sz[i];
 			w++;
-			printf(",%d",sz[i]);
+			my_printf(",%d",sz[i]);
 		}
 		flag=0;
 	}

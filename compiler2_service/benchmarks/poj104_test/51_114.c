@@ -7,8 +7,8 @@ int main_bench()
 	char c[500];
 	char d[500][500];
 	char kongbai[500]={'0'};
-	scanf("%d",&n);
-	scanf("%s",c);
+	my_scanf("%d",&n);
+	my_scanf("%s",c);
 	for(i=0;i<strlen(c)-n+1;i++){
 		for(j=0;j<n;j++){
 			d[i][j]=c[i+j];
@@ -30,17 +30,17 @@ int main_bench()
 		}
 	}
 	if(max==1){
-		printf("NO");
+		my_printf("NO");
 	}
 	else{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for(i=0;i<strlen(c)-n+1;i++){
 			if(sum[i]==max){
 				puts(d[i]);
 			}
 		}
 	}
-printf("\n");
+my_printf("\n");
 	return 0;
 }
 

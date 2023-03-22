@@ -9,8 +9,8 @@ int main_bench()
     int i;
     int from;
     int to;
-    scanf("%d", &n);
-    while (scanf("%d %d", &from, &to) && (from || to)) {
+    my_scanf("%d", &n);
+    while (my_scanf("%d %d", &from, &to) && (from || to)) {
         a[from] = -1;
         if (a[to] != -1) {
             a[to] += 1;
@@ -18,12 +18,12 @@ int main_bench()
     }
     for (i = 0; i < n; i++) {
         if (a[i] == n - 1) {
-            printf("%d\n", i);
+            my_printf("%d\n", i);
             break;
         }
     }
     if (i == n) {
-        printf("NOT FOUND\n");
+        my_printf("NOT FOUND\n");
     }
     return 0;
 }

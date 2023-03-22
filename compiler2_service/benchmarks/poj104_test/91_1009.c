@@ -8,9 +8,9 @@ int main_bench()
 	len=strlen(s);
 	for(i=0;i<len-1;i++){
 		s1[i]=s[i]+s[i+1];
-		printf("%c",s1[i]);
+		my_printf("%c",s1[i]);
 	}
-	printf("%c",s[0]+s[len-1]);
+	my_printf("%c",s[0]+s[len-1]);
 	return 0;
 }
 

@@ -10,12 +10,12 @@ n=strlen(a);
        {
         if((*p)==' ')
              { for(t=p+1;(*t)!='\0';t++)
-               printf("%c",*t);
-               printf(" ");
+               my_printf("%c",*t);
+               my_printf(" ");
                *p='\0';
                 p--;}
         else p--;}
 p=a;
-printf("%s",p);
+my_printf("%s",p);
 }
       

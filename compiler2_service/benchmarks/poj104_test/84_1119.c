@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int sum,x,y,k,i,a;
-	scanf("%d\n%d%d",&sum,&x,&y);
+	my_scanf("%d\n%d%d",&sum,&x,&y);
 		for(i=1;i<sum-1;i++)
 		{
-			scanf("%d",&k);
+			my_scanf("%d",&k);
 			if(x>k)
 			{
                 a=k;
@@ -34,5 +34,5 @@ int main_bench()
 				}
 			}
 		}
-		printf("%d\n%d\n",x,y);
+		my_printf("%d\n%d\n",x,y);
 }

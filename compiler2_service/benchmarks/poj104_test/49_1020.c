@@ -17,8 +17,8 @@ int main_bench()
 				n=0;
 				for(;n<=2*j+1;n++)
 				{
-					printf("%c",a[i-j+n]);}
-				printf("\n");
+					my_printf("%c",a[i-j+n]);}
+				my_printf("\n");
 			}
 			else
 				continue;

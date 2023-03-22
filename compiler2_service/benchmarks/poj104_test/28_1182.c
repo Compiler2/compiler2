@@ -27,7 +27,7 @@ int main_bench()
 	}
 	if (a[n]==0) l=1;
 	else l=0;
-	for(i=0;i<n-l;i++) printf("%d,",a[i]);
-	printf("%d",a[n-l]-1);
+	for(i=0;i<n-l;i++) my_printf("%d,",a[i]);
+	my_printf("%d",a[n-l]-1);
 }
 			

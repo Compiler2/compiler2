@@ -4,7 +4,7 @@ int num_f (int x);
 int main_bench ()
 {
 	int num, a, b, t;
-	scanf ("%d", &num);
+	my_scanf ("%d", &num);
 	for (t=6; t<=num; )
 	{
 		for (a=3; a<=t/2; )
@@ -12,7 +12,7 @@ int main_bench ()
 				b = t - a;
 				if (num_f(a)==1&&num_f(b)==1)
 				{
-					printf ("%d=%d+%d\n", t, a, b);
+					my_printf ("%d=%d+%d\n", t, a, b);
 					t+=2;
 					break;
 				}

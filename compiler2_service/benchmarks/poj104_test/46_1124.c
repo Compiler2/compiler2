@@ -2,10 +2,10 @@
 
  int main_bench(){
  int b[100][100],Row,Col,n,i,k,l,row,col,s=0;
- scanf("%d %d",&Row,&Col);
+ my_scanf("%d %d",&Row,&Col);
  for(row=0;row<Row;row++){
     for(col=0;col<Col;col++){
-     scanf("%d",&b[row][col]);
+     my_scanf("%d",&b[row][col]);
                             }
                       }
 for(i=1;s<Row*Col;i=i+1){
@@ -15,19 +15,19 @@ for(i=1;s<Row*Col;i=i+1){
  s=0;
  for(k=1;k<=n;k++){
     for(l=k-1;l<=Col-k&&s!=Row*Col;l++){
-       printf("%d\n",b[k-1][l]);
+       my_printf("%d\n",b[k-1][l]);
         s=s+1;
                            }
     for(l=k;l<=Row-k&&s!=Row*Col;l++){
-        printf("%d\n",b[l][Col-k]);
+        my_printf("%d\n",b[l][Col-k]);
         s=s+1;
                           }
    for(l=Col-k-1;l>=k-1&&s!=Row*Col;l--){ 
-       printf("%d\n",b[Row-k][l]);
+       my_printf("%d\n",b[Row-k][l]);
        s=s+1;
                             }
    for(l=Row-k-1;l>=k&&s!=Row*Col;l--){
-     printf("%d\n",b[l][k-1]);
+     my_printf("%d\n",b[l][k-1]);
      s=s+1;
                            }
        }

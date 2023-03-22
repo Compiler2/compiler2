@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i,x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n>1)
 	{
 	  do{
@@ -11,22 +11,22 @@ int main_bench()
 		{
 			x=0;
 			x=3*n+1;
-			printf("%d*3+1=%d\n",n,x);
+			my_printf("%d*3+1=%d\n",n,x);
 			n=x;
 		}
 		else if(n%2==0)
 		{
 			y=0;
 			y=n/2;
-			printf("%d/2=%d\n",n,y);
+			my_printf("%d/2=%d\n",n,y);
 			n=y;
 		}
 	}while(n>1);
-	printf("End");
+	my_printf("End");
 	}
 	else if(n=1)
 	{
-	printf("End");
+	my_printf("End");
 	}
 	return 0;
 }

@@ -6,8 +6,8 @@ int main_bench()
     int f(int y);
     int g(int y,int m,int d);
     int y1,y2,m1,m2,d1,d2,x=0,i;
-    scanf("%d%d%d",&y1,&m1,&d1);
-    scanf("%d%d%d",&y2,&m2,&d2);
+    my_scanf("%d%d%d",&y1,&m1,&d1);
+    my_scanf("%d%d%d",&y2,&m2,&d2);
     x=g(y2,m2,d2)-g(y1,m1,d1);
     if (y1!=y2) 
     {for(i=y1;i<=y2-1;i++)
@@ -15,7 +15,7 @@ int main_bench()
          x+=(365+f(i));
      }
     } 
-    printf("%d",x);	
+    my_printf("%d",x);	
     return 0;
 }
 int f(int y)

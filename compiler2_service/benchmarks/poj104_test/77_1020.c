@@ -19,7 +19,7 @@ int main_bench()
 		  }
           if(kid[i]!=kid[j])
 		  {
-			  printf("%d %d\n",j,i);
+			  my_printf("%d %d\n",j,i);
 			  kid[i]='0';
 			  kid[j]='0';
 		  }

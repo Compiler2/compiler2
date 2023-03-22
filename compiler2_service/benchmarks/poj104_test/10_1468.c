@@ -3,12 +3,12 @@
 int main_bench()
 {
     int k;
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     int*a=(int*)malloc(k*sizeof(int));
     int i;
     for(i=0;i<k;i++)
     {
-                    scanf("%d",&a[i]); 
+                    my_scanf("%d",&a[i]); 
     } 
     int*b=(int*)malloc(k*sizeof(int));
     for (i=0; i<k; i++) 
@@ -24,5 +24,5 @@ int main_bench()
    for (int i=1; i<k; i++)
 	 {if (b[i] > max) max=b[i]; }
 	
-    printf("%d",max);
+    my_printf("%d",max);
 }

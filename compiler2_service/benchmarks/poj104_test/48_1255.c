@@ -7,7 +7,7 @@ int main_bench()
 	int a[9][9],b[9][9];
 	int i,j,k,x,y;
 
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	memset(a,0,sizeof(a));
 	a[4][4]=m;
 
@@ -33,8 +33,8 @@ int main_bench()
 
 	for(i=0;i<9;i++)
 	{
-		for(j=0;j<8;j++){printf("%d ",a[i][j]);}
-		printf("%d\n",a[i][8]);
+		for(j=0;j<8;j++){my_printf("%d ",a[i][j]);}
+		my_printf("%d\n",a[i][8]);
 	}
 	return 0;
 }

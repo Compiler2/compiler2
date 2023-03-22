@@ -28,17 +28,17 @@ int main_bench()
     int n,i,max,j;
     int l1,l2;
     char m;
-   scanf("%d",&n);
+   my_scanf("%d",&n);
    for(i = 1;i <= n;i ++)
       {
-           scanf("%s",a);
+           my_scanf("%s",a);
            l1 = strlen(a); 
-           scanf("%c",&m);
+           my_scanf("%c",&m);
            for(j = 0;j < l1;j ++)
               b[l1-j-1] = a[j] - '0';
              memset(a,0,sizeof(a));
-           scanf("%s",a);
-           scanf("%c",&m);
+           my_scanf("%s",a);
+           my_scanf("%c",&m);
             l2 = strlen(a); 
            for(j = 0;j < l2;j ++)
               c[l2-j-1] = a[j] - '0';
@@ -46,8 +46,8 @@ int main_bench()
           while(!b[l1-1])
              l1--;  
         for(j = l1 - 1;j>=0;j --)
-           printf("%d",b[j]);   
-        printf("\n");
+           my_printf("%d",b[j]);   
+        my_printf("\n");
       }
   
    

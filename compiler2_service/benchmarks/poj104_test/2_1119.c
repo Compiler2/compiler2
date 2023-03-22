@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[1000]={0},b[1000]={0},c[100]={0},l=0;
 	char s[1000][100]={0},m[26]={0},p;
 	int i=0,j=0,k=0,t=0;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d %s",&a[i],s[i]);
+		my_scanf("%d %s",&a[i],s[i]);
 	}
 	for(i='A';i<='Z';i++)
 	{
@@ -36,8 +36,8 @@ int main_bench()
 			p=m[i];
 		}
 	}
-	printf("%c\n",p);
-	printf("%d\n",l);
+	my_printf("%c\n",p);
+	my_printf("%d\n",l);
 	for(i=0;i<n;i++)
 	{
 		k=0;
@@ -51,7 +51,7 @@ int main_bench()
 		}
 		if(k==1)
 		{
-			printf("%d\n",a[i]);
+			my_printf("%d\n",a[i]);
 		}
 	}
 	return 0;

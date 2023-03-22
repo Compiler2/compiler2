@@ -4,7 +4,7 @@ int main_bench()
 {
     char a[1000],b[10];
     int num[10]={1,1,1,1,1,1,1,1,1,1};
-    scanf("%s",&a);
+    my_scanf("%s",&a);
     int i=0;
     while (a[i]!='\0')
     {
@@ -27,7 +27,7 @@ int main_bench()
         break;
     }
     for (int i=0;i<=j-1;i++)
-    printf("(%c,%d)",b[i],num[i]);
-    printf("\n");
+    my_printf("(%c,%d)",b[i],num[i]);
+    my_printf("\n");
 
 }

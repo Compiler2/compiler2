@@ -4,7 +4,7 @@ int main_bench()
 {
       int n,i,j,k,count,mz;
       char a[200]={'\0'},b[200];
-scanf("%d\n",&n);
+my_scanf("%d\n",&n);
       for(i=0;i<n;i++)
       {
                       count=0;
@@ -41,13 +41,13 @@ scanf("%d\n",&n);
                       {
                                           if(b[j]==')')b[j]='?';
                       }
-                      for(j=0;j<count;j++)printf("%c",a[j]);
-                      printf("\n");
+                      for(j=0;j<count;j++)my_printf("%c",a[j]);
+                      my_printf("\n");
                       for(j=0;j<count;j++)
                       {
-                                          if(b[j]!='$' && b[j]!='?')printf(" ");
-                                          else printf("%c",b[j]);
+                                          if(b[j]!='$' && b[j]!='?')my_printf(" ");
+                                          else my_printf("%c",b[j]);
                       }
-printf("\n");
+my_printf("\n");
       }
       }

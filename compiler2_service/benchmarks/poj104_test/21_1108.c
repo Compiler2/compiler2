@@ -4,9 +4,9 @@ int main_bench()
 {
 	int a[300],i,j,k,n,t,b[300];
 	double aver,c,max,sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
-		{scanf("%d",&a[i]);
+		{my_scanf("%d",&a[i]);
 		sum=sum+a[i];}
 	aver=sum/n;
 		max=fabs(a[0]-aver);
@@ -27,8 +27,8 @@ int main_bench()
 			{t=b[i];b[i]=b[i+1];b[i+1]=t;}
 		}
 	}
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;i<j;i++)
-				printf(",%d",b[i]);
+				my_printf(",%d",b[i]);
 			return 0;
 }

@@ -27,14 +27,14 @@ int main_bench()
                  continue;
                else
                {
-                   printf("0\n");
+                   my_printf("0\n");
                    break; 
                }     
            }
-           if(i==strlen(s)) printf("1\n");
+           if(i==strlen(s)) my_printf("1\n");
                                       
        }   
-       else printf("0\n");
+       else my_printf("0\n");
     }
     getchar();
     getchar();

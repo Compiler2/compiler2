@@ -7,15 +7,15 @@ int main_bench()
 	char c[2002];
 	for(i=0,t=0;;i++)
 	{
-		scanf("%d%c",&a[i],&c[i]);
+		my_scanf("%d%c",&a[i],&c[i]);
 		t++;
 		if(c[i]!=',')
 			break;
 	}
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	for(i=1;i<=t-1;i++)
 	{
-		scanf(",%d",&b[i]);
+		my_scanf(",%d",&b[i]);
 	}
 	for(i=0;i<=1000;i++)
 	{
@@ -37,6 +37,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d",t,k[0]);
+	my_printf("%d %d",t,k[0]);
 	return 0;
 }

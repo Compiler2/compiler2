@@ -21,7 +21,7 @@ for(j=2;j<=strlen(a);j=j+2)
       if(b==0)
        {
         for(k=i;k<=i+j-1;k++)
-        printf("%c",a[k]);
+        my_printf("%c",a[k]);
         putchar('\n');
         }
      }

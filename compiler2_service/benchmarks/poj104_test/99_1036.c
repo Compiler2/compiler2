@@ -10,9 +10,9 @@ int main_bench()
 	double g,h,j,k;
 	int num;
 	int i=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	while(i<=n){
-		scanf("%d",&num);
+		my_scanf("%d",&num);
 		if(num<19){
 			a++;
 		}else if(num<36){
@@ -28,6 +28,6 @@ int main_bench()
 		h=1.0*b/n*100;
 		j=1.0*c/n*100;
 		k=1.0*d/n*100;
-	printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",g,h,j,k);
+	my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",g,h,j,k);
 	return 0;
 }

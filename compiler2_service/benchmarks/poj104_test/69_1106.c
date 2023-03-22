@@ -12,7 +12,7 @@ int main_bench()
 	int a[100000] ={0}, b[100000] = {0};
 	char s1[100000], s2[1000000];
 	
-	scanf("%s%s",s1,s2);
+	my_scanf("%s%s",s1,s2);
 	
 	int len1 = 0, len2 = 0;
 	len1 = strlen(s1);
@@ -43,11 +43,11 @@ int main_bench()
 			tag = 1;
 		if (tag == 1)
 		{
-			printf("%d",a[i]);
+			my_printf("%d",a[i]);
 		}
 		if (tag == 0 && i == 0)
-			printf("0");
+			my_printf("0");
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

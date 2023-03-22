@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,a[300],b[300]={0},i,j,k,c,x,z=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",(a+i));
+		my_scanf("%d",(a+i));
 	for(x=0;x<n;x++)
 	{
 		for(j=0;j<n;j++)
@@ -32,11 +32,11 @@ int main_bench()
 		}
 	}
 	if(n==1)
-		printf("%d",*b);
+		my_printf("%d",*b);
 	else
 	{
 		for(i=0;i<j-1;i++)
-			printf("%d,",*(b+i));
-		printf("%d\n",*(b+j-1));
+			my_printf("%d,",*(b+i));
+		my_printf("%d\n",*(b+j-1));
 	}
 }

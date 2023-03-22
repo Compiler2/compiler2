@@ -2,10 +2,10 @@
 
 int main_bench(){
 	double k;
-	scanf("%lf",&k);
+	my_scanf("%lf",&k);
 	char qian[501];
 	char hou[501];
-	scanf("%s%s",&qian,&hou);
+	my_scanf("%s%s",&qian,&hou);
 
 	int i,s=0;
 	if(strlen(qian)!=strlen(hou)){
@@ -18,7 +18,7 @@ int main_bench(){
 		}
 	}
 	if(s==1){
-		printf("error");
+		my_printf("error");
 	}else if(s==0){
 		for(i=0;i<strlen(qian);i++){
 			if(qian[i]==hou[i]){
@@ -26,9 +26,9 @@ int main_bench(){
 			}
 		}
 		if(1.0*m/strlen(qian)>k){
-			printf("yes");
+			my_printf("yes");
 		}else if(1.0*m/strlen(qian)<=k){
-			printf("no");
+			my_printf("no");
 		}
 	}
 	return 0;

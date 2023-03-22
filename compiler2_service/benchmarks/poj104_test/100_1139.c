@@ -1259,7 +1259,7 @@ int main_bench()
 {
 	char A[302];
 	int i,n,k,j;
-	scanf("%s",&A);
+	my_scanf("%s",&A);
 	k=0;
 	j=0;
 	for(n='a';n<='z';n++)
@@ -1273,13 +1273,13 @@ int main_bench()
 
 if(k!=0)
 		{
-			printf("%c=%d\n",n,k);
+			my_printf("%c=%d\n",n,k);
 			j++;
 		}
 	
 	}
 	if(j==0)
-		printf("No\n");
+		my_printf("No\n");
 
 	return 0;
 }

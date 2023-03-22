@@ -9,10 +9,10 @@ int main_bench()
 {
 	int a[100],i,n,m;
 	struct n *p;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -26,8 +26,8 @@ int main_bench()
 	p=&num[n-m];
 	for(i=0;i<n-1;i++)
 	{
-		printf("%d ",p->pi);
+		my_printf("%d ",p->pi);
 		p=p->next;
 	}
-	printf("%d\n",p->pi);
+	my_printf("%d\n",p->pi);
 }

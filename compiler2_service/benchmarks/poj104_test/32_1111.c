@@ -6,10 +6,10 @@ int main_bench()
 	void minus(char a[999],char b[999]);
 	char a[999],b[999];
 	int n,i,z;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%s%s",a,b);
+		my_scanf("%s%s",a,b);
 		minus(a,b);
 	}
 }
@@ -37,8 +37,8 @@ void minus(char a[999],char b[999])
     	else break;
     }
     for(w=w;w<=x-y-1;w++)
-    printf("%c",a[w]);
+    my_printf("%c",a[w]);
     for(w=x-y;w<=x-1;w++)
-    printf("%d",a[w]);
-    printf("\n");
+    my_printf("%d",a[w]);
+    my_printf("\n");
 }

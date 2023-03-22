@@ -10,7 +10,7 @@ char a[100];
 int b[100];
 int p[100];
 
-scanf("%s",a);
+my_scanf("%s",a);
 len=strlen(a);
 
 for(i=0;i<=len-1;i++)
@@ -28,10 +28,10 @@ for(i=0;i<=len-1;i++)
                    if(P==0)
                               continue;
                    else
-                       printf("%d",p[i]);
+                       my_printf("%d",p[i]);
                    }
 if(P==0)
-printf("0");
-printf("\n%d",panel);
+my_printf("0");
+my_printf("\n%d",panel);
 
 }

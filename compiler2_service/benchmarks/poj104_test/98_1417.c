@@ -3,19 +3,19 @@
 int main_bench(){
 	int n,i,len;
 	char a[1000][41];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",a[i]);
+		my_scanf("%s",a[i]);
 	}
 	len=strlen(a[0]);
-	printf("%s",a[0]);
+	my_printf("%s",a[0]);
 	for(i=1;i<n;i++){
 		len+=1+strlen(a[i]);
 		if(len<=80){
-			printf(" %s",a[i]);
+			my_printf(" %s",a[i]);
 		}
 		if(len>80){
-			printf("\n%s",a[i]);
+			my_printf("\n%s",a[i]);
 			len=strlen(a[i]);
 		}
 	}

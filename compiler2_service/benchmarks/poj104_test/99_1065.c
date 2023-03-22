@@ -3,13 +3,13 @@
 int main_bench(){
 int n,a,i;
 double b,c,d,e;
-scanf("%d",&n);
+my_scanf("%d",&n);
 b=0;
 c=0;
 d=0;
 e=0;
 for(i=1;i<=n;i++){
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 if(a<=18){
 b=b+1;
 }
@@ -25,7 +25,7 @@ c=((double)c/n)*100;
 d=((double)d/n)*100;
 e=((double)e/n)*100;
 
-printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",b,c,d,e);
+my_printf("1-18: %.2lf%%\n19-35: %.2lf%%\n36-60: %.2lf%%\n60??: %.2lf%%\n",b,c,d,e);
 
 return 0;
 

@@ -3,11 +3,11 @@
 int main_bench()
 {
 	char a[80],b[80];
-    scanf("%s %s",a,b);
+    my_scanf("%s %s",a,b);
 	int i,j,m,n,k;
 	n=strlen(a);
 	m=strlen(b);
-	if(m!=n) printf("NO");
+	if(m!=n) my_printf("NO");
 	else
 	{
 		int c[52]={0},d[52]={0};
@@ -31,7 +31,7 @@ int main_bench()
             if(c[i]!=d[i])
 				k=1;
 		}
-		if(k==1) printf("NO");
-		else printf("YES");
+		if(k==1) my_printf("NO");
+		else my_printf("YES");
 	}
 }

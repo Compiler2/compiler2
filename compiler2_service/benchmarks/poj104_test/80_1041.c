@@ -25,8 +25,8 @@ return (t);
 int main_bench()
 {
  int y1,m1,d1,y2,m2,d2,year,t;
- scanf ("%d%d%d",&y1,&m1,&d1);
- scanf ("%d%d%d",&y2,&m2,&d2);
+ my_scanf ("%d%d%d",&y1,&m1,&d1);
+ my_scanf ("%d%d%d",&y2,&m2,&d2);
  year=y1;
  if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
   t=dayr(m1,d1);
@@ -39,5 +39,5 @@ int main_bench()
  if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
   t=t-dayr(m2,d2);
   else t=t-dayfr(m2,d2); 
- printf ("%d",t);
+ my_printf ("%d",t);
 }

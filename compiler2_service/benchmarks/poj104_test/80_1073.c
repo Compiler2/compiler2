@@ -5,8 +5,8 @@ int startYear, startMonth, startDay, endYear, endMonth, endDay;
 int main_bench()
 {
 
-	scanf("%d %d %d", &startYear, &startMonth, &startDay);
-	scanf("%d %d %d", &endYear,   &endMonth,   &endDay  );
+	my_scanf("%d %d %d", &startYear, &startMonth, &startDay);
+	my_scanf("%d %d %d", &endYear,   &endMonth,   &endDay  );
 
 	int f(int), h1(int), h2(int), g(int, int);
 	int i, sum=0, result;
@@ -27,7 +27,7 @@ int main_bench()
 	else {
 		result=g(endMonth,endDay) - g(startMonth,startDay) + (f(startYear) && h1(startMonth) && h2(endMonth));
 	};
-	printf("%d", result);	
+	my_printf("%d", result);	
 }
 int f(int year)
 {

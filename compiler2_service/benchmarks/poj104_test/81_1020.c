@@ -20,15 +20,15 @@ int main_bench()
 	for(i=0;i<5;i++)
 	{
 		for(j=0;j<5;j++)
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 	}
 	for(i=0;i<5;i++)
 		p[i]=&s[i][0];
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	a=judge(n,m,p);
 
 	if(a==0)
-		printf("error");
+		my_printf("error");
 	else  
 	{
 		for(i=0;i<5;i++)
@@ -36,11 +36,11 @@ int main_bench()
 			for(j=0;j<5;j++)
 			{
 				if(j==0)
-				printf("%d",*(p[i]+j));
+				my_printf("%d",*(p[i]+j));
 				else if(j==4)
-					printf(" %d\n",*(p[i]+j));
+					my_printf(" %d\n",*(p[i]+j));
 				else
-					printf(" %d",*(p[i]+j));
+					my_printf(" %d",*(p[i]+j));
 
 			}
 		}

@@ -3,14 +3,14 @@
 int main_bench()
 {   int i=0,n,j,x;
 	long int a[100000];
-	scanf("%d",&n);
-	printf("\n");
+	my_scanf("%d",&n);
+	my_printf("\n");
 	for(i=0;i<n;i++){
-		scanf("%ld",&a[i]);
+		my_scanf("%ld",&a[i]);
 	}
 	i=0;
-	printf("\n");
-	scanf("%d",&x);
+	my_printf("\n");
+	my_scanf("%d",&x);
 	while(i<n){
 		if(a[i]==x){
 			n=n-1;
@@ -21,9 +21,9 @@ int main_bench()
 		}
 		i++;
 	}
-	printf("%ld",a[0]);
+	my_printf("%ld",a[0]);
 	for(i=1;i<n;i++){
-		printf(" %ld",a[i]);
+		my_printf(" %ld",a[i]);
 	}
 	return 0;
 }

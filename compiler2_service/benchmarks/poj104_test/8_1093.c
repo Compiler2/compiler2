@@ -4,13 +4,13 @@ int n,m;
 int key,j,k,i,t;
 int main_bench()
 {
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     int *p1=(int*)malloc((n+1)*sizeof(int));
     int *p2=(int*)malloc((m+1)*sizeof(int));
     for(i=1;i<=n;i++)
-        scanf("%d",(p1+i));
+        my_scanf("%d",(p1+i));
     for(i=1;i<=m;i++)
-        scanf("%d",(p2+i));
+        my_scanf("%d",(p2+i));
     for(i=1;i<=n-1;i++)
     {
         for(j=i+1;j<=n;j++)
@@ -32,12 +32,12 @@ int main_bench()
         }
     }  
     for(i=1;i<=n;i++)
-        printf("%d ",*(p1+i));
+        my_printf("%d ",*(p1+i));
     for(i=1;i<=m;i++) 
     {
         if(i==m)
-            printf("%d",*(p2+i));
+            my_printf("%d",*(p2+i));
         else
-            printf("%d ",*(p2+i)); 
+            my_printf("%d ",*(p2+i)); 
     }
     }     

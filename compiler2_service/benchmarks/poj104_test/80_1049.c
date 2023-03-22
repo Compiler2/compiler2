@@ -42,7 +42,7 @@ int daysbetweendate(int y1,int m1,int d1,int y2,int m2,int d2)
 int main_bench()
 {
 	int y1,m1,d1,y2,m2,d2;
-	scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
-	printf("%d",daysbetweendate(y1,m1,d1,y2,m2,d2));
+	my_scanf("%d%d%d%d%d%d",&y1,&m1,&d1,&y2,&m2,&d2);
+	my_printf("%d",daysbetweendate(y1,m1,d1,y2,m2,d2));
 	return 0;
 }

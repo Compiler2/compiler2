@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int m,i,j;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
 	struct Bookinfo
 	{
@@ -14,7 +14,7 @@ int main_bench()
 
 	struct Bookinfo a[1000];
 	for (i=0;i<m;i++)
-		scanf("%d %s",&a[i].number,a[i].auther);
+		my_scanf("%d %s",&a[i].number,a[i].auther);
 
 	int count[26]={0},max,record;
 
@@ -36,7 +36,7 @@ int main_bench()
 			record=i;
 		}
 
-	printf("%c\n%d\n",record+'A',max);
+	my_printf("%c\n%d\n",record+'A',max);
 
 	for (i=0;i<m;i++)
 	{
@@ -45,7 +45,7 @@ int main_bench()
 		for (j=0;j<n;j++)
 			if (a[i].auther[j]==record+'A')
 			{
-				printf("%d\n",a[i].number);
+				my_printf("%d\n",a[i].number);
 				break;
 			}
 	}

@@ -4,7 +4,7 @@ int main_bench()
 {
     int i,k,r,l,x,t[40],s,a,b;
     char c[40],d[40];
-    scanf("%d %s %d",&a,c,&b);
+    my_scanf("%d %s %d",&a,c,&b);
     l=strlen(c);x=0;
     for(i=0;i<l;i++)
     {
@@ -38,7 +38,7 @@ int main_bench()
          d[i]=t[k-1-i]-10+'A';  
      }
      for(i=0;i<k;i++)
-     printf("%c",d[i]);
+     my_printf("%c",d[i]);
      getchar();
      getchar();
 }

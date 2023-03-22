@@ -63,16 +63,16 @@ int main_bench()
 		total[num1]= '\0';
 		if( tmp ==1 )
 		{
-			printf("1");
+			my_printf("1");
 			head = 1;
 		}
 	    for(j=0;j<num1;j++)
 		{
 			if(total[j]=='0'&&head==0) continue;
 			head = 1;
-			printf("%c",total[j]);
+			my_printf("%c",total[j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
     return 0;
 }

@@ -5,12 +5,12 @@ int main_bench()
 	int a[100][100];
 	int i,j;
 	int row,col;
-	scanf("%d%d",&row,&col);
+	my_scanf("%d%d",&row,&col);
 	for(i=1;i<=row;i++)
 	{
 		for(j=1;j<=col;j++)
 		{
-			scanf("%d",&a[i-1][j-1]);
+			my_scanf("%d",&a[i-1][j-1]);
 		}
 	}
 	int sum;
@@ -20,14 +20,14 @@ int main_bench()
 		{
 			for(i=1,j=sum-1;i<sum&&i<=row&&j<=col;i++,j--)
 			{
-				printf("%d\n",a[i-1][j-1]);
+				my_printf("%d\n",a[i-1][j-1]);
 			}
 		}
 		else
 		{
 			for(i=sum-col,j=sum-i;i<sum&&i<=row&&j<=col;i++,j--)
 			{
-				printf("%d\n",a[i-1][j-1]);
+				my_printf("%d\n",a[i-1][j-1]);
 			}
 		}
 	}

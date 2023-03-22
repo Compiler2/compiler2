@@ -6,10 +6,10 @@ int main_bench()
 	int a[300];
 	float ave;
 	int sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum=sum+a[i];
 	}
 	ave=sum*1.0/n;
@@ -36,7 +36,7 @@ int main_bench()
 		{
 			if(a[i]==max)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				k=i-1;
 				break;
 			}
@@ -45,7 +45,7 @@ int main_bench()
 		{
 			if(a[i]==max)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			
 			}
 		}
@@ -58,7 +58,7 @@ int main_bench()
 		{
 			if(a[i]==min)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				k=i-1;
 				break;
 			}
@@ -67,7 +67,7 @@ int main_bench()
 		{
 			if(a[i]==min)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			
 			}
 		}
@@ -78,7 +78,7 @@ int main_bench()
 		{
 			if(a[i]==min||a[i]==max)
 			{
-				printf("%d",a[i]);
+				my_printf("%d",a[i]);
 				k=i-1;
 				break;
 			}
@@ -87,7 +87,7 @@ int main_bench()
 		{
 			if(a[i]==min||a[i]==max)
 			{
-				printf(",%d",a[i]);
+				my_printf(",%d",a[i]);
 			
 			}
 		}

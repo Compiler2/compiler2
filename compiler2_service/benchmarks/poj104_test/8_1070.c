@@ -3,12 +3,12 @@
 int A,B;
 int a[250],b[250],c[501];
 void input()
-{scanf("%d",&A);
- scanf("%d",&B);
+{my_scanf("%d",&A);
+ my_scanf("%d",&B);
  for(int i=0;i<A;i++){
-         scanf("%d",&a[i]);}
+         my_scanf("%d",&a[i]);}
  for(int j=0;j<B;j++){
-         scanf("%d",&b[j]);}
+         my_scanf("%d",&b[j]);}
          
          
  } 
@@ -51,20 +51,20 @@ void input()
 void show()
 {
      for(int j=0;j<A+B;j++)
-     {printf("%d",c[j]);
+     {my_printf("%d",c[j]);
       if(j<A+B-1)
-      {printf(" ");}}
+      {my_printf(" ");}}
      }
      
      
 int main_bench()
 {
-scanf("%d",&A);
- scanf("%d",&B);
+my_scanf("%d",&A);
+ my_scanf("%d",&B);
  for(int i=0;i<A;i++){
-         scanf("%d",&a[i]);}
+         my_scanf("%d",&a[i]);}
  for(int j=0;j<B;j++){
-         scanf("%d",&b[j]);}
+         my_scanf("%d",&b[j]);}
  
  for(int j=A-1;j>0;j--)
       {
@@ -97,8 +97,8 @@ scanf("%d",&A);
       {c[i]=b[i-A];}
      
   for(int j=0;j<A+B;j++)
-     {printf("%d",c[j]);
+     {my_printf("%d",c[j]);
       if(j<A+B-1)
-      {printf(" ");}}   
+      {my_printf(" ");}}   
       
       }

@@ -6,10 +6,10 @@ int main_bench()
       int j=0;
       int max=0;
       int i,m;
-      scanf("%d",&k);
+      my_scanf("%d",&k);
       int height[k],b[k];
       while(j<k){
-                 scanf("%d",&height[j]);
+                 my_scanf("%d",&height[j]);
                  j++;
                  }
       j=j-1;
@@ -26,5 +26,5 @@ int main_bench()
                        if(b[i]>max) 
                           max=b[i];
                        }
-      printf("%d",max);
+      my_printf("%d",max);
 }

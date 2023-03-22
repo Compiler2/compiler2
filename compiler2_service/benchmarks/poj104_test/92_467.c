@@ -5,14 +5,14 @@ int main_bench()
     int n,s,tmp; 
     for(s=0;s<100;s++)
     {
-           scanf("%d",&n);
+           my_scanf("%d",&n);
            if(n==0)  break;
            int a[1000],b[1000];
            int i,j,k,r;
            for(i=0;i<n;i++)
-           scanf("%d",&a[i]);
+           my_scanf("%d",&a[i]);
            for(i=0;i<n;i++)
-           scanf("%d",&b[i]);
+           my_scanf("%d",&b[i]);
            for(j=n-1;j>0;j--)
            {
                       for(r=0;r<j;r++)
@@ -61,7 +61,7 @@ int main_bench()
                            }
            }
       
-           printf("%d\n",200*m);
+           my_printf("%d\n",200*m);
     }
     getchar();
     getchar();

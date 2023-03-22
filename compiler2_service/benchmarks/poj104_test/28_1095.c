@@ -20,7 +20,7 @@ int main_bench()
                  }
                  if(z[i+1]==' '||z[i+1]=='\0')
                  {
-                              printf("%d",j);
+                              my_printf("%d",j);
                               y=1;
                  }
                  if(y==1)
@@ -42,7 +42,7 @@ int main_bench()
                  {
                               if(j!=0)
                               {
-                                  printf(",%d",j);
+                                  my_printf(",%d",j);
                                   }
                  }                  
     

@@ -14,10 +14,10 @@ void print()
 			}
 		}
 		a[flag] =  - 1;
-		if(max == z) printf("z %d\n",z);
-		if(max == q) printf("q %d\n",q);
-		if(max == s) printf("s %d\n",s);
-		if(max == l) printf("l %d\n",l);
+		if(max == z) my_printf("z %d\n",z);
+		if(max == q) my_printf("q %d\n",q);
+		if(max == s) my_printf("s %d\n",s);
+		if(max == l) my_printf("l %d\n",l);
 	}
 }
 			

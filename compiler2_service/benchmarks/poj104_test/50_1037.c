@@ -3,14 +3,14 @@
 int main_bench()
 {
 	int w,m,d,x;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	x=w;
 	m=1;
 	d=1;
 	while (m<13)
 	{
 		if ((d==13)&&(x==5))
-			printf("%d\n",m);
+			my_printf("%d\n",m);
 		d++;
 		x++;
 		if (x==8)

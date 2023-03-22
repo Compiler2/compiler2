@@ -6,12 +6,12 @@ int zzhzb[8];
 int main_bench()
 {
     int hang,lie,i,s=0,j,t=0,f,w=0,h;
-    scanf("%d,%d",&hang,&lie);
+    my_scanf("%d,%d",&hang,&lie);
     for(j=0;j<hang;j++)
 	{
         for(i=0;i<lie;i++)
 		{      			
-scanf("%d",&andian[j][i]);
+my_scanf("%d",&andian[j][i]);
 			if(andian[j][i]>zuida[j])
 			{
 				zuida[j]=andian[j][i];
@@ -31,14 +31,14 @@ s++;
 }
 if(s==hang-1)
 {
-printf("%d+%d",h,zzhzb[h]);
+my_printf("%d+%d",h,zzhzb[h]);
 w=1;
 }
 
 }
 if(w==0)
 {
-printf("No");
+my_printf("No");
 }
 
 

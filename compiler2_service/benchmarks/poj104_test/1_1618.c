@@ -3,12 +3,12 @@
 int main_bench(){
   int hanshu(int k,int min);
   int n,i,a;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++){
-      scanf("%d",&a);
-      printf("%d\n",hanshu(a,2));
+      my_scanf("%d",&a);
+      my_printf("%d\n",hanshu(a,2));
      }
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   return 0;
 }
   int hanshu(int k,int min){

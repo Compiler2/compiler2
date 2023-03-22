@@ -20,14 +20,14 @@ int main_bench()
          b[i]=strlen(aa[i]);
          if(b[i]>0)
          {
-         printf("%d,",b[i]);
+         my_printf("%d,",b[i]);
          }
          }
          else if(i==n-1)
          {    b[i]=strlen(aa[i]);
          if(b[i]>0)
          {
-                  printf("%d",b[i]);
+                  my_printf("%d",b[i]);
                   }
          }              
          }

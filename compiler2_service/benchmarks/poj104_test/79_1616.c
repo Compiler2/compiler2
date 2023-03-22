@@ -8,10 +8,10 @@ int main_bench()
 	int n,k=0,i,m,j,a[301],kick=0;
 	
 	for(i=1;i<=301;i++)a[i]=1;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	if(m==0)
 	break;
-	if(n==1)printf("1\n");
+	if(n==1)my_printf("1\n");
 	else{
 	for(j=0;;j++)
 	{
@@ -23,7 +23,7 @@ int main_bench()
 		
 	}
 	loop:for(i=1;i<=n;i++)
-	{if(a[i]==1)printf("%d\n",i);}
+	{if(a[i]==1)my_printf("%d\n",i);}
 	}	}	
 			
     

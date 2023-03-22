@@ -8,7 +8,7 @@ int main_bench()
 	int num;
 	int a[500];
 
-	scanf("%d%d", &n, &m);
+	my_scanf("%d%d", &n, &m);
 	while((n > 0) && (m > 0))
 	{
 		for(i = 1; i <= n; i++)
@@ -26,7 +26,7 @@ int main_bench()
 		}
 		for(i = 1; i <= n; i++)
 			if(a[i] == 0)
-				printf("%d\n", i);
-		scanf("%d%d", &n, &m);
+				my_printf("%d\n", i);
+		my_scanf("%d%d", &n, &m);
 	}
 }

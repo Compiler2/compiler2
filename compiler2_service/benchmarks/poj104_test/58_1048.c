@@ -41,14 +41,14 @@ int main_bench()
     int n,i,j,c;
     char a[81];
     int b[100]={0};
-    scanf("%d",&n);
-    scanf("%c",&a[0]);
+    my_scanf("%d",&n);
+    my_scanf("%c",&a[0]);
     for(i=1;i<=n;i++)
     {
         b[i-1]=1;
         for(j=1;j<=81;j++)
         {
-            scanf("%c",&a[j-1]);
+            my_scanf("%c",&a[j-1]);
             c=a[j-1]-'\n';
             if(c==0)
             break;
@@ -62,6 +62,6 @@ int main_bench()
         b[i-1]=0;
     }
     for(i=1;i<=n;i++)
-    printf("%d\n",b[i-1]);
+    my_printf("%d\n",b[i-1]);
     return 0;
 }

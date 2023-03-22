@@ -6,9 +6,9 @@ int main_bench()
    int i,n,p;
    for (i=0;i<6;i++)
    {
-       scanf("%d",&n);
+       my_scanf("%d",&n);
        p=reverse(n);
-       printf("%d\n",p);
+       my_printf("%d\n",p);
    }
    getchar();
    getchar();

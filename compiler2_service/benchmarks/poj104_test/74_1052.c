@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,k,t,s=0,r=0,w=0,p=0,flag,sum,a[300]={0},b[300];
-	scanf("%d %d",&m,&n);
+	my_scanf("%d %d",&m,&n);
         for(i=m;i<n+1;i++)
 		{
 		t=i;
@@ -24,10 +24,10 @@ int main_bench()
 				if(a[i]!=0) b[p++]=a[i];
 				if(p!=0){
 		for(i=0;i<p-1;i++)
-			printf("%d,",b[i]);
+			my_printf("%d,",b[i]);
 	
-		printf("%d",b[p-1]);}
-				else printf("no");
+		my_printf("%d",b[p-1]);}
+				else my_printf("no");
 					
 }
    

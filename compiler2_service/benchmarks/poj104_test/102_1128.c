@@ -6,10 +6,10 @@ int main_bench()
 	
 	char s[10];
 	double x,ma[50]={0},fe[50]={0},t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("\n%s%lf",s,&x);
+		my_scanf("\n%s%lf",s,&x);
 		if(s[0]=='m')	
 		{
 			ma[m]=x;
@@ -48,13 +48,13 @@ int main_bench()
 		}	
 	}
 	for(i=0;i<m;i++)
-	{printf("%.2lf ",ma[i]);}
+	{my_printf("%.2lf ",ma[i]);}
 	for(i=0;i<f;i++)
 	{
 		if(i==f-1)
-		printf("%.2lf",fe[i]);
+		my_printf("%.2lf",fe[i]);
 		else
-		printf("%.2lf ",fe[i]);	
+		my_printf("%.2lf ",fe[i]);	
 	}
 
 	return 0;			

@@ -4,13 +4,13 @@ int main_bench()
 {
 	int a,x,m,n,i,j,k,sum[10000]={0};
 	int sz[100][100];
-	scanf("%d",&a);
+	my_scanf("%d",&a);
 	for(i=0;i<a;i++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		for(j=0;j<m;j++)
 			{for(k=0;k<n;k++)
-				{scanf("%d",&sz[j][k]);}
+				{my_scanf("%d",&sz[j][k]);}
 			}
 		if((m>2)&&(n>2))
 		{ for(j=0;j<m;j++)
@@ -26,6 +26,6 @@ int main_bench()
 			 }
 	}
     for(i=0;i<a;i++)
-	{printf("%d\n",sum[i]);}
+	{my_printf("%d\n",sum[i]);}
 	return 0;
 }

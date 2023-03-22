@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int a,b,c,i,j,k,m,n,f;
-	scanf("%d %d %d",&a,&b,&c);
+	my_scanf("%d %d %d",&a,&b,&c);
   if(a==1111&&b==11&&c==11)
-  printf("Sat.\n");
+  my_printf("Sat.\n");
   else if(a==1111111111&&b==11&&c==11)
-  printf("Sat.\n");
+  my_printf("Sat.\n");
   else
 {
     i=(97*a-97)/400+a-1;
@@ -50,13 +50,13 @@ int main_bench()
 		f=(i+j+k)%7;
 		switch(f)
 		{
-		case 0:printf("Sun.\n");break;
-		case 1:printf("Mon.\n");break;
-		case 2:printf("Tue.\n");break;
-		case 3:printf("Wed.\n");break;
-		case 4:printf("Thu.\n");break;
-		case 5:printf("Fri.\n");break;
-		case 6:printf("Sat.\n");
+		case 0:my_printf("Sun.\n");break;
+		case 1:my_printf("Mon.\n");break;
+		case 2:my_printf("Tue.\n");break;
+		case 3:my_printf("Wed.\n");break;
+		case 4:my_printf("Thu.\n");break;
+		case 5:my_printf("Fri.\n");break;
+		case 6:my_printf("Sat.\n");
 		}}
 	return 0;
 	}

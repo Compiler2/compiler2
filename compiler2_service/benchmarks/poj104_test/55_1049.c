@@ -3,7 +3,7 @@
 int main_bench()
 {
 	long int i,m,k,s,c[32],a,b;char n[32];
-	scanf("%d%s%d",&a,n,&b);
+	my_scanf("%d%s%d",&a,n,&b);
 	m=0;s=1;k=0;i=31;
 	while(i>=0)
 	{
@@ -27,8 +27,8 @@ int main_bench()
 	}while(k!=0);
 	for(--i;i>=0;i--)
 	{
-		if(c[i]>9)printf("%c",c[i]+55);
-		else printf("%d",c[i]);
+		if(c[i]>9)my_printf("%c",c[i]+55);
+		else my_printf("%d",c[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }

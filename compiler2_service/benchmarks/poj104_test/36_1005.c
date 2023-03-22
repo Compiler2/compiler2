@@ -14,12 +14,12 @@ void jud(char a[],char b[])
 		else c[1][b[i]-71]++;
 	}
 	for(i=0;i<52;i++) if(c[0][i]!=c[1][i]) m++;
-	if(m==0) printf("YES");
-	else printf("NO");
+	if(m==0) my_printf("YES");
+	else my_printf("NO");
 }
 int main_bench()
 {
 	char a[30],b[30];
-	scanf("%s%s",a,b);
+	my_scanf("%s%s",a,b);
 	jud(a,b);
 }

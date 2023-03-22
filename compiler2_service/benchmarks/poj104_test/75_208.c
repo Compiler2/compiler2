@@ -8,13 +8,13 @@ int main_bench()
 	int i,j,k=0,r=0,n=0;
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&x[i],&a);
+		my_scanf("%d%c",&x[i],&a);
 		n=n+1;
 		if(a!=',')break;
 	}
 	for(i=0;;i++)
 	{
-		scanf("%d%c",&y[i],&b);
+		my_scanf("%d%c",&y[i],&b);
 		if(b!=',')break;
 	}
 	for(j=0;j<1000;j++)
@@ -29,7 +29,7 @@ int main_bench()
 		}
 		k=0;
 	}
-	printf("%d %d",n,r);
+	my_printf("%d %d",n,r);
 
 
 }

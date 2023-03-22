@@ -24,16 +24,16 @@ int f(int a,int min)
 int main_bench()
 {
       int n,a,i,j=0,k,m=0,r=0;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
       for(k=0;k<n;k++)
       {
-          scanf("%d",&a);
+          my_scanf("%d",&a);
           
           if(k!=n-1)                                                               
-           printf("%d\n",f(a,2));
+           my_printf("%d\n",f(a,2));
            else
-           printf("%d",f(a,2));                           
+           my_printf("%d",f(a,2));                           
                                       
                      
                       

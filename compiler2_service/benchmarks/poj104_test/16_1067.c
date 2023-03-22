@@ -3,9 +3,9 @@
 
 int main_bench() {
 	char str[101];		
-	scanf("%s", str);	
+	my_scanf("%s", str);	
 	int len = strlen(str);
 	for (int i = len - 1; i >= 0; --i)
-		printf("%c", str[i]);
-	printf("\n");	
+		my_printf("%c", str[i]);
+	my_printf("\n");	
 }

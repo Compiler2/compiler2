@@ -10,6 +10,6 @@ int main_bench()
 	{
 		if(*(a+i)==' '&&*(a+i+1)==' ')
 			continue;
-		else printf("%c",*(a+i));
+		else my_printf("%c",*(a+i));
 	}
 }

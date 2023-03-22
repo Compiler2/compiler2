@@ -5,9 +5,9 @@ int main_bench()
 	int i,j,n,a[300];
 	int *p;
 	p=a;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d",p+i);
+		my_scanf("%d",p+i);
 	for(i=0;i<n;i++)
 	{
 		if(*(p+i)!=797)
@@ -20,11 +20,11 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++)
 	{
 		if(*(p+i)!=797)
-			printf(",%d",*(p+i));
+			my_printf(",%d",*(p+i));
 	}
 	return 0;
 }

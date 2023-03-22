@@ -5,9 +5,9 @@ int main_bench()
     int n,i,j,k,l,b,c;
 	char a;
 	char *s=(char *)malloc(sizeof(char)*100000);
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-	    scanf("%s",s);
+	    my_scanf("%s",s);
 		l=strlen(s);
 		c=0;
 		for(j=0;j<l;j++){
@@ -17,12 +17,12 @@ int main_bench()
 				if(k!=j&&*(s+k)==a) {b++; break;}
 			}
 			if(b==0){
-			    printf("%c\n",a);
+			    my_printf("%c\n",a);
 				c++;
 				break;
 			}
 		}
-		if(c==0) printf("no\n");        
+		if(c==0) my_printf("no\n");        
 	}
     return 0;
 }

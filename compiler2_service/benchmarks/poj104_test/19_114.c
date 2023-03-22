@@ -39,7 +39,7 @@ int main_bench(){
 		}
 	}
 	a[na+x*(nc-nb)]='\0';
-	printf("%s",a);
+	my_printf("%s",a);
 	return 0;
 }
 					

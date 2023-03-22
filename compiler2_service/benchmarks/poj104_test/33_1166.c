@@ -3,9 +3,9 @@
 int main_bench(){
 	char zf[256],hb[256];
 	int n,judge=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(int j=0;j<n;j++){
-		scanf("%s",zf);
+		my_scanf("%s",zf);
 		for(int k=0;k<256;k++){
 			hb[k]='\0';
 		}
@@ -23,7 +23,7 @@ int main_bench(){
 				hb[i]='C';
 			}
 		}
-		printf("%s\n",hb);
+		my_printf("%s\n",hb);
 	}
 	return 0;
 }

@@ -5,9 +5,9 @@ int main_bench()
 	char s1[505],s2[505];
 	double n,m=0,len1,len2,flag=0;
 	int i;
-	scanf("%lf",&n);
-	scanf("%s",s1);
-	scanf("%s",s2);
+	my_scanf("%lf",&n);
+	my_scanf("%s",s1);
+	my_scanf("%s",s2);
 	len1=strlen(s1);
 	len2=strlen(s2);
 	for(i=0;i<len1;i++)
@@ -33,7 +33,7 @@ int main_bench()
 
 	if((len1!=len2)||(flag==1))
 	{
-		printf("error");
+		my_printf("error");
 	}
 	else
 	{
@@ -46,9 +46,9 @@ int main_bench()
 	}
 	m=m/len1;
 	if(m>n)
-		printf("yes");
+		my_printf("yes");
 	else
-		printf("no");
+		my_printf("no");
 	}
 
 

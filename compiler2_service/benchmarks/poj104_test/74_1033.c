@@ -27,15 +27,15 @@ int g(long x)
 int main_bench()
 {
 	long m,n,i,t=0;
-	scanf("%ld%ld",&m,&n);
+	my_scanf("%ld%ld",&m,&n);
 	for(i=m;i<=n;i++)
 	{
 		if(f(i)+g(i)==0)
 		{
-			if(t==0){printf("%ld",i);t++;}
-			else printf(",%ld",i);
+			if(t==0){my_printf("%ld",i);t++;}
+			else my_printf(",%ld",i);
 		}
 	}
-	if(t==0)printf("no\n");
+	if(t==0)my_printf("no\n");
 	return 0;
 }

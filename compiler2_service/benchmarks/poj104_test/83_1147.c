@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,i,sum1=0;
 	float sum=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[n],b[n];
 	for(i=0;i<n;i++){
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		sum1+=a[i];
 	}
 	for(i=0;i<n;i++){
-		scanf("%d",&b[i]);
+		my_scanf("%d",&b[i]);
 		if(b[i]<60)
 			sum+=0;
 		if(b[i]>=60&&b[i]<=63)
@@ -32,6 +32,6 @@ int main_bench(){
 		if(b[i]>=90&&b[i]<=100)
 			sum+=a[i]*4.0;
 	}
-	printf("%.2f",sum/sum1);
+	my_printf("%.2f",sum/sum1);
 	return 0;
 }

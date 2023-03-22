@@ -17,9 +17,9 @@ void inv(char s[])
 		if(*p==' ')
 		{
 			for(q=p+1;*q!=' '&&*q!='\0';q++)
-				printf("%c",*q);
-			printf(" ");
+				my_printf("%c",*q);
+			my_printf(" ");
 		}
 	for(p=s;*p!=' '&&*p!='\0';p++)
-		printf("%c",*p);
+		my_printf("%c",*p);
 }

@@ -12,9 +12,9 @@ int main_bench()
 	struct books book[1000];
 	int n,i,j,t,max=0;
 	struct books *p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(p=book;p<book+n;p++)
-		scanf("%d%s",&p->number,p->name);
+		my_scanf("%d%s",&p->number,p->name);
 	for(p=book;p<book+n;p++)
 		for(j=0;j<26;j++)
 			for(i=65;i<=90;i++)
@@ -27,12 +27,12 @@ int main_bench()
 		if(x[i]==max)
 			break;
 	c=i+65;
-	printf("%c\n%d\n",c,max);
+	my_printf("%c\n%d\n",c,max);
 	for(i=0;i<n;i++)
 		for(j=0;j<26;j++)
 			if(book[i].name[j]==c)
 			{
-				printf("%d\n",book[i].number);
+				my_printf("%d\n",book[i].number);
 				break;
 			}
 

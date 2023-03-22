@@ -25,7 +25,7 @@ int main_bench()
     b[j]='\0';
     len2=strlen(b);
     for(i=0;i<len2;i++)
-    {printf("%c",b[i]);}
+    {my_printf("%c",b[i]);}
                              
                 
 }

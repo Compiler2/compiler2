@@ -11,12 +11,12 @@ int leap(int n) {
 
 int main_bench() {
   int y, m, d, k, i;
-  scanf("%d%d%d", &y, &m, &d);
+  my_scanf("%d%d%d", &y, &m, &d);
   if (!(y %= 400)) y = 400;
   k = 0;
   for (i = 1; i < y; ++i) k = (k + 365 + leap(i)) % 7;
   for (i = 1; i < m; ++i)
     k = (k + c[i] + (i == 2 ? leap(y) : 0)) % 7;
-  printf("%s.\n", s[(k + d) % 7]);
+  my_printf("%s.\n", s[(k + d) % 7]);
   return 0;
 }

@@ -18,21 +18,21 @@ for(j=0;j<5;j++)
 for(j=0;j<5;j++)
 *(*(p+m)+j)=b[j];
 for(i=0;i<5;i++)
-{printf("%d",**(p+i));
+{my_printf("%d",**(p+i));
 	for(j=1;j<5;j++)
-printf(" %d",*(*(p+i)+j));
-printf("\n");
+my_printf(" %d",*(*(p+i)+j));
+my_printf("\n");
 }
 }
 int main_bench()
 {int a[5][5],n,m,i,j;
 	for(i=0;i<5;i++)
 {for(j=0;j<5;j++)
-	scanf("%d",*(a+i)+j);
+	my_scanf("%d",*(a+i)+j);
 }
-scanf("%d%d",&n,&m);
+my_scanf("%d%d",&n,&m);
 if(panduan(a,n,m)==0)
-printf("error");
+my_printf("error");
 else
 {jiaohuan(a,n,m);
 }

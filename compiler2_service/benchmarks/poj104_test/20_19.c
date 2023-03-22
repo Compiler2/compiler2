@@ -29,16 +29,16 @@ int main_bench()
 		}
 		for(j=0;j<=k;j++)
 		{
-			printf("%c",a[i][j]);
+			my_printf("%c",a[i][j]);
 		}
 		for(j=b[i]-3;j<b[i];j++)
 		{
-			printf("%c",a[i][j]);
+			my_printf("%c",a[i][j]);
 		}
 		for(j=k+1;j<b[i]-4;j++)
 		{
-			printf("%c",a[i][j]);
+			my_printf("%c",a[i][j]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 }

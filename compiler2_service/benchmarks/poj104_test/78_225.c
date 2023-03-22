@@ -37,6 +37,6 @@ int main_bench()
                      }
     }
     for(i=0;i<4;i++)
-    printf("%c %d\n",b[i],10*a[i]);                                         
+    my_printf("%c %d\n",b[i],10*a[i]);                                         
     getchar(); 
 }

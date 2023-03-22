@@ -3,10 +3,10 @@
 int main_bench()
 {
   char a[100][100];
-  scanf("%s",a[0]);
+  my_scanf("%s",a[0]);
   int i,j=0,k;
   for(i=1;getchar()==' ';i++)
-  scanf("%s",a[i]);
+  my_scanf("%s",a[i]);
   char (*max)[],(*min)[];
   max=&a[0];
   min=&a[0];

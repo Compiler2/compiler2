@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j,k;
 	char a[100000],b[100],*pa,*pb;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(a);
 	pb=b;
 	for(i=0;i<n;i++){
@@ -30,10 +30,10 @@ int main_bench()
 	}
 	for(i=0;i<n;i++){
 		if(*(pb+i)==0){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		else{
-			printf("%c\n",*(pb+i));
+			my_printf("%c\n",*(pb+i));
 		}
 	}
 }

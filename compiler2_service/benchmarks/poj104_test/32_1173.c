@@ -9,12 +9,12 @@ int leap(int *p,int n)
 int main_bench()
 {
     int n,i;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
                     char a[100],b[100];
                     int j,k=0,f=0,c[100]={0};
-                    scanf("%s %s",a,b);
+                    my_scanf("%s %s",a,b);
                     int len1=strlen(a),len2=strlen(b);
                     if(len1<len2) f=-1;
                     else if(len1==len2)
@@ -26,7 +26,7 @@ int main_bench()
                               }
                     if(f==-1)
                     {
-                             printf("-");
+                             my_printf("-");
                              char s[100];
                              strcpy(s,a);
                              strcpy(a,b);
@@ -50,11 +50,11 @@ int main_bench()
                                           else k=0;
                     }
                     j=leap(c,len1);
-                    if(j==-1) printf("0");
+                    if(j==-1) my_printf("0");
                     else
                         for( ;j<len1;j++)
-                                         printf("%d",c[j]);
-                    printf("\n");
+                                         my_printf("%d",c[j]);
+                    my_printf("\n");
     }
     return 0; 
 }

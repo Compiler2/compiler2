@@ -13,8 +13,8 @@ int main_bench()
 		if ((int)b[i]>96) b[i]=b[i]-32;
 	}
 	    m=strcmp(a,b);
-        if(m==0)  printf("=");
-        if(m<0)   printf("<");
-        if(m>0)   printf(">");
+        if(m==0)  my_printf("=");
+        if(m<0)   my_printf("<");
+        if(m>0)   my_printf(">");
 	return 0;
 }

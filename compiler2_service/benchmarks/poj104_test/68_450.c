@@ -3,7 +3,7 @@
 int main_bench()
 
 {long int a[60000],i,j,o,n;
-scanf("%d",&n);
+my_scanf("%d",&n);
 a[1]=0;
 a[2]=1;
 a[3]=1;
@@ -21,6 +21,6 @@ for(i=6;i<=n;i=i+2)
 {
 for(j=3;j<=i/2;j=j+2)
 {
-if(a[j]==1&&a[i-j]==1){printf("%d=%d+%d\n",i,j,i-j);
+if(a[j]==1&&a[i-j]==1){my_printf("%d=%d+%d\n",i,j,i-j);
 break;}}
 }}

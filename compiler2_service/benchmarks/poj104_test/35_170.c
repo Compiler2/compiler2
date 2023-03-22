@@ -14,21 +14,21 @@ int max(int b[10],int n)
 int main_bench()
 {
 	int m,n,i,j,sum=0,a[10][10],k,ap=0;
-	scanf("%d,%d",&m,&n);
+	my_scanf("%d,%d",&m,&n);
 	for(i=0;i<m;i++)
 		for(k=0;k<n;k++)
-			scanf("%d",&a[i][k]);
+			my_scanf("%d",&a[i][k]);
 	for(i=0;i<m;)
 	{
 		j=max(a[i],n);
 		for(k=0;k<m;k++)
 			if(a[k][j]<a[i][j])
 				goto a1;
-		printf("%d+%d",i,j);
+		my_printf("%d+%d",i,j);
 		ap++;
 		goto a2;
 a1:     i++;
 	}
 a2:	if(ap==0)
-	   printf("No");
+	   my_printf("No");
 }

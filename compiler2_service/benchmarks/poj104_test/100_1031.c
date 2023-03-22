@@ -5,7 +5,7 @@ int main_bench()
 	char zfc[300];
 	char stan;
 	stan='a';
-	scanf("%s",zfc);
+	my_scanf("%s",zfc);
 	int k;
 	k=strlen(zfc);
 	int e=0;
@@ -34,7 +34,7 @@ int main_bench()
 		}
 	}
 	if(e==0){
-		printf("No");
+		my_printf("No");
 	}
 	char data;
 	int x;
@@ -51,7 +51,7 @@ int main_bench()
 		}
 	}
 	for(i=0;i<e;i++){
-		printf("%c=%d\n",out[i],ab[i]);
+		my_printf("%c=%d\n",out[i],ab[i]);
 	}
 	return 0;
 }

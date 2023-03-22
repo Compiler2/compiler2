@@ -4,10 +4,10 @@ int shulie(int n);
 int main_bench()
 {
 	int n,i,j,weizhi[100],jl[500]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&weizhi[i]);
+		my_scanf("%d",&weizhi[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -15,7 +15,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%d\n",jl[i]);
+		my_printf("%d\n",jl[i]);
 	}
 	return 0;
 }

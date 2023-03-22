@@ -18,18 +18,18 @@ int main_bench()
              {
                  if(A>B&&A>C)
                  {
-                     if(B>C) printf("CBA");
-                     if(C>B) printf("BCA");
+                     if(B>C) my_printf("CBA");
+                     if(C>B) my_printf("BCA");
                  }
                  if(B>A&&B>C)
                  {
-                     if(A>C) printf("CAB");
-                     if(C>A) printf("ACB");
+                     if(A>C) my_printf("CAB");
+                     if(C>A) my_printf("ACB");
                  }
                  if(C>B&&C>A)
                  {
-                     if(B>A) printf("ABC");
-                     if(A>B) printf("BAC");
+                     if(B>A) my_printf("ABC");
+                     if(A>B) my_printf("BAC");
                  }
              }
         }

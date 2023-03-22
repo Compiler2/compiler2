@@ -7,11 +7,11 @@
 int main_bench()
 {
 	char a[1000],b[1000];
-	scanf("%s %s",a,b);
+	my_scanf("%s %s",a,b);
 	int lena=strlen(a);
 	int lenb=strlen(b);
 	if(lena!=lenb){
-		printf("NO");
+		my_printf("NO");
 	}
 	else{
 		int i,j,k=0,num=0,count=0;
@@ -38,10 +38,10 @@ int main_bench()
 			}
 		}
 		if(count==lena+same){
-			printf("YES");
+			my_printf("YES");
 		}
 		else{
-			printf("NO");
+			my_printf("NO");
 		}
 	}
 	return 0;

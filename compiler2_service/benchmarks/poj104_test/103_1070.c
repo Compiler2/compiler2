@@ -4,7 +4,7 @@ int main_bench()
 {
 char a[1000],b[1000];
 int c[1000]={0},i,j,n,m;
-scanf("%s",a);
+my_scanf("%s",a);
 i=strlen(a);
 if(a[0]<=90)
 b[0]=a[0];
@@ -26,7 +26,7 @@ b[m]=a[j]-32;
 c[n]=c[n]+1;}
 }
 for(i=0;i<=m;i++)
-printf("(%c,%d)",b[i],c[i]);
+my_printf("(%c,%d)",b[i],c[i]);
 }
 
 

@@ -9,7 +9,7 @@ int main_bench()
 	{
 		for(k=0;k<5;k++)
 		{
-		    scanf("%d",&sz[i][k]);
+		    my_scanf("%d",&sz[i][k]);
 		}
 	}
 	for(m=0;m<5;m++)
@@ -34,7 +34,7 @@ int main_bench()
 		}
 		if(p==5)
 		{
-			printf("%d %d %d",a+1,b+1,sz[a][b]);
+			my_printf("%d %d %d",a+1,b+1,sz[a][b]);
 		}
 		else
 		{
@@ -42,7 +42,7 @@ int main_bench()
 		}
 	}
 	if(q==5){
-		printf("not found");
+		my_printf("not found");
 	}
 	return 0;
 }

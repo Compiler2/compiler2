@@ -3,9 +3,9 @@
 int main_bench(){
 	int m,shuzu[100],i,j;
 	double x,s,e,a,b;
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(i=0;i<m;i++){
-		scanf("%d",&shuzu[i]);
+		my_scanf("%d",&shuzu[i]);
 	}
 
 	for(i=0;i<m;i++){	
@@ -20,7 +20,7 @@ int main_bench(){
 			b=e+b;
 			x=b/a;
 		}
-		printf("%.3lf\n",s);
+		my_printf("%.3lf\n",s);
 	}
 	return 0;
 }

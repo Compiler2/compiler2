@@ -6,7 +6,7 @@ int main_bench()
 	i=1;
 while(i<=5)
 	{
-scanf("%d %d %d\n",&A,&B,&C);
+my_scanf("%d %d %d\n",&A,&B,&C);
 	if(A%4==0)
 	{
 		if(A%100==0)
@@ -57,7 +57,7 @@ scanf("%d %d %d\n",&A,&B,&C);
 			case 12:d=334;break;
 		}
 		z=d+C;}
-	printf("%d\n",z);
+	my_printf("%d\n",z);
 	i=i+1;
 	}
 	return 0;

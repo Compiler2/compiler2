@@ -4,17 +4,17 @@ int sushu(int m);
 int main_bench()
 {
     int n,s,i,j,k,l=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<n-1;i++){
         s=sushu(i);	    
 		if(s==1) {
 			k=i;
 			k+=2;
 			j=sushu(k);
-			if(j==1) {printf("%d %d\n",k-2,k); l++;}
+			if(j==1) {my_printf("%d %d\n",k-2,k); l++;}
 		}
 	}
-	if(l==0) printf("empty");
+	if(l==0) my_printf("empty");
 	return 0;
 }
 int sushu(int m)

@@ -11,11 +11,11 @@ int make(int x,int t)
 int main_bench()
 {
 	int i,k,j,p,n,t,m,x;
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	for (p=1;p<=t;p++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		x=make(n,2);
-		printf("%d\n",x);
+		my_printf("%d\n",x);
 	}
 } 

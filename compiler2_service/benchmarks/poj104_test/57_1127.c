@@ -3,10 +3,10 @@
 int main_bench(){
     int n,i,k,j;
     int m;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     char dc[50];
     for(i=0;i<n;i++){
-        scanf("%s",dc);
+        my_scanf("%s",dc);
        
        m=strlen(dc)-1;
      
@@ -15,7 +15,7 @@ int main_bench(){
      }
      else dc[m-1]=0;
     
-    printf("%s\n",dc);
+    my_printf("%s\n",dc);
     }
     
 }

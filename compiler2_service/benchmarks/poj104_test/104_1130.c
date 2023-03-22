@@ -9,22 +9,22 @@ int o,p;
 int main_bench()
 {
 	int m,n,k;
-	scanf("%d%d",&m,&n);
+	my_scanf("%d%d",&m,&n);
 	if(m==n)
 	{
-		printf("%d\n",n);
+		my_printf("%d\n",n);
 		return 0;
 	}
 	o=m;
 	p=n;
 	if(m==1||n==1)
 	{
-		printf("1\n");
+		my_printf("1\n");
 		return 0;
 	}
 	a(m);
 	b(n);
-	printf("%d\n",c());
+	my_printf("%d\n",c());
 	return 0;
 }
 void a(int m)

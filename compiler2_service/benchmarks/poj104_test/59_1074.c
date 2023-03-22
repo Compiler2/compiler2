@@ -7,11 +7,11 @@ int main_bench()
 {   int n,m,i,j,t=0,day;
     char bf1[101][101]={'#'},bf2[101][101]={'#'};
 	char kongbai[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(kongbai);
 	for(i=1;i<=n;i++){
 		for(j=1;j<=n;j++){
-			scanf("%c",&bf1[i][j]);
+			my_scanf("%c",&bf1[i][j]);
 		}
 		gets(kongbai);
 	}
@@ -20,7 +20,7 @@ int main_bench()
 			bf2[i][j]=bf1[i][j];
 		}
 	}
-    scanf("%d",&m);
+    my_scanf("%d",&m);
 	for(day=1;day<m;day++){
 		for(i=1;i<=n;i++){
 			for(j=1;j<=n;j++){
@@ -53,7 +53,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",t);
+	my_printf("%d",t);
 	return 0;
 }
 

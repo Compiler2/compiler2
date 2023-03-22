@@ -7,8 +7,8 @@ int main_bench()
 	int i,j,m,n,i1,j1,w;
 	int k;
 
-	scanf("%s",a);
-	scanf("%s",b);
+	my_scanf("%s",a);
+	my_scanf("%s",b);
 
 	for(i1=0,i=0;a[i1]!='\0';i1++)
 		i++;
@@ -62,7 +62,7 @@ int main_bench()
 	n++;
 	for(;n>=0;n--)
 	{
-		printf("%c",a[n]);
+		my_printf("%c",a[n]);
 	}
 
 	return 0;

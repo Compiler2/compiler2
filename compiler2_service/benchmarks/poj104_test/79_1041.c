@@ -7,8 +7,8 @@ int main_bench()
     int l,i,j,k,e;
     for(e=0;;e++)
     {
-        scanf("%d%d",&b[e],&c[e]);
-    printf("\n");
+        my_scanf("%d%d",&b[e],&c[e]);
+    my_printf("\n");
     a++;
         if(b[e]==0||c[e]==0)
         break;
@@ -21,7 +21,7 @@ int main_bench()
  {  k=0;
     for(i=2;i<=b[j];i++)
     {k=((c[j]%i)+k)%i;}
-     printf("%d\n",k+1);
+     my_printf("%d\n",k+1);
              }
              } 
         

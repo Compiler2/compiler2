@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int n,i,j,k,su,su2,q=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=6;i<=n;i=i+2)
 	{
 		for(j=3;(2*j)<=i;j=j+2)
@@ -21,7 +21,7 @@ int main_bench()
 			}
 			if(q==0)
 			{
-			printf("%d=%d+%d\n",i,su,su2);
+			my_printf("%d=%d+%d\n",i,su,su2);
 		    break;
 			}
 			else

@@ -15,14 +15,14 @@ int Compare(const void*elem1,const void*elem2)
 int main_bench()
 {
       int n,i,j,k;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       struct dian *d = (struct dian *)malloc(sizeof(struct dian)*(n));
       int *a= (int*)malloc(sizeof(int)*(n));
       for(i=0;i<n;i++)
       a[i]=1;
       for(i=0;i<n;i++)
       {
-                        scanf("%d",&d[i].h);
+                        my_scanf("%d",&d[i].h);
                         d[i].x=i;
       }
       qsort(d,n,sizeof(struct dian),Compare);
@@ -56,7 +56,7 @@ int main_bench()
                         if(a[k]>max)
                         max=a[k];
        }                                 
-      printf("%d",max);
+      my_printf("%d",max);
       free(d);
       free(a);
       getchar();

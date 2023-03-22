@@ -3,16 +3,16 @@
 int main_bench()
 {
    int k,i,j,l,m,n,s=0,p=0,r=0,q=0,sum;
-   scanf("%d",&k);
+   my_scanf("%d",&k);
       int a[1000][1000];
    for(i=0;i<k;i++)
    {
-      scanf("%d%d",&m,&n);
+      my_scanf("%d%d",&m,&n);
       for(j=1;j<=m;j++)
       {
          for(l=1;l<=n;l++)
          { 
-            scanf("%d",&a[j][l]);
+            my_scanf("%d",&a[j][l]);
           }
        }
       for(j=1;j<=n;j++)
@@ -26,7 +26,7 @@ int main_bench()
              r=r+a[j][n];
            }
       sum=s+p+r+q-a[1][1]-a[m][1]-a[1][n]-a[m][n];
-      printf("%d\n",sum);
+      my_printf("%d\n",sum);
       s=0;
       q=0;
       p=0;

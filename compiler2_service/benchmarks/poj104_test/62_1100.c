@@ -9,6 +9,6 @@ int main_bench(){
 		if(a[i]==' '&&a[i-1]==' ')
 			strcpy(&a[i-1],&a[i]);
 	}
-	printf("%s",a);
+	my_printf("%s",a);
 	return 0;
 }

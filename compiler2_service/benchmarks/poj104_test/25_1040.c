@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int a[101]={0},k=1,i,n,j,r=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	a[0]=1;
 	for(i=0;i<n;i++)
 	{
@@ -23,6 +23,6 @@ int main_bench()
 	if(r)
 		a[k]=r;
 	for(i=k-1;i>=0;i--)
-		printf("%d",a[i]);
+		my_printf("%d",a[i]);
 	return 0;
 }

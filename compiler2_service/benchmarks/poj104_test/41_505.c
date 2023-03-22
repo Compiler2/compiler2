@@ -69,6 +69,6 @@ int main_bench ()
         }
         if (k) break;
     }
-    printf("%d %d %d %d %d",a,b,c,d,e);
+    my_printf("%d %d %d %d %d",a,b,c,d,e);
     return 0;
 }

@@ -4,9 +4,9 @@ int main_bench()
 {
 	int all(int,int,int);
 	int year1,year2,month1,month2,date1,date2;
-	scanf("%d%d%d",&year1,&month1,&date1);
-    scanf("%d%d%d",&year2,&month2,&date2);
-	printf("%d\n",all(year2,month2,date2)-all(year1,month1,date1));
+	my_scanf("%d%d%d",&year1,&month1,&date1);
+    my_scanf("%d%d%d",&year2,&month2,&date2);
+	my_printf("%d\n",all(year2,month2,date2)-all(year1,month1,date1));
 	return 0;
 }
 int all(int year,int month,int date)

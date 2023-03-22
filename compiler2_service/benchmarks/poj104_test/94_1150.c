@@ -4,10 +4,10 @@ int main_bench()
 {
 	
 	int n,i,j,k,a[500],sum=0,b[500];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		scanf("%d",&a[i-1]);
+		my_scanf("%d",&a[i-1]);
 		if ((a[i-1]%2)!=0)
 			{
 				sum+=1;
@@ -28,9 +28,9 @@ int main_bench()
 
 	for(i=1;i<=sum;i++)
 		{
-			printf("%d",b[i-1]);
+			my_printf("%d",b[i-1]);
 			if(i==sum) break;
-			printf(",");
+			my_printf(",");
 	}
 		return 0;
 }

@@ -8,7 +8,7 @@ int main_bench()
 	int t,i,m,n,l,count;
 	char a[100000];
 	char temp[100000];
-	scanf("%d",&t);
+	my_scanf("%d",&t);
 	getchar();
 	for(i=1;i<=t;i++){
 		gets(a);
@@ -22,14 +22,14 @@ int main_bench()
 				}
 			}
 			if(temp[m]==1){
-				printf("%c\n",*(a+m));
+				my_printf("%c\n",*(a+m));
 				break;
 			}else{
 				count++;
 			}
 		}
 		if(count==l){
-			printf("no\n");
+			my_printf("no\n");
 		}
 		
 	}

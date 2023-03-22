@@ -9,6 +9,6 @@ int main_bench()
 	for(i=1;(c=s[i])!='\0';i++)
 		s1[i]=s[i-1]+s[i];
 	for(i=1;i<len;i++)
-		printf("%c",s1[i]);
-	printf("%c\n",s[0]+s[len-1]);
+		my_printf("%c",s1[i]);
+	my_printf("%c\n",s[0]+s[len-1]);
 }

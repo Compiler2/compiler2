@@ -7,12 +7,12 @@ int main_bench()
 	int b[20000];
 
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 
 
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	
 	b[0]=0;
 
@@ -30,12 +30,12 @@ int main_bench()
 
 	}
 
-	printf("%d",a[0]);
+	my_printf("%d",a[0]);
 
 	for(p=1;p<n;p++)
 	{
 		if(b[p]==0)
-			printf(" %d",a[p]);
+			my_printf(" %d",a[p]);
 	}
 	
 

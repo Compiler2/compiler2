@@ -19,6 +19,6 @@ b[j]=a[i];
 j++;
 }
 }
-printf("%s",b);
+my_printf("%s",b);
 return 0;
 }

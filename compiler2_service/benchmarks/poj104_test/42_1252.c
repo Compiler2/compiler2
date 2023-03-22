@@ -7,14 +7,14 @@ int main_bench()
          int m=0;
          int s=0;
          int a[100000];
-         scanf("%d",&n);
+         my_scanf("%d",&n);
          for(i;i<n;i++)
          {
-                  scanf("%d",&a[i]);
+                  my_scanf("%d",&a[i]);
                   m++;
          }
 
-         scanf("%d",&k);
+         my_scanf("%d",&k);
          while (s!=m)
          {
                   if(a[s]==k)
@@ -26,8 +26,8 @@ int main_bench()
                   }
                   else s++;
          }
-         printf("%d",a[0]);
+         my_printf("%d",a[0]);
          for(i=1;i<m;i++)
-         printf(" %d",a[i]);
+         my_printf(" %d",a[i]);
 
 }

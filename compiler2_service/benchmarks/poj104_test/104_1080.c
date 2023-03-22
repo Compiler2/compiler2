@@ -15,7 +15,7 @@ int count(int b,int c)
 int main_bench()
 { 
 	int n,m,p[2000]={0},sum=0,tmp;
-	scanf("%d%d",&n,&m);
+	my_scanf("%d%d",&n,&m);
 	if (n>m)
 	{
 		tmp=n;
@@ -31,7 +31,7 @@ int main_bench()
 	{
 		if (p[m]) 
 		{
-			printf("%d",m);
+			my_printf("%d",m);
 			return;
 		}
 		m=m/2;

@@ -5,7 +5,7 @@ int main_bench()
     int k , i ,j ,len;
     int str[100];
     memset( str , 0 ,sizeof( str )  );
-    scanf("%d",&k);
+    my_scanf("%d",&k);
     str[0]  = 2;
     len =1;
     for( i = 2 ;i <= k; i ++ )
@@ -23,10 +23,10 @@ int main_bench()
          len ++;
     }
     
-    if( k == 0 )printf("1");
+    if( k == 0 )my_printf("1");
     else
     {
     for( i = len-1;i >= 0 ;i-- )
-    printf("%d",str[i]);
+    my_printf("%d",str[i]);
      }
 }

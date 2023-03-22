@@ -23,15 +23,15 @@ int main_bench()
 {
 	int m,x,j,k;
 	
-	scanf ( "%d", &m );
+	my_scanf ( "%d", &m );
 	
 	for( j = 1;j <= m; j++ )
 	{
-		scanf ( "%d", &x );
+		my_scanf ( "%d", &x );
 		
 		k = factor ( x, 2);
 		
-		printf ( "%d\n", k);
+		my_printf ( "%d\n", k);
 	}
 
 	return 0;

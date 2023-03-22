@@ -20,10 +20,10 @@ int main_bench()
 			end=i-1;
 		}
 		while(begin<=end){
-			printf("%c",a[begin]);
+			my_printf("%c",a[begin]);
 			begin++;
 		}
-		printf("\n");
+		my_printf("\n");
 		i++;
 	}
 	return 0;

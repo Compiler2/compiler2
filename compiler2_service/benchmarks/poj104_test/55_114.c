@@ -28,7 +28,7 @@ int main_bench()
 	char str[100]={0};
 	long a, b;
 	long num;
-	scanf("%d %s %d", &a, str, &b);
+	my_scanf("%d %s %d", &a, str, &b);
 	int len=0, i;
 	while (str[len]>0)
 		len++; 

@@ -23,18 +23,18 @@ int jizu(int x)
 int main_bench()
 {
   int n;
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   int a[100];
   for(int i=0;i<=n-1;i++)
    {
-     scanf("%d",&a[i]);      
+     my_scanf("%d",&a[i]);      
    }
   for(int i=0;i<=n-1;i++)
    {
-    printf("%d\n",jizu(a[i])+1);
+    my_printf("%d\n",jizu(a[i])+1);
      p=0,q=2;      
    }  
  int y;
- scanf("%d",&y);    
+ my_scanf("%d",&y);    
     
 }

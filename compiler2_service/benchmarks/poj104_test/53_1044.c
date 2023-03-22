@@ -6,10 +6,10 @@ int main_bench()
 	t=0;
 	int a[300];
 	int b[300];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n-1;i++)
-		scanf("%d ",&a[i]);
-	scanf("%d",&a[n-1]);
+		my_scanf("%d ",&a[i]);
+	my_scanf("%d",&a[n-1]);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<i;j++)
@@ -26,6 +26,6 @@ int main_bench()
 		}
 	}
 	for(i=0;i<t-1;i++)
-		printf("%d,",b[i]);
-	printf("%d",b[t-1]);
+		my_printf("%d,",b[i]);
+	my_printf("%d",b[t-1]);
 }

@@ -20,7 +20,7 @@ int main_bench()
 				if(s[i]==a)
 				{
 					s[i]='0';s[j]='0';
-					printf("%d %d\n",i,j);
+					my_printf("%d %d\n",i,j);
 					break;
 				}
 			}

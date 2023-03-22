@@ -6,7 +6,7 @@ int main_bench()
 	char c;
 	for(i=1;i<=300;i++)
 	{
-		scanf("%d%c",&a[i],&c);
+		my_scanf("%d%c",&a[i],&c);
 		if(c=='\n') break;
 	}
 	n=i;
@@ -24,8 +24,8 @@ int main_bench()
 		}
 	}
 	if(n==1||second==-1)
-		printf("No\n");
-	else printf("%d\n",second);
+		my_printf("No\n");
+	else my_printf("%d\n",second);
 	return 0;
 }
 

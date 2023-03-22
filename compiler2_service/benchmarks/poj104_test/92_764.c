@@ -5,15 +5,15 @@ int main_bench()
     int i,j,n,k,money,tf,ts,wf,ws;
     int tj[1000],qw[1000];
     money=0;
-    while(scanf("%d",&n)&&(n!=0))
+    while(my_scanf("%d",&n)&&(n!=0))
     {
                  for(i=0;i<n;i++)
                  {
-                                      scanf("%d",&tj[i]);                    
+                                      my_scanf("%d",&tj[i]);                    
                  }
                  for(i=0;i<n;i++)
                  {
-                                      scanf("%d",&qw[i]);
+                                      my_scanf("%d",&qw[i]);
                  }            
                  for(i=0;i<n-1;i++)
                  {
@@ -83,7 +83,7 @@ int main_bench()
                                      wf++;
                                 }
                 }
-                printf("%d\n",money);
+                my_printf("%d\n",money);
                 money=0;
     }
     return 0;

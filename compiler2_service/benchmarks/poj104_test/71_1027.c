@@ -5,11 +5,11 @@ int main_bench()
     int n,i,j,s,m;
     int an[200][3]={0};
     int t[12]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     m=0;
     for (i=0;i<n;i++){
       for (j=0;j<=2;j++)
-         scanf("%d",&an[i][j]);
+         my_scanf("%d",&an[i][j]);
          }
     for (i=0;i<n;i++) {
         t[i]=0;          
@@ -37,12 +37,12 @@ int main_bench()
      }
      for (i=0;i<n;i++)
        if (t[i]%7==0){
-         printf("YES");
-         printf("\n");
+         my_printf("YES");
+         my_printf("\n");
          }
        else {
-         printf("NO");
-         printf("\n");
+         my_printf("NO");
+         my_printf("\n");
          }
      
      return 0;

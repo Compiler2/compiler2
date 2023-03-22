@@ -5,7 +5,7 @@ int main_bench()
 {
     int a[100],b[100];
 	int i=1,j=1,x,y,count=0,judge=0;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	while(x!=0)
 	{ 
 		a[i]=x;
@@ -25,7 +25,7 @@ int main_bench()
 		{
 			if(a[i]==b[j])
 			{
-				printf("%d\n",a[i]);
+				my_printf("%d\n",a[i]);
 				judge=1;
 
 				break;

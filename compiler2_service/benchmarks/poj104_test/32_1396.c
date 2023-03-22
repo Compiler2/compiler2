@@ -4,11 +4,11 @@ int main_bench()
 {
     int n,time,i,j,len1,len2;
     char a[200],b[200];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(time=0;time<n;time++)
     {
-        scanf("%s",a);
-        scanf("%s",b);
+        my_scanf("%s",a);
+        my_scanf("%s",b);
         len1=strlen(a);
         len2=strlen(b);
         j=0;
@@ -23,9 +23,9 @@ int main_bench()
         for(i=0;a[i]!=0;i++)
         {
             if(a[i]!='0')j=1;
-            if(j)printf("%c",(a[i]>='0'?a[i]:a[i]+10));
+            if(j)my_printf("%c",(a[i]>='0'?a[i]:a[i]+10));
         }
-        printf("\n");
+        my_printf("\n");
     }
     return 0;
 }

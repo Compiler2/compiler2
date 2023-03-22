@@ -22,7 +22,7 @@ int main_bench()
 		q=0;		
 	}
 
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 
     n=k-1;
 	for(i=0;i<=n-1;i++)
@@ -31,8 +31,8 @@ int main_bench()
 	  {
 	  if(a[i]+a[j]==m)
 	  {
-		  printf("%d %d",a[i],a[j]);
-		  printf("\n");
+		  my_printf("%d %d",a[i],a[j]);
+		  my_printf("\n");
 	  }
 	  }
 	

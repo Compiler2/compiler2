@@ -8,13 +8,13 @@ int reverse(int num)
 	int isFirstzero=1;
 	if (num==0)
 	{
-		printf("0\n");
+		my_printf("0\n");
 		return 0;
 	}
 	if (num<0)
 	{
 		sign='-';
-		printf("-");
+		my_printf("-");
 		num= 0-num;
 	}
 	while(num>0)
@@ -25,16 +25,16 @@ int reverse(int num)
 		}
 		else if (itemp==0 &&  isFirstzero==0)
 		{
-			printf("%d", itemp);
+			my_printf("%d", itemp);
 		}
 		else if (itemp!=0 )
 		{
 			isFirstzero =0;
-			printf("%d", itemp);
+			my_printf("%d", itemp);
 		}
 		num/=10;
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 1;
 }
@@ -43,7 +43,7 @@ int main_bench()
 	int i=0, n;
 	for (i=0; i<6; i++)
 	{
-		scanf("%d",&n);
+		my_scanf("%d",&n);
 		reverse(n);
 	}
 	return 0;

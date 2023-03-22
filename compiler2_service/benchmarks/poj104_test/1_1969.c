@@ -37,10 +37,10 @@ int zheng(int n,int i)
 int main_bench ()
 {
 	int n,i,j=0,k=0,b[10000]={0},e[40000]={0};
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&e[i]);
+		my_scanf("%d",&e[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -56,8 +56,8 @@ int main_bench ()
 
 	}
 	
-	printf("%d",b[0]);
+	my_printf("%d",b[0]);
 	for(i=1;i<n;i++)
-		printf("\n%d",b[i]);
+		my_printf("\n%d",b[i]);
 	return 0;
 }

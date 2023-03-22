@@ -17,16 +17,16 @@ int cmp(int a[],int n);
 int n,i,b[200]={0},m;
 long q=0;
   struct student a[105];
-  scanf("%d",&n);
+  my_scanf("%d",&n);
   for(i=0;i<n;i++)
   {
-	  scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].banji,&a[i].gb,&a[i].xb,&a[i].lw);
+	  my_scanf("%s %d %d %c %c %d",a[i].name,&a[i].qimo,&a[i].banji,&a[i].gb,&a[i].xb,&a[i].lw);
 	  b[i]=money(a[i]);q=q+b[i];
   }
  m =cmp(b,n);
-  printf("%s\n",a[k].name);
-  printf("%d\n",m);
-  printf("%ld",q);
+  my_printf("%s\n",a[k].name);
+  my_printf("%d\n",m);
+  my_printf("%ld",q);
 }
 
 

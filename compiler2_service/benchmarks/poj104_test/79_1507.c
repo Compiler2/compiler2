@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,m,r,i;
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	while(n&&m)
 	{
 	if(n>=2)
@@ -17,8 +17,8 @@ int main_bench()
 	}
 	else if(n==1)
 		r=1;
-		printf("%d\n",r);
-		scanf("%d %d",&n,&m);
+		my_printf("%d\n",r);
+		my_scanf("%d %d",&n,&m);
 	}
 	return 0;
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int i,n,j,l,a[500];
 	float k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0,k=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 		k=k+a[i];
 	}
 	k=k/n;
@@ -20,10 +20,10 @@ int main_bench()
 			}
 	}
 	if(k-a[0]*1.0>a[n-1]*1.0-k)
-		printf("%d",a[0]);
+		my_printf("%d",a[0]);
 	if(k-a[0]*1.0<a[n-1]*1.0-k)
-		printf("%d",a[n-1]);
+		my_printf("%d",a[n-1]);
 	if(k-a[0]*1.0==a[n-1]*1.0-k)
-		printf("%d,%d",a[0],a[n-1]);
+		my_printf("%d,%d",a[0],a[n-1]);
 	return 0;
 }

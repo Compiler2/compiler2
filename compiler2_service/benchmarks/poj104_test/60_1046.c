@@ -13,7 +13,7 @@ int f(int x){
 }
 int main_bench()
 {	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 int z=0;
 	int i,o=0;
 	int a[10000];
@@ -27,13 +27,13 @@ int z=0;
 	
 	for(i=0;i<o;i++)
 	{if(a[i]+2==a[i+1]){
-		printf("%d %d\n",a[i],a[i+1]);
+		my_printf("%d %d\n",a[i],a[i+1]);
 		z=1;
 	}
 		
 	}
 
-if(z==0) printf("empty");
+if(z==0) my_printf("empty");
 
 	return 0;
 }

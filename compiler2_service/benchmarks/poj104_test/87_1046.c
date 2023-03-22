@@ -8,7 +8,7 @@ for(l=0;l<10000;l++)
 {
 for(i=0;i<6;i++)
 {
-scanf("%d",&(y[i][l]));
+my_scanf("%d",&(y[i][l]));
 
 }
 if(y[0][l]==0)
@@ -25,6 +25,6 @@ sum[i]=sumk*60+s;
 
 }
 for(i=0;i<l;i++)
-{printf("%d\n",sum[i]);}
+{my_printf("%d\n",sum[i]);}
 return 0;
 }

@@ -3,14 +3,14 @@
 int main_bench(){
 	int n,i;
 	double s;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	if(n==0){
 		s=1;
-		printf("%.0lf",s);
+		my_printf("%.0lf",s);
 	}
 	if(n==1){
 		s=2;
-			printf("%.0lf",s);
+			my_printf("%.0lf",s);
 	
 	}
 	if(n>=2){
@@ -20,7 +20,7 @@ int main_bench(){
 			s=2*s;
 			i++;
 		}
-		printf("%.0lf",s);
+		my_printf("%.0lf",s);
 	}
 	
 	return 0;

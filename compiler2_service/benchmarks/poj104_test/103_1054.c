@@ -7,7 +7,7 @@ int main_bench()
     int e[1000];
     for(g=0;g<1000;g++)
     e[g]=0;
-    scanf("%s",a);
+    my_scanf("%s",a);
     c=strlen(a);
     for(b=0;b<c;b=b+e[b])
     {
@@ -24,9 +24,9 @@ int main_bench()
                        if(e[f]!=0)
                        {
                                   if(a[f]>'Z')
-                                  printf("(%c,%d)",a[f]-32,e[f]);
+                                  my_printf("(%c,%d)",a[f]-32,e[f]);
                                   else
-                                  printf("(%c,%d)",a[f],e[f]);
+                                  my_printf("(%c,%d)",a[f],e[f]);
                                   }
                                   }
                                   }

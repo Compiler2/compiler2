@@ -27,16 +27,16 @@ int f(int shu,int min)
 int main_bench()
 {
       int n,i,a;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       
       for(i=0;i<n;i++)
       {
-          scanf("%d",&a);
+          my_scanf("%d",&a);
           
           if(i!=n-1)                                                        
-           printf("%d\n",f(a,2));
+           my_printf("%d\n",f(a,2));
            else
-           printf("%d",f(a,2));                           
+           my_printf("%d",f(a,2));                           
                                       
                      
                       

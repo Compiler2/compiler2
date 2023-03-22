@@ -3,13 +3,13 @@
 int main_bench()
 {
 	int n,b,c,i=1;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	b=0;
 	c=0;
 	do
 	{
 		int a;
-		scanf("%d",&a);
+		my_scanf("%d",&a);
 		if(a>b)
 		{
 			c=b;
@@ -29,6 +29,6 @@ int main_bench()
 		i=i+1;
 	}
 	while(i<=n);
-	printf("%d\n%d",b,c);
+	my_printf("%d\n%d",b,c);
 }
 

@@ -6,12 +6,12 @@ int main_bench(){
 	gets(zfc);
 	for(i=0;zfc[i]!='\0';i++){
 		if(zfc[i]!=' '){
-			printf("%c",zfc[i]);
+			my_printf("%c",zfc[i]);
 		}else{
 			if(zfc[i+1]==' '){
 				continue;
 			}else{
-				printf(" ");
+				my_printf(" ");
 			}
 		}
 	}

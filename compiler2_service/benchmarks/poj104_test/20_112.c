@@ -51,7 +51,7 @@ int main_bench()
 	}
 	for(i=0;i<n;i++)
 	{
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 	}
 }
  

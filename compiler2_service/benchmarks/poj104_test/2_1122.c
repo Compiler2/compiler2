@@ -4,14 +4,14 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	struct{
 		int a;
 		char s[26];
 	}zuozhe[1000];
 	int i, k;
 	for(i=0;i<n;i++){
-		scanf("%d %s",&zuozhe[i].a, zuozhe[i].s);
+		my_scanf("%d %s",&zuozhe[i].a, zuozhe[i].s);
 	}
 	int c[26]={0}, d;
 	for(i=0;i<n;i++){
@@ -29,12 +29,12 @@ int main_bench()
 			c[0]=d;
 		}
 	}
-	printf("%c\n%d\n",f+65, c[0]);
+	my_printf("%c\n%d\n",f+65, c[0]);
 	for(i=0;i<n;i++){
 		d=strlen(zuozhe[i].s);
 		for(k=0;k<d;k++){
 			if(zuozhe[i].s[k]==f+65)
-				printf("%d\n",zuozhe[i].a);
+				my_printf("%d\n",zuozhe[i].a);
 		}
 	}
 	return 0;

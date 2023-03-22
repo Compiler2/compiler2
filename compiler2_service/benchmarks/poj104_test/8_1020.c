@@ -18,7 +18,7 @@ int main_bench()
 int du()
 {
 	int x;
-	scanf("%d",&x);
+	my_scanf("%d",&x);
 	return x;
 }
 int paib()
@@ -61,7 +61,7 @@ int add()
 int show()
 {
 	int i;
-	for(i=0;i<d+e-1;i++) printf("%d ",f[i]);
-	printf("%d",f[d+e-1]);
+	for(i=0;i<d+e-1;i++) my_printf("%d ",f[i]);
+	my_printf("%d",f[d+e-1]);
 	return 0;
 }

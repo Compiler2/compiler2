@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,t,h;
 	double sz[50],a[50],b[50],c[50],k;
     char s[10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	t=h=0;
 	for(i=0;i<n;i++){
-		scanf("%s %lf",s,&sz[i]);
+		my_scanf("%s %lf",s,&sz[i]);
      	if(strcmp(s,"male")==0){
 	    	a[t]=sz[i];
             t++;
@@ -43,8 +43,8 @@ int main_bench()
 		c[i+t]=b[i];
 	}
 	for(i=0;i<t+h-1;i++){
-		printf("%.2lf ",c[i]);
+		my_printf("%.2lf ",c[i]);
 	}
-	printf("%.2lf",c[t+h-1]);
+	my_printf("%.2lf",c[t+h-1]);
 	return 0;
 }	

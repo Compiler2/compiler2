@@ -3,8 +3,8 @@
 int main_bench()
 {
 	int n,a[101],i,c,j;
-    scanf("%d",&n);
-	for(i=0;i<=n-1;i=i+1)scanf("%d",&a[i]);
+    my_scanf("%d",&n);
+	for(i=0;i<=n-1;i=i+1)my_scanf("%d",&a[i]);
 	for(j=1;j<=2;j=j+1)
 	{
 		for(i=0;i<=n-2;i=i+1)
@@ -15,6 +15,6 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d\n%d",a[n-1],a[n-2]);
+	my_printf("%d\n%d",a[n-1],a[n-2]);
 }
 	

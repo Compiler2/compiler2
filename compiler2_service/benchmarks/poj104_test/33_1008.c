@@ -4,10 +4,10 @@ int main_bench()
 {
     char s[1000][1000],p[1000][1000];
     int n,i,j,m[1000];
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++)
     {
-        scanf("%s",s[i]);
+        my_scanf("%s",s[i]);
         m[i]=strlen(s[i]);
     }
     for(i=0;i<n;i++)
@@ -35,7 +35,7 @@ int main_bench()
     }
     for(i=0;i<n;i++)
     {
-        printf("%s\n",p[i]);
+        my_printf("%s\n",p[i]);
     }
     return 0;
 }

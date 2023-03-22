@@ -6,7 +6,7 @@ int main_bench() {
 	int num[5][5], max[2][5], min[2][5];
 	for(int i=0; i<5; i++) {
 		for(int j=0; j<5; j++) {
-			scanf("%d", &num[i][j]);
+			my_scanf("%d", &num[i][j]);
 		}
 	}
 	for(int i=0; i<5; i++) {
@@ -34,14 +34,14 @@ int main_bench() {
 	int count = 0;
 	for(int i=0; i<5; i++) {
 		if(min[1][max[1][i]] == i) {
-			if(count != 0) printf("\n");
-			printf("%d %d %d", i+1, max[1][i]+1, max[0][i]);
+			if(count != 0) my_printf("\n");
+			my_printf("%d %d %d", i+1, max[1][i]+1, max[0][i]);
 			count ++;
 		}
 	}
 
 	if(count == 0) {
-		printf("not found");
+		my_printf("not found");
 	}
 		return 0;
 

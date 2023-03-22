@@ -9,16 +9,16 @@ int main_bench()
       int i,j,m=0,b=1;
       for(i=0;st[i-1]!='\n';i++)
       {
-          scanf("%c",&st[i]);
+          my_scanf("%c",&st[i]);
       }
       for(i=0;su[i-1]!='\n';i++)
       {
-          scanf("%c",&su[i]);
+          my_scanf("%c",&su[i]);
           u++;
       }
       for(i=0;re[i-1]!='\n';i++)
       {
-          scanf("%c",&re[i]);
+          my_scanf("%c",&re[i]);
           e++;
       }
       for(i=0;st[i]!='\0';i++)
@@ -47,6 +47,6 @@ int main_bench()
           }
       
       }
-          printf("%s",st);
+          my_printf("%s",st);
 
 }

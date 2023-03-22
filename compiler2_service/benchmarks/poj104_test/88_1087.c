@@ -8,16 +8,16 @@ int main_bench()
 	q=a;
 	for(i=1;i<=30;i++,p++)
 	{
-		scanf("%c",p);
+		my_scanf("%c",p);
 	if(*p=='\0')
 		break;
 	}
 	for(i=1;i<=30;i++,q++)
 	{
 		if(*q>=48&&*q<=57)
-			printf("%c",*q);
+			my_printf("%c",*q);
 		else if(*(q-1)>=48&&*(q-1)<=57)
-			printf("\n");
+			my_printf("\n");
 	}
 	return 0;
 }

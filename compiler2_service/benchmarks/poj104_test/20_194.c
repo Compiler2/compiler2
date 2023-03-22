@@ -46,6 +46,6 @@ int main_bench()
 				{a[i][j]=str[i][j-3];}
 			}
 		}
-		printf("%s\n",a[i]);
+		my_printf("%s\n",a[i]);
 	}
 }

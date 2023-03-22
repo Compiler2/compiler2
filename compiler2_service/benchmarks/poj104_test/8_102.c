@@ -3,12 +3,12 @@
 int i,j,k,l,m,b[20],c[20];
 void f()
 {
-	scanf("%d%d",&l,&k);
+	my_scanf("%d%d",&l,&k);
 }
 void g(int d[20],int s)
 {   
    for(i=0;i<s;i++)
-		scanf("%d",&d[i]);
+		my_scanf("%d",&d[i]);
 }
 void h(int a[20],int n,int p)
 {
@@ -21,9 +21,9 @@ void h(int a[20],int n,int p)
 			a[i+1]=m;
 		}
 		for(i=0;i<n-1;i++)
-			printf("%d ",a[i]);
-	if(p==1)	printf("%d ",a[n-1]);
-    if(p==2)    printf("%d\n",a[n-1]);
+			my_printf("%d ",a[i]);
+	if(p==1)	my_printf("%d ",a[n-1]);
+    if(p==2)    my_printf("%d\n",a[n-1]);
 } 
 int main_bench()
 {

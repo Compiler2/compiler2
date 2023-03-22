@@ -3,7 +3,7 @@
 int main_bench()
 {int SY,SM,SD,EY,EM,ED,i,c,d,e,n;
 e=0;
-scanf("%d %d %d\n %d %d %d",&SY,&SM,&SD,&EY,&EM,&ED);	
+my_scanf("%d %d %d\n %d %d %d",&SY,&SM,&SD,&EY,&EM,&ED);	
 if(0<SY<3001&&0<EY<3001)
 {if((SY%4==0&&SY%100!=0)||(SY%400==0))
  {
@@ -69,6 +69,6 @@ for(i=SY;i<EY;i++)
 {if((i%4==0&&i%100!=0)||(i%400==0)) e=e+366;
 else e=e+365;}
 n=e+c-d;
-printf("%d",n);
+my_printf("%d",n);
 }
 }

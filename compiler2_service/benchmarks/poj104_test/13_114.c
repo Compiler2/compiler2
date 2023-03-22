@@ -4,10 +4,10 @@ int main_bench()
 {
       int a,b,c[100000],d,e;
       e=0; 
-      scanf("%d",&a);
+      my_scanf("%d",&a);
      for(b=1;b<=a;b++)
-     scanf("%d",&c[b]);
-     printf("%d",c[1]);
+     my_scanf("%d",&c[b]);
+     my_printf("%d",c[1]);
      b=2;
      while(b<=a)
      {
@@ -20,7 +20,7 @@ int main_bench()
         e=e;
         }
           if(e==0)
-          printf(" %d",c[b]);
+          my_printf(" %d",c[b]);
           b=b+1;
           }
           getchar();

@@ -30,5 +30,5 @@ int main_bench()
 	 
   }
   for(j=0;*(b+j)!='\0';j++)
-	  printf("%c",*(b+j));
+	  my_printf("%c",*(b+j));
 }

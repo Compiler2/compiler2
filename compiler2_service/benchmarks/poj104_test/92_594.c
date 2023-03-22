@@ -5,12 +5,12 @@ int main_bench()
 {
     int k;
     int T[1000],Q[1000],n;
-    while(scanf("%d",&n)&&n!=0)
+    while(my_scanf("%d",&n)&&n!=0)
     {
         for(k=0;k<n;k++)
-            scanf("%d",&T[k]);
+            my_scanf("%d",&T[k]);
         for(k=0;k<n;k++)
-            scanf("%d",&Q[k]);
+            my_scanf("%d",&Q[k]);
             
         int i,j,temp;
     int Inco[1000][1000]={0};
@@ -44,7 +44,7 @@ int main_bench()
             }
         }
     }
-        printf("%d\n",Inco[0][n-1]*200);
+        my_printf("%d\n",Inco[0][n-1]*200);
         for(k=0;k<1000;k++)
         {  T[k]=0;  Q[k]=0;     }
     }

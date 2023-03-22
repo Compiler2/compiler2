@@ -18,8 +18,8 @@ int main_bench()
 int z,i;
 for(i=1;i<=6;i++)
 {
-scanf("%d",&z);
-printf("%d\n",reserve(z));
+my_scanf("%d",&z);
+my_printf("%d\n",reserve(z));
 }
 }
 

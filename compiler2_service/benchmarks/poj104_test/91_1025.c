@@ -15,6 +15,6 @@ int main_bench()
 	}
 	str[k-1]=*p+ch[0];
     for (i=0;i<k;i++)
-		printf("%c",str[i]);
+		my_printf("%c",str[i]);
 	return 0;
 }

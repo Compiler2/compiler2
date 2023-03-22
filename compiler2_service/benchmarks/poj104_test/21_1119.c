@@ -4,10 +4,10 @@ int main_bench()
 {
 	int a[300]={0},b[300]={0},i,j,n,s;
 	float sum=0,aver,demin,demax;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -24,11 +24,11 @@ int main_bench()
 	demin=aver-b[0];
 	demax=b[n-1]-aver;
 	if(demin==demax)
-		printf("%d,%d",b[0],b[n-1]);
+		my_printf("%d,%d",b[0],b[n-1]);
 	if(demin>demax)
-		printf("%d",b[0]);
+		my_printf("%d",b[0]);
 	if(demin<demax)
-		printf("%d",b[n-1]);
+		my_printf("%d",b[n-1]);
 	return 0;
 }
 

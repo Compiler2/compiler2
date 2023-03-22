@@ -7,7 +7,7 @@ int main_bench()
 	while(1)
 	{
 		char a[50]={'0'},b[20]={'0'},c[20]={'0'};
-		scanf("%s %s",a,b);
+		my_scanf("%s %s",a,b);
 		if(a[0]=='\0')
 			break;
 		n=strlen(a);
@@ -33,7 +33,7 @@ int main_bench()
 		if(a[0]=='0')
 			break;
 		else
-		    printf("%s\n",a);
+		    my_printf("%s\n",a);
 	}
 	return 0;
 }

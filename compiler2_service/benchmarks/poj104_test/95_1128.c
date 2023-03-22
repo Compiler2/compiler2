@@ -20,9 +20,9 @@ int main_bench()
 	}
 	a=strcmp(s1,s2);
 if (a>0)
-		printf(">");
+		my_printf(">");
 	else if (a==0)
-		printf("=");
-	else printf("<");
+		my_printf("=");
+	else my_printf("<");
 
 }

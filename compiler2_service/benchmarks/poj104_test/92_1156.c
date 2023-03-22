@@ -5,9 +5,9 @@ int money(int n){
 	int *k=(int*)malloc(sizeof(int)*n);
 	int *t=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++)
-		scanf("%d",&t[i]);
+		my_scanf("%d",&t[i]);
 	for(i=0;i<n;i++)
-		scanf("%d",&k[i]);
+		my_scanf("%d",&k[i]);
 	for(i=0;i<n;i++)
 		for(j=0;j<n-1;j++)
 			if(k[j]<k[j+1]){
@@ -62,6 +62,6 @@ int money(int n){
 }
 int main_bench(){
 	int n;
-	while(scanf("%d",&n)==1&&n!=0)
-		printf("%d\n",money(n));
+	while(my_scanf("%d",&n)==1&&n!=0)
+		my_printf("%d\n",money(n));
 }

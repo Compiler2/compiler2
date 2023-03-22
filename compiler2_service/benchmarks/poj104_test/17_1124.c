@@ -42,14 +42,14 @@ int main_bench()
                 }
             }
         }
-        printf("%s\n",a);
+        my_printf("%s\n",a);
         for(i=0;i<n;i++)
         {
             for (l=0;l<j;l++)
             {
                 if(b[l]==i)
                 {
-                    printf("$");
+                    my_printf("$");
                     break;
                 }
             }
@@ -59,16 +59,16 @@ int main_bench()
             {
                 if(c[t]==i)
                 {
-                    printf("?");
+                    my_printf("?");
                     break;
                 }
             }
             if(t!=k)
             continue;
-            printf(" ");
+            my_printf(" ");
         }
 
-     printf("\n");
+     my_printf("\n");
      a[0]='\n';
     }
 }

@@ -20,7 +20,7 @@ int main_bench()
 	{
 		for(j=0;j<30;j++)
 		{
-			scanf("%c",&stu[i].number[j]);
+			my_scanf("%c",&stu[i].number[j]);
 			if(stu[i].number[j]==' '||stu[i].number[j]=='d')
 			{
 				break;
@@ -40,7 +40,7 @@ int main_bench()
 		}
 		for(j=0;j<30;j++)
 		{
-			scanf("%c",&stu[i].name[j]);
+			my_scanf("%c",&stu[i].name[j]);
 			if(stu[i].name[j]==' ')
 			{
 				break;
@@ -50,13 +50,13 @@ int main_bench()
 				lengthofname[i]+=1;
 			}
 		}
-		scanf("%c",&stu[i].gender);
+		my_scanf("%c",&stu[i].gender);
 		getchar();
-		scanf("%d",&stu[i].age);
+		my_scanf("%d",&stu[i].age);
 		getchar();
 		for(j=0;j<30;j++)
 		{
-			scanf("%c",&stu[i].score[j]);
+			my_scanf("%c",&stu[i].score[j]);
 			if(stu[i].score[j]!=' ')
 			{
 				lengthofscore[i]+=1;
@@ -68,7 +68,7 @@ int main_bench()
 		}
 		for(j=0;j<30;j++)
 		{
-			scanf("%c",&stu[i].add[j]);
+			my_scanf("%c",&stu[i].add[j]);
 			if(stu[i].add[j]!='\n')
 			{
 				lengthofadd[i]+=1;
@@ -86,49 +86,49 @@ int main_bench()
 				
 				for(j=0;j<lengthofnumber[i];j++)
 				{
-					printf("%c",stu[i].number[j]);
+					my_printf("%c",stu[i].number[j]);
 				}
-				printf(" ");
+				my_printf(" ");
 				for(j=0;j<lengthofname[i];j++)
 				{
-					printf("%c",stu[i].name[j]);
+					my_printf("%c",stu[i].name[j]);
 				}
-				printf(" ");
-				printf("%c ",stu[i].gender);
-				printf("%d ",stu[i].age);
+				my_printf(" ");
+				my_printf("%c ",stu[i].gender);
+				my_printf("%d ",stu[i].age);
 				for(j=0;j<lengthofscore[i];j++)
 				{
-					printf("%c",stu[i].score[j]);
+					my_printf("%c",stu[i].score[j]);
 				}
-				printf(" ");
+				my_printf(" ");
 				for(j=0;j<lengthofadd[i];j++)
 				{
-					printf("%c",stu[i].add[j]);
+					my_printf("%c",stu[i].add[j]);
 				}
-				printf("\n");
+				my_printf("\n");
 				i--;
 			}
 	
 			for(j=0;j<lengthofnumber[0];j++)
 			{
-				printf("%c",stu[0].number[j]);
+				my_printf("%c",stu[0].number[j]);
 			}
-			printf(" ");
+			my_printf(" ");
 			for(j=0;j<lengthofname[0];j++)
 			{
-				printf("%c",stu[0].name[j]);
+				my_printf("%c",stu[0].name[j]);
 			}
-			printf(" ");
-			printf("%c ",stu[0].gender);
-			printf("%d ",stu[0].age);
+			my_printf(" ");
+			my_printf("%c ",stu[0].gender);
+			my_printf("%d ",stu[0].age);
 			for(j=0;j<lengthofscore[0];j++)
 				{
-					printf("%c",stu[0].score[j]);
+					my_printf("%c",stu[0].score[j]);
 				}
-			printf(" ");
+			my_printf(" ");
 			for(j=0;j<lengthofadd[0];j++)
 			{
-				printf("%c",stu[0].add[j]);
+				my_printf("%c",stu[0].add[j]);
 			}	
 	return 0;
 }

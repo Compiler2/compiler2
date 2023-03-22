@@ -5,7 +5,7 @@ int main_bench()
 {   
 	long int a[5],b[5],c[5],ts[5],i;
 	for(i=1;i<=5;i++)
-	scanf("%ld %ld %ld",&a[i],&b[i],&c[i]);
+	my_scanf("%ld %ld %ld",&a[i],&b[i],&c[i]);
 	for(i=1;i<=5;i++)
 	{
 	switch(b[i])
@@ -27,8 +27,8 @@ case 12:ts[i]=c[i]+334;break;
 	if((a[i]%4==0&&a[i]%100!=0||a[i]%400==0)&&b[i]>2)
 		ts[i]=ts[i]+1;
 	
-	printf("%ld",ts[i]);
-	printf("\n");
+	my_printf("%ld",ts[i]);
+	my_printf("\n");
 	
 	}
 	return 0;

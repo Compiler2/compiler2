@@ -2,11 +2,11 @@
 
 int main_bench(){
     int m,n,i,j;
-    scanf("%d%d",&m,&n);
+    my_scanf("%d%d",&m,&n);
     int sz[m+2][n+2];
     for(i=1;i<m+1;i++){
         for(j=1;j<n+1;j++){
-            scanf("%d",&sz[i][j]);
+            my_scanf("%d",&sz[i][j]);
         }
     }
     for(j=0;j<n+2;j++){
@@ -20,7 +20,7 @@ int main_bench(){
     for(i=1;i<m+1;i++){
         for(j=1;j<n+1;j++){
         if(sz[i][j]>=sz[i-1][j]&&sz[i][j]>=sz[i+1][j]&&sz[i][j]>=sz[i][j-1]&&sz[i][j]>=sz[i][j+1])
-        printf("%d %d\n",i-1,j-1);
+        my_printf("%d %d\n",i-1,j-1);
         }
     }
     return 0;

@@ -6,9 +6,9 @@ int b[100];
 int c[200];
 void passed1()
 {
-	scanf("%d %d",&n,&m);
-	for(i=0;i<n;i++) scanf("%d",&a[i]);
-	for(i=0;i<m;i++) scanf("%d",&b[i]);
+	my_scanf("%d %d",&n,&m);
+	for(i=0;i<n;i++) my_scanf("%d",&a[i]);
+	for(i=0;i<m;i++) my_scanf("%d",&b[i]);
 }
 void passed2()
 {
@@ -46,8 +46,8 @@ void passed3()
 }
 void passed4()
 {
-	printf("%d",c[0]);
-	for(i=1;i<n+m;i++) printf(" %d",c[i]);
+	my_printf("%d",c[0]);
+	for(i=1;i<n+m;i++) my_printf(" %d",c[i]);
 }
 int main_bench()
 {

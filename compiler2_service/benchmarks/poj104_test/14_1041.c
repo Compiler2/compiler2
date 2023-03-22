@@ -15,10 +15,10 @@ int main_bench()
 	int max1=0,max2=0,max3=0;
 	int maxid1=0,maxid2=0,maxid3=0;
 
-	scanf("%d", &n );
+	my_scanf("%d", &n );
 	for ( i = 0 ; i < n ; i ++ )
 	{
-		scanf("%d %d %d", &stu[i].id , &stu[i].chinese ,&stu[i].math );
+		my_scanf("%d %d %d", &stu[i].id , &stu[i].chinese ,&stu[i].math );
 		stu[i].sum = stu[i].math + stu[i].chinese;
 		if ( stu[i].sum > max1 )
 		{
@@ -42,6 +42,6 @@ int main_bench()
 			maxid3 = stu[i].id ;
 		}
 	}
-	printf("%d %d\n%d %d\n%d %d" , maxid1,max1,maxid2,max2,maxid3,max3);
+	my_printf("%d %d\n%d %d\n%d %d" , maxid1,max1,maxid2,max2,maxid3,max3);
 	return 0;
 }

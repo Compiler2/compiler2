@@ -14,14 +14,14 @@ void reverse( int x )
 			if ( s[i] > '0' && s[i] <= '9')
 			{
 				for ( j = i ; j >= 0 ; j --)
-					printf("%c" , s[j]);
+					my_printf("%c" , s[j]);
 				break ;
 			}
 		}
 	}
 	else 
 	{
-		printf("-");
+		my_printf("-");
 		reverse(-x);
 	}
 }
@@ -31,9 +31,9 @@ int main_bench()
 	int i , num ;
 	for ( i = 0 ; i < 6 ; i ++)
 	{
-		scanf("%d", &num);
+		my_scanf("%d", &num);
 		reverse(num);
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

@@ -11,11 +11,11 @@ int main_bench()
 		if(c[i]==' ')
 		{
 			for(j=i+1;j<t;j++)
-				printf("%c",c[j]);
+				my_printf("%c",c[j]);
             t=i;
-            printf(" ");
+            my_printf(" ");
 		}
 	for(j=0;j<t;j++)
-		printf("%c",c[j]);
-	printf("\n");
+		my_printf("%c",c[j]);
+	my_printf("\n");
 }

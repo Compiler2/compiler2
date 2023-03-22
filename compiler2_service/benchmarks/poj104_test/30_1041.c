@@ -4,7 +4,7 @@ int main_bench()
 {
     int n,i,m;
 	m=0;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=n;i>0;i--)
 {
     if(i/10!=7)
@@ -12,7 +12,7 @@ int main_bench()
 			if(i%7!=0)
                m=m+i*i;
 }
-    printf("%d",m);
+    my_printf("%d",m);
     return 0;
 }
 	

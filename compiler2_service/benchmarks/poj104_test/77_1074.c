@@ -23,7 +23,7 @@ void ry(int y[])
               y[i]=0;
               y[j]=0;
               count+=2;
-              printf("%d %d\n",i,j);
+              my_printf("%d %d\n",i,j);
               ry(y);
               return;                
            }

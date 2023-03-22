@@ -5,10 +5,10 @@ int main_bench()
 	int n,i,j,m,z,y=0;
 	int x[100];
 	int *pint;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		if(m==0)
 		{
 			x[i]=60;
@@ -17,7 +17,7 @@ int main_bench()
 		}
 		pint=(int*)malloc(sizeof(int)*m);
 		for(j=0;j<m;j++)
-		scanf("%d",&pint[j]);
+		my_scanf("%d",&pint[j]);
 		for(j=0;j<m;j++)
 		{
 		z=pint[j]+(j+1)*3;
@@ -31,7 +31,7 @@ int main_bench()
 		}
 	}
 		for(i=0;i<n;i++)
-		printf("%d\n",x[i]);
+		my_printf("%d\n",x[i]);
 		if(!(n==1 && y==1))
 	      free(pint);
          return 0;

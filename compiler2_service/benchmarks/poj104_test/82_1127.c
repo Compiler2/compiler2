@@ -4,9 +4,9 @@ int main_bench()
 {
     int n,i,j=0,k,a;
     int xy[101][2],xs[101]={0};
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=0;i<n;i++){
-        scanf("%d%d",&xy[i][0],&xy[i][1]);}
+        my_scanf("%d%d",&xy[i][0],&xy[i][1]);}
     for(i=0;i<n;i++){
         if(xy[i][0]>=90&&xy[i][0]<=140&&xy[i][1]>=60&&xy[i][1]<=90)
             xs[j]++;
@@ -17,7 +17,7 @@ int main_bench()
                             a=xs[k];
                             xs[k]=xs[k+1];
                             xs[k+1]=a;}}}
-    printf("%d",xs[100]);
+    my_printf("%d",xs[100]);
     
     return 0;
 }

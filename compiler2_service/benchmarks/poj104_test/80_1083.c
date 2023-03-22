@@ -5,8 +5,8 @@ int main_bench()
 	int date1[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int date2[12]={31,28,31,30,31,30,31,31,30,31,30,31};
 	int a,b,c,d,e,f;
-	scanf("%d %d %d",&a,&b,&c);
-    scanf("%d %d %d",&d,&e,&f);
+	my_scanf("%d %d %d",&a,&b,&c);
+    my_scanf("%d %d %d",&d,&e,&f);
     int result;
     
 	int x1,sumshou=0;
@@ -91,6 +91,6 @@ int main_bench()
 		}
 		result=sumwei+sumshou+sumzhong;
 	}
- printf("%d",result);
+ my_printf("%d",result);
  	return 0;
 }

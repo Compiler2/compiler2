@@ -9,7 +9,7 @@ int main_bench()
 	gets(c);
 	l=strlen(c);
 	for(i=0;i<=l-1;i++){
-		printf("%c",c[i]+c[(i+1)%l]);
+		my_printf("%c",c[i]+c[(i+1)%l]);
 	}
 	return 0;
 }

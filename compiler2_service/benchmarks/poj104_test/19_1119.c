@@ -23,9 +23,9 @@ int main_bench(){
 		}
 	}
 	for (p=0;p<j;p++){
-	printf("%s ",xc[p]);
+	my_printf("%s ",xc[p]);
 	}
-	printf("%s",xc[j]);
+	my_printf("%s",xc[j]);
 	return 0;
 
 }

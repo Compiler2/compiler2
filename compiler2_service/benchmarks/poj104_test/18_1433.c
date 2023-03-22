@@ -52,14 +52,14 @@ void xj(int a[][102],int k)
 int main_bench()
 {
     int i,k;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	for(i=0;i<k;i++)
 	{
 		int j,l,sum=0,a[102][102];
 		for(j=0;j<k;j++)
 		{
 			for(l=0;l<k;l++)
-				scanf("%d",&a[j][l]);
+				my_scanf("%d",&a[j][l]);
 		}
 		for(j=0;j<k-1;j++)
 		{
@@ -69,6 +69,6 @@ int main_bench()
 		   sum=sum+temp;
 		   xj(a,k-j);
 		}
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
 	}		
 }

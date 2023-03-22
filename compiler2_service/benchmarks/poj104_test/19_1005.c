@@ -22,12 +22,12 @@ int main_bench()
 	{
 		strcpy(c[j],b);
 	}
-	printf("%s ",c[j]);
+	my_printf("%s ",c[j]);
 	}
 	if(strcmp(c[n-1],a)==0)
 	{
 		strcpy(c[n-1],b);
 	}
-	printf("%s",c[n-1]);
+	my_printf("%s",c[n-1]);
 	return 0;
 }

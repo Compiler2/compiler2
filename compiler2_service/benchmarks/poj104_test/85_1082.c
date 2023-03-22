@@ -26,9 +26,9 @@ int main_bench()
 			}
 		}
 		if(j==len)
-			printf("yes\n");
+			my_printf("yes\n");
 		else
-			printf("no\n");
+			my_printf("no\n");
 	}
 	return 0;
 }

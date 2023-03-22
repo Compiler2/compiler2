@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int s[100][100],h,l,k,m,n,i,j,w,sum;
-	scanf("%d",&k);
+	my_scanf("%d",&k);
 	
 	for(l=1;l<=k;l++)
 	{
-		scanf("%d %d",&m,&n);
+		my_scanf("%d %d",&m,&n);
 		w=m;
 		h=n;
 	   i=0;
@@ -16,7 +16,7 @@ int main_bench()
 		   j=0;
 		   while(j<n)
 		   {
-			   scanf("%d",&s[i][j]);
+			   my_scanf("%d",&s[i][j]);
 			   j++;
 		   }
 		i++;
@@ -64,7 +64,7 @@ int main_bench()
         {
             sum=0;
         }
-        printf("%d\n",sum);
+        my_printf("%d\n",sum);
     }
     return 0;
 }

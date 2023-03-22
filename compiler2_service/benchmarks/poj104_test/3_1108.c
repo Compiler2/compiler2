@@ -4,10 +4,10 @@ int main_bench()
 {
     int n,k,i,j,c,tag=0;
     int a[1000];
-    scanf("%d%d",&n,&k);
+    my_scanf("%d%d",&n,&k);
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        my_scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
@@ -20,7 +20,7 @@ int main_bench()
         }
         if(tag==1)break;
     }
-    if(tag==1)printf("yes");
-    if(tag==0)printf("no");
+    if(tag==1)my_printf("yes");
+    if(tag==0)my_printf("no");
     return 0;
 }

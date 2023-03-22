@@ -63,7 +63,7 @@ static int rand_nums_len = sizeof(rand_nums) / sizeof(int);
 
 
 /********* Overload print/scan for better measurement ************/ 
-inline int printf(const char *restrict text, ...) {
+int my_printf(const char *restrict text, ...) {
   return 0;
 }
 
@@ -75,7 +75,7 @@ static inline void set_rand() {
 }
 
 
-inline int scanf(const char *restrict text, ...) {
+int my_scanf(const char *restrict text, ...) {
     char types[10];
     int n = 0;
     for (int i = 0; text[i] != '\0'; i++){
@@ -90,7 +90,7 @@ inline int scanf(const char *restrict text, ...) {
 
 
     for (int i = 0; i < n; i++) {
-        printf("scanf_num = %d, i = %d\n", scanf_num, i);
+        // printf("scanf_num = %d, i = %d\n", scanf_num, i);
         // Accessing current variable and pointing to next
         if (types[i] == 'd'){
             // printf("Rand int = %d %d\n\n", scanf_num, rand_nums[scanf_num]);
@@ -115,27 +115,47 @@ inline int scanf(const char *restrict text, ...) {
     return 0;
 }
 
-inline int getchar(){
+int getchar(){
     char ch = (char) (rand_nums[scanf_num]);
     scanf_num = (scanf_num + 1) % rand_nums_len;
     return ch;
 }
 
+int putchar(int character){
+    return 0;
+}
+
+char *gets(char *str){
+    my_scanf("%s", str);
+    return 0;
+}
+
+int puts(const char *str){
+    return 0;
+}
+
 
 int main_bench();
 
-int main(){
-    long mtime, s, us;
-    struct timeval Start, End; 
+int main(int argc, char *argv[]){
+    // long mtime, s, us;
+    // struct timeval Start, End; 
 
-    gettimeofday(&Start, 0);
-    do{
+    // gettimeofday(&Start, 0);
+    // int i = 0;
+    // do{
+    //     set_rand();
+    //     main_bench(); i++;
+    //     gettimeofday(&End, 0);
+    //     s = End.tv_sec - Start.tv_sec;
+    //     us = End.tv_usec - Start.tv_usec;
+    //     mtime = (s * 1000 + us / 1000.0) + 0.5;
+    // }while (mtime < 100); // 10 ms is min for hpctoolkit to get samples
+
+    // printf("%s %d\n", argv[1], i);
+
+    for (int i = 0; i < NUM_ITER; i++){
         set_rand();
         main_bench();
-        gettimeofday(&End, 0);
-        s = End.tv_sec - Start.tv_sec;
-        us = End.tv_usec - Start.tv_usec;
-        mtime = (s * 1000 + us / 1000.0) + 0.5;
-    }while (mtime < 1);
-    
+    }    
 }

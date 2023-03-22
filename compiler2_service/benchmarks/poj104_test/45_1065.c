@@ -6,7 +6,7 @@ int main_bench()
 	int b[50];
 	int i,len1,len2,j=0,n,sum[50]={0},x,k;
 	for(i=0;i<2;i++){
-			scanf("%s",a[i]);
+			my_scanf("%s",a[i]);
 		}
 	len1=strlen(a[0]);
 	len2=strlen(a[1]);
@@ -29,6 +29,6 @@ int main_bench()
 			break;
 		}
 	}
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }

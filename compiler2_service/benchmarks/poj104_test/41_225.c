@@ -47,10 +47,10 @@ int main_bench()
 								 p = (a[5] ==1) + (a[1] == 5 ) + (a[3] != 1) + (a[4] == 2);
 								 if( p == 1 && a[1] == 5)
 								 {
-									 printf("%d" ,a[1]);
+									 my_printf("%d" ,a[1]);
 								  for(i = 2 ; i<= 5 ;i++)
-									 printf(" %d" ,a[i]);
-								  printf("\n");
+									 my_printf(" %d" ,a[i]);
+								  my_printf("\n");
 								 }
 								}
 							}

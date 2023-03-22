@@ -18,8 +18,8 @@ int main_bench()
 				}
 			}
 				for(p=i;p<i+l;p++)
-					printf("%c",str[p]);
-				printf("\n");
+					my_printf("%c",str[p]);
+				my_printf("\n");
 				here: continue;
 		}
 	}

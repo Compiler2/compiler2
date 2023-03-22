@@ -9,15 +9,15 @@ struct stud
 int main_bench()
 {
 	int i,j,k,n,p;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	{	scanf("%d %d %d",&s[i].n,&s[i].m,&s[i].c);
+	{	my_scanf("%d %d %d",&s[i].n,&s[i].m,&s[i].c);
 		s[i].t=s[i].m+s[i].c;
 	}
 	for(j=0;j<3&&j<n;j++)
 	{	for(k=j+1,p=j;k<n;k++)
 			if(s[p].t<s[k].t){p=k;}
 			temp=s[j];s[j]=s[p];s[p]=temp;
-		printf("%d %d\n",s[j].n,s[j].t);
+		my_printf("%d %d\n",s[j].n,s[j].t);
 	}
 }

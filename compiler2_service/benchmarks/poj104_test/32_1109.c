@@ -5,10 +5,10 @@ int main_bench()
 	char str1[102], str2[102]; 
 	int result[102]; 
 	int n,i,j,k; 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i = 0; i < n; i++) 
          {
-		scanf("%s%s", str1, str2);
+		my_scanf("%s%s", str1, str2);
 		int borrow = 0; 
 		int len1 = strlen(str1);
 		int len2 = strlen(str2);
@@ -40,9 +40,9 @@ int main_bench()
 		for(k=0; result[k] == 0; k++);
 		for(k=0;k<len; k++) 
                   {
-			printf("%d", result[k]);
+			my_printf("%d", result[k]);
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

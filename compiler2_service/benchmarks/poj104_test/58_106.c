@@ -17,7 +17,7 @@ int main_bench()
         k=strlen(c);
       
    if(c[0]!='_'&&(c[0]<65||c[0]>122||(c[0]>90&&c[0]<97)))
-                        {printf("0\n");}
+                        {my_printf("0\n");}
                       
                     else
                     {for(j=1;j<k;j++)
@@ -28,7 +28,7 @@ int main_bench()
                                        break;
                                        }
                                         if(sum==k-1) 
-                                        printf("1\n");      
+                                        my_printf("1\n");      
                                         else
-                                        printf("0\n");
+                                        my_printf("0\n");
                                         }  }getchar();getchar();getchar();getchar();}            

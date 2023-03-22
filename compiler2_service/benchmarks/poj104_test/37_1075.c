@@ -5,10 +5,10 @@ char c[100010];
 int main_bench()
 {
 	int n,i,j;
-	scanf(" %d",&n);
+	my_scanf(" %d",&n);
 	while(n--)
 	{int flag=0;
-		scanf("%s",c);
+		my_scanf("%s",c);
 		int l=strlen(c);
 		for(i=0;i<l;i++)
 		{
@@ -17,9 +17,9 @@ int main_bench()
 			{
 				if(c[j]==c[i]) num++;
 			}
-			if(num==1) {printf("%c\n",c[i]);flag=1;break;}
+			if(num==1) {my_printf("%c\n",c[i]);flag=1;break;}
 		}
-		if(flag==0) printf("no\n");
+		if(flag==0) my_printf("no\n");
 
 
 	}

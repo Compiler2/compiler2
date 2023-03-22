@@ -4,15 +4,15 @@ int main_bench()
 {
     int count(int x,int y);
     int i,j,n,a[100],b[100];
-    scanf("%d", &n);
-    for(i=1;i<=n;i++){scanf("%d", &a[i]);}
+    my_scanf("%d", &n);
+    for(i=1;i<=n;i++){my_scanf("%d", &a[i]);}
     for(i=1;i<=n;i++){
                       b[i]=0;
                       for(j=2;j<=a[i];j++){
                                         b[i]+=count(a[i],j);
                                         }
                       }
-    for(i=1;i<=n;i++){printf("%d\n", b[i]);}
+    for(i=1;i<=n;i++){my_printf("%d\n", b[i]);}
     return 0;
 }
     

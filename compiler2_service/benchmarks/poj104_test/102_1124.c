@@ -5,9 +5,9 @@ int main_bench()
     char s[100][10],tmp[10];
     double h[100],tmp2;
     int n,i,j,first=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for (i=0;i<n;i++)
-        scanf("%s %lf",s[i],&h[i]);
+        my_scanf("%s %lf",s[i],&h[i]);
     for (i=0;i<n-1;i++)
         for (j=0;j+i<n-1;j++)
             if (h[j]>h[j+1])
@@ -23,12 +23,12 @@ int main_bench()
         if (s[i][0]=='m')
         {
            if (first==0)
-              printf(" ");
+              my_printf(" ");
            first=0;
-           printf("%.2lf",h[i]);
+           my_printf("%.2lf",h[i]);
         }
     for (i=n-1;i>=0;i--)
         if (s[i][0]=='f')
-           printf(" %.2lf",h[i]);
+           my_printf(" %.2lf",h[i]);
     return 0;
 }

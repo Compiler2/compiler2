@@ -6,12 +6,12 @@ int main_bench()
 	char c=',';
 	while(c!='\n')
 	{
-		scanf("%d%c",&x[i++],&c);
+		my_scanf("%d%c",&x[i++],&c);
 	}
 	c=',';
 	while(c!='\n')
 	{
-		scanf("%d%c",&y[j++],&c);
+		my_scanf("%d%c",&y[j++],&c);
 	}
 	n=j;
 	for(i=0;i<1000;i++)
@@ -23,5 +23,5 @@ int main_bench()
 	for(i=0;i<1000;i++)
 		if(m[i]>t)
 			t=m[i];
-	printf("%d %d",n,t);
+	my_printf("%d %d",n,t);
 }

@@ -5,17 +5,17 @@ int main_bench()
 	void inv(int *a,int n,int m);
 	int a[100];
 	int m,n,i;	
-	scanf("%d %d",&n,&m);
+	my_scanf("%d %d",&n,&m);
 	for(i=0;i<n;i++)
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	inv(a,n,m);
 	for(i=0;i<n;i++)
 	{
 		if(i!=0)
-			printf(" ");
-		printf("%d",a[i]);
+			my_printf(" ");
+		my_printf("%d",a[i]);
 	}
-	printf("\n");
+	my_printf("\n");
 }
 void inv(int *a,int n,int m)
 {	

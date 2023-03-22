@@ -7,7 +7,7 @@ int main_bench()
 	int na,nb;
 	int i;
 
-	scanf("%d %d",&a[0],&b[0]);
+	my_scanf("%d %d",&a[0],&b[0]);
 	if (a[0]!=1 && b[0]!=1)
 	{
 		for (i=0;;i++)
@@ -37,12 +37,12 @@ int main_bench()
 		 }
 		 else
 		 {
-			printf("%d",a[na+1]);
+			my_printf("%d",a[na+1]);
 			break;
 		 }
 		}
 	}
 	else
-		printf("1");
+		my_printf("1");
 }
 

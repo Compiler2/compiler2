@@ -20,8 +20,8 @@ p=0;
 }
 for(t=0;t<=j-1;t++)
 {
-printf("%s ",s[t]);
+my_printf("%s ",s[t]);
 }
-printf("%s",s[j]);
+my_printf("%s",s[j]);
 return 0;
 }

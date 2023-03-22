@@ -29,11 +29,11 @@ int main_bench()
 		 
 	}
          
-	printf("%s",m[0]);
+	my_printf("%s",m[0]);
 	for(i=1;i<=j;i++)
 	{
 			
-	printf(" %s",m[i]);
+	my_printf(" %s",m[i]);
           }
 	return 0;
 }

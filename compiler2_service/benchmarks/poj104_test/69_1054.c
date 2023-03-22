@@ -75,6 +75,6 @@ int main_bench()
 	  {m=i;break;}
   }
   for(i=m;i>=0;i--)
-  {	  printf("%d",c[i]);}
+  {	  my_printf("%d",c[i]);}
 	return 0;
 }

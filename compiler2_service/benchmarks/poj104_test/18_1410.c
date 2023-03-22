@@ -36,12 +36,12 @@ int sum(int n)
 int main_bench()
 {
     int n,i,p,q;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     for(i=1;i<=n;i++)
        {for(p=0;p<n;p++)
            for(q=0;q<n;q++)
-               scanf("%d",&a[p][q]);
-        printf("%d\n",sum(n));
+               my_scanf("%d",&a[p][q]);
+        my_printf("%d\n",sum(n));
        }
     return 0;
 }

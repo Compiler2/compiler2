@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,u[1000][1000],i,j,chang=0,bian=0,sum;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
-		scanf("%d",&u[i][j]);
+		my_scanf("%d",&u[i][j]);
 		}
 	}
 	for(i=0;i<n;i++){
@@ -31,7 +31,7 @@ int main_bench()
 		}
 	}
    sum=(chang-2)*(bian-2);
-  printf("%d",sum);
+  my_printf("%d",sum);
 	
       return 0;	
 }

@@ -9,10 +9,10 @@ int main_bench()
 		int b;
 	}
 	q[100];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++)
 	{
-		scanf("%d %d",&q[i].a,&q[i].b);
+		my_scanf("%d %d",&q[i].a,&q[i].b);
 	}
 	for(i=0;i<=99;i++)
 		k[i]=0;
@@ -32,7 +32,7 @@ int main_bench()
 		if(m<k[i])
 			m=k[i];
 	}
-	printf("%d",m);
+	my_printf("%d",m);
 	return 0;
 }
 

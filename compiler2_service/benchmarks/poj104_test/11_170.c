@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int i,year,month,day,date=0;
-	scanf("%d%d%d",&year,&month,&day);
+	my_scanf("%d%d%d",&year,&month,&day);
 	for (i=1;i<month;i++)
 	{
 		if (i==4 ||i==6 ||i==9 ||i==11)
@@ -22,6 +22,6 @@ int main_bench()
 		}
 	}
 	date =date+day;
-	printf("%d\n",date);
+	my_printf("%d\n",date);
 	return 0;
 }

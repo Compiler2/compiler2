@@ -14,22 +14,22 @@ int main_bench()
 			e2[i]+=d2[j];
 		}
 	}
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%d %d %d",&y,&m1,&m2);
+		my_scanf("%d %d %d",&y,&m1,&m2);
 		if(y%400==0||(y%4==0&&y%100!=0)){
 			int f1=(e1[m1-1]>=e1[m2-1])?(e1[m1-1]-e1[m2-1]):(e1[m2-1]-e1[m1-1]);
 			 if(f1%7==0)       
-				 printf("YES\n");
+				 my_printf("YES\n");
 			 else
-				 printf("NO\n");
+				 my_printf("NO\n");
 		}
 		else{
 			int f2=(e2[m1-1]>=e2[m2-1])?(e2[m1-1]-e2[m2-1]):(e2[m2-1]-e2[m1-1]);
 			if(f2%7==0)				
-				printf("YES\n");
+				my_printf("YES\n");
 			else
-				printf("NO\n");
+				my_printf("NO\n");
 		}
 	}
 	return 0;

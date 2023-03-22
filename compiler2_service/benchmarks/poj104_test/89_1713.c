@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,i,j,a,b,k=0;
 	int x[10000],y[10000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n*(n-1);i++)
 	{
-		scanf("%d %d",&a,&b);
+		my_scanf("%d %d",&a,&b);
 		if(a==0&&b==0)
 		{break;}
 		else
@@ -20,9 +20,9 @@ int main_bench()
 	{
 		
 		if(x[j]==0&&y[j]==n-1)
-		{printf("%d",j);
+		{my_printf("%d",j);
 		k+=1;}
 	}
 	if(k==0)
-	printf("NOT FOUND");
+	my_printf("NOT FOUND");
 }

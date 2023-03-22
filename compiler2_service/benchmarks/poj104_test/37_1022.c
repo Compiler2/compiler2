@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n;
 	char s[100001];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	gets(s);
 
 	int i;
@@ -23,13 +23,13 @@ int main_bench()
 		p=s;
 		while(*p!='\0'){
 			if(1==count[(int)*p-97]){
-				printf("%c\n",*p);
+				my_printf("%c\n",*p);
 				break;
 			}
 			p++;
 		}
 		if(*p=='\0'){
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 

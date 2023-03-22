@@ -16,7 +16,7 @@ void min(int s)
 	{
 		if (isprime(i)&&isprime(s-i))
 		{
-			printf("%d=%d+%d\n",s,i,s-i);
+			my_printf("%d=%d+%d\n",s,i,s-i);
 			break;
 		}
 	}
@@ -26,7 +26,7 @@ void min(int s)
 int main_bench()
 {
 	int ni,i;
-	scanf("%d",&ni);
+	my_scanf("%d",&ni);
 	for (i=6;i<=ni;i++)
 	{
 	  if (i%2==0)

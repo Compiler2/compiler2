@@ -5,10 +5,10 @@ int main_bench()
 	int n, i, t[1000]={0}, k=0;
 	char word[1000][40]={""};
 
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0; i<n; i++)
 	{
-		scanf("%s", word[i]);
+		my_scanf("%s", word[i]);
 		t[i] = strlen(word[i]);
 	}
 
@@ -16,14 +16,14 @@ int main_bench()
 	{
 		k = k+t[i]+1;
 		if(k-1<=80 && k+t[i+1]<=80)
-			printf("%s ", word[i]);
+			my_printf("%s ", word[i]);
 		else if(k-1<=80)
-			printf("%s\n", word[i]);
+			my_printf("%s\n", word[i]);
 		else
 		{
 			k = t[i]+1;
-			printf("%s ", word[i]);
+			my_printf("%s ", word[i]);
 		}
 	}
-	printf("%s", word[n-1]);
+	my_printf("%s", word[n-1]);
 }

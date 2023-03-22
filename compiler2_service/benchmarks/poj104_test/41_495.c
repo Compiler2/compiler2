@@ -58,7 +58,7 @@ int main_bench()
                                       }
                                       if (count==5)
                                       {
-                                                   printf("%d %d %d %d %d\n",a,b,c,d,e);
+                                                   my_printf("%d %d %d %d %d\n",a,b,c,d,e);
                                       }
                           }
                      }

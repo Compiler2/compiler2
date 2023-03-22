@@ -3,12 +3,12 @@
 
 int main_bench(){
 	int n,m;
-	scanf("%d %d", &n, &m);
+	my_scanf("%d %d", &n, &m);
 	int num[100];
 	int *p=num;
 	int i;
 	for(i=0;i<n;i++){
-		scanf("%d",&num[i]);
+		my_scanf("%d",&num[i]);
 	}
 	for(i=0;i<m;i++){
 		int templast=*(p+n-1);
@@ -18,11 +18,11 @@ int main_bench(){
 		}
 		*p=templast;
 	}
-	printf("%d",*p);
+	my_printf("%d",*p);
 	for(i=1;i<n;i++){
-		printf(" %d",*(p+i));
+		my_printf(" %d",*(p+i));
 	}
-	printf("\n");
+	my_printf("\n");
 
 	return 0;
 }

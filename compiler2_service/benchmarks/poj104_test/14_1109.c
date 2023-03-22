@@ -4,10 +4,10 @@ int main_bench()
 {
 	struct student{int id,chin,math,z;}p[100000];
 	int id,math,chin,z,i,n,f,s,t,id1,id2,id3;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d%d",&id,&chin,&math);
+		my_scanf("%d%d%d",&id,&chin,&math);
 		p[i].id=id;
 		p[i].math=math;
 		p[i].chin=chin;
@@ -52,9 +52,9 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d %d\n",id1,f);
-	printf("%d %d\n",id2,s);
-	printf("%d %d\n",id3,t);
+	my_printf("%d %d\n",id1,f);
+	my_printf("%d %d\n",id2,s);
+	my_printf("%d %d\n",id3,t);
 	return 0;
 }
 	

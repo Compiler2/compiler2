@@ -10,8 +10,8 @@ int max(int a,int b)
 int main_bench()
 {
       char s1[250],s2[250],s3[250],t;
-      scanf("%s",s1);
-      scanf("%s",s2);
+      my_scanf("%s",s1);
+      my_scanf("%s",s2);
       int a,b,c,d,i;
       a=strlen(s1);
       b=strlen(s2);
@@ -61,5 +61,5 @@ int main_bench()
       for (i=0;i<=f;i++)
           if (s3[i]-'0'!=0||i==f)
              for(i;i<=f;i++)       
-                 printf ("%c",s3[i]);
+                 my_printf ("%c",s3[i]);
 } 

@@ -6,11 +6,11 @@ int main_bench()
 	for(i=1;i<=5;++i)
 	{
 	int count(int month,int year,int day);
-	scanf("%d %d %d",&year,&month,&day);
+	my_scanf("%d %d %d",&year,&month,&day);
 	b=count(month,year,day);
-	printf("%d\n",b);
+	my_printf("%d\n",b);
 	}
-	scanf("%d",&b);
+	my_scanf("%d",&b);
 	return 0;
 }
 

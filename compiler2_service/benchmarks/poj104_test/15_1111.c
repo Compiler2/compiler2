@@ -4,13 +4,13 @@ int main_bench()
 {
 	int n,i=0;
 	int a=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int *sz=(int*)malloc(sizeof(int)*(n*n));
 	int k;
 
 	for(k=0;k<(n*n);k++)
 	{
-		scanf("%d",&(sz[k]));
+		my_scanf("%d",&(sz[k]));
 		if(sz[k]==0){
 			i++;
 		}
@@ -30,7 +30,7 @@ int main_bench()
 	j=(i-(a)*2)/2+2;
 	int s;
 	s=(j-2)*(a-2);
-	printf("%d\n",s);
+	my_printf("%d\n",s);
 	free(sz);
 	return 0;
 }

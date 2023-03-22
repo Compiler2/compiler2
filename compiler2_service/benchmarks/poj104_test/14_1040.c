@@ -41,16 +41,16 @@ int main_bench()
     int i, n, num;
     float yw, sx, score;
 
-    scanf("%d\n", &n);
+    my_scanf("%d\n", &n);
     for(i=0;i<n;i++)
     {
-        scanf("%d %f %f", &num, &yw, &sx);
+        my_scanf("%d %f %f", &num, &yw, &sx);
         float score=yw+sx;
         sort(score, num);
     }
     for(p=Top;p<Top+3;p++)
     {
-        printf("%d %g\n", p->num, p->score);
+        my_printf("%d %g\n", p->num, p->score);
     }
 
     return 0;

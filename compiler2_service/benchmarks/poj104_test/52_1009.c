@@ -5,21 +5,21 @@ int main_bench()
   void move(int array[],int x,int y);
   int num[120];
   int i,m,n;
-  scanf("%d %d",&n,&m);
+  my_scanf("%d %d",&n,&m);
   for(i=0;i<n;i++)
   {
     if(i==n-1)
-    scanf("%d",&num[i]);
-    else scanf("%d ",&num[i]);
+    my_scanf("%d",&num[i]);
+    else my_scanf("%d ",&num[i]);
    }
    move(num,n,m);
    for(i=0;i<n;i++)
    {
      if(i==n-1)
-     printf("%d",num[i]);
-     else printf("%d ",num[i]);
+     my_printf("%d",num[i]);
+     else my_printf("%d ",num[i]);
     }
-    printf("\n");
+    my_printf("\n");
 }
  void move(int array[],int x,int y)
 {

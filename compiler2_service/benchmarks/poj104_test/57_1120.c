@@ -3,12 +3,12 @@
 int main_bench()
 {
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char w[51];
 	char *c[]={"er","ly","ing"};
 	for(int i=0;i<n;i++)
 	{
-		scanf("%s",w);
+		my_scanf("%s",w);
 		for(int j=0;j<3;j++)
 		{
 			int len=strlen(w);
@@ -16,7 +16,7 @@ int main_bench()
 			if(strcmp(c[j],w+len-slen)==0)
 			{
 				w[len-slen]=0;
-				printf("%s\n",w);
+				my_printf("%s\n",w);
 				break;
 			}
 		}

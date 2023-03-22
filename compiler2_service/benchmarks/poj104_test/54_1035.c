@@ -5,8 +5,8 @@ int amount(int,int,int);
 int main_bench()
 {
     int monkey,discard;
-    scanf("%d%d",&monkey,&discard);
-    printf("%d\n",amount(monkey,monkey,discard));
+    my_scanf("%d%d",&monkey,&discard);
+    my_printf("%d\n",amount(monkey,monkey,discard));
     return 0;
 }
 

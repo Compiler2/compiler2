@@ -13,11 +13,11 @@ int main_bench()
 	{
 		if(i<n-1)
 		{
-			printf("%c",c[i]+c[i+1]);
+			my_printf("%c",c[i]+c[i+1]);
 		}
 		if(i==n-1)
 		{
-			printf("%c",c[i]+c[0]);
+			my_printf("%c",c[i]+c[0]);
 		}
 	}
 	return 0;

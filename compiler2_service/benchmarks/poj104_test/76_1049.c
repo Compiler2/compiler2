@@ -3,11 +3,11 @@
 int main_bench(){
     int i,j,a[50001],b[50001],count=0,qj[10001];
 	int n,amin,bmax=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<10001;i++)
 		qj[i]=0;
 	for(i=0;i<n;i++){
-	scanf("%d %d",&a[i],&b[i]);
+	my_scanf("%d %d",&a[i],&b[i]);
 	for(j=a[i];j<b[i];j++)
 		qj[j]=1;
 	}
@@ -25,9 +25,9 @@ int main_bench(){
 	count=1;
 	}
 	if(count==0)
-		printf("%d %d\n",amin,bmax);
+		my_printf("%d %d\n",amin,bmax);
 	else
-		printf("no\n");
+		my_printf("no\n");
 	return 0;
    
 

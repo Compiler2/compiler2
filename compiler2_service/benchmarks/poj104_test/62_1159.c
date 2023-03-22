@@ -209,6 +209,6 @@ int main_bench(){
 	}
 
 			
-	printf("%s",word);
+	my_printf("%s",word);
 	return 0;
 }

@@ -5,7 +5,7 @@ int main_bench ()
      int a,b,c,d,e,m,n,i,j,k,l;
      for (k=0;k<100;k++)
      {
-     scanf("%d",&n);
+     my_scanf("%d",&n);
      if (n!=0)
      {
      int f[1000];
@@ -17,11 +17,11 @@ int main_bench ()
      }
      for (i=0;i<n;i++)
      {
-         scanf("%d",&f[i]);
+         my_scanf("%d",&f[i]);
      }
      for (i=0;i<n;i++)
      {
-         scanf("%d",&g[i]);
+         my_scanf("%d",&g[i]);
      }
      for (i=0;i<n;i++)
      {
@@ -87,7 +87,7 @@ int main_bench ()
          if (c>d)              
          break;
      }
-     printf("%d\n",e);
+     my_printf("%d\n",e);
      }
      else if (n==0)
      break;

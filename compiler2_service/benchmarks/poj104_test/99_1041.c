@@ -4,9 +4,9 @@ int main_bench(){
 	int n,s;
 	double a,b,c,d;
 	a=b=c=d=0;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=1;i<=n;i++){
-		scanf("%d",&s);
+		my_scanf("%d",&s);
 		if (s<=18) a++;
 		else if (s<=35) b++;
 		else if (s<=60) c++;
@@ -16,10 +16,10 @@ int main_bench(){
 	b=b/n*100;
 	c=c/n*100;
 	d=d/n*100;
-	printf("1-18: %.2lf%%\n",a);
-	printf("19-35: %.2lf%%\n",b);
-	printf("36-60: %.2lf%%\n",c);
-	printf("60??: %.2lf%%\n",d);
+	my_printf("1-18: %.2lf%%\n",a);
+	my_printf("19-35: %.2lf%%\n",b);
+	my_printf("36-60: %.2lf%%\n",c);
+	my_printf("60??: %.2lf%%\n",d);
 	return 0;
 }
 

@@ -5,7 +5,7 @@ int main_bench()
 int m,n,i,j,l,p,q,k=0;
 
 
-scanf("%d%d",&m,&n);
+my_scanf("%d%d",&m,&n);
 
 if(m%2==0)m++;
 
@@ -23,9 +23,9 @@ for(j=3;j<i/2;j=j+2)
 
 if(j==0) continue;
 
-if(k==0) {printf("%d",i);k=1;}
-else printf(",%d",i);
+if(k==0) {my_printf("%d",i);k=1;}
+else my_printf(",%d",i);
 }
 
-if(k==0)printf("no");
+if(k==0)my_printf("no");
 }

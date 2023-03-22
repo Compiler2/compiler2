@@ -4,12 +4,12 @@ int factor(int N,int min);
 int main_bench()
 {
 	int m,n,i,k;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&m);
+		my_scanf("%d",&m);
 		k=factor(m,2);
-		printf("%d\n",k);	
+		my_printf("%d\n",k);	
 	}
 		
 	return 0;

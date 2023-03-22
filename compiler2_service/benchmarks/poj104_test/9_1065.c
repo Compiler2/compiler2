@@ -3,11 +3,11 @@
 int main_bench(){
 	int n,i,k,l,b[100],n1=0,n2=0,ha[100],pp[100],x;
 	char a[100][11],yi[100][10],er[100][10],y[11];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s",a[i]);
-		scanf("%d",&b[i]);
+		my_scanf("%s",a[i]);
+		my_scanf("%d",&b[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -51,10 +51,10 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<n1;i++){
-		printf("%s\n",yi[i]);
+		my_printf("%s\n",yi[i]);
 	}
 	for(i=0;i<n2;i++){
-		printf("%s\n",er[i]);
+		my_printf("%s\n",er[i]);
 	}
 	return 0;
 }

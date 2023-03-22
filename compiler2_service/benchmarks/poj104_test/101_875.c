@@ -40,6 +40,6 @@ l:	for(i=2;i>0;i--)
 			}
 		}
 	}
-	printf("%c%c%c",m[0],m[1],m[2]);   
+	my_printf("%c%c%c",m[0],m[1],m[2]);   
 	return 0;
 }

@@ -15,7 +15,7 @@ int main_bench()
 			while (pupils[i-j]==0) j++;
 			pupils[i]=0;
 			pupils[i-j]=0;
-			printf("%d %d\n",i-j,i);
+			my_printf("%d %d\n",i-j,i);
 		}
 		i++;
 	}

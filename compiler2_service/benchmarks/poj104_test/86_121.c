@@ -3,20 +3,20 @@
 int main_bench ()
 {
 	int n, i, j, a, sum, num[100][60];
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d", &num[i][0]);
+		my_scanf("%d", &num[i][0]);
 		for(j=1; j<=num[i][0]; j++)
 		{
-			scanf("%d", &num[i][j]);
+			my_scanf("%d", &num[i][j]);
 		}
 	}
 	for(i=0;i<n;i++)
 	{
 		if(num[i][0]==0)
 		{
-			printf("60\n");
+			my_printf("60\n");
 		}
 		else
 		{
@@ -46,7 +46,7 @@ int main_bench ()
 			{
 				sum=60-3*a;
 			}
-		    printf("%d\n", sum);
+		    my_printf("%d\n", sum);
 		}
 	}
 	return 0;

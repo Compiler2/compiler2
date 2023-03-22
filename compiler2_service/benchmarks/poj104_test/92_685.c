@@ -11,7 +11,7 @@ int main_bench()
 	int N;
 	int i,k,l,win,re;
 	int tfast, tslow, wfast, wslow;
-	while (scanf("%d", &N) && N != 0)
+	while (my_scanf("%d", &N) && N != 0)
 	{
 		for (l = 0; l < 1000; l++)
 		{
@@ -20,11 +20,11 @@ int main_bench()
 		}
 		for (i = 0; i < N; i++)
 		{
-			scanf("%d", &t[i]);
+			my_scanf("%d", &t[i]);
 		}
 		for (i = 0; i < N; i++)
 		{
-			scanf("%d", &w[i]);
+			my_scanf("%d", &w[i]);
 		}
 		qsort(t, N, sizeof(int), cmp);
 		qsort(w, N, sizeof(int), cmp);
@@ -66,7 +66,7 @@ int main_bench()
 				win--; tslow--; wfast++; 
 			} 
 		}
-		printf("%d\n", win*200);
+		my_printf("%d\n", win*200);
 		}
 		
 

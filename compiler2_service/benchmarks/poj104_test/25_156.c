@@ -4,7 +4,7 @@ int main_bench()
 {
 int i,a;
 double d;
-scanf("%d",&a);
+my_scanf("%d",&a);
 d=1;
 if(a==0){
 d=1;
@@ -14,5 +14,5 @@ for(i=1;i<=a;i++){
 d=d*2;
 }
 }
-printf("%.0lf",d);
+my_printf("%.0lf",d);
 }

@@ -5,7 +5,7 @@ int main_bench()
       int i,l,b,j,k,x;
       char c[6][1000],a[6][1000];
       for(i=0;i<=5;i++)
-      scanf("%s",c[i]);
+      my_scanf("%s",c[i]);
       for(i=0;i<=5;i++)
       {
                        l=strlen(c[i]);
@@ -42,9 +42,9 @@ int main_bench()
                       }
                       a[i][j+1]='\0';
                       if(i==0)
-                      printf("%s",a[i]);
+                      my_printf("%s",a[i]);
                       else
-                      printf("\n%s",a[i]); 
+                      my_printf("\n%s",a[i]); 
       }
       getchar();
       getchar();

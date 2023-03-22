@@ -19,8 +19,8 @@ int main_bench()
      }
      if(length==1)
      {
-         printf("0\n");
-         printf("%d",a[0]);
+         my_printf("0\n");
+         my_printf("%d",a[0]);
      }
      else
      {
@@ -65,19 +65,19 @@ int main_bench()
      }
 	 if(b[0]!=0||length==2)
 	 {
-	     printf("%d",b[0]);
+	     my_printf("%d",b[0]);
 	 }
 
 	 for(i=1;i<length-1;i++)
 	 {
-		 printf("%d",b[i]);
+		 my_printf("%d",b[i]);
 	 }
-	 printf("\n");
+	 my_printf("\n");
 	 if(a[length-2]!=0)
 	 {
-	     printf("%d",a[length-2]);
+	     my_printf("%d",a[length-2]);
 	 }
-	 printf("%d",a[length-1]);
+	 my_printf("%d",a[length-1]);
      }
      return 0;
 }

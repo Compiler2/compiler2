@@ -19,6 +19,6 @@ int main_bench()
 		b[i]=a[i]+a[i+1];
 	b[j]=a[j]+a[1];
 	for(i=1;i<=j;i++)
-		printf("%c",b[i]);
+		my_printf("%c",b[i]);
 	return 0;
 }

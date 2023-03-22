@@ -15,7 +15,7 @@ int main_bench()
         }
     }
     charReverse(str, 0, strlen(str)-1);
-    printf("%s\n", str);
+    my_printf("%s\n", str);
     return 0;
 }
 

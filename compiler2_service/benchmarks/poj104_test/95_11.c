@@ -29,20 +29,20 @@ int main_bench()
 	{
 		if ( s1[i] < s2[i] )
 		{
-			printf("<\n");
+			my_printf("<\n");
 			n++;
 			break;
 		}
 		if ( s1[i] > s2[i] )
 		{
-			printf(">\n");
+			my_printf(">\n");
 			n++;
 			break;
 		}
 	}
 	if ( n == 0 )
 	{
-		printf("=\n");
+		my_printf("=\n");
 	}
 	return 0;
 }

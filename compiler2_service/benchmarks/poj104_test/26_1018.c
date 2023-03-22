@@ -24,7 +24,7 @@ char s[101],a[101];
  }
  
  for(i=0;i<j;i++)
- {printf("%c",a[i]);}
+ {my_printf("%c",a[i]);}
  return 0;
 }
 

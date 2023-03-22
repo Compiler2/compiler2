@@ -5,7 +5,7 @@ int main_bench()
 {
     int k=0;
 	char str[300],*ps;
-	scanf("%s",str);
+	my_scanf("%s",str);
 	int ii = 0;
 	char *aa;
 	aa=(char*)malloc(sizeof(char)*27);
@@ -44,10 +44,10 @@ for(ii=0;ii<26;ii++){
 	}
 	if(k==1){
        if(sum[ii]==0) continue;
-       else if(sum[ii]!=0)  printf("%c=%d\n",*(aa+ii),sum[ii]);
+       else if(sum[ii]!=0)  my_printf("%c=%d\n",*(aa+ii),sum[ii]);
 	}
 }
-if(k!=1) printf("No");
+if(k!=1) my_printf("No");
 return 0;
 }
 	

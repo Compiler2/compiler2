@@ -5,7 +5,7 @@ int main_bench()
 {
 	int n,i,j,s[10000],t=0,k=0;
 
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 
 	for(j=n;j>=3;j--)
 	{
@@ -29,11 +29,11 @@ int main_bench()
 	{  
 	    if(s[i]+2==s[i-1])
 		{
-		printf("%d %d\n",s[i],s[i-1]);
+		my_printf("%d %d\n",s[i],s[i-1]);
 
 		t=1;
 		}
 	}
-	 if(t==0)printf("empty");
+	 if(t==0)my_printf("empty");
 	return 0;
 }

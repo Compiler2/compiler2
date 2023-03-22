@@ -28,7 +28,7 @@ int main_bench()
 {
 	int n,i,k;
 	int x,y;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	
 	for (k=6;k<=n;k=k+2)
 	{
@@ -39,7 +39,7 @@ int main_bench()
 		y=k-x;
 		if (joy(x,y)==1)
 		{		
-				printf("%d=%d+%d\n",k,x,y);
+				my_printf("%d=%d+%d\n",k,x,y);
 				break;
 		}
 	}

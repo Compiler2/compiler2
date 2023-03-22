@@ -13,7 +13,7 @@ int main_bench()
 	c=strlen(r);
     if(a==64)
 	{
-		 printf("Almost all platforms for developing WebGIS are complex extremely");
+		 my_printf("Almost all platforms for developing WebGIS are complex extremely");
 		 return 0;
 	}
 	for(int y=0;;y++)

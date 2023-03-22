@@ -5,13 +5,13 @@ int main_bench()
 {
 	int s[100][100];
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i,j,a=0,b=0;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
 		{
-			scanf("%d",&s[i][j]);		
+			my_scanf("%d",&s[i][j]);		
 		}
 	}
     for(i=0;i<n;i++)
@@ -38,6 +38,6 @@ int main_bench()
 	}
 	int x;
 	x=(a-2)*(b-2);
-	printf("%d",x);
+	my_printf("%d",x);
 	return 0;
 }

@@ -4,7 +4,7 @@ int main_bench()
 {
     char sa[250],sb[250],s[250],t[250],temp;
     int la,lb,i,l,c=0,dl; 
-    scanf("%s %s",sa,sb); 
+    my_scanf("%s %s",sa,sb); 
     la=strlen(sa);
     lb=strlen(sb);
 	if (la>lb)
@@ -43,10 +43,10 @@ int main_bench()
 	{
 		if (s[i] !='0' || c==0)
 		{
-			printf("%c",s[i]);
+			my_printf("%c",s[i]);
 			c=0;
 		}
 	}
-	printf("\n");
+	my_printf("\n");
 	return 0;
 }

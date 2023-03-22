@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n,i;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	unsigned int S=0;
 	for(i=1;i<=n;i++)
 	{
@@ -20,6 +20,6 @@ int main_bench()
 
 
 	}
-	printf("%u\n",S);
+	my_printf("%u\n",S);
 	return 0;
 }

@@ -9,7 +9,7 @@ char a[1000];
 char p[1000];
 int b[1000]={1};
 
-scanf("%s",a);
+my_scanf("%s",a);
 len=strlen(a);
 for(i=0;i<=len-1;i++)
 {
@@ -33,7 +33,7 @@ for(i=0;i<=len-1;i++)
      else
      {
      p[k]=a[i];
-     printf("(%c,%d)",p[k],b[k]);
+     my_printf("(%c,%d)",p[k],b[k]);
      k=k+1;
      b[k]=1;
      }

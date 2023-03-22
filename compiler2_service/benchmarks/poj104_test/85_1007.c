@@ -23,9 +23,9 @@ int main_bench()
 		char zfc[81];
 		gets(zfc);
 		if(judge(zfc)){
-			printf("yes\n");
+			my_printf("yes\n");
 		}else{
-			printf("no\n");
+			my_printf("no\n");
 		}
 	}
 	return 0;

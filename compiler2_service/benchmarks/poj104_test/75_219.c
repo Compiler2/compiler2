@@ -7,8 +7,8 @@ int main_bench()
 	int n,i=0,j,MAX,t,min,max;
     while(1==1)
 	{
-		scanf("%d",&a[i]);
-	    scanf("%c",&c);
+		my_scanf("%d",&a[i]);
+	    my_scanf("%c",&c);
 		i=i+1;
 		if(c!=',')
 			break;
@@ -16,8 +16,8 @@ int main_bench()
 	i=0;
 	while(1==1)
 	{
-		scanf("%d",&b[i]);
-	    scanf("%c",&c);
+		my_scanf("%d",&b[i]);
+	    my_scanf("%c",&c);
 		i=i+1;
 		if(c!=',')
 			break;
@@ -47,6 +47,6 @@ int main_bench()
 		if(t>MAX)
 			MAX=t;
 	}
-	printf("%d %d",n,MAX);
+	my_printf("%d %d",n,MAX);
 	return 0;
 }

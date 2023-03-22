@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int m,n,i,j,b,a[5000];
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	n=b=0;
 	for(j=3;j<m;j++)
 	{
@@ -31,7 +31,7 @@ int main_bench()
 		{
 			if(m==a[i]+a[j])
 			{
-				printf("%d %d\n",a[i],a[j]);
+				my_printf("%d %d\n",a[i],a[j]);
 			}
 		}
 	}

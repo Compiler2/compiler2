@@ -46,7 +46,7 @@ void find(int lev){
            place[guess[i]]=i+1;
        for (i=0;i<5;i++){
 if (i)putchar(' ');
-           printf("%d",place[i]);
+           my_printf("%d",place[i]);
 }
        putchar('\n');
     }

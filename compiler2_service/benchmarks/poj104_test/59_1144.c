@@ -4,16 +4,16 @@ int main_bench()
 {
 	int i,j,n,m,k,sum=0;
 	char s[110][110],t;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
     for(i=1;i<=n;i++)
 	{
 		for(j=1;j<=n;j++)
 		{
-			scanf("\n");
-			scanf("%c",&s[i][j]);
+			my_scanf("\n");
+			my_scanf("%c",&s[i][j]);
 		}
 	}
-	scanf("%d",&m);
+	my_scanf("%d",&m);
 	for(k=1;k<m;k++)
 	{
 		for(i=1;i<=n;i++)
@@ -62,7 +62,7 @@ int main_bench()
 			}
 		}
 	}
-	printf("%d",sum);
+	my_printf("%d",sum);
 	return 0;
 }
 

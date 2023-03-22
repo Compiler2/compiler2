@@ -3,16 +3,16 @@
 int main_bench()
 {
 	int n,i=1,s[100],j;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<=n){
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		i++;
 	}
 	j=n;
 	while(j>1){
-	     printf("%d ",s[j]);
+	     my_printf("%d ",s[j]);
 		 j--;
 	}
-	printf("%d",s[1]);
+	my_printf("%d",s[1]);
 	return 0;
 }

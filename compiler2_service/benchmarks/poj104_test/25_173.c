@@ -4,7 +4,7 @@ int main_bench()
 {
 	int n;
 	double s=2;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	if(n==0){
 		s=1;
@@ -17,6 +17,6 @@ int main_bench()
 		  s=s*2;
 	  }
 	}
-	printf("%.0lf",s);
+	my_printf("%.0lf",s);
 	return 0;
 }

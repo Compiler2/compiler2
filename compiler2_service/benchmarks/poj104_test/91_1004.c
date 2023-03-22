@@ -12,5 +12,5 @@ int main_bench(){
 	{	s1[i]=a[i]+a[i+1];}
 	s1[n-1]=a[0]+a[n-1];
 	for(i=0;i<n;i++)
-		printf("%c",s1[i]);
+		my_printf("%c",s1[i]);
 	return 0;}

@@ -4,27 +4,27 @@ int main_bench()
 {
     int a,b,n,i;
     double x,y;
-    scanf("%d",&n);
-    scanf("%d%d",&a,&b);
+    my_scanf("%d",&n);
+    my_scanf("%d%d",&a,&b);
     x=(double)b/a;
     for(i=1;i<n;i++)
    {
-      scanf("%d%d",&a,&b);
+      my_scanf("%d%d",&a,&b);
       y=(double)b/a;
       if(y-x>0.05)
       {
-         printf("better");
-         printf("\n");
+         my_printf("better");
+         my_printf("\n");
       }
       else if(x-y>0.05)
      {
-         printf("worse");
-         printf("\n");
+         my_printf("worse");
+         my_printf("\n");
      }
      else
      {
-         printf("same");
-         printf("\n");
+         my_printf("same");
+         my_printf("\n");
      }
    }
    return 0;

@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,j,i,t,a[1000],b[1000],m=0,temp=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{   
-		scanf("%d",&(a[i]));
+		my_scanf("%d",&(a[i]));
 	}
 	for(i=0;i<n;i++)
 	{
@@ -33,11 +33,11 @@ int main_bench()
 	{
 		if(b[m+1]>b[m])
 		{
-	     printf("%d,",b[m]);
+	     my_printf("%d,",b[m]);
 		}
 		else
 		{
-			printf("%d",b[m]);
+			my_printf("%d",b[m]);
 		}
 	}
 		return 0;

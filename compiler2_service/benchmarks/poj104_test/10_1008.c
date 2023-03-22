@@ -3,11 +3,11 @@
 int main_bench()
 {
     int n,i,j,t;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     int *p=(int*)malloc(n*sizeof(int));
     int *f=(int*)malloc(n*sizeof(int));
     for(i=0;i<n;i++)
-        scanf("%d",&p[i]);
+        my_scanf("%d",&p[i]);
     for(i=0;i<n;i++)
         f[i]=0;
     for(i=0;i<n;i++)
@@ -25,6 +25,6 @@ int main_bench()
         if(t<f[i])
             t=f[i];
     }
-    printf("%d\n",t);
+    my_printf("%d\n",t);
     }
             

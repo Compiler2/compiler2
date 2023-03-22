@@ -38,11 +38,11 @@ int nextmax(struct daodan* dao,int k,int n)
 int main_bench()
 {
     int n;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
     struct daodan* dao=(struct daodan*)malloc(n*sizeof(struct daodan));
     for(int i=0;i<=n-1;i++)
     {
-        scanf("%d",&dao[i].height);
+        my_scanf("%d",&dao[i].height);
     }
     for(int j=0;j<=n-1;j++)
     {
@@ -60,5 +60,5 @@ int main_bench()
             max=dao[l].number;
         }
     }
-    printf("%d",max);
+    my_printf("%d",max);
 }

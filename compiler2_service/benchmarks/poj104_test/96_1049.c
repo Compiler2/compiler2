@@ -7,12 +7,12 @@ int main_bench()
 	char a[100];
 	
 	
-	scanf("%s",a);
+	my_scanf("%s",a);
 	
 	p=strlen(a);
 	if(p==1)
-	{printf("0\n");
-	printf("%d",a[0]-'0');
+	{my_printf("0\n");
+	my_printf("%d",a[0]-'0');
     }
     else
     {
@@ -38,22 +38,22 @@ int main_bench()
 	e=b[j]%13;
 	
 	if(j==0)
-	printf("%d\n",c[0]);
+	my_printf("%d\n",c[0]);
 	else 
     {
          if(c[0]!=0)
-    printf("%d",c[0]);
+    my_printf("%d",c[0]);
 	i=1;
 	while(i<j)
 	{
-	printf("%d",c[i]);
+	my_printf("%d",c[i]);
     i++;
     }
 	
-    printf("%d\n",c[j]);
+    my_printf("%d\n",c[j]);
 }
             
-	printf("%d",e);
+	my_printf("%d",e);
 }
 	
 }

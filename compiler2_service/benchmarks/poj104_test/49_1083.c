@@ -23,7 +23,7 @@ int main_bench()
       if(b[i]>=j)
         {
            for(h=i-j+1;h<=i+j;h++)
-            printf("%c",a[h]);
-           printf("\n");
+            my_printf("%c",a[h]);
+           my_printf("\n");
         } 
 }

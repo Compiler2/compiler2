@@ -7,7 +7,7 @@ int main_bench()
  char *p;
   sum=0;
   p=(char*)malloc(sizeof(char)*20);
-  scanf("%d %s %d",&a,p,&b);
+  my_scanf("%d %s %d",&a,p,&b);
    for(j=0;j<strlen(p);j++)
    if(*(p+j)<='z'&&*(p+j)>='a')
    *(p+j)-=32;
@@ -44,7 +44,7 @@ int main_bench()
     x=x/b;
     k--;}
   }
-  printf("%s\n",q);
+  my_printf("%s\n",q);
  }
 
 

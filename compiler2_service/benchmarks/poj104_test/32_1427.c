@@ -3,8 +3,8 @@
 int main_bench()
 {
   int n,i,p,q,t,j;
-  scanf("%d",&n);
-   scanf("\n");
+  my_scanf("%d",&n);
+   my_scanf("\n");
   char a[100],b[100],c[100];
   for(i=0;i<=99;i++)
 {
@@ -18,7 +18,7 @@ b[i]='\0';
   {
     gets(a);
     gets(b);
-    scanf("\n");
+    my_scanf("\n");
     p=strlen(a);
     q=strlen(b);
     for(t=1;t<=q;t++)
@@ -37,9 +37,9 @@ b[i]='\0';
       }
     for(j=0;j<=p-1;j++)
      {
-       printf("%c",c[j]);
+       my_printf("%c",c[j]);
      }
-printf("\n");
+my_printf("\n");
   }
 return 0;
 }

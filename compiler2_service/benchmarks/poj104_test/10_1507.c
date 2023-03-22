@@ -17,12 +17,12 @@ int findFirstLess(int num)
 int main_bench()
 {
 	int k, i = 0, r,p, ans;
-	scanf("%d ", &k);
+	my_scanf("%d ", &k);
 	while(1)
 	{
 		if(i >= k)
 			break;
-		scanf("%d", h + i);
+		my_scanf("%d", h + i);
 		i++;
 	}
 	result[0] = h[0];
@@ -41,7 +41,7 @@ int main_bench()
 
 	
 
-	printf("%d\n", r+1);
+	my_printf("%d\n", r+1);
 
 	return 0;
 }

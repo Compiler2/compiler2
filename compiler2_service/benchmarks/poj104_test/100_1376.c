@@ -5,7 +5,7 @@ int main_bench()
     char ch, str[301];
     int i, len, no=1, counter[26]={0};
     
-    scanf("%s", str);
+    my_scanf("%s", str);
     
     len = strlen(str);
     
@@ -19,12 +19,12 @@ int main_bench()
     
     for (ch='a'; ch<='z'; ch++) {
         if (counter[ch-'a'] > 0) {
-            printf("%c=%d\n", ch, counter[ch-'a']);
+            my_printf("%c=%d\n", ch, counter[ch-'a']);
         }
     }
     
     if (no) {
-        printf("No");
+        my_printf("No");
     }
     return 0;
 }

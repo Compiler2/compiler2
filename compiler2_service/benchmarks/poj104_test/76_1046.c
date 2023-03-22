@@ -3,11 +3,11 @@
 int main_bench()
 {
 	int n,a[50000],b[50000];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int i;
 	for(i=0;i<n;i++)
 	{
-		scanf("%d%d",&a[i],&b[i]);
+		my_scanf("%d%d",&a[i],&b[i]);
 	}
 	int shuzhou[10000];
 	for(i=0;i<10000;i++)
@@ -49,11 +49,11 @@ int main_bench()
 	}
 	if (panduan==0)
 	{
-		printf("no");
+		my_printf("no");
 	}
 	if(panduan==1)
 	{
-		printf("%d %d",min,max);
+		my_printf("%d %d",min,max);
 	}
 	return 0;
 }

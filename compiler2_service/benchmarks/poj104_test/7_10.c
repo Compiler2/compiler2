@@ -5,9 +5,9 @@ int main_bench()
 {
 	char c[3][300];
 	int l1,l2,i=0,j=0,k=0,n;
-	scanf("%s",c[0]);
-	scanf("%s",c[1]);
-	scanf("%s",c[2]);
+	my_scanf("%s",c[0]);
+	my_scanf("%s",c[1]);
+	my_scanf("%s",c[2]);
 
 
 	l1=strlen(c[0]);
@@ -45,7 +45,7 @@ int main_bench()
 			c[0][n]=c[2][n+l2-i];
 		}
 	}
-	printf("%s\n",c[0]);
+	my_printf("%s\n",c[0]);
 
 
 

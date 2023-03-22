@@ -3,12 +3,12 @@
 int main_bench()
 {
       int n,i,j,w,x,y,v;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       v=n*n;
       int a[100000],b[100000]; 
       for (i=0;i<100000;i++)
       {
-          scanf("%d %d",&a[i],&b[i]);
+          my_scanf("%d %d",&a[i],&b[i]);
           if(a[i]==0 && b[i]==0)
           {
                      w=i+1;
@@ -30,7 +30,7 @@ int main_bench()
           {
                   if(x==1 && y==n)
                   {
-                               printf("%d",j);
+                               my_printf("%d",j);
                                break;
                   }
                   
@@ -39,13 +39,13 @@ int main_bench()
           {
               if(x==0 && y==n-1)
              {
-                  printf("%d",j);
+                  my_printf("%d",j);
                   break;
              }    
           }
       }
       if(j==n)
-      printf("NOT FOUND");
+      my_printf("NOT FOUND");
       getchar();
       getchar();
 }

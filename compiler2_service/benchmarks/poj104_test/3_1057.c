@@ -2,10 +2,10 @@
 
 int main_bench(){
 	int n,m,i,*p,j,b=0;
-	scanf("%d %d\n",&n,&m);
+	my_scanf("%d %d\n",&n,&m);
 	p=(int*)malloc(sizeof(int)*n);
 	for(i=0;i<n;i++){
-		scanf("%d",&p[i]);
+		my_scanf("%d",&p[i]);
 	}
 	for(i=0;i<n;i++){
 		for(j=0;j<n;j++){
@@ -16,9 +16,9 @@ int main_bench(){
 		}
 	}
 	if(b){
-		printf("yes");
+		my_printf("yes");
 	}
-	else printf("no");
+	else my_printf("no");
 	free(p);
 	return 0;
 }

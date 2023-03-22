@@ -3,9 +3,9 @@
 int main_bench()
 {
 	int n,x[199][2],i,a,b;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-		scanf("%d%d",&x[i][0],&x[i][1]);
+		my_scanf("%d%d",&x[i][0],&x[i][1]);
 	for(a=b=0,i=0;i<n;i++){
 		if((x[i][0]==0&&x[i][1]==1)||(x[i][0]==1&&x[i][1]==2)||(x[i][0]==2&&x[i][1]==0))
 			a++;
@@ -14,11 +14,11 @@ int main_bench()
 				b++;
 	}
 	if(a>b)
-		printf("A\n");
+		my_printf("A\n");
 	else
 		if(a<b)
-			printf("B\n");
+			my_printf("B\n");
 		else
-			printf("Tie\n");
+			my_printf("Tie\n");
 	return 0;
 }

@@ -4,12 +4,12 @@ int main_bench()
 {
 	int n,i,result[100],sum=0;
 	char str[100][20];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		int a,b,c,R[5];
 		char c1,c2;
-		scanf("%s %d %d %c %c %d",str[i],&a,&b,&c1,&c2,&c);
+		my_scanf("%s %d %d %c %c %d",str[i],&a,&b,&c1,&c2,&c);
 		R[0]=(a>80&&c>=1)? 8000:0;
 		R[1]=(a>85&&b>80)? 4000:0;
 		R[2]=(a>90)? 2000:0;
@@ -27,5 +27,5 @@ int main_bench()
 			t=i;
 		}
 	}
-	printf("%s\n%d\n%d\n",str[t],result[t],sum);
+	my_printf("%s\n%d\n%d\n",str[t],result[t],sum);
 }

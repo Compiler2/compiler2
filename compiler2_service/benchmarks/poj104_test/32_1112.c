@@ -6,11 +6,11 @@ int main_bench()
     char s1[256], s2[256];
     int c[256], a, b, i, l1, l2, n, j, l;
 
-    scanf("%d", &n);
+    my_scanf("%d", &n);
     for (j = 0; j < n; j++) {
         l = 0;
         memset(c, 0, sizeof(c));
-        scanf("%s%s", s1, s2);
+        my_scanf("%s%s", s1, s2);
 
         
         l1 = (int)strlen(s1);
@@ -32,8 +32,8 @@ int main_bench()
         while (c[l] == 0 && l > 0)
             l--;
         for (i = l; i >= 0; i--)
-            printf("%d", c[i]);
-        printf("\n");
+            my_printf("%d", c[i]);
+        my_printf("\n");
        }
 return 0;
 }

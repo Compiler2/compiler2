@@ -5,7 +5,7 @@ int main_bench()
 	long int a,b,sum,d;
 	int i=0,j;
 	char n[20],e[20]={0};
-	scanf("%d%s%d",&a,n,&b);
+	my_scanf("%d%s%d",&a,n,&b);
 	for(i=0,sum=0;n[i]!='\0';i++)
 	{
 		if(n[i]>='0'&&n[i]<='9')
@@ -34,6 +34,6 @@ int main_bench()
 			if(sum>9)
 				e[i]=sum-10+'A';
 	for(j=i;j>=0;j--)
-		printf("%c",e[j]);
+		my_printf("%c",e[j]);
 	return 0;
 }

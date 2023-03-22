@@ -7,9 +7,9 @@ int main_bench(){
 	int s[100];
 	int i,j,k=0;
 	int max=0;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<=n-1;i++){
-		scanf("%d%d",&ew[i][0],&ew[i][1]);
+		my_scanf("%d%d",&ew[i][0],&ew[i][1]);
 		if(((ew[i][0]<=140)&&(ew[i][0]>=90))&&((ew[i][1]<=90)&&(ew[i][1]>=60))){
 			z[i]=1;
 		}
@@ -40,7 +40,7 @@ int main_bench(){
 			max=s[i];
 		}
 	}
-	printf("%d",max);
+	my_printf("%d",max);
 
 
 	return 0;

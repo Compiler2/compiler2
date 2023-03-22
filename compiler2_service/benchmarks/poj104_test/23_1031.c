@@ -7,7 +7,7 @@ int main_bench()
     int count = 0;
     char buf[101];
     char dict[101][101];
-    while (scanf("%s", buf)) {
+    while (my_scanf("%s", buf)) {
         strcpy(dict[count++], buf);
         if (getchar() != ' ') {
             break;
@@ -15,9 +15,9 @@ int main_bench()
     }
     for (i = count - 1; i >= 0; i--) {
         if (i != count - 1) {
-            printf(" ");
+            my_printf(" ");
         }
-        printf("%s", dict[i]);
+        my_printf("%s", dict[i]);
     }
     return 0;
 }

@@ -3,9 +3,9 @@
 int main_bench (){
 	char s[260],t[260]={0};
 	int  n, i,j,len;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s",s);
+		my_scanf("%s",s);
 		for (j=0;s[j]!='\0';j++){
 			if (s[j]=='A'){
 				t[j]='T';}
@@ -18,7 +18,7 @@ int main_bench (){
 		}
 		if(s[j]=='\0'){
 			t[j]='\0';}
-		printf ("%s\n",t);
+		my_printf ("%s\n",t);
 	}
 
 	return 0;

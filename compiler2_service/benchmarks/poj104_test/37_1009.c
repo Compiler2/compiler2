@@ -5,16 +5,16 @@ int main_bench()
     int i,t;
     char c[100000],store[30];
     char count(char ch[]);
-    scanf("%d",&t);
+    my_scanf("%d",&t);
     for(i=0;i<t;i++)
     {
-        scanf("%s",c);
+        my_scanf("%s",c);
         store[i]=count(c);
     }
     for(i=0;i<t;i++)
     {
-        if(store[i]!='\0'){printf("%c\n",store[i]);}
-        else{printf("no\n");}
+        if(store[i]!='\0'){my_printf("%c\n",store[i]);}
+        else{my_printf("no\n");}
     }
     return 0;
 }

@@ -9,9 +9,9 @@ int main_bench()
    {
 	   gets(a[i]);
    }
-   scanf("%d%d",&n,&m);
+   my_scanf("%d%d",&n,&m);
    if(m<0||m>4||n<0||n>4)
-	   printf("error");
+	   my_printf("error");
    else
 	   for(i=0;i<5;i++)
 	   {

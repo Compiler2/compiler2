@@ -4,11 +4,11 @@ int main_bench()
 {
 	int n, a[1000][1000], i, j;
 	int lup[2], ldown[2], rup[2], rdown[2], area;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	for(i=0;i<n;i++)
 		for(j=0;j<n;j++)
 		{
-			scanf("%d", &a[i][j]);
+			my_scanf("%d", &a[i][j]);
 		}
 	for(i=1;i<n;i++)
 		for(j=1;j<n;j++)
@@ -35,5 +35,5 @@ int main_bench()
 			}
 		}
 	area=(rup[0]-lup[0]-1)*(rdown[1]-rup[1]-1);
-	printf("%d", area);
+	my_printf("%d", area);
 }

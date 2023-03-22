@@ -11,19 +11,19 @@ int main_bench()
         if(a[i]!=' ')
         {
             flag=0;
-            printf("%c",a[i]);
+            my_printf("%c",a[i]);
         }
         else if(a[i]==' ')
         {
             if(flag==0)
             {
                 flag=1;
-                printf(" ");
+                my_printf(" ");
             }
             else continue;
         }
        }
 
 
-    printf("\n");
+    my_printf("\n");
 }

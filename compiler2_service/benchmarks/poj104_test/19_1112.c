@@ -41,11 +41,11 @@ for(j=0;j<=i;j++)
 {
 if(j==i)
 {
-printf("%s",danci[j]);
+my_printf("%s",danci[j]);
 }
 else
 {
-printf("%s ",danci[j]);
+my_printf("%s ",danci[j]);
 }
 		}
 return 0;

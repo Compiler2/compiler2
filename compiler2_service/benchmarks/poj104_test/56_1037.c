@@ -3,7 +3,7 @@
 int main_bench()
 {
 	int n, x[5], i=0, j;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n!=0)
 	{
 		x[i]=n%10;
@@ -17,6 +17,6 @@ int main_bench()
 		n=n*10;
 	}
 	n=n/10;
-	printf("%d\n", n);
+	my_printf("%d\n", n);
 	return 0;
 }

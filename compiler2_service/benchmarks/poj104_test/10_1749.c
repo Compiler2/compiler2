@@ -9,10 +9,10 @@ int compare(int x,int y)
 int main_bench()
 {
       int i,n,r,a,j;
-      scanf("%d",&n);
+      my_scanf("%d",&n);
       int *p=(int *)malloc(n*sizeof(int));
       for(i=0;i<n;i++)
-      scanf("%d",&p[i]);
+      my_scanf("%d",&p[i]);
       int *q=(int *)malloc(n*sizeof(int));
       
       for(j=n-1;j>=0;j--)
@@ -32,6 +32,6 @@ int main_bench()
         if(q[a]>max)
         max=q[a];
       }
-      printf("%d",max);
+      my_printf("%d",max);
       return 0;
 }

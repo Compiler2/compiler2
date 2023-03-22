@@ -5,7 +5,7 @@ int main_bench()
  int nn,kk;
  int calculate(int n,int k);
  
- scanf("%d %d",&nn,&kk);
+ my_scanf("%d %d",&nn,&kk);
  calculate(nn,kk);
  
  return 0;
@@ -29,5 +29,5 @@ int main_bench()
                                              
                 
               }
-      printf("%d",sum[n-1]);
+      my_printf("%d",sum[n-1]);
     }

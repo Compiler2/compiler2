@@ -38,7 +38,7 @@ int main_bench()
    e=h;
    h=i;
   }
- printf("l %d\n",e);
+ my_printf("l %d\n",e);
  if (f<g)
   {
    m=f;
@@ -51,14 +51,14 @@ int main_bench()
    f=h;
    h=m;
   }
- printf("q %d\n",f);
+ my_printf("q %d\n",f);
  if (g<h)
   {
    n=g;
    g=h;
    h=n;
   }
- printf("z %d\n",g);
- printf("s %d\n",h);
+ my_printf("z %d\n",g);
+ my_printf("s %d\n",h);
  return 0;
 }

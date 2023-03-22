@@ -8,7 +8,7 @@ int m,n;
 void init()
 {
     int i,j;
-    scanf("%d%d",&n,&m);
+    my_scanf("%d%d",&n,&m);
     for(i=2;i<330;i++)
     {
         if(!sieve[i])
@@ -51,10 +51,10 @@ void print()
     int i;
     for(i=0;i<l;i++)
     {
-        printf("%d",q[i]);
+        my_printf("%d",q[i]);
         if(i<l-1)   putchar(',');
     }
-    if(!l)  printf("no");
+    if(!l)  my_printf("no");
     putchar('\n');
 }
 

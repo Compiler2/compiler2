@@ -5,16 +5,16 @@
 int main_bench(){ 
     int he,m,n,k,sz[100][100];
 	int i,j;
-    scanf("%d",&k); 
+    my_scanf("%d",&k); 
 	for(i=0;i<k;i++){
-		scanf("%d%d",&m,&n);
+		my_scanf("%d%d",&m,&n);
         for(j=0;j<m;j++){
 			for(int q=0;q<n;q++){
-				scanf("%d",&sz[j][q]);
+				my_scanf("%d",&sz[j][q]);
 			}
 		}
 		if(m==1&&n==1){
-			printf("%d\n",sz[0][0]);
+			my_printf("%d\n",sz[0][0]);
 		}else{
 		he=0;
 		for(j=0;j<m;j++){
@@ -31,7 +31,7 @@ int main_bench(){
 				he+=sz[0][j]+sz[m-1][j];
 			}
 		}
-		printf("%d\n",he);
+		my_printf("%d\n",he);
 	}
 	}
         return 0; 

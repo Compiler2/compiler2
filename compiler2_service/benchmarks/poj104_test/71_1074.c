@@ -3,10 +3,10 @@
 int main_bench()
 {
 	int n,i,j,k,a[200],b[200][13],c[200][13];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);
+		my_scanf("%d",&a[i]);
 	    if((a[i]%4==0&&a[i]%100!=0)||a[i]%400==0)
 		{
 			b[i][1]=0;
@@ -42,14 +42,14 @@ int main_bench()
        	    c[i][10]=274;
 	        c[i][11]=305;
 	        c[i][12]=335;
-			scanf("%d %d",&j,&k);
+			my_scanf("%d %d",&j,&k);
 			if((c[i][k]-b[i][j])%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 		else
@@ -78,14 +78,14 @@ int main_bench()
        	    c[i][10]=273;
 	        c[i][11]=304;
 	        c[i][12]=334;
-			scanf("%d%d",&j,&k);
+			my_scanf("%d%d",&j,&k);
 			if((c[i][k]-b[i][j])%7==0)
 			{
-				printf("YES\n");
+				my_printf("YES\n");
 			}
 			else
 			{
-				printf("NO\n");
+				my_printf("NO\n");
 			}
 		}
 	}

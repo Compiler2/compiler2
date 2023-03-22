@@ -5,9 +5,9 @@ int main_bench(){
 	int an1[500]={0},an2[500]={0},sum[500]={0};
 	 an1[0]=1;
 	 an2[0]=1;
-    scanf("%d",&n);
+    my_scanf("%d",&n);
 	if(n==0){
-		printf("1");
+		my_printf("1");
 	}
 	else{
 	for(p=0;p<n;p++){
@@ -30,9 +30,9 @@ int main_bench(){
 		 i--; 
 	  }
 	for(;i>=0;i--){                    
-		printf("%d", sum[i]);   
+		my_printf("%d", sum[i]);   
 	}
-	printf("\n");
+	my_printf("\n");
 	}
 	return 0;
 }

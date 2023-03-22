@@ -4,10 +4,10 @@ int main_bench(void)
 {
 	int s[100];
 	int n,i=0,max,qmax;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	while(i<n)
 	{
-		scanf("%d",&s[i]);
+		my_scanf("%d",&s[i]);
 		i++;
 	}
 	i=1;
@@ -20,6 +20,6 @@ int main_bench(void)
 			qmax=s[i];
 		i++;
 	}
-	printf("%d\n%d\n",max,qmax);
+	my_printf("%d\n%d\n",max,qmax);
 	return 0;
 }

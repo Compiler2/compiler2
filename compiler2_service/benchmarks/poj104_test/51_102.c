@@ -10,7 +10,7 @@ int main_bench()
 	int len;
 	int count;
 	int max=1;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	gets(str);
 	len=strlen(str);
 	for (i=0,j=0;i<=len-n;i++)
@@ -36,12 +36,12 @@ int main_bench()
 	}
 	if (max==1)
 	{
-		printf("NO\n");
+		my_printf("NO\n");
 		return 0;
 	}
 	else
 	{
-		printf("%d\n",max);
+		my_printf("%d\n",max);
 		for (i=0;i<j;i++)
 		{
 			count=0;
@@ -54,7 +54,7 @@ int main_bench()
 			}
 			if (count==max)
 			{
-				printf("%s\n",word[i]);
+				my_printf("%s\n",word[i]);
 			}
 		}
 		return 0;

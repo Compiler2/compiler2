@@ -17,16 +17,16 @@ void print_bigint(int*a,int len)
                         }
      int i;
      for(i=k;i>0;i--)
-     printf("%d",a[i]);
+     my_printf("%d",a[i]);
      }
 int main_bench()
 {
       int a[100],alen,b[100],blen,i;
       char c[100];
-      scanf("%s",c);
+      my_scanf("%s",c);
       alen=strbigint(c,a);
       if(alen==1)
-      printf("%d\n%d",0,a[0]);
+      my_printf("%d\n%d",0,a[0]);
       else
       {
       for(i=alen-1;i>0;i--)
@@ -35,7 +35,7 @@ int main_bench()
                         a[i-1]=(10*a[i]+a[i-1])%13;
                         }
       print_bigint(b,alen);
-      printf("\n");
-      printf("%d",a[0]);
+      my_printf("\n");
+      my_printf("%d",a[0]);
       }
       }

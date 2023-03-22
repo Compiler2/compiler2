@@ -4,7 +4,7 @@ int main_bench()
 {
 	char s1[50],s2[50];
 	int i,n,j,m=-1;
-	scanf("%s %s",s1,s2);
+	my_scanf("%s %s",s1,s2);
 	
 	for(i=0;s2[i]!='\0';i++)
 {
@@ -20,5 +20,5 @@ int main_bench()
 		}
 		if(n==1)break;
 }
-	printf("%d",m);	
+	my_printf("%d",m);	
 }

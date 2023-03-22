@@ -5,7 +5,7 @@ int main_bench()
 	int flag[50001];
 	int i,j,k,m,p,q,s;
 	int n;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	int a[50000];
 	flag[3]=1;
 	for(i=3;i<50001;i=i+2)
@@ -30,12 +30,12 @@ int main_bench()
    
 	for(j=6;j<=n;j+=2)
 	{
-	printf("%d=",j);
+	my_printf("%d=",j);
 	for(i=1;i<=m;i++)
 	{
 		if(flag[j-a[i]])
 		{
-			printf("%d+%d\n", a[i],j-a[i]);
+			my_printf("%d+%d\n", a[i],j-a[i]);
 				break;
 		}
 			

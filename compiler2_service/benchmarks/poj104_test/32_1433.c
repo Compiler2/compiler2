@@ -5,9 +5,9 @@ int main_bench()
 	int n,i,j,q,k,len1[100],len2[100];
 	int a[100][26]={0},b[100][26]={0};
     char s[100][101],d[100][101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
-	scanf("%s%s",s[i],d[i]);
+	my_scanf("%s%s",s[i],d[i]);
 	for(i=0;i<n;i++)
 	{
     len1[i]=strlen(s[i]);
@@ -48,10 +48,10 @@ if(len2[i]<4) break;
 		{
 			for(j=25;j>=0;j--)
 				if(b[i][j]!=0) {k=j;break;}
-				printf("%d",b[i][k]);
+				my_printf("%d",b[i][k]);
         for(j=k-1;j>=0;j--)
-        printf("%04d",b[i][j]);
-		printf("\n");
+        my_printf("%04d",b[i][j]);
+		my_printf("\n");
 		}
 	return 0;
 }

@@ -32,10 +32,10 @@ x=c[j];y=c[k+j];
    {
 	   for(m=j;m<=k+j;m++)
 	   {
-	   printf("%c",c[m]);
+	   my_printf("%c",c[m]);
 	   
 	   }
-	   printf("\n");
+	   my_printf("\n");
    }
 }
 }

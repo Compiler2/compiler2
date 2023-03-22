@@ -3,7 +3,7 @@
 
 int main_bench(){
 	int n,i,e,j,kn,ki,k,l;
-	scanf("%d %d",&n,&i);
+	my_scanf("%d %d",&n,&i);
 	if(n<i)
 	{
 	e=n;
@@ -31,7 +31,7 @@ int main_bench(){
 	}
 	do{
 		if(n==i){
-			printf("%d",n);
+			my_printf("%d",n);
 			return 0;
 		}
 		n/=2;

@@ -4,7 +4,7 @@ int main_bench()
 {
 	int m=0,n,i,j,l;
 	char a[21];
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(i=0;i<n;i++)
 	{
 		m=0;
@@ -18,9 +18,9 @@ int main_bench()
 			}
 		}
 		if(m!=l)
-			printf("no\n");
+			my_printf("no\n");
 		if(m==l)
-			printf("yes\n");
+			my_printf("yes\n");
 	}
 	return 0;
 }

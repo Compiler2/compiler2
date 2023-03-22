@@ -4,12 +4,12 @@ int main_bench()
 {
 	int i,j,n=1,a[1000],b[1000],c[1000]={0},t1,t2;
 
-	scanf("%d",&a[0]);
-	while(scanf(",%d",&a[n]))
+	my_scanf("%d",&a[0]);
+	while(my_scanf(",%d",&a[n]))
 		n++;
-	scanf("%d",&b[0]);
+	my_scanf("%d",&b[0]);
 	for(i=1;i<n;i++)	
-		scanf(",%d",&b[i]);
+		my_scanf(",%d",&b[i]);
 
 	t1=a[0];
 	t2=b[0];
@@ -31,6 +31,6 @@ int main_bench()
 		if(j<c[i])
 			j=c[i];
 
-	printf("%d %d\n",n,j);
+	my_printf("%d %d\n",n,j);
 }
 

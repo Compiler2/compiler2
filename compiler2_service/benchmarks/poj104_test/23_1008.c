@@ -12,9 +12,9 @@ int main_bench()
 		if(*p==' ')
 		{
 			*p='\0';
-			printf("%s ",p+1);
+			my_printf("%s ",p+1);
 		}
 	}
 	p=a;
-	printf("%s",p);
+	my_printf("%s",p);
 }

@@ -4,10 +4,10 @@ int main_bench()
 {
 	int n,a[300]={0},i,sum=0,j,temp;
 	float aver=0,dist=0,temp1;
-	scanf("%d\n",&n);
-	scanf("%d",&a[0]);
+	my_scanf("%d\n",&n);
+	my_scanf("%d",&a[0]);
 	for(i=1;i<n;i++)
-		scanf(" %d",&a[i]);
+		my_scanf(" %d",&a[i]);
 
 	for(i=0;i<n-1;i++)
 		for(j=i;j<n-1-i;j++)
@@ -30,18 +30,18 @@ int main_bench()
 	}
 	if(dist<0) dist=-dist;
 
-if(a[6]==15&&a[0]==1&&a[1]==2&&n==7) printf("%d",a[6]);	
+if(a[6]==15&&a[0]==1&&a[1]==2&&n==7) my_printf("%d",a[6]);	
 for(i=0;i<n;i++)
 	if(a[i]-aver==dist||a[i]-aver==-dist)
-		{printf("%d",a[i]); break;}
+		{my_printf("%d",a[i]); break;}
 
 
 if(i<n-1)	
 {for(j=i+1;j<n;j++)
 		if(a[j]-aver==dist||aver-a[j]==dist)
-		printf(",%d",a[j]);
+		my_printf(",%d",a[j]);
 }
-		printf("\n");
+		my_printf("\n");
     
 
 }

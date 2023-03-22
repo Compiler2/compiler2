@@ -49,7 +49,7 @@ int main_bench()
 			k=c[i];
 	}
 	
-	printf("%d %d",n,k);
+	my_printf("%d %d",n,k);
 	
 	return 0;
 }

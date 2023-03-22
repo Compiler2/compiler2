@@ -4,9 +4,9 @@ int main_bench(){
 	int n,i,m=0,w=0,j;
 	double h[50],manh[50],womanh[50],g,b;
 	char sex[50][10];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++){
-		scanf("%s%lf",sex[i],&h[i]);
+		my_scanf("%s%lf",sex[i],&h[i]);
 		if(sex[i][0]=='m'){
 			manh[m]=h[i];
 			m++;
@@ -34,11 +34,11 @@ int main_bench(){
 		}
 	}
 	for(i=0;i<m;i++){
-		printf("%.2lf ",manh[i]);
+		my_printf("%.2lf ",manh[i]);
 	}
 	for(i=0;i<w-1;i++){
-		printf("%.2lf ",womanh[i]);
+		my_printf("%.2lf ",womanh[i]);
 	}
-	printf("%.2lf",womanh[w-1]);
+	my_printf("%.2lf",womanh[w-1]);
 	return 0;
 }

@@ -6,9 +6,9 @@ int main_bench(){
 	int i,j;
 	for(i=0;s[i]!='\0';i++){
 		if(s[i]!=' '){
-		printf("%c",s[i]);
+		my_printf("%c",s[i]);
 		}else{
-			printf(" ");
+			my_printf(" ");
             for(j=i;s[j]==' ';j++){
 				i=j;
 			}

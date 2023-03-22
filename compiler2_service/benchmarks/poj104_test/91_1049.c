@@ -15,11 +15,11 @@ int main_bench()
 	for(i=0;i<n;i++){
 		if(i!=n-1){
              b[i]=a[i]+a[i+1];
-			 printf("%c",b[i]);
+			 my_printf("%c",b[i]);
 		}
 		else{
 			b[i]=a[i]+a[0];
-            printf("%c\n",b[i]);
+            my_printf("%c\n",b[i]);
 		}
 	}
 	return 0;

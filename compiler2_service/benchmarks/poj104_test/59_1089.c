@@ -3,17 +3,17 @@
 int main_bench() {
 int n,m,i,s=0,j,p,q,w;
 char sz[150][150];
-scanf("%d",&n);
+my_scanf("%d",&n);
 
         for (i=0;i<n;i++) {
-        scanf("%s",sz[i]);
+        my_scanf("%s",sz[i]);
           for (j=0;j<n;j++) {
          if (sz[i][j]=='@') {
                                      s++;
                            }
                            }
                            }    
-scanf("%d",&m);
+my_scanf("%d",&m);
 for (i=1;i<m;i++) {   
     for (j=0;j<n;j++) {
         for (p=0;p<n;p++) {
@@ -32,7 +32,7 @@ for (i=1;i<m;i++) {
                                        }
                                     }      
                  }
-                 printf("%d\n",s);          
+                 my_printf("%d\n",s);          
                    
              return 0;
             

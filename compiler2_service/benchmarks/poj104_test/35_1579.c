@@ -6,12 +6,12 @@ int main_bench()
     int n,N,i,j,a,b,c;
 	int min=100;
 	int max=0;
-    scanf("%d,%d",&n,&N);
+    my_scanf("%d,%d",&n,&N);
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<N;j++)
 		{
-			scanf("%d",&s[i][j]);
+			my_scanf("%d",&s[i][j]);
 		}
 	}
     for(i=0;i<n-1;i++)
@@ -33,11 +33,11 @@ int main_bench()
 			}
 		}
 			if(min==max){
-				printf("%d+%d",a,b);
+				my_printf("%d+%d",a,b);
 				return 0;
 		}
 	}
-	printf("No");
+	my_printf("No");
 	return 0;
 }
 			

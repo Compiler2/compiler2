@@ -5,24 +5,24 @@ int main_bench()
 	int n;
 	char s[300];
 	int i;
-	scanf("%d", &n);
+	my_scanf("%d", &n);
 	while(n--)
 	{
-		scanf("%s", s);
+		my_scanf("%s", s);
 		i = 0;
 		while(s[i] != '\0')
 		{
 			if(s[i] == 'A')
-			printf("T");
+			my_printf("T");
 			if(s[i] == 'T')
-			printf("A");
+			my_printf("A");
 			if(s[i] == 'G')
-			printf("C");
+			my_printf("C");
 			if(s[i] == 'C')
-			printf("G");
+			my_printf("G");
 			i++;
 		}
-		printf("\n");
+		my_printf("\n");
 	}
 	return 0;
 }

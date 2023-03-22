@@ -9,10 +9,10 @@ int main_bench()
 	int i,m,j,k;
 	int s[26];
 
-	scanf ("%d",&m);
+	my_scanf ("%d",&m);
 	for (i=0;i<m;i++)
 	{
-		scanf ("%d%s",&num[i].a,num[i].b);
+		my_scanf ("%d%s",&num[i].a,num[i].b);
 	}
 	for (k=0;k<26;k++)
 	{
@@ -38,15 +38,15 @@ int main_bench()
 			t=k;
 		}
 	}
-	printf ("%c\n",t+'A');
-	printf ("%d\n",first);
+	my_printf ("%c\n",t+'A');
+	my_printf ("%d\n",first);
 	for (i=0;i<m;i++)
 	{
 		for (j=0;num[i].b[j]!='\0';j++)
 		{
 			if (num[i].b[j]==(t+'A'))
 			{
-				printf ("%d\n",num[i].a);
+				my_printf ("%d\n",num[i].a);
 			}
 		}
 	}

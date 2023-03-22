@@ -3,8 +3,8 @@
 int main_bench(){
     char s[502];
     int max,frequency[251],n,i,j;
-    scanf("%d",&n);
-    scanf("%s",s);
+    my_scanf("%d",&n);
+    my_scanf("%s",s);
     max=1;
     if(n==2){
         for(i=0;i<strlen(s)-2;i++){
@@ -17,12 +17,12 @@ int main_bench(){
                 max=frequency[i];
         }
         if(max==1)
-            printf("NO\n");
+            my_printf("NO\n");
         else{
-            printf("%d\n",max);
+            my_printf("%d\n",max);
             for(i=0;i<strlen(s)-2;i++){
                 if(frequency[i]==max)
-                    printf("%c%c\n",s[i],s[i+1]);
+                    my_printf("%c%c\n",s[i],s[i+1]);
             }
         }
     }
@@ -37,12 +37,12 @@ int main_bench(){
                 max=frequency[i];
         }
         if(max==1)
-            printf("NO\n");
+            my_printf("NO\n");
         else{
-            printf("%d\n",max);
+            my_printf("%d\n",max);
             for(i=0;i<strlen(s)-3;i++){
                 if(frequency[i]==max)
-                    printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
+                    my_printf("%c%c%c\n",s[i],s[i+1],s[i+2]);
             }
         }
     }
@@ -57,12 +57,12 @@ int main_bench(){
                 max=frequency[i];
         }
         if(max==1)
-            printf("NO\n");
+            my_printf("NO\n");
         else{
-            printf("%d\n",max);
+            my_printf("%d\n",max);
             for(i=0;i<strlen(s)-4;i++){
                 if(frequency[i]==max)
-                    printf("%c%c%c%c\n",s[i],s[i+1],s[i+2],s[i+3]);
+                    my_printf("%c%c%c%c\n",s[i],s[i+1],s[i+2],s[i+3]);
             }
         }
     }

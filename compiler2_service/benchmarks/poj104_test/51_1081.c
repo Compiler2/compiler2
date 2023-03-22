@@ -9,8 +9,8 @@ int main_bench()
    int c[1000]={0};
    int d[1000]={0};
    char b[1000][1000];
-   scanf("%d",&m);
-   scanf("%s",a);
+   my_scanf("%d",&m);
+   my_scanf("%s",a);
    n=strlen(a);
    l=n+1-m;
    for(i=0;i<l;i++)
@@ -48,21 +48,21 @@ int main_bench()
       }
    x=c[l-1];
    if(x==0)
-   {printf("NO");}
+   {my_printf("NO");}
    else
    {
    
    
-   printf("%d\n",x+1);
+   my_printf("%d\n",x+1);
    for(i=0;i<l;i++)
       {
           if(d[i]==x)
           {
                 for(k=0;k<m;k++)
                    {
-                     printf("%c",b[i][k]);
+                     my_printf("%c",b[i][k]);
                    }
-                printf("\n");
+                my_printf("\n");
           }
       }
 }

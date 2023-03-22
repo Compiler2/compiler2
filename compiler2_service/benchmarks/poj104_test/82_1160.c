@@ -2,7 +2,7 @@
 
 int main_bench(){
 	int nu;
-	scanf("%d\n",&nu);
+	my_scanf("%d\n",&nu);
 	struct aaa{
 		int x,y;
 	}time[100];
@@ -11,7 +11,7 @@ int main_bench(){
 	int m=0;
 	int s=0;
 	for(i=0;i<nu;i++){
-		scanf("%d%d",&(time[i].x),&(time[i].y));
+		my_scanf("%d%d",&(time[i].x),&(time[i].y));
 	}
 	for(i=0;i<nu;i++){
 		if((time[i].x)<=140&&(time[i].x)>=90&&(time[i].y)<=90&&(time[i].y)>=60){
@@ -27,8 +27,8 @@ int main_bench(){
 		}
 	}
 	if(s>=m){
-		printf("%d",s);
+		my_printf("%d",s);
 	}else{
-        printf("%d\n",m);}
+        my_printf("%d\n",m);}
 		return 0;
 }

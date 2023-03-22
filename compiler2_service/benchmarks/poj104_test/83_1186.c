@@ -4,14 +4,14 @@ int main_bench()
 {
 	int num,*xuefen,*score,i,txuefen=0;
 	float *gpa,total=0,part,GPA;
-	scanf("%d",&num);
+	my_scanf("%d",&num);
 	xuefen=(int*)malloc(sizeof(int)*num);
 	score=(int*)malloc(sizeof(int)*num);
     gpa=(float*)malloc(sizeof(float)*num);
     for(i=0;i<num;i++)
-		scanf("%d",xuefen+i);
+		my_scanf("%d",xuefen+i);
 	for(i=0;i<num;i++)
-		scanf("%d",score+i);
+		my_scanf("%d",score+i);
 	for(i=0;i<num;i++)
 	{
 		if(score[i]>=90)
@@ -42,5 +42,5 @@ int main_bench()
 		txuefen=xuefen[i]+txuefen;
 	}
 	GPA=total/txuefen;
-	printf("%.2f",GPA);
+	my_printf("%.2f",GPA);
 }

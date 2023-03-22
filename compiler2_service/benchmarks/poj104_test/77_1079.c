@@ -9,7 +9,7 @@ char num[100]={0}; int i,j,k,m,t;
     for(j=k;j>=0;j--)
    if(num[j]==num[0])
      break;
-printf("%d %d\n",j,k);
+my_printf("%d %d\n",j,k);
 num[j]='\0'; num[k]='\0';
            } 
                }

@@ -4,7 +4,7 @@
 int main_bench()
 {
 	int x,y,a[10],b[10],m,n,i;
-	scanf("%d%d",&x,&y);
+	my_scanf("%d%d",&x,&y);
 	m=n=0;
 	while (x!=0) 
 	{
@@ -20,6 +20,6 @@ int main_bench()
 	}
 	for (i=1;i<=10;i++)
 		if (a[m-i]!=b[n-i]) break;
-	printf("%d",a[m-i+1]);			
+	my_printf("%d",a[m-i+1]);			
 	return 0;
 }

@@ -4,15 +4,15 @@ int main_bench()
 {
 	int n,i,j,k,m;
 	char a[101];
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(j=0;j<n;j++)
 	{
 		for(i=0;i<101;i++)
 		{
 			a[i]=0;
 		}
-		scanf("%s",a);
-		printf("%s\n",a);
+		my_scanf("%s",a);
+		my_printf("%s\n",a);
 		m=strlen(a);
 		for(i=0;i<m;i++)
 		{
@@ -41,7 +41,7 @@ int main_bench()
 		{
 			if(a[i]=='(') a[i]='$';
 		}
-		printf("%s\n",a);
+		my_printf("%s\n",a);
 	}
 	return 0;
 }

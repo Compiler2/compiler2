@@ -3,9 +3,9 @@
 
 int main_bench(){
 	int n,a[100]={0},b[100],c[100],t=0,z;
-	scanf("%d\n",&n);
+	my_scanf("%d\n",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d %d\n",&b[i],&c[i]);
+		my_scanf("%d %d\n",&b[i],&c[i]);
 		if(b[i]>=90&&b[i]<=140&&c[i]>=60&&c[i]<=90){
 			a[t]++;}else{
 				t++;}
@@ -16,7 +16,7 @@ int main_bench(){
 			a[p+1]=a[p];
 			a[p]=z;}
 	}
-	printf("%d",a[99]);
+	my_printf("%d",a[99]);
 
 
 	return 0;}

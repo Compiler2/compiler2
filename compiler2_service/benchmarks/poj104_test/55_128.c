@@ -9,7 +9,7 @@ int main_bench()
   char arr[40]={0},brr[40]={0};
   int n,m,i,j,k;
   int a[40]={0},b[40]={0};
-  scanf("%d%s%d",&n,arr,&m);
+  my_scanf("%d%s%d",&n,arr,&m);
   i=strlen(arr);
   for (k=0;k<i;k++)
     {if(uup(arr[k])>58) a[i-k-1]=uup(arr[k])-'A'+10; else a[i-k-1]=arr[k]-'0';}
@@ -26,8 +26,8 @@ int main_bench()
   k=39; while((b[k]==0)&&(k>=1))k--;
   for (;k>=0;k--)
   {
-    if(b[k]>9)printf("%c",b[k]+'A'-10);
-    else printf("%d",b[k]);
+    if(b[k]>9)my_printf("%c",b[k]+'A'-10);
+    else my_printf("%d",b[k]);
   }
-  printf("\n");
+  my_printf("\n");
 }

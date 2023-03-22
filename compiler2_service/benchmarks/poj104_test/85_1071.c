@@ -5,12 +5,12 @@
 int main_bench()
 {
 	int n,i,l,m,x;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	char c[21];
 	for(l=0;l<n;l++)
 	{
 		x=0;
-        scanf("%s",c);
+        my_scanf("%s",c);
 		m=strlen(c);
 		if((c[0]>=65&&c[0]<=90)||(c[0]>=97&&c[0]<=122)||c[0]=='_')
 		{
@@ -31,8 +31,8 @@ int main_bench()
 		{
 			x=0;
 		}
-		if(x==0) printf("no\n");
-		if(x==1) printf("yes\n");
+		if(x==0) my_printf("no\n");
+		if(x==1) my_printf("yes\n");
 	}
 	return 0;
 }

@@ -4,7 +4,7 @@
 int main_bench( )
 {
 int n , t1 = 0 , t2 = 0 , t3 = 0 , t4 = 0 , t5 = 0 , t6 = 0 ;
-scanf( "%d" , &n );
+my_scanf( "%d" , &n );
 while( n >= 100 )
 {
 n -= 100 ;
@@ -35,5 +35,5 @@ while( n >= 1 )
 n -= 1 ;
 t6 ++ ;
 }
-printf( "%d\n%d\n%d\n%d\n%d\n%d\n" , t1 ,t2 ,t3 ,t4, t5, t6 );
+my_printf( "%d\n%d\n%d\n%d\n%d\n%d\n" , t1 ,t2 ,t3 ,t4, t5, t6 );
 }

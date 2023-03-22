@@ -15,14 +15,14 @@ int main_bench()
 	{
 		if(a[i]>b[i])
 		{
-			printf(">");
+			my_printf(">");
 			break;
 		}
 		else if(a[i]<b[i])
 		{
-			printf("<");
+			my_printf("<");
 			break;
 		}
-		if(i==79) printf("=");
+		if(i==79) my_printf("=");
 	}
 }

@@ -5,12 +5,12 @@
 int main_bench()
 {
    int i,j,n,k,b,judge=0;
-   scanf("%d",&n);
-   scanf("%d",&k);
+   my_scanf("%d",&n);
+   my_scanf("%d",&k);
    int a[1001];
    for(i=1;i<n+1;i++)
    {
-	   scanf("%d",&a[i]);
+	   my_scanf("%d",&a[i]);
    }
    for(i=1;i<n+1;i++)
    {
@@ -21,7 +21,7 @@ int main_bench()
 			   b=a[i]+a[j];
 			   if(b==k)
 			   {
-				   printf("yes");
+				   my_printf("yes");
 			       judge=1;
 				   break;
 			   }
@@ -32,7 +32,7 @@ int main_bench()
    
    if(i==n)
    {
-	   printf("no");
+	   my_printf("no");
    }
    
    

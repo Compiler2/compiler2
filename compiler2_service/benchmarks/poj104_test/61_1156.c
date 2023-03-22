@@ -14,18 +14,18 @@ int main_bench()
 	
 	
 	
-	scanf("%d",&N);
-	printf("\n");
+	my_scanf("%d",&N);
+	my_printf("\n");
 	for (i=0;i<=N-1;i++)
 	{
-		scanf("%d",&b[i]);
-		printf("\n");
+		my_scanf("%d",&b[i]);
+		my_printf("\n");
 	}
 	
 	for (i=0;i<=N-1;i++)
 	{
-		printf("%d",a[b[i]-1]);
-		printf("\n");
+		my_printf("%d",a[b[i]-1]);
+		my_printf("\n");
 	}
 	
 	return 0;

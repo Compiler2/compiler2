@@ -8,10 +8,10 @@ int main_bench()
 		int age;
 	}p,q,a[100],old[100],yog[100];
 	int n,i=0,x=0,y=0,k,l;
-	scanf("%d",&n);
+	my_scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		scanf("%s%d",a[i].id,&a[i].age);
+		my_scanf("%s%d",a[i].id,&a[i].age);
 		if(a[i].age>=60)
 		{
 			old[x]=a[i];
@@ -37,11 +37,11 @@ int main_bench()
 	}
 	for(i=0;i<x;i++)
 	{
-		printf("%s\n",old[i].id);
+		my_printf("%s\n",old[i].id);
 	}
 	for(i=0;i<y;i++)
 	{
-		printf("%s\n",yog[i].id);
+		my_printf("%s\n",yog[i].id);
 	}
 	return 0;
 }

@@ -35,12 +35,12 @@ int tianshu(int i)
 int main_bench()
 {
 	int w,i,x;
-	scanf("%d",&w);
+	my_scanf("%d",&w);
 	for(i=1;i<=12;i++)
 	{
 		x=tianshu(i);
 		if(((x-1)%7+w)%7==5)
-			printf("%d\n",i);
+			my_printf("%d\n",i);
 	}
 	return 0;
 }

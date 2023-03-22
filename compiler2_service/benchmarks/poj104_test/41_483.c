@@ -43,6 +43,6 @@ int main_bench()
           if (a[i]==3) if (pd(i)==1) flag=1;
           if (a[i]==4) if (pd(i)==1) flag=1;
           if (a[i]==5) if (pd(i)==1) flag=1;}
-        if (flag==0) printf("%d %d %d %d %d\n",a[1],a[2],a[3],a[4],a[5]);
+        if (flag==0) my_printf("%d %d %d %d %d\n",a[1],a[2],a[3],a[4],a[5]);
         }
         }

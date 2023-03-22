@@ -20,12 +20,12 @@ int maxS(int aa,int bb){
 int main_bench(){
 	int n,i,j;
 
-	while(scanf("%d",&n) && n){
+	while(my_scanf("%d",&n) && n){
 
 		for(i = 0;i < n;i++)
-			scanf("%d",a+i);
+			my_scanf("%d",a+i);
 		for(i = 0;i < n;i++)
-			scanf("%d",b+i);
+			my_scanf("%d",b+i);
 
 		qsort(a,n,sizeof(int),cmp);
 		qsort(b,n,sizeof(int),cmp);
@@ -42,7 +42,7 @@ int main_bench(){
 					f[i][j] = f[i+1][j-1] - 200;
 				else f[i][j] = f[i][j-1];
 
-		printf("%d\n",f[0][n-1]);
+		my_printf("%d\n",f[0][n-1]);
 	}
 	return 0;
 }

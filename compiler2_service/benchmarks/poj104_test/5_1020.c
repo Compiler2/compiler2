@@ -5,7 +5,7 @@ int main_bench()
     int i,j,d,l,h;
     double n,t;
     char a[500],b[500];
-    scanf("%lf\n",&n);
+    my_scanf("%lf\n",&n);
     d=0;
     gets(a);
     gets(b);
@@ -13,7 +13,7 @@ int main_bench()
     h=strlen(b);
     if(l>h||l<n)
     {
-        printf("error");
+        my_printf("error");
     }else if(l==h)
     {
         for(i=0,j=0;a[i]!='\0';i++,j++)
@@ -25,17 +25,17 @@ int main_bench()
                      d++;
                  }
             }else{
-                printf("error");
+                my_printf("error");
                 return 0;
             }
         }
         t=(double)d/l;
         if(t>n)
         {
-            printf("yes");
+            my_printf("yes");
         }else if(t<=n)
         {
-            printf("no");
+            my_printf("no");
         }
     }
     return 0;
