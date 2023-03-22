@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int cal(int matrix[][120],int n)

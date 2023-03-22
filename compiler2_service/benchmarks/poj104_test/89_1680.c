@@ -1,3 +1,5 @@
+#define NUM_ITER 263463
+
 #include <header.h>
 
 int know[10000],bknown[10000];

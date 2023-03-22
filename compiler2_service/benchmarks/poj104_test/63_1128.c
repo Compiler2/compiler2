@@ -1,3 +1,5 @@
+#define NUM_ITER 31
+
 #include <header.h>
 
 int a[128][128],b[128][128],c[128][128]={0};

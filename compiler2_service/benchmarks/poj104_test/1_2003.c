@@ -1,3 +1,5 @@
+#define NUM_ITER 2122
+
 #include <header.h>
 
 int factoring(int a,int b)

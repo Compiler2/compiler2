@@ -1,3 +1,5 @@
+#define NUM_ITER 596456
+
 #include <header.h>
 
 int danci(char a[],char word[][100])

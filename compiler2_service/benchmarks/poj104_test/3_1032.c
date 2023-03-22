@@ -1,3 +1,5 @@
+#define NUM_ITER 54559
+
 #include <header.h>
 
 int sz[1010];

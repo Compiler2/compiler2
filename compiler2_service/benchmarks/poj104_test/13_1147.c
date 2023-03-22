@@ -1,3 +1,5 @@
+#define NUM_ITER 47153
+
 #include <header.h>
 
 int stat[115],i,n,k,first=0;

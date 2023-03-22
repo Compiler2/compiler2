@@ -1,3 +1,5 @@
+#define NUM_ITER 12910
+
 #include <header.h>
 
 struct bin

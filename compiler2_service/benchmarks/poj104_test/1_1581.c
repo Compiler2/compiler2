@@ -1,3 +1,5 @@
+#define NUM_ITER 2691
+
 #include <header.h>
 
 int Digui(int a,int min)

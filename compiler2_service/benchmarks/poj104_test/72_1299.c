@@ -1,3 +1,5 @@
+#define NUM_ITER 468
+
 #include <header.h>
 
 int a[105][105];

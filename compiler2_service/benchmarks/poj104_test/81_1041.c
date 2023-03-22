@@ -1,3 +1,5 @@
+#define NUM_ITER 221326
+
 #include <header.h>
 
 int fun(int (*p)[5],int n,int m)

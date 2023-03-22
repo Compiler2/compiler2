@@ -1,3 +1,5 @@
+#define NUM_ITER 3324
+
 #include <header.h>
 
 double Q(int x);

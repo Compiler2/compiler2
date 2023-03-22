@@ -1,3 +1,5 @@
+#define NUM_ITER 17428
+
 #include <header.h>
 
 void course(char a[],int n)

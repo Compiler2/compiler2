@@ -1,3 +1,5 @@
+#define NUM_ITER 1723444
+
 #include <header.h>
 
 int search (int n)

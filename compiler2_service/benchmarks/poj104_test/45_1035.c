@@ -1,3 +1,5 @@
+#define NUM_ITER 1227927
+
 #include <header.h>
 
 int b[50];

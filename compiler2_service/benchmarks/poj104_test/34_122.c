@@ -1,3 +1,5 @@
+#define NUM_ITER 278039
+
 #include <header.h>
 
 int jiaogu(int n)

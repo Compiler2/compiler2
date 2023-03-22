@@ -1,3 +1,5 @@
+#define NUM_ITER 34020
+
 #include <header.h>
 
 int isprime(int i);

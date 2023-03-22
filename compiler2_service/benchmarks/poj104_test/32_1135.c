@@ -1,3 +1,5 @@
+#define NUM_ITER 7413
+
 #include <header.h>
 
 char a[105],b[105],c[105];

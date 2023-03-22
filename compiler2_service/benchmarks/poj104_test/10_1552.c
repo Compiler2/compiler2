@@ -1,3 +1,5 @@
+#define NUM_ITER 3255
+
 #include <header.h>
 
 struct daodan

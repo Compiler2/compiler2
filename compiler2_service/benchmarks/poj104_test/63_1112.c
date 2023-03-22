@@ -1,3 +1,5 @@
+#define NUM_ITER 31
+
 #include <header.h>
 
 int max(int x,int y);

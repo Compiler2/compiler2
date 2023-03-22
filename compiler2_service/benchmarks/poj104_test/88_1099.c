@@ -1,3 +1,5 @@
+#define NUM_ITER 1512341
+
 #include <header.h>
 
 char c[30];

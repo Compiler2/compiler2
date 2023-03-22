@@ -1,3 +1,5 @@
+#define NUM_ITER 2205215
+
 #include <header.h>
 
 int money(int n){

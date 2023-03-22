@@ -1,3 +1,5 @@
+#define NUM_ITER 21259
+
 #include <header.h>
 
 struct statistics

@@ -1,3 +1,5 @@
+#define NUM_ITER 22725
+
 #include <header.h>
 
 struct stud

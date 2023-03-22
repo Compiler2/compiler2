@@ -1,3 +1,5 @@
+#define NUM_ITER 157698
+
 #include <header.h>
 
 int Dijitian(int month,int day)

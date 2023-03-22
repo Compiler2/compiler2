@@ -1,3 +1,5 @@
+#define NUM_ITER 1974339
+
 #include <header.h>
 
 int cmp(const void*e1,const void *e2)

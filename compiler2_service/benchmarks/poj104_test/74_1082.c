@@ -1,3 +1,5 @@
+#define NUM_ITER 501
+
 #include <header.h>
 
 int sieve[100010]={1,1,0};

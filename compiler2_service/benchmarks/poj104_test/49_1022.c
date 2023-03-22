@@ -1,3 +1,5 @@
+#define NUM_ITER 20916
+
 #include <header.h>
 
 int f(char a[])

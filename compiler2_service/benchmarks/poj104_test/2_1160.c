@@ -1,3 +1,5 @@
+#define NUM_ITER 21013
+
 #include <header.h>
 
 int alpha[26]={0};

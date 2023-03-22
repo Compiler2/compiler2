@@ -1,3 +1,5 @@
+#define NUM_ITER 222645
+
 #include <header.h>
 
 int judge(int n,int m,int *p[5])

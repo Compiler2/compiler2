@@ -1,3 +1,5 @@
+#define NUM_ITER 244778
+
 #include <header.h>
 
 int EVEN(int a);

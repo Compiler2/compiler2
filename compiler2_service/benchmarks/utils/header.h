@@ -138,24 +138,27 @@ int puts(const char *str){
 int main_bench();
 
 int main(int argc, char *argv[]){
-    // long mtime, s, us;
-    // struct timeval Start, End; 
+#if 1
+    long mtime, s, us;
+    struct timeval Start, End; 
 
-    // gettimeofday(&Start, 0);
-    // int i = 0;
-    // do{
-    //     set_rand();
-    //     main_bench(); i++;
-    //     gettimeofday(&End, 0);
-    //     s = End.tv_sec - Start.tv_sec;
-    //     us = End.tv_usec - Start.tv_usec;
-    //     mtime = (s * 1000 + us / 1000.0) + 0.5;
-    // }while (mtime < 100); // 10 ms is min for hpctoolkit to get samples
+    gettimeofday(&Start, 0);
+    int i = 0;
+    do{
+        set_rand();
+        main_bench(); i++;
+        gettimeofday(&End, 0);
+        s = End.tv_sec - Start.tv_sec;
+        us = End.tv_usec - Start.tv_usec;
+        mtime = (s * 1000 + us / 1000.0) + 0.5;
+    }while (mtime < 100); // 10 ms is min for hpctoolkit to get samples
 
-    // printf("%s %d\n", argv[1], i);
-
+    printf("%s %d\n", argv[1], i);
+#else
     for (int i = 0; i < NUM_ITER; i++){
         set_rand();
         main_bench();
-    }    
+    }
+#endif
+
 }

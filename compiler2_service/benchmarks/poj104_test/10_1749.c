@@ -1,3 +1,5 @@
+#define NUM_ITER 4740
+
 #include <header.h>
 
 int compare(int x,int y)

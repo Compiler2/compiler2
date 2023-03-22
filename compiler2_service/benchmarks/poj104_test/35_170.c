@@ -1,3 +1,5 @@
+#define NUM_ITER 1382
+
 #include <header.h>
 
 int max(int b[10],int n)

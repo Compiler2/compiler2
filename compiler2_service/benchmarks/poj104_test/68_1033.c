@@ -1,3 +1,5 @@
+#define NUM_ITER 34022
+
 #include <header.h>
 
 int number[50000]; 

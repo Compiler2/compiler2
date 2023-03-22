@@ -1,3 +1,5 @@
+#define NUM_ITER 14173
+
 #include <header.h>
 
 int compare(int s, int a[100], int n)

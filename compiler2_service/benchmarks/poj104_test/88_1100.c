@@ -1,3 +1,5 @@
+#define NUM_ITER 987745
+
 #include <header.h>
 
 int check(char x)

@@ -1,3 +1,5 @@
+#define NUM_ITER 7702
+
 #include <header.h>
 
 int c[26];

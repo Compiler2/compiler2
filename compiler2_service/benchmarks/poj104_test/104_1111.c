@@ -1,3 +1,5 @@
+#define NUM_ITER 732615
+
 #include <header.h>
 
 int way(int x,int a[10])

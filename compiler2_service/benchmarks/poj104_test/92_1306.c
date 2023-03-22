@@ -1,3 +1,5 @@
+#define NUM_ITER 286
+
 #include <header.h>
 
 int paixu(const void*a, const void*b)

@@ -1,3 +1,5 @@
+#define NUM_ITER 35144
+
 #include <header.h>
 
 int guess[5],used[5],place[5];

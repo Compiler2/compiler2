@@ -1,3 +1,5 @@
+#define NUM_ITER 222266
+
 #include <header.h>
 
 int jud(int n,int m){

@@ -1,3 +1,5 @@
+#define NUM_ITER 2293
+
 #include <header.h>
 
 int fenjie(int x,int p);

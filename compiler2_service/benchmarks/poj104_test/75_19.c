@@ -1,3 +1,5 @@
+#define NUM_ITER 6458
+
 #include <header.h>
 
 int f(char r[],int x[])

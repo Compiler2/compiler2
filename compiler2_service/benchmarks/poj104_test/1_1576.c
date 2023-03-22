@@ -1,3 +1,5 @@
+#define NUM_ITER 5930
+
 #include <header.h>
 
 int col(int a,int b);

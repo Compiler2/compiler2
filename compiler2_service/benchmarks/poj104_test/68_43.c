@@ -1,3 +1,5 @@
+#define NUM_ITER 12140
+
 #include <header.h>
 
 int k(int p){

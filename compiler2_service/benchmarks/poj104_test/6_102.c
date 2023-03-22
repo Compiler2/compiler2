@@ -1,3 +1,5 @@
+#define NUM_ITER 28
+
 #include <header.h>
 
 sum(int *x[],int m,int n)

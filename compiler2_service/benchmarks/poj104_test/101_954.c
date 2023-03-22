@@ -1,3 +1,5 @@
+#define NUM_ITER 1577524
+
 #include <header.h>
 
 int pa(int i,int j,int k)

@@ -1,3 +1,5 @@
+#define NUM_ITER 298164
+
 #include <header.h>
 
 char str[256],sub[256],repl[256];

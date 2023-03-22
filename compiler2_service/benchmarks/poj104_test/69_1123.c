@@ -1,3 +1,5 @@
+#define NUM_ITER 837743
+
 #include <header.h>
 
 char a[250],b[250],sum[251];

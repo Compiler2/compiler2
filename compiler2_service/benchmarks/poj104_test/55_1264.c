@@ -1,3 +1,5 @@
+#define NUM_ITER 493003
+
 #include <header.h>
 
 int convert_1(char a){

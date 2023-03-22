@@ -1,3 +1,5 @@
+#define NUM_ITER 446
+
 #include <header.h>
 
 int number(char a)

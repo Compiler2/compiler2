@@ -1,3 +1,5 @@
+#define NUM_ITER 748579
+
 #include <header.h>
 
 int dayfr(int m,int d)

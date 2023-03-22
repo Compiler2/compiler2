@@ -1,3 +1,5 @@
+#define NUM_ITER 6000
+
 #include <header.h>
 
 int shulie(int n);

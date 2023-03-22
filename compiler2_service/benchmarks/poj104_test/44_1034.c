@@ -1,3 +1,5 @@
+#define NUM_ITER 409152
+
 #include <header.h>
 
 int turn(int a);

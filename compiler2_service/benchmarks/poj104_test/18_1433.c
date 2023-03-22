@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 int gl(int a[][102],int k)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1
+
 #include <header.h>
 
 void f1(int *p,int n,int k)

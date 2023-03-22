@@ -1,3 +1,5 @@
+#define NUM_ITER 2453
+
 #include <header.h>
 
 int a[1001]={0};

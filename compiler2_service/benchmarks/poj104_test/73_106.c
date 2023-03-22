@@ -1,3 +1,5 @@
+#define NUM_ITER 177451
+
 #include <header.h>
 
 int findmin(int a[5])

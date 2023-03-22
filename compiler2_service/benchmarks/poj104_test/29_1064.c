@@ -1,3 +1,5 @@
+#define NUM_ITER 4549
+
 #include <header.h>
 
 double qh(int n);

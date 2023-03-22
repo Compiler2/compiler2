@@ -1,3 +1,5 @@
+#define NUM_ITER 31131
+
 #include <header.h>
 
 int sc(char a[]);

@@ -1,3 +1,5 @@
+#define NUM_ITER 2204
+
 #include <header.h>
 
 struct HaHa

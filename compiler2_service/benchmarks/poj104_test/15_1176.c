@@ -1,3 +1,5 @@
+#define NUM_ITER 688
+
 #include <header.h>
 
 int s[10000][10000];

@@ -1,3 +1,5 @@
+#define NUM_ITER 642
+
 #include <header.h>
 
 int p[9][9],q[9][9];

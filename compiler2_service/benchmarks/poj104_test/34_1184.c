@@ -1,3 +1,5 @@
+#define NUM_ITER 223012
+
 #include <header.h>
 
 int lgm( int num )

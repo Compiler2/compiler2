@@ -1,3 +1,5 @@
+#define NUM_ITER 2182090
+
 #include <header.h>
 
 int tianji[1010];

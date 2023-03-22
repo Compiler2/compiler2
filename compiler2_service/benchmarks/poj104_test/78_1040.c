@@ -1,3 +1,5 @@
+#define NUM_ITER 56675
+
 #include <header.h>
 
 int z,q,l,s;

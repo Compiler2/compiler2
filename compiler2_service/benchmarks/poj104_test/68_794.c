@@ -1,3 +1,5 @@
+#define NUM_ITER 410
+
 #include <header.h>
 
 int s[50010]={1,1,0};

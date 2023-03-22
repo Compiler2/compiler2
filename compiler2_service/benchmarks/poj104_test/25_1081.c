@@ -1,3 +1,5 @@
+#define NUM_ITER 381
+
 #include <header.h>
 
 int a[1005];

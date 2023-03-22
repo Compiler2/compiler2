@@ -1,3 +1,5 @@
+#define NUM_ITER 11104
+
 #include <header.h>
 
 int comp(const void *a,const void *b);

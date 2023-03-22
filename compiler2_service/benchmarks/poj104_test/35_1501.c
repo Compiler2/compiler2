@@ -1,3 +1,5 @@
+#define NUM_ITER 566
+
 #include <header.h>
 
 int sz[8][8];

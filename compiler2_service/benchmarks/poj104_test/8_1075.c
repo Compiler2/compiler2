@@ -1,3 +1,5 @@
+#define NUM_ITER 1344
+
 #include <header.h>
 
 int a[233],b[233];

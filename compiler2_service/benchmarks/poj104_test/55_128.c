@@ -1,3 +1,5 @@
+#define NUM_ITER 7278
+
 #include <header.h>
 
 char uup(char c)

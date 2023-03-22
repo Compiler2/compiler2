@@ -1,3 +1,5 @@
+#define NUM_ITER 98
+
 #include <header.h>
 
 int F(int n); 

@@ -1,3 +1,5 @@
+#define NUM_ITER 1516742
+
 #include <header.h>
 
 int judge(char *zfc)

@@ -1,3 +1,5 @@
+#define NUM_ITER 1124415
+
 #include <header.h>
 
 int a=0,b=0,c=0,d=0,e=0;

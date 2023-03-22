@@ -1,3 +1,5 @@
+#define NUM_ITER 371053
+
 #include <header.h>
 
 int f(int x)

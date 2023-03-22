@@ -1,3 +1,5 @@
+#define NUM_ITER 1408
+
 #include <header.h>
 
 int p=0,q=2;
